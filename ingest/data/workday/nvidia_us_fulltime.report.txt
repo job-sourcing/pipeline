@@ -1,7 +1,10 @@
-rows: 1360 (unique reqIds: 1360)
-details merged: 1360
-descriptions present: 1360
-locations enumerated (not 'N Locations'): 1360
-startDate present: 1360
-signals: matched=478 no_match=882 blocked=0 not_checked=0
-location entries total (sum nLocations): 2483
+rows: 1395 (unique reqIds: 1395)
+details merged: 1395
+descriptions present: 1395
+locations enumerated (not 'N Locations'): 1395
+startDate present: 1395
+signals: matched=625 no_match=770 blocked=0 not_checked=0
+location entries total (sum nLocations): 2583
+similar-job edges: 248
+facet census: 7 facets / 190 values (nvidia_us_fulltime.facets.json)
+facet-tagged rows: workerSubType=1395 jobFamilyGroup=1395 (from facet_tags.jsonl)

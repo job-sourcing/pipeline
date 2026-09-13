@@ -414,12 +414,21 @@ def phase_corroborate(args, out: Path) -> int:
             index_meta = json.loads(meta_path.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             pass
+    # S8 fix: `done` is mode-specific — a completed single-query index must
+    # NOT suppress a partitioned pass (mode switch re-opens the index; cards
+    # accumulate with dedup so nothing is refetched or lost).
+    index_mode = getattr(args, "index_mode", "single")
+    if args.corroborate_index and index_meta.get("done") \
+            and index_mode != index_meta.get("mode", "single"):
+        index_meta["done"] = False
+        print(f"[corroborate] index mode switch "
+              f"{index_meta.get('mode', 'single')!r} -> {index_mode!r}: "
+              "re-opening index", flush=True)
     if args.corroborate_index and not index_meta.get("done"):
         # S8-E1 index modes: "single" (back-compat default — one
         # company query) or "partitioned" (keyword×location slice
         # matrix; research §c: the single query hits a SERVING ceiling
         # — slices surface +78 new cards / 3 probe pages).
-        index_mode = getattr(args, "index_mode", "single")
         try:
             if index_mode == "partitioned":
                 cards, next_offset, exhausted = \
