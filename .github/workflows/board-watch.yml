@@ -1,0 +1,137 @@
+name: Board Watch
+
+# Third instance of the durable-collection pattern (SKILL §A3 / S12 —
+# reference: ats-drain.yml + scripts/gha_drain.py; 2nd: ats-backfill.yml).
+# The productized watch layer (design-board-v2.md D4): daily diff + alert
+# over configured Workday CXS boards. Config is data — one JSON entry per
+# company (ingest/data/board_watch/config.json); state is committed
+# ({label}.state.jsonl + .newposts.jsonl + .alerts.log). Alerts are
+# durable-first: alerts.log + job summary always, Telegram when
+# TELEGRAM_BOT_TOKEN/CHAT_ID are configured in the committed ingest/.env.
+#
+# BUDGET GUARDS (the 2026-09-09 GHA-burn lesson — backfill self-retriggered
+# 31x at 40-min and blew the 2,000-min/mo private-repo allowance):
+# - daily cadence only (06:45 UTC, after drain 06:00 + backfill 06:30,
+#   same concurrency group so they serialize, never overlap)
+# - ~4-min work budget inside the runner; retrigger only while enrichment
+#   backlog remains, capped at 6 legs/day (date-keyed leg counter)
+# - whole-job timeout 20 min — even a pathological loop can burn at most
+#   6 x ~7 min = 42 min/day
+#
+# ORG MIGRATION (2026-09-13): the PRIMARY runtime for this workflow is now
+# the PUBLIC org repo job-sourcing/pipeline (public repos get free unlimited
+# GHA minutes — the personal-account spending-limit block no longer applies).
+# This copy (strbtwc/job-sourcing-research) is the private source-of-truth
+# archive; sync to the org repo via scripts/build_public_mirror.sh. Secrets
+# never enter the public repo: ingest/.env is materialized at runtime from the
+# INGEST_ENV repo secret.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "45 6 * * *"   # after the drain + backfill crons
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: board-watch   # OWN group (S7-A3 P1-3): the shared ats-drain group
+                       # evicts pending sibling runs; the watch's 3x-retry
+                       # checkpoint already handles cross-chain push races
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Materialize ingest/.env from secret
+        # The public repo never commits ingest/.env — it is injected at
+        # runtime from the INGEST_ENV repo secret (the private vault repo
+        # job-sourcing/vault + the private archive keep the readable copy).
+        env:
+          INGEST_ENV: ${{ secrets.INGEST_ENV }}
+        run: |
+          if [ -n "$INGEST_ENV" ]; then
+            printf '%s\n' "$INGEST_ENV" > ingest/.env
+            echo "ingest/.env materialized ($(wc -l < ingest/.env) lines)"
+          else
+            echo "::warning::INGEST_ENV secret not set — running with default config (no Telegram alerts, no keyed sources)"
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pipeline (no dev extras — keep minutes lean)
+        run: pip install -e ingest
+
+      - name: Run board watch (list → diff → enrich → alert)
+        run: python3 scripts/gha_board_watch.py
+
+      - name: Checkpoint state to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          # 1) rescue ONLY the runner-owned state files — NEVER config.json
+          #    (audit B2, P1: the wholesale `cp -r` of the whole dir used to
+          #    restore a stale config.json over a human edit that landed on
+          #    main mid-leg — the checkpoint commit then clobbered it. Config
+          #    is data: it comes from the freshly-reset tree = latest main.)
+          mkdir -p /tmp/watch_state
+          for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json'; do
+            cp ingest/data/board_watch/$pat /tmp/watch_state/ 2>/dev/null || true
+          done
+          # 2) race-proof re-commit on latest main (SKILL §A3 recipe)
+          git config user.name "board-watch-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            # restore ONLY the state files — config.json stays at latest main
+            for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json'; do
+              cp /tmp/watch_state/$pat ingest/data/board_watch/ 2>/dev/null || true
+            done
+            git add ingest/data/board_watch
+            if git diff --cached --quiet; then
+              echo "no state change to commit"
+              push_ok=1
+              break
+            fi
+            NEW=$(python3 -c "import json,pathlib; d=pathlib.Path('ingest/data/board_watch'); lines=[l for p in sorted(d.glob('*.newposts.jsonl')) for l in p.read_text(encoding='utf-8').splitlines() if l.strip()]; recs=[]; [recs.append(json.loads(l)) for l in lines if not l.strip().startswith('#')]; print(len({r.get('reqId') for r in recs if r}))" 2>/dev/null || echo 0)
+            git commit -m "board-watch checkpoint: +${NEW:-0} new postings [skip ci]"
+            if git push; then push_ok=1; break; fi
+            echo "push attempt $i failed — refetching and retrying"
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::push failed after 3 attempts — state rescued in /tmp; daily cron retries"
+            exit 1
+          fi
+
+      - name: Fail loudly on persistent watch failure
+        if: env.WATCH_RESULT == 'failed'
+        run: |
+          echo "::error::board-watch reported WATCH_RESULT=failed — see the job summary and ingest/data/board_watch/*.alerts.log (a renamed board/facet fails GREEN without this guard)"
+          exit 1
+
+      - name: Re-trigger next leg (only while backlog remains)
+        # always() so a failed checkpoint (exit 1 above) does not skip us
+        # (audit B4: a plain custom if: gets implicit success() &&)
+        if: always() && env.WATCH_RESULT == 'backlog'
+        run: |
+          if curl -sf -X POST \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/workflows/board-watch.yml/dispatches" \
+              -d '{"ref":"main"}'; then
+            echo "next watch leg dispatched (enrichment backlog remains)"
+          else
+            echo "::warning::failed to dispatch next leg — daily cron resumes"
+          fi

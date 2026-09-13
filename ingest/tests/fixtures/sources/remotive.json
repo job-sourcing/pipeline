@@ -1,0 +1,40 @@
+{
+  "jobs": [
+    {
+      "id": "r1",
+      "url": "https://remotive.com/remote-jobs/software-dev/python-backend-engineer-1",
+      "title": "Python Backend Engineer",
+      "company_name": "Acme Cloud",
+      "category": "Software Development",
+      "job_type": "full_time",
+      "publication_date": "2026-08-20T10:00:00",
+      "candidate_required_location": "Anywhere",
+      "salary": "40k-70k USD/year",
+      "description": "<p>We need a Python backend engineer with <b>FastAPI</b> and PostgreSQL experience. Kubernetes a plus. Visa sponsorship available for exceptional candidates. Apply at <a href=\"mailto:jobs@acme.cloud\">jobs@acme.cloud</a></p>"
+    },
+    {
+      "id": "r2",
+      "url": "https://remotive.com/remote-jobs/software-dev/senior-python-developer-2",
+      "title": "Senior Python Developer",
+      "company_name": "BetaData Inc",
+      "category": "Software Development",
+      "job_type": "full_time",
+      "publication_date": "2026-08-21T09:00:00",
+      "candidate_required_location": "Worldwide",
+      "salary": "",
+      "description": "Senior Python developer for data pipelines. Django, Redis, AWS required."
+    },
+    {
+      "id": "r3",
+      "url": "https://remotive.com/remote-jobs/design/graphic-designer-3",
+      "title": "Graphic Designer",
+      "company_name": "Gamma Creative",
+      "category": "Design",
+      "job_type": "contract",
+      "publication_date": "2026-08-19T08:00:00",
+      "candidate_required_location": "Anywhere",
+      "salary": "",
+      "description": "Graphic designer for marketing assets. Figma, Photoshop. Python not required."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "id": "m1",
+      "name": "Backend Engineer, Python",
+      "company": { "id": 1, "name": "Acme Cloud", "short_name": "Acme" },
+      "locations": [{ "name": "Remote - US" }],
+      "levels": [{ "id": 3, "name": "Senior" }],
+      "categories": [{ "id": 1, "name": "Software Engineering" }],
+      "publication_date": "2026-08-18T00:00:00.000Z",
+      "referrer": "https://www.themuse.com/jobs/acme/backend-engineer-python",
+      "apply_url": "https://acme.com/careers/123"
+    },
+    {
+      "id": "m2",
+      "name": "Product Marketing Manager",
+      "company": { "id": 2, "name": "DeltaProduct", "short_name": "Delta" },
+      "locations": [{ "name": "New York, NY" }],
+      "levels": [{ "id": 2, "name": "Mid-Level" }],
+      "categories": [{ "id": 2, "name": "Marketing" }],
+      "publication_date": "2026-08-17T00:00:00.000Z",
+      "referrer": "https://www.themuse.com/jobs/delta/product-marketing-manager",
+      "apply_url": "https://delta.com/jobs/456"
+    }
+  ]
+}

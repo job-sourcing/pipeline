@@ -1,0 +1,155 @@
+{
+  "_comment": "Captured + synthesized HN Algolia fixtures for the SRC-HN client. Real comments trimmed to ~500 chars for tractability; the 7th (REMOTELY) and 8th (empty) are synthesized to cover the spec's edge cases. The search_response replays the Algolia /search_by_date endpoint; the thread object replays /items/{thread_id}.",
+  "search_response": {
+    "nbHits": 30,
+    "page": 0,
+    "nbPages": 1000,
+    "hitsPerPage": 30,
+    "hits": [
+      {
+        "objectID": "49336147",
+        "title": "Ask HN: Who wants to fund DB research?",
+        "author": "anon_db",
+        "created_at": "2026-08-17T19:13:04.000Z",
+        "points": 13,
+        "_tags": ["story", "ask_hn"]
+      },
+      {
+        "objectID": "49156683",
+        "title": "Ask HN: Who is hiring? (August 2026)",
+        "author": "whoishiring",
+        "created_at": "2026-08-03T15:00:54.000Z",
+        "points": 237,
+        "_tags": ["story", "author_whoishiring", "ask_hn"]
+      },
+      {
+        "objectID": "48747976",
+        "title": "Ask HN: Who is hiring? (July 2026)",
+        "author": "whoishiring",
+        "created_at": "2026-07-01T15:01:21.000Z",
+        "points": 219,
+        "_tags": ["story", "author_whoishiring", "ask_hn"]
+      }
+    ]
+  },
+  "thread": {
+    "id": 49156683,
+    "title": "Ask HN: Who is hiring? (August 2026)",
+    "author": "whoishiring",
+    "type": "story",
+    "points": 237,
+    "parent_id": null,
+    "story_id": 49156683,
+    "created_at": "2026-08-03T15:00:54.000Z",
+    "created_at_i": 1722694854,
+    "url": null,
+    "options": null,
+    "text": "Please state the job location and include the keywords REMOTE, INTERNS and/or VISA when the corresponding sort of candidate is welcome. When remote work is not an option, include ONSITE.",
+    "children": [
+      {
+        "id": 49156737,
+        "author": "samlk",
+        "type": "comment",
+        "points": null,
+        "parent_id": 49156683,
+        "story_id": 49156683,
+        "created_at": "2026-08-03T15:03:49.000Z",
+        "created_at_i": 1785769429,
+        "options": null,
+        "text": "Senzing | Platform Engineer | Remote (USA) | Full-Time<p>Senzing builds enterprise entity-resolution SDK technology \u2014 an embeddable library that runs entirely inside customer infrastructure with zero data exfiltration. We're hiring a platform engineer to own AWS infrastructure for Placekey (our location-data subsidiary, production API at scale) and support Senzing's core ops.<p>This isn't a keep-the-lights-on role. We just completed an infra migration and are actively modernizing. H1B sponsorship available for strong candidates. Apply to jobs@senzing.com.",
+        "children": []
+      },
+      {
+        "id": 49156716,
+        "author": "james_impliu",
+        "type": "comment",
+        "points": null,
+        "parent_id": 49156683,
+        "story_id": 49156683,
+        "created_at": "2026-08-03T15:02:40.000Z",
+        "created_at_i": 1785769360,
+        "options": null,
+        "text": "PostHog | Full-Time | Technical CSMs, Technical AEs, AI Research Engineer | REMOTE (all remote) | Hiring GMT-8 to GMT+2 | PostHog makes your product self-driving.<p>* we have a public handbook (posthog.com/handbook) if you want to learn how we work, pay and more in complete detail.<p>* we are growing through more autonomy and transparency not through process. Stack: Python, Django, ClickHouse, Kafka. Email careers@posthog.com to apply.",
+        "children": []
+      },
+      {
+        "id": 49156724,
+        "author": "justin_sdx",
+        "type": "comment",
+        "points": null,
+        "parent_id": 49156683,
+        "story_id": 49156683,
+        "created_at": "2026-08-03T15:03:05.000Z",
+        "created_at_i": 1785769385,
+        "options": null,
+        "text": "SmarterDx | 150-250k+ + equity + benefits | Remote (US only) | Multiple roles | <a href=\"https://smarterdx.com/careers\" rel=\"nofollow\">https://smarterdx.com/careers</a><p>SmarterDx builds clinical AI for one of healthcare's most broken systems: how hospitals get paid for the care they actually deliver. Our physician-designed clinical AI platform reviews the clinical record, understands the nuance of patient care, and helps hospitals capture appropriate reimbursement across the revenue cycle. Stack: Python, PyTorch, Kubernetes, GCP. We offer H1B visa sponsorship.",
+        "children": []
+      },
+      {
+        "id": 49157080,
+        "author": "NeroVanbierv",
+        "type": "comment",
+        "points": null,
+        "parent_id": 49156683,
+        "story_id": 49156683,
+        "created_at": "2026-08-03T15:28:14.000Z",
+        "created_at_i": 1785770894,
+        "options": null,
+        "text": "Marple | Software Engineer | Antwerp, Belgium | Full-time | Hybrid (3 days/week onsite)<p>We build cloud software for time series data from test and measurement. Customers include F1 teams, electric aircraft makers, and hypercar companies. Building high performance systems is the core of what we do: typical datasets are 200Hz, 40k channels, 30 minutes, so 14 billion data points / test.<p>Stack: Python, TypeScript, PostgreSQL, Apache Iceberg, Linux, Docker, AWS, Kubernetes. None required, but we want someone who has solved genuinely hard problems in code.",
+        "children": []
+      },
+      {
+        "id": 49157178,
+        "author": "ashby_team",
+        "type": "comment",
+        "points": null,
+        "parent_id": 49156683,
+        "story_id": 49156683,
+        "created_at": "2026-08-03T15:32:11.000Z",
+        "created_at_i": 1785771131,
+        "options": null,
+        "text": "Ashby | YC 19 | REMOTE | Hiring Engineering Leaders | $200k\u2013$275k\nAshby is the all-in-one recruiting platform powering hiring at the world's most innovative companies. If you cmd+f \"Ashby\" you'll see that we're powering many of the job postings in this thread!<p>We're looking to scale our engineering leadership team with technical leaders who want to raise the impact of a high-performing organization. Stack: TypeScript, React, GraphQL, PostgreSQL. Contact careers@ashbyhq.com.",
+        "children": []
+      },
+      {
+        "id": 49157182,
+        "author": "sumble_founder",
+        "type": "comment",
+        "points": null,
+        "parent_id": 49156683,
+        "story_id": 49156683,
+        "created_at": "2026-08-03T15:33:01.000Z",
+        "created_at_i": 1785771181,
+        "options": null,
+        "text": "Sumble is the newco from the founders of Kaggle. We are hiring full stack engineers, ai/ml engineers and growth/marketing. Can view our roles and apply here: <a href=\"https://sumble-inc.workable.com/\" rel=\"nofollow\">https://sumble-inc.workable.com/</a>\nWe are building a knowledge graph from web data with a first focus on data for go-to-market teams.<p>We use web data to identify things like org structure, tech stack, and key projects. Stack: Python, React, Postgres, Spark.",
+        "children": []
+      },
+      {
+        "id": 49159600,
+        "author": "acme_remotelayer",
+        "type": "comment",
+        "points": null,
+        "parent_id": 49156683,
+        "story_id": 49156683,
+        "created_at": "2026-08-03T17:14:00.000Z",
+        "created_at_i": 1785777240,
+        "options": null,
+        "text": "Acme Cloud | Senior Backend Engineer | REMOTELY (worldwide) | Python, Go, Kubernetes<p>Acme Cloud builds cloud-native event streaming infrastructure. We're hiring a Senior Backend Engineer to lead our distributed-systems team. Stack: Python, Go, Kubernetes, Postgres. We offer H1B visa sponsorship and pay $180k-$220k. Apply to careers@acme.cloud.",
+        "children": []
+      },
+      {
+        "id": 49159999,
+        "author": "spammer",
+        "type": "comment",
+        "points": null,
+        "parent_id": 49156683,
+        "story_id": 49156683,
+        "created_at": "2026-08-03T17:30:00.000Z",
+        "created_at_i": 1785778200,
+        "options": null,
+        "text": "",
+        "children": []
+      }
+    ]
+  }
+}

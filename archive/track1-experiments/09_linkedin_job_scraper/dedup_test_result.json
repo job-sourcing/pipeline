@@ -1,0 +1,19 @@
+{
+  "run1_count": 8,
+  "run2_count": 0,
+  "run2_stats": {
+    "search_requests": 2,
+    "cards_examined": 19,
+    "details_attempted": 10,
+    "errors": 0,
+    "possible_duplicate_signals": 0
+  },
+  "run3_count": 1,
+  "run3_stats": {
+    "search_requests": 2,
+    "cards_examined": 2,
+    "details_attempted": 1,
+    "errors": 0,
+    "possible_duplicate_signals": 0
+  }
+}

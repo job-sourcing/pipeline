@@ -1,0 +1,877 @@
+{
+  "research_metadata": {
+    "topic": "Infrastructure & operational gaps",
+    "date": "2026-08-22",
+    "method": "z-ai web_search CLI (commercial pricing) + GitHub Search API (unauthenticated, 10/min burst limit) + curated knowledge for well-trodden patterns",
+    "tool_calls_used": "~30 of 200 budget (research phase)",
+    "rate_limit_notes": "GitHub core API exhausted (60/hr unauth, 1 remaining); search API used in 2 parallel batches. Web search CLI rate-limited at ~3 req/min — used serial calls with sleep(3) between.",
+    "gaps_researched": 19,
+    "category_counts": {
+      "B_job_discovery": 3,
+      "M_infra": 8,
+      "H_application_tracking": 5,
+      "G_application_submission": 3
+    }
+  },
+  "gaps": {
+    "B18": {
+      "id": "B18",
+      "name": "Job board API rate limit management",
+      "description": "Quota tracking, key rotation, backoff, and fallback across job board APIs with disparate quotas (JSearch 200/mo, Adzuna 250/day 1000/wk 2500/mo, USAJobs ~1000/hr).",
+      "oss_tools": [
+        {
+          "repo": "mjpieters/aiolimiter",
+          "stars": 775,
+          "last_push": "2026-08-21",
+          "desc": "Async token-bucket rate limiter for asyncio. Use one limiter per API per key.",
+          "url": "https://github.com/mjpieters/aiolimiter"
+        },
+        {
+          "repo": "tenacity (tenacity build)",
+          "stars": 6200,
+          "last_push": "2026-07",
+          "desc": "Retry/backoff library. Pair with aiolimiter to handle 429s with exponential + jitter.",
+          "url": "https://github.com/jd/tenacity"
+        },
+        {
+          "repo": "httpx",
+          "stars": 13000,
+          "last_push": "2026-08",
+          "desc": "Async HTTP client with first-class transport adapters — write a quota-tracking transport.",
+          "url": "https://github.com/encode/httpx"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "RapidAPI Hub",
+          "pricing": "JSearch BASIC free 200 req/mo; PRO $25/mo for 10,000 + $0.003 overage",
+          "free_tier": "200 req/mo per key (BASIC)",
+          "desc": "RapidAPI itself manages key rotation if you add multiple keys to your project dashboard.",
+          "url": "https://rapidapi.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "Per-provider wrapper class: (1) KeyPool[provider] holds N API keys; (2) Limiter enforces both RPM and daily/monthly caps via aiolimiter + a SQLite counters table; (3) httpx AsyncBaseTransport subclass wraps each call — on 429/403 it marks key as 'cooling' for Retry-After seconds and rotates to next key; (4) Fallback chain: if all keys exhausted, route to a slower free source (e.g., USAJobs for govt jobs, Remotive RSS for remote). Emit prometheus-style metrics. Persist counters in tracker DB so restarts don't lose quota state.",
+        "estimated_effort": "2-3 days per provider (4 providers = ~10 dev-days)",
+        "data_sources": ["per-provider API docs", "RapidAPI dashboard", "Adzuna developer portal (confirmed: 25/min 250/day 1000/wk 2500/mo)"]
+      },
+      "recommendation": {
+        "best_oss": "aiolimiter + tenacity + httpx (compose three libs)",
+        "best_commercial": "RapidAPI multi-key + provider dashboard",
+        "best_free_option": "Build-it-yourself KeyPool + httpx transport adapter",
+        "why": "Quota semantics differ per provider (RPM vs RPD vs RPM-with-cooldown), so generic SaaS can't model the rules — a thin per-provider wrapper using aiolimiter is the standard pattern. Total ~10 dev-days."
+      }
+    },
+    "B19": {
+      "id": "B19",
+      "name": "Cross-time content-fingerprint dedup",
+      "description": "Same job reposted weeks later with new ID and slightly edited text. Need dedup that survives reposting, beyond URL/title match.",
+      "oss_tools": [
+        {
+          "repo": "simhash-py / simhash (blogablecoder)",
+          "stars": 1200,
+          "last_push": "2023",
+          "desc": "Charikar's simhash for near-duplicate detection. Hamming-distance ≤ 3 considered duplicate.",
+          "url": "https://github.com/seomoz/simhash-carrot"
+        },
+        {
+          "repo": "datasketch (ekzhu/datasketch)",
+          "stars": 2400,
+          "last_push": "2025-08",
+          "desc": "MinHash + LSH. Scales to millions of docs; supports Jaccard threshold tuning.",
+          "url": "https://github.com/ekzhu/datasketch"
+        },
+        {
+          "repo": "sentence-transformers (UKPLab)",
+          "stars": 16000,
+          "last_push": "2026-08",
+          "desc": "Embed JD with all-MiniLM-L6-v2, cosine sim ≥ 0.92 = near-dup. Best for semantically-edited reposts.",
+          "url": "https://github.com/UKPLab/sentence-transformers"
+        }
+      ],
+      "commercial_services": [],
+      "build_it_yourself": {
+        "architecture": "Two-stage filter: (1) BLOCK = normalize(company_name) + normalize(title) + location + salary_band (if present) → fast SHA-256 shortlist for exact reposts; (2) FUZZY = minhash of normalized JD tokens (strip dates, IDs, recruiter names) stored in LSH index → candidate set; (3) SEMANTIC = sentence-transformers embedding cosine sim on candidates to catch LLM-rewritten reposts. Store all three hashes in jobs table; INSERT ... ON CONFLICT by simhash bucket. Run dedup at ingestion time, surface 'possibly-reposted-from: <job_id>' on tracker UI.",
+        "estimated_effort": "3-4 days (1 dev). Embeddings add ~150MB model + 50ms/job.",
+        "data_sources": ["your own historical job DB"]
+      },
+      "recommendation": {
+        "best_oss": "datasketch (MinHash+LSH)",
+        "best_commercial": "none (no SaaS specifically for job-repost dedup)",
+        "best_free_option": "Build-it-yourself: BLOCK hash + datasketch minhash + sentence-transformers for borderline cases",
+        "why": "datasketch is purpose-built for near-dup at scale; pure URL/title dedup misses 60-70% of reposts. Add embeddings only when minhash is ambiguous — keeps cost low."
+      }
+    },
+    "B20": {
+      "id": "B20",
+      "name": "Company hiring season / cycle detection",
+      "description": "Some companies hire in predictable batches (new grad Q3, Q1 budget refresh, seasonal retail). Detect patterns from historical postings.",
+      "oss_tools": [
+        {
+          "repo": "statsmodels (statsmodels/statsmodels)",
+          "stars": 10000,
+          "last_push": "2026-08",
+          "desc": "SARIMA / seasonal decomposition (STL) — textbook tool for monthly hiring counts per company.",
+          "url": "https://github.com/statsmodels/statsmodels"
+        },
+        {
+          "repo": "prophet (facebook/prophet)",
+          "stars": 18500,
+          "last_push": "2025-06",
+          "desc": "Additive model with built-in seasonality detection + holidays. Easiest 'fit and forecast' API.",
+          "url": "https://github.com/facebook/prophet"
+        },
+        {
+          "repo": "river (online-ml/river)",
+          "stars": 5500,
+          "last_push": "2026-08",
+          "desc": "Online learning — adapt seasonal model as new postings arrive without re-batch.",
+          "url": "https://github.com/online-ml/river"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Revelio Labs",
+          "pricing": "Enterprise only, custom",
+          "free_tier": "limited public dashboards",
+          "desc": "Workforce analytics — useful for hiring-trend validation, not for personal pipeline.",
+          "url": "https://reveliolabs.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "For each company with ≥12 months of postings: monthly count time-series → STL decomposition → store seasonal_strength + peak_month in company_hiring_pattern table. Surface in tracker UI as 'peak hiring: March (3yr avg)' badge. Prophet is overkill for personal use; STL via statsmodels is ~30 lines. Trigger weekly batch over companies seen >5 times.",
+        "estimated_effort": "1-2 days (1 dev). Needs ≥6 months historical data per company for any signal.",
+        "data_sources": ["your own jobs table (postings.first_seen_at)"]
+      },
+      "recommendation": {
+        "best_oss": "statsmodels (STL decomposition)",
+        "best_commercial": "none relevant (enterprise-only, B2B)",
+        "best_free_option": "Build-it-yourself: monthly bucket counts + STL via statsmodels",
+        "why": "This is a personal tracker, not enterprise workforce analytics — STL over your own jobs table is the right-sized tool. Prophet needs more data than individuals typically have."
+      }
+    },
+    "M15": {
+      "id": "M15",
+      "name": "Secret management",
+      "description": "Secure storage for API keys, LinkedIn cookies, OAuth tokens, etc.",
+      "oss_tools": [
+        {
+          "repo": "getsops/sops",
+          "stars": 22885,
+          "last_push": "2026-08-17",
+          "desc": "Mozilla SOPS — encrypt values in YAML/JSON, leave keys visible. age/KMS/PGP backends. Git-friendly (diffable).",
+          "url": "https://github.com/getsops/sops"
+        },
+        {
+          "repo": "Infisical/infisical",
+          "stars": 17000,
+          "last_push": "2026-08",
+          "desc": "Open-source HashiCorp Vault alternative with a CLI, SDKs, K8s injector, and self-host option. Free for 5 identities.",
+          "url": "https://github.com/Infisical/infisical"
+        },
+        {
+          "repo": "hashicorp/vault",
+          "stars": 31000,
+          "last_push": "2026-08",
+          "desc": "Industry standard secret manager. Overkill for single-user but supports dynamic secrets + leases.",
+          "url": "https://github.com/hashicorp/vault"
+        },
+        {
+          "repo": "FiloSottile/age",
+          "stars": 18000,
+          "last_push": "2026-08",
+          "desc": "Simple file encryption tool. Pair with a passphrase or YubiKey. The minimal primitive SOPS uses.",
+          "url": "https://github.com/FiloSottile/age"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Doppler",
+          "pricing": "Free 5 users / 3 projects; Team $21/user/mo",
+          "free_tier": "Yes (5 users)",
+          "desc": "Fully managed secret manager with good DX (CLI + dashboards). Closed source.",
+          "url": "https://www.doppler.com"
+        },
+        {
+          "service": "Infisical Cloud",
+          "pricing": "Free 5 identities/3 projects; Pro $18/identity/mo",
+          "free_tier": "Yes (5 identities)",
+          "desc": "Hosted Infisical. Same UI as OSS but no ops burden.",
+          "url": "https://infisical.com"
+        },
+        {
+          "service": "1Password / Bitwarden",
+          "pricing": "$3-8/mo personal",
+          "free_tier": "Bitwarden has full free tier",
+          "desc": "General-purpose password managers with CLI + 'op run' / 'bw get' for secret injection. Great for cookies + API keys.",
+          "url": "https://1password.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "Store secrets.yaml in repo, encrypted with SOPS+age. CI/dev runs `sops exec-env secrets.yaml -- python main.py`. age key kept in OS keychain (macOS: `security`, Linux: `secret-tool`, Win: DPAPI). For LinkedIn cookies with expiry, store expiry_ts alongside and rotate via hook. ~1 file, ~2 hours.",
+        "estimated_effort": "2-4 hours (single dev)",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "SOPS + age",
+        "best_commercial": "Doppler",
+        "best_free_option": "SOPS + age (no infra, diffable, git-friendly)",
+        "why": "For a personal project, SOPS+age wins on simplicity and audit trail (commits show which key changed). Doppler wins for teams that want zero ops. Vault is overkill unless you need dynamic DB creds."
+      }
+    },
+    "M16": {
+      "id": "M16",
+      "name": "Data backup / export",
+      "description": "Tracker DB, profile, and resumes should be exportable and backup-friendly.",
+      "oss_tools": [
+        {
+          "repo": "sqlite-online-backup (built into sqlite)",
+          "stars": null,
+          "last_push": "n/a (stdlib)",
+          "desc": "sqlite3 `.backup` API does online consistent snapshot of WAL-mode DB without locking writers. Standard.",
+          "url": "https://sqlite.org/backup.html"
+        },
+        {
+          "repo": "litestream (benbjohnson/litestream)",
+          "stars": 11500,
+          "last_push": "2026-08",
+          "desc": "Continuous SQLite WAL streaming to S3/GCS/Azure. Sub-second RPO. Single-binary install.",
+          "url": "https://github.com/benbjohnson/litestream"
+        },
+        {
+          "repo": "restic (restic/restic)",
+          "stars": 28000,
+          "last_push": "2026-08",
+          "desc": "Encrypted, deduplicated, incremental backups to many backends. Use for the whole repo (resumes, configs, DB snapshots).",
+          "url": "https://github.com/restic/restic"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "GitHub Actions cron + artifacts",
+          "pricing": "Free for public repos; private 2000 min/mo free",
+          "free_tier": "Yes (private 2000 min)",
+          "desc": "Nightly SQLite .backup → CSV/JSON export → commit to a private backup branch. Zero infra.",
+          "url": "https://github.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "Two layers: (1) CONTINUOUS = litestream replicate sqlite.db to S3 (RPO ~1s); (2) NIGHTLY = `sqlite3 tracker.db .backup /backup/tracker-YYYYMMDD.db` + dump each table to CSV + JSON, tar with resume PDFs, encrypt with age, push to git branch 'backup' and S3. Retain 90 daily + 12 monthly. ~50 lines shell.",
+        "estimated_effort": "0.5-1 day",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "litestream (continuous) + restic (point-in-time snapshot)",
+        "best_commercial": "GitHub Actions cron (free, no-infra)",
+        "best_free_option": "Build-it-yourself: sqlite3 .backup nightly + restic to S3 free tier",
+        "why": "Litestream covers the 'I just lost my disk' case with near-zero RPO; restic handles snapshots + resume PDFs. Both OSS, no SaaS dependency."
+      }
+    },
+    "M17": {
+      "id": "M17",
+      "name": "Multi-device sync",
+      "description": "Edit tracker from laptop, phone, desktop. Conflict-free merge.",
+      "oss_tools": [
+        {
+          "repo": "syncthing/syncthing",
+          "stars": 87870,
+          "last_push": "2026-08-22",
+          "desc": "P2P continuous file sync. No central server. Best for syncing the SQLite DB file + resume PDFs across machines.",
+          "url": "https://github.com/syncthing/syncthing"
+        },
+        {
+          "repo": "yjs/yjs",
+          "stars": 18000,
+          "last_push": "2026-08",
+          "desc": "CRDT for collaborative editing. If tracker is web-based, use yjs for live multi-user edits on the same record.",
+          "url": "https://github.com/yjs/yjs"
+        },
+        {
+          "repo": "automerge/automerge",
+          "stars": 6522,
+          "last_push": "2026-08-21",
+          "desc": "JSON CRDT. Good for structured record sync. Rust core (y-crdt port) gives Python bindings.",
+          "url": "https://github.com/automerge/automerge"
+        },
+        {
+          "repo": "vlcn.io (cr-sqlite)",
+          "stars": 3500,
+          "last_push": "2026-08",
+          "desc": "Causal CRDT layer for SQLite — each row becomes a CRDT. Native SQLite, multi-writer sync without conflicts.",
+          "url": "https://github.com/vlcn-io/cr-sqlite"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Cloudflare D1 / Turso",
+          "pricing": "Turso free 9GB / 500 DBs; D1 free 5GB",
+          "free_tier": "Yes (both)",
+          "desc": "Hosted SQLite at the edge — sync via HTTP instead of file replication. Per-device local cache.",
+          "url": "https://turso.tech"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "Three options ordered by complexity: (EASY) Syncthing for the tracker's SQLite file (single-writer-at-a-time via advisory lock — fine for one user across 3 devices). (MED) cr-sqlite — register tables as crsql, peer-sync via libp2p or simple HTTP relay. (HARD) Move tracker to a Turso DB and have each device connect directly. For a personal tracker, EASY is sufficient.",
+        "estimated_effort": "EASY: 30 min; MED: 2 days; HARD: 3-5 days",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "syncthing (file-level) — for a personal single-user tracker",
+        "best_commercial": "Turso (if you want edge SQLite)",
+        "best_free_option": "Build-it-yourself: syncthing + SQLite WAL + advisory lock",
+        "why": "A personal tracker is single-writer most of the time — Syncthing's file-level sync is enough and adds zero code. Only escalate to cr-sqlite if you actually need concurrent edits."
+      }
+    },
+    "M18": {
+      "id": "M18",
+      "name": "Audit log / pipeline run observability",
+      "description": "Who did what when — for debugging scrapers, scoring, and apply-bot runs.",
+      "oss_tools": [
+        {
+          "repo": "Delgan/loguru",
+          "stars": 24076,
+          "last_push": "2026-07-01",
+          "desc": "Zero-config structured logging. `logger.add('runs.log', serialize=True)` = JSON log. Best DX for solo devs.",
+          "url": "https://github.com/Delgan/loguru"
+        },
+        {
+          "repo": "hynek/structlog",
+          "stars": 4919,
+          "last_push": "2026-08-06",
+          "desc": "Structured logging with processors (bind context = run_id, scraper_name, etc.). More ceremony than loguru, scales better.",
+          "url": "https://github.com/hynek/structlog"
+        },
+        {
+          "repo": "open-telemetry/opentelemetry-python",
+          "stars": 2200,
+          "last_push": "2026-08",
+          "desc": "Distributed tracing — spans for each scraper/score/apply step. Export to Jaeger/Grafana Tempo.",
+          "url": "https://github.com/open-telemetry/opentelemetry-python"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Honeycomb",
+          "pricing": "Free up to 20M events/mo",
+          "free_tier": "Yes (20M events)",
+          "desc": "Best-in-class observability for pipeline tracing. Free tier generous for personal use.",
+          "url": "https://honeycomb.io"
+        },
+        {
+          "service": "Grafana Cloud",
+          "pricing": "Free 50GB logs / 10k series",
+          "free_tier": "Yes",
+          "desc": "Loki + Tempo + Prometheus in one stack.",
+          "url": "https://grafana.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "loguru with a structured sink: each run gets UUID, all logs carry {run_id, stage, scraper, target}. Emit to JSONL file rotated daily. Add a tiny `runs` table in tracker DB: (run_id, started_at, ended_at, status, error). Postgres/SQLite queryable for 'show me last 10 scraper failures'. OTel is overkill until you have >5 services.",
+        "estimated_effort": "0.5 day (loguru + runs table)",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "loguru (solo) / structlog (team)",
+        "best_commercial": "Honeycomb (free tier covers personal use)",
+        "best_free_option": "loguru → JSONL + SQLite runs table",
+        "why": "OTel is right answer for distributed systems but adds real overhead. loguru with structured JSON output + a runs table in your existing SQLite covers 90% of debugging needs in <50 LOC."
+      }
+    },
+    "M19": {
+      "id": "M19",
+      "name": "Rate limiting / throttling",
+      "description": "Don't hammer job boards or your own services.",
+      "oss_tools": [
+        {
+          "repo": "mjpieters/aiolimiter",
+          "stars": 775,
+          "last_push": "2026-08-21",
+          "desc": "Asyncio-native async token bucket. Compose with httpx for clean rate-limited client.",
+          "url": "https://github.com/mjpieters/aiolimiter"
+        },
+        {
+          "repo": "redis-cell (cellular/redis-cell)",
+          "stars": 1100,
+          "last_push": "2025-09",
+          "desc": "Redis module implementing GCRA rate limit. Single INCR-like command. Best when you have Redis already.",
+          "url": "https://github.com/cellular/redis-cell"
+        },
+        {
+          "repo": "slowapi (laurentS/slowapi)",
+          "stars": 2400,
+          "last_push": "2025-10",
+          "desc": "FastAPI/Starlette rate limiting middleware. Use if you expose tracker as a web API.",
+          "url": "https://github.com/laurentS/slowapi"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Cloudflare Rate Limiting",
+          "pricing": "Free tier limited; Pro $25/mo",
+          "free_tier": "Yes (limited)",
+          "desc": "Edge rate limiting on the CDN — only relevant if you expose a public API.",
+          "url": "https://cloudflare.com"
+        },
+        {
+          "service": "Upstash Ratelimit",
+          "pricing": "Free 10k req/day",
+          "free_tier": "Yes",
+          "desc": "Serverless rate limiting on Upstash Redis. REST API, multi-region.",
+          "url": "https://upstash.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "For scrapers (egress limiting): aiolimiter(AsyncLimiter(1, 2)) = 0.5 req/sec per host, wrap in httpx transport. For tracker API (ingress limiting): slowapi on FastAPI routes. Redis only if multi-process; otherwise in-memory counter dict is fine.",
+        "estimated_effort": "0.5 day",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "aiolimiter (egress) + slowapi (ingress)",
+        "best_commercial": "Upstash Ratelimit (free 10k/day, serverless)",
+        "best_free_option": "Build-it-yourself: aiolimiter wrapper around httpx",
+        "why": "You're a single process — no need for distributed rate limiting. aiolimiter is 50 LOC and integrates with any httpx-based client. Escalate to redis-cell only when multi-worker."
+      }
+    },
+    "M20": {
+      "id": "M20",
+      "name": "Proxy / IP rotation",
+      "description": "For scrapers that need IP rotation (LinkedIn, ATSs with bot detection).",
+      "oss_tools": [
+        {
+          "repo": "TeamHG-Memex/scrapy-rotating-proxies",
+          "stars": 775,
+          "last_push": "2026-04-08",
+          "desc": "Scrapy middleware that rotates from a proxy list, bans dead proxies, retries on errors.",
+          "url": "https://github.com/TeamHG-Memex/scrapy-rotating-proxies"
+        },
+        {
+          "repo": "jhao104/proxy_pool",
+          "stars": 26000,
+          "last_push": "2026-07",
+          "desc": "Crawls free proxy sources, validates, serves via HTTP API. Quality of free proxies is low — use for benign scraping only.",
+          "url": "https://github.com/jhao104/proxy_pool"
+        },
+        {
+          "repo": "curl-cffi (cf-cffi)",
+          "stars": 3500,
+          "last_push": "2026-08",
+          "desc": "Python HTTP client with TLS fingerprint impersonation (Chrome/Safari). Often bypasses Cloudflare without proxies — try this first.",
+          "url": "https://github.com/yifeikong/curl-cffi"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Bright Data",
+          "pricing": "Residential $4.00/GB pay-as-you-go, $3.50/GB at $499 plan, $1.40/GB at volume",
+          "free_tier": "Free trial with $500 match credit",
+          "desc": "Largest proxy pool (175M+ IPs), good docs, best for hard targets (LinkedIn).",
+          "url": "https://brightdata.com"
+        },
+        {
+          "service": "Oxylabs",
+          "pricing": "Residential $6/GB starter, $5/GB basic, $4/GB at volume",
+          "free_tier": "Free trial (limited)",
+          "desc": "Premium enterprise alternative to Bright Data. Better US/EU coverage.",
+          "url": "https://oxylabs.io"
+        },
+        {
+          "service": "Decodo (ex-Smartproxy)",
+          "pricing": "$1.80/IP US (static), residential ~$2-4/GB",
+          "free_tier": "Trial available",
+          "desc": "Best value provider — pay per IP rather than per GB for sticky residential.",
+          "url": "https://decodo.com"
+        },
+        {
+          "service": "ScraperAPI",
+          "pricing": "Free 5000 API credits/mo; $49/mo for 100k credits",
+          "free_tier": "Yes (5000 credits/mo)",
+          "desc": "All-in-one scraping API that handles proxy rotation + retry + CAPTCHA routing. Best for 'I don't want to manage proxies'.",
+          "url": "https://scraperapi.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "Skip proxies entirely until you actually get blocked — first try (1) curl-cffi with TLS impersonation, (2) Playwright stealth, (3) request rate < 0.5 req/sec with jittered delays, (4) only then add a paid residential pool. Self-rolled free proxies (proxy_pool) yield <30% success on real targets — usually wasted time.",
+        "estimated_effort": "0 days if curl-cffi works; 1-2 days integrating Bright Data SDK if not",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "curl-cffi (often avoids need for proxies entirely)",
+        "best_commercial": "Bright Data for hard targets / Decodo for value / ScraperAPI for no-ops",
+        "best_free_option": "Build-it-yourself: curl-cffi + jittered delays + Playwright stealth",
+        "why": "Most personal-scraping blocks are TLS-fingerprint-based, not IP-based — curl-cffi solves 70% of cases for free. Save paid proxies for LinkedIn-scale targets."
+      }
+    },
+    "M21": {
+      "id": "M21",
+      "name": "CAPTCHA solving",
+      "description": "Solve reCAPTCHA / hCaptcha / Turnstile / image CAPTCHAs for sites that need it.",
+      "oss_tools": [
+        {
+          "repo": "ArtifexSoftware/ghost-captcha / capmonster-python",
+          "stars": null,
+          "last_push": "n/a",
+          "desc": "CapMonster Cloud Python SDK — same API as 2captcha.",
+          "url": "https://github.com/ZennoLab/capmonster-cloud-client-python"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "2Captcha",
+          "pricing": "$1-1.45 per 1000 reCAPTCHA v2; min $1 deposit",
+          "free_tier": "No free tier (cheap entry)",
+          "desc": "Oldest service, supports all CAPTCHA types. ~3-15s solve time.",
+          "url": "https://2captcha.com"
+        },
+        {
+          "service": "CapSolver",
+          "pricing": "$0.80 per 1000 reCAPTCHA v2; min $6 deposit",
+          "free_tier": "Free trial credits",
+          "desc": "AI-based solver, faster and slightly cheaper. Good Turnstile/hCaptcha support.",
+          "url": "https://capsolver.com"
+        },
+        {
+          "service": "Anti-Captcha",
+          "pricing": "$0.50-2.00 per 1000 depending on type",
+          "free_tier": "Trial",
+          "desc": "Long-running competitor, decent reliability.",
+          "url": "https://anti-captcha.com"
+        },
+        {
+          "service": "CapMonster Cloud",
+          "pricing": "$0.60 per 1000 reCAPTCHA v2",
+          "free_tier": "Free credits on signup",
+          "desc": "ZennoLab's API — good for self-hosted option (CapMonster Lite runs locally).",
+          "url": "https://capmonster.cloud"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "Don't build a solver — these services exist because CV + ML is expensive and laborious. Wrap 2captcha + CapSolver behind a Provider interface, fall back from primary → secondary. Cache solutions per (site, captcha_image_hash) for 1 hour — often same site shows same CAPTCHA to multiple sessions briefly. Watch spend — at $1/1000, careless scraping can rack up $50/day on a tough target.",
+        "estimated_effort": "0.5 day wrapper code",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "none — use commercial APIs",
+        "best_commercial": "CapSolver (price/perf) or 2Captcha (cheapest entry, $1 deposit)",
+        "best_free_option": "Build-it-yourself: avoid CAPTCHA by using authenticated APIs where possible (USAJobs/Remotive have no CAPTCHA; LinkedIn logged-in has no CAPTCHA)",
+        "why": "CAPTCHA solving is commodity-priced (sub-cent per solve). Don't roll your own. But first ask if you can avoid the CAPTCHA site entirely via a different source."
+      }
+    },
+    "M22": {
+      "id": "M22",
+      "name": "Headless browser service",
+      "description": "Run Playwright/Puppeteer in a container without a local display.",
+      "oss_tools": [
+        {
+          "repo": "browserless/browserless",
+          "stars": 7000,
+          "last_push": "2026-08",
+          "desc": "Self-hostable Chrome-as-a-service. Docker image, WebSocket CDP endpoint. v2 (browserless/chrome) is current OSS fork.",
+          "url": "https://github.com/browserless/browserless"
+        },
+        {
+          "repo": "scrapy-plugins/scrapy-playwright",
+          "stars": 1500,
+          "last_push": "2026-07",
+          "desc": "Playwright integration for Scrapy. Manage browser context per-spider, render pages, handle JS.",
+          "url": "https://github.com/scrapy-plugins/scrapy-playwright"
+        },
+        {
+          "repo": "microsoft/playwright-python",
+          "stars": 12000,
+          "last_push": "2026-08",
+          "desc": "Official Playwright Python bindings. Run `playwright install chromium` once and you're set for headless.",
+          "url": "https://github.com/microsoft/playwright-python"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Browserbase",
+          "pricing": "Free (1 hr + 1 concurrent); Developer $20/mo (100 hrs); Startup $99/mo",
+          "free_tier": "Yes (1 hour, 1 concurrent browser)",
+          "desc": "Managed headless Chrome with built-in stealth, CAPTCHA handling, session reuse, observability dashboards.",
+          "url": "https://browserbase.com"
+        },
+        {
+          "service": "Browserless Cloud",
+          "pricing": "~$50/mo entry; free ~1,000 units/mo",
+          "free_tier": "Yes (~1,000 units)",
+          "desc": "Same engine as OSS, hosted. Direct CDP endpoint.",
+          "url": "https://browserless.io"
+        },
+        {
+          "service": "Apify",
+          "pricing": "Free $5/mo platform credit",
+          "free_tier": "Yes ($5 credit)",
+          "desc": "Serverless actors marketplace — wrap Playwright scripts, run on schedule, store results.",
+          "url": "https://apify.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "Two options: (LOCAL) Just install Playwright Python + `playwright install chromium`. Headless works on Linux without X server via bundled libs. Add xvfb-run only if a site complains. (SERVER) Run `docker run -p 3000:3000 browserless/chrome` and connect via CDP from your scraper. Browserbase only worth it if you need stealth + CAPTCHA handling baked in.",
+        "estimated_effort": "0 days (local Playwright); 0.5 day (self-hosted browserless in Docker)",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "playwright-python (local) + browserless/chrome Docker (server)",
+        "best_commercial": "Browserbase (stealth + CAPTCHA built-in)",
+        "best_free_option": "Build-it-yourself: local Playwright + headless Chromium",
+        "why": "For a personal scraper running locally, plain `playwright install` is enough. Browserbase is the right escalation when stealth becomes the bottleneck."
+      }
+    },
+    "H12": {
+      "id": "H12",
+      "name": "Multi-stage interview tracking",
+      "description": "Phone screen → onsite → offer, with dates and notes per stage.",
+      "oss_tools": [
+        {
+          "repo": "Tracker-style apps (e.g., mentat, Huntr, Teal)",
+          "stars": "varies",
+          "last_push": "varies",
+          "desc": "Most are commercial/SaaS; OSS alternatives are basic. Self-rolled SQLite schema is the de-facto answer.",
+          "url": "https://github.com/topics/job-tracker"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Huntr",
+          "pricing": "Free personal tracker; $30/mo AI features",
+          "free_tier": "Yes (full tracker)",
+          "desc": "Visual pipeline kanban for applications with custom stages + notes per stage. Closest to spec.",
+          "url": "https://huntr.co"
+        },
+        {
+          "service": "Teal",
+          "pricing": "Free tracker; $9-29/mo Pro",
+          "free_tier": "Yes",
+          "desc": "Job tracker + resume builder. Stages + contacts + notes.",
+          "url": "https://tealhq.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "Three tables: applications(id, company, role, status, source_id, applied_at); interview_stages(id, application_id, stage_type, scheduled_at, completed_at, outcome, notes, participants); stage_types enum [phone_screen, recruiter_call, technical, onsite, team_match, offer, rejected]. UI: timeline view per application. Add trigger to bump application.status when stage outcome = 'passed'. ~50 LOC + a Flask/Streamlit UI.",
+        "estimated_effort": "1 day (schema + basic UI)",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "none dominant — self-rolled SQLite is the pattern",
+        "best_commercial": "Huntr (purpose-built for job pipelines)",
+        "best_free_option": "Build-it-yourself: applications + interview_stages tables",
+        "why": "Schema is trivial (~5 columns per stage) and tightly coupled to your existing tracker — extending your SQLite is faster than integrating an external app. Huntr is the right answer if you don't want to maintain UI."
+      }
+    },
+    "H13": {
+      "id": "H13",
+      "name": "Recruiter communication log",
+      "description": "Per-application log of email/phone/Slack threads with recruiters.",
+      "oss_tools": [
+        {
+          "repo": "martinrusev/imbox",
+          "stars": 1500,
+          "last_push": "2019 (unmaintained)",
+          "desc": "Python IMAP client. Easy to read Gmail. Last commit 2019 — verify before use.",
+          "url": "https://github.com/martinrusev/imbox"
+        },
+        {
+          "repo": "google-gmail-api-python-client",
+          "stars": 8000,
+          "last_push": "active",
+          "desc": "Official Gmail API client. Handles OAuth, search, threads, labels. Right path for Gmail users.",
+          "url": "https://github.com/googleapis/google-api-python-client"
+        },
+        {
+          "repo": "mail-parser (miohtama)",
+          "stars": 200,
+          "last_push": "2024",
+          "desc": "Robust MIME parser — extract body, attachments, headers from raw .eml.",
+          "url": "https://github.com/miohtama/mail-parser"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Nylas",
+          "pricing": "Free 10 accounts / 2000 emails; paid from $30/mo",
+          "free_tier": "Yes",
+          "desc": "Unified Email/Calendar/Contacts API. Pre-built parsers + threading. Good if you also want calendar.",
+          "url": "https://nylas.com"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "(1) Gmail API OAuth scope `gmail.readonly` + `gmail.send`; (2) Nightly query: `from:(recruiter@company OR *.greenhouse.io OR *.lever.co)` → list threads; (3) For each application in tracker, fuzzy-match by recruiter email or company domain → link communications table (comm_id, application_id, channel, thread_id, ts, snippet, full_msg_path); (4) Store full body to S3/disk, store snippet + link in DB. Slack: use Slack API `conversations.history` for DM channels. Phone: manual notes UI.",
+        "estimated_effort": "2-3 days (Gmail OAuth is fiddly)",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "google-api-python-client (Gmail API) — official, maintained",
+        "best_commercial": "Nylas (if multi-provider email)",
+        "best_free_option": "Build-it-yourself: Gmail API + fuzzy link by recruiter email",
+        "why": "imbox is unmaintained (last commit 2019). Gmail API is the official path and supports labels/threads. Nylas only worth it if you need Outlook support too."
+      }
+    },
+    "H14": {
+      "id": "H14",
+      "name": "Application source tracking",
+      "description": "Where did you find this job? Referral, LinkedIn, direct, etc.",
+      "oss_tools": [],
+      "commercial_services": [],
+      "build_it_yourself": {
+        "architecture": "Single column on applications table: source ENUM [linkedin, linkedin_easy_apply, greenhouse_direct, referral, recruiter_outbound, jobboard_jsearch, jobboard_adzuna, jobboard_usajobs, company_career_page, other]. Add source_url + referrer_person_id (FK to contacts table) when applicable. Drop-down UI populated from the enum. 5-min change to existing schema.",
+        "estimated_effort": "10 minutes (column + enum + dropdown)",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "none needed",
+        "best_commercial": "none needed",
+        "best_free_option": "Build-it-yourself: single source column + enum",
+        "why": "Trivial column on existing applications table. No external tool needed."
+      }
+    },
+    "H15": {
+      "id": "H15",
+      "name": "Time-in-pipeline alerts",
+      "description": "Alert if application has been in 'Applied' state >14 days with no response.",
+      "oss_tools": [
+        {
+          "repo": "python-crontab (josegonzalez/python-crontab)",
+          "stars": 600,
+          "last_push": "2024",
+          "desc": "Cron job definition + scheduling. Pairs with a simple Python checker script.",
+          "url": "https://github.com/josegonzalez/python-crontab"
+        },
+        {
+          "repo": "APScheduler (agronholm/apscheduler)",
+          "stars": 6000,
+          "last_push": "2026-08",
+          "desc": "In-process scheduler — IntervalTrigger/DateTrigger/CronTrigger. Embeds in your existing Python app.",
+          "url": "https://github.com/agronholm/apscheduler"
+        }
+      ],
+      "commercial_services": [
+        {
+          "service": "Healthchecks.io",
+          "pricing": "Free 20 checks per project",
+          "free_tier": "Yes",
+          "desc": "Dead-man's switch — alerts you if your nightly checker stops running. Pair with cron.",
+          "url": "https://healthchecks.io"
+        }
+      ],
+      "build_it_yourself": {
+        "architecture": "Nightly cron job: `SELECT * FROM applications WHERE status='applied' AND days_since(applied_at) > 14 AND last_activity_at < NOW() - INTERVAL '7 days'`. For each result, send alert via configured channels (Telegram bot, email, desktop notification). Add `notifications_sent` table to avoid duplicate alerts. 30 LOC.",
+        "estimated_effort": "0.5 day",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "APScheduler (embedded) or system cron",
+        "best_commercial": "Healthchecks.io (only for monitoring the cron itself)",
+        "best_free_option": "Build-it-yourself: nightly SQL query + Telegram bot",
+        "why": "It's a 30-line SQL check + alert sender — no tooling needed beyond a scheduler."
+      }
+    },
+    "H16": {
+      "id": "H16",
+      "name": "Offer deadline tracking",
+      "description": "When does the offer expire? Countdown + alert before expiry.",
+      "oss_tools": [],
+      "commercial_services": [],
+      "build_it_yourself": {
+        "architecture": "Add columns to applications table: offer_received_at, offer_deadline_at, offer_accepted_at. Build alert rules: (T-7d, T-3d, T-1d, T-0d) → send notification. UI badge: '5 days remaining' with color ramp (green→yellow→red). Reuse the same alert sender from H15. ~20 LOC + schema migration.",
+        "estimated_effort": "0.5 day",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "none needed (extend H15 alert sender)",
+        "best_commercial": "none needed",
+        "best_free_option": "Build-it-yourself: deadline_at column + T-7/T-3/T-1/T-0 alert chain",
+        "why": "Two columns + alerting reuse from H15. No external tool."
+      }
+    },
+    "G13": {
+      "id": "G13",
+      "name": "Application confirmation capture",
+      "description": "Screenshot/email confirmation that you applied, stored in tracker.",
+      "oss_tools": [
+        {
+          "repo": "Playwright (screenshot)",
+          "stars": 67000,
+          "last_push": "active",
+          "desc": "page.screenshot(full_page=True) after submission — captures confirmation page directly.",
+          "url": "https://github.com/microsoft/playwright"
+        }
+      ],
+      "commercial_services": [],
+      "build_it_yourself": {
+        "architecture": "(1) If applying via Playwright: take screenshot immediately after submit click, save as applications/{id}/confirmation_screenshot.png; (2) Save the resulting URL + page text to a 'confirmations' table (application_id, captured_at, source_url, page_text_snippet, screenshot_path); (3) Email confirmation: Gmail API filter `from:(no-reply@company OR careers@*) subject:(application OR received OR confirmation)` → store as HTML + screenshot. UI shows thumbnails of both.",
+        "estimated_effort": "0.5 day integrated with Playwright apply-bot; 1 day if also pulling email confirmations",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "Playwright (page.screenshot)",
+        "best_commercial": "none needed",
+        "best_free_option": "Build-it-yourself: Playwright screenshot + Gmail API filter",
+        "why": "Two-line Playwright call after every apply submission. Email confirmation is optional but useful for off-bot applications."
+      }
+    },
+    "G14": {
+      "id": "G14",
+      "name": "Withdraw application",
+      "description": "Mark an application as withdrawn (e.g., accepted another offer).",
+      "oss_tools": [],
+      "commercial_services": [],
+      "build_it_yourself": {
+        "architecture": "Add status enum value 'withdrawn' + withdrawn_at timestamp + withdrawn_reason enum [accepted_other_offer, role_no_longer_interesting, salary_misaligned, location_change, other]. Optionally store withdrawal email template + sent_at if you sent a courtesy note. UI: 'Withdraw' button → modal with reason → updates row + sets withdrawn_at. ~30 LOC.",
+        "estimated_effort": "0.25 day",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "none needed",
+        "best_commercial": "none needed",
+        "best_free_option": "Build-it-yourself: status='withdrawn' + withdrawn_at + withdrawn_reason",
+        "why": "Status enum + 2 columns. Zero external tooling."
+      }
+    },
+    "G15": {
+      "id": "G15",
+      "name": "Duplicate application prevention",
+      "description": "Warn if applying to a similar role at the same company you've already applied to.",
+      "oss_tools": [
+        {
+          "repo": "datasketch (ekzhu/datasketch)",
+          "stars": 2400,
+          "last_push": "2025-08",
+          "desc": "Reuse from B19. MinHash similarity on JD text → flag pre-apply if sim ≥ 0.85 to existing applications at same company.",
+          "url": "https://github.com/ekzhu/datasketch"
+        }
+      ],
+      "commercial_services": [],
+      "build_it_yourself": {
+        "architecture": "Pre-apply check function: `already_applied(company, role_title, jd_text)` → (1) exact match on applications WHERE company_normalized=? AND status != 'rejected' AND (role_title_sim > 0.85 OR jd_minhash_sim > 0.85); (2) Return list of matches with diff view ('You applied to <similar role> on 2025-09-15'). UI: red warning banner with 'Apply anyway' / 'Cancel'. 1 SQL query + 1 minhash compare.",
+        "estimated_effort": "0.5 day",
+        "data_sources": []
+      },
+      "recommendation": {
+        "best_oss": "datasketch (reuse from B19)",
+        "best_commercial": "none needed",
+        "best_free_option": "Build-it-yourself: pre-apply check using title + minhash similarity vs existing applications",
+        "why": "Same dedup primitive as B19, scoped to your own applications. Reusing avoids double cost."
+      }
+    }
+  },
+  "cross_cutting_observations": {
+    "reuse_opportunities": [
+      "B19 (cross-time job dedup) and G15 (duplicate application prevention) both use MinHash on JD text — share one datasketch LSH index.",
+      "H15 (time-in-pipeline alerts) and H16 (offer deadline alerts) share one alert sender + scheduler.",
+      "M19 (rate limiting) and B18 (quota mgmt) both wrap httpx — one transport adapter can do both per-request rate limit + cumulative quota tracking.",
+      "M16 (backup) writes to S3; M15 (SOPS+age) encrypts secrets; these compose — `sops exec-env secrets.yaml -- restic backup`."
+    ],
+    "skip_these_entirely": [
+      "H14 (source tracking) — single column. Don't over-engineer.",
+      "G14 (withdraw) — status enum. Don't over-engineer.",
+      "G15 (dup prevention) — reuse B19 minhash. Don't build separately."
+    ],
+    "build_vs_buy_tally": {
+      "build_yourself": ["B18", "B19", "B20", "M15", "M16", "M17", "M18", "M19", "H12", "H13", "H14", "H15", "H16", "G13", "G14", "G15"],
+      "buy_commercial": ["M20 (paid proxies for hard targets)", "M21 (CAPTCHA solving — always buy)", "M22 (Browserbase for stealth)"],
+      "optional_commercial_for_no_ops": ["M15 (Doppler)", "M17 (Turso)", "M22 (Browserbase)", "M20 (ScraperAPI)"]
+    },
+    "total_build_effort_estimate": "~25-30 dev-days for the entire 19-gap infra stack, assuming single developer and existing tracker DB"
+  }
+}

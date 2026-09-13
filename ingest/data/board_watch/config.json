@@ -1,0 +1,11 @@
+{
+ "watches": [
+  {
+   "label": "nvidia_us_fulltime",
+   "board": "nvidia|wd5|nvidiaexternalcareersite",
+   "company": "NVIDIA",
+   "country": "United States",
+   "time_type": "Full time"
+  }
+ ]
+}

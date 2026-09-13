@@ -1,0 +1,43 @@
+{
+  "results": [
+    {
+      "id": "f1e2d3c4-b5a6-7890-abcd-ef1234567890",
+      "title": "Senior Backend Engineer",
+      "department": "Engineering",
+      "team": "Platform",
+      "locationName": "San Francisco, CA",
+      "locationFlexibility": ["Remote"],
+      "description": "<p>We're looking for a Senior Backend Engineer to build scalable services in Python, FastAPI, and PostgreSQL. Kubernetes and AWS experience a plus. H1B visa sponsorship available for exceptional candidates. Apply to jobs@acme.cloud</p>",
+      "applyUrl": "https://www.ashbyhq.com/a/acme/jobs/f1e2d3c4",
+      "externalLink": null,
+      "publishedDate": "2026-08-20T10:00:00.000Z",
+      "compensation": {
+        "currency": "USD",
+        "minValue": 130000,
+        "maxValue": 170000,
+        "interval": "yearly"
+      },
+      "companyName": "Acme Cloud"
+    },
+    {
+      "id": "a0b1c2d3-e4f5-6789-abcd-ef1234567890",
+      "title": "Staff ML Engineer",
+      "department": "AI Research",
+      "team": "Foundations",
+      "locationName": "Remote - US",
+      "locationFlexibility": ["Remote", "Hybrid"],
+      "description": "<p>Staff ML Engineer to lead ML platform development. Python, PyTorch, distributed training, Kubernetes. Visa sponsorship considered. Contact ml-hiring@acme.cloud</p>",
+      "applyUrl": "https://www.ashbyhq.com/a/acme/jobs/a0b1c2d3",
+      "externalLink": null,
+      "publishedDate": "2026-08-19T08:00:00.000Z",
+      "compensation": {
+        "currency": "USD",
+        "minValue": 180000,
+        "maxValue": 240000,
+        "interval": "yearly"
+      },
+      "companyName": "Acme Cloud"
+    }
+  ],
+  "nextCursor": null
+}

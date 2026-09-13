@@ -1,0 +1,27 @@
+{
+  "count": 2,
+  "results": [
+    {
+      "id": 12345,
+      "role": "Senior Python Engineer",
+      "company_name": "Acme Cloud",
+      "text": "We need a senior Python engineer. FastAPI, PostgreSQL, Docker. H1B visa sponsorship available for exceptional candidates. Contact jobs@acme.dev",
+      "url": "https://findwork.dev/job/12345-senior-python-engineer",
+      "date": "2026-08-20T12:34:56Z",
+      "employment_type": "FULL_TIME",
+      "remote": true,
+      "location": "Remote"
+    },
+    {
+      "id": 67890,
+      "role": "DevOps Engineer",
+      "company_name": "BetaOps",
+      "text": "DevOps engineer. Kubernetes, Terraform, AWS. On-site in Denver.",
+      "url": "https://findwork.dev/job/67890-devops-engineer",
+      "date": "2026-08-19T08:00:00Z",
+      "employment_type": "FULL_TIME",
+      "remote": false,
+      "location": "Denver, CO"
+    }
+  ]
+}

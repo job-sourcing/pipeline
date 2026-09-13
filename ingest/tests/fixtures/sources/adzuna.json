@@ -1,0 +1,37 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "id": "a1",
+      "title": "Python Backend Engineer",
+      "company": { "display_name": "Acme Cloud" },
+      "location": { "display_name": "New York, NY" },
+      "redirect_url": "https://www.adzuna.com/details/adz/a1",
+      "description": "We need a Python backend engineer with FastAPI and PostgreSQL. Visa sponsorship available for strong candidates. Apply at jobs@acme.cloud",
+      "created": "2026-08-20T10:00:00Z",
+      "salary_min": 120000,
+      "salary_max": 160000,
+      "contract_time": "full_time"
+    },
+    {
+      "id": "a2",
+      "title": "Data Engineer",
+      "company": { "display_name": "BetaData Inc" },
+      "location": { "display_name": "Austin, TX" },
+      "redirect_url": "https://www.adzuna.com/details/adz/a2",
+      "description": "Senior data engineer. Python, Airflow, Spark, AWS. Remote eligible.",
+      "created": "2026-08-19T09:00:00Z",
+      "salary_min": null,
+      "salary_max": null
+    },
+    {
+      "id": "a3",
+      "title": "Frontend Developer",
+      "company": { "display_name": "Gamma Web" },
+      "location": { "display_name": "Remote" },
+      "redirect_url": null,
+      "description": "React and TypeScript developer. Python not required.",
+      "created": "2026-08-18T08:00:00Z"
+    }
+  ]
+}

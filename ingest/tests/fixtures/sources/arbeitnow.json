@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "slug": "python-developer-acme",
+      "company_name": "Acme Cloud",
+      "title": "Python Developer (f/m/d)",
+      "description": "<p>Backend developer with <b>Python</b>, Docker and PostgreSQL. We offer remote work.</p><p>H1B sponsorship available.</p>",
+      "remote": true,
+      "url": "https://www.arbeitnow.com/jobs/python-developer-acme",
+      "tags": ["python", "docker", "postgresql"],
+      "job_types": ["full_time"],
+      "location": "Berlin",
+      "created_at": 1787000000.0
+    },
+    {
+      "slug": "frontend-react-beta",
+      "company_name": "BetaWeb GmbH",
+      "title": "Frontend Developer React",
+      "description": "React and TypeScript developer for e-commerce.",
+      "remote": false,
+      "url": "https://www.arbeitnow.com/jobs/frontend-react-beta",
+      "tags": ["react", "typescript"],
+      "job_types": ["full_time"],
+      "location": "Munich",
+      "created_at": 1786900000.0
+    }
+  ]
+}

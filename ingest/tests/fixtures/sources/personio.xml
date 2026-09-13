@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workzag-jobs>
+
+<position>
+    <id>36748</id>
+    <office>Dresden</office>
+    <department>Engineering</department>
+    <recruitingCategory>Full Time Position</recruitingCategory>
+    <name>(Senior) Site Reliability Engineer (m/w/d)</name>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <yearsOfExperience>2-5</yearsOfExperience>
+    <keywords>Dresden,Cloud,IoT,Kubernetes</keywords>
+    <occupation>software_and_system_architecture</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2026-08-20T15:14:31+00:00</createdAt>
+    <jobDescriptions>
+        <jobDescription>
+            <name>Deine Aufgaben</name>
+            <value>
+                <![CDATA[<p>Als Site Reliability Engineer sicherst du die KiwiOS IoT-Plattform.</p><ul><li>Monitoring und Incident Management</li><li>Kubernetes Operations</li></ul>]]>
+            </value>
+        </jobDescription>
+        <jobDescription>
+            <name>Deine Qualifikationen</name>
+            <value>
+                <![CDATA[<p>Du beherrschst GCP und Kubernetes. H1B visa sponsorship not available.</p>]]>
+            </value>
+        </jobDescription>
+    </jobDescriptions>
+</position>
+
+<position>
+    <id>2763335</id>
+    <office>Remote</office>
+    <department>Engineering</department>
+    <recruitingCategory>Full Time Position</recruitingCategory>
+    <name>Remote Python Backend Developer</name>
+    <employmentType>permanent</employmentType>
+    <schedule>full-time</schedule>
+    <keywords>python,fastapi,remote</keywords>
+    <createdAt>2026-08-22T09:00:00+00:00</createdAt>
+    <jobDescriptions>
+        <jobDescription>
+            <name>Your Mission</name>
+            <value>
+                <![CDATA[<p>Build backend services with Python and FastAPI.</p>]]>
+            </value>
+        </jobDescription>
+    </jobDescriptions>
+</position>
+
+</workzag-jobs>

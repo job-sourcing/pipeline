@@ -1,0 +1,28 @@
+[
+  {
+    "legal": "We legally have to put this here",
+    "count": 3
+  },
+  {
+    "slug": "python-engineer-acme",
+    "position": "Python Engineer",
+    "company_name": "JACK &amp; JONES",
+    "description": "<p>Build <b>Python</b> services with PostgreSQL and Redis. Remote forever.</p>",
+    "url": "https://remoteok.com/remote-jobs/python-engineer-acme",
+    "location": "Remote",
+    "date": 1787000000,
+    "salary_range": "90k-130k USD",
+    "tags": ["python", "backend", "redis"]
+  },
+  {
+    "slug": "devops-engineer-beta",
+    "position": "DevOps Engineer",
+    "company_name": "BetaOps",
+    "description": "<p>Kubernetes, Terraform, AWS infrastructure.</p>",
+    "url": "https://remoteok.com/remote-jobs/devops-engineer-beta",
+    "location": "Remote",
+    "date": 1786900000,
+    "salary_range": null,
+    "tags": ["kubernetes", "terraform"]
+  }
+]

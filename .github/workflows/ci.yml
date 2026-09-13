@@ -1,0 +1,59 @@
+name: CI
+
+# Budget-lean test gate (audit S7-B3, findings A4 + A5): the 829-test
+# suite had NO automated runner — every regression this session (cfg=None
+# live-path crash, timeType facet never applied, postingAgeDays time-bomb,
+# the broken board-watch.yml that shipped unparseable) passed "green"
+# because the only gate was a local pytest the operator happened to run.
+#
+# TRIGGER CHOICE — pull_request + workflow_dispatch ONLY, deliberately
+# NO push trigger: the repo's solo-dev flow pushes MANY small commits
+# straight to main (the board-watch/drain/backfill bots checkpoint-push
+# on every leg, the operator commits per fix wave). A push trigger would
+# burn minutes on runs whose outcome the pusher just verified locally.
+# PRs are the review surface; workflow_dispatch covers ad-hoc runs
+# (e.g. after a big rebase or on a release tag).
+#
+# GHA budget is EXHAUSTED until Oct 1 2026 (private repo, 2,000 min/mo,
+# burned 2026-09-09 by the backfill retrigger loop). Until the spending
+# limit resets this workflow simply will not run — it is a backstop that
+# activates then; local `cd ingest && python3 -m pytest -q` remains the
+# PRIMARY gate. One PR run ≈ 1-2 min (job capped at 15).
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true      # a fresh push to a PR obsoletes the old run
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pipeline (with dev extras)
+        run: pip install -e "ingest[dev]"
+
+      - name: Lint workflow YAML (parsability gate)
+        # The board-watch.yml breakage was caught only by a manual
+        # pyyaml run; a duplicate key / bad indent ships a silently dead
+        # cron otherwise. Runs over ALL workflow files including this
+        # one (a broken ci.yml fails its own run — honest).
+        run: |
+          pip install pyyaml
+          python3 -c "import yaml,glob; [yaml.safe_load(open(p)) for p in glob.glob('.github/workflows/*.yml')]"
+
+      - name: Run the test suite
+        working-directory: ingest
+        run: python3 -m pytest -q

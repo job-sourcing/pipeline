@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: jobsearch
+Version: 0.1.0
+Summary: E2E AI job-search pipeline: discovery, dedup, scoring, tracking
+License: MIT
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: requests>=2.31
+Requires-Dist: click>=8.1
+Provides-Extra: jobspy
+Requires-Dist: python-jobspy; extra == "jobspy"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Dynamic: license-file

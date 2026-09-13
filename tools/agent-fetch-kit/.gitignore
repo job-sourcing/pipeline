@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.pytest_cache/
+out/
+gha-results/
+*.log
+.DS_Store
+.gitlab-creation.log
+# NOTE: .env IS committed on purpose. In the Z sandbox the local disk is NOT durable
+# and git IS the disk; per project policy we ignore the standard .env-in-git smell.

@@ -1,0 +1,31 @@
+{
+  "type": "JOBS",
+  "jobs": [
+    {
+      "id": "c1",
+      "title": "Python Developer",
+      "company": "Acme Cloud",
+      "description": "Backend Python developer. FastAPI, PostgreSQL, AWS. We will sponsor H1B visas for exceptional candidates. Apply to jobs@acme.cloud",
+      "url": "https://www.careerjet.com/jobad/abc123",
+      "date": "Mon, 18 Aug 2026 12:00:00 +0000",
+      "locations": "Austin, TX",
+      "salary_min": 90000,
+      "salary_max": 130000,
+      "salary_currency_code": "USD",
+      "salary_type": "Y"
+    },
+    {
+      "id": "c2",
+      "title": "Frontend Developer",
+      "company": "Gamma Web",
+      "description": "React and TypeScript developer for e-commerce. Remote.",
+      "url": "https://www.careerjet.com/jobad/def456",
+      "date": "Sun, 17 Aug 2026 09:30:00 +0000",
+      "locations": "Remote",
+      "salary_min": null,
+      "salary_max": null,
+      "salary_currency_code": "USD",
+      "salary_type": ""
+    }
+  ]
+}

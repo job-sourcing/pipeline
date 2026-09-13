@@ -1,0 +1,30 @@
+[
+  {
+    "label": "chrome_impersonate/tls.peet.ws",
+    "target": "https://tls.peet.ws/api/all",
+    "engine": "chrome_impersonate",
+    "submit_status": 202,
+    "batch_id": "batch-1787707208221-lrc3i8"
+  },
+  {
+    "label": "puppeteer/bot.sannysoft",
+    "target": "https://bot.sannysoft.com/",
+    "engine": "puppeteer",
+    "submit_status": 202,
+    "batch_id": "batch-1787707209499-i9vjb0"
+  },
+  {
+    "label": "puppeteer/quotes.toscrape.js",
+    "target": "https://quotes.toscrape.com/js/",
+    "engine": "puppeteer",
+    "submit_status": 202,
+    "batch_id": "batch-1787707210503-ilnbd7"
+  },
+  {
+    "label": "puppeteer/nowsecure.nl",
+    "target": "https://nowsecure.nl",
+    "engine": "puppeteer",
+    "submit_status": 202,
+    "batch_id": "batch-1787707211493-9g4y8r"
+  }
+]

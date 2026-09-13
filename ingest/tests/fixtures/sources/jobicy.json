@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "id": 111,
+      "url": "https://jobicy.com/jobs/python-backend-engineer-remote",
+      "jobTitle": "Python Backend Engineer",
+      "companyName": "Acme Cloud",
+      "jobGeo": "USA",
+      "jobLevel": "Senior",
+      "jobType": "Full-time",
+      "jobExcerpt": "<p>Remote Python backend role: FastAPI, PostgreSQL, AWS. Sponsorship considered.</p>",
+      "pubDate": "2026-08-20",
+      "salary": "120k-160k USD/year"
+    },
+    {
+      "id": 112,
+      "url": "https://jobicy.com/jobs/content-writer",
+      "jobTitle": "Content Writer",
+      "companyName": "Gamma Media",
+      "jobGeo": "USA",
+      "jobLevel": "Any",
+      "jobType": "Contract",
+      "jobExcerpt": "<p>Write blog posts about gardening and lifestyle.</p>",
+      "pubDate": "2026-08-19",
+      "salary": ""
+    }
+  ]
+}

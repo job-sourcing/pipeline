@@ -1,0 +1,821 @@
+{
+  "query": {
+    "keywords": "software engineer",
+    "location": "San Francisco",
+    "max_pages": 10
+  },
+  "timestamp": "20260825_113917",
+  "total_jobs": 90,
+  "jobs": [
+    {
+      "id": "4419973506",
+      "title": "Senior Software Engineer \u2013 Go (Golang)",
+      "company": "General Motors",
+      "location": "Mountain View, CA",
+      "posted_date": "2026-08-23",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-%E2%80%93-go-golang-at-general-motors-4419973506?position=1&amp;pageNum=0&amp;refId=3CHcw4jBORqJ8bZUCYiUtg%3D%3D&amp;trackingId=pNLJioh6IR%2BKXUtUjsMVYA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4397801224",
+      "title": "Senior Software Engineer - Authentication",
+      "company": "Hinge Health",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-11",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-authentication-at-hinge-health-4397801224?position=2&amp;pageNum=0&amp;refId=3CHcw4jBORqJ8bZUCYiUtg%3D%3D&amp;trackingId=jx2ResHb5rc0RYiqIKYPQA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455901339",
+      "title": "Software Development Engineer, AWS Identity",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Santa Clara, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/software-development-engineer-aws-identity-at-amazon-web-services-aws-4455901339?position=3&amp;pageNum=0&amp;refId=3CHcw4jBORqJ8bZUCYiUtg%3D%3D&amp;trackingId=A8%2F7apA%2B3ko83rqx6ElWWg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4441838717",
+      "title": "Senior, Software Engineer - Back End",
+      "company": "Walmart",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-15",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-back-end-at-walmart-4441838717?position=4&amp;pageNum=0&amp;refId=3CHcw4jBORqJ8bZUCYiUtg%3D%3D&amp;trackingId=VzC20%2FzW%2BrLqqTH3DN7rsA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4450823836",
+      "title": "Senior, Software Engineer - Backend",
+      "company": "Walmart",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-13",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-backend-at-walmart-4450823836?position=5&amp;pageNum=0&amp;refId=3CHcw4jBORqJ8bZUCYiUtg%3D%3D&amp;trackingId=ZQLN3NyAqNDzCIcztVO%2Fyw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455785968",
+      "title": "Software Development Engineer, Aurora CP - Global Databases",
+      "company": "Amazon Web Services (AWS)",
+      "location": "East Palo Alto, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/software-development-engineer-aurora-cp-global-databases-at-amazon-web-services-aws-4455785968?position=6&amp;pageNum=0&amp;refId=3CHcw4jBORqJ8bZUCYiUtg%3D%3D&amp;trackingId=8a0jbJxZ880fCp2zHoNVpA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4439051475",
+      "title": "Senior Software Engineer, Backend - IT Product",
+      "company": "Rippling",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-23",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-backend-it-product-at-rippling-4439051475?position=7&amp;pageNum=0&amp;refId=3CHcw4jBORqJ8bZUCYiUtg%3D%3D&amp;trackingId=hI8J8Cfbz%2B%2BiomsbwEu3CA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4410265188",
+      "title": "Software Engineer, Backend",
+      "company": "Plaid",
+      "location": "San Francisco Bay Area",
+      "posted_date": "2026-08-20",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-backend-at-plaid-4410265188?position=8&amp;pageNum=0&amp;refId=3CHcw4jBORqJ8bZUCYiUtg%3D%3D&amp;trackingId=cP%2FGTNXN3g9uqcsIAXxUVA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4443945149",
+      "title": "Senior Backend Software Engineer - GM Energy",
+      "company": "General Motors",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-13",
+      "url": "https://www.linkedin.com/jobs/view/senior-backend-software-engineer-gm-energy-at-general-motors-4443945149?position=9&amp;pageNum=0&amp;refId=3CHcw4jBORqJ8bZUCYiUtg%3D%3D&amp;trackingId=qC7Hr7EBsEatcFQR5VVD5Q%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4422298118",
+      "title": "Software Engineer, Full Stack",
+      "company": "Mashgin",
+      "location": "Palo Alto, CA",
+      "posted_date": "2026-06-09",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-full-stack-at-mashgin-4422298118?position=1&amp;pageNum=2&amp;refId=XVYWPRwSApzOWN6tSRpsNQ%3D%3D&amp;trackingId=s2FAs1npjkSy6BrFRGRgsA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455260003",
+      "title": "Software Engineer, Platform",
+      "company": "Factory",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-17",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-platform-at-factory-4455260003?position=2&amp;pageNum=2&amp;refId=XVYWPRwSApzOWN6tSRpsNQ%3D%3D&amp;trackingId=N3xrzeKDeGpeHZSz7L440w%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4454946469",
+      "title": "Software Development Engineer",
+      "company": "Adobe",
+      "location": "San Jose, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/software-development-engineer-at-adobe-4454946469?position=3&amp;pageNum=2&amp;refId=XVYWPRwSApzOWN6tSRpsNQ%3D%3D&amp;trackingId=%2ByXdrHcuSVikWFyeHa2lgg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4318510197",
+      "title": "Full Stack Engineer",
+      "company": "Voltai",
+      "location": "Palo Alto, CA",
+      "posted_date": "2025-10-22",
+      "url": "https://www.linkedin.com/jobs/view/full-stack-engineer-at-voltai-4318510197?position=4&amp;pageNum=2&amp;refId=XVYWPRwSApzOWN6tSRpsNQ%3D%3D&amp;trackingId=QPICZ6GAdXbE5TqcKHE94Q%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4406562211",
+      "title": "Full Stack Software Engineer",
+      "company": "Chalk",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-24",
+      "url": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-at-chalk-4406562211?position=5&amp;pageNum=2&amp;refId=XVYWPRwSApzOWN6tSRpsNQ%3D%3D&amp;trackingId=TVcOQDALxjlPRtFiKwjq0A%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4318503723",
+      "title": "Software Engineer, Full-Stack",
+      "company": "Falconer",
+      "location": "San Francisco, CA",
+      "posted_date": "2025-10-22",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-full-stack-at-falconer-4318503723?position=6&amp;pageNum=2&amp;refId=XVYWPRwSApzOWN6tSRpsNQ%3D%3D&amp;trackingId=odNLKzJGF96IkFBYa4u6SQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4434090095",
+      "title": "Software Engineer",
+      "company": "C1",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-06-27",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-at-c1-4434090095?position=7&amp;pageNum=2&amp;refId=XVYWPRwSApzOWN6tSRpsNQ%3D%3D&amp;trackingId=i49TX0638yFshUJ7dZm1RQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4453592115",
+      "title": "Backend Engineer",
+      "company": "MVP Ventures",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-14",
+      "url": "https://www.linkedin.com/jobs/view/backend-engineer-at-mvp-ventures-4453592115?position=8&amp;pageNum=2&amp;refId=XVYWPRwSApzOWN6tSRpsNQ%3D%3D&amp;trackingId=BWQh32Q68czpUo3O6KjCyA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4435118639",
+      "title": "Software Engineer (Agent Infra)",
+      "company": "Hinoki",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-06-30",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-agent-infra-at-hinoki-4435118639?position=9&amp;pageNum=2&amp;refId=XVYWPRwSApzOWN6tSRpsNQ%3D%3D&amp;trackingId=DKCFS4wjqmXikU7i99EKJQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455297259",
+      "title": "Senior Full Stack Software Engineer",
+      "company": "Haystack",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-17",
+      "url": "https://www.linkedin.com/jobs/view/senior-full-stack-software-engineer-at-haystack-4455297259?position=1&amp;pageNum=5&amp;refId=NDOIxxHHrgzcYoX8IL%2BEoA%3D%3D&amp;trackingId=QuW9ZqWJqPirtl4kctS%2Bhg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4456893654",
+      "title": "Software Engineer",
+      "company": "Autodesk",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-24",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-at-autodesk-4456893654?position=2&amp;pageNum=5&amp;refId=NDOIxxHHrgzcYoX8IL%2BEoA%3D%3D&amp;trackingId=AHXnPqXekVcQi9EL5Jyxyg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4456721274",
+      "title": "Senior Software Engineer - AI Experiences, Copilot",
+      "company": "Microsoft",
+      "location": "Mountain View, CA",
+      "posted_date": "2026-08-20",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-ai-experiences-copilot-at-microsoft-4456721274?position=3&amp;pageNum=5&amp;refId=NDOIxxHHrgzcYoX8IL%2BEoA%3D%3D&amp;trackingId=R5QkopIIfIuPTzG79UccZA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4458251161",
+      "title": "Software Engineer (Partner 16, Partner 18), Backend, ASG",
+      "company": "Andreessen Horowitz",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-24",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-partner-16-partner-18-backend-asg-at-andreessen-horowitz-4458251161?position=4&amp;pageNum=5&amp;refId=NDOIxxHHrgzcYoX8IL%2BEoA%3D%3D&amp;trackingId=AiKMhJby9n0mBaDWsXihXQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455131683",
+      "title": "Senior Software Engineer",
+      "company": "Shipt",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-15",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-at-shipt-4455131683?position=5&amp;pageNum=5&amp;refId=NDOIxxHHrgzcYoX8IL%2BEoA%3D%3D&amp;trackingId=sKjAkOdHwalLZyfAudC0Tg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4410777817",
+      "title": "Software Engineer II, Backend",
+      "company": "Brex",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-17",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-ii-backend-at-brex-4410777817?position=6&amp;pageNum=5&amp;refId=NDOIxxHHrgzcYoX8IL%2BEoA%3D%3D&amp;trackingId=xrRUXgxE3ZCnz9LVYM78bQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4440369171",
+      "title": "Senior Software Engineer",
+      "company": "Carbon",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-04",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-at-carbon-4440369171?position=7&amp;pageNum=5&amp;refId=NDOIxxHHrgzcYoX8IL%2BEoA%3D%3D&amp;trackingId=A4vV9oelroz8zM872c%2Fp3A%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4433052337",
+      "title": "Senior Software Engineer",
+      "company": "Workato",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-07",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-at-workato-4433052337?position=8&amp;pageNum=5&amp;refId=NDOIxxHHrgzcYoX8IL%2BEoA%3D%3D&amp;trackingId=12e1U2e%2FcNp3s9l2yLreAw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4457352648",
+      "title": "Senior Backend Software Engineer",
+      "company": "Regard",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-21",
+      "url": "https://www.linkedin.com/jobs/view/senior-backend-software-engineer-at-regard-4457352648?position=9&amp;pageNum=5&amp;refId=NDOIxxHHrgzcYoX8IL%2BEoA%3D%3D&amp;trackingId=7hMtkj68Kouwgk18KnGGng%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4440830492",
+      "title": "Full Stack Software Engineer",
+      "company": "Medra",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-07-14",
+      "url": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-at-medra-4440830492?position=1&amp;pageNum=7&amp;refId=3pvxPw7jcvMjOHbaRBk89g%3D%3D&amp;trackingId=eIfcwCzia6ZkQYBwSvIT4A%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4449407749",
+      "title": "Full Stack Software Engineer",
+      "company": "Gumloop",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-05",
+      "url": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-at-gumloop-4449407749?position=2&amp;pageNum=7&amp;refId=3pvxPw7jcvMjOHbaRBk89g%3D%3D&amp;trackingId=LrHuVLAm6bWue%2BbOS3o%2F0A%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4439109613",
+      "title": "Software Engineer | Various Levels",
+      "company": "Forage",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-07-13",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-various-levels-at-forage-4439109613?position=3&amp;pageNum=7&amp;refId=3pvxPw7jcvMjOHbaRBk89g%3D%3D&amp;trackingId=4cbyLHmZNij7US6pc1K7jg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4379421092",
+      "title": "Backend-Engineer",
+      "company": "Crossing Hurdles",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-17",
+      "url": "https://www.linkedin.com/jobs/view/backend-engineer-at-crossing-hurdles-4379421092?position=4&amp;pageNum=7&amp;refId=3pvxPw7jcvMjOHbaRBk89g%3D%3D&amp;trackingId=RyEgBYL7hI4aJM0IsC9rKw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4333210094",
+      "title": "Software Engineer - Product",
+      "company": "Koah",
+      "location": "San Francisco, CA",
+      "posted_date": "2025-10-30",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-product-at-koah-4333210094?position=5&amp;pageNum=7&amp;refId=3pvxPw7jcvMjOHbaRBk89g%3D%3D&amp;trackingId=pgFYKTO2zX2XSDfFbcUlOw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4339299576",
+      "title": "Fullstack Engineer",
+      "company": "Gallatin AI, Inc.",
+      "location": "Palo Alto, CA",
+      "posted_date": "2025-11-28",
+      "url": "https://www.linkedin.com/jobs/view/fullstack-engineer-at-gallatin-ai-inc-4339299576?position=6&amp;pageNum=7&amp;refId=3pvxPw7jcvMjOHbaRBk89g%3D%3D&amp;trackingId=0PWk9UPgbi4He8abjytb7A%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4454415891",
+      "title": "Software Engineer, Booking",
+      "company": "Waymo",
+      "location": "Mountain View, CA",
+      "posted_date": "2026-08-17",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-booking-at-waymo-4454415891?position=7&amp;pageNum=7&amp;refId=3pvxPw7jcvMjOHbaRBk89g%3D%3D&amp;trackingId=088OkDlQnt%2F3qe8beQQ6qA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4341373706",
+      "title": "Full Stack Software Engineer - (Nikka)",
+      "company": "Lever Middleware Test Company",
+      "location": "San Francisco, CA",
+      "posted_date": "2025-11-19",
+      "url": "https://www.linkedin.com/jobs/view/full-stack-software-engineer-nikka-at-lever-middleware-test-company-4341373706?position=8&amp;pageNum=7&amp;refId=3pvxPw7jcvMjOHbaRBk89g%3D%3D&amp;trackingId=uWKQKwnEz6Cr39R%2F1YM85Q%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4415738843",
+      "title": "Software Engineer, Infrastructure",
+      "company": "Opal Security",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-05-19",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-infrastructure-at-opal-security-4415738843?position=9&amp;pageNum=7&amp;refId=3pvxPw7jcvMjOHbaRBk89g%3D%3D&amp;trackingId=e4ikgrmAeSrJYmwhiu0SCg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455300327",
+      "title": "Software Engineer",
+      "company": "Airspan Networks",
+      "location": "Milpitas, CA",
+      "posted_date": "2026-08-16",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-at-airspan-networks-4455300327?position=1&amp;pageNum=10&amp;refId=rW2LmxuJ867gA%2BrGXwW1Hw%3D%3D&amp;trackingId=fZ%2BcptrBd9fco84itrEAmA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4303727750",
+      "title": "Software Engineer",
+      "company": "BetterBasket",
+      "location": "San Francisco, CA",
+      "posted_date": "2025-09-25",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-at-betterbasket-4303727750?position=2&amp;pageNum=10&amp;refId=rW2LmxuJ867gA%2BrGXwW1Hw%3D%3D&amp;trackingId=ipTy9VJMsUkHokQoEos%2Fqg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4441365999",
+      "title": "Software Engineer, SCADA",
+      "company": "Fluidstack",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-08",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-scada-at-fluidstack-4441365999?position=3&amp;pageNum=10&amp;refId=rW2LmxuJ867gA%2BrGXwW1Hw%3D%3D&amp;trackingId=QJo5HhBovx%2BeYASktl85ZQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4428999790",
+      "title": "Software Engineer II",
+      "company": "Applied Materials",
+      "location": "Benicia, CA",
+      "posted_date": "2026-07-17",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-ii-at-applied-materials-4428999790?position=4&amp;pageNum=10&amp;refId=rW2LmxuJ867gA%2BrGXwW1Hw%3D%3D&amp;trackingId=8Fj9%2FvvfQeQQqJUVNfFYDg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4378347944",
+      "title": "Software Engineer",
+      "company": "Gem",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-22",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-at-gem-4378347944?position=5&amp;pageNum=10&amp;refId=rW2LmxuJ867gA%2BrGXwW1Hw%3D%3D&amp;trackingId=YKKnstxcb1HKrc%2FnvUs6jA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4452502313",
+      "title": "Senior Software Engineer",
+      "company": "Hippo Harvest",
+      "location": "Pescadero, CA",
+      "posted_date": "2026-08-17",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-at-hippo-harvest-4452502313?position=6&amp;pageNum=10&amp;refId=rW2LmxuJ867gA%2BrGXwW1Hw%3D%3D&amp;trackingId=iz%2BCtXO2bHYauQvqwz2bJA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4443175307",
+      "title": "Software Engineer, Notifications",
+      "company": "Discord",
+      "location": "San Francisco Bay Area",
+      "posted_date": "2026-08-13",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-notifications-at-discord-4443175307?position=7&amp;pageNum=10&amp;refId=rW2LmxuJ867gA%2BrGXwW1Hw%3D%3D&amp;trackingId=k9RCSQ6vdEdSPHJuRFaLTw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4424780740",
+      "title": "Software Engineer",
+      "company": "Tensec",
+      "location": "Palo Alto, CA",
+      "posted_date": "2026-06-05",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-at-tensec-4424780740?position=8&amp;pageNum=10&amp;refId=rW2LmxuJ867gA%2BrGXwW1Hw%3D%3D&amp;trackingId=XVc1ZZy9lxLLXvL%2FSIM8Cg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4444912002",
+      "title": "Software Development Engineer",
+      "company": "Adobe",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-14",
+      "url": "https://www.linkedin.com/jobs/view/software-development-engineer-at-adobe-4444912002?position=9&amp;pageNum=10&amp;refId=rW2LmxuJ867gA%2BrGXwW1Hw%3D%3D&amp;trackingId=KBNRCKpEkkZ0TxDa%2B3jW3A%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4451624419",
+      "title": "(USA) Senior, Software Engineer",
+      "company": "Walmart",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-11",
+      "url": "https://www.linkedin.com/jobs/view/usa-senior-software-engineer-at-walmart-4451624419?position=1&amp;pageNum=12&amp;refId=V2OC%2BPDRGRWWDqhHC9xNZg%3D%3D&amp;trackingId=ekGHV%2Fw1wBiUnhl0R1nEPw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4407241720",
+      "title": "Staff, Software Engineer",
+      "company": "Walmart Global Tech",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-22",
+      "url": "https://www.linkedin.com/jobs/view/staff-software-engineer-at-walmart-global-tech-4407241720?position=2&amp;pageNum=12&amp;refId=V2OC%2BPDRGRWWDqhHC9xNZg%3D%3D&amp;trackingId=8TPY4kkfaS0kDBVHhEb0Ig%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4405181319",
+      "title": "(USA) Senior, Software Engineer",
+      "company": "Walmart",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-13",
+      "url": "https://www.linkedin.com/jobs/view/usa-senior-software-engineer-at-walmart-4405181319?position=3&amp;pageNum=12&amp;refId=V2OC%2BPDRGRWWDqhHC9xNZg%3D%3D&amp;trackingId=m7tiO1hg6%2BIOToBxwfnr6w%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4337350291",
+      "title": "Senior/Software Engineer III - Backend, Marketplace",
+      "company": "Walmart Global Tech",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-16",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-iii-backend-marketplace-at-walmart-global-tech-4337350291?position=4&amp;pageNum=12&amp;refId=V2OC%2BPDRGRWWDqhHC9xNZg%3D%3D&amp;trackingId=wH6Y0g5aWsn9MGhkWg3UaQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455906675",
+      "title": "Senior Software Development Engineer, Aurora PostgreSQL",
+      "company": "Amazon Web Services (AWS)",
+      "location": "East Palo Alto, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-development-engineer-aurora-postgresql-at-amazon-web-services-aws-4455906675?position=5&amp;pageNum=12&amp;refId=V2OC%2BPDRGRWWDqhHC9xNZg%3D%3D&amp;trackingId=%2FfijSPQBp%2BVnogPm8SsKYA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455900236",
+      "title": "Sr. Software Development Engineer, Amazon Quick",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Santa Clara, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/sr-software-development-engineer-amazon-quick-at-amazon-web-services-aws-4455900236?position=6&amp;pageNum=12&amp;refId=V2OC%2BPDRGRWWDqhHC9xNZg%3D%3D&amp;trackingId=ytHkLtrk4lSv8L6PjgcqjQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4443622465",
+      "title": "Software Engineer, Backend",
+      "company": "Robinhood",
+      "location": "Menlo Park, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-backend-at-robinhood-4443622465?position=7&amp;pageNum=12&amp;refId=V2OC%2BPDRGRWWDqhHC9xNZg%3D%3D&amp;trackingId=IQWSgdccY7pbNuw5Zl0%2F9w%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4444145746",
+      "title": "Senior Software Engineer, Infrastructure, Google Cloud Security and Privacy",
+      "company": "Google",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-20",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-infrastructure-google-cloud-security-and-privacy-at-google-4444145746?position=8&amp;pageNum=12&amp;refId=V2OC%2BPDRGRWWDqhHC9xNZg%3D%3D&amp;trackingId=%2FTji7OQmvDpilLBZYBXK1A%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4446267037",
+      "title": "(USA) Senior, Software Engineer",
+      "company": "Walmart",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-03",
+      "url": "https://www.linkedin.com/jobs/view/usa-senior-software-engineer-at-walmart-4446267037?position=9&amp;pageNum=12&amp;refId=V2OC%2BPDRGRWWDqhHC9xNZg%3D%3D&amp;trackingId=kcfoLmYILpbVipE%2FlqWFOw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455903843",
+      "title": "Software Dev Engineer II (SDE2), Amazon Connect",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Santa Clara, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/software-dev-engineer-ii-sde2-amazon-connect-at-amazon-web-services-aws-4455903843?position=1&amp;pageNum=15&amp;refId=puWwk00YviHLYiYK56gF9Q%3D%3D&amp;trackingId=3%2FCd%2FtG0fJb8VXN5Y4aLog%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4452988891",
+      "title": "Senior Software Engineer, Google Cloud Security and Privacy",
+      "company": "Google",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-13",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-google-cloud-security-and-privacy-at-google-4452988891?position=2&amp;pageNum=15&amp;refId=puWwk00YviHLYiYK56gF9Q%3D%3D&amp;trackingId=y5VDRGTXT7dBaNLaa5QhSQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4448463007",
+      "title": "Software Engineer, Wallet",
+      "company": "Robinhood",
+      "location": "Menlo Park, CA",
+      "posted_date": "2026-08-06",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-wallet-at-robinhood-4448463007?position=3&amp;pageNum=15&amp;refId=puWwk00YviHLYiYK56gF9Q%3D%3D&amp;trackingId=ksRb4PFTWfikfuFQ7k%2BnyA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455906750",
+      "title": "Software Developer Engineer, Amazon WorkSpaces Core Managed Instances",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/software-developer-engineer-amazon-workspaces-core-managed-instances-at-amazon-web-services-aws-4455906750?position=4&amp;pageNum=15&amp;refId=puWwk00YviHLYiYK56gF9Q%3D%3D&amp;trackingId=vsWsJFsAvW4P2iKI%2F3gnZg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4397661038",
+      "title": "Senior CIAM Software Engineer",
+      "company": "Affirm",
+      "location": "Palo Alto, CA",
+      "posted_date": "2026-08-17",
+      "url": "https://www.linkedin.com/jobs/view/senior-ciam-software-engineer-at-affirm-4397661038?position=5&amp;pageNum=15&amp;refId=puWwk00YviHLYiYK56gF9Q%3D%3D&amp;trackingId=zoHCRQ5HtmRTRaCnVKQEdA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4452394015",
+      "title": "Senior Software Engineer, Infrastructure, Google Cloud Storage",
+      "company": "Google",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-12",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-infrastructure-google-cloud-storage-at-google-4452394015?position=6&amp;pageNum=15&amp;refId=puWwk00YviHLYiYK56gF9Q%3D%3D&amp;trackingId=gA3EvMe7dGS9YyJhgIO%2Fxw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4429664633",
+      "title": "Software Engineer III, Cloud Security, Identity and Access Management",
+      "company": "Google",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-23",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-iii-cloud-security-identity-and-access-management-at-google-4429664633?position=7&amp;pageNum=15&amp;refId=puWwk00YviHLYiYK56gF9Q%3D%3D&amp;trackingId=KCtRsqKi%2Fvd5jLQz1%2FF7Rg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455795631",
+      "title": "Software Development Engineer - AWS WorkSpaces, AWS WorkSpaces",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Mountain View, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/software-development-engineer-aws-workspaces-aws-workspaces-at-amazon-web-services-aws-4455795631?position=8&amp;pageNum=15&amp;refId=puWwk00YviHLYiYK56gF9Q%3D%3D&amp;trackingId=ufQQNfnWz8X8grScY6B0DQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4390731906",
+      "title": "Senior Software Engineer, Backend (Merchant &amp; Partner Lifecycle)",
+      "company": "Affirm",
+      "location": "Palo Alto, CA",
+      "posted_date": "2026-08-23",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-backend-merchant-partner-lifecycle-at-affirm-4390731906?position=9&amp;pageNum=15&amp;refId=puWwk00YviHLYiYK56gF9Q%3D%3D&amp;trackingId=kyNtWsXFZ0uUMA84dljwwg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4438856059",
+      "title": "Software Engineer, Product",
+      "company": "Pylon",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-22",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-product-at-pylon-4438856059?position=1&amp;pageNum=17&amp;refId=PL4P7e7eDJVHY0wnnu6nRw%3D%3D&amp;trackingId=fQIR31FjpqyG8gICAUflLw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4444354104",
+      "title": "Software Engineer",
+      "company": "Juicebox",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-07-24",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-at-juicebox-4444354104?position=2&amp;pageNum=17&amp;refId=PL4P7e7eDJVHY0wnnu6nRw%3D%3D&amp;trackingId=YEF89VOAAbT0T0lliS33hw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4442409674",
+      "title": "Software Engineer, RCM Core",
+      "company": "Athelas",
+      "location": "Mountain View, CA",
+      "posted_date": "2026-07-18",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-rcm-core-at-athelas-4442409674?position=3&amp;pageNum=17&amp;refId=PL4P7e7eDJVHY0wnnu6nRw%3D%3D&amp;trackingId=V9jYyM5Y1HVeUpM%2FgZpg8Q%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4446252017",
+      "title": "Software Engineer",
+      "company": "Evolve Group",
+      "location": "San Francisco Bay Area",
+      "posted_date": "2026-08-03",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-at-evolve-group-4446252017?position=4&amp;pageNum=17&amp;refId=PL4P7e7eDJVHY0wnnu6nRw%3D%3D&amp;trackingId=nzQjuxJh25fkeOGiybO44Q%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4411254482",
+      "title": "Software Engineer - Product",
+      "company": "Endra",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-05-06",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-product-at-endra-4411254482?position=5&amp;pageNum=17&amp;refId=PL4P7e7eDJVHY0wnnu6nRw%3D%3D&amp;trackingId=Xkhkm6N1CK4hHqoktSai9Q%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4456022403",
+      "title": "Software Engineer III, Infrastructure, YouTube",
+      "company": "Google",
+      "location": "San Bruno, CA",
+      "posted_date": "2026-08-20",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-iii-infrastructure-youtube-at-google-4456022403?position=6&amp;pageNum=17&amp;refId=PL4P7e7eDJVHY0wnnu6nRw%3D%3D&amp;trackingId=P6BojbX1%2FXbSHRZcl%2Fr2mA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4407812400",
+      "title": "Engineer, Full Stack",
+      "company": "Bedrock Data",
+      "location": "San Mateo, CA",
+      "posted_date": "2026-04-28",
+      "url": "https://www.linkedin.com/jobs/view/engineer-full-stack-at-bedrock-data-4407812400?position=7&amp;pageNum=17&amp;refId=PL4P7e7eDJVHY0wnnu6nRw%3D%3D&amp;trackingId=fSv19wHbOIynH6q%2F5PNGLg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4346350059",
+      "title": "Full-Stack Engineer",
+      "company": "Mercator",
+      "location": "San Francisco, CA",
+      "posted_date": "2025-12-25",
+      "url": "https://www.linkedin.com/jobs/view/full-stack-engineer-at-mercator-4346350059?position=8&amp;pageNum=17&amp;refId=PL4P7e7eDJVHY0wnnu6nRw%3D%3D&amp;trackingId=2cy%2BnfE9C7z8TWNYAlLnIQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4454131611",
+      "title": "Software Engineer",
+      "company": "KLA",
+      "location": "Milpitas, CA",
+      "posted_date": "2026-08-20",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-at-kla-4454131611?position=9&amp;pageNum=17&amp;refId=PL4P7e7eDJVHY0wnnu6nRw%3D%3D&amp;trackingId=ffI7nmwJnCqX8%2F5HUVgU2g%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455939146",
+      "title": "Software Development Engineer, AWS Manufacturing Infrastructure Services",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Cupertino, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/software-development-engineer-aws-manufacturing-infrastructure-services-at-amazon-web-services-aws-4455939146?position=1&amp;pageNum=20&amp;refId=NaVYIcLN67V9tMvCH7wOVA%3D%3D&amp;trackingId=LoVsHdcEAfKqtkNMRC3ViQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4404484927",
+      "title": "Senior Software Engineer, Backend (Infrastructure)",
+      "company": "Affirm",
+      "location": "San Jose, CA",
+      "posted_date": "2026-08-09",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-backend-infrastructure-at-affirm-4404484927?position=2&amp;pageNum=20&amp;refId=NaVYIcLN67V9tMvCH7wOVA%3D%3D&amp;trackingId=nCUbNMH%2BS1n9Zyya%2FWuqng%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4441462468",
+      "title": "Senior Software Engineer, Backend - HR Product",
+      "company": "Rippling",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-06",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-backend-hr-product-at-rippling-4441462468?position=3&amp;pageNum=20&amp;refId=NaVYIcLN67V9tMvCH7wOVA%3D%3D&amp;trackingId=KEjanLB3ImHWnq6KZVkvuA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455917675",
+      "title": "Sr. Software Development Engineer - AWS Networking Application, SIDR",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Santa Clara, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/sr-software-development-engineer-aws-networking-application-sidr-at-amazon-web-services-aws-4455917675?position=4&amp;pageNum=20&amp;refId=NaVYIcLN67V9tMvCH7wOVA%3D%3D&amp;trackingId=27CZmhAW5GeLRgB7HgjE%2FA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455793808",
+      "title": "Sr. Software Development Engineer - AWS Networking Application, SIDR",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Santa Clara, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/sr-software-development-engineer-aws-networking-application-sidr-at-amazon-web-services-aws-4455793808?position=5&amp;pageNum=20&amp;refId=NaVYIcLN67V9tMvCH7wOVA%3D%3D&amp;trackingId=lqTflAbEfEKdW6fdsDA5Yg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4452390537",
+      "title": "Staff CIAM Software Engineer",
+      "company": "Affirm",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-12",
+      "url": "https://www.linkedin.com/jobs/view/staff-ciam-software-engineer-at-affirm-4452390537?position=6&amp;pageNum=20&amp;refId=NaVYIcLN67V9tMvCH7wOVA%3D%3D&amp;trackingId=n03RKUjr9lM8HzQw5qk9hw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4452389533",
+      "title": "Staff CIAM Software Engineer",
+      "company": "Affirm",
+      "location": "San Jose, CA",
+      "posted_date": "2026-08-12",
+      "url": "https://www.linkedin.com/jobs/view/staff-ciam-software-engineer-at-affirm-4452389533?position=7&amp;pageNum=20&amp;refId=NaVYIcLN67V9tMvCH7wOVA%3D%3D&amp;trackingId=NnKiG0EzXVQFUPivxk4JXQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4430548776",
+      "title": "Senior Software Engineer, Infrastructure, Google Ads",
+      "company": "Google",
+      "location": "Mountain View, CA",
+      "posted_date": "2026-08-04",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-infrastructure-google-ads-at-google-4430548776?position=8&amp;pageNum=20&amp;refId=NaVYIcLN67V9tMvCH7wOVA%3D%3D&amp;trackingId=C7Sk1%2FpeTtT0cSSEOJ5lvg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4452360402",
+      "title": "Software Engineer III, Mobile (iOS), Google Photos Monetization",
+      "company": "Google",
+      "location": "Mountain View, CA",
+      "posted_date": "2026-08-12",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-iii-mobile-ios-google-photos-monetization-at-google-4452360402?position=9&amp;pageNum=20&amp;refId=NaVYIcLN67V9tMvCH7wOVA%3D%3D&amp;trackingId=sL%2FzMPD6MtzJKLkXR%2BsSfQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4452385549",
+      "title": "Staff CIAM Software Engineer",
+      "company": "Affirm",
+      "location": "Palo Alto, CA",
+      "posted_date": "2026-08-12",
+      "url": "https://www.linkedin.com/jobs/view/staff-ciam-software-engineer-at-affirm-4452385549?position=1&amp;pageNum=22&amp;refId=vX26TTzNEgzZZ5ZZGiT39g%3D%3D&amp;trackingId=F8jNA%2B8dcRxyB6nYNm0W7Q%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4452768165",
+      "title": "Senior Software Development Engineer 5",
+      "company": "Adobe",
+      "location": "San Jose, CA",
+      "posted_date": "2026-08-12",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-development-engineer-5-at-adobe-4452768165?position=2&amp;pageNum=22&amp;refId=vX26TTzNEgzZZ5ZZGiT39g%3D%3D&amp;trackingId=CD%2FGD6Td%2FfgwE%2Frp3xCVUg%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4456252191",
+      "title": "Senior Software Engineer, Gemini Cloud Assist",
+      "company": "Google",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-21",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-gemini-cloud-assist-at-google-4456252191?position=3&amp;pageNum=22&amp;refId=vX26TTzNEgzZZ5ZZGiT39g%3D%3D&amp;trackingId=57rqHvI3Y8nvH%2BHJKKeZMQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4455917324",
+      "title": "SDE-II, Healthcare AI",
+      "company": "Amazon Web Services (AWS)",
+      "location": "Mountain View, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/sde-ii-healthcare-ai-at-amazon-web-services-aws-4455917324?position=4&amp;pageNum=22&amp;refId=vX26TTzNEgzZZ5ZZGiT39g%3D%3D&amp;trackingId=Z4v8DDTbXHGv0JzeJV8P3A%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4425766417",
+      "title": "Staff Software Engineer, Device Software",
+      "company": "Hinge Health",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/staff-software-engineer-device-software-at-hinge-health-4425766417?position=5&amp;pageNum=22&amp;refId=vX26TTzNEgzZZ5ZZGiT39g%3D%3D&amp;trackingId=DjcrtvkWWS5aQETC5j8OlA%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4410255593",
+      "title": "Software Engineer, Full Stack",
+      "company": "Plaid",
+      "location": "San Francisco Bay Area",
+      "posted_date": "2026-08-19",
+      "url": "https://www.linkedin.com/jobs/view/software-engineer-full-stack-at-plaid-4410255593?position=6&amp;pageNum=22&amp;refId=vX26TTzNEgzZZ5ZZGiT39g%3D%3D&amp;trackingId=2AuGvSEj2Rxq0rii6oBE8g%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4435947115",
+      "title": "Senior Software Engineer, Metrics Platform - Weights &amp; Biases",
+      "company": "Weights &amp; Biases",
+      "location": "Sunnyvale, CA",
+      "posted_date": "2026-08-22",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-metrics-platform-weights-biases-at-weights-biases-4435947115?position=7&amp;pageNum=22&amp;refId=vX26TTzNEgzZZ5ZZGiT39g%3D%3D&amp;trackingId=5NH2SCWfWGBrAo9QnbBMMQ%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4443434803",
+      "title": "Staff Software Engineer, Backend (Search)",
+      "company": "Affirm",
+      "location": "San Francisco, CA",
+      "posted_date": "2026-08-13",
+      "url": "https://www.linkedin.com/jobs/view/staff-software-engineer-backend-search-at-affirm-4443434803?position=8&amp;pageNum=22&amp;refId=vX26TTzNEgzZZ5ZZGiT39g%3D%3D&amp;trackingId=r%2Bn3QpeHH%2BS2OyVs3L4K%2Bw%3D%3D",
+      "source": "linkedin_guest_api"
+    },
+    {
+      "id": "4395490421",
+      "title": "Senior Software Engineer, Attestation Services - DGX Cloud",
+      "company": "NVIDIA",
+      "location": "Santa Clara, CA",
+      "posted_date": "2026-08-14",
+      "url": "https://www.linkedin.com/jobs/view/senior-software-engineer-attestation-services-dgx-cloud-at-nvidia-4395490421?position=9&amp;pageNum=22&amp;refId=vX26TTzNEgzZZ5ZZGiT39g%3D%3D&amp;trackingId=mMp8XkJ4R6x32cuWQa4nHw%3D%3D",
+      "source": "linkedin_guest_api"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "jobsearch-llm",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "comments": {
+    "purpose": "Pins the Node runtime contract for llm/*.mjs scripts (D1). The z-ai SDK is vendored at vendor/z-ai-web-dev-sdk (D6/R9) — no npm install needed.",
+    "mockSeam": "ZAI_MOCK=<fixture.json> env var bypasses the SDK for tests (D7)."
+  }
+}

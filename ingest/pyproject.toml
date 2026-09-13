@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobsearch"
+version = "0.1.0"
+description = "E2E AI job-search pipeline: discovery, dedup, scoring, tracking"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "requests>=2.31",
+    "click>=8.1",
+]
+
+[project.optional-dependencies]
+jobspy = ["python-jobspy"]
+dev = ["pytest>=8.0", "pytest-cov", "pyyaml>=6"]
+
+[project.scripts]
+search-jobs = "jobsearch.cli:search_jobs"
+
+[tool.setuptools.packages.find]
+include = ["jobsearch*"]
+
+[tool.setuptools.package-data]
+jobsearch = ["prompts/*"]
+
+[tool.pytest.ini_options]
+markers = [
+    "live: tests that hit real APIs or the real LLM (deselected by default)",
+]
+addopts = "-m 'not live'"
+testpaths = ["tests"]

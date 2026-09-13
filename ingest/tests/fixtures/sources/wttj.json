@@ -1,0 +1,60 @@
+{
+  "nbHits": 9895,
+  "page": 0,
+  "nbPages": 500,
+  "hitsPerPage": 3,
+  "hits": [
+    {
+      "objectID": "hit-1",
+      "name": "Senior Python Developer",
+      "slug": "senior-python-developer_paris",
+      "published_at_date": "2026-08-25",
+      "published_at_timestamp": 1756108800,
+      "contract_type": "full_time",
+      "remote": "yes",
+      "salary_minimum": 55000.0,
+      "salary_maximum": 70000.0,
+      "salary_currency": "EUR",
+      "summary": "Build the pricing engine with Python and Go.",
+      "key_missions": ["Own the pricing pipeline", "Mentor two juniors"],
+      "offices": [
+        {"city": "Paris", "country": "France", "country_code": "FR"}
+      ],
+      "organization": {
+        "name": "Alan",
+        "slug": "alan",
+        "reference": "abc123",
+        "nb_employees": 600
+      },
+      "sectors": ["Healthcare", "Insurance"],
+      "_geoloc": {"lat": 48.85, "lng": 2.35}
+    },
+    {
+      "objectID": "hit-2",
+      "name": "Software Engineer - Stage R&D - Nantes",
+      "slug": "software-engineer-stage-r-d-nantes_nantes",
+      "published_at_date": "2026-08-24",
+      "contract_type": "internship",
+      "remote": "partial",
+      "salary_minimum": 1300.0,
+      "salary_maximum": 1700.0,
+      "salary_currency": "EUR",
+      "summary": "Stage de R&D en engineering platform.",
+      "key_missions": "Mission unique string",
+      "offices": [
+        {"city": "Nantes", "country": "France", "country_code": "FR"}
+      ],
+      "organization": {"name": "Lucca", "slug": "lucca"},
+      "_geoloc": {"lat": 47.2, "lng": -1.55}
+    },
+    {
+      "objectID": "hit-3",
+      "name": "",
+      "slug": "no-title-job",
+      "contract_type": "full_time",
+      "remote": "no",
+      "offices": [],
+      "organization": {"name": "Nameless", "slug": "nameless"}
+    }
+  ]
+}

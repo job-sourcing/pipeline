@@ -1,0 +1,131 @@
+{
+  "offset": 0,
+  "limit": 2,
+  "totalFound": 8,
+  "content": [
+    {
+      "id": "744000143115219",
+      "name": "Senior Information Security Engineer",
+      "uuid": "f14d00ce-bfd2-4ebf-8a01-c8e0fa636a49",
+      "jobAdId": "6f7661db-986b-45a9-be40-859cf4f2b78a",
+      "defaultJobAd": true,
+      "refNumber": "REF2010Z",
+      "company": {
+        "identifier": "smartrecruiters",
+        "name": "SmartRecruiters Inc"
+      },
+      "releasedDate": "2026-08-15T14:04:56.128Z",
+      "location": {
+        "city": "Poland",
+        "region": "REMOTE",
+        "country": "pl",
+        "remote": true,
+        "hybrid": false,
+        "fullLocation": "Poland, REMOTE, Poland"
+      },
+      "industry": {
+        "id": "computer_software",
+        "label": "Computer Software"
+      },
+      "department": {
+        "id": "5408693",
+        "label": "Engineering"
+      },
+      "function": {
+        "id": "engineering",
+        "label": "Engineering"
+      },
+      "typeOfEmployment": {
+        "id": "permanent",
+        "label": "Full-time"
+      },
+      "experienceLevel": {
+        "id": "mid_senior_level",
+        "label": "Mid-Senior Level"
+      },
+      "customField": [
+        {
+          "fieldId": "58b7e4d6e4b0885c92cd98ee",
+          "fieldLabel": "Department",
+          "valueId": "5408693",
+          "valueLabel": "Engineering"
+        },
+        {
+          "fieldId": "TEAM",
+          "fieldLabel": "Team",
+          "valueId": "security",
+          "valueLabel": "Security"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/smartrecruiters/postings/744000143115219",
+      "creator": {
+        "name": "Sr Recruiter"
+      },
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    },
+    {
+      "id": "744000143115220",
+      "name": "Senior AI Engineer",
+      "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "jobAdId": "abcdef12-3456-7890-abcd-ef1234567890",
+      "defaultJobAd": true,
+      "refNumber": "REF2011A",
+      "company": {
+        "identifier": "smartrecruiters",
+        "name": "SmartRecruiters Inc"
+      },
+      "releasedDate": "2026-08-12T09:30:00.000Z",
+      "location": {
+        "city": "London",
+        "region": "London",
+        "country": "uk",
+        "remote": true,
+        "hybrid": false,
+        "fullLocation": "London, London, United Kingdom"
+      },
+      "industry": {
+        "id": "computer_software",
+        "label": "Computer Software"
+      },
+      "department": {
+        "id": "5408694",
+        "label": "AI Research"
+      },
+      "function": {
+        "id": "engineering",
+        "label": "Engineering"
+      },
+      "typeOfEmployment": {
+        "id": "permanent",
+        "label": "Full-time"
+      },
+      "experienceLevel": {
+        "id": "mid_senior_level",
+        "label": "Mid-Senior Level"
+      },
+      "customField": [
+        {
+          "fieldId": "VISA",
+          "fieldLabel": "Visa Sponsorship",
+          "valueId": "yes",
+          "valueLabel": "H1B visa sponsorship available for qualified candidates"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/smartrecruiters/postings/744000143115220",
+      "creator": {
+        "name": "AI Hiring"
+      },
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (UK)"
+      }
+    }
+  ]
+}

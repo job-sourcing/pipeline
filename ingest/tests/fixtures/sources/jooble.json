@@ -1,0 +1,26 @@
+{
+  "jobs": [
+    {
+      "id": "j1",
+      "title": "Python Developer",
+      "company": "Acme Cloud",
+      "snippet": "Backend Python developer with FastAPI and PostgreSQL. Visa sponsorship available. Apply to jobs@acme.cloud",
+      "link": "https://jooble.org/JobRedirect/abc123",
+      "updated": "2026-08-18T14:00:00+00:00",
+      "type": "Full-time",
+      "location": "Remote",
+      "salary": "$90k - $130k"
+    },
+    {
+      "id": "j2",
+      "title": "Data Engineer",
+      "company": "BetaData",
+      "snippet": "Data engineer with Python, Airflow, Spark. On-site Berlin.",
+      "link": "https://jooble.org/JobRedirect/def456",
+      "updated": "2026-08-17T10:00:00+00:00",
+      "type": "Full-time",
+      "location": "Berlin, Germany",
+      "salary": null
+    }
+  ]
+}

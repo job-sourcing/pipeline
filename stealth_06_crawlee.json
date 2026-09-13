@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://crawlee.dev/js/docs/examples/crawler-plugins",
+    "name": "Using Puppeteer Stealth Plugin (puppeteer-extra) and playwright",
+    "snippet": "Using Puppeteer Stealth Plugin … are community-built libraries that bring in a plugin system to enhance the usage of puppeteer and playwright respectively",
+    "host_name": "crawlee.dev",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.apify.com/best-javascript-web-scraping-libraries",
+    "name": "The best JavaScript web scraping libraries in 2025 - Apify Blog",
+    "snippet": "Jun 11, 2025 · Crawlee, developed by the Apify team, unifies everything under a single interface. it mimics real browsers and even stealth plugins) Crawlee - ...",
+    "host_name": "blog.apify.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://crawlee.dev/python/docs/guides/playwright-crawler",
+    "name": "Playwright crawler | Crawlee for Python",
+    "snippet": "A PlaywrightCrawler is a browser-based crawler. it uses a real browser to render pages and extract data. Playwright browser automation library.",
+    "host_name": "crawlee.dev",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/webscraping/comments/1cl9o3y/why_shouldnt_i_use_crawlee",
+    "name": "Why shouldn't I use Crawlee? : r/webscraping - Reddit",
+    "snippet": "May 6, 2024 · Crawlee is an open-source project developed by Apify, a scraping company. It's great and removes a lot of the complexity of writing your own ...",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/apify/crawlee",
+    "name": "Crawlee—A web scraping and browser automation library  - GitHub",
+    "snippet": "Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast. Your crawlers will appear human-like and fly under the ...",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.answeroverflow.com/m/1320526059292201054",
+    "name": "Site can detect headless mode - Apify & Crawlee - Answer Overflow",
+    "snippet": "Dec 22, 2024 · For some reason, the website can detect headless mode despite the stealth plugin. It works fine in headed mode though. Any ideas? I have ...",
+    "host_name": "www.answeroverflow.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.zenrows.com/blog/playwright-stealth",
+    "name": "Playwright Stealth: Does It Still Work for Scraping? - Zenrows",
+    "snippet": "Jun 3, 2026 · The playwright-stealth plugin patches the most obvious fingerprint leaks that make headless Playwright easy to detect.",
+    "host_name": "www.zenrows.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.apify.com/playwright-web-scraping",
+    "name": "How to scrape the web with Playwright - Apify Blog",
+    "snippet": "Mar 20, 2025 · Crawlee gives us an easy way to crawl with Playwright, because it will handle enqueueing, network errors and retries for us, without sacrificing ...",
+    "host_name": "blog.apify.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

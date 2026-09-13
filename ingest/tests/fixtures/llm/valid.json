@@ -1,0 +1,5 @@
+[
+  "{\"technical\":85,\"experience\":90,\"behavioral\":75,\"career\":80,\"reasoning\":\"Strong Python backend overlap with senior expectations.\",\"top_matches\":[\"Python\",\"FastAPI\"],\"gaps\":[\"Go\"]}",
+  "{\"technical\":60,\"experience\":50,\"behavioral\":40,\"career\":55,\"reasoning\":\"Partial overlap; adjacent but not core backend.\",\"top_matches\":[\"Python\"],\"gaps\":[\"AWS\"]}",
+  "{\"technical\":100,\"experience\":100,\"behavioral\":100,\"career\":100,\"reasoning\":\"Exact match on stack and seniority.\",\"top_matches\":[\"Python\",\"FastAPI\",\"PostgreSQL\"],\"gaps\":[]}"
+]

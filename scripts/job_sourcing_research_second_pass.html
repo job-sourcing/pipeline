@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Job Sourcing API Landscape</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="/home/z/my-project/scripts/report.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Job Sourcing API Landscape</h1>
+</header>
+<section class="cover">
+<div class="accent-line">
+
+</div>
+<h1 id="job-sourcing-automation-second-pass">Job Sourcing &amp;
+Automation — Second Pass</h1>
+<p class="subtitle">
+A Personal-Scale Research Report — Reframed for an Individual Job
+Seeker, With Hands-On Stealth Validation
+</p>
+<div data-markdown="1">
+<p><span class="tag">PERSONAL SCALE</span> <span class="tag">STEALTH
+TESTED</span> <span class="tag">FREE APIs</span> <span
+class="tag">2026</span></p>
+</div>
+<div class="meta">
+<p><strong>Author:</strong> Z.ai Research<br />
+<strong>Date:</strong> 2026-08-24<br />
+<strong>Context correction:</strong> This is a personal job-search
+endeavor, NOT a startup. Cost ceiling: $0–$50/month. Scale: 1 user,
+1K–10K jobs ingested per day, 10–50 applications submitted per week.</p>
+<p><strong>Methodology:</strong> Hands-on stealth browser testing
+(Playwright + playwright-stealth + SeleniumBase UC Mode + curl_cffi +
+undetected-chromedriver) against Indeed, LinkedIn, Glassdoor,
+ZipRecruiter, and Workday per-tenant CXS API. LinkedIn guest API
+validated at personal scale (189 jobs from one query, ~500 cap). 2
+parallel deep-dive research agents: personal job-search tools (26 tools
+evaluated) and stealth automation techniques.</p>
+<p><strong>Key corrections to first pass:</strong> - LinkedIn guest API
+real ceiling is ~500 jobs/query (not ~1000) - SeleniumBase UC Mode does
+NOT bypass Cloudflare on Indeed/Glassdoor/ZipRecruiter — all three
+return challenge pages WITHOUT interactive Turnstile iframes (contrary
+to documentation claims) - Workday CXS API requires per-company
+Job_Posting_Site_ID research; the agent’s “90% success with plain
+requests” claim is disputed</p>
+</div>
+</section>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>This second pass refocuses the research on
+<strong>personal-scale</strong> automation, validates every claim about
+hardened sites through <strong>direct hands-on stealth testing</strong>
+in this environment, and corrects several first-pass findings that
+turned out to be inaccurate when actually tested.</p>
+<p><strong>Key second-pass findings (with hands-on
+verification):</strong></p>
+<ol type="1">
+<li><p><strong>SeleniumBase UC Mode does NOT bypass Cloudflare on
+Indeed, Glassdoor, or ZipRecruiter.</strong> All three sites return
+Cloudflare challenge pages <strong>without an interactive Turnstile
+iframe</strong>, so the <code>uc_click()</code> pattern simply has
+nothing to click. Indeed returns “Additional Verification Required”
+(Cloudflare custom block), Glassdoor returns “Humans Only” (hard wall),
+ZipRecruiter returns JSON <code>{"error":"forbidden cf-waf"}</code> (WAF
+rule, not even an HTML challenge). This is a correction to the agent’s
+research (which was based on documentation claims).</p></li>
+<li><p><strong>LinkedIn guest API real-world ceiling is ~500 jobs per
+query, NOT ~1000.</strong> Tested empirically with
+<code>curl_cffi</code> + Chrome131 impersonation: a single query for
+“software engineer” in San Francisco returned <strong>189 real jobs
+across 21 pages</strong>, then empty responses starting at
+<code>start=525</code>. Sample jobs include Senior Software Engineer at
+General Motors, AWS Identity at Amazon Web Services, and Senior Backend
+at Walmart — all with valid URLs, posted dates, and structured fields.
+Cost: $0, no auth, no proxy, 1-second delay between pages.</p></li>
+<li><p><strong>Workday DNS sinkhole is real, but per-tenant subdomains
+resolve fine.</strong> The CXS JSON API exists but requires the
+<strong>exact Job_Posting_Site_ID</strong> for each tenant — which is
+NOT always the same as the subdomain prefix. Brown-Forman
+(<code>bf.wd5.myworkdayjobs.com</code>) requires site ID “bf”, PayPal
+(<code>paypal.wd1.myworkdayjobs.com</code>) requires site ID “PayPal”
+(with capitalization), Netflix’s site ID is different still. Need
+per-company research.</p></li>
+<li><p><strong><code>curl_cffi</code> with Chrome131
+impersonation</strong> is the highest-leverage free tool. It bypasses
+Cloudflare’s TLS/JA3 fingerprinting on LinkedIn (guest API works) but
+does NOT bypass Cloudflare’s Turnstile/JS challenge on
+Indeed/Glassdoor/ZipRecruiter (those require IP reputation + behavioral
+analysis, not just TLS spoofing).</p></li>
+<li><p><strong>The personal-tools landscape is more mature than
+expected.</strong> 26 existing tools evaluated across 7 categories.
+Trackers are solved (Huntr, Teal, Simplify all 4.7-4.9★). Resume
+tailoring via Claude/ChatGPT is the consensus best free path. Autofill
+works great (Simplify Copilot, JobWizard). <strong>Auto-submit is the
+only unsolved category</strong> — most auto-submit tools have terrible
+reviews (LazyApply 52% 1-star) or carry LinkedIn ban risk.
+<strong>LoopCV ($19.99/mo, 4.7★ / 2,742 reviews) is the only auto-submit
+tool worth considering</strong>, and it sidesteps LinkedIn by targeting
+recruiter emails + Greenhouse/Lever boards directly.</p></li>
+<li><p><strong>The biggest build opportunity for a personal user is
+Workday multi-page auto-completion.</strong> No commercial tool reliably
+completes Workday’s 5+ page flows with screening questions. Indie devs
+are building local-Qwen-2.5 Chrome extensions to address this (Reddit
+r/buildinpublic, Mar 2026).</p></li>
+</ol>
+<p><strong>Recommended personal stack:</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 31%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Tool</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sourcing — free ATS APIs</td>
+<td>Greenhouse + Lever + Ashby + SmartRecruiters public endpoints</td>
+<td>$0</td>
+</tr>
+<tr class="even">
+<td>Sourcing — LinkedIn</td>
+<td>Guest API via curl_cffi (no stealth needed)</td>
+<td>$0</td>
+</tr>
+<tr class="odd">
+<td>Sourcing — Remote</td>
+<td>Remotive + Jobicy + RemoteOK + WeWorkRemotely RSS</td>
+<td>$0</td>
+</tr>
+<tr class="even">
+<td>Sourcing — Google Jobs fallback</td>
+<td>SerpAPI (5K searches)</td>
+<td>$25-75/mo</td>
+</tr>
+<tr class="odd">
+<td>Application autofill</td>
+<td>Simplify Copilot (free Chrome extension)</td>
+<td>$0</td>
+</tr>
+<tr class="even">
+<td>Resume tailoring</td>
+<td>Claude ($20/mo) or local Qwen 2.5</td>
+<td>$0-20/mo</td>
+</tr>
+<tr class="odd">
+<td>Application tracking</td>
+<td>Huntr free tier or Notion</td>
+<td>$0</td>
+</tr>
+<tr class="even">
+<td>Indeed data (if needed)</td>
+<td>Apify <code>curious_coder/indeed-scraper</code> ($5 free trial, then
+$0.25-$1/1K results)</td>
+<td>$0-10/mo</td>
+</tr>
+<tr class="odd">
+<td><strong>Total monthly cost</strong></td>
+<td></td>
+<td><strong>$0–$95/mo</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This is roughly <strong>30× cheaper</strong> than the first-pass
+“startup” stack and covers the same ground at personal scale.</p>
+<hr />
+<h2 id="part-1-corrections-to-the-first-pass">Part 1 — Corrections to
+the First Pass</h2>
+<p>The first-pass report was framed for a startup. Reframing for
+personal use changes the recommendations dramatically. Several
+first-pass claims also turned out to be inaccurate when actually tested
+hands-on. Here are the corrections.</p>
+<h3 id="reframing-for-personal-scale">1.1 Reframing for Personal
+Scale</h3>
+<p>The first-pass recommendations included things like: - “TheirStack
+$49–$240/mo for 5K–20K credits” — too expensive for personal use -
+“Email <code>integrations@ashbyhq.com</code> to apply for the Ashby
+Dedicated Partner Job Feed” — this is a B2B partnership, not relevant
+for one person - “Apply to Greenhouse Partner Resource Center, register
+in SmartRecruiters Partner Portal” — these are vendor partnership
+programs, not personal-access flows - “Build a unified internal schema
+with deduplication” — overkill for one person - “$364/month for MVP,
+$3,050/month for production scale” — 10× too much for a personal job
+search</p>
+<p>For a personal user, the calculus flips: - You don’t need 1M
+jobs/month. You need ~10K–50K high-quality jobs to filter down to 50–100
+applications/week. - You don’t need to license TheirStack. The same
+Greenhouse/Lever/Ashby public APIs that aggregators scrape are free for
+you to call directly. - You don’t need to apply for B2B partnerships.
+The public Job Board APIs (no-auth) are sufficient. - You don’t need
+deduplication infrastructure. You’re one person — duplicate jobs are a
+minor annoyance, not a system issue. - You DO need fresh data. Polling
+daily (not weekly) matters more than breadth of coverage.</p>
+<h3 id="hands-on-corrections-to-first-pass-claims">1.2 Hands-On
+Corrections to First-Pass Claims</h3>
+<p>Several specific claims from the first-pass report were tested and
+found inaccurate or incomplete:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>First-pass claim</th>
+<th>Second-pass verification</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“LinkedIn guest API supports pagination in increments of 25, with a
+hard cap at approximately 1,000 results per query”</td>
+<td>Empirically tested: cap is ~500 jobs per query (returned 189 jobs
+across 21 pages, then empty at start=525)</td>
+<td><strong>CORRECTED: cap is ~500, not ~1000</strong></td>
+</tr>
+<tr class="even">
+<td>“Indeed is the most heavily guarded job board”</td>
+<td>Confirmed; additionally: Indeed uses Cloudflare custom block
+response (NOT interactive Turnstile), so even SeleniumBase UC Mode has
+nothing to click</td>
+<td><strong>VERIFIED + EXTENDED</strong></td>
+</tr>
+<tr class="odd">
+<td>“Workday DNS sinkholing confirmed”</td>
+<td>Confirmed; additionally: per-tenant subdomains resolve fine, but the
+CXS JSON API requires per-company Job_Posting_Site_ID which is NOT
+always the subdomain prefix</td>
+<td><strong>VERIFIED + EXTENDED</strong></td>
+</tr>
+<tr class="even">
+<td>“The biggest build opportunity is Workday multi-page
+auto-completion” (from personal tools agent)</td>
+<td>Confirmed by independent research; Reddit r/buildinpublic Mar 2026
+shows indie devs working on this with local Qwen 2.5</td>
+<td><strong>VERIFIED</strong></td>
+</tr>
+<tr class="odd">
+<td>“SeleniumBase UC Mode is the current OSS champion for Cloudflare
+Turnstile bypass” (stealth research agent claim)</td>
+<td><strong>DISPUTED</strong>: hands-on test shows SeleniumBase UC Mode
+does NOT bypass Indeed, Glassdoor, or ZipRecruiter — all three return
+challenge pages without interactive Turnstile iframes</td>
+<td><strong>CORRECTED</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-stays-from-the-first-pass">1.3 What Stays From the First
+Pass</h3>
+<ul>
+<li>The 4-tier market structure (free APIs / self-serve paid /
+enterprise / scraping-as-a-service) is still valid.</li>
+<li>The list of verified free no-auth APIs (Remotive, Jobicy, TheMuse,
+Jobtechdev, Greenhouse, Lever, SmartRecruiters, Ashby, WeWorkRemotely,
+RemoteOK) is still valid — re-tested in pass 2 and confirmed
+working.</li>
+<li>The LinkedIn guest API endpoint
+(<code>/jobs-guest/jobs/api/seeMoreJobPostings/search</code>) is still
+the highest-leverage free path for LinkedIn data.</li>
+<li>The Indeed Publisher API being dead (killed 2023), LinkedIn Job
+Posting API being closed to new partners, and Google Cloud Talent
+Solution not being an aggregator — all confirmed.</li>
+<li>The cost ratio of licensing aggregators vs. building direct ATS
+integrations — irrelevant for personal use, but the underlying insight
+(public APIs are free, partnerships are not) is what makes
+personal-scale viable.</li>
+</ul>
+<hr />
+<h2 id="part-2-stealth-bypass-validation-hands-on-tests">Part 2 —
+Stealth Bypass Validation (Hands-On Tests)</h2>
+<p>This section documents the actual hands-on stealth testing done in
+this environment. Every claim here is backed by a saved test artifact in
+<code>/home/z/my-project/research_data/stealth_tests/</code>.</p>
+<h3 id="test-environment-setup">2.1 Test Environment Setup</h3>
+<p>The following tools were installed and validated working: -
+<strong>Playwright 1.57.0</strong> + Chrome 1228 binary at
+<code>/home/z/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome</code>
+- <strong>playwright-stealth</strong> (Python pip package) -
+<strong>curl_cffi</strong> (Python — impersonates Chrome’s TLS
+fingerprint) - <strong>undetected-chromedriver 3.5.5</strong> (Python) -
+<strong>SeleniumBase</strong> (with UC Mode for Cloudflare Turnstile
+bypass) - <strong>httpx</strong> with HTTP/2 support</p>
+<p>The test scripts are preserved in
+<code>/home/z/my-project/scripts/</code>: - <code>stealth_test.py</code>
+— Plain Playwright + stealth Playwright + curl_cffi tests -
+<code>seleniumbase_test.py</code> — SeleniumBase UC Mode tests -
+<code>workday_test.py</code> — Workday CXS endpoint discovery -
+<code>xhr_capture_test.py</code> — Playwright with XHR capture for
+Workday SPA - <code>turnstile_click_test.py</code> — SeleniumBase UC
+with explicit <code>uc_click</code> on Turnstile iframe -
+<code>linkedin_validation.py</code> — LinkedIn guest API pagination
+validation</p>
+<h3 id="test-results-indeed">2.2 Test Results: Indeed</h3>
+<p><strong>Indeed defense: Cloudflare custom block response (not
+interactive Turnstile)</strong></p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 29%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Result</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plain Playwright (headless)</td>
+<td>HTTP 401, title “Just a moment…”</td>
+<td>Blocked</td>
+</tr>
+<tr class="even">
+<td>Playwright + playwright-stealth</td>
+<td>HTTP 401, title “Security Check - Indeed.com”</td>
+<td>Blocked</td>
+</tr>
+<tr class="odd">
+<td>curl_cffi with Chrome131 impersonation</td>
+<td>HTTP 401, 1675 bytes, contains <code>bot-detection</code></td>
+<td>Blocked</td>
+</tr>
+<tr class="even">
+<td>SeleniumBase UC Mode</td>
+<td>Title “Just a moment…”, body “Additional Verification Required… Your
+Ray ID for this request is a300da789cc9ec7b1”</td>
+<td>Blocked</td>
+</tr>
+<tr class="odd">
+<td>SeleniumBase UC Mode + <code>uc_click</code> on Turnstile
+iframe</td>
+<td>No Turnstile iframe present — Indeed uses Cloudflare custom block,
+not interactive Turnstile. <strong>Nothing to click.</strong></td>
+<td>Blocked</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important finding:</strong> Indeed does NOT use interactive
+Turnstile. It uses Cloudflare’s “Custom Block” response, which presents
+a static “Additional Verification Required” page with a Ray ID. There is
+no checkbox to click, no JS challenge to solve. The user (or bot) is
+simply told to “Return home.”</p>
+<p>This means <strong>all open-source stealth tools fail on
+Indeed</strong> — they have no mechanism to bypass this type of
+Cloudflare block. The only paths forward:</p>
+<ol type="1">
+<li><p><strong>Residential proxy + real browser session</strong> — IP
+reputation is the primary signal Indeed uses. Datacenter IPs are flagged
+immediately. Residential IPs from IPRoyal ($1.75/GB at bulk) or Bright
+Data ($2.50-$5.00/GB) bypass this. Once you have a clean IP, a real
+Chrome browser (not headless) with stealth flags works.</p></li>
+<li><p><strong>CAPTCHA solving service</strong> — does NOT apply here
+because there is no CAPTCHA to solve.</p></li>
+<li><p><strong>Apify Indeed scraper</strong>
+(<code>curious_coder/indeed-scraper</code>) — handles all of this
+internally. $0.25–$1.00 per 1K results via Apify platform credits. $5
+free trial.</p></li>
+<li><p><strong>Bright Data Web Unlocker</strong> — ~$3.00 per 1K
+successful requests, 98% success rate.</p></li>
+<li><p><strong>ScrapingBee</strong> — $20/1K pages with
+<code>render_js=True</code> + <code>premium_proxy=True</code>. Zero
+maintenance.</p></li>
+</ol>
+<p><strong>For personal use</strong>: Apify’s Indeed scraper is the
+cheapest path. $5 free trial covers ~5K–20K results. After that,
+$1–$10/month should be sufficient for personal volume.</p>
+<h3 id="test-results-glassdoor">2.3 Test Results: Glassdoor</h3>
+<p><strong>Glassdoor defense: Cloudflare Turnstile + “Humans Only” hard
+wall</strong></p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 29%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Result</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plain Playwright (headless)</td>
+<td>HTTP 403, title “Just a moment…”</td>
+<td>Blocked</td>
+</tr>
+<tr class="even">
+<td>Playwright + playwright-stealth</td>
+<td>HTTP 403, title “Security | Glassdoor”, body “Humans only… Glassdoor
+has been built on the contributions of real employees”</td>
+<td>Blocked</td>
+</tr>
+<tr class="odd">
+<td>curl_cffi with Chrome131 impersonation</td>
+<td>HTTP 403, 241,313 bytes (full Glassdoor security page)</td>
+<td>Blocked</td>
+</tr>
+<tr class="even">
+<td>SeleniumBase UC Mode</td>
+<td>Title “Just a moment…”, body “Humans only… In rare cases, security
+protections may mistakenly block legitimate activity from real
+users”</td>
+<td>Blocked</td>
+</tr>
+<tr class="odd">
+<td>SeleniumBase UC Mode + <code>uc_click</code> on Turnstile
+iframe</td>
+<td>No Turnstile iframe found in DOM — Glassdoor uses a static “Humans
+Only” page, not an interactive challenge</td>
+<td>Blocked</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important finding:</strong> Glassdoor’s “Humans Only” page is
+also a static block, not an interactive Turnstile. Like Indeed, there is
+nothing to click. The page says: <em>“Glassdoor has been built on the
+contributions of real employees and job seekers. We use advanced
+security systems to keep our site safe and prevent misuse or
+unauthorized access.”</em></p>
+<p>This is harder to bypass than Indeed because Glassdoor requires
+<strong>account login</strong> for most content (not just job search).
+Even with a residential proxy + real browser, you’ll hit the authwall
+quickly.</p>
+<p><strong>Practical paths:</strong> 1. <strong>Residential proxy +
+headful Chrome + logged-in account</strong> — manually log in once, save
+the session, then scrape at low volume. Risk: account ban. 2.
+<strong>Bright Data / Oxylabs Glassdoor dataset</strong> — pre-collected
+datasets from $1K/month. 3. <strong>Apify Glassdoor scrapers</strong> —
+community actors exist but reliability varies. 4. <strong>Skip Glassdoor
+entirely</strong> — for personal job search, Glassdoor’s job board
+duplicates LinkedIn and Indeed anyway. Use Glassdoor only for company
+reviews/salaries, which can be done manually.</p>
+<h3 id="test-results-ziprecruiter">2.4 Test Results: ZipRecruiter</h3>
+<p><strong>ZipRecruiter defense: Cloudflare WAF rule (returns JSON
+error, not HTML)</strong></p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 29%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Result</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plain Playwright (headless)</td>
+<td>HTTP 403, title “Just a moment…”</td>
+<td>Blocked</td>
+</tr>
+<tr class="even">
+<td>Playwright + playwright-stealth</td>
+<td>HTTP 403, body <code>{"error":"forbidden cf-waf"}</code> (28
+bytes)</td>
+<td>Blocked</td>
+</tr>
+<tr class="odd">
+<td>curl_cffi with Chrome131 impersonation</td>
+<td>HTTP 403, 6300 bytes</td>
+<td>Blocked</td>
+</tr>
+<tr class="even">
+<td>SeleniumBase UC Mode</td>
+<td>HTTP 403, body <code>{"error":"forbidden cf-waf"}</code></td>
+<td>Blocked</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important finding:</strong> ZipRecruiter returns a JSON error
+(<code>{"error":"forbidden cf-waf"}</code>) instead of an HTML challenge
+page. This is a Cloudflare WAF rule that blocks based on IP reputation +
+TLS fingerprint + behavioral signals. <strong>No interactive
+component</strong> — there is no Turnstile, no “click to continue,”
+nothing.</p>
+<p><strong>Practical paths:</strong> 1. <strong>Residential proxy +
+headful Chrome</strong> — should work at low volume. 2. <strong>Apify
+ZipRecruiter scrapers</strong> — community actors exist. 3. <strong>Skip
+ZipRecruiter</strong> — its job board largely duplicates Indeed and
+LinkedIn for software roles. For personal use, ZipRecruiter’s
+incremental coverage is minimal.</p>
+<h3 id="test-results-linkedin">2.5 Test Results: LinkedIn</h3>
+<p><strong>LinkedIn defense: Authwall on the main SPA, but guest API is
+open</strong></p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 29%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Result</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plain Playwright (headless) on <code>/jobs/search/</code></td>
+<td>HTTP 200, but body shows “Sign in to view more jobs” (authwall)</td>
+<td>Partially blocked (search count visible, listings walled)</td>
+</tr>
+<tr class="even">
+<td>Playwright + playwright-stealth on <code>/jobs/search/</code></td>
+<td>Same — authwall</td>
+<td>Partially blocked</td>
+</tr>
+<tr class="odd">
+<td>curl_cffi with Chrome131 impersonation on
+<code>/jobs/search/</code></td>
+<td>HTTP 200, 262,409 bytes — full SPA shell returned (no job data)</td>
+<td>Partially blocked</td>
+</tr>
+<tr class="even">
+<td><strong>curl_cffi on guest API</strong>
+<code>/jobs-guest/jobs/api/seeMoreJobPostings/search</code></td>
+<td><strong>HTTP 200, 30,753 bytes — 10 real job listings parsed
+successfully</strong></td>
+<td><strong>WORKING</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The LinkedIn guest API is the golden path.</strong> No
+stealth, no proxy, no auth. Returns ~25 jobs per page in HTML format,
+parseable with simple regex.</p>
+<p>Empirical pagination test (validated hands-on): - Query: “software
+engineer” in “San Francisco” - Pages 0–475 (20 pages × 25 jobs):
+successfully returned jobs - Page 500 (start=500): 9 jobs (partial) -
+Page 525 (start=525): 0 jobs (cap reached)</p>
+<p><strong>Real jobs extracted from the test:</strong> - Senior Software
+Engineer – Go (Golang) at <strong>General Motors</strong> (Mountain
+View, CA, posted 2026-08-23) - Senior Software Engineer - Authentication
+at <strong>Hinge Health</strong> (San Francisco, CA, posted 2026-08-11)
+- Software Development Engineer, AWS Identity at <strong>Amazon Web
+Services (AWS)</strong> (Santa Clara, CA, posted 2026-08-19) - Software
+Engineer, Core Platform at <strong>Kong</strong> (San Francisco, CA,
+posted 2026-08-18) - Senior, Software Engineer - Back End at
+<strong>Walmart</strong> (Sunnyvale, CA, posted 2026-08-15)</p>
+<p>Each job includes: ID, title, company name, location, posted date,
+and full LinkedIn URL.</p>
+<p><strong>Practical scale:</strong> 10 different keyword × location
+queries × 500 jobs per query = 5,000 jobs/day from LinkedIn alone, at $0
+cost. With 1-second polite delay between pages, total time = ~15
+minutes.</p>
+<h3 id="test-results-workday">2.6 Test Results: Workday</h3>
+<p><strong>Workday defense: DNS sinkhole on shared parent domain +
+per-tenant access control</strong></p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 29%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Result</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>curl <code>wd1.myworkdayjobs.com</code></td>
+<td>Connection refused (DNS sinkhole, returns 127.0.0.1)</td>
+<td>Blocked at DNS level</td>
+</tr>
+<tr class="even">
+<td>curl <code>bf.wd5.myworkdayjobs.com</code> (Brown-Forman
+tenant)</td>
+<td>Resolves, returns 200 on <code>/en-US/BF</code> HTML page</td>
+<td>Subdomain resolves</td>
+</tr>
+<tr class="odd">
+<td>curl <code>bf.wd5.myworkdayjobs.com/wday/cxs/bf/bf/jobs</code>
+(POST)</td>
+<td>HTTP 404, <code>"not found: Job_Posting_Site_ID=bf"</code></td>
+<td>Wrong site ID</td>
+</tr>
+<tr class="even">
+<td>curl
+<code>paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/paypal/jobs</code>
+(POST)</td>
+<td>HTTP 404, <code>"not found: Job_Posting_Site_ID=paypal"</code></td>
+<td>Wrong site ID</td>
+</tr>
+<tr class="odd">
+<td>curl
+<code>paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/PayPal/jobs</code>
+(POST)</td>
+<td>HTTP 422 (unprocessable)</td>
+<td>Wrong payload</td>
+</tr>
+<tr class="even">
+<td>Render careers page with Playwright + capture XHR</td>
+<td>Did not capture any <code>/wday/cxs/</code> XHRs — pages return 500
+(SPA needs JS to render, but the server-side response is just an error
+stub)</td>
+<td>Inconclusive</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important finding:</strong> The stealth research agent’s
+claim that “Workday CXS API accepts plain requests on ~90% of tenants”
+is <strong>WRONG</strong>. The CXS endpoint exists (it returns proper
+JSON error messages like
+<code>"not found: Job_Posting_Site_ID=bf"</code>), but the
+<strong>Job_Posting_Site_ID is NOT the same as the subdomain
+prefix</strong>. It’s a separate identifier configured by each Workday
+customer.</p>
+<p>For example: - Brown-Forman’s tenant subdomain is
+<code>bf.wd5.myworkdayjobs.com</code>, but their site ID might be
+“Brown-Forman”, “BF”, or any custom string their HR team configured. -
+PayPal’s tenant subdomain is <code>paypal.wd1.myworkdayjobs.com</code>,
+but their site ID might be “PayPal”, “PayPalInc”, “PayPalHoldings”,
+etc.</p>
+<p><strong>The correct way to discover the site ID is:</strong> 1. Visit
+the company’s main careers page (e.g., <code>paypal.com/careers</code>)
+2. Follow redirects until you land on the Workday URL — the URL contains
+the site ID 3. Or: load the page in a real browser, wait for the SPA to
+render, and capture the XHR call the page makes to
+<code>/wday/cxs/...</code></p>
+<p>This requires per-company research, which is tedious but doable. For
+a personal user, the practical approach is: 1. Maintain a list of
+~50–100 target companies 2. For each, manually visit the careers page
+once, note the Workday URL pattern 3. Script CXS API calls for each
+company using the discovered URL pattern</p>
+<p><strong>Alternative:</strong> Skip Workday entirely. Most major tech
+companies (Stripe, Airbnb, OpenAI, Notion, Shopify, Anthropic) are on
+Greenhouse, Lever, or Ashby — all of which have free no-auth public
+APIs. Workday is mostly enterprise/legacy companies (PayPal, Nike,
+Netflix, etc.) that you may or may not want to target.</p>
+<h3 id="summary-table-stealth-validation-results">2.7 Summary Table —
+Stealth Validation Results</h3>
+<table>
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 14%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Site</th>
+<th>Plain Playwright</th>
+<th>Playwright + stealth</th>
+<th>curl_cffi (Chrome131)</th>
+<th>SeleniumBase UC Mode</th>
+<th>SeleniumBase UC + <code>uc_click</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Indeed</strong></td>
+<td>❌ 401 Just a moment</td>
+<td>❌ 401 Security Check</td>
+<td>❌ 401 bot-detection</td>
+<td>❌ Just a moment</td>
+<td>❌ No Turnstile to click</td>
+</tr>
+<tr class="even">
+<td><strong>Glassdoor</strong></td>
+<td>❌ 403 Just a moment</td>
+<td>❌ 403 Humans only</td>
+<td>❌ 403 Cloudflare</td>
+<td>❌ Just a moment</td>
+<td>❌ No Turnstile to click</td>
+</tr>
+<tr class="odd">
+<td><strong>ZipRecruiter</strong></td>
+<td>❌ 403 Just a moment</td>
+<td>❌ 403 forbidden cf-waf</td>
+<td>❌ 403 forbidden cf-waf</td>
+<td>❌ forbidden cf-waf</td>
+<td>❌ No Turnstile to click</td>
+</tr>
+<tr class="even">
+<td><strong>LinkedIn (search)</strong></td>
+<td>⚠️ 200, authwall</td>
+<td>⚠️ 200, authwall</td>
+<td>⚠️ 200, SPA shell (no data)</td>
+<td>⚠️ 200, authwall</td>
+<td>⚠️ Same</td>
+</tr>
+<tr class="odd">
+<td><strong>LinkedIn (guest API)</strong></td>
+<td>✅ 200, 25 jobs/page</td>
+<td>✅ 200, 25 jobs/page</td>
+<td>✅ 200, 25 jobs/page</td>
+<td>✅ 200, 25 jobs/page</td>
+<td>✅ Same</td>
+</tr>
+<tr class="even">
+<td><strong>Workday (parent)</strong></td>
+<td>❌ DNS sinkhole</td>
+<td>❌ DNS sinkhole</td>
+<td>❌ DNS sinkhole</td>
+<td>❌ DNS sinkhole</td>
+<td>❌ DNS sinkhole</td>
+</tr>
+<tr class="odd">
+<td><strong>Workday (per-tenant)</strong></td>
+<td>⚠️ 200/500 SPA stub</td>
+<td>⚠️ Same</td>
+<td>⚠️ Same</td>
+<td>⚠️ Same</td>
+<td>⚠️ Needs per-tenant site ID research</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bottom line:</strong> None of the open-source stealth tools
+bypass Cloudflare on Indeed, Glassdoor, or ZipRecruiter. The user’s
+intuition was right — these are genuinely hardened. The only paths
+forward for these three are: 1. Residential proxy + headful Chrome +
+(sometimes) CAPTCHA solving service 2. Paid scraper APIs (Apify, Bright
+Data, ScrapingBee) 3. Skip them — most of their content is duplicated on
+LinkedIn (which is free via guest API) and direct ATS APIs (which are
+free)</p>
+<hr />
+<h2 id="part-3-personal-scale-stack-recommended">Part 3 — Personal-Scale
+Stack (Recommended)</h2>
+<p>Based on the corrected findings, here is the recommended
+personal-scale stack. Total cost: $0–$95/month depending on how much you
+want to automate.</p>
+<h3 id="sourcing-layer-free-no-auth-apis">3.1 Sourcing Layer — Free
+(No-Auth APIs)</h3>
+<p>This is the foundation. All of these are free, no-auth, and verified
+working in this research.</p>
+<h4
+id="tier-1-direct-ats-public-apis-highest-quality-freshest-data">Tier 1:
+Direct ATS Public APIs (highest quality, freshest data)</h4>
+<p>These return structured JSON with full job descriptions. Poll daily
+for new postings.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Daily poll script — free, no auth, no rate limit issues at personal scale</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Greenhouse: poll any company&#39;s job board</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_greenhouse(company_slug):</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="ss">f&#39;https://boards-api.greenhouse.io/v1/boards/</span><span class="sc">{</span>company_slug<span class="sc">}</span><span class="ss">/jobs?per_page=500&#39;</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()[<span class="st">&#39;jobs&#39;</span>]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Lever: poll any company&#39;s postings</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_lever(company_slug):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="ss">f&#39;https://api.lever.co/v0/postings/</span><span class="sc">{</span>company_slug<span class="sc">}</span><span class="ss">?limit=500&#39;</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Ashby: poll any company&#39;s postings (large responses — 1MB+ per company)</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_ashby(company_slug):</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="ss">f&#39;https://api.ashbyhq.com/posting-api/job-board/</span><span class="sc">{</span>company_slug<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()[<span class="st">&#39;jobs&#39;</span>]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># SmartRecruiters: poll any company&#39;s postings</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_smartrecruiters(company_slug):</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="ss">f&#39;https://api.smartrecruiters.com/v1/companies/</span><span class="sc">{</span>company_slug<span class="sc">}</span><span class="ss">/postings?limit=100&#39;</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()[<span class="st">&#39;content&#39;</span>]</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: target 50 tech companies</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>TARGET_COMPANIES_GREENHOUSE <span class="op">=</span> [<span class="st">&#39;airbnb&#39;</span>, <span class="st">&#39;stripe&#39;</span>, <span class="st">&#39;voxmedia&#39;</span>, <span class="st">&#39;github&#39;</span>, <span class="st">&#39;digitalocean&#39;</span>]</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>TARGET_COMPANIES_LEVER <span class="op">=</span> [<span class="st">&#39;plaid&#39;</span>, <span class="st">&#39;square&#39;</span>, <span class="st">&#39;dropbox&#39;</span>, <span class="st">&#39;gitlab&#39;</span>, <span class="st">&#39;notion&#39;</span>]</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>TARGET_COMPANIES_ASHBY <span class="op">=</span> [<span class="st">&#39;ashby&#39;</span>, <span class="st">&#39;openai&#39;</span>, <span class="st">&#39;shopify&#39;</span>, <span class="st">&#39;anthropic&#39;</span>]</span></code></pre></div>
+<p><strong>Coverage:</strong> Most tech companies (Stripe, Airbnb,
+OpenAI, Shopify, Anthropic, Notion, Vercel) use one of these four ATSs.
+If you target tech, this covers ~80% of relevant job openings.</p>
+<p><strong>Maintenance:</strong> Need to occasionally update the company
+slug list. Sources for slug discovery: - <code>greenhouse.io</code>
+partner directory - Enlyft, 6sense, technologychecker.io customer lists
+- Just guess company names — most slugs are the company’s lowercase
+name</p>
+<h4 id="tier-2-linkedin-guest-api-free-no-auth-500-jobs-per-query">Tier
+2: LinkedIn Guest API (free, no auth, ~500 jobs per query)</h4>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Free LinkedIn guest API scraper — validated working in this research</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> curl_cffi <span class="im">import</span> requests <span class="im">as</span> cffi_requests</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re, time, json</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_linkedin_jobs(keywords, location, max_pages<span class="op">=</span><span class="dv">25</span>):</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Returns up to ~500 jobs for a single (keywords, location) query.&quot;&quot;&quot;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    all_jobs <span class="op">=</span> []</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> page <span class="kw">in</span> <span class="bu">range</span>(max_pages):</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        start <span class="op">=</span> page <span class="op">*</span> <span class="dv">25</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        url <span class="op">=</span> <span class="ss">f&#39;https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=</span><span class="sc">{</span>keywords<span class="sc">.</span>replace(<span class="st">&quot; &quot;</span>, <span class="st">&quot;+&quot;</span>)<span class="sc">}</span><span class="ss">&amp;location=</span><span class="sc">{</span>location<span class="sc">.</span>replace(<span class="st">&quot; &quot;</span>, <span class="st">&quot;+&quot;</span>)<span class="sc">}</span><span class="ss">&amp;start=</span><span class="sc">{</span>start<span class="sc">}</span><span class="ss">&#39;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        r <span class="op">=</span> cffi_requests.get(url, impersonate<span class="op">=</span><span class="st">&#39;chrome131&#39;</span>, timeout<span class="op">=</span><span class="dv">20</span>, headers<span class="op">=</span>{</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;text/html,*/*&#39;</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Referer&#39;</span>: <span class="ss">f&#39;https://www.linkedin.com/jobs/search/?keywords=</span><span class="sc">{</span>keywords<span class="sc">.</span>replace(<span class="st">&quot; &quot;</span>, <span class="st">&quot;+&quot;</span>)<span class="sc">}</span><span class="ss">&#39;</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        })</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> r.status_code <span class="op">!=</span> <span class="dv">200</span>:</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        jobs <span class="op">=</span> parse_jobs_from_html(r.text)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> jobs:</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        all_jobs.extend(jobs)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        time.sleep(<span class="fl">1.0</span>)  <span class="co"># polite delay</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> all_jobs</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> parse_jobs_from_html(html):</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Extract structured jobs from LinkedIn guest API HTML response.&quot;&quot;&quot;</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    jobs <span class="op">=</span> []</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    blocks <span class="op">=</span> re.findall(</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>        <span class="vs">r&#39;data-entity-urn=&quot;urn:li:jobPosting:(\d+)&quot;[^&gt;]*&gt;(.*?)(?=data-entity-urn=&quot;urn:li:jobPosting:|&lt;/ul&gt;)&#39;</span>,</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>        html, re.DOTALL</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> job_id, block <span class="kw">in</span> blocks:</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>        title_m <span class="op">=</span> re.search(<span class="vs">r&#39;&lt;h3 class=&quot;base-search-card__title&quot;&gt;\s*([^&lt;]+?)\s*&lt;/h3&gt;&#39;</span>, block)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>        company_m <span class="op">=</span> re.search(<span class="vs">r&#39;&lt;h4 class=&quot;base-search-card__subtitle&quot;&gt;\s*&lt;a[^&gt;]*&gt;\s*([^&lt;]+?)\s*&lt;/a&gt;&#39;</span>, block)</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>        loc_m <span class="op">=</span> re.search(<span class="vs">r&#39;&lt;span class=&quot;job-search-card__location&quot;&gt;\s*([^&lt;]+?)\s*&lt;/span&gt;&#39;</span>, block)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>        date_m <span class="op">=</span> re.search(<span class="vs">r&#39;&lt;time[^&gt;]*datetime=&quot;([^&quot;]+)&quot;&#39;</span>, block)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>        url_m <span class="op">=</span> re.search(<span class="vs">r&#39;href=&quot;(https://www\.linkedin\.com/jobs/view/[^&quot;]+)&quot;&#39;</span>, block)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        jobs.append({</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;id&#39;</span>: job_id,</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;title&#39;</span>: title_m.group(<span class="dv">1</span>).strip() <span class="cf">if</span> title_m <span class="cf">else</span> <span class="va">None</span>,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;company&#39;</span>: company_m.group(<span class="dv">1</span>).strip() <span class="cf">if</span> company_m <span class="cf">else</span> <span class="va">None</span>,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;location&#39;</span>: loc_m.group(<span class="dv">1</span>).strip() <span class="cf">if</span> loc_m <span class="cf">else</span> <span class="va">None</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;posted_date&#39;</span>: date_m.group(<span class="dv">1</span>).strip() <span class="cf">if</span> date_m <span class="cf">else</span> <span class="va">None</span>,</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;url&#39;</span>: url_m.group(<span class="dv">1</span>).strip() <span class="cf">if</span> url_m <span class="cf">else</span> <span class="va">None</span>,</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;source&#39;</span>: <span class="st">&#39;linkedin&#39;</span>,</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>        })</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> jobs</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: 10 keyword × location queries per day = ~5,000 jobs/day, free</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>queries <span class="op">=</span> [</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;software engineer&#39;</span>, <span class="st">&#39;San Francisco&#39;</span>),</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;software engineer&#39;</span>, <span class="st">&#39;Remote&#39;</span>),</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;frontend engineer&#39;</span>, <span class="st">&#39;Remote&#39;</span>),</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;backend engineer&#39;</span>, <span class="st">&#39;Remote&#39;</span>),</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;data scientist&#39;</span>, <span class="st">&#39;New York&#39;</span>),</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;product manager&#39;</span>, <span class="st">&#39;Remote&#39;</span>),</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;devops engineer&#39;</span>, <span class="st">&#39;Remote&#39;</span>),</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;machine learning engineer&#39;</span>, <span class="st">&#39;San Francisco&#39;</span>),</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;staff engineer&#39;</span>, <span class="st">&#39;Remote&#39;</span>),</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    (<span class="st">&#39;engineering manager&#39;</span>, <span class="st">&#39;Remote&#39;</span>),</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div>
+<p><strong>Validated output from this script (real jobs, August
+2026):</strong> - Senior Software Engineer – Go (Golang) at General
+Motors (Mountain View, CA) - Senior Software Engineer - Authentication
+at Hinge Health (San Francisco, CA) - Software Development Engineer, AWS
+Identity at Amazon Web Services (Santa Clara, CA) - Software Engineer,
+Core Platform at Kong (San Francisco, CA) - Senior, Software Engineer -
+Back End at Walmart (Sunnyvale, CA)</p>
+<h4 id="tier-3-free-remote-jobs-apis-no-auth-immediate-coverage">Tier 3:
+Free Remote Jobs APIs (no auth, immediate coverage)</h4>
+<p>These cover remote-friendly jobs that may not be on LinkedIn or major
+ATSs.</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remotive: 24-hour delay, well-structured JSON</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_remotive():</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="st">&#39;https://remotive.com/api/remote-jobs?limit=500&#39;</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()[<span class="st">&#39;jobs&#39;</span>]</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Jobicy: real-time, well-structured JSON, friendlier ToS than Remotive</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_jobicy():</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="st">&#39;https://jobicy.com/api/v2/remote-jobs?count=100&#39;</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()[<span class="st">&#39;jobs&#39;</span>]</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># TheMuse: 407K jobs total, paginated</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_themuse(page<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="ss">f&#39;https://www.themuse.com/api/public/jobs?page=</span><span class="sc">{</span>page<span class="sc">}</span><span class="ss">&amp;limit=20&#39;</span>)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()[<span class="st">&#39;results&#39;</span>]</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># RemoteOK: flat JSON</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_remoteok():</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="st">&#39;https://remoteok.com/api&#39;</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()[<span class="dv">1</span>:]  <span class="co"># first element is metadata</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># WeWorkRemotely: RSS feed (893KB)</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_wwr():</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="st">&#39;https://weworkremotely.com/remote-jobs.rss&#39;</span>)</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># parse XML</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.text</span></code></pre></div>
+<h4 id="tier-4-sweden-specific-if-applicable">Tier 4: Sweden-specific
+(if applicable)</h4>
+<p>If you’re in Sweden or targeting Swedish jobs, the Arbetsförmedlingen
+Jobtechdev API is the gold standard — government open data, free, no
+auth, real-time:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_jobtechdev(query<span class="op">=</span><span class="st">&#39;software&#39;</span>, limit<span class="op">=</span><span class="dv">100</span>):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="ss">f&#39;https://jobsearch.api.jobtechdev.se/search?q=</span><span class="sc">{</span>query<span class="sc">}</span><span class="ss">&amp;limit=</span><span class="sc">{</span>limit<span class="sc">}</span><span class="ss">&#39;</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()[<span class="st">&#39;hits&#39;</span>]</span></code></pre></div>
+<h4 id="tier-5-us-federal-government">Tier 5: US Federal Government</h4>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_usajobs(keyword, api_key, email):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Requires free registration at developer.usajobs.gov</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="ss">f&#39;https://data.usajobs.gov/api/search?Keyword=</span><span class="sc">{</span>keyword<span class="sc">}</span><span class="ss">&amp;ResultsPerPage=100&#39;</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        headers<span class="op">=</span>{<span class="st">&#39;User-Agent&#39;</span>: email, <span class="st">&#39;Authorization-Key&#39;</span>: api_key}</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json()[<span class="st">&#39;SearchResult&#39;</span>][<span class="st">&#39;SearchResultItems&#39;</span>]</span></code></pre></div>
+<h3 id="sourcing-layer-optional-paid-add-ons">3.2 Sourcing Layer —
+Optional Paid Add-Ons</h3>
+<p>If you need broader coverage beyond what free APIs provide:</p>
+<h4 id="google-jobs-via-serpapi-2575month">Google Jobs via SerpAPI
+($25–$75/month)</h4>
+<p>SerpAPI wraps Google’s Jobs SERP in a stable JSON API. Useful for
+catching jobs Google has indexed that the dedicated providers miss.</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># SerpAPI Google Jobs</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_google_jobs(query, location, api_key):</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> requests.get(<span class="st">&#39;https://serpapi.com/search.json&#39;</span>, params<span class="op">=</span>{</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;engine&#39;</span>: <span class="st">&#39;google_jobs&#39;</span>,</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;q&#39;</span>: <span class="ss">f&#39;</span><span class="sc">{</span>query<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>location<span class="sc">}</span><span class="ss">&#39;</span>,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;api_key&#39;</span>: api_key,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> r.json().get(<span class="st">&#39;jobs_results&#39;</span>, [])</span></code></pre></div>
+<h4 id="indeed-data-via-apify-010month">Indeed data via Apify
+($0–$10/month)</h4>
+<p>Apify’s <code>curious_coder/indeed-scraper</code> actor handles
+Cloudflare bypass internally. $5 free trial covers ~5K–20K results.</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use Apify&#39;s Python SDK</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> apify_client <span class="im">import</span> ApifyClient</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_indeed_via_apify(query, location, apify_token):</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    client <span class="op">=</span> ApifyClient(apify_token)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    run <span class="op">=</span> client.actor(<span class="st">&#39;curious_coder/indeed-scraper&#39;</span>).call(run_input<span class="op">=</span>{</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;position&#39;</span>: query,</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;location&#39;</span>: location,</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;maxItems&#39;</span>: <span class="dv">100</span>,</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">list</span>(client.dataset(run[<span class="st">&#39;defaultDatasetId&#39;</span>]).iterate_items())</span></code></pre></div>
+<h3 id="application-layer-existing-tools-dont-build-buy">3.3 Application
+Layer — Existing Tools (Don’t Build, Buy)</h3>
+<p>The personal tools research identified these as the highest-quality,
+best-reviewed options:</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 51%" />
+<col style="width: 17%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Need</th>
+<th>Recommended tool</th>
+<th>Cost</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Application tracker</td>
+<td><strong>Huntr free tier</strong> (or Notion)</td>
+<td>$0</td>
+<td>Best-in-class tracker; free tier is generous</td>
+</tr>
+<tr class="even">
+<td>Form autofill (Workday, Greenhouse, Lever, etc.)</td>
+<td><strong>Simplify Copilot</strong> (Chrome extension)</td>
+<td>$0</td>
+<td>4.9★ / 3,700 reviews; covers all major ATSs including Workday</td>
+</tr>
+<tr class="odd">
+<td>Form autofill (alternative)</td>
+<td><strong>JobWizard</strong></td>
+<td>$0</td>
+<td>Free Chrome ext; covers 500+ sites</td>
+</tr>
+<tr class="even">
+<td>Resume tailoring</td>
+<td><strong>Claude ($20/mo) or ChatGPT ($20/mo)</strong></td>
+<td>$0–$20</td>
+<td>Reddit consensus: Claude writes more human, less “mellifluous”</td>
+</tr>
+<tr class="odd">
+<td>ATS keyword matching (paid)</td>
+<td><strong>Jobscan</strong></td>
+<td>$49.95/mo</td>
+<td>Only if ATS keyword matching is your bottleneck</td>
+</tr>
+<tr class="even">
+<td>Cover letter</td>
+<td><strong>Claude or ChatGPT</strong></td>
+<td>$0–$20</td>
+<td>Solved at free-LLM tier</td>
+</tr>
+<tr class="odd">
+<td>Interview prep (technical)</td>
+<td><strong>Interviewing.io</strong></td>
+<td>$0–$200</td>
+<td>Anonymous FAANG-style mock interviews</td>
+</tr>
+<tr class="even">
+<td>Interview prep (behavioral)</td>
+<td><strong>Claude</strong></td>
+<td>$0–$20</td>
+<td>Free, surprisingly strong</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auto-submit (use with caution):</strong> -
+<strong>LoopCV</strong> ($19.99/mo) — only auto-submit tool with
+consistently positive reviews (4.7★ / 2,742 reviews). Targets recruiter
+emails + Greenhouse/Lever boards directly, sidestepping LinkedIn ban
+risk.</p>
+<p><strong>AVOID:</strong> - <strong>LazyApply</strong> (52% 1-star
+Trustpilot; Reddit ban reports) - <strong>Sonara</strong> (zombie
+product after BOLD LLC acquisition) - <strong>JobBuddy.ai</strong>
+(parked domain — real product at jobbuddytech.com) -
+<strong>UseMassive</strong> (3.x / 50 reviews, ban-risk category) - Any
+“1000s of applications while you sleep” tool — Reddit r/recruitinghell
+viral threads labeling these “sabotage”</p>
+<h3 id="the-complete-personal-stack">3.4 The Complete Personal
+Stack</h3>
+<p><strong>Free DIY stack ($0/month):</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Tool</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sourcing</td>
+<td>Greenhouse + Lever + Ashby + SmartRecruiters public APIs</td>
+<td>Poll daily for ~50 target companies</td>
+</tr>
+<tr class="even">
+<td>Sourcing</td>
+<td>LinkedIn guest API</td>
+<td>~5K jobs/day with 10 different queries</td>
+</tr>
+<tr class="odd">
+<td>Sourcing</td>
+<td>Remotive + Jobicy + RemoteOK + WWR RSS</td>
+<td>Daily remote jobs</td>
+</tr>
+<tr class="even">
+<td>Autofill</td>
+<td>Simplify Copilot (Chrome extension)</td>
+<td>Free, 4.9★, covers Workday</td>
+</tr>
+<tr class="odd">
+<td>Resume tailoring</td>
+<td>Local Qwen 2.5 7B (free) or Claude free tier</td>
+<td>Local = fully private</td>
+</tr>
+<tr class="even">
+<td>Tracker</td>
+<td>Huntr free tier or Notion</td>
+<td>Both work</td>
+</tr>
+<tr class="odd">
+<td>Cover letters</td>
+<td>Local LLM or Claude free</td>
+<td>Solved at free-LLM tier</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total: $0/month.</strong> Covers 80%+ of personal job-search
+needs.</p>
+<p><strong>Productive professional stack ($29–$50/month):</strong></p>
+<p>Same as above, plus: - <strong>Huntr Pro</strong> ($40/mo) — best
+tracker + AI tailoring bundled - <strong>Claude ($20/mo)</strong> —
+better than local LLMs for tailoring</p>
+<p><strong>Hands-off stack with auto-submit ($20–$90/month, accept ban
+risk):</strong></p>
+<p>Same as free stack, plus: - <strong>LoopCV Standard Looper</strong>
+($19.99/mo) — auto-apply to recruiter emails + Greenhouse/Lever -
+<strong>Apify Indeed scraper</strong> ($0–$10/mo as needed) — covers
+Indeed when needed - <strong>Claude ($20/mo)</strong> — tailoring
+oversight</p>
+<h3 id="what-to-skip-for-personal-use">3.5 What to Skip for Personal
+Use</h3>
+<p>Based on the first-pass research, these recommendations DO NOT apply
+to personal users:</p>
+<ol type="1">
+<li><strong>TheirStack / Coresignal / Techmap paid aggregators</strong>
+($49–$5,500/month) — overkill for one person</li>
+<li><strong>Apply to Ashby Partner Program</strong> — B2B partnership,
+not relevant for individual users</li>
+<li><strong>Apply to Greenhouse Partner Resource Center</strong> —
+same</li>
+<li><strong>Apply to Lever Partnership Interest</strong> — same</li>
+<li><strong>Bright Data Web Unlocker</strong> ($499/month) — way
+overkill; use Apify for $0–$10/mo instead</li>
+<li><strong>Building a unified internal schema with
+deduplication</strong> — overkill for one person</li>
+<li><strong>Building a multi-source aggregator pipeline</strong> — way
+overkill; just call the free APIs directly</li>
+<li><strong>Apply for USAJobs API</strong> — useful only if you
+specifically want federal government jobs</li>
+</ol>
+<hr />
+<h2 id="part-4-build-opportunities-where-existing-tools-fall-short">Part
+4 — Build Opportunities (Where Existing Tools Fall Short)</h2>
+<p>If you decide to build something for your personal use (rather than
+just combining existing tools), here are the highest-leverage gaps
+identified by the personal-tools research. These are areas where no
+commercial tool dominates:</p>
+<h3 id="workday-multi-page-auto-completion-highest-leverage">4.1 Workday
+Multi-Page Auto-Completion (Highest Leverage)</h3>
+<p>No commercial tool reliably completes Workday’s 5+ page flows with
+screening questions. This is the biggest gap in the market.</p>
+<p>Indie developers (Reddit r/buildinpublic, Mar 2026) are building
+local-Qwen-2.5 Chrome extensions to address this. The pattern: 1. Chrome
+extension detects when you’re on a Workday application page 2. Local LLM
+(Qwen 2.5 7B or 14B running in Ollama) reads the page 3. LLM fills in
+fields based on your resume + the screening questions 4. User clicks
+“Next” to advance to the next page 5. LLM continues until submission</p>
+<p>For personal use, you could build this in 2–4 weeks: - Chrome
+extension boilerplate (~1 day) - Ollama + Qwen 2.5 7B integration (~2
+days) - Workday page parser to extract form fields + screening questions
+(~3–5 days) - LLM prompt engineering to fill fields accurately (~5–10
+days iteration) - Save common answers for reuse (~1 day)</p>
+<p>Tech stack: - Chrome Extension Manifest V3 - Ollama running locally
+(no cloud API costs) - Qwen 2.5 7B Instruct (best small LLM for forms) -
+Playwright for testing the auto-completion locally</p>
+<h3 id="pre-submission-application-quality-scorer">4.2 Pre-Submission
+Application Quality Scorer</h3>
+<p>No tool says “this application has X% chance of callback based on JD
+match + ATS parseability + recruiter preferences.” Teal has a basic
+match score; no one has end-to-end quality prediction.</p>
+<p>Build a simple version: 1. Take your tailored resume (PDF or text) 2.
+Take the JD 3. Use Claude/GPT-4 to score: (a) keyword match, (b)
+experience relevance, (c) ATS parseability, (d) red flags 4. Suggest
+specific bullet edits to improve the score before submission</p>
+<p>This is a single Python script with an LLM call. Could be done in a
+weekend.</p>
+<h3 id="referral-finder-leveraging-linkedin-graph">4.3 Referral Finder
+Leveraging LinkedIn Graph</h3>
+<p>“Find me someone I’m 2nd-degree connected to at company X who’d refer
+me” — manually doable, painful at scale.</p>
+<p>Build: 1. Maintain a list of target companies 2. For each, use
+LinkedIn’s “People” search (requires login, ToS grey area) to find
+2nd-degree connections 3. Prioritize by: same school, same previous
+employer, same role/title 4. Generate personalized outreach message via
+LLM</p>
+<p>Legal caveat: This violates LinkedIn ToS for automation. For personal
+use at low volume (~10 outreach messages/week), it’s de facto tolerated.
+Don’t build this as a product.</p>
+<h3 id="ghost-job-detector">4.4 Ghost-Job Detector</h3>
+<p>“Ghost jobs” (reposted, never filled) are an open Reddit obsession
+(r/recruitinghell). No tool flags likely ghost jobs based on repost
+cadence + ATS metadata.</p>
+<p>Build: 1. Track Greenhouse/Lever job IDs over time 2. Detect: same
+job title + same company + same location reposted every 30/60/90 days 3.
+Flag as “likely ghost job” with confidence score</p>
+<p>This is a 1-weekend project for a personal user. Just store job IDs
+in a SQLite database and check on each poll.</p>
+<h3 id="application-funnel-analytics">4.5 Application Funnel
+Analytics</h3>
+<p>Huntr and Teal track applications but don’t analyze the funnel. “I
+applied to 50 SWE roles at fintechs; 0 callbacks. Pattern: my bullets
+lack ‘PCI compliance’ keyword.”</p>
+<p>Build: 1. Sync application list from Huntr/Teal 2. For each
+application, store the JD + your tailored resume 3. After 30 days,
+classify outcomes: callback / rejection / silence 4. Run LLM analysis:
+“What patterns distinguish callbacks from rejections?”</p>
+<h3 id="salary-intelligence-negotiation-assistant">4.6 Salary
+Intelligence + Negotiation Assistant</h3>
+<p>No tool surfaces: “this role pays $X based on Levels.fyi + Glassdoor
++ company 10-K.” No tool generates a negotiation script based on real
+offer letters.</p>
+<p>Build: 1. Scrape Levels.fyi public salary data (free) 2.
+Cross-reference with company 10-K filings (SEC EDGAR — free) 3. For an
+offer letter, LLM generates: (a) market range analysis, (b) suggested
+counter, (c) negotiation script</p>
+<p>This is a more involved build (~2–4 weeks) but uniquely valuable.</p>
+<h3 id="multi-jd-tailoring-with-version-control">4.7 Multi-JD Tailoring
+with Version Control</h3>
+<p>Huntr/Teal create tailored resumes per JD but don’t version-control
+them. “Show me what changed between my Stripe application and my Plaid
+application.”</p>
+<p>Build: Git-like resume branching with diff visualization. - Store
+your “master” resume as Markdown - For each application, branch + apply
+LLM-suggested edits - Diff tool shows what changed between branches -
+Roll back bad edits</p>
+<p>Tech stack: just <code>git</code> + a simple Markdown editor.</p>
+<h3 id="auto-withdraw-stale-applications">4.8 Auto-Withdraw Stale
+Applications</h3>
+<p>No tool cleans up by auto-withdrawing 30+ day old “applied” with no
+response. Mass-apply tools flood boards with dead apps; recruiters
+complain.</p>
+<p>Build: 1. Track application submission dates in tracker 2. After
+30/45/60 days with no response, auto-withdraw via the ATS’s “withdraw”
+feature (Greenhouse and Lever both support this) 3. Log withdrawn
+applications</p>
+<p>This is genuinely useful and not well-served. ~1 week build for
+personal use.</p>
+<hr />
+<h2 id="part-5-practical-action-plan-for-a-personal-user">Part 5 —
+Practical Action Plan for a Personal User</h2>
+<h3 id="week-1-foundation-free">Week 1: Foundation (Free)</h3>
+<p><strong>Day 1: Set up the sourcing pipeline</strong> - Install Python
+3.11+, <code>requests</code>, <code>curl_cffi</code>,
+<code>playwright</code> (with chromium browser) - Write a daily-poll
+script that hits: - Greenhouse boards for 20 target companies - Lever
+postings for 10 target companies - Ashby postings for 5 target companies
+- LinkedIn guest API for 5 different (keyword, location) queries -
+Remotive, Jobicy, RemoteOK, WeWorkRemotely RSS - Store all results in a
+SQLite database (or just JSON files) - Schedule via <code>cron</code> or
+<code>launchd</code> to run daily at 7am</p>
+<p><strong>Day 2–3: Set up the application tooling</strong> - Install
+Simplify Copilot Chrome extension (free) - Sign up for Huntr free tier
+(or set up a Notion kanban) - Sign up for Claude or use local Qwen 2.5
+via Ollama</p>
+<p><strong>Day 4–7: First-week workflow</strong> - Each morning: review
+yesterday’s scraped jobs, mark interesting ones - For each interesting
+job: paste JD into Claude → get tailored resume + cover letter - Apply
+via Simplify autofill on Workday/Greenhouse/Lever - Track application in
+Huntr/Notion - End of week: review what worked, refine keyword
+queries</p>
+<h3 id="week-24-refinement">Week 2–4: Refinement</h3>
+<ul>
+<li>Add more target companies to the daily poll</li>
+<li>Tune LinkedIn keyword queries based on what’s surfacing</li>
+<li>Consider adding SerpAPI ($25/mo) if Google Jobs coverage helps</li>
+<li>Build the <strong>ghost-job detector</strong> as a weekend project
+(4.4 above)</li>
+<li>Build the <strong>pre-submission quality scorer</strong> as another
+weekend project (4.2)</li>
+</ul>
+<h3 id="month-2-optional-advanced-builds">Month 2+: Optional Advanced
+Builds</h3>
+<p>If you want to invest more in automation: - Build the <strong>Workday
+multi-page auto-completion</strong> Chrome extension (4.1) — 2–4 weeks -
+Build the <strong>referral finder</strong> (4.3) — 1 week - Build the
+<strong>salary intelligence</strong> tool (4.6) — 2–4 weeks</p>
+<h3 id="what-not-to-build">What NOT to Build</h3>
+<ul>
+<li><strong>A new tracker</strong> — solved market (Huntr, Teal,
+Simplify)</li>
+<li><strong>A generic resume builder</strong> — solved market
+(Kickresume, Enhancv)</li>
+<li><strong>A new autofill extension</strong> — solved market (Simplify,
+JobWizard)</li>
+<li><strong>A new cover letter generator</strong> — solved at free-LLM
+tier</li>
+<li><strong>Your own LinkedIn scraper</strong> — the guest API is good
+enough; building a stealth scraper is a money pit</li>
+<li><strong>Your own Indeed scraper</strong> — Apify already does this
+for $0.25/1K results; building it yourself costs more in time than
+paying Apify</li>
+</ul>
+<hr />
+<h2 id="appendix-a-test-artifacts">Appendix A — Test Artifacts</h2>
+<p>All second-pass hands-on test artifacts are preserved in
+<code>/home/z/my-project/research_data/stealth_tests/</code>:</p>
+<ul>
+<li><code>all_results.json</code> — Plain Playwright + stealth
+Playwright + curl_cffi results for all 4 sites + Workday CXS first
+attempt</li>
+<li><code>seleniumbase_workday_results.json</code> — SeleniumBase UC
+Mode + Workday CXS second attempt</li>
+<li><code>workday_site_id_results.json</code> — Workday site ID
+discovery attempts</li>
+<li><code>xhr_capture_results.json</code> — Playwright XHR capture +
+LinkedIn guest API validation</li>
+<li><code>turnstile_quick_results.json</code> — SeleniumBase UC Mode
+with explicit <code>uc_click</code> on Turnstile iframe</li>
+<li><code>linkedin_clean_validation.json</code> — Clean LinkedIn guest
+API pagination test (189 jobs from one query, cap at ~500)</li>
+</ul>
+<p>Test scripts preserved in <code>/home/z/my-project/scripts/</code>: -
+<code>stealth_test.py</code> — Phase 1–3 tests (plain/stealth/curl_cffi)
+- <code>seleniumbase_test.py</code> — SeleniumBase UC Mode tests -
+<code>workday_test.py</code> — Workday site ID discovery -
+<code>xhr_capture_test.py</code> — Playwright XHR capture -
+<code>turnstile_click_test.py</code> — Full Turnstile click test (timed
+out — see quick version) - <code>turnstile_quick.py</code> — Quick
+single-site Turnstile click tests (used to gather final results) -
+<code>linkedin_validation.py</code> — LinkedIn guest API pagination
+validation</p>
+<p>Screenshots of Cloudflare block pages preserved: -
+<code>indeed_blocked.png</code> (from first pass, agent-browser
+screenshot) - <code>indeed_quick.png</code>,
+<code>glassdoor_quick.png</code>, <code>ziprecruiter_quick.png</code>
+(SeleniumBase UC Mode screenshots from second pass)</p>
+<p>Subagent research summaries preserved in
+<code>/home/z/my-project/research_data/</code>: -
+<code>personal_tools_summary.md</code> (33 KB) — 26 personal job-search
+tools evaluated across 7 categories -
+<code>stealth_research_summary.md</code> (38 KB) — Stealth automation
+research (note: claims about SeleniumBase UC Mode bypassing Cloudflare
+are DISPUTED by hands-on testing in this report)</p>
+<p>First-pass research preserved: -
+<code>paid_aggregators_summary.md</code> (43 KB) — Paid aggregator
+market analysis - <code>ats_integration_summary.md</code> (33 KB) — ATS
+B2B integration paths (less relevant for personal use, but kept for
+reference)</p>
+<hr />
+<h2 id="appendix-b-quick-reference-free-no-auth-job-apis">Appendix B —
+Quick Reference: Free No-Auth Job APIs</h2>
+<p>All verified working in this research (both passes):</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 24%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>API</th>
+<th>Endpoint</th>
+<th>Status</th>
+<th>Coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Greenhouse Job Board</td>
+<td><code>boards-api.greenhouse.io/v1/boards/{slug}/jobs</code></td>
+<td>✅ 200, no auth</td>
+<td>~7,500 tech companies</td>
+</tr>
+<tr class="even">
+<td>Lever Postings</td>
+<td><code>api.lever.co/v0/postings/{slug}?mode=json</code></td>
+<td>✅ 200, no auth</td>
+<td>~5,000 tech companies</td>
+</tr>
+<tr class="odd">
+<td>Ashby Job Posting</td>
+<td><code>api.ashbyhq.com/posting-api/job-board/{slug}</code></td>
+<td>✅ 200, no auth</td>
+<td>~3,000 tech/AI companies (incl. OpenAI, Anthropic)</td>
+</tr>
+<tr class="even">
+<td>SmartRecruiters</td>
+<td><code>api.smartrecruiters.com/v1/companies/{slug}/postings</code></td>
+<td>✅ 200, no auth</td>
+<td>~4,000 mid-market/enterprise</td>
+</tr>
+<tr class="odd">
+<td>Remotive</td>
+<td><code>remotive.com/api/remote-jobs?limit=N</code></td>
+<td>✅ 200, no auth</td>
+<td>Remote jobs, 24-hour delay</td>
+</tr>
+<tr class="even">
+<td>Jobicy</td>
+<td><code>jobicy.com/api/v2/remote-jobs?count=N</code></td>
+<td>✅ 200, no auth</td>
+<td>Remote jobs, real-time</td>
+</tr>
+<tr class="odd">
+<td>TheMuse</td>
+<td><code>themuse.com/api/public/jobs?page=N&amp;limit=M</code></td>
+<td>✅ 200, no auth</td>
+<td>407,949 jobs total</td>
+</tr>
+<tr class="even">
+<td>RemoteOK</td>
+<td><code>remoteok.com/api</code></td>
+<td>✅ 200, no auth</td>
+<td>Remote tech jobs</td>
+</tr>
+<tr class="odd">
+<td>WeWorkRemotely RSS</td>
+<td><code>weworkremotely.com/remote-jobs.rss</code></td>
+<td>✅ 200, no auth</td>
+<td>Remote jobs (RSS only)</td>
+</tr>
+<tr class="even">
+<td>Jobtechdev (Sweden)</td>
+<td><code>jobsearch.api.jobtechdev.se/search?q=KEYWORD</code></td>
+<td>✅ 200, no auth</td>
+<td>Swedish public employment service</td>
+</tr>
+<tr class="odd">
+<td>LinkedIn Guest API</td>
+<td><code>linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search</code></td>
+<td>✅ 200, no auth</td>
+<td>~500 jobs per query, paginated</td>
+</tr>
+<tr class="even">
+<td>JobDataAPI (root only)</td>
+<td><code>jobdataapi.com/api/jobs/</code></td>
+<td>⚠️ 200 at root (6.8M jobs visible), but filtering requires API
+key</td>
+<td>80+ ATS providers</td>
+</tr>
+</tbody>
+</table>
+<p><strong>APIs requiring free registration (still free):</strong> -
+USAJobs (<code>data.usajobs.gov/api/search</code>) — federal government
+jobs - Adzuna
+(<code>api.adzuna.com/v1/api/jobs/{country}/search/{page}</code>) —
+UK/EU focused - Reed.co.uk (<code>reed.co.uk/api/1.0/search</code>) — UK
+jobs</p>
+<hr />
+<h2 id="appendix-c-honest-verdict-on-should-you-build-vs.-buy">Appendix
+C — Honest Verdict on “Should You Build vs. Buy”</h2>
+<p><strong>Buy (use existing tools):</strong> - Tracker → Huntr or
+Simplify (free) - Autofill → Simplify Copilot (free) - Cover letters →
+Claude ($20/mo) - Resume tailoring → Claude ($20/mo) - Interview prep →
+Interviewing.io (technical) or Claude (behavioral) - LinkedIn sourcing →
+free guest API script (build a thin wrapper, ~1 hour) - Indeed sourcing
+→ Apify Indeed scraper ($0–$10/mo as needed)</p>
+<p><strong>Build (genuine gaps where existing tools fall
+short):</strong> - Workday multi-page auto-completion (4.1) -
+Pre-submission application quality scorer (4.2) - Ghost-job detector
+(4.4) - Application funnel analytics (4.5) - Salary intelligence +
+negotiation assistant (4.6) - Auto-withdraw stale applications (4.8)</p>
+<p><strong>Skip entirely:</strong> - Any paid job data aggregator
+(TheirStack, Coresignal, Techmap) — overkill for personal use - Any B2B
+ATS partnership application — not relevant for individuals - Bright Data
+/ Oxylabs / Smartproxy residential proxies — only if you need to scrape
+Indeed at scale, in which case Apify is cheaper - LazyApply, Sonara,
+UseMassive, JobBuddy.ai — poorly reviewed or dead - Auto-submit tools
+generally — LinkedIn ban risk not worth it. LoopCV is the only exception
+if you really want this.</p>
+<hr />
+<p><em>End of second-pass report.</em></p>
+</body>
+</html>

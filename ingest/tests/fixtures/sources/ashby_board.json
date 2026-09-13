@@ -1,0 +1,49 @@
+{
+  "organization": {
+    "organizationId": "org-uuid-1",
+    "name": "Acme Cloud",
+    "publicWebsite": "https://acme.cloud/",
+    "hostedJobsPageSlug": "acme"
+  },
+  "jobBoard": {
+    "teams": [
+      {"id": "team-1", "name": "Engineering"},
+      {"id": "team-2", "name": "Sales"}
+    ],
+    "jobPostings": [
+      {
+        "id": "11111111-2222-3333-4444-555555555555",
+        "title": "Senior Python Engineer",
+        "teamId": "team-1",
+        "locationId": "loc-1",
+        "locationName": "San Francisco",
+        "workplaceType": "Remote",
+        "employmentType": "FullTime",
+        "secondaryLocations": [{"locationId": "loc-2", "locationName": "Seattle"}],
+        "compensationTierSummary": "$180K – $220K • Offers Equity"
+      },
+      {
+        "id": "66666666-7777-8888-9999-000000000000",
+        "title": "Enterprise Account Executive",
+        "teamId": "team-2",
+        "locationId": "loc-3",
+        "locationName": "New York",
+        "workplaceType": "Hybrid",
+        "employmentType": "FullTime",
+        "secondaryLocations": [],
+        "compensationTierSummary": "$120K – $150K"
+      },
+      {
+        "id": "aaaa1111-bbbb2222-cccc3333-dddd44444444",
+        "title": "",
+        "teamId": "team-1",
+        "locationId": "loc-1",
+        "locationName": "Berlin",
+        "workplaceType": "Onsite",
+        "employmentType": "PartTime",
+        "secondaryLocations": [],
+        "compensationTierSummary": null
+      }
+    ]
+  }
+}

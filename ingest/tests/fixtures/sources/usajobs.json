@@ -1,0 +1,47 @@
+{
+ "SearchResult": {
+  "SearchResultItems": [
+   {
+    "MatchedObjectDescriptor": {
+     "PositionTitle": "IT Specialist (Python Developer)",
+     "ApplyURI": [
+      "https://www.usajobs.gov/job/771234001"
+     ],
+     "OrganizationName": "Department of Veterans Affairs",
+     "PositionLocationDisplay": "Washington, DC",
+     "PublicationStartDate": "2026-08-15T00:00:00.000Z",
+     "PositionRemuneration": [
+      {
+       "MinimumRange": "60000.00",
+       "MaximumRange": "90000.00",
+       "RateIntervalCode": "Per Year",
+       "Description": "Per Year"
+      }
+     ],
+     "UserArea": {
+      "Details": {
+       "JobSummary": "Python backend developer for federal data services. FastAPI, PostgreSQL, AWS. Telework eligible. Federal employment; US citizenship required."
+      }
+     }
+    }
+   },
+   {
+    "MatchedObjectDescriptor": {
+     "PositionTitle": "Data Scientist (Remote)",
+     "ApplyURI": [
+      "https://www.usajobs.gov/job/771234002"
+     ],
+     "OrganizationName": "National Institutes of Health",
+     "PositionLocationDisplay": "Multiple Locations; Remote eligible",
+     "PublicationStartDate": "2026-08-14T00:00:00.000Z",
+     "PositionRemuneration": [],
+     "UserArea": {
+      "Details": {
+       "JobSummary": "Data scientist supporting biomedical research. Python, pandas, scikit-learn."
+      }
+     }
+    }
+   }
+  ]
+ }
+}

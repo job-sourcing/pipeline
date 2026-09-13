@@ -1,0 +1,82 @@
+{
+  "repo": "tarunlnmiit/autopilot-jobhunt",
+  "validated_at": "2026-08-18T21:20:06Z",
+  "installation": {
+    "success": true,
+    "version": "0.4.4",
+    "errors": "Editable install (`pip install -e .[mcp]`) succeeded in a fresh venv on Python 3.12. All 80 tests pass when `mcp>=1.9,<2` is installed. KNOWN BUG: pyproject.toml only requires `mcp>=1.9` so pip resolves to `mcp-2.0.0` (current), which has removed `mcp.server.fastmcp` — `autopilot mcp` then crashes at import time. Workaround: pin `pip install 'mcp>=1.9,<2'`. Tests caught this because test_tools_and_mcp.py uses pytest.importorskip but the module raises a re-wrapped ImportError that importorskip treats as a hard failure, not a skip."
+  },
+  "scan": {
+    "success": true,
+    "companies_scanned": 3,
+    "jobs_found": 1,
+    "sample_output": "With a real but invalid TinyFish key, `autopilot scan` started cleanly on all 140 companies and hit TinyFish's live endpoint (mistral.ai/careers/) returning HTTP 401 'Invalid or expired API key'. With TinyFish stubbed (3 companies: Mistral AI, Hugging Face, DeepMind), scanner.run_scan progressed past fetch → enrich → score_jobs and produced state/last_scan.json, state/seen_jobs.json, output/jobs_2026-08-18.csv. Hardcoded time.sleep(13) between companies makes a full 140-company scan take ~30 minutes."
+  },
+  "llm_scoring": {
+    "reachable": true,
+    "prompt_excerpt": "You are evaluating job postings for a candidate. Output ONLY a JSON array, no other text.\\n\\nCANDIDATE:\\n- Test Candidate\\n- Senior ML engineer, Python, PyTorch, LLMs\\n- Seeking: Remote-friendly ML engineer role\\n- NOT suitable: junior, pure frontend\\n\\nRESUME SUMMARY:\\n# Test Candidate\\n...\\n\\nJOBS TO SCORE:\\nJOB 1:\\nCompany: Hugging Face | Location: Paris, France\\n...\\n\\nFor each job output:\\n{\\n  \\\"job_number\\\": 1,\\n  \\\"score\\\": 0-100,\\n  \\\"title\\\": \\\"extracted job title\\\",\\n  \\\"stack\\\": \\\"key tech from JD (comma-separated, max 6 items)\\\",\\n  \\\"location_remote\\\": \\\"location + remote policy\\\",\\n  \\\"reason\\\": \\\"one sentence why this fits or doesn't fit the candidate\\\",\\n  \\\"worth_applying\\\": true/false\\n}\\n\\nScoring: 80-100 near-perfect; 60-79 good fit; 40-59 partial; <40 poor.\\nSet worth_applying=true only if score >= {min_score}.\\nInclude ALL jobs. Output ONLY the JSON array.",
+    "model_used": "Default: OpenRouter 'meta-llama/llama-3.3-70b-instruct:free' with 3-model fallback chain. IMPORTANT: the project uses the OpenAI *SDK* but pointed at OpenRouter's base_url (https://openrouter.ai/api/v1), not OpenAI itself. Native providers: openrouter (default), anthropic, claude_cli (subprocess to `claude` binary).",
+    "blocked_by": "OpenRouter requires a real API key — placeholder key returned HTTP 401 'User not found' immediately (proves the call site is reachable). No OpenAI direct provider exists. The CLI exits at config-load time if TINYFISH_API_KEY is missing or a placeholder, so even the LLM call can't be reached without first satisfying TinyFish."
+  },
+  "draft": {
+    "success": true,
+    "output_files": [
+      "output/company-2026-08-18/resume_company.md",
+      "output/company-2026-08-18/cover_letter_company.md",
+      "output/company-2026-08-18/application_info.txt"
+    ],
+    "sample_content": "With TinyFish + chat_with_llm stubbed (canned but realistic LLM responses), `autopilot draft https://stripe.com/jobs/listing/...` produced three well-formatted files: (1) tailored resume mirroring JD terminology (810 bytes), (2) one-page cover letter with company-specific opening (787 bytes), (3) extracted application info (URL, requirements, nice-to-haves — 581 bytes). MINOR BUG: drafter._resolve_job hard-codes slug='company' for URL-based drafts, so output dir is always 'company-DATE' instead of '<actual-company>-DATE'. Drafting from #N (last_scan index) correctly uses the job's company slug."
+  },
+  "mcp_server": {
+    "launchable": true,
+    "tools_exposed": [
+      "scan_jobs (no args) — Scan all configured careers pages, score, send Telegram. Annotations: title='Scan & score job postings', destructive=false, openWorld=true.",
+      "draft_application (job_ref: str) — Draft tailored resume + cover letter for '#N' or URL. Annotations: title='Draft application (never applies)', destructive=false, openWorld=true.",
+      "export_jobs (min_score: int=0, days: int=0) — Export CSV with filters. Annotations: title='Export jobs to CSV', idempotent=true, openWorld=false."
+    ],
+    "notes": "Launched via `autopilot mcp` (or `python -m job_hunt.mcp_server`). Responds correctly to JSON-RPC 2.0 initialize + tools/list over stdio. Server info: name='autopilot-jobs', version='1.29.0' (this is the FastMCP library version, NOT the package version 0.4.4 — minor cosmetic mismatch). One harmless stderr warning on startup: 'pydantic_settings IncompleteFieldDefinitionWarning: Field lifespan has an incomplete definition'. Requires mcp<2 due to FastMCP API change in mcp 2.0."
+  },
+  "honest_assessment": "WHAT ACTUALLY WORKS: (1) pip install -e . works (tested in fresh venv on 3.12). (2) The 80-test pytest suite passes — well-mocked, no network in tests. (3) `autopilot init` scaffolds a working directory cleanly. (4) `autopilot export` writes a proper 10-column CSV with --min and --days filters. (5) The MCP server launches, speaks JSON-RPC 2.0, and exposes 3 well-annotated tools (verified by sending real initialize + tools/list requests and parsing responses). (6) The scanner, drafter, and notifier call sites are all reachable end-to-end with stubs (TinyFish stub → real OpenAI-SDK-at-OpenRouter call → 401 with placeholder key; TinyFish stub → LLM stub → real file output for draft). (7) Telegram notifier POSTs to api.telegram.org and correctly returns False on 401. WHAT IS MARKETING-FLAVORED: (1) README implies 'OpenAI API by default' — actually OpenRouter via OpenAI SDK; no native OpenAI provider exists. (2) README says TinyFish is 'Free — no credit card' — could not verify without signing up; placeholder key gets HTTP 401 'Invalid or expired API key' from the real endpoint. (3) 'Scans 130+ companies' is true (140 in companies.json) but the hardcoded time.sleep(13) between search queries + 2.5s per fetched URL means a full scan takes ~30+ minutes wall-clock. (4) Demo GIF is from demo/demo_run.py which uses fixtures and prints canned output — not a recording of a real scan. REAL BUGS FOUND: (1) pyproject.toml requires `mcp>=1.9` but mcp 2.0 (current) removed FastMCP — `autopilot mcp` crashes. Should be `mcp>=1.9,<2`. (2) drafter._resolve_job hard-codes slug='company' for URL drafts (output dir is always company-DATE not <company>-DATE). (3) drafter.py imports `TinyFish` from `tinyfish` package but never uses `RateLimitError` like scanner does — draft will crash hard on rate limit. REUSABLE IN OUR INTEGRATION: The job-URL discovery regex (JOB_URL_RE, ATS_JOB_RE, ATS_LISTING_RE) is gold — covers Greenhouse/Lever/Workable/SmartRecruiters/Ashby patterns. The SCORE_PROMPT template is well-designed (forces JSON-only output, includes candidate profile + resume summary + jobs batch + min_score threshold). The 140-company careers.json is a useful seed list. The MCP server's tool annotations (readOnly/destructive/idempotent/openWorld) are exemplary. The state/seens_jobs.json dedup pattern is simple and correct. BLOCKED: Real production use requires a TinyFish API key (paid per README but 'free tier' claim unverifiable) and an OpenRouter API key (free tier exists per README). Without these, scan and draft both fail at the first network call. Cron setup (setup_cron.sh) is just a shell script that adds a line to user crontab — works as advertised.",
+  "feature_mapping": {
+    "B2_career_page_scrape": {
+      "supported": true,
+      "quality": 4,
+      "notes": "Delegates to TinyFish for HTML→markdown + link extraction. Scanner has solid URL-classification regex (JOB_URL_RE / ATS_JOB_RE / ATS_LISTING_RE) covering Greenhouse, Lever, Workable, SmartRecruiters, Ashby, plus generic /jobs/N patterns. Fetch includes 2.5s/URL rate limiting. The 'ATS listing page expansion' (boards.greenhouse.io etc.) is a thoughtful touch. Not full-text scraping (TinyFish returns markdown+links), so quality depends entirely on TinyFish — opaque dependency."
+    },
+    "B9_dedup": {
+      "supported": true,
+      "quality": 4,
+      "notes": "state/seen_jobs.json persists seen URLs across runs. New URLs are filtered against seen set in discover_job_urls() before fetch+score. Per-company isolation is correct (set-based, append-only on success). History dedup at JOB_HISTORY_FILE level uses URL set membership. Simple and correct; no content-hash dedup so re-listed identical JDs at new URLs would re-score."
+    },
+    "B10_freshness": {
+      "supported": true,
+      "quality": 3,
+      "notes": "Each job gets scan_date = today UTC when scanned. JOB_HISTORY_FILE accumulates entries with scan_date. `autopilot export --days N` filters history by scan_date >= cutoff. BUT: freshness is by scan date, not by job posting date — if a 6-month-old job appears in this morning's scan, it gets today's scan_date and would appear in `--days 7`. No attempt to extract actual posted-date from JD text. Acceptable for nightly-cron model."
+    },
+    "C3_llm_scoring": {
+      "supported": true,
+      "quality": 4,
+      "notes": "Reachable end-to-end (verified: stub TinyFish → real OpenAI SDK call to OpenRouter base_url → HTTP 401 with placeholder key). Prompt is well-designed: forces JSON array only, includes candidate profile + 2500-char resume + jobs batch (1500 chars each) + min_score threshold + scoring rubric (80-100/60-79/40-59/<40). Batches 10 jobs per LLM call. Uses temperature=0.1. Has fallback model chain for OpenRouter rate limits. Result is parsed by `raw.find('[')...raw.rfind(']')+1` — robust to pre/post-amble noise but brittle to nested JSON in reason strings."
+    },
+    "E_tailoring": {
+      "supported": true,
+      "quality": 4,
+      "notes": "Verified end-to-end with stubbed LLM — three files written per draft: tailored resume (mirrors JD terminology, reorders bullets to surface relevant experience first), one-page cover letter (specific opening paragraph, 2 body paragraphs, clear close — explicit ban on 'I am excited to apply', 'I am passionate about' clichés), application_info.txt (application URL, hiring manager, deadline, requirements, nice-to-haves). Three separate LLM calls per draft with different temperatures (0.2, 0.3, 0.1). The drafter prompts explicitly forbid inventing experience. BUG: URL-mode drafts always save to output/company-DATE/ not output/<actual-company>-DATE/."
+    },
+    "M8_mcp_server": {
+      "supported": true,
+      "quality": 4,
+      "notes": "Verified launchable via `autopilot mcp` over stdio. Responds to JSON-RPC 2.0 initialize + tools/list with proper serverInfo and 3 well-annotated tools (scan_jobs, draft_application, export_jobs). ToolAnnotations include title, readOnly/destructive/idempotent/openWorld hints — exemplary. Per-parameter descriptions via Annotated[...Field(description=...)]. Clean separation: tools.py is protocol-agnostic, mcp_server.py is the FastMCP adapter. Listed on Official MCP Registry, Glama (Quality A), Smithery. BUG: requires mcp<2 due to FastMCP API change (pyproject.toml should pin)."
+    },
+    "M12_cron": {
+      "supported": true,
+      "quality": 3,
+      "notes": "setup_cron.sh adds `30 2 * * *` (2:30 AM daily) entry to user crontab running `python -m job_hunt.main scan`. Time customizable via AUTOPILOT_CRON env var. Idempotent (checks for existing entry before adding). Logs to scan.log in project dir. Adequate. No systemd timer option, no Windows Task Scheduler option, no in-app scheduling — pure cron. Acceptable for Unix-only self-hosters."
+    },
+    "M13_notifications": {
+      "supported": true,
+      "quality": 3,
+      "notes": "Telegram only — POSTs to api.telegram.org/bot{token}/sendMessage with HTML parse_mode. Verified reachable (returns False on 401 with fake token, doesn't crash). Message format includes bold company name, location pin emoji, stack wrench emoji, reason, and apply link. CRITICAL: notifications are optional and correctly skipped silently when telegram token/chat_id absent — results always persist to CSV regardless. No email, no Slack, no Discord. No retry beyond requests.post 15s timeout. send_whatsapp() function exists in notifier.py but is dead code (never called)."
+    }
+  }
+}
