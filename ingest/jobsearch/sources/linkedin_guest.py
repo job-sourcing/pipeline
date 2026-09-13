@@ -38,6 +38,13 @@ _APPLICANTS_OVER_RE = re.compile(
 _REQ_ID_RE = re.compile(
     r"Job Requisition ID[\s:]*([A-Z0-9-]{4,15})(?![A-Z0-9-])",
     re.IGNORECASE)
+# S8-E1 (audit/findings-engagement-coverage.md §f R3a): second-pass BARE
+# req token — only 65/752 indexed NVIDIA cards (8.6%) embed the anchored
+# "Job Requisition ID" label, but many more carry a bare "JR#######"
+# token in the description. 7-8 digits is NVIDIA's req shape and is
+# high-precision: 6-digit (JR123456) and 9+-digit forms deliberately do
+# NOT match, and a glued "AJR2023999" has no \b boundary before JR.
+_REQ_ID_BARE_RE = re.compile(r"\bJR\d{7,8}\b")
 _POSTED_TIME_RE = re.compile(
     r"posted-time-ago__text[^>]*>\s*([^<]+?)\s*</span>", re.DOTALL)
 
@@ -112,12 +119,22 @@ def _parse_num_applicants(html: str) -> tuple[Optional[int], str]:
 
 
 def _parse_req_id(description_text: str) -> str:
-    """Extract the 'Job Requisition ID <token>' join key if the posting's
-    description embeds one (NVIDIA does; format is company-specific).
+    """Extract the requisition-id join key if the posting's description
+    embeds one (NVIDIA does; format is company-specific).
+
+    Two passes (S8-E1): (1) the anchored "Job Requisition ID <token>"
+    pattern — company-specific, WINS on conflict; (2) a bare JR#######
+    token (7-8 digits, NVIDIA's req shape) for descriptions that carry
+    the id without the label.
+
     Run against the RAW html — clean_html strips <br> to nothing, which
-    concatenates the req token with the following word (JR2023808Job)."""
+    concatenates the req token with the following word (JR2023808Job).
+    """
     m = _REQ_ID_RE.search(description_text)
-    return m.group(1) if m else ""
+    if m:
+        return m.group(1)
+    m = _REQ_ID_BARE_RE.search(description_text)
+    return m.group(0) if m else ""
 
 
 def fetch_detail(job_id: str, cfg=None) -> dict:

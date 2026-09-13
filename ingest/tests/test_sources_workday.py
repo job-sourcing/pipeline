@@ -330,3 +330,166 @@ def test_job_source_tag_is_dotted_like_other_ats_adapters(cfg, monkeypatch):
     monkeypatch.setattr(workday, "_detail", lambda *a, **k: None)
     jobs = workday.fetch("", location="", num_results=1, cfg=cfg)
     assert jobs[0].source == "Workday.nvidia"
+
+
+# ── 2,000-cap guard + facet census (S8-E3 / S8-D 1g + gap #4) ─────────────
+
+_BOARD = ("nvidia", "wd5", "nvidiaexternalcareersite")
+
+
+def test_facet_census_and_values_shape():
+    payload = {"facets": _facets_payload()}
+    census = workday.facet_census(payload)
+    # the nested location tree flattens to real facet params only
+    assert set(census) >= {"timeType", "locationHierarchy1", "locations",
+                           "locationHierarchy2"}
+    assert set(census["timeType"][0]) == {"descriptor", "id", "count"}
+    assert workday.facet_values(payload, "locationHierarchy1") == [
+        ("United States", "USID", 1428), ("India", "INID", 243)]
+    # zero-count values stay in the census (callers filter when needed)
+    assert workday.facet_values(payload, "timeType") == [
+        ("Full time", "TTFULL", 2689), ("Part time", "TTPART", 2)]
+
+
+def test_iter_meta_exposes_facet_census(cfg):
+    first = _page_response(1, [_posting(1)])
+    _rows, meta = workday.iter_board_postings(_BOARD, {}, first, cfg=cfg,
+                                              sleep_s=0)
+    assert set(meta) >= {"complete", "total", "pages", "facets"}
+    assert meta["facets"]["timeType"][0]["id"] == "TTFULL"
+    assert meta["facets"]["locationHierarchy1"][0]["count"] == 1428
+
+
+def test_iter_capped_total_partitions_by_country(cfg, monkeypatch, capsys):
+    """S8-D 1g: total==2000 (the server's cap) → LOUD warning + per-country
+    partition fallback + union-dedupe by reqId + meta total_capped flags.
+    The capped page-0's own postings are seeded into the union."""
+    first = _page_response(2000, [_posting(i) for i in range(3)])
+    us = _page_response(5, [_posting(i) for i in range(5)])
+    india = _page_response(3, [_posting(i) for i in (3, 5, 6)])
+    rec = _Recorder([us, india])            # partition page-0s only
+    monkeypatch.setattr(workday, "fetch_json", rec)
+    rows, meta = workday.iter_board_postings(_BOARD, {}, first, cfg=cfg,
+                                             sleep_s=0)
+    # 3 seeded + US(JR0-4) + India(JR3,JR5,JR6) − dups = 7 unique reqIds
+    assert len(rows) == 7
+    assert sorted(rows) == [f"JR{i}" for i in range(7)]
+    assert meta["total_capped"] is True
+    assert meta["partition_facet"] == "locationHierarchy1"
+    assert meta["total"] == 2000            # the (capped) server claim
+    assert meta["complete"] is True
+    assert [(p["value"], p["total"]) for p in meta["partitions"]] == [
+        ("United States", 5), ("India", 3)]
+    # sub-list requests applied the partition facet id (nothing else)
+    assert rec.calls[0]["json"]["appliedFacets"] == {
+        "locationHierarchy1": ["USID"]}
+    assert rec.calls[1]["json"]["appliedFacets"] == {
+        "locationHierarchy1": ["INID"]}
+    captured = capsys.readouterr()
+    assert "CAPS" in captured.err and "2,000" in captured.err \
+        and "SILENTLY TRUNCATE" in captured.err
+    assert "capped-total recovery: 7 unique rows" in captured.out
+
+
+def test_iter_capped_sublist_raises_clear_error(cfg, monkeypatch):
+    """A partition that ALSO reports 2,000 → RuntimeError, never silent
+    recursion."""
+    first = _page_response(2000, [_posting(1)])
+    us = _page_response(2000, [_posting(1)])      # still capped!
+    rec = _Recorder([us])
+    monkeypatch.setattr(workday, "fetch_json", rec)
+    with pytest.raises(RuntimeError, match="capped at 2000 even for"):
+        workday.iter_board_postings(_BOARD, {}, first, cfg=cfg, sleep_s=0)
+
+
+def test_iter_capped_without_facet_census_raises(cfg, monkeypatch):
+    """Capped total but the page-0 carries no facet values at all → clear
+    error (cannot partition), not silent truncation."""
+    first = {"total": 2000, "jobPostings": [_posting(1)]}
+    with pytest.raises(RuntimeError, match="no unfiltered facet"):
+        workday.iter_board_postings(_BOARD, {}, first, cfg=cfg, sleep_s=0)
+
+
+def test_iter_capped_partition_respects_caller_facets(cfg, monkeypatch):
+    """Caller already filtered timeType → partition by country and the
+    sub-list facets = timeType + locationHierarchy1 (the caller's filters
+    are preserved, never re-partitioned on the same facet)."""
+    first = _page_response(2000, [_posting(1)])
+    us = _page_response(1, [_posting(1)])
+    rec = _Recorder([us])
+    monkeypatch.setattr(workday, "fetch_json", rec)
+    rows, meta = workday.iter_board_postings(
+        _BOARD, {"timeType": ["TTFULL"]}, first, cfg=cfg, sleep_s=0)
+    assert meta["partition_facet"] == "locationHierarchy1"
+    assert rec.calls[0]["json"]["appliedFacets"] == {
+        "timeType": ["TTFULL"], "locationHierarchy1": ["USID"]}
+
+
+def test_iter_capped_partition_prefers_unfiltered_param(cfg, monkeypatch):
+    """Caller filtered locationHierarchy1 → the partition walks the NEXT
+    unfiltered facet (workerSubType/jobFamilyGroup absent here → the
+    sites facet)."""
+    first = _page_response(2000, [_posting(1)])
+    site = _page_response(1, [_posting(1)])
+    rec = _Recorder([site])
+    monkeypatch.setattr(workday, "fetch_json", rec)
+    rows, meta = workday.iter_board_postings(
+        _BOARD, {"locationHierarchy1": ["USID"]}, first, cfg=cfg, sleep_s=0)
+    assert meta["partition_facet"] == "locations"
+    assert rec.calls[0]["json"]["appliedFacets"] == {
+        "locationHierarchy1": ["USID"], "locations": ["SCID"]}
+
+
+def test_iter_capped_partition_page0_failure_is_partial(cfg, monkeypatch):
+    """B1 inside the partition path: a partition page-0 network failure
+    returns (partial rows, complete=False) — never raises mid-list."""
+    first = _page_response(2000, [_posting(0), _posting(1)])
+    us = _page_response(2, [_posting(0), _posting(1)])
+    rec = _Recorder([us, RuntimeError("network died between partitions")])
+    monkeypatch.setattr(workday, "fetch_json", rec)
+    rows, meta = workday.iter_board_postings(_BOARD, {}, first, cfg=cfg,
+                                             sleep_s=0)
+    assert len(rows) == 2                 # US partition survived
+    assert meta["complete"] is False      # India partition never fetched
+    assert meta["total_capped"] is True
+    assert len(meta["partitions"]) == 1
+
+
+def test_list_board_meta_carries_boardwide_and_filtered_census(cfg,
+                                                               monkeypatch):
+    """list_board: meta['facets'] = BOARD-WIDE census (from the discovery
+    page-0, even when filters applied); meta['facets_filtered'] = the
+    caller-filtered census. Additive keys — 'complete' still first-class."""
+    p0 = _page_response(2691, [_posting(i) for i in range(20)])
+    us_facets = [
+        _facet("timeType", [("Full time", "TTFULL", 5)]),
+        _facet("locationHierarchy1", [("United States", "USID", 5)]),
+    ]
+    p0_us = {"total": 5, "jobPostings": [_posting(i) for i in range(5)],
+             "facets": us_facets, "userAuthenticated": False}
+    rec = _Recorder([p0, p0_us])
+    monkeypatch.setattr(workday, "fetch_json", rec)
+    rows, meta = workday.list_board(
+        "nvidia|wd5|nvidiaexternalcareersite", country="United States",
+        cfg=cfg, sleep_s=0)
+    assert len(rows) == 5
+    assert meta["facets"]["timeType"][0]["count"] == 2689     # board-wide
+    assert {v["descriptor"] for v in
+            meta["facets"]["locationHierarchy1"]} == {"United States",
+                                                      "India"}
+    assert meta["facets_filtered"]["timeType"][0]["count"] == 5
+    assert meta["facets_filtered"]["locationHierarchy1"] == [
+        {"descriptor": "United States", "id": "USID", "count": 5}]
+    assert meta["complete"] is True        # old keys untouched (back-compat)
+
+
+def test_list_board_unfiltered_census_from_single_page0(cfg, monkeypatch):
+    """No filters → the one page-0 IS the board-wide census; no
+    facets_filtered key is invented."""
+    rec = _Recorder([_page_response(3, [_posting(i) for i in range(3)])])
+    monkeypatch.setattr(workday, "fetch_json", rec)
+    rows, meta = workday.list_board(
+        "nvidia|wd5|nvidiaexternalcareersite", cfg=cfg, sleep_s=0)
+    assert len(rows) == 3
+    assert "facets_filtered" not in meta
+    assert meta["facets"]["locationHierarchy1"][0]["id"] == "USID"

@@ -101,7 +101,7 @@ class TestDeriveCsvRow:
     def test_column_contract(self):
         row = self._row()
         assert set(row) == set(board_dump.CSV_COLUMNS)
-        assert len(board_dump.CSV_COLUMNS) == 31   # +detailError (S7-A2)
+        assert len(board_dump.CSV_COLUMNS) == 41   # v2.1: +10 (S8-E3)
 
     def test_locations_enumerated_not_truncated(self):
         row = self._row(det={"info": _detail_info(addl=[
@@ -370,6 +370,67 @@ class TestFinishB5Statuses:
         assert other["corroborationStatus"] == "no_match"
 
 
+class TestFinishLocationTiebreak:
+    """S8-E1 (research §f R3b): phase_finish feeds the Workday detail
+    locations into the title join — for duplicated titles, the card in
+    the req's city wins even when the wrong-city card is date-closer."""
+
+    def test_same_title_reqs_get_location_correct_cards(self, tmp_path):
+        out = tmp_path / "dump"
+        rows = [_list_row(req_id="JR1", title="Field Engineer"),
+                _list_row(req_id="JR2", title="Field Engineer")]
+        board_dump._atomic_write_text(
+            out.with_suffix(".list.jsonl"),
+            "\n".join(json.dumps(r) for r in rows) + "\n")
+        details = {
+            "JR1": {"reqId": "JR1",
+                    "info": dict(_detail_info(),
+                                 location="US, CA, Santa Clara"),
+                    "hiringOrg": "x", "similarJobsCount": 0},
+            "JR2": {"reqId": "JR2",
+                    "info": dict(_detail_info(), location="US, TX, Austin"),
+                    "hiringOrg": "x", "similarJobsCount": 0},
+        }
+        board_dump._atomic_write_text(
+            out.with_suffix(".details.jsonl"),
+            "\n".join(json.dumps(details[r["reqId"]]) for r in rows)
+            + "\n")
+        # card B (Santa Clara) is 29 days staler than card A (Austin) —
+        # location overlap must beat date proximity for BOTH reqs
+        signals = [
+            {"linkedin_job_id": "A", "linkedin_url": "u/A",
+             "title": "Field Engineer", "company": "NVIDIA",
+             "location": "Austin, TX", "status": "matched",
+             "num_applicants": 40, "linkedin_posted_date": _YESTERDAY,
+             "fetched_at": "2026-09-14T00:00:00"},
+            {"linkedin_job_id": "B", "linkedin_url": "u/B",
+             "title": "Field Engineer", "company": "NVIDIA",
+             "location": "Santa Clara, CA", "status": "matched",
+             "num_applicants": 60,
+             "linkedin_posted_date":
+                 (_TODAY - _dt.timedelta(days=30)).isoformat(),
+             "fetched_at": "2026-09-14T00:00:00"},
+        ]
+        board_dump._atomic_write_text(
+            out.with_suffix(".signals.jsonl"),
+            "\n".join(json.dumps(s) for s in signals) + "\n")
+        board_dump._atomic_write_text(
+            out.with_suffix(".li_index.meta.json"),
+            json.dumps({"done": True}))
+        args = type("A", (), {"board": "nvidia|wd5|x", "company": "NVIDIA",
+                               "country": "US", "time_type": "Full time",
+                               "require_details": False})()
+        board_dump.phase_finish(args, out)
+        with open(out.with_suffix(".csv"), newline="",
+                  encoding="utf-8-sig") as f:
+            csv_rows = {r["reqId"]: r for r in csv.DictReader(f)}
+        # Santa Clara req ← Santa Clara card; Austin req ← Austin card
+        assert csv_rows["JR1"]["linkedinUrl"] == "u/B"
+        assert csv_rows["JR2"]["linkedinUrl"] == "u/A"
+        assert csv_rows["JR1"]["matchMethod"] == "title"
+        assert csv_rows["JR1"]["numApplicants"] == "60"
+
+
 # ── phase_details resumability (audit S7-B3 A3 — was untested) ────────────
 def _li_card(cid, title="Senior Engineer", company="NVIDIA") -> dict:
     """Index-card shape mirroring nvidia_us_fulltime.li_index.jsonl
@@ -502,7 +563,8 @@ def _cor_args(**over) -> object:
 
 class _RecordingProvider:
     """Provider stand-in at the corroborate.get_provider seam (records
-    every index_cards/fetch_signals call for contract assertions)."""
+    every index_cards/index_cards_partitioned/fetch_signals call for
+    contract assertions)."""
 
     name = "linkedin"
 
@@ -513,6 +575,7 @@ class _RecordingProvider:
         self._fetch = fetch
         self.fetch_exc_after = fetch_exc_after
         self.index_calls: list[dict] = []
+        self.partitioned_calls: list[dict] = []
         self.fetch_calls: list[list] = []
 
     def index_cards(self, *, company, location, max_pages, max_cards,
@@ -521,6 +584,16 @@ class _RecordingProvider:
                                  "max_pages": max_pages,
                                  "max_cards": max_cards,
                                  "start_offset": start_offset})
+        if self.index_exc:
+            raise self.index_exc
+        return self._index_cards
+
+    def index_cards_partitioned(self, *, company, slices=None,
+                                max_pages_per_slice=3, max_cards=1000):
+        self.partitioned_calls.append({
+            "company": company, "slices": slices,
+            "max_pages_per_slice": max_pages_per_slice,
+            "max_cards": max_cards})
         if self.index_exc:
             raise self.index_exc
         return self._index_cards
@@ -708,6 +781,89 @@ class TestPhaseCorroborateIndexResume:
         assert rc == 2
 
 
+class TestPhaseCorroboratePartitionedIndex:
+    """S8-E1 (research §c/§f R1): --index-mode partitioned routes the
+    index refresh through provider.index_cards_partitioned (slice
+    matrix); 'single' stays the default for back-compat."""
+
+    def test_partitioned_mode_calls_partitioned_index(self, tmp_path,
+                                                       monkeypatch):
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
+        # prior single-mode progress: card 1 already indexed; the slice
+        # matrix re-serves 1 (dupe) + new 2 — union-dedup keeps both once
+        out.with_suffix(".li_index.jsonl").write_text(
+            json.dumps(_li_card(1)) + "\n", encoding="utf-8")
+        provider = _RecordingProvider(
+            index_cards=([_li_card(1), _li_card(2)], 0, True))
+        monkeypatch.setattr(board_dump.corroborate, "get_provider",
+                            lambda name, cfg=None: provider)
+        rc = board_dump.phase_corroborate(
+            _cor_args(corroborate_index=True, index_mode="partitioned",
+                      li_slice_pages=3), out)
+        assert rc == 0
+        assert provider.index_calls == []       # single path NOT used
+        assert len(provider.partitioned_calls) == 1
+        call = provider.partitioned_calls[0]
+        assert call["company"] == "NVIDIA"
+        assert call["max_pages_per_slice"] == 3
+        assert call["max_cards"] \
+            == board_dump.corroborate.PARTITIONED_MAX_CARDS
+        assert call["slices"] is None      # provider derives the matrix
+        cards = [json.loads(x) for x in
+                 out.with_suffix(".li_index.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        assert [c["id"] for c in cards] == ["1", "2"]
+        meta = json.loads(
+            out.with_suffix(".li_index.meta.json").read_text())
+        assert meta["mode"] == "partitioned"
+        assert meta["done"] is True
+        assert meta["offset"] == 0          # slices restart at 0 on re-run
+        assert meta["cards"] == 2
+
+    def test_default_single_mode_untouched(self, tmp_path, monkeypatch):
+        """Back-compat: args WITHOUT index_mode (old callers / fixtures)
+        still route through index_cards with the meta resume offset."""
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
+        provider = _RecordingProvider(
+            index_cards=([_li_card(5)], 10, False))
+        monkeypatch.setattr(board_dump.corroborate, "get_provider",
+                            lambda name, cfg=None: provider)
+        rc = board_dump.phase_corroborate(
+            _cor_args(corroborate_index=True), out)   # no index_mode key
+        assert rc == 0
+        assert provider.partitioned_calls == []
+        assert len(provider.index_calls) == 1
+        assert provider.index_calls[0]["start_offset"] == 0
+        meta = json.loads(
+            out.with_suffix(".li_index.meta.json").read_text())
+        assert meta["mode"] == "single"
+
+    def test_partitioned_blocked_page0_marks_meta(self, tmp_path,
+                                                   monkeypatch):
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
+        out.with_suffix(".li_index.meta.json").write_text(
+            json.dumps({"offset": 0, "done": False}), encoding="utf-8")
+        provider = _RecordingProvider(
+            index_exc=board_dump.corroborate.CorroborationBlocked(
+                "429 wall"))
+        monkeypatch.setattr(board_dump.corroborate, "get_provider",
+                            lambda name, cfg=None: provider)
+        rc = board_dump.phase_corroborate(
+            _cor_args(corroborate_index=True, index_mode="partitioned"),
+            out)
+        assert rc == 0                         # blocked ≠ fatal (B5)
+        meta = json.loads(
+            out.with_suffix(".li_index.meta.json").read_text())
+        assert meta["blocked"] is True
+        assert provider.fetch_calls == []       # signals pointless w/o index
+
+
 # ── RAW-preservation pin (audit S7-B3 A8 — fixture-fidelity drift) ────────
 RAW_DIR = REPO_ROOT / "ingest" / "data" / "workday"
 RAW_STEM = RAW_DIR / "nvidia_us_fulltime"
@@ -818,3 +974,603 @@ class TestRawFidelity:
             "remote" in loc.lower() for loc in expected)
         # stateCodes dedup across primary+additional
         assert row["stateCodes"] == board_dump._state_codes(expected)
+
+
+# ── v2.1 helpers: slug reqId/repost counter + deadline parsing (S8-E3) ────
+
+class TestSlugHelpers:
+    def test_req_id_from_slug(self):
+        assert board_dump._slug_req_id(
+            "/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/"
+            "Senior-Software-Engineer_JR2024930-1") == "JR2024930"
+        assert board_dump._slug_req_id(
+            "/job/US-CA-Santa-Clara/Engineer_JR2026001") == "JR2026001"
+        assert board_dump._slug_req_id("/job/Engineer") == ""
+        assert board_dump._slug_req_id("") == ""
+
+    def test_repost_count_from_slug(self):
+        # real suffix shapes from the 09-09 dump (148×-1, 2×-2, 1×-3)
+        assert board_dump._slug_repost_count(
+            "/job/Applied-AI-Engineer_JR2018179-3") == 3
+        assert board_dump._slug_repost_count(
+            "/job/US-CA-Santa-Clara/Engineer_JR2026001") == 0
+        # a number INSIDE the title is not a suffix — only the trailing
+        # -N on the reqId token counts
+        assert board_dump._slug_repost_count(
+            "/job/Title--With-42_JR2026001") == 0
+        assert board_dump._slug_repost_count("/job/Engineer") == 0
+        assert board_dump._slug_repost_count("") == 0
+
+
+class TestApplicationDeadline:
+    def test_primary_phrasing(self):
+        # the board's standard sentence (1337/1360 real rows)
+        desc = ("NVIDIA is hiring for this team. The minimum salary is "
+                "listed. Applications for this job will be accepted at "
+                "least until April 11, 2026. NVIDIA is an equal opportunity "
+                "employer.")
+        assert board_dump._parse_application_deadline(desc) == "2026-04-11"
+
+    def test_variant_phrasing(self):
+        assert board_dump._parse_application_deadline(
+            "Applications are accepted until May 1, 2026.") == "2026-05-01"
+
+    def test_wrapped_sentence(self):
+        # clean text can wrap mid-sentence (html_to_text line breaks)
+        assert board_dump._parse_application_deadline(
+            "Applications for this job will be accepted at least until\n"
+            "September 30, 2026.") == "2026-09-30"
+
+    def test_absent(self):
+        assert board_dump._parse_application_deadline("No dates here.") == ""
+        assert board_dump._parse_application_deadline("") == ""
+
+
+# ── v2.1 CSV columns (S8-C §7 / S8-D gap #5) ──────────────────────────────
+
+def _v21_row(start="2026-09-08", end_date=None, req_id="JR2026001",
+             suffix="", snapshot="2026-09-13", facet_tags=None,
+             desc=None):
+    r = _list_row(req_id=req_id)
+    r["externalPath"] = f"/job/US-CA-Santa-Clara/Engineer_{req_id}{suffix}"
+    info = _detail_info(startDate=start,
+                        desc=desc if desc is not None else "<p>Build.</p>")
+    if end_date is not None:
+        info["endDate"] = end_date
+    det = {"info": info, "hiringOrg": "2100 NVIDIA USA", "similarJobsCount": 0}
+    return board_dump._derive_csv_row(
+        r, det, None, "NVIDIA", snapshot, snapshot,
+        facet_tags=facet_tags, snapshot_date=snapshot)
+
+
+class TestV21Columns:
+    def test_watch_seed_constant(self):
+        # 2026-09-09 = the board-watch's first observation (S8-C §7.2)
+        assert board_dump.WATCH_SEED.isoformat() == "2026-09-09"
+
+    def test_days_on_market_uses_snapshot_date(self):
+        row = _v21_row(start="2026-09-08", snapshot="2026-09-13")
+        assert row["daysOnMarket"] == 5
+        assert row["daysOnMarketBasis"] == "startDate"
+        # postingAgeDays stays the CURRENT-epoch age (same computation
+        # while the only evidence is startDate — semantics documented)
+        assert row["postingAgeDays"] == row["daysOnMarket"]
+
+    def test_days_on_market_missing_start_date(self):
+        row = _v21_row(start="")
+        assert row["daysOnMarket"] == ""
+        assert row["daysOnMarketBasis"] == ""
+        assert row["censored"] == "true"    # no evidence = pure lower bound
+
+    def test_censored_seed_boundary(self):
+        # startDate < 2026-09-09 → age is a lower bound only
+        assert _v21_row(start="2026-09-08")["censored"] == "true"
+        # startDate == the seed → observed from (possible) birth onward
+        assert _v21_row(start="2026-09-09")["censored"] == "false"
+        assert _v21_row(start="2026-09-10")["censored"] == "false"
+
+    def test_end_date_passthrough(self):
+        assert _v21_row(end_date="2026-11-30")["endDate"] == "2026-11-30"
+        assert _v21_row()["endDate"] == ""
+
+    def test_repost_count_from_slug(self):
+        assert _v21_row(suffix="-3")["repostCount"] == 3
+        assert _v21_row()["repostCount"] == 0
+
+    def test_last_reset_date_reserved_empty(self):
+        assert _v21_row()["lastResetDate"] == ""
+
+    def test_deadline_from_description_text(self):
+        desc = ("<p>Applications for this job will be accepted at least "
+                "until December 31, 2026.</p>")
+        row = _v21_row(desc=desc, snapshot="2026-09-13")
+        assert row["applicationDeadline"] == "2026-12-31"
+        assert row["daysLeftToApply"] == 109
+
+    def test_deadline_falls_back_to_structured_end_date(self):
+        row = _v21_row(desc="<p>No deadline sentence.</p>",
+                       end_date="2026-11-30", snapshot="2026-09-13")
+        assert row["applicationDeadline"] == "2026-11-30"
+        assert row["daysLeftToApply"] == 78
+
+    def test_text_deadline_preferred_over_end_date(self):
+        desc = "<p>Applications are accepted until September 20, 2026.</p>"
+        row = _v21_row(desc=desc, end_date="2026-11-30",
+                       snapshot="2026-09-13")
+        assert row["applicationDeadline"] == "2026-09-20"
+        assert row["daysLeftToApply"] == 7
+
+    def test_no_deadline_at_all(self):
+        row = _v21_row(desc="<p>Nothing.</p>")
+        assert row["applicationDeadline"] == ""
+        assert row["daysLeftToApply"] == ""
+
+    def test_facet_tag_columns(self):
+        tags = {"JR2026001": {"workerSubType": "Intern (Fixed Term)",
+                              "jobFamilyGroup": "Engineering"}}
+        row = _v21_row(facet_tags=tags)
+        assert row["workerSubType"] == "Intern (Fixed Term)"
+        assert row["jobFamilyGroup"] == "Engineering"
+        # absent tags / phase never run → empty columns
+        row = _v21_row(facet_tags={"JR9999": {"workerSubType": "X"}})
+        assert row["workerSubType"] == ""
+        assert row["jobFamilyGroup"] == ""
+
+    def test_snapshot_date_defaults_to_today(self):
+        row = board_dump._derive_csv_row(
+            _list_row(), {"info": _detail_info(), "hiringOrg": "x",
+                          "similarJobsCount": 0}, None, "NVIDIA",
+            _TODAY_ISO, _TODAY_ISO)
+        assert row["daysOnMarket"] == row["postingAgeDays"]
+
+
+# ── similarJobs capture in phase_details (S8-D gap #1) ────────────────────
+
+class TestSimilarJobsCapture:
+    def _payload(self, similar):
+        return {"jobPostingInfo": _detail_info(),
+                "hiringOrganization": {"name": "2100 NVIDIA USA"},
+                "similarJobs": similar}
+
+    def _run(self, tmp_path, monkeypatch, similar):
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
+        monkeypatch.setattr(board_dump.workday, "detail_payload",
+                            lambda b, p, c: self._payload(similar))
+        rc = board_dump.phase_details(_det_args(), out)
+        assert rc == 0
+        return json.loads(out.with_suffix(".details.jsonl").read_text(
+            encoding="utf-8").splitlines()[0])
+
+    def test_capture_trims_entries_with_derived_reqids(self, tmp_path,
+                                                       monkeypatch):
+        similar = [
+            {"title": "Senior Engineer",
+             "externalPath": "/x/job/US-CA/Senior-Engineer_JR9",
+             "timeType": "Full time", "locationsText": "US, CA, Santa Clara",
+             "postedOn": "Posted 3 Days Ago", "startDate": "2026-09-10"},
+            {"title": "Staff Engineer",
+             "externalPath": "/x/job/US-CA/Staff-Engineer_JR10-2"},
+            {"title": "No Slug Entry"},
+        ]
+        rec = self._run(tmp_path, monkeypatch, similar)
+        assert rec["similarJobsCount"] == 3       # the count keeps RAW truth
+        assert rec["similarJobs"] == [
+            {"reqId": "JR9", "title": "Senior Engineer",
+             "externalPath": "/x/job/US-CA/Senior-Engineer_JR9"},
+            {"reqId": "JR10", "title": "Staff Engineer",
+             "externalPath": "/x/job/US-CA/Staff-Engineer_JR10-2"},
+            {"reqId": "", "title": "No Slug Entry", "externalPath": None},
+        ]
+
+    def test_capture_bounds_at_five_entries(self, tmp_path, monkeypatch):
+        similar = [{"title": f"T{i}", "externalPath": f"/x/job/T{i}_JR{i}"}
+                   for i in range(7)]
+        rec = self._run(tmp_path, monkeypatch, similar)
+        assert rec["similarJobsCount"] == 7       # raw count preserved
+        assert len(rec["similarJobs"]) == 5       # list bounded (API cap)
+
+
+# ── finish: similar_edges.jsonl + facet-tag join + census report ──────────
+
+def _finish_args(**over):
+    base = {"board": "nvidia|wd5|x", "company": "NVIDIA", "country": "US",
+            "time_type": "Full time", "require_details": False}
+    base.update(over)
+    return type("A", (), base)()
+
+
+def _write_dump_files(out, req_ids=("JR1", "JR2"), similar_by_req=None):
+    board_dump._atomic_write_text(
+        out.with_suffix(".list.jsonl"),
+        "\n".join(json.dumps(_list_row(req_id=rid)) for rid in req_ids)
+        + "\n")
+    det_lines = []
+    for rid in req_ids:
+        det = {"reqId": rid, "info": _detail_info(), "hiringOrg": "x",
+               "similarJobsCount": 0}
+        if similar_by_req and rid in similar_by_req:
+            det["similarJobs"] = similar_by_req[rid]
+            det["similarJobsCount"] = len(similar_by_req[rid])
+        det_lines.append(json.dumps(det))
+    board_dump._atomic_write_text(out.with_suffix(".details.jsonl"),
+                                  "\n".join(det_lines) + "\n")
+
+
+class TestFinishEdges:
+    def test_edges_file_rank_and_skip_unidentifiable(self, tmp_path):
+        out = tmp_path / "dump"
+        _write_dump_files(out, similar_by_req={
+            "JR1": [{"reqId": "JR9", "title": "Senior Engineer",
+                     "externalPath": "/x/JR9"},
+                    {"reqId": "JR10", "title": "Staff Engineer",
+                     "externalPath": "/x/JR10"}],
+            "JR2": [{"reqId": "", "title": "No Slug",
+                     "externalPath": None},
+                    {"reqId": "JR9", "title": "Senior Engineer",
+                     "externalPath": "/x/JR9"}],
+        })
+        rc = board_dump.phase_finish(_finish_args(), out)
+        assert rc == 0
+        edges = [json.loads(l) for l in
+                 out.with_suffix(".similar_edges.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        assert edges == [
+            {"reqId": "JR1", "similar_reqId": "JR9",
+             "similar_title": "Senior Engineer", "rank": 1},
+            {"reqId": "JR1", "similar_reqId": "JR10",
+             "similar_title": "Staff Engineer", "rank": 2},
+            # the unidentifiable entry is skipped; rank still reflects
+            # the ORIGINAL list position (2nd entry → rank 2)
+            {"reqId": "JR2", "similar_reqId": "JR9",
+             "similar_title": "Senior Engineer", "rank": 2},
+        ]
+        report = out.with_suffix(".report.txt").read_text()
+        assert "similar-job edges: 3" in report
+        payload = json.loads(out.with_suffix(".json").read_text())
+        assert payload["similar_edges"] == 3
+
+    def test_no_similar_jobs_yields_empty_edges_file(self, tmp_path):
+        out = tmp_path / "dump"
+        _write_dump_files(out)
+        board_dump.phase_finish(_finish_args(), out)
+        edges_path = out.with_suffix(".similar_edges.jsonl")
+        assert edges_path.exists()
+        assert edges_path.read_text(encoding="utf-8").strip() == ""
+        assert "similar-job edges: 0" in \
+            out.with_suffix(".report.txt").read_text()
+
+
+class TestFinishFacetTags:
+    def _finish(self, tmp_path, tag_lines=None):
+        out = tmp_path / "dump"
+        _write_dump_files(out, req_ids=("JR1", "JR2"))
+        if tag_lines is not None:
+            board_dump._atomic_write_text(
+                out.with_suffix(".facet_tags.jsonl"),
+                "\n".join(json.dumps(t) for t in tag_lines) + "\n")
+        rc = board_dump.phase_finish(_finish_args(), out)
+        assert rc == 0
+        with open(out.with_suffix(".csv"), newline="",
+                  encoding="utf-8-sig") as f:
+            csv_rows = {r["reqId"]: r for r in csv.DictReader(f)}
+        report = out.with_suffix(".report.txt").read_text()
+        return csv_rows, report
+
+    def test_tags_joined_onto_csv_and_reported(self, tmp_path):
+        csv_rows, report = self._finish(tmp_path, tag_lines=[
+            {"reqId": "JR1", "workerSubType": "Intern (Fixed Term)"},
+            {"reqId": "JR2", "workerSubType": "Regular Employee"},
+            {"facetDone": "workerSubType",
+             "value": "Intern (Fixed Term)"},
+            {"reqId": "JR1", "jobFamilyGroup": "Engineering"},
+            {"facetDone": "jobFamilyGroup", "value": "Engineering"},
+        ])
+        assert csv_rows["JR1"]["workerSubType"] == "Intern (Fixed Term)"
+        assert csv_rows["JR1"]["jobFamilyGroup"] == "Engineering"
+        assert csv_rows["JR2"]["workerSubType"] == "Regular Employee"
+        assert csv_rows["JR2"]["jobFamilyGroup"] == ""   # untagged → empty
+        assert "facet-tagged rows: workerSubType=2 jobFamilyGroup=1" \
+            in report
+
+    def test_absent_file_leaves_columns_empty(self, tmp_path):
+        csv_rows, report = self._finish(tmp_path, tag_lines=None)
+        assert csv_rows["JR1"]["workerSubType"] == ""
+        assert csv_rows["JR1"]["jobFamilyGroup"] == ""
+        assert "facet-tagged rows" not in report
+
+    def test_duplicate_tag_lines_are_last_wins(self, tmp_path):
+        csv_rows, _ = self._finish(tmp_path, tag_lines=[
+            {"reqId": "JR1", "workerSubType": "Regular Employee"},
+            {"reqId": "JR1", "workerSubType": "Intern (Fixed Term)"},
+        ])
+        assert csv_rows["JR1"]["workerSubType"] == "Intern (Fixed Term)"
+
+
+# ── phase_list: facet census persistence + capped-total status (S8-E3) ────
+
+def _cxs_post(rid: str, title: str = "Engineer") -> dict:
+    """A raw CXS list-card (the shape _page returns in jobPostings)."""
+    return {"title": f"{title} {rid}", "externalPath": f"/job/E_{rid}",
+            "locationsText": "US, CA, Santa Clara",
+            "postedOn": "Posted Today", "bulletFields": [rid]}
+
+
+class TestPhaseListFacetCensus:
+    def test_facets_json_persisted_boardwide_plus_filtered(self, tmp_path,
+                                                           monkeypatch):
+        discovery = {"total": 10, "jobPostings": [_cxs_post("JR1"),
+                                                  _cxs_post("JR2")],
+                     "facets": [
+                         {"facetParameter": "locationHierarchy1",
+                          "values": [
+                              {"descriptor": "United States", "id": "USID",
+                               "count": 2},
+                              {"descriptor": "India", "id": "INID",
+                               "count": 8}]},
+                         {"facetParameter": "timeType", "values": [
+                             {"descriptor": "Full time", "id": "TTFULL",
+                              "count": 10}]},
+                     ]}
+        filtered = {"total": 2, "jobPostings": [_cxs_post("JR1"),
+                                                  _cxs_post("JR2")],
+                     "facets": [
+                         {"facetParameter": "locationHierarchy1",
+                          "values": [
+                              {"descriptor": "United States", "id": "USID",
+                               "count": 2}]},
+                         {"facetParameter": "timeType", "values": [
+                             {"descriptor": "Full time", "id": "TTFULL",
+                              "count": 2}]},
+                     ]}
+
+        def fake_page(board, facets, offset, cfg):
+            if offset == 0 and not facets:
+                return discovery
+            if offset == 0 and facets == {"locationHierarchy1": ["USID"]}:
+                return filtered
+            raise AssertionError(f"unexpected page call {facets}@{offset}")
+
+        monkeypatch.setattr(board_dump.workday, "_page", fake_page)
+        args = type("A", (), {"board": "nvidia|wd5|x",
+                              "country": "United States",
+                              "time_type": "", "sleep": 0})()
+        out = tmp_path / "out"
+        rc = board_dump.phase_list(args, out)
+        assert rc == 0
+        census = json.loads(out.with_suffix(".facets.json").read_text())
+        assert census["scope"] == "board"
+        assert census["appliedFacets"] == {
+            "locationHierarchy1": "United States"}
+        # board-wide counts survive even though the dump is US-filtered
+        assert census["facets"]["locationHierarchy1"] == [
+            {"descriptor": "United States", "id": "USID", "count": 2},
+            {"descriptor": "India", "id": "INID", "count": 8}]
+        # …and the within-filter census is kept alongside
+        assert census["facets_filtered"]["timeType"] == [
+            {"descriptor": "Full time", "id": "TTFULL", "count": 2}]
+        status = json.loads(out.with_suffix(".list.status").read_text())
+        assert status == {"rows": 2, "total": 2, "complete": True,
+                          "pages": 1}
+
+
+class TestPhaseListCappedTotal:
+    def test_capped_board_partitions_and_records_status(self, tmp_path,
+                                                        monkeypatch,
+                                                        capsys):
+        """Integration: a 2,000-capped board flows through the partition
+        fallback — .list.status records total_capped/partitions, the list
+        file carries the recovered union, facets.json is still written."""
+        def fake_page(board, facets, offset, cfg):
+            if offset == 0 and not facets:
+                return {"total": 2000, "jobPostings": [_cxs_post("JR0")],
+                        "facets": [
+                            {"facetParameter": "locationHierarchy1",
+                             "values": [
+                                 {"descriptor": "United States",
+                                  "id": "USID", "count": 5},
+                                 {"descriptor": "India", "id": "INID",
+                                  "count": 3}]}]}
+            if facets == {"locationHierarchy1": ["USID"]}:
+                return {"total": 5,
+                        "jobPostings": [_cxs_post(f"JR{i}")
+                                        for i in range(5)]}
+            if facets == {"locationHierarchy1": ["INID"]}:
+                return {"total": 3, "jobPostings": [
+                    _cxs_post("JR3"), _cxs_post("JR5"), _cxs_post("JR6")]}
+            raise AssertionError(f"unexpected page call {facets}@{offset}")
+
+        monkeypatch.setattr(board_dump.workday, "_page", fake_page)
+        args = type("A", (), {"board": "nvidia|wd5|x", "country": "",
+                              "time_type": "", "sleep": 0})()
+        out = tmp_path / "out"
+        rc = board_dump.phase_list(args, out)
+        assert rc == 0
+        status = json.loads(out.with_suffix(".list.status").read_text())
+        assert status["rows"] == 7             # 5 US + 3 India − 1 overlap
+        assert status["total"] == 2000         # the capped server claim
+        assert status["total_capped"] is True
+        assert status["partition_facet"] == "locationHierarchy1"
+        assert status["complete"] is True
+        assert len(status["partitions"]) == 2
+        list_rows = [json.loads(l) for l in
+                     out.with_suffix(".list.jsonl").read_text(
+                         encoding="utf-8").splitlines()]
+        assert len(list_rows) == 7
+        assert len({r["reqId"] for r in list_rows}) == 7
+        # the loud warning + recovery note are surfaced by the phase
+        err = capsys.readouterr().err
+        assert "CAPS" in err
+        census = json.loads(out.with_suffix(".facets.json").read_text())
+        assert census["total"] == 2000
+
+
+# ── phase: tagfacets (S8-D gaps #2/#3) ────────────────────────────────────
+
+def _tag_args(**over):
+    base = {"board": "nvidia|wd5|x", "country": "United States",
+            "time_type": "Full time", "sleep": 0}
+    base.update(over)
+    return type("A", (), base)()
+
+
+def _tag_facets_payload() -> list[dict]:
+    return [
+        {"facetParameter": "locationHierarchy1", "values": [
+            {"descriptor": "United States", "id": "USID", "count": 3}]},
+        {"facetParameter": "timeType", "values": [
+            {"descriptor": "Full time", "id": "TTFULL", "count": 3}]},
+        {"facetParameter": "workerSubType", "values": [
+            {"descriptor": "Intern (Fixed Term)", "id": "WS1", "count": 2},
+            {"descriptor": "Regular Employee", "id": "WS2", "count": 1}]},
+        {"facetParameter": "jobFamilyGroup", "values": [
+            {"descriptor": "Engineering", "id": "JF1", "count": 3}]},
+    ]
+
+
+class TestPhaseFacetTags:
+    def _fake_page(self, calls):
+        def fake_page(board, facets, offset, cfg):
+            calls.append(dict(facets))
+            if offset == 0 and not facets:
+                return {"total": 3, "jobPostings": [_cxs_post("JRX")],
+                        "facets": _tag_facets_payload()}
+            sub = {"locationHierarchy1": ["USID"], "timeType": ["TTFULL"]}
+            if facets == {**sub, "workerSubType": ["WS1"]}:
+                return {"total": 2, "jobPostings": [_cxs_post("JR1"),
+                                                    _cxs_post("JR2")]}
+            if facets == {**sub, "workerSubType": ["WS2"]}:
+                return {"total": 1, "jobPostings": [_cxs_post("JR3")]}
+            if facets == {**sub, "jobFamilyGroup": ["JF1"]}:
+                return {"total": 3, "jobPostings": [
+                    _cxs_post("JR1"), _cxs_post("JR2"), _cxs_post("JR3")]}
+            raise AssertionError(f"unexpected facets {facets}")
+        return fake_page
+
+    def _lines(self, out):
+        return [json.loads(l) for l in
+                out.with_suffix(".facet_tags.jsonl").read_text(
+                    encoding="utf-8").splitlines()]
+
+    def test_tags_written_with_completion_markers(self, tmp_path,
+                                                  monkeypatch):
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
+        calls: list = []
+        monkeypatch.setattr(board_dump.workday, "_page",
+                            self._fake_page(calls))
+        rc = board_dump.phase_facet_tags(_tag_args(), out)
+        assert rc == 0
+        lines = self._lines(out)
+        row_lines = [l for l in lines if "reqId" in l]
+        markers = [l for l in lines if "facetDone" in l]
+        assert row_lines == [
+            {"reqId": "JR1", "workerSubType": "Intern (Fixed Term)"},
+            {"reqId": "JR2", "workerSubType": "Intern (Fixed Term)"},
+            {"reqId": "JR3", "workerSubType": "Regular Employee"},
+            {"reqId": "JR1", "jobFamilyGroup": "Engineering"},
+            {"reqId": "JR2", "jobFamilyGroup": "Engineering"},
+            {"reqId": "JR3", "jobFamilyGroup": "Engineering"},
+        ]
+        assert {(m["facetDone"], m["value"]) for m in markers} == {
+            ("workerSubType", "Intern (Fixed Term)"),
+            ("workerSubType", "Regular Employee"),
+            ("jobFamilyGroup", "Engineering")}
+        # every sub-list carried the dump's facets + the tag facet
+        sub_calls = [c for c in calls if c]
+        assert all(c["locationHierarchy1"] == ["USID"]
+                   and c["timeType"] == ["TTFULL"] for c in sub_calls)
+
+    def test_resume_skips_done_pairs(self, tmp_path, monkeypatch):
+        """A crash mid-value leaves rows without a marker — the pair is
+        RE-RUN (harmless duplicate rows, last-wins at join); completed
+        pairs (marker present) are never re-fetched."""
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
+        # prior run completed the WS1 pair (rows + marker)
+        board_dump._atomic_write_text(
+            out.with_suffix(".facet_tags.jsonl"),
+            json.dumps({"reqId": "JR1", "workerSubType":
+                        "Intern (Fixed Term)"}) + "\n" +
+            json.dumps({"reqId": "JR2", "workerSubType":
+                        "Intern (Fixed Term)"}) + "\n" +
+            json.dumps({"facetDone": "workerSubType",
+                        "value": "Intern (Fixed Term)"}) + "\n")
+        calls: list = []
+        monkeypatch.setattr(board_dump.workday, "_page",
+                            self._fake_page(calls))
+        rc = board_dump.phase_facet_tags(_tag_args(), out)
+        assert rc == 0
+        # only WS2 + JF1 sub-lists were fetched this run
+        sub_facets = [c for c in calls if c]
+        assert [c.get("workerSubType") or c.get("jobFamilyGroup")
+                for c in sub_facets] == [["WS2"], ["JF1"]]
+        lines = self._lines(out)
+        # the WS1 rows are NOT duplicated (pair skipped wholesale)
+        ws1_rows = [l for l in lines
+                    if l.get("workerSubType") == "Intern (Fixed Term)"]
+        assert len(ws1_rows) == 2
+
+    def test_no_list_file_is_clean_error(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(board_dump.workday, "_page",
+                            self._fake_page([]))
+        rc = board_dump.phase_facet_tags(_tag_args(), tmp_path / "nope")
+        assert rc == 2
+
+    def test_unknown_country_is_clean_error(self, tmp_path, monkeypatch):
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
+        monkeypatch.setattr(board_dump.workday, "_page", self._fake_page([]))
+        rc = board_dump.phase_facet_tags(_tag_args(country="Atlantis"), out)
+        assert rc == 2
+
+    def test_board_without_tag_facets_stays_silent(self, tmp_path,
+                                                   monkeypatch):
+        """No workerSubType/jobFamilyGroup on the board → no sub-lists, no
+        file, rc 0 (finish leaves the columns empty)."""
+        def fake_page(board, facets, offset, cfg):
+            return {"total": 1, "jobPostings": [_cxs_post("JR1")],
+                    "facets": [
+                        {"facetParameter": "locationHierarchy1",
+                         "values": [{"descriptor": "United States",
+                                     "id": "USID", "count": 1}]}]}
+        monkeypatch.setattr(board_dump.workday, "_page", fake_page)
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
+        rc = board_dump.phase_facet_tags(
+            _tag_args(country="United States", time_type=""), out)
+        assert rc == 0
+        # no tag facets → no sub-lists; at most an empty file is created
+        # (finish reads zero tags off it → empty columns either way)
+        tag_path = out.with_suffix(".facet_tags.jsonl")
+        assert not tag_path.exists() or tag_path.read_text(
+            encoding="utf-8").strip() == ""
+
+    def test_tagfacets_end_to_end_into_csv(self, tmp_path, monkeypatch):
+        """list → tagfacets → finish (no corroborate): the tags land in the
+        CSV columns — the optional-phase back-compat contract."""
+        out = tmp_path / "dump"
+        board_dump._atomic_write_text(
+            out.with_suffix(".list.jsonl"),
+            "\n".join(json.dumps(_list_row(req_id=rid))
+                      for rid in ("JR1", "JR2")) + "\n")
+        calls: list = []
+        monkeypatch.setattr(board_dump.workday, "_page",
+                            self._fake_page(calls))
+        rc = board_dump.phase_facet_tags(_tag_args(), out)
+        assert rc == 0
+        _write_dump_files(out, req_ids=("JR1", "JR2"))
+        rc = board_dump.phase_finish(_finish_args(), out)
+        assert rc == 0
+        with open(out.with_suffix(".csv"), newline="",
+                  encoding="utf-8-sig") as f:
+            csv_rows = {r["reqId"]: r for r in csv.DictReader(f)}
+        assert csv_rows["JR1"]["workerSubType"] == "Intern (Fixed Term)"
+        assert csv_rows["JR2"]["workerSubType"] == "Intern (Fixed Term)"
+        assert csv_rows["JR1"]["jobFamilyGroup"] == "Engineering"
+        assert csv_rows["JR2"]["jobFamilyGroup"] == "Engineering"

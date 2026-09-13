@@ -84,7 +84,7 @@ jobs:
           #    main mid-leg — the checkpoint commit then clobbered it. Config
           #    is data: it comes from the freshly-reset tree = latest main.)
           mkdir -p /tmp/watch_state
-          for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json'; do
+          for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
             cp ingest/data/board_watch/$pat /tmp/watch_state/ 2>/dev/null || true
           done
           # 2) race-proof re-commit on latest main (SKILL §A3 recipe)
@@ -95,7 +95,7 @@ jobs:
             git fetch origin || true
             git reset --hard origin/main
             # restore ONLY the state files — config.json stays at latest main
-            for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json'; do
+            for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
               cp /tmp/watch_state/$pat ingest/data/board_watch/ 2>/dev/null || true
             done
             git add ingest/data/board_watch
@@ -105,7 +105,10 @@ jobs:
               break
             fi
             NEW=$(python3 -c "import json,pathlib; d=pathlib.Path('ingest/data/board_watch'); lines=[l for p in sorted(d.glob('*.newposts.jsonl')) for l in p.read_text(encoding='utf-8').splitlines() if l.strip()]; recs=[]; [recs.append(json.loads(l)) for l in lines if not l.strip().startswith('#')]; print(len({r.get('reqId') for r in recs if r}))" 2>/dev/null || echo 0)
-            git commit -m "board-watch checkpoint: +${NEW:-0} new postings [skip ci]"
+            # S8-E2: repost events detected by the watch (label resets +
+            # startDate moves) — count of lines in the append-only log
+            REPOSTS=$(python3 -c "import pathlib; d=pathlib.Path('ingest/data/board_watch'); print(sum(1 for p in sorted(d.glob('*.reposts.jsonl')) for l in p.read_text(encoding='utf-8').splitlines() if l.strip().startswith('{')))" 2>/dev/null || echo 0)
+            git commit -m "board-watch checkpoint: +${NEW:-0} new postings, ${REPOSTS:-0} repost events [skip ci]"
             if git push; then push_ok=1; break; fi
             echo "push attempt $i failed — refetching and retrying"
             sleep 5

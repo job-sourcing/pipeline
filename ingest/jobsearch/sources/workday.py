@@ -16,10 +16,20 @@ CXS quirks — ALL verified live on nvidia.wd5 (S5-2 pilot):
   duplicates!) — bound the loop by the FIRST page's ``total``.
 - near the end of the result set the per-page ``total`` reports 0 — never
   trust it after page 1.
+- ``total`` is CAPPED at exactly 2,000 (S8-D quirk 1g, live-verified
+  2026-09-13: no-facet reports 2,000 while three independent facet-count
+  sums agree the true NVIDIA board = 2,657) — any board/facet-set with
+  ≥2,000 postings would SILENTLY TRUNCATE under plain pagination.
+  ``iter_board_postings`` guards this: a page-0 total of exactly 2,000
+  triggers a facet-partitioned fallback (union-dedupe by reqId).
 - server-side filters via ``appliedFacets`` keyed by facet parameter with
   facet-value IDs discovered from the first page's ``facets`` payload:
   ``locationHierarchy1`` (countries, e.g. "United States" id …32d8),
   ``timeType`` ("Full time" / "Part time" ids).
+- the page-0 ``facets`` payload carries per-value COUNTS for every facet
+  (countries, sites, Office/Remote, timeType, workerSubType,
+  jobFamilyGroup) — the board-composition census, exposed via
+  ``facet_census``/``facet_values`` and ``iter_board_postings`` meta.
 - detail: ``GET {cxs_base}{externalPath}`` → ``jobPostingInfo`` with
   title / location / additionalLocations / startDate (ISO) / timeType /
   jobDescription (HTML) / externalUrl (canonical apply link) / jobReqId.
@@ -34,6 +44,7 @@ from __future__ import annotations
 
 import html as html_mod
 import re
+import sys
 import time
 from typing import Optional
 
@@ -51,10 +62,21 @@ _MAX_PAGES = 60           # 60 × 20 = 1,200 list rows scanned per board —
                           # enough for any single-company keyword search
 _DETAIL_SLEEP_S = 0.35    # courtesy pacing for detail GETs
 
+# S8-D quirk 1g: the CXS `total` field is CAPPED at exactly 2,000 — a
+# board/facet-set with more postings reports 2,000 and plain pagination
+# silently truncates (NVIDIA no-facet: reported 2,000, true 2,657).
+_CAPPED_TOTAL = 2000
+
 # Facet-parameter names on the CXS response (verified nvidia.wd5).
 _FACET_COUNTRY = "locationHierarchy1"
 _FACET_LOC_TYPE = "locationHierarchy2"   # Office / Remote — the remote facet
 _FACET_TIME = "timeType"
+
+# Facet parameters usable to partition a capped listing back to
+# exhaustiveness (preference order — countries first: verified live that
+# every single-country filter stays below the cap on nvidia.wd5).
+_PARTITION_FACETS = (_FACET_COUNTRY, "workerSubType", "jobFamilyGroup",
+                     "locations", _FACET_LOC_TYPE, _FACET_TIME)
 
 # tenant → display company name (title() is wrong for these)
 _COMPANY_DISPLAY = {"nvidia": "NVIDIA"}
@@ -101,6 +123,37 @@ def _flatten_facets(payload: dict) -> list[dict]:
             if isinstance(v, dict) and v.get("facetParameter"):
                 stack.append(v)
     return flat
+
+
+def facet_census(payload: dict) -> dict[str, list[dict]]:
+    """Flatten a page-0 payload's facet blocks into
+    ``{facetParameter: [{"descriptor", "id", "count"}, …]}`` — the
+    board-composition census (S8-D gap #4: per-value counts for countries /
+    sites / Office-Remote / timeType / workerSubType / jobFamilyGroup,
+    previously discarded by every consumer). Counts reflect whatever
+    filters the given page-0 payload carried."""
+    census: dict[str, list[dict]] = {}
+    for f in _flatten_facets(payload):
+        param = f.get("facetParameter")
+        if not param:
+            continue
+        for v in f.get("values") or []:
+            if not (isinstance(v, dict) and v.get("descriptor") is not None):
+                continue      # nested facet-group placeholders
+            census.setdefault(param, []).append({
+                "descriptor": v.get("descriptor"),
+                "id": v.get("id"),
+                "count": int(v.get("count") or 0),
+            })
+    return census
+
+
+def facet_values(payload: dict, param: str) -> list[tuple[str, str, int]]:
+    """``[(descriptor, facet_id, count)]`` for one facet parameter from a
+    page-0 payload — the enumeration input for facet-partitioned listing
+    (the 2,000-cap recovery) and facet tagging."""
+    return [(v["descriptor"], v["id"], v["count"])
+            for v in facet_census(payload).get(param, [])]
 
 
 def _facet_id(payload: dict, param: str, label: str) -> Optional[str]:
@@ -430,31 +483,25 @@ def resolve_facets(board: tuple[str, str, str], first: dict,
     return facets
 
 
-def iter_board_postings(board: tuple[str, str, str], facets: dict,
-                        first: dict, cfg: Optional[Config] = None,
-                        sleep_s: float = 0.2,
-                        progress_every: int = 0,
-                        progress_label: str = "list"
-                        ) -> tuple[dict[str, dict], dict]:
-    """THE exhaustive CXS listing primitive (single source of truth — was
-    copy-drifted 4x across board_dump/watch/dump_board/workday_dump;
-    the timeType-facet bug shipped from that drift, S7-B1 SA-1).
-
-    Contract:
-    - adaptive offset (advances by len(page postings), never a fixed step
-      — pages can return <limit; a fixed step SKIPS cards)
-    - dedup by reqId (the offset-past-total WRAP returns duplicates)
-    - total-driven stop, trusting ONLY page-0's total (near-end pages
-      report total=0)
-    - rows carry reqId + canonical url + company display name
-    - B1 semantics: complete=True only when pagination ended naturally;
-      a mid-list network failure returns (partial rows, complete=False) —
-      NEVER raises mid-list (a partial listing must never be read as
-      exhaustive)
-    Returns (rows: {reqId: row}, meta: {"complete", "total", "pages"}).
-    """
-    cfg = cfg or Config()
+def _row_of(board: tuple[str, str, str], p: dict) -> tuple[str, dict]:
+    """One CXS list posting → (reqId, row) with company + canonical url."""
     tenant, instance, site = board
+    rid = (p.get("bulletFields") or [None])[0] \
+        or p.get("externalPath", "")
+    row = dict(p)
+    row["reqId"] = rid
+    row["company"] = company_display(tenant)
+    row["url"] = (f"{_board_base_url(tenant, instance, site)}"
+                  f"{p.get('externalPath', '')}")
+    return rid, row
+
+
+def _paginate(board: tuple[str, str, str], facets: dict, first: dict,
+              cfg: Config, sleep_s: float, progress_every: int,
+              progress_label: str) -> tuple[dict[str, dict], dict]:
+    """The plain total-bounded pagination loop (page-0 total trusted,
+    adaptive offset, reqId dedup, B1 partial-never-raise). No 2,000-cap
+    guard — callers needing it go through ``iter_board_postings``."""
     total = int(first.get("total") or 0)
     rows: dict[str, dict] = {}
     offset, pages = 0, 0
@@ -462,15 +509,9 @@ def iter_board_postings(board: tuple[str, str, str], facets: dict,
     while True:
         pages += 1
         for p in postings:
-            rid = (p.get("bulletFields") or [None])[0] \
-                or p.get("externalPath", "")
+            rid, row = _row_of(board, p)
             if rid in rows:
                 continue                      # wrap-past-total duplicate
-            row = dict(p)
-            row["reqId"] = rid
-            row["company"] = company_display(tenant)
-            row["url"] = (f"{_board_base_url(tenant, instance, site)}"
-                          f"{p.get('externalPath', '')}")
             rows[rid] = row
         if progress_every and pages % progress_every == 0:
             print(f"[{progress_label}] {len(rows)}/{total} rows "
@@ -491,6 +532,134 @@ def iter_board_postings(board: tuple[str, str, str], facets: dict,
                   "total": total, "pages": pages}
 
 
+def _iter_partitioned(board: tuple[str, str, str], facets: dict,
+                      first: dict, cfg: Config, sleep_s: float,
+                      progress_every: int, progress_label: str
+                      ) -> tuple[dict[str, dict], dict]:
+    """Capped-total recovery (S8-D 1g): enumerate the board as a UNION of
+    per-facet-value sub-lists, each below the 2,000 cap, deduped by reqId.
+
+    Partition facet = the first candidate parameter the caller has NOT
+    already filtered (countries first — every country filter verified
+    < 2,000 on nvidia.wd5). Sub-list facets = caller's facets + one value.
+    Bounded: a sub-list that ALSO reports 2,000 raises RuntimeError —
+    never recurses silently. A partition page-0 network failure follows
+    B1 (partial rows, complete=False), never raises mid-list.
+    """
+    total = int(first.get("total") or 0)
+    values_by_param = {
+        p: [v for v in facet_values(first, p) if v[2]]
+        for p in _PARTITION_FACETS}
+    param = next((p for p in _PARTITION_FACETS
+                  if p not in facets and values_by_param[p]), None)
+    if param is None:
+        raise RuntimeError(
+            f"CXS total is capped at {_CAPPED_TOTAL} and no unfiltered "
+            f"facet with values is available to partition by — cannot "
+            f"enumerate this board exhaustively; narrow the caller's "
+            f"facets (e.g. per-country) and retry")
+    rows: dict[str, dict] = {}
+    pages = 0
+    complete = True
+    partitions: list[dict] = []
+    # seed with the capped page-0's own postings (definitely on the board;
+    # partitions re-serve them — setdefault keeps the first sighting, and
+    # they survive even if a later partition page-0 fails per B1)
+    for p in first.get("jobPostings") or []:
+        rid, row = _row_of(board, p)
+        rows.setdefault(rid, row)
+    for descriptor, vid, _count in values_by_param[param]:
+        sub_facets = dict(facets)
+        sub_facets[param] = [vid]
+        try:
+            sub_first = _page(board, sub_facets, 0, cfg)
+        except Exception:                   # B1: partial, never raise
+            complete = False
+            break
+        sub_total = int(sub_first.get("total") or 0)
+        if sub_total == _CAPPED_TOTAL:
+            raise RuntimeError(
+                f"CXS total is capped at {_CAPPED_TOTAL} even for "
+                f"partition {param}={descriptor!r} — per-value "
+                f"partitioning cannot enumerate this board; narrow the "
+                f"caller's facets (e.g. per-country dumps) and retry")
+        sub_rows, sub_meta = _paginate(
+            board, sub_facets, sub_first, cfg, sleep_s, progress_every,
+            f"{progress_label}[{param}={descriptor}]")
+        pages += sub_meta["pages"]
+        complete = complete and sub_meta["complete"]
+        before = len(rows)
+        for rid, row in sub_rows.items():
+            rows.setdefault(rid, row)       # union-dedupe by reqId
+        partitions.append({"facet": param, "value": descriptor,
+                           "total": sub_total, "rows": len(sub_rows),
+                           "new": len(rows) - before})
+        print(f"[{progress_label}] partition {param}={descriptor}: "
+              f"{sub_total} total, +{len(rows) - before} new "
+              f"({len(rows)} accumulated)", flush=True)
+        time.sleep(sleep_s)
+    print(f"[{progress_label}] capped-total recovery: {len(rows)} unique "
+          f"rows via {len(partitions)} {param} partitions (sub-total sum "
+          f"{sum(p['total'] for p in partitions)})", flush=True)
+    return rows, {"complete": complete, "total": total, "pages": pages,
+                  "total_capped": True, "partition_facet": param,
+                  "partitions": partitions}
+
+
+def iter_board_postings(board: tuple[str, str, str], facets: dict,
+                        first: dict, cfg: Optional[Config] = None,
+                        sleep_s: float = 0.2,
+                        progress_every: int = 0,
+                        progress_label: str = "list",
+                        board_facets: Optional[dict] = None,
+                        ) -> tuple[dict[str, dict], dict]:
+    """THE exhaustive CXS listing primitive (single source of truth — was
+    copy-drifted 4x across board_dump/watch/dump_board/workday_dump;
+    the timeType-facet bug shipped from that drift, S7-B1 SA-1).
+
+    Contract:
+    - adaptive offset (advances by len(page postings), never a fixed step
+      — pages can return <limit; a fixed step SKIPS cards)
+    - dedup by reqId (the offset-past-total WRAP returns duplicates)
+    - total-driven stop, trusting ONLY page-0's total (near-end pages
+      report total=0)
+    - rows carry reqId + canonical url + company display name
+    - B1 semantics: complete=True only when pagination ended naturally;
+      a mid-list network failure returns (partial rows, complete=False) —
+      NEVER raises mid-list (a partial listing must never be read as
+      exhaustive)
+    - 2,000-cap guard (S8-D 1g): a page-0 total of EXACTLY 2,000 means
+      the server capped the count — plain pagination would silently
+      truncate. Logs a LOUD warning, sets meta["total_capped"]=True and
+      falls back to facet-partitioned enumeration (per value of the first
+      facet parameter the caller has NOT filtered — countries first),
+      union-deduped by reqId. A partition that ALSO reports 2,000 raises
+      RuntimeError (never recurses silently).
+    - meta["facets"]: the page-0 facet census ({param: [{descriptor, id,
+      count}]}). Board-wide when invoked via ``list_board`` (which passes
+      the discovery page-0's census); the caller-filtered census is
+      additionally exposed as meta["facets_filtered"] by ``list_board``.
+      Additive keys — old consumers see only complete/total/pages.
+    Returns (rows: {reqId: row}, meta: {"complete", "total", "pages"}).
+    """
+    cfg = cfg or Config()
+    total = int(first.get("total") or 0)
+    if total == _CAPPED_TOTAL:
+        print(f"[{progress_label}] WARNING: page-0 total is exactly "
+              f"{_CAPPED_TOTAL} — the CXS server CAPS `total` at 2,000 "
+              f"(S8-D quirk 1g): plain pagination would SILENTLY TRUNCATE "
+              f"this listing. Falling back to facet-partitioned "
+              f"enumeration …", file=sys.stderr, flush=True)
+        rows, meta = _iter_partitioned(board, facets, first, cfg, sleep_s,
+                                       progress_every, progress_label)
+    else:
+        rows, meta = _paginate(board, facets, first, cfg, sleep_s,
+                               progress_every, progress_label)
+    meta["facets"] = (board_facets if board_facets is not None
+                      else facet_census(first))
+    return rows, meta
+
+
 def list_board(spec: str, *, country: Optional[str] = None,
                time_type: Optional[str] = None,
                cfg: Optional[Config] = None, sleep_s: float = 0.2,
@@ -500,16 +669,26 @@ def list_board(spec: str, *, country: Optional[str] = None,
     """Convenience: parse spec → page-0 → resolve facets → refetch →
     iter. ValueError on unknown facet; (partial, complete=False) on
     mid-list failure; page-0 fetch errors propagate to the caller.
-    Returns (rows, meta: {"complete", "total", "pages"})."""
+    Returns (rows, meta: {"complete", "total", "pages", "facets"
+    [, "facets_filtered"[, "total_capped", …]]}) — meta["facets"] is the
+    BOARD-WIDE census from the discovery page-0 (even when filters are
+    applied); meta["facets_filtered"] carries the caller-filtered census
+    when facets were applied (both additive, S8-D gap #4)."""
     cfg = cfg or Config()
     board = parse_board(spec)
     first = _page(board, {}, 0, cfg)
     facets = resolve_facets(board, first, country, time_type)
+    board_facets = facet_census(first)
+    iter_first = first
     if facets:
-        first = _page(board, facets, 0, cfg)
-    return iter_board_postings(board, facets, first, cfg=cfg,
-                               sleep_s=sleep_s,
-                               progress_every=progress_every)
+        iter_first = _page(board, facets, 0, cfg)
+    rows, meta = iter_board_postings(
+        board, facets, iter_first, cfg=cfg, sleep_s=sleep_s,
+        progress_every=progress_every, progress_label=progress_label,
+        board_facets=board_facets)
+    if facets:
+        meta["facets_filtered"] = facet_census(iter_first)
+    return rows, meta
 
 
 def dump_board(spec: str, *, country: Optional[str] = None,

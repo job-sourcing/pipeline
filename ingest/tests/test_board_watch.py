@@ -13,6 +13,12 @@ Covers (per design-board-v2.md D4 + review addenda):
   while unenriched remain AND legs remain
 - digest shape: NEW lines w/ applicants, GONE lines, header counts
 - seed_state: B3 seeding + refuses to clobber an existing state
+- S8-E2 repost/days-on-market detector (audit findings-recency.md §7/§8):
+  postedOn parser buckets, Pacific run-date rule, R1 label-regression
+  FP guards (aging vs 30→30+ vs 30+→small, +1d tolerance, unparseable),
+  startDate-move channel, R2 bounded re-fetch (cap 5/leg + budget stop),
+  reposts.jsonl event-log record shape, state schema round-trip with
+  old-format rows, REPOSTED digest section + alerts on repost-only days.
 """
 from __future__ import annotations
 
@@ -20,6 +26,7 @@ import importlib.util
 import json
 import sys
 import time
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -835,3 +842,638 @@ class TestWatchJoinOneToOne:
         # 2 cards, 3 same-family reqs → at most 2 matched, no sharing
         assert len(out) <= 2
         assert len({id(s) for s in out.values()}) == len(out)
+
+
+# ═════════════════════════════════════════════════════════════════════════
+# S8-E2: repost / days-on-market detector (audit findings-recency.md §7/§8)
+# ═════════════════════════════════════════════════════════════════════════
+RUN_DATE = date(2026, 9, 13)          # fixed PT run date for pure tests
+
+
+def _prior(rid: str, label: str, last_seen: str = "2026-09-12",
+           last_startDate: str = "", **extra) -> dict:
+    """A state row in the CURRENT PRODUCTION schema (old-format for the
+    S8-E2 fields: no implied_post_date / startDate_first — the exact
+    shape of the 1,395 committed nvidia_us_fulltime.state.jsonl rows)."""
+    row = {"reqId": rid, "title": f"Role {rid}", "first_seen": "2026-09-01",
+           "last_seen": last_seen, "last_postedOn": label,
+           "last_startDate": last_startDate}
+    row.update(extra)
+    return row
+
+
+def _cur(rid: str, label: str, title: str = None) -> dict:
+    """A current LIST row carrying a specific postedOn label (real labels
+    from the committed state file: 'Posted Yesterday', 'Posted N Days
+    Ago', 'Posted 30+ Days Ago')."""
+    r = _post(rid, title or f"Role {rid}")
+    r["postedOn"] = label
+    return r
+
+
+def _read_jsonl(path: Path) -> list[dict]:
+    return [json.loads(x) for x in
+            path.read_text(encoding="utf-8").splitlines() if x.strip()]
+
+
+# ── postedOn parser ──────────────────────────────────────────────────────
+class TestPostedOnParser:
+    def test_yesterday(self):
+        assert watch.parse_posted_on("Posted Yesterday") == 1
+
+    def test_n_days_ago(self):
+        assert watch.parse_posted_on("Posted 3 Days Ago") == 3
+        # singular form + case-insensitivity
+        assert watch.parse_posted_on("posted 1 day ago") == 1
+        # "Posted Today" exists in the list-card label set (bucket 0)
+        assert watch.parse_posted_on("Posted Today") == 0
+
+    def test_open_bucket_30_plus(self):
+        v = watch.parse_posted_on("Posted 30+ Days Ago")
+        assert v == watch.OPEN_BUCKET       # censored sentinel (< 0)
+        assert v is not None                # …but PARSEABLE (≠ unparseable)
+        # the CLOSED bucket 30 is a plain number — 30 → 30+ is normal aging
+        assert watch.parse_posted_on("Posted 30 Days Ago") == 30
+
+    def test_unparseable_returns_none(self):
+        for bad in ("", "Posted Recently", "30+", "New", "Posted 30+ Days",
+                    "Posted About A Month Ago"):
+            assert watch.parse_posted_on(bad) is None, bad
+
+
+# ── implied post date + the Pacific timezone rule (audit §7.4) ───────────
+class TestImpliedPostDate:
+    def test_run_date_minus_bucket(self):
+        assert watch.implied_post_date(3, RUN_DATE) == date(2026, 9, 10)
+        assert watch.implied_post_date(0, RUN_DATE) == RUN_DATE
+
+    def test_open_and_unparseable_are_censored(self):
+        assert watch.implied_post_date(watch.OPEN_BUCKET, RUN_DATE) is None
+        assert watch.implied_post_date(None, RUN_DATE) is None
+
+
+class TestPtRunDate:
+    def test_cron_0645z_is_pre_pt_rollover(self):
+        # THE production case (audit §7.4): 06:45Z is 23:45/22:45 PT the
+        # PREVIOUS day — a UTC run date would skew every implied date by
+        # exactly 1 day, every single day
+        assert watch._to_pt_date(
+            datetime(2026, 9, 13, 6, 45, tzinfo=timezone.utc)) \
+            == date(2026, 9, 12)          # PDT (UTC−7)
+        assert watch._to_pt_date(
+            datetime(2026, 12, 13, 6, 45, tzinfo=timezone.utc)) \
+            == date(2026, 12, 12)         # PST (UTC−8)
+
+    def test_afternoon_utc_same_pt_date(self):
+        assert watch._to_pt_date(
+            datetime(2026, 9, 13, 18, 0, tzinfo=timezone.utc)) \
+            == date(2026, 9, 13)
+
+    def test_run_date_smoke(self):
+        assert isinstance(watch._pt_run_date(), date)
+
+
+# ── R1: label-regression detector (pure) ─────────────────────────────────
+class TestDetectReposts:
+    def test_normal_aging_21_to_22_not_a_regression(self):
+        prior = {"JR1": _prior("JR1", "Posted 21 Days Ago")}
+        cur = {"JR1": _cur("JR1", "Posted 22 Days Ago")}
+        assert watch.detect_reposts(cur, prior, RUN_DATE) == []
+
+    def test_30_to_30plus_is_aging_never_a_regression(self):
+        prior = {"JR1": _prior("JR1", "Posted 30 Days Ago")}
+        cur = {"JR1": _cur("JR1", "Posted 30+ Days Ago")}
+        assert watch.detect_reposts(cur, prior, RUN_DATE) == []
+
+    def test_open_to_open_censored_no_flag(self):
+        prior = {"JR1": _prior("JR1", "Posted 30+ Days Ago")}
+        cur = {"JR1": _cur("JR1", "Posted 30+ Days Ago")}
+        assert watch.detect_reposts(cur, prior, RUN_DATE) == []
+
+    def test_dramatic_regression_30plus_to_2d(self):
+        # audit §4's headline case (9 rows in 4 days): impossible without
+        # a reset — the req exited the censored bucket downward
+        prior = {"JR2008226": _prior("JR2008226", "Posted 30+ Days Ago")}
+        cur = {"JR2008226": _cur("JR2008226", "Posted 2 Days Ago")}
+        flags = watch.detect_reposts(cur, prior, RUN_DATE)
+        assert len(flags) == 1
+        ev = flags[0]
+        assert ev["reqId"] == "JR2008226"
+        assert ev["prev_implied"] is None        # OPEN is censored
+        assert ev["new_implied"] == "2026-09-11"  # 09-13 − 2d
+        assert ev["confidence"] == "label"
+        assert ev["label_reset"] is True
+        assert (ev["label_from"], ev["label_to"]) == ("30+d", "2d")
+        assert ev["prev_startDate"] == ""
+
+    def test_one_day_tolerance_absorbed(self):
+        # implied date moved forward by exactly +1 (a 1-day label stall) —
+        # boundary rounding, NOT a repost
+        prior = {"JR1": _prior("JR1", "Posted 3 Days Ago")}   # 09-12−3
+        cur = {"JR1": _cur("JR1", "Posted 3 Days Ago")}       # 09-13−3
+        assert watch.detect_reposts(cur, prior, RUN_DATE) == []
+
+    def test_two_day_jump_flags(self):
+        # 3d→2d overnight: the posting got a day YOUNGER while a day
+        # passed → startDate moved ~2 days forward → flag
+        prior = {"JR1": _prior("JR1", "Posted 3 Days Ago")}
+        cur = {"JR1": _cur("JR1", "Posted 2 Days Ago")}
+        flags = watch.detect_reposts(cur, prior, RUN_DATE)
+        assert len(flags) == 1
+        assert flags[0]["prev_implied"] == "2026-09-09"
+        assert flags[0]["new_implied"] == "2026-09-11"
+
+    def test_real_case_23d_to_2d(self):
+        # audit §4: "Posted 23 Days Ago" → "Posted 2 Days Ago" (JR2017846)
+        prior = {"JR2017846": _prior("JR2017846", "Posted 23 Days Ago",
+                                     last_startDate="2026-08-17")}
+        cur = {"JR2017846": _cur("JR2017846", "Posted 2 Days Ago")}
+        flags = watch.detect_reposts(cur, prior, RUN_DATE)
+        assert len(flags) == 1
+        assert flags[0]["label_from"] == "23d"
+        assert flags[0]["label_to"] == "2d"
+        assert flags[0]["prev_startDate"] == "2026-08-17"
+        assert flags[0]["externalPath"] == "/job/JR2017846"  # R2 needs it
+
+    def test_unparseable_labels_never_flag(self):
+        for prev_l, new_l in [("Posted Recently", "Posted 2 Days Ago"),
+                              ("Posted 23 Days Ago", "Posted Fresh"),
+                              ("", "Posted 2 Days Ago")]:
+            prior = {"JR1": _prior("JR1", prev_l)}
+            cur = {"JR1": _cur("JR1", new_l)}
+            assert watch.detect_reposts(cur, prior, RUN_DATE) == [], \
+                (prev_l, new_l)
+
+    def test_new_and_gone_rows_are_not_compared(self):
+        prior = {"JRGONE": _prior("JRGONE", "Posted 30 Days Ago")}
+        cur = {"JRNEW": _cur("JRNEW", "Posted 2 Days Ago")}
+        assert watch.detect_reposts(cur, prior, RUN_DATE) == []
+
+    def test_row_without_last_seen_or_implied_skipped(self):
+        prior = {"JR1": {"reqId": "JR1", "title": "T",
+                         "last_postedOn": "Posted 21 Days Ago"}}
+        cur = {"JR1": _cur("JR1", "Posted 2 Days Ago")}
+        assert watch.detect_reposts(cur, prior, RUN_DATE) == []
+
+    def test_stored_implied_post_date_preferred_over_last_seen(self):
+        # stored 09-08 → new 09-10 = +2 → flag; the last_seen fallback
+        # (09-09, +1) would have stayed silent — pinned: stored wins
+        prior = {"JR1": dict(_prior("JR1", "Posted 3 Days Ago"),
+                             implied_post_date="2026-09-08")}
+        cur = {"JR1": _cur("JR1", "Posted 3 Days Ago")}
+        flags = watch.detect_reposts(cur, prior, RUN_DATE)
+        assert len(flags) == 1
+        assert flags[0]["prev_implied"] == "2026-09-08"
+
+
+# ── startDate-move channel ───────────────────────────────────────────────
+class TestDetectStartDateMoves:
+    def test_moved_later_is_high_confidence_event(self):
+        prior = {"JR2017846": _prior("JR2017846", "Posted 23 Days Ago",
+                                     last_startDate="2026-08-17")}
+        cur = {"JR2017846": _cur("JR2017846", "Posted 2 Days Ago")}
+        evs = watch.detect_start_date_moves(
+            cur, prior, {"JR2017846": "2026-09-11"}, RUN_DATE)
+        assert len(evs) == 1
+        ev = evs[0]
+        assert ev["confidence"] == "high"
+        assert ev["prev_startDate"] == "2026-08-17"
+        assert ev["new_startDate"] == "2026-09-11"
+        assert ev["start_delta_days"] == 25
+        assert ev["label_reset"] is False    # startDate channel only
+        # label context fields still carried (uniform record shape)
+        assert ev["prev_postedOn"] == "Posted 23 Days Ago"
+
+    def test_equal_start_date_is_not_an_event(self):
+        prior = {"JR1": _prior("JR1", "Posted 4 Days Ago",
+                               last_startDate="2026-09-08")}
+        cur = {"JR1": _cur("JR1", "Posted 5 Days Ago")}
+        assert watch.detect_start_date_moves(
+            cur, prior, {"JR1": "2026-09-08"}, RUN_DATE) == []
+
+    def test_backwards_move_is_a_data_bug_not_an_event(self, capsys):
+        prior = {"JR1": _prior("JR1", "Posted 4 Days Ago",
+                               last_startDate="2026-08-17")}
+        cur = {"JR1": _cur("JR1", "Posted 5 Days Ago")}
+        assert watch.detect_start_date_moves(
+            cur, prior, {"JR1": "2026-01-01"}, RUN_DATE) == []
+        assert "BACKWARD" in capsys.readouterr().err   # logged loudly
+
+    def test_missing_prev_start_date_skipped(self):
+        prior = {"JR1": _prior("JR1", "Posted 4 Days Ago")}   # no startDate
+        cur = {"JR1": _cur("JR1", "Posted 5 Days Ago")}
+        assert watch.detect_start_date_moves(
+            cur, prior, {"JR1": "2026-09-11"}, RUN_DATE) == []
+
+
+# ── R2: bounded detail re-fetch ──────────────────────────────────────────
+class TestRefetchRepostDetails:
+    @staticmethod
+    def _flag(rid: str, prev_sd: str = "") -> dict:
+        return {"reqId": rid, "title": f"Role {rid}",
+                "detected_at": "2026-09-13T06:45:00",
+                "prev_postedOn": "Posted 30+ Days Ago",
+                "new_postedOn": "Posted 2 Days Ago",
+                "prev_implied": None, "new_implied": "2026-09-11",
+                "prev_startDate": prev_sd, "confidence": "label",
+                "externalPath": f"/job/{rid}",
+                "label_reset": True, "label_from": "30+d",
+                "label_to": "2d", "start_delta_days": None}
+
+    def test_six_flagged_only_five_fetched(self, monkeypatch):
+        monkeypatch.setattr(watch, "REPOST_REFETCH_SLEEP", 0.0)
+        calls: list = []
+
+        def fake_detail(board, path, cfg):
+            calls.append(path)
+            return {"jobPostingInfo": {"startDate": "2026-09-12"}}
+
+        monkeypatch.setattr(watch.workday, "detail_payload", fake_detail)
+        flags = [self._flag(f"JR{i}") for i in range(1, 7)]
+        events, updates = watch.refetch_repost_details(
+            flags, "nvidia|wd5|site", Config(), time.monotonic() + 60)
+        assert calls == [f"/job/JR{i}" for i in range(1, 6)]  # capped at 5
+        assert len(events) == 6            # all 6 events still logged
+        assert len(updates) == 5
+        # the unfetched 6th stays label-confidence, no startDate
+        sixth = next(e for e in events if e["reqId"] == "JR6")
+        assert "new_startDate" not in sixth
+        assert sixth["confidence"] == "label"
+
+    def test_moved_start_date_upgrades_to_high(self, monkeypatch):
+        monkeypatch.setattr(watch, "REPOST_REFETCH_SLEEP", 0.0)
+        monkeypatch.setattr(watch.workday, "detail_payload",
+                            lambda b, p, c: {
+                                "jobPostingInfo": {
+                                    "startDate": "2026-09-12"}})
+        # the audit's live-verified case: JR2008226 2026-01-09 → 2026-09-12
+        flags = [self._flag("JR2008226", prev_sd="2026-01-09")]
+        events, updates = watch.refetch_repost_details(
+            flags, "nvidia|wd5|x", Config(), time.monotonic() + 60)
+        ev = events[0]
+        assert ev["confidence"] == "high"
+        assert ev["new_startDate"] == "2026-09-12"
+        assert ev["start_delta_days"] == 246
+        assert updates == {"JR2008226": "2026-09-12"}
+
+    def test_unchanged_start_date_stays_label_confidence(self, monkeypatch):
+        monkeypatch.setattr(watch, "REPOST_REFETCH_SLEEP", 0.0)
+        monkeypatch.setattr(watch.workday, "detail_payload",
+                            lambda b, p, c: {
+                                "jobPostingInfo": {
+                                    "startDate": "2026-08-17"}})
+        flags = [self._flag("JR1", prev_sd="2026-08-17")]
+        events, updates = watch.refetch_repost_details(
+            flags, "nvidia|wd5|x", Config(), time.monotonic() + 60)
+        assert events[0]["confidence"] == "label"   # no move, not confirmed
+        assert events[0]["new_startDate"] == "2026-08-17"  # still recorded
+        assert updates == {"JR1": "2026-08-17"}
+
+    def test_unreachable_detail_stays_label(self, monkeypatch):
+        monkeypatch.setattr(watch, "REPOST_REFETCH_SLEEP", 0.0)
+        monkeypatch.setattr(watch.workday, "detail_payload",
+                            lambda b, p, c: None)
+        flags = [self._flag("JR1", prev_sd="2026-08-17")]
+        events, updates = watch.refetch_repost_details(
+            flags, "nvidia|wd5|x", Config(), time.monotonic() + 60)
+        assert events[0]["confidence"] == "label"
+        assert "new_startDate" not in events[0]
+        assert updates == {}
+
+    def test_budget_stop_before_any_fetch(self, monkeypatch):
+        monkeypatch.setattr(watch, "REPOST_REFETCH_SLEEP", 0.0)
+        calls: list = []
+
+        def fake_detail(board, path, cfg):
+            calls.append(path)
+            return {"jobPostingInfo": {"startDate": "2026-09-12"}}
+
+        monkeypatch.setattr(watch.workday, "detail_payload", fake_detail)
+        flags = [self._flag(f"JR{i}") for i in range(1, 4)]
+        events, updates = watch.refetch_repost_details(
+            flags, "nvidia|wd5|x", Config(), time.monotonic() - 1)
+        assert calls == []                  # budget exhausted → 0 fetches
+        assert all(e["confidence"] == "label" for e in events)
+        assert updates == {}
+
+    def test_empty_flags_short_circuit(self):
+        events, updates = watch.refetch_repost_details(
+            [], "nvidia|wd5|x", Config(), time.monotonic() + 60)
+        assert events == [] and updates == {}
+
+
+# ── event merge + canonical log record ───────────────────────────────────
+class TestMergeAndLogRecord:
+    def test_start_date_evidence_upgrades_existing_flag(self):
+        flag = TestRefetchRepostDetails._flag("JR1", prev_sd="2026-08-17")
+        extra = {"reqId": "JR1", "confidence": "high",
+                 "prev_startDate": "2026-08-17",
+                 "new_startDate": "2026-09-11", "start_delta_days": 25}
+        merged = watch._merge_repost_events([flag], [extra])
+        assert len(merged) == 1
+        assert merged[0]["confidence"] == "high"
+        assert merged[0]["new_startDate"] == "2026-09-11"
+        assert merged[0]["start_delta_days"] == 25
+        assert merged[0]["label_reset"] is True   # label evidence kept
+
+    def test_disjoint_events_append(self):
+        flag = TestRefetchRepostDetails._flag("JR1")
+        extra = {"reqId": "JR2", "confidence": "high",
+                 "new_startDate": "2026-09-11", "start_delta_days": 4}
+        assert len(watch._merge_repost_events([flag], [extra])) == 2
+
+    def test_canonical_record_shape(self):
+        ev = {"reqId": "JR1", "title": "T", "detected_at": "x",
+              "prev_postedOn": "Posted 21 Days Ago",
+              "new_postedOn": "Posted 2 Days Ago",
+              "prev_implied": "2026-08-22", "new_implied": "2026-09-11",
+              "prev_startDate": "2026-09-01", "confidence": "high",
+              "new_startDate": "2026-09-12", "externalPath": "/job/JR1",
+              "label_reset": True, "label_from": "21d", "label_to": "2d",
+              "start_delta_days": 11}
+        rec = watch._repost_log_record(ev)
+        assert set(rec) == {"reqId", "title", "detected_at",
+                            "prev_postedOn", "new_postedOn", "prev_implied",
+                            "new_implied", "prev_startDate",
+                            "new_startDate", "confidence"}
+        assert rec["confidence"] == "high"
+
+    def test_new_start_date_omitted_when_unknown(self):
+        ev = TestRefetchRepostDetails._flag("JR1")   # no new_startDate
+        rec = watch._repost_log_record(ev)
+        assert "new_startDate" not in rec
+        assert rec["confidence"] == "label"
+
+    def test_magnitude_variants(self):
+        ev = {"label_reset": True, "label_from": "21d", "label_to": "2d",
+              "start_delta_days": 244}
+        assert watch._repost_magnitude(ev) == \
+            "label reset 21d→2d, startDate +244d"
+        assert watch._repost_magnitude(
+            dict(ev, start_delta_days=None)) == "label reset 21d→2d"
+        assert watch._repost_magnitude(
+            dict(ev, label_reset=False)) == "startDate +244d"
+        assert watch._repost_magnitude(
+            dict(ev, label_from="30+d", label_to="3d",
+                 start_delta_days=None)) == "label reset 30+d→3d"
+
+
+# ── digest REPOSTED section ──────────────────────────────────────────────
+class TestRepostDigest:
+    @staticmethod
+    def _ev(**kw) -> dict:
+        ev = {"reqId": "JR2008226", "title": "Senior DFT Engineer",
+              "detected_at": "2026-09-13T10:35:00",
+              "prev_postedOn": "Posted 21 Days Ago",
+              "new_postedOn": "Posted 2 Days Ago",
+              "prev_implied": "2026-08-23", "new_implied": "2026-09-11",
+              "prev_startDate": "2026-01-09", "confidence": "high",
+              "new_startDate": "2026-09-10", "label_reset": True,
+              "label_from": "21d", "label_to": "2d",
+              "start_delta_days": 244}
+        ev.update(kw)
+        return ev
+
+    def test_reposted_section_line(self):
+        digest = watch.format_digest("l", "NVIDIA", [], [], {}, [], 5,
+                                     repost_events=[self._ev()])
+        assert "REPOSTED (1)" in digest
+        # task's exact example format: title + magnitude
+        assert ("REPOSTED Senior DFT Engineer "
+                "(label reset 21d→2d, startDate +244d)") in digest
+
+    def test_no_reposted_section_when_empty(self):
+        digest = watch.format_digest("l", "NVIDIA", [], [], {}, [], 5)
+        assert "REPOSTED" not in digest
+        digest2 = watch.format_digest("l", "NVIDIA", [], [], {}, [], 5,
+                                      repost_events=[])
+        assert "REPOSTED" not in digest2
+
+    def test_section_capped_at_10(self):
+        evs = [self._ev(reqId=f"JR{i}", title=f"T{i}",
+                        label_reset=False, start_delta_days=None)
+               for i in range(12)]
+        digest = watch.format_digest("l", "NVIDIA", [], [], {}, [], 5,
+                                     repost_events=evs)
+        assert "REPOSTED (12)" in digest
+        assert digest.count("REPOSTED T") == 10
+        assert "and 2 more (reposts.jsonl)" in digest
+
+    def test_section_after_new_and_gone(self):
+        digest = watch.format_digest(
+            "l", "NVIDIA",
+            new_rows=[_post("JR1", "SRE")],
+            enriched=[{"reqId": "JR1", "locations": ["US, CA, Santa Clara"],
+                       "startDate": "2026-09-09",
+                       "externalUrl": "https://x/JR1"}],
+            signals={}, gone_rows=[{"reqId": "JR0", "title": "Old",
+                                    "first_seen": "2026-08-01"}],
+            current_count=1360, repost_events=[self._ev()])
+        assert digest.index("NEW SRE") < digest.index("GONE Old") \
+            < digest.index("REPOSTED (1)")
+
+
+# ── run_watch integration (detector → event log → state → alerts) ────────
+class TestRepostRunWatch:
+    """End-to-end through run_watch: prior state (old-format rows) + a
+    regressed list → reposts.jsonl event, state schema update, REPOSTED
+    digest section, alert on a repost-only day. The network is mocked at
+    ONE seam (watch.workday.detail_payload), exactly like TestEnrichNew."""
+
+    def _run_watch(self, wdir, monkeypatch, prior_rows, current_rows,
+                   detail_sd=None, enrich_out=None):
+        state = wdir / "test_watch.state.jsonl"
+        state.write_text("\n".join(json.dumps(r) for r in prior_rows) + "\n",
+                         encoding="utf-8")
+        monkeypatch.setattr(
+            watch, "current_postings",
+            lambda *a, **k: ({r["reqId"]: r for r in current_rows}, True))
+        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
+        monkeypatch.setattr(
+            watch, "enrich_new",
+            enrich_out if enrich_out is not None else lambda *a, **k: [])
+        monkeypatch.setattr(watch, "corroborate_new",
+                            lambda *a, **k: {})
+        sent: list = []
+        monkeypatch.setattr(
+            watch, "_send_alerts",
+            lambda label, digest, cfg: sent.append(digest))
+        monkeypatch.setattr(watch, "_pt_run_date", lambda: RUN_DATE)
+        monkeypatch.setattr(watch, "REPOST_REFETCH_SLEEP", 0.0)
+        calls: list = []
+
+        def fake_detail(board, path, cfg):
+            calls.append(path)
+            rid = path.rsplit("/", 1)[-1]
+            sd = (detail_sd or {}).get(rid)
+            if sd is None:
+                return None                     # unreachable
+            return {"jobPostingInfo": {"startDate": sd}}
+
+        monkeypatch.setattr(watch.workday, "detail_payload", fake_detail)
+        result = watch.run_watch(dict(CFG), Config())
+        return result, sent, calls
+
+    def test_label_regression_end_to_end_event_log(self, wdir, monkeypatch):
+        prior = [_prior("JR1", "Posted 21 Days Ago",
+                        last_startDate="2026-09-01")]
+        cur = [_cur("JR1", "Posted 2 Days Ago")]
+        result, sent, calls = self._run_watch(
+            wdir, monkeypatch, prior, cur, detail_sd={"JR1": "2026-09-12"})
+        assert result == "complete"
+        assert calls == ["/job/JR1"]           # R2 re-fetch happened
+        log = _read_jsonl(wdir / "test_watch.reposts.jsonl")
+        assert len(log) == 1
+        rec = log[0]
+        # canonical event record (task S8-E2 / audit §7.1)
+        assert set(rec) == {"reqId", "title", "detected_at",
+                            "prev_postedOn", "new_postedOn", "prev_implied",
+                            "new_implied", "prev_startDate",
+                            "new_startDate", "confidence"}
+        assert rec["reqId"] == "JR1"
+        assert rec["prev_postedOn"] == "Posted 21 Days Ago"
+        assert rec["new_postedOn"] == "Posted 2 Days Ago"
+        assert rec["prev_implied"] == "2026-08-22"   # last_seen 09-12 − 21d
+        assert rec["new_implied"] == "2026-09-11"    # RUN_DATE − 2d
+        assert rec["prev_startDate"] == "2026-09-01"
+        assert rec["new_startDate"] == "2026-09-12"  # +11d move → confirmed
+        assert rec["confidence"] == "high"
+        # alert fires on a REPOST-ONLY day (no new/gone churn at all)
+        assert len(sent) == 1
+        assert "REPOSTED (1)" in sent[0]
+        assert "REPOSTED Role JR1 (label reset 21d→2d, startDate +11d)" \
+            in sent[0]
+        # state: new fields written, last_startDate now the reset date
+        st = {r["reqId"]: r for r in
+              _read_jsonl(wdir / "test_watch.state.jsonl")}
+        jr1 = st["JR1"]
+        assert jr1["last_postedOn"] == "Posted 2 Days Ago"
+        assert jr1["implied_post_date"] == "2026-09-11"
+        assert jr1["last_startDate"] == "2026-09-12"
+        assert jr1["startDate_first"] == "2026-09-01"  # earliest ever seen
+
+    def test_old_format_state_round_trip(self, wdir, monkeypatch):
+        """The committed state schema (no implied_post_date /
+        startDate_first) must load, compare via the conservative
+        last_seen fallback, and only gain new fields where evidence
+        exists — dormant rows stay old-format."""
+        prior = [
+            _prior("JR1", "Posted 21 Days Ago", last_startDate="2026-09-01"),
+            _prior("JR2", "Posted 30+ Days Ago"),       # stays OPEN
+            _prior("JR3", "Posted 4 Days Ago"),         # ages normally
+        ]
+        cur = [
+            _cur("JR1", "Posted 2 Days Ago"),           # regression → event
+            _cur("JR2", "Posted 30+ Days Ago"),         # OPEN→OPEN: quiet
+            _cur("JR3", "Posted 5 Days Ago"),           # normal aging
+        ]
+        result, sent, _ = self._run_watch(
+            wdir, monkeypatch, prior, cur, detail_sd={"JR1": "2026-09-12"})
+        assert result == "complete"
+        log = _read_jsonl(wdir / "test_watch.reposts.jsonl")
+        assert [r["reqId"] for r in log] == ["JR1"]     # only the regression
+        st = {r["reqId"]: r for r in
+              _read_jsonl(wdir / "test_watch.state.jsonl")}
+        # active row gains the implied date (numeric bucket)
+        assert st["JR3"]["implied_post_date"] == "2026-09-08"   # 09-13−5d
+        # OPEN bucket: censored → no implied date; no detail → no first
+        assert "implied_post_date" not in st["JR2"]
+        assert "startDate_first" not in st["JR2"]
+        assert "startDate_first" not in st["JR3"]
+        # the re-fetched row gets both new fields
+        assert st["JR1"]["startDate_first"] == "2026-09-01"
+        assert st["JR1"]["implied_post_date"] == "2026-09-11"
+        # round-trip: the rewritten state re-loads cleanly
+        assert len(_read_jsonl(wdir / "test_watch.state.jsonl")) == 3
+
+    def test_quiet_day_no_event_log_no_alerts(self, wdir, monkeypatch):
+        prior = [_prior("JR1", "Posted 4 Days Ago")]
+        cur = [_cur("JR1", "Posted 5 Days Ago")]        # plain aging
+        result, sent, calls = self._run_watch(wdir, monkeypatch, prior, cur)
+        assert result == "complete"
+        assert sent == []                                # no alert spam
+        assert calls == []                               # no refetch
+        assert not (wdir / "test_watch.reposts.jsonl").exists()
+
+    def test_start_date_move_via_enrichment_channel(self, wdir, monkeypatch):
+        """A startDate that moved LATER is a direct reset even when the
+        label aged normally: backlog-recovery enrichment re-fetches an
+        existing reqId and supplies the new startDate."""
+        prior = [_prior("JR1", "Posted 5 Days Ago",
+                        last_startDate="2026-09-01", needs_enrich=True)]
+        cur = [_cur("JR1", "Posted 5 Days Ago")]        # label is quiet
+        enr = [{"reqId": "JR1", "title": "Role JR1",
+                "first_seen": "2020-01-01", "locations": ["US, CA, X"],
+                "startDate": "2026-09-05", "description": "d", "url": "u"}]
+        result, sent, _ = self._run_watch(
+            wdir, monkeypatch, prior, cur,
+            enrich_out=lambda rows, *a, **k: enr)
+        assert result == "complete"
+        log = _read_jsonl(wdir / "test_watch.reposts.jsonl")
+        assert len(log) == 1
+        rec = log[0]
+        assert rec["confidence"] == "high"
+        assert rec["prev_startDate"] == "2026-09-01"
+        assert rec["new_startDate"] == "2026-09-05"
+        assert "startDate +4d" in sent[0]
+        assert "label reset" not in sent[0]             # startDate-only
+        st = {r["reqId"]: r for r in
+              _read_jsonl(wdir / "test_watch.state.jsonl")}
+        assert st["JR1"]["last_startDate"] == "2026-09-05"
+        assert st["JR1"]["startDate_first"] == "2026-09-01"
+
+    def test_refetch_cap_five_per_leg_run_watch(self, wdir, monkeypatch):
+        prior = [_prior(f"JR{i}", "Posted 30+ Days Ago",
+                        last_startDate="2026-08-01") for i in range(1, 7)]
+        cur = [_cur(f"JR{i}", "Posted 2 Days Ago") for i in range(1, 7)]
+        result, sent, calls = self._run_watch(
+            wdir, monkeypatch, prior, cur,
+            detail_sd={f"JR{i}": "2026-09-12" for i in range(1, 7)})
+        assert result == "complete"
+        assert len(calls) == 5                     # 6 flagged → only 5
+        log = _read_jsonl(wdir / "test_watch.reposts.jsonl")
+        assert len(log) == 6
+        assert sum(1 for r in log if r["confidence"] == "high") == 5
+        assert sum(1 for r in log if "new_startDate" in r) == 5
+        assert "REPOSTED (6)" in sent[0]
+        # digest section holds all 6 (≤10)
+        assert sent[0].count("REPOSTED Role JR") == 6
+
+    def test_new_posting_gains_start_date_first(self, wdir, monkeypatch):
+        """The newposts flow already fetches details — its startDate lands
+        in the state as startDate_first (first observation)."""
+        prior = []                                   # JR9 is brand new
+        cur = [_cur("JR9", "Posted Yesterday")]
+        enr = [{"reqId": "JR9", "title": "Role JR9",
+                "first_seen": date.today().isoformat(),
+                "locations": ["US, CA, X"], "startDate": "2026-09-12",
+                "description": "d", "url": "u"}]
+        result, sent, _ = self._run_watch(
+            wdir, monkeypatch, prior, cur,
+            enrich_out=lambda rows, *a, **k: enr)
+        assert result == "complete"
+        st = {r["reqId"]: r for r in
+              _read_jsonl(wdir / "test_watch.state.jsonl")}
+        assert st["JR9"]["startDate_first"] == "2026-09-12"
+        assert st["JR9"]["last_startDate"] == "2026-09-12"
+        assert st["JR9"]["implied_post_date"] == "2026-09-12"  # 09-13−1d
+        assert "REPOSTED" not in sent[0]            # new posting ≠ repost
+        assert not (wdir / "test_watch.reposts.jsonl").exists()
+
+    def test_detector_failure_never_kills_the_watch(self, wdir, monkeypatch):
+        prior = [_prior("JR1", "Posted 21 Days Ago")]
+        cur = [_cur("JR1", "Posted 2 Days Ago")]
+
+        def boom(current, prior, run_date):
+            raise RuntimeError("detector exploded")
+
+        monkeypatch.setattr(watch, "detect_reposts", boom)
+        result, sent, _ = self._run_watch(
+            wdir, monkeypatch, prior, cur, detail_sd={"JR1": "2026-09-12"})
+        assert result == "complete"                 # watch still completes
+        assert sent == []                           # no repost alert
+        assert not (wdir / "test_watch.reposts.jsonl").exists()
+        # state still written (with the new implied field)
+        st = {r["reqId"]: r for r in
+              _read_jsonl(wdir / "test_watch.state.jsonl")}
+        assert st["JR1"]["implied_post_date"] == "2026-09-11"

@@ -320,3 +320,333 @@ class TestJoinOneToOne:
         assert set(joined) == {"JRA", "JRB"}
         assert joined["JRA"]["linkedin_job_id"] == "1"
         assert joined["JRB"]["linkedin_job_id"] == "2"
+
+
+# ── S8-E1 (audit/findings-engagement-coverage.md): partitioned index,
+# applicantCensored, location-aware title tiebreak ─────────────────────────
+class TestDefaultIndexSlices:
+    def test_nvidia_matrix_shape(self):
+        slices = corroborate.default_index_slices("NVIDIA")
+        assert len(slices) == 30                     # 6 keywords × 5 locs
+        assert {sl["keywords"] for sl in slices} == {
+            "NVIDIA", "NVIDIA software", "NVIDIA engineer",
+            "NVIDIA hardware", "NVIDIA marketing", "NVIDIA sales"}
+        assert {sl["location"] for sl in slices} == {
+            "United States",
+            "Santa Clara, California, United States",
+            "Austin, Texas, United States",
+            "Seattle, Washington, United States",
+            "Remote, United States"}
+        assert all(set(sl) == {"keywords", "location"} for sl in slices)
+        # request bound: 30 queries × 3 pages ≈ 90 per run
+        assert corroborate.PARTITIONED_PAGES_PER_SLICE == 3
+        assert len(slices) * corroborate.PARTITIONED_PAGES_PER_SLICE == 90
+
+    def test_generic_company_derives_matrix_from_name(self):
+        slices = corroborate.default_index_slices("Acme")
+        assert {sl["keywords"] for sl in slices} == {
+            "Acme", "Acme software", "Acme engineer", "Acme hardware",
+            "Acme marketing", "Acme sales"}
+        assert len(slices) == 30
+
+    def test_empty_company_falls_back_to_nvidia(self):
+        slices = corroborate.default_index_slices("")
+        assert slices[0]["keywords"] == "NVIDIA"
+
+
+class TestIndexCardsPartitioned:
+    """S8-E1 (research §c): the single guest query hits a SERVING
+    ceiling; the slice matrix unions keyword×location queries, deduped
+    by linkedin_job_id, with per-slice B2 stepping and the page-0
+    blocked contract preserved."""
+
+    _S0 = {"keywords": "NVIDIA", "location": "United States"}
+    _S1 = {"keywords": "NVIDIA software", "location": "United States"}
+    _S2 = {"keywords": "NVIDIA",
+           "location": "Santa Clara, California, United States"}
+
+    def _patch(self, monkeypatch, pages_by_query: dict,
+               fail_queries=frozenset()):
+        """fetch_text serves canned card pages keyed by (keywords,
+        location) (list of pages, each a list of cards); raises for
+        fail_queries; records every (keywords, location, offset) served."""
+        from urllib.parse import urlparse, parse_qs
+
+        def _card_html(c):
+            return (f'<li data-entity-urn="urn:li:jobPosting:{c["id"]}">'
+                    f'<h3 class="base-search-card__title">{c["title"]}</h3>'
+                    f'<h4 class="base-search-card__subtitle">'
+                    f'<a>{c["company"]}</a></h4>'
+                    f'<span class="job-search-card__location">'
+                    f'{c["location"]}</span>'
+                    f'<time datetime="{c["date"]}">now</time></li>')
+
+        page_i: dict = {}
+        served: list[tuple] = []
+
+        def fake_fetch_text(url, *, params=None, cfg=None):
+            q = parse_qs(urlparse(url).query)
+            kw, loc = q["keywords"][0], q["location"][0]
+            served.append((kw, loc, int(q["start"][0])))
+            if (kw, loc) in fail_queries:
+                raise RuntimeError(f"blocked {kw}/{loc}")
+            i = page_i.get((kw, loc), 0)
+            page_i[(kw, loc)] = i + 1
+            pages = pages_by_query.get((kw, loc), [])
+            if i >= len(pages):
+                return ""                    # exhausted (empty body)
+            return "".join(_card_html(c) for c in pages[i])
+
+        monkeypatch.setattr(corroborate, "fetch_text", fake_fetch_text)
+        monkeypatch.setattr(corroborate, "_INDEX_PAUSE_S", 0)
+        monkeypatch.setattr(corroborate, "_SLICE_PAUSE_S", 0)
+        return served
+
+    def test_union_dedupes_across_slices(self, monkeypatch):
+        # S0 serves cards 1,2 then 2,3 (intra-slice dupe); S1 serves
+        # 3,4 (card 3 = cross-slice dupe) → union [1,2,3,4]
+        served = self._patch(monkeypatch, {
+            ("NVIDIA", "United States"): [
+                [_card(1), _card(2)], [_card(2), _card(3)]],
+            ("NVIDIA software", "United States"): [[_card(3), _card(4)]],
+        })
+        p = LinkedInSignalProvider(cfg=None)
+        cards, next_offset, exhausted = p.index_cards_partitioned(
+            "NVIDIA", slices=[self._S0, self._S1], max_pages_per_slice=2)
+        assert [c["id"] for c in cards] == ["1", "2", "3", "4"]
+        assert next_offset == 0            # slices restart at 0 on re-run
+        assert exhausted is True           # page-cap counts complete
+        # each slice issued its own query from offset 0, stepping B2-style
+        # by cards RECEIVED (page 0 of 2 cards → offset 2)
+        assert served == [("NVIDIA", "United States", 0),
+                          ("NVIDIA", "United States", 2),
+                          ("NVIDIA software", "United States", 0),
+                          ("NVIDIA software", "United States", 2)]
+
+    def test_company_variant_filter_applies_per_slice(self, monkeypatch):
+        self._patch(monkeypatch, {
+            ("NVIDIA", "United States"): [
+                [_card(1, company="NVIDIA"),
+                 _card(2, company="Some Other Co")]]})
+        p = LinkedInSignalProvider(cfg=None)
+        cards, _, _ = p.index_cards_partitioned(
+            "NVIDIA", slices=[self._S0], max_pages_per_slice=1)
+        assert [c["id"] for c in cards] == ["1"]   # noise card filtered
+
+    def test_slices_none_uses_default_matrix(self, monkeypatch):
+        served = self._patch(monkeypatch, {})      # every query exhausted
+        p = LinkedInSignalProvider(cfg=None)
+        cards, next_offset, exhausted = p.index_cards_partitioned(
+            "NVIDIA", max_pages_per_slice=1)
+        assert cards == [] and next_offset == 0 and exhausted is True
+        assert len(served) == 30                   # the full 6×5 matrix
+        assert served[0][:2] == ("NVIDIA", "United States")
+        assert any(kw == "NVIDIA sales" and
+                   loc == "Remote, United States"
+                   for kw, loc, _ in served)
+
+    def test_first_slice_page0_blocked_raises(self, monkeypatch):
+        self._patch(monkeypatch, {},
+                    fail_queries={("NVIDIA", "United States")})
+        p = LinkedInSignalProvider(cfg=None)
+        with pytest.raises(corroborate.CorroborationBlocked):
+            p.index_cards_partitioned(
+                "NVIDIA", slices=[self._S0, self._S1],
+                max_pages_per_slice=2)
+
+    def test_later_slice_blocked_degrades_partial(self, monkeypatch):
+        """A non-first slice blocking is NOT fatal: keep the union, report
+        exhausted=False so the caller re-runs (idempotent union)."""
+        self._patch(monkeypatch,
+                    {("NVIDIA", "United States"): [[_card(1)]]},
+                    fail_queries={("NVIDIA software", "United States")})
+        p = LinkedInSignalProvider(cfg=None)
+        cards, next_offset, exhausted = p.index_cards_partitioned(
+            "NVIDIA", slices=[self._S0, self._S1], max_pages_per_slice=1)
+        assert [c["id"] for c in cards] == ["1"]
+        assert exhausted is False
+        assert next_offset == 0
+
+    def test_exhausted_when_all_slices_run_clean(self, monkeypatch):
+        self._patch(monkeypatch, {
+            ("NVIDIA", "United States"): [[_card(1)], []],
+            ("NVIDIA software", "United States"): [[]]})
+        p = LinkedInSignalProvider(cfg=None)
+        cards, _, exhausted = p.index_cards_partitioned(
+            "NVIDIA", slices=[self._S0, self._S1], max_pages_per_slice=2)
+        assert [c["id"] for c in cards] == ["1"]
+        assert exhausted is True
+
+    def test_sleeps_between_slices_not_after_last(self, monkeypatch):
+        """Rate discipline: _SLICE_PAUSE_S between slices (page pauses
+        still apply inside each slice) — N slices → N-1 slice pauses.
+        Sleeps are RECORDED, never taken (sentinel pause values)."""
+        sleeps: list[float] = []
+        monkeypatch.setattr(
+            corroborate, "time",
+            type("T", (), {"sleep": staticmethod(sleeps.append)})())
+        self._patch(monkeypatch, {
+            ("NVIDIA", "United States"): [[_card(1)]],
+            ("NVIDIA software", "United States"): [[_card(2)]]})
+        monkeypatch.setattr(corroborate, "_INDEX_PAUSE_S", 0.25)
+        monkeypatch.setattr(corroborate, "_SLICE_PAUSE_S", 3.0)
+        p = LinkedInSignalProvider(cfg=None)
+        p.index_cards_partitioned(
+            "NVIDIA", slices=[self._S0, self._S1], max_pages_per_slice=1)
+        assert sleeps.count(3.0) == 1       # 2 slices → ONE inter-slice pause
+        assert sleeps.count(0.25) == 2      # one page pause inside each slice
+        assert sleeps == [0.25, 3.0, 0.25]  # page, slice, page — no trailing
+
+
+class TestApplicantCensored:
+    """S8-E1 (research §a): numApplicants is a censored bucket — floor 25
+    ("among first 25") / cap 200 ("Over 200 applicants"). The flag rides
+    fetch_signals' MATCHED records; blocked records omit it."""
+
+    def _rec(self, monkeypatch, num, label) -> dict:
+        p = LinkedInSignalProvider(cfg=None)
+        monkeypatch.setattr(
+            corroborate.linkedin_guest, "fetch_detail",
+            lambda cid, cfg=None: {
+                "work_mode": "", "description": "d", "closed": False,
+                "num_applicants": num, "applicants_label": label,
+                "job_req_id": "", "posted_time_ago": ""})
+        return p.fetch_signals([_card(1)], detail_pause_s=0)[0]
+
+    def test_bucket_constants(self):
+        assert corroborate.APPLICANT_BUCKET_FLOOR == 25
+        assert corroborate.APPLICANT_BUCKET_CAP == 200
+
+    def test_floor_25_flagged(self, monkeypatch):
+        assert self._rec(monkeypatch, 25, "25 applicants")[
+            "applicantCensored"] is True
+
+    def test_cap_200_flagged(self, monkeypatch):
+        assert self._rec(monkeypatch, 200, "Over 200 applicants")[
+            "applicantCensored"] is True
+
+    def test_among_first_floor_label_flagged(self, monkeypatch):
+        assert self._rec(monkeypatch, 25, "among first 25")[
+            "applicantCensored"] is True
+
+    def test_mid_count_not_flagged(self, monkeypatch):
+        assert self._rec(monkeypatch, 31, "31 applicants")[
+            "applicantCensored"] is False
+
+    def test_sub_floor_censoring_label_flagged(self, monkeypatch):
+        # "Be among the first 10" — true count at-or-below 10
+        assert self._rec(monkeypatch, 10, "among first 10")[
+            "applicantCensored"] is True
+
+    def test_blocked_records_omit_the_flag(self, monkeypatch):
+        p = LinkedInSignalProvider(cfg=None)
+
+        def wall(cid, cfg=None):
+            raise RuntimeError("429 wall")
+
+        monkeypatch.setattr(corroborate.linkedin_guest, "fetch_detail", wall)
+        rec = p.fetch_signals([_card(1)], detail_pause_s=0)[0]
+        assert rec["status"] == STATUS_BLOCKED
+        assert "applicantCensored" not in rec
+
+    def test_one_in_one_out_contract_holds(self, monkeypatch):
+        """Contract regression (S8-E1): mixed batch — one blocked, one
+        floor, one cap, one uncensored — exactly one record per card,
+        never raises, flags exactly the censored ones."""
+        p = LinkedInSignalProvider(cfg=None)
+        details = {
+            "1": {"num_applicants": 25, "applicants_label": "25 applicants",
+                  "job_req_id": "", "posted_time_ago": ""},
+            "3": {"num_applicants": 200,
+                  "applicants_label": "Over 200 applicants",
+                  "job_req_id": "", "posted_time_ago": ""},
+            "4": {"num_applicants": 54, "applicants_label": "54 applicants",
+                  "job_req_id": "", "posted_time_ago": ""},
+        }
+
+        def fake(cid, cfg=None):
+            if cid == "2":
+                raise RuntimeError("blocked")
+            return details[cid]
+
+        monkeypatch.setattr(corroborate.linkedin_guest, "fetch_detail", fake)
+        recs = p.fetch_signals([_card(i) for i in range(1, 5)],
+                               detail_pause_s=0)
+        assert len(recs) == 4                       # one per card, no raise
+        assert recs[1]["status"] == STATUS_BLOCKED  # card 2 walled, not fatal
+        assert [r["applicantCensored"] for r in recs
+                if r["status"] == STATUS_MATCHED] == [True, True, False]
+
+
+class TestJoinLocationTiebreak:
+    """S8-E1 (research §f R3b): location-aware tiebreak in the greedy
+    title join — card/req location overlap (city tokens, state codes)
+    ranks BEFORE date proximity; conservative by construction."""
+
+    def _sig(self, cid, title, date, location) -> dict:
+        return {"linkedin_job_id": cid, "linkedin_url": f"u/{cid}",
+                "title": title, "company": "NVIDIA", "location": location,
+                "linkedin_posted_date": date, "num_applicants": 32,
+                "status": "matched"}
+
+    def test_overlap_beats_date_proximity(self):
+        # card 2 is 1 day from the req's date but wrong city; card 1 is
+        # 39 days off but shares the req's location → card 1 wins
+        sigs = [self._sig("1", "SRE CUDA", "2026-08-01", "Santa Clara, CA"),
+                self._sig("2", "SRE CUDA", "2026-09-08", "Austin, TX")]
+        joined = join_by_title(sigs, {"JR1": "SRE CUDA"}, "NVIDIA",
+                               req_dates={"JR1": "2026-09-09"},
+                               req_locations={"JR1": "US, CA, Santa Clara"})
+        assert joined["JR1"]["linkedin_job_id"] == "1"
+
+    def test_neutral_without_req_locations(self):
+        # regression guard: no req_locations → date proximity decides
+        # (the pre-S8-E1 behavior, unchanged)
+        sigs = [self._sig("1", "SRE CUDA", "2026-08-01", "Santa Clara, CA"),
+                self._sig("2", "SRE CUDA", "2026-09-08", "Austin, TX")]
+        joined = join_by_title(sigs, {"JR1": "SRE CUDA"}, "NVIDIA",
+                               req_dates={"JR1": "2026-09-09"})
+        assert joined["JR1"]["linkedin_job_id"] == "2"
+
+    def test_generic_country_location_is_neutral(self):
+        # "United States" carries no usable token — must NOT be preferred
+        # over a specific card; proximity keeps deciding
+        sigs = [self._sig("1", "SRE CUDA", "2026-08-01", "United States"),
+                self._sig("2", "SRE CUDA", "2026-09-08", "Austin, TX")]
+        joined = join_by_title(sigs, {"JR1": "SRE CUDA"}, "NVIDIA",
+                               req_dates={"JR1": "2026-09-09"},
+                               req_locations={"JR1": "US, CA, Santa Clara"})
+        assert joined["JR1"]["linkedin_job_id"] == "2"
+
+    def test_both_overlap_falls_back_to_proximity(self):
+        sigs = [self._sig("1", "SRE CUDA", "2026-08-01", "Santa Clara, CA"),
+                self._sig("2", "SRE CUDA", "2026-09-08", "Santa Clara, CA")]
+        joined = join_by_title(sigs, {"JR1": "SRE CUDA"}, "NVIDIA",
+                               req_dates={"JR1": "2026-09-09"},
+                               req_locations={"JR1": "US, CA, Santa Clara"})
+        assert joined["JR1"]["linkedin_job_id"] == "2"
+
+    def test_tiebreak_creates_no_new_fanout(self):
+        # one card, two same-title reqs (one location-overlapping) → the
+        # overlapping req is preferred and the OTHER req gets nothing
+        sigs = [self._sig("1", "SRE CUDA", "2026-09-08", "Austin, TX")]
+        joined = join_by_title(
+            sigs, {"JRA": "SRE CUDA", "JRB": "SRE CUDA"}, "NVIDIA",
+            req_locations={"JRA": "US, TX, Austin",
+                           "JRB": "US, WA, Seattle"})
+        assert set(joined) == {"JRA"}
+        assert joined["JRA"]["linkedin_job_id"] == "1"
+
+    def test_foreign_req_id_serves_nobody(self):
+        """S8-E1 guard (existing behavior, pinned): a card whose — now
+        possibly bare-regex-extracted — reqId points OUTSIDE the input
+        batch joins nothing by reqId."""
+        signals = [
+            {"job_req_id": "JR9999999", "title": "A",
+             "status": STATUS_MATCHED},          # foreign (bare-JR shape)
+            {"job_req_id": "JR2026100", "title": "B",
+             "status": STATUS_MATCHED},
+        ]
+        joined = join_by_req_id(signals, {"JR2026100"})
+        assert set(joined) == {"JR2026100"}
+        assert joined["JR2026100"]["title"] == "B"

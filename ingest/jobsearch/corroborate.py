@@ -23,6 +23,34 @@ Design constraints (from the peer review):
   caller's job (scripts/board_dump.py) per the repo's ingest-vs-scripts
   split.
 
+S8-E1 upgrades (audit/findings-engagement-coverage.md — the 478/1,360
+= 35.1% coverage funnel):
+- **Applicant-count censoring**: LinkedIn's numApplicants is an ordinal
+  BUCKET, not a ratio variable — "Be among the first 25 applicants"
+  floors the observable count at `APPLICANT_BUCKET_FLOOR` (25) and "Over
+  200 applicants" caps it at `APPLICANT_BUCKET_CAP` (200). fetch_signals
+  stamps `applicantCensored: true` on matched records whose count sits at
+  either bucket boundary (or whose label names a censoring form — "among
+  first N" / "Over N"), false otherwise; blocked records omit the key.
+  Never report mean applicant counts without this censoring note (the
+  shipped CSV's mean 54 vs median 31 is cap-skewed).
+- **Partitioned index mode**: the single `keywords="<company>"` query
+  hits a query-SERVING ceiling (752 NVIDIA cards, meta done=true @
+  offset 830) that is not a population ceiling — keyword×location slices
+  surface +78 NEW cards per 3 probe pages (research §c).
+  `index_cards_partitioned()` runs a slice matrix (default:
+  `default_index_slices()`, 6 keywords × 5 locations = 30 queries ×
+  `PARTITIONED_PAGES_PER_SLICE` (3) pages ≈ 90 requests/run),
+  union-deduped by linkedin_job_id, with the same B2 stepping, page-0
+  blocked contract and inter-page politeness as single mode plus
+  `_SLICE_PAUSE_S` between slices.
+- **Join-key upgrades**: (a) reqId extraction gains a bare JR#######
+  second pass (in linkedin_guest._parse_req_id — anchored wins);
+  (b) join_by_title gains a conservative location-aware tiebreak —
+  same-key candidate pairs whose card location overlaps the req's
+  location string (city tokens / state codes) are preferred over date
+  proximity; NO new candidate pairs, still greedy 1:1.
+
 Live-verified facts leaned on (2026-09-09):
 - search: 10 cards/page, deep unique pagination (500+ positions).
 - detail: "num-applicants" caption ("122 applicants" / "Over 200 …"),
@@ -59,6 +87,38 @@ STATUS_NOT_CHECKED = "not_checked"
 _INDEX_PAUSE_S = 1.0        # politeness between guest search pages
 _DETAIL_PAUSE_S = 1.0       # politeness between detail fetches
 _MAX_CONSECUTIVE_BLOCKED = 3   # circuit breaker threshold
+_SLICE_PAUSE_S = 3.0        # S8-E1: politeness BETWEEN index slices
+
+# S8-E1: LinkedIn applicant-count censoring bounds (research §a: CSV
+# n=478 — min 25, median 31, mean 54, max 200; "among first 25" floors,
+# "Over 200 applicants" caps; LinkedIn also resets counts on repost).
+APPLICANT_BUCKET_FLOOR = 25
+APPLICANT_BUCKET_CAP = 200
+
+# S8-E1 partitioned-index budget knobs (research §f R1): 30 queries ×
+# 3 pages ≈ 90 requests/run — the deliberate request bound. The union
+# cap is generous because the page budget is the real bound.
+PARTITIONED_PAGES_PER_SLICE = 3
+PARTITIONED_MAX_CARDS = 1000
+
+# Default slice matrix (research §c/§f R1): keyword variants × the card-
+# location top set from the NVIDIA li_index.
+_SLICE_KEYWORD_SUFFIXES = (
+    "software", "engineer", "hardware", "marketing", "sales")
+_SLICE_LOCATIONS = (
+    "United States",
+    "Santa Clara, California, United States",
+    "Austin, Texas, United States",
+    "Seattle, Washington, United States",
+    "Remote, United States",
+)
+
+# Location-tiebreak tokens (join_by_title): 2+ letter tokens minus
+# country/generic words — keeps state codes (ca/tx) and city names,
+# drops the ones that would match everything ("united", "states",
+# "us") or nothing useful ("city", "area").
+_LOC_STOPWORDS = frozenset((
+    "us", "usa", "united", "states", "america", "city", "area", "metro"))
 
 
 class CorroborationBlocked(RuntimeError):
@@ -92,6 +152,46 @@ def _company_variants(company: str) -> list[str]:
     return [base, f"{base} ai"]
 
 
+def default_index_slices(company: str = "NVIDIA") -> list[dict]:
+    """Default slice matrix for a company (S8-E1, research §f R1).
+
+    The company name plus role-word keyword variants × the top card
+    locations from the NVIDIA li_index: for NVIDIA this is 6 keywords ×
+    5 locations = 30 {keywords, location} queries; at
+    PARTITIONED_PAGES_PER_SLICE (3) pages each that bounds a full run at
+    ~90-100 requests. Generic for other companies (role-word slices
+    derived from the company name).
+    """
+    base = (company or "").strip() or "NVIDIA"
+    keywords = [base] + [f"{base} {s}" for s in _SLICE_KEYWORD_SUFFIXES]
+    return [{"keywords": kw, "location": loc}
+            for kw in keywords for loc in _SLICE_LOCATIONS]
+
+
+def _applicant_censored(num_applicants,
+                         applicants_label: str = "") -> bool:
+    """True when the applicant count is a censored bucket observation:
+    at the floor ("among first 25" — true count at-or-below) or the cap
+    ("Over 200" — true count above), or the label itself names a
+    censoring form ("among first N" / "Over N"). None → False (no
+    count — blocked records omit the flag entirely)."""
+    if num_applicants is None:
+        return False
+    if num_applicants in (APPLICANT_BUCKET_FLOOR, APPLICANT_BUCKET_CAP):
+        return True
+    low = (applicants_label or "").strip().lower()
+    return low.startswith("among first") or low.startswith("over ")
+
+
+def _location_tokens(location: str) -> frozenset:
+    """Conservative overlap tokens for the join_by_title location
+    tiebreak: 2+ letter words (state codes like `ca`, city names) minus
+    generic/country words. Empty location → empty set (neutral)."""
+    return frozenset(
+        t for t in re.findall(r"[A-Za-z]{2,}", (location or "").lower())
+        if t not in _LOC_STOPWORDS)
+
+
 class LinkedInSignalProvider:
     """Signals via the LinkedIn guest endpoint (no auth)."""
 
@@ -104,35 +204,31 @@ class LinkedInSignalProvider:
         self.cfg = cfg or Config()
 
     # ── index phase ────────────────────────────────────────────────────
-    def index_cards(self, company: str, location: str = "United States",
-                    max_pages: int = 10, max_cards: int = 100,
-                    start_offset: int = 0) -> tuple[list[dict], int, bool]:
-        """Paginate the guest search for `company` postings.
+    def _paginate_query(self, keywords: str, location: str,
+                        variants: list[str], max_pages: int, max_cards: int,
+                        start_offset: int, seen: set[str]
+                        ) -> tuple[list[dict], int, bool, Optional[Exception]]:
+        """Paginate ONE (keywords, location) guest query, B2-safe.
 
-        B2-safe: advances `start` by the number of cards each page actually
-        returned. Returns (cards, next_offset, exhausted) — NEVER raises on
-        page N>0 failure (partial results + resume offset instead, so a
-        mid-index wall keeps prior progress); raises only if page 0 itself
-        is blocked (caller marks the whole phase blocked).
+        Shared worker for index_cards (single mode) and
+        index_cards_partitioned (slice mode). Mutates `seen` with every
+        accepted card id. Returns (cards, next_offset, exhausted, exc):
+        `exc` is the transport error that stopped the query mid-run
+        (None when it ran to its page/exhaustion/card bounds); the CALLER
+        decides whether a page-0 exc is fatal (CorroborationBlocked —
+        nothing gained) or a partial result to keep.
         """
-        variants = _company_variants(company)
-        seen: set[str] = set()
         cards: list[dict] = []
         offset = start_offset
         exhausted = False
         for _page in range(max_pages):
             url = f"{SEARCH_URL}?{urlencode({
-                'keywords': company, 'location': location,
+                'keywords': keywords, 'location': location,
                 'start': offset, 'sortBy': 'DD'})}"
             try:
                 html = fetch_text(url, cfg=self.cfg)
             except Exception as exc:
-                if not cards and offset == start_offset and _page == 0:
-                    raise CorroborationBlocked(
-                        f"linkedin index blocked at offset 0: "
-                        f"{type(exc).__name__}: {exc}") from exc
-                # partial: return what we have + resume offset
-                return cards, offset, exhausted
+                return cards, offset, exhausted, exc
             page_cards = _parse_search_results(html)
             if not page_cards:
                 exhausted = True
@@ -148,7 +244,81 @@ class LinkedInSignalProvider:
             if len(cards) >= max_cards:
                 break
             time.sleep(_INDEX_PAUSE_S)
+        return cards, offset, exhausted, None
+
+    def index_cards(self, company: str, location: str = "United States",
+                    max_pages: int = 10, max_cards: int = 100,
+                    start_offset: int = 0) -> tuple[list[dict], int, bool]:
+        """Paginate the guest search for `company` postings (single query).
+
+        B2-safe: advances `start` by the number of cards each page actually
+        returned. Returns (cards, next_offset, exhausted) — NEVER raises on
+        page N>0 failure (partial results + resume offset instead, so a
+        mid-index wall keeps prior progress); raises only if page 0 itself
+        is blocked (caller marks the whole phase blocked).
+        """
+        variants = _company_variants(company)
+        seen: set[str] = set()
+        cards, offset, exhausted, exc = self._paginate_query(
+            company, location, variants, max_pages, max_cards,
+            start_offset, seen)
+        if exc is not None and not cards and offset == start_offset:
+            raise CorroborationBlocked(
+                f"linkedin index blocked at offset 0: "
+                f"{type(exc).__name__}: {exc}") from exc
         return cards[:max_cards], offset, exhausted
+
+    def index_cards_partitioned(
+            self, company: str, slices: Optional[list[dict]] = None,
+            max_pages_per_slice: int = PARTITIONED_PAGES_PER_SLICE,
+            max_cards: int = PARTITIONED_MAX_CARDS
+            ) -> tuple[list[dict], int, bool]:
+        """Slice-matrix index mode (S8-E1, research §c/§f R1).
+
+        Runs every {keywords, location} slice in `slices` (default:
+        `default_index_slices(company)` — 6 keywords × 5 locations = 30
+        queries × 3 pages ≈ 90 requests) with the SAME B2-safe per-query
+        pagination, company-variant filter and inter-page politeness as
+        index_cards, plus `_SLICE_PAUSE_S` between slices. The union is
+        deduped by linkedin_job_id ACROSS slices (and within each).
+
+        Returns (cards, next_offset, exhausted) with the same contract
+        as index_cards, except next_offset is always 0: every slice
+        restarts at offset 0 on a re-run and the id-level union (kept by
+        the caller) IS the resume state — re-runs are idempotent.
+        `exhausted` is False only when some slice was transport-blocked
+        mid-run (re-run later); a slice stopping at its PAGE CAP counts
+        as complete — the cap is the designed request budget, exactly as
+        the single query's done=true is a serving ceiling (research §c).
+        Raises CorroborationBlocked only when the FIRST slice's page 0
+        is blocked and nothing was gained (mirrors index_cards).
+        """
+        if slices is None:
+            slices = default_index_slices(company)
+        variants = _company_variants(company)
+        seen: set[str] = set()
+        union: list[dict] = []
+        exhausted_all = True
+        for i, sl in enumerate(slices):
+            keywords = str(sl.get("keywords") or company).strip() or company
+            location = str(sl.get("location") or "United States").strip() \
+                or "United States"
+            cards, offset, _exhausted, exc = self._paginate_query(
+                keywords, location, variants, max_pages_per_slice,
+                max(1, max_cards - len(union)), 0, seen)
+            if exc is not None:
+                if i == 0 and not cards and offset == 0:
+                    raise CorroborationBlocked(
+                        f"linkedin partitioned index blocked on first "
+                        f"slice ({keywords!r}/{location!r}) at offset 0: "
+                        f"{type(exc).__name__}: {exc}") from exc
+                exhausted_all = False    # partial slice → re-run later
+            union.extend(cards)
+            if len(union) >= max_cards:
+                break
+            if i + 1 < len(slices):
+                time.sleep(_SLICE_PAUSE_S)
+        return union[:max_cards], 0, exhausted_all
 
     # ── signal extraction phase ────────────────────────────────────────
     def fetch_signals(self, cards: list[dict],
@@ -184,6 +354,8 @@ class LinkedInSignalProvider:
                         circuit_open = True
                 else:
                     consecutive_blocked = 0
+                    num_applicants = detail.get("num_applicants")
+                    applicants_label = detail.get("applicants_label", "")
                     rec = {
                         "linkedin_job_id": card["id"],
                         "linkedin_url": card["url"],
@@ -191,9 +363,12 @@ class LinkedInSignalProvider:
                         "company": card["company"],
                         "location": card["location"],
                         "linkedin_posted_date": card.get("date", "")[:10],
-                        "num_applicants": detail.get("num_applicants"),
-                        "applicants_label": detail.get(
-                            "applicants_label", ""),
+                        "num_applicants": num_applicants,
+                        "applicants_label": applicants_label,
+                        # S8-E1: the count is a censored bucket observation
+                        # (floor 25 / cap 200) — see module docstring.
+                        "applicantCensored": _applicant_censored(
+                            num_applicants, applicants_label),
                         "job_req_id": detail.get("job_req_id", ""),
                         "posted_time_ago": detail.get("posted_time_ago", ""),
                         "closed": detail.get("closed", False),
@@ -238,12 +413,15 @@ def join_by_req_id(signals: list[dict],
 
 def join_by_title(signals: list[dict], postings: dict[str, str],
                   company: str,
-                  req_dates: Optional[dict[str, str]] = None
+                  req_dates: Optional[dict[str, str]] = None,
+                  req_locations: Optional[dict[str, str]] = None
                   ) -> dict[str, dict]:
     """Fallback join: normalized title (+company) match, GREEDY 1:1.
 
     postings: {req_id: title}; req_dates (optional): {req_id: ISO date}
-    for proximity disambiguation. Returns {req_id: signal_record}.
+    for proximity disambiguation; req_locations (optional, S8-E1):
+    {req_id: location string} (e.g. the Workday detail locations) for
+    the location-aware tiebreak. Returns {req_id: signal_record}.
 
     1:1 contract (audit S7-A2 finding B): one LinkedIn signal describes ONE
     LinkedIn posting — copying it onto every same-key posting stamped one
@@ -251,7 +429,16 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
     (card, req) candidate pairs sharing a job_key are ranked by date
     proximity (|card date − req date|; unknown dates sort last), then
     newer card first; each card and each req is assigned at most once.
-    Unassigned reqs are simply absent (caller derives no_match)."""
+    Unassigned reqs are simply absent (caller derives no_match).
+
+    Location-aware tiebreak (S8-E1, research §f R3b): pairs whose card
+    location text overlaps the req's location string (city tokens /
+    state codes — `_location_tokens`) rank BEFORE date proximity, which
+    safely disambiguates the 91 duplicated Workday titles across sites.
+    CONSERVATIVE by construction: it only reorders existing same-key
+    candidate pairs (never creates pairs), stays neutral when either
+    side's location is missing/generic, and the greedy 1:1 assignment
+    itself is unchanged (no new fanout)."""
     from datetime import date as _date
 
     def _proximity(card_date: str, req_date: str) -> int:
@@ -264,12 +451,17 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
             return 9_999
 
     # candidate pairs (card, req) sharing a normalized key, ranked:
-    # (proximity asc, card-date desc, card_id, req_id)
+    # (location overlap desc, proximity asc, card-date desc, card_id, req_id)
     by_key: dict[str, list[dict]] = {}
+    card_loc: dict[int, frozenset] = {}
     for rec in signals:
         key = job_key(rec["title"], rec["company"])
         if key:
             by_key.setdefault(key, []).append(rec)
+            card_loc[id(rec)] = _location_tokens(
+                rec.get("location") or "")
+    req_loc = {rid: _location_tokens((req_locations or {}).get(rid) or "")
+               for rid in postings}
     rec_by_pair: dict[tuple, dict] = {}
     for rid, title in postings.items():
         key = job_key(title, company)
@@ -278,7 +470,9 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
             rd = (req_dates or {}).get(rid) or ""
             cid = str(rec.get("linkedin_job_id")
                       or rec.get("id") or id(rec))   # unique fallback
-            rec_by_pair[(_proximity(cd, rd), cd, cid, rid)] = rec
+            overlap = bool(card_loc.get(id(rec), frozenset())
+                           & req_loc[rid])
+            rec_by_pair[(not overlap, _proximity(cd, rd), cd, cid, rid)] = rec
     def _ord(d: str) -> int:
         try:
             return _date.fromisoformat(d[:10]).toordinal()
@@ -288,8 +482,8 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
     joined: dict[str, dict] = {}
     used_cards: set[str] = set()
     for key in sorted(rec_by_pair,
-                      key=lambda k: (k[0], -_ord(k[1]), k[2], k[3])):
-        rid, card_id = key[3], key[2]
+                      key=lambda k: (k[0], k[1], -_ord(k[2]), k[3], k[4])):
+        rid, card_id = key[4], key[3]
         if rid in joined or card_id in used_cards:
             continue
         joined[rid] = rec_by_pair[key]

@@ -14,6 +14,15 @@ board; a new company is ONE JSON line):
   2. DIFF vs state ({label}.state.jsonl): new = current − state,
      gone = state − current. B1 GUARD: gone is computed ONLY when the list
      completed — a partial list never marks postings as removed.
+  2b. REPOST DETECT (S8-E2, audit/findings-recency.md §7/§8): postedOn
+      labels imply a posting date (Pacific run_date − bucket); a forward
+      jump >1d on an reqId present in BOTH state and list = Workday reset
+      the posting (repost — labels and startDate move together; 12.7% of
+      measurable rows reset within 4 days of watch history). Bounded R2
+      detail re-fetch (≤5/leg) confirms via the moved startDate; events →
+      {label}.reposts.jsonl; REPOSTED section in the digest. FP guards:
+      "30 Days"→"30+ Days" is normal aging; OPEN(30+)→small bucket IS a
+      reset; unparseable labels never flag.
   3. ENRICH new postings only, bounded (DETAILS_MAX/run): full detail
      payload (description, startDate, ALL locations) + LinkedIn
      corroboration (bounded index over recent cards + signals for matched)
@@ -49,18 +58,25 @@ Usage:
   python3 scripts/gha_board_watch.py --seed-from ingest/data/workday/\
 nvidia_us_fulltime.list.jsonl --first-seen 2026-09-10
 Env knobs: WATCH_BUDGET_SECONDS, WATCH_DETAILS_MAX, WATCH_LEGS_MAX_PER_DAY,
-  WATCH_LI_INDEX_PAGES, WATCH_DETAIL_SLEEP, WATCH_LIST_SLEEP.
+  WATCH_LI_INDEX_PAGES, WATCH_DETAIL_SLEEP, WATCH_LIST_SLEEP,
+  WATCH_REPOST_REFETCH_MAX, WATCH_REPOST_REFETCH_SLEEP.
 """
 from __future__ import annotations
 
 import argparse
 import json
 import os
+import re
 import sys
 import time
-from datetime import date, datetime
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
+
+try:
+    from zoneinfo import ZoneInfo         # stdlib tz (tzdata on Linux/GHA)
+except ImportError:                       # pragma: no cover — py<3.9
+    ZoneInfo = None
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
@@ -96,6 +112,16 @@ def _float_env(name: str, default: float) -> float:
 
 DETAIL_SLEEP = _float_env("WATCH_DETAIL_SLEEP", 0.25)
 LIST_SLEEP = _float_env("WATCH_LIST_SLEEP", 0.2)
+
+# ── S8-E2 repost-detector knobs (audit/findings-recency.md §7/§8) ───────
+# R2 bounded detail re-fetch: at most REPOST_REFETCH_MAX detail calls per
+# leg for flagged rows, spaced REPOST_REFETCH_SLEEP seconds (politeness —
+# the audit's live verification used 2s spacing).
+REPOST_REFETCH_MAX = _int_env("WATCH_REPOST_REFETCH_MAX", 5)
+REPOST_REFETCH_SLEEP = _float_env("WATCH_REPOST_REFETCH_SLEEP", 1.5)
+
+OPEN_BUCKET = -1     # "Posted 30+ Days Ago" — censored bucket (age ≥31d,
+                    # exact age unknowable from the label)
 
 _digest_char_limit = 3500   # Telegram hard cap is 4096; leave headroom
 
@@ -290,10 +316,341 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
     return out
 
 
+# ── step 2b: repost / days-on-market detector (S8-E2, ────────────────────
+# audit/findings-recency.md §7/§8) ────────────────────────────────────────
+# CONTEXT (verified by the S8-C research): NVIDIA's Workday board resets
+# `startDate` and `postedOn` labels TOGETHER on repost — 28 label
+# regressions in just 4 days of watch history (12.7% of measurable rows;
+# live-confirmed 8/8 with startDate moves up to +244 days). The watch
+# diffed list→state but never noticed. `postedOn` is a bucketed label
+# computed against PACIFIC calendar dates.
+
+_PT_ZONE = "America/Los_Angeles"
+_POSTED_OPEN_RE = re.compile(r"30\s*\+\s*days\s+ago", re.IGNORECASE)
+_POSTED_NDAYS_RE = re.compile(r"(\d+)\s+days?\s+ago", re.IGNORECASE)
+
+
+def _to_pt_date(now_utc: datetime) -> date:
+    """Pacific calendar date of a UTC instant (pure; testable).
+
+    The timezone rule is THE subtle one (audit §7.4, proven empirically):
+    `postedOn` labels are computed by Workday against Pacific calendar
+    dates — over a 03:12Z (PT 09-09) → 10:35Z (PT 09-13) window every
+    normal row advanced exactly +4 label buckets, where a UTC-date
+    assumption would mispredict +3 and flag 516 normal rows. The
+    production cron runs 06:45Z — ALWAYS before Pacific midnight
+    rollover — so run_date(UTC) − label is off by exactly 1 day, every
+    single day. NEVER derive implied dates from UTC run dates or from
+    git/commit timestamps: convert the live run clock to
+    America/Los_Angeles first (stdlib zoneinfo, no new dep)."""
+    if ZoneInfo is not None:
+        try:
+            return now_utc.astimezone(ZoneInfo(_PT_ZONE)).date()
+        except Exception:               # pragma: no cover — missing tzdata
+            pass
+    # Fallback (no zoneinfo/tzdata): US DST rules — PT = UTC−8 (PST) /
+    # UTC−7 (PDT), DST from the 2nd Sunday of March to the 1st Sunday of
+    # November. Exact except on the 2 transition nights per year.
+    d = now_utc.date()
+
+    def _nth_sunday(month: int, n: int) -> date:
+        first = date(d.year, month, 1)
+        return first.replace(day=1 + (6 - first.weekday()) % 7
+                             + 7 * (n - 1))
+
+    dst = _nth_sunday(3, 2) <= d < _nth_sunday(11, 1)
+    return (now_utc - timedelta(hours=7 if dst else 8)).date()
+
+
+def _pt_run_date() -> date:
+    """Pacific calendar date of THIS run (the only implied-date basis)."""
+    return _to_pt_date(datetime.now(timezone.utc))
+
+
+def parse_posted_on(label: Optional[str]) -> Optional[int]:
+    """Conservative Workday `postedOn` parser → numeric day bucket.
+
+    "Posted Today"→0 · "Posted Yesterday"→1 · "Posted N Days Ago"→N ·
+    "Posted 30+ Days Ago"→OPEN_BUCKET (censored: age ≥31d, the exact
+    bucket is unknowable from the label). Anything else → None
+    (unparseable — callers must skip the row, NEVER guess)."""
+    s = (label or "").strip().lower()
+    if not s:
+        return None
+    if s in ("posted today", "today"):
+        return 0
+    if s in ("posted yesterday", "yesterday"):
+        return 1
+    if _POSTED_OPEN_RE.search(s):        # checked before the N-days form
+        return OPEN_BUCKET
+    m = _POSTED_NDAYS_RE.search(s)
+    if m:
+        return int(m.group(1))
+    return None
+
+
+def implied_post_date(bucket: Optional[int], run_date: date
+                      ) -> Optional[date]:
+    """Label-implied posting date = Pacific run date − bucket days.
+
+    OPEN (30+) rows are censored → None: their resets are only catchable
+    when they EXIT the bucket downward (impossible without a reset) or via
+    a startDate move."""
+    if bucket is None or bucket < 0:
+        return None
+    return run_date - timedelta(days=bucket)
+
+
+def _iso_date(s: Optional[str]) -> Optional[date]:
+    if not s:
+        return None
+    try:
+        return date.fromisoformat(str(s).strip()[:10])
+    except ValueError:
+        return None
+
+
+def _prev_implied_date(p: dict, old_bucket: int) -> Optional[date]:
+    """Previous implied post date for a numeric old bucket.
+
+    Preferred source: `implied_post_date` stored by the previous run
+    (computed against THAT run's Pacific date — exact, no re-derivation).
+    Legacy state rows (pre-S8-E2) lack the field → fall back to
+    last_seen − bucket; last_seen is the previous run's UTC date and the
+    06:45Z cron runs pre-PT-rollover, so the fallback can be up to 1 day
+    NEWER than the true PT-based date — strictly conservative (needs a
+    >2d forward jump to flag, never a false positive)."""
+    v = _iso_date(p.get("implied_post_date"))
+    if v is not None:
+        return v
+    ls = _iso_date(p.get("last_seen"))
+    if ls is not None and old_bucket >= 0:
+        return ls - timedelta(days=old_bucket)
+    return None
+
+
+def _repost_event(rid: str, row: dict, p: dict, run_date: date,
+                  label_reset: bool, label_from: str, label_to: str
+                  ) -> dict:
+    """One repost event (internal shape: the canonical record fields for
+    {label}.reposts.jsonl — see _repost_log_record — plus internal keys
+    stripped before the log write)."""
+    old_b = parse_posted_on(p.get("last_postedOn"))
+    new_b = parse_posted_on(row.get("postedOn"))
+    prev_impl = _prev_implied_date(p, old_b) if old_b is not None else None
+    new_impl = implied_post_date(new_b, run_date)
+    return {
+        "reqId": rid,
+        "title": (row.get("title") or p.get("title") or ""),
+        "detected_at": _now_iso(),
+        "prev_postedOn": p.get("last_postedOn") or "",
+        "new_postedOn": row.get("postedOn") or "",
+        "prev_implied": prev_impl.isoformat() if prev_impl is not None else None,
+        "new_implied": new_impl.isoformat() if new_impl is not None else None,
+        "prev_startDate": (p.get("last_startDate") or "").strip(),
+        "confidence": "label",
+        # internal (never written to the event log):
+        "externalPath": row.get("externalPath") or "",
+        "label_reset": label_reset,
+        "label_from": label_from,
+        "label_to": label_to,
+        "start_delta_days": None,
+    }
+
+
+def _start_date_delta(prev_sd: str, new_sd: str) -> Optional[int]:
+    """+N days when the startDate moved LATER (a direct reset — the
+    highest-confidence signal); 0 when unchanged; None when not
+    comparable. A BACKWARD move should never happen (audit §7.3 data
+    bug) — logged loudly, never a repost signal."""
+    a, b = _iso_date(prev_sd), _iso_date(new_sd)
+    if a is None or b is None:
+        return None
+    if b < a:
+        print(f"[watch] DATA BUG: startDate moved BACKWARD "
+              f"({prev_sd} → {new_sd}) — never a repost", file=sys.stderr)
+        return None
+    return (b - a).days
+
+
+def detect_reposts(current: dict[str, dict], prior: dict[str, dict],
+                   run_date: date) -> list[dict]:
+    """R1: label-implied posting-date regression detector (audit §7.3 —
+    pure list post-processing, zero extra requests).
+
+    For reqIds present in BOTH the previous state and the new list, flag
+    a REPOST when the implied post date jumps FORWARD by more than 1 day
+    (new_implied > old_implied + 1d; the +1d absorbs label-boundary
+    rounding / a 1-day label stall — Workday resets postedOn and
+    startDate together, so a label that gets YOUNGER while the calendar
+    advances means the posting date moved).
+
+    False-positive guards:
+    - numeric → OPEN ("Posted 30 Days Ago" → "Posted 30+ Days Ago") is
+      NORMAL AGING (closed bucket 30 → open ≥30): never a regression.
+    - OPEN → OPEN: both censored, nothing comparable.
+    - OPEN → small bucket IS a regression by definition — the dramatic
+      repost case ("Posted 30+ Days Ago" → "Posted 2 Days Ago"; audit
+      §4's 9 headline resets). prev_implied stays None (censored).
+    - unparseable label on either side ⇒ row skipped, never guessed.
+    - no derivable previous implied date (legacy row without last_seen)
+      ⇒ skipped."""
+    flags: list[dict] = []
+    for rid, row in current.items():
+        p = prior.get(rid)
+        if p is None:
+            continue                     # new posting — nothing to compare
+        old_b = parse_posted_on(p.get("last_postedOn"))
+        new_b = parse_posted_on(row.get("postedOn"))
+        if old_b is None or new_b is None:
+            continue                     # unparseable — skip, never flag
+        if new_b == OPEN_BUCKET:
+            continue                     # → OPEN is normal aging (30 → 30+)
+        if old_b == OPEN_BUCKET:
+            # OPEN → small bucket: regression by definition
+            flags.append(_repost_event(rid, row, p, run_date,
+                                       label_reset=True, label_from="30+d",
+                                       label_to=f"{new_b}d"))
+            continue
+        old_impl = _prev_implied_date(p, old_b)
+        new_impl = implied_post_date(new_b, run_date)
+        if old_impl is None:
+            continue                     # nothing to compare against
+        if new_impl > old_impl + timedelta(days=1):
+            flags.append(_repost_event(rid, row, p, run_date,
+                                       label_reset=True,
+                                       label_from=f"{old_b}d",
+                                       label_to=f"{new_b}d"))
+    return flags
+
+
+def detect_start_date_moves(current: dict[str, dict], prior: dict[str, dict],
+                            new_start_dates: dict[str, str],
+                            run_date: date) -> list[dict]:
+    """startDate channel (audit §7.3): a startDate that moved LATER on the
+    same reqId is a DIRECT reset event — the highest-confidence signal.
+
+    Fires whenever the state has a `last_startDate` and a new detail/list
+    observation provides one for the same reqId (this run's
+    backlog-recovery enrichment, or a list row that carries startDate).
+    Equal dates are not events; an earlier date is a data bug (logged
+    loudly, never flagged)."""
+    events: list[dict] = []
+    for rid, new_sd in (new_start_dates or {}).items():
+        p = prior.get(rid)
+        row = current.get(rid)
+        if p is None or row is None:
+            continue
+        delta = _start_date_delta(p.get("last_startDate") or "", new_sd)
+        if not delta:                    # None (bug/uncomparable) or 0
+            continue
+        ev = _repost_event(rid, row, p, run_date, label_reset=False,
+                           label_from="", label_to="")
+        ev["new_startDate"] = str(new_sd).strip()
+        ev["confidence"] = "high"
+        ev["start_delta_days"] = delta
+        events.append(ev)
+    return events
+
+
+def refetch_repost_details(flags: list[dict], board_spec: str,
+                           cfg: Config, deadline: float
+                           ) -> tuple[list[dict], dict[str, str]]:
+    """R2: bounded detail re-fetch for R1-flagged rows (audit §7.3).
+
+    ≤ REPOST_REFETCH_MAX (5) detail calls per leg, REPOST_REFETCH_SLEEP
+    (1.5s) apart — captures the NEW startDate, converting label
+    suspicions into measured reset events (magnitude +Nd) and feeding the
+    state's `last_startDate` / `startDate_first`. Best-effort by design:
+    an unreachable detail leaves the event at 'label' confidence; a
+    budget stop leaves the remainder unconfirmed. Returns (events,
+    {reqId: new_startDate})."""
+    if not flags:
+        return [], {}
+    board = workday.parse_board(board_spec)
+    events = [dict(f) for f in flags]
+    start_updates: dict[str, str] = {}
+    fetched = 0
+    for ev in events:
+        if fetched >= REPOST_REFETCH_MAX:
+            break                        # bounded: 5 detail calls max/leg
+        if time.monotonic() > deadline:
+            print(f"[watch] repost re-fetch budget stop after {fetched} "
+                  f"of {len(events)} flagged", flush=True)
+            break
+        path = ev.get("externalPath") or ""
+        if not path:
+            continue
+        fetched += 1
+        payload = workday.detail_payload(board, path, cfg)
+        info = (payload or {}).get("jobPostingInfo") or {}
+        new_sd = (info.get("startDate") or "").strip()
+        if not new_sd:
+            continue                     # detail unreachable — 'label' stays
+        ev["new_startDate"] = new_sd
+        delta = _start_date_delta(ev.get("prev_startDate") or "", new_sd)
+        if delta:                        # moved LATER → direct reset
+            ev["confidence"] = "high"
+            ev["start_delta_days"] = delta
+        start_updates[ev["reqId"]] = new_sd
+        time.sleep(REPOST_REFETCH_SLEEP)  # politeness between detail calls
+    return events, start_updates
+
+
+def _merge_repost_events(events: list[dict], extra: list[dict]) -> list[dict]:
+    """Merge the two detection channels into ONE event per reqId (the
+    event log gets one line per repost per run). A startDate-move event
+    for an already-flagged reqId upgrades it in place (confidence high,
+    measured magnitude)."""
+    by_rid: dict[str, dict] = {}
+    for e in events:
+        by_rid[e["reqId"]] = e
+    for e in extra:
+        base = by_rid.get(e["reqId"])
+        if base is None:
+            by_rid[e["reqId"]] = e
+            continue
+        base["new_startDate"] = e.get("new_startDate")
+        base["confidence"] = "high"
+        base["start_delta_days"] = e.get("start_delta_days")
+        base["prev_startDate"] = (base.get("prev_startDate")
+                                  or e.get("prev_startDate") or "")
+    return list(by_rid.values())
+
+
+_REPOST_LOG_KEYS = ("reqId", "title", "detected_at", "prev_postedOn",
+                    "new_postedOn", "prev_implied", "new_implied",
+                    "prev_startDate", "confidence")
+
+
+def _repost_log_record(ev: dict) -> dict:
+    """Canonical {label}.reposts.jsonl record (task S8-E2 / audit §7.1):
+    internal detector keys (externalPath, label buckets, magnitude) are
+    stripped; `new_startDate` is included only when a detail was actually
+    observed this run."""
+    rec = {k: ev.get(k) for k in _REPOST_LOG_KEYS}
+    if ev.get("new_startDate"):
+        rec["new_startDate"] = ev["new_startDate"]
+    return rec
+
+
+def _repost_magnitude(ev: dict) -> str:
+    """Digest magnitude, e.g. 'label reset 21d→2d, startDate +244d'."""
+    parts: list[str] = []
+    if ev.get("label_reset"):
+        parts.append(f"label reset {ev.get('label_from')}→"
+                     f"{ev.get('label_to')}")
+    d = ev.get("start_delta_days")
+    if d:
+        parts.append(f"startDate +{d}d")
+    return ", ".join(parts) if parts else "unmeasured"
+
+
 # ── step 4+5: state update + alert digest ────────────────────────────────
 def format_digest(label: str, company: str, new_rows: list[dict],
                   enriched: list[dict], signals: dict[str, dict],
-                  gone_rows: list[dict], current_count: int) -> str:
+                  gone_rows: list[dict], current_count: int,
+                  repost_events: Optional[list[dict]] = None) -> str:
     """Plain-text digest → alerts.log + job summary (Telegram sends HTML
     from the same lines; chunking keeps every channel under its cap)."""
     today = date.today().isoformat()
@@ -320,6 +677,17 @@ def format_digest(label: str, company: str, new_rows: list[dict],
                      f"(first seen {r.get('first_seen')})")
     if len(gone_rows) > 20:
         lines.append(f"GONE … and {len(gone_rows) - 20} more (state file)")
+    # S8-E2: REPOSTED section (after NEW/GONE — same line format family:
+    # title + magnitude, e.g. "Senior DFT Engineer (label reset 21d→2d,
+    # startDate +244d)"). Digest keeps 10; full history in reposts.jsonl.
+    if repost_events:
+        lines.append(f"REPOSTED ({len(repost_events)})")
+        for ev in repost_events[:10]:
+            lines.append(f"REPOSTED {ev.get('title')} "
+                         f"({_repost_magnitude(ev)})")
+        if len(repost_events) > 10:
+            lines.append(f"REPOSTED … and {len(repost_events) - 10} more "
+                         "(reposts.jsonl)")
     return "\n".join(lines)
 
 
@@ -440,6 +808,43 @@ def run_watch(w: dict, cfg: Config) -> str:
             e["signals"] = s
     _append_jsonl(WATCH_DIR / f"{label}.newposts.jsonl", enriched)
 
+    # ── S8-E2 repost detector: R1 label regression + R2 bounded re-fetch ─
+    # (additive phase — a failure here is logged and skipped, never
+    # fatal; the diff/enrich/state phases above are untouched). run_date
+    # is computed OUTSIDE the try: the state rewrite below needs it too.
+    run_date = _pt_run_date()
+    repost_events: list[dict] = []
+    refetch_sd: dict[str, str] = {}
+    try:
+        flags = detect_reposts(current, prior, run_date)
+        if flags:
+            print(f"[watch:{label}] repost detector: {len(flags)} label "
+                  "regression(s)", flush=True)
+        events, refetch_sd = refetch_repost_details(
+            flags, w["board"], cfg, deadline)
+        # startDate-move channel from THIS run's detail observations:
+        # backlog-recovery enrichment re-fetches existing reqIds — a
+        # startDate that moved LATER on the same reqId is a direct reset
+        # (highest-confidence signal), independent of the labels.
+        enr_sd = {e["reqId"]: str(e.get("startDate") or "").strip()
+                  for e in enriched
+                  if e.get("reqId") in prior
+                  and str(e.get("startDate") or "").strip()}
+        extra = detect_start_date_moves(current, prior, enr_sd, run_date)
+        repost_events = _merge_repost_events(events, extra)
+        if repost_events:
+            _append_jsonl(WATCH_DIR / f"{label}.reposts.jsonl",
+                          [_repost_log_record(e) for e in repost_events])
+            n_high = sum(1 for e in repost_events
+                         if e.get("confidence") == "high")
+            print(f"[watch:{label}] reposts: {len(repost_events)} "
+                  f"event(s) ({n_high} startDate-confirmed) → "
+                  f"{label}.reposts.jsonl", flush=True)
+    except Exception as exc:    # additive detector — never fatal
+        repost_events, refetch_sd = [], {}
+        print(f"[watch:{label}] repost detector skipped: "
+              f"{type(exc).__name__}: {exc}", file=sys.stderr)
+
     # cross-post lag pass: LinkedIn often cross-posts 1-2 days AFTER the
     # Workday listing — postings first-seen within RECORROBORATE_DAYS that
     # still carry no signals get another bounded corroboration attempt.
@@ -498,9 +903,34 @@ def run_watch(w: dict, cfg: Config) -> str:
             "first_seen": p.get("first_seen") or today,
             "last_seen": today,
             "last_postedOn": r.get("postedOn") or "",
-            "last_startDate": enr_by_rid.get(rid, {}).get("startDate")
+            # S8-E2: a re-fetched (R2) startDate is the newest observation
+            # for this reqId; enrichment otherwise; prior otherwise.
+            "last_startDate": refetch_sd.get(rid)
+            or enr_by_rid.get(rid, {}).get("startDate")
             or p.get("last_startDate") or "",
         }
+        # S8-E2: implied post date, computed ONCE per run against the
+        # PACIFIC run date (kills the UTC off-by-one — see _to_pt_date).
+        # Written for numeric buckets only — OPEN (30+) is censored and
+        # unparseable labels carry no date; legacy rows without the field
+        # are compared via the conservative last_seen fallback instead.
+        impl = implied_post_date(parse_posted_on(r.get("postedOn")),
+                                 run_date)
+        if impl is not None:
+            rec["implied_post_date"] = impl.isoformat()
+        # S8-E2: startDate_first = earliest startDate ever observed for
+        # this reqId. Written when a detail was observed THIS run (new-
+        # posting enrichment or repost re-fetch); rows with no new detail
+        # evidence keep whatever they had (legacy rows: absent).
+        sd_first = p.get("startDate_first") or ""
+        new_obs = refetch_sd.get(rid) \
+            or enr_by_rid.get(rid, {}).get("startDate") or ""
+        if new_obs:
+            sd_first = min(x for x in (sd_first,
+                                       p.get("last_startDate") or "",
+                                       new_obs) if x)
+        if sd_first:
+            rec["startDate_first"] = sd_first
         if rid in need_set and rid not in enr_by_rid:
             rec["needs_enrich"] = True    # survives crash / leg cap
         keep.append(rec)
@@ -511,8 +941,11 @@ def run_watch(w: dict, cfg: Config) -> str:
         json.dumps(r, ensure_ascii=False) for r in keep) + "\n")
 
     digest = format_digest(label, w["company"], new_rows, enriched,
-                           signals, gone_rows, len(current))
-    if new_rows or gone_rows:
+                           signals, gone_rows, len(current),
+                           repost_events=repost_events)
+    # S8-E2: reposts alone justify an alert (the whole point — resets
+    # happen on days with no new/gone churn at all)
+    if new_rows or gone_rows or repost_events:
         _send_alerts(label, digest, cfg)
     print(f"[watch:{label}] digest:\n{digest}", flush=True)
 

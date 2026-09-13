@@ -418,6 +418,40 @@ class TestLinkedInGuest:
         assert _parse_req_id("job requisition id: R12345 other") == "R12345"
         assert _parse_req_id("no req here") == ""
 
+    def test_parse_req_id_bare_jr_second_pass(self):
+        """S8-E1 (research §f R3a): only 8.6% of indexed NVIDIA cards
+        embed the anchored label — descriptions carrying a bare JR#######
+        token (7-8 digits, NVIDIA's req shape) must yield it too."""
+        from jobsearch.sources.linkedin_guest import _parse_req_id
+        assert _parse_req_id(
+            "NVIDIA is hiring. Apply with requisition JR2023999 today.") \
+            == "JR2023999"
+        assert _parse_req_id("see code JR20244123 in the ad") == "JR20244123"
+        # false positives must NOT match: 6-digit, 9-digit, glued
+        assert _parse_req_id("code JR123456 is only six digits") == ""
+        assert _parse_req_id("id JR123456789 has nine digits") == ""
+        assert _parse_req_id("glued AJR2023999 has no boundary") == ""
+        assert _parse_req_id("") == ""
+
+    def test_parse_req_id_anchored_wins_on_conflict(self):
+        """S8-E1: when BOTH forms appear, the anchored 'Job Requisition
+        ID' match wins over the bare token found elsewhere in the text."""
+        from jobsearch.sources.linkedin_guest import _parse_req_id
+        text = ("Job Requisition ID R12345 … the footer mentions "
+                "JR2023999 as well")
+        assert _parse_req_id(text) == "R12345"
+
+    def test_fetch_detail_bare_jr_without_anchor(self, monkeypatch, cfg):
+        html = """
+<div class="show-more-less-html__markup">
+  <p>Join our team. Requisition code JR2024123 applies.<br>Remote role.</p>
+</div>
+"""
+        monkeypatch.setattr(linkedin_guest, "fetch_text",
+                            lambda url, **k: html)
+        detail = linkedin_guest.fetch_detail("4461860999", cfg=cfg)
+        assert detail["job_req_id"] == "JR2024123"
+
     def test_fetch_detail_extracts_signals(self, monkeypatch, cfg):
         monkeypatch.setattr(linkedin_guest, "fetch_text",
                             lambda url, **k: self.DETAIL_WITH_SIGNALS)
