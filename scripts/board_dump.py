@@ -514,6 +514,176 @@ def phase_corroborate(args, out: Path) -> int:
     return 0
 
 
+# ── phase: titlesearch (OPTIONAL — S9, design-s9-titlesearch.md C2) ──────
+
+# Terminal probe statuses (a req with one of these is CHECKED — B5);
+# blocked / blocked_empty / error are RETRIED on the next invocation.
+_TS_TERMINAL = frozenset({"hit_new", "hit_indexed", "no_card"})
+
+
+def phase_title_search(args, out: Path) -> int:
+    """Targeted LinkedIn card DISCOVERY for no_match reqs (S9).
+
+    The partitioned index (keyword×location slices) misses ~60% of
+    unmatched reqs' cards — non-engineering and niche titles never
+    surface under the 6 keyword suffixes (probe evidence: 62.5% hit
+    rate on 325/770 reqs, 2026-09-15). This phase searches each no_match
+    req's EXACT title (one relevance-sorted guest page) and appends
+    verbatim-matching cards to the li_index (source: "titleSearch") —
+    the corroborate phase's signals sub-step then fetches their detail
+    pages and finish joins them (title tier / C3 multiset tier).
+
+    State: {out}.title_search.jsonl — one line per probed reqId; ONLY
+    terminal lines (hit_new|hit_indexed|no_card) count as probed;
+    blocked/error lines retry. Meta {out}.title_search.meta.json gates
+    finish: an INCOMPLETE titlesearch ships unprobed reqs as
+    not_checked, never no_match (the S7-A2-D B5 class).
+
+    Resumable; batch-knobbed (--title-search-batch, default 50);
+    circuit breaker after TITLE_SEARCH_BREAKER consecutive blocked/
+    blocked_empty. Run AFTER --phase corroborate (needs signals +
+    index), repeat until "done: true", then --phase corroborate again
+    (fetches the new cards' signals), then --phase finish.
+    """
+    list_path = out.with_suffix(".list.jsonl")
+    sig_path = out.with_suffix(".signals.jsonl")
+    idx_path = out.with_suffix(".li_index.jsonl")
+    if not list_path.exists():
+        print(f"no {list_path} — run --phase list first")
+        return 2
+    rows = _load_jsonl(list_path)
+    signals = _load_jsonl(sig_path)
+    if not signals:
+        print(f"no {sig_path} — run --phase corroborate first")
+        return 2
+    details: dict[str, dict] = {}
+    for d in _load_jsonl(out.with_suffix(".details.jsonl")):
+        details[d["reqId"]] = d
+    req_ids = {r["reqId"] for r in rows}
+
+    # current join population (SAME functions finish uses — req_dates +
+    # req_locations included; design review finding 8)
+    req_dates = {rid: (details.get(rid) or {}).get("info", {}).get(
+        "startDate") or "" for rid in req_ids}
+    req_locations: dict[str, str] = {}
+    for rid in req_ids:
+        info = (details.get(rid) or {}).get("info") or {}
+        locs = [info.get("location") or ""] + list(
+            info.get("additionalLocations") or [])
+        loc_str = "; ".join(l for l in locs if l)
+        if loc_str:
+            req_locations[rid] = loc_str
+    matched_ids, no_match_ids = corroborate.join_population(
+        [s for s in signals if s.get("status") == "matched"],
+        {r["reqId"]: r["title"] for r in rows}, args.company,
+        req_dates={k: v for k, v in req_dates.items() if v},
+        req_locations=req_locations)
+    print(f"[titlesearch] join population: {len(matched_ids)} matched, "
+          f"{len(no_match_ids)} no_match", flush=True)
+
+    # resume state — terminal lines only count as probed
+    ts_path = out.with_suffix(".title_search.jsonl")
+    ts_meta_path = out.with_suffix(".title_search.meta.json")
+    probed: dict[str, str] = {}
+    for rec in _load_jsonl(ts_path):
+        st = rec.get("status")
+        if rec.get("reqId") and st in _TS_TERMINAL:
+            probed[rec["reqId"]] = st
+    todo = [r for r in rows if r["reqId"] in no_match_ids
+            and r["reqId"] not in probed]
+    print(f"[titlesearch] {len(probed)} terminal-probed, "
+          f"{len(todo)} to probe this round", flush=True)
+
+    # known card ids: li_index + every card appended in THIS batch
+    # (refreshed per accepted card — sibling reqs verbatim-hit the same
+    # card; a stale set double-appends; design review finding 6)
+    known_ids = {str(c.get("id")) for c in _load_jsonl(idx_path)}
+    provider = corroborate.get_provider(args.provider)
+    batch = todo[:args.title_search_batch]
+    n_hit = n_new = n_nocard = n_retry = 0
+    consecutive_blocked = 0
+    aborted = False
+    if batch:
+        with open(ts_path, "a", encoding="utf-8") as tf, \
+                open(idx_path, "a", encoding="utf-8") as ix:
+            for i, r in enumerate(batch):
+                title = (r.get("title") or "").strip()
+                loc = corroborate.li_location(
+                    r.get("primaryLocation") or "")
+                rec = {"reqId": r["reqId"], "title": title,
+                       "primaryLocation": r.get("primaryLocation") or "",
+                       "query_location": loc}
+                hits, exc = provider.search_title(
+                    title, loc, known_ids, company=args.company)
+                if exc is not None:
+                    rec["status"] = "blocked_empty" if "blocked_empty" \
+                        in str(exc) else "blocked" if (
+                            "403" in str(exc) or "blocked" in str(exc).lower()
+                        ) else "error"
+                    rec["error"] = str(exc)[:200]
+                    n_retry += 1
+                    consecutive_blocked += 1
+                    if consecutive_blocked >= corroborate.TITLE_SEARCH_BREAKER:
+                        rec["aborted"] = True
+                        tf.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                        print(f"[titlesearch] CIRCUIT BREAKER after "
+                              f"{consecutive_blocked} consecutive blocks "
+                              f"— batch stopped at {i + 1}/{len(batch)}",
+                              flush=True)
+                        aborted = True
+                        break
+                else:
+                    consecutive_blocked = 0
+                    # search_title excludes known_ids (in-batch
+                    # refreshed), so every hit IS new to the index
+                    rec["hits"] = [
+                        {k: h.get(k) for k in
+                         ("id", "title", "location", "date", "url")}
+                        for h in hits]
+                    for h in hits:
+                        card = dict(h)
+                        card["source"] = "titleSearch"
+                        ix.write(json.dumps(card, ensure_ascii=False) + "\n")
+                        known_ids.add(str(h.get("id")))   # in-batch refresh
+                    if hits:
+                        rec["status"] = "hit_new"
+                        n_hit += 1
+                        n_new += len(hits)
+                    else:
+                        rec["status"] = "no_card"
+                        n_nocard += 1
+                tf.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                tf.flush()
+                ix.flush()
+                print(f"  [{i + 1}/{len(batch)}] {r['reqId']} "
+                      f"{rec['status']}", flush=True)
+                time.sleep(corroborate.TITLE_SEARCH_PAUSE_S)
+
+    # completion meta — the finish gate (P0 finding 1). Recomputed from
+    # the state file so it reflects THIS batch's appends.
+    all_probed: dict[str, str] = {}
+    for rec in _load_jsonl(ts_path):
+        if rec.get("reqId") and rec.get("status") in _TS_TERMINAL:
+            all_probed[rec["reqId"]] = rec["status"]
+    population_now = no_match_ids  # population snapshot for THIS run
+    unprobed = [rid for rid in population_now if rid not in all_probed]
+    done = not unprobed and not aborted
+    _atomic_write_text(ts_meta_path, json.dumps({
+        "done": done, "probed": len(all_probed),
+        "terminal": len(all_probed),
+        "population": len(population_now),
+        "unprobed": len(unprobed)}, indent=1))
+    print(f"[titlesearch] batch: {n_hit} hits ({n_new} new cards), "
+          f"{n_nocard} no_card, {n_retry} retryable; "
+          f"state: {len(all_probed)} terminal / {len(population_now)} "
+          f"population → done={done}", flush=True)
+    if not done:
+        print("[titlesearch] re-run this phase until done=true, then "
+              "--phase corroborate (new cards' signals), then finish",
+              flush=True)
+    return 0
+
+
 # ── phase: tagfacets (OPTIONAL — S8-D gaps #2/#3) ─────────────────────────
 
 def phase_facet_tags(args, out: Path) -> int:
@@ -784,6 +954,30 @@ def phase_finish(args, out: Path) -> int:
         except json.JSONDecodeError:
             pass
 
+    # S9 titlesearch completion gate (design review finding 1, P0):
+    # no_match is only final when the targeted title-search ran to
+    # completion over the no_match population. An INCOMPLETE (or
+    # interrupted-by-circuit-breaker) titlesearch ships unprobed reqs
+    # as not_checked — B5. Absent state = the pre-S9 semantics stand
+    # (index-done ⇒ no_match): the titlesearch phase is optional and
+    # its absence must not regress old dumps.
+    ts_state_path = out.with_suffix(".title_search.jsonl")
+    ts_meta_path = out.with_suffix(".title_search.meta.json")
+    ts_started = ts_state_path.exists()
+    ts_done = False
+    if ts_meta_path.exists():
+        try:
+            ts_done = bool(json.loads(
+                ts_meta_path.read_text(encoding="utf-8")).get("done"))
+        except json.JSONDecodeError:
+            pass
+    ts_terminal: set[str] = set()
+    if ts_started:
+        for rec in _load_jsonl(ts_state_path):
+            if rec.get("reqId") and rec.get("status") in (
+                    "hit_new", "hit_indexed", "no_card"):
+                ts_terminal.add(rec["reqId"])
+
     # join: reqId exact first, then title fallback (1:1 greedy,
     # matchMethod recorded). req_dates = detail startDates for the
     # proximity disambiguation; req_locations (S8-E1) = detail
@@ -824,15 +1018,23 @@ def phase_finish(args, out: Path) -> int:
             sig = title_join.get(r["reqId"])
             if sig:
                 sig = dict(sig)
-                sig["match_method"] = "title"
+                sig["match_method"] = ("titleMultiset"
+                                       if sig.get("match_tier") == "multiset"
+                                       else "title")
             elif r["reqId"] in blocked_join:
                 # posting maps to a card whose fetch was blocked — status
                 # `blocked`, retryable, never "no_match" (B5)
                 sig = dict(blocked_join[r["reqId"]])
-            elif index_done:
-                # index exhausted + no card for this posting = honestly
-                # not cross-posted (within the indexed window)
+            elif index_done and (not ts_started or ts_done
+                                 or r["reqId"] in ts_terminal):
+                # index exhausted + title-search exhausted (or never
+                # started — pre-S9 semantics) + no card for this posting
+                # = honestly not cross-posted (within the checked window)
                 sig = {"status": "no_match"}
+            elif index_done:
+                # S9: index done but titlesearch incomplete and this req
+                # was never terminally probed — not_checked (B5)
+                sig = {"status": "not_checked"}
             else:
                 sig = None
         if sig and not sig.get("fetched_at"):
@@ -965,7 +1167,7 @@ def main() -> int:
                     help="LinkedIn corroboration search location")
     ap.add_argument("--phase", default="finish",
                     choices=["list", "details", "corroborate",
-                             "tagfacets", "finish"])
+                             "titlesearch", "tagfacets", "finish"])
     ap.add_argument("--details-batch", type=int, default=150)
     ap.add_argument("--require-details", action="store_true")
     ap.add_argument("--sleep", type=float, default=0.2)
@@ -985,6 +1187,9 @@ def main() -> int:
     ap.add_argument("--li-index-cards", type=int, default=100)
     ap.add_argument("--signals-batch", type=int, default=40,
                     help="LinkedIn detail fetches per invocation")
+    ap.add_argument("--title-search-batch", type=int, default=50,
+                    help="(titlesearch phase) no_match reqs probed per "
+                         "invocation [S9]")
     ap.add_argument("--provider", default="linkedin",
                     choices=sorted(corroborate.PROVIDERS))
     ap.add_argument("--out-dir", default=str(
@@ -1000,6 +1205,8 @@ def main() -> int:
         return phase_details(args, out)
     if args.phase == "corroborate":
         return phase_corroborate(args, out)
+    if args.phase == "titlesearch":
+        return phase_title_search(args, out)
     if args.phase == "tagfacets":
         return phase_facet_tags(args, out)
     return phase_finish(args, out)

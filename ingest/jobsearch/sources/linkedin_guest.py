@@ -83,10 +83,18 @@ def _parse_search_results(html: str) -> list[dict]:
 
 
 def job_key(title: str, company: str) -> str:
-    """Normalize title+company to catch reposts with different IDs (original)."""
+    """Normalize title+company to catch reposts with different IDs (original).
+
+    S9 C4: internal whitespace is collapsed (`\\s+` → single space) — the
+    GT calibration found a true pair separated only by a double space
+    ("…Manager,  DSX OS" ↔ "…Manager, DSX OS"). Side effect (disclosed,
+    design-s9 v2 finding 13): job_key is also the `fetch()` ingestion
+    dedup key, so whitespace variants now dedup there too (benign,
+    directionally correct)."""
     values = []
     for value in (title, company):
         normalized = unescape(clean_html(value)).strip().lower()
+        normalized = re.sub(r"\s+", " ", normalized)
         for pattern in (r"\s*[-–—]\s*.*$", r"\s*\(.*?\)\s*$", r"\s*\|.*$"):
             normalized = re.sub(pattern, "", normalized).strip()
         values.append(normalized)

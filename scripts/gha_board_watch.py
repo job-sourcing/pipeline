@@ -102,6 +102,15 @@ BUDGET_SECONDS = _int_env("WATCH_BUDGET_SECONDS", 240)
 DETAILS_MAX = _int_env("WATCH_DETAILS_MAX", 40)
 LEGS_MAX_PER_DAY = _int_env("WATCH_LEGS_MAX_PER_DAY", 6)
 LI_INDEX_PAGES = _int_env("WATCH_LI_INDEX_PAGES", 10)
+
+# S9 C5 (design-s9-titlesearch.md): targeted title-search fallback for
+# new postings the daily-window index can't match (the window sees only
+# the ~100 most recent cards; the S9 probe measured 62.5% of no_match
+# reqs' cards are findable by exact-title search). Run-level cap shared
+# by the MAIN corroborate call ONLY — the cross-post lag pass never
+# title-searches (corroborate_new runs twice per watch run; a stateless
+# fallback would double-search misses daily — design review finding 3).
+TITLE_SEARCH_MAX = _int_env("WATCH_TITLE_SEARCH_MAX", 40)
 RECORROBORATE_DAYS = _int_env("WATCH_RECORROBORATE_DAYS", 2)
 def _float_env(name: str, default: float) -> float:
     try:
@@ -240,30 +249,14 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
     return out
 
 
-def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
-                    deadline: float) -> dict[str, dict]:
-    """LinkedIn signals for the new postings (bounded index + bounded
-    signals; circuit-breakered inside the provider). Returns
-    {reqId: signal_record} — reqId-exact when the description carries one,
-    title-match otherwise. A blocked index is a no-op (B5: recorded, not
-    raised — next run retries)."""
-    if not new_rows:
-        return {}
-    if time.monotonic() > deadline:
-        print("[watch] budget exhausted before corroboration — skipped",
-              flush=True)
-        return {}
-    provider = corroborate.get_provider("linkedin", cfg=cfg)
-    try:
-        cards, _, _ = provider.index_cards(
-            company=company, location="United States",
-            max_pages=LI_INDEX_PAGES, max_cards=LI_INDEX_PAGES * 10,
-            start_offset=0)
-    except corroborate.CorroborationBlocked as exc:
-        print(f"[watch] LinkedIn index blocked: {exc}", file=sys.stderr)
-        return {}
-    if not cards:
-        return {}
+def _window_match(provider, cards: list[dict], new_rows: list[dict],
+                  company: str) -> tuple[dict, set]:
+    """Daily-window match (S9 C5 refactor — previously inline in
+    corroborate_new): job_key match of index cards → new postings,
+    detail-fetch of matched cards, GREEDY 1:1 with reqId-exact override
+    and the foreign-reqId-card-serves-nobody policy. Returns
+    ({reqId: signal}, served_card_ids). The S9 title-search fallback
+    runs AFTER this on whatever it left unmatched."""
     # match cards → new postings on the normalized title key (the LinkedIn
     # index covers the ~100 most recent cards; new postings sort to the top
     # under sortBy=DD — the right window for a daily watch)
@@ -282,7 +275,7 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
     if not matched:
         print(f"[watch] 0/{len(new_rows)} new postings cross-posted to "
               f"LinkedIn (of {len(cards)} recent cards)", flush=True)
-        return {}
+        return {}, set()
     signals = provider.fetch_signals([c for c, _ in matched][:DETAILS_MAX])
     sig_by_card = {str(s.get("linkedin_job_id")): s for s in signals
                    if s.get("status") == "matched"}
@@ -313,6 +306,118 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
                 break
     print(f"[watch] corroborated {len(out)}/{len(new_rows)} new postings "
           f"({len(cards)} cards indexed)", flush=True)
+    return out, served_cards
+
+
+def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
+                    deadline: float,
+                    title_search_budget: Optional[list] = None
+                    ) -> dict[str, dict]:
+    """LinkedIn signals for the new postings (bounded index + bounded
+    signals; circuit-breakered inside the provider). Returns
+    {reqId: signal_record} — reqId-exact when the description carries one,
+    title-match otherwise. A blocked index is a no-op (B5: recorded, not
+    raised — next run retries).
+
+    S9 C5: `title_search_budget` = [remaining] (a mutable cell shared at
+    RUN level by the main call; the lag pass passes nothing → no title
+    search). After the daily-window match, unmatched new postings get a
+    targeted exact-title guest search (`corroborate.search_title`) whose
+    verbatim hits are detail-fetched and assigned with the SAME reqId-
+    exact / 1:1 / foreign-reqId-serves-nobody policy as the window path."""
+    if not new_rows:
+        return {}
+    if time.monotonic() > deadline:
+        print("[watch] budget exhausted before corroboration — skipped",
+              flush=True)
+        return {}
+    provider = corroborate.get_provider("linkedin", cfg=cfg)
+    try:
+        cards, _, _ = provider.index_cards(
+            company=company, location="United States",
+            max_pages=LI_INDEX_PAGES, max_cards=LI_INDEX_PAGES * 10,
+            start_offset=0)
+    except corroborate.CorroborationBlocked as exc:
+        print(f"[watch] LinkedIn index blocked: {exc}", file=sys.stderr)
+        return {}
+    out: dict[str, dict] = {}
+    served_cards: set[str] = set()
+    # S9 C5: the two early-exit paths below (no cards / no window
+    # matches) must FALL THROUGH to the title-search fallback, not
+    # return — the fallback is exactly for postings the window can't
+    # see. Both paths leave out={} and flow to the fallback block.
+    if cards:
+        out, served_cards = _window_match(
+            provider, cards, new_rows, company)
+    else:
+        print(f"[watch] LinkedIn index returned 0 cards", flush=True)
+    # ── S9 C5: targeted title-search fallback ─────────────────────────
+    # The daily window (~100 most recent cards, sortBy=DD) misses most
+    # niche-title cross-posts. For unmatched new postings: one exact-
+    # title guest search each (verbatim predicate, GT-calibrated),
+    # detail-fetch the hit, assign under the same policy. Bounded by the
+    # run-level budget cell + wall-clock deadline + circuit breaker.
+    if title_search_budget is None:
+        return out
+    unmatched = [r for r in new_rows if r["reqId"] not in out]
+    if not unmatched or title_search_budget[0] <= 0:
+        return out
+    n_ts = 0
+    consecutive_blocked = 0
+    for r in unmatched:
+        if title_search_budget[0] <= 0:
+            break
+        if time.monotonic() > deadline:
+            print(f"[watch] budget stop in title-search at {n_ts} "
+                  f"searches", flush=True)
+            break
+        if consecutive_blocked >= corroborate.TITLE_SEARCH_BREAKER:
+            print(f"[watch] title-search circuit breaker after "
+                  f"{consecutive_blocked} consecutive blocks", flush=True)
+            break
+        title = (r.get("title") or "").strip()
+        if not title:
+            continue
+        loc = corroborate.li_location(r.get("primaryLocation") or "")
+        hits, exc = provider.search_title(
+            title, loc, {str(c["id"]) for c in cards}, company=company)
+        title_search_budget[0] -= 1
+        n_ts += 1
+        if exc is not None:
+            consecutive_blocked += 1
+            continue
+        consecutive_blocked = 0
+        if not hits:
+            continue
+        # detail-fetch the best hit only (1:1 by construction — the card
+        # was FOUND by this req's exact title)
+        card = hits[0]
+        try:
+            sigs = provider.fetch_signals([card])
+        except Exception:
+            continue
+        s = next((x for x in sigs if x.get("status") == "matched"), None)
+        if not s or str(card["id"]) in served_cards:
+            continue
+        jr = s.get("job_req_id")
+        rid = r["reqId"]
+        if jr:
+            if jr == rid:
+                out[rid] = s              # reqId-exact confirmation
+                served_cards.add(str(card["id"]))
+            # foreign reqId: this verbatim-titled card is a sibling
+            # requisition's posting — serves nobody (same policy as the
+            # window path)
+            continue
+        if rid not in out:                # title fallback, 1:1
+            out[rid] = s
+            served_cards.add(str(card["id"]))
+        time.sleep(corroborate.TITLE_SEARCH_PAUSE_S)
+    if n_ts:
+        n_ts_matched = sum(1 for r in unmatched if r["reqId"] in out)
+        print(f"[watch] title-search fallback: +{n_ts_matched} matches "
+              f"from {n_ts} searches "
+              f"(budget {title_search_budget[0]} left)", flush=True)
     return out
 
 
@@ -801,7 +906,10 @@ def run_watch(w: dict, cfg: Config) -> str:
     enrich_input = (new_rows + backlog_rows)[:DETAILS_MAX * 2]         if backlog_rows else new_rows
     enriched = enrich_new(enrich_input, w["board"], w["company"], cfg,
                           deadline, prior_feed=enriched_feed)
-    signals = corroborate_new(enrich_input, w["company"], cfg, deadline)
+    # S9 C5: run-level title-search budget cell — shared by THIS main
+    # corroborate call only (the lag pass below never title-searches)
+    signals = corroborate_new(enrich_input, w["company"], cfg, deadline,
+                              title_search_budget=[TITLE_SEARCH_MAX])
     for e in enriched:
         s = signals.get(e["reqId"])
         if s:

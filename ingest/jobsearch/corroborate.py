@@ -101,6 +101,100 @@ APPLICANT_BUCKET_CAP = 200
 PARTITIONED_PAGES_PER_SLICE = 3
 PARTITIONED_MAX_CARDS = 1000
 
+# S9 targeted title-search knobs (design-s9-titlesearch.md C1): ONE
+# relevance-sorted guest page per no_match req, verbatim-match predicate
+# (GT-calibrated 2026-09-15: 318 reqId-joined pairs are verbatim —
+# token-F1=1.0 for 99%, seniority-set equality 100%).
+TITLE_SEARCH_PAUSE_S = 1.5
+TITLE_SEARCH_BREAKER = 4        # consecutive blocked/blocked_empty stop
+
+# S9 canonical title-matching predicate API — ONE tokenizer, no script-
+# local copies (design review finding 10: the probe scripts had already
+# drifted 3-4 ways). Verbatim predicate = token-set F1 >= 0.95 AND
+# seniority-set equality (both GT-verified properties of true pairs).
+TOKEN_STOPWORDS = frozenset({
+    "and", "the", "of", "for", "a", "an", "in", "to", "at", "us",
+    "usa", "united", "states", "ii", "iii", "iv", "team", "teams",
+    "new",
+})
+SENIORITY_TOKENS = frozenset({
+    "senior", "sr", "staff", "principal", "distinguished", "architect",
+    "manager", "director", "vp", "lead", "junior", "jr", "intern",
+    "entry",
+})
+
+
+def title_tokens(title: str) -> list[str]:
+    """Canonical tokenization for title matching (S9): lowercase
+    alphanumeric runs >= 2 chars minus TOKEN_STOPWORDS."""
+    return [t for t in re.findall(r"[a-z0-9]{2,}", (title or "").lower())
+            if t not in TOKEN_STOPWORDS]
+
+
+def _seniority_set(title: str) -> frozenset:
+    return frozenset(t for t in re.findall(r"[a-z0-9]{2,}",
+                                           (title or "").lower())
+                     if t in SENIORITY_TOKENS)
+
+
+def token_multiset_key(title: str, company: str) -> tuple:
+    """Order/punctuation-insensitive title key (S9 C3): sorted token
+    MULTISET (stopwords KEPT — removing them conflates live title pairs
+    like 'Senior Account Manager - Walmart' ↔ 'Senior Account Manager,
+    Walmart' under stop-set keys; the multiset keeps 213/213 probe hit
+    pairs distinct). Company appends the namespace like job_key."""
+    return (tuple(sorted(re.findall(r"[a-z0-9]{2,}", (title or "").lower()))),
+            (company or "").strip().lower())
+
+
+def verbatim_match(req_title: str, card_title: str) -> bool:
+    """GT-calibrated verbatim predicate: is this LinkedIn card title a
+    copy of the Workday req title (modulo punctuation / word order /
+    whitespace)? Token-set F1 >= 0.95 over canonical tokens AND exact
+    seniority-set equality (a senior/non-senior pair is a DIFFERENT req
+    even at F1=1.0 — verified against live near-miss pages)."""
+    rt, ct = set(title_tokens(req_title)), set(title_tokens(card_title))
+    if not rt or not ct:
+        return False
+    inter = rt & ct
+    if not inter:
+        return False
+    p, r = len(inter) / len(ct), len(inter) / len(rt)
+    f1 = 2 * p * r / (p + r)
+    return f1 >= 0.95 and _seniority_set(req_title) == _seniority_set(
+        card_title)
+
+
+# Workday primaryLocation "US, CA, Santa Clara" -> LinkedIn guest
+# location "Santa Clara, California" (S9 C1; board-agnostic shape).
+_US_STATES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
+    "CA": "California", "CO": "Colorado", "CT": "Connecticut",
+    "DE": "Delaware", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii",
+    "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa",
+    "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine",
+    "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan",
+    "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri",
+    "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico",
+    "NY": "New York", "NC": "North Carolina", "ND": "North Dakota",
+    "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania",
+    "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota",
+    "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont",
+    "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
+    "WI": "Wisconsin", "WY": "Wyoming", "DC": "District of Columbia",
+}
+
+
+def li_location(primary_location: str) -> str:
+    """Translate a Workday primaryLocation into a LinkedIn guest search
+    location. Unparsable / remote / country-level -> "United States"
+    (neutral, matches the existing single-query default)."""
+    parts = [p.strip() for p in (primary_location or "").split(",")]
+    if len(parts) >= 3 and parts[1].upper() in _US_STATES:
+        return f"{parts[2]}, {_US_STATES[parts[1].upper()]}"
+    return "United States"
+
 # Default slice matrix (research §c/§f R1): keyword variants × the card-
 # location top set from the NVIDIA li_index.
 _SLICE_KEYWORD_SUFFIXES = (
@@ -245,6 +339,48 @@ class LinkedInSignalProvider:
                 break
             time.sleep(_INDEX_PAUSE_S)
         return cards, offset, exhausted, None
+
+    def search_title(self, req_title: str, location: str,
+                     known_ids: set, company: str = "NVIDIA"
+                     ) -> tuple[list[dict], Optional[Exception]]:
+        """S9 targeted title search (design-s9-titlesearch.md C1): ONE
+        relevance-sorted guest page with keywords = the EXACT Workday req
+        title, returns NVIDIA cards whose title passes `verbatim_match`
+        (GT-calibrated), excluding ids in `known_ids`.
+
+        Contract: transport errors are RETURNED AS VALUES (the
+        `_paginate_query` shape), never propagated. A page that returns
+        ZERO parsed cards is reported via the exception value
+        `CorroborationBlocked('blocked_empty', ...)` — an HTTP-200-empty
+        page is indistinguishable from a soft wall and must never read
+        as "no results" (design review finding 5). The caller refreshes
+        `known_ids` with every accepted card WITHIN its batch (sibling
+        requisitions verbatim-hit the same card)."""
+        url = f"{SEARCH_URL}?{urlencode({
+            'keywords': (req_title or "").strip(),
+            'location': location or "United States", 'start': 0})}"
+        try:
+            html = fetch_text(url, cfg=self.cfg)
+        except Exception as exc:
+            return [], exc
+        cards = _parse_search_results(html)
+        if not cards:
+            # 200-empty: soft-wall ambiguity — retryable, never terminal
+            return [], CorroborationBlocked(
+                "blocked_empty: title search returned an empty page "
+                "(soft wall ambiguity — design-s9 C1)")
+        variants = _company_variants(company)
+        out = []
+        for card in cards:
+            cid = str(card.get("id") or "")
+            if cid in known_ids:
+                continue
+            if (card.get("company") or "").strip().lower() not in variants:
+                continue
+            if not verbatim_match(req_title, card.get("title") or ""):
+                continue
+            out.append(card)
+        return out, None
 
     def index_cards(self, company: str, location: str = "United States",
                     max_pages: int = 10, max_cards: int = 100,
@@ -488,7 +624,71 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
             continue
         joined[rid] = rec_by_pair[key]
         used_cards.add(card_id)
+
+    # S9 C3 tier: order/punctuation-insensitive multiset key — the
+    # join-side half of the `search_title` acceptance predicate (F1>=0.95
+    # is looser than job_key equality: '…Engineer - Tegra' ↔
+    # '…Engineer, Tegra' fails job_key but is a true pair). Same greedy
+    # 1:1 + location/proximity ranking, seniority-set equality guard,
+    # only over pairs the job_key tier did NOT consume.
+    remaining_reqs = [rid for rid in postings if rid not in joined]
+    if remaining_reqs:
+        mkey_cards: dict[tuple, list[dict]] = {}
+        for rec in signals:
+            if str(rec.get("linkedin_job_id") or rec.get("id")
+                   or id(rec)) in used_cards:
+                continue
+            mk = token_multiset_key(rec["title"], rec["company"])
+            if mk[0]:
+                mkey_cards.setdefault(mk, []).append(rec)
+        m_pairs: dict[tuple, dict] = {}
+        for rid in remaining_reqs:
+            mk = token_multiset_key(postings[rid], company)
+            if not mk[0]:
+                continue
+            for rec in mkey_cards.get(mk, []):
+                if _seniority_set(postings[rid]) != _seniority_set(
+                        rec["title"]):
+                    continue
+                cd = str(rec.get("linkedin_posted_date") or "")
+                rd = (req_dates or {}).get(rid) or ""
+                cid = str(rec.get("linkedin_job_id")
+                          or rec.get("id") or id(rec))
+                overlap = bool(card_loc.get(id(rec), frozenset())
+                               & req_loc[rid])
+                m_pairs[(not overlap, _proximity(cd, rd), cd, cid, rid)] = rec
+        for key in sorted(m_pairs,
+                          key=lambda k: (k[0], k[1], -_ord(k[2]), k[3], k[4])):
+            rid, card_id = key[4], key[3]
+            if rid in joined or card_id in used_cards:
+                continue
+            joined[rid] = {**m_pairs[key], "match_tier": "multiset"}
+            used_cards.add(card_id)
     return joined
+
+
+# ── population helper (S9 C1a — ONE canonical join-population ────────)
+
+def join_population(signals: list[dict], postings: dict[str, str],
+                     company: str,
+                     req_dates: Optional[dict[str, str]] = None,
+                     req_locations: Optional[dict[str, str]] = None
+                     ) -> tuple[set, set]:
+    """The current join population over `postings` ({req_id: title}):
+    (matched_req_ids, unmatched_req_ids). SAME functions finish uses
+    (reqId tier + title tiers incl. S9 C3) — the titlesearch phase and
+    finish must agree on who is no_match (design review finding 8:
+    the corroborate-phase join preview already drifted from finish by
+    omitting req_dates/req_locations; this helper is the fix — callers
+    MUST pass both to keep parity)."""
+    matched = [s for s in signals if s.get("status") == "matched"]
+    joined = join_by_req_id(matched, set(postings))
+    title_join = join_by_title(matched, postings, company,
+                               req_dates=req_dates,
+                               req_locations=req_locations)
+    for rid, rec in title_join.items():
+        joined.setdefault(rid, rec)
+    return set(joined), set(postings) - set(joined)
 
 
 # ── provider registry (the generalization seam) ─────────────────────────

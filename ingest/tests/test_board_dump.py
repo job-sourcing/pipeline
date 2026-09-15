@@ -1053,8 +1053,12 @@ class TestV21Columns:
         assert row["daysOnMarket"] == 5
         assert row["daysOnMarketBasis"] == "startDate"
         # postingAgeDays stays the CURRENT-epoch age (same computation
-        # while the only evidence is startDate — semantics documented)
-        assert row["postingAgeDays"] == row["daysOnMarket"]
+        # while the only evidence is startDate — semantics documented).
+        # Date-independent expectation (S7 time-bomb class: the original
+        # equality assertion expired the moment today moved past the
+        # snapshot date).
+        from datetime import date as _d
+        assert row["postingAgeDays"] == (_d.today() - _d(2026, 9, 8)).days
 
     def test_days_on_market_missing_start_date(self):
         row = _v21_row(start="")

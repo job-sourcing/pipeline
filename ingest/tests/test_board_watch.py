@@ -644,7 +644,7 @@ class TestRecorroborate:
         # new-corroboration returns nothing; lag pass must hit JR9
         monkeypatch.setattr(
             watch, "corroborate_new",
-            lambda rows, company, cfg, deadline: (
+            lambda rows, company, cfg, deadline, **k: (
                 {"JR9": {"num_applicants": 42,
                          "status": "matched"}} if rows else {}))
         monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
