@@ -161,6 +161,23 @@ def test_fetch_pagination_bounded_by_first_page_total(cfg, monkeypatch):
     assert jobs[39].title.endswith("39")
 
 
+def test_fetch_pagination_steps_by_cards_received(cfg, monkeypatch):
+    """S9-audit F3 (P2, the B2 anti-pattern): a SHORT page mid-list must
+    advance the offset by the cards it actually served — the old fixed
+    _PAGE_LIMIT step skipped postings 35-39 after a 15-card page."""
+    pages = [_page_response(40, [_posting(i) for i in range(20)]),
+             _page_response(0, [_posting(i) for i in range(20, 35)]),
+             _page_response(0, [_posting(i) for i in range(35, 40)])]
+    rec = _Recorder(pages)
+    monkeypatch.setattr(workday, "fetch_json", rec)
+    monkeypatch.setattr(workday, "_detail", lambda *a, **k: None)
+
+    jobs = workday.fetch("", location="", num_results=100, cfg=cfg)
+    assert len(jobs) == 40                     # nothing skipped
+    assert [c["json"]["offset"] for c in rec.calls] == [0, 20, 35]
+    assert jobs[34].title.endswith("34") and jobs[35].title.endswith("35")
+
+
 def test_fetch_remote_uses_server_side_remote_facet(cfg, monkeypatch):
     """location='Remote' on a board WITH a locationHierarchy2 facet →
     server-side Remote filter (the exhaustive path), no client filter."""
@@ -244,6 +261,44 @@ def test_fetch_plain_remote_location_filters_client_side(cfg, monkeypatch):
     assert len(jobs) == 1 and "Remote" in jobs[0].location
     # no facet was requested (no second page-0 call)
     assert len(rec.calls) == 1
+
+
+# ── detail_payload — the info:{} zombie contract (S9-audit F3/C1) ─────
+
+
+def test_detail_payload_requires_job_posting_info(cfg, monkeypatch):
+    """A 200 whose jobPostingInfo is absent/empty is an ERROR (None —
+    the module's failure convention), not a success dict: board_dump
+    translates None into error='detail_unreachable' with attempts (the
+    3-strike cap), instead of writing a never-settled {"reqId",
+    "info": {}} zombie that re-fetches forever and ships
+    detailError=""."""
+    good = {"jobPostingInfo": {"title": "T", "startDate": "2026-09-08"},
+            "hiringOrganization": {"name": "2100 NVIDIA USA"},
+            "similarJobs": []}
+    board = ("nvidia", "wd5", "site")
+    monkeypatch.setattr(workday, "fetch_json", lambda *a, **k: good)
+    assert workday.detail_payload(board, "/job/X_JR1", cfg) is good
+
+    # 200 dict WITHOUT jobPostingInfo (req taken down between list+detail)
+    monkeypatch.setattr(workday, "fetch_json",
+                        lambda *a, **k: {"someOtherKey": 1})
+    assert workday.detail_payload(board, "/job/X_JR1", cfg) is None
+
+    # 200 dict with an EMPTY jobPostingInfo — same zombie shape
+    monkeypatch.setattr(workday, "fetch_json",
+                        lambda *a, **k: {"jobPostingInfo": {}})
+    assert workday.detail_payload(board, "/job/X_JR1", cfg) is None
+
+    # non-dict 200 body
+    monkeypatch.setattr(workday, "fetch_json", lambda *a, **k: "nope")
+    assert workday.detail_payload(board, "/job/X_JR1", cfg) is None
+
+    # transport failure (the pre-existing convention, pinned)
+    def boom(*a, **k):
+        raise RuntimeError("429")
+    monkeypatch.setattr(workday, "fetch_json", boom)
+    assert workday.detail_payload(board, "/job/X_JR1", cfg) is None
 
 
 # ── dump_board() — the exhaustive mission-side API ─────────────────────────

@@ -322,18 +322,30 @@ class _TsProvider:
         self.known_ids_seen: list[set] = []
 
     def search_title(self, req_title, location, known_ids,
-                     company="NVIDIA"):
+                     company="NVIDIA", mark_indexed=False):
         self.search_calls.append((req_title, location))
         self.known_ids_seen.append(set(known_ids))
         # find which req this is by title match in the script keys
         for rid, (hits, exc) in self.script.items():
             if rid.endswith("_" + req_title[:8]) or rid in req_title:
-                return hits, exc
+                return self._flag(hits, known_ids, mark_indexed), exc
         # fallback: sequential
         key = list(self.script)[self._i % len(self.script)] \
             if self.script else None
         self._i = (getattr(self, "_i", 0) + 1)
-        return self.script.get(key, ([], None))
+        hits, exc = self.script.get(key, ([], None))
+        return self._flag(hits, known_ids, mark_indexed), exc
+
+    @staticmethod
+    def _flag(hits, known_ids, mark_indexed):
+        """Model the real contract (S9-audit B3/F1): known cards are
+        dropped unless mark_indexed, in which case they carry the
+        `indexed` flag."""
+        if not mark_indexed:
+            return [h for h in hits
+                    if str(h.get("id")) not in known_ids]
+        return [dict(h, indexed=True) if str(h.get("id")) in known_ids
+                else h for h in hits]
 
     _i = 0
 
@@ -441,21 +453,27 @@ class TestPhaseTitleSearch:
                                              monkeypatch):
         # two sibling reqs share a title; the second probe must NOT
         # re-append the card the first probe accepted (in-batch
-        # known_ids refresh — review finding 6)
+        # known_ids refresh — review finding 6). S9-audit E1: the old
+        # fake scripted the second call to [] (the refresh was never
+        # exercised — deleting line-level refresh passed green); this
+        # version ALWAYS returns the card and models the real
+        # known_ids/mark_indexed contract, so the second probe must
+        # classify hit_indexed on the in-batch-refreshed id.
         reqs = [("JR1", "Senior Account Manager"), ("JR2", "Senior Account Manager")]
         out = self._seed(tmp_path, reqs, [_sig(9, req_id="JR9")], [_card(9)])
         the_card = _card(50, title="Senior Account Manager")
-        calls = {"n": 0}
 
         class P(_TsProvider):
             def search_title(self, req_title, location, known_ids,
-                             company="NVIDIA"):
-                calls["n"] += 1
+                             company="NVIDIA", mark_indexed=False):
+                self.search_calls.append((req_title, location))
                 self.known_ids_seen.append(set(known_ids))
-                return ([the_card] if calls["n"] == 1 else []), None
+                hits = self._flag([the_card], known_ids, mark_indexed)
+                return hits, None
 
+        prov = P({})
         monkeypatch.setattr(board_dump.corroborate, "get_provider",
-                            lambda name, cfg=None: P({}))
+                            lambda name, cfg=None: prov)
         monkeypatch.setattr(corroborate, "TITLE_SEARCH_PAUSE_S", 0)
         board_dump.phase_title_search(_ts_args(), out)
         idx = [json.loads(x) for x in
@@ -463,11 +481,16 @@ class TestPhaseTitleSearch:
                    encoding="utf-8").splitlines()]
         appended = [c for c in idx if c.get("source") == "titleSearch"]
         assert len(appended) == 1                    # appended exactly once
-        # and the second probe SAW the card id in known_ids
-        idx = [json.loads(x) for x in
-               out.with_suffix(".title_search.jsonl").read_text(
-                   encoding="utf-8").splitlines()]
-        assert [s["status"] for s in idx] == ["hit_new", "no_card"]
+        # the in-batch refresh: probe 2 SAW the freshly appended id
+        assert len(prov.known_ids_seen) == 2
+        assert str(the_card["id"]) not in prov.known_ids_seen[0]
+        assert str(the_card["id"]) in prov.known_ids_seen[1]
+        state = [json.loads(x) for x in
+                 out.with_suffix(".title_search.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        # sibling found the card already indexed — CHECKED non-match,
+        # never a re-append and never a silent no_card
+        assert [s["status"] for s in state] == ["hit_new", "hit_indexed"]
 
     def test_resume_skips_terminal(self, tmp_path, monkeypatch):
         reqs = [("JR1", "Engineer"), ("JR2", "Engineer II")]
@@ -819,3 +842,55 @@ class TestS9AuditJoinFixes:
         joined = corroborate.join_by_title(
             sigs, {"JR1": "Engineer"}, "NVIDIA")
         assert joined == {}
+
+
+class TestLiLocationRemote:
+    def test_remote_city_not_state_suffixed(self):
+        """S9-audit B1: 'US, CA, Remote' must map to 'Remote' (the
+        LinkedIn remote filter), not 'Remote, California' which
+        over-restricts to CA-tagged remote cards."""
+        assert corroborate.li_location("US, CA, Remote") == "Remote"
+        assert corroborate.li_location("US, TX, Remote") == "Remote"
+        # normal cities keep the state suffix
+        assert corroborate.li_location(
+            "US, CA, Santa Clara") == "Santa Clara, California"
+        # unparsable/country-level stay neutral
+        assert corroborate.li_location("United States") == "United States"
+        assert corroborate.li_location("") == "United States"
+
+
+class TestForeignReqIdCardServesNobody:
+    """S9-audit INV-2 residual: a jr-carrying card is THAT req's posting
+    — it must not serve a verbatim-titled sibling in the title tiers,
+    even when the named req has departed the board (2 live rows:
+    JR2020197/JR2023145, JR2020640/JR2012573)."""
+
+    def test_job_key_tier_skips_jr_card(self):
+        sigs = [_sig(1, title="Engineer", req_id="JRDEPARTED")]
+        joined = corroborate.join_by_title(
+            sigs, {"JR1": "Engineer"}, "NVIDIA")
+        assert joined == {}
+
+    def test_multiset_tier_skips_jr_card(self):
+        sigs = [_sig(1, title="Engineer Infra", req_id="JRDEPARTED")]
+        joined = corroborate.join_by_title(
+            sigs, {"JR1": "Infra Engineer"}, "NVIDIA")
+        assert joined == {}
+
+    def test_jrless_card_still_joins(self):
+        sigs = [_sig(1, title="Engineer", req_id="")]
+        joined = corroborate.join_by_title(
+            sigs, {"JR1": "Engineer"}, "NVIDIA")
+        assert "JR1" in joined
+
+    def test_own_jr_blocked_card_still_joins(self):
+        """A BLOCKED card carrying THIS req's id is the req's own walled
+        card — it must still surface `blocked` (B5), the guard only
+        rejects FOREIGN ids."""
+        from jobsearch.corroborate import STATUS_BLOCKED
+        sigs = [_sig(1, title="Engineer", req_id="JR1")]
+        sigs[0]["status"] = STATUS_BLOCKED
+        sigs[0]["num_applicants"] = None
+        joined = corroborate.join_by_title(
+            sigs, {"JR1": "Engineer"}, "NVIDIA")
+        assert joined["JR1"]["status"] == STATUS_BLOCKED

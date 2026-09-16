@@ -209,7 +209,16 @@ def detail_payload(board: tuple[str, str, str], external_path: str,
     hiringOrganization + similarJobs + userAuthenticated) or None.
 
     Added for the v2 dump (design-board-v2.md D1) — raw preservation of
-    every field the API returns, future-proofing the enrichment."""
+    every field the API returns, future-proofing the enrichment.
+
+    Failure convention (S9-audit F3/C1, the info:{} zombie): ANY
+    not-usable response returns None — a transport error, a non-dict
+    body, or an HTTP-200 dict whose jobPostingInfo is absent/empty (a
+    req taken down between list and detail GET serves exactly that
+    shape). Callers translate None into their error path (board_dump's
+    detail_unreachable + attempts/3-strike; the watch's error record)
+    instead of writing a never-settled {"reqId", "info": {}} record
+    that re-fetches forever and ships detailError=""."""
     tenant, instance, site = board
     try:
         payload = fetch_json(
@@ -217,7 +226,12 @@ def detail_payload(board: tuple[str, str, str], external_path: str,
             cfg=cfg, headers={"Accept": "application/json"})
     except Exception:  # noqa: BLE001 — detail is enrichment, never fatal
         return None
-    return payload if isinstance(payload, dict) else None
+    if not isinstance(payload, dict):
+        return None
+    info = payload.get("jobPostingInfo")
+    if not isinstance(info, dict) or not info:
+        return None    # 200-without-jobPostingInfo — error, not success
+    return payload
 
 
 def _detail(board: tuple[str, str, str], external_path: str,
@@ -427,7 +441,12 @@ def _fetch_board(board: tuple[str, str, str], keywords: str, location: str,
                 break
         if len(collected) >= confirmed_cap:
             break
-        offset += _PAGE_LIMIT
+        # ADAPTIVE step (B2 — S9-audit F3): advance by cards RECEIVED,
+        # never a fixed _PAGE_LIMIT step — a short page mid-list followed
+        # by a fixed step silently SKIPS postings (the dump primitive
+        # _paginate does exactly this; iter_board_postings' contract
+        # warns about it).
+        offset += len(postings)
         if offset >= total or pages >= _MAX_PAGES:
             break
         nxt = _page(board, facets, offset, cfg)

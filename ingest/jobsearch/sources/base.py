@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import re
 from datetime import datetime, timezone
+from html import unescape
 from dataclasses import dataclass
 from typing import Callable, Optional
 
@@ -90,8 +91,14 @@ def extract_email(text: str) -> Optional[str]:
 
 
 def clean_html(value: str) -> str:
-    # lifted from hendrixfreire linkedin.py
-    return re.sub(r"<[^>]+>", "", value).strip()
+    # lifted from hendrixfreire linkedin.py. S9-audit F3 (P2, the CR-1
+    # entity-decoding doctrine): strip tags FIRST, then decode HTML
+    # entities — raw "&amp;"/"&#39;"/"&nbsp;" sequences were flowing into
+    # Job.description (and from there into TF-IDF/LLM prompts and the
+    # predicate surfaces) from the call sites that don't pre-unescape.
+    # Order matters: unescaping BEFORE the strip would resurrect real
+    # tags from "&lt;script&gt;".
+    return unescape(re.sub(r"<[^>]+>", "", value)).strip()
 
 
 # ── date / salary helpers ──────────────────────────────────────────────────

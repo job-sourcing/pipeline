@@ -62,6 +62,7 @@ Live-verified facts leaned on (2026-09-09):
 from __future__ import annotations
 
 import re
+import sys
 import time
 from datetime import datetime
 from html import unescape
@@ -72,6 +73,7 @@ from .config import Config
 from .sources import linkedin_guest
 from .sources.base import fetch_text
 from .sources.linkedin_guest import (
+    _CARDS_PER_PAGE,          # guest page width — short-page exhaustion
     _parse_search_results,   # card parser (10-card pages)
     job_key,                 # normalized title+company key
     SEARCH_URL,
@@ -214,10 +216,17 @@ _US_STATES = {
 
 def li_location(primary_location: str) -> str:
     """Translate a Workday primaryLocation into a LinkedIn guest search
-    location. Unparsable / remote / country-level -> "United States"
-    (neutral, matches the existing single-query default)."""
+    location. Unparsable / country-level -> "United States" (neutral,
+    matches the existing single-query default).
+
+    S9-audit B1 fix: a REMOTE city part ("US, CA, Remote") maps to
+    "Remote" — NOT "Remote, California", which over-restricts the
+    search to CA-tagged remote cards (31/790 live probes, 11 of them
+    no_card)."""
     parts = [p.strip() for p in (primary_location or "").split(",")]
     if len(parts) >= 3 and parts[1].upper() in _US_STATES:
+        if parts[2].lower() == "remote":
+            return "Remote"
         return f"{parts[2]}, {_US_STATES[parts[1].upper()]}"
     return "United States"
 
@@ -243,8 +252,17 @@ _LOC_STOPWORDS = frozenset((
 
 class CorroborationBlocked(RuntimeError):
     """Raised ONLY when the provider wall-blocks the very first index page
-    (nothing gained, caller marks the phase blocked). Mid-flow failures
-    degrade gracefully instead — see fetch_signals' no-raise contract."""
+    (nothing gained, caller marks the phase blocked) — or when a page
+    serves zero cards over an HTTP 200 ('blocked_empty' — the S9 soft-wall
+    doctrine: wall-ambiguous, retryable, never terminal). Mid-flow
+    failures degrade gracefully instead — see fetch_signals' no-raise
+    contract."""
+
+
+# Card keys _blocked_record and fetch_signals' matched-record build index
+# STRICTLY — a card dict missing one cannot produce a record (S9-audit
+# D3 P3: a malformed li_index line must skip with a note, never crash).
+_CARD_REQUIRED_KEYS = ("id", "url", "title", "company", "location")
 
 
 def _blocked_record(card: dict, error: str = "blocked") -> dict:
@@ -333,10 +351,18 @@ class LinkedInSignalProvider:
         Shared worker for index_cards (single mode) and
         index_cards_partitioned (slice mode). Mutates `seen` with every
         accepted card id. Returns (cards, next_offset, exhausted, exc):
-        `exc` is the transport error that stopped the query mid-run
-        (None when it ran to its page/exhaustion/card bounds); the CALLER
-        decides whether a page-0 exc is fatal (CorroborationBlocked —
-        nothing gained) or a partial result to keep.
+        `exc` is the error that stopped the query mid-run — a transport
+        error, or CorroborationBlocked('blocked_empty') when an
+        HTTP-200 page serves ZERO cards (the S9 soft-wall doctrine,
+        design-s9-titlesearch.md C1 — the same rule search_title
+        enforces: an empty 200 page is wall-ambiguous and RETRYABLE,
+        never terminal; the caller decides whether a page-0 exc is
+        fatal — nothing gained → raise — or a partial result to keep
+        and resume). `exhausted` is True only on GENUINE end-of-serving:
+        a SHORT page (< _CARDS_PER_PAGE cards) that still has cards.
+        (S9-audit D3 P2: the old code treated the empty 200 page as
+        terminal exhaustion — a mid-index soft wall read as done=true
+        and the dump never re-opened the index.)
         """
         cards: list[dict] = []
         offset = start_offset
@@ -351,8 +377,15 @@ class LinkedInSignalProvider:
                 return cards, offset, exhausted, exc
             page_cards = _parse_search_results(html)
             if not page_cards:
-                exhausted = True
-                break
+                # HTTP-200 with zero cards: soft-wall ambiguity —
+                # retryable, never done (S9 doctrine; see docstring).
+                # With the short-page rule below, this branch is only
+                # reachable after a FULL page or at a resume boundary
+                # that lands exactly at the end of the serving window.
+                return cards, offset, exhausted, CorroborationBlocked(
+                    "blocked_empty: index page at offset "
+                    f"{offset} served no cards (soft wall ambiguity — "
+                    "design-s9 C1; retryable, never done)")
             for card in page_cards:
                 if card["id"] in seen:
                     continue
@@ -361,18 +394,32 @@ class LinkedInSignalProvider:
                 seen.add(card["id"])
                 cards.append(card)
             offset += max(len(page_cards), 1)
+            if len(page_cards) < _CARDS_PER_PAGE:
+                # a SHORT page with cards is the serving tail — genuine
+                # exhaustion (guest pages serve _CARDS_PER_PAGE cards
+                # until the end; only a 0-card 200 page is ambiguous).
+                exhausted = True
+                break
             if len(cards) >= max_cards:
                 break
             time.sleep(_INDEX_PAUSE_S)
         return cards, offset, exhausted, None
 
     def search_title(self, req_title: str, location: str,
-                     known_ids: set, company: str = "NVIDIA"
+                     known_ids: set, company: str = "NVIDIA",
+                     mark_indexed: bool = False
                      ) -> tuple[list[dict], Optional[Exception]]:
         """S9 targeted title search (design-s9-titlesearch.md C1): ONE
         relevance-sorted guest page with keywords = the EXACT Workday req
         title, returns NVIDIA cards whose title passes `verbatim_match`
         (GT-calibrated), excluding ids in `known_ids`.
+
+        mark_indexed=True (S9-audit B3/F1 P2 fix): known cards are
+        returned WITH an `indexed: True` flag instead of being dropped —
+        lets the titlesearch phase distinguish hit_indexed (a verbatim
+        card EXISTS but is already indexed — a CHECKED non-match) from
+        no_card (nothing verbatim exists). Default False keeps the
+        watch's drop-known behavior.
 
         Contract: transport errors are RETURNED AS VALUES (the
         `_paginate_query` shape), never propagated. A page that returns
@@ -400,6 +447,10 @@ class LinkedInSignalProvider:
         for card in cards:
             cid = str(card.get("id") or "")
             if cid in known_ids:
+                if mark_indexed:
+                    indexed = dict(card)
+                    indexed["indexed"] = True
+                    out.append(indexed)
                 continue
             if (card.get("company") or "").strip().lower() not in variants:
                 continue
@@ -417,7 +468,10 @@ class LinkedInSignalProvider:
         returned. Returns (cards, next_offset, exhausted) — NEVER raises on
         page N>0 failure (partial results + resume offset instead, so a
         mid-index wall keeps prior progress); raises only if page 0 itself
-        is blocked (caller marks the whole phase blocked).
+        is blocked or serves zero cards (caller marks the whole phase
+        blocked). `exhausted` (done) is True only on a genuine serving
+        tail: a short page with cards — an empty 200 page is returned as
+        a blocked_empty exc (retryable), never as done (S9-audit D3).
         """
         variants = _company_variants(company)
         seen: set[str] = set()
@@ -449,11 +503,14 @@ class LinkedInSignalProvider:
         restarts at offset 0 on a re-run and the id-level union (kept by
         the caller) IS the resume state — re-runs are idempotent.
         `exhausted` is False only when some slice was transport-blocked
-        mid-run (re-run later); a slice stopping at its PAGE CAP counts
-        as complete — the cap is the designed request budget, exactly as
-        the single query's done=true is a serving ceiling (research §c).
+        OR served an empty 200 page mid-run (soft-wall ambiguity —
+        re-run later; S9-audit D3); a slice stopping at its PAGE CAP or
+        on a short tail page counts as complete — the cap is the
+        designed request budget, exactly as the single query's done=true
+        is a serving ceiling (research §c).
         Raises CorroborationBlocked only when the FIRST slice's page 0
-        is blocked and nothing was gained (mirrors index_cards).
+        is blocked or serves zero cards and nothing was gained
+        (mirrors index_cards).
         """
         if slices is None:
             slices = default_index_slices(company)
@@ -497,11 +554,25 @@ class LinkedInSignalProvider:
         of the deliverable contract (design D1 col 29). `on_record(rec)`
         (optional) fires per record the moment it exists — per-card
         checkpointing for callers (the details phase's per-row doctrine).
+
+        Malformed card dicts (missing any of id/url/title/company/
+        location, or not a dict at all — a well-formed-JSON li_index
+        line can still be shape-wrong) are SKIPPED with a stderr note
+        instead of crashing the batch (S9-audit D3 P3); well-formed
+        cards keep the one-in-one-out contract.
         """
         out: list[dict] = []
         consecutive_blocked = 0
         circuit_open = False
         for card in cards:
+            if not isinstance(card, dict) \
+                    or any(k not in card for k in _CARD_REQUIRED_KEYS):
+                missing = ("not a dict" if not isinstance(card, dict)
+                           else ", ".join(k for k in _CARD_REQUIRED_KEYS
+                                          if k not in card))
+                print(f"[corroborate] skipping malformed index card "
+                      f"(missing {missing}): {card!r}", file=sys.stderr)
+                continue
             rec = None
             if circuit_open:
                 rec = _blocked_record(card, error="circuit_open")
@@ -663,6 +734,15 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
         for rec in by_key.get(key, []):
             if not verbatim_match(title, rec["title"]):
                 continue          # key-equal but not a verbatim pair
+            # S9-audit INV-2 residual (2 live rows): a card whose
+            # description embeds ANOTHER requisition's id is that req's
+            # posting — it serves NOBODY by title, even when the named
+            # req has departed the board (same policy as the watch's
+            # _window_match: "foreign reqId serves nobody"). jr == rid
+            # (this req's OWN blocked card) still joins.
+            jr = (rec.get("job_req_id") or "").strip()
+            if jr and jr != rid:
+                continue
             cd = str(rec.get("linkedin_posted_date") or "")
             rd = (req_dates or {}).get(rid) or ""
             cid = str(rec.get("linkedin_job_id")
@@ -711,6 +791,9 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
                 if _seniority_set(postings[rid]) != _seniority_set(
                         rec["title"]):
                     continue
+                jr = (rec.get("job_req_id") or "").strip()
+                if jr and jr != rid:
+                    continue    # foreign-reqId card serves nobody
                 cd = str(rec.get("linkedin_posted_date") or "")
                 rd = (req_dates or {}).get(rid) or ""
                 cid = str(rec.get("linkedin_job_id")

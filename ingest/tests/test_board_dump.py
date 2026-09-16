@@ -101,7 +101,7 @@ class TestDeriveCsvRow:
     def test_column_contract(self):
         row = self._row()
         assert set(row) == set(board_dump.CSV_COLUMNS)
-        assert len(board_dump.CSV_COLUMNS) == 43   # v2.1: +10 (S8-E3)
+        assert len(board_dump.CSV_COLUMNS) == 44   # v2.4: +1 (S9-audit)
 
     def test_locations_enumerated_not_truncated(self):
         row = self._row(det={"info": _detail_info(addl=[
@@ -120,8 +120,8 @@ class TestDeriveCsvRow:
     def test_remote_flag(self):
         row = self._row(det={"info": _detail_info(addl=["US, Remote"]),
                              "hiringOrg": "x", "similarJobsCount": 0})
-        assert row["remoteFlag"] is True
-        assert self._row()["remoteFlag"] is False
+        assert row["remoteFlag"] == "true"
+        assert self._row()["remoteFlag"] == "false"
 
     def test_description_clean_text(self):
         row = self._row()
@@ -135,7 +135,7 @@ class TestDeriveCsvRow:
         assert row["postingAgeDays"] == 1          # today − yesterday (dynamic)
         assert row["reqYear"] == "2026"
         assert row["hiringOrg"] == "2100 NVIDIA USA"
-        assert row["questionnaire"] is True
+        assert row["questionnaire"] == "true"
         assert row["similarJobsCount"] == 5
         assert row["country"] == "United States of America"
 
@@ -501,7 +501,9 @@ class TestPhaseDetailsResume:
             json.dumps({"reqId": "JR2", "error": "detail_unreachable",
                         "attempts": 3}) + "\n", encoding="utf-8")
         rc = self._run(out, monkeypatch, fail={"JR1", "JR2"})
-        assert rc == 0
+        # S9-audit C4: a batch that writes error records now exits 1
+        # (retryable but attention-needing — was fail-green rc 0)
+        assert rc == 1
         lines = self._lines(out)
         # JR2 is past the 3-strike cap → SKIPPED (still exactly 1 line);
         # JR1 (attempts=1) retried → attempts=2; JR3 fetched fresh
@@ -524,6 +526,46 @@ class TestPhaseDetailsResume:
         # past the cap: nothing retried, nothing appended
         self._run(out, monkeypatch, fail={"JR1", "JR2"})
         assert len(self._lines(out)) == 5
+
+    def test_empty_info_200_settles_as_error_record_with_attempts(
+            self, tmp_path, monkeypatch):
+        """S9-audit F3/C1 (the info:{} zombie), end-to-end through the
+        REAL workday.detail_payload: an HTTP-200 body WITHOUT
+        jobPostingInfo must land in phase_details' error path —
+        error='detail_unreachable' + attempts accumulate → the 3-strike
+        cap settles it — never a never-settled {"reqId", "info": {}}
+        record that re-fetches forever and ships detailError="". """
+
+        def fake_fetch_json(url, *, cfg, headers=None, **k):
+            # path carries the reqId (see _list_row's externalPath)
+            if url.endswith("_JR1"):
+                return {"someOtherKey": 1}    # 200, req taken down
+            return {"jobPostingInfo": _detail_info(),
+                    "hiringOrganization": {"name": "2100 NVIDIA USA"},
+                    "similarJobs": []}
+
+        monkeypatch.setattr(board_dump.workday, "fetch_json",
+                            fake_fetch_json)
+        out = self._write_list(tmp_path, ["JR1", "JR2"])
+        rc = board_dump.phase_details(_det_args(), out)
+        # S9-audit C4: error records written this run → rc 1
+        assert rc == 1
+        lines = self._lines(out)
+        by_rid = {d["reqId"]: d for d in lines}
+        assert by_rid["JR2"]["info"]["title"] == "Engineer"   # settled
+        # the zombie shape is GONE: JR1 is an error record with attempts
+        assert "info" not in by_rid["JR1"]
+        assert by_rid["JR1"]["error"] == "detail_unreachable"
+        assert by_rid["JR1"]["attempts"] == 1
+
+        # strikes 2 and 3: attempts accumulate, then the cap settles it
+        board_dump.phase_details(_det_args(), out)
+        board_dump.phase_details(_det_args(), out)
+        jr1 = [d for d in self._lines(out) if d["reqId"] == "JR1"]
+        assert [d["attempts"] for d in jr1] == [1, 2, 3]
+        assert len(self._lines(out)) == 4          # JR2 never re-fetched
+        board_dump.phase_details(_det_args(), out)
+        assert len(self._lines(out)) == 4          # past the cap: no retry
 
     def test_settled_rows_are_never_refetched(self, tmp_path, monkeypatch):
         out = self._write_list(tmp_path, ["JR1", "JR2"])
@@ -929,6 +971,9 @@ class TestRawFidelity:
         assert set(row) == set(board_dump.CSV_COLUMNS)
         # startDate passthrough + postingAgeDays = today − startDate
         assert row["startDate"] == info["startDate"]
+        # S9-audit B2r: postingAgeDays is snapshot-frozen; this derive
+        # passes no snapshot_date so the snapshot IS today (identical
+        # value, now stable across regens run on the same day)
         assert row["postingAgeDays"] == (
             _dt.date.today()
             - _dt.date.fromisoformat(info["startDate"])).days
@@ -938,7 +983,8 @@ class TestRawFidelity:
         assert row["descriptionLength"] == len(row["description"])
         assert "<" not in row["description"]
         # questionnaire == bool(questionnaireId) (never a count/string)
-        assert row["questionnaire"] is bool(info.get("questionnaireId"))
+        assert row["questionnaire"] == ("true" if info.get(
+            "questionnaireId") else "false")
         # locations enumerated from info: [location] + additionalLocations
         addl = info.get("additionalLocations") or []
         expected = [info["location"]] + list(addl)
@@ -947,8 +993,8 @@ class TestRawFidelity:
         assert row["primaryLocation"] == info["location"]
         assert row["stateCodes"] == \
             board_dump._state_codes(expected)
-        assert row["remoteFlag"] == any(
-            "remote" in loc.lower() for loc in expected)
+        assert row["remoteFlag"] == ("true" if any(
+            "remote" in loc.lower() for loc in expected) else "false")
         # metadata passthroughs from RAW
         assert row["timeType"] == info["timeType"]
         assert row["country"] == info["country"]["descriptor"]
@@ -971,8 +1017,8 @@ class TestRawFidelity:
         assert row["locations"] == "; ".join(expected)
         assert row["nLocations"] == len(expected)
         assert "Locations" not in row["locations"][:12]  # never trunc.
-        assert row["remoteFlag"] == any(
-            "remote" in loc.lower() for loc in expected)
+        assert row["remoteFlag"] == ("true" if any(
+            "remote" in loc.lower() for loc in expected) else "false")
         # stateCodes dedup across primary+additional
         assert row["stateCodes"] == board_dump._state_codes(expected)
 
@@ -1053,13 +1099,11 @@ class TestV21Columns:
         row = _v21_row(start="2026-09-08", snapshot="2026-09-13")
         assert row["daysOnMarket"] == 5
         assert row["daysOnMarketBasis"] == "startDate"
-        # postingAgeDays stays the CURRENT-epoch age (same computation
-        # while the only evidence is startDate — semantics documented).
-        # Date-independent expectation (S7 time-bomb class: the original
-        # equality assertion expired the moment today moved past the
-        # snapshot date).
-        from datetime import date as _d
-        assert row["postingAgeDays"] == (_d.today() - _d(2026, 9, 8)).days
+        # S9-audit B2r flip (E2 time-bomb #4): postingAgeDays is now
+        # FROZEN to the snapshot like every other derived date (was
+        # wall-clock today — regenerating a day later silently shifted
+        # the whole column)
+        assert row["postingAgeDays"] == 5
 
     def test_days_on_market_missing_start_date(self):
         row = _v21_row(start="")
@@ -1326,6 +1370,51 @@ class TestFinishFacetTags:
         ])
         assert csv_rows["JR1"]["workerSubType"] == "Intern (Fixed Term)"
 
+    def test_coverage_line_and_warning_when_untagged(self, tmp_path,
+                                                     capsys):
+        """S9-C3 P2: finish makes the artifact's coverage gap VISIBLE —
+        a zero-tag row (the Sep-15 drift shape) AND a partial row (has
+        workerSubType, misses jobFamilyGroup — the incomplete-tail
+        shape) both count as untagged, in report.txt, stdout and stderr
+        (rc semantics unchanged)."""
+        out = tmp_path / "dump"
+        _write_dump_files(out, req_ids=("JR1", "JR2", "JR3"))
+        board_dump._atomic_write_text(
+            out.with_suffix(".facet_tags.jsonl"),
+            "\n".join(json.dumps(t) for t in [
+                {"reqId": "JR1", "workerSubType": "Intern (Fixed Term)"},
+                {"reqId": "JR1", "jobFamilyGroup": "Engineering"},
+                {"reqId": "JR2", "workerSubType": "Regular Employee"},
+                # JR2: no jobFamilyGroup (param present via JR1 →
+                # partial row); JR3: no tags at all
+            ]) + "\n")
+        assert board_dump.phase_finish(_finish_args(), out) == 0
+        report = out.with_suffix(".report.txt").read_text()
+        assert "facet tag coverage: 1/3 rows (2 untagged)" in report
+        captured = capsys.readouterr()
+        assert "facet tag coverage: 1/3 rows (2 untagged)" in captured.out
+        assert "WARNING: 2 board row(s) have no facet tags" in captured.err
+        assert "re-run --phase tagfacets" in captured.err
+
+    def test_coverage_line_confirms_full_coverage(self, tmp_path, capsys):
+        """Positive direction: full coverage is stated explicitly — the
+        operator no longer has to diff two report lines to know the
+        artifact covers the board (and no stderr warning fires)."""
+        out = tmp_path / "dump"
+        _write_dump_files(out, req_ids=("JR1", "JR2"))
+        board_dump._atomic_write_text(
+            out.with_suffix(".facet_tags.jsonl"),
+            "\n".join(json.dumps(t) for t in [
+                {"reqId": "JR1", "workerSubType": "Intern (Fixed Term)"},
+                {"reqId": "JR2", "workerSubType": "Regular Employee"},
+                {"reqId": "JR1", "jobFamilyGroup": "Engineering"},
+                {"reqId": "JR2", "jobFamilyGroup": "Engineering"},
+            ]) + "\n")
+        assert board_dump.phase_finish(_finish_args(), out) == 0
+        assert ("facet tag coverage: 2/2 rows (0 untagged)"
+                in out.with_suffix(".report.txt").read_text())
+        assert "no facet tags" not in capsys.readouterr().err
+
 
 # ── phase_list: facet census persistence + capped-total status (S8-E3) ────
 
@@ -1522,36 +1611,192 @@ class TestPhaseFacetTags:
         assert all(c["locationHierarchy1"] == ["USID"]
                    and c["timeType"] == ["TTFULL"] for c in sub_calls)
 
-    def test_resume_skips_done_pairs(self, tmp_path, monkeypatch):
-        """A crash mid-value leaves rows without a marker — the pair is
-        RE-RUN (harmless duplicate rows, last-wins at join); completed
-        pairs (marker present) are never re-fetched."""
+    def test_resume_after_board_growth_retags(self, tmp_path,
+                                               monkeypatch):
+        """The Sep-15 drift class, pinned as FIXED (S9-C3 P1): the board
+        gains a row UNDER AN EXISTING facet value between runs. The
+        markers were computed over the OLD population, so the board
+        fingerprint changes, every marker is superseded and ALL values
+        re-tag (row lines are idempotent last-wins at finish, so
+        re-emission is safe)."""
+        out = tmp_path / "dump"
+        board_rows = [_list_row(req_id=rid) for rid in ("JR1", "JR2", "JR3")]
+        out.with_suffix(".list.jsonl").write_text(
+            "\n".join(json.dumps(r) for r in board_rows) + "\n",
+            encoding="utf-8")
+        # mutable server state: sub-lists keyed by (param, facet id)
+        sub_lists = {
+            ("workerSubType", "WS1"): [_cxs_post("JR1"), _cxs_post("JR2")],
+            ("workerSubType", "WS2"): [_cxs_post("JR3")],
+            ("jobFamilyGroup", "JF1"): [_cxs_post("JR1"), _cxs_post("JR2"),
+                                        _cxs_post("JR3")],
+        }
+        calls: list = []
+
+        def fake_page(board, facets, offset, cfg):
+            calls.append(dict(facets))
+            if offset == 0 and not facets:
+                return {"total": 3, "jobPostings": [_cxs_post("JRX")],
+                        "facets": _tag_facets_payload()}
+            sub = {"locationHierarchy1": ["USID"], "timeType": ["TTFULL"]}
+            for (param, vid), posts in sub_lists.items():
+                if facets == {**sub, param: [vid]}:
+                    return {"total": len(posts), "jobPostings": posts}
+            raise AssertionError(f"unexpected facets {facets}")
+
+        monkeypatch.setattr(board_dump.workday, "_page", fake_page)
+        assert board_dump.phase_facet_tags(_tag_args(), out) == 0
+        assert len([c for c in calls if c]) == 3          # WS1, WS2, JF1
+
+        # board refresh: JR4 posted under the ALREADY-DONE WS1 + JF1
+        # values — the population-blind marker would have skipped them
+        board_rows.append(_list_row(req_id="JR4"))
+        out.with_suffix(".list.jsonl").write_text(
+            "\n".join(json.dumps(r) for r in board_rows) + "\n",
+            encoding="utf-8")
+        sub_lists[("workerSubType", "WS1")].append(_cxs_post("JR4"))
+        sub_lists[("jobFamilyGroup", "JF1")].append(_cxs_post("JR4"))
+
+        calls.clear()
+        assert board_dump.phase_facet_tags(_tag_args(), out) == 0
+        # population change ⇒ every value re-fetched and the NEW row
+        # carries both tags
+        assert len([c for c in calls if c]) == 3
+        jr4 = [l for l in self._lines(out) if l.get("reqId") == "JR4"]
+        assert jr4 == [{"reqId": "JR4",
+                        "workerSubType": "Intern (Fixed Term)"},
+                       {"reqId": "JR4", "jobFamilyGroup": "Engineering"}]
+        # append-only supersede: both population records and the ORIGINAL
+        # markers stay on disk — only markers after the LAST facetPop
+        # record are live
+        lines = self._lines(out)
+        assert len([l for l in lines if "facetPop" in l]) == 2
+        assert len([l for l in lines if "facetDone" in l]) == 6
+        # the re-tagged population is now current: a third run skips
+        calls.clear()
+        assert board_dump.phase_facet_tags(_tag_args(), out) == 0
+        assert [c for c in calls if c] == []
+        assert len([l for l in self._lines(out)
+                    if l.get("reqId") == "JR4"]) == 2     # +0 rows
+
+    def test_resume_unchanged_board_skips_done_pairs(self, tmp_path,
+                                                     monkeypatch):
+        """Markers now carry the board population fingerprint (facetPop
+        record): a re-run over an UNCHANGED list.jsonl trusts them and
+        fetches ZERO sub-lists — the cheap crash-resume contract the
+        population-blind marker was originally built for (S9-C3 P1)."""
         out = tmp_path / "dump"
         out.with_suffix(".list.jsonl").write_text(
-            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
-        # prior run completed the WS1 pair (rows + marker)
-        board_dump._atomic_write_text(
-            out.with_suffix(".facet_tags.jsonl"),
-            json.dumps({"reqId": "JR1", "workerSubType":
-                        "Intern (Fixed Term)"}) + "\n" +
-            json.dumps({"reqId": "JR2", "workerSubType":
-                        "Intern (Fixed Term)"}) + "\n" +
-            json.dumps({"facetDone": "workerSubType",
-                        "value": "Intern (Fixed Term)"}) + "\n")
+            "\n".join(json.dumps(_list_row(req_id=rid))
+                      for rid in ("JR1", "JR2", "JR3")) + "\n",
+            encoding="utf-8")
         calls: list = []
         monkeypatch.setattr(board_dump.workday, "_page",
                             self._fake_page(calls))
-        rc = board_dump.phase_facet_tags(_tag_args(), out)
-        assert rc == 0
-        # only WS2 + JF1 sub-lists were fetched this run
-        sub_facets = [c for c in calls if c]
-        assert [c.get("workerSubType") or c.get("jobFamilyGroup")
-                for c in sub_facets] == [["WS2"], ["JF1"]]
+        assert board_dump.phase_facet_tags(_tag_args(), out) == 0
+        assert len([c for c in calls if c]) == 3
+        lines_after_run1 = self._lines(out)
+        calls.clear()
+        assert board_dump.phase_facet_tags(_tag_args(), out) == 0
+        # only the census page-0 was fetched — zero sub-list requests
+        assert [c for c in calls if c] == []
+        assert self._lines(out) == lines_after_run1     # +0 lines
+
+    def test_incomplete_sublist_withholds_marker(self, tmp_path,
+                                                 monkeypatch):
+        """B1 mid-list failure (S9-C3 P2): rows fetched before the break
+        are kept (idempotent last-wins) but the facetDone marker is NOT
+        written — the tail is re-fetched on the next run, and only then
+        is the pair marked done."""
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            "\n".join(json.dumps(_list_row(req_id=rid))
+                      for rid in ("JR1", "JR2", "JR3")) + "\n",
+            encoding="utf-8")
+        broken = {"yes": True}
+
+        def fake_page(board, facets, offset, cfg):
+            if offset == 0 and not facets:
+                return {"total": 3, "jobPostings": [_cxs_post("JRX")],
+                        "facets": _tag_facets_payload()}
+            sub = {"locationHierarchy1": ["USID"], "timeType": ["TTFULL"]}
+            if facets == {**sub, "workerSubType": ["WS1"]}:
+                if offset == 0:
+                    # 2 of 3 cards on page-0; page-1 dies (B1 break)
+                    return {"total": 3, "jobPostings": [_cxs_post("JR1"),
+                                                        _cxs_post("JR2")]}
+                if broken["yes"]:
+                    raise RuntimeError("network down mid-list")
+                return {"total": 3, "jobPostings": [_cxs_post("JR3")]}
+            if facets == {**sub, "workerSubType": ["WS2"]}:
+                return {"total": 1, "jobPostings": [_cxs_post("JR3")]}
+            if facets == {**sub, "jobFamilyGroup": ["JF1"]}:
+                return {"total": 3, "jobPostings": [
+                    _cxs_post("JR1"), _cxs_post("JR2"), _cxs_post("JR3")]}
+            raise AssertionError(f"unexpected facets {facets}")
+
+        monkeypatch.setattr(board_dump.workday, "_page", fake_page)
+        assert board_dump.phase_facet_tags(_tag_args(), out) == 0
         lines = self._lines(out)
-        # the WS1 rows are NOT duplicated (pair skipped wholesale)
-        ws1_rows = [l for l in lines
-                    if l.get("workerSubType") == "Intern (Fixed Term)"]
-        assert len(ws1_rows) == 2
+        # partial rows kept, but NO marker for the broken value
+        assert {"reqId": "JR1",
+                "workerSubType": "Intern (Fixed Term)"} in lines
+        assert {"reqId": "JR2",
+                "workerSubType": "Intern (Fixed Term)"} in lines
+        assert not any(l.get("facetDone") == "workerSubType"
+                       and l.get("value") == "Intern (Fixed Term)"
+                       for l in lines)
+        # the two healthy values earned theirs and the phase exits 0
+        assert {(l["facetDone"], l["value"]) for l in lines
+                if "facetDone" in l} == {
+            ("workerSubType", "Regular Employee"),
+            ("jobFamilyGroup", "Engineering")}
+        # network healed: the tail is re-fetched and only THEN marked
+        broken["yes"] = False
+        assert board_dump.phase_facet_tags(_tag_args(), out) == 0
+        lines = self._lines(out)
+        assert {"reqId": "JR3",
+                "workerSubType": "Intern (Fixed Term)"} in lines
+        assert any(l.get("facetDone") == "workerSubType"
+                   and l.get("value") == "Intern (Fixed Term)"
+                   for l in lines)
+
+    def test_legacy_markers_without_population_record_superseded(
+            self, tmp_path, monkeypatch):
+        """A marker file from the pre-fingerprint code (plain facetDone
+        lines, no facetPop record — the a7c5aea-era artifact) is not
+        trusted for ANY population: the first re-run supersedes it and
+        re-tags everything (self-heal of the data-only Sep-15 "fix")."""
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            "\n".join(json.dumps(_list_row(req_id=rid))
+                      for rid in ("JR1", "JR2", "JR3")) + "\n",
+            encoding="utf-8")
+        board_dump._atomic_write_text(
+            out.with_suffix(".facet_tags.jsonl"),
+            "\n".join(json.dumps(t) for t in [
+                {"reqId": "JR1", "workerSubType": "Intern (Fixed Term)"},
+                {"reqId": "JR2", "workerSubType": "Intern (Fixed Term)"},
+                {"facetDone": "workerSubType",
+                 "value": "Intern (Fixed Term)"},
+                {"reqId": "JR3", "workerSubType": "Regular Employee"},
+                {"facetDone": "workerSubType", "value": "Regular Employee"},
+                {"reqId": "JR1", "jobFamilyGroup": "Engineering"},
+                {"reqId": "JR2", "jobFamilyGroup": "Engineering"},
+                {"reqId": "JR3", "jobFamilyGroup": "Engineering"},
+                {"facetDone": "jobFamilyGroup", "value": "Engineering"},
+            ]) + "\n")
+        calls: list = []
+        monkeypatch.setattr(board_dump.workday, "_page",
+                            self._fake_page(calls))
+        assert board_dump.phase_facet_tags(_tag_args(), out) == 0
+        # every value re-fetched despite the file claiming all three done
+        assert len([c for c in calls if c]) == 3
+        lines = self._lines(out)
+        assert any("facetPop" in l for l in lines)   # baseline established
+        # the original markers stay on disk (append-only) but are dead:
+        # 3 stale + 3 fresh
+        assert len([l for l in lines if "facetDone" in l]) == 6
 
     def test_no_list_file_is_clean_error(self, tmp_path, monkeypatch):
         monkeypatch.setattr(board_dump.workday, "_page",
@@ -1613,3 +1858,174 @@ class TestPhaseFacetTags:
         assert csv_rows["JR2"]["workerSubType"] == "Intern (Fixed Term)"
         assert csv_rows["JR1"]["jobFamilyGroup"] == "Engineering"
         assert csv_rows["JR2"]["jobFamilyGroup"] == "Engineering"
+
+
+class TestS9AuditDetailsFixes(TestPhaseDetailsResume):
+    """Pins for the S9-audit G5 fix wave — each was RED pre-fix."""
+
+    def test_failed_refetch_does_not_shadow_good_record(self, tmp_path,
+                                                        monkeypatch):
+        """C1/A5 P1: a settled row whose --refetch-similar re-fetch FAILS
+        must keep its good payload at finish (was: the error record
+        last-wins-replaced it — detailError + blank columns + count 0
+        until a retry, then 3-strike froze the downgrade)."""
+        out = self._write_list(tmp_path, ["JR1"])
+        # count-only era shape: similarJobsCount present, LIST absent
+        good = {"reqId": "JR1", "info": _detail_info(),
+                "hiringOrg": "2100 NVIDIA USA", "similarJobsCount": 2}
+        out.with_suffix(".details.jsonl").write_text(
+            json.dumps(good) + "\n" +
+            json.dumps({"reqId": "JR1", "error": "detail_unreachable",
+                        "attempts": 1}) + "\n", encoding="utf-8")
+        args = _det_args(refetch_similar=True)
+        # the refetch fails (network seam mocked to fail)
+        monkeypatch.setattr(
+            board_dump.workday, "detail_payload",
+            lambda *a, **k: None)
+        rc = board_dump.phase_details(args, out)
+        assert rc == 1                     # error written → loud
+        # finish sees the GOOD record, not the error
+        good_map, attempts = board_dump._load_details_state(
+            out.with_suffix(".details.jsonl"))
+        assert good_map["JR1"]["info"]["title"] == "Engineer"
+        assert attempts["JR1"] == 2      # 1 prior + this failed refetch
+        # and the strike did NOT destroy the settled status
+        rows = list(board_dump._load_jsonl(
+            out.with_suffix(".details.jsonl")))
+        assert any(r.get("info") for r in rows)
+
+    def test_refetch_strike_cap_keeps_good_record(self, tmp_path):
+        """Three failed refetches stop re-fetching but the good payload
+        survives forever (the freeze is on the WORK, not the data)."""
+        out = self._write_list(tmp_path, ["JR1"])
+        lines = [json.dumps({"reqId": "JR1", "info": _detail_info(),
+                             "hiringOrg": "X", "similarJobsCount": 1})]
+        for i in range(1, 4):
+            lines.append(json.dumps(
+                {"reqId": "JR1", "error": "detail_unreachable",
+                 "attempts": i}))
+        out.with_suffix(".details.jsonl").write_text(
+            "\n".join(lines) + "\n", encoding="utf-8")
+        good, attempts = board_dump._load_details_state(
+            out.with_suffix(".details.jsonl"))
+        assert good["JR1"]["info"]["title"] == "Engineer"
+        assert attempts["JR1"] == 3
+
+    def test_detail_records_carry_fetched_at(self, tmp_path, monkeypatch):
+        """C1 P2: detail records are timestamped (vintage auditing was
+        git-only before)."""
+        out = self._write_list(tmp_path, ["JR1"])
+        rc = self._run(out, monkeypatch, fail=set())
+        assert rc == 0
+        rec = self._lines(out)[0]
+        assert rec.get("fetched_at")
+        assert "T" in rec["fetched_at"]      # ISO timestamp
+
+    def test_repair_jsonl_tail_drops_partial_line(self, tmp_path):
+        """B7 torn-write guard: a crash mid-append leaves a partial line;
+        the repair truncates it BEFORE the next append welds onto it."""
+        p = tmp_path / "x.jsonl"
+        good_line = json.dumps({"reqId": "JR1", "info": {}}) + "\n"
+        p.write_text(good_line + '{"reqId": "JR2", "inf', encoding="utf-8")
+        board_dump._repair_jsonl_tail(p)
+        assert p.read_text(encoding="utf-8") == good_line
+        # clean tail → no-op
+        board_dump._repair_jsonl_tail(p)
+        assert p.read_text(encoding="utf-8") == good_line
+
+
+class TestCsvV24Columns:
+    """Pins for the S9-audit G6 wave (CSV v2.4): applicantCensored
+    recomputed, firstSeenDate from watch state, lastResetDate from
+    repost events, nLocations unknown on error rows, snapshot-frozen
+    postingAgeDays."""
+
+    def _derive(self, sig=None, det=None, r=None, first_seen="",
+                last_reset="", snapshot="2026-09-16"):
+        r = r or {"reqId": "JR1", "title": "Engineer",
+                  "postedOn": "Posted Today", "url": "u",
+                  "externalPath": "/job/JR1"}
+        return board_dump._derive_csv_row(
+            r, det or {}, sig, "NVIDIA", "2026-09-16",
+            first_seen or "2026-09-16", snapshot_date=snapshot,
+            last_reset=last_reset)
+
+    def test_applicant_censored_recomputed(self):
+        """#44 recomputes from (num, label) — not the stored flag (752
+        pre-S8 signals lack the key; projecting it under-reports)."""
+        bucket_floor = {"num_applicants": 25,
+                        "applicants_label": "among first 25 applicants"}
+        row = self._derive(sig={"status": "matched",
+                                "match_method": "reqId", **bucket_floor})
+        assert row["applicantCensored"] == "true"
+        # same count, non-censoring label → still true (bucket boundary)
+        row = self._derive(sig={"status": "matched",
+                                "match_method": "reqId",
+                                "num_applicants": 25,
+                                "applicants_label": "25 applicants"})
+        assert row["applicantCensored"] == "true"
+        # label-named censoring at a NON-boundary count
+        row = self._derive(sig={"status": "matched",
+                                "match_method": "reqId",
+                                "num_applicants": 500,
+                                "applicants_label": "Over 500 applicants"})
+        assert row["applicantCensored"] == "true"
+        # exact mid-range count
+        row = self._derive(sig={"status": "matched",
+                                "match_method": "reqId",
+                                "num_applicants": 37,
+                                "applicants_label": "37 applicants"})
+        assert row["applicantCensored"] == "false"
+        # no signal → empty (unknown, not false)
+        assert self._derive()["applicantCensored"] == ""
+
+    def test_first_seen_and_last_reset_plumb_through(self):
+        row = self._derive(first_seen="2026-09-09",
+                           last_reset="2026-09-14")
+        assert row["firstSeenDate"] == "2026-09-09"
+        assert row["lastResetDate"] == "2026-09-14"
+
+    def test_watch_maps_read_state_and_reposts(self, tmp_path):
+        """finish's watch-state loaders: {reqId: first_seen} from
+        state.jsonl, {reqId: new_startDate} from reposts.jsonl (last
+        event wins); missing files → {}."""
+        watch = tmp_path / "board_watch"
+        watch.mkdir()
+        out = tmp_path / "workday" / "dump"
+        out.parent.mkdir(exist_ok=True)
+        (watch / "dump.state.jsonl").write_text(
+            json.dumps({"reqId": "JR1", "first_seen": "2026-09-09",
+                        "posting": {}}) + "\n" +
+            json.dumps({"reqId": "JR2", "first_seen": "2026-09-10",
+                        "posting": {}}) + "\n", encoding="utf-8")
+        (watch / "dump.reposts.jsonl").write_text(
+            json.dumps({"reqId": "JR1", "new_startDate": "2026-09-13"}) +
+            "\n" + json.dumps({"reqId": "JR1",
+                                "new_startDate": "2026-09-14"}) + "\n",
+            encoding="utf-8")
+        fs = board_dump._watch_first_seen(out)
+        assert fs == {"JR1": "2026-09-09", "JR2": "2026-09-10"}
+        rs = board_dump._watch_repost_resets(out)
+        assert rs == {"JR1": "2026-09-14"}     # last event wins
+        # missing watch dir → empty maps
+        out2 = tmp_path / "workday" / "other"
+        assert board_dump._watch_first_seen(out2) == {}
+        assert board_dump._watch_repost_resets(out2) == {}
+
+    def test_nlocations_unknown_on_error_rows(self):
+        row = self._derive(
+            det={"reqId": "JR1", "error": "detail_unreachable",
+                 "attempts": 1},
+            r={"reqId": "JR1", "title": "Engineer",
+               "postedOn": "Posted Today", "url": "u",
+               "externalPath": "/j/JR1",
+               "locationsText": "6 Locations"})
+        assert row["nLocations"] == ""          # UNKNOWN, not 1
+        assert "6 Locations" in row["locations"]
+
+    def test_posting_age_frozen_to_snapshot(self):
+        """B2r: regenerating a day later must not shift the column —
+        the snapshot is the reference, not wall-clock today."""
+        row = self._derive(
+            det={"info": {"startDate": "2026-09-08"}})
+        assert row["postingAgeDays"] == 8       # 2026-09-16 − 09-08

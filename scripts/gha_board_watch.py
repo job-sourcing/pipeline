@@ -217,9 +217,16 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
     out: list[dict] = []
     todo = new_rows[:DETAILS_MAX]
     for i, r in enumerate(todo, 1):
+        prev = (prior_feed or {}).get(r["reqId"]) or {}
         rec: dict = {
             "reqId": r["reqId"], "title": r.get("title") or "",
-            "company": company, "first_seen": date.today().isoformat(),
+            "company": company,
+            # S9-audit D2 P2: a retry/recovery must not reset the feed's
+            # tenure field — keep the prior record's first sighting;
+            # today is only for genuinely-new reqIds (the feed is
+            # append-only and consumers read the LAST line per reqId).
+            "first_seen": prev.get("first_seen")
+            or date.today().isoformat(),
             "locationsText": r.get("locationsText") or "",
             "postedOn": r.get("postedOn") or "",
             "url": r.get("url") or "",
@@ -238,7 +245,6 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
             # 3-strike (B6, S7-V1): a transient detail outage must not
             # permanently degrade the record — attempts accumulate in the
             # feed; the recovery query retries error rows until 3.
-            prev = (prior_feed or {}).get(r["reqId"]) or {}
             rec["attempts"] = int(prev.get("attempts") or 0) + 1
         out.append(rec)
         if time.monotonic() > deadline:
@@ -309,6 +315,16 @@ def _window_match(provider, cards: list[dict], new_rows: list[dict],
     return out, served_cards
 
 
+def _fallback_serve(out: dict, served_cards: set, rid: str,
+                   card: dict, s: dict) -> None:
+    """Assign one title-search-fallback card to a req (S9-audit D1 P3:
+    stamp the provenance — newposts.jsonl must be self-describing;
+    window-path matches are deliberately NOT stamped)."""
+    s["match_method"] = "titleSearchFallback"
+    out[rid] = s
+    served_cards.add(str(card["id"]))
+
+
 def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
                     deadline: float,
                     title_search_budget: Optional[list] = None
@@ -322,9 +338,14 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
     S9 C5: `title_search_budget` = [remaining] (a mutable cell shared at
     RUN level by the main call; the lag pass passes nothing → no title
     search). After the daily-window match, unmatched new postings get a
-    targeted exact-title guest search (`corroborate.search_title`) whose
-    verbatim hits are detail-fetched and assigned with the SAME reqId-
-    exact / 1:1 / foreign-reqId-serves-nobody policy as the window path."""
+    targeted exact-title guest search (`corroborate.search_title`);
+    verbatim hits are detail-fetched and assigned under the same policy
+    FAMILY as the window path: reqId-exact, 1:1 per card, and a card
+    whose job_req_id names one of THIS batch's postings serves that req
+    (window parity, S9-audit D1 P2) while reqIds outside the batch serve
+    nobody. Every executed search sleeps TITLE_SEARCH_PAUSE_S (B3/D1
+    P2); fallback-assigned signals carry match_method="titleSearchFallback"
+    so the feed is self-describing (window matches carry no stamp)."""
     if not new_rows:
         return {}
     if time.monotonic() > deadline:
@@ -362,9 +383,13 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
     unmatched = [r for r in new_rows if r["reqId"] not in out]
     if not unmatched or title_search_budget[0] <= 0:
         return out
+    input_rids = {r["reqId"] for r in new_rows}
     n_ts = 0
     consecutive_blocked = 0
     for r in unmatched:
+        if r["reqId"] in out:
+            continue     # served mid-loop by a sibling's search (window
+                         # parity) — don't burn budget re-searching it
         if title_search_budget[0] <= 0:
             break
         if time.monotonic() > deadline:
@@ -383,36 +408,56 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
             title, loc, {str(c["id"]) for c in cards}, company=company)
         title_search_budget[0] -= 1
         n_ts += 1
+        # S9-audit B3/D1 P2: EVERY executed search sleeps — the pause used
+        # to sit at the bottom of the jr-less serve path only, so no-hit /
+        # blocked / foreign-hit searches ran back-to-back against the
+        # walled guest endpoint. The pre-loop skips above (empty title,
+        # budget, deadline, breaker) consume nothing and stay pause-free.
+        time.sleep(corroborate.TITLE_SEARCH_PAUSE_S)
         if exc is not None:
             consecutive_blocked += 1
             continue
         consecutive_blocked = 0
         if not hits:
             continue
-        # detail-fetch the best hit only (1:1 by construction — the card
-        # was FOUND by this req's exact title)
-        card = hits[0]
-        try:
-            sigs = provider.fetch_signals([card])
-        except Exception:
-            continue
-        s = next((x for x in sigs if x.get("status") == "matched"), None)
-        if not s or str(card["id"]) in served_cards:
-            continue
-        jr = s.get("job_req_id")
         rid = r["reqId"]
-        if jr:
-            if jr == rid:
-                out[rid] = s              # reqId-exact confirmation
-                served_cards.add(str(card["id"]))
-            # foreign reqId: this verbatim-titled card is a sibling
-            # requisition's posting — serves nobody (same policy as the
-            # window path)
-            continue
-        if rid not in out:                # title fallback, 1:1
-            out[rid] = s
-            served_cards.add(str(card["id"]))
-        time.sleep(corroborate.TITLE_SEARCH_PAUSE_S)
+        # S9-audit D1 P2: iterate the hit list — hits[0] can be a
+        # sibling requisition's card, and the req's OWN jr-exact card at
+        # hits[1] used to be discarded without a fetch. Serve the first
+        # jr-exact hit; else hold the first unserved jr-less hit (a
+        # jr-exact card may follow); the served_cards check runs BEFORE
+        # the detail fetch (D1 P3: no duplicate fetch of served cards).
+        # One detail fetch per TRIED hit, bounded by the page size (10).
+        jrless: Optional[tuple] = None
+        for card in hits:
+            if str(card["id"]) in served_cards:
+                continue
+            try:
+                sigs = provider.fetch_signals([card])
+            except Exception:
+                continue
+            s = next((x for x in sigs if x.get("status") == "matched"),
+                     None)
+            if not s:
+                continue
+            jr = s.get("job_req_id")
+            if jr == rid:              # this req's OWN card — best possible
+                _fallback_serve(out, served_cards, rid, card, s)
+                break
+            if jr:
+                # names ANOTHER requisition: window-path parity (S9-audit
+                # D1 P2) — if that req is one of THIS batch's postings and
+                # still unserved, the card serves IT (the window does
+                # exactly this); a reqId outside the batch serves nobody
+                # (misattribution guard).
+                if jr in input_rids and jr not in out:
+                    _fallback_serve(out, served_cards, jr, card, s)
+                continue
+            if jrless is None and rid not in out:
+                jrless = (card, s)     # hold: keep scanning for jr-exact
+        if jrless is not None and rid not in out:
+            card, s = jrless           # no jr-exact hit — title serve, 1:1
+            _fallback_serve(out, served_cards, rid, card, s)
     if n_ts:
         n_ts_matched = sum(1 for r in unmatched if r["reqId"] in out)
         print(f"[watch] title-search fallback: +{n_ts_matched} matches "
@@ -880,6 +925,11 @@ def run_watch(w: dict, cfg: Config) -> str:
     # state but never enriched (past DETAILS_MAX / budget stop / crash)
     # are re-fed into enrichment until they land in newposts.jsonl. The
     # digest still reports only the FIRST sighting — recovery is silent.
+    # S9-audit D2 P1: the rows fed to enrichment MUST be the CURRENT
+    # list rows — state records carry no externalPath, so the pre-fix
+    # shape fed detail_payload("") → guaranteed detail_unreachable and
+    # burned the 3-strike valve on structurally doomed retries (the
+    # predicate already guarantees rid ∈ current).
     feed_path = WATCH_DIR / f"{label}.newposts.jsonl"
     enriched_feed: dict[str, dict] = {}
     for e in _load_jsonl(feed_path):
@@ -895,8 +945,8 @@ def run_watch(w: dict, cfg: Config) -> str:
         return bool(feed_rec.get("error")) \
             and int(feed_rec.get("attempts") or 0) < 3
 
-    backlog_rows = [p for rid, p in prior.items()
-                    if rid in current and _recoverable(rid, p)]
+    backlog_rows = [current[rid] for rid, p in prior.items()
+                   if rid in current and _recoverable(rid, p)]
     if backlog_rows:
         print(f"[watch:{label}] backlog recovery: {len(backlog_rows)} "
               "state postings awaiting enrichment", flush=True)
@@ -904,8 +954,17 @@ def run_watch(w: dict, cfg: Config) -> str:
     # enrich the NEW postings (bounded; budget-guarded)
     deadline = time.monotonic() + BUDGET_SECONDS
     enrich_input = (new_rows + backlog_rows)[:DETAILS_MAX * 2]         if backlog_rows else new_rows
+    # S9-audit D2 P2: retries/recoveries must not reset the feed's
+    # first_seen. prior_feed seeds each reqId with its last FEED record
+    # (first_seen preserved for enriched-with-error retries); state rows
+    # seed crash survivors the feed has never seen — only genuinely-new
+    # reqIds get today.
+    prior_feed = dict(enriched_feed)
+    for rid, p in prior.items():
+        if rid not in prior_feed and p.get("first_seen"):
+            prior_feed[rid] = {"first_seen": p["first_seen"]}
     enriched = enrich_new(enrich_input, w["board"], w["company"], cfg,
-                          deadline, prior_feed=enriched_feed)
+                          deadline, prior_feed=prior_feed)
     # S9 C5: run-level title-search budget cell — shared by THIS main
     # corroborate call only (the lag pass below never title-searches)
     signals = corroborate_new(enrich_input, w["company"], cfg, deadline,

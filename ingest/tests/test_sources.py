@@ -63,6 +63,19 @@ class TestBaseHelpers:
         assert clean_html("<p>Hello <b>world</b></p>") == "Hello world"
         assert clean_html("plain") == "plain"
 
+    def test_clean_html_unescapes_entities(self):
+        """S9-audit F3 (P2, CR-1 doctrine): entities decode AFTER the
+        tag-strip — the 9 raw call sites (remotive/arbeitnow/lever/
+        workable/personio/linkedin_guest) must not ship "&amp;"-laden
+        text into Job.description. Order pin: entity-encoded tags
+        ("&lt;b&gt;") must NOT be resurrected into stripped tags."""
+        assert clean_html("R&amp;D &#39;ops&#39;") == "R&D 'ops'"
+        assert clean_html("<p>AT&amp;T &#8212; Ops</p>") == "AT&T — Ops"
+        assert clean_html("&nbsp;edge-trimmed&nbsp;") == "edge-trimmed"
+        # strip-then-unescape order: encoded tags become VISIBLE text,
+        # never re-stripped as markup
+        assert clean_html("&lt;b&gt;bold&lt;/b&gt;") == "<b>bold</b>"
+
 
 # ── Remotive ──────────────────────────────────────────────────────────────
 
@@ -411,6 +424,40 @@ class TestLinkedInGuest:
         assert _parse_num_applicants("Be among the first 10 applicants") == (10, "among first 10")
         assert _parse_num_applicants("") == (None, "")
         assert _parse_num_applicants("1,234 applicants") == (1234, "1,234 applicants")
+
+    def test_parse_num_applicants_caption_anchored_precedence(self):
+        """S9-audit D3 (P2): the num-applicants__caption element is
+        parsed EXCLUSIVELY when present — description prose carrying
+        over/first-N phrases must never override the true topcard
+        count (the D3 repro: caption 37 + prose 'over 500' fabricated
+        (500, 'Over 500 applicants'))."""
+        from jobsearch.sources.linkedin_guest import _parse_num_applicants
+        # the D3 repro: exact caption + recruiter boilerplate prose
+        html = ('<span class="num-applicants__caption topcard__flavor--metadata">\n'
+                '    37 applicants\n  </span></div>'
+                '<div class="show-more-less-html__markup"><p>We received '
+                'over 500 applicants for the last opening. You will be '
+                'among the first 10 applicants to be considered.</p></div>')
+        assert _parse_num_applicants(html) == (37, "37 applicants")
+        # the live bucket forms, through the caption anchor
+        assert _parse_num_applicants(
+            '<span class="num-applicants__caption">'
+            "Be among the first 25 applicants</span>"
+            "<p>prose: over 200 applicants applied before</p>") \
+            == (25, "among first 25")
+        assert _parse_num_applicants(
+            '<span class="num-applicants__caption">'
+            "Over 200 applicants</span><p>first 10 applicants prose</p>") \
+            == (200, "Over 200 applicants")
+        # an unparsable caption is FINAL — prose must not leak in
+        assert _parse_num_applicants(
+            '<span class="num-applicants__caption">'
+            "Be the first to apply</span>"
+            "<p>over 100 applicants historically</p>") == (None, "")
+        # caption ABSENT → the legacy whole-HTML scan still applies
+        assert _parse_num_applicants(
+            "<p>We received over 500 applicants</p>") \
+            == (500, "Over 500 applicants")
 
     def test_parse_req_id(self):
         from jobsearch.sources.linkedin_guest import _parse_req_id

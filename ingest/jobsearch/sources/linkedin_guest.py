@@ -35,6 +35,12 @@ _PAGE_PAUSE_S = 1.0
 _APPLICANTS_RE = re.compile(r"([\d,]+)\s+applicants?\b", re.IGNORECASE)
 _APPLICANTS_OVER_RE = re.compile(
     r"over\s*([\d,]+)\s*applicant", re.IGNORECASE)
+# S9-audit D3 (P2): the topcard caption element is the AUTHORITATIVE
+# applicant-count source — anchor the scan to it so over/first-N phrases
+# in description prose ("we received over 500 applicants for our last
+# opening") can never override an exact topcard count ("37 applicants").
+_APPLICANTS_CAPTION_RE = re.compile(
+    r"num-applicants__caption[^>]*>(.*?)</span>", re.DOTALL)
 _REQ_ID_RE = re.compile(
     r"Job Requisition ID[\s:]*([A-Z0-9-]{4,15})(?![A-Z0-9-])",
     re.IGNORECASE)
@@ -106,18 +112,28 @@ def _parse_num_applicants(html: str) -> tuple[Optional[int], str]:
 
     Handles "122 applicants" / "1 applicant" / "Over 200 applicants" /
     "Be among the first 10 applicants". "Be the first to apply" has no
-    digit+applicant pattern → (None, ""). Returns (int_or_None, raw_label)."""
-    m = _APPLICANTS_OVER_RE.search(html)
+    digit+applicant pattern → (None, ""). Returns (int_or_None, raw_label).
+
+    S9-audit D3 (P2) precedence fix: when the num-applicants__caption
+    element is present, the three count patterns run on the CAPTION TEXT
+    EXCLUSIVELY — an exact topcard count ("37 applicants") must never be
+    overridden by an over/first-N phrase anywhere else on the page (a
+    caption with no parsable count, e.g. "Be the first to apply", is
+    final too — prose cannot sneak in as a fallback). The whole-HTML
+    scan survives only for pages WITHOUT the caption element."""
+    caption = _APPLICANTS_CAPTION_RE.search(html)
+    scope = caption.group(1) if caption else html
+    m = _APPLICANTS_OVER_RE.search(scope)
     if m:
         return int(m.group(1).replace(",", "")), \
             f"Over {m.group(1)} applicants"
     # "Be among the first 10 applicants" — checked BEFORE the generic
     # pattern so the label names the semantics (early-stage posting)
-    m = re.search(r"first\s*([\d,]+)\s*applicant", html, re.IGNORECASE)
+    m = re.search(r"first\s*([\d,]+)\s*applicant", scope, re.IGNORECASE)
     if m:
         return int(m.group(1).replace(",", "")), \
             f"among first {m.group(1)}"
-    m = _APPLICANTS_RE.search(html)
+    m = _APPLICANTS_RE.search(scope)
     if m:
         raw = m.group(1)
         n = int(raw.replace(",", ""))

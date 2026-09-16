@@ -9,6 +9,10 @@ Covers (per design-board-v2.md D4 + review addenda):
   ever monkeypatched away, with the docstring claiming coverage)
 - corroborate_new: title-key match, reqId-exact override, blocked → {}
   (DIRECT tests: TestCorroborateNew — same hole)
+- S9-audit fix wave (D2/D1): backlog recovery feeds CURRENT list rows
+  through the REAL enrich_new (P1), first_seen preserved on retries (P2),
+  C5 fallback pins — hits iteration, foreign-reqId window parity,
+  pause-on-every-search, provenance stamp, budget-cell wiring
 - budget guards: legs counter date-keyed reset; backlog verdict only
   while unenriched remain AND legs remain
 - digest shape: NEW lines w/ applicants, GONE lines, header counts
@@ -232,6 +236,31 @@ class TestEnrichNew:
         assert "locations" not in rec and "description" not in rec
         assert rec["reqId"] == "JR1"   # the record itself stays durable
 
+    def test_retry_preserves_first_seen_and_increments_attempts(
+            self, wdir, monkeypatch):
+        """S9-audit D2 P2: the retry record used to reset first_seen to
+        TODAY — the durable feed's tenure field drifted later with every
+        failed retry (25/25 live error records wrong; consumers read the
+        LAST line per reqId). Keep the prior record's first sighting;
+        today is only for genuinely-new reqIds."""
+        monkeypatch.setattr(watch.workday, "detail_payload",
+                            lambda b, p, c: None)   # still unreachable
+        prior_feed = {"JR1": {"reqId": "JR1",
+                              "first_seen": "2026-09-12",
+                              "error": "detail_unreachable",
+                              "attempts": 2}}
+        out = watch.enrich_new([_post("JR1"), _post("JR2")],
+                               "nvidia|wd5|x", "NVIDIA", Config(),
+                               time.monotonic() + 60,
+                               prior_feed=prior_feed)
+        by_rid = {r["reqId"]: r for r in out}
+        # the retried reqId keeps its original sighting date + 3rd strike
+        assert by_rid["JR1"]["first_seen"] == "2026-09-12"
+        assert by_rid["JR1"]["attempts"] == 3
+        # a genuinely-new reqId still gets today, attempts restart at 1
+        assert by_rid["JR2"]["first_seen"] == date.today().isoformat()
+        assert by_rid["JR2"]["attempts"] == 1
+
     def test_bounded_at_details_max(self, wdir, monkeypatch):
         monkeypatch.setattr(watch, "DETAILS_MAX", 2)
         calls: list = []
@@ -291,14 +320,22 @@ def _sig(cid, title="Solutions Architect, Infrastructure", req_id="",
 class _FakeProvider:
     """Stands in at the corroborate.get_provider seam; records the
     kwargs corroborate_new actually sends (kwarg-shape regressions are
-    the other thing mocked-away tests can't see)."""
+    the other thing mocked-away tests can't see). S9 C5: also fakes
+    search_title (ts_hits for every search, or ts_map keyed by title →
+    (hits, exc) for per-row scenarios) so the title-search fallback is
+    exercisable from this file."""
 
     name = "linkedin"
 
-    def __init__(self, cards, sigs, index_exc=None):
+    def __init__(self, cards, sigs, index_exc=None,
+                 ts_hits=None, ts_exc=None, ts_map=None):
         self.cards, self.sigs, self.index_exc = cards, sigs, index_exc
         self.index_calls: list[dict] = []
         self.fetch_calls: list[list] = []
+        self.ts_hits = ts_hits or []
+        self.ts_exc = ts_exc
+        self.ts_map = ts_map or {}
+        self.ts_calls: list[tuple] = []
 
     def index_cards(self, *, company, location, max_pages, max_cards,
                     start_offset=0):
@@ -314,6 +351,15 @@ class _FakeProvider:
         self.fetch_calls.append([c["id"] for c in cards])
         return [self.sigs[c["id"]] for c in cards if c["id"] in self.sigs]
 
+    def search_title(self, title, location, known_ids, company="NVIDIA"):
+        self.ts_calls.append((title, location, set(known_ids)))
+        if title in self.ts_map:
+            hits, exc = self.ts_map[title]
+            return list(hits), exc
+        if self.ts_exc is not None:
+            return [], self.ts_exc
+        return list(self.ts_hits), None
+
 
 class TestCorroborateNew:
     """corroborate_new had ZERO direct tests (always stubbed). Real code
@@ -322,7 +368,7 @@ class TestCorroborateNew:
     -only signal use."""
 
     def _run(self, monkeypatch, provider, rows, cfg=None,
-             deadline=None):
+             deadline=None, budget=None):
         got: dict = {}
 
         def fake_get(name, cfg=None):
@@ -333,9 +379,13 @@ class TestCorroborateNew:
                             fake_get)
         import time as _t
         cfg = cfg or Config()
+        kw: dict = {}
+        if budget is not None:            # S9 C5 fallback cell (opt-in)
+            kw["title_search_budget"] = budget
         return (watch.corroborate_new(
             rows, "NVIDIA", cfg,
-            deadline if deadline is not None else _t.monotonic() + 60),
+            deadline if deadline is not None else _t.monotonic() + 60,
+            **kw),
             got, cfg)
 
     def test_cfg_passed_through_to_get_provider(self, monkeypatch):
@@ -827,6 +877,96 @@ class TestB6ErrorRetry:
         assert got_input["rows"] == []          # 3 strikes → skipped
 
 
+class TestBacklogRecoveryUsesCurrentRows:
+    """S9-audit D2 P1 regression. The pre-fix backlog query fed STATE-
+    shaped rows (no externalPath / url) to the REAL enrich_new →
+    detail_payload('') → guaranteed detail_unreachable → every recovery
+    retry was structurally doomed (25 live reqIds burned the 3-strike
+    valve on failures that could never succeed). Both recovery branches
+    (needs_enrich crash survivor / feed error retry) must enrich the
+    CURRENT list row — the predicate already guarantees rid ∈ current.
+    REAL enrich_new runs here; network mocked at ONE seam
+    (watch.workday.detail_payload), exactly like TestEnrichNew."""
+
+    def _mock_watch(self, wdir, monkeypatch, detail):
+        monkeypatch.setattr(watch.workday, "detail_payload", detail)
+        monkeypatch.setattr(
+            watch, "current_postings",
+            lambda *a, **k: ({"JR1": _post("JR1", "Staff SRE")}, True))
+        monkeypatch.setattr(watch, "_legs_bump", lambda l: 1)
+        monkeypatch.setattr(watch, "corroborate_new", lambda *a, **k: {})
+        monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
+
+    def test_crash_survivor_enriches_the_current_list_row(self, wdir,
+                                                          monkeypatch):
+        # last_seen=today + Yesterday→Today aging keeps the R1 repost
+        # detector quiet (a flag would add an R2 detail re-fetch call)
+        state = wdir / "test_watch.state.jsonl"
+        state.write_text(json.dumps({
+            "reqId": "JR1", "title": "Staff SRE",
+            "first_seen": "2026-09-12",
+            "last_seen": date.today().isoformat(),
+            "last_postedOn": "Posted Yesterday", "last_startDate": "",
+            "needs_enrich": True}) + "\n", encoding="utf-8")
+        calls: list = []
+
+        def fake_detail(board, path, cfg):
+            calls.append(path)
+            return TestEnrichNew._payload("JR1")
+
+        self._mock_watch(wdir, monkeypatch, fake_detail)
+        result = watch.run_watch(dict(CFG), Config())
+        assert result == "complete"
+        # THE regression: the detail fetch used the CURRENT list row's
+        # externalPath (pre-fix: '' — a structurally doomed fetch)
+        assert calls == ["/job/JR1"]
+        rec = _read_jsonl(wdir / "test_watch.newposts.jsonl")[0]
+        assert rec["reqId"] == "JR1"
+        assert rec["url"] == "https://x/JR1"     # real list-row url
+        assert "error" not in rec                # enrichment SUCCEEDED
+        assert rec["startDate"] == "2026-09-08"
+        # D2 P2: recovery must not reset tenure — the STATE's first
+        # sighting seeds the feed record (crash survivor: no feed line)
+        assert rec["first_seen"] == "2026-09-12"
+        # needs_enrich cleared by the good record
+        st = _read_jsonl(state)
+        assert not st[0].get("needs_enrich")
+
+    def test_error_retry_uses_current_rows_and_keeps_first_seen(
+            self, wdir, monkeypatch):
+        """The B6 3-strike branch: a feed error record (attempts=1) is
+        recoverable, and its retry must fetch the real detail page and
+        keep the original first_seen (pre-fix drift: every retry stamped
+        today — 25/25 live error records wrong)."""
+        state = wdir / "test_watch.state.jsonl"
+        state.write_text(json.dumps({
+            "reqId": "JR1", "title": "Staff SRE",
+            "first_seen": "2026-09-12",
+            "last_seen": date.today().isoformat(),
+            "last_postedOn": "Posted Yesterday",
+            "last_startDate": ""}) + "\n", encoding="utf-8")
+        feed = wdir / "test_watch.newposts.jsonl"
+        feed.write_text(json.dumps({
+            "reqId": "JR1", "title": "Staff SRE",
+            "first_seen": "2026-09-12", "url": "",
+            "error": "detail_unreachable", "attempts": 1}) + "\n",
+            encoding="utf-8")
+        calls: list = []
+
+        def fake_detail(board, path, cfg):
+            calls.append(path)
+            return TestEnrichNew._payload("JR1")
+
+        self._mock_watch(wdir, monkeypatch, fake_detail)
+        result = watch.run_watch(dict(CFG), Config())
+        assert result == "complete"
+        assert calls == ["/job/JR1"]              # real externalPath
+        rec = _read_jsonl(feed)[-1]              # last line wins
+        assert "error" not in rec                # the retry SUCCEEDED
+        assert rec["url"] == "https://x/JR1"
+        assert rec["first_seen"] == "2026-09-12"  # prior record's date
+
+
 class TestWatchJoinOneToOne:
     """S7-V1 P3-3 (elevated): one LinkedIn card's applicants must never
     fan out onto a whole title family in the WATCH path either."""
@@ -842,6 +982,172 @@ class TestWatchJoinOneToOne:
         # 2 cards, 3 same-family reqs → at most 2 matched, no sharing
         assert len(out) <= 2
         assert len({id(s) for s in out.values()}) == len(out)
+
+
+# ── S9-audit fix wave: C5 title-search fallback policy ──────────────────
+class TestTitleSearchFallbackFixes:
+    """Pins for the S9-audit fixes (D1 P2/P3): hits iteration (a sibling
+    card at hits[0] must not starve the req's own jr-exact card at
+    hits[1]), window-parity foreign-reqId policy, pause-on-every-search,
+    and the fallback provenance stamp. REAL corroborate_new; provider
+    faked at the get_provider seam (search_title included)."""
+
+    def _run(self, monkeypatch, provider, rows, budget=None):
+        monkeypatch.setattr(watch.corroborate, "get_provider",
+                            lambda name, cfg=None: provider)
+        kw: dict = {}
+        if budget is not None:
+            kw["title_search_budget"] = budget
+        return watch.corroborate_new(rows, "NVIDIA", Config(),
+                                     time.monotonic() + 60, **kw)
+
+    def test_jr_exact_hit_serves_the_searching_req(self, monkeypatch):
+        """(D1 test-gap b) jr == rid: the hit's extracted job_req_id
+        names THIS req — reqId-exact confirmation. _sig defaults
+        req_id="", so no pre-existing test ever exercised the branch."""
+        provider = _FakeProvider(
+            [], {"7": _sig(7, title="SRE", req_id="JR2024001")},
+            ts_hits=[_li_card(7, title="SRE")])
+        rows = [_post("JR2024001", title="SRE")]
+        out = self._run(monkeypatch, provider, rows, budget=[5])
+        assert set(out) == {"JR2024001"}
+        assert out["JR2024001"]["job_req_id"] == "JR2024001"
+        assert provider.fetch_calls == [["7"]]       # one detail fetch
+
+    def test_hits_iterated_sibling_served_then_own_card(self, monkeypatch):
+        """(D1 test-gap c, probe P4) JR1's search serves card 7 (jr=JR1);
+        JR2's search returns [card7 (served), card8 (jr=JR2 — JR2's OWN
+        card)]. Pre-fix: the served check discarded hits[0] and the loop
+        continued — card 8 was never fetched, JR2 unmatched. Also pins
+        the served-check-BEFORE-fetch (card 7 fetched exactly once)."""
+        provider = _FakeProvider(
+            [], {"7": _sig(7, title="SRE", req_id="JR1"),
+                 "8": _sig(8, title="SRE", req_id="JR2")},
+            ts_hits=[_li_card(7, title="SRE"), _li_card(8, title="SRE")])
+        rows = [_post("JR1", title="SRE"), _post("JR2", title="SRE")]
+        out = self._run(monkeypatch, provider, rows, budget=[5])
+        assert set(out) == {"JR1", "JR2"}           # BOTH siblings served
+        assert out["JR1"]["linkedin_job_id"] == "7"
+        assert out["JR2"]["linkedin_job_id"] == "8"   # hits[1] reached
+        assert sorted(provider.fetch_calls) == [["7"], ["8"]]
+
+    def test_jrless_hold_beats_nothing_foreign_hit_serves_named_req(
+            self, monkeypatch):
+        """Composite: a jr-less card at hits[0] is HELD while scanning
+        for a jr-exact card; the jr-bearing card at hits[1] names the
+        SEARCHER'S SIBLING (JR2, an input req) → window parity: it serves
+        JR2; the held jr-less card then serves the searcher (JR1)."""
+        provider = _FakeProvider(
+            [], {"7": _sig(7, title="SRE", req_id=""),
+                 "8": _sig(8, title="SRE", req_id="JR2")},
+            ts_hits=[_li_card(7, title="SRE"), _li_card(8, title="SRE")])
+        rows = [_post("JR1", title="SRE"), _post("JR2", title="SRE")]
+        out = self._run(monkeypatch, provider, rows, budget=[5])
+        assert out["JR1"]["linkedin_job_id"] == "7"   # held jr-less card
+        assert out["JR2"]["linkedin_job_id"] == "8"   # named by card 8
+        # JR2 was served mid-loop by JR1's search → its own search is
+        # skipped (budget not burned on an already-served req)
+        assert len(provider.ts_calls) == 1
+
+    def test_foreign_hit_serves_the_req_it_names(self, monkeypatch):
+        """(D1 P2 asymmetry) A card whose job_req_id names ANOTHER input
+        new posting serves that req in the window path — the fallback
+        used to serve nobody in this corner (docstring claimed "SAME
+        policy")."""
+        provider = _FakeProvider(
+            [], {"9": _sig(9, title="SRE", req_id="JRB")},
+            ts_hits=[_li_card(9, title="SRE")])
+        rows = [_post("JRA", title="SRE"), _post("JRB", title="SRE")]
+        out = self._run(monkeypatch, provider, rows, budget=[5])
+        assert set(out) == {"JRB"}       # the card's OWN requisition
+        assert out["JRB"]["linkedin_job_id"] == "9"
+        assert len(provider.ts_calls) == 1   # JRB skipped (already served)
+
+    def test_pause_after_every_executed_search(self, monkeypatch):
+        """(D1 test-gap d, B3 P2) The pause used to be skipped by all six
+        continue paths — no-hit searches ran back-to-back against the
+        walled guest endpoint. EVERY executed search must sleep; the
+        pre-loop skips (empty title) consume nothing and stay silent."""
+        provider = _FakeProvider(
+            [], {"9": _sig(9, title="Foreign", req_id="JR999")},
+            ts_map={"No Hit": ([], None),
+                    "Blocked": ([], RuntimeError("guest wall")),
+                    "Foreign": ([_li_card(9, title="Foreign")], None)})
+        rows = [_post("JR1", title="No Hit"),
+                _post("JR2", title="Blocked"),
+                _post("JR3", title="Foreign"),
+                _post("JR4", title="")]           # pre-loop skip
+        sleeps: list = []
+        monkeypatch.setattr(watch.time, "sleep",
+                            lambda s: sleeps.append(s))
+        out = self._run(monkeypatch, provider, rows, budget=[10])
+        assert out == {}                      # nobody served
+        assert len(provider.ts_calls) == 3     # JR4 never searched
+        # every executed search slept — no-hit, exception and foreign
+        # paths included (pre-fix: zero of the three)
+        assert len(sleeps) == 3
+        assert all(s == watch.corroborate.TITLE_SEARCH_PAUSE_S
+                   for s in sleeps)
+
+    def test_fallback_provenance_stamp_window_unstamped(self, monkeypatch):
+        """(D1 P3) Fallback-assigned signals carry
+        match_method='titleSearchFallback' so newposts.jsonl is
+        self-describing (the run #4 "+4 matches" console line is the
+        only other evidence, and it expires with the GHA log); window
+        matches are deliberately NOT stamped."""
+        provider = _FakeProvider(
+            [_li_card(1, title="Senior Engineer - DGX Cloud")],
+            {"1": _sig(1, title="Senior Engineer - DGX Cloud",
+                       req_id="JR1"),
+             "50": _sig(50, title="Niche Guru")},
+            ts_hits=[_li_card(50, title="Niche Guru")])
+        rows = [_post("JR1", title="Senior Engineer"),   # window match
+                _post("JR2", title="Niche Guru")]        # fallback match
+        out = self._run(monkeypatch, provider, rows, budget=[5])
+        assert set(out) == {"JR1", "JR2"}
+        assert "match_method" not in out["JR1"]    # window: unstamped
+        assert out["JR2"]["match_method"] == "titleSearchFallback"
+
+
+class TestTitleSearchBudgetWiring:
+    """(D1/E1 test-gap a) NOTHING used to assert that run_watch passes
+    the budget cell to the MAIN corroborate call and NOT to the lag pass
+    — TestRunWatch/TestRecorroborate stub corroborate_new with **k-
+    swallowing lambdas, so deleting the title_search_budget kwarg at the
+    main call site disabled C5 in production with the suite green."""
+
+    def test_main_call_gets_cell_lag_call_does_not(self, wdir, monkeypatch):
+        calls: list[dict] = []
+
+        def recording(rows, company, cfg, deadline, **k):
+            calls.append({"rows": [r["reqId"] for r in rows],
+                          "budget": k.get("title_search_budget")})
+            return {}
+
+        today = date.today().isoformat()
+        monkeypatch.setattr(
+            watch, "current_postings",
+            lambda *a, **k: ({"JR9": _post("JR9")}, True))
+        monkeypatch.setattr(watch, "_legs_bump", lambda l: 1)
+        # enrich writes a signal-less record dated today → the lag pass
+        # must pick it up for its second corroborate call
+        monkeypatch.setattr(
+            watch, "enrich_new",
+            lambda rows, *a, **k: [
+                {"reqId": r["reqId"], "title": r["title"],
+                 "first_seen": today, "url": r.get("url", "")}
+                for r in rows])
+        monkeypatch.setattr(watch, "corroborate_new", recording)
+        monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
+        result = watch.run_watch(dict(CFG), Config())
+        assert result == "complete"
+        assert len(calls) == 2                     # main + lag pass
+        # MAIN call: the run-level budget cell — C5 wired in production
+        assert calls[0]["rows"] == ["JR9"]
+        assert calls[0]["budget"] == [watch.TITLE_SEARCH_MAX]
+        # LAG call: NO cell — the lag pass NEVER title-searches
+        assert calls[1]["rows"] == ["JR9"]
+        assert calls[1]["budget"] is None
 
 
 # ═════════════════════════════════════════════════════════════════════════

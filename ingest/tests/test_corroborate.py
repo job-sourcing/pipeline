@@ -111,6 +111,28 @@ class TestFetchSignals:
         dt.datetime.fromisoformat(recs[0]["fetched_at"])   # raises if bad
         assert seen == recs                               # fired per record
 
+    def test_malformed_card_skipped_not_crash(self, monkeypatch, capsys):
+        """S9-audit D3 P3: a card dict missing a required key (or not a
+        dict at all) must SKIP with a stderr note — never crash the
+        batch (the no-raise contract). Well-formed cards keep the
+        one-in-one-out record contract."""
+        p = LinkedInSignalProvider(cfg=None)
+        monkeypatch.setattr(
+            corroborate.linkedin_guest, "fetch_detail",
+            _FlakyFetch(fail_ids=set()))
+        cards = [
+            {"id": "1", "title": "T", "url": "u", "location": "x"},
+            "not a dict",
+            _card(2),
+        ]
+        recs = p.fetch_signals(cards, detail_pause_s=0)
+        assert len(recs) == 1                 # only the well-formed card
+        assert recs[0]["linkedin_job_id"] == "2"
+        assert recs[0]["status"] == STATUS_MATCHED
+        err = capsys.readouterr().err
+        assert "malformed index card" in err
+        assert "company" in err               # names the missing key(s)
+
     def test_success_record_extracts_all_signals(self, monkeypatch):
         p = LinkedInSignalProvider(cfg=None)
         detail = {
@@ -167,12 +189,57 @@ class TestIndexCards:
         p = LinkedInSignalProvider(cfg=None)
         cards, next_offset, exhausted = p.index_cards(
             "NVIDIA", max_pages=10, max_cards=100)
-        # offsets advance 0 → 10 → 20 (cards RECEIVED), never 25-steps;
-        # the trailing 24 probe is the empty-body exhaustion check
-        assert offsets == [0, 10, 20, 24]
+        # offsets advance 0 → 10 → 20 (cards RECEIVED), never 25-steps.
+        # S9-audit D3 fix: the trailing 4-card page is SHORT — genuine
+        # exhaustion, no empty-body probe past it (the old probe read a
+        # soft wall at offset 24 as done=true; empty 200 pages are now
+        # blocked_empty, see the retryable pins below).
+        assert offsets == [0, 10, 20]
         assert len(cards) == 24
         assert exhausted
         assert next_offset == 24
+
+    def test_empty_page_after_full_page_is_retryable_not_done(self,
+                                                             monkeypatch):
+        """S9-audit D3 P2 pin: an HTTP-200 page with ZERO cards after ≥1
+        served page is soft-wall AMBIGUOUS — the index must report it as
+        retryable (exhausted=False so the phase resumes at the offset,
+        or blocked), NEVER as terminal done=true."""
+        pages = [[_card(i) for i in range(10)], []]
+        offsets = self._patch_pages(monkeypatch, pages)
+        monkeypatch.setattr(corroborate, "_INDEX_PAUSE_S", 0)
+        p = LinkedInSignalProvider(cfg=None)
+        cards, next_offset, exhausted = p.index_cards(
+            "NVIDIA", max_pages=10, max_cards=100)
+        assert offsets == [0, 10]             # page 0 full → page 1 empty
+        assert len(cards) == 10               # partial cards KEPT
+        assert exhausted is False             # ← the inversion fix
+        assert next_offset == 10              # resume point for retry
+
+    def test_empty_first_page_raises_blocked_empty(self, monkeypatch):
+        """Mirrors search_title's blocked_empty doctrine: a 200-empty
+        page 0 with nothing gained raises CorroborationBlocked (caller
+        marks the phase blocked, B5) instead of done=true with 0 cards."""
+        self._patch_pages(monkeypatch, [[]])
+        p = LinkedInSignalProvider(cfg=None)
+        with pytest.raises(corroborate.CorroborationBlocked,
+                           match="blocked_empty"):
+            p.index_cards("NVIDIA", max_pages=5)
+
+    def test_short_page_is_genuine_exhaustion_even_at_card_cap(
+            self, monkeypatch):
+        """A short tail page sets done=true even when the card cap is
+        simultaneously reached — the serving window IS complete, so the
+        meta must not re-open the index next run."""
+        pages = [[_card(i) for i in range(10)],
+                 [_card(i + 10) for i in range(4)]]
+        self._patch_pages(monkeypatch, pages)
+        monkeypatch.setattr(corroborate, "_INDEX_PAUSE_S", 0)
+        p = LinkedInSignalProvider(cfg=None)
+        cards, _, exhausted = p.index_cards(
+            "NVIDIA", max_pages=10, max_cards=12)
+        assert len(cards) == 12               # trimmed to the cap
+        assert exhausted is True              # short tail page = done
 
     def test_company_variant_filter(self, monkeypatch):
         pages = [[_card(1, company="NVIDIA"),
@@ -426,11 +493,14 @@ class TestIndexCardsPartitioned:
 
     def test_union_dedupes_across_slices(self, monkeypatch):
         # S0 serves cards 1,2 then 2,3 (intra-slice dupe); S1 serves
-        # 3,4 (card 3 = cross-slice dupe) → union [1,2,3,4]
+        # 3,4 (card 3 = cross-slice dupe) then re-serves both (intra-
+        # slice dupe) → union [1,2,3,4]
+        monkeypatch.setattr(corroborate, "_CARDS_PER_PAGE", 2)  # 2-wide
         served = self._patch(monkeypatch, {
             ("NVIDIA", "United States"): [
                 [_card(1), _card(2)], [_card(2), _card(3)]],
-            ("NVIDIA software", "United States"): [[_card(3), _card(4)]],
+            ("NVIDIA software", "United States"): [
+                [_card(3), _card(4)], [_card(3), _card(4)]],
         })
         p = LinkedInSignalProvider(cfg=None)
         cards, next_offset, exhausted = p.index_cards_partitioned(
@@ -456,16 +526,36 @@ class TestIndexCardsPartitioned:
         assert [c["id"] for c in cards] == ["1"]   # noise card filtered
 
     def test_slices_none_uses_default_matrix(self, monkeypatch):
-        served = self._patch(monkeypatch, {})      # every query exhausted
+        # every default-matrix query serves a SHORT (1-card) page — a
+        # well-formed board where every slice genuinely ends its serving
+        matrix = corroborate.default_index_slices("NVIDIA")
+        served = self._patch(monkeypatch, {
+            (sl["keywords"], sl["location"]): [[_card(1)]]
+            for sl in matrix})
         p = LinkedInSignalProvider(cfg=None)
         cards, next_offset, exhausted = p.index_cards_partitioned(
             "NVIDIA", max_pages_per_slice=1)
-        assert cards == [] and next_offset == 0 and exhausted is True
+        assert [c["id"] for c in cards] == ["1"]   # union dedup
+        assert next_offset == 0 and exhausted is True
         assert len(served) == 30                   # the full 6×5 matrix
         assert served[0][:2] == ("NVIDIA", "United States")
         assert any(kw == "NVIDIA sales" and
                    loc == "Remote, United States"
                    for kw, loc, _ in served)
+
+    def test_all_empty_board_raises_blocked_empty(self, monkeypatch):
+        """S9-audit D3 P2 pin (the inversion, partitioned flavor): an
+        all-empty board is soft-wall AMBIGUOUS, not a clean done=true
+        with 0 cards — the first slice's empty page-0 raises
+        CorroborationBlocked so the phase records blocked (B5) and
+        retries, exactly like search_title's blocked_empty."""
+        served = self._patch(monkeypatch, {})      # every query empty
+        p = LinkedInSignalProvider(cfg=None)
+        with pytest.raises(corroborate.CorroborationBlocked,
+                           match="blocked_empty"):
+            p.index_cards_partitioned(
+                "NVIDIA", max_pages_per_slice=1)
+        assert len(served) == 1                     # slice 0 only
 
     def test_first_slice_page0_blocked_raises(self, monkeypatch):
         self._patch(monkeypatch, {},
@@ -490,19 +580,38 @@ class TestIndexCardsPartitioned:
         assert next_offset == 0
 
     def test_exhausted_when_all_slices_run_clean(self, monkeypatch):
+        # both slices end on SHORT tail pages — genuine completion
         self._patch(monkeypatch, {
-            ("NVIDIA", "United States"): [[_card(1)], []],
-            ("NVIDIA software", "United States"): [[]]})
+            ("NVIDIA", "United States"): [[_card(1)]],
+            ("NVIDIA software", "United States"): [[_card(2)]]})
         p = LinkedInSignalProvider(cfg=None)
         cards, _, exhausted = p.index_cards_partitioned(
             "NVIDIA", slices=[self._S0, self._S1], max_pages_per_slice=2)
-        assert [c["id"] for c in cards] == ["1"]
+        assert [c["id"] for c in cards] == ["1", "2"]
         assert exhausted is True
+
+    def test_zero_result_slice_is_retryable_not_complete(self, monkeypatch):
+        """S9-audit D3 P2 pin: a slice serving an EMPTY 200 page is
+        wall-ambiguous — exhausted_all must go False (re-run later,
+        idempotent union) instead of silently certifying the whole
+        partitioned index done."""
+        self._patch(monkeypatch, {
+            ("NVIDIA", "United States"): [[_card(1)]],
+            ("NVIDIA software", "United States"): [[]]})   # 0-result slice
+        p = LinkedInSignalProvider(cfg=None)
+        cards, next_offset, exhausted = p.index_cards_partitioned(
+            "NVIDIA", slices=[self._S0, self._S1], max_pages_per_slice=2)
+        assert [c["id"] for c in cards] == ["1"]   # partial union kept
+        assert next_offset == 0
+        assert exhausted is False                    # ← the inversion fix
 
     def test_sleeps_between_slices_not_after_last(self, monkeypatch):
         """Rate discipline: _SLICE_PAUSE_S between slices (page pauses
         still apply inside each slice) — N slices → N-1 slice pauses.
-        Sleeps are RECORDED, never taken (sentinel pause values)."""
+        Sleeps are RECORDED, never taken (sentinel pause values).
+        S9-audit D3: pages are declared 1-wide (_CARDS_PER_PAGE=1) so
+        the 1-card fixture pages count as FULL — a SHORT tail page now
+        breaks BEFORE its page pause (no trailing sleep, D3 P3)."""
         sleeps: list[float] = []
         monkeypatch.setattr(
             corroborate, "time",
@@ -510,6 +619,7 @@ class TestIndexCardsPartitioned:
         self._patch(monkeypatch, {
             ("NVIDIA", "United States"): [[_card(1)]],
             ("NVIDIA software", "United States"): [[_card(2)]]})
+        monkeypatch.setattr(corroborate, "_CARDS_PER_PAGE", 1)
         monkeypatch.setattr(corroborate, "_INDEX_PAUSE_S", 0.25)
         monkeypatch.setattr(corroborate, "_SLICE_PAUSE_S", 3.0)
         p = LinkedInSignalProvider(cfg=None)
