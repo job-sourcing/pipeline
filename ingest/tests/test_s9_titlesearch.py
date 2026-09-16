@@ -894,3 +894,87 @@ class TestForeignReqIdCardServesNobody:
         joined = corroborate.join_by_title(
             sigs, {"JR1": "Engineer"}, "NVIDIA")
         assert joined["JR1"]["status"] == STATUS_BLOCKED
+
+
+class TestTsStrikeCap:
+    """S9-audit H2 P2: the cross-run blocked/error strike cap — a req
+    with >= _TS_STRIKE_CAP prior non-terminal lines is excluded from
+    probing (the per-run breaker reset used to re-burn head-of-line
+    reqs every run)."""
+
+    def test_capped_req_excluded_from_probing(self, tmp_path,
+                                              monkeypatch):
+        reqs = [("JR1", "Engineer"), ("JR2", "Engineer II")]
+        out = self._seed(reqs,
+                         [_sig(9, title="Unrelated", req_id="JR9")],
+                         [_card(9)]) if hasattr(self, "_seed") else None
+        if out is None:            # standalone class — build the seed
+            out = tmp_path / "dump"
+            out.with_suffix(".list.jsonl").write_text(
+                "\n".join(json.dumps(_list_row(r, t))
+                          for r, t in reqs) + "\n", encoding="utf-8")
+            out.with_suffix(".signals.jsonl").write_text(
+                json.dumps(_sig(9, title="Unrelated Role",
+                                req_id="JR9")) + "\n", encoding="utf-8")
+            out.with_suffix(".li_index.jsonl").write_text(
+                json.dumps(_card(9)) + "\n", encoding="utf-8")
+            out.with_suffix(".details.jsonl").write_text("", encoding="utf-8")
+            out.with_suffix(".li_index.meta.json").write_text(
+                '{"done": true}', encoding="utf-8")
+        # JR1 has 3 prior blocked lines — capped; JR2 clean
+        out.with_suffix(".title_search.jsonl").write_text(
+            "\n".join(json.dumps({"reqId": "JR1", "status": "blocked"})
+                      for _ in range(3)) + "\n", encoding="utf-8")
+        prov = _TsProvider({"JR2": ([], None)})
+        monkeypatch.setattr(board_dump.corroborate, "get_provider",
+                            lambda name, cfg=None: prov)
+        monkeypatch.setattr(corroborate, "TITLE_SEARCH_PAUSE_S", 0)
+        board_dump.phase_title_search(_ts_args(), out)
+        # only JR2 was probed; JR1 excluded by the cap
+        assert [c[0] for c in prov.search_calls] == ["Engineer II"]
+
+
+class TestBlockedTwinReservation:
+    """S9-audit H1r P2: a card that BOTH matched (fetched fine) and has
+    a blocked twin record (a walled re-fetch) must not ship twice —
+    the blocked tier respects the title tiers' consumption too."""
+
+    def test_blocked_twin_never_double_serves(self):
+        from jobsearch.corroborate import STATUS_BLOCKED
+        good = _sig(1, title="Engineer", req_id="")
+        twin = dict(good)
+        twin["status"] = STATUS_BLOCKED
+        twin["num_applicants"] = None
+        sigs = [good, twin, _sig(2, title="Engineer", req_id="")]
+        postings = {"JR1": "Engineer", "JR2": "Engineer"}
+        reqid_join, title_join, blocked_join = corroborate.compose_join(
+            sigs, postings, "NVIDIA")
+        served = ([str(x["linkedin_job_id"]) for x in reqid_join.values()]
+                  + [str(x["linkedin_job_id"]) for x in title_join.values()]
+                  + [str(x["linkedin_job_id"]) for x in blocked_join.values()])
+        # card 1 serves ONE row via the title tier; the blocked twin is
+        # reserved out; card 2 serves the other row
+        assert sorted(served) == ["1", "2"]
+
+    def test_blocked_twin_of_reqid_loser_serves_nobody(self):
+        """H6r sharpening: a blocked twin of a card that LOST the reqId
+        ranking (its matched twin serves the req; the blocked twin used
+        to leak to a title sibling as `blocked`)."""
+        from jobsearch.corroborate import STATUS_BLOCKED
+        winner = _sig(2, title="Engineer", req_id="JR1",
+                      date="2026-09-10")
+        winner["fetched_at"] = "2026-09-16T00:00:00"
+        loser = _sig(1, title="Engineer", req_id="JR1",
+                     date="2026-05-01")
+        twin = dict(loser)
+        twin["status"] = STATUS_BLOCKED
+        twin["num_applicants"] = None
+        sigs = [winner, loser, twin]
+        postings = {"JR1": "Engineer", "JR2": "Engineer"}
+        reqid_join, title_join, blocked_join = corroborate.compose_join(
+            sigs, postings, "NVIDIA")
+        # the winner serves JR1 by reqId; the loser's blocked twin must
+        # NOT surface on JR2 (foreign-jr leak through the empty-jr twin)
+        assert reqid_join["JR1"]["linkedin_job_id"] == "2"
+        assert "JR2" not in title_join
+        assert "JR2" not in blocked_join

@@ -846,6 +846,7 @@ class TestB6ErrorRetry:
         # feed carries an error record w/ attempts=1 → recoverable
         feed_prior = [{"reqId": "JR1", "title": "T", "first_seen":
                        "2026-09-01", "error": "detail_unreachable",
+                       "url": "https://real/JR1",
                        "attempts": 1}]
         got_input: dict = {}
 
@@ -863,8 +864,10 @@ class TestB6ErrorRetry:
         assert [x["reqId"] for x in got_input["rows"]] == ["JR1"]  # retried
 
     def test_three_strike_error_not_retried(self, wdir, monkeypatch):
+        # legit-failure shape (real url) at 3 strikes → skipped
         feed_prior = [{"reqId": "JR1", "title": "T", "first_seen":
                        "2026-09-01", "error": "detail_unreachable",
+                       "url": "https://real/JR1",
                        "attempts": 3}]
         got_input: dict = {}
 
@@ -1783,3 +1786,37 @@ class TestRepostRunWatch:
         st = {r["reqId"]: r for r in
               _read_jsonl(wdir / "test_watch.state.jsonl")}
         assert st["JR1"]["implied_post_date"] == "2026-09-11"
+
+
+class TestShapeBurnedRowsHeal:
+    """S9-audit H3v: the 25 pre-852bb5f rows burned their 3 strikes on
+    STATE-shaped rows (no url — guaranteed failures). The strike cap is
+    ignored for the url-less error signature; one successful enrichment
+    heals the row permanently. BEHAVIORAL pin (H8: the first version
+    was a tautology)."""
+
+    def test_urlless_error_at_three_strikes_is_retried(self, wdir,
+                                                       monkeypatch):
+        feed_prior = [{"reqId": "JR1", "title": "T", "first_seen":
+                       "2026-09-01", "error": "detail_unreachable",
+                       "url": "", "attempts": 3}]   # shape-burn signature
+        got_input: dict = {}
+
+        def fake_enrich(rows, *a, **k):
+            got_input["rows"] = list(rows)
+            return []
+
+        self._run_once(wdir, monkeypatch, [("JR1", "T")], feed_prior,
+                       fake_enrich)
+        # the 3-strike cap is BYPASSED for url-less error records —
+        # the row re-enters the backlog with its CURRENT (real) row
+        assert [r["reqId"] for r in got_input["rows"]] == ["JR1"]
+        assert got_input["rows"][0]["url"] == "u"   # real url, not ""
+
+    def _run_once(self, wdir, monkeypatch, board_rows, feed_prior,
+                  fake_enrich):
+        """Reuse the TestB6ErrorRetry harness (same wdir fixture)."""
+        import test_board_watch as tbw
+        b6 = tbw.TestB6ErrorRetry()
+        b6._run_once(wdir, monkeypatch, board_rows, feed_prior,
+                     fake_enrich)

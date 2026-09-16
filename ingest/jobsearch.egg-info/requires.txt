@@ -4,6 +4,7 @@ click>=8.1
 [dev]
 pytest>=8.0
 pytest-cov
+pyyaml>=6
 
 [jobspy]
 python-jobspy

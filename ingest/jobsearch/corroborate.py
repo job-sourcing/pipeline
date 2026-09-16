@@ -849,6 +849,16 @@ def compose_join(signals: list[dict], postings: dict[str, str],
     title_join = join_by_title(free_matched, unserved, company,
                                req_dates=req_dates,
                                req_locations=req_locations)
+    # S9-audit H1r P2 + H6r sharpening: a BLOCKED record whose card
+    # has a MATCHED twin (same card id, fetch succeeded) is a stale
+    # walled re-fetch of a card we already hold the truth for — the
+    # matched twin is the truth-carrier and the blocked twin must serve
+    # nobody (its hardcoded job_req_id:"" defeats the foreign-jr guard,
+    # and the old title_served-only filter missed the reqId-loser and
+    # departed-foreign-jr variants).
+    matched_card_ids = {_card_id(s2) for s2 in matched}
+    free_blocked = [s2 for s2 in free_blocked
+                    if _card_id(s2) not in matched_card_ids]
     blocked_join = join_by_title(free_blocked, unserved, company,
                                  req_dates=req_dates,
                                  req_locations=req_locations)

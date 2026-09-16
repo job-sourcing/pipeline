@@ -10,7 +10,7 @@ without it the server redirects to the developer portal home, not the form)
 Flow:
 1. Fetch a working US proxy from geonode (re-validated at script start)
 2. Visit developer.usajobs.gov/apirequest/ through the proxy with stealth
-3. Fill the form: givenName, lastName, emailAddress=redacted@priv.email,
+3. Fill the form: givenName, lastName, emailAddress=noreply@priv.email,
    phoneNumber (fake 555-555-5555), companyAgency, requestReason, agreeCheck
 4. Submit — USAJOBS shows the API key on the response page OR emails it
 5. The User-Agent header value = the registered email (USAJOBS_USER_AGENT)
@@ -81,7 +81,7 @@ def fetch_working_proxy() -> str | None:
 def step_signup(state: dict) -> dict:
     """Fill and submit the USAJOBS API request form via a working proxy."""
     if "email" not in state:
-        state["email"] = "redacted@priv.email"
+        state["email"] = "noreply@priv.email"
         save_state(SERVICE, state)
         print(f"  [signup] using email={state['email']}")
 

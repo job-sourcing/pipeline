@@ -250,6 +250,10 @@ class TestCliOpsAndJsonl:
         assert first["title"]
         assert "ghost_candidate" in first and "repost_count" in first
         assert "tier" in first and "skills" in first and "work_mode" in first
+        # Wave-R R2: --jsonl emits the facet-01 contract by default
+        assert first["job_id"] and first["remote_allowed"] is False
+        assert "experience_level" in first and "work_type" in first
+        assert "listed_time" in first and "link" in first
 
     def test_no_ops_skips_detection(self, tmp_path, monkeypatch):
         monkeypatch.setattr(cli_module, "search_all_sources",

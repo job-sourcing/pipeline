@@ -354,12 +354,24 @@ class Store:
         self.conn.commit()
 
     def export_jsonl(self, path: Path | str, query: Optional[str] = None,
-                     limit: int = 5000) -> int:
-        """Write stored jobs as JSONL (the Sprint-2 JSONL-export deliverable).
+                     limit: int = 5000, contract: Optional[str] = "facet01",
+                     max_description_chars: Optional[int] = None) -> int:
+        """Write stored jobs as JSONL.
 
-        One JSON object per line, model field names as keys, list fields as
-        real JSON arrays. Returns the number of lines written. Query=None
-        exports the whole tracker (cap: limit).
+        contract="facet01" (default, Wave-R R2): the durable corpus
+        contract — `jobsearch.export.facet01_row` maps each Job onto the
+        MAIN repo facet-01 loader's field names (job_id/experience_level/
+        work_type/remote_allowed/listed_time/… plus provenance extras).
+        Spec: docs/jsonl-export-spec.md.
+
+        contract=None: the legacy Sprint-2 debug shape — the raw model
+        dump with model field names as keys.
+
+        One JSON object per line, list fields as real JSON arrays.
+        Returns the number of lines written. Query=None exports the whole
+        tracker (cap: limit). `max_description_chars` truncates the
+        EXPORTED description only (facet01 contract) — the DB rows are
+        never modified.
         """
         if query:
             rows = self.conn.execute(
@@ -376,15 +388,21 @@ class Store:
         with out.open("w", encoding="utf-8") as fh:
             for row in rows:
                 job = self._row_to_job(row)
-                d = job.to_dict()
-                # to_dict JSON-encodes list fields for SQLite; the JSONL
-                # contract wants REAL arrays — decode them back.
-                for k in ("llm_matches", "llm_gaps", "trust_flags", "skills"):
-                    if isinstance(d.get(k), str):
-                        try:
-                            d[k] = json.loads(d[k])
-                        except json.JSONDecodeError:
-                            pass
+                if contract == "facet01":
+                    from .export import facet01_row
+                    d = facet01_row(job,
+                                   max_description_chars=max_description_chars)
+                else:
+                    d = job.to_dict()
+                    # to_dict JSON-encodes list fields for SQLite; the JSONL
+                    # contract wants REAL arrays — decode them back.
+                    for k in ("llm_matches", "llm_gaps", "trust_flags",
+                              "skills"):
+                        if isinstance(d.get(k), str):
+                            try:
+                                d[k] = json.loads(d[k])
+                            except json.JSONDecodeError:
+                                pass
                 fh.write(json.dumps(d, ensure_ascii=False) + "\n")
                 n += 1
         return n

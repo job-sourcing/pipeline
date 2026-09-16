@@ -1,7 +1,7 @@
 """ImprovMX email polling helper.
 
 priv.email is set up with a catch-all → ansgareutychis@hotmail.com. We use
-distinct aliases per service (redacted@priv.email, redacted@priv.email, ...)
+distinct aliases per service (adzuna@priv.email, findwork@priv.email, ...)
 so we can poll the unified ImprovMX log API and filter by recipient.
 
 API: GET https://api.improvmx.com/v3/domains/priv.email/logs?take=N
@@ -81,7 +81,7 @@ def wait_for_email(
     """Poll ImprovMX until an email matches the criteria or timeout.
 
     Args:
-        recipient: e.g. "redacted@priv.email"
+        recipient: e.g. "adzuna@priv.email"
         sender_contains: substring to filter sender (e.g. "adzuna")
         subject_contains: substring the subject must contain
         timeout_s: total seconds to wait
@@ -110,8 +110,8 @@ def wait_for_email(
             # Filter by recipient
             rcpt = log.get("recipient", {}).get("email", "").lower()
             if recipient.lower() not in rcpt and rcpt != recipient.lower():
-                # Allow catch-all alias match: e.g. "redacted@priv.email" should
-                # match a recipient of exactly "redacted@priv.email"
+                # Allow catch-all alias match: e.g. "adzuna@priv.email" should
+                # match a recipient of exactly "adzuna@priv.email"
                 continue
 
             # Filter by sender substring

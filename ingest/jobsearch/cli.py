@@ -45,7 +45,11 @@ LLM-powered support triage. B.S. Computer Science.
               help="LLM scoring pool size (default from config: 20).")
 @click.option("--db", default=None, help="SQLite path override.")
 @click.option("--jsonl", "jsonl_path", default=None, type=click.Path(),
-              help="Export the run's stored jobs to a JSONL file after the run.")
+              help="Export the run's stored jobs to a JSONL file after the run "
+                   "(facet-01 corpus contract; docs/jsonl-export-spec.md).")
+@click.option("--jsonl-desc-max", "jsonl_desc_max", default=None, type=int,
+              help="Truncate each exported description to N chars (export "
+                   "only — the DB keeps the full text).")
 @click.option("--ops/--no-ops", default=True, show_default=True,
               help="Run repost + ghost-job detection over the stored jobs.")
 @click.option("--alerts/--no-alerts", default=False, show_default=True,
@@ -55,7 +59,8 @@ LLM-powered support triage. B.S. Computer Science.
 @click.option("--verbose", "-v", is_flag=True, help="Per-source report on stderr.")
 def search_jobs(keywords: str, location: str, num: int, sources: str,
                 score: bool, resume_file: str | None, top_n: int | None,
-                db: str | None, jsonl_path: str | None, ops: bool,
+                db: str | None, jsonl_path: str | None,
+                jsonl_desc_max: int | None, ops: bool,
                 alerts: bool, verbose: bool):
     """Search job boards, dedup, store, and rank by fit against the resume."""
     # Step D: process-wide DNS memoization + resolver pacing (opt out with
@@ -82,7 +87,8 @@ def search_jobs(keywords: str, location: str, num: int, sources: str,
         try:
             _run_pipeline(store, cfg, keywords, location, num, source_list,
                           score, resume_text, top_n, verbose,
-                          jsonl_path=jsonl_path, ops=ops, alerts=alerts)
+                          jsonl_path=jsonl_path, ops=ops, alerts=alerts,
+                          jsonl_desc_max=jsonl_desc_max)
         finally:
             store.close()
 
@@ -91,7 +97,8 @@ def _run_pipeline(store: Store, cfg, keywords: str, location: str, num: int,
                   source_list: list[str], score: bool, resume_text: str,
                   top_n: int | None, verbose: bool,
                   jsonl_path: str | None = None, ops: bool = True,
-                  alerts: bool = False) -> None:
+                  alerts: bool = False,
+                  jsonl_desc_max: int | None = None) -> None:
         run_id = store.start_run("search-jobs", keywords)
         if verbose:
             click.echo(f"Searching {len(source_list)} sources for "
@@ -172,7 +179,8 @@ def _run_pipeline(store: Store, cfg, keywords: str, location: str, num: int,
                                f"pending (unmarked, will retry)", err=True)
 
         if jsonl_path:
-            n = store.export_jsonl(jsonl_path, query=keywords)
+            n = store.export_jsonl(jsonl_path, query=keywords,
+                                   max_description_chars=jsonl_desc_max)
             click.echo(f"Exported {n} jobs → {jsonl_path}", err=True)
 
         _print_report(store, keywords, llm_ok, ops_summary)

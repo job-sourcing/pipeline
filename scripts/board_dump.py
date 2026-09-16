@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Generic exhaustive per-company board snapshot (board-dump v2.1).
+"""Generic exhaustive per-company board snapshot (board-dump v2.4).
 
 Generalizes scripts/workday_dump.py (the NVIDIA pilot) into the repeatable
 flow the user asked to productize (design-board-v2.md D3):
 
-  list → details → [corroborate] → [tagfacets] → finish
+  list → details → [corroborate] → [titlesearch] → [tagfacets] → finish
 
 - **list**: exhaustively paginate one ATS board (server-side facets for
   country / timeType), streaming JSONL, wrap-guards per the CXS quirks
@@ -18,13 +18,21 @@ flow the user asked to productize (design-board-v2.md D3):
 - **corroborate**: join aggregator-platform signals (LinkedIn guest:
   applicant counts, cross-post dates, req-id exact join) — resumable,
   circuit-breakered, status-enummed (matched|no_match|blocked|not_checked).
+- **titlesearch** (OPTIONAL, S9 — run after corroborate, repeat until
+  the meta reports done): per-no_match-req EXACT-title LinkedIn guest
+  search; verbatim-matching cards append to {label}.li_index.jsonl
+  (source "titleSearch") — re-run corroborate afterwards to fetch the
+  new cards' signals. State {label}.title_search.jsonl (terminal
+  statuses hit_new|hit_indexed|no_card; blocked/error retried);
+  meta {label}.title_search.meta.json gates finish: an INCOMPLETE
+  titlesearch ships unprobed reqs not_checked, never no_match.
 - **tagfacets** (OPTIONAL, run before finish, same --country/--time-type
   as the list): per-row workerSubType + jobFamilyGroup tagging via
   facet-partitioned lists (these classifications exist ONLY as facet
   values — S8-D gaps #2/#3) → {label}.facet_tags.jsonl. Resumable at
   (param, value) granularity; the done-markers are population-
   fingerprinted against the listing (S9-C3 P1 — see phase_facet_tags).
-- **finish**: assemble {out}.json + the v2.1 CSV + a validation report +
+- **finish**: assemble {out}.json + the v2.4 CSV + a validation report +
   {label}.similar_edges.jsonl (one role-similarity edge per line).
 
 CSV v2.4 column ORDER (the contract — CSV_COLUMNS is the single source of
@@ -44,9 +52,11 @@ truth; 44 columns: v2.1 added #32-#41, v2.3 added #42-#43, v2.4 added
                             29 firstSeenDate (watch state when present,
                             else dump date)   30 corroboratedOn
     31 dumpDate
-    32 endDate              (detail endDate — 2.9% of rows)
-    33 daysOnMarket         (snapshot_date − startDate; snapshot_date =
-                            today at finish time, passed to every row)
+    32 endDate              (detail endDate — 3.1% of rows)
+    33 daysOnMarket         (snapshot_date − earliest evidence date —
+                            startDate, or the earlier LI card date per
+                            #34; snapshot_date = today at finish time,
+                            passed to every row)
     34 daysOnMarketBasis    ("startDate" | "startDate+linkedin" when the
                             LI card date moved the floor earlier | "")
     35 censored             ("true" when startDate < WATCH_SEED or is
@@ -57,7 +67,7 @@ truth; 44 columns: v2.1 added #32-#41, v2.3 added #42-#43, v2.4 added
     37 lastResetDate        (the watch repost detector's measured
                             new_startDate for this req; "" when no event)
     38 applicationDeadline  ("Applications … accepted … until {date}"
-                            from description — 98.3% coverage; falls back
+                            from description — 98.9% coverage; falls back
                             to structured endDate. NOTE: a FLOOR, not a
                             guarantee — postings routinely stay live past
                             it; negative #39 on a live posting is normal)
@@ -84,6 +94,9 @@ Usage:
       --company NVIDIA --label nvidia_us_fulltime --phase list
   ... --phase details   (repeat while rows remain)
   ... --phase corroborate (repeat while cards remain; then signals)
+  ... --phase titlesearch (repeat until meta done: true — probes
+      no_match reqs' exact titles; then corroborate AGAIN to fetch
+      the newly discovered cards' signals)
   ... --phase tagfacets  (optional; before finish)
   ... --phase finish
 """
@@ -133,29 +146,34 @@ CSV_COLUMNS = [
     "detailError",           # 21 "" | detail_unreachable (detail-derived
                              #    cols above are UNKNOWN, not absent)
     "linkedinUrl",           # 22 matched LI posting — 0D
-    "linkedinPostedDate",    # 22 LI cross-post date
-    "numApplicants",         # 23 LI applicant count
-    "applicantLabel",        # 24 raw label ("Over 200 applicants")
-    "dateDeltaDays",         # 25 LI date − startDate (repost lag)
-    "corroborationStatus",   # 26 matched|no_match|blocked|not_checked
-    "matchMethod",           # 27 reqId|title|""
-    "firstSeenDate",         # 28 first sighting by us (dump/watch)
-    "corroboratedOn",        # 29 ISO timestamp of signal fetch
-    "dumpDate",              # 30 dump generation date
+    "linkedinPostedDate",    # 23 LI cross-post date
+    "numApplicants",         # 24 LI applicant count
+    "applicantLabel",        # 25 raw label ("Over 200 applicants")
+    "dateDeltaDays",         # 26 LI date − startDate (repost lag)
+    "corroborationStatus",   # 27 matched|no_match|blocked|not_checked
+    "matchMethod",           # 28 reqId|title|titleMultiset|""
+    "firstSeenDate",         # 29 first sighting by us (watch
+                             #    first_seen when present, else dump date)
+    "corroboratedOn",        # 30 ISO timestamp of signal fetch
+    "dumpDate",              # 31 dump generation date
     # ── v2.1 addenda (S8-E3: S8-D gap table #5/#6 + S8-C §7/§8-R3) ──────
-    "endDate",               # 32 detail endDate (ISO; 2.9% of rows)
-    "daysOnMarket",          # 33 snapshot_date − startDate (int; "" when
-                             #    no startDate) — best-estimate listing age
-    "daysOnMarketBasis",     # 34 "startDate" | "" (evidence basis; grows
-                             #    to startDate+history|linkedin|slugSuffix
-                             #    once the watch feeds earliest-evidence)
+    "endDate",               # 32 detail endDate (ISO; 43 rows live)
+    "daysOnMarket",          # 33 snapshot_date − earliest evidence date
+                             #    (startDate; earlier LI card date per #34;
+                             #    int; "" when no evidence) — best-estimate
+                             #    listing age
+    "daysOnMarketBasis",     # 34 "startDate" | "startDate+linkedin" | ""
+                             #    (an LI card date PREDATES startDate ⇒ age
+                             #    measured from the earlier evidence — #33)
     "censored",              # 35 "true" | "false" — see WATCH_SEED below
     "repostCount",           # 36 slug "…_JR####-N" suffix (Workday's own
                              #    repost counter; 0 when absent)
-    "lastResetDate",         # 37 "" — reserved for the watch's repost
-                             #    detector (S8-C R1/R2)
+    "lastResetDate",         # 37 the watch repost detector's measured
+                             #    new_startDate for this req (last event
+                             #    wins; "" when no event — S8-C R1/R2,
+                             #    filled since S9-audit A6r)
     "applicationDeadline",   # 38 "accepted … until {date}" parsed from
-                             #    description (98.3%); endDate fallback
+                             #    description (98.9%); endDate fallback
     "daysLeftToApply",       # 39 deadline − snapshot_date (int | "")
     "workerSubType",         # 40 tagfacets phase (Intern/NCG/…)
     "jobFamilyGroup",        # 41 tagfacets phase (NVIDIA's taxonomy)
@@ -173,7 +191,7 @@ CSV_COLUMNS = [
                              #    "among first", cap 200 "Over"): never
                              #    average #24 without this. RECOMPUTED
                              #    from (num, label) — not the stored flag
-                             #    (752/1,465 live signals predate the key)
+                             #    (752/1,502 live signals predate the key)
 ]
 
 # The board-watch's first observation date (2026-09-09 — the NVIDIA seed
@@ -265,10 +283,13 @@ def _repair_jsonl_tail(path: Path) -> None:
     if data.endswith(b"\n"):
         return                      # clean tail — nothing to do
     last_nl = data.rfind(b"\n")
-    good = data[:last_nl + 1] if last_nl >= 0 else b""
-    lost = len(data) - len(good)
-    with open(path, "wb") as f:
-        f.write(good)
+    keep = last_nl + 1 if last_nl >= 0 else 0
+    lost = len(data) - keep
+    # S9-audit H2 P2: r+b + truncate — an open("wb") re-write zeroes the
+    # whole checkpoint BEFORE the write-back (a crash mid-repair would
+    # destroy the file); truncate only shortens
+    with open(path, "r+b") as f:
+        f.truncate(keep)
     print(f"[warn] repaired torn tail in {path.name} "
           f"({lost} partial bytes dropped — the crashed record will be "
           f"re-fetched)", file=sys.stderr)
@@ -284,9 +305,15 @@ def _load_details_state(det_path: Path) -> tuple[dict, dict]:
     settled row keeps its good payload while its refetch strikes
     accumulate independently.
 
-    Returns (good, attempts): good = {reqId: last record WITH info};
-    attempts = {reqId: max attempts seen on error records}."""
+    Returns (view, attempts): view = {reqId: last GOOD record, or —
+    when the req never settled — the LAST error record (S9-audit H2 P1:
+    never-settled rows used to vanish from the payload view entirely
+    and ship detailError="" at finish; the error record carries no
+    info, so info-derived fields stay honestly empty, but the marker
+    survives)}; attempts = {reqId: max attempts seen on error records}.
+    A record has info ⇒ settled; consumers derive that themselves."""
     good: dict[str, dict] = {}
+    last_err: dict[str, dict] = {}
     attempts: dict[str, int] = {}
     for d in _load_jsonl(det_path):
         rid = d.get("reqId")
@@ -294,12 +321,18 @@ def _load_details_state(det_path: Path) -> tuple[dict, dict]:
             continue
         if d.get("info"):
             good[rid] = d
+        else:
+            last_err[rid] = d
         try:
             attempts[rid] = max(attempts.get(rid, 0),
                                 int(d.get("attempts") or 0))
         except (TypeError, ValueError):
             pass
-    return good, attempts
+    view = dict(good)
+    for rid, rec in last_err.items():
+        if rid not in view:
+            view[rid] = rec        # never settled — keep the marker
+    return view, attempts
 
 
 def _append_jsonl(path: Path, rows: list[dict]) -> None:
@@ -410,14 +443,14 @@ def phase_details(args, out: Path) -> int:
     # columns until a retry succeeded; 3-strike then froze it). Now the
     # good record survives and refetch strikes accumulate independently
     # (a settled row whose refetch struck out keeps its old payload).
-    good, attempts = _load_details_state(det_path)
-    settled = set(good)
+    det_view, attempts = _load_details_state(det_path)
+    settled = {rid for rid, d in det_view.items() if d.get("info")}
     # error rows retry with a 3-strike cap (audit S7-A2 H: transient 429s
     # were permanently losing descriptions). attempts accumulate per req
     # across ALL records (never reset — a success settles the row out of
     # the work set anyway).
     three_strikes = {rid for rid, a in attempts.items()
-                     if a >= 3 and rid not in good}
+                     if a >= 3 and rid not in settled}
     todo = [r for r in rows
             if r["reqId"] not in settled and r["reqId"] not in three_strikes]
     # S8-F backfill: rows settled BEFORE the similarJobs LIST capture
@@ -429,15 +462,15 @@ def phase_details(args, out: Path) -> int:
     if args.refetch_similar:
         stale = [r for r in rows
                  if r["reqId"] in settled
-                 and "similarJobs" not in (good.get(r["reqId"]) or {})
+                 and "similarJobs" not in (det_view.get(r["reqId"]) or {})
                  and attempts.get(r["reqId"], 0) < 3]
         todo = todo + stale
         print(f"[details] refetch-similar: {len(stale)} settled rows "
               f"lack the similarJobs list "
-              f"({sum(1 for r in rows if r['reqId'] in settled and attempts.get(r['reqId'], 0) >= 3 and 'similarJobs' not in (good.get(r['reqId']) or {}))} past strike cap)",
+              f"({sum(1 for r in rows if r['reqId'] in settled and attempts.get(r['reqId'], 0) >= 3 and 'similarJobs' not in (det_view.get(r['reqId']) or {}))} past strike cap)",
               flush=True)
     n_err_rows = sum(1 for rid, a in attempts.items()
-                     if a > 0 and rid not in good)
+                     if a > 0 and rid not in settled)
     print(f"[details] {len(rows)} rows, {len(settled)} settled, "
           f"{n_err_rows} error rows "
           f"({len(three_strikes)} past 3-strike cap), "
@@ -598,6 +631,7 @@ def phase_corroborate(args, out: Path) -> int:
           f"{len(done_ids)} signals done, {len(todo_cards)} to fetch",
           flush=True)
     if todo_cards:
+        _repair_jsonl_tail(sig_path)      # B7 guard (S9-audit H2)
         batch = todo_cards[:args.signals_batch]
         # per-card checkpointing (on_record fires the moment each record
         # exists — a mid-batch kill loses NOTHING; an IO-failed record
@@ -951,6 +985,7 @@ def phase_facet_tags(args, out: Path) -> int:
               flush=True)
     tagged = 0
     incomplete = 0
+    _repair_jsonl_tail(tag_path)          # B7 guard (S9-audit H2)
     with open(tag_path, "a", encoding="utf-8") as tf:
         for param in _TAG_FACETS:
             values = [v for v in workday.facet_values(first, param) if v[2]]
@@ -1468,7 +1503,11 @@ def phase_finish(args, out: Path) -> int:
     n_sig_notchecked = sum(1 for r in csv_rows
                            if r["corroborationStatus"] == "not_checked")
     uniq = len({r["reqId"] for r in csv_rows})
-    loc_sum = sum(r["nLocations"] for r in csv_rows)
+    # S9-audit H6r P1: nLocations is "" (honest unknown) on
+    # detail-error rows — sum() over mixed int/str raises TypeError and
+    # kills finish AFTER the CSV/JSON are written (stale report.txt)
+    loc_sum = sum(r["nLocations"] for r in csv_rows
+                  if isinstance(r["nLocations"], int))
     report = [
         f"rows: {len(csv_rows)} (unique reqIds: {uniq})",
         f"details merged: {matched_rows}",

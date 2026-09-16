@@ -12,4 +12,5 @@ Requires-Dist: python-jobspy; extra == "jobspy"
 Provides-Extra: dev
 Requires-Dist: pytest>=8.0; extra == "dev"
 Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pyyaml>=6; extra == "dev"
 Dynamic: license-file

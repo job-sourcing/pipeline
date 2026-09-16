@@ -941,6 +941,16 @@ def run_watch(w: dict, cfg: Config) -> str:
             # never enriched: today's rows + crash survivors (flagged)
             return bool(p.get("needs_enrich")
                         or p.get("first_seen") == today_iso)
+        # enriched-with-error: retry until 3 strikes (B6) — EXCEPT the
+        # shape-burned class (S9-audit H3v): 25 live rows burned their
+        # strikes on the pre-852bb5f bug that fed STATE-shaped rows (no
+        # url) to enrich_new — guaranteed failures, not outages. Their
+        # signature: an error record with no url. Those strike out on
+        # garbage, so the cap is ignored for them (one successful
+        # enrichment heals the row permanently).
+        if feed_rec.get("error") and not (feed_rec.get("url")
+                                          or "").strip():
+            return True
         # enriched-with-error: retry until 3 strikes (B6)
         return bool(feed_rec.get("error")) \
             and int(feed_rec.get("attempts") or 0) < 3

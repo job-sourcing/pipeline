@@ -192,6 +192,12 @@ def test_export_jsonl_by_query(store, tmp_path):
     assert first["title"] == "Engineer 0"
     assert first["skills"] == ["Python"]      # real JSON array, not a string
     assert first["source"] == "Remotive"
+    # Wave-R R2: the default export IS the facet-01 contract —
+    # stable job_id + the consumer's field names are pinned here too.
+    assert first["job_id"]                    # never empty → no 'line-N' ids
+    assert len({json.loads(x)["job_id"] for x in lines}) == 3
+    assert "experience_level" in first and "work_type" in first
+    assert "remote_allowed" in first and "listed_time" in first
 
 
 def test_export_jsonl_whole_db(store, tmp_path):

@@ -2029,3 +2029,73 @@ class TestCsvV24Columns:
         row = self._derive(
             det={"info": {"startDate": "2026-09-08"}})
         assert row["postingAgeDays"] == 8       # 2026-09-16 − 09-08
+
+
+class TestNeverSettledErrorMarker(TestPhaseDetailsResume):
+    """S9-audit H2 P1: never-settled rows (all records are errors) must
+    keep their detailError marker at finish — the good-record view used
+    to drop them from the payload view entirely (detailError="" +
+    nLocations=1 lie)."""
+
+    def test_never_settled_row_keeps_error_marker(self, tmp_path):
+        out = self._write_list(tmp_path, ["JR1"])
+        out.with_suffix(".details.jsonl").write_text(
+            json.dumps({"reqId": "JR1", "error": "detail_unreachable",
+                        "attempts": 3, "fetched_at": "2026-09-16T00:00:00+00:00"})
+            + "\n", encoding="utf-8")
+        view, attempts = board_dump._load_details_state(
+            out.with_suffix(".details.jsonl"))
+        assert view["JR1"]["error"] == "detail_unreachable"
+        assert attempts["JR1"] == 3
+        # settled derivation stays honest (an error record is NOT settled)
+        settled = {rid for rid, d in view.items() if d.get("info")}
+        assert "JR1" not in settled
+
+    def test_good_record_beats_error_fallback(self, tmp_path):
+        out = self._write_list(tmp_path, ["JR1"])
+        out.with_suffix(".details.jsonl").write_text(
+            json.dumps({"reqId": "JR1", "info": _detail_info(),
+                        "hiringOrg": "X", "similarJobsCount": 1}) + "\n" +
+            json.dumps({"reqId": "JR1", "error": "detail_unreachable",
+                        "attempts": 1}) + "\n", encoding="utf-8")
+        view, _ = board_dump._load_details_state(
+            out.with_suffix(".details.jsonl"))
+        assert view["JR1"].get("info")            # the GOOD record wins
+
+
+
+class TestFinishSurvivesErrorRows:
+    """S9-audit H6r P1: never-settled rows ship nLocations='' (honest
+    unknown) — finish's loc_sum must not crash on the mixed types."""
+
+    def test_finish_survives_never_settled_row(self, tmp_path, monkeypatch):
+        out = tmp_path / "dump"
+        rows = [_list_row(req_id="JR1", title="Engineer"),
+                _list_row(req_id="JR2", title="Unmatched Role")]
+        board_dump._atomic_write_text(
+            out.with_suffix(".list.jsonl"),
+            "\n".join(json.dumps(r) for r in rows) + "\n")
+        # JR1: never settled (error record only) — the honest-unknown path
+        board_dump._atomic_write_text(
+            out.with_suffix(".details.jsonl"),
+            json.dumps({"reqId": "JR1", "error": "detail_unreachable",
+                        "attempts": 3,
+                        "fetched_at": "2026-09-16T00:00:00+00:00"}) + "\n")
+        board_dump._atomic_write_text(
+            out.with_suffix(".signals.jsonl"),
+            json.dumps({"job_req_id": "JR2", "status": "matched",
+                        "num_applicants": 5, "applicants_label": "5 applicants",
+                        "linkedin_posted_date": "2026-09-08",
+                        "linkedin_url": "https://x/9", "title": "Unmatched Role",
+                        "company": "NVIDIA", "linkedin_job_id": "9"}) + "\n")
+        args = type("A", (), {"board": "nvidia|wd5|x", "company": "NVIDIA",
+                              "country": "US", "time_type": "Full time",
+                              "require_details": False})()
+        rc = board_dump.phase_finish(args, out)
+        assert rc == 0                       # was TypeError at loc_sum
+        import csv as _csv
+        with open(out.with_suffix(".csv"), encoding="utf-8-sig") as f:
+            got = {r["reqId"]: r for r in _csv.DictReader(f)}
+        assert got["JR1"]["detailError"] == "detail_unreachable"
+        assert got["JR1"]["nLocations"] == ""
+        assert (out.with_suffix(".report.txt")).exists()

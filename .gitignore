@@ -8,6 +8,7 @@ ingest/data/*
 !ingest/data/ats_seed/
 !ingest/data/workday/
 !ingest/data/board_watch/
+!ingest/data/corpus/
 ingest/.venv/
 *.tmp
 *.pyc
@@ -15,12 +16,4 @@ __pycache__/
 .pytest_cache/
 # agent tool-output dumps (junk — must never be committed again; S8-A)
 tool-results/
-
-# --- public-mirror guards (never commit these here) ---
-ingest/.env
-research_data/
-validation_results/
-audit/
-.agents/
-*.har
-tool-results/
+.coverage

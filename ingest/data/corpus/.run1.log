@@ -1,0 +1,6 @@
+Searching 23 sources for 'software engineer' (Remote)...
+⚠ degraded: JSearch: RuntimeError: JSearch API error (HTTP 404)
+⚠ degraded: The Muse: HTTPError: 403 Client Error: Forbidden for url: https://www.themuse.com/api/public/jobs?page=0&take=50
+⚠ degraded: Wellfound: RuntimeError: Wellfound source requires `playwright` + `playwright-stealth` installed: No module named 'playwright_stealth'
+⚠ degraded: USAJobs: RuntimeError: USAJobs: direct request geo-blocked (HTTP 403 from HK egress) and the US-proxy transports also failed: ZenRows error HTTP 402: Usage exceeded (AUTH004)
+Exported 529 jobs → data/corpus/software_engineer.jsonl
