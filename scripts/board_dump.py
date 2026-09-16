@@ -144,6 +144,14 @@ CSV_COLUMNS = [
     "daysLeftToApply",       # 39 deadline − snapshot_date (int | "")
     "workerSubType",         # 40 tagfacets phase (Intern/NCG/…)
     "jobFamilyGroup",        # 41 tagfacets phase (NVIDIA's taxonomy)
+    # ── v2.3 addenda (S9: cross-source timing floor) ──────────────────
+    "earliestEvidenceDate",  # 42 min(startDate, linkedinPostedDate) —
+                             #    the honest cross-source age floor
+    "crossSourceRepostEvidence",  # 43 ""|reqId|title — the LI card
+                             #    PREDATES startDate ⇒ the req was on the
+                             #    market before its (reset) startDate;
+                             #    reqId-joins = CONFIRMED repost (the
+                             #    card IS the same requisition)
 ]
 
 # The board-watch's first observation date (2026-09-09 — the NVIDIA seed
@@ -334,6 +342,19 @@ def phase_details(args, out: Path) -> int:
                          and int(d.get("attempts") or 1) >= 3)}
     todo = [r for r in rows
             if r["reqId"] not in settled and r["reqId"] not in three_strikes]
+    # S8-F backfill: rows settled BEFORE the similarJobs LIST capture
+    # landed carry similarJobsCount but NOT the list (the count-only era,
+    # 2026-09-13) — --refetch-similar re-fetches them (append-only,
+    # last-wins: the fresh record replaces the old in the done-dict on
+    # the next load). Same 3-strike/batch/checkpoint machinery as the
+    # first pass.
+    if args.refetch_similar:
+        stale = [r for r in rows
+                 if r["reqId"] in settled
+                 and "similarJobs" not in (done.get(r["reqId"]) or {})]
+        todo = todo + stale
+        print(f"[details] refetch-similar: {len(stale)} settled rows "
+              f"lack the similarJobs list", flush=True)
     print(f"[details] {len(rows)} rows, {len(settled)} settled, "
           f"{len(done) - len(settled)} error rows "
           f"({len(three_strikes)} past 3-strike cap), "
@@ -502,14 +523,35 @@ def phase_corroborate(args, out: Path) -> int:
               f"{remaining} cards remaining)", flush=True)
 
     # ── join preview ──
+    # S9-audit F1 fix: the preview goes through join_population WITH
+    # req_dates/req_locations (loaded like finish/titlesearch do) — the
+    # old preview composed the join without them AND without the
+    # cross-tier reservation, drifting from what finish ships.
     signals = _load_jsonl(sig_path)
-    matched = corroborate.join_by_req_id(signals, req_ids)
-    title_matched = corroborate.join_by_title(
-        [s for s in signals if s.get("status") == "matched"],
-        {r["reqId"]: r["title"] for r in rows}, args.company)
-    only_title = {k: v for k, v in title_matched.items() if k not in matched}
-    print(f"[corroborate] join preview: {len(matched)} by reqId, "
-          f"+{len(only_title)} by title, {len(signals)} signals total",
+    det_by_req: dict[str, dict] = {}
+    for d in _load_jsonl(out.with_suffix(".details.jsonl")):
+        det_by_req[d["reqId"]] = d
+    req_ids = {r["reqId"] for r in rows}
+    prev_dates = {rid: (det_by_req.get(rid) or {}).get("info", {}).get(
+        "startDate") or "" for rid in req_ids}
+    prev_locs: dict[str, str] = {}
+    for rid in req_ids:
+        info = (det_by_req.get(rid) or {}).get("info") or {}
+        locs = [info.get("location") or ""] + list(
+            info.get("additionalLocations") or [])
+        loc_str = "; ".join(l for l in locs if l)
+        if loc_str:
+            prev_locs[rid] = loc_str
+    matched = corroborate.join_by_req_id(
+        [s for s in signals if s.get("status") == "matched"], req_ids)
+    matched_ids, _unmatched = corroborate.join_population(
+        signals, {r["reqId"]: r["title"] for r in rows}, args.company,
+        req_dates={k: v for k, v in prev_dates.items() if v},
+        req_locations=prev_locs)
+    n_reqid = len({rid for rid in matched if rid in matched_ids})
+    print(f"[corroborate] join preview: {n_reqid} by reqId, "
+          f"+{len(matched_ids) - n_reqid} by title, "
+          f"{len(signals)} signals total",
           flush=True)
     return 0
 
@@ -851,6 +893,31 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
         except ValueError:
             pass
     tag_row = (facet_tags or {}).get(r["reqId"]) or {}
+    # ── v2.3 cross-source timing floor (S9): a LinkedIn card date that
+    #    PREDATES the Workday startDate is lower-bound evidence the req
+    #    existed earlier (Workday resets startDate on repost — S8-C;
+    #    reqId-joined cards are the same requisition ⇒ CONFIRMED
+    #    repost; title-joined ⇒ suggestive). daysOnMarket then measures
+    #    from the earliest evidence and says so in the basis column.
+    earliest = start
+    repost_evidence = ""
+    li_date = (sig or {}).get("linkedin_posted_date") or ""
+    if li_date and start and li_date < start[:10]:
+        earliest = li_date[:10]
+        # evidence CLASS, not match method (S9-audit A3/F1): the
+        # documented enum is ""|reqId|title — multiset rows report
+        # `title` (their card was found by title, tier is provenance)
+        method = (sig or {}).get("match_method") or "title"
+        repost_evidence = ("reqId" if method == "reqId" else "title")
+    elif li_date and not start:
+        earliest = li_date[:10]
+    if earliest and earliest != start:
+        try:
+            days_on_market = (snapshot - date.fromisoformat(
+                earliest)).days
+            dom_basis = "startDate+linkedin"
+        except ValueError:
+            pass
     row = {
         "reqId": r["reqId"],
         "title": info.get("title") or r.get("title") or "",
@@ -913,6 +980,9 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
     row["daysLeftToApply"] = days_left
     row["workerSubType"] = tag_row.get("workerSubType") or ""
     row["jobFamilyGroup"] = tag_row.get("jobFamilyGroup") or ""
+    # ── v2.3 columns (#42-#43) ─────────────────────────────────────
+    row["earliestEvidenceDate"] = earliest
+    row["crossSourceRepostEvidence"] = repost_evidence
     return row
 
 
@@ -978,12 +1048,12 @@ def phase_finish(args, out: Path) -> int:
                     "hit_new", "hit_indexed", "no_card"):
                 ts_terminal.add(rec["reqId"])
 
-    # join: reqId exact first, then title fallback (1:1 greedy,
-    # matchMethod recorded). req_dates = detail startDates for the
-    # proximity disambiguation; req_locations (S8-E1) = detail
-    # locations for the location-aware tiebreak in the title join.
-    matched = [s for s in signals if s.get("status") == "matched"]
-    blocked = [s for s in signals if s.get("status") == "blocked"]
+    # join: ONE canonical composition (S9-audit P0 fix — the tiers
+    # were composed independently and re-served reqId-tier cards to
+    # title siblings; corroborate.compose_join now reserves consumed
+    # cards and drops served reqs from the title pool). req_dates =
+    # detail startDates for the proximity disambiguation; req_locations
+    # (S8-E1) = detail locations for the location-aware tiebreak.
     req_dates = {rid: (details.get(rid) or {}).get("info", {}).get(
         "startDate") or "" for rid in req_ids}
     req_locations: dict[str, str] = {}
@@ -994,15 +1064,10 @@ def phase_finish(args, out: Path) -> int:
         loc_str = "; ".join(l for l in locs if l)
         if loc_str:
             req_locations[rid] = loc_str
-    sig_by_req = corroborate.join_by_req_id(matched, req_ids)
-    title_join = corroborate.join_by_title(
-        matched, {r["reqId"]: r["title"] for r in rows}, args.company,
+    sig_by_req, title_join, blocked_join = corroborate.compose_join(
+        signals, {r["reqId"]: r["title"] for r in rows}, args.company,
         req_dates={k: v for k, v in req_dates.items() if v},
         req_locations=req_locations)
-    # blocked cards: title-join so blocked reqs read `blocked` (B5)
-    blocked_join = corroborate.join_by_title(
-        blocked, {r["reqId"]: r["title"] for r in rows}, args.company,
-        req_dates={k: v for k, v in req_dates.items() if v})
     matched_rows = 0
     csv_rows: list[dict] = []
     enriched_rows: list[dict] = []
@@ -1025,11 +1090,15 @@ def phase_finish(args, out: Path) -> int:
                 # posting maps to a card whose fetch was blocked — status
                 # `blocked`, retryable, never "no_match" (B5)
                 sig = dict(blocked_join[r["reqId"]])
-            elif index_done and (not ts_started or ts_done
+            elif index_done and (not ts_started
                                  or r["reqId"] in ts_terminal):
-                # index exhausted + title-search exhausted (or never
-                # started — pre-S9 semantics) + no card for this posting
-                # = honestly not cross-posted (within the checked window)
+                # index exhausted + PER-REQ terminal probe state (or
+                # pre-S9 semantics when titlesearch never started) =
+                # honestly not cross-posted (S9-audit P1: the old ts_done
+                # shortcut shipped unprobed reqs — matched at titlesearch
+                # time, later drifted out — as no_match; JR2013322 was
+                # the live case; a drifted row now reads not_checked
+                # until the next titlesearch run re-probes it)
                 sig = {"status": "no_match"}
             elif index_done:
                 # S9: index done but titlesearch incomplete and this req
@@ -1170,6 +1239,10 @@ def main() -> int:
                              "titlesearch", "tagfacets", "finish"])
     ap.add_argument("--details-batch", type=int, default=150)
     ap.add_argument("--require-details", action="store_true")
+    ap.add_argument("--refetch-similar", action="store_true",
+                    help="(details phase) re-fetch settled rows whose "
+                         "detail record predates the similarJobs capture "
+                         "[S8-F backfill]")
     ap.add_argument("--sleep", type=float, default=0.2)
     ap.add_argument("--detail-sleep", type=float, default=0.25)
     ap.add_argument("--corroborate-index", action="store_true",

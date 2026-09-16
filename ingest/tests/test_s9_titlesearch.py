@@ -272,14 +272,18 @@ class TestJoinMultisetTier:
 
     def test_job_key_tier_still_wins_first(self):
         # exact job_key pair consumes the card before the multiset pass
-        sigs = [_sig(1, title="Engineer - Infra"),
+        # (S9-audit: pairs must also be verbatim — the old fixture's
+        # 'Engineer - Infra' vs 'Engineer' is a specialization pair the
+        # guard now rejects; both tiers here use true pairs)
+        sigs = [_sig(1, title="Engineer"),
                 _sig(2, title="Engineer Infra")]
         postings = {"JR1": "Engineer", "JR2": "Infra Engineer"}
         joined = join_by_title(sigs, postings, "NVIDIA")
-        # job_key('Engineer - Infra') → 'engineer' joins JR1 first;
+        # job_key('Engineer') joins JR1 in the job_key tier;
         # 'Infra Engineer' vs 'Engineer Infra' → multiset joins JR2
         assert set(joined) == {"JR1", "JR2"}
-        assert joined["JR2"]["match_tier"] == "multiset"
+        assert joined["JR2"].get("match_tier") == "multiset"
+        assert not joined["JR1"].get("match_tier")
 
     def test_greedy_one_to_one_in_tier(self):
         # two reqs, one multiset-matching card: only one joins
@@ -550,6 +554,20 @@ class TestFinishTitleSearchGate:
             signals=[_sig(1, req_id="JR1")], cards=[_card(1)])
         assert rows["JR2"]["corroborationStatus"] == "no_match"
 
+    def test_done_true_but_unprobed_ships_not_checked(self, tmp_path,
+                                                      monkeypatch):
+        """S9-audit P1 pin (A4/C2 — was RED pre-fix): meta done=true is
+        a POPULATION-level statement computed at titlesearch time; a req
+        that was matched then (never probed) and later drifted out of
+        the join must NOT ship no_match on the strength of ts_done —
+        per-req terminal state is required (live case: JR2013322)."""
+        rows = self._finish(
+            tmp_path, monkeypatch,
+            reqs=[("JR2", "Drifted Out Of Join")],
+            signals=[_sig(1, req_id="JR1")], cards=[_card(1)],
+            ts_state=[], ts_meta={"done": True})
+        assert rows["JR2"]["corroborationStatus"] == "not_checked"
+
 
 # ── pins: corroborate picks up titleSearch cards ─────────────────────────
 
@@ -708,3 +726,96 @@ class TestWatchTitleSearchFallback:
             self._rows(), "NVIDIA", Config(),
             time_mod.monotonic() + 60, title_search_budget=[5])
         assert out == {}                    # foreign reqId serves nobody
+
+
+class TestS9AuditJoinFixes:
+    """Pins for the S9-audit fix wave (P0 cross-tier reservation,
+    P1 reqId freshest-first, entity unescape, company token, verbatim
+    guard) — each was RED against the pre-fix tree."""
+
+    def test_cross_tier_card_reservation(self):
+        """P0 pin (A1/A2/C2): a card consumed by the reqId tier must
+        NEVER be re-served to a title-family sibling. Old behavior: 50
+        cards on 2 rows each, 54 provably-misattributed rows."""
+        sigs = [_sig(1, title="Engineer", req_id="JR1"),
+                _sig(2, title="Engineer", req_id="")]
+        postings = {"JR1": "Engineer", "JR2": "Engineer"}
+        reqid_join, title_join, _blocked = corroborate.compose_join(
+            sigs, postings, "NVIDIA")
+        assert set(reqid_join) == {"JR1"}
+        # JR2 must not receive CARD 1 (the reqId-consumed one) via the
+        # title tier — but the free sibling card 2 serving JR2 by title
+        # is exactly the composed behavior we want
+        assert title_join.get("JR2", {}).get("linkedin_job_id") == "2"
+        # the P0 invariant: no card serves two reqs across tiers
+        served = ([str(s["linkedin_job_id"]) for s in reqid_join.values()]
+                  + [str(s["linkedin_job_id"]) for s in title_join.values()])
+        assert sorted(served) == ["1", "2"]
+
+    def test_cross_tier_no_shared_card_in_population(self):
+        """Population-level view of the same invariant."""
+        sigs = [_sig(1, title="Engineer", req_id="JR1")]
+        postings = {"JR1": "Engineer", "JR2": "Engineer"}
+        matched, unmatched = corroborate.join_population(
+            sigs, postings, "NVIDIA")
+        assert matched == {"JR1"} and unmatched == {"JR2"}
+
+    def test_reqid_freshest_claimant_wins(self):
+        """P1 pin (B2r): first-wins shipped counts up to 113d staler
+        than an available fresher card — rank by (closed, fetched_at
+        desc, posted desc)."""
+        stale = _sig(1, title="Engineer", req_id="JR1", applicants=25,
+                     date="2026-05-01")
+        stale["fetched_at"] = "2026-09-01T00:00:00Z"
+        fresh = _sig(2, title="Engineer", req_id="JR1", applicants=81,
+                     date="2026-09-10")
+        fresh["fetched_at"] = "2026-09-15T00:00:00Z"
+        joined = corroborate.join_by_req_id(
+            [stale, fresh], {"JR1"})
+        assert joined["JR1"]["linkedin_job_id"] == "2"
+
+    def test_reqid_open_card_beats_closed_fresher(self):
+        closed = _sig(1, title="Engineer", req_id="JR1")
+        closed["closed"] = True
+        closed["fetched_at"] = "2026-09-16T00:00:00Z"
+        open_card = _sig(2, title="Engineer", req_id="JR1")
+        open_card["fetched_at"] = "2026-09-10T00:00:00Z"
+        joined = corroborate.join_by_req_id([closed, open_card], {"JR1"})
+        assert joined["JR1"]["linkedin_job_id"] == "2"
+
+    def test_entity_leak_fixed_in_predicate(self):
+        """P1 pin (B1/B3): 'R&amp;D' carried a phantom `amp` token that
+        broke the verbatim predicate on provably-true pairs."""
+        assert corroborate.verbatim_match(
+            "R&D Engineer, Networking", "R&amp;D Engineer, Networking")
+        assert "amp" not in corroborate.title_tokens(
+            "R&amp;D Engineer")
+        # seniority set agrees too
+        assert corroborate._seniority_set(
+            "Sr &amp;D Engineer") == corroborate._seniority_set(
+            "Sr &D Engineer")
+
+    def test_multiset_key_entity_and_company(self):
+        """Entity-unescaped multiset + coarse company token: 'R&amp;D'
+        under 'NVIDIA AI' keys identically to 'R&D' under 'NVIDIA'."""
+        k1 = corroborate.token_multiset_key("R&amp;D Eng", "NVIDIA AI")
+        k2 = corroborate.token_multiset_key("R&D Eng", "NVIDIA")
+        assert k1 == k2
+
+    def test_company_token_unifies_nvidia_ai(self):
+        """P2 pin (B1/D3): 97 'NVIDIA AI' cards were structurally
+        unjoinable against the 'NVIDIA' board param."""
+        sigs = [_sig(1, title="Engineer")]
+        sigs[0]["company"] = "NVIDIA AI"
+        joined = corroborate.join_by_title(
+            sigs, {"JR1": "Engineer"}, "NVIDIA")
+        assert "JR1" in joined
+
+    def test_company_token_strict_on_empty(self):
+        """A company-less card does not join a company-scoped board
+        (strict; the data has none — the port guard fixes None)."""
+        sigs = [_sig(1, title="Engineer")]
+        sigs[0]["company"] = None
+        joined = corroborate.join_by_title(
+            sigs, {"JR1": "Engineer"}, "NVIDIA")
+        assert joined == {}

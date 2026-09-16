@@ -64,6 +64,7 @@ from __future__ import annotations
 import re
 import time
 from datetime import datetime
+from html import unescape
 from typing import Optional
 from urllib.parse import urlencode
 
@@ -126,15 +127,38 @@ SENIORITY_TOKENS = frozenset({
 
 def title_tokens(title: str) -> list[str]:
     """Canonical tokenization for title matching (S9): lowercase
-    alphanumeric runs >= 2 chars minus TOKEN_STOPWORDS."""
-    return [t for t in re.findall(r"[a-z0-9]{2,}", (title or "").lower())
+    alphanumeric runs >= 2 chars minus TOKEN_STOPWORDS.
+
+    S9-audit fix (B1/B3): HTML entities are unescaped FIRST — the guest
+    index carries e.g. 'R&amp;D' whose phantom `amp` token broke the
+    pipeline's own verbatim predicate on provably-true pairs (job_key
+    already unescaped; the predicate API now agrees)."""
+    return [t for t in re.findall(r"[a-z0-9]{2,}",
+                                  unescape(title or "").lower())
             if t not in TOKEN_STOPWORDS]
 
 
 def _seniority_set(title: str) -> frozenset:
     return frozenset(t for t in re.findall(r"[a-z0-9]{2,}",
-                                           (title or "").lower())
+                                           unescape(title or "").lower())
                      if t in SENIORITY_TOKENS)
+
+
+def _company_token(company: str) -> str:
+    """Coarse company namespace for JOIN keys (S9-audit B1/D3): the
+    board param 'NVIDIA' vs card company 'NVIDIA AI' must share a
+    namespace or 97 cards are structurally unjoinable. First lowercased
+    token. Empty stays empty (a company-less card does not join a
+    company-scoped board — strict, and the data has none)."""
+    c = (company or "").strip().lower()
+    return c.split()[0] if c else ""
+
+
+def _join_key(title: str, company: str) -> str:
+    """job_key's title normalization + coarse company namespace — the
+    JOIN-side key (ingestion/dedup keeps raw job_key; the join needs
+    the NVIDIA/NVIDIA-AI unification)."""
+    return linkedin_guest.job_key(title, _company_token(company))
 
 
 def token_multiset_key(title: str, company: str) -> tuple:
@@ -142,9 +166,11 @@ def token_multiset_key(title: str, company: str) -> tuple:
     MULTISET (stopwords KEPT — removing them conflates live title pairs
     like 'Senior Account Manager - Walmart' ↔ 'Senior Account Manager,
     Walmart' under stop-set keys; the multiset keeps 213/213 probe hit
-    pairs distinct). Company appends the namespace like job_key."""
-    return (tuple(sorted(re.findall(r"[a-z0-9]{2,}", (title or "").lower()))),
-            (company or "").strip().lower())
+    pairs distinct). Company appends the namespace like job_key — via
+    the coarse company token (S9-audit: 'NVIDIA AI' ≡ 'NVIDIA')."""
+    return (tuple(sorted(re.findall(r"[a-z0-9]{2,}",
+                                    unescape(title or "").lower()))),
+            _company_token(company))
 
 
 def verbatim_match(req_title: str, card_title: str) -> bool:
@@ -524,10 +550,31 @@ class LinkedInSignalProvider:
 
 # ── the join ────────────────────────────────────────────────────────────
 
+def _claimant_rank(rec: dict) -> tuple:
+    """Rank SAME-reqId claimants for join_by_req_id (S9-audit B2r:
+    first-wins shipped counts up to 113 days staler than an available
+    fresher card — 19 rows, 14 with provably wrong numApplicants).
+    Best = smallest tuple: open (not closed) first, then freshest
+    fetch, then latest card post date, then stable insertion order."""
+    from datetime import date as _d
+    def _ord(d: str) -> int:
+        try:
+            return _d.fromisoformat(str(d or "")[:10]).toordinal()
+        except ValueError:
+            return 0
+    return (bool(rec.get("closed")),
+            -_ord(rec.get("fetched_at")),
+            -_ord(rec.get("linkedin_posted_date")))
+
+
 def join_by_req_id(signals: list[dict],
                    req_ids: set[str]) -> dict[str, dict]:
     """Join corroboration records to postings by exact requisition id.
     Returns {req_id: signal_record} — only exact reqId matches.
+
+    Multiple cards may embed the SAME reqId (repost twins, re-indexed
+    vintages): the best claimant wins — open > closed, freshest fetch
+    first (S9-audit B2r; was first-wins file order).
 
     Blocked records never join (S7-F2, fixing the contract the vacuous
     test_blocked_never_joins used to paper over): a blocked fetch means
@@ -537,13 +584,18 @@ def join_by_req_id(signals: list[dict],
     B5 status) pass the blocked records through join_by_title instead,
     where the record's status IS the payload and num_applicants is None.
     """
+    best: dict[str, tuple] = {}
     joined: dict[str, dict] = {}
-    for rec in signals:
+    for i, rec in enumerate(signals):
         if rec.get("status") == STATUS_BLOCKED:
             continue
         rid = (rec.get("job_req_id") or "").strip()
-        if rid and rid in req_ids and rid not in joined:
+        if not (rid and rid in req_ids):
+            continue
+        rank = _claimant_rank(rec) + (i,)
+        if rid not in joined or rank < best[rid]:
             joined[rid] = rec
+            best[rid] = rank
     return joined
 
 
@@ -588,10 +640,17 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
 
     # candidate pairs (card, req) sharing a normalized key, ranked:
     # (location overlap desc, proximity asc, card-date desc, card_id, req_id)
+    # S9-audit P1 fix (B1): job_key over-normalizes (it strips the
+    # dash/paren suffix, so 'Software Engineer' and 'Software Engineer
+    # - CUDA' share a key) — the GT-calibrated verbatim predicate is
+    # now the guard on this tier (108/115 live F1-failures were exactly
+    # this class: same base title, DIFFERENT specialization = different
+    # requisition). The multiset tier needs no guard (multiset equality
+    # implies F1 = 1.0 — B2r verified on the live corpus).
     by_key: dict[str, list[dict]] = {}
     card_loc: dict[int, frozenset] = {}
     for rec in signals:
-        key = job_key(rec["title"], rec["company"])
+        key = _join_key(rec["title"], rec["company"])
         if key:
             by_key.setdefault(key, []).append(rec)
             card_loc[id(rec)] = _location_tokens(
@@ -600,8 +659,10 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
                for rid in postings}
     rec_by_pair: dict[tuple, dict] = {}
     for rid, title in postings.items():
-        key = job_key(title, company)
+        key = _join_key(title, company)
         for rec in by_key.get(key, []):
+            if not verbatim_match(title, rec["title"]):
+                continue          # key-equal but not a verbatim pair
             cd = str(rec.get("linkedin_posted_date") or "")
             rd = (req_dates or {}).get(rid) or ""
             cid = str(rec.get("linkedin_job_id")
@@ -667,7 +728,49 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
     return joined
 
 
-# ── population helper (S9 C1a — ONE canonical join-population ────────)
+# ── population helper (S9 C1a — ONE canonical join-population) ────────
+
+def _card_id(rec: dict) -> str:
+    """Stable per-card identity for cross-tier reservation (S9-audit
+    P0): the same string join_by_title's used_cards tracks."""
+    return str(rec.get("linkedin_job_id") or rec.get("id") or id(rec))
+
+
+def compose_join(signals: list[dict], postings: dict[str, str],
+                 company: str,
+                 req_dates: Optional[dict[str, str]] = None,
+                 req_locations: Optional[dict[str, str]] = None
+                 ) -> tuple[dict, dict, dict]:
+    """THE canonical join composition (S9-audit P0 fix — A1/A2/C2
+    confirmed the old call sites composed the tiers independently,
+    re-serving reqId-tier cards to title-family siblings: 50 cards on
+    2 rows each, 54 provably-misattributed rows, ~35 rows burned to
+    no_match).
+
+    reqId tier FIRST; its consumed cards are RESERVED and its served
+    reqs REMOVED from the title-tier pool; the title tiers then run
+    over only unconsumed cards and unserved reqs. Returns
+    (reqid_join, title_join, blocked_join) — finish labels match_method
+    per tier; blocked cards title-join so blocked reqs read `blocked`
+    (B5) with the same req_locations tiebreak (S9-audit C2: the old
+    blocked_join call omitted it).
+    """
+    matched = [s2 for s2 in signals if s2.get("status") == "matched"]
+    blocked = [s2 for s2 in signals if s2.get("status") == STATUS_BLOCKED]
+    reqid_join = join_by_req_id(matched, set(postings))
+    consumed = {_card_id(s2) for s2 in reqid_join.values()}
+    unserved = {rid: t for rid, t in postings.items()
+                if rid not in reqid_join}
+    free_matched = [s2 for s2 in matched if _card_id(s2) not in consumed]
+    free_blocked = [s2 for s2 in blocked if _card_id(s2) not in consumed]
+    title_join = join_by_title(free_matched, unserved, company,
+                               req_dates=req_dates,
+                               req_locations=req_locations)
+    blocked_join = join_by_title(free_blocked, unserved, company,
+                                 req_dates=req_dates,
+                                 req_locations=req_locations)
+    return reqid_join, title_join, blocked_join
+
 
 def join_population(signals: list[dict], postings: dict[str, str],
                      company: str,
@@ -675,17 +778,15 @@ def join_population(signals: list[dict], postings: dict[str, str],
                      req_locations: Optional[dict[str, str]] = None
                      ) -> tuple[set, set]:
     """The current join population over `postings` ({req_id: title}):
-    (matched_req_ids, unmatched_req_ids). SAME functions finish uses
-    (reqId tier + title tiers incl. S9 C3) — the titlesearch phase and
-    finish must agree on who is no_match (design review finding 8:
-    the corroborate-phase join preview already drifted from finish by
-    omitting req_dates/req_locations; this helper is the fix — callers
-    MUST pass both to keep parity)."""
-    matched = [s for s in signals if s.get("status") == "matched"]
-    joined = join_by_req_id(matched, set(postings))
-    title_join = join_by_title(matched, postings, company,
-                               req_dates=req_dates,
-                               req_locations=req_locations)
+    (matched_req_ids, unmatched_req_ids). Goes through compose_join —
+    the SAME composition finish uses (design review finding 8 + S9-audit
+    F1: independent composition re-served reqId-tier cards to title
+    siblings; callers MUST pass req_dates and req_locations to keep
+    parity)."""
+    reqid_join, title_join, _blocked = compose_join(
+        signals, postings, company, req_dates=req_dates,
+        req_locations=req_locations)
+    joined = dict(reqid_join)
     for rid, rec in title_join.items():
         joined.setdefault(rid, rec)
     return set(joined), set(postings) - set(joined)

@@ -213,15 +213,31 @@ class TestJoins:
         assert set(joined) == {"JR2026100"}
 
     def test_join_by_title_normalized(self):
+        # S9-audit (B1): job_key strips dash/paren suffixes, which used
+        # to equate specializations — the verbatim guard now rejects
+        # 'Senior Engineer' vs 'Senior Engineer - DGX Cloud' (different
+        # requisitions per GT). Punctuation/case variants still join.
+        signals = [{
+            "title": "Senior Engineer, DGX Cloud",
+            "company": "NVIDIA",
+        }]
+        postings = {"JR1": "Senior Engineer - DGX Cloud",
+                    "JR2": "Totally Different"}
+        joined = join_by_title(signals, postings, "NVIDIA")
+        assert "JR1" in joined
+        assert "JR2" not in joined
+
+    def test_join_by_title_rejects_specialization_variants(self):
+        """S9-audit B1 P1 pin: a key-equal pair that is NOT verbatim
+        (the req is the base title, the card a specialization — 108/115
+        live F1-failures were exactly this class) must NOT join."""
         signals = [{
             "title": "Senior Engineer - DGX Cloud",
             "company": "NVIDIA",
         }]
-        # job_key strips trailing " - …" segments (dash pattern)
-        postings = {"JR1": "Senior Engineer", "JR2": "Totally Different"}
+        postings = {"JR1": "Senior Engineer"}
         joined = join_by_title(signals, postings, "NVIDIA")
-        assert "JR1" in joined
-        assert "JR2" not in joined
+        assert joined == {}
 
     def test_blocked_never_joins(self):
         """Blocked records carry NO signal (the fetch failed) — they must
@@ -245,10 +261,11 @@ class TestJoins:
         phase_finish uses to surface `blocked` for postings whose card
         fetch was walled (B5) — the record joins carrying its status,
         never a fabricated signal (num_applicants is None on blocked)."""
-        blocked = {"job_req_id": "JR2026100", "title": "A",
+        blocked = {"job_req_id": "JR2026100", "title": "Walled Engineer",
                    "company": "NVIDIA", "linkedin_job_id": "9",
                    "num_applicants": None, "status": STATUS_BLOCKED}
-        joined = join_by_title([blocked], {"JR2026100": "A"}, "NVIDIA")
+        joined = join_by_title([blocked], {"JR2026100": "Walled Engineer"},
+                               "NVIDIA")
         assert joined["JR2026100"]["status"] == STATUS_BLOCKED
         assert joined["JR2026100"]["num_applicants"] is None
 
@@ -294,9 +311,14 @@ class TestJoinOneToOne:
                 "status": "matched"}
 
     def test_one_card_never_fans_out(self):
-        sigs = [self._sig("1", "Senior System Software Engineer - Sim", "2026-09-08")]
-        posts = {f"JR{i}": f"Senior System Software Engineer - {n}"
-                 for i, n in enumerate(["A", "B", "C", "D"], start=1)}
+        # S9-audit: the 4 reqs share ONE verbatim title (the realistic
+        # title family); the card serves exactly one of them. (The old
+        # fixture used suffix variants — now correctly rejected as
+        # different specializations by the verbatim guard.)
+        sigs = [self._sig("1", "Senior System Software Engineer",
+                          "2026-09-08")]
+        posts = {f"JR{i}": "Senior System Software Engineer"
+                 for i in range(1, 5)}
         joined = join_by_title(sigs, posts, "NVIDIA")
         assert len(joined) == 1                    # exactly one req gets it
         assert list(joined.values())[0]["num_applicants"] == 32

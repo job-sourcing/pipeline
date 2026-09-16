@@ -101,7 +101,7 @@ class TestDeriveCsvRow:
     def test_column_contract(self):
         row = self._row()
         assert set(row) == set(board_dump.CSV_COLUMNS)
-        assert len(board_dump.CSV_COLUMNS) == 41   # v2.1: +10 (S8-E3)
+        assert len(board_dump.CSV_COLUMNS) == 43   # v2.1: +10 (S8-E3)
 
     def test_locations_enumerated_not_truncated(self):
         row = self._row(det={"info": _detail_info(addl=[
@@ -265,7 +265,7 @@ class TestFinishJoin:
             {"job_req_id": "", "status": "matched",
              "num_applicants": 7, "applicants_label": "7 applicants",
              "linkedin_posted_date": "2026-09-08",
-             "linkedin_url": "https://x/2", "title": "Beta Engineer - Core",
+             "linkedin_url": "https://x/2", "title": "Beta Engineer",
              "company": "NVIDIA"},
         ]
         board_dump._atomic_write_text(
@@ -456,7 +456,7 @@ def _signal(cid, status="matched", req_id="", title="Senior Engineer",
 
 def _det_args(**over) -> object:
     base = {"board": "nvidia|wd5|x", "details_batch": 150,
-            "detail_sleep": 0.0}
+            "detail_sleep": 0.0, "refetch_similar": False}
     base.update(over)
     return type("A", (), base)()
 
@@ -556,7 +556,8 @@ def _cor_args(**over) -> object:
     base = {"board": "nvidia|wd5|x", "company": "NVIDIA",
             "location": "United States", "corroborate_index": False,
             "li_index_pages": 10, "li_index_cards": 100,
-            "signals_batch": 40, "provider": "linkedin"}
+            "signals_batch": 40, "provider": "linkedin",
+            "refetch_similar": False}
     base.update(over)
     return type("A", (), base)()
 
@@ -1076,6 +1077,40 @@ class TestV21Columns:
     def test_end_date_passthrough(self):
         assert _v21_row(end_date="2026-11-30")["endDate"] == "2026-11-30"
         assert _v21_row()["endDate"] == ""
+
+    def test_v23_earliest_evidence_when_card_predates(self):
+        # S9: card date 2026-04-25 < startDate 2026-09-08 → floor moves,
+        # basis says so, evidence flagged reqId (confirmed repost)
+        sig = {"status": "matched", "match_method": "reqId",
+               "linkedin_posted_date": "2026-04-25",
+               "num_applicants": 12, "fetched_at": "2026-09-15T00:00:00"}
+        row = board_dump._derive_csv_row(
+            _list_row(), {"info": _detail_info(startDate="2026-09-08")},
+            sig, "NVIDIA", "2026-09-15", "2026-09-15",
+            snapshot_date="2026-09-15")
+        assert row["earliestEvidenceDate"] == "2026-04-25"
+        assert row["crossSourceRepostEvidence"] == "reqId"
+        assert row["daysOnMarketBasis"] == "startDate+linkedin"
+        assert row["daysOnMarket"] == 143          # 2026-09-15 − 2026-04-25
+
+    def test_v23_no_evidence_when_card_newer(self):
+        # cross-post lag: card NEWER than startDate → startDate stays floor
+        sig = {"status": "matched", "match_method": "title",
+               "linkedin_posted_date": "2026-09-12",
+               "num_applicants": 12, "fetched_at": "2026-09-15T00:00:00"}
+        row = board_dump._derive_csv_row(
+            _list_row(), {"info": _detail_info(startDate="2026-09-08")},
+            sig, "NVIDIA", "2026-09-15", "2026-09-15",
+            snapshot_date="2026-09-15")
+        assert row["earliestEvidenceDate"] == "2026-09-08"
+        assert row["crossSourceRepostEvidence"] == ""
+        assert row["daysOnMarketBasis"] == "startDate"
+        assert row["daysOnMarket"] == 7
+
+    def test_v23_unmatched_row_empty(self):
+        row = _v21_row(start="2026-09-10")
+        assert row["earliestEvidenceDate"] == "2026-09-10"
+        assert row["crossSourceRepostEvidence"] == ""
 
     def test_repost_count_from_slug(self):
         assert _v21_row(suffix="-3")["repostCount"] == 3
