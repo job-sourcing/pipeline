@@ -230,6 +230,39 @@ def li_location(primary_location: str) -> str:
         return f"{parts[2]}, {_US_STATES[parts[1].upper()]}"
     return "United States"
 
+
+def row_search_location(row: dict) -> str:
+    """Best-effort LinkedIn guest-search location for a posting ROW in
+    its LIST shape (no detail payload). Preference order:
+    1. `primaryLocation` — detail-shaped rows (kept first: the dump's
+       detail view and every existing fixture shape still work);
+    2. `locationsText` when it is a REAL location — single-location
+       CXS list rows carry e.g. 'US, CA, Santa Clara'; multi-location
+       rows carry 'N Locations' (useless, skipped);
+    3. the `/job/US-CA-Santa-Clara/…` slug embedded in `externalPath`
+       or `url` — present on EVERY CXS list row and encoding the
+       PRIMARY location (verified live: 1410/1410 rows, incl. the 531
+       multi-location ones whose text says nothing).
+    Falls back to the neutral 'United States'.
+
+    S9-audit H3v P2: the watch/dump title searches read ONLY
+    primaryLocation — which live list rows NEVER carry — so every probe
+    ran location-dead at country level (recall gap: narrower city
+    queries surface deeper per-city card sets)."""
+    pl = (row.get("primaryLocation") or "").strip()
+    if pl:
+        return li_location(pl)
+    lt = (row.get("locationsText") or "").strip()
+    if lt and not re.match(r"^\d+ Locations?$", lt):
+        return li_location(lt)
+    for key in ("externalPath", "url"):
+        m = re.search(r"/job/([A-Z]{2})-([A-Z]{2})-([A-Za-z][A-Za-z-]*?)/",
+                      row.get(key) or "")
+        if m:
+            return li_location(f"{m.group(1)}, {m.group(2)}, "
+                               f"{m.group(3).replace('-', ' ')}")
+    return "United States"
+
 # Default slice matrix (research §c/§f R1): keyword variants × the card-
 # location top set from the NVIDIA li_index.
 _SLICE_KEYWORD_SUFFIXES = (
@@ -358,8 +391,9 @@ class LinkedInSignalProvider:
         enforces: an empty 200 page is wall-ambiguous and RETRYABLE,
         never terminal; the caller decides whether a page-0 exc is
         fatal — nothing gained → raise — or a partial result to keep
-        and resume). `exhausted` is True only on GENUINE end-of-serving:
-        a SHORT page (< _CARDS_PER_PAGE cards) that still has cards.
+        and resume). `exhausted` is True on GENUINE end-of-serving: a
+        SHORT page (< _CARDS_PER_PAGE cards) that still has cards, or
+        the chromeless beyond-end STUB (H3v P2 — see inline).
         (S9-audit D3 P2: the old code treated the empty 200 page as
         terminal exhaustion — a mid-index soft wall read as done=true
         and the dump never re-opened the index.)
@@ -377,8 +411,25 @@ class LinkedInSignalProvider:
                 return cards, offset, exhausted, exc
             page_cards = _parse_search_results(html)
             if not page_cards:
-                # HTTP-200 with zero cards: soft-wall ambiguity —
-                # retryable, never done (S9 doctrine; see docstring).
+                # Split the 0-card 200 page by its BODY SHAPE (H3v P2
+                # livelock fix, live-probed 2026-09-17): the guest
+                # search serves a tiny chromeless STUB past the end of
+                # the serving window ('<!DOCTYPE html>\\n\\n<!---->',
+                # ~26 bytes) — that is GENUINE end-of-serving; a resume
+                # landing there must COMPLETE, not retry forever. The
+                # WALL shapes stay retryable blocked_empty: the observed
+                # wall is a 302→authwall (FULL page, KBs, no card
+                # markers — D3 evidence) and a truly-empty body ("",
+                # unobserved live; kept ambiguous per the S9 doctrine).
+                # Signature: non-empty, tiny (<100B), no results chrome.
+                body = (html or "").strip()
+                if 0 < len(body) < 100 \
+                        and "base-search-card" not in body:
+                    exhausted = True
+                    return cards, offset, exhausted, None
+                # Anything else with zero cards — authwall page, empty
+                # body, layout change: soft-wall ambiguity — retryable,
+                # never done (S9 doctrine; see docstring).
                 # With the short-page rule below, this branch is only
                 # reachable after a FULL page or at a resume boundary
                 # that lands exactly at the end of the serving window.

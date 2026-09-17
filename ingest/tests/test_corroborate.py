@@ -241,6 +241,60 @@ class TestIndexCards:
         assert len(cards) == 12               # trimmed to the cap
         assert exhausted is True              # short tail page = done
 
+    def test_beyond_end_stub_completes_a_resume_no_livelock(
+            self, monkeypatch):
+        """H3v P2 (a): a single-mode resume landing EXACTLY at the end
+        of the serving window used to re-block forever (blocked_empty,
+        done never set, same offset re-fetched every run). Live-probed
+        2026-09-17: beyond-end serves a tiny chromeless stub
+        ('<!DOCTYPE html>\\n\\n<!---->', ~26B) — that shape is GENUINE
+        exhaustion: no raise, exhausted=True, the meta completes."""
+        stub = "<!DOCTYPE html>\n\n<!---->  "
+        monkeypatch.setattr(corroborate, "fetch_text",
+                            lambda url, *, params=None, cfg=None: stub)
+        monkeypatch.setattr(corroborate, "_INDEX_PAUSE_S", 0)
+        p = LinkedInSignalProvider(cfg=None)
+        cards, next_offset, exhausted = p.index_cards(
+            "NVIDIA", max_pages=5, start_offset=100)
+        assert cards == []
+        assert next_offset == 100              # nothing gained, no move
+        assert exhausted is True               # ← the livelock-killer
+        # and the phase-level gate: board_dump writes done=true (NOT
+        # blocked) — pinned at the provider contract here; the phase
+        # treats exc=None as a normal completion.
+
+    def test_authwall_page_stays_retryable_blocked_empty(self,
+                                                         monkeypatch):
+        """The OTHER 0-card shape (D3 evidence): a 302→authwall serves
+        a FULL page (KBs) with LinkedIn chrome but no card markers —
+        that is the soft wall and MUST stay retryable blocked_empty,
+        never done (the size signature is what separates it from the
+        beyond-end stub)."""
+        authwall = ("<!DOCTYPE html><html lang=\"en\"><head><title>"
+                    "Sign In | LinkedIn</title></head><body>"
+                    + "<div class=\"authwall\">" * 200
+                    + "</body></html>")
+        assert len(authwall) > 100             # the size discriminator
+        monkeypatch.setattr(corroborate, "fetch_text",
+                            lambda url, *, params=None, cfg=None: authwall)
+        monkeypatch.setattr(corroborate, "_INDEX_PAUSE_S", 0)
+        p = LinkedInSignalProvider(cfg=None)
+        with pytest.raises(corroborate.CorroborationBlocked,
+                           match="blocked_empty"):
+            p.index_cards("NVIDIA", max_pages=5)
+
+    def test_truly_empty_body_stays_retryable(self, monkeypatch):
+        """'' (unobserved live) keeps the S9 D3 doctrine: ambiguous and
+        retryable — the stub signature requires a NON-empty tiny body,
+        so the conservative branch is preserved for the empty case."""
+        monkeypatch.setattr(corroborate, "fetch_text",
+                            lambda url, *, params=None, cfg=None: "")
+        monkeypatch.setattr(corroborate, "_INDEX_PAUSE_S", 0)
+        p = LinkedInSignalProvider(cfg=None)
+        with pytest.raises(corroborate.CorroborationBlocked,
+                           match="blocked_empty"):
+            p.index_cards("NVIDIA", max_pages=5)
+
     def test_company_variant_filter(self, monkeypatch):
         pages = [[_card(1, company="NVIDIA"),
                   _card(2, company="NVIDIA AI"),
@@ -556,6 +610,44 @@ class TestIndexCardsPartitioned:
             p.index_cards_partitioned(
                 "NVIDIA", max_pages_per_slice=1)
         assert len(served) == 1                     # slice 0 only
+
+    def test_stub_terminated_slice_completes_the_matrix_no_livelock(
+            self, monkeypatch):
+        """H3v P2 (b): a NON-first slice hitting the beyond-end STUB at
+        page 0 (a legitimately-exhausted narrow slice after board churn)
+        used to force exhausted_all=False → done never set → the FULL
+        ~90-request matrix re-ran on EVERY invocation. With the stub
+        signature, the slice counts as complete and the matrix finishes.
+        The all-stub board (every slice stubbed) still completes — a
+        stub is not the D3 authwall wall."""
+        from urllib.parse import urlparse, parse_qs
+        stub = "<!DOCTYPE html>\n\n<!---->  "
+        served: list[tuple] = []
+
+        def fake_fetch_text(url, *, params=None, cfg=None):
+            q = parse_qs(urlparse(url).query)
+            kw, loc = q["keywords"][0], q["location"][0]
+            served.append((kw, loc, int(q["start"][0])))
+            if (kw, loc) == ("NVIDIA", "United States"):
+                return ('<li data-entity-urn="urn:li:jobPosting:1">'
+                        '<h3 class="base-search-card__title">T</h3>'
+                        '<h4 class="base-search-card__subtitle">'
+                        '<a>NVIDIA</a></h4>'
+                        '<span class="job-search-card__location">'
+                        'Santa Clara, CA</span></li>')
+            return stub                          # every other slice: end
+
+        monkeypatch.setattr(corroborate, "fetch_text", fake_fetch_text)
+        monkeypatch.setattr(corroborate, "_INDEX_PAUSE_S", 0)
+        monkeypatch.setattr(corroborate, "_SLICE_PAUSE_S", 0)
+        p = LinkedInSignalProvider(cfg=None)
+        cards, next_offset, exhausted = p.index_cards_partitioned(
+            "NVIDIA", slices=[self._S0, self._S1, self._S2],
+            max_pages_per_slice=2)
+        assert [c["id"] for c in cards] == ["1"]  # slice 0's card
+        assert next_offset == 0
+        assert exhausted is True                  # ← the livelock-killer
+        assert len(served) == 3                   # one query per slice
 
     def test_first_slice_page0_blocked_raises(self, monkeypatch):
         self._patch(monkeypatch, {},

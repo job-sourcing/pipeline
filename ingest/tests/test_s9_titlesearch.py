@@ -30,6 +30,7 @@ from jobsearch import corroborate
 from jobsearch.corroborate import (
     LinkedInSignalProvider, join_by_title, join_population,
     li_location, verbatim_match, token_multiset_key, title_tokens,
+    row_search_location,
 )
 from jobsearch.sources.linkedin_guest import job_key
 
@@ -115,6 +116,55 @@ class TestLiLocation:
     def test_two_part_falls_back(self):
         # "CA, Santa Clara" (no country prefix) — conservative fallback
         assert li_location("CA, Santa Clara") == "United States"
+
+
+class TestRowSearchLocation:
+    """H3v P2: the watch/dump title searches read ONLY primaryLocation
+    — a key live CXS LIST rows never carry — so every probe ran
+    location-dead at country level. row_search_location derives the
+    location from the shapes list rows ACTUALLY have."""
+
+    def test_detail_shaped_row_still_prefers_primary_location(self):
+        assert row_search_location({
+            "primaryLocation": "US, CA, Santa Clara",
+            "locationsText": "6 Locations",
+            "externalPath": "/job/US-TX-Austin/X_JR1",
+        }) == "Santa Clara, California"
+
+    def test_single_location_row_uses_locationstext(self):
+        # live single-location CXS rows: locationsText IS the location
+        assert row_search_location({
+            "locationsText": "US, CA, Santa Clara",
+            "externalPath": "/job/US-CA-Santa-Clara/X_JR1",
+        }) == "Santa Clara, California"
+
+    def test_multi_location_row_parses_the_url_slug(self):
+        # live multi-location rows: locationsText says "6 Locations"
+        # (useless) but the slug encodes the PRIMARY location — incl.
+        # multi-word cities
+        assert row_search_location({
+            "locationsText": "6 Locations",
+            "externalPath": "/job/US-TX-Austin/X_JR1",
+        }) == "Austin, Texas"
+        assert row_search_location({
+            "locationsText": "2 Locations",
+            "url": "https://x/job/US-WA-San-Jose/X_JR2",
+        }) == "San Jose, Washington"
+
+    def test_remote_slug_maps_to_remote(self):
+        assert row_search_location({
+            "locationsText": "3 Locations",
+            "externalPath": "/job/US-CA-Remote/X_JR3",
+        }) == "Remote"
+
+    def test_no_location_information_is_neutral(self):
+        assert row_search_location({}) == "United States"
+        assert row_search_location({"locationsText": ""}) \
+            == "United States"
+        # non-US slug → state not in _US_STATES → neutral
+        assert row_search_location({
+            "externalPath": "/job/IN-KA-Bangalore/X_JR4",
+        }) == "United States"
 
 
 class TestVerbatimMatch:
@@ -217,6 +267,34 @@ class TestSearchTitle:
         hits, exc = self._p().search_title(
             "Engineer", "United States", {"1"}, company="NVIDIA")
         assert exc is None and hits == []
+
+    def test_known_id_with_mark_indexed_returns_indexed_card(
+            self, monkeypatch):
+        """H11 P2: the REAL mark_indexed branch (corroborate :450-453)
+        had zero execution — every pin faked it at the provider level.
+        A card whose id ∈ known_ids returns WITH indexed:True when the
+        flag is set (phase_title_search then records hit_indexed
+        without re-appending the card); with the flag clear it is
+        dropped (the test_known_ids_excluded contract)."""
+        _page(monkeypatch, [
+            _card(1, title="Senior ASIC Verification Engineer"),
+            _card(2, title="Senior ASIC Verification Engineer"),
+        ])
+        # card 1 known, card 2 unknown → only the indexed twin returns
+        hits, exc = self._p().search_title(
+            "Senior ASIC Verification Engineer", "United States",
+            {"1"}, company="NVIDIA", mark_indexed=True)
+        assert exc is None
+        assert [h["id"] for h in hits] == ["1", "2"] \
+            or [h["id"] for h in hits] == ["1"]
+        by_id = {h["id"]: h for h in hits}
+        assert by_id["1"].get("indexed") is True   # stamped
+        assert by_id["2"].get("indexed") is None   # fresh hit, no stamp
+        # flag clear → the known card is dropped entirely
+        hits2, _ = self._p().search_title(
+            "Senior ASIC Verification Engineer", "United States",
+            {"1"}, company="NVIDIA", mark_indexed=False)
+        assert [h["id"] for h in hits2] == ["2"]
 
     def test_transport_error_returned_as_value(self, monkeypatch):
         def boom(url, *, params=None, cfg=None):
@@ -351,7 +429,7 @@ class _TsProvider:
 
 
 class TestPhaseTitleSearch:
-    def _seed(self, tmp_path, reqs, signals, cards):
+    def _seed(self, tmp_path, reqs, signals, cards, details=None):
         out = tmp_path / "dump"
         out.with_suffix(".list.jsonl").write_text(
             "\n".join(json.dumps(_list_row(r, t)) for r, t in reqs) + "\n",
@@ -362,10 +440,53 @@ class TestPhaseTitleSearch:
         out.with_suffix(".li_index.jsonl").write_text(
             "\n".join(json.dumps(c) for c in cards) + "\n",
             encoding="utf-8")
-        out.with_suffix(".details.jsonl").write_text("", encoding="utf-8")
+        out.with_suffix(".details.jsonl").write_text(
+            "\n".join(json.dumps(d) for d in (details or [])) + "\n",
+            encoding="utf-8")
         out.with_suffix(".li_index.meta.json").write_text(
             '{"done": true}', encoding="utf-8")
         return out
+
+    def test_details_drive_join_parity_of_probed_population(self, tmp_path,
+                                                           monkeypatch):
+        """H11 P2 (E3 gap #4): the titlesearch phase MUST load details
+        and feed req_dates/req_locations into join_population — the
+        SAME composition finish answers for. Two same-title reqs, one
+        verbatim card: the req whose startDate is FARTHER from the card
+        date loses the proximity disambiguation and is the one probed.
+        If the details load regresses (empty req_dates), the tie falls
+        to req_id order and the WRONG req gets probed."""
+        title = "Senior Firmware Engineer"
+        def _info(start_date, addl=None):
+            return {"title": title, "location": "US, CA, Santa Clara",
+                    "additionalLocations": addl,
+                    "startDate": start_date, "timeType": "Full time",
+                    "jobDescription": "<p>D</p>",
+                    "externalUrl": "https://x/JR", "jobReqId": "",
+                    "questionnaireId": "q", "postedOn": "Posted Today"}
+        details = [
+            {"reqId": "JR1", "info": _info("2026-01-01")},
+            {"reqId": "JR2", "info": _info("2026-09-16",
+                                             ["US, TX, Austin"])},
+        ]
+        out = self._seed(
+            tmp_path, [("JR1", title), ("JR2", title)],
+            [_sig(9, title=title, date="2026-09-15")], [_card(9)],
+            details=details)
+        prov = _TsProvider({"JR1": ([], None), "JR2": ([], None)})
+        monkeypatch.setattr(board_dump.corroborate, "get_provider",
+                            lambda name, cfg=None: prov)
+        monkeypatch.setattr(corroborate, "TITLE_SEARCH_PAUSE_S", 0)
+        rc = board_dump.phase_title_search(_ts_args(), out)
+        assert rc == 0
+        state = [json.loads(x) for x in
+                 out.with_suffix(".title_search.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        # ONLY the far-date req is probed: JR2's proximity (1d) beats
+        # JR1's (227d) → JR2 matched, JR1 no_match → probed
+        assert [s["reqId"] for s in state] == ["JR1"]
+        assert state[0]["status"] == "no_card"
+        assert len(prov.search_calls) == 1      # exactly ONE req probed
 
     def test_hit_appends_card_with_source_and_writes_state(self, tmp_path,
                                                            monkeypatch):
@@ -404,6 +525,61 @@ class TestPhaseTitleSearch:
                  out.with_suffix(".title_search.jsonl").read_text(
                      encoding="utf-8").splitlines()]
         assert state[0]["status"] == "no_card"
+
+    def test_reprobe_no_card_days_reopens_fresh_only(self, tmp_path,
+                                                     monkeypatch):
+        """S10 cross-post-lag re-probe: a no_card verdict is terminal
+        forever, so a LinkedIn card appearing 1-2 days AFTER the req is
+        never discovered on refresh cycles. --reprobe-no-card-days
+        re-opens no_card reqs whose startDate is within the window;
+        stale no_card reqs and OTHER terminal verdicts stay closed;
+        the default (0) preserves the terminal semantics."""
+        from datetime import date as _d, timedelta as _td
+        today = _d.today()
+        fresh = (today - _td(days=1)).isoformat()
+        stale = (today - _td(days=30)).isoformat()
+        title = "Senior Firmware Engineer"
+
+        def _info(sd):
+            return {"title": title, "location": "US, CA, Santa Clara",
+                    "additionalLocations": None, "startDate": sd,
+                    "timeType": "Full time", "jobDescription": "<p>D</p>",
+                    "externalUrl": "https://x/JR", "jobReqId": "",
+                    "questionnaireId": "q", "postedOn": "Posted Today"}
+
+        details = [{"reqId": "JRFRESH", "info": _info(fresh)},
+                   {"reqId": "JRSTALE", "info": _info(stale)},
+                   {"reqId": "JRHIT", "info": _info(fresh)}]
+        out = self._seed(
+            tmp_path,
+            [("JRFRESH", title), ("JRSTALE", title), ("JRHIT", title)],
+            [_sig(9, req_id="JR9")], [_card(9)], details=details)
+        # prior terminal state: FRESH+STALE no_card, HIT already hit
+        out.with_suffix(".title_search.jsonl").write_text("\n".join(
+            json.dumps(r) for r in [
+                {"reqId": "JRFRESH", "title": title, "status": "no_card"},
+                {"reqId": "JRSTALE", "title": title, "status": "no_card"},
+                {"reqId": "JRHIT", "title": title, "status": "hit_new"},
+            ]) + "\n", encoding="utf-8")
+        prov = _TsProvider({"JRFRESH": ([], None), "JRSTALE": ([], None),
+                            "JRHIT": ([], None)})
+        monkeypatch.setattr(board_dump.corroborate, "get_provider",
+                            lambda name, cfg=None: prov)
+        monkeypatch.setattr(corroborate, "TITLE_SEARCH_PAUSE_S", 0)
+        # flag OFF: nothing re-probed (terminal semantics preserved)
+        board_dump.phase_title_search(_ts_args(), out)
+        assert prov.search_calls == []
+        # flag ON with a 7-day window: ONLY the fresh no_card re-opens
+        board_dump.phase_title_search(
+            _ts_args(reprobe_no_card_days=7), out)
+        assert len(prov.search_calls) == 1      # JRFRESH only
+        state = [json.loads(x) for x in
+                 out.with_suffix(".title_search.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        # a NEW no_card line appended for the re-probed req
+        assert [s["reqId"] for s in state].count("JRFRESH") == 2
+        assert state[-1]["reqId"] == "JRFRESH"
+        assert state[-1]["status"] == "no_card"
 
     def test_blocked_is_not_terminal_and_retries(self, tmp_path,
                                                  monkeypatch):

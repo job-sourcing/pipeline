@@ -403,7 +403,7 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
         title = (r.get("title") or "").strip()
         if not title:
             continue
-        loc = corroborate.li_location(r.get("primaryLocation") or "")
+        loc = corroborate.row_search_location(r)
         hits, exc = provider.search_title(
             title, loc, {str(c["id"]) for c in cards}, company=company)
         title_search_budget[0] -= 1

@@ -823,11 +823,87 @@ class TestPhaseCorroborateIndexResume:
         rc = board_dump.phase_corroborate(_cor_args(), tmp_path / "nope")
         assert rc == 2
 
+    def test_join_preview_loads_details_for_population_parity(
+            self, tmp_path, monkeypatch, capsys):
+        """H11 P2 (E3 gap #4, second half): the corroborate join preview
+        MUST load details and feed req_dates/req_locations into
+        join_population (board_dump :668-676 — every prior fixture seeded
+        an EMPTY details file, so a details-load regression here drifted
+        the preview from what finish answers for with the suite green).
+        Two same-title reqs + one verbatim card: with details the near-
+        date req wins the proximity disambiguation (title-tier match)."""
+        title = "Senior Engineer"
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            "\n".join(json.dumps(_list_row(req_id=rid, title=title))
+                      for rid in ("JR1", "JR2")) + "\n", encoding="utf-8")
+        out.with_suffix(".signals.jsonl").write_text(
+            json.dumps(_signal(9, title=title)) + "\n", encoding="utf-8")
+        out.with_suffix(".details.jsonl").write_text("\n".join(json.dumps({
+            "reqId": rid, "info": dict(
+                _detail_info(startDate=sd), title=title,
+                additionalLocations=addl)})
+            for rid, sd, addl in (("JR1", "2026-01-01", None),
+                                   ("JR2", "2026-09-04",
+                                    ["US, TX, Austin"]))) + "\n",
+            encoding="utf-8")
+        monkeypatch.setattr(board_dump.corroborate, "get_provider",
+                            lambda name, cfg=None: _RecordingProvider())
+        rc = board_dump.phase_corroborate(_cor_args(), out)
+        assert rc == 0
+        out_all = capsys.readouterr().out
+        # the preview line reflects the details-driven composition:
+        # 0 reqId-tier, 1 title-tier (JR2 by date proximity), 1 signal
+        assert "join preview: 0 by reqId, +1 by title, 1 signals total" \
+            in out_all
+
 
 class TestPhaseCorroboratePartitionedIndex:
     """S8-E1 (research §c/§f R1): --index-mode partitioned routes the
     index refresh through provider.index_cards_partitioned (slice
     matrix); 'single' stays the default for back-compat."""
+
+    def test_li_reindex_reopens_a_done_meta(self, tmp_path, monkeypatch):
+        """S10: done:true pins the index to its completion date — a
+        same-mode refresh cycle MUST be able to force a re-run
+        (--li-reindex) to discover cards posted since. Without the flag
+        the refresh is skipped (existing semantics preserved)."""
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            json.dumps(_list_row(req_id="JR1")) + "\n", encoding="utf-8")
+        # a COMPLETED partitioned index (the live 09-13 shape)
+        out.with_suffix(".li_index.jsonl").write_text(
+            json.dumps(_li_card(1)) + "\n", encoding="utf-8")
+        out.with_suffix(".li_index.meta.json").write_text(
+            json.dumps({"offset": 0, "done": True, "mode": "partitioned",
+                        "cards": 1,
+                        "indexed_at": "2026-09-13T12:19:56"}), )
+        provider = _RecordingProvider(
+            index_cards=([_li_card(1), _li_card(9)], 0, True))
+        monkeypatch.setattr(board_dump.corroborate, "get_provider",
+                            lambda name, cfg=None: provider)
+        # WITHOUT the flag: same-mode done meta → refresh SKIPPED
+        rc = board_dump.phase_corroborate(
+            _cor_args(corroborate_index=True, index_mode="partitioned"),
+            out)
+        assert rc == 0
+        assert provider.partitioned_calls == []
+        # WITH the flag: re-opened, slice matrix re-runs, new card
+        # accumulates (dedup keeps card 1 once)
+        rc = board_dump.phase_corroborate(
+            _cor_args(corroborate_index=True, index_mode="partitioned",
+                      li_reindex=True), out)
+        assert rc == 0
+        assert len(provider.partitioned_calls) == 1
+        cards = [json.loads(x) for x in
+                 out.with_suffix(".li_index.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        assert [c["id"] for c in cards] == ["1", "9"]
+        meta = json.loads(
+            out.with_suffix(".li_index.meta.json").read_text())
+        assert meta["done"] is True
+        assert meta["mode"] == "partitioned"
+        assert meta["cards"] == 2
 
     def test_partitioned_mode_calls_partitioned_index(self, tmp_path,
                                                        monkeypatch):
@@ -956,7 +1032,7 @@ class TestRawFidelity:
         today = _dt.date.today()
         return board_dump._derive_csv_row(
             r, det, None, r.get("company") or "NVIDIA",
-            today.isoformat(), today.isoformat())
+            today.isoformat(), today.isoformat()), today
 
     def test_first_raw_record_derives_cleanly(self):
         r, det = _load_raw_pair()
@@ -965,18 +1041,18 @@ class TestRawFidelity:
             assert k in info, (
                 f"RAW jobPostingInfo missing {k!r} — the fixture family "
                 f"has drifted from reality (audit A8 class)")
-        row = self._derive(r, det)
+        row, today = self._derive(r, det)
         # full column contract off REAL data (extras silently dropped
         # by DictWriter otherwise)
         assert set(row) == set(board_dump.CSV_COLUMNS)
         # startDate passthrough + postingAgeDays = today − startDate
         assert row["startDate"] == info["startDate"]
         # S9-audit B2r: postingAgeDays is snapshot-frozen; this derive
-        # passes no snapshot_date so the snapshot IS today (identical
-        # value, now stable across regens run on the same day)
+        # passes no snapshot_date so the snapshot IS today. Assert
+        # against the CAPTURED today (a fresh date.today() here is a
+        # midnight-crossing time bomb — P3, S9-CLOSE residual).
         assert row["postingAgeDays"] == (
-            _dt.date.today()
-            - _dt.date.fromisoformat(info["startDate"])).days
+            today - _dt.date.fromisoformat(info["startDate"])).days
         # description = html_to_text of the REAL jobDescription; exact
         assert row["description"] == \
             board_dump.html_to_text(info["jobDescription"])
@@ -1011,7 +1087,7 @@ class TestRawFidelity:
         additionalLocations (the fixture family never models one)."""
         r, det = _load_raw_pair(require_addl=True)
         info = det["info"]
-        row = self._derive(r, det)
+        row, _today = self._derive(r, det)
         expected = [info["location"]] + list(info["additionalLocations"])
         assert len(expected) >= 2
         assert row["locations"] == "; ".join(expected)

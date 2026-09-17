@@ -1,11 +1,11 @@
-rows: 1406 (unique reqIds: 1406)
-details merged: 1406
-descriptions present: 1406
-locations enumerated (not 'N Locations'): 1406
-startDate present: 1406
-signals: matched=1050 no_match=356 blocked=0 not_checked=0
-location entries total (sum nLocations): 2608
-similar-job edges: 6644
-facet census: 7 facets / 190 values (nvidia_us_fulltime.facets.json)
-facet-tagged rows: workerSubType=1406 jobFamilyGroup=1406 (from facet_tags.jsonl)
-facet tag coverage: 1406/1406 rows (0 untagged)
+rows: 1410 (unique reqIds: 1410)
+details merged: 1410
+descriptions present: 1410
+locations enumerated (not 'N Locations'): 1410
+startDate present: 1410
+signals: matched=1050 no_match=357 blocked=3 not_checked=0
+location entries total (sum nLocations): 2620
+similar-job edges: 6880
+facet census: 7 facets / 188 values (nvidia_us_fulltime.facets.json)
+facet-tagged rows: workerSubType=1483 jobFamilyGroup=1483 (from facet_tags.jsonl)
+facet tag coverage: 1410/1410 rows (0 untagged)

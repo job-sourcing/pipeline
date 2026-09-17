@@ -258,7 +258,10 @@ class TestEnrichNew:
         assert by_rid["JR1"]["first_seen"] == "2026-09-12"
         assert by_rid["JR1"]["attempts"] == 3
         # a genuinely-new reqId still gets today, attempts restart at 1
-        assert by_rid["JR2"]["first_seen"] == date.today().isoformat()
+        # (midnight-crossing safe: accept the pre- or post-run date)
+        _t0 = date.today().isoformat()
+        assert by_rid["JR2"]["first_seen"] in {
+            _t0, (date.fromisoformat(_t0) + timedelta(days=1)).isoformat()}
         assert by_rid["JR2"]["attempts"] == 1
 
     def test_bounded_at_details_max(self, wdir, monkeypatch):

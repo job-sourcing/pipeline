@@ -438,6 +438,12 @@ class TestPersonio:
             return PERSONIO_HTML
 
         monkeypatch.setattr(personio, "fetch_text", fake_fetch_text)
+        # S9-CLOSE residual (P2): the XML→HTML fallback issues TWO paced
+        # requests; the global ≥25s spacing made this the suite's slowest
+        # test (25.00s of real sleeping). Zero the spacing — the pacer's
+        # own semantics are pinned separately by test_pacer_enforces_
+        # global_spacing (fast-forwarded clock, no real sleeps).
+        monkeypatch.setattr(personio, "_MIN_SPACING_S", 0.0)
         cfg.personio_slugs = ["kiwigrid"]
         jobs = personio.fetch("reliability", location="", cfg=cfg)
         assert urls == ["https://kiwigrid.jobs.personio.de/xml",

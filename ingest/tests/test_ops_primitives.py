@@ -152,8 +152,10 @@ class TestParseRetryAfter:
         assert net.parse_retry_after_ms("2.5") == 2500
 
     def test_http_date(self):
-        from datetime import datetime, timezone
-        future = datetime(2030, 1, 1, tzinfo=timezone.utc)
+        from datetime import datetime, timedelta, timezone
+        # relative future (was hardcoded 2030-01-01 — a time bomb that
+        # flips PAST once the clock reaches it; P3, S9-CLOSE residual)
+        future = datetime.now(timezone.utc) + timedelta(minutes=5)
         from email.utils import format_datetime
         ms = net.parse_retry_after_ms(format_datetime(future))
         assert ms is not None and ms > 0

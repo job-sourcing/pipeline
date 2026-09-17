@@ -573,6 +573,16 @@ def phase_corroborate(args, out: Path) -> int:
         print(f"[corroborate] index mode switch "
               f"{index_meta.get('mode', 'single')!r} -> {index_mode!r}: "
               "re-opening index", flush=True)
+    # S10: explicit re-index — a same-mode refresh cycle needs to re-run
+    # the slice matrix to discover cards posted since the last pass
+    # (done:true otherwise pins the index to its last completion date;
+    # dedup-accumulate makes the re-run safe).
+    if args.corroborate_index and getattr(args, "li_reindex", False) \
+            and index_meta.get("done"):
+        index_meta["done"] = False
+        print("[corroborate] --li-reindex: re-opening index "
+              f"(was done at {index_meta.get('indexed_at', '?')})",
+              flush=True)
     if args.corroborate_index and not index_meta.get("done"):
         # S8-E1 index modes: "single" (back-compat default — one
         # company query) or "partitioned" (keyword×location slice
@@ -776,6 +786,25 @@ def phase_title_search(args, out: Path) -> int:
         elif st:
             ts_strikes[rid] = ts_strikes.get(rid, 0) + 1
     capped = {rid for rid, n in ts_strikes.items() if n >= _TS_STRIKE_CAP}
+    # S10: cross-post-lag re-probe — LinkedIn cards often appear 1-2
+    # days AFTER the Workday req, but a no_card verdict is terminal
+    # forever, so refresh cycles never discover the late card (the
+    # req stays no_match in every future CSV). --reprobe-no-card-days
+    # re-opens no_card lines for reqs whose startDate is within the
+    # window (opt-in; 0 = off preserves the terminal semantics).
+    reprobe_days = int(getattr(args, "reprobe_no_card_days", 0) or 0)
+    if reprobe_days > 0:
+        from datetime import date as _dd, timedelta as _td
+        horizon = (_dd.today() - _td(days=reprobe_days)).isoformat()
+        reopened = [rid for rid, st in probed.items()
+                    if st == "no_card"
+                    and (req_dates.get(rid) or "") >= horizon]
+        for rid in reopened:
+            probed.pop(rid)
+        if reopened:
+            print(f"[titlesearch] re-probe: {len(reopened)} no_card "
+                  f"req(s) re-opened (startDate within {reprobe_days}d "
+                  "— the cross-post lag window)", flush=True)
     todo = [r for r in rows if r["reqId"] in no_match_ids
             and r["reqId"] not in probed
             and r["reqId"] not in capped]
@@ -797,8 +826,7 @@ def phase_title_search(args, out: Path) -> int:
                 open(idx_path, "a", encoding="utf-8") as ix:
             for i, r in enumerate(batch):
                 title = (r.get("title") or "").strip()
-                loc = corroborate.li_location(
-                    r.get("primaryLocation") or "")
+                loc = corroborate.row_search_location(r)
                 rec = {"reqId": r["reqId"], "title": title,
                        "primaryLocation": r.get("primaryLocation") or "",
                        "query_location": loc}
@@ -1595,6 +1623,17 @@ def main() -> int:
                     help="(corroborate phase) LinkedIn index mode: single "
                          "query (default, back-compat) or partitioned "
                          "keyword×location slice matrix [S8-E1]")
+    ap.add_argument("--li-reindex", action="store_true",
+                    help="(corroborate phase) re-run the index refresh even "
+                         "when the mode meta says done — discovers cards "
+                         "posted since the last pass (dedup-accumulates; "
+                         "safe) [S10]")
+    ap.add_argument("--reprobe-no-card-days", type=int, default=0,
+                    metavar="N",
+                    help="(titlesearch phase) re-open terminal no_card "
+                         "lines for reqs whose startDate is within N days "
+                         "— catches LinkedIn cross-post lag (cards appear "
+                         "1-2 days after the Workday req; 0 = off) [S10]")
     ap.add_argument("--li-index-pages", type=int, default=10,
                     help="LinkedIn index pages per invocation (10 cards/pg)")
     ap.add_argument("--li-slice-pages", type=int, default=3,

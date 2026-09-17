@@ -619,6 +619,11 @@
 {"reqId": "JR2013348", "similar_reqId": "JR2024440", "similar_title": "Senior Software R&D Engineer, ECO Route - VLSI EDA", "rank": 3}
 {"reqId": "JR2013348", "similar_reqId": "JR2022263", "similar_title": "Senior Software Engineer, Full-Stack", "rank": 4}
 {"reqId": "JR2013348", "similar_reqId": "JR2010334", "similar_title": "Senior Software Development Engineer, Neural Graph Infrastructure", "rank": 5}
+{"reqId": "JR2018371", "similar_reqId": "JR2022959", "similar_title": "Senior System Software Engineer - Simulation Software", "rank": 1}
+{"reqId": "JR2018371", "similar_reqId": "JR2024747", "similar_title": "Senior Systems Software Engineer, Observability and Telemetry Platform", "rank": 2}
+{"reqId": "JR2018371", "similar_reqId": "JR2023340", "similar_title": "System Software Engineer - Trusted Firmware", "rank": 3}
+{"reqId": "JR2018371", "similar_reqId": "JR2015886", "similar_title": "System Software Engineer - GPU and SOC", "rank": 4}
+{"reqId": "JR2018371", "similar_reqId": "JR2023036", "similar_title": "Senior System Software Engineer, Automotive Performance", "rank": 5}
 {"reqId": "JR2025017", "similar_reqId": "JR2019836", "similar_title": "Principal Graphics Developer Tools Engineer", "rank": 1}
 {"reqId": "JR2018568", "similar_reqId": "JR2015955", "similar_title": "Senior Product Marketing Manager - Financial Services", "rank": 1}
 {"reqId": "JR2018568", "similar_reqId": "JR2021943", "similar_title": "Senior Product Marketing Manager - Data Processing", "rank": 2}
@@ -2386,6 +2391,11 @@
 {"reqId": "JR2023492", "similar_reqId": "JR2015886", "similar_title": "System Software Engineer - GPU and SOC", "rank": 3}
 {"reqId": "JR2023492", "similar_reqId": "JR2023489", "similar_title": "NVIDIA 2027 Internships: Computer Architecture", "rank": 4}
 {"reqId": "JR2023492", "similar_reqId": "JR2019884", "similar_title": "Software Solutions Architect, NVIS", "rank": 5}
+{"reqId": "JR2023856", "similar_reqId": "JR2023492", "similar_title": "NVIDIA 2027 Internships: Systems Software Engineering", "rank": 1}
+{"reqId": "JR2023856", "similar_reqId": "JR2023495", "similar_title": "NVIDIA 2027 Internships: Software Engineering", "rank": 2}
+{"reqId": "JR2023856", "similar_reqId": "JR2023489", "similar_title": "NVIDIA 2027 Internships: Computer Architecture", "rank": 3}
+{"reqId": "JR2023856", "similar_reqId": "JR2023486", "similar_title": "NVIDIA 2027 Internships: Hardware ASIC Design", "rank": 4}
+{"reqId": "JR2023856", "similar_reqId": "JR2023508", "similar_title": "NVIDIA 2027 Internships: Hardware Engineering", "rank": 5}
 {"reqId": "JR2023499", "similar_reqId": "JR2023495", "similar_title": "NVIDIA 2027 Internships: Software Engineering", "rank": 1}
 {"reqId": "JR2023499", "similar_reqId": "JR2023508", "similar_title": "NVIDIA 2027 Internships: Hardware Engineering", "rank": 2}
 {"reqId": "JR2023499", "similar_reqId": "JR2023492", "similar_title": "NVIDIA 2027 Internships: Systems Software Engineering", "rank": 3}
@@ -6642,3 +6652,229 @@
 {"reqId": "JR2024174", "similar_reqId": "JR2011644", "similar_title": "Research Scientist, AI Accelerator Design and VLSI - New College Grad 2026", "rank": 3}
 {"reqId": "JR2024174", "similar_reqId": "JR2005384", "similar_title": "Senior Circuit Design Engineer - Power", "rank": 4}
 {"reqId": "JR2024174", "similar_reqId": "JR2023502", "similar_title": "NVIDIA 2027 Internships: Mixed Signal Design", "rank": 5}
+{"reqId": "JR2025406", "similar_reqId": "JR2012698", "similar_title": "Research Scientist, Fundamental Generative AI - New College Grad 2026", "rank": 1}
+{"reqId": "JR2025406", "similar_reqId": "JR2016035", "similar_title": "PhD Research Intern, Generative AI - 2026", "rank": 2}
+{"reqId": "JR2025406", "similar_reqId": "JR2025025", "similar_title": "PhD Research Intern, Generative AI for Physical AI - 2027", "rank": 3}
+{"reqId": "JR2025406", "similar_reqId": "JR2013039", "similar_title": "Senior Research Scientist, Fundamental Generative AI", "rank": 4}
+{"reqId": "JR2025406", "similar_reqId": "JR2008124", "similar_title": "Senior Research Scientist for Generative AI", "rank": 5}
+{"reqId": "JR2025294", "similar_reqId": "JR2019685", "similar_title": "Embedded Software Engineer - RISCV", "rank": 1}
+{"reqId": "JR2025294", "similar_reqId": "JR2022948", "similar_title": "Senior Embedded System Software Engineer – Platform Execution Lead", "rank": 2}
+{"reqId": "JR2025294", "similar_reqId": "JR2024977", "similar_title": "Senior Manager, Embedded Imaging Software", "rank": 3}
+{"reqId": "JR2025294", "similar_reqId": "JR2018585", "similar_title": "Manager, Software Engineering - Cumulus Linux", "rank": 4}
+{"reqId": "JR2025294", "similar_reqId": "JR2025588", "similar_title": "Senior Software Engineer - Embedded Platform", "rank": 5}
+{"reqId": "JR2009808", "similar_reqId": "JR2018181", "similar_title": "Applied AI Engineer", "rank": 1}
+{"reqId": "JR2009808", "similar_reqId": "JR2018178", "similar_title": "Applied AI Engineer", "rank": 2}
+{"reqId": "JR2009808", "similar_reqId": "JR2025455", "similar_title": "Senior AI and ML Software Engineer", "rank": 3}
+{"reqId": "JR2009808", "similar_reqId": "JR2025254", "similar_title": "Senior Applied AI Engineer", "rank": 4}
+{"reqId": "JR2009808", "similar_reqId": "JR2007798", "similar_title": "Senior Software Engineer, AI Inference Systems", "rank": 5}
+{"reqId": "JR2023749", "similar_reqId": "JR2022295", "similar_title": "Software Engineering Intern, Dynamo - Fall 2026", "rank": 1}
+{"reqId": "JR2023749", "similar_reqId": "JR2018659", "similar_title": "Software Engineer, Hardware Tools and Methodology - New College Grad 2026", "rank": 2}
+{"reqId": "JR2023749", "similar_reqId": "JR2024798", "similar_title": "Senior Software Engineer, Open Harness Engineering", "rank": 3}
+{"reqId": "JR2023749", "similar_reqId": "JR2017522", "similar_title": "PhD Software Engineering Intern, Decision Intelligence - Fall 2026", "rank": 4}
+{"reqId": "JR2023749", "similar_reqId": "JR2023340", "similar_title": "System Software Engineer - Trusted Firmware", "rank": 5}
+{"reqId": "JR2025806", "similar_reqId": "JR2025501", "similar_title": "Datacenter Product Architect", "rank": 1}
+{"reqId": "JR2025806", "similar_reqId": "JR2002944", "similar_title": "Solutions Architect, AI Models", "rank": 2}
+{"reqId": "JR2025806", "similar_reqId": "JR2002548", "similar_title": "Solutions Architect, Hyperscale", "rank": 3}
+{"reqId": "JR2025806", "similar_reqId": "JR2023340", "similar_title": "System Software Engineer - Trusted Firmware", "rank": 4}
+{"reqId": "JR2025806", "similar_reqId": "JR2023334", "similar_title": "Senior System Software Engineer", "rank": 5}
+{"reqId": "JR2025501", "similar_reqId": "JR2025806", "similar_title": "System Architect", "rank": 1}
+{"reqId": "JR2025501", "similar_reqId": "JR2010394", "similar_title": "Senior Data Center System Architect", "rank": 2}
+{"reqId": "JR2025501", "similar_reqId": "JR1973423", "similar_title": "Distinguished Engineer – Data Center System Software Architect", "rank": 3}
+{"reqId": "JR2025501", "similar_reqId": "JR2005861", "similar_title": "Senior Architect, Data Center Modeling", "rank": 4}
+{"reqId": "JR2025501", "similar_reqId": "JR1992618", "similar_title": "Datacenter GPU Power Architect", "rank": 5}
+{"reqId": "JR2020271", "similar_reqId": "JR2012287", "similar_title": "Senior Systems Software Engineer - GPU Diagnostics", "rank": 1}
+{"reqId": "JR2020271", "similar_reqId": "JR2013795", "similar_title": "Senior Systems Software Engineer - GPU Diagnostics", "rank": 2}
+{"reqId": "JR2020271", "similar_reqId": "JR2009423", "similar_title": "Senior System Software Engineer, Performance - CUDA Driver", "rank": 3}
+{"reqId": "JR2020271", "similar_reqId": "JR2009427", "similar_title": "Senior Systems Software Engineer, CUDA Driver", "rank": 4}
+{"reqId": "JR2020271", "similar_reqId": "JR2001533", "similar_title": "Senior System Software Engineer - GPU Server", "rank": 5}
+{"reqId": "JR2025745", "similar_reqId": "JR2020184", "similar_title": "Senior Deep Learning Engineer – Autonomous Vehicles", "rank": 1}
+{"reqId": "JR2025745", "similar_reqId": "JR2024154", "similar_title": "Senior Deep Learning Software Engineer, DLSim", "rank": 2}
+{"reqId": "JR2025745", "similar_reqId": "JR2003385", "similar_title": "Senior Deep Learning Frameworks Sustaining Engineer", "rank": 3}
+{"reqId": "JR2025745", "similar_reqId": "JR2022179", "similar_title": "Senior Deep Reinforcement Learning Engineer - Autonomous Driving", "rank": 4}
+{"reqId": "JR2025745", "similar_reqId": "JR2019844", "similar_title": "Senior Deep Learning Compiler Engineer - HW-SW Codesign", "rank": 5}
+{"reqId": "JR2025632", "similar_reqId": "JR2014725", "similar_title": "Senior Software Engineer - CUDA Driver", "rank": 1}
+{"reqId": "JR2025632", "similar_reqId": "JR2021114", "similar_title": "Senior Software Engineer, CUDA C++ Core Libraries", "rank": 2}
+{"reqId": "JR2025632", "similar_reqId": "JR2019940", "similar_title": "CUDA Libraries and Frameworks Product Marketing Manager", "rank": 3}
+{"reqId": "JR2025632", "similar_reqId": "JR1980109", "similar_title": "Software Engineering Manager - GPU Communications Libraries", "rank": 4}
+{"reqId": "JR2025632", "similar_reqId": "JR2022295", "similar_title": "Software Engineering Intern, Dynamo - Fall 2026", "rank": 5}
+{"reqId": "JR2025004", "similar_reqId": "JR2017342", "similar_title": "Senior Developer Marketing Manager, Consumer AI", "rank": 1}
+{"reqId": "JR2025004", "similar_reqId": "JR2020123", "similar_title": "Senior Product Marketing Manager, Desktop AI Products", "rank": 2}
+{"reqId": "JR2025004", "similar_reqId": "JR2021774", "similar_title": "Senior Technical Product Marketing Manager - AI Infrastructure", "rank": 3}
+{"reqId": "JR2025004", "similar_reqId": "JR1997097", "similar_title": "Senior Inference Technical Product Marketing Manager - Accelerated Computing", "rank": 4}
+{"reqId": "JR2025004", "similar_reqId": "JR2010623", "similar_title": "Senior Product Marketing Manager, Industrial & Computational Engineering", "rank": 5}
+{"reqId": "JR2025602", "similar_reqId": "JR2019920", "similar_title": "Principal Supply Chain Modeling Engineer", "rank": 1}
+{"reqId": "JR2025602", "similar_reqId": "JR2023409", "similar_title": "Director, System Level Testing - Product Development Engineering", "rank": 2}
+{"reqId": "JR2025602", "similar_reqId": "JR2011793", "similar_title": "Senior Power Methodology and Modeling Engineer", "rank": 3}
+{"reqId": "JR2025602", "similar_reqId": "JR2018328", "similar_title": "Manager, Molecular Simulation Engineering", "rank": 4}
+{"reqId": "JR2025602", "similar_reqId": "JR2019079", "similar_title": "L11 System Product Development Engineer", "rank": 5}
+{"reqId": "JR2025370", "similar_reqId": "JR2015886", "similar_title": "System Software Engineer - GPU and SOC", "rank": 1}
+{"reqId": "JR2025370", "similar_reqId": "JR2023340", "similar_title": "System Software Engineer - Trusted Firmware", "rank": 2}
+{"reqId": "JR2025370", "similar_reqId": "JR2023492", "similar_title": "NVIDIA 2027 Internships: Systems Software Engineering", "rank": 3}
+{"reqId": "JR2025370", "similar_reqId": "JR2009423", "similar_title": "Senior System Software Engineer, Performance - CUDA Driver", "rank": 4}
+{"reqId": "JR2025370", "similar_reqId": "JR2018688", "similar_title": "Senior System Software Engineer, NvSci", "rank": 5}
+{"reqId": "JR2023933", "similar_reqId": "JR2024570", "similar_title": "Senior Distributed Software Engineer, Golang - DGX Cloud", "rank": 1}
+{"reqId": "JR2023933", "similar_reqId": "JR2012523", "similar_title": "Senior Software Engineer, Graphics Performance", "rank": 2}
+{"reqId": "JR2023933", "similar_reqId": "JR2022781", "similar_title": "Senior Developer Technology Engineer, High-Performance Databases", "rank": 3}
+{"reqId": "JR2023933", "similar_reqId": "JR2003389", "similar_title": "Senior Cloud Software Engineer, DGXC Data Services", "rank": 4}
+{"reqId": "JR2023933", "similar_reqId": "JR2022482", "similar_title": "Senior Software Engineer, Networking DGX Cloud", "rank": 5}
+{"reqId": "JR2025670", "similar_reqId": "JR2024923", "similar_title": "Accelerated Computing GPU Product Manager", "rank": 1}
+{"reqId": "JR2025670", "similar_reqId": "JR1996264", "similar_title": "Senior Accelerated Computing GPU Product Manager", "rank": 2}
+{"reqId": "JR2025670", "similar_reqId": "JR2015176", "similar_title": "Product Program Manager", "rank": 3}
+{"reqId": "JR2025670", "similar_reqId": "JR2018760", "similar_title": "Senior Technical Product Manager, Accelerated Computing", "rank": 4}
+{"reqId": "JR2025670", "similar_reqId": "JR2001089", "similar_title": "Senior Technical Product Manager - GPU Direct Storage", "rank": 5}
+{"reqId": "JR2023340", "similar_reqId": "JR2015886", "similar_title": "System Software Engineer - GPU and SOC", "rank": 1}
+{"reqId": "JR2023340", "similar_reqId": "JR2011818", "similar_title": "Senior System Software Engineer, Tegra", "rank": 2}
+{"reqId": "JR2023340", "similar_reqId": "JR2021605", "similar_title": "System Software Engineer - GeForce NOW Low Latency Streaming", "rank": 3}
+{"reqId": "JR2023340", "similar_reqId": "JR2009423", "similar_title": "Senior System Software Engineer, Performance - CUDA Driver", "rank": 4}
+{"reqId": "JR2023340", "similar_reqId": "JR2018688", "similar_title": "Senior System Software Engineer, NvSci", "rank": 5}
+{"reqId": "JR2005460", "similar_reqId": "JR2004517", "similar_title": "Customer Technical Program Manager", "rank": 1}
+{"reqId": "JR2005460", "similar_reqId": "JR2012393", "similar_title": "Technical Program Manager - Enterprise Software Release and Execution", "rank": 2}
+{"reqId": "JR2005460", "similar_reqId": "JR2017204", "similar_title": "Manager, Customer Solution Architect and Application Engineering", "rank": 3}
+{"reqId": "JR2005460", "similar_reqId": "JR2020269", "similar_title": "Customer Program Manager - Automotive", "rank": 4}
+{"reqId": "JR2005460", "similar_reqId": "JR2022030", "similar_title": "Senior Technical Program Manager, NVIDIA Metropolis", "rank": 5}
+{"reqId": "JR2014137", "similar_reqId": "JR2013818", "similar_title": "Distinguished Resiliency and Safety Architect, GPU Diagnostics", "rank": 1}
+{"reqId": "JR2014137", "similar_reqId": "JR2018983", "similar_title": "Senior Customer Safety Engineer - Automotive", "rank": 2}
+{"reqId": "JR2014137", "similar_reqId": "JR2023529", "similar_title": "Director, Engineering - Autonomous Vehicles", "rank": 3}
+{"reqId": "JR2014137", "similar_reqId": "JR2018920", "similar_title": "Lead Hardware Design Validation Engineer", "rank": 4}
+{"reqId": "JR2014137", "similar_reqId": "JR2021367", "similar_title": "Principal SoC Architect, Robotics and Automotive", "rank": 5}
+{"reqId": "JR2016780", "similar_reqId": "JR2022834", "similar_title": "Senior Firmware Engineer - GPU", "rank": 1}
+{"reqId": "JR2016780", "similar_reqId": "JR2024895", "similar_title": "Senior Firmware Engineer, NIC Firmware", "rank": 2}
+{"reqId": "JR2016780", "similar_reqId": "JR2010334", "similar_title": "Senior Software Development Engineer, Neural Graph Infrastructure", "rank": 3}
+{"reqId": "JR2016780", "similar_reqId": "JR2016845", "similar_title": "Senior Firmware Engineer, Networking", "rank": 4}
+{"reqId": "JR2016780", "similar_reqId": "JR2025251", "similar_title": "Senior Firmware Verification and Bringup Engineer", "rank": 5}
+{"reqId": "JR2025025", "similar_reqId": "JR2016035", "similar_title": "PhD Research Intern, Generative AI - 2026", "rank": 1}
+{"reqId": "JR2025025", "similar_reqId": "JR2025406", "similar_title": "PhD Research Intern, Fundamental Generative AI - 2027", "rank": 2}
+{"reqId": "JR2025025", "similar_reqId": "JR2016032", "similar_title": "Research Scientist, Generative AI for Physical AI - PhD New College Grad 2026", "rank": 3}
+{"reqId": "JR2025025", "similar_reqId": "JR2012698", "similar_title": "Research Scientist, Fundamental Generative AI - New College Grad 2026", "rank": 4}
+{"reqId": "JR2025025", "similar_reqId": "JR2008124", "similar_title": "Senior Research Scientist for Generative AI", "rank": 5}
+{"reqId": "JR2018093", "similar_reqId": "JR2023184", "similar_title": "Senior Software Engineer, Agent Simulation and Evaluation", "rank": 1}
+{"reqId": "JR2018093", "similar_reqId": "JR2022959", "similar_title": "Senior System Software Engineer - Simulation Software", "rank": 2}
+{"reqId": "JR2018093", "similar_reqId": "JR2022710", "similar_title": "Senior Software Engineer - Image and Data Processing Libraries", "rank": 3}
+{"reqId": "JR2018093", "similar_reqId": "JR2018333", "similar_title": "Senior Software Engineer — MD Simulation Engineering", "rank": 4}
+{"reqId": "JR2018093", "similar_reqId": "JR2022104", "similar_title": "Senior Software Engineer, AIOps and Observability", "rank": 5}
+{"reqId": "JR2021000", "similar_reqId": "JR2018414", "similar_title": "Senior Financial Analyst - Sales Finance", "rank": 1}
+{"reqId": "JR2021000", "similar_reqId": "JR2019958", "similar_title": "Senior Financial Analyst, Operations and Manufacturing", "rank": 2}
+{"reqId": "JR2021000", "similar_reqId": "JR2024064", "similar_title": "Senior Business System Analyst - FICO Costing", "rank": 3}
+{"reqId": "JR2021000", "similar_reqId": "JR2019869", "similar_title": "Senior Analyst, SOX and Internal Audit", "rank": 4}
+{"reqId": "JR2021000", "similar_reqId": "JR2019318", "similar_title": "Senior Failure Analysis Engineer", "rank": 5}
+{"reqId": "JR2022575", "similar_reqId": "JR2020123", "similar_title": "Senior Product Marketing Manager, Desktop AI Products", "rank": 1}
+{"reqId": "JR2022575", "similar_reqId": "JR1996301", "similar_title": "Technical Marketing Manager - Data Center Infrastructure", "rank": 2}
+{"reqId": "JR2022575", "similar_reqId": "JR2015402", "similar_title": "Product Marketing Manager, NVIDIA NIM", "rank": 3}
+{"reqId": "JR2022575", "similar_reqId": "JR2021961", "similar_title": "Product Marketing Manager - Enterprise AI", "rank": 4}
+{"reqId": "JR2022575", "similar_reqId": "JR2019233", "similar_title": "Campaign Manager, Cybersecurity", "rank": 5}
+{"reqId": "JR2025694", "similar_reqId": "JR2020783", "similar_title": "Custom SOC IP Verification Engineer", "rank": 1}
+{"reqId": "JR2025694", "similar_reqId": "JR2010391", "similar_title": "ASIC Design Verification Engineer - New College Grad 2026", "rank": 2}
+{"reqId": "JR2025694", "similar_reqId": "JR2020640", "similar_title": "ASIC Verification Engineer - New College Grad 2026", "rank": 3}
+{"reqId": "JR2025694", "similar_reqId": "JR2015873", "similar_title": "ASIC Verification Engineer", "rank": 4}
+{"reqId": "JR2025694", "similar_reqId": "JR2022280", "similar_title": "ASIC Verification Engineer", "rank": 5}
+{"reqId": "JR2025360", "similar_reqId": "JR2011747", "similar_title": "Senior Quantum Systems Engineer - Quantum Computing", "rank": 1}
+{"reqId": "JR2025360", "similar_reqId": "JR2019518", "similar_title": "Senior Quantum Applied Research Scientist, Physics Modeling", "rank": 2}
+{"reqId": "JR2025360", "similar_reqId": "JR2019517", "similar_title": "Senior Quantum Applied Research Scientist, Calibration and Decoding", "rank": 3}
+{"reqId": "JR2025360", "similar_reqId": "JR2022852", "similar_title": "Developer Relations Manager, Quantum Computing — National Labs and Federal", "rank": 4}
+{"reqId": "JR2025360", "similar_reqId": "JR2012496", "similar_title": "Senior Engineer - Quantum Error Correction Libraries", "rank": 5}
+{"reqId": "JR2025429", "similar_reqId": "JR2021337", "similar_title": "Senior Applied AI Engineer, Manufacturing & System Co-Design", "rank": 1}
+{"reqId": "JR2025429", "similar_reqId": "JR2011793", "similar_title": "Senior Power Methodology and Modeling Engineer", "rank": 2}
+{"reqId": "JR2025429", "similar_reqId": "JR2000609", "similar_title": "Senior Field Application Engineer - AI Factory Deployment", "rank": 3}
+{"reqId": "JR2025429", "similar_reqId": "JR2016959", "similar_title": "Senior MEP Engineer – Datacenter Lab Infrastructure", "rank": 4}
+{"reqId": "JR2025429", "similar_reqId": "JR2000303", "similar_title": "Senior CPU Design Engineer", "rank": 5}
+{"reqId": "JR2025178", "similar_reqId": "JR2014593", "similar_title": "Senior Circuit Design Engineer", "rank": 1}
+{"reqId": "JR2025178", "similar_reqId": "JR2019679", "similar_title": "Senior Circuit Design Engineer - Power Modeling and Simulation", "rank": 2}
+{"reqId": "JR2025178", "similar_reqId": "JR2012070", "similar_title": "Senior Circuit Design Engineer", "rank": 3}
+{"reqId": "JR2025178", "similar_reqId": "JR2014591", "similar_title": "Senior Circuit Design Engineer", "rank": 4}
+{"reqId": "JR2025178", "similar_reqId": "JR2001675", "similar_title": "Senior Circuit Design Engineer - Noise", "rank": 5}
+{"reqId": "JR2025518", "similar_reqId": "JR2012046", "similar_title": "Senior Software Engineer, Hardware Tools and Methodology Development", "rank": 1}
+{"reqId": "JR2025518", "similar_reqId": "JR2014725", "similar_title": "Senior Software Engineer - CUDA Driver", "rank": 2}
+{"reqId": "JR2025518", "similar_reqId": "JR2024440", "similar_title": "Senior Software R&D Engineer, ECO Route - VLSI EDA", "rank": 3}
+{"reqId": "JR2025518", "similar_reqId": "JR2018812", "similar_title": "Senior Software Engineer, AI Networking", "rank": 4}
+{"reqId": "JR2025518", "similar_reqId": "JR2013322", "similar_title": "Senior System Software Engineer - CUDA Chips", "rank": 5}
+{"reqId": "JR2025663", "similar_reqId": "JR2023029", "similar_title": "Director, IP Licensing", "rank": 1}
+{"reqId": "JR2025778", "similar_reqId": "JR2009168", "similar_title": "Senior GPU Architect, Deep Learning", "rank": 1}
+{"reqId": "JR2025778", "similar_reqId": "JR2015492", "similar_title": "Senior GPU Architect", "rank": 2}
+{"reqId": "JR2025778", "similar_reqId": "JR2014156", "similar_title": "Senior GPU Memory System Architect", "rank": 3}
+{"reqId": "JR2025778", "similar_reqId": "JR2016562", "similar_title": "Senior GPU Architect", "rank": 4}
+{"reqId": "JR2025778", "similar_reqId": "JR2018641", "similar_title": "Senior GPU Memory Architect", "rank": 5}
+{"reqId": "JR2025511", "similar_reqId": "JR2013177", "similar_title": "ASIC Physical Design and Timing Engineer - New College Grad 2026", "rank": 1}
+{"reqId": "JR2025511", "similar_reqId": "JR2020717", "similar_title": "Senior Physical Design and Timing Engineer", "rank": 2}
+{"reqId": "JR2025511", "similar_reqId": "JR2017826", "similar_title": "Senior Physical Design Engineer", "rank": 3}
+{"reqId": "JR2025511", "similar_reqId": "JR2021651", "similar_title": "Senior Physical Design Interposer Engineer", "rank": 4}
+{"reqId": "JR2025511", "similar_reqId": "JR2011617", "similar_title": "Senior Physical Design Methodology Engineer, Innovus Flows", "rank": 5}
+{"reqId": "JR2024879", "similar_reqId": "JR2015394", "similar_title": "Director, Business Development - Retail Intelligent Stores", "rank": 1}
+{"reqId": "JR2024879", "similar_reqId": "JR2022670", "similar_title": "Director, Product Management, CPO and Silicon Photonics", "rank": 2}
+{"reqId": "JR2024879", "similar_reqId": "JR2020916", "similar_title": "Strategic Account Manager, CSP", "rank": 3}
+{"reqId": "JR2024879", "similar_reqId": "JR2023008", "similar_title": "Senior Director, NCP and ISV Business Development", "rank": 4}
+{"reqId": "JR2024879", "similar_reqId": "JR2021104", "similar_title": "Segment Sales Leader, Enterprise Platforms", "rank": 5}
+{"reqId": "JR2025530", "similar_reqId": "JR2020110", "similar_title": "Technical Program Manager, Silicon Product Definition", "rank": 1}
+{"reqId": "JR2025530", "similar_reqId": "JR2023390", "similar_title": "Technical Program Manager – Chip System Software", "rank": 2}
+{"reqId": "JR2025530", "similar_reqId": "JR2018650", "similar_title": "NPI PCB Technical Program Manager", "rank": 3}
+{"reqId": "JR2025530", "similar_reqId": "JR2021470", "similar_title": "Senior Customer Technical Program Manager", "rank": 4}
+{"reqId": "JR2025530", "similar_reqId": "JR2025114", "similar_title": "Senior Technical Program Manager, Quantum Computing Applied Research", "rank": 5}
+{"reqId": "JR2025338", "similar_reqId": "JR2025074", "similar_title": "Automotive Account Manager", "rank": 1}
+{"reqId": "JR2025338", "similar_reqId": "JR2021029", "similar_title": "Automotive Business Development Manager - Sales", "rank": 2}
+{"reqId": "JR2025338", "similar_reqId": "JR2024636", "similar_title": "Global Account Manager, Developer Relations - Hitachi", "rank": 3}
+{"reqId": "JR2025338", "similar_reqId": "JR2025206", "similar_title": "Account Manager - AI Natives", "rank": 4}
+{"reqId": "JR2025338", "similar_reqId": "JR2021693", "similar_title": "Senior Account Manager, AI Factory - Global Segment Sales", "rank": 5}
+{"reqId": "JR2025490", "similar_reqId": "JR2021401", "similar_title": "Global Account Manager – AI and Accelerated Computing Solutions", "rank": 1}
+{"reqId": "JR2025490", "similar_reqId": "JR2021404", "similar_title": "Global Account Manager – Enterprise and NPN Software Sales", "rank": 2}
+{"reqId": "JR2025490", "similar_reqId": "JR2024636", "similar_title": "Global Account Manager, Developer Relations - Hitachi", "rank": 3}
+{"reqId": "JR2025490", "similar_reqId": "JR2022590", "similar_title": "Global Account Manager, Developer Relations - Meta", "rank": 4}
+{"reqId": "JR2025490", "similar_reqId": "JR2022583", "similar_title": "Global Account Manager, Developer Relations - Microsoft", "rank": 5}
+{"reqId": "JR2019389", "similar_reqId": "JR2023390", "similar_title": "Technical Program Manager – Chip System Software", "rank": 1}
+{"reqId": "JR2019389", "similar_reqId": "JR2022030", "similar_title": "Senior Technical Program Manager, NVIDIA Metropolis", "rank": 2}
+{"reqId": "JR2019389", "similar_reqId": "JR2017458", "similar_title": "Senior Technical Program Manager, DGX Cloud - Trust Services", "rank": 3}
+{"reqId": "JR2019389", "similar_reqId": "JR2004517", "similar_title": "Customer Technical Program Manager", "rank": 4}
+{"reqId": "JR2019389", "similar_reqId": "JR2012393", "similar_title": "Technical Program Manager - Enterprise Software Release and Execution", "rank": 5}
+{"reqId": "JR2025628", "similar_reqId": "JR2013492", "similar_title": "Senior HPC Performance Engineer - AI for Science at Scale", "rank": 1}
+{"reqId": "JR2025628", "similar_reqId": "JR2019864", "similar_title": "Senior Physical Failure Analysis Engineer", "rank": 2}
+{"reqId": "JR2025628", "similar_reqId": "JR2021337", "similar_title": "Senior Applied AI Engineer, Manufacturing & System Co-Design", "rank": 3}
+{"reqId": "JR2025628", "similar_reqId": "JR2012496", "similar_title": "Senior Engineer - Quantum Error Correction Libraries", "rank": 4}
+{"reqId": "JR2025628", "similar_reqId": "JR2010937", "similar_title": "Senior Solutions Architect - AI Infrastructure", "rank": 5}
+{"reqId": "JR2025114", "similar_reqId": "JR2023471", "similar_title": "Senior Product Manager, HPC and AI for Physics", "rank": 1}
+{"reqId": "JR2025114", "similar_reqId": "JR2021470", "similar_title": "Senior Customer Technical Program Manager", "rank": 2}
+{"reqId": "JR2025114", "similar_reqId": "JR1996363", "similar_title": "Senior Software Program Manager - Datacenter Compute Server", "rank": 3}
+{"reqId": "JR2025114", "similar_reqId": "JR2018110", "similar_title": "Senior Quantum AI Research Scientist,  Applied Research", "rank": 4}
+{"reqId": "JR2025114", "similar_reqId": "JR2024649", "similar_title": "Senior Manager, Validation and HPC - NVIS", "rank": 5}
+{"reqId": "JR2019752", "similar_reqId": "JR2003518", "similar_title": "Senior Math Libraries Engineer - Sparse Linear Algebra", "rank": 1}
+{"reqId": "JR2019752", "similar_reqId": "JR2001319", "similar_title": "Senior Math Libraries Engineer - Sparsity in AI", "rank": 2}
+{"reqId": "JR2019752", "similar_reqId": "JR2019324", "similar_title": "Senior Math Libraries Engineer - Direct Sparse Solvers", "rank": 3}
+{"reqId": "JR2019752", "similar_reqId": "JR1993990", "similar_title": "Senior Math Libraries Engineer - Dense Linear Algebra", "rank": 4}
+{"reqId": "JR2019752", "similar_reqId": "JR1998721", "similar_title": "Senior Math Libraries Engineer – AI and HPC", "rank": 5}
+{"reqId": "JR2024480", "similar_reqId": "JR2018980", "similar_title": "Senior Failure Analysis Engineer", "rank": 1}
+{"reqId": "JR2024480", "similar_reqId": "JR2019864", "similar_title": "Senior Physical Failure Analysis Engineer", "rank": 2}
+{"reqId": "JR2024480", "similar_reqId": "JR2019986", "similar_title": "Senior Manager, Engineering - Data Center Firmware", "rank": 3}
+{"reqId": "JR2024480", "similar_reqId": "JR2022387", "similar_title": "Senior Technical Marketing Engineer - CAE Performance", "rank": 4}
+{"reqId": "JR2024480", "similar_reqId": "JR2001380", "similar_title": "Senior Mechanical Product Design Engineer", "rank": 5}
+{"reqId": "JR2025367", "similar_reqId": "JR2001380", "similar_title": "Senior Mechanical Product Design Engineer", "rank": 1}
+{"reqId": "JR2025367", "similar_reqId": "JR1995883", "similar_title": "Engineering Manager, AI Developer Technology", "rank": 2}
+{"reqId": "JR2025367", "similar_reqId": "JR2021582", "similar_title": "Senior MGX Ecosystem Engineer", "rank": 3}
+{"reqId": "JR2025367", "similar_reqId": "JR2017635", "similar_title": "Engineering Manager, Inference Benchmarking — AI Perf", "rank": 4}
+{"reqId": "JR2025367", "similar_reqId": "JR2005460", "similar_title": "Mechanical and Thermal Program Manager", "rank": 5}
+{"reqId": "JR2025464", "similar_reqId": "JR1997186", "similar_title": "Senior Software Engineer, NCCL", "rank": 1}
+{"reqId": "JR2025464", "similar_reqId": "JR2007798", "similar_title": "Senior Software Engineer, AI Inference Systems", "rank": 2}
+{"reqId": "JR2025464", "similar_reqId": "JR2008501", "similar_title": "Senior Software Architect, AI Systems and Networking", "rank": 3}
+{"reqId": "JR2025464", "similar_reqId": "JR2021019", "similar_title": "Senior Software Engineer, Metropolis Vision AI", "rank": 4}
+{"reqId": "JR2025464", "similar_reqId": "JR2018812", "similar_title": "Senior Software Engineer, AI Networking", "rank": 5}
+{"reqId": "JR2025587", "similar_reqId": "JR1997097", "similar_title": "Senior Inference Technical Product Marketing Manager - Accelerated Computing", "rank": 1}
+{"reqId": "JR2025587", "similar_reqId": "JR2021774", "similar_title": "Senior Technical Product Marketing Manager - AI Infrastructure", "rank": 2}
+{"reqId": "JR2025587", "similar_reqId": "JR2020123", "similar_title": "Senior Product Marketing Manager, Desktop AI Products", "rank": 3}
+{"reqId": "JR2025587", "similar_reqId": "JR2025004", "similar_title": "Senior Product Marketing Manager, Local AI", "rank": 4}
+{"reqId": "JR2025587", "similar_reqId": "JR2010623", "similar_title": "Senior Product Marketing Manager, Industrial & Computational Engineering", "rank": 5}
+{"reqId": "JR2025101", "similar_reqId": "JR2025102", "similar_title": "Head of Infrastructure Security Engineering - EDA Clusters", "rank": 1}
+{"reqId": "JR2025101", "similar_reqId": "JR2024825", "similar_title": "Senior Software Engineer - Distributed Systems Engineer, EDA Infrastructure", "rank": 2}
+{"reqId": "JR2025101", "similar_reqId": "JR2014303", "similar_title": "Principal Software Engineer, AI Networking", "rank": 3}
+{"reqId": "JR2025101", "similar_reqId": "JR2018233", "similar_title": "Principal Software Engineer, DGX Cloud Production Engineering", "rank": 4}
+{"reqId": "JR2025101", "similar_reqId": "JR2022999", "similar_title": "Distinguished Engineer, System Software Integration", "rank": 5}
+{"reqId": "JR2025102", "similar_reqId": "JR2025101", "similar_title": "Head of Global Customer Engineering - Internal EDA Infrastructure", "rank": 1}
+{"reqId": "JR2025102", "similar_reqId": "JR2024800", "similar_title": "Senior Engineering Manager, Infrastructure Security Engineering - DGX Cloud", "rank": 2}
+{"reqId": "JR2025102", "similar_reqId": "JR2021883", "similar_title": "Distinguished Engineer, AI Safety and Security Engineering", "rank": 3}
+{"reqId": "JR2025102", "similar_reqId": "JR2021915", "similar_title": "Intellectual Property Security Engineer", "rank": 4}
+{"reqId": "JR2025102", "similar_reqId": "JR2018245", "similar_title": "Senior Software Engineer, Security", "rank": 5}
+{"reqId": "JR2025495", "similar_reqId": "JR2024491", "similar_title": "Senior Site Reliability Engineer - Storage", "rank": 1}
+{"reqId": "JR2025495", "similar_reqId": "JR2022324", "similar_title": "Senior Site Reliability Engineer - Storage", "rank": 2}
+{"reqId": "JR2025495", "similar_reqId": "JR2018113", "similar_title": "Senior Network Reliability Engineer - DGX Cloud", "rank": 3}
+{"reqId": "JR2025495", "similar_reqId": "JR2022552", "similar_title": "Senior Software Engineer, Core Infrastructure Services - DGX Cloud", "rank": 4}
+{"reqId": "JR2025495", "similar_reqId": "JR2022184", "similar_title": "Senior Customer Success Engineer - DGX Cloud", "rank": 5}
+{"reqId": "JR2025352", "similar_reqId": "JR2024565", "similar_title": "Senior Software and System Architect", "rank": 1}
+{"reqId": "JR2025352", "similar_reqId": "JR2017640", "similar_title": "Principal Software Architect, Networking AI", "rank": 2}
+{"reqId": "JR2025352", "similar_reqId": "JR2005861", "similar_title": "Senior Architect, Data Center Modeling", "rank": 3}
+{"reqId": "JR2025352", "similar_reqId": "JR2008501", "similar_title": "Senior Software Architect, AI Systems and Networking", "rank": 4}
+{"reqId": "JR2025352", "similar_reqId": "JR1973150", "similar_title": "Senior Software Architect - Data Center Systems", "rank": 5}
