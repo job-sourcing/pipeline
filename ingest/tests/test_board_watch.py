@@ -1820,3 +1820,86 @@ class TestShapeBurnedRowsHeal:
         b6 = tbw.TestB6ErrorRetry()
         b6._run_once(wdir, monkeypatch, board_rows, feed_prior,
                      fake_enrich)
+
+
+class TestUrlHealRunOnce:
+    """S10: bug-era feed records that enriched FINE (details present, no
+    error) but carry url='' (pre-852bb5f state-shaped inputs) get their
+    url re-stamped from the CURRENT list row — network-free, append-only,
+    idempotent. Error records with url='' are NOT this pass's concern
+    (shape-burned class → recovery query)."""
+
+    def _run_once(self, wdir, monkeypatch, board_rows, feed_prior,
+                  fake_enrich):
+        import test_board_watch as tbw
+        b6 = tbw.TestB6ErrorRetry()
+        return b6._run_once(wdir, monkeypatch, board_rows, feed_prior,
+                            fake_enrich)
+
+    @staticmethod
+    def _last_by_rid(wdir):
+        feed = wdir / "test_watch.newposts.jsonl"
+        last: dict = {}
+        for line in feed.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                last[json.loads(line)["reqId"]] = json.loads(line)
+        return last
+
+    def test_buguera_record_healed_from_current_row(self, wdir,
+                                                    monkeypatch):
+        feed_prior = [
+            {"reqId": "JR1", "title": "T1", "first_seen": "2026-09-10",
+             "url": "", "description": "D", "locations": ["US, CA, X"],
+             "externalUrl": "https://ext/JR1"},          # bug-era, ok
+            {"reqId": "JR2", "title": "T2", "first_seen": "2026-09-13",
+             "url": "", "error": "detail_unreachable", "attempts": 3},
+        ]
+        self._run_once(wdir, monkeypatch, [("JR1", "T1"), ("JR2", "T2")],
+                       feed_prior, lambda *a, **k: [])
+        last = self._last_by_rid(wdir)
+        # JR1 healed: url re-stamped, everything else preserved
+        assert last["JR1"]["url"] == "u"
+        assert last["JR1"]["first_seen"] == "2026-09-10"
+        assert last["JR1"]["description"] == "D"
+        assert "error" not in last["JR1"]
+        # JR2 (error shape-burn) NOT touched by the heal — owned by the
+        # recovery query, which re-fed it through enrich_new
+        assert last["JR2"]["url"] == ""
+        assert last["JR2"].get("error") == "detail_unreachable"
+
+    def test_heal_is_idempotent(self, wdir, monkeypatch):
+        feed_prior = [{"reqId": "JR1", "title": "T1",
+                       "first_seen": "2026-09-10", "url": "",
+                       "description": "D"}]
+        self._run_once(wdir, monkeypatch, [("JR1", "T1")], feed_prior,
+                       lambda *a, **k: [])
+        n_after_first = len((wdir / "test_watch.newposts.jsonl")
+                            .read_text(encoding="utf-8").splitlines())
+        assert n_after_first == 2                     # prior + healed
+        # second pass over the ALREADY-HEALED feed appends nothing
+        # (the harness REWRITES the feed from feed_prior — so "no new
+        # lines" means: file still holds exactly the prior records)
+        healed_prior = list(self._last_by_rid(wdir).values())
+        assert len(healed_prior) == 1
+        self._run_once(wdir, monkeypatch, [("JR1", "T1")], healed_prior,
+                       lambda *a, **k: [])
+        lines2 = [l for l in (wdir / "test_watch.newposts.jsonl")
+                  .read_text(encoding="utf-8").splitlines() if l.strip()]
+        assert len(lines2) == 1                    # nothing appended
+        assert json.loads(lines2[0])["url"] == "u"  # healed state kept
+
+    def test_departed_and_urlset_records_untouched(self, wdir,
+                                                   monkeypatch):
+        feed_prior = [
+            {"reqId": "JRGONE", "title": "TG", "first_seen": "2026-09-10",
+             "url": "", "description": "D"},           # departed req
+            {"reqId": "JROK", "title": "TO", "first_seen": "2026-09-10",
+             "url": "https://real/JROK", "description": "D"},  # already ok
+        ]
+        self._run_once(wdir, monkeypatch, [("JROK", "TO")], feed_prior,
+                       lambda *a, **k: [])
+        # only JROK is on the board; it already has a url → no heals at
+        # all: the file still carries exactly the two prior lines
+        lines = [l for l in (wdir / "test_watch.newposts.jsonl")
+                 .read_text(encoding="utf-8").splitlines() if l.strip()]
+        assert len(lines) == 2

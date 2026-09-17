@@ -961,6 +961,28 @@ def run_watch(w: dict, cfg: Config) -> str:
         print(f"[watch:{label}] backlog recovery: {len(backlog_rows)} "
               "state postings awaiting enrichment", flush=True)
 
+    # S10 url-heal: bug-era feed records that enriched fine (details
+    # present, no error) but carry url='' — the pre-852bb5f run fed
+    # STATE-shaped rows as enrich input, so the url stamp came back
+    # empty. No live consumer breaks (the digest prefers externalUrl),
+    # but the durable feed should not carry rows whose url silently
+    # reads "unknown". Re-stamp from the CURRENT list row — network-free
+    # and idempotent: once the healed record is last-in-file, no-op.
+    # (Error records with url='' are NOT touched here — that's the
+    # shape-burned class, owned by the recovery query above.)
+    healed = []
+    for rid, fr in enriched_feed.items():
+        cur_url = (current.get(rid) or {}).get("url") or ""
+        if (rid in current and cur_url
+                and not (fr.get("url") or "").strip()
+                and not fr.get("error")):
+            healed.append(dict(fr, url=cur_url))
+    if healed:
+        _append_jsonl(feed_path, healed)
+        enriched_feed.update({h["reqId"]: h for h in healed})
+        print(f"[watch:{label}] url-heal: {len(healed)} bug-era feed "
+              "record(s) re-stamped with their list url", flush=True)
+
     # enrich the NEW postings (bounded; budget-guarded)
     deadline = time.monotonic() + BUDGET_SECONDS
     enrich_input = (new_rows + backlog_rows)[:DETAILS_MAX * 2]         if backlog_rows else new_rows
