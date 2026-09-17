@@ -106,7 +106,7 @@ class TestDeriveCsvRow:
     def test_column_contract(self):
         row = self._row()
         assert set(row) == set(board_dump.CSV_COLUMNS)
-        assert len(board_dump.CSV_COLUMNS) == 48   # v2.6: +5 h1b (S11)
+        assert len(board_dump.CSV_COLUMNS) == 49   # v2.6: +6 h1b (S11)
 
     def test_locations_enumerated_not_truncated(self):
         row = self._row(det={"info": _detail_info(addl=[
@@ -392,80 +392,148 @@ class TestQuestionnairesPhase:
 
 
 class TestH1bWageBands:
-    """S11/v2.6 #44-#48: the DOL H-1B/LCA wage-band join. Certified
-    NVIDIA filings only, annualized OFFERED wage (WAGE_RATE_OF_PAY_FROM
-    × unit multiplier), exact-normalized title join (tight title+state
-    tier first), honest "" when nothing matches."""
+    """S11/v2.6 #44-#49: the DOL H-1B/LCA wage-band join, AUDITED
+    semantics (design review round): token-subset pools, domain-over-
+    level ranking, role-block suppression, bounded wages, spaced status
+    dialect, min-n=3 gates, primaryLocation-derived state."""
 
     @staticmethod
-    def _rec(title, state, wage, unit="Year", status="CERTIFIED",
-             case="C-1", pw="100000"):
+    def _rec(title, state, wage, unit="Year", status="Certified",
+             case="C-1", pw="100000", ft="Y"):
         return {"caseNumber": case, "caseStatus": status,
                 "jobTitle": title, "worksiteState": state,
                 "wageFrom": str(wage), "wageUnit": unit,
                 "prevailingWage": pw, "pwUnit": "Year",
+                "fullTimePosition": ft,
                 "employerName": "NVIDIA CORPORATION",
                 "worksiteCity": "Santa Clara", "sourceFile": "FY2026_Q3"}
 
-    def _bands(self, tmp_path, recs):
+    def _pools(self, tmp_path, recs):
         out = tmp_path / "dump"
         board_dump._atomic_write_text(
             out.with_suffix(".h1b_lca.jsonl"),
             "\n".join(json.dumps(r) for r in recs) + "\n")
-        return board_dump._load_h1b_bands(out)
+        pools, recs_out = board_dump._load_h1b_bands(out)
+        return pools
 
-    def test_annualization_and_certified_filter(self):
-        assert board_dump._annualize_wage(
-            self._rec("T", "CA", 200000)) == 200000.0
-        assert board_dump._annualize_wage(
-            self._rec("T", "CA", 100, unit="Hour")) == 208000.0
-        assert board_dump._annualize_wage(
-            self._rec("T", "CA", 10000, unit="Month")) == 120000.0
-        assert board_dump._annualize_wage(
-            self._rec("T", "CA", 8000, unit="Bi-Weekly")) == 208000.0
-        # uncertified / denied filings never band a posting
-        assert board_dump._annualize_wage(
-            self._rec("T", "CA", 1, status="DENIED")) is None
-        assert board_dump._annualize_wage(
-            self._rec("T", "CA", 1, status="WITHDRAWN")) is None
-        # certified-withdrawn KEEPS its adjudicated wage
-        assert board_dump._annualize_wage(
-            self._rec("T", "CA", 150000,
-                      status="CERTIFIED-WITHDRAWN")) == 150000.0
-        # unparseable wage / unknown unit → None (never a fake band)
-        assert board_dump._annualize_wage(
-            self._rec("T", "CA", "n/a")) is None
-        assert board_dump._annualize_wage(
-            self._rec("T", "CA", 100, unit="Fortnight")) is None
+    def test_annualization_matrix_and_gates(self):
+        a = board_dump._annualize_wage
+        assert a(self._rec("T", "CA", 200000)) == 200000.0
+        assert a(self._rec("T", "CA", 100, unit="Hour")) == 208000.0
+        assert a(self._rec("T", "CA", 10000, unit="Month")) == 120000.0
+        # SPACED status dialect (live: "Certified - Withdrawn")
+        assert a(self._rec("T", "CA", 150000,
+                           status="Certified - Withdrawn")) == 150000.0
+        assert a(self._rec("T", "CA", 1, status="Denied")) is None
+        assert a(self._rec("T", "CA", 1, status="Withdrawn")) is None
+        # part-time filings never band
+        assert a(self._rec("T", "CA", 200000, ft="N")) is None
+        # WAGE POISON bound: DOL unit-corruption rows (136k/Hour ->
+        # $282.9M) are dropped, not averaged
+        assert a(self._rec("T", "CA", 136000, unit="Hour")) is None
+        assert a(self._rec("T", "CA", 211058, unit="Month")) is None
+        assert a(self._rec("T", "CA", "n/a")) is None
+        assert a(self._rec("T", "CA", 100, unit="Fortnight")) is None
+        # unbounded view keeps the arithmetic for the extract CSV
+        assert a(self._rec("T", "CA", 136000, unit="Hour"),
+                 bounded=False) == 282880000.0
 
-    def test_title_normalization_is_lexical_only(self):
-        n = board_dump._norm_join_title
-        assert n("Senior Software Engineer, AI") == \
-            n("senior software engineer ai")
-        assert n("Software Engineer") != n("Software Engineer 5"), \
-            "numeric levels must NOT collapse onto the base title"
+    def test_title_tokens_dialect_and_folding(self):
+        t = board_dump._title_tokens
+        # comma-form vs adjective-form share the set; plurals fold
+        assert t("Engineer, Senior Systems Software") == \
+            t("Senior System Software Engineer")
+        assert t("Hardware Engineer, Electronics") == \
+            t("Electronics Hardware Engineer")
+        # stopwords + L-codes stripped; NO stemming (load-bearing:
+        # engineering != engineer keeps managers out of SWE pools)
+        assert "of" not in t("Director of Software Engineering")
+        assert "l11" not in t("L11 System Product Development Engineer")
+        assert t("Engineering Manager") != t("Software Engineer") or \
+            "engineer" not in t("Engineering Manager")
 
-    def test_tight_tier_wins_over_title_fallback(self, tmp_path):
-        by_ts, by_t, recs = self._bands(tmp_path, [
-            self._rec("Senior Software Engineer", "CA", 220000,
-                      case="C-CA"),
-            self._rec("Senior Software Engineer", "TX", 180000,
-                      case="C-TX"),
+    def test_subset_tier_and_domain_over_level_ranking(self, tmp_path):
+        pools = self._pools(tmp_path, [
+            # generic SWE pool (many)
+            self._rec("Software Engineer", "CA", 200000, case="C-a1"),
+            self._rec("Software Engineer", "CA", 210000, case="C-a2"),
+            self._rec("Software Engineer", "CA", 220000, case="C-a3"),
+            self._rec("Software Engineer", "TX", 180000, case="C-a4"),
+            # senior-systems-software pool (the comma-form dialect)
+            self._rec("Engineer, Senior Systems Software", "CA", 230000,
+                      case="C-b1"),
+            self._rec("Engineer, Senior Systems Software", "CA", 240000,
+                      case="C-b2"),
+            self._rec("Engineer, Senior Systems Software", "CA", 250000,
+                      case="C-b3"),
         ])
-        out = {
-            **board_dump._derive_h1b_columns(
-                "Senior Software Engineer", "CA;TX", by_ts, by_t),
-        }
-        # primary state CA → the CA band only
+        # posting form of the SAME title -> token-exact (title tier)
+        out = board_dump._derive_h1b_columns(
+            "Senior System Software Engineer", "US, CA, Santa Clara",
+            pools)
         assert out["h1bMatchBasis"] == "title+state"
-        assert out["h1bFilings"] == 1
-        assert out["h1bWageP50"] == 220000
-        # no primary state → title-only pools both
+        assert out["h1bFilings"] == 3
+        assert out["h1bMatchTitle"] == "Engineer, Senior Systems Software"
+        # SPECIALIZED posting -> the 4-token subset pool (not the
+        # generic 2-token one): domain conditioning wins
         out2 = board_dump._derive_h1b_columns(
-            "Senior Software Engineer", "", by_ts, by_t)
-        assert out2["h1bMatchBasis"] == "title"
-        assert out2["h1bFilings"] == 2
-        assert out2["h1bWageP50"] == 200000   # median of 180k/220k
+            "Senior System Software Engineer - AV Platform",
+            "US, CA, Santa Clara", pools)
+        assert out2["h1bMatchBasis"] == "subset+state"
+        assert out2["h1bFilings"] == 3
+        # generic posting in TX: the TX state pool has n=1 (< 3) →
+        # falls to the all-state pool (basis "title", n=4)
+        out3 = board_dump._derive_h1b_columns(
+            "Software Engineer", "US, TX, Austin", pools)
+        assert out3["h1bMatchBasis"] == "title"
+        assert out3["h1bFilings"] == 4
+
+    def test_role_block_suppresses_occupation_changes(self, tmp_path):
+        pools = self._pools(tmp_path, [
+            self._rec("Software Engineer", "CA", 200000, case="C-1"),
+            self._rec("Software Engineer", "CA", 210000, case="C-2"),
+            self._rec("Software Engineer", "CA", 220000, case="C-3"),
+        ])
+        # QA / intern / test / marketing postings contain the SWE tokens
+        # but are DIFFERENT occupations — suppressed, honest ""
+        for title in ("Software Quality Assurance Engineer",
+                      "Software Development Engineer in Test",
+                      "Software Engineer Intern - Summer 2027",
+                      "Senior Software QA Engineer"):
+            out = board_dump._derive_h1b_columns(
+                title, "US, CA, Santa Clara", pools)
+            assert out["h1bMatchBasis"] == "", title
+
+    def test_engineering_manager_never_bands_as_engineer(self, tmp_path):
+        pools = self._pools(tmp_path, [
+            self._rec("Software Engineer", "CA", 200000, case="C-1"),
+            self._rec("Software Engineer", "CA", 210000, case="C-2"),
+            self._rec("Software Engineer", "CA", 220000, case="C-3"),
+        ])
+        out = board_dump._derive_h1b_columns(
+            "Engineering Manager, Deep Learning Inference",
+            "US, CA, Santa Clara", pools)
+        assert out["h1bMatchBasis"] == ""      # "engineering" not stemmed
+
+    def test_min_n_gate_and_stateless_rows(self, tmp_path):
+        pools = self._pools(tmp_path, [
+            self._rec("Research Scientist", "CA", 210000, case="C-1"),
+            self._rec("Research Scientist", "CA", 220000, case="C-2"),
+        ])
+        # all-state pool n=2 < 3 → no band
+        out = board_dump._derive_h1b_columns(
+            "Research Scientist", "US, Remote", pools)
+        assert out["h1bMatchBasis"] == ""
+        # remote/stateless primaryLocation → no state hop, all-state pool
+        pools2 = self._pools(tmp_path, [
+            self._rec("Research Scientist", "CA", 210000, case="C-1"),
+            self._rec("Research Scientist", "WA", 220000, case="C-2"),
+            self._rec("Research Scientist", "TX", 230000, case="C-3"),
+        ])
+        out2 = board_dump._derive_h1b_columns(
+            "Research Scientist", "US, Remote", pools2)
+        assert out2["h1bMatchBasis"] == "title"    # no +state, n=3 ok
+        assert out2["h1bFilings"] == 3
 
     def test_percentiles_interpolate(self):
         vals = sorted([100000.0, 120000.0, 140000.0, 200000.0])
@@ -474,38 +542,35 @@ class TestH1bWageBands:
         assert p(vals, 0.50) == 130000   # k=1.5  → 120k+20k×0.5
         assert p(vals, 0.75) == 155000   # k=2.25 → 140k+60k×0.25
 
-    def test_no_match_is_all_empty(self, tmp_path):
-        by_ts, by_t, _ = self._bands(tmp_path, [
-            self._rec("Architect", "CA", 250000)])
-        out = board_dump._derive_h1b_columns(
-            "Principal Distinguished Architect", "CA", by_ts, by_t)
-        assert out == {"h1bFilings": "", "h1bWageP25": "",
-                       "h1bWageP50": "", "h1bWageP75": "",
-                       "h1bMatchBasis": ""}
-
     def test_no_extract_file_is_all_empty(self, tmp_path):
-        by_ts, by_t, recs = board_dump._load_h1b_bands(tmp_path / "none")
-        assert by_ts == {} and by_t == {} and recs == []
+        pools, recs = board_dump._load_h1b_bands(tmp_path / "none")
+        assert pools == {} and recs == []
 
     def test_finish_emits_bands_and_linked_csv(self, tmp_path):
         out = tmp_path / "dump"
-        rows = [_list_row(req_id="JR1", title="Senior Software Engineer")]
+        rows = [_list_row(req_id="JR1", title="Senior System Software "
+                                               "Engineer")]
         board_dump._atomic_write_text(
             out.with_suffix(".list.jsonl"),
             "\n".join(json.dumps(r) for r in rows) + "\n")
         board_dump._atomic_write_text(
             out.with_suffix(".details.jsonl"),
             json.dumps({"reqId": "JR1", "info": _detail_info() | {
-                "title": "Senior Software Engineer"},
+                "title": "Senior System Software Engineer"},
                 "hiringOrg": "x", "similarJobsCount": 0}) + "\n")
-        recs = [self._rec("Senior Software Engineer", "CA", 220000,
-                          case="C-1"),
-                self._rec("senior software engineer", "CA", 240000,
-                          case="C-2", status="CERTIFIED-WITHDRAWN"),
-                self._rec("Senior Software Engineer", "TX", 180000,
-                          case="C-3"),
-                self._rec("Senior Software Engineer", "CA", 1,
-                          case="C-4", status="DENIED")]
+        recs = [
+            self._rec("Engineer, Senior Systems Software", "CA", 220000,
+                      case="C-1"),
+            self._rec("Senior Systems Software Engineer", "CA", 240000,
+                      case="C-2", status="Certified - Withdrawn"),
+            self._rec("Engineer, Senior Systems Software", "TX", 180000,
+                      case="C-3"),
+            self._rec("Engineer, Senior Systems Software", "CA", 136000,
+                      unit="Hour", case="C-4"),     # poison: dropped
+            self._rec("Software Engineer", "CA", 190000, case="C-5"),
+            self._rec("Software Engineer", "CA", 200000, case="C-6"),
+            self._rec("Software Engineer", "CA", 210000, case="C-7"),
+        ]
         board_dump._atomic_write_text(
             out.with_suffix(".h1b_lca.jsonl"),
             "\n".join(json.dumps(r) for r in recs) + "\n")
@@ -518,23 +583,24 @@ class TestH1bWageBands:
                   encoding="utf-8-sig") as f:
             csv_rows = list(csv.DictReader(f))
         r0 = csv_rows[0]
-        # detail location "US, CA, Santa Clara" → primary state CA →
-        # CA band = certified rows only (220k, 240k; DENIED excluded)
-        assert r0["h1bMatchBasis"] == "title+state"
-        assert r0["h1bFilings"] == "2"
-        assert r0["h1bWageP50"] == "230000"
-        # linked extract CSV carries ALL filings incl. denied
+        # token-exact tier (reorder-tolerant): the comma-form pool —
+        # CA filings C-1+C-2 = n=2 < 3 → the state hop is REJECTED by
+        # the min-n gate, falls to the all-state pool (C-1,C-2,C-3).
+        # Poison C-4 dropped everywhere (unit corruption).
+        assert r0["h1bMatchBasis"] == "title"
+        assert r0["h1bFilings"] == "3"
+        assert r0["h1bWageP50"] == "220000"
+        assert r0["h1bMatchTitle"] == "Engineer, Senior Systems Software"
+        # linked extract CSV carries ALL 7 filings; poison annualizes ""
         with open(out.with_suffix(".h1b_lca.csv"), newline="",
                   encoding="utf-8-sig") as f:
             h_rows = list(csv.DictReader(f))
-        assert len(h_rows) == 4
-        assert h_rows[0]["caseNumber"]           # column contract
+        assert len(h_rows) == 7
         ann = {r["caseNumber"]: r["annualizedWage"] for r in h_rows}
-        assert ann["C-4"] == ""                  # denied → no band
+        assert ann["C-4"] == ""
         assert ann["C-2"] == "240000"
         report = out.with_suffix(".report.txt").read_text()
-        assert "h1b wage bands: 1/1 rows banded (1 title+state, 0 title-only)" \
-            in report
+        assert "h1b wage bands: 1/1 rows banded" in report
 
 
 class TestH1bExtractor:

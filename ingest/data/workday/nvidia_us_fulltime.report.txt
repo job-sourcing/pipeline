@@ -10,3 +10,4 @@ facet census: 7 facets / 188 values (nvidia_us_fulltime.facets.json)
 facet-tagged rows: workerSubType=1483 jobFamilyGroup=1483 (from facet_tags.jsonl)
 facet tag coverage: 1410/1410 rows (0 untagged)
 questionnaire definitions: 4 id(s) covering 1410/1410 rows; 4 fetched (8 questions → nvidia_us_fulltime.questionnaires.csv)
+h1b wage bands: 734/1410 rows banded (28 title+state, 706 title-only) from 2347 LCA filings → nvidia_us_fulltime.h1b_lca.csv

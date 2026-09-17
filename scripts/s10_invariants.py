@@ -11,7 +11,7 @@ S11 added INV-7..INV-9 for the v2.5 quality round):
   INV-4  every no_match req has a terminal titlesearch line (never an
          unprobed no_match)
   INV-5  matchMethod census consistency (reqId + title + multiset = matched)
-  INV-6  CSV shape: 48 columns (v2.6), firstSeenDate/lastResetDate coverage
+  INV-6  CSV shape: 49 columns (v2.6), firstSeenDate/lastResetDate coverage
   INV-7  daysLeftToApply NEVER negative (elapsed floors ship "" — S11)
   INV-8  every non-empty questionnaireId has a linked questionnaires.csv
          row (join integrity — S11)
@@ -104,11 +104,11 @@ print(f"INV-4 unprobed no_match: {len(unprobed)}")
 assert not unprobed, f"INV-4 FAIL: {unprobed[:5]}"
 
 # INV-6: shape + coverage (v2.6: 48 columns — h1b bands appended)
-assert len(rows[0]) == 48, f"INV-6 FAIL: {len(rows[0])} columns"
+assert len(rows[0]) == 49, f"INV-6 FAIL: {len(rows[0])} columns"
 fsd = sum(1 for r in rows if (r.get("firstSeenDate") or "").strip())
 lrd = sum(1 for r in rows if (r.get("lastResetDate") or "").strip())
 ac = Counter(r.get("applicantCensored") for r in rows)
-print(f"INV-6 cols=48 firstSeenDate={fsd}/{len(rows)} "
+print(f"INV-6 cols=49 firstSeenDate={fsd}/{len(rows)} "
       f"lastResetDate={lrd} applicantCensored={dict(ac)}")
 assert fsd == len(rows), "INV-6 FAIL: firstSeenDate gaps"
 
@@ -150,15 +150,17 @@ assert not bad_cens, f"INV-9 FAIL: {bad_cens[:5]}"
 # filings/P25/P50/P75/basis; an unbanded row carries NONE (partial
 # bands = a broken join, e.g. a filled median with an empty basis)
 H1B_COLS = ("h1bFilings", "h1bWageP25", "h1bWageP50", "h1bWageP75",
-            "h1bMatchBasis")
+            "h1bMatchBasis", "h1bMatchTitle")
 bad_h1b = []
 for r in rows:
     filled = [c for c in H1B_COLS if (r.get(c) or "") != ""]
-    if 0 < len(filled) < 5:
+    if 0 < len(filled) < 6:
         bad_h1b.append((r["reqId"], filled))
     if r.get("h1bMatchBasis") and r["h1bMatchBasis"] not in (
-            "title+state", "title"):
+            "title+state", "title", "subset+state", "subset"):
         bad_h1b.append((r["reqId"], r["h1bMatchBasis"]))
+    if r.get("h1bMatchBasis") and not r.get("h1bMatchTitle"):
+        bad_h1b.append((r["reqId"], "banded-without-matchTitle"))
 n_banded = sum(1 for r in rows if r.get("h1bMatchBasis"))
 print(f"INV-10 h1b band integrity: {n_banded}/{len(rows)} banded, "
       f"{len(bad_h1b)} partial/invalid")

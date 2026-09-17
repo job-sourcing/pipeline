@@ -105,9 +105,12 @@ docs/csv-v2-spec.md for per-column semantics):
     45 h1bWageP25           (annualized OFFERED wage p25, USD)
     46 h1bWageP50           (…median)
     47 h1bWageP75           (…p75)
-    48 h1bMatchBasis        ("title+state" | "title" | "" — the join
-                            granularity; exact-normalized titles only,
-                            NO seniority/level guessing)
+    48 h1bMatchBasis        ("title+state" | "title" | "subset+state" |
+                            "subset" | "" — tier + granularity; see
+                            _derive_h1b_columns for the audited rules)
+    49 h1bMatchTitle        (the matched pool's most-frequent raw LCA
+                            title — the audit string for which LCA
+                            population produced the band)
 
 v2.5 REMOVED `reqYear` (was #9, "first 4 digits of the JR number — req
 age signal"): DISPROVEN by data (S11) — the prefix matches
@@ -248,8 +251,12 @@ CSV_COLUMNS = [
                              #    _PAY_FROM × unit multiplier) p25, USD
     "h1bWageP50",            # 46 …median
     "h1bWageP75",            # 47 …p75
-    "h1bMatchBasis",         # 48 "title+state" | "title" | "" — the join
-                             #    granularity that produced #44-#47
+    "h1bMatchBasis",         # 48 "title+state" | "title" | "subset+state"
+                             #    | "subset" | "" — tier (token-exact vs
+                             #    subset) + granularity (state pool vs all)
+    "h1bMatchTitle",         # 49 the matched pool's most-frequent raw LCA
+                             #    title — the audit string for WHICH
+                             #    population produced #44-#47
 ]
 
 # The board-watch's first observation date (2026-09-09 — the NVIDIA seed
@@ -1275,27 +1282,73 @@ H1B_CSV_COLUMNS = [
 # Certified + Certified-Withdrawn both reflect an adjudicated wage
 # offer (withdrawn-AFTER-certification keeps its certification);
 # Withdrawn/Denied rows keep in the extract but never band a posting.
-_H1B_CERTIFIED = {"CERTIFIED", "CERTIFIED-WITHDRAWN"}
+# Status strings arrive in BOTH dialects ("Certified-Withdrawn" and
+# "Certified - Withdrawn" — live-measured in the FY2025/26 files):
+# normalize by stripping spaces/dashes before the set test.
+_H1B_CERTIFIED = {"CERTIFIED", "CERTIFIEDWITHDRAWN"}
 _WAGE_ANNUAL_MULT = {
     "Year": 1, "Month": 12, "Bi-Weekly": 26, "Week": 52,
     "Day": 260, "Hour": 2080,
 }
+# Plausibility bound on the annualized offered wage: DOL rows exist
+# with unit-column corruption (live: "Software Engineer" wageFrom
+# 136,000 with unit Hour and pwUnit Year → $282.9M) — a filing whose
+# annualized wage falls outside a sane US-annual band is DROPPED from
+# the pools, never averaged into a percentile.
+_H1B_WAGE_MIN, _H1B_WAGE_MAX = 25_000, 1_000_000
+# Token vocabularies for the subset-tier ranking (design-audit S11):
+# level words are the dialect-unstable tokens (the LCA comma-form
+# reorders them) — domain conditioning must outrank level conditioning.
+_H1B_LEVEL_TOKENS = {"senior", "staff", "principal", "lead", "chief",
+                     "junior"}
+# Role words that, appearing in the posting OUTSIDE the matched pool,
+# change the occupation family (QA vs SWE, intern vs full-time,
+# marketing vs product) — such matches are SUPPRESSED (honest "",
+# never a misattributed band).
+_H1B_ROLE_BLOCK = {"qa", "quality", "test", "sdet", "verification",
+                   "validation", "intern", "coop", "college", "grad",
+                   "university", "mba", "marketing", "sales", "support"}
+_H1B_STOPWORDS = {"of", "and", "the", "for", "to", "in"}
+
+
+def _norm_case_status(s: str) -> str:
+    return re.sub(r"[\s\-]+", "", (s or "").upper())
 
 
 def _norm_join_title(t: str) -> str:
     """Title normalization for the LCA join: casefold, punctuation →
-    spaces, collapsed. Deliberately LEXICAL only — no seniority or
-    numeric-level mapping ("Software Engineer 5" vs "Senior Software
-    Engineer" is NVIDIA's internal ladder, not a public equivalence;
-    guessing it would fabricate wage attributions). Only exact-normalized
-    joins count; everything else is honest ""."""
+    spaces, collapsed. LEXICAL only — see _title_tokens for the join
+    key. NO stemming, ever: "engineering" ≠ "engineer" is LOAD-BEARING
+    (it is the only thing keeping "Engineering Manager" out of the
+    software-engineer pools — design-audit S11)."""
     return re.sub(r"[^a-z0-9#+]+", " ", (t or "").lower()).strip()
 
 
-def _annualize_wage(rec: dict) -> Optional[float]:
+def _title_tokens(t: str) -> frozenset:
+    """The join key: stop-word-free, level-code-free, plural-folded
+    token SET (order-free — the LCA comma-form "Engineer, Senior
+    Systems Software" and the posting form "Senior System Software
+    Engineer" share the same set; "systems"/"system" fold together)."""
+    s = re.sub(r"\bl\d+\b", " ", _norm_join_title(t))   # L11-style codes
+    out = []
+    for tok in s.split():
+        if tok in _H1B_STOPWORDS:
+            continue
+        if len(tok) > 3 and tok.endswith("s") and not tok.endswith("ss"):
+            tok = tok[:-1]
+        out.append(tok)
+    return frozenset(out)
+
+
+def _annualize_wage(rec: dict, *, bounded: bool = True) -> Optional[float]:
     """Annualized OFFERED wage (WAGE_RATE_OF_PAY_FROM × unit multiplier)
-    for a certified filing; None when uncertified or unparseable."""
-    if (rec.get("caseStatus") or "").upper() not in _H1B_CERTIFIED:
+    for a certified full-time filing; None when uncertified,
+    part-time, unparseable, or (bounded=True) implausible."""
+    if _norm_case_status(rec.get("caseStatus") or "") \
+            not in _H1B_CERTIFIED:
+        return None
+    if str(rec.get("fullTimePosition") or "").strip().upper() \
+            not in ("", "Y"):
         return None
     try:
         rate = float(str(rec.get("wageFrom") or "").replace(",", ""))
@@ -1305,21 +1358,27 @@ def _annualize_wage(rec: dict) -> Optional[float]:
         (str(rec.get("wageUnit") or "").strip().title()))
     if not mult:
         return None
-    return rate * mult
+    wage = rate * mult
+    if bounded and not (_H1B_WAGE_MIN <= wage <= _H1B_WAGE_MAX):
+        return None
+    return wage
 
 
-def _load_h1b_bands(out: Path) -> tuple[dict, dict, list[dict]]:
-    """(by_title_state, by_title, records) from {out}.h1b_lca.jsonl
-    (the GHA-produced quarterly extract — scripts/h1b_extract.py +
-    .github/workflows/h1b-extract.yml). Keys: normalized LCA job title
-    (+ worksite state for the tight tier). Wages annualized, certified
-    filings only; dedup by caseNumber is the extractor's job."""
-    by_ts: dict[tuple[str, str], list[float]] = {}
-    by_t: dict[str, list[float]] = {}
+def _load_h1b_bands(out: Path) -> tuple[dict, list[dict]]:
+    """(pools, records) from {out}.h1b_lca.jsonl (the GHA-produced
+    quarterly extract — scripts/h1b_extract.py +
+    .github/workflows/h1b-extract.yml).
+
+    pools: {token_set: {"states": {ST: [wages]}, "all": [wages],
+    "title": most-frequent raw LCA title}} over certified full-time
+    filings with a plausible annualized wage (|S| >= 2 only — 1-token
+    pools like a bare "Architect" are maximally generic and excluded).
+    records: every extract line (the linked-CSV view)."""
+    pools: dict[frozenset, dict] = {}
     recs: list[dict] = []
     path = out.with_suffix(".h1b_lca.jsonl")
     if not path.exists():
-        return by_ts, by_t, recs
+        return pools, recs
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if not line:
@@ -1332,13 +1391,21 @@ def _load_h1b_bands(out: Path) -> tuple[dict, dict, list[dict]]:
         wage = _annualize_wage(rec)
         if wage is None:
             continue
-        nt = _norm_join_title(str(rec.get("jobTitle") or ""))
+        toks = _title_tokens(str(rec.get("jobTitle") or ""))
+        if len(toks) < 2:
+            continue
+        pool = pools.setdefault(toks, {"states": {}, "all": [],
+                                       "titles": {}})
+        pool["all"].append(wage)
         st = str(rec.get("worksiteState") or "").strip().upper()
-        if nt:
-            by_t.setdefault(nt, []).append(wage)
-            if st:
-                by_ts.setdefault((nt, st), []).append(wage)
-    return by_ts, by_t, recs
+        if st:
+            pool["states"].setdefault(st, []).append(wage)
+        raw = str(rec.get("jobTitle") or "")
+        pool["titles"][raw] = pool["titles"].get(raw, 0) + 1
+    for pool in pools.values():
+        pool["title"] = max(sorted(pool["titles"]),
+                            key=pool["titles"].get)
+    return pools, recs
 
 
 def _wage_pct(sorted_vals: list[float], p: float) -> int:
@@ -1350,31 +1417,59 @@ def _wage_pct(sorted_vals: list[float], p: float) -> int:
                      + (sorted_vals[c] - sorted_vals[f]) * (k - f)))
 
 
-def _derive_h1b_columns(title: str, state_codes: str,
-                        by_ts: dict, by_t: dict) -> dict:
-    """The #44-#48 cells for one row: exact-normalized title join, tight
-    (title+primary-state) tier first, title-only fallback, honest ""
-    when neither. Multi-state rows join on the PRIMARY location's state
-    (first code — stateCodes is primary-first by construction)."""
-    nt = _norm_join_title(title)
-    if not nt or (not by_ts and not by_t):
-        return {"h1bFilings": "", "h1bWageP25": "", "h1bWageP50": "",
-                "h1bWageP75": "", "h1bMatchBasis": ""}
+_H1B_EMPTY = {"h1bFilings": "", "h1bWageP25": "", "h1bWageP50": "",
+              "h1bWageP75": "", "h1bMatchBasis": "", "h1bMatchTitle": ""}
+
+
+def _derive_h1b_columns(title: str, primary_location: str,
+                        pools: dict) -> dict:
+    """The #44-#49 cells for one row (design-audit-refined S11):
+
+    - candidates = token-sets S (|S|>=2) with S ⊆ posting-tokens P;
+      SUPPRESSED when (P − S) contains a role-block word (QA/test/
+      intern/marketing/… — an occupation change, not a specialization).
+    - best = max by (|S − level-tokens|, |S|, all-state filings,
+      lexicographic) — DOMAIN conditioning outranks LEVEL conditioning
+      (level words are the dialect-unstable tokens); state-INdependent
+      so identical titles in different states share a pool family.
+    - state hop: (best, primaryState) pool when n >= 3, else the
+      all-state pool; primaryState parsed from primaryLocation
+      ("US, TX, Austin"), NEVER stateCodes[0] (non-canonical order
+      live-measured). Absent/Remote → skip the hop.
+    - final gate: n >= 3 or all-"" (a 1-filing pool is one wage, not a
+      band). Bands are all-or-none per row (INV-10).
+    - h1bMatchBasis: "title+state"/"title" iff S == P (token-exact,
+      reorder/plural-tolerant); else "subset+state"/"subset" (the
+      posting is title-consistent with and more specialized than the
+      pool — the band is the POOL's distribution, level-mixed).
+    - h1bMatchTitle: the pool's most frequent raw LCA title — the
+      audit string for which population produced the band."""
+    p_toks = _title_tokens(title)
+    if not p_toks or not pools:
+        return dict(_H1B_EMPTY)
+    cands = [s for s in pools
+             if len(s) >= 2 and s <= p_toks
+             and not ((p_toks - s) & _H1B_ROLE_BLOCK)]
+    if not cands:
+        return dict(_H1B_EMPTY)
+    best = max(cands, key=lambda s: (
+        len(s - _H1B_LEVEL_TOKENS), len(s),
+        len(pools[s]["all"]), " ".join(sorted(s))))
+    tier = "title" if best == p_toks else "subset"
+    m = _STATE_RE.match((primary_location or "").strip())
+    primary_state = m.group(1) if m else ""
     wages: Optional[list[float]] = None
     basis = ""
-    primary_state = (state_codes.split(";")[0].strip()
-                     if state_codes else "")
     if primary_state:
-        cand = by_ts.get((nt, primary_state))
-        if cand:
-            wages, basis = cand, "title+state"
+        sp = pools[best]["states"].get(primary_state)
+        if sp and len(sp) >= 3:
+            wages, basis = sp, tier + "+state"
     if wages is None:
-        cand = by_t.get(nt)
-        if cand:
-            wages, basis = cand, "title"
+        ap = pools[best]["all"]
+        if len(ap) >= 3:
+            wages, basis = ap, tier
     if not wages:
-        return {"h1bFilings": "", "h1bWageP25": "", "h1bWageP50": "",
-                "h1bWageP75": "", "h1bMatchBasis": ""}
+        return dict(_H1B_EMPTY)
     vals = sorted(wages)
     return {
         "h1bFilings": len(vals),
@@ -1382,6 +1477,7 @@ def _derive_h1b_columns(title: str, state_codes: str,
         "h1bWageP50": _wage_pct(vals, 0.50),
         "h1bWageP75": _wage_pct(vals, 0.75),
         "h1bMatchBasis": basis,
+        "h1bMatchTitle": pools[best]["title"],
     }
 
 
@@ -1583,11 +1679,10 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
             sig.get("num_applicants"),
             sig.get("applicants_label") or "") else
         "false" if sig else "")
-    # ── v2.6 columns (#44-#48) — DOL H-1B/LCA wage bands ────────────
+    # ── v2.6 columns (#44-#49) — DOL H-1B/LCA wage bands ────────────
     row.update(_derive_h1b_columns(
-        info.get("title") or r.get("title") or "",
-        _state_codes(locations),
-        *(h1b_bands or ({}, {}))))
+        info.get("title") or r.get("title") or "", primary,
+        h1b_bands or {}))
     return row
 
 
@@ -1740,9 +1835,9 @@ def phase_finish(args, out: Path) -> int:
     detail_qids = set(_detail_questionnaire_ids(details))
     missing_q = sorted(detail_qids - set(q_map))
     # H-1B/LCA wage bands (OPTIONAL extract — S11): the GHA-produced
-    # quarterly extract joined per (normalized title, state) into
-    # #44-#48 + the linked h1b_lca.csv.
-    h1b_ts, h1b_t, h1b_recs = _load_h1b_bands(out)
+    # quarterly extract joined per token-set into #44-#49 + the linked
+    # h1b_lca.csv.
+    h1b_pools, h1b_recs = _load_h1b_bands(out)
     matched_rows = 0
     csv_rows: list[dict] = []
     enriched_rows: list[dict] = []
@@ -1799,7 +1894,7 @@ def phase_finish(args, out: Path) -> int:
             dump_date, fs_map.get(r["reqId"]) or dump_date,
             facet_tags=facet_tags, snapshot_date=dump_date,
             last_reset=rs_map.get(r["reqId"], ""),
-            h1b_bands=(h1b_ts, h1b_t))
+            h1b_bands=h1b_pools)
         csv_rows.append(row)
         enriched = dict(r)
         enriched["detail"] = det.get("info") or None
@@ -1885,7 +1980,10 @@ def phase_finish(args, out: Path) -> int:
                 q_rows += 1
 
     # linked H-1B/LCA extract CSV (S11): one row per NVIDIA filing —
-    # the raw evidence behind #44-#48 (analysts can reband freely).
+    # the raw evidence behind #44-#49 (analysts can reband freely).
+    # annualizedWage uses the BOUNDED annualization: DOL unit-corruption
+    # rows (e.g. wageFrom 136,000 Hour → $282.9M) ship "" rather than a
+    # poison value; wageFrom/wageUnit preserve the raw source truth.
     h1b_csv_path = out.with_suffix(".h1b_lca.csv")
     if h1b_recs:
         with open(h1b_csv_path, "w", newline="",

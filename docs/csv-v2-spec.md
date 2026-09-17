@@ -19,10 +19,10 @@
 > | v2.3 | 43 | 2026-09-15 | S9 timing floor: #42 `earliestEvidenceDate`, #43 `crossSourceRepostEvidence` |
 > | v2.4 | 44 | 2026-09-16 | LANDED (9ed96cb + full regen 4d33981): composed-join regen — matched 1,095→1,050 (77.9%→74.7% honest); #44 `applicantCensored`; `firstSeenDate` from watch; `lastResetDate` filled; snapshot-frozen `postingAgeDays`; uniform lowercase booleans — §5 |
 > | v2.5 | 43 | 2026-09-17 | LANDED (S11 quality round, user review): `reqYear` REMOVED (JR-number prefix ≠ a calendar signal — 0.1% year match); `questionnaire` → `questionnaireId` (join key into the NEW linked `questionnaires.csv`); `daysLeftToApply` never negative (elapsed "at least until" floors ship "" = extended/unknown); `censored=true` on measured repost resets (firstSeenDate < startDate) — §6 |
-> | v2.6 | 48 | 2026-09-17 | LANDED (S11, design S8-F-3): #44-#48 DOL H-1B/LCA wage bands — `h1bFilings` / `h1bWageP25` / `h1bWageP50` / `h1bWageP75` / `h1bMatchBasis` (certified NVIDIA filings, annualized offered wage, exact-normalized title join) + linked `h1b_lca.csv` — §7 |
+> | v2.6 | 49 | 2026-09-17 | LANDED (S11, design S8-F-3): #44-#49 DOL H-1B/LCA wage bands — `h1bFilings` / `h1bWageP25` / `h1bWageP50` / `h1bWageP75` / `h1bMatchBasis` / `h1bMatchTitle` (certified NVIDIA filings, annualized offered wage, exact-normalized title join) + linked `h1b_lca.csv` — §7 |
 >
 > **Snapshot note (2026-09-17, post-regen):** the on-disk deliverable is
-> v2.6 (1,410 × 48, dumpDate 2026-09-17) — the v2.5 quality-round
+> v2.6 (1,410 × 49, dumpDate 2026-09-17) — the v2.5 quality-round
 > semantics plus the H-1B wage-band columns (bands populate once the
 > GHA extract lands); same join as v2.4/v2.5 (matched 1,050 / 74.5%);
 > all TEN invariants green (`scripts/s10_invariants.py` — INV-7..INV-10
@@ -36,7 +36,7 @@
 > recompute (`audit/s9-audit/H4-csv-v24-verify.md` — 0 cell diffs, all
 > join invariants green). Every live count below is THIS snapshot's.
 
-## 1. The 48 columns (v2.6 numbering)
+## 1. The 49 columns (v2.6 numbering)
 
 Phase of origin: **L** = list · **D** = details · **S** = signals
 (corroborate) · **T** = tagfacets · **F** = derived at finish.
@@ -86,11 +86,12 @@ Phase of origin: **L** = list · **D** = details · **S** = signals
 | 41 | `earliestEvidenceDate` | F | min(startDate, linkedinPostedDate) — the honest cross-source age floor (§4) |
 | 42 | `crossSourceRepostEvidence` | F | "" \| `reqId` \| `title` — the LI card PREDATES startDate ⇒ on-market-before evidence (§4) |
 | 43 | `applicantCensored` | F | `true` \| `false` \| "" — #23 is a BUCKET when `true` (floor 25 / cap 200; see §3); recomputed at finish from (num, label), NOT the stored signal flag. Live v2.5: 484 `true` / 926 `false` |
-| 44 | `h1bFilings` | F | DOL H-1B/LCA certified NVIDIA filings backing #45-#47 (deduped by case number; CERTIFIED + CERTIFIED-WITHDRAWN only — Withdrawn/Denied stay in the linked extract but never band a posting) |
-| 45 | `h1bWageP25` | F | annualized OFFERED wage p25, USD (WAGE_RATE_OF_PAY_FROM × unit multiplier: Year 1 / Month 12 / Bi-Weekly 26 / Week 52 / Day 260 / Hour 2080) |
+| 44 | `h1bFilings` | F | DOL H-1B/LCA certified NVIDIA filings backing #45-#47 (deduped by case number; certified both dialects + full-time + plausible-wage only; pool n ≥ 3 or "") |
+| 45 | `h1bWageP25` | F | annualized OFFERED wage p25, USD (WAGE_RATE_OF_PAY_FROM × unit multiplier: Year 1 / Month 12 / Bi-Weekly 26 / Week 52 / Day 260 / Hour 2080; bounded $25k–$1M — DOL unit-corruption rows dropped) |
 | 46 | `h1bWageP50` | F | …median |
 | 47 | `h1bWageP75` | F | …p75 |
-| 48 | `h1bMatchBasis` | F | `title+state` \| `title` \| "" — the join granularity: EXACT-normalized-title match against the LCA `JOB_TITLE`, tight (title + primary state from #13's first code) tier first, title-only fallback. Deliberately lexical — no seniority/numeric-level mapping ("Software Engineer 5" is NVIDIA's internal ladder, not a public equivalence) |
+| 48 | `h1bMatchBasis` | F | `title+state` \| `title` \| `subset+state` \| `subset` \| "" — tier (token-exact vs subset: the posting contains every pool token, possibly more specialized) + granularity (state pool n≥3 vs all-state) — see §7 for the audited rules |
+| 49 | `h1bMatchTitle` | F | the matched pool's most-frequent raw LCA title (e.g. "Engineer, Senior Systems Software") — the audit string for WHICH population produced the band |
 
 Snapshot note: `postingAgeDays`/`daysOnMarket`/`daysLeftToApply` all
 reference ONE `snapshot_date` (today at finish, shared by all rows;
@@ -239,11 +240,29 @@ Public government data (no auth, no ToS issue) joined per posting:
    the canonical path → soft-skip). The mirror sync back-syncs
    `*.h1b_lca.jsonl` org → archive (the archive→mirror rsync --delete
    would otherwise wipe it).
-2. **The join** (#44-#48): certified filings only; annualized offered
-   wage; EXACT-normalized title match with a tight title+primary-state
-   tier and a title-only fallback; honest "" when neither (the bands
-   are all-or-none per row — INV-10). Multi-state rows join on the
-   primary location's state.
+2. **The join** (#44-#49, AUDITED semantics — a fresh-context design
+   review round caught four live misattribution classes and a data
+   bug before shipping): filings filtered to certified (BOTH status
+   dialects "Certified-Withdrawn"/"Certified - Withdrawn"), full-time,
+   and a PLAUSIBLE annualized wage ($25k–$1M — the DOL files contain
+   unit-corruption poison: "Software Engineer" 136,000/Hour → $282.9M;
+   dropped, never averaged). Join key: the stop-word-free, plural-
+   folded, level-code-free token SET (the LCA comma-form "Engineer,
+   Senior Systems Software" and the posting form "Senior System
+   Software Engineer" share a set). NO stemming, ever —
+   "engineering" ≠ "engineer" is load-bearing (it keeps Engineering
+   Managers out of SWE pools). Candidates = token-sets S ⊆ posting
+   tokens, |S|≥2, SUPPRESSED when the posting adds a role-block word
+   (QA/test/intern/college/marketing/sales/support… — an occupation
+   change, not a specialization). best = max by (|S − level tokens|,
+   |S|, filings): DOMAIN conditioning outranks LEVEL conditioning.
+   State hop on the (best, primaryState) pool when n≥3 (state from
+   primaryLocation — stateCodes order is non-canonical, live-measured);
+   final gate n≥3 or honest "". Basis: "title+state"/"title" iff S == P
+   (token-exact); "subset+state"/"subset" when the posting is more
+   specialized (the band is the POOL's distribution, level-mixed —
+   h1bMatchTitle names the population). Live: 734/1,410 rows banded
+   (28 title+state / 706 subset-family).
 3. **The linked view** (`{out}.h1b_lca.csv`): one row per filing
    (incl. uncertified ones) + a derived `annualizedWage` column — the
    raw evidence behind the bands, free for re-banding.
