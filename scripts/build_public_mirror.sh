@@ -39,6 +39,20 @@ rsync -a --delete "$DEST/ingest/data/board_watch/" "$SRC/ingest/data/board_watch
 (cd "$SRC" && git add ingest/data/board_watch 2>/dev/null && \
   git diff --cached --quiet || git commit -q -m "watch state back-sync from org runtime")
 
+echo "== back-sync GHA-produced H-1B LCA extracts into the private archive =="
+# The h1b-extract workflow commits {label}.h1b_lca.jsonl on the ORG repo
+# (US egress downloads the DOL xlsx; the HK sandbox + Netlify are
+# Akamai-blocked, the supabase proxy truncates at ~10.5MB). Pull ONLY
+# the extract files back — the rest of ingest/data/workday flows
+# archive → mirror (the rsync --delete below would otherwise WIPE the
+# extract from the mirror since the archive doesn't have it yet).
+mkdir -p "$SRC/ingest/data/workday"
+if ls "$DEST"/ingest/data/workday/*.h1b_lca.jsonl >/dev/null 2>&1; then
+  rsync -a "$DEST"/ingest/data/workday/*.h1b_lca.jsonl "$SRC/ingest/data/workday/"
+  (cd "$SRC" && git add ingest/data/workday/*.h1b_lca.jsonl && \
+    git diff --cached --quiet || git commit -q -m "h1b extract back-sync from org runtime")
+fi
+
 echo "== pre-rsync cleanup (leaked untracked files; rsync --delete cannot remove excluded dest paths) =="
 rm -f "$DEST/ingest/.coverage"
 

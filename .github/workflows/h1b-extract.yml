@@ -1,0 +1,103 @@
+name: H-1B LCA extract
+
+# Quarterly DOL H-1B / LCA extract (S11, design S8-F-3): downloads the
+# quarterly LCA disclosure xlsx files from dol.gov and commits the
+# NVIDIA-only extract ({label}.h1b_lca.jsonl) that board_dump's finish
+# phase joins into the CSV wage-band columns (v2.6).
+#
+# WHY THIS RUNS HERE (egress matrix, measured 2026-09-17):
+#   HK sandbox direct → 403 Akamai geo-block
+#   Netlify US function → 403 Akamai (fetch engine, plain GET too)
+#   Supabase Deno proxy → 200 but TRUNCATED at ~10.5MB (the files are
+#     larger; a 200-with-truncated-body trap)
+#   GHA runner (Azure US) → the one egress expected to serve the full
+#     files — this workflow IS the transport.
+#
+# Cadence: workflow_dispatch ONLY (the LCA files publish quarterly;
+# no cron to burn minutes). Free unlimited minutes on this public repo.
+# The extract is the checkpoint (case-number-deduped, append-only) —
+# re-dispatching with the same quarters is a no-op.
+
+on:
+  workflow_dispatch:
+    inputs:
+      quarters:
+        description: "FYxxxx_Qn comma list (empty = use recent)"
+        default: ""
+      recent:
+        description: "N most recently published quarters"
+        default: "6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: h1b-extract
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Materialize ingest/.env from secret
+        # Needed for SUPABASE_PROXY_* (the quarter-listing path + the
+        # last-resort transport). The public repo never commits it.
+        env:
+          INGEST_ENV: ${{ secrets.INGEST_ENV }}
+        run: |
+          if [ -n "$INGEST_ENV" ]; then
+            printf '%s\n' "$INGEST_ENV" > ingest/.env
+            echo "ingest/.env materialized ($(wc -l < ingest/.env) lines)"
+          else
+            echo "::warning::INGEST_ENV secret not set — supabase fallback unavailable (direct/impersonate still work)"
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps (extractor only — no pipeline install)
+        run: pip install requests openpyxl curl_cffi
+
+      - name: Extract NVIDIA LCA rows
+        run: |
+          if [ -n "${{ inputs.quarters }}" ]; then
+            python3 scripts/h1b_extract.py --quarters "${{ inputs.quarters }}" --transport auto
+          else
+            python3 scripts/h1b_extract.py --recent "${{ inputs.recent }}" --transport auto
+          fi
+
+      - name: Checkpoint extract to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/extract_state
+          cp ingest/data/workday/*.h1b_lca.jsonl /tmp/extract_state/ 2>/dev/null || true
+          git config user.name "h1b-extract-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            cp /tmp/extract_state/*.h1b_lca.jsonl ingest/data/workday/ 2>/dev/null || true
+            git add ingest/data/workday
+            if git diff --cached --quiet; then
+              echo "no extract change to commit"
+              push_ok=1
+              break
+            fi
+            ROWS=$(python3 -c "import pathlib; print(sum(1 for p in pathlib.Path('ingest/data/workday').glob('*.h1b_lca.jsonl') for l in p.read_text(encoding='utf-8').splitlines() if l.strip().startswith('{')))" 2>/dev/null || echo 0)
+            git commit -m "h1b-lca extract checkpoint: ${ROWS} NVIDIA rows total [skip ci]"
+            if git push; then push_ok=1; break; fi
+            echo "push attempt $i failed — refetching and retrying"
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::push failed after 3 attempts — extract rescued in /tmp; re-dispatch"
+            exit 1
+          fi

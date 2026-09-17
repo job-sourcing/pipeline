@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""S10 invariant validation over the regenerated NVIDIA CSV v2.4.
+"""S10/S11 invariant validation over the regenerated NVIDIA CSV.
 
-Read-only checks (the S9 P0-fix proofs, re-run on the 09-17 data):
+Read-only checks (the S9 P0-fix proofs, re-run per regen;
+S11 added INV-7..INV-9 for the v2.5 quality round):
   INV-1  no duplicate linkedinUrl among matched rows (1:1 card service)
   INV-2  no title-tier row carries a job_req_id belonging to a DIFFERENT
          on-board requisition (foreign-reqId guard)
@@ -10,7 +11,14 @@ Read-only checks (the S9 P0-fix proofs, re-run on the 09-17 data):
   INV-4  every no_match req has a terminal titlesearch line (never an
          unprobed no_match)
   INV-5  matchMethod census consistency (reqId + title + multiset = matched)
-  INV-6  CSV shape: 44 columns, firstSeenDate/lastResetDate coverage
+  INV-6  CSV shape: 48 columns (v2.6), firstSeenDate/lastResetDate coverage
+  INV-7  daysLeftToApply NEVER negative (elapsed floors ship "" — S11)
+  INV-8  every non-empty questionnaireId has a linked questionnaires.csv
+         row (join integrity — S11)
+  INV-9  censored consistency: firstSeenDate < startDate ⇒ censored=true
+         (measured repost resets — S11)
+  INV-10 h1b wage-band integrity: banded rows carry all 4 stats + a
+         basis; unbanded rows carry NONE (all-empty, never partial)
 """
 import csv
 import json
@@ -95,13 +103,65 @@ unprobed = [r["reqId"] for r in no_match if r["reqId"] not in ts]
 print(f"INV-4 unprobed no_match: {len(unprobed)}")
 assert not unprobed, f"INV-4 FAIL: {unprobed[:5]}"
 
-# INV-6: shape + coverage
-assert len(rows[0]) == 44, f"INV-6 FAIL: {len(rows[0])} columns"
+# INV-6: shape + coverage (v2.6: 48 columns — h1b bands appended)
+assert len(rows[0]) == 48, f"INV-6 FAIL: {len(rows[0])} columns"
 fsd = sum(1 for r in rows if (r.get("firstSeenDate") or "").strip())
 lrd = sum(1 for r in rows if (r.get("lastResetDate") or "").strip())
 ac = Counter(r.get("applicantCensored") for r in rows)
-print(f"INV-6 cols=44 firstSeenDate={fsd}/{len(rows)} "
+print(f"INV-6 cols=48 firstSeenDate={fsd}/{len(rows)} "
       f"lastResetDate={lrd} applicantCensored={dict(ac)}")
 assert fsd == len(rows), "INV-6 FAIL: firstSeenDate gaps"
+
+# INV-7 (S11): daysLeftToApply never negative — an elapsed "at least
+# until" floor on a live posting means the window auto-extended;
+# days-left ships UNKNOWN (""), never a misleading "closed N days ago"
+neg = [r["reqId"] for r in rows
+       if r.get("daysLeftToApply", "") not in ("",)
+       and (r["daysLeftToApply"].lstrip("-").isdigit()
+            and int(r["daysLeftToApply"]) < 0)]
+print(f"INV-7 negative daysLeftToApply: {len(neg)}")
+assert not neg, f"INV-7 FAIL: {neg[:5]}"
+
+# INV-8 (S11): join integrity — every non-empty questionnaireId in the
+# main CSV has at least one row in the linked questionnaires.csv
+qcsv = D / f"{LABEL}.questionnaires.csv"
+assert qcsv.exists(), "INV-8 FAIL: questionnaires.csv missing"
+qrows = list(csv.DictReader(
+    qcsv.read_text(encoding="utf-8-sig").splitlines()))
+linked_ids = {q["questionnaireId"] for q in qrows}
+csv_ids = {r["questionnaireId"] for r in rows if r["questionnaireId"]}
+unlinked = sorted(csv_ids - linked_ids)
+print(f"INV-8 questionnaire join: {len(csv_ids)} id(s) in CSV, "
+      f"{len(linked_ids)} defined ({len(qrows)} questions); "
+      f"unlinked={unlinked}")
+assert not unlinked, f"INV-8 FAIL: ids without definitions: {unlinked[:5]}"
+
+# INV-9 (S11): measured resets censor the age — firstSeenDate before
+# startDate is impossible without a repost reset
+bad_cens = [r["reqId"] for r in rows
+            if (r.get("firstSeenDate") or "")[:10]
+            < (r.get("startDate") or "")[:10]
+            and r.get("censored") != "true"
+            and r.get("startDate")]
+print(f"INV-9 reset-evidence rows not censored: {len(bad_cens)}")
+assert not bad_cens, f"INV-9 FAIL: {bad_cens[:5]}"
+
+# INV-10 (S11/v2.6): h1b band integrity — a banded row carries ALL of
+# filings/P25/P50/P75/basis; an unbanded row carries NONE (partial
+# bands = a broken join, e.g. a filled median with an empty basis)
+H1B_COLS = ("h1bFilings", "h1bWageP25", "h1bWageP50", "h1bWageP75",
+            "h1bMatchBasis")
+bad_h1b = []
+for r in rows:
+    filled = [c for c in H1B_COLS if (r.get(c) or "") != ""]
+    if 0 < len(filled) < 5:
+        bad_h1b.append((r["reqId"], filled))
+    if r.get("h1bMatchBasis") and r["h1bMatchBasis"] not in (
+            "title+state", "title"):
+        bad_h1b.append((r["reqId"], r["h1bMatchBasis"]))
+n_banded = sum(1 for r in rows if r.get("h1bMatchBasis"))
+print(f"INV-10 h1b band integrity: {n_banded}/{len(rows)} banded, "
+      f"{len(bad_h1b)} partial/invalid")
+assert not bad_h1b, f"INV-10 FAIL: {bad_h1b[:5]}"
 
 print("\nALL INVARIANTS GREEN")

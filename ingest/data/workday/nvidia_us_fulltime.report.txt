@@ -9,3 +9,4 @@ similar-job edges: 6880
 facet census: 7 facets / 188 values (nvidia_us_fulltime.facets.json)
 facet-tagged rows: workerSubType=1483 jobFamilyGroup=1483 (from facet_tags.jsonl)
 facet tag coverage: 1410/1410 rows (0 untagged)
+questionnaire definitions: 4 id(s) covering 1410/1410 rows; 4 fetched (8 questions → nvidia_us_fulltime.questionnaires.csv)

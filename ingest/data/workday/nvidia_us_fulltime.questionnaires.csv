@@ -1,0 +1,9 @@
+﻿questionnaireId,instructions,questionId,order,question,required,type,answers
+028095df097b1001ac9358c586600000,,028095df097b1001ac93595f70b80000,a,Are you legally authorized to work in the United States?,true,Multiple Choice - Single Select,Yes; No
+028095df097b1001ac9358c586600000,,028095df097b1001ac9359f942cf0000,b,Will you now or in the future require sponsorship for employment visa status (e.g. H-1B visa status)?,true,Multiple Choice - Single Select,Yes; No
+2f2764b3a82910064296831695150000,Responses to these questions will be used to assess whether NVIDIA immigration support is required.,2f2764b3a829100642af25b88deb0000,a,Are you legally authorized to work in the country where this position is located?,true,Multiple Choice - Single Select,Yes; No
+2f2764b3a82910064296831695150000,Responses to these questions will be used to assess whether NVIDIA immigration support is required.,2f2764b3a829100642af26ec534f0000,b,Will you require employer support to obtain or maintain authorization to work in that country? e.g. (work permit),true,Multiple Choice - Single Select,Yes; No
+3403860341171001f57d5c603f290000,,3403860341171001f57d5c603f290001,a,Are you legally authorized to work in the United States?,false,Multiple Choice - Single Select,Yes; No
+3403860341171001f57d5c603f290000,,3403860341171001f57d5cf9af3d0001,b,Will you now or in the future require sponsorship for employment visa status (e.g. H-1B visa status)?,false,Multiple Choice - Single Select,Yes; No
+ab40a98049581037a3680ec60ea54842,,ab40a98049581037a3680f41483e4843,a,Are you legally authorized to work in the United States?,false,Multiple Choice - Single Select,Yes; No
+ab40a98049581037a3680ec60ea54842,,ab40a98049581037a3680f4ef60f4844,b,Will you now or in the future require sponsorship for employment visa status (e.g. H-1B visa status)?,false,Multiple Choice - Multi Select,Yes; No

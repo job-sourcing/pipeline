@@ -5,7 +5,12 @@ Covers the CSV v2 contract (design-board-v2.md D1 + review addenda):
 - location enumeration (0A): never "N Locations", primary + additional
   merged, nLocations correct, stateCodes derived, remoteFlag
 - description rendering (0B): clean text, descriptionLength
-- metadata (0C): postingAgeDays, reqYear, hiringOrg, questionnaire
+- metadata (0C): postingAgeDays, hiringOrg, questionnaireId (S11:
+  the join key into the linked questionnaires.csv — was a bare boolean)
+- v2.5 quality round (S11): reqYear REMOVED (JR-number prefix ≠ a
+  calendar signal — 0.1% year match); daysLeftToApply blank when the
+  "at least until" floor elapsed on a live posting (never negative);
+  censored=true on measured repost resets (firstSeenDate < startDate)
 - signals (0D): matched / not_checked defaults, dateDeltaDays, matchMethod
 - B1 guard: list status records completeness verdict
 - CSV round-trip: newline-in-cell + utf-8-sig BOM (Excel-safe)
@@ -56,7 +61,7 @@ _TODAY_ISO = _TODAY.isoformat()
 _YESTERDAY = (_TODAY - _dt.timedelta(days=1)).isoformat()
 
 
-def _detail_info(startDate=None, addl=None, desc="<p><b>What you'll do:</b></p><ul><li>Build GPU infrastructure.</li></ul>"):
+def _detail_info(startDate=None, addl=None, desc="<p><b>What you'll do:</b></p><ul><li>Build GPU infrastructure.</li></ul>", questionnaireId="abc123"):
     if startDate is None:
         startDate = _YESTERDAY
     return {
@@ -68,7 +73,7 @@ def _detail_info(startDate=None, addl=None, desc="<p><b>What you'll do:</b></p><
         "jobDescription": desc,
         "externalUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Engineer_JR2026001",
         "jobReqId": "JR2026001",
-        "questionnaireId": "abc123",
+        "questionnaireId": questionnaireId,
         "country": {"descriptor": "United States of America"},
         "id": "d9e6924a46c5",
         "postedOn": "Posted Today",
@@ -101,7 +106,7 @@ class TestDeriveCsvRow:
     def test_column_contract(self):
         row = self._row()
         assert set(row) == set(board_dump.CSV_COLUMNS)
-        assert len(board_dump.CSV_COLUMNS) == 44   # v2.4: +1 (S9-audit)
+        assert len(board_dump.CSV_COLUMNS) == 48   # v2.6: +5 h1b (S11)
 
     def test_locations_enumerated_not_truncated(self):
         row = self._row(det={"info": _detail_info(addl=[
@@ -133,19 +138,28 @@ class TestDeriveCsvRow:
     def test_metadata_fields(self):
         row = self._row()
         assert row["postingAgeDays"] == 1          # today − yesterday (dynamic)
-        assert row["reqYear"] == "2026"
         assert row["hiringOrg"] == "2100 NVIDIA USA"
-        assert row["questionnaire"] == "true"
+        # S11/v2.5: the join key into questionnaires.csv (was "true")
+        assert row["questionnaireId"] == "abc123"
         assert row["similarJobsCount"] == 5
         assert row["country"] == "United States of America"
 
-    def test_req_year_from_old_prefix(self):
-        r = _list_row(req_id="JR2022034")
+    def test_questionnaire_id_absent_without_detail(self):
+        """No detail record ⇒ no questionnaireId (empty, never a stale
+        boolean) — same UNKNOWN-not-absent convention as the other
+        detail-derived columns."""
         row = board_dump._derive_csv_row(
-            r, {"info": _detail_info(), "hiringOrg": "x",
-                "similarJobsCount": 0}, None, "NVIDIA", "2026-09-09",
-            "2026-09-09")
-        assert row["reqYear"] == "2022"
+            _list_row(), {}, None, "NVIDIA", "2026-09-09", "2026-09-09")
+        assert row["questionnaireId"] == ""
+
+    def test_req_year_removed_from_contract(self):
+        """S11: reqYear shipped 1966..2026 for an all-2026 board — the
+        JR-number prefix is an ID-space artifact (0.1% startDate.year
+        match), not a calendar signal. The column is GONE; this pin
+        keeps it gone."""
+        assert "reqYear" not in board_dump.CSV_COLUMNS
+        row = self._row()
+        assert "reqYear" not in row
 
     def test_no_detail_falls_back_to_list_fields(self):
         row = board_dump._derive_csv_row(
@@ -179,6 +193,419 @@ class TestDeriveCsvRow:
         assert row["corroborationStatus"] == "not_checked"
         assert row["numApplicants"] == ""
         assert row["linkedinUrl"] == ""
+
+    def test_days_left_blank_when_floor_elapsed(self):
+        """S11/v2.5: the parsed sentence is 'accepted AT LEAST until' —
+        a floor that auto-extends. A floor already elapsed on a LIVE
+        posting means the window extended: daysLeftToApply is UNKNOWN
+        (""), never negative (which reads 'closed N days ago' on an
+        open posting — the #1 consumer confusion of the v2.4 review)."""
+        past = _detail_info(desc=(
+            "<p>Role.</p><p>Applications for this job will be accepted "
+            "at least until January 1, 2026.</p>"))
+        row = self._row(det={"info": past, "hiringOrg": "x",
+                             "similarJobsCount": 0})
+        assert row["applicationDeadline"] == "2026-01-01"   # kept: source truth
+        assert row["daysLeftToApply"] == ""                 # extended: unknown
+
+    def test_days_left_positive_when_floor_future(self):
+        future = _detail_info(desc=(
+            "<p>Role.</p><p>Applications for this job will be accepted "
+            "at least until December 31, 2099.</p>"))
+        row = self._row(det={"info": future, "hiringOrg": "x",
+                             "similarJobsCount": 0})
+        assert row["daysLeftToApply"] != ""
+        assert int(row["daysLeftToApply"]) > 0
+
+    def test_censored_on_measured_reset(self):
+        """S11: firstSeenDate BEFORE the current startDate is measured
+        repost evidence — the watch saw the req alive before the date it
+        now carries, so startDate was reset after our first sighting ⇒
+        age is a LOWER bound ⇒ censored=true (the mirror image of the
+        crossSourceRepostEvidence class, witnessed on our own state)."""
+        start = (_TODAY - _dt.timedelta(days=1)).isoformat()
+        det = {"info": _detail_info(startDate=start), "hiringOrg": "x",
+               "similarJobsCount": 0}
+        # first_seen 2 days before startDate → reset happened
+        row = board_dump._derive_csv_row(
+            _list_row(), det, None, "NVIDIA", _TODAY_ISO,
+            (_TODAY - _dt.timedelta(days=3)).isoformat())
+        assert row["censored"] == "true"
+        # first_seen AFTER startDate → no reset evidence (and startDate
+        # is post-seed) → honest uncensored age
+        row2 = board_dump._derive_csv_row(
+            _list_row(), det, None, "NVIDIA", _TODAY_ISO,
+            (_TODAY - _dt.timedelta(days=0)).isoformat())
+        assert row2["censored"] == "false"
+
+
+class TestQuestionnairesPhase:
+    """S11: the application-questionnaire DEFINITIONS behind the
+    per-posting questionnaireIds (the CSV v2.5 join key). Shared across
+    postings (live: 4 distinct ids / 1,541 reqs) — fetched ONCE per id,
+    appended to {out}.questionnaires.jsonl, joined at finish into the
+    linked {out}.questionnaires.csv."""
+
+    QID = "2f2764b3a82910064296831695150000"
+    PAYLOAD = {
+        "id": QID,
+        "instructions": "<p><i>Immigration support assessment.</i></p>",
+        "questions": [
+            {"id": "q2", "body": "<p>Sponsorship required?</p>",
+             "order": "b",
+             "possibleAnswers": [
+                 {"id": "a1", "answerText": "Yes", "order": "a"},
+                 {"id": "a2", "answerText": "No", "order": "b"}],
+             "required": True,
+             "type": {"id": "t1",
+                      "descriptor": "Multiple Choice - Single Select"}},
+            {"id": "q1", "body": "<p>Authorized to work?</p>",
+             "order": "a", "possibleAnswers": [], "required": False,
+             "type": {"id": "t1",
+                      "descriptor": "Multiple Choice - Single Select"}},
+        ],
+    }
+
+    def _args(self):
+        return type("A", (), {"board": "nvidia|wd5|x", "sleep": 0})()
+
+    @staticmethod
+    def _write_details(out, reqs):
+        board_dump._atomic_write_text(
+            out.with_suffix(".details.jsonl"),
+            "\n".join(json.dumps({
+                "reqId": rid, "info": _detail_info(questionnaireId=qid),
+                "hiringOrg": "x", "similarJobsCount": 0})
+                for rid, qid in reqs) + "\n")
+
+    def test_fetch_dedups_and_appends(self, tmp_path, monkeypatch):
+        from jobsearch.sources import workday
+        out = tmp_path / "dump"
+        # two reqs, ONE shared questionnaire id (+ one second id)
+        self._write_details(out, [("JR1", self.QID), ("JR2", self.QID),
+                                  ("JR3", "other999")])
+        calls = []
+
+        def fake_fetch(url, cfg=None, headers=None, **kw):
+            calls.append(url)
+            return json.loads(json.dumps(self.PAYLOAD))
+
+        monkeypatch.setattr(workday, "fetch_json", fake_fetch)
+        rc = board_dump.phase_questionnaires(self._args(), out)
+        assert rc == 0
+        # 2 distinct ids → exactly 2 fetches (dedup across reqs)
+        assert len(calls) == 2
+        assert any(self.QID in u for u in calls)
+        recs = [json.loads(line) for line in
+                out.with_suffix(".questionnaires.jsonl").read_text(
+                    encoding="utf-8").splitlines() if line]
+        assert len(recs) == 2
+        by_id = {r["questionnaireId"]: r for r in recs}
+        assert by_id[self.QID]["payload"]["questions"][0]["id"] == "q2"
+        assert by_id[self.QID]["fetchedAt"]  # provenance stamped
+        # RE-RUN: everything fetched → 0 new fetches, file unchanged
+        rc2 = board_dump.phase_questionnaires(self._args(), out)
+        assert rc2 == 0
+        assert len(calls) == 2          # idempotent skip
+        recs2 = [json.loads(line) for line in
+                 out.with_suffix(".questionnaires.jsonl").read_text(
+                     encoding="utf-8").splitlines() if line]
+        assert len(recs2) == 2
+
+    def test_failure_leaves_no_record_and_reraises_visibility(self, tmp_path,
+                                                              monkeypatch):
+        from jobsearch.sources import workday
+        out = tmp_path / "dump"
+        self._write_details(out, [("JR1", self.QID)])
+
+        def fake_fetch(url, cfg=None, headers=None, **kw):
+            return {"errorCode": "HTTP_404", "httpStatus": 404}
+
+        monkeypatch.setattr(workday, "fetch_json", fake_fetch)
+        rc = board_dump.phase_questionnaires(self._args(), out)
+        assert rc == 1               # failed → chained callers see the gap
+        assert not out.with_suffix(".questionnaires.jsonl").exists() or \
+            not [l for l in
+                 out.with_suffix(".questionnaires.jsonl").read_text(
+                     encoding="utf-8").splitlines() if l.strip()]
+
+    def test_no_details_file_is_rc2(self, tmp_path):
+        out = tmp_path / "dump"
+        assert board_dump.phase_questionnaires(self._args(), out) == 2
+
+    def test_finish_emits_linked_questionnaires_csv(self, tmp_path):
+        out = tmp_path / "dump"
+        rows = [_list_row(req_id="JR1", title="Alpha Engineer")]
+        board_dump._atomic_write_text(
+            out.with_suffix(".list.jsonl"),
+            "\n".join(json.dumps(r) for r in rows) + "\n")
+        self._write_details(out, [("JR1", self.QID)])
+        board_dump._atomic_write_text(
+            out.with_suffix(".questionnaires.jsonl"),
+            json.dumps({"questionnaireId": self.QID,
+                        "fetchedAt": "2026-09-17T00:00:00Z",
+                        "payload": self.PAYLOAD}) + "\n")
+        args = type("A", (), {
+            "board": "nvidia|wd5|x", "company": "NVIDIA", "country": "US",
+            "time_type": "Full time", "require_details": False})()
+        rc = board_dump.phase_finish(args, out)
+        assert rc == 0
+        # main CSV carries the JOIN KEY
+        with open(out.with_suffix(".csv"), newline="",
+                  encoding="utf-8-sig") as f:
+            csv_rows = list(csv.DictReader(f))
+        assert csv_rows[0]["questionnaireId"] == self.QID
+        # linked CSV: one row per QUESTION, ordered by the payload's
+        # own `order` key (q1 before q2), clean text, answers joined
+        with open(out.with_suffix(".questionnaires.csv"), newline="",
+                  encoding="utf-8-sig") as f:
+            qrows = list(csv.DictReader(f))
+        assert len(qrows) == 2
+        assert [r["questionId"] for r in qrows] == ["q1", "q2"]
+        assert qrows[0]["question"] == "Authorized to work?"
+        assert qrows[0]["required"] == "false"
+        assert qrows[1]["answers"] == "Yes; No"
+        assert qrows[1]["required"] == "true"
+        assert qrows[1]["type"] == "Multiple Choice - Single Select"
+        assert "Immigration support assessment." in qrows[0]["instructions"]
+        # report surfaces the join
+        report = out.with_suffix(".report.txt").read_text()
+        assert "questionnaire definitions: 1 id(s) covering 1/1 rows" in report
+
+    def test_finish_warns_when_definition_missing(self, tmp_path, capsys):
+        out = tmp_path / "dump"
+        rows = [_list_row(req_id="JR1", title="Alpha Engineer")]
+        board_dump._atomic_write_text(
+            out.with_suffix(".list.jsonl"),
+            "\n".join(json.dumps(r) for r in rows) + "\n")
+        self._write_details(out, [("JR1", self.QID)])
+        # NO questionnaires.jsonl — the definition was never fetched
+        args = type("A", (), {
+            "board": "nvidia|wd5|x", "company": "NVIDIA", "country": "US",
+            "time_type": "Full time", "require_details": False})()
+        rc = board_dump.phase_finish(args, out)
+        assert rc == 0                    # enrichment gap, not a hard fail
+        err = capsys.readouterr().err
+        assert "WARNING" in err and "questionnaire" in err
+        report = out.with_suffix(".report.txt").read_text()
+        assert "MISSING" in report
+
+
+class TestH1bWageBands:
+    """S11/v2.6 #44-#48: the DOL H-1B/LCA wage-band join. Certified
+    NVIDIA filings only, annualized OFFERED wage (WAGE_RATE_OF_PAY_FROM
+    × unit multiplier), exact-normalized title join (tight title+state
+    tier first), honest "" when nothing matches."""
+
+    @staticmethod
+    def _rec(title, state, wage, unit="Year", status="CERTIFIED",
+             case="C-1", pw="100000"):
+        return {"caseNumber": case, "caseStatus": status,
+                "jobTitle": title, "worksiteState": state,
+                "wageFrom": str(wage), "wageUnit": unit,
+                "prevailingWage": pw, "pwUnit": "Year",
+                "employerName": "NVIDIA CORPORATION",
+                "worksiteCity": "Santa Clara", "sourceFile": "FY2026_Q3"}
+
+    def _bands(self, tmp_path, recs):
+        out = tmp_path / "dump"
+        board_dump._atomic_write_text(
+            out.with_suffix(".h1b_lca.jsonl"),
+            "\n".join(json.dumps(r) for r in recs) + "\n")
+        return board_dump._load_h1b_bands(out)
+
+    def test_annualization_and_certified_filter(self):
+        assert board_dump._annualize_wage(
+            self._rec("T", "CA", 200000)) == 200000.0
+        assert board_dump._annualize_wage(
+            self._rec("T", "CA", 100, unit="Hour")) == 208000.0
+        assert board_dump._annualize_wage(
+            self._rec("T", "CA", 10000, unit="Month")) == 120000.0
+        assert board_dump._annualize_wage(
+            self._rec("T", "CA", 8000, unit="Bi-Weekly")) == 208000.0
+        # uncertified / denied filings never band a posting
+        assert board_dump._annualize_wage(
+            self._rec("T", "CA", 1, status="DENIED")) is None
+        assert board_dump._annualize_wage(
+            self._rec("T", "CA", 1, status="WITHDRAWN")) is None
+        # certified-withdrawn KEEPS its adjudicated wage
+        assert board_dump._annualize_wage(
+            self._rec("T", "CA", 150000,
+                      status="CERTIFIED-WITHDRAWN")) == 150000.0
+        # unparseable wage / unknown unit → None (never a fake band)
+        assert board_dump._annualize_wage(
+            self._rec("T", "CA", "n/a")) is None
+        assert board_dump._annualize_wage(
+            self._rec("T", "CA", 100, unit="Fortnight")) is None
+
+    def test_title_normalization_is_lexical_only(self):
+        n = board_dump._norm_join_title
+        assert n("Senior Software Engineer, AI") == \
+            n("senior software engineer ai")
+        assert n("Software Engineer") != n("Software Engineer 5"), \
+            "numeric levels must NOT collapse onto the base title"
+
+    def test_tight_tier_wins_over_title_fallback(self, tmp_path):
+        by_ts, by_t, recs = self._bands(tmp_path, [
+            self._rec("Senior Software Engineer", "CA", 220000,
+                      case="C-CA"),
+            self._rec("Senior Software Engineer", "TX", 180000,
+                      case="C-TX"),
+        ])
+        out = {
+            **board_dump._derive_h1b_columns(
+                "Senior Software Engineer", "CA;TX", by_ts, by_t),
+        }
+        # primary state CA → the CA band only
+        assert out["h1bMatchBasis"] == "title+state"
+        assert out["h1bFilings"] == 1
+        assert out["h1bWageP50"] == 220000
+        # no primary state → title-only pools both
+        out2 = board_dump._derive_h1b_columns(
+            "Senior Software Engineer", "", by_ts, by_t)
+        assert out2["h1bMatchBasis"] == "title"
+        assert out2["h1bFilings"] == 2
+        assert out2["h1bWageP50"] == 200000   # median of 180k/220k
+
+    def test_percentiles_interpolate(self):
+        vals = sorted([100000.0, 120000.0, 140000.0, 200000.0])
+        p = board_dump._wage_pct
+        assert p(vals, 0.25) == 115000   # k=0.75 → 100k+20k×0.75
+        assert p(vals, 0.50) == 130000   # k=1.5  → 120k+20k×0.5
+        assert p(vals, 0.75) == 155000   # k=2.25 → 140k+60k×0.25
+
+    def test_no_match_is_all_empty(self, tmp_path):
+        by_ts, by_t, _ = self._bands(tmp_path, [
+            self._rec("Architect", "CA", 250000)])
+        out = board_dump._derive_h1b_columns(
+            "Principal Distinguished Architect", "CA", by_ts, by_t)
+        assert out == {"h1bFilings": "", "h1bWageP25": "",
+                       "h1bWageP50": "", "h1bWageP75": "",
+                       "h1bMatchBasis": ""}
+
+    def test_no_extract_file_is_all_empty(self, tmp_path):
+        by_ts, by_t, recs = board_dump._load_h1b_bands(tmp_path / "none")
+        assert by_ts == {} and by_t == {} and recs == []
+
+    def test_finish_emits_bands_and_linked_csv(self, tmp_path):
+        out = tmp_path / "dump"
+        rows = [_list_row(req_id="JR1", title="Senior Software Engineer")]
+        board_dump._atomic_write_text(
+            out.with_suffix(".list.jsonl"),
+            "\n".join(json.dumps(r) for r in rows) + "\n")
+        board_dump._atomic_write_text(
+            out.with_suffix(".details.jsonl"),
+            json.dumps({"reqId": "JR1", "info": _detail_info() | {
+                "title": "Senior Software Engineer"},
+                "hiringOrg": "x", "similarJobsCount": 0}) + "\n")
+        recs = [self._rec("Senior Software Engineer", "CA", 220000,
+                          case="C-1"),
+                self._rec("senior software engineer", "CA", 240000,
+                          case="C-2", status="CERTIFIED-WITHDRAWN"),
+                self._rec("Senior Software Engineer", "TX", 180000,
+                          case="C-3"),
+                self._rec("Senior Software Engineer", "CA", 1,
+                          case="C-4", status="DENIED")]
+        board_dump._atomic_write_text(
+            out.with_suffix(".h1b_lca.jsonl"),
+            "\n".join(json.dumps(r) for r in recs) + "\n")
+        args = type("A", (), {
+            "board": "nvidia|wd5|x", "company": "NVIDIA", "country": "US",
+            "time_type": "Full time", "require_details": False})()
+        rc = board_dump.phase_finish(args, out)
+        assert rc == 0
+        with open(out.with_suffix(".csv"), newline="",
+                  encoding="utf-8-sig") as f:
+            csv_rows = list(csv.DictReader(f))
+        r0 = csv_rows[0]
+        # detail location "US, CA, Santa Clara" → primary state CA →
+        # CA band = certified rows only (220k, 240k; DENIED excluded)
+        assert r0["h1bMatchBasis"] == "title+state"
+        assert r0["h1bFilings"] == "2"
+        assert r0["h1bWageP50"] == "230000"
+        # linked extract CSV carries ALL filings incl. denied
+        with open(out.with_suffix(".h1b_lca.csv"), newline="",
+                  encoding="utf-8-sig") as f:
+            h_rows = list(csv.DictReader(f))
+        assert len(h_rows) == 4
+        assert h_rows[0]["caseNumber"]           # column contract
+        ann = {r["caseNumber"]: r["annualizedWage"] for r in h_rows}
+        assert ann["C-4"] == ""                  # denied → no band
+        assert ann["C-2"] == "240000"
+        report = out.with_suffix(".report.txt").read_text()
+        assert "h1b wage bands: 1/1 rows banded (1 title+state, 0 title-only)" \
+            in report
+
+
+class TestH1bExtractor:
+    """scripts/h1b_extract.py — the quarterly DOL LCA extract builder
+    (filter + dedup + truncation guard; the download paths are
+    transport-dependent and live-validated in the workflow)."""
+
+    @classmethod
+    def setup_class(cls):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location(
+            "h1b_extract", REPO_ROOT / "scripts" / "h1b_extract.py")
+        cls.h1b = importlib.util.module_from_spec(spec)
+        sys.modules.setdefault("h1b_extract", cls.h1b)
+        spec.loader.exec_module(cls.h1b)
+
+    @staticmethod
+    def _xlsx_bytes(records):
+        """A real (in-memory) LCA-shaped xlsx: header row + records."""
+        import io
+        import openpyxl
+        wb = openpyxl.Workbook()
+        ws = wb.active
+        cols = [c for c, _f in TestH1bExtractor.h1b._FIELDS]
+        ws.append(cols)
+        for rec in records:
+            ws.append([rec.get(c, "") for c in cols])
+        buf = io.BytesIO()
+        wb.save(buf)
+        return buf.getvalue()
+
+    def test_extract_filters_employer_and_maps_fields(self):
+        body = self._xlsx_bytes([
+            {"CASE_NUMBER": "C-1", "EMPLOYER_NAME": "NVIDIA CORPORATION",
+             "JOB_TITLE": "Software Engineer",
+             "WAGE_RATE_OF_PAY_FROM": "200000",
+             "WAGE_UNIT_OF_PAY": "Year",
+             "WORKSITE_STATE": "CA"},
+            {"CASE_NUMBER": "C-2", "EMPLOYER_NAME": "Acme Inc",
+             "JOB_TITLE": "Software Engineer",
+             "WAGE_RATE_OF_PAY_FROM": "100000",
+             "WAGE_UNIT_OF_PAY": "Year", "WORKSITE_STATE": "NY"},
+        ])
+        rows, total = self.h1b._extract_rows(body, "NVIDIA", "FY2026_Q3")
+        assert total == 2
+        assert len(rows) == 1                 # Acme filtered out
+        r = rows[0]
+        assert r["caseNumber"] == "C-1"
+        assert r["jobTitle"] == "Software Engineer"
+        assert r["wageFrom"] == "200000"
+        assert r["wageUnit"] == "Year"
+        assert r["worksiteState"] == "CA"
+        assert r["sourceFile"] == "FY2026_Q3"
+
+    def test_extract_dedups_by_case_number(self, tmp_path):
+        out_path = tmp_path / "x.h1b_lca.jsonl"
+        out_path.write_text(json.dumps(
+            {"caseNumber": "C-1", "jobTitle": "T"}) + "\n",
+            encoding="utf-8")
+        have = self.h1b._existing_case_numbers(out_path)
+        assert have == {"C-1"}
+
+    def test_truncated_zip_raises(self):
+        body = self._xlsx_bytes([
+            {"CASE_NUMBER": "C-1", "EMPLOYER_NAME": "NVIDIA CORPORATION"}])
+        with pytest.raises(RuntimeError, match="truncated|zip"):
+            self.h1b._extract_rows(body[:len(body) // 2], "NVIDIA", "Q")
+
+    def test_file_url_shape(self):
+        assert self.h1b._file_url("FY2025_Q4").endswith(
+            "/LCA_Disclosure_Data_FY2025_Q4.xlsx")
 
 
 class TestLoadJsonlTolerance:
@@ -1058,9 +1485,9 @@ class TestRawFidelity:
             board_dump.html_to_text(info["jobDescription"])
         assert row["descriptionLength"] == len(row["description"])
         assert "<" not in row["description"]
-        # questionnaire == bool(questionnaireId) (never a count/string)
-        assert row["questionnaire"] == ("true" if info.get(
-            "questionnaireId") else "false")
+        # questionnaireId passes through (v2.5 join key — was a boolean)
+        assert row["questionnaireId"] == (info.get("questionnaireId")
+                                         or "")
         # locations enumerated from info: [location] + additionalLocations
         addl = info.get("additionalLocations") or []
         expected = [info["location"]] + list(addl)
@@ -1078,8 +1505,9 @@ class TestRawFidelity:
         assert row["hiringOrg"] == det.get("hiringOrg")
         assert row["similarJobsCount"] == det.get("similarJobsCount") or 0
         assert row["url"] == r["url"]
-        assert row["reqYear"] == re.match(
-            r"[A-Za-z]+(\d{4})", r["reqId"]).group(1)
+        # S11/v2.5: the raw questionnaireId PASSES THROUGH (join key)
+        assert row["questionnaireId"] == (info.get("questionnaireId")
+                                          or "")
         assert row["detailError"] == ""    # info present → no error col
 
     def test_raw_multi_location_record(self):

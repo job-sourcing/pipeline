@@ -4,7 +4,8 @@
 Generalizes scripts/workday_dump.py (the NVIDIA pilot) into the repeatable
 flow the user asked to productize (design-board-v2.md D3):
 
-  list → details → [corroborate] → [titlesearch] → [tagfacets] → finish
+  list → details → [corroborate] → [titlesearch] → [tagfacets] →
+  [questionnaires] → finish
 
 - **list**: exhaustively paginate one ATS board (server-side facets for
   country / timeType), streaming JSONL, wrap-guards per the CXS quirks
@@ -32,54 +33,93 @@ flow the user asked to productize (design-board-v2.md D3):
   values — S8-D gaps #2/#3) → {label}.facet_tags.jsonl. Resumable at
   (param, value) granularity; the done-markers are population-
   fingerprinted against the listing (S9-C3 P1 — see phase_facet_tags).
-- **finish**: assemble {out}.json + the v2.4 CSV + a validation report +
-  {label}.similar_edges.jsonl (one role-similarity edge per line).
+- **questionnaires** (OPTIONAL, run before finish; needs details): the
+  application-questionnaire DEFINITIONS behind the per-posting
+  `questionnaireId`. Workday serves them from a separate calypso CXS
+  endpoint — `GET /wday/calypso/cxs/common/{tenant}/questionnaire/{id}`
+  (no auth, no site segment; discovered S11 via the apply-flow SPA) —
+  and they are SHARED across postings (NVIDIA live: 4 distinct IDs for
+  1,541 reqs), so the phase dedups and fetches each id ONCE into
+  {label}.questionnaires.jsonl (append-only, id-idempotent — re-runs
+  skip fetched ids, failures retry). finish joins by id and emits the
+  linked {label}.questionnaires.csv (one row per question).
+- **finish**: assemble {out}.json + the v2.6 CSV + a validation report +
+  {label}.similar_edges.jsonl (one role-similarity edge per line) + the
+  linked {label}.questionnaires.csv and {label}.h1b_lca.csv when their
+  phases ran.
 
-CSV v2.4 column ORDER (the contract — CSV_COLUMNS is the single source of
-truth; 44 columns: v2.1 added #32-#41, v2.3 added #42-#43, v2.4 added
-#44 — see docs/csv-v2-spec.md for per-column semantics):
+CSV v2.6 column ORDER (the contract — CSV_COLUMNS is the single source of
+truth; 48 columns: v2.5 removed reqYear and re-purposed questionnaire →
+questionnaireId; v2.6 appended the H-1B wage-band columns #44-#48 — see
+docs/csv-v2-spec.md for per-column semantics):
 
     1 reqId                 2 title                3 company
     4 hiringOrg             5 timeType             6 postedOn
-    7 startDate             8 postingAgeDays       9 reqYear
-    10 primaryLocation      11 nLocations          12 locations
-    13 remoteFlag           14 stateCodes          15 country
-    16 questionnaire        17 similarJobsCount    18 description
-    19 descriptionLength    20 url                 21 detailError
-    22 linkedinUrl          23 linkedinPostedDate  24 numApplicants
-    25 applicantLabel       26 dateDeltaDays       27 corroborationStatus
-    28 matchMethod (reqId|title|titleMultiset|"")
-                            29 firstSeenDate (watch state when present,
-                            else dump date)   30 corroboratedOn
-    31 dumpDate
-    32 endDate              (detail endDate — 3.1% of rows)
-    33 daysOnMarket         (snapshot_date − earliest evidence date —
+    7 startDate             8 postingAgeDays
+    9 primaryLocation      10 nLocations          11 locations
+    12 remoteFlag           13 stateCodes          14 country
+    15 questionnaireId      16 similarJobsCount    17 description
+    18 descriptionLength    19 url                 20 detailError
+    21 linkedinUrl          22 linkedinPostedDate  23 numApplicants
+    24 applicantLabel       25 dateDeltaDays       26 corroborationStatus
+    27 matchMethod (reqId|title|titleMultiset|"")
+                            28 firstSeenDate (watch state when present,
+                            else dump date)   29 corroboratedOn
+    30 dumpDate
+    31 endDate              (detail endDate — 3.1% of rows)
+    32 daysOnMarket         (snapshot_date − earliest evidence date —
                             startDate, or the earlier LI card date per
-                            #34; snapshot_date = today at finish time,
+                            #33; snapshot_date = today at finish time,
                             passed to every row)
-    34 daysOnMarketBasis    ("startDate" | "startDate+linkedin" when the
+    33 daysOnMarketBasis    ("startDate" | "startDate+linkedin" when the
                             LI card date moved the floor earlier | "")
-    35 censored             ("true" when startDate < WATCH_SEED or is
-                            missing — age is a LOWER bound only; else
+    34 censored             ("true" when startDate < WATCH_SEED, is
+                            missing, or the watch saw the req BEFORE its
+                            current startDate (a measured repost reset —
+                            S11) — age is a LOWER bound only; else
                             "false")
-    36 repostCount          (slug "…_JR####-N" suffix — Workday's own
+    35 repostCount          (slug "…_JR####-N" suffix — Workday's own
                             repost counter; 0 when absent)
-    37 lastResetDate        (the watch repost detector's measured
+    36 lastResetDate        (the watch repost detector's measured
                             new_startDate for this req; "" when no event)
-    38 applicationDeadline  ("Applications … accepted … until {date}"
+    37 applicationDeadline  ("Applications … accepted … until {date}"
                             from description — 98.9% coverage; falls back
                             to structured endDate. NOTE: a FLOOR, not a
                             guarantee — postings routinely stay live past
-                            it; negative #39 on a live posting is normal)
-    39 daysLeftToApply      (deadline − snapshot_date; empty when none)
-    40 workerSubType        (tagfacets phase; empty when not run)
-    41 jobFamilyGroup       (tagfacets phase; empty when not run)
-    42 earliestEvidenceDate (min(startDate, linkedinPostedDate) — the
+                            it)
+    38 daysLeftToApply      (deadline − snapshot_date; "" when none AND
+                            "" when the floor already elapsed on a live
+                            posting — the window auto-extended, days-left
+                            is UNKNOWN, never negative — S11)
+    39 workerSubType        (tagfacets phase; empty when not run)
+    40 jobFamilyGroup       (tagfacets phase; empty when not run)
+    41 earliestEvidenceDate (min(startDate, linkedinPostedDate) — the
                             honest cross-source age floor, S9)
-    43 crossSourceRepostEvidence ("" | reqId | title — the LI card
+    42 crossSourceRepostEvidence ("" | reqId | title — the LI card
                             PREDATES startDate ⇒ repost evidence)
-    44 applicantCensored    ("true"|"false"|"" — #24 is a BUCKET when
+    43 applicantCensored    ("true"|"false"|"" — #23 is a BUCKET when
                             true; recomputed from (num, label), S9-audit)
+    44 h1bFilings           (DOL H-1B/LCA certified NVIDIA filings
+                            backing #45-#47 — scripts/h1b_extract.py
+                            + .github/workflows/h1b-extract.yml)
+    45 h1bWageP25           (annualized OFFERED wage p25, USD)
+    46 h1bWageP50           (…median)
+    47 h1bWageP75           (…p75)
+    48 h1bMatchBasis        ("title+state" | "title" | "" — the join
+                            granularity; exact-normalized titles only,
+                            NO seniority/level guessing)
+
+v2.5 REMOVED `reqYear` (was #9, "first 4 digits of the JR number — req
+age signal"): DISPROVEN by data (S11) — the prefix matches
+startDate.year on 2/1,410 rows (0.1%) and 2026 postings carry prefixes
+spread 1966..2026; the JR number is an ID-space artifact, not a
+calendar signal. `questionnaire` (was "true"/"false") became
+`questionnaireId` — the JOIN KEY into {label}.questionnaires.csv (the
+questions themselves; fetch via --phase questionnaires).
+v2.6 appended the DOL H-1B/LCA wage-band columns #44-#48 (S11, design
+S8-F-3): certified NVIDIA filings from the quarterly disclosure files,
+annualized offered-wage percentiles joined per exact-normalized title
+(+primary state when available).
 
 Board providers: workday is the first (the CXS facts); the phase split is
 board-agnostic — corroborate/finish operate purely on the JSONL files.
@@ -98,6 +138,9 @@ Usage:
       no_match reqs' exact titles; then corroborate AGAIN to fetch
       the newly discovered cards' signals)
   ... --phase tagfacets  (optional; before finish)
+  ... --phase questionnaires (optional; fetch the questionnaire
+      definitions behind the per-posting questionnaireIds — deduped,
+      once per distinct id)
   ... --phase finish
 """
 from __future__ import annotations
@@ -131,67 +174,82 @@ CSV_COLUMNS = [
     "postedOn",              # 6  relative label ("Posted Today")
     "startDate",             # 7  ISO posting date
     "postingAgeDays",        # 8  today − startDate
-    "reqYear",               # 9  from JR2022xxxx → 2022 (req age signal)
-    "primaryLocation",       # 10 "US, CA, Santa Clara"
-    "nLocations",            # 11 total locations
-    "locations",             # 12 ALL locations "; "-joined — 0A
-    "remoteFlag",            # 13 any location mentions Remote
-    "stateCodes",            # 14 "CA;NC;TX" derived
-    "country",               # 15 country descriptor
-    "questionnaire",         # 16 application questionnaire present
-    "similarJobsCount",      # 17 related postings on the board
-    "description",           # 18 clean text (html_to_text) — 0B
-    "descriptionLength",     # 19 chars of clean text
-    "url",                   # 20 canonical apply URL
-    "detailError",           # 21 "" | detail_unreachable (detail-derived
+    "primaryLocation",       # 9  "US, CA, Santa Clara"
+    "nLocations",            # 10 total locations
+    "locations",             # 11 ALL locations "; "-joined — 0A
+    "remoteFlag",            # 12 any location mentions Remote
+    "stateCodes",            # 13 "CA;NC;TX" derived
+    "country",               # 14 country descriptor
+    "questionnaireId",       # 15 the posting's application questionnaire
+                             #    id — JOIN KEY into {out}.questionnaires.csv
+                             #    (v2.5: was `questionnaire` "true"/"false";
+                             #    the definitions are shared across postings
+                             #    and live in the linked file)
+    "similarJobsCount",      # 16 related postings on the board
+    "description",           # 17 clean text (html_to_text) — 0B
+    "descriptionLength",     # 18 chars of clean text
+    "url",                   # 19 canonical apply URL
+    "detailError",           # 20 "" | detail_unreachable (detail-derived
                              #    cols above are UNKNOWN, not absent)
-    "linkedinUrl",           # 22 matched LI posting — 0D
-    "linkedinPostedDate",    # 23 LI cross-post date
-    "numApplicants",         # 24 LI applicant count
-    "applicantLabel",        # 25 raw label ("Over 200 applicants")
-    "dateDeltaDays",         # 26 LI date − startDate (repost lag)
-    "corroborationStatus",   # 27 matched|no_match|blocked|not_checked
-    "matchMethod",           # 28 reqId|title|titleMultiset|""
-    "firstSeenDate",         # 29 first sighting by us (watch
+    "linkedinUrl",           # 21 matched LI posting — 0D
+    "linkedinPostedDate",    # 22 LI cross-post date
+    "numApplicants",         # 23 LI applicant count
+    "applicantLabel",        # 24 raw label ("Over 200 applicants")
+    "dateDeltaDays",         # 25 LI date − startDate (repost lag)
+    "corroborationStatus",   # 26 matched|no_match|blocked|not_checked
+    "matchMethod",           # 27 reqId|title|titleMultiset|""
+    "firstSeenDate",         # 28 first sighting by us (watch
                              #    first_seen when present, else dump date)
-    "corroboratedOn",        # 30 ISO timestamp of signal fetch
-    "dumpDate",              # 31 dump generation date
+    "corroboratedOn",        # 29 ISO timestamp of signal fetch
+    "dumpDate",              # 30 dump generation date
     # ── v2.1 addenda (S8-E3: S8-D gap table #5/#6 + S8-C §7/§8-R3) ──────
-    "endDate",               # 32 detail endDate (ISO; 43 rows live)
-    "daysOnMarket",          # 33 snapshot_date − earliest evidence date
-                             #    (startDate; earlier LI card date per #34;
+    "endDate",               # 31 detail endDate (ISO; 43 rows live)
+    "daysOnMarket",          # 32 snapshot_date − earliest evidence date
+                             #    (startDate; earlier LI card date per #33;
                              #    int; "" when no evidence) — best-estimate
                              #    listing age
-    "daysOnMarketBasis",     # 34 "startDate" | "startDate+linkedin" | ""
+    "daysOnMarketBasis",     # 33 "startDate" | "startDate+linkedin" | ""
                              #    (an LI card date PREDATES startDate ⇒ age
-                             #    measured from the earlier evidence — #33)
-    "censored",              # 35 "true" | "false" — see WATCH_SEED below
-    "repostCount",           # 36 slug "…_JR####-N" suffix (Workday's own
+                             #    measured from the earlier evidence — #32)
+    "censored",              # 34 "true" | "false" — see WATCH_SEED below
+    "repostCount",           # 35 slug "…_JR####-N" suffix (Workday's own
                              #    repost counter; 0 when absent)
-    "lastResetDate",         # 37 the watch repost detector's measured
+    "lastResetDate",         # 36 the watch repost detector's measured
                              #    new_startDate for this req (last event
                              #    wins; "" when no event — S8-C R1/R2,
                              #    filled since S9-audit A6r)
-    "applicationDeadline",   # 38 "accepted … until {date}" parsed from
+    "applicationDeadline",   # 37 "accepted … until {date}" parsed from
                              #    description (98.9%); endDate fallback
-    "daysLeftToApply",       # 39 deadline − snapshot_date (int | "")
-    "workerSubType",         # 40 tagfacets phase (Intern/NCG/…)
-    "jobFamilyGroup",        # 41 tagfacets phase (NVIDIA's taxonomy)
+    "daysLeftToApply",       # 38 deadline − snapshot_date (int | "") — ""
+                             #    when none AND when the floor ELAPSED on a
+                             #    live posting (auto-extended: unknown, not
+                             #    negative — v2.5/S11)
+    "workerSubType",         # 39 tagfacets phase (Intern/NCG/…)
+    "jobFamilyGroup",        # 40 tagfacets phase (NVIDIA's taxonomy)
     # ── v2.3 addenda (S9: cross-source timing floor) ──────────────────
-    "earliestEvidenceDate",  # 42 min(startDate, linkedinPostedDate) —
+    "earliestEvidenceDate",  # 41 min(startDate, linkedinPostedDate) —
                              #    the honest cross-source age floor
-    "crossSourceRepostEvidence",  # 43 ""|reqId|title — the LI card
+    "crossSourceRepostEvidence",  # 42 ""|reqId|title — the LI card
                              #    PREDATES startDate ⇒ the req was on the
                              #    market before its (reset) startDate;
                              #    reqId-joins = CONFIRMED repost (the
                              #    card IS the same requisition)
     # ── v2.4 addenda (S9-audit A1/C4/D3: bucket censoring + provenance) ─
-    "applicantCensored",     # 44 "true"|"false"|"" — the numApplicants in
-                             #    col #24 is a BUCKET when true (floor 25
+    "applicantCensored",     # 43 "true"|"false"|"" — the numApplicants in
+                             #    col #23 is a BUCKET when true (floor 25
                              #    "among first", cap 200 "Over"): never
-                             #    average #24 without this. RECOMPUTED
+                             #    average #23 without this. RECOMPUTED
                              #    from (num, label) — not the stored flag
                              #    (752/1,502 live signals predate the key)
+    # ── v2.6 addenda (S11: DOL H-1B / LCA wage bands — design S8-F-3) ───
+    "h1bFilings",            # 44 NVIDIA LCA filings backing the bands
+                             #    (certified-only, deduped by case number)
+    "h1bWageP25",            # 45 annualized OFFERED wage (WAGE_RATE_OF-
+                             #    _PAY_FROM × unit multiplier) p25, USD
+    "h1bWageP50",            # 46 …median
+    "h1bWageP75",            # 47 …p75
+    "h1bMatchBasis",         # 48 "title+state" | "title" | "" — the join
+                             #    granularity that produced #44-#47
 ]
 
 # The board-watch's first observation date (2026-09-09 — the NVIDIA seed
@@ -1081,6 +1139,252 @@ def phase_facet_tags(args, out: Path) -> int:
     return 0
 
 
+# ── phase: questionnaires — application-questionnaire definitions (S11) ──
+
+QUESTIONNAIRE_CSV_COLUMNS = [
+    "questionnaireId",     # join key == CSV v2.5 column #15
+    "instructions",        # questionnaire-level intro (clean text)
+    "questionId",
+    "order",               # the payload's own ordering key ("a", "b", …)
+    "question",            # question body (clean text)
+    "required",            # "true" | "false"
+    "type",                # e.g. "Multiple Choice - Single Select"
+    "answers",             # "; "-joined answer texts, payload order
+]
+
+
+def _questionnaire_url(board: tuple[str, str, str],
+                       questionnaire_id: str) -> str:
+    """The calypso CXS questionnaire-definition URL (S11, live-verified
+    2026-09-17 on nvidia/wd5 from an HK egress).
+
+    Dissected from the apply-flow SPA
+    (candidate-experience-apply-flow.min.js): the flow skeleton
+    ``jobpostings/{id}/applyflowpages`` lists the pages; page 4 is
+    "Application Questions"; its content comes from
+    ``common/questionnaire/{id}`` — a SITELESS calypso route (no site
+    segment) served WITHOUT auth. The plain-CXS guesses
+    (/questionnaire/{id} under /wday/cxs/{tenant}/{site}/…) all 406.
+    """
+    tenant, instance, _site = board
+    return (f"https://{tenant}.{instance}.myworkdayjobs.com"
+            f"/wday/calypso/cxs/common/{tenant}/questionnaire/"
+            f"{questionnaire_id}")
+
+
+def _fetch_questionnaire(board: tuple[str, str, str], qid: str,
+                         cfg: Config) -> Optional[dict]:
+    """GET one questionnaire definition; None on any failure shape
+    (transport error, non-dict, errorCode body, questions key absent —
+    the detail-fetch failure convention)."""
+    try:
+        payload = workday.fetch_json(
+            _questionnaire_url(board, qid), cfg=cfg,
+            headers={"Accept": "application/json"})
+    except Exception:  # noqa: BLE001 — enrichment, never fatal
+        return None
+    if not isinstance(payload, dict):
+        return None
+    if payload.get("errorCode"):
+        return None
+    if not isinstance(payload.get("questions"), list):
+        return None
+    return payload
+
+
+def _detail_questionnaire_ids(details: dict) -> list[str]:
+    """Distinct questionnaireIds across the last-good detail records,
+    first-seen order (stable for re-runs; the fetch set is tiny by
+    design — questionnaires are shared across postings)."""
+    ids: list[str] = []
+    for rid in sorted(details):
+        qid = (((details[rid] or {}).get("info") or {}).get(
+            "questionnaireId") or "").strip()
+        if qid and qid not in ids:
+            ids.append(qid)
+    return ids
+
+
+def phase_questionnaires(args, out: Path) -> int:
+    """Fetch the application-questionnaire DEFINITIONS behind the
+    per-posting questionnaireIds (the CSV v2.5 join key).
+
+    Questionnaires are shared across postings (live: 4 distinct ids for
+    1,541 reqs), so this dedups and fetches each id ONCE into
+    {out}.questionnaires.jsonl (append-only; {"questionnaireId",
+    "fetchedAt", "payload"} per line). Re-runs skip fetched ids;
+    FAILED ids leave no record and retry on the next run (rc=1 so a
+    chained caller sees the gap). finish joins by id and emits the
+    linked {out}.questionnaires.csv; a missing definition ships as a
+    finish-time WARNING, never silent.
+    """
+    det_path = out.with_suffix(".details.jsonl")
+    if not det_path.exists():
+        print(f"no {det_path} — run --phase details first")
+        return 2
+    details, _att = _load_details_state(det_path)
+    wanted = _detail_questionnaire_ids(details)
+    q_path = out.with_suffix(".questionnaires.jsonl")
+    have = {rec.get("questionnaireId")
+            for rec in _load_jsonl(q_path)
+            if rec.get("questionnaireId")}
+    todo = [q for q in wanted if q not in have]
+    print(f"[questionnaires] {len(wanted)} distinct id(s) across "
+          f"{len(details)} detail record(s); {len(wanted) - len(todo)} "
+          f"already fetched, {len(todo)} to fetch", flush=True)
+    if not todo:
+        return 0
+    cfg = Config()
+    board = workday.parse_board(args.board)
+    fetched = failed = 0
+    with open(q_path, "a", encoding="utf-8") as f:
+        for i, qid in enumerate(todo, 1):
+            payload = _fetch_questionnaire(board, qid, cfg)
+            if payload is None:
+                failed += 1
+                print(f"  [{i}/{len(todo)}] {qid}: FETCH FAILED "
+                      f"(no record written — retries next run)",
+                      flush=True)
+                continue
+            f.write(json.dumps({
+                "questionnaireId": qid,
+                "fetchedAt": datetime.now(timezone.utc).isoformat(),
+                "payload": payload,
+            }, ensure_ascii=False) + "\n")
+            f.flush()
+            fetched += 1
+            print(f"  [{i}/{len(todo)}] {qid}: "
+                  f"{len(payload['questions'])} question(s)", flush=True)
+            if i < len(todo):
+                time.sleep(args.sleep)
+    print(f"[questionnaires] fetched {fetched}, failed {failed} → "
+          f"{q_path}", flush=True)
+    return 1 if failed else 0
+
+
+# ── H-1B / LCA wage-band join (S11, design S8-F-3) ──────────────────
+
+H1B_CSV_COLUMNS = [
+    "caseNumber", "caseStatus", "caseSubmitted", "decisionDate",
+    "employerName", "jobTitle", "socCode", "socTitle",
+    "fullTimePosition", "wageFrom", "wageTo", "wageUnit",
+    "prevailingWage", "pwUnit", "worksiteCity", "worksiteState",
+    "worksitePostalCode", "annualizedWage", "sourceFile",
+]
+
+# Certified + Certified-Withdrawn both reflect an adjudicated wage
+# offer (withdrawn-AFTER-certification keeps its certification);
+# Withdrawn/Denied rows keep in the extract but never band a posting.
+_H1B_CERTIFIED = {"CERTIFIED", "CERTIFIED-WITHDRAWN"}
+_WAGE_ANNUAL_MULT = {
+    "Year": 1, "Month": 12, "Bi-Weekly": 26, "Week": 52,
+    "Day": 260, "Hour": 2080,
+}
+
+
+def _norm_join_title(t: str) -> str:
+    """Title normalization for the LCA join: casefold, punctuation →
+    spaces, collapsed. Deliberately LEXICAL only — no seniority or
+    numeric-level mapping ("Software Engineer 5" vs "Senior Software
+    Engineer" is NVIDIA's internal ladder, not a public equivalence;
+    guessing it would fabricate wage attributions). Only exact-normalized
+    joins count; everything else is honest ""."""
+    return re.sub(r"[^a-z0-9#+]+", " ", (t or "").lower()).strip()
+
+
+def _annualize_wage(rec: dict) -> Optional[float]:
+    """Annualized OFFERED wage (WAGE_RATE_OF_PAY_FROM × unit multiplier)
+    for a certified filing; None when uncertified or unparseable."""
+    if (rec.get("caseStatus") or "").upper() not in _H1B_CERTIFIED:
+        return None
+    try:
+        rate = float(str(rec.get("wageFrom") or "").replace(",", ""))
+    except ValueError:
+        return None
+    mult = _WAGE_ANNUAL_MULT.get(
+        (str(rec.get("wageUnit") or "").strip().title()))
+    if not mult:
+        return None
+    return rate * mult
+
+
+def _load_h1b_bands(out: Path) -> tuple[dict, dict, list[dict]]:
+    """(by_title_state, by_title, records) from {out}.h1b_lca.jsonl
+    (the GHA-produced quarterly extract — scripts/h1b_extract.py +
+    .github/workflows/h1b-extract.yml). Keys: normalized LCA job title
+    (+ worksite state for the tight tier). Wages annualized, certified
+    filings only; dedup by caseNumber is the extractor's job."""
+    by_ts: dict[tuple[str, str], list[float]] = {}
+    by_t: dict[str, list[float]] = {}
+    recs: list[dict] = []
+    path = out.with_suffix(".h1b_lca.jsonl")
+    if not path.exists():
+        return by_ts, by_t, recs
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            rec = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        recs.append(rec)
+        wage = _annualize_wage(rec)
+        if wage is None:
+            continue
+        nt = _norm_join_title(str(rec.get("jobTitle") or ""))
+        st = str(rec.get("worksiteState") or "").strip().upper()
+        if nt:
+            by_t.setdefault(nt, []).append(wage)
+            if st:
+                by_ts.setdefault((nt, st), []).append(wage)
+    return by_ts, by_t, recs
+
+
+def _wage_pct(sorted_vals: list[float], p: float) -> int:
+    """Linear-interpolation percentile over a SORTED list (numpy-free)."""
+    k = (len(sorted_vals) - 1) * p
+    f = int(k)
+    c = min(f + 1, len(sorted_vals) - 1)
+    return int(round(sorted_vals[f]
+                     + (sorted_vals[c] - sorted_vals[f]) * (k - f)))
+
+
+def _derive_h1b_columns(title: str, state_codes: str,
+                        by_ts: dict, by_t: dict) -> dict:
+    """The #44-#48 cells for one row: exact-normalized title join, tight
+    (title+primary-state) tier first, title-only fallback, honest ""
+    when neither. Multi-state rows join on the PRIMARY location's state
+    (first code — stateCodes is primary-first by construction)."""
+    nt = _norm_join_title(title)
+    if not nt or (not by_ts and not by_t):
+        return {"h1bFilings": "", "h1bWageP25": "", "h1bWageP50": "",
+                "h1bWageP75": "", "h1bMatchBasis": ""}
+    wages: Optional[list[float]] = None
+    basis = ""
+    primary_state = (state_codes.split(";")[0].strip()
+                     if state_codes else "")
+    if primary_state:
+        cand = by_ts.get((nt, primary_state))
+        if cand:
+            wages, basis = cand, "title+state"
+    if wages is None:
+        cand = by_t.get(nt)
+        if cand:
+            wages, basis = cand, "title"
+    if not wages:
+        return {"h1bFilings": "", "h1bWageP25": "", "h1bWageP50": "",
+                "h1bWageP75": "", "h1bMatchBasis": ""}
+    vals = sorted(wages)
+    return {
+        "h1bFilings": len(vals),
+        "h1bWageP25": _wage_pct(vals, 0.25),
+        "h1bWageP50": _wage_pct(vals, 0.50),
+        "h1bWageP75": _wage_pct(vals, 0.75),
+        "h1bMatchBasis": basis,
+    }
+
+
 # ── phase: finish — CSV v2 + JSON v2 + validation report ─────────────────
 
 def _state_codes(locations: list[str]) -> str:
@@ -1097,7 +1401,8 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
                     company: str, dump_date: str,
                     first_seen: str, facet_tags: Optional[dict] = None,
                     snapshot_date: str = "",
-                    last_reset: str = "") -> dict:
+                    last_reset: str = "",
+                    h1b_bands: Optional[tuple] = None) -> dict:
     """One CSV row. `snapshot_date` (ISO) is the days-on-market AND
     posting-age reference date — today at finish time (all rows share one
     snapshot); defaults to today when omitted (S9-audit B2r: postingAgeDays
@@ -1121,10 +1426,6 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
             age = (snapshot - date.fromisoformat(start)).days
         except ValueError:
             pass
-    req_year = ""
-    m = re.match(r"[A-Za-z]+(\d{4})", r["reqId"] or "")
-    if m:
-        req_year = m.group(1)
     desc_html = info.get("jobDescription") or ""
     desc_text = html_to_text(desc_html)
     country = (info.get("country") or {}).get("descriptor", "")
@@ -1149,8 +1450,17 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
             pass
     # censoring: startDate predating the watch seed (or missing) means
     # the age below is a LOWER bound only — the posting may have been
-    # reposted with a reset startDate before we ever observed it
-    censored = "true" if (not start or start < WATCH_SEED.isoformat()) \
+    # reposted with a reset startDate before we ever observed it.
+    # S11: first_seen BEFORE the current startDate is the MEASURED form
+    # of the same evidence — the watch saw this req alive before the
+    # startDate it now carries, so the startDate was reset by a repost
+    # after our first sighting (77/1,410 rows live; the mirror image of
+    # #42's card-predates-startDate class, witnessed on our own state
+    # instead of LinkedIn's).
+    censored = "true" if (not start
+                          or start < WATCH_SEED.isoformat()
+                          or (first_seen and start
+                              and first_seen[:10] < start)) \
         else "false"
     repost_count = _slug_repost_count(
         r.get("externalPath") or r.get("url")
@@ -1159,7 +1469,15 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
     days_left = ""
     if deadline:
         try:
-            days_left = (date.fromisoformat(deadline) - snapshot).days
+            left = (date.fromisoformat(deadline) - snapshot).days
+            # S11/v2.5: the parsed sentence is "accepted AT LEAST until
+            # {date}" — a floor that auto-extends. A floor that already
+            # elapsed while the posting is still ON the board means the
+            # window extended: days-left is UNKNOWN, not negative (a
+            # negative value read as "closed N days ago" on an open
+            # posting — the #1 consumer confusion of the v2.4 review).
+            # Elapsed-ness stays derivable: deadline < dumpDate.
+            days_left = left if left >= 0 else ""
         except ValueError:
             pass
     tag_row = (facet_tags or {}).get(r["reqId"]) or {}
@@ -1197,7 +1515,6 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
         "postedOn": r.get("postedOn") or info.get("postedOn") or "",
         "startDate": start,
         "postingAgeDays": age,
-        "reqYear": req_year,
         "primaryLocation": primary,
         "nLocations": n_locations,
         "locations": "; ".join(locations),
@@ -1205,7 +1522,7 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
             "remote" in loc.lower() for loc in locations) else "false",
         "stateCodes": _state_codes(locations),
         "country": country,
-        "questionnaire": "true" if info.get("questionnaireId") else "false",
+        "questionnaireId": info.get("questionnaireId") or "",
         "similarJobsCount": det.get("similarJobsCount") or 0,
         "description": desc_text,
         "descriptionLength": len(desc_text),
@@ -1266,6 +1583,11 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
             sig.get("num_applicants"),
             sig.get("applicants_label") or "") else
         "false" if sig else "")
+    # ── v2.6 columns (#44-#48) — DOL H-1B/LCA wage bands ────────────
+    row.update(_derive_h1b_columns(
+        info.get("title") or r.get("title") or "",
+        _state_codes(locations),
+        *(h1b_bands or ({}, {}))))
     return row
 
 
@@ -1405,6 +1727,22 @@ def phase_finish(args, out: Path) -> int:
         signals, {r["reqId"]: r["title"] for r in rows}, args.company,
         req_dates={k: v for k, v in req_dates.items() if v},
         req_locations=req_locations)
+
+    # questionnaire DEFINITIONS (OPTIONAL questionnaires phase — S11):
+    # {id: payload} from {out}.questionnaires.jsonl (last-wins). finish
+    # joins by id (CSV #15) and emits the linked questionnaires.csv;
+    # a detail-carried id with NO definition is a WARNING, never silent.
+    q_map: dict[str, dict] = {}
+    for rec in _load_jsonl(out.with_suffix(".questionnaires.jsonl")):
+        if rec.get("questionnaireId") and isinstance(
+                rec.get("payload"), dict):
+            q_map[rec["questionnaireId"]] = rec["payload"]
+    detail_qids = set(_detail_questionnaire_ids(details))
+    missing_q = sorted(detail_qids - set(q_map))
+    # H-1B/LCA wage bands (OPTIONAL extract — S11): the GHA-produced
+    # quarterly extract joined per (normalized title, state) into
+    # #44-#48 + the linked h1b_lca.csv.
+    h1b_ts, h1b_t, h1b_recs = _load_h1b_bands(out)
     matched_rows = 0
     csv_rows: list[dict] = []
     enriched_rows: list[dict] = []
@@ -1460,7 +1798,8 @@ def phase_finish(args, out: Path) -> int:
             r, det, sig, r.get("company") or args.company,
             dump_date, fs_map.get(r["reqId"]) or dump_date,
             facet_tags=facet_tags, snapshot_date=dump_date,
-            last_reset=rs_map.get(r["reqId"], ""))
+            last_reset=rs_map.get(r["reqId"], ""),
+            h1b_bands=(h1b_ts, h1b_t))
         csv_rows.append(row)
         enriched = dict(r)
         enriched["detail"] = det.get("info") or None
@@ -1517,6 +1856,68 @@ def phase_finish(args, out: Path) -> int:
         for row in csv_rows:
             w.writerow(row)
 
+    # linked questionnaire CSV (S11): one row per QUESTION — the
+    # definitions behind CSV #15. Same utf-8-sig convention; clean text
+    # for HTML bodies; answers "; "-joined in payload order; questions
+    # sorted by the payload's own `order` key (then id for stability).
+    qcsv_path = out.with_suffix(".questionnaires.csv")
+    q_rows = 0
+    with open(qcsv_path, "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f)
+        w.writerow(QUESTIONNAIRE_CSV_COLUMNS)
+        for qid in sorted(q_map):
+            p = q_map[qid]
+            inst = html_to_text(p.get("instructions") or "").strip()
+            for q in sorted(p.get("questions") or [],
+                            key=lambda q: (q.get("order") or "",
+                                           q.get("id") or "")):
+                w.writerow([
+                    qid,
+                    inst,
+                    q.get("id") or "",
+                    q.get("order") or "",
+                    html_to_text(q.get("body") or "").strip(),
+                    "true" if q.get("required") else "false",
+                    (q.get("type") or {}).get("descriptor") or "",
+                    "; ".join(a.get("answerText") or "" for a in
+                               q.get("possibleAnswers") or []),
+                ])
+                q_rows += 1
+
+    # linked H-1B/LCA extract CSV (S11): one row per NVIDIA filing —
+    # the raw evidence behind #44-#48 (analysts can reband freely).
+    h1b_csv_path = out.with_suffix(".h1b_lca.csv")
+    if h1b_recs:
+        with open(h1b_csv_path, "w", newline="",
+                  encoding="utf-8-sig") as f:
+            w = csv.writer(f)
+            w.writerow(H1B_CSV_COLUMNS)
+            for rec in sorted(h1b_recs,
+                              key=lambda x: (x.get("sourceFile") or "",
+                                              x.get("caseNumber") or "")):
+                w.writerow([
+                    rec.get("caseNumber") or "",
+                    rec.get("caseStatus") or "",
+                    rec.get("caseSubmitted") or "",
+                    rec.get("decisionDate") or "",
+                    rec.get("employerName") or "",
+                    rec.get("jobTitle") or "",
+                    rec.get("socCode") or "",
+                    rec.get("socTitle") or "",
+                    rec.get("fullTimePosition") or "",
+                    rec.get("wageFrom") or "",
+                    rec.get("wageTo") or "",
+                    rec.get("wageUnit") or "",
+                    rec.get("prevailingWage") or "",
+                    rec.get("pwUnit") or "",
+                    rec.get("worksiteCity") or "",
+                    rec.get("worksiteState") or "",
+                    rec.get("worksitePostalCode") or "",
+                    int(round(_annualize_wage(rec)))
+                    if _annualize_wage(rec) is not None else "",
+                    rec.get("sourceFile") or "",
+                ])
+
     # validation report
     n_desc = sum(1 for r in csv_rows if r["description"])
     n_loc = sum(1 for r in csv_rows if r["locations"]
@@ -1565,13 +1966,44 @@ def phase_finish(args, out: Path) -> int:
         report.append(
             f"facet tag coverage: {len(req_ids) - len(untagged_ids)}"
             f"/{len(req_ids)} rows ({len(untagged_ids)} untagged)")
+    if detail_qids:
+        n_qreqs = sum(1 for r in rows
+                      if ((details.get(r["reqId"]) or {}).get("info")
+                          or {}).get("questionnaireId"))
+        report.append(
+            f"questionnaire definitions: {len(detail_qids)} id(s) covering "
+            f"{n_qreqs}/{len(rows)} rows; {len(q_map)} fetched "
+            f"({q_rows} questions → {qcsv_path.name})"
+            + (f"; {len(missing_q)} MISSING — run --phase questionnaires"
+               if missing_q else ""))
+    if h1b_recs:
+        n_banded = sum(1 for r in csv_rows if r["h1bMatchBasis"])
+        n_ts = sum(1 for r in csv_rows
+                   if r["h1bMatchBasis"] == "title+state")
+        report.append(
+            f"h1b wage bands: {n_banded}/{len(csv_rows)} rows banded "
+            f"({n_ts} title+state, {n_banded - n_ts} title-only) from "
+            f"{len(h1b_recs)} LCA filings → {h1b_csv_path.name}")
+    elif (out.with_suffix(".h1b_lca.jsonl")).exists():
+        report.append("h1b wage bands: 0 usable filings in the extract "
+                      "(all uncertified/unparseable?)")
     report_text = "\n".join(report)
     _atomic_write_text(out.with_suffix(".report.txt"), report_text)
     print(f"[finish] wrote {len(csv_rows)} rows ({matched_rows} details):")
     print(f"  {out.with_suffix('.json')}")
     print(f"  {csv_path}")
     print(f"  {edges_path} ({len(edge_rows)} edges)")
+    if q_map:
+        print(f"  {qcsv_path} ({q_rows} questions across "
+              f"{len(q_map)} questionnaire(s))")
+    if h1b_recs:
+        print(f"  {h1b_csv_path} ({len(h1b_recs)} LCA filings)")
     print(report_text)
+    if missing_q:
+        print(f"[finish] WARNING: {len(missing_q)} questionnaire id(s) "
+              f"have no definition — questionnaireId ships as a join key "
+              f"with no linked row; re-run --phase questionnaires",
+              file=sys.stderr)
     if untagged_ids:
         # S9-C3 P2: the coverage gap must never ship silently — loud on
         # stderr too. When the listing itself is incomplete the gap is a
@@ -1607,7 +2039,8 @@ def main() -> int:
                     help="LinkedIn corroboration search location")
     ap.add_argument("--phase", default="finish",
                     choices=["list", "details", "corroborate",
-                             "titlesearch", "tagfacets", "finish"])
+                             "titlesearch", "tagfacets", "questionnaires",
+                             "finish"])
     ap.add_argument("--details-batch", type=int, default=150)
     ap.add_argument("--require-details", action="store_true")
     ap.add_argument("--refetch-similar", action="store_true",
@@ -1664,6 +2097,8 @@ def main() -> int:
         return phase_title_search(args, out)
     if args.phase == "tagfacets":
         return phase_facet_tags(args, out)
+    if args.phase == "questionnaires":
+        return phase_questionnaires(args, out)
     return phase_finish(args, out)
 
 
