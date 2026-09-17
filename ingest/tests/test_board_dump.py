@@ -607,6 +607,31 @@ class TestH1bExtractor:
         assert self.h1b._file_url("FY2025_Q4").endswith(
             "/LCA_Disclosure_Data_FY2025_Q4.xlsx")
 
+    def test_quarter_listing_keeps_fy_prefix(self, monkeypatch):
+        """Run-1 live failure: quarters listed WITHOUT 'FY' built
+        404 URLs (…_2025_Q1.xlsx). The prefix is part of the id."""
+        import requests as _rq
+        captured = {}
+
+        class FakeResp:
+            text = ('<a href="/x/LCA_Disclosure_Data_FY2025_Q1.xlsx"></a>'
+                    '<a href="/x/LCA_Disclosure_Data_FY2026_Q3.xlsx"></a>')
+            def raise_for_status(self):
+                pass
+
+        def fake_get(url, **kw):
+            captured["url"] = url
+            return FakeResp()
+
+        monkeypatch.setattr(_rq, "get", fake_get)
+        quarters = self.h1b._list_quarters(type("C", (), {
+            "supabase_proxy_url": "https://p.example/fn",
+            "supabase_proxy_token": "t"})())
+        assert quarters == ["FY2025_Q1", "FY2026_Q3"]
+        for q in quarters:
+            assert self.h1b._file_url(q).count(
+                f"LCA_Disclosure_Data_{q}.xlsx") == 1
+
 
 class TestLoadJsonlTolerance:
     def test_corrupt_tail_tolerated(self, tmp_path):

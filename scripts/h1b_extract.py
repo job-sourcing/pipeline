@@ -90,7 +90,7 @@ def _list_quarters(cfg) -> list[str]:
                  "x-region": "us-east-1"},
         timeout=60)
     r.raise_for_status()
-    found = sorted(set(f"{m.group(1)}_Q{m.group(2)}"
+    found = sorted(set(f"FY{m.group(1)}_Q{m.group(2)}"
                        for m in _FILE_RE.finditer(r.text)),
                    key=lambda s: (s.split("_")[0], s.split("_Q")[1]))
     return found

@@ -19,12 +19,14 @@
 > | v2.3 | 43 | 2026-09-15 | S9 timing floor: #42 `earliestEvidenceDate`, #43 `crossSourceRepostEvidence` |
 > | v2.4 | 44 | 2026-09-16 | LANDED (9ed96cb + full regen 4d33981): composed-join regen — matched 1,095→1,050 (77.9%→74.7% honest); #44 `applicantCensored`; `firstSeenDate` from watch; `lastResetDate` filled; snapshot-frozen `postingAgeDays`; uniform lowercase booleans — §5 |
 > | v2.5 | 43 | 2026-09-17 | LANDED (S11 quality round, user review): `reqYear` REMOVED (JR-number prefix ≠ a calendar signal — 0.1% year match); `questionnaire` → `questionnaireId` (join key into the NEW linked `questionnaires.csv`); `daysLeftToApply` never negative (elapsed "at least until" floors ship "" = extended/unknown); `censored=true` on measured repost resets (firstSeenDate < startDate) — §6 |
+> | v2.6 | 48 | 2026-09-17 | LANDED (S11, design S8-F-3): #44-#48 DOL H-1B/LCA wage bands — `h1bFilings` / `h1bWageP25` / `h1bWageP50` / `h1bWageP75` / `h1bMatchBasis` (certified NVIDIA filings, annualized offered wage, exact-normalized title join) + linked `h1b_lca.csv` — §7 |
 >
 > **Snapshot note (2026-09-17, post-regen):** the on-disk deliverable is
-> v2.5 (1,410 × 43, dumpDate 2026-09-17) — same join as v2.4 (matched
-> 1,050 / 74.5%) under the quality-round semantics; all NINE invariants
-> green (`scripts/s10_invariants.py` — INV-7/8/9 are the v2.5 additions).
-> Every live count below is THIS snapshot's.
+> v2.6 (1,410 × 48, dumpDate 2026-09-17) — the v2.5 quality-round
+> semantics plus the H-1B wage-band columns (bands populate once the
+> GHA extract lands); same join as v2.4/v2.5 (matched 1,050 / 74.5%);
+> all TEN invariants green (`scripts/s10_invariants.py` — INV-7..INV-10
+> are the S11 additions). Every live count below is THIS snapshot's.
 >
 > **Snapshot note (2026-09-16, post-regen):** the on-disk deliverable is
 > v2.4 (1,406 × 44, dumpDate 2026-09-16) — regenerated under the
@@ -34,7 +36,7 @@
 > recompute (`audit/s9-audit/H4-csv-v24-verify.md` — 0 cell diffs, all
 > join invariants green). Every live count below is THIS snapshot's.
 
-## 1. The 43 columns (v2.5 numbering)
+## 1. The 48 columns (v2.6 numbering)
 
 Phase of origin: **L** = list · **D** = details · **S** = signals
 (corroborate) · **T** = tagfacets · **F** = derived at finish.
@@ -84,6 +86,11 @@ Phase of origin: **L** = list · **D** = details · **S** = signals
 | 41 | `earliestEvidenceDate` | F | min(startDate, linkedinPostedDate) — the honest cross-source age floor (§4) |
 | 42 | `crossSourceRepostEvidence` | F | "" \| `reqId` \| `title` — the LI card PREDATES startDate ⇒ on-market-before evidence (§4) |
 | 43 | `applicantCensored` | F | `true` \| `false` \| "" — #23 is a BUCKET when `true` (floor 25 / cap 200; see §3); recomputed at finish from (num, label), NOT the stored signal flag. Live v2.5: 484 `true` / 926 `false` |
+| 44 | `h1bFilings` | F | DOL H-1B/LCA certified NVIDIA filings backing #45-#47 (deduped by case number; CERTIFIED + CERTIFIED-WITHDRAWN only — Withdrawn/Denied stay in the linked extract but never band a posting) |
+| 45 | `h1bWageP25` | F | annualized OFFERED wage p25, USD (WAGE_RATE_OF_PAY_FROM × unit multiplier: Year 1 / Month 12 / Bi-Weekly 26 / Week 52 / Day 260 / Hour 2080) |
+| 46 | `h1bWageP50` | F | …median |
+| 47 | `h1bWageP75` | F | …p75 |
+| 48 | `h1bMatchBasis` | F | `title+state` \| `title` \| "" — the join granularity: EXACT-normalized-title match against the LCA `JOB_TITLE`, tight (title + primary state from #13's first code) tier first, title-only fallback. Deliberately lexical — no seniority/numeric-level mapping ("Software Engineer 5" is NVIDIA's internal ladder, not a public equivalence) |
 
 Snapshot note: `postingAgeDays`/`daysOnMarket`/`daysLeftToApply` all
 reference ONE `snapshot_date` (today at finish, shared by all rows;
@@ -212,7 +219,36 @@ all NINE invariants green (`scripts/s10_invariants.py`):
    sighting — 77 rows flipped to `censored=true` (1,154→1,231), the
    watch-state mirror of the `crossSourceRepostEvidence` class.
 
-## 7. Sibling artifacts (same directory, `{out}` = `nvidia_us_fulltime`)
+## 7. v2.6 — LANDED (S11, design S8-F-3: DOL H-1B / LCA wage bands)
+
+Public government data (no auth, no ToS issue) joined per posting:
+
+1. **The extract** (`{out}.h1b_lca.jsonl`, built by
+   `scripts/h1b_extract.py`): NVIDIA rows from the DOL's quarterly LCA
+   disclosure xlsx files
+   (dol.gov/agencies/eta/foreign-labor/performance), append-only,
+   case-number-deduped, one line per filing with 17 LCA fields +
+   `sourceFile` provenance. **The download egress matrix (measured
+   2026-09-17):** HK sandbox direct → 403 Akamai; Netlify US function →
+   403 Akamai; Supabase Deno proxy → 200 but TRUNCATED at ~10.5MB
+   (the files are larger — the extractor's size guard turns that into
+   an error, never a corrupt extract). The one working transport is a
+   plain US runner: **GHA** — the `h1b-extract.yml` workflow on the
+   org repo IS the transport (dispatch-only, quarterly cadence;
+   `--recent 6` = the 6 latest published quarters; FY2026_Q2 404s at
+   the canonical path → soft-skip). The mirror sync back-syncs
+   `*.h1b_lca.jsonl` org → archive (the archive→mirror rsync --delete
+   would otherwise wipe it).
+2. **The join** (#44-#48): certified filings only; annualized offered
+   wage; EXACT-normalized title match with a tight title+primary-state
+   tier and a title-only fallback; honest "" when neither (the bands
+   are all-or-none per row — INV-10). Multi-state rows join on the
+   primary location's state.
+3. **The linked view** (`{out}.h1b_lca.csv`): one row per filing
+   (incl. uncertified ones) + a derived `annualizedWage` column — the
+   raw evidence behind the bands, free for re-banding.
+
+## 8. Sibling artifacts (same directory, `{out}` = `nvidia_us_fulltime`)
 
 | file | what it is |
 |------|-----------|
@@ -226,6 +262,8 @@ all NINE invariants green (`scripts/s10_invariants.py`):
 | `{out}.similar_edges.jsonl` | role-similarity graph: `{reqId, similar_reqId, similar_title, rank}` per edge (6,644 live) |
 | `{out}.questionnaires.jsonl` | questionnaire definitions as fetched — `{questionnaireId, fetchedAt, payload}` per line, append-only, one line per DISTINCT id (4 live; the raw preservation behind the linked CSV) |
 | `{out}.questionnaires.csv` | the LINKED questionnaire deliverable — one row per QUESTION (`questionnaireId, instructions, questionId, order, question, required, type, answers`), joined from the main CSV's #15 (8 questions live) |
+| `{out}.h1b_lca.jsonl` | the NVIDIA LCA extract as fetched (one line per filing, case-number-deduped, `sourceFile` provenance) — the raw preservation behind #44-#48 |
+| `{out}.h1b_lca.csv` | the LINKED LCA view — one row per filing incl. uncertified + derived `annualizedWage` |
 | `{out}.facets.json` | the facet census (7 facets / 190 values) |
 | `{out}.report.txt` | finish-time validation report (counts + coverage lines) |
 
