@@ -2,7 +2,7 @@
 """Findwork.dev signup automation — uses v3-mail admin API for body access.
 
 Flow:
-1. POST /accounts/signup/ with billing@priv.email + password
+1. POST /accounts/signup/ with redacted@priv.email + password
 2. v3-mail admin API polls for verification email → click verify link in body
 3. Login → /developers/ → API token visible
 
@@ -28,9 +28,9 @@ DEVELOPERS_URL = "https://findwork.dev/developers/"
 
 
 def step_signup(state: dict) -> dict:
-    """Submit the Findwork signup form with billing@priv.email."""
+    """Submit the Findwork signup form with redacted@priv.email."""
     if "email" not in state:
-        state["email"] = eu.alias_for_service(SERVICE)  # billing@priv.email
+        state["email"] = eu.alias_for_service(SERVICE)  # redacted@priv.email
         state["password"] = gen_password()
         save_state(SERVICE, state)
         print(f"  [signup] using email={state['email']}")

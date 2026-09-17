@@ -15,10 +15,10 @@ The admin/shop alias addresses are credential values shared with
 USAJOBS_USER_AGENT / CAREERJET_PARTNER_EMAIL and are read from the
 environment (os.environ first, ingest/.env fallback — S8-A scrub):
   admin alias (USAJOBS_USER_AGENT)    → adzuna, workable
-  billing@priv.email                  → findwork, personio
-  noreply@priv.email                  → usajobs, wellfound
-  security@priv.email                 → jsearch, otta
-  support@priv.email                  → jooble
+  redacted@priv.email                  → findwork, personio
+  redacted@priv.email                  → usajobs, wellfound
+  redacted@priv.email                 → jsearch, otta
+  redacted@priv.email                  → jooble
   shop alias (CAREERJET_PARTNER_EMAIL) → careerjet
 """
 from __future__ import annotations
@@ -37,15 +37,15 @@ _ADMIN_ALIAS = _env("USAJOBS_USER_AGENT")
 _SHOP_ALIAS = _env("CAREERJET_PARTNER_EMAIL")
 _ALIAS_MAP = {
     "adzuna": _ADMIN_ALIAS,
-    "findwork": "billing@priv.email",
-    "usajobs": "noreply@priv.email",
-    "jsearch": "security@priv.email",
-    "jooble": "support@priv.email",
+    "findwork": "redacted@priv.email",
+    "usajobs": "redacted@priv.email",
+    "jsearch": "redacted@priv.email",
+    "jooble": "redacted@priv.email",
     "careerjet": _SHOP_ALIAS,
     "workable": _ADMIN_ALIAS,  # not a signup target; placeholder
-    "personio": "billing@priv.email",  # same
-    "wellfound": "noreply@priv.email",
-    "otta": "security@priv.email",
+    "personio": "redacted@priv.email",  # same
+    "wellfound": "redacted@priv.email",
+    "otta": "redacted@priv.email",
 }
 
 

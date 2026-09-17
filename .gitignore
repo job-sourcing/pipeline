@@ -17,3 +17,12 @@ __pycache__/
 # agent tool-output dumps (junk — must never be committed again; S8-A)
 tool-results/
 .coverage
+
+# --- public-mirror guards (never commit these here) ---
+ingest/.env
+research_data/
+validation_results/
+audit/
+.agents/
+*.har
+tool-results/
