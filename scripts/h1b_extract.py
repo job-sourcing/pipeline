@@ -96,7 +96,14 @@ def _list_quarters(cfg) -> list[str]:
     return found
 
 
-def _file_url(quarter: str) -> str:
+def _file_url(quarter: str, alt: bool = False) -> str:
+    """Canonical /sites/ path; `alt=True` = the /media/ path (some
+    quarters publish ONLY there — FY2026_Q3 live-measured: /sites/ 404s
+    while /media/ serves the file; the performance page links it with a
+    double slash, which both forms tolerate)."""
+    if alt:
+        return (f"https://www.dol.gov/media/"
+                f"LCA_Disclosure_Data_{quarter}.xlsx")
     return (f"https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/"
             f"LCA_Disclosure_Data_{quarter}.xlsx")
 
@@ -283,18 +290,34 @@ def main() -> int:
     added = 0
     with open(out_path, "a", encoding="utf-8") as f:
         for i, q in enumerate(quarters, 1):
-            url = _file_url(q)
             print(f"[h1b] [{i}/{len(quarters)}] {q}: downloading "
                   f"({args.transport}) …", flush=True)
+            body = None
+            via = ""
             try:
-                body, via = _download(url, args.transport, cfg)
+                body, via = _download(_file_url(q), args.transport, cfg)
             except FileNotFoundError:
-                print(f"  {q}: NOT PUBLISHED at the canonical path — "
-                      f"skipping (soft)", flush=True)
-                continue
+                # some quarters publish ONLY at /media/ (FY2026_Q3
+                # live-measured: /sites/ 404s, /media/ serves) — one
+                # retry on the alternate path before soft-skipping
+                try:
+                    body, via = _download(_file_url(q, alt=True),
+                                         args.transport, cfg)
+                except FileNotFoundError:
+                    print(f"  {q}: NOT PUBLISHED at either path — "
+                          f"skipping (soft)", flush=True)
+                    continue
+                except Exception as exc:  # noqa: BLE001
+                    print(f"  {q}: DOWNLOAD FAILED (alt path) — {exc}",
+                          flush=True)
+                    failed.append(q)
+                    continue
+                print(f"  {q}: served from the /media/ path", flush=True)
             except Exception as exc:  # noqa: BLE001
                 print(f"  {q}: DOWNLOAD FAILED — {exc}", flush=True)
                 failed.append(q)
+                continue
+            if body is None:
                 continue
             rows, total = _extract_rows(body, args.employer, q)
             new = 0

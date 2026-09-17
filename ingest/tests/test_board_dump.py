@@ -606,6 +606,10 @@ class TestH1bExtractor:
     def test_file_url_shape(self):
         assert self.h1b._file_url("FY2025_Q4").endswith(
             "/LCA_Disclosure_Data_FY2025_Q4.xlsx")
+        # run-2 live finding: FY2026_Q3 publishes ONLY at /media/ —
+        # the canonical /sites/ path 404s for it
+        assert "/media/" in self.h1b._file_url("FY2026_Q3", alt=True)
+        assert "/sites/" in self.h1b._file_url("FY2026_Q3")
 
     def test_quarter_listing_keeps_fy_prefix(self, monkeypatch):
         """Run-1 live failure: quarters listed WITHOUT 'FY' built
