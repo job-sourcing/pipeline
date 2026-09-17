@@ -677,6 +677,60 @@ class TestH1bExtractor:
         assert "/media/" in self.h1b._file_url("FY2026_Q3", alt=True)
         assert "/sites/" in self.h1b._file_url("FY2026_Q3")
 
+    def test_download_404_propagates_as_FileNotFoundError(self):
+        """Run-4 live failure: _download wrapped per-transport 404s in
+        a blanket RuntimeError, making the caller's alt-path retry
+        (except FileNotFoundError) DEAD CODE. The 404 verdict must
+        propagate — including when another transport merely 403s
+        (Akamai noise, not a path verdict)."""
+        import requests as _rq
+        import unittest.mock as _mock
+
+        class Fake404:
+            status_code = 404
+            content = b""
+            headers = {}
+            def raise_for_status(self):
+                raise _rq.HTTPError("404")
+
+        class Fake403:
+            status_code = 403
+            def raise_for_status(self):
+                raise _rq.HTTPError("403")
+
+        cfg = type("C", (), {})()
+        # single-transport 404 → FileNotFoundError (was: RuntimeError)
+        with _mock.patch.object(_rq, "get", return_value=Fake404()):
+            with pytest.raises(FileNotFoundError):
+                self.h1b._download("https://x/y.xlsx", "direct", cfg,
+                                   timeout=5)
+
+        # mixed verdict: impersonate 404 (definitive) + direct 403
+        # (Akamai noise) → still FileNotFoundError. curl_cffi is a
+        # bootstrap extra (not always installed) — stub the module:
+        # _fetch_via imports it INSIDE the function, so a sys.modules
+        # injection takes effect at call time.
+        import types
+
+        class FakeCreq404:
+            status_code = 404
+            content = b""
+            headers = {}
+            def raise_for_status(self):
+                raise RuntimeError("404")
+
+        fake_creq = types.ModuleType("curl_cffi.requests")
+        fake_creq.get = lambda *a, **kw: FakeCreq404()
+        fake_cffi = types.ModuleType("curl_cffi")
+        fake_cffi.requests = fake_creq
+        with _mock.patch.object(_rq, "get", return_value=Fake403()), \
+             _mock.patch.dict(sys.modules,
+                              {"curl_cffi": fake_cffi,
+                               "curl_cffi.requests": fake_creq}):
+            with pytest.raises(FileNotFoundError):
+                self.h1b._download("https://x/y.xlsx", "auto", cfg,
+                                   timeout=5)
+
     def test_quarter_listing_keeps_fy_prefix(self, monkeypatch):
         """Run-1 live failure: quarters listed WITHOUT 'FY' built
         404 URLs (…_2025_Q1.xlsx). The prefix is part of the id."""

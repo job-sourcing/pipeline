@@ -115,8 +115,17 @@ def _download(url: str, transport: str, cfg, timeout: int = 600
     The supabase proxy serves 200 with a silently truncated body at
     ~10.5MB — a body whose length disagrees with the target's
     Content-Length is an error, not a payload (that guard is what makes
-    the fallback chain safe)."""
+    the fallback chain safe).
+
+    Error contract: FileNotFoundError when ANY transport saw a
+    definitive 404 (the path may simply be wrong — the caller's
+    alt-path retry keys off this; run-4 lesson: wrapping the 404s into
+    a blanket RuntimeError made that retry dead code. A 403 from ONE
+    transport is Akamai noise, not a path verdict — the 404s from the
+    transports that DID get an answer carry the verdict);
+    RuntimeError when no transport got a definitive answer."""
     errors: list[str] = []
+    saw_404 = False
     order = (["direct", "impersonate", "supabase"]
              if transport == "auto" else [transport])
     for t in order:
@@ -127,8 +136,15 @@ def _download(url: str, transport: str, cfg, timeout: int = 600
                     f"{t}: TRUNCATED ({len(body)} of {clen} bytes)")
                 continue
             return body, t
+        except FileNotFoundError:
+            errors.append(f"{t}: 404 (not published)")
+            saw_404 = True
         except Exception as exc:  # noqa: BLE001 — try the next transport
             errors.append(f"{t}: {type(exc).__name__}: {exc}"[:160])
+    if saw_404:
+        raise FileNotFoundError(
+            "a transport saw 404 (path may be wrong): "
+            + " | ".join(errors))
     raise RuntimeError("all transports failed: " + " | ".join(errors))
 
 
