@@ -316,27 +316,62 @@ def _blocked_record(card: dict, error: str = "blocked") -> dict:
     }
 
 
+# S12 multi-company: per-company card-company variants + slice locations
+# (module-level registries — the SAME idiom as workday._DETAIL_SLEEP_S.
+# Library default stays the NVIDIA pilot behavior; board_dump and the
+# watch set per-company overrides from their config before indexing.)
+COMPANY_VARIANTS: dict[str, list[str]] = {}
+SLICE_LOCATIONS: dict[str, list[str]] = {}
+
+
+def set_company_overrides(company: str, variants=None,
+                           slice_locations=None) -> None:
+    """Register per-company LI-matching knowledge (S12).
+
+    `variants` — card `company` strings (lowercased) that belong to the
+    board's company beyond the canonical name (NVIDIA posts as
+    'NVIDIA AI'; Tencent America cards say 'Tencent America').
+    `slice_locations` — the company's US geography for the partitioned
+    index (default = NVIDIA's SV/Austin/Seattle set, wrong elsewhere).
+    """
+    base = (company or "").strip().lower()
+    if not base:
+        return
+    if variants is not None:
+        COMPANY_VARIANTS[base] = [v.strip().lower()
+                                  for v in variants if v.strip()]
+    if slice_locations is not None:
+        SLICE_LOCATIONS[base] = [l.strip() for l in slice_locations
+                                 if l.strip()]
+
+
 def _company_variants(company: str) -> list[str]:
     """Company name variants worth matching cards against (NVIDIA posts
-    under 'NVIDIA' and 'NVIDIA AI' — sub-brands)."""
+    under 'NVIDIA' and 'NVIDIA AI' — sub-brands). S12: a registered
+    variant list wins; the default keeps the pilot's base+ai pair."""
     base = company.strip().lower()
+    reg = COMPANY_VARIANTS.get(base)
+    if reg:
+        return list(reg)
     return [base, f"{base} ai"]
 
 
 def default_index_slices(company: str = "NVIDIA") -> list[dict]:
     """Default slice matrix for a company (S8-E1, research §f R1).
 
-    The company name plus role-word keyword variants × the top card
-    locations from the NVIDIA li_index: for NVIDIA this is 6 keywords ×
+    The company name plus role-word keyword variants × the company's
+    top card locations: for NVIDIA this is 6 keywords ×
     5 locations = 30 {keywords, location} queries; at
     PARTITIONED_PAGES_PER_SLICE (3) pages each that bounds a full run at
-    ~90-100 requests. Generic for other companies (role-word slices
-    derived from the company name).
+    ~90-100 requests. S12: SLICE_LOCATIONS registers a company's real
+    geography (Netflix = Los Gatos/LA/NYC; Tencent = Palo Alto/Seattle;
+    default stays the NVIDIA li_index set).
     """
     base = (company or "").strip() or "NVIDIA"
+    locations = SLICE_LOCATIONS.get(base.lower()) or list(_SLICE_LOCATIONS)
     keywords = [base] + [f"{base} {s}" for s in _SLICE_KEYWORD_SUFFIXES]
     return [{"keywords": kw, "location": loc}
-            for kw in keywords for loc in _SLICE_LOCATIONS]
+            for kw in keywords for loc in locations]
 
 
 def _applicant_censored(num_applicants,

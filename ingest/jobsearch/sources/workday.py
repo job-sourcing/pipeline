@@ -79,7 +79,98 @@ _PARTITION_FACETS = (_FACET_COUNTRY, "workerSubType", "jobFamilyGroup",
                      "locations", _FACET_LOC_TYPE, _FACET_TIME)
 
 # tenant → display company name (title() is wrong for these)
-_COMPANY_DISPLAY = {"nvidia": "NVIDIA"}
+_COMPANY_DISPLAY = {"nvidia": "NVIDIA", "netflix": "Netflix",
+                    "tencent": "Tencent", "jd": "JD.com"}
+
+# Client-side country filtering (S12 multi-company): boards differ in
+# WHICH facets they expose — nvidia.wd5 serves a locationHierarchy1
+# (country) facet, but netflix.wd108 / tencent.wd1 / jd.wd103 only
+# offer locationMainGroup (city-level, nested). For those boards the
+# country filter CANNOT be server-side; list rows are filtered by a
+# location-token predicate instead (locationsText carries the country
+# in every board's dialect: "US-CA-Santa Clara", "USA - Remote",
+# "US-California-Palo Alto", "USA-California-Fontana").
+# Token aliases for the requested country name — US only for now (the
+# stress-test scope); other countries fall back to exact name-token
+# matching, extensible here.
+_COUNTRY_ALIASES: dict[str, frozenset[str]] = {
+    "united states": frozenset(("usa", "us", "u.s.", "u.s.a",
+                                 "u.s.a.", "united states of america")),
+}
+
+
+def _country_matchers(country: str) -> tuple[frozenset[str], list[list[str]]]:
+    """(single tokens, phrase token-lists) that mean `country`.
+
+    Single tokens match by membership ("usa"); multi-word names match
+    only when EVERY phrase token is present ("united"+"states" — so
+    "United Kingdom" / "United Arab Emirates" never hit)."""
+    base = (country or "").strip().lower()
+    if not base:
+        return frozenset(), []
+    singles: set[str] = set()
+    phrases: list[list[str]] = []
+    for alias in _COUNTRY_ALIASES.get(base, ()):
+        parts = alias.split()
+        if len(parts) == 1:
+            singles.add(alias)
+        else:
+            phrases.append(parts)
+    parts = base.split()
+    if len(parts) == 1:
+        singles.add(base)
+    else:
+        phrases.append(parts)
+    return frozenset(singles), phrases
+
+
+def _row_in_country(row: dict, country: str) -> bool:
+    """Client-side country predicate for a CXS list row.
+
+    Matches the country's single tokens + phrase tokens against the
+    tokens of locationsText AND primaryLocation.country when present.
+    Hyphen/whitespace tokenization keeps every observed dialect honest
+    ("US-CA-Santa Clara" → us/ca/santa/clara; "AUS-Sydney" → aus/sydney
+    — no false "us" hit because the token is "aus"; multi-word names
+    are PHRASE-matched so "United Kingdom" never hits "united").
+    """
+    singles, phrases = _country_matchers(country)
+    if not singles and not phrases:
+        return True
+    loc_toks: set[str] = set()
+    lt = row.get("locationsText")
+    if isinstance(lt, str):
+        loc_toks.update(t.strip(",()").lower()
+                        for t in re.split(r"[\s\-]+", lt))
+    pl = row.get("primaryLocation") or {}
+    if isinstance(pl, dict):
+        li = pl.get("location") or {}
+        if isinstance(li, dict):
+            c = (li.get("country") or "").strip().lower()
+            if c:
+                loc_toks.update(t.strip(",()").lower()
+                                for t in re.split(r"[\s\-]+", c))
+    if loc_toks & singles:
+        return True
+    return any(all(t in loc_toks for t in ph) for ph in phrases)
+
+
+def client_country_filter(country: str,
+                           first: dict) -> Optional[callable]:
+    """The client-side row filter for `country`, or None.
+
+    Returns a predicate ONLY when the board exposes no country facet at
+    all (then server-side filtering is impossible and the caller must
+    filter rows itself). None when the board HAS the facet — then the
+    normal resolve_facets path applies (including its unknown-country
+    ValueError, which stays the honest failure for a mis-typed name).
+    """
+    has_country_facet = any(
+        f.get("facetParameter") == _FACET_COUNTRY
+        for f in _flatten_facets(first))
+    if has_country_facet or not (country or "").strip():
+        return None
+    return lambda row: _row_in_country(row, country)
 
 _WORKDAY_CFG_RE = re.compile(
     r"window\.workday\s*=\s*(?:window\.workday\s*\|\|\s*)?\{")
@@ -483,23 +574,33 @@ def resolve_facets(board: tuple[str, str, str], first: dict,
                     time_type: Optional[str]) -> dict[str, list[str]]:
     """Resolve country/timeType facet ids from a page-0 payload.
 
-    Raises ValueError (message lists available countries) when a requested
-    facet label doesn't exist — callers translate to their own contract.
+    Raises ValueError (message lists available countries) when a
+    requested facet label doesn't exist ON A BOARD THAT HAS THE FACET —
+    callers translate to their own contract. S12 multi-company: when
+    the board exposes NO country facet at all, the country request is
+    legitimate but un-appliable server-side — returns
+    (facets-without-country, country_client=True) and the caller is
+    expected to consult client_country_filter() for the row predicate.
     """
     facets: dict[str, list[str]] = {}
+    country_client = False
     if country:
         cid = _facet_id(first, _FACET_COUNTRY, country)
-        if not cid:
+        if cid:
+            facets[_FACET_COUNTRY] = [cid]
+        elif any(f.get("facetParameter") == _FACET_COUNTRY
+                 for f in _flatten_facets(first)):
             raise ValueError(
                 f"country {country!r} not a facet "
                 f"(available: {', '.join(_country_names(first))})")
-        facets[_FACET_COUNTRY] = [cid]
+        else:
+            country_client = True
     if time_type:
         tid = _facet_id(first, _FACET_TIME, time_type)
         if not tid:
             raise ValueError(f"timeType {time_type!r} not a facet")
         facets[_FACET_TIME] = [tid]
-    return facets
+    return facets, country_client
 
 
 def _row_of(board: tuple[str, str, str], p: dict) -> tuple[str, dict]:
@@ -517,12 +618,18 @@ def _row_of(board: tuple[str, str, str], p: dict) -> tuple[str, dict]:
 
 def _paginate(board: tuple[str, str, str], facets: dict, first: dict,
               cfg: Config, sleep_s: float, progress_every: int,
-              progress_label: str) -> tuple[dict[str, dict], dict]:
+              progress_label: str,
+              row_filter=None) -> tuple[dict[str, dict], dict]:
     """The plain total-bounded pagination loop (page-0 total trusted,
     adaptive offset, reqId dedup, B1 partial-never-raise). No 2,000-cap
-    guard — callers needing it go through ``iter_board_postings``."""
+    guard — callers needing it go through ``iter_board_postings``.
+    ``row_filter`` (S12): optional client-side predicate — a row that
+    fails it is dropped from the accumulation (the page is still fully
+    consumed, so offsets stay honest). meta["client_filtered"] counts
+    the drops."""
     total = int(first.get("total") or 0)
     rows: dict[str, dict] = {}
+    dropped = 0
     offset, pages = 0, 0
     postings = first.get("jobPostings") or []
     while True:
@@ -531,6 +638,9 @@ def _paginate(board: tuple[str, str, str], facets: dict, first: dict,
             rid, row = _row_of(board, p)
             if rid in rows:
                 continue                      # wrap-past-total duplicate
+            if row_filter is not None and not row_filter(row):
+                dropped += 1
+                continue
             rows[rid] = row
         if progress_every and pages % progress_every == 0:
             print(f"[{progress_label}] {len(rows)}/{total} rows "
@@ -544,16 +654,18 @@ def _paginate(board: tuple[str, str, str], facets: dict, first: dict,
             nxt = _page(board, facets, offset, cfg)
         except Exception:
             return rows, {"complete": False, "total": total,
-                          "pages": pages}     # B1: partial, never raise
+                          "pages": pages, "client_filtered": dropped}
         postings = nxt.get("jobPostings") or []
         time.sleep(sleep_s)
-    return rows, {"complete": total <= len(rows) or not total,
-                  "total": total, "pages": pages}
+    return rows, {"complete": total <= len(rows) + dropped or not total,
+                  "total": total, "pages": pages,
+                  "client_filtered": dropped}
 
 
 def _iter_partitioned(board: tuple[str, str, str], facets: dict,
                       first: dict, cfg: Config, sleep_s: float,
-                      progress_every: int, progress_label: str
+                      progress_every: int, progress_label: str,
+                      row_filter=None
                       ) -> tuple[dict[str, dict], dict]:
     """Capped-total recovery (S8-D 1g): enumerate the board as a UNION of
     per-facet-value sub-lists, each below the 2,000 cap, deduped by reqId.
@@ -586,6 +698,8 @@ def _iter_partitioned(board: tuple[str, str, str], facets: dict,
     # they survive even if a later partition page-0 fails per B1)
     for p in first.get("jobPostings") or []:
         rid, row = _row_of(board, p)
+        if row_filter is not None and not row_filter(row):
+            continue
         rows.setdefault(rid, row)
     for descriptor, vid, _count in values_by_param[param]:
         sub_facets = dict(facets)
@@ -604,7 +718,8 @@ def _iter_partitioned(board: tuple[str, str, str], facets: dict,
                 f"caller's facets (e.g. per-country dumps) and retry")
         sub_rows, sub_meta = _paginate(
             board, sub_facets, sub_first, cfg, sleep_s, progress_every,
-            f"{progress_label}[{param}={descriptor}]")
+            f"{progress_label}[{param}={descriptor}]",
+            row_filter=row_filter)
         pages += sub_meta["pages"]
         complete = complete and sub_meta["complete"]
         before = len(rows)
@@ -631,6 +746,7 @@ def iter_board_postings(board: tuple[str, str, str], facets: dict,
                         progress_every: int = 0,
                         progress_label: str = "list",
                         board_facets: Optional[dict] = None,
+                        row_filter=None,
                         ) -> tuple[dict[str, dict], dict]:
     """THE exhaustive CXS listing primitive (single source of truth — was
     copy-drifted 4x across board_dump/watch/dump_board/workday_dump;
@@ -670,10 +786,12 @@ def iter_board_postings(board: tuple[str, str, str], facets: dict,
               f"this listing. Falling back to facet-partitioned "
               f"enumeration …", file=sys.stderr, flush=True)
         rows, meta = _iter_partitioned(board, facets, first, cfg, sleep_s,
-                                       progress_every, progress_label)
+                                       progress_every, progress_label,
+                                       row_filter=row_filter)
     else:
         rows, meta = _paginate(board, facets, first, cfg, sleep_s,
-                               progress_every, progress_label)
+                               progress_every, progress_label,
+                               row_filter=row_filter)
     meta["facets"] = (board_facets if board_facets is not None
                       else facet_census(first))
     return rows, meta
@@ -696,7 +814,14 @@ def list_board(spec: str, *, country: Optional[str] = None,
     cfg = cfg or Config()
     board = parse_board(spec)
     first = _page(board, {}, 0, cfg)
-    facets = resolve_facets(board, first, country, time_type)
+    facets, country_client = resolve_facets(board, first, country,
+                                            time_type)
+    row_filter = client_country_filter(country, first) \
+        if country_client else None
+    if country_client:
+        print(f"[{progress_label}] NOTE: board {spec!r} exposes no "
+              f"country facet — filtering {country!r} client-side "
+              f"on location tokens (S12)", file=sys.stderr, flush=True)
     board_facets = facet_census(first)
     iter_first = first
     if facets:
@@ -704,7 +829,7 @@ def list_board(spec: str, *, country: Optional[str] = None,
     rows, meta = iter_board_postings(
         board, facets, iter_first, cfg=cfg, sleep_s=sleep_s,
         progress_every=progress_every, progress_label=progress_label,
-        board_facets=board_facets)
+        board_facets=board_facets, row_filter=row_filter)
     if facets:
         meta["facets_filtered"] = facet_census(iter_first)
     return rows, meta

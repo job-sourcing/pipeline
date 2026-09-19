@@ -185,7 +185,12 @@ def _fetch_via(t: str, url: str, cfg, timeout: int) -> tuple[bytes, int]:
 def _extract_rows(body: bytes, employer: str, source_file: str
                   ) -> tuple[list[dict], int]:
     """Filter the xlsx to employer-matching rows (streaming read-only
-    mode — the files are too large for a full in-memory parse)."""
+    mode — the files are too large for a full in-memory parse).
+
+    `employer` is a comma-separated substring list (S12 multi-company:
+    one company files under several legal names — "TENCENT AMERICA",
+    "TENCENT AMERICA, INC."); a row matches when ANY substring hits
+    (case-insensitive)."""
     import io
     import zipfile
     try:
@@ -199,7 +204,8 @@ def _extract_rows(body: bytes, employer: str, source_file: str
     rows_out: list[dict] = []
     total = 0
     header: list[str] = []
-    needle = employer.lower()
+    needles = tuple(n.strip().lower() for n in employer.split(",")
+                    if n.strip())
     for row in ws.iter_rows(values_only=True):
         if not row:
             continue
@@ -208,8 +214,8 @@ def _extract_rows(body: bytes, employer: str, source_file: str
             continue
         total += 1
         rec = dict(zip(header, row))
-        emp = str(rec.get("EMPLOYER_NAME") or "")
-        if needle not in emp.lower():
+        emp = str(rec.get("EMPLOYER_NAME") or "").lower()
+        if not any(n in emp for n in needles):
             continue
         out = {"sourceFile": source_file}
         for col, field in _FIELDS:
@@ -250,7 +256,8 @@ def main() -> int:
                     help="list published quarters + egress check, no "
                          "extraction")
     ap.add_argument("--employer", default="NVIDIA",
-                    help="employer substring filter (case-insensitive)")
+                    help="employer substring filter, comma-separated "
+                         "list = OR (case-insensitive)")
     ap.add_argument("--label", default="nvidia_us_fulltime")
     ap.add_argument("--out-dir", default=str(
         REPO / "ingest" / "data" / "workday"))

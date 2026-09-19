@@ -1047,11 +1047,17 @@ def phase_facet_tags(args, out: Path) -> int:
               f"{exc}", file=sys.stderr)
         return 1
     try:
-        dump_facets = workday.resolve_facets(
+        dump_facets, country_client = workday.resolve_facets(
             board, first, args.country or None, args.time_type or None)
     except ValueError as exc:
         print(f"[tagfacets] {exc}")
         return 2
+    # S12 multi-company: boards without a country facet (netflix/tencent/
+    # jd) filter the country client-side — the sub-lists carry the same
+    # predicate so tag counts reflect the DUMPED population, not the
+    # whole global board.
+    country_filter = workday.client_country_filter(
+        args.country or "", first) if country_client else None
     tag_path = out.with_suffix(".facet_tags.jsonl")
     digest, board_rows = _board_pop_fingerprint(_load_jsonl(list_path))
     done_pairs: set = set()
@@ -1100,7 +1106,7 @@ def phase_facet_tags(args, out: Path) -> int:
                 try:
                     sub_rows, sub_meta = workday.iter_board_postings(
                         board, sub_facets, sub_first, cfg=cfg,
-                        sleep_s=args.sleep)
+                        sleep_s=args.sleep, row_filter=country_filter)
                 except RuntimeError as exc:   # capped sub-list (S8-D 1g)
                     print(f"[tagfacets] {exc}", file=sys.stderr)
                     return 1
@@ -2135,6 +2141,16 @@ def main() -> int:
                     help="timeType facet value (empty = all)")
     ap.add_argument("--location", default="United States",
                     help="LinkedIn corroboration search location")
+    ap.add_argument("--li-variants", default="",
+                    help="comma list of LinkedIn card company strings "
+                         "beyond --company that belong to the board "
+                         "(default: '<company>, <company> ai' — the "
+                         "NVIDIA/NVIDIA-AI pilot behavior) [S12]")
+    ap.add_argument("--slice-locations", default="",
+                    help="semicolon list of LinkedIn search locations "
+                         "for the partitioned index (default: the NVIDIA "
+                         "SV/Austin/Seattle set; locations contain "
+                         "commas so the separator is ';') [S12]")
     ap.add_argument("--phase", default="finish",
                     choices=["list", "details", "corroborate",
                              "titlesearch", "tagfacets", "questionnaires",
@@ -2181,6 +2197,17 @@ def main() -> int:
     ap.add_argument("--out-dir", default=str(
         REPO / "ingest" / "data" / "workday"))
     args = ap.parse_args()
+
+    # S12 multi-company: per-company LI matching knowledge (card company
+    # variants + index slice geography). Library defaults stay NVIDIA-
+    # pilot-shaped; explicit flags/register entries override.
+    if args.li_variants:
+        corroborate.set_company_overrides(
+            args.company, variants=args.li_variants.split(","))
+    if args.slice_locations:
+        corroborate.set_company_overrides(
+            args.company,
+            slice_locations=args.slice_locations.split(";"))
 
     out = Path(args.out_dir) / args.label
     out.parent.mkdir(parents=True, exist_ok=True)

@@ -294,3 +294,62 @@ new_implied, prev_startDate, confidence, new_startDate}` (37 events;
 supersedes the draft schema in findings-recency.md §250-254, which was
 never implemented), `…newposts.jsonl` (daily diff, with
 `titleSearchFallback` provenance since 852bb5f).
+
+## 9. S12 — MULTI-COMPANY: the same 49-column contract, per company
+
+The spec above was written NVIDIA-first (the pilot). S12 generalizes
+the pipeline to a config-driven company roster; the CSV CONTRACT is
+unchanged — every company ships the same 49 columns from the same
+phase chain, and `scripts/s10_invariants.py <label>` runs the same
+ten proofs per company.
+
+**The roster (ingest/data/board_watch/config.json — data, not code):**
+
+| label | board (tenant\|instance\|site) | US rows | matched | notes |
+|---|---|---|---|---|
+| `nvidia_us_fulltime` | `nvidia\|wd5\|nvidiaexternalcareersite` | 1,410 | 1,050 (74.5%) | the pilot; country facet server-side |
+| `netflix_us_fulltime` | `netflix\|wd108\|Netflix` | 105 | 41 (39.0%) | portal-primary cross-posting; all matches title-tier |
+| `tencent_us_fulltime` | `tencent\|wd1\|Tencent_Careers` | 54 | 28 (51.9%) | reqIds are plain `R…` numbers — join is format-agnostic |
+| `jd_us_fulltime` | `jd\|wd103\|Careers_at_JD` | 47 | 34 (72.3%) | logistics-heavy US footprint (CA/NJ/GA/MA) |
+
+**Per-company deltas (the S12 architectural debt paid down):**
+
+- **Country filtering** — nvidia.wd5 serves a `locationHierarchy1`
+  (country) facet; the other three boards expose ONLY city-level
+  `locationMainGroup`. `workday.list_board` now auto-falls back to a
+  client-side location-token predicate (`_row_in_country` — handles
+  every observed dialect: `US, CA, Santa Clara` / `USA - Remote` /
+  `US-California-Palo Alto` / `USA-California-Fontana`; multi-word
+  names PHRASE-match so `United Kingdom` never hits `united`).
+  `resolve_facets` returns `(facets, country_client)`; a board that
+  HAS the facet but not the requested country still raises the honest
+  ValueError. `meta["client_filtered"]` counts the drops.
+- **LI card-company variants** — `corroborate.set_company_overrides()`
+  registers per-company card `company` strings (NVIDIA/NVIDIA AI is
+  the pilot's pair; Tencent also posts as `Tencent America`;
+  JD.com as `JD Logistics`). Watch config key: `li_variants`;
+  board_dump flag: `--li-variants` (comma list).
+- **Index slice geography** — the partitioned index's default location
+  set was NVIDIA's SV/Austin/Seattle. Per-company registration via
+  `slice_locations` (config) / `--slice-locations` (CLI, SEMICOLON-
+  separated — locations contain commas).
+- **H-1B employer names** — `h1b_extract.py --employer` takes a
+  comma list (OR): one company files under several legal names
+  (`TENCENT AMERICA`, `Tencent America, Inc.`).
+- **GHA** — ONE board-watch run processes ALL watches sequentially
+  (the loop was always in the script; timeout 20→45 min for 4
+  companies). ONE h1b-extract dispatch extracts every company from a
+  single per-quarter xlsx download.
+
+**Non-Workday China tech (documented for future adapters, NOT in the
+roster):** ByteDance/TikTok (own platform, jobs.bytedance.com),
+Alibaba incl. AIDC (own Lumos platform), Baidu USA + NetEase Games +
+SHEIN + BYD North America (Greenhouse), Huawei + Trip.com + Kuaishou
+(own platforms). The repo already carries `greenhouse.py` /
+`smartrecruiters.py` / `lever.py` source adapters — a future round can
+stand those up on the same join.
+
+**Per-company sibling artifacts** follow the same `{label}.*`
+convention in `ingest/data/workday/` — see the v2.6 sibling table
+(§8) for shapes; Netflix ships 2 questionnaires/16 questions, Tencent
+4/34, JD 1/2 (nvidia: 4/8).

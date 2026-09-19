@@ -64,13 +64,25 @@ jobs:
       - name: Install deps (extractor only — no pipeline install)
         run: pip install requests openpyxl curl_cffi
 
-      - name: Extract NVIDIA LCA rows
+      - name: Extract LCA rows (all companies, one run)
+        # S12 multi-company: ONE dispatch extracts every company's
+        # filings — a single download of each quarterly xlsx serves all
+        # employer filters (the files are per-QUARTER, not per-company;
+        # re-downloading per company would burn 6 × 30-60MB per run).
         run: |
-          if [ -n "${{ inputs.quarters }}" ]; then
-            python3 scripts/h1b_extract.py --quarters "${{ inputs.quarters }}" --transport auto
-          else
-            python3 scripts/h1b_extract.py --recent "${{ inputs.recent }}" --transport auto
-          fi
+          set -e
+          extract() {
+            local label="$1" employers="$2"
+            if [ -n "${{ inputs.quarters }}" ]; then
+              python3 scripts/h1b_extract.py --quarters "${{ inputs.quarters }}" --label "$label" --employer "$employers" --transport auto
+            else
+              python3 scripts/h1b_extract.py --recent "${{ inputs.recent }}" --label "$label" --employer "$employers" --transport auto
+            fi
+          }
+          extract nvidia_us_fulltime "NVIDIA"
+          extract netflix_us_fulltime "NETFLIX"
+          extract tencent_us_fulltime "TENCENT"
+          extract jd_us_fulltime "JD.COM,JD AMERICAN,JINGDONG"
 
       - name: Checkpoint extract to git (race-proof)
         if: always()
@@ -92,7 +104,7 @@ jobs:
               break
             fi
             ROWS=$(python3 -c "import pathlib; print(sum(1 for p in pathlib.Path('ingest/data/workday').glob('*.h1b_lca.jsonl') for l in p.read_text(encoding='utf-8').splitlines() if l.strip().startswith('{')))" 2>/dev/null || echo 0)
-            git commit -m "h1b-lca extract checkpoint: ${ROWS} NVIDIA rows total [skip ci]"
+            git commit -m "h1b-lca extract checkpoint: ${ROWS} rows total across companies [skip ci]"
             if git push; then push_ok=1; break; fi
             echo "push attempt $i failed — refetching and retrying"
             sleep 5

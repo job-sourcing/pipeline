@@ -1906,3 +1906,68 @@ class TestUrlHealRunOnce:
         lines = [l for l in (wdir / "test_watch.newposts.jsonl")
                  .read_text(encoding="utf-8").splitlines() if l.strip()]
         assert len(lines) == 2
+
+
+class TestShippedWatchConfig:
+    """S12 multi-company: the SHIPPED config.json is the operational
+    registry — pins its integrity so a bad hand-edit fails loudly here
+    instead of at 06:45 UTC on the runner (per-watch try/except there
+    makes a config typo a SILENT per-company skip)."""
+
+    def test_config_parses_and_watches_are_well_formed(self):
+        cfg = json.loads(
+            (REPO_ROOT / "ingest/data/board_watch/config.json")
+            .read_text(encoding="utf-8"))
+        watches = cfg.get("watches")
+        assert isinstance(watches, list) and len(watches) >= 4
+        labels = set()
+        for w in watches:
+            for key in ("label", "board", "company", "country",
+                        "time_type"):
+                assert w.get(key), f"watch missing {key}: {w}"
+            # board spec parses as tenant|instance|site
+            parts = w["board"].split("|")
+            assert len(parts) == 3 and all(parts), w["board"]
+            assert w["label"] not in labels, f"duplicate label {w['label']}"
+            labels.add(w["label"])
+            # optional S12 keys must be lists when present
+            for opt in ("li_variants", "slice_locations"):
+                if opt in w:
+                    assert isinstance(w[opt], list) and w[opt], (
+                        f"{w['label']}.{opt} must be a non-empty list")
+
+    def test_stress_test_roster_is_configured(self):
+        cfg = json.loads(
+            (REPO_ROOT / "ingest/data/board_watch/config.json")
+            .read_text(encoding="utf-8"))
+        boards = {w["board"] for w in cfg["watches"]}
+        # the S12 stress-test tenants (live-verified 2026-09-17)
+        assert "nvidia|wd5|nvidiaexternalcareersite" in boards
+        assert "netflix|wd108|Netflix" in boards
+        assert "tencent|wd1|Tencent_Careers" in boards
+        assert "jd|wd103|Careers_at_JD" in boards
+
+    def test_run_watch_registers_overrides(self, tmp_path, monkeypatch):
+        """li_variants/slice_locations from the watch dict reach the
+        corroborate registries before any corroboration runs."""
+        w = dict(CFG, li_variants=["NVIDIA", "NVIDIA AI"],
+                 slice_locations=["United States"])
+        monkeypatch.setattr(watch, "WATCH_DIR", tmp_path)
+        # fail the list fetch immediately — we only need the registration
+        # side effect before the early return
+        def boom(*a, **k):
+            raise RuntimeError("stop here")
+        monkeypatch.setattr(watch, "current_postings", boom)
+        import jobsearch.corroborate as corr
+        saved_v, saved_l = (dict(corr.COMPANY_VARIANTS),
+                            dict(corr.SLICE_LOCATIONS))
+        try:
+            assert watch.run_watch(w, Config()) == "failed"
+            assert corr.COMPANY_VARIANTS.get("nvidia") == [
+                "nvidia", "nvidia ai"]
+            assert corr.SLICE_LOCATIONS.get("nvidia") == ["United States"]
+        finally:
+            corr.COMPANY_VARIANTS.clear()
+            corr.COMPANY_VARIANTS.update(saved_v)
+            corr.SLICE_LOCATIONS.clear()
+            corr.SLICE_LOCATIONS.update(saved_l)

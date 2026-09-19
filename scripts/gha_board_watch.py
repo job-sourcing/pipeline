@@ -877,6 +877,16 @@ def _legs_bump(label: str) -> int:
 def run_watch(w: dict, cfg: Config) -> str:
     """One watch pass. Returns 'complete' | 'backlog' | 'failed'."""
     label = w["label"]
+    # S12 multi-company: per-company LI matching knowledge from the watch
+    # config (card company variants + partitioned-index slice geography).
+    # Library defaults stay NVIDIA-pilot-shaped; registered entries win.
+    if w.get("li_variants"):
+        corroborate.set_company_overrides(
+            w.get("company", ""), variants=list(w["li_variants"]))
+    if w.get("slice_locations"):
+        corroborate.set_company_overrides(
+            w.get("company", ""),
+            slice_locations=list(w["slice_locations"]))
     state_path = WATCH_DIR / f"{label}.state.jsonl"
     leg = _legs_bump(label)
     print(f"[watch:{label}] leg {leg}/{LEGS_MAX_PER_DAY} today", flush=True)

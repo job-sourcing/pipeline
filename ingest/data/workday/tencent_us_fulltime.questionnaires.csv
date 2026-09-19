@@ -1,0 +1,43 @@
+﻿questionnaireId,instructions,questionId,order,question,required,type,answers
+44e07daec6221000dd21974364a90000,,44e07daec6221000dd21974364a90001,a,"If you were referred by a Campus Ambassador, please enter the referral code:",false,Text,
+44e07daec6221000dd21974364a90000,,44e07daec6221000dd21974364a90002,b,Do you have any relatives employed with us?,true,Multiple Choice - Single Select,Yes; No
+44e07daec6221000dd21974364a90000,,44e07daec6221000dd21974364a90005,c,Do you now or will you in the future require immigration sponsorship to work at the company?,true,Multiple Choice - Single Select,Yes; No
+44e07daec6221000dd21974364a90000,,44e07daec6221000dd2197dd1f920001,d,Have you been previously employed with Tencent or any subsidiaries of Tencent?,true,Multiple Choice - Single Select,Yes; No
+44e07daec6221000dd21974364a90000,,44e07daec6221000dd2197dd1f920004,d.a,"What is your previous tencent account? (prefix of your tencent working email, for example, meimeihan)
+
+If you forget it, kindly provide the mobile number or personal email during your previous employment at Tencent.",true,Text,
+44e07daec6221000dd21974364a90000,,44e07daec6221000dd2197dd1f920005,e,"Are you subject to a non-competition or other agreement, or aware of other circumstances, that would preclude or restrict your employment with Tencent?",true,Multiple Choice - Single Select,"Yes, I can describe with details.; Yes, I can upload with supporting documents.; No."
+44e07daec6221000dd21974364a90000,,44e07daec6221000dd219877d88e0000,e.a,Please describe the situation here,true,Text,
+44e07daec6221000dd21974364a90000,,44e07daec6221000dd219877d88e0003,e.b,Please upload related document(s) for further evaluation.,true,Upload Attachments,
+44e07daec6221000dd21974364a90000,,44e07daec6221000dd219877d88e0004,f,"Your response to this question will only be used to ensure compliance with U.S. export control laws and regulations, and not determinative of whether you are eligible for this position. The position you have applied for will provide you with access to Tencent America’s technologies which are subject to U.S. export control laws. Are you a citizen or lawful permanent resident from one of the below countries or regions: Cuba, Iran, North Korea, Syria, or the Crimea, Luhansk, or Donetsk regions of Ukraine?",true,Multiple Choice - Single Select,Yes; No
+4da95961bb2b100096f4f2d4a8460000,,4da95961bb2b100096f4f2d4a8460001,a,Do you have any relatives employed with us?,true,Multiple Choice - Single Select,Yes; No
+4da95961bb2b100096f4f2d4a8460000,,4da95961bb2b100096f4f36e1e420002,b,Do you now or will you in the future require immigration sponsorship to work at the company?,true,Multiple Choice - Single Select,Yes; No
+4da95961bb2b100096f4f2d4a8460000,,4da95961bb2b100096f4f36e1e420005,c,Have you been previously employed with Tencent or any subsidiaries of Tencent?,true,Multiple Choice - Single Select,Yes; No
+4da95961bb2b100096f4f2d4a8460000,,4da95961bb2b100096f4f407a7550001,c.a,"What is your previous tencent account? (prefix of your tencent working email, for example, meimeihan)
+
+If you forget it, kindly provide the mobile number or personal email during your previous employment at Tencent.",true,Text,
+4da95961bb2b100096f4f2d4a8460000,,4da95961bb2b100096f4f407a7550002,d,"Are you subject to a non-competition or other agreement, or aware of other circumstances, that would preclude or restrict your employment with Tencent?",true,Multiple Choice - Single Select,"Yes, I can describe with details.; Yes, I can upload with supporting documents.; No."
+4da95961bb2b100096f4f2d4a8460000,,4da95961bb2b100096f4f407a7550004,d.a,Please describe the situation here,true,Text,
+4da95961bb2b100096f4f2d4a8460000,,4da95961bb2b100096f4f407a7550007,d.b,Please upload related document(s) for further evaluation.,true,Upload Attachments,
+4da95961bb2b100096f4f2d4a8460000,,4da95961bb2b100096f4f407a7550008,e,"Your response to this question will only be used to ensure compliance with U.S. export control laws and regulations, and not determinative of whether you are eligible for this position. The position you have applied for will provide you with access to Tencent America’s technologies which are subject to U.S. export control laws. Are you a citizen or lawful permanent resident from one of the below countries or regions: Cuba, Iran, North Korea, Syria, or the Crimea, Luhansk, or Donetsk regions of Ukraine?",true,Multiple Choice - Single Select,Yes; No
+6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3a86a059b0001,a,Do you have any relatives employed with us?,true,Multiple Choice - Single Select,Yes; No
+6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3a903bd0b0002,b,Do you now or will you in the future require immigration sponsorship to work at the company?,true,Multiple Choice - Single Select,Yes; No
+6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3a99d6f410001,c,Have you been previously employed with Tencent or any subsidiaries of Tencent?,true,Multiple Choice - Single Select,Yes; No
+6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3a99d6f410004,c.a,"What is your previous tencent account? (prefix of your tencent working email, for example, meimeihan)
+
+If you forget it, kindly provide the mobile number or personal email during your previous employment at Tencent.",true,Text,
+6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3a99d6f410005,d,"Are you subject to a non-competition or other agreement, or aware of other circumstances, that would preclude or restrict your employment with Tencent?",true,Multiple Choice - Single Select,"Yes, I can describe with details.; Yes, I can upload with supporting documents.; No."
+6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3aa3704d60000,d.a,Please describe the situation here,true,Text,
+6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3aa3704d60001,d.b,Please upload related document(s) for further evaluation.,true,Upload Attachments,
+6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3aa3704d60002,e,"Are you a citizen or lawful permanent resident from one of the below countries/regions: Cuba, Syria, Iran, Crimea Region, North Korea, and Donbas Region(a.k.a Donetsk/ Luhansk)? Your response to this question will only be used to ensure compliance with applicable export control laws and regulations.",true,Multiple Choice - Single Select,Yes; No
+996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d00c938eb0001,a,"If you were referred by a Campus Ambassador, please enter the referral code:",false,Text,
+996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01638efb0000,b,Do you have any relatives employed with us?,true,Multiple Choice - Single Select,Yes; No
+996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01638efb0003,c,Do you now or will you in the future require immigration sponsorship to work at the company?,true,Multiple Choice - Single Select,Yes; No
+996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01638efb0006,d,Have you been previously employed with Tencent or any subsidiaries of Tencent?,true,Multiple Choice - Single Select,Yes; No
+996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01fdea210001,d.a,"What is your previous tencent account? (prefix of your tencent working email, for example, meimeihan)
+
+If you forget it, kindly provide the mobile number or personal email during your previous employment at Tencent.",true,Text,
+996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01fdea210002,e,"Are you subject to a non-competition or other agreement, or aware of other circumstances, that would preclude or restrict your employment with Tencent?",true,Multiple Choice - Single Select,"Yes, I can describe with details.; Yes, I can upload with supporting documents.; No."
+996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01fdea210006,e.a,Please describe the situation here,true,Text,
+996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01fdea210007,e.b,Please upload related document(s) for further evaluation.,true,Upload Attachments,
+996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01fdea210008,f,"Are you a citizen or lawful permanent resident from one of the below countries/regions: Cuba, Syria, Iran, Crimea Region, North Korea, and Donbas Region(a.k.a Donetsk/ Luhansk)? Your response to this question will only be used to ensure compliance with applicable export control laws and regulations.",true,Multiple Choice - Single Select,Yes; No

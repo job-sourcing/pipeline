@@ -44,7 +44,13 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # S12 multi-company: ONE run processes ALL configured watches
+    # sequentially (config.json is data — the loop lives in the script;
+    # never one workflow per company). 4 watches × ~4-min budget + list
+    # overhead + checkpoint ≈ 25-35 min worst case — 45 keeps headroom
+    # (public-repo minutes are free; the 20-min cap was a 1-company
+    # sizing).
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:

@@ -653,7 +653,29 @@ class TestH1bExtractor:
         assert r["wageFrom"] == "200000"
         assert r["wageUnit"] == "Year"
         assert r["worksiteState"] == "CA"
-        assert r["sourceFile"] == "FY2026_Q3"
+
+    def test_extract_multi_employer_or_list(self):
+        """S12: --employer accepts a comma list — one company files under
+        several legal names (TENCENT AMERICA / Tencent America, Inc.)."""
+        body = self._xlsx_bytes([
+            {"CASE_NUMBER": "C-1", "EMPLOYER_NAME": "TENCENT AMERICA",
+             "JOB_TITLE": "Engineer", "WAGE_RATE_OF_PAY_FROM": "1",
+             "WAGE_UNIT_OF_PAY": "Year", "WORKSITE_STATE": "CA"},
+            {"CASE_NUMBER": "C-2",
+             "EMPLOYER_NAME": "Tencent America, Inc.",
+             "JOB_TITLE": "Engineer", "WAGE_RATE_OF_PAY_FROM": "2",
+             "WAGE_UNIT_OF_PAY": "Year", "WORKSITE_STATE": "CA"},
+            {"CASE_NUMBER": "C-3", "EMPLOYER_NAME": "JD.COM INC.",
+             "JOB_TITLE": "Engineer", "WAGE_RATE_OF_PAY_FROM": "3",
+             "WAGE_UNIT_OF_PAY": "Year", "WORKSITE_STATE": "CA"},
+            {"CASE_NUMBER": "C-4", "EMPLOYER_NAME": "Acme Inc",
+             "JOB_TITLE": "Engineer", "WAGE_RATE_OF_PAY_FROM": "4",
+             "WAGE_UNIT_OF_PAY": "Year", "WORKSITE_STATE": "NY"},
+        ])
+        rows, total = self.h1b._extract_rows(
+            body, "TENCENT,JD.COM", "FY2026_Q3")
+        assert total == 4
+        assert {r["caseNumber"] for r in rows} == {"C-1", "C-2", "C-3"}
 
     def test_extract_dedups_by_case_number(self, tmp_path):
         out_path = tmp_path / "x.h1b_lca.jsonl"

@@ -1,0 +1,12 @@
+rows: 54 (unique reqIds: 54)
+details merged: 54
+descriptions present: 54
+locations enumerated (not 'N Locations'): 54
+startDate present: 54
+signals: matched=28 no_match=26 blocked=0 not_checked=0
+location entries total (sum nLocations): 54
+similar-job edges: 103
+facet census: 5 facets / 61 values (tencent_us_fulltime.facets.json)
+facet-tagged rows: workerSubType=54 jobFamilyGroup=54 (from facet_tags.jsonl)
+facet tag coverage: 54/54 rows (0 untagged)
+questionnaire definitions: 4 id(s) covering 54/54 rows; 4 fetched (34 questions → tencent_us_fulltime.questionnaires.csv)

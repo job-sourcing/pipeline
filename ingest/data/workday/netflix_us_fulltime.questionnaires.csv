@@ -1,0 +1,17 @@
+﻿questionnaireId,instructions,questionId,order,question,required,type,answers
+4b15c3bdb7e910020025cb25a5d60000,,4b15c3bdb7e910020025cc59a1980000,a,"Are you currently working for Netflix as a contractor? (e.g. independent, vendor, or temporary worker)",true,Multiple Choice - Single Select,Yes; No
+4b15c3bdb7e910020025cb25a5d60000,,4b15c3bdb7e910020025ce273fdb0001,b,Have you worked for Netflix or any of Netflix's subsidiaries in the past?,true,Multiple Choice - Single Select,Yes; No
+4b15c3bdb7e910020025cb25a5d60000,,4b15c3bdb7e910020025cec182990001,b.a,Which subsidiary?,true,Multiple Choice - Single Select,Netflix; DVD; Animation; Netflix House; Eyeline
+4b15c3bdb7e910020025cb25a5d60000,,4b15c3bdb7e910020025cff561730002,b.a.a,What type of employee were you?,true,Multiple Choice - Single Select,Full Time Employee; Contractor; Intern
+4b15c3bdb7e910020025cb25a5d60000,,4b15c3bdb7e910020025d1c35f7f0000,b.a.b,What type of employee were you?,true,Multiple Choice - Single Select,Full Time Employee; Contractor; Intern
+4b15c3bdb7e910020025cb25a5d60000,,4b15c3bdb7e910020025d25d5f5e0002,b.a.c,What type of employee were you?,true,Multiple Choice - Single Select,Full Time Employee; Contractor; Intern
+4b15c3bdb7e910020025cb25a5d60000,,4b15c3bdb7e910020025d3912c0d0000,b.a.d,What type of employee were you?,true,Multiple Choice - Single Select,Full Time Employee; Contractor; Intern
+4b15c3bdb7e910020025cb25a5d60000,,4b15c3bdb7e910020025d4c4eec60001,b.a.e,What type of employee were you?,true,Multiple Choice - Single Select,Full Time Employee; Contractor; Intern
+4b15c3bdb7e910020025cb25a5d60000,,4b15c3bdb7e910020025d5f88fe70001,c,Do you require sponsorship to legally work in the job location?,true,Multiple Choice - Single Select,Yes; No
+9a7a8705901e1001f30e535431110000,,9a7a8705901e1001f30e535431110001,a,"Are you currently working for Netflix as a contractor? (e.g. independent, vendor, or temporary worker)",true,Multiple Choice - Single Select,Yes; No
+9a7a8705901e1001f30e535431110000,,9a7a8705901e1001f30e53ee229e0001,b,Have you worked for Netflix or any of Netflix's subsidiaries in the past?,true,Multiple Choice - Single Select,Yes; No
+9a7a8705901e1001f30e535431110000,,9a7a8705901e1001f30e53ee229e0004,b.a,Which subsidiary?,true,Multiple Choice - Single Select,Netflix; DVD; Animation
+9a7a8705901e1001f30e535431110000,,9a7a8705901e1001f30e548857800000,b.a.a,What type of employee were you?,true,Multiple Choice - Single Select,Full Time Employee; Contractor; Intern
+9a7a8705901e1001f30e535431110000,,9a7a8705901e1001f30e548857800004,b.a.b,What type of employee were you?,true,Multiple Choice - Single Select,Full Time Employee; Contractor; Intern
+9a7a8705901e1001f30e535431110000,,9a7a8705901e1001f30e548857800008,b.a.c,What type of employee were you?,true,Multiple Choice - Single Select,Full Time Employee; Contractor; Intern
+9a7a8705901e1001f30e535431110000,,9a7a8705901e1001f30e552235890001,c,Do you require sponsorship to legally work in the job location?,true,Multiple Choice - Single Select,Yes; No

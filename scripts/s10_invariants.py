@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""S10/S11 invariant validation over the regenerated NVIDIA CSV.
+"""S10-S12 invariant validation over a regenerated board CSV.
 
 Read-only checks (the S9 P0-fix proofs, re-run per regen;
-S11 added INV-7..INV-9 for the v2.5 quality round):
+S11 added INV-7..INV-9 for the v2.5 quality round; S12 made the
+label a CLI arg so every company's CSV gets the same proofs):
   INV-1  no duplicate linkedinUrl among matched rows (1:1 card service)
   INV-2  no title-tier row carries a job_req_id belonging to a DIFFERENT
          on-board requisition (foreign-reqId guard)
@@ -19,6 +20,8 @@ S11 added INV-7..INV-9 for the v2.5 quality round):
          (measured repost resets — S11)
   INV-10 h1b wage-band integrity: banded rows carry all 4 stats + a
          basis; unbanded rows carry NONE (all-empty, never partial)
+
+Usage: s10_invariants.py [label] (default nvidia_us_fulltime)
 """
 import csv
 import json
@@ -30,7 +33,7 @@ sys.path.insert(0, "/home/z/my-project/job-sourcing-research/ingest")
 from jobsearch.corroborate import verbatim_match  # canonical predicate
 
 D = pathlib.Path("/home/z/my-project/job-sourcing-research/ingest/data/workday")
-LABEL = "nvidia_us_fulltime"
+LABEL = sys.argv[1] if len(sys.argv) > 1 else "nvidia_us_fulltime"
 
 rows = list(csv.DictReader((D / f"{LABEL}.csv").read_text(encoding="utf-8-sig").splitlines()))
 print(f"rows: {len(rows)}")

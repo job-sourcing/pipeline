@@ -497,6 +497,60 @@ class TestDefaultIndexSlices:
         assert slices[0]["keywords"] == "NVIDIA"
 
 
+class TestCompanyOverrides:
+    """S12 multi-company: per-company variants + slice geography via
+    module registries (the _DETAIL_SLEEP_S idiom) — registered entries
+    win, defaults stay NVIDIA-pilot-shaped."""
+
+    def setup_method(self):
+        # module state — isolate every test (registered maps are global)
+        self._saved_v = dict(corroborate.COMPANY_VARIANTS)
+        self._saved_l = dict(corroborate.SLICE_LOCATIONS)
+        corroborate.COMPANY_VARIANTS.clear()
+        corroborate.SLICE_LOCATIONS.clear()
+
+    def teardown_method(self):
+        corroborate.COMPANY_VARIANTS.clear()
+        corroborate.COMPANY_VARIANTS.update(self._saved_v)
+        corroborate.SLICE_LOCATIONS.clear()
+        corroborate.SLICE_LOCATIONS.update(self._saved_l)
+
+    def test_registered_variants_win_and_lowercase(self):
+        corroborate.set_company_overrides(
+            "Tencent", variants=["Tencent", "Tencent America",
+                                 "Tencent Games"])
+        assert corroborate._company_variants("Tencent") == [
+            "tencent", "tencent america", "tencent games"]
+
+    def test_unregistered_company_keeps_default_pair(self):
+        # the pilot behavior: base + '<base> ai' (NVIDIA / NVIDIA AI)
+        assert corroborate._company_variants("Acme") == ["acme", "acme ai"]
+
+    def test_registered_slice_locations_win(self):
+        corroborate.set_company_overrides(
+            "Netflix",
+            slice_locations=["United States",
+                             "Los Gatos, California, United States"])
+        slices = corroborate.default_index_slices("Netflix")
+        assert {sl["location"] for sl in slices} == {
+            "United States", "Los Gatos, California, United States"}
+        assert len(slices) == 12               # 6 keywords × 2 locations
+        # a DIFFERENT company is untouched by the registration
+        assert len(corroborate.default_index_slices("Acme")) == 30
+
+    def test_registry_is_per_company(self):
+        corroborate.set_company_overrides("Tencent", variants=["tencent"])
+        corroborate.set_company_overrides(
+            "JD.com", variants=["jd.com", "jd logistics"])
+        assert corroborate._company_variants("Tencent") == ["tencent"]
+        assert corroborate._company_variants("JD.com") == [
+            "jd.com", "jd logistics"]
+
+    def test_empty_registration_is_a_noop(self):
+        corroborate.set_company_overrides("", variants=["x"])
+        assert corroborate._company_variants("Acme") == ["acme", "acme ai"]
+
+
 class TestIndexCardsPartitioned:
     """S8-E1 (research §c): the single guest query hits a SERVING
     ceiling; the slice matrix unions keyword×location queries, deduped

@@ -341,6 +341,106 @@ def test_dump_board_applies_country_and_time_type(cfg, monkeypatch):
         "locationHierarchy1": ["USID"], "timeType": ["TTFULL"]}
 
 
+# ── S12 multi-company: client-side country fallback ────────────────────────
+# Boards without a locationHierarchy1 facet (netflix.wd108 / tencent.wd1 /
+# jd.wd103 serve only city-level locationMainGroup) filter the country on
+# location tokens instead — every observed locationsText dialect is pinned.
+
+class TestRowInCountry:
+    def test_us_dialects_all_match(self):
+        for loc in ("US, CA, Santa Clara",          # nvidia
+                    "USA - Remote",                 # netflix
+                    "US-California-Palo Alto",      # tencent
+                    "USA-California-Fontana",       # jd
+                    "United States",
+                    "Austin, Texas, United States"):
+            assert workday._row_in_country(
+                {"locationsText": loc}, "United States"), loc
+
+    def test_non_us_does_not_match(self):
+        for loc in ("AUS-Sydney",                    # 'aus' ≠ 'us' token
+                    "RUS-Moscow",
+                    "Seoul, Seoul, South Korea",
+                    "Vancouver, British Columbia, Canada",
+                    "United Kingdom",
+                    "United Arab Emirates",          # 'united' alone is
+                    "Amsterdam, Netherlands"):       #   never a match
+            assert not workday._row_in_country(
+                {"locationsText": loc}, "United States"), loc
+
+    def test_primary_location_country_field(self):
+        assert workday._row_in_country(
+            {"locationsText": "",
+             "primaryLocation": {"location": {
+                 "country": "United States"}}}, "United States")
+        assert not workday._row_in_country(
+            {"locationsText": "",
+             "primaryLocation": {"location": {
+                 "country": "Canada"}}}, "United States")
+
+    def test_non_us_country_matches_by_name_tokens(self):
+        # aliases are US-only; other countries match their own name tokens
+        assert workday._row_in_country(
+            {"locationsText": "Toronto, Ontario, Canada"}, "Canada")
+        assert not workday._row_in_country(
+            {"locationsText": "Toronto, Ontario, Canada"},
+            "United States")
+
+
+def _no_country_facets_payload() -> list[dict]:
+    """A facets payload shaped like netflix/tencent/jd boards — city-level
+    locationMainGroup (nested), NO locationHierarchy1 country facet."""
+    return [
+        _facet("timeType", [("Full time", "TTFULL", 548),
+                            ("Part time", "TTPART", 6)]),
+        {"facetParameter": "locationMainGroup", "values": [
+            {"facetParameter": "locations", "values": [
+                {"descriptor": "Los Gatos", "id": "LG", "count": 46},
+                {"descriptor": "Amsterdam", "id": "AMS", "count": 10},
+            ]}]},
+    ]
+
+
+def _no_country_page(total: int, postings: list[dict]) -> dict:
+    return {"total": total, "jobPostings": postings,
+            "facets": _no_country_facets_payload(),
+            "userAuthenticated": False}
+
+
+def test_client_country_filter_none_when_facet_present(cfg, monkeypatch):
+    # a board WITH the country facet → server-side path, no predicate
+    first = _page_response(10, [_posting(1)])
+    assert workday.client_country_filter("United States", first) is None
+
+
+def test_client_country_filter_predicate_when_facet_absent(cfg, monkeypatch):
+    first = _no_country_page(2, [])
+    pred = workday.client_country_filter("United States", first)
+    assert pred is not None
+    assert pred({"locationsText": "USA - Remote"})
+    assert not pred({"locationsText": "Amsterdam"})
+
+
+def test_list_board_client_country_fallback(cfg, monkeypatch):
+    """No country facet → list_board filters US rows client-side, keeps
+    the natural-end complete flag, and reports the drop count."""
+    us = dict(_posting(1), locationsText="USA - Remote")
+    nl = dict(_posting(2), locationsText="Amsterdam, Netherlands")
+    kr = dict(_posting(3), locationsText="Seoul, Seoul, South Korea")
+    page = _no_country_page(3, [us, nl, kr])
+    # call 1: discovery page-0; call 2: the timeType-filtered refetch
+    # (no country facet to apply server-side)
+    rec = _Recorder([page, _no_country_page(3, [us, nl, kr])])
+    monkeypatch.setattr(workday, "fetch_json", rec)
+    rows, meta = workday.list_board(
+        "netflix|wd108|Netflix", country="United States",
+        time_type="Full time", cfg=cfg)
+    assert set(rows) == {"JR1"}                     # US row only
+    assert meta["complete"] is True
+    assert meta["client_filtered"] == 2             # nl + kr dropped
+    assert meta["total"] == 3
+
+
 def test_dump_board_unknown_country_raises(cfg, monkeypatch):
     rec = _Recorder([_page_response(10, [_posting(1)])])
     monkeypatch.setattr(workday, "fetch_json", rec)
