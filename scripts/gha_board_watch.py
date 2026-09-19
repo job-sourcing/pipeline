@@ -84,7 +84,7 @@ sys.path.insert(0, str(REPO / "ingest"))
 
 from jobsearch.config import Config, load_config  # noqa: E402
 from jobsearch.htmltext import html_to_text  # noqa: E402
-from jobsearch.sources import workday  # noqa: E402
+from jobsearch.sources import site_boards, workday  # noqa: E402
 from jobsearch import corroborate  # noqa: E402
 
 WATCH_DIR = REPO / "ingest" / "data" / "board_watch"
@@ -151,7 +151,9 @@ def _load_jsonl(path: Path) -> list[dict]:
     if not path.exists():
         return []
     out: list[dict] = []
-    for line in path.read_text(encoding="utf-8").splitlines():
+    # S13: split("\n") not splitlines() — U+2028/U+2029 in CJK JSON
+    # strings are legal JSON but splitlines() shreds the records.
+    for line in path.read_text(encoding="utf-8").split("\n"):
         line = line.strip()
         if not line:
             continue
@@ -171,23 +173,30 @@ def _atomic_write(path: Path, text: str) -> None:
 # ── step 1: list (the SHARED CXS primitive — S7-B1 SA-1: this loop was
 # copy #3, and the timeType-facet omission shipped from that drift) ──────
 def current_postings(board_spec: str, country: str, time_type: str,
-                     cfg: Config) -> tuple[dict[str, dict], bool]:
-    """One full listing pass → {reqId: row} + complete flag (B1: the diff
-    only trusts 'gone' when the listing completed naturally)."""
+                     cfg: Config) -> tuple[dict[str, dict], bool, bool]:
+    """One full listing pass → {reqId: row} + complete flag +
+    country_client flag (B1: the diff only trusts 'gone' when the
+    listing completed naturally).
+
+    S13: for boards WITHOUT a country facet the listing returns the
+    FULL GLOBAL board (client_filter=False — the token predicate
+    undercounts city-only dialects); the caller classifies each row
+    via the enrichment detail's jobPostingInfo.country instead."""
     try:
-        rows, meta = workday.list_board(
+        rows, meta = site_boards.list_board(
             board_spec, country=country or None,
             time_type=time_type or None, cfg=cfg,
             sleep_s=LIST_SLEEP, progress_every=20,
-            progress_label="watch")
+            progress_label="watch", client_filter=False)
     except ValueError as exc:
         print(f"[watch] facet error on {board_spec}: {exc}", file=sys.stderr)
-        return {}, False
+        return {}, False, False
     except Exception as exc:                    # page-0 failure
         print(f"[watch] list page-0 failed on {board_spec}: "
               f"{type(exc).__name__}: {exc}", file=sys.stderr)
         raise
-    return rows, bool(meta.get("complete"))
+    return rows, bool(meta.get("complete")), \
+        bool(meta.get("country_client"))
 
 
 # ── step 3: enrich new postings (detail + LinkedIn signals, bounded) ─────
@@ -211,8 +220,13 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
     full locations, startDate, clean-text description, signals). Enrichment
     is best-effort — an unreachable detail still yields a record with
     error status; the record itself is what makes the alert feed durable.
+    board_spec-driven dispatch (S13): ats: specs serve from the
+    adapter's cached single board fetch (zero extra network); workday
+    specs hit the CXS detail endpoint per row, unchanged.
     """
-    board = workday.parse_board(board_spec)
+    is_site = site_boards.is_site_spec(board_spec)
+    if not is_site:
+        board = workday.parse_board(board_spec)
     workday._DETAIL_SLEEP_S = DETAIL_SLEEP
     out: list[dict] = []
     todo = new_rows[:DETAILS_MAX]
@@ -231,7 +245,13 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
             "postedOn": r.get("postedOn") or "",
             "url": r.get("url") or "",
         }
-        payload = workday.detail_payload(board, r.get("externalPath", ""), cfg)
+        if is_site:
+            payload = site_boards.detail_payload(board_spec,
+                                                 r.get("externalPath", ""),
+                                                 cfg)
+        else:
+            payload = workday.detail_payload(
+                board, r.get("externalPath", ""), cfg)
         info = (payload or {}).get("jobPostingInfo") or {}
         if info:
             rec["locations"] = _locations_of(info, r)
@@ -240,6 +260,10 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
             rec["timeType"] = info.get("timeType") or ""
             rec["hiringOrg"] = (payload.get("hiringOrganization") or {}).get("name")
             rec["externalUrl"] = info.get("externalUrl") or rec["url"]
+            # S13: the authoritative country from the detail payload —
+            # the classifier for client-country boards (the watch's US
+            # membership = state ∪ detail-classified-US new rows).
+            rec["country"] = workday.detail_country(payload)
         else:
             rec["error"] = "detail_unreachable"
             # 3-strike (B6, S7-V1): a transient detail outage must not
@@ -717,7 +741,9 @@ def refetch_repost_details(flags: list[dict], board_spec: str,
     {reqId: new_startDate})."""
     if not flags:
         return [], {}
-    board = workday.parse_board(board_spec)
+    is_site = site_boards.is_site_spec(board_spec)
+    if not is_site:
+        board = workday.parse_board(board_spec)
     events = [dict(f) for f in flags]
     start_updates: dict[str, str] = {}
     fetched = 0
@@ -732,7 +758,10 @@ def refetch_repost_details(flags: list[dict], board_spec: str,
         if not path:
             continue
         fetched += 1
-        payload = workday.detail_payload(board, path, cfg)
+        if is_site:                     # S13 site dispatch (cached)
+            payload = site_boards.detail_payload(board_spec, path, cfg)
+        else:
+            payload = workday.detail_payload(board, path, cfg)
         info = (payload or {}).get("jobPostingInfo") or {}
         new_sd = (info.get("startDate") or "").strip()
         if not new_sd:
@@ -905,7 +934,7 @@ def run_watch(w: dict, cfg: Config) -> str:
             lf.write(f"{line}\n({_now_iso()})\n\n")
 
     try:
-        current, list_complete = current_postings(
+        current, list_complete, country_client = current_postings(
             w["board"], w.get("country", ""), w.get("time_type", ""), cfg)
     except Exception as exc:
         _fail_summary(f"list fetch crashed ({type(exc).__name__}: {exc})")
@@ -923,12 +952,21 @@ def run_watch(w: dict, cfg: Config) -> str:
         _fail_summary(f"EMPTY-LIST ANOMALY (had {len(prior)} postings "
                       "yesterday) — state untouched")
         return "failed"
-    new_rows = [current[rid] for rid in current if rid not in prior]
-    # B1: only a completed listing may mark postings as gone
+    # S13 client-country boards: `current` is the FULL GLOBAL board (the
+    # list-level token filter undercounts city-only dialects — 'Los
+    # Gatos' carries no US token). Candidates are classified by their
+    # enrichment detail's jobPostingInfo.country AFTER the bounded fetch
+    # below; only US rows enter state/new/digest. Foreign rows cost
+    # exactly ONE detail fetch each (the classifier) and live on in the
+    # feed for audit. Facet boards (nvidia) are server-filtered — the
+    # classification below is a no-op for them.
+    cand_rows = [current[rid] for rid in current if rid not in prior]
+    new_rows = cand_rows
     gone_rows = [prior[rid] for rid in prior
                  if list_complete and rid not in current]
-    print(f"[watch:{label}] {len(current)} on board, "
-          f"+{len(new_rows)} new, -{len(gone_rows)} gone "
+    print(f"[watch:{label}] {len(current)} on board "
+          f"({'global' if country_client else 'country-filtered'}), "
+          f"+{len(cand_rows)} candidates, -{len(gone_rows)} gone "
           f"(list_complete={list_complete})", flush=True)
 
     # P0-1 recovery (audit S7-A2 C / S7-A3 P0-1): postings already in
@@ -995,7 +1033,7 @@ def run_watch(w: dict, cfg: Config) -> str:
 
     # enrich the NEW postings (bounded; budget-guarded)
     deadline = time.monotonic() + BUDGET_SECONDS
-    enrich_input = (new_rows + backlog_rows)[:DETAILS_MAX * 2]         if backlog_rows else new_rows
+    enrich_input = (cand_rows + backlog_rows)[:DETAILS_MAX * 2]         if backlog_rows else cand_rows
     # S9-audit D2 P2: retries/recoveries must not reset the feed's
     # first_seen. prior_feed seeds each reqId with its last FEED record
     # (first_seen preserved for enriched-with-error retries); state rows
@@ -1007,10 +1045,44 @@ def run_watch(w: dict, cfg: Config) -> str:
             prior_feed[rid] = {"first_seen": p["first_seen"]}
     enriched = enrich_new(enrich_input, w["board"], w["company"], cfg,
                           deadline, prior_feed=prior_feed)
+    if country_client:
+        # S13: classify the candidates by their detail country — the
+        # authoritative signal (jobPostingInfo.country on the payload
+        # enrich_new just fetched). new_rows (the alerting/US set) =
+        # US-classified candidates; foreign rows stay in the feed as
+        # audit; 3-strike rows fall back to the token predicate (S12
+        # behavior, undercount-accepting for that tail only); rows
+        # beyond DETAILS_MAX / budget stay PENDING (retried next leg).
+        wcountry = w.get("country", "")
+        enr_by_rid = {e["reqId"]: e for e in enriched}
+        us_rids: set[str] = set()
+        n_foreign = n_pending = n_token = 0
+        for r in cand_rows:
+            e = enr_by_rid.get(r["reqId"])
+            if e and not e.get("error") and (e.get("country") or "").strip():
+                if workday.country_str_matches(e["country"], wcountry):
+                    us_rids.add(r["reqId"])
+                else:
+                    n_foreign += 1
+            elif e and e.get("error") \
+                    and int(e.get("attempts") or 0) >= 3:
+                # 3-strike: token fallback (last resort, marked)
+                if workday._row_in_country(r, wcountry):
+                    us_rids.add(r["reqId"])
+                    n_token += 1
+                else:
+                    n_foreign += 1
+            else:
+                n_pending += 1     # no detail yet — retry next leg
+        new_rows = [r for r in cand_rows if r["reqId"] in us_rids]
+        print(f"[watch:{label}] country-classified: {len(new_rows)} US, "
+              f"{n_foreign} foreign (feed-only), {n_pending} pending "
+              f"({n_token} via token fallback)", flush=True)
     # S9 C5: run-level title-search budget cell — shared by THIS main
     # corroborate call only (the lag pass below never title-searches)
-    signals = corroborate_new(enrich_input, w["company"], cfg, deadline,
-                              title_search_budget=[TITLE_SEARCH_MAX])
+    signals = corroborate_new((new_rows + backlog_rows) if country_client
+                              else enrich_input, w["company"], cfg,
+                              deadline, title_search_budget=[TITLE_SEARCH_MAX])
     for e in enriched:
         s = signals.get(e["reqId"])
         if s:
@@ -1069,6 +1141,12 @@ def run_watch(w: dict, cfg: Config) -> str:
                     ok = date.fromisoformat(fs).toordinal() >= horizon
                 except ValueError:
                     ok = False
+                # S13: foreign feed rows (classified by detail country)
+                # never enter corroboration — they are not US postings.
+                if country_client and (r.get("country") or "").strip() \
+                        and not workday.country_str_matches(
+                            r.get("country") or "", w.get("country", "")):
+                    ok = False
                 if ok and not r.get("signals"):
                     recent[r["reqId"]] = r          # last line wins
             for rid in signals:                    # just-corroborated skip
@@ -1100,12 +1178,19 @@ def run_watch(w: dict, cfg: Config) -> str:
     # is INCOMPLETE, prior rows absent from the partial list are kept
     # verbatim (unknown fate ≠ gone — a dropped row would re-alert as
     # "new" on the next complete run).
+    # S13 client-country: state = the US membership ONLY (prior ∪
+    # classified-US new). Foreign rows never enter state — they cost
+    # one detail fetch (the classifier) and live in the feed as audit.
     today = date.today().isoformat()
     enr_by_rid = {e["reqId"]: e for e in enriched if e.get("reqId")}
     need_set = {r["reqId"] for r in new_rows}
     need_set.update(r["reqId"] for r in backlog_rows)
+    us_membership = set(prior) | {r["reqId"] for r in new_rows}
+    membership = us_membership if country_client else set(current)
     keep = []
     for rid, r in current.items():
+        if rid not in membership:
+            continue          # foreign (client-country mode)
         p = prior.get(rid) or {}
         rec = {
             "reqId": rid, "title": r.get("title") or "",
@@ -1150,7 +1235,9 @@ def run_watch(w: dict, cfg: Config) -> str:
         json.dumps(r, ensure_ascii=False) for r in keep) + "\n")
 
     digest = format_digest(label, w["company"], new_rows, enriched,
-                           signals, gone_rows, len(current),
+                           signals, gone_rows,
+                           len(membership & set(current))
+                           if country_client else len(current),
                            repost_events=repost_events)
     # S8-E2: reposts alone justify an alert (the whole point — resets
     # happen on days with no new/gone churn at all)
@@ -1159,8 +1246,12 @@ def run_watch(w: dict, cfg: Config) -> str:
     print(f"[watch:{label}] digest:\n{digest}", flush=True)
 
     # backlog = postings (new OR recovered) still awaiting enrichment
-    # (DETAILS_MAX/budget bound) — drives the self-retrigger
+    # (DETAILS_MAX/budget bound) — drives the self-retrigger. S13
+    # client-country: UNCLASSIFIED candidates count too (their detail
+    # fetch IS the classifier; next leg re-candidates them).
     need = {r["reqId"] for r in new_rows}
+    if country_client:
+        need.update(r["reqId"] for r in cand_rows)
     need.update(r["reqId"] for r in backlog_rows)
     enriched_rids = {e["reqId"] for e in enriched if e.get("reqId")}
     unenriched = len(need - enriched_rids)

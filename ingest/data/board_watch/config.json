@@ -13,13 +13,22 @@
    "company": "Netflix",
    "country": "United States",
    "time_type": "Full time",
-   "li_variants": ["Netflix", "Netflix Animation Studios"],
+   "li_variants": [
+    "Netflix",
+    "Netflix Animation Studios"
+   ],
    "slice_locations": [
     "United States",
     "Los Gatos, California, United States",
     "Los Angeles, California, United States",
     "New York, New York, United States",
-    "Remote, United States"
+    "Remote, United States",
+    "Washington, District of Columbia, United States",
+    "Las Vegas, Nevada, United States",
+    "Albuquerque, New Mexico, United States",
+    "Dallas, Texas, United States",
+    "Atlanta, Georgia, United States",
+    "Burbank, California, United States"
    ]
   },
   {
@@ -28,7 +37,11 @@
    "company": "Tencent",
    "country": "United States",
    "time_type": "Full time",
-   "li_variants": ["Tencent", "Tencent America", "Tencent Games"],
+   "li_variants": [
+    "Tencent",
+    "Tencent America",
+    "Tencent Games"
+   ],
    "slice_locations": [
     "United States",
     "Palo Alto, California, United States",
@@ -43,12 +56,49 @@
    "company": "JD.com",
    "country": "United States",
    "time_type": "Full time",
-   "li_variants": ["JD.com", "JD Logistics", "JD Technology"],
+   "li_variants": [
+    "JD.com",
+    "JD Logistics",
+    "JD Technology"
+   ],
    "slice_locations": [
     "United States",
     "Los Angeles, California, United States",
     "New York, New York, United States",
     "San Jose, California, United States",
+    "Remote, United States"
+   ]
+  },
+  {
+   "label": "openai_us_fulltime",
+   "board": "ats:ashby:openai",
+   "company": "OpenAI",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "OpenAI"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States",
+    "Seattle, Washington, United States",
+    "New York, New York, United States",
+    "Remote, United States"
+   ]
+  },
+  {
+   "label": "anthropic_us_fulltime",
+   "board": "ats:greenhouse:anthropic",
+   "company": "Anthropic",
+   "country": "United States",
+   "li_variants": [
+    "Anthropic"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States",
+    "Seattle, Washington, United States",
+    "New York, New York, United States",
     "Remote, United States"
    ]
   }

@@ -648,3 +648,117 @@ def test_list_board_unfiltered_census_from_single_page0(cfg, monkeypatch):
     assert len(rows) == 3
     assert "facets_filtered" not in meta
     assert meta["facets"]["locationHierarchy1"][0]["id"] == "USID"
+
+
+# ── S13: detail-based country classification ─────────────────────────────
+# The list-level token predicate UNDERCOUNTS on city-only dialects
+# (netflix 'Los Gatos' carries no US token). The authoritative signal is
+# the detail payload's jobPostingInfo.country — these pins hold that
+# contract, the string-level matcher, and the client_filter=False path.
+
+class TestDetailCountry:
+    def _payload(self, descriptor, alpha2=None):
+        jrl = None
+        if alpha2 or descriptor:
+            jrl = {"descriptor": "somewhere",
+                   "country": {"descriptor": descriptor,
+                               "alpha2Code": alpha2}}
+        return {"jobPostingInfo": {
+            "title": "T", "country": (
+                {"descriptor": descriptor, "id": "x"}
+                if descriptor else None),
+            "jobRequisitionLocation": jrl}}
+
+    def test_descriptor_path(self):
+        p = self._payload("United States of America")
+        assert workday.detail_country(p) == "united states of america"
+        assert workday.detail_in_country(p, "united states")
+
+    def test_alpha2_fallback(self):
+        p = {"jobPostingInfo": {"jobRequisitionLocation": {
+            "descriptor": "somewhere",
+            "country": {"descriptor": "Canada", "alpha2Code": "CA"}}}}
+        assert workday.detail_country(p) == "canada"
+        assert not workday.detail_in_country(p, "united states")
+        # jpi.country wins when both exist
+        p2 = self._payload("Germany")
+        assert workday.detail_country(p2) == "germany"
+
+    def test_missing_country_is_empty_not_us(self):
+        for p in (None, {}, {"jobPostingInfo": {}},
+                  {"jobPostingInfo": {"country": None}},
+                  {"jobPostingInfo": {"jobRequisitionLocation": None}}):
+            assert workday.detail_country(p) == ""
+            assert not workday.detail_in_country(p, "united states")
+
+    def test_multilocation_rows_classify_by_primary(self):
+        # netflix '2 Locations' rows: primary US + additional foreign →
+        # the detail country is the primary (US)
+        p = {"jobPostingInfo": {
+            "country": {"descriptor": "United States of America"},
+            "jobRequisitionLocation": {
+                "descriptor": "USA - Remote",
+                "country": {"descriptor": "United States of America",
+                            "alpha2Code": "US"}},
+            "additionalLocations": ["Toronto"]}}
+        assert workday.detail_in_country(p, "united states")
+
+
+class TestCountryStrMatches:
+    def test_us_aliases(self):
+        for got in ("united states", "united states of america",
+                    "usa", "us", "america", "U.S.A.".lower()):
+            assert workday.country_str_matches(got, "united states"), got
+            assert workday.country_str_matches("united states", got)
+
+    def test_non_us(self):
+        for got in ("canada", "united kingdom", "china", "singapore",
+                    "netherlands"):
+            assert not workday.country_str_matches(got, "united states")
+        assert workday.country_str_matches("canada", "canada")
+
+    def test_empties(self):
+        assert not workday.country_str_matches("", "united states")
+        assert not workday.country_str_matches("usa", "")
+        assert not workday.country_str_matches("", "")
+
+
+def test_list_board_client_filter_disabled(cfg, monkeypatch):
+    """client_filter=False lists the FULL board (no token predicate) for
+    client-country boards and flags meta['country_client'] — the S13
+    dump/watch contract (classification moves to the detail payload)."""
+    us = dict(_posting(1), locationsText="USA - Remote")
+    city = dict(_posting(2), locationsText="Los Gatos")   # no US token
+    page = _no_country_page(2, [us, city])
+
+    def fake_page(board, facets, offset, c):
+        return page
+    monkeypatch.setattr(workday, "_page", fake_page)
+    # timeType facet exists; the country facet does NOT (this board)
+    monkeypatch.setattr(workday, "_facet_id",
+                        lambda p, param, lbl:
+                        "f1" if param == "timeType" else None)
+
+    rows, meta = workday.list_board("netflix|wd108|Netflix", cfg=cfg,
+                                    country="United States",
+                                    client_filter=False)
+    assert meta["country_client"] is True
+    assert len(rows) == 2          # 'Los Gatos' is KEPT unclassified
+    assert rows["JR2"]["locationsText"] == "Los Gatos"
+
+    # default (client_filter=True) keeps the S12 token behavior
+    rows2, meta2 = workday.list_board("netflix|wd108|Netflix", cfg=cfg,
+                                      country="United States")
+    assert meta2["country_client"] is True
+    assert set(rows2) == {"JR1"}   # token filter drops 'Los Gatos'
+
+
+def test_list_board_facet_board_reports_not_client(cfg, monkeypatch):
+    """A facet board (nvidia) never sets country_client — the watch/dump
+    classification path is a no-op for it."""
+    monkeypatch.setattr(workday, "_page",
+                        lambda b, f, o, c: _page_response(10, [_posting(1)]))
+    monkeypatch.setattr(workday, "_facet_id", lambda p, param, lbl: "f1")
+    rows, meta = workday.list_board("nvidia|wd5|site", cfg=cfg,
+                                    country="United States")
+    assert meta.get("country_client") is False

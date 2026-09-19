@@ -1,12 +1,12 @@
-rows: 105 (unique reqIds: 105)
-details merged: 105
-descriptions present: 105
-locations enumerated (not 'N Locations'): 105
-startDate present: 105
-signals: matched=41 no_match=64 blocked=0 not_checked=0
-location entries total (sum nLocations): 105
-similar-job edges: 362
-facet census: 5 facets / 78 values (netflix_us_fulltime.facets.json)
-facet-tagged rows: workerSubType=105 jobFamilyGroup=105 (from facet_tags.jsonl)
-facet tag coverage: 105/105 rows (0 untagged)
-questionnaire definitions: 2 id(s) covering 105/105 rows; 2 fetched (16 questions → netflix_us_fulltime.questionnaires.csv)
+rows: 369 (unique reqIds: 369)
+details merged: 369
+descriptions present: 369
+locations enumerated (not 'N Locations'): 369
+startDate present: 369
+signals: matched=187 no_match=182 blocked=0 not_checked=0
+location entries total (sum nLocations): 487
+similar-job edges: 1278
+facet census: 5 facets / 77 values (netflix_us_fulltime.facets.json)
+facet-tagged rows: workerSubType=370 jobFamilyGroup=368 (from facet_tags.jsonl)
+facet tag coverage: 367/369 rows (2 untagged)
+questionnaire definitions: 3 id(s) covering 366/369 rows; 3 fetched (25 questions → netflix_us_fulltime.questionnaires.csv)

@@ -1,12 +1,12 @@
-rows: 47 (unique reqIds: 47)
-details merged: 47
-descriptions present: 47
-locations enumerated (not 'N Locations'): 47
-startDate present: 47
-signals: matched=34 no_match=13 blocked=0 not_checked=0
-location entries total (sum nLocations): 47
-similar-job edges: 41
-facet census: 5 facets / 202 values (jd_us_fulltime.facets.json)
-facet-tagged rows: workerSubType=47 jobFamilyGroup=47 (from facet_tags.jsonl)
-facet tag coverage: 47/47 rows (0 untagged)
-questionnaire definitions: 1 id(s) covering 47/47 rows; 1 fetched (2 questions → jd_us_fulltime.questionnaires.csv)
+rows: 55 (unique reqIds: 55)
+details merged: 55
+descriptions present: 55
+locations enumerated (not 'N Locations'): 55
+startDate present: 55
+signals: matched=41 no_match=14 blocked=0 not_checked=0
+location entries total (sum nLocations): 74
+similar-job edges: 668
+facet census: 5 facets / 204 values (jd_us_fulltime.facets.json)
+facet-tagged rows: workerSubType=57 jobFamilyGroup=57 (from facet_tags.jsonl)
+facet tag coverage: 55/55 rows (0 untagged)
+questionnaire definitions: 1 id(s) covering 55/55 rows; 1 fetched (2 questions → jd_us_fulltime.questionnaires.csv)

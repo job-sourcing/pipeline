@@ -1,0 +1,10 @@
+rows: 427 (unique reqIds: 427)
+details merged: 427
+descriptions present: 427
+locations enumerated (not 'N Locations'): 427
+startDate present: 0
+signals: matched=266 no_match=161 blocked=0 not_checked=0
+location entries total (sum nLocations): 545
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=427 (from facet_tags.jsonl)
+facet tag coverage: 427/427 rows (0 untagged)

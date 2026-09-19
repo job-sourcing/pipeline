@@ -64,7 +64,7 @@ def _env_file_value(name: str) -> str:
     """Read `name` from ingest/.env (KEY=value lines) if present."""
     env_path = Path(__file__).resolve().parents[1] / "ingest" / ".env"
     try:
-        for line in env_path.read_text(encoding="utf-8").splitlines():
+        for line in env_path.read_text(encoding="utf-8").split("\n"):
             line = line.strip()
             if line.startswith(f"{name}="):
                 return line.split("=", 1)[1].strip().strip("'\"")

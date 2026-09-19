@@ -164,7 +164,7 @@ sys.path.insert(0, str(REPO / "ingest"))
 
 from jobsearch.config import Config  # noqa: E402
 from jobsearch.htmltext import html_to_text  # noqa: E402
-from jobsearch.sources import workday  # noqa: E402
+from jobsearch.sources import site_boards, workday  # noqa: E402 — S13 site dispatch
 from jobsearch import corroborate  # noqa: E402
 
 # ── CSV v2 column contract (design-board-v2.md D1 + review addenda) ──────
@@ -322,9 +322,13 @@ _STATE_RE = re.compile(r"^[A-Z]{2},\s*([A-Z]{2}),")
 
 
 def _load_jsonl(path: Path) -> list[dict]:
+    # NOTE: split("\n") not splitlines() — JSON strings may legally
+    # carry U+2028/U+2029/U+0085 (CJK descriptions do; tencent live
+    # 2026-09-19), which splitlines() treats as line breaks, shredding
+    # otherwise-valid records into "corrupt lines" (S13).
     rows = []
     if path.exists():
-        for line in path.read_text(encoding="utf-8").splitlines():
+        for line in path.read_text(encoding="utf-8").split("\n"):
             line = line.strip()
             if line:
                 try:
@@ -425,10 +429,17 @@ def phase_list(args, out: Path) -> int:
     _atomic_write_text(out.with_suffix(".list.status"), json.dumps(
         {"rows": 0, "total": 0, "complete": False, "pages": 0}))
     try:
-        rows, meta = workday.list_board(
+        # S13: client_filter=False — boards without a country facet list
+        # ALL rows (the token predicate undercounts city-only dialects:
+        # netflix 'Los Gatos' carries no US token). Classification moved
+        # to --phase countryfilter (detail-payload country, honest).
+        # site_boards routes ats:{kind}:{org} specs to the custom-site
+        # adapters (greenhouse/ashby); workday specs unchanged.
+        rows, meta = site_boards.list_board(
             args.board, country=args.country or None,
             time_type=args.time_type or None, cfg=cfg,
-            sleep_s=args.sleep, progress_every=10)
+            sleep_s=args.sleep, progress_every=10,
+            client_filter=False)
     except ValueError as exc:
         print(f"[list] {exc}")
         return 2
@@ -479,6 +490,14 @@ def phase_list(args, out: Path) -> int:
               f"{meta.get('partition_facet')} partitions", flush=True)
     status = {"rows": len(rows), "total": meta.get("total"),
               "complete": complete, "pages": meta.get("pages")}
+    if meta.get("country_client"):
+        # S13: the listing is the FULL global board — rows are NOT yet
+        # country-classified. --phase countryfilter (after details)
+        # rewrites list.jsonl to the {country} population and replaces
+        # this marker; --phase finish hard-gates on it.
+        status["country_client"] = True
+        status["country"] = args.country or ""
+        status["country_filter_pending"] = True
     if meta.get("total_capped"):
         status["total_capped"] = True
         status["partition_facet"] = meta.get("partition_facet")
@@ -494,7 +513,7 @@ def phase_list(args, out: Path) -> int:
 # ── phase: details (v2 — RAW full payload) ───────────────────────────────
 
 def phase_details(args, out: Path) -> int:
-    board = workday.parse_board(args.board)
+    is_site = site_boards.is_site_spec(args.board)
     list_path = out.with_suffix(".list.jsonl")
     det_path = out.with_suffix(".details.jsonl")
     if not list_path.exists():
@@ -552,8 +571,11 @@ def phase_details(args, out: Path) -> int:
     n_errors = 0
     with open(det_path, "a", encoding="utf-8") as df:
         for i, r in enumerate(batch, 1):
-            payload = workday.detail_payload(
-                board, r["externalPath"], cfg)
+            # S13 dispatch: ats: specs → the site adapter (served from
+            # the cached single board fetch — zero extra network);
+            # workday specs → the CXS detail endpoint, unchanged.
+            payload = site_boards.detail_payload(
+                args.board, r["externalPath"], cfg)
             rec: dict = {"reqId": r["reqId"],
                          "fetched_at": datetime.now(timezone.utc
                                                     ).isoformat(
@@ -597,6 +619,102 @@ def phase_details(args, out: Path) -> int:
               f"(re-run --phase details)", flush=True)
     else:
         print(f"[details] ALL {len(rows)} rows enriched", flush=True)
+    return 0
+
+
+# ── phase: countryfilter (S13 — detail-based country classification) ──
+
+def phase_countryfilter(args, out: Path) -> int:
+    """Rewrite list.jsonl to the requested country's rows, classified by
+    the DETAIL payload's authoritative jobPostingInfo.country.
+
+    Why: boards without a country facet (netflix.wd108 / tencent.wd1 /
+    jd.wd103 — city-level facets only) cannot be filtered server-side,
+    and the S12 list-level token predicate UNDERCOUNTS on city-only
+    dialects (netflix writes locationsText='Los Gatos' with no US token:
+    ~200 real US postings silently dropped). Every detail payload
+    carries jobPostingInfo.country={descriptor,id} — even '2 Locations'
+    rows classify exactly.
+
+    Contract:
+    - drops rows whose settled detail says non-{country} → archived to
+      {out}.list.foreign.jsonl (auditable, never silent)
+    - KEEPS rows whose settled detail matches {country}
+    - KEEPS unresolved rows (no settled detail — 3-strike / pending
+      re-fetch): unknown ≠ foreign (B1 spirit); counted loudly, they
+      ship as detailError rows if they stay unresolved
+    - list.status: rows becomes the {country} count; the
+      country_filter_pending marker is replaced by country_filtered
+      {kept, dropped, unresolved, basis:'detail'}
+    - idempotent: re-runs re-derive from list.jsonl + the append-only
+      details state (a row whose detail settles later reclassifies)
+    - boards WITH the country facet: no-op (server-side filtered at
+      list time) — exit 0 with a note
+    """
+    list_path = out.with_suffix(".list.jsonl")
+    if not list_path.exists():
+        print(f"no {list_path} — run --phase list first")
+        return 2
+    status: dict = {}
+    try:
+        status = json.loads(out.with_suffix(".list.status").read_text(
+            encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        pass
+    if not status.get("country_client"):
+        print("[countryfilter] board filters country server-side — "
+              "nothing to do")
+        return 0
+    country = status.get("country") or args.country or "united states"
+    rows = _load_jsonl(list_path)
+    if not rows:
+        print("[countryfilter] list.jsonl is empty — nothing to classify")
+        return 0
+    det_view, _attempts = _load_details_state(out.with_suffix(
+        ".details.jsonl"))
+    kept: list[dict] = []
+    dropped: list[dict] = []
+    unresolved = 0
+    for r in rows:
+        d = det_view.get(r["reqId"])
+        info = (d or {}).get("info")
+        if info:
+            # authoritative classifier: the detail's own country field
+            if workday.detail_in_country({"jobPostingInfo": info},
+                                         country):
+                kept.append(r)
+            else:
+                r2 = dict(r)
+                r2["country"] = workday.detail_country(
+                    {"jobPostingInfo": info})
+                dropped.append(r2)
+        else:
+            kept.append(r)      # unknown ≠ foreign
+            unresolved += 1
+    _atomic_write_text(list_path, "\n".join(
+        json.dumps(r, ensure_ascii=False) for r in kept) + "\n")
+    foreign_path = out.with_suffix(".list.foreign.jsonl")
+    if dropped:
+        with open(foreign_path, "a", encoding="utf-8") as ff:
+            for r in dropped:
+                ff.write(json.dumps(r, ensure_ascii=False) + "\n")
+    status["rows"] = len(kept)
+    status["country_filter_pending"] = False
+    status["country_filtered"] = {
+        "kept": len(kept), "dropped": len(dropped),
+        "unresolved": unresolved, "basis": "detail",
+        "classified_at": datetime.now(timezone.utc).isoformat(
+            timespec="seconds"),
+    }
+    _atomic_write_text(out.with_suffix(".list.status"), json.dumps(status))
+    print(f"[countryfilter] {country!r}: kept {len(kept)} "
+          f"(unresolved {unresolved}), dropped {len(dropped)} → "
+          f"{list_path} (+ {foreign_path})", flush=True)
+    if unresolved:
+        print(f"[countryfilter] WARNING: {unresolved} row(s) have no "
+              f"settled detail — kept as unknown (re-run --phase details "
+              f"then this phase; 3-strike rows ship as detailError)",
+              file=sys.stderr)
     return 0
 
 
@@ -1038,6 +1156,33 @@ def phase_facet_tags(args, out: Path) -> int:
     if not list_path.exists():
         print(f"no {list_path} — run --phase list first")
         return 2
+    if site_boards.is_site_spec(args.board):
+        # S13 custom sites: no CXS facets to sub-list — the adapter's
+        # list rows carry the ATS's OWN taxonomy natively (departments
+        # → jobFamilyGroup; ashby team → workerSubType when present).
+        # Write the same facet_tags.jsonl row shape the finish phase
+        # already joins on (zero network; idempotent rewrite).
+        rows = _load_jsonl(list_path)
+        tag_path = out.with_suffix(".facet_tags.jsonl")
+        lines = []
+        for r in rows:
+            dept = (r.get("departments") or [""])[0] or ""
+            if dept:
+                lines.append(json.dumps(
+                    {"reqId": r["reqId"], "jobFamilyGroup": dept},
+                    ensure_ascii=False))
+            team = r.get("team") or ""
+            if team:
+                lines.append(json.dumps(
+                    {"reqId": r["reqId"], "workerSubType": team},
+                    ensure_ascii=False))
+        _atomic_write_text(tag_path, "\n".join(lines) + ("\n" if lines
+                                                         else ""))
+        print(f"[tagfacets] site adapter: wrote {len(lines)} native-"
+              f"taxonomy tag rows (departments"
+              f"{'/teams' if any(r.get('team') for r in rows) else ''}) "
+              f"→ {tag_path}", flush=True)
+        return 0
     cfg = Config()
     board = workday.parse_board(args.board)
     try:
@@ -1056,8 +1201,14 @@ def phase_facet_tags(args, out: Path) -> int:
     # jd) filter the country client-side — the sub-lists carry the same
     # predicate so tag counts reflect the DUMPED population, not the
     # whole global board.
-    country_filter = workday.client_country_filter(
-        args.country or "", first) if country_client else None
+    # S13: the token predicate became a MEMBERSHIP predicate — the dumped
+    # population is now exactly the post-countryfilter list.jsonl (the
+    # detail-classified {country} set), which is STRICTLY more honest
+    # than location tokens (a 'Los Gatos' row is in the dumped
+    # population even though its tokens carry no country).
+    _dumped = {r["reqId"] for r in _load_jsonl(list_path)}
+    country_filter = (lambda row: row.get("reqId") in _dumped) \
+        if country_client else None
     tag_path = out.with_suffix(".facet_tags.jsonl")
     digest, board_rows = _board_pop_fingerprint(_load_jsonl(list_path))
     done_pairs: set = set()
@@ -1230,7 +1381,17 @@ def phase_questionnaires(args, out: Path) -> int:
     chained caller sees the gap). finish joins by id and emits the
     linked {out}.questionnaires.csv; a missing definition ships as a
     finish-time WARNING, never silent.
+
+    S13 custom sites: greenhouse/ashby public payloads carry NO
+    application questions (they live behind the apply-form) — honest
+    no-op: questionnaireId ships blank, no linked CSV, said loudly.
     """
+    if site_boards.is_site_spec(args.board):
+        print("[questionnaires] site adapter: public payloads carry no "
+              "application questions — questionnaireId ships blank "
+              "(honest no-op; questions live behind the apply form)",
+              flush=True)
+        return 0
     det_path = out.with_suffix(".details.jsonl")
     if not det_path.exists():
         print(f"no {det_path} — run --phase details first")
@@ -1385,7 +1546,7 @@ def _load_h1b_bands(out: Path) -> tuple[dict, list[dict]]:
     path = out.with_suffix(".h1b_lca.jsonl")
     if not path.exists():
         return pools, recs
-    for line in path.read_text(encoding="utf-8").splitlines():
+    for line in path.read_text(encoding="utf-8").split("\n"):
         line = line.strip()
         if not line:
             continue
@@ -1731,6 +1892,22 @@ def phase_finish(args, out: Path) -> int:
     list_path = out.with_suffix(".list.jsonl")
     if not list_path.exists():
         print("no list file — run --phase list first")
+        return 2
+    # S13 hard gate: a client-country listing that never ran
+    # --phase countryfilter would ship the FULL GLOBAL board as the CSV
+    # (the list phase intentionally skips the token filter now). Never
+    # silent: refuse until the detail-based classification has run.
+    try:
+        _lst_status = json.loads(out.with_suffix(".list.status").read_text(
+            encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        _lst_status = {}
+    if _lst_status.get("country_filter_pending"):
+        print("[finish] REFUSED: list.status carries "
+              "country_filter_pending — the listing is the full global "
+              "board. Run --phase details (until ALL) then --phase "
+              "countryfilter first (detail-based country classification)",
+              file=sys.stderr)
         return 2
     rows = _load_jsonl(list_path)
     # S9-audit C1/A5 P1: last-good-record view — a failed refetch's
@@ -2152,7 +2329,8 @@ def main() -> int:
                          "SV/Austin/Seattle set; locations contain "
                          "commas so the separator is ';') [S12]")
     ap.add_argument("--phase", default="finish",
-                    choices=["list", "details", "corroborate",
+                    choices=["list", "details", "countryfilter",
+                             "corroborate",
                              "titlesearch", "tagfacets", "questionnaires",
                              "finish"])
     ap.add_argument("--details-batch", type=int, default=150)
@@ -2216,6 +2394,8 @@ def main() -> int:
         return phase_list(args, out)
     if args.phase == "details":
         return phase_details(args, out)
+    if args.phase == "countryfilter":
+        return phase_countryfilter(args, out)
     if args.phase == "corroborate":
         return phase_corroborate(args, out)
     if args.phase == "titlesearch":

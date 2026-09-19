@@ -35,7 +35,7 @@ from jobsearch.corroborate import verbatim_match  # canonical predicate
 D = pathlib.Path("/home/z/my-project/job-sourcing-research/ingest/data/workday")
 LABEL = sys.argv[1] if len(sys.argv) > 1 else "nvidia_us_fulltime"
 
-rows = list(csv.DictReader((D / f"{LABEL}.csv").read_text(encoding="utf-8-sig").splitlines()))
+rows = list(csv.DictReader((D / f"{LABEL}.csv").read_text(encoding="utf-8-sig").split("\n")))
 print(f"rows: {len(rows)}")
 
 matched = [r for r in rows if r["corroborationStatus"] == "matched"]
@@ -63,7 +63,7 @@ assert not dups, f"INV-1 FAIL: {dups[:5]}"
 # ON-BOARD req — read from the signal record via the URL id)
 import re
 sig = {}
-for line in (D / f"{LABEL}.signals.jsonl").read_text().splitlines():
+for line in (D / f"{LABEL}.signals.jsonl").read_text().split("\n"):
     if line.strip():
         s = json.loads(line)
         sig[str(s.get("linkedin_job_id"))] = s
@@ -98,7 +98,7 @@ assert not bad_verbatim, f"INV-3 FAIL: {bad_verbatim[:5]}"
 
 # INV-4: every no_match req has a terminal titlesearch line
 ts = {}
-for line in (D / f"{LABEL}.title_search.jsonl").read_text().splitlines():
+for line in (D / f"{LABEL}.title_search.jsonl").read_text().split("\n"):
     if line.strip():
         t = json.loads(line)
         ts[t["reqId"]] = t
@@ -130,7 +130,7 @@ assert not neg, f"INV-7 FAIL: {neg[:5]}"
 qcsv = D / f"{LABEL}.questionnaires.csv"
 assert qcsv.exists(), "INV-8 FAIL: questionnaires.csv missing"
 qrows = list(csv.DictReader(
-    qcsv.read_text(encoding="utf-8-sig").splitlines()))
+    qcsv.read_text(encoding="utf-8-sig").split("\n")))
 linked_ids = {q["questionnaireId"] for q in qrows}
 csv_ids = {r["questionnaireId"] for r in rows if r["questionnaireId"]}
 unlinked = sorted(csv_ids - linked_ids)

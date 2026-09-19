@@ -164,6 +164,13 @@ def client_country_filter(country: str,
     filter rows itself). None when the board HAS the facet — then the
     normal resolve_facets path applies (including its unknown-country
     ValueError, which stays the honest failure for a mis-typed name).
+
+    S13: the token predicate UNDERCOUNTS (city-only dialects — Netflix
+    writes locationsText='Los Gatos' with no US token, no server country;
+    ~200 real US postings silently dropped). The honest classifier is the
+    DETAIL payload's jobPostingInfo.country — see detail_country(). The
+    token filter stays as the 3-strike fallback + the fast path where
+    boards carry explicit country codes (tencent/jd ISO dialects).
     """
     has_country_facet = any(
         f.get("facetParameter") == _FACET_COUNTRY
@@ -171,6 +178,68 @@ def client_country_filter(country: str,
     if has_country_facet or not (country or "").strip():
         return None
     return lambda row: _row_in_country(row, country)
+
+
+# S13 detail-based country classification — the authoritative signal.
+# Workday details carry jobPostingInfo.country = {descriptor, id} (and
+# jobRequisitionLocation.country adds alpha2Code) on EVERY board,
+# including the city-only-dialect ones that defeat the list-level token
+# predicate (netflix wd108: 'Los Gatos' / '2 Locations' rows classify
+# cleanly as 'United States of America' / 'Canada').
+_US_COUNTRY_NAMES = frozenset((
+    "united states", "united states of america", "usa", "us",
+    "u.s.", "u.s.a", "u.s.a.", "america",
+))
+
+
+def detail_country(payload: Optional[dict]) -> str:
+    """Normalized country descriptor from a detail payload ('' when
+    unknown). Prefers jobPostingInfo.country.descriptor, falls back to
+    jobRequisitionLocation.country (descriptor or alpha2Code)."""
+    if not isinstance(payload, dict):
+        return ""
+    jpi = payload.get("jobPostingInfo") or {}
+    c = jpi.get("country")
+    if isinstance(c, dict) and isinstance(c.get("descriptor"), str) \
+            and c["descriptor"].strip():
+        return c["descriptor"].strip().lower()
+    jrl = jpi.get("jobRequisitionLocation")
+    if isinstance(jrl, dict):
+        c2 = jrl.get("country")
+        if isinstance(c2, dict):
+            d = c2.get("descriptor") or c2.get("alpha2Code") or ""
+            if isinstance(d, str) and d.strip():
+                return d.strip().lower()
+    return ""
+
+
+def country_str_matches(got: str, country: str) -> bool:
+    """String-level normalized country match (for feed/state records that
+    carry a plain country descriptor, e.g. the watch's enriched
+    records). 'united states' ↔ 'USA' / 'US' / 'United States of
+    America' / 'America' all agree; multi-word names phrase-match."""
+    got = (got or "").strip().lower()
+    base = (country or "").strip().lower()
+    if not got or not base:
+        return False
+    if got == base:
+        return True
+    if base == "united states" and got in _US_COUNTRY_NAMES:
+        return True
+    if got == "united states" and base in _US_COUNTRY_NAMES:
+        return True
+    singles, phrases = _country_matchers(base)
+    if got in singles:
+        return True
+    got_toks = set(re.split(r"[\s\-]+", got))
+    return any(all(t in got_toks for t in ph) for ph in phrases)
+
+
+def detail_in_country(payload: Optional[dict], country: str) -> bool:
+    """Is this detail's country == `country` (normalized)? Uses the
+    alias table so 'united states' matches 'USA' / 'US' / 'United
+    States of America' descriptors."""
+    return country_str_matches(detail_country(payload), country)
 
 _WORKDAY_CFG_RE = re.compile(
     r"window\.workday\s*=\s*(?:window\.workday\s*\|\|\s*)?\{")
@@ -801,7 +870,8 @@ def list_board(spec: str, *, country: Optional[str] = None,
                time_type: Optional[str] = None,
                cfg: Optional[Config] = None, sleep_s: float = 0.2,
                progress_every: int = 0,
-               progress_label: str = "list"
+               progress_label: str = "list",
+               client_filter: bool = True,
                ) -> tuple[dict[str, dict], dict]:
     """Convenience: parse spec → page-0 → resolve facets → refetch →
     iter. ValueError on unknown facet; (partial, complete=False) on
@@ -810,18 +880,26 @@ def list_board(spec: str, *, country: Optional[str] = None,
     [, "facets_filtered"[, "total_capped", …]]}) — meta["facets"] is the
     BOARD-WIDE census from the discovery page-0 (even when filters are
     applied); meta["facets_filtered"] carries the caller-filtered census
-    when facets were applied (both additive, S8-D gap #4)."""
+    when facets were applied (both additive, S8-D gap #4).
+
+    S13: meta["country_client"] reports whether this board has no
+    country facet (client-classification mode). In that mode
+    client_filter=False DISABLES the list-level token predicate — the
+    caller intends to classify by detail payload instead (the honest
+    path: city-only dialects like 'Los Gatos' carry no US token but the
+    detail's jobPostingInfo.country is authoritative)."""
     cfg = cfg or Config()
     board = parse_board(spec)
     first = _page(board, {}, 0, cfg)
     facets, country_client = resolve_facets(board, first, country,
                                             time_type)
     row_filter = client_country_filter(country, first) \
-        if country_client else None
+        if (country_client and client_filter) else None
     if country_client:
         print(f"[{progress_label}] NOTE: board {spec!r} exposes no "
-              f"country facet — filtering {country!r} client-side "
-              f"on location tokens (S12)", file=sys.stderr, flush=True)
+              f"country facet — country {country!r} is "
+              f"{'token-filtered' if row_filter else 'detail-classified'}"
+              f" client-side (S12/S13)", file=sys.stderr, flush=True)
     board_facets = facet_census(first)
     iter_first = first
     if facets:
@@ -832,6 +910,7 @@ def list_board(spec: str, *, country: Optional[str] = None,
         board_facets=board_facets, row_filter=row_filter)
     if facets:
         meta["facets_filtered"] = facet_census(iter_first)
+    meta["country_client"] = bool(country_client)
     return rows, meta
 
 

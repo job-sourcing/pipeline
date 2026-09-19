@@ -83,6 +83,8 @@ jobs:
           extract netflix_us_fulltime "NETFLIX"
           extract tencent_us_fulltime "TENCENT"
           extract jd_us_fulltime "JD.COM,JD AMERICAN,JINGDONG"
+          extract openai_us_fulltime "OPENAI,OPENAI LLC"
+          extract anthropic_us_fulltime "ANTHROPIC,ANTHROPIC PBC"
 
       - name: Checkpoint extract to git (race-proof)
         if: always()

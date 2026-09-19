@@ -3,19 +3,75 @@
  "company": "JD.com",
  "country": "United States",
  "time_type": "Full time",
- "dumpDate": "2026-09-17",
- "count": 47,
- "details_merged": 47,
- "signals_matched": 34,
- "similar_edges": 41,
- "facet_tagged_rows": 47,
+ "dumpDate": "2026-09-19",
+ "count": 55,
+ "details_merged": 55,
+ "signals_matched": 41,
+ "similar_edges": 668,
+ "facet_tagged_rows": 57,
  "rows": [
+  {
+   "title": "Warehouse Lead",
+   "externalPath": "/job/USA-New-Jersey-Old-Bridge/Warehouse-Lead_JR104054",
+   "timeType": "Full time",
+   "locationsText": "USA-New Jersey-Old Bridge",
+   "postedOn": "Posted Yesterday",
+   "bulletFields": [
+    "JR104054"
+   ],
+   "reqId": "JR104054",
+   "company": "JD.com",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-New-Jersey-Old-Bridge/Warehouse-Lead_JR104054",
+   "detail": {
+    "id": "934006d4e310100617828f3d817f0000",
+    "title": "Warehouse Lead",
+    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JINGDONG Logistics (JD Logistics), part of JD.com, we are a leading technology-driven supply chain and logistics solutions provider under JD.com. Built on deep expertise in automation, smart fulfilment, and data intelligence, we operate end-to-end logistics services that empower businesses and enhance customer experience. Our integrated networks span warehouse management, line-haul transportation, last-mile delivery, bulky items logistics, cold chain, and cross-border operations, ensuring speed, reliability, and precision at every stage.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JINGDONG Logistics has developed one of the most extensive logistics infrastructures in the world, managing more than 3,600 warehouses with over 34 million square meters of space. Our Global Smart Supply Chain Network combines highly automated warehousing with robust international transportation solutions, enabling seamless cross-border movement. Today, we operate 130&#43; bonded, direct mail, and overseas warehouses across 23 countries and regions, supported by our global brands, JoyLogistics and JoyExpress, as we continue scaling JD.com’s international logistics footprint.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://www.jingdonglogistics.com/\"><span style=\"color:#0000ff\"><u>https://www.jingdonglogistics.com/</u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD Logistics means helping shape the future of global supply chain and logistics. You’ll work with smart warehousing, autonomous delivery, and innovative technology that keeps goods moving worldwide. With a competitive salary, great locations, and a supportive, people-first culture, you’ll have the space to take on meaningful challenges, grow your skills, and make a real impact in a fast-evolving industry.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JINGDONG Logistics team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p><span></span></p><p><span></span></p><p><b>Location: Old Bridge, NJ </b></p><p><b>Pay rate: $23-$27</b></p><p></p><p><b>About the Role</b></p><p>The <b>Warehouse Team Leader</b> supports supervisors in managing daily warehouse operations while directly leading a small group of associates. This role is ideal for someone ready to step into leadership or grow their career in logistics. You’ll be responsible for ensuring smooth workflow, training new staff, and keeping performance on track.</p><p><b>Key Responsibilities</b></p><ul><li>Lead a small team of associates in one or more warehouse functions (receiving, picking, packing, etc.)</li><li>Assist with labor planning and workflow coordination</li><li>Train new team members on SOPs, safety, and process efficiency</li><li>Monitor order accuracy, report issues, and escalate when needed</li><li>Ensure a clean and safe working environment</li></ul><p><b>Qualifications</b></p><ul><li>1–2 years of warehouse experience; prior team lead or unofficial leadership experience preferred</li><li>Strong organizational and communication skills</li><li>Willingness to work overtime and support flexible scheduling</li><li>Familiarity with scanners or WMS systems is a plus</li><li>Mandarin skills required</li></ul><p><b>Preferred Traits</b></p><ul><li>Eager to learn and grow into a supervisor role</li><li>Dependable, positive, and team-oriented</li><li>Comfortable working in a fast-paced environment</li></ul><p></p><p></p><p><i>At JINGDONG Logistics, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
+    "location": "USA-New Jersey-Old Bridge",
+    "postedOn": "Posted Yesterday",
+    "startDate": "2026-09-17",
+    "timeType": "Full time",
+    "jobReqId": "JR104054",
+    "jobPostingId": "Warehouse-Lead_JR104054",
+    "jobPostingSiteId": "Careers_at_JD",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "logoImage": {
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f0e73a02c7580001",
+     "alt": "JINGDONG Logistics"
+    },
+    "canApply": true,
+    "posted": true,
+    "includeResumeParsing": true,
+    "jobRequisitionLocation": {
+     "descriptor": "USA-New Jersey-Old Bridge",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09",
+      "alpha2Code": "US"
+     }
+    },
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-New-Jersey-Old-Bridge/Warehouse-Lead_JR104054",
+    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
+   },
+   "hiringOrg": "JD LOGISTICS US",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "workerSubType": "Regular (Permanent)",
+   "jobFamilyGroup": "JFG_Skill Operations",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
   {
    "title": "Operator",
    "externalPath": "/job/USA-California-Fontana/Operator_JR103540",
    "timeType": "Full time",
    "locationsText": "USA-California-Fontana",
-   "postedOn": "Posted Yesterday",
+   "postedOn": "Posted 2 Days Ago",
    "bulletFields": [
     "JR103540"
    ],
@@ -90,7 +146,7 @@
    "externalPath": "/job/USA-Massachusetts-Middlesex-County/Warehouse-Supervisor---Overnight---NJ_JR103895",
    "timeType": "Full time",
    "locationsText": "USA-Massachusetts-Middlesex County",
-   "postedOn": "Posted 3 Days Ago",
+   "postedOn": "Posted 4 Days Ago",
    "bulletFields": [
     "JR103895"
    ],
@@ -152,7 +208,7 @@
    "externalPath": "/job/USA-New-Jersey-Old-Bridge/Warehouse-Supervisor_JR103943",
    "timeType": "Full time",
    "locationsText": "USA-New Jersey-Old Bridge",
-   "postedOn": "Posted 3 Days Ago",
+   "postedOn": "Posted 4 Days Ago",
    "bulletFields": [
     "JR103943"
    ],
@@ -247,7 +303,7 @@
    "externalPath": "/job/USA-New-Jersey-Piscataway-Township/JD-Young-Logistics-Operations-Internship_JR102033",
    "timeType": "Full time",
    "locationsText": "USA-New Jersey-Piscataway Township",
-   "postedOn": "Posted 6 Days Ago",
+   "postedOn": "Posted 7 Days Ago",
    "bulletFields": [
     "JR102033"
    ],
@@ -322,7 +378,7 @@
    "externalPath": "/job/USA-New-Jersey/Outbound-Team-Leader_JR103893",
    "timeType": "Full time",
    "locationsText": "USA-New Jersey",
-   "postedOn": "Posted 6 Days Ago",
+   "postedOn": "Posted 7 Days Ago",
    "bulletFields": [
     "JR103893"
    ],
@@ -391,7 +447,7 @@
    "externalPath": "/job/USA-Georgia/Operator_JR103068",
    "timeType": "Full time",
    "locationsText": "USA-Georgia",
-   "postedOn": "Posted 7 Days Ago",
+   "postedOn": "Posted 8 Days Ago",
    "bulletFields": [
     "JR103068"
    ],
@@ -453,7 +509,7 @@
    "externalPath": "/job/USA-California-City-of-Industry/Senior-Fleet-Manager_JR103916",
    "timeType": "Full time",
    "locationsText": "USA-California-City of Industry",
-   "postedOn": "Posted 7 Days Ago",
+   "postedOn": "Posted 8 Days Ago",
    "bulletFields": [
     "JR103916"
    ],
@@ -528,7 +584,7 @@
    "externalPath": "/job/USA-California-Chino-City/Equipment-Maintenance_JR103919",
    "timeType": "Full time",
    "locationsText": "USA-California-Chino City",
-   "postedOn": "Posted 7 Days Ago",
+   "postedOn": "Posted 8 Days Ago",
    "bulletFields": [
     "JR103919"
    ],
@@ -597,7 +653,7 @@
    "externalPath": "/job/USA-California-Fontana/Middle-Mile-Operations_JR103742",
    "timeType": "Full time",
    "locationsText": "USA-California-Fontana",
-   "postedOn": "Posted 8 Days Ago",
+   "postedOn": "Posted 9 Days Ago",
    "bulletFields": [
     "JR103742"
    ],
@@ -666,7 +722,7 @@
    "externalPath": "/job/USA-California-Fontana/Warehouse-Supervisor_JR102970",
    "timeType": "Full time",
    "locationsText": "USA-California-Fontana",
-   "postedOn": "Posted 13 Days Ago",
+   "postedOn": "Posted 14 Days Ago",
    "bulletFields": [
     "JR102970"
    ],
@@ -735,7 +791,7 @@
    "externalPath": "/job/USA-California/Business-Training-Specialist_JR103640",
    "timeType": "Full time",
    "locationsText": "USA-California",
-   "postedOn": "Posted 21 Days Ago",
+   "postedOn": "Posted 22 Days Ago",
    "bulletFields": [
     "JR103640"
    ],
@@ -804,7 +860,7 @@
    "externalPath": "/job/USA-New-Jersey-Middlesex-County/Warehouse-Lead_JR103723",
    "timeType": "Full time",
    "locationsText": "USA-New Jersey-Middlesex County",
-   "postedOn": "Posted 21 Days Ago",
+   "postedOn": "Posted 22 Days Ago",
    "bulletFields": [
     "JR103723"
    ],
@@ -879,7 +935,7 @@
    "externalPath": "/job/USA-Georgia-Atlanta/HR-Business-Partner_JR103685",
    "timeType": "Full time",
    "locationsText": "USA-Georgia-Atlanta",
-   "postedOn": "Posted 24 Days Ago",
+   "postedOn": "Posted 25 Days Ago",
    "bulletFields": [
     "JR103685"
    ],
@@ -948,7 +1004,7 @@
    "externalPath": "/job/USA-New-Jersey/HR-Business-Partner_JR103684",
    "timeType": "Full time",
    "locationsText": "USA-New Jersey",
-   "postedOn": "Posted 24 Days Ago",
+   "postedOn": "Posted 25 Days Ago",
    "bulletFields": [
     "JR103684"
    ],
@@ -1162,35 +1218,38 @@
    }
   },
   {
-   "title": "Warehouse Team Leader (Night Shift)",
-   "externalPath": "/job/USA-California-Fontana/Warehouse-Team-Leader--Night-Shift-_JR103541",
+   "title": "HR SSC",
+   "externalPath": "/job/USA-California-Fontana/HR-SSC_JR103453",
    "timeType": "Full time",
-   "locationsText": "USA-California-Fontana",
+   "locationsText": "2 Locations",
    "postedOn": "Posted 30+ Days Ago",
    "bulletFields": [
-    "JR103541"
+    "JR103453"
    ],
-   "reqId": "JR103541",
+   "reqId": "JR103453",
    "company": "JD.com",
-   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Fontana/Warehouse-Team-Leader--Night-Shift-_JR103541",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Fontana/HR-SSC_JR103453",
    "detail": {
-    "id": "27458ca9eb121000e895716114510000",
-    "title": "Warehouse Team Leader (Night Shift)",
-    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JINGDONG Logistics (JD Logistics), part of JD.com, we are a leading technology-driven supply chain and logistics solutions provider under JD.com. Built on deep expertise in automation, smart fulfilment, and data intelligence, we operate end-to-end logistics services that empower businesses and enhance customer experience. Our integrated networks span warehouse management, line-haul transportation, last-mile delivery, bulky items logistics, cold chain, and cross-border operations, ensuring speed, reliability, and precision at every stage.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JINGDONG Logistics has developed one of the most extensive logistics infrastructures in the world, managing more than 3,600 warehouses with over 34 million square meters of space. Our Global Smart Supply Chain Network combines highly automated warehousing with robust international transportation solutions, enabling seamless cross-border movement. Today, we operate 130&#43; bonded, direct mail, and overseas warehouses across 23 countries and regions, supported by our global brands, JoyLogistics and JoyExpress, as we continue scaling JD.com’s international logistics footprint.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://www.jingdonglogistics.com/\"><span style=\"color:#0000ff\"><u>https://www.jingdonglogistics.com/</u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD Logistics means helping shape the future of global supply chain and logistics. You’ll work with smart warehousing, autonomous delivery, and innovative technology that keeps goods moving worldwide. With a competitive salary, great locations, and a supportive, people-first culture, you’ll have the space to take on meaningful challenges, grow your skills, and make a real impact in a fast-evolving industry.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JINGDONG Logistics team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p><span></span></p><p><span></span></p><p><b>Job Details</b></p><ul><li><p><b>Job Title:</b><span> </span>Warehouse Team Leader</p></li><li><p><b>Location:</b><span> </span>Fontana, California</p></li><li><p><b>Pay Range:<span> </span></b>$24 - $30/hour &#43; Annual Performance Bonus</p></li></ul><p></p><p><b>What You&#39;ll Do:</b></p><p></p><p><span>1. Responsible for the daily management of the exception handling post, including staff scheduling, training on daily discrepancy handling methods, and monitoring the quantity of the discrepancy center</span></p><p><span>2. Responsible for the daily management and discrepancy clearance of overstock, and monitoring the progress of overstock handling</span></p><p><span>3. Follow up on key projects, such as customer-dimension inventory counting, warehouse relocation, night shift replenishment, etc.</span></p><p><span>4. Working hours: 12:30-22:00 </span></p><p></p><p><b><span>About You: </span></b></p><p></p><p><span>1. Proficient in computer operations, familiar with WMS systems, and preferably with warehouse experience</span></p><p><span>2. Able to communicate in Chinese and English, with no barriers in communicating with frontline warehouse staff</span></p><p><span>3. Down-to-earth and meticulous, responsible for result delivery, with strong execution capabilities; will be mentored on-site by experienced team leaders and warehouse managers;</span></p><p></p><p><i>At JINGDONG Logistics, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
+    "id": "1d20a0a693821000c74688731f6b0000",
+    "title": "HR SSC",
+    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JD.com, also known as JINGDONG, we are building one of the world’s most trusted technology and supply chain ecosystems. What started as a bold idea in China has evolved into a NASDAQ-listed, Fortune 44 global enterprise serving over 700 million active customers. Powered by advanced logistics, innovative technology, and a commitment to integrity, JD.com operates across retail, logistics, technology, property and more, creating solutions that make everyday life smarter, faster, and more connected.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JD.com is expanding its international footprint through a digitally intelligent, cross-border supply chain and world-class logistics network, supported by platforms such as Joybuy, which brings trusted products to customers worldwide. Today, our teams operate across China, the U.S., U.K., Netherlands, France, Germany, Spain, Brazil, Hungary, Japan, South Korea, Australia, Thailand, Vietnam, Malaysia, Indonesia, Saudi Arabia, the UAE and beyond, reaching customers in every corner of the world.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://corporate.jd.com/\"><span style=\"color:#0000ff\"><u>https://corporate.jd.com/ </u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD.com means becoming part of a company where people, innovation, and impact go hand in hand. We offer a competitive salary, a great location, and a supportive, people-first culture where your growth truly matters. With access to global projects, learning opportunities, and an inclusive environment that values every voice, you’ll have the space to shape the future with us.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JD.com team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p>Process Optimization and Standardization: Deeply analyze HR business needs, streamline and optimize processes such as social insurance, housing fund, onboarding, offboarding, transfers, and other related procedures. Develop standardized operating procedures; drive the transition of HR services from localized delivery to centralized shared services, improving the efficiency and standardization of HR management.<br /><br />Business Operations and Delivery Management: Responsible for the operation of the Shared Service Center (SSC) delivery center, coordinate the practical delivery of social insurance and housing fund services, manage billing, and provide policy consultations. Interface with social insurance service providers to ensure smooth business operations. Enhance delivery quality and employee satisfaction through quality checks and service optimization.<br /><br />Data and Decision Support: Continuously monitor and analyze HR data such as social insurance and housing fund information to support management decision-making. Coordinate the management and analysis of the five insurances and one fund data, extract data value, and support the optimization of HR strategies and business innovation.<br /><br />System Development and Digital Transformation: Drive the development of HR systems, assess business needs, and formulate solutions. Monitor system development progress to ensure timely launch. Stay informed about industry trends, continuously optimize system functions, and promote the digital transformation of HR services.<br /><br />Team Management and External Collaboration: Build and develop a professional HR service team, enhancing team capabilities. Establish and maintain relationships with external institutions such as embassies and immigration authorities. Collaborate with internal departments and third-party service providers to ensure the smooth processing of visa applications, international assignments, and related matters.</p><p></p><p><i>At JD.com, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
     "location": "USA-California-Fontana",
+    "additionalLocations": [
+     "USA-California-Chino City"
+    ],
     "postedOn": "Posted 30+ Days Ago",
     "startDate": "2026-08-10",
     "timeType": "Full time",
-    "jobReqId": "JR103541",
-    "jobPostingId": "Warehouse-Team-Leader--Night-Shift-_JR103541",
+    "jobReqId": "JR103453",
+    "jobPostingId": "HR-SSC_JR103453",
     "jobPostingSiteId": "Careers_at_JD",
     "country": {
      "descriptor": "United States of America",
      "id": "bc33aa3152ec42d4995f4791a106ed09"
     },
     "logoImage": {
-     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f0e73a02c7580001",
-     "alt": "JINGDONG Logistics"
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f001b7aa8cc90000",
+     "alt": "Jing Dong"
     },
     "canApply": true,
     "posted": true,
@@ -1203,36 +1262,30 @@
       "alpha2Code": "US"
      }
     },
-    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Fontana/Warehouse-Team-Leader--Night-Shift-_JR103541",
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Fontana/HR-SSC_JR103453",
     "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
    },
    "hiringOrg": "JD LOGISTICS US",
-   "similarJobsCount": 1,
-   "similarJobs": [
-    {
-     "reqId": "JR103540",
-     "title": "Operator",
-     "externalPath": "/job/USA-California-Fontana/Operator_JR103540"
-    }
-   ],
+   "similarJobsCount": 0,
+   "similarJobs": [],
    "error": null,
    "workerSubType": "Regular (Permanent)",
-   "jobFamilyGroup": "JFG_Store Operations",
+   "jobFamilyGroup": "JFG_Human Resources",
    "signals": {
-    "linkedin_job_id": "4451827842",
-    "linkedin_url": "https://www.linkedin.com/jobs/view/4451827842",
-    "title": "Warehouse Team Leader (Night Shift)",
+    "linkedin_job_id": "4451503845",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4451503845",
+    "title": "HR SSC",
     "company": "JD.COM",
     "location": "Fontana, CA",
     "linkedin_posted_date": "2026-09-01",
-    "num_applicants": 25,
-    "applicants_label": "among first 25",
-    "applicantCensored": true,
+    "num_applicants": 34,
+    "applicants_label": "34 applicants",
+    "applicantCensored": false,
     "job_req_id": "",
     "posted_time_ago": "2 weeks ago",
     "closed": false,
     "status": "matched",
-    "fetched_at": "2026-09-17T13:15:32",
+    "fetched_at": "2026-09-17T13:15:38",
     "match_method": "title"
    }
   },
@@ -1429,6 +1482,81 @@
    }
   },
   {
+   "title": "Business Support Specialist",
+   "externalPath": "/job/USA-New-Jersey/Business-Support-Specialist_JR103192",
+   "timeType": "Full time",
+   "locationsText": "5 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR103192"
+   ],
+   "reqId": "JR103192",
+   "company": "JD.com",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-New-Jersey/Business-Support-Specialist_JR103192",
+   "detail": {
+    "id": "3be23d5ca2c61001cfda5e4c8fba0000",
+    "title": "Business Support Specialist",
+    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JINGDONG Logistics (JD Logistics), part of JD.com, we are a leading technology-driven supply chain and logistics solutions provider under JD.com. Built on deep expertise in automation, smart fulfilment, and data intelligence, we operate end-to-end logistics services that empower businesses and enhance customer experience. Our integrated networks span warehouse management, line-haul transportation, last-mile delivery, bulky items logistics, cold chain, and cross-border operations, ensuring speed, reliability, and precision at every stage.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JINGDONG Logistics has developed one of the most extensive logistics infrastructures in the world, managing more than 3,600 warehouses with over 34 million square meters of space. Our Global Smart Supply Chain Network combines highly automated warehousing with robust international transportation solutions, enabling seamless cross-border movement. Today, we operate 130&#43; bonded, direct mail, and overseas warehouses across 23 countries and regions, supported by our global brands, JoyLogistics and JoyExpress, as we continue scaling JD.com’s international logistics footprint.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://www.jingdonglogistics.com/\"><span style=\"color:#0000ff\"><u>https://www.jingdonglogistics.com/</u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD Logistics means helping shape the future of global supply chain and logistics. You’ll work with smart warehousing, autonomous delivery, and innovative technology that keeps goods moving worldwide. With a competitive salary, great locations, and a supportive, people-first culture, you’ll have the space to take on meaningful challenges, grow your skills, and make a real impact in a fast-evolving industry.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JINGDONG Logistics team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p><span></span></p><p><span></span></p><p>Job Title: Business Support Specialist - <b>Mandarin Required</b><br />Location: Burlington, NJ<br />Pay Range: $20.00 - $25.00 per hour &#43; Annual Bonus<br />Employment Type: Full-Time</p><p><br />Position Overview:</p><p>The Operations Business Support role is responsible for supporting JDL&#39;s warehouse operations to ensure efficient day-to-day business processes and deliver an excellent customer experience.</p><p></p><p>What You&#39;ll Do:</p><p>Support daily operational activities, including data entry, information verification, and document management.<br />Assist with the coordination and management of third-party workforce resources.<br />Collect, organize, and analyze operational data, and prepare reports to support business decisions.<br />Coordinate cross-functional communication and collaboration to resolve operational issues and ensure projects are completed on schedule.<br />Participate in process improvement initiatives and recommend solutions to enhance operational efficiency.<br />Collect and respond to customer feedback, resolve issues in a timely manner, and help improve customer satisfaction.<br />Complete additional tasks and projects assigned by management.</p><p><br />About You:</p><p>Associate&#39;s degree or above; all majors are welcome. Degrees in Business Administration, Operations Management, Computer Science, or related fields are preferred.<br />At least one year of experience in operations support or a related role is preferred.<br />Proficient in Microsoft Office, especially Excel and PowerPoint, with strong data analysis skills.<br />Strong communication, coordination, problem-solving, and learning abilities.<br />Detail-oriented, responsible, and able to work effectively in a team environment.<br />Able to thrive in a fast-paced environment and manage multiple priorities under pressure.</p><p></p><p><i>At JINGDONG Logistics, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
+    "location": "USA-New Jersey",
+    "additionalLocations": [
+     "USA-New Jersey-Edgewater Park",
+     "USA-New Jersey-Perth Amboy",
+     "USA-New Jersey-Piscataway Township",
+     "USA-New Jersey-Middlesex County"
+    ],
+    "postedOn": "Posted 30+ Days Ago",
+    "startDate": "2026-07-28",
+    "timeType": "Full time",
+    "jobReqId": "JR103192",
+    "jobPostingId": "Business-Support-Specialist_JR103192",
+    "jobPostingSiteId": "Careers_at_JD",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "logoImage": {
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f0e73a02c7580001",
+     "alt": "JINGDONG Logistics"
+    },
+    "canApply": true,
+    "posted": true,
+    "includeResumeParsing": true,
+    "jobRequisitionLocation": {
+     "descriptor": "USA-New Jersey",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09",
+      "alpha2Code": "US"
+     }
+    },
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-New-Jersey/Business-Support-Specialist_JR103192",
+    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
+   },
+   "hiringOrg": "JD LOGISTICS US",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "workerSubType": "Regular (Permanent)",
+   "jobFamilyGroup": "JFG_Business Operations",
+   "signals": {
+    "linkedin_job_id": "4438690847",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4438690847",
+    "title": "Business Support Specialist",
+    "company": "JD.COM",
+    "location": "Piscataway, NJ",
+    "linkedin_posted_date": "2026-09-12",
+    "num_applicants": 62,
+    "applicants_label": "62 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "5 days ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-17T13:14:58",
+    "match_method": "title"
+   }
+  },
+  {
    "title": "Account Manager",
    "externalPath": "/job/USA-California-Fontana/Account-Manager_JR103406",
    "timeType": "Full time",
@@ -1573,6 +1701,107 @@
    }
   },
   {
+   "title": "Warehouse Associate",
+   "externalPath": "/job/USA-New-Jersey/Warehouse-Associate_JR103346",
+   "timeType": "Full time",
+   "locationsText": "5 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR103346"
+   ],
+   "reqId": "JR103346",
+   "company": "JD.com",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-New-Jersey/Warehouse-Associate_JR103346",
+   "detail": {
+    "id": "1c49528aae951001f4fe2e93b3980000",
+    "title": "Warehouse Associate",
+    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JINGDONG Logistics (JD Logistics), part of JD.com, we are a leading technology-driven supply chain and logistics solutions provider under JD.com. Built on deep expertise in automation, smart fulfilment, and data intelligence, we operate end-to-end logistics services that empower businesses and enhance customer experience. Our integrated networks span warehouse management, line-haul transportation, last-mile delivery, bulky items logistics, cold chain, and cross-border operations, ensuring speed, reliability, and precision at every stage.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JINGDONG Logistics has developed one of the most extensive logistics infrastructures in the world, managing more than 3,600 warehouses with over 34 million square meters of space. Our Global Smart Supply Chain Network combines highly automated warehousing with robust international transportation solutions, enabling seamless cross-border movement. Today, we operate 130&#43; bonded, direct mail, and overseas warehouses across 23 countries and regions, supported by our global brands, JoyLogistics and JoyExpress, as we continue scaling JD.com’s international logistics footprint.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://www.jingdonglogistics.com/\"><span style=\"color:#0000ff\"><u>https://www.jingdonglogistics.com/</u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD Logistics means helping shape the future of global supply chain and logistics. You’ll work with smart warehousing, autonomous delivery, and innovative technology that keeps goods moving worldwide. With a competitive salary, great locations, and a supportive, people-first culture, you’ll have the space to take on meaningful challenges, grow your skills, and make a real impact in a fast-evolving industry.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JINGDONG Logistics team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p><span></span></p><p><span></span></p><div><div>Job Description</div></div><div><div><div><div><div><div><div><div><div><p><b>Warehouse Associate -<u> Bilingual Mandarin Required</u></b></p><p><b>Location: Old Bridge, NJ</b></p><p><b>Pay Range: $21-$23</b></p><p></p><p><b>About the Role:</b></p><ul><li><p>Perform order fulfillment tasks, ensuring accurate picking, packing, and shipping of products.</p></li><li><p>Maintain organized inventory management practices to ensure stock levels are accurate and up-to-date.</p></li><li><p>Handle materials with care to prevent damage and ensure safety within the warehouse environment.</p></li><li><p>Collaborate with the warehouse supervisor to streamline processes and improve operational efficiency.</p></li><li><p>Assist in maintaining a clean and organized workspace to promote safety and productivity.</p></li><li><p>Proficiency in order fulfillment processes and inventory management systems.</p></li></ul><p></p><p><b>What You&#39;ll bring:</b></p><ul><li><p>Knowledge of OSHA regulations related to warehouse operations.</p></li><li><p>Experience using RF Scanner</p></li><li><p>Ability to handle materials safely and effectively in a fast-paced environment.</p></li><li><p>Excellent teamwork skills, collaborating effectively with colleagues and supervisors.</p></li><li><p>Strong attention to detail to ensure accuracy in all tasks performed.</p></li></ul><p>Join us as we strive for excellence in our warehouse operations! Your contributions will be vital in maintaining our commitment to quality service.</p><p></p><p>Job Type: Full-time</p><p>Benefits:</p><ul><li><p>401(k)</p></li><li><p>Dental insurance</p></li><li><p>Health insurance</p></li><li><p>Opportunities for advancement</p></li><li><p>Paid time off</p></li></ul></div></div></div></div></div></div></div></div></div><p></p><p><i>At JINGDONG Logistics, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
+    "location": "USA-New Jersey",
+    "additionalLocations": [
+     "USA-New Jersey-Edgewater Park",
+     "USA-New Jersey-Perth Amboy",
+     "USA-New Jersey-Piscataway Township",
+     "USA-New Jersey-Middlesex County"
+    ],
+    "postedOn": "Posted 30+ Days Ago",
+    "startDate": "2026-07-24",
+    "timeType": "Full time",
+    "jobReqId": "JR103346",
+    "jobPostingId": "Warehouse-Associate_JR103346",
+    "jobPostingSiteId": "Careers_at_JD",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "logoImage": {
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f0e73a02c7580001",
+     "alt": "JINGDONG Logistics"
+    },
+    "canApply": true,
+    "posted": true,
+    "includeResumeParsing": true,
+    "jobRequisitionLocation": {
+     "descriptor": "USA-New Jersey",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09",
+      "alpha2Code": "US"
+     }
+    },
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-New-Jersey/Warehouse-Associate_JR103346",
+    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
+   },
+   "hiringOrg": "JD LOGISTICS US",
+   "similarJobsCount": 5,
+   "similarJobs": [
+    {
+     "reqId": "JR102991",
+     "title": "Warehouse Operator",
+     "externalPath": "/job/USA-New-Jersey-Middlesex-County/Warehouse-Operator_JR102991"
+    },
+    {
+     "reqId": "JR102559",
+     "title": "Warehouse Operator",
+     "externalPath": "/job/USA-New-Jersey-Edgewater-Park/Warehouse-Operator_JR102559"
+    },
+    {
+     "reqId": "JR102929",
+     "title": "Warehouse Supervisor",
+     "externalPath": "/job/USA-New-Jersey-Edgewater-Park/Warehouse-Supervisor_JR102929"
+    },
+    {
+     "reqId": "JR102537",
+     "title": "Warehouse Operations Internship (Mandarin Speaking) (JD Young Program)",
+     "externalPath": "/job/USA-New-Jersey-Piscataway-Township/Warehouse-Operations-Internship--Mandarin-Speaking---JD-Young-Program-_JR102537"
+    },
+    {
+     "reqId": "JR102384",
+     "title": "Warehouse Lead- Night Shift",
+     "externalPath": "/job/USA-New-Jersey-Piscataway-Township/Warehouse-Lead--Night-Shift_JR102384"
+    }
+   ],
+   "error": null,
+   "workerSubType": "Regular (Permanent)",
+   "jobFamilyGroup": "JFG_Skill Operations",
+   "signals": {
+    "linkedin_job_id": "4444972770",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4444972770",
+    "title": "Warehouse Associate",
+    "company": "JD.COM",
+    "location": "Piscataway, NJ",
+    "linkedin_posted_date": "2026-09-05",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-17T13:16:06",
+    "match_method": "title"
+   }
+  },
+  {
    "title": "Warehouse Operator",
    "externalPath": "/job/USA-Georgia/Warehouse-Operator_JR103344",
    "timeType": "Full time",
@@ -1637,6 +1866,84 @@
    "signals": {
     "status": "no_match",
     "fetched_at": ""
+   }
+  },
+  {
+   "title": "Warehouse Supervisor",
+   "externalPath": "/job/USA-Georgia-Flower-Branch/Warehouse-Supervisor_JR102370",
+   "timeType": "Full time",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR102370"
+   ],
+   "reqId": "JR102370",
+   "company": "JD.com",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-Georgia-Flower-Branch/Warehouse-Supervisor_JR102370",
+   "detail": {
+    "id": "b307529d2be31000dba8227761e80000",
+    "title": "Warehouse Supervisor",
+    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JINGDONG Logistics (JD Logistics), part of JD.com, we are a leading technology-driven supply chain and logistics solutions provider under JD.com. Built on deep expertise in automation, smart fulfilment, and data intelligence, we operate end-to-end logistics services that empower businesses and enhance customer experience. Our integrated networks span warehouse management, line-haul transportation, last-mile delivery, bulky items logistics, cold chain, and cross-border operations, ensuring speed, reliability, and precision at every stage.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JINGDONG Logistics has developed one of the most extensive logistics infrastructures in the world, managing more than 3,600 warehouses with over 34 million square meters of space. Our Global Smart Supply Chain Network combines highly automated warehousing with robust international transportation solutions, enabling seamless cross-border movement. Today, we operate 130&#43; bonded, direct mail, and overseas warehouses across 23 countries and regions, supported by our global brands, JoyLogistics and JoyExpress, as we continue scaling JD.com’s international logistics footprint.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://www.jingdonglogistics.com/\"><span style=\"color:#0000ff\"><u>https://www.jingdonglogistics.com/</u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD Logistics means helping shape the future of global supply chain and logistics. You’ll work with smart warehousing, autonomous delivery, and innovative technology that keeps goods moving worldwide. With a competitive salary, great locations, and a supportive, people-first culture, you’ll have the space to take on meaningful challenges, grow your skills, and make a real impact in a fast-evolving industry.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JINGDONG Logistics team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p><span></span></p><p><span></span></p><p>Warehouse Supervisor - <b>Bilingual Mandarin Required</b></p><p>Location: Flowery branch, GA</p><p>Salary: $66,000</p><p></p><p>As a <b>Warehouse Supervisor</b> at JD Logistics, you’ll lead and manage daily warehouse operations in our busy Flowery Branch, GA. distribution center. You’ll be responsible for ensuring operational efficiency, accurate order fulfillment, and maintaining safety and quality standards. This is a hands-on leadership role ideal for individuals who enjoy problem-solving, leading teams, and driving results in a fast-paced environment.</p><p><b>What You’ll Do:</b></p><ul><li>Oversee daily warehouse functions including receiving, put-away, picking, packing, and shipping</li><li>Ensure timely and accurate execution of customer orders</li><li>Monitor productivity, adjust workflows, and address bottlenecks</li><li>Supervise a team of warehouse associates; train, coach, and mentor team members</li><li>Allocate labor and assign tasks to meet operational goals</li><li>Conduct cycle counts and inventory audits to maintain accuracy</li><li>Monitor quality control and escalate product/order discrepancies</li><li>Enforce adherence to all warehouse safety protocols and company SOPs</li><li>Promote a clean, organized, and safe work environment</li><li>Communicate shift updates, challenges, and results to Warehouse Manager</li><li>Collaborate with internal teams and clients to troubleshoot operational issues</li></ul><p><b>About You:</b></p><ul><li>3&#43; years experience in a warehouse, distribution, or 3PL environment</li><li>At least 1 year in a lead or supervisory role</li><li>Strong knowledge of warehouse operations and safety procedures</li><li>Familiarity with WMS or inventory systems preferred</li><li><b>Bilingual in Mandarin Required</b></li></ul><p></p><p><i>At JINGDONG Logistics, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
+    "location": "USA-Georgia-Flower Branch",
+    "additionalLocations": [
+     "USA-Georgia-Buford City"
+    ],
+    "postedOn": "Posted 30+ Days Ago",
+    "startDate": "2026-07-16",
+    "timeType": "Full time",
+    "jobReqId": "JR102370",
+    "jobPostingId": "Warehouse-Supervisor_JR102370",
+    "jobPostingSiteId": "Careers_at_JD",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "logoImage": {
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f0e73a02c7580001",
+     "alt": "JINGDONG Logistics"
+    },
+    "canApply": true,
+    "posted": true,
+    "includeResumeParsing": true,
+    "jobRequisitionLocation": {
+     "descriptor": "USA-Georgia-Flower Branch",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09",
+      "alpha2Code": "US"
+     }
+    },
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-Georgia-Flower-Branch/Warehouse-Supervisor_JR102370",
+    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
+   },
+   "hiringOrg": "JD LOGISTICS US",
+   "similarJobsCount": 1,
+   "similarJobs": [
+    {
+     "reqId": "JR102699",
+     "title": "Warehouse Manager - Bilingual Mandarin",
+     "externalPath": "/job/USA-Georgia-Buford-City/Warehouse-Manager---Bilingual-Mandarin_JR102699"
+    }
+   ],
+   "error": null,
+   "workerSubType": "Regular (Permanent)",
+   "jobFamilyGroup": "JFG_Logistics Operations",
+   "signals": {
+    "linkedin_job_id": "4421858040",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4421858040",
+    "title": "Warehouse Supervisor",
+    "company": "JD.COM",
+    "location": "Greater Macon",
+    "linkedin_posted_date": "2026-08-29",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-17T13:15:20",
+    "match_method": "title"
    }
   },
   {
@@ -1987,75 +2294,6 @@
    "workerSubType": "Regular (Permanent)",
    "jobFamilyGroup": "JFG_Logistics Operations",
    "signals": {
-    "linkedin_job_id": "4421858040",
-    "linkedin_url": "https://www.linkedin.com/jobs/view/4421858040",
-    "title": "Warehouse Supervisor",
-    "company": "JD.COM",
-    "location": "Greater Macon",
-    "linkedin_posted_date": "2026-08-29",
-    "num_applicants": 25,
-    "applicants_label": "among first 25",
-    "applicantCensored": true,
-    "job_req_id": "",
-    "posted_time_ago": "2 weeks ago",
-    "closed": false,
-    "status": "matched",
-    "fetched_at": "2026-09-17T13:15:20",
-    "match_method": "title"
-   }
-  },
-  {
-   "title": "AI Native Technical Engineer",
-   "externalPath": "/job/Others-United-States-of-America/AI-Native-Technical-Engineer_JR102925",
-   "timeType": "Full time",
-   "locationsText": "Others (United States of America)",
-   "postedOn": "Posted 30+ Days Ago",
-   "bulletFields": [
-    "JR102925"
-   ],
-   "reqId": "JR102925",
-   "company": "JD.com",
-   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/Others-United-States-of-America/AI-Native-Technical-Engineer_JR102925",
-   "detail": {
-    "id": "148af0aeb121100116dc9a3055de0000",
-    "title": "AI Native Technical Engineer",
-    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JD.com, also known as JINGDONG, we are building one of the world’s most trusted technology and supply chain ecosystems. What started as a bold idea in China has evolved into a NASDAQ-listed, Fortune 44 global enterprise serving over 700 million active customers. Powered by advanced logistics, innovative technology, and a commitment to integrity, JD.com operates across retail, logistics, technology, property and more, creating solutions that make everyday life smarter, faster, and more connected.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JD.com is expanding its international footprint through a digitally intelligent, cross-border supply chain and world-class logistics network, supported by platforms such as Joybuy, which brings trusted products to customers worldwide. Today, our teams operate across China, the U.S., U.K., Netherlands, France, Germany, Spain, Brazil, Hungary, Japan, South Korea, Australia, Thailand, Vietnam, Malaysia, Indonesia, Saudi Arabia, the UAE and beyond, reaching customers in every corner of the world.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://corporate.jd.com/\"><span style=\"color:#0000ff\"><u>https://corporate.jd.com/ </u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD.com means becoming part of a company where people, innovation, and impact go hand in hand. We offer a competitive salary, a great location, and a supportive, people-first culture where your growth truly matters. With access to global projects, learning opportunities, and an inclusive environment that values every voice, you’ll have the space to shape the future with us.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JD.com team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><h2><span>About the Role</span></h2><p><span>JD Financial Technology is looking for a highly versatile, hands-on AI Native Technical Lead / Staff Engineer to join our Silicon Valley team.</span></p><p><span>This role will support a strategic innovation initiative around ATO, an AI-native project that connects intelligent agents, supply chain workflows, data systems, payment and settlement capabilities, and real-world operational execution.</span></p><p><span>The ideal candidate is a rare hybrid talent: </span><span><b>strong in production engineering, data infrastructure, system operations, backend development, and AI application development. This person should be able to own real systems end-to-end, build prototypes quickly, operate production workflows reliably, and help senior leadership evaluate broader AI opportunities across JD Financial Technology.</b></span></p><p><span>This is not a narrow specialist role. </span><span><b>We are looking for a high-agency builder who can work across engineering, data, AI, operations, product, and business strategy.</b></span></p><p></p><p></p><h2><span>What We’re Looking For</span></h2><ul><li><span>8&#43; years of hands-on engineering experience in backend systems, data platforms, infrastructure, DevOps, or AI applications.</span></li><li><span>Strong ability to build and operate real production systems, not just prototypes.</span></li><li><span>Proficiency in at least one major backend language such as Python, Java, Go, or TypeScript/Node.js.</span></li><li><span>Strong ability with data systems such as SQL, data warehouses, data lakes, ETL/ELT pipelines, streaming systems, workflow orchestration, or analytics platforms. Have built from 0 to 1 in previous experience</span></li><li><span>Practical experience with cloud infrastructure, APIs, monitoring, deployment, CI/CD, and production incident handling.</span></li><li><span>Hands-on experience building AI applications using LLM APIs, RAG, agents, prompt engineering, AI workflow tools, or model evaluation frameworks.</span></li><li><span>Strong product and business judgment; able to understand ambiguous business goals and translate them into technical execution plans.</span></li><li><span>Comfortable working in a fast-moving, ambiguous, cross-border environment with both China and US teams.</span></li><li><span>Excellent communication skills in English; Mandarin Chinese is strongly preferred.</span></li></ul><p></p><p><i>At JD.com, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
-    "location": "Others (United States of America)",
-    "postedOn": "Posted 30+ Days Ago",
-    "startDate": "2026-06-23",
-    "timeType": "Full time",
-    "jobReqId": "JR102925",
-    "jobPostingId": "AI-Native-Technical-Engineer_JR102925",
-    "jobPostingSiteId": "Careers_at_JD",
-    "country": {
-     "descriptor": "United States of America",
-     "id": "bc33aa3152ec42d4995f4791a106ed09"
-    },
-    "logoImage": {
-     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f001b7aa8cc90000",
-     "alt": "Jing Dong"
-    },
-    "canApply": true,
-    "posted": true,
-    "includeResumeParsing": true,
-    "jobRequisitionLocation": {
-     "descriptor": "Others (United States of America)",
-     "country": {
-      "descriptor": "United States of America",
-      "id": "bc33aa3152ec42d4995f4791a106ed09",
-      "alpha2Code": "US"
-     }
-    },
-    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/Others-United-States-of-America/AI-Native-Technical-Engineer_JR102925",
-    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
-   },
-   "hiringOrg": "JD.com American Technologies",
-   "similarJobsCount": 0,
-   "similarJobs": [],
-   "error": null,
-   "workerSubType": "Regular (Permanent)",
-   "jobFamilyGroup": "JFG_Development",
-   "signals": {
     "status": "no_match",
     "fetched_at": ""
    }
@@ -2257,6 +2495,84 @@
     "closed": false,
     "status": "matched",
     "fetched_at": "2026-09-17T13:16:00",
+    "match_method": "title"
+   }
+  },
+  {
+   "title": "Warehouse Manager - Bilingual Mandarin",
+   "externalPath": "/job/USA-Georgia-Buford-City/Warehouse-Manager---Bilingual-Mandarin_JR102699",
+   "timeType": "Full time",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR102699"
+   ],
+   "reqId": "JR102699",
+   "company": "JD.com",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-Georgia-Buford-City/Warehouse-Manager---Bilingual-Mandarin_JR102699",
+   "detail": {
+    "id": "3686e6795a7e100134f368de1e7b0000",
+    "title": "Warehouse Manager - Bilingual Mandarin",
+    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JINGDONG Logistics (JD Logistics), part of JD.com, we are a leading technology-driven supply chain and logistics solutions provider under JD.com. Built on deep expertise in automation, smart fulfilment, and data intelligence, we operate end-to-end logistics services that empower businesses and enhance customer experience. Our integrated networks span warehouse management, line-haul transportation, last-mile delivery, bulky items logistics, cold chain, and cross-border operations, ensuring speed, reliability, and precision at every stage.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JINGDONG Logistics has developed one of the most extensive logistics infrastructures in the world, managing more than 3,600 warehouses with over 34 million square meters of space. Our Global Smart Supply Chain Network combines highly automated warehousing with robust international transportation solutions, enabling seamless cross-border movement. Today, we operate 130&#43; bonded, direct mail, and overseas warehouses across 23 countries and regions, supported by our global brands, JoyLogistics and JoyExpress, as we continue scaling JD.com’s international logistics footprint.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://www.jingdonglogistics.com/\"><span style=\"color:#0000ff\"><u>https://www.jingdonglogistics.com/</u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD Logistics means helping shape the future of global supply chain and logistics. You’ll work with smart warehousing, autonomous delivery, and innovative technology that keeps goods moving worldwide. With a competitive salary, great locations, and a supportive, people-first culture, you’ll have the space to take on meaningful challenges, grow your skills, and make a real impact in a fast-evolving industry.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JINGDONG Logistics team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p><span></span></p><p><span></span></p><p>Job Title: Warehouse Manager <b>- Bilingual Mandarin Required</b></p><p>Location: Buford, GA</p><p>Pay Range: $90,000 - $120,000</p><p></p><p><b>What You&#39;ll Do:</b></p><ul><li>Design and execute warehouse workflows, optimize layout planning, and establish KPIs to meet performance targets and client SLAs.</li></ul><ul><li>Manage, train, and motivate warehouse staff. Oversee labor planning, shift scheduling, and staffing based on volume trends and business needs.</li></ul><ul><li>Implement and refine SOPs to drive consistency, improve quality, reduce errors, and support continuous improvement initiatives.</li></ul><ul><li>Ensure accurate inventory tracking and reconciliation, minimize shrinkage, and maintain product quality through robust QC processes.</li></ul><ul><li>Supervise the receipt, put-away, picking, packing, and shipping of goods, ensuring all activities are completed safely and on time.</li></ul><ul><li>Act as the point of contact for client operations teams. Address concerns, resolve complaints, and ensure a high level of satisfaction.</li></ul><ul><li>Monitor and analyze operational metrics, generate weekly/monthly performance reports, and develop actionable insights to improve efficiency.</li></ul><ul><li>Uphold all safety standards, ensure regulatory compliance, and champion a culture of safety across the warehouse.</li></ul><p></p><p><b>About You:</b></p><ul><li>Bachelor&#39;s degree in Supply Chain, Logistics, Business, or related field</li><li>5&#43; years of progressive experience in 3PL or warehouse operations, including team management</li><li>Strong knowledge of warehouse systems (WMS/OMS) and operational KPIs</li><li>Experience in process design, warehouse planning, and cost control</li><li>Excellent problem-solving, communication, and leadership skills</li><li>Ability to analyze data and translate findings into operational improvements</li><li>Bilingual in Mandarin is REQUIRED</li></ul><p></p><p><b>Preferred but not essential for this role</b>:</p><ul><li>Prior experience with high-volume e-commerce fulfillment</li><li>Background in both manual and automated warehouse environments</li><li>Familiarity with lean methodologies and continuous improvement frameworks</li><li>Ability to thrive in a fast-paced, deadline-driven environment</li></ul><p></p><p></p><p></p><p></p><p><i>At JINGDONG Logistics, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
+    "location": "USA-Georgia-Buford City",
+    "additionalLocations": [
+     "USA-Georgia-Flower Branch"
+    ],
+    "postedOn": "Posted 30+ Days Ago",
+    "startDate": "2026-05-26",
+    "timeType": "Full time",
+    "jobReqId": "JR102699",
+    "jobPostingId": "Warehouse-Manager---Bilingual-Mandarin_JR102699",
+    "jobPostingSiteId": "Careers_at_JD",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "logoImage": {
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f0e73a02c7580001",
+     "alt": "JINGDONG Logistics"
+    },
+    "canApply": true,
+    "posted": true,
+    "includeResumeParsing": true,
+    "jobRequisitionLocation": {
+     "descriptor": "USA-Georgia-Buford City",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09",
+      "alpha2Code": "US"
+     }
+    },
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-Georgia-Buford-City/Warehouse-Manager---Bilingual-Mandarin_JR102699",
+    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
+   },
+   "hiringOrg": "JD LOGISTICS US",
+   "similarJobsCount": 1,
+   "similarJobs": [
+    {
+     "reqId": "JR102370",
+     "title": "Warehouse Supervisor",
+     "externalPath": "/job/USA-Georgia-Flower-Branch/Warehouse-Supervisor_JR102370"
+    }
+   ],
+   "error": null,
+   "workerSubType": "Regular (Permanent)",
+   "jobFamilyGroup": "JFG_Logistics",
+   "signals": {
+    "linkedin_job_id": "4419472997",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4419472997",
+    "title": "Warehouse Manager - Bilingual Mandarin",
+    "company": "JD.COM",
+    "location": "Flowery Branch, GA",
+    "linkedin_posted_date": "2026-09-11",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "6 days ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-17T13:14:59",
     "match_method": "title"
    }
   },
@@ -2766,6 +3082,170 @@
    }
   },
   {
+   "title": "Sales Manager",
+   "externalPath": "/job/USA-California-Fontana/Sales-Manager_JR102242",
+   "timeType": "Full time",
+   "locationsText": "6 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR102242"
+   ],
+   "reqId": "JR102242",
+   "company": "JD.com",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Fontana/Sales-Manager_JR102242",
+   "detail": {
+    "id": "3152f7fb4dc41000ec6bf1fbd0d60000",
+    "title": "Sales Manager",
+    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JINGDONG Logistics (JD Logistics), part of JD.com, we are a leading technology-driven supply chain and logistics solutions provider under JD.com. Built on deep expertise in automation, smart fulfilment, and data intelligence, we operate end-to-end logistics services that empower businesses and enhance customer experience. Our integrated networks span warehouse management, line-haul transportation, last-mile delivery, bulky items logistics, cold chain, and cross-border operations, ensuring speed, reliability, and precision at every stage.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JINGDONG Logistics has developed one of the most extensive logistics infrastructures in the world, managing more than 3,600 warehouses with over 34 million square meters of space. Our Global Smart Supply Chain Network combines highly automated warehousing with robust international transportation solutions, enabling seamless cross-border movement. Today, we operate 130&#43; bonded, direct mail, and overseas warehouses across 23 countries and regions, supported by our global brands, JoyLogistics and JoyExpress, as we continue scaling JD.com’s international logistics footprint.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://www.jingdonglogistics.com/\"><span style=\"color:#0000ff\"><u>https://www.jingdonglogistics.com/</u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD Logistics means helping shape the future of global supply chain and logistics. You’ll work with smart warehousing, autonomous delivery, and innovative technology that keeps goods moving worldwide. With a competitive salary, great locations, and a supportive, people-first culture, you’ll have the space to take on meaningful challenges, grow your skills, and make a real impact in a fast-evolving industry.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JINGDONG Logistics team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p><span></span></p><p><span></span></p><p><b>Job Title:</b> Sales Manager</p><p><b>Location:</b> Fontana, California<br /><b>Salary Range:</b> $75,000 – $110,000 Base &#43; Commission<br /><b>Employment Type:</b> Full-Time<span> </span></p><p></p><p><u><b><i>Experience in Contract Logistics/3PL business strongly preferred.</i></b></u></p><p></p><p><b>What You&#39;ll Do</b></p><ul><li><p>Develop and implement sales strategies that align with the company’s goals and objectives.</p></li><li><p>Identify new business opportunities and build strong relationships with potential clients.</p></li><li><p>Manage key accounts, ensuring the delivery of excellent customer service and building long-term partnerships.</p></li><li><p>Collaborate with internal teams (operations, marketing, customer service) to ensure smooth project execution.</p></li><li><p>Monitor market trends and competitor activity to identify opportunities for growth.</p></li><li><p>Track sales performance, prepare regular reports, and provide recommendations for improvement.</p></li><li><p>Negotiate contracts and pricing with clients, ensuring profitability and sustainability</p></li></ul><p></p><p><b>About You</b></p><ul><li><p>Bachelor&#39;s degree in Business, Marketing, Logistics, or a related field.</p></li><li><p>Minimum of 3 years of experience in sales eCommerce/3PL/Contract Logistics industries.</p></li><li><p>Strong knowledge of logistics, transportation, and supply chain solutions is highly preferred.</p></li><li><p>Excellent communication, negotiation, and interpersonal skills.</p></li><li><p>Ability to thrive in a fast-paced, results-oriented environment.</p></li><li><p>Strong problem-solving skills and the ability to think strategically.</p></li></ul><p></p><p></p><p><i>At JINGDONG Logistics, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
+    "location": "USA-California-Fontana",
+    "additionalLocations": [
+     "USA-Texas",
+     "USA-New York State-New York City",
+     "USA-Georgia-Atlanta",
+     "USA-Georgia",
+     "USA-California"
+    ],
+    "postedOn": "Posted 30+ Days Ago",
+    "startDate": "2026-05-04",
+    "timeType": "Full time",
+    "jobReqId": "JR102242",
+    "jobPostingId": "Sales-Manager_JR102242",
+    "jobPostingSiteId": "Careers_at_JD",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "logoImage": {
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f0e73a02c7580001",
+     "alt": "JINGDONG Logistics"
+    },
+    "canApply": true,
+    "posted": true,
+    "includeResumeParsing": true,
+    "jobRequisitionLocation": {
+     "descriptor": "USA-California-Fontana",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09",
+      "alpha2Code": "US"
+     }
+    },
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Fontana/Sales-Manager_JR102242",
+    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
+   },
+   "hiringOrg": "JD LOGISTICS US",
+   "similarJobsCount": 3,
+   "similarJobs": [
+    {
+     "reqId": "JR103384",
+     "title": "International Logistics Product Manager",
+     "externalPath": "/job/USA-California-Fontana/_JR103384"
+    },
+    {
+     "reqId": "JR103406",
+     "title": "Account Manager",
+     "externalPath": "/job/USA-California-Fontana/Account-Manager_JR103406"
+    },
+    {
+     "reqId": "JR103444",
+     "title": "Supply Chain Solutions Manager",
+     "externalPath": "/job/USA-California-Fontana/Supply-Chain-Solutions-Manager_JR103444"
+    }
+   ],
+   "error": null,
+   "workerSubType": "Regular (Permanent)",
+   "jobFamilyGroup": "JFG_Sales",
+   "signals": {
+    "linkedin_job_id": "4398047566",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4398047566",
+    "title": "Sales Manager",
+    "company": "JD.COM",
+    "location": "California, United States",
+    "linkedin_posted_date": "2026-09-05",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-17T13:16:21",
+    "match_method": "title"
+   }
+  },
+  {
+   "title": "US Financial Business Partner",
+   "externalPath": "/job/USA-California-Fontana/US-Financial-Business-Partner_JR101866",
+   "timeType": "Full time",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR101866"
+   ],
+   "reqId": "JR101866",
+   "company": "JD.com",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Fontana/US-Financial-Business-Partner_JR101866",
+   "detail": {
+    "id": "70965430196a10036dbc71d479860000",
+    "title": "US Financial Business Partner",
+    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JD.com, also known as JINGDONG, we are building one of the world’s most trusted technology and supply chain ecosystems. What started as a bold idea in China has evolved into a NASDAQ-listed, Fortune 44 global enterprise serving over 700 million active customers. Powered by advanced logistics, innovative technology, and a commitment to integrity, JD.com operates across retail, logistics, technology, property and more, creating solutions that make everyday life smarter, faster, and more connected.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JD.com is expanding its international footprint through a digitally intelligent, cross-border supply chain and world-class logistics network, supported by platforms such as Joybuy, which brings trusted products to customers worldwide. Today, our teams operate across China, the U.S., U.K., Netherlands, France, Germany, Spain, Brazil, Hungary, Japan, South Korea, Australia, Thailand, Vietnam, Malaysia, Indonesia, Saudi Arabia, the UAE and beyond, reaching customers in every corner of the world.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://corporate.jd.com/\"><span style=\"color:#0000ff\"><u>https://corporate.jd.com/ </u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD.com means becoming part of a company where people, innovation, and impact go hand in hand. We offer a competitive salary, a great location, and a supportive, people-first culture where your growth truly matters. With access to global projects, learning opportunities, and an inclusive environment that values every voice, you’ll have the space to shape the future with us.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JD.com team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p>1. Budgeting &amp; Forecasting:<br />Develop annual budgets and rolling forecasts, monitor variances, and recommend adjustments to align financial goals with business strategies. Optimize resource allocation and decompose targets to support performance achievement.<br />2. Business Analysis &amp; Reporting:<br />Establish a business KPI framework, generate regular analytical reports, identify anomalies, and conduct root cause analysis. Propose actionable strategies to drive operational improvements and cost-efficiency.<br />3. Decision Support &amp; Cross-Functional Collaboration:<br />Engage with frontline operations to assess projects and design solutions. Provide financial insights for decision-making, resolve cross-departmental bottlenecks, and ensure strategic execution.<br />4. Risk Management &amp; Compliance:<br />Identify risks (e.g., revenue inflation, delivery fraud) and implement preventive controls. Monitor cash flow, receivables, and payables to mitigate bad debt and liquidity risks.<br />5. Data Systems &amp; Tool Development:<br />Design data models and automation tools (e.g., BI dashboards) to streamline financial processes. Enhance data accuracy and analytical efficiency for precision in business operations.<br />6. Special Projects &amp; Capability Building:<br />Lead initiatives like industry research and competitor analysis, standardizing methodologies. Conduct financial training to elevate team expertise and foster sustained business-finance integration.</p><p></p><p><i>At JD.com, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
+    "location": "USA-California-Fontana",
+    "additionalLocations": [
+     "USA-New Jersey"
+    ],
+    "postedOn": "Posted 30+ Days Ago",
+    "startDate": "2026-04-29",
+    "timeType": "Full time",
+    "jobReqId": "JR101866",
+    "jobPostingId": "US-Financial-Business-Partner_JR101866",
+    "jobPostingSiteId": "Careers_at_JD",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "logoImage": {
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f001b7aa8cc90000",
+     "alt": "Jing Dong"
+    },
+    "canApply": true,
+    "posted": true,
+    "includeResumeParsing": true,
+    "jobRequisitionLocation": {
+     "descriptor": "USA-California-Fontana",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09",
+      "alpha2Code": "US"
+     }
+    },
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Fontana/US-Financial-Business-Partner_JR101866",
+    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
+   },
+   "hiringOrg": "JD LOGISTICS US",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "workerSubType": "Regular (Fixed Term)",
+   "jobFamilyGroup": "JFG_Finance",
+   "signals": {
+    "linkedin_job_id": "4386393695",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4386393695",
+    "title": "US Financial Business Partner",
+    "company": "JD.COM",
+    "location": "Fontana, CA",
+    "linkedin_posted_date": "2026-09-04",
+    "num_applicants": 159,
+    "applicants_label": "159 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-17T13:15:31",
+    "match_method": "title"
+   }
+  },
+  {
    "title": "Overseas Warehouse Solution Manager",
    "externalPath": "/job/USA-California-Fontana/Overseas-Warehouse-Solution-Manager_JR102406",
    "timeType": "Full time",
@@ -3120,6 +3600,78 @@
    }
   },
   {
+   "title": "Sales Manager",
+   "externalPath": "/job/USA-California-Irvine/Sales-Manager_JR100630",
+   "timeType": "Full time",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JR100630"
+   ],
+   "reqId": "JR100630",
+   "company": "JD.com",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Irvine/Sales-Manager_JR100630",
+   "detail": {
+    "id": "ec6268580caa1001a052d9cd97d00000",
+    "title": "Sales Manager",
+    "jobDescription": "<p><b>Who We Are</b></p><p></p><p>At JINGDONG Logistics (JD Logistics), part of JD.com, we are a leading technology-driven supply chain and logistics solutions provider under JD.com. Built on deep expertise in automation, smart fulfilment, and data intelligence, we operate end-to-end logistics services that empower businesses and enhance customer experience. Our integrated networks span warehouse management, line-haul transportation, last-mile delivery, bulky items logistics, cold chain, and cross-border operations, ensuring speed, reliability, and precision at every stage.</p><p></p><p><b>Our Global Reach</b></p><p></p><p>JINGDONG Logistics has developed one of the most extensive logistics infrastructures in the world, managing more than 3,600 warehouses with over 34 million square meters of space. Our Global Smart Supply Chain Network combines highly automated warehousing with robust international transportation solutions, enabling seamless cross-border movement. Today, we operate 130&#43; bonded, direct mail, and overseas warehouses across 23 countries and regions, supported by our global brands, JoyLogistics and JoyExpress, as we continue scaling JD.com’s international logistics footprint.</p><p></p><p>Learn more about who we are and what we do: <a target=\"_blank\" href=\"https://www.jingdonglogistics.com/\"><span style=\"color:#0000ff\"><u>https://www.jingdonglogistics.com/</u></span></a></p><p></p><p><b>What We Offer</b></p><p></p><p>Joining JD Logistics means helping shape the future of global supply chain and logistics. You’ll work with smart warehousing, autonomous delivery, and innovative technology that keeps goods moving worldwide. With a competitive salary, great locations, and a supportive, people-first culture, you’ll have the space to take on meaningful challenges, grow your skills, and make a real impact in a fast-evolving industry.</p><p></p><p><b>About The Team</b></p><p></p><p>You’ll be joining the JINGDONG Logistics team, which values collaboration, ownership, and a commitment to delivering high-quality results in a fast-paced, dynamic environment.</p><p></p><p><span></span></p><p><span></span></p><p><b>Job Title:</b> Sales Manager</p><p><b>Location:</b> Fontana, California<br /><b>Salary Range:</b> $70,000 – $90,000 Base &#43; Commission<br /><b>Employment Type:</b> Full-Time</p><p></p><p><span><b>What You&#39;ll Do</b></span></p><ul><li><p><b>Customer Development &amp; Performance Achievement:</b> Drive the acquisition of key clients, logistics partners, and overseas warehouse customers. Execute sales strategies to meet performance targets and expand market share.</p></li><li><p><b>Customer Relationship Management: </b>Maintain proactive communication through regular check-ins, address real-time needs, nurture long-term partnerships, and enhance satisfaction to secure strategic collaborations.</p></li><li><p><b>Business Planning &amp; Execution: </b>Develop and implement project solutions aligned with market insights and objectives. Manage quotations, contract negotiations, and finalizations.</p></li><li><p><b>Accounts Receivable Management:</b> Oversee receivables for clients within payment terms, collaborate cross-functionally to resolve issues, and ensure timely fund recovery.</p></li><li><p><b>Market Intelligence &amp; Feedback</b>: Gather market data, customer needs, and competitor strategies. Provide timely updates and actionable insights to inform marketing strategies.</p></li></ul><p></p><p></p><p><b>About You</b></p><ul><li><p>5&#43; years of B2B sales experience, preferably in <b>3PL, logistics, supply chain, or warehousing</b></p></li><li><p>Proven track record of closing mid-to-large deals as an <b>individual contributor</b></p></li><li><p>Strong understanding of 3PL services (warehousing, fulfillment, transportation, value-added services)</p></li><li><p>Experience managing complex sales cycles with multiple internal stakeholders</p></li><li><p>Excellent communication, negotiation, and presentation skills</p></li><li><p>Strong verbal and written communication skills in Chinese (Mandarin) and English.</p></li></ul><p></p><p><i>Preferred but not essential for this role:</i></p><ul><li><p>Experience selling to e-commerce, retail, or import/export clients</p></li><li><p>Familiarity with WMS, OMS, or ERP integrations</p></li><li><p>Experience working with international or Asia-based HQ teams</p></li><li><p>Existing book of business or strong industry network in California</p></li></ul><p></p><p></p><p><i>At JINGDONG Logistics, we’re committed to building a diverse and inclusive workplace where everyone can thrive. We’re proud to be an equal opportunity employer and make all employment decisions without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, disability, age, veteran status, or any other protected characteristic.</i></p><p></p><p><b>Ready to apply?</b></p><p></p><p>Take the next step in your career, apply now and explore the opportunities we have to offer.</p><p></p>",
+    "location": "USA-California-Irvine",
+    "additionalLocations": [
+     "USA-California-Fontana"
+    ],
+    "postedOn": "Posted 30+ Days Ago",
+    "startDate": "2026-03-02",
+    "timeType": "Full time",
+    "jobReqId": "JR100630",
+    "jobPostingId": "Sales-Manager_JR100630",
+    "jobPostingSiteId": "Careers_at_JD",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "logoImage": {
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/397a8ab3e6db1001f0e73a02c7580001",
+     "alt": "JINGDONG Logistics"
+    },
+    "canApply": true,
+    "posted": true,
+    "includeResumeParsing": true,
+    "jobRequisitionLocation": {
+     "descriptor": "USA-California-Irvine",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09",
+      "alpha2Code": "US"
+     }
+    },
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Irvine/Sales-Manager_JR100630",
+    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
+   },
+   "hiringOrg": "JD LOGISTICS US",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "workerSubType": "Regular (Permanent)",
+   "jobFamilyGroup": "JFG_Sales",
+   "signals": {
+    "linkedin_job_id": "4386392784",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4386392784",
+    "title": "Sales Manager",
+    "company": "JD.COM",
+    "location": "Irvine, CA",
+    "linkedin_posted_date": "2026-09-05",
+    "num_applicants": 44,
+    "applicants_label": "44 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-17T13:15:59",
+    "match_method": "title"
+   }
+  },
+  {
    "title": "Procurement Logistics Manager",
    "externalPath": "/job/USA-California-Los-Angeles/Procurement-Logistics-Manager_JR101165",
    "timeType": "Full time",
@@ -3242,6 +3794,78 @@
    "signals": {
     "status": "no_match",
     "fetched_at": ""
+   }
+  },
+  {
+   "title": "Internal Audit Manager",
+   "externalPath": "/job/USA-California-Los-Angeles/Internal-Audit-Manager_JRadd112",
+   "timeType": "Full time",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "JRadd112"
+   ],
+   "reqId": "JRadd112",
+   "company": "JD.com",
+   "url": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Los-Angeles/Internal-Audit-Manager_JRadd112",
+   "detail": {
+    "id": "6c4ef89b1b7410001a260bc3bb460000",
+    "title": "Internal Audit Manager",
+    "jobDescription": "<h2><b>【Job Responsibilities】</b></h2><h2><b>【Job Requirements】</b></h2>Job Summary\n\nAs an internal auditor, you'll provide an independent guarantee that an organisation's risk management, governance and control processes are operating effectively. You'll work within businesses and organisations to monitor and evaluate how well risks are being managed, how the business is running and if internal processes are working.\n\nAuditing also includes a consulting service, advising management on how to improve their systems and processes, and in turn providing evidence to present to stakeholders. Meanwhile, you'll also consider factors such as reputation, growth, environmental impact, treatment of employees and ethics.\n\n\n\nKey Responsibilities\n\n•Plan and execute audit engagements, including data analysis and testing.\n\n•Review and analyze financial statements and supporting documentation.\n\n•Evaluate internal control systems and ensure adherence to applicable laws.\n\n•Perform risk assessments and internal control evaluations and detect discrepancies.\n\n•Identify and investigate potentially fraudulent activities or financial irregularities.\n\n•Prepare and present audit reports to the Management of auditted area.\n\n•Collaborate with external auditors or legal service providers during statutory audits and regulatory compliance assessments.\n\n•Monitor the implementation of audit recommendations and execute remedial actions.\n\n•Stay updated with the latest industry regulations and best practices in internal auditing.\n\n\n\nRequirements\n\n•Bachelor’s degree in finance, accounting or a related field.\n\n•Professional certification, such as AICPA, CIA (Certified Internal Auditor) or CA (Chartered Accountant).\n\n•6+ years of experience in internal auditing or related financial roles, and Big 4 experiences prefered.\n\n•Strong understanding of US GAAP accounting standards, taxation and regulatory requirements.\n\n•Proficiency in using data analysis tools and MS Office applications (Excel, Word, Outlook).\n\n•Experience in developing and executing audit plans and evaluating internal control systems.\n\n•Strong communication and interpersonal skills to effectively collaborate with stakeholders at all levels.\n\n•Excellent analytical, problem-solving and critical-thinking skills.\n\n•Ability to work independently or in a team or lead a team.\n\n•Excellent verbal and written communication skills on both Chinese and English.\n\n•Strong ethical standards and a commitment to maintaining confidentiality.\n\n•Ability to adapt to changing regulatory environments and industry practices<h2></h2><h2><b>【About JD.com】</b></h2><p></p><p>JD.com (NASDAQ: JD and HKEX: 9618), also known as JINGDONG, is a leading supply chain-based technology and service provider. The company’s cutting-edge retail infrastructure seeks to enable consumers to buy whatever they want, whenever and wherever they want it. The company has opened its technology and infrastructure to partners, brands and other sectors, as part of its &#34;Retail as a Service&#34; offering to help drive productivity and innovation across a range of industries. JD.com’s business has expanded across retail, technology, logistics, health, industrials, property development and international business. JD.com is ranked 44th on the Fortune Global 500 list and is China’s largest retailer by revenue, serving over 600 million annual active customers. The company has been listed on NASDAQ since 2014, and on the Hong Kong Stock Exchange since 2020. Committed to the principles of customer first, innovation, dedication, ownership, gratitude, and integrity, the company&#39;s mission is to make lives better through technology, striving to be the most trusted company in the world.</p><p></p><h2><b>【Our Global Business】</b></h2><p></p><p>We are dedicated to building a digitally intelligent, cross-border supply chain and global retail infrastructure. Leveraging our global supply chain capabilities, JD.com continues to expand in markets where our competitive strengths shine. Currently, JD.com&#39;s operations span China, the U.K., the Netherlands, France, Germany, Spain, Brazil, Hungary, Japan, South Korea, Australia, Thailand, Vietnam, Malaysia, Indonesia, Saudi Arabia, the UAE, the U.S., and many others, serving customers worldwide.</p><p></p><p>Key International Business Segments: Joybuy (online retail business in Europe), International Logistics, Cross-border Import Business, JD Industrials International, JD Property International</p><p></p><h2><b>【&#34;Joybuy&#34; - Online Retail Business in Europe】</b></h2><p></p><p>Joybuy is JD.com&#39;s online retail business in Europe. It is currently in the test phase in the UK, the Netherlands, Germany, France, Belgium, and Luxembourg. Joybuy places the customer at the heart of everything it does. Our slogan, “Don’t just buy, Joybuy,” perfectly captures our mission to fulfill our customers’ needs and provide a service that is easy and convenient, but also enjoyable and fun.</p>",
+    "location": "USA-California-Los Angeles",
+    "additionalLocations": [
+     "ARE-Dubai Emirate-Dubai"
+    ],
+    "postedOn": "Posted 30+ Days Ago",
+    "startDate": "2025-10-13",
+    "timeType": "Full time",
+    "jobReqId": "JRadd112",
+    "jobPostingId": "Internal-Audit-Manager_JRadd112",
+    "jobPostingSiteId": "Careers_at_JD",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09"
+    },
+    "logoImage": {
+     "src": "/wday/cxs/jd/Careers_at_JD/sidebarimage/cd44f6a44833100151d009af7f490001",
+     "alt": "Jing Dong"
+    },
+    "canApply": true,
+    "posted": true,
+    "includeResumeParsing": true,
+    "jobRequisitionLocation": {
+     "descriptor": "USA-California-Los Angeles",
+     "country": {
+      "descriptor": "United States of America",
+      "id": "bc33aa3152ec42d4995f4791a106ed09",
+      "alpha2Code": "US"
+     }
+    },
+    "externalUrl": "https://jd.wd103.myworkdayjobs.com/Careers_at_JD/job/USA-California-Los-Angeles/Internal-Audit-Manager_JRadd112",
+    "questionnaireId": "9c4dc59c225a1000b168a9f8b3a50000"
+   },
+   "hiringOrg": "",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "workerSubType": "Regular (Fixed Term)",
+   "jobFamilyGroup": "JFG_Finance",
+   "signals": {
+    "linkedin_job_id": "4386393666",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4386393666",
+    "title": "Internal Audit Manager",
+    "company": "JD.COM",
+    "location": "Los Angeles Metropolitan Area",
+    "linkedin_posted_date": "2026-09-04",
+    "num_applicants": 90,
+    "applicants_label": "90 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-17T13:14:44",
+    "match_method": "title"
    }
   },
   {

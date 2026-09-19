@@ -1,0 +1,10 @@
+rows: 659 (unique reqIds: 659)
+details merged: 659
+descriptions present: 659
+locations enumerated (not 'N Locations'): 659
+startDate present: 0
+signals: matched=327 no_match=332 blocked=0 not_checked=0
+location entries total (sum nLocations): 879
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=659 (from facet_tags.jsonl)
+facet tag coverage: 659/659 rows (0 untagged)

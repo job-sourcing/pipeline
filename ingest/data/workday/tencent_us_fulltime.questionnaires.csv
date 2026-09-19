@@ -1,4 +1,17 @@
 ﻿questionnaireId,instructions,questionId,order,question,required,type,answers
+1a41fde2d6de100f86caf5ad14160000,,1a41fde2d6de100f86caf64716cb0000,a,"If you were referred by a Campus Ambassador, please enter the referral code:",false,Text,
+1a41fde2d6de100f86caf5ad14160000,,1a41fde2d6de100f86caf6e0c5210000,b,Do you have any relatives employed with us?,true,Multiple Choice - Single Select,Yes; No
+1a41fde2d6de100f86caf5ad14160000,,1a41fde2d6de100f86caf6e0c5210003,c,Do you now or will you in the future require immigration sponsorship to work at the company?,true,Multiple Choice - Single Select,Yes; No
+1a41fde2d6de100f86caf5ad14160000,,1a41fde2d6de100f86caf77a56890002,d,Have you been previously employed with Tencent or any subsidiaries of Tencent?,true,Multiple Choice - Single Select,Yes; No
+1a41fde2d6de100f86caf5ad14160000,,1a41fde2d6de100f86caf77a56890005,d.a,"What is your previous tencent account? (prefix of your tencent working email, for example, meimeihan)
+
+If you forget it, kindly provide the mobile number or personal email during your previous employment at Tencent.",true,Text,
+1a41fde2d6de100f86caf5ad14160000,,1a41fde2d6de100f86caf77a56890006,e,"Are you subject to a non-competition or other agreement, or aware of other circumstances, that would preclude or restrict your employment with Tencent?",true,Multiple Choice - Single Select,"Yes, I can describe with details.; Yes, I can upload with supporting documents.; No."
+1a41fde2d6de100f86caf5ad14160000,,1a41fde2d6de100f86caf813eab10002,e.a,Please describe the situation here,true,Text,
+1a41fde2d6de100f86caf5ad14160000,,1a41fde2d6de100f86caf813eab10003,e.b,Please upload related document(s) for further evaluation.,true,Upload Attachments,
+1a41fde2d6de100f86caf5ad14160000,,1a41fde2d6de100f86caf813eab10004,f,"貴殿は以下のいずれかの国又は地域の市民又は永年居住者ですか：キューバ、シリア、イラン、クリミア、北朝鮮、ドンバス地域（別名ドネツク・ルハンスク）。この質問に対する貴殿の回答は、適用ある輸出規制の順守のためにのみ利用されます。
+
+Are you a citizen or lawful permanent resident from one of the below countries/regions: Cuba, Syria, Iran, Crimea Region, North Korea, and Donbas Region(a.k.a Donetsk/ Luhansk)? Your response to this question will only be used to ensure compliance with applicable export control laws and regulations.",true,Multiple Choice - Single Select,はい Yes; いいえ No
 44e07daec6221000dd21974364a90000,,44e07daec6221000dd21974364a90001,a,"If you were referred by a Campus Ambassador, please enter the referral code:",false,Text,
 44e07daec6221000dd21974364a90000,,44e07daec6221000dd21974364a90002,b,Do you have any relatives employed with us?,true,Multiple Choice - Single Select,Yes; No
 44e07daec6221000dd21974364a90000,,44e07daec6221000dd21974364a90005,c,Do you now or will you in the future require immigration sponsorship to work at the company?,true,Multiple Choice - Single Select,Yes; No
@@ -30,6 +43,18 @@ If you forget it, kindly provide the mobile number or personal email during your
 6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3aa3704d60000,d.a,Please describe the situation here,true,Text,
 6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3aa3704d60001,d.b,Please upload related document(s) for further evaluation.,true,Upload Attachments,
 6d61f21836e11001c7d3a86a059b0000,,6d61f21836e11001c7d3aa3704d60002,e,"Are you a citizen or lawful permanent resident from one of the below countries/regions: Cuba, Syria, Iran, Crimea Region, North Korea, and Donbas Region(a.k.a Donetsk/ Luhansk)? Your response to this question will only be used to ensure compliance with applicable export control laws and regulations.",true,Multiple Choice - Single Select,Yes; No
+6d61f21836e11001c7d3bfd230710000,,6d61f21836e11001c7d3c06bc6c60000,a,Do you have any relatives employed with us?,true,Multiple Choice - Single Select,Yes; No
+6d61f21836e11001c7d3bfd230710000,,6d61f21836e11001c7d3c06bc6c60003,b,Do you now or will you in the future require immigration sponsorship to work at the company?,true,Multiple Choice - Single Select,Yes; No
+6d61f21836e11001c7d3bfd230710000,,6d61f21836e11001c7d3c06bc6c60006,c,Have you been previously employed with Tencent or any subsidiaries of Tencent?,true,Multiple Choice - Single Select,Yes; No
+6d61f21836e11001c7d3bfd230710000,,6d61f21836e11001c7d3c06bc6c60009,c.a,"What is your previous tencent account? (prefix of your tencent working email, for example, meimeihan)
+
+If you forget it, kindly provide the mobile number or personal email during your previous employment at Tencent.",true,Text,
+6d61f21836e11001c7d3bfd230710000,,6d61f21836e11001c7d3c1058a4d0000,d,"Are you subject to a non-competition or other agreement, or aware of other circumstances, that would preclude or restrict your employment with Tencent?",true,Multiple Choice - Single Select,"Yes, I can describe with details.; Yes, I can upload with supporting documents.; No."
+6d61f21836e11001c7d3bfd230710000,,6d61f21836e11001c7d3c1058a4d0004,d.a,Please describe the situation here,true,Text,
+6d61f21836e11001c7d3bfd230710000,,6d61f21836e11001c7d3c1058a4d0005,d.b,Please upload related document(s) for further evaluation.,true,Upload Attachments,
+6d61f21836e11001c7d3bfd230710000,,6d61f21836e11001c7d3c1058a4d0006,e,"貴殿は以下のいずれかの国又は地域の市民又は永年居住者ですか：キューバ、シリア、イラン、クリミア、北朝鮮、ドンバス地域（別名ドネツク・ルハンスク）。この質問に対する貴殿の回答は、適用ある輸出規制の順守のためにのみ利用されます。
+
+Are you a citizen or lawful permanent resident from one of the below countries/regions: Cuba, Syria, Iran, Crimea Region, North Korea, and Donbas Region(a.k.a Donetsk/ Luhansk)? Your response to this question will only be used to ensure compliance with applicable export control laws and regulations.",true,Multiple Choice - Single Select,はい Yes; いいえ No
 996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d00c938eb0001,a,"If you were referred by a Campus Ambassador, please enter the referral code:",false,Text,
 996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01638efb0000,b,Do you have any relatives employed with us?,true,Multiple Choice - Single Select,Yes; No
 996e5ca7e8851001972d00c938eb0000,,996e5ca7e8851001972d01638efb0003,c,Do you now or will you in the future require immigration sponsorship to work at the company?,true,Multiple Choice - Single Select,Yes; No

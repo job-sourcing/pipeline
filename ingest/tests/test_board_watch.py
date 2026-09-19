@@ -46,6 +46,7 @@ _spec.loader.exec_module(watch)
 sys.path.insert(0, str(REPO_ROOT / "ingest"))
 
 from jobsearch.config import Config  # noqa: E402
+from jobsearch.sources import site_boards  # noqa: E402
 
 
 CFG = {"label": "test_watch", "board": "nvidia|wd5|nvidiaexternalcareersite",
@@ -94,7 +95,7 @@ class TestCurrentPostings:
         monkeypatch.setattr(watch.workday, "_page", fake_page)
         monkeypatch.setattr(watch.workday, "_facet_id",
                             lambda p, param, label: "f1")
-        rows, complete = watch.current_postings(
+        rows, complete, _cc = watch.current_postings(
             "nvidia|wd5|site", "United States", "Full time", Config())
         assert len(rows) == 25          # 10 + 10 + 5 unique (wrap deduped)
         assert complete is True
@@ -110,7 +111,7 @@ class TestCurrentPostings:
         monkeypatch.setattr(watch.workday, "_page", fake_page)
         monkeypatch.setattr(watch.workday, "_facet_id",
                             lambda p, param, label: "f1")
-        rows, complete = watch.current_postings(
+        rows, complete, _cc = watch.current_postings(
             "nvidia|wd5|site", "United States", "Full time", Config())
         assert len(rows) == 10
         assert complete is False        # B1: partial ≠ complete
@@ -130,7 +131,7 @@ class TestCurrentPostings:
                             lambda b, f, o, c: _page_payload([], 0))
         monkeypatch.setattr(watch.workday, "_facet_id",
                             lambda p, param, label: "f1")
-        rows, complete = watch.current_postings(
+        rows, complete, _cc = watch.current_postings(
             "nvidia|wd5|site", "United States", "Full time", Config())
         assert rows == {} and complete is True
 
@@ -508,7 +509,7 @@ class TestRunWatch:
                              encoding="utf-8")
         monkeypatch.setattr(
             watch, "current_postings",
-            lambda *a, **k: ({p["reqId"]: p for p in current}, complete))
+            lambda *a, **k: ({p["reqId"]: p for p in current}, complete, False))
         monkeypatch.setattr(
             watch, "_legs_bump", lambda label: legs)
         def _default_enrich(new_rows, *a, **k):
@@ -691,7 +692,8 @@ class TestRecorroborate:
 
         monkeypatch.setattr(watch, "current_postings",
                             lambda *a, **k: (
-                                {"JR9": _post("JR9", "Fresh")}, True))
+                                {"JR9": _post("JR9", "Fresh")}, True,
+                                False))
         monkeypatch.setattr(watch, "_legs_bump", lambda l: 1)
         monkeypatch.setattr(watch, "enrich_new", lambda *a, **k: [])
         # new-corroboration returns nothing; lag pass must hit JR9
@@ -732,7 +734,7 @@ class TestBacklogDrainsAcrossLegs:
              "last_seen": today}) + "\n", encoding="utf-8")
 
         def fake_current(*a, **k):
-            return dict(board), True
+            return dict(board), True, False
 
         def fake_enrich(rows, *a, **k):
             return [{"reqId": r["reqId"], "title": r["title"],
@@ -788,7 +790,7 @@ class TestBacklogDrainsAcrossLegs:
         monkeypatch.setattr(watch.workday, "_page", fake_page)
         monkeypatch.setattr(watch.workday, "_facet_id",
                             lambda p, param, label: f"f_{param}")
-        rows, complete = watch.current_postings(
+        rows, complete, _cc = watch.current_postings(
             "nvidia|wd5|site", "United States", "Full time", Config())
         assert complete and len(rows) == 2
         # page-0 discovery call: no facets; refetch + all pages: BOTH facets
@@ -837,7 +839,7 @@ class TestB6ErrorRetry:
             watch, "current_postings",
             lambda *a, **k: ({p: {"reqId": p, "title": t, "url": "u",
                                    "locationsText": "US, CA, X"}
-                              for p, t in current}, True))
+                              for p, t in current}, True, False))
         monkeypatch.setattr(watch, "_legs_bump", lambda l: 1)
         monkeypatch.setattr(watch, "enrich_new", enrich_out)
         monkeypatch.setattr(watch, "corroborate_new", lambda *a, **k: {})
@@ -898,7 +900,7 @@ class TestBacklogRecoveryUsesCurrentRows:
         monkeypatch.setattr(watch.workday, "detail_payload", detail)
         monkeypatch.setattr(
             watch, "current_postings",
-            lambda *a, **k: ({"JR1": _post("JR1", "Staff SRE")}, True))
+            lambda *a, **k: ({"JR1": _post("JR1", "Staff SRE")}, True, False))
         monkeypatch.setattr(watch, "_legs_bump", lambda l: 1)
         monkeypatch.setattr(watch, "corroborate_new", lambda *a, **k: {})
         monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
@@ -1133,7 +1135,7 @@ class TestTitleSearchBudgetWiring:
         today = date.today().isoformat()
         monkeypatch.setattr(
             watch, "current_postings",
-            lambda *a, **k: ({"JR9": _post("JR9")}, True))
+            lambda *a, **k: ({"JR9": _post("JR9")}, True, False))
         monkeypatch.setattr(watch, "_legs_bump", lambda l: 1)
         # enrich writes a signal-less record dated today → the lag pass
         # must pick it up for its second corroborate call
@@ -1599,7 +1601,7 @@ class TestRepostRunWatch:
                          encoding="utf-8")
         monkeypatch.setattr(
             watch, "current_postings",
-            lambda *a, **k: ({r["reqId"]: r for r in current_rows}, True))
+            lambda *a, **k: ({r["reqId"]: r for r in current_rows}, True, False))
         monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
         monkeypatch.setattr(
             watch, "enrich_new",
@@ -1922,12 +1924,22 @@ class TestShippedWatchConfig:
         assert isinstance(watches, list) and len(watches) >= 4
         labels = set()
         for w in watches:
-            for key in ("label", "board", "company", "country",
-                        "time_type"):
+            required = ["label", "board", "company", "country"]
+            # time_type: REQUIRED for workday boards (the facet exists);
+            # OPTIONAL for site specs (greenhouse serves none — an
+            # empty value there would be a lie, S13)
+            if not site_boards.is_site_spec(w["board"]):
+                required.append("time_type")
+            for key in required:
                 assert w.get(key), f"watch missing {key}: {w}"
-            # board spec parses as tenant|instance|site
-            parts = w["board"].split("|")
-            assert len(parts) == 3 and all(parts), w["board"]
+            # board spec parses as workday tenant|instance|site OR a
+            # custom-site ats:kind:org (S13)
+            if site_boards.is_site_spec(w["board"]):
+                kind, org = site_boards.parse_site(w["board"])
+                assert kind and org, w["board"]
+            else:
+                parts = w["board"].split("|")
+                assert len(parts) == 3 and all(parts), w["board"]
             assert w["label"] not in labels, f"duplicate label {w['label']}"
             labels.add(w["label"])
             # optional S12 keys must be lists when present
@@ -1971,3 +1983,135 @@ class TestShippedWatchConfig:
             corr.COMPANY_VARIANTS.update(saved_v)
             corr.SLICE_LOCATIONS.clear()
             corr.SLICE_LOCATIONS.update(saved_l)
+
+
+# ── S13: client-country classification (detail-based) ────────────────────
+class TestRunWatchClientCountry:
+    """Boards with no country facet list the FULL GLOBAL board; the
+    classification piggybacks on enrich_new's detail fetch (the feed
+    record's `country` field). Only US rows enter state/new/digest;
+    foreign rows live in the feed for audit; pending rows retrigger."""
+
+    CC_CFG = {"label": "test_watch", "board": "netflix|wd108|Netflix",
+              "company": "Netflix", "country": "United States",
+              "time_type": "Full time"}
+
+    def _run(self, wdir, monkeypatch, prior, current, enrich_map,
+             complete=True, legs=1, corroborate_seen=None):
+        state = wdir / "test_watch.state.jsonl"
+        if prior:
+            state.write_text("\n".join(json.dumps(r) for r in prior) + "\n",
+                             encoding="utf-8")
+        monkeypatch.setattr(
+            watch, "current_postings",
+            lambda *a, **k: ({p["reqId"]: p for p in current},
+                             complete, True))
+        monkeypatch.setattr(watch, "_legs_bump", lambda l: legs)
+        # enrich_new returns feed records carrying the detail country
+        monkeypatch.setattr(watch, "enrich_new",
+                            lambda rows, *a, **k: [
+                                dict(enrich_map[r["reqId"]],
+                                     reqId=r["reqId"],
+                                     title=r.get("title") or "",
+                                     first_seen="2026-09-10",
+                                     url=r.get("url", ""))
+                                for r in rows
+                                if r["reqId"] in enrich_map])
+        seen = []
+        if corroborate_seen is None:
+            corroborate_seen = seen.append
+        monkeypatch.setattr(
+            watch, "corroborate_new",
+            lambda rows, *a, **k: (corroborate_seen(rows) or {}))
+        monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
+        return watch.run_watch(dict(self.CC_CFG), Config())
+
+    def test_us_kept_foreign_excluded_pending_retriggers(self, wdir,
+                                                         monkeypatch):
+        prior = [{"reqId": "JR0", "title": "Stay", "first_seen":
+                  "2026-09-01", "last_seen": "2026-09-09"}]
+        current = [_post("JR0", "Stay"),          # prior (US)
+                   _post("JR1", "US city"),       # classified US
+                   _post("JR2", "Seoul"),         # classified foreign
+                   _post("JR3", "pending")]       # not enriched this leg
+        enrich_map = {
+            "JR1": {"country": "united states of america",
+                    "locations": ["Los Gatos"], "startDate": "2026-09-09",
+                    "description": "d"},
+            "JR2": {"country": "south korea",
+                    "locations": ["Seoul"], "startDate": "2026-09-09",
+                    "description": "d"},
+        }
+        result = self._run(wdir, monkeypatch, prior, current, enrich_map)
+        assert result == "backlog"     # JR3 pending → retrigger
+        state = [json.loads(x) for x in
+                 (wdir / "test_watch.state.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        assert {r["reqId"] for r in state} == {"JR0", "JR1"}  # US only
+        # the feed carries the foreign record for audit
+        feed = [json.loads(x) for x in
+                (wdir / "test_watch.newposts.jsonl").read_text(
+                    encoding="utf-8").splitlines()]
+        assert {r["reqId"] for r in feed} == {"JR1", "JR2"}
+        jr2 = next(r for r in feed if r["reqId"] == "JR2")
+        assert jr2["country"] == "south korea"
+
+    def test_corroborate_never_sees_foreign_rows(self, wdir, monkeypatch):
+        current = [_post("JR1", "US city"), _post("JR2", "Seoul")]
+        enrich_map = {"JR1": {"country": "united states of america"},
+                      "JR2": {"country": "south korea"}}
+        seen = []
+        self._run(wdir, monkeypatch, [], current, enrich_map,
+                  corroborate_seen=seen.append)
+        seen_flat = [r["reqId"] for rows in seen for r in rows]
+        assert "JR2" not in seen_flat
+        assert "JR1" in seen_flat
+
+    def test_three_strike_falls_back_to_tokens(self, wdir, monkeypatch):
+        # detail failed 3x → token predicate decides (S12 behavior for
+        # that tail only); 'US, CA' passes, 'Seoul' does not
+        jr9 = _post("JR9", "US city")
+        jr8 = _post("JR8", "Seoul")
+        jr8["locationsText"] = "Seoul, Seoul, South Korea"  # token ≠ US
+        current = [jr9, jr8]
+        enrich_map = {
+            "JR9": {"error": "detail_unreachable", "attempts": 3,
+                    "country": ""},
+            "JR8": {"error": "detail_unreachable", "attempts": 3,
+                    "country": ""},
+        }
+        result = self._run(wdir, monkeypatch, [], current, enrich_map)
+        assert result == "complete"
+        state = [json.loads(x) for x in
+                 (wdir / "test_watch.state.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        assert {r["reqId"] for r in state} == {"JR9"}
+
+    def test_no_new_rows_completes(self, wdir, monkeypatch):
+        prior = [{"reqId": "JR0", "title": "Stay",
+                  "first_seen": "2026-09-01", "last_seen": "2026-09-09"}]
+        result = self._run(wdir, monkeypatch, prior,
+                           [_post("JR0", "Stay")], {})
+        assert result == "complete"
+        state = [json.loads(x) for x in
+                 (wdir / "test_watch.state.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        assert {r["reqId"] for r in state} == {"JR0"}
+
+    def test_lag_pass_skips_foreign_feed_rows(self, wdir, monkeypatch):
+        # feed carries a fresh foreign record without signals — the
+        # cross-post-lag pass must NOT corroborate it
+        feed = wdir / "test_watch.newposts.jsonl"
+        feed.write_text(json.dumps({
+            "reqId": "JRF", "title": "Foreign", "first_seen":
+            date.today().isoformat(), "url": "u", "country": "canada"
+        }) + "\n", encoding="utf-8")
+        current = [_post("JR1", "US city")]
+        enrich_map = {"JR1": {"country": "united states of america"}}
+        seen = []
+        self._run(wdir, monkeypatch, [], current, enrich_map,
+                  corroborate_seen=seen.append)
+        # second corroborate call (lag pass) — only via feed recent rows;
+        # JRF must never appear in any corroborate input
+        for rows in seen:
+            assert all(r["reqId"] != "JRF" for r in rows)

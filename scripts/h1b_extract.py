@@ -231,7 +231,7 @@ def _extract_rows(body: bytes, employer: str, source_file: str
 def _existing_case_numbers(path: Path) -> set[str]:
     have: set[str] = set()
     if path.exists():
-        for line in path.read_text(encoding="utf-8").splitlines():
+        for line in path.read_text(encoding="utf-8").split("\n"):
             line = line.strip()
             if not line:
                 continue

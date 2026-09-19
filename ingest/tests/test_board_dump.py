@@ -2774,3 +2774,147 @@ class TestFinishSurvivesErrorRows:
         assert got["JR1"]["detailError"] == "detail_unreachable"
         assert got["JR1"]["nLocations"] == ""
         assert (out.with_suffix(".report.txt")).exists()
+
+
+# ── S13: detail-based country classification (phase countryfilter) ───────
+
+class TestCountryFilterPhase:
+    """Client-country boards (netflix/tencent/jd) list the FULL global
+    board now; --phase countryfilter rewrites list.jsonl to the
+    {country} population using the detail payload's authoritative
+    jobPostingInfo.country. Foreign rows are archived (never silent);
+    unresolved rows are KEPT (unknown ≠ foreign, B1 spirit)."""
+
+    def _args(self):
+        return type("A", (), {"board": "netflix|wd108|Netflix",
+                              "country": "United States", "sleep": 0})()
+
+    def _setup(self, out, rows, details, country_pending=True):
+        board_dump._atomic_write_text(
+            out.with_suffix(".list.jsonl"),
+            "\n".join(json.dumps(r) for r in rows) + "\n")
+        status = {"rows": len(rows), "total": len(rows), "complete": True,
+                  "pages": 1, "country_client": True,
+                  "country": "United States"}
+        if country_pending:
+            status["country_filter_pending"] = True
+        board_dump._atomic_write_text(
+            out.with_suffix(".list.status"), json.dumps(status))
+        if details is not None:
+            board_dump._atomic_write_text(
+                out.with_suffix(".details.jsonl"),
+                "\n".join(json.dumps(d) for d in details) + "\n")
+
+    @staticmethod
+    def _row(rid, loc):
+        return {"reqId": rid, "title": f"T {rid}", "url": f"u/{rid}",
+                "locationsText": loc, "externalPath": f"/job/{rid}",
+                "company": "Netflix"}
+
+    @staticmethod
+    def _det(rid, country_descriptor):
+        info = {"title": f"T {rid}",
+                "country": {"descriptor": country_descriptor}}
+        return {"reqId": rid, "info": info, "hiringOrg": "Netflix",
+                "similarJobsCount": 0}
+
+    def test_us_kept_foreign_dropped_unresolved_kept(self, tmp_path):
+        out = tmp_path / "dump"
+        self._setup(
+            out,
+            rows=[self._row("JR1", "Los Gatos"),     # city-only, US
+                  self._row("JR2", "Los Gatos"),     # city-only, Canada
+                  self._row("JR3", "2 Locations")],  # no detail yet
+            details=[self._det("JR1", "United States of America"),
+                     self._det("JR2", "Canada")])
+        rc = board_dump.phase_countryfilter(self._args(), out)
+        assert rc == 0
+        kept = [json.loads(x) for x in
+                out.with_suffix(".list.jsonl").read_text().splitlines()]
+        assert {r["reqId"] for r in kept} == {"JR1", "JR3"}
+        foreign = [json.loads(x) for x in
+                   out.with_suffix(".list.foreign.jsonl").read_text()
+                   .splitlines()]
+        assert [r["reqId"] for r in foreign] == ["JR2"]
+        assert foreign[0]["country"] == "canada"   # auditable
+        status = json.loads(out.with_suffix(".list.status").read_text())
+        assert status["rows"] == 2
+        assert status["country_filter_pending"] is False
+        cf = status["country_filtered"]
+        assert cf["kept"] == 2 and cf["dropped"] == 1
+        assert cf["unresolved"] == 1 and cf["basis"] == "detail"
+
+    def test_idempotent_rerun(self, tmp_path):
+        out = tmp_path / "dump"
+        self._setup(out, rows=[self._row("JR1", "Los Gatos"),
+                               self._row("JR2", "Seoul")],
+                    details=[self._det("JR1", "United States of America"),
+                             self._det("JR2", "South Korea")])
+        assert board_dump.phase_countryfilter(self._args(), out) == 0
+        first = out.with_suffix(".list.jsonl").read_text()
+        assert board_dump.phase_countryfilter(self._args(), out) == 0
+        assert out.with_suffix(".list.jsonl").read_text() == first
+        # foreign archive: exactly one line per row (no dup on rerun)
+        ftxt = out.with_suffix(".list.foreign.jsonl").read_text()
+        assert len(ftxt.splitlines()) == 1
+
+    def test_later_settled_detail_reclassifies(self, tmp_path):
+        # a pending row's detail settles → a re-run classifies it
+        out = tmp_path / "dump"
+        self._setup(out, rows=[self._row("JR3", "2 Locations")],
+                    details=[])
+        assert board_dump.phase_countryfilter(self._args(), out) == 0
+        status = json.loads(out.with_suffix(".list.status").read_text())
+        assert status["country_filtered"]["unresolved"] == 1
+        # detail arrives (retry succeeded)
+        self._setup(out, rows=[self._row("JR3", "2 Locations")],
+                    details=[self._det("JR3", "Canada")],
+                    country_pending=False)
+        # restore pending marker for the re-run scenario
+        st = json.loads(out.with_suffix(".list.status").read_text())
+        st["country_filter_pending"] = True
+        board_dump._atomic_write_text(out.with_suffix(".list.status"),
+                                      json.dumps(st))
+        assert board_dump.phase_countryfilter(self._args(), out) == 0
+        kept = board_dump._load_jsonl(out.with_suffix(".list.jsonl"))
+        assert kept == []   # classified foreign → dropped
+
+    def test_facet_board_noop(self, tmp_path):
+        out = tmp_path / "dump"
+        self._setup(out, rows=[self._row("JR1", "US, CA, X")],
+                    details=None, country_pending=False)
+        # nvidia-style: no country_client marker → no-op
+        status = {"rows": 1, "total": 1, "complete": True, "pages": 1}
+        board_dump._atomic_write_text(out.with_suffix(".list.status"),
+                                      json.dumps(status))
+        before = out.with_suffix(".list.jsonl").read_text()
+        rc = board_dump.phase_countryfilter(self._args(), out)
+        assert rc == 0
+        assert out.with_suffix(".list.jsonl").read_text() == before
+
+    def test_no_list_file_rc2(self, tmp_path):
+        rc = board_dump.phase_countryfilter(
+            self._args(), tmp_path / "missing")
+        assert rc == 2
+
+    def test_finish_refuses_while_filter_pending(self, tmp_path):
+        """The hard gate: a listing that never ran countryfilter would
+        ship the FULL GLOBAL board as the CSV — finish refuses."""
+        out = tmp_path / "dump"
+        rows = [self._row("JR1", "Los Gatos")]
+        self._setup(out, rows=rows,
+                    details=[self._det("JR1",
+                                       "United States of America")])
+        args = type("A", (), {
+            "board": "netflix|wd108|Netflix", "label": "x",
+            "company": "Netflix", "country": "United States",
+            "out_dir": str(tmp_path), "sleep": 0,
+            "li_variants": None, "slice_locations": None,
+            "corroborate_index": False, "index_mode": None,
+            "li_reindex": False, "reprobe_no_card_days": None,
+            "require_details": False, "refetch_similar": False,
+            "titlesearch_limit": 0, "titlesearch_search_locations": None,
+            "questionnaire_dir": None, "h1b": None,
+        })()
+        rc = board_dump.phase_finish(args, out)
+        assert rc == 2

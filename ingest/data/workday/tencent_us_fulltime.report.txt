@@ -1,12 +1,12 @@
-rows: 54 (unique reqIds: 54)
-details merged: 54
-descriptions present: 54
-locations enumerated (not 'N Locations'): 54
-startDate present: 54
-signals: matched=28 no_match=26 blocked=0 not_checked=0
-location entries total (sum nLocations): 54
-similar-job edges: 103
+rows: 34 (unique reqIds: 34)
+details merged: 34
+descriptions present: 34
+locations enumerated (not 'N Locations'): 34
+startDate present: 34
+signals: matched=26 no_match=8 blocked=0 not_checked=0
+location entries total (sum nLocations): 42
+similar-job edges: 824
 facet census: 5 facets / 61 values (tencent_us_fulltime.facets.json)
-facet-tagged rows: workerSubType=54 jobFamilyGroup=54 (from facet_tags.jsonl)
-facet tag coverage: 54/54 rows (0 untagged)
-questionnaire definitions: 4 id(s) covering 54/54 rows; 4 fetched (34 questions → tencent_us_fulltime.questionnaires.csv)
+facet-tagged rows: workerSubType=62 jobFamilyGroup=62 (from facet_tags.jsonl)
+facet tag coverage: 34/34 rows (0 untagged)
+questionnaire definitions: 6 id(s) covering 34/34 rows; 6 fetched (51 questions → tencent_us_fulltime.questionnaires.csv)
