@@ -40,7 +40,11 @@ echo "== back-sync live watch state into the private archive =="
 # incident: a mirror-behind-archive sync rsync'd the org's stale 1-watch config
 # over the archive's 4-watch config and then SHIPPED the regression to the
 # runtime — GHA silently kept running nvidia-only. Never back-sync config.
-rsync -a --delete --exclude=config.json "$DEST/ingest/data/board_watch/" "$SRC/ingest/data/board_watch/"
+# NO --delete either (2nd incident, same day): a NEW watch's bootstrap state
+# is seeded ONLY in the archive (openai/anthropic) — a deleting back-sync
+# removed it before the push-out could ship it. Stale state files for removed
+# watches linger harmlessly; the FORWARD rsync (--delete) cleans the org.
+rsync -a --exclude=config.json "$DEST/ingest/data/board_watch/" "$SRC/ingest/data/board_watch/"
 (cd "$SRC" && git add ingest/data/board_watch 2>/dev/null && \
   git diff --cached --quiet || git commit -q -m "watch state back-sync from org runtime")
 
