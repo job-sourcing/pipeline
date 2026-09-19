@@ -35,7 +35,12 @@ if git rev-parse --verify origin/main >/dev/null 2>&1; then
 fi
 
 echo "== back-sync live watch state into the private archive =="
-rsync -a --delete "$DEST/ingest/data/board_watch/" "$SRC/ingest/data/board_watch/"
+# STATE files flow org→archive (GHA checkpoints are newer). config.json is
+# the ONE exception: it is locally-edited (archive→org one-way). The 2026-09-19
+# incident: a mirror-behind-archive sync rsync'd the org's stale 1-watch config
+# over the archive's 4-watch config and then SHIPPED the regression to the
+# runtime — GHA silently kept running nvidia-only. Never back-sync config.
+rsync -a --delete --exclude=config.json "$DEST/ingest/data/board_watch/" "$SRC/ingest/data/board_watch/"
 (cd "$SRC" && git add ingest/data/board_watch 2>/dev/null && \
   git diff --cached --quiet || git commit -q -m "watch state back-sync from org runtime")
 
