@@ -10,3 +10,4 @@ facet census: 5 facets / 204 values (jd_us_fulltime.facets.json)
 facet-tagged rows: workerSubType=57 jobFamilyGroup=57 (from facet_tags.jsonl)
 facet tag coverage: 55/55 rows (0 untagged)
 questionnaire definitions: 1 id(s) covering 55/55 rows; 1 fetched (2 questions → jd_us_fulltime.questionnaires.csv)
+h1b wage bands: 0/55 rows banded (0 title+state, 0 title-only) from 2 LCA filings → jd_us_fulltime.h1b_lca.csv

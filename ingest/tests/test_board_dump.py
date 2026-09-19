@@ -2918,3 +2918,61 @@ class TestCountryFilterPhase:
         })()
         rc = board_dump.phase_finish(args, out)
         assert rc == 2
+
+
+# ── S13: per-company LCA house-title conventions ─────────────────────────
+
+class TestH1bHouseTitle:
+    """OpenAI files LCAs as 'Member of X Staff (Specialization)' while
+    postings use standard titles — the wrapper is a KNOWN translation
+    (like the LI company-variants registry): unwrap at POOL-KEY time;
+    the pool's audit title stays the RAW LCA string."""
+
+    def test_openai_wrapper_unwrapped(self):
+        f = board_dump._h1b_house_title
+        assert f("OpenAI",
+                 "Member of Technical Staff (Software Engineer)") \
+            == "software engineer"
+        assert f("OpenAI",
+                 "Member of Go To Market Staff (Solutions Architect)") \
+            == "solutions architect"
+        # bare MTS (no parenthetical) stays raw — nothing to unwrap to
+        assert f("OpenAI", "Member of Technical Staff") \
+            == "Member of Technical Staff"
+
+    def test_no_registry_no_transform(self):
+        f = board_dump._h1b_house_title
+        assert f("NVIDIA", "Member of Technical Staff (SWE)") \
+            == "Member of Technical Staff (SWE)"
+        assert f("", "Anything") == "Anything"
+
+    def test_pool_key_uses_transform_audit_stays_raw(self, tmp_path):
+        out = tmp_path / "dump"
+        import json as _json
+        recs = [
+            {"jobTitle": "Member of Technical Staff (Software Engineer)",
+             "caseStatus": "Certified", "fullTimePosition": "Y",
+             "wageFrom": "200,000", "wageUnit": "Year",
+             "worksiteState": "CA", "employerName": "OPENAI LLC",
+             "caseNumber": f"C{i}", "caseSubmitted": "2026-01-01",
+             "decisionDate": "2026-01-01", "wageTo": "200,000",
+             "jobLocation": "X", "socCode": "Y", "socTitle": "Z",
+             "sourceFile": "q.xlsx"}
+            for i in range(4)
+        ]
+        out.with_suffix(".h1b_lca.jsonl").write_text(
+            "\n".join(_json.dumps(r) for r in recs) + "\n",
+            encoding="utf-8")
+        pools, _ = board_dump._load_h1b_bands(out, "OpenAI")
+        # pool keyed on the UNWRAPPED tokens {software, engineer}
+        assert frozenset({"software", "engineer"}) in pools
+        pool = pools[frozenset({"software", "engineer"})]
+        # audit title = the RAW filing string
+        assert pool["title"] == \
+            "Member of Technical Staff (Software Engineer)"
+        assert len(pool["all"]) == 4
+        # without the company: pool keyed on the raw tokens (no match)
+        pools2, _ = board_dump._load_h1b_bands(out, "Somebody Else")
+        assert frozenset({"software", "engineer"}) not in pools2
+        assert frozenset({"member", "technical", "staff",
+                          "software", "engineer"}) in pools2

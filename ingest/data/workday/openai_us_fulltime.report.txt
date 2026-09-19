@@ -8,3 +8,4 @@ location entries total (sum nLocations): 879
 similar-job edges: 0
 facet-tagged rows: workerSubType=0 jobFamilyGroup=659 (from facet_tags.jsonl)
 facet tag coverage: 659/659 rows (0 untagged)
+h1b wage bands: 174/659 rows banded (0 title+state, 174 title-only) from 239 LCA filings → openai_us_fulltime.h1b_lca.csv

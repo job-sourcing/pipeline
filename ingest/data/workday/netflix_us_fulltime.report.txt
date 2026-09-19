@@ -10,3 +10,4 @@ facet census: 5 facets / 77 values (netflix_us_fulltime.facets.json)
 facet-tagged rows: workerSubType=370 jobFamilyGroup=368 (from facet_tags.jsonl)
 facet tag coverage: 367/369 rows (2 untagged)
 questionnaire definitions: 3 id(s) covering 366/369 rows; 3 fetched (25 questions → netflix_us_fulltime.questionnaires.csv)
+h1b wage bands: 148/369 rows banded (0 title+state, 148 title-only) from 358 LCA filings → netflix_us_fulltime.h1b_lca.csv

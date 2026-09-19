@@ -10,3 +10,4 @@ facet census: 5 facets / 61 values (tencent_us_fulltime.facets.json)
 facet-tagged rows: workerSubType=62 jobFamilyGroup=62 (from facet_tags.jsonl)
 facet tag coverage: 34/34 rows (0 untagged)
 questionnaire definitions: 6 id(s) covering 34/34 rows; 6 fetched (51 questions → tencent_us_fulltime.questionnaires.csv)
+h1b wage bands: 1/34 rows banded (0 title+state, 1 title-only) from 59 LCA filings → tencent_us_fulltime.h1b_lca.csv

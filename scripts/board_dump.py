@@ -1531,7 +1531,38 @@ def _annualize_wage(rec: dict, *, bounded: bool = True) -> Optional[float]:
     return wage
 
 
-def _load_h1b_bands(out: Path) -> tuple[dict, list[dict]]:
+# Per-company LCA house-title conventions (S13). Some employers file
+# LCAs under a house leveling wrapper that the public job titles never
+# use — OpenAI files EVERYTHING as "Member of X Staff (Specialization)"
+# while postings say "Software Engineer, Data Infrastructure". The
+# wrapper is a KNOWN translation, not a guess (same epistemic class as
+# the LinkedIn company-variants registry): unwrap it at POOL-KEY time
+# so the verbatim/subset tiers can do their honest work. The pool's
+# audit title stays the RAW LCA string (h1bMatchTitle shows the real
+# filing). Extensible per company — regex list, first match wins.
+_H1B_HOUSE_TITLE_TRANSFORMS: dict[str, list[re.Pattern]] = {
+    "OpenAI": [
+        # "Member of Technical Staff (Software Engineer)" → SWE;
+        # "Member of Go To Market Staff (Solutions Architect)" → …;
+        # "Member of Business Platform Staff (…)" → …
+        re.compile(r"^member of [a-z ]*staff \((.+)\)$"),
+    ],
+}
+
+
+def _h1b_house_title(company: str, raw: str) -> str:
+    """Company-adapted LCA title for POOL KEYS (raw stays the audit
+    string). No entry / no match → the raw title unchanged."""
+    norm = (raw or "").strip().lower()
+    for pat in _H1B_HOUSE_TITLE_TRANSFORMS.get((company or "").strip(), []):
+        m = pat.match(norm)
+        if m and m.group(1).strip():
+            return m.group(1).strip()
+    return raw or ""
+
+
+def _load_h1b_bands(out: Path,
+                    company: str = "") -> tuple[dict, list[dict]]:
     """(pools, records) from {out}.h1b_lca.jsonl (the GHA-produced
     quarterly extract — scripts/h1b_extract.py +
     .github/workflows/h1b-extract.yml).
@@ -1558,7 +1589,8 @@ def _load_h1b_bands(out: Path) -> tuple[dict, list[dict]]:
         wage = _annualize_wage(rec)
         if wage is None:
             continue
-        toks = _title_tokens(str(rec.get("jobTitle") or ""))
+        toks = _title_tokens(
+            _h1b_house_title(company, str(rec.get("jobTitle") or "")))
         if len(toks) < 2:
             continue
         pool = pools.setdefault(toks, {"states": {}, "all": [],
@@ -2020,7 +2052,7 @@ def phase_finish(args, out: Path) -> int:
     # H-1B/LCA wage bands (OPTIONAL extract — S11): the GHA-produced
     # quarterly extract joined per token-set into #44-#49 + the linked
     # h1b_lca.csv.
-    h1b_pools, h1b_recs = _load_h1b_bands(out)
+    h1b_pools, h1b_recs = _load_h1b_bands(out, args.company or "")
     matched_rows = 0
     csv_rows: list[dict] = []
     enriched_rows: list[dict] = []
