@@ -37,6 +37,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -146,6 +147,49 @@ def _download(url: str, transport: str, cfg, timeout: int = 600
             "a transport saw 404 (path may be wrong): "
             + " | ".join(errors))
     raise RuntimeError("all transports failed: " + " | ".join(errors))
+
+
+_CACHE_MAX_AGE_S = 6 * 3600   # DOL appends in-quarter — hours-bounded
+
+
+def _cache_dir() -> Path:
+    d = os.environ.get("H1B_CACHE_DIR", "/tmp/h1b_quarter_cache")
+    p = Path(d)
+    p.mkdir(parents=True, exist_ok=True)
+    return p
+
+
+def _download_cached(url: str, transport: str, cfg,
+                     timeout: int = 600) -> tuple[bytes, str]:
+    """Run-#7 post-mortem: the workflow invokes this script once PER
+    EMPLOYER, and each invocation re-downloaded every quarterly xlsx
+    (83-251MB each; 9 employers x 6 quarters = ~54 downloads ~= 54 min
+    — past the 45-min job timeout at employer #8, cancelling the run).
+    A disk cache keyed by the quarter's file name shares ONE download
+    across all invocations on the same runner (/tmp persists across
+    the step's python processes; both the /sites/ and /media/ paths
+    share the basename, so the alt-path retry cache-hits too).
+    Bounded by mtime (6h) and size-verified; atomic rename keeps
+    partial downloads out of the cache."""
+    name = url.rsplit("/", 1)[-1]
+    body_p = _cache_dir() / name
+    meta_p = body_p.with_suffix(".xlsx.meta")
+    if body_p.exists() and meta_p.exists():
+        try:
+            size = json.loads(meta_p.read_text(encoding="utf-8"))["size"]
+            st = body_p.stat()
+            if (time.time() - st.st_mtime < _CACHE_MAX_AGE_S
+                    and st.st_size == size):
+                return body_p.read_bytes(), "cache"
+        except Exception:
+            pass  # corrupt meta → fall through to a fresh download
+    body, via = _download(url, transport, cfg, timeout)
+    tmp = body_p.with_suffix(".xlsx.part")
+    tmp.write_bytes(body)
+    tmp.rename(body_p)  # atomic on the same filesystem
+    meta_p.write_text(json.dumps({"size": len(body), "url": url}),
+                      encoding="utf-8")
+    return body, via
 
 
 def _fetch_via(t: str, url: str, cfg, timeout: int) -> tuple[bytes, int]:
@@ -318,14 +362,15 @@ def main() -> int:
             body = None
             via = ""
             try:
-                body, via = _download(_file_url(q), args.transport, cfg)
+                body, via = _download_cached(_file_url(q),
+                                           args.transport, cfg)
             except FileNotFoundError:
                 # some quarters publish ONLY at /media/ (FY2026_Q3
                 # live-measured: /sites/ 404s, /media/ serves) — one
                 # retry on the alternate path before soft-skipping
                 try:
-                    body, via = _download(_file_url(q, alt=True),
-                                         args.transport, cfg)
+                    body, via = _download_cached(_file_url(q, alt=True),
+                                               args.transport, cfg)
                 except FileNotFoundError:
                     print(f"  {q}: NOT PUBLISHED at either path — "
                           f"skipping (soft)", flush=True)
