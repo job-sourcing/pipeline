@@ -272,6 +272,56 @@ def _extract_rows(body: bytes, employer: str, source_file: str
     return rows_out, total
 
 
+def _extract_rows_multi(body: bytes, pairs: list[tuple[str, str]],
+                       source_file: str
+                       ) -> dict[str, tuple[list[dict], int]]:
+    """ONE streaming parse of the quarter's xlsx, every employer filter
+    applied in the same pass (the --multi contract: parse cost is paid
+    once, not once per employer — 9 employers x 6 quarters x 4.1M rows
+    was ~100 min of re-parsing). Returns {label: (rows, total)}."""
+    import io
+    import zipfile
+    try:
+        zipfile.ZipFile(io.BytesIO(body))
+    except zipfile.BadZipFile as exc:
+        raise RuntimeError(f"not a valid xlsx (truncated body?): {exc}")
+    import openpyxl
+    wb = openpyxl.load_workbook(io.BytesIO(body), read_only=True,
+                                data_only=True)
+    ws = wb.active
+    specs: dict[str, tuple[tuple[str, ...], list[dict]]] = {}
+    for label, employer in pairs:
+        needles = tuple(n.strip().lower() for n in employer.split(",")
+                        if n.strip())
+        specs[label] = (needles, [])
+    total = 0
+    header: list[str] = []
+    for row in ws.iter_rows(values_only=True):
+        if not row:
+            continue
+        if not header:
+            header = [str(c or "").strip() for c in row]
+            continue
+        total += 1
+        rec = dict(zip(header, row))
+        emp = str(rec.get("EMPLOYER_NAME") or "").lower()
+        if not emp:
+            continue
+        for label, (needles, out_rows) in specs.items():
+            if any(n in emp for n in needles):
+                out = {"sourceFile": source_file}
+                for col, field in _FIELDS:
+                    v = rec.get(col)
+                    out[field] = ("" if v is None
+                                  else v.isoformat()
+                                  if hasattr(v, "isoformat")
+                                  else str(v))
+                out_rows.append(out)
+    wb.close()
+    return {label: (rows, total)
+            for label, (needles, rows) in specs.items()}
+
+
 def _existing_case_numbers(path: Path) -> set[str]:
     have: set[str] = set()
     if path.exists():
@@ -286,6 +336,112 @@ def _existing_case_numbers(path: Path) -> set[str]:
             if rec.get("caseNumber"):
                 have.add(rec["caseNumber"])
     return have
+
+
+def _quarter_body(q: str, args, cfg
+                  ) -> tuple[bytes | None, str, bool]:
+    """Download one quarter (cache-aware, /media/ alt-path retry).
+    Returns (body, via, failed); body=None means skip this quarter."""
+    print(f"1b] {q}: downloading ({args.transport}) …", flush=True)
+    try:
+        body, via = _download_cached(_file_url(q), args.transport, cfg)
+    except FileNotFoundError:
+        # some quarters publish ONLY at /media/ (FY2026_Q3
+        # live-measured: /sites/ 404s, /media/ serves) — one retry on
+        # the alternate path before soft-skipping
+        try:
+            body, via = _download_cached(_file_url(q, alt=True),
+                                         args.transport, cfg)
+        except FileNotFoundError:
+            print(f"  {q}: NOT PUBLISHED at either path — skipping "
+                  f"(soft)", flush=True)
+            return None, "", False
+        except Exception as exc:  # noqa: BLE001
+            print(f"  {q}: DOWNLOAD FAILED (alt path) — {exc}",
+                  flush=True)
+            return None, "", True
+        print(f"  {q}: served from the /media/ path", flush=True)
+    except Exception as exc:  # noqa: BLE001
+        print(f"  {q}: DOWNLOAD FAILED — {exc}", flush=True)
+        return None, "", True
+    return body, via, False
+
+
+def _parse_multi_spec(spec: str) -> list[tuple[str, str]]:
+    pairs: list[tuple[str, str]] = []
+    for chunk in spec.split(";"):
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+        label, _, employer = chunk.partition(":")
+        label, employer = label.strip(), employer.strip()
+        if not label or not employer:
+            raise ValueError(f"bad --multi pair {chunk!r} (expected "
+                             "'label:employer-list')")
+        pairs.append((label, employer))
+    if not pairs:
+        raise ValueError("--multi needs 'label:employer;label:employer'")
+    return pairs
+
+
+def _run_multi(args, cfg, quarters: list[str]) -> int:
+    """The single-pass mode: per quarter ONE download (cached) + ONE
+    parse + N employer filters; per label an independent append-only,
+    case-number-deduped JSONL (the same contract as single mode)."""
+    pairs = _parse_multi_spec(args.multi)
+    out_paths: dict[str, Path] = {}
+    haves: dict[str, set[str]] = {}
+    files: dict[str, "object"] = {}
+    added: dict[str, int] = {label: 0 for label, _ in pairs}
+    employers = dict(pairs)
+    try:
+        for label, employer in pairs:
+            p = (Path(args.out_dir) / label
+                 ).with_suffix(".h1b_lca.jsonl")
+            p.parent.mkdir(parents=True, exist_ok=True)
+            out_paths[label] = p
+            haves[label] = _existing_case_numbers(p)
+            files[label] = open(p, "a", encoding="utf-8")
+            print(f"1b] target: {p.name} "
+                  f"({len(haves[label])} existing case numbers)",
+                  flush=True)
+        failed: list[str] = []
+        for i, q in enumerate(quarters, 1):
+            body, via, q_failed = _quarter_body(q, args, cfg)
+            if q_failed:
+                failed.append(q)
+            if body is None:
+                continue
+            per_label = _extract_rows_multi(body, pairs, q)
+            for label, (rows, total) in per_label.items():
+                f = files[label]
+                new = 0
+                for rec in rows:
+                    cn = rec.get("caseNumber") or ""
+                    if not cn or cn in haves[label]:
+                        continue
+                    haves[label].add(cn)
+                    f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                    new += 1
+                f.flush()
+                added[label] += new
+                print(f"  {q}: {len(body):,}B via {via}; {total:,} LCA "
+                      f"rows, {len(rows)} {employers[label]} "
+                      f"[{label}]; +{new} new (dedup case numbers)",
+                      flush=True)
+            if i < len(quarters):
+                time.sleep(args.sleep)
+    finally:
+        for f in files.values():
+            f.close()
+    for label in added:
+        print(f"1b] extract complete: +{added[label]} rows → "
+              f"{out_paths[label]}", flush=True)
+    if failed:
+        print(f"1b] FAILED quarters (retry next run): "
+              f"{', '.join(failed)}", file=sys.stderr)
+        return 1
+    return 0
 
 
 def main() -> int:
@@ -310,6 +466,16 @@ def main() -> int:
                              "supabase"])
     ap.add_argument("--sleep", type=float, default=2.0,
                     help="pause between file downloads (s)")
+    ap.add_argument("--multi", default="",
+                    help="single-pass multi-employer mode: "
+                         "'label:employer-list' pairs joined by ';' "
+                         "(employer lists keep their commas). Each "
+                         "quarterly file is downloaded AND PARSED once, "
+                         "every employer filter applied in the same "
+                         "stream — the runs #7/#8 post-mortem: 9 "
+                         "per-employer invocations re-parsed 4.1M rows "
+                         "x9 (~100 min) and blew every timeout. "
+                         "Overrides --label/--employer.")
     args = ap.parse_args()
 
     cfg = _load_env()
@@ -346,6 +512,8 @@ def main() -> int:
     if not quarters:
         print("nothing to do: pass --quarters or --recent N")
         return 2
+    if args.multi:
+        return _run_multi(args, cfg, quarters)
 
     out_path = (Path(args.out_dir) / args.label
                 ).with_suffix(".h1b_lca.jsonl")

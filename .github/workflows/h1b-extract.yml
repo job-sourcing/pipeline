@@ -67,31 +67,20 @@ jobs:
       - name: Extract LCA rows (all companies, one run)
         # S12 multi-company: ONE dispatch extracts every company's
         # filings — a single download of each quarterly xlsx serves all
-        # employer filters (the files are per-QUARTER, not per-company;
-        # re-downloading per company would burn 6 × 30-60MB per run).
+        # employer filters (the files are per-QUARTER, not per-company).
+        # S14 runs #7/#8 post-mortem: 9 per-employer invocations each
+        # re-downloaded AND re-parsed every quarterly xlsx (~100 min,
+        # cancelled past every timeout). --multi = single-pass: ONE
+        # download (disk-cached) + ONE streaming parse per quarter,
+        # every employer filter applied in the same pass (~20 min).
         run: |
           set -e
-          extract() {
-            local label="$1" employers="$2"
-            if [ -n "${{ inputs.quarters }}" ]; then
-              python3 scripts/h1b_extract.py --quarters "${{ inputs.quarters }}" --label "$label" --employer "$employers" --transport auto
-            else
-              python3 scripts/h1b_extract.py --recent "${{ inputs.recent }}" --label "$label" --employer "$employers" --transport auto
-            fi
-          }
-          extract nvidia_us_fulltime "NVIDIA"
-          extract netflix_us_fulltime "NETFLIX"
-          extract tencent_us_fulltime "TENCENT"
-          extract jd_us_fulltime "JD.COM,JD AMERICAN,JINGDONG"
-          extract openai_us_fulltime "OPENAI,OPENAI LLC"
-          extract anthropic_us_fulltime "ANTHROPIC,ANTHROPIC PBC"
-          # S14 own-platform companies (substring OR-lists: BYTEDANCE
-          # covers BYTEDANCE LTD/INC, TIKTOK covers TikTok Inc. filings;
-          # ALIBABA covers Group Holding/(US) Inc/Cloud; TRIP.COM +
-          # CTRIP cover the pre/post-rename entities)
-          extract bytedance_us_fulltime "BYTEDANCE,TIKTOK"
-          extract alibaba_us_fulltime "ALIBABA"
-          extract tripcom_us_fulltime "TRIP.COM,CTRIP"
+          if [ -n "${{ inputs.quarters }}" ]; then
+            Q="--quarters ${{ inputs.quarters }}"
+          else
+            Q="--recent ${{ inputs.recent }}"
+          fi
+          python3 scripts/h1b_extract.py $Q --transport auto --multi             "nvidia_us_fulltime:NVIDIA;netflix_us_fulltime:NETFLIX;tencent_us_fulltime:TENCENT;jd_us_fulltime:JD.COM,JD AMERICAN,JINGDONG;openai_us_fulltime:OPENAI,OPENAI LLC;anthropic_us_fulltime:ANTHROPIC,ANTHROPIC PBC;bytedance_us_fulltime:BYTEDANCE,TIKTOK;alibaba_us_fulltime:ALIBABA;tripcom_us_fulltime:TRIP.COM,CTRIP"
 
       - name: Checkpoint extract to git (race-proof)
         if: always()
