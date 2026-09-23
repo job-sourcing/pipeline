@@ -1,0 +1,555 @@
+{
+ "board": "custom:tripcom",
+ "company": "Trip.com Group",
+ "country": "United States",
+ "time_type": "Full time",
+ "dumpDate": "2026-09-19",
+ "count": 10,
+ "details_merged": 10,
+ "signals_matched": 7,
+ "similar_edges": 0,
+ "facet_tagged_rows": 10,
+ "rows": [
+  {
+   "reqId": "MJ003945",
+   "title": "Business Development Manager - Car Rental",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=658fbd93-6125-4d39-a5d9-08e8defebb27",
+   "externalPath": "/tripcom/MJ003945",
+   "locationsText": "Miami",
+   "postedOn": "Posted 9 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ003945"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-09-10",
+   "departments": [
+    "Business development",
+    "Vacations"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Business Development Manager - Car Rental",
+    "location": "Miami",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p>Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, Trip.com Group is a leading global travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar.</p><p><br></p><p>Across its platforms, Trip.com Group integrates travel resources from industry partners and helps travellers worldwide pursue the perfect trip with exceptional travel products and services.</p><p><br></p><p>We have four Customer Service Centres for Trip.com established in Japan, Korea, the UK, and the Philippines, providing 24/7 customer service in 19 different languages.</p><p><br></p><p>We have more than 30,000 employees scattered across 30 countries in Asia, Europe, the Americas, and Oceania, striving to expand our global markets and aiming to be the world’s leading and most trusted family of online travel brands that aspire to deliver the perfect trip at the best price for every traveller.</p><p><br></p><p><strong>Introduction:</strong></p><p>You will be responsible for developing and managing a portfolio of local car rental partners, as well as local entities of global chains, across assigned markets, driving supplier acquisition, commercial performance, and regional growth through strategic partnerships and cross-functional collaboration.</p><p><br></p><p><strong>Key Responsibilities</strong></p><ul><li><strong>Global Chain Local Entity Management</strong> – Manage and engage with the local entities of international car rental chains across Americas to maximize inbound and domestic business, strengthen local commercial alignment, and identify growth opportunities to achieve financial targets.</li><li><strong>Supplier Sourcing &amp; Market Expansion</strong> – Identify, evaluate, onboard, and develop local car rental partners to strengthen supply coverage, improve product competitiveness, and support business growth across assigned markets.</li><li><strong>Commercial Negotiation &amp; Partnership Development</strong> – Negotiate commercial agreements, pricing, and contract renewals to secure competitive terms, improve profitability, and build long-term supplier relationships while supporting regional expansion opportunities.</li><li><strong>Partner Performance &amp; Account Management</strong> – Manage day-to-day commercial relationships with local suppliers, monitor performance across key KPIs including revenue, conversion, availability, pricing competitiveness, content quality, and customer experience, and drive continuous improvement through regular business reviews and joint growth initiatives.</li><li><strong>Market Intelligence &amp; Business Development</strong> – Analyze market trends, competitor activities, customer demand, and regional opportunities to identify new partnerships, optimize supply strategy, and provide actionable recommendations to support local market growth.</li><li><strong>Cross-Functional Collaboration &amp; Product Enablement</strong> – Partner with Product, Operations, Marketing, Finance, and Technology teams to improve supplier integrations, optimize product offerings, support promotional campaigns, and deliver tailored commercial solutions that enhance partner and customer experience.</li><li><strong>Performance Analytics &amp; Strategic Reporting</strong> – Track supplier performance against commercial and operational KPIs, prepare business reviews, and present performance insights and strategic recommendations to management while ensuring alignment with regional and global objectives.</li></ul><p><br></p><p><strong>Qualifications &amp; Experience</strong></p><ul><li>Bachelor’s degree in Business, Supply Chain, Management or related field</li><li>5+ years of experience in business development, sales or supplier management role within a top Car Rental firm, OTA, Mobility or related industries</li><li>Strong knowledge of the local car rental suppliers' landscape</li><li>Data-driven with strong analytical skills, able to translate data insights into informed business decisions</li><li>Strong negotiation and communication skills</li><li>Proactive with a strong sense of ownership</li><li>Professional presentation skills</li><li>Experience working with API integrations</li><li>Willingness to travel up to 30% of the time</li><li>Fluent in English, one or more additional regional languages, particularly Spanish and/or Portuguese, is strongly preferred</li></ul><p><br></p><p><strong>Why Trip.com Group</strong></p><p>We offer a stage to unleash your full potential and drive global impact. As an international team, we embrace an open and inclusive culture that supports and respect team members in and out of the workplace. Everyone is on a trip, whether it's a career trip or a life trip. At Trip.com Group, you can define your own trip by setting a goal and celebrate your success by recognizing the progress you have made.</p><p>What’s more?</p><ul><li>Our rapid business growth in global offers abundant career opportunities at various levels and in multiple functions</li><li>Internal transfer is encouraged, and global job rotation program enable you to pursue a global career path and make global impact</li><li>We provide learning opportunities to further your career in areas of leadership capability, soft skill and professional expertise.</li><li>We encourage flexible work arrangement</li><li>Have fun with company-sponsored greetings and activities at holidays, birthdays, and colorful team events.</li></ul><p><br></p><p>Find out more job opportunities at https://careers.trip.com</p><p><br></p><p><br></p><p>Have a good trip, and see you soon!</p>",
+    "timeType": "Full time",
+    "startDate": "2026-09-10",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=658fbd93-6125-4d39-a5d9-08e8defebb27",
+    "jobReqId": "MJ003945",
+    "postedOn": "Posted 9 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business development",
+   "signals": {
+    "linkedin_job_id": "4464808661",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4464808661",
+    "title": "Business Development Manager - Car Rental",
+    "company": "Trip.com Group",
+    "location": "Miami, FL",
+    "linkedin_posted_date": "2026-09-11",
+    "num_applicants": 53,
+    "applicants_label": "53 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-19T07:21:09",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "MJ003880",
+   "title": "Associate Marketing Campaign Manager, US & Canada",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=58f2fcbf-0c87-4073-b381-9aa6a24817dd",
+   "externalPath": "/tripcom/MJ003880",
+   "locationsText": "Los Angeles",
+   "postedOn": "Posted 26 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ003880"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-08-24",
+   "departments": [
+    "Marketing",
+    "International Business"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Associate Marketing Campaign Manager, US & Canada",
+    "location": "Los Angeles",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p>Founded in 1999 and publicly listed on NASDAQ in 2003 and HKEX in 2021, <a href=\"http://Trip.com\">Trip.com</a> Group is a leading global travel services company with a portfolio of trusted travel brands, including <a href=\"http://Trip.com\">Trip.com</a>, Ctrip, Skyscanner, and Qunar. We provide travelers around the world with services, products, and tools they need to discover, plan, and book their trips.</p><p>With more than 30,000 employees across 30 countries in Asia, Europe, the Americas, and Oceania, we are building one of the world’s leading and most trusted family of online travel brands. Today, we serve more than 400 million customers worldwide, helping travelers plan and book their perfect trips.</p><p><br></p><p><strong>Location &amp; Workplace Type</strong></p><ul><li>Location: Norwalk, CA</li><li>Workplace Type: Hybrid</li></ul><p><br></p><p><strong>In this Role, you’ll get to</strong></p><ul><li>Promotional campaign management: Develop and execute online promotional marketing campaigns that leverage omnichannel marketing, both internal (email, app push, display advertising), and external (social media, events).</li><li>Ecommerce strategy: Develop and manage online sales strategies, including promotional mechanisms like price discounts and other innovative tactics to drive campaign performance.</li><li>Content &amp; messaging strategy: Create promotion strategies, messaging, and assets that align with the company's brand, marketing objectives and target audience.</li><li>Global collaboration: Collaborate with internal stakeholders globally, such as business development, creative teams, and product managers to ensure seamless execution of online promotions.</li><li>Performance Analysis: Monitor and analyze marketing campaign and promotions performance and provide actionable insights for optimization and improvement.</li><li>Industry &amp; market insights: Conduct market research and industry and competitive analysis to inform marketing and promotions strategies and drive innovation and performance improvements.</li><li>Budget management: Manage marketing budgets and ensure all campaigns are tracked and reported accurately.</li><li>Marketing project management: Contribute to and support strategic acquisition and lifecycle marketing and user growth initiatives.</li><li>AI-powered perational efficiency: create and use AI agents and tools to streamline campaign workflows and improve marketing and campaign operational efficiency.</li></ul><p><br></p><p><strong>What you'll Need to Succeed</strong></p><ul><li>Work Authorization in the U.S. (no sponsorship)</li><li>Bachelor's degree in marketing, communications, or a related field.</li><li>2-3 years of experience in B2C digital marketing, e-commerce, travel, or related.</li><li>Proven ability to develop and execute online promotions and/or sales events (e.g. Black Friday).</li><li>Demonstrated experience with a variety of digital marketing and communications channels, including email, social media, app push.</li><li>Strong analytical skills with experience analyzing data and using data to inform marketing strategies.</li><li>Ability to craft compelling marketing messages with consideration to the local customer’s perspective.</li><li>Experience collaborating with global cross-functional teams.</li><li>Ability to manage multiple projects and deadlines simultaneously.</li><li>Strong attention to detail and ability to think creatively.</li></ul><p><br></p><p><strong>Behavioral Requirements</strong></p><ul><li>A desire to learn new things and improve yourself</li><li>Integrity is fundamentally important to you</li><li>You want to make a travel experience better for everyone</li><li>You are naturally inspiring</li></ul><p><br></p><p><strong>Preferred Qualifications:</strong></p><ul><li>Experience with AI in marketing, marketing automation, customer engagement tools, and CRM platforms.</li><li>Knowledge of SEO, content marketing, influencer marketing, or other marketing channels.</li><li>Language skills: Chinese Mandarin.</li></ul><p><br></p><p><strong>What We Provide</strong></p><ul><li>Medical, Dental, and Vision plans</li><li>401(k) and company match</li><li>Public Holidays</li><li>Sick Leave</li><li>Paid Time Off</li></ul><p><br></p><p><strong>Why Trip.com Group</strong></p><p>We offer a stage to unleash your full potential and drive global impact. As an international team, we embrace an open and inclusive culture that supports and respect team members in and out of the workplace. Everyone is on a trip, whether it's a career trip or a life trip. At Trip.com Group, you can define your own trip by setting a goal and celebrate your success by recognizing the progress you have made.</p><p><br></p><p><strong>Pay Transparency</strong></p><p>The annual total pay range for Associate Marketing Manager is $87,000 – $108,000 (base salary and variable incentive, where applicable). The range top could be higher for above-target performance, with potential to increase further based on sustained performance. Final offers vary based on the comprehensive competency assessment completed during screening and interviews, and factors including qualifications, skills, experience, and location. Pay ranges may be modified in the future.</p><p><br></p><p><strong>Why Trip.com Group</strong></p><p>We offer a stage to unleash your full potential and drive global impact. As an international team, we embrace an open and inclusive culture that supports and respects team members in and out of the workplace. Everyone is on a trip, whether it's a career trip or a life trip. At Trip.com Group, you can define your own trip by setting a goal and celebrate your success by recognizing the progress you have made.</p><p><br></p><p><strong>What’s more?</strong></p><ul><li>Our rapid business growth in global offers abundant career opportunities at various levels and in multiple functions</li><li>Internal transfer is encouraged, and global job rotation program enable you to pursue a global career path and make global impact</li><li>We provide learning opportunities to further your career in areas of leadership capability, soft skill and professional expertise.</li><li>We encourage flexible work arrangement</li><li>Have fun with company-sponsored greetings and activities at holidays, birthdays, and colorful team events.</li></ul><p><br></p><p>Find out more job opportunities at https://careers.trip.com</p><p><br></p><p>Have a good trip, and see you soon!</p>",
+    "timeType": "Full time",
+    "startDate": "2026-08-24",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=58f2fcbf-0c87-4073-b381-9aa6a24817dd",
+    "jobReqId": "MJ003880",
+    "postedOn": "Posted 26 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Marketing",
+   "signals": {
+    "linkedin_job_id": "4454956442",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4454956442",
+    "title": "Associate Marketing Campaign Manager, US & Canada",
+    "company": "Trip.com Group",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-09-17",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 days ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-19T07:21:16",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "MJ003793",
+   "title": "Destination Marketing Sales Manager",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=59916d3f-619a-4c83-8b55-1c5b03c32375",
+   "externalPath": "/tripcom/MJ003793",
+   "locationsText": "Los Angeles",
+   "postedOn": "Posted 51 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ003793"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-07-30",
+   "departments": [
+    "Business development",
+    "Marketing"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Destination Marketing Sales Manager",
+    "location": "Los Angeles",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p>Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, Trip.com Group is a leading global travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar.</p><p><br></p><p>Across its platforms, Trip.com Group integrates travel resources from industry partners and helps travellers worldwide pursue the perfect trip with exceptional travel products and services.</p><p><br></p><p>We have six Customer Service Centres for <a href=\"http://trip.com/\">Trip.com</a>, established in Japan, Korea, the UK, Thailand, Malaysia, and the Philippines, providing 24/7 customer service in 35 different languages.</p><p><br></p><p>We have more than 30,000 employees scattered across 50 countries in Asia, Europe, the Americas, and Oceania, striving to expand our global markets and aiming to be the world’s leading and most trusted family of online travel brands that aspires to deliver the perfect trip at the best price for every traveller.</p><p><br></p><p><strong>In this Role, you’ll get to</strong></p><ul><li>Spearhead business development initiatives across North American tourism boards and key travel trade partners to achieve and exceed revenue targets </li><li>Cultivate and nurture long-term, high-value relationships with key industry stakeholders to maintain a robust client network </li><li>Drive the full project lifecycle, from initial deal sourcing and pitch proposal development to contract negotiation and final closing </li><li>Proactively identify operational challenges, deliver strategic solutions, and provide timely market insights to inform business decision and product recommendations </li></ul><p><br></p><p><strong>What you'll Need to Succeed</strong></p><ul><li>Bachelor's degree or equivalent practical experience </li><li>Demonstrated track record in the tourism industry or with destination marketing organizations, backed by a strong network of key trade partners and client contacts</li><li>Proven negotiation and project management skills, with professional-level written and verbal English communication capabilities </li><li>Exceptional organizational skills, strong analytical thinking, and the agility to navigate fast-paced, evolving business environments </li><li>Strong team player with a high sense of accountability and the ability to manage competing priorities effectively </li><li>Prior experience with digital media, internet platforms, marketing agencies, or destination marketing organizations is a strong plus </li></ul><p><br></p><p><strong>Why Trip.com Group</strong></p><p>As a world leading company in travel industry, we provide a platform for our talent to unleash their power, make a global impact, and achieve a successful career. As an international team, we're dedicated to create a space where open communication and mutual respect is encouraged. At Trip.com Group, we are here to support you in and out of the workplace, enabling you to explore and embrace more possibilities and pursue a dream life.</p><p><br></p><p>What’s more?</p><ul><li>A fast-growing enviroment that offers strong potential for career growth and encourages bold ideas.</li><li>We focus on cutting-edge technology to provide some of the best platforms and resources for you to do your best work.</li><li>We encourage internal talent movement and provide global opportunities across functions, business units or regions for you to accelerate your career advancement.</li><li>Thrive in a talented, supportive team with genuine, rigorous, and focused individuals who can inspire you from day one.</li><li>Enjoy flexible working arrangement and various engagements outside of work that make your life at Trip.com Group Fulfilling.</li></ul><p><br></p><p>Find out more job opportunities at https://careers.trip.com.</p><p><br></p><p><br></p><p>Have a good trip, and see you soon!</p>",
+    "timeType": "Full time",
+    "startDate": "2026-07-30",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=59916d3f-619a-4c83-8b55-1c5b03c32375",
+    "jobReqId": "MJ003793",
+    "postedOn": "Posted 51 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business development",
+   "signals": {
+    "linkedin_job_id": "4446980136",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4446980136",
+    "title": "Destination Marketing Sales Manager",
+    "company": "Trip.com Group",
+    "location": "Los Angeles Metropolitan Area",
+    "linkedin_posted_date": "2026-07-31",
+    "num_applicants": 74,
+    "applicants_label": "74 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-19T07:21:19",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "MJ003700",
+   "title": "Market Manager, Americas",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=cab5853a-e45c-4bf3-8eda-d881c5f377d7",
+   "externalPath": "/tripcom/MJ003700",
+   "locationsText": "Chicago",
+   "postedOn": "Posted 81 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ003700"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-06-30",
+   "departments": [
+    "Business development",
+    "Accommodation"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Market Manager, Americas",
+    "location": "Chicago",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p>Trip.com Group is a leading global travel service provider comprising Trip.com, Ctrip, Skyscanner, and Qunar. Across its platforms, Trip.com Group helps travelers around the world make informed and cost-effective bookings for travel products and services and enables partners to connect their offerings with users through the aggregation of comprehensive travel-related content and resources, and an advanced transaction platform consisting of apps, websites, and 24/7 customer service centers. Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, Trip.com Group has become one of the best-known travel groups in the world, with the mission \"to pursue the perfect trip for a better world\".</p><p><strong>The position requires the candidate to be based in Chicago.&nbsp;</strong></p><p><strong>In this Role, you’ll get to:</strong></p><ul><li>Have end-to-end ownership of new hotel acquisitions and existing hotel account management within your designated market. Actively identify high-potential prospect partners &amp; grow the revenue of the existing portfolio in this region.</li><li>Educate accommodation providers on the many unique features that the trip.com platform offers. Quickly and effectively identify the correct platform product for each of your accounts to maximize their revenue.</li><li>Take a customer-centric approach to everything you do. Ensure hotels content, rates, availability, and products offer the best value to Trip.com customers</li><li>Keep your properties up to date on the campaigns offered by the trip.com platform and ensure strong coverage of deals across your account portfolio</li><li>Responsible for the assigned market, and conducting the data research and analysis (market, product, competitor, price, supplier, etc.)</li><li>Provide market insights to the global headquarters to optimize the product design and sales directions for the success of global product localization.</li><li>Other assigned tasks based on business need</li></ul><p><strong>What you'll Need to Succeed:</strong></p><ul><li>Fluent in English</li><li>Valid working permit/visa in the US</li><li>A minimum of 3 years of working experience in hospitality, revenue/yield management, or e-commerce</li><li>An existing network with Tourism Boards, airlines, affiliate partners, and travel influencers would be preferred</li><li>Detail-oriented, execution-focused, and fast learning capability</li><li>Able to work independently with minimal supervision, having complete ownership of your designated region</li><li>Dynamic, positive, and a good team player</li><li>Proficiency in Microsoft Word, Excel, Outlook, and PowerPoint</li><li>Relevant exposure in the OTA environment will have an added advantage</li><li>Willing to travel</li></ul><p><strong>Behavioral Requirements</strong></p><ul><li>A desire to learn new things and improve yourself</li><li>Integrity is fundamentally important to you</li><li>You want to make a travel experience better for everyone</li><li>A natural relationship builder and influencer to industry leaders</li><li>You are naturally inspiring</li><li>Strategic thinking &amp; an ability to connect the dots between suppliers and end-user customers</li></ul><p><strong>What We Provide</strong></p><ul><li>Medical, Dental, and Vision plans</li><li>401(k) and company match</li><li>Public Holidays</li><li>Sick Leave</li><li>Paid Time Off</li></ul><p><strong>Why Trip.com Group</strong></p><p><br></p><p>We offer a stage to unleash your full potential and drive global impact. As an international team, we embrace an open and inclusive culture that supports and respects team members in and out of the workplace. Everyone is on a trip, whether it is a career trip or a life trip. At Trip.com Group, you can define your own trip by setting a goal and celebrate your success by recognizing the progress you have made.</p><p><br></p><p>Find out more job opportunities at https://careers.trip.com</p><p><br></p><p>Have a good trip, and see you soon!</p>",
+    "timeType": "Full time",
+    "startDate": "2026-06-30",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=cab5853a-e45c-4bf3-8eda-d881c5f377d7",
+    "jobReqId": "MJ003700",
+    "postedOn": "Posted 81 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business development",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "MJ002071",
+   "title": "Growth Product Manager, US & Canada",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=44be1e09-e4de-45f6-b772-cdc77760f646",
+   "externalPath": "/tripcom/MJ002071",
+   "locationsText": "Los Angeles",
+   "postedOn": "Posted 95 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ002071"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-06-16",
+   "departments": [
+    "Business development",
+    "International Business"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Growth Product Manager, US & Canada",
+    "location": "Los Angeles",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p>Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, Trip.com Group is a leading global travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar.</p><p><br></p><p>Across its platforms, Trip.com Group integrates travel resources from industry partners and helps travellers worldwide pursue the perfect trip with exceptional travel products and services.</p><p><br></p><p>We have four Customer Service Centres for Trip.com established in Japan, Korea, the UK, and the Philippines, providing 24/7 customer service in 19 different languages.</p><p><br></p><p>We have more than 30,000 employees scattered across 30 countries in Asia, Europe, the Americas, and Oceania, striving to expand our global markets and aiming to be the world’s leading and most trusted family of online travel brands that aspire to deliver the perfect trip at the best price for every traveller.</p><p><br></p><p><strong>Introduction:</strong></p><p>We are hiring a Growth Product Manager for our North America markets. In this role, you will build the localized product experience from 0 to 1, define our local product strategy to tailor our product to the US &amp; Canada markets, size the business opportunity and impact, and work globally and cross-functionally to launch local-specific initiatives and features. This is an individual contributor role reporting into the Director of Product &amp; Marketing for US &amp; Canada (based in Los Angeles). This will be a hybrid role located in either Los Angeles, California, USA (valid US work authorization required) or Shanghai, China.&nbsp;</p><p><br></p><p><strong>In this Role, you’ll get to:</strong></p><ul><li>Help develop and own execution of local product strategy, feature prioritization, and initiatives to adapt our products and user experience for US &amp; Candian customers.</li><li>Work collaboratively to influence cross-functional global and headquarters product, UX/design, marketing/merchandising, campaigns, and BD teams to drive local product initiatives.</li><li>Leverage data to identify business opportunities and translate them into actionable business solutions, shape future effective profitable strategies, and make recommendations for improvements.</li><li>Conduct integrated usability studies, research, and market analysis to understand customer needs and identify opportunities, plan product roadmap, and build localized products and features.</li><li>Regularly provide local market intelligence and insights to local teams and headquarters to influence global product and marketing direction.</li><li>Monitor and report on performance of product features and programs in our local markets.</li></ul><p><strong>What you'll Need to Succeed:</strong></p><ul><li>5+ years of experience working in a consumer-facing and product-facing role, such as product management, product growth, product strategy, product marketing, strategy &amp; analytics, business, or a related field</li><li>Demonstrated ability to lead and influence cross-functional teams in a global setting</li><li>Passionate about solving customer problems</li><li>In-depth understanding of the US &amp; Canada consumer markets and travelers</li><li>Strong analytical and problem-solving skills</li><li>Entrepreneurial mindset - you are excited about driving growth for new-stage products</li><li>Fluent in both verbal and written English</li></ul><p><strong>Preferred Qualifications:</strong></p><ul><li>Relevant experience in the travel, OTA, ecommerce, payments, or related industry</li><li>Advanced proficiency in SQL</li><li>Fluent in Mandarin</li><li>Global working experience</li><li>Valid working permit/visa in the US (no sponsorship)</li></ul><p><br></p><p><strong>Why Trip.com Group</strong></p><p>We offer a stage to unleash your full potential and drive global impact. As an international team, we embrace an open and inclusive culture that supports and respect team members in and out of the workplace. Everyone is on a trip, whether it's a career trip or a life trip. At Trip.com Group, you can define your own trip by setting a goal and celebrate your success by recognizing the progress you have made.</p><p>What’s more?</p><ul><li>Our rapid business growth in global offers abundant career opportunities at various levels and in multiple functions</li><li>Internal transfer is encouraged, and global job rotation program enable you to pursue a global career path and make global impact</li><li>We provide learning opportunities to further your career in areas of leadership capability, soft skill and professional expertise.</li><li>We encourage flexible work arrangement</li><li>Have fun with company-sponsored greetings and activities at holidays, birthdays, and colorful team events.</li></ul><p><br></p><p>Find out more job opportunities at https://careers.trip.com</p><p><br></p><p><br></p><p>Have a good trip, and see you soon!</p>",
+    "timeType": "Full time",
+    "startDate": "2026-06-16",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=44be1e09-e4de-45f6-b772-cdc77760f646",
+    "jobReqId": "MJ002071",
+    "postedOn": "Posted 95 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business development",
+   "signals": {
+    "linkedin_job_id": "4439841486",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4439841486",
+    "title": "Growth Product Manager, US & Canada",
+    "company": "Trip.com Group",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-09-02",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-19T07:21:18",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "MJ002066",
+   "title": "Business Development Manager, Attractions & Tours, Americas Region",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=00f1e3f4-422f-4471-8285-980c23357e8e",
+   "externalPath": "/tripcom/MJ002066",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 95 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ002066"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-06-16",
+   "departments": [
+    "Business development",
+    "Vacations"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Business Development Manager, Attractions & Tours, Americas Region",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p>Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, Trip.com Group is a leading global travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar.</p><p><br></p><p>Across its platforms, Trip.com Group integrates travel resources from industry partners and helps travellers worldwide pursue the perfect trip with exceptional travel products and services.</p><p><br></p><p>We have four Customer Service Centres for Trip.com established in Japan, Korea, the UK, and the Philippines, providing 24/7 customer service in 19 different languages.</p><p><br></p><p>We have more than 30,000 employees scattered across 30 countries in Asia, Europe, the Americas, and Oceania, striving to expand our global markets and aiming to be the world’s leading and most trusted family of online travel brands that aspire to deliver the perfect trip at the best price for every traveller.</p><p><br></p><p><strong>In this Role, you’ll get to:</strong></p><p><br></p><ul><li>Drive the acquisition of new attraction, tour, and activity partners across the Americas, while managing and growing an existing portfolio of strategic supplier accounts. Identify high-potential partners and unlock incremental revenue opportunities.</li><li>Build strong, long-term supplier relationships by understanding partner needs and positioning the right Trip.com solutions to maximize product visibility, conversion, and revenue performance.</li><li>Act as a strategic consultant to partners by educating them on Trip.com’s platform capabilities, distribution ecosystem, marketing opportunities, and customer reach.</li><li>Own account performance end-to-end, ensuring competitive pricing, strong product content, healthy availability, and customer-first product offerings that deliver the best value to Trip.com users.</li><li>Conduct market intelligence and competitive analysis across product, pricing, supplier landscape, and consumer trends to identify growth opportunities and market gaps.</li><li>Partner closely with suppliers to drive campaign participation, promotional coverage, and merchandising opportunities across key sales moments and seasonal initiatives.</li><li>Translate local market insights into actionable recommendations to support product localization, commercial strategy, and platform optimization.</li><li>Collaborate cross-functionally with internal teams across commercial, operations, product, and marketing functions in a fast-moving, global environment.</li><li>Navigate ambiguity and solve operational or commercial challenges proactively, helping build scalable solutions in a rapidly evolving business.</li></ul><p><br></p><p><strong>What you'll Need to Succeed:&nbsp;</strong></p><p><br></p><ul><li>Fluent English communication skills (written and verbal) required. Mandarin and/or Spanish language skills are strong assets.</li><li>Valid working permit/visa in the US</li><li>5+ years of experience in business development, account management, or revenue growth within tourism, or e-commerce. Previous experience at an Online Travel Agency (OTA) or travel marketplace is a strong plus, with familiarity with attractions, tours, or destination experiences highly valued.</li><li>Existing network with tourism boards, airlines, travel affiliates, attractions, or destination partners is a plus.</li><li>Entrepreneurial, proactive, and execution-focused, with strong ownership mentality. Proven ability to work independently as a self-starter while thriving in a highly collaborative, team-oriented environment.</li><li>Strong problem-solving mindset with the ability to identify opportunities, overcome obstacles, and innovate under pressure.</li><li>Comfortable working in a fast-paced, cross-cultural environment with the ability to create structure from complexity.</li><li>Strong analytical skills, with the ability to turn market and performance data into actionable business insights.</li><li>Excellent PowerPoint and presentation skills, with the ability to build clear and compelling pitch decks and business proposals.</li><li>Advanced proficiency in Microsoft Excel, PowerPoint, Outlook, and CRM/account management tools.</li><li>Comfortable with regular business travel and cross-time-zone collaboration, with the flexibility to support partners and internal teams in a global, fast-paced environment.</li></ul><p><br></p><p><strong>Behavioral Requirements:</strong></p><p><br></p><ul><li><strong>Integrity-driven</strong>&nbsp;— you lead with honesty, accountability, and strong professional ethics.</li><li><strong>Customer-obsessed</strong>&nbsp;— you’re passionate about making travel experiences better for everyone.</li><li><strong>Innovative and growth-minded</strong>&nbsp;— you constantly look for smarter ways to grow the business and improve how things are done.</li><li><strong>A self-starter</strong>&nbsp;— you take initiative, move fast, and create momentum without waiting for perfect conditions.</li><li><strong>Globally minded</strong>&nbsp;— you thrive in multicultural, international environments and communicate effectively across teams and markets.</li><li><strong>A natural relationship builder</strong>&nbsp;— you know how to influence, build trust, and develop strong partnerships with industry leaders.</li><li><strong>Resilient and adaptable</strong>&nbsp;— you stay focused and effective in fast-changing, ambiguous, and high-growth environments.</li></ul><p><br></p><p><br></p><p><strong>Why Trip.com Group</strong></p><p>We offer a stage to unleash your full potential and drive global impact. As an international team, we embrace an open and inclusive culture that supports and respect team members in and out of the workplace. Everyone is on a trip, whether it's a career trip or a life trip. At Trip.com Group, you can define your own trip by setting a goal and celebrate your success by recognizing the progress you have made.</p><p>What’s more?</p><ul><li>Our rapid business growth in global offers abundant career opportunities at various levels and in multiple functions</li><li>Internal transfer is encouraged, and global job rotation program enable you to pursue a global career path and make global impact</li><li>We provide learning opportunities to further your career in areas of leadership capability, soft skill and professional expertise.</li><li>We encourage flexible work arrangement</li><li>Have fun with company-sponsored greetings and activities at holidays, birthdays, and colorful team events.</li></ul><p><br></p><p><br></p><p>Find out more job opportunities at https://careers.trip.com</p><p><br></p><p><br></p><p>Have a good trip, and see you soon!</p>",
+    "timeType": "Full time",
+    "startDate": "2026-06-16",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=00f1e3f4-422f-4471-8285-980c23357e8e",
+    "jobReqId": "MJ002066",
+    "postedOn": "Posted 95 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business development",
+   "signals": {
+    "linkedin_job_id": "4443813564",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4443813564",
+    "title": "Business Development Manager, Attractions & Tours, Americas Region",
+    "company": "Trip.com Group",
+    "location": "Orlando, FL",
+    "linkedin_posted_date": "2026-08-21",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-19T07:21:11",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "MJ001812",
+   "title": "Key Account Manager, Americas",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=56e60493-bfd1-4bd0-9d9b-cf3e65a47e54",
+   "externalPath": "/tripcom/MJ001812",
+   "locationsText": "Los Angeles",
+   "postedOn": "Posted 95 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ001812"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-06-16",
+   "departments": [
+    "Business development",
+    "Accommodation"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Key Account Manager, Americas",
+    "location": "Los Angeles",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p>Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, Trip.com Group is a leading global travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar.</p><p><br></p><p>Across its platforms, Trip.com Group integrates travel resources from industry partners and helps travelers worldwide pursue the perfect trip with exceptional travel products and services.</p><p><br></p><p>We have four Customer Service Centres for Trip.com established in Japan, Korea, the UK, and the Philippines, providing 24/7 customer service in 19 different languages.</p><p><br></p><p>We have more than 30,000 employees scattered across 30 countries in Asia, Europe, the Americas, and Oceania, striving to expand our global markets and aiming to be the world’s leading and most trusted family of online travel brands that aspire to deliver the perfect trip at the best price for every traveler.</p><p><br></p><p><strong>This role requires candidates to be based in Los Angeles, New York City, Orlando, or Vancouver and work in a hybrid capacity from one of our office locations.</strong></p><p><br></p><p><strong>About the Position</strong></p><p>As the Market Manager for chains hotels, you are joining one of the most dynamic teams at the Americas team of Trip.com Group. You will be responsible for managing and expanding the partnership and the relationships with major hotel chain partners within the Americas region. To succeed in this role, you will need to demonstrate advanced communication skills to manage different levels of stakeholders internally at Trip.com and within our partner organizations. You will rely on your excellent interpersonal skills and previously demonstrated stakeholder management capabilities. You have the proven ability to execute via enhanced strategic, comprehensive, result-focused account plans to achieve success.</p><p><br></p><p><strong>In this role, you will get to</strong></p><ul><li>Have end-to-end ownership of new hotel chain acquisitions and existing hotel chain management, understand partners’ strategy and objectives, and help to grow the revenue</li><li>Initiate, develop, and manage mutually beneficial relationships with key stakeholders in the assigned chain accounts, and orchestrate discussions with senior execs around their business needs</li><li>Take a customer-centric approach to everything you do. Ensure hotel chain content, rates, availability, and products offer the best value to Trip.com customers</li><li>Responsible for full account management including performance tracking, production optimization, workshop conducting, and issue solving to drive mutual performance objectives, annual targets, and milestones globally</li><li>Conduct data research &amp; analysis, and routine performance review meetings with VP, SVP, and C-level in hotel chain teams in different geographical areas to make sure the result in a positive financial contribution</li><li>Be able to initiate new regional projects and accelerate the progress of global projects to promote brand awareness, business strategy, and product benefits to hotel chain partners</li><li>Coordinate across Trip.com group internal teams, including teams of the platform, product, service, and marketing to achieve the account’s expectations and maximize performance. Map prospective accounts around organizational structure, people, and existing technology</li><li>Other assigned tasks based on business need</li></ul><p><strong>What you will need to succeed</strong></p><ul><li>Over 5 years of expertise in business development, strategic account management, revenue/yield management in the online travel or hospitality industry</li><li>Fluent in English</li><li>Valid working permit/visa in the US (no sponsorship)</li><li>Bachelor’s or Master’s degree in a related field</li><li>Very proactive and strong sense of ownership</li><li>Strong negotiation and communication skills, with the ability to build and maintain relationships at all levels</li><li>Strong strategical thinking skills, proactive, creative, innovative, and able to drive and manage change</li><li>Ability to demonstrate professional presentation</li><li>Strong business knowledge of the hotel chain industry and connectivity knowledge</li><li>Team player with a driven “get it done” attitude</li><li>Proficiency in Microsoft Word, Excel, Outlook, and PowerPoint</li><li>Willing to travel based on business needs</li></ul><p><strong>What We Provide</strong></p><ul><li>Medical, Dental, and Vision plans</li><li>401(k) and company match</li><li>Public Holidays</li><li>Sick Leave</li><li>Paid Time Off</li></ul><p><br></p><p><strong>Pay Transparency</strong></p><p><br></p><p>The annual total pay range for Key Account Manager roles is $80,000 - $110,000 (base salary and variable incentive included). The range top could be higher if the performance is above target. With employees’ ongoing, demonstrated, and sustained performance in the role, there is potential to increase further. The offering salary for this role will vary based on the comprehensive competency assessment after the screening and interview sessions. Multiple factors, including a candidate’s qualifications, skills, competencies, experiences, and location will be considered. Pay ranges may be modified in the future.</p><p><br></p><p><strong>Why Trip.com Group</strong></p><p>We offer a stage to unleash your full potential and drive global impact. As an international team, we embrace an open and inclusive culture that supports and respects team members in and out of the workplace. Everyone is on a trip, whether it is a career trip or a life trip. At Trip.com Group, you can define your own trip by setting a goal and celebrate your success by recognizing the progress you have made.</p>",
+    "timeType": "Full time",
+    "startDate": "2026-06-16",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=56e60493-bfd1-4bd0-9d9b-cf3e65a47e54",
+    "jobReqId": "MJ001812",
+    "postedOn": "Posted 95 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business development",
+   "signals": {
+    "linkedin_job_id": "4432345639",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4432345639",
+    "title": "Key Account Manager, Americas",
+    "company": "Trip.com Group",
+    "location": "New York, United States",
+    "linkedin_posted_date": "2026-08-27",
+    "num_applicants": 174,
+    "applicants_label": "174 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-19T07:21:13",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "MJ001300",
+   "title": "Account Executive",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=70c5959f-b55e-488e-bd4d-b711f9549030",
+   "externalPath": "/tripcom/MJ001300",
+   "locationsText": "Los Angeles",
+   "postedOn": "Posted 95 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ001300"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-06-16",
+   "departments": [
+    "Business development",
+    "Accommodation"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Account Executive",
+    "location": "Los Angeles",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p>Trip.com Group is a leading global travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar. Across its platforms, Trip.com Group helps travelers around the world make informed and cost-effective bookings for travel products and services and enables partners to connect their offerings with users through the aggregation of comprehensive travel-related content and resources, and an advanced transaction platform consisting of apps, websites, and 24/7 customer service centers. Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, Trip.com Group has become one of the best-known travel groups in the world, with the mission \"to pursue the perfect trip for a better world\".</p><p><br></p><p><strong>Location:&nbsp;</strong>Norwalk, CA 90650</p><p><strong>Workplace Type:&nbsp;</strong>Hybrid</p><p><br></p><p><strong>In this Role, you’ll get to</strong></p><ul><li>Help market managers &amp; senior market managers to develop and sustain strong partner relationships by providing relevant support services to hotel partners (room types, rates, promotions, availability &amp; content)</li><li>Ensure the partner hotels’ product (content, rates, and availability) is consistently optimized and competitive on the external sites by operating internal portals to maximize customer experience</li><li>Communicate with hotel partners on behalf of Trip to ensure a smooth check-in process for customers</li><li>Resolve payment disputes between hotel partners and Trip</li><li>Execute effectively based on KPI metrics (targets, goals, and strategic objectives) set by the management team</li><li>Other reasonable duties, as assigned</li></ul><p><br></p><p><strong>What You'll Need to Succeed</strong></p><ul><li>Fluency in English and Spanish is required</li><li>Valid working authorization in the U.S. (no sponsorship)</li><li>Bachelor’s or Master's degree in a related field, or equivalent related professional experience</li><li>Over 1-year working experience in positions within hotel reservations, travel agencies, tour operators or OTA is a plus</li><li>Positive and enthusiastic team player, have high service consciousness</li><li>Detail-oriented and fast learning capability</li><li>Able to work independently with minimal supervision</li><li>Able to work in a multi-tasked, fast-paced environment</li><li>Proficiency in Microsoft Word, Excel, Outlook, and PowerPoint</li></ul><p><strong>Behavioral Requirements:</strong></p><ul><li>A desire to learn new things and improve yourself</li><li>Integrity is fundamentally important to you</li><li>You want to make a travel experience better for everyone</li><li>You are naturally inspiring</li></ul><p><strong>What We Provide</strong></p><p>The annual base range for this position is $46,000 - $78,000. The range top could be higher if the performance is above target. With employees' going, demonstrated, and sustained performance in the role, there is potential to increase further. The offering salary for this role will vary based on the comprehensive competency assessment after the screening and interview sessions. Multiple factors will be considered, including a candidate’s qualifications, skills, competencies, experiences, and locations. Pay ranges may be modified in the future.</p><ul><li>Medical, Dental, and Vision plans</li><li>401(k) and company match</li><li>Public Holidays</li><li>Sick Leave</li><li>Paid Time Off</li></ul><p><strong>Why Trip.com Group</strong></p><p>Joining Trip.com Group is like taking an adventure filled with excitement and success. With a group of fellows who are passionate about making every trip the perfect trip for over 400 million customers around the globe, you will be part of a journey of globalization and have a world-class stage to unleash your talent. Opportunities are unlimited, so is your growth. If you also embrace boldness and inclusion as we do, this is the place to leap forward!</p>",
+    "timeType": "Full time",
+    "startDate": "2026-06-16",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=70c5959f-b55e-488e-bd4d-b711f9549030",
+    "jobReqId": "MJ001300",
+    "postedOn": "Posted 95 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business development",
+   "signals": {
+    "linkedin_job_id": "4432359383",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4432359383",
+    "title": "Account Executive",
+    "company": "Trip.com Group",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-08-28",
+    "num_applicants": 110,
+    "applicants_label": "110 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-19T07:21:15",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "MJ001198",
+   "title": "Market Manager, Americas",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=379f8226-1799-49e1-9fa0-734d5aa8fdc2",
+   "externalPath": "/tripcom/MJ001198",
+   "locationsText": "Los Angeles",
+   "postedOn": "Posted 95 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ001198"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-06-16",
+   "departments": [
+    "Business development",
+    "Accommodation"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Market Manager, Americas",
+    "location": "Los Angeles",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p>Trip.com Group is a leading global travel service provider comprising Trip.com, Ctrip, Skyscanner, and Qunar. Across its platforms, Trip.com Group helps travelers around the world make informed and cost-effective bookings for travel products and services and enables partners to connect their offerings with users through the aggregation of comprehensive travel-related content and resources, and an advanced transaction platform consisting of apps, websites, and 24/7 customer service centers. Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, Trip.com Group has become one of the best-known travel groups in the world, with the mission \"to pursue the perfect trip for a better world\".</p><p><strong>This position requires the candidate to be based in Los Angeles.</strong></p><p><strong>In this Role, you’ll get to:</strong></p><ul><li>Have end-to-end ownership of new hotel acquisitions and existing hotel account management within your designated market. Actively identify high-potential prospect partners &amp; grow the revenue of the existing portfolio in this region.</li><li>Managing&nbsp;a&nbsp;large&nbsp;portfolio&nbsp;across&nbsp;multiple&nbsp;countries&nbsp;and&nbsp;geographies.</li><li>Educate accommodation providers on the many unique features that the trip.com platform offers. Quickly and effectively identify the correct platform product for each of your accounts to maximize their revenue.</li><li>Take a customer-centric approach to everything you do. Ensure hotels content, rates, availability, and products offer the best value to Trip.com customers.</li><li>Keep your properties up to date on the campaigns offered by the trip.com platform and ensure strong coverage of deals across your account portfolio</li><li>Responsible for the assigned market, and conducting the data research and analysis (market, product, competitor, price, supplier, etc.).</li><li>Provide market insights to the global headquarters to optimize the product design and sales directions for the success of global product localization.</li><li>Other assigned tasks based on business need.</li></ul><p><strong>What you'll Need to Succeed:</strong></p><ul><li>Fluency in English is required; Spanish proficiency is a plus</li><li>Valid working permit/visa in the US</li><li>A minimum of 3 years of working experience in hospitality, revenue/yield management, or e-commerce</li><li>An existing network with Tourism Boards, airlines, affiliate partners, and travel influencers would be preferred</li><li>Detail-oriented, execution-focused, and fast learning capability</li><li>Able to work independently with minimal supervision, having complete ownership of your designated region</li><li>Dynamic, positive, and a good team player</li><li>Proficiency in Microsoft Word, Excel, Outlook, and PowerPoint</li><li>Relevant exposure in the OTA environment will have an added advantage</li><li>Willing to travel</li></ul><p><strong>Behavioral Requirements</strong></p><ul><li>A desire to learn new things and improve yourself</li><li>Integrity is fundamentally important to you</li><li>You want to make a travel experience better for everyone</li><li>A natural relationship builder and influencer to industry leaders</li><li>You are naturally inspiring</li><li>Strategic thinking and an ability to connect the dots between suppliers and end-user customers</li></ul><p><strong>What We Provide</strong></p><ul><li>Medical, Dental, and Vision plans</li><li>401(k) and company match</li><li>Public Holidays</li><li>Sick Leave</li><li>Paid Time Off</li></ul><p><strong>Pay Transparency</strong></p><p><br></p><p>The annual total pay range for Market Manager roles is $80,000 - $130,000 (base salary and variable incentive included). The range top could be higher if the performance is above target. With employees’ ongoing, demonstrated, and sustained performance in the role, there is potential to increase further. The offering salary for this role will vary based on the comprehensive competency assessment after the screening and interview sessions. Multiple factors, including a candidate’s qualifications, skills, competencies, experiences, and location will be considered. Pay ranges may be modified in the future.</p><p><br></p><p><strong>Why Trip.com Group</strong></p><p><br></p><p>We offer a stage to unleash your full potential and drive global impact. As an international team, we embrace an open and inclusive culture that supports and respects team members in and out of the workplace. Everyone is on a trip, whether it is a career trip or a life trip. At Trip.com Group, you can define your own trip by setting a goal and celebrate your success by recognizing the progress you have made.</p><p><br></p><p>Find out more job opportunities at https://careers.trip.com</p><p><br></p><p>Have a good trip, and see you soon!</p>",
+    "timeType": "Full time",
+    "startDate": "2026-06-16",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=379f8226-1799-49e1-9fa0-734d5aa8fdc2",
+    "jobReqId": "MJ001198",
+    "postedOn": "Posted 95 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business development",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "MJ000716",
+   "title": "Senior Product & Business Analyst, US & Canada",
+   "company": "tripcom",
+   "url": "https://careers.trip.com/#/jobDetail?jobId=159ecf44-f68d-4a6f-9b8c-8b0c16785585",
+   "externalPath": "/tripcom/MJ000716",
+   "locationsText": "Los Angeles",
+   "postedOn": "Posted 95 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "MJ000716"
+   ],
+   "ats": "tripcom",
+   "firstPublishedIso": "2026-06-16",
+   "departments": [
+    "Other",
+    "International Business"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Senior Product & Business Analyst, US & Canada",
+    "location": "Los Angeles",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About Us</strong></p><p><strong>Founded in 1999 and listed on NASDAQ in 2003 and HKEX in 2021, Trip.com Group is a leading global travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar.</strong></p><p><strong>Trip.com Group offers exceptional and comprehensive travel services, resources, and products across its platforms. We aspire to provide our 400 million+ customers worldwide with tools to plan and book their perfect trips.</strong></p><p><strong>We have more than 30,000 employees spread across 30 countries in Asia, Europe, the Americas, and Oceania, and are actively expanding our global markets to grow and become the world’s leading and most trusted family of online travel brands.</strong></p><p><br></p><p><strong>The Role</strong></p><p><strong>We are seeking a highly motivated and analytical Senior Product &amp; Business Analyst to to help drive growth across our US &amp; Canada markets. In this role, you’ll be the backbone of our strategy efforts—diving deep into financial performance, product funnels, marketing campaigns, and sales data to uncover insights that guide decision-making. As part of a small team and a growth market, you’ll flex across all aspects of the business, from P&amp;L analysis to product optimization, ensuring we focus on the right opportunities and deliver impact. This role reports into the Director of Product &amp; Marketing, US &amp; Canada.</strong></p><p><br></p><p><strong>This is a hybrid role based out of Norwalk, CA.</strong></p><p><br></p><p><strong>In this Role, you’ll get to:</strong></p><ul><li>Analyze financial, product, and marketing data to identify trends, root causes, and growth opportunities.</li><li>Build dashboards and reports to track KPIs related to conversion, campaign performance, and profitability.</li><li>Translate complex data into actionable insights and clear recommendations for leadership and HQ product teams.</li><li>Collaborate with product, user research, and other cross-functional teams to support multi-channel, localization strategies.</li><li>Monitor competitive and market dynamics, providing data-driven input into strategic planning.</li><li>Drive business optimizations through structured analysis and timely performance diagnostics.</li></ul><p><br></p><p><strong>What you'll Need to Succeed:</strong></p><ul><li>3-5 years of experience in product, business, or data analysis, preferable in travel or e-commerce. Experience in consulting or investment banking with strong analytical exposure also highly valued.&nbsp;</li><li>Strong SQL, Excel, and data visualization skills (Tableau or similar).</li><li>Proven ability to extract data-driven and actionable insights and recommendations.</li><li>Results-oriented with strong ownership and curiosity to dig deep.</li><li>Proactive and growth-minded with a data-driven approach to continuously optimize strategies.</li><li>Excellent communication and presentation skills with stakeholders at all levels.</li><li>Bachelor’s degree or higher in a quantitative field such as Statistics, Finance, Economics, Engineering, Mathematics, Business.</li><li>Mandarin is a plus.</li><li>Valid working permit/visa in the US (no sponsorship)</li></ul>",
+    "timeType": "Full time",
+    "startDate": "2026-06-16",
+    "externalUrl": "https://careers.trip.com/#/jobDetail?jobId=159ecf44-f68d-4a6f-9b8c-8b0c16785585",
+    "jobReqId": "MJ000716",
+    "postedOn": "Posted 95 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Trip.com Group",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Other",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

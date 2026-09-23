@@ -85,6 +85,13 @@ jobs:
           extract jd_us_fulltime "JD.COM,JD AMERICAN,JINGDONG"
           extract openai_us_fulltime "OPENAI,OPENAI LLC"
           extract anthropic_us_fulltime "ANTHROPIC,ANTHROPIC PBC"
+          # S14 own-platform companies (substring OR-lists: BYTEDANCE
+          # covers BYTEDANCE LTD/INC, TIKTOK covers TikTok Inc. filings;
+          # ALIBABA covers Group Holding/(US) Inc/Cloud; TRIP.COM +
+          # CTRIP cover the pre/post-rename entities)
+          extract bytedance_us_fulltime "BYTEDANCE,TIKTOK"
+          extract alibaba_us_fulltime "ALIBABA"
+          extract tripcom_us_fulltime "TRIP.COM,CTRIP"
 
       - name: Checkpoint extract to git (race-proof)
         if: always()

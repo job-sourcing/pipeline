@@ -305,12 +305,21 @@ ten proofs per company.
 
 **The roster (ingest/data/board_watch/config.json — data, not code):**
 
-| label | board (tenant\|instance\|site) | US rows | matched | notes |
+| label | board spec | US rows | matched | notes |
 |---|---|---|---|---|
-| `nvidia_us_fulltime` | `nvidia\|wd5\|nvidiaexternalcareersite` | 1,410 | 1,050 (74.5%) | the pilot; country facet server-side |
-| `netflix_us_fulltime` | `netflix\|wd108\|Netflix` | 105 | 41 (39.0%) | portal-primary cross-posting; all matches title-tier |
-| `tencent_us_fulltime` | `tencent\|wd1\|Tencent_Careers` | 54 | 28 (51.9%) | reqIds are plain `R…` numbers — join is format-agnostic |
-| `jd_us_fulltime` | `jd\|wd103\|Careers_at_JD` | 47 | 34 (72.3%) | logistics-heavy US footprint (CA/NJ/GA/MA) |
+| `nvidia_us_fulltime` | `nvidia\|wd5\|nvidiaexternalcareerssite` | 1,410 | 1,050 (74.5%) | the pilot; country facet server-side |
+| `netflix_us_fulltime` | `netflix\|wd108\|Netflix` | 369 | 187 (50.7%) | portal-primary cross-posting; all matches title-tier |
+| `tencent_us_fulltime` | `tencent\|wd1\|Tencent_Careers` | 34 | 26 (76.5%) | reqIds are plain `R…` numbers — join is format-agnostic |
+| `jd_us_fulltime` | `jd\|wd103\|Careers_at_JD` | 55 | 41 (74.5%) | logistics-heavy US footprint (CA/NJ/GA/MA) |
+| `anthropic_us_fulltime` | `ats:greenhouse:anthropic` | 427 | 266 (62.3%) | S13; one-call board API, detail-based country |
+| `openai_us_fulltime` | `ats:ashby:openai` | 659 | 327 (49.6%) | S13; structured country, GUID ids |
+| `bytedance_us_fulltime` | `custom:bytedance` | 443 | 204 (46.0%) | S14; atx-throne supplier API, `website-path: en` portal selector, honest blank dates (API serves none) |
+| `alibaba_us_fulltime` | `custom:alibaba` | 10 | 4 (40.0%) | S14; multi-host Lumos sweep (aidc + holding + tongyi; careers-alibabacloud DNS-volatile → fail-soft `complete=false`) |
+| `tripcom_us_fulltime` | `custom:tripcom` | 10 | 7 (70.0%) | S14; `getOverseaJobAd` server-side ISO-3 `country:["USA"]`, `(MJ…)` title artifact stripped (code survives as reqId) |
+
+(matched = LinkedIn corroboration; H-1B wage-band coverage is
+separate — see §7. US rows/matched are the S12–S14 dump values; the
+watch drifts them daily.)
 
 **Per-company deltas (the S12 architectural debt paid down):**
 
@@ -337,17 +346,20 @@ ten proofs per company.
   comma list (OR): one company files under several legal names
   (`TENCENT AMERICA`, `Tencent America, Inc.`).
 - **GHA** — ONE board-watch run processes ALL watches sequentially
-  (the loop was always in the script; timeout 20→45 min for 4
-  companies). ONE h1b-extract dispatch extracts every company from a
-  single per-quarter xlsx download.
+  (the loop was always in the script; timeout 20→45→75 min for
+  4→9 companies). ONE h1b-extract dispatch extracts every company from
+  a single per-quarter xlsx download.
 
-**Non-Workday China tech (documented for future adapters, NOT in the
-roster):** ByteDance/TikTok (own platform, jobs.bytedance.com),
-Alibaba incl. AIDC (own Lumos platform), Baidu USA + NetEase Games +
-SHEIN + BYD North America (Greenhouse), Huawei + Trip.com + Kuaishou
-(own platforms). The repo already carries `greenhouse.py` /
-`smartrecruiters.py` / `lever.py` source adapters — a future round can
-stand those up on the same join.
+**Non-Workday landscape (S14 close):** OWN-PLATFORM custom boards —
+ByteDance/TikTok (`custom:bytedance`), Alibaba (`custom:alibaba`),
+Trip.com (`custom:tripcom`) — are LIVE (own APIs; curl_cffi
+chrome-impersonation where Akamai/WAF bites). S15 config-only:
+Baidu USA + NetEase Games + SHEIN + BYD North America on Greenhouse
+(`ats:greenhouse:{slug}` — slugs live-verified 2026-09-19; needs
+their LI registries + dump chains). Still future: Huawei + Kuaishou
+(own platforms, unspecced). The repo also carries `greenhouse.py` /
+`smartrecruiters.py` / `lever.py` generic source adapters — a future
+round can stand those up on the same join.
 
 **Per-company sibling artifacts** follow the same `{label}.*`
 convention in `ingest/data/workday/` — see the v2.6 sibling table

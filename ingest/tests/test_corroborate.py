@@ -928,3 +928,29 @@ class TestJoinLocationTiebreak:
         joined = join_by_req_id(signals, {"JR2026100"})
         assert set(joined) == {"JR2026100"}
         assert joined["JR2026100"]["title"] == "B"
+
+
+class TestS14RawCodeReqIdJoin:
+    """S14 custom-board pins: site reqIds (GP/MJ/A codes) join RAW —
+    namespacing would have broken every tier (review SEV-1)."""
+
+    def test_gp_code_joins_reqid_tier(self):
+        signals = [
+            {"job_req_id": "GP7000022511", "title": "A"},
+            {"job_req_id": "GP1111", "title": "B"},
+        ]
+        joined = join_by_req_id(signals, {"GP7000022511"})
+        assert set(joined) == {"GP7000022511"}
+
+    def test_mj_and_a_codes_join_too(self):
+        signals = [{"job_req_id": "MJ003945", "title": "x"},
+                   {"job_req_id": "A133625", "title": "y"}]
+        joined = join_by_req_id(signals, {"MJ003945", "A133625"})
+        assert set(joined) == {"MJ003945", "A133625"}
+
+    def test_namespaced_reqid_would_have_missed(self):
+        # the counterfactual that drove the design decision: a card
+        # carrying the RAW site code must NOT join a namespaced row id
+        signals = [{"job_req_id": "GP7000022511", "title": "A"}]
+        joined = join_by_req_id(signals, {"aidc:GP7000022511"})
+        assert joined == {}

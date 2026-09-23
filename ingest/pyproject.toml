@@ -11,6 +11,7 @@ license = { text = "MIT" }
 dependencies = [
     "requests>=2.31",
     "click>=8.1",
+    "curl_cffi>=0.6",  # S14: chrome-impersonated transport for custom boards (bytedance/alibaba/tripcom Akamai/WAF + h1b DOL)
 ]
 
 [project.optional-dependencies]

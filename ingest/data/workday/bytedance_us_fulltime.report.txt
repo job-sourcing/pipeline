@@ -1,0 +1,10 @@
+rows: 443 (unique reqIds: 443)
+details merged: 443
+descriptions present: 443
+locations enumerated (not 'N Locations'): 443
+startDate present: 0
+signals: matched=204 no_match=239 blocked=0 not_checked=0
+location entries total (sum nLocations): 443
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=443 (from facet_tags.jsonl)
+facet tag coverage: 443/443 rows (0 untagged)

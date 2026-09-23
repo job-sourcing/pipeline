@@ -46,11 +46,12 @@ jobs:
     runs-on: ubuntu-latest
     # S12 multi-company: ONE run processes ALL configured watches
     # sequentially (config.json is data — the loop lives in the script;
-    # never one workflow per company). 4 watches × ~4-min budget + list
-    # overhead + checkpoint ≈ 25-35 min worst case — 45 keeps headroom
-    # (public-repo minutes are free; the 20-min cap was a 1-company
-    # sizing).
-    timeout-minutes: 45
+    # never one workflow per company). S14: 9 watches (4 workday + 2
+    # ATS + 3 own-platform custom) — worst-case per-watch budgets alone
+    # can exceed 45min (design review SEV-4) while cache-served
+    # details keep the steady state fast; 75 keeps headroom
+    # (public-repo minutes are free).
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
         with:

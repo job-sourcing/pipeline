@@ -101,6 +101,68 @@
     "New York, New York, United States",
     "Remote, United States"
    ]
+  },
+  {
+   "label": "bytedance_us_fulltime",
+   "board": "custom:bytedance",
+   "company": "ByteDance",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "ByteDance",
+    "TikTok",
+    "ByteDance Ltd"
+   ],
+   "slice_locations": [
+    "United States",
+    "Seattle, Washington, United States",
+    "San Jose, California, United States",
+    "Los Angeles, California, United States",
+    "New York, New York, United States",
+    "San Diego, California, United States",
+    "Boston, Massachusetts, United States",
+    "Ashburn, Virginia, United States"
+   ]
+  },
+  {
+   "label": "alibaba_us_fulltime",
+   "board": "custom:alibaba",
+   "company": "Alibaba Group",
+   "country": "United States",
+   "li_variants": [
+    "Alibaba Group",
+    "Alibaba",
+    "Alibaba Cloud",
+    "Alibaba.com"
+   ],
+   "slice_locations": [
+    "United States",
+    "Sunnyvale, California, United States",
+    "Bellevue, Washington, United States",
+    "Seattle, Washington, United States",
+    "Santa Clara, California, United States",
+    "Pasadena, California, United States"
+   ]
+  },
+  {
+   "label": "tripcom_us_fulltime",
+   "board": "custom:tripcom",
+   "company": "Trip.com Group",
+   "country": "United States",
+   "li_variants": [
+    "Trip.com Group",
+    "Trip.com",
+    "Trip.com Group Limited"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States",
+    "San Jose, California, United States",
+    "Los Angeles, California, United States",
+    "Miami, Florida, United States",
+    "Chicago, Illinois, United States",
+    "San Francisco, California, United States"
+   ]
   }
  ]
 }

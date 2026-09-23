@@ -286,3 +286,378 @@ class TestDispatchRouting:
         p = site_boards.detail_payload("nvidia|wd5|site", "/job/X",
                                        Config())
         assert p["jobPostingInfo"]["title"] == "T"
+
+
+# ═════════════════════════ S14: custom own-platform boards ═════════════════
+
+class _FakeResp:
+    def __init__(self, status=200, cookies=None):
+        self.status_code = status
+        self.cookies = _FakeJar(cookies or {})
+
+
+class _FakeJar:
+    def __init__(self, kv):
+        self.jar = [_FakeCookie(k, v) for k, v in kv.items()]
+
+
+class _FakeCookie:
+    def __init__(self, name, value):
+        self.name = name
+        self.value = value
+
+
+def _bd_post(code="A1", country="United States of America",
+             city="Seattle", rt="Regular", cat_parent="R&D",
+             cat_child="Data", title="T", pid="7", desc="D", req="R"):
+    return {"id": pid, "code": code, "title": title,
+            "description": desc, "requirement": req,
+            "recruit_type": {"en_name": rt},
+            "job_category": {"en_name": cat_child,
+                             "parent": {"en_name": cat_parent}},
+            "city_info": {"en_name": city, "parent": {
+                "en_name": "Washington", "parent": {
+                    "en_name": country}}}}
+
+
+def _patch_bd(monkeypatch, pages, post_calls=None, fail_codes=None):
+    """Fake the bytedance pagination: pages = list of job_post_lists."""
+    calls = post_calls if post_calls is not None else []
+    state = {"emptied_first": fail_codes == "empty-first"}
+
+    def fake_post(url, body, headers=None, timeout=30.0):
+        calls.append((url, body, headers))
+        if (state["emptied_first"] and body["offset"] == 0
+                and not state.get("did_retry")):
+            state["did_retry"] = True
+            return {"data": {"job_post_list": []}}
+        idx = body["offset"] // body["limit"]
+        page = pages[idx] if idx < len(pages) else []
+        return {"data": {"job_post_list": page}}
+
+    monkeypatch.setattr(site_boards, "_imp_post_json", fake_post)
+    monkeypatch.setattr(site_boards, "_CACHE", {})
+    return calls
+
+
+class TestCustomGrammar:
+    def test_custom_specs(self):
+        for s in ("custom:bytedance", "custom:alibaba", "custom:tripcom"):
+            assert site_boards.is_site_spec(s), s
+        assert not site_boards.is_site_spec("custom:unknown")
+        assert not site_boards.is_site_spec("custom:")
+        assert site_boards.parse_site("custom:bytedance") == \
+            ("bytedance", "")
+
+    def test_unknown_custom_rejected_with_kinds(self):
+        with pytest.raises(ValueError, match="bytedance"):
+            site_boards.parse_site("custom:unknown")
+
+
+class TestByteDanceAdapter:
+    def _board(self, monkeypatch, posts):
+        return _patch_bd(monkeypatch, [posts])
+
+    def test_row_mapping_and_country(self, monkeypatch):
+        posts = [_bd_post(code="A1", country="United States of America"),
+                 _bd_post(code="A2", country="Singapore", city="Singapore",
+                          pid="8"),
+                 _bd_post(code="A3", rt="Intern"),
+                 _bd_post(code="A4", country="United Kingdom",
+                          city="London", pid="9")]
+        _patch_bd(monkeypatch, [posts])
+        rows, meta = site_boards.list_board(
+            "custom:bytedance", country="United States")
+        assert set(rows) == {"A1", "A3"}   # A3 is US (no time filter)
+        r = rows["A1"]
+        assert r["reqId"] == "A1" and r["title"] == "T"
+        assert r["timeType"] == "Full time"        # Regular → dialect
+        assert r["externalPath"] == "/bytedance/A1"
+        assert r["url"].startswith("https://joinbytedance.com/search/7")
+        assert r["postedOn"] == ""                  # honest: no dates
+        assert r["departments"] == ["R&D", "Data"]
+        assert meta["country_client"] is False
+        assert meta["client_filtered"] == 2         # SG + UK dropped
+        assert meta["complete"] is True
+    def test_united_kingdom_phrase_not_united(self, monkeypatch):
+        # multi-word country: 'United Kingdom' must NOT match 'united'
+        posts = [_bd_post(code="A9", country="United Kingdom",
+                          city="London", pid="99")]
+        _patch_bd(monkeypatch, [posts])
+        rows, meta = site_boards.list_board(
+            "custom:bytedance", country="United States")
+        assert rows == {} and meta["client_filtered"] == 1
+
+    def test_null_city_info_dropped_loud(self, monkeypatch):
+        p = _bd_post(code="A1")
+        p["city_info"] = None
+        _patch_bd(monkeypatch, [[p]])
+        rows, meta = site_boards.list_board(
+            "custom:bytedance", country="United States")
+        assert rows == {}
+        assert meta["unresolved_dropped"] == 1      # SEV-6: never claimed
+
+    def test_time_type_filter_interns(self, monkeypatch):
+        posts = [_bd_post(code="A1"), _bd_post(code="A5", rt="Intern")]
+        _patch_bd(monkeypatch, [posts])
+        rows, meta = site_boards.list_board(
+            "custom:bytedance", country="United States",
+            time_type="Full time")
+        assert set(rows) == {"A1"}
+        assert meta["client_filtered"] >= 1
+
+    def test_pagination_short_page_terminates(self, monkeypatch):
+        pages = [[_bd_post(code=f"A{i}", pid=str(i)) for i in range(200)],
+                 [_bd_post(code="A201", pid="201")]]
+        calls = _patch_bd(monkeypatch, pages)
+        rows, meta = site_boards.list_board("custom:bytedance")
+        assert meta["total"] == 201 and len(rows) == 201
+        assert len(calls) == 2                       # terminated on short
+
+    def test_empty_first_page_retried_once(self, monkeypatch):
+        pages = [[_bd_post(code="A1")]]
+        calls = _patch_bd(monkeypatch, pages, fail_codes="empty-first")
+        rows, _ = site_boards.list_board("custom:bytedance")
+        assert len(rows) == 1
+        assert len(calls) == 2                       # retry then success
+
+    def test_non_200_raises(self, monkeypatch):
+        def fake_post(url, body, headers=None, timeout=30.0):
+            raise RuntimeError("HTTP 508 (impersonated POST)")
+        monkeypatch.setattr(site_boards, "_imp_post_json", fake_post)
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        with pytest.raises(RuntimeError, match="508"):
+            site_boards.list_board("custom:bytedance")
+
+    def test_detail_roundtrip_code_and_id(self, monkeypatch):
+        posts = [_bd_post(code="A1", pid="7", desc="Long desc")]
+        _patch_bd(monkeypatch, [posts])
+        site_boards.list_board("custom:bytedance",
+                               country="United States")
+        for path in ("/bytedance/A1", "A1", "/bytedance/7", "7"):
+            d = site_boards.detail_payload("custom:bytedance", path,
+                                           Config())
+            assert d, path
+            assert d["jobPostingInfo"]["jobReqId"] == "A1"
+            assert "Long desc" in d["jobPostingInfo"]["jobDescription"]
+        assert site_boards.detail_payload("custom:bytedance", "nope",
+                                          Config()) is None
+
+    def test_website_path_header_sent(self, monkeypatch):
+        posts = [_bd_post()]
+        calls = _patch_bd(monkeypatch, [posts])
+        site_boards.list_board("custom:bytedance")
+        url, body, headers = calls[0]
+        assert headers["website-path"] == "en"       # en-portal selector
+        assert body["limit"] == site_boards.ByteDanceAdapter._PAGE
+
+
+def _ali_row(code, locs=("Sunnyvale",), publish=1789637099000,
+             name="Ali Job", pid=700, hostkey="aidc"):
+    return {"code": code, "id": pid, "name": name,
+            "description": "desc", "requirement": "req",
+            "publishTime": publish, "workLocations": list(locs),
+            "categories": ["Integration - Procurement"],
+            "positionUrl": f"/en/off-campus/position-detail?positionId={pid}"}
+
+
+def _patch_ali(monkeypatch, host_rows, fail_hosts=()):
+    """Fake the alibaba multi-host sweep. host_rows: {hostkey: [rows]}."""
+    session = _FakeResp(200, {"XSRF-TOKEN": "csrf-123"})
+    monkeypatch.setattr(site_boards, "_imp_get",
+                        lambda url, headers=None, timeout=25.0: session)
+    posts = []
+    post_bodies = []
+
+    def fake_post(url, body, headers=None, timeout=30.0):
+        post_bodies.append((url, body, headers))
+        hostkey = "aidc" if "aidc-jobs" in url else \
+            "cloud" if "alibabacloud" in url else \
+            "holding" if "talent-holding" in url else "tongyi"
+        rows = host_rows.get(hostkey, [])
+        return {"content": {"datas": rows,
+                            "totalCount": len(rows)}}
+
+    monkeypatch.setattr(site_boards, "_imp_post_json", fake_post)
+    monkeypatch.setattr(site_boards, "_imp_session",
+                        lambda: session)
+    monkeypatch.setattr(site_boards, "_CACHE", {})
+    site_boards._ALIBABA_SKIPPED["v"] = []
+    return post_bodies
+
+
+class TestAlibabaAdapter:
+    def test_us_row_mapping_raw_reqid(self, monkeypatch):
+        _patch_ali(monkeypatch, {"aidc": [
+            _ali_row("GP1", ("Sunnyvale",), pid=701),
+            _ali_row("GP2", ("Karachi",), pid=702),
+            _ali_row("GP3", ("Mumbai",), pid=703)]})
+        rows, meta = site_boards.list_board(
+            "custom:alibaba", country="United States")
+        assert set(rows) == {"GP1"}
+        r = rows["GP1"]
+        assert r["reqId"] == "GP1"                    # RAW (SEV-1)
+        assert r["externalPath"] == "/aidc/GP1"       # host provenance
+        assert r["locationsText"] == "Sunnyvale"
+        assert r["postedOn"].startswith("Posted ")    # epoch-ms → label
+        assert meta["complete"] is True
+        assert meta["client_filtered"] == 2
+
+    def test_multi_host_merge_and_dedup(self, monkeypatch):
+        # same code on two hosts → ONE row (keep-first) + loud count
+        _patch_ali(monkeypatch, {
+            "aidc": [_ali_row("GP1", ("Sunnyvale",), pid=701)],
+            "holding": [_ali_row("GP1", ("Sunnyvale",), pid=999),
+                        _ali_row("GP2", ("Bellevue",), pid=702)]})
+        rows, meta = site_boards.list_board(
+            "custom:alibaba", country="United States")
+        assert set(rows) == {"GP1", "GP2"}
+        assert meta["duplicate_codes"] == 1
+        assert rows["GP2"]["externalPath"] == "/holding/GP2"
+
+    def test_unknown_city_dropped_loud(self, monkeypatch):
+        _patch_ali(monkeypatch, {"aidc": [
+            _ali_row("GPX", ("Nowhere City",), pid=710)]})
+        rows, meta = site_boards.list_board(
+            "custom:alibaba", country="United States")
+        assert rows == {}
+        assert meta["unresolved_dropped"] == 1        # SEV-6
+
+    def test_any_us_location_semantics(self, monkeypatch):
+        _patch_ali(monkeypatch, {"aidc": [
+            _ali_row("GP1", ("Hangzhou", "Sunnyvale"), pid=711)]})
+        rows, _ = site_boards.list_board(
+            "custom:alibaba", country="United States")
+        assert set(rows) == {"GP1"}
+
+    def test_dns_fail_soft_complete_false(self, monkeypatch):
+        # cloud host unreachable → rows from survivors, complete=False
+        session = _FakeResp(200, {"XSRF-TOKEN": "csrf-123"})
+        monkeypatch.setattr(site_boards, "_imp_session",
+                            lambda: session)
+
+        def fake_get(url, headers=None, timeout=25.0):
+            if "alibabacloud" in url:
+                raise RuntimeError("Could not resolve host")
+            return session
+
+        monkeypatch.setattr(site_boards, "_imp_get", fake_get)
+
+        def fake_post(url, body, headers=None, timeout=30.0):
+            assert "_csrf=" in url                     # XSRF wired
+            return {"content": {"datas": [_ali_row("GP1")],
+                                "totalCount": 1}}
+
+        monkeypatch.setattr(site_boards, "_imp_post_json", fake_post)
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        site_boards._ALIBABA_SKIPPED["v"] = []
+        rows, meta = site_boards.list_board(
+            "custom:alibaba", country="United States")
+        assert set(rows) == {"GP1"}                    # survivors served
+        assert meta["complete"] is False               # SEV-2
+        assert meta["hosts_skipped"] == ["cloud"]
+
+    def test_country_client_false_finish_not_gated(self, monkeypatch):
+        # the flag means 'already classified at list time' — the netflix
+        # countryfilter-pending flow must NOT trigger (live-found bug)
+        _patch_ali(monkeypatch, {"aidc": [_ali_row("GP1")]})
+        _, meta = site_boards.list_board(
+            "custom:alibaba", country="United States")
+        assert meta["country_client"] is False
+
+    def test_detail_roundtrip(self, monkeypatch):
+        _patch_ali(monkeypatch, {"aidc": [_ali_row("GP1", pid=701)]})
+        site_boards.list_board("custom:alibaba",
+                               country="United States")
+        d = site_boards.detail_payload("custom:alibaba", "/aidc/GP1",
+                                       Config())
+        assert d["jobPostingInfo"]["jobReqId"] == "GP1"
+        assert d["hiringOrganization"]["name"] == "Alibaba Group"
+        assert d["jobPostingInfo"]["startDate"]  # exact publish date
+
+    def test_publish_time_epoch_ms_utc(self, monkeypatch):
+        # 2026-09-15T~ epoch ms → 'Posted N Days Ago' on a UTC basis
+        from datetime import datetime, timezone
+        dt = datetime(2026, 9, 15, 12, 0, tzinfo=timezone.utc)
+        _patch_ali(monkeypatch, {"aidc": [
+            _ali_row("GP1", publish=int(dt.timestamp() * 1000))]})
+        rows, _ = site_boards.list_board("custom:alibaba",
+                                         country="United States")
+        assert "posted" in rows["GP1"]["postedOn"].lower()
+        assert rows["GP1"]["firstPublishedIso"].startswith("2026-09-15")
+
+
+def _tc_job(from_id="MJ003945", title="Biz Dev (MJ003945)", city="Miami",
+            kind="Regular", publish="2026-09-10", jid="uuid-1",
+            family="Commercial", bu="Trip.com"):
+    return {"id": "30119146", "fromId": from_id, "jobId": jid,
+            "jobTitle": title, "publishDate": publish, "city": "Miami_Hier",
+            "cityName": city, "requirements": "<p>req</p>",
+            "duty": "<p>duty</p>", "jobFamilyGroupName": family,
+            "buName": bu, "kind": 1, "kindName": kind}
+
+
+def _patch_tc(monkeypatch, jobs, loc_entries=None):
+    calls = []
+
+    def fake_post(url, body, headers=None, timeout=30.0):
+        calls.append((url, body, headers))
+        if "getLocation" in url:
+            return {"retValue": loc_entries or [
+                {"type": "OverseasCareersCountry", "code": "USA",
+                 "name": "United States"}]}
+        return {"retValue": {"total": len(jobs),
+                             "recruitJobAdList": jobs}}
+
+    monkeypatch.setattr(site_boards, "_imp_post_json", fake_post)
+    monkeypatch.setattr(site_boards, "_CACHE", {})
+    return calls
+
+
+class TestTripComAdapter:
+    def test_row_mapping_and_mj_strip(self, monkeypatch):
+        _patch_tc(monkeypatch, [_tc_job()])
+        rows, meta = site_boards.list_board(
+            "custom:tripcom", country="United States")
+        r = rows["MJ003945"]
+        assert r["title"] == "Biz Dev"               # (MJ…) artifact gone
+        assert r["reqId"] == "MJ003945"              # code survives
+        assert r["timeType"] == "Full time"          # Regular → dialect
+        assert r["postedOn"].startswith("Posted ")
+        assert r["departments"][0] == "Commercial"
+        assert meta["country_client"] is False       # server-side filter
+
+    def test_country_request_shape_iso3(self, monkeypatch):
+        calls = _patch_tc(monkeypatch, [_tc_job()])
+        site_boards.list_board("custom:tripcom",
+                               country="United States")
+        api = [c for c in calls if "getOverseaJobAd" in c[0]][0]
+        url, body, headers = api
+        assert body["condition"]["country"] == ["USA"]  # ISO-3 taxonomy
+        assert body["pager"]["index"] == "1"          # STRING pager
+        assert headers["Accept"] == "application/json"  # XML guard
+
+    def test_kind_blank_time_type_blank(self, monkeypatch):
+        j = _tc_job(title="No Kind")
+        j["kindName"] = ""
+        _patch_tc(monkeypatch, [j])
+        rows, _ = site_boards.list_board("custom:tripcom",
+                                         country="United States")
+        assert rows["MJ003945"]["timeType"] == ""    # never guessed
+
+    def test_unknown_country_raises(self, monkeypatch):
+        _patch_tc(monkeypatch, [])
+        with pytest.raises(RuntimeError, match="ISO-3"):
+            site_boards.list_board("custom:tripcom",
+                                   country="Atlantis")
+
+    def test_detail_roundtrip(self, monkeypatch):
+        _patch_tc(monkeypatch, [_tc_job()])
+        site_boards.list_board("custom:tripcom",
+                               country="United States")
+        d = site_boards.detail_payload("custom:tripcom",
+                                       "/tripcom/MJ003945", Config())
+        assert d["jobPostingInfo"]["title"] == "Biz Dev"
+        assert "<p>duty</p>" in d["jobPostingInfo"]["jobDescription"]
+        assert d["jobPostingInfo"]["startDate"] == "2026-09-10"
+        assert d["hiringOrganization"]["name"] == "Trip.com Group"

@@ -1932,11 +1932,17 @@ class TestShippedWatchConfig:
                 required.append("time_type")
             for key in required:
                 assert w.get(key), f"watch missing {key}: {w}"
-            # board spec parses as workday tenant|instance|site OR a
-            # custom-site ats:kind:org (S13)
+            # board spec parses as workday tenant|instance|site, an
+            # ATS site ats:kind:org (S13), or an own-platform custom
+            # board custom:kind (S14 — org is EMPTY by design: the
+            # platform IS the company)
             if site_boards.is_site_spec(w["board"]):
                 kind, org = site_boards.parse_site(w["board"])
-                assert kind and org, w["board"]
+                if w["board"].startswith("ats:"):
+                    assert kind and org, w["board"]
+                else:  # custom: own-platform
+                    assert kind and not org, w["board"]
+                    assert w["board"].startswith("custom:"), w["board"]
             else:
                 parts = w["board"].split("|")
                 assert len(parts) == 3 and all(parts), w["board"]
@@ -1958,6 +1964,13 @@ class TestShippedWatchConfig:
         assert "netflix|wd108|Netflix" in boards
         assert "tencent|wd1|Tencent_Careers" in boards
         assert "jd|wd103|Careers_at_JD" in boards
+        # the S13 ATS stress sites (live-verified 2026-09-19)
+        assert "ats:ashby:openai" in boards
+        assert "ats:greenhouse:anthropic" in boards
+        # the S14 own-platform custom boards (live-verified 2026-09-19)
+        assert "custom:bytedance" in boards
+        assert "custom:alibaba" in boards
+        assert "custom:tripcom" in boards
 
     def test_run_watch_registers_overrides(self, tmp_path, monkeypatch):
         """li_variants/slice_locations from the watch dict reach the
