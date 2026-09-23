@@ -2010,26 +2010,35 @@ class TestRunWatchClientCountry:
               "time_type": "Full time"}
 
     def _run(self, wdir, monkeypatch, prior, current, enrich_map,
-             complete=True, legs=1, corroborate_seen=None):
+             complete=True, legs=1, corroborate_seen=None,
+             feed_prior=None, fetch_seen=None):
         state = wdir / "test_watch.state.jsonl"
         if prior:
             state.write_text("\n".join(json.dumps(r) for r in prior) + "\n",
                              encoding="utf-8")
+        if feed_prior:
+            (wdir / "test_watch.newposts.jsonl").write_text(
+                "\n".join(json.dumps(r) for r in feed_prior) + "\n",
+                encoding="utf-8")
         monkeypatch.setattr(
             watch, "current_postings",
             lambda *a, **k: ({p["reqId"]: p for p in current},
                              complete, True))
         monkeypatch.setattr(watch, "_legs_bump", lambda l: legs)
-        # enrich_new returns feed records carrying the detail country
-        monkeypatch.setattr(watch, "enrich_new",
-                            lambda rows, *a, **k: [
-                                dict(enrich_map[r["reqId"]],
-                                     reqId=r["reqId"],
-                                     title=r.get("title") or "",
-                                     first_seen="2026-09-10",
-                                     url=r.get("url", ""))
-                                for r in rows
-                                if r["reqId"] in enrich_map])
+        # enrich_new returns feed records carrying the detail country;
+        # fetch_seen records the rows HANDED to it (the fetch budget)
+        fs = [] if fetch_seen is None else fetch_seen
+
+        def _fake_enrich(rows, *a, **k):
+            fs.extend(r["reqId"] for r in rows)
+            return [dict(enrich_map[r["reqId"]],
+                         reqId=r["reqId"],
+                         title=r.get("title") or "",
+                         first_seen="2026-09-10",
+                         url=r.get("url", ""))
+                    for r in rows
+                    if r["reqId"] in enrich_map]
+        monkeypatch.setattr(watch, "enrich_new", _fake_enrich)
         seen = []
         if corroborate_seen is None:
             corroborate_seen = seen.append
@@ -2128,3 +2137,108 @@ class TestRunWatchClientCountry:
         # JRF must never appear in any corroborate input
         for rows in seen:
             assert all(r["reqId"] != "JRF" for r in rows)
+
+    # ── S14: the one-fetch contract (run #38 live-validation fix) ─────────
+
+    def test_feed_classified_foreign_dequeued(self, wdir, monkeypatch):
+        # the S13 comment said 'foreign rows cost exactly ONE detail
+        # fetch each' — the code re-candidated them every run (run #38:
+        # netflix 5 days, 214/393 classified, a stable foreign head
+        # starved the queue). A feed-classified-foreign row must NOT be
+        # a candidate: not fetched, not in state, run completes.
+        feed_prior = [{"reqId": "JR2", "title": "Seoul",
+                       "first_seen": "2026-09-01", "url": "u",
+                       "country": "south korea"}]
+        fetch = []
+        result = self._run(wdir, monkeypatch, [],
+                           [_post("JR1", "US city"), _post("JR2", "Seoul")],
+                           {"JR1": {"country":
+                                    "united states of america"}},
+                           feed_prior=feed_prior, fetch_seen=fetch)
+        assert result == "complete"
+        assert "JR2" not in fetch          # never re-fetched (the fix)
+        state = [json.loads(x) for x in
+                 (wdir / "test_watch.state.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        assert {r["reqId"] for r in state} == {"JR1"}
+        # the audit record survives in the feed untouched
+        feed = [json.loads(x) for x in
+                (wdir / "test_watch.newposts.jsonl").read_text(
+                    encoding="utf-8").splitlines()]
+        jr2 = [r for r in feed if r["reqId"] == "JR2"]
+        assert jr2 and jr2[0]["country"] == "south korea"
+
+    def test_no_country_usa_remote_classifies_via_tokens(self, wdir,
+                                                         monkeypatch):
+        # the netflix 'USA - Remote' class: detail payload carries NO
+        # jobPostingInfo.country (108 rows pending-forever at S14
+        # validation). The record's own location tokens decide — US
+        # token → state, without any re-fetch.
+        feed_prior = [{"reqId": "JRR", "title": "Remote",
+                       "first_seen": "2026-09-19", "url": "u",
+                       "locationsText": "USA - Remote",
+                       "locations": ["USA - Remote"], "startDate":
+                       "2026-09-19", "description": "d"}]
+        fetch = []
+        result = self._run(wdir, monkeypatch, [],
+                           [_post("JRR", "Remote")], {},
+                           feed_prior=feed_prior, fetch_seen=fetch)
+        assert result == "complete"
+        state = [json.loads(x) for x in
+                 (wdir / "test_watch.state.jsonl").read_text(
+                     encoding="utf-8").splitlines()]
+        assert {r["reqId"] for r in state} == {"JRR"}  # rescued
+
+    def test_no_country_foreign_location_unresolved_not_refetched(
+            self, wdir, monkeypatch):
+        # no country + non-US locations: NEVER guessed-foreign and
+        # NEVER guessed-US — the row stays out of state, auditable in
+        # the feed, and (one-fetch contract) is not re-fetched: its
+        # existing record already answered "unresolved from available
+        # data". Live boards have ZERO such rows (all 185 no-country
+        # records carry 'USA - …' locations); if one ever appears the
+        # honest state is complete-with-unresolved, not an infinite
+        # retrigger loop.
+        feed_prior = [{"reqId": "JRP", "title": "Seoul",
+                       "first_seen": "2026-09-19", "url": "u",
+                       "locationsText": "Seoul, South Korea",
+                       "locations": ["Seoul"], "startDate":
+                       "2026-09-19", "description": "d"}]
+        jr = _post("JRP", "Seoul")
+        jr["locationsText"] = "Seoul, South Korea"
+        fetch = []
+        result = self._run(wdir, monkeypatch, [], [jr], {},
+                           feed_prior=feed_prior, fetch_seen=fetch)
+        assert result == "complete"         # unresolved ≠ retrigger
+        assert fetch == []                  # one-fetch contract
+        state = [json.loads(x) for x in
+                 (wdir / "test_watch.state.jsonl").read_text(
+                     encoding="utf-8").split("\n") if x.strip()]
+        assert state == []                  # never entered state
+
+    def test_prior_feed_us_verdict_rescues_starved_row(self, wdir,
+                                                       monkeypatch):
+        # a row classified US in a PRIOR leg but starved beyond every
+        # fetch head since: today's classification must consult the
+        # last feed record — verdict kept, state converges with ZERO
+        # network cost (the state-160-vs-369 gap closes in one run)
+        feed_prior = [{"reqId": "JRS", "title": "US city",
+                       "first_seen": "2026-09-19", "url": "u",
+                       "country": "united states of america",
+                       "startDate": "2026-09-19",
+                       "locationsText": "US, CA, Santa Clara"}]
+        fetch = []
+        result = self._run(wdir, monkeypatch, [],
+                           [_post("JRS", "US city")], {},
+                           feed_prior=feed_prior, fetch_seen=fetch)
+        assert result == "complete"
+        state = [json.loads(x) for x in
+                 (wdir / "test_watch.state.jsonl").read_text(
+                     encoding="utf-8").split("\n") if x.strip()]
+        assert {r["reqId"] for r in state} == {"JRS"}
+        rec = state[0]
+        # review amendments: the feed record IS the enrichment evidence
+        assert rec["first_seen"] == "2026-09-19"   # tenure preserved
+        assert rec["last_startDate"] == "2026-09-19"
+        assert rec["startDate_first"] == "2026-09-19"
+        assert "needs_enrich" not in rec           # resolved, not pending

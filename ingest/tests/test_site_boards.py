@@ -661,3 +661,79 @@ class TestTripComAdapter:
         assert "<p>duty</p>" in d["jobPostingInfo"]["jobDescription"]
         assert d["jobPostingInfo"]["startDate"] == "2026-09-10"
         assert d["hiringOrganization"]["name"] == "Trip.com Group"
+
+
+class TestImpRetry:
+    """S14 run-#42: a single CDN hiccup (curl-28, 0 bytes) must not
+    fail a whole watch run — one retry with a session reset; a
+    persistent outage still raises (the fail-safe stays intact)."""
+
+    def test_transient_timeout_retried_once(self, monkeypatch):
+        import time as _t
+        from types import SimpleNamespace
+        monkeypatch.setattr(
+            site_boards, "time",
+            SimpleNamespace(sleep=lambda s: None,
+                            monotonic=_t.monotonic))
+        state = {"calls": 0, "resets": 0}
+        real_reset = site_boards._imp_reset_session
+
+        def fake_reset():
+            state["resets"] += 1
+
+        monkeypatch.setattr(site_boards, "_imp_reset_session", fake_reset)
+
+        def fake_post(url, body, headers=None, timeout=30.0):
+            state["calls"] += 1
+            if state["calls"] == 1:
+                raise RuntimeError(
+                    "Timeout: Failed to perform, curl: (28) Operation "
+                    "timed out after 30002 milliseconds with 0 bytes")
+            return {"data": {"job_post_list": [_bd_post()]}}
+        monkeypatch.setattr(site_boards, "_imp_post_json", fake_post)
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        rows, meta = site_boards.list_board("custom:bytedance")
+        assert len(rows) == 1                     # recovered
+        assert state["calls"] == 2 and state["resets"] == 1
+
+    def test_persistent_outage_raises_after_retry(self, monkeypatch):
+        import time as _t
+        from types import SimpleNamespace
+        monkeypatch.setattr(
+            site_boards, "time",
+            SimpleNamespace(sleep=lambda s: None,
+                            monotonic=_t.monotonic))
+        calls = []
+        monkeypatch.setattr(
+            site_boards, "_imp_post_json",
+            lambda url, body, headers=None, timeout=30.0:
+            (calls.append(url), None)[1]
+            or (_ for _ in ()).throw(RuntimeError("curl: (28) timeout")))
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        with pytest.raises(RuntimeError, match="curl"):
+            site_boards.list_board("custom:bytedance")
+        assert len(calls) == 2                    # one retry, then loud
+
+    def test_retry_wrapper_resets_session_between_attempts(
+            self, monkeypatch):
+        import time as _t
+        from types import SimpleNamespace
+        monkeypatch.setattr(
+            site_boards, "time",
+            SimpleNamespace(sleep=lambda s: None,
+                            monotonic=_t.monotonic))
+        seq = []
+
+        def flaky(url, body, headers=None, timeout=30.0):
+            seq.append("post")
+            if len(seq) == 1:
+                raise RuntimeError("curl: (28)")
+            return {"ok": True}
+
+        monkeypatch.setattr(site_boards, "_imp_post_json", flaky)
+        monkeypatch.setattr(
+            site_boards, "_imp_reset_session",
+            lambda: seq.append("reset"))
+        assert site_boards._imp_post_json_retry(
+            "https://x", {}) == {"ok": True}
+        assert seq == ["post", "reset", "post"]

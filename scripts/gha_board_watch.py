@@ -960,7 +960,42 @@ def run_watch(w: dict, cfg: Config) -> str:
     # exactly ONE detail fetch each (the classifier) and live on in the
     # feed for audit. Facet boards (nvidia) are server-filtered — the
     # classification below is a no-op for them.
+    #
+    # S14 live-validation fix (run #38 evidence — the S13 one-fetch
+    # contract was NOT actually delivered): the alert feed loads BEFORE
+    # candidacy so the last feed record per reqId can (a) keep
+    # foreign-classified rows OUT of the candidate queue — without this
+    # they re-queued EVERY run (netflix: 5 days, 393 candidates, only
+    # 214 distinct ever classified; a stable ~29-row foreign head ate
+    # the DETAILS_MAX budget and starved the tail — the state sat at
+    # 160 vs the true ~369 US board) — and (b) serve the classification
+    # with its country verdict for rows beyond today's fetch head.
+    feed_path = WATCH_DIR / f"{label}.newposts.jsonl"
+    enriched_feed: dict[str, dict] = {}
+    for e in _load_jsonl(feed_path):
+        enriched_feed[e["reqId"]] = e            # last line wins
+    today_iso = date.today().isoformat()
+
     cand_rows = [current[rid] for rid in current if rid not in prior]
+    wcountry = w.get("country", "")
+    if country_client:
+        # the one-fetch contract: a candidate whose LAST feed record is
+        # country-classified FOREIGN never enters state, so it would
+        # re-queue forever. De-queue it — the feed keeps it as audit;
+        # a genuine re-post arrives under a new reqId.
+        def _feed_classified_foreign(rid: str) -> bool:
+            e = enriched_feed.get(rid)
+            c = (e.get("country") or "").strip() if e else ""
+            return bool(c) and not workday.country_str_matches(
+                c, wcountry)
+        n_known_foreign = sum(1 for r in cand_rows
+                              if _feed_classified_foreign(r["reqId"]))
+        if n_known_foreign:
+            cand_rows = [r for r in cand_rows
+                         if not _feed_classified_foreign(r["reqId"])]
+            print(f"[watch:{label}] {n_known_foreign} feed-classified "
+                  "foreign candidate(s) de-queued (one-fetch contract)",
+                  flush=True)
     new_rows = cand_rows
     gone_rows = [prior[rid] for rid in prior
                  if list_complete and rid not in current]
@@ -978,11 +1013,6 @@ def run_watch(w: dict, cfg: Config) -> str:
     # shape fed detail_payload("") → guaranteed detail_unreachable and
     # burned the 3-strike valve on structurally doomed retries (the
     # predicate already guarantees rid ∈ current).
-    feed_path = WATCH_DIR / f"{label}.newposts.jsonl"
-    enriched_feed: dict[str, dict] = {}
-    for e in _load_jsonl(feed_path):
-        enriched_feed[e["reqId"]] = e            # last line wins
-    today_iso = date.today().isoformat()
     def _recoverable(rid: str, p: dict) -> bool:
         feed_rec = enriched_feed.get(rid)
         if feed_rec is None:
@@ -1033,7 +1063,33 @@ def run_watch(w: dict, cfg: Config) -> str:
 
     # enrich the NEW postings (bounded; budget-guarded)
     deadline = time.monotonic() + BUDGET_SECONDS
-    enrich_input = (cand_rows + backlog_rows)[:DETAILS_MAX * 2]         if backlog_rows else cand_rows
+    # S14 one-fetch contract: only candidates NEVER enriched (or whose
+    # last feed record ERRORED — the 3-strike retry) cost a detail
+    # fetch. A candidate with a non-error prior feed record feeds the
+    # classification directly from that record (country verdict, or the
+    # US-token fallback) — re-fetching it is the starvation bug. Live
+    # evidence: 185 no-country feed rows across netflix/tencent/jd are
+    # ALL 'USA - …' locations (0 foreign-token, 0 no-token) — the
+    # unresolved-forever class is empty in practice and stays auditable
+    # in the feed if it ever appears.
+    if country_client:
+        def _needs_fetch(rid: str) -> bool:
+            e = enriched_feed.get(rid)
+            if e is None:
+                return True                    # never enriched
+            if e.get("error"):
+                # 3-strike valve (B6) — the same cap _recoverable
+                # applies to state rows: a candidate whose detail has
+                # failed 3× is terminal (token-fallback verdict);
+                # re-fetching forever is the starvation bug again.
+                return int(e.get("attempts") or 0) < 3
+            return False                       # one-fetch contract
+        fetch_rows = [r for r in cand_rows
+                      if _needs_fetch(r["reqId"])]
+    else:
+        fetch_rows = cand_rows
+    enrich_input = (fetch_rows + backlog_rows)[:DETAILS_MAX * 2] \
+        if backlog_rows else fetch_rows
     # S9-audit D2 P2: retries/recoveries must not reset the feed's
     # first_seen. prior_feed seeds each reqId with its last FEED record
     # (first_seen preserved for enriched-with-error retries); state rows
@@ -1053,12 +1109,20 @@ def run_watch(w: dict, cfg: Config) -> str:
         # audit; 3-strike rows fall back to the token predicate (S12
         # behavior, undercount-accepting for that tail only); rows
         # beyond DETAILS_MAX / budget stay PENDING (retried next leg).
-        wcountry = w.get("country", "")
+        # S14 fix, two changes: (1) the record consulted is TODAY's
+        # enrichment OR the last feed record — a row classified in a
+        # prior leg (beyond today's fetch head) KEEPS its verdict
+        # instead of resetting to pending; (2) an enriched record with
+        # NO country field (the netflix 'USA - Remote' class — 108 rows
+        # pending-forever at S14 validation) falls back to the
+        # location-token predicate on its own enriched locations —
+        # conservative phrase semantics: no US token = still pending.
         enr_by_rid = {e["reqId"]: e for e in enriched}
         us_rids: set[str] = set()
         n_foreign = n_pending = n_token = 0
         for r in cand_rows:
-            e = enr_by_rid.get(r["reqId"])
+            e = enr_by_rid.get(r["reqId"]) \
+                or enriched_feed.get(r["reqId"])
             if e and not e.get("error") and (e.get("country") or "").strip():
                 if workday.country_str_matches(e["country"], wcountry):
                     us_rids.add(r["reqId"])
@@ -1072,6 +1136,15 @@ def run_watch(w: dict, cfg: Config) -> str:
                     n_token += 1
                 else:
                     n_foreign += 1
+            elif e and not e.get("error"):
+                # enriched detail WITHOUT a country field (S14): token
+                # fallback on the record's own locations — the record
+                # carries locationsText, so the row predicate works
+                if workday._row_in_country(e, wcountry):
+                    us_rids.add(r["reqId"])
+                    n_token += 1
+                else:
+                    n_pending += 1
             else:
                 n_pending += 1     # no detail yet — retry next leg
         new_rows = [r for r in cand_rows if r["reqId"] in us_rids]
@@ -1183,6 +1256,11 @@ def run_watch(w: dict, cfg: Config) -> str:
     # one detail fetch (the classifier) and live in the feed as audit.
     today = date.today().isoformat()
     enr_by_rid = {e["reqId"]: e for e in enriched if e.get("reqId")}
+    # S14: rescued rows (US verdict / startDate from a PRIOR feed
+    # record, not fetched today) — the feed record is the enrichment
+    # evidence for them (review MED-LOW amendment: seed startDate +
+    # first_seen from it, not from today's fetch that never happened)
+    feed_by_rid = enriched_feed
     need_set = {r["reqId"] for r in new_rows}
     need_set.update(r["reqId"] for r in backlog_rows)
     us_membership = set(prior) | {r["reqId"] for r in new_rows}
@@ -1194,13 +1272,17 @@ def run_watch(w: dict, cfg: Config) -> str:
         p = prior.get(rid) or {}
         rec = {
             "reqId": rid, "title": r.get("title") or "",
-            "first_seen": p.get("first_seen") or today,
+            "first_seen": p.get("first_seen")
+            or (feed_by_rid.get(rid) or {}).get("first_seen")
+            or today,
             "last_seen": today,
             "last_postedOn": r.get("postedOn") or "",
             # S8-E2: a re-fetched (R2) startDate is the newest observation
             # for this reqId; enrichment otherwise; prior otherwise.
+            # S14: a rescued row's evidence is its prior FEED record.
             "last_startDate": refetch_sd.get(rid)
             or enr_by_rid.get(rid, {}).get("startDate")
+            or (feed_by_rid.get(rid) or {}).get("startDate")
             or p.get("last_startDate") or "",
         }
         # S8-E2: implied post date, computed ONCE per run against the
@@ -1218,7 +1300,8 @@ def run_watch(w: dict, cfg: Config) -> str:
         # evidence keep whatever they had (legacy rows: absent).
         sd_first = p.get("startDate_first") or ""
         new_obs = refetch_sd.get(rid) \
-            or enr_by_rid.get(rid, {}).get("startDate") or ""
+            or enr_by_rid.get(rid, {}).get("startDate") \
+            or (feed_by_rid.get(rid) or {}).get("startDate") or ""
         if new_obs:
             sd_first = min(x for x in (sd_first,
                                        p.get("last_startDate") or "",
@@ -1226,7 +1309,11 @@ def run_watch(w: dict, cfg: Config) -> str:
         if sd_first:
             rec["startDate_first"] = sd_first
         if rid in need_set and rid not in enr_by_rid:
-            rec["needs_enrich"] = True    # survives crash / leg cap
+            # S14: a row resolved from its prior feed record is NOT
+            # awaiting enrichment — never stamp it (review LOW #2)
+            fr = enriched_feed.get(rid)
+            if not (fr and not fr.get("error")):
+                rec["needs_enrich"] = True    # survives crash / leg cap
         keep.append(rec)
     if not list_complete:
         keep.extend(p for rid, p in prior.items() if rid not in current)
@@ -1254,6 +1341,19 @@ def run_watch(w: dict, cfg: Config) -> str:
         need.update(r["reqId"] for r in cand_rows)
     need.update(r["reqId"] for r in backlog_rows)
     enriched_rids = {e["reqId"] for e in enriched if e.get("reqId")}
+    if country_client:
+        # S14 one-fetch contract: a candidate is RESOLVED (not
+        # backlog) when its prior feed record is non-error (verdict or
+        # US-token fallback) OR terminal-3-strike (token fallback
+        # already decided). Error records below the cap retry on a
+        # LATER leg/day via _needs_fetch — only rows beyond today's
+        # fetch head drive the same-day retrigger (a row that errored
+        # IN today's head counts as handled for today).
+        enriched_rids.update(
+            rid for rid, e in enriched_feed.items()
+            if rid in current
+            and (not e.get("error")
+                 or int(e.get("attempts") or 0) >= 3))
     unenriched = len(need - enriched_rids)
     if unenriched > 0 and leg < LEGS_MAX_PER_DAY:
         print(f"[watch:{label}] backlog: {unenriched} new postings "

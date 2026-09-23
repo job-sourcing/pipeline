@@ -496,6 +496,31 @@ def _imp_get(url: str, headers: Optional[dict] = None,
     return _imp_session().get(url, headers=headers or {}, timeout=timeout)
 
 
+def _imp_post_json_retry(url: str, body: dict,
+                         headers: Optional[dict] = None,
+                         timeout: float = 30.0, attempts: int = 2,
+                         backoff_s: float = 2.0) -> dict:
+    """POST → parsed JSON with one retry. S14 run-#42 lesson: a single
+    Akamai/CDN hiccup (curl-28 timeout, 0 bytes received — observed on
+    GHA after 4 consecutive watch legs) must not fail a whole watch run.
+    The page request is a pure idempotent query, so retrying it is
+    safe; the session is RESET between attempts (a fresh TLS
+    fingerprint — the dead connection does not poison the retry). A
+    persistent outage still raises loudly after the last attempt (the
+    watch's fail-safe contract stays intact)."""
+    last: Exception = RuntimeError(f"{url}: no attempts made")
+    for attempt in range(attempts):
+        try:
+            return _imp_post_json(url, body, headers=headers,
+                                  timeout=timeout)
+        except Exception as e:
+            last = e
+            if attempt + 1 < attempts:
+                _imp_reset_session()
+                time.sleep(backoff_s * (attempt + 1))
+    raise last
+
+
 def _imp_reset_session():
     """Test hook: drop the shared session (cross-test isolation)."""
     global _IMP_SESSION
@@ -558,7 +583,8 @@ class ByteDanceAdapter:
             body = {"recruitment_id_list": [], "job_category_id_list": [],
                     "subject_id_list": [], "location_code_list": [],
                     "keyword": "", "limit": self._PAGE, "offset": offset}
-            d = _imp_post_json(self._API, body, headers=self._HDRS)
+            d = _imp_post_json_retry(self._API, body,
+                                     headers=self._HDRS)
             data = d.get("data") or {}
             page = data.get("job_post_list") or []
             if not isinstance(page, list):
@@ -1029,7 +1055,7 @@ class TripComAdapter:
         hit = _CACHE.get(spec)
         if hit and now - hit[0] < _CACHE_TTL:
             return hit[1]
-        d = _imp_post_json(self._LOC, {"countryCode": "",
+        d = _imp_post_json_retry(self._LOC, {"countryCode": "",
                                        "type": "OverseasCareersCountry",
                                        "head": {"language": "en-US"}},
                            headers=self._HDRS)
@@ -1065,7 +1091,8 @@ class TripComAdapter:
                                   "jobFamilyCode": []},
                     "pager": {"index": str(page), "size": str(self._PAGE)},
                     "head": {"language": "en-US"}}
-            d = _imp_post_json(self._API, body, headers=self._HDRS)
+            d = _imp_post_json_retry(self._API, body,
+                                     headers=self._HDRS)
             v = d.get("retValue") or {}
             jobs = v.get("recruitJobAdList") or []
             if not isinstance(jobs, list):
