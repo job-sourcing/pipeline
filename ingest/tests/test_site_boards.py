@@ -1811,3 +1811,113 @@ class TestXiaohongshuAdapter:
                                               "totalPage": 0, "list": []}}
         monkeypatch.setattr(site_boards, "_post_json_urllib", fake_post)
         assert XiaohongshuAdapter("", None)._fetch_pages(["840"]) == []
+
+
+class TestS17Round2Pins:
+    """Round-2 peer-review amendments (F1 time-refusal, F2 mixed-city
+    keep, F4 detail refusal, detail recompute, cache-key separation)."""
+
+    # ── feishuhire F2: mixed US + unmapped cities ────────────────────
+
+    def test_feishuhire_mixed_us_unmapped_kept(self, monkeypatch):
+        # [San Francisco, Pleasantville] → PROVABLY US: kept, sibling
+        # surfaced (round-2 F2 — the alibaba precedent)
+        mixed = TestFeishuHireAdapter._post(
+            "mix1", "US role with odd sibling",
+            ["San Francisco", "Pleasantville"])
+        spec = TestFeishuHireAdapter._board(None, monkeypatch, [mixed])
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert set(rows) == {"mix1"}
+        assert rows["mix1"]["countries"] == ["United States"]
+        assert meta["unmapped_cities"] == ["Pleasantville"]
+        assert meta["unresolved_dropped"] == 0
+        assert meta["complete"] is True
+
+    def test_feishuhire_all_unmapped_still_unresolved(self, monkeypatch):
+        # [Pleasantville] alone → unresolved (US-ness in doubt)
+        odd = TestFeishuHireAdapter._post("odd1", "Mystery", ["Pleasantville"])
+        spec = TestFeishuHireAdapter._board(None, monkeypatch, [odd])
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert rows == {}
+        assert meta["unresolved_dropped"] == 1
+        assert meta["complete"] is False
+
+    def test_feishuhire_non_us_mapped_drops(self, monkeypatch):
+        cn = TestFeishuHireAdapter._post("cn1", "CN role",
+                                         ["Beijing", "London"])
+        spec = TestFeishuHireAdapter._board(None, monkeypatch, [cn])
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert rows == {}
+        assert meta["client_filtered_country"] == 1
+        assert meta["unresolved_dropped"] == 0
+
+    # ── xiaohongshu F1: time filter refused ──────────────────────────
+
+    def test_xhs_time_type_filter_refused(self, monkeypatch):
+        spec, _ = TestXiaohongshuAdapter._board(None, monkeypatch, [])
+        with pytest.raises(RuntimeError, match="unanswerable"):
+            site_boards.list_board(spec, country="United States",
+                                   time_type="Full time")
+
+    def test_xhs_detail_foreign_country_refused(self, monkeypatch):
+        us = TestXiaohongshuAdapter._job(1)
+        spec, _ = TestXiaohongshuAdapter._board(None, monkeypatch, [us])
+        with pytest.raises(RuntimeError, match="refusing to serve"):
+            site_boards.detail_payload(spec, "/social/position/1",
+                                       country="Germany")
+
+    # ── feishuhire detail recompute (round-1 amendment, round-2 pin) ─
+
+    def test_feishuhire_detail_cities_win_recompute(self, monkeypatch):
+        # search says Beijing-only; detail says San Francisco → the
+        # payload's country must follow the DETAIL cities (consistency
+        # by construction)
+        post = TestFeishuHireAdapter._post("rc1", "Relocated role",
+                                           ["Beijing"])
+        details = {"rc1": {
+            "title": "Relocated role",
+            "description": "D", "requirement": "R",
+            "city_list": [{"en_name": "San Francisco"}],
+        }}
+        spec = TestFeishuHireAdapter._board(None, monkeypatch, [post], details)
+        det = site_boards.detail_payload(spec, "/rc1")
+        info = det["jobPostingInfo"]
+        assert info["location"] == "San Francisco"
+        assert info["country"]["descriptor"] == "United States"
+
+    # ── cache-key separation (workplaces in the xhs cache key) ───────
+
+    def test_xhs_cache_key_separates_filters(self, monkeypatch):
+        from jobsearch.sources.site_boards import XiaohongshuAdapter
+        calls = []
+        us_page = [TestXiaohongshuAdapter._job(1, "US role")]
+        all_page = [TestXiaohongshuAdapter._job(2, "Any role"),
+                    TestXiaohongshuAdapter._job(3, "Other role",
+                                                workplace="北京市")]
+
+        def fake_post(url, body, headers=None):
+            calls.append(body.get("workplaces"))
+            return {"success": True, "data": {
+                "total": (1 if body.get("workplaces") else 2),
+                "totalPage": 1,
+                "list": us_page if body.get("workplaces") else all_page}}
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        monkeypatch.setattr(site_boards, "_post_json_urllib", fake_post)
+        a = XiaohongshuAdapter("", None)
+        assert len(a._fetch_pages(["840"])) == 1
+        assert len(a._fetch_pages([])) == 2       # separate cache entry
+        assert len(a._fetch_pages(["840"])) == 1  # cached, no new call
+        assert len(calls) == 2
+
+    def test_xhs_error_envelope_nothing_cached(self, monkeypatch):
+        # round-2 F10: the error path must not pollute the cache
+        from jobsearch.sources.site_boards import XiaohongshuAdapter
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+
+        def fake_post(url, body, headers=None):
+            return {"success": False, "errorCode": 999, "data": None}
+        monkeypatch.setattr(site_boards, "_post_json_urllib", fake_post)
+        with pytest.raises(RuntimeError, match="success=False"):
+            XiaohongshuAdapter("", None)._fetch_pages(["840"])
+        assert not any("xiaohongshu" in k
+                       for k in site_boards._CACHE)

@@ -1894,11 +1894,13 @@ class FeishuHireAdapter:
                        (MiniMax rows are 'Beijing/Shanghai/San Francisco'
                        multi-city — a US opening inside a CN-hybrid role
                        IS the user's target; netflix-class precedent).
-                       Unknown city OR empty city_list → row unresolved:
-                       dropped loudly + complete=False (never false-gone;
-                       the unified blank-country rule — bytedance/alibaba
-                       precedent). Ambiguous names (Cambridge) stay
-                       UNMAPPED by design (loud, not guessed).
+                       A KNOWN US city + unmapped siblings → row KEPT
+                       (provably US; siblings surface in unmapped_cities
+                       — round-2 F2, the alibaba precedent). Empty
+                       city_list or NO known target city → row
+                       unresolved: dropped loudly + complete=False
+                       (never false-gone). Ambiguous names (Cambridge)
+                       stay UNMAPPED by design (loud, not guessed).
       timeType         recruit_type.en_name ('Full-time' → _TT 'Full
                        time'; 'Internship' stays; 'Consultant' and
                        'Outsourced' → Contract — the live-observed
@@ -2106,23 +2108,32 @@ class FeishuHireAdapter:
                 continue
             cities = self._cities(post)
             mapped = [_FEISHU_CITY_COUNTRY.get(c) for c in cities]
-            if not cities or any(m is None for m in mapped):
-                # unknown city OR empty city_list → unresolved (the
-                # unified blank-country rule — bytedance/alibaba
-                # precedent: never guess US, never false-gone)
+            if not cities:
+                # empty city_list → unresolved (the unified blank-country
+                # rule — bytedance/alibaba precedent: never guess, never
+                # false-gone)
                 unresolved += 1
+                continue
+            # round-2 F2 (SEV-2): a row with a KNOWN US city + unmapped
+            # sibling cities is PROVABLY US — keep it (the ANY-city rule
+            # the docstring already promises; the alibaba precedent —
+            # unknown cities ignored, row kept when any known city hits).
+            # Unmapped siblings still surface in unmapped_cities (map
+            # growth); unresolved is reserved for rows with NO known
+            # target city (their US-ness is the thing in doubt).
+            any_target = any(m and workday.country_str_matches(m, country)
+                             for m in mapped) if country else bool(mapped)
+            if not any_target:
+                if any(m is None for m in mapped) or not mapped:
+                    unresolved += 1
+                    unmapped.update(c for c, m in zip(cities, mapped)
+                                    if m is None)
+                    continue
+                dropped_country += 1
+                continue
+            if any(m is None for m in mapped):
                 unmapped.update(c for c, m in zip(cities, mapped)
                                 if m is None)
-                continue
-            # ANY-city match: a US opening inside a multi-city role counts
-            # (netflix-class precedent; MiniMax 'Beijing/Shanghai/San
-            # Francisco' rows are the user's target)
-            if country:
-                hit = any(m and workday.country_str_matches(m, country)
-                          for m in mapped)
-                if not hit:
-                    dropped_country += 1
-                    continue
             c = next((m for m in mapped
                       if m and workday.country_str_matches(m, "United States")), mapped[0] if mapped else "")
             label, iso = _posted_label(_epoch_ms_to_iso(
@@ -2381,15 +2392,21 @@ class XiaohongshuAdapter:
         jobs = self._fetch_pages(workplaces)
         rows: dict[str, dict] = {}
         dropped_tt = dupes = 0
+        if time_type:
+            # round-2 F1 (SEV-2): the API carries NO employment-type field
+            # — a time filter is unanswerable, and silently dropping every
+            # row with complete=True is the mass-false-gone trap the
+            # board_dump --time-type 'Full time' DEFAULT would spring.
+            # Refuse loudly (the adapter's own country-refusal doctrine).
+            raise RuntimeError(
+                "xiaohongshu: the API serves no employment type — a "
+                f"time_type filter ({time_type!r}) is unanswerable; use "
+                "--time-type '' (the s17 dump-chain driver does)")
         for job in jobs:
             rid = str(job.get("positionId") or "")
             if not rid or rid in rows:
                 if rid:
                     dupes += 1
-                continue
-            tt = ""  # the API carries no employment type — honest blank
-            if time_type:
-                dropped_tt += 1     # nothing is filterable: all drop
                 continue
             label, iso = _posted_label(str(job.get("publishTime") or ""))
             desc = str(job.get("duty") or "")
@@ -2403,7 +2420,7 @@ class XiaohongshuAdapter:
                 "externalPath": f"/social/position/{rid}",
                 "locationsText": str(job.get("workplace") or ""),
                 "postedOn": label,
-                "timeType": tt,
+                "timeType": "",   # no field — honest blank
                 "bulletFields": [rid],
                 "ats": "xiaohongshu",
                 "firstPublishedIso": iso,
@@ -2417,14 +2434,12 @@ class XiaohongshuAdapter:
         meta = {
             "complete": True, "total": len(jobs), "pages": 1,
             "country_client": False,   # server-side workplace filter
-            "client_filtered": dropped_tt,
+            "client_filtered": 0,
             "duplicate_codes": dupes,
             "ats": "xiaohongshu",
         }
         print(f"[{progress_label}] xiaohongshu: {len(rows)} rows "
-              f"(server-side workplaces={workplaces}, total={len(jobs)})"
-              + (f" ({dropped_tt} non-{time_type} dropped — the API "
-                 f"serves no employment type)" if time_type else ""),
+              f"(server-side workplaces={workplaces}, total={len(jobs)})",
               file=sys.stderr, flush=True)
         return rows, meta
 
@@ -2433,6 +2448,14 @@ class XiaohongshuAdapter:
                        time_type: Optional[str] = None
                        ) -> Optional[dict]:
         rid = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        # round-2 F4: the same refusal as list_board — never stamp US
+        # under a foreign filter (defense in depth)
+        if country and not workday.country_str_matches(
+                "United States", country):
+            raise RuntimeError(
+                "xiaohongshu: only the United States workplace filter is "
+                "mapped; refusing to serve a US payload under "
+                f"{country!r}")
         for job in self._fetch_pages([self._US_WORKPLACE]
                                      if country else []):
             if str(job.get("positionId")) != rid:

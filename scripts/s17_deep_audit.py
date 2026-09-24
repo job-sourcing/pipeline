@@ -340,13 +340,25 @@ for label in ["anthropic", "baidu", "byd", "neteasegames", "shein",
 
 # ── D10: timeType columns ──────────────────────────────────────────────
 print("D10 TIMETYPE COLUMNS")
+# round-2 review: the S17 boards joined the dimension — minimax/shengshu
+# (feishu recruit_type dialect) + xiaohongshu (all-blank by design)
 for label, want_tt in [("shein", "Full time"),
                        ("weride", "Full time"),
                        ("tplink", "Full time"),
-                       ("pony", "Full time")]:
+                       ("pony", "Full time"),
+                       ("minimax", "Full time"),
+                       ("shengshu", "Full time"),
+                       ("xiaohongshu", None)]:
     rows = load_csv(label)
     if not rows:
         pass_fail(False, f"D10 {label} timeType", "no rows")
+        continue
+    if want_tt is None:
+        # xiaohongshu: the API serves no employment type — 100% blanks
+        blank = sum(1 for r in rows
+                    if not (r.get("timeType") or "").strip())
+        pass_fail(blank == len(rows), f"D10 {label} timeType",
+                  f"{blank}/{len(rows)} honest blanks (no field in API)")
         continue
     ft = sum(1 for r in rows if r.get("timeType") == want_tt)
     blank = sum(1 for r in rows
