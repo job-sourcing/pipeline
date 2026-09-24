@@ -334,6 +334,9 @@ ten proofs per company.
 | `shengshu_us_fulltime` | `ats:feishuhire:shengshu` | 1 | 0 (0.0%) | S17; Shengshu (Vidu video-gen) — 1 SF KA-sales role of a 106-row board; no LI surface |
 | `horizon_us_fulltime` | `ats:lever:horizon` | 1 | 1 (100.0%) | S17; Horizon Robotics Cupertino Research Scientist (hybrid) — the directory's `horizon` lever slug |
 | `xiaohongshu_us_fulltime` | `custom:xiaohongshu` | 20 | 0 (0.0%) | S17; Xiaohongshu/RedNote — server-side workplace filter (code 840 = 美国), one-call board (duty+qualification in list rows), exact publishTime; honest 0% (bilingual '中文 / English' titles don't verbatim-match LI cards — P3 normalization candidate, the tripcom MJ-strip class) |
+| `hoyoverse_us_fulltime` | `ats:ashby:hoyoverse` | 6 | 6 (100.0%) | S18; HoYoverse (miHoYo) Santa Monica — Global BD/PR (Remote), Sr Engine Programmer (Hybrid), Sr Audio Designer, User Research ×2. The census traps: smartrecruiters board STALE (7 US rows all 2023-02), greenhouse board EMPTY — the live board is ashby (absent from the directory snapshot). 5 LI cards probed exact 'HoYoverse' |
+| `plusai_us_fulltime` | `ats:lever:plus-2` | 41 | 35 (85.4%) | S18; PlusAI autonomous trucking — ALL-US board (Santa Clara 34 / Fremont 4 / Dallas 2 / San Antonio 1); found via plus.ai custom-site schema.org JobPosting JSON-LD leaking the lever underlay; LI card string 'PlusAI' |
+| `unitedimaging_us_fulltime` | `ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2` | 41 | 0 (0.0%) | S18; United Imaging NA (Houston HQ + Seattle R&D) — FIRST paylocity board (class #9): server-rendered window.pageData board, structured JobLocation.Country, NO employment-type field (time filter refused); mostly Fully Remote sales/service/marketing; no LI surface (honest 0%) |
 
 
 (matched = LinkedIn corroboration; H-1B wage-band coverage is

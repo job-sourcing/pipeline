@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://bbs.csdn.net",
+    "name": "Windows下OpenClaw AI Agent框架原生部署实战指南",
+    "snippet": "2026年7月9日 — ... 硅基流动 （ SiliconFlow ）等多后端，其中 硅基流动 被重点推荐，因其提供国产化合规接口、毫秒级响应延迟、按字符计费（非Token）的精细化计价模型，以及 ...",
+    "host_name": "bbs.csdn.net",
+    "rank": 0,
+    "date": "2026年7月9日",
+    "favicon": ""
+  },
+  {
+    "url": "https://wenku.csdn.net",
+    "name": "ollama http://127.0.0.1:11434/api/gen",
+    "snippet": "2026年6月9日 — 为了调用位于 127.0.0.1:11434 上的Ollama API，可以采用多种方法发送HTTP POST请求。一种常见的方式是利用命令行工具 curl 来执行这一操作[^1]。",
+    "host_name": "wenku.csdn.net",
+    "rank": 1,
+    "date": "2026年6月9日",
+    "favicon": ""
+  },
+  {
+    "url": "https://chinaidb.com",
+    "name": "DeepSeek - China AI Index",
+    "snippet": "DeepSeek is an AI research lab founded by quantitative trading firm High-Flyer Capital Management. It went viral globally in January 2025 after releasing ...",
+    "host_name": "chinaidb.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blog.csdn.net",
+    "name": "我用AI 做了一个智能求职助手，自动爬岗位、生成简历",
+    "snippet": "2026年6月28日 — 1. 支持13+ API 提供商. 不只是Claude，还支持：. OpenAI (GPT-4o); DeepSeek; 小米MiMo; 硅基流动 ( SiliconFlow ) ... Get Jobs 作为一款开源AI求职助手 ...",
+    "host_name": "blog.csdn.net",
+    "rank": 3,
+    "date": "2026年6月28日",
+    "favicon": ""
+  }
+]

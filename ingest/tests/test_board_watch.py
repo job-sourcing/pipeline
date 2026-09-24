@@ -1978,15 +1978,20 @@ class TestShippedWatchConfig:
         assert "ats:greenhouse:shein" in boards
 
     def test_roster_is_exactly_twentythree(self):
-        """S15 (review #7f) → S16: the EXACT roster count — a watch
-        added or lost by a hand-edit fails HERE, not silently on the
-        runner. S16 census wires: gea (workday) + xpeng/faradayfuture/
-        didi/tcl/gotion (greenhouse) + moonshot (ashby) + weride
-        (lever) + tplink/pony (workable)."""
+        """S15 (review #7f) → S16 → S17 → S18: the EXACT roster count —
+        a watch added or lost by a hand-edit fails HERE, not silently
+        on the runner. S16 census wires: gea (workday) + xpeng/
+        faradayfuture/didi/tcl/gotion (greenhouse) + moonshot (ashby)
+        + weride (lever) + tplink/pony (workable). S17: minimax/
+        shengshu (feishuhire) + horizon (lever) + xiaohongshu (custom).
+        S18: hoyoverse (ashby) + plusai (lever plus-2) + unitedimaging
+        (paylocity — the class #9 board; NO time_type key: the adapter
+        refuses a time filter, board boards without an employment-type
+        field must not claim one)."""
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 27
+        assert len(cfg["watches"]) == 30
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",
@@ -1994,8 +1999,17 @@ class TestShippedWatchConfig:
                   "ats:greenhouse:didi", "ats:greenhouse:tcl",
                   "ats:greenhouse:gotion", "ats:ashby:moonshot",
                   "ats:lever:weride", "ats:workable:tp-link-usa-corp",
-                  "ats:workable:pony-dot-ai"):
+                  "ats:workable:pony-dot-ai",
+                  "ats:feishuhire:vrfi1sk8a0", "ats:feishuhire:shengshu",
+                  "ats:lever:horizon", "custom:xiaohongshu",
+                  "ats:ashby:hoyoverse", "ats:lever:plus-2",
+                  "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2"):
             assert b in boards, b
+        # the paylocity/xhs boards carry NO time_type key (the refusal
+        # class — claiming Full time would be the S13 lie rule)
+        by_board = {w["board"]: w for w in cfg["watches"]}
+        assert "time_type" not in by_board[
+            "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2"]
 
     def test_she_in_time_type_gating(self):
         """time_type on a site-spec watch row is a CLAIM that the board

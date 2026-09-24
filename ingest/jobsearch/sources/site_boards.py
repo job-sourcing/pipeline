@@ -53,14 +53,15 @@ import time
 import http.cookiejar
 import urllib.request
 from datetime import date, datetime, timezone
+from html import unescape
 from typing import Optional
 
 from ..config import Config
 from . import workday
-from .base import fetch_json
+from .base import fetch_json, fetch_text
 
 _SPEC_RE = re.compile(
-    r"^ats:(greenhouse|ashby|lever|workable|feishuhire):"
+    r"^ats:(greenhouse|ashby|lever|workable|feishuhire|paylocity):"
     r"([A-Za-z0-9_.\-]+)$")
 # S14 registry-driven custom grammar: 'custom:{kind}' where kind ∈ _ADAPTERS
 # (own-platform boards — the platform IS the company; adding one = a class
@@ -92,7 +93,8 @@ def parse_site(spec: str) -> tuple[str, str]:
         return m.group(1), ""
     raise ValueError(
         f"not a site spec: {spec!r} (expected 'ats:kind:org' with kind in "
-        f"greenhouse|ashby|lever|workable, or 'custom:kind' with kind in "
+        f"greenhouse|ashby|lever|workable|feishuhire|paylocity, or "
+        f"'custom:kind' with kind in "
         f"{sorted(k for k in _ADAPTERS)})")
 
 
@@ -2486,8 +2488,282 @@ class XiaohongshuAdapter:
         return None
 
 
+# ── paylocity (recruiting.paylocity.com public boards) ────────────────────
+
+class PaylocityAdapter:
+    """ats:paylocity:{CompanyId} — the public board hosted at
+    recruiting.paylocity.com/recruiting/jobs/All/{CompanyId}.
+
+    S18 discovery (United Imaging North America, live-pinned
+    2026-09-25, 41 jobs): the whole board is SERVER-RENDERED into the
+    HTML as a single JS literal:
+
+        window.pageData = {"ModuleTitle": ..., "ModuleId": ...,
+                           "Jobs": [{"JobId": 4463447,
+                                     "JobTitle": "...",
+                                     "LocationName": "West Coast region",
+                                     "ShouldDisplayLocation": true,
+                                     "PublishedDate": "2026-09-22T15:54:27-05:00",
+                                     "Description": "<110-char teaser>",
+                                     "IsRemote": true,
+                                     "IndeedRemoteType": "2",
+                                     "HiringDepartment": null,
+                                     "JobLocation": {"Country": "USA", ...}}],
+                           "Departments": [...], "Locations": [...]}
+
+    Field map (the workday dialect):
+      reqId            JobId
+      url              https://recruiting.paylocity.com/Recruiting/Jobs/Details/{JobId}
+      locationsText    LocationName (fallback JobLocation.Name)
+      country          JobLocation.Country — STRUCTURED, authoritative
+                       ('USA' → 'United States'); the board is
+                       entity-scoped (the US subsidiary's own module),
+                       so every row carries the entity's country
+      timeType         NONE — paylocity list rows serve no employment
+                       type → a time_type filter is REFUSED (the XHS
+                       class: refuse the unanswerable, never drop-all)
+      postedOn         label from PublishedDate (EXACT, ISO with TZ)
+      remoteType       IsRemote/IndeedRemoteType
+
+    The list row's Description is a 110-char TEASER — full JD (+
+    Requirements) is per-id detail HTML:
+    /Recruiting/Jobs/Details/{JobId} with <div class="job-listing-
+    header">Description</div>/<div>... and a Requirements sibling.
+
+    One-call complete board: the page's "N of N Job Opportunities"
+    count is computed client-side FROM this array (React + Immutable
+    filter over the embedded list) — no pagination endpoint observed.
+    B1 guards: pageData unparseable / Jobs not a list = refuse; a
+    missing Jobs key on a page that says 'Job Opportunities' = shape
+    anomaly, refuse (never an empty board).
+    """
+
+    KIND = "paylocity"
+    _BASE = "https://recruiting.paylocity.com"
+    _TT = {}  # no employment-type field — honest blanks
+
+    def __init__(self, org: str, cfg: Config):
+        # org = the CompanyId GUID (display-name suffix optional in URL)
+        self.org = org
+        self.cfg = cfg
+
+    # -- board fetch ------------------------------------------------------
+
+    def _board_html(self) -> str:
+        key = f"ats:paylocity:{self.org}:html"
+        now = time.monotonic()
+        hit = _CACHE.get(key)
+        if hit and now - hit[0] < _CACHE_TTL:
+            return hit[1]
+        url = f"{self._BASE}/recruiting/jobs/All/{self.org}"
+        html = fetch_text(url, cfg=self.cfg)
+        if not html or "window.pageData" not in html:
+            raise RuntimeError(
+                f"{url}: no window.pageData — not a paylocity jobs board "
+                f"(company id wrong or board dead); refusing")
+        _CACHE[key] = (time.monotonic(), html)
+        return html
+
+    @staticmethod
+    def _extract_page_data(html: str) -> dict:
+        """window.pageData = {…}; → dict. Brace-matched, JSON-first,
+        tolerant fallback for single-quoted / Python-bool literals."""
+        marker = "window.pageData = "
+        i = html.find(marker)
+        if i < 0:
+            raise RuntimeError("pageData marker missing")
+        seg = html[i + len(marker):]
+        depth = 0
+        end = -1
+        in_str = False
+        esc = False
+        quote = ""
+        for idx, ch in enumerate(seg):
+            if in_str:
+                if esc:
+                    esc = False
+                elif ch == "\\":
+                    esc = True
+                elif ch == quote:
+                    in_str = False
+                continue
+            if ch in "\"'":
+                in_str = True
+                quote = ch
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    end = idx + 1
+                    break
+        if end < 0:
+            raise RuntimeError("pageData braces unmatched")
+        raw = seg[:end]
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError:
+            fixed = (raw.replace("'", '"').replace(": True", ": true")
+                        .replace(": False", ": false")
+                        .replace(": None", ": null"))
+            return json.loads(fixed)
+
+    def _jobs(self) -> list[dict]:
+        html = self._board_html()
+        d = self._extract_page_data(html)
+        jobs = d.get("Jobs")
+        if not isinstance(jobs, list):
+            if "Job Opportunities" in html:
+                raise RuntimeError(
+                    "pageData.Jobs missing/not-a-list on a live board page "
+                    "— shape anomaly, refusing (never an empty board)")
+            jobs = []          # board page without a jobs region: empty
+        self._module_title = str(d.get("ModuleTitle") or self.org)
+        return jobs
+
+    # -- classification ---------------------------------------------------
+
+    def _country_of(self, job: dict) -> str:
+        jl = job.get("JobLocation") or {}
+        if isinstance(jl, str):       # pragma: no cover — defensive
+            jl = {}
+        c = str(jl.get("Country") or "").strip()
+        if c.upper() in ("USA", "US", "UNITED STATES"):
+            return "United States"
+        return c
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        if time_type:
+            raise RuntimeError(
+                "paylocity: the board serves no employment type — a "
+                f"time_type filter ({time_type!r}) is unanswerable; use "
+                "--time-type '' (the s18 dump-chain driver does)")
+        jobs = self._jobs()
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        for job in jobs:
+            rid = str(job.get("JobId") or "")
+            if not rid or rid in rows:
+                continue
+            c = self._country_of(job)
+            if country and not workday.country_str_matches(c, country):
+                dropped_country += 1
+                continue
+            label, iso = _posted_label(str(job.get("PublishedDate") or ""))
+            loc = str(job.get("LocationName") or "").strip()
+            if not loc:
+                jl = job.get("JobLocation") or {}
+                if isinstance(jl, dict):
+                    loc = str(jl.get("Name") or "").strip()
+            remote = bool(job.get("IsRemote"))
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(job.get("JobTitle") or ""),
+                "company": self._module_title,
+                "url": f"{self._BASE}/Recruiting/Jobs/Details/{rid}",
+                "externalPath": f"/Recruiting/Jobs/Details/{rid}",
+                "locationsText": loc,
+                "postedOn": label,
+                "timeType": "",   # no field — honest blank
+                "bulletFields": [rid],
+                "ats": "paylocity",
+                "firstPublishedIso": iso,
+                "departments": _dedup_keep_order(
+                    [str(job.get("HiringDepartment") or "")]),
+                "countries": [c] if c else [],
+                "remoteType": "Remote" if remote else "",
+                "description": str(job.get("Description") or "").strip(),
+            }
+        meta = {
+            "complete": True, "total": len(jobs), "pages": 1,
+            # country classification happens IN list_board from the
+            # STRUCTURED JobLocation.Country (ashby-class: the listing
+            # IS the {country} population — no detail-based
+            # countryfilter phase needed; board_dump's country_client
+            # flag means 'unfiltered global board', which this is NOT)
+            "country_client": False,
+            "client_filtered": dropped_country,
+            "ats": "paylocity",
+        }
+        print(f"[{progress_label}] paylocity:{self.org}: {len(rows)} rows"
+              + (f" ({dropped_country} non-{country} dropped client-side)"
+                 if country else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    # -- detail -----------------------------------------------------------
+
+    @staticmethod
+    def _section_html(html: str, header: str) -> str:
+        """Inner HTML of the <div> following the
+        <div class="job-listing-header">{header}</div> marker."""
+        m = re.search(
+            r'job-listing-header">\s*' + re.escape(header)
+            + r'\s*</div>\s*<div([^>]*)>(.*?)</div>',
+            html, re.S)
+        if not m:
+            return ""
+        return m.group(2).strip()
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        if time_type:
+            raise RuntimeError(
+                "paylocity: no employment type on the board — a "
+                f"time_type filter ({time_type!r}) is unanswerable")
+        rid = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        job = None
+        for j in self._jobs():
+            if str(j.get("JobId")) == rid:
+                job = j
+                break
+        if job is None:
+            return None
+        url = f"{self._BASE}/Recruiting/Jobs/Details/{rid}"
+        html = fetch_text(url, cfg=self.cfg)
+        desc_html = self._section_html(html, "Description")
+        req_html = self._section_html(html, "Requirements")
+        c = self._country_of(job)
+        label, iso = _posted_label(str(job.get("PublishedDate") or ""))
+        title = str(job.get("JobTitle") or "")
+        tmatch = re.search(
+            r'job-preview-title[^>]*>\s*<span>(.*?)</span>', html, re.S)
+        if tmatch:
+            title = unescape(tmatch.group(1)).strip() or title
+        loc_line = ""
+        lmatch = re.search(
+            r'preview-location">\s*(.*?)</div>', html, re.S)
+        if lmatch:
+            loc_line = unescape(
+                re.sub(r"<[^>]+>", " ", lmatch.group(1)))
+            loc_line = re.sub(r"\s+", " ", loc_line).strip(" •")
+        return {
+            "jobPostingInfo": {
+                "title": title,
+                "location": loc_line or (job.get("LocationName") or ""),
+                "additionalLocations": [],
+                "jobDescription": (desc_html + "\n\n" + req_html).strip(),
+                "timeType": "",
+                "startDate": iso or "",
+                "externalUrl": url,
+                "jobReqId": rid,
+                "postedOn": label,
+                "country": ({"descriptor": c} if c and country else None),
+            },
+            "hiringOrganization": {"name": self._module_title},
+            "similarJobs": [],
+            "firstPublishedIso": iso,
+        }
+
+
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "lever": LeverAdapter, "workable": WorkableAdapter,
              "feishuhire": FeishuHireAdapter,
              "bytedance": ByteDanceAdapter, "alibaba": AlibabaAdapter,
-             "tripcom": TripComAdapter, "xiaohongshu": XiaohongshuAdapter}
+             "tripcom": TripComAdapter, "xiaohongshu": XiaohongshuAdapter,
+             "paylocity": PaylocityAdapter}

@@ -1,0 +1,10 @@
+rows: 6 (unique reqIds: 6)
+details merged: 6
+descriptions present: 6
+locations enumerated (not 'N Locations'): 6
+startDate present: 0
+signals: matched=6 no_match=0 blocked=0 not_checked=0
+location entries total (sum nLocations): 6
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=6 (from facet_tags.jsonl)
+facet tag coverage: 6/6 rows (0 untagged)

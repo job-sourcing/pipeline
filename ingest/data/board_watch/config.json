@@ -434,6 +434,53 @@
     "United States",
     "Santa Clara, California, United States"
    ]
+  },
+  {
+   "label": "hoyoverse_us_fulltime",
+   "board": "ats:ashby:hoyoverse",
+   "company": "HoYoverse",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "HoYoverse"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "Remote, United States"
+   ]
+  },
+  {
+   "label": "plusai_us_fulltime",
+   "board": "ats:lever:plus-2",
+   "company": "PlusAI",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "PlusAI"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States",
+    "Fremont, California, United States",
+    "Dallas, Texas, United States"
+   ]
+  },
+  {
+   "label": "unitedimaging_us_fulltime",
+   "board": "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2",
+   "company": "United Imaging",
+   "country": "United States",
+   "li_variants": [
+    "United Imaging",
+    "United Imaging Healthcare"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States",
+    "Houston, Texas, United States",
+    "Seattle, Washington, United States"
+   ]
   }
  ]
 }

@@ -1,0 +1,2314 @@
+{
+ "board": "ats:lever:plus-2",
+ "company": "PlusAI",
+ "country": "United States",
+ "time_type": "Full time",
+ "dumpDate": "2026-09-24",
+ "count": 41,
+ "details_merged": 41,
+ "signals_matched": 35,
+ "similar_edges": 0,
+ "facet_tagged_rows": 41,
+ "rows": [
+  {
+   "reqId": "3b95e222-3cbb-498a-b92e-12b7a72e81ff",
+   "title": "Class A Truck Driver",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/3b95e222-3cbb-498a-b92e-12b7a72e81ff",
+   "externalPath": "/3b95e222-3cbb-498a-b92e-12b7a72e81ff",
+   "locationsText": "Dallas, Texas",
+   "postedOn": "Posted 430 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "3b95e222-3cbb-498a-b92e-12b7a72e81ff"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-07-21",
+   "departments": [
+    "Vehicle Operations"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Class A Truck Driver",
+    "location": "Dallas, Texas",
+    "additionalLocations": [],
+    "jobDescription": "<div><b>About PlusAI</b></div><div>PlusAI is a Physical AI company pioneering AI-based virtual driver software for factory-built autonomous trucks. Headquartered in Silicon Valley with operations in the United States and Europe, Plus was named by Fast Company as one of the World’s Most Innovative Companies. Partners including TRATON GROUP’s Scania, MAN, and International brands, Hyundai Motor Company, Iveco Group, Bosch, and DSV are working with Plus to accelerate the deployment of next-generation autonomous trucks. If you’re ready to make a huge impact and drive the future of autonomy, Plus is looking for talented individuals to join its fast-growing teams.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/3b95e222-3cbb-498a-b92e-12b7a72e81ff",
+    "jobReqId": "3b95e222-3cbb-498a-b92e-12b7a72e81ff",
+    "postedOn": "Posted 430 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Vehicle Operations",
+   "signals": {
+    "linkedin_job_id": "4352597380",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4352597380",
+    "title": "Class A Truck Driver",
+    "company": "PlusAI",
+    "location": "Dallas, TX",
+    "linkedin_posted_date": "2026-05-22",
+    "num_applicants": 49,
+    "applicants_label": "49 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:16",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "cd1e5dca-104e-4429-af74-ee6da17596cb",
+   "title": "Data Engineer (SE / Sr SE)",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/cd1e5dca-104e-4429-af74-ee6da17596cb",
+   "externalPath": "/cd1e5dca-104e-4429-af74-ee6da17596cb",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 45 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "cd1e5dca-104e-4429-af74-ee6da17596cb"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-10",
+   "departments": [
+    "Data Infrastructure"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Data Engineer (SE / Sr SE)",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p>Knowing how well our virtual driver drives &mdash; and why it fell short &mdash; is what lets us ship with confidence. In this role, you will own that loop end to end: the metrics that quantify driving performance, the pipelines that compute them at fleet scale, the analysis that turns them into judgments about autonomy behavior &mdash; including where on the map that behavior changes &mdash; the data and tooling that gate software releases, and the agentic workflows that take a detected issue from triage to a proposed fix. You will work primarily in Python across large-scale data processing, geospatial analytics, evaluation frameworks, and LLM-powered automation. We welcome engineers from data engineering, analytics, geospatial, evaluation, or robotics backgrounds; prior autonomous-vehicle experience is helpful but not required.</p>\n<p>We are open to candidates at either the Engineer or Software Engineer level. Level will be determined by experience, technical depth, scope of ownership, and demonstrated impact. You do not need experience with every technology in our stack; we value strong fundamentals, ownership, and the ability to learn.</p>\n<h2>Responsibilities:</h2>\n<ul>\n<li>\n<p>Define and compute driving performance metrics &mdash; covering safety, comfort, progress, interventions, and compliance &mdash; and build the scalable pipelines that evaluate them consistently across fleet and simulation data</p>\n</li>\n<li>\n<p>Analyze road-test and simulation data in depth to identify trends, regressions, and anomalies in autonomy behavior, and turn them into clear findings that engineering teams act on</p>\n</li>\n<li>\n<p>Build geospatial analytics over fleet driving data: map-matched metrics, route and corridor performance, location-based clustering of events and issues, and geographic coverage analysis that shows where the virtual driver performs well and where it struggles</p>\n</li>\n<li>\n<p>Build the data foundations and tooling for release management, including release-over-release comparisons, readiness and gating criteria, and traceable evidence supporting release decisions</p>\n</li>\n<li>\n<p>Build AI agentic workflows that triage detected issues at scale &mdash; clustering and deduplicating failures, attributing root cause, routing to the right owners, and proposing fixes with supporting evidence for engineering review</p>\n</li>\n<li>\n<p>Ensure that your work is performed in accordance with the company's Quality Management System (QMS) requirements and contribute to continuous improvement efforts</p>\n</li>\n</ul>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/cd1e5dca-104e-4429-af74-ee6da17596cb",
+    "jobReqId": "cd1e5dca-104e-4429-af74-ee6da17596cb",
+    "postedOn": "Posted 45 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Data Infrastructure",
+   "signals": {
+    "linkedin_job_id": "4449882322",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4449882322",
+    "title": "Data Engineer (SE / Sr SE)",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-23",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 day ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:48",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "07df4477-576f-467a-8877-8cc80f6cd584",
+   "title": "Director, Corporate & Securities Counsel",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/07df4477-576f-467a-8877-8cc80f6cd584",
+   "externalPath": "/07df4477-576f-467a-8877-8cc80f6cd584",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 254 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "07df4477-576f-467a-8877-8cc80f6cd584"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-01-13",
+   "departments": [
+    "Legal"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Director, Corporate & Securities Counsel",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>PlusAI is a Physical AI company pioneering AI-based virtual driver software for factory-built autonomous trucks. Headquartered in Silicon Valley with operations in the United States and Europe, Plus was named by Fast Company as one of the World’s Most Innovative Companies. Partners including TRATON GROUP’s Scania, MAN, and International brands, Hyundai Motor Company, Iveco Group, Bosch, and DSV are working with Plus to accelerate the deployment of next-generation autonomous trucks. If you’re ready to make a huge impact and drive the future of autonomy, Plus is looking for talented individuals to join its fast-growing teams.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/07df4477-576f-467a-8877-8cc80f6cd584",
+    "jobReqId": "07df4477-576f-467a-8877-8cc80f6cd584",
+    "postedOn": "Posted 254 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Legal",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "5aa0b004-2f43-4550-acd3-2387a77fec07",
+   "title": "Director, SEC Reporting and Technical Accounting",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/5aa0b004-2f43-4550-acd3-2387a77fec07",
+   "externalPath": "/5aa0b004-2f43-4550-acd3-2387a77fec07",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 255 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "5aa0b004-2f43-4550-acd3-2387a77fec07"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-01-12",
+   "departments": [
+    "Finance and Accounting"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Director, SEC Reporting and Technical Accounting",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 12pt;\">We are seeking an accomplished Director, SEC Reporting &amp; Technical Accounting&nbsp;to build and lead our external reporting function. This critical role requires a strategic leader with deep expertise in US GAAP, SEC regulations, and experience specifically with reporting tools like&nbsp;DFIN&nbsp;(Donnelley Financial Solutions). The successful candidate will own the entire external reporting process, develop robust internal controls and processes, and collaborate extensively across legal, finance, and executive teams.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/5aa0b004-2f43-4550-acd3-2387a77fec07",
+    "jobReqId": "5aa0b004-2f43-4550-acd3-2387a77fec07",
+    "postedOn": "Posted 255 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Finance and Accounting",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "f575435f-3b4d-4740-a1ba-6c313afb70fb",
+   "title": "Engineering Manager - Simulation and Verification",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/f575435f-3b4d-4740-a1ba-6c313afb70fb",
+   "externalPath": "/f575435f-3b4d-4740-a1ba-6c313afb70fb",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 84 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "f575435f-3b4d-4740-a1ba-6c313afb70fb"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-02",
+   "departments": [
+    "Simulation & Verification"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Engineering Manager - Simulation and Verification",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p><strong>Role Overview</strong></p>\n<p>As an Engineering Manager for the Simulation &amp; Verification team at Plus.ai, you will lead the development and scaling of our autonomous driving simulation platform. You will be responsible for orchestrating the infrastructure, tools, and workflows that allow our autonomous trucks to be tested safely and efficiently in virtual environments. This role sits at the intersection of infrastructure engineering, robotics simulation, and data analytics, directly enabling our AV roadmap.</p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/f575435f-3b4d-4740-a1ba-6c313afb70fb",
+    "jobReqId": "f575435f-3b4d-4740-a1ba-6c313afb70fb",
+    "postedOn": "Posted 84 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Simulation & Verification",
+   "signals": {
+    "linkedin_job_id": "4434588186",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4434588186",
+    "title": "Engineering Manager - Simulation and Verification",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-23",
+    "num_applicants": 36,
+    "applicants_label": "36 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 day ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:56",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "2af29134-9fe8-45e5-80e4-a3fee19f2d7c",
+   "title": "Field Service Engineer",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/2af29134-9fe8-45e5-80e4-a3fee19f2d7c",
+   "externalPath": "/2af29134-9fe8-45e5-80e4-a3fee19f2d7c",
+   "locationsText": "Dallas, Texas",
+   "postedOn": "Posted 259 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "2af29134-9fe8-45e5-80e4-a3fee19f2d7c"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-01-08",
+   "departments": [
+    "Field Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Field Service Engineer",
+    "location": "Dallas, Texas",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 11pt;\">As a Field Service Engineer, you will leverage your experience and knowledge to help continue building the Field Engineering team&rsquo;s processes and procedures that integrate and maintain Plus&rsquo;s autonomous vehicle technology on internal and customer vehicles. The role supports autonomous vehicle testing and deployment with a comprehensive focus on remote monitoring, real-time intervention, and data logging. You will provide hands-on vehicle readiness for complex demo drives and fleet maintenance activities. Specifically, you will support testing by riding in the vehicle to actively monitor system performance and sensor health, execute live testing and mileage accumulation, rapidly troubleshoot issues that arise in the field, and document all findings through daily reports and actionable engineering tickets for cross-functional teams.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/2af29134-9fe8-45e5-80e4-a3fee19f2d7c",
+    "jobReqId": "2af29134-9fe8-45e5-80e4-a3fee19f2d7c",
+    "postedOn": "Posted 259 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Field Engineering",
+   "signals": {
+    "linkedin_job_id": "4353170231",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4353170231",
+    "title": "Field Service Engineer",
+    "company": "PlusAI",
+    "location": "Dallas, TX",
+    "linkedin_posted_date": "2026-05-22",
+    "num_applicants": 178,
+    "applicants_label": "178 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:15",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "6844904b-ccbf-41ba-924c-6a5d8ba572d5",
+   "title": "Functional Safety Manager",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/6844904b-ccbf-41ba-924c-6a5d8ba572d5",
+   "externalPath": "/6844904b-ccbf-41ba-924c-6a5d8ba572d5",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 1011 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "6844904b-ccbf-41ba-924c-6a5d8ba572d5"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2023-12-18",
+   "departments": [
+    "Functional Safety"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Functional Safety Manager",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>Plus is looking for a functional safety manager specializing in vehicle embedded control software systems. In this role, you will directly influence how our autonomous system achieves higher levels of autonomy with robustness and industry leading safety. You will be responsible for collecting and analyzing customer requirements and defining the functional safety goals for the autonomous system. You will conduct various safety reviews, evaluating the design robustness across the defined operating scenarios and conditions that our trucks can encounter. Additionally, this role interacts with various engineering teams to maintain interfaces and refine requirements for software systems.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/6844904b-ccbf-41ba-924c-6a5d8ba572d5",
+    "jobReqId": "6844904b-ccbf-41ba-924c-6a5d8ba572d5",
+    "postedOn": "Posted 1011 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Functional Safety",
+   "signals": {
+    "linkedin_job_id": "3791467616",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/3791467616",
+    "title": "Functional Safety Manager",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-05-19",
+    "num_applicants": 131,
+    "applicants_label": "131 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:52",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "655f34e1-8acf-4cef-8589-692ded655d54",
+   "title": "Manager, Digital Content & Storytelling",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/655f34e1-8acf-4cef-8589-692ded655d54",
+   "externalPath": "/655f34e1-8acf-4cef-8589-692ded655d54",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 65 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "655f34e1-8acf-4cef-8589-692ded655d54"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-21",
+   "departments": [
+    "Investor Relations"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Manager, Digital Content & Storytelling",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p style=\"margin-top: 12pt; margin-bottom: 12pt;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">Build PlusAI's presence across social and digital, and help make it a company people recognize and follow. This is a builder role. You will define how PlusAI shows up across the platforms where our audiences spend their time, then build the content and community to back it up.</span></p>\n<p style=\"margin-top: 12pt; margin-bottom: 12pt;\"><span style=\"font-size: 11pt; font-family: Arial, sans-serif;\">You will work across Marketing, Communications, Investor Relations, and executive leadership to shape how a broad audience, investors included, understands PlusAI's technology, progress, and opportunity. A lot of the job is taking dense technical, business, and financial material and making it clear and worth someone's time. Comfort with investment concepts is a real asset here, though this is not an investor-only role.</span></p>\n<p><br><br></p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/655f34e1-8acf-4cef-8589-692ded655d54",
+    "jobReqId": "655f34e1-8acf-4cef-8589-692ded655d54",
+    "postedOn": "Posted 65 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Investor Relations",
+   "signals": {
+    "linkedin_job_id": "4444252368",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4444252368",
+    "title": "Manager, Digital Content & Storytelling",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-03",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:06",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "647198d9-cb9d-4071-b62f-07b4e29456a5",
+   "title": "Manager, Retail Investor Relations & Engagement",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/647198d9-cb9d-4071-b62f-07b4e29456a5",
+   "externalPath": "/647198d9-cb9d-4071-b62f-07b4e29456a5",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 65 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "647198d9-cb9d-4071-b62f-07b4e29456a5"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-21",
+   "departments": [
+    "Investor Relations"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Manager, Retail Investor Relations & Engagement",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>&nbsp;</div>\n<div>Your Mission<br>Own how PlusAI connects with retail investors.<br>Physical AI and trucks that drive themselves are some of the best stories in AI right now, and you get to tell that<br>story to the people investing their own money. Your job is to earn their attention and keep it. Social media,<br>podcasts, blogs, video, live events, whatever works. Grab eyeballs, build a following, and turn that following into<br>an informed community that understands the business.<br>There is no playbook here and nothing to maintain. You are starting this function from scratch and deciding how it<br>runs. You will report directly to the CFO</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/647198d9-cb9d-4071-b62f-07b4e29456a5",
+    "jobReqId": "647198d9-cb9d-4071-b62f-07b4e29456a5",
+    "postedOn": "Posted 65 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Investor Relations",
+   "signals": {
+    "linkedin_job_id": "4444253288",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4444253288",
+    "title": "Manager, Retail Investor Relations & Engagement",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-04",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:03",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "0c342721-601c-4466-b503-5b18438064c2",
+   "title": "Perception Validation Engineer",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/0c342721-601c-4466-b503-5b18438064c2",
+   "externalPath": "/0c342721-601c-4466-b503-5b18438064c2",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 52 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "0c342721-601c-4466-b503-5b18438064c2"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-03",
+   "departments": [
+    "Perception"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Perception Validation Engineer",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<div>\n<div>\n<p>As a <strong>Perception Validation Engineer</strong>, you will be responsible for defining, developing, and executing the validation strategies that ensure our autonomous vehicles (AVs) perceive the world with absolute accuracy and reliability.</p>\n<p>You will sit at the intersection of cutting-edge AI and rigorous systems engineering. Your mission is to design automated pipelines, establish performance metrics, and build the testing frameworks necessary to ruthlessly evaluate our machine learning models (BEV based) against real-world edge cases. If you love breaking complex AI systems to make them unbreakably safe, this role is for you.</p>\n</div>\n</div>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/0c342721-601c-4466-b503-5b18438064c2",
+    "jobReqId": "0c342721-601c-4466-b503-5b18438064c2",
+    "postedOn": "Posted 52 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Perception",
+   "signals": {
+    "linkedin_job_id": "4446266763",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4446266763",
+    "title": "Perception Validation Engineer",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-16",
+    "num_applicants": 108,
+    "applicants_label": "108 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:40",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "4d7c4c9a-8c5e-4ced-a2b9-9e8db9a19ef3",
+   "title": "Principal Engineer / Director, Motion Planning",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/4d7c4c9a-8c5e-4ced-a2b9-9e8db9a19ef3",
+   "externalPath": "/4d7c4c9a-8c5e-4ced-a2b9-9e8db9a19ef3",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 716 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "4d7c4c9a-8c5e-4ced-a2b9-9e8db9a19ef3"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2024-10-08",
+   "departments": [
+    "Motion Planning"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Principal Engineer / Director, Motion Planning",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>PlusAI is a Physical AI company pioneering AI-based virtual driver software for factory-built autonomous trucks. Headquartered in Silicon Valley with operations in the United States and Europe, Plus was named by Fast Company as one of the World’s Most Innovative Companies. Partners including TRATON GROUP’s Scania, MAN, and International brands, Hyundai Motor Company, Iveco Group, Bosch, and DSV are working with Plus to accelerate the deployment of next-generation autonomous trucks. If you’re ready to make a huge impact and drive the future of autonomy, Plus is looking for talented individuals to join its fast-growing teams.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/4d7c4c9a-8c5e-4ced-a2b9-9e8db9a19ef3",
+    "jobReqId": "4d7c4c9a-8c5e-4ced-a2b9-9e8db9a19ef3",
+    "postedOn": "Posted 716 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Motion Planning",
+   "signals": {
+    "linkedin_job_id": "4044249329",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4044249329",
+    "title": "Principal Engineer / Director, Motion Planning",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-05-19",
+    "num_applicants": 58,
+    "applicants_label": "58 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:59",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "527722d7-5887-4c96-9363-46eb3ea5cbc5",
+   "title": "Principal Engineer, Mapping and Localization",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/527722d7-5887-4c96-9363-46eb3ea5cbc5",
+   "externalPath": "/527722d7-5887-4c96-9363-46eb3ea5cbc5",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 49 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "527722d7-5887-4c96-9363-46eb3ea5cbc5"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-06",
+   "departments": [
+    "Mapping and Localization"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Principal Engineer, Mapping and Localization",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 11pt;\">As a Principal Engineer on our Mapping and Localization team, you will design and implement high-fidelity fusion algorithms that combine LiDAR, Radar, Camera, IMU, and GNSS data with HD Maps to achieve centimeter-level accuracy. You will tackle the hardest edge cases&mdash;from GPS-denied tunnels to dynamic construction zones&mdash;ensuring our vehicles operate safely in complex L4 ODDs (Operational Design Domains).</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/527722d7-5887-4c96-9363-46eb3ea5cbc5",
+    "jobReqId": "527722d7-5887-4c96-9363-46eb3ea5cbc5",
+    "postedOn": "Posted 49 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Mapping and Localization",
+   "signals": {
+    "linkedin_job_id": "4450428156",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4450428156",
+    "title": "Principal Engineer, Mapping and Localization",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-03",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:19",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "30785092-b822-4d66-a011-2a1ab64100b2",
+   "title": "Program Manager (Bilingual Japanese/English)",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/30785092-b822-4d66-a011-2a1ab64100b2",
+   "externalPath": "/30785092-b822-4d66-a011-2a1ab64100b2",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 13 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "30785092-b822-4d66-a011-2a1ab64100b2"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-09-11",
+   "departments": [
+    "Program Management"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Program Manager (Bilingual Japanese/English)",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong>About the role:&nbsp;</strong></div>\n<div>\n<p>PlusAI is looking for a Program Manager to serve as the day-to-day owner of Japan-based programs &mdash; the connective tissue between our Japanese partners and PlusAI's engineering, product, and operations teams in the Bay Area.</p>\n<p>This role is based in the Bay Area with regular, though not full-time, travel to Japan (approximately 25%). Japanese fluency is required, since you will be operating as a trusted, direct point of contact for partner teams who communicate primarily in Japanese.</p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/30785092-b822-4d66-a011-2a1ab64100b2",
+    "jobReqId": "30785092-b822-4d66-a011-2a1ab64100b2",
+    "postedOn": "Posted 13 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Program Management",
+   "signals": {
+    "linkedin_job_id": "4465263325",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4465263325",
+    "title": "Program Manager (Bilingual Japanese/English)",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-15",
+    "num_applicants": 61,
+    "applicants_label": "61 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:02",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "1e02db1d-f211-4d7c-a941-de675891adf3",
+   "title": "Senior Accounting Manager",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/1e02db1d-f211-4d7c-a941-de675891adf3",
+   "externalPath": "/1e02db1d-f211-4d7c-a941-de675891adf3",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 255 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "1e02db1d-f211-4d7c-a941-de675891adf3"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-01-12",
+   "departments": [
+    "Finance and Accounting"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Accounting Manager",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 12pt;\">We are seeking a dynamic and strategic&nbsp;Senior Accounting</span><strong style=\"font-size: 12pt;\">&nbsp;</strong><span style=\"font-size: 12pt;\">Manager to join our company.&nbsp; This key accounting role will play a critical part in overseeing day-to-day accounting operations and ensuring the integrity and cadence of the of the financial reporting process.&nbsp; This pivotal \"player/coach\" leadership requires deep technical GAAP expertise and a proven track record of building and managing robust business process controls, all while fostering a strong culture of collaboration and excellence within the accounting team.&nbsp; </span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/1e02db1d-f211-4d7c-a941-de675891adf3",
+    "jobReqId": "1e02db1d-f211-4d7c-a941-de675891adf3",
+    "postedOn": "Posted 255 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Finance and Accounting",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "f4fc6b45-6c2d-4d09-aece-fd046eb4b81b",
+   "title": "Senior Machine Learning Engineer, Simulation",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/f4fc6b45-6c2d-4d09-aece-fd046eb4b81b",
+   "externalPath": "/f4fc6b45-6c2d-4d09-aece-fd046eb4b81b",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 666 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "f4fc6b45-6c2d-4d09-aece-fd046eb4b81b"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2024-11-27",
+   "departments": [
+    "Simulation"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Machine Learning Engineer, Simulation",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 11pt;\">We are seeking a Senior Machine Learning Engineer with expertise in deep learning and data analysis. In this role, you will apply data-driven techniques to develop high-fidelity, scalable vehicle simulation models tailored to various vehicle platforms. You will collaborate with cross-functional teams to advance autonomous driving technology and drive innovation in simulation and model development.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/f4fc6b45-6c2d-4d09-aece-fd046eb4b81b",
+    "jobReqId": "f4fc6b45-6c2d-4d09-aece-fd046eb4b81b",
+    "postedOn": "Posted 666 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Simulation",
+   "signals": {
+    "linkedin_job_id": "4091526578",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4091526578",
+    "title": "Senior Machine Learning Engineer, Simulation",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-05-19",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:10",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "89a2ec90-547f-4ec2-8476-3985353c17d6",
+   "title": "Senior Machine Learning Infrastructure Engineer",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/89a2ec90-547f-4ec2-8476-3985353c17d6",
+   "externalPath": "/89a2ec90-547f-4ec2-8476-3985353c17d6",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 801 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "89a2ec90-547f-4ec2-8476-3985353c17d6"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2024-07-15",
+   "departments": [
+    "ML Infrastructure"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Machine Learning Infrastructure Engineer",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 16px;\">As a Senior ML Infrastructure Engineer at Plus, you will design scalable architectures capable of handling petabytes of data while ensuring optimal performance for both training and inference phases. You will build robust pipelines for managing model versioning systems and experiment tracking frameworks, which are essential for maintaining reproducibility across experiments. Additionally, you will be responsible for managing large-scale GPU clusters. This role offers unparalleled opportunities&mdash;both technically and professionally&mdash;for individuals passionate about solving challenging problems using modern cloud-native technologies. Ideal candidates thrive in environments that leverage tools such as Docker containers orchestrated via Kubernetes clusters, seamlessly integrated with state-of-the-art deep learning frameworks like PyTorch or TensorFlow. If you are eager to push the boundaries of what's possible in machine learning infrastructure and contribute to cutting-edge solutions, this position is an excellent fit!</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/89a2ec90-547f-4ec2-8476-3985353c17d6",
+    "jobReqId": "89a2ec90-547f-4ec2-8476-3985353c17d6",
+    "postedOn": "Posted 801 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "ML Infrastructure",
+   "signals": {
+    "linkedin_job_id": "3978697868",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/3978697868",
+    "title": "Senior Machine Learning Infrastructure Engineer",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-05-19",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:55",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "6577fdff-897f-4879-a032-e4f2edd35b02",
+   "title": "Senior Mechanical Engineer",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/6577fdff-897f-4879-a032-e4f2edd35b02",
+   "externalPath": "/6577fdff-897f-4879-a032-e4f2edd35b02",
+   "locationsText": "Fremont, CA",
+   "postedOn": "Posted 499 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "6577fdff-897f-4879-a032-e4f2edd35b02"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-05-13",
+   "departments": [
+    "Vehicle Integration"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Senior Mechanical Engineer",
+    "location": "Fremont, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 10.5pt;\">This role will be part of the hardware team which is responsible for design and development of new platforms and maintenance of the existing platforms.&nbsp;</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/6577fdff-897f-4879-a032-e4f2edd35b02",
+    "jobReqId": "6577fdff-897f-4879-a032-e4f2edd35b02",
+    "postedOn": "Posted 499 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Vehicle Integration",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "afcecf79-7d15-4d9a-bfd6-c9833f7c7d19",
+   "title": "Senior Research Engineer, Controls",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/afcecf79-7d15-4d9a-bfd6-c9833f7c7d19",
+   "externalPath": "/afcecf79-7d15-4d9a-bfd6-c9833f7c7d19",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 237 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "afcecf79-7d15-4d9a-bfd6-c9833f7c7d19"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-01-30",
+   "departments": [
+    "Controls"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Research Engineer, Controls",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 11pt;\">As a Research Engineer, you will deliver mission-critical improvements and new features for our autonomy motion planning and control stack. You will be a crucial part of our team, working alongside engineers, research scientists, and domain experts to build optimal and data driven controls to realize planned vehicle trajectories.</span></div>\n<div><span style=\"font-size: 11pt;\">Your responsibilities will include the development of machine-learning vehicle models and learning based control policies leveraging the extensive data we collect every day across our autonomous trucking fleet. You will also have the opportunity to solve real-world autonomy system challenges by participating in vehicle performance analysis, tuning, and troubleshooting. You will contribute significantly to our commitment to pushing the frontiers of technological innovation in Autonomy.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/afcecf79-7d15-4d9a-bfd6-c9833f7c7d19",
+    "jobReqId": "afcecf79-7d15-4d9a-bfd6-c9833f7c7d19",
+    "postedOn": "Posted 237 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Controls",
+   "signals": {
+    "linkedin_job_id": "4417440316",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4417440316",
+    "title": "Senior Research Engineer, Controls",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-03",
+    "num_applicants": 91,
+    "applicants_label": "91 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:04",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "4572f534-2f3c-4d4c-9fb0-55838bf7795f",
+   "title": "Senior Simulation Software Engineer",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/4572f534-2f3c-4d4c-9fb0-55838bf7795f",
+   "externalPath": "/4572f534-2f3c-4d4c-9fb0-55838bf7795f",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 45 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "4572f534-2f3c-4d4c-9fb0-55838bf7795f"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-10",
+   "departments": [
+    "Simulation & Verification"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Simulation Software Engineer",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p>We are looking for a Senior Simulation Software Engineer to build and scale the simulation infrastructure that powers our autonomous vehicle development. You will architect simulation pipelines, leverage AI agentic workflows to analyze simulation results, and drive improvements in simulation fidelity to validate autonomy systems and enable critical program milestones. This role offers the opportunity to drive immediate user value while building advanced, AI-powered frameworks for long-term safety validation.</p>\n<h3><strong>Responsibilities</strong></h3>\n<ul>\n<li>\n<p>Design and build AI agentic workflows that automatically analyze simulation results, identify failures, and surface root causes across large-scale test runs, translating them into actionable insights for engineering teams.</p>\n</li>\n<li>\n<p>Architect and build scalable simulation pipelines, including the metric evaluation framework, and conduct in-depth analysis of road test and simulation data to identify trends, anomalies, and key performance indicators that enhance model accuracy and validate autonomy performance.</p>\n</li>\n<li>\n<p>Identify, quantify, and reduce sources of divergence between simulation and real-world behavior, leveraging AI and data-driven techniques to increase simulation fidelity across actor behaviors, sensor models, and system dynamics.</p>\n</li>\n<li>\n<p>Monitor and improve the performance, scalability, testing, and reliability of the platform.</p>\n</li>\n<li>\n<p>Collaborate with cross-disciplinary teams&mdash;including simulation, onboard, systems engineering, and data science&mdash;to reproduce and resolve issues encountered during real-world road tests.</p>\n</li>\n<li>\n<p>Work with other engineers to design the long-term architecture of the system.</p>\n</li>\n<li>\n<p>Ensure that technical work meets customer requirements, regulatory standards, and company quality policies, in accordance with the company's Quality Management System (QMS), and contribute to continuous improvement efforts.</p>\n</li>\n</ul>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/4572f534-2f3c-4d4c-9fb0-55838bf7795f",
+    "jobReqId": "4572f534-2f3c-4d4c-9fb0-55838bf7795f",
+    "postedOn": "Posted 45 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Simulation & Verification",
+   "signals": {
+    "linkedin_job_id": "4452424148",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4452424148",
+    "title": "Senior Simulation Software Engineer",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-23",
+    "num_applicants": 54,
+    "applicants_label": "54 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 day ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:39",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "e20ffc58-a1b7-409a-960b-2f4fd094d826",
+   "title": "Senior Software Engineer, Embedded Software",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/e20ffc58-a1b7-409a-960b-2f4fd094d826",
+   "externalPath": "/e20ffc58-a1b7-409a-960b-2f4fd094d826",
+   "locationsText": "Fremont, CA",
+   "postedOn": "Posted 589 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "e20ffc58-a1b7-409a-960b-2f4fd094d826"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-02-12",
+   "departments": [
+    "Embedded Software"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Software Engineer, Embedded Software",
+    "location": "Fremont, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 10.5pt;\">This role will be part of the runtime team which is responsible for the entire on-vehicle AD system integration, optimization, and core feature development. In this role, you will collaborate cross-functionally to define and implement sensor &amp; vehicle interface CAN integration, diagnostics in AutoSAR safety domain, etc. You will also be responsible for the new vehicle platform and actuators integration, develop tools and procedures for new vehicle bring-up, and regular travel to our partner's proving ground to do on-vehicle testing and validation.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/e20ffc58-a1b7-409a-960b-2f4fd094d826",
+    "jobReqId": "e20ffc58-a1b7-409a-960b-2f4fd094d826",
+    "postedOn": "Posted 589 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Embedded Software",
+   "signals": {
+    "linkedin_job_id": "4150663152",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4150663152",
+    "title": "Senior Software Engineer, Embedded Software",
+    "company": "PlusAI",
+    "location": "Fremont, CA",
+    "linkedin_posted_date": "2026-05-19",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:20",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "144c698a-0b8a-47bd-a47d-3d47260f0b21",
+   "title": "Senior Software Engineer, Mapping & Localization",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/144c698a-0b8a-47bd-a47d-3d47260f0b21",
+   "externalPath": "/144c698a-0b8a-47bd-a47d-3d47260f0b21",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 1492 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "144c698a-0b8a-47bd-a47d-3d47260f0b21"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2022-08-24",
+   "departments": [
+    "Mapping and Localization"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Senior Software Engineer, Mapping & Localization",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>As software engineer for mapping &amp; localization for self-driving vehicles, you will work on developing and deploying large scale map systems including offline management and online loading. You will also support efficient map query in runtime for other modules&ndash; like perception, prediction and planning, with the goal of improving online and offline data collection and analysis of mapping/localization systems and mapping/localization CI systems.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/144c698a-0b8a-47bd-a47d-3d47260f0b21",
+    "jobReqId": "144c698a-0b8a-47bd-a47d-3d47260f0b21",
+    "postedOn": "Posted 1492 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Mapping and Localization",
+   "signals": {
+    "linkedin_job_id": "4450839159",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4450839159",
+    "title": "Senior Software Engineer, Mapping & Localization",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-04",
+    "num_applicants": 25,
+    "applicants_label": "25 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:47",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "70e8a0b4-197e-43cc-8094-c728bf884dd9",
+   "title": "Senior Software Engineer, Mapping & Localization",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/70e8a0b4-197e-43cc-8094-c728bf884dd9",
+   "externalPath": "/70e8a0b4-197e-43cc-8094-c728bf884dd9",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 513 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "70e8a0b4-197e-43cc-8094-c728bf884dd9"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-04-29",
+   "departments": [
+    "Mapping and Localization"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Software Engineer, Mapping & Localization",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 16px;\">We are seeking a highly skilled and motivated Senior Software Engineer to join our Mapping &amp; Localization team. In this role, you will be responsible for enhancing both the online and offline components of our mapping infrastructure, including online map interface, map version control, tile-based LiDAR map generation, and large-scale map management. You will play a critical role in supporting runtime map queries for key modules such as perception, localization, prediction, and planning.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/70e8a0b4-197e-43cc-8094-c728bf884dd9",
+    "jobReqId": "70e8a0b4-197e-43cc-8094-c728bf884dd9",
+    "postedOn": "Posted 513 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Mapping and Localization",
+   "signals": {
+    "linkedin_job_id": "4373142821",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4373142821",
+    "title": "Senior Software Engineer, Mapping & Localization",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-02",
+    "num_applicants": 139,
+    "applicants_label": "139 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:44",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "c86dd00b-bec0-428b-be09-96693ca963cf",
+   "title": "Senior Software Engineer, Motion Planning",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/c86dd00b-bec0-428b-be09-96693ca963cf",
+   "externalPath": "/c86dd00b-bec0-428b-be09-96693ca963cf",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 237 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "c86dd00b-bec0-428b-be09-96693ca963cf"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-01-30",
+   "departments": [
+    "Motion Planning"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Software Engineer, Motion Planning",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>As a Senior Software Engineer, Planning for self-driving trucks, you will work on developing cutting-edge software that takes data from a multitude of sensors such as cameras, radars and lidars, and converts them into actionable information for downstream components like prediction and planning.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/c86dd00b-bec0-428b-be09-96693ca963cf",
+    "jobReqId": "c86dd00b-bec0-428b-be09-96693ca963cf",
+    "postedOn": "Posted 237 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Motion Planning",
+   "signals": {
+    "linkedin_job_id": "4359510119",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4359510119",
+    "title": "Senior Software Engineer, Motion Planning",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-01",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:18",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "a4a58e21-2521-4503-aa7d-7bd627c08c40",
+   "title": "Senior/Staff Machine Learning Engineer (Reinforcement Learning), Motion Planning",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/a4a58e21-2521-4503-aa7d-7bd627c08c40",
+   "externalPath": "/a4a58e21-2521-4503-aa7d-7bd627c08c40",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 28 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "a4a58e21-2521-4503-aa7d-7bd627c08c40"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-27",
+   "departments": [
+    "Motion Planning"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior/Staff Machine Learning Engineer (Reinforcement Learning), Motion Planning",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>PlusAI is a Physical AI company pioneering AI-based virtual driver software for factory-built autonomous trucks. Headquartered in Silicon Valley with operations in the United States and Europe, Plus was named by Fast Company as one of the World’s Most Innovative Companies. Partners including TRATON GROUP’s Scania, MAN, and International brands, Hyundai Motor Company, Iveco Group, Bosch, and DSV are working with Plus to accelerate the deployment of next-generation autonomous trucks. If you’re ready to make a huge impact and drive the future of autonomy, Plus is looking for talented individuals to join its fast-growing teams.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/a4a58e21-2521-4503-aa7d-7bd627c08c40",
+    "jobReqId": "a4a58e21-2521-4503-aa7d-7bd627c08c40",
+    "postedOn": "Posted 28 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Motion Planning",
+   "signals": {
+    "linkedin_job_id": "4459565400",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4459565400",
+    "title": "Senior/Staff Machine Learning Engineer (Reinforcement Learning), Motion Planning",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-23",
+    "num_applicants": 30,
+    "applicants_label": "30 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 day ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:14",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "81d9b66d-bbc1-4ae8-b1f2-8846e9e95a45",
+   "title": "Senior/Staff Machine Learning Engineer, Motion Planning",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/81d9b66d-bbc1-4ae8-b1f2-8846e9e95a45",
+   "externalPath": "/81d9b66d-bbc1-4ae8-b1f2-8846e9e95a45",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 485 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "81d9b66d-bbc1-4ae8-b1f2-8846e9e95a45"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-05-27",
+   "departments": [
+    "Motion Planning"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior/Staff Machine Learning Engineer, Motion Planning",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 15px;\"><strong>About the Team</strong><br aria-hidden=\"true\">The Planning team is responsible for making sure PlusAI&rsquo;s trucks make the right decision in every driving situation, safely, smoothly, and predictably for other road users, even when working with noisy, uncertain, or incomplete information about the world. This is a cross-functional problem that requires close collaboration with Perception, Prediction, Controls, and Safety, and a willingness to work at the edge of research and production: bringing state-of-the-art decision-making and optimization techniques into a system that runs on real trucks, on real roads, today.<br><br aria-hidden=\"true\"><strong>About the Role</strong><br aria-hidden=\"true\">As a Senior Software Engineer on the Planning team, you&rsquo;ll research, develop, and implement planning technologies that let PlusAI&rsquo;s trucks handle complex, real-world driving scenarios in a safe and human-like manner. You&rsquo;ll work across the full decision-making stack, from reasoning about what the truck should do to determining precisely how it should get there, while accounting for the many ways a scenario could unfold</span></div>\n<div>&nbsp;</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/81d9b66d-bbc1-4ae8-b1f2-8846e9e95a45",
+    "jobReqId": "81d9b66d-bbc1-4ae8-b1f2-8846e9e95a45",
+    "postedOn": "Posted 485 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Motion Planning",
+   "signals": {
+    "linkedin_job_id": "4459594273",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4459594273",
+    "title": "Senior/Staff Machine Learning Engineer, Motion Planning",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-23",
+    "num_applicants": 34,
+    "applicants_label": "34 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 day ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:08",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "f44304e9-8bc4-45b4-bbf5-8b4fe70fc6ae",
+   "title": "Senior/Staff Machine Learning Engineer, Motion Planning",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/f44304e9-8bc4-45b4-bbf5-8b4fe70fc6ae",
+   "externalPath": "/f44304e9-8bc4-45b4-bbf5-8b4fe70fc6ae",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 28 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "f44304e9-8bc4-45b4-bbf5-8b4fe70fc6ae"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-27",
+   "departments": [
+    "Motion Planning"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior/Staff Machine Learning Engineer, Motion Planning",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 15px;\">We&rsquo;re looking for a&nbsp;machine learning engineer to train and deploy the latest generation of&nbsp;ML-based&nbsp;planning algorithms&nbsp;on the extensive data we collect every day&nbsp;across&nbsp;our autonomous trucking fleet.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/f44304e9-8bc4-45b4-bbf5-8b4fe70fc6ae",
+    "jobReqId": "f44304e9-8bc4-45b4-bbf5-8b4fe70fc6ae",
+    "postedOn": "Posted 28 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Motion Planning",
+   "signals": {
+    "linkedin_job_id": "4466956142",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4466956142",
+    "title": "Senior/Staff Machine Learning Engineer, Motion Planning",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-19",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "5 days ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:12",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "2b86f302-1851-4fae-9e44-676df736704a",
+   "title": "Senior/Staff Research Engineer — Vision-Language-Action Models (Autonomous Driving)",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/2b86f302-1851-4fae-9e44-676df736704a",
+   "externalPath": "/2b86f302-1851-4fae-9e44-676df736704a",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 9 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "2b86f302-1851-4fae-9e44-676df736704a"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-09-15",
+   "departments": [
+    "Computer Vision and Deep Learning"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior/Staff Research Engineer — Vision-Language-Action Models (Autonomous Driving)",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>&nbsp;</div>\n<p>You will join our core AI team at the frontier of autonomous decision-making, building the Vision-Language-Action (VLA) models that form SuperDrive's reasoning layer. You'll train VLA models that generate high-level driving decisions and trajectory guidance for on-board strategic decision-making, and design the knowledge distillation and compression techniques that transition large models onto on-board compute.</p>\n<p>&nbsp;</p>\n<div>&nbsp;</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/2b86f302-1851-4fae-9e44-676df736704a",
+    "jobReqId": "2b86f302-1851-4fae-9e44-676df736704a",
+    "postedOn": "Posted 9 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Computer Vision and Deep Learning",
+   "signals": {
+    "linkedin_job_id": "4465912449",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4465912449",
+    "title": "Senior/Staff Research Engineer — Vision-Language-Action Models (Autonomous Driving)",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-15",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:07",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "0f0a31df-c866-4c07-9252-f11d6ac44546",
+   "title": "Senior/Staff Software Engineer (Machine Learning Runtime), Motion Planning",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/0f0a31df-c866-4c07-9252-f11d6ac44546",
+   "externalPath": "/0f0a31df-c866-4c07-9252-f11d6ac44546",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 28 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "0f0a31df-c866-4c07-9252-f11d6ac44546"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-27",
+   "departments": [
+    "Motion Planning"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior/Staff Software Engineer (Machine Learning Runtime), Motion Planning",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>PlusAI is a Physical AI company pioneering AI-based virtual driver software for factory-built autonomous trucks. Headquartered in Silicon Valley with operations in the United States and Europe, Plus was named by Fast Company as one of the World’s Most Innovative Companies. Partners including TRATON GROUP’s Scania, MAN, and International brands, Hyundai Motor Company, Iveco Group, Bosch, and DSV are working with Plus to accelerate the deployment of next-generation autonomous trucks. If you’re ready to make a huge impact and drive the future of autonomy, Plus is looking for talented individuals to join its fast-growing teams.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/0f0a31df-c866-4c07-9252-f11d6ac44546",
+    "jobReqId": "0f0a31df-c866-4c07-9252-f11d6ac44546",
+    "postedOn": "Posted 28 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Motion Planning",
+   "signals": {
+    "linkedin_job_id": "4459567336",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4459567336",
+    "title": "Senior/Staff Software Engineer (Machine Learning Runtime), Motion Planning",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-23",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 day ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:01",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "4aab103f-545f-4600-bf99-8211f229ee60",
+   "title": "Senior/Staff Software Engineer, Motion Planning",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/4aab103f-545f-4600-bf99-8211f229ee60",
+   "externalPath": "/4aab103f-545f-4600-bf99-8211f229ee60",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 28 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "4aab103f-545f-4600-bf99-8211f229ee60"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-27",
+   "departments": [
+    "Motion Planning"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior/Staff Software Engineer, Motion Planning",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong>About the Team</strong><br aria-hidden=\"true\">The Planning team is responsible for making sure PlusAI&rsquo;s trucks make the right decision in every driving situation, safely, smoothly, and predictably for other road users, even when working with noisy, uncertain, or incomplete information about the world. This is a cross-functional problem that requires close collaboration with Perception, Prediction, Controls, and Safety, and a willingness to work at the edge of research and production: bringing state-of-the-art decision-making and optimization techniques into a system that runs on real trucks, on real roads, today.<br><br aria-hidden=\"true\"><strong>About the Role</strong><br aria-hidden=\"true\">As a Senior Software Engineer on the Motion Planning team, you&rsquo;ll research, develop, and implement planning technologies that let PlusAI&rsquo;s trucks handle complex, real-world driving scenarios in a safe and human-like manner. You&rsquo;ll work across the full decision-making stack, from reasoning about what the truck should do to determining precisely how it should get there, while accounting for the many ways a scenario could unfold.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/4aab103f-545f-4600-bf99-8211f229ee60",
+    "jobReqId": "4aab103f-545f-4600-bf99-8211f229ee60",
+    "postedOn": "Posted 28 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Motion Planning",
+   "signals": {
+    "linkedin_job_id": "4460442393",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4460442393",
+    "title": "Senior/Staff Software Engineer, Motion Planning",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "11 hours ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:22",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "083142f4-70ed-40f4-8726-a5f99ea52e36",
+   "title": "Software Engineer - Data",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/083142f4-70ed-40f4-8726-a5f99ea52e36",
+   "externalPath": "/083142f4-70ed-40f4-8726-a5f99ea52e36",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 104 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "083142f4-70ed-40f4-8726-a5f99ea52e36"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-12",
+   "departments": [
+    "Data Infrastructure"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Software Engineer - Data",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>PlusAI is a Physical AI company pioneering AI-based virtual driver software for factory-built autonomous trucks. Headquartered in Silicon Valley with operations in the United States and Europe, Plus was named by Fast Company as one of the World’s Most Innovative Companies. Partners including TRATON GROUP’s Scania, MAN, and International brands, Hyundai Motor Company, Iveco Group, Bosch, and DSV are working with Plus to accelerate the deployment of next-generation autonomous trucks. If you’re ready to make a huge impact and drive the future of autonomy, Plus is looking for talented individuals to join its fast-growing teams.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/083142f4-70ed-40f4-8726-a5f99ea52e36",
+    "jobReqId": "083142f4-70ed-40f4-8726-a5f99ea52e36",
+    "postedOn": "Posted 104 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Data Infrastructure",
+   "signals": {
+    "linkedin_job_id": "4428999252",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4428999252",
+    "title": "Software Engineer - Data",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-15",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:49",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "5d79e816-4153-4790-83bc-50c23a0369fe",
+   "title": "Software Engineer (SE / Sr SE), Applied ML & Data Mining",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/5d79e816-4153-4790-83bc-50c23a0369fe",
+   "externalPath": "/5d79e816-4153-4790-83bc-50c23a0369fe",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 55 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "5d79e816-4153-4790-83bc-50c23a0369fe"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-31",
+   "departments": [
+    "ML Infrastructure"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Software Engineer (SE / Sr SE), Applied ML & Data Mining",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p>Finding the right data is central to improving autonomous-driving models. Among petabytes of fleet data, you will develop methods that identify and rank the most valuable moments for training and evaluation, then turn those methods into reliable tools that autonomy and ML engineers use to search, review, and curate datasets. You will work at the intersection of applied machine learning, information retrieval, large-scale data processing, and product engineering. We welcome candidates with ML or data-mining foundations who are excited to grow across scalable systems and the product stack.</p>\n<p>We are open to candidates at either the Software Engineer or Senior Software Engineer level. Level will be determined by experience, technical depth, scope of ownership, and demonstrated impact. You do not need experience with every technology in our stack; we value strong fundamentals, ownership, and the ability to learn.</p>\n<h4><strong>Responsibilities:</strong></h4>\n<ul>\n<li>\n<p>Develop and evaluate mining, retrieval, and ranking methods using signals such as model confidence, disagreement, embeddings, anomalies, temporal behavior, and learned representations</p>\n</li>\n<li>\n<p>Build and evolve semantic image/video/scenario search, including text-to-image/video and image-to-image or video-to-video retrieval, vector search, metadata and temporal or spatial filters, task-specific ranking, and search quality, freshness, latency, and reliability</p>\n</li>\n<li>\n<p>Build and operate distributed mining, inference, and indexing pipelines over fleet-scale imagery, video, time-series, and autonomy-system data, including GPU batch inference, embedding generation, reproducible candidate datasets, and reliable index refreshes</p>\n</li>\n<li>\n<p>Design and ship mining products end to end: Python APIs and services, relational data models, asynchronous jobs, modern TypeScript/React search and review experiences, deployment, access control, testing, observability, and production reliability</p>\n</li>\n<li>\n<p>Ensure that your work is performed in accordance with the company&rsquo;s Quality Management System (QMS) requirements and contribute to continuous improvement efforts</p>\n</li>\n</ul>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/5d79e816-4153-4790-83bc-50c23a0369fe",
+    "jobReqId": "5d79e816-4153-4790-83bc-50c23a0369fe",
+    "postedOn": "Posted 55 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "ML Infrastructure",
+   "signals": {
+    "linkedin_job_id": "4446279532",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4446279532",
+    "title": "Software Engineer (SE / Sr SE), Applied ML & Data Mining",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-15",
+    "num_applicants": 176,
+    "applicants_label": "176 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:36",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "06265629-0c0b-44fd-8077-79c163962eff",
+   "title": "Software Engineer (SE / Sr SE), Data & ML Platform",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/06265629-0c0b-44fd-8077-79c163962eff",
+   "externalPath": "/06265629-0c0b-44fd-8077-79c163962eff",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 55 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "06265629-0c0b-44fd-8077-79c163962eff"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-31",
+   "departments": [
+    "ML Infrastructure"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Software Engineer (SE / Sr SE), Data & ML Platform",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p>All key offline workloads &mdash; large-scale data processing, simulation, auto-labeling, scenario mining, and model training &mdash; run on the compute platform this role owns. In this role, you will improve the reliability and efficiency of our Kubernetes infrastructure, make workload onboarding simpler and more self-service, and build reusable batch and workflow capabilities for petabyte-scale processing. We are looking for strong Kubernetes and platform-engineering fundamentals, depth in at least one adjacent area&mdash;distributed data processing, ML/GPU infrastructure, or multi-tenant compute systems&mdash;and the curiosity and ownership to grow across the others.</p>\n<p>We are open to candidates at either the Software Engineer or Senior Software Engineer level. Level will be determined by experience, technical depth, scope of ownership, and demonstrated impact. You do not need experience with every technology in our stack; we value strong fundamentals, ownership, and the ability to learn.</p>\n<h4><strong>Responsibilities:</strong></h4>\n<ul>\n<li>\n<p>Operate and evolve our production Kubernetes clusters end to end: bare-metal provisioning automation, highly available control planes, node lifecycle, GPU container runtime, networking, and storage</p>\n</li>\n<li>\n<p>Build safe, repeatable GitOps-based delivery for platform services and user applications using tools such as Argo CD, Helm, and Kustomize</p>\n</li>\n<li>\n<p>Develop shared multi-tenant platform capabilities for scheduling, resource isolation, storage, networking, access control, secrets, and observability while improving CPU/GPU utilization and cost efficiency</p>\n</li>\n<li>\n<p>Build and improve reusable distributed batch and workflow platforms for Spark data processing and GPU-based replay and simulation</p>\n</li>\n<li>\n<p>Ensure that your work is performed in accordance with the company&rsquo;s Quality Management System (QMS) requirements and contribute to continuous improvement efforts</p>\n</li>\n</ul>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/06265629-0c0b-44fd-8077-79c163962eff",
+    "jobReqId": "06265629-0c0b-44fd-8077-79c163962eff",
+    "postedOn": "Posted 55 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "ML Infrastructure",
+   "signals": {
+    "linkedin_job_id": "4446281444",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4446281444",
+    "title": "Software Engineer (SE / Sr SE), Data & ML Platform",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-15",
+    "num_applicants": 68,
+    "applicants_label": "68 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:43",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "0d204642-df47-462c-a41e-392eda5bcb6c",
+   "title": "Software Engineer (SE / Sr SE), Data Infrastructure",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/0d204642-df47-462c-a41e-392eda5bcb6c",
+   "externalPath": "/0d204642-df47-462c-a41e-392eda5bcb6c",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 55 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "0d204642-df47-462c-a41e-392eda5bcb6c"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-31",
+   "departments": [
+    "Data Infrastructure"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Software Engineer (SE / Sr SE), Data Infrastructure",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p>Our autonomous-driving fleet generates petabyte-scale sensor and system data. In this role, you will own critical parts of the path that makes this data reliable and useful&mdash;from high-throughput recording on the vehicle to transfer, validation, cataloging, and efficient access for replay, analytics, and machine learning. You will work primarily in modern C++ and Python, solving systems challenges across resource-constrained vehicle computers and large-scale offline infrastructure. We welcome engineers from systems, robotics, storage, or data-infrastructure backgrounds; prior autonomous-vehicle experience is helpful but not required.</p>\n<p>We are open to candidates at either the Software Engineer or Senior Software Engineer level. Level will be determined by experience, technical depth, scope of ownership, and demonstrated impact. You do not need experience with every technology in our stack; we value strong fundamentals, ownership, and the ability to learn.</p>\n<h4><strong>Responsibilities:</strong></h4>\n<ul>\n<li>\n<p>Design and evolve high-throughput C++ systems that continuously record vehicle sensor and runtime data, selectively capture events, and collect system telemetry while operating safely under CPU, memory, disk, and network constraints</p>\n</li>\n<li>\n<p>Build reliable Python data-plane services and libraries for vehicle-data transfer, ingestion, validation, domain-specific format conversion, metadata extraction, cataloging, and storage lifecycle management</p>\n</li>\n<li>\n<p>Evolve versioned vehicle-data formats and their C++ and Python APIs, including indexing, serialization, compression, schema evolution, and backward compatibility</p>\n</li>\n<li>\n<p>Evolve columnar and lakehouse representations and access APIs for vehicle data, improving scalability and performance for fleet-scale mining, replay, and analytics</p>\n</li>\n<li>\n<p>Ensure that your work is performed in accordance with the company&rsquo;s Quality Management System (QMS) requirements and contribute to continuous improvement efforts</p>\n</li>\n</ul>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/0d204642-df47-462c-a41e-392eda5bcb6c",
+    "jobReqId": "0d204642-df47-462c-a41e-392eda5bcb6c",
+    "postedOn": "Posted 55 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Data Infrastructure",
+   "signals": {
+    "linkedin_job_id": "4447382350",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4447382350",
+    "title": "Software Engineer (SE / Sr SE), Data Infrastructure",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-16",
+    "num_applicants": 143,
+    "applicants_label": "143 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:46",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "8f5bccee-4cf5-435a-9673-16e546686050",
+   "title": "Software Engineer (SE / Sr SE), Fullstack",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/8f5bccee-4cf5-435a-9673-16e546686050",
+   "externalPath": "/8f5bccee-4cf5-435a-9673-16e546686050",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 45 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "8f5bccee-4cf5-435a-9673-16e546686050"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-10",
+   "departments": [
+    "Fullstack"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Software Engineer (SE / Sr SE), Fullstack",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p>Our data and simulation platforms are only as valuable as what people can do with them. In this role, you will own the product surface on top of those platforms &mdash; the web applications, APIs, and backend services that autonomy and ML engineers, operations and road-test teams, and external partners use to find data, author and run simulations, and act on the results. You will work across the full stack, from relational data models and Python services to modern TypeScript interfaces, turning ambiguous engineering workflows into tools people rely on every day. We welcome engineers from product, web platform, or developer-tooling backgrounds; prior autonomous-vehicle experience is helpful but not required.</p>\n<p>We are open to candidates at either the Software Engineer or Senior Software Engineer level. Level will be determined by experience, technical depth, scope of ownership, and demonstrated impact. You do not need experience with every technology in our stack; we value strong fundamentals, ownership, and the ability to learn.</p>\n<h2>Responsibilities:</h2>\n<ul>\n<li>\n<p>Design and ship fullstack applications end to end: Python services and REST APIs, relational data modeling, asynchronous jobs, modern TypeScript frontend interfaces, deployment, testing, observability, and production reliability</p>\n</li>\n<li>\n<p>Build scenario authoring and management tools, including interactive editors for creating, parameterizing, and versioning test scenarios, and reproducible scenario libraries shared across teams</p>\n</li>\n<li>\n<p>Build interfaces for large-scale simulation and drive-log replay: launching and tracking runs, browsing results, comparing regressions across releases, and triaging failures down to individual scenarios</p>\n</li>\n<li>\n<p>Build shared application foundations &mdash; authentication, access control, multi-tenancy, and API conventions &mdash; that serve internal engineers, operations teams, and external partners from one coherent platform</p>\n</li>\n<li>\n<p>Ensure that your work is performed in accordance with the company's Quality Management System (QMS) requirements and contribute to continuous improvement efforts</p>\n</li>\n</ul>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/8f5bccee-4cf5-435a-9673-16e546686050",
+    "jobReqId": "8f5bccee-4cf5-435a-9673-16e546686050",
+    "postedOn": "Posted 45 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Fullstack",
+   "signals": {
+    "linkedin_job_id": "4452406585",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4452406585",
+    "title": "Software Engineer (SE / Sr SE), Fullstack",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-23",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 day ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:38",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "35e40aca-9414-4121-b7a0-d3e87fd6101a",
+   "title": "Software Engineer, Runtime",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/35e40aca-9414-4121-b7a0-d3e87fd6101a",
+   "externalPath": "/35e40aca-9414-4121-b7a0-d3e87fd6101a",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 560 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "35e40aca-9414-4121-b7a0-d3e87fd6101a"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-03-13",
+   "departments": [
+    "Runtime Platform"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Software Engineer, Runtime",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>PlusAI is a Physical AI company pioneering AI-based virtual driver software for factory-built autonomous trucks. Headquartered in Silicon Valley with operations in the United States and Europe, Plus was named by Fast Company as one of the World’s Most Innovative Companies. Partners including TRATON GROUP’s Scania, MAN, and International brands, Hyundai Motor Company, Iveco Group, Bosch, and DSV are working with Plus to accelerate the deployment of next-generation autonomous trucks. If you’re ready to make a huge impact and drive the future of autonomy, Plus is looking for talented individuals to join its fast-growing teams.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/35e40aca-9414-4121-b7a0-d3e87fd6101a",
+    "jobReqId": "35e40aca-9414-4121-b7a0-d3e87fd6101a",
+    "postedOn": "Posted 560 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Runtime Platform",
+   "signals": {
+    "linkedin_job_id": "4184730495",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4184730495",
+    "title": "Software Engineer, Runtime",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-05-22",
+    "num_applicants": 117,
+    "applicants_label": "117 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:53",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "1a1fc0e8-0741-4be1-adbb-52aa418eecf2",
+   "title": "Software Engineer, Runtime & C++ Middleware",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/1a1fc0e8-0741-4be1-adbb-52aa418eecf2",
+   "externalPath": "/1a1fc0e8-0741-4be1-adbb-52aa418eecf2",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 576 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "1a1fc0e8-0741-4be1-adbb-52aa418eecf2"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-02-25",
+   "departments": [
+    "Runtime Platform"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Software Engineer, Runtime & C++ Middleware",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>You will develop and optimize the core infrastructure that facilitates reliable, low-latency execution of on-vehicle robotics software. Your mission extends beyond building a rock-solid foundation for autonomous driving &mdash; you will also equip engineers with the tools needed to analyze system behavior, identify performance bottlenecks, and enhance robustness.</div>\n<div>&nbsp;</div>\n<div>In this role, you will contribute to existing frameworks, libraries, and tools while also designing and implementing new components across various mission-critical domains.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/1a1fc0e8-0741-4be1-adbb-52aa418eecf2",
+    "jobReqId": "1a1fc0e8-0741-4be1-adbb-52aa418eecf2",
+    "postedOn": "Posted 576 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Runtime Platform",
+   "signals": {
+    "linkedin_job_id": "4177886099",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4177886099",
+    "title": "Software Engineer, Runtime & C++ Middleware",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-05-21",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:51",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "3e6f5196-a87d-402a-8bbf-b6dd14a82c78",
+   "title": "Software Engineer, Simulation",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/3e6f5196-a87d-402a-8bbf-b6dd14a82c78",
+   "externalPath": "/3e6f5196-a87d-402a-8bbf-b6dd14a82c78",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 121 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "3e6f5196-a87d-402a-8bbf-b6dd14a82c78"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-05-26",
+   "departments": [
+    "Simulation"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Software Engineer, Simulation",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong>About the role:</strong></div>\n<div>The Scenario Simulation team is responsible for building a simulation engine that simulates the systems downstream of the perception system. The team works on realistic actor behaviors and other infrastructure tooling for generating diverse scenarios to validate Autonomy. You will have an opportunity to drive immediate user value while architecting advanced, AI-powered frameworks for long-term safety validation.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/3e6f5196-a87d-402a-8bbf-b6dd14a82c78",
+    "jobReqId": "3e6f5196-a87d-402a-8bbf-b6dd14a82c78",
+    "postedOn": "Posted 121 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Simulation",
+   "signals": {
+    "linkedin_job_id": "4417248763",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4417248763",
+    "title": "Software Engineer, Simulation",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-08",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:42",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "3bb7ec4f-0afa-4f15-9c4e-4b01de4516cd",
+   "title": "Software Integration Engineer",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/3bb7ec4f-0afa-4f15-9c4e-4b01de4516cd",
+   "externalPath": "/3bb7ec4f-0afa-4f15-9c4e-4b01de4516cd",
+   "locationsText": "San Antonio, Texas",
+   "postedOn": "Posted 85 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "3bb7ec4f-0afa-4f15-9c4e-4b01de4516cd"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-01",
+   "departments": [
+    "Integration & Testing"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "remote",
+   "detail": {
+    "title": "Software Integration Engineer",
+    "location": "San Antonio, Texas",
+    "additionalLocations": [],
+    "jobDescription": "<div>We're looking for an experienced software integration&nbsp;engineer to lead&nbsp;Validation &amp; Verification (V&amp;V) efforts at Plus by conducting hands-on testing of our autonomous driving stack, with a particular focus on our&nbsp;<span style=\"text-decoration: underline;\">planning stack or safety rated embedded MCU</span>. In this role, you will also work&nbsp;together&nbsp;with engineering and operations teams to develop and implement closed-course vehicle testing programs.&nbsp;Your responsibilities will include&nbsp;creating and executing end-to-end software test plans for autonomous driving, supporting development on either the planning or MCU teams, and generating tooling and documentation to improve operational efficiency.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/3bb7ec4f-0afa-4f15-9c4e-4b01de4516cd",
+    "jobReqId": "3bb7ec4f-0afa-4f15-9c4e-4b01de4516cd",
+    "postedOn": "Posted 85 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Integration & Testing",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "af178060-fe47-4133-9559-223e668c0f5a",
+   "title": "Software Verification & Validation Engineer",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/af178060-fe47-4133-9559-223e668c0f5a",
+   "externalPath": "/af178060-fe47-4133-9559-223e668c0f5a",
+   "locationsText": "Santa Clara, CA",
+   "postedOn": "Posted 20 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "af178060-fe47-4133-9559-223e668c0f5a"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-09-04",
+   "departments": [
+    "Simulation & Verification"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Software Verification & Validation Engineer",
+    "location": "Santa Clara, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<h3><strong>Key Responsibilities</strong></h3>\n<ul>\n<li>\n<p><strong>Performance Metrics Definition:</strong> Design, formalize, and implement quantitative safety and comfort metrics for AV algorithm modules (Perception, Prediction, Motion Planning, and Control). Translate high-level operational design domains (ODDs) and potential failure modes into automatable, objective criteria.</p>\n</li>\n<li>\n<p><strong>Simulation Test Engineering:</strong> Build, execute, and maintain complex open-loop and closed-loop simulation test suites to stress-test software releases, evaluate edge cases, and benchmark module-level and system-level performance.</p>\n</li>\n<li>\n<p><strong>Failure Triage &amp; Root Cause Analysis:</strong> Analyze large-scale simulation outputs to distinguish genuine software regressions from simulation artifact anomalies. Localize root causes to specific modules and deliver actionable diagnostic reports to development teams.</p>\n</li>\n<li>\n<p><strong>Test Framework Automation:</strong> Write production-grade Python scripts and extend core testing frameworks to automate test execution, data ingestion, and statistical reporting.</p>\n</li>\n<li>\n<p><strong>CI/CD Pipeline Integration:</strong> Integrate automated regression suites into continuous integration pipelines (e.g., Jenkins) for seamless, multi-stage testing across daily builds.</p>\n</li>\n<li>\n<p><strong>Data-Driven Quality Standards:</strong> Establish reproducible testing practices, enforcing strict artifact hygiene, dependency management, and quantitative validation over visual inspection.</p>\n</li>\n</ul>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/af178060-fe47-4133-9559-223e668c0f5a",
+    "jobReqId": "af178060-fe47-4133-9559-223e668c0f5a",
+    "postedOn": "Posted 20 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Simulation & Verification",
+   "signals": {
+    "linkedin_job_id": "4462548513",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4462548513",
+    "title": "Software Verification & Validation Engineer",
+    "company": "PlusAI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-08",
+    "num_applicants": 54,
+    "applicants_label": "54 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:32:58",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "9afb1a31-cdc8-496a-a891-24b9d1254391",
+   "title": "Technician",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/9afb1a31-cdc8-496a-a891-24b9d1254391",
+   "externalPath": "/9afb1a31-cdc8-496a-a891-24b9d1254391",
+   "locationsText": "Fremont, CA",
+   "postedOn": "Posted 91 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "9afb1a31-cdc8-496a-a891-24b9d1254391"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-25",
+   "departments": [
+    "Vehicle Integration"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Technician",
+    "location": "Fremont, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>PlusAI is a Physical AI company pioneering AI-based virtual driver software for factory-built autonomous trucks. Headquartered in Silicon Valley with operations in the United States and Europe, Plus was named by Fast Company as one of the World’s Most Innovative Companies. Partners including TRATON GROUP’s Scania, MAN, and International brands, Hyundai Motor Company, Iveco Group, Bosch, and DSV are working with Plus to accelerate the deployment of next-generation autonomous trucks. If you’re ready to make a huge impact and drive the future of autonomy, Plus is looking for talented individuals to join its fast-growing teams.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/9afb1a31-cdc8-496a-a891-24b9d1254391",
+    "jobReqId": "9afb1a31-cdc8-496a-a891-24b9d1254391",
+    "postedOn": "Posted 91 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Vehicle Integration",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "90374721-0d7a-489f-812b-4fa2dd5ec390",
+   "title": "Vehicle Integration Engineer",
+   "company": "plus-2",
+   "url": "https://jobs.lever.co/plus-2/90374721-0d7a-489f-812b-4fa2dd5ec390",
+   "externalPath": "/90374721-0d7a-489f-812b-4fa2dd5ec390",
+   "locationsText": "Fremont, CA",
+   "postedOn": "Posted 262 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "90374721-0d7a-489f-812b-4fa2dd5ec390"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-01-05",
+   "departments": [
+    "Vehicle Integration"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Vehicle Integration Engineer",
+    "location": "Fremont, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><span style=\"font-size: 15px\">PlusAI is a Physical AI company pioneering AI-based virtual driver software for factory-built autonomous trucks. Headquartered in Silicon Valley with operations in the United States and Europe, Plus was named by Fast Company as one of the World’s Most Innovative Companies. Partners including TRATON GROUP’s Scania, MAN, and International brands, Hyundai Motor Company, Iveco Group, Bosch, and DSV are working with Plus to accelerate the deployment of next-generation autonomous trucks. If you’re ready to make a huge impact and drive the future of autonomy, Plus is looking for talented individuals to join its fast-growing teams.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/plus-2/90374721-0d7a-489f-812b-4fa2dd5ec390",
+    "jobReqId": "90374721-0d7a-489f-812b-4fa2dd5ec390",
+    "postedOn": "Posted 262 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "plus-2",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Vehicle Integration",
+   "signals": {
+    "linkedin_job_id": "4352093371",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4352093371",
+    "title": "Vehicle Integration Engineer",
+    "company": "PlusAI",
+    "location": "Fremont, CA",
+    "linkedin_posted_date": "2026-05-22",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T23:33:11",
+    "match_method": "title"
+   }
+  }
+ ]
+}

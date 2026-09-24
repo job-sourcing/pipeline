@@ -1921,3 +1921,212 @@ class TestS17Round2Pins:
             XiaohongshuAdapter("", None)._fetch_pages(["840"])
         assert not any("xiaohongshu" in k
                        for k in site_boards._CACHE)
+
+
+_S18_CENSUS_DIR = (Path(__file__).resolve().parents[1]
+                   / "data" / "ats_seed" / "s18_census")
+
+_PAYLOCITY_GUID = "d527ad39-680d-45fa-9178-38a81898aec2"
+
+
+def _paylocity_page(jobs, module_title="United Imaging North America",
+                    live_marker=True):
+    page = {"ModuleTitle": module_title, "ModuleId": 31727,
+            "Jobs": jobs, "Departments": ["All Departments"],
+            "Locations": ["All Locations", "Remote"]}
+    html = ("<html><body><span>Job Opportunities</span>"
+            if live_marker else "<html><body>")
+    html += "<script>window.pageData = " + json.dumps(page) + ";</script>"
+    html += "</body></html>"
+    return html
+
+
+class TestPaylocityAdapter:
+    """S18: ats:paylocity:{CompanyId} — server-rendered window.pageData
+    board (United Imaging NA live-pinned 2026-09-25, 41 jobs)."""
+
+    @staticmethod
+    def _job(jid, title="Product Sales Specialist", loc="West Coast region",
+             country="USA", published="2026-09-22T15:54:27-05:00",
+             remote=True):
+        return {"JobId": jid, "JobTitle": title, "LocationName": loc,
+                "ShouldDisplayLocation": True,
+                "PublishedDate": published,
+                "Description": "Who we are?United Imaging is a leading...",
+                "IsRemote": remote, "IndeedRemoteType": "2",
+                "HiringDepartment": None,
+                "JobLocation": {"LocationId": 4388720, "ModuleId": 31727,
+                                "Name": loc, "Country": country,
+                                "City": None, "State": None,
+                                "Address": None}}
+
+    def _board(self, monkeypatch, jobs, live_marker=True):
+        html = _paylocity_page(jobs, live_marker=live_marker)
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        monkeypatch.setattr(
+            site_boards, "fetch_text",
+            lambda url, cfg=None, **kw: html)
+        return f"ats:paylocity:{_PAYLOCITY_GUID}"
+
+    def test_spec_registered_and_parsed(self):
+        assert site_boards.is_site_spec(
+            f"ats:paylocity:{_PAYLOCITY_GUID}")
+        kind, org = site_boards.parse_site(
+            f"ats:paylocity:{_PAYLOCITY_GUID}")
+        assert (kind, org) == ("paylocity", _PAYLOCITY_GUID)
+
+    def test_row_mapping_and_country(self, monkeypatch):
+        us = self._job("4463447")
+        ca = self._job("4463448", country="Canada", loc="Toronto, ON")
+        spec = self._board(monkeypatch, [us, ca])
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert set(rows) == {"4463447"}
+        r = rows["4463447"]
+        assert r["title"] == "Product Sales Specialist"
+        assert r["company"] == "United Imaging North America"
+        assert r["locationsText"] == "West Coast region"
+        assert r["countries"] == ["United States"]     # USA normalized
+        assert r["timeType"] == ""                     # honest blank
+        assert r["ats"] == "paylocity"
+        assert r["postedOn"].startswith("Posted ")
+        assert r["firstPublishedIso"].startswith("2026-09-22")
+        assert r["url"].endswith("/Recruiting/Jobs/Details/4463447")
+        assert r["remoteType"] == "Remote"
+        assert meta["complete"] is True
+        assert meta["total"] == 2
+        assert meta["client_filtered"] == 1            # Canada dropped
+        # ashby-class semantics: the listing IS the {country} population
+        # (country_client=False) — a True here would force board_dump's
+        # detail-based countryfilter phase on an already-classified list
+        # (the S18 unitedimaging finish-refusal bug, pinned)
+        assert meta["country_client"] is False
+        assert meta["ats"] == "paylocity"
+
+    def test_location_name_fallback_to_joblocation(self, monkeypatch):
+        j = self._job("1", loc="")
+        j["JobLocation"]["Name"] = "West Coast region"
+        spec = self._board(monkeypatch, [j])
+        rows, _ = site_boards.list_board(spec, country="United States")
+        assert rows["1"]["locationsText"] == "West Coast region"
+
+    def test_time_type_filter_refused(self, monkeypatch):
+        # the XHS class: no employment-type field → REFUSE, never
+        # drop-all-with-complete=True (the one-CLI-default trap)
+        spec = self._board(monkeypatch, [self._job("1")])
+        with pytest.raises(RuntimeError, match="unanswerable"):
+            site_boards.list_board(spec, country="United States",
+                                   time_type="Full time")
+
+    def test_b1_no_marker_refused(self, monkeypatch):
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        monkeypatch.setattr(
+            site_boards, "fetch_text",
+            lambda url, cfg=None, **kw: "<html>404-ish page</html>")
+        with pytest.raises(RuntimeError, match="no window.pageData"):
+            site_boards.list_board(
+                f"ats:paylocity:{_PAYLOCITY_GUID}",
+                country="United States")
+
+    def test_b1_shape_anomaly_refused(self, monkeypatch):
+        # a live board page whose pageData has NO Jobs list = shape
+        # anomaly — refuse, never serve an empty complete board
+        page = {"ModuleTitle": "X", "Departments": []}
+        html = ("<html>Job Opportunities<script>window.pageData = "
+                + json.dumps(page) + ";</script></html>")
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        monkeypatch.setattr(
+            site_boards, "fetch_text",
+            lambda url, cfg=None, **kw: html)
+        with pytest.raises(RuntimeError, match="shape anomaly"):
+            site_boards.list_board(
+                f"ats:paylocity:{_PAYLOCITY_GUID}",
+                country="United States")
+
+    def test_detail_sections_and_entities(self, monkeypatch):
+        spec = self._board(monkeypatch, [self._job("4463447")])
+        detail_html = (
+            "<html><body>"
+            '<span class="job-preview-title left"><span>Product Sales '
+            'Specialist - Digital Radiography (DR)</span></span>'
+            '<div class="preview-location">Fully Remote              '
+            '<span> &bull; </span>  West Coast region</div>'
+            '<div class="job-listing-header">Description</div>'
+            "<div><p><strong>Who we are?</strong></p>"
+            "<p>United Imaging is a leading global medical device "
+            "developer.</p></div>"
+            '<div class="job-listing-header">Requirements</div>'
+            '<div data-bind="html: Job.Requirements"><ul><li>3+ years '
+            "of quota-carrying sales experience.</li></ul></div>"
+            "</body></html>")
+        monkeypatch.setattr(
+            site_boards, "fetch_text",
+            lambda url, cfg=None, **kw: (detail_html
+                                         if "Details" in url
+                                         else _paylocity_page(
+                                             [self._job("4463447")])))
+        p = site_boards.detail_payload(
+            spec, "/Recruiting/Jobs/Details/4463447",
+            country="United States")
+        info = p["jobPostingInfo"]
+        assert info["title"] == ("Product Sales Specialist - "
+                                 "Digital Radiography (DR)")
+        assert info["location"] == "Fully Remote • West Coast region"
+        assert "Who we are?" in info["jobDescription"]
+        assert "quota-carrying" in info["jobDescription"]
+        assert info["timeType"] == ""
+        assert info["country"]["descriptor"] == "United States"
+        assert info["externalUrl"].endswith(
+            "/Recruiting/Jobs/Details/4463447")
+        assert p["hiringOrganization"]["name"] == (
+            "United Imaging North America")
+
+    def test_detail_unknown_id_none(self, monkeypatch):
+        spec = self._board(monkeypatch, [self._job("1")])
+        p = site_boards.detail_payload(
+            spec, "/Recruiting/Jobs/Details/999")
+        assert p is None
+
+    def test_board_html_cached_once(self, monkeypatch):
+        calls = []
+
+        def fake_fetch(url, cfg=None, **kw):
+            calls.append(url)
+            return _paylocity_page([self._job("1")])
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        monkeypatch.setattr(site_boards, "fetch_text", fake_fetch)
+        spec = f"ats:paylocity:{_PAYLOCITY_GUID}"
+        site_boards.list_board(spec, country="United States")
+        site_boards.list_board(spec, country="United States")
+        assert len(calls) == 1          # one fetch per process
+
+    def test_census_replay_unitedimaging_evidence(self, monkeypatch):
+        # the S15 evidence-payload standard: the committed live census
+        # payload (41 real US rows) replays through the adapter to the
+        # same verdict — any classifier change that shifts the real
+        # board's numbers fails HERE first.
+        payload = json.loads(
+            (_S18_CENSUS_DIR / "unitedimaging_pageJobs.json").read_text(
+                encoding="utf-8"))
+        assert len(payload) == 41        # evidence integrity
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        monkeypatch.setattr(
+            site_boards, "fetch_text",
+            lambda url, cfg=None, **kw: _paylocity_page(payload))
+        rows, meta = site_boards.list_board(
+            f"ats:paylocity:{_PAYLOCITY_GUID}", country="United States")
+        assert len(rows) == 41
+        assert meta["complete"] is True
+        assert meta["client_filtered"] == 0
+        # live-pinned details (2026-09-25 census):
+        # - every row's JobLocation.Country == 'USA'
+        # - Seattle R&D rows exist
+        seattle = [r for r in rows.values()
+                   if "Seattle" in r["locationsText"]]
+        assert seattle, "expected the UIHA Seattle (R&D) rows"
+        assert all(r["countries"] == ["United States"]
+                   for r in rows.values())
+        # the newest rows are Sept 2026 (freshness pin — the
+        # hoyoverse-smartrecruiters stale-board trap is the counterexample)
+        newest = max(r["firstPublishedIso"] for r in rows.values()
+                     if r["firstPublishedIso"])
+        assert newest >= "2026-09-21"
