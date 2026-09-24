@@ -8,3 +8,4 @@ location entries total (sum nLocations): 18
 similar-job edges: 0
 facet-tagged rows: workerSubType=0 jobFamilyGroup=6 (from facet_tags.jsonl)
 facet tag coverage: 6/9 rows (3 untagged)
+h1b wage bands: 7/9 rows banded (0 title+state, 7 title-only) from 30 LCA filings → pony_us_fulltime.h1b_lca.csv

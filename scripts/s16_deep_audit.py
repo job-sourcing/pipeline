@@ -262,6 +262,7 @@ GH_SLUG = {"baidu": "baidu", "byd": "byd", "neteasegames": "neteasegames",
            "shein": "shein", "xpeng": "xpengmotors",
            "faradayfuture": "faradayfuture", "didi": "didi", "tcl": "tcl",
            "gotion": "gotion"}
+D9_SLUG = dict(GH_SLUG, anthropic="anthropic")
 for label, slug in GH_SLUG.items():
     try:
         jobs = gh_fetch(slug)
@@ -307,12 +308,13 @@ for label, spec in [("moonshot", "ats:ashby:moonshot"),
 
 # ── D9: adapter health telemetry ───────────────────────────────────────
 print("D9 ADAPTER HEALTH TELEMETRY (office-channel)")
-for org in ["anthropic", "baidu", "byd", "neteasegames", "shein",
-            "xpeng", "faradayfuture", "didi", "tcl", "gotion"]:
+for label in ["anthropic", "baidu", "byd", "neteasegames", "shein",
+              "xpeng", "faradayfuture", "didi", "tcl", "gotion"]:
+    org = D9_SLUG[label]      # S16 fix: labels != slugs (xpengmotors)
     try:
         jobs = gh_fetch(org)
     except Exception as e:
-        pass_fail(False, f"D9 {org} telemetry", f"fetch failed: {e}")
+        pass_fail(False, f"D9 {label} telemetry", f"fetch failed: {e}")
         continue
     sig_counter = Counter()
     id_counter = Counter()
@@ -328,7 +330,7 @@ for org in ["anthropic", "baidu", "byd", "neteasegames", "shein",
     distinct_ids = len(id_counter)
     modal, modal_n = (id_counter.most_common(1) or [("-", 0)])[0]
     disc = site_boards.GreenhouseAdapter._offices_discriminate(jobs)
-    pass_fail(True, f"D9 {org} office telemetry",
+    pass_fail(True, f"D9 {label} office telemetry",
               f"{distinct_ids} ids, modal {modal} on "
               f"{modal_n}/{len(jobs)} jobs, discriminate={disc}")
 

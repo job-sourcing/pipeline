@@ -8,3 +8,4 @@ location entries total (sum nLocations): 8
 similar-job edges: 0
 facet-tagged rows: workerSubType=0 jobFamilyGroup=8 (from facet_tags.jsonl)
 facet tag coverage: 8/8 rows (0 untagged)
+h1b wage bands: 3/8 rows banded (0 title+state, 3 title-only) from 81 LCA filings → weride_us_fulltime.h1b_lca.csv
