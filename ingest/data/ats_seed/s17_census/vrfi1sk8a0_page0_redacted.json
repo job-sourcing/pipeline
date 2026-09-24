@@ -1,0 +1,402 @@
+{
+ "code": 0,
+ "data": {
+  "count": 185,
+  "schema_full_row": {
+   "id": "7689030462506158382",
+   "title": "AI芯片设计实习生",
+   "sub_title": null,
+   "description": null,
+   "requirement": null,
+   "job_category": {
+    "id": "6791698585114724616",
+    "name": "互联网 / 电子 / 网游",
+    "en_name": "Internet / Electronics / Games",
+    "i18n_name": "互联网 / 电子 / 网游",
+    "depth": 1,
+    "parent": null,
+    "children": null
+   },
+   "city_info": null,
+   "recruit_type": {
+    "id": "301",
+    "name": "实习",
+    "en_name": "Internship",
+    "i18n_name": "实习",
+    "depth": 2,
+    "parent": {
+     "id": "1",
+     "name": "社招",
+     "en_name": "Experienced",
+     "i18n_name": "社招",
+     "depth": 1,
+     "parent": null,
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "children": null,
+    "active_status": 1,
+    "selectability": 1
+   },
+   "publish_time": 1790242118825,
+   "job_hot_flag": null,
+   "job_subject": null,
+   "code": null,
+   "department_id": null,
+   "job_function": null,
+   "job_process_id": "7009638599947847973",
+   "recommend_id": null,
+   "city_list": [
+    {
+     "code": "CT_11",
+     "name": "北京",
+     "en_name": "Beijing",
+     "location_type": null,
+     "i18n_name": "北京",
+     "py_name": null,
+     "mdm_code": null,
+     "node_status": null
+    }
+   ],
+   "job_post_info": {
+    "id": null,
+    "job_id": null,
+    "title": null,
+    "sub_title": null,
+    "address_id": null,
+    "address": null,
+    "city": null,
+    "education": null,
+    "experience": null,
+    "description": null,
+    "requirement": null,
+    "min_salary": null,
+    "max_salary": null,
+    "currency": null,
+    "head_count": null,
+    "crator_id": null,
+    "expiry_time": null,
+    "progress": null,
+    "department_id": null,
+    "job_type": null,
+    "recruitment_type": {
+     "id": "301",
+     "name": "实习",
+     "en_name": "Internship",
+     "i18n_name": "实习",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "job_process_time": null,
+    "job_in_charge_user_id": null,
+    "biz_create_time": null,
+    "HighlightList": null,
+    "JobChannelPublishList": null,
+    "required_degree": null,
+    "never_expiry": null,
+    "job_hot_flag": null,
+    "subject": null,
+    "sequence": null,
+    "min_level": null,
+    "max_level": null,
+    "job_post_object_value_map": {},
+    "code": null,
+    "job_active_status": null,
+    "job_process_type": null,
+    "biz_modify_time": null,
+    "job_function": null,
+    "job_process": null,
+    "job_process_id": null,
+    "job_category": null,
+    "address_list": [
+     {
+      "id": "7449386305794064388",
+      "name": "蓟门壹号大厦8层",
+      "en_name": "",
+      "district": null,
+      "city": {
+       "city_code": "CT_11",
+       "name": "北京",
+       "en_name": "Beijing",
+       "i18n_name": "北京",
+       "py_name": "beijing"
+      },
+      "state": {
+       "state_code": "ST_8",
+       "name": "北京",
+       "en_name": "Beijing",
+       "i18n_name": "北京"
+      },
+      "country": {
+       "country_code": "CN_1",
+       "name": "中国大陆",
+       "en_name": "Chinese Mainland",
+       "i18n_name": "中国大陆"
+      },
+      "i18n_name": "蓟门壹号大厦8层",
+      "active_status": 1
+     }
+    ],
+    "city_list": null,
+    "correlation_job_list": null,
+    "tag_list": null,
+    "department": null,
+    "job_storefront_mode": null,
+    "storefront_list": null,
+    "target_major_list": null,
+    "schema": null,
+    "job_post_process_time_list": null,
+    "job_level_id_list": null
+   },
+   "storefront_mode": 1,
+   "storefront_list": null,
+   "process_type": 1
+  },
+  "schema_trimmed_rows": [
+   {
+    "id": "7687134817943472447",
+    "title": "Research Lead, Large Language Models",
+    "city_list": [
+     {
+      "code": "CT_75",
+      "name": "旧金山",
+      "en_name": "San Francisco",
+      "location_type": null,
+      "i18n_name": "旧金山",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1789800932201
+   },
+   {
+    "id": "7686033283003812102",
+    "title": "大模型算法工程师-Senior后训练",
+    "city_list": [
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     },
+     {
+      "code": "CT_125",
+      "name": "上海",
+      "en_name": "Shanghai",
+      "location_type": null,
+      "i18n_name": "上海",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1789544218231
+   },
+   {
+    "id": "7683421808050063626",
+    "title": "AI 模型服务与生态合作",
+    "city_list": [
+     {
+      "code": "CT_125",
+      "name": "上海",
+      "en_name": "Shanghai",
+      "location_type": null,
+      "i18n_name": "上海",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1788936252554
+   },
+   {
+    "id": "7682323969436928265",
+    "title": "大模型技术招聘负责人",
+    "city_list": [
+     {
+      "code": "CT_125",
+      "name": "上海",
+      "en_name": "Shanghai",
+      "location_type": null,
+      "i18n_name": "上海",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     },
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1788680867199
+   },
+   {
+    "id": "7682322309805902130",
+    "title": "海螺AI技术招聘负责人",
+    "city_list": [
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     },
+     {
+      "code": "CT_125",
+      "name": "上海",
+      "en_name": "Shanghai",
+      "location_type": null,
+      "i18n_name": "上海",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     },
+     {
+      "code": "CT_75",
+      "name": "旧金山",
+      "en_name": "San Francisco",
+      "location_type": null,
+      "i18n_name": "旧金山",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1788680477982
+   }
+  ]
+ }
+}

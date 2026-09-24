@@ -1466,8 +1466,9 @@ class TestFeishuHireAdapter:
         assert det["jobPostingInfo"]["jobDescription"] == ""
 
     def test_body_offset_pagination_shape(self, monkeypatch):
-        # the S17 discovery: offset works ONLY in the body — pin the
-        # request shape the adapter must keep sending
+        # the S17 discovery: offset AND limit work ONLY in the body —
+        # pin the request shape the adapter must keep sending (page
+        # size 200, live-verified 2026-09-26)
         from jobsearch.sources.site_boards import FeishuHireAdapter
         sent = []
 
@@ -1476,18 +1477,337 @@ class TestFeishuHireAdapter:
             n = len(sent)
             page = [TestFeishuHireAdapter._post(str(1000 + i), "J%d" % i,
                                                 ["Beijing"])
-                    for i in range(10)]
+                    for i in range(200)]
             if n == 1:
-                return {"data": {"job_post_list": page, "count": 12}}
-            # page 2: offset 10 → the LAST 2 (proves body-offset honored)
-            return {"data": {"job_post_list": page[:2], "count": 12}}
+                return {"code": 0, "data": {"job_post_list": page[:185],
+                                            "count": 400}}
+            # page 2: offset 200 → the NEXT 200 (proves body-offset
+            # honored; len 200 == _PAGE so pagination continues)
+            return {"code": 0, "data": {"job_post_list": page[0:200],
+                                        "count": 400}}
 
-        monkeypatch.setattr(FeishuHireAdapter, "_post_json", fake_post)
+        # NOTE: 400-count board → 185+200 = 385 distinct... make page 2
+        # return exactly 215 (short page at count)
+        def fake_post2(self, path, body, token=True):
+            sent.append(body)
+            n = len(sent)
+            if n == 1:
+                page = [TestFeishuHireAdapter._post(str(i), "J%d" % i,
+                                                    ["Beijing"])
+                        for i in range(200)]
+                return {"code": 0, "data": {"job_post_list": page,
+                                            "count": 400}}
+            page = [TestFeishuHireAdapter._post(str(1000 + i), "J%d" % i,
+                                                ["Beijing"])
+                    for i in range(200)]
+            return {"code": 0, "data": {"job_post_list": page,
+                                        "count": 400}}
+
+        monkeypatch.setattr(FeishuHireAdapter, "_post_json", fake_post2)
         monkeypatch.setattr(FeishuHireAdapter, "_token_refresh",
                             lambda self: "tok")
         monkeypatch.setattr(site_boards, "_CACHE", {})
         adapter = FeishuHireAdapter("vrfi1sk8a0", None)
         posts = adapter._fetch_rows()
-        assert len(posts) == 12
-        assert sent[0] == {"offset": 0, "limit": 10}
-        assert sent[1] == {"offset": 10, "limit": 10}
+        assert len(posts) == 400
+        assert sent[0] == {"offset": 0, "limit": 200}
+        assert sent[1] == {"offset": 200, "limit": 200}
+
+    def test_envelope_code_error_raises(self, monkeypatch):
+        # peer-review SEV-1: 200-with-code≠0 mid-pagination must RAISE
+        # (silently treating it as an empty page = truncated board with
+        # complete=True = the false-gone hole)
+        from jobsearch.sources.site_boards import FeishuHireAdapter
+
+        def fake_post(self, path, body, token=True):
+            return {"code": 401, "message": "token expired",
+                    "data": None}
+        monkeypatch.setattr(FeishuHireAdapter, "_post_json", fake_post)
+        monkeypatch.setattr(FeishuHireAdapter, "_token_refresh",
+                            lambda self: "tok")
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        adapter = FeishuHireAdapter("vrfi1sk8a0", None)
+        with pytest.raises(RuntimeError, match="envelope code=401"):
+            adapter._fetch_rows()
+        # nothing cached on the error path
+        assert "ats:feishuhire:vrfi1sk8a0" not in site_boards._CACHE
+
+    def test_distinct_ids_vs_count_assertion(self, monkeypatch):
+        # peer-review SEV-1 (b): body-offset drift (API ignores our
+        # offset → deduped pages) must RAISE, not silently return ~1 page
+        from jobsearch.sources.site_boards import FeishuHireAdapter
+        same_page = [TestFeishuHireAdapter._post(str(i), "J%d" % i,
+                                                 ["Beijing"])
+                     for i in range(200)]
+
+        def fake_post(self, path, body, token=True):
+            # every page serves the SAME 200 rows (offset ignored)
+            return {"code": 0, "data": {"job_post_list": same_page,
+                                        "count": 834}}
+        monkeypatch.setattr(FeishuHireAdapter, "_post_json", fake_post)
+        monkeypatch.setattr(FeishuHireAdapter, "_token_refresh",
+                            lambda self: "tok")
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        adapter = FeishuHireAdapter("agirobot", None)
+        with pytest.raises(RuntimeError, match="pagination drift"):
+            adapter._fetch_rows()
+
+    def test_genuine_empty_board_vs_shape_anomaly(self, monkeypatch):
+        # count==0 + empty list = legitimate empty board (0 rows,
+        # complete=True); count MISSING + empty list = shape anomaly →
+        # raise, never cache an ambiguous empty (peer-review SEV-2 #2)
+        from jobsearch.sources.site_boards import FeishuHireAdapter
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+
+        def mk(resp):
+            def fake_post(self, path, body, token=True):
+                return resp
+            return fake_post
+
+        a = FeishuHireAdapter("moonshot", None)
+        monkeypatch.setattr(FeishuHireAdapter, "_post_json",
+                            mk({"code": 0, "data": {"job_post_list": [],
+                                                     "count": 0}}))
+        monkeypatch.setattr(FeishuHireAdapter, "_token_refresh",
+                            lambda self: "tok")
+        assert a._fetch_rows() == []
+        assert site_boards._CACHE["ats:feishuhire:moonshot"][1] == []
+
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        b = FeishuHireAdapter("moonshot", None)
+        monkeypatch.setattr(FeishuHireAdapter, "_post_json",
+                            mk({"code": 0, "data": None}))
+        with pytest.raises(RuntimeError, match="shape anomaly"):
+            b._fetch_rows()
+        assert "ats:feishuhire:moonshot" not in site_boards._CACHE
+
+    def test_transport_retry_refreshes_token(self, monkeypatch):
+        # peer-review SEV-2 #5: one transport error → retry with fresh
+        # token + fresh opener, run succeeds
+        from jobsearch.sources.site_boards import FeishuHireAdapter
+        attempts = []
+        refreshed = []
+
+        def fake_post(self, path, body, token=True):
+            attempts.append((path, body))
+            if len(attempts) == 1:
+                raise OSError("connection reset")
+            page = [TestFeishuHireAdapter._post(str(i), "J%d" % i,
+                                                ["San Francisco"])
+                    for i in range(3)]
+            return {"code": 0, "data": {"job_post_list": page,
+                                        "count": 3}}
+
+        monkeypatch.setattr(FeishuHireAdapter, "_post_json", fake_post)
+        monkeypatch.setattr(FeishuHireAdapter, "_token_refresh",
+                            lambda self: refreshed.append(1) or "tok2")
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        adapter = FeishuHireAdapter("vrfi1sk8a0", None)
+        posts = adapter._fetch_rows()
+        assert len(posts) == 3
+        assert refreshed == [1, 1]  # initial + retry refresh
+
+    def test_empty_city_list_unresolved(self, monkeypatch):
+        # peer-review SEV-2 #3: no-city rows are UNRESOLVED (the unified
+        # blank-country rule), not quietly non-US — complete=False
+        noc = {"id": "888", "title": "Remote Anywhere", "city_list": [],
+               "recruit_type": {"en_name": "Full-time"},
+               "publish_time": 1789097209208, "job_category": {}}
+        spec = self._board(monkeypatch, [noc])
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert rows == {}
+        assert meta["unresolved_dropped"] == 1
+        assert meta["complete"] is False
+
+    def test_outsourced_maps_to_contract(self, monkeypatch):
+        # peer-review finding 7: 'Outsourced' is a live-observed
+        # recruit_type — maps to Contract (the bytedance third-party
+        # associate class)
+        out = self._post("777", "Outsourced SDE", ["San Francisco"],
+                         tt="Outsourced")
+        spec = self._board(monkeypatch, [out])
+        rows, _ = site_boards.list_board(spec, country="United States")
+        assert rows["777"]["timeType"] == "Contract"
+
+    def test_unmapped_cities_surfaced_in_meta(self, monkeypatch):
+        # peer-review finding 10: the operator must SEE the unmapped
+        # names without re-probing
+        odd = self._post("666", "X", ["Pleasantville"])
+        spec = self._board(monkeypatch, [odd])
+        _, meta = site_boards.list_board(spec, country="United States")
+        assert meta["unmapped_cities"] == ["Pleasantville"]
+
+    def test_detail_code_nonzero_warns_empty_desc(self, monkeypatch):
+        # peer-review finding 6: 200-with-code≠0 detail body → loud warn,
+        # row survives with empty description (B1)
+        post = self._post("555-2", "X", ["San Francisco"])
+        from jobsearch.sources.site_boards import FeishuHireAdapter
+
+        def fake_get(self, path):
+            return {"code": 404, "message": "not found", "data": None}
+        spec = self._board(monkeypatch, [post])
+        monkeypatch.setattr(FeishuHireAdapter, "_get_json", fake_get)
+        det = site_boards.detail_payload(spec, "/555-2")
+        assert det is not None
+        assert det["jobPostingInfo"]["jobDescription"] == ""
+        assert det["jobPostingInfo"]["title"] == "X"
+
+    def test_cache_contract_second_instance_no_refetch(self, monkeypatch):
+        # peer-review finding 13: a second adapter instance (fresh token
+        # state, empty cookie jar) on a warm cache makes ZERO POSTs —
+        # the dispatch seam constructs a new adapter per detail call
+        from jobsearch.sources.site_boards import FeishuHireAdapter
+        calls = []
+        post = self._post("4321", "Cached", ["San Francisco"])
+
+        def fake_post(self, path, body, token=True):
+            calls.append(path)
+            return {"code": 0, "data": {"job_post_list": [post],
+                                        "count": 1}}
+        monkeypatch.setattr(FeishuHireAdapter, "_post_json", fake_post)
+        monkeypatch.setattr(FeishuHireAdapter, "_token_refresh",
+                            lambda self: "tok")
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        first = FeishuHireAdapter("vrfi1sk8a0", None)
+        first._fetch_rows()
+        n = len(calls)
+        second = FeishuHireAdapter("vrfi1sk8a0", None)  # fresh instance
+        posts = second._fetch_rows()
+        assert len(calls) == n          # zero additional POSTs
+        assert len(posts) == 1
+
+    def test_city_map_data_canaries(self):
+        from jobsearch.sources.site_boards import _FEISHU_CITY_COUNTRY as M
+        assert M["San Jose"] == "United States"
+        assert M["Sao Paulo"] == "Brazil"
+        assert M["lle-de-France"] == "France"
+        assert M["Hong Kong (China)"] == "Hong Kong"
+        # ambiguous names stay UNMAPPED by design (loud, not guessed)
+        assert "Cambridge" not in M
+
+    def test_no_country_filter_returns_all(self, monkeypatch):
+        # regression: list without a country filter keeps every row
+        us = self._post("a1", "US Role", ["San Francisco"])
+        cn = self._post("a2", "CN Role", ["Beijing"])
+        spec = self._board(monkeypatch, [us, cn])
+        rows, meta = site_boards.list_board(spec)
+        assert set(rows) == {"a1", "a2"}
+        assert meta["complete"] is True
+
+
+class TestXiaohongshuAdapter:
+    """S17 pins — live-pinned 2026-09-26 on the 20-US-row board (the
+    863-position social board filtered server-side by workplaces=["840"])."""
+
+    def _board(self, monkeypatch, jobs, total=None, responses=None):
+        from jobsearch.sources.site_boards import XiaohongshuAdapter
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        calls = []
+
+        def fake_post(url, body, headers=None):
+            calls.append(body)
+            if responses:
+                return responses.pop(0)
+            return {"success": True, "data": {
+                "total": total if total is not None else len(jobs),
+                "totalPage": 1, "list": jobs}}
+        monkeypatch.setattr(site_boards, "_post_json_urllib", fake_post)
+        return "custom:xiaohongshu", calls
+
+    @staticmethod
+    def _job(rid, title="iOS Software Engineer - rednote",
+             workplace="美国", pub="2026-09-22"):
+        return {"positionId": rid, "positionName": title,
+                "workplace": workplace, "workplaceIds": "840",
+                "publishTime": pub, "recruitStatus": "in_recruitment",
+                "duty": "Build the rednote app.",
+                "qualification": "Swift + 3y.",
+                "jobType": "iOS", "directionName": "技术",
+                "subDirectionName": "客户端"}
+
+    def test_spec_registered(self):
+        assert site_boards.is_site_spec("custom:xiaohongshu")
+        kind, org = site_boards.parse_site("custom:xiaohongshu")
+        assert (kind, org) == ("xiaohongshu", "")
+
+    def test_row_mapping_and_server_side_us_filter(self, monkeypatch):
+        us = self._job(19557)
+        multi = self._job(1, "海外TnS政策专家",
+                          workplace="美国，新加坡，上海市，北京市")
+        spec, calls = self._board(monkeypatch, [us, multi])
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert set(rows) == {"19557", "1"}
+        # the ANY-match multi-site row IS a US row (server filtered)
+        assert rows["1"]["countries"] == ["United States"]
+        r = rows["19557"]
+        assert r["title"] == "iOS Software Engineer - rednote"
+        assert r["locationsText"] == "美国"
+        assert r["timeType"] == ""          # honest blank (no field)
+        assert r["ats"] == "xiaohongshu"
+        assert r["postedOn"].startswith("Posted ")
+        assert "rednote app" in r["description"]
+        assert "Swift" in r["description"]
+        assert r["url"].endswith("/social/position/19557")
+        assert meta["country_client"] is False
+        assert meta["complete"] is True
+        # the workplaces param is the SERVER-side filter
+        assert calls[0]["workplaces"] == ["840"]
+        assert calls[0]["recruitType"] == "social"
+
+    def test_non_us_country_refused(self, monkeypatch):
+        spec, _ = self._board(monkeypatch, [])
+        with pytest.raises(RuntimeError, match="refusing to guess"):
+            site_boards.list_board(spec, country="Germany")
+
+    def test_error_envelope_raises(self, monkeypatch):
+        # success != true must NEVER serve as a board (the false-gone
+        # guard — same class as the feishuhire envelope-code check)
+        from jobsearch.sources.site_boards import XiaohongshuAdapter
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+
+        def fake_post(url, body, headers=None):
+            return {"success": False, "errorCode": 999,
+                    "errorMsg": "招聘类型参数异常", "data": None}
+        monkeypatch.setattr(site_boards, "_post_json_urllib", fake_post)
+        with pytest.raises(RuntimeError, match="success=False"):
+            XiaohongshuAdapter("", None)._fetch_pages(["840"])
+
+    def test_pagination_drift_refused(self, monkeypatch):
+        # total=30 but only page 1 ever serves 30 rows on BOTH pages →
+        # 60 collected vs 30 distinct... construct: same page served
+        # twice → duplicate ids must raise, not silently return
+        from jobsearch.sources.site_boards import XiaohongshuAdapter
+        page = [self._job(i) for i in range(30)]
+
+        def fake_post(url, body, headers=None):
+            return {"success": True, "data": {"total": 35,
+                                              "totalPage": 2,
+                                              "list": page}}
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        monkeypatch.setattr(site_boards, "_post_json_urllib", fake_post)
+        # 30 rows/page < 35 total → second page serves the SAME 30 rows
+        # → 60 collected, 30 distinct, total 35 → drift → raise
+        with pytest.raises(RuntimeError, match="drift|collected"):
+            XiaohongshuAdapter("", None)._fetch_pages(["840"])
+
+    def test_detail_from_list_row(self, monkeypatch):
+        us = self._job(19557, workplace="美国，新加坡")
+        spec, _ = self._board(monkeypatch, [us])
+        det = site_boards.detail_payload(spec, "/social/position/19557",
+                                         country="United States")
+        info = det["jobPostingInfo"]
+        assert info["location"] == "美国"
+        assert info["additionalLocations"] == ["新加坡"]
+        assert info["country"]["descriptor"] == "United States"
+        assert "rednote app" in info["jobDescription"]
+        assert info["jobReqId"] == "19557"
+
+    def test_genuine_zero_board(self, monkeypatch):
+        from jobsearch.sources.site_boards import XiaohongshuAdapter
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+
+        def fake_post(url, body, headers=None):
+            return {"success": True, "data": {"total": 0,
+                                              "totalPage": 0, "list": []}}
+        monkeypatch.setattr(site_boards, "_post_json_urllib", fake_post)
+        assert XiaohongshuAdapter("", None)._fetch_pages(["840"]) == []

@@ -333,6 +333,7 @@ ten proofs per company.
 | `minimax_us_fulltime` | `ats:feishuhire:vrfi1sk8a0` | 14 | 0 (0.0%) | S17; FIRST feishuhire board — MiniMax (Hailuo) SF research/marketing roles; csrf-token + body-offset search API; 1 Consultant row filtered by structured recruit_type; no LI surface yet (honest 0%) |
 | `shengshu_us_fulltime` | `ats:feishuhire:shengshu` | 1 | 0 (0.0%) | S17; Shengshu (Vidu video-gen) — 1 SF KA-sales role of a 106-row board; no LI surface |
 | `horizon_us_fulltime` | `ats:lever:horizon` | 1 | 1 (100.0%) | S17; Horizon Robotics Cupertino Research Scientist (hybrid) — the directory's `horizon` lever slug |
+| `xiaohongshu_us_fulltime` | `custom:xiaohongshu` | 20 | 0 (0.0%) | S17; Xiaohongshu/RedNote — server-side workplace filter (code 840 = 美国), one-call board (duty+qualification in list rows), exact publishTime; honest 0% (bilingual '中文 / English' titles don't verbatim-match LI cards — P3 normalization candidate, the tripcom MJ-strip class) |
 
 
 (matched = LinkedIn corroboration; H-1B wage-band coverage is

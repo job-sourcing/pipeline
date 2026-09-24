@@ -1,0 +1,378 @@
+{
+ "code": 0,
+ "data": {
+  "count": 106,
+  "schema_full_row": {
+   "id": "7689034086178048265",
+   "title": "用户增长",
+   "sub_title": null,
+   "description": "1、负责全新的AI互动智能体的标准化投放增长，为最终投放效果负责；\n2、根据业务产品特点、目标用户画像制定有效的产品增长策略，并确保实施效果；\n3、对海外增长方式有深刻的认知和实操经验，熟悉程序化投放、内容营销、自媒体合作等方式；\n4、能根据不同阶段的目标，制定符合增长目标的组合增长策略；\n4、充分利用网络效应，探索AI时代更有效更具创新方法的增长方式；\n5、配合其他团队，提出建设性意见，反哺产品和内容调优，撬动业务更好更快增长。",
+   "requirement": "1、本科及以上学历，3年以上用户增长经验；\n2、熟悉海外主流媒体渠道获客机制，并且有自己的理解和策略技巧；\n3、对媒体、广告系统、优化策略有比较深的认知和实操经验；\n4、数据敏感，精通Excel，敏锐捕捉数据背后问题，并逐个击破；\n5、出色的学习力、执行力，结果导向型选手，跨部门/跨时区协作配合；较强的英语或其他小语种能力；\n6、有成功AI产品增长、优质内容营销的优先；\n7、有海外产品创业经验的优先。",
+   "job_category": {
+    "id": "6791697805083232519",
+    "name": "广告投放",
+    "en_name": "Advertising",
+    "i18n_name": "广告投放",
+    "depth": 3,
+    "parent": {
+     "id": "6791702736615377165",
+     "name": "市场",
+     "en_name": "Marketing",
+     "i18n_name": "市场",
+     "depth": 2,
+     "parent": {
+      "id": "6791698585114724616",
+      "name": "互联网 / 电子 / 网游",
+      "en_name": "Internet / Electronics / Games",
+      "i18n_name": "互联网 / 电子 / 网游",
+      "depth": 1,
+      "parent": null,
+      "children": null
+     },
+     "children": null
+    },
+    "children": null
+   },
+   "city_info": null,
+   "recruit_type": {
+    "id": "101",
+    "name": "全职",
+    "en_name": "Full-time",
+    "i18n_name": "全职",
+    "depth": 2,
+    "parent": {
+     "id": "1",
+     "name": "社招",
+     "en_name": "Experienced",
+     "i18n_name": "社招",
+     "depth": 1,
+     "parent": null,
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "children": null,
+    "active_status": 1,
+    "selectability": 1
+   },
+   "publish_time": 1790242817217,
+   "job_hot_flag": null,
+   "job_subject": null,
+   "code": null,
+   "department_id": null,
+   "job_function": null,
+   "job_process_id": "7218166302605789501",
+   "recommend_id": null,
+   "city_list": [
+    {
+     "code": "CT_11",
+     "name": "北京",
+     "en_name": "Beijing",
+     "location_type": null,
+     "i18n_name": "北京",
+     "py_name": null,
+     "mdm_code": null,
+     "node_status": null
+    }
+   ],
+   "job_post_info": {
+    "id": null,
+    "job_id": null,
+    "title": null,
+    "sub_title": null,
+    "address_id": null,
+    "address": null,
+    "city": null,
+    "education": null,
+    "experience": null,
+    "description": null,
+    "requirement": null,
+    "min_salary": null,
+    "max_salary": null,
+    "currency": null,
+    "head_count": null,
+    "crator_id": null,
+    "expiry_time": null,
+    "progress": null,
+    "department_id": null,
+    "job_type": null,
+    "recruitment_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "job_process_time": null,
+    "job_in_charge_user_id": null,
+    "biz_create_time": null,
+    "HighlightList": null,
+    "JobChannelPublishList": null,
+    "required_degree": null,
+    "never_expiry": null,
+    "job_hot_flag": null,
+    "subject": null,
+    "sequence": null,
+    "min_level": null,
+    "max_level": null,
+    "job_post_object_value_map": {},
+    "code": null,
+    "job_active_status": null,
+    "job_process_type": null,
+    "biz_modify_time": null,
+    "job_function": null,
+    "job_process": null,
+    "job_process_id": null,
+    "job_category": null,
+    "address_list": [
+     {
+      "id": "7470461493157101572",
+      "name": "海淀区中关村街道中关村东路8号东升大厦A座801室",
+      "en_name": "",
+      "district": null,
+      "city": {
+       "city_code": "CT_11",
+       "name": "北京",
+       "en_name": "Beijing",
+       "i18n_name": "北京",
+       "py_name": "beijing"
+      },
+      "state": {
+       "state_code": "ST_8",
+       "name": "北京",
+       "en_name": "Beijing",
+       "i18n_name": "北京"
+      },
+      "country": {
+       "country_code": "CN_1",
+       "name": "中国大陆",
+       "en_name": "Chinese Mainland",
+       "i18n_name": "中国大陆"
+      },
+      "i18n_name": "海淀区中关村街道中关村东路8号东升大厦A座801室",
+      "active_status": 1
+     }
+    ],
+    "city_list": null,
+    "correlation_job_list": null,
+    "tag_list": null,
+    "department": null,
+    "job_storefront_mode": null,
+    "storefront_list": null,
+    "target_major_list": null,
+    "schema": null,
+    "job_post_process_time_list": null,
+    "job_level_id_list": null
+   },
+   "storefront_mode": 1,
+   "storefront_list": null,
+   "process_type": 1
+  },
+  "schema_trimmed_rows": [
+   {
+    "id": "7688367300945234217",
+    "title": "开放平台产品经理",
+    "city_list": [
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1790087977085
+   },
+   {
+    "id": "7687966513425189174",
+    "title": "销售管理",
+    "city_list": [
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1789994750954
+   },
+   {
+    "id": "7685581852065745194",
+    "title": "品牌运营经理",
+    "city_list": [
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1789441304580
+   },
+   {
+    "id": "7684152748976113963",
+    "title": "Vidu S 开发者生态增长运营",
+    "city_list": [
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1789108864708
+   },
+   {
+    "id": "7684110992041642276",
+    "title": "全栈工程师",
+    "city_list": [
+     {
+      "code": "CT_11",
+      "name": "北京",
+      "en_name": "Beijing",
+      "location_type": null,
+      "i18n_name": "北京",
+      "py_name": null,
+      "mdm_code": null,
+      "node_status": null
+     }
+    ],
+    "recruit_type": {
+     "id": "101",
+     "name": "全职",
+     "en_name": "Full-time",
+     "i18n_name": "全职",
+     "depth": 2,
+     "parent": {
+      "id": "1",
+      "name": "社招",
+      "en_name": "Experienced",
+      "i18n_name": "社招",
+      "depth": 1,
+      "parent": null,
+      "children": null,
+      "active_status": 1,
+      "selectability": 1
+     },
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "publish_time": 1789097343789
+   }
+  ]
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "success": true,
+ "data": {
+  "total": 20,
+  "schema_full_row": {
+   "positionId": 19557,
+   "positionName": "海外TnS政策专家 / Trust & Safety Policy Specialist",
+   "amountInNeed": null,
+   "workplaceIds": "840,702,3100,1100",
+   "workplace": "美国，新加坡，上海市，北京市",
+   "publishTime": "2026-09-23",
+   "recruitStatus": "in_recruitment",
+   "duty": "我们正在寻找一位 Policy Specialist（政策专家）加入Trust & Safety（信任与安全）政策团队。你将参与制定和优化全球内容与社区政策，保障平台在国际市场中的安全性、合规性以及生态健康。\n在这一角色中，你需要应对不断变化的内容风险议题，将政策原则转化为可执行的审核与治理标准，并与法务、产品、工程及审核团队等跨部门伙伴紧密合作。该岗位需要具备良好的分析能力、跨文化理解能力，以及在快速变化的国际环境中做出高质量决策的能力。\n\n主要职责\n1、制定、维护并优化全球内容与社区政策（如社区准则、广告政策、创作者政策等），保障平台安全与生态健康。\n2、将政策原则转化为清晰可执行的审核标准及运营指引，支持审核团队高效执行。\n3、与审核、法务、产品及工程等跨部门团队协作，确保政策理解一致并顺利落地。\n4、识别和评估平台风险，关注政策执行效果及行业趋势，持续推动政策优化和迭代。",
+   "qualification": "1、本科及以上学历，法律、公共政策、国际关系、传媒、社会学等相关专业优先。\n2、4年及以上 Trust & Safety、内容政策、平台治理或相关领域经验，有海外或跨国工作背景优先。\n3、英语流利，可作为工作语言。\n4、具备跨文化沟通能力，理解不同地区用户行为与文化差异。\n5、能适应快节奏、多时区协作的工作环境。\n\n加分项\n1、有全球互联网平台（如 YouTube、Meta、TikTok、Twitter/X 等）内容政策相关经验。\n2、熟悉国际平台治理及数据隐私相关法规（如 GDPR、DSA、COPPA 等）。\n3、有应对跨境内容风险或全球重大事件的经验。",
+   "jobType": "安全运营",
+   "jobProjectName": "",
+   "direction": "non_tech",
+   "directionName": "非技术",
+   "subDirection": "non_tech_operation",
+   "subDirectionName": "运营",
+   "labels": null
+  },
+  "schema_trimmed_rows": [
+   {
+    "positionId": 21357,
+    "positionName": "iOS Software Engineer - rednote",
+    "workplace": "美国",
+    "publishTime": "2026-09-22"
+   },
+   {
+    "positionId": 19841,
+    "positionName": "【美国】后端开发工程师-rednote",
+    "workplace": "美国",
+    "publishTime": "2026-09-17"
+   },
+   {
+    "positionId": 20061,
+    "positionName": "IT基建专家",
+    "workplace": "北京市，上海市，杭州市，美国，新加坡",
+    "publishTime": "2026-09-13"
+   },
+   {
+    "positionId": 19750,
+    "positionName": "存储云平台研发（数据库智能化方向）- 国际化",
+    "workplace": "新加坡，美国",
+    "publishTime": "2026-09-13"
+   },
+   {
+    "positionId": 21494,
+    "positionName": "Devops平台研发工程师-国际化",
+    "workplace": "美国",
+    "publishTime": "2026-09-12"
+   }
+  ]
+ }
+}

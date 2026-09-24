@@ -407,6 +407,21 @@
    ]
   },
   {
+   "label": "xiaohongshu_us_fulltime",
+   "board": "custom:xiaohongshu",
+   "company": "Xiaohongshu",
+   "country": "United States",
+   "li_variants": [
+    "rednote",
+    "Xiaohongshu"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States",
+    "New York, New York, United States"
+   ]
+  },
+  {
    "label": "xpeng_us_fulltime",
    "board": "ats:greenhouse:xpengmotors",
    "company": "XPENG",

@@ -205,7 +205,9 @@ def _dedup_keep_order(items: list[str]) -> list[str]:
 _TT = {"fulltime": "Full time", "full-time": "Full time",
        "parttime": "Part time", "part-time": "Part time",
        "contract": "Contract", "internship": "Internship",
-       "temporary": "Temporary"}
+       "temporary": "Temporary",
+       # feishu recruit_type dialect (live-observed on minimax 2026-09)
+       "outsourced": "Contract"}
 
 
 class GreenhouseAdapter:
@@ -1763,10 +1765,16 @@ class WorkableAdapter:
 
 # The feishu city taxonomy is FLAT (city names, no country hierarchy — the
 # detail's city_info_list_for_delivery is the same flat list). Country is
-# classified from this curated map (alibaba precedent). Unknown city →
-# row unresolved (dropped + loudly counted, complete=False — the
-# never-false-gone B1 contract: a US row may hide behind an unmapped name).
-# 'lle-de-France': the API strips the Î diacritic (live-observed).
+# classified from this curated map (alibaba precedent). Unknown city OR
+# empty city_list → row unresolved (dropped + loudly counted,
+# complete=False — the never-false-gone B1 contract: a US row may hide
+# behind an unmapped name). 'lle-de-France': the API strips the Î
+# diacritic (live-observed; same for 'Sao Paulo').
+# AMBIGUOUS names stay UNMAPPED BY DESIGN (unresolved = loud, never
+# guessed): 'Cambridge' (MA vs UK). 'San Jose' is a latent US/Costa Rica
+# collision (diacritics stripped) — not on any wired board; if a portal
+# ever serves LatAm 'San Jose' rows the fix is the row's mdm_code, not
+# the map (MDCY codes are the disambiguation key, future work).
 _FEISHU_CITY_COUNTRY = {
     # China
     "Beijing": "China", "Shanghai": "China", "Shenzhen": "China",
@@ -1786,7 +1794,8 @@ _FEISHU_CITY_COUNTRY = {
     "Hong Kong (China)": "Hong Kong", "Hong Kong": "Hong Kong",
     "New Territories": "Hong Kong", "Kowloon": "Hong Kong",
     "Macau": "Macau", "Taipei": "Taiwan",
-    # United States
+    # United States (pre-seeded with CN-tech US geos — finding 11:
+    # high-likelihood satellites before future portals need them)
     "San Francisco": "United States", "New York": "United States",
     "Seattle": "United States", "Los Angeles": "United States",
     "San Jose": "United States", "Mountain View": "United States",
@@ -1800,6 +1809,15 @@ _FEISHU_CITY_COUNTRY = {
     "Denver": "United States", "Miami": "United States",
     "Philadelphia": "United States", "Phoenix": "United States",
     "Portland": "United States", "Washington": "United States",
+    "San Mateo": "United States", "Menlo Park": "United States",
+    "Redwood City": "United States", "Fremont": "United States",
+    "Milpitas": "United States", "Santa Monica": "United States",
+    "El Segundo": "United States", "Pasadena": "United States",
+    "Waltham": "United States", "Burlington": "United States",
+    "Arlington": "United States", "Reston": "United States",
+    "Tysons": "United States", "Pittsburgh": "United States",
+    "Ann Arbor": "United States", "Princeton": "United States",
+    "Jersey City": "United States", "San Ramon": "United States",
     # Other international (observed in live boards)
     "Singapore": "Singapore", "London": "United Kingdom",
     "Manchester": "United Kingdom", "Edinburgh": "United Kingdom",
@@ -1826,10 +1844,13 @@ _FEISHU_CITY_COUNTRY = {
 # portal subdomain → display company for the row field (the CSV company
 # comes from the CLI --company flag; this is the adapter-side fallback
 # + the watch's alert text). Unlisted portals pass the code through.
+# momenta + infinigence: live feishu portals confirmed by peer review
+# (248/59 posts, 0 US today) — wire-ready when US roles appear.
 _PORTAL_COMPANY = {
     "vrfi1sk8a0": "MiniMax", "shengshu": "Shengshu",
     "zhipu-ai": "Zhipu AI", "01ai": "01.AI", "sensetime": "SenseTime",
     "agirobot": "AgiBot", "nio": "NIO", "moonshot": "Moonshot AI",
+    "momenta": "Momenta", "infinigence": "Infinigence",
 }
 
 
@@ -1837,39 +1858,56 @@ class FeishuHireAdapter:
     """{portal}.jobs.feishu.cn/api/v1/search/job/posts — Feishu-Hire
     (Lark ATS, ByteDance's throne family) PUBLIC job-board API, the
     standard ATS for CN AI startups (S17 census: MiniMax, Zhipu, 01.AI,
-    Baichuan, AgiBot, SenseTime, Shengshu, NIO + 1000s more).
+    Baichuan, AgiBot, SenseTime, Shengshu, NIO, Momenta, Infinigence
+    + 1000s more).
 
-    Reverse-engineered live 2026-09-25 (browser network capture):
+    Reverse-engineered live 2026-09-25 (browser network capture;
+    peer-review-verified 2026-09-26):
       1. POST {base}/api/v1/csrf/token  → {"data":{"token":...}}
-      2. POST {base}/api/v1/search/job/posts?keyword=&limit=10&offset=0
-         &...&portal_type=6&portal_entrance=1
-         headers X-Csrf-Token + BODY {"offset": N, "limit": 10}
-         → {"data": {"job_post_list": [...], "count": total}}
-         ⚠ offset ONLY works in the BODY (URL offset silently ignored
-         → the naive probe sees 10 of N jobs — census undercount trap);
-         limit caps at 10/call.
+      2. POST {base}/api/v1/search/job/posts?...&portal_type=6&portal_entrance=1
+         headers X-Csrf-Token + BODY {"offset": N, "limit": 200}
+         → {"code": 0, "data": {"job_post_list": [...], "count": total}}
+         ⚠ offset and limit BOTH work ONLY in the BODY (URL params are
+         silently ignored → the naive probe sees 10 of N jobs — census
+         undercount trap); body limit serves up to 200/call (live-proven:
+         185/185 minimax in ONE request, 200/834 agirobot pages).
       3. GET {base}/api/v1/job/posts/{id}?portal_type=6&with_recommend=false
-         → {"data": {"job_post_detail": {...full description...}}}
+         → {"code": 0, "data": {"job_post_detail": {...description...}}}
          (search rows carry null description/requirement — details are
          per-id fetches; the workday details-phase contract unchanged).
       Plain urllib works — no impersonation, no signature (the URL
-      _signature param is optional).
+      _signature param is optional). The envelope's `code` MUST be 0
+      (peer-review SEV-1: a 200-with-code≠0 mid-pagination is an ERROR,
+      never an empty page — a silent short board is the false-gone hole).
+      Detail GETs need NO cookie/token (cross-instance cache-hit safe).
+      Job-page URLs 404 unless the request sends Accept: text/html —
+      browsers always do (the CSV url is user-fine); plain-urllib
+      validators must add the header (peer-review finding 9).
 
     Field map (live-pinned 2026-09-25, minimax 185 rows / shengshu 106):
       reqId            id (raw — the S14 join-safety decision)
       url              {base}/index/position/{id}/detail (universal path
-                       — live-verified to serve both /index/ and custom
-                       portal paths like MiniMax's /379481/)
+                       — serves both /index/ and custom portal paths
+                       like MiniMax's /379481/; see the Accept note above)
       locationsText    city_list[].en_name joined ' | '
       country          ANY city in the curated map mapping to the target
                        (MiniMax rows are 'Beijing/Shanghai/San Francisco'
                        multi-city — a US opening inside a CN-hybrid role
                        IS the user's target; netflix-class precedent).
-                       Unknown city → row unresolved: dropped loudly +
-                       complete=False (never false-gone).
+                       Unknown city OR empty city_list → row unresolved:
+                       dropped loudly + complete=False (never false-gone;
+                       the unified blank-country rule — bytedance/alibaba
+                       precedent). Ambiguous names (Cambridge) stay
+                       UNMAPPED by design (loud, not guessed).
       timeType         recruit_type.en_name ('Full-time' → _TT 'Full
-                       time'; 'Internship' stays; 'Consultant' → pass)
-      departments      job_category.en_name (+ parent hierarchy)
+                       time'; 'Internship' stays; 'Consultant' and
+                       'Outsourced' → Contract — the live-observed
+                       vocabulary is {Full-time, Internship, Consultant,
+                       Outsourced})
+      departments      job_category.en_name + job_function.en_name
+                       (job_function is null on minimax's 185 — single-
+                       source in practice; job_category carries a real
+                       depth-2 parent chain we do not walk)
       postedOn         publish_time epoch-ms → EXACT ISO date (the
                        alibaba publishTime contract)
       description      detail fetch (description + requirement joined)
@@ -1881,8 +1919,8 @@ class FeishuHireAdapter:
                "&subject_id_list=&recruitment_id_list=&portal_type=6"
                "&job_function_id_list=&storefront_id_list="
                "&portal_entrance=1")
-    _PAGE = 10          # API cap (live-measured)
-    _MAX_ROWS = 5000    # circuit breaker
+    _PAGE = 200         # body limit cap (live-verified 2026-09-26)
+    _MAX_OFFSET = 5000  # circuit breaker (offset cap)
 
     def __init__(self, org: str, cfg: Config):
         self.org = org  # the portal subdomain
@@ -1933,8 +1971,15 @@ class FeishuHireAdapter:
         return tok
 
     def _fetch_rows(self) -> list[dict]:
-        """Full board (all pages), cached per process. count is the
-        authoritative total; pages end on a short page OR at count."""
+        """Full board (all pages), cached per process. The envelope's
+        `code` MUST be 0 (peer-review SEV-1: a 200-with-code≠0 is an
+        ERROR — treating it as an empty page silently truncates the
+        board with complete=True = the false-gone hole). count is the
+        authoritative total; pages end on a short page OR at count,
+        and the distinct-id count is asserted against count before
+        caching (a short/mid-pagination anomaly raises — never a
+        silent partial). Cached posts are SHARED state: treat as
+        immutable."""
         spec = f"ats:feishuhire:{self.org}"
         now = time.monotonic()
         hit = _CACHE.get(spec)
@@ -1943,32 +1988,87 @@ class FeishuHireAdapter:
         self._token_refresh()
         posts: list[dict] = []
         offset = 0
-        first_page = True
+        pages = 0
         while True:
-            d = self._post_json(self._SEARCH,
-                                {"offset": offset, "limit": self._PAGE})
+            d = self._search_page(offset)
+            code = d.get("code")
+            if code not in (0, None):
+                raise RuntimeError(
+                    f"feishuhire:{self.org}: envelope code={code} at "
+                    f"offset {offset} (message={str(d.get('message'))
+                        [:120]}) — refusing to cache a short board")
             data = d.get("data") or {}
             page = data.get("job_post_list") or []
             if not isinstance(page, list):
                 raise RuntimeError(f"feishuhire:{self.org}: "
                                    f"job_post_list not a list")
-            if not page and first_page:
-                # SEV-5-style one retry: transient soft-block = empty 200
-                first_page = False
-                time.sleep(1.0)
-                continue
-            posts.extend(page)
             total = data.get("count")
+            if not page:
+                if offset == 0:
+                    # count==0 = genuine empty board (live-verified on a
+                    # moonshot portal); count missing/not-int = shape
+                    # anomaly — raise, never cache an ambiguous empty
+                    if isinstance(total, int) and total == 0:
+                        break
+                    raise RuntimeError(
+                        f"feishuhire:{self.org}: empty page 0 with "
+                        f"count={total!r} — shape anomaly, not an empty "
+                        f"board (nothing cached)")
+                # short/empty page mid-board: trust count or raise
+                if isinstance(total, int) and total == len(posts):
+                    break
+                raise RuntimeError(
+                    f"feishuhire:{self.org}: empty page at offset "
+                    f"{offset} with {len(posts)}/{total} collected — "
+                    f"mid-pagination anomaly, refusing short board")
+            posts.extend(page)
+            pages += 1
             if (len(page) < self._PAGE
                     or (isinstance(total, int) and total
                         and len(posts) >= total)):
                 break
             offset += self._PAGE
-            if offset >= self._MAX_ROWS:
+            if offset > self._MAX_OFFSET:
                 raise RuntimeError(f"feishuhire:{self.org}: "
                                    f"pagination runaway")
+        # SEV-1 (b): distinct ids vs count — catches body-offset drift
+        # (the API ignoring our offset would dedup pages to ~1 page)
+        ids = {str(p.get("id")) for p in posts}
+        if isinstance(total, int) and total and len(ids) != total:
+            raise RuntimeError(
+                f"feishuhire:{self.org}: collected {len(ids)} distinct "
+                f"ids but the board says count={total} — pagination "
+                f"drift (short board), refusing to cache")
+        self._pages_fetched = pages
         _CACHE[spec] = (time.monotonic(), posts)
         return posts
+
+    def _search_page(self, offset: int) -> dict:
+        """One search POST with one transport retry (peer-review SEV-2
+        #5 — the S14 _imp_post_json_retry class: a single hiccup must
+        not fail the run). Retry refreshes the CSRF token + cookie jar."""
+        last: Optional[Exception] = None
+        for attempt in (1, 2):
+            try:
+                return self._post_json(
+                    self._SEARCH,
+                    {"offset": offset, "limit": self._PAGE})
+            except Exception as exc:  # transport errors only — HTTP
+                # errors, timeouts, resets (envelope-code errors raise
+                # in the caller)
+                last = exc
+                if attempt == 1:
+                    # fresh token + fresh cookies, then retry once
+                    self._opener = None
+                    self._token = ""
+                    try:
+                        self._token_refresh()
+                    except Exception:
+                        pass
+                    time.sleep(1.0)
+        raise RuntimeError(f"feishuhire:{self.org}: search page at "
+                           f"offset {offset} failed after retry: "
+                           f"{type(last).__name__}: {last}")
 
     # ── classification helpers ──────────────────────────────────────────
 
@@ -1993,6 +2093,7 @@ class FeishuHireAdapter:
         posts = self._fetch_rows()
         rows: dict[str, dict] = {}
         dropped_country = dropped_tt = unresolved = dupes = 0
+        unmapped: set[str] = set()
         for post in posts:
             rid = str(post.get("id") or "")
             if not rid or rid in rows:
@@ -2005,9 +2106,13 @@ class FeishuHireAdapter:
                 continue
             cities = self._cities(post)
             mapped = [_FEISHU_CITY_COUNTRY.get(c) for c in cities]
-            if cities and any(m is None for m in mapped):
-                # unknown city → unresolved (never guess US)
+            if not cities or any(m is None for m in mapped):
+                # unknown city OR empty city_list → unresolved (the
+                # unified blank-country rule — bytedance/alibaba
+                # precedent: never guess US, never false-gone)
                 unresolved += 1
+                unmapped.update(c for c, m in zip(cities, mapped)
+                                if m is None)
                 continue
             # ANY-city match: a US opening inside a multi-city role counts
             # (netflix-class precedent; MiniMax 'Beijing/Shanghai/San
@@ -2045,13 +2150,18 @@ class FeishuHireAdapter:
                 "countries": [c] if c else [],
             }
         meta = {
-            # unknown cities = possible hidden US rows → never claim done
+            # unknown/blank cities = possible hidden US rows → never
+            # claim done (B1)
             "complete": unresolved == 0,
-            "total": len(posts), "pages": 1,
+            "total": len(posts),
+            "pages": getattr(self, "_pages_fetched", 1),
             "country_client": False,
             "client_filtered": dropped_country + dropped_tt + unresolved,
+            "client_filtered_country": dropped_country,
+            "client_filtered_time": dropped_tt,
             "duplicate_codes": dupes,
             "unresolved_dropped": unresolved,
+            "unmapped_cities": sorted(unmapped),
             "ats": "feishuhire",
         }
         print(f"[{progress_label}] feishuhire:{self.org}: {len(rows)} "
@@ -2059,7 +2169,8 @@ class FeishuHireAdapter:
               + (f" ({dropped_country} non-{country} + {dropped_tt} "
                  f"non-{time_type} + {unresolved} unresolved dropped"
                  f" client-side)" if country or time_type or unresolved
-                 else ""),
+                 else "")
+              + (f" UNMAPPED: {sorted(unmapped)}" if unmapped else ""),
               file=sys.stderr, flush=True)
         return rows, meta
 
@@ -2085,11 +2196,29 @@ class FeishuHireAdapter:
             try:
                 d = self._get_json(f"/api/v1/job/posts/{rid}"
                                    f"?portal_type=6&with_recommend=false")
+                if d.get("code") not in (0, None):
+                    # 200-with-code≠0: error body, NOT an empty JD —
+                    # warn loudly (peer-review finding 6); the row still
+                    # serves with an empty description (B1: data loss ≠
+                    # a degraded description)
+                    print(f"[feishuhire:{self.org}] detail envelope "
+                          f"code={d.get('code')} for {rid} — description "
+                          f"served EMPTY (error body, not an empty JD)",
+                          file=sys.stderr, flush=True)
                 j = ((d.get("data") or {}).get("job_post_detail")) or {}
                 desc = str(j.get("description") or "")
                 req = str(j.get("requirement") or "")
-                cities = self._cities(j) or cities
-            except Exception as exc:  # detail failure ≠ data loss (B1)
+                if self._cities(j):
+                    # detail cities win; recompute the country from the
+                    # SAME list the payload serves (consistency by
+                    # construction — peer-review finding 6)
+                    cities = self._cities(j)
+                    mapped = [_FEISHU_CITY_COUNTRY.get(x) for x in cities]
+                    c = next((m for m in mapped
+                              if m and workday.country_str_matches(
+                                  m, "United States")),
+                             mapped[0] if mapped else "")
+            except Exception as exc:  # transport failure ≠ data loss (B1)
                 print(f"[feishuhire:{self.org}] detail fetch failed for "
                       f"{rid}: {exc}", file=sys.stderr, flush=True)
             jc = ((post.get("job_category") or {}).get("en_name")) or ""
@@ -2113,8 +2242,229 @@ class FeishuHireAdapter:
         return None
 
 
+def _post_json_urllib(url: str, body: dict,
+                      headers: Optional[dict] = None) -> dict:
+    """Plain-urllib JSON POST (no impersonation, no session) — for
+    endpoints that serve plain requests and REJECT chrome-impersonation
+    (the alibaba-cloud inversion class; also xiaohongshu, live-verified
+    2026-09-26). Raises on non-JSON bodies (structural guard — the
+    tripcom XML-fallback trap)."""
+    h = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+         "Content-Type": "application/json",
+         "Accept": "application/json"}
+    if headers:
+        h.update(headers)
+    req = urllib.request.Request(url, data=json.dumps(body).encode(),
+                                 headers=h, method="POST")
+    with urllib.request.urlopen(req, timeout=30) as r:
+        raw = r.read().decode("utf-8", "replace")
+    if not raw.lstrip().startswith(("{", "[")):
+        raise RuntimeError(f"{url}: non-JSON response (first 60: "
+                           f"{raw[:60]!r})")
+    return json.loads(raw)
+
+
+# ── xiaohongshu (own platform: job.xiaohongshu.com recruit API) ──────────
+
+class XiaohongshuAdapter:
+    """job.xiaohongshu.com/websiterecruit/position/pageQueryPosition —
+    Xiaohongshu/RedNote's own board. SERVER-side workplace filter:
+    `workplaces: ["840"]` = 美国 (United States) — the tripcom pattern
+    (ANY-match: a '美国，新加坡，上海市，北京市' multi-site row IS in the
+    US-filtered result — the netflix-class semantics).
+
+    Reverse-engineered live 2026-09-26 (browser XHR capture + plain-urllib
+    verification — NO anti-bot on this endpoint):
+      POST body {positionName:"", pageNum:N, pageSize:30,
+                 recruitType:"social", workplaces:["840"]}
+      → {success:true, data:{total, totalPage, list:[...]}}
+    Rows carry the COMPLETE posting (duty + qualification IN the list
+    rows — one-call board, zero detail fetches), exact ISO publishTime,
+    workplace names as a comma string ('美国，新加坡，上海市，北京市').
+
+    Field map (live-pinned 2026-09-26, 20 US rows of the 863-position
+    social board):
+      reqId            positionId (int → str; RAW — S14 join-safety)
+      title            positionName
+      url              job.xiaohongshu.com/social/position/{id}
+      locationsText    workplace (the site's own display string)
+      postedOn         publishTime (exact ISO date; never censored)
+      timeType         "" — the API carries no employment type (honest
+                       blank; config sets time_type "")
+      departments      directionName / subDirectionName / jobType
+      description      duty + qualification (from the list row itself)
+    country: server-side filter — country_client=False; all rows are
+    US-workplace rows by construction.
+    """
+
+    KIND = "xiaohongshu"
+    _API = ("https://job.xiaohongshu.com/websiterecruit/position/"
+            "pageQueryPosition")
+    _HDRS = {"Content-Type": "application/json",
+             "Accept": "application/json",
+             "Referer": "https://job.xiaohongshu.com/social/position",
+             "Origin": "https://job.xiaohongshu.com"}
+    _US_WORKPLACE = "840"     # 美国 — live-observed filter value
+    _PAGE = 30
+    _MAX_PAGES = 60           # circuit breaker
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org  # unused (custom: grammar)
+        self.cfg = cfg
+        self.company = "Xiaohongshu"
+
+    def _fetch_pages(self, workplaces: list[str]) -> list[dict]:
+        """Full filtered board (all pages), cached per process."""
+        key = f"custom:xiaohongshu:{'+'.join(workplaces) or 'all'}"
+        now = time.monotonic()
+        hit = _CACHE.get(key)
+        if hit and now - hit[0] < _CACHE_TTL:
+            return hit[1]
+        posts: list[dict] = []
+        page_num = 1
+        total: Optional[int] = None
+        while True:
+            body = {"positionName": "", "pageNum": page_num,
+                    "pageSize": self._PAGE, "recruitType": "social",
+                    "workplaces": workplaces}
+            d = _post_json_urllib(self._API, body, self._HDRS)
+            if d.get("success") is not True:
+                raise RuntimeError(
+                    f"{self._API}: success={d.get('success')} "
+                    f"(errorMsg={str(d.get('errorMsg'))[:120]}) — refusing "
+                    f"to serve an error body as a board")
+            data = d.get("data") or {}
+            page = data.get("list") or []
+            if not isinstance(page, list):
+                raise RuntimeError(f"{self._API}: list not a list")
+            if total is None:
+                total = data.get("total")
+                if not isinstance(total, int):
+                    raise RuntimeError(
+                        f"{self._API}: count missing (total="
+                        f"{total!r}) — refusing ambiguous board state")
+            if not page and page_num == 1:
+                if total == 0:
+                    break      # genuine empty (server-filtered 0)
+                raise RuntimeError(
+                    f"{self._API}: empty page 1 with total={total} — "
+                    f"shape anomaly, nothing cached")
+            posts.extend(page)
+            if len(posts) >= total or len(page) < self._PAGE:
+                break
+            page_num += 1
+            if page_num > self._MAX_PAGES:
+                raise RuntimeError(f"{self._API}: pagination runaway")
+        if len({str(p.get("positionId")) for p in posts}) != len(posts) \
+                or len(posts) != total:
+            raise RuntimeError(
+                f"{self._API}: collected {len(posts)} rows but "
+                f"total={total} — pagination drift, refusing short board")
+        _CACHE[key] = (time.monotonic(), posts)
+        return posts
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        # SERVER-side US filter (the tripcom class): workplaces=["840"].
+        # A non-US country param has no taxonomy code — refuse loudly
+        # (never serve US rows under a foreign filter).
+        workplaces = []
+        if country:
+            if not workday.country_str_matches("United States", country):
+                raise RuntimeError(
+                    "xiaohongshu: only the United States workplace filter "
+                    "is mapped (taxonomy code 840); refusing to guess a "
+                    f"code for {country!r}")
+            workplaces = [self._US_WORKPLACE]
+        jobs = self._fetch_pages(workplaces)
+        rows: dict[str, dict] = {}
+        dropped_tt = dupes = 0
+        for job in jobs:
+            rid = str(job.get("positionId") or "")
+            if not rid or rid in rows:
+                if rid:
+                    dupes += 1
+                continue
+            tt = ""  # the API carries no employment type — honest blank
+            if time_type:
+                dropped_tt += 1     # nothing is filterable: all drop
+                continue
+            label, iso = _posted_label(str(job.get("publishTime") or ""))
+            desc = str(job.get("duty") or "")
+            qual = str(job.get("qualification") or "")
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(job.get("positionName") or ""),
+                "company": self.company,
+                "url": (f"https://job.xiaohongshu.com/social"
+                        f"/position/{rid}"),
+                "externalPath": f"/social/position/{rid}",
+                "locationsText": str(job.get("workplace") or ""),
+                "postedOn": label,
+                "timeType": tt,
+                "bulletFields": [rid],
+                "ats": "xiaohongshu",
+                "firstPublishedIso": iso,
+                "departments": _dedup_keep_order(
+                    [str(job.get("directionName") or ""),
+                     str(job.get("subDirectionName") or ""),
+                     str(job.get("jobType") or "")]),
+                "countries": ["United States"] if country else [],
+                "description": (desc + "\n\n" + qual).strip(),
+            }
+        meta = {
+            "complete": True, "total": len(jobs), "pages": 1,
+            "country_client": False,   # server-side workplace filter
+            "client_filtered": dropped_tt,
+            "duplicate_codes": dupes,
+            "ats": "xiaohongshu",
+        }
+        print(f"[{progress_label}] xiaohongshu: {len(rows)} rows "
+              f"(server-side workplaces={workplaces}, total={len(jobs)})"
+              + (f" ({dropped_tt} non-{time_type} dropped — the API "
+                 f"serves no employment type)" if time_type else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        for job in self._fetch_pages([self._US_WORKPLACE]
+                                     if country else []):
+            if str(job.get("positionId")) != rid:
+                continue
+            label, iso = _posted_label(str(job.get("publishTime") or ""))
+            desc = str(job.get("duty") or "")
+            qual = str(job.get("qualification") or "")
+            workplace = str(job.get("workplace") or "")
+            return {
+                "jobPostingInfo": {
+                    "title": str(job.get("positionName") or ""),
+                    "location": workplace.split("，")[0] if workplace else "",
+                    "additionalLocations": workplace.split("，")[1:],
+                    "jobDescription": (desc + "\n\n" + qual).strip(),
+                    "timeType": "",
+                    "startDate": iso or "",
+                    "externalUrl": (f"https://job.xiaohongshu.com"
+                                    f"/social/position/{rid}"),
+                    "jobReqId": rid,
+                    "postedOn": label,
+                    "country": {"descriptor": "United States"}
+                    if country else None,
+                },
+                "hiringOrganization": {"name": self.company},
+                "similarJobs": [],
+                "firstPublishedIso": iso,
+            }
+        return None
+
+
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "lever": LeverAdapter, "workable": WorkableAdapter,
              "feishuhire": FeishuHireAdapter,
              "bytedance": ByteDanceAdapter, "alibaba": AlibabaAdapter,
-             "tripcom": TripComAdapter}
+             "tripcom": TripComAdapter, "xiaohongshu": XiaohongshuAdapter}

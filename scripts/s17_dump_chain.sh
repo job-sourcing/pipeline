@@ -26,11 +26,18 @@ case "$LABEL" in
     COUNTRY='United States'; TTYPE='Full time'
     VARIANTS='Horizon Robotics'
     SLICES='United States;Cupertino, California, United States' ;;
+  xiaohongshu)
+    BOARD='custom:xiaohongshu'; COMPANY='Xiaohongshu'
+    COUNTRY='United States'; TTYPE=''
+    VARIANTS='rednote,Xiaohongshu'
+    SLICES='United States;San Francisco, California, United States;New York, New York, United States' ;;
   *) echo "unknown label $LABEL"; exit 2 ;;
 esac
 
-TTFLAG=()
-[ -n "$TTYPE" ] && TTFLAG=(--time-type "$TTYPE")
+# ALWAYS pass --time-type explicitly: board_dump defaults to 'Full time'
+# when the flag is absent — boards with no employment-type field (xhs)
+# need the EXPLICIT empty string or every row drops.
+TTFLAG=(--time-type "$TTYPE")
 
 run() { echo "== [$LABEL] $* =="; python3 scripts/board_dump.py \
   --board "$BOARD" --company "$COMPANY" --label "${LABEL}_us_fulltime" \

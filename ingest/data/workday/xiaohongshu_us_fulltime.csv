@@ -1,0 +1,475 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+19557,海外TnS政策专家 / Trust & Safety Policy Specialist,Xiaohongshu,Xiaohongshu,,Posted 1 Days Ago,2026-09-23,1,美国,4,美国; 新加坡; 上海市; 北京市,false,,United States,,0,"我们正在寻找一位 Policy Specialist（政策专家）加入Trust & Safety（信任与安全）政策团队。你将参与制定和优化全球内容与社区政策，保障平台在国际市场中的安全性、合规性以及生态健康。
+在这一角色中，你需要应对不断变化的内容风险议题，将政策原则转化为可执行的审核与治理标准，并与法务、产品、工程及审核团队等跨部门伙伴紧密合作。该岗位需要具备良好的分析能力、跨文化理解能力，以及在快速变化的国际环境中做出高质量决策的能力。
+
+主要职责
+1、制定、维护并优化全球内容与社区政策（如社区准则、广告政策、创作者政策等），保障平台安全与生态健康。
+2、将政策原则转化为清晰可执行的审核标准及运营指引，支持审核团队高效执行。
+3、与审核、法务、产品及工程等跨部门团队协作，确保政策理解一致并顺利落地。
+4、识别和评估平台风险，关注政策执行效果及行业趋势，持续推动政策优化和迭代。
+
+1、本科及以上学历，法律、公共政策、国际关系、传媒、社会学等相关专业优先。
+2、4年及以上 Trust & Safety、内容政策、平台治理或相关领域经验，有海外或跨国工作背景优先。
+3、英语流利，可作为工作语言。
+4、具备跨文化沟通能力，理解不同地区用户行为与文化差异。
+5、能适应快节奏、多时区协作的工作环境。
+
+加分项
+1、有全球互联网平台（如 YouTube、Meta、TikTok、Twitter/X 等）内容政策相关经验。
+2、熟悉国际平台治理及数据隐私相关法规（如 GDPR、DSA、COPPA 等）。
+3、有应对跨境内容风险或全球重大事件的经验。",678,https://job.xiaohongshu.com/social/position/19557,,,,,,,no_match,,2026-09-24,,2026-09-24,,1,startDate,false,0,,,,,非技术,2026-09-23,,false,,,,,,
+21357,iOS Software Engineer - rednote,Xiaohongshu,Xiaohongshu,,Posted 2 Days Ago,2026-09-22,2,美国,1,美国,false,,United States,,0,"About Us:
+rednote is one of the fastest-growing lifestyle community platforms in the world. We are building our client engineering team in New York City to craft product experiences for users across the globe. You will work on core features of the rednote mobile apps (iOS/Android), collaborating with teams across the US, Singapore, and China to bring ""share and discover a wonderful life"" to a global audience.
+rednote 是全球增长最快的生活方式社区之一，我们正在纽约组建客户端研发团队，服务全球用户的产品体验。你将参与 rednote 客户端iOS的核心功能研发，与中国、新加坡及美国多地团队协作，把""分享和发现美好生活""带给全世界。
+
+Job Responsibilities:
+1.Design, build, and maintain core modules of the rednote app (iOS or Android), covering content consumption (Feed / note details / comments), content creation, and creator tools
+2.Optimize product experience for North American and global users: app launch time, smoothness, binary size, and performance under weak network conditions
+3.Drive 0-to-1 development of market-specific features, including localized interactions, multi-language support, and regional compliance capabilities (privacy, minor protection, etc.)
+4.Partner closely with product, design, backend, and algorithm teams to iterate fast while maintaining production quality; participate in code reviews and technical design
+5.Strengthen client infrastructure: stability monitoring, performance tracing, A/B experimentation framework, and CI/CD pipelines
+6.Explore AI-assisted development workflows and on-device intelligence scenarios
+1.负责 rednote 客户端（iOS 或 Android）核心业务模块的设计、开发与维护，包括内容消费（Feed/笔记详情/评论）、内容发布、创作者工具等方向
+2.面向北美及全球用户优化产品体验：启动速度、流畅度、包体积、弱网表现等核心性能指标
+3.参与海外差异化功能的 0 到 1 建设，包括本地化交互、多语言适配、区域合规能力（隐私、未成年人保护等）
+4.与产品、设计、后端及算法团队紧密协作，快速迭代并保障线上质量；参与代码评审与技术方案设计
+5.建设与完善客户端基础设施：稳定性监控、性能追踪、A/B 实验框架、CI/CD 流程
+6.探索 AI 辅助研发与端上智能场景的落地
+
+Job Requirements:
+1.Bachelor or above in Computer Science or related field, with 3+ years of iOS or Android development experience
+2.Proficiency in Swift/Objective-C, solid knowledge of UIKit/SwiftUI, memory management, and performance tuning
+3.Experience shipping and operating large-scale apps (1M+ DAU), with a strong understanding of client architecture (modularization, componentization, cross-platform approaches)
+4.Solid CS fundamentals: data structures, algorithms, networking, and operating systems
+5.Able to work effectively in both English and Chinese across time zones
+1.计算机相关专业本科及以上学历，3 年以上 iOS 或 Android 开发经验
+2.iOS 方向：精通 Swift/Objective-C，熟悉 UIKit/SwiftUI、内存管理与性能调优；
+3.有大型 App（DAU 百万级以上）的开发与线上问题处理经验，理解客户端架构设计（组件化、模块化、跨端方案）
+4.具备扎实的计算机基础：数据结构、算法、网络、操作系统
+5.中英文可作为工作语言，能与跨时区团队高效协作
+
+Nice to Have:
+1.Experience with community / social / content products and an understanding of UGC-specific client challenges
+2.Experience with global products: multi-language, multi-timezone, and privacy compliance (GDPR / CCPA / COPPA)
+3.Cross-platform experience (Flutter / React Native) or dynamic framework development
+4.Background in audio/video, image processing, or on-device ML
+5.Active open-source contributions or technical writing
+1.有社区/社交/内容类产品经验，理解 UGC 产品的客户端技术特点
+2.有出海产品经验，熟悉多语言/多时区/隐私合规（GDPR/CCPA/COPPA）适配
+3.有 Flutter/React Native 跨端经验，或参与过动态化框架建设
+4.有音视频、图像处理、端智能（On-device ML）方向的积累
+5.活跃的开源贡献或技术博客",3154,https://job.xiaohongshu.com/social/position/21357,,,,,,,no_match,,2026-09-24,,2026-09-24,,2,startDate,false,0,,,,,前端开发,2026-09-22,,false,,,,,,
+19841,【美国】后端开发工程师-rednote,Xiaohongshu,Xiaohongshu,,Posted 7 Days Ago,2026-09-17,7,美国,1,美国,false,,United States,,0,"主要职责：
+负责支持小红书国际化业务在美国及全球市场的系统开发与维护工作，赋能海外业务高效迭代与规模化拓展。
+参与服务端核心模块的技术选型与架构设计，构建高性能、高可用的分布式系统，确保其在跨地域、高并发场景下的稳定性、可扩展性与低延迟。
+与分布在全球的产品、运营、前后端及测试团队紧密协作，高效推进国际化项目的交付落地与持续优化。
+
+Key Responsibilities:
+Be responsible for supporting the system development and maintenance of Xiaohongshu's international business in the U.S. and global markets, empowering the efficient iteration and large-scale expansion of overseas business.
+Participate in technology selection and architectural design of core server-side modules, building high-performance, highly available distributed systems to ensure stability, scalability, and low latency under cross-regional, high-concurrency scenarios.
+Collaborate closely with globally distributed product, operations, frontend, backend, and QA teams to efficiently deliver international projects and drive continuous system optimization.
+
+任职要求：
+拥有计算机科学或相关专业本科及以上学历，具备扎实的计算机科学基础。至少2年以上后端开发经验，拥有国际化业务或面向海外用户的产品开发经验者将获优先考虑。
+熟练掌握Java或Go至少一门编程语言，具备优秀的代码设计能力与严谨的编码规范。善于运用设计模式提升工程效率，降低系统复杂性及长期维护成本。
+精通MySQL、Redis、RocketMQ/Kafka、ElasticSearch等常用技术栈，理解其核心原理与应用场景。有开源项目贡献经验者尤佳。
+深入理解分布式系统设计，对微服务架构及服务治理（如服务发现、配置管理、流量调度、可观测性、容错容灾）有丰富实践经验。具备高并发系统设计与性能调优经验者优先。
+具备强烈的责任心和业务敏感度，能主动承担复杂业务模块的端到端职责。拥有出色的跨团队、跨地域沟通与协作能力，能高效驱动问题解决，适应多元、快节奏的国际化团队工作环境。
+能够在英文工作环境中进行有效沟通（书面及口语），与全球团队顺畅协作。
+
+Qualifications:
+Bachelor's degree or higher in Computer Science or a related field, with solid foundational knowledge. Minimum 2+ years of backend development experience, with preference given to candidates with international business or overseas user-facing product development experience.
+Proficient in at least one of Java or Go programming languages, with excellent code design skills and strict coding standards. Skilled in applying design patterns to improve engineering efficiency and reduce system complexity and long-term maintenance costs.
+Deep understanding of MySQL, Redis, RocketMQ/Kafka, ElasticSearch, and other common technologies, with knowledge of their core principles and application scenarios. Open-source project contributions are a strong plus.
+Strong understanding of distributed system design, with practical experience in microservices architecture and service governance (e.g., service discovery, configuration management, traffic routing, observability, fault tolerance, and disaster recovery). Experience in high-concurrency system design and performance optimization is preferred.
+Strong sense of ownership and business awareness, capable of taking end-to-end responsibility for complex business modules. Excellent cross-team and cross-regional communication and collaboration skills, able to drive problem-solving efficiently and adapt to a diverse, fast-paced international team environment.
+Ability to communicate effectively in English (both written and spoken) and collaborate seamlessly with global teams.",2824,https://job.xiaohongshu.com/social/position/19841,,,,,,,no_match,,2026-09-24,,2026-09-24,,7,startDate,false,0,,,,,后端开发,2026-09-17,,false,,,,,,
+20061,IT基建专家,Xiaohongshu,Xiaohongshu,,Posted 11 Days Ago,2026-09-13,11,北京市,5,北京市; 上海市; 杭州市; 美国; 新加坡,false,,United States,,0,"1、整体负责海外职场扩张相关的IT项目，对全球职场建设的交付结果负责；
+2、在项目规划阶段能够提供专业前置咨询能力，为职场扩展提供专业的IT相关技术需求咨询及顾问能力；
+3、在设计阶段配合设计师及工程团队，保障相关IT基建标准落地；
+4、在施工阶段管理各类实施资源，管理风险并协调国内外各类供应商确保项目落地；
+5、对全球的存量职场基础设施进行日常维护运营管理，确保整体职场环境完整性与业务的一致性；
+6、面向IT职场智能化业务，与IT技术团队配合完成安防/传感器/自动化交付等技术解决方案的工程化专业落地问题；
+
+1、10年以上工程相关工作经验，具备在机电，建筑或结构方向担任大型项目负责人的经验；
+2、具备跨国公司工作经验；同时具备海外与国内落地经验，有海外本地供应商资源管理经验优先；
+3、熟悉IT相关的强弱电施工标准，并且管理过弱电施工项目；
+4、具备建筑咨询管理经验优先；
+5、具备物业管理经验优先；
+6、中文流利，英文流利。",418,https://job.xiaohongshu.com/social/position/20061,,,,,,,no_match,,2026-09-24,,2026-09-24,,11,startDate,false,0,,,,,研发,2026-09-13,,false,,,,,,
+19750,存储云平台研发（数据库智能化方向）- 国际化,Xiaohongshu,Xiaohongshu,,Posted 11 Days Ago,2026-09-13,11,新加坡,2,新加坡; 美国,false,,United States,,0,"1、主导存储云平台架构设计与核心开发：负责小红书存储平台产品的架构演进与核心模块开发，探索AI-Native架构下的智能存储解决方案，推动平台从工具型向智能型升级。
+2、构建智能化运维体系：独立负责存储与数据库自助管理平台的技术规划与落地，结合大模型能力打造智能运维Agent，实现自然语言交互式运维，降低数据库使用门槛。
+3、驱动运维智能化转型：基于LLM Agent技术重构自动化运维平台，构建具备自诊断、自修复、自优化能力的智能运维体系，实现从""人工运维""到""无人值守""的跨越。
+4、深耕AI+数据库创新场景：主导大模型在数据库领域的深度应用落地，包括智能SQL优化、异常检测与根因分析、容量预测与自动扩缩容、智能告警降噪等核心场景。
+5、引领产品体验升级：持续跟踪业界前沿AI Agent产品（如OpenClaw、Claude Code、Devin等），将先进AI交互范式融入数据库存储平台，打造行业标杆级智能化运维体验。
+
+1、Lead Storage Cloud Platform Architecture & Core Development — Drive the architectural evolution and core module development of Rednote's storage platform. Explore AI-Native architectures for intelligent storage solutions and transform the platform from a tooling-focused system into an intelligent platform.
+2、Build Intelligent Operations System — Own the technical planning and execution of a self-service storage and database management platform. Leverage large language model capabilities to build an intelligent operations agent that supports natural language interaction, lowering the barrier to database operations.
+3、Drive Intelligent Operations Transformation — Re-architect the automated operations platform based on LLM Agent technologies to build a self-diagnosing, self-healing, and self-optimizing intelligent operations system — enabling a shift from manual operations to fully automated, zero-touch operations.
+4、Deepen AI + Database Innovation — Lead practical LLM adoption in database domains, including: intelligent SQL optimization, anomaly detection and root cause analysis, capacity prediction and auto-scaling, and intelligent alerting noise reduction.
+5、Elevate Product Experience — Continuously track leading AI Agent products (such as Cursor, Claude Code, Devin, etc.) and integrate advanced AI interaction paradigms into the database storage platform to deliver industry-leading intelligent operations experience.
+
+1、扎实的工程基础：精通Go/Java/Python至少一门后端语言，熟悉Vue/React等前端框架，具备基于大模型API（OpenAI、Claude、通义千问等）开发Agent应用的实战经验。
+2、深入的存储领域经验：对分布式存储产品有深度实践经验，熟悉分布式KV/缓存、MySQL、分布式数据库、图数据库、表格存储、对象存储等至少两种以上系统原理及运维实践。
+3、AI应用开发能力：熟练掌握大模型应用开发技术栈，包括RAG、Prompt Engineering、Function Calling、多Agent协作框架（LangChain、LlamaIndex、AutoGen等），有完整项目落地经验。
+4、产品思维与AI敏感度：对OpenClaw、Claude Code、Cursor、GitHub Copilot等AI工具有深入理解和实践经验，具备将AI能力转化为产品功能的设计思维和工程落地能力。
+5、优秀的软实力：具备出色的需求拆解和技术攻坚能力，擅长跨团队沟通协作，有良好的客户服务意识和Ownership精神，对AI技术在基础设施领域的应用有前瞻性判断。
+6、加分项：有技术博客、开源项目贡献、AI相关竞赛获奖经历；有AIOps、智能运维、LLM Agent相关领域项目经验者优先。
+
+1、Strong Engineering Foundation — Proficient in at least one backend programming language (Go / Java / Python); familiar with frontend frameworks (Vue / React); hands-on experience building Agent applications using large model APIs (OpenAI, Claude, Qwen, etc.).
+2、Deep Storage Domain Experience — Hands-on experience with distributed storage; familiar with the principles and operational practices of at least two of: distributed KV/cache, MySQL, distributed databases, graph databases, table storage, or object storage.
+3、AI Application Development — Proficient in the LLM application development stack: RAG, Prompt Engineering, Function Calling, and multi-agent frameworks (LangChain, LlamaIndex, AutoGen, etc.); experience shipping complete projects.
+4、Product Thinking & AI Fluency — Deep practical experience with AI tools such as Cursor, Claude Code, GitHub Copilot, etc.; ability to translate AI capabilities into product features and engineering delivery.
+5、Strong Soft Skills — Excellent at breaking down requirements and driving technical execution; strong cross-team communicator; customer-oriented mindset and strong sense of ownership; forward-looking judgment on AI in infrastructure; fluent in both English and Chinese (spoken and written).
+6、Bonus — A technical blog, open-source contributions, or AI competition awards are a plus; hands-on experience in AIOps, intelligent operations, or LLM Agent development is highly preferred.
+
+我们提供：
+1、参与小红书亿级流量存储平台建设的实战机会
+2、与顶尖AI和基础设施团队合作的技术氛围
+3、在AI+数据库前沿领域的深度探索空间",3931,https://job.xiaohongshu.com/social/position/19750,,,,,,,no_match,,2026-09-24,,2026-09-24,,11,startDate,false,0,,,,,研发,2026-09-13,,false,,,,,,
+21494,Devops平台研发工程师-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,美国,1,美国,false,,United States,,0,"1、负责国内 DevOps、高可用平台在海外区域的部署、集成、适配和运营支持，推动平台能力按计划落地。
+2、评估海外公有云、私有云或数据中心环境在计算、网络、存储、Kubernetes、安全及合规等方面的差异，制定并执行适配方案。
+3、在 DevOps 方向，负责服务发布平台、变更管控及规模化运维平台的海外接入，完善 CI/CD、基础设施自动化和发布运维流程。
+4、在高可用方向，负责应急预案、故障切换、容灾验证及混沌演练等能力的落地，跟进问题整改并持续提升海外业务可靠性。
+5、参与海外生产环境的日常运维和故障处置，能够快速定位发布、基础设施及平台集成问题，并推动根因分析和闭环改进。
+6、沉淀部署文档、操作手册、应急预案和标准作业流程，提升海外平台交付和运维效率。
+7、与国内平台研发团队以及海外基础设施、网络、安全和业务团队协作，管理实施进度、依赖和风险，及时反馈海外场景的产品改进需求。
+
+1、Drive the rollout, integration, localization, and operational support of DevOps and high-availability platforms across international regions, ensuring platform capabilities are delivered reliably and on schedule.
+2、Evaluate infrastructure differences across international public cloud, private cloud, and data center environments, including compute, networking, storage, Kubernetes, security, and compliance requirements. Design and implement practical adaptation plans.
+3、Support the international adoption of internal DevOps platforms, including service release systems, change management platforms, and large-scale operations tooling. Improve CI/CD pipelines, infrastructure automation, and release operations workflows.
+4、Implement high-availability capabilities for international environments, including incident response playbooks, failover mechanisms, disaster recovery validation, and chaos engineering practices. Track remediation actions and continuously improve service reliability.
+5、Participate in production operations and incident response for international environments. Quickly identify and troubleshoot issues related to releases, infrastructure, and platform integration, and drive root-cause analysis and closed-loop improvements.
+6、Maintain deployment guides, operational runbooks, incident response playbooks, and standard operating procedures to improve delivery quality and operational efficiency across international regions.
+7、Work closely with central platform R&D teams, as well as international infrastructure, networking, security, and business teams. Manage project progress, dependencies, and risks, and provide feedback to improve platform capabilities for international scenarios.
+
+1、本科及以上学历，计算机、软件工程或相关专业优先。
+2、具备 DevOps、SRE、云平台或基础设施工程相关经验，有较强的实际交付和问题解决能力。
+3、熟悉 Linux、计算机网络及常见基础设施组件，能够独立进行系统部署、配置和故障排查。
+4、熟悉 Kubernetes、Helm、Terraform 等云原生及基础设施即代码技术；具有 KubeVela 使用经验者优先。
+5、熟悉 Go、Java、Python 或 Shell 中的一种或多种语言，能够编写自动化工具，并具备阅读和调试服务端代码的能力。
+6、熟悉至少一种主流公有云或企业级私有云环境，理解多区域部署、网络连通、权限管理及安全隔离等基本概念。
+7、了解监控、日志和告警体系，具有 Prometheus、Grafana、ELK/OpenSearch 或 OpenTelemetry 等相关经验。
+8、中英文流利，能够在国际化团队环境中进行技术沟通与协作。
+9、责任心强，执行力和推动力良好，能够将中心平台的设计方案转化为稳定、可维护的本地实施。
+
+1、Bachelor’s degree or above in Computer Science, Software Engineering, or a related field.
+2、Hands-on experience in DevOps, SRE, cloud platforms, or infrastructure engineering, with strong delivery and troubleshooting capabilities.
+3、Solid understanding of Linux, computer networking, and common infrastructure components. Able to independently perform deployment, configuration, and issue diagnosis.
+4、Familiar with cloud-native and Infrastructure-as-Code technologies, such as Kubernetes, Helm, and Terraform. Experience with KubeVela is a plus.
+5、Proficient in at least one programming or scripting language, such as Go, Java, Python, or Shell. Able to build automation tools and read/debug backend service code.
+6、Familiar with at least one major public cloud or enterprise private cloud environment. Understand concepts such as multi-region deployment, network connectivity, access control, and security isolation.
+7、Familiar with monitoring, logging, and alerting systems. Experience with Prometheus, Grafana, ELK/OpenSearch, OpenTelemetry, or similar tools is preferred.
+8、Fluent in both English and Chinese, with the ability to communicate effectively in a cross-region, international team environment.
+9、Strong ownership, execution, and communication skills. Able to translate central platform designs into stable, maintainable implementations in local international environments.
+
+加分项
+-有内部平台海外落地、基础设施迁移或多区域部署经验。
+-有大型互联网公司 DevOps 工具链或规模化运维经验。
+-有容灾、混沌工程、容量管理或重大故障处置经验。
+-了解数据驻留、隐私保护及所在地区基础设施合规要求。
+
+Preferred Qualifications
+-Experience rolling out internal platforms in international regions, infrastructure migration, or multi-region deployment.
+-Experience with DevOps toolchains or large-scale operations platforms in major internet or cloud companies.
+-Experience in disaster recovery, chaos engineering, capacity management, or major incident response.
+-Understanding of data residency, privacy protection, and regional infrastructure compliance requirements.",4546,https://job.xiaohongshu.com/social/position/21494,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
+20305,IT Business Partner,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,美国,2,美国; 新加坡,false,,United States,,0,"1、Build and sustain partnerships with local business teams in your dedicated regions and across multiple IT function teams as the point of contact(POC)；
+2、Engage with local support resources and aligned with global IT strategy to maintain technological health；
+3、Work as a key escalation contact for your region on critical IT technology escalations and emerging issues in real-time. Assist with coordinating rapid resolution, root cause analysis, and stakeholder communication；
+4、Work as a key partner in local production validation testing to ensure new systems meet IT operational requirements and quality standards before rollout；
+5、Work as a global team members, manage local resources to support IT global strategy；
+
+1、Demonstrated experience with IT system technology and service managements;
+2、Proven project management skill with time management and prioritization abilities;
+3、Strong troubleshooting and problem solving skills;
+4、General knowledge of network and IT infrastructure, general knowledge of system development and product designing;
+5、Ability to work variable hours including weekends and holidays；
+6、Bachelor's degree or equivalent relevant work experience. Excellent written and spoken communication skills in English and Mandarin;",1255,https://job.xiaohongshu.com/social/position/20305,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
+19627, SRE工程师-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,新加坡,2,新加坡; 美国,false,,United States,,0,"1、国际化架构与容灾建设 — 参与公司国际化基础设施架构设计与落地，负责跨 Region 架构、容灾与高可用能力建设，推动关键业务具备多 Region 部署、容灾切换及故障隔离能力，提升海外业务整体稳定性水平。
+2、海外基础技术平台建设与运维 — 负责公司基础技术管控平台（如发布系统、监控告警、配置中心、服务治理、流量调度等）在海外 Region 的部署、运维与持续优化，保障海外环境与国内平台体系的一致性与可用性。
+3、稳定性治理与应急响应 — 负责海外业务稳定性体系建设，包括可观测能力建设、故障应急响应、根因分析与复盘机制建设；在重大故障场景下牵头协调跨团队资源，快速恢复服务并推动系统性改进。
+4、国际化技术方案落地 — 深入理解海外业务需求与架构特点，推动基础设施能力在海外场景的落地，包括多 Region 架构设计、网络与数据架构优化、基础服务能力适配等。
+5、跨团队协作与体系建设 — 与国内基础设施团队、业务研发团队及平台团队紧密协作，推动海外技术体系与国内架构标准保持一致；沉淀海外稳定性最佳实践并推动在组织内推广。
+
+1、International Architecture & Disaster Recovery — Participate in the design and implementation of Rednote's international infrastructure architecture. Build and evolve cross-region architecture, disaster recovery, and high-availability capability development. Drive critical services toward multi-region deployment, failover, and fault isolation to improve overall stability of overseas operations.
+2、Overseas Infrastructure Platform Development & Operations — Own the deployment, operations, and continuous optimization of core internal technical platforms (release systems, monitoring & alerting, configuration services,service management, traffic scheduling, etc.) in overseas regions. Ensure consistency and availability across overseas and domestic platform environments.
+3、Reliability Engineering & Incident Response — Build and continuously improve the reliability framework for overseas business, including observability capabilities, incident response, root cause analysis, and post-mortem mechanisms. Lead cross-functional coordination during major incidents to restore services quickly and drive （long-term)systemic improvements.
+4、International Technical Solution Delivery — Develop a deep understanding of overseas business requirements and architecture characteristics. Drive infrastructure capabilities to fit overseas scenarios, including multi-region architecture design, network and data architecture optimization, and adaptation of foundational services.
+5、Cross-functional Collaboration & Best Practice Development — Work closely with domestic infrastructure, product engineering teams, and platform teams to align overseas technical standards with domestic architecture standards. Consolidate and promote overseas stability best practices across the organization.
+
+1、稳定性与SRE经验 — 熟悉大规模互联网系统稳定性保障体系，具备高可用架构设计、故障治理、容量规划及应急响应经验；有 SRE / 平台工程 / 基础设施团队经验者优先。
+2、国际化架构经验 — 熟悉跨 Region 架构设计与容灾体系，如多 Region 部署、流量调度、数据同步与容灾切换等；有海外业务架构或国际化基础设施建设经验者优先。
+3、基础技术能力 — 熟悉 Linux 系统、网络与常见中间件原理（如 MySQL、Redis、Kafka 等），理解云原生基础设施（Kubernetes、Service Mesh 等）与可观测体系（监控、日志、Tracing）。
+4、研发与自动化能力 — 熟练掌握 Python、Go、Java 等至少一种编程语言，具备自动化运维平台、稳定性工具或基础设施系统研发经验。
+5、问题分析与协作能力 — 具备良好的问题分析与故障排查能力，能够在复杂系统环境中快速定位问题；具备良好的沟通能力与团队协作意识。
+6、语言能力 — 中英文流利，能够在国际化团队环境中进行技术沟通与协作。
+
+1、Reliability Engineering & SRE Experience — Familiar with large-scale internet system stability frameworks; experienced in high-availability architecture design, fault governance, capacity planning, and incident response. Experience in SRE, platform engineering, or infrastructure engineering is preferred.
+2、International Architecture Experience — Familiar with cross-region architecture design and disaster recovery systems (multi-region deployment, traffic scheduling, data sync, failover, etc.). Experience with overseas business architecture or international infrastructure development preferred.
+3、Core Technical Skills — Proficient in Linux systems, networking, and common middleware (MySQL, Redis, Kafka, etc.); good understanding of cloud-native infrastructure (Kubernetes, Service Mesh, etc.) and observability stacks (monitoring, logging, tracing).
+4、Development & Automation Skills — Proficient in at least one of Python, Go, or Java; experience building automation ops platforms, stability tooling, or infrastructure systems.
+5、Problem Solving& Collaboration — Strong troubleshooting and root cause analysis skills in complex system environments; excellent communication and teamwork.
+6、Language — Fluent in both English and Chinese (spoken and written)
+
+【加分项】
+1、有跨云 / 多云 / 海外云厂商（AWS / GCP / Azure / 阿里云国际 / 火山国际）经验
+2、有跨 Region 容灾、流量调度（DNS / GSLB / Anycast / Global LB）经验
+3、有稳定性工程（Chaos Engineering / 演练 / 自动化恢复）经验
+
+Bonus Points:
+1、Experience with multi-cloud / cross-cloud providers (AWS / GCP / Azure / Alibaba Cloud International / Volcano International)
+2、Experience with cross-region disaster recovery and traffic scheduling (DNS / GSLB / Anycast / Global LB)
+3、Experience with stability engineering (Chaos Engineering / drills / automated recovery)",4489,https://job.xiaohongshu.com/social/position/19627,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
+19598,存储&数据库DevOps开发-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,美国,2,美国; 新加坡,false,,United States,,0,"1、产品解决方案设计 — 深入理解公司业务需求，结合 Redis、MySQL、TiDB、MongoDB 等多种存储数据库技术特点，主导设计高可用、高性能、可扩展的存储数据库产品解决方案，推动业务与技术深度融合。
+2、平台研发与优化 — 牵头存储数据库 DevOps 提效工作，推动实现存储数据库资源自动化部署、智能监控、故障自愈等功能，推动团队向现代化 DevOps 文化与平台化运营转型。
+3、横向项目落地 — 作为项目负责人，统筹协调跨部门资源，制定项目计划与技术方案，确保重大横向项目按时高质量完成。
+4、技术研究与创新 — 跟踪存储数据库领域前沿技术动态，探索新技术在公司业务场景的应用可行性，主导技术预研与 PoC 验证，为公司技术发展提供前瞻性建议。
+5、团队协作与知识共享 — 与业务部门、开发团队紧密沟通协作，提供专业的技术支持与咨询服务；组织内部技术培训与分享，提升团队整体技术水平。
+
+1、Product Solution Design — Gain a deep understanding of business requirements and leverage Redis, MySQL, TiDB, MongoDB, and other storage technologies to lead the design of highly available, high-performance, and scalable storage/database solutions that bridge business needs with technology.
+2、Platform Development & Optimization — Lead DevOps efficiency initiatives for storage and databases; drive automated deployment, intelligent monitoring, and self-healing capabilities; advance the team toward a modern DevOps culture and platform-driven operations.
+3、Cross-functional Initiative Delivery — Act as project owner to coordinate cross-departmental resources, define project plans and technical approaches, and ensure major cross-functional initiatives are delivered on time and at high quality.
+4、Technical Research & Innovation — Track cutting-edge developments in the storage/database space; explore new technology applicability for internal business scenarios; lead technical pre-research and PoC validation; provide forward-looking recommendations for the company's technical roadmap.
+5、Collaboration & Knowledge Sharing — Work closely with business and engineering teams to provide technical support and consulting; organize internal technical training and sharing sessions to elevate team-wide technical expertise.
+
+1、专业技能 — 精通 Redis/Tair、MySQL、TiDB、MongoDB、S3 兼容对象存储、图数据库（如 Nebula）等至少一种以上存储数据库技术，熟悉其架构原理、性能优化、事务管理与高可用方案。
+2、研发能力 — 具备扎实的软件开发经验，熟练掌握 Python、Go、Java 中至少一种编程语言；有存储数据库管理平台、中间件或相关系统研发经验者优先。
+3、业务洞察力 — 能够快速理解业务需求并将其转化为技术解决方案；有跨行业存储数据库应用经验者优先。
+4、项目管理能力 — 具备独立牵头重大横向项目的能力，能够制定项目计划、把控进度、协调各方资源，确保项目顺利交付。
+5、沟通与协作 — 具有良好的沟通表达能力与团队协作精神，能够与不同部门、不同层级人员高效沟通；具备较强的抗压能力与问题解决能力；中英文流利。
+6、学习与创新 — 对新技术充满热情，具备快速学习能力与创新意识；有开源项目贡献经验或技术专利者优先。
+
+1、Technical Skills — Strong hands-on experience in at least one of: Redis/Tair, MySQL, TiDB, MongoDB, S3-compatible object storage, graph databases (e.g., Nebula); solid understanding of architecture principles, performance optimization, transaction management, and high-availability solutions.
+2、Development Skills — Solid software development background; proficient in at least one of Python, Go, or Java; experience building storage/database management platforms, middleware, or related systems preferred.
+3、Business Acumen — Ability to quickly translate business requirements into technical solutions; cross-industry storage/database application experience preferred.
+4、Project Management — Proven ability to independently lead major cross-functional projects; capable of defining plans, tracking progress, and coordinating resources for successful delivery.
+5、Communication & Collaboration — Excellent communication skills; effective at working across teams and organizational levels; strong adaptability and problem-solving skills; fluent in both English and Chinese (spoken and written).
+6、Learning & Innovation — Passionate about new technologies; fast learner with an innovative mindset; open-source contributions or technical patents a plus.",3401,https://job.xiaohongshu.com/social/position/19598,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
+19626,可观测技术研发-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,新加坡,2,新加坡; 美国,false,,United States,,0,"1、负责可观测体系研发工作，围绕 Metrics、Logging、Tracing、Profiling 四大支柱，从全栈领域展开可观测基础能力建设；
+2、负责监控平台、全链路追踪、日志服务、计算引擎（流式分析、实时告警、时序检测等）、告警、eBPF 等可观测相关技术架构及产品设计；
+3、保障可观测相关基础服务，在高并发环境下的高性能、高可用，推动技术、产品持续优化迭代，支撑国内和海外可观测架构设计、数据合规、基建稳定性保障等工作；
+4、落地 AI Infra 可观测、AI 应用可观测、可观测 AI+ 等相关技术，提高 AI 场景稳定性以及传统可观测产品使用体验和效率。
+
+1、Participate in the end-to-end R&D of the observability platform across all four pillars — Metrics, Logging, Tracing, and Profiling — building full-stack observability infrastructure capabilities.
+2、Drive the technical architecture and product design of monitoring platforms, distributed tracing, log services, compute engines (streaming analysis, real-time alerting, time-series anomaly detection, etc.), alerting systems, and eBPF-based observability technologies.
+3、Ensure high performance and high availability of observability infrastructure under high-concurrency conditions. Drive continuous technical and product iteration to support observability architecture design, data compliance, and infrastructure stability for the multi-region environments.
+4、Develop and implement AI Infra observability, AI application observability, and AI-powered observability capabilities to improve stability in AI scenarios and enhance the usability and efficiency of traditional observability products.
+
+1、全日制统招本科及以上学历，3 年及以上计算机相关工作经验；
+2、精通 Java 或 Go 语言，熟悉并发编程、分布式系统、性能优化等，有扎实的编程基础；
+3、熟悉云原生可观测性体系的相关产品及组件，包括不仅限于：OpenTelemetry、CAT、SkyWalking、Prometheus、VictoriaMetrics、ELK、ClickHouse、eBPF 等，了解 Kubernetes 基本原理并能运用；
+4、熟悉基础技术开源组件，如 Linux、网络、存储、MQ 等，深入了解细节，掌握实现原理优先；
+5、加分项：熟悉和使用 AI 场景相关技术，包括不仅限于：PyTorch、Spring AI、Langfuse、OpenClaw 等。
+6、善于发现、解决问题，善于总结、思考、跨团队协作；关注业界新技术，好奇求知，有强烈的责任心及抗压能力；
+7、中英文流利，能够在国际化团队环境中进行技术沟通与协作；
+
+1、Bachelor's degree or above in a relevant field; 3+ years of relevant work experience in computer science.
+2、Proficient in Java or Go; solid foundation in concurrent programming, distributed systems, and performance optimization.
+3、Familiar with cloud-native observability products and components, including but not limited to: OpenTelemetry, CAT, SkyWalking, Prometheus, VictoriaMetrics, ELK, ClickHouse, eBPF; working knowledge of Kubernetes and its fundamentals.
+4、Familiar with foundational open-source components such as Linux, networking, storage, and message queues; deep understanding of implementation principles preferred.
+5、Bonus: Familiarity with AI-related technologies including but not limited to: PyTorch, Spring AI, Langfuse, LLM-based tooling.
+6、Strong problem-solving, communication, and cross-team collaboration skills; eager to learn and stay current with industry trends.
+7、Fluent in both English and Chinese (spoken and written).",2649,https://job.xiaohongshu.com/social/position/19626,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,后端开发,2026-09-12,,false,,,,,,
+19658,"用户信任与透明度产品经理/Product Manager, User Trust & Transparency",Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"我们正在寻找一位产品经理，负责Trust & Safety（信任与安全）体系中的用户信任与透明度产品能力建设。
+在这个角色中，你将设计和打造面向用户的治理沟通产品能力，帮助用户理解平台治理机制，包括审核决策、处罚结果、申诉流程以及举报机制。你的工作将帮助平台治理变得更加透明、可理解且公平，提升用户对平台规则与治理决策的信任。
+你将与工程、设计、政策、运营及数据团队紧密合作，将复杂的治理规则转化为简单清晰且可规模化的产品体验，服务全球用户生态。
+
+工作职责
+1、负责用户信任与透明度产品能力的愿景、策略及产品路线图规划。
+2、设计清晰透明的用户治理沟通体验，让用户能够理解平台审核结果、处罚原因及相关规则解释。
+3、构建并持续优化用户申诉与举报产品体系，提升治理流程的公平感知与整体治理效率。
+4、设计产品内的用户教育与规则引导机制，帮助用户理解平台规则、社区规范及安全行为标准。
+5、优化平台治理结果的用户沟通方式，在不同用户触点中保持清晰、透明且一致的治理体验。
+6、与工程、设计、政策、运营及数据团队协作，共同打造以用户为中心的治理产品能力。
+7、通过用户反馈、行为数据及治理指标持续优化产品，提升平台治理透明度及用户信任度。
+
+1、3年以上产品经理经验，有用户产品、Trust & Safety、平台治理或复杂平台产品经验优先。
+2、具备较强用户同理心，能够为复杂规则或治理场景设计清晰易理解的用户沟通体验。
+3、有申诉流程、举报系统、通知中心、规则透传或治理透明度相关产品经验者优先。
+4、具备优秀的跨团队协作能力，能够推动工程、设计、政策及运营团队协同推进产品落地。
+5、具备数据驱动思维，能够通过数据分析与实验持续优化用户体验。
+
+加分项
+1、有大型互联网平台用户信任机制或治理透明度产品经验。
+2、熟悉Trust & Safety、内容审核或平台治理相关体系。
+3、有全球互联网平台或大规模 UGC 产品经验。",814,https://job.xiaohongshu.com/social/position/19658,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,非技术,2026-09-08,,false,,,,,,
+19596,"Trust & Safety平台产品经理/ Product Manager, Trust & Safety Platform",Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"我们正在寻找一位平台产品经理加入Trust & Safety（信任与安全）团队，共同打造下一代AI Native安全治理平台与系统，服务全球内容平台生态。
+你将与工程、机器学习、政策及运营团队紧密合作，设计 AI 驱动的平台能力，支持全球内容生态中的审核、调查与安全决策。
+
+主要职责
+1、负责 AI Native Trust & Safety平台的产品愿景、战略及路线图，打通风险治理全流程，包括风险感知、识别、审核、处置及评估。
+2、设计并推动建设AI Native的安全治理平台与系统，支持自动化风险审核、风险分析及辅助决策。
+3、整合分散的审核工具、风控系统及运营流程，构建统一平台以提升治理效率、系统可扩展性及风险可视化能力。
+4、与工程、机器学习、政策及运营团队合作，将复杂的风险治理需求转化为 AI 驱动的平台产品能力。
+
+1、本科及以上学历，计算机、人工智能、数据科学或相关技术背景优先。
+2、3 年及以上 AI 平台、Trust & Safety系统、风控平台或复杂数据平台产品经验。
+3、熟悉大语言模型（LLM）、Agent架构或AI 工作流自动化系统。
+4、具备平台型产品设计能力，能够理解复杂系统架构和运营流程设计。
+5、具备优秀的跨团队协作能力，能够推动工程、算法、政策及运营团队协同推进产品落地。
+
+加分项
+1、有 Trust & Safety、审核平台或风控平台建设经验。
+2、有与机器学习或LLM 团队合作构建 AI 产品的经验。
+3、熟悉Agent Orchestration、Prompt Engineering 或 AI 自动化框架。
+4、有全球互联网平台或大规模UGC内容生态经验。",711,https://job.xiaohongshu.com/social/position/19596,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,非技术,2026-09-08,,false,,,,,,
+19566,海外安全策略运营专家（Trust & Safety）/  Safety Strategy Operations Specialist (Trust & Safety),Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"我们正在寻找一位 海外安全策略运营专家 加入 Trust & Safety（信任与安全）团队。在这一岗位中，你将负责全球内容平台的风险监控、应急响应及运营流程优化，保障平台在国际市场中的内容安全、用户保护和合规运营。
+你将与审核、政策、产品及数据团队紧密合作，识别新兴风险并推动风险策略落地，持续提升一线风险治理效率。该岗位需要具备良好的分析能力、运营判断力以及在快速变化的国际环境中应对复杂风险场景的能力。
+
+主要职责
+1、监控平台风险并建立风险预警机制，确保重大风险能够被及时发现并快速响应。
+2、协调跨部门资源处理风险事件，包括违规内容、异常账号行为以及黑产攻击等问题。
+3、与审核团队紧密合作，推动风险治理策略在一线落地，并持续优化相关运营流程。
+4、通过风险数据和运营指标分析识别新型风险趋势，评估风险处置效果并推动风险治理能力持续提升。
+
+1、科及以上学历，专业不限，计算机、数据、法律、公共管理相关背景优先。
+2、3 年及以上互联网风控、Trust & Safety 运营、内容审核或相关运营经验。
+3、熟悉内容安全风险、黑产手法及常见违规类型，有处理复杂风险场景的实践经验。
+4、具备较强的数据分析能力和执行力，能够在高压环境下推动方案落地。
+5、英语流利，能够适应跨文化、多时区团队协作。
+
+加分项
+1、有内容平台 Trust & Safety 运营、风控运营或反作弊经验。
+2、有与政策团队、审核团队、外包团队或跨国团队协作经验。
+3、在互联网平台或内容社区参与过风险治理或安全相关项目。",654,https://job.xiaohongshu.com/social/position/19566,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,非技术,2026-09-08,,false,,,,,,
+19840,【美国】数据仓库专家-rednote,Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"主要职责
+负责设计、构建并维护公司级基础数据平台与公共数据层，为社区、电商、广告等核心业务提供通用、稳定、高性能的数据能力支持，提升数据驱动业务的整体效率。
+深入各业务领域，主导专题数据仓库与数据产品的建设，提供精准、易用的数据服务与分析模型，直接支持战略决策与业务运营。
+建立并推行公司级数据治理体系，融合业务需求、元数据管理与技术实现，持续优化数据资源成本，全面提升数据质量、一致性、安全性与产出稳定性。
+
+Key Responsibilities:
+Design, build, and maintain the company's foundational data platform and common data layers to deliver general, stable, and high-performance data capabilities for core business domains. Improve the overall efficiency of data-driven business operations.
+Dive deep into various business areas to lead the development of domain-specific data warehouses and data products. Deliver accurate, user-friendly data services and analytical models to directly support strategic decision-making and daily business operations.
+Establish and implement a company-wide data governance framework. Integrate business requirements, metadata management, and technical implementation to continuously optimize data resource costs while enhancing data quality, consistency, security, and pipeline stability.
+
+任职要求
+拥有计算机科学、信息技术或相关领域的学士及以上学位，具备3年以上相关领域工作经验。
+拥有扎实的数据仓库研发经验，深刻理解从数据集成、建模到服务化的完整数据体系建设流程，并能持续推动其优化与价值实现。
+掌握数据管理治理的核心理论与最佳实践，熟悉数据治理、数据标准、企业级数据建模、元数据管理及主数据管理等相关方法论。
+精通大数据技术生态，具备扎实的实时或离线数据管道开发能力。熟练掌握Hive、Kafka、Spark、Flink、HBase等至少多项技术并拥有实际项目经验。
+具备卓越的快速学习能力、出色的跨团队沟通与协作能力，以及强大的逻辑思维与复杂问题解决能力。
+能够在英文工作环境中进行有效沟通（书面及口语），与全球团队顺畅协作。
+
+Qualifications:
+Bachelor's degree or higher in Computer Science, Information Technology, or a related field, with up to 3 years of relevant work experience.
+Solid experience in data warehouse development, with a deep understanding of the end-to-end data architecture lifecycle—from data integration and modeling to serving—and a proven ability to continuously optimize and deliver business value.
+Strong knowledge of data management and governance principles and best practices, including familiarity with data governance, data standards, enterprise data modeling, metadata management, and master data management methodologies.
+Proficiency in big data technologies and ecosystems, with hands-on experience in building real-time or batch data pipelines. Practical project experience with multiple technologies such as Hive, Kafka, Spark, Flink, HBase, etc., is required.
+Excellent ability to learn quickly, strong cross-team communication and collaboration skills, and superior logical thinking and problem-solving capabilities.
+Ability to communicate effectively in English (both written and spoken) and collaborate seamlessly within a global team environment.",2498,https://job.xiaohongshu.com/social/position/19840,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,研发,2026-09-08,,false,,,,,,
+21358,Android Software Engineer - rednote,Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"About Us:
+rednote is one of the fastest-growing lifestyle community platforms in the world. We are building our client engineering team in New York City to craft product experiences for users across the globe. You will work on core features of the rednote mobile apps (iOS/Android), collaborating with teams across the US, Singapore, and China to bring ""share and discover a wonderful life"" to a global audience.
+rednote 是全球增长最快的生活方式社区之一，我们正在纽约组建客户端研发团队，服务全球用户的产品体验。你将参与 rednote 客户端iOS的核心功能研发，与中国、新加坡及美国多地团队协作，把""分享和发现美好生活""带给全世界。
+
+Job Responsibilities:
+1.Design, build, and maintain core modules of the rednote app (iOS or Android), covering content consumption (Feed / note details / comments), content creation, and creator tools
+2.Optimize product experience for North American and global users: app launch time, smoothness, binary size, and performance under weak network conditions
+3.Drive 0-to-1 development of market-specific features, including localized interactions, multi-language support, and regional compliance capabilities (privacy, minor protection, etc.)
+4.Partner closely with product, design, backend, and algorithm teams to iterate fast while maintaining production quality; participate in code reviews and technical design
+5.Strengthen client infrastructure: stability monitoring, performance tracing, A/B experimentation framework, and CI/CD pipelines
+6.Explore AI-assisted development workflows and on-device intelligence scenarios
+1.负责 rednote 客户端（iOS 或 Android）核心业务模块的设计、开发与维护，包括内容消费（Feed/笔记详情/评论）、内容发布、创作者工具等方向
+2.面向北美及全球用户优化产品体验：启动速度、流畅度、包体积、弱网表现等核心性能指标
+3.参与海外差异化功能的 0 到 1 建设，包括本地化交互、多语言适配、区域合规能力（隐私、未成年人保护等）
+4.与产品、设计、后端及算法团队紧密协作，快速迭代并保障线上质量；参与代码评审与技术方案设计
+5.建设与完善客户端基础设施：稳定性监控、性能追踪、A/B 实验框架、CI/CD 流程
+6.探索 AI 辅助研发与端上智能场景的落地
+
+Job Requirements:
+1.Bachelor or above in Computer Science or related field, with 3+ years of iOS or Android development experience
+2.Proficiency in Kotlin/Java, familiar with Jetpack, concurrency, and rendering optimization
+3.Experience shipping and operating large-scale apps (1M+ DAU), with a strong understanding of client architecture (modularization, componentization, cross-platform approaches)
+4.Solid CS fundamentals: data structures, algorithms, networking, and operating systems
+5.Able to work effectively in both English and Chinese across time zones
+1.计算机相关专业本科及以上学历，3 年以上 iOS 或 Android 开发经验
+2.Android 方向：精通 Kotlin/Java，熟悉 Jetpack、多线程与渲染优化
+3.有大型 App（DAU 百万级以上）的开发与线上问题处理经验，理解客户端架构设计（组件化、模块化、跨端方案）
+4.具备扎实的计算机基础：数据结构、算法、网络、操作系统
+5.中英文可作为工作语言，能与跨时区团队高效协作
+
+Nice to Have:
+1.Experience with community / social / content products and an understanding of UGC-specific client challenges
+2.Experience with global products: multi-language, multi-timezone, and privacy compliance (GDPR / CCPA / COPPA)
+3.Cross-platform experience (Flutter / React Native) or dynamic framework development
+4.Background in audio/video, image processing, or on-device ML
+5.Active open-source contributions or technical writing
+1.有社区/社交/内容类产品经验，理解 UGC 产品的客户端技术特点
+2.有出海产品经验，熟悉多语言/多时区/隐私合规（GDPR/CCPA/COPPA）适配
+3.有 Flutter/React Native 跨端经验，或参与过动态化框架建设
+4.有音视频、图像处理、端智能（On-device ML）方向的积累
+5.活跃的开源贡献或技术博客",3125,https://job.xiaohongshu.com/social/position/21358,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,前端开发,2026-09-08,,false,,,,,,
+21674,"风控研发工程师 Risk Engineer, US",Xiaohongshu,Xiaohongshu,,Posted 44 Days Ago,2026-08-11,44,美国,1,美国,false,,United States,,0,"随着小红书国际化业务推进，风控的系统、平台与数据基建需要在海外落地并独立运行。我们在美国寻找一位综合型的研发工程师，负责本地风控系统的本地化研发适配、能力对接与稳定性保障，作为美国区域风控工程的 Owner。由于是海外单点，我们要求你在能做研发的同时，具备独立扛住运维与稳定性的能力。
+Base：US｜语言：中 / 英皆可
+
+1、本地化研发：承接国内成熟的风控引擎、平台与数据基建，完成美国本地的适配、对接与必要的二次开发，保障本地独立运行；
+2、能力迭代与对接：跟随总部能力升级，在本地完成对接、联调与迭代，处理本地特有的业务与技术需求；
+3、稳定性保障（底线要求）：作为区域 Owner 独立扛住本地系统的稳定性——监控告警、故障排查、限流降级、容灾切换与应急响应，出问题能第一时间顶上、自己解；
+4、数据合规：确保本地系统符合美国当地数据隐私 / 合规要求（如 CCPA 等）；
+5、总部协同：与中国总部风控团队保持能力对齐与版本同步，跨时区、中英双语高效协作。
+1、本地化研发：承接国内成熟的风控引擎、平台与数据基建，完成新加坡本地的适配、对接与必要的二次开发，保障本地独立运行；
+2、能力迭代与对接：跟随总部能力升级，在本地完成对接、联调与迭代，处理本地特有的业务与技术需求；
+3、稳定性保障（底线要求）：作为区域 Owner 独立扛住本地系统的稳定性——监控告警、故障排查、限流降级、容灾切换与应急响应，出问题能第一时间顶上、自己解；
+4、数据合规：确保本地系统符合新加坡 PDPA 及相关数据合规要求；
+5、总部协同：与中国总部风控团队保持能力对齐与版本同步，跨时区、中英双语高效协作。
+
+1、计算机相关专业本科及以上，3 年以上后端研发经验，扎实的工程能力与编码基础；
+2、能独立扛一摊系统——既能做研发适配与迭代，又能独立值守、处理线上问题，出事顶得上（此为硬性底线）；
+3、熟悉高并发系统与常见稳定性手段（监控告警、限流降级、容灾、可观测性）；
+4、责任心强、能独立作战，中英文皆可工作，能与中国总部高效协同；
+5、加分项：有风控 / 业务安全 / 内容安全 / 审核领域背景，或跨国系统落地 / 运维经验。
+加入我们，你将收获
+1、作为 Owner 独立负责小红书美国区域的风控工程，从本地化研发到稳定运行全权负责；
+2、站在国际化最前线，把业内规模最大、复杂度最高的风控体系在海外独立跑起来；
+3、与中国总部顶尖工程 / 算法 / 产品团队深度协同，技术影响力可持续累积。",1048,https://job.xiaohongshu.com/social/position/21674,,,,,,,no_match,,2026-09-24,,2026-09-24,,44,startDate,true,0,,,,,后端开发,2026-08-11,,false,,,,,,
+19223,应用开发工程师（交互原型与工程化验证）,Xiaohongshu,Xiaohongshu,,Posted 47 Days Ago,2026-08-08,47,北京市,5,北京市; 上海市; 深圳市; 美国; 杭州市,false,,United States,,0,"1. 将交互设想转成可运行原型 / 高保真 Demo（动效、手势、反馈、边界条件完整），必要时支持小流量验证甚至发布到应用市场中
+2. 端到端负责探索闭环：问题定义、假设拆解、原型实现、数据采集、评估设计与实验验证，输出清晰结论（继续/停止/转向）
+3. 与后端/算法等多角色协作，把探索方案在工程约束下落稳、落准，并完成可观测与回滚设计
+4. 参与并推动实验室工程路线图与关键架构决策：低成本验证、快速回滚、可观测、可复用
+
+1. 本科及以上（计算机/交互/设计技术相关优先），3 年以上交互工程 / 前端 / 客户端 / 后端 / 原型工程相关经验
+2. 语言不限（ Swift / Kotlin /Javascript 等）：至少一个方向有深度，并有大型项目的工程经验
+3. 扎实工程能力：能写出高性能、可维护代码，具备良好的抽象、架构与工程质量意识
+4. 跨技术栈学习迁移能力：能快速进入新栈/新领域，把方法论迁移到新问题上
+5. 有“从 0 到可验证”的完整交付经验：能把探索做成可运行的东西，并用数据/实验输出结论
+加分项：
+- 丰富的多团队协作经验：能推动跨角色对齐目标、推进落地，并清晰表达技术权衡
+- 智能体验方向经验（匹配任一即可）：多模态理解驱动 UI、对话式交互、创作辅助、推荐解释/可控性、内容结构化与可编辑体验
+- 3D / 空间交互相关经验：做过 3D UI、空间布局、手势/空间操作、3D 动效与渲染；熟悉 WebGL/Three.js、Unity/Unreal、SceneKit/RealityKit 等任一技术栈；或有 3D 资产管线/性能优化经验
+- 在 HCI/交互/AI 体验相关方向有公开影响力：论文、专利、开源项目或行业分享",735,https://job.xiaohongshu.com/social/position/19223,,,,,,,no_match,,2026-09-24,,2026-09-24,,47,startDate,true,0,,,,,客户端开发,2026-08-08,,false,,,,,,
+19590,OS 工程师（XR 系统应用方向）,Xiaohongshu,Xiaohongshu,,Posted 47 Days Ago,2026-08-08,47,北京市,5,北京市; 上海市; 深圳市; 杭州市; 美国,false,,United States,,0,"1、负责 XR 设备系统核心应用的设计、开发与交付，包括但不限于系统相机、相册、文件管理、设置、互联及系统工具类应用，保障产品高效迭代与稳定发布；
+2、负责系统应用的架构设计、模块拆分与工程质量建设，持续优化复杂场景下的性能、稳定性和用户体验；
+3、参与 XR OS 应用层能力建设，结合业务需求抽象高频场景能力，沉淀可复用的 SDK、公共组件和开发范式；
+4、与系统平台、图形、音视频、AI、交互、产品等团队协作，推动系统能力在应用层的工程化落地与体验打磨；
+5、建设系统应用的可观测体系，包括启动时延、卡顿、崩溃、ANR、内存、功耗等关键指标，持续提升品质与可维护性；
+6、跟踪移动 OS、XR 系统和端侧 AI 相关技术演进，探索 AI 在系统应用中的落地场景，如智能搜索、内容理解、创作辅助、多模态交互等。
+
+1、本科及以上学历，计算机、软件工程或相关专业优先；
+2、3 年以上 Android 应用开发经验，有大型客户端或系统应用研发经验；
+3、熟练掌握 Java / Kotlin，具备 C / C++ 开发能力者优先；
+4、具备扎实的架构设计能力，能够独立完成复杂系统应用的模块设计、架构演进与工程治理；
+5、深入理解 Android 系统框架，熟悉组件通信、进程管理、权限机制、生命周期、任务栈、数据存储等核心机制；
+6、具备较强的性能优化与问题定位能力，能够分析并解决启动慢、卡顿、崩溃、内存泄漏、耗电等问题；
+7、具备良好的自驱力、学习能力与跨团队协作能力，能够结合业务场景推动技术方案落地；
+8、有系统应用开发经验者优先，如相机、相册、文件管理器、设置、跨端互联、系统工具类应用等。
+加分项
+1、有 XR 设备、移动操作系统或系统级客户端开发经验；
+2、熟悉 AndroidX SDK，具备复杂业务架构设计和落地经验；",770,https://job.xiaohongshu.com/social/position/19590,,,,,,,no_match,,2026-09-24,,2026-09-24,,47,startDate,true,0,,,,,客户端开发,2026-08-08,,false,,,,,,
+21500,Data Privacy Expert,Xiaohongshu,Xiaohongshu,,Posted 57 Days Ago,2026-07-29,57,美国,1,美国,false,,United States,,0,"1. Develop a comprehensive and iterative data privacy governance framework by gaining in-depth understanding of the Company's business operations and data lifecycle, and by incorporating external signals including applicable laws and regulations, regulatory requirements, and industry best practices.
+2. Collaborate closely with cross-functional teams across the organization to translate data privacy requirements into necessary policies, processes, solutions, technical infrastructure, and employee awareness initiatives, while proactively identifying compliance risks from a business perspective.
+3. Drive the implementation of the data privacy governance framework through dedicated initiatives and mechanisms, continuously elevating and sustaining the Company's overall data privacy posture.
+4. Lead the incident response, root cause analysis, and long-term remediation of internal and external data privacy and security incidents.
+
+1. Bachelor's degree or above, with a minimum of 4 years of experience in privacy protection, data security, information security, or a related field. Prior experience in the internet industry is preferred.
+2. Strong technical understanding and solid familiarity for underlying data privacy governance solutions, including but not limited to App compliance inspection, server-side data governance controls, data architecture, traffic governance, etc.
+3. Sound knowledge of data privacy laws and industral enforcement standards, including GDPR, COPPA, PIPL, EU AI Act, DSA, and related frameworks.
+4. Excellent capabilities in logical reasoning, communication, and project management, with a high degree of professionalism and strong self-motivation.",1687,https://job.xiaohongshu.com/social/position/21500,,,,,,,no_match,,2026-09-24,,2026-09-24,,57,startDate,true,0,,,,,研发,2026-07-29,,false,,,,,,
+19618,数据隐私专家,Xiaohongshu,Xiaohongshu,,Posted 58 Days Ago,2026-07-28,58,北京市,4,北京市; 上海市; 杭州市; 美国,false,,United States,,0,"1. 理解公司业务场景与数据生命周期现状，基于法律法规、监管要求、行业案例等外部信号搭建可迭代的数据隐私治理体系；
+2. 协同公司内各相关团队，将数据隐私要求拆解为必要制度、流程、解决方案、技术基建与人员意识提升，并从业务视角发掘合规风险；
+3. 将数据隐私治理体系通过专项、常态化机制等方式推进，持续提升与维护数据隐私水位；
+4. 负责公司内外部数据隐私安全事件应急响应、止损、溯源与长效解决。
+
+1. 本科及以上学历，4年及以上隐私保护、数据安全、信息安全或相关从业经验，互联网行业优先；
+2. 具备良好的技术理解能力，熟悉各类数据隐私解决方案原理，如app检测、服务端/数据管控、数据结构、流量治理等；
+3. 对国内外数据隐私相关法律法规要求及对应执法标准有了解，如GDPR/COPPA/PIPL/EU AI Act/DSA等；
+4. 良好的逻辑分析、沟通表达、项目管理能力与职业性，具备较强的自我驱动力，英文可作为工作语言是加分项。",420,https://job.xiaohongshu.com/social/position/19618,,,,,,,no_match,,2026-09-24,,2026-09-24,,58,startDate,true,0,,,,,研发,2026-07-28,,false,,,,,,
