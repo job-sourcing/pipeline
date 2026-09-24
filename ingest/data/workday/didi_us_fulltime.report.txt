@@ -1,0 +1,10 @@
+rows: 9 (unique reqIds: 9)
+details merged: 9
+descriptions present: 9
+locations enumerated (not 'N Locations'): 9
+startDate present: 0
+signals: matched=7 no_match=2 blocked=0 not_checked=0
+location entries total (sum nLocations): 9
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=9 (from facet_tags.jsonl)
+facet tag coverage: 9/9 rows (0 untagged)

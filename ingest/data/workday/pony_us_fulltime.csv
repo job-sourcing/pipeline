@@ -1,0 +1,496 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+EF5F79EB04,(Senior) Software Engineer - Behavior,pony-dot-ai,pony-dot-ai,Full time,Posted 6 Days Ago,,,"Fremont, California",2,"Fremont, California; Fremont",false,,United States,,0,"Founded in 2016 in Silicon Valley, Pony.ai has quickly become a global leader in autonomous mobility and is a pioneer in extending autonomous mobility technologies and services at a rapidly expanding footprint of sites around the world. Operating Robotaxi, Robotruck and Personally Owned Vehicles (POV) business units, Pony.ai is an industry leader in the commercialization of autonomous driving and is committed to developing the safest autonomous driving capabilities on a global scale. Pony.ai’s leading position has been recognized, with CNBC ranking Pony.ai #10 on its CNBC Disruptor list of the 50 most innovative and disruptive tech companies of 2022. In June 2023, Pony.ai was recognized on the XPRIZE and Bessemer Venture Partners inaugural “XB100” 2023 list of the world’s top 100 private deep tech companies, ranking #12 globally. As of August 2023, Pony.ai has accumulated nearly 21 million miles of autonomous driving globally. Pony.ai went public at NASDAQ in November 2024.
+
+Responsibility
+
+The team is responsible for determining and controlling how autonomous vehicles navigate based on real-time traffic conditions—including road infrastructure, surrounding environments, other vehicles, and pedestrians—making it one of the core teams in autonomous driving.
+
+Software or Algorithm Engineers on the team are responsible for one or more of the following:
+
+• Architecture & Systems: Designing and developing high-performance, highly reliable Planning architectures and systems.
+
+• Computational Algorithms: Developing and optimizing high-precision, high-performance computational geometry and numerical computing algorithms.
+
+• Driving Intelligence: Enhancing autonomous vehicle decision-making and driving capabilities using machine learning and advanced algorithms.
+
+• Big Data Infrastructure: Designing and building scalable data processing infrastructure and systems for large-scale road-test data.
+
+• Simulation & Evaluation: Analyze large amounts of data of the real world and simulate driving, understanding, characterizing and clustering the performance of virtual drivers.
+
+• Internal Tools & Productivity: Developing internal tools to optimize engineering workflows and improve R&D efficiency.
+
+• Cross Team Collaboration: Work cross-functionally on safety, road rules compliance, and ride quality
+
+Requirements
+
+• BS in Computer Science, ML, Robotics, similar technical field of study, or equivalent practical experience
+
+• 2+ years hands-on general software engineering experience, proficient in at least one mainstream programming language (such as C, C++, Python, or Java) and familiar with common data structures and algorithms.
+
+• Ability to lead ambiguous technical work from problem framing through reliable delivery.
+
+Preferred
+
+• Background in autonomous vehicles, robotics, or complex simulation environments.
+
+• General software engineering experience solving motion planning or related robotics problems
+
+Compensation and Benefits
+
+Base Salary Range: $140,000 - $220,000 Annually
+
+Compensation may vary outside of this range depending on many factors, including the candidate’s qualifications, skills, competencies, experience, and location. Base pay is one part of the Total Compensation and this role may be eligible for bonuses/incentives and restricted stock units.
+
+Also, we provide the following benefits to the eligible employees:
+
+• Health Care Plan (Medical, Dental & Vision)
+
+• Retirement Plan (Traditional and Roth 401k)
+
+• Life Insurance (Basic, Voluntary & AD&D)
+
+• Paid Time Off (Vacation & Public Holidays)
+
+• Family Leave (Maternity, Paternity)
+
+• Short Term & Long Term Disability
+
+• Free Food & Snacks
+
+Please click here for our privacy disclosure.",3705,https://apply.workable.com/j/EF5F79EB04,,https://www.linkedin.com/jobs/view/4469262367,2026-08-24,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:28:23,2026-09-24,,31,startDate+linkedin,true,0,,,,,Mid-Senior level,2026-08-24,,true,,,,,,
+6D152E1BFA,"(Senior) Software Engineer, Deep Learning",pony-dot-ai,pony-dot-ai,Full time,Posted 6 Days Ago,,,"Fremont, California",2,"Fremont, California; Fremont",false,,United States,,0,"Founded in 2016 in Silicon Valley, Pony.ai has quickly become a global leader in autonomous mobility and is a pioneer in extending autonomous mobility technologies and services at a rapidly expanding footprint of sites around the world. Operating Robotaxi, Robotruck and Personally Owned Vehicles (POV) business units, Pony.ai is an industry leader in the commercialization of autonomous driving and is committed to developing the safest autonomous driving capabilities on a global scale. Pony.ai’s leading position has been recognized, with CNBC ranking Pony.ai #10 on its CNBC Disruptor list of the 50 most innovative and disruptive tech companies of 2022. In June 2023, Pony.ai was recognized on the XPRIZE and Bessemer Venture Partners inaugural “XB100” 2023 list of the world’s top 100 private deep tech companies, ranking #12 globally. As of August 2023, Pony.ai has accumulated nearly 21 million miles of autonomous driving globally. Pony.ai went public at NASDAQ in November 2024.
+
+Responsibility
+
+• Work with experts in the field of self-driving vehicles on software architecture and design, system and module design, evaluation metrics, specification and implementation of test and regression frameworks.
+
+• Design and develop large-scale foundation models trained on vast of real world data
+
+• Frame the open-ended real-world problems into well-defined ML problems; develop and apply cutting-edge ML approaches (deep learning, reinforcement learning, imitation learning, etc) to these problems; scale them to data pipelines; and streamline them to run in real-time on the cars.
+
+• Develop and deploy deep learning models, including vision language models (VLMs) and Large Language Models (LLMs)
+
+• Optimize deep learning models to run robustly under tight run-time constraints.
+
+Requirements
+
+• Master in Computer Science, or at least 2 years of equivalent industry experience in similar technical fields.
+
+• Solid understanding of data structures, algorithms, parallel computing, code optimization and large scale data processing.
+
+• Experience in applied machine learning including data collection and analysis, evaluation and feature engineering.
+
+• Expertise in C++/Python.
+
+• Strong communication skills and team spirit.
+
+Preferred Experience
+
+• PhD in Deep Learning, Machine Learning, Robotics, Natural Language Processing, or similar technical field of study.
+
+• Publications on top-tier conferences like CVPR/ICCV/ECCV/ICLR/ICML/NeurIPS/ICLR/AAAI/IJCV/PAMI
+
+• Experience in applying ML/DL for behavior prediction, imitation learning, motion planning.
+
+• Experience in deploying deep learning algorithms for real time applications, with limited computing resources.
+
+• Experience in convex optimization, computational geometry or linear algebra.
+
+• Experience in GPU/CUDA/TensorRT
+
+Compensation and Benefits
+
+Base Salary Range: $140,000 - $280,000 Annually
+
+Compensation may vary outside of this range depending on many factors, including the candidate’s qualifications, skills, competencies, experience, and location. Base pay is one part of the Total Compensation and this role may be eligible for bonuses/incentives and restricted stock units.
+
+Also, we provide the following benefits to the eligible employees:
+
+• Health Care Plan (Medical, Dental & Vision)
+
+• Retirement Plan (Traditional and Roth 401k)
+
+• Life Insurance (Basic, Voluntary & AD&D)
+
+• Paid Time Off (Vacation & Public Holidays)
+
+• Family Leave (Maternity, Paternity)
+
+• Short Term & Long Term Disability
+
+• Free Food & Snacks",3514,https://apply.workable.com/j/6D152E1BFA,,https://www.linkedin.com/jobs/view/4416702199,2026-07-15,200,Over 200 applicants,,matched,title,2026-09-24,2026-09-24T13:28:10,2026-09-24,,71,startDate+linkedin,true,0,,,,,Engineering - Software,2026-07-15,,true,,,,,,
+B61A865299,Machine Learning Engineer - Reinforcement Learning,pony-dot-ai,pony-dot-ai,Full time,Posted 6 Days Ago,,,"Fremont, California",2,"Fremont, California; Fremont",false,,United States,,0,"Founded in 2016 in Silicon Valley, Pony.ai has quickly become a global leader in autonomous mobility and is a pioneer in extending autonomous mobility technologies and services at a rapidly expanding footprint of sites around the world. Operating Robotaxi, Robotruck and Personally Owned Vehicles (POV) business units, Pony.ai is an industry leader in the commercialization of autonomous driving and is committed to developing the safest autonomous driving capabilities on a global scale. Pony.ai’s leading position has been recognized, with CNBC ranking Pony.ai #10 on its CNBC Disruptor list of the 50 most innovative and disruptive tech companies of 2022. In June 2023, Pony.ai was recognized on the XPRIZE and Bessemer Venture Partners inaugural “XB100” 2023 list of the world’s top 100 private deep tech companies, ranking #12 globally. As of August 2023, Pony.ai has accumulated nearly 21 million miles of autonomous driving globally. Pony.ai went public at NASDAQ in November 2024.
+
+Responsibility
+
+• Build scalable systems for training and fine-tuning large generative models that produce realistic, informative driving behaviors for evaluation and scenario coverage.
+
+• Implement and iterate on RL-style methods: algorithms, reward / preference objectives, and training setups suited to high-fidelity, insightful behaviors in simulation-aligned workflows (closed-loop evaluation mindset).
+
+• Ship deep learning solutions (including LLM / VLM where appropriate) that improve human-led triaging, automate high-volume workflows, and support nuanced analysis of self-driving behavior to surface critical anomalies.
+
+• Own production-oriented ML for fleet-scale assessment: training, optimization, monitoring, and iteration of models used to judge performance across large real-world exposure.
+
+• Design and evolve data + evaluation systems inspired by RL from human preferences (RLHF) and related paradigms—turning preference/judgment signals into repeatable, scalable training and evaluation loops.
+
+• Partner broadly with teams such as Prediction, Planning, Research, and platform/engineering leads to land cross-cutting improvements with clear metrics.
+
+Requirements
+
+• M.S. or Ph.D. in Computer Science, Machine Learning, AI, or a related field—or equivalent practical experience.
+
+• Hands-on experience building and applying ML in production-grade settings, with a strong RL component (policy learning, preference/feedback optimization, or offline/online RL pipelines).
+
+• Depth in deep learning, sequence modeling, and generative models.
+
+• Demonstrated impact via strong publications or a clear history of shipping impactful ML systems end-to-end.
+
+• Experience with large-scale distributed training and large-scale data processing.
+
+• Ability to lead ambiguous technical work from problem framing through reliable delivery.
+
+Preferred
+
+• Background in autonomous vehicles, robotics, or complex simulation environments.
+
+• Strong grasp of modern RL and post-training techniques in LLM, dLLM, VLA and video generations.
+
+• Hands-on integration of simulation platforms with ML training and evaluation workflows.
+
+• Python fluency and frameworks such as PyTorch
+
+• Experience defining and operating metrics for complex, safety-critical AI systems.
+
+• Technical leadership: influencing stakeholders, aligning teams, and raising the bar for evaluation rigor.
+
+• Excellent communication—simple explanations of complex trade-offs.
+
+Compensation and Benefits
+
+Base Salary Range: $150,000 - $250,000 Annually
+
+Compensation may vary outside of this range depending on many factors, including the candidate’s qualifications, skills, competencies, experience, and location. Base pay is one part of the Total Compensation and this role may be eligible for bonuses/incentives and restricted stock units.
+
+Also, we provide the following benefits to the eligible employees:
+
+• Health Care Plan (Medical, Dental & Vision)
+
+• Retirement Plan (Traditional and Roth 401k)
+
+• Life Insurance (Basic, Voluntary & AD&D)
+
+• Paid Time Off (Vacation & Public Holidays)
+
+• Family Leave (Maternity, Paternity)
+
+• Short Term & Long Term Disability
+
+• Free Food & Snacks
+
+Please click here for our privacy disclosure.",4198,https://apply.workable.com/j/B61A865299,,https://www.linkedin.com/jobs/view/4452538344,2026-09-18,200,Over 200 applicants,,matched,title,2026-09-24,2026-09-24T13:28:15,2026-09-24,,6,startDate+linkedin,true,0,,,,,,2026-09-18,,true,,,,,,
+AC3184DC42,Senior Software Engineer - Evaluation,pony-dot-ai,pony-dot-ai,Full time,Posted 6 Days Ago,,,"Fremont, California",2,"Fremont, California; Fremont",false,,United States,,0,"Founded in 2016 in Silicon Valley, Pony.ai has quickly become a global leader in autonomous mobility and is a pioneer in extending autonomous mobility technologies and services at a rapidly expanding footprint of sites around the world. Operating Robotaxi, Robotruck and Personally Owned Vehicles (POV) business units, Pony.ai is an industry leader in the commercialization of autonomous driving and is committed to developing the safest autonomous driving capabilities on a global scale. Pony.ai’s leading position has been recognized, with CNBC ranking Pony.ai #10 on its CNBC Disruptor list of the 50 most innovative and disruptive tech companies of 2022. In June 2023, Pony.ai was recognized on the XPRIZE and Bessemer Venture Partners inaugural “XB100” 2023 list of the world’s top 100 private deep tech companies, ranking #12 globally. As of August 2023, Pony.ai has accumulated nearly 21 million miles of autonomous driving globally. Pony.ai went public at NASDAQ in November 2024.
+
+Responsibility
+
+• Design and build end-to-end data processing pipelines and toolchains to support large-scale data collection, batch processing, curation, and multi-dimensional evaluation.
+
+• Design and implement high-performance backend services and distributed architectures , capable of handling large-scale real-time event processing.
+
+• Collaborate across complex business components to lead the design of targeted system-level evaluation metrics, testing frameworks, and advanced simulation environments.
+
+• Leverage and improve industry-leading, open-source distributed technologies to continuously advance infrastructure capabilities and processing efficiency.
+
+• Drive critical architectural decisions and technology selection, ensuring rigorous standards for security, stability, scalability, and high performance.
+
+• Establish and maintain comprehensive system monitoring, fine-grained observability metrics, and automated alerting frameworks to ensure low latency and reliable production operations.
+
+• Build and optimize downstream engineering workflows for Large Language Models (LLMs), programmatically steering model reasoning, establishing guardrails, and mitigating hallucinations to ensure reliable outputs.
+
+Requirements
+
+• Strong programming skills in C/C++, Python, and software design
+
+• Strong foundation in mathematics and theoretical computer science, such as linear algebra, calculus, graph theory, computational geometry, combinatorial optimization algorithms, stochastic processes, and complexity analysis.
+
+• Possessing solid engineering discipline, or demonstrating strong interest and potential in building large-scale systems, with the ability to maximize performance while keeping complexity and cost to a minimum.
+
+• Pursueing a BS/MS or Ph.D in Computer Science or a related field
+
+• Experience in large data set processing and familiarity with real time systems
+
+• Solid experience in a fast-paced and structured engineering environment
+
+• Full stack experience including both front end and back end is preferred
+
+• Statistics analysis experience is preferred
+
+Compensation and Benefits
+
+Base Salary Range: $120,000 - $220,000 Annually
+
+Compensation may vary outside of this range depending on many factors, including the candidate’s qualifications, skills, competencies, experience, and location. Base pay is one part of the Total Compensation and this role may be eligible for bonuses/incentives and restricted stock units.
+
+Also, we provide the following benefits to eligible employees:
+
+• Health Care Plan (Medical, Dental & Vision)
+
+• Retirement Plan (Traditional and Roth 401k)
+
+• Life Insurance (Basic, Voluntary & AD&D)
+
+• Paid Time Off (Vacation & Public Holidays)
+
+• Family Leave (Maternity, Paternity)
+
+• Short Term & Long Term Disability
+
+• Free Food & Snacks",3798,https://apply.workable.com/j/AC3184DC42,,https://www.linkedin.com/jobs/view/4469261458,2026-08-24,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:28:16,2026-09-24,,31,startDate+linkedin,true,0,,,,,Mid-Senior level,2026-08-24,,true,,,,,,
+95D88E76BE,Software Engineer - Evaluation,pony-dot-ai,pony-dot-ai,Full time,Posted 6 Days Ago,,,"Fremont, California",2,"Fremont, California; Fremont",false,,United States,,0,"Founded in 2016 in Silicon Valley, Pony.ai has quickly become a global leader in autonomous mobility and is a pioneer in extending autonomous mobility technologies and services at a rapidly expanding footprint of sites around the world. Operating Robotaxi, Robotruck and Personally Owned Vehicles (POV) business units, Pony.ai is an industry leader in the commercialization of autonomous driving and is committed to developing the safest autonomous driving capabilities on a global scale. Pony.ai’s leading position has been recognized, with CNBC ranking Pony.ai #10 on its CNBC Disruptor list of the 50 most innovative and disruptive tech companies of 2022. In June 2023, Pony.ai was recognized on the XPRIZE and Bessemer Venture Partners inaugural “XB100” 2023 list of the world’s top 100 private deep tech companies, ranking #12 globally. As of August 2023, Pony.ai has accumulated nearly 21 million miles of autonomous driving globally. Pony.ai went public at NASDAQ in November 2024.
+
+Responsibility
+
+• Design and implement algorithms and evaluation metrics to drive core AI decision-making.
+
+• Build scalable data pipelines and toolchains for large-scale data ingestion, batch processing, and evaluation.
+
+• Design system-level evaluation metrics, testing frameworks, and simulation environments across business components.
+
+• Design and implement high-performance backend services and distributed architectures , capable of handling large-scale real-time event processing.
+
+• Establish and maintain comprehensive system monitoring, fine-grained observability metrics, and automated alerting frameworks to ensure low latency and reliable production operations.
+
+• Build and optimize downstream engineering workflows for Large Language Models (LLMs), programmatically steering model reasoning, establishing guardrails, and mitigating hallucinations to ensure reliable outputs.
+
+Requirements
+
+• Strong programming skills in C/C++, Python, and software design
+
+• Strong foundation in mathematics and theoretical computer science, such as linear algebra, calculus, graph theory, computational geometry, combinatorial optimization algorithms, stochastic processes, and complexity analysis.
+
+• Possessing solid engineering discipline, or demonstrating strong interest and potential in building large-scale systems, with the ability to maximize performance while keeping complexity and cost to a minimum.
+
+• BS/MS or Ph.D in Computer Science or a related field
+
+Compensation and Benefits
+
+Base Salary Range: $120,000 - $200,000 Annually
+
+Compensation may vary outside of this range depending on many factors, including the candidate’s qualifications, skills, competencies, experience, and location. Base pay is one part of the Total Compensation and this role may be eligible for bonuses/incentives and restricted stock units.
+
+Also, we provide the following benefits to eligible employees:
+
+• Health Care Plan (Medical, Dental & Vision)
+
+• Retirement Plan (Traditional and Roth 401k)
+
+• Life Insurance (Basic, Voluntary & AD&D)
+
+• Paid Time Off (Vacation & Public Holidays)
+
+• Family Leave (Maternity, Paternity)
+
+• Short Term & Long Term Disability
+
+• Free Food & Snacks",3171,https://apply.workable.com/j/95D88E76BE,,https://www.linkedin.com/jobs/view/4465277137,2026-09-18,200,Over 200 applicants,,matched,title,2026-09-24,2026-09-24T13:28:13,2026-09-24,,6,startDate+linkedin,true,0,,,,,Entry level,2026-09-18,,true,,,,,,
+BA5FFDBC71,Software Engineer Intern - Generalist,pony-dot-ai,pony-dot-ai,,Posted 6 Days Ago,,,"Fremont, California",2,"Fremont, California; Fremont",false,,United States,,0,"Founded in 2016 in Silicon Valley, Pony.ai has quickly become a global leader in autonomous mobility and is a pioneer in extending autonomous mobility technologies and services at a rapidly expanding footprint of sites around the world. Operating Robotaxi, Robotruck and Personally Owned Vehicles (POV) business units, Pony.ai is an industry leader in the commercialization of autonomous driving and is committed to developing the safest autonomous driving capabilities on a global scale. Pony.ai’s leading position has been recognized, with CNBC ranking Pony.ai #10 on its CNBC Disruptor list of the 50 most innovative and disruptive tech companies of 2022. In June 2023, Pony.ai was recognized on the XPRIZE and Bessemer Venture Partners inaugural “XB100” 2023 list of the world’s top 100 private deep tech companies, ranking #12 globally. As of August 2023, Pony.ai has accumulated nearly 21 million miles of autonomous driving globally. Pony.ai went public at NASDAQ in November 2024.
+
+Responsibility
+
+• Design and implement algorithms and evaluation metrics to drive core AI decision-making.
+
+• Build scalable data pipelines and toolchains for large-scale data ingestion, batch processing, and evaluation.
+
+• Design system-level evaluation metrics, testing frameworks, and simulation environments across business components.
+
+Requirements
+
+• Strong programming skills in C/C++, Python, and software design
+
+• Strong foundation in mathematics and theoretical computer science, such as linear algebra, calculus, graph theory, computational geometry, combinatorial optimization algorithms, stochastic processes, and complexity analysis.
+
+• Possessing solid engineering discipline, or demonstrating strong interest and potential in building large-scale systems, with the ability to maximize performance while keeping complexity and cost to a minimum.
+
+• Pursueing a BS/MS or Ph.D in Computer Science or a related field
+
+• Experience in large data set processing and familiarity with real time systems
+
+• Solid experience in a fast-paced and structured engineering environment
+
+• Full stack experience including both front end and back end is preferred
+
+• Statistics analysis experience is preferred
+
+Note
+
+• The position is rolling-based and can start anytime.
+
+• This position is fully onsite in Fremont, at least 3 months.
+
+Compensation
+
+• Master: $7000/month
+
+• PhD: $10,000/month
+
+Please click here for our privacy disclosure.",2431,https://apply.workable.com/j/BA5FFDBC71,,,,,,,no_match,,2026-09-24,,2026-09-24,,,,true,0,,,,,Internship,,,false,,,,,,
+38035832EE,"Software Engineer, Behavior",pony-dot-ai,pony-dot-ai,Full time,Posted 6 Days Ago,,,"Fremont, California",2,"Fremont, California; Fremont",false,,United States,,0,"Founded in 2016 in Silicon Valley, Pony.ai has quickly become a global leader in autonomous mobility and is a pioneer in extending autonomous mobility technologies and services at a rapidly expanding footprint of sites around the world. Operating Robotaxi, Robotruck and Personally Owned Vehicles (POV) business units, Pony.ai is an industry leader in the commercialization of autonomous driving and is committed to developing the safest autonomous driving capabilities on a global scale. Pony.ai’s leading position has been recognized, with CNBC ranking Pony.ai #10 on its CNBC Disruptor list of the 50 most innovative and disruptive tech companies of 2022. In June 2023, Pony.ai was recognized on the XPRIZE and Bessemer Venture Partners inaugural “XB100” 2023 list of the world’s top 100 private deep tech companies, ranking #12 globally. As of August 2023, Pony.ai has accumulated nearly 21 million miles of autonomous driving globally. Pony.ai went public at NASDAQ in November 2024.
+
+Responsibility
+
+• Collaborated with cross-functional teams to design safe, smooth, and socially aware autonomous vehicle behaviors for complex passenger interactions like pick-up, drop-off, intent understanding under high sensory noise and uncertainty.
+
+• Transformed open-ended real-world traffic scenarios into defined engineering frameworks; developed end-to-end solutions spanning algorithm design, evaluation tools, massive-scale data pipelines, and real-time on-vehicle deployment.
+
+Requirements
+
+• BS in Computer Science, ML, Robotics, similar technical field of study, or equivalent practical experience
+
+• General software engineering experience, proficient in at least one mainstream programming language (such as C, C++, Python, or Java) and familiar with common data structures and algorithms.
+
+Preferred
+
+• MS in Computer Science, ML Robotics, similar technical field of study
+
+• General software engineering experience solving motion planning or related robotics problems
+
+• Building or evaluating ML-based systems
+
+Compensation and Benefits
+
+Base Salary Range: $120,000 - $200,000 Annually
+
+Compensation may vary outside of this range depending on many factors, including the candidate’s qualifications, skills, competencies, experience, and location. Base pay is one part of the Total Compensation and this role may be eligible for bonuses/incentives and restricted stock units.
+
+Also, we provide the following benefits to the eligible employees:
+
+• Health Care Plan (Medical, Dental & Vision)
+
+• Retirement Plan (Traditional and Roth 401k)
+
+• Life Insurance (Basic, Voluntary & AD&D)
+
+• Paid Time Off (Vacation & Public Holidays)
+
+• Family Leave (Maternity, Paternity)
+
+• Short Term & Long Term Disability
+
+• Free Food & Snacks
+
+Please click here for our privacy disclosure.",2781,https://apply.workable.com/j/38035832EE,,https://www.linkedin.com/jobs/view/4452533282,2026-09-18,200,Over 200 applicants,,matched,title,2026-09-24,2026-09-24T13:28:26,2026-09-24,,6,startDate+linkedin,true,0,,,,,Engineering - Software,2026-09-18,,true,,,,,,
+6137A19FBD,"Software Engineer, Decision Making & Path Planning",pony-dot-ai,pony-dot-ai,Full time,Posted 6 Days Ago,,,"Fremont, California",2,"Fremont, California; Fremont",false,,United States,,0,"Founded in 2016 in Silicon Valley, Pony.ai has quickly become a global leader in autonomous mobility and is a pioneer in extending autonomous mobility technologies and services at a rapidly expanding footprint of sites around the world. Operating Robotaxi, Robotruck and Personally Owned Vehicles (POV) business units, Pony.ai is an industry leader in the commercialization of autonomous driving and is committed to developing the safest autonomous driving capabilities on a global scale. Pony.ai’s leading position has been recognized, with CNBC ranking Pony.ai #10 on its CNBC Disruptor list of the 50 most innovative and disruptive tech companies of 2022. In June 2023, Pony.ai was recognized on the XPRIZE and Bessemer Venture Partners inaugural “XB100” 2023 list of the world’s top 100 private deep tech companies, ranking #12 globally. As of August 2023, Pony.ai has accumulated nearly 21 million miles of autonomous driving globally. Pony.ai went public at NASDAQ in November 2024.
+
+Responsibility
+
+The team is responsible for determining how autonomous vehicles navigate based on real-time traffic conditions, including roads, surrounding environments, other vehicles, and pedestrians. It is one of the most core teams in autonomous driving. You will be responsible for one or more of the following tasks:
+
+• Architecture design, algorithm, and system development for high-performance and highly reliable L4 Autonomous Driving Planning algorithms.
+
+• Optimizing and providing safety fallbacks for end-to-end model outputs. Through post-processing, ensure vehicle behavior is safe and controllable, realizing an HD-map-independent autonomous driving system that satisfies L4 capabilities and requirements.
+
+• Designing and developing a redundant system that satisfies L4 capabilities and requirements using lower compute power, select sensors, and end-to-end technology.
+
+• Architecture design and system development for road-test big data analysis and processing.
+
+• Simulation platform development, using massive road-test data to make the simulation platform better align with real-world road test scenarios.
+
+Requirements
+
+• BS in Computer Science, ML, Robotics, similar technical field of study, or equivalent practical experience
+
+• General software engineering experience, proficient in at least one mainstream programming language (such as C, C++, Python, or Java) and familiar with common data structures and algorithms.
+
+• Excellent communication and collaboration skills.
+
+• Excellent problem transformation and modeling capabilities, with creative thinking to solve challenging problems that haven't been resolved industry-wide.
+
+Preferred
+
+• MS in Computer Science, ML Robotics, similar technical field of study
+
+• General software engineering experience solving motion planning or related robotics problems
+
+Compensation and Benefits
+
+Base Salary Range: $120,000 - $200,000 Annually
+
+Compensation may vary outside of this range depending on many factors, including the candidate’s qualifications, skills, competencies, experience, and location. Base pay is one part of the Total Compensation and this role may be eligible for bonuses/incentives and restricted stock units.
+
+Also, we provide the following benefits to the eligible employees:
+
+• Health Care Plan (Medical, Dental & Vision)
+
+• Retirement Plan (Traditional and Roth 401k)
+
+• Life Insurance (Basic, Voluntary & AD&D)
+
+• Paid Time Off (Vacation & Public Holidays)
+
+• Family Leave (Maternity, Paternity)
+
+• Short Term & Long Term Disability
+
+• Free Food & Snacks
+
+Please click here for our privacy disclosure.",3590,https://apply.workable.com/j/6137A19FBD,,https://www.linkedin.com/jobs/view/4465233265,2026-09-18,200,Over 200 applicants,,matched,title,2026-09-24,2026-09-24T13:28:28,2026-09-24,,6,startDate+linkedin,true,0,,,,,,2026-09-18,,true,,,,,,
+04CF19CD1E,Staff/Senior Staff Software Engineer - Perception,pony-dot-ai,pony-dot-ai,Full time,Posted 6 Days Ago,,,"Fremont, California",2,"Fremont, California; Fremont",false,,United States,,0,"Founded in 2016 in Silicon Valley, Pony.ai has quickly become a global leader in autonomous mobility and is a pioneer in extending autonomous mobility technologies and services at a rapidly expanding footprint of sites around the world. Operating Robotaxi, Robotruck and Personally Owned Vehicles (POV) business units, Pony.ai is an industry leader in the commercialization of autonomous driving and is committed to developing the safest autonomous driving capabilities on a global scale. Pony.ai’s leading position has been recognized, with CNBC ranking Pony.ai #10 on its CNBC Disruptor list of the 50 most innovative and disruptive tech companies of 2022. In June 2023, Pony.ai was recognized on the XPRIZE and Bessemer Venture Partners inaugural “XB100” 2023 list of the world’s top 100 private deep tech companies, ranking #12 globally. As of August 2023, Pony.ai has accumulated nearly 21 million miles of autonomous driving globally. Pony.ai went public at NASDAQ in November 2024.
+
+Responsibility
+
+As the Staff/Senior Staff Software Engineer - Perception, you will be responsible for developing and implementing the next-generation perception system that enables our autonomous systems to understand and navigate their environment with precision and reliability. You will work closely with the planner team to accomplish the final end-to-end AI-based autonomous driving system.
+
+• Push forward innovative AI techniques to solve extremely challenging real-world robotics problems that are deployed at large scale.
+
+• Manage the team with world-class deep learning engineers and software engineers, ensure each team member operates with excellence and achieves their objectives.
+
+• Drive both the short-term and long-term technical vision in a domain where long-term solutions are still evolving research challenges, continually advancing the state of the art of the autonomous driving system.
+
+• Develop and maintain strong collaborative relationships with peers across the entire company, foster a unified and synergistic environment that leverages cross-functional expertise to propel our autonomous systems forward.
+
+Requirements
+
+• Master’s or PhD Degree in Computer Science, Engineering, Mathematics, Statistics, or related fields
+
+• 5+ years of experience in deploying state-of-the-art computer vision or deep learning technologies to real-world applications.
+
+• Proficiency in programming languages such as C++ or Python.
+
+• Execution mindset and skills in a fast paced environment.
+
+• Excellent technical leadership abilities.
+
+• Passionate about AI technologies for real-world applications.
+
+Preferred Experience
+
+• Strong track record in designing org structures and growing people.
+
+• Extensive experience in the autonomous driving industry.
+
+• Strong understanding of real-time systems and optimization techniques.
+
+• Hands-on experience having deployed real products or platforms into the real world, and intimately understanding the challenges of working with complex systems
+
+Compensation and Benefits
+
+Base Salary Range: $245,000 - $350,000 Annually
+
+Compensation may vary outside of this range depending on many factors, including the candidate’s qualifications, skills, competencies, experience, and location. Base pay is one part of the Total Compensation and this role may be eligible for bonuses/incentives and restricted stock units.
+
+Also, we provide the following benefits to the eligible employees:
+
+• Health Care Plan (Medical, Dental & Vision)
+
+• Retirement Plan (Traditional and Roth 401k)
+
+• Life Insurance (Basic, Voluntary & AD&D)
+
+• Paid Time Off (Vacation & Public Holidays)
+
+• Family Leave (Maternity, Paternity)
+
+• Short Term & Long Term Disability
+
+• Free Food & Snacks
+
+Please click here for our privacy disclosure.",3759,https://apply.workable.com/j/04CF19CD1E,,https://www.linkedin.com/jobs/view/4416712078,2026-07-15,130,130 applicants,,matched,title,2026-09-24,2026-09-24T13:28:24,2026-09-24,,71,startDate+linkedin,true,0,,,,,,2026-07-15,,false,,,,,,

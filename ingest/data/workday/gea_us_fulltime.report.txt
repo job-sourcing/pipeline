@@ -1,0 +1,10 @@
+rows: 172 (unique reqIds: 172)
+details merged: 172
+descriptions present: 172
+locations enumerated (not 'N Locations'): 172
+startDate present: 172
+signals: matched=88 no_match=84 blocked=0 not_checked=0
+location entries total (sum nLocations): 199
+similar-job edges: 475
+facet census: 8 facets / 138 values (gea_us_fulltime.facets.json)
+questionnaire definitions: 8 id(s) covering 172/172 rows; 8 fetched (53 questions → gea_us_fulltime.questionnaires.csv)

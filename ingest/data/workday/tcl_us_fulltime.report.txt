@@ -1,0 +1,10 @@
+rows: 3 (unique reqIds: 3)
+details merged: 3
+descriptions present: 3
+locations enumerated (not 'N Locations'): 3
+startDate present: 0
+signals: matched=3 no_match=0 blocked=0 not_checked=0
+location entries total (sum nLocations): 3
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=3 (from facet_tags.jsonl)
+facet tag coverage: 3/3 rows (0 untagged)

@@ -1,0 +1,10 @@
+rows: 4 (unique reqIds: 4)
+details merged: 4
+descriptions present: 4
+locations enumerated (not 'N Locations'): 4
+startDate present: 0
+signals: matched=0 no_match=4 blocked=0 not_checked=0
+location entries total (sum nLocations): 6
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=4 (from facet_tags.jsonl)
+facet tag coverage: 4/4 rows (0 untagged)

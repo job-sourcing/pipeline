@@ -281,6 +281,22 @@ _APPLICATION_DEADLINE_RE = re.compile(
 _TAG_FACETS = ("workerSubType", "jobFamilyGroup")
 
 
+def _split_variants(raw: str) -> list[str]:
+    """S16: --li-variants values may CONTAIN commas — legal-name card
+    strings like 'GE Appliances, a Haier company'. Split on ',', then
+    re-join any piece that starts with whitespace onto its predecessor
+    (the flag convention has always been tight commas 'A,B'; a company
+    legal name is always written with ', ' — the space disambiguates)."""
+    pieces = raw.split(",")
+    out: list[str] = []
+    for p in pieces:
+        if p[:1].isspace() and out:
+            out[-1] = out[-1] + "," + p
+        else:
+            out.append(p)
+    return [v.strip() for v in out if v.strip()]
+
+
 def _slug_req_id(path: str) -> str:
     """reqId from a CXS externalPath slug: '…/Title_JR2018179-3' →
     'JR2018179' (the trailing -N repost suffix is stripped — same
@@ -830,6 +846,12 @@ def phase_corroborate(args, out: Path) -> int:
               "(pass --corroborate-index)", flush=True)
 
     # ── sub-step 2: signals for index cards (resumable by card id) ──
+    # S16: the signals file is STATE — create it (empty) even when the
+    # index found 0 cards. A missing file breaks downstream preconditions
+    # (titlesearch refuses; s10_invariants INV-4 fails) on boards with
+    # no LI surface; empty = valid state.
+    if not sig_path.exists():
+        _atomic_write_text(sig_path, "")
     # blocked = fetch failed (429 wall / circuit-open) — NOT done; the
     # audit (S7-A2 G) found blocked cards were permanently skipped. Retry
     # them; only matched records count as settled (blocked records are
@@ -937,10 +959,12 @@ def phase_title_search(args, out: Path) -> int:
         print(f"no {list_path} — run --phase list first")
         return 2
     rows = _load_jsonl(list_path)
-    signals = _load_jsonl(sig_path)
-    if not signals:
+    # S16: the signals file must EXIST (corroborate ran) — but it may be
+    # EMPTY (0 LI cards on the board): that is valid state, probe on.
+    if not sig_path.exists():
         print(f"no {sig_path} — run --phase corroborate first")
         return 2
+    signals = _load_jsonl(sig_path)
     details, _att = _load_details_state(
         out.with_suffix(".details.jsonl"))
     req_ids = {r["reqId"] for r in rows}
@@ -2371,7 +2395,12 @@ def main() -> int:
                     help="comma list of LinkedIn card company strings "
                          "beyond --company that belong to the board "
                          "(default: '<company>, <company> ai' — the "
-                         "NVIDIA/NVIDIA-AI pilot behavior) [S12]")
+                         "NVIDIA/NVIDIA-AI pilot behavior) [S12]. S16: "
+                         "variants may CONTAIN commas (legal-name card "
+                         "strings like 'GE Appliances, a Haier company') "
+                         "— a piece starting with whitespace re-joins "
+                         "the previous variant (separators have always "
+                         "been tight commas 'A,B')")
     ap.add_argument("--slice-locations", default="",
                     help="semicolon list of LinkedIn search locations "
                          "for the partitioned index (default: the NVIDIA "
@@ -2428,9 +2457,14 @@ def main() -> int:
     # S12 multi-company: per-company LI matching knowledge (card company
     # variants + index slice geography). Library defaults stay NVIDIA-
     # pilot-shaped; explicit flags/register entries override.
+    # S16: variants may CONTAIN commas (legal-name card strings — 'GE
+    # Appliances, a Haier company'); the split heuristic re-joins any
+    # piece that starts with whitespace onto its predecessor (the flag
+    # convention has always been tight commas 'A,B', never 'A, B').
     if args.li_variants:
         corroborate.set_company_overrides(
-            args.company, variants=args.li_variants.split(","))
+            args.company,
+            variants=_split_variants(args.li_variants))
     if args.slice_locations:
         corroborate.set_company_overrides(
             args.company,

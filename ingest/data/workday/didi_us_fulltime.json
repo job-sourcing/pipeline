@@ -1,0 +1,510 @@
+{
+ "board": "ats:greenhouse:didi",
+ "company": "DiDi",
+ "country": "United States",
+ "time_type": "Full time",
+ "dumpDate": "2026-09-24",
+ "count": 9,
+ "details_merged": 9,
+ "signals_matched": 7,
+ "similar_edges": 0,
+ "facet_tagged_rows": 9,
+ "rows": [
+  {
+   "reqId": "8198303",
+   "title": "Motion Planning Engineer (PhD, Intern)",
+   "company": "didi",
+   "url": "https://job-boards.greenhouse.io/didi/jobs/8198303",
+   "externalPath": "/jobs/8198303",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 12 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "8198303"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-09-11",
+   "departments": [
+    "Planning US"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Motion Planning Engineer (PhD, Intern)",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p style=&quot;line-height: 1.3;&quot;&gt;&lt;strong&gt;About The Company&lt;/strong&gt;&lt;/p&gt;\n&lt;p style=&quot;line-height: 1.3;&quot;&gt;DiDi&#39;s autonomous driving unit was established in 2016 with the mission of developing Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&amp;amp;D, product application, and business expansion. We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi&#39;s specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.&lt;/p&gt;\n&lt;p style=&quot;line-height: 1.3;&quot;&gt;&lt;br&gt;&lt;strong&gt;About The Role&lt;/strong&gt;&lt;/p&gt;\n&lt;p style=&quot;line-height: 1.3;&quot;&gt;We are seeking a motivated PhD graduate with a strong research background in motion planning, robotics, or autonomous systems. In this role, you will apply your expertise in algorithm design and system integration to help develop next-generation planning capabilities for autonomous vehicles.&lt;br&gt;&lt;br&gt;&lt;/p&gt;\n&lt;p style=&quot;line-height: 1.3;&quot;&gt;&lt;strong&gt;Responsibilities&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Implement novel solutions for Behavioral Planning, enabling high-level decision-making for lane changes, merges, yields, and multi-agent interactions.&lt;/li&gt;\n&lt;li&gt;Design and optimize motion planning algorithms that integrate geometry-based path reasoning and context-aware speed reasoning into smooth, safe trajectories.&lt;/li&gt;\n&lt;li&gt;Develop and improve core geometry and velocity planning systems to ensure feasibility, compliance, and comfort across diverse driving scenarios.&lt;/li&gt;\n&lt;li&gt;Model complex driving environments and agent behaviors to create a robust world representation for planning under uncertainty.&lt;/li&gt;\n&lt;li&gt;Formulate cost functions and optimization frameworks that balance safety, comfort, and efficiency in trajectory selection.&lt;/li&gt;\n&lt;li&gt;Analyze, test, and debug system performance through simulation and real-world data, conducting root-cause investigations and proposing enhancements.&lt;/li&gt;\n&lt;li&gt;Collaborate with researchers and engineers across Perception, Prediction, and Control to ensure an integrated, reliable autonomy stack.&lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p style=&quot;line-height: 1.3;&quot;&gt;&lt;strong&gt;Qualifications&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Recently completed or soon-to-complete PhD in Robotics, Computer Science, Electrical Engineering, or a related field.&lt;/li&gt;\n&lt;li&gt;Research or Internship experience in one or more of the following:&lt;/li&gt;\n&lt;li&gt;Motion planning algorithms (optimization, sampling, graph/search-based methods)&lt;/li&gt;\n&lt;li&gt;Behavioral planning and decision-making under uncertainty&lt;/li&gt;\n&lt;li&gt;Trajectory optimization and control&lt;/li&gt;\n&lt;li&gt;Multi-agent interaction modeling&lt;/li&gt;\n&lt;li&gt;Proven research ability demonstrated by publications in top-tier conferences (e.g., RSS, ICRA, IROS, CVPR, NeurIPS, CoRL).&lt;/li&gt;\n&lt;li&gt;Hands-on experience in C++ for implementing complex, real-time algorithms.&lt;/li&gt;\n&lt;li&gt;Excellent analytical and communication skills, with a collaborative mindset.&lt;/li&gt;\n&lt;li&gt;For Internship Applicants: This role offers a clear pathway, with top-performing interns receiving the opportunity to convert to a full-time engineer upon successful completion of the program.&lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p style=&quot;line-height: 1.3;&quot;&gt;The hourly rate for the Intern position in the selected city is $46. Interns will&amp;nbsp;also be eligible for Intern benefits.&amp;nbsp;&lt;/p&gt;\n&lt;p style=&quot;line-height: 1.3;&quot;&gt;Applications are accepted on an ongoing basis. This posting is for an existing vacancy.&lt;br&gt;&lt;br&gt;&lt;em&gt;I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on &lt;/em&gt;&lt;em&gt;&lt;a class=&quot;riUkhhEIAtDiibzrlddIVaKubAlAoKyg &quot; href=&quot;https://v.didi.cn/AQnxlBa&quot; target=&quot;_blank&quot; data-test-app-aware-link=&quot;&quot;&gt;https://v.didi.cn/AQnxlBa&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/didi/jobs/8198303",
+    "jobReqId": "8198303",
+    "postedOn": "Posted 12 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "DiDi Labs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Planning US",
+   "signals": {
+    "linkedin_job_id": "4466441639",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4466441639",
+    "title": "Motion Planning Engineer (PhD, Intern)",
+    "company": "DiDi",
+    "location": "San Jose, CA",
+    "linkedin_posted_date": "2026-09-12",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T13:03:33",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "8198302",
+   "title": "Senior/Sr. Staff AI Infrastructure Engineer, Inference & Optimization",
+   "company": "didi",
+   "url": "https://job-boards.greenhouse.io/didi/jobs/8198302",
+   "externalPath": "/jobs/8198302",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 12 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "8198302"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-09-11",
+   "departments": [
+    "Artificial Intelligence"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Senior/Sr. Staff AI Infrastructure Engineer, Inference & Optimization",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;About the Company&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;DiDi&#39;s autonomous driving unit was established in 2016 with the mission of developing &lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&amp;amp;D, product application, and business expansion. &lt;/span&gt;&lt;span class=&quot;ql-size-12 ql-font-microsoftyahei ql-author-10000202573&quot;&gt;We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi&#39;s specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.&lt;/span&gt;&lt;/p&gt;\n&lt;div class=&quot;ql-direction-ltr ql-long-10000202573&quot; data-header=&quot;4&quot; data-foldable=&quot;true&quot; data-default-linespacing=&quot;100&quot;&gt;\n&lt;p data-path-to-node=&quot;1&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;1&quot;&gt;&lt;strong data-path-to-node=&quot;1&quot; data-index-in-node=&quot;0&quot;&gt;About The Role&lt;/strong&gt;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;2&quot;&gt;We are seeking an experienced and mission-driven &lt;strong&gt;Senior/Sr. Staff AI Infrastructure Engineer&lt;/strong&gt;, Inference &amp;amp; Optimization to lead the performance tuning, deployment, and resource scheduling of cutting-edge AI models across on-vehicle and cloud infrastructure. In this role, you will design high-efficiency inference pipelines, build system-level stability frameworks, and optimize hardware execution to ensure ultra-low latency and rock-solid operational reliability. You will act as a technical leader in AI infrastructure, accelerating model iteration and bridging the gap between frontier deep learning algorithms and real-time autonomous systems.&lt;/p&gt;\n&lt;p data-path-to-node=&quot;3&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;3&quot;&gt;&lt;strong data-path-to-node=&quot;3&quot; data-index-in-node=&quot;0&quot;&gt;Responsibilities&lt;/strong&gt;&lt;/p&gt;\n&lt;ul data-path-to-node=&quot;4&quot;&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;4,0,0&quot;&gt;Own the deployment, optimization, and resource scheduling of vehicle-side AI models, ensuring high efficiency, low latency, and robust execution within embedded constraints.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;4,1,0&quot;&gt;Lead vehicle-side system stability initiatives, conducting independent root-cause analysis and driving resolution for complex, system-level performance bottlenecks and runtime anomalies.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;4,2,0&quot;&gt;Architect and scale service-oriented deployment environments for Large Language Models (LLMs) and foundational models to support offline simulation, automated annotation, and rapid model validation.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;4,3,0&quot;&gt;Track and evaluate cutting-edge industry methodologies, continuously integrating advanced optimization toolchains, quantization techniques, and execution engines.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;4,4,0&quot;&gt;Establish system-level profiling and telemetry frameworks using CUDA tools to monitor, analyze, and maximize hardware utilization across target GPU architectures.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;4,5,0&quot;&gt;Collaborate cross-functionally with Autonomous Driving Perception/Prediction, Cloud Infrastructure, and Safety teams to enable rapid algorithm iteration and scalable vehicle deployment.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p data-path-to-node=&quot;5&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;5&quot;&gt;&lt;strong data-path-to-node=&quot;5&quot; data-index-in-node=&quot;0&quot;&gt;Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul data-path-to-node=&quot;6&quot;&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,0,0&quot;&gt;Master’s or higher degree in Computer Science, Software Engineering, Systems Engineering, or a closely related technical field.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,1,0&quot;&gt;3-8+ years of industry experience in high-performance computing, AI infrastructure, model optimization, or embedded deployment.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,2,0&quot;&gt;Strong proficiency in C++ and Python, with solid expertise in parallel programming (CUDA, OpenMP) and low-level system profiling tools.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,3,0&quot;&gt;Deep familiarity with mainstream inference engines (e.g., TensorRT, ONNX Runtime) and specialized LLM inference/serving frameworks (e.g., vLLM, SGLang, TensorRT-LLM).&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,4,0&quot;&gt;Practical understanding of modern GPU hardware architectures (e.g., NVIDIA Hopper, Thor) and memory bandwidth management.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,5,0&quot;&gt;Demonstrated ability to diagnose complex software-hardware integration issues and drive scalable, production-grade solutions.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p data-path-to-node=&quot;7&quot;&gt;&lt;strong data-path-to-node=&quot;7&quot; data-index-in-node=&quot;0&quot;&gt;Preferred Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul data-path-to-node=&quot;8&quot;&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,0,0&quot;&gt;Hands-on experience optimizing and deploying AI models on the NVIDIA Thor platform, including hardware resource scheduling and acceleration.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,1,0&quot;&gt;Proven track record of serving large foundation models (e.g., LLaMA, Qwen, GPT) in production or high-throughput cloud pipelines using frameworks like vLLM, SGLang, TGI, or LightLLM.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,2,0&quot;&gt;Background in deep learning training frameworks (PyTorch) and practical experience with model quantization (INT8/FP8/AWQ), kernel fusion, or graph compilation.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,3,0&quot;&gt;Experience deploying real-time, high-availability AI workloads in autonomous vehicles, robotics, or edge devices.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;The base salary range for this full-time position is $169,783 - $351,000 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.&lt;br&gt;&lt;br&gt;&lt;em&gt;I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on &lt;/em&gt;&lt;em&gt;&lt;a class=&quot;DBdARXcCrTyZgKqxyZRgbwwFPsuTbimRw &quot; href=&quot;https://v.didi.cn/AQnxlBa&quot; target=&quot;_blank&quot; data-test-app-aware-link=&quot;&quot;&gt;https://v.didi.cn/AQnxlBa&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/didi/jobs/8198302",
+    "jobReqId": "8198302",
+    "postedOn": "Posted 12 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "DiDi Labs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Artificial Intelligence",
+   "signals": {
+    "linkedin_job_id": "4466437679",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4466437679",
+    "title": "Senior/Sr. Staff AI Infrastructure Engineer, Inference & Optimization",
+    "company": "DiDi",
+    "location": "San Jose, CA",
+    "linkedin_posted_date": "2026-09-12",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T13:03:15",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "8131864",
+   "title": "Software Engineer, Map Fusion & Planning",
+   "company": "didi",
+   "url": "https://job-boards.greenhouse.io/didi/jobs/8131864",
+   "externalPath": "/jobs/8131864",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 38 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "8131864"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-08-17",
+   "departments": [
+    "Planning US"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Software Engineer, Map Fusion & Planning",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;About the Company&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;DiDi&#39;s autonomous driving unit was established in 2016 with the mission of developing &lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&amp;amp;D, product application, and business expansion. &lt;/span&gt;&lt;span class=&quot;ql-size-12 ql-font-microsoftyahei ql-author-10000202573&quot;&gt;We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi&#39;s specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;About the Role&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000452787&quot;&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;We are seeking a &lt;/span&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Software Engineer / Senior Software Engineer&lt;em&gt; &lt;/em&gt;&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;to develop the next-generation map fusion and motion planning systems for our autonomous vehicles. In this role, you will bridge the gap between semantic HD maps, real-time sensor perception, and vehicle trajectory generation. You will design scalable software infrastructure, implement advanced geometric and deep learning frameworks, and develop the planning algorithms that enable our vehicles to navigate complex, dynamic environments safely and predictably.&lt;/span&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Responsibilities&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;System Architecture&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;: Architect the data flow pipelines and APIs for map fusion, real-time map vectorization, and behavior/motion planning modules.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Algorithm Deployment&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;: Design and deploy robust software frameworks that integrate offline High-Definition (HD) maps with online perception data to create a unified local environment model.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Advanced Mapping Networks&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;: Implement and optimize state-of-the-art networks utilizing DETR-style, query-based vector decoding in bird&#39;s-eye-view (BEV) for online map element generation.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Motion Planning &amp;amp; Optimization&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;: Design, implement, and validate core motion planning algorithms, establishing a tight feedback loop between vectorized map features, path generation, and trajectory optimization.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Model Deployment Pipelines&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;: Own the end-to-end deployment pipeline for deep learning mapping models—from Python-based training and ONNX optimization to highly efficient runtime execution in C++.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Safety &amp;amp; Anomaly Detection&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;: Develop real-time map anomaly and scene-change detection algorithms to ensure planning system reliability under varying or outdated map conditions.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Performance Optimization&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;: Optimize system latency, CPU/GPU memory footprint, and multi-threaded execution of safety-critical C++ modules.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Education:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; B.S./M.S. or Ph.D. in Computer Science, Robotics, Electrical Engineering, or a related field.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Experience: &lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt;3+ years (Software Engineer) / 5+ years (Senior Software Engineer) of experience in autonomous driving, robotics architecture, or spatial computing.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Software Mastery:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; Expert proficiency in production-grade C++ (Modern C++14/17/20, multi-threading, memory management) and strong prototyping proficiency in Python.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Motion Planning Fundamentals:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; Robust foundational knowledge in path planning (e.g., A*, Dijkstra, Hybrid A*, sampling-based planners like RRT*) and kinematic/dynamic vehicle models.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Robotics Core:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; Deep understanding of robotics fundamentals, including coordinate transformations, spatial geometry, and state estimation.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;System Design:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; Strong system design skills with a solid understanding of middleware (e.g., ROS2, DDS) and distributed software architectures.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Preferred Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Trajectory Optimization:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; Hands-on experience with numerical trajectory optimization methods (e.g., MPC, QP/Nonlinear optimization, interior-point methods) and optimization solvers (e.g., OSQP, Ipopt, Ceres Solver).&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Advanced Mapping Experience:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; Hands-on experience working with HD map formats (Lanelet2, OpenDRIVE) and modern end-to-end learning frameworks (e.g., MapTR, VectorNet) that leverage query-based BEV perception.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Deep Learning Runtime &amp;amp; Deployment:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; Proven track record of exporting complex deep learning architectures via ONNX and deploying them into real-time C++ production environments using TensorRT.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Anomaly Detection:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; Proven track record of developing algorithms for map anomaly detection, sensor-to-map misalignments, or online scene-change identification.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;strong class=&quot;ql-author-10000452787&quot;&gt;Safety-Critical Systems:&lt;/strong&gt;&lt;span class=&quot;ql-author-10000452787&quot;&gt; Knowledge of real-time operating systems (RTOS), deterministic software execution, and safety-critical software design principles.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p class=&quot;isSelectedEnd&quot;&gt;The base salary range for the Software Engineer position is $141,463–$235,182 annually, and for the Senior Software Engineer position is $169,783–$282,264 annually, in addition to bonus, equity, and benefits.&amp;nbsp;Our salary ranges are determined by the role, level, and location. Within the applicable range, individual compensation is based on the work location as well as other factors, including job-related skills, experience, and relevant education and training.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on&amp;nbsp;&lt;a href=&quot;https://v.didi.cn/AQnxlBa&quot;&gt;https://v.didi.cn/AQnxlBa&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/didi/jobs/8131864",
+    "jobReqId": "8131864",
+    "postedOn": "Posted 38 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "DiDi Labs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Planning US",
+   "signals": {
+    "linkedin_job_id": "4455257721",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4455257721",
+    "title": "Software Engineer, Map Fusion & Planning",
+    "company": "DiDi",
+    "location": "San Jose, CA",
+    "linkedin_posted_date": "2026-08-17",
+    "num_applicants": 53,
+    "applicants_label": "53 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T13:03:16",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "8168501",
+   "title": "Software Engineer, Motion Planning ",
+   "company": "didi",
+   "url": "https://job-boards.greenhouse.io/didi/jobs/8168501",
+   "externalPath": "/jobs/8168501",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 23 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "8168501"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-08-31",
+   "departments": [
+    "Planning US"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Software Engineer, Motion Planning ",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p&gt;&lt;strong&gt;About The Company&lt;br&gt;&lt;br&gt;&lt;/strong&gt;DiDi&#39;s autonomous driving unit was established in 2016 with the mission of developing Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&amp;amp;D, product application, and business expansion. We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi&#39;s specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.&lt;br&gt;&lt;br&gt;&lt;strong&gt;About The Role&lt;br&gt;&lt;br&gt;&lt;/strong&gt;We are seeking a&amp;nbsp;&lt;strong&gt;Software Engineer /Sr. Software Engineer&lt;/strong&gt; to join our team and develop the core decision-making and motion planning systems for our autonomous vehicles. In this role, you will be responsible for creating the algorithms that enable smooth, safe, and intelligent navigation in complex environments. You will tackle challenges across the full motion planning stack, from high-level behavioral reasoning to low-level trajectory optimization.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Responsibilities&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design and implement the core motion planning logic that determines the vehicle&#39;s high-level actions (e.g., lane changes, merges, yields, and interactions with other agents).&lt;/li&gt;\n&lt;li&gt;Develop and optimize the motion planning algorithms that execute behavioral decisions, integrating Geometry Reasoning (path) and Speed Reasoning (velocity) into a cohesive trajectory.&lt;/li&gt;\n&lt;li&gt;Architect and enhance the geometry system for generating geometrically feasible and compliant paths.&lt;/li&gt;\n&lt;li&gt;Architect and refine the velocity system for generating context-aware, comfortable, and safe velocity profiles.&lt;/li&gt;\n&lt;li&gt;Model complex driving scenarios and agent interactions to create a robust world model for the behavioral planner.&lt;/li&gt;\n&lt;li&gt;Design different costs for trajectory ranking to trade off ETAs, comfort and safety of the vehicle behaviors.&lt;/li&gt;\n&lt;li&gt;Conduct in-depth analysis, testing, and debugging of the system&#39;s performance in various scenarios, leading root cause investigations.&lt;/li&gt;\n&lt;li&gt;Collaborate with Prediction, Perception, and Control teams to ensure a seamless flow from environmental understanding to physical vehicle motion.&lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;B.S./M.S. in Computer Science, Robotics, or a related field.&lt;/li&gt;\n&lt;li&gt;Experience in autonomous systems, robotics, or automotive software development.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Strong proficiency in C++&lt;/strong&gt;&amp;nbsp;for implementing complex, real-time algorithms.&lt;/li&gt;\n&lt;li&gt;Solid understanding of robotics fundamentals, including decision-making, motion planning, control theory, trajectory ranking, search and optimization algorithms etc.&lt;/li&gt;\n&lt;li&gt;Related experience in one or more of the following: motion planning, trajectory optimization and world environment reasoning, trajectory ranking and cost design.&lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Preferred Qualifications&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;PhD or internship experience related to robotics planning system designs.&lt;/li&gt;\n&lt;li&gt;Knowledge of vehicle dynamics and longitudinal/lateral control systems.&lt;/li&gt;\n&lt;li&gt;Solid understanding of machine learning principles, reinforcement learning and related algorithms.&lt;br&gt;&lt;br&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p class=&quot;isSelectedEnd&quot;&gt;The base salary range for the Software Engineer position is $141,463–$235,182 annually, and for the Senior Software Engineer position is $169,783–$282,264 annually, in addition to bonus, equity, and benefits. Our salary ranges are determined by the role, level, and location. Within the applicable range, individual compensation is based on the work location as well as other factors, including job-related skills, experience, and relevant education and training.&lt;br&gt;&lt;br&gt;&lt;em&gt;I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on &lt;a class=&quot;riUkhhEIAtDiibzrlddIVaKubAlAoKyg &quot; href=&quot;https://v.didi.cn/AQnxlBa&quot; target=&quot;_blank&quot; data-test-app-aware-link=&quot;&quot;&gt;https://v.didi.cn/AQnxlBa&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/didi/jobs/8168501",
+    "jobReqId": "8168501",
+    "postedOn": "Posted 23 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "DiDi Labs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Planning US",
+   "signals": {
+    "linkedin_job_id": "4461560338",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4461560338",
+    "title": "Software Engineer, Motion Planning",
+    "company": "DiDi",
+    "location": "San Jose, CA",
+    "linkedin_posted_date": "2026-09-01",
+    "num_applicants": 55,
+    "applicants_label": "55 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T13:03:19",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "8198298",
+   "title": "Software Engineer / Sr. Software Engineer, Planning Selection Autonomy",
+   "company": "didi",
+   "url": "https://job-boards.greenhouse.io/didi/jobs/8198298",
+   "externalPath": "/jobs/8198298",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 12 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "8198298"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-09-11",
+   "departments": [
+    "Planning US"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Software Engineer / Sr. Software Engineer, Planning Selection Autonomy",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;About the Company&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;DiDi&#39;s autonomous driving unit was established in 2016 with the mission of developing &lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&amp;amp;D, product application, and business expansion. &lt;/span&gt;&lt;span class=&quot;ql-size-12 ql-font-microsoftyahei ql-author-10000202573&quot;&gt;We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi&#39;s specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;About the Role&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;We are seeking a &lt;/span&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;junior or &lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;skilled &lt;strong&gt;Software Engineer&lt;/strong&gt; to join our team and develop the core decision-making and motion &lt;/span&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;planning &lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;systems for our autonomous vehicles. In this role, you will be responsible for creating the algorithms that enable smooth, safe, and intelligent navigation in complex environments. You will tackle challenges across the full motion planning stack, from high-level behavioral reasoning to low-level trajectory optimization.&lt;/span&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Responsibilities&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Design and implement the core&amp;nbsp;Behavioral Planning&amp;nbsp;logic that determines the vehicle&#39;s high-level actions (e.g., lane changes, merges, yields, and interactions with other agents).&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Develop and optimize the motion planning algorithms that execute behavioral decisions, integrating&amp;nbsp;Geometry Reasoning&amp;nbsp;(path) and&amp;nbsp;Speed Reasoning&amp;nbsp;(velocity) into a cohesive trajectory.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Architect and enhance the&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;geometry&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;&amp;nbsp;system for generating geometrically feasible and compliant paths.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Architect and refine the&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;velocity&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;&amp;nbsp;system for generating context-aware, comfortable, and safe velocity profiles.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Model complex driving scenarios and agent interactions to create a robust world model for the behavioral planner.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000003316&quot;&gt;Design different costs for trajectory ranking to trade off ETAs, comfort and safety of the vehicle behaviors.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Conduct in-depth analysis, testing, and debugging of the system&#39;s performance in various scenarios, leading root cause investigations.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Collaborate with Prediction, Perception, and Control teams to ensure a seamless flow from environmental understanding to physical vehicle motion.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;B.S./M.S. in Computer Science, Robotics, or a related field.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;xperience in autonomous systems, robotics, or automotive software development.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Strong proficiency in C++ and Python for implementing complex, real-time algorithms.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Solid understanding of robotics fundamentals, including decision-making, motion planning, control theory&lt;/span&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;, trajectory ranking, search and optimization algorithms etc&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;Related&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt; experience in one or more of the following:&amp;nbsp;behavioral planning, motion planning,&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;behavior and world environment&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt; reasoning, &lt;/span&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;trajectory ranking and cost design&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Preferred Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;PhD or internship experience related to robotics planning system designs&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Knowledge of vehicle dynamics and longitudinal/lateral control systems.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Solid understanding&amp;nbsp;of machine learning principles&lt;/span&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;, reinforcement learning&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt; and &lt;/span&gt;&lt;span class=&quot;ql-author-10000003316 ql-size-12 ql-font-arial&quot;&gt;related &lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;algorithms.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;The base salary range for this full-time position is $129,189-$214,776 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on&amp;nbsp;&lt;a href=&quot;https://v.didi.cn/AQnxlBa&quot; target=&quot;_blank&quot;&gt;https://v.didi.cn/AQnxlBa&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/didi/jobs/8198298",
+    "jobReqId": "8198298",
+    "postedOn": "Posted 12 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "DiDi Labs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Planning US",
+   "signals": {
+    "linkedin_job_id": "4466442728",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4466442728",
+    "title": "Software Engineer / Sr. Software Engineer, Planning Selection Autonomy",
+    "company": "DiDi",
+    "location": "San Jose, CA",
+    "linkedin_posted_date": "2026-09-12",
+    "num_applicants": 50,
+    "applicants_label": "50 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T13:03:21",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "8198299",
+   "title": "Sr. / Staff Software Engineer, Infrastructure (Autonomy)",
+   "company": "didi",
+   "url": "https://job-boards.greenhouse.io/didi/jobs/8198299",
+   "externalPath": "/jobs/8198299",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 12 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "8198299"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-09-11",
+   "departments": [
+    "Planning US"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Sr. / Staff Software Engineer, Infrastructure (Autonomy)",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;About the Company&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;DiDi&#39;s autonomous driving unit was established in 2016 with the mission of developing &lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&amp;amp;D, product application, and business expansion. &lt;/span&gt;&lt;span class=&quot;ql-size-12 ql-font-microsoftyahei ql-author-10000202573&quot;&gt;We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi&#39;s specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.&lt;/span&gt;&lt;/p&gt;\n&lt;div class=&quot;ql-direction-ltr ql-long-10000202573&quot; data-header=&quot;4&quot; data-foldable=&quot;true&quot; data-default-linespacing=&quot;100&quot;&gt;\n&lt;p data-path-to-node=&quot;1&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;1&quot;&gt;&lt;strong data-path-to-node=&quot;1&quot; data-index-in-node=&quot;0&quot;&gt;About The Role&lt;/strong&gt;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;1&quot;&gt;We are seeking an experienced &lt;strong&gt;Sr. Software Engineer / Staff Software Engineer, Infrastructure&lt;/strong&gt; to lead the architecture and evolution of the core platform powering our autonomous driving software stack. In this role, you will define the technical roadmap for our high-performance middleware, custom compiler infrastructure (including ccatch), onboard toolchains, and large-scale simulation frameworks (ezsim and automated crash triage). As a technical leader, you will collaborate closely with Autonomy and Simulation teams to maximize platform stability, enforce systemic engineering standards, and accelerate cross-team developer productivity at scale.&lt;/p&gt;\n&lt;p data-path-to-node=&quot;2&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;2&quot;&gt;&lt;strong data-path-to-node=&quot;2&quot; data-index-in-node=&quot;0&quot;&gt;Responsibilities&lt;/strong&gt;&lt;/p&gt;\n&lt;ul data-path-to-node=&quot;3&quot;&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;3,0,0&quot;&gt;Lead the architectural vision, design, and implementation of next-generation, low-latency, high-throughput IPC messaging middleware and runtime execution engines for onboard systems.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;3,1,0&quot;&gt;Own end-to-end build infrastructure, toolchains, and compiler execution strategies (including ccatch and distributed build caching) to optimize developer velocity and software deployment pipelines.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;3,2,0&quot;&gt;Architect robust, deterministic simulation platforms (ezsim) and build automated post-mortem diagnostic toolchains for rapid simulator crash triaging, core dump analysis, and systemic fault isolation.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;3,3,0&quot;&gt;Drive cross-functional performance profiling, memory optimization, and latency reductions across the full autonomous driving software stack on embedded hardware platforms.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;3,4,0&quot;&gt;Act as a crucial infrastructure domain expert for onboard teams, guiding software design for maximum efficiency, flexibility, scalability, and reliability across our evolving autonomy stack.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;3,5,0&quot;&gt;Continuously elevate internal development tools, diagnostic systems, and engineering workflows to maximize developer velocity while maintaining tight control over system complexity and runtime stability.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;3,6,0&quot;&gt;Technical leadership: Mentor engineers, set high engineering standards, lead technical design reviews, and establish foundational architecture guidelines across cross-functional teams.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p data-path-to-node=&quot;4&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;4&quot;&gt;&lt;strong data-path-to-node=&quot;4&quot; data-index-in-node=&quot;0&quot;&gt;Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul data-path-to-node=&quot;5&quot;&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;5,0,0&quot;&gt;Bachelor’s or higher degree in Computer Science, Computer Engineering, Software Engineering, or a closely related technical field.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;5,1,0&quot;&gt;6–10+ years of software engineering experience designing, architecting, and maintaining complex real-time systems, Linux systems infrastructure, or autonomous driving platforms in C++.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;5,2,0&quot;&gt;Proven track record of technical leadership, system architecture, and driving complex, multi-team engineering initiatives from inception to production deployment.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;5,3,0&quot;&gt;Expert-level understanding of C++, system programming, multi-threading, concurrency models, and low-latency IPC/middleware architectures.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;5,4,0&quot;&gt;Deep knowledge of compiler internals (Clang/GCC, LLVM), build systems (Bazel/CMake), and compilation optimization tools (including caching systems like ccatch).&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;5,5,0&quot;&gt;Proven capability in debugging complex system-level faults, kernel/user-space crashes, memory corruption, and race conditions.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p data-path-to-node=&quot;6&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;6&quot;&gt;&lt;strong data-path-to-node=&quot;6&quot; data-index-in-node=&quot;0&quot;&gt;Preferred Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul data-path-to-node=&quot;7&quot;&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;7,0,0&quot;&gt;Prior experience architecting or extending core simulation execution platforms (ezsim), evaluation frameworks, and automated crash triaging pipelines for robotics or autonomous driving.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;7,1,0&quot;&gt;Recognized domain expertise in embedded systems, cross-compilation target setups (e.g., QNX, Linux RT, NVIDIA Orin), and hardware acceleration layer integrations.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;7,2,0&quot;&gt;Deep experience in low-level systems profiling (e.g., eBPF, gperf), customized memory allocators, or custom IPC protocol design.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;7,3,0&quot;&gt;Demonstrated history of building developer productivity tools, developing quantitative software evaluation metrics, and driving root-cause analysis in complex robotic environments.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p data-path-to-node=&quot;9&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;/div&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;The base salary range for this full-time position is $169,783 - $338,694 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.&lt;br&gt;&lt;br&gt;&lt;em&gt;I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on &lt;/em&gt;&lt;em&gt;&lt;a class=&quot;DBdARXcCrTyZgKqxyZRgbwwFPsuTbimRw &quot; href=&quot;https://v.didi.cn/AQnxlBa&quot; target=&quot;_blank&quot; data-test-app-aware-link=&quot;&quot;&gt;https://v.didi.cn/AQnxlBa&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/didi/jobs/8198299",
+    "jobReqId": "8198299",
+    "postedOn": "Posted 12 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "DiDi Labs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Planning US",
+   "signals": {
+    "linkedin_job_id": "4466439632",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4466439632",
+    "title": "Sr. / Staff Software Engineer, Infrastructure (Autonomy)",
+    "company": "DiDi",
+    "location": "San Jose, CA",
+    "linkedin_posted_date": "2026-09-12",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T13:03:22",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "8198301",
+   "title": "Sr. /Staff System Safety Engineer, Autonomy",
+   "company": "didi",
+   "url": "https://job-boards.greenhouse.io/didi/jobs/8198301",
+   "externalPath": "/jobs/8198301",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 12 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "8198301"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-09-11",
+   "departments": [
+    "System Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Sr. /Staff System Safety Engineer, Autonomy",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573&quot;&gt;About The Company&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;DiDi&#39;s autonomous driving unit was established in 2016 with the mission of developing Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&amp;amp;D, product application, and business expansion. We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi&#39;s specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.&lt;/span&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573&quot;&gt;About The Role&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;We are seeking an experienced and mission-driven &lt;strong&gt;Senior/Staff System Safety Engineer, Autonomy&amp;nbsp;&lt;/strong&gt;to lead the safety strategy and deployment readiness of our fully autonomous driving systems. In this role, you will define and implement the safety frameworks, release policies, and system-level engineering processes that enable safe and scalable unmanned operations. You will act as a technical leader in system safety, ensuring that our vehicles meet rigorous safety standards while advancing toward large-scale commercial deployment.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573&quot;&gt;Responsibilities&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Own the safety evaluation and release strategy for unmanned autonomous driving operations, defining clear criteria for system release, degradation, and fallback under varying operating conditions.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Design, implement, and champion the safety-related systems engineering framework, including safety requirements, system architecture, and Verification &amp;amp; Validation (V&amp;amp;V) plans.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Conduct systematic assessments of unmanned operational workflows, emergency protocols, and supporting tools/platforms to ensure safety and operational completeness.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Develop and institutionalize safety evaluation methodologies and metrics frameworks, translating safety goals into quantifiable, verifiable, and continuously tracked indicators.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Serve as the technical lead for safety-related incident review and analysis during unmanned operations, driving continuous improvements in system design, test coverage, and operational procedures.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Collaborate cross-functionally with Software, Product, Operations, and Safety teams to support leadership decisions regarding unmanned deployment, city expansion, and operational scaling.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573&quot;&gt;Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Bachelor’s or higher degree in Computer Science, Software Engineering, Systems Engineering, or a closely related technical field.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;3-5 years of industry experience in systems engineering, safety engineering, autonomous systems, or a directly related field.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Strong systems thinking with the ability to decompose complex safety challenges and drive practical, scalable solutions.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Demonstrated ability to collaborate across teams, influence stakeholders, and take ownership of safety outcomes.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Experience working in a fast-paced environment with multiple parallel projects and ambiguous requirements.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573&quot;&gt;Preferred Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Professional experience in safety-critical autonomous vehicle deployment or large-scale robotic systems operations.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Background in functional safety (ISO 26262, SOTIF) or safety assurance of unmanned systems.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Hands-on experience with safety validation tools, simulation-based V&amp;amp;V, or operational safety monitoring platforms.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;Proven track record of defining release policies or safety readiness criteria for real-world autonomous systems.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573&quot;&gt;The base salary range for this full-time position is $148,594-247,038 (Sr. Engineer) and $178,286-296,400 (Staff Engineer) annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.&lt;/span&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;em class=&quot;ql-author-10000202573&quot;&gt;I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on &lt;/em&gt;&lt;a class=&quot;ql-link ql-author-10000202573&quot; href=&quot;https://v.didi.cn/AQnxlBa&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;https://v.didi.cn/AQnxlBa&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/didi/jobs/8198301",
+    "jobReqId": "8198301",
+    "postedOn": "Posted 12 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "DiDi Labs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "System Engineering",
+   "signals": {
+    "linkedin_job_id": "4466454585",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4466454585",
+    "title": "Sr. /Staff System Safety Engineer, Autonomy",
+    "company": "DiDi",
+    "location": "San Jose, CA",
+    "linkedin_posted_date": "2026-09-12",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T13:03:35",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "8198296",
+   "title": "Staff/Principal AI Transformation Engineer",
+   "company": "didi",
+   "url": "https://job-boards.greenhouse.io/didi/jobs/8198296",
+   "externalPath": "/jobs/8198296",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 12 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "8198296"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-09-11",
+   "departments": [
+    "Planning US"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Staff/Principal AI Transformation Engineer",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;About the Company&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;DiDi&#39;s autonomous driving unit was established in 2016 with the mission of developing &lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&amp;amp;D, product application, and business expansion. &lt;/span&gt;&lt;span class=&quot;ql-size-12 ql-font-microsoftyahei ql-author-10000202573&quot;&gt;We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi&#39;s specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.&lt;/span&gt;&lt;/p&gt;\n&lt;div class=&quot;ql-direction-ltr ql-long-10000202573&quot; data-header=&quot;4&quot; data-foldable=&quot;true&quot; data-default-linespacing=&quot;100&quot;&gt;&lt;strong&gt;About The Role&lt;br&gt;&lt;/strong&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;At DiDi Autonomous Driving, we firmly believe that the future of mobility goes beyond simply &quot;utilizing AI&quot;—it will be fundamentally reimagined and entirely driven by an &lt;/span&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;AI-Native architecture&lt;/strong&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;.&lt;/span&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;We are seeking a visionary, highly technical, and mission-driven &lt;strong&gt;Staff or &lt;/strong&gt;&lt;/span&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Principal AI Transformation Engineer &lt;/strong&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;to act as the ultimate catalyst for our company-wide AI transformation. In this strategic, high-impact leadership role, you will combine cutting-edge Large Language Model (LLM) expertise, robust systems architecture design, and a proven track record of enterprise-level AI scaling. You will embed deeply with our core engineering teams to evolve our traditional R&amp;amp;D organization into a truly AI-Native powerhouse.&lt;/span&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000002980&quot;&gt;&lt;span class=&quot;ql-author-10000002980 ql-size-12 ql-font-arial&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;Key Responsibilities&lt;/strong&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;/div&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;AI Infrastructure &amp;amp; Platform Architecture:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Spearhead the evaluation, selection, and deep integration of frontier LLM ecosystems (e.g., Llama, Hugging Face) and commercial AI platforms. Own the architectural design of our unified, distributed AI platform spanning complex data processing, model training, inference pipelines, and evaluation frameworks.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Forward Deployed Execution:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Embed directly with core autonomous driving teams (Perception, Prediction, Planning &amp;amp; Control, and Simulation) via the FDE model. Pinpoint engineering bottlenecks, eliminate friction, and translate complex AI capabilities into production-ready internal ecosystems (e.g., AI DevOps, AI Copilots).&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;LLMOps / MLOps Orchestration &amp;amp; Optimization:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Design and implement highly resilient, scalable automation pipelines for LLM deployment, monitoring, and continuous feedback loops. Optimize GPU cluster utilization, minimize inference latency, and maximize throughput across large-scale production environments.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Technical Roadmap &amp;amp; Vision:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Keep a strong pulse on breakthrough trends in AGI and systems engineering. Act as a &quot;super-connector&quot; between external technological innovations and internal systems, ensuring our AI infrastructure maintains a 1-3 year competitive edge.&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;div class=&quot;ql-direction-ltr ql-long-10000202573&quot; data-header=&quot;4&quot; data-foldable=&quot;true&quot; data-default-linespacing=&quot;100&quot;&gt;\n&lt;div class=&quot;ql-direction-ltr ql-long-10000202573&quot; data-header=&quot;3&quot; data-foldable=&quot;true&quot; data-default-linespacing=&quot;100&quot;&gt;&lt;strong&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Qualifications &amp;amp; Experience&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Architectural Vision + Hands-on Execution:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; A proven technical leader who can design complex, system-level architectures while maintaining a fierce passion for writing core code, debugging deep system issues, and optimizing low-level execution paths. Proficiency in core languages such as C++, Python, Java, JavaScript, etc.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Cross-Functional Influence:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Demonstrated ability to build technical authority, align priorities, and drive diverse engineering teams (Algorithms, Infrastructure, Hardware) toward adopting an AI-first engineering paradigm without relying on formal administrative authority.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Enterprise AI Transformation:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Proven experience leading or heavily contributing to a large-scale corporate &quot;AI-native transformation,&quot; or a track record of building enterprise-grade AI/ML platforms from 0 to 1.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Deep AI Tech Stack Expertise:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Thorough hands-on deployment, tuning, and optimization experience with mainstream AI infrastructure tools and frameworks, including but not limited to PyTorch, Ray, vLLM, Triton Inference Server, Kubernetes, DeepSpeed, and Megatron-LM.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Hardcore AI Infra Experience:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Years of deep, practical experience in distributed LLM training/inference optimization and large-scale compute cluster infrastructure &amp;amp; operations (I&amp;amp;O).&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;div class=&quot;ql-direction-ltr ql-long-10000202573&quot; data-header=&quot;3&quot; data-foldable=&quot;true&quot; data-default-linespacing=&quot;100&quot;&gt;&lt;strong&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Preferred Qualifications&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;\n&lt;ul&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Domain Expertise:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Familiarity with autonomous driving algorithms (Perception, Planning, Control, Simulation), robotics, physics-based simulation engines, or ultra-large-scale ML training/serving clusters is highly preferred.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Senior Industry Track Record:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; 8-10+ years of professional engineering depth in systems software, core cloud infrastructure, or production-grade machine learning platforms.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Agentic Frameworks &amp;amp; Developer Productivity:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Hands-on experience building custom AI Copilot applications, autonomous Multi-Agent Frameworks, or high-tier developer productivity platforms.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Thriving in Complexity:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; Proven success steering core project delivery amidst complex business logic, fast-paced/high-pressure environments, or mission-critical systems.&lt;/span&gt;&lt;/li&gt;\n&lt;li class=&quot;&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt;Technical Influence:&lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-9&quot;&gt; An active contributor to the broader tech community (e.g., open-source maintainer/owner, author of high-quality technical blogs/papers, or speaker at premier industry AI/ML conferences).&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;The base salary range for this full-time position is $255,000 -$351,000 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.&lt;br&gt;&lt;br&gt;&lt;em&gt;I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on &lt;/em&gt;&lt;em&gt;&lt;a class=&quot;DBdARXcCrTyZgKqxyZRgbwwFPsuTbimRw &quot; href=&quot;https://v.didi.cn/AQnxlBa&quot; target=&quot;_blank&quot; data-test-app-aware-link=&quot;&quot;&gt;https://v.didi.cn/AQnxlBa&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/didi/jobs/8198296",
+    "jobReqId": "8198296",
+    "postedOn": "Posted 12 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "DiDi Labs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Planning US",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "8198295",
+   "title": "Technical Program Manager, Autonomy",
+   "company": "didi",
+   "url": "https://job-boards.greenhouse.io/didi/jobs/8198295",
+   "externalPath": "/jobs/8198295",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 12 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "8198295"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-09-11",
+   "departments": [
+    "Voyager"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Technical Program Manager, Autonomy",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;strong class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;About the Company&lt;/strong&gt;&lt;/p&gt;\n&lt;p class=&quot;ql-direction-ltr ql-long-10000202573&quot;&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;DiDi&#39;s autonomous driving unit was established in 2016 with the mission of developing &lt;/span&gt;&lt;span class=&quot;ql-author-10000202573 ql-size-12 ql-font-arial&quot;&gt;Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&amp;amp;D, product application, and business expansion. &lt;/span&gt;&lt;span class=&quot;ql-size-12 ql-font-microsoftyahei ql-author-10000202573&quot;&gt;We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi&#39;s specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;div class=&quot;container&quot;&gt;\n&lt;div id=&quot;model-response-message-contentr_315c6aded6c7d8f3&quot; class=&quot;markdown markdown-main-panel md-content enable-luminous-fast-follows enable-updated-hr-color tutor-markdown-rendering&quot;&gt;\n&lt;p data-path-to-node=&quot;3&quot;&gt;&lt;strong data-path-to-node=&quot;3&quot; data-index-in-node=&quot;0&quot;&gt;About The Role&lt;/strong&gt;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;4&quot;&gt;We are seeking a dedicated &lt;strong&gt;Technical Program Manager (TPM)&lt;/strong&gt; to help us accelerate and optimize our software development processes and manage project schedules, resources, and deliverables. In this role, you will work closely with cross-functional teams to drill down our roadmap and facilitate effective execution at each stage of our growth curve. You will partner with engineering and operations teams to track project deliverables, identify milestones, flag risks early, and clearly communicate on-going progress to ensure our autonomous vehicles navigate the path to production smoothly.&lt;/p&gt;\n&lt;p data-path-to-node=&quot;5&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;5&quot;&gt;&lt;strong data-path-to-node=&quot;5&quot; data-index-in-node=&quot;0&quot;&gt;Responsibilities&lt;/strong&gt;&lt;/p&gt;\n&lt;ul data-path-to-node=&quot;6&quot;&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,0,0&quot;&gt;Milestone Planning: Work with team leaders to break down high-level strategies and project goals into detailed deliverables, clear owners, and realistic timelines.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,1,0&quot;&gt;Progress Tracking: Maintain project objectives and schedules by diligently tracking work progress, ensuring every project working team understands what they need to deliver at all times.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,2,0&quot;&gt;Release Logistics: Help manage daily software releases, logistics, workflow documentation, and cross-team communication.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,3,0&quot;&gt;Process &amp;amp; Meetings: Define and manage development processes and regular syncs; set the agenda for key decisions to be made at each meeting to eliminate bottlenecks and retire risks early.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;6,4,0&quot;&gt;Reporting &amp;amp; Action: Track and report on overall project progress, proactively driving corrective actions and escalating issues as needed when schedules or scopes drift.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p data-path-to-node=&quot;7&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;7&quot;&gt;&lt;strong data-path-to-node=&quot;7&quot; data-index-in-node=&quot;0&quot;&gt;Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul data-path-to-node=&quot;8&quot;&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,0,0&quot;&gt;B.S. or M.S. degree in Computer Science, Electrical Engineering, Systems Engineering, Automotive Engineering, or a related technical discipline.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,1,0&quot;&gt;1–3 years of hands-on experience in engineering, project management, or technical program management.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,2,0&quot;&gt;Deep familiarity with modern software development lifecycles or automotive development processes.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,3,0&quot;&gt;Strong track record or demonstrated ability in coordinating and supporting complex cross-functional projects.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,4,0&quot;&gt;Excellent communication skills with the ability to build strong working relationships with technical leaders and engineers across different functional teams.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,5,0&quot;&gt;Strong analytical capability to identify and act on opportunities to improve processes, resolve inefficiencies, and increase overall team productivity.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;8,6,0&quot;&gt;Practical experience working within or supporting Agile software development teams.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p data-path-to-node=&quot;9&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;9&quot;&gt;&lt;strong data-path-to-node=&quot;9&quot; data-index-in-node=&quot;0&quot;&gt;Preferred Qualifications&lt;/strong&gt;&lt;/p&gt;\n&lt;ul data-path-to-node=&quot;10&quot;&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;10,0,0&quot;&gt;Familiarity with or strong interest in autonomous driving, robotics, or advanced driver-assistance systems.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;10,1,0&quot;&gt;Experience using modern project management and tracking tools (e.g., Jira, Confluence).&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p data-path-to-node=&quot;10,2,0&quot;&gt;Prior internship or work experience in a technical role (e.g., software engineering, testing, or systems engineering) before transitioning to project management.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p data-path-to-node=&quot;11&quot;&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p data-path-to-node=&quot;11&quot;&gt;The base salary range for the Technical Program Manager position is $115,000–$165,000 annually, in addition to bonus, equity, and benefits. Our salary ranges are determined by the role, level, and location. Within the range, individual compensation is based on the work location as well as other factors, including job-related skills, experience, and relevant education and training.&lt;/p&gt;\n&lt;p data-path-to-node=&quot;12&quot;&gt;&lt;em&gt;I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on &lt;a class=&quot;ng-star-inserted&quot; href=&quot;https://v.didi.cn/AQnxlBa&quot; target=&quot;_blank&quot;&gt;https://v.didi.cn/AQnxlBa&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;/div&gt;\n&lt;/div&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/didi/jobs/8198295",
+    "jobReqId": "8198295",
+    "postedOn": "Posted 12 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "DiDi Labs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Voyager",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

@@ -1977,13 +1977,25 @@ class TestShippedWatchConfig:
         assert "ats:greenhouse:neteasegames" in boards
         assert "ats:greenhouse:shein" in boards
 
-    def test_roster_is_exactly_thirteen(self):
-        """S15 (review #7f): the EXACT roster count — a watch added or
-        lost by a hand-edit fails HERE, not silently on the runner."""
+    def test_roster_is_exactly_twentythree(self):
+        """S15 (review #7f) → S16: the EXACT roster count — a watch
+        added or lost by a hand-edit fails HERE, not silently on the
+        runner. S16 census wires: gea (workday) + xpeng/faradayfuture/
+        didi/tcl/gotion (greenhouse) + moonshot (ashby) + weride
+        (lever) + tplink/pony (workable)."""
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 13
+        assert len(cfg["watches"]) == 23
+        boards = {w["board"] for w in cfg["watches"]}
+        for b in ("haier|wd3|GE_Appliances",
+                  "ats:greenhouse:xpengmotors",
+                  "ats:greenhouse:faradayfuture",
+                  "ats:greenhouse:didi", "ats:greenhouse:tcl",
+                  "ats:greenhouse:gotion", "ats:ashby:moonshot",
+                  "ats:lever:weride", "ats:workable:tp-link-usa-corp",
+                  "ats:workable:pony-dot-ai"):
+            assert b in boards, b
 
     def test_she_in_time_type_gating(self):
         """time_type on a site-spec watch row is a CLAIM that the board
@@ -1999,8 +2011,22 @@ class TestShippedWatchConfig:
             "Full time"
         for board in ("ats:greenhouse:baidu", "ats:greenhouse:byd",
                       "ats:greenhouse:neteasegames",
-                      "ats:greenhouse:anthropic"):
+                      "ats:greenhouse:anthropic",
+                      # S16 census wires: no structured timeType on
+                      # these greenhouse boards (no metadata key)
+                      "ats:greenhouse:xpengmotors",
+                      "ats:greenhouse:faradayfuture",
+                      "ats:greenhouse:didi", "ats:greenhouse:tcl",
+                      "ats:greenhouse:gotion",
+                      "ats:ashby:moonshot"):
             assert "time_type" not in by_board[board], board
+        # S16: lever/workable DO serve structured commitment/employment
+        # types — the time_type claim is backed
+        assert by_board["ats:lever:weride"].get("time_type") == "Full time"
+        assert by_board["ats:workable:tp-link-usa-corp"].get("time_type") \
+            == "Full time"
+        assert by_board["ats:workable:pony-dot-ai"].get("time_type") == \
+            "Full time"
 
     def test_run_watch_registers_overrides(self, tmp_path, monkeypatch):
         """li_variants/slice_locations from the watch dict reach the

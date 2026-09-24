@@ -74,9 +74,11 @@ class TestSpecParsing:
     def test_site_specs(self):
         assert site_boards.is_site_spec("ats:ashby:openai")
         assert site_boards.is_site_spec("ats:greenhouse:anthropic")
+        assert site_boards.is_site_spec("ats:lever:weride")          # S16
+        assert site_boards.is_site_spec("ats:workable:tp-link-usa-corp")  # S16
         assert not site_boards.is_site_spec("nvidia|wd5|x")
         assert not site_boards.is_site_spec("")
-        assert not site_boards.is_site_spec("ats:lever:x")  # no adapter yet
+        assert not site_boards.is_site_spec("ats:madeup:x")
 
     def test_parse_site(self):
         assert site_boards.parse_site("ats:ashby:openai") == ("ashby",
@@ -812,10 +814,15 @@ def _ali_row(code, locs=("Sunnyvale",), publish=1789637099000,
 
 
 def _patch_ali(monkeypatch, host_rows, fail_hosts=()):
-    """Fake the alibaba multi-host sweep. host_rows: {hostkey: [rows]}."""
+    """Fake the alibaba multi-host sweep. host_rows: {hostkey: [rows]}.
+    S16: the sweep tests exercise the merge/classification logic — all
+    hosts take the FAKE impersonated path (the per-host transport
+    choice is live behavior, pinned by its own test)."""
     session = _FakeResp(200, {"XSRF-TOKEN": "csrf-123"})
     monkeypatch.setattr(site_boards, "_imp_get",
                         lambda url, headers=None, timeout=25.0: session)
+    monkeypatch.setattr(
+        site_boards.AlibabaAdapter, "_PLAIN_HOSTS", set())
     posts = []
     post_bodies = []
 
@@ -885,6 +892,8 @@ class TestAlibabaAdapter:
         session = _FakeResp(200, {"XSRF-TOKEN": "csrf-123"})
         monkeypatch.setattr(site_boards, "_imp_session",
                             lambda: session)
+        monkeypatch.setattr(
+            site_boards.AlibabaAdapter, "_PLAIN_HOSTS", set())
 
         def fake_get(url, headers=None, timeout=25.0):
             if "alibabacloud" in url:
@@ -906,6 +915,34 @@ class TestAlibabaAdapter:
         assert set(rows) == {"GP1"}                    # survivors served
         assert meta["complete"] is False               # SEV-2
         assert meta["hosts_skipped"] == ["cloud"]
+
+    def test_cloud_host_uses_plain_transport(self, monkeypatch):
+        """S16: the NEW cloud host (careers.alibabacloud.com, after the
+        old hyphenated host went NXDOMAIN) REJECTS chrome-impersonated
+        POSTs (HTTP 405, live-measured 2026-09-24) — the sweep must
+        dispatch PLAIN transport for it, impersonated for the rest."""
+        calls: dict[str, str] = {}
+
+        def fake_plain(self, base):
+            calls["plain"] = base
+            return [], True
+
+        def fake_imp(self, base):
+            if not isinstance(calls.get("imp"), list):
+                calls["imp"] = []
+            calls["imp"].append(base)
+            return [], True
+
+        monkeypatch.setattr(
+            site_boards.AlibabaAdapter, "_host_rows_plain", fake_plain)
+        monkeypatch.setattr(
+            site_boards.AlibabaAdapter, "_host_rows_imp", fake_imp)
+        a = site_boards.AlibabaAdapter("", None)
+        imp_hosts = []
+        for hostkey, host in a._HOSTS:
+            a._host_rows(hostkey, host)
+        assert calls.get("plain") == "https://careers.alibabacloud.com"
+        assert isinstance(calls.get("imp"), list) and len(calls["imp"]) == 3
 
     def test_country_client_false_finish_not_gated(self, monkeypatch):
         # the flag means 'already classified at list time' — the netflix
@@ -1087,3 +1124,223 @@ class TestImpRetry:
         assert site_boards._imp_post_json_retry(
             "https://x", {}) == {"ok": True}
         assert seq == ["post", "reset", "post"]
+
+
+# ── S16: lever + workable adapter pins ────────────────────────────────────
+
+def _patch_fetch_list(monkeypatch, jobs):
+    """Lever's API serves a TOP-LEVEL LIST (not {jobs: []})."""
+    calls = []
+
+    def fake(url, *, params=None, cfg=None, **kw):
+        calls.append(url)
+        return jobs
+    monkeypatch.setattr(site_boards, "fetch_json", fake)
+    monkeypatch.setattr(site_boards, "_CACHE", {})
+    return calls
+
+
+class TestLeverAdapter:
+    def _board(self, monkeypatch, jobs):
+        _patch_fetch_list(monkeypatch, jobs)
+        return "ats:lever:weride"
+
+    def test_row_mapping_and_country_code_authoritative(self, monkeypatch):
+        # live-pinned 2026-09-24 on weride (17 postings; 9 US / 3 AE /
+        # 3 SG / 2 CN) — the structured 'country' code is the verdict
+        us = {"id": "aaa-1", "text": "Application Engineer", "country": "US",
+              "hostedUrl": "https://jobs.lever.co/weride/aaa-1",
+              "createdAt": 1760000000000, "workplaceType": "onsite",
+              "categories": {"commitment": "Full-time",
+                             "location": "San Jose, CA",
+                             "team": "Software Engineering",
+                             "allLocations": ["San Jose, CA"]}}
+        dubai = dict(us, id="bbb-2", country="AE",
+                     text="Data Annotator",
+                     categories={"commitment": "Full-time",
+                                 "location": "Dubai", "team": "Data"})
+        rows, meta = site_boards.list_board(self._board(monkeypatch, [us, dubai]),
+                                            country="United States")
+        assert set(rows) == {"aaa-1"}            # AE dropped via the code
+        r = rows["aaa-1"]
+        assert r["title"] == "Application Engineer"
+        assert r["timeType"] == "Full time"      # _TT-normalized
+        assert r["countries"] == ["United States"]   # code → full name
+        assert r["locationsText"] == "San Jose, CA"
+        assert r["departments"] == ["Software Engineering"]
+        assert r["remoteType"] == "onsite"
+        assert meta["country_client"] is False
+        assert meta["client_filtered"] == 1
+        assert meta["ats"] == "lever"
+
+    def test_time_type_filter_drops_contract(self, monkeypatch):
+        us = {"id": "ccc-3", "text": "Talent Acquisition (Contractor)",
+              "country": "US", "createdAt": 1760000000000,
+              "categories": {"commitment": "Contract",
+                             "location": "San Jose, CA"}}
+        rows, meta = site_boards.list_board(self._board(monkeypatch, [us]),
+                                            country="United States",
+                                            time_type="Full time")
+        assert rows == {} and meta["client_filtered"] == 1
+
+    def test_created_at_epoch_ms_to_label_and_iso(self, monkeypatch):
+        from datetime import datetime, timezone, date
+        ts = int(datetime(2026, 9, 20, 12, 0, tzinfo=timezone.utc)
+                 .timestamp() * 1000)
+        us = {"id": "ddd-4", "text": "X", "country": "US",
+              "createdAt": ts,
+              "categories": {"commitment": "Full-time",
+                             "location": "San Jose, CA"}}
+        rows, _ = site_boards.list_board(self._board(monkeypatch, [us]))
+        r = rows["ddd-4"]
+        days = (date.today() - date(2026, 9, 20)).days
+        assert r["postedOn"] == f"Posted {days} Days Ago"
+        assert r["firstPublishedIso"].startswith("2026-09-20")
+
+    def test_detail_roundtrip_id_key(self, monkeypatch):
+        us = {"id": "eee-5", "text": "Perception Engineer", "country": "US",
+              "hostedUrl": "https://jobs.lever.co/weride/eee-5",
+              "createdAt": 1760000000000,
+              "descriptionBody": "<p>AV perception</p>",
+              "categories": {"commitment": "Full-time",
+                             "location": "San Jose, CA",
+                             "allLocations": ["San Jose, CA"]}}
+        self._board(monkeypatch, [us])
+        det = site_boards.detail_payload("ats:lever:weride", "/eee-5")
+        info = det["jobPostingInfo"]
+        assert info["title"] == "Perception Engineer"
+        assert info["jobReqId"] == "eee-5"
+        assert info["country"]["descriptor"] == "United States"
+        assert info["externalUrl"].endswith("/weride/eee-5")
+        assert "perception" in info["jobDescription"]
+        assert det["hiringOrganization"]["name"] == "weride"
+
+    def test_missing_code_location_fallback(self, monkeypatch):
+        # no structured code → location last-segment fallback (never
+        # override an authoritative mismatch, but absent = fall through)
+        us = {"id": "fff-6", "text": "X", "country": None,
+              "createdAt": 1760000000000,
+              "categories": {"commitment": "Full-time",
+                             "location": "San Jose, United States"}}
+        foreign = dict(us, id="ggg-7",
+                       categories={"commitment": "Full-time",
+                                   "location": "Dubai, United Arab Emirates"})
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, [us, foreign]),
+            country="United States")
+        assert set(rows) == {"fff-6"}
+        assert meta["client_filtered"] == 1
+
+
+class TestWorkableAdapter:
+    def _board(self, monkeypatch, jobs):
+        _patch_fetch(monkeypatch, jobs)
+        return "ats:workable:tp-link-usa-corp"
+
+    def test_row_mapping_and_country(self, monkeypatch):
+        # live-pinned 2026-09-24 on tp-link-usa-corp (86 jobs; 80 Irvine
+        # + 6 single-city satellites; country = full names)
+        us = {"shortcode": "F943A617EC",
+              "title": "2026 Early Career Embedded Software Engineer",
+              "country": "United States", "city": "Irvine",
+              "state": "California", "employment_type": "Full-time",
+              "telecommuting": False, "published_on": "2026-05-12",
+              "url": "https://apply.workable.com/j/F943A617EC",
+              "department": "R&D - Product Engineering",
+              "description": "<p>embedded</p>", "locations": []}
+        foreign = dict(us, shortcode="XX1111", country="Germany",
+                       city="Berlin", state="")
+        remote = dict(us, shortcode="RR2222", telecommuting=True)
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, [us, foreign, remote]),
+            country="United States")
+        assert set(rows) == {"F943A617EC", "RR2222"}
+        r = rows["F943A617EC"]
+        assert r["timeType"] == "Full time"
+        assert r["locationsText"] == "Irvine, California"
+        assert r["remoteType"] == ""
+        assert rows["RR2222"]["remoteType"] == "Remote"
+        assert rows["RR2222"]["locationsText"].endswith("(Remote)")
+        assert r["departments"][0] == "R&D - Product Engineering"
+        assert r["postedOn"].startswith("Posted ")
+        assert r["firstPublishedIso"] == "2026-05-12"
+        assert meta["country_client"] is False
+        assert meta["client_filtered"] == 1
+        assert meta["ats"] == "workable"
+
+    def test_blank_employment_type_passes_ft_filter(self, monkeypatch):
+        # live-observed: 9/86 tp-link rows carry employment_type "" —
+        # honest blank passes (the greenhouse no-field convention)
+        blank = {"shortcode": "BB1", "title": "T", "country": "United States",
+                 "city": "Irvine", "state": "California",
+                 "employment_type": "", "telecommuting": False,
+                 "published_on": "2026-05-01", "locations": []}
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, [blank]),
+            country="United States", time_type="Full time")
+        assert set(rows) == {"BB1"} and meta["client_filtered"] == 0
+
+    def test_detail_roundtrip_shortcode_key(self, monkeypatch):
+        us = {"shortcode": "F943A617EC", "title": "Antenna Engineer",
+              "country": "United States", "city": "Irvine",
+              "state": "California", "employment_type": "Full-time",
+              "telecommuting": False, "published_on": "2026-05-12",
+              "url": "https://apply.workable.com/j/F943A617EC",
+              "description": "<p>antennas</p>",
+              "locations": [{"city": "Boston", "state": "Massachusetts",
+                             "country": "United States"}]}
+        self._board(monkeypatch, [us])
+        det = site_boards.detail_payload(
+            "ats:workable:tp-link-usa-corp", "/j/F943A617EC")
+        info = det["jobPostingInfo"]
+        assert info["jobReqId"] == "F943A617EC"
+        assert info["country"]["descriptor"] == "United States"
+        assert info["additionalLocations"] == ["Boston, Massachusetts"]
+        assert "antennas" in info["jobDescription"]
+
+    def test_multi_site_locations_joined(self, monkeypatch):
+        us = {"shortcode": "MS1", "title": "T", "country": "United States",
+              "city": "Irvine", "state": "California",
+              "employment_type": "Full-time", "telecommuting": False,
+              "published_on": "2026-05-01",
+              "locations": [{"city": "Irvine", "state": "California"},
+                            {"city": "Boston", "state": "Massachusetts"}]}
+        rows, _ = site_boards.list_board(self._board(monkeypatch, [us]))
+        assert rows["MS1"]["locationsText"] == (
+            "Irvine, California | Boston, Massachusetts")
+
+
+class TestLiVariantsSplitHeuristic:
+    """S16: --li-variants values may CONTAIN commas (legal-name card
+    strings). Tight-comma convention + space-rejoin disambiguates."""
+
+    _MOD = None
+
+    @classmethod
+    def _split(cls, raw):
+        if cls._MOD is None:
+            import importlib.util
+            p = (Path(__file__).resolve().parent.parent.parent
+                 / "scripts" / "board_dump.py")
+            spec = importlib.util.spec_from_file_location(
+                "board_dump_mod", p)
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            cls._MOD = mod
+        return cls._MOD._split_variants(raw)
+
+    def test_plain_list_unchanged(self):
+        assert self._split("SHEIN,SHEIN U.S.") == ["SHEIN", "SHEIN U.S."]
+        assert self._split("BYD,BYD North America") == [
+            "BYD", "BYD North America"]
+
+    def test_comma_containing_variant_rejoins(self):
+        assert self._split(
+            "GE Appliances,GE Appliances, a Haier company") == [
+            "GE Appliances", "GE Appliances, a Haier company"]
+        assert self._split("Baidu, Inc.") == ["Baidu, Inc."]
+
+    def test_empty_and_whitespace(self):
+        assert self._split("") == []
+        assert self._split("  ") == []
+        assert self._split("A,,B") == ["A", "B"]

@@ -55,7 +55,7 @@ jobs:
     # greenhouse legs are cheap (ONE board GET per watch; details
     # cache-served) but corroborate/titlesearch budgets scale per
     # watch (240s default x 13 = 52min floor) — 75->95min.
-    timeout-minutes: 95
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
         with:

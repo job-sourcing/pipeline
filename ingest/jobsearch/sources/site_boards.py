@@ -19,6 +19,8 @@ Spec grammar (the dispatch seam):
 
     ats:greenhouse:{org}    e.g. ats:greenhouse:anthropic
     ats:ashby:{org}         e.g. ats:ashby:openai
+    ats:lever:{org}         e.g. ats:lever:weride      (S16)
+    ats:workable:{org}      e.g. ats:workable:tp-link-usa-corp  (S16)
     {tenant}|{instance}|{site}           workday (unchanged legacy form)
 
 Adapter economics (vs workday): both APIs return the ENTIRE board with
@@ -54,7 +56,8 @@ from ..config import Config
 from . import workday
 from .base import fetch_json
 
-_SPEC_RE = re.compile(r"^ats:(greenhouse|ashby):([A-Za-z0-9_.\-]+)$")
+_SPEC_RE = re.compile(
+    r"^ats:(greenhouse|ashby|lever|workable):([A-Za-z0-9_.\-]+)$")
 # S14 registry-driven custom grammar: 'custom:{kind}' where kind ∈ _ADAPTERS
 # (own-platform boards — the platform IS the company; adding one = a class
 # + a registry entry, no grammar edit).
@@ -85,7 +88,7 @@ def parse_site(spec: str) -> tuple[str, str]:
         return m.group(1), ""
     raise ValueError(
         f"not a site spec: {spec!r} (expected 'ats:kind:org' with kind in "
-        f"greenhouse|ashby, or 'custom:kind' with kind in "
+        f"greenhouse|ashby|lever|workable, or 'custom:kind' with kind in "
         f"{sorted(k for k in _ADAPTERS)})")
 
 
@@ -162,13 +165,18 @@ def _posted_label(iso: Optional[str]) -> tuple[str, str]:
 def _fetch_cached(url: str, spec: str, cfg: Config) -> list[dict]:
     """One fetch per process per spec (TTL-bounded); returns the jobs
     list. Transport failures raise — the phase chain's existing B1
-    fail-safe contract handles them exactly as workday's would."""
+    fail-safe contract handles them exactly as workday's would.
+    S16: lever's API serves a TOP-LEVEL LIST (not {jobs: []}) — both
+    payload shapes accepted here."""
     now = time.monotonic()
     hit = _CACHE.get(spec)
     if hit and now - hit[0] < _CACHE_TTL:
         return hit[1]
     payload = fetch_json(url, cfg=cfg)
-    jobs = payload.get("jobs") or []
+    if isinstance(payload, list):
+        jobs = payload
+    else:
+        jobs = payload.get("jobs") or []
     if not isinstance(jobs, list):
         raise RuntimeError(f"{url}: unexpected payload (jobs not a list)")
     _CACHE[spec] = (now, jobs)
@@ -886,11 +894,14 @@ class AlibabaAdapter:
     GET /en/off-campus/position-list first). Multi-host sweep, one label:
     the US postings live on different BUs' boards.
 
-    Host registry (live-pinned 2026-09-19):
+    Host registry (live-pinned 2026-09-19; cloud host CORRECTED 2026-09-24:
+    careers-alibabacloud.com went globally NXDOMAIN — Google+Cloudflare DNS
+    both Status 3, not egress-local; the live host is careers.alibabacloud.com,
+    SAME Lumos API + cookie flow, S16-census-measured 246 rows / 25 US.
+    fail-soft retained: 3 attempts, then LOUD skip + complete=False —
+    never mass-false-gone):
       aidc      aidc-jobs.alibaba.com            153 rows,   6 US
-      cloud     careers-alibabacloud.com         224 rows, ~37 US — DNS-
-                VOLATILE (gTLD delegation flaps; fail-soft: 3 attempts,
-                then LOUD skip + complete=False — never mass-false-gone)
+      cloud     careers.alibabacloud.com         246 rows,  25 US (S16 fix)
       holding   talent-holding.alibaba.com       AGH board,  0 US today
       tongyi    careers-tongyi.alibaba.com       Token Foundry, EMPTY
 
@@ -910,10 +921,16 @@ class AlibabaAdapter:
     _CHANNEL = "group_overseas_official_site"
     _HOSTS = [
         ("aidc", "aidc-jobs.alibaba.com"),
-        ("cloud", "careers-alibabacloud.com"),
+        ("cloud", "careers.alibabacloud.com"),
         ("holding", "talent-holding.alibaba.com"),
         ("tongyi", "careers-tongyi.alibaba.com"),
     ]
+    # S16: the NEW cloud host (careers.alibabacloud.com, after the old
+    # hyphenated host went NXDOMAIN) REJECTS chrome-impersonated POSTs
+    # (HTTP 405 whitelabel — live-measured 2026-09-24) but serves PLAIN
+    # requests (200). Inverse of the other Lumos hosts (Akamai-gated,
+    # impersonation required). Transport is per-hostkey.
+    _PLAIN_HOSTS = {"cloud"}
     _PAGE = 50          # pageSize cap (measured)
     _ATTEMPTS = 3       # per-host fail-soft (DNS-volatile cloud host)
     # curated city→country map — the observed overseas-board vocabulary
@@ -970,42 +987,11 @@ class AlibabaAdapter:
         last_err: Optional[Exception] = None
         for attempt in range(self._ATTEMPTS):
             try:
-                r0 = _imp_get(base + "/en/off-campus/position-list?lang=en")
-                if r0.status_code != 200:
-                    raise RuntimeError(f"{host}: page HTTP {r0.status_code}")
-                xsrf = None
-                for c in _imp_session().cookies.jar:
-                    if getattr(c, "name", "") == "XSRF-TOKEN":
-                        xsrf = getattr(c, "value", None)
-                if not xsrf:
-                    raise RuntimeError(f"{host}: no XSRF-TOKEN cookie served")
-                out: list[dict] = []
-                page = 1
-                while True:
-                    body = {"channel": self._CHANNEL, "language": "en",
-                            "batchId": "", "categories": "",
-                            "deptCodes": [], "key": "",
-                            "pageIndex": page, "pageSize": self._PAGE,
-                            "regions": "", "subCategories": ""}
-                    d = _imp_post_json(
-                        f"{base}/position/search?_csrf={xsrf}", body,
-                        headers={"Content-Type": "application/json",
-                                 "Referer": base
-                                 + "/en/off-campus/position-list?lang=en"})
-                    content = d.get("content") or {}
-                    datas = content.get("datas") or []
-                    if not isinstance(datas, list):
-                        raise RuntimeError(f"{host}: datas not a list")
-                    out.extend(datas)
-                    total = content.get("totalCount")
-                    if (len(datas) < self._PAGE
-                            or (isinstance(total, int) and total and
-                                len(out) >= total)):
-                        break
-                    page += 1
-                    if page > 60:  # circuit breaker
-                        raise RuntimeError(f"{host}: pagination runaway")
-                return out, True
+                if hostkey in self._PLAIN_HOSTS:
+                    rows = self._host_rows_plain(base)
+                else:
+                    rows = self._host_rows_imp(base)
+                return rows, True
             except Exception as e:            # DNS/WAF/shape — fail-soft
                 last_err = e
                 time.sleep(1.5 * (attempt + 1))
@@ -1014,6 +1000,82 @@ class AlibabaAdapter:
               f"sweep marked incomplete (complete=False so the watch "
               f"never computes false gones)", file=sys.stderr, flush=True)
         return [], False
+
+    def _host_rows_plain(self, base: str) -> list[dict]:
+        """The NEW cloud host's transport (S16): plain requests session;
+        chrome-impersonation is 405-rejected here (live-measured)."""
+        import requests as _plain
+        s = _plain.Session()
+        s.headers.update({"User-Agent":
+                         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                         "AppleWebKit/537.36"})
+        r0 = s.get(base + "/en/off-campus/position-list?lang=en",
+                   timeout=20)
+        r0.raise_for_status()
+        xsrf = next((c.value for c in s.cookies
+                     if getattr(c, "name", "") == "XSRF-TOKEN"), None)
+        if not xsrf:
+            raise RuntimeError("no XSRF-TOKEN cookie served")
+        out: list[dict] = []
+        page = 1
+        while True:
+            body = {"channel": self._CHANNEL, "language": "en",
+                    "pageIndex": page, "pageSize": self._PAGE}
+            d = s.post(f"{base}/position/search?_csrf={xsrf}",
+                       json=body, timeout=20).json()
+            content = d.get("content") or {}
+            datas = content.get("datas") or []
+            if not isinstance(datas, list):
+                raise RuntimeError("datas not a list")
+            out.extend(datas)
+            total = content.get("totalCount")
+            if (len(datas) < self._PAGE
+                    or (isinstance(total, int) and total
+                        and len(out) >= total)):
+                break
+            page += 1
+            if page > 60:  # circuit breaker
+                raise RuntimeError("pagination runaway")
+        return out
+
+    def _host_rows_imp(self, base: str) -> list[dict]:
+        """The Akamai-gated hosts' transport (S14): chrome-impersonated."""
+        r0 = _imp_get(base + "/en/off-campus/position-list?lang=en")
+        if r0.status_code != 200:
+            raise RuntimeError(f"page HTTP {r0.status_code}")
+        xsrf = None
+        for c in _imp_session().cookies.jar:
+            if getattr(c, "name", "") == "XSRF-TOKEN":
+                xsrf = getattr(c, "value", None)
+        if not xsrf:
+            raise RuntimeError("no XSRF-TOKEN cookie served")
+        out: list[dict] = []
+        page = 1
+        while True:
+            body = {"channel": self._CHANNEL, "language": "en",
+                    "batchId": "", "categories": "",
+                    "deptCodes": [], "key": "",
+                    "pageIndex": page, "pageSize": self._PAGE,
+                    "regions": "", "subCategories": ""}
+            d = _imp_post_json(
+                f"{base}/position/search?_csrf={xsrf}", body,
+                headers={"Content-Type": "application/json",
+                         "Referer": base
+                         + "/en/off-campus/position-list?lang=en"})
+            content = d.get("content") or {}
+            datas = content.get("datas") or []
+            if not isinstance(datas, list):
+                raise RuntimeError(f"datas not a list")
+            out.extend(datas)
+            total = content.get("totalCount")
+            if (len(datas) < self._PAGE
+                    or (isinstance(total, int) and total and
+                        len(out) >= total)):
+                break
+            page += 1
+            if page > 60:  # circuit breaker
+                raise RuntimeError("pagination runaway")
+        return out
 
     def _sweep(self) -> list[dict]:
         """All hosts' rows (cached); skipped hostkeys go to the
@@ -1369,6 +1431,331 @@ class TripComAdapter:
         return None
 
 
+# ── lever (S16: jobs.lever.co's own public listing API) ──────────────────
+
+# ISO alpha-2 → the full names workday.country_str_matches compares
+# against (live-observed on the weride board: US/AE/SG/CN). Unmapped
+# codes pass through and fail the country match LOUDLY (never guessed).
+_LEVER_CC = {
+    "US": "United States", "CA": "Canada", "GB": "United Kingdom",
+    "CN": "China", "SG": "Singapore", "AE": "United Arab Emirates",
+    "DE": "Germany", "FR": "France", "NL": "Netherlands",
+    "AU": "Australia", "JP": "Japan", "KR": "Korea, Republic of",
+    "IN": "India", "BR": "Brazil", "MX": "Mexico", "TW": "Taiwan",
+    "HK": "Hong Kong", "ES": "Spain", "IT": "Italy", "SE": "Sweden",
+    "PL": "Poland", "IE": "Ireland", "CH": "Switzerland",
+    "NZ": "New Zealand", "ZA": "South Africa", "ID": "Indonesia",
+    "TH": "Thailand", "VN": "Vietnam", "MY": "Malaysia",
+    "PH": "Philippines", "TR": "Turkey", "IL": "Israel",
+    "SA": "Saudi Arabia", "AR": "Argentina", "CL": "Chile",
+    "CO": "Colombia", "PE": "Peru", "PT": "Portugal", "DK": "Denmark",
+    "FI": "Finland", "NO": "Norway", "AT": "Austria", "BE": "Belgium",
+    "CZ": "Czechia", "RO": "Romania", "HU": "Hungary", "UA": "Ukraine",
+}
+
+
+class LeverAdapter:
+    """api.lever.co/v0/postings/{org}?mode=json — the whole board in one
+    public call (Lever's own job-boards API; descriptions included; the
+    1,964 live lever boards in the ATS directory are this class).
+
+    Field map (live-pinned 2026-09-24 on weride, 17 postings):
+      reqId            id (a GUID — the ashby precedent: lever posts
+                       carry no requisition id)
+      url              hostedUrl (jobs.lever.co/{org}/{id})
+      locationsText    categories.location ('San Jose, CA'), extras
+                       appended from categories.allLocations
+      country          the top-level 'country' field — STRUCTURED ISO
+                       alpha-2 codes ('US','AE','SG','CN') — AUTHORITATIVE
+                       (the S13 netflix lesson by design: never classify
+                       from free text when a structured field exists).
+                       Mapped through _LEVER_CC; unmapped passes through.
+      timeType         categories.commitment ('Full-time' → the workday
+                       dialect 'Full time' via the shared _TT table)
+      departments      categories.team → jobFamilyGroup tags
+      postedOn         label from createdAt (epoch-ms; EXACT, never
+                       censored — the greenhouse/ashby contract)
+      remoteType       workplaceType ('remote'/'hybrid'/'onsite')
+    """
+
+    KIND = "lever"
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    @property
+    def _url(self) -> str:
+        return f"https://api.lever.co/v0/postings/{self.org}?mode=json"
+
+    def _jobs(self) -> list[dict]:
+        return _fetch_cached(self._url, f"ats:lever:{self.org}", self.cfg)
+
+    def _country(self, job: dict) -> str:
+        c = str(job.get("country") or "").strip().upper()
+        return _LEVER_CC.get(c, c)
+
+    def _time_type(self, job: dict) -> str:
+        tt = str((job.get("categories") or {}).get("commitment")
+                 or "").strip().lower()
+        return _TT.get(tt, (job.get("categories") or {}).get("commitment")
+                       or "")
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        jobs = self._jobs()
+        rows: dict[str, dict] = {}
+        dropped_country = dropped_tt = 0
+        for job in jobs:
+            rid = str(job.get("id") or "")
+            if not rid or rid in rows:
+                continue
+            tt = self._time_type(job)
+            if time_type and tt and tt.lower() != time_type.lower():
+                dropped_tt += 1
+                continue
+            c = self._country(job)
+            if country and not workday.country_str_matches(c, country):
+                # location fallback ONLY when the structured code is
+                # absent (never override an authoritative mismatch)
+                if c:
+                    dropped_country += 1
+                    continue
+                loc = str((job.get("categories") or {}).get("location")
+                          or "")
+                last = loc.split(",")[-1].strip() if loc else ""
+                if not workday.country_str_matches(last, country):
+                    dropped_country += 1
+                    continue
+            cats = job.get("categories") or {}
+            label, iso = _posted_label(_epoch_ms_to_iso(
+                job.get("createdAt")))
+            locs = _dedup_keep_order(
+                [str(x) for x in (cats.get("allLocations") or [])]
+                or [str(cats.get("location") or "")])
+            row = {
+                "reqId": rid,
+                "title": job.get("text") or "",
+                "company": self.org,
+                "url": job.get("hostedUrl") or "",
+                "externalPath": f"/{rid}",
+                "locationsText": " | ".join(locs),
+                "postedOn": label,
+                "timeType": tt,
+                "bulletFields": [rid],
+                "ats": "lever",
+                "firstPublishedIso": iso,
+                "departments": [str(cats.get("team") or "")],
+                "countries": [c] if c else [],
+                "remoteType": str(job.get("workplaceType") or ""),
+            }
+            rows[rid] = row
+        meta = {
+            "complete": True, "total": len(jobs), "pages": 1,
+            "country_client": False,
+            "client_filtered": dropped_country + dropped_tt,
+            "ats": "lever",
+        }
+        print(f"[{progress_label}] lever:{self.org}: {len(rows)} rows"
+              + (f" ({dropped_country} non-{country} + {dropped_tt} "
+                 f"non-{time_type} dropped client-side)" if country
+                 or time_type else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        key = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        for job in self._jobs():
+            if str(job.get("id")) == key:
+                c = self._country(job)
+                cats = job.get("categories") or {}
+                label, iso = _posted_label(_epoch_ms_to_iso(
+                    job.get("createdAt")))
+                return {
+                    "jobPostingInfo": {
+                        "title": job.get("text") or "",
+                        "location": str(cats.get("location") or ""),
+                        "additionalLocations": _dedup_keep_order(
+                            [str(x) for x in
+                             (cats.get("allLocations") or [])
+                             if x != cats.get("location")]),
+                        "jobDescription": job.get("descriptionBody")
+                        or job.get("description") or "",
+                        "timeType": self._time_type(job),
+                        "startDate": "",
+                        "externalUrl": job.get("hostedUrl") or "",
+                        "jobReqId": str(job.get("id") or ""),
+                        "postedOn": label,
+                        "country": {"descriptor": c} if c else None,
+                    },
+                    "hiringOrganization": {"name": self.org},
+                    "similarJobs": [],
+                    "firstPublishedIso": iso,
+                    "compensation": job.get("salaryRange") or None,
+                }
+        return None
+
+
+def _epoch_ms_to_iso(epoch_ms) -> Optional[str]:
+    """Lever's createdAt (epoch-ms) → ISO timestamp (None on garbage)."""
+    try:
+        val = int(epoch_ms)
+        if val <= 0:
+            return None
+        return (datetime.fromtimestamp(val / 1000.0, tz=timezone.utc)
+                .isoformat())
+    except (TypeError, ValueError):
+        return None
+
+
+# ── workable (S16: apply.workable.com widget API) ─────────────────────────
+
+class WorkableAdapter:
+    """apply.workable.com/api/v1/widget/accounts/{domain}?details=true —
+    the whole board in one public call (the widget companies embed in
+    their careers pages; descriptions included in details mode).
+
+    Field map (live-pinned 2026-09-24 on tp-link-usa-corp, 86 jobs):
+      reqId            shortcode (the stable URL component: /j/{code})
+      url              url (apply.workable.com/j/{shortcode})
+      locationsText    'city, state' (+ telecommuting flag → Remote)
+      country          top-level 'country' — STRUCTURED full names
+                       ('United States') — AUTHORITATIVE, ashby-style
+      timeType         employment_type ('Full-time' → _TT 'Full time')
+      departments      department → jobFamilyGroup tags
+      postedOn         label from published_on (ISO date; EXACT)
+      remoteType       'Remote' when telecommuting is true
+      experience/education/function: available, mapped to departments
+      extra locations  locations[] (multi-site postings)
+    """
+
+    KIND = "workable"
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    @property
+    def _url(self) -> str:
+        return (f"https://apply.workable.com/api/v1/widget/accounts/"
+                f"{self.org}?details=true")
+
+    def _jobs(self) -> list[dict]:
+        return _fetch_cached(self._url, f"ats:workable:{self.org}",
+                             self.cfg)
+
+    def _time_type(self, job: dict) -> str:
+        tt = str(job.get("employment_type") or "").strip().lower()
+        return _TT.get(tt, job.get("employment_type") or "")
+
+    @staticmethod
+    def _loc_text(job: dict) -> str:
+        parts = [str(job.get("city") or ""), str(job.get("state") or "")]
+        txt = ", ".join(p for p in parts if p)
+        if job.get("telecommuting"):
+            txt = (txt + " (Remote)").strip(", ")
+        return txt
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        jobs = self._jobs()
+        rows: dict[str, dict] = {}
+        dropped_country = dropped_tt = 0
+        for job in jobs:
+            rid = str(job.get("shortcode") or "")
+            if not rid or rid in rows:
+                continue
+            tt = self._time_type(job)
+            if time_type and tt and tt.lower() != time_type.lower():
+                dropped_tt += 1
+                continue
+            c = str(job.get("country") or "").strip()
+            if country and not workday.country_str_matches(c, country):
+                dropped_country += 1
+                continue
+            label, iso = _posted_label(job.get("published_on"))
+            row = {
+                "reqId": rid,
+                "title": job.get("title") or "",
+                "company": self.org,
+                "url": job.get("url") or "",
+                "externalPath": f"/j/{rid}",
+                "locationsText": self._loc_text(job),
+                "postedOn": label,
+                "timeType": tt,
+                "bulletFields": [rid],
+                "ats": "workable",
+                "firstPublishedIso": iso,
+                "departments": _dedup_keep_order(
+                    [str(job.get("department") or ""),
+                     str(job.get("function") or ""),
+                     str(job.get("experience") or "")]),
+                "countries": [c] if c else [],
+                "remoteType": "Remote" if job.get("telecommuting") else "",
+            }
+            # multi-site postings: extra locations[]
+            extra = [str(x.get("city") or "") + (", " + str(x.get("state"))
+                     if x.get("state") else "")
+                     for x in (job.get("locations") or [])
+                     if isinstance(x, dict) and x.get("city")]
+            if extra:
+                row["locationsText"] = " | ".join(
+                    _dedup_keep_order([row["locationsText"]] + extra))
+            rows[rid] = row
+        meta = {
+            "complete": True, "total": len(jobs), "pages": 1,
+            "country_client": False,
+            "client_filtered": dropped_country + dropped_tt,
+            "ats": "workable",
+        }
+        print(f"[{progress_label}] workable:{self.org}: {len(rows)} rows"
+              + (f" ({dropped_country} non-{country} + {dropped_tt} "
+                 f"non-{time_type} dropped client-side)" if country
+                 or time_type else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        key = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        for job in self._jobs():
+            if str(job.get("shortcode")) == key:
+                c = str(job.get("country") or "").strip()
+                label, iso = _posted_label(job.get("published_on"))
+                return {
+                    "jobPostingInfo": {
+                        "title": job.get("title") or "",
+                        "location": self._loc_text(job),
+                        "additionalLocations": _dedup_keep_order(
+                            [f"{x.get('city', '')}, {x.get('state', '')}"
+                             .strip(", ")
+                             for x in (job.get("locations") or [])
+                             if isinstance(x, dict) and x.get("city")]),
+                        "jobDescription": job.get("description") or "",
+                        "timeType": self._time_type(job),
+                        "startDate": "",
+                        "externalUrl": job.get("url") or "",
+                        "jobReqId": str(job.get("shortcode") or ""),
+                        "postedOn": label,
+                        "country": {"descriptor": c} if c else None,
+                    },
+                    "hiringOrganization": {"name": self.org},
+                    "similarJobs": [],
+                    "firstPublishedIso": iso,
+                }
+        return None
+
+
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
+             "lever": LeverAdapter, "workable": WorkableAdapter,
              "bytedance": ByteDanceAdapter, "alibaba": AlibabaAdapter,
              "tripcom": TripComAdapter}

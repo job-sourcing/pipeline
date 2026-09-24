@@ -1,0 +1,513 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+9d84e7b2-d8d1-47d3-b818-17d5513049f3,"Staff Backend & Platform Engineer – FinOps, IAM & Blockchain",moonshot,moonshot,Full time,Posted 201 Days Ago,,,USA,1,USA,false,,United States,,0,"Moonshot is the “Robinhood for DeFi”—an iOS and Android app that lets anyone trade cryptocurrencies on-chain through a user-friendly interface.
+
+Since our launch in July 2024, we’ve attracted 2M+ users.
+
+Our mission: Make moonshots possible for everyone.
+
+Our vision: Make a world where life-changing financial outcomes are within everyone's reach.
+
+Everyone on our team is both a decision-maker and an implementer—united by a sense of urgency and driven by the conviction that our work can transform global finance. If you thrive on curiosity, welcome tough challenges, and aspire to leave a meaningful mark on the world, Moonshot is the place for you. You’ll run toward the hardest problems alongside high-caliber teammates who consistently push each other to excel and who share your dedication to shaping the future of decentralized finance.
+
+This role is full-time, preferably located in NYC. Open to remote for the right candidate.
+
+The Opportunity
+
+As a Staff Backend & Platform Engineer at Moonshot, you’ll own some of the most critical systems in our stack: identity and access, funds movement and ledgering, and the blockchain infrastructure that powers our on-chain trading. This role is similar to staff engineers at leading crypto wallets and exchanges who own authentication stacks, key management, and high-scale financial backends. You’ll design, build, and operate systems that must be both highly reliable and extremely secure, enabling product teams to move quickly on a solid foundation.
+
+What You’ll Do
+
+•
+Design, build, and operate Identity & Access Management services:
+
+•
+Authentication flows, sessions, device trust.
+
+•
+Authorization and entitlements (roles, permissions, policies).
+
+•
+Security controls such as MFA and key management (working with security teams).
+
+•
+Own financial operations systems:
+
+•
+Transfers and payments orchestration.
+
+•
+Ledgering and reconciliation flows.
+
+•
+Limits, risk controls, and transactional correctness.
+
+•
+Build and maintain blockchain infrastructure:
+
+•
+Node and RPC management.
+
+•
+Transaction submission, monitoring, and retry logic.
+
+•
+Indexing and streaming of on-chain data into internal services and data stores.
+
+•
+Define and uphold reliability and observability standards:
+
+•
+SLOs and error budgets for core services.
+
+•
+Dashboards, alerts, runbooks, and incident management practices.
+
+•
+Lead large, cross-functional technical projects from design through rollout, collaborating with Product, Security, and Ops.
+
+•
+Mentor and guide other engineers, contributing to engineering standards, design reviews, and documentation.
+
+•
+Stay close to industry best practices in auth, key management, and secure infrastructure for crypto and trading.
+
+What We Look For in You
+
+•
+5–12+ years of backend or product or platform engineering, including experience with high-scale, high-availability systems in fintech, crypto, or similar domains.
+
+•
+Deep expertise in at least one of:
+
+•
+Identity & access / security engineering
+
+•
+Financial systems / ledgering / payments
+
+•
+Blockchain infrastructure / on-chain data
+
+•
+Strong experience designing and operating distributed systems (datastores, queues, streaming, background workers).
+
+•
+Track record driving architecture decisions and seeing them through implementation and adoption.
+
+•
+Strong operational mindset: monitoring, on-call, incident response, and postmortems.
+
+•
+Excellent collaboration skills, especially with Product, Security, and Ops.
+
+Nice to Haves
+
+•
+Experience with Flutter, React Native, React, Headless CRMs
+
+•
+Experience with Go, Rust, Solana
+
+•
+Experience with Google Cloud or Amazon Web Services
+
+•
+Experience with crypto wallets, exchanges, or onchain protocols including DeFi, L2s, ZK
+
+•
+Exposure to data warehousing and analytics for financial reporting.
+
+•
+Contributions to open-source projects.
+
+Location
+
+•
+NYC preferred (with periodic in-person sprints).
+
+•
+Remote-friendly within the United States and Canada; travel ~1wk/quarter
+
+Compensation & Package
+
+•
+Competitive salary and meaningful equity.
+
+•
+5% 401(k) match.
+
+•
+Health benefits with employer-covered premiums, plus life insurance coverage.
+
+•
+One-time office setup stipend.
+
+•
+Flexible PTO.",4188,https://jobs.ashbyhq.com/moonshot/9d84e7b2-d8d1-47d3-b818-17d5513049f3,,,,,,,no_match,,2026-09-24,,2026-09-24,,,,true,0,,,,,Engineering,,,false,,,,,,
+3255ab0c-a3e0-4f43-a077-aeb7344614e6,"Senior Backend & Platform Engineer – FinOps, IAM & Blockchain",moonshot,moonshot,Full time,Posted 201 Days Ago,,,USA,1,USA,false,,United States,,0,"Moonshot is the “Robinhood for DeFi”—an iOS and Android app that lets anyone trade cryptocurrencies on-chain through a user-friendly interface.
+
+Since our launch in July 2024, we’ve attracted 2M+ users.
+
+Our mission: Make moonshots possible for everyone.
+
+Our vision: Make a world where life-changing financial outcomes are within everyone's reach.
+
+Everyone on our team is both a decision-maker and an implementer—united by a sense of urgency and driven by the conviction that our work can transform global finance. If you thrive on curiosity, welcome tough challenges, and aspire to leave a meaningful mark on the world, Moonshot is the place for you. You’ll run toward the hardest problems alongside high-caliber teammates who consistently push each other to excel and who share your dedication to shaping the future of decentralized finance.
+
+This role is full-time, preferably located in NYC. Open to remote for the right candidate.
+
+The Opportunity
+
+As a Senior Backend & Platform Engineer at Moonshot, you’ll own some of the most critical systems in our stack: identity and access, funds movement and ledgering, and the blockchain infrastructure that powers our on-chain trading. This role is similar to staff engineers at leading crypto wallets and exchanges who own authentication stacks, key management, and high-scale financial backends. You’ll design, build, and operate systems that must be both highly reliable and extremely secure, enabling product teams to move quickly on a solid foundation.
+
+What You’ll Do
+
+•
+Design, build, and operate Identity & Access Management services:
+
+•
+Authentication flows, sessions, device trust.
+
+•
+Authorization and entitlements (roles, permissions, policies).
+
+•
+Security controls such as MFA and key management (working with security teams).
+
+•
+Own financial operations systems:
+
+•
+Transfers and payments orchestration.
+
+•
+Ledgering and reconciliation flows.
+
+•
+Limits, risk controls, and transactional correctness.
+
+•
+Build and maintain blockchain infrastructure:
+
+•
+Node and RPC management.
+
+•
+Transaction submission, monitoring, and retry logic.
+
+•
+Indexing and streaming of on-chain data into internal services and data stores.
+
+•
+Define and uphold reliability and observability standards:
+
+•
+SLOs and error budgets for core services.
+
+•
+Dashboards, alerts, runbooks, and incident management practices.
+
+•
+Lead large, cross-functional technical projects from design through rollout, collaborating with Product, Security, and Ops.
+
+•
+Mentor and guide other engineers, contributing to engineering standards, design reviews, and documentation.
+
+•
+Stay close to industry best practices in auth, key management, and secure infrastructure for crypto and trading.
+
+What We Look For in You
+
+•
+5–12+ years of backend or product or platform engineering, including experience with high-scale, high-availability systems in fintech, crypto, or similar domains.
+
+•
+Deep expertise in at least one of:
+
+•
+Identity & access / security engineering
+
+•
+Financial systems / ledgering / payments
+
+•
+Blockchain infrastructure / on-chain data
+
+•
+Strong experience designing and operating distributed systems (datastores, queues, streaming, background workers).
+
+•
+Track record driving architecture decisions and seeing them through implementation and adoption.
+
+•
+Strong operational mindset: monitoring, on-call, incident response, and postmortems.
+
+•
+Excellent collaboration skills, especially with Product, Security, and Ops.
+
+Nice to Haves
+
+•
+Experience with Flutter, React Native, React, Headless CRMs
+
+•
+Experience with Go, Rust, Solana
+
+•
+Experience with Google Cloud or Amazon Web Services
+
+•
+Experience with crypto wallets, exchanges, or onchain protocols including DeFi, L2s, ZK
+
+•
+Exposure to data warehousing and analytics for financial reporting.
+
+•
+Contributions to open-source projects.
+
+Location
+
+•
+NYC preferred (with periodic in-person sprints).
+
+•
+Remote-friendly within the United States and Canada; travel ~1wk/quarter
+
+Compensation & Package
+
+•
+Competitive salary and meaningful equity.
+
+•
+5% 401(k) match.
+
+•
+Health benefits with employer-covered premiums, plus life insurance coverage.
+
+•
+One-time office setup stipend.
+
+•
+Flexible PTO.",4189,https://jobs.ashbyhq.com/moonshot/3255ab0c-a3e0-4f43-a077-aeb7344614e6,,,,,,,no_match,,2026-09-24,,2026-09-24,,,,true,0,,,,,Engineering,,,false,,,,,,
+32c82938-05fa-48a4-b06e-c6b16d9e3ae7,Growth  Lead,moonshot,moonshot,Full time,Posted 3 Days Ago,,,"New York, NY",2,"New York, NY; {'location': 'USA', 'address': {'postalAddress': {'addressRegion': 'New York ', 'addressCountry': 'United States', 'addressLocality': 'New York '}}}",false,,United States,,0,"Moonshot is the “Robinhood for DeFi”—an iOS and Android app that lets anyone trade cryptocurrencies on-chain through a user-friendly interface.
+
+Since our launch in July 2024, we’ve attracted 2M+ users.
+
+Our mission: Make moonshots possible for everyone.
+
+Our vision: Make a world where life-changing financial outcomes are within everyone's reach.
+
+Everyone on our team is both a decision-maker and an implementer—united by a sense of urgency and driven by the conviction that our work can transform global finance. If you thrive on curiosity, welcome tough challenges, and aspire to leave a meaningful mark on the world, Moonshot is the place for you. You’ll run toward the hardest problems alongside high-caliber teammates who consistently push each other to excel and who share your dedication to shaping the future of decentralized finance.
+
+This role is full-time, preferably located in NYC. Open to remote for the right candidate.
+
+The Opportunity
+
+We're looking for a Growth Lead to build and run growth at Moonshot from the ground up: strategy, content, paid channels, and the team underneath it all. This is a hands-on, builder role, not a manage-an-agency-and-review-decks job. You'll be in the weeds on campaigns and content while building out the function as we scale.
+
+What You'll Do
+
+•
+Own growth strategy end-to-end: set the roadmap for user acquisition and engagement, and own the numbers behind it
+
+•
+Run paid acquisition across Meta, Google Ads, TikTok Ads, X Ads, and other platforms as they become relevant
+
+•
+Drive organic and creator-led growth through UGC and clipping strategies, sourcing, briefing, and scaling content that performs
+
+•
+Generate and test ideas constantly; you're not waiting for a brief, you're bringing the brief
+
+•
+Build and lead the team as we scale: hire, onboard, and manage the growth marketers and specialists you need
+
+•
+Report on and iterate against performance: kill what doesn't work, scale what does, fast
+
+What We Look For in You
+
+•
+A few years of experience scaling a consumer product, as a growth hacker/marketer inside a consumer app (social, fintech, gaming), or at an agency running growth for products like these
+
+•
+Hands-on channel experience with UGC, clipping/content strategies, and paid social/search
+
+•
+A scrappy, high-energy operator mindset; you're hungry, hands-on, and thrive building the playbook as you go, not running someone else's
+
+•
+Comfort with ambiguity and pace; you don't need a fully mapped org or process to start moving
+
+Nice to Haves
+
+•
+Crypto experience, as a retail trader or through work at a crypto company
+
+•
+Understanding of trader psychology, incentives, and habit loops
+
+Compensation & Package
+
+•
+Competitive salary
+
+•
+Early Equity opportunities
+
+•
+5% 401(k) Match
+
+•
+Health benefits (75% premium coverage) + $150,000 in life insurance coverage
+
+•
+$1,000 one time office set up stipend
+
+•
+Flexible PTO",2894,https://jobs.ashbyhq.com/moonshot/32c82938-05fa-48a4-b06e-c6b16d9e3ae7,,,,,,,no_match,,2026-09-24,,2026-09-24,,,,true,0,,,,,Business,,,false,,,,,,
+e1417b0c-b499-43a0-bfd9-88c6ecbbd1e9,Senior Backend Engineer ,moonshot,moonshot,Full time,Posted 85 Days Ago,,,"New York, NY",2,"New York, NY; {'location': 'USA', 'address': {'postalAddress': {'addressRegion': 'New York ', 'addressCountry': 'United States', 'addressLocality': 'New York '}}}",false,,United States,,0,"Moonshot is the “Robinhood for DeFi”—an iOS and Android app that lets anyone trade cryptocurrencies on-chain through a user-friendly interface.
+
+Since our launch in July 2024, we’ve attracted 2M+ users.
+
+Our mission: Make moonshots possible for everyone.
+
+Our vision: Make a world where life-changing financial outcomes are within everyone's reach.
+
+Everyone on our team is both a decision-maker and an implementer—united by a sense of urgency and driven by the conviction that our work can transform global finance. If you thrive on curiosity, welcome tough challenges, and aspire to leave a meaningful mark on the world, Moonshot is the place for you. You’ll run toward the hardest problems alongside high-caliber teammates who consistently push each other to excel and who share your dedication to shaping the future of decentralized finance.
+
+This role is full-time, preferably located in NYC. Open to remote for the right candidate.
+
+The Opportunity
+
+As a Backend Engineer at Moonshot, you’ll own some of the most critical systems in our stack: identity and access, funds movement and ledgering, and the blockchain infrastructure that powers our on-chain trading. This role is similar to staff engineers at leading crypto wallets and exchanges who own authentication stacks, key management, and high-scale financial backends. You’ll design, build, and operate systems that must be both highly reliable and extremely secure, enabling product teams to move quickly on a solid foundation.
+
+What You’ll Do
+
+•
+Design, build, and operate Identity & Access Management services:
+
+•
+Authentication flows, sessions, device trust.
+
+•
+Authorization and entitlements (roles, permissions, policies).
+
+•
+Security controls such as MFA and key management (working with security teams).
+
+•
+Own financial operations systems:
+
+•
+Transfers and payments orchestration.
+
+•
+Ledgering and reconciliation flows.
+
+•
+Limits, risk controls, and transactional correctness.
+
+•
+Build and maintain blockchain infrastructure:
+
+•
+Node and RPC management.
+
+•
+Transaction submission, monitoring, and retry logic.
+
+•
+Indexing and streaming of on-chain data into internal services and data stores.
+
+•
+Define and uphold reliability and observability standards:
+
+•
+SLOs and error budgets for core services.
+
+•
+Dashboards, alerts, runbooks, and incident management practices.
+
+•
+Lead large, cross-functional technical projects from design through rollout, collaborating with Product, Security, and Ops.
+
+•
+Mentor and guide other engineers, contributing to engineering standards, design reviews, and documentation.
+
+•
+Stay close to industry best practices in auth, key management, and secure infrastructure for crypto and trading.
+
+What We Look For in You
+
+•
+5–12+ years of backend or product or platform engineering, including experience with high-scale, high-availability systems in fintech, crypto, or similar domains.
+
+•
+Deep expertise in at least one of:
+
+•
+Identity & access / security engineering
+
+•
+Financial systems / ledgering / payments
+
+•
+Blockchain infrastructure / on-chain data
+
+•
+Strong experience designing and operating distributed systems (datastores, queues, streaming, background workers).
+
+•
+Track record driving architecture decisions and seeing them through implementation and adoption.
+
+•
+Strong operational mindset: monitoring, on-call, incident response, and postmortems.
+
+•
+Excellent collaboration skills, especially with Product, Security, and Ops.
+
+Nice to Haves
+
+•
+Experience with Flutter, React Native, React, Headless CRMs
+
+•
+Experience with Go, Rust, Solana
+
+•
+Experience with Google Cloud or Amazon Web Services
+
+•
+Experience with crypto wallets, exchanges, or onchain protocols including DeFi, L2s, ZK
+
+•
+Exposure to data warehousing and analytics for financial reporting.
+
+•
+Contributions to open-source projects.
+
+Location
+
+•
+NYC preferred (with periodic in-person sprints).
+
+•
+Remote-friendly within the United States and Canada; travel ~1wk/quarter
+
+Compensation & Package
+
+•
+Competitive salary and meaningful equity.
+
+•
+5% 401(k) match.
+
+•
+Health benefits with employer-covered premiums, plus life insurance coverage.
+
+•
+One-time office setup stipend.
+
+•
+Flexible PTO.",4171,https://jobs.ashbyhq.com/moonshot/e1417b0c-b499-43a0-bfd9-88c6ecbbd1e9,,,,,,,no_match,,2026-09-24,,2026-09-24,,,,true,0,,,,,Engineering,,,false,,,,,,

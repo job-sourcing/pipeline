@@ -229,6 +229,153 @@
     "Los Angeles, California, United States",
     "San Diego, California, United States"
    ]
+  },
+  {
+   "label": "gea_us_fulltime",
+   "board": "haier|wd3|GE_Appliances",
+   "company": "GE Appliances",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "GE Appliances",
+    "GE Appliances, a Haier company"
+   ],
+   "slice_locations": [
+    "United States",
+    "Louisville, Kentucky, United States"
+   ]
+  },
+  {
+   "label": "xpeng_us_fulltime",
+   "board": "ats:greenhouse:xpengmotors",
+   "company": "XPENG",
+   "country": "United States",
+   "li_variants": [
+    "XPENG",
+    "XPENG Motors"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States"
+   ]
+  },
+  {
+   "label": "faradayfuture_us_fulltime",
+   "board": "ats:greenhouse:faradayfuture",
+   "company": "Faraday Future",
+   "country": "United States",
+   "li_variants": [
+    "Faraday Future",
+    "Faraday Future Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "El Segundo, California, United States",
+    "Los Angeles, California, United States"
+   ]
+  },
+  {
+   "label": "didi_us_fulltime",
+   "board": "ats:greenhouse:didi",
+   "company": "DiDi",
+   "country": "United States",
+   "li_variants": [
+    "DiDi",
+    "DiDi Labs",
+    "DiDi Global"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ]
+  },
+  {
+   "label": "tcl_us_fulltime",
+   "board": "ats:greenhouse:tcl",
+   "company": "TCL",
+   "country": "United States",
+   "li_variants": [
+    "TCL North America",
+    "TCL"
+   ],
+   "slice_locations": [
+    "United States",
+    "Irvine, California, United States"
+   ]
+  },
+  {
+   "label": "gotion_us_fulltime",
+   "board": "ats:greenhouse:gotion",
+   "company": "Gotion",
+   "country": "United States",
+   "li_variants": [
+    "Gotion Inc.",
+    "Gotion"
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States",
+    "Manteno, Illinois, United States"
+   ]
+  },
+  {
+   "label": "moonshot_us_fulltime",
+   "board": "ats:ashby:moonshot",
+   "company": "Moonshot AI",
+   "country": "United States",
+   "li_variants": [
+    "Moonshot AI",
+    "Moonshot AI Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "New York, New York, United States"
+   ]
+  },
+  {
+   "label": "weride_us_fulltime",
+   "board": "ats:lever:weride",
+   "company": "WeRide",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "WeRide",
+    "WeRide Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ]
+  },
+  {
+   "label": "tplink_us_fulltime",
+   "board": "ats:workable:tp-link-usa-corp",
+   "company": "TP-Link",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "TP-Link",
+    "TP-Link Systems Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "Irvine, California, United States"
+   ]
+  },
+  {
+   "label": "pony_us_fulltime",
+   "board": "ats:workable:pony-dot-ai",
+   "company": "Pony.ai",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "Pony.ai",
+    "Pony AI"
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States"
+   ]
   }
  ]
 }

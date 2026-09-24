@@ -1,0 +1,10 @@
+rows: 8 (unique reqIds: 8)
+details merged: 8
+descriptions present: 8
+locations enumerated (not 'N Locations'): 8
+startDate present: 0
+signals: matched=8 no_match=0 blocked=0 not_checked=0
+location entries total (sum nLocations): 8
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=8 (from facet_tags.jsonl)
+facet tag coverage: 8/8 rows (0 untagged)

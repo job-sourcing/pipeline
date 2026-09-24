@@ -1,0 +1,10 @@
+rows: 86 (unique reqIds: 86)
+details merged: 86
+descriptions present: 86
+locations enumerated (not 'N Locations'): 86
+startDate present: 0
+signals: matched=62 no_match=24 blocked=0 not_checked=0
+location entries total (sum nLocations): 172
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=86 (from facet_tags.jsonl)
+facet tag coverage: 86/86 rows (0 untagged)

@@ -62,11 +62,16 @@ assert not dups, f"INV-1 FAIL: {dups[:5]}"
 # INV-2: foreign-reqId title rows (card's job_req_id points at another
 # ON-BOARD req — read from the signal record via the URL id)
 import re
+# S16: signals/title_search files are legitimately ABSENT on tiny boards
+# (0 LI surface -> no signals file; all-matched -> no titlesearch file) —
+# missing = empty, not an error.
 sig = {}
-for line in (D / f"{LABEL}.signals.jsonl").read_text().split("\n"):
-    if line.strip():
-        s = json.loads(line)
-        sig[str(s.get("linkedin_job_id"))] = s
+_sig_path = D / f"{LABEL}.signals.jsonl"
+if _sig_path.exists():
+    for line in _sig_path.read_text().split("\n"):
+        if line.strip():
+            s = json.loads(line)
+            sig[str(s.get("linkedin_job_id"))] = s
 board_ids = {r["reqId"] for r in rows}
 foreign = []
 for r in matched:
@@ -98,10 +103,12 @@ assert not bad_verbatim, f"INV-3 FAIL: {bad_verbatim[:5]}"
 
 # INV-4: every no_match req has a terminal titlesearch line
 ts = {}
-for line in (D / f"{LABEL}.title_search.jsonl").read_text().split("\n"):
-    if line.strip():
-        t = json.loads(line)
-        ts[t["reqId"]] = t
+_ts_path = D / f"{LABEL}.title_search.jsonl"
+if _ts_path.exists():
+    for line in _ts_path.read_text().split("\n"):
+        if line.strip():
+            t = json.loads(line)
+            ts[t["reqId"]] = t
 unprobed = [r["reqId"] for r in no_match if r["reqId"] not in ts]
 print(f"INV-4 unprobed no_match: {len(unprobed)}")
 assert not unprobed, f"INV-4 FAIL: {unprobed[:5]}"
