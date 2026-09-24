@@ -314,12 +314,23 @@ ten proofs per company.
 | `anthropic_us_fulltime` | `ats:greenhouse:anthropic` | 467 | 289 (61.9%) | S13; one-call board API; S15 dialect ladder rescued +31 remote-US rows the office classifier silently dropped (null-location offices) |
 | `openai_us_fulltime` | `ats:ashby:openai` | 659 | 327 (49.6%) | S13; structured country, GUID ids |
 | `bytedance_us_fulltime` | `custom:bytedance` | 443 | 204 (46.0%) | S14; atx-throne supplier API, `website-path: en` portal selector, honest blank dates (API serves none) |
-| `alibaba_us_fulltime` | `custom:alibaba` | 10 | 4 (40.0%) | S14; multi-host Lumos sweep (aidc + holding + tongyi; careers-alibabacloud DNS-volatile → fail-soft `complete=false`) |
+| `alibaba_us_fulltime` | `custom:alibaba` | 47 | 5 (10.6%) | S14; multi-host Lumos sweep (aidc + holding + tongyi + cloud). S16: the cloud host moved to careers.alibabacloud.com (the hyphenated host went globally NXDOMAIN) and now needs the PLAIN transport (impersonated POST is 405-rejected) — +37 US rows recovered; the 34 hit_indexed are cross-host duplicate roles (greedy 1:1, honest) |
 | `tripcom_us_fulltime` | `custom:tripcom` | 10 | 7 (70.0%) | S14; `getOverseaJobAd` server-side ISO-3 `country:["USA"]`, `(MJ…)` title artifact stripped (code survives as reqId) |
 | `baidu_us_fulltime` | `ats:greenhouse:baidu` | 25 | 9 (36.0%) | S15; 0/28 requisition_ids (numeric-id fallback); board-wide DEFAULT office (single id 1570) disqualified by the office-signature heuristic — location free-text governs; 3 Toronto rows correctly dropped |
 | `byd_us_fulltime` | `ats:greenhouse:byd` | 22 | 6 (27.3%) | S15; malformed office strings (`CA 93537` last-segments) classified via US state-token rung; all CA/NV cities |
 | `neteasegames_us_fulltime` | `ats:greenhouse:neteasegames` | 3 | 1 (33.3%) | S15; semicolon country tokens in `location.name` (`United States-Remote`); honest small US footprint (Singapore/Canada/UK-dominant board) |
 | `shein_us_fulltime` | `ats:greenhouse:shein` | 17 | 14 (82.4%) | S15; `Employment Type` metadata → timeType (the one greenhouse board that serves it); 1 Part-time row filtered by the structured field |
+| `gea_us_fulltime` | `haier\|wd3\|GE_Appliances` | 172 | 88 (51.2%) | S16; GE Appliances (Haier) — netflix-class (no country facet, detail-classified `United States of America`); 8 questionnaire ids / 53 questions |
+| `xpeng_us_fulltime` | `ats:greenhouse:xpengmotors` | 20 | 16 (80.0%) | S16; Santa Clara "SV Office" board, campus/intern-heavy |
+| `faradayfuture_us_fulltime` | `ats:greenhouse:faradayfuture` | 70 | 10 (14.3%) | S16; all-US board (El Segundo CA); weak LI cross-posting (honest 14%) |
+| `didi_us_fulltime` | `ats:greenhouse:didi` | 9 | 7 (77.8%) | S16; DiDi Labs San Jose |
+| `tcl_us_fulltime` | `ats:greenhouse:tcl` | 3 | 3 (100.0%) | S16; TCL North America (Irvine CA) |
+| `gotion_us_fulltime` | `ats:greenhouse:gotion` | 136 | 41 (30.1%) | S16; Gotion (Hefei battery maker) — Manteno IL plant hiring dominates (94 rows); census undercounted (crude token filter missed state-token rows) |
+| `moonshot_us_fulltime` | `ats:ashby:moonshot` | 4 | 0 (0.0%) | S16; Moonshot AI's first US roles — no LI surface yet (all probed terminal, honest 0%) |
+| `weride_us_fulltime` | `ats:lever:weride` | 8 | 8 (100.0%) | S16; FIRST lever board — structured ISO country codes ('US'/'AE'/'SG'/'CN'), categories.commitment timeType |
+| `tplink_us_fulltime` | `ats:workable:tp-link-usa-corp` | 86 | 62 (72.1%) | S16; FIRST workable board — apply.workable.com widget API; structured full-name country; 9 rows carry empty employment_type (honest blanks pass the FT filter) |
+| `pony_us_fulltime` | `ats:workable:pony-dot-ai` | 9 | 8 (88.9%) | S16; Pony.ai Fremont CA |
+
 
 (matched = LinkedIn corroboration; H-1B wage-band coverage is
 separate — see §7. US rows/matched are the S12–S15 dump values; the
