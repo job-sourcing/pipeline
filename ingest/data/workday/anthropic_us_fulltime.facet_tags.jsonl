@@ -10,12 +10,10 @@
 {"reqId": "PIP-266494", "jobFamilyGroup": "Applied AI"}
 {"reqId": "3355", "jobFamilyGroup": "Applied AI"}
 {"reqId": "PIP-266131", "jobFamilyGroup": "Applied AI"}
-{"reqId": "266646", "jobFamilyGroup": "Applied AI"}
+{"reqId": "266477", "jobFamilyGroup": "Applied AI"}
 {"reqId": "PIP-267131", "jobFamilyGroup": "Applied AI"}
-{"reqId": "11616", "jobFamilyGroup": "Applied AI"}
 {"reqId": "11917", "jobFamilyGroup": "Applied AI"}
 {"reqId": "266633", "jobFamilyGroup": "Applied AI"}
-{"reqId": "260682", "jobFamilyGroup": "Applied AI"}
 {"reqId": "266527", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-266510", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-266432", "jobFamilyGroup": "Security"}
@@ -24,16 +22,22 @@
 {"reqId": "266727", "jobFamilyGroup": "Sales"}
 {"reqId": "266671", "jobFamilyGroup": "Sales"}
 {"reqId": "PIP-267003", "jobFamilyGroup": "Sales"}
+{"reqId": "PIP-266994", "jobFamilyGroup": "Security"}
 {"reqId": "267310", "jobFamilyGroup": "Engineering & Design - Product"}
+{"reqId": "267694", "jobFamilyGroup": "Compute"}
 {"reqId": "266287", "jobFamilyGroup": "Finance"}
 {"reqId": "266348", "jobFamilyGroup": "Sales"}
 {"reqId": "12080", "jobFamilyGroup": "Legal"}
 {"reqId": "263037", "jobFamilyGroup": "Legal"}
+{"reqId": "267693", "jobFamilyGroup": "Legal"}
+{"reqId": "PIP-266854", "jobFamilyGroup": "Public Policy"}
+{"reqId": "267583", "jobFamilyGroup": "Legal"}
 {"reqId": "267489", "jobFamilyGroup": "Marketing & Brand"}
 {"reqId": "267132", "jobFamilyGroup": "Legal"}
 {"reqId": "P-5184", "jobFamilyGroup": "Finance"}
 {"reqId": "P-5166", "jobFamilyGroup": "Finance"}
 {"reqId": "P-5176", "jobFamilyGroup": "Finance"}
+{"reqId": "267660", "jobFamilyGroup": "Finance"}
 {"reqId": "266821", "jobFamilyGroup": "Marketing & Brand"}
 {"reqId": "266588", "jobFamilyGroup": "Marketing & Brand"}
 {"reqId": "267303", "jobFamilyGroup": "Sales"}
@@ -47,7 +51,13 @@
 {"reqId": "266918", "jobFamilyGroup": "Sales"}
 {"reqId": "267347", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-267114", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
+{"reqId": "266204", "jobFamilyGroup": "Compute"}
+{"reqId": "260524", "jobFamilyGroup": "Compute"}
+{"reqId": "266412", "jobFamilyGroup": "Compute"}
+{"reqId": "266413", "jobFamilyGroup": "Compute"}
 {"reqId": "P-4736", "jobFamilyGroup": "Compute"}
+{"reqId": "267052", "jobFamilyGroup": "Compute"}
+{"reqId": "267035", "jobFamilyGroup": "Compute"}
 {"reqId": "10520", "jobFamilyGroup": "Data Science & Analytics"}
 {"reqId": "267341", "jobFamilyGroup": "Data Science & Analytics"}
 {"reqId": "PIP-262850", "jobFamilyGroup": "Data Science & Analytics"}
@@ -57,9 +67,11 @@
 {"reqId": "PIP-261451", "jobFamilyGroup": "Data Science & Analytics"}
 {"reqId": "PIP-262635", "jobFamilyGroup": "Data Science & Analytics"}
 {"reqId": "PIP-261739", "jobFamilyGroup": "Data Science & Analytics"}
+{"reqId": "PIP-262255", "jobFamilyGroup": "Data Science & Analytics"}
 {"reqId": "266170", "jobFamilyGroup": "Sales"}
 {"reqId": "266501", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "266914", "jobFamilyGroup": "Engineering & Design - Product"}
+{"reqId": "267605", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "262679", "jobFamilyGroup": "Finance"}
 {"reqId": "267174", "jobFamilyGroup": "Finance"}
 {"reqId": "262187", "jobFamilyGroup": "Finance"}
@@ -70,15 +82,17 @@
 {"reqId": "P-5171", "jobFamilyGroup": "Finance"}
 {"reqId": "266551", "jobFamilyGroup": "Finance"}
 {"reqId": "267093", "jobFamilyGroup": "Legal"}
+{"reqId": "267076", "jobFamilyGroup": "Compute"}
 {"reqId": "267328", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
+{"reqId": "267337", "jobFamilyGroup": "Security"}
 {"reqId": "262798", "jobFamilyGroup": "Engineering & Design - Product"}
+{"reqId": "267549", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "262945", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "3663", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "10511", "jobFamilyGroup": "Security"}
 {"reqId": "266273", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "267101", "jobFamilyGroup": "Security"}
 {"reqId": "267225", "jobFamilyGroup": "Software Engineering - Infrastructure"}
-{"reqId": "PIP-266347", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "261888", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "PIP-262412", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "11497", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
@@ -94,7 +108,6 @@
 {"reqId": "266851", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-10515", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "266211", "jobFamilyGroup": "Marketing & Brand"}
-{"reqId": "261969", "jobFamilyGroup": "Finance"}
 {"reqId": "260520", "jobFamilyGroup": "Finance"}
 {"reqId": "P-5156", "jobFamilyGroup": "Finance"}
 {"reqId": "266547", "jobFamilyGroup": "Finance"}
@@ -111,6 +124,7 @@
 {"reqId": "3326", "jobFamilyGroup": "Sales"}
 {"reqId": "12172", "jobFamilyGroup": "Sales"}
 {"reqId": "266470", "jobFamilyGroup": "Security"}
+{"reqId": "267597", "jobFamilyGroup": "Sales"}
 {"reqId": "266670", "jobFamilyGroup": "Sales"}
 {"reqId": "266663", "jobFamilyGroup": "Sales"}
 {"reqId": "266662", "jobFamilyGroup": "Sales"}
@@ -118,11 +132,12 @@
 {"reqId": "4534", "jobFamilyGroup": "Hardware"}
 {"reqId": "P-5143", "jobFamilyGroup": "Finance"}
 {"reqId": "P-5142", "jobFamilyGroup": "Finance"}
+{"reqId": "267686", "jobFamilyGroup": "Security"}
 {"reqId": "266659", "jobFamilyGroup": "Sales"}
 {"reqId": "266587", "jobFamilyGroup": "Marketing & Brand"}
+{"reqId": "267301", "jobFamilyGroup": "Compute"}
 {"reqId": "262827", "jobFamilyGroup": "Sales"}
 {"reqId": "261603", "jobFamilyGroup": "Sales"}
-{"reqId": "4588", "jobFamilyGroup": "Sales"}
 {"reqId": "266789", "jobFamilyGroup": "Sales"}
 {"reqId": "266720", "jobFamilyGroup": "Sales"}
 {"reqId": "267136", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
@@ -139,10 +154,13 @@
 {"reqId": "266495", "jobFamilyGroup": "Communications"}
 {"reqId": "266568", "jobFamilyGroup": "Legal"}
 {"reqId": "267054", "jobFamilyGroup": "Legal"}
+{"reqId": "267667", "jobFamilyGroup": "Legal"}
 {"reqId": "267484", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-266549", "jobFamilyGroup": "Security"}
+{"reqId": "PIP-266818", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-266368", "jobFamilyGroup": "Security"}
 {"reqId": "267006", "jobFamilyGroup": "Security"}
+{"reqId": "266601", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-260679", "jobFamilyGroup": "Data Science & Analytics"}
 {"reqId": "267298", "jobFamilyGroup": "Security"}
 {"reqId": "267295", "jobFamilyGroup": "Technical Education"}
@@ -150,15 +168,14 @@
 {"reqId": "267177", "jobFamilyGroup": "Legal"}
 {"reqId": "266083", "jobFamilyGroup": "Legal"}
 {"reqId": "266269", "jobFamilyGroup": "AI Research & Engineering"}
+{"reqId": "267663", "jobFamilyGroup": "Legal"}
 {"reqId": "266290", "jobFamilyGroup": "AI Research & Engineering"}
-{"reqId": "PIP-263052", "jobFamilyGroup": "Sales"}
 {"reqId": "266564", "jobFamilyGroup": "Applied AI"}
 {"reqId": "266650", "jobFamilyGroup": "Applied AI"}
 {"reqId": "266649", "jobFamilyGroup": "Applied AI"}
 {"reqId": "266007", "jobFamilyGroup": "Applied AI"}
 {"reqId": "262257", "jobFamilyGroup": "Legal"}
 {"reqId": "266850", "jobFamilyGroup": "Security"}
-{"reqId": "266491", "jobFamilyGroup": "Sales"}
 {"reqId": "267449", "jobFamilyGroup": "Sales"}
 {"reqId": "267412", "jobFamilyGroup": "Sales"}
 {"reqId": "267411", "jobFamilyGroup": "Sales"}
@@ -168,13 +185,14 @@
 {"reqId": "266643", "jobFamilyGroup": "Applied AI"}
 {"reqId": "266676", "jobFamilyGroup": "Applied AI"}
 {"reqId": "266101", "jobFamilyGroup": "Engineering & Design - Product"}
+{"reqId": "267071", "jobFamilyGroup": "Compute"}
 {"reqId": "267036", "jobFamilyGroup": "Compute"}
 {"reqId": "266518", "jobFamilyGroup": "Finance"}
 {"reqId": "10290", "jobFamilyGroup": "Sales"}
 {"reqId": "PIP-12139", "jobFamilyGroup": "Sales"}
 {"reqId": "10437", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "PIP-260154", "jobFamilyGroup": "Engineering & Design - Product"}
-{"reqId": "266173", "jobFamilyGroup": "Security"}
+{"reqId": "267183", "jobFamilyGroup": "Compute"}
 {"reqId": "P-5180", "jobFamilyGroup": "Finance"}
 {"reqId": "261822", "jobFamilyGroup": "Sales"}
 {"reqId": "266164", "jobFamilyGroup": "Sales"}
@@ -185,27 +203,29 @@
 {"reqId": "266724", "jobFamilyGroup": "Sales"}
 {"reqId": "267344", "jobFamilyGroup": "Sales"}
 {"reqId": "266725", "jobFamilyGroup": "Sales"}
-{"reqId": "267246", "jobFamilyGroup": "People"}
 {"reqId": "266276", "jobFamilyGroup": "People"}
 {"reqId": "1408", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "10259", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "PIP-267335", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "262435", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "266924", "jobFamilyGroup": "Security"}
-{"reqId": "262851", "jobFamilyGroup": "Communications"}
 {"reqId": "262954", "jobFamilyGroup": "Security"}
 {"reqId": "266119", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-263008", "jobFamilyGroup": "Security"}
-{"reqId": "262933", "jobFamilyGroup": "Communications"}
 {"reqId": "266878", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
+{"reqId": "267682", "jobFamilyGroup": "Public Policy"}
 {"reqId": "266678", "jobFamilyGroup": "Applied AI"}
 {"reqId": "PIP-10422", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "PIP-266313", "jobFamilyGroup": "AI Research & Engineering"}
+{"reqId": "267665", "jobFamilyGroup": "Legal"}
 {"reqId": "P-5137", "jobFamilyGroup": "Finance"}
+{"reqId": "PIP-267592", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "267221", "jobFamilyGroup": "Engineering & Design - Product"}
+{"reqId": "267073", "jobFamilyGroup": "Compute"}
 {"reqId": "PIP-261979", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "PIP-260806", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "267135", "jobFamilyGroup": "Product Management, Support, & Operations"}
+{"reqId": "267044", "jobFamilyGroup": "Security"}
 {"reqId": "266991", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "262899", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "266930", "jobFamilyGroup": "Product Management, Support, & Operations"}
@@ -215,7 +235,9 @@
 {"reqId": "266929", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "PIP-266192", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "267600", "jobFamilyGroup": "Product Management, Support, & Operations"}
+{"reqId": "PIP-267261", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "260135", "jobFamilyGroup": "Product Management, Support, & Operations"}
+{"reqId": "PIP-267094", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "261081", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "266530", "jobFamilyGroup": "Marketing & Brand"}
 {"reqId": "266535", "jobFamilyGroup": "Marketing & Brand"}
@@ -224,6 +246,7 @@
 {"reqId": "266175", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "PIP-10485", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "262904", "jobFamilyGroup": "Communications"}
+{"reqId": "267683", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "266478", "jobFamilyGroup": "People"}
 {"reqId": "267477", "jobFamilyGroup": "Security"}
 {"reqId": "260494", "jobFamilyGroup": "People"}
@@ -231,8 +254,9 @@
 {"reqId": "267230", "jobFamilyGroup": "People"}
 {"reqId": "262841", "jobFamilyGroup": "People"}
 {"reqId": "REQ-26-0005-01", "jobFamilyGroup": "People"}
-{"reqId": "266125", "jobFamilyGroup": "People"}
+{"reqId": "266189", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "267178", "jobFamilyGroup": "Legal"}
+{"reqId": "267079", "jobFamilyGroup": "Compute"}
 {"reqId": "267259", "jobFamilyGroup": "Legal"}
 {"reqId": "11567", "jobFamilyGroup": "Public Benefit"}
 {"reqId": "267300", "jobFamilyGroup": "Sales"}
@@ -248,7 +272,6 @@
 {"reqId": "3701", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "262025", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "PIP-262027", "jobFamilyGroup": "AI Research & Engineering"}
-{"reqId": "261440", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "PIP-10326", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "3702", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "3720", "jobFamilyGroup": "AI Research & Engineering"}
@@ -256,13 +279,18 @@
 {"reqId": "PIP-10487", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "3749", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "267312", "jobFamilyGroup": "AI Research & Engineering"}
+{"reqId": "PIP-11946", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "PIP-12081", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "267247", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
+{"reqId": "267438", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "260105", "jobFamilyGroup": "Product Management, Support, & Operations"}
+{"reqId": "11991", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "PIP-10513", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "262839", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "266557", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "266268", "jobFamilyGroup": "AI Research & Engineering"}
+{"reqId": "266076", "jobFamilyGroup": "AI Research & Engineering"}
+{"reqId": "1135", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "266184", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "266183", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "266167", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
@@ -272,8 +300,8 @@
 {"reqId": "267192", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "266166", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "266165", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
+{"reqId": "261025", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "266411", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
-{"reqId": "266207", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "267095", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "267191", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "267043", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
@@ -284,20 +312,23 @@
 {"reqId": "267283", "jobFamilyGroup": "Sales"}
 {"reqId": "267270", "jobFamilyGroup": "Legal"}
 {"reqId": "266709", "jobFamilyGroup": "Sales"}
+{"reqId": "PIP-261743", "jobFamilyGroup": "Sales"}
 {"reqId": "PIP-267293", "jobFamilyGroup": "Sales"}
 {"reqId": "262886", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-267014", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-10542", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-267346", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-261978", "jobFamilyGroup": "Security"}
+{"reqId": "267658", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-3668", "jobFamilyGroup": "Security"}
+{"reqId": "267476", "jobFamilyGroup": "Security"}
 {"reqId": "262190", "jobFamilyGroup": "Finance"}
 {"reqId": "266281", "jobFamilyGroup": "Software Engineering - Infrastructure"}
-{"reqId": "P-5150", "jobFamilyGroup": "Finance"}
 {"reqId": "266294", "jobFamilyGroup": "Finance"}
 {"reqId": "P-5145", "jobFamilyGroup": "Finance"}
 {"reqId": "P-5146", "jobFamilyGroup": "Finance"}
 {"reqId": "P-5169", "jobFamilyGroup": "Finance"}
+{"reqId": "267659", "jobFamilyGroup": "Finance"}
 {"reqId": "267537", "jobFamilyGroup": "Finance"}
 {"reqId": "11295", "jobFamilyGroup": "Finance"}
 {"reqId": "261897", "jobFamilyGroup": "Finance"}
@@ -308,9 +339,12 @@
 {"reqId": "PIP-10202", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "4533", "jobFamilyGroup": "Hardware"}
 {"reqId": "PIP-267345", "jobFamilyGroup": "Product Management, Support, & Operations"}
+{"reqId": "PIP-10378", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "PIP-267087", "jobFamilyGroup": "Security"}
 {"reqId": "266330", "jobFamilyGroup": "Engineering & Design - Product"}
+{"reqId": "266592", "jobFamilyGroup": "Technical Education"}
 {"reqId": "260173", "jobFamilyGroup": "Security"}
+{"reqId": "PIP-11548", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "10260", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "266028", "jobFamilyGroup": "AI Research & Engineering"}
 {"reqId": "PIP-10532", "jobFamilyGroup": "AI Research & Engineering"}
@@ -320,6 +354,7 @@
 {"reqId": "267377", "jobFamilyGroup": "Marketing & Brand"}
 {"reqId": "267371", "jobFamilyGroup": "Marketing & Brand"}
 {"reqId": "3446", "jobFamilyGroup": "Security"}
+{"reqId": "PIP-266169", "jobFamilyGroup": "Security"}
 {"reqId": "261064", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "PIP-260536", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "3666", "jobFamilyGroup": "AI Research & Engineering"}
@@ -340,12 +375,11 @@
 {"reqId": "262538", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "PIP-267245", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "PIP-266314", "jobFamilyGroup": "AI Research & Engineering"}
-{"reqId": "PIP-11548", "jobFamilyGroup": "Engineering & Design - Product"}
+{"reqId": "PIP-266143", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "PIP-11969", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "PIP-260627", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "PIP-260568", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "266205", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
-{"reqId": "266592", "jobFamilyGroup": "Technical Education"}
 {"reqId": "PIP-266110", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "PIP-266117", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "PIP-261658", "jobFamilyGroup": "Engineering & Design - Product"}
@@ -356,6 +390,7 @@
 {"reqId": "PIP-262952", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "10367", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "266580", "jobFamilyGroup": "AI Research & Engineering"}
+{"reqId": "PIP-260752", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "PIP-266488", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "PIP-11751", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "PIP-262179", "jobFamilyGroup": "Engineering & Design - Product"}
@@ -367,14 +402,15 @@
 {"reqId": "260766", "jobFamilyGroup": "Security"}
 {"reqId": "PIP-262614", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "11918", "jobFamilyGroup": "Sales"}
+{"reqId": "PIP-261688", "jobFamilyGroup": "Sales"}
 {"reqId": "12100", "jobFamilyGroup": "Sales"}
 {"reqId": "PIP-266434", "jobFamilyGroup": "Sales"}
 {"reqId": "11274", "jobFamilyGroup": "Sales"}
 {"reqId": "11811", "jobFamilyGroup": "Sales"}
 {"reqId": "12099", "jobFamilyGroup": "Sales"}
 {"reqId": "11812", "jobFamilyGroup": "Sales"}
-{"reqId": "260526", "jobFamilyGroup": "Sales"}
 {"reqId": "260892", "jobFamilyGroup": "Sales"}
+{"reqId": "260526", "jobFamilyGroup": "Sales"}
 {"reqId": "P-5163", "jobFamilyGroup": "Finance"}
 {"reqId": "P-5165", "jobFamilyGroup": "Finance"}
 {"reqId": "P-5164", "jobFamilyGroup": "Finance"}
@@ -383,7 +419,9 @@
 {"reqId": "266226", "jobFamilyGroup": "People"}
 {"reqId": "266658", "jobFamilyGroup": "Sales"}
 {"reqId": "266995", "jobFamilyGroup": "Finance"}
-{"reqId": "266038", "jobFamilyGroup": "Sales"}
+{"reqId": "267713", "jobFamilyGroup": "Sales"}
+{"reqId": "267580", "jobFamilyGroup": "Security"}
+{"reqId": "267077", "jobFamilyGroup": "Compute"}
 {"reqId": "262510", "jobFamilyGroup": "Product Management, Support, & Operations"}
 {"reqId": "P-5172", "jobFamilyGroup": "Finance"}
 {"reqId": "266174", "jobFamilyGroup": "Software Engineering - Infrastructure"}
@@ -407,7 +445,6 @@
 {"reqId": "267579", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "266129", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "262130", "jobFamilyGroup": "Technical Program Management"}
-{"reqId": "266665", "jobFamilyGroup": "Sales"}
 {"reqId": "266446", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "260535", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "11302", "jobFamilyGroup": "Technical Program Management"}
@@ -416,12 +453,15 @@
 {"reqId": "266307", "jobFamilyGroup": "People"}
 {"reqId": "12094", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "266147", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
-{"reqId": "266138", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "266146", "jobFamilyGroup": "Safeguards (Trust & Safety)"}
 {"reqId": "267304", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "3894", "jobFamilyGroup": "AI Research & Engineering"}
+{"reqId": "267068", "jobFamilyGroup": "Compute"}
 {"reqId": "261238", "jobFamilyGroup": "Public Benefit"}
 {"reqId": "P-5168", "jobFamilyGroup": "Finance"}
 {"reqId": "266859", "jobFamilyGroup": "Engineering & Design - Product"}
 {"reqId": "262747", "jobFamilyGroup": "Sales"}
+{"reqId": "267309", "jobFamilyGroup": "Software Engineering - Infrastructure"}
+{"reqId": "267315", "jobFamilyGroup": "Software Engineering - Infrastructure"}
+{"reqId": "267316", "jobFamilyGroup": "Software Engineering - Infrastructure"}
 {"reqId": "261966", "jobFamilyGroup": "People"}

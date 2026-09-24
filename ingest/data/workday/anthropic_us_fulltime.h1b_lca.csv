@@ -1,4 +1,131 @@
 ﻿caseNumber,caseStatus,caseSubmitted,decisionDate,employerName,jobTitle,socCode,socTitle,fullTimePosition,wageFrom,wageTo,wageUnit,prevailingWage,pwUnit,worksiteCity,worksiteState,worksitePostalCode,annualizedWage,sourceFile
+I-200-24178-150161,Certified,,2024-07-03T00:00:00,"Anthropic, PBC d/b/a Anthropic, Inc.",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,181272,Year,San Francisco,CA,94105,320000,FY2024_Q4
+I-200-24186-175768,Certified,,2024-07-11T00:00:00,"Anthropic, PBC d/b/a Anthropic, Inc.",Member of Technical Staff,15-1252.00,Software Developers,Y,405000,,Year,180960,Year,San Francisco,CA,94105,405000,FY2024_Q4
+I-200-24194-191561,Certified,,2024-07-18T00:00:00,"Anthropic, PBC d/b/a Anthropic, Inc.",Senior Software Security Engineer,15-1299.05,Information Security Engineers,Y,320000,,Year,173638,Year,San Francisco,CA,94105,320000,FY2024_Q4
+I-200-24201-208080,Certified,,2024-07-26T00:00:00,"Anthropic, PBC d/b/a Anthropic, Inc.",Software Engineer,15-1252.00,Software Developers,Y,320000,,Year,206315,Year,San Francisco,CA,94105,320000,FY2024_Q4
+I-200-24206-218336,Certified,,2024-07-31T00:00:00,"Anthropic, PBC d/b/a Anthropic, Inc.",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,180960,Year,San Francisco,CA,94105,320000,FY2024_Q4
+I-200-24220-251774,Certified,,2024-08-14T00:00:00,"Anthropic, PBC d/b/a Anthropic, Inc.",Member of Technical Staff,15-1252,Software Developers,Y,300000,,Year,180960,Year,San Francisco,CA,94105,300000,FY2024_Q4
+I-200-24236-291129,Certified,,2024-08-30T00:00:00,"Anthropic, PBC d/b/a Anthropic, Inc.",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,163862,Year,Snoqualmie,WA,98065,320000,FY2024_Q4
+I-200-24243-307198,Certified,,2024-09-09T00:00:00,"Anthropic, PBC d/b/a Anthropic, Inc.",Member of the Executive Support Team,11-3121.00,Human Resources Managers,Y,230000,,Year,208499,Year,San Francisco,CA,94105,230000,FY2024_Q4
+I-200-24254-326968,Certified,,2024-09-17T00:00:00,"Anthropic, PBC d/b/a Anthropic, Inc.",Member of Technical Staff,15-1252.00,Software Developers,Y,315000,,Year,180960,Year,San Francisco,CA,94105,315000,FY2024_Q4
+I-200-24261-345104,Certified,,2024-09-24T00:00:00,"Anthropic, PBC",Member of Technical Staff,17-2112.01,Human Factors Engineers and Ergonomists,Y,300000,,Year,107952,Year,New York,NY,10013,300000,FY2024_Q4
+I-200-24263-348447,Certified,,2024-09-25T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,340000,,Year,179837,Year,San Francisco,CA,94105,340000,FY2024_Q4
+I-200-24271-368841,Certified,,2024-10-03T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,340000,,Year,179837,Year,San Francisco,CA,94105,340000,FY2025_Q1
+I-200-24274-375376,Certified,,2024-10-07T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,300000,,Year,155605,Year,San Francisco,CA,94105,300000,FY2025_Q1
+I-200-24283-395870,Certified - Withdrawn,,2024-10-17T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,300000,,Year,179982,Year,New York,NY,10013,300000,FY2025_Q1
+I-200-24291-412570,Certified,,2024-10-23T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,300000,,Year,179982,Year,New York,NY,10013,300000,FY2025_Q1
+I-200-24353-555960,Certified,,2024-12-27T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,206315,Year,San Francisco,CA,94105,340000,FY2025_Q1
+I-200-24355-565524,Certified,,2024-12-31T00:00:00,"Anthropic, PBC",Startup Account Executive,13-1161.00,Market Research Analysts and Marketing Specialists,Y,126000,,Year,96387,Year,San Francisco,CA,94105,126000,FY2025_Q1
+I-202-24271-368832,Certified,,2024-10-03T00:00:00,"Anthropic, PBC",Recruiter,13-1071.00,Human Resources Specialists,Y,170000,,Year,130811,Year,San Francisco,CA,94105,170000,FY2025_Q1
+I-203-24271-371252,Certified,,2024-10-04T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1299.09,Information Technology Project Managers,Y,300000,,Year,173638,Year,San Francisco,CA,94105,300000,FY2025_Q1
+I-200-24362-574289,Certified,,2025-01-06T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,155605,Year,San Francisco,CA,94105,340000,FY2025_Q2
+I-200-24366-577851,Certified,,2025-01-07T00:00:00,"Anthropic, PBC",Research Engineer,15-1221.00,Computer and Information Research Scientists,Y,340000,,Year,179837,Year,San Francisco,CA,94105,340000,FY2025_Q2
+I-200-25003-593788,Certified,,2025-01-13T00:00:00,"Anthropic, PBC",Finance & Strategy,13-2051.00,Financial and Investment Analysts,Y,230000,,Year,171454,Year,San Francisco,CA,94105,230000,FY2025_Q2
+I-200-25010-611736,Certified,,2025-01-17T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,405000,,Year,155605,Year,San Francisco,CA,94105,405000,FY2025_Q2
+I-200-25022-635740,Certified,,2025-01-29T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,315000,,Year,155605,Year,San Francisco,CA,94105,315000,FY2025_Q2
+I-200-25031-658970,Certified,,2025-02-07T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,155605,Year,San Francisco,CA,94105,340000,FY2025_Q2
+I-200-25056-720720,Certified,,2025-03-03T00:00:00,"Anthropic, PBC",People Partner,11-3121.00,Human Resources Managers,Y,285000,,Year,249434,Year,San Francisco,CA,94105,285000,FY2025_Q2
+I-200-25064-746913,Certified,,2025-03-12T00:00:00,"Anthropic, PBC",Member of Technical Staff (Manager),11-3021.00,Computer and Information Systems Managers,Y,690000,,Year,273915,Year,San Francisco,CA,94105,690000,FY2025_Q2
+I-200-25078-788476,Certified,,2025-03-26T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,206315,Year,San Francisco,CA,94105,320000,FY2025_Q2
+I-200-25079-791601,Certified,,2025-03-27T00:00:00,"Anthropic, PBC",Regulatory Operations Lead,13-1041.07,Regulatory Affairs Specialists,Y,210000,,Year,109346,Year,Seattle,WA,98109,210000,FY2025_Q2
+I-202-25058-729754,Certified,,2025-03-06T00:00:00,"Anthropic, PBC",Research Operations,15-2031.00,Operations Research Analysts,Y,230000,,Year,141523,Year,San Francisco,CA,94105,230000,FY2025_Q2
+I-203-25007-598638,Certified,,2025-01-14T00:00:00,"Anthropic, PBC",Research Engineer,15-1221.00,Computer and Information Research Scientists,Y,690000,,Year,179837,Year,San Francisco,CA,94105,690000,FY2025_Q2
+I-203-25078-788482,Certified,,2025-03-26T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,405000,,Year,206315,Year,San Francisco,CA,94105,405000,FY2025_Q2
+I-200-25086-809490,Certified - Withdrawn,,2025-04-08T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,180960,Year,San Francisco,CA,94105,320000,FY2025_Q3
+I-200-25091-815950,Certified,,2025-04-07T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,405000,,Year,206315,Year,San Francisco,CA,94105,405000,FY2025_Q3
+I-200-25091-816072,Certified - Withdrawn,,2025-06-02T00:00:00,"Anthropic, PBC","Manager, Marketing",11-2021.00,Marketing Managers,Y,355000,,Year,260666,Year,San Francisco,CA,94105,355000,FY2025_Q3
+I-200-25098-844310,Certified,,2025-04-15T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,180960,Year,San Francisco,CA,94105,320000,FY2025_Q3
+I-200-25100-853489,Certified,,2025-04-17T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,155605,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-200-25100-853504,Certified,,2025-04-17T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,155605,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-200-25101-858311,Certified,,2025-04-18T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,340000,,Year,179837,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-200-25104-863413,Certified,,2025-04-21T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,179982,Year,New York,NY,10013,320000,FY2025_Q3
+I-200-25105-863461,Certified,,2025-04-21T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,340000,,Year,179837,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-200-25106-868853,Certified,,2025-04-22T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,180960,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-200-25106-872594,Certified,,2025-04-23T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,179982,Year,New York,NY,10001,320000,FY2025_Q3
+I-200-25107-878305,Certified - Withdrawn,,2025-05-06T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,280000,,Year,123656,Year,New York,NY,10036,280000,FY2025_Q3
+I-200-25107-878310,Certified,,2025-04-24T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,315000,,Year,155605,Year,San Francisco,CA,94105,315000,FY2025_Q3
+I-200-25111-885048,Certified,,2025-04-28T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,180960,Year,San Francisco,CA,94105,320000,FY2025_Q3
+I-200-25118-911634,Certified,,2025-05-05T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,315000,,Year,155605,Year,San Francisco,CA,94105,315000,FY2025_Q3
+I-200-25118-913855,Certified,,2025-05-05T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,425000,,Year,155605,Year,San Francisco,CA,94105,425000,FY2025_Q3
+I-200-25119-918797,Certified,,2025-05-06T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,250000,,Month,211432,Year,San Francisco,CA,94105,,FY2025_Q3
+I-200-25120-922439,Certified,,2025-05-07T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,300000,,Year,190486,Year,Seattle,WA,98109,300000,FY2025_Q3
+I-200-25121-927583,Certified,,2025-05-08T00:00:00,"Anthropic, PBC",Technical Program Management,15-1299.09,Information Technology Project Managers,Y,435000,,Year,105560,Year,San Francisco,CA,94105,435000,FY2025_Q3
+I-200-25126-944797,Certified,,2025-05-13T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,280000,,Year,123656,Year,New York,NY,10013,280000,FY2025_Q3
+I-200-25127-950624,Certified,,2025-05-14T00:00:00,"Anthropic, PBC",Data Science,15-2051.00,Data Scientists,Y,265000,,Year,188885,Year,San Francisco,CA,94105,265000,FY2025_Q3
+I-200-25128-951414,Certified,,2025-05-14T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,340000,,Year,243027,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-200-25134-973950,Certified,,2025-05-21T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,137259,Year,Seattle,WA,98109,340000,FY2025_Q3
+I-200-25135-982170,Certified,,2025-05-22T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,206315,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-200-25135-982975,Certified,,2025-05-22T00:00:00,"Anthropic, PBC",Member of Technical Staff (Manager),11-3021.00,Computer and Information Systems Managers,Y,340000,,Year,237120,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-200-25142-009906,Certified,,2025-05-30T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,315000,,Year,211432,Year,San Francisco,CA,94105,315000,FY2025_Q3
+I-200-25143-012088,Certified,,2025-06-02T00:00:00,"Anthropic, PBC",Member of Technical Staff (Manager),11-3021.00,Computer and Information Systems Managers,Y,405000,,Year,273915,Year,San Francisco,CA,94105,405000,FY2025_Q3
+I-200-25153-041560,Certified,,2025-06-09T00:00:00,"Anthropic, PBC",Partner Marketing Manager - AWS,11-2021.00,Marketing Managers,Y,320000,,Year,260666,Year,San Francisco,CA,94105,320000,FY2025_Q3
+I-200-25154-044890,Certified,,2025-06-10T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,155605,Year,San Francisco,CA,94105,320000,FY2025_Q3
+I-200-25154-048611,Certified,,2025-06-10T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,155605,,Year,155605,Year,San Francisco,CA,94105,155605,FY2025_Q3
+I-200-25156-055521,Certified,,2025-06-12T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,405000,,Year,151819,Year,New York,NY,10013,405000,FY2025_Q3
+I-200-25156-055547,Certified,,2025-06-12T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,206315,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-200-25156-056897,Certified,,2025-06-12T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,155605,Year,San Francisco,CA,94105,320000,FY2025_Q3
+I-200-25157-061295,Certified,,2025-06-13T00:00:00,"Anthropic, PBC",Communications,27-3031.00,Public Relations Specialists,Y,300000,,Year,121992,Year,San Francisco,CA,94105,300000,FY2025_Q3
+I-200-25157-064978,Certified,,2025-06-13T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,300000,,Year,190486,Year,Seattle,WA,98109,300000,FY2025_Q3
+I-200-25158-065037,Certified,,2025-06-13T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,315000,,Year,155605,Year,San Francisco,CA,94105,315000,FY2025_Q3
+I-200-25161-076930,Certified,,2025-06-17T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,315000,,Year,179837,Year,San Francisco,CA,94105,315000,FY2025_Q3
+I-200-25162-077637,Certified,,2025-06-17T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,315000,,Year,113693,Year,New York,NY,10001,315000,FY2025_Q3
+I-200-25162-078054,Certified,,2025-06-18T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,250000,,Year,243027,Year,San Francisco,CA,94105,250000,FY2025_Q3
+I-200-25163-086770,Certified,,2025-06-20T00:00:00,"Anthropic, PBC",Member of Technical Staff,41-9031.00,Sales Engineers,Y,320000,,Year,185099,Year,New York,NY,10013,320000,FY2025_Q3
+I-200-25165-093106,Certified,,2025-06-23T00:00:00,"Anthropic, PBC",Data Engineer,15-2051.00,Data Scientists,Y,315000,,Year,188885,Year,San Francisco,CA,94105,315000,FY2025_Q3
+I-202-25133-972381,Certified,,2025-05-20T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,180960,Year,San Francisco,CA,94105,340000,FY2025_Q3
+I-203-25094-834831,Certified,,2025-04-11T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,300000,,Year,155605,Year,San Francisco,CA,94105,300000,FY2025_Q3
+I-200-25175-123284,Certified,,2025-07-01T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,315000,,Year,206315,Year,San Francisco,CA,94105,315000,FY2025_Q4
+I-200-25175-125702,Certified,,2025-07-01T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,206315,Year,San Francisco,CA,94105,340000,FY2025_Q4
+I-200-25176-126167,Certified,,2025-07-02T00:00:00,"Anthropic, PBC",Analytics Engineer,15-2051.00,Data Scientists,Y,315000,,Year,188885,Year,San Francisco,CA,94105,315000,FY2025_Q4
+I-200-25178-136943,Certified,,2025-07-07T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,320000,,Year,206315,Year,San Francisco,CA,94105,320000,FY2025_Q4
+I-200-25178-137419,Certified,,2025-07-07T00:00:00,"Anthropic, PBC",Member of Technical Staff.,15-1221.00,Computer and Information Research Scientists,Y,340000,,Year,243027,Year,San Francisco,CA,94105,340000,FY2025_Q4
+I-200-25184-152907,Certified,,2025-07-11T00:00:00,"Anthropic, PBC",Member of Technical Staff.,15-1252.00,Software Developers,Y,320000,,Year,213512,Year,San Francisco,CA,94105,320000,FY2025_Q4
+I-200-25184-152920,Certified,,2025-07-11T00:00:00,"Anthropic, PBC",Member of Technical Staff.,15-1252.00,Software Developers,Y,340000,,Year,187574,Year,San Francisco,CA,94105,340000,FY2025_Q4
+I-200-25192-170354,Certified,,2025-07-18T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,340000,,Year,161637,Year,San Francisco,CA,94105,340000,FY2025_Q4
+I-200-25195-174045,Certified,,2025-07-21T00:00:00,"Anthropic, PBC",Copyright Counsel,23-1011.00,Lawyers,Y,274414,320000,Year,274414,Year,San Francisco,CA,94105,274414,FY2025_Q4
+I-200-25206-199419,Certified,,2025-07-31T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,180710,320000,Year,180710,Year,Seattle,WA,98109,180710,FY2025_Q4
+I-200-25211-210831,Certified,,2025-08-06T00:00:00,"Anthropic, PBC",Compliance,15-1299.05,Information Security Engineers,Y,150405,255000,Year,150405,Year,San Francisco,CA,94105,150405,FY2025_Q4
+I-200-25213-214579,Certified,,2025-08-07T00:00:00,"Anthropic, PBC",Data Science,15-2051.00,Data Scientists,Y,163322,355000,Year,163322,Year,Seattle,WA,98109,163322,FY2025_Q4
+I-200-25213-214587,Certified,,2025-08-07T00:00:00,"Anthropic, PBC",Finance & Strategy,13-2051.00,Financial and Investment Analysts,Y,152069,235000,Year,152069,Year,San Francisco,CA,94105,152069,FY2025_Q4
+I-200-25218-225490,Certified,,2025-08-13T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,185723,315000,Year,185723,Year,New York,NY,10013,185723,FY2025_Q4
+I-200-25221-232401,Certified,,2025-08-15T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,226138,300000,Year,187574,Year,San Francisco,CA,94105,226138,FY2025_Q4
+I-200-25227-244402,Certified,,2025-08-21T00:00:00,"Anthropic, PBC",Revenue Operations,15-1252.00,Software Developers,Y,187574,220000,Year,187574,Year,San Francisco,CA,94105,187574,FY2025_Q4
+I-200-25227-244405,Certified,,2025-08-21T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,187723,315000,Year,185723,Year,New York,NY,10013,187723,FY2025_Q4
+I-200-25227-244415,Certified,,2025-08-21T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,187574,320000,Year,187574,Year,San Francisco,CA,94105,187574,FY2025_Q4
+I-200-25231-252454,Certified,,2025-08-26T00:00:00,"Anthropic, PBC",Accounting,13-2011.00,Accountants and Auditors,Y,119662,190000,Year,119662,Year,San Francisco,CA,94105,119662,FY2025_Q4
+I-200-25233-258801,Certified,,2025-08-28T00:00:00,"Anthropic, PBC",Accounting,13-2011.00,Accountants and Auditors,Y,128502,190000,Year,119662,Year,San Francisco,CA,94105,128502,FY2025_Q4
+I-200-25234-262792,Certified,,2025-08-29T00:00:00,"Anthropic, PBC",Member of Compute Capacity Strategy and Operations Team,15-1299.09,Information Technology Project Managers,Y,150405,300000,Year,150405,Year,San Francisco,CA,94105,150405,FY2025_Q4
+I-200-25234-262871,Certified,,2025-08-29T00:00:00,"Anthropic, PBC",Member of Compute Capacity,15-1299.09,Information Technology Project Managers,Y,150405,300000,Year,150405,Year,San Francisco,CA,94105,150405,FY2025_Q4
+I-200-25239-271105,Certified,,2025-09-04T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,226138,320000,Year,187574,Year,San Francisco,CA,94105,226138,FY2025_Q4
+I-200-25241-276459,Certified,,2025-09-08T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1221.00,Computer and Information Research Scientists,Y,185723,425000,Year,185723,Year,New York,NY,10013,185723,FY2025_Q4
+I-200-25248-291224,Certified,,2025-09-12T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,226138,320000,Year,187574,Year,San Francisco,CA,94111,226138,FY2025_Q4
+I-200-25251-292704,Certified,,2025-09-15T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,226138,340000,Year,187574,Year,San Francisco,CA,94111,226138,FY2025_Q4
+I-200-25252-297736,Certified,,2025-09-16T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,187574,320000,Year,187574,Year,San Francisco,CA,94111,187574,FY2025_Q4
+I-200-25253-300653,Certified,,2025-09-17T00:00:00,"Anthropic, PBC",Technical Sales,15-1299.08,Computer Systems Engineers/Architects,Y,126818,240000,Year,126818,Year,New York,NY,10013,126818,FY2025_Q4
+I-200-25254-301868,Certified,,2025-09-18T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,187574,320000,Year,187574,Year,San Francisco,CA,94111,187574,FY2025_Q4
+I-200-25259-313321,Certified,,2025-09-23T00:00:00,"Anthropic, PBC",Threat Intel,15-2051.00,Data Scientists,Y,164403,275000,Year,164403,Year,San Francisco,CA,94105,164403,FY2025_Q4
+I-200-25260-316680,Certified,,2025-09-24T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,160805,320000,Year,160805,Year,New York,NY,10013,160805,FY2025_Q4
+I-200-25261-319925,Certified,,2025-09-25T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,180710,500000,Year,180710,Year,Seattle,WA,98109,180710,FY2025_Q4
+I-200-25261-319931,Certified,,2025-09-25T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,187574,500000,Year,187574,Year,San Francisco,CA,94105,187574,FY2025_Q4
+I-200-25261-319962,Certified,,2025-09-25T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,160805,500000,Year,160805,Year,New York,NY,10013,160805,FY2025_Q4
+I-200-25265-325903,Certified,,2025-09-29T00:00:00,"Anthropic, PBC",Technical Sales,15-1299.08,Computer Systems Engineers/Architects,Y,126818,170000,Year,126818,Year,New York,NY,10013,126818,FY2025_Q4
+I-200-25266-327689,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,187574,280000,Year,187574,Year,San Francisco,CA,94105,187574,FY2025_Q4
+I-200-25266-329430,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Data Science,15-2051.00,Data Scientists,Y,163322,500000,Year,163322,Year,Seattle,WA,98109,163322,FY2025_Q4
+I-200-25266-329441,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Data Science,15-2051.00,Data Scientists,Y,139506,500000,Year,139506,Year,New York,NY,10013,139506,FY2025_Q4
+I-200-25266-329457,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Data Science,15-2051.00,Data Scientists,Y,164403,500000,Year,164403,Year,San Francisco,CA,94105,164403,FY2025_Q4
+I-200-25266-329466,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Finance & Strategy,13-2051.00,Financial and Investment Analysts,Y,117499,500000,Year,117499,Year,Seattle,WA,98109,117499,FY2025_Q4
+I-200-25266-329483,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Finance & Strategy,13-2051.00,Financial and Investment Analysts,Y,152069,500000,Year,152069,Year,San Francisco,CA,94105,152069,FY2025_Q4
+I-200-25266-329489,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Finance & Strategy,13-2051.00,Financial and Investment Analysts,Y,148678,500000,Year,148678,Year,New York,NY,10013,148678,FY2025_Q4
+I-200-25266-329663,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Recruiter,13-1071.00,Human Resources Specialists,Y,98758,500000,Year,98758,Year,Seattle,WA,98109,98758,FY2025_Q4
+I-200-25266-329671,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Recruiter,13-1071.00,Human Resources Specialists,Y,94328,500000,Year,94328,Year,New York,NY,10013,94328,FY2025_Q4
+I-200-25266-329680,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Recruiter,13-1071.00,Human Resources Specialists,Y,112486,500000,Year,112486,Year,San Francisco,CA,94105,112486,FY2025_Q4
+I-200-25266-329876,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Research Engineer,15-1253.00,Software Quality Assurance Analysts and Testers,Y,133702,500000,Year,133702,Year,Seattle,WA,98109,133702,FY2025_Q4
+I-200-25266-329880,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Research Engineer,15-1253.00,Software Quality Assurance Analysts and Testers,Y,125528,500000,Year,125528,Year,New York,NY,10013,125528,FY2025_Q4
+I-200-25266-329882,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Research Engineer,15-1253.00,Software Quality Assurance Analysts and Testers,Y,138445,500000,Year,138445,Year,San Francisco,CA,94105,138445,FY2025_Q4
+I-202-25190-163978,Certified,,2025-07-16T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,300000,,Year,161637,Year,San Francisco,CA,94105,300000,FY2025_Q4
+I-202-25252-295971,Certified,,2025-09-16T00:00:00,"Anthropic, PBC",Recruiter,13-1071.00,Human Resources Specialists,Y,134742,230000,Year,134742,Year,San Francisco,CA,94111,134742,FY2025_Q4
+I-202-25266-328811,Certified,,2025-09-30T00:00:00,"Anthropic, PBC",Partnerships,11-3121.00,Human Resources Managers,Y,214198,285000,Year,214198,Year,San Francisco,CA,94105,214198,FY2025_Q4
+I-203-25253-300769,Certified,,2025-09-17T00:00:00,"Anthropic, PBC",Member of Technical Staff,15-1252.00,Software Developers,Y,226183,320000,Year,187574,Year,San Francisco,CA,94111,226183,FY2025_Q4
 I-200-25268-333299,Certified,,2025-11-04T00:00:00,"Anthropic, PBC",MEMBER OF TECHNICAL STAFF,15-1252.00,Software Developers,Y,187574,625000,Year,187574,Year,San Francisco,CA,94105,187574,FY2026_Q3
 I-200-25268-335926,Certified,,2025-11-04T00:00:00,"Anthropic, PBC",MEMBER OF TECHNICAL STAFF,15-1252.00,Software Developers,Y,187574,340000,Year,187574,Year,San Francisco,CA,94105,187574,FY2026_Q3
 I-200-25268-335974,Certified,,2025-11-04T00:00:00,"Anthropic, PBC",MEMBER OF TECHNICAL STAFF,15-1252.00,Software Developers,Y,160805,340000,Year,160805,Year,New York,NY,10013,160805,FY2026_Q3
