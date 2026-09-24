@@ -1,0 +1,72 @@
+{
+ "board": "ats:lever:horizon",
+ "company": "Horizon Robotics",
+ "country": "United States",
+ "time_type": "Full time",
+ "dumpDate": "2026-09-24",
+ "count": 1,
+ "details_merged": 1,
+ "signals_matched": 1,
+ "similar_edges": 0,
+ "facet_tagged_rows": 1,
+ "rows": [
+  {
+   "reqId": "81ef015f-fdbf-4b7e-ac6e-1e066b6d1828",
+   "title": "Research Scientist",
+   "company": "horizon",
+   "url": "https://jobs.lever.co/horizon/81ef015f-fdbf-4b7e-ac6e-1e066b6d1828",
+   "externalPath": "/81ef015f-fdbf-4b7e-ac6e-1e066b6d1828",
+   "locationsText": "Cupertino, California",
+   "postedOn": "Posted 315 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "81ef015f-fdbf-4b7e-ac6e-1e066b6d1828"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-11-13",
+   "departments": [
+    "Silicon Valley Research Lab (General)"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Research Scientist",
+    "location": "Cupertino, California",
+    "additionalLocations": [],
+    "jobDescription": "<div>The <strong>Silicon Valley Research Lab</strong> focuses on developing novel algorithms and technologies to allow machines to learn new knowledge and skills as efficiently as humans. We are looking for someone with expertise in and enthusiasm for machine learning research, especially in <strong>Robotics, Embodied AI, Reinforcement learning (RL)</strong>, etc.</div>\n<div>&nbsp;</div>\n<div>As a Research Scientist in the team, you will conduct research within a specialized focus area and collaborate with internal and external world-class researchers and applied engineering teams.</div>\n<div>&nbsp;</div>\n<div>- Propose and formulate research problems towards solving AGI</div>\n<div>- Design, implement and evaluate algorithms, models and prototypes of AI systems</div>\n<div>- Collaborate with team members to achieve research goals</div>\n<div>- Report and present research findings internally and externally (such as in top tier academic journals and/or conferences)</div>\n<div>&nbsp;</div>\n<div>Here is what we&rsquo;d like to see in you:</div>\n<div>&nbsp;</div>\n<div>- PhD degree (or close to completion)) in computer science, machine learning, robotics, or related field, with a broad knowledge of machine learning approaches and theory</div>\n<div>- Track record of coming up with and implementing new ideas in AI</div>\n<div>- Strong ability in mathematically modeling real world problems</div>\n<div>- Strong ability in implementing algorithms and systems</div>\n<div>- Hunger for learning new things</div>\n<div>- Passion in artificial general intelligence and willingness to do challenging deep research</div>\n<div>- Experience in one or more fields of artificial intelligence such as machine learning, natural language processing, computer vision, reinforcement learning, robotics, large language models, etc.</div>\n<div>- Applicants must be able to obtain work authorization in the U.S. at the time of hire and maintain ongoing work authorization during employment.</div>\n<div>&nbsp;</div>\n<div>This is a hybrid role with the expectation of working at least 3 days per week in our Cupertino office.</div>\n<div>\n<p>The base pay range for this full-time Research Scientist position is between $150,000 and $300,000/year plus&nbsp;<strong>equity incentive</strong>, depending on your experience, qualifications, education, skills and other related factors.</p>\n<p>This position is also eligible for an annual&nbsp;<strong>performance bonus,&nbsp;</strong>and a competitive&nbsp;<strong>benefits package</strong>. Employees have day one access to medical, dental, and vision insurance. We also offer a 401(k) savings plan with company match, Paid Holidays, Sick Days and Personal Time Off (PTO).&nbsp;</p>\n<p>OPT extension, H-1B visas and green card petitions are sponsored.</p>\n</div>\n<div>&nbsp;</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/horizon/81ef015f-fdbf-4b7e-ac6e-1e066b6d1828",
+    "jobReqId": "81ef015f-fdbf-4b7e-ac6e-1e066b6d1828",
+    "postedOn": "Posted 315 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "horizon",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Silicon Valley Research Lab (General)",
+   "signals": {
+    "linkedin_job_id": "4414148749",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4414148749",
+    "title": "Research Scientist",
+    "company": "Horizon Robotics",
+    "location": "Cupertino, CA",
+    "linkedin_posted_date": "2026-05-13",
+    "num_applicants": 200,
+    "applicants_label": "Over 200 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-24T20:48:53",
+    "match_method": "title"
+   }
+  }
+ ]
+}

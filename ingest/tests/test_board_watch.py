@@ -1986,7 +1986,7 @@ class TestShippedWatchConfig:
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 23
+        assert len(cfg["watches"]) == 26
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",

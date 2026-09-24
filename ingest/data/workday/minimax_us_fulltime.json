@@ -1,0 +1,689 @@
+{
+ "board": "ats:feishuhire:vrfi1sk8a0",
+ "company": "MiniMax",
+ "country": "United States",
+ "time_type": "Full time",
+ "dumpDate": "2026-09-24",
+ "count": 14,
+ "details_merged": 14,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 14,
+ "rows": [
+  {
+   "reqId": "7687134817943472447",
+   "title": "Research Lead, Large Language Models",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7687134817943472447/detail",
+   "externalPath": "/index/position/7687134817943472447",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 5 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7687134817943472447"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-09-19",
+   "departments": [
+    "Algorithm"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Research Lead, Large Language Models",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "About the Role\nWe are looking for a hands-on Research Lead to own and advance a key technical area within our large language model team.\nYou will define the technical roadmap for your area, lead a focused team through complex research and engineering challenges, and work closely with other technical leaders to contribute to the broader evolution of our foundation models.\nThis is a specialized technical leadership role—not an organization-wide leadership position. We expect the successful candidate to remain deeply involved in research, experimentation, and implementation.\n\nKey Responsibilities\nOwn the technical direction and roadmap for a core LLM area, such as pre-training, post-training, reasoning, agents, alignment, data, evaluation, or model architecture.\nLead a team in identifying and solving complex, high-impact research and engineering problems.\nDrive end-to-end model iterations within the designated area, from problem definition and research hypotheses to large-scale experimentation, evaluation, and model integration.\nRemain hands-on with algorithm design, experiment analysis, and critical engineering decisions.\nIdentify fundamental bottlenecks and develop technically rigorous solutions that meaningfully improve model capabilities.\nMentor team members, raise the technical bar, and foster a culture of ownership, open debate, and execution excellence.\nCollaborate closely with other research, infrastructure, and product teams to ensure that technical advances translate into broader model improvements and real-world impact.\n\nQualifications\nDeep expertise and a strong track record of breakthrough work in one or more areas of large language models.\nDemonstrated experience leading a team or technical direction through difficult, open-ended problems.\nSignificant ownership of complete foundation model iterations, with a strong understanding of how research decisions affect data, training, evaluation, engineering, and deployment.\nExceptional command of both algorithmic principles and engineering implementation, with the ability to operate effectively from research ideas to large-scale systems.\nStrong first-principles thinking and the ability to make clear technical judgments in uncertain and rapidly evolving environments.\nA hands-on leadership style, high standards for technical rigor, and a strong sense of ownership.\nA genuine passion for using technological advances to create meaningful change in the real world.\n\nWhat We Value\nBreakthrough thinking grounded in rigorous execution.\nThe ability to turn ambiguous problems into clear technical priorities.\nIntellectual independence combined with strong collaboration.\nOwnership from idea to measurable model improvement.\nThe ability to inspire and develop a small, high-caliber technical team.",
+    "timeType": "Full time",
+    "startDate": "2026-09-19",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7687134817943472447/detail",
+    "jobReqId": "7687134817943472447",
+    "postedOn": "Posted 5 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Algorithm",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7682322309805902130",
+   "title": "海螺AI技术招聘负责人",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7682322309805902130/detail",
+   "externalPath": "/index/position/7682322309805902130",
+   "locationsText": "Beijing | Shanghai | San Francisco",
+   "postedOn": "Posted 18 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7682322309805902130"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-09-06",
+   "departments": [
+    "Internet / Electronics / Games"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "海螺AI技术招聘负责人",
+    "location": "Beijing",
+    "additionalLocations": [
+     "Shanghai",
+     "San Francisco"
+    ],
+    "jobDescription": "打通虚拟与现实的边界！与顶尖科学家/架构师并肩，用顶级人才重构世界模型（World Models）与 Omni 生成式音视频时代。\n\n关于这个角色\n从文本生成到世界模型（World Models），从扩散模型（Diffusion/DiT）到 Omni 全模态与拟真物理世界的重构——AGI 的下一场硬仗，正在音视频与多模态战场全面打响！\n\n我们不需要一个死板的“简历搬运工”，我们寻找的是一位“懂技术演进、有极客追求、人际敏感度极高”的 Talent Architect（人才架构师）。你将作为技术团队的杠杆，帮我们把全球最聪明的脑细胞，聚集到最前沿的音视频与世界模型战场上。\n\n职责描述\n1. 全链路 Talent Hunt（组建神级 AI 团队）\n统筹并实施音视频与生成式 AI 领域人才的全流程招聘。带领团队攻克一座又一座的高峰。\n\n攻坚方向包括但不限于：生成式视频/音频（DiT/Diffusion）、世界模型（World Models）、Omni 多模态融合、实时音视频工程（RTC/Codec/渲染引擎）、具身感知等。\n\n2. 深度 BP 与“技术 Prompt”对齐\n与音视频、算法及系统架构团队保持“无缝闭环”沟通，不仅听懂需求，更能帮业务拉通人才标准。\n关注生成式 AI 与音视频行业动态，定期输出硬核人才与竞争对手技术 Mapping 报告，做业务团队的技术人才战略官。\n\n3. 全球人才生态与渠道矩阵运营\n学会多渠道、多角度打开寻人链路，搭建并运营顶级猎头渠道、开源社区（GitHub/Hugging Face）、学术顶会（CVPR, ICASSP, SIGGRAPH, NeurIPS 等）的人才捕捉网络。善于使用AI agent 完成HR工作流的数据飞轮加速。\n\n4. 攻坚硬核人才项目\n主导实施高难度专项项目：包括全球顶级实验室/大厂音视频团队 Talent Mapping、高端 Scientist / Principal Engineer 的定向猎寻与冷启动沟通。\n\n\n\n\n1. 基础功底与经验\n本科及以上学历，5年以上大模型、具身智能、AI infra等技术招聘经验（欢迎优秀的 Headhunter 转甲方）。\n有 AI、计算机视觉（CV）、语音/音频、图形学、音视频编解码或高性能计算/系统工程招聘背景或者工程师背景优先。\n\n2. 技术敏感度与极客好奇心\n不必亲自写代码，但听到 World Models, Omni, DiT, Latent Space, Codec, Ray Tracing 等词汇时能保持兴奋而非迷茫。乐于理解音视频技术与生成式 AI 的前沿技术路径，能与硬核技术专家无障碍“对齐颗粒度”。\n\n3. 高 EQ 与影响力\n具备极佳的沟通协调能力与解决问题能力，拥有极高的人际敏感度。\n能精准捕捉硬核人才的真实诉求与痛点，具备强有力的 Offer 谈判与说服影响力。\n\n4. 强大的自驱力与反脆弱性\n热爱招聘，将“帮顶级团队找对人”视为强有力的成就感来源。\n面对极高门槛的前沿技术人才招聘挑战，具备强烈的攻坚欲望与抗压能力。",
+    "timeType": "Full time",
+    "startDate": "2026-09-06",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7682322309805902130/detail",
+    "jobReqId": "7682322309805902130",
+    "postedOn": "Posted 18 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Internet / Electronics / Games",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7671161153523157311",
+   "title": "视频生成开源生态负责人",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7671161153523157311/detail",
+   "externalPath": "/index/position/7671161153523157311",
+   "locationsText": "Beijing | Shanghai | Hong Kong (China) | San Francisco | Singapore | London",
+   "postedOn": "Posted 48 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7671161153523157311"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-08-07",
+   "departments": [
+    "Internet / Electronics / Games"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "视频生成开源生态负责人",
+    "location": "Beijing",
+    "additionalLocations": [
+     "Shanghai",
+     "Hong Kong (China)",
+     "San Francisco",
+     "Singapore",
+     "London"
+    ],
+    "jobDescription": "我们正在寻找一位真正热爱开源、熟悉 AI 视频生成技术与开发者生态的 Open Source Ecosystem Lead，负责 MiniMax 视频模型的全球开源生态建设。\n你将深入参与模型从研发、发布到社区增长的完整链路，与模型、推理、产品及市场团队紧密协作，将 MiniMax 视频模型打造为全球开发者社区广泛使用和持续贡献的开源项目。你将负责：\n\n1. 视频模型开源生态整体策略\n1）制定模型开源发布、社区建设及开发者生态发展策略；\n2）围绕 GitHub、Hugging Face、ComfyUI、Diffusers 及主流推理框架建立完整生态。\n\n2. 推动模型进入主流开源工具链\n1）推动模型在 ComfyUI、Diffusers、主流推理框架及量化方案中的适配；\n2）与开源框架维护者、开发者、研究者及基础设施团队建立长期合作；\n3）推动第三方插件、Workflow、应用及社区项目围绕模型持续发展。\n\n3. 建设全球开发者与贡献者社区\n1）建立并维护核心开发者、Contributor、KOL、研究者等社区网络；\n2）推动 GitHub PR、Issue、第三方项目、教程、Benchmark 等社区贡献；\n3）代表 MiniMax 深度参与全球 AI 开源社区。\n\n4. 深度参与模型发布与技术传播\n1）深入理解视频生成模型架构、推理、量化、部署、ComfyUI Workflow、模型微调等技术；\n2）围绕模型能力、技术创新和实际应用持续产出高质量技术内容；\n3）与模型团队共同打造 Model Card、Demo、Benchmark、技术博客及开源项目。\n\n5. 连接社区与模型研发\n1）持续跟踪 MiniMax-H 系列，Wan、HunyuanVideo、CogVideo、LTX、Open-Sora 等视频开源项目及全球社区动态；\n2）识别社区真实需求、技术趋势及生态机会，并反哺模型研发和产品决策；\n3）建立从社区反馈 → 技术迭代 → 开源发布 → 生态扩张的完整闭环。\n\n1. 真正热爱开源社区，长期关注并深度参与 GitHub、Hugging Face、ComfyUI、Diffusers 等 AI 开源生态；\n2. 对视频生成模型有深入理解和实际使用经验，熟悉  MiniMax-H系列，Wan、HunyuanVideo、CogVideo、LTX、Open-Sora 等主流开源视频模型中的一个或多个；\n3. 具备较强的技术能力，理解模型推理、量化、部署、ComfyUI Workflow、模型微调等相关技术，能够与模型研发及工程团队进行深度技术沟通；\n4. 有开源项目或开发者社区建设经验，曾作为 Contributor、Maintainer、Developer Advocate 或核心成员参与过有影响力的开源项目；\n5. 具备优秀的开发者沟通和技术内容能力，能够将复杂的模型技术转化为开发者容易理解和使用的工具、文档、教程及案例；\n6. 具备良好的英文技术交流能力，能够直接参与全球开发者社区，与海外开发者、研究者及开源项目维护者建立合作；\n7. 强自驱力、强 ownership，能够在快速迭代的环境中独立发现问题、制定方案并推动落地。\n【加分项】\n1. 维护过有较大影响力的 GitHub / Hugging Face 开源项目；\n2. 曾向 ComfyUI、Diffusers、VideoSys、xDiT、vLLM、SGLang 等开源项目贡献代码或推动模型适配；\n3. 有 Wan、HunyuanVideo、CogVideo、LTX、Open-Sora 等视频模型深度实践经验；\n4. 有模型量化、推理优化、GPU 部署或训练 / Fine-tuning 经验；\n5. 在 GitHub、Hugging Face、YouTube、X、Reddit、Discord 等开发者社区具有一定影响力；\n6. 有成功推动 AI 模型、工具或开源项目获得大规模开发者 adoption 的经验。",
+    "timeType": "Full time",
+    "startDate": "2026-08-07",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7671161153523157311/detail",
+    "jobReqId": "7671161153523157311",
+    "postedOn": "Posted 48 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Internet / Electronics / Games",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7639359148785731891",
+   "title": "AIDC供应链负责人",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7639359148785731891/detail",
+   "externalPath": "/index/position/7639359148785731891",
+   "locationsText": "Shanghai | San Francisco",
+   "postedOn": "Posted 134 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7639359148785731891"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-05-13",
+   "departments": [
+    "Internet / Electronics / Games"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "AIDC供应链负责人",
+    "location": "Shanghai",
+    "additionalLocations": [
+     "San Francisco"
+    ],
+    "jobDescription": "核心职责：\n全栈基础设施架构： 规划并主导超大规模异构算力集群的生命周期管理。负责从高性能计算节点到大规模网络拓扑的全局架构设计与交付。\n战略资源协同： 深度对接全球顶尖芯片厂商与云服务巨头。参与前沿硬件的联合定义，确保在技术迭代周期中占据先机。\n下一代数据中心演进： 定义并推动 AI 专用数据中心（AIDC）的标准化。主导高功率密度部署、先进散热技术（如液冷）及超大规模互连网络的落地。\n资本效率与总量优化： 通过精细化的容量规划与灵活的资源组合，优化全球基础设施的 TCO（总拥有成本）。像投资人一样思考资源的投入产出比。\n合规与供应链韧性： 在全球化视野下，构建具备高度弹性和韧性的供应体系，确保基础设施建设的持续性与合规性。\n\n理想画像：\n10 年以上超大规模（Hyperscale）基础设施管理经验，曾服务于全球顶级云厂商或 AI 实验室。\n技术深度： 对计算存储、互连协议（如 IB/RoCE）、高性能集群管理有深刻理解，能与顶尖科学家直接对齐需求。\n行业影响力： 在全球半导体及数据中心生态圈拥有深厚的人脉沉淀。",
+    "timeType": "Full time",
+    "startDate": "2026-05-13",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7639359148785731891/detail",
+    "jobReqId": "7639359148785731891",
+    "postedOn": "Posted 134 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Internet / Electronics / Games",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7638902024088471849",
+   "title": "AI Talent Acquisition Lead / Partner",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7638902024088471849/detail",
+   "externalPath": "/index/position/7638902024088471849",
+   "locationsText": "San Francisco | Shanghai",
+   "postedOn": "Posted 135 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7638902024088471849"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-05-12",
+   "departments": [
+    "Internet / Electronics / Games"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "AI Talent Acquisition Lead / Partner",
+    "location": "San Francisco",
+    "additionalLocations": [
+     "Shanghai"
+    ],
+    "jobDescription": "The most critical competition in the AI era is the competition for human capital.\n\nModels will iterate, and compute will become a commodity. However, identifying and attracting the world’s top 0.1% talent remains a task with no shortcuts—and it is the one thing AI cannot replace.\n\nWe believe that talent density determines a company’s ceiling. We are not looking for a \"recruiter\" to fill seats; we are looking for a Talent Investor who treats \"investing in people\" as the highest leverage activity in the organization.\n\nWhat You Will Do:\n\nArchitect the Global AI Talent Map: Maintain a live, dynamic map of top-tier researchers, infrastructure engineers, and product visionaries across the globe, with a focus on the Silicon Valley and Seattle ecosystems.\nDevelop Scarcity Identification Methodology: Move beyond resume screening. Create a system to identify \"hidden gems\" and rare talent through code contributions, research impact, and unconventional signals.\nBusiness & Technical Synthesis: Deeply understand AI scaling laws, infra bottlenecks, and product moats to judge who will truly bring \"incremental value\" to our specific mission.\nHigh-Stakes Decision Making: Lead the end-to-end search and closing process for mission-critical roles. You are responsible for Talent Quality, not hiring volume.\nStrategic Density Support: Partner with the leadership team to provide strategic insights on organizational design and talent density to ensure our \"civilization ceiling\" continues to rise.\n\nRequirements:\nA profound passion for understanding people. You should be deeply embedded in the AI venture and startup ecosystem, knowing the key players, their past projects, and their motivations.\nAI-Native Fluency: You don't just talk about AI; you use it. You should understand current technical directions (Long Context, Agents, Scaling) and use AI tools to supercharge your own workflow.\nProven Track Record: Experience in high-stakes talent acquisition or strategy within AI/Tech unicorns or top-tier research labs.\nVC/Investor Background (Preferred): Experience as an Investment Manager/Associate at a VC or YC-backed startup is a huge plus. We value an \"investor's eye\" for potential.\nDigital Footprint (Preferred): An active GitHub profile, a product portfolio, or a personal \"digital asset flywheel\" that demonstrates your builder mindset.\n\nLocation & Logistics:\nBase: San Francisco, CA (Silicon Valley Core).\n\nWork Style: High-intensity, high-autonomy, and deeply integrated into the local AI community (attending summits, hackathons, and research mixers is part of the job).",
+    "timeType": "Full time",
+    "startDate": "2026-05-12",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7638902024088471849/detail",
+    "jobReqId": "7638902024088471849",
+    "postedOn": "Posted 135 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Internet / Electronics / Games",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7638320102106040627",
+   "title": "10x Team 研究员",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7638320102106040627/detail",
+   "externalPath": "/index/position/7638320102106040627",
+   "locationsText": "Beijing | Shanghai | Hong Kong (China) | San Francisco | London",
+   "postedOn": "Posted 137 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7638320102106040627"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-05-10",
+   "departments": [
+    "Internet / Electronics / Games"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "10x Team 研究员",
+    "location": "Beijing",
+    "additionalLocations": [
+     "Shanghai",
+     "Hong Kong (China)",
+     "San Francisco",
+     "London"
+    ],
+    "jobDescription": "关于 10x Team\n我们正在组建 10x Team，一支汇聚各领域顶尖人才的团队。\n过去几年，大模型在通用能力上完成了一次 10 倍跃迁。我们相信，同样的 10 倍变化也正在每一个具体行业中发生：当一个领域真正与世界级 AI 能力相遇，从研究到落地、从想法到结果，都有机会被压缩到原来十分之一的时间。\nMiniMax 的使命是 Intelligence with Everyone。我们相信，随着智能水平持续进化，模型终将深入每一个领域、每一个场景、每一个关键决策。而 10x Team 正是为了推动这一进程而设立：让最强的 AI 能力与真正理解行业的人站在一起，定义最值得解决的问题，并把它们快速构建出来。\n我们希望邀请在所在领域有深厚积累、对 AI 加速行业进程有信念的资深从业者加入。你将获得先进模型、充裕算力与真实应用场景的支持，与我们一起识别领域中的关键问题，构建评测体系和工作流，并以前所未有的速度推进那些真正值得做的事。\n\n我们对所有可能与大模型深度结合的领域开放,并对以下方向尤其感兴趣(不限于此):                                                         \n- 经济学:AI 对劳动力市场与生产力的影响、AI 时代的市场机制设计、宏观经济建模、技术扩散的政策效应等                         \n- 金融:量化研究与策略、金融文本与多模态数据分析、智能投研与 Agent 投顾、信用风险与反欺诈等                                     \n- 生命科学:基因组学、单细胞、蛋白质/RNA 结构、靶点发现与分子生成、ADMET、临床数据等                                             \n- 法律:法律推理与判例检索、合同审查与合规自动化、立法与监管文本分析、司法与诉讼数据建模、AI 监管与治理研究等 \n- 网络安全:自动化漏洞发现与利用、代码审计与威胁建模、攻防对抗与红队自动化、恶意代码与流量分析、AI 自身的安全与对齐等                                                                                             \n\n如果你来自其他与 AI 有强结合潜力的领域,也欢迎与我们聊聊。\n\n你将做什么\n- 以你的领域视角主导研究与产品落地,把领域内最值得做的事与 MiniMax 大模型能力深度结合\n- 利用前沿大模型处理大规模数据(文本、图像、音频、多模态),突破传统研究方法的数据与效率瓶颈\n- 把你的领域知识(行业 know-how、数据脉络、监管语境)转化为公司模型在该领域的能力输入\n- 与公司内部研究和产品团队协作,推动 AI 在你所在行业真实场景中的落地\n- 如有学术产出意愿,公司支持你继续在所在领域顶级期刊持续发表\n\n我们提供什么\n- 离模型最近的位置:第一时间接触 MiniMax 内部最新模型,深度参与领域能力的定义与构建\n- 充足的算力与数据:无限量调用 MiniMax 及全球顶尖大模型,充裕 GPU 集群无需排队;覆盖全球主要数据库与开源数据集的支持\n- 真实的应用场景:面向行业真实问题,研究成果可直接落地到大规模用户与企业场景,看得到自己工作的影响\n- 加速行业进程的使命感:与 MiniMax 核心团队协作,扁平化结构,决策快,不内卷\n- 学术自由度:支持与外部学术机构保持合作关系(联合培养、课题合作均可);成果默认公开,支持在顶级学术会议和期刊持续发表\n- 国际范围内具有竞争力的薪酬水平\n\n我们提供两种加入方式\n- 全职研究员,长期加入 10x Team,主导你所在领域的研究与落地路线\n- Fellowship,面向暂时不希望离开学术界或现有职位、又希望沉浸式探索 AI × 行业前沿的资深专家,以 4 个月起的周期 on-site 加入团队\n\n我们看重\n- 领域内的独特认知和深度积累:对所在领域的核心机构、关键数据资源与一线动态有体系化判断,在行业内有广泛连接\n- 方法层的 AI 融合:已将大模型与机器学习方法深度融入自身研究或工作流程,对 AI 与本领域的交叉前沿有独立判断\n- 从想法到结果的全流程执行力:无论在学术界还是工业界,有独立从课题构想推进到最终交付的经历\n\n申请材料要求\n- CV + 1-2 篇代表作 / 项目说明\n- 一段简短说明（200-400 字）：请说明你选择 10x Team 的原因、最希望推进的领域问题，以及你在工作中使用 AI 的方式。如有意向参与 Fellowship 项目，请同时注明可投入的时间窗口与偏好的工作地点。\n\n申请材料投递至 10x@minimaxi.com 或招聘官网",
+    "timeType": "Full time",
+    "startDate": "2026-05-10",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7638320102106040627/detail",
+    "jobReqId": "7638320102106040627",
+    "postedOn": "Posted 137 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Internet / Electronics / Games",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7623785911113304366",
+   "title": "大模型算法负责人",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7623785911113304366/detail",
+   "externalPath": "/index/position/7623785911113304366",
+   "locationsText": "Beijing | Shanghai | San Francisco",
+   "postedOn": "Posted 176 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7623785911113304366"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-04-01",
+   "departments": [
+    "Algorithm"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "大模型算法负责人",
+    "location": "Beijing",
+    "additionalLocations": [
+     "Shanghai",
+     "San Francisco"
+    ],
+    "jobDescription": "-\n\n  1. 在大模型领域一个或多个方向有深厚积累与突破性成果，具备带领团队攻坚复杂问题的能力。\n  2. 主导过基座模型的完整迭代，对算法原理与工程实现均有极致掌控力。\n  3. 对技术驱动现实变革有强烈热情，能在未知的环境中保持清晰的技术判断与执行力。",
+    "timeType": "Full time",
+    "startDate": "2026-04-01",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7623785911113304366/detail",
+    "jobReqId": "7623785911113304366",
+    "postedOn": "Posted 176 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Algorithm",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7598036042735110446",
+   "title": "Forward Deployed Engineer（前沿部署工程师）",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7598036042735110446/detail",
+   "externalPath": "/index/position/7598036042735110446",
+   "locationsText": "Shenzhen | Shanghai | Beijing | Hong Kong (China) | San Francisco",
+   "postedOn": "Posted 245 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7598036042735110446"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-01-22",
+   "departments": [
+    "Senior technical position"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Forward Deployed Engineer（前沿部署工程师）",
+    "location": "Shenzhen",
+    "additionalLocations": [
+     "Shanghai",
+     "Beijing",
+     "Hong Kong (China)",
+     "San Francisco"
+    ],
+    "jobDescription": "MiniMax正在把大模型能力推向各行业最前线。你是那座桥——左手是模型能力，右手是客户真实需求，把AI从demo变成跑在生产环境里的东西。\n\n你做什么\n1. 嵌入战略客户团队，在客户系统内直接构建基于MiniMax大模型的生产级应用交付技术产物：MCP服务器、子Agent、Agent Skills，直接用在客户的业务流程里\n2. 为企业环境提供白手套级部署支持，确保MiniMax产品稳定落地\n3. 识别并沉淀可复用的部署模式，把一线经验反哺给产品和工程团队\n4. 保持对LLM能力边界的敏锐度，持续跟踪最新实现模式和AI开发技术栈\n5. 与客户建立长期信任关系，主动发现新的AI落地机会\n\n我们期待你\n\n1. 3年以上技术类客户对接经验（Forward Deployed Engineer、软件工程师+咨询背景均可）\n2. 有LLM生产经验：高级Prompt工程、Agent开发、评估框架、大规模部署\n3. 能独立运作，在复杂组织结构和模糊情境中快速找到路\n4. 跨团队协作能力强，能在多方利益中平衡优先级\n5. 对推进安全、有益的AI系统有真实热情\n6. 强沟通能力，能向不同背景的干系人清晰传递技术概念\n7. 有金融、教育等垂直行业经验是加分项\n\n加分项\n1. 有FDE或专业服务经验\n2. 有企业IT系统或AI部署经验\n3. 有从0到1搭建过AI Agent的经历",
+    "timeType": "Full time",
+    "startDate": "2026-01-22",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7598036042735110446/detail",
+    "jobReqId": "7598036042735110446",
+    "postedOn": "Posted 245 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Senior technical position",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7568756534944221450",
+   "title": "Global Marketing Manager",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7568756534944221450/detail",
+   "externalPath": "/index/position/7568756534944221450",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 324 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7568756534944221450"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2025-11-04",
+   "departments": [
+    "Marketing strategy"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Global Marketing Manager",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "About the Role\nWe’re looking for a Global Marketing Manager to drive international growth for our AI products. This role bridges product, marketing, and community — executing go-to-market strategies that connect innovation with users worldwide.\n\nJob Description\n1. Global GTM Strategy Execution: Integrate internal and external channel resources, collaborating with Operations, Growth, Content, and Performance Marketing teams to execute go-to-market strategies for the company's AI products across global markets.\n2. Overseas Product Marketing: Communicate the value propositions of new products and features to international users. Develop and execute comprehensive market entry strategies based on product characteristics and use cases, including product promotion, brand positioning, market penetration, and strategic partnerships.\n3. Content Strategy & Creation: Identify and articulate core product value propositions and key selling points. Demonstrate deep understanding of user needs and target audience characteristics to create platform-specific content tailored to the tone and style of different communities and media channels, including but not limited to Discord, TikTok, Reddit, Instagram, and YouTube.\n\nRequirements\n1. Market Expertise: Strong familiarity with Western (US/EU) and/or East Asian (Japan/Korea) markets, with deep knowledge of overseas social media platforms and communities. Prior experience in international GTM and/or Product Marketing strongly preferred.\n2. Language Proficiency: Exceptional written and verbal communication skills in English, with the ability to craft compelling narratives for diverse audiences.\n3. Strategic Thinking: Outstanding strategic planning capabilities and logical reasoning skills. Experience in 0-to-1 product launches highly preferred.\n4. AI Passion & Entrepreneurial Spirit: Active user of AI products with genuine enthusiasm for the AI industry. Entrepreneurial mindset and self-driven attitude preferred.",
+    "timeType": "Full time",
+    "startDate": "2025-11-04",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7568756534944221450/detail",
+    "jobReqId": "7568756534944221450",
+    "postedOn": "Posted 324 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Marketing strategy",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7545752001586825515",
+   "title": "Regional General Manager",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7545752001586825515/detail",
+   "externalPath": "/index/position/7545752001586825515",
+   "locationsText": "San Francisco | Dubai | Berlin | Tokyo | London | Singapore | Hong Kong (China) | Seoul | Mexico City",
+   "postedOn": "Posted 386 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7545752001586825515"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2025-09-03",
+   "departments": [
+    "Senior sales position"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Regional General Manager",
+    "location": "San Francisco",
+    "additionalLocations": [
+     "Dubai",
+     "Berlin",
+     "Tokyo",
+     "London",
+     "Singapore",
+     "Hong Kong (China)",
+     "Seoul",
+     "Mexico City"
+    ],
+    "jobDescription": "MiniMax is a global AI foundation model company.   Founded in early 2022, we are committed to advancing the frontiers of AI towards AGI via our mission Intelligence with Everyone.\nOur proprietary multimodal models, led by MiniMax M1, Hailuo-02, Speech-02 and Music-01, have ultra-long context processing capacity and can understand, generate, and integrate a wide range of modalities, including text, audio, images, video, and music. These models power our major AI-native products — including MiniMax, Hailuo AI, MiniMax Audio and our enterprise and developer-facing Open API Platform — which collectively deliver intelligent, dynamic experiences to enhance productivity and quality of life for users worldwide.\nTo date, our proprietary models and AI-native products have cumulatively served over 157 million individual users across over 200 countries and regions, and more than 50,000 enterprises and developers across over 90 countries and regions.\n\nWe are building a world-class global business development team and are currently seeking Regional General Managers for the EMEA and Japan-Korea markets to help bring our cutting-edge AI large language models (LLMs) and multimodal technologies to the world. If you thrive on challenges and are driven to make breakthroughs in the field of AI, we invite you to join us in expanding the global reach of multimodal AI technology—maximizing both its commercial value and societal impact.\n\nJob Description: \n1.Oversee business development and overall operations in the target regional market, including but not limited to sales system setup, market expansion, customer relationship management, team building, and daily operations.Collaborate effectively with global teams to drive the implementation of the company’s globalization strategy.\n2.Develop and execute long-term strategic plans for the region, leading efforts in market positioning, technology branding, industry-specific solution design, and sales strategy formulation to enhance regional market competitiveness and influence.\n3.Lead, develop, and motivate the sales team, clearly communicate performance objectives, and drive sales breakthroughs and sustainable business growth.\n4.Expand and maintain relationships with key clients and strategic partners, identify opportunities for in-depth collaboration, and facilitate the implementation of major projects toward long-term mutual success.\n\nQualifications:\n1. 5+ years of sales management experience in internet, technology, or investment banking industries.\n2.Strong familiarity with markets such as Europe, Middle East, Africa, or Japan-Korea, with keen business acumen and excellent strategic planning and execution skills.\n3.In-depth knowledge of one or more of the following industries: internet, advertising media, gaming & entertainment, or high-tech; existing relationships with major accounts is a plus.\n4.Passion for artificial intelligence technology, strong sense of ownership, self-driven mindset, and results-oriented.",
+    "timeType": "Full time",
+    "startDate": "2025-09-03",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7545752001586825515/detail",
+    "jobReqId": "7545752001586825515",
+    "postedOn": "Posted 386 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Senior sales position",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7538331296591366463",
+   "title": "Global Developer Relations Specialist",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7538331296591366463/detail",
+   "externalPath": "/index/position/7538331296591366463",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 406 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7538331296591366463"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2025-08-14",
+   "departments": [
+    "Internet / Electronics / Games"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Global Developer Relations Specialist",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "1.Lead community growth and engagement strategies for developers in North America and globally, building and nurturing a strong developer network.\n2.Plan and execute online/offline technical events (e.g., workshops, hackathons, industry conferences) to enhance the brand’s technical influence.\n3.Establish and manage feedback channels for developers across North America and other regions, driving product optimization and localization.\n4.Identify key developer pain points and collaborate with technical teams to design tailored solutions that support commercialization.\n5.Manage and grow technical channels such as blogs, GitHub, and Discord to boost developer activity and retention.\n\n1.Educational background in Computer Science, AI, or a related field.\n2.Native-level English proficiency with the ability to translate technical documents between English and Chinese.\n3.Prior hands-on experience in North American AI communities (e.g., open-source contributions, community organizing, technical speaking) is preferred.\n4.Passion for generative AI products, strong self-motivation, and ability to thrive in a dynamic startup setting.",
+    "timeType": "Full time",
+    "startDate": "2025-08-14",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7538331296591366463/detail",
+    "jobReqId": "7538331296591366463",
+    "postedOn": "Posted 406 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Internet / Electronics / Games",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7513910355632146698",
+   "title": "Global Enterprise Account Executive",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7513910355632146698/detail",
+   "externalPath": "/index/position/7513910355632146698",
+   "locationsText": "Beijing | San Francisco | Shanghai | Berlin | London | Dubai | Madrid | Mexico City | lle-de-France | Seoul | Tokyo | Singapore | Hong Kong (China)",
+   "postedOn": "Posted 472 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7513910355632146698"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2025-06-09",
+   "departments": [
+    "Sales support"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "Global Enterprise Account Executive",
+    "location": "Beijing",
+    "additionalLocations": [
+     "San Francisco",
+     "Shanghai",
+     "Berlin",
+     "London",
+     "Dubai",
+     "Madrid",
+     "Mexico City",
+     "lle-de-France",
+     "Seoul",
+     "Tokyo",
+     "Singapore",
+     "Hong Kong (China)"
+    ],
+    "jobDescription": "About the Role：\nMiniMax is looking for ambitious and entrepreneurial Global Account Executives to accelerate the adoption of our foundation models and AI products worldwide.\nYou will own the development of a region, industry, or strategic customer segment—from identifying new opportunities and building pipeline to leading complex negotiations and closing high-impact deals. Working closely with Product, Solutions Engineering, Research, Legal, and Marketing, you will translate MiniMax’s model capabilities into measurable business value for enterprises, AI-native companies, developers, and strategic partners.\nThis is more than a traditional account management role. You will act as a market builder, trusted customer advisor, and the internal voice of our global customers—helping MiniMax achieve breakthrough growth in international markets.\n\nWhat You’ll Do：\n1. Build New Markets and Pipeline\n    Develop go-to-market strategies for priority regions, industries, and customer segments. Build a high-quality pipeline through targeted outreach, industry networks, ecosystem partnerships, and lighthouse opportunities.\n2. Own the End-to-End Sales Cycle\n    Lead opportunities from prospecting, discovery, and qualification through solution design, proof of concept, commercial negotiation, procurement, and closing. Maintain disciplined pipeline management, forecasting, and account planning.\n3. Win and Grow Strategic Accounts\n    Acquire enterprise and AI-native customers, build trusted relationships with senior business and technical stakeholders, and drive long-term model adoption, usage growth, renewals, and account expansion.\n4. Deliver Customer Value and Shape Global Strategy\n    Partner with Product, Solutions Engineering, Research, Legal, and Marketing to deliver successful customer evaluations and deployments. Translate market insights and customer feedback into product recommendations and scalable global sales playbooks.\n\nWhat We’re Looking For\n1.Diverse Backgrounds, Strong Commercial Drive\n   We welcome candidates from sales, investment banking, strategy,and entrepreneurs looking to transition into global GTM. What matters most is learning agility, genuine curiosity about the business world, strong self-motivation,and a demonstrated ability to turn ideas into measurable business outcomes.\n2.Technology and Industry Understanding\n   Strong interest in AI, foundation models, and APIs, with the ability to translate technical capabilities into clear business value. Experience in AI, cloud, SaaS, developer tools, internet, media, or entertainment is preferred.\n3.Global Communication and Market Skills\n   Fluent English with excellent communication, negotiation, and stakeholder-management skills. International market experience, additional languages, or relevant customer and partner networks are strong advantages.\n4.Entrepreneurial Mindset\n   Highly driven, results-oriented, and comfortable building markets from zero to one. Strong ownership, adaptability, curiosity, and the ability to thrive in a fast-paced global environment.",
+    "timeType": "Full time",
+    "startDate": "2025-06-09",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7513910355632146698/detail",
+    "jobReqId": "7513910355632146698",
+    "postedOn": "Posted 472 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Sales support",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7251566384013625612",
+   "title": "AI招聘专家",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7251566384013625612/detail",
+   "externalPath": "/index/position/7251566384013625612",
+   "locationsText": "Beijing | Shanghai | San Francisco",
+   "postedOn": "Posted 1179 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7251566384013625612"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2023-07-03",
+   "departments": [
+    "Human resources"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "AI招聘专家",
+    "location": "Beijing",
+    "additionalLocations": [
+     "Shanghai",
+     "San Francisco"
+    ],
+    "jobDescription": "1、支持人才招聘全流程，有组织地统筹与实施招聘全流程，制定并执行人才搜索和寻访计划，包括但不限于发布招聘信息、简历筛选、安排面试、Offer沟通、待入职管理等；\n2、与业务部门保持紧密而有效的沟通，熟悉业务用人标准与需求，按时按量完成招聘任务；关注行业及人才市场动态，为业务团队输出有效的市场及人才分析报告； \n3、负责招聘渠道运营，如猎头渠道管理、招聘网站资源管理等，进而提升渠道转化； \n4、完成招聘相关项目，如人才mapping、高端人才招聘等； \n5、分析招聘数据及漏斗，提升招聘有效性。\n\n1、本科及以上学历 ，3年以上招聘经验，有高招背景优先； \n2、具备优秀的沟通协调能力和解决问题能力，较高的人际敏感度和影响力； \n3、热爱招聘工作，有强大的自我驱动力和一定抗压能力，乐于接受挑战； \n4、接受乙方转甲方招聘。",
+    "timeType": "Full time",
+    "startDate": "2023-07-03",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7251566384013625612/detail",
+    "jobReqId": "7251566384013625612",
+    "postedOn": "Posted 1179 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Human resources",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7203339313111058725",
+   "title": "AI架构师",
+   "company": "MiniMax",
+   "url": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7203339313111058725/detail",
+   "externalPath": "/index/position/7203339313111058725",
+   "locationsText": "Shenzhen | Shanghai | Beijing | San Francisco | London | Hong Kong (China) | Singapore | Tokyo",
+   "postedOn": "Posted 1309 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7203339313111058725"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2023-02-23",
+   "departments": [
+    "Senior technical position"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": {
+    "title": "AI架构师",
+    "location": "Shenzhen",
+    "additionalLocations": [
+     "Shanghai",
+     "Beijing",
+     "San Francisco",
+     "London",
+     "Hong Kong (China)",
+     "Singapore",
+     "Tokyo"
+    ],
+    "jobDescription": "1. 方案设计： 洞察行业机会点，将公司大模型技术、Agent框架转化为具备竞争力的商业化解决方案。需对方案的商业可行性、ROI及市场竞争力负责；\n2. 端到端交付： 负责AI项目从POC到正式交付的全生命周期管理。解决落地过程中的架构瓶颈，确保解决方案在商用场景下的性能达标；\n3. 产品闭环： 收集客户声音，反哺AI平台及大模型产品的规划与迭代，确保产品演进方向紧贴市场实战需求。\n\n1. 教育背景： 计算机、人工智能、数学等相关专业本科及以上学历；\n2. 落地经验： 具有1年以上AI项目实战落地经验，主导过2个以上大模型相关项目（如RAG知识库、Agent智能体工作流、多模态应用等）的商业化交付；\n3. 技术能力：\n  - 精通大模型生态，能够进行Prompt工程优化、API调用能力、AI架构设计及Agent开发；有大模型项目研发、推理调优加速、知识库及agent 相关项目实战经验者优先；\n  - 具备基础代码能力，能亲自上手进行核心原型Demo的编写与技术调优。\n4. 商业洞察：\n  - 具备业务翻译能力，能将模糊的业务需求转化为清晰的技术架构；\n  - 具备敏锐的商业嗅觉，能够评估技术方案的成本、周期与商业收益；\n  - 客户沟通与影响力，能够在复杂的商业环境下驱动跨部门协作，具备极强的抗压能力和结果导向精神。",
+    "timeType": "Full time",
+    "startDate": "2023-02-23",
+    "externalUrl": "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7203339313111058725/detail",
+    "jobReqId": "7203339313111058725",
+    "postedOn": "Posted 1309 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "MiniMax",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Senior technical position",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

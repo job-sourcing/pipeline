@@ -1,130 +1,6 @@
 {
  "watches": [
   {
-   "label": "nvidia_us_fulltime",
-   "board": "nvidia|wd5|nvidiaexternalcareersite",
-   "company": "NVIDIA",
-   "country": "United States",
-   "time_type": "Full time"
-  },
-  {
-   "label": "netflix_us_fulltime",
-   "board": "netflix|wd108|Netflix",
-   "company": "Netflix",
-   "country": "United States",
-   "time_type": "Full time",
-   "li_variants": [
-    "Netflix",
-    "Netflix Animation Studios"
-   ],
-   "slice_locations": [
-    "United States",
-    "Los Gatos, California, United States",
-    "Los Angeles, California, United States",
-    "New York, New York, United States",
-    "Remote, United States",
-    "Washington, District of Columbia, United States",
-    "Las Vegas, Nevada, United States",
-    "Albuquerque, New Mexico, United States",
-    "Dallas, Texas, United States",
-    "Atlanta, Georgia, United States",
-    "Burbank, California, United States"
-   ]
-  },
-  {
-   "label": "tencent_us_fulltime",
-   "board": "tencent|wd1|Tencent_Careers",
-   "company": "Tencent",
-   "country": "United States",
-   "time_type": "Full time",
-   "li_variants": [
-    "Tencent",
-    "Tencent America",
-    "Tencent Games"
-   ],
-   "slice_locations": [
-    "United States",
-    "Palo Alto, California, United States",
-    "Seattle, Washington, United States",
-    "San Jose, California, United States",
-    "Remote, United States"
-   ]
-  },
-  {
-   "label": "jd_us_fulltime",
-   "board": "jd|wd103|Careers_at_JD",
-   "company": "JD.com",
-   "country": "United States",
-   "time_type": "Full time",
-   "li_variants": [
-    "JD.com",
-    "JD Logistics",
-    "JD Technology"
-   ],
-   "slice_locations": [
-    "United States",
-    "Los Angeles, California, United States",
-    "New York, New York, United States",
-    "San Jose, California, United States",
-    "Remote, United States"
-   ]
-  },
-  {
-   "label": "openai_us_fulltime",
-   "board": "ats:ashby:openai",
-   "company": "OpenAI",
-   "country": "United States",
-   "time_type": "Full time",
-   "li_variants": [
-    "OpenAI"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States",
-    "Seattle, Washington, United States",
-    "New York, New York, United States",
-    "Remote, United States"
-   ]
-  },
-  {
-   "label": "anthropic_us_fulltime",
-   "board": "ats:greenhouse:anthropic",
-   "company": "Anthropic",
-   "country": "United States",
-   "li_variants": [
-    "Anthropic"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States",
-    "Seattle, Washington, United States",
-    "New York, New York, United States",
-    "Remote, United States"
-   ]
-  },
-  {
-   "label": "bytedance_us_fulltime",
-   "board": "custom:bytedance",
-   "company": "ByteDance",
-   "country": "United States",
-   "time_type": "Full time",
-   "li_variants": [
-    "ByteDance",
-    "TikTok",
-    "ByteDance Ltd"
-   ],
-   "slice_locations": [
-    "United States",
-    "Seattle, Washington, United States",
-    "San Jose, California, United States",
-    "Los Angeles, California, United States",
-    "New York, New York, United States",
-    "San Diego, California, United States",
-    "Boston, Massachusetts, United States",
-    "Ashburn, Virginia, United States"
-   ]
-  },
-  {
    "label": "alibaba_us_fulltime",
    "board": "custom:alibaba",
    "company": "Alibaba Group",
@@ -145,23 +21,19 @@
    ]
   },
   {
-   "label": "tripcom_us_fulltime",
-   "board": "custom:tripcom",
-   "company": "Trip.com Group",
+   "label": "anthropic_us_fulltime",
+   "board": "ats:greenhouse:anthropic",
+   "company": "Anthropic",
    "country": "United States",
    "li_variants": [
-    "Trip.com Group",
-    "Trip.com",
-    "Trip.com Group Limited"
+    "Anthropic"
    ],
    "slice_locations": [
     "United States",
-    "Santa Clara, California, United States",
-    "San Jose, California, United States",
-    "Los Angeles, California, United States",
-    "Miami, Florida, United States",
-    "Chicago, Illinois, United States",
-    "San Francisco, California, United States"
+    "San Francisco, California, United States",
+    "Seattle, Washington, United States",
+    "New York, New York, United States",
+    "Remote, United States"
    ]
   },
   {
@@ -201,6 +73,149 @@
    ]
   },
   {
+   "label": "bytedance_us_fulltime",
+   "board": "custom:bytedance",
+   "company": "ByteDance",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "ByteDance",
+    "TikTok",
+    "ByteDance Ltd"
+   ],
+   "slice_locations": [
+    "United States",
+    "Seattle, Washington, United States",
+    "San Jose, California, United States",
+    "Los Angeles, California, United States",
+    "New York, New York, United States",
+    "San Diego, California, United States",
+    "Boston, Massachusetts, United States",
+    "Ashburn, Virginia, United States"
+   ]
+  },
+  {
+   "label": "didi_us_fulltime",
+   "board": "ats:greenhouse:didi",
+   "company": "DiDi",
+   "country": "United States",
+   "li_variants": [
+    "DiDi",
+    "DiDi Labs",
+    "DiDi Global"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ]
+  },
+  {
+   "label": "faradayfuture_us_fulltime",
+   "board": "ats:greenhouse:faradayfuture",
+   "company": "Faraday Future",
+   "country": "United States",
+   "li_variants": [
+    "Faraday Future",
+    "Faraday Future Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "El Segundo, California, United States",
+    "Los Angeles, California, United States"
+   ]
+  },
+  {
+   "label": "gea_us_fulltime",
+   "board": "haier|wd3|GE_Appliances",
+   "company": "GE Appliances",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "GE Appliances",
+    "GE Appliances, a Haier company"
+   ],
+   "slice_locations": [
+    "United States",
+    "Louisville, Kentucky, United States"
+   ]
+  },
+  {
+   "label": "gotion_us_fulltime",
+   "board": "ats:greenhouse:gotion",
+   "company": "Gotion",
+   "country": "United States",
+   "li_variants": [
+    "Gotion Inc.",
+    "Gotion"
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States",
+    "Manteno, Illinois, United States"
+   ]
+  },
+  {
+   "label": "horizon_us_fulltime",
+   "board": "ats:lever:horizon",
+   "company": "Horizon Robotics",
+   "country": "United States",
+   "li_variants": [
+    "Horizon Robotics"
+   ],
+   "slice_locations": [
+    "United States",
+    "Cupertino, California, United States"
+   ]
+  },
+  {
+   "label": "jd_us_fulltime",
+   "board": "jd|wd103|Careers_at_JD",
+   "company": "JD.com",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "JD.com",
+    "JD Logistics",
+    "JD Technology"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "New York, New York, United States",
+    "San Jose, California, United States",
+    "Remote, United States"
+   ]
+  },
+  {
+   "label": "minimax_us_fulltime",
+   "board": "ats:feishuhire:vrfi1sk8a0",
+   "company": "MiniMax",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "MiniMax",
+    "MiniMax AI"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States"
+   ]
+  },
+  {
+   "label": "moonshot_us_fulltime",
+   "board": "ats:ashby:moonshot",
+   "company": "Moonshot AI",
+   "country": "United States",
+   "li_variants": [
+    "Moonshot AI",
+    "Moonshot AI Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "New York, New York, United States"
+   ]
+  },
+  {
    "label": "neteasegames_us_fulltime",
    "board": "ats:greenhouse:neteasegames",
    "company": "NetEase Games",
@@ -212,6 +227,69 @@
    "slice_locations": [
     "United States",
     "Remote, United States"
+   ]
+  },
+  {
+   "label": "netflix_us_fulltime",
+   "board": "netflix|wd108|Netflix",
+   "company": "Netflix",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "Netflix",
+    "Netflix Animation Studios"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Gatos, California, United States",
+    "Los Angeles, California, United States",
+    "New York, New York, United States",
+    "Remote, United States",
+    "Washington, District of Columbia, United States",
+    "Las Vegas, Nevada, United States",
+    "Albuquerque, New Mexico, United States",
+    "Dallas, Texas, United States",
+    "Atlanta, Georgia, United States",
+    "Burbank, California, United States"
+   ]
+  },
+  {
+   "label": "nvidia_us_fulltime",
+   "board": "nvidia|wd5|nvidiaexternalcareersite",
+   "company": "NVIDIA",
+   "country": "United States",
+   "time_type": "Full time"
+  },
+  {
+   "label": "openai_us_fulltime",
+   "board": "ats:ashby:openai",
+   "company": "OpenAI",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "OpenAI"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States",
+    "Seattle, Washington, United States",
+    "New York, New York, United States",
+    "Remote, United States"
+   ]
+  },
+  {
+   "label": "pony_us_fulltime",
+   "board": "ats:workable:pony-dot-ai",
+   "company": "Pony.ai",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "Pony.ai",
+    "Pony AI"
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States"
    ]
   },
   {
@@ -231,62 +309,18 @@
    ]
   },
   {
-   "label": "gea_us_fulltime",
-   "board": "haier|wd3|GE_Appliances",
-   "company": "GE Appliances",
+   "label": "shengshu_us_fulltime",
+   "board": "ats:feishuhire:shengshu",
+   "company": "Shengshu",
    "country": "United States",
-   "time_type": "Full time",
    "li_variants": [
-    "GE Appliances",
-    "GE Appliances, a Haier company"
+    "Shengshu",
+    "Shengshu Technology",
+    "Vidu"
    ],
    "slice_locations": [
     "United States",
-    "Louisville, Kentucky, United States"
-   ]
-  },
-  {
-   "label": "xpeng_us_fulltime",
-   "board": "ats:greenhouse:xpengmotors",
-   "company": "XPENG",
-   "country": "United States",
-   "li_variants": [
-    "XPENG",
-    "XPENG Motors"
-   ],
-   "slice_locations": [
-    "United States",
-    "Santa Clara, California, United States"
-   ]
-  },
-  {
-   "label": "faradayfuture_us_fulltime",
-   "board": "ats:greenhouse:faradayfuture",
-   "company": "Faraday Future",
-   "country": "United States",
-   "li_variants": [
-    "Faraday Future",
-    "Faraday Future Inc."
-   ],
-   "slice_locations": [
-    "United States",
-    "El Segundo, California, United States",
-    "Los Angeles, California, United States"
-   ]
-  },
-  {
-   "label": "didi_us_fulltime",
-   "board": "ats:greenhouse:didi",
-   "company": "DiDi",
-   "country": "United States",
-   "li_variants": [
-    "DiDi",
-    "DiDi Labs",
-    "DiDi Global"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Jose, California, United States"
+    "San Francisco, California, United States"
    ]
   },
   {
@@ -304,47 +338,22 @@
    ]
   },
   {
-   "label": "gotion_us_fulltime",
-   "board": "ats:greenhouse:gotion",
-   "company": "Gotion",
-   "country": "United States",
-   "li_variants": [
-    "Gotion Inc.",
-    "Gotion"
-   ],
-   "slice_locations": [
-    "United States",
-    "Fremont, California, United States",
-    "Manteno, Illinois, United States"
-   ]
-  },
-  {
-   "label": "moonshot_us_fulltime",
-   "board": "ats:ashby:moonshot",
-   "company": "Moonshot AI",
-   "country": "United States",
-   "li_variants": [
-    "Moonshot AI",
-    "Moonshot AI Inc"
-   ],
-   "slice_locations": [
-    "United States",
-    "New York, New York, United States"
-   ]
-  },
-  {
-   "label": "weride_us_fulltime",
-   "board": "ats:lever:weride",
-   "company": "WeRide",
+   "label": "tencent_us_fulltime",
+   "board": "tencent|wd1|Tencent_Careers",
+   "company": "Tencent",
    "country": "United States",
    "time_type": "Full time",
    "li_variants": [
-    "WeRide",
-    "WeRide Inc."
+    "Tencent",
+    "Tencent America",
+    "Tencent Games"
    ],
    "slice_locations": [
     "United States",
-    "San Jose, California, United States"
+    "Palo Alto, California, United States",
+    "Seattle, Washington, United States",
+    "San Jose, California, United States",
+    "Remote, United States"
    ]
   },
   {
@@ -363,18 +372,52 @@
    ]
   },
   {
-   "label": "pony_us_fulltime",
-   "board": "ats:workable:pony-dot-ai",
-   "company": "Pony.ai",
+   "label": "tripcom_us_fulltime",
+   "board": "custom:tripcom",
+   "company": "Trip.com Group",
    "country": "United States",
-   "time_type": "Full time",
    "li_variants": [
-    "Pony.ai",
-    "Pony AI"
+    "Trip.com Group",
+    "Trip.com",
+    "Trip.com Group Limited"
    ],
    "slice_locations": [
     "United States",
-    "Fremont, California, United States"
+    "Santa Clara, California, United States",
+    "San Jose, California, United States",
+    "Los Angeles, California, United States",
+    "Miami, Florida, United States",
+    "Chicago, Illinois, United States",
+    "San Francisco, California, United States"
+   ]
+  },
+  {
+   "label": "weride_us_fulltime",
+   "board": "ats:lever:weride",
+   "company": "WeRide",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "WeRide",
+    "WeRide Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ]
+  },
+  {
+   "label": "xpeng_us_fulltime",
+   "board": "ats:greenhouse:xpengmotors",
+   "company": "XPENG",
+   "country": "United States",
+   "li_variants": [
+    "XPENG",
+    "XPENG Motors"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States"
    ]
   }
  ]

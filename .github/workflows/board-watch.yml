@@ -55,6 +55,9 @@ jobs:
     # greenhouse legs are cheap (ONE board GET per watch; details
     # cache-served) but corroborate/titlesearch budgets scale per
     # watch (240s default x 13 = 52min floor) — 75->95min.
+    # S16: 13->23 (6 adapter classes). S17: 23->26 (feishuhire x2 +
+    # lever horizon) — the feishuhire list fetch pages 10/call but the
+    # boards are small; budgets stay within 150.
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4

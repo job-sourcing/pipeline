@@ -330,6 +330,9 @@ ten proofs per company.
 | `weride_us_fulltime` | `ats:lever:weride` | 8 | 8 (100.0%) | S16; FIRST lever board — structured ISO country codes ('US'/'AE'/'SG'/'CN'), categories.commitment timeType |
 | `tplink_us_fulltime` | `ats:workable:tp-link-usa-corp` | 86 | 62 (72.1%) | S16; FIRST workable board — apply.workable.com widget API; structured full-name country; 9 rows carry empty employment_type (honest blanks pass the FT filter) |
 | `pony_us_fulltime` | `ats:workable:pony-dot-ai` | 9 | 8 (88.9%) | S16; Pony.ai Fremont CA |
+| `minimax_us_fulltime` | `ats:feishuhire:vrfi1sk8a0` | 14 | 0 (0.0%) | S17; FIRST feishuhire board — MiniMax (Hailuo) SF research/marketing roles; csrf-token + body-offset search API; 1 Consultant row filtered by structured recruit_type; no LI surface yet (honest 0%) |
+| `shengshu_us_fulltime` | `ats:feishuhire:shengshu` | 1 | 0 (0.0%) | S17; Shengshu (Vidu video-gen) — 1 SF KA-sales role of a 106-row board; no LI surface |
+| `horizon_us_fulltime` | `ats:lever:horizon` | 1 | 1 (100.0%) | S17; Horizon Robotics Cupertino Research Scientist (hybrid) — the directory's `horizon` lever slug |
 
 
 (matched = LinkedIn corroboration; H-1B wage-band coverage is

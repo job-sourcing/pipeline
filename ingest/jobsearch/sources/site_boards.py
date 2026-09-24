@@ -46,9 +46,12 @@ raw ISO on the row (firstPublishedIso) for future absolute-basis work.
 """
 from __future__ import annotations
 
+import json
 import re
 import sys
 import time
+import http.cookiejar
+import urllib.request
 from datetime import date, datetime, timezone
 from typing import Optional
 
@@ -57,7 +60,8 @@ from . import workday
 from .base import fetch_json
 
 _SPEC_RE = re.compile(
-    r"^ats:(greenhouse|ashby|lever|workable):([A-Za-z0-9_.\-]+)$")
+    r"^ats:(greenhouse|ashby|lever|workable|feishuhire):"
+    r"([A-Za-z0-9_.\-]+)$")
 # S14 registry-driven custom grammar: 'custom:{kind}' where kind ∈ _ADAPTERS
 # (own-platform boards — the platform IS the company; adding one = a class
 # + a registry entry, no grammar edit).
@@ -1755,7 +1759,362 @@ class WorkableAdapter:
         return None
 
 
+# ── feishuhire (S17: {portal}.jobs.feishu.cn throne portals) ─────────────
+
+# The feishu city taxonomy is FLAT (city names, no country hierarchy — the
+# detail's city_info_list_for_delivery is the same flat list). Country is
+# classified from this curated map (alibaba precedent). Unknown city →
+# row unresolved (dropped + loudly counted, complete=False — the
+# never-false-gone B1 contract: a US row may hide behind an unmapped name).
+# 'lle-de-France': the API strips the Î diacritic (live-observed).
+_FEISHU_CITY_COUNTRY = {
+    # China
+    "Beijing": "China", "Shanghai": "China", "Shenzhen": "China",
+    "Hangzhou": "China", "Guangzhou": "China", "Chengdu": "China",
+    "Chongqing": "China", "Wuhan": "China", "Xi'an": "China",
+    "Nanjing": "China", "Tianjin": "China", "Hefei": "China",
+    "Suzhou": "China", "Changsha": "China", "Zhengzhou": "China",
+    "Qingdao": "China", "Xiamen": "China", "Jinan": "China",
+    "Dalian": "China", "Shenyang": "China", "Harbin": "China",
+    "Changchun": "China", "Kunming": "China", "Guiyang": "China",
+    "Nanning": "China", "Fuzhou": "China", "Shijiazhuang": "China",
+    "Taiyuan": "China", "Lanzhou": "China", "Urumqi": "China",
+    "Hohhot": "China", "Yinchuan": "China", "Xining": "China",
+    "Haikou": "China", "Sanya": "China", "Dongguan": "China",
+    "Foshan": "China", "Ningbo": "China", "Wuxi": "China",
+    # Hong Kong / Macau / Taiwan
+    "Hong Kong (China)": "Hong Kong", "Hong Kong": "Hong Kong",
+    "New Territories": "Hong Kong", "Kowloon": "Hong Kong",
+    "Macau": "Macau", "Taipei": "Taiwan",
+    # United States
+    "San Francisco": "United States", "New York": "United States",
+    "Seattle": "United States", "Los Angeles": "United States",
+    "San Jose": "United States", "Mountain View": "United States",
+    "Palo Alto": "United States", "Boston": "United States",
+    "Austin": "United States", "Chicago": "United States",
+    "San Diego": "United States", "Irvine": "United States",
+    "Santa Clara": "United States", "Cupertino": "United States",
+    "Sunnyvale": "United States", "Redmond": "United States",
+    "Bellevue": "United States", "Atlanta": "United States",
+    "Dallas": "United States", "Houston": "United States",
+    "Denver": "United States", "Miami": "United States",
+    "Philadelphia": "United States", "Phoenix": "United States",
+    "Portland": "United States", "Washington": "United States",
+    # Other international (observed in live boards)
+    "Singapore": "Singapore", "London": "United Kingdom",
+    "Manchester": "United Kingdom", "Edinburgh": "United Kingdom",
+    "Berlin": "Germany", "Munich": "Germany", "Madrid": "Spain",
+    "Barcelona": "Spain", "Seoul": "Korea, Republic of",
+    "Tokyo": "Japan", "Sapporo": "Japan", "Osaka": "Japan",
+    "Dubai": "United Arab Emirates", "Abu Dhabi": "United Arab Emirates",
+    "Mexico City": "Mexico", "Kuala Lumpur": "Malaysia",
+    "Ile-de-France": "France", "lle-de-France": "France",
+    "Paris": "France", "Sydney": "Australia", "Melbourne": "Australia",
+    "Toronto": "Canada", "Vancouver": "Canada", "Montreal": "Canada",
+    "Ottawa": "Canada", "Bangkok": "Thailand", "Jakarta": "Indonesia",
+    "Ho Chi Minh City": "Vietnam", "Hanoi": "Vietnam",
+    "Manila": "Philippines", "Mumbai": "India", "Bangalore": "India",
+    "New Delhi": "India", "Hyderabad": "India", "Pune": "India",
+    "Sao Paulo": "Brazil", "São Paulo": "Brazil",
+    "Amsterdam": "Netherlands", "Milan": "Italy", "Rome": "Italy",
+    "Stockholm": "Sweden", "Zurich": "Switzerland",
+    "Warsaw": "Poland", "Istanbul": "Turkey", "Riyadh": "Saudi Arabia",
+    "Doha": "Qatar", "Tel Aviv": "Israel", "Cairo": "Egypt",
+    "Lagos": "Nigeria", "Nairobi": "Kenya",
+}
+
+# portal subdomain → display company for the row field (the CSV company
+# comes from the CLI --company flag; this is the adapter-side fallback
+# + the watch's alert text). Unlisted portals pass the code through.
+_PORTAL_COMPANY = {
+    "vrfi1sk8a0": "MiniMax", "shengshu": "Shengshu",
+    "zhipu-ai": "Zhipu AI", "01ai": "01.AI", "sensetime": "SenseTime",
+    "agirobot": "AgiBot", "nio": "NIO", "moonshot": "Moonshot AI",
+}
+
+
+class FeishuHireAdapter:
+    """{portal}.jobs.feishu.cn/api/v1/search/job/posts — Feishu-Hire
+    (Lark ATS, ByteDance's throne family) PUBLIC job-board API, the
+    standard ATS for CN AI startups (S17 census: MiniMax, Zhipu, 01.AI,
+    Baichuan, AgiBot, SenseTime, Shengshu, NIO + 1000s more).
+
+    Reverse-engineered live 2026-09-25 (browser network capture):
+      1. POST {base}/api/v1/csrf/token  → {"data":{"token":...}}
+      2. POST {base}/api/v1/search/job/posts?keyword=&limit=10&offset=0
+         &...&portal_type=6&portal_entrance=1
+         headers X-Csrf-Token + BODY {"offset": N, "limit": 10}
+         → {"data": {"job_post_list": [...], "count": total}}
+         ⚠ offset ONLY works in the BODY (URL offset silently ignored
+         → the naive probe sees 10 of N jobs — census undercount trap);
+         limit caps at 10/call.
+      3. GET {base}/api/v1/job/posts/{id}?portal_type=6&with_recommend=false
+         → {"data": {"job_post_detail": {...full description...}}}
+         (search rows carry null description/requirement — details are
+         per-id fetches; the workday details-phase contract unchanged).
+      Plain urllib works — no impersonation, no signature (the URL
+      _signature param is optional).
+
+    Field map (live-pinned 2026-09-25, minimax 185 rows / shengshu 106):
+      reqId            id (raw — the S14 join-safety decision)
+      url              {base}/index/position/{id}/detail (universal path
+                       — live-verified to serve both /index/ and custom
+                       portal paths like MiniMax's /379481/)
+      locationsText    city_list[].en_name joined ' | '
+      country          ANY city in the curated map mapping to the target
+                       (MiniMax rows are 'Beijing/Shanghai/San Francisco'
+                       multi-city — a US opening inside a CN-hybrid role
+                       IS the user's target; netflix-class precedent).
+                       Unknown city → row unresolved: dropped loudly +
+                       complete=False (never false-gone).
+      timeType         recruit_type.en_name ('Full-time' → _TT 'Full
+                       time'; 'Internship' stays; 'Consultant' → pass)
+      departments      job_category.en_name (+ parent hierarchy)
+      postedOn         publish_time epoch-ms → EXACT ISO date (the
+                       alibaba publishTime contract)
+      description      detail fetch (description + requirement joined)
+    """
+
+    KIND = "feishuhire"
+    _SEARCH = ("/api/v1/search/job/posts?keyword=&limit=10&offset=0"
+               "&job_category_id_list=&tag_id_list=&location_code_list="
+               "&subject_id_list=&recruitment_id_list=&portal_type=6"
+               "&job_function_id_list=&storefront_id_list="
+               "&portal_entrance=1")
+    _PAGE = 10          # API cap (live-measured)
+    _MAX_ROWS = 5000    # circuit breaker
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org  # the portal subdomain
+        self.cfg = cfg
+        self.company = _PORTAL_COMPANY.get(org, org)
+        self._jar = None
+        self._opener = None
+        self._token = ""
+
+    # ── transport (plain urllib + cookie jar; token per process) ────────
+
+    def _session(self):
+        if self._opener is None:
+            self._jar = http.cookiejar.CookieJar()
+            self._opener = urllib.request.build_opener(
+                urllib.request.HTTPCookieProcessor(self._jar))
+        return self._opener
+
+    def _post_json(self, path: str, body: dict,
+                   token: bool = True) -> dict:
+        base = f"https://{self.org}.jobs.feishu.cn"
+        h = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+             "Content-Type": "application/json",
+             "Referer": f"{base}/", "Origin": base}
+        if token and self._token:
+            h["X-Csrf-Token"] = self._token
+        req = urllib.request.Request(base + path,
+                                     data=json.dumps(body).encode(),
+                                     headers=h, method="POST")
+        with self._session().open(req, timeout=30) as r:
+            return json.loads(r.read().decode("utf-8", "replace"))
+
+    def _get_json(self, path: str) -> dict:
+        base = f"https://{self.org}.jobs.feishu.cn"
+        req = urllib.request.Request(
+            base + path, headers={"User-Agent": "Mozilla/5.0",
+                                  "Referer": f"{base}/"})
+        with self._session().open(req, timeout=30) as r:
+            return json.loads(r.read().decode("utf-8", "replace"))
+
+    def _token_refresh(self) -> str:
+        d = self._post_json("/api/v1/csrf/token", {}, token=False)
+        tok = ((d.get("data") or {}).get("token")) or ""
+        if not tok:
+            raise RuntimeError(f"feishuhire:{self.org}: no csrf token "
+                               f"({str(d)[:120]})")
+        self._token = tok
+        return tok
+
+    def _fetch_rows(self) -> list[dict]:
+        """Full board (all pages), cached per process. count is the
+        authoritative total; pages end on a short page OR at count."""
+        spec = f"ats:feishuhire:{self.org}"
+        now = time.monotonic()
+        hit = _CACHE.get(spec)
+        if hit and now - hit[0] < _CACHE_TTL:
+            return hit[1]
+        self._token_refresh()
+        posts: list[dict] = []
+        offset = 0
+        first_page = True
+        while True:
+            d = self._post_json(self._SEARCH,
+                                {"offset": offset, "limit": self._PAGE})
+            data = d.get("data") or {}
+            page = data.get("job_post_list") or []
+            if not isinstance(page, list):
+                raise RuntimeError(f"feishuhire:{self.org}: "
+                                   f"job_post_list not a list")
+            if not page and first_page:
+                # SEV-5-style one retry: transient soft-block = empty 200
+                first_page = False
+                time.sleep(1.0)
+                continue
+            posts.extend(page)
+            total = data.get("count")
+            if (len(page) < self._PAGE
+                    or (isinstance(total, int) and total
+                        and len(posts) >= total)):
+                break
+            offset += self._PAGE
+            if offset >= self._MAX_ROWS:
+                raise RuntimeError(f"feishuhire:{self.org}: "
+                                   f"pagination runaway")
+        _CACHE[spec] = (time.monotonic(), posts)
+        return posts
+
+    # ── classification helpers ──────────────────────────────────────────
+
+    @staticmethod
+    def _cities(job: dict) -> list[str]:
+        out = []
+        for c in (job.get("city_list") or []):
+            name = str(c.get("en_name") or c.get("name") or "").strip()
+            if name:
+                out.append(name)
+        return out
+
+    def _time_type(self, job: dict) -> str:
+        rt = str(((job.get("recruit_type") or {}).get("en_name"))
+                 or "").strip()
+        return _TT.get(rt.lower(), rt)
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        posts = self._fetch_rows()
+        rows: dict[str, dict] = {}
+        dropped_country = dropped_tt = unresolved = dupes = 0
+        for post in posts:
+            rid = str(post.get("id") or "")
+            if not rid or rid in rows:
+                if rid:
+                    dupes += 1
+                continue
+            tt = self._time_type(post)
+            if time_type and tt and tt.lower() != time_type.lower():
+                dropped_tt += 1
+                continue
+            cities = self._cities(post)
+            mapped = [_FEISHU_CITY_COUNTRY.get(c) for c in cities]
+            if cities and any(m is None for m in mapped):
+                # unknown city → unresolved (never guess US)
+                unresolved += 1
+                continue
+            # ANY-city match: a US opening inside a multi-city role counts
+            # (netflix-class precedent; MiniMax 'Beijing/Shanghai/San
+            # Francisco' rows are the user's target)
+            if country:
+                hit = any(m and workday.country_str_matches(m, country)
+                          for m in mapped)
+                if not hit:
+                    dropped_country += 1
+                    continue
+            c = next((m for m in mapped
+                      if m and workday.country_str_matches(m, "United States")), mapped[0] if mapped else "")
+            label, iso = _posted_label(_epoch_ms_to_iso(
+                post.get("publish_time")))
+            jc = ((post.get("job_category") or {}).get("en_name")) or ""
+            jf = ((post.get("job_function") or {}).get("en_name")) or ""
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(post.get("title") or ""),
+                "company": self.company,
+                "url": (f"https://{self.org}.jobs.feishu.cn"
+                        f"/index/position/{rid}/detail"),
+                # externalPath ends with the id (the detail_payload
+                # last-segment contract — greenhouse '/jobs/{id}' form;
+                # the real apply URL with the trailing /detail lives in
+                # row['url'])
+                "externalPath": f"/index/position/{rid}",
+                "locationsText": " | ".join(cities),
+                "postedOn": label,
+                "timeType": tt,
+                "bulletFields": [rid],
+                "ats": "feishuhire",
+                "firstPublishedIso": iso,
+                "departments": _dedup_keep_order([jc, jf]),
+                "countries": [c] if c else [],
+            }
+        meta = {
+            # unknown cities = possible hidden US rows → never claim done
+            "complete": unresolved == 0,
+            "total": len(posts), "pages": 1,
+            "country_client": False,
+            "client_filtered": dropped_country + dropped_tt + unresolved,
+            "duplicate_codes": dupes,
+            "unresolved_dropped": unresolved,
+            "ats": "feishuhire",
+        }
+        print(f"[{progress_label}] feishuhire:{self.org}: {len(rows)} "
+              f"rows of {len(posts)} (count meta)"
+              + (f" ({dropped_country} non-{country} + {dropped_tt} "
+                 f"non-{time_type} + {unresolved} unresolved dropped"
+                 f" client-side)" if country or time_type or unresolved
+                 else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        for post in self._fetch_rows():
+            if str(post.get("id")) != rid:
+                continue
+            cities = self._cities(post)
+            mapped = [_FEISHU_CITY_COUNTRY.get(c) for c in cities]
+            c = next((m for m in mapped
+                      if m and workday.country_str_matches(
+                          m, "United States")), mapped[0] if mapped else "")
+            label, iso = _posted_label(_epoch_ms_to_iso(
+                post.get("publish_time")))
+            url = (f"https://{self.org}.jobs.feishu.cn"
+                   f"/index/position/{rid}/detail")
+            # search rows carry null description — fetch the real detail
+            desc, req = "", ""
+            try:
+                d = self._get_json(f"/api/v1/job/posts/{rid}"
+                                   f"?portal_type=6&with_recommend=false")
+                j = ((d.get("data") or {}).get("job_post_detail")) or {}
+                desc = str(j.get("description") or "")
+                req = str(j.get("requirement") or "")
+                cities = self._cities(j) or cities
+            except Exception as exc:  # detail failure ≠ data loss (B1)
+                print(f"[feishuhire:{self.org}] detail fetch failed for "
+                      f"{rid}: {exc}", file=sys.stderr, flush=True)
+            jc = ((post.get("job_category") or {}).get("en_name")) or ""
+            return {
+                "jobPostingInfo": {
+                    "title": str(post.get("title") or ""),
+                    "location": cities[0] if cities else "",
+                    "additionalLocations": cities[1:],
+                    "jobDescription": (desc + "\n\n" + req).strip(),
+                    "timeType": self._time_type(post),
+                    "startDate": iso or "",
+                    "externalUrl": url,
+                    "jobReqId": rid,
+                    "postedOn": label,
+                    "country": {"descriptor": c} if c else None,
+                },
+                "hiringOrganization": {"name": self.company},
+                "similarJobs": [],
+                "firstPublishedIso": iso,
+            }
+        return None
+
+
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "lever": LeverAdapter, "workable": WorkableAdapter,
+             "feishuhire": FeishuHireAdapter,
              "bytedance": ByteDanceAdapter, "alibaba": AlibabaAdapter,
              "tripcom": TripComAdapter}

@@ -1344,3 +1344,150 @@ class TestLiVariantsSplitHeuristic:
         assert self._split("") == []
         assert self._split("  ") == []
         assert self._split("A,,B") == ["A", "B"]
+
+
+class TestFeishuHireAdapter:
+    """S17 pins — live-pinned 2026-09-25 on minimax (vrfi1sk8a0, 185
+    posts / 15 US rows) + shengshu (106 / 1 US). The feishu portal API:
+    csrf-token POST + body-offset search; details per-id GET."""
+
+    def _board(self, monkeypatch, posts, details=None):
+        from jobsearch.sources.site_boards import FeishuHireAdapter
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+
+        def fake_rows(self):
+            return posts
+        monkeypatch.setattr(FeishuHireAdapter, "_fetch_rows", fake_rows)
+
+        def fake_get(self, path):
+            rid = path.split("/job/posts/")[1].split("?")[0]
+            hit = (details or {}).get(rid)
+            if hit is None:
+                raise RuntimeError("404")
+            return {"data": {"job_post_detail": hit}}
+        monkeypatch.setattr(FeishuHireAdapter, "_get_json", fake_get)
+        return "ats:feishuhire:vrfi1sk8a0"
+
+    @staticmethod
+    def _post(rid, title, cities, tt="Full-time", publish=1789097209208):
+        return {"id": rid, "title": title,
+                "city_list": [{"en_name": c, "code": "CT_%d" % i}
+                              for i, c in enumerate(cities)],
+                "recruit_type": {"en_name": tt},
+                "publish_time": publish,
+                "job_category": {"en_name": "Internet / Electronics / Games"},
+                "job_function": {"en_name": "R&D"},
+                "description": None, "requirement": None}
+
+    def test_spec_registered_and_parsed(self):
+        assert site_boards.is_site_spec("ats:feishuhire:vrfi1sk8a0")
+        kind, org = site_boards.parse_site("ats:feishuhire:shengshu")
+        assert (kind, org) == ("feishuhire", "shengshu")
+
+    def test_row_mapping_multicity_us_keep(self, monkeypatch):
+        # MiniMax dialect: 'Beijing/Shanghai/San Francisco' — the US
+        # opening inside a CN-hybrid role IS the target (netflix-class)
+        hy = self._post("111", "大模型算法负责人",
+                        ["Beijing", "Shanghai", "San Francisco"])
+        cn = self._post("222", "云原生架构师", ["Beijing", "Shanghai"])
+        spec = self._board(monkeypatch, [hy, cn])
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert set(rows) == {"111"}
+        r = rows["111"]
+        assert r["timeType"] == "Full time"          # _TT-normalized
+        assert r["locationsText"] == "Beijing | Shanghai | San Francisco"
+        assert r["countries"] == ["United States"]   # ANY-city rule
+        assert r["company"] == "MiniMax"              # portal registry
+        assert r["ats"] == "feishuhire"
+        assert r["postedOn"].startswith("Posted ")
+        assert r["firstPublishedIso"].startswith("2026-09")
+        assert r["externalPath"].endswith("/111")     # id key contract
+        assert r["url"].endswith("/index/position/111/detail")
+        assert meta["complete"] is True
+        assert meta["client_filtered"] == 1           # the CN row dropped
+        assert meta["unresolved_dropped"] == 0
+
+    def test_unknown_city_unresolved_never_false_gone(self, monkeypatch):
+        # unmapped city → row dropped LOUDLY + complete=False (a US row
+        # may hide behind an unmapped name — B1 contract)
+        uk = self._post("333", "Mystery", ["Pleasantville"])
+        spec = self._board(monkeypatch, [uk])
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert rows == {}
+        assert meta["unresolved_dropped"] == 1
+        assert meta["complete"] is False
+
+    def test_time_type_filter(self, monkeypatch):
+        intern = self._post("444", "AI芯片设计实习生", ["San Francisco"],
+                            tt="Internship")
+        spec = self._board(monkeypatch, [intern])
+        rows, _ = site_boards.list_board(spec, country="United States",
+                                         time_type="Full time")
+        assert rows == {}
+
+    def test_consultant_passes_unmapped_tt(self, monkeypatch):
+        # 'Consultant' is not in _TT — passes through verbatim (honest)
+        cons = self._post("555", "10x Team Fellowship", ["San Francisco"],
+                          tt="Consultant")
+        spec = self._board(monkeypatch, [cons])
+        rows, _ = site_boards.list_board(spec, country="United States")
+        assert rows["555"]["timeType"] == "Consultant"
+
+    def test_detail_fetch_joins_description_requirement(self, monkeypatch):
+        post = self._post("7687134817943472447",
+                          "Research Lead, Large Language Models",
+                          ["San Francisco"])
+        details = {"7687134817943472447": {
+            "title": "Research Lead, Large Language Models",
+            "description": "About the Role...",
+            "requirement": "Requirements...",
+            "city_list": [{"en_name": "San Francisco"}],
+        }}
+        spec = self._board(monkeypatch, [post], details)
+        det = site_boards.detail_payload(spec, "/index/position/7687134817943472447")
+        info = det["jobPostingInfo"]
+        assert info["title"] == "Research Lead, Large Language Models"
+        assert info["location"] == "San Francisco"
+        assert "About the Role" in info["jobDescription"]
+        assert "Requirements" in info["jobDescription"]   # joined
+        assert info["country"]["descriptor"] == "United States"
+        assert info["jobReqId"] == "7687134817943472447"
+        assert info["externalUrl"].endswith(
+            "/index/position/7687134817943472447/detail")
+        assert det["hiringOrganization"]["name"] == "MiniMax"
+
+    def test_detail_survives_fetch_error(self, monkeypatch):
+        # detail-fetch failure ≠ data loss (B1): list row still serves
+        post = self._post("999", "X", ["San Francisco"])
+        spec = self._board(monkeypatch, [post], details={})
+        det = site_boards.detail_payload(spec, "/999")
+        assert det is not None
+        assert det["jobPostingInfo"]["title"] == "X"
+        assert det["jobPostingInfo"]["jobDescription"] == ""
+
+    def test_body_offset_pagination_shape(self, monkeypatch):
+        # the S17 discovery: offset works ONLY in the body — pin the
+        # request shape the adapter must keep sending
+        from jobsearch.sources.site_boards import FeishuHireAdapter
+        sent = []
+
+        def fake_post(self, path, body, token=True):
+            sent.append(body)
+            n = len(sent)
+            page = [TestFeishuHireAdapter._post(str(1000 + i), "J%d" % i,
+                                                ["Beijing"])
+                    for i in range(10)]
+            if n == 1:
+                return {"data": {"job_post_list": page, "count": 12}}
+            # page 2: offset 10 → the LAST 2 (proves body-offset honored)
+            return {"data": {"job_post_list": page[:2], "count": 12}}
+
+        monkeypatch.setattr(FeishuHireAdapter, "_post_json", fake_post)
+        monkeypatch.setattr(FeishuHireAdapter, "_token_refresh",
+                            lambda self: "tok")
+        monkeypatch.setattr(site_boards, "_CACHE", {})
+        adapter = FeishuHireAdapter("vrfi1sk8a0", None)
+        posts = adapter._fetch_rows()
+        assert len(posts) == 12
+        assert sent[0] == {"offset": 0, "limit": 10}
+        assert sent[1] == {"offset": 10, "limit": 10}
