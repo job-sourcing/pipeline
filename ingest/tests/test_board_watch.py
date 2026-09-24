@@ -1971,6 +1971,36 @@ class TestShippedWatchConfig:
         assert "custom:bytedance" in boards
         assert "custom:alibaba" in boards
         assert "custom:tripcom" in boards
+        # the S15 greenhouse dialect boards (live-verified 2026-09-24)
+        assert "ats:greenhouse:baidu" in boards
+        assert "ats:greenhouse:byd" in boards
+        assert "ats:greenhouse:neteasegames" in boards
+        assert "ats:greenhouse:shein" in boards
+
+    def test_roster_is_exactly_thirteen(self):
+        """S15 (review #7f): the EXACT roster count — a watch added or
+        lost by a hand-edit fails HERE, not silently on the runner."""
+        cfg = json.loads(
+            (REPO_ROOT / "ingest/data/board_watch/config.json")
+            .read_text(encoding="utf-8"))
+        assert len(cfg["watches"]) == 13
+
+    def test_she_in_time_type_gating(self):
+        """time_type on a site-spec watch row is a CLAIM that the board
+        serves a structured employment-type field. S15: only shein's
+        greenhouse metadata does (Employment Type); the other three
+        greenhouse dialect boards + anthropic must NOT carry the key
+        (an empty/unbacked value would be a lie, the S13 rule)."""
+        cfg = json.loads(
+            (REPO_ROOT / "ingest/data/board_watch/config.json")
+            .read_text(encoding="utf-8"))
+        by_board = {w["board"]: w for w in cfg["watches"]}
+        assert by_board["ats:greenhouse:shein"].get("time_type") == \
+            "Full time"
+        for board in ("ats:greenhouse:baidu", "ats:greenhouse:byd",
+                      "ats:greenhouse:neteasegames",
+                      "ats:greenhouse:anthropic"):
+            assert "time_type" not in by_board[board], board
 
     def test_run_watch_registers_overrides(self, tmp_path, monkeypatch):
         """li_variants/slice_locations from the watch dict reach the

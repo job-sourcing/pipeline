@@ -114,14 +114,25 @@ def list_board(spec: str, *, country: Optional[str] = None,
 
 
 def detail_payload(spec: str, external_path: str,
-                   cfg: Optional[Config] = None) -> Optional[dict]:
+                   cfg: Optional[Config] = None,
+                   country: Optional[str] = None,
+                   time_type: Optional[str] = None) -> Optional[dict]:
     """workday.detail_payload's contract for ANY board spec: the raw
     payload for one posting, identified by its externalPath (adapters
-    accept either the path form '/jobs/{id}' or the bare reqId)."""
+    accept either the path form '/jobs/{id}' or the bare reqId).
+
+    S15 seam threading (design §6): `country`/`time_type` are OPTIONAL
+    and only the greenhouse adapter consults them — its list-time
+    ladder verdict must also produce the detail payload's country
+    descriptor so the two agree by construction. Adapters whose
+    payloads carry authoritative structured fields (ashby
+    addressCountry, custom boards' server-side filters) ignore the
+    params: their detail payloads are already the source of truth."""
     if is_site_spec(spec):
         kind, org = parse_site(spec)
         adapter = _ADAPTERS[kind](org, cfg or Config())
-        return adapter.detail_payload(external_path)
+        return adapter.detail_payload(external_path, country=country,
+                                      time_type=time_type)
     return workday.detail_payload(workday.parse_board(spec), external_path,
                                   cfg or Config())
 
@@ -176,23 +187,54 @@ def _dedup_keep_order(items: list[str]) -> list[str]:
 
 # ── greenhouse ───────────────────────────────────────────────────────────
 
+# S15: hoisted module-level (was an AshbyAdapter class attr) so the
+# greenhouse metadata timeType extractor shares ONE table — no drift
+# between the two dialect normalizers.
+_TT = {"fulltime": "Full time", "full-time": "Full time",
+       "parttime": "Part time", "part-time": "Part time",
+       "contract": "Contract", "internship": "Internship",
+       "temporary": "Temporary"}
+
+
 class GreenhouseAdapter:
     """boards-api.greenhouse.io/v1/boards/{org}/jobs?content=true —
     the whole board (descriptions included) in one public call.
 
     Field map (live-pinned 2026-09-19 on anthropic, 609 jobs):
-      reqId            requisition_id (falls back to the numeric id)
+      reqId            requisition_id (falls back to the numeric id —
+                       baidu serves NO requisition_id at all, the ashby
+                       GUID precedent)
       url              absolute_url (job-boards.greenhouse.io/…)
       locationsText    location.name ("San Francisco, CA | Seattle, WA")
       postedOn         label from first_published (EXACT, never censored)
-      country          ANY office's location last-segment (authoritative
-                       at list time — office strings end with the full
-                       country name, e.g. '…, California, United States')
       departments      departments[].name → jobFamilyGroup tags
-      timeType         NOT served by this API — blank (honest; no
-                       guessing from titles), noted in the report
       questions        NOT in the public payload — the questionnaires
                        phase skips for adapters (questionnaireId blank)
+
+    Country classification — S15 dialect ladder (`_job_in_country`,
+    design docs/s15_greenhouse_dialects_design.md §4). The 2026-09-19
+    office-last-segment classifier was pinned on anthropic and breaks
+    on three of the four S15 boards (baidu default-office, byd
+    malformed CA-zip offices, neteasegames empty offices + semicolon
+    country tokens in location.name). The ladder, first hit wins:
+      1. explicit target-country phrase in a location.name SEGMENT
+         (per-segment country_str_matches; 'United States-Remote'
+         matches — phrase tokens hyphen-split inside the segment)
+      2. office-location segments — ONLY when the board's offices
+         DISCRIMINATE (per-job office-id SETS vary; a board-wide
+         single signature = company-HQ default office, DISQUALIFIED
+         from every rung — baidu's id-1570-on-every-job-including-
+         the-Toronto-rows). Null-E2 fallback: office channel
+         disqualified AND location.name empty → offices still consulted
+      3. US state-token fallback (United States only): any whitespace
+         token of a location.name segment (+ office segments when
+         discriminating) that is a US state abbreviation/name
+         ('CA 95337' → 'CA'; 'Sunnyvale,CA'; 'Los Angels, CA')
+      4. no hit → not in country (client_filtered count, loud)
+    timeType: greenhouse serves no top-level field — honest blank —
+    EXCEPT metadata[{name: 'Employment Type'}] when the board carries
+    it (shein: Full-time/Part-time → _TT-normalized 'Full time'), per
+    row, pass-through when the value is unmapped.
     """
 
     KIND = "greenhouse"
@@ -211,8 +253,22 @@ class GreenhouseAdapter:
         return _fetch_cached(self._url, f"ats:greenhouse:{self.org}",
                              self.cfg)
 
-    def _office_countries(self, job: dict) -> list[str]:
-        """Authoritative countries from office locations (last segment)."""
+    # ── S15 dialect ladder helpers ────────────────────────────────
+
+    @staticmethod
+    def _segments(text: Optional[str]) -> list[str]:
+        """Location dialect string → non-empty segments. Splits on
+        ';', '|' and ',' — covers anthropic's ';'-lists, the '|'
+        groupings, neteasegames's 'Canada-Remote; …; United
+        States-Remote', and comma'd office addresses."""
+        if not isinstance(text, str) or not text.strip():
+            return []
+        return [s.strip() for s in re.split(r"[;|,]", text) if s.strip()]
+
+    @staticmethod
+    def _office_countries(job: dict) -> list[str]:
+        """Pre-S15 helper, KEPT for the unthreaded detail path: office
+        location last-segments (the 2026-09-19 classifier)."""
         out: list[str] = []
         for office in job.get("offices") or []:
             loc = (office or {}).get("location") or ""
@@ -223,32 +279,109 @@ class GreenhouseAdapter:
                 out.append(seg)
         return _dedup_keep_order(out)
 
+    @staticmethod
+    def _offices_discriminate(jobs: list[dict]) -> bool:
+        """Board-level: do offices vary per job? Each job's office-id
+        SET is its signature; the channel discriminates iff more than
+        one distinct NON-EMPTY signature exists. baidu: every
+        office-bearing job is {1570} → one signature → default office
+        (recruiter sloppiness — it stamps the Sunnyvale HQ on the
+        Toronto rows too) → disqualified. anthropic (21 ids, varying
+        sets) / byd (5) / shein (3) / neteasegames (15): vary."""
+        signatures = set()
+        for job in jobs:
+            ids = frozenset(
+                str((o or {}).get("id")) for o in (job.get("offices")
+                                                   or [])
+                if (o or {}).get("id") is not None)
+            if ids:
+                signatures.add(ids)
+        return len(signatures) > 1
+
+    def _job_in_country(self, job: dict, country: Optional[str],
+                        offices_discriminate: bool) -> bool:
+        """The ladder (§4 of the S15 design). country=None → True
+        (no filter requested — caller never drops)."""
+        if not country:
+            return True
+        loc_name = (job.get("location") or {}).get("name") or ""
+        e2 = self._segments(loc_name)
+        # rung 1 — explicit target-country phrase in an E2 segment
+        for seg in e2:
+            if workday.country_str_matches(seg, country):
+                return True
+        # rung 2 — office evidence, only when the channel discriminates
+        e1: list[str] = []
+        for office in job.get("offices") or []:
+            e1.extend(self._segments((office or {}).get("location")))
+        if offices_discriminate:
+            for seg in e1:
+                if workday.country_str_matches(seg, country):
+                    return True
+        # null-E2 fallback: disqualified offices AND empty free-text —
+        # consulting the (uniform) office channel beats dropping every
+        # row of a board that serves zero location free-text.
+        if not offices_discriminate and not e2 and e1:
+            for seg in e1:
+                if workday.country_str_matches(seg, country):
+                    return True
+        # rung 3 — US state-token fallback (United States only):
+        # E2 always; E1 ONLY when the channel discriminates (a
+        # disqualified default office must contribute no state token —
+        # baidu's Sunnyvale office would otherwise rescue the Toronto
+        # rows via its 'CA' token). Tokens are whitespace-split
+        # INSIDE segments ('CA 95337' → 'CA').
+        if (country or "").strip().lower() in workday._US_COUNTRY_NAMES:
+            segs = (e2 + e1) if offices_discriminate else e2
+            for seg in segs:
+                for tok in seg.split():
+                    if tok.strip(",()").lower() in workday._US_STATE_TOKENS:
+                        return True
+        return False
+
+    @staticmethod
+    def _time_type_from_metadata(job: dict) -> str:
+        """metadata[{name: 'Employment Type', value}] → _TT-normalized
+        ('Full-time' → 'Full time'). '' when absent; unmapped values
+        pass through as-served (the ashby precedent — honest)."""
+        for m in (job.get("metadata") or []):
+            if isinstance(m, dict) and m.get("name") == "Employment Type":
+                v = str(m.get("value") or "").strip()
+                if not v:
+                    return ""
+                return _TT.get(v.lower(), v)
+        return ""
+
     def list_board(self, *, country: Optional[str] = None,
                    time_type: Optional[str] = None,
                    progress_label: str = "list"
                    ) -> tuple[dict[str, dict], dict]:
         jobs = self._jobs()
-        if time_type:
+        serves_tt = any(self._time_type_from_metadata(j) for j in jobs)
+        if time_type and not serves_tt:
             print(f"[{progress_label}] NOTE: greenhouse serves no "
                   f"employment-type field — time filter {time_type!r} "
                   f"NOT applied (honest: no guessing)",
                   file=sys.stderr, flush=True)
+        offices_discriminate = self._offices_discriminate(jobs)
         rows: dict[str, dict] = {}
-        dropped_country = 0
+        dropped_country = dropped_tt = 0
         for job in jobs:
             rid = str(job.get("requisition_id") or job.get("id") or "")
             if not rid:
                 continue
             if rid in rows:
                 continue                      # requisition_id duplicates
+            tt = self._time_type_from_metadata(job)
+            if time_type and serves_tt and tt \
+                    and tt.lower() != time_type.lower():
+                dropped_tt += 1
+                continue
+            if country and not self._job_in_country(
+                    job, country, offices_discriminate):
+                dropped_country += 1
+                continue
             label, iso = _posted_label(job.get("first_published"))
-            offices = job.get("offices") or []
-            countries = self._office_countries(job)
-            if country:
-                if not any(workday.country_str_matches(c, country)
-                           for c in countries):
-                    dropped_country += 1
-                    continue
             row = {
                 "reqId": rid,
                 "title": job.get("title") or "",
@@ -258,14 +391,14 @@ class GreenhouseAdapter:
                 "locationsText": (job.get("location") or {}).get("name")
                                  or "",
                 "postedOn": label,
-                "timeType": "",
+                "timeType": tt,
                 "bulletFields": [rid],
                 "ats": "greenhouse",
                 "firstPublishedIso": iso,
                 "departments": _dedup_keep_order(
                     [str(d.get("name") or "") for d in
                      job.get("departments") or []]),
-                "countries": countries,
+                "countries": [country] if country else [],
                 "applicationDeadline": job.get("application_deadline")
                                         or "",
             }
@@ -273,22 +406,47 @@ class GreenhouseAdapter:
         meta = {
             "complete": True, "total": len(jobs), "pages": 1,
             "country_client": False,   # classified at list time
-            "client_filtered": dropped_country,
+            "client_filtered": dropped_country + dropped_tt,
+            "client_filtered_country": dropped_country,
+            "client_filtered_time": dropped_tt,
+            "offices_discriminate": offices_discriminate,
             "ats": "greenhouse",
         }
+        drop_note = ""
+        if country or time_type:
+            parts = []
+            if country:
+                parts.append(f"{dropped_country} non-{country}")
+            if time_type:
+                parts.append(f"{dropped_tt} non-{time_type}")
+            drop_note = f" ({' + '.join(parts)} dropped client-side)"
         print(f"[{progress_label}] greenhouse:{self.org}: {len(rows)} rows"
-              + (f" ({dropped_country} non-{country} dropped client-side "
-                 f"from office countries)" if country else ""),
-              file=sys.stderr, flush=True)
+              + drop_note, file=sys.stderr, flush=True)
         return rows, meta
 
-    def detail_payload(self, external_path: str) -> Optional[dict]:
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
         key = str(external_path or "").rsplit("/", 1)[-1].strip()
         for job in self._jobs():
             jid = str(job.get("id"))
             if jid == key or str(job.get("requisition_id")) == key:
                 offices = job.get("offices") or []
-                countries = self._office_countries(job)
+                # S15 seam threading: when the caller threads the
+                # country (dump details phase / watch enrich), the
+                # SAME ladder verdict that admitted the list row
+                # produces the detail's country descriptor — list and
+                # detail agree by construction. Unthreaded (None):
+                # the pre-S15 office-derived descriptor (back-compat
+                # with the existing pin).
+                if country:
+                    verdict = self._job_in_country(
+                        job, country, self._offices_discriminate(
+                            self._jobs()))
+                    countries = [country] if verdict else []
+                else:
+                    countries = self._office_countries(job)
                 label, iso = _posted_label(job.get("first_published"))
                 return {
                     "jobPostingInfo": {
@@ -299,7 +457,7 @@ class GreenhouseAdapter:
                             [(o or {}).get("name") or ""
                              for o in offices[1:]]),
                         "jobDescription": job.get("content") or "",
-                        "timeType": "",
+                        "timeType": self._time_type_from_metadata(job),
                         "startDate": "",
                         "externalUrl": job.get("absolute_url") or "",
                         "jobReqId": str(job.get("requisition_id")
@@ -339,10 +497,9 @@ class AshbyAdapter:
 
     KIND = "ashby"
 
-    _TT = {"fulltime": "Full time", "full-time": "Full time",
-           "parttime": "Part time", "part-time": "Part time",
-           "contract": "Contract", "internship": "Internship",
-           "temporary": "Temporary"}
+    # S15: _TT hoisted module-level (shared with the greenhouse
+    # metadata extractor) — this class attribute removed to prevent
+    # drift between the two normalizers.
 
     def __init__(self, org: str, cfg: Config):
         self.org = org
@@ -363,7 +520,7 @@ class AshbyAdapter:
 
     def _time_type(self, job: dict) -> str:
         tt = str(job.get("employmentType") or "").strip().lower()
-        return self._TT.get(tt, job.get("employmentType") or "")
+        return _TT.get(tt, job.get("employmentType") or "")
 
     def list_board(self, *, country: Optional[str] = None,
                    time_type: Optional[str] = None,
@@ -423,7 +580,10 @@ class AshbyAdapter:
               file=sys.stderr, flush=True)
         return rows, meta
 
-    def detail_payload(self, external_path: str) -> Optional[dict]:
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
         key = str(external_path or "").strip("/").rsplit("/", 1)[-1]
         for job in self._jobs():
             if str(job.get("id")) == key:
@@ -684,7 +844,10 @@ class ByteDanceAdapter:
               file=sys.stderr, flush=True)
         return rows, meta
 
-    def detail_payload(self, external_path: str) -> Optional[dict]:
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
         key = str(external_path or "").strip("/").rsplit("/", 1)[-1]
         for post in self._fetch_pages():
             if key in (str(post.get("code") or ""),
@@ -972,7 +1135,10 @@ class AlibabaAdapter:
               file=sys.stderr, flush=True)
         return rows, meta
 
-    def detail_payload(self, external_path: str) -> Optional[dict]:
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
         key = str(external_path or "").strip("/").rsplit("/", 1)[-1]
         for row in self._sweep():
             if key in (str(row.get("code") or ""), str(row.get("id") or "")):
@@ -1170,7 +1336,10 @@ class TripComAdapter:
               file=sys.stderr, flush=True)
         return rows, meta
 
-    def detail_payload(self, external_path: str) -> Optional[dict]:
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
         key = str(external_path or "").strip("/").rsplit("/", 1)[-1]
         for job in self._fetch_us(self._iso3_for(None) or "USA"):
             if key in (str(job.get("fromId") or ""), str(job.get("id") or "")):

@@ -163,6 +163,72 @@
     "Chicago, Illinois, United States",
     "San Francisco, California, United States"
    ]
+  },
+  {
+   "label": "baidu_us_fulltime",
+   "board": "ats:greenhouse:baidu",
+   "company": "Baidu",
+   "country": "United States",
+   "li_variants": [
+    "Baidu",
+    "Baidu USA",
+    "Baidu, Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "Sunnyvale, California, United States",
+    "Mountain View, California, United States",
+    "Los Angeles, California, United States"
+   ]
+  },
+  {
+   "label": "byd_us_fulltime",
+   "board": "ats:greenhouse:byd",
+   "company": "BYD",
+   "country": "United States",
+   "li_variants": [
+    "BYD",
+    "BYD North America",
+    "BYD Electronic America Corp."
+   ],
+   "slice_locations": [
+    "United States",
+    "Pasadena, California, United States",
+    "Lancaster, California, United States",
+    "Cupertino, California, United States",
+    "Manteca, California, United States",
+    "Las Vegas, Nevada, United States"
+   ]
+  },
+  {
+   "label": "neteasegames_us_fulltime",
+   "board": "ats:greenhouse:neteasegames",
+   "company": "NetEase Games",
+   "country": "United States",
+   "li_variants": [
+    "NetEase",
+    "NetEase Games"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States"
+   ]
+  },
+  {
+   "label": "shein_us_fulltime",
+   "board": "ats:greenhouse:shein",
+   "company": "SHEIN",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "SHEIN",
+    "SHEIN U.S."
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "San Diego, California, United States"
+   ]
   }
  ]
 }

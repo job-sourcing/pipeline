@@ -213,7 +213,9 @@ def _locations_of(info: dict, row: dict) -> list[str]:
 
 def enrich_new(new_rows: list[dict], board_spec: str, company: str,
                cfg: Config, deadline: float,
-               prior_feed: Optional[dict] = None) -> list[dict]:
+               prior_feed: Optional[dict] = None,
+               country: Optional[str] = None,
+               time_type: Optional[str] = None) -> list[dict]:
     """Bounded detail + corroboration pass over the new postings.
 
     Returns enriched records for {label}.newposts.jsonl (v2 field quality:
@@ -223,6 +225,9 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
     board_spec-driven dispatch (S13): ats: specs serve from the
     adapter's cached single board fetch (zero extra network); workday
     specs hit the CXS detail endpoint per row, unchanged.
+    S15 seam threading: country/time_type reach the adapter so the
+    greenhouse ladder verdict produces the detail's country field
+    (list/detail agree by construction); other adapters ignore them.
     """
     is_site = site_boards.is_site_spec(board_spec)
     if not is_site:
@@ -248,7 +253,8 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
         if is_site:
             payload = site_boards.detail_payload(board_spec,
                                                  r.get("externalPath", ""),
-                                                 cfg)
+                                                 cfg, country=country,
+                                                 time_type=time_type)
         else:
             payload = workday.detail_payload(
                 board, r.get("externalPath", ""), cfg)
@@ -1100,7 +1106,9 @@ def run_watch(w: dict, cfg: Config) -> str:
         if rid not in prior_feed and p.get("first_seen"):
             prior_feed[rid] = {"first_seen": p["first_seen"]}
     enriched = enrich_new(enrich_input, w["board"], w["company"], cfg,
-                          deadline, prior_feed=prior_feed)
+                          deadline, prior_feed=prior_feed,
+                          country=w.get("country"),
+                          time_type=w.get("time_type"))
     if country_client:
         # S13: classify the candidates by their detail country — the
         # authoritative signal (jobPostingInfo.country on the payload

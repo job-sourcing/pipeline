@@ -490,6 +490,17 @@ def phase_list(args, out: Path) -> int:
               f"{meta.get('partition_facet')} partitions", flush=True)
     status = {"rows": len(rows), "total": meta.get("total"),
               "complete": complete, "pages": meta.get("pages")}
+    # S15: the adapter-classified boards' client-side drop counts —
+    # the auditable foreign trail for greenhouse dialect boards (the
+    # client-filtered rows are dropped at list time; the counts are
+    # the durable record, matching the census arithmetic).
+    if meta.get("client_filtered"):
+        status["client_filtered"] = meta.get("client_filtered")
+        status["client_filtered_country"] = meta.get(
+            "client_filtered_country")
+        status["client_filtered_time"] = meta.get("client_filtered_time")
+    if "offices_discriminate" in meta:
+        status["offices_discriminate"] = meta.get("offices_discriminate")
     if meta.get("country_client"):
         # S13: the listing is the FULL global board — rows are NOT yet
         # country-classified. --phase countryfilter (after details)
@@ -574,8 +585,14 @@ def phase_details(args, out: Path) -> int:
             # S13 dispatch: ats: specs → the site adapter (served from
             # the cached single board fetch — zero extra network);
             # workday specs → the CXS detail endpoint, unchanged.
+            # S15 seam threading: country/time_type reach the adapter
+            # so the greenhouse ladder verdict produces the detail's
+            # country descriptor (list/detail agree by construction);
+            # other adapters ignore them (structured payloads).
             payload = site_boards.detail_payload(
-                args.board, r["externalPath"], cfg)
+                args.board, r["externalPath"], cfg,
+                country=getattr(args, "country", None) or None,
+                time_type=getattr(args, "time_type", None) or None)
             rec: dict = {"reqId": r["reqId"],
                          "fetched_at": datetime.now(timezone.utc
                                                     ).isoformat(

@@ -1,0 +1,10 @@
+rows: 22 (unique reqIds: 22)
+details merged: 22
+descriptions present: 22
+locations enumerated (not 'N Locations'): 22
+startDate present: 0
+signals: matched=6 no_match=16 blocked=0 not_checked=0
+location entries total (sum nLocations): 22
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=22 (from facet_tags.jsonl)
+facet tag coverage: 22/22 rows (0 untagged)

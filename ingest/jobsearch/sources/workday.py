@@ -191,6 +191,31 @@ _US_COUNTRY_NAMES = frozenset((
     "u.s.", "u.s.a", "u.s.a.", "america",
 ))
 
+# S15 greenhouse dialect ladder — rung-3 state tokens. US state
+# abbreviations + full state names (lowercased), the last-resort US
+# evidence for office/location strings that carry no country phrase
+# (byd '…, CA 95337' offices, baidu 'Los Angels, CA' locations).
+# Deliberately NOT including Canadian provinces (ON/BC/QC are not US
+# state abbrevs) and NOT city names — that is the guessing line.
+_US_STATE_TOKENS = frozenset(
+    ["al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl", "ga",
+     "hi", "id", "il", "in", "ia", "ks", "ky", "la", "me", "md",
+     "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nh", "nj",
+     "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sc",
+     "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy",
+     "dc", "district of columbia",
+     "alabama", "alaska", "arizona", "arkansas", "california",
+     "colorado", "connecticut", "delaware", "florida", "georgia",
+     "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas",
+     "kentucky", "louisiana", "maine", "maryland", "massachusetts",
+     "michigan", "minnesota", "mississippi", "missouri", "montana",
+     "nebraska", "nevada", "new hampshire", "new jersey",
+     "new mexico", "new york", "north carolina", "north dakota",
+     "ohio", "oklahoma", "oregon", "pennsylvania", "rhode island",
+     "south carolina", "south dakota", "tennessee", "texas", "utah",
+     "vermont", "virginia", "washington", "west virginia",
+     "wisconsin", "wyoming"])
+
 
 def detail_country(payload: Optional[dict]) -> str:
     """Normalized country descriptor from a detail payload ('' when

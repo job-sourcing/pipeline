@@ -7,6 +7,7 @@ monkeypatched (fetch_json) — these pins hold the MAPPING, the country
 classification, the label computation, and the dispatch routing."""
 import json
 import sys
+import time
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -168,6 +169,355 @@ class TestGreenhouseAdapter:
             self._board(monkeypatch, [job]), cfg=Config(),
             progress_label="t")
         assert set(rows) == {"42"}
+
+
+# ── S15: the four Greenhouse dialect boards ──────────────────────────────
+
+def _gh_dialect_job(jid, req_id, title, location_name, offices,
+                    metadata=None, published=None):
+    """Dialect fixture: location.name INDEPENDENT of office names (the
+    baidu/byd/neteasegames/shein shapes — _gh_job derives location.name
+    from office names, the anthropic shape only)."""
+    return {
+        "id": jid, "title": title, "requisition_id": req_id,
+        "absolute_url": f"https://job-boards.greenhouse.io/x/jobs/{jid}",
+        "location": {"name": location_name},
+        "offices": offices,
+        "departments": [{"id": 1, "name": "Engineering"}],
+        "content": "<p>desc</p>", "first_published": published,
+        "company_name": "Acme Corp", "metadata": metadata,
+    }
+
+
+# baidu's board-wide default office (id 1570 'Sunnyvale, CA, United
+# States' stamped on every job — including the Toronto rows)
+_BAIDU_DEFAULT_OFFICE = [{"id": 1570, "name": "Sunnyvale, CA",
+                          "location": "Sunnyvale, CA, United States",
+                          "child_ids": [], "parent_id": None}]
+
+
+class TestGreenhouseDialectLadder:
+    """S15 pins — the evidence ladder (design §4) on the four dialect
+    boards. Mechanics pinned here; real-payload verdicts pinned in
+    TestGreenhouseCensusReplay below."""
+
+    def _board(self, monkeypatch, jobs):
+        _patch_fetch(monkeypatch, jobs)
+        return "ats:greenhouse:acme"
+
+    def test_baidu_default_office_disqualified(self, monkeypatch):
+        """The baidu shape: one office id board-wide (recruiter default)
+        → DISQUALIFIED — it must not rescue the Toronto rows via its
+        'CA'/'United States' tokens. E2 governs: Sunnyvale/LA kept via
+        state tokens, Toronto dropped."""
+        sv = _gh_dialect_job(1, "B1", "Engineer", "Sunnyvale, CA",
+                             _BAIDU_DEFAULT_OFFICE)
+        toronto = _gh_dialect_job(
+            2, None, "Client Manager - Canada", "Toronto, ON",
+            _BAIDU_DEFAULT_OFFICE)          # office LIES (default)
+        toronto2 = _gh_dialect_job(
+            3, None, "BD - Canada", "Toronto, Ontario, Canada",
+            _BAIDU_DEFAULT_OFFICE)
+        la = _gh_dialect_job(4, None, "AE", "Los Angels, CA",
+                             [])            # baidu's 2 office-less jobs
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, [sv, toronto, toronto2, la]),
+            country="United States", cfg=Config(), progress_label="t")
+        assert set(rows) == {"B1", "4"}       # Toronto dropped; numeric-id
+        # fallback covers the office-less LA row (req_id None → '4')
+        assert rows["B1"]["countries"] == ["United States"]
+        assert meta["offices_discriminate"] is False
+        assert meta["client_filtered"] == 2
+        assert meta["client_filtered_country"] == 2
+
+    def test_neteasegames_semicolon_tokens(self, monkeypatch):
+        """neteasegames: offices carry ids but no useful locations; the
+        geography is location.name's semicolon country tokens. Rung 1
+        rescues the US-remote rows; city-only mixed rows drop (rung 4).
+        """
+        us_multi = _gh_dialect_job(
+            1, "984", "Animator",
+            "Canada-Remote; Spain-Remote; United Kingdom - Guildford "
+            "Onsite; United States-Remote",
+            [{"id": 20, "name": "Global", "location": ""},
+             {"id": 21, "name": "Guildford", "location": ""}])
+        mixed_na = _gh_dialect_job(
+            2, "920", "PM",
+            "Bothell - Onsite; Irvine - Onsite; Mountain View-Onsite; "
+            "Vancouver-Onsite",
+            [{"id": 20, "name": "Global", "location": ""},
+             {"id": 22, "name": "Vancouver", "location": "Vancouver-Onsite"}])
+        sg = _gh_dialect_job(3, "1013", "Producer", "Singapore-Guoco Midtown",
+                             [{"id": 20, "name": "Global", "location": ""}])
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, [us_multi, mixed_na, sg]),
+            country="United States", cfg=Config(), progress_label="t")
+        assert set(rows) == {"984"}          # rung 1: 'United States-Remote'
+        assert rows["984"]["locationsText"].startswith("Canada-Remote")
+        assert meta["client_filtered_country"] == 2
+
+    def test_byd_malformed_offices_state_tokens(self, monkeypatch):
+        """byd: office last-segments are 'CA 95337'-shaped (not country
+        strings) but offices vary per job (discriminating); rung 3
+        token-scans e1+e2 and finds the CA state token."""
+        manteca = _gh_dialect_job(
+            1, "68", "BD Manager", "Manteca, CA",
+            [{"id": 30, "name": "Manteca",
+              "location": "1192 Vanderbilt Cir #100, Manteca, CA 95337"}])
+        lancaster = _gh_dialect_job(
+            2, "149", "Engineer",
+            "Lancaster, CA (Office Only - Worksite in Dickinson)",
+            [{"id": 31, "name": "Lancaster",
+              "location": "170 BYD Energy Road, Lancaster, CA 93535"}])
+        cupertino_bare = _gh_dialect_job(
+            3, "163", "PM", "Cupertino",
+            [{"id": 32, "name": "Cupertino",
+              "location": "Cupertino, California, United States"}])
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, [manteca, lancaster, cupertino_bare]),
+            country="United States", cfg=Config(), progress_label="t")
+        assert set(rows) == {"68", "149", "163"}
+        assert meta["offices_discriminate"] is True
+
+    def test_she_in_metadata_time_type(self, monkeypatch):
+        """shein: Employment Type metadata → _TT-normalized timeType;
+        the Part-time row drops under a Full-time filter (structured
+        field, not title-guessing); unmapped values pass through."""
+        ft = _gh_dialect_job(
+            1, "GRQ1", "Buyer", "Los Angeles",
+            [{"id": 40, "name": "LA",
+              "location": "Los Angeles, California, United States"}],
+            metadata=[{"id": 1, "name": "Employment Type",
+                       "value": "Full-time", "value_type": "single_select"}])
+        pt = _gh_dialect_job(
+            2, "GRQ2", "Counsel (Part-Time, Contract)", "Los Angeles",
+            [{"id": 40, "name": "LA",
+              "location": "Los Angeles, California, United States"}],
+            metadata=[{"id": 1, "name": "Employment Type",
+                       "value": "Part-time", "value_type": "single_select"}])
+        odd = _gh_dialect_job(
+            3, "GRQ3", "Specialist", "San Diego",
+            [{"id": 41, "name": "SD",
+              "location": "San Diego, California, United States"}],
+            metadata=[{"id": 1, "name": "Employment Type",
+                       "value": "Contract", "value_type": "single_select"}])
+        board = self._board(monkeypatch, [ft, pt, odd])
+        rows, meta = site_boards.list_board(
+            board, country="United States", time_type="Full time",
+            cfg=Config(), progress_label="t")
+        assert set(rows) == {"GRQ1"}         # Part-time filtered, Contract
+        # stays (unmapped pass-through ≠ Full time → also drops under
+        # the filter — honest structured filtering)
+        assert meta["client_filtered_time"] == 2
+        # no filter: all 3 rows, timeType served + pass-through
+        rows2, _ = site_boards.list_board(
+            board, cfg=Config(), progress_label="t")
+        assert set(rows2) == {"GRQ1", "GRQ2", "GRQ3"}
+        assert rows2["GRQ1"]["timeType"] == "Full time"
+        assert rows2["GRQ2"]["timeType"] == "Part time"
+        assert rows2["GRQ3"]["timeType"] == "Contract"
+
+    def test_note_gating_on_metadata(self, monkeypatch, capsys):
+        """time filter requested on a board WITHOUT Employment Type
+        metadata → the honest NOTE; on a metadata-serving board →
+        silent (the filter is real)."""
+        no_meta = _gh_dialect_job(
+            1, "R1", "A", "Sunnyvale, CA", _BAIDU_DEFAULT_OFFICE)
+        site_boards.list_board(
+            self._board(monkeypatch, [no_meta]), time_type="Full time",
+            country="United States", cfg=Config(), progress_label="t")
+        err = capsys.readouterr().err
+        assert "NOT applied" in err and "employment-type" in err
+        with_meta = _gh_dialect_job(
+            2, "R2", "B", "Los Angeles",
+            [{"id": 40, "name": "LA",
+              "location": "Los Angeles, California, United States"}],
+            metadata=[{"id": 1, "name": "Employment Type",
+                       "value": "Full-time", "value_type": "x"}])
+        site_boards.list_board(
+            self._board(monkeypatch, [with_meta]), time_type="Full time",
+            country="United States", cfg=Config(), progress_label="t")
+        err = capsys.readouterr().err
+        assert "NOT applied" not in err
+
+    def test_rung1_segment_not_pooled(self, monkeypatch):
+        """The reviewer's #4 semantics pin: rung 1 matches per-SEGMENT
+        (phrase tokens hyphen-split inside the segment) — the pooled
+        _row_in_country reading would miss '…; United States' after a
+        semicolon and add a whole-string 'us' channel."""
+        multi = _gh_dialect_job(
+            1, "R1", "Multi",
+            "London, UK; Ontario, CAN; Remote-Friendly, United States; "
+            "San Francisco, CA", [])
+        rows, _ = site_boards.list_board(
+            self._board(monkeypatch, [multi]), country="United States",
+            cfg=Config(), progress_label="t")
+        assert set(rows) == {"R1"}
+
+    def test_anthropic_rescue_shape(self, monkeypatch):
+        """The +31 census rescues: job whose ONLY office has a NULL
+        location ('Remote-Friendly US (Travel Required)') — the office
+        channel never sees it; E2 'Remote-Friendly, United States'
+        rescues via rung 1."""
+        rescued = _gh_dialect_job(
+            1, "R1", "Remote Researcher", "Remote-Friendly, United States",
+            [{"id": 50, "name": "Remote-Friendly US (Travel Required)",
+              "location": None}])
+        kept_with_office = _gh_dialect_job(
+            2, "R2", "SF Engineer", "San Francisco, CA",
+            [{"id": 51, "name": "SF",
+              "location": "San Francisco, California, United States"}])
+        rows, _ = site_boards.list_board(
+            self._board(monkeypatch, [rescued, kept_with_office]),
+            country="United States", cfg=Config(), progress_label="t")
+        assert set(rows) == {"R1", "R2"}
+
+    def test_null_e2_fallback(self, monkeypatch):
+        """Disqualified offices + EMPTY location.name → the office
+        channel is still consulted (a board serving zero location
+        free-text must not lose all rows to the demotion heuristic)."""
+        job = _gh_dialect_job(1, "R1", "A", "", _BAIDU_DEFAULT_OFFICE)
+        rows, _ = site_boards.list_board(
+            self._board(monkeypatch, [job]), country="United States",
+            cfg=Config(), progress_label="t")
+        assert set(rows) == {"R1"}
+
+    def test_detail_seam_threaded_and_unthreaded(self, monkeypatch):
+        """S15 seam: threaded detail derives country from the SAME
+        ladder verdict as the list row; unthreaded stays the legacy
+        office-derived descriptor (back-compat with the 09-19 pin)."""
+        toronto = _gh_dialect_job(
+            1, "T1", "Canada Role", "Toronto, ON", _BAIDU_DEFAULT_OFFICE)
+        sv = _gh_dialect_job(2, "S1", "US Role", "Sunnyvale, CA",
+                             _BAIDU_DEFAULT_OFFICE)
+        board = self._board(monkeypatch, [toronto, sv])
+        rows, _ = site_boards.list_board(board, country="United States",
+                                         cfg=Config(), progress_label="t")
+        assert set(rows) == {"S1"}
+        # threaded: the US row's detail agrees with the list verdict
+        p = site_boards.detail_payload(board, "/jobs/2", Config(),
+                                       country="United States")
+        assert p["jobPostingInfo"]["country"] == {
+            "descriptor": "United States"}
+        assert workday.detail_in_country(p, "united states")
+        # threaded: the dropped row's detail honestly says not-US
+        p2 = site_boards.detail_payload(board, "/jobs/1", Config(),
+                                        country="United States")
+        assert p2["jobPostingInfo"]["country"] is None
+        assert not workday.detail_in_country(p2, "united states")
+        # unthreaded: legacy office-derived descriptor (the default
+        # office's last segment) — back-compat
+        p3 = site_boards.detail_payload(board, "/jobs/1", Config())
+        assert p3["jobPostingInfo"]["country"] == {
+            "descriptor": "United States"}
+
+    def test_detail_she_in_time_type(self, monkeypatch):
+        """The CSV timeType column reads the DETAIL payload — the
+        shein metadata must surface there too (review #7b)."""
+        shein = _gh_dialect_job(
+            1, "GRQ1", "Buyer", "Los Angeles",
+            [{"id": 40, "name": "LA",
+              "location": "Los Angeles, California, United States"}],
+            metadata=[{"id": 1, "name": "Employment Type",
+                       "value": "Full-time", "value_type": "x"}])
+        board = self._board(monkeypatch, [shein])
+        p = site_boards.detail_payload(board, "/jobs/1", Config())
+        assert p["jobPostingInfo"]["timeType"] == "Full time"
+
+
+_CENSUS_DIR = (Path(__file__).resolve().parents[1]
+               / "data" / "ats_seed" / "s15_census")
+
+
+class TestGreenhouseCensusReplay:
+    """Census-replay pins (review #7a): the four committed live
+    payloads (2026-09-24, ?content=true) hold their board verdicts —
+    the arithmetic of design §4, pinned so any future ladder change
+    that shifts a real board's numbers fails HERE first."""
+
+    @staticmethod
+    def _board(monkeypatch, org, filename=None):
+        payload = json.loads(
+            (_CENSUS_DIR / (filename or f"gh_{org}.json")).read_text(
+                encoding="utf-8"))
+        monkeypatch.setattr(site_boards, "_CACHE", {
+            f"ats:greenhouse:{org}": (time.monotonic(),
+                                      payload.get("jobs") or [])})
+        return f"ats:greenhouse:{org}"
+
+    def test_baidu(self, monkeypatch):
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, "baidu"), country="United States",
+            cfg=Config(), progress_label="t")
+        assert len(rows) == 25 and meta["total"] == 28
+        assert meta["client_filtered_country"] == 3
+        assert meta["offices_discriminate"] is False
+
+    def test_byd(self, monkeypatch):
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, "byd"), country="United States",
+            cfg=Config(), progress_label="t")
+        assert len(rows) == 22 and meta["total"] == 22
+        assert meta["client_filtered"] == 0
+        assert meta["offices_discriminate"] is True
+
+    def test_neteasegames(self, monkeypatch):
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, "neteasegames"),
+            country="United States", cfg=Config(), progress_label="t")
+        assert len(rows) == 3 and meta["total"] == 31
+        assert meta["client_filtered_country"] == 28
+
+    def test_shein_country_only(self, monkeypatch):
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, "shein"), country="United States",
+            cfg=Config(), progress_label="t")
+        assert len(rows) == 18 and meta["total"] == 18
+        assert meta["client_filtered_country"] == 0
+
+    def test_shein_full_time_filter(self, monkeypatch):
+        rows, meta = site_boards.list_board(
+            self._board(monkeypatch, "shein"), country="United States",
+            time_type="Full time", cfg=Config(), progress_label="t")
+        assert len(rows) == 17
+        assert meta["client_filtered_time"] == 1
+        assert all(r["timeType"] == "Full time" for r in rows.values())
+
+    def test_shein_unmapped_pass_through(self, monkeypatch):
+        """The one Part-time row (Los Angeles Marketing Counsel) — its
+        timeType value passes through honestly (not blanked)."""
+        board = self._board(monkeypatch, "shein")
+        rows, _ = site_boards.list_board(board, cfg=Config(),
+                                         progress_label="t")
+        tts = {r["timeType"] for r in rows.values()}
+        assert "Part time" in tts and "Full time" in tts
+
+    def test_anthropic_no_regressions_plus_rescues(self, monkeypatch):
+        """The adapter-change audit (review #13a): on the 629-job
+        census, the shipped office classifier keeps 469 jobs, the
+        ladder keeps 500 (0 regressions, +31 remote-US rescues); the
+        LIST row count is 468 after the shipped per-requisition dedup
+        (19 duplicate requisition_ids)."""
+        board = self._board(monkeypatch, "anthropic",
+                            "anthropic_full.json")
+        jobs = site_boards._CACHE["ats:greenhouse:anthropic"][1]
+        ad = site_boards.GreenhouseAdapter("anthropic", Config())
+        disc = ad._offices_discriminate(jobs)
+        shipped = sum(
+            1 for j in jobs
+            if any(workday.country_str_matches(
+                ((o or {}).get("location") or "").split(",")[-1].strip(),
+                "united states")
+                for o in (j.get("offices") or [])))
+        ladder_jobs = sum(
+            1 for j in jobs if ad._job_in_country(j, "united states",
+                                                  disc))
+        assert shipped == 469 and ladder_jobs == 500
+        rows, meta = site_boards.list_board(board, country="United States",
+                                            cfg=Config(),
+                                            progress_label="t")
+        assert len(rows) == 468 and meta["total"] == 629
+        assert meta["client_filtered"] == 129
 
 
 class TestAshbyAdapter:
