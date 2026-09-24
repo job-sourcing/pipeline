@@ -8,3 +8,4 @@ location entries total (sum nLocations): 43
 similar-job edges: 0
 facet-tagged rows: workerSubType=0 jobFamilyGroup=20 (from facet_tags.jsonl)
 facet tag coverage: 20/20 rows (0 untagged)
+h1b wage bands: 0 usable filings in the extract (all uncertified/unparseable?)

@@ -2389,19 +2389,19 @@ class XiaohongshuAdapter:
                     "is mapped (taxonomy code 840); refusing to guess a "
                     f"code for {country!r}")
             workplaces = [self._US_WORKPLACE]
-        jobs = self._fetch_pages(workplaces)
-        rows: dict[str, dict] = {}
-        dropped_tt = dupes = 0
+        # round-2 F1 (SEV-2): the API carries NO employment-type field
+        # — a time filter is unanswerable, and silently dropping every
+        # row with complete=True is the mass-false-gone trap the
+        # board_dump --time-type 'Full time' DEFAULT would spring.
+        # Refuse loudly BEFORE the fetch (round-3 nit: no wasted call).
         if time_type:
-            # round-2 F1 (SEV-2): the API carries NO employment-type field
-            # — a time filter is unanswerable, and silently dropping every
-            # row with complete=True is the mass-false-gone trap the
-            # board_dump --time-type 'Full time' DEFAULT would spring.
-            # Refuse loudly (the adapter's own country-refusal doctrine).
             raise RuntimeError(
                 "xiaohongshu: the API serves no employment type — a "
                 f"time_type filter ({time_type!r}) is unanswerable; use "
                 "--time-type '' (the s17 dump-chain driver does)")
+        jobs = self._fetch_pages(workplaces)
+        rows: dict[str, dict] = {}
+        dupes = 0
         for job in jobs:
             rid = str(job.get("positionId") or "")
             if not rid or rid in rows:
