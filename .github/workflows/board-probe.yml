@@ -1,0 +1,56 @@
+name: Board Probe
+
+# S18: the GENERIC board-egress probe — any board spec, dispatched from
+# the GHA runner's US egress (the WAF-blocked-board rescue path: boards
+# that 403/406 from the HK archive egress may serve from GitHub's Azure
+# ranges — the Kwai workday case). workflow_dispatch-only (no cron).
+on:
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: 'Board spec: tenant|instance|site (site "?" = auto-discover) / ats:kind:org / custom:kind'
+        required: true
+        default: 'kwai|wd3|?'
+      country:
+        description: 'Country filter (full name, e.g. United States)'
+        required: false
+        default: 'United States'
+      time_type:
+        description: 'Employment-type filter (empty = none; boards with no field refuse it)'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+      - name: Probe board (US egress)
+        env:
+          SPEC: ${{ github.event.inputs.spec }}
+          COUNTRY: ${{ github.event.inputs.country }}
+          TT: ${{ github.event.inputs.time_type }}
+        run: |
+          echo "egress ip:" && curl -s --max-time 10 https://api.ipify.org && echo
+          if [ -n "$TT" ]; then
+            python3 scripts/board_probe.py --spec "$SPEC" --country "$COUNTRY" --time-type "$TT" | tee probe_result.json
+          else
+            python3 scripts/board_probe.py --spec "$SPEC" --country "$COUNTRY" | tee probe_result.json
+          fi
+      - name: Result summary
+        run: |
+          echo "## Board probe result" >> $GITHUB_STEP_SUMMARY
+          echo '```json' >> $GITHUB_STEP_SUMMARY
+          cat probe_result.json >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
