@@ -3,7 +3,7 @@ details merged: 20
 descriptions present: 20
 locations enumerated (not 'N Locations'): 20
 startDate present: 20
-signals: matched=0 no_match=20 blocked=0 not_checked=0
+signals: matched=2 no_match=18 blocked=0 not_checked=0
 location entries total (sum nLocations): 43
 similar-job edges: 0
 facet-tagged rows: workerSubType=0 jobFamilyGroup=20 (from facet_tags.jsonl)

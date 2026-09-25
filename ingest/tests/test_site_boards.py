@@ -2130,3 +2130,88 @@ class TestPaylocityAdapter:
         newest = max(r["firstPublishedIso"] for r in rows.values()
                      if r["firstPublishedIso"])
         assert newest >= "2026-09-21"
+
+
+class TestPostJsonUrllibRetry:
+    """S18 (watch run #59): one transport retry on connection-class
+    blips; HTTP verdicts and the non-JSON structural guard surface
+    immediately (a verdict is not a blip)."""
+
+    def test_blip_retried_then_ok(self, monkeypatch):
+        import urllib.request as _u
+        calls = []
+
+        def fake_urlopen(req, timeout=30):
+            calls.append(1)
+            if len(calls) == 1:
+                raise OSError("Network is unreachable")  # Errno 101 class
+            return _u.request._urlopen(req, timeout=timeout)
+
+        real_open = _u.urlopen
+
+        class _R:
+            def __init__(self, raw):
+                import io
+                self._f = io.BytesIO(raw)
+
+            def read(self):
+                return self._f.read()
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        def fake_open(req, timeout=30):
+            calls.append(1)
+            if len(calls) == 1:
+                raise OSError("[Errno 101] Network is unreachable")
+            return _R(b'{"success": true}')
+        monkeypatch.setattr(_u, "urlopen", fake_open)
+        d = site_boards._post_json_urllib("https://x.example/api", {})
+        assert d == {"success": True}
+        assert len(calls) == 2
+
+    def test_http_error_not_retried(self, monkeypatch):
+        import urllib.error as _ue
+        import urllib.request as _u
+        calls = []
+
+        class _406(_ue.HTTPError):
+            def __init__(self):
+                super().__init__("https://x.example", 406, "NA", None, None)
+
+        def fake_open(req, timeout=30):
+            calls.append(1)
+            raise _406()
+        monkeypatch.setattr(_u, "urlopen", fake_open)
+        with pytest.raises(_ue.HTTPError):
+            site_boards._post_json_urllib("https://x.example/api", {})
+        assert len(calls) == 1
+
+    def test_nonjson_guard_not_retried(self, monkeypatch):
+        import urllib.request as _u
+        calls = []
+
+        class _R:
+            def __init__(self, raw):
+                import io
+                self._f = io.BytesIO(raw)
+
+            def read(self):
+                return self._f.read()
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        def fake_open(req, timeout=30):
+            calls.append(1)
+            return _R(b"<html>login</html>")
+        monkeypatch.setattr(_u, "urlopen", fake_open)
+        with pytest.raises(RuntimeError, match="non-JSON"):
+            site_boards._post_json_urllib("https://x.example/api", {})
+        assert len(calls) == 1

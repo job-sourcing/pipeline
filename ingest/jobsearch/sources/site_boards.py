@@ -2256,25 +2256,45 @@ class FeishuHireAdapter:
 
 
 def _post_json_urllib(url: str, body: dict,
-                      headers: Optional[dict] = None) -> dict:
+                      headers: Optional[dict] = None,
+                      attempts: int = 2, backoff_s: float = 2.0) -> dict:
     """Plain-urllib JSON POST (no impersonation, no session) — for
     endpoints that serve plain requests and REJECT chrome-impersonation
     (the alibaba-cloud inversion class; also xiaohongshu, live-verified
     2026-09-26). Raises on non-JSON bodies (structural guard — the
-    tripcom XML-fallback trap)."""
+    tripcom XML-fallback trap).
+
+    S18 (watch run #59): one transport retry with backoff — the GHA
+    runner's transient Errno-101 (Network is unreachable) failed a
+    whole xiaohongshu watch leg (and, by the loud-failure contract,
+    the whole run). A single-blip retry is the feishuhire-transport
+    precedent; a NON-JSON 200 body is still refused immediately (the
+    structural guard is not retried — it is a verdict, not a blip)."""
     h = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
          "Content-Type": "application/json",
          "Accept": "application/json"}
     if headers:
         h.update(headers)
-    req = urllib.request.Request(url, data=json.dumps(body).encode(),
-                                 headers=h, method="POST")
-    with urllib.request.urlopen(req, timeout=30) as r:
-        raw = r.read().decode("utf-8", "replace")
-    if not raw.lstrip().startswith(("{", "[")):
-        raise RuntimeError(f"{url}: non-JSON response (first 60: "
-                           f"{raw[:60]!r})")
-    return json.loads(raw)
+    last_exc: Exception | None = None
+    for attempt in range(max(1, attempts)):
+        if attempt:
+            time.sleep(backoff_s)
+        req = urllib.request.Request(url, data=json.dumps(body).encode(),
+                                     headers=h, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                raw = r.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as e:
+            # HTTP verdicts are server answers, not blips — surface now
+            raise
+        except Exception as e:            # URLError/timeout/conn reset
+            last_exc = e
+            continue
+        if not raw.lstrip().startswith(("{", "[")):
+            raise RuntimeError(f"{url}: non-JSON response (first 60: "
+                               f"{raw[:60]!r})")
+        return json.loads(raw)
+    raise last_exc
 
 
 # ── xiaohongshu (own platform: job.xiaohongshu.com recruit API) ──────────

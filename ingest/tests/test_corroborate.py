@@ -18,6 +18,7 @@ from jobsearch import corroborate
 from jobsearch.corroborate import (
     LinkedInSignalProvider, STATUS_BLOCKED, STATUS_MATCHED,
     STATUS_NO_MATCH, STATUS_NOT_CHECKED, join_by_req_id, join_by_title,
+    _bilingual_latin_segments, set_company_overrides, COMPANY_VARIANTS,
 )
 
 
@@ -954,3 +955,83 @@ class TestS14RawCodeReqIdJoin:
         signals = [{"job_req_id": "GP7000022511", "title": "A"}]
         joined = join_by_req_id(signals, {"aidc:GP7000022511"})
         assert joined == {}
+
+
+class TestS18BilingualJoin:
+    """S18: bilingual-title Latin segments + the variant company
+    namespace — the xiaohongshu P3 (0% -> 10% honest lift, live-verified
+    on the shipped board: '用户信任与透明度产品经理/Product Manager, User
+    Trust & Transparency' joins the 'Product Manager, User Trust &
+    Transparency' card under company 'rednote')."""
+
+    def test_segments_bilingual_slash(self):
+        assert _bilingual_latin_segments(
+            "用户信任与透明度产品经理/Product Manager, User Trust") == [
+            "Product Manager, User Trust"]
+        assert _bilingual_latin_segments(
+            "海外TnS政策专家 / Trust & Safety Policy Specialist") == [
+            "Trust & Safety Policy Specialist"]
+
+    def test_segments_conservative(self):
+        # no separator / no CJK / mixed-only segments / empty
+        assert _bilingual_latin_segments("iOS Software Engineer") == []
+        assert _bilingual_latin_segments("A/B Testing Engineer") == []
+        assert _bilingual_latin_segments(
+            "Trust & Safety平台产品经理/ 平台产品TnS") == []  # mixed both
+        assert _bilingual_latin_segments("") == []
+        assert _bilingual_latin_segments("纯中文标题/另一个中文段") == []
+
+    def test_bilingual_posting_joins_english_card(self):
+        # the shipped XHS shape: variants registered (board_dump does
+        # this from --li-variants) + the bilingual posting title
+        set_company_overrides("Xiaohongshu",
+                              variants=["rednote", "Xiaohongshu"])
+        try:
+            signals = [dict(rec) for rec in [
+                {"job_req_id": "", "title":
+                 "Product Manager, User Trust & Transparency",
+                 "company": "rednote", "location": "United States",
+                 "linkedin_job_id": "1", "status": "matched"}]]
+            postings = {"R1": "用户信任与透明度产品经理/Product Manager, "
+                              "User Trust & Transparency"}
+            joined = join_by_title(signals, postings, "Xiaohongshu")
+            assert "R1" in joined        # the Latin segment joined
+        finally:
+            COMPANY_VARIANTS.pop("xiaohongshu", None)
+
+    def test_variant_namespace_joins_cross_brand(self):
+        # the XHS root cause: board 'Xiaohongshu', cards 'rednote' —
+        # the registered variants (probed card companies) share the
+        # posting-side namespace
+        set_company_overrides("Xiaohongshu",
+                              variants=["rednote", "Xiaohongshu"])
+        try:
+            signals = [{"job_req_id": "", "title": "SRE Engineer",
+                        "company": "rednote", "location": "US",
+                        "linkedin_job_id": "9", "status": "matched"}]
+            postings = {"R2": "SRE工程师-国际化"}
+            # no '/' in this title — the multiset tier must NOT join a
+            # CJK-only title to an English card (no translation source)
+            joined = join_by_title(signals, postings, "Xiaohongshu")
+            assert "R2" not in joined
+            # but a same-title variant-namespace pair DOES join
+            postings2 = {"R3": "SRE Engineer"}
+            joined2 = join_by_title(signals, postings2, "Xiaohongshu")
+            assert "R3" in joined2
+        finally:
+            COMPANY_VARIANTS.pop("xiaohongshu", None)
+
+    def test_unregistered_company_never_cross_joins(self):
+        # namespace guard intact: without a variant registration, a
+        # 'rednote' card must NOT join a 'Xiaohongshu' posting
+        COMPANY_VARIANTS.pop("xiaohongshu", None)
+        signals = [{"job_req_id": "", "title": "SRE Engineer",
+                    "company": "rednote", "location": "US",
+                    "linkedin_job_id": "9", "status": "matched"}]
+        joined = join_by_title(signals, {"R4": "SRE Engineer"},
+                               "Xiaohongshu")
+        assert joined == {}
+
+    def test_segments_never_invent_translations(self):
+        # a CJK-only title with '/' has no Latin segment to yield
+        assert _bilingual_latin_segments("风控研发工程师/美国") == []

@@ -175,6 +175,34 @@ def token_multiset_key(title: str, company: str) -> tuple:
             _company_token(company))
 
 
+_CJK_RE = re.compile(r"[\u4e00-\u9fff\u3400-\u4dbf]")
+
+
+def _bilingual_latin_segments(title: str) -> list[str]:
+    """S18 (the xiaohongshu P3, the tripcom MJ-strip class): boards
+    serving CJK/Latin bilingual titles ('用户信任与透明度产品经理/
+    Product Manager, User Trust & Transparency' — the company's OWN
+    English translation in the same string) carry a verbatim join key
+    inside the title. Extract the pure-Latin segments when at least
+    one CJK segment exists. CONSERVATIVE by construction: no separator
+    → no segments (space-bilingual titles stay unjoined — no boundary
+    to trust); mixed CJK+Latin segments stay unjoined (no clean split);
+    pure-Latin '/'-titles stay unjoined (no bilingual evidence).
+    NEVER invents a translation — only re-uses what the board itself
+    printed."""
+    t = (title or "").strip()
+    if not t or "/" not in t:
+        return []
+    segs = [s.strip() for s in t.split("/") if s.strip()]
+    if len(segs) < 2:
+        return []
+    has_cjk = any(_CJK_RE.search(s) for s in segs)
+    if not has_cjk:
+        return []
+    return [s for s in segs
+            if not _CJK_RE.search(s) and re.search(r"[A-Za-z]", s)]
+
+
 def verbatim_match(req_title: str, card_title: str) -> bool:
     """GT-calibrated verbatim predicate: is this LinkedIn card title a
     copy of the Workday req title (modulo punctuation / word order /
@@ -815,27 +843,52 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
     req_loc = {rid: _location_tokens((req_locations or {}).get(rid) or "")
                for rid in postings}
     rec_by_pair: dict[tuple, dict] = {}
+    # S18 variant namespace: posting-side keys live under the board
+    # company AND its registered card-variant companies (the
+    # COMPANY_VARIANTS registry — the PROBED card strings, S15's
+    # exact-match lesson; XHS board 'Xiaohongshu', cards 'rednote';
+    # WeRide board 'WeRide', cards 'WeRide Inc.' was first-token luck).
+    # The namespace guard's anti-cross-company purpose is preserved:
+    # variants are operator-declared, probed card companies — never a
+    # guess. Bilingual titles (S18) contribute their own Latin
+    # segments as additional key sources.
+    namespaces = [company] + [v for v in _company_variants(company)
+                              if (v or "").strip()]
+    namespaces = [n for n in dict.fromkeys(namespaces) if n]
     for rid, title in postings.items():
-        key = _join_key(title, company)
-        for rec in by_key.get(key, []):
-            if not verbatim_match(title, rec["title"]):
-                continue          # key-equal but not a verbatim pair
-            # S9-audit INV-2 residual (2 live rows): a card whose
-            # description embeds ANOTHER requisition's id is that req's
-            # posting — it serves NOBODY by title, even when the named
-            # req has departed the board (same policy as the watch's
-            # _window_match: "foreign reqId serves nobody"). jr == rid
-            # (this req's OWN blocked card) still joins.
-            jr = (rec.get("job_req_id") or "").strip()
-            if jr and jr != rid:
-                continue
-            cd = str(rec.get("linkedin_posted_date") or "")
-            rd = (req_dates or {}).get(rid) or ""
-            cid = str(rec.get("linkedin_job_id")
-                      or rec.get("id") or id(rec))   # unique fallback
-            overlap = bool(card_loc.get(id(rec), frozenset())
-                           & req_loc[rid])
-            rec_by_pair[(not overlap, _proximity(cd, rd), cd, cid, rid)] = rec
+        segs = _bilingual_latin_segments(title)
+        key_sources = [title] + segs
+        keys = [k for k in (
+            _join_key(src, ns)
+            for ns in namespaces for src in key_sources) if k]
+        seen_recs: set = set()
+        for key in dict.fromkeys(keys):
+            for rec in by_key.get(key, []):
+                if id(rec) in seen_recs:
+                    continue
+                seen_recs.add(id(rec))
+                if not (verbatim_match(title, rec["title"])
+                        or any(verbatim_match(s, rec["title"])
+                               for s in segs)):
+                    continue      # key-equal but not a verbatim pair
+                # S9-audit INV-2 residual (2 live rows): a card whose
+                # description embeds ANOTHER requisition's id is that
+                # req's posting — it serves NOBODY by title, even when
+                # the named req has departed the board (same policy as
+                # the watch's _window_match: "foreign reqId serves
+                # nobody"). jr == rid (this req's OWN blocked card)
+                # still joins.
+                jr = (rec.get("job_req_id") or "").strip()
+                if jr and jr != rid:
+                    continue
+                cd = str(rec.get("linkedin_posted_date") or "")
+                rd = (req_dates or {}).get(rid) or ""
+                cid = str(rec.get("linkedin_job_id")
+                          or rec.get("id") or id(rec))  # unique fallback
+                overlap = bool(card_loc.get(id(rec), frozenset())
+                               & req_loc[rid])
+                rec_by_pair[(not overlap, _proximity(cd, rd), cd, cid,
+                             rid)] = rec
     def _ord(d: str) -> int:
         try:
             return _date.fromisoformat(d[:10]).toordinal()
@@ -870,23 +923,25 @@ def join_by_title(signals: list[dict], postings: dict[str, str],
                 mkey_cards.setdefault(mk, []).append(rec)
         m_pairs: dict[tuple, dict] = {}
         for rid in remaining_reqs:
-            mk = token_multiset_key(postings[rid], company)
-            if not mk[0]:
-                continue
-            for rec in mkey_cards.get(mk, []):
-                if _seniority_set(postings[rid]) != _seniority_set(
-                        rec["title"]):
-                    continue
-                jr = (rec.get("job_req_id") or "").strip()
-                if jr and jr != rid:
-                    continue    # foreign-reqId card serves nobody
-                cd = str(rec.get("linkedin_posted_date") or "")
-                rd = (req_dates or {}).get(rid) or ""
-                cid = str(rec.get("linkedin_job_id")
-                          or rec.get("id") or id(rec))
-                overlap = bool(card_loc.get(id(rec), frozenset())
-                               & req_loc[rid])
-                m_pairs[(not overlap, _proximity(cd, rd), cd, cid, rid)] = rec
+            for mk in dict.fromkeys(
+                    k for k in (
+                        token_multiset_key(postings[rid], ns)
+                        for ns in namespaces) if k[0]):
+                for rec in mkey_cards.get(mk, []):
+                    if _seniority_set(postings[rid]) != _seniority_set(
+                            rec["title"]):
+                        continue
+                    jr = (rec.get("job_req_id") or "").strip()
+                    if jr and jr != rid:
+                        continue    # foreign-reqId card serves nobody
+                    cd = str(rec.get("linkedin_posted_date") or "")
+                    rd = (req_dates or {}).get(rid) or ""
+                    cid = str(rec.get("linkedin_job_id")
+                              or rec.get("id") or id(rec))
+                    overlap = bool(card_loc.get(id(rec), frozenset())
+                                   & req_loc[rid])
+                    m_pairs[(not overlap, _proximity(cd, rd), cd, cid,
+                             rid)] = rec
         for key in sorted(m_pairs,
                           key=lambda k: (k[0], k[1], -_ord(k[2]), k[3], k[4])):
             rid, card_id = key[4], key[3]

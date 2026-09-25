@@ -1,5 +1,5 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-19557,海外TnS政策专家 / Trust & Safety Policy Specialist,Xiaohongshu,Xiaohongshu,,Posted 1 Days Ago,2026-09-23,1,美国,4,美国; 新加坡; 上海市; 北京市,false,,United States,,0,"我们正在寻找一位 Policy Specialist（政策专家）加入Trust & Safety（信任与安全）政策团队。你将参与制定和优化全球内容与社区政策，保障平台在国际市场中的安全性、合规性以及生态健康。
+19557,海外TnS政策专家 / Trust & Safety Policy Specialist,Xiaohongshu,Xiaohongshu,,Posted 1 Days Ago,2026-09-23,2,美国,4,美国; 新加坡; 上海市; 北京市,false,,United States,,0,"我们正在寻找一位 Policy Specialist（政策专家）加入Trust & Safety（信任与安全）政策团队。你将参与制定和优化全球内容与社区政策，保障平台在国际市场中的安全性、合规性以及生态健康。
 在这一角色中，你需要应对不断变化的内容风险议题，将政策原则转化为可执行的审核与治理标准，并与法务、产品、工程及审核团队等跨部门伙伴紧密合作。该岗位需要具备良好的分析能力、跨文化理解能力，以及在快速变化的国际环境中做出高质量决策的能力。
 
 主要职责
@@ -17,8 +17,8 @@
 加分项
 1、有全球互联网平台（如 YouTube、Meta、TikTok、Twitter/X 等）内容政策相关经验。
 2、熟悉国际平台治理及数据隐私相关法规（如 GDPR、DSA、COPPA 等）。
-3、有应对跨境内容风险或全球重大事件的经验。",678,https://job.xiaohongshu.com/social/position/19557,,,,,,,no_match,,2026-09-24,,2026-09-24,,1,startDate,false,0,,,,,非技术,2026-09-23,,false,,,,,,
-21357,iOS Software Engineer - rednote,Xiaohongshu,Xiaohongshu,,Posted 2 Days Ago,2026-09-22,2,美国,1,美国,false,,United States,,0,"About Us:
+3、有应对跨境内容风险或全球重大事件的经验。",678,https://job.xiaohongshu.com/social/position/19557,,,,,,,no_match,,2026-09-24,,2026-09-25,,2,startDate,false,0,,,,,非技术,2026-09-23,,false,,,,,,
+21357,iOS Software Engineer - rednote,Xiaohongshu,Xiaohongshu,,Posted 2 Days Ago,2026-09-22,3,美国,1,美国,false,,United States,,0,"About Us:
 rednote is one of the fastest-growing lifestyle community platforms in the world. We are building our client engineering team in New York City to craft product experiences for users across the globe. You will work on core features of the rednote mobile apps (iOS/Android), collaborating with teams across the US, Singapore, and China to bring ""share and discover a wonderful life"" to a global audience.
 rednote 是全球增长最快的生活方式社区之一，我们正在纽约组建客户端研发团队，服务全球用户的产品体验。你将参与 rednote 客户端iOS的核心功能研发，与中国、新加坡及美国多地团队协作，把""分享和发现美好生活""带给全世界。
 
@@ -58,8 +58,8 @@ Nice to Have:
 2.有出海产品经验，熟悉多语言/多时区/隐私合规（GDPR/CCPA/COPPA）适配
 3.有 Flutter/React Native 跨端经验，或参与过动态化框架建设
 4.有音视频、图像处理、端智能（On-device ML）方向的积累
-5.活跃的开源贡献或技术博客",3154,https://job.xiaohongshu.com/social/position/21357,,,,,,,no_match,,2026-09-24,,2026-09-24,,2,startDate,false,0,,,,,前端开发,2026-09-22,,false,,,,,,
-19841,【美国】后端开发工程师-rednote,Xiaohongshu,Xiaohongshu,,Posted 7 Days Ago,2026-09-17,7,美国,1,美国,false,,United States,,0,"主要职责：
+5.活跃的开源贡献或技术博客",3154,https://job.xiaohongshu.com/social/position/21357,,,,,,,no_match,,2026-09-24,,2026-09-25,,3,startDate,false,0,,,,,前端开发,2026-09-22,,false,,,,,,
+19841,【美国】后端开发工程师-rednote,Xiaohongshu,Xiaohongshu,,Posted 7 Days Ago,2026-09-17,8,美国,1,美国,false,,United States,,0,"主要职责：
 负责支持小红书国际化业务在美国及全球市场的系统开发与维护工作，赋能海外业务高效迭代与规模化拓展。
 参与服务端核心模块的技术选型与架构设计，构建高性能、高可用的分布式系统，确保其在跨地域、高并发场景下的稳定性、可扩展性与低延迟。
 与分布在全球的产品、运营、前后端及测试团队紧密协作，高效推进国际化项目的交付落地与持续优化。
@@ -83,8 +83,8 @@ Proficient in at least one of Java or Go programming languages, with excellent c
 Deep understanding of MySQL, Redis, RocketMQ/Kafka, ElasticSearch, and other common technologies, with knowledge of their core principles and application scenarios. Open-source project contributions are a strong plus.
 Strong understanding of distributed system design, with practical experience in microservices architecture and service governance (e.g., service discovery, configuration management, traffic routing, observability, fault tolerance, and disaster recovery). Experience in high-concurrency system design and performance optimization is preferred.
 Strong sense of ownership and business awareness, capable of taking end-to-end responsibility for complex business modules. Excellent cross-team and cross-regional communication and collaboration skills, able to drive problem-solving efficiently and adapt to a diverse, fast-paced international team environment.
-Ability to communicate effectively in English (both written and spoken) and collaborate seamlessly with global teams.",2824,https://job.xiaohongshu.com/social/position/19841,,,,,,,no_match,,2026-09-24,,2026-09-24,,7,startDate,false,0,,,,,后端开发,2026-09-17,,false,,,,,,
-20061,IT基建专家,Xiaohongshu,Xiaohongshu,,Posted 11 Days Ago,2026-09-13,11,北京市,5,北京市; 上海市; 杭州市; 美国; 新加坡,false,,United States,,0,"1、整体负责海外职场扩张相关的IT项目，对全球职场建设的交付结果负责；
+Ability to communicate effectively in English (both written and spoken) and collaborate seamlessly with global teams.",2824,https://job.xiaohongshu.com/social/position/19841,,,,,,,no_match,,2026-09-24,,2026-09-25,,8,startDate,false,0,,,,,后端开发,2026-09-17,,false,,,,,,
+20061,IT基建专家,Xiaohongshu,Xiaohongshu,,Posted 11 Days Ago,2026-09-13,12,北京市,5,北京市; 上海市; 杭州市; 美国; 新加坡,false,,United States,,0,"1、整体负责海外职场扩张相关的IT项目，对全球职场建设的交付结果负责；
 2、在项目规划阶段能够提供专业前置咨询能力，为职场扩展提供专业的IT相关技术需求咨询及顾问能力；
 3、在设计阶段配合设计师及工程团队，保障相关IT基建标准落地；
 4、在施工阶段管理各类实施资源，管理风险并协调国内外各类供应商确保项目落地；
@@ -96,8 +96,8 @@ Ability to communicate effectively in English (both written and spoken) and coll
 3、熟悉IT相关的强弱电施工标准，并且管理过弱电施工项目；
 4、具备建筑咨询管理经验优先；
 5、具备物业管理经验优先；
-6、中文流利，英文流利。",418,https://job.xiaohongshu.com/social/position/20061,,,,,,,no_match,,2026-09-24,,2026-09-24,,11,startDate,false,0,,,,,研发,2026-09-13,,false,,,,,,
-19750,存储云平台研发（数据库智能化方向）- 国际化,Xiaohongshu,Xiaohongshu,,Posted 11 Days Ago,2026-09-13,11,新加坡,2,新加坡; 美国,false,,United States,,0,"1、主导存储云平台架构设计与核心开发：负责小红书存储平台产品的架构演进与核心模块开发，探索AI-Native架构下的智能存储解决方案，推动平台从工具型向智能型升级。
+6、中文流利，英文流利。",418,https://job.xiaohongshu.com/social/position/20061,,,,,,,no_match,,2026-09-24,,2026-09-25,,12,startDate,false,0,,,,,研发,2026-09-13,,false,,,,,,
+19750,存储云平台研发（数据库智能化方向）- 国际化,Xiaohongshu,Xiaohongshu,,Posted 11 Days Ago,2026-09-13,12,新加坡,2,新加坡; 美国,false,,United States,,0,"1、主导存储云平台架构设计与核心开发：负责小红书存储平台产品的架构演进与核心模块开发，探索AI-Native架构下的智能存储解决方案，推动平台从工具型向智能型升级。
 2、构建智能化运维体系：独立负责存储与数据库自助管理平台的技术规划与落地，结合大模型能力打造智能运维Agent，实现自然语言交互式运维，降低数据库使用门槛。
 3、驱动运维智能化转型：基于LLM Agent技术重构自动化运维平台，构建具备自诊断、自修复、自优化能力的智能运维体系，实现从""人工运维""到""无人值守""的跨越。
 4、深耕AI+数据库创新场景：主导大模型在数据库领域的深度应用落地，包括智能SQL优化、异常检测与根因分析、容量预测与自动扩缩容、智能告警降噪等核心场景。
@@ -126,8 +126,8 @@ Ability to communicate effectively in English (both written and spoken) and coll
 我们提供：
 1、参与小红书亿级流量存储平台建设的实战机会
 2、与顶尖AI和基础设施团队合作的技术氛围
-3、在AI+数据库前沿领域的深度探索空间",3931,https://job.xiaohongshu.com/social/position/19750,,,,,,,no_match,,2026-09-24,,2026-09-24,,11,startDate,false,0,,,,,研发,2026-09-13,,false,,,,,,
-21494,Devops平台研发工程师-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,美国,1,美国,false,,United States,,0,"1、负责国内 DevOps、高可用平台在海外区域的部署、集成、适配和运营支持，推动平台能力按计划落地。
+3、在AI+数据库前沿领域的深度探索空间",3931,https://job.xiaohongshu.com/social/position/19750,,,,,,,no_match,,2026-09-24,,2026-09-25,,12,startDate,false,0,,,,,研发,2026-09-13,,false,,,,,,
+21494,Devops平台研发工程师-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,13,美国,1,美国,false,,United States,,0,"1、负责国内 DevOps、高可用平台在海外区域的部署、集成、适配和运营支持，推动平台能力按计划落地。
 2、评估海外公有云、私有云或数据中心环境在计算、网络、存储、Kubernetes、安全及合规等方面的差异，制定并执行适配方案。
 3、在 DevOps 方向，负责服务发布平台、变更管控及规模化运维平台的海外接入，完善 CI/CD、基础设施自动化和发布运维流程。
 4、在高可用方向，负责应急预案、故障切换、容灾验证及混沌演练等能力的落地，跟进问题整改并持续提升海外业务可靠性。
@@ -173,8 +173,8 @@ Preferred Qualifications
 -Experience rolling out internal platforms in international regions, infrastructure migration, or multi-region deployment.
 -Experience with DevOps toolchains or large-scale operations platforms in major internet or cloud companies.
 -Experience in disaster recovery, chaos engineering, capacity management, or major incident response.
--Understanding of data residency, privacy protection, and regional infrastructure compliance requirements.",4546,https://job.xiaohongshu.com/social/position/21494,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
-20305,IT Business Partner,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,美国,2,美国; 新加坡,false,,United States,,0,"1、Build and sustain partnerships with local business teams in your dedicated regions and across multiple IT function teams as the point of contact(POC)；
+-Understanding of data residency, privacy protection, and regional infrastructure compliance requirements.",4546,https://job.xiaohongshu.com/social/position/21494,,,,,,,no_match,,2026-09-24,,2026-09-25,,13,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
+20305,IT Business Partner,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,13,美国,2,美国; 新加坡,false,,United States,,0,"1、Build and sustain partnerships with local business teams in your dedicated regions and across multiple IT function teams as the point of contact(POC)；
 2、Engage with local support resources and aligned with global IT strategy to maintain technological health；
 3、Work as a key escalation contact for your region on critical IT technology escalations and emerging issues in real-time. Assist with coordinating rapid resolution, root cause analysis, and stakeholder communication；
 4、Work as a key partner in local production validation testing to ensure new systems meet IT operational requirements and quality standards before rollout；
@@ -185,8 +185,8 @@ Preferred Qualifications
 3、Strong troubleshooting and problem solving skills;
 4、General knowledge of network and IT infrastructure, general knowledge of system development and product designing;
 5、Ability to work variable hours including weekends and holidays；
-6、Bachelor's degree or equivalent relevant work experience. Excellent written and spoken communication skills in English and Mandarin;",1255,https://job.xiaohongshu.com/social/position/20305,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
-19627, SRE工程师-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,新加坡,2,新加坡; 美国,false,,United States,,0,"1、国际化架构与容灾建设 — 参与公司国际化基础设施架构设计与落地，负责跨 Region 架构、容灾与高可用能力建设，推动关键业务具备多 Region 部署、容灾切换及故障隔离能力，提升海外业务整体稳定性水平。
+6、Bachelor's degree or equivalent relevant work experience. Excellent written and spoken communication skills in English and Mandarin;",1255,https://job.xiaohongshu.com/social/position/20305,,,,,,,no_match,,2026-09-24,,2026-09-25,,13,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
+19627, SRE工程师-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,13,新加坡,2,新加坡; 美国,false,,United States,,0,"1、国际化架构与容灾建设 — 参与公司国际化基础设施架构设计与落地，负责跨 Region 架构、容灾与高可用能力建设，推动关键业务具备多 Region 部署、容灾切换及故障隔离能力，提升海外业务整体稳定性水平。
 2、海外基础技术平台建设与运维 — 负责公司基础技术管控平台（如发布系统、监控告警、配置中心、服务治理、流量调度等）在海外 Region 的部署、运维与持续优化，保障海外环境与国内平台体系的一致性与可用性。
 3、稳定性治理与应急响应 — 负责海外业务稳定性体系建设，包括可观测能力建设、故障应急响应、根因分析与复盘机制建设；在重大故障场景下牵头协调跨团队资源，快速恢复服务并推动系统性改进。
 4、国际化技术方案落地 — 深入理解海外业务需求与架构特点，推动基础设施能力在海外场景的落地，包括多 Region 架构设计、网络与数据架构优化、基础服务能力适配等。
@@ -220,8 +220,8 @@ Preferred Qualifications
 Bonus Points:
 1、Experience with multi-cloud / cross-cloud providers (AWS / GCP / Azure / Alibaba Cloud International / Volcano International)
 2、Experience with cross-region disaster recovery and traffic scheduling (DNS / GSLB / Anycast / Global LB)
-3、Experience with stability engineering (Chaos Engineering / drills / automated recovery)",4489,https://job.xiaohongshu.com/social/position/19627,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
-19598,存储&数据库DevOps开发-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,美国,2,美国; 新加坡,false,,United States,,0,"1、产品解决方案设计 — 深入理解公司业务需求，结合 Redis、MySQL、TiDB、MongoDB 等多种存储数据库技术特点，主导设计高可用、高性能、可扩展的存储数据库产品解决方案，推动业务与技术深度融合。
+3、Experience with stability engineering (Chaos Engineering / drills / automated recovery)",4489,https://job.xiaohongshu.com/social/position/19627,,,,,,,no_match,,2026-09-24,,2026-09-25,,13,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
+19598,存储&数据库DevOps开发-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,13,美国,2,美国; 新加坡,false,,United States,,0,"1、产品解决方案设计 — 深入理解公司业务需求，结合 Redis、MySQL、TiDB、MongoDB 等多种存储数据库技术特点，主导设计高可用、高性能、可扩展的存储数据库产品解决方案，推动业务与技术深度融合。
 2、平台研发与优化 — 牵头存储数据库 DevOps 提效工作，推动实现存储数据库资源自动化部署、智能监控、故障自愈等功能，推动团队向现代化 DevOps 文化与平台化运营转型。
 3、横向项目落地 — 作为项目负责人，统筹协调跨部门资源，制定项目计划与技术方案，确保重大横向项目按时高质量完成。
 4、技术研究与创新 — 跟踪存储数据库领域前沿技术动态，探索新技术在公司业务场景的应用可行性，主导技术预研与 PoC 验证，为公司技术发展提供前瞻性建议。
@@ -245,8 +245,8 @@ Bonus Points:
 3、Business Acumen — Ability to quickly translate business requirements into technical solutions; cross-industry storage/database application experience preferred.
 4、Project Management — Proven ability to independently lead major cross-functional projects; capable of defining plans, tracking progress, and coordinating resources for successful delivery.
 5、Communication & Collaboration — Excellent communication skills; effective at working across teams and organizational levels; strong adaptability and problem-solving skills; fluent in both English and Chinese (spoken and written).
-6、Learning & Innovation — Passionate about new technologies; fast learner with an innovative mindset; open-source contributions or technical patents a plus.",3401,https://job.xiaohongshu.com/social/position/19598,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
-19626,可观测技术研发-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,12,新加坡,2,新加坡; 美国,false,,United States,,0,"1、负责可观测体系研发工作，围绕 Metrics、Logging、Tracing、Profiling 四大支柱，从全栈领域展开可观测基础能力建设；
+6、Learning & Innovation — Passionate about new technologies; fast learner with an innovative mindset; open-source contributions or technical patents a plus.",3401,https://job.xiaohongshu.com/social/position/19598,,,,,,,no_match,,2026-09-24,,2026-09-25,,13,startDate,false,0,,,,,研发,2026-09-12,,false,,,,,,
+19626,可观测技术研发-国际化,Xiaohongshu,Xiaohongshu,,Posted 12 Days Ago,2026-09-12,13,新加坡,2,新加坡; 美国,false,,United States,,0,"1、负责可观测体系研发工作，围绕 Metrics、Logging、Tracing、Profiling 四大支柱，从全栈领域展开可观测基础能力建设；
 2、负责监控平台、全链路追踪、日志服务、计算引擎（流式分析、实时告警、时序检测等）、告警、eBPF 等可观测相关技术架构及产品设计；
 3、保障可观测相关基础服务，在高并发环境下的高性能、高可用，推动技术、产品持续优化迭代，支撑国内和海外可观测架构设计、数据合规、基建稳定性保障等工作；
 4、落地 AI Infra 可观测、AI 应用可观测、可观测 AI+ 等相关技术，提高 AI 场景稳定性以及传统可观测产品使用体验和效率。
@@ -270,8 +270,8 @@ Bonus Points:
 4、Familiar with foundational open-source components such as Linux, networking, storage, and message queues; deep understanding of implementation principles preferred.
 5、Bonus: Familiarity with AI-related technologies including but not limited to: PyTorch, Spring AI, Langfuse, LLM-based tooling.
 6、Strong problem-solving, communication, and cross-team collaboration skills; eager to learn and stay current with industry trends.
-7、Fluent in both English and Chinese (spoken and written).",2649,https://job.xiaohongshu.com/social/position/19626,,,,,,,no_match,,2026-09-24,,2026-09-24,,12,startDate,false,0,,,,,后端开发,2026-09-12,,false,,,,,,
-19658,"用户信任与透明度产品经理/Product Manager, User Trust & Transparency",Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"我们正在寻找一位产品经理，负责Trust & Safety（信任与安全）体系中的用户信任与透明度产品能力建设。
+7、Fluent in both English and Chinese (spoken and written).",2649,https://job.xiaohongshu.com/social/position/19626,,,,,,,no_match,,2026-09-24,,2026-09-25,,13,startDate,false,0,,,,,后端开发,2026-09-12,,false,,,,,,
+19658,"用户信任与透明度产品经理/Product Manager, User Trust & Transparency",Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,17,美国,1,美国,false,,United States,,0,"我们正在寻找一位产品经理，负责Trust & Safety（信任与安全）体系中的用户信任与透明度产品能力建设。
 在这个角色中，你将设计和打造面向用户的治理沟通产品能力，帮助用户理解平台治理机制，包括审核决策、处罚结果、申诉流程以及举报机制。你的工作将帮助平台治理变得更加透明、可理解且公平，提升用户对平台规则与治理决策的信任。
 你将与工程、设计、政策、运营及数据团队紧密合作，将复杂的治理规则转化为简单清晰且可规模化的产品体验，服务全球用户生态。
 
@@ -293,8 +293,8 @@ Bonus Points:
 加分项
 1、有大型互联网平台用户信任机制或治理透明度产品经验。
 2、熟悉Trust & Safety、内容审核或平台治理相关体系。
-3、有全球互联网平台或大规模 UGC 产品经验。",814,https://job.xiaohongshu.com/social/position/19658,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,非技术,2026-09-08,,false,,,,,,
-19596,"Trust & Safety平台产品经理/ Product Manager, Trust & Safety Platform",Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"我们正在寻找一位平台产品经理加入Trust & Safety（信任与安全）团队，共同打造下一代AI Native安全治理平台与系统，服务全球内容平台生态。
+3、有全球互联网平台或大规模 UGC 产品经验。",814,https://job.xiaohongshu.com/social/position/19658,,https://www.linkedin.com/jobs/view/4465008032,2026-09-09,118,118 applicants,1,matched,title,2026-09-24,2026-09-24T21:30:48,2026-09-25,,17,startDate,true,0,,,,,非技术,2026-09-08,,false,,,,,,
+19596,"Trust & Safety平台产品经理/ Product Manager, Trust & Safety Platform",Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,17,美国,1,美国,false,,United States,,0,"我们正在寻找一位平台产品经理加入Trust & Safety（信任与安全）团队，共同打造下一代AI Native安全治理平台与系统，服务全球内容平台生态。
 你将与工程、机器学习、政策及运营团队紧密合作，设计 AI 驱动的平台能力，支持全球内容生态中的审核、调查与安全决策。
 
 主要职责
@@ -313,8 +313,8 @@ Bonus Points:
 1、有 Trust & Safety、审核平台或风控平台建设经验。
 2、有与机器学习或LLM 团队合作构建 AI 产品的经验。
 3、熟悉Agent Orchestration、Prompt Engineering 或 AI 自动化框架。
-4、有全球互联网平台或大规模UGC内容生态经验。",711,https://job.xiaohongshu.com/social/position/19596,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,非技术,2026-09-08,,false,,,,,,
-19566,海外安全策略运营专家（Trust & Safety）/  Safety Strategy Operations Specialist (Trust & Safety),Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"我们正在寻找一位 海外安全策略运营专家 加入 Trust & Safety（信任与安全）团队。在这一岗位中，你将负责全球内容平台的风险监控、应急响应及运营流程优化，保障平台在国际市场中的内容安全、用户保护和合规运营。
+4、有全球互联网平台或大规模UGC内容生态经验。",711,https://job.xiaohongshu.com/social/position/19596,,https://www.linkedin.com/jobs/view/4464996382,2026-09-09,163,163 applicants,1,matched,title,2026-09-24,2026-09-24T21:30:49,2026-09-25,,17,startDate,true,0,,,,,非技术,2026-09-08,,false,,,,,,
+19566,海外安全策略运营专家（Trust & Safety）/  Safety Strategy Operations Specialist (Trust & Safety),Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,17,美国,1,美国,false,,United States,,0,"我们正在寻找一位 海外安全策略运营专家 加入 Trust & Safety（信任与安全）团队。在这一岗位中，你将负责全球内容平台的风险监控、应急响应及运营流程优化，保障平台在国际市场中的内容安全、用户保护和合规运营。
 你将与审核、政策、产品及数据团队紧密合作，识别新兴风险并推动风险策略落地，持续提升一线风险治理效率。该岗位需要具备良好的分析能力、运营判断力以及在快速变化的国际环境中应对复杂风险场景的能力。
 
 主要职责
@@ -332,8 +332,8 @@ Bonus Points:
 加分项
 1、有内容平台 Trust & Safety 运营、风控运营或反作弊经验。
 2、有与政策团队、审核团队、外包团队或跨国团队协作经验。
-3、在互联网平台或内容社区参与过风险治理或安全相关项目。",654,https://job.xiaohongshu.com/social/position/19566,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,非技术,2026-09-08,,false,,,,,,
-19840,【美国】数据仓库专家-rednote,Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"主要职责
+3、在互联网平台或内容社区参与过风险治理或安全相关项目。",654,https://job.xiaohongshu.com/social/position/19566,,,,,,,no_match,,2026-09-24,,2026-09-25,,17,startDate,true,0,,,,,非技术,2026-09-08,,false,,,,,,
+19840,【美国】数据仓库专家-rednote,Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,17,美国,1,美国,false,,United States,,0,"主要职责
 负责设计、构建并维护公司级基础数据平台与公共数据层，为社区、电商、广告等核心业务提供通用、稳定、高性能的数据能力支持，提升数据驱动业务的整体效率。
 深入各业务领域，主导专题数据仓库与数据产品的建设，提供精准、易用的数据服务与分析模型，直接支持战略决策与业务运营。
 建立并推行公司级数据治理体系，融合业务需求、元数据管理与技术实现，持续优化数据资源成本，全面提升数据质量、一致性、安全性与产出稳定性。
@@ -357,8 +357,8 @@ Solid experience in data warehouse development, with a deep understanding of the
 Strong knowledge of data management and governance principles and best practices, including familiarity with data governance, data standards, enterprise data modeling, metadata management, and master data management methodologies.
 Proficiency in big data technologies and ecosystems, with hands-on experience in building real-time or batch data pipelines. Practical project experience with multiple technologies such as Hive, Kafka, Spark, Flink, HBase, etc., is required.
 Excellent ability to learn quickly, strong cross-team communication and collaboration skills, and superior logical thinking and problem-solving capabilities.
-Ability to communicate effectively in English (both written and spoken) and collaborate seamlessly within a global team environment.",2498,https://job.xiaohongshu.com/social/position/19840,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,研发,2026-09-08,,false,,,,,,
-21358,Android Software Engineer - rednote,Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,16,美国,1,美国,false,,United States,,0,"About Us:
+Ability to communicate effectively in English (both written and spoken) and collaborate seamlessly within a global team environment.",2498,https://job.xiaohongshu.com/social/position/19840,,,,,,,no_match,,2026-09-24,,2026-09-25,,17,startDate,true,0,,,,,研发,2026-09-08,,false,,,,,,
+21358,Android Software Engineer - rednote,Xiaohongshu,Xiaohongshu,,Posted 16 Days Ago,2026-09-08,17,美国,1,美国,false,,United States,,0,"About Us:
 rednote is one of the fastest-growing lifestyle community platforms in the world. We are building our client engineering team in New York City to craft product experiences for users across the globe. You will work on core features of the rednote mobile apps (iOS/Android), collaborating with teams across the US, Singapore, and China to bring ""share and discover a wonderful life"" to a global audience.
 rednote 是全球增长最快的生活方式社区之一，我们正在纽约组建客户端研发团队，服务全球用户的产品体验。你将参与 rednote 客户端iOS的核心功能研发，与中国、新加坡及美国多地团队协作，把""分享和发现美好生活""带给全世界。
 
@@ -398,8 +398,8 @@ Nice to Have:
 2.有出海产品经验，熟悉多语言/多时区/隐私合规（GDPR/CCPA/COPPA）适配
 3.有 Flutter/React Native 跨端经验，或参与过动态化框架建设
 4.有音视频、图像处理、端智能（On-device ML）方向的积累
-5.活跃的开源贡献或技术博客",3125,https://job.xiaohongshu.com/social/position/21358,,,,,,,no_match,,2026-09-24,,2026-09-24,,16,startDate,true,0,,,,,前端开发,2026-09-08,,false,,,,,,
-21674,"风控研发工程师 Risk Engineer, US",Xiaohongshu,Xiaohongshu,,Posted 44 Days Ago,2026-08-11,44,美国,1,美国,false,,United States,,0,"随着小红书国际化业务推进，风控的系统、平台与数据基建需要在海外落地并独立运行。我们在美国寻找一位综合型的研发工程师，负责本地风控系统的本地化研发适配、能力对接与稳定性保障，作为美国区域风控工程的 Owner。由于是海外单点，我们要求你在能做研发的同时，具备独立扛住运维与稳定性的能力。
+5.活跃的开源贡献或技术博客",3125,https://job.xiaohongshu.com/social/position/21358,,,,,,,no_match,,2026-09-24,,2026-09-25,,17,startDate,true,0,,,,,前端开发,2026-09-08,,false,,,,,,
+21674,"风控研发工程师 Risk Engineer, US",Xiaohongshu,Xiaohongshu,,Posted 44 Days Ago,2026-08-11,45,美国,1,美国,false,,United States,,0,"随着小红书国际化业务推进，风控的系统、平台与数据基建需要在海外落地并独立运行。我们在美国寻找一位综合型的研发工程师，负责本地风控系统的本地化研发适配、能力对接与稳定性保障，作为美国区域风控工程的 Owner。由于是海外单点，我们要求你在能做研发的同时，具备独立扛住运维与稳定性的能力。
 Base：US｜语言：中 / 英皆可
 
 1、本地化研发：承接国内成熟的风控引擎、平台与数据基建，完成美国本地的适配、对接与必要的二次开发，保障本地独立运行；
@@ -421,8 +421,8 @@ Base：US｜语言：中 / 英皆可
 加入我们，你将收获
 1、作为 Owner 独立负责小红书美国区域的风控工程，从本地化研发到稳定运行全权负责；
 2、站在国际化最前线，把业内规模最大、复杂度最高的风控体系在海外独立跑起来；
-3、与中国总部顶尖工程 / 算法 / 产品团队深度协同，技术影响力可持续累积。",1048,https://job.xiaohongshu.com/social/position/21674,,,,,,,no_match,,2026-09-24,,2026-09-24,,44,startDate,true,0,,,,,后端开发,2026-08-11,,false,,,,,,
-19223,应用开发工程师（交互原型与工程化验证）,Xiaohongshu,Xiaohongshu,,Posted 47 Days Ago,2026-08-08,47,北京市,5,北京市; 上海市; 深圳市; 美国; 杭州市,false,,United States,,0,"1. 将交互设想转成可运行原型 / 高保真 Demo（动效、手势、反馈、边界条件完整），必要时支持小流量验证甚至发布到应用市场中
+3、与中国总部顶尖工程 / 算法 / 产品团队深度协同，技术影响力可持续累积。",1048,https://job.xiaohongshu.com/social/position/21674,,,,,,,no_match,,2026-09-24,,2026-09-25,,45,startDate,true,0,,,,,后端开发,2026-08-11,,false,,,,,,
+19223,应用开发工程师（交互原型与工程化验证）,Xiaohongshu,Xiaohongshu,,Posted 47 Days Ago,2026-08-08,48,北京市,5,北京市; 上海市; 深圳市; 美国; 杭州市,false,,United States,,0,"1. 将交互设想转成可运行原型 / 高保真 Demo（动效、手势、反馈、边界条件完整），必要时支持小流量验证甚至发布到应用市场中
 2. 端到端负责探索闭环：问题定义、假设拆解、原型实现、数据采集、评估设计与实验验证，输出清晰结论（继续/停止/转向）
 3. 与后端/算法等多角色协作，把探索方案在工程约束下落稳、落准，并完成可观测与回滚设计
 4. 参与并推动实验室工程路线图与关键架构决策：低成本验证、快速回滚、可观测、可复用
@@ -436,8 +436,8 @@ Base：US｜语言：中 / 英皆可
 - 丰富的多团队协作经验：能推动跨角色对齐目标、推进落地，并清晰表达技术权衡
 - 智能体验方向经验（匹配任一即可）：多模态理解驱动 UI、对话式交互、创作辅助、推荐解释/可控性、内容结构化与可编辑体验
 - 3D / 空间交互相关经验：做过 3D UI、空间布局、手势/空间操作、3D 动效与渲染；熟悉 WebGL/Three.js、Unity/Unreal、SceneKit/RealityKit 等任一技术栈；或有 3D 资产管线/性能优化经验
-- 在 HCI/交互/AI 体验相关方向有公开影响力：论文、专利、开源项目或行业分享",735,https://job.xiaohongshu.com/social/position/19223,,,,,,,no_match,,2026-09-24,,2026-09-24,,47,startDate,true,0,,,,,客户端开发,2026-08-08,,false,,,,,,
-19590,OS 工程师（XR 系统应用方向）,Xiaohongshu,Xiaohongshu,,Posted 47 Days Ago,2026-08-08,47,北京市,5,北京市; 上海市; 深圳市; 杭州市; 美国,false,,United States,,0,"1、负责 XR 设备系统核心应用的设计、开发与交付，包括但不限于系统相机、相册、文件管理、设置、互联及系统工具类应用，保障产品高效迭代与稳定发布；
+- 在 HCI/交互/AI 体验相关方向有公开影响力：论文、专利、开源项目或行业分享",735,https://job.xiaohongshu.com/social/position/19223,,,,,,,no_match,,2026-09-24,,2026-09-25,,48,startDate,true,0,,,,,客户端开发,2026-08-08,,false,,,,,,
+19590,OS 工程师（XR 系统应用方向）,Xiaohongshu,Xiaohongshu,,Posted 47 Days Ago,2026-08-08,48,北京市,5,北京市; 上海市; 深圳市; 杭州市; 美国,false,,United States,,0,"1、负责 XR 设备系统核心应用的设计、开发与交付，包括但不限于系统相机、相册、文件管理、设置、互联及系统工具类应用，保障产品高效迭代与稳定发布；
 2、负责系统应用的架构设计、模块拆分与工程质量建设，持续优化复杂场景下的性能、稳定性和用户体验；
 3、参与 XR OS 应用层能力建设，结合业务需求抽象高频场景能力，沉淀可复用的 SDK、公共组件和开发范式；
 4、与系统平台、图形、音视频、AI、交互、产品等团队协作，推动系统能力在应用层的工程化落地与体验打磨；
@@ -454,8 +454,8 @@ Base：US｜语言：中 / 英皆可
 8、有系统应用开发经验者优先，如相机、相册、文件管理器、设置、跨端互联、系统工具类应用等。
 加分项
 1、有 XR 设备、移动操作系统或系统级客户端开发经验；
-2、熟悉 AndroidX SDK，具备复杂业务架构设计和落地经验；",770,https://job.xiaohongshu.com/social/position/19590,,,,,,,no_match,,2026-09-24,,2026-09-24,,47,startDate,true,0,,,,,客户端开发,2026-08-08,,false,,,,,,
-21500,Data Privacy Expert,Xiaohongshu,Xiaohongshu,,Posted 57 Days Ago,2026-07-29,57,美国,1,美国,false,,United States,,0,"1. Develop a comprehensive and iterative data privacy governance framework by gaining in-depth understanding of the Company's business operations and data lifecycle, and by incorporating external signals including applicable laws and regulations, regulatory requirements, and industry best practices.
+2、熟悉 AndroidX SDK，具备复杂业务架构设计和落地经验；",770,https://job.xiaohongshu.com/social/position/19590,,,,,,,no_match,,2026-09-24,,2026-09-25,,48,startDate,true,0,,,,,客户端开发,2026-08-08,,false,,,,,,
+21500,Data Privacy Expert,Xiaohongshu,Xiaohongshu,,Posted 57 Days Ago,2026-07-29,58,美国,1,美国,false,,United States,,0,"1. Develop a comprehensive and iterative data privacy governance framework by gaining in-depth understanding of the Company's business operations and data lifecycle, and by incorporating external signals including applicable laws and regulations, regulatory requirements, and industry best practices.
 2. Collaborate closely with cross-functional teams across the organization to translate data privacy requirements into necessary policies, processes, solutions, technical infrastructure, and employee awareness initiatives, while proactively identifying compliance risks from a business perspective.
 3. Drive the implementation of the data privacy governance framework through dedicated initiatives and mechanisms, continuously elevating and sustaining the Company's overall data privacy posture.
 4. Lead the incident response, root cause analysis, and long-term remediation of internal and external data privacy and security incidents.
@@ -463,8 +463,8 @@ Base：US｜语言：中 / 英皆可
 1. Bachelor's degree or above, with a minimum of 4 years of experience in privacy protection, data security, information security, or a related field. Prior experience in the internet industry is preferred.
 2. Strong technical understanding and solid familiarity for underlying data privacy governance solutions, including but not limited to App compliance inspection, server-side data governance controls, data architecture, traffic governance, etc.
 3. Sound knowledge of data privacy laws and industral enforcement standards, including GDPR, COPPA, PIPL, EU AI Act, DSA, and related frameworks.
-4. Excellent capabilities in logical reasoning, communication, and project management, with a high degree of professionalism and strong self-motivation.",1687,https://job.xiaohongshu.com/social/position/21500,,,,,,,no_match,,2026-09-24,,2026-09-24,,57,startDate,true,0,,,,,研发,2026-07-29,,false,,,,,,
-19618,数据隐私专家,Xiaohongshu,Xiaohongshu,,Posted 58 Days Ago,2026-07-28,58,北京市,4,北京市; 上海市; 杭州市; 美国,false,,United States,,0,"1. 理解公司业务场景与数据生命周期现状，基于法律法规、监管要求、行业案例等外部信号搭建可迭代的数据隐私治理体系；
+4. Excellent capabilities in logical reasoning, communication, and project management, with a high degree of professionalism and strong self-motivation.",1687,https://job.xiaohongshu.com/social/position/21500,,,,,,,no_match,,2026-09-24,,2026-09-25,,58,startDate,true,0,,,,,研发,2026-07-29,,false,,,,,,
+19618,数据隐私专家,Xiaohongshu,Xiaohongshu,,Posted 58 Days Ago,2026-07-28,59,北京市,4,北京市; 上海市; 杭州市; 美国,false,,United States,,0,"1. 理解公司业务场景与数据生命周期现状，基于法律法规、监管要求、行业案例等外部信号搭建可迭代的数据隐私治理体系；
 2. 协同公司内各相关团队，将数据隐私要求拆解为必要制度、流程、解决方案、技术基建与人员意识提升，并从业务视角发掘合规风险；
 3. 将数据隐私治理体系通过专项、常态化机制等方式推进，持续提升与维护数据隐私水位；
 4. 负责公司内外部数据隐私安全事件应急响应、止损、溯源与长效解决。
@@ -472,4 +472,4 @@ Base：US｜语言：中 / 英皆可
 1. 本科及以上学历，4年及以上隐私保护、数据安全、信息安全或相关从业经验，互联网行业优先；
 2. 具备良好的技术理解能力，熟悉各类数据隐私解决方案原理，如app检测、服务端/数据管控、数据结构、流量治理等；
 3. 对国内外数据隐私相关法律法规要求及对应执法标准有了解，如GDPR/COPPA/PIPL/EU AI Act/DSA等；
-4. 良好的逻辑分析、沟通表达、项目管理能力与职业性，具备较强的自我驱动力，英文可作为工作语言是加分项。",420,https://job.xiaohongshu.com/social/position/19618,,,,,,,no_match,,2026-09-24,,2026-09-24,,58,startDate,true,0,,,,,研发,2026-07-28,,false,,,,,,
+4. 良好的逻辑分析、沟通表达、项目管理能力与职业性，具备较强的自我驱动力，英文可作为工作语言是加分项。",420,https://job.xiaohongshu.com/social/position/19618,,,,,,,no_match,,2026-09-24,,2026-09-25,,59,startDate,true,0,,,,,研发,2026-07-28,,false,,,,,,
