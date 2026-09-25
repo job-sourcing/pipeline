@@ -1,3 +1,6 @@
 board-watch xiaohongshu_us_fulltime FAILED: list fetch crashed (TimeoutError: The read operation timed out)
 (2026-09-25T00:06:46)
 
+board-watch xiaohongshu_us_fulltime EGRESS-BLOCKED: list fetch unreachable from THIS egress (declared egress_restricted='gha_us'; URLError: <urlopen error _ssl.c:993: The handshake operation timed out>) — EGRESS-BLOCKED, not failed; state untouched; auto-recovers if the block lifts
+(2026-09-25T00:27:10)
+
