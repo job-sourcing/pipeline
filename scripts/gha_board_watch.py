@@ -46,6 +46,7 @@ Budget guards (the 2026-09-09 GHA-burn lesson — SKILL §A3):
 
 Machine-readable result (for the workflow):
   - appends WATCH_RESULT=complete|backlog|failed to $GITHUB_ENV
+    (egress_blocked watches do NOT fail the run — declared in config)
   - always exits 0 (the workflow branches on WATCH_RESULT, not rc)
 
 Seeding (B3, review addendum): --seed-from <list.jsonl> [--first-seen DATE]
@@ -67,8 +68,10 @@ import argparse
 import json
 import os
 import re
+import ssl
 import sys
 import time
+import urllib.error
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
@@ -909,8 +912,31 @@ def _legs_bump(label: str) -> int:
     return m["legs"]
 
 
+def _egress_blocked(w: dict, exc: Exception) -> bool:
+    """S18 (watch runs #59/#60 + board-probe #2): job.xiaohongshu.com
+    TLS-handshake-blocks the GHA US egress while serving the HK egress
+    200 — a DECLARED egress restriction turns that network-class
+    failure into 'egress_blocked' (loud, state untouched, auto-recovers
+    if the block lifts) instead of red-failing every daily run. An
+    HTTP verdict (406/404/5xx) is NEVER an egress block — verdicts
+    still fail loudly; so does any undeclared board."""
+    er = str(w.get("egress_restricted") or "").strip().lower()
+    if not er:
+        return False
+    on_gha = bool(os.environ.get("GITHUB_ACTIONS"))
+    if er in ("gha", "gha_us", "gha-us") and not on_gha:
+        return False               # declared for the GHA egress only
+    if isinstance(exc, urllib.error.HTTPError):
+        return False               # server ANSWER, not an egress block
+    return isinstance(exc, (urllib.error.URLError, TimeoutError,
+                            ConnectionError, OSError, ssl.SSLError))
+
+
 def run_watch(w: dict, cfg: Config) -> str:
-    """One watch pass. Returns 'complete' | 'backlog' | 'failed'."""
+    """One watch pass. Returns 'complete' | 'backlog' | 'failed' |
+    'egress_blocked' (S18: a DECLARED egeo-restricted board whose
+    network-class failure on this egress is loud-but-not-failed —
+    state untouched, auto-recovers)."""
     label = w["label"]
     # S12 multi-company: per-company LI matching knowledge from the watch
     # config (card company variants + partitioned-index slice geography).
@@ -943,6 +969,19 @@ def run_watch(w: dict, cfg: Config) -> str:
         current, list_complete, country_client = current_postings(
             w["board"], w.get("country", ""), w.get("time_type", ""), cfg)
     except Exception as exc:
+        if _egress_blocked(w, exc):
+            note = (f"list fetch unreachable from THIS egress "
+                    f"(declared egress_restricted="
+                    f"{w.get('egress_restricted')!r}; "
+                    f"{type(exc).__name__}: {exc}) — EGRESS-BLOCKED, "
+                    f"not failed; state untouched; auto-recovers if "
+                    f"the block lifts")
+            print(f"[watch:{label}] {note}", file=sys.stderr, flush=True)
+            with open(WATCH_DIR / f"{label}.alerts.log", "a",
+                      encoding="utf-8") as lf:
+                lf.write(f"board-watch {label} EGRESS-BLOCKED: {note}"
+                         f"\n({_now_iso()})\n\n")
+            return "egress_blocked"
         _fail_summary(f"list fetch crashed ({type(exc).__name__}: {exc})")
         return "failed"
     if not current and not list_complete:

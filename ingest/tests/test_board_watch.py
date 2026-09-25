@@ -2312,3 +2312,57 @@ class TestRunWatchClientCountry:
         assert rec["last_startDate"] == "2026-09-19"
         assert rec["startDate_first"] == "2026-09-19"
         assert "needs_enrich" not in rec           # resolved, not pending
+
+
+class TestS18EgressBlocked:
+    """S18: DECLARED egress-restricted boards (xiaohongshu = GHA-US
+    TLS-handshake-blocked, HK-served — runs #59/#60 + board-probe #2)
+    turn network-class failures into 'egress_blocked' (loud, state
+    untouched) instead of red-failing every daily run. HTTP verdicts
+    and undeclared boards still FAIL — the never-green-a-dead-board
+    guard is intact."""
+
+    def test_declared_network_error_blocked_on_gha(self, monkeypatch):
+        import gha_board_watch as gw
+        import urllib.error
+        monkeypatch.setenv("GITHUB_ACTIONS", "true")
+        w = {"label": "x_us_fulltime", "board": "custom:x",
+             "egress_restricted": "gha_us"}
+        exc = urllib.error.URLError(
+            "<urlopen error _ssl.c:993: The handshake operation timed out>")
+        assert gw._egress_blocked(w, exc) is True
+
+    def test_http_error_is_a_verdict_not_a_block(self, monkeypatch):
+        import gha_board_watch as gw
+        import urllib.error
+        monkeypatch.setenv("GITHUB_ACTIONS", "true")
+        w = {"label": "x_us_fulltime", "board": "custom:x",
+             "egress_restricted": "gha_us"}
+        exc = urllib.error.HTTPError(
+            "https://x", 406, "Not Acceptable", None, None)
+        assert gw._egress_blocked(w, exc) is False
+
+    def test_undeclared_board_never_blocked(self, monkeypatch):
+        import gha_board_watch as gw
+        import urllib.error
+        monkeypatch.setenv("GITHUB_ACTIONS", "true")
+        w = {"label": "x_us_fulltime", "board": "custom:x"}
+        exc = urllib.error.URLError("network blip")
+        assert gw._egress_blocked(w, exc) is False
+
+    def test_declared_but_local_egress_not_blocked(self, monkeypatch):
+        import gha_board_watch as gw
+        import urllib.error
+        monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+        w = {"label": "x_us_fulltime", "board": "custom:x",
+             "egress_restricted": "gha_us"}
+        exc = urllib.error.URLError("blip")
+        assert gw._egress_blocked(w, exc) is False
+
+    def test_watch_result_classification(self):
+        # the overall classification: egress_blocked never masks, never
+        # fails — replicated from main()'s logic for the pin
+        vals = {"a": "complete", "b": "egress_blocked"}
+        overall = ("failed" if "failed" in vals
+                   else "backlog" if "backlog" in vals else "complete")
+        assert overall == "complete"

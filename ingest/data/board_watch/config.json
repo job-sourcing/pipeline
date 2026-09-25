@@ -419,7 +419,8 @@
     "United States",
     "San Francisco, California, United States",
     "New York, New York, United States"
-   ]
+   ],
+   "egress_restricted": "gha_us"
   },
   {
    "label": "xpeng_us_fulltime",
