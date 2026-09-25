@@ -1,3 +1,3 @@
-board-watch xiaohongshu_us_fulltime FAILED: list fetch crashed (URLError: <urlopen error [Errno 101] Network is unreachable>)
-(2026-09-24T23:55:28)
+board-watch xiaohongshu_us_fulltime FAILED: list fetch crashed (TimeoutError: The read operation timed out)
+(2026-09-25T00:06:46)
 
