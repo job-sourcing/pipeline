@@ -2631,13 +2631,20 @@ class PaylocityAdapter:
     def _jobs(self) -> list[dict]:
         html = self._board_html()
         d = self._extract_page_data(html)
+        # S18 review P3 4: the Jobs key is the BOARD CONTRACT — absent
+        # means the payload shape changed (template rename, new page
+        # type). Refuse UNCONDITIONALLY: a key-less page trusted as
+        # empty would cache a complete=True 0-row board (mass-gone in
+        # the next diff — the B1 contract's worst case).
+        if "Jobs" not in d:
+            raise RuntimeError(
+                "pageData.Jobs key MISSING on the board page — payload "
+                "shape change (template rename / page type), refusing "
+                "(never an empty board)")
         jobs = d.get("Jobs")
         if not isinstance(jobs, list):
-            if "Job Opportunities" in html:
-                raise RuntimeError(
-                    "pageData.Jobs missing/not-a-list on a live board page "
-                    "— shape anomaly, refusing (never an empty board)")
-            jobs = []          # board page without a jobs region: empty
+            raise RuntimeError(
+                "pageData.Jobs is not a list — shape anomaly, refusing")
         self._module_title = str(d.get("ModuleTitle") or self.org)
         return jobs
 
@@ -2719,14 +2726,29 @@ class PaylocityAdapter:
     @staticmethod
     def _section_html(html: str, header: str) -> str:
         """Inner HTML of the <div> following the
-        <div class="job-listing-header">{header}</div> marker."""
+        <div class="job-listing-header">{header}</div> marker.
+        S18 review SEV-3 3: DIV-DEPTH BALANCED — the paylocity section
+        body may nest <div>s (a JD with a nested layout div would be
+        silently truncated by a naive non-greedy (.*?)</div>); walk to
+        the closing tag at depth 0."""
         m = re.search(
             r'job-listing-header">\s*' + re.escape(header)
-            + r'\s*</div>\s*<div([^>]*)>(.*?)</div>',
+            + r'\s*</div>\s*<div([^>]*)>',
             html, re.S)
         if not m:
             return ""
-        return m.group(2).strip()
+        body_start = m.end()
+        depth = 1
+        i = body_start
+        token = re.compile(r'<(/?)div\b[^>]*>', re.I)
+        for t in token.finditer(html, body_start):
+            depth += -1 if t.group(1) else 1
+            if depth == 0:
+                return html[body_start:t.start()].strip()
+        # no balanced close found — fall back to the next </div>
+        # (better a truncated body than an unbounded one)
+        nxt = html.find("</div>", body_start)
+        return html[body_start:nxt].strip() if nxt >= 0 else ""
 
     def detail_payload(self, external_path: str,
                        country: Optional[str] = None,

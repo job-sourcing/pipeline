@@ -898,7 +898,10 @@ def _send_alerts(label: str, digest: str, cfg: Config) -> None:
 
 # ── orchestration ────────────────────────────────────────────────────────
 def _legs_bump(label: str) -> int:
-    """Date-keyed leg counter — the retrigger cap (GHA-burn lesson)."""
+    """Date-keyed leg counter — the retrigger cap (GHA-burn lesson).
+    S18 review SEV-3 1: also tracks `egress_streak` (consecutive
+    egress_blocked legs, cross-DATE persistent) for the escalation
+    contract in run_watch."""
     meta = WATCH_DIR / f"{label}.legs.json"
     today = date.today().isoformat()
     try:
@@ -906,10 +909,62 @@ def _legs_bump(label: str) -> int:
     except (json.JSONDecodeError, OSError):
         m = {}
     if m.get("date") != today:
-        m = {"date": today, "legs": 0}
+        m = {"date": today, "legs": 0, "egress_streak": m.get("egress_streak", 0)}
     m["legs"] = int(m.get("legs", 0)) + 1
     _atomic_write(meta, json.dumps(m))
     return m["legs"]
+
+
+_EGRESS_STREAK_CAP = 14      # ~2 weeks of daily blocked legs -> failed
+
+
+def _egress_streak_bump(label: str) -> int:
+    meta = WATCH_DIR / f"{label}.legs.json"
+    try:
+        m = json.loads(meta.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        m = {}
+    m["egress_streak"] = int(m.get("egress_streak", 0)) + 1
+    _atomic_write(meta, json.dumps(m))
+    return m["egress_streak"]
+
+
+def _egress_streak_reset(label: str) -> None:
+    meta = WATCH_DIR / f"{label}.legs.json"
+    try:
+        m = json.loads(meta.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return
+    if m.get("egress_streak"):
+        m["egress_streak"] = 0
+        _atomic_write(meta, json.dumps(m))
+
+
+def _validate_variant_uniqueness(watches: list[dict]) -> None:
+    """S18 review SEV-3 2: a variant that names ANOTHER roster company
+    (or a company that IS another watch's variant) would let that
+    company's cards join this company's postings (the variant namespace
+    is trust — one wrong declaration silently cross-joins). Fail LOUD
+    at config-load time, before any fetch."""
+    owners: dict[str, str] = {}
+
+    def _claim(name: str, label: str) -> None:
+        owner = owners.get(name)
+        if owner is not None and owner != label:
+            raise SystemExit(
+                f"[watch] CONFIG ERROR: {name!r} is claimed by BOTH "
+                f"{owner!r} and {label!r} (company/li_variants overlap) "
+                f"— cross-company join risk; fix config.json")
+        owners.setdefault(name, label)
+
+    for w in watches:
+        base = str(w.get("company") or "").strip().lower()
+        if base:
+            _claim(base, w["label"])
+        for v in (w.get("li_variants") or []):
+            v = str(v).strip().lower()
+            if v:
+                _claim(v, w["label"])
 
 
 def _egress_blocked(w: dict, exc: Exception) -> bool:
@@ -970,20 +1025,34 @@ def run_watch(w: dict, cfg: Config) -> str:
             w["board"], w.get("country", ""), w.get("time_type", ""), cfg)
     except Exception as exc:
         if _egress_blocked(w, exc):
+            streak = _egress_streak_bump(label)
             note = (f"list fetch unreachable from THIS egress "
                     f"(declared egress_restricted="
                     f"{w.get('egress_restricted')!r}; "
                     f"{type(exc).__name__}: {exc}) — EGRESS-BLOCKED, "
-                    f"not failed; state untouched; auto-recovers if "
-                    f"the block lifts")
+                    f"state untouched; streak {streak}/"
+                    f"{_EGRESS_STREAK_CAP}")
             print(f"[watch:{label}] {note}", file=sys.stderr, flush=True)
             with open(WATCH_DIR / f"{label}.alerts.log", "a",
                       encoding="utf-8") as lf:
                 lf.write(f"board-watch {label} EGRESS-BLOCKED: {note}"
                          f"\n({_now_iso()})\n\n")
+            # S18 review SEV-3 1: a domain-level death (NXDOMAIN /
+            # connection-refused / TLS) on a declared board must
+            # escalate — after the cap, egress_blocked becomes failed
+            # (a permanently dead board never runs green forever)
+            if streak >= _EGRESS_STREAK_CAP:
+                _fail_summary(
+                    f"EGRESS-BLOCKED STREAK CAP HIT ({streak} legs) — "
+                    f"escalating to failed: the board is likely DEAD "
+                    f"(domain/host-level), not merely egeo-filtered; "
+                    f"check the board URL and re-declare or retire the "
+                    f"watch")
+                return "failed"
             return "egress_blocked"
         _fail_summary(f"list fetch crashed ({type(exc).__name__}: {exc})")
         return "failed"
+    _egress_streak_reset(label)   # the block lifted — streak cleared
     if not current and not list_complete:
         _fail_summary("LIST FAILED — nothing to diff; state untouched "
                       "(fail-safe)")
@@ -1454,6 +1523,7 @@ def main() -> int:
     except (json.JSONDecodeError, OSError) as exc:
         print(f"[watch] config unreadable: {exc}", file=sys.stderr)
         return 0                       # exit-0 contract; tomorrow retries
+    _validate_variant_uniqueness(watches)
     if args.label:
         watches = [w for w in watches if w["label"] == args.label]
         if not watches:

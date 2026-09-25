@@ -2028,8 +2028,10 @@ class TestPaylocityAdapter:
                 country="United States")
 
     def test_b1_shape_anomaly_refused(self, monkeypatch):
-        # a live board page whose pageData has NO Jobs list = shape
-        # anomaly — refuse, never serve an empty complete board
+        # a board page whose pageData has NO Jobs key = payload shape
+        # change — refuse UNCONDITIONALLY (S18 review P3 4: keying on
+        # the English UI string 'Job Opportunities' would trust a
+        # template rename as an empty complete board — mass-gone)
         page = {"ModuleTitle": "X", "Departments": []}
         html = ("<html>Job Opportunities<script>window.pageData = "
                 + json.dumps(page) + ";</script></html>")
@@ -2037,10 +2039,22 @@ class TestPaylocityAdapter:
         monkeypatch.setattr(
             site_boards, "fetch_text",
             lambda url, cfg=None, **kw: html)
-        with pytest.raises(RuntimeError, match="shape anomaly"):
+        with pytest.raises(RuntimeError, match="Jobs key MISSING"):
             site_boards.list_board(
                 f"ats:paylocity:{_PAYLOCITY_GUID}",
                 country="United States")
+
+    def test_section_html_nested_divs_untruncated(self):
+        # S18 review SEV-3 3: a JD body with a NESTED div keeps its
+        # tail (the naive non-greedy match truncated at the first
+        # inner close)
+        html = ('<div class="job-listing-header">Description</div>'
+                '<div><p>PART1</p><div>PART2-KEPT</div>PART3</div>'
+                '<div class="job-listing-header">Requirements</div>'
+                '<div data-bind="html: Job.Requirements">R</div>')
+        out = site_boards.PaylocityAdapter._section_html(
+            html, "Description")
+        assert "PART1" in out and "PART2-KEPT" in out and "PART3" in out
 
     def test_detail_sections_and_entities(self, monkeypatch):
         spec = self._board(monkeypatch, [self._job("4463447")])

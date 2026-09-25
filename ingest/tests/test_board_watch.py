@@ -2366,3 +2366,54 @@ class TestS18EgressBlocked:
         overall = ("failed" if "failed" in vals
                    else "backlog" if "backlog" in vals else "complete")
         assert overall == "complete"
+
+
+class TestS18ReviewAmendments:
+    """The S18 peer-review round's SEV-3 amendments."""
+
+    def test_variant_collision_guard_fires(self, monkeypatch, tmp_path):
+        import gha_board_watch as gw
+        watches = [
+            {"label": "pear_us_fulltime", "board": "custom:pear",
+             "company": "Pear", "li_variants": ["Apple"]},
+            {"label": "apple_us_fulltime", "board": "custom:apple",
+             "company": "Apple"},
+        ]
+        with pytest.raises(SystemExit, match="cross-company join risk"):
+            gw._validate_variant_uniqueness(watches)
+
+    def test_variant_collision_guard_clean_roster(self):
+        import gha_board_watch as gw
+        watches = [
+            {"label": "weride_us_fulltime", "company": "WeRide",
+             "li_variants": ["WeRide", "WeRide Inc."]},
+            {"label": "tplink_us_fulltime", "company": "TP-Link",
+             "li_variants": ["TP-Link", "TP-Link Systems Inc."]},
+        ]
+        gw._validate_variant_uniqueness(watches)   # disjoint: fine
+
+    def test_egress_streak_escalation(self, tmp_path, monkeypatch):
+        import gha_board_watch as gw
+        import urllib.error
+        monkeypatch.setattr(gw, "WATCH_DIR", tmp_path)
+        monkeypatch.setenv("GITHUB_ACTIONS", "true")
+        (tmp_path / "x_us_fulltime.legs.json").write_text(
+            json.dumps({"date": "2000-01-01", "legs": 99,
+                        "egress_streak": gw._EGRESS_STREAK_CAP - 1}))
+        w = {"label": "x_us_fulltime", "board": "custom:x",
+             "company": "X", "egress_restricted": "gha_us"}
+        exc = urllib.error.URLError("handshake timed out")
+        assert gw._egress_blocked(w, exc)
+        streak = gw._egress_streak_bump("x_us_fulltime")
+        assert streak >= gw._EGRESS_STREAK_CAP
+
+    def test_egress_streak_resets_on_success(self, tmp_path, monkeypatch):
+        import gha_board_watch as gw
+        monkeypatch.setattr(gw, "WATCH_DIR", tmp_path)
+        (tmp_path / "x_us_fulltime.legs.json").write_text(
+            json.dumps({"date": "2000-01-01", "legs": 1,
+                        "egress_streak": 5}))
+        gw._egress_streak_reset("x_us_fulltime")
+        m = json.loads(
+            (tmp_path / "x_us_fulltime.legs.json").read_text())
+        assert m["egress_streak"] == 0
