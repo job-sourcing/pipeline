@@ -1,0 +1,40 @@
+﻿caseNumber,caseStatus,caseSubmitted,decisionDate,employerName,jobTitle,socCode,socTitle,fullTimePosition,wageFrom,wageTo,wageUnit,prevailingWage,pwUnit,worksiteCity,worksiteState,worksitePostalCode,annualizedWage,sourceFile
+I-200-24184-168391,Certified,,2024-07-10T00:00:00,"PlusAI, Inc. ",Senior Research Engineer ,15-1221.00,Computer and Information Research Scientists,Y,165000,220000,Year,159182,Year,Santa Clara,CA,95054,165000,FY2024_Q4
+I-200-24185-173902,Certified,,2024-07-11T00:00:00,"PlusAI, Inc. ","Senior Machine Learning Engineer, Planning",15-2051.00,Data Scientists,Y,180000,195000,Year,148699,Year,Santa Clara,CA,95054,180000,FY2024_Q4
+I-200-24205-215934,Certified,,2024-07-30T00:00:00,PLUSAI INC.,Staff Research Engineer,15-1252.00,Software Developers,Y,202585,205000,Year,199534,Year,Santa Clara,CA,95054,202585,FY2024_Q4
+I-200-24207-223533,Certified,,2024-08-01T00:00:00,PlusAI Inc,Senior Software Engineer,15-1299.08,Computer Systems Engineers/Architects,Y,201323,205000,Year,201323,Year,Santa Clara,CA,95054,201323,FY2024_Q4
+I-200-24242-304328,Certified,,2024-09-06T00:00:00,"PlusAI, Inc. ",Senior Software Integration Engineer,15-1252.00,Software Developers,Y,147000,175000,Year,146307,Year,Santa Clara,CA,95054,147000,FY2024_Q4
+I-200-24254-326800,Certified,,2024-09-17T00:00:00,"PlusAI, Inc. ",Senior Systems Engineer,17-2141.02,Automotive Engineers,Y,175000,195000,Year,155043,Year,Santa Clara,CA,95054,175000,FY2024_Q4
+I-200-24261-344750,Certified,,2024-09-24T00:00:00,"PLUSAI, Inc.","Senior Engineering Manager, Control",17-2141.00,Mechanical Engineers,Y,210000,240000,Year,181397,Year,Santa Clara,CA,95054,210000,FY2024_Q4
+I-200-24269-363455,Certified,,2024-10-02T00:00:00,PLUSAI INC.,Staff Research Engineer,15-1252.00,Software Developers,Y,175000,200000,Year,172931,Year,Santa Clara,CA,95054,175000,FY2025_Q1
+I-200-24281-389469,Certified,,2024-10-15T00:00:00,"PlusAI, Inc. ",Staff Software Engineer,15-1252.00,Software Developers,Y,210000,,Year,199534,Year,Santa Clara,CA,95054,210000,FY2025_Q1
+I-200-24283-394332,Certified,,2024-10-16T00:00:00,"PlusAI, Inc. ",Senior Software Engineer,17-2199.05,Mechatronics Engineers,Y,175000,195000,Year,168480,Year,Fremont,CA,94538,175000,FY2025_Q1
+I-200-24292-418609,Certified,,2024-10-25T00:00:00,"PlusAI, Inc.",Senior Software Engineer,17-2199.05,Mechatronics Engineers,Y,175000,195000,Year,153254,Year,Santa Clara,CA,95054,175000,FY2025_Q1
+I-200-24296-425273,Certified,,2024-10-29T00:00:00,"PlusAI, Inc.","Software Engineer, Data Platform",15-1252.00,Software Developers,Y,147000,170000,Year,146307,Year,Santa Clara,CA,95054,147000,FY2025_Q1
+I-200-24312-460216,Certified,,2024-11-15T00:00:00,"PlusAI, Inc.","Staff Software Engineer, Perception",15-1252.00,Software Developers,Y,170000,240000,Year,146307,Year,Santa Clara,CA,95054,170000,FY2025_Q1
+I-200-24326-491338,Certified,,2024-11-29T00:00:00,"PlusAI, Inc.","Software Engineer, Motion Planning",15-1252.00,Software Developers,Y,150000,195000,Year,146307,Year,Santa Clara,CA,95054,150000,FY2025_Q1
+I-200-24331-499736,Certified,,2024-12-03T00:00:00,"PlusAI, Inc.","Engineering Manager, Simulation",11-9041.00,Architectural and Engineering Managers,Y,220000,250000,Year,208125,Year,Santa Clara,CA,95054,220000,FY2025_Q1
+I-200-25017-624915,Certified,,2025-01-24T00:00:00,"PLUSAI, Inc.",Staff Product Engineer,17-2141.00,Mechanical Engineers,Y,166878,170000,Year,166878,Year,Fremont,CA,94538,166878,FY2025_Q2
+I-200-25058-731226,Certified,,2025-03-06T00:00:00,"PlusAI, Inc.",Staff Systems Engineer,17-2141.02,Automotive Engineers,Y,180000,210000,Year,155043,Year,Santa Clara,CA,95054,180000,FY2025_Q2
+I-200-25063-743900,Certified,,2025-03-11T00:00:00,"PLUSAI, Inc.",Senior Research Engineer,15-1252.00,Software Developers,Y,200000,225000,Year,172931,Year,Santa Clara,CA,95054,200000,FY2025_Q2
+I-200-24117-931037,Certified - Withdrawn,,2025-05-19T00:00:00,"PlusAI, Inc. ",Research Engineer ,15-1252.00,Software Developers,Y,185000,205000,Year,184662,Year,Santa Clara ,CA,95054,185000,FY2025_Q3
+I-200-25085-803384,Certified,,2025-04-01T00:00:00,"PlusAI, Inc.",Engineering Manager,17-2199.08,Robotics Engineers,Y,210000,250000,Year,179858,Year,Santa Clara,CA,95054,210000,FY2025_Q3
+I-200-25087-811531,Certified,,2025-04-04T00:00:00,"PlusAI, Inc.","Software Engineer, Senior",17-2199.05,Mechatronics Engineers,Y,165000,180000,Year,134077,Year,Fremont,CA,94538,165000,FY2025_Q3
+I-200-25091-820214,Certified,,2025-04-08T00:00:00,"PlusAI, Inc.",Staff Software Engineer,15-1211.00,Computer Systems Analysts,Y,200000,235000,Year,168397,Year,Fremont,CA,94538,200000,FY2025_Q3
+I-200-25114-901161,Certified,,2025-05-01T00:00:00,"PlusAI, Inc.","Software Engineer, Motion Planning",15-1252.00,Software Developers,Y,185000,210000,Year,146078,Year,Philadelphia,PA,19103,185000,FY2025_Q3
+I-200-25114-903041,Certified,,2025-05-01T00:00:00,"PlusAI, Inc.",Staff Software Engineer,15-1252.00,Software Developers,Y,200000,240000,Year,199534,Year,Santa Clara,CA,95054,200000,FY2025_Q3
+I-200-25115-905189,Certified,,2025-05-02T00:00:00,"PLUSAI, Inc.",Senior Software Engineer,15-1253.00,Software Quality Assurance Analysts and Testers,Y,145000,185000,Year,133432,Year,SANTA CLARA,CA,95054,145000,FY2025_Q3
+I-200-25119-918630,Certified,,2025-05-06T00:00:00,"PLUSAI, Inc.",Senior Research Engineer,17-2199.05,Mechatronics Engineers,Y,175000,200000,Year,126672,Year,Santa Clara,CA,95054,175000,FY2025_Q3
+I-200-25120-921236,Certified,,2025-05-07T00:00:00,"PlusAI, Inc.",Senior Research Engineer,17-2199.05,Mechatronics Engineers,Y,180000,200000,Year,126672,Year,Santa Clara,CA,95054,180000,FY2025_Q3
+I-200-25143-015671,Certified,,2025-06-02T00:00:00,"PlusAI, Inc.","Research Engineer, Mapping & Localization",15-1252.00,Software Developers,Y,150000,165000,Year,146307,Year,Santa Clara,CA,95054,150000,FY2025_Q3
+I-200-25148-026654,Certified,,2025-06-04T00:00:00,"PlusAI, Inc.","Research Engineer, Perception",15-1252.00,Software Developers,Y,147000,165000,Year,146307,Year,Santa Clara,CA,95054,147000,FY2025_Q3
+I-200-25149-032182,Certified,,2025-06-05T00:00:00,"PlusAI, Inc.",Systems Engineer,15-1253.00,Software Quality Assurance Analysts and Testers,Y,133432,140000,Year,133432,Year,Santa Clara,CA,95054,133432,FY2025_Q3
+I-200-25149-032216,Certified,,2025-06-05T00:00:00,"PlusAI, Inc.",Senior Machine Learning Engineer,17-2112.00,Industrial Engineers,Y,175000,200000,Year,142293,Year,Santa Clara,CA,95054,175000,FY2025_Q3
+I-200-25163-082963,Certified,,2025-06-18T00:00:00,"PlusAI, Inc.","Senior Robotics, Software Engineer",15-1252.00,Software Developers,Y,175000,195000,Year,172931,Year,Santa Clara,CA,95054,175000,FY2025_Q3
+I-200-25196-176499,Certified,,2025-07-22T00:00:00,"PlusAI, Inc.",Senior Embedded Software Integration Engineer,15-1252.00,Software Developers,Y,135000,155000,Year,130707,Year,Chicago,IL,60614,135000,FY2025_Q4
+I-200-21102-216709,Certified - Withdrawn,,2025-11-04T00:00:00,"DINOPLUSAI US, INC.",PRINCIPAL SOFTWARE ENGINEER,15-1133.00,"Software Developers, Systems Software",Y,121000,123000,Year,120931,Year,NEWARK,CA,94560,121000,FY2026_Q3
+I-200-24141-015812,Certified - Withdrawn,,2026-04-24T00:00:00,"PlusAI, Inc. ",Senior Mechatronics Engineer,17-2199.05,Mechatronics Engineers,Y,175000,195000,Year,163696,Year,Fremont,CA,94538,175000,FY2026_Q3
+I-200-25346-480092,Certified,,2025-12-19T00:00:00,"PLUSAI, Inc.",Staff Software Engineer,15-1252.00,Software Developers,Y,213512,223512,Year,213512,Year,Fremont,CA,94538,213512,FY2026_Q3
+I-200-26134-908062,Certified,,2026-05-20T00:00:00,"PlusAI, Inc.",Research Engineer,15-1221.00,Computer and Information Research Scientists,Y,127712,174403,Year,127712,Year,Santa Clara,CA,95054,127712,FY2026_Q3
+I-200-26134-910956,Certified,,2026-05-21T00:00:00,"PlusAI, Inc.",Senior Research Engineer,15-1221.00,Computer and Information Research Scientists,Y,180000,250000,Year,164403,Year,Santa Clara,CA,95054,180000,FY2026_Q3
+I-200-26154-978026,Certified,,2026-06-10T00:00:00,"PlusAI, Inc.",Senior Software Engineer,17-2199.08,Robotics Engineers,Y,150000,220000,Year,100318,Year,Santa Clara,CA,95054,150000,FY2026_Q3
