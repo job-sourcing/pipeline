@@ -50,23 +50,38 @@ jobs:
         run: |
           Q="${QUARTER:-FY2026_Q3}"
           mkdir -p ingest/data/ats_seed/s20_census
-          for BASE in "https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs" "https://www.dol.gov/media"; do
-            URL="$BASE/LCA_Disclosure_Data_${Q}.xlsx"
-            echo "trying $URL"
-            if curl -sfL --retry 3 -A "Mozilla/5.0 (X11; Linux x86_64)" -o "lca_${Q}.xlsx" "$URL"; then
-              SZ=$(stat -c%s "lca_${Q}.xlsx")
-              echo "downloaded $URL ($SZ bytes)"
-              if [ "$SZ" -gt 1000000 ]; then break; fi
-            fi
-          done
-          SZ=$(stat -c%s "lca_${Q}.xlsx" 2>/dev/null || echo 0)
-          if [ "$SZ" -lt 1000000 ]; then
-            echo "::error::LCA file download failed (size $SZ)"
-            exit 1
-          fi
-          # zip sanity: the central directory must parse (guards the
-          # truncation-dressed-as-success trap)
-          python3 -c "import zipfile,sys; zipfile.ZipFile('lca_${Q}.xlsx').namelist(); print('zip OK')" || { echo '::error::downloaded file is not a valid zip (truncated?)'; exit 1; }
+          python3 - << EOF
+          import requests, sys
+          q = "${Q}"
+          bases = [
+              "https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs",
+              "https://www.dol.gov/media",
+          ]
+          ua = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0"}
+          last = None
+          for base in bases:
+              url = f"{base}/LCA_Disclosure_Data_{q}.xlsx"
+              for attempt in range(3):
+                  try:
+                      r = requests.get(url, headers=ua, timeout=600, stream=True)
+                      print(f"{url} -> {r.status_code}")
+                      if r.status_code == 200:
+                          body = r.content
+                          if len(body) > 1_000_000:
+                              open(f"lca_{q}.xlsx", "wb").write(body)
+                              print(f"saved {len(body)} bytes")
+                              sys.exit(0)
+                          last = f"tiny body {len(body)} bytes from {url}"
+                      else:
+                          last = f"{r.status_code} from {url}"
+                  except Exception as e:
+                      last = f"{type(e).__name__}: {e} from {url}"
+                  print("retry", attempt + 1, last)
+          print(f"::error::LCA download failed: {last}")
+          sys.exit(1)
+          EOF
+          python3 -c "import zipfile; zipfile.ZipFile('lca_${Q}.xlsx').namelist(); print('zip OK')" || { echo '::error::not a valid zip (truncated?)'; exit 1; }
 
       - name: Aggregate employer universe
         env:
