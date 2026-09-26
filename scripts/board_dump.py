@@ -603,10 +603,18 @@ def phase_details(args, out: Path) -> int:
                 and det.get("listTitleChecked") != r["title"]):
             drift.append(r)
     if drift:
-        print(f"[details] title-drift: {len(drift)} settled rows whose "
-              f"detail title != current list title (re-fetching; the "
-              f"fresh record carries listTitleChecked)", flush=True)
-        todo = todo + drift
+        # dedupe against the refetch-similar tier (a settled row can be in
+        # BOTH — lacking similarJobs AND title-drifted — one fetch serves
+        # both) and PREPEND: the drift rows are the correctness-critical
+        # set (INV-3); a full batch of new rows must not defer them
+        todo_ids = {r["reqId"] for r in todo}
+        drift = [r for r in drift if r["reqId"] not in todo_ids]
+        if drift:
+            print(f"[details] title-drift: {len(drift)} settled rows "
+                  f"whose detail title != current list title "
+                  f"(re-fetching first; the fresh record carries "
+                  f"listTitleChecked)", flush=True)
+            todo = drift + todo
     print(f"[details] {len(rows)} rows, {len(settled)} settled, "
           f"{n_err_rows} error rows "
           f"({len(three_strikes)} past 3-strike cap), "
@@ -1875,7 +1883,21 @@ def _derive_csv_row(r: dict, det: dict, sig: Optional[dict],
             pass
     row = {
         "reqId": r["reqId"],
-        "title": info.get("title") or r.get("title") or "",
+        # S19 finish-side drift fallback: a detail whose listTitleChecked
+        # EQUALS the current list title is a VERIFIED-PERSISTENT list-vs-
+        # detail divergence (the drift re-fetch already ran against this
+        # exact list title). The verbatim join matched the card on the
+        # LIST title, so the list title is the join-consistent spelling —
+        # ship it (INV-3 green by construction) instead of failing forever
+        # on a detail endpoint that never converges.
+        "title": (
+            r.get("title")
+            if (det.get("listTitleChecked")
+                and det.get("listTitleChecked") == r.get("title")
+                and info.get("title")
+                and info.get("title") != r.get("title"))
+            else info.get("title") or r.get("title") or ""
+        ),
         "company": company,
         "hiringOrg": det.get("hiringOrg") or "",
         "timeType": info.get("timeType") or "",

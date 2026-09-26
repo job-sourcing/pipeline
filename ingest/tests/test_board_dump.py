@@ -888,6 +888,67 @@ class TestFinishJoin:
         assert payload["signals_matched"] == 2
 
 
+
+class TestFinishDriftFallback:
+    """S19 review amendment: a detail whose listTitleChecked EQUALS the
+    current list title is a verified-persistent divergence — finish ships
+    the LIST title (join-consistent by construction) instead of failing
+    INV-3 forever on a detail endpoint that never converges."""
+
+    def _run_finish(self, tmp_path, detail_extra, list_title, detail_title):
+        out = tmp_path / "dump"
+        rows = [_list_row(req_id="JR1", title=list_title)]
+        board_dump._atomic_write_text(
+            out.with_suffix(".list.jsonl"),
+            json.dumps(rows[0]) + "\n")
+        info = dict(_detail_info())
+        info["title"] = detail_title
+        rec = {"reqId": "JR1", "info": info,
+               "hiringOrg": "x", "similarJobsCount": 0}
+        rec.update(detail_extra)
+        board_dump._atomic_write_text(
+            out.with_suffix(".details.jsonl"), json.dumps(rec) + "\n")
+        args = type("A", (), {
+            "board": "nvidia|wd5|x", "company": "NVIDIA", "country": "US",
+            "time_type": "Full time", "require_details": False})()
+        rc = board_dump.phase_finish(args, out)
+        assert rc == 0
+        with open(out.with_suffix(".csv"), newline="",
+                  encoding="utf-8-sig") as f:
+            return list(csv.DictReader(f))[0]
+
+    def test_persistent_divergence_ships_list_title(self, tmp_path):
+        row = self._run_finish(
+            tmp_path,
+            detail_extra={"listTitleChecked": "New Edited Title"},
+            list_title="New Edited Title",
+            detail_title="Old Stale Title")
+        # the marker equals the current list title → the list title IS
+        # the join-consistent spelling (the join matched the card on it)
+        assert row["title"] == "New Edited Title"
+
+    def test_unchecked_divergence_ships_detail_title(self, tmp_path):
+        row = self._run_finish(
+            tmp_path,
+            detail_extra={},          # never drift-checked
+            list_title="New Edited Title",
+            detail_title="Old Stale Title")
+        # no marker: the detail title still wins (a fresh drift check
+        # will fire on the NEXT details run — that tier's contract)
+        assert row["title"] == "Old Stale Title"
+
+    def test_marker_for_a_different_list_title_ships_detail(self, tmp_path):
+        row = self._run_finish(
+            tmp_path,
+            detail_extra={"listTitleChecked": "Some Older Title"},
+            list_title="New Edited Title",
+            detail_title="Old Stale Title")
+        # the marker records a DIFFERENT list title → the current list
+        # title has changed again → a new drift check is due; detail
+        # title stands until that check runs
+        assert row["title"] == "Old Stale Title"
+
+
 class TestFinishB5Statuses:
     """B5 posting-level statuses (S7-A2 D): no_match emitted when the index
     exhausted; blocked when the matched card's fetch was blocked;
