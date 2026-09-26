@@ -1,13 +1,13 @@
-rows: 55 (unique reqIds: 55)
-details merged: 55
-descriptions present: 55
-locations enumerated (not 'N Locations'): 55
-startDate present: 55
-signals: matched=41 no_match=14 blocked=0 not_checked=0
-location entries total (sum nLocations): 74
-similar-job edges: 668
-facet census: 5 facets / 204 values (jd_us_fulltime.facets.json)
-facet-tagged rows: workerSubType=57 jobFamilyGroup=57 (from facet_tags.jsonl)
-facet tag coverage: 55/55 rows (0 untagged)
-questionnaire definitions: 1 id(s) covering 55/55 rows; 1 fetched (2 questions → jd_us_fulltime.questionnaires.csv)
-h1b wage bands: 0/55 rows banded (0 title+state, 0 title-only) from 2 LCA filings → jd_us_fulltime.h1b_lca.csv
+rows: 56 (unique reqIds: 56)
+details merged: 56
+descriptions present: 56
+locations enumerated (not 'N Locations'): 56
+startDate present: 56
+signals: matched=44 no_match=0 blocked=0 not_checked=12
+location entries total (sum nLocations): 79
+similar-job edges: 695
+facet census: 5 facets / 209 values (jd_us_fulltime.facets.json)
+facet-tagged rows: workerSubType=657 jobFamilyGroup=656 (from facet_tags.jsonl)
+facet tag coverage: 56/56 rows (0 untagged)
+questionnaire definitions: 1 id(s) covering 56/56 rows; 1 fetched (2 questions → jd_us_fulltime.questionnaires.csv)
+h1b wage bands: 0/56 rows banded (0 title+state, 0 title-only) from 4 LCA filings → jd_us_fulltime.h1b_lca.csv

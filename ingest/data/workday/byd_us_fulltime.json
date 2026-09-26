@@ -2,13 +2,13 @@
  "board": "ats:greenhouse:byd",
  "company": "BYD",
  "country": "United States",
- "time_type": "Full time",
- "dumpDate": "2026-09-24",
- "count": 22,
- "details_merged": 22,
- "signals_matched": 6,
+ "time_type": "",
+ "dumpDate": "2026-09-26",
+ "count": 21,
+ "details_merged": 21,
+ "signals_matched": 20,
  "similar_edges": 0,
- "facet_tagged_rows": 22,
+ "facet_tagged_rows": 21,
  "rows": [
   {
    "reqId": "68",
@@ -17,7 +17,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/4819346008",
    "externalPath": "/jobs/4819346008",
    "locationsText": "Cupertino, California, United States",
-   "postedOn": "Posted 427 Days Ago",
+   "postedOn": "Posted 429 Days Ago",
    "timeType": "",
    "bulletFields": [
     "68"
@@ -51,8 +51,21 @@
    "error": null,
    "jobFamilyGroup": "BYD ELECTRONICS AMERICA",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4358791177",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4358791177",
+    "title": "Business Development/Account Manager (Data Center/System Integration)",
+    "company": "BYD North America",
+    "location": "Cupertino, CA",
+    "linkedin_posted_date": "2026-01-08",
+    "num_applicants": 114,
+    "applicants_label": "114 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "8 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:25",
+    "match_method": "title"
    }
   },
   {
@@ -62,7 +75,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5159620008",
    "externalPath": "/jobs/5159620008",
    "locationsText": "Cupertino",
-   "postedOn": "Posted 189 Days Ago",
+   "postedOn": "Posted 191 Days Ago",
    "timeType": "",
    "bulletFields": [
     "149"
@@ -120,7 +133,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5425903008",
    "externalPath": "/jobs/5425903008",
    "locationsText": "3465 E East Foothills, Fl 2, Pasadena, California, United States",
-   "postedOn": "Posted 8 Days Ago",
+   "postedOn": "Posted 10 Days Ago",
    "timeType": "",
    "bulletFields": [
     "163"
@@ -178,7 +191,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5211861008",
    "externalPath": "/jobs/5211861008",
    "locationsText": "Lancaster, CA (Office Only - Worksite in Dickinson)",
-   "postedOn": "Posted 141 Days Ago",
+   "postedOn": "Posted 143 Days Ago",
    "timeType": "",
    "bulletFields": [
     "168"
@@ -212,8 +225,21 @@
    "error": null,
    "jobFamilyGroup": "ESS AFTERSALES",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4411243891",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4411243891",
+    "title": "ESS Field Service Technician - Dickinson, TX",
+    "company": "BYD North America",
+    "location": "Dickinson, TX",
+    "linkedin_posted_date": "2026-05-06",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:10",
+    "match_method": "title"
    }
   },
   {
@@ -223,7 +249,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5211893008",
    "externalPath": "/jobs/5211893008",
    "locationsText": "Lancaster, CA (Office Only - Worksite in Modesto)",
-   "postedOn": "Posted 141 Days Ago",
+   "postedOn": "Posted 143 Days Ago",
    "timeType": "",
    "bulletFields": [
     "170"
@@ -257,8 +283,21 @@
    "error": null,
    "jobFamilyGroup": "ESS AFTERSALES",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4411258556",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4411258556",
+    "title": "ESS Field Service Technician - Modesto, CA",
+    "company": "BYD North America",
+    "location": "Modesto, CA",
+    "linkedin_posted_date": "2026-05-06",
+    "num_applicants": 33,
+    "applicants_label": "33 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:13",
+    "match_method": "title"
    }
   },
   {
@@ -268,7 +307,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5419021008",
    "externalPath": "/jobs/5419021008",
    "locationsText": "Pasadena, California, United States",
-   "postedOn": "Posted 16 Days Ago",
+   "postedOn": "Posted 18 Days Ago",
    "timeType": "",
    "bulletFields": [
     "195"
@@ -302,8 +341,21 @@
    "error": null,
    "jobFamilyGroup": "ESS BUSINESS DEVELOPMENT",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4462588007",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4462588007",
+    "title": "ESS Project Manager",
+    "company": "BYD North America",
+    "location": "Pasadena, CA",
+    "linkedin_posted_date": "2026-09-09",
+    "num_applicants": 54,
+    "applicants_label": "54 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:14",
+    "match_method": "title"
    }
   },
   {
@@ -313,7 +365,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5255249008",
    "externalPath": "/jobs/5255249008",
    "locationsText": "Lancaster, CA",
-   "postedOn": "Posted 105 Days Ago",
+   "postedOn": "Posted 107 Days Ago",
    "timeType": "",
    "bulletFields": [
     "180"
@@ -347,8 +399,21 @@
    "error": null,
    "jobFamilyGroup": "ESS AFTERSALES",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4427643267",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4427643267",
+    "title": "Field Commissioning Engineer",
+    "company": "BYD North America",
+    "location": "Lancaster, CA",
+    "linkedin_posted_date": "2026-06-11",
+    "num_applicants": 37,
+    "applicants_label": "37 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:24",
+    "match_method": "title"
    }
   },
   {
@@ -358,7 +423,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/4524420008",
    "externalPath": "/jobs/4524420008",
    "locationsText": "Lancaster, California, United States",
-   "postedOn": "Posted 594 Days Ago",
+   "postedOn": "Posted 596 Days Ago",
    "timeType": "",
    "bulletFields": [
     "27"
@@ -392,53 +457,21 @@
    "error": null,
    "jobFamilyGroup": "ESS AFTERSALES",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
-   }
-  },
-  {
-   "reqId": "182",
-   "title": "Finance- Accounts Payable Manager",
-   "company": "byd",
-   "url": "https://job-boards.greenhouse.io/byd/jobs/5350524008",
-   "externalPath": "/jobs/5350524008",
-   "locationsText": "Pasadena, CA",
-   "postedOn": "Posted 69 Days Ago",
-   "timeType": "",
-   "bulletFields": [
-    "182"
-   ],
-   "ats": "greenhouse",
-   "firstPublishedIso": "2026-07-17",
-   "departments": [
-    "FINANCE"
-   ],
-   "countries": [
-    "United States"
-   ],
-   "applicationDeadline": "",
-   "detail": {
-    "title": "Finance- Accounts Payable Manager",
-    "location": "Pasadena, CA",
-    "additionalLocations": [],
-    "jobDescription": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;sub&gt;&lt;strong&gt;The following description is not intended as an exhaustive list of all responsibilities, duties and skills required of personnel so classified. Management retains the discretion of adding or changing the duties of the position at any time.&lt;/strong&gt;&lt;/sub&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The following description is not intended as an exhaustive list of all responsibilities, duties and skills required of personnel so classified. Management retains the discretion of adding or changing the duties of the position at any time.&lt;/p&gt;\n&lt;h1&gt;SUMMARY&lt;/h1&gt;\n&lt;p&gt;We are seeking an experienced, pragmatic, and analytical Accounts Payable Manager to lead our corporate AP function. The ideal candidate will seamlessly balance hands-on operational excellence with strategic leadership. You will first ensure smooth daily P2P operations and accurate month-end closings, while empowering and mentoring the AP team. Leveraging your strong analytical mindset, you will perform regular financial reviews to identify cost inefficiencies and, ultimately, architect professionally, drive systemic efficiency, timeliness, and absolute accuracy.&lt;/p&gt;\n&lt;h1&gt;KEY RESPONSIBILITIES&lt;/h1&gt;\n&lt;p&gt;&lt;strong&gt;Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions.&lt;/strong&gt;&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;Core AP Operations &amp;amp;P2P Process Management.&lt;/li&gt;\n&lt;/ol&gt;\n&lt;ul&gt;\n&lt;li&gt;Oversee the daily operations of the Accounts Payable team, ensuring timely and accurate processing of vendor invoices, employee expense reports, and cash disbursements.&lt;/li&gt;\n&lt;li&gt;Enforce strict 3-way match protocols (PO, Goods Receipt, and Invoice) across all legal entities, findting and tracking any variances.&lt;/li&gt;\n&lt;li&gt;Manage corporate treasury payments and bank disbursement batches, optimizing Days Payable Outstanding (DPO) while maintaining healthy vendor relationships and safeguarding internal control (SoD) frameworks.&lt;/li&gt;\n&lt;li&gt;Lead the AP month-end and year-end closing process, including accrued expenses estimates, accounts payable aging analysis, and intercompany reconciliations.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;.&amp;nbsp; &amp;nbsp; &amp;nbsp; 2.Team Leadership &amp;amp; Talent Enablement.&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead, mentor, and develop the Accounts Payable team, establishing clear performance metrics (KPIs) aligned with process accuracy and cycle times.&lt;/li&gt;\n&lt;li&gt;Empower team members by translating complex compliance requirements into practical, actionable training and standard operating procedures (SOPs).&lt;/li&gt;\n&lt;li&gt;Design and execute a reliable talent succession plan, identifying high-potential team members and guiding them toward career advancement within the finance organization.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;AP Analytics &amp;amp; Reporting&lt;/li&gt;\n&lt;/ol&gt;\n&lt;ul&gt;\n&lt;li&gt;Develop and present comprehensive monthly/quarterly AP review reports for leadership, highlighting departmental spending trends, process cycle times, and operational.&lt;/li&gt;\n&lt;li&gt;Analyze key operational metrics (e.g., invoice processing costs, payment accuracy rates) and monitor T&amp;amp;E compliance and recurring vendor disbursement patterns to detect and eliminate cost inefficiencies.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;Workflow Architecture &amp;amp; Foolproof Design&lt;/li&gt;\n&lt;/ol&gt;\n&lt;ul&gt;\n&lt;li&gt;Diagnose &amp;amp; Optimize: Identify systemic process vulnerabilities from historical data and review reports, and continuously optimize the end-to-end P2P and expense reimbursement workflows.&lt;/li&gt;\n&lt;li&gt;Implement Foolproof Controls: Embed proactive &quot;foolproof&quot; logical checks within the ERP and automated AP systems to automatically intercept errors before they occur (e.g., system blocks for duplicate invoice numbers, redundant supplier bank detail modifications, or overlapping vehicle rental periods).&lt;/li&gt;\n&lt;li&gt;System Automation: Leverage advanced technologies (OCR, automated workflows) to achieving maximum efficiency and absolute accuracy.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h1&gt;QUALIFICATOINS&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/h1&gt;\n&lt;ul&gt;\n&lt;li&gt;Bachelor’s degree in Accounting, Finance, or a related field. CPA, CMA, or professional certifications are highly preferred.&lt;/li&gt;\n&lt;li&gt;Minimum 5-8 years of corporate accounting experience, with at least 3 years in a supervisory or leadership role within a US-affiliated or multinational company.&lt;/li&gt;\n&lt;li&gt;Exceptional logical reasoning, capable of translating raw ledgers into executive-ready review reports and diagnosing subtle tracking anomalies.&lt;/li&gt;\n&lt;li&gt;Strong process engineering mindset with a track record of implementing automated, systemic controls that eliminate manual inefficiencies and safeguard financial accuracy.&lt;/li&gt;\n&lt;li&gt;Excellent coaching, communication, and SOP authoring abilities. Deep understanding of US GAAP, SOX/internal control frameworks, and Segregation of Duties (SoD). Proficiency in enterprise ERP (SAP, Oracle, NetSuite) and AP tools (Concur, Coupa).&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h1&gt;KEY COMPETENCIES：&lt;/h1&gt;\n&lt;ul&gt;\n&lt;li&gt;Ability to identify trends, patterns, and anomalies within high-volume transaction data; translates raw financial ledgers into actionable management insights.&lt;/li&gt;\n&lt;li&gt;A self-driven urge to optimize processes and eliminate manual bottlenecks; passionate about leveraging technology to build error-proof (Poka-Yoke) workflows.&lt;/li&gt;\n&lt;li&gt;Strong cross-functional coordination and communication skills; capable of holding departments accountable to T&amp;amp;E policies and compliance guidelines firmly but diplomatically.&lt;/li&gt;\n&lt;li&gt;Adaptable to fast-paced corporate environments, with the ability to manage competing priorities during critical periods.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h1&gt;ROLE PROGRESSION &amp;amp; SUCCESS MEASURES:&lt;/h1&gt;\n&lt;ul&gt;\n&lt;li&gt;Days Payable Outstanding (DPO): Optimized according to company cash flow strategy.&lt;/li&gt;\n&lt;li&gt;Invoice Processing Cycle Time (DPO): Average time taken from invoice receipt to system booking.&lt;/li&gt;\n&lt;li&gt;T&amp;amp;E Policy Compliance Rate: Accuracy of employee expense claims and reduction in repetitive/anomalous claims.&lt;/li&gt;\n&lt;li&gt;Audit Deficiencies: Zero material weaknesses or significant deficiencies identified in the P2P cycle during internal/external audits.&lt;/li&gt;\n&lt;/ul&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;sub&gt;BYD America Corporation/ BYD Motors, Inc./BYD Coach &amp;amp;Bus LLC/BYD Energy LLC is an Equal Opportunity Employer that does not discriminate on the basis of actual or perceived race, color, national origin, ancestry, sex, gender, gender identity, pregnancy, childbirth or related medical condition, religious creed, physical disability, mental disability, age, medical condition, marital status, veteran status, sexual orientation, genetic information or any other characteristic protected by federal, state or local law. Our management team is dedicated to this policy with respect to recruitment, hiring, placement, promotion, transfer, training, compensation, benefits, employee activities and general treatment during employment.&lt;/sub&gt;&lt;/p&gt;&lt;/div&gt;",
-    "timeType": "",
-    "startDate": "",
-    "externalUrl": "https://job-boards.greenhouse.io/byd/jobs/5350524008",
-    "jobReqId": "182",
-    "postedOn": "Posted 69 Days Ago",
-    "country": {
-     "descriptor": "United States"
-    }
-   },
-   "hiringOrg": "BYD North America",
-   "similarJobsCount": 0,
-   "similarJobs": [],
-   "error": null,
-   "jobFamilyGroup": "FINANCE",
-   "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4459655410",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4459655410",
+    "title": "Field Service Technician",
+    "company": "BYD North America",
+    "location": "Lancaster, CA",
+    "linkedin_posted_date": "2026-08-27",
+    "num_applicants": 25,
+    "applicants_label": "25 applicants",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:27",
+    "match_method": "title"
    }
   },
   {
@@ -448,7 +481,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5366061008",
    "externalPath": "/jobs/5366061008",
    "locationsText": "Pasadena, CA",
-   "postedOn": "Posted 65 Days Ago",
+   "postedOn": "Posted 67 Days Ago",
    "timeType": "",
    "bulletFields": [
     "183"
@@ -506,7 +539,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5372221008",
    "externalPath": "/jobs/5372221008",
    "locationsText": "Cupertino",
-   "postedOn": "Posted 58 Days Ago",
+   "postedOn": "Posted 60 Days Ago",
    "timeType": "",
    "bulletFields": [
     "185"
@@ -540,8 +573,21 @@
    "error": null,
    "jobFamilyGroup": "BYD ELECTRONICS AMERICA",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4446544101",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4446544101",
+    "title": "Junior Account Manager",
+    "company": "BYD North America",
+    "location": "Cupertino, CA",
+    "linkedin_posted_date": "2026-07-29",
+    "num_applicants": 91,
+    "applicants_label": "91 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:21",
+    "match_method": "title"
    }
   },
   {
@@ -551,7 +597,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/4571428008",
    "externalPath": "/jobs/4571428008",
    "locationsText": "Cupertino, California, United States",
-   "postedOn": "Posted 562 Days Ago",
+   "postedOn": "Posted 564 Days Ago",
    "timeType": "",
    "bulletFields": [
     "38"
@@ -609,7 +655,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/4896882008",
    "externalPath": "/jobs/4896882008",
    "locationsText": "Cupertino, CA",
-   "postedOn": "Posted 392 Days Ago",
+   "postedOn": "Posted 394 Days Ago",
    "timeType": "",
    "bulletFields": [
     "76"
@@ -643,8 +689,21 @@
    "error": null,
    "jobFamilyGroup": "BYD ELECTRONICS AMERICA",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4292821118",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4292821118",
+    "title": "Mechanical Engineer-OEM",
+    "company": "BYD North America",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2025-08-29",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 year ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:07",
+    "match_method": "title"
    }
   },
   {
@@ -654,7 +713,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5167125008",
    "externalPath": "/jobs/5167125008",
    "locationsText": "Manteca, CA",
-   "postedOn": "Posted 182 Days Ago",
+   "postedOn": "Posted 184 Days Ago",
    "timeType": "",
    "bulletFields": [
     "156"
@@ -688,8 +747,21 @@
    "error": null,
    "jobFamilyGroup": "ESS AFTERSALES",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4458291735",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4458291735",
+    "title": "Rework Technician",
+    "company": "BYD North America",
+    "location": "Manteca, CA",
+    "linkedin_posted_date": "2026-08-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:22",
+    "match_method": "title"
    }
   },
   {
@@ -699,7 +771,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/4905904008",
    "externalPath": "/jobs/4905904008",
    "locationsText": "Cupertino, California, United States",
-   "postedOn": "Posted 385 Days Ago",
+   "postedOn": "Posted 387 Days Ago",
    "timeType": "",
    "bulletFields": [
     "79"
@@ -733,8 +805,21 @@
    "error": null,
    "jobFamilyGroup": "BYD ELECTRONICS AMERICA",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4420246019",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4420246019",
+    "title": "Sales Manager-Data Center Solutions",
+    "company": "BYD North America",
+    "location": "Cupertino, CA",
+    "linkedin_posted_date": "2026-05-28",
+    "num_applicants": 42,
+    "applicants_label": "42 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:20",
+    "match_method": "title"
    }
   },
   {
@@ -744,7 +829,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5082451008",
    "externalPath": "/jobs/5082451008",
    "locationsText": "Pasadena,LA,California",
-   "postedOn": "Posted 241 Days Ago",
+   "postedOn": "Posted 243 Days Ago",
    "timeType": "",
    "bulletFields": [
     "134"
@@ -802,7 +887,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/4515799008",
    "externalPath": "/jobs/4515799008",
    "locationsText": "Las Vegas, Nevada, United States",
-   "postedOn": "Posted 601 Days Ago",
+   "postedOn": "Posted 603 Days Ago",
    "timeType": "",
    "bulletFields": [
     "14"
@@ -836,8 +921,21 @@
    "error": null,
    "jobFamilyGroup": "ESS AFTERSALES",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4369688785",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4369688785",
+    "title": "Service and Maintenance Technician",
+    "company": "BYD North America",
+    "location": "Las Vegas, NV",
+    "linkedin_posted_date": "2026-02-05",
+    "num_applicants": 89,
+    "applicants_label": "89 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "7 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:09",
+    "match_method": "title"
    }
   },
   {
@@ -847,7 +945,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5381121008",
    "externalPath": "/jobs/5381121008",
    "locationsText": "Lancaster, CA",
-   "postedOn": "Posted 50 Days Ago",
+   "postedOn": "Posted 52 Days Ago",
    "timeType": "",
    "bulletFields": [
     "188"
@@ -881,8 +979,21 @@
    "error": null,
    "jobFamilyGroup": "ESS AFTERSALES",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4449903674",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4449903674",
+    "title": "Service and Maintenance Technician - Tulare/Kern County",
+    "company": "BYD North America",
+    "location": "Lost Hills, CA",
+    "linkedin_posted_date": "2026-08-05",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:29",
+    "match_method": "title"
    }
   },
   {
@@ -892,7 +1003,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5175239008",
    "externalPath": "/jobs/5175239008",
    "locationsText": "Pasadena, CA",
-   "postedOn": "Posted 175 Days Ago",
+   "postedOn": "Posted 177 Days Ago",
    "timeType": "",
    "bulletFields": [
     "158"
@@ -926,8 +1037,21 @@
    "error": null,
    "jobFamilyGroup": "FINANCE",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4397169638",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4397169638",
+    "title": "Tax Specialist",
+    "company": "BYD North America",
+    "location": "Pasadena, CA",
+    "linkedin_posted_date": "2026-04-02",
+    "num_applicants": 80,
+    "applicants_label": "80 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "5 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:17",
+    "match_method": "title"
    }
   },
   {
@@ -937,7 +1061,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/4954007008",
    "externalPath": "/jobs/4954007008",
    "locationsText": "Manteca, CA",
-   "postedOn": "Posted 343 Days Ago",
+   "postedOn": "Posted 345 Days Ago",
    "timeType": "",
    "bulletFields": [
     "96"
@@ -995,7 +1119,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/5149667008",
    "externalPath": "/jobs/5149667008",
    "locationsText": "Cupertino, CA",
-   "postedOn": "Posted 198 Days Ago",
+   "postedOn": "Posted 200 Days Ago",
    "timeType": "",
    "bulletFields": [
     "146"
@@ -1027,11 +1151,7 @@
    "similarJobsCount": 0,
    "similarJobs": [],
    "error": null,
-   "jobFamilyGroup": "BYD ELECTRONICS AMERICA",
-   "signals": {
-    "status": "no_match",
-    "fetched_at": ""
-   }
+   "jobFamilyGroup": "BYD ELECTRONICS AMERICA"
   },
   {
    "reqId": "34",
@@ -1040,7 +1160,7 @@
    "url": "https://job-boards.greenhouse.io/byd/jobs/4550528008",
    "externalPath": "/jobs/4550528008",
    "locationsText": "Manteca,California,United States",
-   "postedOn": "Posted 582 Days Ago",
+   "postedOn": "Posted 584 Days Ago",
    "timeType": "",
    "bulletFields": [
     "34"
@@ -1074,8 +1194,21 @@
    "error": null,
    "jobFamilyGroup": "ESS AFTERSALES",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4355290863",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4355290863",
+    "title": "Warehouse Specialist",
+    "company": "BYD North America",
+    "location": "Manteca, CA",
+    "linkedin_posted_date": "2026-01-22",
+    "num_applicants": 98,
+    "applicants_label": "98 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "8 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T03:45:18",
+    "match_method": "title"
    }
   }
  ]

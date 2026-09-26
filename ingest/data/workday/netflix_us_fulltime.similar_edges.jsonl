@@ -637,10 +637,10 @@
 {"reqId": "JR33497", "similar_reqId": "JR41262", "similar_title": "Manager, UCAN Marketing - Live Title Strategy", "rank": 4}
 {"reqId": "JR33497", "similar_reqId": "JR39975", "similar_title": "Social Manager, Ads Marketing", "rank": 5}
 {"reqId": "JR42332", "similar_reqId": "JR42614", "similar_title": "Software Engineer 5 - Ads Authorization (AuthZ) Platform", "rank": 1}
-{"reqId": "JR42332", "similar_reqId": "JR41108", "similar_title": "Software Engineer L5 - Audio/Video Tools and Tests", "rank": 2}
+{"reqId": "JR42332", "similar_reqId": "JR42613", "similar_title": "Software Engineering 5 - Ads Agent (Agentic Platform for Enterprise)", "rank": 2}
 {"reqId": "JR42332", "similar_reqId": "JR28716", "similar_title": "Software Engineer 5 - Member, Commerce & Games Engineering", "rank": 3}
-{"reqId": "JR42332", "similar_reqId": "JR35942", "similar_title": "Software Engineer 6 - Ad Serving Platform", "rank": 4}
-{"reqId": "JR42332", "similar_reqId": "JR42613", "similar_title": "Software Engineering 5 - Ads Agent (Agentic Platform for Enterprise)", "rank": 5}
+{"reqId": "JR42332", "similar_reqId": "JR41108", "similar_title": "Software Engineer L5 - Audio/Video Tools and Tests", "rank": 4}
+{"reqId": "JR42332", "similar_reqId": "JR42236", "similar_title": "Software Engineer 4- Ink", "rank": 5}
 {"reqId": "JR42468", "similar_reqId": "JR42504", "similar_title": "Director, Production Innovation, Production Solutions - APAC", "rank": 1}
 {"reqId": "JR42482", "similar_reqId": "JR39539", "similar_title": "HR Business Partner , Eyeline - Korea", "rank": 1}
 {"reqId": "JR42482", "similar_reqId": "JR38123", "similar_title": "Associate Counsel - Korea", "rank": 2}
@@ -1010,9 +1010,9 @@
 {"reqId": "JR42021", "similar_reqId": "JR41912", "similar_title": "Experiences Creative Studio – Operations Manager", "rank": 5}
 {"reqId": "JR42027", "similar_reqId": "JR37327", "similar_title": "Account Manager (UCAN)", "rank": 1}
 {"reqId": "JR42027", "similar_reqId": "JR41582", "similar_title": "Sr. Manager, Ad Ops Demand Management (UCAN)", "rank": 2}
-{"reqId": "JR42027", "similar_reqId": "JR41936", "similar_title": "Market Planning & Operations Manager (UCAN) - Commercial Planning", "rank": 3}
-{"reqId": "JR42027", "similar_reqId": "JR42309", "similar_title": "Sr. Client Partner (UCAN - FinServ & Travel)", "rank": 4}
-{"reqId": "JR42027", "similar_reqId": "JR40462", "similar_title": "Director, Ad Sales (UCAN)", "rank": 5}
+{"reqId": "JR42027", "similar_reqId": "JR42729", "similar_title": "Sr. Ad Ops Demand Mgmt Specialist (UCAN)", "rank": 3}
+{"reqId": "JR42027", "similar_reqId": "JR41936", "similar_title": "Market Planning & Operations Manager (UCAN) - Commercial Planning", "rank": 4}
+{"reqId": "JR42027", "similar_reqId": "JR42192", "similar_title": "Market Planning & Operations Sr. Manager (UCAN) Sports Planning & Solutions", "rank": 5}
 {"reqId": "JR42018", "similar_reqId": "JR37734", "similar_title": "Senior Manager, U.S. Federal Affairs", "rank": 1}
 {"reqId": "JR41999", "similar_reqId": "JR40610", "similar_title": "Software Engineer 6 - Ads Account Foundations", "rank": 1}
 {"reqId": "JR41999", "similar_reqId": "JR39787", "similar_title": "Software Engineer 6 - Ads Conversions API", "rank": 2}
@@ -1276,3 +1276,53 @@
 {"reqId": "JR39863", "similar_reqId": "JR42071", "similar_title": "Senior Manager, Marketing Partnerships - Korea", "rank": 2}
 {"reqId": "JR39863", "similar_reqId": "JR42233", "similar_title": "Manager, Photo & AV Studio - Korea", "rank": 3}
 {"reqId": "JR38583", "similar_reqId": "JR39356", "similar_title": "Manager, Finance and Strategy (F&S), Japan Partnerships", "rank": 1}
+{"reqId": "JR42763", "similar_reqId": "JR40851", "similar_title": "Manager, Accounts Payable (UCAN)", "rank": 1}
+{"reqId": "JR42763", "similar_reqId": "JR42604", "similar_title": "Senior Content Accountant", "rank": 2}
+{"reqId": "JR42763", "similar_reqId": "JR41920", "similar_title": "Head of Production Finance- Ink", "rank": 3}
+{"reqId": "JR42725", "similar_reqId": "JR41999", "similar_title": "Software Engineer 4 - Finance and Tax Technology", "rank": 1}
+{"reqId": "JR42725", "similar_reqId": "JR40610", "similar_title": "Software Engineer 6 - Ads Account Foundations", "rank": 2}
+{"reqId": "JR42725", "similar_reqId": "JR39787", "similar_title": "Software Engineer 6 - Ads Conversions API", "rank": 3}
+{"reqId": "JR42725", "similar_reqId": "JR40898", "similar_title": "Software Engineer 4/5 – Model Development and Management, AI Platform", "rank": 4}
+{"reqId": "JR42725", "similar_reqId": "JR31232", "similar_title": "Software Engineer 4/5 –  Data and Feature Infrastructure, AI Platform", "rank": 5}
+{"reqId": "JR42770", "similar_reqId": "JR42591", "similar_title": "Coordinator, Production Management - Indonesia", "rank": 1}
+{"reqId": "JR42770", "similar_reqId": "JR41700", "similar_title": "Marketing Production Manager-  SEA", "rank": 2}
+{"reqId": "JR42767", "similar_reqId": "JR42086", "similar_title": "Business Security Partner (L5), Consumer & Content", "rank": 1}
+{"reqId": "JR42767", "similar_reqId": "JR41881", "similar_title": "Security Analytics Engineer L5", "rank": 2}
+{"reqId": "JR42767", "similar_reqId": "JR41731", "similar_title": "Security Engineer 5 - IAM", "rank": 3}
+{"reqId": "JR42767", "similar_reqId": "JR40755", "similar_title": "Security Engineer (L5) - Cloud Architecture, Tooling and Security", "rank": 4}
+{"reqId": "JR42767", "similar_reqId": "JR41854", "similar_title": "Security Software Engineer (L6), Security Protocols & Foundations", "rank": 5}
+{"reqId": "JR42708", "similar_reqId": "JR38556", "similar_title": "Senior Software Engineer 5 - Consumer Lifecycle Experiences Platform", "rank": 1}
+{"reqId": "JR42708", "similar_reqId": "JR32657", "similar_title": "Senior Software Engineer 5 — Developer Platform", "rank": 2}
+{"reqId": "JR42708", "similar_reqId": "JR41553", "similar_title": "Software Engineer 5— Platform Modernization Engineering", "rank": 3}
+{"reqId": "JR42708", "similar_reqId": "JR38230", "similar_title": "Data & Software Engineer 5 — System Insights & Productivity Metrics", "rank": 4}
+{"reqId": "JR42708", "similar_reqId": "JR41475", "similar_title": "Software Engineer 4/5 - Content, Business Products and Games Engineering", "rank": 5}
+{"reqId": "JR41176", "similar_reqId": "JR40624", "similar_title": "Product Manager, Ads Signal Modeling and Targeting", "rank": 1}
+{"reqId": "JR41176", "similar_reqId": "JR41707", "similar_title": "Product Manager - Content Finance", "rank": 2}
+{"reqId": "JR41176", "similar_reqId": "JR41029", "similar_title": "Product Manager, Plans Innovation", "rank": 3}
+{"reqId": "JR41176", "similar_reqId": "JR41581", "similar_title": "Product Manager, Personalization", "rank": 4}
+{"reqId": "JR41176", "similar_reqId": "JR42601", "similar_title": "Product Manager, Data Foundations", "rank": 5}
+{"reqId": "JR42601", "similar_reqId": "JR40624", "similar_title": "Product Manager, Ads Signal Modeling and Targeting", "rank": 1}
+{"reqId": "JR42601", "similar_reqId": "JR41888", "similar_title": "Sr. Manager, Product Management (Ad Sales Products)", "rank": 2}
+{"reqId": "JR42601", "similar_reqId": "JR42342", "similar_title": "Product Manager, Ads Platform - Sales Products", "rank": 3}
+{"reqId": "JR42601", "similar_reqId": "JR41176", "similar_title": "Product Manager, Catalog Understanding & Tooling Foundations", "rank": 4}
+{"reqId": "JR42601", "similar_reqId": "JR42427", "similar_title": "Product Manager, Ads Platform - Experimentation & Incrementality Measurement", "rank": 5}
+{"reqId": "JR42732", "similar_reqId": "JR42414", "similar_title": "Sr. Client Partner - CPG", "rank": 1}
+{"reqId": "JR42732", "similar_reqId": "JR41590", "similar_title": "Sr. Client Partner (CPG)", "rank": 2}
+{"reqId": "JR42732", "similar_reqId": "JR41938", "similar_title": "Sr. Client Partner (US - FLEX)", "rank": 3}
+{"reqId": "JR42732", "similar_reqId": "JR41485", "similar_title": "Sr. Client Partner (Telco)", "rank": 4}
+{"reqId": "JR42732", "similar_reqId": "JR41372", "similar_title": "Sr. Client Partner (Havas)", "rank": 5}
+{"reqId": "JR41592", "similar_reqId": "JR41207", "similar_title": "Sr. Ad Ops Demand Mgmt Specialist (EMEA)", "rank": 1}
+{"reqId": "JR42729", "similar_reqId": "JR41582", "similar_title": "Sr. Manager, Ad Ops Demand Management (UCAN)", "rank": 1}
+{"reqId": "JR42729", "similar_reqId": "JR42027", "similar_title": "Sr. Account Manager (US)", "rank": 2}
+{"reqId": "JR42729", "similar_reqId": "JR37327", "similar_title": "Account Manager (UCAN)", "rank": 3}
+{"reqId": "JR42729", "similar_reqId": "JR42223", "similar_title": "Ads Commercial Readiness Program Manager (Finance & Measurement)", "rank": 4}
+{"reqId": "JR42720", "similar_reqId": "JR42711", "similar_title": "Ads Measurement Analyst, UK", "rank": 1}
+{"reqId": "JR42720", "similar_reqId": "JR41082", "similar_title": "Senior Ads Revenue Business Partner (EMEA)", "rank": 2}
+{"reqId": "JR42718", "similar_reqId": "JR42482", "similar_title": "HR Business Partner - Korea", "rank": 1}
+{"reqId": "JR42718", "similar_reqId": "JR39539", "similar_title": "HR Business Partner , Eyeline - Korea", "rank": 2}
+{"reqId": "JR42342", "similar_reqId": "JR42427", "similar_title": "Product Manager, Ads Platform - Experimentation & Incrementality Measurement", "rank": 1}
+{"reqId": "JR42342", "similar_reqId": "JR41888", "similar_title": "Sr. Manager, Product Management (Ad Sales Products)", "rank": 2}
+{"reqId": "JR42342", "similar_reqId": "JR40624", "similar_title": "Product Manager, Ads Signal Modeling and Targeting", "rank": 3}
+{"reqId": "JR42342", "similar_reqId": "JR39128", "similar_title": "Product Manager, Ads (Live Ad Serving)", "rank": 4}
+{"reqId": "JR42342", "similar_reqId": "JR41399", "similar_title": "Manager, Product Finance & Strategy - Product Merchandising", "rank": 5}
+{"reqId": "JR42711", "similar_reqId": "JR42720", "similar_title": "Senior Measurement Partner, UK (12 month FTC)", "rank": 1}

@@ -1,11 +1,11 @@
-rows: 47 (unique reqIds: 47)
-details merged: 47
-descriptions present: 47
-locations enumerated (not 'N Locations'): 47
-startDate present: 47
-signals: matched=5 no_match=42 blocked=0 not_checked=0
-location entries total (sum nLocations): 47
+rows: 46 (unique reqIds: 46)
+details merged: 46
+descriptions present: 46
+locations enumerated (not 'N Locations'): 46
+startDate present: 46
+signals: matched=5 no_match=41 blocked=0 not_checked=0
+location entries total (sum nLocations): 46
 similar-job edges: 0
 facet-tagged rows: workerSubType=0 jobFamilyGroup=10 (from facet_tags.jsonl)
-facet tag coverage: 10/47 rows (37 untagged)
-h1b wage bands: 5/47 rows banded (0 title+state, 5 title-only) from 62 LCA filings → alibaba_us_fulltime.h1b_lca.csv
+facet tag coverage: 10/46 rows (36 untagged)
+h1b wage bands: 5/46 rows banded (0 title+state, 5 title-only) from 62 LCA filings → alibaba_us_fulltime.h1b_lca.csv

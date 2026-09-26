@@ -1,10 +1,11 @@
-rows: 20 (unique reqIds: 20)
-details merged: 20
-descriptions present: 20
-locations enumerated (not 'N Locations'): 20
+rows: 21 (unique reqIds: 21)
+details merged: 21
+descriptions present: 21
+locations enumerated (not 'N Locations'): 21
 startDate present: 0
-signals: matched=16 no_match=4 blocked=0 not_checked=0
-location entries total (sum nLocations): 20
+signals: matched=17 no_match=4 blocked=0 not_checked=0
+location entries total (sum nLocations): 21
 similar-job edges: 0
-facet-tagged rows: workerSubType=0 jobFamilyGroup=20 (from facet_tags.jsonl)
-facet tag coverage: 20/20 rows (0 untagged)
+facet-tagged rows: workerSubType=0 jobFamilyGroup=21 (from facet_tags.jsonl)
+facet tag coverage: 21/21 rows (0 untagged)
+h1b wage bands: 0 usable filings in the extract (all uncertified/unparseable?)

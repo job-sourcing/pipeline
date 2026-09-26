@@ -3,9 +3,9 @@ details merged: 443
 descriptions present: 443
 locations enumerated (not 'N Locations'): 443
 startDate present: 0
-signals: matched=204 no_match=239 blocked=0 not_checked=0
+signals: matched=208 no_match=0 blocked=0 not_checked=235
 location entries total (sum nLocations): 443
 similar-job edges: 0
 facet-tagged rows: workerSubType=0 jobFamilyGroup=443 (from facet_tags.jsonl)
 facet tag coverage: 443/443 rows (0 untagged)
-h1b wage bands: 183/443 rows banded (0 title+state, 183 title-only) from 3028 LCA filings → bytedance_us_fulltime.h1b_lca.csv
+h1b wage bands: 193/443 rows banded (0 title+state, 193 title-only) from 4226 LCA filings → bytedance_us_fulltime.h1b_lca.csv

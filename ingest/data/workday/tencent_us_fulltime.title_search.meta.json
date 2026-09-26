@@ -1,7 +1,7 @@
 {
- "done": true,
- "probed": 33,
- "terminal": 33,
- "population": 8,
- "unprobed": 0
+ "done": false,
+ "probed": 84,
+ "terminal": 84,
+ "population": 268,
+ "unprobed": 193
 }

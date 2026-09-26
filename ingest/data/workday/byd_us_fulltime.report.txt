@@ -1,11 +1,11 @@
-rows: 22 (unique reqIds: 22)
-details merged: 22
-descriptions present: 22
-locations enumerated (not 'N Locations'): 22
+rows: 21 (unique reqIds: 21)
+details merged: 21
+descriptions present: 21
+locations enumerated (not 'N Locations'): 21
 startDate present: 0
-signals: matched=6 no_match=16 blocked=0 not_checked=0
-location entries total (sum nLocations): 22
+signals: matched=20 no_match=0 blocked=0 not_checked=1
+location entries total (sum nLocations): 21
 similar-job edges: 0
-facet-tagged rows: workerSubType=0 jobFamilyGroup=22 (from facet_tags.jsonl)
-facet tag coverage: 22/22 rows (0 untagged)
-h1b wage bands: 2/22 rows banded (0 title+state, 2 title-only) from 59 LCA filings → byd_us_fulltime.h1b_lca.csv
+facet-tagged rows: workerSubType=0 jobFamilyGroup=21 (from facet_tags.jsonl)
+facet tag coverage: 21/21 rows (0 untagged)
+h1b wage bands: 2/21 rows banded (0 title+state, 2 title-only) from 59 LCA filings → byd_us_fulltime.h1b_lca.csv

@@ -1184,6 +1184,65 @@ class TestPhaseDetailsResume:
         # only JR2's path is fetched — JR1 is settled
         assert calls == ["/job/US-CA-Santa-Clara/Engineer_JR2"]
 
+    def test_title_drift_refetches_once_and_marks(self, tmp_path,
+                                                  monkeypatch):
+        """S19 title-drift tier (the bytedance INV-3 lesson): a settled
+        detail whose title != the CURRENT list title is stale (the board
+        edited the posting) → re-fetched, and the fresh record carries
+        listTitleChecked so a SYSTEMATIC list-vs-detail title difference
+        re-checks once and never churns. Same-title settled rows are
+        untouched."""
+        rows = [_list_row(req_id="JR1", title="New Edited Title"),
+                _list_row(req_id="JR2", title="Engineer")]
+        out = tmp_path / "dump"
+        out.with_suffix(".list.jsonl").write_text(
+            "\n".join(json.dumps(r) for r in rows) + "\n",
+            encoding="utf-8")
+        # JR1: settled with the STALE title. JR2: settled, title agrees.
+        out.with_suffix(".details.jsonl").write_text(
+            json.dumps({"reqId": "JR1", "fetched_at": "2026-09-19T00:00:00Z",
+                        "info": _detail_info(),
+                        "hiringOrg": "x", "similarJobsCount": 0}) + "\n" +
+            json.dumps({"reqId": "JR2", "fetched_at": "2026-09-19T00:00:00Z",
+                        "info": _detail_info(),
+                        "hiringOrg": "x", "similarJobsCount": 0}) + "\n",
+            encoding="utf-8")
+        calls: list = []
+
+        def fake_detail(board, path, cfg, country=None, time_type=None):
+            calls.append(path)
+            # the DETAIL endpoint still serves the OLD title — the board
+            # edited the LIST API title only (the persistent-difference
+            # case the listTitleChecked marker exists for)
+            info = dict(_detail_info())
+            info["title"] = "Engineer"
+            return {"jobPostingInfo": info,
+                    "hiringOrganization": {"name": "x"},
+                    "similarJobs": []}
+
+        monkeypatch.setattr(board_dump.site_boards, "detail_payload",
+                            fake_detail)
+        board_dump.phase_details(_det_args(), out)
+        # ONLY the drift row re-fetched (externalPath is title-stamped
+        # "Engineer_{reqId}" by _list_row — the LIST title field is what
+        # drifts, not the path)
+        assert calls == ["/job/US-CA-Santa-Clara/Engineer_JR1"]
+        lines = self._lines(out)
+        fresh = [d for d in lines if d["reqId"] == "JR1"][-1]
+        # the detail endpoint still serves the stale title; the marker
+        # records WHICH list title was checked — this is what stops the
+        # re-fetch churn on the next run
+        assert fresh["info"]["title"] == "Engineer"
+        assert fresh["listTitleChecked"] == "New Edited Title"
+        assert len([d for d in lines if d["reqId"] == "JR2"]) == 1
+
+        # the no-churn contract: a re-run fetches NOTHING (marker matches
+        # the current list title — even though detail title still differs,
+        # e.g. a board that serves systematically different titles)
+        calls.clear()
+        board_dump.phase_details(_det_args(), out)
+        assert calls == []
+
     def test_no_list_file_is_a_clean_error(self, tmp_path, monkeypatch):
         monkeypatch.setattr(board_dump.workday, "detail_payload",
                             lambda b, p, c: None)

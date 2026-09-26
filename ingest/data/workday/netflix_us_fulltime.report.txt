@@ -1,13 +1,13 @@
-rows: 369 (unique reqIds: 369)
-details merged: 369
-descriptions present: 369
-locations enumerated (not 'N Locations'): 369
-startDate present: 369
-signals: matched=187 no_match=182 blocked=0 not_checked=0
-location entries total (sum nLocations): 487
-similar-job edges: 1278
+rows: 363 (unique reqIds: 363)
+details merged: 363
+descriptions present: 363
+locations enumerated (not 'N Locations'): 363
+startDate present: 363
+signals: matched=184 no_match=0 blocked=0 not_checked=179
+location entries total (sum nLocations): 480
+similar-job edges: 1328
 facet census: 5 facets / 77 values (netflix_us_fulltime.facets.json)
-facet-tagged rows: workerSubType=370 jobFamilyGroup=368 (from facet_tags.jsonl)
-facet tag coverage: 367/369 rows (2 untagged)
-questionnaire definitions: 3 id(s) covering 366/369 rows; 3 fetched (25 questions → netflix_us_fulltime.questionnaires.csv)
-h1b wage bands: 148/369 rows banded (0 title+state, 148 title-only) from 358 LCA filings → netflix_us_fulltime.h1b_lca.csv
+facet-tagged rows: workerSubType=577 jobFamilyGroup=574 (from facet_tags.jsonl)
+facet tag coverage: 361/363 rows (2 untagged)
+questionnaire definitions: 3 id(s) covering 361/363 rows; 3 fetched (25 questions → netflix_us_fulltime.questionnaires.csv)
+h1b wage bands: 144/363 rows banded (0 title+state, 144 title-only) from 780 LCA filings → netflix_us_fulltime.h1b_lca.csv

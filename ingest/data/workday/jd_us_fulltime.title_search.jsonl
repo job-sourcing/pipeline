@@ -17,3 +17,103 @@
 {"reqId": "JR101207", "title": "Warehouse Operator O2-2", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
 {"reqId": "JR104054", "title": "Warehouse Lead", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
 {"reqId": "JR102929", "title": "Warehouse Supervisor", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104178", "title": "Customer Experience Improvement Specialist", "primaryLocation": "", "query_location": "United States", "hits": [{"id": "4466137597", "title": "Logistics Customer Experience Specialist", "location": "Perth Amboy, NJ", "date": "2026-09-15", "url": "https://www.linkedin.com/jobs/view/4466137597"}], "status": "hit_indexed"}
+{"reqId": "JR104189", "title": "Outbound Team Leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR010911M", "title": "UX Designer", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104185", "title": "Delivery Station Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104154", "title": "Account Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104139", "title": "ResponsableResponsable d’entrepôt de marchandises dangereuses", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104155", "title": "Transportation manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103876", "title": "Delivery Station Team Lead-Bruges", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104041", "title": "GRO Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104119", "title": "Exception Handler", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104170", "title": "Operator expérimenté", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103167", "title": "Junior Team Leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104004", "title": "Risk Control", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR102723", "title": "Indirect Procurement Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103889", "title": "(Senior) Category Manager - FMCG", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104153", "title": "Senior Project Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103983", "title": "Risk Control", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103603", "title": "service operations coordinator", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR102353", "title": "Cold chain warehouse manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104142", "title": "inventory team leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104143", "title": "Chef d'équipe logistique retours H/F", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103362", "title": "inventory team leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103361", "title": "inbound team leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104150", "title": "Reverse Logistique Team Leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104030", "title": "Dangerous Goods Transportation Specialist H/F", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104116", "title": "Agent d'exploitation transport H/F", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103432", "title": "cold chain team leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103234", "title": "Superviseur Station de Livraison - Strasbourg", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103034", "title": "Superviseur Station de Livraison - Nantes", "primaryLocation": "", "query_location": "United States", "status": "error", "error": "429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Superviseur+Station+de+Livraison+-+Nantes&location=United+States&start=0"}
+{"reqId": "JR102878", "title": "Superviseur de Station de Livraison - Lyon", "primaryLocation": "", "query_location": "United States", "status": "error", "error": "429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Superviseur+de+Station+de+Livraison+-+Lyon&location=United+States&start=0"}
+{"reqId": "JR103232", "title": "Superviseur Station de livraison - Reims", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103231", "title": "Superviseur Station de Livraison - Dijon", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103027", "title": "Superviseur Station de Livraison - Rouen", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104148", "title": "Delivery Station Supervisor", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104156", "title": "Dispatcher", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104159", "title": "Dispatcher", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104160", "title": "service operations coordinator (ch speaker)", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104157", "title": "service operations coordinator", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103549", "title": "dispachter", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103109", "title": "Admin Support", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR102973", "title": "Equipment Maintenance Technician", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104060", "title": "Category Manager - Computing", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103503", "title": "Logistics Operations Accelerator Program - Nachwuchsführungskraft (m/w/d)", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104128", "title": "Delivery Station supervisor（Dresden）", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104114", "title": "LA Warehouse Supervisor- 隆安仓储主管岗", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103032", "title": "Superviseur Station de Livraison - Le Mans", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103394", "title": "Delivery Station Team Lead-Mons", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR101838", "title": "Warehouse Team Leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR102997", "title": "Delivery Operations Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103898", "title": "系统方案", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103034", "title": "Superviseur Station de Livraison - Nantes", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR102878", "title": "Superviseur de Station de Livraison - Lyon", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103901", "title": "实施方案", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104050", "title": "3PL Operations", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104106", "title": "Maintenance Technician", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104040", "title": "Bulky Delivery Operation Supervisor", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103953", "title": "Equipment Maintenance (Chinese speaker)", "primaryLocation": "", "query_location": "United States", "hits": [{"id": "4465874510", "title": "Equipment Maintenance", "location": "California, United States", "date": "2026-09-11", "url": "https://www.linkedin.com/jobs/view/4465874510"}], "status": "hit_indexed"}
+{"reqId": "JR104110", "title": "Account Manager (Chinese speaking)", "primaryLocation": "", "query_location": "United States", "hits": [{"id": "4405056015", "title": "Account Manager", "location": "Fontana, CA", "date": "2026-09-15", "url": "https://www.linkedin.com/jobs/view/4405056015"}, {"id": "4466154327", "title": "Account Manager", "location": "Perth Amboy, NJ", "date": "2026-09-15", "url": "https://www.linkedin.com/jobs/view/4466154327"}], "status": "hit_indexed"}
+{"reqId": "JR103662", "title": "Delivery Depot Cluster Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104108", "title": "Maintenance Technician", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104067", "title": "Category Manager - Fashion & Beauty", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104076", "title": "Reverse Logistics Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104014", "title": "Operations scheduling", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104013", "title": "Service Provider Management", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104051", "title": "Category Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104012", "title": "Warehouse Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104009", "title": "1PL Delivery Operations", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104023", "title": "Administrative Operation", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104024", "title": "Operation Support (Mandarin speaking)", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103703", "title": "Bulky Warehouse Team Leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104071", "title": "Category Manager - Global Food", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104066", "title": "Category Manager - Global Food", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104007", "title": "Outbound Team Leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104042", "title": "Head of Compiance Systems Design", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR102637", "title": "Project Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104025", "title": "Transport Specialist – Carrier Management", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104028", "title": "High-Value Electronics Quality Inspector", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104033", "title": "SCOT Planning Product Manager - Marketplace Channel", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103995", "title": "Device maintenance", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103998", "title": "Improve logistics quality (customer complaint resolution)", "primaryLocation": "", "query_location": "United States", "hits": [{"id": "4466137597", "title": "Logistics Customer Experience Specialist", "location": "Perth Amboy, NJ", "date": "2026-09-15", "url": "https://www.linkedin.com/jobs/view/4466137597"}], "status": "hit_indexed"}
+{"reqId": "JR103988", "title": "Improved logistics quality (profit and loss improvement)", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103996", "title": "Improved logistics quality (profit and loss improvement)", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104011", "title": "Work order processor", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104047", "title": "Reverse Logistic Operator", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103437", "title": "Maintenance Engineer", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104049", "title": "Sorting Team Leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR104002", "title": "Device maintenance", "primaryLocation": "", "query_location": "United States", "status": "error", "error": "429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Device+maintenance&location=United+States&start=0"}
+{"reqId": "JR103989", "title": "Improve logistics quality (customer complaint resolution)", "primaryLocation": "", "query_location": "United States", "hits": [{"id": "4466137597", "title": "Logistics Customer Experience Specialist", "location": "Perth Amboy, NJ", "date": "2026-09-15", "url": "https://www.linkedin.com/jobs/view/4466137597"}], "status": "hit_indexed"}
+{"reqId": "JR103794", "title": "(Senior) Category Manager - Gaming", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103797", "title": "(Senior) Category Manager - PC & laptops", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103227", "title": "Lean Improvement Specialist", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103944", "title": "Delivery Cluster Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103930", "title": "Sorting Center Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103948", "title": "Warehouse superviseur", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103949", "title": "Dangerous Goods Warehouse Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103946", "title": "Operations Support", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103945", "title": "Operations support", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103947", "title": "Operations support", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103890", "title": "Senior Government Relations Manager", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "JR103762", "title": "Inbound Team Leader", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}

@@ -1,13 +1,13 @@
-rows: 1410 (unique reqIds: 1410)
-details merged: 1410
-descriptions present: 1410
-locations enumerated (not 'N Locations'): 1410
-startDate present: 1410
-signals: matched=1050 no_match=357 blocked=3 not_checked=0
-location entries total (sum nLocations): 2620
-similar-job edges: 6880
-facet census: 7 facets / 188 values (nvidia_us_fulltime.facets.json)
-facet-tagged rows: workerSubType=1483 jobFamilyGroup=1483 (from facet_tags.jsonl)
-facet tag coverage: 1410/1410 rows (0 untagged)
-questionnaire definitions: 4 id(s) covering 1410/1410 rows; 4 fetched (8 questions → nvidia_us_fulltime.questionnaires.csv)
-h1b wage bands: 716/1410 rows banded (34 title+state, 682 title-only) from 4356 LCA filings → nvidia_us_fulltime.h1b_lca.csv
+rows: 1383 (unique reqIds: 1383)
+details merged: 1383
+descriptions present: 1383
+locations enumerated (not 'N Locations'): 1383
+startDate present: 1383
+signals: matched=999 no_match=338 blocked=0 not_checked=46
+location entries total (sum nLocations): 2574
+similar-job edges: 7416
+facet census: 7 facets / 192 values (nvidia_us_fulltime.facets.json)
+facet-tagged rows: workerSubType=1598 jobFamilyGroup=1598 (from facet_tags.jsonl)
+facet tag coverage: 1383/1383 rows (0 untagged)
+questionnaire definitions: 4 id(s) covering 1383/1383 rows; 4 fetched (8 questions → nvidia_us_fulltime.questionnaires.csv)
+h1b wage bands: 692/1383 rows banded (37 title+state, 655 title-only) from 4636 LCA filings → nvidia_us_fulltime.h1b_lca.csv

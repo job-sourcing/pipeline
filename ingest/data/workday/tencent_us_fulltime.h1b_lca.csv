@@ -1,4 +1,51 @@
 ﻿caseNumber,caseStatus,caseSubmitted,decisionDate,employerName,jobTitle,socCode,socTitle,fullTimePosition,wageFrom,wageTo,wageUnit,prevailingWage,pwUnit,worksiteCity,worksiteState,worksitePostalCode,annualizedWage,sourceFile
+I-200-24178-148514,Certified,,2024-07-03T00:00:00,Tencent America LLC,Senior Software Engineer,15-1252.00,Software Developers,Y,240996.08,,Year,177029,Year,Los Angeles,CA,90066,240996,FY2024_Q4
+I-200-24181-162477,Certified,,2024-07-08T00:00:00,Tencent America LLC,Senior Project Manager,15-2031.00,Operations Research Analysts,Y,159000.14,,Year,112403,Year,Los Angeles,CA,90066,159000,FY2024_Q4
+I-200-24193-188465,Certified,,2024-07-18T00:00:00,Tencent America LLC,Senior Researcher,15-1221.00,Computer and Information Research Scientists,Y,260004.16,,Year,174096,Year,New York,NY,10018,260004,FY2024_Q4
+I-200-24221-253025,Certified,,2024-08-14T00:00:00,Tencent America LLC,Senior Researcher,15-1221.00,Computer and Information Research Scientists,Y,183224.34,,Year,165838,Year,Los Angeles,CA,90066,183224,FY2024_Q4
+I-200-24221-253028,Certified,,2024-08-14T00:00:00,Tencent America LLC,Staff Data Scientist,15-2051.00,Data Scientists,Y,180176.36,,Year,180128,Year,PALO ALTO,CA,94306,180176,FY2024_Q4
+I-200-24225-260750,Certified,,2024-08-19T00:00:00,Tencent America LLC,Senior NLP Researcher,15-1221.00,Computer and Information Research Scientists,Y,200000.06,,Year,176571,Year,Bellevue,WA,98004,200000,FY2024_Q4
+I-200-24230-274808,Certified,,2024-08-23T00:00:00,Tencent America LLC,Staff Data Scientist,13-1161.00,Market Research Analysts and Marketing Specialists,Y,180176.36,,Year,178110,Year,PALO ALTO,CA,94306,180176,FY2024_Q4
+I-200-24230-274810,Certified,,2024-08-23T00:00:00,Tencent America LLC,Staff Data Scientist,15-2051.01,Business Intelligence Analysts,Y,180176.36,,Year,180128,Year,PALO ALTO,CA,94306,180176,FY2024_Q4
+I-200-24243-304919,Certified,,2024-09-06T00:00:00,Tencent America LLC,Senior Network Infrastructure Specialist,15-1241.00,Computer Network Architects,Y,216000.2,,Year,186472,Year,PALO ALTO,CA,94306,216000,FY2024_Q4
+I-200-24244-307820,Certified,,2024-09-09T00:00:00,Tencent America LLC,Staff Data Scientist,15-2041.00,Statisticians,Y,188628.18,,Year,188157,Year,PALO ALTO,CA,94306,188628,FY2024_Q4
+I-200-24248-311817,Certified,,2024-09-10T00:00:00,Tencent America LLC,Senior World Designer,15-1252.00,Software Developers,Y,147000.1,,Year,126942,Year,Irvine,CA,92618,147000,FY2024_Q4
+I-200-24248-311819,Certified,,2024-09-10T00:00:00,Tencent America LLC,Senior Researcher,15-1221.00,Computer and Information Research Scientists,Y,242568.04,,Year,197142,Year,Los Angeles,CA,90066,242568,FY2024_Q4
+I-200-24257-335087,Certified,,2024-09-19T00:00:00,Tencent America LLC,Sr. Technical Producer-Uncapped Games,15-1299.09,Information Technology Project Managers,Y,140000.12,,Year,109782,Year,Los Angeles,CA,90066,140000,FY2024_Q4
+I-200-24318-470957,Certified,,2024-11-19T00:00:00,Tencent America LLC,Senior Engineer,15-1221.00,Computer and Information Research Scientists,Y,222464.32,,Year,191922,Year,PALO ALTO,CA,94306,222464,FY2025_Q1
+I-203-24269-362178,Certified,,2024-10-01T00:00:00,Tencent America LLC,KA Technical Account Manager,41-9031.00,Sales Engineers,Y,200000.06,,Year,169770,Year,PALO ALTO,CA,94306,200000,FY2025_Q1
+I-200-25043-685229,Certified,,2025-02-19T00:00:00,Tencent America LLC,Senior Enterprise Apps Solution Architect,15-1252.00,Software Developers,Y,229372.26,,Year,226158,Year,PALO ALTO,CA,94306,229372,FY2025_Q2
+I-200-25094-830909,Certified,,2025-04-10T00:00:00,Tencent America LLC,Lead Gameplay Engineer,15-1252.00,Software Developers,Y,190000,,Year,176134,Year,Irvine,CA,92618,190000,FY2025_Q3
+I-200-25095-834885,Certified,,2025-04-11T00:00:00,Tencent America LLC,Level Designer III,15-1255.01,Video Game Designers,Y,120000,,Year,111925,Year,Los Angeles,CA,90066,120000,FY2025_Q3
+I-200-25120-919435,Certified,,2025-05-06T00:00:00,Tencent America LLC,Senior Researcher,15-1221.00,Computer and Information Research Scientists,Y,180000,200000,Year,176571,Year,Bellevue,WA,98004,180000,FY2025_Q3
+I-200-25120-919443,Certified,,2025-05-06T00:00:00,Tencent America LLC,Senior Researcher,15-1221.00,Computer and Information Research Scientists,Y,190000,210000,Year,176571,Year,Bellevue,WA,98004,190000,FY2025_Q3
+I-200-25120-919449,Certified,,2025-05-06T00:00:00,Tencent America LLC,Senior Graphics Researcher,15-2041.00,Statisticians,Y,160000,190000,Year,142771,Year,New York,NY,10018,160000,FY2025_Q3
+I-200-25121-924874,Certified,,2025-05-07T00:00:00,Tencent America LLC,Global Recruiting Associate,13-1071.00,Human Resources Specialists,Y,98504.38,,Year,91437,Year,PALO ALTO,CA,94306,98504,FY2025_Q3
+I-200-25125-938618,Certified,,2025-05-12T00:00:00,Tencent America LLC,Senior Researcher,15-1221.00,Computer and Information Research Scientists,Y,192000,,Year,174096,Year,New York,NY,10018,192000,FY2025_Q3
+I-200-25127-946171,Certified,,2025-05-13T00:00:00,Tencent America LLC,Associate Environment Artist,15-1255.01,Video Game Designers,Y,87400,,Year,86278,Year,Irvine,CA,92618,87400,FY2025_Q3
+I-200-25127-946190,Certified,,2025-05-13T00:00:00,Tencent America LLC,Senior Animator,27-1014.00,Special Effects Artists and Animators,Y,192636,,Year,161907,Year,Los Angeles,CA,90066,192636,FY2025_Q3
+I-200-25127-946199,Certified,,2025-05-13T00:00:00,Tencent America LLC,Sr. Operation and Development Engineer,15-1252.00,Software Developers,Y,156000,,Year,151549,Year,Los Angeles,CA,90066,156000,FY2025_Q3
+I-200-25127-946209,Certified,,2025-05-13T00:00:00,Tencent America LLC,Senior Researcher,15-1221.00,Computer and Information Research Scientists,Y,190000.2,,Year,159182,Year,PALO ALTO,CA,94306,190000,FY2025_Q3
+I-200-25127-946214,Certified,,2025-05-13T00:00:00,Tencent America LLC,KA Technical Account Manager,41-9031.00,Sales Engineers,Y,210080.26,,Year,200304,Year,PALO ALTO,CA,94306,210080,FY2025_Q3
+I-200-25127-946227,Certified,,2025-05-13T00:00:00,Tencent America LLC,Brand Commercial Manager,13-1161.00,Market Research Analysts and Marketing Specialists,Y,132888.08,,Year,104832,Year,Los Angeles,CA,90066,132888,FY2025_Q3
+I-200-25127-946234,Certified,,2025-05-13T00:00:00,Tencent America LLC,Senior IP Counsel (Video Game),23-1011.00,Lawyers,Y,282252.1,,Year,272418,Year,New York,NY,10018,282252,FY2025_Q3
+I-200-25127-946248,Certified,,2025-05-13T00:00:00,Tencent America LLC,Senior Game Designer,15-1255.01,Video Game Designers,Y,145284.1,,Year,128378,Year,Bellevue,WA,98004,145284,FY2025_Q3
+I-200-25129-956682,Certified,,2025-05-15T00:00:00,Tencent America LLC,Associate Environment Artist,15-1255.01,Video Game Designers,Y,83600.14,,Year,60653,Year,Irvine,CA,92618,83600,FY2025_Q3
+I-200-25129-956692,Certified,,2025-05-15T00:00:00,Tencent America LLC,Senior Researcher,15-1221.00,Computer and Information Research Scientists,Y,200000.06,,Year,176571,Year,Bellevue,WA,98004,200000,FY2025_Q3
+I-200-25129-956696,Certified,,2025-05-15T00:00:00,Tencent America LLC,Senior World Designer,15-1255.01,Video Game Designers,Y,155412.14,,Year,111925,Year,Irvine,CA,92618,155412,FY2025_Q3
+I-200-25129-956701,Certified,,2025-05-15T00:00:00,Tencent America LLC,Gameplay Engineer,15-1252.00,Software Developers,Y,144000,,Year,126942,Year,Irvine,CA,92618,144000,FY2025_Q3
+I-200-25130-961621,Certified,,2025-05-16T00:00:00,Tencent America LLC,Sr. Development and Operation Engineer,15-1252.00,Software Developers,Y,157428,,Year,151819,Year,New York,NY,10018,157428,FY2025_Q3
+I-200-25130-961627,Certified,,2025-05-16T00:00:00,Tencent America LLC,Benefits Manager,13-1071.00,Human Resources Specialists,Y,135000,,Year,114379,Year,PALO ALTO,CA,94306,135000,FY2025_Q3
+I-200-25130-961631,Certified,,2025-05-16T00:00:00,Tencent America LLC,Sr Development and Operation Engineer,15-2051.00,Data Scientists,Y,157428,,Year,141170,Year,New York,NY,10018,157428,FY2025_Q3
+I-200-25131-962054,Certified,,2025-05-16T00:00:00,Tencent America LLC,Senior Graphics Researcher,15-1221.00,Computer and Information Research Scientists,Y,227316.18,,Year,174096,Year,New York,NY,10018,227316,FY2025_Q3
+I-200-25135-978108,Certified,,2025-05-21T00:00:00,Tencent America LLC,Senior Technical Artist,27-1014.00,Special Effects Artists and Animators,Y,165600,,Year,161907,Year,Los Angeles,CA,90066,165600,FY2025_Q3
+I-200-25139-993712,Certified,,2025-05-27T00:00:00,Tencent Cloud LLC,Media Services Architect,15-2051.01,Business Intelligence Analysts,Y,126000.16,,Year,117291,Year,PALO ALTO,CA,94306,126000,FY2025_Q3
+I-200-25140-993910,Certified,,2025-05-27T00:00:00,Tencent America LLC,Senior Researcher,15-1221.00,Computer and Information Research Scientists,Y,168000,,Year,159182,Year,PALO ALTO,CA,94306,168000,FY2025_Q3
+I-200-25140-993916,Certified,,2025-05-27T00:00:00,Tencent America LLC,Senior Researcher,15-1252.00,Software Developers,Y,174996.12,,Year,172931,Year,PALO ALTO,CA,94306,174996,FY2025_Q3
+I-200-25143-010527,Certified,,2025-05-30T00:00:00,Tencent America LLC,Senior Concept Artist,27-1014.00,Special Effects Artists and Animators,Y,150000.24,,Year,134742,Year,Irvine,CA,92618,150000,FY2025_Q3
+I-200-25149-027075,Certified,,2025-06-04T00:00:00,Tencent America LLC,Payroll and Benefit Specialist,13-1071.00,Human Resources Specialists,Y,108000.1,,Year,91437,Year,PALO ALTO,CA,94306,108000,FY2025_Q3
+I-200-21223-516745,Certified - Withdrawn,,2025-09-09T00:00:00,Tencent America LLC,Senior Software Development Engineer,15-1133.00,"Software Developers, Systems Software",Y,180944.16,,Year,162510,Year,Bellevue,WA,98004,180944,FY2025_Q4
+I-200-25240-272154,Certified,,2025-09-04T00:00:00,Tencent America LLC,Operation and Development Engineer,15-1252.00,Software Developers,Y,146976.18,,Year,129667,Year,Los Angeles,CA,90066,146976,FY2025_Q4
 I-200-23128-002180,Certified - Withdrawn,,2025-11-21T00:00:00,Tencent America LLC,Project Manager,11-1021.00,General and Operations Managers,Y,95000.1,,Year,81224,Year,PALO ALTO,CA,94306,95000,FY2026_Q3
 I-200-25305-354185,Certified,,2025-11-07T00:00:00,Tencent America LLC,Senior Software Engineer,15-1252.00,Software Developers,Y,204000.16,,Year,187741,Year,PALO ALTO,CA,94306,204000,FY2026_Q3
 I-200-25331-442467,Certified,,2025-12-04T00:00:00,Tencent America LLC,Senior Technical Designer,15-1252.00,Software Developers,Y,135000,,Year,129667,Year,Irvine,CA,92618,135000,FY2026_Q3

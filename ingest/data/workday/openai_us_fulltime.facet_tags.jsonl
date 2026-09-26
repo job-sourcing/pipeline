@@ -9,7 +9,6 @@
 {"reqId": "41d9d129-2e58-4ad3-be81-2e5096f4da4d", "jobFamilyGroup": "Research"}
 {"reqId": "fc5bbc77-a30c-4e7a-9acc-8a2e748545b4", "jobFamilyGroup": "Applied AI"}
 {"reqId": "bba18df5-f30f-4d2c-909c-30e651f95579", "jobFamilyGroup": "Research"}
-{"reqId": "676d359b-0ef6-40a5-81d5-d4f2eb198eab", "jobFamilyGroup": "Scaling"}
 {"reqId": "5f0c6579-0bfb-4a06-8a43-1dd371499e10", "jobFamilyGroup": "Research"}
 {"reqId": "d4dcd344-40cf-44d6-a7dd-172118eb0842", "jobFamilyGroup": "Applied AI"}
 {"reqId": "340c0c22-8d8f-4232-b17e-f642b64c25c3", "jobFamilyGroup": "Scaling"}
@@ -26,6 +25,7 @@
 {"reqId": "c1316397-25bb-4add-9e9d-0e3ea8ba929a", "jobFamilyGroup": "Scaling"}
 {"reqId": "97d3670c-e75a-4bb2-a235-171765f5f10e", "jobFamilyGroup": "Research"}
 {"reqId": "0e078d07-fb0b-4893-b90a-f50e413f3e13", "jobFamilyGroup": "Marketing"}
+{"reqId": "5bbc43df-558a-4e4b-a0cf-83f185c664d7", "jobFamilyGroup": "Forward Deployed Engineering"}
 {"reqId": "941bad28-7abe-43c7-b20a-2bc7e5b3c6e8", "jobFamilyGroup": "Research"}
 {"reqId": "e25e56a3-88f0-4994-9ae7-3d6d85c1501b", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "a886ff48-b8a1-4e28-b468-296713a5ad78", "jobFamilyGroup": "Research"}
@@ -52,7 +52,7 @@
 {"reqId": "49ae54dc-3d33-4107-8112-63fac1ee86ca", "jobFamilyGroup": "IT"}
 {"reqId": "ec5a5d98-6314-44d9-9466-8d4d7ee866f6", "jobFamilyGroup": "Security"}
 {"reqId": "004ae8f4-245b-4aad-8903-9daabdb58bb9", "jobFamilyGroup": "Technical Program Management"}
-{"reqId": "bd190cad-99ec-4fe7-8f8f-de96b5aa5969", "jobFamilyGroup": "User Operations"}
+{"reqId": "bd190cad-99ec-4fe7-8f8f-de96b5aa5969", "jobFamilyGroup": "Applied AI"}
 {"reqId": "b9dee2a0-9bb3-447e-9bce-2b1bed784e5b", "jobFamilyGroup": "Safety Systems"}
 {"reqId": "07153f7c-7e8b-4283-a879-cb07a224e083", "jobFamilyGroup": "Security"}
 {"reqId": "2dad7155-8f62-4f0b-8368-0be331187367", "jobFamilyGroup": "Intelligence & Investigations"}
@@ -77,7 +77,6 @@
 {"reqId": "be7b1bf5-37ab-40f7-9ec1-e9732244f12a", "jobFamilyGroup": "OpenAI for Gov"}
 {"reqId": "498e0afe-376b-470f-b8c8-9a56a46effa8", "jobFamilyGroup": "Finance"}
 {"reqId": "f58cb1eb-9642-4a4d-a14d-d7a57d583a11", "jobFamilyGroup": "Scaling"}
-{"reqId": "da4a6959-0a9a-4090-ae12-e06e45fe2f28", "jobFamilyGroup": "Go To Market"}
 {"reqId": "1a979fd4-1bce-484e-a416-aed2810677a6", "jobFamilyGroup": "User Operations"}
 {"reqId": "c44268f1-717b-4da3-9943-2557f7d739f0", "jobFamilyGroup": "Safety Systems"}
 {"reqId": "9747412d-a23d-48ba-bddd-ad1247c360f5", "jobFamilyGroup": "User Operations"}
@@ -107,27 +106,29 @@
 {"reqId": "e6d5ca02-f30b-4ac5-a69d-c947efb430f9", "jobFamilyGroup": "Scaling"}
 {"reqId": "ba2ead69-d118-4a91-a4d7-c880d17fa7f9", "jobFamilyGroup": "Go To Market"}
 {"reqId": "b7a2e30f-c5f6-4710-b53e-64d64bcce189", "jobFamilyGroup": "Scaling"}
-{"reqId": "3d064454-c0c3-4225-bc2c-6d8c0f8735b2", "jobFamilyGroup": "User Operations"}
+{"reqId": "3d064454-c0c3-4225-bc2c-6d8c0f8735b2", "jobFamilyGroup": "Applied AI"}
 {"reqId": "b4196174-9cc3-487d-9d21-848bc283b80f", "jobFamilyGroup": "Strategic Finance"}
 {"reqId": "3ca637f8-c0d6-4253-8568-1f31b02adf76", "jobFamilyGroup": "Scaling"}
 {"reqId": "b9a4a809-a965-4dbe-aeef-6ce1593903dd", "jobFamilyGroup": "Scaling"}
+{"reqId": "d7d1bd40-d9d5-466b-9d21-39b9b423db40", "jobFamilyGroup": "Forward Deployed Engineering"}
 {"reqId": "debaf5f8-c166-4b35-81c1-5bda75124373", "jobFamilyGroup": "Scaling"}
 {"reqId": "23b158fe-709e-4bf5-856c-d10953d32f60", "jobFamilyGroup": "Applied AI"}
 {"reqId": "467da204-cd62-4e2d-ad7a-f3138f4f283b", "jobFamilyGroup": "Research"}
 {"reqId": "994bf78e-55ec-4c02-9326-6f90c08bcebe", "jobFamilyGroup": "Data Science"}
 {"reqId": "f1567543-4de1-468e-9054-bc5fd21a55e2", "jobFamilyGroup": "Data Science"}
 {"reqId": "898a87fb-4cb8-450e-9840-ee5dc710a57d", "jobFamilyGroup": "Data Science"}
-{"reqId": "4ef8e8f4-a1ef-4d83-92cb-76463ec0a151", "jobFamilyGroup": "Corporate Security"}
 {"reqId": "6eb386ac-9056-4795-aa79-a27e105faf5c", "jobFamilyGroup": "Scaling"}
 {"reqId": "f51f750f-a737-4441-8f96-30133a2a8049", "jobFamilyGroup": "Security"}
 {"reqId": "98ad9beb-4f91-496c-bd16-ac0b2a8d5bb2", "jobFamilyGroup": "Security"}
 {"reqId": "93d9be71-6502-4e48-94c2-1c17724e2bc7", "jobFamilyGroup": "Go To Market"}
+{"reqId": "d6476403-46f5-4748-aa19-25c52d241cdc", "jobFamilyGroup": "Finance"}
 {"reqId": "eda4a2d1-682f-418e-8055-222eaf7c9abd", "jobFamilyGroup": "Scaling"}
 {"reqId": "3a415c1d-4f66-4578-8eb3-8b15ef0ab52b", "jobFamilyGroup": "Scaling"}
 {"reqId": "932c9cc1-c542-4f67-8d0d-443de87b8213", "jobFamilyGroup": "Research"}
 {"reqId": "194a69ed-d7a2-4af8-9bec-67a4b7b58451", "jobFamilyGroup": "Finance"}
 {"reqId": "fff02c39-1185-427c-bf89-70d7eaa5e3db", "jobFamilyGroup": "Applied AI"}
 {"reqId": "fc72784d-f925-4f8d-aebc-eee72e7bf55c", "jobFamilyGroup": "Data Science"}
+{"reqId": "5d37e9c8-f9f0-46b6-ba6d-ee6e6ead8d17", "jobFamilyGroup": "Corporate Security"}
 {"reqId": "533c0fc9-b773-476d-9f96-a0528efbab0e", "jobFamilyGroup": "Forward Deployed Engineering"}
 {"reqId": "da07ba71-81fd-47c7-adb1-2b2d1eaed325", "jobFamilyGroup": "Research"}
 {"reqId": "5a265d2b-683f-4cea-9b69-8e137e704ab3", "jobFamilyGroup": "Scaling"}
@@ -136,10 +137,12 @@
 {"reqId": "ca7e4019-bf93-42fd-8f15-fac59c6e237c", "jobFamilyGroup": "Go To Market"}
 {"reqId": "f84dbb5c-6008-40f1-b388-1434d159d4a4", "jobFamilyGroup": "Security"}
 {"reqId": "5c579ec6-be3a-409b-8ae4-9e3f46af8288", "jobFamilyGroup": "Finance"}
+{"reqId": "7bdd4df4-b53d-4442-a116-69be7d9d4b1f", "jobFamilyGroup": "Forward Deployed Engineering"}
 {"reqId": "a4ea79c8-e79f-4126-8c1f-032289024961", "jobFamilyGroup": "Applied AI"}
 {"reqId": "d8ebcb30-c789-4e75-bf9b-a1e3fb09dd2f", "jobFamilyGroup": "Research"}
 {"reqId": "e6981259-c1d0-46de-8376-56bde28cfb10", "jobFamilyGroup": "Applied AI"}
 {"reqId": "60d3700b-ba82-4fa6-a6bb-7b2b67070510", "jobFamilyGroup": "Research"}
+{"reqId": "d3d17f29-fbaf-4697-a6ed-aaa0055ecc5c", "jobFamilyGroup": "Go To Market"}
 {"reqId": "2710d0c7-8f1c-4e1a-bf7a-4000fc5a8d68", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "20f525b7-f958-4c95-a055-f914ab3adb95", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "63f7f0b3-ba2c-437b-87ba-ec476729f071", "jobFamilyGroup": "Consumer Devices"}
@@ -147,7 +150,7 @@
 {"reqId": "dd48e74c-b08e-4527-8d1a-9297856b015a", "jobFamilyGroup": "Go To Market"}
 {"reqId": "c9e9e3a5-fb93-4162-b876-6266016819c0", "jobFamilyGroup": "User Operations"}
 {"reqId": "c51e48ce-31ad-4176-a6d5-4a785b44ab73", "jobFamilyGroup": "Applied AI"}
-{"reqId": "7613aca3-9dd8-41cd-b114-06ef4de967a9", "jobFamilyGroup": "User Operations"}
+{"reqId": "7613aca3-9dd8-41cd-b114-06ef4de967a9", "jobFamilyGroup": "Applied AI"}
 {"reqId": "3ab0541b-160b-49c0-8609-574db6358332", "jobFamilyGroup": "Strategic Finance"}
 {"reqId": "e4ef18a1-f2f7-4920-a53c-aeadd184d124", "jobFamilyGroup": "Scaling"}
 {"reqId": "89f58eb2-519f-4a36-8be0-2e594724e1bc", "jobFamilyGroup": "Applied AI"}
@@ -161,12 +164,15 @@
 {"reqId": "7f299784-2c75-4d73-99e5-1e5043ec7b48", "jobFamilyGroup": "Data Science"}
 {"reqId": "bf9d9e1c-7967-41a4-a7ae-0bf9b6a768c2", "jobFamilyGroup": "Go To Market"}
 {"reqId": "50ab21f6-475d-4911-984d-7d2727e72ea1", "jobFamilyGroup": "Marketing"}
+{"reqId": "effa8b95-3b2d-4f57-8fcd-b3c9b3c142ba", "jobFamilyGroup": "Applied AI"}
 {"reqId": "8e301350-62fb-4251-bc34-c7036498f08c", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "775240dd-6d36-401a-acca-128df0459610", "jobFamilyGroup": "Applied AI"}
 {"reqId": "6202038a-323b-43ce-ae10-534acba4145c", "jobFamilyGroup": "Applied AI"}
 {"reqId": "673ca4f5-b5dc-448f-be3c-4f888a6d13ed", "jobFamilyGroup": "Go To Market"}
 {"reqId": "5e4ed6d1-2417-4bf5-bae0-905931c488e3", "jobFamilyGroup": "Scaling"}
+{"reqId": "80f9f564-d789-47bc-91c3-3babf5a1a33d", "jobFamilyGroup": "Applied AI"}
 {"reqId": "fbb68247-eb54-4ad1-94b4-26e0dc24fd23", "jobFamilyGroup": "Go To Market"}
+{"reqId": "4a9774e2-6505-4cc2-92eb-22a8450aacdc", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "e665817a-bf86-4208-8cf3-c1754c28b401", "jobFamilyGroup": "Go To Market"}
 {"reqId": "07fb9365-8e80-48fe-86df-08d60dd46f43", "jobFamilyGroup": "Go To Market"}
 {"reqId": "65913e57-80e0-4a1a-bbc3-265ae8a1a41b", "jobFamilyGroup": "Research"}
@@ -178,7 +184,6 @@
 {"reqId": "1baad891-43b8-4e2a-9e6c-f68741e718a4", "jobFamilyGroup": "Go To Market"}
 {"reqId": "2ee660bf-1911-4619-9282-751cd9fc5c61", "jobFamilyGroup": "Corporate Security"}
 {"reqId": "5a1a0c32-0b82-482a-8149-e6b096c3e732", "jobFamilyGroup": "Applied AI"}
-{"reqId": "8b0ac3a0-53ac-49e7-9030-85d9b73d1012", "jobFamilyGroup": "OpenAI for Gov"}
 {"reqId": "6fbb72e6-1d69-4863-aaf3-3c5830e49e8a", "jobFamilyGroup": "Applied AI"}
 {"reqId": "9dfe4c27-84c0-4150-9ebe-8d4f12a95404", "jobFamilyGroup": "Executive Operations"}
 {"reqId": "ef828b89-41ed-4cde-96a9-94ffe5770d4c", "jobFamilyGroup": "Applied AI"}
@@ -186,9 +191,9 @@
 {"reqId": "4cfc6b6b-dd8f-4101-897d-3217e45db1e4", "jobFamilyGroup": "OpenAI for Gov"}
 {"reqId": "7daff2af-1686-43fe-85c0-ca912c8747ac", "jobFamilyGroup": "Applied AI"}
 {"reqId": "2c9d0566-69b1-435e-bd8f-4eefc04dd076", "jobFamilyGroup": "Scaling"}
+{"reqId": "c5f39beb-dc8a-4f43-a156-28754d306f64", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "efed424b-e025-400f-8ac3-73e962b85751", "jobFamilyGroup": "Consumer Devices"}
-{"reqId": "bed15207-f4bc-4a51-ae13-de017ddf3cba", "jobFamilyGroup": "Go To Market"}
-{"reqId": "23662a5c-43c3-4754-a6e0-30f8cbf6d681", "jobFamilyGroup": "Applied AI"}
+{"reqId": "f0529a1d-fb6a-4229-a590-8caff1785bb3", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "ed871ac9-44ae-47fa-beaa-b9ab7ff31012", "jobFamilyGroup": "People"}
 {"reqId": "1bb1f351-41a2-43a5-bac1-259859886cb3", "jobFamilyGroup": "Applied AI"}
 {"reqId": "fc38c6bf-5330-435c-99b6-1bcf1f5829a8", "jobFamilyGroup": "Product Management"}
@@ -201,8 +206,8 @@
 {"reqId": "9d9d9fba-e955-4c4d-8e6f-e7fc80d7a919", "jobFamilyGroup": "Marketing"}
 {"reqId": "e14fc37c-7ae5-4a6b-ba0d-a36860cf9bb2", "jobFamilyGroup": "Applied AI"}
 {"reqId": "09dcf3e6-c510-4e7a-af50-e3e401e0f043", "jobFamilyGroup": "People"}
+{"reqId": "65780e7c-6cbd-4e01-a437-2142363d855d", "jobFamilyGroup": "Go To Market"}
 {"reqId": "99f4a8ea-6bd0-49a3-b90a-5004c8923523", "jobFamilyGroup": "Go To Market"}
-{"reqId": "3254f6a7-6353-4a77-beec-f37b832c99ae", "jobFamilyGroup": "Go To Market"}
 {"reqId": "a452882b-bb56-4a99-83e6-b8b5d21db3ee", "jobFamilyGroup": "Marketing"}
 {"reqId": "d9b730a4-ee24-4d18-bb46-d8111591c6d2", "jobFamilyGroup": "Applied AI"}
 {"reqId": "deff9215-217d-4392-825e-7788cb8205f3", "jobFamilyGroup": "Applied AI"}
@@ -240,13 +245,11 @@
 {"reqId": "4f6be73e-9a1d-4ec6-8b0e-b2af0b4becfb", "jobFamilyGroup": "Scaling"}
 {"reqId": "9b2c68f2-5ce8-44f9-a30c-d8016ac66d86", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "fbc7ebaf-3a26-406d-9ff6-f166f3e246a2", "jobFamilyGroup": "Product Management"}
-{"reqId": "0ca205c9-42ec-4c19-8d43-00700b8c7fd2", "jobFamilyGroup": "Go To Market"}
 {"reqId": "5acf4854-1d42-40ca-bff8-4f6f04cdce68", "jobFamilyGroup": "Core Product & Platform"}
 {"reqId": "ec0a4e03-bbcc-4c64-813f-b53dabb8f53a", "jobFamilyGroup": "Scaling"}
 {"reqId": "e8558280-69dc-438a-b905-623f75ae6d62", "jobFamilyGroup": "Scaling"}
 {"reqId": "7536171d-0f98-4964-8f22-7968db062105", "jobFamilyGroup": "Strategic Finance"}
 {"reqId": "c44a22a3-6d6f-41f3-bd54-3379034f3e59", "jobFamilyGroup": "Go To Market"}
-{"reqId": "71508273-13e5-4b77-a675-953ff3d73ca5", "jobFamilyGroup": "Scaling"}
 {"reqId": "a67d16f7-0273-4052-bb48-06bf9c478eb6", "jobFamilyGroup": "Scaling"}
 {"reqId": "550d0123-238c-4ad8-aaee-ea4a5a484639", "jobFamilyGroup": "Security"}
 {"reqId": "31f7b3d9-eb5f-4e70-98ab-9115dd153993", "jobFamilyGroup": "Marketing"}
@@ -267,21 +270,17 @@
 {"reqId": "f873dd71-46c9-4be1-8580-bc67c56b4cad", "jobFamilyGroup": "Applied AI"}
 {"reqId": "21229750-8bd1-4134-a20e-2a8922b88806", "jobFamilyGroup": "Scaling"}
 {"reqId": "1fec5ecd-5b7b-45bc-bc8c-ac7184565551", "jobFamilyGroup": "Scaling"}
-{"reqId": "5664d2d6-639d-4696-9dab-0d703f1d9c5d", "jobFamilyGroup": "Safety Systems"}
 {"reqId": "e5c39e03-6121-47be-8bd3-f6128557b38f", "jobFamilyGroup": "Go To Market"}
-{"reqId": "18d65004-a399-4a33-80bc-10f33bff2ed0", "jobFamilyGroup": "Forward Deployed Engineering"}
 {"reqId": "a7f4ec2e-e93f-4f81-892a-cd8381f347fe", "jobFamilyGroup": "Marketing"}
 {"reqId": "9d48e2e6-41a9-4a90-8b3b-6cc960e95c2f", "jobFamilyGroup": "Scaling"}
 {"reqId": "9c18de41-d414-453e-9848-27a98a33c6bd", "jobFamilyGroup": "Strategic Finance"}
 {"reqId": "e90a44a7-fc2e-49bf-aec4-d43b9e3d8e92", "jobFamilyGroup": "Data Science"}
-{"reqId": "579595e5-0b16-485e-b7c5-102fc7467def", "jobFamilyGroup": "People"}
 {"reqId": "32a314f3-17d6-4f94-ba1b-88076d9ac4f4", "jobFamilyGroup": "Product Partnerships"}
 {"reqId": "4cbbf0b1-7c0b-4c42-bf38-48377f847e91", "jobFamilyGroup": "Scaling"}
 {"reqId": "f4467078-033c-4638-ac7e-69a532276d85", "jobFamilyGroup": "Go To Market"}
 {"reqId": "544af761-e37a-450c-884b-b96506c1b883", "jobFamilyGroup": "Global Affairs"}
 {"reqId": "72a58872-70e2-4340-a259-e9bea3596883", "jobFamilyGroup": "IT"}
 {"reqId": "c37587c4-39f3-40e0-b73c-c8bb55a7cd05", "jobFamilyGroup": "IT"}
-{"reqId": "2796d32a-9f7c-4008-a2c5-50dd53b0f2fe", "jobFamilyGroup": "Applied AI"}
 {"reqId": "c3458423-2cd6-40c0-bb5d-a5c3726a1d08", "jobFamilyGroup": "Scaling"}
 {"reqId": "90c711dc-5f50-46e3-a5ab-82359a56d683", "jobFamilyGroup": "Data Science"}
 {"reqId": "990397de-c00c-4577-b093-d8c82b4e9145", "jobFamilyGroup": "Core Product & Platform"}
@@ -291,12 +290,10 @@
 {"reqId": "6d9925f4-3d0a-4710-8304-032d0080d12d", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "89d61ae8-1ce1-4187-9edd-da8029979e41", "jobFamilyGroup": "Security"}
 {"reqId": "9117987a-7a59-449e-a702-89e8d0e8cb60", "jobFamilyGroup": "Research"}
+{"reqId": "201224fb-6d5f-4e3a-b183-25931d5c776d", "jobFamilyGroup": "Finance"}
 {"reqId": "b8a1293b-bf5b-488d-8257-869584db6496", "jobFamilyGroup": "User Operations"}
-{"reqId": "db3593d6-ac72-4d3e-b15c-8469e972a99a", "jobFamilyGroup": "Finance"}
-{"reqId": "3c5ebd43-1f83-422b-9e44-94b96bc8e4e0", "jobFamilyGroup": "Marketing"}
 {"reqId": "a6a421a5-0d3d-4f2f-9767-7c25b6e7d2fc", "jobFamilyGroup": "Marketing"}
 {"reqId": "0b212a4a-6709-4da8-b59d-283a9bbf812e", "jobFamilyGroup": "Applied AI"}
-{"reqId": "809d22a7-bb04-446f-a409-da323a6c327e", "jobFamilyGroup": "Research"}
 {"reqId": "f9731ef2-9b8a-49ec-95ca-ecef35fa996a", "jobFamilyGroup": "Research"}
 {"reqId": "5a4eed17-29d5-41cb-856e-09bfdaffe017", "jobFamilyGroup": "Applied AI"}
 {"reqId": "5b75027a-a5eb-4d28-a608-aa6bebcb079f", "jobFamilyGroup": "Research"}
@@ -315,18 +312,15 @@
 {"reqId": "f6278b60-dd42-4aa8-a3cd-c105f75ae8ae", "jobFamilyGroup": "Applied AI"}
 {"reqId": "7e0c1731-a24a-4a75-9cda-2a0502f8e152", "jobFamilyGroup": "Research"}
 {"reqId": "df3edefb-6a8b-4ef6-b183-b3f96051783e", "jobFamilyGroup": "Research"}
-{"reqId": "e1daa4e0-c42a-45a7-b9ee-559b35bfe08a", "jobFamilyGroup": "Applied AI"}
 {"reqId": "9d72171e-2630-4347-83a1-263178644282", "jobFamilyGroup": "Research"}
 {"reqId": "60089c12-762c-4369-9a7c-94f8959343a3", "jobFamilyGroup": "User Operations"}
 {"reqId": "4070d52e-0263-4cd5-9107-052b4ecc1209", "jobFamilyGroup": "Core Product & Platform"}
 {"reqId": "d45d6005-ad46-4c3c-8cfc-d312bffe01d5", "jobFamilyGroup": "Marketing"}
 {"reqId": "1bf678c5-1058-45ca-b9bd-b0029fccd60e", "jobFamilyGroup": "Research"}
 {"reqId": "66288824-8b77-4774-bc57-6825d3e6221e", "jobFamilyGroup": "Core Product & Platform"}
-{"reqId": "39a709f3-6e9e-45e9-94eb-43a1c2aaaeaf", "jobFamilyGroup": "Applied AI"}
 {"reqId": "b09b4216-426d-443c-9b87-23570fd9a694", "jobFamilyGroup": "Strategic Finance"}
 {"reqId": "cffa3a8d-918a-4e91-a1c6-3fa84a454408", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "1c48f39f-60ea-4636-87ed-8b4b4f5243e5", "jobFamilyGroup": "Scaling"}
-{"reqId": "4d5a6ca9-5fe0-4d4c-bbc4-ffa8fef33915", "jobFamilyGroup": "Go To Market"}
 {"reqId": "93f558c1-c944-4ddc-b102-addc9446de3d", "jobFamilyGroup": "Data Science"}
 {"reqId": "b15442c5-8e3c-4370-9abf-4b9c63f56de0", "jobFamilyGroup": "Applied AI"}
 {"reqId": "e7a4ee23-138a-4004-916e-72a452e7d115", "jobFamilyGroup": "Applied AI"}
@@ -345,7 +339,6 @@
 {"reqId": "6d545b2c-5697-4f38-affc-aaa309f5bb26", "jobFamilyGroup": "Scaling"}
 {"reqId": "26e8c199-7dcb-4144-b263-f35220421a6d", "jobFamilyGroup": "User Operations"}
 {"reqId": "875b6559-55f0-4cea-ad62-0063d0cb0b73", "jobFamilyGroup": "Partnerships"}
-{"reqId": "22344614-c6ea-4ab5-97e5-49e97a8c8488", "jobFamilyGroup": "Go To Market"}
 {"reqId": "24ade569-b2eb-4879-b6d3-82407ac0efe7", "jobFamilyGroup": "Go To Market"}
 {"reqId": "5839b9a2-7d92-452a-8b56-06f8c3f97b75", "jobFamilyGroup": "Security"}
 {"reqId": "a368e0b4-2027-4d73-b45b-8a6a9b06c77b", "jobFamilyGroup": "Security"}
@@ -356,7 +349,6 @@
 {"reqId": "171ebca6-de53-4d6e-a312-30332f353957", "jobFamilyGroup": "Research"}
 {"reqId": "ad6b55f9-fa63-4860-b852-d90592e49d1c", "jobFamilyGroup": "Scaling"}
 {"reqId": "24f3c017-d844-4df1-bc52-71f95b6e731d", "jobFamilyGroup": "User Operations"}
-{"reqId": "39256344-0da0-4a5d-bd65-5438d94f7738", "jobFamilyGroup": "Marketing"}
 {"reqId": "ee047eec-ae79-474b-9f1b-764242bc3c63", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "fcb0ed1a-9329-4e8f-8aab-92bb626d8141", "jobFamilyGroup": "Applied AI"}
 {"reqId": "82492010-ea96-449d-9949-b726b1a22616", "jobFamilyGroup": "Research"}
@@ -372,32 +364,27 @@
 {"reqId": "01091aed-427d-4e10-8cdb-fb500cf55bb9", "jobFamilyGroup": "Go To Market"}
 {"reqId": "dc503400-f7a8-4ad4-b50b-b33d2d12cc2d", "jobFamilyGroup": "Marketing"}
 {"reqId": "d1c6cb87-a44d-4d04-92a8-dc40eccd090e", "jobFamilyGroup": "Applied AI"}
-{"reqId": "3d4ac845-ec9c-43e0-bd79-9fdf5b87da69", "jobFamilyGroup": "Scaling"}
 {"reqId": "cebd0a1e-2724-4beb-8ed0-d9c7934d1222", "jobFamilyGroup": "Research"}
 {"reqId": "56e699e0-421f-40d1-aad1-20cf6609794f", "jobFamilyGroup": "Strategic Finance"}
+{"reqId": "dcbb011b-bc0f-41e6-b3c6-34068d177e54", "jobFamilyGroup": "Communications"}
 {"reqId": "55f36629-8351-41d9-b2f5-3d63c5e26bf7", "jobFamilyGroup": "Go To Market"}
-{"reqId": "08c536fc-1d2a-4ca3-99dd-6f6030286b0c", "jobFamilyGroup": "Go To Market"}
 {"reqId": "6d7ece77-bf25-4f5e-9a84-c5ce26e18c37", "jobFamilyGroup": "Scaling"}
 {"reqId": "2a799206-4716-4f26-8aef-372ed6b8df8f", "jobFamilyGroup": "User Operations"}
 {"reqId": "eda0d516-94bd-4257-9679-aded0d709fba", "jobFamilyGroup": "Applied AI"}
 {"reqId": "1c2a411c-eb30-406b-bbd0-454d516ad797", "jobFamilyGroup": "Forward Deployed Engineering"}
-{"reqId": "7e62a05e-2e43-4b95-bde7-34efa8d82c5f", "jobFamilyGroup": "Go To Market"}
 {"reqId": "d44d9fac-3a9f-4731-a4fc-7a6759ddb427", "jobFamilyGroup": "Scaling"}
 {"reqId": "1f247dd3-5c54-49a7-83f5-ca6cf6ed7717", "jobFamilyGroup": "Scaling"}
 {"reqId": "6e20368e-d51e-4562-8b94-0166317d52c7", "jobFamilyGroup": "Scaling"}
 {"reqId": "a51b521c-d3bf-4653-99c6-c9152827cfb8", "jobFamilyGroup": "Go To Market"}
-{"reqId": "5834b531-bb89-4471-9253-8c30bc0b26a8", "jobFamilyGroup": "Intelligence & Investigations"}
 {"reqId": "db993e24-ce4f-4f55-9187-403726bcb957", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "ca9e0aeb-6df1-4b73-8ec0-2e9e124712f1", "jobFamilyGroup": "Go To Market"}
 {"reqId": "37ee9010-079f-4932-9fc9-45cd9372b6dd", "jobFamilyGroup": "Applied AI"}
 {"reqId": "362a91cc-8e64-4922-a650-68161de60daa", "jobFamilyGroup": "User Operations"}
-{"reqId": "d7dc62fc-e7ce-4f58-a912-4b62b65c7eb6", "jobFamilyGroup": "Partnerships"}
 {"reqId": "0875c19f-3f37-403e-81e9-7bf2429f1e4e", "jobFamilyGroup": "User Operations"}
 {"reqId": "2e645639-3362-42f7-b0b9-e99380c48d29", "jobFamilyGroup": "User Operations"}
 {"reqId": "bcf5b85f-6fa5-40f5-bb62-434d430f8ae8", "jobFamilyGroup": "Executive Operations"}
 {"reqId": "21734593-6318-4e55-a685-53c52c0bbfe9", "jobFamilyGroup": "Legal"}
 {"reqId": "596e543a-0ab9-471e-a1ff-40fd55c74fce", "jobFamilyGroup": "Applied AI"}
-{"reqId": "83b3ef17-5211-403d-b763-850e1c60faa0", "jobFamilyGroup": "Applied AI"}
 {"reqId": "000cf0f2-090d-40c6-b9f8-1699db9a4c68", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "002c6146-f1bf-4653-8929-8112b577837b", "jobFamilyGroup": "People"}
 {"reqId": "831e2f91-c213-4208-9eb3-4ce2cc6b9acf", "jobFamilyGroup": "Scaling"}
@@ -429,7 +416,6 @@
 {"reqId": "ef84553e-e02b-4904-a348-710ea8e37346", "jobFamilyGroup": "Applied AI"}
 {"reqId": "d2aad13c-6ed0-4905-ae12-8ea2397b190c", "jobFamilyGroup": "Applied AI"}
 {"reqId": "8a50f878-5252-4f65-ad84-80ae2dc5637e", "jobFamilyGroup": "Finance"}
-{"reqId": "dbfc77d3-8b6f-4a82-bb14-53eeaa6c4124", "jobFamilyGroup": "Security"}
 {"reqId": "2ded7835-eadb-4b36-8500-ca91df5ddb4a", "jobFamilyGroup": "Communications"}
 {"reqId": "c5d3a06a-eb31-425d-94d3-1664070c31e4", "jobFamilyGroup": "Marketing"}
 {"reqId": "ee6b7ece-ffcb-4546-8b4c-ef755ec21c14", "jobFamilyGroup": "Go To Market"}
@@ -441,17 +427,13 @@
 {"reqId": "4d0b1eb5-ea5d-460b-8fe6-23c45b0703f5", "jobFamilyGroup": "Scaling"}
 {"reqId": "3229b152-015f-49ad-9921-9c9de95570c8", "jobFamilyGroup": "Applied AI"}
 {"reqId": "d8915225-1d6b-4de5-96e3-e8e8511f1288", "jobFamilyGroup": "Partnerships"}
-{"reqId": "5cfe7d92-83bb-4676-aeb4-dcb69fa3e095", "jobFamilyGroup": "Finance"}
 {"reqId": "8626eb56-6e29-427d-9e12-d1a8078b8e4d", "jobFamilyGroup": "Scaling"}
-{"reqId": "94d132c8-3749-42dc-a0b6-ea19c875c77a", "jobFamilyGroup": "Finance"}
 {"reqId": "08e8d03a-df94-46af-8664-cd9aab1af445", "jobFamilyGroup": "Go To Market"}
-{"reqId": "02a0e59c-7262-41da-9f61-168d7c9b84a4", "jobFamilyGroup": "Research"}
 {"reqId": "9675cfd2-a983-49d7-80db-d3d58c42eb08", "jobFamilyGroup": "Go To Market"}
 {"reqId": "aeac2b78-1f4a-4dfe-b88f-25fc8adf5bb3", "jobFamilyGroup": "Security"}
 {"reqId": "1eb32675-b1a0-4c0a-9b57-19ceab07e9e0", "jobFamilyGroup": "Data Science"}
 {"reqId": "f5dfd3aa-3bf6-49e2-b780-0da281a21533", "jobFamilyGroup": "Data Science"}
 {"reqId": "36e30720-0a32-4b7b-8172-e31ad0a20cdc", "jobFamilyGroup": "Security"}
-{"reqId": "6ff654e4-fd45-4cac-a76f-30249e14292c", "jobFamilyGroup": "Marketing"}
 {"reqId": "96de8acb-556e-451b-bc84-7124bb4b0a20", "jobFamilyGroup": "Core Product & Platform"}
 {"reqId": "341561ae-9892-4ba1-9ffb-faafff4f0fb2", "jobFamilyGroup": "Finance"}
 {"reqId": "fa5114ae-c6ff-4bbd-9e21-5dcfafd032f7", "jobFamilyGroup": "Marketing"}
@@ -476,7 +458,6 @@
 {"reqId": "bb759305-03a3-442c-a694-ae9ef478b1fd", "jobFamilyGroup": "Finance"}
 {"reqId": "c8750f8c-0e56-49c0-b34a-251c1797d816", "jobFamilyGroup": "Finance"}
 {"reqId": "7facc4fa-70f0-4f2b-8b0c-8bb79c3296c1", "jobFamilyGroup": "Applied AI"}
-{"reqId": "34639ac0-d7c9-4106-8e34-f490f377e1a0", "jobFamilyGroup": "Go To Market"}
 {"reqId": "72c497c3-0350-42d6-b538-abd9e9af9041", "jobFamilyGroup": "Go To Market"}
 {"reqId": "3480c407-cb27-45c9-ad4e-d132ea62b389", "jobFamilyGroup": "Finance"}
 {"reqId": "12f6b6ef-be98-4159-9aef-7baac78489bc", "jobFamilyGroup": "Go To Market"}
@@ -487,14 +468,12 @@
 {"reqId": "ac371165-c2b3-4289-9e97-0abc68287b91", "jobFamilyGroup": "Safety Systems"}
 {"reqId": "51977acc-b1f8-48af-bde6-95ddba936d65", "jobFamilyGroup": "Forward Deployed Engineering"}
 {"reqId": "38388825-65f9-46c5-b5f4-c783d1fb17d4", "jobFamilyGroup": "Marketing"}
-{"reqId": "8a6b3b10-1d7c-4352-9187-2ba5126c644f", "jobFamilyGroup": "OpenAI for Gov"}
 {"reqId": "a99e16a8-6fb1-41b9-8d2f-3cf80383121c", "jobFamilyGroup": "Applied AI"}
 {"reqId": "1e28e1f0-2580-46d9-b5ba-55c77d706f81", "jobFamilyGroup": "Finance"}
 {"reqId": "099dd6af-b017-4a60-85d5-4c79da3a9ead", "jobFamilyGroup": "Applied AI"}
 {"reqId": "a23bd45a-e192-460d-bd34-a0f6c4bc6865", "jobFamilyGroup": "Applied AI"}
 {"reqId": "b65f9125-2c3a-4507-bb20-6213952b5f2c", "jobFamilyGroup": "User Operations"}
 {"reqId": "23239cae-2a91-4985-94d1-a2acbb3ffa25", "jobFamilyGroup": "Go To Market"}
-{"reqId": "4d0a2666-16e0-42e5-8573-180dcdc5439f", "jobFamilyGroup": "Go To Market"}
 {"reqId": "4030aec5-ffd4-49a7-bc19-65e63c45e167", "jobFamilyGroup": "Finance"}
 {"reqId": "ab9ddb8f-a479-4931-910a-cabcf205d95e", "jobFamilyGroup": "Go To Market"}
 {"reqId": "978a22a5-0f0f-4da7-811e-a4b2b2fbe659", "jobFamilyGroup": "Product Policy"}
@@ -503,7 +482,6 @@
 {"reqId": "1e68e5f6-6bda-4d11-89fd-4be731077031", "jobFamilyGroup": "Security"}
 {"reqId": "ccd3c68b-5860-40b5-9aff-e99da9aa669c", "jobFamilyGroup": "Strategic Finance"}
 {"reqId": "c717b98e-5394-4ad1-ae3f-e036717ad9b5", "jobFamilyGroup": "Partnerships"}
-{"reqId": "8f9693d9-73c8-48c1-b1cf-b0cd92a1c3c2", "jobFamilyGroup": "Global Affairs"}
 {"reqId": "894ce80d-c587-4ef0-92d2-b16deb9a06b9", "jobFamilyGroup": "Data Science"}
 {"reqId": "9f78c41f-8d39-46c9-b9c3-c3b075905b24", "jobFamilyGroup": "Security"}
 {"reqId": "48993416-b5f5-4c3f-b7c8-b8ca7c2395e0", "jobFamilyGroup": "User Operations"}
@@ -520,7 +498,6 @@
 {"reqId": "d49e3abe-0d02-4b73-a5b2-cc7f1414c1e8", "jobFamilyGroup": "Finance"}
 {"reqId": "67c67c36-e710-4f21-bd9c-759eb72cfabf", "jobFamilyGroup": "Marketing"}
 {"reqId": "5b85c0cc-3f19-4b96-9bd3-3b7521e54f44", "jobFamilyGroup": "Strategic Finance"}
-{"reqId": "44abed05-4b45-4aa0-bee6-45d113bbef66", "jobFamilyGroup": "Applied AI"}
 {"reqId": "ddd35c55-d925-467c-b965-a698e1437d8b", "jobFamilyGroup": "Product Partnerships"}
 {"reqId": "1b268692-70d8-46c2-a347-2f7705b5c174", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "c18cb478-c0ab-447e-bc80-079f3bc00b0b", "jobFamilyGroup": "Finance"}
@@ -530,8 +507,6 @@
 {"reqId": "1aa89889-9323-44eb-a3fb-042c68c45252", "jobFamilyGroup": "Partnerships"}
 {"reqId": "b5a022bb-f7a5-47d9-b5e8-9d1575493dcf", "jobFamilyGroup": "Safety Systems"}
 {"reqId": "71838fdf-4476-490c-81b6-4bf0746f6774", "jobFamilyGroup": "Applied AI"}
-{"reqId": "c8c607f4-d29f-46ea-b3ee-5a052ac17278", "jobFamilyGroup": "Research"}
-{"reqId": "c5fbd661-b634-447c-8fe0-1d625969c4b1", "jobFamilyGroup": "Go To Market"}
 {"reqId": "badafdf8-116b-4849-b848-2f20a3ff2732", "jobFamilyGroup": "Intelligence & Investigations"}
 {"reqId": "bce2bcbd-01e6-4afc-9109-d325483aa47e", "jobFamilyGroup": "Product Design"}
 {"reqId": "5f3a6397-47ac-4ef0-9ca9-cd358851a6b9", "jobFamilyGroup": "OpenAI for Gov"}
@@ -542,15 +517,13 @@
 {"reqId": "9c990e11-a5fb-4c6d-ab83-ede32839e78e", "jobFamilyGroup": "Marketing"}
 {"reqId": "719cc0f6-ed38-41db-8870-299b4d336f37", "jobFamilyGroup": "Research"}
 {"reqId": "ec317080-e2d2-4a73-93e6-e0a9ae6fdf96", "jobFamilyGroup": "Scaling"}
-{"reqId": "73f27385-2b31-49da-bc57-92e6f194c73e", "jobFamilyGroup": "Marketing"}
-{"reqId": "2df4df3a-7ac6-42f2-b8ec-d471627a80c8", "jobFamilyGroup": "Strategy & Operations"}
+{"reqId": "76583c87-78ea-4886-906d-81b0a9c05bfe", "jobFamilyGroup": "User Operations"}
 {"reqId": "333ebd68-cc1d-4706-8d0a-07f3e50d7bfd", "jobFamilyGroup": "Marketing"}
 {"reqId": "d727cc4b-f4b6-49a0-806c-390f8a053e2f", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "5953fed7-1466-4e90-94c9-43716a55e032", "jobFamilyGroup": "Applied AI"}
 {"reqId": "5a682b9f-ef1a-4e47-813a-72b23414d43e", "jobFamilyGroup": "People"}
 {"reqId": "c15d4e1b-adcf-4809-91d5-17ba6b789092", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "831960f4-a877-4c41-8fda-17fd321c0230", "jobFamilyGroup": "Consumer Devices"}
-{"reqId": "74dfcc9f-f15b-43cf-bf60-bb03690c238e", "jobFamilyGroup": "Forward Deployed Engineering"}
 {"reqId": "3ed37e51-40dc-4d17-8219-d3500af8892c", "jobFamilyGroup": "Strategy & Operations"}
 {"reqId": "65bc2ffe-a622-47cd-949c-2ca8b7ec6951", "jobFamilyGroup": "Scaling"}
 {"reqId": "90cf64cc-4276-433f-bdf0-7cf69309bbd2", "jobFamilyGroup": "Go To Market"}
@@ -567,10 +540,8 @@
 {"reqId": "91653d95-27fc-44bd-bbb3-7078fd6a5718", "jobFamilyGroup": "User Operations"}
 {"reqId": "9e39d2ba-2076-4f44-9e07-c8520e9d5cdb", "jobFamilyGroup": "Marketing"}
 {"reqId": "958eecd4-7446-445c-ae93-62c38436aa22", "jobFamilyGroup": "Marketing"}
-{"reqId": "2afc5695-a2f8-4832-bf66-a2ca5f0615dc", "jobFamilyGroup": "Legal"}
 {"reqId": "fa431b48-8f59-4429-85d7-31b84ed2c116", "jobFamilyGroup": "Marketing"}
 {"reqId": "dceee17e-1e37-448b-acd3-2f97e41a6af7", "jobFamilyGroup": "Go To Market"}
-{"reqId": "f2427971-2557-4eb9-ac16-6a7c0fa9b9c5", "jobFamilyGroup": "Go To Market"}
 {"reqId": "6882c919-600e-43c8-92f9-803d4eb3bcd2", "jobFamilyGroup": "OpenAI for Gov"}
 {"reqId": "7c936cfb-99c4-4e18-a033-75baa07cbb81", "jobFamilyGroup": "Finance"}
 {"reqId": "1098311d-3a07-40ad-8107-6245a492a0b3", "jobFamilyGroup": "Applied AI"}
@@ -597,6 +568,7 @@
 {"reqId": "d97380fa-d935-43ec-ad4f-6a7f810b21f2", "jobFamilyGroup": "Scaling"}
 {"reqId": "4a4a2604-b4b3-4944-a2a2-4ec4c5261d7d", "jobFamilyGroup": "Scaling"}
 {"reqId": "80f0deef-7c66-4545-91eb-f43a1481f997", "jobFamilyGroup": "Global Affairs"}
+{"reqId": "9d4d2727-27f3-4a63-857c-a96466130645", "jobFamilyGroup": "Applied AI"}
 {"reqId": "6742bd76-dcc7-4bbd-bdb3-00c315bc0254", "jobFamilyGroup": "Go To Market"}
 {"reqId": "1ae64ddb-505f-4ad2-a731-3a857e94edee", "jobFamilyGroup": "Applied AI"}
 {"reqId": "099374c6-3cbb-4964-9a1d-31e6e5b5dcd2", "jobFamilyGroup": "Workplace"}
@@ -613,14 +585,12 @@
 {"reqId": "b2fb6fa4-07a9-4d8d-adf5-bff18a5e6033", "jobFamilyGroup": "Applied AI"}
 {"reqId": "3b08148d-085e-4835-9934-1b7f60e0fdce", "jobFamilyGroup": "Scaling"}
 {"reqId": "f7d155c9-06e8-44f0-b2eb-bfa88707f2c1", "jobFamilyGroup": "Applied AI"}
-{"reqId": "9a8a0925-fc54-459f-b28f-12c14e9ef31e", "jobFamilyGroup": "Applied AI"}
 {"reqId": "56aafd17-7db9-473a-b3b4-957b6d926cdf", "jobFamilyGroup": "Research"}
 {"reqId": "2b87bb06-ba33-4cab-b950-0df12ca85dcf", "jobFamilyGroup": "Research"}
 {"reqId": "43ba8b53-4643-4544-bb21-f13efe99e0a0", "jobFamilyGroup": "Product Design"}
 {"reqId": "55150071-fce8-48f5-aea4-14ed78b83511", "jobFamilyGroup": "Applied AI"}
 {"reqId": "967f94aa-1706-4dba-ac89-bfbc2c38b688", "jobFamilyGroup": "Forward Deployed Engineering"}
 {"reqId": "56d541d3-02b5-44d8-b40b-4df72cdd0405", "jobFamilyGroup": "Research"}
-{"reqId": "ad0b2114-d2be-4c64-9226-d60de56271a4", "jobFamilyGroup": "Go To Market"}
 {"reqId": "241154df-ab1a-4dfa-8b18-66e087d1e636", "jobFamilyGroup": "User Operations"}
 {"reqId": "4342be72-0ec4-42b2-962a-6e7ca06b7070", "jobFamilyGroup": "Product Design"}
 {"reqId": "2ace6bbe-a7ac-4930-bcdc-14c618179b1f", "jobFamilyGroup": "Product Design"}
@@ -628,32 +598,63 @@
 {"reqId": "de76301c-7289-40a5-972a-ab144f189b4f", "jobFamilyGroup": "OpenAI for Gov"}
 {"reqId": "987c4eb8-819e-4258-a91c-f34ecfbcd5f1", "jobFamilyGroup": "Scaling"}
 {"reqId": "4923fd3e-acf2-4551-91ad-5a92ca81455b", "jobFamilyGroup": "Applied AI"}
-{"reqId": "cc613e44-9a09-49d2-b415-853cfcd62b32", "jobFamilyGroup": "Go To Market"}
 {"reqId": "b6a86e39-8059-4ccf-8d33-1bf5bd92fa86", "jobFamilyGroup": "Core Product & Platform"}
-{"reqId": "a525ada4-b02d-425e-b529-f74bd0b398a5", "jobFamilyGroup": "Technical Program Management"}
 {"reqId": "abc4b2b4-c251-482e-8f71-f02dda1e3b65", "jobFamilyGroup": "Marketing"}
 {"reqId": "708121e8-51ac-4a24-a2ff-bd9889ba5486", "jobFamilyGroup": "Applied AI"}
 {"reqId": "b60d3040-38e4-4abe-8af8-881286b10d50", "jobFamilyGroup": "Safety Systems"}
-{"reqId": "7495a0fe-be5a-42b4-bded-77870a122776", "jobFamilyGroup": "Legal"}
 {"reqId": "b2250643-bfd0-4ce6-abbf-cb7e8c8123ba", "jobFamilyGroup": "Research"}
 {"reqId": "95d078d9-fd33-494c-8ba0-22fbb8b193ad", "jobFamilyGroup": "Go To Market"}
 {"reqId": "cc15b36b-023e-4748-928a-625dbf2c497b", "jobFamilyGroup": "Go To Market"}
 {"reqId": "c0e1f65b-4731-48b3-ac60-93a269266494", "jobFamilyGroup": "Finance"}
 {"reqId": "acbf80cd-20a7-47fe-aaf9-3e9224d1570c", "jobFamilyGroup": "Applied AI"}
 {"reqId": "46cd942e-2ec4-4998-b4e5-67811f16dafb", "jobFamilyGroup": "Marketing"}
-{"reqId": "9acdfc63-6cce-4e2b-a862-a0fdc6da7743", "jobFamilyGroup": "Marketing"}
 {"reqId": "ba803f51-53d8-44b8-8bb7-b79f21d6a4c8", "jobFamilyGroup": "Scaling"}
 {"reqId": "5a647e2b-5d6c-4c71-aeea-b16e3fda4b3f", "jobFamilyGroup": "Scaling"}
 {"reqId": "1bec1791-b073-4f2a-9de6-34e36238c216", "jobFamilyGroup": "Consumer Devices"}
 {"reqId": "65b255da-4fd9-414e-98d4-0bec4eecf8ff", "jobFamilyGroup": "Scaling"}
-{"reqId": "b2e53ff7-629b-4f7f-a13e-3910e4fe4656", "jobFamilyGroup": "Go To Market"}
+{"reqId": "8c95db0d-982e-43cf-95e4-e30cb09e6c9c", "jobFamilyGroup": "Go To Market"}
 {"reqId": "40f2f959-20f8-40ca-8b8c-154b6774193a", "jobFamilyGroup": "Scaling"}
 {"reqId": "9b017213-6467-413f-b72c-59678c5d8bae", "jobFamilyGroup": "Technical Program Management"}
-{"reqId": "707590ec-7c76-48c6-9b0e-d0d6c1594d91", "jobFamilyGroup": "Legal"}
 {"reqId": "deacd43e-9c1b-467c-96e2-11f4f6bdb139", "jobFamilyGroup": "User Operations"}
 {"reqId": "144b12f3-5821-4727-a266-b5ed9ff46fd2", "jobFamilyGroup": "Strategic Finance"}
-{"reqId": "1958bdb2-dffc-4bff-a614-c13e2b8efe6f", "jobFamilyGroup": "Marketing"}
 {"reqId": "7f76be3a-38d0-4ff4-b997-9f1672e78bc0", "jobFamilyGroup": "Forward Deployed Engineering"}
+{"reqId": "2348230a-295f-434d-9b16-653e01ddbd0b", "jobFamilyGroup": "User Operations"}
+{"reqId": "54d56768-ba4b-4e57-8e3d-6eacd3e88a42", "jobFamilyGroup": "Marketing"}
 {"reqId": "7d87459c-6085-4479-8e77-9255e6dd8329", "jobFamilyGroup": "Workplace"}
+{"reqId": "780b0dfa-1068-4e94-8dc9-84b7fd1c5264", "jobFamilyGroup": "Product Policy"}
+{"reqId": "e42305bf-2266-4dff-82ad-42be7ddac495", "jobFamilyGroup": "Applied AI"}
 {"reqId": "6de1fad0-a69d-4d81-9d3a-2a3c5512b940", "jobFamilyGroup": "Safety Systems"}
 {"reqId": "50e8714b-c8a2-47f0-bc7c-2a76e988b380", "jobFamilyGroup": "Safety Systems"}
+{"reqId": "bc059a72-8ff3-4a80-a499-5b82ccca1f05", "jobFamilyGroup": "User Operations"}
+{"reqId": "16829ba8-031f-42cb-b74a-dfce835706ae", "jobFamilyGroup": "Finance"}
+{"reqId": "60be7108-c540-4839-87a8-41f19a75c1ce", "jobFamilyGroup": "Marketing"}
+{"reqId": "9d56b6fe-880a-47e8-a5ea-42fc8a1a8edc", "jobFamilyGroup": "Scaling"}
+{"reqId": "83f6d415-9462-4afc-a539-ca8d996e011a", "jobFamilyGroup": "Product Management"}
+{"reqId": "2b5c3a30-8e8b-4845-be40-0617b0c9fd43", "jobFamilyGroup": "Product Management"}
+{"reqId": "5ce0931f-aba7-4c7d-9fca-1e278bf75473", "jobFamilyGroup": "Finance"}
+{"reqId": "6628eb95-ede3-49ab-a11f-3d5c44b16bbb", "jobFamilyGroup": "Go To Market"}
+{"reqId": "356c5dca-472d-458e-826e-51d923e93eaa", "jobFamilyGroup": "Safety Systems"}
+{"reqId": "7aee5d38-6543-4fd7-b110-8cdb609c5c9e", "jobFamilyGroup": "Partnerships"}
+{"reqId": "d4cd5172-d4bc-4f9e-956e-c6bcaef1c355", "jobFamilyGroup": "Applied AI"}
+{"reqId": "0e76e8eb-cd22-43c8-a9d0-cc35a3b9cb08", "jobFamilyGroup": "IT"}
+{"reqId": "ac442f1f-c0d2-4608-a155-bfc89190e01c", "jobFamilyGroup": "Intelligence & Investigations"}
+{"reqId": "83ef2875-3b91-4f4d-88c5-68317e56d039", "jobFamilyGroup": "Communications"}
+{"reqId": "4aa1dcbf-166a-4538-ae4e-08cf39c7ff23", "jobFamilyGroup": "IT"}
+{"reqId": "b3fcdad3-abcb-4612-8fd9-a69e17210f0f", "jobFamilyGroup": "Applied AI"}
+{"reqId": "d49e09b0-9ebe-4ed6-bc0a-8b6a394a9756", "jobFamilyGroup": "Finance"}
+{"reqId": "0681fa01-76c2-47da-9ebd-b4677521e049", "jobFamilyGroup": "Finance"}
+{"reqId": "137e3df0-2bd4-4ad4-8edb-8455a7fdc912", "jobFamilyGroup": "Applied AI"}
+{"reqId": "7512a020-2f3c-4f19-921d-b76edaeba5d3", "jobFamilyGroup": "Intelligence & Investigations"}
+{"reqId": "74b9aa04-0b9d-459a-9e2d-0e43fae67a79", "jobFamilyGroup": "Global Affairs"}
+{"reqId": "76c2a136-4e93-4e1a-bbdf-de4268498838", "jobFamilyGroup": "Applied AI"}
+{"reqId": "04c7b3d3-8523-41a2-8f84-39a739ebf207", "jobFamilyGroup": "Strategic Finance"}
+{"reqId": "c0151a50-4943-42b9-b23a-beedd9d6aa54", "jobFamilyGroup": "Marketing"}
+{"reqId": "3b2d32bd-2549-43d0-8dc2-8469bece5336", "jobFamilyGroup": "Finance"}
+{"reqId": "8dcf85ee-563d-40de-bc78-cf829404d212", "jobFamilyGroup": "Partnerships"}
+{"reqId": "f16eaf44-208f-4374-b576-f033ed6e5eed", "jobFamilyGroup": "Partnerships"}
+{"reqId": "72bbf10a-5300-4aa6-8bf9-38cb2a60811a", "jobFamilyGroup": "People"}
+{"reqId": "7caed1e8-c6f6-4569-9d45-2d7a7a56a025", "jobFamilyGroup": "Applied AI"}
+{"reqId": "6fd50ace-941b-4559-992f-e53f9b76c9a0", "jobFamilyGroup": "Security"}
+{"reqId": "0dc7f3f1-0f8c-4d71-8264-ae0f208efeb1", "jobFamilyGroup": "People"}
+{"reqId": "4ca2e49f-83bb-4276-be17-d85a9a0c58e9", "jobFamilyGroup": "Life Sciences"}
+{"reqId": "2250282b-7f1a-43e6-bf55-e603cbf0fd89", "jobFamilyGroup": "Consumer Devices"}

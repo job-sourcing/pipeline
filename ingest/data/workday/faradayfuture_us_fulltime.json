@@ -2,13 +2,13 @@
  "board": "ats:greenhouse:faradayfuture",
  "company": "Faraday Future",
  "country": "United States",
- "time_type": "Full time",
- "dumpDate": "2026-09-24",
- "count": 70,
- "details_merged": 70,
- "signals_matched": 10,
+ "time_type": "",
+ "dumpDate": "2026-09-26",
+ "count": 71,
+ "details_merged": 71,
+ "signals_matched": 31,
  "similar_edges": 0,
- "facet_tagged_rows": 70,
+ "facet_tagged_rows": 71,
  "rows": [
   {
    "reqId": "1609",
@@ -17,7 +17,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7799321003",
    "externalPath": "/jobs/7799321003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 77 Days Ago",
+   "postedOn": "Posted 79 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1609"
@@ -62,7 +62,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7749064003",
    "externalPath": "/jobs/7749064003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 120 Days Ago",
+   "postedOn": "Posted 122 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1550"
@@ -120,7 +120,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7503282003",
    "externalPath": "/jobs/7503282003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 338 Days Ago",
+   "postedOn": "Posted 340 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1419"
@@ -165,7 +165,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7749069003",
    "externalPath": "/jobs/7749069003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 120 Days Ago",
+   "postedOn": "Posted 122 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1551"
@@ -210,7 +210,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7790481003",
    "externalPath": "/jobs/7790481003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 86 Days Ago",
+   "postedOn": "Posted 88 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1604"
@@ -268,7 +268,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7778378003",
    "externalPath": "/jobs/7778378003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 94 Days Ago",
+   "postedOn": "Posted 96 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1594"
@@ -313,7 +313,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7826484003",
    "externalPath": "/jobs/7826484003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 51 Days Ago",
+   "postedOn": "Posted 53 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1623"
@@ -347,8 +347,21 @@
    "error": null,
    "jobFamilyGroup": "Accounting",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4449068081",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4449068081",
+    "title": "Corporate FP&A Manager",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-08-04",
+    "num_applicants": 62,
+    "applicants_label": "62 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:12",
+    "match_method": "title"
    }
   },
   {
@@ -358,7 +371,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7738669003",
    "externalPath": "/jobs/7738669003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 128 Days Ago",
+   "postedOn": "Posted 130 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1542"
@@ -392,8 +405,21 @@
    "error": null,
    "jobFamilyGroup": "UES",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4412845817",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4412845817",
+    "title": "Data-Driven Growth Specialist",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-05-19",
+    "num_applicants": 59,
+    "applicants_label": "59 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:18",
+    "match_method": "title"
    }
   },
   {
@@ -403,7 +429,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7775574003",
    "externalPath": "/jobs/7775574003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 98 Days Ago",
+   "postedOn": "Posted 100 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1591"
@@ -437,8 +463,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4430173721",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4430173721",
+    "title": "Developer Acquisition Manager",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-06-18",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:29",
+    "match_method": "title"
    }
   },
   {
@@ -448,7 +487,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7770039003",
    "externalPath": "/jobs/7770039003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 104 Days Ago",
+   "postedOn": "Posted 106 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1575"
@@ -482,8 +521,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4428315302",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4428315302",
+    "title": "Developer Platform Marketing Operations",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-06-13",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:33",
+    "match_method": "title"
    }
   },
   {
@@ -493,7 +545,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7776923003",
    "externalPath": "/jobs/7776923003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 79 Days Ago",
+   "postedOn": "Posted 81 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1592"
@@ -527,8 +579,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4438127675",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4438127675",
+    "title": "Developer Platform Operations",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-07-08",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:26",
+    "match_method": "title"
    }
   },
   {
@@ -538,7 +603,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7778448003",
    "externalPath": "/jobs/7778448003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 94 Days Ago",
+   "postedOn": "Posted 96 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1596"
@@ -572,8 +637,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4432017461",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4432017461",
+    "title": "Director of Open Source & Open Developer Platform",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-06-22",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:25",
+    "match_method": "title"
    }
   },
   {
@@ -583,7 +661,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7790343003",
    "externalPath": "/jobs/7790343003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 86 Days Ago",
+   "postedOn": "Posted 88 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1603"
@@ -628,7 +706,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7645368003",
    "externalPath": "/jobs/7645368003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 211 Days Ago",
+   "postedOn": "Posted 213 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1495"
@@ -662,8 +740,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4378092439",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4378092439",
+    "title": "Embodied AI Lead / Robot Brain Lead",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-02-26",
+    "num_applicants": 41,
+    "applicants_label": "41 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "7 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:16",
+    "match_method": "title"
    }
   },
   {
@@ -673,7 +764,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7694008003",
    "externalPath": "/jobs/7694008003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 34 Days Ago",
+   "postedOn": "Posted 36 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1514"
@@ -718,7 +809,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7735950003",
    "externalPath": "/jobs/7735950003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 131 Days Ago",
+   "postedOn": "Posted 133 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1540"
@@ -763,7 +854,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7719153003",
    "externalPath": "/jobs/7719153003",
    "locationsText": "New York, New York, United States",
-   "postedOn": "Posted 148 Days Ago",
+   "postedOn": "Posted 150 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1528"
@@ -808,7 +899,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7799326003",
    "externalPath": "/jobs/7799326003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 77 Days Ago",
+   "postedOn": "Posted 79 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1610"
@@ -853,7 +944,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/8001627003",
    "externalPath": "/jobs/8001627003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 3 Days Ago",
+   "postedOn": "Posted 5 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1640"
@@ -911,7 +1002,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7772950003",
    "externalPath": "/jobs/7772950003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 101 Days Ago",
+   "postedOn": "Posted 103 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1587"
@@ -956,7 +1047,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7772966003",
    "externalPath": "/jobs/7772966003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 101 Days Ago",
+   "postedOn": "Posted 103 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1588"
@@ -990,8 +1081,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4429127873",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4429127873",
+    "title": "Head of User Acquisition, Robotics",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-06-15",
+    "num_applicants": 46,
+    "applicants_label": "46 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:31",
+    "match_method": "title"
    }
   },
   {
@@ -1001,7 +1105,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7772997003",
    "externalPath": "/jobs/7772997003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 101 Days Ago",
+   "postedOn": "Posted 103 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1589"
@@ -1046,7 +1150,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7833040003",
    "externalPath": "/jobs/7833040003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 49 Days Ago",
+   "postedOn": "Posted 51 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1627"
@@ -1080,8 +1184,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4448461851",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4448461851",
+    "title": "HRBP, Bilingual Chinese",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-08-06",
+    "num_applicants": 46,
+    "applicants_label": "46 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:09",
+    "match_method": "title"
    }
   },
   {
@@ -1091,7 +1208,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7766379003",
    "externalPath": "/jobs/7766379003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 108 Days Ago",
+   "postedOn": "Posted 110 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1570"
@@ -1125,8 +1242,21 @@
    "error": null,
    "jobFamilyGroup": "Human Resources",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4425970259",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4425970259",
+    "title": "Human Resources Operations Specialist, Bilingual Chinese",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-06-09",
+    "num_applicants": 80,
+    "applicants_label": "80 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:14",
+    "match_method": "title"
    }
   },
   {
@@ -1136,7 +1266,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7503342003",
    "externalPath": "/jobs/7503342003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 338 Days Ago",
+   "postedOn": "Posted 340 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1421"
@@ -1181,7 +1311,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7819889003",
    "externalPath": "/jobs/7819889003",
    "locationsText": "El Segundo, California, United States; New York, New York, United States",
-   "postedOn": "Posted 52 Days Ago",
+   "postedOn": "Posted 54 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1614"
@@ -1218,8 +1348,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4448631111",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4448631111",
+    "title": "Key Account Manager, Education, EAI Robotics Regional Sales",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-08-03",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:35",
+    "match_method": "title"
    }
   },
   {
@@ -1229,7 +1372,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7819890003",
    "externalPath": "/jobs/7819890003",
    "locationsText": "El Segundo, California, United States; New York, New York, United States",
-   "postedOn": "Posted 52 Days Ago",
+   "postedOn": "Posted 54 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1615"
@@ -1277,7 +1420,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7819895003",
    "externalPath": "/jobs/7819895003",
    "locationsText": "El Segundo, California, United States; New York, New York, United States",
-   "postedOn": "Posted 52 Days Ago",
+   "postedOn": "Posted 54 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1616"
@@ -1314,8 +1457,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4448611811",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4448611811",
+    "title": "Key Account Manager, Industrial & Manufacturing, EAI Robotics Regional Sales",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-08-03",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:37",
+    "match_method": "title"
    }
   },
   {
@@ -1325,7 +1481,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7819899003",
    "externalPath": "/jobs/7819899003",
    "locationsText": "El Segundo, California, United States; New York, New York, United States",
-   "postedOn": "Posted 52 Days Ago",
+   "postedOn": "Posted 54 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1617"
@@ -1373,7 +1529,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7963927003",
    "externalPath": "/jobs/7963927003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 31 Days Ago",
+   "postedOn": "Posted 33 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1631"
@@ -1418,7 +1574,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7750314003",
    "externalPath": "/jobs/7750314003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 119 Days Ago",
+   "postedOn": "Posted 121 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1553"
@@ -1463,7 +1619,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7767884003",
    "externalPath": "/jobs/7767884003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 13 Days Ago",
+   "postedOn": "Posted 15 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1572"
@@ -1508,7 +1664,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7986023003",
    "externalPath": "/jobs/7986023003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 20 Days Ago",
+   "postedOn": "Posted 22 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1638"
@@ -1553,7 +1709,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7826602003",
    "externalPath": "/jobs/7826602003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 51 Days Ago",
+   "postedOn": "Posted 53 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1624"
@@ -1598,7 +1754,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7750328003",
    "externalPath": "/jobs/7750328003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 119 Days Ago",
+   "postedOn": "Posted 121 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1554"
@@ -1643,7 +1799,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7819904003",
    "externalPath": "/jobs/7819904003",
    "locationsText": "El Segundo, California, United States; New York, New York, United States",
-   "postedOn": "Posted 49 Days Ago",
+   "postedOn": "Posted 51 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1618"
@@ -1680,8 +1836,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4448472548",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4448472548",
+    "title": "PAR Development Manager, EAI Robotics Regional Sales",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-08-06",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:30",
+    "match_method": "title"
    }
   },
   {
@@ -1691,7 +1860,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7765185003",
    "externalPath": "/jobs/7765185003",
    "locationsText": "Gardena, California, United States",
-   "postedOn": "Posted 98 Days Ago",
+   "postedOn": "Posted 100 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1569"
@@ -1736,7 +1905,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7676394003",
    "externalPath": "/jobs/7676394003",
    "locationsText": "Gardena, California, United States",
-   "postedOn": "Posted 3 Days Ago",
+   "postedOn": "Posted 5 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1500"
@@ -1781,7 +1950,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7752178003",
    "externalPath": "/jobs/7752178003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 118 Days Ago",
+   "postedOn": "Posted 120 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1559"
@@ -1839,7 +2008,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7771956003",
    "externalPath": "/jobs/7771956003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 104 Days Ago",
+   "postedOn": "Posted 106 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1577"
@@ -1884,7 +2053,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7770842003",
    "externalPath": "/jobs/7770842003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 31 Days Ago",
+   "postedOn": "Posted 33 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1576"
@@ -1929,7 +2098,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7771982003",
    "externalPath": "/jobs/7771982003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 104 Days Ago",
+   "postedOn": "Posted 106 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1578"
@@ -1974,7 +2143,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7728105003",
    "externalPath": "/jobs/7728105003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 138 Days Ago",
+   "postedOn": "Posted 140 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1534"
@@ -2008,8 +2177,21 @@
    "error": null,
    "jobFamilyGroup": "Supply Chain",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4412426331",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4412426331",
+    "title": "Purchasing & Digital Operations Specialist",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-05-09",
+    "num_applicants": 96,
+    "applicants_label": "96 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:22",
+    "match_method": "title"
    }
   },
   {
@@ -2019,7 +2201,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7828491003",
    "externalPath": "/jobs/7828491003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 50 Days Ago",
+   "postedOn": "Posted 52 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1625"
@@ -2064,7 +2246,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7828531003",
    "externalPath": "/jobs/7828531003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 50 Days Ago",
+   "postedOn": "Posted 52 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1626"
@@ -2109,7 +2291,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7904943003",
    "externalPath": "/jobs/7904943003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 36 Days Ago",
+   "postedOn": "Posted 38 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1630"
@@ -2143,8 +2325,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4456390063",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4456390063",
+    "title": "Robotics Marcom Sales Specialist",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-08-19",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:34",
+    "match_method": "title"
    }
   },
   {
@@ -2154,7 +2349,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7780385003",
    "externalPath": "/jobs/7780385003",
    "locationsText": "Fremont, California, United States",
-   "postedOn": "Posted 94 Days Ago",
+   "postedOn": "Posted 96 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1599"
@@ -2212,7 +2407,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7819907003",
    "externalPath": "/jobs/7819907003",
    "locationsText": "El Segundo, California, United States; New York, New York, United States",
-   "postedOn": "Posted 49 Days Ago",
+   "postedOn": "Posted 51 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1620"
@@ -2249,8 +2444,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4448479220",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4448479220",
+    "title": "Robotics Solutions Engineer",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-08-06",
+    "num_applicants": 30,
+    "applicants_label": "30 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:13",
+    "match_method": "title"
    }
   },
   {
@@ -2260,7 +2468,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7735938003",
    "externalPath": "/jobs/7735938003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 131 Days Ago",
+   "postedOn": "Posted 133 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1539"
@@ -2305,7 +2513,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7714065003",
    "externalPath": "/jobs/7714065003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 152 Days Ago",
+   "postedOn": "Posted 154 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1525"
@@ -2350,7 +2558,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7790757003",
    "externalPath": "/jobs/7790757003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 86 Days Ago",
+   "postedOn": "Posted 88 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1606"
@@ -2395,7 +2603,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7500077003",
    "externalPath": "/jobs/7500077003",
    "locationsText": "Gardena, California, United States",
-   "postedOn": "Posted 339 Days Ago",
+   "postedOn": "Posted 341 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1417"
@@ -2440,7 +2648,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7975399003",
    "externalPath": "/jobs/7975399003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 30 Days Ago",
+   "postedOn": "Posted 32 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1633"
@@ -2498,7 +2706,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7865655003",
    "externalPath": "/jobs/7865655003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 42 Days Ago",
+   "postedOn": "Posted 44 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1629"
@@ -2543,7 +2751,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7728989003",
    "externalPath": "/jobs/7728989003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 138 Days Ago",
+   "postedOn": "Posted 140 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1536"
@@ -2601,7 +2809,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7752232003",
    "externalPath": "/jobs/7752232003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 118 Days Ago",
+   "postedOn": "Posted 120 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1562"
@@ -2659,7 +2867,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7799354003",
    "externalPath": "/jobs/7799354003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 77 Days Ago",
+   "postedOn": "Posted 79 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1611"
@@ -2717,7 +2925,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/6684403003",
    "externalPath": "/jobs/6684403003",
    "locationsText": "Gardena, California, United States",
-   "postedOn": "Posted 402 Days Ago",
+   "postedOn": "Posted 404 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1379"
@@ -2762,7 +2970,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7789427003",
    "externalPath": "/jobs/7789427003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 86 Days Ago",
+   "postedOn": "Posted 88 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1602"
@@ -2807,7 +3015,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7965885003",
    "externalPath": "/jobs/7965885003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 31 Days Ago",
+   "postedOn": "Posted 33 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1632"
@@ -2841,8 +3049,79 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4458580153",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4458580153",
+    "title": "Senior Specialist, Logistics & Customs Compliance",
+    "company": "Faraday Future",
+    "location": "Los Angeles, CA",
+    "linkedin_posted_date": "2026-08-25",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:17",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "1639",
+   "title": "Social Content Production Specialist, MarCom & Video Sales",
+   "company": "faradayfuture",
+   "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7999915003",
+   "externalPath": "/jobs/7999915003",
+   "locationsText": "El Segundo, California, United States",
+   "postedOn": "Posted 2 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "1639"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-09-24",
+   "departments": [
+    "EAI Robotics"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Social Content Production Specialist, MarCom & Video Sales",
+    "location": "El Segundo, California, United States",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p&gt;&lt;strong&gt;The Company:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Faraday Future (FF) is a California-based technology company focused on the design, engineering, and development of intelligent, connected electric vehicles and related artificial intelligence–enabled technologies.&lt;/p&gt;\n&lt;p&gt;FF is committed to redefining mobility through AI innovation. Join us in shaping the future of intelligent transportation and technology by creating something new, something connected, and something with a true global impact.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Your Role:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The Social Content Production Specialist&amp;nbsp;&amp;nbsp;will join Faraday Future&#39;s MarCom &amp;amp; Video Sales team, primarily responsible for day-to-day social content shooting and production, on-site production support for small-to-mid size projects, and centralized management of the company&#39;s shooting equipment. The role also provides dotted-line support to the Social Operations and Content Commerce teams on selected execution tasks.&lt;/p&gt;\n&lt;p&gt;This is a full-time on-site role based in the United States, requiring daily in-office presence. Fluency in English and Chinese is required.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Key Responsibilities:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Social Content Shooting &amp;amp; Production:&amp;nbsp;&lt;/strong&gt;Shoot and produce social media content, including photo and short-form video assets across portrait, product, and event scenarios.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Small-to-Mid Size Project Planning &amp;amp; Execution:&amp;nbsp;&lt;/strong&gt;Plan and execute small-to-mid size projects end to end — from requirement scoping and scheduling to on-site delivery.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Production Assistant (AC) Duties:&amp;nbsp;&lt;/strong&gt;Support photographers/directors with equipment prep, on-set execution, and footage handoff/archiving.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Company Equipment Management:&amp;nbsp;&lt;/strong&gt;Own centralized management of the company&#39;s shooting equipment (cameras, lenses, lighting, audio), including check-in/check-out, maintenance, and scheduling.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Social Operations Support (Dotted Line):&amp;nbsp;&lt;/strong&gt;Support the Social Operations team with content publishing schedules and tracking/consolidating private-domain (owned-channel) leads.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Content Commerce Support (Dotted Line):&amp;nbsp;&lt;/strong&gt;Support the Content Commerce team with sales lead tracking and conversion records, and assist with basic digital marketing execution.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Asset Archiving:&amp;nbsp;&lt;/strong&gt;Maintain organized archiving of raw footage and deliverables per company standards.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Basic Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Experience:&amp;nbsp;&lt;/strong&gt;1+ years of hands-on photography/videography experience, able to independently shoot photo and short-form video content across portrait, product, and event scenarios; 1+ years of experience in video production, photography assistance, or social content creation (internship experience counts).&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Education:&amp;nbsp;&lt;/strong&gt;Bachelor&#39;s degree in Film, Media, Marketing, or a related field, or equivalent experience.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Equipment Skills:&amp;nbsp;&lt;/strong&gt;Hands-on operation and basic maintenance skills for camera, lighting, and audio equipment.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Platform Familiarity:&amp;nbsp;&lt;/strong&gt;Familiarity with content publishing workflows on major social platforms (TikTok, Instagram, Xiaohongshu, Douyin).&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Language:&amp;nbsp;&lt;/strong&gt;Fluency in English and Chinese; able to operate in cross-cultural environments.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Location:&amp;nbsp;&lt;/strong&gt;Ability to work on-site in Los Angeles, CA.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Preferred Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience in automotive, robotics, or advanced technology industries.&lt;/li&gt;\n&lt;li&gt;Basic video editing skills (Premiere / DaVinci Resolve).&lt;/li&gt;\n&lt;li&gt;Experience with lead tracking (CRM tools) or basic digital marketing exposure.&lt;/li&gt;\n&lt;li&gt;Prior hands-on experience as a production assistant / AC.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Perks + Benefits&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Healthcare + dental + vision benefits (Free for you/discounted for family)&lt;/li&gt;\n&lt;li&gt;401(k) options&lt;/li&gt;\n&lt;li&gt;Casual dress code + relaxed work environment&lt;/li&gt;\n&lt;li&gt;Culturally diverse, progressive atmosphere&lt;/li&gt;\n&lt;li&gt;“Soul of Faraday” community outreach team&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Faraday Future is an equal opportunity employer and does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/faradayfuture/jobs/7999915003",
+    "jobReqId": "1639",
+    "postedOn": "Posted 2 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "Faraday Future",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "EAI Robotics",
+   "signals": {
+    "linkedin_job_id": "4471692018",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471692018",
+    "title": "Social Content Production Specialist, MarCom & Video Sales",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 day ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:20",
+    "match_method": "title"
    }
   },
   {
@@ -2852,7 +3131,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7822343003",
    "externalPath": "/jobs/7822343003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 49 Days Ago",
+   "postedOn": "Posted 51 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1621"
@@ -2897,7 +3176,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7777955003",
    "externalPath": "/jobs/7777955003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 94 Days Ago",
+   "postedOn": "Posted 96 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1593"
@@ -2942,7 +3221,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7778492003",
    "externalPath": "/jobs/7778492003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 94 Days Ago",
+   "postedOn": "Posted 96 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1597"
@@ -2976,8 +3255,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4432021415",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4432021415",
+    "title": "Sr. Director, Content Commerce, Robotics",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-06-22",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:21",
+    "match_method": "title"
    }
   },
   {
@@ -2987,7 +3279,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7749072003",
    "externalPath": "/jobs/7749072003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 120 Days Ago",
+   "postedOn": "Posted 122 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1552"
@@ -3032,7 +3324,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7681248003",
    "externalPath": "/jobs/7681248003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 182 Days Ago",
+   "postedOn": "Posted 184 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1509"
@@ -3066,8 +3358,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4391512373",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4391512373",
+    "title": "Sr. Manager, Tech Direct Sales",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-03-27",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "6 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:27",
+    "match_method": "title"
    }
   },
   {
@@ -3077,7 +3382,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7699294003",
    "externalPath": "/jobs/7699294003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 163 Days Ago",
+   "postedOn": "Posted 165 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1517"
@@ -3111,8 +3416,21 @@
    "error": null,
    "jobFamilyGroup": "EAI Robotics",
    "signals": {
-    "status": "no_match",
-    "fetched_at": ""
+    "linkedin_job_id": "4401787908",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4401787908",
+    "title": "Staff Software Engineer, Backend (Affiliate Platform)",
+    "company": "Faraday Future",
+    "location": "El Segundo, CA",
+    "linkedin_posted_date": "2026-04-14",
+    "num_applicants": 31,
+    "applicants_label": "31 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "5 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-26T04:24:10",
+    "match_method": "title"
    }
   },
   {
@@ -3122,7 +3440,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7985967003",
    "externalPath": "/jobs/7985967003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 21 Days Ago",
+   "postedOn": "Posted 23 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1635"
@@ -3180,7 +3498,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7812997003",
    "externalPath": "/jobs/7812997003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 30 Days Ago",
+   "postedOn": "Posted 32 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1305"
@@ -3225,7 +3543,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7710091003",
    "externalPath": "/jobs/7710091003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 155 Days Ago",
+   "postedOn": "Posted 157 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1524"
@@ -3270,7 +3588,7 @@
    "url": "https://job-boards.greenhouse.io/faradayfuture/jobs/7738648003",
    "externalPath": "/jobs/7738648003",
    "locationsText": "El Segundo, California, United States",
-   "postedOn": "Posted 128 Days Ago",
+   "postedOn": "Posted 130 Days Ago",
    "timeType": "",
    "bulletFields": [
     "1541"

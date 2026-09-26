@@ -3,10 +3,10 @@
  "company": "SHEIN",
  "country": "United States",
  "time_type": "Full time",
- "dumpDate": "2026-09-24",
+ "dumpDate": "2026-09-26",
  "count": 17,
  "details_merged": 17,
- "signals_matched": 14,
+ "signals_matched": 13,
  "similar_edges": 0,
  "facet_tagged_rows": 17,
  "rows": [
@@ -17,7 +17,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5357802008",
    "externalPath": "/jobs/5357802008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 42 Days Ago",
+   "postedOn": "Posted 44 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260630-0002"
@@ -49,11 +49,7 @@
    "similarJobsCount": 0,
    "similarJobs": [],
    "error": null,
-   "jobFamilyGroup": "Buyer",
-   "signals": {
-    "status": "no_match",
-    "fetched_at": ""
-   }
+   "jobFamilyGroup": "Buyer"
   },
   {
    "reqId": "GRQ20260508-0001",
@@ -62,7 +58,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5228681008",
    "externalPath": "/jobs/5228681008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 120 Days Ago",
+   "postedOn": "Posted 122 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260508-0001"
@@ -94,11 +90,7 @@
    "similarJobsCount": 0,
    "similarJobs": [],
    "error": null,
-   "jobFamilyGroup": "Buyer",
-   "signals": {
-    "status": "no_match",
-    "fetched_at": ""
-   }
+   "jobFamilyGroup": "Buyer"
   },
   {
    "reqId": "GRQ20260813-0004",
@@ -107,7 +99,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5391659008",
    "externalPath": "/jobs/5391659008",
    "locationsText": "San Diego",
-   "postedOn": "Posted 41 Days Ago",
+   "postedOn": "Posted 43 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260813-0004"
@@ -160,12 +152,12 @@
   },
   {
    "reqId": "GRQ20260911-0001",
-   "title": "Digital Designer II",
+   "title": "Graphic Designer ",
    "company": "shein",
    "url": "https://job-boards.greenhouse.io/shein/jobs/5422177008",
    "externalPath": "/jobs/5422177008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 13 Days Ago",
+   "postedOn": "Posted 15 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260911-0001"
@@ -197,22 +189,63 @@
    "similarJobsCount": 0,
    "similarJobs": [],
    "error": null,
-   "jobFamilyGroup": "SHEGLAM",
+   "jobFamilyGroup": "SHEGLAM"
+  },
+  {
+   "reqId": "17",
+   "title": "Graphic Designer (Contract Role, Email Marketing)",
+   "company": "shein",
+   "url": "https://job-boards.greenhouse.io/shein/jobs/5414184008",
+   "externalPath": "/jobs/5414184008",
+   "locationsText": "Los Angeles",
+   "postedOn": "Posted 24 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "17"
+   ],
+   "ats": "greenhouse",
+   "firstPublishedIso": "2026-09-02",
+   "departments": [
+    "Graphic Design"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "applicationDeadline": "",
+   "detail": {
+    "title": "Graphic Designer (Contract Role, Email Marketing)",
+    "location": "Los Angeles",
+    "additionalLocations": [],
+    "jobDescription": "&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;About SHEIN&lt;/span&gt;&lt;/strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;201341983&amp;quot;:0,&amp;quot;335559739&amp;quot;:0,&amp;quot;335559740&amp;quot;:240}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;SHEIN is a global online fashion and lifestyle retailer, offering SHEIN branded apparel and products from a global network of vendors, all at affordable prices. Headquartered in Singapore, with more than 15,000 employees operating from offices around the world, SHEIN is committed to making the beauty of fashion accessible to all, promoting its industry-leading, on-demand production methodology, for a smarter, future-ready industry.&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;201341983&amp;quot;:0,&amp;quot;335559739&amp;quot;:0,&amp;quot;335559740&amp;quot;:240}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Position Summary&lt;/span&gt;&lt;/strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;201341983&amp;quot;:0,&amp;quot;335559739&amp;quot;:0,&amp;quot;335559740&amp;quot;:240}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;We’re seeking a Graphic Designer (Contract Role, Email Marketing) (official title: Graphic Designer)&amp;nbsp;for our &lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Los Angeles-based &lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt;corporate office. &lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;201341983&amp;quot;:0,&amp;quot;335559739&amp;quot;:0,&amp;quot;335559740&amp;quot;:240}&quot;&gt;This will be a temporary contract role up to 6 months. As a Graphic Designer at SHEIN, you will be responsible for creating our digital marketing assets including for email marketing, campaigns, landing page/web banners and marketing print materials. Our ideal candidate is an expert in graphic design with strong typography skills and a great attention for detail. You must have a good eye with selecting imagery and have a methodical approach with your work. &amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Job Responsibilities&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Support the creative web team with creating digital marketing assets: email, homepage, landing page, social assets and print materials.&lt;/li&gt;\n&lt;li&gt;Provide fresh design ideas and execute new web, mobile, app and email experiences under the supervision of the Design Manager.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Work closely and collaborate with local and global cross-functional teams including copywriters, marketing, PR, web production, event management.&lt;/li&gt;\n&lt;li&gt;Conduct research on current fashion trends, competitor analysis, and target audience preferences.&amp;nbsp;&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Job Requirements&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;2+ years of digital design experience within a fast-paced, cross-functional creative environment, preferably within fashion e-commerce.&lt;/li&gt;\n&lt;li&gt;Must have an online portfolio of work that shows strong understanding of typography, digital design trends, and online visual communication.&lt;/li&gt;\n&lt;li&gt;Highly creative in typography and web page layout&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Expertise in Adobe Creative Suite: Photoshop, Illustrator, Keynote, and InDesign in a Mac environment.&lt;/li&gt;\n&lt;li&gt;Must be able to work as a team member, but also be resourceful as a self-starter.&lt;/li&gt;\n&lt;li&gt;Extremely detail-oriented, flexible and able to work in a fast-paced, deadline driven environment, managing many projects simultaneously.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;&lt;u&gt;Nice to Have&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Bachelor’s degree in graphic design, Digital Design or Fine Arts, or equivalent experience&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Experience in UX/UI design&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;#LI-CJ1&lt;/span&gt;&lt;/p&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;title&quot;&gt;Pay Range&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$40&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$40 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://job-boards.greenhouse.io/shein/jobs/5414184008",
+    "jobReqId": "17",
+    "postedOn": "Posted 24 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "SHEIN",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Graphic Design",
    "signals": {
-    "linkedin_job_id": "4466373748",
-    "linkedin_url": "https://www.linkedin.com/jobs/view/4466373748",
-    "title": "Digital Designer II",
+    "linkedin_job_id": "4462432807",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4462432807",
+    "title": "Graphic Designer (Contract Role, Email Marketing)",
     "company": "SHEIN U.S.",
     "location": "Los Angeles, CA",
-    "linkedin_posted_date": "2026-09-11",
-    "num_applicants": 132,
-    "applicants_label": "132 applicants",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 97,
+    "applicants_label": "97 applicants",
     "applicantCensored": false,
     "job_req_id": "",
-    "posted_time_ago": "1 week ago",
+    "posted_time_ago": "1 day ago",
     "closed": false,
     "status": "matched",
-    "fetched_at": "2026-09-24T01:47:14",
+    "fetched_at": "2026-09-26T04:13:49",
     "match_method": "title"
    }
   },
@@ -223,7 +256,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5229316008",
    "externalPath": "/jobs/5229316008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 125 Days Ago",
+   "postedOn": "Posted 127 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260521-0001"
@@ -281,7 +314,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5394799008",
    "externalPath": "/jobs/5394799008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 37 Days Ago",
+   "postedOn": "Posted 39 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260819-0002"
@@ -339,7 +372,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5408568008",
    "externalPath": "/jobs/5408568008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 28 Days Ago",
+   "postedOn": "Posted 30 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260827-0002"
@@ -391,71 +424,13 @@
    }
   },
   {
-   "reqId": "GRQ20260711-0001",
-   "title": "Senior Business Development Specialist",
-   "company": "shein",
-   "url": "https://job-boards.greenhouse.io/shein/jobs/5389865008",
-   "externalPath": "/jobs/5389865008",
-   "locationsText": "Los Angeles",
-   "postedOn": "Posted 42 Days Ago",
-   "timeType": "Full time",
-   "bulletFields": [
-    "GRQ20260711-0001"
-   ],
-   "ats": "greenhouse",
-   "firstPublishedIso": "2026-08-13",
-   "departments": [
-    "Business Development"
-   ],
-   "countries": [
-    "United States"
-   ],
-   "applicationDeadline": "",
-   "detail": {
-    "title": "Senior Business Development Specialist",
-    "location": "Los Angeles",
-    "additionalLocations": [],
-    "jobDescription": "&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;About SHEIN&lt;/span&gt;&lt;/strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;201341983&amp;quot;:0,&amp;quot;335559739&amp;quot;:0,&amp;quot;335559740&amp;quot;:240}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;SHEIN is a global online fashion and lifestyle retailer, offering SHEIN branded apparel and products from a global network of vendors, all at affordable prices. Headquartered in Singapore, with more than 15,000 employees operating from offices around the world, SHEIN is committed to making the beauty of fashion accessible to all, promoting its industry-leading, on-demand production methodology, for a smarter, future-ready industry.&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;201341983&amp;quot;:0,&amp;quot;335559739&amp;quot;:0,&amp;quot;335559740&amp;quot;:240}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Position Summary&lt;/span&gt;&lt;/strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;201341983&amp;quot;:0,&amp;quot;335559739&amp;quot;:0,&amp;quot;335559740&amp;quot;:240}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;We&#39;re seeking a full-time Senior Business Development Specialist (official title: Senior Business Development Specialist I) for our Los Angeles based corporate office to drive the growth of our start-up SHEIN Marketplace business. As a key member of our team, you will be responsible for driving business growth and fostering strategic partnerships through innovative and forward-thinking approaches. This is a fantastic opportunity for someone who thrives in a fast-paced, ever-evolving environment and is passionate about making a meaningful impact.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Job Responsibilities&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Strategic Planning: Develop and implement creative strategies to identify and penetrate new markets, leveraging market trends, e-commerce seller insights, and competitive analysis to drive business growth.&lt;/li&gt;\n&lt;li&gt;Innovative Solutions: Collaborate with cross-functional teams to generate innovative solutions and develop new business models for SHEIN Marketplace that address market gaps, staying ahead of the competition and ensuring long-term sustainability.&lt;/li&gt;\n&lt;li&gt;Market Research: Conduct thorough market research to identify e-commerce trends, seller needs, and potential areas for business development, providing valuable insights to shape our product and service offerings.&lt;/li&gt;\n&lt;li&gt;Partnership Development: Identify, evaluate, and forge strategic alliances and partnerships that align with our company&#39;s objectives, opening new avenues for revenue generation and market expansion.&lt;/li&gt;\n&lt;li&gt;Relationship Management: Build and nurture strong relationships with key stakeholders, including sizable e-commerce sellers, industry influencers, and strategic partners, to enhance our brand reputation and drive business growth.&lt;/li&gt;\n&lt;li&gt;Sales and Negotiation: Exceed business development targets by designing strategic and creative sales plans, participating in client presentations, and negotiating complex deals to secure profitable partnerships and achieve revenue targets.&lt;/li&gt;\n&lt;li&gt;Performance Analysis: Monitor and analyze business development activities, market trends, and competitor strategies to identify opportunities for improvement and optimize our business development efforts.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Job Requirements&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Creativity and Innovation: Demonstrated ability to think outside the box, generate creative ideas, and develop innovative business development solutions to complex business challenges.&lt;/li&gt;\n&lt;li&gt;Analytical Mindset: Strong sales analytical skills with the ability to interpret e-commerce market data, identify trends, and leverage insights to make informed business decisions.&lt;/li&gt;\n&lt;li&gt;Relationship Building: Excellent interpersonal and communication skills, with a proven track record of building and maintaining successful partnerships and stakeholder relationships.&lt;/li&gt;\n&lt;li&gt;Results-driven: Self-motivated and goal-oriented, with a passion for exceeding sales targets and driving tangible business outcomes.&lt;/li&gt;\n&lt;li&gt;Adaptability: Comfortable working in a fast-paced, ever-changing environment, with the ability to quickly adapt to new challenges and embrace continuous learning.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Nice to have&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Education: Bachelor&#39;s degree in business administration, management, psychology or a related field&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Business Development Experience: 2-5 years of experience in business development, strategic partnerships, or a similar role in e-commerce and tech industry&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;none&quot;&gt;Benefits and Perks&lt;/span&gt;&lt;/strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;201341983&amp;quot;:0,&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559740&amp;quot;:257}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Commission eligible&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Healthcare (medical, dental, vision, prescription drugs)&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Health Savings Account with Employer Funding&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Flexible Spending Accounts (Healthcare and Dependent care)&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Company-Paid Basic Life/AD&amp;amp;D insurance&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Company-Paid Short-Term and Long-Term Disability&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Voluntary Benefit Offerings (Voluntary Life/AD&amp;amp;D, Hospital Indemnity, Critical Illness, and Accident)&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Employee Assistance Program&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Business Travel Accident Insurance&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;401(k) Savings Plan with discretionary company match and access to a financial advisor&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Vacation, paid holidays, floating holiday and sick days&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Employee discounts&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Free weekly catered lunch&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Dog-friendly office (available at select locations)&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Free gym access (available at select locations)&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Free swag giveaways&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Annual Holiday Party&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Invitations to pop-ups and other company events&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;none&quot;&gt;Complimentary daily office snacks and beverages&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;201341983&amp;quot;:0,&amp;quot;335557856&amp;quot;:16777215,&amp;quot;335559739&amp;quot;:0,&amp;quot;335559740&amp;quot;:240}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;#LI-CJ1&lt;/p&gt;&lt;div class=&quot;content-pay-transparency&quot;&gt;&lt;div class=&quot;pay-input&quot;&gt;&lt;div class=&quot;title&quot;&gt;Pay Range&lt;/div&gt;&lt;div class=&quot;pay-range&quot;&gt;&lt;span&gt;$92,000&lt;/span&gt;&lt;span class=&quot;divider&quot;&gt;&amp;mdash;&lt;/span&gt;&lt;span&gt;$110,000 USD&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;",
-    "timeType": "Full time",
-    "startDate": "",
-    "externalUrl": "https://job-boards.greenhouse.io/shein/jobs/5389865008",
-    "jobReqId": "GRQ20260711-0001",
-    "postedOn": "Posted 42 Days Ago",
-    "country": {
-     "descriptor": "United States"
-    }
-   },
-   "hiringOrg": "SHEIN",
-   "similarJobsCount": 0,
-   "similarJobs": [],
-   "error": null,
-   "jobFamilyGroup": "Business Development",
-   "signals": {
-    "linkedin_job_id": "4454330456",
-    "linkedin_url": "https://www.linkedin.com/jobs/view/4454330456",
-    "title": "Senior Business Development Specialist",
-    "company": "SHEIN U.S.",
-    "location": "Los Angeles, CA",
-    "linkedin_posted_date": "2026-09-04",
-    "num_applicants": 87,
-    "applicants_label": "87 applicants",
-    "applicantCensored": false,
-    "job_req_id": "",
-    "posted_time_ago": "2 weeks ago",
-    "closed": false,
-    "status": "matched",
-    "fetched_at": "2026-09-24T01:47:34",
-    "match_method": "title"
-   }
-  },
-  {
    "reqId": "GRQ20250624-0002",
    "title": "Senior Buyer",
    "company": "shein",
    "url": "https://job-boards.greenhouse.io/shein/jobs/4569441008",
    "externalPath": "/jobs/4569441008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 561 Days Ago",
+   "postedOn": "Posted 563 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20250624-0002"
@@ -487,11 +462,7 @@
    "similarJobsCount": 0,
    "similarJobs": [],
    "error": null,
-   "jobFamilyGroup": "Buyer",
-   "signals": {
-    "status": "no_match",
-    "fetched_at": ""
-   }
+   "jobFamilyGroup": "Buyer"
   },
   {
    "reqId": "GRQ20260528-0004",
@@ -500,7 +471,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5234881008",
    "externalPath": "/jobs/5234881008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 119 Days Ago",
+   "postedOn": "Posted 121 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260528-0004"
@@ -558,7 +529,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5231712008",
    "externalPath": "/jobs/5231712008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 121 Days Ago",
+   "postedOn": "Posted 123 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260525-0002"
@@ -616,7 +587,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5395924008",
    "externalPath": "/jobs/5395924008",
    "locationsText": "San Diego",
-   "postedOn": "Posted 36 Days Ago",
+   "postedOn": "Posted 38 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260819-0006"
@@ -674,7 +645,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5217630008",
    "externalPath": "/jobs/5217630008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 135 Days Ago",
+   "postedOn": "Posted 137 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260501-0001"
@@ -732,7 +703,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5126431008",
    "externalPath": "/jobs/5126431008",
    "locationsText": "San Diego",
-   "postedOn": "Posted 217 Days Ago",
+   "postedOn": "Posted 219 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260219-0001"
@@ -790,7 +761,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5109481008",
    "externalPath": "/jobs/5109481008",
    "locationsText": "San Diego",
-   "postedOn": "Posted 231 Days Ago",
+   "postedOn": "Posted 233 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260204-0001"
@@ -848,7 +819,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5126241008",
    "externalPath": "/jobs/5126241008",
    "locationsText": "San Diego",
-   "postedOn": "Posted 217 Days Ago",
+   "postedOn": "Posted 219 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260219-0002"
@@ -906,7 +877,7 @@
    "url": "https://job-boards.greenhouse.io/shein/jobs/5343819008",
    "externalPath": "/jobs/5343819008",
    "locationsText": "Los Angeles",
-   "postedOn": "Posted 72 Days Ago",
+   "postedOn": "Posted 74 Days Ago",
    "timeType": "Full time",
    "bulletFields": [
     "GRQ20260710-0003"
@@ -940,20 +911,20 @@
    "error": null,
    "jobFamilyGroup": "Trade Compliance",
    "signals": {
-    "linkedin_job_id": "4440593931",
-    "linkedin_url": "https://www.linkedin.com/jobs/view/4440593931",
+    "linkedin_job_id": "4471689805",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471689805",
     "title": "Trade Compliance Manager",
     "company": "SHEIN U.S.",
     "location": "Los Angeles, CA",
-    "linkedin_posted_date": "2026-09-18",
-    "num_applicants": 61,
-    "applicants_label": "61 applicants",
-    "applicantCensored": false,
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
     "job_req_id": "",
-    "posted_time_ago": "5 days ago",
+    "posted_time_ago": "1 day ago",
     "closed": false,
     "status": "matched",
-    "fetched_at": "2026-09-24T01:47:31",
+    "fetched_at": "2026-09-26T04:13:42",
     "match_method": "title"
    }
   }

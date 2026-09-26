@@ -1,5 +1,765 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-R108140,Machine Learning Intern,Tencent,Tencent America LLC,Full time,Posted 4 Days Ago,2026-09-14,5,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"Business Unit
+R107495,Business Development Manager,Tencent,Tencent America LLC,Full time,Posted Today,2026-07-02,86,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
+Tencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.
+Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.
+Meanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.
+
+What the Role Entails
+
+Tencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.Meanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.
+
+Job Responsibilities:
+
+1. Spearhead the development and establishment of robust relationships with major gaming partners in the US market, to support Tencent's global expansion.
+
+2. Collaborate closely with cross-functional teams and internal stakeholders to drive business insights and key objectives, such as developing go-to-market plans and providing comprehensive support for games at every stage of their life cycle.
+
+3. Proactively identify new business opportunities and emerging trends for the leadership team, leveraging market insights and data analytics to evaluate proposals related to innovative distribution methods, growth initiatives, product and monetization strategies, and cutting-edge technological advancements.
+
+4. Lead negotiations and execute partnership and licensing agreements with gaming partners, ensuring alignment with Tencent's strategic goals and objectives, and fostering long-term partnerships that drive mutual growth and success.
+
+Who We Look For
+
+1. Bachelor degree or above.
+
+2. 10+ years business development working experience or gaming related field.
+
+3. Passionate, committed, self-starter with high level of initiative, energy, ownership, and urgency, with a sincerely willingness to learn from global team members at all levels.
+
+4. Team player with outstanding written and oral communication skills. Comfortable with handling ambiguity and collaborating across different functional teams and departments.
+
+5. Proficient in spoken and written English. Fluency in Mandarin Chinese is highly preferred.
+
+Location State(s)
+
+US-California-Palo Alto
+
+The expected base pay range for this position in the location(s) listed above is $95,900.00 to $223,100.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.
+Employees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.
+Subject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.
+Your benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4354,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Business-Development-Manager_R107495,,https://www.linkedin.com/jobs/view/4417392101,2026-05-20,88,88 applicants,-43,matched,title,2026-09-26,2026-09-17T13:05:06,2026-09-26,,129,startDate+linkedin,true,0,,,,Regular,Market (MA)/Sales (SA),2026-05-20,title,false,,,,,,
+R107344,"Game Research & Development Intern, Engine Research",Tencent,Tencent America LLC,Full time,Posted Today,2026-07-02,86,US-California-Los Angeles,1,US-California-Los Angeles,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
+LIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.
+
+About the Hiring Team
+Lightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.
+
+What the Role Entails
+
+Working with scientists to research and develop advanced techniques in the following topics:
+
+• 3D geometric learning,
+
+• Re-meshing and UV optimization,
+
+• Physically-based animation and simulation
+
+• Machine learning for computer graphics
+
+• Motion planning in virtual city
+
+• Character locomotion and control
+
+• realistic image synthesis and real-time rendering techniques
+
+• Researching and developing tools and pipelines to facilitate the use of technologies in the game development environment
+
+Who We Look For
+
+• Strong coding skills in one of following programming languages: C++, python, TensorFlow/Torch
+
+• Solid knowledge in calculus, linear algebra, basic numerical analysis
+
+• A strong sense of responsibility and good communication skills
+
+Plus:
+
+• Graduate students in a master or Ph.D. level program
+
+• Publications on computer graphics/vision, machine learning, and robotics
+
+• Familiarity with game engine, graphics APIs, and GPU programming
+
+Location State(s)
+
+US-California-Los Angeles
+
+The expected base pay range for this position in the location(s) listed above is $28.27 to $60.00 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
+This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",2563,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Game-Research---Development-Intern--Engine-Research_R107344-1,,https://www.linkedin.com/jobs/view/4414650441,2026-05-14,200,Over 200 applicants,-49,matched,title,2026-09-26,2026-09-17T13:07:33,2026-09-26,,135,startDate+linkedin,true,1,,,,Intern (Fixed Term),Technical (TE)/Technical Research and Development (TRD),2026-05-14,title,true,,,,,,
+R107363,"Game Research & Development Intern, Engine Research",Tencent,Tencent America LLC,Full time,Posted Today,2026-07-02,86,US-Washington-Bellevue,1,US-Washington-Bellevue,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
+LIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.
+
+About the Hiring Team
+Lightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.
+
+What the Role Entails
+
+Working with scientists to research and develop advanced techniques in the following topics:
+
+• 3D geometric learning,
+
+• Re-meshing and UV optimization,
+
+• Physically-based animation and simulation
+
+• Machine learning for computer graphics
+
+• Motion planning in virtual city
+
+• Character locomotion and control
+
+• realistic image synthesis and real-time rendering techniques
+
+• Researching and developing tools and pipelines to facilitate the use of technologies in the game development environment
+
+Who We Look For
+
+• Strong coding skills in one of following programming languages: C++, python, TensorFlow/Torch
+
+• Solid knowledge in calculus, linear algebra, basic numerical analysis
+
+• A strong sense of responsibility and good communication skills
+
+Plus:
+
+• Graduate students in a master or Ph.D. level program
+
+• Publications on computer graphics/vision, machine learning, and robotics
+
+• Familiarity with game engine, graphics APIs, and GPU programming
+
+Location State(s)
+
+US-Washington-Bellevue
+
+The expected base pay range for this position in the location(s) listed above is $28.27 to $60.00 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
+This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",2560,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-Washington-Bellevue/Game-Research---Development-Intern--Engine-Research_R107363-1,,https://www.linkedin.com/jobs/view/4417391110,2026-05-20,200,Over 200 applicants,-43,matched,title,2026-09-26,2026-09-17T13:07:35,2026-09-26,,129,startDate+linkedin,true,1,,,,Intern (Fixed Term),Technical (TE)/Technical Research and Development (TRD),2026-05-20,title,true,,,,,,
+R108008,Producer (Onsolo),Tencent,Tencent America LLC,Full time,Posted Today,2026-08-21,36,US-California-Los Angeles,1,US-California-Los Angeles,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
+
+What the Role Entails
+
+Key Responsibilities
+
+1. Production Ecosystem & Partnership Development
+
+• Source, develop, and close high-value strategic partnerships across key international markets, including North America and Europe, spanning leading filmmakers, writers, creative studios, post-production houses, VFX vendors, animation studios, and content production companies.
+
+• Build and manage a robust pipeline of partnership opportunities across regions and content formats; own the full lifecycle from sourcing and pitching to contracting, execution, and long-term relationship management
+
+• Design and execute scalable collaboration models, including co-productions, slate deals, creative service agreements, and white-label content partnerships to expand Onsolo’s creator base and content supply
+
+• Develop relationships with MCNs, creator agencies, and talent management firms to onboard creators at scale; collaborate with complementary AI tool partners to strengthen the ecosystem
+
+• Drive adoption by ensuring signed creators and studios produce and publish content end-to-end on the Onsolo platform
+
+2. Content Strategy & Programming
+
+• Shape and communicate the narrative of “Onsolo-native creation” — positioning Onsolo not just as a tool, but as a new paradigm for content production
+
+• Own international content strategy by identifying culturally resonant stories across markets and translating insights into flagship collaborative programs (e.g., themed anthologies, creator challenges, 48-hour film competitions, cross-platform content festivals)
+
+• Design program structures, evaluation criteria, incentive mechanisms, and go-to-market strategies to engage global creator communities and drive cultural impact
+
+• Monitor global content trends (film festivals, streaming platforms, social platforms such as YouTube and TikTok, and emerging formats) and translate insights into platform-native creative directions, templates, and benchmark content
+
+• Represent Onsolo at film festivals, markets, and industry events (e.g., Cannes Marché du Film, AFM, TIFF Industry Conference) to showcase Onsolo-native works and build industry recognition
+
+• Develop or oversee production of behind-the-scenes content, creator features, and curated showcases to support platform growth and creator acquisition
+
+Who We Look For
+
+Qualifications
+
+• Experience as a Producer, Director, or equivalent role in film, television, digital media, or AI-generated content platforms
+
+• Strong understanding of key international markets content culture and audience preferences
+
+• Established network across content creation ecosystems, including production, creator communities, or AIGC-related networks
+
+• Proven track record of producing or overseeing content that has reached meaningful scale (film festivals, streaming platforms, social platforms, or other distribution channels)
+
+• Ability to clearly articulate the impact of AI-driven tools on traditional content production workflows
+
+• Excellent written and verbal communication skills; Mandarin proficiency or experience working with Chinese companies is a plus
+
+• Comfortable working across time zones and in cross-cultural environments
+
+Preferred Qualifications
+
+• Experience working at the intersection of technology and media
+
+• Familiarity with creator platforms, content marketplaces, or digital distribution ecosystems
+
+• Prior experience launching or managing large-scale creator programs or content initiatives
+
+Location State(s)
+
+US-California-Los Angeles
+
+The expected base pay range for this position in the location(s) listed above is $113,900.00 to $213,800.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.
+Employees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.
+Subject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.
+Your benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4853,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Producer--Onsolo-_R108008-1,,https://www.linkedin.com/jobs/view/4457506405,2026-09-16,200,Over 200 applicants,26,matched,title,2026-09-26,2026-09-17T13:05:28,2026-09-26,,36,startDate,true,1,,,,Regular,Product/Project (PD)/Product Management (PDM),2026-08-21,,true,,,,,,
+R107794,Cloud Media Services Intern,Tencent,Tencent America LLC,Full time,Posted Today,2026-09-25,1,US-California-Palo Alto,2,US-California-Palo Alto; US-Washington-Bellevue,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
+
+What the Role Entails
+With over 20 years of research and experience in audio and video technology, Tencent Cloud launched Tencent Cloud Media Service, a new international audio and video brand, in 2022. It provides a one-stop media solution, the basic media processing infrastructure named MPS, including industry-leading encoder, Media enhancement based on AI technology and cloud real-time rendering and transmission technology, etc. Tencent Cloud Media Service also provides complete live streaming solutions for different industries, including OTT, e-commerce, entertainment, e-sports, and sports events, etc. Through comprehensive audio and video SDKs and PaaS services. Overall, Tencent Cloud Media Service offers low-cost, efficient, and innovative solutions for the businesses of global customers.
+
+• Work closely with the regional sales team as the point of contact for customers in the field of audio and video. Provide technical support for pre-sales technical consultation and PoC verification services, maintain customer relationships, and assist the business team in achieving their goals.
+
+• Support the regional architecture team in analyzing customers' media business technology architecture and identifying their needs and values in audio and video scenarios. Provide industry solutions and case studies for international markets, such as OTT, social media, gaming, education, and business.
+
+• Understand industry solutions and combine customers' business and technical requirements with the features of Tencent's audio and video products. Help customers achieve their goals and values. Effectively communicate the customer requirements and industry requirements to product development team.
+
+• Actively participate in public online and offline product/industry presentations to share Tencent's media product capabilities, industry experience, and insights. Enhance the influence of Tencent Cloud Media Service, strengthen and establish Tencent's industry customer network in the field of media services.
+
+• Actively collaborate with the channel and marketing teams to support Tencent Cloud's regional ecosystem partners, including channel empowerment training, participating in workshops, and Media Demo Day.
+
+Who We Look For
+
+• Currently pursuing or recently completed a bachelor’s degree (or higher) in Computer Science, IT, Cloud Computing, or a related field. Relevant coursework, projects, or internships in cloud computing are a plus.
+
+• Familiarities with the audio and video field, such as live streaming, video on demand, encoding/decoding, and network transmission.
+
+• Strong customer-oriented work skills and a good sense of customer service, with the ability to communicate with technical decision-makers.
+
+• Experience in related industries or working with public clouds is a plus.
+
+• Excellent cross-cultural communication skills are preferred.
+
+Location State(s)
+
+US-California-Palo Alto, US-Washington-Bellevue
+
+The expected base pay range for this position in the location(s) listed above is $27.12 to $51.93 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
+This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3772,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Cloud-Media-Services-Intern_R107794,,https://www.linkedin.com/jobs/view/4472082766,2026-09-25,25,among first 25,0,matched,title,2026-09-26,2026-09-26T04:09:33,2026-09-26,,1,startDate,false,0,,,,Intern (Fixed Term),Technical (TE)/Solutions and Services (SS),2026-09-25,,true,,,,,,
+R108186,Cloud Media Services Intern,Tencent,Tencent America LLC,Full time,Posted Today,2026-09-25,1,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
+
+What the Role Entails
+With over 20 years of research and experience in audio and video technology, Tencent Cloud launched Tencent Cloud Media Service, a new international audio and video brand, in 2022. It provides a one-stop media solution, the basic media processing infrastructure named MPS, including industry-leading encoder, Media enhancement based on AI technology and cloud real-time rendering and transmission technology, etc. Tencent Cloud Media Service also provides complete live streaming solutions for different industries, including OTT, e-commerce, entertainment, e-sports, and sports events, etc. Through comprehensive audio and video SDKs and PaaS services. Overall, Tencent Cloud Media Service offers low-cost, efficient, and innovative solutions for the businesses of global customers.
+
+• Work closely with the regional sales team as the point of contact for customers in the field of audio and video. Provide technical support for pre-sales technical consultation and PoC verification services, maintain customer relationships, and assist the business team in achieving their goals.
+
+• Support the regional architecture team in analyzing customers' media business technology architecture and identifying their needs and values in audio and video scenarios. Provide industry solutions and case studies for international markets, such as OTT, social media, gaming, education, and business.
+
+• Understand industry solutions and combine customers' business and technical requirements with the features of Tencent's audio and video products. Help customers achieve their goals and values. Effectively communicate the customer requirements and industry requirements to product development team.
+
+• Actively participate in public online and offline product/industry presentations to share Tencent's media product capabilities, industry experience, and insights. Enhance the influence of Tencent Cloud Media Service, strengthen and establish Tencent's industry customer network in the field of media services.
+
+• Actively collaborate with the channel and marketing teams to support Tencent Cloud's regional ecosystem partners, including channel empowerment training, participating in workshops, and Media Demo Day.
+
+Who We Look For
+
+• Currently pursuing or recently completed a bachelor’s degree (or higher) in Computer Science, IT, Cloud Computing, or a related field. Relevant coursework, projects, or internships in cloud computing are a plus.
+
+• Familiarities with the audio and video field, such as live streaming, video on demand, encoding/decoding, and network transmission.
+
+• Strong customer-oriented work skills and a good sense of customer service, with the ability to communicate with technical decision-makers.
+
+• Experience in related industries or working with public clouds is a plus.
+
+• Excellent cross-cultural communication skills are preferred.
+
+Location State(s)
+
+US-California-Palo Alto
+
+The expected base pay range for this position in the location(s) listed above is $27.12 to $51.93 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
+This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3748,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Cloud-Media-Services-Intern_R108186,,https://www.linkedin.com/jobs/view/4472092328,2026-09-25,25,among first 25,0,matched,title,2026-09-26,2026-09-26T04:09:32,2026-09-26,,1,startDate,false,0,,,,Intern (Fixed Term),Technical (TE)/Solutions and Services (SS),2026-09-25,,true,,,,,,
+R106961,"Senior Manager, Strategic & Business Development",Tencent,Proxima Beta U.S. LLC,Full time,Posted Today,2026-07-02,86,US-California-Palo Alto,3,US-California-Palo Alto; US-Washington-Bellevue; US-California-Los Angeles,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
+Tencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.
+Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 201 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.
+Meanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.
+
+What the Role Entails
+
+Job Responsibilities:
+
+Strategic Planning and Execution
+
+• Develop overseas market expansion strategies, focusing on areas such as AI-powered gaming and gaming-driven AI technology iteration
+
+• Analyze the dynamics of the AI gaming market to assist management in formulating AI gaming-related strategies
+
+Business Development and Resource Integration
+
+• Expand and maintain key industry contacts overseas, including game developers, publishing platforms, and AI technology companies
+
+• Drive high-value partnership negotiations and facilitate collaboration in technology licensing, co-development, and channel distribution
+
+• Provide essential overseas business strategy support to internal and cross-functional teams, including overseas resource planning, analyst-led market research, and regional/industry goal setting
+
+Who We Look For
+
+• 3+ years of experience in overseas business, strategy, or business development, with experience focused on the AI or gaming industry
+
+• Experience at the intersection of both fields is preferred
+
+• Established overseas industry network with a proven track record of successful collaborations in game publishing, AI technology partnerships, or overseas capital ventures
+
+• Proficient in overseas market analysis and business modeling, capable of conducting independent industry research, competitive benchmarking, and strategic planning
+
+• Excellent negotiation, cross-cultural communication, and project management skills
+
+• Deep understanding of AI technologies (e.g., Generative AI, Reinforcement Learning, content generation) and the gaming industry chain (R&D, publishing, operations, community)
+
+Location State(s)
+
+US-California-Los Angeles, US-California-Palo Alto, US-Washington-Bellevue
+
+The expected base pay range for this position in the location(s) listed above is $106,900.00 to $200,600.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.
+Employees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.
+Subject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.
+Your benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3800,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Manager--Strategic---Business-Development_R106961,,https://www.linkedin.com/jobs/view/4389292872,2026-03-23,91,91 applicants,-101,matched,title,2026-09-26,2026-09-17T13:05:39,2026-09-26,,187,startDate+linkedin,true,0,,,,Regular,Market (MA)/Sales (SA),2026-03-23,title,false,,,,,,
+R107712,Senior Strategic Sales Executive,Tencent,Tencent Cloud LLC,Full time,Posted Today,2026-08-10,47,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,4,"Business Unit
+
+What the Role Entails
+About the Company:
+
+Tencent is a leading global technology company focused on connecting people and developing innovative products and services that improve the quality of life of people around the world. Founded in 1998 and publicly traded on the Hong Kong Stock Exchange since 2004, Tencent offers a variety of products and services, including leading communication and social platforms (Weixin/WeChat), high-quality entertainment (from video games, music, TV and film, sport and literature), FinTech (WeChat Pay and QQ Wallet) and industry-leading cloud products and services.
+
+Headquartered in Shenzhen, we have offices around the world, including in Amsterdam, London, Berlin, Los Angeles, Palo Alto, Seattle, New York, Tokyo, Singapore, Bangkok, and Seoul. We have been recognized by Forbes as one of the World’s Best Employers (2021), a Top 100 Digital Company (2019) and one of the World’s Most Innovative Companies (2018). Tencent is committed to recruiting, mentoring, and developing a diverse workforce that is broadly representative of the communities it serves.
+
+•
+Hunt and generate new business opportunities by identifying and targeting key accounts
+
+•
+Build and maintain strong relationships with key customers, understanding their needs and providing tailored solutions
+
+•
+Evaluate key account sales performance and recommend improvements
+
+•
+Address customer-related issues, sales conflicts, and pricing matters in a timely manner
+
+•
+Collaborate with cross-functional teams to develop strategies for optimizing key account management activities
+
+•
+Work with key accounts to develop sales proposals, quotations, and pricing plans
+
+•
+Deliver customer presentations, attend sales meetings, and industry conferences
+
+•
+Assist in key account marketing activities such as tradeshows, campaigns, and promotional initiatives
+
+•
+Stay current with the latest developments in the marketplace and competitor activities
+
+•
+Communicate up-to-date information about new products and enhancements to key accounts
+
+•
+Manage the sales pipeline, forecast monthly sales, and identify new business opportunities within key accounts
+
+•
+Drive revenue growth through strategic engagement with key accounts
+
+•
+Create and execute sales plans to help key accounts achieve their financial goals
+
+Who We Look For
+
+• Bachelor's degree or above in a related field
+
+• Fluency in English; Fluent in Mandarin is preferred
+
+• 5+ years of experience in hunting and managing key account sales in B2B related areas preferred.
+
+• Knowledge or experience with CDN and related products preferred
+
+• Experience in identifying, recruiting, and onboarding new key accounts
+
+• Experience in educating customers about product portfolio and service offerings
+
+• Knowledge of market trends analysis to develop effective sales plans and increase brand awareness
+
+• Outstanding presentation and communication skills
+
+• Ability to actively manage sales activities to generate revenue within key accounts
+
+• Ability to collaborate with key accounts to create and execute business plans to achieve sales goals
+
+Location State(s)
+
+US-California-Palo Alto
+
+The expected base pay range for this position in the location(s) listed above is $85,800.00 to $238,900.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.
+Employees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.
+Subject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.
+Your benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4479,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Strategic-Sales-Executive_R107712,,https://www.linkedin.com/jobs/view/4452010104,2026-09-16,25,among first 25,37,matched,title,2026-09-26,2026-09-17T13:05:14,2026-09-26,,47,startDate,true,0,,,,Regular,Market (MA)/Sales (SA),2026-08-10,,true,,,,,,
+R108152,Tencent Cloud Business Development Intern - United States,Tencent,Tencent America LLC,Full time,Posted Today,2026-09-25,1,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
+
+What the Role Entails
+About The Company
+
+Tencent is a leading global technology company focused on connecting people and developing innovative products and services that improve the quality of life of people around the world. Founded in 1998 and publicly traded on the Hong Kong Stock Exchange since 2004, Tencent offers a variety of products and services, including leading communication and social platforms (Weixin/WeChat), high-quality entertainment (from video games, music, TV and film, sport and literature), FinTech (WeChat Pay and QQ Wallet) and industry-leading cloud products and services.
+
+Cloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.
+With our strong international growth, Tencent Cloud International is now seeking passionate, driven undergraduates or graduate students eager to dive into the world of sales, learn invaluable skills, and make a real impact with a strong passion to develop. As a Sales Intern, you will work closely with our seasoned sales professionals to understand our products/services, target market, and sales techniques. You'll have the opportunity to engage in various aspects of the sales process, including prospecting, lead generation, client communication, and closing deals. Through hands-on training and guidance, you'll develop essential skills that will set you up for a successful career in sales.
+
+Conduct market research and customer insights in targeted industries.
+Explore and reach out new customers through different channels.
+Gather customer IT system and cloud usage information, assist sales team to explore opportunities.
+Maintain and manage customer database and sales pipeline.
+Plan, align and work with Marketing team to support any outbound campaign.
+Craft sales pitches and assist sales team in qualifying prospects through good understanding of Tencent Cloud products and solutions.
+
+Who We Look For
+
+Final-year undergraduates / graduate students with a vision to pursue his/her sales career in Public Cloud industry
+Able to commit at least 12-month full-time program.
+Bright and adaptable; passionate and entrepreneurial.
+
+Location State(s)
+
+US-California-Palo Alto
+
+The expected base pay range for this position in the location(s) listed above is $24.81 to $42.70 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
+This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3450,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Tencent-Cloud-Business-Development-Intern---United-States_R108152,,https://www.linkedin.com/jobs/view/4472082779,2026-09-25,25,among first 25,0,matched,title,2026-09-26,2026-09-26T04:11:23,2026-09-26,,1,startDate,false,0,,,,Intern (Fixed Term),Market (MA)/Sales (SA),2026-09-25,,true,,,,,,
+R108176,IT Operations Intern,Tencent,Tencent America LLC,Full time,Posted 3 Days Ago,2026-09-22,4,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,0,"About the Hiring Team
+
+What the Role Entails
+We are looking for a proactive and detail-oriented IT Operations Intern to join Tencent’s IT team in the PA office, United States. You will work closely with our IT Operations, Infrastructure, and Service Support teams to support daily IT operations, project delivery, data analysis, coordination, and continuous improvement initiatives.
+This role is suitable for someone with an IT background who is interested in enterprise IT operations, service management, project execution, operational planning, and cross-team collaboration. You will gain hands-on experience in real business scenarios and support the team in improving IT service quality, delivery efficiency, and operational visibility.
+
+Responsibilities
+
+• Support day-to-day IT operations, including issue follow-up, service tracking, operational reporting, and documentation.
+
+• Assist in coordinating IT projects and operational initiatives, including task tracking, meeting notes, progress updates, risk follow-up, and stakeholder communication.
+
+• Work with IT engineers and operations teams to support project delivery, ensuring actions are clearly assigned, followed up, and closed on time.
+
+• Collect, organize, and analyze IT operational data to identify trends, issues, risks, and improvement opportunities.
+
+• Prepare dashboards, reports, trackers, and management summaries to improve visibility of IT operations and project progress.
+
+• Support the planning and coordination of team activities, operational reviews, training sessions, workshops, and cross-team meetings.
+
+• Help maintain internal knowledge bases, process documents, service guides, and project-related materials.
+
+• Communicate with internal users and stakeholders to understand requests, collect feedback, clarify requirements, and support issue resolution.
+
+• Support complex and multi-threaded tasks that require coordination across different teams, systems, or regions.
+
+• Identify opportunities to improve operational processes, including workflow optimization, better use of existing tools, and light automation where applicable.
+
+Who We Look For
+
+Requirements
+
+• Bachelor’s or Master’s student in Information Systems, Computer Science, IT Management, Engineering, Business Analytics, Project Management, or a related discipline.
+
+• Have a basic understanding of IT operations, IT service management, infrastructure, workplace technology, or enterprise IT support.
+
+• Have strong organizational skills and are able to manage multiple tasks, follow up on details, and drive items to closure.
+
+• Have experience or strong interest in project coordination, project management, operational planning, or service delivery.
+
+• Comfortable working with data and have experience using Excel or similar tools for data analysis, reporting, and tracking.
+
+• Experience with dashboards or visualization tools such as Power BI, Tableau, Looker Studio, or similar platforms is a plus.
+
+• Basic knowledge of automation tools, scripting, workflow tools, or AI productivity tools is a plus, but not mandatory.
+
+• A quick learner, detail-oriented, flexible, and able to work independently in a fast-paced environment.
+
+• Enjoy communicating with users and stakeholders, understanding their needs, and helping solve practical problems.
+
+• Curious, willing to explore new topics, and comfortable handling complex or ambiguous tasks.
+
+• Available for a minimum of 6 months and a maximum of 12 months.
+
+• Commit to working from Tencent’s PA office in the United States.
+
+• Bilingual proficiency in English and Mandarin highly preferred
+
+Preferred Qualifications
+
+• Previous internship or project experience in IT Operations, IT Support, PMO, Service Management, Data Analysis, or Business Operations.
+
+• Familiarity with tools such as Jira, Confluence, ServiceNow, SharePoint, Power BI, Excel, or other collaboration and reporting platforms.
+
+• Experience preparing reports, dashboards, meeting materials, project trackers, or operational review documents.
+
+• Interest in global IT operations, service governance, project delivery, and continuous improvement.
+
+Location State(s)
+
+US-California-Palo Alto
+
+The expected base pay range for this position in the location(s) listed above is $27.12 to $51.93 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
+This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4982,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/IT-Operations-Intern_R108176-2,,,,,,,not_checked,,2026-09-23,,2026-09-26,,4,startDate,false,2,,,,Intern (Fixed Term),"Tencent Global/Programming, Technology & IT",2026-09-22,,,,,,,,
+R108158,Site Reliability Engineer (SRE) Intern — AI Infrastructure,Tencent,Tencent America LLC,Full time,Posted 3 Days Ago,2026-09-22,4,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"About the Hiring Team
+
+What the Role Entails
+Role Summary
+We are seeking a motivated Site Reliability Engineer (SRE) Intern to join our AI Compute team, supporting the daily operations of AI infrastructure. In this role, you will work closely with internal business teams and external engineering partners to build and operate AI infrastructure. This is a hands-on opportunity to gain knowledge and experience in cutting-edge AI infrastructure.
+
+Key Responsibilities
+
+• Support the deployment, configuration, and maintenance of high-performance AI infrastructure servers, storage servers, networking equipment, and software components in secure environments.
+
+• Assist with hardware diagnostics, system functionality checks, and firmware updates as required.
+
+• Collaborate with engineering teams to help deliver tailored customer environments (e.g., bare-metal systems, Kubernetes, Slurm, etc.).
+
+• Provide first-line engineering support for onsite operational issues, including troubleshooting hardware, network, and software problems, and firmware compliance.
+
+• Document incident details, resolutions, and lessons learned to improve future problem-solving.
+
+• Maintain clear, accurate, and up-to-date documentation to support knowledge sharing across the team.
+
+• Participate in team meetings and knowledge-sharing sessions to foster collaboration and continuous learning.
+
+Who We Look For
+
+Qualifications & Requirements
+
+• Currently pursuing or recently completed a Bachelor's or Master's degree in computer engineering, computer science, or a related technical field.
+
+• Basic understanding of server hardware, firmware lifecycle, and Linux environments, with an awareness of physical and system-level security standards.
+
+• Exposure to scripting languages such as Bash or Python.
+
+• Familiarity with — or strong interest in — configuration management, CI/CD tools, workload managers, and cluster software (e.g., Slurm, Kubernetes), and observability tools (e.g., Prometheus, Grafana, ELK).
+
+• Strong problem-solving and analytical skills.
+
+• Ability to work both independently and as part of a team.
+
+• Professional fluency in English and Mandarin is highly preferred
+
+Preferred Qualifications
+
+• Coursework, projects, or hands-on experience related to AI Infrastructure, distributed systems, or cloud infrastructure.
+
+• Familiarity with networking fundamentals and Linux system administration.
+
+• Genuine interest in AI/ML infrastructure.
+
+Location State(s)
+
+US-California-Palo Alto
+
+The expected base pay range for this position in the location(s) listed above is $27.12 to $51.93 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
+This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3302,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Site-Reliability-Engineer--SRE--Intern---AI-Infrastructure_R108158-1,,https://www.linkedin.com/jobs/view/4470619472,2026-09-22,59,59 applicants,0,matched,title,2026-09-23,2026-09-26T04:11:24,2026-09-26,,4,startDate,false,1,,,,Intern (Fixed Term),"Tencent Global/Programming, Technology & IT",2026-09-22,,false,,,,,,
+R108162,Tech Reporter,Tencent,Tencent America LLC,Full time,Posted 3 Days Ago,2026-09-22,4,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,1,"Business Unit
+
+What the Role Entails
+
+Key Responsibilities
+
+Breaking News & Fast-Turn Analysis
+
+• Track, verify, and report on real-time industry developments, including major product releases, corporate earnings, regulatory shifts, and high-profile industry summits.
+
+• Write fast, accurate, and analytical news briefs under tight deadlines without compromising editorial integrity.
+
+In-Depth Research & Investigative Journalism
+
+• Produce long-form features, market breakdowns, and investigative pieces focusing on AI, semiconductor supply chains, venture capital trends, and frontier technology.
+
+• Unpack complex business models, technological architecture, and long-term industry implications for a discerning audience.
+
+Sourcing, Network Building & Executive Interviews
+
+• Cultivate and maintain an active network of confidential, firsthand sources—including founders, AI scientists, product managers, engineers, and VCs.
+
+• Go beyond PR wire distribution to uncover proprietary leads, inside perspectives, and original scoops.
+
+• Conduct high-level, independent interviews with C-suite executives, researchers, and prominent investors across North America.
+
+On-Camera & Field Reporting
+
+• Deliver engaging, professional video standups, field reports, and rapid video debriefs from major tech campuses, conferences, and breaking news events.
+
+• Collaborate with multimedia producers to adapt text reporting into dynamic video, podcast, and social media formats.
+
+Ecosystem Integration
+
+• Maintain a regular physical presence at major tech campuses (e.g., OpenAI, Google, Meta, NVIDIA), AI startups, incubators, and university research labs across the Bay Area.
+
+Who We Look For
+
+Qualifications & Requirements
+
+• Experience: 5+ years of professional experience as a tech reporter, business journalist, or media correspondent, preferably covering Silicon Valley, AI, or enterprise tech.
+
+• Technical & Business Acumen: Strong foundational understanding of artificial intelligence, machine learning, semiconductor ecosystems, and venture capital mechanics.
+
+• On-Camera Presence: Proven track record or comfortable on-camera presence for field reporting, video commentary, and live event coverage (reel or portfolio required).
+
+• Execution & Agility: Thrives in a fast-paced environment with a strong sense of urgency, meticulous attention to detail, and sound editorial judgment under pressure.
+
+Preferred Qualifications
+
+• Bachelor’s degree in Journalism, Communications, Computer Science, Economics, or a related field.
+
+• Experience with video editing, digital publishing platforms, and social-first video formats (X/Twitter, LinkedIn, YouTube Shorts).
+
+• Professional fluency in English and Mandarin is highly preferred to support global cross-border collaboration and stakeholder engagement.
+
+Location State(s)
+
+US-California-Palo Alto
+
+The expected base pay range for this position in the location(s) listed above is $80,168.00 to $139,900.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.
+Employees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.
+Subject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.
+Your benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4169,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Tech-Reporter_R108162-1,,https://www.linkedin.com/jobs/view/4468557292,2026-09-22,25,among first 25,0,matched,title,2026-09-22,2026-09-26T04:05:32,2026-09-26,,4,startDate,false,1,,,,Regular,Product/Project (PD)/Content (CT),2026-09-22,,true,,,,,,
+R108151,PR Intern,Tencent,Proxima Beta U.S. LLC,Full time,Posted 4 Days Ago,2026-09-21,5,US-California-Los Angeles,1,US-California-Los Angeles,false,,United States of America,44e07daec6221000dd21974364a90000,1,"About the Hiring Team
+
+What the Role Entails
+
+Tencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China. Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world. Meanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.
+
+Level Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world. We are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.
+
+Responsibilities:
+
+• Assist Global Communication team in managing day-to-day operations including
+
+• Compliance checks
+
+• Coverage monitoring
+
+• Analysis & reporting
+
+• Help coordinate PR activities, including press releases, media relations, and event planning
+
+• Support the team in project management, ensuring that all PR projects are completed on time and within budget
+
+• Research competitors, industry trends, games, and relevant news cycles to identify potential story angles and opportunities
+
+• Maintain strong relationships with regional colleagues & external agencies
+
+Who We Look For
+
+• Graduates or senior students from university/graduate school will be given preference for majors related to communications, public relations, journalism, marketing, or a related field
+
+• PR, article writing, and/or marketing experience. Experience in the games, entertainment, or tech industry is a plus
+
+• Strong understanding of project management principles with a proven ability to handle multiple tasks and coordinate workflow with related team members and meet tight deadlines
+
+• Strong problem-solving skills and ability to think strategically
+
+• Strong passion for video games, preferably an active gamer
+
+• An attitude that allows you to work comfortably in an environment where people from various nationalities and cultural backgrounds come together. Ability to adapt as required and have the confidence to make changes.
+
+Location State(s)
+
+US-California-Los Angeles
+
+The expected base pay range for this position in the location(s) listed above is $24.81 to $42.70 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
+This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3634,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/PR-Intern_R108151-1,,,,,,,not_checked,,2026-09-22,,2026-09-26,,5,startDate,false,1,,,,Intern (Fixed Term),Tencent Global/Marketing & Operations,2026-09-21,,,,,,,,
+R108138,Senior Solution Architect - EdgeOne,Tencent,Tencent America LLC,Full time,Posted 5 Days Ago,2026-09-14,12,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,1,"Business Unit
+
+What the Role Entails
+Our Solution Architects work with both our Engineers and Sales team to analyze the needs and requirements from our potential customers, making sure the best matching product capabilities are leveraged in the technical solutions provided and proposed, leading to customer satisfaction and product value recognition.
+
+We align product, engineering, and business teams to exceed the expectations of our customers, helping our key customers get the best values of our integrated security and performance solutions. The team is expanding right now, with both challenges and opportunities to unfold and excel at your full potential.
+
+Our Solution Architects are key contributors to Tencent’s success on identifying business opportunities leveraging our products in question, presenting solutions and demonstrating value to meet customer needs, leading POC projects, implementation, and various initiatives that drive both customer satisfaction and product efficiency.
+As a Senior Product Specialist, you will be responsible for:
+
+• Driving Tencent Cloud products adoption, identifying customer needs and presenting product specific solutions in various business opportunities
+
+• Guiding, training, and enabling the internal business teams and external partners on Tencent Cloud products knowledge and best practices leveraging relevant products in various customer solutions
+
+• Tracking, monitoring, and leading the team efforts to resolve customer issues reported while using Tencent Cloud security and performance products.
+
+• Working with global team members on international customer initiatives and projects, interacting effectively with stakeholders in your time zone and/or locations closer to your workplace.
+
+• Planning and organizing programs at the organization level, across multiple technical teams coordinating resources from different geo locations, in order to improve the efficiency and effectiveness of Tencent Cloud services.
+
+• Creating clarity in requirements, build relationships with partner teams, embrace agility, design features to drive business objectives
+
+• Identifying, assessing, mitigating risks arising from variety of situations including those that arise from dependencies between groups
+
+• Working with engineering teams to implement new or updated tools in support of team or business processes
+
+Who We Look For
+
+• Have 8+ years of relevant experience and a Bachelor’s degree in Computer Science, Engineering, Management Information Systems, another related field or its equivalent
+
+• Have excellent communication skills and an ability to build trusting relationships with various stakeholders including customers and partners.
+
+• Show experience in a customer-facing role within the information technology industry, preferable as a Solution Engineer/Architect, Product Specialist, or Technical Project Manager
+
+• Be familiar with cloud security and content delivery technology, process and concepts, security event management, compliance and site performance
+
+• Demonstrate knowledge of project management concepts and techniques
+
+• Have some knowledge of implementation concepts that deal with web development, IT systems or security practice
+
+• Understand how the internet works, with reasonably deep knowledge about network protocols (IP, DNS and routing, HTTP, TCP or web architecture)
+
+• Be prepared to travel on ~10% of the time
+
+Location State(s)
+
+US-California-Palo Alto
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3765,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Solution-Architect---EdgeOne_R108138,,https://www.linkedin.com/jobs/view/4467210800,2026-09-16,25,among first 25,2,matched,title,2026-09-19,2026-09-17T13:05:27,2026-09-26,,12,startDate,false,0,2026-09-20,,,Regular,Technical (TE)/Solutions and Services (SS),2026-09-14,,true,,,,,,
+R108140,Machine Learning Intern,Tencent,Tencent America LLC,Full time,Posted 11 Days Ago,2026-09-14,12,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"Business Unit
 
 What the Role Entails
 
@@ -46,8 +806,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3649,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Machine-Learning-Intern_R108140-1,,,,,,,no_match,,2026-09-19,,2026-09-19,,5,startDate,false,1,,,,Intern (Fixed Term),Technical (TE)/Technical Research and Development (TRD),2026-09-14,,false,,,,,,
-R108141,Cyber Security Engineer Intern,Tencent,Tencent America LLC,Full time,Posted 4 Days Ago,2026-09-14,5,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,0,"About the Hiring Team
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3649,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Machine-Learning-Intern_R108140-1,,,,,,,not_checked,,2026-09-19,,2026-09-26,,12,startDate,false,1,,,,Intern (Fixed Term),Technical (TE)/Technical Research and Development (TRD),2026-09-14,,,,,,,,
+R108141,Cyber Security Engineer Intern,Tencent,Tencent America LLC,Full time,Posted 11 Days Ago,2026-09-14,12,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,0,"About the Hiring Team
 
 What the Role Entails
 Business Unit
@@ -150,59 +910,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4790,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Cyber-Security-Engineer-Intern_R108141-2,,,,,,,no_match,,2026-09-19,,2026-09-19,,5,startDate,false,2,,,,Intern (Fixed Term),"Tencent Global/Programming, Technology & IT",2026-09-14,,false,,,,,,
-R108138,Senior Solution Architect - EdgeOne,Tencent,Tencent America LLC,Full time,Posted 4 Days Ago,2026-09-14,5,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,1,"Business Unit
-
-What the Role Entails
-Our Solution Architects work with both our Engineers and Sales team to analyze the needs and requirements from our potential customers, making sure the best matching product capabilities are leveraged in the technical solutions provided and proposed, leading to customer satisfaction and product value recognition.
-
-We align product, engineering, and business teams to exceed the expectations of our customers, helping our key customers get the best values of our integrated security and performance solutions. The team is expanding right now, with both challenges and opportunities to unfold and excel at your full potential.
-
-Our Solution Architects are key contributors to Tencent’s success on identifying business opportunities leveraging our products in question, presenting solutions and demonstrating value to meet customer needs, leading POC projects, implementation, and various initiatives that drive both customer satisfaction and product efficiency.
-As a Senior Product Specialist, you will be responsible for:
-
-• Driving Tencent Cloud products adoption, identifying customer needs and presenting product specific solutions in various business opportunities
-
-• Guiding, training, and enabling the internal business teams and external partners on Tencent Cloud products knowledge and best practices leveraging relevant products in various customer solutions
-
-• Tracking, monitoring, and leading the team efforts to resolve customer issues reported while using Tencent Cloud security and performance products.
-
-• Working with global team members on international customer initiatives and projects, interacting effectively with stakeholders in your time zone and/or locations closer to your workplace.
-
-• Planning and organizing programs at the organization level, across multiple technical teams coordinating resources from different geo locations, in order to improve the efficiency and effectiveness of Tencent Cloud services.
-
-• Creating clarity in requirements, build relationships with partner teams, embrace agility, design features to drive business objectives
-
-• Identifying, assessing, mitigating risks arising from variety of situations including those that arise from dependencies between groups
-
-• Working with engineering teams to implement new or updated tools in support of team or business processes
-
-Who We Look For
-
-• Have 8+ years of relevant experience and a Bachelor’s degree in Computer Science, Engineering, Management Information Systems, another related field or its equivalent
-
-• Have excellent communication skills and an ability to build trusting relationships with various stakeholders including customers and partners.
-
-• Show experience in a customer-facing role within the information technology industry, preferable as a Solution Engineer/Architect, Product Specialist, or Technical Project Manager
-
-• Be familiar with cloud security and content delivery technology, process and concepts, security event management, compliance and site performance
-
-• Demonstrate knowledge of project management concepts and techniques
-
-• Have some knowledge of implementation concepts that deal with web development, IT systems or security practice
-
-• Understand how the internet works, with reasonably deep knowledge about network protocols (IP, DNS and routing, HTTP, TCP or web architecture)
-
-• Be prepared to travel on ~10% of the time
-
-Location State(s)
-
-US-California-Palo Alto
-
-Equal Employment Opportunity at Tencent
-
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3765,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Solution-Architect---EdgeOne_R108138,,https://www.linkedin.com/jobs/view/4467210800,2026-09-16,25,among first 25,2,matched,title,2026-09-19,2026-09-17T13:05:27,2026-09-19,,5,startDate,false,0,,,,Regular,Technical (TE)/Solutions and Services (SS),2026-09-14,,true,,,,,,
-R107663,"Associate, Global AI Policy",Tencent,Tencent America LLC,Full time,Posted 8 Days Ago,2026-09-10,9,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,1,"About the Hiring Team
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4790,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Cyber-Security-Engineer-Intern_R108141-2,,,,,,,not_checked,,2026-09-19,,2026-09-26,,12,startDate,false,2,,,,Intern (Fixed Term),"Tencent Global/Programming, Technology & IT",2026-09-14,,,,,,,,
+R107663,"Associate, Global AI Policy",Tencent,Tencent America LLC,Full time,Posted 15 Days Ago,2026-09-10,16,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,1,"About the Hiring Team
 
 What the Role Entails
 A. About Tencent
@@ -283,8 +992,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",6529,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Associate--Global-AI-Policy_R107663,,https://www.linkedin.com/jobs/view/4465857929,2026-09-16,200,Over 200 applicants,6,matched,title,2026-09-19,2026-09-17T13:05:33,2026-09-19,,9,startDate,false,0,,,,Regular,Tencent Global/Public Affairs,2026-09-10,,true,,,,,,
-R108100,Global Talent Sourcing Intern,Tencent,Tencent America LLC,Full time,Posted 10 Days Ago,2026-09-08,11,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",6529,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Associate--Global-AI-Policy_R107663,,https://www.linkedin.com/jobs/view/4465857929,2026-09-16,200,Over 200 applicants,6,matched,title,2026-09-19,2026-09-17T13:05:33,2026-09-26,,16,startDate,false,0,,,,Regular,Tencent Global/Public Affairs,2026-09-10,,true,,,,,,
+R108100,Global Talent Sourcing Intern,Tencent,Tencent America LLC,Full time,Posted 17 Days Ago,2026-09-08,18,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"Business Unit
 
 What the Role Entails
 
@@ -321,8 +1030,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",2487,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Global-Talent-Sourcing-Intern_R108100,,https://www.linkedin.com/jobs/view/4462100597,2026-09-16,36,36 applicants,8,matched,title,2026-09-19,2026-09-17T13:07:28,2026-09-19,,11,startDate,true,0,,,,Intern (Fixed Term),Specialty (SC)/Human Resources (HR),2026-09-08,,false,,,,,,
-R108037,Global Talent Sourcing Intern,Tencent,Tencent America LLC,Full time,Posted 17 Days Ago,2026-09-01,18,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",2487,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Global-Talent-Sourcing-Intern_R108100,,https://www.linkedin.com/jobs/view/4462100597,2026-09-16,36,36 applicants,8,matched,title,2026-09-19,2026-09-17T13:07:28,2026-09-26,,18,startDate,true,0,,,,Intern (Fixed Term),Specialty (SC)/Human Resources (HR),2026-09-08,,false,,,,,,
+R108037,Global Talent Sourcing Intern,Tencent,Tencent America LLC,Full time,Posted 24 Days Ago,2026-09-01,25,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"Business Unit
 
 What the Role Entails
 About Tencent
@@ -364,56 +1073,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3215,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Global-Talent-Sourcing-Intern_R108037,,,,,,,no_match,,2026-09-19,,2026-09-19,,18,startDate,true,0,,,,Intern (Fixed Term),Specialty (SC)/Human Resources (HR),2026-09-01,,false,,,,,,
-R108039,AI Business Analyst Intern,Tencent,Tencent America LLC,Full time,Posted 17 Days Ago,2026-09-01,18,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,3,"Business Unit
-
-What the Role Entails
-
-Tencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China. Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world. Meanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.
-
-Level Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world. We are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.
-
-Job Responsibilities:
-
-• Assist in analyzing emerging application scenarios and technological evolution within the Game AI domain and other cutting-edge technology fields.
-
-• Support information gathering, data collection, and the drafting of research reports.
-
-• This is a regular internship role. Please note that there is no guaranteed full-time headcount upon completion. The position is designed to provide a substantive learning and development experience.
-
-Who We Look For
-
-• A background in Computer Science, Mathematics, or a related field, coupled with strong business acumen.
-
-• Proficient in English as a working language.
-
-• Available for a long-term internship (6+ months preferred)
-
-• Self-motivated and results-driven, with a sustained passion for exploring the intersection of gaming and technology.
-
-• A high degree of integrity, professionalism, and collaborative team spirit.
-
-What You’ll Gain
-
-• Exposure to cutting-edge knowledge covering the application, product, and ecosystem layers of core technologies like Game AI.
-
-• Hands-on experience in developing core strategic analysis and market research skills.
-
-• The opportunity to collaborate with and learn from a global network of peers and mentors.
-
-• Formal Tencent intern benefits, a competitive stipend, and an official internship certificate.
-
-Location State(s)
-
-US-California-Palo Alto
-
-The expected base pay range for this position in the location(s) listed above is $24.81 to $42.70 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
-This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
-
-Equal Employment Opportunity at Tencent
-
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3515,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/AI-Business-Analyst-Intern_R108039-1,,,,,,,no_match,,2026-09-19,,2026-09-19,,18,startDate,true,1,,,,Intern (Fixed Term),Market (MA)/Strategy (ST),2026-09-01,,false,,,,,,
-R108019,Tencent Cloud CPaaS Product Management Intern,Tencent,Tencent America LLC,Full time,Posted 17 Days Ago,2026-09-01,18,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3215,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Global-Talent-Sourcing-Intern_R108037,,,,,,,not_checked,,2026-09-19,,2026-09-26,,25,startDate,true,0,,,,Intern (Fixed Term),Specialty (SC)/Human Resources (HR),2026-09-01,,,,,,,,
+R108019,Tencent Cloud CPaaS Product Management Intern,Tencent,Tencent America LLC,Full time,Posted 24 Days Ago,2026-09-01,25,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
 
 What the Role Entails
 Tencent is a leading global technology company focused on connecting people and developing innovative products and services that improve the quality of life of people around the world. Founded in 1998 and publicly traded on the Hong Kong Stock Exchange since 2004, Tencent offers a variety of products and services, including leading communication and social platforms (Weixin/WeChat), high-quality entertainment (from video games, music, TV and film, sport and literature), FinTech (WeChat Pay and QQ Wallet) and industry-leading cloud products and services.
@@ -456,8 +1117,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3974,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Tencent-Cloud-CPaaS-Product-Management-Intern_R108019,,https://www.linkedin.com/jobs/view/4462065368,2026-09-16,125,125 applicants,15,matched,title,2026-09-19,2026-09-17T13:07:29,2026-09-19,,18,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Solutions and Services (SS),2026-09-01,,false,,,,,,
-R108020,Tencent Cloud CPaaS Product Management Intern,Tencent,Tencent Cloud LLC,Full time,Posted 17 Days Ago,2026-09-01,18,US-California-Los Angeles,1,US-California-Los Angeles,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3974,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Tencent-Cloud-CPaaS-Product-Management-Intern_R108019,,https://www.linkedin.com/jobs/view/4462065368,2026-09-16,125,125 applicants,15,matched,title,2026-09-19,2026-09-17T13:07:29,2026-09-26,,25,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Solutions and Services (SS),2026-09-01,,false,,,,,,
+R108020,Tencent Cloud CPaaS Product Management Intern,Tencent,Tencent Cloud LLC,Full time,Posted 24 Days Ago,2026-09-01,25,US-California-Los Angeles,1,US-California-Los Angeles,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
 
 What the Role Entails
 About The Company
@@ -499,114 +1160,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4141,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Tencent-Cloud-CPaaS-Product-Management-Intern_R108020,,https://www.linkedin.com/jobs/view/4462062408,2026-09-16,58,58 applicants,15,matched,title,2026-09-19,2026-09-17T13:07:31,2026-09-19,,18,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Solutions and Services (SS),2026-09-01,,false,,,,,,
-R107700,Product Manager – AI Creator Platform,Tencent,Tencent America LLC,Full time,Posted 24 Days Ago,2026-08-25,25,US-California-Los Angeles,1,US-California-Los Angeles,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
-
-What the Role Entails
-
-Key Responsibilities
-
-Product Strategy & Roadmap
-
-• Own the product strategy and roadmap for WorkSolo's overseas markets, aligning HQ vision with local creator needs
-
-• Define product North Star metrics and success criteria (activation, retention, creation depth, publish-through rate, monetization)
-
-• Translate market insights, competitive intelligence, and creator behavior trends into prioritized product bets
-
-AI-Native Feature Design
-
-• Lead end-to-end product design for AI creation workflows — covering ideation, generation, editing, collaboration, and publishing
-
-• Define and ship features around multimodal generation (text-to-image, text-to-video, voice, 3D), agentic workflows, asset management, and creator monetization
-
-• Partner with AI/ML, design, and engineering teams to ship high-quality experiences at startup speed
-
-User Research & Market Insight
-
-• Build a continuous discovery system: creator interviews, usability studies, community listening, and quantitative analysis
-
-• Synthesize insights from Discord, Reddit, X/Twitter, YouTube, and TikTok creator ecosystems into product requirements
-
-• Develop deep personas for AI creators (independents, studios, professional creatives) and map their end-to-end workflows
-
-Localization & Market Fit
-
-• Drive product localization strategy across language, payment, content policy, and creator economics for key markets (North America, EU, JP/KR, SEA, LATAM)
-
-• Define market-specific feature variants, onboarding flows, and pricing/packaging in collaboration with operations and growth
-
-• Champion the international user's voice within HQ; influence the global product roadmap with regional priorities
-
-Data & Experimentation
-
-• Build a rigorous experimentation culture: hypothesis → A/B test → learning loops
-
-• Define instrumentation requirements and partner with data teams on dashboards, funnels, and cohort analysis
-
-• Use analytics tools (Amplitude, Mixpanel, Looker, etc.) to monitor product health and identify growth levers
-
-AIGC Ecosystem & Partnerships
-
-• Stay at the forefront of the global AI creator tools ecosystem (workflows, toolchains, emerging models, and creator behavior trends)
-
-• Identify integration and partnership opportunities with model providers, distribution platforms, and creator ecosystems
-
-• Represent WorkSolo at industry events, creator conferences, and AIGC community gatherings
-
-Cross-Functional Leadership
-
-• Lead cross-functional squads of engineers, designers, researchers, and data scientists across HQ (China) and LA
-
-• Own clear written PRDs, specs, and trade-off rationales; drive alignment across time zones
-
-• Collaborate closely with overseas operations, marketing, and BD to ensure go-to-market readiness
-
-Who We Look For
-
-Qualifications
-
-• Over 5+ years of product management experience, ideally within creator tools, AIGC platforms, content/media, or developer-facing creative products
-
-• Proven track record shipping consumer or prosumer products at scale in international markets
-
-• Deep familiarity with the global AI creator tools landscape — including generation tools (Midjourney, Runway, Pika, Kling, Sora), creation workflow tools (Notion AI, Canva AI, Adobe Firefly, CapCut), and creator platform ecosystems (YouTube Studio, TikTok Creator Marketplace, Patreon, Substack)
-
-• Hands-on experience designing AI-native features (prompting UX, multimodal generation, agentic workflows, model orchestration) is strongly preferred
-
-• Strong data literacy; comfortable defining metrics, designing experiments, and using analytics tools (Amplitude, Mixpanel, Looker, SQL)
-
-• Experience operating across Western social platforms (TikTok, YouTube, Instagram, Discord, Reddit, X) and understanding how AI creators discover, adopt, and evangelize creation tools
-
-• Excellent written and verbal English communication; Mandarin Chinese is a strong plus for HQ collaboration
-
-• Self-starter with startup mentality; comfortable operating with ambiguity, time-zone span, and the speed of an early-stage international expansion
-
-• Bachelor's degree or above in Computer Science, Design, HCI, Media, or a related field; equivalent practical experience welcome
-
-Nice to Have
-
-• Prior experience launching products from 0 → 1 in overseas markets
-
-• Personal creator background or active participation in AIGC creator communities
-
-• Familiarity with creator monetization models (subscriptions, marketplaces, revenue share, tipping)
-
-• Experience working across China–US dual-HQ structures
-
-Location State(s)
-
-US-California-Los Angeles
-
-The expected base pay range for this position in the location(s) listed above is $102,200.00 to $191,400.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.
-Employees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.
-Subject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.
-Your benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.
-
-Equal Employment Opportunity at Tencent
-
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",5902,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Product-Manager---AI-Creator-Platform--WorkSolo-_R107700-1,,https://www.linkedin.com/jobs/view/4434784190,2026-06-29,128,128 applicants,-57,matched,title,2026-09-19,2026-09-17T13:05:20,2026-09-19,,82,startDate+linkedin,true,1,,,,Regular,Product/Project (PD)/Product Management (PDM),2026-06-29,title,false,,,,,,
-R107926,Brand Marketing Intern,Tencent,Proxima Beta U.S. LLC,Full time,Posted 30 Days Ago,2026-08-19,31,US-California-Los Angeles,2,US-California-Los Angeles; US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"About the Hiring Team
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4141,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Tencent-Cloud-CPaaS-Product-Management-Intern_R108020,,https://www.linkedin.com/jobs/view/4462062408,2026-09-16,58,58 applicants,15,matched,title,2026-09-19,2026-09-17T13:07:31,2026-09-26,,25,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Solutions and Services (SS),2026-09-01,,false,,,,,,
+R107926,Brand Marketing Intern,Tencent,Proxima Beta U.S. LLC,Full time,Posted 30+ Days Ago,2026-08-19,38,US-California-Los Angeles,2,US-California-Los Angeles; US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"About the Hiring Team
 
 What the Role Entails
 
@@ -687,8 +1242,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4892,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Brand-Marketing-Intern_R107926-1,,,,,,,no_match,,2026-09-19,,2026-09-19,,31,startDate,true,1,,,,Intern (Fixed Term),Tencent Global/Marketing & Operations,2026-08-19,,false,,,,,,
-R107545,Senior Network Architect - Tencent Global Edge Network,Tencent,Tencent America LLC,Full time,Posted 30 Days Ago,2026-08-19,31,US-Washington-Bellevue,1,US-Washington-Bellevue,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4892,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Brand-Marketing-Intern_R107926-1,,,,,,,not_checked,,2026-09-23,,2026-09-26,,38,startDate,true,1,,,,Intern (Fixed Term),Tencent Global/Marketing & Operations,2026-08-19,,,,,,,,
+R107545,Senior Network Architect - Tencent Global Edge Network,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-19,38,US-Washington-Bellevue,1,US-Washington-Bellevue,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
 
 What the Role Entails
 
@@ -741,8 +1296,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3410,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-Washington-Bellevue/Senior-Network-Architect---Tencent-Global-Edge-Network_R107545-1,,https://www.linkedin.com/jobs/view/4420611663,2026-05-28,25,among first 25,-83,matched,title,2026-09-19,2026-09-17T13:05:48,2026-09-19,,114,startDate+linkedin,true,1,,,,Regular,Technical (TE)/Technical Research and Development (TRD),2026-05-28,title,true,,,,,,
-R107975,Director of Strategic Partnerships -  North America,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-18,32,US-California-Palo Alto,4,US-California-Palo Alto; US-California-Los Angeles; US-New York State-New York; US-Washington-Bellevue,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3410,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-Washington-Bellevue/Senior-Network-Architect---Tencent-Global-Edge-Network_R107545-1,,https://www.linkedin.com/jobs/view/4420611663,2026-05-28,25,among first 25,-83,matched,title,2026-09-19,2026-09-17T13:05:48,2026-09-26,,121,startDate+linkedin,true,1,,,,Regular,Technical (TE)/Technical Research and Development (TRD),2026-05-28,title,true,,,,,,
+R107975,Director of Strategic Partnerships -  North America,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-18,39,US-California-Palo Alto,4,US-California-Palo Alto; US-California-Los Angeles; US-New York State-New York; US-Washington-Bellevue,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
 
 About the Hiring Team
 
@@ -793,8 +1348,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4125,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Director-of-Strategic-Partnerships----North-America_R107975-1,,https://www.linkedin.com/jobs/view/4455942968,2026-09-16,76,76 applicants,29,matched,title,2026-09-19,2026-09-17T13:05:45,2026-09-19,,32,startDate,true,1,,,,Regular,Tencent Global/Business Management,2026-08-18,,false,,,,,,
-R107127,Business Development Manager (AI & Game Tech),Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-17,33,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4125,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Director-of-Strategic-Partnerships----North-America_R107975-1,,https://www.linkedin.com/jobs/view/4455942968,2026-09-16,76,76 applicants,29,matched,title,2026-09-23,2026-09-17T13:05:45,2026-09-26,,39,startDate,true,1,,,,Regular,Tencent Global/Business Management,2026-08-18,,false,,,,,,
+R107127,Business Development Manager (AI & Game Tech),Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-17,40,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
 LIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.
 
 What the Role Entails
@@ -834,8 +1389,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4038,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Business-Development-Manager--AI---Game-Tech-_R107127-1,,https://www.linkedin.com/jobs/view/4453620054,2026-09-16,34,34 applicants,30,matched,title,2026-09-19,2026-09-17T13:05:07,2026-09-19,,33,startDate,true,1,,,,Regular,Market (MA)/Strategy (ST),2026-08-17,,false,,,,,,
-R107675,Strategic Investment Manager,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-17,33,US-California-Palo Alto,3,US-California-Palo Alto; US-New York State-New York; US-California-Los Angeles,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4038,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Business-Development-Manager--AI---Game-Tech-_R107127-1,,https://www.linkedin.com/jobs/view/4453620054,2026-09-16,34,34 applicants,30,matched,title,2026-09-19,2026-09-17T13:05:07,2026-09-26,,40,startDate,true,1,,,,Regular,Market (MA)/Strategy (ST),2026-08-17,,false,,,,,,
+R107675,Strategic Investment Manager,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-17,40,US-California-Palo Alto,3,US-California-Palo Alto; US-New York State-New York; US-California-Los Angeles,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
 
 About the Hiring Team
 
@@ -881,8 +1436,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3897,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Strategic-Investment-Manager_R107675-1,,https://www.linkedin.com/jobs/view/4429828038,2026-06-24,160,160 applicants,-54,matched,title,2026-09-19,2026-09-17T13:05:37,2026-09-19,,87,startDate+linkedin,true,1,,,,Regular,Tencent Global/Business Management,2026-06-24,title,false,,,,,,
-R107961,Senior Project Manager – Workday Financials ERP Implementation,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-13,37,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3897,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Strategic-Investment-Manager_R107675-1,,https://www.linkedin.com/jobs/view/4429828038,2026-06-24,160,160 applicants,-54,matched,title,2026-09-23,2026-09-17T13:05:37,2026-09-26,,94,startDate+linkedin,true,1,,,,Regular,Tencent Global/Business Management,2026-06-24,title,false,,,,,,
+R107961,Senior Project Manager – Workday Financials ERP Implementation,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-13,44,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
 
 What the Role Entails
 Tencent Finance is seeking an experienced Senior Project Manager to lead the implementation of Workday Financials within our Finance IT Management Department. This role owns end-to-end delivery — planning, design, configuration, data migration, testing, cutover, and post–go-live stabilization — across multiple legal entities, regions, and business lines.
@@ -968,90 +1523,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",6212,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Project-Manager---Workday-Financials-ERP-Implementation_R107961-1,,https://www.linkedin.com/jobs/view/4452784207,2026-09-15,99,99 applicants,33,matched,title,2026-09-19,2026-09-17T13:07:32,2026-09-19,,37,startDate,true,1,,,,Regular,Specialty (SC)/Finance (FN),2026-08-13,,false,,,,,,
-R107712,Senior Strategic Sales Executive,Tencent,Tencent Cloud LLC,Full time,Posted 30+ Days Ago,2026-08-10,40,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,4,"Business Unit
-
-What the Role Entails
-About the Company:
-
-Tencent is a leading global technology company focused on connecting people and developing innovative products and services that improve the quality of life of people around the world. Founded in 1998 and publicly traded on the Hong Kong Stock Exchange since 2004, Tencent offers a variety of products and services, including leading communication and social platforms (Weixin/WeChat), high-quality entertainment (from video games, music, TV and film, sport and literature), FinTech (WeChat Pay and QQ Wallet) and industry-leading cloud products and services.
-
-Headquartered in Shenzhen, we have offices around the world, including in Amsterdam, London, Berlin, Los Angeles, Palo Alto, Seattle, New York, Tokyo, Singapore, Bangkok, and Seoul. We have been recognized by Forbes as one of the World’s Best Employers (2021), a Top 100 Digital Company (2019) and one of the World’s Most Innovative Companies (2018). Tencent is committed to recruiting, mentoring, and developing a diverse workforce that is broadly representative of the communities it serves.
-
-•
-Hunt and generate new business opportunities by identifying and targeting key accounts
-
-•
-Build and maintain strong relationships with key customers, understanding their needs and providing tailored solutions
-
-•
-Evaluate key account sales performance and recommend improvements
-
-•
-Address customer-related issues, sales conflicts, and pricing matters in a timely manner
-
-•
-Collaborate with cross-functional teams to develop strategies for optimizing key account management activities
-
-•
-Work with key accounts to develop sales proposals, quotations, and pricing plans
-
-•
-Deliver customer presentations, attend sales meetings, and industry conferences
-
-•
-Assist in key account marketing activities such as tradeshows, campaigns, and promotional initiatives
-
-•
-Stay current with the latest developments in the marketplace and competitor activities
-
-•
-Communicate up-to-date information about new products and enhancements to key accounts
-
-•
-Manage the sales pipeline, forecast monthly sales, and identify new business opportunities within key accounts
-
-•
-Drive revenue growth through strategic engagement with key accounts
-
-•
-Create and execute sales plans to help key accounts achieve their financial goals
-
-Who We Look For
-
-• Bachelor's degree or above in a related field
-
-• Fluency in English; Fluent in Mandarin is preferred
-
-• 5+ years of experience in hunting and managing key account sales in B2B related areas preferred.
-
-• Knowledge or experience with CDN and related products preferred
-
-• Experience in identifying, recruiting, and onboarding new key accounts
-
-• Experience in educating customers about product portfolio and service offerings
-
-• Knowledge of market trends analysis to develop effective sales plans and increase brand awareness
-
-• Outstanding presentation and communication skills
-
-• Ability to actively manage sales activities to generate revenue within key accounts
-
-• Ability to collaborate with key accounts to create and execute business plans to achieve sales goals
-
-Location State(s)
-
-US-California-Palo Alto
-
-The expected base pay range for this position in the location(s) listed above is $85,800.00 to $238,900.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.
-Employees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.
-Subject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.
-Your benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.
-
-Equal Employment Opportunity at Tencent
-
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4479,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Strategic-Sales-Executive_R107712,,https://www.linkedin.com/jobs/view/4452010104,2026-09-16,25,among first 25,37,matched,title,2026-09-19,2026-09-17T13:05:14,2026-09-19,,40,startDate,true,0,,,,Regular,Market (MA)/Sales (SA),2026-08-10,,true,,,,,,
-R107879,Senior Strategic Sales Executive,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-10,40,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,4,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",6212,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Project-Manager---Workday-Financials-ERP-Implementation_R107961-1,,https://www.linkedin.com/jobs/view/4452784207,2026-09-15,99,99 applicants,33,matched,title,2026-09-19,2026-09-17T13:07:32,2026-09-26,,44,startDate,true,1,,,,Regular,Specialty (SC)/Finance (FN),2026-08-13,,false,,,,,,
+R107879,Senior Strategic Sales Executive,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-10,47,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,4,"Business Unit
 
 What the Role Entails
 
@@ -1127,8 +1600,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3404,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Strategic-Sales-Executive_R107879,,https://www.linkedin.com/jobs/view/4452197432,2026-09-16,25,among first 25,37,matched,title,2026-09-19,2026-09-17T13:05:19,2026-09-19,,40,startDate,true,0,,,,Regular,Market (MA)/Sales (SA),2026-08-10,,true,,,,,,
-R107788,Senior Gateway Ops Engineer,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-10,40,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,1,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3404,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Strategic-Sales-Executive_R107879,,https://www.linkedin.com/jobs/view/4452197432,2026-09-16,25,among first 25,37,matched,title,2026-09-19,2026-09-17T13:05:19,2026-09-26,,47,startDate,true,0,,,,Regular,Market (MA)/Sales (SA),2026-08-10,,true,,,,,,
+R107788,Senior Gateway Ops Engineer,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-10,47,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,1,"Business Unit
 
 What the Role Entails
 
@@ -1159,8 +1632,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",2621,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Gateway-Ops-Engineer_R107788-1,,https://www.linkedin.com/jobs/view/4437057343,2026-09-15,160,160 applicants,36,matched,title,2026-09-19,2026-09-17T13:05:13,2026-09-19,,40,startDate,true,1,,,,Regular,Technical (TE)/Technical Operations (TO),2026-08-10,,false,,,,,,
-R107918,Senior Business Development Manager,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-06,44,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",2621,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Gateway-Ops-Engineer_R107788-1,,https://www.linkedin.com/jobs/view/4437057343,2026-09-15,160,160 applicants,36,matched,title,2026-09-19,2026-09-17T13:05:13,2026-09-26,,47,startDate,true,1,,,,Regular,Technical (TE)/Technical Operations (TO),2026-08-10,,false,,,,,,
+R107918,Senior Business Development Manager,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-08-06,51,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
 
 What the Role Entails
 
@@ -1205,8 +1678,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3457,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Business-Development-Manager_R107918-2,,https://www.linkedin.com/jobs/view/4450674861,2026-09-16,40,40 applicants,41,matched,title,2026-09-19,2026-09-17T13:05:09,2026-09-19,,44,startDate,true,2,,,,Regular,Market (MA)/Sales (SA),2026-08-06,,false,,,,,,
-R105831,Senior Strategic Sales Executive,Tencent,Tencent Cloud LLC,Full time,Posted 30+ Days Ago,2026-07-30,51,US-California-Los Angeles,1,US-California-Los Angeles,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,2,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3457,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Business-Development-Manager_R107918-2,,https://www.linkedin.com/jobs/view/4450674861,2026-09-16,40,40 applicants,41,matched,title,2026-09-19,2026-09-17T13:05:09,2026-09-26,,51,startDate,true,2,,,,Regular,Market (MA)/Sales (SA),2026-08-06,,false,,,,,,
+R105831,Senior Strategic Sales Executive,Tencent,Tencent Cloud LLC,Full time,Posted 30+ Days Ago,2026-07-30,58,US-California-Los Angeles,1,US-California-Los Angeles,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,2,"Business Unit
 
 What the Role Entails
 
@@ -1284,8 +1757,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3389,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Senior-Strategic-Sales-Executive_R105831,,https://www.linkedin.com/jobs/view/4414654315,2026-05-14,26,26 applicants,-77,matched,title,2026-09-19,2026-09-17T13:05:10,2026-09-19,,128,startDate+linkedin,true,0,,,,Regular,Market (MA)/Sales (SA),2026-05-14,title,false,,,,,,
-R107764,Overseas Growth Operations Specialist,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-14,67,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3389,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Senior-Strategic-Sales-Executive_R105831,,https://www.linkedin.com/jobs/view/4414654315,2026-05-14,26,26 applicants,-77,matched,title,2026-09-19,2026-09-17T13:05:10,2026-09-26,,135,startDate+linkedin,true,0,,,,Regular,Market (MA)/Sales (SA),2026-05-14,title,false,,,,,,
+R107764,Overseas Growth Operations Specialist,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-14,74,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
 
 What the Role Entails
 We're looking for an Overseas Growth Operations Specialist based in Palo Alto, CA to deliver frontier AI trend insights and drive go-to-market operations for an AI Agent product across North America.
@@ -1318,8 +1791,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3433,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Overseas-Growth-Operations-Specialist_R107764,,https://www.linkedin.com/jobs/view/4440872738,2026-07-15,80,80 applicants,1,matched,title,2026-09-19,2026-09-17T13:05:38,2026-09-19,,67,startDate,true,0,,,,Regular,Product/Project (PD)/Product Management (PDM),2026-07-14,,false,,,,,,
-R106333,"BD & Investment Manager, AI + Game Tech",Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3433,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Overseas-Growth-Operations-Specialist_R107764,,https://www.linkedin.com/jobs/view/4440872738,2026-07-15,80,80 applicants,1,matched,title,2026-09-19,2026-09-17T13:05:38,2026-09-26,,74,startDate,true,0,,,,Regular,Product/Project (PD)/Product Management (PDM),2026-07-14,,false,,,,,,
+R106333,"BD & Investment Manager, AI + Game Tech",Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,86,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
 Tencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.
 Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.
 Meanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.
@@ -1380,51 +1853,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",5719,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/BD---Investment-Manager--AI---Game-Tech_R106333-1,,https://www.linkedin.com/jobs/view/4414638687,2026-05-14,89,89 applicants,-49,matched,title,2026-09-19,2026-09-17T13:05:41,2026-09-19,,128,startDate+linkedin,true,1,,,,Regular,Tencent Global/Business Management,2026-05-14,title,false,,,,,,
-R107495,Business Development Manager,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
-Tencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.
-Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.
-Meanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.
-
-What the Role Entails
-
-Tencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.Meanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.
-
-Job Responsibilities:
-
-1. Spearhead the development and establishment of robust relationships with major gaming partners in the US market, to support Tencent's global expansion.
-
-2. Collaborate closely with cross-functional teams and internal stakeholders to drive business insights and key objectives, such as developing go-to-market plans and providing comprehensive support for games at every stage of their life cycle.
-
-3. Proactively identify new business opportunities and emerging trends for the leadership team, leveraging market insights and data analytics to evaluate proposals related to innovative distribution methods, growth initiatives, product and monetization strategies, and cutting-edge technological advancements.
-
-4. Lead negotiations and execute partnership and licensing agreements with gaming partners, ensuring alignment with Tencent's strategic goals and objectives, and fostering long-term partnerships that drive mutual growth and success.
-
-Who We Look For
-
-1. Bachelor degree or above.
-
-2. 10+ years business development working experience or gaming related field.
-
-3. Passionate, committed, self-starter with high level of initiative, energy, ownership, and urgency, with a sincerely willingness to learn from global team members at all levels.
-
-4. Team player with outstanding written and oral communication skills. Comfortable with handling ambiguity and collaborating across different functional teams and departments.
-
-5. Proficient in spoken and written English. Fluency in Mandarin Chinese is highly preferred.
-
-Location State(s)
-
-US-California-Palo Alto
-
-The expected base pay range for this position in the location(s) listed above is $95,900.00 to $223,100.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.
-Employees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.
-Subject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.
-Your benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.
-
-Equal Employment Opportunity at Tencent
-
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4354,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Business-Development-Manager_R107495,,https://www.linkedin.com/jobs/view/4417392101,2026-05-20,88,88 applicants,-43,matched,title,2026-09-19,2026-09-17T13:05:06,2026-09-19,,122,startDate+linkedin,true,0,,,,Regular,Market (MA)/Sales (SA),2026-05-20,title,false,,,,,,
-R107692,Financial Management and Analysis,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",5719,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/BD---Investment-Manager--AI---Game-Tech_R106333-1,,https://www.linkedin.com/jobs/view/4414638687,2026-05-14,89,89 applicants,-49,matched,title,2026-09-19,2026-09-17T13:05:41,2026-09-26,,135,startDate+linkedin,true,1,,,,Regular,Tencent Global/Business Management,2026-05-14,title,false,,,,,,
+R107692,Financial Management and Analysis,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,86,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,1,"Business Unit
 At Tencent Finance, we are deeply committed to fostering the professional growth of our staff through tailored finance training, mentorship programs, job rotation initiatives, and support for finance professional certifications. Recognized as an approved employer by esteemed organizations like ACCA, HKICPA, CIMA, CPA Australia, and CA, and certified accredited trainer with the Singapore Accountancy Commission, we provide comprehensive resources and guidance to ensure our employees remain at the forefront of the rapidly evolving finance landscape. Whether you're a recent graduate or an experienced hire, we empower you to acquire and maintain professional qualifications, enhancing your credibility and competence in the finance domain while keeping you competitive in the ever-changing industry.
 
 What the Role Entails
@@ -1474,8 +1904,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4621,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Financial-Management-and-Analysis_R107692-1,,https://www.linkedin.com/jobs/view/4432485736,2026-06-24,200,Over 200 applicants,-8,matched,title,2026-09-19,2026-09-17T13:05:31,2026-09-19,,87,startDate+linkedin,true,1,,,,Regular,Specialty (SC)/Finance (FN),2026-06-24,title,true,,,,,,
-R107693,Financial Management and Analysis,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,1,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4621,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Financial-Management-and-Analysis_R107692-1,,https://www.linkedin.com/jobs/view/4432485736,2026-06-24,200,Over 200 applicants,-8,matched,title,2026-09-19,2026-09-17T13:05:31,2026-09-26,,94,startDate+linkedin,true,1,,,,Regular,Specialty (SC)/Finance (FN),2026-06-24,title,true,,,,,,
+R107693,Financial Management and Analysis,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,86,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,1,"Business Unit
 At Tencent Finance, we are deeply committed to fostering the professional growth of our staff through tailored finance training, mentorship programs, job rotation initiatives, and support for finance professional certifications. Recognized as an approved employer by esteemed organizations like ACCA, HKICPA, CIMA, CPA Australia, and CA, and certified accredited trainer with the Singapore Accountancy Commission, we provide comprehensive resources and guidance to ensure our employees remain at the forefront of the rapidly evolving finance landscape. Whether you're a recent graduate or an experienced hire, we empower you to acquire and maintain professional qualifications, enhancing your credibility and competence in the finance domain while keeping you competitive in the ever-changing industry.
 
 What the Role Entails
@@ -1531,112 +1961,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4806,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Financial-Management-and-Analysis_R107693-1,,https://www.linkedin.com/jobs/view/4432878076,2026-06-24,46,46 applicants,-8,matched,title,2026-09-19,2026-09-17T13:05:30,2026-09-19,,87,startDate+linkedin,true,1,,,,Regular,Specialty (SC)/Finance (FN),2026-06-24,title,false,,,,,,
-R107344,"Game Research & Development Intern, Engine Research",Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Los Angeles,1,US-California-Los Angeles,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
-LIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.
-
-About the Hiring Team
-Lightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.
-
-What the Role Entails
-
-Working with scientists to research and develop advanced techniques in the following topics:
-
-• 3D geometric learning,
-
-• Re-meshing and UV optimization,
-
-• Physically-based animation and simulation
-
-• Machine learning for computer graphics
-
-• Motion planning in virtual city
-
-• Character locomotion and control
-
-• realistic image synthesis and real-time rendering techniques
-
-• Researching and developing tools and pipelines to facilitate the use of technologies in the game development environment
-
-Who We Look For
-
-• Strong coding skills in one of following programming languages: C++, python, TensorFlow/Torch
-
-• Solid knowledge in calculus, linear algebra, basic numerical analysis
-
-• A strong sense of responsibility and good communication skills
-
-Plus:
-
-• Graduate students in a master or Ph.D. level program
-
-• Publications on computer graphics/vision, machine learning, and robotics
-
-• Familiarity with game engine, graphics APIs, and GPU programming
-
-Location State(s)
-
-US-California-Los Angeles
-
-The expected base pay range for this position in the location(s) listed above is $28.27 to $60.00 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
-This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
-
-Equal Employment Opportunity at Tencent
-
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",2563,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Los-Angeles/Game-Research---Development-Intern--Engine-Research_R107344-1,,https://www.linkedin.com/jobs/view/4414650441,2026-05-14,200,Over 200 applicants,-49,matched,title,2026-09-19,2026-09-17T13:07:33,2026-09-19,,128,startDate+linkedin,true,1,,,,Intern (Fixed Term),Technical (TE)/Technical Research and Development (TRD),2026-05-14,title,true,,,,,,
-R107363,"Game Research & Development Intern, Engine Research",Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-Washington-Bellevue,1,US-Washington-Bellevue,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
-LIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.
-
-About the Hiring Team
-Lightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.
-
-What the Role Entails
-
-Working with scientists to research and develop advanced techniques in the following topics:
-
-• 3D geometric learning,
-
-• Re-meshing and UV optimization,
-
-• Physically-based animation and simulation
-
-• Machine learning for computer graphics
-
-• Motion planning in virtual city
-
-• Character locomotion and control
-
-• realistic image synthesis and real-time rendering techniques
-
-• Researching and developing tools and pipelines to facilitate the use of technologies in the game development environment
-
-Who We Look For
-
-• Strong coding skills in one of following programming languages: C++, python, TensorFlow/Torch
-
-• Solid knowledge in calculus, linear algebra, basic numerical analysis
-
-• A strong sense of responsibility and good communication skills
-
-Plus:
-
-• Graduate students in a master or Ph.D. level program
-
-• Publications on computer graphics/vision, machine learning, and robotics
-
-• Familiarity with game engine, graphics APIs, and GPU programming
-
-Location State(s)
-
-US-Washington-Bellevue
-
-The expected base pay range for this position in the location(s) listed above is $28.27 to $60.00 per hour. Actual pay may vary depending on job-related knowledge, skills, and experience.
-This position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.
-
-Equal Employment Opportunity at Tencent
-
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",2560,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-Washington-Bellevue/Game-Research---Development-Intern--Engine-Research_R107363-1,,https://www.linkedin.com/jobs/view/4417391110,2026-05-20,200,Over 200 applicants,-43,matched,title,2026-09-19,2026-09-17T13:07:35,2026-09-19,,122,startDate+linkedin,true,1,,,,Intern (Fixed Term),Technical (TE)/Technical Research and Development (TRD),2026-05-20,title,true,,,,,,
-R106623,Hunyuan Multimodal Algorithm Researcher (Omni-Modal)​​,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4806,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Financial-Management-and-Analysis_R107693-1,,https://www.linkedin.com/jobs/view/4432878076,2026-06-24,46,46 applicants,-8,matched,title,2026-09-19,2026-09-17T13:05:30,2026-09-26,,94,startDate+linkedin,true,1,,,,Regular,Specialty (SC)/Finance (FN),2026-06-24,title,false,,,,,,
+R106623,Hunyuan Multimodal Algorithm Researcher (Omni-Modal)​​,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,86,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
 Technology Engineering Group (TEG) is responsible for supporting the company and its business groups on technology and operational platforms, as well as the construction and operation of R&D management and data centers, TEG provides users with a full range of customer services. As the operator of the largest networking, devices, and data center in Asia,TEG also leads the Tencent Technology Committee in strengthening infrastructure R&D through internal and distributed open source collaboration, constructing new platforms and supporting business innovation.
 
 What the Role Entails
@@ -1672,8 +1998,8 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3641,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Hunyuan-Multimodal-Algorithm-Researcher--Omni-Modal---_R106623,,https://www.linkedin.com/jobs/view/4414637779,2026-05-14,32,32 applicants,-49,matched,title,2026-09-19,2026-09-17T13:05:16,2026-09-19,,128,startDate+linkedin,true,0,,,,Regular,Technical (TE)/Technical Research (TRH),2026-05-14,title,false,12,220000,220000,223500,title,Hunyuan Multimodal Algorithm Researcher (Omni-Modal)
-R107051,Hunyuan Multimodal Algorithm Researcher Intern(Omni-Modal)​​,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,5,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3641,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Hunyuan-Multimodal-Algorithm-Researcher--Omni-Modal---_R106623,,https://www.linkedin.com/jobs/view/4414637779,2026-05-14,32,32 applicants,-49,matched,title,2026-09-19,2026-09-17T13:05:16,2026-09-26,,135,startDate+linkedin,true,0,,,,Regular,Technical (TE)/Technical Research (TRH),2026-05-14,title,false,12,220000,220000,223500,title,Hunyuan Multimodal Algorithm Researcher (Omni-Modal)
+R107051,Hunyuan Multimodal Algorithm Researcher Intern(Omni-Modal)​​,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,86,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,5,"Business Unit
 Technology Engineering Group (TEG) is responsible for supporting the company and its business groups on technology and operational platforms, as well as the construction and operation of R&D management and data centers, TEG provides users with a full range of customer services. As the operator of the largest networking, devices, and data center in Asia,TEG also leads the Tencent Technology Committee in strengthening infrastructure R&D through internal and distributed open source collaboration, constructing new platforms and supporting business innovation.
 
 What the Role Entails
@@ -1705,8 +2031,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3171,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Hunyuan-Multimodal-Algorithm-Researcher-Intern-Omni-Modal---_R107051,,,,,,,no_match,,2026-09-19,,2026-09-19,,79,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Technical Research (TRH),2026-07-02,,false,,,,,,
-R106650,Hunyuan Multimodal Algorithm Researcher Intern(Omni-Modal)​​,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,5,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3171,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Hunyuan-Multimodal-Algorithm-Researcher-Intern-Omni-Modal---_R107051,,,,,,,not_checked,,2026-09-19,,2026-09-26,,86,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Technical Research (TRH),2026-07-02,,,,,,,,
+R106650,Hunyuan Multimodal Algorithm Researcher Intern(Omni-Modal)​​,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,86,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,5,"Business Unit
 Technology Engineering Group (TEG) is responsible for supporting the company and its business groups on technology and operational platforms, as well as the construction and operation of R&D management and data centers, TEG provides users with a full range of customer services. As the operator of the largest networking, devices, and data center in Asia,TEG also leads the Tencent Technology Committee in strengthening infrastructure R&D through internal and distributed open source collaboration, constructing new platforms and supporting business innovation.
 
 What the Role Entails
@@ -1738,8 +2064,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3126,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Hunyuan-Multimodal-Algorithm-Researcher-intern-Omni-Modal---_R106650,,,,,,,no_match,,2026-09-19,,2026-09-19,,79,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Technical Research (TRH),2026-07-02,,false,,,,,,
-R107331,Multimedia development intern,Tencent,Tencent Cloud LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3126,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Hunyuan-Multimodal-Algorithm-Researcher-intern-Omni-Modal---_R106650,,,,,,,not_checked,,2026-09-19,,2026-09-26,,86,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Technical Research (TRH),2026-07-02,,,,,,,,
+R107331,Multimedia development intern,Tencent,Tencent Cloud LLC,Full time,Posted 30+ Days Ago,2026-07-02,86,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,44e07daec6221000dd21974364a90000,0,"Business Unit
 Cloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.
 
 What the Role Entails
@@ -1764,57 +2090,8 @@ This position will be eligible for 1 hour of paid sick leave for every 30 hours 
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",1891,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Multimedia-development-intern_R107331,,,,,,,no_match,,2026-09-19,,2026-09-19,,79,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Technical Research and Development (TRD),2026-07-02,,false,,,,,,
-R106961,"Senior Manager, Strategic & Business Development",Tencent,Proxima Beta U.S. LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,3,US-California-Palo Alto; US-Washington-Bellevue; US-California-Los Angeles,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,5,"Business Unit
-Tencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.
-Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 201 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.
-Meanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.
-
-What the Role Entails
-
-Job Responsibilities:
-
-Strategic Planning and Execution
-
-• Develop overseas market expansion strategies, focusing on areas such as AI-powered gaming and gaming-driven AI technology iteration
-
-• Analyze the dynamics of the AI gaming market to assist management in formulating AI gaming-related strategies
-
-Business Development and Resource Integration
-
-• Expand and maintain key industry contacts overseas, including game developers, publishing platforms, and AI technology companies
-
-• Drive high-value partnership negotiations and facilitate collaboration in technology licensing, co-development, and channel distribution
-
-• Provide essential overseas business strategy support to internal and cross-functional teams, including overseas resource planning, analyst-led market research, and regional/industry goal setting
-
-Who We Look For
-
-• 3+ years of experience in overseas business, strategy, or business development, with experience focused on the AI or gaming industry
-
-• Experience at the intersection of both fields is preferred
-
-• Established overseas industry network with a proven track record of successful collaborations in game publishing, AI technology partnerships, or overseas capital ventures
-
-• Proficient in overseas market analysis and business modeling, capable of conducting independent industry research, competitive benchmarking, and strategic planning
-
-• Excellent negotiation, cross-cultural communication, and project management skills
-
-• Deep understanding of AI technologies (e.g., Generative AI, Reinforcement Learning, content generation) and the gaming industry chain (R&D, publishing, operations, community)
-
-Location State(s)
-
-US-California-Los Angeles, US-California-Palo Alto, US-Washington-Bellevue
-
-The expected base pay range for this position in the location(s) listed above is $106,900.00 to $200,600.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.
-Employees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.
-Subject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.
-Your benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.
-
-Equal Employment Opportunity at Tencent
-
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3800,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-Manager--Strategic---Business-Development_R106961,,https://www.linkedin.com/jobs/view/4389292872,2026-03-23,91,91 applicants,-101,matched,title,2026-09-19,2026-09-17T13:05:39,2026-09-19,,180,startDate+linkedin,true,0,,,,Regular,Market (MA)/Sales (SA),2026-03-23,title,false,,,,,,
-R107333,Sr. Cloud AI Infrastructure Engineer,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,79,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",1891,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Multimedia-development-intern_R107331,,,,,,,not_checked,,2026-09-19,,2026-09-26,,86,startDate,true,0,,,,Intern (Fixed Term),Technical (TE)/Technical Research and Development (TRD),2026-07-02,,,,,,,,
+R107333,Sr. Cloud AI Infrastructure Engineer,Tencent,Tencent America LLC,Full time,Posted 30+ Days Ago,2026-07-02,86,US-California-Palo Alto,1,US-California-Palo Alto,false,,United States of America,4da95961bb2b100096f4f2d4a8460000,0,"Business Unit
 Cloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.
 
 What the Role Entails
@@ -1854,4 +2131,4 @@ Your benefits may be adjusted to reflect your location, employment status, durat
 
 Equal Employment Opportunity at Tencent
 
-As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4001,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Sr-Cloud-AI-Infrastructure-Engineer_R107333,,https://www.linkedin.com/jobs/view/4414658192,2026-05-14,25,among first 25,-49,matched,title,2026-09-19,2026-09-17T13:05:11,2026-09-19,,128,startDate+linkedin,true,0,,,,Regular,Technical (TE)/Technical Research and Development (TRD),2026-05-14,title,true,,,,,,
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",4001,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Sr-Cloud-AI-Infrastructure-Engineer_R107333,,https://www.linkedin.com/jobs/view/4414658192,2026-05-14,25,among first 25,-49,matched,title,2026-09-19,2026-09-17T13:05:11,2026-09-26,,135,startDate+linkedin,true,0,,,,Regular,Technical (TE)/Technical Research and Development (TRD),2026-05-14,title,true,,,,,,

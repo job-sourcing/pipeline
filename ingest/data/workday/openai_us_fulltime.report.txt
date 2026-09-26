@@ -1,11 +1,11 @@
-rows: 659 (unique reqIds: 659)
-details merged: 659
-descriptions present: 659
-locations enumerated (not 'N Locations'): 659
+rows: 660 (unique reqIds: 660)
+details merged: 660
+descriptions present: 660
+locations enumerated (not 'N Locations'): 660
 startDate present: 0
-signals: matched=327 no_match=332 blocked=0 not_checked=0
-location entries total (sum nLocations): 879
+signals: matched=320 no_match=339 blocked=0 not_checked=1
+location entries total (sum nLocations): 880
 similar-job edges: 0
-facet-tagged rows: workerSubType=0 jobFamilyGroup=659 (from facet_tags.jsonl)
-facet tag coverage: 659/659 rows (0 untagged)
-h1b wage bands: 174/659 rows banded (0 title+state, 174 title-only) from 239 LCA filings → openai_us_fulltime.h1b_lca.csv
+facet-tagged rows: workerSubType=0 jobFamilyGroup=660 (from facet_tags.jsonl)
+facet tag coverage: 660/660 rows (0 untagged)
+h1b wage bands: 186/660 rows banded (0 title+state, 186 title-only) from 380 LCA filings → openai_us_fulltime.h1b_lca.csv

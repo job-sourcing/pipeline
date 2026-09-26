@@ -1,11 +1,11 @@
-rows: 467 (unique reqIds: 467)
-details merged: 467
-descriptions present: 467
-locations enumerated (not 'N Locations'): 467
+rows: 455 (unique reqIds: 455)
+details merged: 455
+descriptions present: 455
+locations enumerated (not 'N Locations'): 455
 startDate present: 0
-signals: matched=289 no_match=178 blocked=0 not_checked=0
-location entries total (sum nLocations): 590
+signals: matched=285 no_match=170 blocked=0 not_checked=0
+location entries total (sum nLocations): 574
 similar-job edges: 0
-facet-tagged rows: workerSubType=0 jobFamilyGroup=467 (from facet_tags.jsonl)
-facet tag coverage: 467/467 rows (0 untagged)
-h1b wage bands: 57/467 rows banded (0 title+state, 57 title-only) from 380 LCA filings → anthropic_us_fulltime.h1b_lca.csv
+facet-tagged rows: workerSubType=0 jobFamilyGroup=455 (from facet_tags.jsonl)
+facet tag coverage: 455/455 rows (0 untagged)
+h1b wage bands: 55/455 rows banded (0 title+state, 55 title-only) from 380 LCA filings → anthropic_us_fulltime.h1b_lca.csv

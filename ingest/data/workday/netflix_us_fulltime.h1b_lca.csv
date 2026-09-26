@@ -1,4 +1,426 @@
 ﻿caseNumber,caseStatus,caseSubmitted,decisionDate,employerName,jobTitle,socCode,socTitle,fullTimePosition,wageFrom,wageTo,wageUnit,prevailingWage,pwUnit,worksiteCity,worksiteState,worksitePostalCode,annualizedWage,sourceFile
+I-200-22010-820251,Certified - Withdrawn,,2024-07-18T00:00:00,"Netflix, Inc.",Senior Software Engineer,15-1132.00,"Software Developers, Applications",Y,184040,,Year,162510,Year,Kirkland,WA,98033,184040,FY2024_Q4
+I-200-22180-322419,Certified - Withdrawn,,2024-09-19T00:00:00,"Netflix, Inc.",Senior Software Engineer,15-1133.00,"Software Developers, Systems Software",Y,184080,,Year,184080,Year,Los Gatos,CA,95032,184080,FY2024_Q4
+I-200-22214-392000,Certified - Withdrawn,,2024-09-20T00:00:00,"Netflix, Inc.",Product Manager - Device Platforms,15-1211.00,Computer Systems Analysts,Y,166379,,Year,166379,Year,Los Gatos,CA,95032,166379,FY2024_Q4
+I-200-22284-522345,Certified - Withdrawn,,2024-09-24T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,192941,,Year,192941,Year,Los Gatos,CA,95032,192941,FY2024_Q4
+I-200-23047-781650,Certified - Withdrawn,,2024-07-12T00:00:00,"Netflix, Inc.",Software Engineer ,15-1252.00,Software Developers,Y,192941,,Year,192941,Year,Los Gatos,CA,95032,192941,FY2024_Q4
+I-200-23228-268599,Certified - Withdrawn,,2024-07-11T00:00:00,"Netflix, Inc.",Distributed Systems Engineer,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-23229-271410,Certified - Withdrawn,,2024-09-19T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-23307-477511,Certified - Withdrawn,,2024-07-11T00:00:00,"Netflix, Inc.",Analytics Engineer,15-2041.00,Statisticians,Y,183206,,Year,183206,Year,Los Gatos,CA,95032,183206,FY2024_Q4
+I-200-23356-589720,Certified - Withdrawn,,2024-07-02T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-24037-698812,Certified - Withdrawn,,2024-07-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-24143-022578,Certified - Withdrawn,,2024-08-15T00:00:00,"Netflix, Inc.",RESEARCH SCIENTIST,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-24177-144228,Certified,,2024-07-01T00:00:00,"Netflix, Inc.","ASSOCIATE, FS&A, PRODUCT",15-2031.00,Operations Research Analysts,Y,174117,,Year,174117,Year,Los Gatos,CA,95032,174117,FY2024_Q4
+I-200-24178-151713,Certified,,2024-07-03T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,146744,,Year,146744,Year,Los Angeles,CA,90028,146744,FY2024_Q4
+I-200-24178-151763,Certified,,2024-07-03T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-24180-158929,Certified,,2024-07-08T00:00:00,"Netflix, Inc.",ENGINEERING MANAGER,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-24180-159112,Certified,,2024-07-08T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,283442,,Year,169229,Year,Jersey City,NJ,07302,283442,FY2024_Q4
+I-200-24180-159485,Certified,,2024-07-08T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-24180-161049,Certified,,2024-07-08T00:00:00,"Netflix, Inc.",Technical Program Manager,15-1299.09,Information Technology Project Managers,Y,210704,,Year,142126,Year,Renton,WA,98057,210704,FY2024_Q4
+I-200-24180-161600,Certified,,2024-07-08T00:00:00,"Netflix, Inc.",Research Engineer,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-24181-162092,Certified,,2024-07-08T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-24181-162125,Certified,,2024-07-08T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2024_Q4
+I-200-24185-174528,Certified,,2024-07-11T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24193-190637,Certified,,2024-07-18T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24194-191543,Certified,,2024-07-18T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,257421,Year,Los Gatos,CA,95032,257421,FY2024_Q4
+I-200-24199-204092,Certified,,2024-07-24T00:00:00,"Netflix, Inc.","Associate, F&S, Plans and Pricing",15-2031.00,Operations Research Analysts,Y,156770,,Year,119392,Year,Los Angeles,CA,90028,156770,FY2024_Q4
+I-200-24199-204107,Certified,,2024-07-24T00:00:00,"Netflix, Inc.","Associate, F&S, Plans and Pricing",13-1111.00,Management Analysts,Y,191464,,Year,137114,Year,Los Angeles,CA,90028,191464,FY2024_Q4
+I-200-24199-204241,Certified,,2024-07-24T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Seattle,WA,98109,226158,FY2024_Q4
+I-200-24199-204253,Certified,,2024-07-24T00:00:00,"Netflix, Inc.",TECHNICAL SUPPORT ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,San Jose,CA,95134,226158,FY2024_Q4
+I-200-24200-204263,Certified,,2024-07-24T00:00:00,"Netflix, Inc.",TV UI Engineer,15-1252.00,Software Developers,Y,226158,,Year,155709,Year,Leander,TX,78641,226158,FY2024_Q4
+I-200-24200-204291,Certified,,2024-07-24T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,179982,,Year,179982,Year,New York,NY,10003,179982,FY2024_Q4
+I-200-24200-205612,Certified,,2024-07-25T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,Hoboken,NJ,07030,226158,FY2024_Q4
+I-200-24204-213880,Certified,,2024-07-29T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24206-218811,Certified,,2024-07-31T00:00:00,"Netflix, Inc.","Rights Analyst, Major Studios Licensing",13-1111.00,Management Analysts,Y,137114,,Year,137114,Year,Los Angeles,CA,90028,137114,FY2024_Q4
+I-200-24206-218824,Certified,,2024-07-31T00:00:00,"Netflix, Inc.",Security Engineer,15-1212.00,Information Security Analysts,Y,202134,,Year,202134,Year,Los Gatos,CA,95032,202134,FY2024_Q4
+I-200-24206-219298,Certified,,2024-07-31T00:00:00,"Netflix, Inc.",Data Engineer,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2024_Q4
+I-200-24207-222652,Certified,,2024-08-01T00:00:00,"Netflix, Inc.",RESEARCH ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24208-224933,Certified,,2024-08-02T00:00:00,"Netflix, Inc.",Product Manager,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,226034,Year,Los Angeles,CA,90028,294299,FY2024_Q4
+I-200-24208-226723,Withdrawn,,2024-07-29T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,,FY2024_Q4
+I-200-24208-226741,Certified,,2024-08-02T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24208-226748,Certified,,2024-08-02T00:00:00,Netflix Global LLC,SR. MARKET AND ECONOMY ANALYST,13-1161.00,Market Research Analysts and Marketing Specialists,Y,178110,,Year,77022,Year,Tallahassee,FL,32312,178110,FY2024_Q4
+I-200-24216-242904,Certified,,2024-08-09T00:00:00,"Netflix, Inc.","Counsel, Advertising Legal Affairs",23-1011.00,Lawyers,Y,330554,,Year,272418,Year,New York,NY,10003,330554,FY2024_Q4
+I-200-24221-252950,Certified,,2024-08-14T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Bellevue,WA,98007,226158,FY2024_Q4
+I-200-24221-254459,Certified,,2024-08-15T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24222-258980,Certified,,2024-08-16T00:00:00,"Netflix, Inc.","ASSOCIATE, F&S, PRODUCTS AND TECHNOLOGY",15-2031.00,Operations Research Analysts,Y,156770,,Year,156770,Year,Los Gatos,CA,95032,156770,FY2024_Q4
+I-200-24222-259007,Certified,,2024-08-16T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Bellevue,WA,98006,226158,FY2024_Q4
+I-200-24222-259024,Certified,,2024-08-16T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24227-265626,Certified,,2024-08-20T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2024_Q4
+I-200-24228-270155,Certified,,2024-08-22T00:00:00,"Netflix, Inc.","SENIOR MANAGER, PRODUCT MARKETING",11-2021.00,Marketing Managers,Y,280987,,Year,280987,Year,Los Gatos,CA,95032,280987,FY2024_Q4
+I-200-24229-274736,Certified,,2024-08-23T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24232-278127,Certified,,2024-08-26T00:00:00,"Netflix, Inc.",Solutions Architect,11-3031.00,Financial Managers,Y,286728,,Year,286728,Year,Los Gatos,CA,95032,286728,FY2024_Q4
+I-200-24233-281511,Certified,,2024-08-27T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2024_Q4
+I-200-24233-281533,Certified,,2024-08-27T00:00:00,"Netflix, Inc.","SENIOR ANALYST, TRANSFER PRICING",13-1111.00,Management Analysts,Y,191464,,Year,191464,Year,Los Gatos,CA,95032,191464,FY2024_Q4
+I-200-24233-281535,Certified,,2024-08-27T00:00:00,"Netflix, Inc.","SENIOR ANALYST, TRANSFER PRICING",13-1161.00,Market Research Analysts and Marketing Specialists,Y,178110,,Year,178110,Year,Los Gatos,CA,95032,178110,FY2024_Q4
+I-200-24233-281544,Certified,,2024-08-27T00:00:00,"Netflix, Inc.","SENIOR ANALYST, TRANSFER PRICING",13-2051.00,Financial and Investment Analysts,Y,162926,,Year,162926,Year,Los Gatos,CA,95032,162926,FY2024_Q4
+I-200-24233-281555,Certified,,2024-08-27T00:00:00,"Netflix, Inc.","DIRECTOR, PRODUCT & TECH LEGAL (CONSUMER)",23-1011.00,Lawyers,Y,330554,,Year,330554,Year,Los Gatos,CA,95032,330554,FY2024_Q4
+I-200-24234-284665,Certified,,2024-08-28T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24234-285020,Certified,,2024-08-28T00:00:00,"Netflix, Inc.",SECURITY SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,117915,Year,Tallahassee,FL,32312,226158,FY2024_Q4
+I-200-24235-285049,Certified,,2024-08-28T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24235-285061,Certified,,2024-08-28T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24235-286653,Certified,,2024-08-29T00:00:00,Netflix Global LLC,Data Analyst,15-2051.00,Data Scientists,Y,151694,,Year,151694,Year,Los Angeles,CA,90028,151694,FY2024_Q4
+I-200-24235-287113,Certified,,2024-08-29T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,SEATTLE,WA,98125,226158,FY2024_Q4
+I-200-24235-288089,Certified,,2024-08-29T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2024_Q4
+I-200-24236-289977,Certified,,2024-08-30T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,179982,,Year,179982,Year,New York,NY,10003,179982,FY2024_Q4
+I-200-24236-290263,Certified,,2024-08-30T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24236-291085,Certified,,2024-08-30T00:00:00,"Netflix, Inc.",MACHINE LEARNING ENGINEER,15-2051.00,Data Scientists,Y,211536,,Year,183581,Year,Bothell,WA,98021,211536,FY2024_Q4
+I-200-24236-291219,Certified,,2024-08-30T00:00:00,Netflix Global LLC,Senior Technical Sound Designer,15-1255.01,Video Game Designers,Y,217610,,Year,137550,Year,Canoga Park,CA,91303,217610,FY2024_Q4
+I-200-24236-291220,Certified,,2024-08-30T00:00:00,Netflix Global LLC,Senior Technical Sound Designer,15-1255.00,Web and Digital Interface Designers,Y,217610,,Year,137550,Year,Canoga Park,CA,91303,217610,FY2024_Q4
+I-200-24241-300362,Certified,,2024-09-05T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24241-301118,Certified,,2024-09-05T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,176134,,Year,176134,Year,Los Angeles,CA,90028,176134,FY2024_Q4
+I-200-24242-303074,Withdrawn,,2024-09-03T00:00:00,"Netflix, Inc.",UI Engineer,15-1252.00,Software Developers,Y,226158,,Year,149781,Year,FLOWER MOUND,TX,75028,,FY2024_Q4
+I-200-24244-307833,Certified,,2024-09-09T00:00:00,"Netflix, Inc.",DATA SCIENTIST,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2024_Q4
+I-200-24247-310121,Certified,,2024-09-10T00:00:00,"Netflix, Inc.",UI Engineer,15-1252.00,Software Developers,Y,226158,,Year,149781,Year,FLOWER MOUND,TX,75028,226158,FY2024_Q4
+I-200-24248-312131,Certified,,2024-09-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24249-316421,Certified,,2024-09-12T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24249-316540,Certified,,2024-09-12T00:00:00,"Netflix, Inc.",RESEARCH SCIENTIST,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,257421,Year,Los Gatos,CA,95032,257421,FY2024_Q4
+I-200-24250-318722,Certified,,2024-09-12T00:00:00,"Netflix, Inc.",User Interface Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2024_Q4
+I-200-24250-320031,Certified,,2024-09-13T00:00:00,"Netflix, Inc.",Solutions Support Engineer,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,Harrison,NJ,07029,226158,FY2024_Q4
+I-200-24260-340002,Certified,,2024-09-23T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Maple Valley,WA,98038,226158,FY2024_Q4
+I-200-24261-344612,Certified,,2024-09-24T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24261-344656,Certified,,2024-09-24T00:00:00,"Netflix, Inc.",Technology Auditor,15-1253.00,Software Quality Assurance Analysts and Testers,Y,194875,,Year,194875,Year,Los Gatos,CA,95032,194875,FY2024_Q4
+I-200-24262-345184,Certified,,2024-09-24T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24262-348398,Certified,,2024-09-25T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24264-354949,Certified,,2024-09-27T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,176134,,Year,176134,Year,Los Angeles,CA,90028,176134,FY2024_Q4
+I-200-24264-354954,Certified,,2024-09-27T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2024_Q4
+I-200-24267-357251,Certified,,2024-09-30T00:00:00,"Netflix, Inc.","Manager, F&S, Product",13-1111.00,Management Analysts,Y,191464,,Year,191464,Year,Los Gatos,CA,95032,191464,FY2024_Q4
+I-203-24220-251466,Certified,,2024-08-14T00:00:00,Netflix Global LLC,Product Manager,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,251576,Year,Bellevue,WA,98004,294299,FY2024_Q4
+I-200-21361-788299,Certified - Withdrawn,,2024-12-10T00:00:00,"Netflix, Inc.",Senior Software Engineer,15-1133.00,"Software Developers, Systems Software",Y,184080,,Year,184080,Year,San Jose ,CA,95131,184080,FY2025_Q1
+I-200-22327-604403,Certified - Withdrawn,,2024-12-05T00:00:00,"Netflix Animation, LLC","Sr. Manager, Production Finance",11-3031.00,Financial Managers,Y,260000,,Year,195686,Year,BURBANK,CA,91504,260000,FY2025_Q1
+I-200-23234-283507,Certified - Withdrawn,,2024-10-02T00:00:00,"Netflix, Inc.","HRBP, DIRECTOR - INTERNAL STUDIOS/UCAN",11-3121.00,Human Resources Managers,Y,193232,,Year,193232,Year,Los Angeles,CA,90028,193232,FY2025_Q1
+I-200-23313-489263,Certified - Withdrawn,,2024-10-04T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,283442,,Year,144560,Year,Chicago,IL,60615,283442,FY2025_Q1
+I-200-24158-081639,Certified - Withdrawn,,2024-10-16T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2025_Q1
+I-200-24158-082100,Certified - Withdrawn,,2024-12-10T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,N,283442,,Year,283442,Year,Los Gatos,CA,95032,,FY2025_Q1
+I-200-24271-371148,Certified,,2024-10-04T00:00:00,"Netflix, Inc.",Solutions Architect,13-1111.00,Management Analysts,Y,191464,,Year,191464,Year,Los Gatos,CA,95032,191464,FY2025_Q1
+I-200-24271-371919,Certified - Withdrawn,,2024-11-12T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24281-390113,Certified,,2024-10-15T00:00:00,"Netflix, Inc.",Security Engineer,15-1212.00,Information Security Analysts,Y,202134,,Year,202134,Year,Los Gatos,CA,95032,202134,FY2025_Q1
+I-200-24281-390181,Certified,,2024-10-15T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24281-391095,Certified,,2024-10-15T00:00:00,"Netflix, Inc.",Senior Product Designer,15-1255.00,Web and Digital Interface Designers,Y,217610,,Year,217610,Year,Los Gatos,CA,95032,217610,FY2025_Q1
+I-200-24283-397218,Certified,,2024-10-17T00:00:00,"Netflix, Inc.",UI Engineer,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,New York,NY,10023,226158,FY2025_Q1
+I-200-24283-397361,Certified,,2024-10-17T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24283-397372,Certified,,2024-10-17T00:00:00,"Netflix, Inc.","ANALYST, TAX OPERATIONS",13-2011.00,Accountants and Auditors,Y,146037,,Year,146037,Year,Los Gatos,CA,95032,146037,FY2025_Q1
+I-200-24284-399692,Certified,,2024-10-18T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24289-406974,Certified,,2024-10-22T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24291-415607,Certified,,2024-10-24T00:00:00,"Netflix, Inc.","SENIOR PRODUCT DESIGNER, ADS",15-1255.00,Web and Digital Interface Designers,Y,217610,,Year,217610,Year,Los Gatos,CA,95032,217610,FY2025_Q1
+I-200-24292-416495,Certified,,2024-10-25T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Santa Clara,CA,95054,226158,FY2025_Q1
+I-200-24295-421187,Certified,,2024-10-28T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24296-425035,Certified,,2024-10-29T00:00:00,"Netflix, Inc.","MANAGER, F&S, REVENUE ANALYTICS",13-1161.00,Market Research Analysts and Marketing Specialists,Y,178110,,Year,178110,Year,Los Gatos,CA,95032,178110,FY2025_Q1
+I-200-24296-425178,Certified,,2024-10-29T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24297-425538,Certified,,2024-10-29T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24297-427283,Certified,,2024-10-30T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24297-428102,Certified,,2024-10-30T00:00:00,"Netflix, Inc.",Engineering Manager,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,294299,Year,Los Gatos,CA,95032,294299,FY2025_Q1
+I-200-24297-428514,Certified,,2024-10-30T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Edmonds,WA,98026,226158,FY2025_Q1
+I-200-24299-432514,Certified,,2024-11-01T00:00:00,"Netflix, Inc.",DATA ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Bothell,WA,98012,226158,FY2025_Q1
+I-200-24302-438028,Certified,,2024-11-04T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24303-440897,Certified,,2024-11-05T00:00:00,"Netflix, Inc.",Engineering Manager,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,294299,Year,Los Gatos,CA,95032,294299,FY2025_Q1
+I-200-24304-441351,Certified,,2024-11-05T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24304-441356,Certified,,2024-11-05T00:00:00,"Netflix, Inc.",TECHNICAL PROGRAM MANAGER,11-3021.00,Computer and Information Systems Managers,Y,226034,,Year,226034,Year,Los Angeles,CA,90028,226034,FY2025_Q1
+I-200-24306-449020,Certified,,2024-11-08T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24307-449172,Certified,,2024-11-08T00:00:00,"Netflix, Inc.",SOLUTIONS ARCHITECT,15-2051.01,Business Intelligence Analysts,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2025_Q1
+I-200-24307-449179,Certified,,2024-11-08T00:00:00,"Netflix, Inc.","MANAGER, CORPORATE FP&A",13-2051.00,Financial and Investment Analysts,Y,171454,,Year,162926,Year,Los Gatos,CA,95032,171454,FY2025_Q1
+I-200-24307-449182,Certified,,2024-11-08T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,155709,Year,Leander,TX,78641,226158,FY2025_Q1
+I-200-24310-455783,Certified,,2024-11-13T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24311-457360,Withdrawn,,2024-11-06T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,176134,,Year,176134,Year,Burbank,CA,91504,,FY2025_Q1
+I-200-24311-457390,Certified,,2024-11-14T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,176134,,Year,176134,Year,Burbank,CA,91504,176134,FY2025_Q1
+I-200-24311-458255,Certified,,2024-11-14T00:00:00,"Netflix, Inc.",Analytics Engineer,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2025_Q1
+I-200-24312-458919,Certified,,2024-11-14T00:00:00,"Netflix, Inc.",DATA SCIENTIST,15-2051.00,Data Scientists,Y,211536,,Year,170373,Year,Jersey City,NJ,07310,211536,FY2025_Q1
+I-200-24312-458921,Certified,,2024-11-14T00:00:00,"Netflix, Inc.",ENGINEERING MANAGER,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,294299,Year,Los Gatos,CA,95032,294299,FY2025_Q1
+I-200-24317-470782,Certified,,2024-11-19T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Redmond,WA,98052,226158,FY2025_Q1
+I-200-24317-470811,Certified,,2024-11-19T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24318-471001,Certified,,2024-11-19T00:00:00,"Netflix, Inc.",ENGINEERING MANAGER,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,294299,Year,Los Gatos,CA,95032,294299,FY2025_Q1
+I-200-24318-472470,Certified,,2024-11-20T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24319-476637,Certified,,2024-11-21T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24320-476682,Certified,,2024-11-21T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,257421,Year,Los Gatos,CA,95032,257421,FY2025_Q1
+I-200-24320-476787,Certified,,2024-11-21T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24320-476793,Certified,,2024-11-21T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24323-482523,Certified,,2024-11-25T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24324-486388,Certified,,2024-11-26T00:00:00,"Netflix, Inc.",RESEARCH SCIENTIST,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,183414,Year,The Colony,TX,75056,257421,FY2025_Q1
+I-200-24326-491440,Certified,,2024-11-29T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,190486,,Year,190486,Year,Seattle,WA,98104,190486,FY2025_Q1
+I-200-24328-496105,Certified,,2024-12-02T00:00:00,"Netflix Global, LLC","PRODUCT MANAGER, ADS PLATFORM",11-2021.00,Marketing Managers,Y,236038,,Year,236038,Year,New YOrk,NY,10003,236038,FY2025_Q1
+I-200-24331-499672,Certified,,2024-12-03T00:00:00,"Netflix, Inc.",PRODUCT MANAGER,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,294299,Year,Los Gatos,CA,95032,294299,FY2025_Q1
+I-200-24332-504879,Certified - Withdrawn,,2024-12-23T00:00:00,"Netflix Global, LLC","VFX ARTIST, GAMES STUDIO",27-1014.00,Special Effects Artists and Animators,Y,161907,,Year,161907,Year,Los Angeles,CA,90028,161907,FY2025_Q1
+I-200-24332-505133,Certified,,2024-12-05T00:00:00,"Netflix, Inc.",Security Analytics Engineer,15-2051.00,Data Scientists,Y,151694,,Year,151694,Year,Los Angeles,CA,90028,151694,FY2025_Q1
+I-200-24332-505956,Certified,,2024-12-05T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24332-505979,Certified,,2024-12-05T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Kirkland,WA,98033,226158,FY2025_Q1
+I-200-24339-515695,Certified,,2024-12-10T00:00:00,"Netflix, Inc.",Distributed Systems Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24341-524005,Certified,,2024-12-13T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Seattle,WA,98109,226158,FY2025_Q1
+I-200-24347-536926,Certified,,2024-12-18T00:00:00,"Netflix, Inc.",SECURITY ANALYTICS ENGINEER,15-2051.00,Data Scientists,Y,151694,,Year,140109,Year,Dallas,TX,75287,151694,FY2025_Q1
+I-200-24355-564943,Certified,,2024-12-31T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q1
+I-200-24355-565167,Certified,,2024-12-31T00:00:00,"Netflix, Inc.",ANDROID AUTOMATION ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Lynnwood,WA,98087,226158,FY2025_Q1
+I-201-24306-448996,Certified,,2024-11-08T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,BELLEVUE,WA,98008,226158,FY2025_Q1
+I-203-24355-564533,Certified,,2024-12-31T00:00:00,"Netflix Global, LLC",GAME RELIABILITY MANAGER,15-1255.00,Web and Digital Interface Designers,Y,137550,,Year,137550,Year,Los Angeles,CA,90028,137550,FY2025_Q1
+I-200-24129-974350,Certified - Withdrawn,,2025-02-01T00:00:00,"Netflix, Inc.",Research Scientist,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2025_Q2
+I-200-24358-569156,Certified,,2025-01-02T00:00:00,"Netflix Global, LLC","VFX ARTIST, GAMES STUDIO",27-1014.00,Special Effects Artists and Animators,Y,134742,,Year,134742,Year,Los Angeles,CA,90028,134742,FY2025_Q2
+I-200-24362-573604,Certified,,2025-01-06T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-24362-574716,Certified,,2025-01-06T00:00:00,"Netflix, Inc.",DISTRIBUTED SYSTEMS ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-24362-574737,Certified,,2025-01-06T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,New York City,NY,10016,226158,FY2025_Q2
+I-200-24365-576471,Certified,,2025-01-07T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-24365-577748,Certified,,2025-01-07T00:00:00,"Netflix, Inc.",ANALYTICS ENGINEER,15-2031.00,Operations Research Analysts,Y,156770,,Year,156770,Year,Los Gatos,CA,95032,156770,FY2025_Q2
+I-200-25003-590759,Certified,,2025-01-10T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Kirkland,WA,98034,226158,FY2025_Q2
+I-200-25003-592966,Certified,,2025-01-13T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Sammamish,WA,98075,226158,FY2025_Q2
+I-200-25003-593504,Certified,,2025-01-13T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25004-594309,Certified,,2025-01-13T00:00:00,"Netflix, Inc.",UI ENGINEER,15-1252.00,Software Developers,Y,176134,,Year,176134,Year,Los Angeles,CA,90028,176134,FY2025_Q2
+I-200-25004-594454,Certified,,2025-01-13T00:00:00,"Netflix, Inc.",Engineering Manager,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,294299,Year,Los Gatos,CA,95032,294299,FY2025_Q2
+I-200-25007-599844,Certified,,2025-01-15T00:00:00,"Netflix, Inc.",Engineering Support Solutions Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25009-605848,Certified,,2025-01-16T00:00:00,"Netflix, Inc.",SECURITY SOFTWARE ENGINEER,15-1212.00,Information Security Analysts,Y,202134,,Year,150134,Year,Apex,NC,27502,202134,FY2025_Q2
+I-200-25009-608842,Certified,,2025-01-16T00:00:00,"Netflix, Inc.",Systems Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25011-611847,Certified,,2025-01-17T00:00:00,"Netflix, Inc.",Product Operations Lead,11-2021.00,Marketing Managers,Y,280987,,Year,280987,Year,Los Gatos,CA,95032,280987,FY2025_Q2
+I-200-25016-621819,Certified,,2025-01-23T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,226158,,Year,176134,Year,Rancho Palos Verdes,CA,90275,226158,FY2025_Q2
+I-200-25024-641693,Certified,,2025-01-31T00:00:00,"Netflix, Inc.",Capacity Planner,15-2051.01,Business Intelligence Analysts,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2025_Q2
+I-200-25024-641867,Certified,,2025-01-31T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,211536,,Year,148762,Year,Cambridge,MA,02138,211536,FY2025_Q2
+I-200-25035-663605,Certified,,2025-02-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25035-664180,Certified,,2025-02-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Seattle,WA,98104,226158,FY2025_Q2
+I-200-25037-669851,Certified,,2025-02-12T00:00:00,"Netflix, Inc.","Associate, F&S, Technology",15-2031.00,Operations Research Analysts,Y,156770,,Year,156770,Year,Los Gatos,CA,95032,156770,FY2025_Q2
+I-200-25037-669869,Certified,,2025-02-12T00:00:00,"Netflix, Inc.",Distributed Systems Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25042-685103,Certified,,2025-02-19T00:00:00,"Netflix, Inc.","Manager, Content Knowledge Graph",11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,294299,Year,Los Gatos,CA,95032,294299,FY2025_Q2
+I-200-25044-690412,Certified,,2025-02-21T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2025_Q2
+I-200-25044-692563,Certified,,2025-02-21T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2025_Q2
+I-200-25055-720261,Certified,,2025-03-03T00:00:00,"Netflix, Inc.",Product Manager,11-2021.00,Marketing Managers,Y,280987,,Year,280987,Year,Los Gatos,CA,95032,280987,FY2025_Q2
+I-200-25055-720432,Certified,,2025-03-03T00:00:00,"Netflix, Inc.",Engineering Support Solutions Engineer,15-1231.00,Computer Network Support Specialists,Y,130541,,Year,103376,Year,Chicago,IL,60657,130541,FY2025_Q2
+I-200-25055-720506,Certified,,2025-03-03T00:00:00,"Netflix, Inc.","Counsel, Consumer Product Legal",23-1011.00,Lawyers,Y,330554,,Year,330554,Year,Los Gatos,CA,95032,330554,FY2025_Q2
+I-200-25055-720541,Certified,,2025-03-03T00:00:00,"Netflix, Inc.",Senior Content Designer,27-3042.00,Technical Writers,Y,166587,,Year,166587,Year,Los Gatos,CA,95032,166587,FY2025_Q2
+I-200-25058-727810,Certified,,2025-03-05T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25064-747659,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25064-747708,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25064-747747,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Senior Accountant,13-2011.00,Accountants and Auditors,Y,113901,,Year,113901,Year,Los Angeles,CA,90028,113901,FY2025_Q2
+I-200-25064-747803,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,N,226158,,Year,226158,Year,Los Gatos,CA,95032,,FY2025_Q2
+I-200-25064-747838,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25064-747955,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Indirect Tax Analyst,13-2011.00,Accountants and Auditors,Y,146037,,Year,146037,Year,Los Gatos,CA,95032,146037,FY2025_Q2
+I-200-25064-747986,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25064-748042,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,149781,Year,McKinney,TX,75070,226158,FY2025_Q2
+I-200-25065-748663,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Engineering Support Solutions Engineer,15-1252.00,Software Developers,Y,226158,,Year,149781,Year,Miami,FL,33125,226158,FY2025_Q2
+I-200-25065-748680,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25065-748697,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Cloud Platform Site Reliability Engineer,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,New York,NY,10002,226158,FY2025_Q2
+I-200-25065-748714,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25065-748729,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25065-748751,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Analytics Engineer,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,San Jose,CA,95112,211536,FY2025_Q2
+I-200-25065-748759,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25065-748784,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Seattle,WA,98115,226158,FY2025_Q2
+I-200-25065-748794,Certified,,2025-03-12T00:00:00,"Netflix, Inc.","Senior Manager, CPS&O, Animation",15-2031.00,Operations Research Analysts,Y,156770,,Year,119392,Year,Los Angeles,CA,90028,156770,FY2025_Q2
+I-200-25065-748801,Certified,,2025-03-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25066-754423,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,102357,,Year,102357,Year,Los Angeles,CA,90028,102357,FY2025_Q2
+I-200-25066-754440,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q2
+I-200-25066-754449,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,126942,,Year,126942,Year,Los Angeles,CA,90028,126942,FY2025_Q2
+I-200-25066-754468,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,172931,,Year,172931,Year,Los Gatos,CA,95032,172931,FY2025_Q2
+I-200-25066-754483,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,176134,,Year,176134,Year,Los Angeles,CA,90028,176134,FY2025_Q2
+I-200-25066-754489,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25066-754498,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,159182,,Year,159182,Year,Los Gatos,CA,95032,159182,FY2025_Q2
+I-200-25066-754504,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,191922,,Year,191922,Year,Los Gatos,CA,95032,191922,FY2025_Q2
+I-200-25066-754519,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,197142,,Year,197142,Year,Los Angeles,CA,90028,197142,FY2025_Q2
+I-200-25066-754522,Certified,,2025-03-14T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,257421,Year,Los Gatos,CA,95032,257421,FY2025_Q2
+I-200-25071-767489,Certified,,2025-03-19T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25077-782828,Certified,,2025-03-24T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25079-789575,Certified,,2025-03-26T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q2
+I-200-25079-789609,Certified,,2025-03-26T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,New York,NY,10003,226158,FY2025_Q2
+I-201-25003-592692,Certified,,2025-01-13T00:00:00,"Netflix, Inc.",Senior Product Designer,15-1255.00,Web and Digital Interface Designers,Y,217610,,Year,217610,Year,Los Gatos,CA,95032,217610,FY2025_Q2
+I-201-25007-598651,Certified,,2025-01-14T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Seattle,WA,98104,226158,FY2025_Q2
+I-200-23192-181804,Certified - Withdrawn,,2025-06-02T00:00:00,"Netflix, Inc.",PRODUCT MANAGER,15-1299.09,Information Technology Project Managers,Y,210704,,Year,210704,Year,Los Gatos,CA,95032,210704,FY2025_Q3
+I-200-24047-725031,Certified - Withdrawn,,2025-06-02T00:00:00,"Netflix, Inc.",SOFTWARE ENGINEER,15-1252.00,Software Developers,Y,283442,,Year,182312,Year,Seattle,WA,98199,283442,FY2025_Q3
+I-200-24111-908954,Certified - Withdrawn,,2025-05-28T00:00:00,"Netflix, Inc.",Distributed Systems Engineer,15-1252.00,Software Developers,Y,283442,,Year,283442,Year,Los Gatos,CA,95032,283442,FY2025_Q3
+I-200-25084-800458,Certified,,2025-04-01T00:00:00,"Netflix, Inc.",Network Engineer,15-1241.00,Computer Network Architects,Y,222477,,Year,222477,Year,Los Gatos,CA,95032,222477,FY2025_Q3
+I-200-25085-803585,Certified,,2025-04-02T00:00:00,"Netflix, Inc.",Network Engineer,15-1241.00,Computer Network Architects,Y,222477,,Year,163363,Year,Palmdale,CA,93551,222477,FY2025_Q3
+I-200-25086-809758,Certified,,2025-04-03T00:00:00,"Netflix, Inc.",Security Engineer,15-1299.05,Information Security Engineers,Y,201323,,Year,201323,Year,Los Gatos,CA,95032,201323,FY2025_Q3
+I-200-25086-809762,Certified,,2025-04-03T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25086-809780,Certified,,2025-04-03T00:00:00,"Netflix, Inc.",Senior Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25087-811210,Certified,,2025-04-04T00:00:00,"Netflix, Inc.",Analytics Engineer,15-2051.00,Data Scientists,Y,211536,,Year,183581,Year,Bellevue,WA,98007,211536,FY2025_Q3
+I-200-25087-812344,Certified,,2025-04-04T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25087-812376,Certified,,2025-04-04T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25093-830618,Certified,,2025-04-10T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25101-853793,Certified,,2025-04-17T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25101-853834,Certified,,2025-04-17T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25104-862635,Certified,,2025-04-21T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25104-863245,Certified,,2025-04-21T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25105-863539,Certified,,2025-04-21T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25106-868748,Certified,,2025-04-22T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25106-868801,Certified,,2025-04-22T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,257421,Year,Los Gatos,CA,95032,257421,FY2025_Q3
+I-200-25106-869028,Certified,,2025-04-23T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25106-869149,Certified,,2025-04-23T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25106-872044,Certified,,2025-04-23T00:00:00,"Netflix, Inc.",UI Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25106-873085,Certified,,2025-04-23T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25106-873189,Certified,,2025-04-23T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25106-873207,Certified,,2025-04-23T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25106-873397,Certified,,2025-04-23T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,New York City,NY,10036,226158,FY2025_Q3
+I-200-25107-873412,Certified,,2025-04-23T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2025_Q3
+I-200-25107-873448,Certified,,2025-04-23T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,266158,,Year,226158,Year,Los Gatos,CA,95032,266158,FY2025_Q3
+I-200-25107-878389,Certified,,2025-04-24T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Kenmore,WA,98028,226158,FY2025_Q3
+I-200-25107-878494,Certified,,2025-04-24T00:00:00,"Netflix, Inc.","Associate, FP&A, Corporate",13-2051.00,Financial and Investment Analysts,Y,162926,,Year,162926,Year,Los Gatos,CA,95032,162926,FY2025_Q3
+I-200-25107-878506,Certified,,2025-04-24T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25108-878760,Certified,,2025-04-24T00:00:00,"Netflix, Inc.",Data Engineer,15-2051.00,Data Scientists,Y,170373,,Year,170373,Year,New York,NY,10003,170373,FY2025_Q3
+I-200-25108-878769,Certified,,2025-04-24T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25108-880897,Certified,,2025-04-25T00:00:00,"Netflix, Inc.",Analytics Engineer,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2025_Q3
+I-200-25108-882338,Certified,,2025-04-25T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25108-882369,Certified,,2025-04-25T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25109-882405,Certified,,2025-04-25T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,New York,NY,10003,226158,FY2025_Q3
+I-200-25109-882432,Certified,,2025-04-25T00:00:00,"Netflix Global, LLC",Product Manager,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,251576,Year,Bellevue,WA,98004,294299,FY2025_Q3
+I-200-25112-888173,Certified - Withdrawn,,2025-05-17T00:00:00,"Netflix, Inc.","Associate, F&S, Marcomms Data & Systems",15-2031.00,Operations Research Analysts,Y,119392,,Year,119392,Year,Los Angeles,CA,90028,119392,FY2025_Q3
+I-200-25113-892936,Certified,,2025-04-29T00:00:00,"Netflix, Inc.",Senior Engineering Manager,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,294299,Year,Los Gatos,CA,95032,294299,FY2025_Q3
+I-200-25113-892956,Certified,,2025-04-29T00:00:00,"Netflix, Inc.",Research Engineer,15-1252.00,Software Developers,Y,172931,,Year,172931,Year,Los Gatos,CA,95032,172931,FY2025_Q3
+I-200-25113-893346,Certified,,2025-04-30T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25113-893382,Certified,,2025-04-30T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25113-897754,Certified,,2025-04-30T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2025_Q3
+I-200-25114-897926,Certified,,2025-04-30T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Bellevue,WA,98005,226158,FY2025_Q3
+I-200-25114-897967,Certified,,2025-04-30T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25114-900431,Certified,,2025-05-01T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25114-902661,Certified,,2025-05-01T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25115-903457,Certified,,2025-05-01T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25115-903615,Certified,,2025-05-01T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25115-903622,Certified,,2025-05-01T00:00:00,"Netflix, Inc.","Manager, Design, Brand Creative Studio",27-1011.00,Art Directors,Y,183456,,Year,183456,Year,Los Angeles,CA,90028,183456,FY2025_Q3
+I-200-25115-903630,Certified,,2025-05-01T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25115-903632,Certified,,2025-05-01T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25115-903650,Certified,,2025-05-01T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25115-906371,Certified,,2025-05-02T00:00:00,"Netflix, Inc.",Security Engineer,15-1299.05,Information Security Engineers,Y,201323,,Year,140005,Year,Houston,TX,77070,201323,FY2025_Q3
+I-200-25115-906794,Certified,,2025-05-02T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25115-907090,Certified,,2025-05-02T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25115-908299,Certified,,2025-05-02T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,211536,,Year,211536,Year,Los Gatos,CA,95032,211536,FY2025_Q3
+I-200-25115-908411,Certified,,2025-05-02T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25116-908429,Certified,,2025-05-02T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25116-908434,Certified,,2025-05-02T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25116-908463,Certified,,2025-05-02T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25118-913867,Certified,,2025-05-05T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25118-913998,Certified,,2025-05-05T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,New York,NY,10003,226158,FY2025_Q3
+I-200-25122-934115,Certified,,2025-05-09T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,N,146307,,Year,146307,Year,Los Gatos,CA,95032,,FY2025_Q3
+I-200-25125-940283,Certified,,2025-05-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25126-940334,Certified,,2025-05-12T00:00:00,"Netflix, Inc.",Engineering Support Solutions Engineer,15-1231.00,Computer Network Support Specialists,Y,130541,,Year,130541,Year,Los Gatos,CA,95032,130541,FY2025_Q3
+I-200-25127-946571,Certified,,2025-05-14T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Kirkland,WA,98033,226158,FY2025_Q3
+I-200-25127-949290,Certified,,2025-05-14T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25130-961626,Certified,,2025-05-16T00:00:00,"Netflix, Inc.",Machine Learning Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25130-961637,Certified,,2025-05-16T00:00:00,"Netflix, Inc.",Senior Product Designer,15-1255.00,Web and Digital Interface Designers,Y,217610,,Year,137550,Year,Woodland Hills,CA,91364,217610,FY2025_Q3
+I-200-25134-972608,Certified,,2025-05-20T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25134-972640,Certified,,2025-05-20T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226518,,Year,226158,Year,Los Gatos,CA,95032,226518,FY2025_Q3
+I-200-25134-975799,Certified,,2025-05-21T00:00:00,"Netflix, Inc.",Security Engineer,15-1299.05,Information Security Engineers,Y,201323,,Year,201323,Year,Los Gatos,CA,95032,201323,FY2025_Q3
+I-200-25134-977691,Certified,,2025-05-21T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,257421,Year,Los Gatos,CA,95032,257421,FY2025_Q3
+I-200-25135-978555,Certified,,2025-05-22T00:00:00,"Netflix, Inc.",Game Reliability Manager,15-1255.00,Web and Digital Interface Designers,Y,137550,,Year,137550,Year,Los Angeles,CA,90028,137550,FY2025_Q3
+I-200-25136-983146,Certified,,2025-05-22T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25136-983281,Certified,,2025-05-22T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25136-983398,Certified,,2025-05-22T00:00:00,"Netflix, Inc.",Machine Learning Scientist,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,257421,Year,Los Gatos,CA,95032,257421,FY2025_Q3
+I-200-25136-983416,Certified,,2025-05-22T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25137-988113,Certified,,2025-05-23T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25137-988125,Certified,,2025-05-23T00:00:00,"Netflix, Inc.","Inclusion Recruiting Programs, Project Manager",13-1071.00,Human Resources Specialists,Y,137342,,Year,114358,Year,Seattle,WA,98104,137342,FY2025_Q3
+I-200-25137-988140,Certified,,2025-05-23T00:00:00,"Netflix Global, LLC","Manager, Marketing Innovation & Production",11-2021.00,Marketing Managers,Y,211994,,Year,211994,Year,Los Angeles,CA,90028,211994,FY2025_Q3
+I-200-25137-988144,Certified,,2025-05-23T00:00:00,"Netflix Global, LLC","Manager, Marketing Innovation & Production",13-1082.00,Project Management Specialists,Y,130853,,Year,130853,Year,Los Angeles,CA,90028,130853,FY2025_Q3
+I-200-25142-005119,Certified,,2025-05-29T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,San Jose,CA,95120,226158,FY2025_Q3
+I-200-25142-010492,Certified,,2025-05-30T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,179982,Year,New York,NY,10003,226158,FY2025_Q3
+I-200-25143-010532,Certified,,2025-05-30T00:00:00,"Netflix, Inc.",CDN Reliability Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25149-030550,Certified,,2025-06-05T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25149-030654,Certified,,2025-06-05T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25149-030717,Certified,,2025-06-05T00:00:00,"Netflix, Inc.",Security Software Engineer,15-1299.05,Information Security Engineers,Y,201323,,Year,165610,Year,Seattle,WA,98104,201323,FY2025_Q3
+I-200-25149-030807,Certified,,2025-06-05T00:00:00,"Netflix, Inc.",Security Engineer,15-1299.05,Information Security Engineers,Y,201323,,Year,201323,Year,Los Gatos,CA,95032,201323,FY2025_Q3
+I-200-25149-030855,Certified,,2025-06-05T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25150-034313,Certified,,2025-06-06T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25151-037819,Certified,,2025-06-06T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,146307,,Year,146307,Year,Los Gatos,CA,95032,146307,FY2025_Q3
+I-200-25153-038920,Certified,,2025-06-06T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25153-040839,Certified,,2025-06-09T00:00:00,"Netflix, Inc.",Live Cloud Platform SRE,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25153-041713,Certified,,2025-06-09T00:00:00,"Netflix, Inc.","Senior Director, Business Development",11-2021.00,Marketing Managers,Y,280987,,Year,280987,Year,Los Gatos,CA,95032,280987,FY2025_Q3
+I-200-25153-042276,Certified,,2025-06-09T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,257421,Year,Los Gatos,CA,95032,257421,FY2025_Q3
+I-200-25155-049533,Certified,,2025-06-11T00:00:00,"Netflix, Inc.",Distributed Systems Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25155-049574,Certified,,2025-06-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Seattle,WA,98101,226158,FY2025_Q3
+I-200-25155-052202,Certified,,2025-06-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Seattle,WA,98104,226158,FY2025_Q3
+I-200-25155-054045,Certified,,2025-06-11T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25156-054529,Certified,,2025-06-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25156-057800,Certified,,2025-06-12T00:00:00,"Netflix, Inc.",Engineering Manager,11-3021.00,Computer and Information Systems Managers,Y,294299,,Year,294299,Year,Los Gatos,CA,95032,294299,FY2025_Q3
+I-200-25162-078035,Certified,,2025-06-18T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25163-083028,Certified,,2025-06-18T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,211536,,Year,166858,Year,McLean,VA,22102,211536,FY2025_Q3
+I-200-25163-083064,Certified,,2025-06-18T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25163-086336,Certified,,2025-06-20T00:00:00,"Netflix, Inc.",Senior Product Designer,27-1021.00,Commercial and Industrial Designers,Y,163571,,Year,100526,Year,New York,NY,10003,163571,FY2025_Q3
+I-200-25163-086341,Certified,,2025-06-20T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-200-25163-086784,Certified,,2025-06-20T00:00:00,"Netflix, Inc.",Security Engineer,15-1212.00,Information Security Analysts,Y,202134,,Year,202134,Year,Los Gatos,CA,95032,202134,FY2025_Q3
+I-200-25168-099207,Certified,,2025-06-24T00:00:00,"Netflix Global, LLC","VFX Artist, Games Studio",27-1014.00,Special Effects Artists and Animators,Y,134742,,Year,122262,Year,Franklin Park,NJ,08823,134742,FY2025_Q3
+I-200-25169-109959,Certified,,2025-06-26T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-203-25143-010516,Certified,,2025-05-30T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q3
+I-203-25153-038910,Certified,,2025-06-06T00:00:00,"Netflix, Inc.","Senior Manager, Creative Lead, Brand Creative Studio",11-2021.00,Marketing Managers,Y,211994,,Year,211994,Year,Los Angeles,CA,90028,211994,FY2025_Q3
+I-200-25175-124903,Certified,,2025-07-01T00:00:00,"Netflix, Inc.","Senior Manager, Treasury",11-3031.00,Financial Managers,Y,286728,,Year,286728,Year,Los Gatos,CA,95032,286728,FY2025_Q4
+I-200-25175-125704,Certified,,2025-07-01T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Kirkland,WA,98034,226158,FY2025_Q4
+I-200-25175-125750,Certified,,2025-07-01T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,San Jose,CA,95128,226158,FY2025_Q4
+I-200-25175-125763,Certified,,2025-07-01T00:00:00,"Netflix, Inc.",Distributed Systems Engineer,15-1252.00,Software Developers,N,226158,,Year,226158,Year,Los Gatos,CA,95032,,FY2025_Q4
+I-200-25176-129031,Certified,,2025-07-02T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q4
+I-200-25176-129104,Certified,,2025-07-02T00:00:00,"Netflix, Inc.",Research Scientist,15-1221.00,Computer and Information Research Scientists,Y,257421,,Year,257421,Year,Los Gatos,CA,95032,257421,FY2025_Q4
+I-200-25177-130861,Certified,,2025-07-03T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q4
+I-200-25177-131973,Certified,,2025-07-03T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,226158,,Year,190486,Year,Seattle,WA,98104,226158,FY2025_Q4
+I-200-25178-134665,Certified,,2025-07-07T00:00:00,"Netflix, Inc.",UI/UX Engineering,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q4
+I-200-25181-141830,Certified,,2025-07-08T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q4
+I-200-25181-142942,Certified,,2025-07-08T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q4
+I-200-25183-147634,Certified,,2025-07-10T00:00:00,"Netflix, Inc.",Machine Learning Engineering,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25184-149110,Certified,,2025-07-10T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,212202,Year,Bothell,WA,98021,264514,FY2025_Q4
+I-200-25184-152634,Certified,,2025-07-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25184-153208,Certified,,2025-07-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25188-155857,Certified,,2025-07-14T00:00:00,"Netflix, Inc.",UI Engineer,15-1252.00,Software Developers,Y,264514,,Year,155750,Year,Mountain House,CA,95391,264514,FY2025_Q4
+I-200-25190-160802,Certified,,2025-07-15T00:00:00,"Netflix, Inc.",Analytics Engineer,15-2051.00,Data Scientists,Y,275850,,Week,275850,Year,Los Gatos,CA,95032,,FY2025_Q4
+I-200-25190-161723,Certified,,2025-07-16T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25190-162005,Certified,,2025-07-16T00:00:00,"Netflix, Inc.","Engineering Manager, Ads Finance",11-3021.00,Computer and Information Systems Managers,Y,388918,,Year,217568,Year,Pflugerville,TX,78660,388918,FY2025_Q4
+I-200-25190-163633,Certified,,2025-07-16T00:00:00,"Netflix, Inc.",Senior Product Designer - Media Innovations,15-1255.00,Web and Digital Interface Designers,Y,243506,,Year,121243,Year,Las Vegas,NV,89145,243506,FY2025_Q4
+I-200-25192-169583,Certified,,2025-07-18T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90292,184558,FY2025_Q4
+I-200-25192-170261,Certified,,2025-07-18T00:00:00,"Netflix, Inc.",Machine Learning Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25197-177764,Certified,,2025-07-23T00:00:00,"Netflix, Inc.","Manager, Business Analysis & SaaS",11-3021.00,Computer and Information Systems Managers,Y,237141,,Year,237141,Year,Los Angeles,CA,90028,237141,FY2025_Q4
+I-200-25197-177868,Certified,,2025-07-23T00:00:00,"Netflix, Inc.","Engineering Manager, Networking",11-3021.00,Computer and Information Systems Managers,Y,388918,,Year,388918,Year,Los Gatos,CA,95032,388918,FY2025_Q4
+I-200-25197-177876,Certified,,2025-07-23T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,N,264514,,Year,264514,Year,Los Gatos,CA,95032,,FY2025_Q4
+I-200-25197-177881,Certified,,2025-07-23T00:00:00,"Netflix, Inc.",Analytics Engineer,15-2051.00,Data Scientists,Y,275850,,Year,275850,Year,LOS GATOS,CA,95032,275850,FY2025_Q4
+I-200-25197-177885,Certified,,2025-07-23T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25197-180028,Certified,,2025-07-23T00:00:00,"Netflix, Inc.",UI Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,San Jose,CA,95136,264514,FY2025_Q4
+I-200-25198-182164,Certified,,2025-07-24T00:00:00,"Netflix, Inc.",Engineering Manager,11-3021.00,Computer and Information Systems Managers,Y,388918,,Year,388918,Year,Los Gatos,CA,95032,388918,FY2025_Q4
+I-200-25202-187413,Certified,,2025-07-28T00:00:00,"Netflix, Inc.","Associate, F&S",13-2051.00,Financial and Investment Analysts,Y,182978,,Year,182478,Year,Los Gatos,CA,95032,182978,FY2025_Q4
+I-200-25202-189113,Certified,,2025-07-28T00:00:00,"Netflix, Inc.",Senior Researcher - Studio Insights,15-2051.00,Data Scientists,Y,275850,,Year,275850,Year,Los Gatos,CA,95032,275850,FY2025_Q4
+I-200-25203-192909,Certified,,2025-07-29T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25205-197860,Certified,,2025-07-31T00:00:00,"Netflix, Inc.",Analytics Engineer,15-2051.00,Data Scientists,Y,275850,,Year,275850,Year,Los Gatos,CA,95032,275850,FY2025_Q4
+I-200-25205-198111,Certified,,2025-07-31T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25205-198139,Certified,,2025-07-31T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25209-204587,Certified,,2025-08-04T00:00:00,"Netflix, Inc.","Associate, FP&A",13-2051.00,Financial and Investment Analysts,Y,137717,,Year,137717,Year,Los Angeles,CA,90028,137717,FY2025_Q4
+I-200-25210-207662,Certified,,2025-08-05T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25210-208402,Certified,,2025-08-05T00:00:00,"Netflix, Inc.",UI Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25214-217334,Certified,,2025-08-08T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,264514,,Year,212202,Year,Redmond,WA,98052,264514,FY2025_Q4
+I-200-25216-220372,Certified,,2025-08-11T00:00:00,"Netflix, Inc.",Data Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25216-220418,Certified,,2025-08-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,212202,Year,Seattle,WA,98104,264514,FY2025_Q4
+I-200-25217-223100,Certified,,2025-08-12T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,184558,Year,LOS ANGELES,CA,90010,264514,FY2025_Q4
+I-200-25217-223548,Certified,,2025-08-12T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-2051.00,Data Scientists,Y,275850,,Year,275850,Year,Los Gatos,CA,95032,275850,FY2025_Q4
+I-200-25220-229917,Certified,,2025-08-15T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Cupertino,CA,95014,264514,FY2025_Q4
+I-200-25220-229919,Certified,,2025-08-15T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25220-231681,Certified,,2025-08-15T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25220-231841,Certified,,2025-08-15T00:00:00,"Netflix, Inc.",Security Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25224-235354,Certified,,2025-08-18T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25224-235375,Certified,,2025-08-18T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,212202,Year,Seattle,WA,98101,264514,FY2025_Q4
+I-200-25225-240301,Certified,,2025-08-20T00:00:00,"Netflix, Inc.",UI Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25227-246367,Certified,,2025-08-22T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25230-247398,Certified,,2025-08-25T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,212202,Year,Seattle,WA,98104,264514,FY2025_Q4
+I-200-25232-255119,Certified,,2025-08-27T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25232-256706,Certified,,2025-08-27T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25234-260220,Certified,,2025-08-28T00:00:00,"Netflix, Inc.",Engineering Manager,11-3021.00,Computer and Information Systems Managers,Y,388918,,Year,388918,Year,Los Gatos,CA,95032,388918,FY2025_Q4
+I-200-25234-262486,Certified,,2025-08-29T00:00:00,"Netflix, Inc.",Engineering Manager,11-3021.00,Computer and Information Systems Managers,Y,388918,,Year,388918,Year,Los Gatos,CA,95032,388918,FY2025_Q4
+I-200-25237-263542,Certified,,2025-09-02T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25237-266042,Certified,,2025-09-02T00:00:00,"Netflix, Inc.",Analytics Engineer,15-2051.00,Data Scientists,Y,275850,,Year,275850,Year,Los Gatos,CA,95032,275850,FY2025_Q4
+I-200-25238-269354,Certified,,2025-09-03T00:00:00,"Netflix, Inc.",Senior Product Designer,15-1255.00,Web and Digital Interface Designers,Y,243506,,Year,155147,Year,New York,NY,10003,243506,FY2025_Q4
+I-200-25240-274971,Certified,,2025-09-05T00:00:00,"Netflix, Inc.",Senior Payments Fraud Operations Manager,13-2099.04,"Fraud Examiners, Investigators and Analysts",Y,188406,,Year,188406,Year,Los Gatos,CA,95032,188406,FY2025_Q4
+I-200-25241-275183,Certified,,2025-09-08T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25241-278106,Certified,,2025-09-08T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25247-288288,Certified,,2025-09-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25251-292055,Certified,,2025-09-15T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25254-303379,Certified,,2025-09-18T00:00:00,"Netflix, Inc.",Senior Test Engineer,15-1253.00,Software Quality Assurance Analysts and Testers,Y,201053,,Year,201053,Year,Los Gatos,CA,95032,201053,FY2025_Q4
+I-200-25255-306032,Certified,,2025-09-19T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25255-306276,Certified,,2025-09-19T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25255-306959,Certified,,2025-09-19T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25255-307041,Certified,,2025-09-19T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25258-307789,Certified,,2025-09-22T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25258-310085,Certified,,2025-09-22T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25260-315916,Certified,,2025-09-24T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25260-316901,Certified,,2025-09-24T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,275850,,Year,275850,Year,Los Gatos,CA,95032,275850,FY2025_Q4
+I-200-25261-320169,Certified,,2025-09-25T00:00:00,"Netflix, Inc.",Engineering Manager,11-3021.00,Computer and Information Systems Managers,Y,388918,,Year,388918,Year,Los Gatos,CA,95032,388918,FY2025_Q4
+I-200-25262-320745,Certified,,2025-09-26T00:00:00,"Netflix, Inc.",Data Scientist,15-2051.00,Data Scientists,Y,275850,,Year,275850,Year,Los Gatos,CA,95032,275850,FY2025_Q4
+I-200-25262-323570,Certified,,2025-09-26T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25265-323884,Certified,,2025-09-29T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25265-323948,Certified,,2025-09-29T00:00:00,"Netflix, Inc.","Counsel, Advertising Legal Affairs",23-1011.00,Lawyers,Y,346923,,Year,274248,Year,New York,NY,10003,346923,FY2025_Q4
+I-200-25265-325420,Certified,,2025-09-29T00:00:00,"Netflix, Inc.",Machine Learning Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-200-25266-328681,Certified,,2025-09-30T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2025_Q4
+I-201-25190-160809,Certified,,2025-07-15T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,212202,Year,BOTHELL,WA,98011,264514,FY2025_Q4
+I-201-25216-220692,Certified,,2025-08-11T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,212202,Year,BOTHELL,WA,98011,264514,FY2025_Q4
+I-202-25220-231493,Certified,,2025-08-15T00:00:00,"Netflix, Inc.","Manager, IP Legal Operations, Tools & Workflows",13-1111.00,Management Analysts,Y,155605,,Year,155605,Year,Los Angeles,CA,90028,155605,FY2025_Q4
+I-203-25176-129298,Certified,,2025-07-02T00:00:00,"Netflix, Inc.","Director, Business Affairs, Sports and Nonfiction",27-2012.00,Producers and Directors,Y,166941,,Year,166941,Year,Los Angeles,CA,90028,166941,FY2025_Q4
+I-203-25178-137384,Certified,,2025-07-07T00:00:00,"Netflix, Inc.","Director, Business Affairs, Sports and Nonfiction",23-1011.00,Lawyers,Y,272771,,Year,272771,Year,Los Angeles,CA,90028,272771,FY2025_Q4
+I-203-25178-137389,Certified,,2025-07-07T00:00:00,"Netflix, Inc.","Director, Business Affairs, Sports and Nonfiction",13-1111.00,Management Analysts,Y,137114,,Year,137114,Year,Los Angeles,CA,90028,137114,FY2025_Q4
+I-203-25181-140006,Certified,,2025-07-08T00:00:00,"Netflix, Inc.",Performance Engineer,15-1252.00,Software Developers,Y,226158,,Year,226158,Year,Los Gatos,CA,95032,226158,FY2025_Q4
+I-203-25183-147363,Certified,,2025-07-10T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,184558,Year,Costa Mesa,CA,92626,264514,FY2025_Q4
+I-203-25184-149157,Certified,,2025-07-10T00:00:00,"Netflix, Inc.",Game Reliability Manager,15-1255.00,Web and Digital Interface Designers,Y,146515,,Year,146515,Year,Los Angeles,CA,90028,146515,FY2025_Q4
+I-203-25218-223623,Certified,,2025-08-12T00:00:00,"Netflix, Inc.",Ads Sales Operations Sr. Associate,13-1161.00,Market Research Analysts and Marketing Specialists,Y,122824,,Year,122824,Year,New York,NY,10003,122824,FY2025_Q4
+I-203-25241-278138,Certified,,2025-09-08T00:00:00,"Netflix, Inc.",Ads Sales Operations Sr. Associate,13-1161.00,Market Research Analysts and Marketing Specialists,Y,122824,,Year,122824,Year,New York,NY,10003,122824,FY2025_Q4
+I-203-25241-278187,Certified,,2025-09-08T00:00:00,"Netflix, Inc.",Ads Sales Operations Sr. Associate,13-1161.00,Market Research Analysts and Marketing Specialists,Y,122824,,Year,122824,Year,New York,NY,10003,122824,FY2025_Q4
+I-203-25256-307231,Certified,,2025-09-19T00:00:00,"Netflix, Inc.",Hardware Engineer,17-2061.00,Computer Hardware Engineers,Y,229590,,Year,229590,Year,Los Gatos,CA,95032,229590,FY2025_Q4
 I-200-25267-331358,Certified,,2025-10-01T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2026_Q3
 I-200-25269-336451,Certified,,2025-11-05T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2026_Q3
 I-200-25269-336472,Certified,,2025-11-05T00:00:00,"Netflix, Inc.",Software Engineer,15-1252.00,Software Developers,Y,264514,,Year,264514,Year,Los Gatos,CA,95032,264514,FY2026_Q3

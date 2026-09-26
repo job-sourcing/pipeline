@@ -1,10 +1,11 @@
-rows: 172 (unique reqIds: 172)
-details merged: 172
-descriptions present: 172
-locations enumerated (not 'N Locations'): 172
-startDate present: 172
-signals: matched=88 no_match=84 blocked=0 not_checked=0
-location entries total (sum nLocations): 199
-similar-job edges: 475
+rows: 169 (unique reqIds: 169)
+details merged: 169
+descriptions present: 169
+locations enumerated (not 'N Locations'): 169
+startDate present: 169
+signals: matched=90 no_match=79 blocked=0 not_checked=0
+location entries total (sum nLocations): 196
+similar-job edges: 476
 facet census: 8 facets / 138 values (gea_us_fulltime.facets.json)
-questionnaire definitions: 8 id(s) covering 172/172 rows; 8 fetched (53 questions → gea_us_fulltime.questionnaires.csv)
+questionnaire definitions: 8 id(s) covering 169/169 rows; 8 fetched (53 questions → gea_us_fulltime.questionnaires.csv)
+h1b wage bands: 0 usable filings in the extract (all uncertified/unparseable?)

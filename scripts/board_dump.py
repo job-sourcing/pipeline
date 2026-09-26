@@ -582,6 +582,31 @@ def phase_details(args, out: Path) -> int:
               flush=True)
     n_err_rows = sum(1 for rid, a in attempts.items()
                      if a > 0 and rid not in settled)
+    # S19 title-drift re-fetch (the bytedance INV-3 lesson): a settled
+    # detail whose title differs from the CURRENT list row is stale —
+    # the board edited the posting after we fetched its detail; the
+    # verbatim join then compares a card (matched on the fresh list
+    # title) against the stale detail title and INV-3 fails at finish.
+    # A re-fetch is scheduled ONLY when the list title differs from the
+    # one recorded at the last drift check (listTitleChecked marker on
+    # the appended record) — a board whose titles SYSTEMATICALLY differ
+    # between list and detail surfaces once, records the marker, and
+    # never churns.
+    drift = []
+    for r in rows:
+        rid = r.get("reqId")
+        if rid not in settled or attempts.get(rid, 0) >= 3:
+            continue
+        det = det_view.get(rid) or {}
+        det_title = (det.get("info") or {}).get("title")
+        if (det_title and r.get("title") and det_title != r["title"]
+                and det.get("listTitleChecked") != r["title"]):
+            drift.append(r)
+    if drift:
+        print(f"[details] title-drift: {len(drift)} settled rows whose "
+              f"detail title != current list title (re-fetching; the "
+              f"fresh record carries listTitleChecked)", flush=True)
+        todo = todo + drift
     print(f"[details] {len(rows)} rows, {len(settled)} settled, "
           f"{n_err_rows} error rows "
           f"({len(three_strikes)} past 3-strike cap), "
@@ -617,6 +642,12 @@ def phase_details(args, out: Path) -> int:
                 info = payload.get("jobPostingInfo") or {}
                 # RAW preservation — every jobPostingInfo field
                 rec["info"] = info
+                # S19 title-drift marker: remember WHICH list title this
+                # detail was checked against (a systematic list-vs-detail
+                # title difference must not re-fetch forever — only a
+                # FUTURE list-title change re-opens the check).
+                if r.get("title") and info.get("title") != r["title"]:
+                    rec["listTitleChecked"] = r["title"]
                 org = payload.get("hiringOrganization") or {}
                 rec["hiringOrg"] = org.get("name")
                 sim = payload.get("similarJobs") or []
