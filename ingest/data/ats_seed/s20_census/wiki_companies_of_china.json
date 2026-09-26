@@ -1,0 +1,2007 @@
+{
+ "source": "wikipedia:List of companies of China",
+ "fetched": 1790459914.392454,
+ "count": 250,
+ "companies": [
+  {
+   "company": "361 Degrees",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Jinjiang, Fujian",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Agricultural Bank of China",
+   "industry": "Financials",
+   "subsector": "Banks",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Aigo",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Air China",
+   "industry": "Consumer services",
+   "subsector": "Airlines",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Alibaba Group",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Hangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Aluminum Corporation of China Limited",
+   "industry": "Basic materials",
+   "subsector": "Aluminum",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Amoi",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Xiamen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Anker",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Changsha",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Anta Sports",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Jinjiang, Fujian",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Aviation Industry Corporation of China",
+   "industry": "Industrials",
+   "subsector": "Aerospace and defense",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "BAIC Group",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Baidu",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Bank of China",
+   "industry": "Financials",
+   "subsector": "Banks",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Bank of Communications",
+   "industry": "Financials",
+   "subsector": "Banks",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Baowu",
+   "industry": "Basic materials",
+   "subsector": "Iron & steel",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "BBK Electronics",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Dongguang",
+   "section": "Notable firms",
+   "defunct": true
+  },
+  {
+   "company": "Beijing Hualian Group",
+   "industry": "Consumer services",
+   "subsector": "Broadline retailers",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Bilibili",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Bosideng",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Brilliance Auto",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Shenyang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "BYD Company",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Xi'an",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "ByteDance",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "CALB",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Changzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "CATL",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Ningde",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Changan Automobile",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Chongqing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Changhe",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Jingdezhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Changhong",
+   "industry": "Consumer goods",
+   "subsector": "Durable household products",
+   "hq": "Mianyang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Changhong Technology",
+   "industry": "Basic materials",
+   "subsector": "Commodity chemicals",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Cheers Wines",
+   "industry": "Consumer Goods",
+   "subsector": "Wines",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "ChemChina",
+   "industry": "Basic materials",
+   "subsector": "Speciality chemicals",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Chery Automobile",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Wuhu",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Chicecream",
+   "industry": "Consumer staples",
+   "subsector": "Food producers",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Clean Energy",
+   "industry": "Basic materials",
+   "subsector": "Specialty chemicals",
+   "hq": "Fuqing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Communications Construction",
+   "industry": "Industrials",
+   "subsector": "Heavy construction",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Construction Bank",
+   "industry": "Financials",
+   "subsector": "Banks",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China COSCO Shipping",
+   "industry": "Industrials",
+   "subsector": "Marine transportation",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Dongxiang",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Eastern Airlines",
+   "industry": "Consumer services",
+   "subsector": "Airlines",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Electronics Corporation",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Housing and Land Development",
+   "industry": "Financials",
+   "subsector": "Banks",
+   "hq": "Xi'an",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China International Marine Containers",
+   "industry": "Industrials",
+   "subsector": "Marine transportation",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Life Insurance Company",
+   "industry": "Financials",
+   "subsector": "Life insurance",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Medical Technologies",
+   "industry": "Health care",
+   "subsector": "Medical technology",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": true
+  },
+  {
+   "company": "China Merchants Bank",
+   "industry": "Financials",
+   "subsector": "Banks",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Merchants Energy Shipping",
+   "industry": "Industrials",
+   "subsector": "Marine transportation",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Metal Recycling",
+   "industry": "Industrials",
+   "subsector": "Waste & disposal services",
+   "hq": "Guangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Minmetals",
+   "industry": "Basic materials",
+   "subsector": "Metals & minerals",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Mobile",
+   "industry": "Telecommunications",
+   "subsector": "Mobile telecommunications",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China National Building Material",
+   "industry": "Industrials",
+   "subsector": "Building materials",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China National Erzhong Group",
+   "industry": "Industrials",
+   "subsector": "Diversified industrials",
+   "hq": "Deyang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China National Nuclear Corporation",
+   "industry": "Energy",
+   "subsector": "Nuclear power",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China National Offshore Oil Corporation",
+   "industry": "Oil & gas",
+   "subsector": "Exploration & production",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China National Petroleum Corporation",
+   "industry": "Oil & gas",
+   "subsector": "Exploration & production",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Nepstar",
+   "industry": "Health care",
+   "subsector": "Pharmaceuticals",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Netcom",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": true
+  },
+  {
+   "company": "China Pabst Blue Ribbon",
+   "industry": "Consumer goods",
+   "subsector": "Brewers",
+   "hq": "Zhaoqing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Poly Group",
+   "industry": "Conglomerate",
+   "subsector": "Fine arts",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Post",
+   "industry": "Industrials",
+   "subsector": "Delivery services",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Railway",
+   "industry": "Industrials",
+   "subsector": "Rail transport",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Resources",
+   "industry": "Consumer goods",
+   "subsector": "Conglomerate",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Shipping Group",
+   "industry": "Industrials",
+   "subsector": "Marine transportation",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": true
+  },
+  {
+   "company": "China Southern Airlines",
+   "industry": "Consumer services",
+   "subsector": "Airlines",
+   "hq": "Guangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China State Construction Engineering",
+   "industry": "Industrials",
+   "subsector": "Heavy construction",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Telecom",
+   "industry": "Telecommunications",
+   "subsector": "Fixed line telecommunications",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Three Gorges Corporation",
+   "industry": "Utilities",
+   "subsector": "Alternative electricity",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Tobacco",
+   "industry": "Consumer goods",
+   "subsector": "Tobacco",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Unicom",
+   "industry": "Telecommunications",
+   "subsector": "Mobile telecommunications",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Universal",
+   "industry": "Financials",
+   "subsector": "Investment services",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Wu Yi",
+   "industry": "Industrials",
+   "subsector": "Heavy construction",
+   "hq": "Fuzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "China Zhongwang",
+   "industry": "Basic materials",
+   "subsector": "Aluminum",
+   "hq": "Liaoyang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Chunlan Group",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Taizhou, Jiangsu",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "CITIC Group",
+   "industry": "Financials",
+   "subsector": "Investment services",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "COFCO Group",
+   "industry": "Consumer goods",
+   "subsector": "Food processing",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Comac",
+   "industry": "Industrials",
+   "subsector": "Aerospace",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Commercial Press",
+   "industry": "Consumer services",
+   "subsector": "Publishing",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "COSCO",
+   "industry": "Industrials",
+   "subsector": "Marine transportation",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": true
+  },
+  {
+   "company": "CRRC",
+   "industry": "Industrials",
+   "subsector": "Railroads",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "CSG Holding",
+   "industry": "Industrials",
+   "subsector": "Glass",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Dalian Hi-Think Computer",
+   "industry": "Industrials",
+   "subsector": "Business support services",
+   "hq": "Dalian",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Dashang Group",
+   "industry": "Consumer services",
+   "subsector": "Broadline retailers",
+   "hq": "Dalian",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Dayun Group",
+   "industry": "Industrials",
+   "subsector": "Automobiles",
+   "hq": "Yuncheng",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Dicos",
+   "industry": "Consumer services",
+   "subsector": "Restaurants & bars",
+   "hq": "Chengdu",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "DiDi",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Dongfeng Motor Corporation",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Wuhan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Duoyuan Global Water",
+   "industry": "Industrials",
+   "subsector": "Industrial machinery",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": true
+  },
+  {
+   "company": "DXY.cn",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Zhenjiang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Eisoo",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Ellington Electronics Technology Group",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Zhongshan City",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Eno (company)",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "ERKE (brand)",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Quanzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "EVE Energy",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Huizhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "FAW Group",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Changchun",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Feicheng Acid Chemicals",
+   "industry": "Basic materials",
+   "subsector": "Specialty chemicals",
+   "hq": "Feicheng",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Feiyue",
+   "industry": "Consumer goods",
+   "subsector": "Footwear",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Foshan Haitian Flavouring & Food Co",
+   "industry": "Consumer goods",
+   "subsector": "Food products",
+   "hq": "Foshan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Founder Group",
+   "industry": "Technology",
+   "subsector": "Computer services",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Fushi Copperweld",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "GAC Group",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Guangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Geely",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Hangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "GMY Lighting Technology",
+   "industry": "Lights and lighting technology",
+   "subsector": "Technology",
+   "hq": "Heshan, Guangdong",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "GOME Electrical Appliances",
+   "industry": "Consumer services",
+   "subsector": "Specialty retailers",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Gotion",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Hefei",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Great Leap Brewing",
+   "industry": "Consumer goods",
+   "subsector": "Brewers",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Great Wall Motor",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Baoding",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Gree Electric",
+   "industry": "Consumer goods",
+   "subsector": "Durable household products",
+   "hq": "Zhuhai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "GreenTree Inns",
+   "industry": "Consumer services",
+   "subsector": "Hotels",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Gushan Environmental Energy",
+   "industry": "Oil & gas",
+   "subsector": "Exploration & production",
+   "hq": "Fuzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Hafei",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Harbin",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Haier",
+   "industry": "Consumer goods",
+   "subsector": "Durable household products",
+   "hq": "Qingdao",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Hainan Airlines",
+   "industry": "Consumer services",
+   "subsector": "Airlines",
+   "hq": "Haikou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Hangzhou Wahaha Group",
+   "industry": "Consumer goods",
+   "subsector": "Soft drinks",
+   "hq": "Hangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Harbin Brewery",
+   "industry": "Consumer goods",
+   "subsector": "Brewers",
+   "hq": "Harbin",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Harbin Pharmaceutical Group",
+   "industry": "Health care",
+   "subsector": "Pharmaceuticals",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Hasee",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Hefei Meiling",
+   "industry": "Consumer goods",
+   "subsector": "Durable household products",
+   "hq": "Hefei",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Hengan International",
+   "industry": "Basic materials",
+   "subsector": "Paper",
+   "hq": "Jinjiang, Quanzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Hisense",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Qingdao",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "HiSilicon",
+   "industry": "Technology",
+   "subsector": "Semiconductors",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Honor (company)",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Hotgen Biotech",
+   "industry": "Technology",
+   "subsector": "Pharmaceuticals",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Huawei",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics, Telecommunications equipment",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Huayi Brothers",
+   "industry": "Consumer services",
+   "subsector": "Broadcasting & entertainment",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Huiyuan Juice",
+   "industry": "Consumer goods",
+   "subsector": "Soft drinks",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Hytera",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Industrial and Commercial Bank of China",
+   "industry": "Financials",
+   "subsector": "Banks",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Inspur",
+   "industry": "Technology",
+   "subsector": "Computer services",
+   "hq": "Jinan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "JAC Group",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Hefei",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "JD.com",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "JDB Group",
+   "industry": "Consumer goods",
+   "subsector": "Soft drinks",
+   "hq": "Dongguan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Jiangling Motors",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Nanchang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Jiangling Motors Corporation Group",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Nanchang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Jiangsu Hengrui",
+   "industry": "Health care",
+   "subsector": "Pharmaceuticals",
+   "hq": "Lianyungang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Jianlibao Group",
+   "industry": "Consumer goods",
+   "subsector": "Soft drinks",
+   "hq": "Foshan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Jiuguang Department Store",
+   "industry": "Consumer services",
+   "subsector": "Broadline retailers",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Joyoung",
+   "industry": "Consumer goods",
+   "subsector": "Durable household products",
+   "hq": "Jinan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "JXD",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Kingsoft",
+   "industry": "Technology",
+   "subsector": "Software",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Kingway Brewery",
+   "industry": "Consumer goods",
+   "subsector": "Brewers",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Kuaishou",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Kweichow Moutai",
+   "industry": "Consumer goods",
+   "subsector": "Brewers",
+   "hq": "Renhuai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Leapmotor",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Hangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Lenovo",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Li Auto",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Li-Ning",
+   "industry": "Consumer goods",
+   "subsector": "Footwear",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Lifan Group",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Chongqing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Little Sheep Group",
+   "industry": "Consumer services",
+   "subsector": "Restaurants & bars",
+   "hq": "Baotou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "LiuGong",
+   "industry": "Industrials",
+   "subsector": "Industrial machinery",
+   "hq": "Liuzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Loncin Holdings",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Chongqing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Lonking",
+   "industry": "Industrials",
+   "subsector": "Commercial vehicles",
+   "hq": "Longyan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Luxshare",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Mailman Group",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Maoye International",
+   "industry": "Consumer services",
+   "subsector": "Broadline retailers",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Meituan",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Meizu",
+   "industry": "Consumer goods",
+   "subsector": "Telecommunications equipment",
+   "hq": "Zhuhai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Mengniu Dairy",
+   "industry": "Consumer goods",
+   "subsector": "Food products",
+   "hq": "Hohhot",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Meters/bonwe",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Midea Group",
+   "industry": "Consumer goods",
+   "subsector": "Durable household products",
+   "hq": "Beijiao, Guangdong",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Mingyang Wind Power",
+   "industry": "Utilities",
+   "subsector": "Alternative electricity",
+   "hq": "Zhongshan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Miniso",
+   "industry": "Consumer services",
+   "subsector": "Broadline retailers",
+   "hq": "Guangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Mr. Lee (restaurant)",
+   "industry": "Consumer services",
+   "subsector": "Restaurants & bars",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Nanjing Automobile",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Nanjing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Neusoft",
+   "industry": "Technology",
+   "subsector": "Software",
+   "hq": "Shenyang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Ningbo Bird",
+   "industry": "Telecommunications",
+   "subsector": "Mobile telecommunications",
+   "hq": "Fenghua District",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Nio Inc.",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Niu Technologies",
+   "industry": "Consumer goods",
+   "subsector": "Recreational products",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Opple Lighting",
+   "industry": "Industrials",
+   "subsector": "Building materials & fixtures",
+   "hq": "Zhongshan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Oppo",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Panda Electronics",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Nanjing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Peak Sport Products",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Quanzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Pearl River Piano Group",
+   "industry": "Consumer goods",
+   "subsector": "Recreational products",
+   "hq": "Guangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "People's Insurance Company of China",
+   "industry": "Financials",
+   "subsector": "Full line insurance",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Pinduoduo",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Ping An Bank",
+   "industry": "Financials",
+   "subsector": "Banks",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Ping An Insurance",
+   "industry": "Financials",
+   "subsector": "Full line insurance",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Qihoo 360",
+   "industry": "Technology",
+   "subsector": "Software",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Qinghai Huading Industrial",
+   "industry": "Industrials",
+   "subsector": "Industrial machinery",
+   "hq": "Xining",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "SAIC Motor",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "SAIC-GM",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "SAIC-GM-Wuling",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Liuzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sany",
+   "industry": "Industrials",
+   "subsector": "Industrial machinery",
+   "hq": "Changsha",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "SDLG",
+   "industry": "Industrials",
+   "subsector": "Industrial machinery",
+   "hq": "Linyi",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Septwolves (clothing)",
+   "industry": "Consumer goods",
+   "subsector": "Clothing",
+   "hq": "Jinjiang, Fujian",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "SF Express",
+   "industry": "Industrials",
+   "subsector": "Delivery services",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shaanxi Automobile Group",
+   "industry": "Industrials",
+   "subsector": "Commercial vehicles",
+   "hq": "Xi'an",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shaanxi Yanchang Petroleum",
+   "industry": "Oil & gas",
+   "subsector": "Exploration & production",
+   "hq": "Xi'an",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shanghai Film Group Corporation",
+   "industry": "Consumer services",
+   "subsector": "Broadcasting & entertainment",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shanghai Pharmaceuticals",
+   "industry": "Health care",
+   "subsector": "Pharmaceuticals",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shanghai Pudong Development Bank",
+   "industry": "Financials",
+   "subsector": "Banks",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shenzhen Airlines",
+   "industry": "Consumer services",
+   "subsector": "Airlines",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shenzhen Energy",
+   "industry": "Utilities",
+   "subsector": "Conventional electricity",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shenzhen Media Group",
+   "industry": "Consumer services",
+   "subsector": "Broadcasting & entertainment",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shinho",
+   "industry": "Consumer goods",
+   "subsector": "Food products",
+   "hq": "Yantai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shougang",
+   "industry": "Basic materials",
+   "subsector": "Iron & steel",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Shui On Land",
+   "industry": "Financials",
+   "subsector": "Real estate holding & development",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sichuan Airlines",
+   "industry": "Consumer services",
+   "subsector": "Airlines",
+   "hq": "Chengdu",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sieyuan Electric",
+   "industry": "Industrials",
+   "subsector": "Electrical equipment",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Simcere Pharmaceutical",
+   "industry": "Health care",
+   "subsector": "Pharmaceuticals",
+   "hq": "Nanjing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sina Corporation",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sinoenergy",
+   "industry": "Oil & gas",
+   "subsector": "Exploration & production",
+   "hq": "Qingdao",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sinopec",
+   "industry": "Oil & gas",
+   "subsector": "Exploration & production",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sinopharm Group",
+   "industry": "Health care",
+   "subsector": "Pharmaceuticals",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sinosteel",
+   "industry": "Basic materials",
+   "subsector": "Iron & steel",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sinovac Biotech",
+   "industry": "Health care",
+   "subsector": "Pharmaceuticals",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Skyworth",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "SmithStreetSolutions",
+   "industry": "Industrials",
+   "subsector": "Business support services",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sohu",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "State Grid Corporation of China",
+   "industry": "Utilities",
+   "subsector": "Conventional electricity",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Suning Commerce Group",
+   "industry": "Consumer services",
+   "subsector": "Broadline retailers",
+   "hq": "Nanjing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Suntech Power",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Wuxi",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Sunwoda",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Suzhou Synta Optical Technology",
+   "industry": "Consumer goods",
+   "subsector": "Recreational products",
+   "hq": "Suzhou, Jiangsu",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "SVOLT",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Changzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "TCL Technology",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Huizhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Telesail Technology",
+   "industry": "Telecommunications",
+   "subsector": "Fixed line telecommunications",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Tencent",
+   "industry": "Conglomerate",
+   "subsector": "-",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Tianan Insurance",
+   "industry": "Financials",
+   "subsector": "Full line insurance",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Tianjin FAW",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Tianjin",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Tongrentang",
+   "industry": "Health care",
+   "subsector": "Pharmaceuticals",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Topray Solar",
+   "industry": "Utilities",
+   "subsector": "Alternative electricity",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "TP-Link",
+   "industry": "Technology",
+   "subsector": "Telecommunications equipment",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Trands",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Dalian",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Tsingtao Brewery",
+   "industry": "Consumer goods",
+   "subsector": "Brewers",
+   "hq": "Qingdao",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "UnionPay",
+   "industry": "Financials",
+   "subsector": "Consumer services",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Vanke",
+   "industry": "Financials",
+   "subsector": "Real estate holding & development",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Vinda International",
+   "industry": "Basic materials",
+   "subsector": "Paper",
+   "hq": "Xinhui District",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Vipshop",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Guangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Vivo (technology company)",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Dongguang",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Vsun",
+   "industry": "Technology",
+   "subsector": "Telecommunications equipment",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Wallace (fast food chain)",
+   "industry": "Consumer services",
+   "subsector": "Restaurants & bars",
+   "hq": "Fuzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Wanda Group",
+   "industry": "Conglomerates",
+   "subsector": "-",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "WeLion",
+   "industry": "Industrials",
+   "subsector": "Electronic equipment",
+   "hq": "Changzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Wumart",
+   "industry": "Consumer goods",
+   "subsector": "Food retailers & wholesalers",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "WuXi PharmaTech",
+   "industry": "Health care",
+   "subsector": "Pharmaceuticals",
+   "hq": "Shanghai",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "XCMG",
+   "industry": "Industrials",
+   "subsector": "Industrial machinery",
+   "hq": "Xuzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Xiaomi",
+   "industry": "Technology",
+   "subsector": "Consumer electronics",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "XPeng",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Guangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Xtep",
+   "industry": "Consumer goods",
+   "subsector": "Clothing & accessories",
+   "hq": "Quanzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Yadea",
+   "industry": "Consumer goods",
+   "subsector": "Recreational products",
+   "hq": "Wuxi",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "YaqinAudio",
+   "industry": "Consumer goods",
+   "subsector": "Consumer electronics",
+   "hq": "Foshan",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Yili Group",
+   "industry": "Consumer goods",
+   "subsector": "Food products",
+   "hq": "Hohhot",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Yonyou",
+   "industry": "Technology",
+   "subsector": "Software",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Yutong",
+   "industry": "Industrials",
+   "subsector": "Commercial vehicles",
+   "hq": "Zhengzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "ZGC Motors",
+   "industry": "Industrials",
+   "subsector": "Industrial machinery",
+   "hq": "Changzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Zhihu",
+   "industry": "Technology",
+   "subsector": "Internet",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Zhongjin Gold",
+   "industry": "Basic materials",
+   "subsector": "Gold mining",
+   "hq": "Beijing",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Zhongjin Lingnan",
+   "industry": "Basic materials",
+   "subsector": "Nonferrous metals",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Zhujiang Beer",
+   "industry": "Consumer goods",
+   "subsector": "Brewers",
+   "hq": "Guangzhou",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "Zoomlion",
+   "industry": "Industrials",
+   "subsector": "Industrial machinery",
+   "hq": "Changsha",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "ZTE",
+   "industry": "Technology",
+   "subsector": "Telecommunications equipment",
+   "hq": "Shenzhen",
+   "section": "Notable firms",
+   "defunct": false
+  },
+  {
+   "company": "ZX Auto",
+   "industry": "Consumer goods",
+   "subsector": "Automobiles",
+   "hq": "Baoding",
+   "section": "Notable firms",
+   "defunct": false
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+name: S20 LCA employer universe
+
+# S20 census instrument (B-axis): download the FULL quarterly LCA
+# disclosure file and commit the unique-employer aggregation.
+#
+# WHY HERE: egress matrix (measured S11 + S19) — HK sandbox direct →
+# Akamai 403; supabase proxy → 200 but truncated at ~10.5MB (the real
+# quarterly file is larger → BadZipFile even though PK magic looks
+# right); GHA runner (Azure US) → full file. Same transport story as
+# h1b-extract.yml, but this extracts the FULL employer universe (not
+# just the watch roster's employers).
+#
+# Output: ingest/data/ats_seed/s20_census/lca_employers_fy2026_q3.json
+# (checkpoint-committed; the private archive back-syncs it via the
+# mirror script's s20_census back-sync step).
+#
+# Cadence: workflow_dispatch only.
+
+on:
+  workflow_dispatch:
+    inputs:
+      quarter:
+        description: "FYxxxx_Qn (empty = FY2026_Q3)"
+        default: "FY2026_Q3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: s20-lca-employers
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install openpyxl
+        run: pip install --quiet openpyxl
+
+      - name: Download LCA disclosure file
+        env:
+          QUARTER: ${{ inputs.quarter }}
+        run: |
+          Q="${QUARTER:-FY2026_Q3}"
+          mkdir -p ingest/data/ats_seed/s20_census
+          for BASE in "https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs" "https://www.dol.gov/media"; do
+            URL="$BASE/LCA_Disclosure_Data_${Q}.xlsx"
+            echo "trying $URL"
+            if curl -sfL --retry 3 -A "Mozilla/5.0 (X11; Linux x86_64)" -o "lca_${Q}.xlsx" "$URL"; then
+              SZ=$(stat -c%s "lca_${Q}.xlsx")
+              echo "downloaded $URL ($SZ bytes)"
+              if [ "$SZ" -gt 1000000 ]; then break; fi
+            fi
+          done
+          SZ=$(stat -c%s "lca_${Q}.xlsx" 2>/dev/null || echo 0)
+          if [ "$SZ" -lt 1000000 ]; then
+            echo "::error::LCA file download failed (size $SZ)"
+            exit 1
+          fi
+          # zip sanity: the central directory must parse (guards the
+          # truncation-dressed-as-success trap)
+          python3 -c "import zipfile,sys; zipfile.ZipFile('lca_${Q}.xlsx').namelist(); print('zip OK')" || { echo '::error::downloaded file is not a valid zip (truncated?)'; exit 1; }
+
+      - name: Aggregate employer universe
+        env:
+          QUARTER: ${{ inputs.quarter }}
+        run: |
+          Q="${QUARTER:-FY2026_Q3}"
+          python3 scripts/s20_lca_employers.py "lca_${Q}.xlsx" \
+            "ingest/data/ats_seed/s20_census/lca_employers_${Q,,}.json"
+
+      - name: Commit checkpoint
+        run: |
+          git config user.name "s20-lca-bot"
+          git config user.email "s20-lca-bot@users.noreply.github.com"
+          git add ingest/data/ats_seed/s20_census/lca_employers_*.json
+          if git diff --cached --quiet; then
+            echo "no changes (already committed)"
+          else
+            git commit -m "s20 LCA employer universe checkpoint (Q:${{ inputs.quarter || 'FY2026_Q3' }})"
+            git push origin main
+          fi
