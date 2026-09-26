@@ -42,7 +42,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install openpyxl
-        run: pip install --quiet openpyxl
+        run: pip install --quiet requests openpyxl
 
       - name: Download LCA disclosure file
         env:
