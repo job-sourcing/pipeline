@@ -1,0 +1,31 @@
+{
+ "brand": "Titan Sports",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:47:12.970Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "titan",
+   "spec": "ashby:titan",
+   "title": " (12 jobs)",
+   "jobs": 12
+  }
+ ],
+ "best": {
+  "spec": "ashby:titan",
+  "platform": "ashby",
+  "title": " (12 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (12 jobs)",
+  "brand": "Titan Sports",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — ashby titan US roles; the wiki article is a newspaper"
+}

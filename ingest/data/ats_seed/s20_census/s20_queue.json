@@ -1,528 +1,14 @@
 {
- "built": "2026-09-27T01:30:22Z",
+ "built": "2026-09-27T04:17:39Z",
  "counts": {
-  "wire_now": 14,
-  "probe_A": 131,
-  "probe_B": 207,
-  "rejected": 72,
-  "unverified": 0
+  "wire_now": 0,
+  "probe_A": 82,
+  "probe_B": 200,
+  "rejected": 70,
+  "unverified": 21,
+  "demoted_by_probe": 11
  },
- "wire_now": [
-  {
-   "name": "SOHO China",
-   "family": [
-    "SOHO China"
-   ],
-   "sector": "real_estate",
-   "brand": "SOHO China",
-   "note": "Chinese real estate developer with matching US entity and ATS board",
-   "lca": {
-    "employer": "SOHO STUDIO LLC",
-    "filings": 2,
-    "states": [
-     "NY"
-    ],
-    "median_wage": 99750,
-    "naics": "42499"
-   },
-   "lca_employers": [
-    "SOHO STUDIO LLC"
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "sohohouseco",
-     "company": "Soho House & Co.",
-     "job_count": 401,
-     "board_url": "https://boards.greenhouse.io/sohohouseco"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "GenScript Biotech",
-   "family": [
-    "GenScript Biotech"
-   ],
-   "sector": "biotech",
-   "brand": "GenScript",
-   "note": "LCA employer and ATS board both match GenScript's US operations",
-   "lca": {
-    "employer": "GENSCRIPT USA INC.",
-    "filings": 30,
-    "states": [
-     "NJ",
-     "WA",
-     "MA",
-     "CA",
-     "NY",
-     "MD"
-    ],
-    "median_wage": 76000,
-    "naics": "541714"
-   },
-   "lca_employers": [
-    "GENSCRIPT USA INC."
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "genscript",
-     "company": "GenScript/ProBio",
-     "job_count": 87,
-     "board_url": "https://boards.greenhouse.io/genscript"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "Legend Holdings",
-   "family": [
-    "Legend Biotech Corp",
-    "Legend Holdings"
-   ],
-   "sector": "biotech",
-   "brand": "Legend Biotech",
-   "note": "LCA employer and ATS boards both match Legend Biotech's US operations",
-   "lca": {
-    "employer": "LEGEND BIOTECH USA, INC.",
-    "filings": 21,
-    "states": [
-     "NJ"
-    ],
-    "median_wage": 113000,
-    "naics": "325412"
-   },
-   "lca_employers": [
-    "LEGEND BIOTECH USA, INC."
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "legendcareers",
-     "company": "Legend Biotech US",
-     "job_count": 73,
-     "board_url": "https://boards.greenhouse.io/legendcareers"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "legendcareerseu",
-     "company": "Legend Biotech EU",
-     "job_count": 28,
-     "board_url": "https://boards.greenhouse.io/legendcareerseu"
-    },
-    {
-     "platform": "ashby",
-     "slug": "legend-xyz",
-     "company": "Legend Labs, Inc.",
-     "job_count": 2,
-     "board_url": "https://jobs.ashbyhq.com/legend-xyz"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "legendyounggraduateeu",
-     "company": "Legend Biotech EU Young Graduates",
-     "job_count": 0,
-     "board_url": "https://boards.greenhouse.io/legendyounggraduateeu"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "Turing Robot",
-   "family": [
-    "Turing Robot"
-   ],
-   "sector": "tech_ai",
-   "brand": "Turing Robot",
-   "note": "Chinese AI company with matching LCA and ATS entities",
-   "lca": {
-    "employer": "TURING ENTERPRISES INC.",
-    "filings": 26,
-    "states": [
-     "CA",
-     "TX",
-     "NY",
-     "NJ",
-     "PA"
-    ],
-    "median_wage": 186805,
-    "naics": "541519"
-   },
-   "lca_employers": [
-    "TURING ENTERPRISES INC."
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "turing",
-     "company": "Turing",
-     "job_count": 23,
-     "board_url": "https://boards.greenhouse.io/turing"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "PAX Technology",
-   "family": [
-    "PAX Technology"
-   ],
-   "sector": "hardware",
-   "brand": "PAX Technology",
-   "note": "Chinese payment terminal company with matching LCA employer and ATS board",
-   "lca": {
-    "employer": "PAX TECHNOLOGY INC.",
-    "filings": 16,
-    "states": [
-     "FL",
-     "GA"
-    ],
-    "median_wage": 105850,
-    "naics": "4234"
-   },
-   "lca_employers": [
-    "PAX TECHNOLOGY INC."
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "paxlabs",
-     "company": "PAX Labs",
-     "job_count": 4,
-     "board_url": "https://boards.greenhouse.io/paxlabs"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "CSG Holding",
-   "family": [
-    "CSG Holding"
-   ],
-   "sector": "consulting_staffing",
-   "brand": "CSG Holding",
-   "note": "Chinese construction company with matching LCA employer and ATS board",
-   "lca": {
-    "employer": "CSG SYSTEMS INC. D/B/A CSG",
-    "filings": 11,
-    "states": [
-     "NE",
-     "TX",
-     "MA",
-     "NC",
-     "CO",
-     "OH"
-    ],
-    "median_wage": 124612,
-    "naics": "541511"
-   },
-   "lca_employers": [
-    "CSG SYSTEMS INC. D/B/A CSG"
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "csgconsultants",
-     "company": "CSG Consultants",
-     "job_count": 18,
-     "board_url": "https://boards.greenhouse.io/csgconsultants"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "BDA China Limited",
-   "family": [
-    "BDA China Limited"
-   ],
-   "sector": "consulting_staffing",
-   "brand": "BDA China Limited",
-   "note": "Chinese investment firm with matching LCA employer and ATS board",
-   "lca": {
-    "employer": "BDA PARTNERS INC.",
-    "filings": 1,
-    "states": [
-     "NY"
-    ],
-    "median_wage": 218000,
-    "naics": "52315"
-   },
-   "lca_employers": [
-    "BDA PARTNERS INC."
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "bdainc",
-     "company": "BDA",
-     "job_count": 48,
-     "board_url": "https://boards.greenhouse.io/bdainc"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "Noah Holdings",
-   "family": [
-    "Noah Holdings"
-   ],
-   "sector": "biotech",
-   "brand": "Noah Medical",
-   "note": "Chinese financial company with US medical device subsidiary",
-   "lca": {
-    "employer": "NOAH MEDICAL CORPORATION",
-    "filings": 6,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 166025,
-    "naics": "339112"
-   },
-   "lca_employers": [
-    "NOAH MEDICAL CORPORATION"
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "noahmedical",
-     "company": "Noah Medical",
-     "job_count": 17,
-     "board_url": "https://boards.greenhouse.io/noahmedical"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "Hello (Chinese company)",
-   "family": [
-    "Hello (Chinese company)"
-   ],
-   "sector": "healthcare",
-   "brand": "Hello",
-   "note": "Chinese health technology company with US subsidiaries",
-   "lca": {
-    "employer": "HELLO CHAPTER LLC",
-    "filings": 5,
-    "states": [
-     "NY"
-    ],
-    "median_wage": 90000,
-    "naics": "236118"
-   },
-   "lca_employers": [
-    "HELLO CHAPTER LLC"
-   ],
-   "ats": [
-    {
-     "platform": "ashby",
-     "slug": "hellopatient",
-     "company": "Hello Patient",
-     "job_count": 16,
-     "board_url": "https://jobs.ashbyhq.com/hellopatient"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "helloheart",
-     "company": "Hello Heart",
-     "job_count": 13,
-     "board_url": "https://boards.greenhouse.io/helloheart"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "helloalice",
-     "company": "Hello Alice",
-     "job_count": 1,
-     "board_url": "https://boards.greenhouse.io/helloalice"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "Fourier (company)",
-   "family": [
-    "Fourier (company)"
-   ],
-   "sector": "tech_ai",
-   "brand": "Fourier",
-   "note": "Chinese company with matching LCA employer and ATS board",
-   "lca": {
-    "employer": "FOURIER EARTH, INC.",
-    "filings": 6,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 186000,
-    "naics": "335999"
-   },
-   "lca_employers": [
-    "FOURIER EARTH, INC."
-   ],
-   "ats": [
-    {
-     "platform": "ashby",
-     "slug": "fourier",
-     "company": "Fourier",
-     "job_count": 7,
-     "board_url": "https://jobs.ashbyhq.com/fourier"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "Airspace Industry Corporation of China",
-   "family": [
-    "Airspace Industry Corporation of China"
-   ],
-   "sector": "aviation",
-   "brand": "Airspace",
-   "note": "Chinese aerospace company with matching LCA and ATS boards",
-   "lca": {
-    "employer": "AIRSPACE EXPERIENCE TECHNOLOGIES INC",
-    "filings": 3,
-    "states": [
-     "MI"
-    ],
-    "median_wage": 125000,
-    "naics": "33641"
-   },
-   "lca_employers": [
-    "AIRSPACE EXPERIENCE TECHNOLOGIES INC"
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "airspace",
-     "company": "Airspace",
-     "job_count": 13,
-     "board_url": "https://boards.greenhouse.io/airspace"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "Honor 30 Pro",
-   "family": [
-    "Honor (company)",
-    "Honor 30 Pro"
-   ],
-   "sector": "hardware",
-   "brand": "Honor",
-   "note": "device-model article of the Honor brand (Huawei spin-off); family carries 'Honor (company)'; HONOR TECHNOLOGY INC is the real US entity; board identity to be live-confirmed by probe (analyst verdict, LLM quota)",
-   "lca": {
-    "employer": "HONOR TECHNOLOGY, INC.",
-    "filings": 1,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 320000,
-    "naics": "621610"
-   },
-   "lca_employers": [
-    "HONOR TECHNOLOGY, INC."
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "honor",
-     "company": "Honor",
-     "job_count": 12,
-     "board_url": "https://boards.greenhouse.io/honor"
-    },
-    {
-     "platform": "ashby",
-     "slug": "servedwithhonor",
-     "company": "Served With Honor",
-     "job_count": 6,
-     "board_url": "https://jobs.ashbyhq.com/servedwithhonor"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "honorfoods",
-     "company": "Honor Foods",
-     "job_count": 3,
-     "board_url": "https://boards.greenhouse.io/honorfoods"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "newhonorsociety",
-     "company": "New Honor Society",
-     "job_count": 1,
-     "board_url": "https://boards.greenhouse.io/newhonorsociety"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "Paradox Interactive",
-   "family": [
-    "Paradox Interactive"
-   ],
-   "sector": "gaming",
-   "brand": "Paradox Interactive",
-   "note": "Owned by Tencent; LCA and ATS boards match the company",
-   "lca": {
-    "employer": "PARADOX, INC.",
-    "filings": 1,
-    "states": [
-     "AZ"
-    ],
-    "median_wage": 167000,
-    "naics": "561311"
-   },
-   "lca_employers": [
-    "PARADOX, INC."
-   ],
-   "ats": [
-    {
-     "platform": "ashby",
-     "slug": "paradox",
-     "company": "Paradox",
-     "job_count": 7,
-     "board_url": "https://jobs.ashbyhq.com/paradox"
-    }
-   ],
-   "evidence": "lca+ats"
-  },
-  {
-   "name": "BIT Life Sciences",
-   "family": [
-    "BIT Life Sciences"
-   ],
-   "sector": "biotech",
-   "brand": "BIT Life Sciences",
-   "note": "Chinese biotech company with US entity BIT REACTOR LLC",
-   "lca": {
-    "employer": "BIT REACTOR LLC",
-    "filings": 1,
-    "states": [
-     "MD"
-    ],
-    "median_wage": 108045,
-    "naics": "339930"
-   },
-   "lca_employers": [
-    "BIT REACTOR LLC"
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "bitbio",
-     "company": "bit.bio",
-     "job_count": 1,
-     "board_url": "https://boards.greenhouse.io/bitbio"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "bitreactor",
-     "company": "Bit Reactor",
-     "job_count": 0,
-     "board_url": "https://boards.greenhouse.io/bitreactor"
-    }
-   ],
-   "evidence": "lca+ats"
-  }
- ],
+ "wire_now": [],
  "probe_A": [
   {
    "name": "CSC Financial",
@@ -547,7 +33,8 @@
     "CSC  INVESTMENTS II, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Fuyao Group",
@@ -571,14 +58,66 @@
     "FUYAO GLASS AMERICA INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Lenovo",
    "family": [
+    "Aigo",
+    "Anbang",
+    "Bitmain",
+    "BrainCo",
+    "Bullish",
+    "COSCO",
+    "CRRC",
+    "Cainiao",
+    "Chagee",
+    "Chery",
+    "Creality",
+    "DJI",
+    "Dicos",
+    "Dobot",
+    "ELong",
+    "Futu",
+    "Goertek",
+    "Goldwind",
+    "Goodix",
+    "Haidilao",
+    "Heytea",
+    "Hisense",
+    "ISoftStone",
+    "Innoscience",
+    "Krafton",
     "Lenovo",
-    "Lenovo Center",
-    "Lenovo Cloud"
+    "Lumena",
+    "Luxshare",
+    "MINISO",
+    "Manus",
+    "Momenta",
+    "Orbbec",
+    "Pactera",
+    "Pengyou",
+    "Pimax",
+    "Putzmeister",
+    "RoboSense",
+    "Sanhua",
+    "Sany",
+    "Silergy",
+    "Sinopec",
+    "Skyworth",
+    "Sungrow",
+    "Sunwin",
+    "Swire",
+    "Tilta",
+    "Ubiquant",
+    "VTEX",
+    "Virtuos",
+    "Westlake",
+    "XCMG",
+    "XtalPi",
+    "ZPMC",
+    "Zhongding"
    ],
    "sector": "hardware",
    "brand": "Lenovo",
@@ -597,10 +136,63 @@
     "naics": "334111"
    },
    "lca_employers": [
-    "LENOVO (UNITED STATES) INC"
+    "AIGO GLOBAL INC.",
+    "ANBANG INSURANCE CENTER",
+    "BITMAIN DELAWARE HOLDING COMPANY, INC.",
+    "BRAINCO TECHNOLOGIES, INC.",
+    "BULLISH US LLC",
+    "CAINIAO SUPPLY CHAIN U.S. INC.",
+    "CENTIFIC GLOBAL SOLUTIONS, INC. (FKA \"PACTERA TECHNOLOGIES NA, INC.\")",
+    "CHAGEE CA LLC",
+    "CHERY FORKLIFT (NEW YORK) INC",
+    "COSCO FIRE PROTECTION, INC.",
+    "CREALITY INC.",
+    "CRRC MA CORPORATION",
+    "DJI TECHNOLOGY INC.",
+    "DOBOT USA LLC",
+    "ELONG INTERNATIONAL USA INC.",
+    "FUTU CLEARING INC.",
+    "GOERTEK ELECTRONICS, INC.",
+    "GOLDWIND USA, INC.",
+    "GOODIX TECHNOLOGY INC.",
+    "HAIDILAO RESTAURANT GROUP, INC.",
+    "HEYTEA USA INC",
+    "HISENSE USA CORPORATION",
+    "INNOSCIENCE AMERICA, INC.",
+    "ISOFTSTONE, INC.",
+    "KRAFTON AMERICAS, INC.",
+    "LENOVO (UNITED STATES) INC",
+    "LUMENA SYSTEMS, INC.",
+    "LUXSHARE TECHNOLOGIES INTERNATIONAL, INC.",
+    "MANUS BIO INC.",
+    "MINISO DEPOT CA, INC.",
+    "MOMENTA USA, INC.",
+    "ORBBEC 3D TECHNOLOGY INTERNATIONAL, INC.",
+    "PENGYOU CORP.",
+    "PIMAX INNOVATION, INC.",
+    "PUTZMEISTER AMERICA, INC.",
+    "ROBOSENSE INC.",
+    "SANHUA INTERNATIONAL INC.",
+    "SANY AMERICA INC.",
+    "SILERGY TECHNOLOGY",
+    "SINOPEC USA INC.",
+    "SKYWORTH USA CORPORATION",
+    "SUNGROW USA CORPORATION",
+    "SUNWIN GLOBAL INDUSTRY INC.",
+    "SWIRE PACIFIC HOLDINGS, INC.",
+    "TILTA INC.",
+    "UBIQUANT US TECH, LLC",
+    "VIRTUOS NORTH AMERICA, LLC",
+    "VTEX COMMERCE CLOUD SOLUTIONS LLC",
+    "WESTLAKE MANAGEMENT SERVICES INC.",
+    "XCMG AMERICA FINANCIAL LLC",
+    "XTALPI INC.",
+    "ZHONGDING SEALING PARTS USA, INC.",
+    "ZPMC NORTH AMERICA, INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "SG Automotive",
@@ -625,7 +217,8 @@
     "SG AMERICAS OPERATIONAL SERVICES, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "WuXi Biologics",
@@ -653,7 +246,8 @@
     "WUXI BIOLOGICS USA, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "OmniVision Group",
@@ -677,7 +271,8 @@
     "OMNIVISION TECHNOLOGIES, INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Foxconn Industrial Internet",
@@ -701,7 +296,8 @@
     "FOXCONN ASSEMBLY LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "UP Fintech Holding Ltd",
@@ -726,7 +322,8 @@
     "APEX FINTECH SERVICES LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "dict_collision"
   },
   {
    "name": "Nan Nan Resources",
@@ -750,7 +347,8 @@
     "NAN, INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "BeOne Medicines",
@@ -778,7 +376,8 @@
     "BEONE MEDICINES USA, INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Aesthetic Medical International Holdings Group Ltd",
@@ -801,7 +400,8 @@
     "AESTHETIC RECORD LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Mattson Technology",
@@ -825,60 +425,8 @@
     "MATTSON TECHNOLOGY, INC."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Sungrow",
-   "family": [
-    "Sungrow"
-   ],
-   "sector": "ev_auto",
-   "brand": "Sungrow",
-   "note": "No ATS board listed.",
-   "lca": {
-    "employer": "SUNGROW USA CORPORATION",
-    "filings": 15,
-    "states": [
-     "TX",
-     "MA",
-     "AZ",
-     "CA",
-     "WA"
-    ],
-    "median_wage": 119800,
-    "naics": "423610"
-   },
-   "lca_employers": [
-    "SUNGROW USA CORPORATION"
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Cainiao",
-   "family": [
-    "Cainiao"
-   ],
-   "sector": "logistics",
-   "brand": "Cainiao",
-   "note": "No ATS board listed.",
-   "lca": {
-    "employer": "CAINIAO SUPPLY CHAIN U.S. INC.",
-    "filings": 14,
-    "states": [
-     "CA",
-     "TX",
-     "FL",
-     "GA"
-    ],
-    "median_wage": 60507,
-    "naics": "493110"
-   },
-   "lca_employers": [
-    "CAINIAO SUPPLY CHAIN U.S. INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Oasis Management",
@@ -901,56 +449,8 @@
     "OASIS PROFESSIONAL MANAGEMENT GROUP, LTD."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "CRRC",
-   "family": [
-    "CRRC",
-    "CRRC Group"
-   ],
-   "sector": "industrial",
-   "brand": "CRRC",
-   "note": "No ATS board listed.",
-   "lca": {
-    "employer": "CRRC MA CORPORATION",
-    "filings": 12,
-    "states": [
-     "MA",
-     "CA"
-    ],
-    "median_wage": 86278,
-    "naics": "33651"
-   },
-   "lca_employers": [
-    "CRRC MA CORPORATION"
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Hisense",
-   "family": [
-    "Hisense"
-   ],
-   "sector": "consumer",
-   "brand": "Hisense",
-   "note": "No ATS board listed.",
-   "lca": {
-    "employer": "HISENSE USA CORPORATION",
-    "filings": 12,
-    "states": [
-     "GA",
-     "NJ"
-    ],
-    "median_wage": 75000,
-    "naics": "423620"
-   },
-   "lca_employers": [
-    "HISENSE USA CORPORATION"
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Yum China",
@@ -976,31 +476,8 @@
     "YUM CONNECT, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "MINISO",
-   "family": [
-    "MINISO",
-    "MINISO Group Holding Ltd"
-   ],
-   "sector": "consumer",
-   "brand": "MINISO",
-   "note": "Chinese discount retail chain expanding globally",
-   "lca": {
-    "employer": "MINISO DEPOT CA, INC.",
-    "filings": 11,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 134304,
-    "naics": "551114"
-   },
-   "lca_employers": [
-    "MINISO DEPOT CA, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Pop Mart",
@@ -1023,32 +500,8 @@
     "POP MART AMERICAS INC."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Sanhua",
-   "family": [
-    "Sanhua"
-   ],
-   "sector": "industrial",
-   "brand": "Sanhua",
-   "note": "Chinese automotive components manufacturer",
-   "lca": {
-    "employer": "SANHUA INTERNATIONAL INC.",
-    "filings": 11,
-    "states": [
-     "MI",
-     "CA",
-     "TX"
-    ],
-    "median_wage": 108000,
-    "naics": "33291"
-   },
-   "lca_employers": [
-    "SANHUA INTERNATIONAL INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Shanghai Forte Land",
@@ -1071,7 +524,8 @@
     "FORTE CONSTRUCTION CORP"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Techtronic Industries",
@@ -1094,7 +548,8 @@
     "TECHTRONIC CORDLESS GP"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Beijing Enlight Media",
@@ -1122,7 +577,8 @@
     "ENLIGHT GROWTH IT, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Black Sesame Technologies",
@@ -1145,13 +601,13 @@
     "BLACK SESAME TECHNOLOGIES INC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "GAC Commercial Vehicle",
    "family": [
-    "GAC Commercial Vehicle",
-    "GAC Group"
+    "GAC Commercial Vehicle"
    ],
    "sector": "ev_auto",
    "brand": "GAC Commercial Vehicle",
@@ -1172,7 +628,8 @@
     "GAC SOLUTIONS INC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "GAC Mitsubishi",
@@ -1198,7 +655,8 @@
     "GAC SOLUTIONS INC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "GAC Toyota",
@@ -1224,30 +682,8 @@
     "GAC SOLUTIONS INC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "BrainCo",
-   "family": [
-    "BrainCo"
-   ],
-   "sector": "tech_ai",
-   "brand": "BrainCo",
-   "note": "Chinese tech company with matching LCA employer but no ATS board",
-   "lca": {
-    "employer": "BRAINCO TECHNOLOGIES, INC.",
-    "filings": 7,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 178298,
-    "naics": "541511"
-   },
-   "lca_employers": [
-    "BRAINCO TECHNOLOGIES, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Mango TV",
@@ -1271,56 +707,8 @@
     "MANGO TECHNOLOGIES, INC."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Pengyou",
-   "family": [
-    "Pengyou"
-   ],
-   "sector": "tech_ai",
-   "brand": "Pengyou",
-   "note": "Chinese tech company with matching LCA employer but no ATS board",
-   "lca": {
-    "employer": "PENGYOU CORP.",
-    "filings": 7,
-    "states": [
-     "NY",
-     "WA",
-     "CA",
-     "RI"
-    ],
-    "median_wage": 300000,
-    "naics": "541519"
-   },
-   "lca_employers": [
-    "PENGYOU CORP."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Ubiquant",
-   "family": [
-    "Ubiquant"
-   ],
-   "sector": "finance",
-   "brand": "Ubiquant",
-   "note": "Chinese fintech company with matching LCA employer but no ATS board",
-   "lca": {
-    "employer": "UBIQUANT US TECH, LLC",
-    "filings": 7,
-    "states": [
-     "NY"
-    ],
-    "median_wage": 159996,
-    "naics": "5417"
-   },
-   "lca_employers": [
-    "UBIQUANT US TECH, LLC"
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Hailiang Group",
@@ -1343,34 +731,8 @@
     "HAILIANG COPPER TEXAS INC."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "ISoftStone",
-   "family": [
-    "ISoftStone"
-   ],
-   "sector": "consulting_staffing",
-   "brand": "ISoftStone",
-   "note": "Direct match with LCA employer name, but no ATS board listed.",
-   "lca": {
-    "employer": "ISOFTSTONE, INC.",
-    "filings": 6,
-    "states": [
-     "WA",
-     "CA",
-     "NJ",
-     "NY",
-     "TX"
-    ],
-    "median_wage": 131997,
-    "naics": "541512"
-   },
-   "lca_employers": [
-    "ISOFTSTONE, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "China Merchants Bank",
@@ -1397,7 +759,8 @@
     "CHINA MERCHANTS BANK CO. LTD."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Ant Group",
@@ -1421,7 +784,8 @@
     "ANT TECHNOLOGIES U.S., INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Autel Intelligent Technology",
@@ -1444,7 +808,8 @@
     "AUTEL US INC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Brite Semiconductor",
@@ -1468,32 +833,8 @@
     "BRITE SYSTEMS, INC."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Chagee",
-   "family": [
-    "Chagee"
-   ],
-   "sector": "consumer",
-   "brand": "Chagee",
-   "note": "Direct match with LCA employer name, but no ATS board listed.",
-   "lca": {
-    "employer": "CHAGEE CA LLC",
-    "filings": 5,
-    "states": [
-     "TX",
-     "CA",
-     "NY"
-    ],
-    "median_wage": 141773,
-    "naics": "722515"
-   },
-   "lca_employers": [
-    "CHAGEE CA LLC"
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "China CITIC Bank",
@@ -1516,7 +857,8 @@
     "CHINA CITIC BANK INTERNATIONAL LIMITED"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "China Unicom",
@@ -1542,57 +884,8 @@
     "UNICOM TECHNOLOGIES, INC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Futu",
-   "family": [
-    "Futu",
-    "Futu Holdings Ltd"
-   ],
-   "sector": "finance",
-   "brand": "Futu",
-   "note": "LCA employer matches as US subsidiary of this Hong Kong fintech company.",
-   "lca": {
-    "employer": "FUTU CLEARING INC.",
-    "filings": 5,
-    "states": [
-     "TX",
-     "WA",
-     "NJ"
-    ],
-    "median_wage": 89000,
-    "naics": "523210"
-   },
-   "lca_employers": [
-    "FUTU CLEARING INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Goertek",
-   "family": [
-    "Goertek"
-   ],
-   "sector": "hardware",
-   "brand": "Goertek",
-   "note": "LCA employer matches as US subsidiary of this Chinese electronics manufacturer.",
-   "lca": {
-    "employer": "GOERTEK ELECTRONICS, INC.",
-    "filings": 5,
-    "states": [
-     "CA",
-     "WA"
-    ],
-    "median_wage": 160000,
-    "naics": "334310"
-   },
-   "lca_employers": [
-    "GOERTEK ELECTRONICS, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "MTR Corporation",
@@ -1618,53 +911,8 @@
     "MTR IT SOLUTIONS INC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Sany",
-   "family": [
-    "Sany"
-   ],
-   "sector": "industrial",
-   "brand": "Sany",
-   "note": "Chinese industrial equipment manufacturer with matching US entity",
-   "lca": {
-    "employer": "SANY AMERICA INC.",
-    "filings": 5,
-    "states": [
-     "GA"
-    ],
-    "median_wage": 127461,
-    "naics": "333120"
-   },
-   "lca_employers": [
-    "SANY AMERICA INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "XtalPi",
-   "family": [
-    "XtalPi"
-   ],
-   "sector": "biotech",
-   "brand": "XtalPi",
-   "note": "Chinese AI drug discovery company with matching US entity",
-   "lca": {
-    "employer": "XTALPI INC.",
-    "filings": 5,
-    "states": [
-     "MA"
-    ],
-    "median_wage": 78000,
-    "naics": "541714"
-   },
-   "lca_employers": [
-    "XTALPI INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Zhong Lun",
@@ -1688,7 +936,8 @@
     "ZHONG LUN LAW FIRM LLP"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Bitdeer Technologies Group",
@@ -1713,7 +962,8 @@
     "BITDEER INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "BBK Electronics",
@@ -1736,7 +986,8 @@
     "BBK ENTERPRISES, LLC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Dreame Technology",
@@ -1759,7 +1010,8 @@
     "DREAME TECHNOLOGY USA INC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "JAC Group",
@@ -1782,7 +1034,8 @@
     "JAC PRODUCTS, INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "WuXi AppTec",
@@ -1806,7 +1059,8 @@
     "WUXI APPTEC SALES, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "DeepRoute.ai",
@@ -1829,56 +1083,8 @@
     "DEEPROUTE.AI LTD."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "DJI",
-   "family": [
-    "DJI",
-    "DJI Air",
-    "DJI Sky City",
-    "DJI Spark"
-   ],
-   "sector": "hardware",
-   "brand": "DJI",
-   "note": "Chinese drone manufacturer with direct US entity match",
-   "lca": {
-    "employer": "DJI TECHNOLOGY INC.",
-    "filings": 3,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 73000,
-    "naics": "551112"
-   },
-   "lca_employers": [
-    "DJI TECHNOLOGY INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Dobot",
-   "family": [
-    "Dobot"
-   ],
-   "sector": "robotics",
-   "brand": "Dobot",
-   "note": "Chinese robotics company with direct US entity match",
-   "lca": {
-    "employer": "DOBOT USA LLC",
-    "filings": 3,
-    "states": [
-     "TX"
-    ],
-    "median_wage": 73757,
-    "naics": "423830"
-   },
-   "lca_employers": [
-    "DOBOT USA LLC"
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "EVE Energy",
@@ -1901,172 +1107,8 @@
     "EVE ENERGY NORTH AMERICA CORPORATION"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Foxit Software",
-   "family": [
-    "Foxit Software"
-   ],
-   "sector": "tech_ai",
-   "brand": "Foxit Software",
-   "note": "Chinese software company with direct US entity match",
-   "lca": {
-    "employer": "FOXIT SOFTWARE INCORPORATED",
-    "filings": 3,
-    "states": [
-     "CA",
-     "NJ"
-    ],
-    "median_wage": 104687,
-    "naics": "511210"
-   },
-   "lca_employers": [
-    "FOXIT SOFTWARE INCORPORATED"
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Heytea",
-   "family": [
-    "Heytea"
-   ],
-   "sector": "consumer",
-   "brand": "Heytea",
-   "note": "Chinese tea chain with direct US entity match",
-   "lca": {
-    "employer": "HEYTEA USA INC",
-    "filings": 3,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 109200,
-    "naics": "722515"
-   },
-   "lca_employers": [
-    "HEYTEA USA INC"
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Nio Inc.",
-   "family": [
-    "Nio Inc."
-   ],
-   "sector": "ev_auto",
-   "brand": "Nio",
-   "note": "Chinese electric vehicle manufacturer with direct US entity match",
-   "lca": {
-    "employer": "NIO USA, INC.",
-    "filings": 3,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 280000,
-    "naics": "336111"
-   },
-   "lca_employers": [
-    "NIO USA, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Skyworth",
-   "family": [
-    "Skyworth"
-   ],
-   "sector": "hardware",
-   "brand": "Skyworth",
-   "note": "Chinese electronics manufacturer with matching US entity",
-   "lca": {
-    "employer": "SKYWORTH USA CORPORATION",
-    "filings": 3,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 58282,
-    "naics": "423620"
-   },
-   "lca_employers": [
-    "SKYWORTH USA CORPORATION"
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "XCMG",
-   "family": [
-    "XCMG"
-   ],
-   "sector": "industrial",
-   "brand": "XCMG",
-   "note": "Chinese construction machinery manufacturer with matching US entity",
-   "lca": {
-    "employer": "XCMG AMERICA FINANCIAL LLC",
-    "filings": 3,
-    "states": [
-     "TX",
-     "NY"
-    ],
-    "median_wage": 66477,
-    "naics": "541611"
-   },
-   "lca_employers": [
-    "XCMG AMERICA FINANCIAL LLC"
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "ZPMC",
-   "family": [
-    "ZPMC"
-   ],
-   "sector": "industrial",
-   "brand": "ZPMC",
-   "note": "Chinese port machinery manufacturer with matching US entity",
-   "lca": {
-    "employer": "ZPMC NORTH AMERICA, INC.",
-    "filings": 3,
-    "states": [
-     "FL",
-     "CA",
-     "NJ"
-    ],
-    "median_wage": 73424,
-    "naics": "811310"
-   },
-   "lca_employers": [
-    "ZPMC NORTH AMERICA, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Luxshare",
-   "family": [
-    "Luxshare"
-   ],
-   "sector": "hardware",
-   "brand": "Luxshare",
-   "note": "Chinese electronics manufacturer with matching US entity",
-   "lca": {
-    "employer": "LUXSHARE TECHNOLOGIES INTERNATIONAL, INC.",
-    "filings": 3,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 232253,
-    "naics": "541519"
-   },
-   "lca_employers": [
-    "LUXSHARE TECHNOLOGIES INTERNATIONAL, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "dict_collision"
   },
   {
    "name": "Webull Corp",
@@ -2089,7 +1131,8 @@
     "WEBULL TECHNOLOGIES INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Aden Group",
@@ -2113,31 +1156,8 @@
     "ADEN STAFF, INC."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Aigo",
-   "family": [
-    "Aigo"
-   ],
-   "sector": "hardware",
-   "brand": "Aigo",
-   "note": "LCA employer matches as US subsidiary",
-   "lca": {
-    "employer": "AIGO GLOBAL INC.",
-    "filings": 2,
-    "states": [
-     "CA",
-     "WA"
-    ],
-    "median_wage": 79100,
-    "naics": "449210"
-   },
-   "lca_employers": [
-    "AIGO GLOBAL INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "AUX (company)",
@@ -2160,31 +1180,8 @@
     "AUX OFFICE INC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Bitmain",
-   "family": [
-    "Bitmain"
-   ],
-   "sector": "tech_ai",
-   "brand": "Bitmain",
-   "note": "LCA employer matches as US holding company",
-   "lca": {
-    "employer": "BITMAIN DELAWARE HOLDING COMPANY, INC.",
-    "filings": 2,
-    "states": [
-     "CO",
-     "TX"
-    ],
-    "median_wage": 63000,
-    "naics": "551112"
-   },
-   "lca_employers": [
-    "BITMAIN DELAWARE HOLDING COMPANY, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Chinatex Corporation",
@@ -2207,7 +1204,8 @@
     "CHINATEX ORIENTAL (U.S.A.) INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Chint Group",
@@ -2230,54 +1228,8 @@
     "CHINT POWER SYSTEMS AMERICA CO INC."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Goldwind",
-   "family": [
-    "Goldwind"
-   ],
-   "sector": "energy",
-   "brand": "Goldwind",
-   "note": "LCA employer matches company's US entity",
-   "lca": {
-    "employer": "GOLDWIND USA, INC.",
-    "filings": 2,
-    "states": [
-     "IL",
-     "TX"
-    ],
-    "median_wage": 87805,
-    "naics": "221115"
-   },
-   "lca_employers": [
-    "GOLDWIND USA, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Haidilao",
-   "family": [
-    "Haidilao"
-   ],
-   "sector": "consumer",
-   "brand": "Haidilao",
-   "note": "LCA employer matches company's US entity",
-   "lca": {
-    "employer": "HAIDILAO RESTAURANT GROUP, INC.",
-    "filings": 2,
-    "states": [
-     "CA"
-    ],
-    "median_wage": null,
-    "naics": "722511"
-   },
-   "lca_employers": [
-    "HAIDILAO RESTAURANT GROUP, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Joyson Safety Systems",
@@ -2300,30 +1252,8 @@
     "JOYSON SAFETY SYSTEMS ACQUISITION, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Lumena",
-   "family": [
-    "Lumena"
-   ],
-   "sector": "mining",
-   "brand": "Lumena",
-   "note": "Chinese mining company with matching US entity name",
-   "lca": {
-    "employer": "LUMENA SYSTEMS, INC.",
-    "filings": 2,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 269000,
-    "naics": "541511"
-   },
-   "lca_employers": [
-    "LUMENA SYSTEMS, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Marvelous (company)",
@@ -2347,54 +1277,8 @@
     "MARVELOUS TECHNOLOGIES INC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Momenta",
-   "family": [
-    "Momenta"
-   ],
-   "sector": "tech_ai",
-   "brand": "Momenta",
-   "note": "Chinese autonomous driving company with matching US entity",
-   "lca": {
-    "employer": "MOMENTA USA, INC.",
-    "filings": 2,
-    "states": [
-     "MA",
-     "CA"
-    ],
-    "median_wage": 97448,
-    "naics": "541511"
-   },
-   "lca_employers": [
-    "MOMENTA USA, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Orbbec",
-   "family": [
-    "Orbbec"
-   ],
-   "sector": "hardware",
-   "brand": "Orbbec",
-   "note": "Chinese 3D sensing company with matching US entity name",
-   "lca": {
-    "employer": "ORBBEC 3D TECHNOLOGY INTERNATIONAL, INC.",
-    "filings": 2,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 86400,
-    "naics": "54171"
-   },
-   "lca_employers": [
-    "ORBBEC 3D TECHNOLOGY INTERNATIONAL, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Paramount Skydance",
@@ -2418,30 +1302,8 @@
     "CBS INTERACTIVE INC., D/B/A PARAMOUNT SKYDANCE"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Putzmeister",
-   "family": [
-    "Putzmeister"
-   ],
-   "sector": "industrial",
-   "brand": "Putzmeister",
-   "note": "Chinese-owned German concrete machinery company with US entity",
-   "lca": {
-    "employer": "PUTZMEISTER AMERICA, INC.",
-    "filings": 2,
-    "states": [
-     "WI"
-    ],
-    "median_wage": 91815,
-    "naics": "333120"
-   },
-   "lca_employers": [
-    "PUTZMEISTER AMERICA, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Robam Appliances",
@@ -2465,7 +1327,8 @@
     "ROBAM APPLIANCES LA TRADE LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "TPV Technology",
@@ -2488,36 +1351,13 @@
     "TPV-USA CORP."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Virtuos",
-   "family": [
-    "Virtuos"
-   ],
-   "sector": "gaming",
-   "brand": "Virtuos",
-   "note": "Chinese game development company with matching US entity name",
-   "lca": {
-    "employer": "VIRTUOS NORTH AMERICA, LLC",
-    "filings": 2,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 185000,
-    "naics": "541511"
-   },
-   "lca_employers": [
-    "VIRTUOS NORTH AMERICA, LLC"
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Weichai Group",
    "family": [
-    "Weichai Group",
-    "Weichai Power"
+    "Weichai Group"
    ],
    "sector": "industrial",
    "brand": "Weichai",
@@ -2535,7 +1375,8 @@
     "WEICHAI AMERICA CORP."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Fang Holdings Ltd",
@@ -2559,7 +1400,8 @@
     "FANG LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "GreenTree Hospitality Group Ltd.",
@@ -2582,7 +1424,8 @@
     "GREENTREE HOSPITALITY GROUP, INC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Canaan Inc.",
@@ -2606,7 +1449,8 @@
     "CANAAN US INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Agora, Inc.",
@@ -2629,7 +1473,8 @@
     "AGORA DATA INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Antalpha Platform Holding Co",
@@ -2653,7 +1498,8 @@
     "ANTALPHA TECHNOLOGIES INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Amer Sports, Inc.",
@@ -2676,30 +1522,8 @@
     "AMER SPORTS WINTER & OUTDOOR COMPANY"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Anbang",
-   "family": [
-    "Anbang"
-   ],
-   "sector": "finance",
-   "brand": "Anbang",
-   "note": "Chinese insurance company based in Beijing with US LCA filings",
-   "lca": {
-    "employer": "ANBANG INSURANCE CENTER",
-    "filings": 1,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 72218,
-    "naics": "524210"
-   },
-   "lca_employers": [
-    "ANBANG INSURANCE CENTER"
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "BGI Group",
@@ -2722,7 +1546,8 @@
     "BGI FINANCIAL, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Bluestar Company",
@@ -2745,7 +1570,8 @@
     "BLUESTAR SYSTEMS, INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Camel Group",
@@ -2768,7 +1594,8 @@
     "CAMEL ENERGY, INC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Chaoda Modern Agriculture",
@@ -2791,7 +1618,8 @@
     "CHAODA GROUP USA CO. LTD."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Cheetah Mobile",
@@ -2815,30 +1643,8 @@
     "CHEETAH TECHNOLOGIES, INC."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Chery",
-   "family": [
-    "Chery"
-   ],
-   "sector": "ev_auto",
-   "brand": "Chery",
-   "note": "Major Chinese automaker with US entity for forklift operations",
-   "lca": {
-    "employer": "CHERY FORKLIFT (NEW YORK) INC",
-    "filings": 1,
-    "states": [
-     "NY"
-    ],
-    "median_wage": null,
-    "naics": "423810"
-   },
-   "lca_employers": [
-    "CHERY FORKLIFT (NEW YORK) INC"
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "COFCO Group",
@@ -2861,54 +1667,8 @@
     "COFCO INTERNATIONAL GRAINS US LLC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Creality",
-   "family": [
-    "Creality"
-   ],
-   "sector": "hardware",
-   "brand": "Creality",
-   "note": "LCA employer name matches company name",
-   "lca": {
-    "employer": "CREALITY INC.",
-    "filings": 1,
-    "states": [
-     "NY"
-    ],
-    "median_wage": 275000,
-    "naics": "456120"
-   },
-   "lca_employers": [
-    "CREALITY INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "ELong",
-   "family": [
-    "ELong",
-    "Elong Power Holding Ltd."
-   ],
-   "sector": "travel",
-   "brand": "ELong",
-   "note": "LCA employer name matches company name",
-   "lca": {
-    "employer": "ELONG INTERNATIONAL USA INC.",
-    "filings": 1,
-    "states": [
-     "TX"
-    ],
-    "median_wage": 76939,
-    "naics": "42361"
-   },
-   "lca_employers": [
-    "ELONG INTERNATIONAL USA INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Fufeng Group",
@@ -2931,53 +1691,8 @@
     "FUFENG USA INC."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Goodix",
-   "family": [
-    "Goodix"
-   ],
-   "sector": "hardware",
-   "brand": "Goodix",
-   "note": "US entity name matches fingerprint sensor company",
-   "lca": {
-    "employer": "GOODIX TECHNOLOGY INC.",
-    "filings": 1,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 74540,
-    "naics": "5417"
-   },
-   "lca_employers": [
-    "GOODIX TECHNOLOGY INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Innoscience",
-   "family": [
-    "Innoscience"
-   ],
-   "sector": "hardware",
-   "brand": "Innoscience",
-   "note": "US entity name matches GaN semiconductor company",
-   "lca": {
-    "employer": "INNOSCIENCE AMERICA, INC.",
-    "filings": 1,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 123531,
-    "naics": "334416"
-   },
-   "lca_employers": [
-    "INNOSCIENCE AMERICA, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Jereh Group",
@@ -3000,7 +1715,8 @@
     "AMERICAN JEREH INTERNATIONAL CORPORATION"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "King & Wood Mallesons",
@@ -3023,7 +1739,8 @@
     "KING & WOOD MALLESONS"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Lee Kum Kee",
@@ -3046,7 +1763,8 @@
     "LEE KUM KEE (USA) INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Niu Technologies",
@@ -3069,7 +1787,8 @@
     "NIU POWER INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Ofo (company)",
@@ -3092,168 +1811,8 @@
     "OFO EXPRESS INC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Pactera",
-   "family": [
-    "Pactera"
-   ],
-   "sector": "consulting_staffing",
-   "brand": "Pactera",
-   "note": "LCA employer matches company name and sector",
-   "lca": {
-    "employer": "CENTIFIC GLOBAL SOLUTIONS, INC. (FKA \"PACTERA TECHNOLOGIES NA, INC.\")",
-    "filings": 1,
-    "states": [
-     "NY"
-    ],
-    "median_wage": 180000,
-    "naics": "54151"
-   },
-   "lca_employers": [
-    "CENTIFIC GLOBAL SOLUTIONS, INC. (FKA \"PACTERA TECHNOLOGIES NA, INC.\")"
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Pimax",
-   "family": [
-    "Pimax"
-   ],
-   "sector": "hardware",
-   "brand": "Pimax",
-   "note": "VR headset manufacturer with direct US entity match",
-   "lca": {
-    "employer": "PIMAX INNOVATION, INC.",
-    "filings": 1,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 96000,
-    "naics": "3343"
-   },
-   "lca_employers": [
-    "PIMAX INNOVATION, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "POIZON",
-   "family": [
-    "POIZON"
-   ],
-   "sector": "ecommerce",
-   "brand": "POIZON",
-   "note": "Luxury resale platform with direct US entity match",
-   "lca": {
-    "employer": "POIZON INC",
-    "filings": 1,
-    "states": [
-     "NJ"
-    ],
-    "median_wage": 82701,
-    "naics": "488510"
-   },
-   "lca_employers": [
-    "POIZON INC"
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "RoboSense",
-   "family": [
-    "RoboSense"
-   ],
-   "sector": "tech_ai",
-   "brand": "RoboSense",
-   "note": "LiDAR sensor manufacturer with direct US entity match",
-   "lca": {
-    "employer": "ROBOSENSE INC.",
-    "filings": 1,
-    "states": [
-     "MI"
-    ],
-    "median_wage": 125986,
-    "naics": "54133"
-   },
-   "lca_employers": [
-    "ROBOSENSE INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Silergy",
-   "family": [
-    "Silergy"
-   ],
-   "sector": "hardware",
-   "brand": "Silergy",
-   "note": "Power semiconductor company with direct US entity match",
-   "lca": {
-    "employer": "SILERGY TECHNOLOGY",
-    "filings": 1,
-    "states": [
-     "NC"
-    ],
-    "median_wage": null,
-    "naics": "334413"
-   },
-   "lca_employers": [
-    "SILERGY TECHNOLOGY"
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Sinopec",
-   "family": [
-    "Sinopec"
-   ],
-   "sector": "energy",
-   "brand": "Sinopec",
-   "note": "Major Chinese energy company with direct US subsidiary match",
-   "lca": {
-    "employer": "SINOPEC USA INC.",
-    "filings": 1,
-    "states": [
-     "TX"
-    ],
-    "median_wage": 60029,
-    "naics": "424720"
-   },
-   "lca_employers": [
-    "SINOPEC USA INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Sunwin",
-   "family": [
-    "Sunwin"
-   ],
-   "sector": "energy",
-   "brand": "Sunwin",
-   "note": "Solar energy company with direct US entity match",
-   "lca": {
-    "employer": "SUNWIN GLOBAL INDUSTRY INC.",
-    "filings": 1,
-    "states": [
-     "NY"
-    ],
-    "median_wage": null,
-    "naics": "425120"
-   },
-   "lca_employers": [
-    "SUNWIN GLOBAL INDUSTRY INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Tecno Mobile",
@@ -3276,7 +1835,8 @@
     "TECNO GROUP LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "ThinkPad Helix",
@@ -3299,7 +1859,8 @@
     "THINKPAD FOUNDATION"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Tianjin Development",
@@ -3322,7 +1883,8 @@
     "TIANJIN BOND USA, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Tianjin Port (Group) Company",
@@ -3347,30 +1909,8 @@
     "TIANJIN BOND USA, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Tilta",
-   "family": [
-    "Tilta"
-   ],
-   "sector": "hardware",
-   "brand": "Tilta",
-   "note": "Chinese camera accessories manufacturer with US entity",
-   "lca": {
-    "employer": "TILTA INC.",
-    "filings": 1,
-    "states": [
-     "CA"
-    ],
-    "median_wage": null,
-    "naics": "443142"
-   },
-   "lca_employers": [
-    "TILTA INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Trina Solar",
@@ -3393,7 +1933,8 @@
     "T1 G1 DALLAS SOLAR MODULE TRINA LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Val Morgan",
@@ -3416,30 +1957,8 @@
     "ALPHA-VAL LLC"
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Yangtze Memory Technologies",
-   "family": [
-    "Yangtze Memory Technologies"
-   ],
-   "sector": "hardware",
-   "brand": "YMTC",
-   "note": "YMTC US entity 1 filing; entity-listed 2022 so US hiring minimal",
-   "lca": {
-    "employer": "YANGTZE MEMORY TECHNOLOGIES INC.",
-    "filings": 1,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 77796,
-    "naics": "33441"
-   },
-   "lca_employers": [
-    "YANGTZE MEMORY TECHNOLOGIES INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Yili Group",
@@ -3462,30 +1981,8 @@
     "YILI INDUSTRIAL U.S. CO. LTD."
    ],
    "ats": [],
-   "evidence": "lca"
-  },
-  {
-   "name": "Zhongding",
-   "family": [
-    "Zhongding"
-   ],
-   "sector": "industrial",
-   "brand": "Zhongding",
-   "note": "Chinese manufacturer with direct US entity",
-   "lca": {
-    "employer": "ZHONGDING SEALING PARTS USA, INC.",
-    "filings": 1,
-    "states": [
-     "MI"
-    ],
-    "median_wage": 64542,
-    "naics": "3262"
-   },
-   "lca_employers": [
-    "ZHONGDING SEALING PARTS USA, INC."
-   ],
-   "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "China COSCO Shipping",
@@ -3508,7 +2005,8 @@
     "COSCO FIRE PROTECTION, INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Sieyuan Electric",
@@ -3531,7 +2029,8 @@
     "SIEYUAN ELECTRIC USA, LLC"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Simcere Pharmaceutical",
@@ -3554,7 +2053,8 @@
     "SIMCERE OF AMERICA INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "CLPS Inc",
@@ -3577,7 +2077,8 @@
     "CLPS TECHNOLOGY (CALIFORNIA) INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Paranovus Entertainment Technology Ltd.",
@@ -3600,7 +2101,8 @@
     "PARANOVUS ENTERTAINMENT TECHNOLOGY LTD"
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Afya Ltd",
@@ -3623,7 +2125,8 @@
     "AFYA GLOBAL, INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   },
   {
    "name": "Baosheng Media Group Holdings Ltd",
@@ -3646,7 +2149,8 @@
     "BAOSHENG INC."
    ],
    "ats": [],
-   "evidence": "lca"
+   "evidence": "lca",
+   "probe_verdict": null
   }
  ],
  "probe_B": [
@@ -3661,7 +2165,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Grande Holdings",
@@ -3674,7 +2179,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Web International English",
@@ -3687,7 +2193,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "DU Ad Platform",
@@ -3700,7 +2207,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Guangzhou Automobile Industry Group",
@@ -3713,7 +2221,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "PNC Process Systems",
@@ -3726,13 +2235,13 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Broad & Bright",
    "family": [
-    "Broad & Bright",
-    "Broad Group"
+    "Broad & Bright"
    ],
    "sector": "consulting_staffing",
    "brand": "Broad & Bright",
@@ -3740,7 +2249,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "LightSpeed Studios",
@@ -3753,7 +2263,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Deli (company)",
@@ -3766,7 +2277,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "C.banner",
@@ -3779,20 +2291,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
-  },
-  {
-   "name": "China Academy of Launch Vehicle Technology",
-   "family": [
-    "China Academy of Launch Vehicle Technology"
-   ],
-   "sector": "industrial",
-   "brand": "CALT",
-   "note": "LCA employer appears to be for a US staffing company; ATS boards belong to unrelated companies",
-   "lca": null,
-   "lca_employers": [],
-   "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Ping An Bank",
@@ -3808,7 +2308,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Sunday Communications",
@@ -3821,7 +2322,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Regal International Airport Group",
@@ -3834,7 +2336,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Red Circle (law firms)",
@@ -3847,7 +2350,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Henderson Investment",
@@ -3860,7 +2364,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Le Vision Pictures",
@@ -3873,7 +2378,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Le.com",
@@ -3886,7 +2392,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Sunny Optical",
@@ -3899,7 +2406,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Lee & Man Paper",
@@ -3912,7 +2420,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Asia Cruises",
@@ -3925,7 +2434,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Century Cruises",
@@ -3938,7 +2448,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Hong Kong Airways",
@@ -3952,7 +2463,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Reform Holdings Corporation",
@@ -3965,7 +2477,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Satellite Communications",
@@ -3978,7 +2491,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Air Travel (airline)",
@@ -3991,7 +2505,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "dict_collision"
   },
   {
    "name": "China Post",
@@ -4004,7 +2519,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Post Mart",
@@ -4017,7 +2533,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Ming Yang Smart Energy",
@@ -4030,7 +2547,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Pop Culture Group Co., Ltd",
@@ -4043,7 +2561,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Game Science",
@@ -4056,7 +2575,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Octopus Holdings Limited",
@@ -4069,7 +2589,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Beijing State-owned Assets Management",
@@ -4083,7 +2604,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "State-owned enterprises of China",
@@ -4096,7 +2618,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Belle International",
@@ -4109,7 +2632,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Energy Conservation and Environmental Protection Group",
@@ -4122,7 +2646,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Live.ly",
@@ -4135,7 +2660,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Phoenix (bicycle company)",
@@ -4148,7 +2674,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Enrich Professional Publishing",
@@ -4161,7 +2688,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Global Energy Interconnection",
@@ -4174,7 +2702,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Hutchison Port Holdings",
@@ -4187,7 +2716,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "L'est Films Group",
@@ -4200,7 +2730,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Northern Rare Earth",
@@ -4213,7 +2744,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Fundamental Films",
@@ -4226,7 +2758,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Silicon Module Super League",
@@ -4239,7 +2772,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Well Link Financial Group",
@@ -4253,20 +2787,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
-  },
-  {
-   "name": "China Central Television",
-   "family": [
-    "China Central Television"
-   ],
-   "sector": "media",
-   "brand": "CCTV",
-   "note": "LCA employer name doesn't match company name, appears to be a Cable Labs subsidiary.",
-   "lca": null,
-   "lca_employers": [],
-   "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Machine Press",
@@ -4279,7 +2801,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Orient Asset Management",
@@ -4292,7 +2815,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Social Sciences Press",
@@ -4305,13 +2829,13 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "CITIC Capital",
    "family": [
-    "CITIC Capital",
-    "CITIC Group"
+    "CITIC Capital"
    ],
    "sector": "finance",
    "brand": "CITIC Capital",
@@ -4319,7 +2843,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "CITIC Securities",
@@ -4332,7 +2857,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "CITIC Telecom International",
@@ -4345,7 +2871,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "CITIC Trust",
@@ -4358,7 +2885,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Commercial Press",
@@ -4371,7 +2899,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Friendship store",
@@ -4384,7 +2913,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Horse Powertrain",
@@ -4397,7 +2927,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Language Press",
@@ -4410,13 +2941,13 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Orient Group",
    "family": [
-    "Orient Group",
-    "Orient Securities"
+    "Orient Group"
    ],
    "sector": "finance",
    "brand": "Orient Group",
@@ -4424,7 +2955,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Oriental Press Group",
@@ -4437,7 +2969,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "People's Education Press",
@@ -4450,7 +2983,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Phoenix Television",
@@ -4463,7 +2997,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Shenzhen Press Group",
@@ -4476,7 +3011,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Southeast Television",
@@ -4489,7 +3025,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "World Affairs Press",
@@ -4502,7 +3039,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "LakeShore Biopharma Co., Ltd.",
@@ -4515,7 +3053,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Generation Essentials Group",
@@ -4528,7 +3067,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Honor of Kings",
@@ -4541,38 +3081,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
-  },
-  {
-   "name": "China National Offshore Oil Corporation",
-   "family": [
-    "China National Aero-Technology Import & Export Corporation",
-    "China National Electronics Import & Export Corporation",
-    "China National Heavy Duty Truck Group",
-    "China National Machinery Import and Export Corporation",
-    "China National Offshore Oil Corporation",
-    "China National Technical Import and Export Corporation"
-   ],
-   "sector": "energy",
-   "brand": "CNOOC",
-   "note": "LCA employer names don't match CNOOC; ATS board appears unrelated.",
-   "lca": null,
-   "lca_employers": [],
-   "ats": [],
-   "evidence": "ats"
-  },
-  {
-   "name": "Dicos",
-   "family": [
-    "Dicos"
-   ],
-   "sector": "consumer",
-   "brand": "Dicos",
-   "note": "No LCA filings; ATS boards belong to medical organization, not restaurant chain.",
-   "lca": null,
-   "lca_employers": [],
-   "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Zoo Holdings Group",
@@ -4585,7 +3095,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "MoneyHero Ltd",
@@ -4598,7 +3109,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "So-Young International Inc.",
@@ -4611,7 +3123,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Brilliance Auto Group",
@@ -4625,7 +3138,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Centro Digital Pictures",
@@ -4638,7 +3152,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Golden Feather New Energy",
@@ -4651,7 +3166,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Guangzhou Book Center",
@@ -4664,7 +3180,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Meyer Manufacturing",
@@ -4677,7 +3194,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Modern China Tea Shop",
@@ -4690,7 +3208,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Shanghai Scientific and Technical Publishers",
@@ -4703,7 +3222,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Shenzhen Book City (Central)",
@@ -4716,7 +3236,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "SPR Coffee",
@@ -4729,20 +3250,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
-  },
-  {
-   "name": "361 Degrees",
-   "family": [
-    "361 Degrees"
-   ],
-   "sector": "consumer",
-   "brand": "361 Degrees",
-   "note": "Chinese sportswear company; LCA employer is a generic match",
-   "lca": null,
-   "lca_employers": [],
-   "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "ATL (company)",
@@ -4755,7 +3264,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "CAS Space",
@@ -4768,7 +3278,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "CAS Star",
@@ -4781,7 +3292,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "CDH Investments",
@@ -4794,7 +3306,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "CHICO (construction company)",
@@ -4807,7 +3320,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Forestry Group Corporation",
@@ -4820,7 +3334,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Oilfield Services",
@@ -4833,7 +3348,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Overseas Engineering Group",
@@ -4846,7 +3362,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Poly Group",
@@ -4859,7 +3376,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Resources Beer",
@@ -4874,7 +3392,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Emperor Group",
@@ -4887,7 +3406,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Huatai Securities",
@@ -4900,7 +3420,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Newland Digital Technology",
@@ -4913,7 +3434,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Overseas Chinese Town Enterprises",
@@ -4927,7 +3449,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Poly Property",
@@ -4940,7 +3463,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Poly Technologies",
@@ -4953,13 +3477,13 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Sina Corporation",
    "family": [
-    "Sina Corporation",
-    "Sina Sports"
+    "Sina Corporation"
    ],
    "sector": "media",
    "brand": "Sina",
@@ -4967,7 +3491,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Sino United Publishing",
@@ -4980,7 +3505,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Sino-Ocean Group",
@@ -4993,7 +3519,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "T-Head",
@@ -5006,7 +3533,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "TAL Education Group",
@@ -5019,7 +3547,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Victory Giant Technology",
@@ -5032,7 +3561,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Wallace (fast food chain)",
@@ -5045,7 +3575,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "ZGC Motors",
@@ -5058,7 +3589,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "ABA Chemicals",
@@ -5071,7 +3603,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "AIA Group",
@@ -5084,7 +3617,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Arena of Valor",
@@ -5097,7 +3631,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Bonjour Holdings",
@@ -5110,7 +3645,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Cheung Kong Holdings",
@@ -5123,7 +3659,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Cotton Association",
@@ -5136,21 +3673,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
-  },
-  {
-   "name": "China Film Group (2010)",
-   "family": [
-    "China Film Group (2010)",
-    "China Film Group Corporation"
-   ],
-   "sector": "media",
-   "brand": "China Film Group",
-   "note": "LCA employer appears to be unrelated film technology company",
-   "lca": null,
-   "lca_employers": [],
-   "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Tobacco",
@@ -5163,7 +3687,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Yangtze Power",
@@ -5176,7 +3701,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "ENHANCE International",
@@ -5189,7 +3715,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Eurasia Aviation Corporation",
@@ -5202,7 +3729,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Flat Glass Group",
@@ -5215,7 +3743,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Galactic Energy",
@@ -5228,7 +3757,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Greenland Holdings",
@@ -5241,7 +3771,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Hainan Airlines",
@@ -5254,7 +3785,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "High-Flyer",
@@ -5267,7 +3799,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Hu Ge",
@@ -5280,7 +3813,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Imagination Technologies",
@@ -5293,13 +3827,13 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "League of Legends",
    "family": [
-    "League of Legends",
-    "League of Legends Pro League"
+    "League of Legends"
    ],
    "sector": "gaming",
    "brand": "League of Legends",
@@ -5307,7 +3841,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Li-Ning",
@@ -5320,7 +3855,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "List of companies of China",
@@ -5335,7 +3871,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Mandarin Oriental Hotel Group",
@@ -5348,7 +3885,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Shanghai Film Group",
@@ -5362,7 +3900,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Shanghai Tang",
@@ -5375,7 +3914,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Shanghai Tobacco Group",
@@ -5388,7 +3928,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Shentong Metro Group",
@@ -5401,7 +3942,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Skydance Media",
@@ -5414,7 +3956,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Space Epoch",
@@ -5427,7 +3970,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Spotlight Automotive",
@@ -5440,7 +3984,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "TOM Group",
@@ -5453,7 +3998,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Trip.com",
@@ -5468,7 +4014,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Truly International Holdings",
@@ -5481,7 +4028,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Vici Gaming",
@@ -5494,7 +4042,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "World Triathlon Corporation",
@@ -5507,7 +4056,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Xiao-i",
@@ -5521,7 +4071,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Xiu.com",
@@ -5534,7 +4085,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Yangtze River Pharmaceutical Group",
@@ -5547,7 +4099,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Pearl River Piano Group",
@@ -5560,7 +4113,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Recon Technology, Ltd",
@@ -5573,7 +4127,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Cheer Holding, Inc.",
@@ -5586,7 +4141,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Yalla Group Ltd",
@@ -5599,7 +4155,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "KE Holdings Inc.",
@@ -5612,7 +4169,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "GOLDEN HEAVEN GROUP HOLDINGS LTD.",
@@ -5625,7 +4183,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Lucky Air",
@@ -5638,7 +4197,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Bank of Tianjin",
@@ -5652,7 +4212,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "BOC Aviation",
@@ -5665,7 +4226,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "China Chang Feng",
@@ -5678,7 +4240,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Metallurgical Group Corporation",
@@ -5691,7 +4254,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Precision Machinery Import-Export Corporation",
@@ -5704,7 +4268,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China SCE Property",
@@ -5717,7 +4282,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Shipbuilding Industry Corporation",
@@ -5730,7 +4296,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China State Shipbuilding Corporation",
@@ -5743,7 +4310,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "CHN Energy Investment Group",
@@ -5756,7 +4324,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Corgi International",
@@ -5769,23 +4338,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
-  },
-  {
-   "name": "COSCO",
-   "family": [
-    "COSCO",
-    "COSCO Shipping",
-    "COSCO Shipping Development",
-    "COSCO Shipping Energy"
-   ],
-   "sector": "logistics",
-   "brand": "COSCO",
-   "note": "LCA employer name doesn't match company name",
-   "lca": null,
-   "lca_employers": [],
-   "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Dickson Concepts",
@@ -5798,7 +4352,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Esprit Holdings",
@@ -5811,7 +4366,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Export–Import Bank of China",
@@ -5824,7 +4380,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Fantasia Holdings",
@@ -5837,7 +4394,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Fox Ess",
@@ -5850,7 +4408,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "dict_collision"
   },
   {
    "name": "GF Securities",
@@ -5863,7 +4422,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Hongyuan Securities",
@@ -5876,7 +4436,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Hoshine Silicon Industry",
@@ -5889,7 +4450,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Itel Mobile",
@@ -5902,7 +4464,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "KWG Property",
@@ -5915,7 +4478,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Lai Sun",
@@ -5928,7 +4492,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "dict_collision"
   },
   {
    "name": "Lava Music",
@@ -5941,7 +4506,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Lens Technology",
@@ -5954,7 +4520,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Little Sheep Group",
@@ -5967,7 +4534,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "LJ Air",
@@ -5980,7 +4548,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Local government financing vehicle",
@@ -5993,7 +4562,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "MAD Studio",
@@ -6006,7 +4576,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Metallurgical Corporation of China",
@@ -6019,7 +4590,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Miramar Hotel and Investment",
@@ -6032,7 +4604,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "MMG Limited",
@@ -6045,7 +4618,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Oriental Wrestling Entertainment",
@@ -6058,7 +4632,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Perseverance Asset Management",
@@ -6071,7 +4646,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Pinpoint Asset Management",
@@ -6084,7 +4660,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Sunshine Kaidi",
@@ -6097,7 +4674,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Tai Lin Radio Service",
@@ -6110,7 +4688,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Tianjin Airlines",
@@ -6123,7 +4702,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Tibet Development Company",
@@ -6136,7 +4716,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Tibet Everest Resources",
@@ -6149,7 +4730,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Tibet Tourism",
@@ -6162,7 +4744,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Titan Sports (newspaper)",
@@ -6175,7 +4758,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "identity_refuted"
   },
   {
    "name": "Vienna Hotels",
@@ -6188,7 +4772,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Vivo (technology company)",
@@ -6201,13 +4786,13 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Wanda Group",
    "family": [
-    "Wanda Group",
-    "Wanda Media"
+    "Wanda Group"
    ],
    "sector": "real_estate",
    "brand": "Wanda Group",
@@ -6215,7 +4800,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Yunnan People's Publishing House",
@@ -6228,7 +4814,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "China Netcom",
@@ -6241,7 +4828,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Opera Ltd",
@@ -6254,7 +4842,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "DDC Enterprise Ltd",
@@ -6267,7 +4856,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Full Truck Alliance Co. Ltd.",
@@ -6280,7 +4870,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Wetour Robotics Ltd",
@@ -6293,7 +4884,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "LZ Technology Holdings Ltd",
@@ -6306,7 +4898,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "ASCENTAGE PHARMA GROUP INTERNATIONAL",
@@ -6319,7 +4912,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Call of Duty",
@@ -6332,7 +4926,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "FWD Group",
@@ -6345,7 +4940,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   },
   {
    "name": "Lark (software)",
@@ -6358,7 +4954,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": "surface_found"
   },
   {
    "name": "Coconut Palm Group",
@@ -6371,7 +4968,8 @@
    "lca": null,
    "lca_employers": [],
    "ats": [],
-   "evidence": "ats"
+   "evidence": "ats",
+   "probe_verdict": null
   }
  ],
  "rejected": [
@@ -6745,6 +5343,132 @@
    }
   },
   {
+   "name": "Legend Holdings",
+   "family": [
+    "Legend Holdings"
+   ],
+   "sources": [
+    "wiki_category"
+   ],
+   "category": "Category:Companies based in Beijing",
+   "lca": {
+    "employer": "LEGEND BIOTECH USA, INC.",
+    "filings": 21,
+    "states": [
+     "NJ"
+    ],
+    "median_wage": 113000,
+    "naics": "325412"
+   },
+   "lca_employers": [
+    "LEGEND BIOTECH USA, INC."
+   ],
+   "ats": [
+    {
+     "platform": "greenhouse",
+     "slug": "legendcareers",
+     "company": "Legend Biotech US",
+     "job_count": 73,
+     "board_url": "https://boards.greenhouse.io/legendcareers"
+    },
+    {
+     "platform": "greenhouse",
+     "slug": "legendcareerseu",
+     "company": "Legend Biotech EU",
+     "job_count": 28,
+     "board_url": "https://boards.greenhouse.io/legendcareerseu"
+    },
+    {
+     "platform": "ashby",
+     "slug": "legend-xyz",
+     "company": "Legend Labs, Inc.",
+     "job_count": 2,
+     "board_url": "https://jobs.ashbyhq.com/legend-xyz"
+    },
+    {
+     "platform": "greenhouse",
+     "slug": "legendyounggraduateeu",
+     "company": "Legend Biotech EU Young Graduates",
+     "job_count": 0,
+     "board_url": "https://boards.greenhouse.io/legendyounggraduateeu"
+    }
+   ],
+   "n_family": 1,
+   "verdict": {
+    "name": "Legend Holdings",
+    "chinese_origin": true,
+    "confidence": "high",
+    "lca_valid": true,
+    "ats_valid": true,
+    "brand": "Legend Biotech",
+    "sector": "biotech",
+    "note": "LCA employer and ATS boards both match Legend Biotech's US operations"
+   },
+   "reject_reason": "brand roster-covered"
+  },
+  {
+   "name": "China Academy of Launch Vehicle Technology",
+   "family": [
+    "China Academy of Launch Vehicle Technology"
+   ],
+   "sources": [
+    "wiki_category"
+   ],
+   "category": "Category:Defence companies of China",
+   "lca": {
+    "employer": "LAUNCH TECHNICAL WORKFORCE SOLUTIONS LLC",
+    "filings": 13,
+    "states": [
+     "TX",
+     "TN",
+     "GA",
+     "FL",
+     "IL",
+     "AL"
+    ],
+    "median_wage": null,
+    "naics": "488190"
+   },
+   "lca_employers": [
+    "LAUNCH TECHNICAL WORKFORCE SOLUTIONS LLC"
+   ],
+   "ats": [
+    {
+     "platform": "greenhouse",
+     "slug": "launch2",
+     "company": "Launch Potato",
+     "job_count": 73,
+     "board_url": "https://boards.greenhouse.io/launch2"
+    },
+    {
+     "platform": "greenhouse",
+     "slug": "offshorelaunch",
+     "company": "Offshore Launch",
+     "job_count": 8,
+     "board_url": "https://boards.greenhouse.io/offshorelaunch"
+    },
+    {
+     "platform": "greenhouse",
+     "slug": "launchyourcareer",
+     "company": "Launch Your Career",
+     "job_count": 0,
+     "board_url": "https://boards.greenhouse.io/launchyourcareer"
+    }
+   ],
+   "n_family": 1,
+   "verdict": {
+    "name": "China Academy of Launch Vehicle Technology",
+    "chinese_origin": true,
+    "confidence": "high",
+    "lca_valid": false,
+    "ats_valid": false,
+    "brand": "CALT",
+    "sector": "industrial",
+    "note": "LCA employer appears to be for a US staffing company; ATS boards belong to unrelated companies"
+   },
+   "reject_reason": "brand-inconsistent (LLM brand 'CALT' shares no token with 'China Academy of Launch Vehicle Technology' family — hallucination risk)"
+  },
+  {
    "name": "SU Group Holdings Ltd",
    "family": [
     "SU Group Holdings Ltd"
@@ -6855,69 +5579,6 @@
     "brand": "Here",
     "sector": "tech_ai",
     "note": "Not Chinese despite being in a list with Chinese companies"
-   }
-  },
-  {
-   "name": "Krafton",
-   "family": [
-    "Krafton"
-   ],
-   "sources": [
-    "wiki_category"
-   ],
-   "category": "Category:Tencent",
-   "lca": {
-    "employer": "KRAFTON AMERICAS, INC.",
-    "filings": 1,
-    "states": [
-     "CA"
-    ],
-    "median_wage": 130000,
-    "naics": "511210"
-   },
-   "lca_employers": [
-    "KRAFTON AMERICAS, INC."
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "krafton",
-     "company": "KRAFTON",
-     "job_count": 67,
-     "board_url": "https://boards.greenhouse.io/krafton"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "kraftonindia",
-     "company": "KRAFTON INDIA",
-     "job_count": 16,
-     "board_url": "https://boards.greenhouse.io/kraftonindia"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "kraftonamericas",
-     "company": "KRAFTON Americas",
-     "job_count": 8,
-     "board_url": "https://boards.greenhouse.io/kraftonamericas"
-    },
-    {
-     "platform": "greenhouse",
-     "slug": "studiokraftonboard",
-     "company": "KRAFTON Montréal Studio",
-     "job_count": 2,
-     "board_url": "https://boards.greenhouse.io/studiokraftonboard"
-    }
-   ],
-   "n_family": 1,
-   "verdict": {
-    "name": "Krafton",
-    "chinese_origin": false,
-    "confidence": "high",
-    "lca_valid": true,
-    "ats_valid": true,
-    "brand": "Krafton",
-    "sector": "gaming",
-    "note": "South Korean gaming company, not Chinese despite being in Tencent category"
    }
   },
   {
@@ -7124,48 +5785,6 @@
    }
   },
   {
-   "name": "VTEX",
-   "family": [
-    "VTEX"
-   ],
-   "sources": [
-    "edgar_20f"
-   ],
-   "category": "",
-   "lca": {
-    "employer": "VTEX COMMERCE CLOUD SOLUTIONS LLC",
-    "filings": 1,
-    "states": [
-     "NY"
-    ],
-    "median_wage": 78200,
-    "naics": "541511"
-   },
-   "lca_employers": [
-    "VTEX COMMERCE CLOUD SOLUTIONS LLC"
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "vtex",
-     "company": "VTEX",
-     "job_count": 37,
-     "board_url": "https://boards.greenhouse.io/vtex"
-    }
-   ],
-   "n_family": 1,
-   "verdict": {
-    "name": "VTEX",
-    "chinese_origin": false,
-    "confidence": "high",
-    "lca_valid": true,
-    "ats_valid": true,
-    "brand": "VTEX",
-    "sector": "ecommerce",
-    "note": "Both LCA employer and ATS board match company name."
-   }
-  },
-  {
    "name": "Nu Holdings Ltd.",
    "family": [
     "Nu Holdings Ltd."
@@ -7232,48 +5851,6 @@
     "brand": "Trend Micro",
     "sector": "tech_ai",
     "note": "Japanese cybersecurity company, not Chinese-owned"
-   }
-  },
-  {
-   "name": "707 Cayman Holdings Ltd.",
-   "family": [
-    "707 Cayman Holdings Ltd."
-   ],
-   "sources": [
-    "edgar_20f"
-   ],
-   "category": "",
-   "lca": {
-    "employer": "CAYMAN CHEMICAL COMPANY INCORPORATED",
-    "filings": 3,
-    "states": [
-     "MI"
-    ],
-    "median_wage": 95977,
-    "naics": "325199"
-   },
-   "lca_employers": [
-    "CAYMAN CHEMICAL COMPANY INCORPORATED"
-   ],
-   "ats": [
-    {
-     "platform": "greenhouse",
-     "slug": "seafireresortltd",
-     "company": "Kimpton Seafire Resort & Spa | Hotel Indigo Grand Cayman",
-     "job_count": 24,
-     "board_url": "https://boards.greenhouse.io/seafireresortltd"
-    }
-   ],
-   "n_family": 1,
-   "verdict": {
-    "name": "707 Cayman Holdings Ltd.",
-    "chinese_origin": false,
-    "confidence": "high",
-    "lca_valid": false,
-    "ats_valid": false,
-    "brand": "Cayman Chemical",
-    "sector": "other",
-    "note": "US chemical company, no Chinese ownership indicated"
    }
   },
   {
@@ -7390,41 +5967,6 @@
    }
   },
   {
-   "name": "Manus",
-   "family": [
-    "Manus"
-   ],
-   "sources": [
-    "cn_roster_census"
-   ],
-   "category": "",
-   "lca": {
-    "employer": "MANUS BIO INC.",
-    "filings": 9,
-    "states": [
-     "GA",
-     "MA"
-    ],
-    "median_wage": 100838,
-    "naics": "541714"
-   },
-   "lca_employers": [
-    "MANUS BIO INC."
-   ],
-   "ats": [],
-   "n_family": 1,
-   "verdict": {
-    "name": "Manus",
-    "chinese_origin": false,
-    "confidence": "high",
-    "lca_valid": false,
-    "ats_valid": false,
-    "brand": "Manus",
-    "sector": "biotech",
-    "note": "No evidence of Chinese origin; LCA employer matches but no ATS boards"
-   }
-  },
-  {
    "name": "Ellington Electronics Technology Group",
    "family": [
     "Ellington Electronics Technology Group"
@@ -7491,42 +6033,6 @@
     "brand": "SL Science Holding",
     "sector": "biotech",
     "note": "No evidence of Chinese origin but LCA employer matches"
-   }
-  },
-  {
-   "name": "Westlake",
-   "family": [
-    "Westlake"
-   ],
-   "sources": [
-    "cn_roster_census"
-   ],
-   "category": "",
-   "lca": {
-    "employer": "WESTLAKE MANAGEMENT SERVICES INC.",
-    "filings": 8,
-    "states": [
-     "TX",
-     "LA",
-     "FL"
-    ],
-    "median_wage": 160044,
-    "naics": "32511"
-   },
-   "lca_employers": [
-    "WESTLAKE MANAGEMENT SERVICES INC."
-   ],
-   "ats": [],
-   "n_family": 1,
-   "verdict": {
-    "name": "Westlake",
-    "chinese_origin": false,
-    "confidence": "high",
-    "lca_valid": false,
-    "ats_valid": false,
-    "brand": "Westlake",
-    "sector": "other",
-    "note": "No clear Chinese connection; LCA employer name doesn't match"
    }
   },
   {
@@ -7735,6 +6241,42 @@
    }
   },
   {
+   "name": "China Central Television",
+   "family": [
+    "China Central Television"
+   ],
+   "sources": [
+    "wiki_category"
+   ],
+   "category": "Category:Companies based in Beijing",
+   "lca": {
+    "employer": "CABLE TELEVISION LABORATORIES, INC.",
+    "filings": 5,
+    "states": [
+     "CO",
+     "WA"
+    ],
+    "median_wage": 125000,
+    "naics": "541715"
+   },
+   "lca_employers": [
+    "CABLE TELEVISION LABORATORIES, INC."
+   ],
+   "ats": [],
+   "n_family": 1,
+   "verdict": {
+    "name": "China Central Television",
+    "chinese_origin": true,
+    "confidence": "high",
+    "lca_valid": false,
+    "ats_valid": false,
+    "brand": "CCTV",
+    "sector": "media",
+    "note": "LCA employer name doesn't match company name, appears to be a Cable Labs subsidiary."
+   },
+   "reject_reason": "brand-inconsistent (LLM brand 'CCTV' shares no token with 'China Central Television' family — hallucination risk)"
+  },
+  {
    "name": "D. G. M. Bernard",
    "family": [
     "D. G. M. Bernard"
@@ -7769,38 +6311,54 @@
    }
   },
   {
-   "name": "Swire",
+   "name": "China National Offshore Oil Corporation",
    "family": [
-    "Swire"
+    "China National Aero-Technology Import & Export Corporation",
+    "China National Electronics Import & Export Corporation",
+    "China National Heavy Duty Truck Group",
+    "China National Machinery Import and Export Corporation",
+    "China National Offshore Oil Corporation",
+    "China National Technical Import and Export Corporation"
    ],
    "sources": [
-    "wiki_category"
+    "wiki_category",
+    "wiki_notable"
    ],
-   "category": "Category:Trading companies of China",
+   "category": "Category:Companies based in Beijing",
    "lca": {
-    "employer": "SWIRE PACIFIC HOLDINGS, INC.",
-    "filings": 5,
+    "employer": "2H OFFSHORE INC.",
+    "filings": 2,
     "states": [
-     "UT"
+     "TX"
     ],
-    "median_wage": 132500,
-    "naics": "312111"
+    "median_wage": 143868,
+    "naics": "541330"
    },
    "lca_employers": [
-    "SWIRE PACIFIC HOLDINGS, INC."
+    "2H OFFSHORE INC.",
+    "HANZHAI IMPORT & EXPORT TRADING CO"
    ],
-   "ats": [],
-   "n_family": 1,
+   "ats": [
+    {
+     "platform": "greenhouse",
+     "slug": "offshorelaunch",
+     "company": "Offshore Launch",
+     "job_count": 8,
+     "board_url": "https://boards.greenhouse.io/offshorelaunch"
+    }
+   ],
+   "n_family": 6,
    "verdict": {
-    "name": "Swire",
-    "chinese_origin": false,
+    "name": "China National Offshore Oil Corporation",
+    "chinese_origin": true,
     "confidence": "high",
     "lca_valid": false,
     "ats_valid": false,
-    "brand": "Swire",
-    "sector": "industrial",
-    "note": "British multinational conglomerate with operations in China"
-   }
+    "brand": "CNOOC",
+    "sector": "energy",
+    "note": "LCA employer names don't match CNOOC; ATS board appears unrelated."
+   },
+   "reject_reason": "brand-inconsistent (LLM brand 'CNOOC' shares no token with 'China National Offshore Oil Corporation' family — hallucination risk)"
   },
   {
    "name": "Digital Currency X Technology Inc.",
@@ -8237,40 +6795,6 @@
     "brand": "Bon Natural Life",
     "sector": "consumer",
     "note": "Non-Chinese company with LCA name collision"
-   }
-  },
-  {
-   "name": "Bullish",
-   "family": [
-    "Bullish"
-   ],
-   "sources": [
-    "edgar_20f"
-   ],
-   "category": "",
-   "lca": {
-    "employer": "BULLISH US LLC",
-    "filings": 3,
-    "states": [
-     "NY"
-    ],
-    "median_wage": 225000,
-    "naics": "541511"
-   },
-   "lca_employers": [
-    "BULLISH US LLC"
-   ],
-   "ats": [],
-   "n_family": 1,
-   "verdict": {
-    "name": "Bullish",
-    "chinese_origin": false,
-    "confidence": "high",
-    "lca_valid": true,
-    "ats_valid": false,
-    "brand": "Bullish",
-    "sector": "finance",
-    "note": "Cryptocurrency exchange with matching US entity"
    }
   },
   {
@@ -8867,6 +7391,41 @@
    }
   },
   {
+   "name": "Yangtze Memory Technologies",
+   "family": [
+    "Yangtze Memory Technologies"
+   ],
+   "sources": [
+    "wiki_category"
+   ],
+   "category": "Category:Government-owned companies of China",
+   "lca": {
+    "employer": "YANGTZE MEMORY TECHNOLOGIES INC.",
+    "filings": 1,
+    "states": [
+     "CA"
+    ],
+    "median_wage": 77796,
+    "naics": "33441"
+   },
+   "lca_employers": [
+    "YANGTZE MEMORY TECHNOLOGIES INC."
+   ],
+   "ats": [],
+   "n_family": 1,
+   "verdict": {
+    "name": "Yangtze Memory Technologies",
+    "chinese_origin": true,
+    "confidence": "high",
+    "lca_valid": true,
+    "ats_valid": false,
+    "brand": "YMTC",
+    "sector": "hardware",
+    "note": "YMTC US entity 1 filing; entity-listed 2022 so US hiring minimal"
+   },
+   "reject_reason": "brand-inconsistent (LLM brand 'YMTC' shares no token with 'Yangtze Memory Technologies' family — hallucination risk)"
+  },
+  {
    "name": "Great Leap Brewing",
    "family": [
     "Great Leap Brewing"
@@ -9139,5 +7698,27 @@
    }
   }
  ],
- "unverified": []
+ "unverified": [
+  "JD Health",
+  "JD.com",
+  "Broad Group",
+  "Lenovo Center",
+  "Lenovo Cloud",
+  "CRRC Group",
+  "MINISO Group Holding Ltd",
+  "GAC Group",
+  "CITIC Group",
+  "Orient Securities",
+  "Futu Holdings Ltd",
+  "Honor (company)",
+  "DJI Air",
+  "DJI Sky City",
+  "DJI Spark",
+  "Sina Sports",
+  "China Film Group Corporation",
+  "Weichai Power",
+  "COSCO Shipping",
+  "Wanda Media",
+  "Elong Power Holding Ltd."
+ ]
 }

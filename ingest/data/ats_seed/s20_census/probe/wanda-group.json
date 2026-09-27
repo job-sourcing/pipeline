@@ -1,0 +1,29 @@
+{
+ "brand": "Wanda Group",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:47:54.110Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "wanda",
+   "spec": "feishuhire:wanda",
+   "title": "加入万达集团"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:wanda",
+  "platform": "feishu",
+  "title": "加入万达集团",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入万达集团",
+  "brand": "Wanda Group",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

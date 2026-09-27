@@ -1,0 +1,31 @@
+{
+ "brand": "Honor of Kings",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:35:58.628Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "honor",
+   "spec": "greenhouse:honor",
+   "title": "Help change the aging experience with a career at Honor",
+   "jobs_hint": 20
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:honor",
+  "platform": "greenhouse",
+  "title": "Help change the aging experience with a career at Honor",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Help change the aging experience with a career at Honor",
+  "brand": "Honor of Kings",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — board is Honor the US eldercare startup; and it is a Tencent game not a US hiring entity"
+}

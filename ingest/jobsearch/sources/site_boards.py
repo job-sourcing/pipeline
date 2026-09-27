@@ -351,7 +351,17 @@ class GreenhouseAdapter:
             segs = (e2 + e1) if offices_discriminate else e2
             for seg in segs:
                 for tok in seg.split():
-                    if tok.strip(",()").lower() in workday._US_STATE_TOKENS:
+                    # S20 (genscript "Remote in Europe" lesson): a 2-letter
+                    # state code must match CASE-SENSITIVELY — the lowercase
+                    # English words 'in' (Indiana) / 'or' (Oregon) /
+                    # 'me' (Maine) are not state tokens. Full state names
+                    # ('california') stay case-insensitive.
+                    t = tok.strip(",()")
+                    if len(t) > 2:
+                        if t.lower() in workday._US_STATE_TOKENS:
+                            return True
+                    elif t.isupper() and t.lower() in \
+                            workday._US_STATE_TOKENS:
                         return True
         return False
 

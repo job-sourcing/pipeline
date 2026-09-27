@@ -1,0 +1,31 @@
+{
+ "brand": "Lens Technology",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:40:18.740Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "lens",
+   "spec": "ashby:lens",
+   "title": " (10 jobs)",
+   "jobs": 10
+  }
+ ],
+ "best": {
+  "spec": "ashby:lens",
+  "platform": "ashby",
+  "title": " (10 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (10 jobs)",
+  "brand": "Lens Technology",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — LA startup roles (Security/PeopleOps/ExecOps); not 蓝思科技 Changsha manufacturer"
+}

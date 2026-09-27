@@ -1,0 +1,31 @@
+{
+ "brand": "Phoenix",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:23:24.718Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "lever",
+   "slug": "phoenixtechnologies",
+   "spec": "lever:phoenixtechnologies",
+   "title": "Phoenix Ecommerce Technologies",
+   "jobs_hint": 0
+  }
+ ],
+ "best": {
+  "spec": "lever:phoenixtechnologies",
+  "platform": "lever",
+  "title": "Phoenix Ecommerce Technologies",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Phoenix Ecommerce Technologies",
+  "brand": "Phoenix",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — self-name Phoenix Ecommerce Technologies; not Phoenix TV"
+}

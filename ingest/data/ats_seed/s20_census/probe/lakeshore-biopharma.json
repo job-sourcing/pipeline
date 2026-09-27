@@ -1,0 +1,16 @@
+{
+ "brand": "LakeShore Biopharma",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:35:17.314Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.lakeshore.com/about-us/careers",
+  "platform": "paylocity",
+  "title": "Careers",
+  "via": "guess"
+ },
+ "verdict": "marker_surface"
+}

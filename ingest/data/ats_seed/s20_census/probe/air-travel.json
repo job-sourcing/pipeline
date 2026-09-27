@@ -1,0 +1,30 @@
+{
+ "brand": "Air Travel",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:18:18.777Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "air",
+   "spec": "greenhouse:air",
+   "title": "Jobs at Air",
+   "jobs_hint": 38
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:air",
+  "platform": "greenhouse",
+  "title": "Jobs at Air",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Jobs at Air",
+  "brand": "Air Travel",
+  "ok": false,
+  "n": 1
+ },
+ "verdict": "dict_collision"
+}

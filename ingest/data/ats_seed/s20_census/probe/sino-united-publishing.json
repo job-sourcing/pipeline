@@ -1,0 +1,16 @@
+{
+ "brand": "Sino United Publishing",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:06:59.192Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.sino.com/careers/",
+  "platform": "custom",
+  "title": "Careers - Job Opening and Job Vacancy in Hong Kong | Sino Group",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

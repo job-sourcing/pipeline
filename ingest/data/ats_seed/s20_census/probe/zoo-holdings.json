@@ -1,0 +1,31 @@
+{
+ "brand": "Zoo Holdings",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:37:43.216Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "zoo",
+   "spec": "greenhouse:zoo",
+   "title": "Careers | Zoo",
+   "jobs_hint": 10
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:zoo",
+  "platform": "greenhouse",
+  "title": "Careers | Zoo",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Careers | Zoo",
+  "brand": "Zoo Holdings",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "UNVERIFIED — Careers | Zoo; ambiguous"
+}

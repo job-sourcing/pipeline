@@ -1,0 +1,16 @@
+{
+ "brand": "BOC Aviation",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:30:44.900Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.bocaviation.com/careers",
+  "platform": "custom",
+  "title": "Careers",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

@@ -1,0 +1,16 @@
+{
+ "brand": "Ping An",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:12:45.353Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://ping.com/en-us/careers",
+  "platform": "custom",
+  "title": "Careers | PING",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

@@ -1,0 +1,16 @@
+{
+ "brand": "Global Energy Interconnection",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:24:04.880Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://careers.global.com/",
+  "platform": "workday",
+  "title": "The home of Global Media and Entertainment Careers",
+  "via": "guess"
+ },
+ "verdict": "marker_surface"
+}

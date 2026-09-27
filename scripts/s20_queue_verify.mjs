@@ -44,7 +44,7 @@ async function main () {
   const todo = cands.filter(c => !done.has(c.name))
   console.log(`cands=${cands.length} done=${done.size} todo=${todo.length}`)
 
-  const BATCH = 15
+  const BATCH = 10  // review #14: smaller batches — a truncation throw loses less, 429-wasteful
   for (let i = 0; i < todo.length; i += BATCH) {
     const batch = todo.slice(i, i + BATCH)
     const payload = batch.map(c => ({
@@ -65,9 +65,10 @@ async function main () {
         max_tokens: 4000
       })
       const verdicts = parseVerdicts(r.choices[0].message.content)
+      const names = new Set(batch.map(c => c.name))
       let n = 0
       for (const v of verdicts) {
-        if (!v.name) continue
+        if (!v.name || !names.has(v.name)) continue  // membership: LLM echoes outside the batch are dropped
         appendFileSync(VER, JSON.stringify(v) + '\n')
         n++
       }

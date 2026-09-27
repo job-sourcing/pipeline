@@ -522,6 +522,32 @@ class TestGreenhouseCensusReplay:
         assert meta["client_filtered"] == 129
 
 
+    def test_state_token_case_sensitivity(self):
+        """S20 (genscript lesson): the rung-3 state-token fallback must
+        NOT treat the lowercase English words 'in'/'or'/'me' as state
+        codes — 'Remote in Europe' classified United States via
+        Indiana's 'IN'. 2-letter codes match case-sensitively; full
+        state names stay case-insensitive."""
+        ad = site_boards.GreenhouseAdapter("genscript", Config())
+        job = {"location": {"name": "Europe; Remote in Europe"},
+               "offices": None}
+        assert ad._job_in_country(job, "United States", False) is False
+        job2 = {"location": {"name": "Remote in Europe"}, "offices": None}
+        assert ad._job_in_country(job2, "United States", False) is False
+        # the TRUE state-code shapes still match (uppercase 2-letter)
+        job3 = {"location": {"name": "Piscataway, NJ"}, "offices": None}
+        assert ad._job_in_country(job3, "United States", False) is True
+        # single-word full state names, any case (multi-word names like
+        # 'New Jersey' are phrase-level, never rung-3 token matches)
+        job4 = {"location": {"name": "Piscataway, CALIFORNIA"},
+                "offices": None}
+        assert ad._job_in_country(job4, "United States", False) is True
+        # 'CA 95337' address shape (the documented example)
+        job5 = {"location": {"name": "Sunnyvale, CA 94085"},
+                "offices": None}
+        assert ad._job_in_country(job5, "United States", False) is True
+
+
 class TestAshbyAdapter:
     def _board(self, monkeypatch, jobs):
         _patch_fetch(monkeypatch, jobs)

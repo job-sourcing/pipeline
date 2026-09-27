@@ -10,5 +10,6 @@
  "board_is_brand": true,
  "chinese_origin": true,
  "verdict": "confirm",
- "note": "Board matches company name and LCA records; Chinese ownership confirmed."
+ "note": "Board matches company name and LCA records; Chinese ownership confirmed.",
+ "manual_adjudication": "REFUTED — Noah Medical is a Redwood City US medtech (Chinese-American founder); the census entity is Noah Holdings (诺亚财富) — different company; brand-hallucination victim"
 }

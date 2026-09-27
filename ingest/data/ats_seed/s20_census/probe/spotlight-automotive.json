@@ -1,0 +1,31 @@
+{
+ "brand": "Spotlight Automotive",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:24:56.033Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "spotlight",
+   "spec": "greenhouse:spotlight",
+   "title": "Jobs at Spotlight Referrals",
+   "jobs_hint": 1
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:spotlight",
+  "platform": "greenhouse",
+  "title": "Jobs at Spotlight Referrals",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Jobs at Spotlight Referrals",
+  "brand": "Spotlight Automotive",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — Jobs at Spotlight Referrals (US medical); not Great Wall-BMW Spotlight"
+}

@@ -1,0 +1,16 @@
+{
+ "brand": "Octopus Holdings",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:20:02.405Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://octopus.com/company/careers",
+  "platform": "custom",
+  "title": "Careers at Octopus Deploy - Octopus Deploy",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

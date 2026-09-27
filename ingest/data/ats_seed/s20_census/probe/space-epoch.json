@@ -1,0 +1,31 @@
+{
+ "brand": "Space Epoch",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:24:52.504Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "space",
+   "spec": "greenhouse:space",
+   "title": "Jobs at Space Programs",
+   "jobs_hint": 5
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:space",
+  "platform": "greenhouse",
+  "title": "Jobs at Space Programs",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Jobs at Space Programs",
+  "brand": "Space Epoch",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — Jobs at Space Programs; unrelated"
+}

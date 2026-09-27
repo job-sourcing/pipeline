@@ -9,5 +9,6 @@
  "board_is_brand": true,
  "chinese_origin": true,
  "verdict": "confirm",
- "note": "Board name matches company name, and 'Fourier' is a common Chinese tech brand."
+ "note": "Board name matches company name, and 'Fourier' is a common Chinese tech brand.",
+ "manual_adjudication": "REFUTED — ashby fourier serves hydrogen-systems/India-office roles; NOT 傅利叶智能 Fourier Intelligence (Shanghai rehab robotics)"
 }

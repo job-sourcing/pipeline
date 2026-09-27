@@ -1,0 +1,16 @@
+{
+ "brand": "Itel Mobile",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:39:05.654Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://itel.com/careers-at-itel/",
+  "platform": "custom",
+  "title": "Join the team at iTel Networks Inc. | Careers",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

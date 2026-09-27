@@ -1,0 +1,30 @@
+{
+ "brand": "Lai Sun",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:39:52.790Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "lai",
+   "spec": "ashby:lai",
+   "title": " (12 jobs)",
+   "jobs": 12
+  }
+ ],
+ "best": {
+  "spec": "ashby:lai",
+  "platform": "ashby",
+  "title": " (12 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (12 jobs)",
+  "brand": "Lai Sun",
+  "ok": false,
+  "n": 1
+ },
+ "verdict": "dict_collision"
+}

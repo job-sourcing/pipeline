@@ -1,0 +1,29 @@
+{
+ "brand": "Ming Yang Smart Energy",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:19:07.392Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "ming",
+   "spec": "feishuhire:ming",
+   "title": "加入"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:ming",
+  "platform": "feishu",
+  "title": "加入",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入",
+  "brand": "Ming Yang Smart Energy",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

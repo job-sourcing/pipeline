@@ -1,0 +1,31 @@
+{
+ "brand": "Fundamental Films",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:25:45.421Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "fundamental",
+   "spec": "ashby:fundamental",
+   "title": " (19 jobs)",
+   "jobs": 19
+  }
+ ],
+ "best": {
+  "spec": "ashby:fundamental",
+  "platform": "ashby",
+  "title": " (19 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (19 jobs)",
+  "brand": "Fundamental Films",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — SF/Barcelona forward-deployed AI company (Palantir-pattern); not the HK film co"
+}

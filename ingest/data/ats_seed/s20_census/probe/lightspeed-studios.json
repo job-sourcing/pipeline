@@ -1,0 +1,31 @@
+{
+ "brand": "LightSpeed Studios",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:11:33.651Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "lightspeed",
+   "spec": "ashby:lightspeed",
+   "title": " (3 jobs)",
+   "jobs": 3
+  }
+ ],
+ "best": {
+  "spec": "ashby:lightspeed",
+  "platform": "ashby",
+  "title": " (3 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (3 jobs)",
+  "brand": "LightSpeed Studios",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — Northbrook IL robotics roles; not Tencent LightSpeed (LA games studio)"
+}

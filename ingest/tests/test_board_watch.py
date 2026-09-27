@@ -2040,15 +2040,22 @@ class TestShippedWatchConfig:
                       "ats:greenhouse:didi", "ats:greenhouse:tcl",
                       "ats:greenhouse:gotion",
                       "ats:ashby:moonshot",
-                      # S20 wires: genscript/legend/poizon carry no
-                      # structured employment-type facet either
-                      "ats:greenhouse:genscript",
+                      # S20 wires: legendcareers/poizon serve NO
+                      # employment-type facet (genscript DOES — its
+                      # metadata carries Full-time/Part-time/Contractor;
+                      # pinned below as a BACKED claim)
                       "ats:greenhouse:legendcareers",
                       "ats:feishuhire:poizon"):
             assert "time_type" not in by_board[board], board
         # S16: lever/workable DO serve structured commitment/employment
         # types — the time_type claim is backed
         assert by_board["ats:lever:weride"].get("time_type") == "Full time"
+        # S20: genscript serves Employment Type metadata (Full-time/
+        # Part-time/Independent Contractor observed live) — the claim
+        # is backed; legendcareers serves NONE (checked live — the
+        # unbacked claim was caught in review and removed)
+        assert by_board["ats:greenhouse:genscript"].get("time_type") == \
+            "Full time"
         assert by_board["ats:workable:tp-link-usa-corp"].get("time_type") \
             == "Full time"
         assert by_board["ats:workable:pony-dot-ai"].get("time_type") == \

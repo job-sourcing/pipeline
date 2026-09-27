@@ -1,0 +1,31 @@
+{
+ "brand": "Skydance Media",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:24:43.812Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "lever",
+   "slug": "skydance",
+   "spec": "lever:skydance",
+   "title": "Skydance",
+   "jobs_hint": 0
+  }
+ ],
+ "best": {
+  "spec": "lever:skydance",
+  "platform": "lever",
+  "title": "Skydance",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Skydance",
+  "brand": "Skydance Media",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — US studio (Paramount merge); not Chinese"
+}

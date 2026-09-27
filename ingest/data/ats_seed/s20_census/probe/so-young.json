@@ -1,0 +1,29 @@
+{
+ "brand": "So-Young",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:38:01.572Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "soyoung",
+   "spec": "feishuhire:soyoung",
+   "title": "加入北京新氧科技有限公司"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:soyoung",
+  "platform": "feishu",
+  "title": "加入北京新氧科技有限公司",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入北京新氧科技有限公司",
+  "brand": "So-Young",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

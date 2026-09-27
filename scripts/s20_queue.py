@@ -35,21 +35,31 @@ CAND = OUTDIR / "queue_candidates.jsonl"
 VERDICTS = OUTDIR / "queue_verdicts.jsonl"
 QUEUE = OUTDIR / "s20_queue.json"
 
-# --- roster (the 30 wired) + brand aliases, lowercase ---
-ROSTER = {
-    "bytedance", "tiktok", "douyin", "toutiao", "gea", "ge appliances",
-    "haier", "alibaba", "taobao", "tmall", "lazada", "aliyun",
-    "alibaba cloud", "tencent", "wechat", "weixin", "jd", "jd.com",
-    "jd logistics", "didi", "didi chuxing", "shein", "byd", "xpeng",
-    "gotion", "faraday future", "baidu", "ernie bot", "netease",
-    "netease games", "hoyoverse", "mihoyo", "genshin impact", "moonshot ai",
-    "moonshot", "kimi", "minimax", "shengshu", "vidu", "horizon robotics",
-    "horizon", "xiaohongshu", "rednote", "tp-link", "tplink", "tp link",
-    "pony ai", "pony.ai", "pony", "trip.com", "tripcom", "ctrip",
-    "weride", "plus ai", "plusai", "united imaging", "united imaging "
-    "healthcare", "nvidia", "netflix", "openai", "anthropic",
-    "ge appliance", "aizip",
-}
+# --- roster: DERIVED from the watch config at runtime (companies +
+# li_variants — the wired set is the config, never a stale copy) ---
+WATCH_CFG = (REPO / "ingest/data/board_watch/config.json")
+
+
+def _load_roster() -> set[str]:
+    import json as _json
+    base = {"tiktok", "douyin", "toutiao", "taobao", "tmall", "lazada",
+            "aliyun", "alibaba cloud", "ernie bot", "netease games",
+            "mihoyo", "genshin impact", "moonshot ai", "kimi", "vidu",
+            "horizon robotics", "rednote", "tplink", "tp link", "pony ai",
+            "pony.ai", "ctrip", "united imaging healthcare", "aizip",
+            "nvidia", "netflix", "openai", "anthropic", "haier", "gea"}
+    try:
+        cfg = _json.loads(WATCH_CFG.read_text(encoding="utf-8"))
+        for w in cfg.get("watches", []):
+            base.add((w.get("company") or "").lower())
+            for v in w.get("li_variants") or []:
+                base.add(str(v).lower())
+    except Exception:
+        pass
+    return base
+
+
+ROSTER = _load_roster()
 
 # wiki noise categories (person articles, non-company scopes)
 NOISE_CAT_RE = re.compile(
@@ -64,14 +74,24 @@ NOISE_CAT_RE = re.compile(
 )
 
 # article names that are NOT companies (court cases like "360 v. Tencent",
-# device models like "Honor 10")
+# device models like "Honor 10" / "Honor 30 Pro")
 NOISE_NAME_RE = re.compile(r"^\S+\s+v\.?\s+\S+", re.I)
+DEVICE_MODEL_RE = re.compile(
+    r"\b\d+\b|\b(pro|plus|max|ultra|lite|mini|se)\b", re.I)
 
 LEGAL_TAIL = re.compile(
     r"\b(incorporated|inc|ltd|limited|corp|corporation|co|company|"
     r"plc|llc|group|holding|holdings|holding[s]? (?:group|company)?)\b\.?$",
     re.I,
 )
+
+
+def raw_tokens(name: str) -> list[str]:
+    """Tokenize WITHOUT stripping legal tails (the prefix-collapse
+    comparator: 'Legend Holdings' vs 'Legend Biotech' differ here)."""
+    s = name.lower()
+    s = re.sub(r"[^\w\s]", " ", s)
+    return re.sub(r"\s+", " ", s).strip().split()
 
 
 def norm_tokens(name: str) -> list[str]:
@@ -86,10 +106,19 @@ def norm_tokens(name: str) -> list[str]:
 
 def is_prefix_family(a: list[str], b: list[str]) -> bool:
     """True when one token list is a prefix of the other (>=1 token) or
-    they share the first two tokens."""
+    they share the first two tokens. S20 review fix: callers pass RAW
+    (un-stripped) tokens so legal tails disambiguate — "Legend
+    Holdings" ["legend","holdings"] vs "Legend Biotech" ["legend",
+    "biotech"] share only token 1 and do NOT merge (they are different
+    companies: the HK conglomerate vs the NASDAQ biotech)."""
     if not a or not b:
         return False
     n = min(len(a), len(b))
+    if n == 1:
+        # single-token overlap: only merge when BOTH sides are
+        # single-token (JD.com / JD.com, Inc. after legal-tail strip is
+        # handled by norm; raw single tokens = same short brand)
+        return len(a) == 1 and len(b) == 1
     if a[:n] == b[:n]:
         return True
     if len(a) >= 2 and len(b) >= 2 and a[:2] == b[:2]:
@@ -148,21 +177,22 @@ def candidates():
         if NOISE_NAME_RE.search(name):
             skipped["noise"] += 1
             continue
-        # device-model articles ("Honor 10" class — wiki writes an article
-        # per phone model; the brand article is the company record)
+        # device-model articles ("Honor 10"/"Honor 30 Pro" class — wiki
+        # writes an article per phone model; the brand article is the
+        # company record)
         toks0 = norm_tokens(name)
-        if len(toks0) == 2 and toks0[-1].isdigit():
+        if len(toks0) >= 2 and DEVICE_MODEL_RE.search(name):
             skipped["noise"] += 1
             continue
         out.append(x)
 
-    # --- prefix-collapse into families ---
+    # --- prefix-collapse into families (RAW tokens: legal tails kept) ---
     fams: list[list[dict]] = []
     for x in out:
-        toks = norm_tokens(x["name"])
+        toks = raw_tokens(x["name"])
         placed = False
         for fam in fams:
-            rep_toks = norm_tokens(fam[0]["name"])
+            rep_toks = raw_tokens(fam[0]["name"])
             if is_prefix_family(toks, rep_toks):
                 fam.append(x)
                 placed = True
@@ -212,6 +242,22 @@ def finalize():
             rejected.append({**c, "verdict": v})
             continue
         brand = (v.get("brand") or c["name"]).strip()
+        # BRAND-CONSISTENCY GATE (the Noah-Holdings->"Noah Medical"
+        # hallucination class): the LLM's brand must be a token-variant
+        # of the census name or a family member; a freestanding
+        # different-company brand goes to MANUAL adjudication, never a
+        # silent wire
+        btoks = set(norm_tokens(brand)) | set(raw_tokens(brand))
+        ntoks = set(norm_tokens(c["name"])) | set(raw_tokens(c["name"]))
+        fam_toks = set()
+        for fam_name in c.get("family") or []:
+            fam_toks |= set(norm_tokens(fam_name)) | set(raw_tokens(fam_name))
+        if not (btoks & (ntoks | fam_toks)):
+            rejected.append({**c, "verdict": v,
+                             "reject_reason": "brand-inconsistent "
+                             f"(LLM brand '{brand}' shares no token with "
+                             f"'{c['name']}' family — hallucination risk)"})
+            continue
         # brand-level roster check (the "360 v. Tencent" lesson: a
         # lawsuit article whose LLM brand is a roster company)
         if roster_hit(brand):
@@ -253,6 +299,44 @@ def finalize():
                    ) if r.get("ats") else 0
         return -((lca.get("filings") or 0) * 3 + jobs)
 
+    # --- probe feedback loop (the review #10 fix): probe/*.json verdicts
+    # demote their brands in the queue — a queue consumer must never
+    # wire an identity-refuted board even if the LLM accepted it
+    PROBE_DIR = OUTDIR / "probe"
+    probe_verdicts = {}
+    if PROBE_DIR.exists():
+        for f in PROBE_DIR.glob("*.json"):
+            try:
+                d = json.loads(f.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            b = d.get("brand") or ""
+            if not b:
+                continue
+            verdict = d.get("verdict") or d.get("err") or ""
+            manual = str(d.get("manual_adjudication") or "")
+            if verdict == "mismatch" or "REFUTED" in manual:
+                probe_verdicts[b] = "identity_refuted"
+            elif verdict == "dict_collision":
+                probe_verdicts[b] = "dict_collision"
+            elif verdict in ("ats_surface", "custom_surface",
+                             "marker_surface"):
+                probe_verdicts[b] = "surface_found"
+    demoted = []
+    for tier_name in ("wire_now",):
+        kept = []
+        for r in wire:
+            pv = probe_verdicts.get(r["brand"])
+            if pv in ("identity_refuted", "dict_collision"):
+                r["probe_verdict"] = pv
+                demoted.append(r)
+            else:
+                r["probe_verdict"] = pv
+                kept.append(r)
+        wire = kept
+    for r in probeA + probeB:
+        r["probe_verdict"] = probe_verdicts.get(r["brand"])
+
     wire.sort(key=rank_key)
     probeA.sort(key=rank_key)
     probeB.sort(key=rank_key)
@@ -262,6 +346,7 @@ def finalize():
             "wire_now": len(wire), "probe_A": len(probeA),
             "probe_B": len(probeB), "rejected": len(rejected),
             "unverified": len(unverified),
+            "demoted_by_probe": len(demoted),
         },
         "wire_now": wire, "probe_A": probeA, "probe_B": probeB,
         "rejected": rejected, "unverified": unverified,

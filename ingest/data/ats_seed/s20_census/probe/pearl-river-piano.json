@@ -1,0 +1,31 @@
+{
+ "brand": "Pearl River Piano",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:28:23.525Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "pearl",
+   "spec": "ashby:pearl",
+   "title": " (7 jobs)",
+   "jobs": 7
+  }
+ ],
+ "best": {
+  "spec": "ashby:pearl",
+  "platform": "ashby",
+  "title": " (7 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (7 jobs)",
+  "brand": "Pearl River Piano",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — LA/remote US SaaS roles; not Guangzhou piano maker"
+}

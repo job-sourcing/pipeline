@@ -1,10 +1,10 @@
-rows: 53 (unique reqIds: 53)
-details merged: 53
-descriptions present: 53
-locations enumerated (not 'N Locations'): 53
+rows: 48 (unique reqIds: 48)
+details merged: 48
+descriptions present: 48
+locations enumerated (not 'N Locations'): 48
 startDate present: 0
-signals: matched=29 no_match=24 blocked=0 not_checked=0
-location entries total (sum nLocations): 54
+signals: matched=29 no_match=19 blocked=0 not_checked=0
+location entries total (sum nLocations): 48
 similar-job edges: 0
-facet-tagged rows: workerSubType=0 jobFamilyGroup=53 (from facet_tags.jsonl)
-facet tag coverage: 53/53 rows (0 untagged)
+facet-tagged rows: workerSubType=0 jobFamilyGroup=48 (from facet_tags.jsonl)
+facet tag coverage: 48/48 rows (0 untagged)

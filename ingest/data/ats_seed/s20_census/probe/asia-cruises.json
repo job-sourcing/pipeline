@@ -1,0 +1,29 @@
+{
+ "brand": "Asia Cruises",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:16:14.197Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "asia",
+   "spec": "feishuhire:asia",
+   "title": "欢迎加入亚创集团"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:asia",
+  "platform": "feishu",
+  "title": "欢迎加入亚创集团",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "欢迎加入亚创集团",
+  "brand": "Asia Cruises",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

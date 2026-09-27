@@ -1,0 +1,30 @@
+{
+ "brand": "Lark",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:52:02.503Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "lark",
+   "spec": "ashby:lark",
+   "title": " (1 jobs)",
+   "jobs": 1
+  }
+ ],
+ "best": {
+  "spec": "ashby:lark",
+  "platform": "ashby",
+  "title": " (1 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (1 jobs)",
+  "brand": "Lark",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

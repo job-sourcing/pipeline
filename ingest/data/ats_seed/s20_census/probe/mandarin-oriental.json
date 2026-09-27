@@ -1,0 +1,16 @@
+{
+ "brand": "Mandarin Oriental",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:22:54.159Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://careers.mandarinoriental.com/jobs/search",
+  "platform": "custom",
+  "title": "MO Careers | Search Jobs",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

@@ -1,0 +1,31 @@
+{
+ "brand": "Post Mart",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:19:01.331Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "post",
+   "spec": "ashby:post",
+   "title": " (4 jobs)",
+   "jobs": 4
+  }
+ ],
+ "best": {
+  "spec": "ashby:post",
+  "platform": "ashby",
+  "title": " (4 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (4 jobs)",
+  "brand": "Post Mart",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "UNVERIFIED — ashby post 4 jobs; no identity"
+}

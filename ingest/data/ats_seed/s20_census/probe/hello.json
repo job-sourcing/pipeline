@@ -7,5 +7,6 @@
  "board_is_brand": true,
  "chinese_origin": true,
  "verdict": "confirm",
- "note": "Board name and LCA employer name match the census company, and 'Hello' is a known Chinese-origin healthcare brand."
+ "note": "Board name and LCA employer name match the census company, and 'Hello' is a known Chinese-origin healthcare brand.",
+ "manual_adjudication": "REFUTED — ashby hellopatient is a US company (AI Agent PM, Austin TX); the census entity is 哈啰 Hello Inc (bike-sharing) — no US hiring surface"
 }

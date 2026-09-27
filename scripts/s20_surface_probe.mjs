@@ -87,16 +87,29 @@ const ATS_BODY_MARKERS = [
   ['jobvite', /jobvite\.com/],
   ['recruitee', /recruitee\.com/],
   ['teamtailor', /teamtailor\.com/],
-  ['personio', /jobs\.personio\./]
+  ['personio', /jobs\.personio\./],
+  ['rippling', /ats\.rippling\.com|rippling\.com\/jobs/],
+  ['jazzhr', /applytojob\.com|jazzhr\.com/],
+  ['teamtailor', /\.teamtailor\.com|teamtailor\.com/],
+  ['greenhouse-embed', /boards\.greenhouse\.io\/embed/]
 ]
 
 function slugify (s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40)
 }
 
+const SHORT_HOST_EXACT = new Set(['x.com', 'jobs.com', 'job.com', 'co.com'])
 function blocked (url) {
   const u = url.toLowerCase()
-  return BLOCK_DOMAINS.some(d => u.includes(d))
+  const host = (u.split('/')[2] || '')
+  for (const d of BLOCK_DOMAINS) {
+    // short/bare domains match by host equality/suffix, NOT substring
+    // (u.includes('x.com') would block careers.cox.com / jobs.box.com)
+    if (SHORT_HOST_EXACT.has(d)) {
+      if (host === d || host.endsWith('.' + d)) return true
+    } else if (u.includes(d)) return true
+  }
+  return false
 }
 
 function brandTokens (brand) {
@@ -198,8 +211,10 @@ async function probeIdentity (rec, zai) {
   }
   if (page) { out.status = page.status; out.bytes = page.bytes }
 
-  // LLM pair-judgment when we got a self-identified company name
-  if (out.board_company || out.board_title) {
+  // LLM pair-judgment only with a USABLE self-identified name — junk
+  // ("status 200", "(8 jobs)", empty) feeds hallucinated confirms
+  const junkTitle = !out.board_company && /^((status \d+)|\s*\(\d+ jobs\)\s*)?$/i.test(out.board_title || '')
+  if ((out.board_company || out.board_title) && !junkTitle) {
     try {
       const r = await zai.chat.completions.create({
         messages: [{
@@ -333,7 +348,7 @@ async function guessUrls (brand) {
 }
 
 // ---------------- surface mode (probe_A / probe_B) ----------------
-async function probeSurface (rec, zai) {
+async function probeSurface (rec, zai, noSearch = false) {
   const out = { brand: rec.brand, tier: rec.evidence || 'probe', lca: rec.lca_employers?.[0] || null, ts: new Date().toISOString(), candidates: [], results: [], dict_hits: [] }
 
   // 1) deterministic: platform slug dictionary attack
@@ -344,13 +359,28 @@ async function probeSurface (rec, zai) {
     const d = dict[0]
     out.best = { spec: d.spec, platform: d.platform, title: d.title, self_name: d.self_name, via: 'dict' }
     // identity: the platform's SELF-REPORTED name (authoritative) vs brand
-    const idm = surfaceMatch(rec.brand, `https://${d.slug}.example.com`, d.self_name || d.title || '')
-    out.identity_check = { self: d.self_name || d.title, brand: rec.brand, ok: idm.ok, n: idm.n }
-    if (idm.ok) {
+    // identity: the platform's SELF-REPORTED name (authoritative) vs brand.
+    // CRITICAL: no fake-host trick — a slug-derived host ALWAYS contains
+    // the slug, so it would auto-pass. With no self_name the check must
+    // stay UNKNOWN (job-content adjudication is the human's call).
+    const selfName = d.self_name || (d.title || '').replace(/^Jobs at /, '')
+    let idm = null
+    if (selfName && selfName.trim() && !/^(Recruitment|\s*\(\d+ jobs\))/.test(selfName)) {
+      idm = surfaceMatch(rec.brand, 'https://noname.invalid/', selfName)
+      out.identity_check = { self: selfName, brand: rec.brand, ok: idm.ok, n: idm.n }
+    } else {
+      out.identity_check = { self: null, brand: rec.brand, ok: null, note: 'no self-name — job-content adjudication required' }
+    }
+    if (idm && idm.ok) {
       out.verdict = 'ats_surface'
       return out
     }
-    out.verdict = 'dict_collision'   // slug matched but identity refuted
+    if (idm) {
+      out.verdict = 'dict_collision'   // slug matched but identity refuted
+      return out
+    }
+    // no self-name: surface found, identity UNRESOLVED (jobs adjudication)
+    out.verdict = 'dict_unverified'
     return out
   }
 
@@ -364,7 +394,13 @@ async function probeSurface (rec, zai) {
     return out
   }
 
-  // 3) web search (variance-prone; retried across runs)
+  // 3) web search (variance-prone; retried across runs). --no-search
+  // runs the deterministic layers only (search quota dead windows).
+  if (noSearch) {
+    out.verdict = 'no_results'
+    out.search_skipped = true
+    return out
+  }
   const queries = [`${rec.brand} careers`, `${rec.brand} jobs`, `${rec.brand} careers jobs hiring`]
   const results = []
   for (const q of queries) {
@@ -479,7 +515,7 @@ async function main () {
     }
     let out
     try {
-      out = mode === 'identity' ? await probeIdentity(rec, zai) : await probeSurface(rec, zai)
+      out = mode === 'identity' ? await probeIdentity(rec, zai) : await probeSurface(rec, zai, args.search === 'false')
     } catch (e) { out = { brand: rec.brand, err: String(e).slice(0, 200) } }
     writeFileSync(f, JSON.stringify(out, null, 1))
     const best = out.best ? (out.best.spec || out.best.platform || out.best.url) : (out.verdict || 'err')

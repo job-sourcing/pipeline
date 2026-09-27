@@ -1,0 +1,31 @@
+{
+ "brand": "Corgi International",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:34:51.762Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "corgi",
+   "spec": "ashby:corgi",
+   "title": " (7 jobs)",
+   "jobs": 7
+  }
+ ],
+ "best": {
+  "spec": "ashby:corgi",
+  "platform": "ashby",
+  "title": " (7 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (7 jobs)",
+  "brand": "Corgi International",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "REFUTED — SLC/Las Vegas/Chicago/London US company"
+}

@@ -1,0 +1,31 @@
+{
+ "brand": "Red Circle",
+ "tier": "ats",
+ "lca": null,
+ "ts": "2026-09-27T03:14:13.433Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "redcircle",
+   "spec": "greenhouse:redcircle",
+   "title": "Jobs at RedCircle",
+   "jobs_hint": 2
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:redcircle",
+  "platform": "greenhouse",
+  "title": "Jobs at RedCircle",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Jobs at RedCircle",
+  "brand": "Red Circle",
+  "ok": true,
+  "n": 2
+ },
+ "verdict": "ats_surface",
+ "manual_adjudication": "UNVERIFIED — RedCircle US podcast-ads; 红圈营销 unlikely"
+}
