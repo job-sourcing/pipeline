@@ -4,3 +4,6 @@ board-watch xiaohongshu_us_fulltime FAILED: list fetch crashed (TimeoutError: Th
 board-watch xiaohongshu_us_fulltime EGRESS-BLOCKED: list fetch unreachable from THIS egress (declared egress_restricted='gha_us'; URLError: <urlopen error _ssl.c:993: The handshake operation timed out>) — EGRESS-BLOCKED, not failed; state untouched; auto-recovers if the block lifts
 (2026-09-25T00:27:10)
 
+board-watch xiaohongshu_us_fulltime EGRESS-BLOCKED: list fetch unreachable from THIS egress (declared egress_restricted='gha_us'; URLError: <urlopen error [Errno 101] Network is unreachable>) — EGRESS-BLOCKED, state untouched; streak 1/14
+(2026-09-27T12:34:51)
+
