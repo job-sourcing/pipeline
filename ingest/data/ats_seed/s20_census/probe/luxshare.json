@@ -1,0 +1,11 @@
+{
+ "brand": "Luxshare",
+ "tier": "lca",
+ "lca": "LUXSHARE TECHNOLOGIES INTERNATIONAL, INC.",
+ "ts": "2026-09-27T02:21:10.043Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

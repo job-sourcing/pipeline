@@ -1978,20 +1978,22 @@ class TestShippedWatchConfig:
         assert "ats:greenhouse:shein" in boards
 
     def test_roster_is_exactly_twentythree(self):
-        """S15 (review #7f) → S16 → S17 → S18: the EXACT roster count —
-        a watch added or lost by a hand-edit fails HERE, not silently
-        on the runner. S16 census wires: gea (workday) + xpeng/
-        faradayfuture/didi/tcl/gotion (greenhouse) + moonshot (ashby)
+        """S15 (review #7f) → S16 → S17 → S18 → S19 → S20: the EXACT
+        roster count — a watch added or lost by a hand-edit fails HERE,
+        not silently on the runner. S16 census wires: gea (workday) +
+        xpeng/faradayfuture/didi/tcl/gotion (greenhouse) + moonshot (ashby)
         + weride (lever) + tplink/pony (workable). S17: minimax/
         shengshu (feishuhire) + horizon (lever) + xiaohongshu (custom).
         S18: hoyoverse (ashby) + plusai (lever plus-2) + unitedimaging
         (paylocity — the class #9 board; NO time_type key: the adapter
         refuses a time filter, board boards without an employment-type
-        field must not claim one)."""
+        field must not claim one). S20 wire wave 1 (the at-scale census
+        round): genscript/legendbiotech (greenhouse) + nio/foxit (lever)
+        + poizon (feishuhire — the Dewu US beachhead, 3 rows)."""
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 30
+        assert len(cfg["watches"]) == 35
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",
@@ -2003,7 +2005,12 @@ class TestShippedWatchConfig:
                   "ats:feishuhire:vrfi1sk8a0", "ats:feishuhire:shengshu",
                   "ats:lever:horizon", "custom:xiaohongshu",
                   "ats:ashby:hoyoverse", "ats:lever:plus-2",
-                  "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2"):
+                  "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2",
+                  # S20 wire wave 1
+                  "ats:greenhouse:genscript",
+                  "ats:greenhouse:legendcareers",
+                  "ats:lever:nio-usa", "ats:lever:foxitsoftware",
+                  "ats:feishuhire:poizon"):
             assert b in boards, b
         # the paylocity/xhs boards carry NO time_type key (the refusal
         # class — claiming Full time would be the S13 lie rule)
@@ -2032,7 +2039,12 @@ class TestShippedWatchConfig:
                       "ats:greenhouse:faradayfuture",
                       "ats:greenhouse:didi", "ats:greenhouse:tcl",
                       "ats:greenhouse:gotion",
-                      "ats:ashby:moonshot"):
+                      "ats:ashby:moonshot",
+                      # S20 wires: genscript/legend/poizon carry no
+                      # structured employment-type facet either
+                      "ats:greenhouse:genscript",
+                      "ats:greenhouse:legendcareers",
+                      "ats:feishuhire:poizon"):
             assert "time_type" not in by_board[board], board
         # S16: lever/workable DO serve structured commitment/employment
         # types — the time_type claim is backed

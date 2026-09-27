@@ -1,0 +1,16 @@
+{
+ "brand": "Paramount Skydance",
+ "tier": "lca",
+ "lca": "CBS INTERACTIVE INC., D/B/A PARAMOUNT SKYDANCE",
+ "ts": "2026-09-27T02:01:19.536Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://careers.paramount.com/",
+  "platform": "successfactors",
+  "title": "Careers at Paramount",
+  "via": "guess"
+ },
+ "verdict": "marker_surface"
+}

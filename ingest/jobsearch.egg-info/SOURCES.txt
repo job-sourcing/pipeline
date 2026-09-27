@@ -46,6 +46,7 @@ jobsearch/sources/linkedin_guest.py
 jobsearch/sources/personio.py
 jobsearch/sources/remoteok.py
 jobsearch/sources/remotive.py
+jobsearch/sources/site_boards.py
 jobsearch/sources/smartrecruiters.py
 jobsearch/sources/themuse.py
 jobsearch/sources/usajobs.py
@@ -69,6 +70,7 @@ tests/test_envelope_node.py
 tests/test_export_contract.py
 tests/test_gha_drain.py
 tests/test_gha_name_backfill.py
+tests/test_h1b_extract_cache.py
 tests/test_htmltext.py
 tests/test_live_api.py
 tests/test_llm_seam.py
@@ -80,6 +82,7 @@ tests/test_regressions.py
 tests/test_reposts.py
 tests/test_s9_titlesearch.py
 tests/test_scoring.py
+tests/test_site_boards.py
 tests/test_sources.py
 tests/test_sources_ats_as.py
 tests/test_sources_ats_gl.py

@@ -1,0 +1,11 @@
+{
+ "brand": "Trina Solar",
+ "tier": "lca",
+ "lca": "T1 G1 DALLAS SOLAR MODULE TRINA LLC",
+ "ts": "2026-09-27T02:21:49.118Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

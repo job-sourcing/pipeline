@@ -1,0 +1,246 @@
+{
+ "board": "ats:lever:foxitsoftware",
+ "company": "Foxit",
+ "country": "United States",
+ "time_type": "Full time",
+ "dumpDate": "2026-09-27",
+ "count": 4,
+ "details_merged": 4,
+ "signals_matched": 4,
+ "similar_edges": 0,
+ "facet_tagged_rows": 4,
+ "rows": [
+  {
+   "reqId": "00e36e70-3e10-4dc5-a5ea-600f6724a7c9",
+   "title": "Data Engineer-Marketing Technology",
+   "company": "foxitsoftware",
+   "url": "https://jobs.lever.co/foxitsoftware/00e36e70-3e10-4dc5-a5ea-600f6724a7c9",
+   "externalPath": "/00e36e70-3e10-4dc5-a5ea-600f6724a7c9",
+   "locationsText": "Alpharetta, GA",
+   "postedOn": "Posted 108 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "00e36e70-3e10-4dc5-a5ea-600f6724a7c9"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-11",
+   "departments": [
+    "GBITS"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Data Engineer-Marketing Technology",
+    "location": "Alpharetta, GA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-size: 12.0pt; font-family: Calibri, sans-serif;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Data Engineer, Marketing Technology</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">About Us:</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">Foxit is remaking the way the world interacts with documents through advanced PDF technology and tools. We are a leading global software provider of fast, affordable, and secure PDF solutions that are used by millions of people worldwide. Winner of numerous awards, Foxit has customers in more than 200 countries and global operations. We have a complete product line and an exciting and aggressive development schedule. Our proven PDF technology is disrupting the status quo establishment and has accelerated our company growth. We are proud to list as customers Google and Amazon, and with your skills and help, we plan to add many more. Foxit has offices all over the world, including locations in the US, Asia, Europe, and Australia.<br>&nbsp;<br>For more information, visit us @ <a href=\"https://www.foxit.com\">www.foxit.com</a></span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">About the Role</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">We are looking for an experienced Data Engineer to own the data pipelines that power our go-to-market systems. While this role is aligned to the marketing department's priorities, you will work day-to-day within our Business Applications &amp; Data Analytics team, following the team's established development standards, architecture patterns, and code review processes. This ensures the pipelines you build are consistent with our broader data platform and maintainable by the wider engineering team.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">Your primary focus will be marketing-related data needs - working closely with demand gen, product marketing, sales operations, and digital teams to understand their requirements, then building and maintaining the pipelines and integrations that deliver on them.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">This is a hands-on execution role. You will build and operate the data infrastructure that connects our marketing automation platform (HubSpot), CRM (Salesforce), data warehouse (Databricks), licensing system, payment platform, and other source systems. Your work will directly support marketing's ability to segment audiences, measure attribution, and run data-driven campaigns at scale.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">What You'll Do</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">Data Pipeline Development &amp; Operations</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Design, build, and maintain ETL/ELT pipelines, building upon and further optimizing our existing medallion architecture (Bronze &rarr; Silver &rarr; Gold) to move data between source systems (Salesforce CRM, HubSpot, NetSuite, Stripe, DealHub, LMS) and our Databricks data warehouse.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Build pipelines using PySpark and SQL in Databricks notebooks, following established development standards for naming, project structure, and layer-appropriate transformations.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Own the data sync layer between Databricks and HubSpot &mdash; enrichment flows inbound to HubSpot (license status, renewal dates, subscription state, firmographic data) and marketing engagement data flowing back to Databricks (email events, workflow enrollment, lifecycle changes).</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Build and maintain Exchange layer pipelines that curate data for external system consumption, formatting and validating data to meet target system requirements.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Build and maintain scheduled batch jobs and event-driven integrations using APIs (REST, webhooks, OAuth).</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Monitor pipeline health, set up alerting for failures and data quality degradation, and own incident response when syncs break.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Maintain documentation of data flows, integration architecture, and troubleshooting runbooks.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">Data Modeling &amp; Quality</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Build and maintain dimensional models in Databricks (fact tables, dimension tables, bridge tables) following our data warehouse object type definitions and naming standards.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Work in collaboration with stakeholders and data analysts to build curated, business-ready tables and datamarts that apply business logic, KPI calculations, and aggregations optimized for analytics and campaign activation.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Implement identity resolution and deduplication logic to produce unified customer profiles from multiple source systems.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Establish data validation rules, quality checks, and monitoring to ensure accuracy and freshness of data flowing into marketing systems.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Normalize disparate data sources into clean centralized schemas with proper type enforcement, deduplication, and null handling.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">Marketing Data &amp; Segmentation Support</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Ensure the data infrastructure supports audience segmentation, including firmographic, behavioral, and engagement signals.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Build the data layer that powers lifecycle marketing - triggered campaigns, dynamic journey branching, and personalization based on enriched customer profiles.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Support marketing and demand gen teams with reliable, accessible data for building audience targets in HubSpot.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Maintain data flows for email deliverability, subscription management, and suppression list synchronization.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">Integration Development</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Build and maintain API integrations between marketing, sales, and operational systems using Python and SQL.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Implement field-level transformation logic, sync orchestration, and error handling for system-to-system data flows.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Support website form and lead capture data flows - ensuring clean handoff from web properties into HubSpot and Databricks.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Work with third-party enrichment providers (firmographic, intent, technographic) to integrate enrichment data into automated workflows.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">Reporting &amp; Attribution</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Build and maintain the data infrastructure that supports campaign attribution, channel performance analysis, and funnel reporting.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Ensure accurate data for conversion analytics, lead source tracking, and marketing ROI measurement.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Support centralized reporting by routing marketing engagement data back into Databricks for cross-functional analysis.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">What You Bring</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">Required:</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; 5+ years of experience in data engineering, with hands-on pipeline development and production operations.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Strong proficiency in SQL and Python/PySpark for data pipeline development.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Experience building and maintaining ETL/ELT pipelines using Databricks, dbt, Airflow, Azure Data Factory, or equivalent.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Hands-on experience with cloud data platforms - Databricks, Snowflake, BigQuery, or Redshift.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Solid understanding of dimensional data modeling - fact tables, dimension tables, schema design, and data warehouse concepts.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Experience with medallion or layered data architectures (raw &rarr; cleansed &rarr; business-ready), Kimball-style star schemas, and one-big-table approaches to data modeling.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Working knowledge of API integration patterns - REST, webhooks, OAuth, batch sync architectures.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Experience with CRM platforms (Salesforce, HubSpot, or similar), marketing automation systems, and CPQ/quoting tools (DealHub or similar).</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Bachelor's degree in Computer Science, Information Systems, or equivalent industry experience.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">Preferred:</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Experience with Databricks (Delta Lake, PySpark, Unity Catalog).</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Familiarity with HubSpot APIs and data model.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Experience with identity resolution and customer data deduplication across multiple source systems.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Exposure to marketing data concepts &mdash; lead scoring, audience segmentation, campaign attribution, lifecycle stages.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Experience with Azure cloud services (Azure Functions, Azure DevOps, Azure Data Factory).</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Knowledge of data security and privacy practices, particularly regarding PII handling.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Experience with code review processes and development standards compliance in a collaborative data engineering team.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">What Sets You Apart</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; You've built and operated production data pipelines that marketing teams depend on daily - you understand the impact of data freshness and accuracy on campaign execution.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; You're comfortable working within a marketing department and can translate data requests from non-technical stakeholders into pipeline requirements.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; You take ownership of pipeline reliability - building monitoring and alerting proactively rather than waiting for someone to report a problem.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; You've worked with multiple data sources and know how to handle the messiness of real-world identity resolution and deduplication.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><strong><span style=\"font-family: Calibri, sans-serif;\">Why Join Us</span></strong></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; High-impact work. Your pipelines will directly power how our marketing engine operates and scales.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Modern stack. Databricks, Delta Lake, PySpark, HubSpot, Python, SQL - you'll work with current tools, not legacy systems.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Room to build. We're investing in our data infrastructure as part of a major platform migration, and you'll shape how it's built.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">&bull; Collaborative environment. You'll work closely with marketing, sales, and IT teams - visible, cross-functional work without being siloed.</span></p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\">&nbsp;</p>\n<p style=\"margin: 0cm; font-size: 11pt; font-family: Aptos, sans-serif;\"><span style=\"font-family: Calibri, sans-serif;\">Foxit is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</span></p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/foxitsoftware/00e36e70-3e10-4dc5-a5ea-600f6724a7c9",
+    "jobReqId": "00e36e70-3e10-4dc5-a5ea-600f6724a7c9",
+    "postedOn": "Posted 108 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "foxitsoftware",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "GBITS",
+   "signals": {
+    "linkedin_job_id": "4427162819",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4427162819",
+    "title": "Data Engineer-Marketing Technology",
+    "company": "Foxit",
+    "location": "Alpharetta, GA",
+    "linkedin_posted_date": "2026-09-06",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-27T02:46:53",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "fe7f7153-7ba9-42d6-a806-d7f9cd115bdd",
+   "title": "FP&A Manager",
+   "company": "foxitsoftware",
+   "url": "https://jobs.lever.co/foxitsoftware/fe7f7153-7ba9-42d6-a806-d7f9cd115bdd",
+   "externalPath": "/fe7f7153-7ba9-42d6-a806-d7f9cd115bdd",
+   "locationsText": "Fremont, CA",
+   "postedOn": "Posted 96 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "fe7f7153-7ba9-42d6-a806-d7f9cd115bdd"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-23",
+   "departments": [
+    "Finance"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "FP&A Manager",
+    "location": "Fremont, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<h2>About the Role</h2>\n<p>Foxit is seeking an experienced <strong>FP&amp;A Manager</strong> to lead financial planning and analysis for our U.S. business. This is a highly visible, hands-on role responsible for translating financial data into clear insights that guide strategic and operational decisions.</p>\n<p>You will own key budgeting, forecasting, reporting, and financial modeling activities while partnering closely with leaders across the organization. The ideal candidate combines strong technical finance expertise with business acumen, clear communication, and the ability to build scalable processes in a fast-paced, global software environment.</p>\n<h2>What You&rsquo;ll Do</h2>\n<ul>\n<li>\n<p>Lead the annual budgeting process, monthly reforecasts, and long-range financial planning for the U.S. business</p>\n</li>\n<li>\n<p>Deliver accurate, timely, and actionable financial analysis to support executive and operational decision-making</p>\n</li>\n<li>\n<p>Prepare monthly financial packages, executive and board-level reporting, and operational dashboards</p>\n</li>\n<li>\n<p>Partner with department leaders to establish budgets, monitor spending, evaluate performance, and identify risks and opportunities</p>\n</li>\n<li>\n<p>Perform scenario modeling, sensitivity analysis, and strategic planning to assess potential business outcomes</p>\n</li>\n<li>\n<p>Analyze and clearly explain variances against budget, forecast, and prior-period performance</p>\n</li>\n<li>\n<p>Build and maintain dynamic financial models for revenue, operating expenses, cash flow, and headcount planning</p>\n</li>\n<li>\n<p>Partner with Accounting to ensure alignment between financial actuals, forecasts, and reporting</p>\n</li>\n<li>\n<p>Improve and automate financial reporting, planning tools, and internal processes</p>\n</li>\n<li>\n<p>Support investor relations, fundraising initiatives, and M&amp;A due diligence as needed</p>\n</li>\n<li>\n<p>Provide guidance and mentorship to financial analysts as the function continues to scale</p>\n</li>\n</ul>\n<h2>What We&rsquo;re Looking For</h2>\n<h3>Required Qualifications</h3>\n<ul>\n<li>\n<p>7&ndash;10+ years of progressive experience in FP&amp;A, corporate finance, or a related financial discipline</p>\n</li>\n<li>\n<p>Bachelor&rsquo;s degree in Finance, Accounting, Economics, or a related field</p>\n</li>\n<li>\n<p>Active CPA license</p>\n</li>\n<li>\n<p>Experience supporting a SaaS, software, or subscription-based business</p>\n</li>\n<li>\n<p>Advanced Excel and financial modeling capabilities</p>\n</li>\n<li>\n<p>Strong understanding of financial statements, cash flow forecasting, and business performance analysis</p>\n</li>\n<li>\n<p>Working knowledge of SaaS metrics, including ARR, CAC, LTV, retention, and churn</p>\n</li>\n<li>\n<p>Experience with NetSuite and FP&amp;A platforms such as Planful, Workday Adaptive Planning, or similar tools</p>\n</li>\n<li>\n<p>Ability to translate complex financial information into clear, executive-ready insights</p>\n</li>\n</ul>\n<h3>Preferred Qualifications</h3>\n<ul>\n<li>\n<p>Experience working within a high-growth, global, or lean operating environment</p>\n</li>\n<li>\n<p>Strong business judgment and the ability to connect financial performance to broader company strategy</p>\n</li>\n<li>\n<p>Proven success partnering with senior leaders and cross-functional stakeholders</p>\n</li>\n<li>\n<p>Experience managing, developing, or mentoring financial analysts</p>\n</li>\n<li>\n<p>A proactive, hands-on approach to improving processes and solving business challenges</p>\n</li>\n</ul>\n<h2>What Success Looks Like</h2>\n<ul>\n<li>\n<p>Forecasts and financial reporting are accurate, timely, and trusted by business leaders</p>\n</li>\n<li>\n<p>Executives receive clear, actionable insights that improve decision-making</p>\n</li>\n<li>\n<p>Financial risks, trends, and opportunities are identified early</p>\n</li>\n<li>\n<p>Reporting and planning processes become increasingly efficient, automated, and scalable</p>\n</li>\n<li>\n<p>Department leaders view FP&amp;A as a strategic partner in managing performance and achieving business goals</p>\n</li>\n</ul>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/foxitsoftware/fe7f7153-7ba9-42d6-a806-d7f9cd115bdd",
+    "jobReqId": "fe7f7153-7ba9-42d6-a806-d7f9cd115bdd",
+    "postedOn": "Posted 96 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "foxitsoftware",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Finance",
+   "signals": {
+    "linkedin_job_id": "4432298104",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4432298104",
+    "title": "FP&A Manager",
+    "company": "Foxit",
+    "location": "Fremont, CA",
+    "linkedin_posted_date": "2026-09-17",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-27T02:46:55",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "69e2d634-ae9c-4fd1-a7f0-0f50a912efb1",
+   "title": "Marketing Manager, AI Growth",
+   "company": "foxitsoftware",
+   "url": "https://jobs.lever.co/foxitsoftware/69e2d634-ae9c-4fd1-a7f0-0f50a912efb1",
+   "externalPath": "/69e2d634-ae9c-4fd1-a7f0-0f50a912efb1",
+   "locationsText": "Alpharetta, GA",
+   "postedOn": "Posted 81 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "69e2d634-ae9c-4fd1-a7f0-0f50a912efb1"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-08",
+   "departments": [
+    "FoxitOne Marketing"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Marketing Manager, AI Growth",
+    "location": "Alpharetta, GA",
+    "additionalLocations": [],
+    "jobDescription": "<h1>Marketing Manager, AI Growth</h1>\n<p><strong>AI Search, AEO/GEO &amp; Customer Advocacy</strong></p>\n<h2>About Foxit</h2>\n<p>Foxit is transforming how people and organizations work with documents through innovative, secure, and accessible PDF and eSignature solutions.</p>\n<p>As a leading global software provider, Foxit serves millions of users and customers across more than 200 countries. Our award-winning technology challenges the status quo by delivering fast, affordable, and powerful alternatives to traditional document solutions.</p>\n<p>With global operations across North America, Europe, Asia, and Australia&mdash;and customers including Google and Amazon&mdash;Foxit offers the opportunity to make an impact within a rapidly growing international technology company.</p>\n<p>Learn more at <strong><a href=\"http://www.foxit.com/\">www.foxit.com</a></strong>.</p>\n<h2>The Opportunity</h2>\n<p>Foxit is seeking a <strong>Marketing Manager, AI Growth</strong> to lead our offsite citation, customer advocacy, and AI search visibility strategy.</p>\n<p>As AI-powered discovery platforms&mdash;including Google AI Overviews, Google AI Mode, Gemini, ChatGPT, Claude, and Perplexity&mdash;become increasingly important in how software buyers research and evaluate solutions, brands must establish a credible and consistent presence across the third-party sources these platforms reference.</p>\n<p>This role will help ensure Foxit is accurately represented, frequently cited, and highly visible across customer review platforms, professional networks, online communities, earned media, and AI-generated search experiences.</p>\n<p>This is a hands-on role combining strategy, execution, analytics, and cross-functional leadership. You will develop Foxit&rsquo;s roadmap for <strong>Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), customer advocacy, digital PR, and offsite brand visibility</strong>, while also owning the day-to-day programs that drive measurable results.</p>\n<p>You will join the Digital Marketing team and partner closely with SEO/AEO, Organic Social, Brand, Public Relations, Product Marketing, Customer Support, Web, and Paid Media teams.</p>\n<h2>Key Responsibilities</h2>\n<h3>Customer Advocacy and Review Platform Management &mdash; 60%</h3>\n<ul>\n<li>\n<p>Own and optimize Foxit&rsquo;s brand presence across platforms such as G2, Gartner Digital Markets, Gartner Peer Insights, Trustpilot, TrustRadius, SourceForge, and other relevant software review sites.</p>\n</li>\n<li>\n<p>Develop and execute customer review-generation campaigns in partnership with Email Marketing, Customer Success, and other internal teams.</p>\n</li>\n<li>\n<p>Manage review response workflows, including escalation processes for complex, sensitive, or negative customer feedback.</p>\n</li>\n<li>\n<p>Monitor ratings, reviews, sentiment, competitor activity, and recurring themes that can inform product, customer experience, and messaging decisions.</p>\n</li>\n<li>\n<p>Identify opportunities to strengthen Foxit&rsquo;s visibility, credibility, and conversion performance across third-party review platforms.</p>\n</li>\n<li>\n<p>Partner with Web, Organic Social, and Paid Media teams to activate customer reviews, awards, ratings, testimonials, and advocacy assets across Foxit&rsquo;s marketing channels.</p>\n</li>\n<li>\n<p>Stay current on platform updates, partnerships, algorithm changes, best practices, and emerging customer advocacy opportunities.</p>\n</li>\n</ul>\n<h3>AI Search Visibility and Offsite Citation Growth &mdash; 20%</h3>\n<ul>\n<li>\n<p>Develop and execute a holistic offsite citation strategy across online communities, professional networks, review sites, publications, and earned media.</p>\n</li>\n<li>\n<p>Build programs that improve Foxit&rsquo;s visibility within AI-generated answers and recommendations across major large language models and AI search platforms.</p>\n</li>\n<li>\n<p>Create and execute strategies for increasing Foxit&rsquo;s presence on Reddit and LinkedIn through authentic community engagement, content contributions, employee advocacy, and individual thought leadership.</p>\n</li>\n<li>\n<p>Partner with internal and external stakeholders to develop a digital PR strategy that expands Foxit&rsquo;s earned media presence and AI citation footprint.</p>\n</li>\n<li>\n<p>Monitor Foxit&rsquo;s citations, mentions, sentiment, and share of voice across AI search platforms using tools such as Ahrefs, Semrush, and other AI visibility platforms.</p>\n</li>\n<li>\n<p>Identify citation gaps, competitor advantages, and emerging content opportunities in partnership with the SEO/AEO team.</p>\n</li>\n<li>\n<p>Establish regular reporting on AI search visibility, offsite citations, customer advocacy performance, and share-of-voice trends.</p>\n</li>\n</ul>\n<h3>Cross-Functional Strategy and Execution &mdash; 20%</h3>\n<ul>\n<li>\n<p>Coordinate with Foxit&rsquo;s PR agency to align earned media initiatives with AI citation and offsite visibility priorities.</p>\n</li>\n<li>\n<p>Partner with Brand and Organic Social teams on social media, influencer, executive visibility, and employee advocacy programs.</p>\n</li>\n<li>\n<p>Collaborate with Product Marketing to ensure Foxit&rsquo;s positioning, product capabilities, and competitive differentiators are represented accurately across third-party sources and AI-generated responses.</p>\n</li>\n<li>\n<p>Serve as the internal owner and strategic connector for Foxit&rsquo;s offsite presence, ensuring consistent messaging and coordinated execution across channels.</p>\n</li>\n<li>\n<p>Develop or contribute to content assets&mdash;including blog posts, comparison guides, thought leadership articles, community content, and educational resources&mdash;that support Foxit&rsquo;s AI citation and visibility goals.</p>\n</li>\n<li>\n<p>Partner with Customer Support and Customer Success teams to develop escalation and response workflows for review platforms and community channels.</p>\n</li>\n<li>\n<p>Translate offsite insights, customer feedback, and AI search trends into actionable recommendations for marketing and business stakeholders.</p>\n</li>\n</ul>\n<h2>Required Skills and Qualifications</h2>\n<h3>Must-Have Qualifications</h3>\n<ul>\n<li>\n<p>2&ndash;4 years of experience in SEO, AEO, GEO, content marketing, customer advocacy, digital PR, growth marketing, or a related field.</p>\n</li>\n<li>\n<p>Understanding of how AI search platforms, answer engines, and large language models discover, evaluate, and cite third-party content.</p>\n</li>\n<li>\n<p>Hands-on experience managing a company&rsquo;s presence or customer review campaigns on platforms such as G2, Gartner Peer Insights, Gartner Digital Markets, Trustpilot, TrustRadius, or similar sites.</p>\n</li>\n<li>\n<p>Experience developing programs that improve brand visibility, customer advocacy, reputation, or offsite authority.</p>\n</li>\n<li>\n<p>Strong cross-functional collaboration skills with the ability to work effectively across Marketing, Product Marketing, Public Relations, Brand, Customer Support, and Customer Success.</p>\n</li>\n<li>\n<p>Analytical mindset with the ability to track, interpret, and communicate citation, sentiment, review, visibility, and share-of-voice metrics.</p>\n</li>\n<li>\n<p>Excellent written communication skills with the ability to adapt messaging, tone, and content for different platforms and audiences.</p>\n</li>\n<li>\n<p>Strong project-management and organizational skills, with the ability to move between strategic planning and hands-on execution.</p>\n</li>\n<li>\n<p>Genuine interest in artificial intelligence, AI search, and the evolving digital discovery landscape.</p>\n</li>\n<li>\n<p>Active familiarity with multiple AI platforms and a habit of staying current on emerging AI search and marketing trends.</p>\n</li>\n</ul>\n<h3>Preferred Qualifications</h3>\n<ul>\n<li>\n<p>Experience with Answer Engine Optimization, Generative Engine Optimization, AI citation monitoring, or AI search visibility tools.</p>\n</li>\n<li>\n<p>Background in B2B SaaS, enterprise software, productivity technology, or digital document solutions.</p>\n</li>\n<li>\n<p>Experience with digital PR, earned media, community management, influencer programs, or thought leadership.</p>\n</li>\n<li>\n<p>Familiarity with Ahrefs, Semrush, or comparable SEO and competitive intelligence platforms.</p>\n</li>\n<li>\n<p>Experience developing customer advocacy, review-generation, or online reputation-management programs.</p>\n</li>\n<li>\n<p>Understanding of Reddit, LinkedIn, and other community-driven platforms as sources of brand authority and AI citations.</p>\n</li>\n</ul>\n<h2>What Foxit Offers</h2>\n<ul>\n<li>\n<p>The opportunity to build and own a high-impact AI growth and customer advocacy function within a global software company.</p>\n</li>\n<li>\n<p>Direct influence over how Foxit appears across AI search platforms, customer review sites, professional communities, and earned media.</p>\n</li>\n<li>\n<p>A highly collaborative role working across Digital Marketing, SEO, Product Marketing, Brand, PR, Customer Support, and global business teams.</p>\n</li>\n<li>\n<p>The opportunity to work at the intersection of AI, search, customer advocacy, content strategy, digital PR, and B2B SaaS growth.</p>\n</li>\n<li>\n<p>Significant visibility and the ability to establish new strategies, processes, measurement frameworks, and best practices as AI-driven discovery continues to evolve.</p>\n</li>\n<li>\n<p>A fast-paced, international environment where experimentation, ownership, and forward-looking ideas are encouraged.</p>\n</li>\n</ul>\n<h2>Join Foxit</h2>\n<p>Help shape how millions of software buyers discover, evaluate, and understand Foxit in an AI-first search environment.</p>\n<p>If you are excited by the future of AI search, customer advocacy, digital PR, and brand visibility&mdash;and want to build programs that influence how a global technology company is represented across the digital ecosystem&mdash;we encourage you to apply.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/foxitsoftware/69e2d634-ae9c-4fd1-a7f0-0f50a912efb1",
+    "jobReqId": "69e2d634-ae9c-4fd1-a7f0-0f50a912efb1",
+    "postedOn": "Posted 81 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "foxitsoftware",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "FoxitOne Marketing",
+   "signals": {
+    "linkedin_job_id": "4438283663",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4438283663",
+    "title": "Marketing Manager, AI Growth",
+    "company": "Foxit",
+    "location": "Alpharetta, GA",
+    "linkedin_posted_date": "2026-09-17",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-27T02:46:54",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "aa2752a8-f75a-4c15-9651-26543207e4b3",
+   "title": "Product Manager",
+   "company": "foxitsoftware",
+   "url": "https://jobs.lever.co/foxitsoftware/aa2752a8-f75a-4c15-9651-26543207e4b3",
+   "externalPath": "/aa2752a8-f75a-4c15-9651-26543207e4b3",
+   "locationsText": "Alpharetta, GA",
+   "postedOn": "Posted 109 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "aa2752a8-f75a-4c15-9651-26543207e4b3"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-10",
+   "departments": [
+    "Product Management"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Product Manager",
+    "location": "Alpharetta, GA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<h1>Product Manager</h1>\n<p><strong>Product Line:</strong> Foxit Editor Desktop<br><strong>Market Focus:</strong> North America</p>\n<h2>About Foxit</h2>\n<p>Foxit is a leading global provider of fast, affordable, and secure PDF solutions used by millions of customers worldwide. With customers in more than 200 countries, including organizations such as Google and Amazon, Foxit is helping reshape how businesses create, edit, manage, and collaborate on documents.</p>\n<p>Foxit offers a complete product portfolio and continues to grow through innovation, global expansion, and competitive disruption in the PDF technology market.</p>\n<p>For more information, visit <a href=\"http://www.foxit.com/\">www.foxit.com</a>.</p>\n<h2>Position Overview</h2>\n<p>Foxit is seeking a Product Manager to support the Editor Desktop product line for the North America market. This role will serve as a key product owner across the product lifecycle, connecting customer needs, business priorities, R&amp;D, design, and executive stakeholders.</p>\n<p>The Product Manager will translate market feedback and business requirements into clear product direction, helping ensure Foxit&rsquo;s desktop editor products remain competitive, customer-focused, and aligned with company growth goals.</p>\n<h2>Key Responsibilities</h2>\n<ul>\n<li>\n<p>Define and execute the product roadmap for Foxit Editor Desktop in alignment with company strategy and market needs</p>\n</li>\n<li>\n<p>Conduct market research, competitive analysis, and customer discovery to identify growth opportunities and product gaps</p>\n</li>\n<li>\n<p>Partner with Sales, Customer Success, and customer-facing teams to gather feedback, understand pain points, and prioritize improvements</p>\n</li>\n<li>\n<p>Translate customer and business needs into clear product requirements, including feature descriptions, workflows, acceptance criteria, and release priorities</p>\n</li>\n<li>\n<p>Collaborate closely with R&amp;D, engineering, design, and management stakeholders to ensure timely, high-quality product delivery</p>\n</li>\n<li>\n<p>Support product launches, including release preparation, internal training, product documentation, and customer-facing explanations</p>\n</li>\n<li>\n<p>Monitor adoption blockers, user feedback, and competitive trends to continuously improve product value and market fit</p>\n</li>\n</ul>\n<h2>Required Qualifications</h2>\n<ul>\n<li>\n<p>Bachelor&rsquo;s degree in Computer Science, Software Engineering, Product Management, Business, or a related field</p>\n</li>\n<li>\n<p>2+ years of experience in software product management, product operations, or business enablement</p>\n</li>\n<li>\n<p>Strong ability to understand customer needs, sales priorities, and market requirements</p>\n</li>\n<li>\n<p>Experience translating business and customer feedback into clear product requirements</p>\n</li>\n<li>\n<p>Strong communication, collaboration, analytical, and problem-solving skills</p>\n</li>\n<li>\n<p>Ability to work effectively with cross-functional teams across different regions and time zones</p>\n</li>\n<li>\n<p>Customer-focused, responsive, and comfortable supporting North America business needs</p>\n</li>\n<li>\n<p>Strong written and verbal English communication skills</p>\n</li>\n</ul>\n<h2>Preferred Qualifications</h2>\n<ul>\n<li>\n<p>Experience supporting North America sales teams, business stakeholders, or end customers</p>\n</li>\n<li>\n<p>Familiarity with PDF editors, desktop software, SaaS products, or productivity tools</p>\n</li>\n<li>\n<p>Experience working with global R&amp;D or engineering teams</p>\n</li>\n<li>\n<p>Understanding of product release planning, customer feedback loops, and competitive product positioning</p>\n</li>\n</ul>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/foxitsoftware/aa2752a8-f75a-4c15-9651-26543207e4b3",
+    "jobReqId": "aa2752a8-f75a-4c15-9651-26543207e4b3",
+    "postedOn": "Posted 109 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "foxitsoftware",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Product Management",
+   "signals": {
+    "linkedin_job_id": "4427098575",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4427098575",
+    "title": "Product Manager",
+    "company": "Foxit",
+    "location": "Alpharetta, GA",
+    "linkedin_posted_date": "2026-09-07",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-27T02:46:51",
+    "match_method": "title"
+   }
+  }
+ ]
+}

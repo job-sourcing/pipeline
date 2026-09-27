@@ -1,0 +1,29 @@
+{
+ "brand": "Chagee",
+ "tier": "lca",
+ "lca": "CHAGEE CA LLC",
+ "ts": "2026-09-27T02:12:12.723Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "chagee",
+   "spec": "feishuhire:chagee",
+   "title": "欢迎加入霸王茶姬"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:chagee",
+  "platform": "feishu",
+  "title": "欢迎加入霸王茶姬",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "欢迎加入霸王茶姬",
+  "brand": "Chagee",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

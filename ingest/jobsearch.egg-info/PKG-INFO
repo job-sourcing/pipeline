@@ -7,6 +7,7 @@ Requires-Python: >=3.11
 License-File: LICENSE
 Requires-Dist: requests>=2.31
 Requires-Dist: click>=8.1
+Requires-Dist: curl_cffi>=0.6
 Provides-Extra: jobspy
 Requires-Dist: python-jobspy; extra == "jobspy"
 Provides-Extra: dev

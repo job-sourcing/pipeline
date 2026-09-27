@@ -1,0 +1,57 @@
+{
+ "brand": "Fuyao Group",
+ "tier": "lca",
+ "lca": "FUYAO GLASS AMERICA INC.",
+ "ts": "2026-09-27T01:38:25.509Z",
+ "candidates": [
+  {
+   "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=25319558-d6a9-48ab-93d2-99e4878a8ffc&ccId=19000101_000001&type=JS&lang=en_US",
+   "title": "Recruitment",
+   "status": 200,
+   "bytes": 19449,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "adp:25319558-d6a9-48ab-93d2-99e4878a8ffc",
+   "score": 10,
+   "snippet": "Current Openings (20 of 180) · Cost Accountant - Finance Dept · Production Associate--ALL SHIFTS · Logistics Operator 3rd Shift · Logistics Operator 1st Shift."
+  },
+  {
+   "url": "https://fuyaousa.com/careers",
+   "title": "Client Challenge",
+   "status": 200,
+   "bytes": 3036,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Looking into a career or other job opportunities? Become a part of our team Hard work. Please click APPLY HERE to submit an application APPLY HERE!"
+  },
+  {
+   "url": "https://fuyaousa.com",
+   "title": "Client Challenge",
+   "status": 200,
+   "bytes": 3036,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Are you interested in starting your career with Fuyao? Search Open Positions. Regional Impact. $700M. FUYAO INVESTMENT"
+  }
+ ],
+ "best": {
+  "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=25319558-d6a9-48ab-93d2-99e4878a8ffc&ccId=19000101_000001&type=JS&lang=en_US",
+  "title": "Recruitment",
+  "status": 200,
+  "bytes": 19449,
+  "markers": [
+   "adp"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "adp:25319558-d6a9-48ab-93d2-99e4878a8ffc",
+  "score": 10,
+  "snippet": "Current Openings (20 of 180) · Cost Accountant - Finance Dept · Production Associate--ALL SHIFTS · Logistics Operator 3rd Shift · Logistics Operator 1st Shift."
+ },
+ "verdict": "ats_surface"
+}

@@ -1,0 +1,27 @@
+{
+ "brand": "Chery",
+ "tier": "lca",
+ "lca": "CHERY FORKLIFT (NEW YORK) INC",
+ "ts": "2026-09-27T02:11:01.705Z",
+ "candidates": [],
+ "results": [
+  {
+   "t": "[groovy-scm] [contrib] [28] process/trunk",
+   "u": "https://marc.info",
+   "s": "Made Process work with Groovy 1.0.' +careering +careerism +careerisms ・ +caregivers +caregiving +caregivings ・ +Chesterfieldian +chesterfields"
+  },
+  {
+   "t": "Cars - Auto",
+   "u": "https://www.gazeti.ge",
+   "s": "Gazeti.ge - classifieds site in Georgia! Cars - Auto Categories +AC. Buses - Auto Jobs Requisites"
+  },
+  {
+   "t": "Cars for sale - sewônè africa",
+   "u": "https://www.sewone.africa",
+   "s": "Vehicles Real Estate Jobs For Sale Services Rent Lend Donation Barter Event Employee Accounts Event Organizer. Search for Cars Category - There are no listings."
+  }
+ ],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

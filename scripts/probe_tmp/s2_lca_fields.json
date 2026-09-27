@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.dol.gov/agencies/eta/foreign-labor/performance",
+    "name": "Performance Data | U.S. Department of Labor",
+    "snippet": "Each data set is cumulative for the fiscal year, containing unique records identified by the applicable OFLC case number based on the most recent date a case ...",
+    "host_name": "www.dol.gov",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "http://catalog.data.gov/dataset/office-of-foreign-labor-certification-oflc-case-disclosure-data",
+    "name": "Office of Foreign Labor Certification (OFLC) Case",
+    "snippet": "Select data fields for each case record are extracted from foreign labor certification application tables within OFLC case management systems ...",
+    "host_name": "catalog.data.gov",
+    "rank": 1,
+    "date": "Sep 30, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.aila.org/library/oflc-releases-public-disclosure-data-and-selected-program-statistics-for-q3-of-fy-2025",
+    "name": "OFLC Releases Public Disclosure Data and Selected",
+    "snippet": "These files will each have their own record layout documents. The public disclosure files include all final determinations OFLC issued for ...",
+    "host_name": "www.aila.org",
+    "rank": 2,
+    "date": "Aug 15, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://citelaw.org/law/agency-guidance/lca-worksite-record-layout-fy2024-pdf-6a57b6fe1cf30880343d2af5",
+    "name": "DOL OFLC, LCA_Worksite_Record_Layout_FY2024.pdf",
+    "snippet": "This public disclosure file contains administrative data from employers' Labor Condition Applications. DESCRIPTION CASE_NUMBER WORKSITE_WORKERS",
+    "host_name": "citelaw.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.bal.com/immigration-news/united-states-oflc-releases-q3-labor-certification-data-for-select-programs-including-perm-and-h-1b-h-2a-and-h-2b-visas",
+    "name": "United States | OFLC releases Q3 labor certification data",
+    "snippet": "The OFLC's Q3 release includes final determinations from Oct. 1, 2024, through June 30, 2025, for programs such as PERM, LCA (H-1B, H-1B1, E-3) ...",
+    "host_name": "www.bal.com",
+    "rank": 4,
+    "date": "Aug 20, 2025",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.dol.gov/agencies/eta/foreign-labor",
+    "name": "Foreign Labor Certification",
+    "snippet": "View the public disclosure files and corresponding record layouts. The public disclosure files include all final determinations OFLC issued for these programs ...",
+    "host_name": "www.dol.gov",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://apify.com/crawlerbros/h1b-lca-disclosure-scraper",
+    "name": "H-1B LCA Disclosure Data Scraper",
+    "snippet": "Search by employer, job title, SOC occupation code, wage range, worksite state/city, visa class, and more, or look up exact case numbers. No ...",
+    "host_name": "apify.com",
+    "rank": 6,
+    "date": "Aug 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.kaggle.com/datasets/saurabhbadole/u-s-immigration-and-wage-disclosure-data-updated",
+    "name": "U.S. Immigration & Wage Disclosure Data - FY25 Q3",
+    "snippet": "It includes detailed records from employer applications requesting prevailing wage determinations and labor certifications across various visa programs.",
+    "host_name": "www.kaggle.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,14 @@
+{
+ "brand": "Turing Robot",
+ "tier": "wire_now",
+ "spec": "greenhouse:turing",
+ "ts": "2026-09-27T01:32:10.902Z",
+ "board_title": "Jobs at Turing",
+ "board_company": "Turing",
+ "status": 200,
+ "bytes": 45996,
+ "board_is_brand": false,
+ "chinese_origin": true,
+ "verdict": "mismatch",
+ "note": "Board name 'turing' is a homonym; LCA candidate 'TURING ENTERPRISES INC.' is a distinct entity."
+}

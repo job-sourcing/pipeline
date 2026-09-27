@@ -1,0 +1,29 @@
+{
+ "brand": "Hisense",
+ "tier": "lca",
+ "lca": "HISENSE USA CORPORATION",
+ "ts": "2026-09-27T02:01:18.042Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "hisense",
+   "spec": "feishuhire:hisense",
+   "title": "加入海信集团"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:hisense",
+  "platform": "feishu",
+  "title": "加入海信集团",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入海信集团",
+  "brand": "Hisense",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

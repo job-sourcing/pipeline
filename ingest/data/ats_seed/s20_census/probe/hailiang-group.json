@@ -1,0 +1,29 @@
+{
+ "brand": "Hailiang Group",
+ "tier": "lca",
+ "lca": "HAILIANG COPPER TEXAS INC.",
+ "ts": "2026-09-27T02:09:15.497Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "hailiang",
+   "spec": "feishuhire:hailiang",
+   "title": "加入海亮集团有限公司"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:hailiang",
+  "platform": "feishu",
+  "title": "加入海亮集团有限公司",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入海亮集团有限公司",
+  "brand": "Hailiang Group",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

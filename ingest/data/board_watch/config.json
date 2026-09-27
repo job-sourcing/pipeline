@@ -482,6 +482,85 @@
     "Houston, Texas, United States",
     "Seattle, Washington, United States"
    ]
+  },
+  {
+   "label": "genscript_us_fulltime",
+   "board": "ats:greenhouse:genscript",
+   "company": "GenScript",
+   "country": "United States",
+   "li_variants": [
+    "GenScript",
+    "GenScript Biotech",
+    "GenScript USA"
+   ],
+   "slice_locations": [
+    "United States",
+    "Piscataway, New Jersey, United States",
+    "San Jose, California, United States"
+   ]
+  },
+  {
+   "label": "legendbiotech_us_fulltime",
+   "board": "ats:greenhouse:legendcareers",
+   "company": "Legend Biotech",
+   "country": "United States",
+   "li_variants": [
+    "Legend Biotech",
+    "Legend Biotech US"
+   ],
+   "slice_locations": [
+    "United States",
+    "Somerset, New Jersey, United States",
+    "Raritan, New Jersey, United States"
+   ]
+  },
+  {
+   "label": "nio_us_fulltime",
+   "board": "ats:lever:nio-usa",
+   "company": "NIO",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "NIO",
+    "NIO USA, Inc.",
+    "NIO USA"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ]
+  },
+  {
+   "label": "foxit_us_fulltime",
+   "board": "ats:lever:foxitsoftware",
+   "company": "Foxit",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "Foxit",
+    "Foxit Software",
+    "Foxit Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States",
+    "Milpitas, California, United States"
+   ]
+  },
+  {
+   "label": "poizon_us_fulltime",
+   "board": "ats:feishuhire:poizon",
+   "company": "POIZON",
+   "country": "United States",
+   "li_variants": [
+    "POIZON",
+    "Poizon",
+    "Dewu"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States"
+   ]
   }
  ]
 }

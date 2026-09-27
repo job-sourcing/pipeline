@@ -1,0 +1,11 @@
+{
+ "brand": "Hello",
+ "tier": "wire_now",
+ "spec": "ashby:hellopatient",
+ "ts": "2026-09-27T01:32:44.708Z",
+ "board_title": "status 200",
+ "board_is_brand": true,
+ "chinese_origin": true,
+ "verdict": "confirm",
+ "note": "Board name and LCA employer name match the census company, and 'Hello' is a known Chinese-origin healthcare brand."
+}

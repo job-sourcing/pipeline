@@ -1,0 +1,275 @@
+{
+ "TikTok/ByteDance": {
+  "cases": 492,
+  "workers": 1095,
+  "states": {
+   "NY": 36,
+   "CA": 337,
+   "WA": 114,
+   "TX": 2,
+   "DC": 1,
+   "NJ": 1,
+   "VA": 1
+  },
+  "top_names": {
+   "TikTok Inc.": 171,
+   "TikTok U.S. Data Security Inc.": 125,
+   "BYTEDANCE INC.": 98,
+   "ByteDance Inc.": 98
+  }
+ },
+ "MINISO": {
+  "cases": 25,
+  "workers": 25,
+  "states": {
+   "TX": 17,
+   "CA": 5,
+   "CO": 1,
+   "PA": 1,
+   "NJ": 1
+  },
+  "top_names": {
+   "MINISOFT TECHNOLOGIES LLC": 17,
+   "Geminisoft Solutions Inc.": 5,
+   "Miniso Depot CA Inc": 2,
+   "Miniso Depot CA, Inc.": 1
+  }
+ },
+ "Lenovo": {
+  "cases": 11,
+  "workers": 11,
+  "states": {
+   "NC": 7,
+   "IL": 3,
+   "FL": 1
+  },
+  "top_names": {
+   "Lenovo (United States) Inc": 4,
+   "MOTOROLA MOBILITY LLC": 3,
+   "Lenovo Global Technology (UnitedStates) Inc": 2,
+   "Lenovo Global Technology (United States) Inc": 2
+  }
+ },
+ "GenScript": {
+  "cases": 14,
+  "workers": 14,
+  "states": {
+   "NJ": 6,
+   "PA": 5,
+   "MA": 1,
+   "NY": 1,
+   "WA": 1
+  },
+  "top_names": {
+   "Legend Biotech USA, Inc.": 7,
+   "Genscript USA, Inc.": 5,
+   "GenScript USA Inc.": 2
+  }
+ },
+ "SharkNinja": {
+  "cases": 3,
+  "workers": 3,
+  "states": {
+   "MA": 3
+  },
+  "top_names": {
+   "SharkNinja Operating LLC": 3
+  }
+ },
+ "GE Appliances/Haier": {
+  "cases": 3,
+  "workers": 3,
+  "states": {
+   "KY": 3
+  },
+  "top_names": {
+   "HAIER US APPLIANCE SOLUTIONS INC.": 3
+  }
+ },
+ "Alibaba": {
+  "cases": 11,
+  "workers": 11,
+  "states": {
+   "CA": 8,
+   "WA": 3
+  },
+  "top_names": {
+   "Alibaba Cloud US LLC": 10,
+   "Alibaba.com US E-commerce Corporation": 1
+  }
+ },
+ "Holo/HiYoyo/HoYoverse": {
+  "cases": 2,
+  "workers": 2,
+  "states": {
+   "CA": 2
+  },
+  "top_names": {
+   "COGNOSPHERE, LLC": 2
+  }
+ },
+ "Tencent": {
+  "cases": 18,
+  "workers": 18,
+  "states": {
+   "CA": 15,
+   "WA": 3
+  },
+  "top_names": {
+   "Riot Games, Inc.": 16,
+   "Tencent America LLC": 2
+  }
+ },
+ "Narwal": {
+  "cases": 3,
+  "workers": 3,
+  "states": {
+   "OH": 3
+  },
+  "top_names": {
+   "Narwal Inc.": 3
+  }
+ },
+ "CATL": {
+  "cases": 3,
+  "workers": 3,
+  "states": {
+   "MI": 3
+  },
+  "top_names": {
+   "Contemporary Amperex Technology USA Inc.": 2,
+   "Contemporary Amperex Technology Kentucky LLC": 1
+  }
+ },
+ "Transsion": {
+  "cases": 3,
+  "workers": 3,
+  "states": {
+   "WV": 1,
+   "AR": 1,
+   "CA": 1
+  },
+  "top_names": {
+   "Tecnocap LLC": 1,
+   "eMaestro Tecnologies Inc": 1,
+   "H-TOWN TECNOLOGIES INC": 1
+  }
+ },
+ "Baidu": {
+  "cases": 1,
+  "workers": 1,
+  "states": {
+   "CA": 1
+  },
+  "top_names": {
+   "Baidu USA LLC": 1
+  }
+ },
+ "Mindray": {
+  "cases": 3,
+  "workers": 3,
+  "states": {
+   "NJ": 3
+  },
+  "top_names": {
+   "Mindray DS USA, Inc.": 2,
+   "MINDRAY DS USA, INC.": 1
+  }
+ },
+ "DiDi": {
+  "cases": 7,
+  "workers": 7,
+  "states": {
+   "CA": 7
+  },
+  "top_names": {
+   "DiDi Research America, LLC": 5,
+   "DiDi USA, Inc.": 2
+  }
+ },
+ "WuXi": {
+  "cases": 4,
+  "workers": 4,
+  "states": {
+   "NJ": 4
+  },
+  "top_names": {
+   "WuXi Biologics USA, LLC": 4
+  }
+ },
+ "Gotion": {
+  "cases": 3,
+  "workers": 3,
+  "states": {
+   "IL": 2,
+   "CA": 1
+  },
+  "top_names": {
+   "Gotion Illinois New Energy Inc.": 2,
+   "Gotion, Inc.": 1
+  }
+ },
+ "Shein": {
+  "cases": 1,
+  "workers": 1,
+  "states": {
+   "CA": 1
+  },
+  "top_names": {
+   "SHEIN Technology LLC": 1
+  }
+ },
+ "NIO": {
+  "cases": 3,
+  "workers": 6,
+  "states": {
+   "CA": 2,
+   "NY": 1
+  },
+  "top_names": {
+   "NIO USA, Inc.": 2,
+   "Jawonio Inc.": 1
+  }
+ },
+ "BYD": {
+  "cases": 3,
+  "workers": 3,
+  "states": {
+   "CA": 3
+  },
+  "top_names": {
+   "BYD Coach and Bus LLC": 2,
+   "BYD Motors LLC": 1
+  }
+ },
+ "PlusAI": {
+  "cases": 1,
+  "workers": 1,
+  "states": {
+   "IL": 1
+  },
+  "top_names": {
+   "PlusAI, Inc.": 1
+  }
+ },
+ "Vivo/Oppo/OnePlus": {
+  "cases": 1,
+  "workers": 1,
+  "states": {
+   "NY": 1
+  },
+  "top_names": {
+   "OnePlus USA Corp": 1
+  }
+ },
+ "NetEase": {
+  "cases": 1,
+  "workers": 1,
+  "states": {
+   "CA": 1
+  },
+  "top_names": {
+   "NetEase Information Technology Corporation": 1
+  }
+ }
+}

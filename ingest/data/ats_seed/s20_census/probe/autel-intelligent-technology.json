@@ -1,0 +1,11 @@
+{
+ "brand": "Autel Intelligent Technology",
+ "tier": "lca",
+ "lca": "AUTEL US INC",
+ "ts": "2026-09-27T02:11:28.908Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

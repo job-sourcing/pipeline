@@ -1792,6 +1792,7 @@ _FEISHU_CITY_COUNTRY = {
     "Hohhot": "China", "Yinchuan": "China", "Xining": "China",
     "Haikou": "China", "Sanya": "China", "Dongguan": "China",
     "Foshan": "China", "Ningbo": "China", "Wuxi": "China",
+    "Langfang": "China", "Yulin": "China",  # S20 poizon
     # Hong Kong / Macau / Taiwan
     "Hong Kong (China)": "Hong Kong", "Hong Kong": "Hong Kong",
     "New Territories": "Hong Kong", "Kowloon": "Hong Kong",
@@ -1820,6 +1821,8 @@ _FEISHU_CITY_COUNTRY = {
     "Tysons": "United States", "Pittsburgh": "United States",
     "Ann Arbor": "United States", "Princeton": "United States",
     "Jersey City": "United States", "San Ramon": "United States",
+    # S20 (poizon portal): US satellites beyond the pre-seed
+    "Brooklyn": "United States", "Essex County": "United States",
     # Other international (observed in live boards)
     "Singapore": "Singapore", "London": "United Kingdom",
     "Manchester": "United Kingdom", "Edinburgh": "United Kingdom",

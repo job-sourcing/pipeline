@@ -1,0 +1,30 @@
+{
+ "brand": "Foxit Software",
+ "tier": "lca",
+ "lca": "FOXIT SOFTWARE INCORPORATED",
+ "ts": "2026-09-27T02:19:39.520Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "lever",
+   "slug": "foxitsoftware",
+   "spec": "lever:foxitsoftware",
+   "title": "Foxit",
+   "jobs_hint": 0
+  }
+ ],
+ "best": {
+  "spec": "lever:foxitsoftware",
+  "platform": "lever",
+  "title": "Foxit",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Foxit",
+  "brand": "Foxit Software",
+  "ok": true,
+  "n": 2
+ },
+ "verdict": "ats_surface"
+}

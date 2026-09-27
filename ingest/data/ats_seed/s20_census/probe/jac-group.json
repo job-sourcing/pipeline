@@ -1,0 +1,29 @@
+{
+ "brand": "JAC Group",
+ "tier": "lca",
+ "lca": "JAC PRODUCTS, INC.",
+ "ts": "2026-09-27T02:17:36.895Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "jac-group",
+   "spec": "feishuhire:jac-group",
+   "title": "加入安徽江淮汽车集团股份有限公司"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:jac-group",
+  "platform": "feishu",
+  "title": "加入安徽江淮汽车集团股份有限公司",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入安徽江淮汽车集团股份有限公司",
+  "brand": "JAC Group",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

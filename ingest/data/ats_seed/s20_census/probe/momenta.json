@@ -1,0 +1,29 @@
+{
+ "brand": "Momenta",
+ "tier": "lca",
+ "lca": "MOMENTA USA, INC.",
+ "ts": "2026-09-27T02:00:48.747Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "momenta",
+   "spec": "feishuhire:momenta",
+   "title": "Momenta Talent"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:momenta",
+  "platform": "feishu",
+  "title": "Momenta Talent",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Momenta Talent",
+  "brand": "Momenta",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

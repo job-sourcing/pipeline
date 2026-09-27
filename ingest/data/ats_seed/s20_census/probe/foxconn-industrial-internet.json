@@ -1,0 +1,47 @@
+{
+ "brand": "Foxconn Industrial Internet",
+ "tier": "lca",
+ "lca": "FOXCONN ASSEMBLY LLC",
+ "ts": "2026-09-27T01:39:40.860Z",
+ "candidates": [
+  {
+   "url": "https://foxconnassemblyllc.applytojob.com",
+   "title": "Foxconn Industrial Internet - FII - Career Page",
+   "status": 200,
+   "bytes": 225127,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Job Summary: Key Responsibilities include NPI Introduction, BOM Creation/Management, Packaging definition and validation, Engineering Change management and ... "
+  },
+  {
+   "url": "http://foxconnggroup.applytojob.com",
+   "title": "Foxconn Industrial Internet - Career Page",
+   "status": 200,
+   "bytes": 177826,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore open job opportunities at Foxconn Industrial Internet. Current Openings 2027. Business, IT & Operations Intern Roles Houston, TX"
+  },
+  {
+   "url": "https://www.foxconnwiofficial.com/careers",
+   "title": "Foxconn In Wisconsin | FoxconnJobs | Mount Pleasant, WI - Offici",
+   "status": 200,
+   "bytes": 638933,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "To view open positions please click below Careers in next-generation, Click the buttons below to learn more about the positions available, view completed job .."
+  }
+ ],
+ "best": {
+  "url": "https://foxconnassemblyllc.applytojob.com",
+  "platform": "custom",
+  "title": "Foxconn Industrial Internet - FII - Career Page"
+ },
+ "verdict": "custom_surface"
+}

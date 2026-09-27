@@ -1,0 +1,588 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+00e36e70-3e10-4dc5-a5ea-600f6724a7c9,Data Engineer-Marketing Technology,foxitsoftware,foxitsoftware,Full time,Posted 108 Days Ago,,,"Alpharetta, GA",1,"Alpharetta, GA",false,,United States,,0,"Data Engineer, Marketing Technology
+
+About Us:
+
+Foxit is remaking the way the world interacts with documents through advanced PDF technology and tools. We are a leading global software provider of fast, affordable, and secure PDF solutions that are used by millions of people worldwide. Winner of numerous awards, Foxit has customers in more than 200 countries and global operations. We have a complete product line and an exciting and aggressive development schedule. Our proven PDF technology is disrupting the status quo establishment and has accelerated our company growth. We are proud to list as customers Google and Amazon, and with your skills and help, we plan to add many more. Foxit has offices all over the world, including locations in the US, Asia, Europe, and Australia.
+
+For more information, visit us @ www.foxit.com
+
+About the Role
+
+We are looking for an experienced Data Engineer to own the data pipelines that power our go-to-market systems. While this role is aligned to the marketing department's priorities, you will work day-to-day within our Business Applications & Data Analytics team, following the team's established development standards, architecture patterns, and code review processes. This ensures the pipelines you build are consistent with our broader data platform and maintainable by the wider engineering team.
+
+Your primary focus will be marketing-related data needs - working closely with demand gen, product marketing, sales operations, and digital teams to understand their requirements, then building and maintaining the pipelines and integrations that deliver on them.
+
+This is a hands-on execution role. You will build and operate the data infrastructure that connects our marketing automation platform (HubSpot), CRM (Salesforce), data warehouse (Databricks), licensing system, payment platform, and other source systems. Your work will directly support marketing's ability to segment audiences, measure attribution, and run data-driven campaigns at scale.
+
+What You'll Do
+
+Data Pipeline Development & Operations
+
+• Design, build, and maintain ETL/ELT pipelines, building upon and further optimizing our existing medallion architecture (Bronze → Silver → Gold) to move data between source systems (Salesforce CRM, HubSpot, NetSuite, Stripe, DealHub, LMS) and our Databricks data warehouse.
+
+• Build pipelines using PySpark and SQL in Databricks notebooks, following established development standards for naming, project structure, and layer-appropriate transformations.
+
+• Own the data sync layer between Databricks and HubSpot — enrichment flows inbound to HubSpot (license status, renewal dates, subscription state, firmographic data) and marketing engagement data flowing back to Databricks (email events, workflow enrollment, lifecycle changes).
+
+• Build and maintain Exchange layer pipelines that curate data for external system consumption, formatting and validating data to meet target system requirements.
+
+• Build and maintain scheduled batch jobs and event-driven integrations using APIs (REST, webhooks, OAuth).
+
+• Monitor pipeline health, set up alerting for failures and data quality degradation, and own incident response when syncs break.
+
+• Maintain documentation of data flows, integration architecture, and troubleshooting runbooks.
+
+Data Modeling & Quality
+
+• Build and maintain dimensional models in Databricks (fact tables, dimension tables, bridge tables) following our data warehouse object type definitions and naming standards.
+
+• Work in collaboration with stakeholders and data analysts to build curated, business-ready tables and datamarts that apply business logic, KPI calculations, and aggregations optimized for analytics and campaign activation.
+
+• Implement identity resolution and deduplication logic to produce unified customer profiles from multiple source systems.
+
+• Establish data validation rules, quality checks, and monitoring to ensure accuracy and freshness of data flowing into marketing systems.
+
+• Normalize disparate data sources into clean centralized schemas with proper type enforcement, deduplication, and null handling.
+
+Marketing Data & Segmentation Support
+
+• Ensure the data infrastructure supports audience segmentation, including firmographic, behavioral, and engagement signals.
+
+• Build the data layer that powers lifecycle marketing - triggered campaigns, dynamic journey branching, and personalization based on enriched customer profiles.
+
+• Support marketing and demand gen teams with reliable, accessible data for building audience targets in HubSpot.
+
+• Maintain data flows for email deliverability, subscription management, and suppression list synchronization.
+
+Integration Development
+
+• Build and maintain API integrations between marketing, sales, and operational systems using Python and SQL.
+
+• Implement field-level transformation logic, sync orchestration, and error handling for system-to-system data flows.
+
+• Support website form and lead capture data flows - ensuring clean handoff from web properties into HubSpot and Databricks.
+
+• Work with third-party enrichment providers (firmographic, intent, technographic) to integrate enrichment data into automated workflows.
+
+Reporting & Attribution
+
+• Build and maintain the data infrastructure that supports campaign attribution, channel performance analysis, and funnel reporting.
+
+• Ensure accurate data for conversion analytics, lead source tracking, and marketing ROI measurement.
+
+• Support centralized reporting by routing marketing engagement data back into Databricks for cross-functional analysis.
+
+What You Bring
+
+Required:
+
+• 5+ years of experience in data engineering, with hands-on pipeline development and production operations.
+
+• Strong proficiency in SQL and Python/PySpark for data pipeline development.
+
+• Experience building and maintaining ETL/ELT pipelines using Databricks, dbt, Airflow, Azure Data Factory, or equivalent.
+
+• Hands-on experience with cloud data platforms - Databricks, Snowflake, BigQuery, or Redshift.
+
+• Solid understanding of dimensional data modeling - fact tables, dimension tables, schema design, and data warehouse concepts.
+
+• Experience with medallion or layered data architectures (raw → cleansed → business-ready), Kimball-style star schemas, and one-big-table approaches to data modeling.
+
+• Working knowledge of API integration patterns - REST, webhooks, OAuth, batch sync architectures.
+
+• Experience with CRM platforms (Salesforce, HubSpot, or similar), marketing automation systems, and CPQ/quoting tools (DealHub or similar).
+
+• Bachelor's degree in Computer Science, Information Systems, or equivalent industry experience.
+
+Preferred:
+
+• Experience with Databricks (Delta Lake, PySpark, Unity Catalog).
+
+• Familiarity with HubSpot APIs and data model.
+
+• Experience with identity resolution and customer data deduplication across multiple source systems.
+
+• Exposure to marketing data concepts — lead scoring, audience segmentation, campaign attribution, lifecycle stages.
+
+• Experience with Azure cloud services (Azure Functions, Azure DevOps, Azure Data Factory).
+
+• Knowledge of data security and privacy practices, particularly regarding PII handling.
+
+• Experience with code review processes and development standards compliance in a collaborative data engineering team.
+
+What Sets You Apart
+
+• You've built and operated production data pipelines that marketing teams depend on daily - you understand the impact of data freshness and accuracy on campaign execution.
+
+• You're comfortable working within a marketing department and can translate data requests from non-technical stakeholders into pipeline requirements.
+
+• You take ownership of pipeline reliability - building monitoring and alerting proactively rather than waiting for someone to report a problem.
+
+• You've worked with multiple data sources and know how to handle the messiness of real-world identity resolution and deduplication.
+
+Why Join Us
+
+• High-impact work. Your pipelines will directly power how our marketing engine operates and scales.
+
+• Modern stack. Databricks, Delta Lake, PySpark, HubSpot, Python, SQL - you'll work with current tools, not legacy systems.
+
+• Room to build. We're investing in our data infrastructure as part of a major platform migration, and you'll shape how it's built.
+
+• Collaborative environment. You'll work closely with marketing, sales, and IT teams - visible, cross-functional work without being siloed.
+
+Foxit is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",8584,https://jobs.lever.co/foxitsoftware/00e36e70-3e10-4dc5-a5ea-600f6724a7c9,,https://www.linkedin.com/jobs/view/4427162819,2026-09-06,25,among first 25,,matched,title,2026-09-27,2026-09-27T02:46:53,2026-09-27,,21,startDate+linkedin,true,0,,,,,GBITS,2026-09-06,,true,,,,,,
+fe7f7153-7ba9-42d6-a806-d7f9cd115bdd,FP&A Manager,foxitsoftware,foxitsoftware,Full time,Posted 96 Days Ago,,,"Fremont, CA",1,"Fremont, CA",false,,United States,,0,"About the Role
+
+Foxit is seeking an experienced FP&A Manager to lead financial planning and analysis for our U.S. business. This is a highly visible, hands-on role responsible for translating financial data into clear insights that guide strategic and operational decisions.
+
+You will own key budgeting, forecasting, reporting, and financial modeling activities while partnering closely with leaders across the organization. The ideal candidate combines strong technical finance expertise with business acumen, clear communication, and the ability to build scalable processes in a fast-paced, global software environment.
+
+What You’ll Do
+
+•
+
+Lead the annual budgeting process, monthly reforecasts, and long-range financial planning for the U.S. business
+
+•
+
+Deliver accurate, timely, and actionable financial analysis to support executive and operational decision-making
+
+•
+
+Prepare monthly financial packages, executive and board-level reporting, and operational dashboards
+
+•
+
+Partner with department leaders to establish budgets, monitor spending, evaluate performance, and identify risks and opportunities
+
+•
+
+Perform scenario modeling, sensitivity analysis, and strategic planning to assess potential business outcomes
+
+•
+
+Analyze and clearly explain variances against budget, forecast, and prior-period performance
+
+•
+
+Build and maintain dynamic financial models for revenue, operating expenses, cash flow, and headcount planning
+
+•
+
+Partner with Accounting to ensure alignment between financial actuals, forecasts, and reporting
+
+•
+
+Improve and automate financial reporting, planning tools, and internal processes
+
+•
+
+Support investor relations, fundraising initiatives, and M&A due diligence as needed
+
+•
+
+Provide guidance and mentorship to financial analysts as the function continues to scale
+
+What We’re Looking For
+
+Required Qualifications
+
+•
+
+7–10+ years of progressive experience in FP&A, corporate finance, or a related financial discipline
+
+•
+
+Bachelor’s degree in Finance, Accounting, Economics, or a related field
+
+•
+
+Active CPA license
+
+•
+
+Experience supporting a SaaS, software, or subscription-based business
+
+•
+
+Advanced Excel and financial modeling capabilities
+
+•
+
+Strong understanding of financial statements, cash flow forecasting, and business performance analysis
+
+•
+
+Working knowledge of SaaS metrics, including ARR, CAC, LTV, retention, and churn
+
+•
+
+Experience with NetSuite and FP&A platforms such as Planful, Workday Adaptive Planning, or similar tools
+
+•
+
+Ability to translate complex financial information into clear, executive-ready insights
+
+Preferred Qualifications
+
+•
+
+Experience working within a high-growth, global, or lean operating environment
+
+•
+
+Strong business judgment and the ability to connect financial performance to broader company strategy
+
+•
+
+Proven success partnering with senior leaders and cross-functional stakeholders
+
+•
+
+Experience managing, developing, or mentoring financial analysts
+
+•
+
+A proactive, hands-on approach to improving processes and solving business challenges
+
+What Success Looks Like
+
+•
+
+Forecasts and financial reporting are accurate, timely, and trusted by business leaders
+
+•
+
+Executives receive clear, actionable insights that improve decision-making
+
+•
+
+Financial risks, trends, and opportunities are identified early
+
+•
+
+Reporting and planning processes become increasingly efficient, automated, and scalable
+
+•
+
+Department leaders view FP&A as a strategic partner in managing performance and achieving business goals",3500,https://jobs.lever.co/foxitsoftware/fe7f7153-7ba9-42d6-a806-d7f9cd115bdd,,https://www.linkedin.com/jobs/view/4432298104,2026-09-17,25,among first 25,,matched,title,2026-09-27,2026-09-27T02:46:55,2026-09-27,,10,startDate+linkedin,true,0,,,,,Finance,2026-09-17,,true,,,,,,
+69e2d634-ae9c-4fd1-a7f0-0f50a912efb1,"Marketing Manager, AI Growth",foxitsoftware,foxitsoftware,Full time,Posted 81 Days Ago,,,"Alpharetta, GA",1,"Alpharetta, GA",false,,United States,,0,"Marketing Manager, AI Growth
+
+AI Search, AEO/GEO & Customer Advocacy
+
+About Foxit
+
+Foxit is transforming how people and organizations work with documents through innovative, secure, and accessible PDF and eSignature solutions.
+
+As a leading global software provider, Foxit serves millions of users and customers across more than 200 countries. Our award-winning technology challenges the status quo by delivering fast, affordable, and powerful alternatives to traditional document solutions.
+
+With global operations across North America, Europe, Asia, and Australia—and customers including Google and Amazon—Foxit offers the opportunity to make an impact within a rapidly growing international technology company.
+
+Learn more at www.foxit.com.
+
+The Opportunity
+
+Foxit is seeking a Marketing Manager, AI Growth to lead our offsite citation, customer advocacy, and AI search visibility strategy.
+
+As AI-powered discovery platforms—including Google AI Overviews, Google AI Mode, Gemini, ChatGPT, Claude, and Perplexity—become increasingly important in how software buyers research and evaluate solutions, brands must establish a credible and consistent presence across the third-party sources these platforms reference.
+
+This role will help ensure Foxit is accurately represented, frequently cited, and highly visible across customer review platforms, professional networks, online communities, earned media, and AI-generated search experiences.
+
+This is a hands-on role combining strategy, execution, analytics, and cross-functional leadership. You will develop Foxit’s roadmap for Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), customer advocacy, digital PR, and offsite brand visibility, while also owning the day-to-day programs that drive measurable results.
+
+You will join the Digital Marketing team and partner closely with SEO/AEO, Organic Social, Brand, Public Relations, Product Marketing, Customer Support, Web, and Paid Media teams.
+
+Key Responsibilities
+
+Customer Advocacy and Review Platform Management — 60%
+
+•
+
+Own and optimize Foxit’s brand presence across platforms such as G2, Gartner Digital Markets, Gartner Peer Insights, Trustpilot, TrustRadius, SourceForge, and other relevant software review sites.
+
+•
+
+Develop and execute customer review-generation campaigns in partnership with Email Marketing, Customer Success, and other internal teams.
+
+•
+
+Manage review response workflows, including escalation processes for complex, sensitive, or negative customer feedback.
+
+•
+
+Monitor ratings, reviews, sentiment, competitor activity, and recurring themes that can inform product, customer experience, and messaging decisions.
+
+•
+
+Identify opportunities to strengthen Foxit’s visibility, credibility, and conversion performance across third-party review platforms.
+
+•
+
+Partner with Web, Organic Social, and Paid Media teams to activate customer reviews, awards, ratings, testimonials, and advocacy assets across Foxit’s marketing channels.
+
+•
+
+Stay current on platform updates, partnerships, algorithm changes, best practices, and emerging customer advocacy opportunities.
+
+AI Search Visibility and Offsite Citation Growth — 20%
+
+•
+
+Develop and execute a holistic offsite citation strategy across online communities, professional networks, review sites, publications, and earned media.
+
+•
+
+Build programs that improve Foxit’s visibility within AI-generated answers and recommendations across major large language models and AI search platforms.
+
+•
+
+Create and execute strategies for increasing Foxit’s presence on Reddit and LinkedIn through authentic community engagement, content contributions, employee advocacy, and individual thought leadership.
+
+•
+
+Partner with internal and external stakeholders to develop a digital PR strategy that expands Foxit’s earned media presence and AI citation footprint.
+
+•
+
+Monitor Foxit’s citations, mentions, sentiment, and share of voice across AI search platforms using tools such as Ahrefs, Semrush, and other AI visibility platforms.
+
+•
+
+Identify citation gaps, competitor advantages, and emerging content opportunities in partnership with the SEO/AEO team.
+
+•
+
+Establish regular reporting on AI search visibility, offsite citations, customer advocacy performance, and share-of-voice trends.
+
+Cross-Functional Strategy and Execution — 20%
+
+•
+
+Coordinate with Foxit’s PR agency to align earned media initiatives with AI citation and offsite visibility priorities.
+
+•
+
+Partner with Brand and Organic Social teams on social media, influencer, executive visibility, and employee advocacy programs.
+
+•
+
+Collaborate with Product Marketing to ensure Foxit’s positioning, product capabilities, and competitive differentiators are represented accurately across third-party sources and AI-generated responses.
+
+•
+
+Serve as the internal owner and strategic connector for Foxit’s offsite presence, ensuring consistent messaging and coordinated execution across channels.
+
+•
+
+Develop or contribute to content assets—including blog posts, comparison guides, thought leadership articles, community content, and educational resources—that support Foxit’s AI citation and visibility goals.
+
+•
+
+Partner with Customer Support and Customer Success teams to develop escalation and response workflows for review platforms and community channels.
+
+•
+
+Translate offsite insights, customer feedback, and AI search trends into actionable recommendations for marketing and business stakeholders.
+
+Required Skills and Qualifications
+
+Must-Have Qualifications
+
+•
+
+2–4 years of experience in SEO, AEO, GEO, content marketing, customer advocacy, digital PR, growth marketing, or a related field.
+
+•
+
+Understanding of how AI search platforms, answer engines, and large language models discover, evaluate, and cite third-party content.
+
+•
+
+Hands-on experience managing a company’s presence or customer review campaigns on platforms such as G2, Gartner Peer Insights, Gartner Digital Markets, Trustpilot, TrustRadius, or similar sites.
+
+•
+
+Experience developing programs that improve brand visibility, customer advocacy, reputation, or offsite authority.
+
+•
+
+Strong cross-functional collaboration skills with the ability to work effectively across Marketing, Product Marketing, Public Relations, Brand, Customer Support, and Customer Success.
+
+•
+
+Analytical mindset with the ability to track, interpret, and communicate citation, sentiment, review, visibility, and share-of-voice metrics.
+
+•
+
+Excellent written communication skills with the ability to adapt messaging, tone, and content for different platforms and audiences.
+
+•
+
+Strong project-management and organizational skills, with the ability to move between strategic planning and hands-on execution.
+
+•
+
+Genuine interest in artificial intelligence, AI search, and the evolving digital discovery landscape.
+
+•
+
+Active familiarity with multiple AI platforms and a habit of staying current on emerging AI search and marketing trends.
+
+Preferred Qualifications
+
+•
+
+Experience with Answer Engine Optimization, Generative Engine Optimization, AI citation monitoring, or AI search visibility tools.
+
+•
+
+Background in B2B SaaS, enterprise software, productivity technology, or digital document solutions.
+
+•
+
+Experience with digital PR, earned media, community management, influencer programs, or thought leadership.
+
+•
+
+Familiarity with Ahrefs, Semrush, or comparable SEO and competitive intelligence platforms.
+
+•
+
+Experience developing customer advocacy, review-generation, or online reputation-management programs.
+
+•
+
+Understanding of Reddit, LinkedIn, and other community-driven platforms as sources of brand authority and AI citations.
+
+What Foxit Offers
+
+•
+
+The opportunity to build and own a high-impact AI growth and customer advocacy function within a global software company.
+
+•
+
+Direct influence over how Foxit appears across AI search platforms, customer review sites, professional communities, and earned media.
+
+•
+
+A highly collaborative role working across Digital Marketing, SEO, Product Marketing, Brand, PR, Customer Support, and global business teams.
+
+•
+
+The opportunity to work at the intersection of AI, search, customer advocacy, content strategy, digital PR, and B2B SaaS growth.
+
+•
+
+Significant visibility and the ability to establish new strategies, processes, measurement frameworks, and best practices as AI-driven discovery continues to evolve.
+
+•
+
+A fast-paced, international environment where experimentation, ownership, and forward-looking ideas are encouraged.
+
+Join Foxit
+
+Help shape how millions of software buyers discover, evaluate, and understand Foxit in an AI-first search environment.
+
+If you are excited by the future of AI search, customer advocacy, digital PR, and brand visibility—and want to build programs that influence how a global technology company is represented across the digital ecosystem—we encourage you to apply.",8870,https://jobs.lever.co/foxitsoftware/69e2d634-ae9c-4fd1-a7f0-0f50a912efb1,,https://www.linkedin.com/jobs/view/4438283663,2026-09-17,25,among first 25,,matched,title,2026-09-27,2026-09-27T02:46:54,2026-09-27,,10,startDate+linkedin,true,0,,,,,FoxitOne Marketing,2026-09-17,,true,,,,,,
+aa2752a8-f75a-4c15-9651-26543207e4b3,Product Manager,foxitsoftware,foxitsoftware,Full time,Posted 109 Days Ago,,,"Alpharetta, GA",1,"Alpharetta, GA",false,,United States,,0,"Product Manager
+
+Product Line: Foxit Editor Desktop
+Market Focus: North America
+
+About Foxit
+
+Foxit is a leading global provider of fast, affordable, and secure PDF solutions used by millions of customers worldwide. With customers in more than 200 countries, including organizations such as Google and Amazon, Foxit is helping reshape how businesses create, edit, manage, and collaborate on documents.
+
+Foxit offers a complete product portfolio and continues to grow through innovation, global expansion, and competitive disruption in the PDF technology market.
+
+For more information, visit www.foxit.com.
+
+Position Overview
+
+Foxit is seeking a Product Manager to support the Editor Desktop product line for the North America market. This role will serve as a key product owner across the product lifecycle, connecting customer needs, business priorities, R&D, design, and executive stakeholders.
+
+The Product Manager will translate market feedback and business requirements into clear product direction, helping ensure Foxit’s desktop editor products remain competitive, customer-focused, and aligned with company growth goals.
+
+Key Responsibilities
+
+•
+
+Define and execute the product roadmap for Foxit Editor Desktop in alignment with company strategy and market needs
+
+•
+
+Conduct market research, competitive analysis, and customer discovery to identify growth opportunities and product gaps
+
+•
+
+Partner with Sales, Customer Success, and customer-facing teams to gather feedback, understand pain points, and prioritize improvements
+
+•
+
+Translate customer and business needs into clear product requirements, including feature descriptions, workflows, acceptance criteria, and release priorities
+
+•
+
+Collaborate closely with R&D, engineering, design, and management stakeholders to ensure timely, high-quality product delivery
+
+•
+
+Support product launches, including release preparation, internal training, product documentation, and customer-facing explanations
+
+•
+
+Monitor adoption blockers, user feedback, and competitive trends to continuously improve product value and market fit
+
+Required Qualifications
+
+•
+
+Bachelor’s degree in Computer Science, Software Engineering, Product Management, Business, or a related field
+
+•
+
+2+ years of experience in software product management, product operations, or business enablement
+
+•
+
+Strong ability to understand customer needs, sales priorities, and market requirements
+
+•
+
+Experience translating business and customer feedback into clear product requirements
+
+•
+
+Strong communication, collaboration, analytical, and problem-solving skills
+
+•
+
+Ability to work effectively with cross-functional teams across different regions and time zones
+
+•
+
+Customer-focused, responsive, and comfortable supporting North America business needs
+
+•
+
+Strong written and verbal English communication skills
+
+Preferred Qualifications
+
+•
+
+Experience supporting North America sales teams, business stakeholders, or end customers
+
+•
+
+Familiarity with PDF editors, desktop software, SaaS products, or productivity tools
+
+•
+
+Experience working with global R&D or engineering teams
+
+•
+
+Understanding of product release planning, customer feedback loops, and competitive product positioning",3212,https://jobs.lever.co/foxitsoftware/aa2752a8-f75a-4c15-9651-26543207e4b3,,https://www.linkedin.com/jobs/view/4427098575,2026-09-07,25,among first 25,,matched,title,2026-09-27,2026-09-27T02:46:51,2026-09-27,,20,startDate+linkedin,true,0,,,,,Product Management,2026-09-07,,true,,,,,,

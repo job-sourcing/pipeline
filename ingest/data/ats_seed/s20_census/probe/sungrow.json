@@ -1,0 +1,116 @@
+{
+ "brand": "Sungrow",
+ "tier": "lca",
+ "lca": "SUNGROW USA CORPORATION",
+ "ts": "2026-09-27T01:59:02.526Z",
+ "candidates": [
+  {
+   "url": "https://us.sungrowpower.com/jobList",
+   "title": "",
+   "status": 200,
+   "bytes": 225652,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "At Sungrow, you're empowered to realize your full potential. With supportive systems and an inclusive culture, you'll discover your unique strengths and ..."
+  },
+  {
+   "url": "https://en.sungrowpower.com/JoinUs",
+   "title": "Join Us for a Brighter Career - Sungrow",
+   "status": 200,
+   "bytes": 159092,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Join Sungrow for a brighter future and career. We care for each employee and have established continuous talent development systems."
+  }
+ ],
+ "results": [
+  {
+   "t": "Sungrow Power: Employee Directory",
+   "u": "https://www.zoominfo.com",
+   "s": "Search our free database to find email addresses and direct dials for Sungrow Power employees."
+  },
+  {
+   "t": "Dapapower",
+   "u": "https://www.tiktok.com",
+   "s": "Watch the latest videos about #dapapower on TikTok. career အတွက် invest ကောင်းကောင်းလုပ်ဖို့ … + Sungrow inverter. Power Service Center Dapa Power"
+  },
+  {
+   "t": "Sungrow USA Corporation Field Service Technician Jobs",
+   "u": "https://www.indeed.com",
+   "s": "Sungrow USA Corporation Field Service Technician Jobs. Estimated salary $38.27 per hour ・ 24 jobs for Field Service Technician See ・ $36 - $40 an hour"
+  },
+  {
+   "t": "Sungrow Jobs & Careers - 57 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.sg",
+   "s": "Yes, Sungrow is currently hiring for 57 open positions in Singapore . Use Glassdoor to find and apply for a job that loves you back. Then start preparing for .."
+  },
+  {
+   "t": "Sungrow - Remote Work From Home Jobs & Careers",
+   "u": "https://www.flexjobs.com",
+   "s": "Sungrow jobs have been available in project management, customer service, engineering, legal, auditing, government & politics, and more."
+  },
+  {
+   "t": "Sungrow hiring SCADA & Network Engineer in United States",
+   "u": "https://www.linkedin.com",
+   "s": "Sungrow is seeking a highly motivated and technically skilled SCADA Network Engineer to support utility-scale energy storage and renewable energy projects ... R"
+  },
+  {
+   "t": "SUNGROW USA Jobs in Fresno, CA (Now Hiring) Sep 2026",
+   "u": "https://www.ziprecruiter.com",
+   "s": "Field Service Technician - BESS Fresno, CA · On-site $36 - $40/hr This role supports areas of field Service operation within Sungrow USA"
+  },
+  {
+   "t": "Career",
+   "u": "https://us.sungrowpower.com/jobList",
+   "s": "At Sungrow, you're empowered to realize your full potential. With supportive systems and an inclusive culture, you'll discover your unique strengths and ..."
+  },
+  {
+   "t": "Now Hiring: 50 Sungrow USA Jobs",
+   "u": "https://www.indeed.com/q-sungrow-usa-jobs.html",
+   "s": "Sungrow usa jobs ; Administrative Receptionist and Coordinator · $18 - $24 an hour ; Field Service Technician - Transformers · $36 - $40 an hour. Contract. Week"
+  },
+  {
+   "t": "Join Us for a Brighter Career",
+   "u": "https://en.sungrowpower.com/JoinUs",
+   "s": "Join Sungrow for a brighter future and career. We care for each employee and have established continuous talent development systems."
+  },
+  {
+   "t": "11000+ Sungrow Power Supply Co. Ltd. jobs in United States",
+   "u": "https://www.linkedin.com/jobs/sungrow-power-supply-co.-ltd.-jobs",
+   "s": "11,000+ Sungrow Power Supply Co. Ltd. Jobs in United States · Senior Accountant (mandarin speaking required) · Commercial Counsel –Solar Inverter/Battery · Mana"
+  },
+  {
+   "t": "Sungrow Usa jobs in Houston, TX",
+   "u": "https://www.indeed.com/q-sungrow-usa-l-houston,-tx-jobs.html",
+   "s": "25 Sungrow USA jobs in Houston, TX. Apply to Electrical Engineer, Repair Technician, Security Engineer and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Sungrow Jobs & Careers - 83 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Sungrow-Jobs-E1564181.htm",
+   "s": "Search job openings at Sungrow. 83 Sungrow jobs including salaries, ratings, and reviews, posted by Sungrow employees."
+  },
+  {
+   "t": "Sungrow Jobs (NOW HIRING) Sep 26",
+   "u": "https://www.ziprecruiter.com/Jobs/Sungrow",
+   "s": "Browse 289 SUNGROW jobs from companies hiring now. New openings posted daily. Apply early, be seen first & 1-click apply to your next ..."
+  },
+  {
+   "t": "Sungrow: Jobs",
+   "u": "https://www.linkedin.com/company/sungrow/jobs",
+   "s": "Jobs at Sungrow · Field Service Technician - BESS · Electrical Engineer - PV · Warehouse Specialist · Warehouse Specialist · Technical Support Engineer - AUS Su"
+  }
+ ],
+ "dict_hits": [],
+ "best": {
+  "url": "https://us.sungrowpower.com/jobList",
+  "platform": "adp",
+  "title": ""
+ },
+ "verdict": "marker_surface"
+}

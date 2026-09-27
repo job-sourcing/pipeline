@@ -1,0 +1,11 @@
+{
+ "brand": "ZPMC",
+ "tier": "lca",
+ "lca": "ZPMC NORTH AMERICA, INC.",
+ "ts": "2026-09-27T02:20:49.343Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

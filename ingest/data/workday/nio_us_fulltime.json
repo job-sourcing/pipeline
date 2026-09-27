@@ -1,0 +1,419 @@
+{
+ "board": "ats:lever:nio-usa",
+ "company": "NIO",
+ "country": "United States",
+ "time_type": "Full time",
+ "dumpDate": "2026-09-27",
+ "count": 9,
+ "details_merged": 9,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 9,
+ "rows": [
+  {
+   "reqId": "7b5c4924-14b3-40b5-8b37-a1ede18981ab",
+   "title": "AI Infrastructure Engineer",
+   "company": "nio-usa",
+   "url": "https://jobs.lever.co/nio-usa/7b5c4924-14b3-40b5-8b37-a1ede18981ab",
+   "externalPath": "/7b5c4924-14b3-40b5-8b37-a1ede18981ab",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 100 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7b5c4924-14b3-40b5-8b37-a1ede18981ab"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-19",
+   "departments": [
+    "Digital Systems - San Jose"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "AI Infrastructure Engineer",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<div><strong>About the Position</strong></div>\n<div>&nbsp;</div>\n<div>We are looking for a senior AI Inference Infrastructure Software Engineer with strong hands-on experience building, optimizing, and deploying high-performance, scalable inference systems. This position is focused on designing, implementing, and delivering production-grade software that powers real-world applications of Large Language Models (LLMs) and Vision-Language Models (VLMs).</div>\n<div>&nbsp;</div>\n<div>This is an exciting opportunity for an engineer who thrives at the intersection of AI systems, hardware acceleration, and large-scale robust deployment, and who wants to see their contributions ship in production, at scale.</div>\n<div>&nbsp;</div>\n<div>In this role, you will directly shape the architecture, roadmap and performance of AI capabilities of our AIOS platform, driving innovations that make LLM/VLM systems fast, efficient, and scalable across cloud, edge, and hybrid edge-cloud environments. You will work closely with system, hardware, and product teams to deliver high-performance inference kernels for hardware accelerators, design scalable inference serving systems, and integrate optimizations such tensor parallelism and custom kernels into production pipelines. Your work will have immediate impact, powering intelligent automotive systems in the next generation of electric vehicles.</div>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/nio-usa/7b5c4924-14b3-40b5-8b37-a1ede18981ab",
+    "jobReqId": "7b5c4924-14b3-40b5-8b37-a1ede18981ab",
+    "postedOn": "Posted 100 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "nio-usa",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Digital Systems - San Jose",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "b395a247-4bfe-4d2c-9f1b-db5b3e6f5f33",
+   "title": "AI Research Engineer - Enterprise Automation",
+   "company": "nio-usa",
+   "url": "https://jobs.lever.co/nio-usa/b395a247-4bfe-4d2c-9f1b-db5b3e6f5f33",
+   "externalPath": "/b395a247-4bfe-4d2c-9f1b-db5b3e6f5f33",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 100 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "b395a247-4bfe-4d2c-9f1b-db5b3e6f5f33"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-19",
+   "departments": [
+    "Digital Development - San Jose"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "AI Research Engineer - Enterprise Automation",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p><strong>Role Overview</strong></p>\n<p>We are seeking a highly skilled AI Research Engineer to design, prototype, and optimize end‑to‑end AI systems that automate enterprise workflows. In this role, you&rsquo;ll bridge applied research and engineering&mdash;developing cutting‑edge AI models, tools, and platforms that streamline decision‑making, improve operational efficiency, and unlock new capabilities for enterprise users.</p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/nio-usa/b395a247-4bfe-4d2c-9f1b-db5b3e6f5f33",
+    "jobReqId": "b395a247-4bfe-4d2c-9f1b-db5b3e6f5f33",
+    "postedOn": "Posted 100 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "nio-usa",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Digital Development - San Jose",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "aeb18492-fd65-481d-88a3-00dcceb55840",
+   "title": "AI Robotics Researcher",
+   "company": "nio-usa",
+   "url": "https://jobs.lever.co/nio-usa/aeb18492-fd65-481d-88a3-00dcceb55840",
+   "externalPath": "/aeb18492-fd65-481d-88a3-00dcceb55840",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 100 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "aeb18492-fd65-481d-88a3-00dcceb55840"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-19",
+   "departments": [
+    "Digital Systems - San Jose"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "AI Robotics Researcher",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<div>\n<div><strong>About the Position</strong></div>\n</div>\n<div>\n<div>\n<div>\n<div>\n<div>\n<div>\n<div>\n<div>\n<div>\n<p>We are seeking exceptional <strong>AI Robotics Researchers</strong> to join our next-generation intelligent systems team&mdash;pioneering the intersection of <strong>embodied AI</strong>, <strong>dexterous robotic manipulation</strong>, and <strong>physical world understanding</strong>. This role is ideal for PhD students or recent graduates passionate about bridging fundamental AI research with <strong>real-world robotic impact</strong>&mdash;from developing generalizable models for robot perception and control to enabling dexterous robotic hands to manipulate complex objects in unstructured environments.</p>\n<p>You will tackle challenges that lie at the heart of embodied intelligence: <strong>how robots perceive, reason, and act in the physical world.</strong> You&rsquo;ll work on models that unify visual, tactile, and proprioceptive learning; build world models that enable prediction and generalization; and deploy AI-driven robots that interact safely and effectively in the real world.</p>\n<p>Your work won&rsquo;t stay on paper&mdash;you&rsquo;ll see it come to life through physical robots performing complex tasks, making your research tangible, visible, and impactful across warehouses, factories, and mobility environments. This position offers the rare opportunity to combine cutting-edge research freedom with practical real-world deployment, shaping the next wave of intelligent embodied systems.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/nio-usa/aeb18492-fd65-481d-88a3-00dcceb55840",
+    "jobReqId": "aeb18492-fd65-481d-88a3-00dcceb55840",
+    "postedOn": "Posted 100 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "nio-usa",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Digital Systems - San Jose",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "7c21ebb5-401b-4549-bcd4-8e0afd0195b3",
+   "title": "AI Technical Lead",
+   "company": "nio-usa",
+   "url": "https://jobs.lever.co/nio-usa/7c21ebb5-401b-4549-bcd4-8e0afd0195b3",
+   "externalPath": "/7c21ebb5-401b-4549-bcd4-8e0afd0195b3",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 101 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7c21ebb5-401b-4549-bcd4-8e0afd0195b3"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-18",
+   "departments": [
+    "Digital Systems - San Jose"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "AI Technical Lead",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p><strong>About NIO</strong></p>\n<p>NIO Inc. is a pioneer and a leading company in the global smart electric vehicle market. Founded in November 2014, NIO aspires to shape a sustainable and brighter future with the mission of &ldquo;Blue Sky Coming&rdquo;.</p>\n<p>NIO envisions itself as a user enterprise where innovative technology meets experience excellence. NIO designs, develops, manufactures and sells smart electric vehicles, driving innovations in next-generation core technologies. NIO distinguishes itself through continuous technological breakthroughs and innovations, exceptional products and services, and a community for shared growth.</p>\n<p>NIO provides premium smart electric vehicles under the NIO brand, premium smart electric vehicles for families through the ONVO brand, and small smart high-end electric cars with the FIREFLY brand.</p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/nio-usa/7c21ebb5-401b-4549-bcd4-8e0afd0195b3",
+    "jobReqId": "7c21ebb5-401b-4549-bcd4-8e0afd0195b3",
+    "postedOn": "Posted 101 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "nio-usa",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Digital Systems - San Jose",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "0fad1bad-c971-45a3-a1bc-13700ba511d6",
+   "title": "LLM Algorithmic Optimization Engineer",
+   "company": "nio-usa",
+   "url": "https://jobs.lever.co/nio-usa/0fad1bad-c971-45a3-a1bc-13700ba511d6",
+   "externalPath": "/0fad1bad-c971-45a3-a1bc-13700ba511d6",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 100 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "0fad1bad-c971-45a3-a1bc-13700ba511d6"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-19",
+   "departments": [
+    "Digital Systems - San Jose"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "LLM Algorithmic Optimization Engineer",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "<p><strong>About NIO</strong></p>\n<p>NIO Inc. is a pioneer and a leading company in the global smart electric vehicle market. Founded in November 2014, NIO aspires to shape a sustainable and brighter future with the mission of “Blue Sky Coming”.</p>\n<p>NIO envisions itself as a user enterprise where innovative technology meets experience excellence. NIO designs, develops, manufactures and sells smart electric vehicles, driving innovations in next-generation core technologies. NIO distinguishes itself through continuous technological breakthroughs and innovations, exceptional products and services, and a community for shared growth.</p>\n<p>NIO provides premium smart electric vehicles under the NIO brand, premium smart electric vehicles for families through the ONVO brand, and small smart high-end electric cars with the FIREFLY brand.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/nio-usa/0fad1bad-c971-45a3-a1bc-13700ba511d6",
+    "jobReqId": "0fad1bad-c971-45a3-a1bc-13700ba511d6",
+    "postedOn": "Posted 100 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "nio-usa",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Digital Systems - San Jose",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "f9c3e985-7960-4737-9187-ce9f83926889",
+   "title": "Sr. Hypervisor/Linux Kernel Developer - Software Platform",
+   "company": "nio-usa",
+   "url": "https://jobs.lever.co/nio-usa/f9c3e985-7960-4737-9187-ce9f83926889",
+   "externalPath": "/f9c3e985-7960-4737-9187-ce9f83926889",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 101 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "f9c3e985-7960-4737-9187-ce9f83926889"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-18",
+   "departments": [
+    "Digital Systems - San Jose"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Sr. Hypervisor/Linux Kernel Developer - Software Platform",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong>About the Position</strong>\n<div>\n<div>&nbsp;</div>\n<div>This role is ideal for an experienced <strong>kernel</strong><strong> or </strong><strong>hypervisor</strong><strong> engineer</strong> who wants to work hands-on with the foundations of NIO&rsquo;s in-vehicle compute platform. You will join the core system software team behind <strong>SkyOS-H</strong>, NIO&rsquo;s in-house hypervisor, and other SkyOS variants &mdash; contributing from architecture design to production deployment in next-generation intelligent vehicles.</div>\n<ul style=\"list-style-type: disc;\">\n<li>\n<div><strong>Hypervisor</strong><strong>&nbsp;&amp;&nbsp;</strong><strong>Kernel</strong><strong>&nbsp;Performance at Scale</strong></div>\n</li>\n</ul>\n<div>You&rsquo;ll work on low-level system software designed for real-time, high-efficiency, and safety-critical automotive environments. This includes optimizing latency and throughput, refining vIRQ handling, improving cache and memory subsystem efficiency (SMMU, coherency, and paging), and leveraging Arm V8 virtualization extensions (VHE). You will contribute to hypervisor scheduling, partition isolation, and secure domain management to achieve automotive-grade determinism and performance on modern SoCs.</div>\n<ul style=\"list-style-type: disc;\">\n<li>\n<div><strong>End-to-End Impact &amp; Intelligent Vehicle Systems</strong></div>\n</li>\n</ul>\n<div>From early architecture exploration to kernel integration, driver development, validation, and production rollout &mdash; your work will directly power live vehicle systems. You&rsquo;ll enable mission-critical domains such as <strong>AD/ADAS compute</strong>, <strong>sensor fusion</strong>, and <strong>secure boot/trusted execution</strong> (TrustZone, OP-TEE).</div>\n<div>In collaboration with AI and cloud teams, you&rsquo;ll also support emerging <strong>LLM-based intelligent copilots and in-vehicle assistants</strong>, where hypervisor-level performance and scheduling directly enhance on-vehicle AI responsiveness. This role offers a rare opportunity to build real products that blend operating systems, virtualization, and intelligence at the edge &mdash; all within a fast-moving automotive environment.</div>\n</div>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/nio-usa/f9c3e985-7960-4737-9187-ce9f83926889",
+    "jobReqId": "f9c3e985-7960-4737-9187-ce9f83926889",
+    "postedOn": "Posted 101 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "nio-usa",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Digital Systems - San Jose",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "40c6cba2-5762-4f2c-a049-63d74d1aef72",
+   "title": "Sr. Staff Performance Tuning Engineer - CPU PMU & Virtualization",
+   "company": "nio-usa",
+   "url": "https://jobs.lever.co/nio-usa/40c6cba2-5762-4f2c-a049-63d74d1aef72",
+   "externalPath": "/40c6cba2-5762-4f2c-a049-63d74d1aef72",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 101 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "40c6cba2-5762-4f2c-a049-63d74d1aef72"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-18",
+   "departments": [
+    "Digital Systems - San Jose"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Sr. Staff Performance Tuning Engineer - CPU PMU & Virtualization",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h3><strong>About NIO </strong></h3>\n<p>NIO Inc. is a pioneer and a leading company in the global smart electric vehicle market. Founded in November 2014, NIO aspires to shape a sustainable and brighter future with the mission of &ldquo;Blue Sky Coming&rdquo;. NIO envisions itself as a user enterprise where innovative technology meets experience excellence.</p>\n<p>NIO designs, develops, manufactures and sells smart electric vehicles, driving innovations in next-generation core technologies. NIO distinguishes itself through continuous technological breakthroughs and innovations, exceptional products and services, and a community for shared growth.</p>\n<p>NIO provides premium smart electric vehicles under the NIO brand, premium smart electric vehicles for families through the ONVO brand, and small smart high-end electric cars with the FIREFLY brand.</p>",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/nio-usa/40c6cba2-5762-4f2c-a049-63d74d1aef72",
+    "jobReqId": "40c6cba2-5762-4f2c-a049-63d74d1aef72",
+    "postedOn": "Posted 101 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "nio-usa",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Digital Systems - San Jose",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "1ca24bda-dcd5-4de3-94cf-dd4b936a702a",
+   "title": "Staff Simulation Software Engineer",
+   "company": "nio-usa",
+   "url": "https://jobs.lever.co/nio-usa/1ca24bda-dcd5-4de3-94cf-dd4b936a702a",
+   "externalPath": "/1ca24bda-dcd5-4de3-94cf-dd4b936a702a",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 101 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "1ca24bda-dcd5-4de3-94cf-dd4b936a702a"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-18",
+   "departments": [
+    "Digital Systems - San Jose"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Staff Simulation Software Engineer",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong>The Role</strong></div>\n<div>&nbsp;</div>\n<div>As a Staff Simulation Software Engineer, you will design and deliver the foundational low-level software that makes this possible &mdash; working at the intersection of hypervisor technology, hardware architecture, and automotive real-time systems. This is a high-visibility, high-impact role with direct influence on vehicle programs that will shape the future of mobility.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/nio-usa/1ca24bda-dcd5-4de3-94cf-dd4b936a702a",
+    "jobReqId": "1ca24bda-dcd5-4de3-94cf-dd4b936a702a",
+    "postedOn": "Posted 101 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "nio-usa",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Digital Systems - San Jose",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "86bb2bbc-65a1-40f3-a107-57766b4ee8c8",
+   "title": "Staff System Engineer | Researcher",
+   "company": "nio-usa",
+   "url": "https://jobs.lever.co/nio-usa/86bb2bbc-65a1-40f3-a107-57766b4ee8c8",
+   "externalPath": "/86bb2bbc-65a1-40f3-a107-57766b4ee8c8",
+   "locationsText": "San Jose, CA",
+   "postedOn": "Posted 101 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "86bb2bbc-65a1-40f3-a107-57766b4ee8c8"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-18",
+   "departments": [
+    "Digital Systems - San Jose"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Staff System Engineer | Researcher",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p><strong>About the Position</strong></p>\n<p>We are seeking a Staff System Engineer | Researcher to join our SkyOS team. The team is responsible for the design and development of NIO's full-domain vehicle operating systems. The position will explore new ideas and designs that can make systems software faster, more dependable, and intelligent, from proof of concept to final production quality. You will have the opportunity to work on almost every layer of systems software, including kernel, networking, file system, drivers, hypervisor, libc, build system, etc, to optimize the system from high-level architecture down to the choice of assembly instructions, to bring high-impact innovations onto production systems by collaborating with engineering teams. If you enjoy building systems from scratch, writing high quality system code, optimizing performance, turning your research ideas into awesome real world products, and shaping the future of systems software for intelligent EVs, the stage is ready for you.</p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/nio-usa/86bb2bbc-65a1-40f3-a107-57766b4ee8c8",
+    "jobReqId": "86bb2bbc-65a1-40f3-a107-57766b4ee8c8",
+    "postedOn": "Posted 101 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "nio-usa",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Digital Systems - San Jose",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

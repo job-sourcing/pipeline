@@ -1,0 +1,11 @@
+{
+ "brand": "Skyworth",
+ "tier": "lca",
+ "lca": "SKYWORTH USA CORPORATION",
+ "ts": "2026-09-27T02:20:12.367Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

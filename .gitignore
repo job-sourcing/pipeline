@@ -17,6 +17,12 @@ __pycache__/
 # agent tool-output dumps (junk — must never be committed again; S8-A)
 tool-results/
 .coverage
+ingest/data/ats_seed/s20_census/LCA_Disclosure_Data_FY2026_Q3.xlsx
+ingest/data/ats_seed/s20_census/*.xlsx
+
+# S20 DOL disclosure binaries (locally cached, NOT for git — 83-240MB)
+scripts/probe_tmp/*.xlsx
+scripts/probe_tmp/*.pdf
 
 # --- public-mirror guards (never commit these here) ---
 ingest/.env

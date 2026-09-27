@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://github.com",
+    "name": "README.md - h1b-sponsor-data",
+    "snippet": "A rate limited public API over six years of DOL immigration disclosures : H - 1B LCA , PWD, and PERM (signals of immigration support by employers).",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://lobehub.com",
+    "name": "H1B Job Search MCP Server",
+    "snippet": "Jul 22, 2026 — Download and load H-1B LCA data from the Department of Labor. Parameters: year : Fiscal year (default: 2024); quarter : Quarter 1-4 ... Read more",
+    "host_name": "lobehub.com",
+    "rank": 1,
+    "date": "Jul 22, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.federalregister.gov",
+    "name": "Modernizing H-1B Requirements, Providing Flexibility in",
+    "snippet": "Dec 18, 2024 — H - 1B petitions for a specialty occupation worker must include a certified LCA from DOL , and failure to comply with DOL's LCA requirements may ...",
+    "host_name": "www.federalregister.gov",
+    "rank": 2,
+    "date": "Dec 18, 2024",
+    "favicon": ""
+  },
+  {
+    "url": "https://careers.asq.org",
+    "name": "H-1B for Quality Engineers: Sponsorship Cost, Prevailing",
+    "snippet": "DOL's Office of Foreign Labor Certification publishes employer-filed LCA records on its Performance Data page. The latest quarterly LCA file . Download the LCA ...",
+    "host_name": "careers.asq.org",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://onlinelibrary.wiley.com",
+    "name": "Wage Theft, Market Power, and Outsourcing: The Case of",
+    "snippet": "Sep 14, 2026 — The ' LCA Programs' records are publicly available online as ' Disclosure Data ' for H - 1B and other visa programs at https://www. dol . gov /agencies/ ...",
+    "host_name": "onlinelibrary.wiley.com",
+    "rank": 4,
+    "date": "Sep 14, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://origami.chat",
+    "name": "Find H-1B Visa Sponsoring Companies (2026 Guide) - Origami",
+    "snippet": "The U.S. Department of Labor's Office of Foreign Labor Certification publishes Labor Condition Application ( LCA ) data , including employer names, worksite ...",
+    "host_name": "origami.chat",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://skywork.ai",
+    "name": "A Deep Dive into Aryaminus's MCP Server",
+    "snippet": "Oct 18, 2025 — The data is based on the quarterly disclosure files from the Department of Labor . It's historical data, typically updated a few months after ... Read more",
+    "host_name": "skywork.ai",
+    "rank": 6,
+    "date": "Oct 18, 2025",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,14 @@
+{
+ "brand": "CSG Holding",
+ "tier": "wire_now",
+ "spec": "greenhouse:csgconsultants",
+ "ts": "2026-09-27T01:32:32.678Z",
+ "board_title": "Jobs at CSG Consultants",
+ "board_company": "CSG Consultants",
+ "status": 200,
+ "bytes": 43186,
+ "board_is_brand": false,
+ "chinese_origin": false,
+ "verdict": "mismatch",
+ "note": "Board belongs to CSG Systems, not CSG Holding; CSG Holding is US-owned."
+}

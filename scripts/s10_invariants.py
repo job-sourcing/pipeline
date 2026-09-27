@@ -28,11 +28,12 @@ import json
 import pathlib
 import sys
 
-sys.path.insert(0, "/home/z/my-project/job-sourcing-research/ingest")
+_REPO = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(_REPO / "ingest"))
 
 from jobsearch.corroborate import verbatim_match  # canonical predicate
 
-D = pathlib.Path("/home/z/my-project/job-sourcing-research/ingest/data/workday")
+D = _REPO / "ingest" / "data" / "workday"
 LABEL = sys.argv[1] if len(sys.argv) > 1 else "nvidia_us_fulltime"
 
 rows = list(csv.DictReader((D / f"{LABEL}.csv").read_text(encoding="utf-8-sig").split("\n")))

@@ -1,0 +1,30 @@
+{
+ "brand": "Nio",
+ "tier": "lca",
+ "lca": "NIO USA, INC.",
+ "ts": "2026-09-27T02:20:04.019Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "lever",
+   "slug": "nio-usa",
+   "spec": "lever:nio-usa",
+   "title": "NIO USA, INC",
+   "jobs_hint": 0
+  }
+ ],
+ "best": {
+  "spec": "lever:nio-usa",
+  "platform": "lever",
+  "title": "NIO USA, INC",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "NIO USA, INC",
+  "brand": "Nio",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

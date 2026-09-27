@@ -1,0 +1,106 @@
+{
+ "camel": {
+  "total": 0,
+  "fetched": 0,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": []
+ },
+ "chagee": {
+  "total": 107,
+  "fetched": 107,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": []
+ },
+ "cheetah-mobile": {
+  "total": 4,
+  "fetched": 4,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": []
+ },
+ "haidilao": {
+  "total": 149,
+  "fetched": 149,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": []
+ },
+ "hailiang": {
+  "total": 106,
+  "fetched": 106,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": [
+   "Chongzuo",
+   "Enshi Tujia-Miao Autonomous Prefecture",
+   "Huzhou",
+   "Jiangmen",
+   "Jiaxing",
+   "Jinhua",
+   "Liaocheng",
+   "Liuan",
+   "Pu'er",
+   "Shaoxing",
+   "Taian",
+   "Taizhou"
+  ]
+ },
+ "hisense": {
+  "total": 0,
+  "fetched": 0,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": []
+ },
+ "jac-group": {
+  "total": 0,
+  "fetched": 0,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": []
+ },
+ "momenta": {
+  "total": 248,
+  "fetched": 248,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": [
+   "Wuhu"
+  ]
+ },
+ "poizon": {
+  "total": 579,
+  "fetched": 579,
+  "us_count": 1,
+  "us_rows": [
+   {
+    "title": "品牌研究运营（美国）",
+    "cities": [
+     "Los Angeles",
+     "Essex County"
+    ]
+   }
+  ],
+  "unmapped_cities": [
+   "Brooklyn",
+   "Langfang",
+   "Yulin"
+  ]
+ },
+ "robosense": {
+  "total": 0,
+  "fetched": 0,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": []
+ },
+ "xtalpi": {
+  "total": 0,
+  "fetched": 0,
+  "us_count": 0,
+  "us_rows": [],
+  "unmapped_cities": []
+ }
+}

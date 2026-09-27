@@ -1,0 +1,14 @@
+{
+ "brand": "Airspace",
+ "tier": "wire_now",
+ "spec": "greenhouse:airspace",
+ "ts": "2026-09-27T01:32:52.246Z",
+ "board_title": "Jobs at Airspace",
+ "board_company": "Airspace",
+ "status": 200,
+ "bytes": 42543,
+ "board_is_brand": false,
+ "chinese_origin": false,
+ "verdict": "mismatch",
+ "note": "The board title matches, but the LCA candidate name is a different US entity."
+}

@@ -1,0 +1,29 @@
+{
+ "brand": "RoboSense",
+ "tier": "lca",
+ "lca": "ROBOSENSE INC.",
+ "ts": "2026-09-27T02:17:13.586Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "robosense",
+   "spec": "feishuhire:robosense",
+   "title": "加入深圳市速腾聚创科技有限公司"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:robosense",
+  "platform": "feishu",
+  "title": "加入深圳市速腾聚创科技有限公司",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入深圳市速腾聚创科技有限公司",
+  "brand": "RoboSense",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

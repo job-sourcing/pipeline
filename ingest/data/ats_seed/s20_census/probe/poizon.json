@@ -1,0 +1,29 @@
+{
+ "brand": "POIZON",
+ "tier": "lca",
+ "lca": "POIZON INC",
+ "ts": "2026-09-27T02:17:01.486Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "poizon",
+   "spec": "feishuhire:poizon",
+   "title": "加入得物App"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:poizon",
+  "platform": "feishu",
+  "title": "加入得物App",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入得物App",
+  "brand": "POIZON",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

@@ -1,0 +1,30 @@
+{
+ "brand": "UP Fintech",
+ "tier": "lca",
+ "lca": "APEX FINTECH SERVICES LLC",
+ "ts": "2026-09-27T01:52:15.535Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "up",
+   "spec": "ashby:up",
+   "title": " (1 jobs)",
+   "jobs": 1
+  }
+ ],
+ "best": {
+  "spec": "ashby:up",
+  "platform": "ashby",
+  "title": " (1 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (1 jobs)",
+  "brand": "UP Fintech",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

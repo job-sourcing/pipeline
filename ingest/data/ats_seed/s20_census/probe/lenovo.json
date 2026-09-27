@@ -1,0 +1,16 @@
+{
+ "brand": "Lenovo",
+ "tier": "lca",
+ "lca": "LENOVO (UNITED STATES) INC",
+ "ts": "2026-09-27T01:50:51.758Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://jobs.lenovo.com/en_US/careers",
+  "platform": "radancy",
+  "title": "Jobs at Lenovo",
+  "via": "guess"
+ },
+ "verdict": "marker_surface"
+}

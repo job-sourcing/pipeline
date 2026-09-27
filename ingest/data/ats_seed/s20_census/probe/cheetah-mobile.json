@@ -1,0 +1,29 @@
+{
+ "brand": "Cheetah Mobile",
+ "tier": "lca",
+ "lca": "CHEETAH TECHNOLOGIES, INC.",
+ "ts": "2026-09-27T02:10:47.629Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "cheetah-mobile",
+   "spec": "feishuhire:cheetah-mobile",
+   "title": "加入猎户星空"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:cheetah-mobile",
+  "platform": "feishu",
+  "title": "加入猎户星空",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入猎户星空",
+  "brand": "Cheetah Mobile",
+  "ok": true,
+  "n": 2
+ },
+ "verdict": "ats_surface"
+}

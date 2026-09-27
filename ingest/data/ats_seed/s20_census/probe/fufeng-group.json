@@ -1,0 +1,11 @@
+{
+ "brand": "Fufeng Group",
+ "tier": "lca",
+ "lca": "FUFENG USA INC.",
+ "ts": "2026-09-27T02:12:37.083Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

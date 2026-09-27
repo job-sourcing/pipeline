@@ -1,0 +1,29 @@
+{
+ "brand": "Haidilao",
+ "tier": "lca",
+ "lca": "HAIDILAO RESTAURANT GROUP, INC.",
+ "ts": "2026-09-27T02:24:45.381Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "haidilao",
+   "spec": "feishuhire:haidilao",
+   "title": "加入海底捞"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:haidilao",
+  "platform": "feishu",
+  "title": "加入海底捞",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入海底捞",
+  "brand": "Haidilao",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

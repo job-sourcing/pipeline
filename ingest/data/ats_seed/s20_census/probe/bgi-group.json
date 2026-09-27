@@ -1,0 +1,11 @@
+{
+ "brand": "BGI Group",
+ "tier": "lca",
+ "lca": "BGI FINANCIAL, LLC",
+ "ts": "2026-09-27T02:08:24.515Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

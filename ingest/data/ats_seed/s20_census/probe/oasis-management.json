@@ -1,0 +1,30 @@
+{
+ "brand": "Oasis Management",
+ "tier": "lca",
+ "lca": "OASIS PROFESSIONAL MANAGEMENT GROUP, LTD.",
+ "ts": "2026-09-27T02:00:28.744Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "oasis",
+   "spec": "greenhouse:oasis",
+   "title": "Jobs at Oasis Physical Therapy",
+   "jobs_hint": 18
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:oasis",
+  "platform": "greenhouse",
+  "title": "Jobs at Oasis Physical Therapy",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Jobs at Oasis Physical Therapy",
+  "brand": "Oasis Management",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

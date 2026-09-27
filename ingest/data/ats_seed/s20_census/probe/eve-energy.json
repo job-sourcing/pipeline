@@ -1,0 +1,30 @@
+{
+ "brand": "EVE Energy",
+ "tier": "lca",
+ "lca": "EVE ENERGY NORTH AMERICA CORPORATION",
+ "ts": "2026-09-27T02:19:36.061Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "eve",
+   "spec": "greenhouse:eve",
+   "title": "Jobs at Eve",
+   "jobs_hint": 28
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:eve",
+  "platform": "greenhouse",
+  "title": "Jobs at Eve",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Jobs at Eve",
+  "brand": "EVE Energy",
+  "ok": false,
+  "n": 1
+ },
+ "verdict": "dict_collision"
+}

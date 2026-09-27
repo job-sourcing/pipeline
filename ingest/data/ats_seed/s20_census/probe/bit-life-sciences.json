@@ -1,0 +1,14 @@
+{
+ "brand": "BIT Life Sciences",
+ "tier": "wire_now",
+ "spec": "greenhouse:bitbio",
+ "ts": "2026-09-27T01:33:04.938Z",
+ "board_title": "Jobs at bit.bio",
+ "board_company": "bit.bio",
+ "status": 200,
+ "bytes": 15434,
+ "board_is_brand": true,
+ "chinese_origin": false,
+ "verdict": "mismatch",
+ "note": "bit.bio is a UK-based company, not Chinese-owned."
+}

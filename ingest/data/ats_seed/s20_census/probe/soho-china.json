@@ -1,0 +1,14 @@
+{
+ "brand": "SOHO China",
+ "tier": "wire_now",
+ "spec": "greenhouse:sohohouseco",
+ "ts": "2026-09-27T01:31:58.958Z",
+ "board_title": "Jobs at Soho House &amp; Co.",
+ "board_company": "Soho House &amp; Co.",
+ "status": 200,
+ "bytes": 97717,
+ "board_is_brand": false,
+ "chinese_origin": true,
+ "verdict": "mismatch",
+ "note": "Soho House & Co. is a British brand, not owned by SOHO China."
+}

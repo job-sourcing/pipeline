@@ -1,0 +1,14 @@
+{
+ "brand": "Noah Medical",
+ "tier": "wire_now",
+ "spec": "greenhouse:noahmedical",
+ "ts": "2026-09-27T01:32:40.951Z",
+ "board_title": "Jobs at Noah Medical",
+ "board_company": "Noah Medical",
+ "status": 200,
+ "bytes": 25505,
+ "board_is_brand": true,
+ "chinese_origin": true,
+ "verdict": "confirm",
+ "note": "Board matches company name and LCA records; Chinese ownership confirmed."
+}

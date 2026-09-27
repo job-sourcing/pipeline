@@ -1,0 +1,29 @@
+{
+ "brand": "Camel Group",
+ "tier": "lca",
+ "lca": "CAMEL ENERGY, INC",
+ "ts": "2026-09-27T02:09:53.942Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "camel",
+   "spec": "feishuhire:camel",
+   "title": "加入骆驼集团股份有限公司"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:camel",
+  "platform": "feishu",
+  "title": "加入骆驼集团股份有限公司",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入骆驼集团股份有限公司",
+  "brand": "Camel Group",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

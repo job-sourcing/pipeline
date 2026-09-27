@@ -1,0 +1,11 @@
+{
+ "brand": "SG Automotive",
+ "tier": "lca",
+ "lca": "SG AMERICAS OPERATIONAL SERVICES, LLC",
+ "ts": "2026-09-27T02:35:25.187Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

@@ -1,0 +1,11 @@
+{
+ "brand": "COSCO Shipping",
+ "tier": "lca",
+ "lca": "COSCO FIRE PROTECTION, INC.",
+ "ts": "2026-09-27T02:24:54.209Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

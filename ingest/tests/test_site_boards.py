@@ -1684,6 +1684,14 @@ class TestFeishuHireAdapter:
         assert M["Hong Kong (China)"] == "Hong Kong"
         # ambiguous names stay UNMAPPED by design (loud, not guessed)
         assert "Cambridge" not in M
+        # S20 (poizon portal): the US satellites a real board surfaced —
+        # before the map grew, 8 rows dropped unresolved and the list
+        # flagged complete=False (the honest-unknown class); these pins
+        # keep the grown map from regressing
+        assert M["Brooklyn"] == "United States"
+        assert M["Essex County"] == "United States"
+        assert M["Langfang"] == "China"
+        assert M["Yulin"] == "China"
 
     def test_no_country_filter_returns_all(self, monkeypatch):
         # regression: list without a country filter keeps every row

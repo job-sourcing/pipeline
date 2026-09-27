@@ -1,0 +1,29 @@
+{
+ "brand": "XtalPi",
+ "tier": "lca",
+ "lca": "XTALPI INC.",
+ "ts": "2026-09-27T02:15:19.934Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "xtalpi",
+   "spec": "feishuhire:xtalpi",
+   "title": "加入晶泰科技XtalPi"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:xtalpi",
+  "platform": "feishu",
+  "title": "加入晶泰科技XtalPi",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入晶泰科技XtalPi",
+  "brand": "XtalPi",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

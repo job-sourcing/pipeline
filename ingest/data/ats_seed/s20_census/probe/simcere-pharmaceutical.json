@@ -1,0 +1,11 @@
+{
+ "brand": "Simcere Pharmaceutical",
+ "tier": "lca",
+ "lca": "SIMCERE OF AMERICA INC.",
+ "ts": "2026-09-27T02:25:58.223Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

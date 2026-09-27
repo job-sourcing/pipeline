@@ -1,0 +1,36 @@
+{
+ "brand": "Mattson Technology",
+ "tier": "lca",
+ "lca": "MATTSON TECHNOLOGY, INC.",
+ "ts": "2026-09-27T01:40:52.279Z",
+ "candidates": [
+  {
+   "url": "https://mattson.com/careers",
+   "title": "Careers Overview - Mattson Technology, Inc.",
+   "status": 200,
+   "bytes": 92813,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "JOIN THE TEAM! Mattson Technology is a global company with nearly 30 years of experience delivering leading-edge technology and products in the Dry Strip, ..."
+  },
+  {
+   "url": "https://www.appliedmaterials.com/us/en/careers.html",
+   "title": "Access Denied",
+   "status": 403,
+   "bytes": 406,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Explore current job openings by location, job category and more—and apply online. We suggest searching based on location and/or job category."
+  }
+ ],
+ "best": {
+  "url": "https://mattson.com/careers",
+  "platform": "custom",
+  "title": "Careers Overview - Mattson Technology, Inc."
+ },
+ "verdict": "custom_surface"
+}

@@ -1,0 +1,47 @@
+{
+ "brand": "WuXi Biologics",
+ "tier": "lca",
+ "lca": "WUXI BIOLOGICS USA, LLC",
+ "ts": "2026-09-27T01:39:09.147Z",
+ "candidates": [
+  {
+   "url": "https://www.wuxibiologicscareers.ie/career-areas",
+   "title": "Our career areas | WuXi Biologics Jobs",
+   "status": 200,
+   "bytes": 565286,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Our Career Areas · Operations · Project Management · Manufacturing · Supply Chain Management · Engineering · Finance · IT Department. The IT department is ..."
+  },
+  {
+   "url": "https://www.wuxiapptec.com/careers/talent",
+   "title": "Our Talent Outlook | WuXi AppTec",
+   "status": 200,
+   "bytes": 468121,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Aspirational. Believe in the vision of \"Every drug can be made and every disease can be treated\" with scientific dedication and a shared sense of mission."
+  },
+  {
+   "url": "https://www.wuxibiologicscareers.ie",
+   "title": "WuXi Biologics Careers",
+   "status": 200,
+   "bytes": 549348,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We're always looking for the following profiles, among others, for one of our SCM teams: P2P Analyst . P2P Specialist. Warehouse & Dispensing Operator. Read mor"
+  }
+ ],
+ "best": {
+  "url": "https://www.wuxibiologicscareers.ie/career-areas",
+  "platform": "custom",
+  "title": "Our career areas | WuXi Biologics Jobs"
+ },
+ "verdict": "custom_surface"
+}

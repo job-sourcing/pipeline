@@ -1,0 +1,11 @@
+{
+ "brand": "Ubiquant",
+ "tier": "lca",
+ "lca": "UBIQUANT US TECH, LLC",
+ "ts": "2026-09-27T02:08:57.428Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
+ "verdict": "no_results"
+}

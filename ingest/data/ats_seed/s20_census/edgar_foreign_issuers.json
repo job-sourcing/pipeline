@@ -1,0 +1,4790 @@
+{
+ "source": "SEC EDGAR submissions walk over company_tickers.json",
+ "fetched": 1790461035.5399358,
+ "walked": 900,
+ "foreign_issuers": 188,
+ "china_hk_flagged": 6,
+ "entities": [
+  {
+   "name": "Alibaba Group Holding Ltd",
+   "tickers": [
+    "BABA",
+    "BABAF",
+    "BBAAY"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "K3",
+   "incorporationDesc": "Hong Kong",
+   "sic": "7389",
+   "sicDesc": "Services-Business Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1577552",
+   "chinaFlag": true,
+   "chinaFlagDesc": "Hong Kong"
+  },
+  {
+   "name": "Contemporary Amperex Technology Co., Limited/ADR",
+   "tickers": [
+    "CYATY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "F4",
+   "incorporationDesc": "China",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "2070829",
+   "chinaFlag": true,
+   "chinaFlagDesc": "China"
+  },
+  {
+   "name": "Jiangsu Hengrui Pharmaceuticals Co., Ltd./ADR",
+   "tickers": [
+    "JHPCY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "F4",
+   "incorporationDesc": "China",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "2071868",
+   "chinaFlag": true,
+   "chinaFlagDesc": "China"
+  },
+  {
+   "name": "Lens Technology Co., Ltd./ADR",
+   "tickers": [
+    "LNTCY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "F4",
+   "incorporationDesc": "China",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF"
+   ],
+   "cik": "2098381",
+   "chinaFlag": true,
+   "chinaFlagDesc": "China"
+  },
+  {
+   "name": "Midea Group Co., Ltd./ADR",
+   "tickers": [
+    "MGCLY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "F4",
+   "incorporationDesc": "China",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "2039784",
+   "chinaFlag": true,
+   "chinaFlagDesc": "China"
+  },
+  {
+   "name": "Sany Heavy Industries Co., Ltd./ADR",
+   "tickers": [
+    "SNHIY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "F4",
+   "incorporationDesc": "China",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "2098326",
+   "chinaFlag": true,
+   "chinaFlagDesc": "China"
+  },
+  {
+   "name": "ADVANTEST CORP",
+   "tickers": [
+    "ATEYY",
+    "ADTTF"
+   ],
+   "exchanges": [
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "M0",
+   "incorporationDesc": "Japan",
+   "sic": "3674",
+   "sicDesc": "Semiconductors & Related Devices",
+   "businessCountry": null,
+   "filingsRecent": [
+    "EFFECT",
+    "F-6",
+    "SCHEDULE 13G/A",
+    "D/A",
+    "D/A"
+   ],
+   "cik": "1158838",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Japan"
+  },
+  {
+   "name": "AEGON LTD.",
+   "tickers": [
+    "AEG",
+    "AEGOF",
+    "AEFC"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "NYSE"
+   ],
+   "incorporation": "D0",
+   "incorporationDesc": "Bermuda",
+   "sic": "6311",
+   "sicDesc": "Life Insurance",
+   "businessCountry": null,
+   "filingsRecent": [
+    "425",
+    "424B3",
+    "425",
+    "425",
+    "6-K"
+   ],
+   "cik": "769218",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Bermuda"
+  },
+  {
+   "name": "AGNICO EAGLE MINES LTD",
+   "tickers": [
+    "AEM",
+    "AEMRF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "1040",
+   "sicDesc": "Gold and Silver Ores",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "2809",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "ALAMOS GOLD INC",
+   "tickers": [
+    "AGI"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "1040",
+   "sicDesc": "Gold and Silver Ores",
+   "businessCountry": null,
+   "filingsRecent": [
+    "144",
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G/A",
+    "6-K"
+   ],
+   "cik": "1178819",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "ALCON INC",
+   "tickers": [
+    "ALC"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "3851",
+   "sicDesc": "Ophthalmic Goods",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "SD",
+    "6-K",
+    "6-K",
+    "144"
+   ],
+   "cik": "1167379",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "AMBEV S.A.",
+   "tickers": [
+    "ABEV"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "D5",
+   "incorporationDesc": "Brazil",
+   "sic": "2080",
+   "sicDesc": "Beverages",
+   "businessCountry": null,
+   "filingsRecent": [
+    "3",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1565025",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Brazil"
+  },
+  {
+   "name": "AMERICA MOVIL SAB DE CV/",
+   "tickers": [
+    "AMX",
+    "AMXOF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "O5",
+   "incorporationDesc": "Mexico",
+   "sic": "4813",
+   "sicDesc": "Telephone Communications (No Radiotelephone)",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1129137",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Mexico"
+  },
+  {
+   "name": "ARGENX SE",
+   "tickers": [
+    "ARGX"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "2836",
+   "sicDesc": "Biological Products, (No Diagnostic Substances)",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "SC TO-T/A",
+    "SC TO-T/A",
+    "6-K",
+    "SCHEDULE 13G/A"
+   ],
+   "cik": "1697862",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "ARM HOLDINGS PLC /UK",
+   "tickers": [
+    "ARM"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "3674",
+   "sicDesc": "Semiconductors & Related Devices",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "6-K",
+    "4",
+    "4"
+   ],
+   "cik": "1973239",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "ASE Technology Holding Co., Ltd.",
+   "tickers": [
+    "ASX"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "F5",
+   "incorporationDesc": "Taiwan",
+   "sic": "3674",
+   "sicDesc": "Semiconductors & Related Devices",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1122411",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Taiwan"
+  },
+  {
+   "name": "ASR Nederland N.V./ADR",
+   "tickers": [
+    "ARNNY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6 POS",
+    "F-6 POS",
+    "F-6EF"
+   ],
+   "cik": "1719117",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "ASTRAZENECA PLC",
+   "tickers": [
+    "AZN"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "2834",
+   "sicDesc": "Pharmaceutical Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "901832",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "Accenture plc",
+   "tickers": [
+    "ACN"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "7389",
+   "sicDesc": "Services-Business Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1467373",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "AerCap Holdings N.V.",
+   "tickers": [
+    "AER"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "7359",
+   "sicDesc": "Services-Equipment Rental & Leasing, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "424B5",
+    "6-K",
+    "FWP",
+    "424B3",
+    "6-K"
+   ],
+   "cik": "1378789",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "Allegion plc",
+   "tickers": [
+    "ALLE"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "7381",
+   "sicDesc": "Services-Detective, Guard & Armored Car Services",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "4",
+    "4",
+    "4",
+    "144"
+   ],
+   "cik": "1579241",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "Amcor plc",
+   "tickers": [
+    "AMCR",
+    "AMCCF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "Y9",
+   "incorporationDesc": "Jersey",
+   "sic": "3990",
+   "sicDesc": "Miscellaneous Manufacturing Industries",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1748790",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Jersey"
+  },
+  {
+   "name": "Amer Sports, Inc.",
+   "tickers": [
+    "AS"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "2300",
+   "sicDesc": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "6-K",
+    "144",
+    "4",
+    "144"
+   ],
+   "cik": "1988894",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Amrize Ltd",
+   "tickers": [
+    "AMRZ"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "3241",
+   "sicDesc": "Cement, Hydraulic",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "3",
+    "4",
+    "8-K",
+    "4"
+   ],
+   "cik": "2035989",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "AngloGold Ashanti PLC",
+   "tickers": [
+    "AU"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "1040",
+   "sicDesc": "Gold and Silver Ores",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "SD",
+    "6-K/A"
+   ],
+   "cik": "1973832",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "Anheuser-Busch InBev SA/NV",
+   "tickers": [
+    "BUD",
+    "BUDFF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "C9",
+   "incorporationDesc": "Belgium",
+   "sic": "2082",
+   "sicDesc": "Malt Beverages",
+   "businessCountry": null,
+   "filingsRecent": [
+    "144",
+    "6-K",
+    "6-K",
+    "11-K",
+    "6-K"
+   ],
+   "cik": "1668717",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Belgium"
+  },
+  {
+   "name": "Aon plc",
+   "tickers": [
+    "AON"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "6411",
+   "sicDesc": "Insurance Agents, Brokers & Service",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "CERT",
+    "8-A12B",
+    "8-K",
+    "424B5"
+   ],
+   "cik": "315293",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "Ascendis Pharma A/S",
+   "tickers": [
+    "ASND"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "G7",
+   "incorporationDesc": "Denmark",
+   "sic": "2834",
+   "sicDesc": "Pharmaceutical Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "4",
+    "6-K"
+   ],
+   "cik": "1612042",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Denmark"
+  },
+  {
+   "name": "BAE SYSTEMS PLC /FI/",
+   "tickers": [
+    "BAESY",
+    "BAESF"
+   ],
+   "exchanges": [
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "D",
+    "D",
+    "D",
+    "D",
+    "D"
+   ],
+   "cik": "895564",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "BANCO SANTANDER CHILE",
+   "tickers": [
+    "BSAC"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "F3",
+   "incorporationDesc": "Chile",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1027552",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Chile"
+  },
+  {
+   "name": "BANK OF MONTREAL /CAN/",
+   "tickers": [
+    "BMO",
+    "FNGD",
+    "BRZL",
+    "AIQD",
+    "AIQU",
+    "BERZ",
+    "BNKD",
+    "BNKU",
+    "BRZD",
+    "BULZ",
+    "CARD",
+    "CARU",
+    "DULL",
+    "FLYD",
+    "FLYU",
+    "FNGO",
+    "FNGS",
+    "FNGU",
+    "GDXD",
+    "GDXU",
+    "HYGD",
+    "HYGU",
+    "JETD",
+    "JETU",
+    "JPND",
+    "JPNU",
+    "LQDD",
+    "LQDU",
+    "MNGU",
+    "NRGD",
+    "NRGU",
+    "OILD",
+    "OILU",
+    "SHNY",
+    "SMHD",
+    "SMHU",
+    "SPYU",
+    "TAWN",
+    "TPEI",
+    "WTID",
+    "WTIU",
+    "XLCD",
+    "XLCU",
+    "XLPD",
+    "XLPU"
+   ],
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "CBOE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "CBOE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "CBOE",
+    "CBOE",
+    "NYSE",
+    "NYSE",
+    "CBOE",
+    "CBOE",
+    "CBOE",
+    "CBOE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "CBOE",
+    "CBOE",
+    "NYSE",
+    "CBOE",
+    "CBOE",
+    "NYSE",
+    "NYSE",
+    "CBOE",
+    "CBOE",
+    "CBOE",
+    "CBOE"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "FWP",
+    "FWP",
+    "FWP",
+    "FWP",
+    "FWP"
+   ],
+   "cik": "927971",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "BANK OF NOVA SCOTIA",
+   "tickers": [
+    "BNS"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "6022",
+   "sicDesc": "State Commercial Banks",
+   "businessCountry": null,
+   "filingsRecent": [
+    "FWP",
+    "424B2",
+    "FWP",
+    "FWP",
+    "424B2"
+   ],
+   "cik": "9631",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "BARCLAYS PLC",
+   "tickers": [
+    "BCS",
+    "BCLYF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "25-NSE",
+    "6-K"
+   ],
+   "cik": "312069",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "BARRICK MINING CORP",
+   "tickers": [
+    "B"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A1",
+   "incorporationDesc": "British Columbia, Canada",
+   "sic": "1040",
+   "sicDesc": "Gold and Silver Ores",
+   "businessCountry": null,
+   "filingsRecent": [
+    "144",
+    "6-K",
+    "6-K",
+    "SD",
+    "SCHEDULE 13G/A"
+   ],
+   "cik": "756894",
+   "chinaFlag": false,
+   "chinaFlagDesc": "British Columbia, Canada"
+  },
+  {
+   "name": "BAWAG Group AG/ADR",
+   "tickers": [
+    "BAWAY",
+    "BWAGF"
+   ],
+   "exchanges": [
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "C4",
+   "incorporationDesc": "Austria",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "EFFECT",
+    "F-6",
+    "F-6EF",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "1968385",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Austria"
+  },
+  {
+   "name": "BELIMO Holding AG/ADR",
+   "tickers": [
+    "BLMOY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "2109234",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "BHP Group Ltd",
+   "tickers": [
+    "BHP",
+    "BHPLF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "C3",
+   "incorporationDesc": "Australia",
+   "sic": "1000",
+   "sicDesc": "Metal Mining",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "811809",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Australia"
+  },
+  {
+   "name": "BP PLC",
+   "tickers": [
+    "BP",
+    "BPAQF",
+    "BPPFF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "2911",
+   "sicDesc": "Petroleum Refining",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "13F-HR",
+    "6-K"
+   ],
+   "cik": "313807",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "BROOKFIELD Corp /ON/",
+   "tickers": [
+    "BN",
+    "BAMGF",
+    "BAMKF",
+    "BKAMF",
+    "BKFAF",
+    "BKFDF",
+    "BKFOF",
+    "BKFPF",
+    "BKPA",
+    "BNH",
+    "BNJ",
+    "BRCFF",
+    "BRFAF",
+    "BRFCF",
+    "BROXF",
+    "BRPSF",
+    "BXDIF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "NYSE",
+    "NYSE",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "6512",
+   "sicDesc": "Opeators of  Nonresidential Buildings",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "6-K",
+    "6-K",
+    "SUPPL",
+    "6-K"
+   ],
+   "cik": "1001085",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "BUNZL PLC",
+   "tickers": [
+    "BZLFY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "5141",
+   "sicDesc": "Wholesale-Groceries, General Line",
+   "businessCountry": null,
+   "filingsRecent": [
+    "EFFECT",
+    "F-6",
+    "SC 13G/A",
+    "SC 13G",
+    "424B3"
+   ],
+   "cik": "1072397",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "Baidu, Inc.",
+   "tickers": [
+    "BIDU",
+    "BAIDF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "7370",
+   "sicDesc": "Services-Computer Programming, Data Processing, Etc.",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1329099",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Banco Santander (Brasil) S.A.",
+   "tickers": [
+    "BSBR"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "D5",
+   "incorporationDesc": "Brazil",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "425",
+    "425",
+    "6-K",
+    "4",
+    "3"
+   ],
+   "cik": "1471055",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Brazil"
+  },
+  {
+   "name": "Banco Santander, S.A.",
+   "tickers": [
+    "SAN",
+    "BCDRF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "U3",
+   "incorporationDesc": "Spain",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "425",
+    "F-N",
+    "F-4",
+    "6-K"
+   ],
+   "cik": "891478",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Spain"
+  },
+  {
+   "name": "Bending Spoons S.p.A.",
+   "tickers": [
+    "BSP"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "L6",
+   "incorporationDesc": "Italy",
+   "sic": "7370",
+   "sicDesc": "Services-Computer Programming, Data Processing, Etc.",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "2004711",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Italy"
+  },
+  {
+   "name": "BioNTech SE",
+   "tickers": [
+    "BNTX"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "2M",
+   "incorporationDesc": "Germany",
+   "sic": "2836",
+   "sicDesc": "Biological Products, (No Diagnostic Substances)",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "6-K",
+    "4"
+   ],
+   "cik": "1776985",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Germany"
+  },
+  {
+   "name": "Brookfield Asset Management Ltd.",
+   "tickers": [
+    "BAM"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A1",
+   "incorporationDesc": "British Columbia, Canada",
+   "sic": "6282",
+   "sicDesc": "Investment Advice",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "8-K",
+    "8-K",
+    "8-K",
+    "10-Q"
+   ],
+   "cik": "1937926",
+   "chinaFlag": false,
+   "chinaFlagDesc": "British Columbia, Canada"
+  },
+  {
+   "name": "Brookfield Renewable Partners L.P.",
+   "tickers": [
+    "BEP",
+    "BEPH",
+    "BEPI",
+    "BEPJ",
+    "BEP-PA"
+   ],
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "incorporation": "D0",
+   "incorporationDesc": "Bermuda",
+   "sic": "4911",
+   "sicDesc": "Electric Services",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1533232",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Bermuda"
+  },
+  {
+   "name": "Bunge Global SA",
+   "tickers": [
+    "BG"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "2070",
+   "sicDesc": "Fats & Oils",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1996862",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "CANADIAN NATIONAL RAILWAY CO",
+   "tickers": [
+    "CNI"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A8",
+   "incorporationDesc": "Quebec, Canada",
+   "sic": "4011",
+   "sicDesc": "Railroads, Line-Haul Operating",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "SUPPL"
+   ],
+   "cik": "16868",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Quebec, Canada"
+  },
+  {
+   "name": "CANADIAN NATURAL RESOURCES Ltd",
+   "tickers": [
+    "CNQ"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A0",
+   "incorporationDesc": "Alberta, Canada",
+   "sic": "1311",
+   "sicDesc": "Crude Petroleum & Natural Gas",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SCHEDULE 13G/A",
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G",
+    "SD"
+   ],
+   "cik": "1017413",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Alberta, Canada"
+  },
+  {
+   "name": "CANADIAN PACIFIC KANSAS CITY LTD/CN",
+   "tickers": [
+    "CP"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "4011",
+   "sicDesc": "Railroads, Line-Haul Operating",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "10-Q",
+    "8-K",
+    "8-K",
+    "8-K"
+   ],
+   "cik": "16875",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "CELESTICA INC",
+   "tickers": [
+    "CLS"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "3672",
+   "sicDesc": "Printed Circuit Boards",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "144",
+    "8-K",
+    "4"
+   ],
+   "cik": "1030894",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "CEMEX SAB DE CV",
+   "tickers": [
+    "CX",
+    "CXMSF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "O5",
+   "incorporationDesc": "Mexico",
+   "sic": "3241",
+   "sicDesc": "Cement, Hydraulic",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "SD",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1076378",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Mexico"
+  },
+  {
+   "name": "CHEMICAL & MINING CO OF CHILE INC",
+   "tickers": [
+    "SQM"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "F3",
+   "incorporationDesc": "Chile",
+   "sic": "1400",
+   "sicDesc": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "909037",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Chile"
+  },
+  {
+   "name": "CNH Industrial N.V.",
+   "tickers": [
+    "CNH"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "3531",
+   "sicDesc": "Construction Machinery & Equip",
+   "businessCountry": null,
+   "filingsRecent": [
+    "10-Q",
+    "8-K",
+    "8-K",
+    "SD",
+    "4"
+   ],
+   "cik": "1567094",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "COCA-COLA EUROPACIFIC PARTNERS plc",
+   "tickers": [
+    "CCEP"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "2086",
+   "sicDesc": "Bottled & Canned Soft Drinks & Carbonated Waters",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1650107",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "COMPANHIA DE SANEAMENTO BASICO DO ESTADO DE SAO PAULO-SABESP",
+   "tickers": [
+    "SBS"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "D5",
+   "incorporationDesc": "Brazil",
+   "sic": "4941",
+   "sicDesc": "Water Supply",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1170858",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Brazil"
+  },
+  {
+   "name": "CRH PUBLIC LTD CO",
+   "tickers": [
+    "CRH"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "3241",
+   "sicDesc": "Cement, Hydraulic",
+   "businessCountry": null,
+   "filingsRecent": [
+    "10-Q",
+    "8-K",
+    "8-K",
+    "3",
+    "SD"
+   ],
+   "cik": "849395",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "Carnival Corp Ltd.",
+   "tickers": [
+    "CCL"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "D0",
+   "incorporationDesc": "Bermuda",
+   "sic": "4400",
+   "sicDesc": "Water Transportation",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "8-K",
+    "SCHEDULE 13G",
+    "10-Q",
+    "8-K"
+   ],
+   "cik": "815097",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Bermuda"
+  },
+  {
+   "name": "Cheung Kong Property Holdings Limited/ADR",
+   "tickers": [],
+   "exchanges": [],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6 POS",
+    "F-6 POS",
+    "F-6EF"
+   ],
+   "cik": "1653192",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Chocoladefabriken Lindt & Spruengli AG/ADR",
+   "tickers": [
+    "CHLSY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "1885110",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "Chubb Ltd",
+   "tickers": [
+    "CB"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "6331",
+   "sicDesc": "Fire, Marine & Casualty Insurance",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "144",
+    "4",
+    "IRANNOTICE"
+   ],
+   "cik": "896159",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "Credo Technology Group Holding Ltd",
+   "tickers": [
+    "CRDO"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "3674",
+   "sicDesc": "Semiconductors & Related Devices",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "144",
+    "4"
+   ],
+   "cik": "1807794",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "DIAGEO PLC",
+   "tickers": [
+    "DEO",
+    "DGEAF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "2080",
+   "sicDesc": "Beverages",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "20-F",
+    "6-K"
+   ],
+   "cik": "835403",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "Daiwa Securities Group Inc.",
+   "tickers": [
+    "DSEEY",
+    "DSECF"
+   ],
+   "exchanges": [
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "M0",
+   "incorporationDesc": "Japan",
+   "sic": "8880",
+   "sicDesc": "American Depositary Receipts",
+   "businessCountry": null,
+   "filingsRecent": [
+    "N-PX",
+    "13F-HR",
+    "D/A",
+    "13F-HR",
+    "13F-HR"
+   ],
+   "cik": "1481045",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Japan"
+  },
+  {
+   "name": "DiDi Global Inc.",
+   "tickers": [
+    "DIDIY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "7389",
+   "sicDesc": "Services-Business Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SCHEDULE 13G/A",
+    "20-F",
+    "3",
+    "3",
+    "3"
+   ],
+   "cik": "1764757",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Dollarama Inc./ADR",
+   "tickers": [
+    "DLMAY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF"
+   ],
+   "cik": "2073893",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "ECOPETROL S.A.",
+   "tickers": [
+    "EC"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "F8",
+   "incorporationDesc": "Colombia",
+   "sic": "1311",
+   "sicDesc": "Crude Petroleum & Natural Gas",
+   "businessCountry": null,
+   "filingsRecent": [
+    "3",
+    "3",
+    "3",
+    "3",
+    "3"
+   ],
+   "cik": "1444406",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Colombia"
+  },
+  {
+   "name": "ELBIT SYSTEMS LTD",
+   "tickers": [
+    "ESLT"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "L3",
+   "incorporationDesc": "Israel",
+   "sic": "3728",
+   "sicDesc": "Aircraft Parts & Auxiliary Equipment, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "3",
+    "6-K"
+   ],
+   "cik": "1027664",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Israel"
+  },
+  {
+   "name": "ENBRIDGE INC",
+   "tickers": [
+    "ENB",
+    "EBBNF",
+    "EBBGF",
+    "EBGEF",
+    "EBRGF",
+    "EBRZF",
+    "ENBFF",
+    "ENBGF",
+    "ENBHF",
+    "ENBMF",
+    "ENBNF",
+    "ENBOF",
+    "ENBRF",
+    "ENBSF",
+    "ENFFF",
+    "ENNPF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "A0",
+   "incorporationDesc": "Alberta, Canada",
+   "sic": "4610",
+   "sicDesc": "Pipe Lines (No Natural Gas)",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SD",
+    "8-K",
+    "424B5",
+    "FWP",
+    "8-K"
+   ],
+   "cik": "895728",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Alberta, Canada"
+  },
+  {
+   "name": "ENI SPA",
+   "tickers": [
+    "E",
+    "EIPAF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "L6",
+   "incorporationDesc": "Italy",
+   "sic": "1311",
+   "sicDesc": "Crude Petroleum & Natural Gas",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1002242",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Italy"
+  },
+  {
+   "name": "ERICSSON LM TELEPHONE CO",
+   "tickers": [
+    "ERIC",
+    "ERIXF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "V7",
+   "incorporationDesc": "Sweden",
+   "sic": "3663",
+   "sicDesc": "Radio & Tv Broadcasting & Communications Equipment",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "717826",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Sweden"
+  },
+  {
+   "name": "EVEREST GROUP, LTD.",
+   "tickers": [
+    "EG"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "D0",
+   "incorporationDesc": "Bermuda",
+   "sic": "6331",
+   "sicDesc": "Fire, Marine & Casualty Insurance",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "S-8",
+    "10-Q",
+    "8-K",
+    "4"
+   ],
+   "cik": "1095073",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Bermuda"
+  },
+  {
+   "name": "Equinox Gold Corp.",
+   "tickers": [
+    "EQX"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A1",
+   "incorporationDesc": "British Columbia, Canada",
+   "sic": "1040",
+   "sicDesc": "Gold and Silver Ores",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "SCHEDULE 13G",
+    "6-K",
+    "S-8",
+    "6-K"
+   ],
+   "cik": "1756607",
+   "chinaFlag": false,
+   "chinaFlagDesc": "British Columbia, Canada"
+  },
+  {
+   "name": "FAIRFAX FINANCIAL HOLDINGS LTD/ CAN",
+   "tickers": [
+    "FRFHF",
+    "FRFFF"
+   ],
+   "exchanges": [
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "6331",
+   "sicDesc": "Fire, Marine & Casualty Insurance",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "SCHEDULE 13G",
+    "13F-HR",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "915191",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "FLEX LTD.",
+   "tickers": [
+    "FLEX"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "U0",
+   "incorporationDesc": "Singapore",
+   "sic": "3672",
+   "sicDesc": "Printed Circuit Boards",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "3",
+    "4",
+    "3",
+    "DEFA14A"
+   ],
+   "cik": "866374",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Singapore"
+  },
+  {
+   "name": "FRANCO NEVADA Corp",
+   "tickers": [
+    "FNV"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "1040",
+   "sicDesc": "Gold and Silver Ores",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "EFFECT",
+    "F-X"
+   ],
+   "cik": "1456346",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "Fabrinet",
+   "tickers": [
+    "FN"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "3661",
+   "sicDesc": "Telephone & Telegraph Apparatus",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1408710",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Ferrari N.V.",
+   "tickers": [
+    "RACE"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "3711",
+   "sicDesc": "Motor Vehicles & Passenger Car Bodies",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1648416",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "Ferrovial N.V.",
+   "tickers": [
+    "FER"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "1600",
+   "sicDesc": "Heavy Construction Other Than Bldg Const - Contractors",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1468522",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "Flutter Entertainment plc",
+   "tickers": [
+    "FLUT"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "7370",
+   "sicDesc": "Services-Computer Programming, Data Processing, Etc.",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1635327",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "Fortis Inc.",
+   "tickers": [
+    "FTS",
+    "FINCF",
+    "FORFF",
+    "FRTJF",
+    "FRTSF",
+    "FTPSF",
+    "FTRSF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "A4",
+   "incorporationDesc": "Newfoundland, Canada",
+   "sic": "4911",
+   "sicDesc": "Electric Services",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "SUPPL",
+    "6-K",
+    "6-K",
+    "FWP"
+   ],
+   "cik": "1666175",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Newfoundland, Canada"
+  },
+  {
+   "name": "Fresenius SE & Co. KGaA",
+   "tickers": [
+    "FSNUY",
+    "FSNUF"
+   ],
+   "exchanges": [
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "2M",
+   "incorporationDesc": "Germany",
+   "sic": "3841",
+   "sicDesc": "Surgical & Medical Instruments & Apparatus",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SCHEDULE 13D/A",
+    "SCHEDULE 13D/A",
+    "SCHEDULE 13D/A",
+    "SC 13D/A",
+    "SC 13D/A"
+   ],
+   "cik": "904868",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Germany"
+  },
+  {
+   "name": "Futu Holdings Ltd",
+   "tickers": [
+    "FUTU"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "6211",
+   "sicDesc": "Security Brokers, Dealers & Flotation Companies",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "4",
+    "6-K",
+    "6-K",
+    "20-F"
+   ],
+   "cik": "1754581",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "GARMIN LTD",
+   "tickers": [
+    "GRMN"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "3812",
+   "sicDesc": "Search, Detection, Navigation, Guidance, Aeronautical Sys",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "144",
+    "4",
+    "4"
+   ],
+   "cik": "1121788",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "GFL Environmental Inc.",
+   "tickers": [
+    "GFL"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "4953",
+   "sicDesc": "Refuse Systems",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G/A",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1780232",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "GLOBALFOUNDRIES Inc.",
+   "tickers": [
+    "GFS"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "3674",
+   "sicDesc": "Semiconductors & Related Devices",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "S-8",
+    "F-3ASR",
+    "4"
+   ],
+   "cik": "1709048",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "GREAT-WEST LIFECO INC.",
+   "tickers": [
+    "GWLIF"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "6311",
+   "sicDesc": "Life Insurance",
+   "businessCountry": null,
+   "filingsRecent": [
+    "D/A",
+    "D/A",
+    "D/A",
+    "SC 13G",
+    "D/A"
+   ],
+   "cik": "850918",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "GSK plc",
+   "tickers": [
+    "GSK",
+    "GLAXF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "2834",
+   "sicDesc": "Pharmaceutical Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "CERT",
+    "6-K",
+    "8-A12B",
+    "6-K"
+   ],
+   "cik": "1131399",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "Galderma Group AG/ADR",
+   "tickers": [
+    "GALDY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "2021390",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "Grab Holdings Ltd",
+   "tickers": [
+    "GRAB",
+    "GRABW"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "Nasdaq"
+   ],
+   "incorporation": "U0",
+   "incorporationDesc": "Singapore",
+   "sic": "7389",
+   "sicDesc": "Services-Business Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "144"
+   ],
+   "cik": "1855612",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Singapore"
+  },
+  {
+   "name": "Grupo Cibest S.A.",
+   "tickers": [
+    "CIB"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "F8",
+   "incorporationDesc": "Colombia",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "2058897",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Colombia"
+  },
+  {
+   "name": "H World Group Ltd",
+   "tickers": [
+    "HTHT",
+    "HWLDF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "7011",
+   "sicDesc": "Hotels & Motels",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "4"
+   ],
+   "cik": "1483994",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "HDFC BANK LTD",
+   "tickers": [
+    "HDB"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "K7",
+   "incorporationDesc": "India",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1144967",
+   "chinaFlag": false,
+   "chinaFlagDesc": "India"
+  },
+  {
+   "name": "Haleon plc",
+   "tickers": [
+    "HLN",
+    "HLNCF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "2844",
+   "sicDesc": "Perfumes, Cosmetics & Other Toilet Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "CERT",
+    "8-A12B"
+   ],
+   "cik": "1900304",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "Hesai Group",
+   "tickers": [
+    "HSAI",
+    "HSIGF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "3569",
+   "sicDesc": "General Industrial Machinery & Equipment, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1861737",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "ING GROEP NV",
+   "tickers": [
+    "ING",
+    "INGVF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G/A",
+    "25-NSE"
+   ],
+   "cik": "1039765",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "INNIO N.V.",
+   "tickers": [
+    "INIO"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "2M",
+   "incorporationDesc": "Germany",
+   "sic": "3621",
+   "sicDesc": "Motors & Generators",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SCHEDULE 13G",
+    "S-8 POS",
+    "10-Q",
+    "8-K",
+    "4"
+   ],
+   "cik": "2109150",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Germany"
+  },
+  {
+   "name": "IREN Ltd",
+   "tickers": [
+    "IREN"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "C3",
+   "incorporationDesc": "Australia",
+   "sic": "6199",
+   "sicDesc": "Finance Services",
+   "businessCountry": null,
+   "filingsRecent": [
+    "10-K",
+    "8-K",
+    "D",
+    "8-K",
+    "SCHEDULE 13G"
+   ],
+   "cik": "1878848",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Australia"
+  },
+  {
+   "name": "Invesco Ltd.",
+   "tickers": [
+    "IVZ"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "D0",
+   "incorporationDesc": "Bermuda",
+   "sic": "6282",
+   "sicDesc": "Investment Advice",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "8-K",
+    "4",
+    "4"
+   ],
+   "cik": "914208",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Bermuda"
+  },
+  {
+   "name": "Itau Unibanco Holding S.A.",
+   "tickers": [
+    "ITUB"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "D5",
+   "incorporationDesc": "Brazil",
+   "sic": "6022",
+   "sicDesc": "State Commercial Banks",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "4"
+   ],
+   "cik": "1132597",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Brazil"
+  },
+  {
+   "name": "JBS N.V.",
+   "tickers": [
+    "JBS"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "2011",
+   "sicDesc": "Meat Packing Plants",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "4",
+    "144",
+    "425",
+    "8-K"
+   ],
+   "cik": "1791942",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "JD.com, Inc.",
+   "tickers": [
+    "JD",
+    "JDCMF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "5990",
+   "sicDesc": "Retail-Retail Stores, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "4",
+    "4",
+    "6-K"
+   ],
+   "cik": "1549802",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "JFrog Ltd",
+   "tickers": [
+    "FROG"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "L3",
+   "incorporationDesc": "Israel",
+   "sic": "7372",
+   "sicDesc": "Services-Prepackaged Software",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "144",
+    "4",
+    "4"
+   ],
+   "cik": "1800667",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Israel"
+  },
+  {
+   "name": "Jazz Pharmaceuticals plc",
+   "tickers": [
+    "JAZZ"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "2834",
+   "sicDesc": "Pharmaceutical Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "8-K",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1232524",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "Johnson Controls International plc",
+   "tickers": [
+    "JCI"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "3585",
+   "sicDesc": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
+   "businessCountry": null,
+   "filingsRecent": [
+    "144",
+    "4",
+    "4",
+    "144",
+    "4"
+   ],
+   "cik": "833444",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "Joint Stock Co Kaspi.kz",
+   "tickers": [
+    "KSPI"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "1P",
+   "incorporationDesc": "Kazakhstan",
+   "sic": "7389",
+   "sicDesc": "Services-Business Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "SCHEDULE 13D/A",
+    "4"
+   ],
+   "cik": "1985487",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Kazakhstan"
+  },
+  {
+   "name": "KB Financial Group Inc.",
+   "tickers": [
+    "KB"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "M5",
+   "incorporationDesc": "Korea, Republic of",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G/A",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1445930",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Korea, Republic of"
+  },
+  {
+   "name": "KE Holdings Inc.",
+   "tickers": [
+    "BEKE"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "6531",
+   "sicDesc": "Real Estate Agents & Managers (For Others)",
+   "businessCountry": null,
+   "filingsRecent": [
+    "144",
+    "4",
+    "144",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1809587",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "KONINKLIJKE PHILIPS NV",
+   "tickers": [
+    "PHG",
+    "RYLPF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "3844",
+   "sicDesc": "X-Ray Apparatus & Tubes & Related Irradiation Apparatus",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SCHEDULE 13D/A",
+    "6-K",
+    "6-K",
+    "SD",
+    "6-K"
+   ],
+   "cik": "313216",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "KOREA ELECTRIC POWER CORP",
+   "tickers": [
+    "KEP"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "M5",
+   "incorporationDesc": "Korea, Republic of",
+   "sic": "4911",
+   "sicDesc": "Electric Services",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "887225",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Korea, Republic of"
+  },
+  {
+   "name": "LINDE PLC",
+   "tickers": [
+    "LIN"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "2810",
+   "sicDesc": "Industrial Inorganic Chemicals",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "10-Q",
+    "8-K",
+    "8-K",
+    "4"
+   ],
+   "cik": "1707925",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "Li Auto Inc.",
+   "tickers": [
+    "LI",
+    "LAAOF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "3711",
+   "sicDesc": "Motor Vehicles & Passenger Car Bodies",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1791706",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Lloyds Banking Group plc",
+   "tickers": [
+    "LYG",
+    "LLDTF",
+    "LLOBF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1160106",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "London Stock Exchange Group plc",
+   "tickers": [
+    "LSEGY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6/A",
+    "F-6",
+    "RW",
+    "F-6",
+    "SCHEDULE 13D/A"
+   ],
+   "cik": "1842726",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "LyondellBasell Industries N.V.",
+   "tickers": [
+    "LYB"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "2860",
+   "sicDesc": "Industrial Organic Chemicals",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SCHEDULE 13G/A",
+    "10-Q",
+    "8-K",
+    "4",
+    "4"
+   ],
+   "cik": "1489393",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "MEXICAN ECONOMIC DEVELOPMENT INC",
+   "tickers": [
+    "FMX"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "O5",
+   "incorporationDesc": "Mexico",
+   "sic": "2086",
+   "sicDesc": "Bottled & Canned Soft Drinks & Carbonated Waters",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "4",
+    "3/A",
+    "SCHEDULE 13G"
+   ],
+   "cik": "1061736",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Mexico"
+  },
+  {
+   "name": "Magnum Ice Cream Co N.V.",
+   "tickers": [
+    "MICC"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "2024",
+   "sicDesc": "Ice Cream & Frozen Desserts",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "2071668",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "NOKIA CORP",
+   "tickers": [
+    "NOK",
+    "NOKBF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "H9",
+   "incorporationDesc": "Finland",
+   "sic": "3663",
+   "sicDesc": "Radio & Tv Broadcasting & Communications Equipment",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G/A"
+   ],
+   "cik": "924613",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Finland"
+  },
+  {
+   "name": "NOMURA HOLDINGS INC",
+   "tickers": [
+    "NMR",
+    "NRSCF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "M0",
+   "incorporationDesc": "Japan",
+   "sic": "6211",
+   "sicDesc": "Security Brokers, Dealers & Flotation Companies",
+   "businessCountry": null,
+   "filingsRecent": [
+    "424B2",
+    "424B2",
+    "424B2",
+    "424B2",
+    "424B2"
+   ],
+   "cik": "1163653",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Japan"
+  },
+  {
+   "name": "NOVARTIS AG",
+   "tickers": [
+    "NVS",
+    "NVSEF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "2834",
+   "sicDesc": "Pharmaceutical Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1114448",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "NatWest Group plc",
+   "tickers": [
+    "NWG",
+    "RBSPF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "844150",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "Nebius Group N.V.",
+   "tickers": [
+    "NBIS"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "7370",
+   "sicDesc": "Services-Computer Programming, Data Processing, Etc.",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "144",
+    "6-K"
+   ],
+   "cik": "1513845",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "NetEase, Inc.",
+   "tickers": [
+    "NTES",
+    "NETTF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "7372",
+   "sicDesc": "Services-Prepackaged Software",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "4",
+    "144",
+    "6-K"
+   ],
+   "cik": "1110646",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Nu Holdings Ltd.",
+   "tickers": [
+    "NU"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "6199",
+   "sicDesc": "Finance Services",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1691493",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Nutrien Ltd.",
+   "tickers": [
+    "NTR"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "2870",
+   "sicDesc": "Agricultural Chemicals",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SD",
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G",
+    "6-K"
+   ],
+   "cik": "1725964",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "OBIC Co., Ltd./ADR",
+   "tickers": [
+    "OBICY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "M0",
+   "incorporationDesc": "Japan",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "2077146",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Japan"
+  },
+  {
+   "name": "ORIX CORP",
+   "tickers": [
+    "IX",
+    "ORXCF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "M0",
+   "incorporationDesc": "Japan",
+   "sic": "6159",
+   "sicDesc": "Miscellaneous Business Credit Institution",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "13F-NT",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1070304",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Japan"
+  },
+  {
+   "name": "PDD Holdings Inc.",
+   "tickers": [
+    "PDD"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "7389",
+   "sicDesc": "Services-Business Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "4",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1737806",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "PEMBINA PIPELINE CORP",
+   "tickers": [
+    "PBA",
+    "PBNAF",
+    "PBPRF",
+    "PMBPF",
+    "PMMBF",
+    "PPLAF",
+    "PPLOF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "A0",
+   "incorporationDesc": "Alberta, Canada",
+   "sic": "1382",
+   "sicDesc": "Oil & Gas Field Exploration Services",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1546066",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Alberta, Canada"
+  },
+  {
+   "name": "PETROBRAS - PETROLEO BRASILEIRO SA",
+   "tickers": [
+    "PBR",
+    "PBR-A"
+   ],
+   "exchanges": [
+    "NYSE",
+    "NYSE"
+   ],
+   "incorporation": "D5",
+   "incorporationDesc": "Brazil",
+   "sic": "1311",
+   "sicDesc": "Crude Petroleum & Natural Gas",
+   "businessCountry": null,
+   "filingsRecent": [
+    "25-NSE",
+    "6-K",
+    "6-K/A",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1119639",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Brazil"
+  },
+  {
+   "name": "PRUDENTIAL PLC",
+   "tickers": [
+    "PUK",
+    "PUKPF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "6311",
+   "sicDesc": "Life Insurance",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1116578",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "Pacific Airport Group",
+   "tickers": [
+    "PAC",
+    "GPAEF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "O5",
+   "incorporationDesc": "Mexico",
+   "sic": "4581",
+   "sicDesc": "Airports, Flying Fields & Airport Terminal Services",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G/A"
+   ],
+   "cik": "1347557",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Mexico"
+  },
+  {
+   "name": "RB GLOBAL INC.",
+   "tickers": [
+    "RBA"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "7389",
+   "sicDesc": "Services-Business Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1046102",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "RECKITT BENCKISER GROUP PLC",
+   "tickers": [],
+   "exchanges": [],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6 POS",
+    "F-6EF",
+    "SC 13D/A"
+   ],
+   "cik": "1420798",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "RELX PLC",
+   "tickers": [
+    "RELX",
+    "RLXXF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "7389",
+   "sicDesc": "Services-Business Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "929869",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "RENAISSANCERE HOLDINGS LTD",
+   "tickers": [
+    "RNR",
+    "RNR-PF",
+    "RNR-PG"
+   ],
+   "exchanges": [
+    "NYSE",
+    "NYSE",
+    "NYSE"
+   ],
+   "incorporation": "D0",
+   "incorporationDesc": "Bermuda",
+   "sic": "6331",
+   "sicDesc": "Fire, Marine & Casualty Insurance",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "N-PX",
+    "4",
+    "144"
+   ],
+   "cik": "913144",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Bermuda"
+  },
+  {
+   "name": "RIO TINTO LTD",
+   "tickers": [
+    "RTNTF"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "C3",
+   "incorporationDesc": "Australia",
+   "sic": "1000",
+   "sicDesc": "Metal Mining",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SD",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "887028",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Australia"
+  },
+  {
+   "name": "RIO TINTO PLC",
+   "tickers": [
+    "RIO",
+    "RTPPF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "1000",
+   "sicDesc": "Metal Mining",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SD",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "863064",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "ROYAL BANK OF CANADA",
+   "tickers": [
+    "RY",
+    "RYLBF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "424B2",
+    "FWP",
+    "424B2",
+    "424B2",
+    "424B2"
+   ],
+   "cik": "1000275",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "Resolution Minerals Ltd",
+   "tickers": [
+    "RML"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "C3",
+   "incorporationDesc": "Australia",
+   "sic": "1040",
+   "sicDesc": "Gold and Silver Ores",
+   "businessCountry": null,
+   "filingsRecent": [
+    "3",
+    "3",
+    "SEC STAFF ACTION",
+    "CERT",
+    "20FR12B/A"
+   ],
+   "cik": "2102907",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Australia"
+  },
+  {
+   "name": "Restaurant Brands International Inc.",
+   "tickers": [
+    "QSR"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "5812",
+   "sicDesc": "Retail-Eating  Places",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "4",
+    "144",
+    "SCHEDULE 13G/A"
+   ],
+   "cik": "1618756",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "Roivant Sciences Ltd.",
+   "tickers": [
+    "ROIV"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "D0",
+   "incorporationDesc": "Bermuda",
+   "sic": "2834",
+   "sicDesc": "Pharmaceutical Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1635088",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Bermuda"
+  },
+  {
+   "name": "Royalty Pharma plc",
+   "tickers": [
+    "RPRX"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "2834",
+   "sicDesc": "Pharmaceutical Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "4",
+    "144",
+    "SCHEDULE 13D/A"
+   ],
+   "cik": "1802768",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "SAP SE",
+   "tickers": [
+    "SAP",
+    "SAPGF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "2M",
+   "incorporationDesc": "Germany",
+   "sic": "7372",
+   "sicDesc": "Services-Prepackaged Software",
+   "businessCountry": null,
+   "filingsRecent": [
+    "S-8",
+    "6-K",
+    "11-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1000184",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Germany"
+  },
+  {
+   "name": "SHOPIFY INC.",
+   "tickers": [
+    "SHOP"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "7372",
+   "sicDesc": "Services-Prepackaged Software",
+   "businessCountry": null,
+   "filingsRecent": [
+    "144",
+    "144",
+    "144",
+    "144",
+    "144"
+   ],
+   "cik": "1594805",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "SLB LIMITED/NV",
+   "tickers": [
+    "SLB"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "P8",
+   "incorporationDesc": "Netherlands Antilles",
+   "sic": "1389",
+   "sicDesc": "Oil & Gas Field Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "144/A",
+    "4",
+    "144",
+    "4",
+    "144"
+   ],
+   "cik": "87347",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands Antilles"
+  },
+  {
+   "name": "STERIS plc",
+   "tickers": [
+    "STE"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "3842",
+   "sicDesc": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+   "businessCountry": null,
+   "filingsRecent": [
+    "144",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1757898",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "STMicroelectronics N.V.",
+   "tickers": [
+    "STM",
+    "STMEF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "3674",
+   "sicDesc": "Semiconductors & Related Devices",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "932787",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
+   "tickers": [
+    "SMFG",
+    "SMFNF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "M0",
+   "incorporationDesc": "Japan",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "424B2",
+    "FWP",
+    "424B5",
+    "N-PX"
+   ],
+   "cik": "1022837",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Japan"
+  },
+  {
+   "name": "SUN LIFE FINANCIAL INC",
+   "tickers": [
+    "SLF",
+    "SLFIF",
+    "SLFQF",
+    "SUNFF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC",
+    "OTC",
+    "OTC"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "6311",
+   "sicDesc": "Life Insurance",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "N-PX",
+    "6-K"
+   ],
+   "cik": "1097362",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "SUNCOR ENERGY INC",
+   "tickers": [
+    "SU"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A0",
+   "incorporationDesc": "Alberta, Canada",
+   "sic": "2911",
+   "sicDesc": "Petroleum Refining",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "311337",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Alberta, Canada"
+  },
+  {
+   "name": "Sanofi",
+   "tickers": [
+    "SNY",
+    "SNYNF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "I0",
+   "incorporationDesc": "France",
+   "sic": "2834",
+   "sicDesc": "Pharmaceutical Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "N-PX",
+    "4",
+    "3",
+    "4"
+   ],
+   "cik": "1121404",
+   "chinaFlag": false,
+   "chinaFlagDesc": "France"
+  },
+  {
+   "name": "Sea Ltd",
+   "tickers": [
+    "SE"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "7380",
+   "sicDesc": "Services-Miscellaneous Business Services",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1703399",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "SharkNinja, Inc.",
+   "tickers": [
+    "SN"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "3630",
+   "sicDesc": "Household Appliances",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "144",
+    "144",
+    "SCHEDULE 13G/A"
+   ],
+   "cik": "1957132",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Siemens Energy AG/ADR",
+   "tickers": [
+    "SMERY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "2M",
+   "incorporationDesc": "Germany",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6 POS",
+    "EFFECT",
+    "F-6",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "1830056",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Germany"
+  },
+  {
+   "name": "Smurfit Westrock plc",
+   "tickers": [
+    "SW"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "2650",
+   "sicDesc": "Paperboard Containers & Boxes",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "2005951",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "Sony Group Corp",
+   "tickers": [
+    "SONY",
+    "SNEJF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "M0",
+   "incorporationDesc": "Japan",
+   "sic": "3651",
+   "sicDesc": "Household Audio & Video Equipment",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "6-K",
+    "6-K",
+    "4"
+   ],
+   "cik": "313838",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Japan"
+  },
+  {
+   "name": "Spotify Technology S.A.",
+   "tickers": [
+    "SPOT"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "N4",
+   "incorporationDesc": "Luxembourg",
+   "sic": "4832",
+   "sicDesc": "Radio Broadcasting Stations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1639920",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Luxembourg"
+  },
+  {
+   "name": "Sprott Physical Silver Trust",
+   "tickers": [
+    "PSLV"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "6221",
+   "sicDesc": "Commodity Contracts Brokers & Dealers",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "40-F",
+    "SUPPL",
+    "F-X"
+   ],
+   "cik": "1494728",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "Stellantis N.V.",
+   "tickers": [
+    "STLA"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "3711",
+   "sicDesc": "Motor Vehicles & Passenger Car Bodies",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "424B5",
+    "FWP",
+    "424B5",
+    "144"
+   ],
+   "cik": "1605484",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "TECK RESOURCES LTD",
+   "tickers": [
+    "TECK",
+    "TCKRF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "A1",
+   "incorporationDesc": "British Columbia, Canada",
+   "sic": "1400",
+   "sicDesc": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G"
+   ],
+   "cik": "886986",
+   "chinaFlag": false,
+   "chinaFlagDesc": "British Columbia, Canada"
+  },
+  {
+   "name": "TELUS CORP",
+   "tickers": [
+    "TU"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A1",
+   "incorporationDesc": "British Columbia, Canada",
+   "sic": "4812",
+   "sicDesc": "Radiotelephone Communications",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "868675",
+   "chinaFlag": false,
+   "chinaFlagDesc": "British Columbia, Canada"
+  },
+  {
+   "name": "TEVA PHARMACEUTICAL INDUSTRIES LTD",
+   "tickers": [
+    "TEVA"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L3",
+   "incorporationDesc": "Israel",
+   "sic": "2834",
+   "sicDesc": "Pharmaceutical Preparations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "144",
+    "144",
+    "8-K"
+   ],
+   "cik": "818686",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Israel"
+  },
+  {
+   "name": "THOMSON REUTERS CORP /CAN/",
+   "tickers": [
+    "TRI",
+    "TMSOF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "2741",
+   "sicDesc": "Miscellaneous Publishing",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "SUPPL",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1075124",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "TORONTO DOMINION BANK",
+   "tickers": [
+    "TD",
+    "TDBCP"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "FWP",
+    "424B2",
+    "FWP",
+    "424B2",
+    "424B2"
+   ],
+   "cik": "947263",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "TOWER SEMICONDUCTOR LTD",
+   "tickers": [
+    "TSEM"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "L3",
+   "incorporationDesc": "Israel",
+   "sic": "3674",
+   "sicDesc": "Semiconductors & Related Devices",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "4",
+    "6-K"
+   ],
+   "cik": "928876",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Israel"
+  },
+  {
+   "name": "TOYOTA MOTOR CORP/",
+   "tickers": [
+    "TM",
+    "TOYOF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "M0",
+   "incorporationDesc": "Japan",
+   "sic": "3711",
+   "sicDesc": "Motor Vehicles & Passenger Car Bodies",
+   "businessCountry": null,
+   "filingsRecent": [
+    "SCHEDULE 13G/A",
+    "6-K",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1094517",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Japan"
+  },
+  {
+   "name": "TechnipFMC plc",
+   "tickers": [
+    "FTI"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "X0",
+   "incorporationDesc": "United Kingdom",
+   "sic": "3533",
+   "sicDesc": "Oil & Gas Field Machinery & Equipment",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "cik": "1681459",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United Kingdom"
+  },
+  {
+   "name": "Tencent Music Entertainment Group",
+   "tickers": [
+    "TME",
+    "TCMEF"
+   ],
+   "exchanges": [
+    "NYSE",
+    "OTC"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "4832",
+   "sicDesc": "Radio Broadcasting Stations",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "424B2",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1744676",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "Toromont Industries Ltd./ADR",
+   "tickers": [
+    "TMTNY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "Z4",
+   "incorporationDesc": "Canada (Federal Level)",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF"
+   ],
+   "cik": "2072098",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Canada (Federal Level)"
+  },
+  {
+   "name": "TotalEnergies SE",
+   "tickers": [
+    "TTE"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "I0",
+   "incorporationDesc": "France",
+   "sic": "1311",
+   "sicDesc": "Crude Petroleum & Natural Gas",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "6-K",
+    "4",
+    "4",
+    "6-K"
+   ],
+   "cik": "879764",
+   "chinaFlag": false,
+   "chinaFlagDesc": "France"
+  },
+  {
+   "name": "Tourmaline Oil Corp/ADR",
+   "tickers": [
+    "TRMOY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "A0",
+   "incorporationDesc": "Alberta, Canada",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF"
+   ],
+   "cik": "2071881",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Alberta, Canada"
+  },
+  {
+   "name": "Trane Technologies plc",
+   "tickers": [
+    "TT"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "3822",
+   "sicDesc": "Auto Controls For Regulating Residential & Comml Environments",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "144",
+    "144",
+    "10-Q"
+   ],
+   "cik": "1466258",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "Trip.com Group Ltd",
+   "tickers": [
+    "TCOM",
+    "TRPCF"
+   ],
+   "exchanges": [
+    "Nasdaq",
+    "OTC"
+   ],
+   "incorporation": "E9",
+   "incorporationDesc": "Cayman Islands",
+   "sic": "7389",
+   "sicDesc": "Services-Business Services, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "SCHEDULE 13G/A",
+    "6-K"
+   ],
+   "cik": "1269238",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Cayman Islands"
+  },
+  {
+   "name": "UBS Group AG",
+   "tickers": [
+    "UBS"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "V8",
+   "incorporationDesc": "Switzerland",
+   "sic": "6021",
+   "sicDesc": "National Commercial Banks",
+   "businessCountry": null,
+   "filingsRecent": [
+    "N-PX",
+    "6-K",
+    "13F-HR",
+    "SCHEDULE 13G",
+    "SCHEDULE 13G"
+   ],
+   "cik": "1610520",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Switzerland"
+  },
+  {
+   "name": "UNITED MICROELECTRONICS CORP",
+   "tickers": [
+    "UMC"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "F5",
+   "incorporationDesc": "Taiwan",
+   "sic": "3674",
+   "sicDesc": "Semiconductors & Related Devices",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "3",
+    "4",
+    "4",
+    "6-K"
+   ],
+   "cik": "1033767",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Taiwan"
+  },
+  {
+   "name": "Universal Music Group N.V./ADR",
+   "tickers": [
+    "UNVGY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6EF",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "1890126",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "Var Energi ASA/ADR",
+   "tickers": [
+    "VARRY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "Q8",
+   "incorporationDesc": "Norway",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "F-6EF",
+    "F-6EF",
+    "F-6EF",
+    "F-6EF"
+   ],
+   "cik": "1919275",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Norway"
+  },
+  {
+   "name": "Veralto Corp",
+   "tickers": [
+    "VLTO"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "X1",
+   "incorporationDesc": "United States",
+   "sic": "3825",
+   "sicDesc": "Instruments For Meas & Testing of  Electricity & Elec Signals",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "SCHEDULE 13G",
+    "4",
+    "SCHEDULE 13G/A"
+   ],
+   "cik": "1967680",
+   "chinaFlag": false,
+   "chinaFlagDesc": "United States"
+  },
+  {
+   "name": "Viking Holdings Ltd",
+   "tickers": [
+    "VIK"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "D0",
+   "incorporationDesc": "Bermuda",
+   "sic": "4400",
+   "sicDesc": "Water Transportation",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "144",
+    "6-K",
+    "144",
+    "6-K"
+   ],
+   "cik": "1745201",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Bermuda"
+  },
+  {
+   "name": "WILLIS TOWERS WATSON PLC",
+   "tickers": [
+    "WTW"
+   ],
+   "exchanges": [
+    "Nasdaq"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "6411",
+   "sicDesc": "Insurance Agents, Brokers & Service",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "4",
+    "SCHEDULE 13G/A",
+    "SCHEDULE 13G"
+   ],
+   "cik": "1140536",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  },
+  {
+   "name": "WOLTERS KLUWER N V /FI",
+   "tickers": [
+    "WTKWY"
+   ],
+   "exchanges": [
+    "OTC"
+   ],
+   "incorporation": "P7",
+   "incorporationDesc": "Netherlands",
+   "sic": "",
+   "sicDesc": "",
+   "businessCountry": null,
+   "filingsRecent": [
+    "D",
+    "D",
+    "D",
+    "D",
+    "SUPPL"
+   ],
+   "cik": "861967",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Netherlands"
+  },
+  {
+   "name": "WOORI FINANCIAL GROUP INC.",
+   "tickers": [
+    "WF"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "M5",
+   "incorporationDesc": "Korea, Republic of",
+   "sic": "6029",
+   "sicDesc": "Commercial Banks, NEC",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1264136",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Korea, Republic of"
+  },
+  {
+   "name": "Waste Connections, Inc.",
+   "tickers": [
+    "WCN"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "4953",
+   "sicDesc": "Refuse Systems",
+   "businessCountry": null,
+   "filingsRecent": [
+    "4",
+    "4",
+    "144",
+    "4",
+    "144"
+   ],
+   "cik": "1318220",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "Wheaton Precious Metals Corp.",
+   "tickers": [
+    "WPM"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "A6",
+   "incorporationDesc": "Ontario, Canada",
+   "sic": "1040",
+   "sicDesc": "Gold and Silver Ores",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "1323404",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ontario, Canada"
+  },
+  {
+   "name": "YPF SOCIEDAD ANONIMA",
+   "tickers": [
+    "YPF"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "C1",
+   "incorporationDesc": "Argentina",
+   "sic": "2911",
+   "sicDesc": "Petroleum Refining",
+   "businessCountry": null,
+   "filingsRecent": [
+    "6-K",
+    "3",
+    "6-K",
+    "6-K",
+    "6-K"
+   ],
+   "cik": "904851",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Argentina"
+  },
+  {
+   "name": "nVent Electric plc",
+   "tickers": [
+    "NVT"
+   ],
+   "exchanges": [
+    "NYSE"
+   ],
+   "incorporation": "L2",
+   "incorporationDesc": "Ireland",
+   "sic": "3550",
+   "sicDesc": "Special Industry Machinery (No Metalworking Machinery)",
+   "businessCountry": null,
+   "filingsRecent": [
+    "8-K",
+    "8-K",
+    "424B5",
+    "8-K",
+    "FWP"
+   ],
+   "cik": "1720635",
+   "chinaFlag": false,
+   "chinaFlagDesc": "Ireland"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "brand": "Webull",
+ "tier": "lca",
+ "lca": "WEBULL TECHNOLOGIES INC.",
+ "ts": "2026-09-27T02:21:40.785Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://ats.rippling.com/webull/jobs",
+  "platform": "custom",
+  "title": "Webull Jobs | Webull Financial",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

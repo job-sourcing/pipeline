@@ -1,0 +1,30 @@
+{
+ "brand": "Lumena",
+ "tier": "lca",
+ "lca": "LUMENA SYSTEMS, INC.",
+ "ts": "2026-09-27T01:59:37.308Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "lumena",
+   "spec": "ashby:lumena",
+   "title": " (0 jobs)",
+   "jobs": 0
+  }
+ ],
+ "best": {
+  "spec": "ashby:lumena",
+  "platform": "ashby",
+  "title": " (0 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": " (0 jobs)",
+  "brand": "Lumena",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}
