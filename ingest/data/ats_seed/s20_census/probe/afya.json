@@ -2,10 +2,153 @@
  "brand": "Afya",
  "tier": "lca",
  "lca": "AFYA GLOBAL, INC.",
- "ts": "2026-09-27T02:27:07.359Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:15:57.398Z",
+ "candidates": [
+  {
+   "url": "https://afyacareers.com/",
+   "title": "Home | Afya Careers",
+   "status": 200,
+   "bytes": 92469,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Afya Careers Connecting Healthcare Talent Usethis line to say something about what you do. Add useful informationthat your visitors may find interesting. Let yo",
+   "backend": "direct"
+  },
+  {
+   "url": "https://afya.care/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 36391,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "The AfyA Care Management Trainee Program is not just a job; it's an extensive training platform crafted to transform high-potential young talents into holistic ",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://afyacare.org/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 31453,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Our Team Join Our Team Careers at Afya. We're looking for passionate, community-driven professionals who believe that accessible, compassionate care change",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Home - Afya Careers",
+   "u": "https://afyacareers.com/",
+   "s": "Afya Careers Connecting Healthcare Talent Usethis line to say something about what you do. Add useful informationthat your visitors may find interesting. Let yo"
+  },
+  {
+   "t": "Careers - AfyA Care",
+   "u": "https://afya.care/careers/",
+   "s": "The AfyA Care Management Trainee Program is not just a job; it's an extensive training platform crafted to transform high-potential young talents into holistic "
+  },
+  {
+   "t": "Careers - Afya Care and Treatment Services",
+   "u": "https://afyacare.org/careers/",
+   "s": "Join Our Team Join Our Team Careers at Afya. We're looking for passionate, community-driven professionals who believe that accessible, compassionate care change"
+  },
+  {
+   "t": "Afya Carreiras | Home",
+   "u": "https://carreiras.afya.com.br/",
+   "s": "Por que escolher a Afya? Nossa essência é reconhecer as expectativas e necessidades das novas gerações e construir pontes entre as diversas visões de mundo, cul"
+  },
+  {
+   "t": "Healthcare Professionals - Afya Careers",
+   "u": "https://afyacareers.com/healthcareprofessionals",
+   "s": "Afya Careers Connecting Healthcare Talent Usethis line to say something about what you do. Add useful informationthat your visitors may find interesting. Let yo"
+  },
+  {
+   "t": "Careers at Afya Sacco │ Current Job Vacancies",
+   "u": "https://afyasacco.co.ke/vacancies/",
+   "s": "Explore careers at Afya Sacco. See current job vacancies and learn about our culture of integrity, innovation and growth at Kenya's Sacco for the health workfor"
+  },
+  {
+   "t": "Careers | Equity Afya",
+   "u": "https://equityafya.co.ke/careers/",
+   "s": "Equity Afya does not charge any fees for applications, interviews, or appointments at any stage of the recruitment process. Any request for payment related to r"
+  },
+  {
+   "t": "Afya: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/afyamedicina/jobs/",
+   "s": "Afya | 174,020 followers on LinkedIn. Transformar a saúde com educação e tecnologia | Afya is a leading medical education group in Brazil based on the number of"
+  },
+  {
+   "t": "Home - Afya Careers",
+   "u": "https://afyacareers.com/",
+   "s": "Afya Careers Connecting Healthcare Talent Usethis line to say something about what you do. Add useful informationthat your visitors may find interesting. Let yo"
+  },
+  {
+   "t": "Afya: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/afyamedicina/jobs/",
+   "s": "Afya | 174,020 followers on LinkedIn. Transformar a saúde com educação e tecnologia | Afya is a leading medical education group in Brazil based on the number of"
+  },
+  {
+   "t": "Afya Carreiras | Home",
+   "u": "https://carreiras.afya.com.br/",
+   "s": "Por que escolher a Afya? Nossa essência é reconhecer as expectativas e necessidades das novas gerações e construir pontes entre as diversas visões de mundo, cul"
+  },
+  {
+   "t": "Careers | Equity Afya",
+   "u": "https://equityafya.co.ke/careers/",
+   "s": "Equity Afya does not charge any fees for applications, interviews, or appointments at any stage of the recruitment process. Any request for payment related to r"
+  },
+  {
+   "t": "Careers — Access Afya",
+   "u": "https://www.accessafya.com/careers",
+   "s": "Join Access Afya Access Afya is building affordable, convenient and effective health access for everyone, all of the time. We run a chain of quality assured hea"
+  },
+  {
+   "t": "Careers at Afya Sacco │ Current Job Vacancies",
+   "u": "https://afyasacco.co.ke/vacancies/",
+   "s": "Explore careers at Afya Sacco. See current job vacancies and learn about our culture of integrity, innovation and growth at Kenya's Sacco for the health workfor"
+  },
+  {
+   "t": "Afya Carreiras",
+   "u": "https://talentos.afya.com.br/jobs",
+   "s": "Viva o melhor da medicina. Pedido do Titular | Política de Privacidade | Política de Cookies | Termos de Uso"
+  },
+  {
+   "t": "Afya",
+   "u": "https://afya.gupy.io/",
+   "s": "Faça parte do maior ecossistema de educação e soluções para prática médica do Brasil, candidate-se e venha trabalhar na Afya!"
+  },
+  {
+   "t": "Home - Afya Careers",
+   "u": "https://afyacareers.com/",
+   "s": "AfyaCareers was built to fix the gaps in healthcare hiring — slow processes, poor data, and limited access to qualified professionals. We focus on structured ta"
+  },
+  {
+   "t": "Careers at Afya Sacco │ Current Job Vacancies",
+   "u": "https://afyasacco.co.ke/vacancies/",
+   "s": "Explore careers at Afya Sacco. See current job vacancies and learn about our culture of integrity, innovation and growth at Kenya's Sacco for the health workfor"
+  },
+  {
+   "t": "Careers — Access Afya",
+   "u": "https://www.accessafya.com/careers",
+   "s": "Access Afya regularly puts together short to medium term internships and fellowships for brave people who work alongside our team for 1-3 months. Past projects "
+  },
+  {
+   "t": "Healthcare Professionals | Afya Careers",
+   "u": "https://afyacareers.com/healthcareprofessionals",
+   "s": "Afya Careers Connecting Healthcare Talent Usethis line to say something about what you do. Add useful informationthat your visitors may find interesting. Let yo"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://afyacareers.com/",
+  "platform": "custom",
+  "title": "Home | Afya Careers"
+ },
+ "verdict": "custom_surface"
 }

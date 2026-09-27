@@ -2,10 +2,148 @@
  "brand": "Sieyuan Electric",
  "tier": "lca",
  "lca": "SIEYUAN ELECTRIC USA, LLC",
- "ts": "2026-09-27T02:25:34.928Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:13:23.337Z",
+ "candidates": [
+  {
+   "url": "https://teamedupchina.com/job/power-electronics-engineer-power-supply-sieyuan-electric-shanghai/",
+   "title": "",
+   "status": 200,
+   "bytes": 49783,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "This role is responsible for ensuring the safety and integrity of network connections for a technology services company. The position requires 1-3 years of expe",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.georjob.com/companies/sieyuan-s-ojftjnidkitskudjbqkqjrkphcffwi",
+   "title": "Sieyuan(S)",
+   "status": 200,
+   "bytes": 234553,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Sieyuan Electric Co., Ltd. is a manufacturer of electrical equipment with 50 years of manufacturing experience，specialized in R&D of electric power technology, ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://en.sieyuan.com/join",
+   "title": "",
+   "status": 200,
+   "bytes": 21721,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Join Sieyuan Electric — open roles in R&D, manufacturing, engineering and sales, with a people-oriented culture and global development opportunities.",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers & Job Opportunities | Sieyuan Electric",
+   "u": "https://en.sieyuan.com/join",
+   "s": "Join Sieyuan Electric — open roles in R&D, manufacturing, engineering and sales, with a people-oriented culture and global development opportunities."
+  },
+  {
+   "t": "Career | Sieyuan Electric",
+   "u": "https://www.soulscent480.com/join",
+   "s": "Sieyuan Electric is a global power equipment manufacturer with over 30 years of expertise in delivering reliable, high-quality power solutions across the world."
+  },
+  {
+   "t": "加入思源 - sieyuan.com",
+   "u": "https://www.sieyuan.com/join",
+   "s": "加入思源 工作在 Sieyuan 我们秉承\"以人为本，创新为魂\"的企业理念，致力于打造一个充满活力、开放包容的工作环境。 思源电气集团视人才为企业最宝贵的财富，倡导团队合作与个人成长并重，为每一位员工提供广阔的发展平台和无限的职业机会。"
+  },
+  {
+   "t": "Sieyuan+electric Jobs in United States (11,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sieyuan%2Belectric-jobs",
+   "s": "Today's top 11,000+ Sieyuan+electric jobs in United States. Leverage your professional network, and get hired. New Sieyuan+electric jobs added daily."
+  },
+  {
+   "t": "Sieyuan Electric USA LLC hiring Electrical Engineer in ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/4441168027/",
+   "s": "Career Electrical Engineer Electrical Engineer Multiple openings | Global locations | 2026-03-01 — 2099-01-01 Job Description: Engaged in Research and Developme"
+  },
+  {
+   "t": "电气工程师 - sieyuan.com",
+   "u": "https://www.sieyuan.com/join/7",
+   "s": "思源电气股份有限公司是一家专业从事电力技术研发、设备制造、工程服务的上市公司（股票代码002028）。"
+  },
+  {
+   "t": "Sieyuan Electric Co.,Ltd. - Welcome Guide",
+   "u": "https://welcome.informaengage.com/sponsorships-2026/sieyuan-electric-co-ltd/",
+   "s": "Sieyuan Electric Co.,Ltd. - Welcome Guide ixengage"
+  },
+  {
+   "t": "Sieyuan Electric Co.,Ltd | Salaries, Culture & Jobs - SalaryGuide",
+   "u": "https://salaryguide.com/companies/sieyuan-electric-coltd",
+   "s": "Learn about working at Sieyuan Electric Co.,Ltd. 5001-10000 · Based in CHN. View salaries, reviews, job openings, and company culture insights."
+  },
+  {
+   "t": "Careers & Job Opportunities | Sieyuan Electric",
+   "u": "https://en.sieyuan.com/join",
+   "s": "Join Sieyuan Electric — open roles in R&D, manufacturing, engineering and sales, with a people-oriented culture and global development opportunities."
+  },
+  {
+   "t": "Electrical Engineer | Sieyuan Electric",
+   "u": "https://en.sieyuan.com/join/9",
+   "s": "Sieyuan Electric is a global power equipment manufacturer with over 30 years of expertise in delivering reliable, high-quality power solutions across the world."
+  },
+  {
+   "t": "加入思源 - sieyuan.com",
+   "u": "https://www.sieyuan.com/join",
+   "s": "加入思源 工作在 Sieyuan 我们秉承\"以人为本，创新为魂\"的企业理念，致力于打造一个充满活力、开放包容的工作环境。 思源电气集团视人才为企业最宝贵的财富，倡导团队合作与个人成长并重，为每一位员工提供广阔的发展平台和无限的职业机会。"
+  },
+  {
+   "t": "Field Services Engineer at Sieyuan Electric USA LLC - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/field-services-engineer-at-sieyuan-electric-usa-llc-4458332352",
+   "s": "Apply for Field Services Engineer at Sieyuan Electric USA LLC in United States. Full-time Entry level role. See responsibilities, qualifications, and similar jo"
+  },
+  {
+   "t": "Sieyuan Electric USA LLC hiring Field Service Engineer ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/field-service-engineer-%E5%94%AE%E5%90%8E%E6%9C%8D%E5%8A%A1%E5%B7%A5%E7%A8%8B%E5%B8%88-remote-anywhere-in-the-us-at-sieyuan-electric-usa-llc-4452426478",
+   "s": "Sieyuan Electric (established in 1993) is a world-renowned, publicly listed leader in electric power technology, advanced equipment manufacturing, and EPC engin"
+  },
+  {
+   "t": "Power Electronics Engineer (Power Supply) at Sieyuan Electric (思源电气) -",
+   "u": "https://teamedupchina.com/job/power-electronics-engineer-power-supply-sieyuan-electric-shanghai/",
+   "s": "This role is responsible for ensuring the safety and integrity of network connections for a technology services company. The position requires 1-3 years of expe"
+  },
+  {
+   "t": "Sieyuan Electric Co.,Ltd - LinkedIn",
+   "u": "https://ca.linkedin.com/company/sieyuan",
+   "s": "Sieyuan Electric Co., Ltd. (hereinafter referred to as \"Sieyuan Electric \"), established in December 1993, is a well-know listed company in China specialized in"
+  },
+  {
+   "t": "电气工程师 - sieyuan.com",
+   "u": "https://www.sieyuan.com/join/7",
+   "s": "思源电气股份有限公司是一家专业从事电力技术研发、设备制造、工程服务的上市公司（股票代码002028）。"
+  },
+  {
+   "t": "Careers & Job Opportunities | Sieyuan Electric",
+   "u": "https://en.sieyuan.com/join",
+   "s": "Join Sieyuan Electric — open roles in R&D, manufacturing, engineering and sales, with a people-oriented culture and global development opportunities."
+  },
+  {
+   "t": "Electrical Engineer | Sieyuan Electric",
+   "u": "https://en.sieyuan.com/join/9",
+   "s": "Job Description: Engaged in Research and Development, Algorithm Design, System/Circuit Design, Testing, and Structural Design within the fields of power system "
+  },
+  {
+   "t": "加入思源 - sieyuan.com",
+   "u": "https://www.sieyuan.com/join",
+   "s": "加入思源 工作在 Sieyuan 我们秉承\"以人为本，创新为魂\"的企业理念，致力于打造一个充满活力、开放包容的工作环境。 思源电气集团视人才为企业最宝贵的财富，倡导团队合作与个人成长并重，为每一位员工提供广阔的发展平台和无限的职业机会。"
+  },
+  {
+   "t": "Field Services Engineer at Sieyuan Electric USA LLC - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/field-services-engineer-at-sieyuan-electric-usa-llc-4458332352",
+   "s": "Apply for Field Services Engineer at Sieyuan Electric USA LLC in United States. Full-time Entry level role. See responsibilities, qualifications, and similar jo"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

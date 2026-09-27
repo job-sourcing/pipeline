@@ -2,10 +2,157 @@
  "brand": "COFCO Group",
  "tier": "lca",
  "lca": "COFCO INTERNATIONAL GRAINS US LLC",
- "ts": "2026-09-27T02:11:26.331Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:03:10.858Z",
+ "candidates": [
+  {
+   "url": "https://www.cofcointernational.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 17823,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Your career with COFCO International Longing to be part of something bigger? Would you like to work on some of the world's most pressing issues? Consider COFCO ",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://careers.cofcointernational.com/?company=cofcointl",
+   "title": "",
+   "status": 200,
+   "bytes": 86625,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Your career with COFCO International Longing to be part of something bigger? Would you like to work on some of the world's most pressing issues? Consider COFCO ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.cofcointernational.com/job/Singapore-Freight-Trading-Assistant-Sing/1365696657/",
+   "title": "Freight Trading Assistant Job Details | COFCO International",
+   "status": 200,
+   "bytes": 90266,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Singapore Freight Trading Assistant - Sing COFCO International is a global agri-business with a clear vision, strong values and a positive culture, focused on b",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - COFCO International",
+   "u": "https://www.cofcointernational.com/careers/",
+   "s": "Your career with COFCO International Longing to be part of something bigger? Would you like to work on some of the world's most pressing issues? Consider COFCO "
+  },
+  {
+   "t": "COFCO International",
+   "u": "https://careers.cofcointernational.com/?company=cofcointl",
+   "s": "Your career with COFCO International Longing to be part of something bigger? Would you like to work on some of the world's most pressing issues? Consider COFCO "
+  },
+  {
+   "t": "COFCO International: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/cofco/jobs",
+   "s": "COFCO International | 408,914 followers on LinkedIn. We provide the food the world needs in a responsible way. | COFCO International is a global agri-business w"
+  },
+  {
+   "t": "COFCO International: Jobs | LinkedIn",
+   "u": "https://sg.linkedin.com/company/cofco/jobs",
+   "s": "COFCO International | 406,378 followers on LinkedIn. We provide the food the world needs in a responsible way. | COFCO International is a global agri-business w"
+  },
+  {
+   "t": "Freight Trading Assistant Job Details | COFCO International",
+   "u": "https://careers.cofcointernational.com/job/Singapore-Freight-Trading-Assistant-Sing/1365696657/",
+   "s": "Singapore Freight Trading Assistant - Sing COFCO International is a global agri-business with a clear vision, strong values and a positive culture, focused on b"
+  },
+  {
+   "t": "Cofco International Jobs in Worldwide (84 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/cofco-international-jobs-worldwide",
+   "s": "Today's top 84 Cofco International jobs in Worldwide. Leverage your professional network, and get hired. New Cofco International jobs added daily."
+  },
+  {
+   "t": "6 Cofco International Singapore Pte. Ltd. jobs in Singapore",
+   "u": "https://sg.jobstreet.com/Cofco-International-Singapore-Pte.-Ltd.-jobs",
+   "s": "Find your ideal job at Jobstreet with 6 Cofco International Singapore Pte. Ltd. jobs found in Singapore. View all our Cofco International Singapore Pte. Ltd. va"
+  },
+  {
+   "t": "COFCO Corporation",
+   "u": "https://www.cofco.com/en/",
+   "s": "COFCO International Strengthens Sustainability Performance with EcoVadis Silver Rating 2026-09-17 COFCO International has been awarded a Group-level Silver Meda"
+  },
+  {
+   "t": "Careers - COFCO International",
+   "u": "https://www.cofcointernational.com/careers/",
+   "s": "Your career with COFCO International Longing to be part of something bigger? Would you like to work on some of the world's most pressing issues? Consider COFCO "
+  },
+  {
+   "t": "COFCO International",
+   "u": "https://careers.cofcointernational.com/",
+   "s": "Longing to be part of something bigger? Would you like to work on some of the world's most pressing issues? Consider COFCO International. We supply grains, oils"
+  },
+  {
+   "t": "Freight Trading Assistant Job Details | COFCO International",
+   "u": "https://careers.cofcointernational.com/job/Singapore-Freight-Trading-Assistant-Sing/1365696657/",
+   "s": "Singapore Freight Trading Assistant - Sing COFCO International is a global agri-business with a clear vision, strong values and a positive culture, focused on b"
+  },
+  {
+   "t": "6 Cofco International Singapore Pte. Ltd. jobs in Singapore",
+   "u": "https://sg.jobstreet.com/Cofco-International-Singapore-Pte.-Ltd.-jobs",
+   "s": "Find your ideal job at Jobstreet with 6 Cofco International Singapore Pte. Ltd. jobs found in Singapore. View all our Cofco International Singapore Pte. Ltd. va"
+  },
+  {
+   "t": "COFCO Futures Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/COFCO-Futures-jobs",
+   "s": "Find your ideal job on Jobstreet with 3 COFCO Futures jobs (3 at COFCO Futures) listed in Singapore. View all the COFCO Futures vacancies now with new jobs adde"
+  },
+  {
+   "t": "COFCO INTERNATIONAL SINGAPORE PTE. LTD. hiring Execution ... - LinkedIn",
+   "u": "https://sg.linkedin.com/jobs/view/execution-executive-at-cofco-international-singapore-pte-ltd-4468097955",
+   "s": "Job Purpose Execute operations activities for both physical sugar trades for the COFCO INTL Sugar business. Includes the full execution of all aspects of contra"
+  },
+  {
+   "t": "COFCO International: Jobs | LinkedIn",
+   "u": "https://sg.linkedin.com/company/cofco/jobs",
+   "s": "COFCO International | 406,378 followers on LinkedIn. We provide the food the world needs in a responsible way. | COFCO International is a global agri-business w"
+  },
+  {
+   "t": "Commercial Graduate Programme - Careers- COFCO International",
+   "u": "https://www.cofcointernational.com/careers/commercial-graduate-programme/",
+   "s": "We are a major global agri-business with a clear vision: to be a world leader in providing the food the world needs in a responsible way. In this crucial role, "
+  },
+  {
+   "t": "Careers - COFCO International",
+   "u": "https://www.cofcointernational.com/careers/",
+   "s": "Your career with COFCO International Longing to be part of something bigger? Would you like to work on some of the world's most pressing issues? Consider COFCO "
+  },
+  {
+   "t": "COFCO International",
+   "u": "https://careers.cofcointernational.com/job/",
+   "s": "Your career with COFCO International Longing to be part of something bigger? Would you like to work on some of the world's most pressing issues? Consider COFCO "
+  },
+  {
+   "t": "COFCO International: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/cofco/jobs",
+   "s": "COFCO International Food and Beverage Manufacturing Chêne-Bougeries, Geneva 408,914 followers We provide the food the world needs in a responsible way."
+  },
+  {
+   "t": "Cofco International Jobs in Worldwide (84 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/cofco-international-jobs-worldwide",
+   "s": "Today's top 84 Cofco International jobs in Worldwide. Leverage your professional network, and get hired. New Cofco International jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.cofcointernational.com/?company=cofcointl",
+  "platform": "successfactors",
+  "title": ""
+ },
+ "verdict": "marker_surface"
 }

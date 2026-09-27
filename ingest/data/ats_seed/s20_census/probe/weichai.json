@@ -2,65 +2,155 @@
  "brand": "Weichai",
  "tier": "lca",
  "lca": "WEICHAI AMERICA CORP.",
- "ts": "2026-09-27T02:04:39.721Z",
- "candidates": [],
+ "ts": "2026-09-27T07:56:20.084Z",
+ "candidates": [
+  {
+   "url": "https://weichai.co.id/career/",
+   "title": "Career - Weichai",
+   "status": 200,
+   "bytes": 255302,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Ready to power up your career with Weichai? Join a dynamic team where innovation meets excellence. Explore exciting career opportunities from Weichai Indonesia.",
+   "backend": "supabase"
+  },
+  {
+   "url": "http://www.weichaiamerica.com/careers.html",
+   "title": "Engineering &amp; Manufacturing Jobs | Weichai America Careers",
+   "status": 200,
+   "bytes": 22371,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore career opportunities at Weichai America in engineering, manufacturing and support roles. Build your future with a global power solutions leader.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://en.weichai.com/group/weichai/en/about-us/human-resources/index.html",
+   "title": "Careers-Weichai Official",
+   "status": 200,
+   "bytes": 126723,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Establish a talent channel for vertical development and horizontal flow: A dual-channel career development path has been built to encourage employees to indepen",
+   "backend": "direct"
+  }
+ ],
  "results": [
   {
-   "t": "SEM676D Wheel Loader-Updated | PDF",
-   "u": "https://www.scribd.com",
-   "s": "Join our team ! Contact us Support Help / FAQ. Get our free apps Scribd"
+   "t": "Careers-Weichai Official",
+   "u": "https://en.weichai.com/group/weichai/en/about-us/human-resources/index.html",
+   "s": "Establish a talent channel for vertical development and horizontal flow: A dual-channel career development path has been built to encourage employees to indepen"
   },
   {
-   "t": "Zc Used Construction Tom",
-   "u": "https://www.tiktok.com",
-   "s": "6 days ago — Now our Site Supervisor and Fixed Plant Supervisor, a range of roles across the site. Engine: Cummins + Weichai engine. Contact us for details!"
+   "t": "Careers - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/",
+   "s": "Weichai always adheres to the operating strategy of using both product management and capital operation as the driving force, and constantly enhances its produc"
   },
   {
-   "t": "UCC 2024 ZOOMLION ZTC2000V8-1 200Ton Heavy Lift",
-   "u": "https://www.usedmachineryclub.com",
-   "s": "88 meters> Jib: 17.5 meters (2 sections) Counterweight: 60 tons. Golden power combination: Cummins + Weichai engine. + ... Status of Job - Main Performance. Rea"
+   "t": "Join US - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/join/",
+   "s": "Weichai Power exemplifies its corporate social responsibility, actively practices green, low-carbon and high-quality development, and leads the equipment manufa"
   },
   {
-   "t": "Generator Set Sales Specialist - Tashkent, Uzbekistan",
-   "u": "https://uz.linkedin.com",
-   "s": "Sep 15, 2026 — We are looking for an experienced Generator Set Sales Specialist based in Uzbekistan to develop our tender-focused sales business in the energy ."
+   "t": "Career - Weichai",
+   "u": "https://weichai.co.id/career/",
+   "s": "Ready to power up your career with Weichai? Join a dynamic team where innovation meets excellence. Explore exciting career opportunities from Weichai Indonesia."
   },
   {
-   "t": "50 Combustion Jobs & Work in Gages Lake, IL",
-   "u": "https://www.indeed.com",
-   "s": "Browse 50 Combustion jobs in Gages Lake, IL . Mechanic- Full-Time - $27/HR. Generator Field Service Technician Easily apply Weichai America Corp. $38 - $48 an ."
+   "t": "Weichai Official",
+   "u": "https://en.weichai.com/",
+   "s": "Founded in 1946, Weichai Holding Group Co., Ltd. has developed into a leading multinational industrial equipment group in China with significant global influenc"
   },
   {
-   "t": "$55k-$125k Field Service Engineer Jobs in Crystal Lake, IL",
-   "u": "https://www.ziprecruiter.com",
-   "s": "Browse 1000+ CRYSTAL LAKE, IL FIELD SERVICE ENGINEER jobs ($55k-$125k) hiring now. New openings daily. Apply early, get seen first & 1-click ..."
+   "t": "Engineering & Manufacturing Jobs | Weichai America Careers",
+   "u": "http://www.weichaiamerica.com/careers.html",
+   "s": "Explore career opportunities at Weichai America in engineering, manufacturing and support roles. Build your future with a global power solutions leader."
   },
   {
-   "t": "Data Centre Diesel Generator Applications Engineer",
-   "u": "https://my.trabajo.org",
-   "s": "WEICHAI SINGAPORE PTE LTD is seeking an Assistant Application Engineer specializing in diesel power generators to support data centre and power projects in ..."
+   "t": "Weichai Group: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/weichai_group/jobs",
+   "s": "Founded in 1946, Weichai Holding Group Co., Ltd. is the core subsidiary of Shandong Heavy Industry Group Co., Ltd. It has developed into a leading multinational"
   },
   {
-   "t": "Fresher B2B Sales Executive (Weichai Diesel Generators)",
-   "u": "https://theugandanjobline.com",
-   "s": "Over 28 years old-male . · Diploma or above is required. · Minimum 2 years of B2B sales experience. · Experience in construction machinery or generator sales is"
+   "t": "Weichai offiziell",
+   "u": "https://de.weichai.com/",
+   "s": "Sechs große nationale Innovationsplattformen, zehn große Innovationszentren in Übersee. Eigenständige Innovation + offene Innovation + handwerkliche Innovation "
   },
   {
-   "t": "Weichai Lovol Hiring Intelligence — Skills, Tools & Roles",
-   "u": "https://talantir.ai",
-   "s": "Hiring pattern analysis is pending . We analyze job listings periodically to summarize tech stack, compliance focus, and hiring trends. Top Demanded Skills."
+   "t": "Careers-Weichai Official",
+   "u": "https://en.weichai.com/group/weichai/en/about-us/human-resources/index.html",
+   "s": "Founded in 1946, Weichai Holding Group Co., Ltd. has developed into a leading multinational industrial equipment group in China with significant global influenc"
   },
   {
-   "t": "Starting its independent status LHY Powertrain plans to invest",
-   "u": "https://lhy.com",
-   "s": "Jan 8, 2013 — ... Career · Graduates and experienced professionals · Students · Apprentices · Company · About LHY Powertrain · History · Quality & Environment ."
+   "t": "Engineering & Manufacturing Jobs | Weichai America Careers",
+   "u": "http://www.weichaiamerica.com/careers.html",
+   "s": "Explore career opportunities at Weichai America in engineering, manufacturing and support roles. Build your future with a global power solutions leader."
   },
   {
-   "t": "Weichai Power Products S&S (M) Sdn Bhd",
-   "u": "https://www.maukerja.my",
-   "s": "Learn about Weichai Power Products S&S (M) Sdn Bhd's overview, benefits, and job vacancies . Explore work environment, employee ratings, and find office ..."
+   "t": "Careers - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/",
+   "s": "Weichai always adheres to the operating strategy of using both product management and capital operation as the driving force, and constantly enhances its produc"
+  },
+  {
+   "t": "Join US - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/join/",
+   "s": "Weichai Power Co., Ltd. was founded in 2002 by Weichai Holding Group Co., Ltd. as the main initiator and jointly established by domestic and foreign investors. "
+  },
+  {
+   "t": "Weichai America Jobs in United States (4 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/weichai-america-jobs",
+   "s": "Today's top 4 Weichai America jobs in United States. Leverage your professional network, and get hired. New Weichai America jobs added daily."
+  },
+  {
+   "t": "Weichai Group: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/weichai_group/jobs",
+   "s": "Weichai Group | 41,544 followers on LinkedIn. Founded in 1946, Weichai Holding Group Co., Ltd. is the core subsidiary of Shandong Heavy Industry Group Co., Ltd."
+  },
+  {
+   "t": "Weichai Official",
+   "u": "https://en.weichai.com/",
+   "s": "Founded in 1946, Weichai Holding Group Co., Ltd. has developed into a leading multinational industrial equipment group in China with significant global influenc"
+  },
+  {
+   "t": "潍柴集团招聘 - zhiye.com",
+   "u": "https://weichai.zhiye.com/custom/index",
+   "s": "潍柴动力招聘官网，提供最新的职位信息和申请渠道。"
+  },
+  {
+   "t": "Careers-Weichai Official",
+   "u": "https://en.weichai.com/group/weichai/en/about-us/human-resources/index.html",
+   "s": "Full-career cycle development plan: Focusing on strategic transformation and business development, implement the talent pipeline construction projects of \"Leadi"
+  },
+  {
+   "t": "Engineering & Manufacturing Jobs | Weichai America Careers",
+   "u": "http://www.weichaiamerica.com/careers.html",
+   "s": "Explore career opportunities at Weichai America in engineering, manufacturing and support roles. Build your future with a global power solutions leader."
+  },
+  {
+   "t": "Careers-Weichai Official",
+   "u": "https://en-product.weichai.com/group/weichai/en/about-us/human-resources/index.html",
+   "s": "Founded in 1946, Weichai Holding Group Co., Ltd. has developed into a leading multinational industrial equipment group in China with significant global influenc"
+  },
+  {
+   "t": "Careers - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/",
+   "s": "Weichai always adheres to the operating strategy of using both product management and capital operation as the driving force, and constantly enhances its produc"
   }
  ],
  "dict_hits": [],
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "http://www.weichaiamerica.com/careers.html",
+  "platform": "adp",
+  "title": "Engineering &amp; Manufacturing Jobs | Weichai America Careers"
+ },
+ "verdict": "marker_surface"
 }

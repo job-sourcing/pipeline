@@ -2,10 +2,153 @@
  "brand": "Deli",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:11:40.023Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:24:50.015Z",
+ "candidates": [
+  {
+   "url": "https://www.deliworld.com/career.html",
+   "title": "Career - Deli Group Co., Ltd.",
+   "status": 200,
+   "bytes": 147758,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Through mutual respect and a shared vision, our teams can build products for our customers that reflect our values and our incredible employees. To explore more",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.stepstone.de/jobs/deli",
+   "title": "",
+   "status": 200,
+   "bytes": 39073,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Deli Jobs in Deutschland - Finden Sie passende Deli Stellenangebote mit Stepstone!",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.deliburgers.de/jobs/dein-delijob/",
+   "title": "Dein DeliJob bei DeliBurgers | DeliBurgers",
+   "status": 200,
+   "bytes": 120436,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Du startest mit einer Einarbeitungsphase, während derer du vom Spüldiplom zum Pattydiplom alle Stufen durchläufst und kennenlernst. Wir fördern Talente und helf",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Career - Deli Group Co., Ltd.",
+   "u": "https://www.deliworld.com/career.html",
+   "s": "Through mutual respect and a shared vision, our teams can build products for our customers that reflect our values and our incredible employees. To explore more"
+  },
+  {
+   "t": "Deli Jobs und Stellenangebote - 2026 - StepStone",
+   "u": "https://www.stepstone.de/jobs/deli",
+   "s": "Deli Jobs in Deutschland - Finden Sie passende Deli Stellenangebote mit Stepstone!"
+  },
+  {
+   "t": "Career - Elaine's World",
+   "u": "https://elaines.world/career/",
+   "s": "Wir suchen einen Operation Manager (Betriebsleiter) der unser Team ab sofort in Vollzeit verstärkt. Du bist der Dirigent eines reibungslosen gastronomischen Erl"
+  },
+  {
+   "t": "Dein DeliJob bei DeliBurgers | DeliBurgers",
+   "u": "https://www.deliburgers.de/jobs/dein-delijob/",
+   "s": "Du startest mit einer Einarbeitungsphase, während derer du vom Spüldiplom zum Pattydiplom alle Stufen durchläufst und kennenlernst. Wir fördern Talente und helf"
+  },
+  {
+   "t": "Willkommen auf unserer Karriereseite - KellyDeli",
+   "u": "https://careers.kellydeli.com/de",
+   "s": "Arbeiten Sie bereits bei KellyDeli? Helfen Sie uns, Ihre neuen Kollegen zu finden!"
+  },
+  {
+   "t": "Jobs bei JOMI - Werde Teil unseres Teams | JOMI Deli Stuttgart",
+   "u": "https://jomi-deli.de/jobs",
+   "s": "Du hast Lust auf einen modernen Gastrojob, bei dem du mitgestalten und wachsen kannst? Wir sind ein kleines, familiäres Team und arbeiten mit viel Erfahrung, Le"
+  },
+  {
+   "t": "Deli Jobs | Jetzt 100 offene Stellen finden | Indeed",
+   "u": "https://de.indeed.com/q-deli-jobs.html?vjk=f212d67b963ee3e8",
+   "s": "Finden Sie jetzt 118 zu besetzende Deli Jobs auf Indeed.com, der weltweiten Nr. 1 der Online-Jobbörsen. (Basierend auf Total Visits weltweit, Quelle: comScore)"
+  },
+  {
+   "t": "Karriere bei Pets Deli -",
+   "u": "https://www.petsdeli.de/pages/karriere",
+   "s": "Bei uns bekommst du Zugang zu internen Lernangeboten, persönlicher Weiterentwicklung und individueller Karrierebegleitung."
+  },
+  {
+   "t": "Équipes en magasin ! - Delitraiteur",
+   "u": "https://delitraiteur.com/equipes-en-magasin/",
+   "s": "Faites partie de nos équipes! Fonctions vacantes Trouvez un poste dans le Deli plus proche de chez vous !"
+  },
+  {
+   "t": "We're Hiring at Deli Seoul",
+   "u": "https://deliseoulfood.com/careers",
+   "s": "Fill out this quick form with your resume and a few sentences about yourself. Upload a PDF resume.Either a comment or an attachment is required."
+  },
+  {
+   "t": "Collaborateur polyvalent (30h/sem) - Delitraiteur",
+   "u": "https://delitraiteur.com/jobs/collaborateur-polyvalent-2/",
+   "s": "Vous appréciez le contact avec les clients, les responsabilités et le travail varié. Vous êtes polyvalent et aimez travailler en équipe. Vous êtes passionné par"
+  },
+  {
+   "t": "Career - Deli Group Co., Ltd.",
+   "u": "https://www.deliworld.com/career.html",
+   "s": "We've assembled a diverse team of creative minds from around the world and fostered an inclusive and collaborative work environment. Through mutual respect and "
+  },
+  {
+   "t": "Nous rejoindre - Nos offres | Délifrance",
+   "u": "https://www.delifrance.com/fr/nous-rejoindre",
+   "s": "Depuis plus de 30 ans, Délifrance propose des solutions en boulangerie, viennoiserie, pâtisserie et traiteur aux acteurs de la restauration hors domicile, de la"
+  },
+  {
+   "t": "Travailler chez DeliBarn | Rejoignez une équipe passionnée par le métier",
+   "u": "https://delibarn.com/fr/jobs-intro",
+   "s": "Vous cherchez un emploi avec un réel impact ? Chez DeliBarn, développez vos compétences, travaillez avec des produits dont vous êtes fier, et rejoignez 1 200 co"
+  },
+  {
+   "t": "Offres d'emploi | Restauration & Métiers en restaurant - Del Arte",
+   "u": "https://carrieres.delarte.fr/jobs",
+   "s": "Découvrez toutes les offres d'emploi Del Arte : service, cuisine, management. Rejoignez une équipe conviviale et évoluez dans la restauration italienne."
+  },
+  {
+   "t": "23,000 Deli Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Deli-jobs.html",
+   "s": "Browse 23,110 Deli jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Career - Deli Group Co., Ltd.",
+   "u": "https://www.deliworld.com/career.html",
+   "s": "Job Responsibilities: 1. Channel construction: research the market, develop new channels and customers, and improve the sales network; 2. Product development: R"
+  },
+  {
+   "t": "23,000 Deli Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Deli-jobs.html",
+   "s": "Browse 23,110 Deli jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Career Opportunities - DFI Retail Group",
+   "u": "https://www.dfiretailgroup.com/en/careers-at-dfi/career-opportunities/",
+   "s": "DFI has a broad and exciting range of careers spread across its operations throughout Asia. To find out more and take the first step towards joining our rapidly"
+  },
+  {
+   "t": "Jason's Deli Careers - Talentreef",
+   "u": "https://apply.jobappnetwork.com/jasons-deli/en",
+   "s": "This site contains positions at both Jason's Deli Corporate locations and positions at franchised Jason's Deli locations, for which the specific franchisee is t"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.deliworld.com/career.html",
+  "platform": "custom",
+  "title": "Career - Deli Group Co., Ltd."
+ },
+ "verdict": "custom_surface"
 }

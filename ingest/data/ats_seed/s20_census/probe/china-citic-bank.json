@@ -2,10 +2,164 @@
  "brand": "China CITIC Bank",
  "tier": "lca",
  "lca": "CHINA CITIC BANK INTERNATIONAL LIMITED",
- "ts": "2026-09-27T02:12:26.396Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:43:59.432Z",
+ "candidates": [
+  {
+   "url": "https://cncbinternational.wd3.myworkdayjobs.com/CNCBIExternalCareerSite",
+   "title": "",
+   "status": 200,
+   "bytes": 8151,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:CNCBIExternalCareerSite",
+   "score": 12,
+   "snippet": "China CITIC Bank International's footprint includes 21 branches, two business banking centres and one private banking centre in Hong Kong, as well as branches i",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.efinancialcareers.hk/companies/China_CITIC_Bank_International_Limited-vj413ip9ilxkXKTH",
+   "title": "",
+   "status": 200,
+   "bytes": 5128,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find the latest Information about China CITIC Bank International Limited company culture and benefits. Apply to China CITIC Bank International Limited jobs onli",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://job.citicbank.com/",
+   "title": "中信银行招聘官网",
+   "status": 200,
+   "bytes": 134000,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "您好!感谢您对中信银行的关注!中信银行招聘网站（https://job.citicbank.com）为中信银行各单位校园招聘、社会招聘和实习生 ...",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/en/index.jsp",
+   "s": "Search and apply for jobs Our current vacancies in and beyond Hong Kong from trainee to management level."
+  },
+  {
+   "t": "Careers: How To Join Us — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/how-to-join-us/en/index.jsp",
+   "s": "To apply for a job at China CITIC Bank International, you need to create your own user account and profile with an email address and a password. A valid email a"
+  },
+  {
+   "t": "Careers | China Citic Bank",
+   "u": "https://www.encitcn.com/en/our-career.html",
+   "s": "Opportunities with Europe's leading bank Everyone who works at China Citic Bank works in partnership with their colleagues, lending support and encouragement wh"
+  },
+  {
+   "t": "Careers — 中信銀行 (國際) - China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/tc/index.jsp",
+   "s": "開創理想前程 中信銀行 (國際)為優秀的人才提供理想事業發展機會，請即申請加入成為我們的一份子。"
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://cncbinternational.wd3.myworkdayjobs.com/CNCBIExternalCareerSite",
+   "s": "China CITIC Bank International's footprint includes 21 branches, two business banking centres and one private banking centre in Hong Kong, as well as branches i"
+  },
+  {
+   "t": "Careers — 中信银行 (国际) - China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/sc/index.jsp",
+   "s": "开创理想前程 中信银行 (国际)为优秀的人才提供理想事业发展机会，请即申请加入成为我们的一份子。"
+  },
+  {
+   "t": "China CITIC Bank International",
+   "u": "https://m.cncbinternational.com/careers/en/index.jsp",
+   "s": "Based in Hong Kong, with branches in key locations in the US and expanding across Asia and beyond, China CITIC Bank International is the ideal partner for your "
+  },
+  {
+   "t": "Careers at China CITIC Bank International Limited - eFinancialCareers",
+   "u": "https://www.efinancialcareers.hk/companies/China_CITIC_Bank_International_Limited-vj413ip9ilxkXKTH",
+   "s": "Find the latest Information about China CITIC Bank International Limited company culture and benefits. Apply to China CITIC Bank International Limited jobs onli"
+  },
+  {
+   "t": "Careers — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/en/index.jsp",
+   "s": "Search and apply for jobs Our current vacancies in and beyond Hong Kong from trainee to management level."
+  },
+  {
+   "t": "Careers: How To Join Us — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/how-to-join-us/en/index.jsp",
+   "s": "To apply for a job at China CITIC Bank International, you need to create your own user account and profile with an email address and a password. A valid email a"
+  },
+  {
+   "t": "China CITIC Bank - 中信银行招聘官网",
+   "u": "https://job.citicbank.com/",
+   "s": "您好!感谢您对中信银行的关注!中信银行招聘网站（https://job.citicbank.com）为中信银行各单位校园招聘、社会招聘和实习生 ..."
+  },
+  {
+   "t": "China Citic Bank Jobs in Worldwide (11 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-citic-bank-jobs-worldwide",
+   "s": "Today's top 11 China Citic Bank jobs in Worldwide. Leverage your professional network, and get hired. New China Citic Bank jobs added daily."
+  },
+  {
+   "t": "74 China Citic Bank International Limited jobs in Hong Kong",
+   "u": "https://hk.jobsdb.com/china-citic-bank-international-limited-jobs",
+   "s": "Find your ideal job on Jobsdb with 74 China Citic Bank International Limited jobs (61 at China Citic Bank International Limited) listed in Hong Kong. View all t"
+  },
+  {
+   "t": "校园招聘 - job.citicbank.com",
+   "u": "https://job.citicbank.com/CustStyle/zpmhys/schoolRecruit.html",
+   "s": "中信银行校园招聘信息，包括职位详情、申请流程等。"
+  },
+  {
+   "t": "Careers | China Citic Bank - encitcn.com",
+   "u": "https://www.encitcn.com/en/our-career.html",
+   "s": "Opportunities with Europe's leading bank Everyone who works at China Citic Bank works in partnership with their colleagues, lending support and encouragement wh"
+  },
+  {
+   "t": "China CITIC Bank International",
+   "u": "https://m.cncbinternational.com/careers/en/index.jsp",
+   "s": "Banking Internationally Based in Hong Kong, with branches in key locations in the US and expanding across Asia and beyond, China CITIC Bank International is the"
+  },
+  {
+   "t": "Careers — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/en/index.jsp",
+   "s": "How To Join Us To move your career forward, browse our job openings now."
+  },
+  {
+   "t": "Careers: How To Join Us — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/how-to-join-us/en/index.jsp",
+   "s": "To apply for a job at China CITIC Bank International, you need to create your own user account and profile with an email address and a password. A valid email a"
+  },
+  {
+   "t": "China Citic Bank Jobs in Worldwide (11 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-citic-bank-jobs-worldwide",
+   "s": "Today's top 11 China Citic Bank jobs in Worldwide. Leverage your professional network, and get hired. New China Citic Bank jobs added daily."
+  },
+  {
+   "t": "74 China Citic Bank International Limited jobs in Hong Kong",
+   "u": "https://hk.jobsdb.com/china-citic-bank-international-limited-jobs",
+   "s": "Find your ideal job on Jobsdb with 74 China Citic Bank International Limited jobs (61 at China Citic Bank International Limited) listed in Hong Kong. View all t"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://cncbinternational.wd3.myworkdayjobs.com/CNCBIExternalCareerSite",
+  "title": "",
+  "status": 200,
+  "bytes": 8151,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:CNCBIExternalCareerSite",
+  "score": 12,
+  "snippet": "China CITIC Bank International's footprint includes 21 branches, two business banking centres and one private banking centre in Hong Kong, as well as branches i",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

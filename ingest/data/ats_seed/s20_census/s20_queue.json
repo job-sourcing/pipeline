@@ -4370,12 +4370,12 @@
    "probe_verdict": null
   },
   {
-   "name": "Export–Import Bank of China",
+   "name": "Export\u2013Import Bank of China",
    "family": [
-    "Export–Import Bank of China"
+    "Export\u2013Import Bank of China"
    ],
    "sector": "finance",
-   "brand": "Export–Import Bank of China",
+   "brand": "Export\u2013Import Bank of China",
    "note": "LCA employer name doesn't match company name",
    "lca": null,
    "lca_employers": [],
@@ -5466,7 +5466,7 @@
     "sector": "industrial",
     "note": "LCA employer appears to be for a US staffing company; ATS boards belong to unrelated companies"
    },
-   "reject_reason": "brand-inconsistent (LLM brand 'CALT' shares no token with 'China Academy of Launch Vehicle Technology' family — hallucination risk)"
+   "reject_reason": "brand-inconsistent (LLM brand 'CALT' shares no token with 'China Academy of Launch Vehicle Technology' family \u2014 hallucination risk)"
   },
   {
    "name": "SU Group Holdings Ltd",
@@ -5628,9 +5628,9 @@
    }
   },
   {
-   "name": "AMD–Chinese joint venture",
+   "name": "AMD\u2013Chinese joint venture",
    "family": [
-    "AMD–Chinese joint venture"
+    "AMD\u2013Chinese joint venture"
    ],
    "sources": [
     "wiki_category"
@@ -5652,7 +5652,7 @@
    "ats": [],
    "n_family": 1,
    "verdict": {
-    "name": "AMD–Chinese joint venture",
+    "name": "AMD\u2013Chinese joint venture",
     "chinese_origin": false,
     "confidence": "high",
     "lca_valid": false,
@@ -6274,7 +6274,7 @@
     "sector": "media",
     "note": "LCA employer name doesn't match company name, appears to be a Cable Labs subsidiary."
    },
-   "reject_reason": "brand-inconsistent (LLM brand 'CCTV' shares no token with 'China Central Television' family — hallucination risk)"
+   "reject_reason": "brand-inconsistent (LLM brand 'CCTV' shares no token with 'China Central Television' family \u2014 hallucination risk)"
   },
   {
    "name": "D. G. M. Bernard",
@@ -6286,7 +6286,7 @@
    ],
    "category": "Category:Jardines (company)",
    "lca": {
-    "employer": "ST. BERNARD’S HOSPITAL, INC.",
+    "employer": "ST. BERNARD\u2019S HOSPITAL, INC.",
     "filings": 5,
     "states": [
      "AR"
@@ -6295,7 +6295,7 @@
     "naics": "622110"
    },
    "lca_employers": [
-    "ST. BERNARD’S HOSPITAL, INC."
+    "ST. BERNARD\u2019S HOSPITAL, INC."
    ],
    "ats": [],
    "n_family": 1,
@@ -6358,7 +6358,7 @@
     "sector": "energy",
     "note": "LCA employer names don't match CNOOC; ATS board appears unrelated."
    },
-   "reject_reason": "brand-inconsistent (LLM brand 'CNOOC' shares no token with 'China National Offshore Oil Corporation' family — hallucination risk)"
+   "reject_reason": "brand-inconsistent (LLM brand 'CNOOC' shares no token with 'China National Offshore Oil Corporation' family \u2014 hallucination risk)"
   },
   {
    "name": "Digital Currency X Technology Inc.",
@@ -7423,7 +7423,7 @@
     "sector": "hardware",
     "note": "YMTC US entity 1 filing; entity-listed 2022 so US hiring minimal"
    },
-   "reject_reason": "brand-inconsistent (LLM brand 'YMTC' shares no token with 'Yangtze Memory Technologies' family — hallucination risk)"
+   "reject_reason": "brand-inconsistent (LLM brand 'YMTC' shares no token with 'Yangtze Memory Technologies' family \u2014 hallucination risk)"
   },
   {
    "name": "Great Leap Brewing",
@@ -7698,27 +7698,133 @@
    }
   }
  ],
- "unverified": [
-  "JD Health",
-  "JD.com",
-  "Broad Group",
-  "Lenovo Center",
-  "Lenovo Cloud",
-  "CRRC Group",
-  "MINISO Group Holding Ltd",
-  "GAC Group",
-  "CITIC Group",
-  "Orient Securities",
-  "Futu Holdings Ltd",
-  "Honor (company)",
-  "DJI Air",
-  "DJI Sky City",
-  "DJI Spark",
-  "Sina Sports",
-  "China Film Group Corporation",
-  "Weichai Power",
-  "COSCO Shipping",
-  "Wanda Media",
-  "Elong Power Holding Ltd."
+ "unverified": [],
+ "unverified_adjudicated": [
+  {
+   "name": "JD Health",
+   "verdict": "parent_wired",
+   "rationale": "JD.com \u2014 jd_us_fulltime covers the JD US entity; JD Health runs no separate US board",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "JD.com",
+   "verdict": "parent_wired",
+   "rationale": "jd_us_fulltime already in the roster",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Broad Group",
+   "verdict": "reject",
+   "rationale": "construction/prefab group \u2014 no US job surface, no LCA evidence",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Lenovo Center",
+   "verdict": "brand_of_wired",
+   "rationale": "Lenovo real-estate project \u2014 lenovo_us_fulltime covers Lenovo US roles",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Lenovo Cloud",
+   "verdict": "brand_of_wired",
+   "rationale": "Lenovo business unit \u2014 lenovo_us_fulltime covers",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "CRRC Group",
+   "verdict": "group_parent",
+   "rationale": "rolling-stock group; US subsidiaries surface via their own boards \u2014 none found in probes",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "MINISO Group Holding Ltd",
+   "verdict": "group_parent",
+   "rationale": "MINISO US retail entity probed in probe_A/B (no careers surface found)",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "GAC Group",
+   "verdict": "group_parent",
+   "rationale": "GAC Commercial Vehicle \u2192 workable:gac-enterprises-llc already surfaced (probe_A)",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "CITIC Group",
+   "verdict": "group_parent",
+   "rationale": "conglomerate parent \u2014 China CITIC Bank \u2192 workday:CNCBIExternalCareerSite surfaced (probe_A)",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Orient Securities",
+   "verdict": "reject",
+   "rationale": "securities subsidiary \u2014 no US job surface; securities-noise class",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Futu Holdings Ltd",
+   "verdict": "group_parent",
+   "rationale": "Futu US (moomoo) probed in probe_A/B \u2014 no board surfaced",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Honor (company)",
+   "verdict": "device_noise",
+   "rationale": "the wiki article is Honor the phone brand; Honor US entity probed in probe_B (no surface found)",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "DJI Air",
+   "verdict": "device_noise",
+   "rationale": "a DJI product line (device-model class)",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "DJI Sky City",
+   "verdict": "building_noise",
+   "rationale": "DJI's Shenzhen HQ building",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "DJI Spark",
+   "verdict": "device_noise",
+   "rationale": "a DJI drone model (device-model class)",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Sina Sports",
+   "verdict": "brand_of_wired",
+   "rationale": "Sina media property \u2014 Sina/Sina Sports probed in probe_B (no surface)",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "China Film Group Corporation",
+   "verdict": "group_parent",
+   "rationale": "state film group \u2014 no US job surface",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Weichai Power",
+   "verdict": "group_parent",
+   "rationale": "diesel-engine group; Weichai North America (LCA evidence) probed \u2014 no board surfaced",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "COSCO Shipping",
+   "verdict": "group_parent",
+   "rationale": "shipping group; US entities probed in probe_B (no surface)",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Wanda Media",
+   "verdict": "brand_of_wired",
+   "rationale": "Wanda Group subsidiary \u2014 wanda feishu portal surfaced (0 US rows)",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  },
+  {
+   "name": "Elong Power Holding Ltd.",
+   "verdict": "reject",
+   "rationale": "e-long power (HK battery maker) \u2014 no US job surface, no LCA",
+   "method": "deterministic external axis (roster membership + LCA evidence + wiki-article class) \u2014 z-ai chat quota stayed 429-dead"
+  }
  ]
 }

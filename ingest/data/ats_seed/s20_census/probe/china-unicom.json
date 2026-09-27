@@ -2,10 +2,148 @@
  "brand": "China Unicom",
  "tier": "lca",
  "lca": "UNICOM TECHNOLOGIES, INC",
- "ts": "2026-09-27T02:13:08.935Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:44:58.641Z",
+ "candidates": [
+  {
+   "url": "https://www.unicomglobal.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 592920,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "The UNICOM Global California Initiative is a focused effort spearheaded by UNICOM Global to develop value based partnerships with state, local government and ed",
+   "backend": "direct"
+  },
+  {
+   "url": "https://unicomus.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 17674,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Careers Join Our Team Want to know more? For additional information, please contact our client representatives.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://sg.chinaunicomglobal.com/join-us",
+   "title": "Join Us - China Unicom",
+   "status": 200,
+   "bytes": 83932,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Career opportunities at China Unicom. Join our team and build your career with us.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | UNICOM Global",
+   "u": "https://www.unicomglobal.com/careers/",
+   "s": "The UNICOM Global California Initiative is a focused effort spearheaded by UNICOM Global to develop value based partnerships with state, local government and ed"
+  },
+  {
+   "t": "Careers - China Unicom Americas",
+   "u": "https://unicomus.com/careers/",
+   "s": "Careers Join Our Team Want to know more? For additional information, please contact our client representatives."
+  },
+  {
+   "t": "Join Us - China Unicom",
+   "u": "https://sg.chinaunicomglobal.com/join-us",
+   "s": "Career opportunities at China Unicom. Join our team and build your career with us."
+  },
+  {
+   "t": "中国联通 - 校园招聘 - China Unicom",
+   "u": "https://www.chinaunicom.com/46/menu01/528/column06",
+   "s": "中国联通官网，一网通办——直达你需要的联通服务。直办联通业务、直通合作入口、直购联通趣玩、直查联通资讯、直逛 ..."
+  },
+  {
+   "t": "China Unicom Global Jobs in Worldwide (28,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-unicom-global-jobs-worldwide",
+   "s": "Today's top 28,000+ China Unicom Global jobs in Worldwide. Leverage your professional network, and get hired. New China Unicom Global jobs added daily."
+  },
+  {
+   "t": "2 China Unicom jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-unicom-jobs-worldwide",
+   "s": "Today's top 2 China Unicom jobs in Worldwide. Leverage your professional network, and get hired. New China Unicom jobs added daily."
+  },
+  {
+   "t": "China Unicom (Hong Kong) Limited",
+   "u": "https://www.chinaunicom.com.hk/en/global/home.php",
+   "s": "Note: 1. Financial data of Unicom A-share Company may also be discussed during the conference. Such data may differ from the Company's financial data. For the C"
+  },
+  {
+   "t": "China Unicom Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/China-Unicom-jobs",
+   "s": "Find your ideal job on Jobsdb with 20 China Unicom jobs (13 at China Unicom) listed in Hong Kong. View all the China Unicom vacancies now with new jobs added da"
+  },
+  {
+   "t": "China Unicom Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/China-Unicom-jobs",
+   "s": "Find your ideal job on Jobsdb with 21 China Unicom jobs (13 at China Unicom) listed in Hong Kong. View all the China Unicom vacancies now with new jobs added da"
+  },
+  {
+   "t": "Careers | UNICOM Global",
+   "u": "https://www.unicomglobal.com/careers/",
+   "s": "The UNICOM Global California Initiative is a focused effort spearheaded by UNICOM Global to develop value based partnerships with state, local government and ed"
+  },
+  {
+   "t": "中国联通 - 校园招聘 - China Unicom",
+   "u": "https://www.chinaunicom.com/46/menu01/528/column06",
+   "s": "中国联通官网，一网通办——直达你需要的联通服务。直办联通业务、直通合作入口、直购联通趣玩、直查联通资讯、直逛 ..."
+  },
+  {
+   "t": "China Unicom Global Jobs in Worldwide (28,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-unicom-global-jobs-worldwide",
+   "s": "Today's top 28,000+ China Unicom Global jobs in Worldwide. Leverage your professional network, and get hired. New China Unicom Global jobs added daily."
+  },
+  {
+   "t": "Join Us - China Unicom",
+   "u": "https://eu.chinaunicomglobal.com/join-us",
+   "s": "Career opportunities at China Unicom. Join our team and build your career with us."
+  },
+  {
+   "t": "China Unicom Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-China-Unicom-jobs.html",
+   "s": "Today's top China Unicom jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "2 China Unicom jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-unicom-jobs-worldwide",
+   "s": "Today's top 2 China Unicom jobs in Worldwide. Leverage your professional network, and get hired. New China Unicom jobs added daily."
+  },
+  {
+   "t": "China Unicom Jobs & Careers - 1 Open Position | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/China-Unicom-Jobs-E9096.htm",
+   "s": "Search job openings at China Unicom. 1 China Unicom jobs including salaries, ratings, and reviews, posted by China Unicom employees."
+  },
+  {
+   "t": "Careers | UNICOM Global",
+   "u": "https://www.unicomglobal.com/careers/",
+   "s": "The UNICOM Global California Initiative is a focused effort spearheaded by UNICOM Global to develop value based partnerships with state, local government and ed"
+  },
+  {
+   "t": "Join Us - China Unicom",
+   "u": "https://sg.chinaunicomglobal.com/join-us",
+   "s": "Career opportunities at China Unicom. Join our team and build your career with us."
+  },
+  {
+   "t": "Careers - China Unicom Americas",
+   "u": "https://unicomus.com/careers/",
+   "s": "Careers Join Our Team Want to know more? For additional information, please contact our client representatives."
+  },
+  {
+   "t": "China Unicom Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-China-Unicom-jobs.html",
+   "s": "Today's top China Unicom jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

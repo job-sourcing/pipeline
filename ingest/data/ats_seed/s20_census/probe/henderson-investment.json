@@ -2,10 +2,153 @@
  "brand": "Henderson Investment",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:14:16.542Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:28:09.839Z",
+ "candidates": [
+  {
+   "url": "https://www.hendersoninvestmentgroup.com/careers/",
+   "title": "Join Our Team of Investor-Friendly Real Estate Agents | Charlotte Investment Properties for Sale",
+   "status": 200,
+   "bytes": 123952,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Henderson Investment Group as an investor-friendly real estate agent and leverage your expertise to identify, analyze, and manage profitable investment opp",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.janushenderson.com/corporate/careers/",
+   "title": "Careers - Janus Henderson Investors - Global Corporate",
+   "status": 200,
+   "bytes": 514660,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "A career at Janus Henderson is more than a job—it's about investing in a brighter future together.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.janushenderson.com/corporate/careers/early-careers/",
+   "title": "Early careers - Janus Henderson Investors - Global Corporate",
+   "status": 200,
+   "bytes": 543083,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Early careers At Janus Henderson, we are committed in developing junior talent through internship, apprenticeship and graduate programmes and you will kick off ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Our Team of Investor-Friendly Real Estate Agents",
+   "u": "https://www.hendersoninvestmentgroup.com/careers/",
+   "s": "Join Henderson Investment Group as an investor-friendly real estate agent and leverage your expertise to identify, analyze, and manage profitable investment opp"
+  },
+  {
+   "t": "Careers - Janus Henderson Investors - Global Corporate",
+   "u": "https://www.janushenderson.com/corporate/careers/",
+   "s": "A career at Janus Henderson is more than a job—it's about investing in a brighter future together."
+  },
+  {
+   "t": "720 Henderson Investments jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/henderson-investments-jobs",
+   "s": "Today's top 720 Henderson Investments jobs in United States. Leverage your professional network, and get hired. New Henderson Investments jobs added daily."
+  },
+  {
+   "t": "Early careers - Janus Henderson Investors - Global Corporate",
+   "u": "https://www.janushenderson.com/corporate/careers/early-careers/",
+   "s": "Early careers At Janus Henderson, we are committed in developing junior talent through internship, apprenticeship and graduate programmes and you will kick off "
+  },
+  {
+   "t": "8 Janus Henderson Investors (Singapore) Limited jobs in Singapore",
+   "u": "https://sg.jobstreet.com/janus-henderson-investors-(singapore)-limited-jobs/in-Singapore",
+   "s": "Find your ideal job on Jobstreet with 8 Janus Henderson Investors (Singapore) Limited jobs (1 at Janus Henderson Investors (Singapore) Limited) listed in Singap"
+  },
+  {
+   "t": "jobs.janushenderson.com",
+   "u": "https://jobs.janushenderson.com/",
+   "s": "Share your background and experience and our proactive Talent Acquisition team will keep you in mind for future opportunities."
+  },
+  {
+   "t": "Henderson Global Investors Jobs in United States (53 Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/henderson-global-investors-jobs",
+   "s": "Today's top 53 Henderson Global Investors jobs in United States. Leverage your professional network, and get hired. New Henderson Global Investors jobs added da"
+  },
+  {
+   "t": "Job Opportunities | Careers | Vacancies | Henderson Land",
+   "u": "https://www.hld.com/en/our-people",
+   "s": "Discover the job opportunities and vacancies available at Henderson Land, as well as its listed subsidiaries and associated companies."
+  },
+  {
+   "t": "Investment Jobs, Employment in Henderson, NV | Indeed",
+   "u": "https://www.indeed.com/q-Investment-l-Henderson,-NV-jobs.html",
+   "s": "View all Deloitte jobs in Las Vegas, NV - Las Vegas jobs - Wealth Management Director jobs in Las Vegas, NV Salary Search: Manager, Industry Solutions, Investme"
+  },
+  {
+   "t": "Careers - Janus Henderson Investors - Global Corporate",
+   "u": "https://www.janushenderson.com/corporate/careers/",
+   "s": "CAREERS A career at Janus Henderson is more than a job - it's about investing in a brighter future together. We believe the best outcomes are achieved when peop"
+  },
+  {
+   "t": "Early careers - Janus Henderson Investors - Global Corporate",
+   "u": "https://www.janushenderson.com/corporate/careers/early-careers/",
+   "s": "At Janus Henderson, we are committed in developing junior talent through internship, apprenticeship and graduate programmes and you will kick off your careers i"
+  },
+  {
+   "t": "Research Associate - Investment Graduate Programme 2027",
+   "u": "https://jobs.janushenderson.com/job/London-Research-Associate-Investment-Graduate-Programme-2027-EC2M-3AE/1432364300/",
+   "s": "Your opportunity Janus Henderson manages over $500Bil in AUM across 27 offices globally. With more than 350 investment professionals, our Investment Management "
+  },
+  {
+   "t": "Research Associate - Investment Graduate Programme 2027",
+   "u": "https://uk.linkedin.com/jobs/view/research-associate-investment-graduate-programme-2027-at-janus-henderson-investors-4468584615",
+   "s": "Apply for Research Associate - Investment Graduate Programme 2027 at Janus Henderson Investors in London, England, United Kingdom. Volunteer Internship role. Se"
+  },
+  {
+   "t": "jobs.janushenderson.com",
+   "u": "https://jobs.janushenderson.com/",
+   "s": "Follow this link to reach our Job Search page to search for available jobs in a more accessible format."
+  },
+  {
+   "t": "Search Henderson Jobs at Charles Schwab",
+   "u": "https://www.schwabjobs.com/location/henderson-nevada-united-states-jobs/27326/6252001-5509151-5505411/4",
+   "s": "Search Henderson Jobs at Charles Schwab GLOBE: A place to belong and understand other cultures It's Celebrate Diversity Month, a time where we highlight the cul"
+  },
+  {
+   "t": "Investment Banker Jobs in Henderson, NV (Hiring Now!) - Zippia",
+   "u": "https://www.zippia.com/investment-banker-henderson-nv-jobs/",
+   "s": "54 Investment Banker Jobs in Henderson, NV hiring now with salary from $95,000 to $276,000 hiring now. Apply for An Investment Banker jobs that are part time, r"
+  },
+  {
+   "t": "Careers - Janus Henderson Investors - Global Corporate",
+   "u": "https://www.janushenderson.com/corporate/careers/",
+   "s": "CAREERS A career at Janus Henderson is more than a job - it's about investing in a brighter future together. We believe the best outcomes are achieved when peop"
+  },
+  {
+   "t": "jobs.janushenderson.com",
+   "u": "https://jobs.janushenderson.com/",
+   "s": "Follow this link to reach our Job Search page to search for available jobs in a more accessible format."
+  },
+  {
+   "t": "794 Investment jobs in Henderson, Nevada, United States (42 new) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/investment-jobs-henderson-nv",
+   "s": "Today&rsquo;s top 794 Investment jobs in Henderson, Nevada, United States. Leverage your professional network, and get hired. New Investment jobs added daily."
+  },
+  {
+   "t": "100 Equity Investment jobs in Henderson - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/equity-investment-jobs-henderson-nv",
+   "s": "Today's top 100 Equity Investment jobs in Henderson. Leverage your professional network, and get hired. New Equity Investment jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.janushenderson.com/corporate/careers/",
+  "platform": "custom",
+  "title": "Careers - Janus Henderson Investors - Global Corporate"
+ },
+ "verdict": "custom_surface"
 }

@@ -2,10 +2,153 @@
  "brand": "Regal International Airport Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:13:29.777Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:27:19.849Z",
+ "candidates": [
+  {
+   "url": "https://bpm.regalwings.com/company/careers",
+   "title": "Regal Wings - Your International Air Desk",
+   "status": 200,
+   "bytes": 56988,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Connecting luxury travel advisors with extraordinary experiences.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://regalwings.com/company/careers",
+   "title": "Regal Wings - Your International Air Desk",
+   "status": 200,
+   "bytes": 56988,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Connecting luxury travel advisors with extraordinary experiences.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.regalcineworld.com/en/careers",
+   "title": "Careers | Cineworld",
+   "status": 200,
+   "bytes": 39441,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Whether you want a job at one of our cinemas or a management role inspiring our people to deliver a great customer experience, we'd be more than happy to hear f",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at Changi Airport Group | Come Make Magic With Us",
+   "u": "https://www.changiairport.com/en/careers.html",
+   "s": "Discover career opportunities at Changi Airport Group and learn how we turn airport touch points into seamless experiences through innovation and technology."
+  },
+  {
+   "t": "Job Opportunities | Changi Airport Group Careers",
+   "u": "https://www.changiairport.com/en/careers/job-opportunities.html",
+   "s": "Explore exciting job opportunities with Changi Airport Group or Changi Airports International, and choose your career path at the world's most awarded airport."
+  },
+  {
+   "t": "Regal Hotels International Jobs in Singapore (with Salaries) - May 2026 ...",
+   "u": "https://sg.jobstreet.com/Regal-Hotels-International-jobs",
+   "s": "Find your ideal job on Jobstreet with 43 Regal Hotels International jobs (0 at Regal Hotels International) listed in Singapore. View all the Regal Hotels Intern"
+  },
+  {
+   "t": "View all jobs - Careers at Changi Airport Group",
+   "u": "https://jobs.changiairport.com/viewalljobs/",
+   "s": "Search by Category Air Hub & Cargo Development Changi Airports International Airport Management Changi East Development Commercial Corporate Engineering and Dev"
+  },
+  {
+   "t": "500 Changi Airport Group jobs in Singapore - JobStreet.com",
+   "u": "https://sg.jobstreet.com/Changi-Airport-Group-jobs",
+   "s": "Find your ideal job on Jobstreet with 500 Changi Airport Group jobs (76 at Changi Airport Group) listed in Singapore. View all the Changi Airport Group vacancie"
+  },
+  {
+   "t": "Changi Airport Group: Jobs | LinkedIn",
+   "u": "https://sg.linkedin.com/company/changiairportgroup/jobs",
+   "s": "Changi Airport Group | 231,473 followers on LinkedIn. Exceptional People, Connecting Lives | Changi Airport Group (CAG) is the manager of Singapore Changi Airpo"
+  },
+  {
+   "t": "Regal Hotels International Jobs in Worldwide (32,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/regal-hotels-international-jobs-worldwide",
+   "s": "Today's top 32,000+ Regal Hotels International jobs in Worldwide. Leverage your professional network, and get hired. New Regal Hotels International jobs added d"
+  },
+  {
+   "t": "REGAL AIRPORT HOTEL Careers and Employment - Indeed",
+   "u": "https://hk.indeed.com/cmp/Regal-Airport-Hotel",
+   "s": "Find out what works well at REGAL AIRPORT HOTEL from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Career Opportunities | Regal",
+   "u": "https://www.regmovies.com/careers",
+   "s": "Want to pursue a career at Regal? Explore job openings near you to start your Regal career today. Find out why we are the #1 place to work in the theatre indust"
+  },
+  {
+   "t": "Regal Wings - Your International Air Desk",
+   "u": "https://bpm.regalwings.com/company/careers",
+   "s": "Connecting luxury travel advisors with extraordinary experiences."
+  },
+  {
+   "t": "changiairport Jobs",
+   "u": "https://jobs.changiairport.com/",
+   "s": "About Changi Airport Group About Changi Airports International Careers Sign In/ Create Candidate Account"
+  },
+  {
+   "t": "Regal Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/regal-jobs",
+   "s": "Find your ideal job at Jobsdb with 20 Regal jobs found in Hong Kong. View all our Regal vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Regal Airport Hotel Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/regal-airport-hotel-jobs",
+   "s": "Find your ideal job on Jobsdb with 10 Regal Airport Hotel jobs (8 at Regal Airport Hotel) listed in Hong Kong. View all the Regal Airport Hotel vacancies now wi"
+  },
+  {
+   "t": "Careers at Avis Budget",
+   "u": "https://www.avisbudgetgroup.jobs/",
+   "s": "Join the leading vehicle rental company with 75 years of excellence. Explore global career opportunities and be part of a team that values customer satisfaction"
+  },
+  {
+   "t": "Careers | Airport International Group",
+   "u": "https://www.aig.aero/en/careers/",
+   "s": "Careers Build Your Future With Us At Airport International Group, your career is more than a job; it is an opportunity to contribute to Jordan's main gateway to"
+  },
+  {
+   "t": "REGAL AIRPORT HOTEL Careers and Employment - Indeed",
+   "u": "https://hk.indeed.com/cmp/Regal-Airport-Hotel",
+   "s": "Find out what works well at REGAL AIRPORT HOTEL from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Career Opportunities | Regal",
+   "u": "https://www.regmovies.com/careers",
+   "s": "Want to pursue a career at Regal? Explore job openings near you to start your Regal career today. Find out why we are the #1 place to work in the theatre indust"
+  },
+  {
+   "t": "Regal Cinemas Jobs, Employment in Philadelphia International Airport ...",
+   "u": "https://www.indeed.com/q-regal-cinemas-l-philadelphia-international-airport,-pa-jobs.html",
+   "s": "9 Regal Cinemas jobs available in Philadelphia International Airport, PA on Indeed.com. Apply to Floor Staff, Crew Member, Assistant Manager and more!"
+  },
+  {
+   "t": "Regal Wings - Your International Air Desk",
+   "u": "https://regalwings.com/company/careers",
+   "s": "Connecting luxury travel advisors with extraordinary experiences."
+  },
+  {
+   "t": "Careers | Cineworld",
+   "u": "https://www.regalcineworld.com/en/careers",
+   "s": "Whether you want a job at one of our cinemas or a management role inspiring our people to deliver a great customer experience, we'd be more than happy to hear f"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.regalcineworld.com/en/careers",
+  "platform": "custom",
+  "title": "Careers | Cineworld"
+ },
+ "verdict": "custom_surface"
 }

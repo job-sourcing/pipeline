@@ -2,10 +2,148 @@
  "brand": "Zhong Lun",
  "tier": "lca",
  "lca": "ZHONG LUN LAW FIRM LLP",
- "ts": "2026-09-27T02:15:31.766Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:46:40.414Z",
+ "candidates": [
+  {
+   "url": "https://en.zhonglun.com/career",
+   "title": "The official website of Zhong Lun Law Firm",
+   "status": 200,
+   "bytes": 49358,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CAREER DEVELOPMENT In a world of unprecedented uncertainty We hold firm in our conviction that Work is more than toil It is about how we sculpt our best selves ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://en.zhonglun.com/career/jobs_20",
+   "title": "The official website of Zhong Lun Law Firm",
+   "status": 200,
+   "bytes": 54701,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Offices： All Beijing Shanghai Shenzhen Guangzhou Wuhan Chengdu Chongqing Qingdao Hangzhou Nanjing Xi'an Hong Kong Tokyo New York Los Angeles San Francisco Almat",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.zhonglun.com/career",
+   "title": "中伦律师事务所官方网站",
+   "status": 200,
+   "bytes": 46825,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CAREERS 职业发展 在这个比以往任何时候都更加不确定的世界中 我们相信 一份职业，不只是劳作 更是雕塑自我的工具 一位员工，不只是成员 更是比肩前行的伙伴 如果您 渴望具化专业实力、实现自身价值 心怀鲲鹏之志，志向超越我们 保持热爱，认同合力致远",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "The official website of Zhong Lun Law Firm",
+   "u": "https://en.zhonglun.com/career",
+   "s": "CAREER DEVELOPMENT In a world of unprecedented uncertainty We hold firm in our conviction that Work is more than toil It is about how we sculpt our best selves "
+  },
+  {
+   "t": "The official website of Zhong Lun Law Firm",
+   "u": "https://en.zhonglun.com/career/jobs_20",
+   "s": "Offices： All Beijing Shanghai Shenzhen Guangzhou Wuhan Chengdu Chongqing Qingdao Hangzhou Nanjing Xi'an Hong Kong Tokyo New York Los Angeles San Francisco Almat"
+  },
+  {
+   "t": "CAREERS - Zhong Lun",
+   "u": "https://www.zhonglun.com/career",
+   "s": "CAREERS 职业发展 在这个比以往任何时候都更加不确定的世界中 我们相信 一份职业，不只是劳作 更是雕塑自我的工具 一位员工，不只是成员 更是比肩前行的伙伴 如果您 渴望具化专业实力、实现自身价值 心怀鲲鹏之志，志向超越我们 保持热爱，认同合力致远"
+  },
+  {
+   "t": "CAREERS - Zhong Lun",
+   "u": "https://www.zhonglun.com/career/jobs_1",
+   "s": "1. 国内外知名法学院毕业，硕士及以上学历； 2. 1-3年知名律所相关业务领域工作经验； 3. 通过中国法律职业资格考试； 4 ..."
+  },
+  {
+   "t": "Zhong Lun Law Firm Llp | Home",
+   "u": "http://www.zhonglun.com.hk/en/index.php",
+   "s": "Zhong Lun offers comprehensive training opportunities for law graduates passionate about the practice of law. Our 2-year training program leads to admission as "
+  },
+  {
+   "t": "Zhong Lun Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/zhong-lun-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 Zhong Lun job found in Hong Kong. View all our Zhong Lun vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Zhong Lun Hong Kong: Trainee Routes & Career Guide",
+   "u": "https://resources.elitepathfinder.com/firms/zhong-lun.html",
+   "s": "Zhong Lun Hong Kong: its full-service practice, current 2027 training-contract route, Legal 500 rankings and recent work."
+  },
+  {
+   "t": "Zhong Lun Law Firm LLP Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Zhong-Lun-Law-Firm-LLP-jobs",
+   "s": "Find your ideal job on Jobsdb with 210 Zhong Lun Law Firm LLP jobs (1 at Zhong Lun Law Firm LLP) listed in Hong Kong. View all the Zhong Lun Law Firm LLP vacanc"
+  },
+  {
+   "t": "The official website of Zhong Lun Law Firm",
+   "u": "https://en.zhonglun.com/career/jobs_20",
+   "s": "Offices： All Beijing Shanghai Shenzhen Guangzhou Wuhan Chengdu Chongqing Qingdao Hangzhou Nanjing Xi'an Hong Kong Tokyo New York Los Angeles San Francisco Almat"
+  },
+  {
+   "t": "The official website of Zhong Lun Law Firm",
+   "u": "https://en.zhonglun.com/career/jobs_1",
+   "s": "1. 国内外知名法学院毕业，硕士及以上学历； 2. 3年及以上知名律所工作经验，业务领域主要为境内IPO，有公司并购、资产证券化相关经验更佳； 3. 持有中国律师执业证优先； 4. 具有良好的口语表达和法律文书写作能力； 5. 工作态度端正，具备良好的沟通能力、逻辑思维能力、学习能力及团队协作 ..."
+  },
+  {
+   "t": "中伦律师事务所官方网站 - Zhong Lun",
+   "u": "https://www.zhonglun.com/career",
+   "s": "中伦律师事务所提供职业发展机会，欢迎有志于法律事业的专业人士加入，共同实现职业理想。"
+  },
+  {
+   "t": "Zhong Lun Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/zhong-lun-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 Zhong Lun job found in Hong Kong. View all our Zhong Lun vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "中伦律师事务所官方网站 - Zhong Lun",
+   "u": "https://www.zhonglun.com/career/jobs_8",
+   "s": "办公室： 全部 北京 上海 深圳 广州 武汉 成都 重庆 青岛 杭州 南京 西安 香港 东京 纽约 洛杉矶 旧金山 阿拉木图"
+  },
+  {
+   "t": "Zhong Lun Law Firm LLP 中倫律師事務所有限法律責任合夥 hiring Banking and Finance ...",
+   "u": "https://www.linkedin.com/jobs/view/4311823876",
+   "s": "Job description Zhong Lun Law Firm is a leading Chinese law firm with over 400 partners and 2200 professionals working in eighteen offices in China and offices "
+  },
+  {
+   "t": "Zhong Lun Law Firm LLP Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Zhong-Lun-Law-Firm-LLP-jobs",
+   "s": "Find your ideal job on Jobsdb with 210 Zhong Lun Law Firm LLP jobs (1 at Zhong Lun Law Firm LLP) listed in Hong Kong. View all the Zhong Lun Law Firm LLP vacanc"
+  },
+  {
+   "t": "Zhong Lun Law Firm Llp | Home",
+   "u": "http://www.zhonglun.com.hk/en/index.php",
+   "s": "Zhong Lun offers comprehensive training opportunities for law graduates passionate about the practice of law. Our 2-year training program leads to admission as "
+  },
+  {
+   "t": "The official website of Zhong Lun Law Firm",
+   "u": "https://en.zhonglun.com/career/jobs_86",
+   "s": "CAREER DEVELOPMENT Offices： All Beijing Shanghai Shenzhen Guangzhou Wuhan Chengdu Chongqing Qingdao Hangzhou Nanjing Xi'an Tokyo Hong Kong New York Los Angeles "
+  },
+  {
+   "t": "The official website of Zhong Lun Law Firm",
+   "u": "https://en.zhonglun.com/career",
+   "s": "CAREER DEVELOPMENT In a world of unprecedented uncertainty We hold firm in our conviction that Work is more than toil It is about how we sculpt our best selves "
+  },
+  {
+   "t": "Zhong Lun Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/zhong-lun-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 Zhong Lun job found in Hong Kong. View all our Zhong Lun vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Zhong Lun Law Firm LLP Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Zhong-Lun-Law-Firm-LLP-jobs",
+   "s": "Find your ideal job on Jobsdb with 210 Zhong Lun Law Firm LLP jobs (1 at Zhong Lun Law Firm LLP) listed in Hong Kong. View all the Zhong Lun Law Firm LLP vacanc"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

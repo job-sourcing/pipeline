@@ -61,7 +61,7 @@ from . import workday
 from .base import fetch_json, fetch_text
 
 _SPEC_RE = re.compile(
-    r"^ats:(greenhouse|ashby|lever|workable|feishuhire|paylocity):"
+    r"^ats:(greenhouse|ashby|lever|workable|feishuhire|paylocity|adp|jazzhr|teamtailor|radancy|rippling):"
     r"([A-Za-z0-9_.\-]+)$")
 # S14 registry-driven custom grammar: 'custom:{kind}' where kind ∈ _ADAPTERS
 # (own-platform boards — the platform IS the company; adding one = a class
@@ -71,6 +71,21 @@ _CUSTOM_RE = re.compile(r"^custom:([a-z0-9_]+)$")
 # per-process one-fetch cache: {spec: (fetched_at, jobs_payload)}
 _CACHE: dict[str, tuple[float, list[dict]]] = {}
 _CACHE_TTL = 60.0
+_TEXT_CACHE: dict[str, tuple[float, str]] = {}     # S21: html/portal pages
+_TEXT_CACHE_TTL = 900.0
+
+
+def _fetch_text_cached(url: str, spec: str, cfg: "Config") -> str:
+    """One text fetch per process per spec (15-min TTL) — the S21
+    multi-page adapters (radancy 26-page walk, jazzhr board html) must
+    not re-walk their list on every detail call."""
+    now = time.monotonic()
+    hit = _TEXT_CACHE.get(url)
+    if hit and now - hit[0] < _TEXT_CACHE_TTL:
+        return hit[1]
+    text = fetch_text(url, cfg=cfg)
+    _TEXT_CACHE[url] = (time.monotonic(), text)
+    return text
 
 
 def is_site_spec(spec: str) -> bool:
@@ -93,7 +108,7 @@ def parse_site(spec: str) -> tuple[str, str]:
         return m.group(1), ""
     raise ValueError(
         f"not a site spec: {spec!r} (expected 'ats:kind:org' with kind in "
-        f"greenhouse|ashby|lever|workable|feishuhire|paylocity, or "
+        f"greenhouse|ashby|lever|workable|feishuhire|paylocity|adp, or "
         f"'custom:kind' with kind in "
         f"{sorted(k for k in _ADAPTERS)})")
 
@@ -2815,10 +2830,1198 @@ class PaylocityAdapter:
             "firstPublishedIso": iso,
         }
 
+def _plain_loc_in_country(loc: str, country: Optional[str]) -> bool:
+    """A bare location string ('Auburn Hills, MI' / 'Ramos Arizpe,
+    Coahuila de Zaragoza, Mexico') → in-country? Rungs mirror the S15
+    greenhouse ladder minus the office channel (JazzHR serves no
+    offices): (1) an explicit country phrase in any comma-segment,
+    (2) the US state-token fallback — CASE-SENSITIVE 2-letter codes
+    (the S20 'Remote in Europe'/'in'=Indiana lesson, pinned)."""
+    if not country:
+        return True
+    if not isinstance(loc, str) or not loc.strip():
+        return False
+    segs = [s.strip() for s in loc.split(",") if s.strip()]
+    for seg in segs:
+        if workday.country_str_matches(seg, country):
+            return True
+    if (country or "").strip().lower() in workday._US_COUNTRY_NAMES:
+        for seg in segs:
+            for tok in seg.split():
+                t = tok.strip(",()")
+                if len(t) > 2:
+                    if t.lower() in workday._US_STATE_TOKENS:
+                        return True
+                elif t.isupper() and t.lower() in \
+                        workday._US_STATE_TOKENS:
+                    return True
+    return False
+
+
+# ── adp workforcenow (mascsr public career-center REST) ────────────────────
+
+class ADPWorkforceNowAdapter:
+    """ats:adp:{cid} — the PUBLIC REST surface behind every
+    workforcenow.adp.com/mascsr recruitment.html board.
+
+    S21 discovery (Fuyao Glass America, live-pinned 2026-09-27, 180
+    openings). The SPA (mdfLoader → recruitment.{hash}.js) resolves its
+    API through a RAAS url-map: public access point
+    /mascsr/default/careercenter/public + /events/staffing + the
+    mapped path — so the list endpoint is
+
+      GET .../events/staffing/v1/job-requisitions
+              ?cid={cid}&lang=en_US&locale=en_US
+              &$skip={s}&$top=20&userQuery=
+
+    and the detail is the same path + /{itemID}. VERIFIED minimal: the
+    cid ALONE authenticates (ccId/client/timeStamp all optional); $top
+    is server-capped at 20. PAGINATION QUIRK (pinned live): page 0
+    returns 19 rows while meta.startSequence advances 20-per-page —
+    the walk MUST advance skip = startSequence + len(rows), and one
+    itemID DUPLICATES across the page boundary (dedup, flagged).
+
+    Row map (workday dialect):
+      reqId            itemID
+      title            requisitionTitle
+      timeType         workLevelCode.shortName — STRUCTURED
+                       ('Full Time'→Full time, 'Part Time'→Part time,
+                       'Intern'→Internship; None → honest blank)
+      postedOn         _posted_label(postDate) — ISO w/ TZ, exact
+      locationsText    requisitionLocations[].nameCode.shortName
+                       ('Moraine, OH, US' — city, state, ISO country)
+      countries        trailing ISO segment ('US'→United States)
+      url              getShareUrl shape (pinned from the bundle):
+                       .../recruitment.html?cid=..&ccId=19000101_000001
+                       &jobId={itemID}&lang=en_US
+
+    Detail: requisitionDescription = the FULL HTML job description;
+    B1 guards (not JSON / missing jobRequisitions / missing meta /
+    > 40 pages) refuse — never an empty board.
+    """
+
+    KIND = "adp"
+    _API = ("https://workforcenow.adp.com/mascsr/default/"
+            "careercenter/public/events/staffing/v1/job-requisitions")
+    _BOARD = ("https://workforcenow.adp.com/mascsr/default/mdf/"
+              "recruitment/recruitment.html")
+    _TT = {"full time": "Full time", "full-time": "Full time",
+           "part time": "Part time", "part-time": "Part time",
+           "intern": "Internship", "internship": "Internship",
+           "temporary": "Temporary", "contract": "Contract"}
+    _COUNTRY = {"US": "United States", "MX": "Mexico", "CN": "China",
+                "CA": "Canada", "GB": "United Kingdom", "DE": "Germany",
+                "JP": "Japan", "SG": "Singapore", "IN": "India"}
+
+    def __init__(self, org: str, cfg: Config):
+        # org = the board's cid GUID (the ?cid= query param)
+        self.org = org
+        self.cfg = cfg
+
+    # -- list ------------------------------------------------------------
+
+    def _pages(self):
+        """Generate every list page. Advance rule is the pinned quirk:
+        skip = startSequence + len(rows)."""
+        seen: set[str] = set()
+        dup = 0
+        skip = 0
+        pages = 0
+        total = None
+        while pages < 40:
+            url = (f"{self._API}?cid={self.org}&lang=en_US"
+                   f"&locale=en_US&$skip={skip}&$top=20&userQuery=")
+            d = fetch_json(url, cfg=self.cfg)
+            if not isinstance(d, dict) or "jobRequisitions" not in d \
+                    or "meta" not in d:
+                raise RuntimeError(
+                    f"adp:{self.org}: unexpected list payload "
+                    f"(no jobRequisitions/meta) — board dead or shape "
+                    f"changed; refusing")
+            m = d["meta"]
+            total = int(m.get("totalNumber") or 0)
+            rows = d["jobRequisitions"] or []
+            if not rows:
+                break
+            for r in rows:
+                rid = str(r.get("itemID") or "")
+                if not rid:
+                    continue
+                if rid in seen:
+                    dup += 1        # the pinned page-boundary duplicate
+                    continue
+                seen.add(rid)
+                yield r
+            pages += 1
+            seq = int(m.get("startSequence") or skip)
+            skip = seq + len(rows)
+            if total and skip >= total:
+                break
+        self._dup_count = dup
+        self._total = total
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped_country = dropped_tt = 0
+        for job in self._pages():
+            rid = str(job.get("itemID") or "")
+            tt = self._time_type(job)
+            if time_type and tt and tt.lower() != time_type.lower():
+                dropped_tt += 1
+                continue
+            c = self._country_of(job)
+            if country and not workday.country_str_matches(c, country):
+                dropped_country += 1
+                continue
+            locs = [str((L.get("nameCode") or {}).get("shortName") or
+                        "").strip()
+                    for L in job.get("requisitionLocations") or []]
+            locs = [x for x in locs if x]
+            label, iso = _posted_label(str(job.get("postDate") or ""))
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(job.get("requisitionTitle") or ""),
+                "company": "",   # config company is the authority
+                "url": (f"{self._BOARD}?cid={self.org}"
+                        f"&ccId=19000101_000001&jobId={rid}&lang=en_US"),
+                "externalPath": f"/{rid}",
+                "locationsText": "; ".join(locs),
+                "postedOn": label,
+                "timeType": tt,
+                "bulletFields": [rid, str(job.get("clientRequisitionID")
+                                          or "")],
+                "ats": "adp",
+                "firstPublishedIso": iso,
+                "departments": [],
+                "countries": [c] if c else [],
+                "remoteType": "",
+            }
+        meta = {
+            "complete": True,
+            "total": self._total if hasattr(self, "_total") else len(rows),
+            "pages": getattr(self, "_pages_walked", 0) or None,
+            "country_client": False,
+            "client_filtered": dropped_country + dropped_tt,
+            "ats": "adp",
+            "duplicate_itemids": getattr(self, "_dup_count", 0),
+        }
+        print(f"[{progress_label}] adp:{self.org}: {len(rows)} rows"
+              + (f" of {meta['total']} listed"
+                 + (f" (+{meta['duplicate_itemids']} page-boundary dup)"
+                    if meta["duplicate_itemids"] else ""))
+              + (f" ({dropped_country} non-{country} + {dropped_tt} "
+                 f"non-{time_type} dropped client-side)"
+                 if country or time_type else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    # -- helpers ----------------------------------------------------------
+
+    def _time_type(self, job: dict) -> str:
+        raw = str(((job.get("workLevelCode") or {}).get("shortName"))
+                  or "").strip()
+        return self._TT.get(raw.lower(), raw) if raw else ""
+
+    def _country_of(self, job: dict) -> str:
+        locs = job.get("requisitionLocations") or []
+        for L in locs:
+            name = str((L.get("nameCode") or {}).get("shortName")
+                       or "").strip()
+            if not name:
+                continue
+            seg = [x.strip() for x in name.split(",")]
+            code = seg[-1] if seg else ""
+            if len(code) == 2 and code.isalpha():
+                return self._COUNTRY.get(code.upper(), code)
+        return ""
+
+    # -- detail -----------------------------------------------------------
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        url = (f"{self._API}/{rid}?cid={self.org}&lang=en_US"
+               f"&locale=en_US")
+        d = fetch_json(url, cfg=self.cfg)
+        if not isinstance(d, dict) or not d.get("itemID"):
+            return None
+        job = d
+        tt = self._time_type(job)
+        c = self._country_of(job)
+        label, iso = _posted_label(str(job.get("postDate") or ""))
+        locs = [str((L.get("nameCode") or {}).get("shortName") or
+                    "").strip()
+                for L in job.get("requisitionLocations") or []]
+        locs = [x for x in locs if x]
+        return {
+            "jobPostingInfo": {
+                "title": str(job.get("requisitionTitle") or ""),
+                "location": locs[0] if locs else "",
+                "additionalLocations": locs[1:],
+                "jobDescription": str(job.get("requisitionDescription")
+                                      or ""),
+                "timeType": tt,
+                "startDate": iso or "",
+                "externalUrl": (f"{self._BOARD}?cid={self.org}"
+                                f"&ccId=19000101_000001&jobId={rid}"
+                                f"&lang=en_US"),
+                "jobReqId": rid,
+                "postedOn": label,
+                "country": ({"descriptor": c} if c else None),
+            },
+            "hiringOrganization": {"name": ""},
+            "similarJobs": [],
+            "firstPublishedIso": iso,
+        }
+
+# ── jazzhr (applytojob.com public boards) ─────────────────────────────────
+
+class JazzHRAdapter:
+    """ats:jazzhr:{slug} — the server-rendered public board at
+    {slug}.applytojob.com (one-call complete — all jobs on the first
+    page; no pagination endpoint observed on 172-job foxconnassemblyllc).
+
+    S21 discovery (Sanhua International 34 jobs + Foxconn Industrial
+    Internet / FII 172 jobs, live-pinned 2026-09-27). List rows:
+
+        <li class="list-group-item">
+          <h3 class='list-group-item-heading'>
+            <a href="https://{slug}.applytojob.com/apply/{jobId}/{slug}">
+              {title}</a></h3>
+          <ul class='list-inline list-group-item-text'>
+            <li><i class='fa fa-map-marker'></i>{location}</li>
+            <li><i class='fa fa-sitemap'></i>{department}</li>
+
+    Field map (workday dialect):
+      reqId            {jobId} from the apply-URL path (stable)
+      title            the anchor text
+      locationsText    fa-map-marker li
+      departments      fa-sitemap li
+      timeType         NONE in the list — honest blank; the DETAIL's
+                       JSON-LD employmentType fills it at detail time
+      postedOn         detail JSON-LD datePosted (list serves none)
+
+    Country: the S15 ladder minus the office channel — rung 1 explicit
+    country phrase in a comma-segment ('…, Mexico'), rung 3 US
+    state-token ('Auburn Hills, MI', bare 'NC' — CASE-sensitive codes).
+
+    Detail: the /apply/{jobId}/ page carries a FULL JSON-LD
+    JobPosting (title / datePosted / employmentType / description /
+    jobLocation.address[locality|region] / hiringOrganization.name =
+    the board's SELF-NAME / validThrough). B1: a 200 page whose HTML
+    has neither list-group items nor a 'no jobs' marker = shape
+    anomaly → refuse (never a silently-empty complete board).
+    """
+
+    KIND = "jazzhr"
+    _TT_JSONLD = {"full_time": "Full time", "full-time": "Full time",
+                  "part_time": "Part time", "part-time": "Part time",
+                  "contract": "Contract", "internship": "Internship",
+                  "temporary": "Temporary", "contractor": "Contract"}
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    # -- board fetch ------------------------------------------------------
+
+    def _board_html(self) -> str:
+        url = f"https://{self.org}.applytojob.com"
+        html = _fetch_text_cached(url, f"ats:jazzhr:{self.org}", self.cfg)
+        if not html or len(html) < 500:
+            raise RuntimeError(
+                f"{url}: empty/short body — board dead; refusing")
+        return html
+
+    @staticmethod
+    def _parse_jobs(html: str) -> list[dict]:
+        """One job per <li class="list-group-item"> — but the job li
+        NESTS attr <li>s (map-marker/sitemap), so a non-greedy …</li>
+        block ends at the FIRST nested close and silently loses the
+        department. Split on the OPENERS instead: block = opener →
+        next opener (or </ul>)."""
+        jobs = []
+        seen = set()
+        opener = re.compile(
+            r"""<li\s+class=['"]list-group-item['"]>""")
+        hits = list(opener.finditer(html))
+        for i, m in enumerate(hits):
+            end = hits[i + 1].start() if i + 1 < len(hits) else \
+                html.find("</ul>", m.end())
+            if end < 0:
+                end = len(html)
+            block = html[m.end():end]
+            a = re.search(
+                r"""href=['"](https?://[^'"]+/apply/([A-Za-z0-9]+)/[^'"]*)['"][^>]*>\s*(.*?)\s*</a>""",
+                block, re.S)
+            if not a:
+                continue
+            url, jid, title = a.group(1), a.group(2), \
+                re.sub(r"<[^>]+>", "", a.group(3)).strip()
+            if jid in seen or not title:
+                continue
+            seen.add(jid)
+            loc = ""
+            dept = ""
+            lm = re.search(
+                r"""fa-map-marker['"]?\s*></i>([^<]+)""", block)
+            if lm:
+                loc = lm.group(1).strip()
+            dm = re.search(r"""fa-sitemap['"]?\s*></i>([^<]+)""", block)
+            if dm:
+                dept = dm.group(1).strip()
+            jobs.append({"reqId": jid, "title": title, "url": url,
+                         "location": loc, "department": dept})
+        return jobs
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        if time_type:
+            raise RuntimeError(
+                "jazzhr: the board LIST serves no employment type (it "
+                "lives in the detail JSON-LD) — a time_type filter "
+                f"({time_type!r}) is unanswerable at list time; use "
+                "--time-type '' (the s19 driver does; the detail phase "
+                "fills timeType)")
+        html = self._board_html()
+        jobs = self._parse_jobs(html)
+        has_openings_heading = "Current Openings" in html
+        if not jobs and not has_openings_heading:
+            raise RuntimeError(
+                f"jazzhr:{self.org}: 200 but no list-group items and no "
+                f"openings heading — shape anomaly; refusing")
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        for job in jobs:
+            rid = job["reqId"]
+            loc = job["location"]
+            if country and not _plain_loc_in_country(loc, country):
+                dropped_country += 1
+                continue
+            rows[rid] = {
+                "reqId": rid,
+                "title": job["title"],
+                "company": "",
+                "url": job["url"],
+                "externalPath": f"/{rid}",
+                "locationsText": loc,
+                "postedOn": "",       # list serves none — detail fills
+                "timeType": "",       # honest blank (detail JSON-LD)
+                "bulletFields": [rid],
+                "ats": "jazzhr",
+                "firstPublishedIso": "",
+                "departments": [job["department"]] if job["department"] else [],
+                "countries": [],
+                "remoteType": "",
+            }
+        meta = {
+            "complete": True, "total": len(jobs), "pages": 1,
+            "country_client": False,
+            "client_filtered": dropped_country,
+            "ats": "jazzhr",
+        }
+        print(f"[{progress_label}] jazzhr:{self.org}: {len(rows)} rows"
+              + (f" of {len(jobs)} listed"
+                 if len(rows) != len(jobs) else "")
+              + (f" ({dropped_country} non-{country} dropped "
+                 f"client-side)" if dropped_country else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    # -- detail -----------------------------------------------------------
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        # resolve URL from the cached list (the apply-URL's title slug
+        # is not derivable from the id alone)
+        html = self._board_html()
+        url = None
+        for job in self._parse_jobs(html):
+            if job["reqId"] == rid:
+                url = job["url"]
+                break
+        if not url:
+            return None
+        page = _fetch_text_cached(url, f"ats:jazzhr:{self.org}", self.cfg)
+        ld = None
+        for m in re.finditer(
+                r'<script type="application/ld\+json">\s*(.*?)'
+                r"\s*</script>", page, re.S):
+            try:
+                d = json.loads(m.group(1))
+            except json.JSONDecodeError:
+                continue
+            if isinstance(d, dict) and d.get("@type") == "JobPosting":
+                ld = d
+                break
+        if ld is None:
+            # FALLBACK (pinned live: 4/9 sanhua rows — older postings
+            # serve only the Organization ld+json): the page title is
+            # '{job} - {org} - Career Page' and the FULL JD sits in
+            # the #job-description div (balanced-depth walk — the body
+            # nests <div>s; a naive first-</div> match truncates).
+            return self._detail_from_html(page, url, rid)
+        tt_raw = str(ld.get("employmentType") or "").strip()
+        tt = self._TT_JSONLD.get(tt_raw.lower(), tt_raw) if tt_raw else ""
+        loc = ld.get("jobLocation") or {}
+        addr = (loc or {}).get("address") or {}
+        loc_text = ", ".join(
+            x for x in [str(addr.get("addressLocality") or ""),
+                        str(addr.get("addressRegion") or "")] if x)
+        org = (ld.get("hiringOrganization") or {}).get("name") or ""
+        posted_iso = str(ld.get("datePosted") or "")
+        label, iso = _posted_label(posted_iso)
+        return {
+            "jobPostingInfo": {
+                "title": str(ld.get("title") or ""),
+                "location": loc_text,
+                "additionalLocations": [],
+                "jobDescription": str(ld.get("description") or ""),
+                "timeType": tt,
+                "startDate": iso or "",
+                "externalUrl": str(ld.get("url") or url),
+                "jobReqId": str(ld.get("uniqueJobCode") or rid),
+                "postedOn": label,
+                "country": ({"descriptor": "United States"}
+                            if _plain_loc_in_country(loc_text,
+                                                     "United States")
+                            else None),
+                "validThrough": str(ld.get("validThrough") or ""),
+            },
+            "hiringOrganization": {"name": org},
+            "similarJobs": [],
+            "firstPublishedIso": iso,
+        }
+
+    @staticmethod
+    def _div_inner(html: str, marker_re: str) -> str:
+        """Inner HTML of the <div> whose opening tag matches marker_re —
+        DIV-DEPTH balanced (a nested layout div must not truncate the
+        body — the paylocity _section_html lesson)."""
+        m = re.search(marker_re, html)
+        if not m:
+            return ""
+        start = m.end()
+        depth = 1
+        i = start
+        token = re.compile(r"<(/?)div\b[^>]*>", re.I)
+        for t in token.finditer(html, start):
+            depth += -1 if t.group(1) else 1
+            if depth == 0:
+                return html[start:t.start()].strip()
+        nxt = html.find("</div>", start)
+        return html[start:nxt].strip() if nxt >= 0 else ""
+
+    def _detail_from_html(self, page: str, url: str,
+                          rid: str) -> Optional[dict]:
+        """No-JobPosting-JSON-LD fallback: page <title> carries
+        '{job} - {org} - Career Page'; the JD = #job-description div."""
+        tm = re.search(r"<title>([^<]{0,200})</title>", page, re.I)
+        title = org = ""
+        if tm:
+            parts = [" ".join(p.split()) for p in tm.group(1).split(" - ")]
+            parts = [p for p in parts if p]
+            if parts:
+                title = parts[0]
+                org = parts[1] if len(parts) > 2 else ""
+        desc = self._div_inner(
+            page, r'<div[^>]*id="job-description"[^>]*>')
+        if not title and not desc:
+            return None
+        # location from the job-header attributes (fa-map-marker)
+        loc = ""
+        hm = re.search(
+            r"""fa-map-marker['"]?\s*></i>([^<]+)""", page)
+        if hm:
+            loc = hm.group(1).strip()
+        return {
+            "jobPostingInfo": {
+                "title": title,
+                "location": loc,
+                "additionalLocations": [],
+                "jobDescription": desc,
+                "timeType": "",          # honest — page serves none
+                "startDate": "",
+                "externalUrl": url,
+                "jobReqId": rid,
+                "postedOn": "",          # honest — page serves none
+                "country": ({"descriptor": "United States"}
+                            if _plain_loc_in_country(loc,
+                                                     "United States")
+                            else None),
+                "validThrough": "",
+            },
+            "hiringOrganization": {"name": org},
+            "similarJobs": [],
+            "firstPublishedIso": "",
+        }
+
+
+# ── teamtailor ({slug}.teamtailor.com JSON feed) ───────────────────────────
+
+class TeamtailorAdapter:
+    """ats:teamtailor:{slug} — the JSON-Feed endpoint every Teamtailor
+    careersite serves at {slug}.teamtailor.com/jobs.json.
+
+    S21 discovery (Cainiao, live-pinned 2026-09-27: 48 jobs, 5 US).
+    ONE CALL carries the complete board INCLUDING full JDs:
+
+      {version: jsonfeed-1.1, items: [{
+         title, url, date_published (ISO w/ TZ),
+         content_html (the FULL JD),
+         _jobposting: {          # schema.org JobPosting
+           title, description, datePosted,
+           hiringOrganization: {name: 'Cainiao'},   # the SELF-NAME
+           jobLocation: [{address: {addressLocality,
+                                    addressRegion,
+                                    addressCountry: 'US'}}],
+           identifier: {value: 8326489}}}]}
+
+    Field map (workday dialect):
+      reqId            identifier.value (fallback: the /jobs/{id}- URL)
+      timeType         NONE served — honest blank
+      postedOn         date_published (EXACT, ISO with TZ)
+      countries        addressCountry ISO codes ('US' → United States;
+                       unmapped 2-letter codes pass through, never
+                       blank-claimed) — multi-location rows take the SET
+      locationsText    locality + region, '; '-joined
+
+    Detail: served from the SAME feed (description == content_html) —
+    detail_payload re-reads the cached feed, zero extra network. B1:
+    non-dict / items not a list / missing url → refuse.
+    """
+
+    KIND = "teamtailor"
+    _TT = {}  # no employment-type field — honest blanks
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    def _feed(self) -> dict:
+        url = f"https://{self.org}.teamtailor.com/jobs.json"
+        d = fetch_json(url, cfg=self.cfg)
+        if not isinstance(d, dict) or not isinstance(d.get("items"),
+                                                     list):
+            raise RuntimeError(
+                f"teamtailor:{self.org}: {url} is not a JSON feed "
+                f"(no items list) — board dead or shape changed; "
+                f"refusing")
+        return d
+
+    @staticmethod
+    def _rid(item: dict) -> str:
+        jp = item.get("_jobposting") or {}
+        ident = jp.get("identifier") or {}
+        if ident.get("value") is not None:
+            return str(ident["value"])
+        u = str(item.get("url") or "")
+        m = re.search(r"/jobs/(\d+)", u)
+        return m.group(1) if m else ""
+
+    @staticmethod
+    def _locations(item: dict) -> list[dict]:
+        jp = item.get("_jobposting") or {}
+        locs = jp.get("jobLocation") or []
+        if isinstance(locs, dict):
+            locs = [locs]
+        return [x for x in locs if isinstance(x, dict)]
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        if time_type:
+            raise RuntimeError(
+                "teamtailor: the feed serves no employment type — a "
+                f"time_type filter ({time_type!r}) is unanswerable; "
+                "use --time-type '' (the s19 driver does)")
+        feed = self._feed()
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        for item in feed["items"]:
+            if not item.get("url"):
+                continue          # B1-adjacent: an item with no URL
+            rid = self._rid(item)
+            if not rid or rid in rows:
+                continue
+            locs = self._locations(item)
+            countries = []
+            loc_texts = []
+            for L in locs:
+                a = L.get("address") or {}
+                code = str(a.get("addressCountry") or "").strip()
+                if code:
+                    countries.append(
+                        ADPWorkforceNowAdapter._COUNTRY.get(
+                            code.upper(), code.upper()))
+                seg = [str(a.get("addressLocality") or ""),
+                       str(a.get("addressRegion") or "")]
+                seg = [s for s in seg if s and "United States" not in s]
+                if seg:
+                    loc_texts.append(", ".join(seg))
+            countries = _dedup_keep_order(countries)
+            if country:
+                if not any(workday.country_str_matches(c, country)
+                           for c in countries):
+                    dropped_country += 1
+                    continue
+            label, iso = _posted_label(str(item.get("date_published")
+                                           or ""))
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(item.get("title") or ""),
+                "company": "",
+                "url": str(item.get("url")),
+                "externalPath": f"/{rid}",
+                "locationsText": "; ".join(_dedup_keep_order(
+                    loc_texts)),
+                "postedOn": label,
+                "timeType": "",   # honest — feed serves none
+                "bulletFields": [rid],
+                "ats": "teamtailor",
+                "firstPublishedIso": iso,
+                "departments": [],
+                "countries": countries,
+                "remoteType": "",
+            }
+        meta = {
+            "complete": True, "total": len(feed["items"]), "pages": 1,
+            "country_client": False,
+            "client_filtered": dropped_country,
+            "ats": "teamtailor",
+        }
+        print(f"[{progress_label}] teamtailor:{self.org}: "
+              f"{len(rows)} rows of {meta['total']} listed"
+              + (f" ({dropped_country} non-{country} dropped "
+                 f"client-side)" if dropped_country else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        feed = self._feed()
+        for item in feed["items"]:
+            if self._rid(item) != rid:
+                continue
+            jp = item.get("_jobposting") or {}
+            locs = self._locations(item)
+            loc_texts = []
+            countries = []
+            for L in locs:
+                a = L.get("address") or {}
+                code = str(a.get("addressCountry") or "").strip()
+                if code:
+                    countries.append(ADPWorkforceNowAdapter._COUNTRY.get(
+                        code.upper(), code.upper()))
+                seg = [str(a.get("addressLocality") or ""),
+                       str(a.get("addressRegion") or "")]
+                seg = [s for s in seg if s and "United States" not in s]
+                if seg:
+                    loc_texts.append(", ".join(seg))
+            label, iso = _posted_label(str(item.get("date_published")
+                                           or ""))
+            org = (jp.get("hiringOrganization") or {}).get("name") or ""
+            desc = str(item.get("content_html")
+                       or jp.get("description") or "")
+            return {
+                "jobPostingInfo": {
+                    "title": str(item.get("title") or ""),
+                    "location": loc_texts[0] if loc_texts else "",
+                    "additionalLocations": loc_texts[1:],
+                    "jobDescription": desc,
+                    "timeType": "",     # honest — feed serves none
+                    "startDate": iso or "",
+                    "externalUrl": str(item.get("url") or ""),
+                    "jobReqId": rid,
+                    "postedOn": label,
+                    "country": ({"descriptor": countries[0]}
+                                if countries else None),
+                },
+                "hiringOrganization": {"name": org},
+                "similarJobs": [],
+                "firstPublishedIso": iso,
+            }
+        return None
+
+# ── radancy (tpt portal: SearchJobs pagination + JobDetail articles) ───────
+
+class RadancyAdapter:
+    """ats:radancy:{host} — the Radancy/TPT portal (jobs.{company}.com).
+
+    S21 discovery (Lenovo jobs.lenovo.com, live-pinned 2026-09-27:
+    1,010 global jobs, 255 matching 'United States'). List pages are
+    SERVER-RENDERED at
+
+      /en_US/careers/SearchJobs/?jobRecordsPerPage=10&jobOffset={n}
+                                    [&search={term}]
+
+    (jobRecordsPerPage is server-capped at 10; jobOffset advances
+    cleanly). The free-text search param hits the LOCATION index —
+    'United States' is a server-side prefilter (verified: all rows US;
+    the client ladder still re-verifies each row loudly).
+
+    Card map: the JobDetail/{Title-Slug}/{id} anchor (reqId = the URL
+    id), span.paragraph = department, the article__header__text__subtitle
+    spans = location then 'Req #: WD…' (Lenovo's own requisition id →
+    bulletFields).
+
+    Detail (JobDetail/{slug}/{id}): STRUCTURED field labels —
+    Country/Region, State, City, Date ('Saturday, September 26, 2026'),
+    Working time ('Full-time' — _TT-normalized) — plus the 'Description
+    and Requirements' article's field__value HTML as the full JD. B1:
+    a 200 page with no JobDetail cards and no empty-marker → refuse.
+    """
+
+    KIND = "radancy"
+    _TT = {"full-time": "Full time", "full time": "Full time",
+           "part-time": "Part time", "part time": "Part time",
+           "contract": "Contract", "internship": "Internship",
+           "temporary": "Temporary"}
+
+    def __init__(self, org: str, cfg: Config):
+        # org = the portal HOST (e.g. 'jobs.lenovo.com')
+        self.org = org
+        self.cfg = cfg
+
+    @property
+    def _base(self) -> str:
+        return f"https://{self.org}"
+
+    # -- list ------------------------------------------------------------
+
+    def _search_page(self, offset: int, search: Optional[str]) -> str:
+        q = f"{self._base}/en_US/careers/SearchJobs/"
+        q += f"?jobRecordsPerPage=10&jobOffset={offset}"
+        if search:
+            from urllib.parse import quote
+            q += f"&search={quote(search)}"
+        return _fetch_text_cached(q, f"ats:radancy:{self.org}", self.cfg)
+
+    @staticmethod
+    def _parse_cards(html: str) -> list[dict]:
+        cards = []
+        seen = set()
+        for m in re.finditer(
+                r'href="([^"]*JobDetail/([A-Za-z0-9-]+)/(\d+))"',
+                html):
+            url, slug, jid = m.group(1), m.group(2), m.group(3)
+            if jid in seen:
+                continue
+            seen.add(jid)
+            # the card block around this link: title anchor text,
+            # department, location, Req #
+            i = m.start()
+            block = html[i:html.find("</article>", i)]
+            block = block[:6000] if len(block) > 6000 else block
+            tm = re.search(
+                r'JobDetail/[A-Za-z0-9-]+/\d+"[^>]*>\s*(.*?)\s*</a>',
+                block, re.S)
+            title = re.sub(r"<[^>]+>", "", tm.group(1)).strip() \
+                if tm else ""
+            dm = re.search(
+                r'<span class="paragraph">\s*(.*?)\s*</span>', block, re.S)
+            dept = re.sub(r"<[^>]+>", "", dm.group(1)).strip() \
+                if dm else ""
+            lm = re.search(
+                r'article__header__text__subtitle">\s*<span>\s*(.*?)'
+                r"\s*</span>", block, re.S)
+            loc = re.sub(r"<[^>]+>", "", lm.group(1)).strip() \
+                if lm else ""
+            rm = re.search(r"Req #:?\s*([A-Z0-9]+)", block)
+            req = rm.group(1) if rm else ""
+            cards.append({"reqId": jid, "title": title, "url": url,
+                          "department": dept, "location": loc,
+                          "reqNo": req})
+        return cards
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        if time_type:
+            raise RuntimeError(
+                "radancy: the list serves no employment type (it lives "
+                "in the detail's 'Working time' field) — a time_type "
+                f"filter ({time_type!r}) is unanswerable at list time; "
+                "use --time-type '' (the s19 driver does)")
+        # server-side location prefilter for the US case (the search
+        # param hits the location index); other countries walk unfiltered
+        search = None
+        if (country or "").strip().lower() in workday._US_COUNTRY_NAMES:
+            search = "United States"
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        offset = 0
+        pages = 0
+        total_cards = 0
+        while pages < 150:
+            html = self._search_page(offset, search)
+            if len(html) < 500:
+                raise RuntimeError(
+                    f"radancy:{self.org}: short/empty search page at "
+                    f"offset {offset} — refusing")
+            cards = self._parse_cards(html)
+            if not cards:
+                break
+            for c in cards:
+                if country and not _plain_loc_in_country(
+                        c["location"], country):
+                    dropped_country += 1
+                    continue
+                rows[c["reqId"]] = {
+                    "reqId": c["reqId"],
+                    "title": c["title"],
+                    "company": "",
+                    "url": c["url"] if c["url"].startswith("http")
+                           else f"{self._base}{c['url']}",
+                    "externalPath": f"/{c['reqId']}",
+                    "locationsText": c["location"],
+                    "postedOn": "",      # honest — detail fills
+                    "timeType": "",      # honest — detail fills
+                    "bulletFields": [x for x in (c["reqId"], c["reqNo"])
+                                     if x],
+                    "ats": "radancy",
+                    "firstPublishedIso": "",
+                    "departments": [c["department"]] if c["department"] else [],
+                    "countries": [],
+                    "remoteType": "",
+                }
+            total_cards += len(cards)
+            pages += 1
+            offset += len(cards)
+            if pages % 5 == 0:
+                print(f"[{progress_label}] radancy:{self.org} "
+                      f"page {pages}: {len(rows)} rows kept "
+                      f"({dropped_country} dropped)", file=sys.stderr,
+                      flush=True)
+        meta = {
+            "complete": True, "total": total_cards, "pages": pages,
+            "country_client": False,
+            "client_filtered": dropped_country,
+            "ats": "radancy",
+            "server_prefilter": search,
+        }
+        print(f"[{progress_label}] radancy:{self.org}: {len(rows)} rows"
+              + (f" of {total_cards} cards"
+                 + (f" (server search={search!r})"
+                    if search else ""))
+              + (f" ({dropped_country} non-{country} dropped "
+                 f"client-side)" if dropped_country else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    # -- detail -----------------------------------------------------------
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        # resolve the URL from the list (the title slug is not derivable)
+        rows, _ = self.list_board(country=country)
+        row = rows.get(rid)
+        if not row:
+            return None
+        url = row["url"]
+        page = _fetch_text_cached(url, f"ats:radancy:{self.org}", self.cfg)
+        if len(page) < 500 or "JobDetail" not in url:
+            return None
+        # structured fields: label → value pairs
+        fields: dict[str, str] = {}
+        for m in re.finditer(
+                r'article__content__view__field__label">\s*([^<]{2,40})'
+                r'\s*</div>\s*'
+                r'<div class="article__content__view__field__value">\s*'
+                r'(.*?)\s*</div>', page, re.S):
+            label = m.group(1).strip().rstrip(":")
+            value = re.sub(r"<[^>]+>", " ", m.group(2))
+            value = " ".join(value.split())
+            fields[label] = value
+        country_field = fields.get("Country/Region", "")
+        state = fields.get("State", "")
+        city = fields.get("City", "")
+        loc_parts = [p for p in (city, state, country_field) if p]
+        loc_text = ", ".join(loc_parts)
+        tt_raw = fields.get("Working time", "")
+        tt = self._TT.get(tt_raw.lower(), tt_raw) if tt_raw else ""
+        date_raw = fields.get("Date", "")
+        iso = ""
+        if date_raw:
+            try:
+                dt = datetime.strptime(date_raw.replace(",", ""),
+                                       "%A %B %d %Y")
+                iso = dt.date().isoformat()
+            except ValueError:
+                pass
+        label, iso = _posted_label(iso or "")
+        # the JD: the 'Description and Requirements' article's values
+        desc = ""
+        i = page.find("Description and Requirements")
+        if i > 0:
+            seg = page[i:page.find("</article>", i)]
+            vals = re.findall(
+                r'article__content__view__field__value">\s*(.*?)'
+                r"\s*</div>", seg, re.S)
+            desc = "\n".join(v.strip() for v in vals if v.strip())
+        # the portal page carries NO org self-name (og:title is the job
+        # title) — the config company is the authority (honest blank)
+        # normalize the country descriptor to the workday vocabulary
+        cdesc = country_field
+        if cdesc and cdesc.strip().lower() in workday._US_COUNTRY_NAMES:
+            cdesc = "United States"
+        return {
+            "jobPostingInfo": {
+                "title": row["title"],
+                "location": loc_text or row["locationsText"],
+                "additionalLocations": [],
+                "jobDescription": desc,
+                "timeType": tt,
+                "startDate": iso or "",
+                "externalUrl": url,
+                "jobReqId": fields.get("Req #", "") or rid,
+                "postedOn": label,
+                "country": ({"descriptor": cdesc}
+                            if cdesc else None),
+                "validThrough": "",
+            },
+            "hiringOrganization": {"name": ""},
+            "similarJobs": [],
+            "firstPublishedIso": iso,
+        }
+
+# ── rippling (ats.rippling.com Next.js boards) ─────────────────────────────
+
+class RipplingAdapter:
+    """ats:rippling:{slug} — the public board at
+    ats.rippling.com/{slug}/jobs (a Next.js SSR app).
+
+    S21 discovery (Webull, live-pinned 2026-09-27: 30 jobs / 2 pages).
+    The jobs are NOT behind an API from plain fetch (the XHR layer sits
+    behind Cloudflare's challenge platform) — but every page is
+    SERVER-RENDERED with the full __NEXT_DATA__ payload:
+
+      pageProps.dehydratedState.queries → queryKey
+      ['board', {slug}, 'job-posts', …] → state.data
+        {items, page, pageSize, totalItems, totalPages}
+      item = {id (uuid), name, url, department: {name},
+              locations: [{name, country: 'United States',
+                           countryCode: 'US', state, stateCode, city,
+                           workplaceType: ON_SITE|REMOTE|HYBRID}]}
+
+    Pagination: ?page={n} (0-based, totalPages from the payload).
+
+    Detail (/{slug}/jobs/{uuid}): apiData.jobPost = {name,
+    companyName (the SELF-NAME), createdOn (ISO w/ TZ), employmentType
+    {label: SALARIED_FT, id: 'Salaried, full-time'} → _TT, description
+    {company, role} (both HTML), url}. timeType/postedOn are
+    DETAIL-only fields — the list serves neither (honest blanks; a
+    list-time_type filter is REFUSED, the paylocity class). B1: no
+    __NEXT_DATA__ / no job-posts query / items not a list → refuse.
+    """
+
+    KIND = "rippling"
+    _TT = {"salaried_ft": "Full time", "salaried, full-time": "Full time",
+           "hourly_ft": "Full time", "hourly, full-time": "Full time",
+           "salaried_pt": "Part time", "salaried, part-time": "Part time",
+           "hourly_pt": "Part time", "hourly, part-time": "Part time",
+           "contract": "Contract", "internship": "Internship",
+           "temporary": "Temporary"}
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    @staticmethod
+    def _next_data(html: str) -> dict:
+        m = re.search(
+            r'<script id="__NEXT_DATA__" type="application/json">'
+            r"(.*?)</script>", html, re.S)
+        if not m:
+            raise RuntimeError(
+                "rippling: no __NEXT_DATA__ — not a rippling board page")
+        return json.loads(m.group(1))
+
+    @classmethod
+    def _job_posts_query(cls, html: str) -> dict:
+        d = cls._next_data(html)
+        dh = (d.get("props", {}).get("pageProps", {})
+                .get("dehydratedState", {}))
+        for q in dh.get("queries", []) or []:
+            key = str(q.get("queryKey", ""))
+            if "job-posts" in key:
+                data = (q.get("state") or {}).get("data") or {}
+                if isinstance(data, dict) and \
+                        isinstance(data.get("items"), list):
+                    return data
+        raise RuntimeError(
+            "rippling: no job-posts query in __NEXT_DATA__ — board dead "
+            "or shape changed; refusing")
+
+    def _page(self, n: int) -> dict:
+        url = f"https://ats.rippling.com/{self.org}/jobs?page={n}"
+        html = _fetch_text_cached(url, f"ats:rippling:{self.org}",
+                                  self.cfg)
+        if len(html) < 500:
+            raise RuntimeError(
+                f"rippling:{self.org}: short/empty board page {n} — "
+                f"refusing")
+        return self._job_posts_query(html)
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        if time_type:
+            raise RuntimeError(
+                "rippling: the board LIST serves no employment type (it "
+                "lives in the detail's employmentType) — a time_type "
+                f"filter ({time_type!r}) is unanswerable at list time; "
+                "use --time-type '' (the s19 driver does)")
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        total = None
+        page = 0
+        pages = 0
+        while pages < 60:
+            data = self._page(page)
+            total = int(data.get("totalItems") or 0)
+            totalPages = int(data.get("totalPages") or 1)
+            items = data.get("items") or []
+            if not items:
+                break
+            for it in items:
+                rid = str(it.get("id") or "")
+                if not rid or rid in rows:
+                    continue
+                locs = [L for L in (it.get("locations") or [])
+                        if isinstance(L, dict)]
+                countries = _dedup_keep_order(
+                    [str(L.get("country") or "") for L in locs
+                     if L.get("country")])
+                if country and not any(
+                        workday.country_str_matches(c, country)
+                        for c in countries):
+                    dropped_country += 1
+                    continue
+                loc_text = "; ".join(_dedup_keep_order(
+                    [str(L.get("name") or "") for L in locs
+                     if L.get("name")]))
+                remote = any(str(L.get("workplaceType")).upper()
+                             == "REMOTE" for L in locs)
+                rows[rid] = {
+                    "reqId": rid,
+                    "title": str(it.get("name") or ""),
+                    "company": "",
+                    "url": str(it.get("url") or ""),
+                    "externalPath": f"/{rid}",
+                    "locationsText": loc_text,
+                    "postedOn": "",      # honest — detail fills
+                    "timeType": "",      # honest — detail fills
+                    "bulletFields": [rid],
+                    "ats": "rippling",
+                    "firstPublishedIso": "",
+                    "departments": [str((it.get("department") or {})
+                                        .get("name") or "")]
+                    if (it.get("department") or {}).get("name") else [],
+                    "countries": countries,
+                    "remoteType": "Remote" if remote else "",
+                }
+            pages += 1
+            page += 1
+            if page >= totalPages:
+                break
+        meta = {
+            "complete": True, "total": total if total is not None
+            else len(rows), "pages": pages,
+            "country_client": False,
+            "client_filtered": dropped_country,
+            "ats": "rippling",
+        }
+        print(f"[{progress_label}] rippling:{self.org}: {len(rows)} rows"
+              + (f" of {meta['total']} listed" if meta['total'] else "")
+              + (f" ({dropped_country} non-{country} dropped "
+                 f"client-side)" if dropped_country else ""),
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").rsplit("/", 1)[-1]
+        # list rows carry the canonical url; fallback constructs it
+        url = None
+        rows, _ = self.list_board(country=country)
+        row = rows.get(rid)
+        if row:
+            url = row["url"]
+        if not url:
+            url = f"https://ats.rippling.com/{self.org}/jobs/{rid}"
+        page = _fetch_text_cached(url, f"ats:rippling:{self.org}",
+                                  self.cfg)
+        if len(page) < 500:
+            return None
+        d = self._next_data(page)
+        api = d.get("props", {}).get("pageProps", {}).get("apiData") or {}
+        jp = api.get("jobPost") or {}
+        if not jp or str(jp.get("uuid") or rid) != rid and \
+                not jp.get("name"):
+            return None
+        et = jp.get("employmentType") or {}
+        tt_raw = str(et.get("id") or et.get("label") or "")
+        tt = self._TT.get(tt_raw.lower(), tt_raw) if tt_raw else ""
+        created = str(jp.get("createdOn") or "")
+        label, iso = _posted_label(created)
+        desc = jp.get("description") or {}
+        full_desc = "\n".join(
+            x for x in (str(desc.get("company") or ""),
+                        str(desc.get("role") or "")) if x)
+        wls = [str(x) for x in (jp.get("workLocations") or []) if x]
+        return {
+            "jobPostingInfo": {
+                "title": str(jp.get("name") or ""),
+                "location": wls[0] if wls else
+                (rows.get(rid, {}).get("locationsText", "") if rows
+                 else ""),
+                "additionalLocations": wls[1:],
+                "jobDescription": full_desc,
+                "timeType": tt,
+                "startDate": iso or "",
+                "externalUrl": str(jp.get("url") or url),
+                "jobReqId": rid,
+                "postedOn": label,
+                "country": ({"descriptor": "United States"}
+                            if country and
+                            workday.country_str_matches(
+                                "United States", country) else None),
+                "validThrough": "",
+            },
+            "hiringOrganization": {
+                "name": str(jp.get("companyName") or "")},
+            "similarJobs": [],
+            "firstPublishedIso": iso,
+        }
+
 
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "lever": LeverAdapter, "workable": WorkableAdapter,
              "feishuhire": FeishuHireAdapter,
              "bytedance": ByteDanceAdapter, "alibaba": AlibabaAdapter,
              "tripcom": TripComAdapter, "xiaohongshu": XiaohongshuAdapter,
-             "paylocity": PaylocityAdapter}
+             "paylocity": PaylocityAdapter, "adp": ADPWorkforceNowAdapter,
+             "jazzhr": JazzHRAdapter, "teamtailor": TeamtailorAdapter,
+             "radancy": RadancyAdapter, "rippling": RipplingAdapter}

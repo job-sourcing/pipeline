@@ -2,70 +2,164 @@
  "brand": "Pop Mart",
  "tier": "lca",
  "lca": "POP MART AMERICAS INC.",
- "ts": "2026-09-27T02:02:40.122Z",
- "candidates": [],
+ "ts": "2026-09-27T07:31:16.993Z",
+ "candidates": [
+  {
+   "url": "https://popmart.wd102.myworkdayjobs.com/popmart",
+   "title": "",
+   "status": 200,
+   "bytes": 7944,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:popmart",
+   "score": 17,
+   "snippet": "POP MART is a rising global force in pop culture and entertainment. Our purpose is to celebrate daily moments and inspire through designer toys and fun experien",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://m.popmart.com/us/career",
+   "title": "",
+   "status": 200,
+   "bytes": 24226,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "POP MART is a market leading player in character-based entertainment, renowned for pioneering the designer toy culture worldwide.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://popmart.zhiye.com/jobs",
+   "title": "泡泡玛特招聘官网",
+   "status": 200,
+   "bytes": 18599,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "泡泡玛特招聘官网 泡泡玛特以IP为核心，为全球创作者打造了全链路创意孵化与运营平台，给消费者提供令人心动的产品、服务及美好的娱乐体验。加入我们，一起创造潮流，传递美好。",
+   "backend": "direct"
+  }
+ ],
  "results": [
   {
-   "t": "POP MART Americas Inc.: Retail Sales Associate",
-   "u": "https://www.wayup.com",
-   "s": "Sorry, this listing is no longer accepting applications. 4,000+ employees worldwide, Must be able to work flexible hours including nights,"
+   "t": "Search for Jobs",
+   "u": "https://popmart.wd102.myworkdayjobs.com/popmart",
+   "s": "POP MART is a rising global force in pop culture and entertainment. Our purpose is to celebrate daily moments and inspire through designer toys and fun experien"
   },
   {
-   "t": "Retail Sales Associate - Toronto Eaton at POP MART",
-   "u": "https://ca.linkedin.com",
-   "s": "1 day ago — Part-time Entry level role. Retail Hourly: $20.20 Job Overview POP MART is seeking energetic, customer-focused Sales Associates who are ..."
+   "t": "POP MART Official | Shop",
+   "u": "https://m.popmart.com/us/career",
+   "s": "POP MART is a market leading player in character-based entertainment, renowned for pioneering the designer toy culture worldwide."
   },
   {
-   "t": "Retail Assistant Store Manager- The Woodlands Mall",
-   "u": "https://www.tealhq.com",
-   "s": "Aug 15, 2026 — New opening - Full-time Retail Assistant Store Manager- The Woodlands Mall at POP MART 18 - 23, Onsite position hiring now."
+   "t": "POP MART: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/pop-mart/jobs/",
+   "s": "POP MART | 262,290 followers on LinkedIn. To light up Passion and Bring Joy | Founded in 2010, POP MART (09992.HK) is a leading company in the designer collecti"
   },
   {
-   "t": "POP MART - Jobs",
-   "u": "https://bebee.com",
-   "s": "Recent job openings · Store Manager (Ayala Glorietta ) · Sales Associate (SM Megamall) · Sales Associate (Mall of Asia) · Sales Associate (Mall of Asia) · Sales"
+   "t": "Openings at POP MART Americas Inc.",
+   "u": "https://pop-mart-americas-inc.breezy.hr/",
+   "s": "POP MART (09992.HK), founded in 2010, is a leading global company in the trend culture and entertainment industry. Centered around IP, POP MART has built a comp"
   },
   {
-   "t": "Only work here if you're a sales associate",
-   "u": "https://www.indeed.com",
-   "s": "Jun 9, 2026 — Retail Sales Associate Assistant Manager Assistant Manager Seasonal Associate Store. Retail Sales Associate Construction Project Manager Store ..."
+   "t": "泡泡玛特招聘官网",
+   "u": "https://popmart.zhiye.com/jobs",
+   "s": "泡泡玛特招聘官网 泡泡玛特以IP为核心，为全球创作者打造了全链路创意孵化与运营平台，给消费者提供令人心动的产品、服务及美好的娱乐体验。加入我们，一起创造潮流，传递美好。"
   },
   {
-   "t": "POP MART Jobs & Careers - 7 Open Positions",
-   "u": "https://www.glassdoor.ca",
-   "s": "POP MART jobs · Retail Assistant Store Manager. Toronto . $23.20 - $28.20 Per hour (Employer provided) · Retail Store Manager- Fairview. Toronto. $60K - $70K ( "
+   "t": "Now Hiring: 200 Pop Mart Careers Jobs | Indeed",
+   "u": "https://www.indeed.com/q-pop-mart-careers-jobs.html",
+   "s": "209 Pop Mart Careers jobs. Apply to Retail Sales Associate, Operations Coordinator, Regional Manager and more. Hiring now on Indeed.com."
   },
   {
-   "t": "Pop Mart Jobs in Indooroopilly QLD 4068 - Sep 2026",
-   "u": "https://au.seek.com",
-   "s": "Find your ideal job on SEEK with 19 Pop Mart jobs (2 at Pop Mart) listed in Indooroopilly QLD 4068 . View all the Pop Mart vacancies now with new jobs added ..."
+   "t": "Search pop+mart+careers - POP MART (United States)",
+   "u": "https://www.popmart.com/us/search/pop+mart+careers",
+   "s": "POP MART is a market leading player in character-based entertainment, renowned for pioneering the designer toy culture worldwide."
   },
   {
-   "t": "Pop Mart Jobs, Hiring in Santa Mesa Manila City Metro Manila",
-   "u": "https://ph.jobstreet.com",
-   "s": "Find your ideal job at Jobstreet with 52 Pop Mart jobs found in Santa Mesa Manila City Metro Manila . View all our Pop Mart vacancies now with new jobs added .."
+   "t": "Pop Mart Jobs in Worldwide (14,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/pop-mart-jobs-worldwide",
+   "s": "Today's top 14,000+ Pop Mart jobs in Worldwide. Leverage your professional network, and get hired. New Pop Mart jobs added daily."
   },
   {
-   "t": "Jimmy Rocker Mall =-- World's Hottest Cybermall -=- Health",
-   "u": "https://www.jimmyrocker.com",
-   "s": "Advertise your product at the World's Hottest Cybermall! TM . Jimmy Rocker Loans Investing Jobs Employment Jimmy_Rocker Executive search new york money, stock, "
+   "t": "Search for Jobs",
+   "u": "https://popmart.wd102.myworkdayjobs.com/popmart",
+   "s": "POP MART is a rising global force in pop culture and entertainment. Our purpose is to celebrate daily moments and inspire through designer toys and fun experien"
   },
   {
-   "t": "Jimmy Rocker Mall - Commerce -> Classifieds",
-   "u": "https://www.jimmyrocker.net",
-   "s": "Jimmy Rocker Mall -> Commerce -> Classifieds -> Post Your Classified Ad on Our Jimmy Rocker Bulletin Boards !"
+   "t": "POP MART Official | Shop",
+   "u": "https://m.popmart.com/us/career",
+   "s": "POP MART is a market leading player in character-based entertainment, renowned for pioneering the designer toy culture worldwide."
   },
   {
-   "t": "Necrophage Devouring Swarm :: Stellaris 綜合討論",
-   "u": "https://steamcommunity.com",
-   "s": "So, I was told this is a thing, like, a good thing, any pointers on how to make this work and what to watch out for with this unique style?"
+   "t": "POP MART: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/pop-mart/jobs/",
+   "s": "POP MART | 262,290 followers on LinkedIn. To light up Passion and Bring Joy | Founded in 2010, POP MART (09992.HK) is a leading company in the designer collecti"
   },
   {
-   "t": "TOP 10 BEST Smoked Salmon in Burnaby, BC, Canada",
-   "u": "https://www.yelp.com",
-   "s": "1. Jet Set Sam Smoked Salmon & Specialty Foods · 2. West Coast Smokery · 3. Yoshi's Salmon Smokehouse · 4. The Daily Catch · 5. Seafood City · 6. Whole Foods Ma"
+   "t": "Openings at POP MART Americas Inc.",
+   "u": "https://pop-mart-americas-inc.breezy.hr/",
+   "s": "POP MART (09992.HK), founded in 2010, is a leading global company in the trend culture and entertainment industry. Centered around IP, POP MART has built a comp"
+  },
+  {
+   "t": "泡泡玛特招聘官网",
+   "u": "https://popmart.zhiye.com/",
+   "s": "泡泡玛特招聘官网 泡泡玛特以IP为核心，为全球创作者打造了全链路创意孵化与运营平台，给消费者提供令人心动的产品、服务及美好的娱乐体验。加入我们，一起创造潮流，传递美好。"
+  },
+  {
+   "t": "200 Pop Mart Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Pop-Mart-jobs.html",
+   "s": "216 Pop Mart jobs. Apply to Retail Sales Associate, Stocker, Retail Store Manager and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 200 Pop Mart Careers Jobs | Indeed",
+   "u": "https://www.indeed.com/q-pop-mart-careers-jobs.html",
+   "s": "209 Pop Mart Careers jobs. Apply to Retail Sales Associate, Operations Coordinator, Regional Manager and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "322 Pop.mart jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/pop.mart%C2%A0-jobs",
+   "s": "Today's top 322 Pop.mart jobs in United States. Leverage your professional network, and get hired. New Pop.mart jobs added daily."
+  },
+  {
+   "t": "Pop Mart Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/pop-mart-jobs",
+   "s": "Find your ideal job at Jobstreet with 9 Pop Mart jobs found in Singapore. View all our Pop Mart vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Popmart Sg Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/popmart-sg-jobs",
+   "s": "Find your ideal job at Jobstreet with 2 Popmart Sg jobs found in Singapore. View all our Popmart Sg vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "POP MART: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/pop-mart/jobs/",
+   "s": "POP MART | 262,290 followers on LinkedIn. To light up Passion and Bring Joy | Founded in 2010, POP MART (09992.HK) is a leading company in the designer collecti"
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://popmart.wd102.myworkdayjobs.com/popmart",
+   "s": "Not finding the right fit? Let us know you're interested in a future opportunity by clicking Get Started below or create an account by clicking 'Sign In' at the"
   }
  ],
  "dict_hits": [],
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://popmart.wd102.myworkdayjobs.com/popmart",
+  "title": "",
+  "status": 200,
+  "bytes": 7944,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:popmart",
+  "score": 17,
+  "snippet": "POP MART is a rising global force in pop culture and entertainment. Our purpose is to celebrate daily moments and inspire through designer toys and fun experien",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

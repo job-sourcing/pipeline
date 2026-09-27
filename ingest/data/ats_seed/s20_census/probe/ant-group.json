@@ -2,10 +2,153 @@
  "brand": "Ant Group",
  "tier": "lca",
  "lca": "ANT TECHNOLOGIES U.S., INC.",
- "ts": "2026-09-27T02:11:02.298Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:41:31.738Z",
+ "candidates": [
+  {
+   "url": "https://www.ant-intl.com/en/career/",
+   "title": "Join Us | Ant International",
+   "status": 200,
+   "bytes": 1373967,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Us World-changing careers at Ant International Join Us How your career with Ant International makes a global impact Search Jobs Discover Ant International'",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.ant-intl.com/en/job-search/",
+   "title": "Job Search | Ant International",
+   "status": 200,
+   "bytes": 1368526,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover career opportunities at Ant International. Search open roles across technology, product, operations, marketing, and more.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://antongroup.in/careers/",
+   "title": "Careers &#8211; Anton Group",
+   "status": 200,
+   "bytes": 61248,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers at ANTON Join Our Dynamic Team and Make a Difference At ANTON, we believe that our success is driven by the passion, creativity, and expertise of our te",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Us | Ant International",
+   "u": "https://www.ant-intl.com/en/career/",
+   "s": "Join Us World-changing careers at Ant International Join Us How your career with Ant International makes a global impact Search Jobs Discover Ant International'"
+  },
+  {
+   "t": "antgroup.com",
+   "u": "https://talent.antgroup.com/home?chInfo=ch_official",
+   "s": "蚂蚁集团起步于2004年诞生的支付宝，源于一份为社会解决信任问题的初心，经过近二十年的发展，已成为世界领先的互联网开放平台。期待你的加入，让理想有回响!"
+  },
+  {
+   "t": "Job Search | Ant International",
+   "u": "https://www.ant-intl.com/en/job-search/",
+   "s": "Discover career opportunities at Ant International. Search open roles across technology, product, operations, marketing, and more."
+  },
+  {
+   "t": "Ant Group - Home",
+   "u": "https://www.antgroup.com/en/",
+   "s": "Ant Group traces its roots back to Alipay, which was established in 2004 to create trust between online sellers and buyers. Over the years, Ant Group has grown "
+  },
+  {
+   "t": "Careers - Anton Group",
+   "u": "https://antongroup.in/careers/",
+   "s": "Careers at ANTON Join Our Dynamic Team and Make a Difference At ANTON, we believe that our success is driven by the passion, creativity, and expertise of our te"
+  },
+  {
+   "t": "32 Ant Group jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ant-group-jobs-worldwide",
+   "s": "Today's top 32 Ant Group jobs in Worldwide. Leverage your professional network, and get hired. New Ant Group jobs added daily."
+  },
+  {
+   "t": "Ant Group Jobs in Singapore (2,000+ Open Roles) | LinkedIn",
+   "u": "https://sg.linkedin.com/jobs/ant-group-jobs",
+   "s": "Today's top 2,000+ Ant Group jobs in Singapore. Leverage your professional network, and get hired. New Ant Group jobs added daily."
+  },
+  {
+   "t": "Ant Group Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/ant-group-jobs",
+   "s": "Find your ideal job on Jobstreet with 25 Ant Group jobs (15 at Ant Group) listed in Singapore. View all the Ant Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Join Us | Ant International",
+   "u": "https://www.ant-intl.com/en/career/",
+   "s": "Join Us World-changing careers at Ant International Join Us How your career with Ant International makes a global impact Search Jobs Discover Ant International'"
+  },
+  {
+   "t": "antgroup.com",
+   "u": "https://talent.antgroup.com/home?chInfo=ch_official",
+   "s": "蚂蚁集团起步于2004年诞生的支付宝，源于一份为社会解决信任问题的初心，经过近二十年的发展，已成为世界领先的互联网开放平台。期待你的加入，让理想有回响!"
+  },
+  {
+   "t": "Job Search | Ant International",
+   "u": "https://www.ant-intl.com/en/job-search/",
+   "s": "Discover career opportunities at Ant International. Search open roles across technology, product, operations, marketing, and more."
+  },
+  {
+   "t": "Ant Group Jobs in United States (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ant-group-jobs",
+   "s": "Today's top 1,000+ Ant Group jobs in United States. Leverage your professional network, and get hired. New Ant Group jobs added daily."
+  },
+  {
+   "t": "Jobs At Ant Group Jobs in United States (2 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/jobs-at-ant-group-jobs",
+   "s": "Today's top 2 Jobs At Ant Group jobs in United States. Leverage your professional network, and get hired. New Jobs At Ant Group jobs added daily."
+  },
+  {
+   "t": "Job vacancies | ANT AG",
+   "u": "https://ant-ag.com/en/job-vacancies",
+   "s": "Start your career at ANT. Browse through our current vacancies and become part of our team. We are looking forward to meeting you!"
+  },
+  {
+   "t": "1,000 Ant Group Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-ant-group-jobs.html",
+   "s": "Today's top Ant Group jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Ant Group - Home",
+   "u": "https://www.antgroup.com/en/",
+   "s": "Ant Group is an innovative technology provider that strives to bring the world inclusive, green, and sustainable services."
+  },
+  {
+   "t": "Join Us | Ant International",
+   "u": "https://www.ant-intl.com/en/career/",
+   "s": "Join Us World-changing careers at Ant International Join Us How your career with Ant International makes a global impact Search Jobs Discover Ant International'"
+  },
+  {
+   "t": "32 Ant Group jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ant-group-jobs-worldwide",
+   "s": "Today's top 32 Ant Group jobs in Worldwide. Leverage your professional network, and get hired. New Ant Group jobs added daily."
+  },
+  {
+   "t": "antgroup.com",
+   "u": "https://talent.antgroup.com/home?chInfo=ch_official",
+   "s": "蚂蚁集团起步于2004年诞生的支付宝，源于一份为社会解决信任问题的初心，经过近二十年的发展，已成为世界领先的互联网开放平台。期待你的加入，让理想有回响!"
+  },
+  {
+   "t": "Job Search | Ant International",
+   "u": "https://www.ant-intl.com/en/job-search/",
+   "s": "Discover career opportunities at Ant International. Search open roles across technology, product, operations, marketing, and more."
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.ant-intl.com/en/job-search/",
+  "platform": "custom",
+  "title": "Job Search | Ant International"
+ },
+ "verdict": "custom_surface"
 }

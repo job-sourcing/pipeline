@@ -2,113 +2,148 @@
  "brand": "GreenTree Hospitality",
  "tier": "lca",
  "lca": "GREENTREE HOSPITALITY GROUP, INC",
- "ts": "2026-09-27T02:06:04.697Z",
+ "ts": "2026-09-27T07:58:16.745Z",
  "candidates": [
   {
-   "url": "https://greentreeinn.com",
-   "title": "GreenTree Hospitality Group | Eco-Friendly Stays &amp; Quality Service",
+   "url": "https://www.greentreegroup.com/careers/",
+   "title": "Client Challenge",
    "status": 200,
-   "bytes": 189279,
+   "bytes": 3036,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers - View open positions, benefits, and read real reviews from current and past employees at The Greentree Group!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.jobstagg.com/company-profile/greentree-hospitality-group",
+   "title": "",
+   "status": 200,
+   "bytes": 1552,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore jobs at Greentree Hospitality Group. Discover job openings, company culture, benifits and growth opportunities.",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://greentreeinn.com/talent-community/",
+   "title": "Talent Community - GreenTree Inn",
+   "status": 200,
+   "bytes": 122625,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 5,
-   "snippet": "We are always looking for passionate, dependable individuals who want to build a career in hospitality . 1-860-854-7336"
-  },
-  {
-   "url": "https://www.coraltreehospitality.com",
-   "title": "Hotel Management &amp; Development | CoralTree Hospitality – CoralTree Hospitality",
-   "status": 200,
-   "bytes": 89960,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 3,
-   "snippet": "Join our team! Explore rewarding hospitality management jobs and career opportunities within our growing portfolio of luxury hotels and resorts."
+   "snippet": "Talent Community At GreenTree, we know great hotels start with great people. We are always looking for passionate, dependable individuals who want to build a ca",
+   "backend": "direct"
   }
  ],
  "results": [
   {
    "t": "Talent Community - GreenTree Inn",
-   "u": "https://greentreeinn.com",
-   "s": "We are always looking for passionate, dependable individuals who want to build a career in hospitality . 1-860-854-7336"
+   "u": "https://greentreeinn.com/talent-community/",
+   "s": "Talent Community At GreenTree, we know great hotels start with great people. We are always looking for passionate, dependable individuals who want to build a ca"
   },
   {
    "t": "GreenTree Hospitality Group, Inc. Careers and Employment",
-   "u": "https://www.indeed.com",
-   "s": "Find out what works well at GreenTree Hospitality Group, Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations , ..."
+   "u": "https://www.indeed.com/cmp/Greentree-Hospitality-Group,-Inc.",
+   "s": "Find out what works well at GreenTree Hospitality Group, Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and C"
   },
   {
-   "t": "Jobs at GreenTree Hospitality Group",
-   "u": "https://hireevit.evit.edu",
-   "s": "Browse jobs at GreenTree Hospitality Group . Become part of a growing hotel chain with flexible terms, dedicated support and a true ROI brand standard focus. .."
+   "t": "Careers - The Greentree Group",
+   "u": "https://www.greentreegroup.com/careers/",
+   "s": "Careers - View open positions, benefits, and read real reviews from current and past employees at The Greentree Group!"
   },
   {
-   "t": "2 Greentree Inns Jobs Hiring in Arizona",
-   "u": "https://www.ziprecruiter.com",
-   "s": "Looking for Greentree Inns jobs in Arizona? 1-Click Apply to 2 Greentree Inns job openings hiring near you in AZ on ZipRecruiter!"
+   "t": "Greentree Hospitality Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Greentree-Hospitality",
+   "s": "Find out what works well at Greentree Hospitality from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
   },
   {
-   "t": "Careers",
-   "u": "https://www.coraltreehospitality.com",
-   "s": "Join our team! Explore rewarding hospitality management jobs and career opportunities within our growing portfolio of luxury hotels and resorts."
+   "t": "Careers - GreenTree Inn | GreenTree Hospitality Group - LinkedIn",
+   "u": "https://www.linkedin.com/posts/greentreeinnhotels_careers-greentree-inn-activity-7460002009589428224-tE_a",
+   "s": "We have a #Careers Page! From front desk agents to positions at Corporate, view all of our current openings at www. greentreeinn.com/careers #Hiring #Hospitalit"
   },
   {
-   "t": "Greentree Hospitality Group Inc - Talents by Vaia",
-   "u": "https://talents.vaia.com",
-   "s": "More open positions at Greentree Hospitality Group Inc . Greentree Hospitality Group Inc. Director of Sales & Marketing. Greentree Hospitality Group Inc. Read m"
+   "t": "GreenTree's Career Opportunities",
+   "u": "https://www.greentree.group/opportunities.html",
+   "s": "Data Automation Internship During this internship, you'll engage in the analysis of business operations by collaborating closely with other teams within the com"
   },
   {
-   "t": "500 Server Jobs, Employment in Green Tree, PA",
-   "u": "https://www.indeed.com",
-   "s": "532 Server jobs in Green Tree, PA . Apply to Server, Line Cook, Food Runner and more. Hiring now on Indeed.com."
+   "t": "GreenTree Hospitality Group Jobs & Careers - 1 Open Position",
+   "u": "https://www.glassdoor.com/Jobs/GreenTree-Hospitality-Group-Jobs-E2133403.htm",
+   "s": "Search job openings at GreenTree Hospitality Group. 1 GreenTree Hospitality Group jobs including salaries, ratings, and reviews, posted by GreenTree Hospitality"
   },
   {
-   "t": "Room Attendant - Greentree Hospitality",
-   "u": "https://bebee.com",
-   "s": "Job Duties · Makes beds neatly with fresh linen (including: sheets, duvet, blankets and pillow cases). · Removes dirty linen · Picks up debris/trash from floors"
+   "t": "Explore jobs at Greentree Hospitality Group - jobstagg.com",
+   "u": "https://www.jobstagg.com/company-profile/greentree-hospitality-group",
+   "s": "Explore jobs at Greentree Hospitality Group. Discover job openings, company culture, benifits and growth opportunities."
   },
   {
-   "t": "Top 376 Hotel Jobs in Green Tree, Pa",
-   "u": "https://www.simplyhired.com",
-   "s": "376 Hotel jobs available in Green Tree, Pa . See salaries, compare reviews, easily apply, and get hired. New Hotel careers in Green Tree, Pa are added daily ..."
+   "t": "Talent Community - GreenTree Inn",
+   "u": "https://greentreeinn.com/talent-community/",
+   "s": "Talent Community At GreenTree, we know great hotels start with great people. We are always looking for passionate, dependable individuals who want to build a ca"
   },
   {
-   "t": "Aimbridge Hospitality Breakfast Attendant Job Pittsburgh, PA",
-   "u": "https://www.ziprecruiter.com",
-   "s": "Position requires open availability between 5AM-1PM , as needed. Weekends required. As our Complimentary AM Attendant, youll be the morning mood-setter, ... Rea"
+   "t": "GreenTree Hospitality Group, Inc. Careers and Employment",
+   "u": "https://www.indeed.com/cmp/Greentree-Hospitality-Group,-Inc.",
+   "s": "Find out what works well at GreenTree Hospitality Group, Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and C"
   },
   {
-   "t": "Part Time - Hospitality/Office Assistant",
-   "u": "https://www.linkedin.com",
-   "s": "Excellent attendance and punctuality ; Ability to work independently or in a team environment; Lifting up to 50 lbs with aid; Excellent communication skills ..."
+   "t": "Greentree Hospitality Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Greentree-Hospitality",
+   "s": "Find out what works well at Greentree Hospitality from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
   },
   {
-   "t": "Holiday Inn Express Greentree - Breakfast Attendant",
-   "u": "https://bandana.com",
-   "s": "As our Complimentary AM Attendant , you'll be the morning mood-setter, making sure guests start their day with a smile and a satisfying meal. Read more"
+   "t": "Careers - The Greentree Group",
+   "u": "https://www.greentreegroup.com/careers/",
+   "s": "Careers - View open positions, benefits, and read real reviews from current and past employees at The Greentree Group!"
   },
   {
-   "t": "Holiday Inn Express Greentree in Pittsburgh, PA",
-   "u": "https://us.trabajo.org",
-   "s": "**$14.50/HR - FULL-TIME, WEEKEND AND EVENING AVAILABILITY NEEDED** Guest Service Agents are responsible for greeting and registering the guest providing ... Rea"
+   "t": "Explore jobs at Greentree Hospitality Group - jobstagg.com",
+   "u": "https://www.jobstagg.com/company-profile/greentree-hospitality-group",
+   "s": "Explore jobs at Greentree Hospitality Group. Discover job openings, company culture, benifits and growth opportunities."
   },
   {
-   "t": "30 Aimbridge hospitality jobs in Pittsburgh, PA",
-   "u": "https://www.glassdoor.com",
-   "s": "Holiday Inn Express & Suites Pittsburgh Green Tree - House Attendant . Pittsburgh, PA. $15.20 Per Hour (Employer provided). Valid driver's license and clean ..."
+   "t": "Greentree Hospitality Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Greentree-Hospitality",
+   "s": "Read Greentree Hospitality reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at Green"
   },
   {
-   "t": "Full text of \"Guernsey Breeder's Journal 1953-01-01",
-   "u": "https://archive.org",
-   "s": "Contact Jobs Volunteer Full text of \"Guernsey Breeder's Journal 1953-01-01: “Breeding Guernseys For 34 Years''"
+   "t": "GreenTree Hospitality Group Jobs & Careers - 1 Open Position",
+   "u": "https://www.glassdoor.com/Jobs/GreenTree-Hospitality-Group-Jobs-E2133403.htm",
+   "s": "Search job openings at GreenTree Hospitality Group. 1 GreenTree Hospitality Group jobs including salaries, ratings, and reviews, posted by GreenTree Hospitality"
   },
   {
-   "t": "2012 YR TOTAL COMPENSATION BY PRINCIPAL",
-   "u": "https://flaglerlive.com",
-   "s": "+ Greentree Group, The One Eighty Consulting ................................. 10,000 Total Compensation"
+   "t": "GreenTree Hospitality Group, Inc. Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Greentree-Hospitality-Group,-Inc.",
+   "s": "Read GreenTree Hospitality Group, Inc. reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is l"
+  },
+  {
+   "t": "Talent Community - GreenTree Inn",
+   "u": "https://greentreeinn.com/talent-community/",
+   "s": "Talent Community At GreenTree, we know great hotels start with great people. We are always looking for passionate, dependable individuals who want to build a ca"
+  },
+  {
+   "t": "Greentree Jobs in Singapore (with Salaries) - May 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/greentree-jobs",
+   "s": "Find your ideal job at Jobstreet with 3 Greentree jobs found in Singapore. View all our Greentree vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Greentree Hospitality Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Greentree-Hospitality",
+   "s": "Find out what works well at Greentree Hospitality from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+  },
+  {
+   "t": "Careers - The Greentree Group",
+   "u": "https://www.greentreegroup.com/careers/",
+   "s": "Careers - View open positions, benefits, and read real reviews from current and past employees at The Greentree Group!"
   }
  ],
  "dict_hits": [],
+ "search_backend": "kit",
  "verdict": "no_clear_surface"
 }

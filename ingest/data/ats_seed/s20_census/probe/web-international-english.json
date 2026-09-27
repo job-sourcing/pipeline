@@ -2,10 +2,148 @@
  "brand": "Web International English",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:09:37.289Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:20:48.405Z",
+ "candidates": [
+  {
+   "url": "https://www.webinternational.net/jobs/",
+   "title": "",
+   "status": 200,
+   "bytes": 3346,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Web International has a growing need for stable, talented professionals in web development, programming, digital marketing, project management, and design.",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://recruitforchina.wixsite.com/jobs/webinternationalenglish",
+   "title": "",
+   "status": 200,
+   "bytes": 110230,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Teach English at WEB International English, one of China's leading adult training schools. Currently positions are available all year round. Over 120 centers.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://relocate.me/international-jobs",
+   "title": "Find International Jobs: Explore Global Career Opportunities | Relocate.me",
+   "status": 200,
+   "bytes": 167139,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Browse the latest international jobs and discover exciting global career opportunities. Find your next job abroad here.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Web International English Careers and Employment - Indeed",
+   "u": "https://ca.indeed.com/cmp/Web-International-English",
+   "s": "Find out what works well at Web International English from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insig"
+  },
+  {
+   "t": "Jobs - Web International",
+   "u": "https://www.webinternational.net/jobs/",
+   "s": "Web International has a growing need for stable, talented professionals in web development, programming, digital marketing, project management, and design."
+  },
+  {
+   "t": "Web International English Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Web-International-English-jobs.html",
+   "s": "11,025 Web International English jobs available on Indeed.com. Apply to Technical Writer, Artist, Ads Reviewer and more!"
+  },
+  {
+   "t": "Teach English to adults at WEB English | Recruit 4 China | ESL jobs",
+   "u": "https://recruitforchina.wixsite.com/jobs/webinternationalenglish",
+   "s": "Teach English at WEB International English, one of China's leading adult training schools. Currently positions are available all year round. Over 120 centers."
+  },
+  {
+   "t": "International Remote Jobs & Work From Anywhere Jobs | Truly Remote",
+   "u": "https://trulyremote.co/",
+   "s": "Explore legit remote jobs that hire worldwide, updated daily. Join Truly Remote to find complete remote, international, and work-from-anywhere roles."
+  },
+  {
+   "t": "Web International English - Facebook",
+   "u": "https://www.facebook.com/WebiEnglishCareer/",
+   "s": "Web International English. 1,235 likes. Web International English was established in 1998, Shanghai, China. Web is one of the largest English training institute"
+  },
+  {
+   "t": "Working at Web International English | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Web-International-English-EI_IE398398.11,36.htm",
+   "s": "See what employees say it's like to work at Web International English. Salaries, reviews, and more - all posted by employees working at Web International Englis"
+  },
+  {
+   "t": "Find International Jobs: Explore Global Career Opportunities | Relocate.me",
+   "u": "https://relocate.me/international-jobs",
+   "s": "Browse the latest international jobs and discover exciting global career opportunities. Find your next job abroad here."
+  },
+  {
+   "t": "Web International English Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Web-International-English-jobs.html",
+   "s": "11,025 Web International English jobs available on Indeed.com. Apply to Technical Writer, Artist, Ads Reviewer and more!"
+  },
+  {
+   "t": "Web International English Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Web-International-English",
+   "s": "Find out what works well at Web International English from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insig"
+  },
+  {
+   "t": "Teach English to adults at WEB English | Recruit 4 China | ESL jobs",
+   "u": "https://recruitforchina.wixsite.com/jobs/webinternationalenglish",
+   "s": "Teach English at WEB International English, one of China's leading adult training schools. Currently positions are available all year round. Over 120 centers."
+  },
+  {
+   "t": "Jobs - Web International",
+   "u": "https://www.webinternational.net/jobs/",
+   "s": "Web International has a growing need for stable, talented professionals in web development, programming, digital marketing, project management, and design."
+  },
+  {
+   "t": "Webi English - Teaching Jobs | Teach Away",
+   "u": "https://www.teachaway.com/schools/webi-english",
+   "s": "Find information about Webi English in China with Teach Away, a trusted platform for connecting teachers and leading schools. Apply to enriching, inclusive teac"
+  },
+  {
+   "t": "2 Web International English jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/web-international-english-jobs",
+   "s": "Today&rsquo;s top 2 Web International English jobs in United States. Leverage your professional network, and get hired. New Web International English jobs added"
+  },
+  {
+   "t": "JobsinNetwork | English & International Jobs: Europe, USA, Asia",
+   "u": "https://jobsinnetwork.com/",
+   "s": "Jobs for professionals and expats seeking employment opportunities with English as the main working language."
+  },
+  {
+   "t": "Web International English Changsha City - Teaching Jobs | Teach Away",
+   "u": "https://www.teachaway.com/schools/web-international-english-changsha-city",
+   "s": "Find information about Web International English Changsha City in China with Teach Away, a trusted platform for connecting teachers and leading schools. Apply t"
+  },
+  {
+   "t": "Web International English Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Web-International-English",
+   "s": "Find out what works well at Web International English from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insig"
+  },
+  {
+   "t": "Work in Japan · Jobs with International Companies · Jobs that Use ...",
+   "u": "https://www.careercross.com/en/",
+   "s": "Work in Japan · Jobs with International Companies · Jobs that Use English · \"CareerCross\" is your number 1 resource for finding bilingual jobs with global compa"
+  },
+  {
+   "t": "Web International English Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Web-International-English-jobs.html",
+   "s": "11,025 Web International English jobs available on Indeed.com. Apply to Technical Writer, Artist, Ads Reviewer and more!"
+  },
+  {
+   "t": "Job Search | Work in Japan · Jobs with International Companies · Jobs ...",
+   "u": "https://www.careercross.com/en/job-search",
+   "s": "Jobs by Category. Work in Japan · Jobs with International Companies · Jobs that Use English · \"CareerCross\" is your number 1 resource for finding bilingual jobs"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

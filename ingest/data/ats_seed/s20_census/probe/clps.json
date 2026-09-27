@@ -2,10 +2,168 @@
  "brand": "CLPS",
  "tier": "lca",
  "lca": "CLPS TECHNOLOGY (CALIFORNIA) INC.",
- "ts": "2026-09-27T02:26:20.325Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:14:41.214Z",
+ "candidates": [
+  {
+   "url": "https://cpsk12il.taleo.net/careersection/3/jobsearch.ftl",
+   "title": "Job Search",
+   "status": 200,
+   "bytes": 44981,
+   "markers": [
+    "taleo"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "taleo:cpsk12il.taleo.net",
+   "score": 12,
+   "snippet": "Job Openings 1 - 25 of 1229 Job Openings Save this Search Multi-line",
+   "backend": "direct"
+  },
+  {
+   "url": "https://cpsk12il.taleo.net/careersection/iam/accessmanagement/login.jsf?securedLogin=true",
+   "title": "CPS Careers",
+   "status": 200,
+   "bytes": 8483,
+   "markers": [
+    "taleo"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "taleo:cpsk12il.taleo.net",
+   "score": 12,
+   "snippet": "CPS Careers | Search | Apply | Get Hired Page cannot be displayed The page you are trying to access is not supported directly. You may have tried an outdated li",
+   "backend": "direct"
+  },
+  {
+   "url": "https://cpsk12il.taleo.net/careersection/3/jobsearch.ftl?lang=en",
+   "title": "Job Search",
+   "status": 200,
+   "bytes": 44993,
+   "markers": [
+    "taleo"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "taleo:cpsk12il.taleo.net",
+   "score": 12,
+   "snippet": "Job Openings 1 - 25 of 1229 Job Openings Save this Search Multi-line",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Chicago Public Schools",
+   "u": "https://www.cps.edu/careers",
+   "s": "Work with Chicago Public Schools to provide a high-quality educational experience for every student in every neighborhood in Chicago. Start your search for empl"
+  },
+  {
+   "t": "Job Search - cpsk12il.taleo.net",
+   "u": "https://cpsk12il.taleo.net/careersection/3/jobsearch.ftl",
+   "s": "Job Openings 1 - 25 of 1229 Job Openings Save this Search Multi-line"
+  },
+  {
+   "t": "CLPS",
+   "u": "http://www.clpsglobal.com/en/",
+   "s": "CLPS Limited corporate website Services Banking System: Consulting & Implementation Core Banking System Testing Services Financial Banking Products IT Consultin"
+  },
+  {
+   "t": "Jobs | Center Line Public Schools - clps.org",
+   "u": "https://www.clps.org/apps/jobs/",
+   "s": "Wall-to-Wall Career Academies at Center Line High School offer students opportunities to engage in relevant project-based learning which leads to increased enga"
+  },
+  {
+   "t": "CPS Careers | Search | Apply | Get Hired - cpsk12il.taleo.net",
+   "u": "https://cpsk12il.taleo.net/careersection/iam/accessmanagement/login.jsf?securedLogin=true",
+   "s": "CPS Careers | Search | Apply | Get Hired Page cannot be displayed The page you are trying to access is not supported directly. You may have tried an outdated li"
+  },
+  {
+   "t": "CLPS Global Jobs and Careers | Haystack",
+   "u": "https://haystackapp.io/companies/clps-global",
+   "s": "CLPS Global is a leading digital transformation service provider that empowers businesses in Asia and North America to navigate the complexities of the digital "
+  },
+  {
+   "t": "CPS Taleo Careers - Jobs",
+   "u": "https://cpsk12il.upgrade.selectminds.com/",
+   "s": "My company has a lot of open positions! If you are interested, click this link. If you apply to a job, you will be treated as a referral from me."
+  },
+  {
+   "t": "New Jobs - CPS Careers - Taleo Social Sourcing",
+   "u": "https://cpsk12il.referrals.selectminds.com/latest-jobs",
+   "s": "My company has a lot of open positions! If you are interested, click this link. If you apply to a job, you will be treated as a referral from me."
+  },
+  {
+   "t": "CLPS recrute - CLPS",
+   "u": "https://www.clps.net/clps-recrute/",
+   "s": "Accueil Le CLPS recrute Le CLPS recrute chaque année plusieurs dizaines de collaborateurs dans le cadre de son développement. Cet espace est dédié au recueil de"
+  },
+  {
+   "t": "Postuler - CLPS",
+   "u": "https://www.clps.net/postuler/",
+   "s": "Postuler par ce site vous prendra quelques minutes au travers de 5 brèves étapes. Au terme de la dernière il vous sera demandé de joindre un CV et une lettre de"
+  },
+  {
+   "t": "Clps Jobs in Singapore (with Salaries) - Aug 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/clps-jobs",
+   "s": "Find your ideal job at Jobstreet with 30 Clps jobs found in Singapore. View all our Clps vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "CLPS : Centre de formation Bretagne et Nantes",
+   "u": "https://www.clps.net/",
+   "s": "Devenons partenaires ! Le CLPS vous propose des collaborations variées en vue de recruter et former vos futurs salariés, développer les compétences de vos équip"
+  },
+  {
+   "t": "offres - CLPS",
+   "u": "https://www.clps.net/offre/",
+   "s": "Archives : offres test"
+  },
+  {
+   "t": "46 Clps Technology (Singapore) Pte. Ltd jobs in Singapore",
+   "u": "https://sg.jobstreet.com/clps-technology-(singapore)-pte.-ltd-jobs",
+   "s": "Find your ideal job at Jobstreet with 46 Clps Technology (Singapore) Pte. Ltd jobs found in Singapore. View all our Clps Technology (Singapore) Pte. Ltd vacanci"
+  },
+  {
+   "t": "30 RiDiK (A Subsidiary Of CLPS. Nasdaq: CLPS) jobs in Singapore",
+   "u": "https://sg.jobstreet.com/RiDiK-(a-Subsidiary-of-CLPS.-Nasdaq%3A-CLPS)-jobs",
+   "s": "Find your ideal job on Jobstreet with 30 RiDiK (A Subsidiary Of CLPS. Nasdaq: CLPS) jobs (30 at RiDiK (A Subsidiary Of CLPS. Nasdaq: CLPS)) listed in Singapore."
+  },
+  {
+   "t": "CLPS Technology Jobs in Singapore (with Salaries) - Jobstreet",
+   "u": "https://sg.jobstreet.com/CLPS-Technology-jobs",
+   "s": "Find your ideal job on Jobstreet with 31 CLPS Technology jobs (0 at CLPS Technology) listed in Singapore. View all the CLPS Technology vacancies now with new jo"
+  },
+  {
+   "t": "Jobs | Center Line Public Schools - clps.org",
+   "u": "https://www.clps.org/apps/jobs/",
+   "s": "Wall-to-Wall Career Academies at Center Line High School offer students opportunities to engage in relevant project-based learning which leads to increased enga"
+  },
+  {
+   "t": "Job Fair - Center Line Public Schools - clps.org",
+   "u": "https://www.clps.org/apps/pages/joinourteam",
+   "s": "Want a job that makes a difference in children's lives? Center Line Public Schools has a variety of positions available, full and part time, for individuals who"
+  },
+  {
+   "t": "CLPS Global Jobs and Careers | Haystack",
+   "u": "https://haystackapp.io/companies/clps-global",
+   "s": "CLPS Global has 6 live jobs on Haystack. Browse and apply to their current openings."
+  },
+  {
+   "t": "Careers - Chicago Public Schools",
+   "u": "https://www.cps.edu/careers",
+   "s": "Work with Chicago Public Schools to provide a high-quality educational experience for every student in every neighborhood in Chicago. Start your search for empl"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://cpsk12il.taleo.net/careersection/3/jobsearch.ftl",
+  "title": "Job Search",
+  "status": 200,
+  "bytes": 44981,
+  "markers": [
+   "taleo"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "taleo:cpsk12il.taleo.net",
+  "score": 12,
+  "snippet": "Job Openings 1 - 25 of 1229 Job Openings Save this Search Multi-line",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
 }

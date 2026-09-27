@@ -2,10 +2,164 @@
  "brand": "Sunday Robotics",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:13:08.933Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:26:46.267Z",
+ "candidates": [
+  {
+   "url": "https://jobs.ashbyhq.com/sunday",
+   "title": "",
+   "status": 200,
+   "bytes": 5342,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "ashby:sunday",
+   "score": 17,
+   "snippet": "Sunday Robotics Jobs ML & Robotics Infra • Redwood City, CA • Full time • On-site",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://jobs.ashbyhq.com/sunday/9ce13c41-9349-458c-b77f-30427c9f11c3/application",
+   "title": "Mechanical Engineer @ Sunday Robotics",
+   "status": 200,
+   "bytes": 32093,
+   "markers": [
+    "ashby"
+   ],
+   "jsonld_jobs": 1,
+   "spec": "ashby:sunday",
+   "score": 17,
+   "snippet": "Join Us in Building the Future of Home Robotics At Sunday, we're developing personal robots to reclaim the hours lost to repetitive tasks. We're focused on an a",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.sunday.ai/careers",
+   "title": "Careers | Sunday Robotics | The helpful robotics company",
+   "status": 200,
+   "bytes": 460771,
+   "markers": [
+    "ashby"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "The future of helpful homes is being shaped by a team thats turning academic breakthroughs into real products. We're looking for optimistic experts and pragmati",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | Sunday Robotics | The helpful robotics company",
+   "u": "https://www.sunday.ai/careers",
+   "s": "The future of helpful homes is being shaped by a team thats turning academic breakthroughs into real products. We're looking for optimistic experts and pragmati"
+  },
+  {
+   "t": "Sunday Robotics Jobs",
+   "u": "https://jobs.ashbyhq.com/sunday",
+   "s": "Sunday Robotics Jobs ML & Robotics Infra • Redwood City, CA • Full time • On-site"
+  },
+  {
+   "t": "Sunday Robotics Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-sunday-robotics-jobs.html",
+   "s": "Today's top Sunday Robotics jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Sunday Robotics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sunday-Robotics",
+   "s": "Find out what works well at Sunday Robotics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "Sunday Robotics | The helpful robotics company",
+   "u": "https://www.sunday.ai/",
+   "s": "Sunday, the helpful robotics company Explore Technology Journal About Company Careers Beta Program Social Instagram X (Twitter) YouTube"
+  },
+  {
+   "t": "Current job openings - sunday",
+   "u": "https://careers.sundayapp.com/jobs",
+   "s": "Job openings at sunday Sales · New York City, New York, Atlanta, Georgia · Hybrid"
+  },
+  {
+   "t": "Sunday Robotics Careers (16 open jobs) | NewJob",
+   "u": "https://newjob.tech/company/sunday-robotics",
+   "s": "16 open jobs at Sunday Robotics — salaries, visa sponsorship and remote filters. Updated 2026-08-01 from their career site."
+  },
+  {
+   "t": "Sunday - LinkedIn",
+   "u": "https://www.linkedin.com/company/sundayrobotics",
+   "s": "Sunday Robotics Engineering Redwood City, California 17,650 followers Follow Report this company"
+  },
+  {
+   "t": "Careers | Sunday Robotics | The helpful robotics company",
+   "u": "https://www.sunday.ai/careers",
+   "s": "The future of helpful homes is being shaped by a team thats turning academic breakthroughs into real products. We're looking for optimistic experts and pragmati"
+  },
+  {
+   "t": "Sunday Robotics Jobs",
+   "u": "https://jobs.ashbyhq.com/sunday",
+   "s": "Sunday Robotics Jobs ML & Robotics Infra • Redwood City, CA • Full time • On-site"
+  },
+  {
+   "t": "Sunday Robotics Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-sunday-robotics-jobs.html",
+   "s": "Today's top Sunday Robotics jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Sunday Robotics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sunday-Robotics",
+   "s": "Find out what works well at Sunday Robotics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "Sunday Robotics Careers (16 open jobs) | NewJob",
+   "u": "https://newjob.tech/company/sunday-robotics",
+   "s": "16 open jobs at Sunday Robotics — salaries, visa sponsorship and remote filters. Updated 2026-08-01 from their career site."
+  },
+  {
+   "t": "Sunday Jobs (September 2026)",
+   "u": "https://startup.jobs/company/sunday-ai",
+   "s": "Sunday is hiring. Apply to 24 jobs like Robotics Systems Software Integration Engineer, Industrial Design Intern, and Industrial Designer (Contractor)"
+  },
+  {
+   "t": "Sunday Robotics Linkedin Jobs in United States (184 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sunday-robotics-linkedin-jobs",
+   "s": "Today's top 184 Sunday Robotics Linkedin jobs in United States. Leverage your professional network, and get hired. New Sunday Robotics Linkedin jobs added daily"
+  },
+  {
+   "t": "Mechanical Engineer @ Sunday Robotics - jobs.ashbyhq.com",
+   "u": "https://jobs.ashbyhq.com/sunday/9ce13c41-9349-458c-b77f-30427c9f11c3/application",
+   "s": "Join Us in Building the Future of Home Robotics At Sunday, we're developing personal robots to reclaim the hours lost to repetitive tasks. We're focused on an a"
+  },
+  {
+   "t": "Careers | Sunday Robotics | The helpful robotics company",
+   "u": "https://www.sunday.ai/careers",
+   "s": "The future of helpful homes is being shaped by a team thats turning academic breakthroughs into real products. We're looking for optimistic experts and pragmati"
+  },
+  {
+   "t": "Sunday Robotics Jobs",
+   "u": "https://jobs.ashbyhq.com/sunday",
+   "s": "Sunday Robotics Jobs ML & Robotics Infra • Redwood City, CA • Full time • On-site"
+  },
+  {
+   "t": "Sunday Robotics Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-sunday-robotics-jobs.html",
+   "s": "Today's top Sunday Robotics jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Sunday Robotics Careers (16 open jobs) | NewJob",
+   "u": "https://newjob.tech/company/sunday-robotics",
+   "s": "16 open jobs at Sunday Robotics — salaries, visa sponsorship and remote filters. Updated 2026-08-01 from their career site."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.ashbyhq.com/sunday",
+  "title": "",
+  "status": 200,
+  "bytes": 5342,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "ashby:sunday",
+  "score": 17,
+  "snippet": "Sunday Robotics Jobs ML & Robotics Infra • Redwood City, CA • Full time • On-site",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

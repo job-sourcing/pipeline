@@ -2,133 +2,155 @@
  "brand": "China Merchants Bank",
  "tier": "lca",
  "lca": "CHINA MERCHANTS BANK CO. LTD.",
- "ts": "2026-09-27T02:09:47.361Z",
+ "ts": "2026-09-27T07:40:13.858Z",
  "candidates": [
   {
-   "url": "https://www.efinancialcareers.com",
-   "title": "System Maintenance",
+   "url": "https://www.thejobsmap.com/company/china-merchants-bank",
+   "title": "China Merchants Bank Jobs &amp; Careers (23 Open Roles) | TheJobsMap",
    "status": 200,
-   "bytes": 194,
+   "bytes": 70241,
    "markers": [],
-   "jsonld_jobs": 0,
+   "jsonld_jobs": 23,
    "spec": null,
-   "score": 2,
-   "snippet": "Click here to view 11 Us jobs in Hong Kong at China Merchants Bank Co., Ltd ., Receive the latest jobs matching your search, as soon as they're posted. ..."
+   "score": 7,
+   "snippet": "About China Merchants Bank China Merchants Bank Co., Ltd. (CMB) is a Chinese commercial bank headquartered in Shenzhen, Guangdong. Founded in 1987, it was the f",
+   "backend": "direct"
   },
   {
-   "url": "https://jobs.ctgoodjobs.hk",
-   "title": "Jobs Search, employment and career site in Hong Kong - CTgoodjobs",
+   "url": "https://english.cmbchina.com/",
+   "title": "",
    "status": 200,
-   "bytes": 96399,
+   "bytes": 5745,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
+   "score": 5,
+   "snippet": "China Merchants Bank About CMB In 1987, China Merchants Bank (CMB) was founded in Shenzhen. CMB is the first commercial bank in China founded by an enterprise. ",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.bocusa.com/careers",
+   "title": "CAREERS | Bank Of China",
+   "status": 200,
+   "bytes": 90832,
+   "markers": [
+    "icims"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
    "score": 2,
-   "snippet": "Explore 5 jobs in Hong Kong from China Merchants Bank Co., Ltd., Hong Kong Branch. Browse through all our new daily-updated job listing now!"
+   "snippet": "Here at the Bank of China, our employees are the core of our identity, and we are proud of fostering a diverse workplace. As a global bank with local expertise,",
+   "backend": "direct"
   }
  ],
  "results": [
   {
-   "t": "The Grand Unified Theory of Everything in The Universe",
-   "u": "https://www.scribd.com",
-   "s": "The Grand Unified Theory of Everything in the Universe Including the Human Soul--by. China lead in alternative energy? China's internal market"
+   "t": "China Merchants Bank job openings and vacancies | Jobsdb",
+   "u": "https://hk.jobsdb.com/companies/china-merchants-bank-171089971260693/jobs",
+   "s": "View all current job openings at China Merchants Bank here on hk.jobsdb.com"
   },
   {
-   "t": "[Mission 2022] INSIGHTS DAILY CURRENT AFFAIRS +",
-   "u": "https://www.insightsonindia.com",
-   "s": "Apr 22, 2022 — InstaLinks help you think beyond the issue but relevant to the issue from UPSC prelims and Mains exam point of view. Read more"
+   "t": "China Merchants Bank Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/China-Merchants-Bank",
+   "s": "Find out what works well at China Merchants Bank from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
   },
   {
-   "t": "Taiwan, Asia, Stamps",
-   "u": "https://picclick.com",
-   "s": "This beautifully designed, hardcover yearbook compiles the complete year set of commemorative and definitive postage stamps and souvenir sheets ... Read more"
+   "t": "7 China Merchants Bank jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-merchants-bank-jobs-worldwide",
+   "s": "Today's top 7 China Merchants Bank jobs in Worldwide. Leverage your professional network, and get hired. New China Merchants Bank jobs added daily."
   },
   {
-   "t": "Gift Card Balance (GCB) IPA for iOS Download",
-   "u": "https://www.pgyer.com",
-   "s": "Gift Card Balance (GCB) checks live giftcard balance. The mobile app wallet offers a simple yet accurate way to retrieve real time card balances since 2012. Rea"
+   "t": "CAREERS - Bank Of China",
+   "u": "https://www.bocusa.com/careers",
+   "s": "Here at the Bank of China, our employees are the core of our identity, and we are proud of fostering a diverse workplace. As a global bank with local expertise,"
   },
   {
-   "t": "TIKA-1332 -- add English Spanish common tokens",
-   "u": "https://www.mail-archive.com",
-   "s": "Feb 16, 2017 — Spanish common tokens; latino + china +unlike +examples ・ +founder +respectively +direction +cast ・ +politician +designated +professor +note + .."
+   "t": "CHINA MERCHANTS BANK CO., LTD Careers Singapore | Get A Job At CHINA ...",
+   "u": "https://www.mycareersfuture.gov.sg/companies/china-merchants-bank-co-T13FC0088D",
+   "s": "China merchants bank Singapore branch was established in November 2013. Based in Singapore and radiating to Southeast Asia, it takes cross-border finance and we"
   },
   {
-   "t": "China Merchants Bank Mission, Benefits, and Work Culture",
-   "u": "https://sg.indeed.com",
-   "s": "China Merchants Bank Jobs . HR & Corporate Culture Officer. Singapore · Custody Officer (Corporate Banking Department). Singapore · Corporate Product Manager. R"
+   "t": "China Merchants Bank Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/China-Merchants-Bank-jobs",
+   "s": "Find your ideal job on Jobsdb with 5752 China Merchants Bank jobs (12 at China Merchants Bank) listed in Hong Kong. View all the China Merchants Bank vacancies "
   },
   {
-   "t": "Us jobs in Hong Kong at China Merchants Bank Co., Ltd.",
-   "u": "https://www.efinancialcareers.com",
-   "s": "Click here to view 11 Us jobs in Hong Kong at China Merchants Bank Co., Ltd ., Receive the latest jobs matching your search, as soon as they're posted. ..."
+   "t": "China Merchants Bank -- Home",
+   "u": "https://english.cmbchina.com/",
+   "s": "China Merchants Bank About CMB In 1987, China Merchants Bank (CMB) was founded in Shenzhen. CMB is the first commercial bank in China founded by an enterprise. "
   },
   {
-   "t": "China Merchants Bank Jobs & Careers - 1 Open Position",
-   "u": "https://www.glassdoor.sg",
-   "s": "Yes, China Merchants Bank is currently hiring for 1 open positions in Singapore . Use Glassdoor to find and apply for a job that loves you back. Then start ... "
+   "t": "campusques - CMB International Capital Corporation Limited",
+   "u": "https://www.cmbi.com.hk/en-US/campusques-2025",
+   "s": "*Are any of your family members employed by China Merchants Group and any of the group's subsidiaries or China Merchants Bank and any of the bank's subsidiaries"
   },
   {
-   "t": "Sr. Network Engineer-Temp - China Merchants Bank",
-   "u": "https://www.linkedin.com",
-   "s": "This is a hands-on technical role requiring deep experience in designing, implementing, troubleshooting, and securing enterprise network infrastructure. Hourly "
+   "t": "7 China Merchants Bank jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-merchants-bank-jobs-worldwide",
+   "s": "Today's top 7 China Merchants Bank jobs in Worldwide. Leverage your professional network, and get hired. New China Merchants Bank jobs added daily."
   },
   {
-   "t": "China Merchants Bank Jobs in Macpherson Central Region - Jul",
-   "u": "https://sg.jobstreet.com",
-   "s": "Find your ideal job on Jobstreet with 139 China Merchants Bank jobs (2 at China Merchants Bank) listed in Macpherson Central Region."
+   "t": "China Merchants Bank job openings and vacancies | Jobsdb",
+   "u": "https://hk.jobsdb.com/companies/china-merchants-bank-171089971260693/jobs",
+   "s": "View all current job openings at China Merchants Bank here on hk.jobsdb.com"
   },
   {
-   "t": "86 China Merchants Bank jobs in Sydney, NSW",
-   "u": "https://nz.seek.com",
-   "s": "Find your ideal job on SEEK with 86 China Merchants Bank jobs (5 at China Merchants Bank) listed in All Sydney NSW AU. View all the China Merchants Bank ..."
+   "t": "China Merchants Bank Jobs & Careers (23 Open Roles) | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/china-merchants-bank",
+   "s": "About China Merchants Bank China Merchants Bank Co., Ltd. (CMB) is a Chinese commercial bank headquartered in Shenzhen, Guangdong. Founded in 1987, it was the f"
   },
   {
-   "t": "China Merchants Bank Jobs in Airport Area Islands District - Jul 2026",
-   "u": "https://hk.jobsdb.com",
-   "s": "Find your ideal job on Jobsdb with 12 China Merchants Bank jobs (0 at China Merchants Bank) listed in Airport Area Islands District."
+   "t": "CAREERS - Bank Of China",
+   "u": "https://www.bocusa.com/careers",
+   "s": "We believe that, by working together, Bank of China will continue its commitment to being a global leader in the banking industry and make a positive financial "
   },
   {
-   "t": "Jobs at China Merchants Bank",
-   "u": "https://www.astronautjobs.com",
-   "s": "We are a leading Chinese bank in the City and currently recruiting for an Assistant Relationship Manager/Relationship Manager."
+   "t": "China Merchants Bank Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/China-Merchants-Bank",
+   "s": "Find out what works well at China Merchants Bank from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
   },
   {
-   "t": "China Merchants Bank New York Branch",
-   "u": "https://app.joinhandshake.com",
-   "s": "Learn what working and interviewing at China Merchants Bank New York Branch is really like. Read real reviews, ask and answer questions."
+   "t": "CHINA MERCHANTS BANK CO., LTD - MyCareersFuture Singapore",
+   "u": "https://www.mycareersfuture.gov.sg/companies/china-merchants-bank-co-T13FC0088D",
+   "s": "China merchants bank Singapore branch was established in November 2013. Based in Singapore and radiating to Southeast Asia, it takes cross-border finance and we"
   },
   {
-   "t": "Careers at CMB International Capital Corporation Limited",
-   "u": "https://www.efinancialcareers.com",
-   "s": "Find the latest Information about CMB International Capital Corporation Limited company culture and benefits. Apply to CMB International Capital Corporation ..."
+   "t": "China Merchants Bank -- Home",
+   "u": "https://english.cmbchina.com/",
+   "s": "China Merchants Bank About CMB In 1987, China Merchants Bank (CMB) was founded in Shenzhen. CMB is the first commercial bank in China founded by an enterprise. "
   },
   {
-   "t": "China Merchants Bank International Jobs in Hong Kong",
-   "u": "https://hk.jobsdb.com",
-   "s": "Find your ideal job at Jobsdb with 3492 China Merchants Bank International jobs found in Hong Kong . View all our China Merchants Bank International ..."
+   "t": "China Merchants Bank Jobs in Singapore (with Salaries) - Sep 2026 ...",
+   "u": "https://sg.jobstreet.com/China-Merchants-Bank-jobs",
+   "s": "Find your ideal job on Jobstreet with 544 China Merchants Bank jobs (7 at China Merchants Bank) listed in Singapore. View all the China Merchants Bank vacancies"
   },
   {
-   "t": "China Merchants Bank Co., Ltd., Hong Kong Branch",
-   "u": "https://bebee.com",
-   "s": "Responsibilities : · Degree holder in Finance, Law, Accounting, Business Administration or related disciplines; · At least 7 years' experience in general ... Re"
+   "t": "7 China Merchants Bank jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-merchants-bank-jobs-worldwide",
+   "s": "Today's top 7 China Merchants Bank jobs in Worldwide. Leverage your professional network, and get hired. New China Merchants Bank jobs added daily."
   },
   {
-   "t": "Back Office Officer chez China Merchants Bank Luxembourg",
-   "u": "https://lu.linkedin.com",
-   "s": "With a well-established global network and good reputation, this job opportunity will allow you to develop a career within our fast-growing international Bank ."
+   "t": "China Merchants Bank Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/China-Merchants-Bank",
+   "s": "Find out what works well at China Merchants Bank from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
   },
   {
-   "t": "China Merchants Bank Co., Ltd., Luxembourg Branch",
-   "u": "https://lu.indeed.com",
-   "s": "Minimum 10 years of experience in financial markets, private banking , or wealth management. Private Banking and Wealth Management Sales. The successful ... Rea"
+   "t": "China Merchants Bank job openings and vacancies | Jobsdb",
+   "u": "https://hk.jobsdb.com/companies/china-merchants-bank-171089971260693/jobs",
+   "s": "View all current job openings at China Merchants Bank here on hk.jobsdb.com"
   },
   {
-   "t": "China Merchants Bank Co., Ltd., Hong Kong Branch",
-   "u": "https://jobs.ctgoodjobs.hk",
-   "s": "Explore 5 jobs in Hong Kong from China Merchants Bank Co., Ltd., Hong Kong Branch. Browse through all our new daily-updated job listing now!"
+   "t": "China Merchants Bank Jobs in Singapore (with Salaries) - Sep 2026 ...",
+   "u": "https://sg.jobstreet.com/China-Merchants-Bank-jobs",
+   "s": "Find your ideal job on Jobstreet with 544 China Merchants Bank jobs (7 at China Merchants Bank) listed in Singapore. View all the China Merchants Bank vacancies"
   }
  ],
  "dict_hits": [],
- "verdict": "no_clear_surface"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.bocusa.com/careers",
+  "platform": "icims",
+  "title": "CAREERS | Bank Of China"
+ },
+ "verdict": "marker_surface"
 }

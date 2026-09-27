@@ -2,10 +2,153 @@
  "brand": "Hong Kong Airways",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:16:49.616Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:33:24.882Z",
+ "candidates": [
+  {
+   "url": "https://www.hongkongairlines.com/en_hk/footer/join-us/career/Join_Us",
+   "title": "Join_Us",
+   "status": 200,
+   "bytes": 198293,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "If you would like to pursue a career with ample training and development opportunities, then look no further than Hong Kong Airlines. We provide professional tr",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.jobdailyhk.com/job/hongkongairlines",
+   "title": "Hong Kong Airlines 香港航空招聘",
+   "status": 200,
+   "bytes": 274819,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Hong Kong Airlines 香港航空招聘 JOIN US If you would like to pursue a career with ample training and development opportunities, then look no further than Hong Kong Ai",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.hongkongairlines.com/en_CN/footer/join-us/career/home",
+   "title": "Career Home",
+   "status": 200,
+   "bytes": 20753,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Book your flights to Hong Kong && other destinations in Asia with Hong Kong Airlines. Look out for great offers && discounts. Manage your booking && check-in on",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Flying Beyond | Fly with Hong Kong Airlines",
+   "u": "https://www.hongkongairlines.com/en_hk/footer/join-us/career/Join_Us",
+   "s": "If you would like to pursue a career with ample training and development opportunities, then look no further than Hong Kong Airlines. We provide professional tr"
+  },
+  {
+   "t": "Cathay Pacific | Careers",
+   "u": "https://careers.cathaypacific.com/",
+   "s": "Hong Kong Express Airways Limited Air Hong Kong Asia Miles by Cathay Cathay Dining Cathay Cargo Terminal"
+  },
+  {
+   "t": "國泰航空 | 職涯機會 - Cathay Pacific | Careers",
+   "u": "https://careers.cathaypacific.com/zh",
+   "s": "現居美國的求職者請留意，若你在申請過程中需要協助或特別安排，請透過電郵聯繫國泰航空美洲區人才招聘組：jobs@cathaypacific.com"
+  },
+  {
+   "t": "Join Us - HK Express",
+   "u": "https://careers.hkexpress.com/",
+   "s": "Explore career opportunities at HK Express and join Hong Kong's budget airline team for a rewarding experience in the aviation industry."
+  },
+  {
+   "t": "12,000+ Hong Kong Airlines jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/hong-kong-airlines-jobs-worldwide",
+   "s": "Today's top 12,000+ Hong Kong Airlines jobs in Worldwide. Leverage your professional network, and get hired. New Hong Kong Airlines jobs added daily."
+  },
+  {
+   "t": "Hong Kong Airlines 香港航空招聘 - jobdailyhk.com",
+   "u": "https://www.jobdailyhk.com/job/hongkongairlines",
+   "s": "Hong Kong Airlines 香港航空招聘 JOIN US If you would like to pursue a career with ample training and development opportunities, then look no further than Hong Kong Ai"
+  },
+  {
+   "t": "Hong Kong Airlines job openings and vacancies | Jobsdb",
+   "u": "https://hk.jobsdb.com/companies/hong-kong-airlines-171088928054931/jobs",
+   "s": "Explore current job openings at Hong Kong Airlines on JobsDB and find your ideal career opportunity today."
+  },
+  {
+   "t": "18 Hong Kong Express Airways Limited jobs in Hong Kong",
+   "u": "https://hk.jobsdb.com/Hong-Kong-Express-Airways-Limited-jobs",
+   "s": "Find your ideal job on Jobsdb with 18 Hong Kong Express Airways Limited jobs (13 at Hong Kong Express Airways Limited) listed in Hong Kong. View all the Hong Ko"
+  },
+  {
+   "t": "Flying Beyond | Fly with Hong Kong Airlines",
+   "u": "https://www.hongkongairlines.com/en_hk/footer/join-us/career/Join_Us",
+   "s": "Hong Kong Airlines is an Equal Opportunities Employer. Personal data provided by job applicants will be used strictly in accordance with our personal data polic"
+  },
+  {
+   "t": "Career Home - Hong Kong Airlines",
+   "u": "https://www.hongkongairlines.com/en_CN/footer/join-us/career/home",
+   "s": "Book your flights to Hong Kong && other destinations in Asia with Hong Kong Airlines. Look out for great offers && discounts. Manage your booking && check-in on"
+  },
+  {
+   "t": "Cathay Pacific | Careers",
+   "u": "https://careers.cathaypacific.com/",
+   "s": "Hong Kong Express Airways Limited Air Hong Kong Asia Miles by Cathay Cathay Dining Cathay Cargo Terminal"
+  },
+  {
+   "t": "Hongkong Airlines Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/hongkong-airlines-jobs",
+   "s": "Find your ideal job at Jobsdb with 279 Hongkong Airlines jobs found in Hong Kong. View all our Hongkong Airlines vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Hong Kong Airlines Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Hong-Kong-Airlines-jobs",
+   "s": "Find your ideal job on Jobsdb with 12844 Hong Kong Airlines jobs (20 at Hong Kong Airlines) listed in Hong Kong. View all the Hong Kong Airlines vacancies now w"
+  },
+  {
+   "t": "Hong Kong Airlines 香港航空招聘 - jobdailyhk.com",
+   "u": "https://www.jobdailyhk.com/job/hongkongairlines",
+   "s": "Hong Kong Airlines 香港航空招聘 JOIN US If you would like to pursue a career with ample training and development opportunities, then look no further than Hong Kong Ai"
+  },
+  {
+   "t": "Airline Jobs in Hong Kong SAR (97 Open Roles) | LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/airline-jobs",
+   "s": "Today's top 97 Airline jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Airline jobs added daily."
+  },
+  {
+   "t": "職位空缺 | Air Hong Kong",
+   "u": "https://www.airhongkong.com.hk/current-openings-zh",
+   "s": "A330 Captain (Hong Kong Based) Dummy Tex tWe provide professional training and careerdevelopment opportunities for those who are prepared to grow with an energe"
+  },
+  {
+   "t": "Flying Beyond | Fly with Hong Kong Airlines",
+   "u": "https://www.hongkongairlines.com/en_hk/footer/join-us/career/Join_Us",
+   "s": "Hong Kong Airlines is an Equal Opportunities Employer. Personal data provided by job applicants will be used strictly in accordance with our personal data polic"
+  },
+  {
+   "t": "Career Home - Hong Kong Airlines",
+   "u": "https://www.hongkongairlines.com/en_CN/footer/join-us/career/home",
+   "s": "Book your flights to Hong Kong && other destinations in Asia with Hong Kong Airlines. Look out for great offers && discounts. Manage your booking && check-in on"
+  },
+  {
+   "t": "Cathay Pacific | Careers",
+   "u": "https://careers.cathaypacific.com/",
+   "s": "Behind every flight, innovation, and memorable journey is a team of talented people bringing their skills, perspectives, and ambitions to work each day. Read th"
+  },
+  {
+   "t": "Hong Kong Airlines job openings and vacancies | Jobsdb",
+   "u": "https://hk.jobsdb.com/companies/hong-kong-airlines-171088928054931/jobs",
+   "s": "Explore current job openings at Hong Kong Airlines on JobsDB and find your ideal career opportunity today."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.hongkongairlines.com/en_CN/footer/join-us/career/home",
+  "platform": "custom",
+  "title": "Career Home"
+ },
+ "verdict": "custom_surface"
 }

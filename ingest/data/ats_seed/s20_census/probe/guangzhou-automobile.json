@@ -2,10 +2,154 @@
  "brand": "Guangzhou Automobile",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:10:14.465Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:22:10.158Z",
+ "candidates": [
+  {
+   "url": "https://www.thejobsmap.com/company/guangzhou-automobile-industry-group",
+   "title": "Guangzhou Automobile Industry Group Jobs &amp; Careers (71 Open Roles) | TheJobsMap",
+   "status": 200,
+   "bytes": 159852,
+   "markers": [],
+   "jsonld_jobs": 71,
+   "spec": null,
+   "score": 7,
+   "snippet": "About Guangzhou Automobile Industry Group Guangzhou Automobile Group Co., Ltd. (GAC Group) is a Chinese state-owned automobile manufacturer headquartered in Gua",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.bmwgroup.jobs/cn/en/locations/location-guangzhou.html",
+   "title": "Guangzhou Jobs | BMW Group Careers",
+   "status": 200,
+   "bytes": 56318,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "The Guangzhou Branch is located in Central Tower at the heart of Guangzhou most prosperous CBD-Zhujiang New Town in Tianhe District. The Guangzhou Branch is hom",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://cn.recruit.net/search-automotive-manufacturing-jobs-guangzhou",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5884,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 17 exciting automotive manufacturing positions in guangzhou! From Avery Dennison to Xpeng, find your perfect match today. Competitive salaries and caree",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "Guangzhou Automobile Industry Group Jobs & Careers (71 Open Roles ...",
+   "u": "https://www.thejobsmap.com/company/guangzhou-automobile-industry-group",
+   "s": "About Guangzhou Automobile Industry Group Guangzhou Automobile Group Co., Ltd. (GAC Group) is a Chinese state-owned automobile manufacturer headquartered in Gua"
+  },
+  {
+   "t": "广汽集团 - zhiye.com",
+   "u": "https://gacrnd.zhiye.com/jobs",
+   "s": "必备： - 8 年以上车载 OS/BSP/系统软件量产开发经验； - 精通 Android Automotive 系统层（AOSP 定制/Framework/HAL）和 Linux/QNX； - 有高通（座舱 8155/8295 等）或英伟达 Orin 等主流芯片平台的多域控制器 BSP 量产经验，熟悉启动优化； - "
+  },
+  {
+   "t": "GAC Group | GAC Global",
+   "u": "https://www.gacgroup.com/en/gac-group",
+   "s": "We are committed to building a world-class company which wins customers' trust, ensures staff's well-being, meets social expectation. Guangzhou Automobile Group"
+  },
+  {
+   "t": "Careers | VinFast",
+   "u": "https://vinfast.com/careers",
+   "s": "Featured Jobs Manufacturing Manufacturing Division is where VinFast's vision takes physical form — transforming innovation into world-class electric vehicles th"
+  },
+  {
+   "t": "Guangzhou Automobile Careers - Talentd",
+   "u": "https://www.talentd.in/companies/guangzhou-automobile",
+   "s": "Guangzhou Automobile Group Co., Ltd. (GAC Group) is a leading Chinese automotive manufacturer headquartered in Guangzhou, Guangdong Province. Established in 199"
+  },
+  {
+   "t": "27 广州汽车集团股份有限公司 jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/%E5%B9%BF%E5%B7%9E%E6%B1%BD%E8%BD%A6%E9%9B%86%E5%9B%A2%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-jobs-worldwide?f_C=6043690",
+   "s": "Today's top 27 广州汽车集团股份有限公司 jobs in Worldwide. Leverage your professional network, and get hired. New 广州汽车集团股份有限公司 jobs added daily."
+  },
+  {
+   "t": "GAC Official Site | Where Craft Meets Technology | GAC Global",
+   "u": "https://www.gacgroup.com/",
+   "s": "Guangzhou Automobile Group Co., Ltd. (\"GAC\") was incorporated in June 1997. Over the past 28 years , GAC has stayed true to a customer-centric, market-oriented,"
+  },
+  {
+   "t": "广汽集团2027校园招聘 - xyzp.51job.com",
+   "u": "https://xyzp.51job.com/gacgroup2027/index.html",
+   "s": "广州汽车集团股份有限公司 简称广汽集团，601238.SH，02238.HK A+H股上市大型国有控股股份制企业集团，1997年成立，总部位于广州番禺汽车城，员工约8.2万人，带动上下游产业链近80万人。 七大业务板块：研发、整车、零部件、能源及生态、国际化、商贸与出行、投资与金融。 旗下品牌：广汽传祺、埃 ..."
+  },
+  {
+   "t": "Guangzhou Automobile Industry Group Jobs & Careers (71 Open Roles ...",
+   "u": "https://www.thejobsmap.com/company/guangzhou-automobile-industry-group",
+   "s": "About Guangzhou Automobile Industry Group Guangzhou Automobile Group Co., Ltd. (GAC Group) is a Chinese state-owned automobile manufacturer headquartered in Gua"
+  },
+  {
+   "t": "45 Automotive jobs in Guangzhou, China - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/guangzhou-automotive-jobs-SRCH_IL.0,9_IM996_KO10,20.htm",
+   "s": "Search Automotive jobs in Guangzhou, China with company ratings & salaries. 45 open jobs for Automotive in Guangzhou."
+  },
+  {
+   "t": "广汽集团 - zhiye.com",
+   "u": "https://gacrnd.zhiye.com/jobs",
+   "s": "必备： - 8 年以上车载 OS/BSP/系统软件量产开发经验； - 精通 Android Automotive 系统层（AOSP 定制/Framework/HAL）和 Linux/QNX； - 有高通（座舱 8155/8295 等）或英伟达 Orin 等主流芯片平台的多域控制器 BSP 量产经验，熟悉启动优化； - "
+  },
+  {
+   "t": "广汽本田官网网站-诚聘英才",
+   "u": "https://job.ghac.cn/",
+   "s": "广汽本田尊重每名成员的个性差异，努力为每个人提供具有挑战性的发展平台来实现自己的梦想。"
+  },
+  {
+   "t": "Guangzhou Jobs | BMW Group Careers",
+   "u": "https://www.bmwgroup.jobs/cn/en/locations/location-guangzhou.html",
+   "s": "The Guangzhou Branch is located in Central Tower at the heart of Guangzhou most prosperous CBD-Zhujiang New Town in Tianhe District. The Guangzhou Branch is hom"
+  },
+  {
+   "t": "Urgent! Guangzhou jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-guangzhou",
+   "s": "Active 122 vacancies • Guangzhou jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Guangzhou jobs in USA and abroad"
+  },
+  {
+   "t": "Automotive Jobs in Guangdong Province | Motorjobs.com",
+   "u": "https://motorjobs.com/en/jobs/industry/automotive-10613/guangdong-province",
+   "s": "motorjobs.com, the global industry recruitment platform that aims to connect the world's top Automotive industry talent with the best career options."
+  },
+  {
+   "t": "Automotive Export Partner - Jobs in Guangzhou 丨 ...",
+   "u": "https://jobs.echinacities.com/jobchapter/1355085917",
+   "s": "Current Location: Guangzhou China About us The establishment time of the automobile export company is one year. The second-hand car sales company has been estab"
+  },
+  {
+   "t": "Guangzhou Jobs | BMW Group Careers",
+   "u": "https://www.bmwgroup.jobs/cn/en/locations/location-guangzhou.html",
+   "s": "The Guangzhou Branch is located in Central Tower at the heart of Guangzhou most prosperous CBD-Zhujiang New Town in Tianhe District. The Guangzhou Branch is hom"
+  },
+  {
+   "t": "Guangzhou Automobile Industry Group Jobs & Careers (71 Open Roles ...",
+   "u": "https://www.thejobsmap.com/company/guangzhou-automobile-industry-group",
+   "s": "About Guangzhou Automobile Industry Group Guangzhou Automobile Group Co., Ltd. (GAC Group) is a Chinese state-owned automobile manufacturer headquartered in Gua"
+  },
+  {
+   "t": "BMW Group Careers: All Opportunities",
+   "u": "https://www.bmwgroup.jobs/cn/en.html",
+   "s": "Explore our opportunities based on your location, job field or career level and take the next career step with BMW Group."
+  },
+  {
+   "t": "Automotive Manufacturing 招聘 在 Guangzhou - 17 Job Positions Available",
+   "u": "https://cn.recruit.net/search-automotive-manufacturing-jobs-guangzhou",
+   "s": "Explore 17 exciting automotive manufacturing positions in guangzhou! From Avery Dennison to Xpeng, find your perfect match today. Competitive salaries and caree"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.thejobsmap.com/company/guangzhou-automobile-industry-group",
+  "platform": "custom",
+  "title": "Guangzhou Automobile Industry Group Jobs &amp; Careers (71 Open Roles) | TheJobsMap"
+ },
+ "verdict": "custom_surface"
 }

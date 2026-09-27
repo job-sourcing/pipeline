@@ -2,10 +2,155 @@
  "brand": "Fufeng Group",
  "tier": "lca",
  "lca": "FUFENG USA INC.",
- "ts": "2026-09-27T02:12:37.083Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:03:54.315Z",
+ "candidates": [
+  {
+   "url": "https://www.fufengusa.com/careers",
+   "title": "Careers | Fufeng USA",
+   "status": 200,
+   "bytes": 406340,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Our Fufeng USA Team Fufeng USA Incorporated employees are responsible, hard-working professionals who are interested in continuous growth and progress, foc",
+   "backend": "supabase"
+  },
+  {
+   "url": "http://en.fufeng-group.com/list-34-1.html",
+   "title": "Join Us - Fufeng Group",
+   "status": 200,
+   "bytes": 38858,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Fufeng Group oversees multiple subsidiaries spanning various industries, including bio-fermentation, mining, real estate, and finance. Our main product lines ar",
+   "backend": "direct"
+  },
+  {
+   "url": "http://en.fufeng-group.com/",
+   "title": "Fufeng Group",
+   "status": 200,
+   "bytes": 35126,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Fufeng Group oversees multiple subsidiaries spanning various industries, including bio-fermentation, mining, real estate, and finance. Our main product lines ar",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | Fufeng USA",
+   "u": "https://www.fufengusa.com/careers",
+   "s": "Join Our Fufeng USA Team Fufeng USA Incorporated employees are responsible, hard-working professionals who are interested in continuous growth and progress, foc"
+  },
+  {
+   "t": "Join Us - Fufeng Group",
+   "u": "http://en.fufeng-group.com/list-34-1.html",
+   "s": "Fufeng Group oversees multiple subsidiaries spanning various industries, including bio-fermentation, mining, real estate, and finance. Our main product lines ar"
+  },
+  {
+   "t": "Fufeng Group",
+   "u": "http://en.fufeng-group.com/",
+   "s": "Fufeng Group oversees multiple subsidiaries spanning various industries, including bio-fermentation, mining, real estate, and finance. Our main product lines ar"
+  },
+  {
+   "t": "Fufeng USA | Animal Feed Additives",
+   "u": "https://www.fufengusa.com/",
+   "s": "More About Fufeng USA Fufeng USA Incorporated is a subsidiary of Fufeng Group Limited, a publicly traded company on the Hong Kong Stock Exchange with a diversif"
+  },
+  {
+   "t": "招贤纳士 - 阜丰集团 - fufeng-group.com",
+   "u": "http://www.fufeng-group.com/list-34-1.html",
+   "s": "阜丰股份 HK00546 阜丰集团"
+  },
+  {
+   "t": "Careers at Fufeng Usa | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/fufeng-usa",
+   "s": "Fufeng Usa Fufeng USA is a subsidiary of Fufeng Group, a leading Chinese bio-fermentation company specializing in the production of amino acids, xanthan gum, an"
+  },
+  {
+   "t": "Fufeng Group-Essential Biotech and First Biotech | LinkedIn",
+   "u": "https://www.linkedin.com/company/fufeng-group-america",
+   "s": "Fufeng Group is a global leader in biological fermentation, dedicated to innovation, sustainability, and excellence in ingredient manufacturing. As one of the w"
+  },
+  {
+   "t": "Fufeng Group Limited Hk Revenue 2026 Jobs in United States ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/fufeng-group-limited-hk-revenue-2026-jobs",
+   "s": "Today's top 116 Fufeng Group Limited Hk Revenue 2026 jobs in United States. Leverage your professional network, and get hired. New Fufeng Group Limited Hk Reven"
+  },
+  {
+   "t": "Careers | Fufeng USA",
+   "u": "https://www.fufengusa.com/careers",
+   "s": "Fufeng USA Incorporated employees are responsible, hard-working professionals who are interested in continuous growth and progress, focused on innovation, and w"
+  },
+  {
+   "t": "Join Us - Fufeng Group",
+   "u": "http://en.fufeng-group.com/list-34-1.html",
+   "s": "Fufeng Group oversees multiple subsidiaries spanning various industries, including bio-fermentation, mining, real estate, and finance. Our main product lines ar"
+  },
+  {
+   "t": "Fufeng Group",
+   "u": "http://en.fufeng-group.com/",
+   "s": "Fufeng Group oversees multiple subsidiaries spanning various industries, including bio-fermentation, mining, real estate, and finance. Our main product lines ar"
+  },
+  {
+   "t": "招贤纳士 - 阜丰集团 - fufeng-group.com",
+   "u": "http://www.fufeng-group.com/list-34-1.html",
+   "s": "阜丰股份 HK00546 阜丰集团"
+  },
+  {
+   "t": "Fufeng USA | Animal Feed Additives",
+   "u": "https://www.fufengusa.com/",
+   "s": "More About Fufeng USA Fufeng USA Incorporated is a subsidiary of Fufeng Group Limited, a publicly traded company on the Hong Kong Stock Exchange with a diversif"
+  },
+  {
+   "t": "Fufeng Group Limited Hk Revenue 2026 Jobs in United States ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/fufeng-group-limited-hk-revenue-2026-jobs",
+   "s": "Today's top 116 Fufeng Group Limited Hk Revenue 2026 jobs in United States. Leverage your professional network, and get hired. New Fufeng Group Limited Hk Reven"
+  },
+  {
+   "t": "Fufeng Usa Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/fufeng-usa-jobs",
+   "s": "Today's top Fufeng Usa jobs in United States. Leverage your professional network, and get hired. New Fufeng Usa jobs added daily."
+  },
+  {
+   "t": "Talent Recruitment-Fufeng Group_enterprise integrating mold design and ...",
+   "u": "https://en.szfflh.com/job.html",
+   "s": "Fufeng Group_enterprise integrating mold design and processing Talent Recruitment it has grown into a high-precision high-tech enterprise integrating mold desig"
+  },
+  {
+   "t": "招贤纳士 - 阜丰集团 - fufeng-group.com",
+   "u": "http://www.fufeng-group.com/list-34-1.html",
+   "s": "阜丰股份 HK00546 阜丰集团"
+  },
+  {
+   "t": "Join Us - Fufeng Group",
+   "u": "http://en.fufeng-group.com/list-34-1.html",
+   "s": "Fufeng Group oversees multiple subsidiaries spanning various industries, including bio-fermentation, mining, real estate, and finance. Our main product lines ar"
+  },
+  {
+   "t": "Careers | Fufeng USA",
+   "u": "https://www.fufengusa.com/careers",
+   "s": "Join the Fufeng USA Team See what positions are currently available and start your career with us today!"
+  },
+  {
+   "t": "Fufeng Group Limited Hk Revenue 2026 Jobs in United States ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/fufeng-group-limited-hk-revenue-2026-jobs",
+   "s": "Today's top 116 Fufeng Group Limited Hk Revenue 2026 jobs in United States. Leverage your professional network, and get hired. New Fufeng Group Limited Hk Reven"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.fufengusa.com/careers",
+  "platform": "adp",
+  "title": "Careers | Fufeng USA"
+ },
+ "verdict": "marker_surface"
 }

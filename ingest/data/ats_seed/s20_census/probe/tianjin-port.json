@@ -2,10 +2,153 @@
  "brand": "Tianjin Port",
  "tier": "lca",
  "lca": "TIANJIN BOND USA, LLC",
- "ts": "2026-09-27T02:21:04.072Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:10:12.166Z",
+ "candidates": [
+  {
+   "url": "https://jobs.echinacities.com/tianjin-jobs",
+   "title": "Jobs in Tianjin - Job Opportunities in Tianjin for Expats|天津招聘外国人|外籍招聘网|招聘外教|外国人招聘|外国人才网",
+   "status": 200,
+   "bytes": 705071,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL,",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.randstad.cn/en/jobs/tianjin/tianjin/",
+   "title": "Find Jobs in Tianjin, Tianjin | Randstad",
+   "status": 200,
+   "bytes": 311999,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse jobs in Tianjin, Tianjin. Choose from temporary and permanent jobs that'll help you reach your career goals.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://jobs.echinacities.com/en/Tianjin-jobs",
+   "title": "Tianjin Jobs – for Expats in Tianjin",
+   "status": 200,
+   "bytes": 704408,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Jobs in Tianjin - Job Opportunities in Tianjin for Expats",
+   "u": "https://jobs.echinacities.com/tianjin-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL,"
+  },
+  {
+   "t": "天津港（集团）有限公司2027校园招聘",
+   "u": "https://ptacn.zhaopin.com/company/index.html",
+   "s": "天津港是我国重要的现代化综合性港口、世界人工深水大港，码头等级达30万吨级，航道水深-22米，拥有各类泊位223个。作为天津港的经营主体，天津港集团目前资产总额超过1700亿元，在香港联交所和上海证券交易所拥有两家上市公司。 近年来，天津港集团深入贯彻落实习近平总书记视察天津港 ..."
+  },
+  {
+   "t": "Find Jobs in Tianjin, Tianjin | Randstad",
+   "u": "https://www.randstad.cn/en/jobs/tianjin/tianjin/",
+   "s": "Browse jobs in Tianjin, Tianjin. Choose from temporary and permanent jobs that'll help you reach your career goals."
+  },
+  {
+   "t": "Working in Tianjin - Tianjin Guide | Cities Insider - Cities Insider",
+   "u": "https://citiesinsider.com/country/china/tianjin/guides/tianjin-employment/en",
+   "s": "Working in Tianjin Tianjin is a major economic hub in northern China with diverse employment opportunities in manufacturing, IT, logistics, finance, and educati"
+  },
+  {
+   "t": "Tianjin Jobs - for Expats in Tianjin",
+   "u": "https://jobs.echinacities.com/en/Tianjin-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities."
+  },
+  {
+   "t": "天津港集团门户网站",
+   "u": "https://www.ptacn.com/",
+   "s": "枢纽港口 Hub Port ... 天津港第二集装箱码头有限公司 Tianjin Port second container terminal Co., Ltd 世界智能大会 World intelligence congress 海上高速FAST"
+  },
+  {
+   "t": "Finding work in Tianjin - Tianjin Guide - Expat.com",
+   "u": "https://www.expat.com/en/guide/asia/china/tianjin/9930-find-a-job-in-tianjin.html",
+   "s": "Tianjin is an important port city in northeastern China, one of the five central national cities, and one of China's largest urban areas with a population of ov"
+  },
+  {
+   "t": "Jobs in Tianjin",
+   "u": "https://tianjinjobs.com/",
+   "s": "Jobs in tianjin, TEFL work opportunities, Teach English in tianjin"
+  },
+  {
+   "t": "Jobs in Tianjin - Job Opportunities in Tianjin for Expats",
+   "u": "https://jobs.echinacities.com/tianjin-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL,"
+  },
+  {
+   "t": "Jobs in Tianjin - China Foreigner Jobs - isacjobs.com",
+   "u": "https://www.isacjobs.com/job-location/tianjin/",
+   "s": "Browse the latest jobs in Tianjin for foreigners, including teaching and company jobs for international jobseekers."
+  },
+  {
+   "t": "chinajob.com - Working in China,Start Here! - Jobs",
+   "u": "https://www.chinajob.com/job/index.php?m=s&l=Tianjin",
+   "s": "Explore job opportunities in Tianjin, China through ChinaJOB's comprehensive platform for working and living in China."
+  },
+  {
+   "t": "Find Jobs in Tianjin, Tianjin | Randstad",
+   "u": "https://www.randstad.cn/en/jobs/tianjin/tianjin/",
+   "s": "Browse jobs in Tianjin, Tianjin. Choose from temporary and permanent jobs that'll help you reach your career goals."
+  },
+  {
+   "t": "424 Tianjin jobs - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/tianjin-jobs-SRCH_IL.0,7_IS4172.htm",
+   "s": "Search jobs in Tianjin. Get the right job in Tianjin with company ratings & salaries. 424 open jobs in Tianjin. Get hired!"
+  },
+  {
+   "t": "427 Tianjin, Tianjin jobs - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/tianjin-jobs-SRCH_IL.0,7_IC2236410.htm",
+   "s": "Search jobs in Tianjin, Tianjin. Get the right job in Tianjin with company ratings & salaries. 427 open jobs in Tianjin. Get hired!"
+  },
+  {
+   "t": "Jobs in Tianjin",
+   "u": "https://tianjinjobs.com/",
+   "s": "We Also Provide Ongoing Professional Development Opportunities And Opportunities For Advancement. **Job Location:** This Position Is Based In Tianjin, China, An"
+  },
+  {
+   "t": "天津港（集团）有限公司2027校园招聘",
+   "u": "https://ptacn.zhaopin.com/company/index.html",
+   "s": "天津港是我国唯一同时拥有三条亚欧大陆桥的口岸，拥有集装箱航线150余条，每月航班550余班，同世界上180多个国家和地区的500多个港口保持贸易往来，与中远海运、招商局、上港集团等港航企业建立了全面战略合作关系，建立了密集的航线网络。"
+  },
+  {
+   "t": "Jobs in Tianjin - Job Opportunities in Tianjin for Expats",
+   "u": "https://jobs.echinacities.com/tianjin-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL,"
+  },
+  {
+   "t": "Tianjin Jobs - for Expats in Tianjin",
+   "u": "https://jobs.echinacities.com/en/Tianjin-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities."
+  },
+  {
+   "t": "Jobs in Tianjin - Careerjet",
+   "u": "https://www.career-jet.cn/jobs/Tianjin",
+   "s": "Search for the latest Tianjin jobs on Careerjet, the employment search engine. Covers all industry sectors."
+  },
+  {
+   "t": "chinajob.com - Working in China,Start Here! - Jobs",
+   "u": "https://www.chinajob.com/job/index.php?m=s&l=Tianjin",
+   "s": "Explore job opportunities in Tianjin, China through ChinaJOB's comprehensive platform for working and living in China."
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.echinacities.com/tianjin-jobs",
+  "platform": "custom",
+  "title": "Jobs in Tianjin - Job Opportunities in Tianjin for Expats|天津招聘外国人|外籍招聘网|招聘外教|外国人招聘|外国人才网"
+ },
+ "verdict": "custom_surface"
 }

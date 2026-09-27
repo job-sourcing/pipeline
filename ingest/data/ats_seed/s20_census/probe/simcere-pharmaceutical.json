@@ -2,10 +2,148 @@
  "brand": "Simcere Pharmaceutical",
  "tier": "lca",
  "lca": "SIMCERE OF AMERICA INC.",
- "ts": "2026-09-27T02:25:58.223Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:14:04.953Z",
+ "candidates": [
+  {
+   "url": "https://www.whatjobs.com/company/simcere-pharmaceutical-group/profile",
+   "title": "",
+   "status": 200,
+   "bytes": 11974,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Looking for jobs at Simcere Pharmaceutical Group? Browse current openings, salary insights, and company details. Apply today and explore careers with Simcere Ph",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.whatjobs.com/company/simcere-pharmaceutical-group/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 19168,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Simcere Pharmaceutical Group is an innovation-driven pharmaceutical company committed to \"For patience, for life.\" Our core therapeutic areas include oncology, ",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://en.simcere.com/jrwm/jrwm.aspx",
+   "title": "Simcere",
+   "status": 200,
+   "bytes": 23489,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Simcere then works with each employee to chart their career path and develop training plans suitable to their individual developmental needs. For high-potential",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Simcere",
+   "u": "https://en.simcere.com/jrwm/jrwm.aspx",
+   "s": "Simcere then works with each employee to chart their career path and develop training plans suitable to their individual developmental needs. For high-potential"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group Limited",
+   "u": "https://www.simcere.com/en/jrwm/jrwm.aspx",
+   "s": "Simcere then works with each employee to chart their career path and develop training plans suitable to their individual developmental needs. For high-potential"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group Jobs & Careers - 3 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Simcere-Pharmaceutical-Group-Jobs-E42552.htm",
+   "s": "Search job openings at Simcere Pharmaceutical Group. 3 Simcere Pharmaceutical Group jobs including salaries, ratings, and reviews, posted by Simcere Pharmaceuti"
+  },
+  {
+   "t": "Simcere",
+   "u": "https://en.simcere.com/",
+   "s": "Simcere Zaiming Enters Exclusive License Agreement with Roche for SIM0660 Global Development September 1 2026 - Simcere Zaiming，a subsidiary of Simcere Pharmace"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group hiring Scientist, Neuroscience discovery ...",
+   "u": "https://www.linkedin.com/jobs/view/4468485248",
+   "s": "Posted 7:05:06 PM. About Simcere:Simcere Pharmaceutical Group is an innovation-driven pharmaceutical company committed…See this and similar jobs on LinkedIn."
+  },
+  {
+   "t": "Simcere Pharmaceutical Group - LinkedIn",
+   "u": "https://www.linkedin.com/company/simcere-pharmaceutical-group",
+   "s": "Simcere Pharmaceutical Group Limited（2096.HK） is a pharmaceutical company driven by innovation and focusing on four therapeutic areas including Neuroscience, On"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group Careers: Jobs, Salaries & Hiring Info ...",
+   "u": "https://www.whatjobs.com/company/simcere-pharmaceutical-group/profile",
+   "s": "Looking for jobs at Simcere Pharmaceutical Group? Browse current openings, salary insights, and company details. Apply today and explore careers with Simcere Ph"
+  },
+  {
+   "t": "Simcere - 先声药业官网",
+   "u": "https://www.simcere.com/",
+   "s": "先声药业以巨大未满足的临床需求为导向，重点研发创新药，已拥有10款创新药。14个产品录入共计100多个政府机构或权威专业学会发布的指南和路径，超过45个产品被纳入国家医保药品目录。"
+  },
+  {
+   "t": "Simcere",
+   "u": "https://en.simcere.com/jrwm/jrwm.aspx",
+   "s": "Simcere then works with each employee to chart their career path and develop training plans suitable to their individual developmental needs. For high-potential"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group Jobs & Careers - 3 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Simcere-Pharmaceutical-Group-Jobs-E42552.htm",
+   "s": "Search job openings at Simcere Pharmaceutical Group. 3 Simcere Pharmaceutical Group jobs including salaries, ratings, and reviews, posted by Simcere Pharmaceuti"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group Limited",
+   "u": "https://www.simcere.com/en/jrwm/jrwm.aspx",
+   "s": "Simcere then works with each employee to chart their career path and develop training plans suitable to their individual developmental needs. For high-potential"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group hiring Scientist, Neuroscience discovery ...",
+   "u": "https://www.linkedin.com/jobs/view/4468485248",
+   "s": "Posted 7:05:06 PM. About Simcere:Simcere Pharmaceutical Group is an innovation-driven pharmaceutical company committed…See this and similar jobs on LinkedIn."
+  },
+  {
+   "t": "Simcere Pharmaceutical Group Jobs & Careers - 3 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Simcere-Pharmaceutical-Group-United-States-Jobs-EI_IE42552.0,28_IL.29,42_IN1.htm",
+   "s": "Search job openings at Simcere Pharmaceutical Group. 3 Simcere Pharmaceutical Group jobs including salaries, ratings, and reviews, posted by Simcere Pharmaceuti"
+  },
+  {
+   "t": "11,000+ Simcere Pharmaceutical Group jobs in United States",
+   "u": "https://www.linkedin.com/jobs/simcere-pharmaceutical-group-jobs",
+   "s": "Today's top 11,000+ Simcere Pharmaceutical Group jobs in United States. Leverage your professional network, and get hired. New Simcere Pharmaceutical Group jobs"
+  },
+  {
+   "t": "Jobs in the United States? | WhatJobs US",
+   "u": "https://www.whatjobs.com/company/simcere-pharmaceutical-group/jobs",
+   "s": "Simcere Pharmaceutical Group is an innovation-driven pharmaceutical company committed to \"For patience, for life.\" Our core therapeutic areas include oncology, "
+  },
+  {
+   "t": "Simcere pharmaceutical group jobs - Jooble",
+   "u": "https://jooble.org/jobs-simcere-pharmaceutical-group",
+   "s": "Active 747448 vacancies • Simcere pharmaceutical group jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Simcere ph"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group Jobs & Careers - 3 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Simcere-Pharmaceutical-Group-Jobs-E42552.htm",
+   "s": "Simcere Pharmaceutical Group Jobs FAQs Is Simcere Pharmaceutical Group currently hiring? Yes, Simcere Pharmaceutical Group is currently hiring for 3 open positi"
+  },
+  {
+   "t": "Simcere",
+   "u": "https://en.simcere.com/jrwm/jrwm.aspx",
+   "s": "Simcere then works with each employee to chart their career path and develop training plans suitable to their individual developmental needs. For high-potential"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group Limited",
+   "u": "https://www.simcere.com/en/jrwm/jrwm.aspx",
+   "s": "Simcere then works with each employee to chart their career path and develop training plans suitable to their individual developmental needs. For high-potential"
+  },
+  {
+   "t": "Simcere Pharmaceutical Group hiring Scientist, Neuroscience discovery ...",
+   "u": "https://www.linkedin.com/jobs/view/4468485248",
+   "s": "Posted 7:05:06 PM. About Simcere:Simcere Pharmaceutical Group is an innovation-driven pharmaceutical company committed…See this and similar jobs on LinkedIn."
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

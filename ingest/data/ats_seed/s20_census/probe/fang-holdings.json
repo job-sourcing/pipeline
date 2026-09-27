@@ -2,128 +2,153 @@
  "brand": "Fang Holdings",
  "tier": "lca",
  "lca": "FANG LLC",
- "ts": "2026-09-27T02:05:19.484Z",
+ "ts": "2026-09-27T07:57:25.128Z",
  "candidates": [
   {
-   "url": "https://fangsynergy.com",
-   "title": "Human Resources Consultancy &amp; Hospitality Management Services",
+   "url": "https://www.monmouth.edu/career-development/employer/fang-holdings/",
+   "title": "Fang Holdings | Career Development | Monmouth University",
    "status": 200,
-   "bytes": 37813,
+   "bytes": 104314,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 5,
-   "snippet": "A professional and innovative consultancy firm based in the UAE, specializing in HR, talent management, hospitality, event organization, and e-commerce."
+   "score": 7,
+   "snippet": "Fang Holdings Home University Advancement Meet University Advancement Career Development Back Career Development June 25, 2026",
+   "backend": "direct"
   },
   {
-   "url": "https://careers.staples.com",
-   "title": "Find Jobs and Careers With Staples, Inc.",
-   "status": 200,
-   "bytes": 38836,
+   "url": "https://career.kean.edu/jobs/fang-holdings-office-renovation-project-assistant/",
+   "title": "Page not found &#8211; Office of Career Services | Kean University",
+   "status": 404,
+   "bytes": 174764,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 2,
-   "snippet": "Current Openings · Transportation Delivery Operations Supervisor - 3rd Shift · Cover Delivery Driver · Delivery Driver · Warehouse Order Picker Part Time ... Re"
+   "score": 7,
+   "snippet": "Job Title: Office Renovation Project Assistant Job Responsibilities: Support project managers in office renovation projects, including liaising with third-party",
+   "backend": "direct"
+  },
+  {
+   "url": "http://job.fang.com/index.html",
+   "title": "房天下招聘——你会爱上fang.com",
+   "status": 200,
+   "bytes": 8399,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "管培生最美毕业照评选结果 关注房天下招聘 北京搜房科技发展有限公司 Beijing SouFun Science&Technology Development Co.,Ltd 版权所有 违法和不良信息举报电话：400-153-3010 举报邮箱：jubao@fang.com",
+   "backend": "supabase"
   }
  ],
  "results": [
   {
-   "t": "The Andorra startup ecosystem | Team - Premium Feature",
-   "u": "https://ecosystem.andorra-startup.com",
-   "s": "Jan 1, 1999 — View current team members and their roles . Access alumni and alumni founders information. Explore team backgrounds and career ... Read more"
+   "t": "Fang Holdings | Career Development | Monmouth University",
+   "u": "https://www.monmouth.edu/career-development/employer/fang-holdings/",
+   "s": "Fang Holdings Home University Advancement Meet University Advancement Career Development Back Career Development June 25, 2026"
   },
   {
-   "t": "Meet our Leadership Institute Class of 2026 - Keilani Fang",
-   "u": "https://www.facebook.com",
-   "s": "Fang works within the Conservation Department. Work performed by licensed, trained professionals. Visit here if you are interested in applying ..."
+   "t": "fang Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Fang",
+   "s": "Find out what works well at fang from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for "
   },
   {
-   "t": "Roberto Parris Introduces Dance Education | News | Convent",
-   "u": "https://www.sacredsf.org",
-   "s": "Mar 28, 2022 — A new after school dance class taught by Roberto Parris builds self-confidence and discipline in a fun, casual setting."
+   "t": "Shortlist companies and open positions - Work for FANG",
+   "u": "https://workforfang.com/shortlist-companies-and-open-positions",
+   "s": "Companies backed by Andreessen Horowitz fund Y-Combinator companies jobs Top 100 remote companies hiring Expanding the search for all tech startups If the lists"
   },
   {
-   "t": "Fangzhou and Tencent Healthcare Launch Full-Stack AI",
-   "u": "https://www.biospace.com",
-   "s": "Nov 27, 2025 — a leading provider of AI-driven Internet healthcare solutions, AI+Chronic Disease Management” solution,"
+   "t": "FAANG+ Jobs - TrueUp",
+   "u": "https://www.trueup.io/faang-plus",
+   "s": "All open jobs at FAANG companies (Facebook/Meta, Apple, Amazon, Netflix, Google/Alphabet) plus Microsoft, Tesla, and Nvidia. This group is also called The Magni"
   },
   {
-   "t": "Interested in a career in commercial law and looking to apply",
-   "u": "https://www.instagram.com",
-   "s": "Interested in a career in commercial law and looking to apply to top-tier law firms in HK or the UK? Then sign up to the ACS annual legal ... Read more"
+   "t": "Land a dream job in tech | Work for FANG",
+   "u": "https://workforfang.com/",
+   "s": "Welcome to Work for FANG We are Yuliana and Vitaliy. We both landed jobs at our dream companies. We work for Google and Facebook, in marketing and engineering t"
   },
   {
-   "t": "(KHYB) KraneShares Asia Pacific High Income Bond ETF",
-   "u": "https://www.etf.com",
-   "s": "Learn everything about KraneShares Asia Pacific High Income Bond ETF (KHYB). Free ratings, analyses, holdings, benchmarks, quotes, and news . Fang Index ETFs"
+   "t": "Office Renovation Project Assistant - Office of Career Services | Kean ...",
+   "u": "https://career.kean.edu/jobs/fang-holdings-office-renovation-project-assistant/",
+   "s": "Job Title: Office Renovation Project Assistant Job Responsibilities: Support project managers in office renovation projects, including liaising with third-party"
   },
   {
-   "t": "Sitemap - Navigate Our Website | FANG Synergy Holding",
-   "u": "https://fangsynergy.com",
-   "s": "A professional and innovative consultancy firm based in the UAE, specializing in HR, talent management, hospitality, event organization, and e-commerce."
+   "t": "Fang Holdings Number of Employees 2026 | Employee Count & Headcount ...",
+   "u": "https://www.reveliolabs.com/companies/fang-holdings/employees",
+   "s": "Companies Fang Holdings Ltd. Employees US OTC: SFUNY How many employees work at Fang Holdings? Fang Holdings Ltd. (SFUNY) has approximately 551 total employees "
   },
   {
-   "t": "Diff - 5.0.3^! - tapestry-5 - Git at Google",
-   "u": "https://apache.googlesource.com",
-   "s": "+ + \"Source\" form shall mean the preferred form for making modifications, + including but not limited to software source code, documentation + source, and ... R"
+   "t": "房天下招聘——你会爱上fang.com",
+   "u": "http://job.fang.com/index.html",
+   "s": "管培生最美毕业照评选结果 关注房天下招聘 北京搜房科技发展有限公司 Beijing SouFun Science&Technology Development Co.,Ltd 版权所有 违法和不良信息举报电话：400-153-3010 举报邮箱：jubao@fang.com"
   },
   {
-   "t": "Zoberetimifid | PDF | Copyright",
-   "u": "https://www.scribd.com",
-   "s": "The document provides a detailed guide on the Swift gloves in Old School RuneScape (OSRS), including their requirements, effects, and how to obtain them. Read m"
+   "t": "9 Fang.? jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/fang.%3F-jobs?f_EA=true",
+   "s": "Today's top 9 Fang.? jobs in United States. Leverage your professional network, and get hired. New Fang.? jobs added daily."
   },
   {
-   "t": "in trunk/docs/common-resources/en/src/main: dictionaries and",
-   "u": "https://lists.jboss.org",
-   "s": "Dec 18, 2008 — [richfaces-svn-commits] JBoss Rich Faces SVN: r11872 - in trunk/docs/common-resources/en/src/main: dictionaries and 1 other directory. Read more"
+   "t": "fang Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Fang",
+   "s": "Find out what works well at fang from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for "
   },
   {
-   "t": "Tumblr 200-Word RPGs 2023 - Penguin King Games",
-   "u": "https://penguinking.games",
-   "s": "Assign seven points across five Jobs : CLEAN, FRY, MANAGE, STOCK, and REPAIR. CLEAN - A clean kitchen is a happy kitchen! FRY - Flip burgers and work the ... Re"
+   "t": "Job Hiring Page - fanginc.com",
+   "u": "https://fanginc.com/job.html",
+   "s": "JOB OPENING Two positions with flexible works described below are available for applications. Send your resume to: fang@fanginc.com or call 714-898-7785 ..."
   },
   {
-   "t": "CHECK ONLINE: https://bit.ly/DeFangGlass TAIWAN HIRING",
-   "u": "https://www.facebook.com",
-   "s": "... HIRING FACTORY WORKERS At least High School Grads, 38 Years Old Below Company: De Fang Glass Company Basic Salary: NT$29,500 (P56,000) ... Read more"
+   "t": "Fang Holdings — Hiring Transparency | Quaerent",
+   "u": "https://www.quaerent.com/company/fang-holdings",
+   "s": "How does Fang Holdings treat job applicants? Ghost rate, response time, transparency score, and process signals based on real candidate data on Quaerent."
   },
   {
-   "t": "Health Behaviours in Soccer Support Staff: 24-Hour",
-   "u": "https://pmc.ncbi.nlm.nih.gov",
-   "s": "Soccer support staff operate under demanding schedules and high-performance environments while guiding players' movement, sleep, and nutrition; however, ..."
+   "t": "33 Cn Fang.com jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/cn-fang.com-jobs",
+   "s": "Today's top 33 Cn Fang.com jobs in United States. Leverage your professional network, and get hired. New Cn Fang.com jobs added daily."
   },
   {
-   "t": "Korea peace talks: A missed opportunity for human rights",
-   "u": "https://www.amnestyusa.org",
-   "s": "Apr 27, 2018 — Responding to the joint declaration following talks between the leaders of North and South Korea at Panmunjeom, Amnesty International's East ..."
+   "t": "Fang Holdings Number of Employees 2026 | Employee Count & Headcount ...",
+   "u": "https://www.reveliolabs.com/companies/fang-holdings/employees",
+   "s": "Fang Holdings's active job postings rose 108.6% in 2026 to 27, with new postings per month cooling from 11 in 2023 to 8 in 2026. Overall employee sentiment is n"
   },
   {
-   "t": "Icemen Acquire Forward Garrett Klotz | Jacksonville Icemen",
-   "u": "https://jacksonvilleicemen.com",
-   "s": "Dec 20, 2017 — The Jacksonville Icemen have acquired forward Garrett Klotz, the club announced today. Klotz (6'5\", 234 lbs) was selected in the third round ..."
+   "t": "Office Renovation Project Assistant | Fang Holdings | Handshake",
+   "u": "https://app.joinhandshake.com/public/jobs/11348555",
+   "s": "Fang Holdings is looking for Office Renovation Project Assistant in New York City, New York, United States, Manhattan,... See this and similar jobs on Handshake"
   },
   {
-   "t": "Mediating and Moderating Influences of Career Decision",
-   "u": "https://onlinelibrary.wiley.com",
-   "s": "May 25, 2026 — ABSTRACT. Higher education presents substantial challenges as students navigate diverse academic and career expectations. In China, final-. Read "
+   "t": "FAANG+ Jobs - TrueUp",
+   "u": "https://www.trueup.io/faang-plus",
+   "s": "All open jobs at FAANG companies (Facebook/Meta, Apple, Amazon, Netflix, Google/Alphabet) plus Microsoft, Tesla, and Nvidia. This group is also called The Magni"
   },
   {
-   "t": "Interested in a career in commercial law and looking to apply",
-   "u": "https://www.instagram.com",
-   "s": "Interested in a career in commercial law and looking to apply to top-tier law firms in HK or the UK? Then sign up to the ACS annual legal ... Read more"
+   "t": "Job Hiring Page - fanginc.com",
+   "u": "https://fanginc.com/job.html",
+   "s": "JOB OPENING Two positions with flexible works described below are available for applications. Send your resume to: fang@fanginc.com or call 714-898-7785 ..."
   },
   {
-   "t": "Artificial intelligence jobs in Newark, NJ",
-   "u": "https://www.indeed.com",
-   "s": "Options & Portfolio Strategy Analyst — AI & Python . Easily apply. Fang LLC. Millburn, NJ 07041. From $3,000 a month. Full-time. Python, data analysis, and AI ."
+   "t": "POH FANG SINGAPORE SHIPPING PTE. LTD. Careers Singapore | Get A Job At ...",
+   "u": "https://www.mycareersfuture.gov.sg/companies/poh-fang-singapore-shipping-201819464R",
+   "s": "The smarter way for Singaporeans to find jobs. Match jobs to your skills, explore new careers, and access job opportunities with government support."
   },
   {
-   "t": "Search our Job Opportunities at Staples, Inc.",
-   "u": "https://careers.staples.com",
-   "s": "Current Openings · Transportation Delivery Operations Supervisor - 3rd Shift · Cover Delivery Driver · Delivery Driver · Warehouse Order Picker Part Time ... Re"
+   "t": "Jobs at DKSH",
+   "u": "https://jobs.dksh.com/",
+   "s": "Empowered Impact. Growth That Matters Start your career journey with us DKSH is an equal opportunity employer. All applicants will be considered for employment "
+  },
+  {
+   "t": "27 Fang Jobs, Employment February 27, 2024 | Indeed.com",
+   "u": "https://sg.indeed.com/q-fang-jobs.html",
+   "s": "27 Fang jobs available on Indeed.com. Apply to Beautician, Supervisor, Customer Service Representative and more!"
   }
  ],
  "dict_hits": [],
- "verdict": "no_clear_surface"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.monmouth.edu/career-development/employer/fang-holdings/",
+  "platform": "custom",
+  "title": "Fang Holdings | Career Development | Monmouth University"
+ },
+ "verdict": "custom_surface"
 }

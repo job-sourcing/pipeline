@@ -2,146 +2,160 @@
  "brand": "GAC Commercial Vehicle",
  "tier": "lca",
  "lca": "GAC SOLUTIONS INC",
- "ts": "2026-09-27T02:05:39.662Z",
+ "ts": "2026-09-27T07:33:45.632Z",
  "candidates": [
   {
-   "url": "https://gacmotoreuropebv-1747132357.teamtailor.com",
-   "title": "Welcome to Our Career Site - GAC Motor Europe B.V.",
+   "url": "https://apply.workable.com/gac-enterprises-llc/?lng=en",
+   "title": "",
    "status": 200,
-   "bytes": 67255,
-   "markers": [
-    "teamtailor"
-   ],
+   "bytes": 1719,
+   "markers": [],
    "jsonld_jobs": 0,
-   "spec": null,
-   "score": 5,
-   "snippet": "48 jobs · Aftersales Intern (Spare parts&Logistics). Aftersales Department · Amsterdam · Onsite · Marketing Intern · Finance manager (all genders) · Tax Manager"
+   "spec": "workable:gac-enterprises-llc",
+   "score": 15,
+   "snippet": "Careers at GAC Enterprises, LLC Job Openings Driver / Laborer Posted 7 days ago On-site",
+   "backend": "supabase"
   },
   {
-   "url": "https://www.gaccv.com",
+   "url": "https://career.gac.com/",
+   "title": "Attention Required! | Cloudflare",
+   "status": 403,
+   "bytes": 4903,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.gaccv.com/en/about/job/vacancy/",
    "title": "",
    "status": 0,
    "bytes": 0,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 5,
-   "snippet": "The company specializes in the R&D, production, sales, and after-sales services of commercial vehicles and their chassis. Its core products include heavy-duty ."
-  },
-  {
-   "url": "https://www.ftggac.com.au",
-   "title": "GAC Car Dealer Ferntree Gully | Car Sales, Service &amp; Parts | Ferntree Gully GAC",
-   "status": 200,
-   "bytes": 308474,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 5,
-   "snippet": "Ferntree Gully GAC provides a variety of fantastic career opportunities across the business, from sales staff to management. Read more"
+   "score": 7,
+   "snippet": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号",
+   "backend": "direct"
   }
  ],
  "results": [
   {
-   "t": "Current job openings - GAC Motor Europe B.V.",
-   "u": "https://gacmotoreuropebv-1747132357.teamtailor.com",
-   "s": "48 jobs · Aftersales Intern (Spare parts&Logistics). Aftersales Department · Amsterdam · Onsite · Marketing Intern · Finance manager (all genders) · Tax Manager"
+   "t": "Careers at GAC | Global Careers",
+   "u": "https://career.gac.com/",
+   "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
+  },
+  {
+   "t": "Vacancy-GAC COMMERCIAL VEHICLE - gaccv.com",
+   "u": "https://www.gaccv.com/en/about/job/vacancy/",
+   "s": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号"
+  },
+  {
+   "t": "Home-GAC COMMERCIAL VEHICLE",
+   "u": "https://www.gaccv.com/en/",
+   "s": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号"
+  },
+  {
+   "t": "GAC Official Site | Where Craft Meets Technology | GAC Global",
+   "u": "https://www.gacgroup.com/",
+   "s": "GAC Group has developed AEP 3.0 electric platform, Magazine Battery 2.0, L4 autonomous driving system, and Smart Ecological Factory, and is striving to become a"
+  },
+  {
+   "t": "GAC Official Site | Where Craft Meets Technology | GAC Europe",
+   "u": "https://www.gacgroup.com/en-eu",
+   "s": "GAC Group Office Site in Europe. GAC Group has developed the AEP 3.0 electric platform, Magazine Battery 2.0, L4 autonomous driving system, and Smart Ecological"
   },
   {
    "t": "career.gac-international.com",
-   "u": "https://hire-r1.mokahr.com",
-   "s": "High-quality positions are now open . Click to view details. GACI engineers the global business towards to future, GACI envisions a future of work that ignites "
+   "u": "https://career.gac-international.com/apply/gac-international/100006013",
+   "s": "As the main undertaker of GAC GROUP's overseas business, GAC INTERNATIONAL CO., LTD., together with its branches and affiliates across the globe，has established"
   },
   {
-   "t": "50 Gac Jobs & Work",
-   "u": "https://www.indeed.com",
-   "s": "56 Gac jobs available on Indeed.com . Apply to Truck Driver, Customer Service Representative, Agent and more! $37,440 - $47,840 a year"
+   "t": "Gac Group Jobs in Worldwide (17,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gac-group-jobs-worldwide",
+   "s": "Today's top 17,000+ Gac Group jobs in Worldwide. Leverage your professional network, and get hired. New Gac Group jobs added daily."
   },
   {
-   "t": "Company Profile-GAC COMMERCIAL VEHICLE",
-   "u": "https://www.gaccv.com",
-   "s": "The company specializes in the R&D, production, sales, and after-sales services of commercial vehicles and their chassis. Its core products include heavy-duty ."
+   "t": "Careers - Commercial Vehicle Group",
+   "u": "https://cvgrp.com/additional-links/careers/",
+   "s": "Join Our Team! Use this link to explore opportunities at CVG: CVG Careers Total Rewards Eligible CVG associates enjoy a competitive wage and benefits package th"
   },
   {
-   "t": "GAC Careers in Ferntree Gully, VIC | Join the Team at",
-   "u": "https://www.ftggac.com.au",
-   "s": "Ferntree Gully GAC provides a variety of fantastic career opportunities across the business, from sales staff to management. Read more"
+   "t": "Vacancy-GAC COMMERCIAL VEHICLE - gaccv.com",
+   "u": "https://www.gaccv.com/en/about/job/vacancy/",
+   "s": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号"
   },
   {
-   "t": "Gac Group Jobs in All Sydney NSW - Sep 2026",
-   "u": "https://au.seek.com",
-   "s": "4 Gac Group jobs in Sydney, NSW · Dealer Marketing Manager · Supply Chain and Pricing Analyst · Regional Aftersales Manager （NSW/VIC/QLD) · System Operations an"
+   "t": "Careers at GAC | Global Careers",
+   "u": "https://career.gac.com/",
+   "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
   },
   {
-   "t": "Careers",
-   "u": "https://www.gacenterprisesllc.com",
-   "s": "CURRENT OPENINGS - APPLY ONLINE · Construction CDL Driver · Construction CDL Driver · Construction CDL Driver · Construction Manager - Telecommunications. Read "
+   "t": "Home-GAC COMMERCIAL VEHICLE",
+   "u": "https://www.gaccv.com/en/",
+   "s": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号"
   },
   {
-   "t": "50 Gac Jobs & Work",
-   "u": "https://www.indeed.com",
-   "s": "56 Gac jobs available on Indeed.com . Apply to Truck Driver, Customer Service Representative, Agent and more! $37,440 - $47,840 a year"
+   "t": "8 Gac Group jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gac-group-jobs",
+   "s": "Today's top 8 Gac Group jobs in United States. Leverage your professional network, and get hired. New Gac Group jobs added daily."
   },
   {
-   "t": "Current job openings - GAC Motor Europe B.V.",
-   "u": "https://gacmotoreuropebv-1747132357.teamtailor.com",
-   "s": "49 jobs · Aftersales Intern (Spare parts&Logistics). Aftersales Department · Amsterdam · Onsite · Marketing Intern · Finance manager (all genders) · Tax Manager"
+   "t": "GAC Official Site | Where Craft Meets Technology | GAC Global",
+   "u": "https://www.gacgroup.com/",
+   "s": "GAC Group has developed AEP 3.0 electric platform, Magazine Battery 2.0, L4 autonomous driving system, and Smart Ecological Factory, and is striving to become a"
   },
   {
-   "t": "Careers",
-   "u": "https://www.gacenterprisesllc.com",
-   "s": "CURRENT OPENINGS - APPLY ONLINE · Construction CDL Driver · Construction CDL Driver · Construction CDL Driver · Construction Manager - Telecommunications."
+   "t": "Gac Group Jobs in Worldwide (17,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gac-group-jobs-worldwide",
+   "s": "Today's top 17,000+ Gac Group jobs in Worldwide. Leverage your professional network, and get hired. New Gac Group jobs added daily."
   },
   {
-   "t": "Driver Application",
-   "u": "https://www.gacchemical.com",
-   "s": "a license, permit or privledge to operate a motor vehicle ? Driving Experience Straight Truck Yes No Type of Equipment Van Tank Flat Dump"
+   "t": "career.gac-international.com",
+   "u": "https://career.gac-international.com/",
+   "s": "As the main undertaker of GAC GROUP's overseas business, GAC INTERNATIONAL CO., LTD., together with its branches and affiliates across the globe，has established"
   },
   {
-   "t": "Construction CDL Driver | GAC Enterprises, LLC",
-   "u": "https://jobs.workable.com",
-   "s": "4 days ago — The driver will be responsible for transporting construction equipment, vehicles, tools, and materials between yards and active job sites, Must ..."
+   "t": "Guangzhou Automobile Industry Group Jobs & Careers (71 Open Roles ...",
+   "u": "https://www.thejobsmap.com/company/guangzhou-automobile-industry-group",
+   "s": "About Guangzhou Automobile Industry Group Guangzhou Automobile Group Co., Ltd. (GAC Group) is a Chinese state-owned automobile manufacturer headquartered in Gua"
   },
   {
-   "t": "Company Profile-GAC COMMERCIAL VEHICLE",
-   "u": "https://www.gaccv.com",
-   "s": "The company specializes in the R&D, production, sales, and after-sales services of commercial vehicles and their chassis. Its core products include heavy-duty ."
+   "t": "Careers at GAC | Global Careers",
+   "u": "https://career.gac.com/",
+   "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
   },
   {
-   "t": "Gac Group Jobs in All Sydney NSW - Sep 2026",
-   "u": "https://au.seek.com",
-   "s": "4 Gac Group jobs in Sydney, NSW · Dealer Marketing Manager · Supply Chain and Pricing Analyst · Regional Aftersales Manager （NSW/VIC/QLD) · System Operations an"
+   "t": "Vacancy-GAC COMMERCIAL VEHICLE - gaccv.com",
+   "u": "https://www.gaccv.com/en/about/job/vacancy/",
+   "s": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号"
   },
   {
-   "t": "GAC Careers in Ferntree Gully, VIC | Join the Team at",
-   "u": "https://www.ftggac.com.au",
-   "s": "Ferntree Gully GAC provides a variety of fantastic career opportunities across the business, from sales staff to management."
+   "t": "Home-GAC COMMERCIAL VEHICLE",
+   "u": "https://www.gaccv.com/en/",
+   "s": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号"
   },
   {
-   "t": "from auxin dynamics in plants to protein sequences.",
-   "u": "https://theses.hal.science",
-   "s": "Jan 11, 2016 — In the second part of the thesis, we focus on the structural properties of proteins. In particular we ask how conservation of protein function .."
-  },
-  {
-   "t": "Circular RNA ZNF609/CKAP5 mRNA interaction regulates",
-   "u": "https://www.cell.com",
-   "s": "Circular RNAs (circRNAs) are widely expressed in eukaryotes and are regulated in many biological pro- cesses. Although several studies indicate their ... Read m"
-  },
-  {
-   "t": "Giovanni De Feo",
-   "u": "https://www.sciencedirect.com",
-   "s": "Read articles by Giovanni De Feo on ScienceDirect, the world's leading source for scientific, technical, and medical research."
-  },
-  {
-   "t": "(PDF) Improving Drinking Water Quality in South Korea",
-   "u": "https://www.researchgate.net",
-   "s": "Sep 10, 2020 — The objective of this present study is to use choice experiments and an extensive cost-benefit analysis (CBA) to investigate the feasibility ... "
-  },
-  {
-   "t": "Options Assessment Report - Bombala Water Supply",
-   "u": "https://www.snowymonaro.nsw.gov.au",
-   "s": "Jun 12, 2020 — Granulated Activated Carbon ( GAC ) of commercial , recreational and Aboriginal cultural fishing, aquaculture and marine protected areas within ."
+   "t": "career.gac-international.com",
+   "u": "https://career.gac-international.com/",
+   "s": "GACI engineers the global business towards to future, when the business meets humanity, people there, will get a key to meet globe, a chance to feel diversity, "
   }
  ],
  "dict_hits": [],
- "verdict": "no_clear_surface"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://apply.workable.com/gac-enterprises-llc/?lng=en",
+  "title": "",
+  "status": 200,
+  "bytes": 1719,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "workable:gac-enterprises-llc",
+  "score": 15,
+  "snippet": "Careers at GAC Enterprises, LLC Job Openings Driver / Laborer Posted 7 days ago On-site",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

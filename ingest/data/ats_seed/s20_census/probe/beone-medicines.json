@@ -2,10 +2,164 @@
  "brand": "BeOne Medicines",
  "tier": "lca",
  "lca": "BEONE MEDICINES USA, INC.",
- "ts": "2026-09-27T02:36:27.520Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:29:14.477Z",
+ "candidates": [
+  {
+   "url": "https://beigene.wd5.myworkdayjobs.com/BeiGene",
+   "title": "",
+   "status": 200,
+   "bytes": 7084,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:BeiGene",
+   "score": 12,
+   "snippet": "BeOne is a global oncology company that is discovering and developing innovative treatments that are more affordable and accessible to cancer patients worldwide",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://beonemedicines.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 16091,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover careers at BeOne Medicines and join a global oncology team advancing innovative cancer treatments. Discover opportunities to make a meaningful impact.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://beonemedicines.ca/en/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 12547,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers at BeOne World Changers Wanted We're looking for bold, innovative and persistent individuals to help challenge the status quo by accelerating the develo",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at BeOne: Join Our Global Oncology Team | BeOne Medicines",
+   "u": "https://beonemedicines.com/careers/",
+   "s": "Discover careers at BeOne Medicines and join a global oncology team advancing innovative cancer treatments. Discover opportunities to make a meaningful impact."
+  },
+  {
+   "t": "Careers at BeOne",
+   "u": "https://beigene.wd5.myworkdayjobs.com/BeiGene",
+   "s": "BeOne is a global oncology company that is discovering and developing innovative treatments that are more affordable and accessible to cancer patients worldwide"
+  },
+  {
+   "t": "BeOne Medicines: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/beonemedicines/jobs/",
+   "s": "BeOne Medicines | 266,781 followers on LinkedIn. Cancer has no borders. Neither do we. | BeOne Medicines is a global oncology company that is discovering and de"
+  },
+  {
+   "t": "Careers - BeOne Medicines EN",
+   "u": "https://beonemedicines.ca/en/careers/",
+   "s": "Careers at BeOne World Changers Wanted We're looking for bold, innovative and persistent individuals to help challenge the status quo by accelerating the develo"
+  },
+  {
+   "t": "Careers - BeOne",
+   "u": "https://beonemedicines.com.au/careers/",
+   "s": "Careers at BeOne World Changers Wanted We're looking for bold, innovative and persistent individuals to help challenge the status quo by accelerating the develo"
+  },
+  {
+   "t": "Advancing Cancer Care Through Science & Purpose | BeOne Medicines",
+   "u": "https://beonemedicines.us/",
+   "s": "People with cancer deserve hope and better tomorrows. BeOne is advancing a broad and deep pipeline, accelerating development through rigorous science to deliver"
+  },
+  {
+   "t": "BeOne Medicines Talent Network",
+   "u": "https://directsource.magnitglobal.com/us/beonemedicines/jobs",
+   "s": "Explore contract opportunities with BeOne Medicines. Get matched and notified for hand-picked roles. Be on the top of the list of potential hires for all opport"
+  },
+  {
+   "t": "BeOne Medicines Careers and Jobs - CareerPanels",
+   "u": "https://careerpanels.com/company-career-portals/company/beone-medicines",
+   "s": "Explore BeOne Medicines careers in Manufacturing & Production, Production Operative, Manufacturing Engineer, Production Manager, Machine Operator and other job "
+  },
+  {
+   "t": "Careers at BeOne: Join Our Global Oncology Team | BeOne Medicines",
+   "u": "https://beonemedicines.com/careers/",
+   "s": "Discover careers at BeOne Medicines and join a global oncology team advancing innovative cancer treatments. Discover opportunities to make a meaningful impact."
+  },
+  {
+   "t": "BeOne Medicines: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/beonemedicines/jobs/",
+   "s": "With a portfolio spanning hematology and solid tumors, BeOne is expediting development of its diverse pipeline of novel therapeutics through its internal capabi"
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://beigene.wd5.myworkdayjobs.com/BeiGene",
+   "s": "BeOne is a global oncology company that is discovering and developing innovative treatments that are more affordable and accessible to cancer patients worldwide"
+  },
+  {
+   "t": "BeOne Medicines: Jobangebote | LinkedIn",
+   "u": "https://de.linkedin.com/company/beonemedicines/jobs",
+   "s": "With a portfolio spanning hematology and solid tumors, BeOne is expediting development of its diverse pipeline of novel therapeutics through its internal capabi"
+  },
+  {
+   "t": "Jobs at BeOne Medicines (2026) | 96 Open Positions | Biohired",
+   "u": "https://biohired.com/companies/beone-medicines",
+   "s": "Browse 96 open positions at BeOne Medicines. Updated daily. Apply to biotech and pharma jobs on Biohired."
+  },
+  {
+   "t": "BeOne Medicines: Jobangebote | LinkedIn",
+   "u": "https://ch.linkedin.com/company/beonemedicines/jobs",
+   "s": "With a portfolio spanning hematology and solid tumors, BeOne is expediting development of its diverse pipeline of novel therapeutics through its internal capabi"
+  },
+  {
+   "t": "BeOne Medicines Talent Network",
+   "u": "https://beonemedicines.willhire.co/jobs",
+   "s": "Explore contract opportunities with BeOne Medicines. Get matched and notified for hand-picked roles. Be on the top of the list of potential hires for all opport"
+  },
+  {
+   "t": "Careers - BeOne",
+   "u": "https://beonemedicines.com.au/careers/",
+   "s": "We're looking for bold, innovative and persistent individuals to help challenge the status quo by accelerating the development of groundbreaking medicines and m"
+  },
+  {
+   "t": "Careers at BeOne: Join Our Global Oncology Team | BeOne Medicines",
+   "u": "https://beonemedicines.com/careers/",
+   "s": "Discover careers at BeOne Medicines and join a global oncology team advancing innovative cancer treatments. Discover opportunities to make a meaningful impact."
+  },
+  {
+   "t": "BeOne Medicines: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/beonemedicines/jobs/",
+   "s": "BeOne Medicines | 266,781 followers on LinkedIn. Cancer has no borders. Neither do we. | BeOne Medicines is a global oncology company that is discovering and de"
+  },
+  {
+   "t": "164 Beone Medicines Ltd. jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/beone-medicines-ltd.-jobs",
+   "s": "Today's top 164 Beone Medicines Ltd. jobs in United States. Leverage your professional network, and get hired. New Beone Medicines Ltd. jobs added daily."
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://beigene.wd5.myworkdayjobs.com/BeiGene",
+   "s": "BeOne is a global oncology company that is discovering and developing innovative treatments that are more affordable and accessible to cancer patients worldwide"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://beigene.wd5.myworkdayjobs.com/BeiGene",
+  "title": "",
+  "status": 200,
+  "bytes": 7084,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:BeiGene",
+  "score": 12,
+  "snippet": "BeOne is a global oncology company that is discovering and developing innovative treatments that are more affordable and accessible to cancer patients worldwide",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

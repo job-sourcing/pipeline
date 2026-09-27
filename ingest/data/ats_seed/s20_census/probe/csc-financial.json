@@ -2,10 +2,148 @@
  "brand": "CSC Financial",
  "tier": "lca",
  "lca": "CSC  INVESTMENTS II, LLC",
- "ts": "2026-09-27T02:34:38.329Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:26:15.729Z",
+ "candidates": [
+  {
+   "url": "https://www.cscglobal.com/service/careers/",
+   "title": "CSC Careers | Global Jobs in Tech, Funds, Accounting, Service | CSC",
+   "status": 200,
+   "bytes": 137894,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore global careers at CSC in technology, funds, accounting, service, and operations. More than 70 offices. Flexible work, growth opportunities, and a strong",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.cscglobal.com/service/careers/global-career-opportunities/",
+   "title": "CSC Careers | Explore Job Opportunities Worldwide | CSC",
+   "status": 200,
+   "bytes": 850980,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Build your career at CSC. Explore jobs in technology, funds, accounting, and operations in more than 70 offices worldwide, including India, Spain, and London.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.csc.gov.au/About-CSC/Careers/Jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 24460,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Senior Compliance Analyst (Flexible/Hybrid - Permanent Role) A compliance-focused role offering meaningful experience across financial services regulation, inci",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "CSC Careers | Global Jobs in Tech, Funds, Accounting, Service",
+   "u": "https://www.cscglobal.com/service/careers/",
+   "s": "Explore global careers at CSC in technology, funds, accounting, service, and operations. More than 70 offices. Flexible work, growth opportunities, and a strong"
+  },
+  {
+   "t": "CSC Careers | Explore Job Opportunities Worldwide",
+   "u": "https://www.cscglobal.com/service/careers/global-career-opportunities/",
+   "s": "Build your career at CSC. Explore jobs in technology, funds, accounting, and operations in more than 70 offices worldwide, including India, Spain, and London."
+  },
+  {
+   "t": "CSC Careers",
+   "u": "https://hczw.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001",
+   "s": "Explore career opportunities and job openings at CSC Careers, where you can grow professionally and make a difference."
+  },
+  {
+   "t": "CSC Careers - LinkedIn",
+   "u": "https://www.linkedin.com/showcase/careers-csc/",
+   "s": "CSC Careers | 5,696 followers on LinkedIn. Driven by purpose. Powered by people. | At CSC, we take care of businesses around the world with our client-centric a"
+  },
+  {
+   "t": "Current opportunities - Commonwealth Superannuation Corporation (CSC)",
+   "u": "https://www.csc.gov.au/About-CSC/Careers/Jobs",
+   "s": "Senior Compliance Analyst (Flexible/Hybrid - Permanent Role) A compliance-focused role offering meaningful experience across financial services regulation, inci"
+  },
+  {
+   "t": "Careers - CSC Group",
+   "u": "https://www.cscgroup.com/careers",
+   "s": "Join CSC Group. Explore careers in payment solutions, technology, and financial services. View openings and apply today."
+  },
+  {
+   "t": "CSC: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/cscsince1899/jobs",
+   "s": "CSC is the world's leading provider of global business administration and compliance solutions, specialized administration services to alternative asset manager"
+  },
+  {
+   "t": "CSC Financial Careers | Talentd",
+   "u": "https://www.talentd.in/companies/csc-financial",
+   "s": "No open roles at CSC Financial right now. Read what they do, see past openings, and browse similar fresher and internship roles on Talentd."
+  },
+  {
+   "t": "CSC Careers | Global Jobs in Tech, Funds, Accounting, Service",
+   "u": "https://www.cscglobal.com/service/careers/",
+   "s": "Explore global careers at CSC in technology, funds, accounting, service, and operations. More than 70 offices. Flexible work, growth opportunities, and a strong"
+  },
+  {
+   "t": "CSC Careers | Explore Job Opportunities Worldwide",
+   "u": "https://www.cscglobal.com/service/careers/global-career-opportunities/",
+   "s": "Build your career at CSC. Explore jobs in technology, funds, accounting, and operations in more than 70 offices worldwide, including India, Spain, and London."
+  },
+  {
+   "t": "Now Hiring: 25 CSC Finance Jobs | Indeed",
+   "u": "https://www.indeed.com/q-CSC-Finance-jobs.html",
+   "s": "27 CSC Finance jobs. Apply to Finance Manager, Senior Financial Analyst, Director of Finance and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Current opportunities - Commonwealth Superannuation Corporation (CSC)",
+   "u": "https://www.csc.gov.au/About-CSC/Careers/Jobs",
+   "s": "Sydney (2) Melbourne (1) Canberra (2) Job Type Permanent - Full Time (5) Senior Compliance Analyst (Flexible/Hybrid - Permanent Role) A compliance-focused role "
+  },
+  {
+   "t": "CSC Financial Jobs in Singapore - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/CSC-Financial-jobs/in-Singapore",
+   "s": "Find your ideal job at Jobstreet with 20 CSC Financial jobs found in Singapore. View all our CSC Financial vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "CSC: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/cscsince1899/jobs",
+   "s": "CSC is the world's leading provider of global business administration and compliance solutions, specialized administration services to alternative asset manager"
+  },
+  {
+   "t": "11,000+ Csc Finance jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/csc-finance-jobs-united-states",
+   "s": "Today's top 11,000+ Csc Finance jobs in United States. Leverage your professional network, and get hired. New Csc Finance jobs added daily."
+  },
+  {
+   "t": "CSC Global Finance Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-csc-global-finance-jobs.html",
+   "s": "Browse 9 CSC Global Finance jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "CSC Careers | Explore Job Opportunities Worldwide",
+   "u": "https://www.cscglobal.com/service/careers/global-career-opportunities/",
+   "s": "Build your career at CSC. Explore jobs in technology, funds, accounting, and operations in more than 70 offices worldwide, including India, Spain, and London."
+  },
+  {
+   "t": "CSC Careers | Global Jobs in Tech, Funds, Accounting, Service",
+   "u": "https://www.cscglobal.com/service/careers/",
+   "s": "Explore global careers at CSC in technology, funds, accounting, service, and operations. More than 70 offices. Flexible work, growth opportunities, and a strong"
+  },
+  {
+   "t": "CSC Financial Jobs in Singapore - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/CSC-Financial-jobs/in-Singapore",
+   "s": "Find your ideal job at Jobstreet with 20 CSC Financial jobs found in Singapore. View all our CSC Financial vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "CSC Financial Jobs in Singapore (with Salaries) - May 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/CSC-Financial-jobs",
+   "s": "Find your ideal job at Jobstreet with 14 CSC Financial jobs found in Singapore. View all our CSC Financial vacancies now with new jobs added daily!"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

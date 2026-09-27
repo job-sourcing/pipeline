@@ -2,10 +2,150 @@
  "brand": "DU Ad Platform",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:09:58.775Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:21:36.040Z",
+ "candidates": [
+  {
+   "url": "https://www.du.ae/about-us/careers/experienced-professionals",
+   "title": "Experienced Professionals | Career | du™",
+   "status": 200,
+   "bytes": 194407,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "We offer a career, not just a job! At du, you will get to experience real job satisfaction and you will have multiple opportunities to develop your own career a",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.du.edu/",
+   "title": "Jobs&#64;DU | University of Denver",
+   "status": 200,
+   "bytes": 97131,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "Current DU Employees, please visit My4D to view Internal Career Opportunities. In compliance with the Americans with Disabilities Act (ADA), the Rehabilitation ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.duolingo.com/jobs/8700582002?gh_jid=8700582002",
+   "title": "Duolingo Careers",
+   "status": 200,
+   "bytes": 3063,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "About the role... Duolingo's Ads business helps fund our mission by keeping core learning free while raising the bar on ad quality. We're looking for a Director",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Experienced Professionals | Career | du™",
+   "u": "https://www.du.ae/about-us/careers/experienced-professionals",
+   "s": "We offer a career, not just a job! At du, you will get to experience real job satisfaction and you will have multiple opportunities to develop your own career a"
+  },
+  {
+   "t": "Home | DU Ad Platform",
+   "u": "http://ad.duapps.com/en/",
+   "s": "DU Ad Platform, world's best ad platform, provide a turnkey solution, through peak selection algorithm, realtime integration of high quality channnels, accurate"
+  },
+  {
+   "t": "du Careers Careers",
+   "u": "https://fa-ewnx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001",
+   "s": "Join Us and Make an Impact Looking to take the next step in your career? Explore our diverse opportunities and find a role that aligns with your skills, passion"
+  },
+  {
+   "t": "Work with DU - Delhi University",
+   "u": "https://www.du.ac.in/index.php?page=work-with-du",
+   "s": "Notice for extension the date of online application for registering in the Ad-hoc Panel in the Department of History - Department of History posted on May 2, 20"
+  },
+  {
+   "t": "Search Jobs - du Careers Careers",
+   "u": "https://fa-ewnx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs?mode=location",
+   "s": "Explore career opportunities at du and search for jobs in various locations to join their innovative team."
+  },
+  {
+   "t": "Jobs@DU | University of Denver",
+   "u": "https://jobs.du.edu/",
+   "s": "Current DU Employees, please visit My4D to view Internal Career Opportunities. In compliance with the Americans with Disabilities Act (ADA), the Rehabilitation "
+  },
+  {
+   "t": "du: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/du/jobs",
+   "s": "du | 449,932 followers on LinkedIn. Add life to life. Welcome to a vibrant and multiple award-winning telecommunications service provider. Our aim is to bring p"
+  },
+  {
+   "t": "Director of Ad Platform Operations - careers.duolingo.com",
+   "u": "https://careers.duolingo.com/jobs/8700582002?gh_jid=8700582002",
+   "s": "About the role... Duolingo's Ads business helps fund our mission by keeping core learning free while raising the bar on ad quality. We're looking for a Director"
+  },
+  {
+   "t": "Jobs@DU | University of Denver",
+   "u": "https://jobs.du.edu/",
+   "s": "Search for faculty, staff, and students at the University of Denver."
+  },
+  {
+   "t": "Home | DU Ad Platform",
+   "u": "https://ad.duapps.com/en/",
+   "s": "DU Ad Platform, world's best ad platform, provide a turnkey solution, through peak selection algorithm, realtime integration of high quality channnels, accurate"
+  },
+  {
+   "t": "Work with DU - Delhi University",
+   "u": "https://www.du.ac.in/index.php?page=work-with-du",
+   "s": "Notice for extension the date of online application for registering in the Ad-hoc Panel in the Department of History - Department of History posted on May 2, 20"
+  },
+  {
+   "t": "UoD - University of Delhi",
+   "u": "https://rec.uod.ac.in/",
+   "s": "Note: Please read the 1. Advertisement and 2. General Instructions before clicking 'Register' Button for any type and spelling mistakes. This information will b"
+  },
+  {
+   "t": "du: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/du/jobs",
+   "s": "du | 449,932 followers on LinkedIn. Add life to life. Welcome to a vibrant and multiple award-winning telecommunications service provider. Our aim is to bring p"
+  },
+  {
+   "t": "Director of Ad Platform Operations - careers.duolingo.com",
+   "u": "https://careers.duolingo.com/jobs/8700582002?gh_jid=8700582002",
+   "s": "About the role... Duolingo's Ads business helps fund our mission by keeping core learning free while raising the bar on ad quality. We're looking for a Director"
+  },
+  {
+   "t": "Post Free Job Listings & Recruit Talent Through Business Page | Meta ...",
+   "u": "https://www.facebook.com/business/pages/post-job/",
+   "s": "Learn how to create job postings for your business with a Facebook Page for free. Find and hire top candidates through Facebook."
+  },
+  {
+   "t": "DU Ad Platform - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Du_ad_platform",
+   "s": "DU Ad Platform is a mobile advertising platform developed by the Chinese web services company and search engine operator Baidu, Inc. Whereas the majority of Bai"
+  },
+  {
+   "t": "Director of Ad Platform Operations - careers.duolingo.com",
+   "u": "https://careers.duolingo.com/jobs/8700582002?gh_jid=8700582002",
+   "s": "About the role... Duolingo's Ads business helps fund our mission by keeping core learning free while raising the bar on ad quality. We're looking for a Director"
+  },
+  {
+   "t": "Jobs@DU | University of Denver",
+   "u": "https://jobs.du.edu/",
+   "s": "Current DU Employees, please visit My4D to view Internal Career Opportunities. In compliance with the Americans with Disabilities Act (ADA), the Rehabilitation "
+  },
+  {
+   "t": "Search Jobs - du Careers Careers",
+   "u": "https://fa-ewnx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs?mode=location",
+   "s": "Explore career opportunities at du and search for jobs in various locations to join their innovative team."
+  },
+  {
+   "t": "Director of Ad Platform Operations - Duolingo | Built In NYC",
+   "u": "https://www.builtinnyc.com/job/director-ad-platform-operations/10645950",
+   "s": "Duolingo is hiring for a Director of Ad Platform Operations in New York, NY, USA. Find more details about the job and how to apply at Built In NYC."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

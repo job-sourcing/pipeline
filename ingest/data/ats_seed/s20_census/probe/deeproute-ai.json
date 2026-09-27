@@ -2,10 +2,160 @@
  "brand": "DeepRoute.ai",
  "tier": "lca",
  "lca": "DEEPROUTE.AI LTD.",
- "ts": "2026-09-27T02:18:18.090Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:49:50.213Z",
+ "candidates": [
+  {
+   "url": "https://apply.workable.com/deeproute-dot-a-i/",
+   "title": "",
+   "status": 200,
+   "bytes": 2141,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "workable:deeproute-dot-a-i",
+   "score": 15,
+   "snippet": "Careers at Deeproute.ai Deeproute.ai, an autonomous driving startup, stands for innovation in mobility. Our mission is to provide a self-driving technology that",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://apply.workable.com/deeproute-dot-a-i/j/9AD9D79305/",
+   "title": "",
+   "status": 200,
+   "bytes": 2217,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "workable:deeproute-dot-a-i",
+   "score": 15,
+   "snippet": "We are building next-generation end-to-end autonomous driving systems powered by reinforcement learning.You will work on applying RL in closed-loop, safety-crit",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://deeproute.pro/careers",
+   "title": "Careers — DeepRoute Pro",
+   "status": 200,
+   "bytes": 46474,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join DeepRoute Pro and help build the future of AI vector routing intelligence.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Deeproute.ai - Current Openings - Workable",
+   "u": "https://apply.workable.com/deeproute-dot-a-i/",
+   "s": "Careers at Deeproute.ai Deeproute.ai, an autonomous driving startup, stands for innovation in mobility. Our mission is to provide a self-driving technology that"
+  },
+  {
+   "t": "DeepRoute.ai - LinkedIn",
+   "u": "https://www.linkedin.com/company/deeproute-ai-ltd",
+   "s": "DeepRoute.ai | 7,555 followers on LinkedIn. Committed to developing affordable and production-ready smart driving solution with high performance. | Founded in F"
+  },
+  {
+   "t": "Careers — DeepRoute Pro",
+   "u": "https://deeproute.pro/careers",
+   "s": "Join DeepRoute Pro and help build the future of AI vector routing intelligence."
+  },
+  {
+   "t": "DeepRoute.Ai",
+   "u": "http://deeproute.ai/en/",
+   "s": "DeepRoute.Ai specializes in autonomous driving technology, offering innovative solutions for safer and more efficient transportation."
+  },
+  {
+   "t": "Deeproute.ai | Jobs By Workable",
+   "u": "https://jobs.workable.com/company/f3G1qV4kLs8A4Na2Hrps4c/jobs-at-deeproute.ai",
+   "s": "Deeproute.ai, an autonomous driving startup, stands for innovation in mobility. Our mission is to provide a self-driving technology that will make our future tr"
+  },
+  {
+   "t": "Jobs and Employment at Deeproute.ai | Simplify Jobs",
+   "u": "https://simplify.jobs/c/Deeproute-Ai",
+   "s": "Apply to 4 jobs at Deeproute.ai and thousands of other companies in one-click on Simplify!"
+  },
+  {
+   "t": "DeepRoute - 元戎启行",
+   "u": "https://www.deeproute.ai/",
+   "s": "作为国际领先的人工智能企业，元戎启行致力于打造\"物理世界的通用人工智能\"，以创新技术打造AI司机，实现RoadAGI，引领人工智能行业变革。"
+  },
+  {
+   "t": "Deeproute.ai Jobs and Careers | Haystack",
+   "u": "https://haystackapp.io/companies/deeproute-ai",
+   "s": "DeepRoute.ai is a leading autonomous driving technology company focused on developing and deploying full-stack solutions. They are notable for their commitment "
+  },
+  {
+   "t": "Deeproute.ai - Current Openings - Workable",
+   "u": "https://apply.workable.com/deeproute-dot-a-i/",
+   "s": "Deeproute.ai, an autonomous driving startup, stands for innovation in mobility. Our mission is to provide a self-driving technology that will make our future tr"
+  },
+  {
+   "t": "Jobs and Employment at Deeproute.ai | Simplify Jobs",
+   "u": "https://simplify.jobs/c/Deeproute-Ai",
+   "s": "Apply to 4 jobs at Deeproute.ai and thousands of other companies in one-click on Simplify!"
+  },
+  {
+   "t": "Deeproute.ai Jobs in Worldwide (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/deeproute.ai-jobs-worldwide?f_AL=true",
+   "s": "Today's top 1,000+ Deeproute.ai jobs in Worldwide. Leverage your professional network, and get hired. New Deeproute.ai jobs added daily."
+  },
+  {
+   "t": "DeepRoute.Ai",
+   "u": "http://deeproute.ai/en/",
+   "s": "DeepRoute.Ai specializes in autonomous driving technology, offering innovative solutions for safer and more efficient transportation."
+  },
+  {
+   "t": "1,000+ Deeproute.ai jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/deeproute.ai-jobs?f_EA=true",
+   "s": "Today's top 1,000+ Deeproute.ai jobs in United States. Leverage your professional network, and get hired. New Deeproute.ai jobs added daily."
+  },
+  {
+   "t": "DEEPROUTE.AI Jobs (Now Hiring) Near Me Aug 2026 - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/co/Deeproute-Ai/Jobs",
+   "s": "Looking to work for Deeproute.Ai? ZipRecruiter has 10 Deeproute.Ai jobs available that are hiring now. Start your career at Deeproute.Ai Today."
+  },
+  {
+   "t": "Deeproute.ai | Jobs By Workable",
+   "u": "https://jobs.workable.com/company/f3G1qV4kLs8A4Na2Hrps4c/jobs-at-deeproute.ai",
+   "s": "Deeproute.ai, an autonomous driving startup, stands for innovation in mobility. Our mission is to provide a self-driving technology that will make our future tr"
+  },
+  {
+   "t": "Research Scientist, Reinforcement Learning - Deeproute.ai",
+   "u": "https://apply.workable.com/deeproute-dot-a-i/j/9AD9D79305/",
+   "s": "We are building next-generation end-to-end autonomous driving systems powered by reinforcement learning.You will work on applying RL in closed-loop, safety-crit"
+  },
+  {
+   "t": "Deeproute.ai - Current Openings - Workable",
+   "u": "https://apply.workable.com/deeproute-dot-a-i/",
+   "s": "Careers at Deeproute.ai Deeproute.ai, an autonomous driving startup, stands for innovation in mobility. Our mission is to provide a self-driving technology that"
+  },
+  {
+   "t": "DeepRoute.ai Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/deeprouteai/jobs",
+   "s": "Explore jobs and careers at DeepRoute.ai. DeepRoute.ai is currently hiring for a range of positions."
+  },
+  {
+   "t": "Jobs and Employment at Deeproute.ai | Simplify Jobs",
+   "u": "https://simplify.jobs/c/Deeproute-Ai",
+   "s": "Apply to 4 jobs at Deeproute.ai and thousands of other companies in one-click on Simplify!"
+  },
+  {
+   "t": "Careers — DeepRoute Pro",
+   "u": "https://deeproute.pro/careers",
+   "s": "Join DeepRoute Pro and help build the future of AI vector routing intelligence."
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://apply.workable.com/deeproute-dot-a-i/",
+  "title": "",
+  "status": 200,
+  "bytes": 2141,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "workable:deeproute-dot-a-i",
+  "score": 15,
+  "snippet": "Careers at Deeproute.ai Deeproute.ai, an autonomous driving startup, stands for innovation in mobility. Our mission is to provide a self-driving technology that",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

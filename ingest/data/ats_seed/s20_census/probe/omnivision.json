@@ -2,10 +2,153 @@
  "brand": "OmniVision",
  "tier": "lca",
  "lca": "OMNIVISION TECHNOLOGIES, INC.",
- "ts": "2026-09-27T02:35:44.843Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:28:02.705Z",
+ "candidates": [
+  {
+   "url": "https://omnivision.net.au/careers/",
+   "title": "Careers at Omnivision – Join Our Security Team",
+   "status": 200,
+   "bytes": 159147,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Omnivision and advance your career in security solutions and technology with a supportive, innovative team.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.omnivision.de/karriere/",
+   "title": "Karriere bei OmniVision: Ihre Zukunft im Blick | OmniVision",
+   "status": 200,
+   "bytes": 110613,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Karriere bei OmniVision OmniVision ist ein expandierendes mittelständisches Unternehmen in der Augenheilkunde mit Hauptstandort in Deutschland sowie Standorten ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.ovt.com/company/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 32211,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Careers | OMNIVISION Once dreaming of becoming an airline pilot so I could explore the world, I eventually turned my ambitions toward technology and innovation.",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - OMNIVISION",
+   "u": "https://www.ovt.com/company/careers/",
+   "s": "Careers | OMNIVISION Once dreaming of becoming an airline pilot so I could explore the world, I eventually turned my ambitions toward technology and innovation."
+  },
+  {
+   "t": "Join Our Team - OMNIVISION",
+   "u": "https://www.ovt.com/company/job-openings/",
+   "s": "Join our team | OMNIVISION If you don't see a role that fits your profile, then apply with our General Application."
+  },
+  {
+   "t": "OMNIVISION Careers",
+   "u": "https://jobs.jobvite.com/ovt/%7B%7BacceptUrl%7D%7D",
+   "s": "If you don't see a role that fits your profile, then apply with our General Application."
+  },
+  {
+   "t": "OMNIVISION: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/omnivision/jobs",
+   "s": "OMNIVISION | 46,791 followers on LinkedIn. Infinite Ingenuity | Founded in 1995, OMNIVISION has been at the leading-edge of technology, developing and deliverin"
+  },
+  {
+   "t": "Careers at Omnivision - Join Our Security Team",
+   "u": "https://omnivision.net.au/careers/",
+   "s": "Join Omnivision and advance your career in security solutions and technology with a supportive, innovative team."
+  },
+  {
+   "t": "OMNIVISION: Jobs | LinkedIn",
+   "u": "https://in.linkedin.com/company/omnivision/jobs",
+   "s": "OMNIVISION | 46,782 followers on LinkedIn. Infinite Ingenuity | Founded in 1995, OMNIVISION has been at the leading-edge of technology, developing and deliverin"
+  },
+  {
+   "t": "Karriere bei OmniVision: Ihre Zukunft im Blick | OmniVision",
+   "u": "https://www.omnivision.de/karriere/",
+   "s": "Karriere bei OmniVision OmniVision ist ein expandierendes mittelständisches Unternehmen in der Augenheilkunde mit Hauptstandort in Deutschland sowie Standorten "
+  },
+  {
+   "t": "Careers - Omni Family of Services",
+   "u": "https://theomnifamily.com/careers/",
+   "s": "Want to work in a foster care and adoption agency? Come join our team at Omni Family of Services. See our current openings here."
+  },
+  {
+   "t": "Careers - OMNIVISION",
+   "u": "https://www.ovt.com/company/careers/",
+   "s": "After spending 15 years in research and development at Sony Japan, I joined OMNIVISION Japan as a Staff Engineer in 2022. When asked what attracted me to OMNIVI"
+  },
+  {
+   "t": "Join Our Team - OMNIVISION",
+   "u": "https://www.ovt.com/company/job-openings/",
+   "s": "Join our team | OMNIVISION If you don't see a role that fits your profile, then apply with our General Application."
+  },
+  {
+   "t": "OMNIVISION: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/omnivision/jobs",
+   "s": "OMNIVISION | 46,791 followers on LinkedIn. Infinite Ingenuity | Founded in 1995, OMNIVISION has been at the leading-edge of technology, developing and deliverin"
+  },
+  {
+   "t": "Omnivision Jobs in United States (8,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/omnivision-jobs",
+   "s": "Today's top 8,000+ Omnivision jobs in United States. Leverage your professional network, and get hired. New Omnivision jobs added daily."
+  },
+  {
+   "t": "OMNIVISION: Jobs | LinkedIn",
+   "u": "https://in.linkedin.com/company/omnivision/jobs",
+   "s": "OMNIVISION | 46,782 followers on LinkedIn. Infinite Ingenuity | Founded in 1995, OMNIVISION has been at the leading-edge of technology, developing and deliverin"
+  },
+  {
+   "t": "OMNIVISION Careers - jobs.jobvite.com",
+   "u": "https://jobs.jobvite.com/ovt/index.htm",
+   "s": "If you don't see a role that fits your profile, then apply with our General Application."
+  },
+  {
+   "t": "OMNIVISION: Jobs | LinkedIn",
+   "u": "https://sg.linkedin.com/company/omnivision/jobs",
+   "s": "OMNIVISION | 46,280 followers on LinkedIn. Infinite Ingenuity | Founded in 1995, OMNIVISION has been at the leading-edge of technology, developing and deliverin"
+  },
+  {
+   "t": "OMNIVISION Careers - jobs.jobvite.com",
+   "u": "https://jobs.jobvite.com/ovt/%7B%7BacceptUrl%7D%7D",
+   "s": "SOFTWARE DEVELOPMENT ... If you don't see a role that fits your profile, then apply with our General Application. Check on an application you've submitted. Sign"
+  },
+  {
+   "t": "Careers - OMNIVISION",
+   "u": "https://www.ovt.com/company/careers/",
+   "s": "After spending 15 years in research and development at Sony Japan, I joined OMNIVISION Japan as a Staff Engineer in 2022. When asked what attracted me to OMNIVI"
+  },
+  {
+   "t": "Join Our Team - OMNIVISION",
+   "u": "https://www.ovt.com/company/job-openings/",
+   "s": "Join our team | OMNIVISION If you don't see a role that fits your profile, then apply with our General Application."
+  },
+  {
+   "t": "OMNIVISION: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/omnivision/jobs",
+   "s": "OMNIVISION | 46,791 followers on LinkedIn. Infinite Ingenuity | Founded in 1995, OMNIVISION has been at the leading-edge of technology, developing and deliverin"
+  },
+  {
+   "t": "61 Omnivision Technologies Inc. jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/omnivision-technologies-inc.-jobs",
+   "s": "Today's top 61 Omnivision Technologies Inc. jobs in United States. Leverage your professional network, and get hired. New Omnivision Technologies Inc. jobs adde"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://omnivision.net.au/careers/",
+  "platform": "custom",
+  "title": "Careers at Omnivision – Join Our Security Team"
+ },
+ "verdict": "custom_surface"
 }

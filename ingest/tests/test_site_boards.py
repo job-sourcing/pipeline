@@ -2263,3 +2263,695 @@ class TestPostJsonUrllibRetry:
         with pytest.raises(RuntimeError, match="non-JSON"):
             site_boards._post_json_urllib("https://x.example/api", {})
         assert len(calls) == 1
+
+
+# ── adp workforcenow (S21 — Fuyao live-pinned 2026-09-27, 180 openings) ────
+
+_ADP_CID = "25319558-d6a9-48ab-93d2-99e4878a8ffc"
+
+
+def _adp_row(item, title="Cost Accountant - Finance Dept",
+             post="2026-09-25T16:52:00.000-04:00", tt="Full Time",
+             loc="Moraine, OH, US", creq="8599"):
+    row = {"itemID": item, "requisitionTitle": title, "postDate": post,
+           "clientRequisitionID": creq,
+           "requisitionLocations": [{"nameCode": {"shortName": loc}}],
+           "workLevelCode": ({"shortName": tt} if tt else None)}
+    return row
+
+
+class TestADPWorkforceNowAdapter:
+    """S21: ats:adp:{cid} — the mascsr public career-center REST board.
+    Pins the live-observed contract: cid-only auth, $top capped at 20,
+    the page-0 19-row quirk (advance = startSequence + len(rows)),
+    and the page-boundary itemID duplicate (dedup + flag)."""
+
+    @staticmethod
+    def _pages_payload(skip, rows, total=180, seq=None):
+        return {"jobRequisitions": rows,
+                "meta": {"startSequence": skip if seq is None else seq,
+                         "totalNumber": total, "links": []}}
+
+    def _board(self, monkeypatch, pages):
+        """pages: list of dicts in walk order; a fake fetch_json keyed
+        on $skip (the adapter only ever asks with the walked skip)."""
+        def fake(url, cfg=None, **kw):
+            assert "cid=" + _ADP_CID in url, url
+            for skip, payload in pages:
+                if f"$skip={skip}&" in url + "&":
+                    return payload
+            # unknown page: empty (walk end)
+            return {"jobRequisitions": [],
+                    "meta": {"startSequence": 999, "totalNumber": 0}}
+        monkeypatch.setattr(site_boards, "fetch_json", fake)
+        return f"ats:adp:{_ADP_CID}"
+
+    def test_spec_registered_and_parsed(self):
+        assert site_boards.is_site_spec(f"ats:adp:{_ADP_CID}")
+        kind, org = site_boards.parse_site(f"ats:adp:{_ADP_CID}")
+        assert (kind, org) == ("adp", _ADP_CID)
+
+    def test_row_mapping_and_filters(self, monkeypatch):
+        us = _adp_row("9201298441227_1")
+        us_intern = _adp_row("9201298441228_1", title="Intern - Finance",
+                             tt="Intern")
+        us_blank_tt = _adp_row("9201298441229_1", tt=None)
+        mx = _adp_row("9201298441230_1", loc="Mexico, Puebla, MX")
+        pt = _adp_row("9201298441231_1", tt="Part Time")
+        spec = self._board(monkeypatch, [
+            (0, self._pages_payload(0, [us, us_intern, us_blank_tt, mx,
+                                        pt], total=5)),
+        ])
+        rows, meta = site_boards.list_board(spec, country="United States",
+                                            time_type="Full time")
+        # intern + blank-tt rows: tt set and != → dropped; None passes
+        # only when the filter is set — Intern != Full time drops;
+        # blank tt row SURVIVES (honest-blank never filter-dropped)
+        assert set(rows) == {"9201298441227_1", "9201298441229_1"}
+        r = rows["9201298441227_1"]
+        assert r["title"] == "Cost Accountant - Finance Dept"
+        assert r["timeType"] == "Full time"        # normalized
+        assert r["locationsText"] == "Moraine, OH, US"
+        assert r["countries"] == ["United States"]  # ISO US mapped
+        assert r["ats"] == "adp"
+        assert r["postedOn"].startswith("Posted ")
+        assert r["firstPublishedIso"].startswith("2026-09-25")
+        assert "&jobId=9201298441227_1&lang=en_US" in r["url"]
+        assert meta["complete"] is True
+        assert meta["total"] == 5
+        assert meta["client_filtered"] == 3         # MX + Intern + PartTime
+        assert meta["country_client"] is False      # ashby-class semantics
+        assert meta["ats"] == "adp"
+
+    def test_tt_map_internship(self):
+        a = site_boards.ADPWorkforceNowAdapter("x", None)
+        assert a._time_type({"workLevelCode": {"shortName": "Intern"}}) \
+            == "Internship"
+        assert a._time_type({"workLevelCode": {"shortName":
+                                                "Part Time"}}) == "Part time"
+
+    def test_pagination_quirk_and_dup(self, monkeypatch):
+        # LIVE-PINNED: page 0 serves 19 rows; the walk advances
+        # startSequence + len(rows) (NOT $top); the boundary itemID
+        # repeats on the next page (deduped + flagged)
+        page0 = [_adp_row(f"r{i}") for i in range(19)]
+        page1 = ([_adp_row("r18")] + [_adp_row(f"r{i}")
+                 for i in range(19, 38)])  # r18 = the page-boundary dup
+        spec = self._board(monkeypatch, [
+            (0, self._pages_payload(0, page0, total=38)),
+            (19, self._pages_payload(19, page1, total=38)),
+            (39, {"jobRequisitions": [],
+                  "meta": {"startSequence": 39, "totalNumber": 38}}),
+        ])
+        rows, meta = site_boards.list_board(spec)
+        assert len(rows) == 38                       # r18 deduped
+        assert meta["duplicate_itemids"] == 1
+        assert meta["total"] == 38
+
+    def test_b1_shape_refused(self, monkeypatch):
+        monkeypatch.setattr(site_boards, "fetch_json",
+                            lambda url, cfg=None, **kw: {"weird": 1})
+        with pytest.raises(RuntimeError, match="no jobRequisitions"):
+            site_boards.list_board(f"ats:adp:{_ADP_CID}")
+
+    def test_detail_payload_mapping(self, monkeypatch):
+        row = _adp_row("9201298441227_1")
+        row["requisitionDescription"] = (
+            "<div><p>Job Summary: cost accounting…</p></div>")
+        monkeypatch.setattr(
+            site_boards, "fetch_json",
+            lambda url, cfg=None, **kw: (row if "/9201298441227_1?" in url
+                                         else {}))
+        det = site_boards.detail_payload(f"ats:adp:{_ADP_CID}",
+                                         "/9201298441227_1")
+        info = det["jobPostingInfo"]
+        assert info["title"] == "Cost Accountant - Finance Dept"
+        assert info["timeType"] == "Full time"
+        assert info["location"] == "Moraine, OH, US"
+        assert info["country"] == {"descriptor": "United States"}
+        assert "Job Summary" in info["jobDescription"]
+        assert info["jobReqId"] == "9201298441227_1"
+        assert info["postedOn"].startswith("Posted ")
+        assert det["firstPublishedIso"].startswith("2026-09-25")
+
+    def test_country_iso_passthrough(self):
+        a = site_boards.ADPWorkforceNowAdapter("x", None)
+        # unmapped 2-letter codes pass through (never blank-claimed)
+        assert a._country_of({"requisitionLocations": [
+            {"nameCode": {"shortName": "Berlin, BE, DE"}}]}) == "Germany"
+        assert a._country_of({"requisitionLocations": [
+            {"nameCode": {"shortName": "Lima, LI, PE"}}]}) == "PE"
+        assert a._country_of({}) == ""
+
+
+# ── jazzhr (S21 — Sanhua 34 + Foxconn FII 172 live-pinned 2026-09-27) ─────
+
+_JAZZ_LIST = """<html><body>
+<h2 class='page-title page-title-open'>Current Openings</h2>
+<ul class='list-group'>
+  <li class="list-group-item">
+    <h3 class='list-group-item-heading'>
+      <a href="https://sanhua.applytojob.com/apply/S7Zs61pIVp/Account-Manager-OEMAuto">
+        Account Manager (OEM/Auto)</a>
+    </h3>
+    <ul class='list-inline list-group-item-text'>
+      <li><i class='fa fa-map-marker'></i>Auburn Hills, MI</li>
+      <li><i class='fa fa-sitemap'></i>Automotive</li>
+    </ul>
+  </li>
+  <li class="list-group-item">
+    <h3 class='list-group-item-heading'>
+      <a href="https://sanhua.applytojob.com/apply/fDkz2UaEFw/Accountant">
+        Accountant</a>
+    </h3>
+    <ul class='list-inline list-group-item-text'>
+      <li><i class='fa fa-map-marker'></i>Ramos Arizpe, Coahuila de Zaragoza, Mexico</li>
+    </ul>
+  </li>
+  <li class="list-group-item">
+    <h3 class='list-group-item-heading'>
+      <a href="https://sanhua.applytojob.com/apply/64gsZRfIv3/Accountant">
+        Accountant</a>
+    </h3>
+    <ul class='list-inline list-group-item-text'>
+      <li><i class='fa fa-map-marker'></i>NC</li>
+    </ul>
+  </li>
+</ul></body></html>"""
+
+_JAZZ_DETAIL = """<html><head>
+<script type="application/ld+json">{"@type": "Organization",
+  "name": "x", "url": "y"}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org/", "@type": "JobPosting",
+  "title": "Accountant", "datePosted": "2026-08-03",
+  "employmentType": "FULL_TIME", "validThrough": "2026-11-01T00:00",
+  "uniqueJobCode": "fDkz2UaEFw",
+  "url": "https://sanhua.applytojob.com/apply/fDkz2UaEFw/Accountant",
+  "description": "<p>Prepare monthly financial statements…</p>",
+  "hiringOrganization": {"@type": "Organization",
+    "name": "Sanhua International"},
+  "jobLocation": {"@type": "Place", "address": {"@type":
+    "PostalAddress", "addressLocality": "Ramos Arizpe",
+    "addressRegion": "Coahuila de Zaragoza", "postalCode": "25900"}}}
+</script></head><body><div class='job-description'>x</div></body></html>"""
+
+
+class TestJazzHRAdapter:
+    """S21: ats:jazzhr:{slug} — one-call server-rendered board + a
+    JSON-LD JobPosting detail (employmentType/datePosted live ONLY in
+    the detail). Pins the list parse, the plain-location country
+    ladder (state-token CASE rule), and the honest time-type refusal."""
+
+    def _board(self, monkeypatch, html=None):
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        monkeypatch.setattr(
+            site_boards, "fetch_text",
+            lambda url, cfg=None, **kw: (html or _JAZZ_LIST))
+        return "ats:jazzhr:sanhua"
+
+    def test_spec_registered_and_parsed(self):
+        assert site_boards.is_site_spec("ats:jazzhr:sanhua")
+        assert site_boards.parse_site("ats:jazzhr:sanhua") == \
+            ("jazzhr", "sanhua")
+
+    def test_row_mapping_and_country_ladder(self, monkeypatch):
+        spec = self._board(monkeypatch)
+        rows, meta = site_boards.list_board(spec,
+                                            country="United States")
+        # Mexico row dropped; 'Auburn Hills, MI' + bare 'NC' kept (state
+        # tokens — MI/NC uppercase 2-letter)
+        assert set(rows) == {"S7Zs61pIVp", "64gsZRfIv3"}
+        r = rows["S7Zs61pIVp"]
+        assert r["title"] == "Account Manager (OEM/Auto)"
+        assert r["locationsText"] == "Auburn Hills, MI"
+        assert r["departments"] == ["Automotive"]
+        assert r["timeType"] == ""          # honest blank — detail fills
+        assert r["postedOn"] == ""          # honest blank — detail fills
+        assert r["ats"] == "jazzhr"
+        assert meta["complete"] is True
+        assert meta["total"] == 3
+        assert meta["client_filtered"] == 1
+        assert meta["country_client"] is False
+        assert meta["ats"] == "jazzhr"
+
+    def test_state_token_case_rule(self):
+        # the S20 lesson pinned at the plain-loc ladder: 2-letter state
+        # codes are CASE-SENSITIVE ('in' is not Indiana)
+        assert site_boards._plain_loc_in_country(
+            "Remote in Europe", "United States") is False
+        assert site_boards._plain_loc_in_country(
+            "Auburn Hills, MI", "United States") is True
+        assert site_boards._plain_loc_in_country(
+            "Ramos Arizpe, Mexico", "United States") is False
+        assert site_boards._plain_loc_in_country(
+            "Ramos Arizpe, Mexico", "Mexico") is True
+
+    def test_time_type_refused_at_list(self, monkeypatch):
+        spec = self._board(monkeypatch)
+        with pytest.raises(RuntimeError, match="unanswerable"):
+            site_boards.list_board(spec, country="United States",
+                                   time_type="Full time")
+
+    def test_b1_shape_anomaly_refused(self, monkeypatch):
+        # > 500 chars so the short-body guard passes; the shape guard
+        # (no items + no openings heading) fires
+        page = "<html><body>" + "x" * 600 + "</body></html>"
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        monkeypatch.setattr(
+            site_boards, "fetch_text",
+            lambda url, cfg=None, **kw: page)
+        with pytest.raises(RuntimeError, match="shape anomaly"):
+            site_boards.list_board("ats:jazzhr:sanhua",
+                                   country="United States")
+
+    def test_detail_jsonld_mapping(self, monkeypatch):
+        def fake(url, cfg=None, **kw):
+            if "sanhua.applytojob.com/apply/" in str(url):
+                return _JAZZ_DETAIL
+            return _JAZZ_LIST
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        monkeypatch.setattr(site_boards, "fetch_text", fake)
+        det = site_boards.detail_payload("ats:jazzhr:sanhua",
+                                         "/fDkz2UaEFw")
+        info = det["jobPostingInfo"]
+        assert info["title"] == "Accountant"
+        assert info["timeType"] == "Full time"    # FULL_TIME normalized
+        assert info["location"] == "Ramos Arizpe, Coahuila de Zaragoza"
+        assert info["postedOn"].startswith("Posted ")
+        assert det["firstPublishedIso"] == "2026-08-03"
+        assert det["hiringOrganization"]["name"] == \
+            "Sanhua International"                # the self-name
+        assert info["country"] is None            # Mexico row — not US
+        assert info["validThrough"].startswith("2026-11-01")
+        assert "financial statements" in info["jobDescription"]
+
+    def test_detail_us_row_country_stamped(self, monkeypatch):
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        det_ld = _JAZZ_DETAIL.replace(
+            '"addressLocality": "Ramos Arizpe",',
+            '"addressLocality": "Auburn Hills",').replace(
+            '"addressRegion": "Coahuila de Zaragoza",',
+            '"addressRegion": "MI",')
+        def fake(url, cfg=None, **kw):
+            if "sanhua.applytojob.com/apply/" in str(url):
+                return det_ld
+            return _JAZZ_LIST
+        monkeypatch.setattr(site_boards, "fetch_text", fake)
+        det = site_boards.detail_payload("ats:jazzhr:sanhua",
+                                         "/fDkz2UaEFw")
+        assert det["jobPostingInfo"]["country"] == \
+            {"descriptor": "United States"}
+
+
+class TestJazzHRDetailFallback:
+    """Pinned live (4/9 sanhua rows): older JazzHR postings serve ONLY
+    the Organization ld+json — the JobPosting block is absent. The
+    fallback: page <title> '{job} - {org} - Career Page' + the
+    #job-description div (depth-balanced — nested divs untruncated)."""
+
+    _NO_LD_PAGE = """<html><head><title>Production Operator - Sanhua
+ International - Career Page</title></head><body>
+<div class='job-details'>
+<ul class='list-inline'><li><i class='fa fa-map-marker'></i>Auburn Hills, MI</li></ul>
+<div id="job-description"><span>The operator assembles parts.</span>
+<div><p>NESTED-KEPT duties list here.</p></div></div>
+</div></body></html>"""
+
+    def test_fallback_title_org_and_nested_desc(self, monkeypatch):
+        def fake(url, cfg=None, **kw):
+            if "/apply/" in str(url):
+                return self._NO_LD_PAGE
+            return _JAZZ_LIST
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        monkeypatch.setattr(site_boards, "fetch_text", fake)
+        # rid must exist in the _JAZZ_LIST fixture (URL resolution)
+        det = site_boards.detail_payload("ats:jazzhr:sanhua",
+                                         "/64gsZRfIv3")
+        info = det["jobPostingInfo"]
+        assert info["title"] == "Production Operator"
+        assert det["hiringOrganization"]["name"] == "Sanhua International"
+        assert "NESTED-KEPT" in info["jobDescription"]   # not truncated
+        assert info["timeType"] == ""          # honest — page serves none
+        assert info["postedOn"] == ""          # honest — page serves none
+        assert info["country"] == {"descriptor": "United States"}
+
+
+# ── teamtailor (S21 — Cainiao live-pinned 2026-09-27, 48 jobs / 5 US) ──────
+
+_TT_FEED = {
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Cainiao",
+    "items": [
+        {"title": "Administrative Operations Specialist—GA",
+         "url": "https://cainiao.teamtailor.com/jobs/8326489-x",
+         "date_published": "2026-09-07T04:55:41+02:00",
+         "content_html": "<p>Manage company assets…</p>",
+         "_jobposting": {
+             "@type": "JobPosting", "title": "Admin Ops",
+             "description": "<p>Manage company assets…</p>",
+             "datePosted": "2026-09-07",
+             "hiringOrganization": {"name": "Cainiao"},
+             "jobLocation": [{"address": {
+                 "addressLocality": "Port Wentworth",
+                 "addressRegion": "United States-GSC",
+                 "addressCountry": "US"}}],
+             "identifier": {"value": 8326489}}},
+        {"title": "Deliver Service Partner Operations",
+         "url": "https://cainiao.teamtailor.com/jobs/8326485-x",
+         "date_published": "2026-09-01T00:00:00+02:00",
+         "content_html": "<p>MX job</p>",
+         "_jobposting": {
+             "hiringOrganization": {"name": "Cainiao"},
+             "jobLocation": [{"address": {
+                 "addressLocality": "Cuautitlán Izcalli",
+                 "addressCountry": "MX"}}],
+             "identifier": {"value": 8326485}}},
+    ]}
+
+
+class TestTeamtailorAdapter:
+    """S21: ats:teamtailor:{slug} — the one-call jobs.json feed (list
+    AND detail from the same payload; JDs inline)."""
+
+    def _feed(self, monkeypatch):
+        monkeypatch.setattr(
+            site_boards, "fetch_json",
+            lambda url, cfg=None, **kw: _TT_FEED)
+
+    def test_spec_registered(self):
+        assert site_boards.is_site_spec("ats:teamtailor:cainiao")
+        assert site_boards.parse_site("ats:teamtailor:cainiao") == \
+            ("teamtailor", "cainiao")
+
+    def test_row_mapping_and_country_iso(self, monkeypatch):
+        self._feed(monkeypatch)
+        rows, meta = site_boards.list_board(
+            "ats:teamtailor:cainiao", country="United States")
+        assert set(rows) == {"8326489"}          # MX row dropped
+        r = rows["8326489"]
+        assert r["title"] == "Administrative Operations Specialist—GA"
+        assert r["countries"] == ["United States"]   # ISO US mapped
+        assert r["locationsText"] == "Port Wentworth"  # region dup dropped
+        assert r["postedOn"].startswith("Posted ")
+        assert r["firstPublishedIso"].startswith("2026-09-07")
+        assert r["timeType"] == ""               # honest blank
+        assert r["ats"] == "teamtailor"
+        assert meta["complete"] is True
+        assert meta["total"] == 2
+        assert meta["client_filtered"] == 1
+        assert meta["country_client"] is False
+
+    def test_time_type_refused(self, monkeypatch):
+        self._feed(monkeypatch)
+        with pytest.raises(RuntimeError, match="unanswerable"):
+            site_boards.list_board("ats:teamtailor:cainiao",
+                                   country="United States",
+                                   time_type="Full time")
+
+    def test_b1_not_a_feed_refused(self, monkeypatch):
+        monkeypatch.setattr(
+            site_boards, "fetch_json",
+            lambda url, cfg=None, **kw: {"error": "not found"})
+        with pytest.raises(RuntimeError, match="not a JSON feed"):
+            site_boards.list_board("ats:teamtailor:cainiao",
+                                   country="United States")
+
+    def test_detail_from_same_feed(self, monkeypatch):
+        self._feed(monkeypatch)
+        det = site_boards.detail_payload("ats:teamtailor:cainiao",
+                                         "/8326489")
+        info = det["jobPostingInfo"]
+        assert info["jobDescription"].startswith("<p>Manage company")
+        assert det["hiringOrganization"]["name"] == "Cainiao"
+        assert info["country"] == {"descriptor": "United States"}
+        assert det["firstPublishedIso"].startswith("2026-09-07")
+
+    def test_rid_fallback_from_url(self):
+        item = {"url": "https://x.teamtailor.com/jobs/9999-slug",
+                "_jobposting": {}}
+        assert site_boards.TeamtailorAdapter._rid(item) == "9999"
+
+
+# ── radancy (S21 — Lenovo jobs.lenovo.com live-pinned 2026-09-27) ──────────
+
+_RADANCY_CARD = """<article class="article article--card">
+ <h3 class="article__header__text__title"><a
+  href="https://jobs.lenovo.com/en_US/careers/JobDetail/Infra-Sales/82074">
+  Infrastructure Inside Sales Rep </a></h3>
+ <span class="paragraph"> Sales </span>
+ <div class="article__header__text__subtitle">
+   <span> United States of America, North Carolina, Morrisville </span><br>
+   <span> Req #: WD001060 </span><br>
+ </div>
+</article>"""
+
+_RADANCY_CARD_US2 = _RADANCY_CARD.replace(
+    "82074", "82075").replace("Infra-Sales", "Infra-Sales-2").replace(
+    "WD001060", "WD001061")
+
+_RADANCY_DETAIL = """<html><head><title>Infrastructure Inside Sales Rep - - 82074
+</title></head><body>
+<article class="article article--details regular-fields--cols-2 js_collapsible">
+ <div class="article__content__view">
+  <div class="article__content__view__field ">
+   <div class="article__content__view__field__label"> Req # </div>
+   <div class="article__content__view__field__value"> WD001060 </div>
+  </div>
+  <div class="article__content__view__field ">
+   <div class="article__content__view__field__label"> Country/Region: </div>
+   <div class="article__content__view__field__value"> United States of America </div>
+  </div>
+  <div class="article__content__view__field ">
+   <div class="article__content__view__field__label"> State: </div>
+   <div class="article__content__view__field__value"> North Carolina </div>
+  </div>
+  <div class="article__content__view__field ">
+   <div class="article__content__view__field__label"> City: </div>
+   <div class="article__content__view__field__value"> Morrisville </div>
+  </div>
+  <div class="article__content__view__field ">
+   <div class="article__content__view__field__label"> Date: </div>
+   <div class="article__content__view__field__value"> Tuesday, September 22, 2026 </div>
+  </div>
+  <div class="article__content__view__field ">
+   <div class="article__content__view__field__label"> Working time: </div>
+   <div class="article__content__view__field__value"> Full-time </div>
+  </div>
+ </div>
+</article>
+<article class="article article--details  js_collapsible">
+ <div class="article__header js_collapsible__header">
+  <h3 class="article__header__text__title"> Description and Requirements </h3>
+ </div>
+ <div class="article__content js_collapsible__content">
+  <div class="article__content__view">
+   <div class="article__content__view__field__value">
+    <p>Following the best quarter in history, the sales org is
+    investing.</p> <div><p>NESTED-KEPT requirements.</p></div>
+   </div>
+  </div>
+ </div>
+</article>
+</body></html>"""
+
+
+class TestRadancyAdapter:
+    """S21: ats:radancy:{host} — the TPT portal (server-rendered
+    SearchJobs pages, 10/page, jobOffset pagination; the free-text
+    search param hits the location index = server-side US prefilter)."""
+
+    @staticmethod
+    def _pages(monkeypatch, cards_per_page=10, n_pages=1):
+        pages = {}
+        for p in range(n_pages):
+            cards = (_RADANCY_CARD + _RADANCY_CARD_US2) \
+                if p == 0 else ""
+            if cards:
+                cards *= max(1, cards_per_page // 2)
+            body = cards or ("no results" + "x" * 600)
+            pages[p * 10] = f"<html><body>{body}</body></html>"
+        def fake(url, cfg=None, **kw):
+            for off, html in pages.items():
+                if f"jobOffset={off}&" in url + "&":
+                    return html
+            return "<html><body>no results " + "x" * 600 + "</body></html>"
+        monkeypatch.setattr(site_boards, "fetch_text", fake)
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        return pages
+
+    def test_spec_registered(self):
+        assert site_boards.is_site_spec("ats:radancy:jobs.lenovo.com")
+        assert site_boards.parse_site("ats:radancy:jobs.lenovo.com") == \
+            ("radancy", "jobs.lenovo.com")
+
+    def test_us_prefilter_and_row_mapping(self, monkeypatch):
+        self._pages(monkeypatch)
+        rows, meta = site_boards.list_board(
+            "ats:radancy:jobs.lenovo.com", country="United States")
+        assert set(rows) == {"82074", "82075"}
+        r = rows["82074"]
+        assert r["title"] == "Infrastructure Inside Sales Rep"
+        assert r["locationsText"] == \
+            "United States of America, North Carolina, Morrisville"
+        assert r["departments"] == ["Sales"]
+        assert "WD001060" in r["bulletFields"]     # Lenovo Req # preserved
+        assert r["ats"] == "radancy"
+        assert r["timeType"] == ""                 # honest — detail fills
+        assert meta["server_prefilter"] == "United States"
+        assert meta["country_client"] is False
+
+    def test_time_type_refused(self, monkeypatch):
+        self._pages(monkeypatch)
+        with pytest.raises(RuntimeError, match="unanswerable"):
+            site_boards.list_board("ats:radancy:jobs.lenovo.com",
+                                   country="United States",
+                                   time_type="Full time")
+
+    def test_detail_fields_and_desc(self, monkeypatch):
+        def fake(url, cfg=None, **kw):
+            if "JobDetail/Infra-Sales/82074" in url:
+                return _RADANCY_DETAIL
+            return f"<html><body>{_RADANCY_CARD}{_RADANCY_CARD_US2}</body></html>"
+        monkeypatch.setattr(site_boards, "fetch_text", fake)
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        det = site_boards.detail_payload(
+            "ats:radancy:jobs.lenovo.com", "/82074",
+            country="United States")
+        info = det["jobPostingInfo"]
+        assert info["title"] == "Infrastructure Inside Sales Rep"
+        assert info["timeType"] == "Full time"     # Working time normalized
+        assert info["country"] == {"descriptor": "United States"}  # mapped
+        assert info["location"] == \
+            "Morrisville, North Carolina, United States of America"
+        assert info["jobReqId"] == "WD001060"
+        assert det["firstPublishedIso"] == "2026-09-22"
+        assert info["postedOn"].startswith("Posted ")
+        assert "NESTED-KEPT" in info["jobDescription"]  # depth-safe
+        assert det["hiringOrganization"]["name"] == ""  # honest — no self-name
+
+
+# ── rippling (S21 — Webull live-pinned 2026-09-27, 30 jobs / 2 pages) ──────
+
+_RIPPLING_NEXT = json.dumps({
+    "props": {"pageProps": {"_nextI18Next": {}, "apiData": {},
+             "dehydratedState": {"queries": [
+                {"queryKey": ["board", "webull", "job-posts", False,
+                              {"searchQuery": "", "departments": []}],
+                 "state": {"data": {
+                     "items": [
+                         {"id": "uuid-1",
+                          "name": "Senior Associate Director, Compliance",
+                          "url": "https://ats.rippling.com/webull/jobs/uuid-1",
+                          "department": {"name": "Advisors"},
+                          "locations": [{"name": "New York, NY",
+                                         "country": "United States",
+                                         "countryCode": "US",
+                                         "workplaceType": "ON_SITE"}],
+                          "language": "en-US"},
+                         {"id": "uuid-2", "name": "Ops Analyst",
+                          "url": "https://ats.rippling.com/webull/jobs/uuid-2",
+                          "department": {},
+                          "locations": [{"name": "Singapore",
+                                         "country": "Singapore",
+                                         "countryCode": "SG",
+                                         "workplaceType": "REMOTE"}]}],
+                     "page": 0, "pageSize": 20, "totalItems": 2,
+                     "totalPages": 1}}},
+                {"queryKey": ["board", "webull", "locations"],
+                 "state": {"data": {"items": [], "page": 0}}},
+             ]}}}})
+
+_RIPPLING_DET_NEXT = json.dumps({
+    "props": {"pageProps": {"apiData": {
+        "jobBoard": {"slug": "webull"},
+        "jobPost": {
+            "uuid": "uuid-1", "name": "Senior Associate Director, Compliance",
+            "companyName": "Webull Financial",
+            "createdOn": "2026-09-02T12:28:00.586000-07:00",
+            "employmentType": {"label": "SALARIED_FT",
+                               "id": "Salaried, full-time"},
+            "url": "https://ats.rippling.com/webull/jobs/uuid-1",
+            "description": {"company": "<p>COMPANY-DESC</p>",
+                            "role": "<p>ROLE-DESC</p>"},
+            "workLocations": ["New York, NY"]},
+        "workLocations": [], "department": {}, "payRangeDetails": []}}}})
+
+
+class TestRipplingAdapter:
+    """S21: ats:rippling:{slug} — the SSR __NEXT_DATA__ board (the XHR
+    layer sits behind Cloudflare; every page's jobs are server-rendered)."""
+
+    def _board(self, monkeypatch, nxt=_RIPPLING_NEXT):
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        monkeypatch.setattr(
+            site_boards, "fetch_text",
+            lambda url, cfg=None, **kw: (
+                '<html><script id="__NEXT_DATA__" type="application/'
+                'json">' + nxt + "</script>" + "x" * 600))
+        return "ats:rippling:webull"
+
+    def test_spec_registered(self):
+        assert site_boards.is_site_spec("ats:rippling:webull")
+        assert site_boards.parse_site("ats:rippling:webull") == \
+            ("rippling", "webull")
+
+    def test_row_mapping_structured_country(self, monkeypatch):
+        spec = self._board(monkeypatch)
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert set(rows) == {"uuid-1"}          # Singapore row dropped
+        r = rows["uuid-1"]
+        assert r["title"] == "Senior Associate Director, Compliance"
+        assert r["countries"] == ["United States"]
+        assert r["locationsText"] == "New York, NY"
+        assert r["departments"] == ["Advisors"]
+        assert r["remoteType"] == ""            # ON_SITE
+        assert r["timeType"] == ""              # honest — detail fills
+        assert meta["complete"] is True
+        assert meta["total"] == 2
+        assert meta["client_filtered"] == 1
+        assert meta["country_client"] is False
+
+    def test_remote_flag(self, monkeypatch):
+        # the SG row is REMOTE — unfiltered list keeps it with the flag
+        spec = self._board(monkeypatch)
+        rows, _ = site_boards.list_board(spec)
+        assert rows["uuid-2"]["remoteType"] == "Remote"
+
+    def test_time_type_refused(self, monkeypatch):
+        spec = self._board(monkeypatch)
+        with pytest.raises(RuntimeError, match="unanswerable"):
+            site_boards.list_board(spec, country="United States",
+                                   time_type="Full time")
+
+    def test_b1_no_next_data_refused(self, monkeypatch):
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        monkeypatch.setattr(
+            site_boards, "fetch_text",
+            lambda url, cfg=None, **kw: "<html>" + "y" * 600)
+        with pytest.raises(RuntimeError, match="no __NEXT_DATA__"):
+            site_boards.list_board("ats:rippling:webull")
+
+    def test_detail_jobpost(self, monkeypatch):
+        def fake(url, cfg=None, **kw):
+            if "/jobs/uuid-1" in url and "page=" not in url:
+                return ('<html><script id="__NEXT_DATA__" type='
+                        '"application/json">' + _RIPPLING_DET_NEXT +
+                        "</script>" + "z" * 600)
+            return ('<html><script id="__NEXT_DATA__" type='
+                    '"application/json">' + _RIPPLING_NEXT +
+                    "</script>" + "x" * 600)
+        monkeypatch.setattr(site_boards, "_TEXT_CACHE", {})
+        monkeypatch.setattr(site_boards, "fetch_text", fake)
+        det = site_boards.detail_payload("ats:rippling:webull", "/uuid-1",
+                                         country="United States")
+        info = det["jobPostingInfo"]
+        assert info["title"] == "Senior Associate Director, Compliance"
+        assert info["timeType"] == "Full time"    # SALARIED_FT normalized
+        assert info["postedOn"].startswith("Posted ")
+        assert det["firstPublishedIso"].startswith("2026-09-02")
+        assert det["hiringOrganization"]["name"] == "Webull Financial"
+        assert "COMPANY-DESC" in info["jobDescription"]
+        assert "ROLE-DESC" in info["jobDescription"]
+        assert info["location"] == "New York, NY"
+        assert info["country"] == {"descriptor": "United States"}

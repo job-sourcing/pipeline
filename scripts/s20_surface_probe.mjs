@@ -13,6 +13,8 @@
 // Transports: direct fetch (UA: chrome) with proxy fallback for geo-blocks.
 // Usage: node s20_surface_probe.mjs --mode surface --tier probeA --limit 20
 import ZAI from '../ingest/vendor/z-ai-web-dev-sdk/dist/index.js'
+import { searchWeb } from './s20_kit_search.mjs'
+import { execFile } from 'node:child_process'
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 
 const DIR = '/home/z/job-sourcing-research/ingest/data/ats_seed/s20_census'
@@ -166,6 +168,38 @@ async function fetchPage (url, timeoutMs = 15000) {
     const text = await r.text()
     return { status: r.status, url: r.url, text: text.slice(0, 200000), bytes: text.length }
   } catch (e) { return { status: 0, url, text: '', bytes: 0, err: String(e).slice(0, 120) } } finally { clearTimeout(t) }
+}
+
+/** kit-backed page fetch: used when direct fetch fails (status 0/403/429/
+ *  503, tiny body, or CF-challenge markers) — supabase rotating AWS IP
+ *  first, zenrows antibot for hard CF (the BeOne class). */
+const KIT_BIN = '/home/z/job-sourcing-research/tools/agent-fetch-kit/bin/wfetch'
+async function fetchPageKit (url, { antibot = false } = {}) {
+  const args = [KIT_BIN, url, '--out', '/tmp/s20p_kit.body', '--json', '--timeout', '40']
+  if (antibot) args.push('--antibot')
+  else args.push('--mode', 'supabase')
+  const meta = await new Promise((resolve) => {
+    execFile('bash', args, { timeout: 60 * 1000 }, (err, stdout) => {
+      let j = null
+      try { j = JSON.parse(stdout.slice(stdout.indexOf('{'), stdout.lastIndexOf('}') + 1)) } catch { }
+      resolve(j || { status: err ? 0 : -1, error: String(err).slice(0, 100) })
+    })
+  })
+  let text = ''
+  try { text = readFileSync('/tmp/s20p_kit.body', 'utf8') } catch { }
+  return { status: meta.status || 0, url, text: text.slice(0, 200000), bytes: text.length, backend: meta.backend }
+}
+
+async function fetchPageResilient (url) {
+  const page = await fetchPage(url)
+  const cf = page.status === 0 || page.status === 403 || page.status === 429 || page.status === 503 ||
+    page.bytes < 2000 || /just a moment|challenge-platform|cf-chl|captcha/i.test(page.text.slice(0, 4000))
+  if (!cf) return page
+  const k = await fetchPageKit(url)
+  if (k.status === 200 && k.bytes > 2000 && !/just a moment|challenge-platform|cf-chl/i.test(k.text.slice(0, 4000))) return k
+  const z = await fetchPageKit(url, { antibot: true })
+  if (z.status === 200 && z.bytes > 1000) return z
+  return k.status === 200 ? k : page
 }
 
 function extractTitle (html) {
@@ -395,21 +429,36 @@ async function probeSurface (rec, zai, noSearch = false) {
   }
 
   // 3) web search (variance-prone; retried across runs). --no-search
-  // runs the deterministic layers only (search quota dead windows).
+  // runs the deterministic layers only. --engine kit scrapes DDG-html
+  // via agent-fetch-kit (supabase rotating IPs) — immune to the z-ai
+  // web_search 429 quota; --engine auto (default) tries z-ai then falls
+  // back to the kit engine on 429/empty.
   if (noSearch) {
     out.verdict = 'no_results'
     out.search_skipped = true
     return out
   }
+  const engine = (process.env.S20_SEARCH_ENGINE || 'auto')
   const queries = [`${rec.brand} careers`, `${rec.brand} jobs`, `${rec.brand} careers jobs hiring`]
   const results = []
+  let searchBackend = null
   for (const q of queries) {
-    try {
-      const r = await zai.functions.invoke('web_search', { query: q, num: 8 })
-      results.push(...(r || []).map(x => ({ t: x.name?.slice(0, 110), u: x.url, s: x.snippet?.slice(0, 160) })))
-    } catch (e) { out.search_err = String(e).slice(0, 100) }
+    if (engine === 'kit') {
+      try { results.push(...(await searchWeb(q, 8)).map(x => ({ t: x.name?.slice(0, 110), u: x.url, s: x.snippet?.slice(0, 160) }))); searchBackend = 'kit' } catch (e) { out.search_err = String(e).slice(0, 100) }
+    } else {
+      try {
+        const r = await zai.functions.invoke('web_search', { query: q, num: 8 })
+        results.push(...(r || []).map(x => ({ t: x.name?.slice(0, 110), u: x.url, s: x.snippet?.slice(0, 160) })))
+        searchBackend = 'zai'
+      } catch (e) {
+        out.search_err = String(e).slice(0, 100)
+        // z-ai 429 (quota-dead window) → kit engine transparent fallback
+        try { results.push(...(await searchWeb(q, 8)).map(x => ({ t: x.name?.slice(0, 110), u: x.url, s: x.snippet?.slice(0, 160) }))); searchBackend = 'kit-fallback' } catch { }
+      }
+    }
     await new Promise(r => setTimeout(r, 1200))
   }
+  if (searchBackend) out.search_backend = searchBackend
   out.results = results.slice(0, 20)
 
   // triage: drop aggregators; score ATS-pattern hits + brand-token domains
@@ -441,7 +490,7 @@ async function probeSurface (rec, zai, noSearch = false) {
       const m = x.u.match(p.re)
       if (m) { spec = p.slug ? `${p.platform}:${m[p.slug]}` : `${p.platform}:${x.u.split('/')[2]}`; break }
     }
-    const page = await fetchPage(x.u)
+    const page = await fetchPageResilient(x.u)
     const title = extractTitle(page.text)
     const markers = classifyBody(page.text)
     const jd = jsonLdJobCount(page.text)
@@ -449,6 +498,7 @@ async function probeSurface (rec, zai, noSearch = false) {
     out.candidates.push({
       url: x.u, title, status: page.status, bytes: page.bytes,
       markers, jsonld_jobs: jd, spec, score: x.score, snippet: x.s,
+      backend: page.backend || 'direct',
       cf_challenge: cf || undefined
     })
     await new Promise(r => setTimeout(r, 1200))
@@ -494,6 +544,7 @@ async function probeSurface (rec, zai, noSearch = false) {
 
 async function main () {
   const args = Object.fromEntries(process.argv.slice(2).map((v, i, a) => v.startsWith('--') ? [v.slice(2), a[i + 1]] : []).filter(x => x[0]))
+  if (args.engine) process.env.S20_SEARCH_ENGINE = args.engine
   const mode = args.mode || 'surface'
   const tier = args.tier || 'probe_A'
   const limit = parseInt(args.limit || '15')

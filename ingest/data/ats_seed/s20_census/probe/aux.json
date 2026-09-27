@@ -2,10 +2,162 @@
  "brand": "AUX",
  "tier": "lca",
  "lca": "AUX OFFICE INC",
- "ts": "2026-09-27T02:22:38.776Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:51:00.267Z",
+ "candidates": [
+  {
+   "url": "https://apply.workable.com/aux/j/6784B76F49/",
+   "title": "",
+   "status": 200,
+   "bytes": 1931,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "workable:aux",
+   "score": 15,
+   "snippet": "At Aux, we offer more than just a job—we provide a platform to elevate your career while achieving work-life balance. Join a supportive community of driven prof",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://auxhq.com/careers",
+   "title": "Careers &mdash; Aux",
+   "status": 200,
+   "bytes": 185233,
+   "markers": [
+    "workable"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Why Aux? Full local benefits while connecting you with top-tier U.S. companies and startups. Committed to supporting your self-development and career growth. Al",
+   "backend": "direct"
+  },
+  {
+   "url": "https://auxteam.com/about-us/careers-remote-credit-union-jobs/",
+   "title": "",
+   "status": 200,
+   "bytes": 12951,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Remote credit union jobs in compliance, accounting, and marketing at AUX, CUSO. Join and shape the future of credit unions. Apply now!",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Aux",
+   "u": "https://auxhq.com/careers",
+   "s": "Why Aux? Full local benefits while connecting you with top-tier U.S. companies and startups. Committed to supporting your self-development and career growth. Al"
+  },
+  {
+   "t": "Remote Credit Union Jobs | Compliance and Accounting Careers - AUX",
+   "u": "https://auxteam.com/about-us/careers-remote-credit-union-jobs/",
+   "s": "Remote credit union jobs in compliance, accounting, and marketing at AUX, CUSO. Join and shape the future of credit unions. Apply now!"
+  },
+  {
+   "t": "careers - African Union",
+   "u": "https://au.int/en/careers",
+   "s": "An Integrated, Prosperous and Peaceful Africa, driven by its own citizens and representing a dynamic force in the global arena. African Union Headquarters P.O. "
+  },
+  {
+   "t": "Aux Partners // Recruiting & Staffing",
+   "u": "https://auxpartners.com/",
+   "s": "Aux Partners is a premier employment recruitment & staffing firm serving as an extension of your company to recruit & hire top talent."
+  },
+  {
+   "t": "Aux Talent",
+   "u": "https://auxtalent.com/",
+   "s": "Aux Talent is a female-founded recruiting partner that helps organizations build high-performing teams across all core business functions — including Operations"
+  },
+  {
+   "t": "Aux - LinkedIn",
+   "u": "https://www.linkedin.com/company/aux-hq/",
+   "s": "Aux | 10,677 followers on LinkedIn. We pair up A+ talent with business leaders and promising startups across the globe. We offer a full-time work-from-home setu"
+  },
+  {
+   "t": "Aux | LinkedIn",
+   "u": "https://ph.linkedin.com/company/aux-hq",
+   "s": "Aux | 10,680 (na) tagasubaybay sa LinkedIn. We pair up A+ talent with business leaders and promising startups across the globe. We offer a full-time work-from-h"
+  },
+  {
+   "t": "Careers - Aux Insights",
+   "u": "https://www.auxinsights.com/careers/",
+   "s": "Company Careers Aux is always looking for sharp operators who love turning complex growth problems into clear strategies. We're seeking the best and brightest t"
+  },
+  {
+   "t": "15,000 Auxiliary Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-auxiliary-jobs.html",
+   "s": "Today's top Auxiliary jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Jobs at The African Union",
+   "u": "https://jobs.au.int/",
+   "s": "Join Our Talent Community Not ready to apply yet? Register your interest to receive personalized job alerts, newsletter updates, and invitation details to futur"
+  },
+  {
+   "t": "Stellenausschreibungen in deiner Nähe | aux.jobs",
+   "u": "https://auxjobs.de/",
+   "s": "„Das Angebot eines kostenlosen, regionalen Jobportals unterstützt nicht nur Fachkräfte auf ihrem Karriereweg, sondern stärkt auch die Unternehmen unserer Region"
+  },
+  {
+   "t": "900 Aux Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-aux-jobs.html",
+   "s": "Browse 996 Aux jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Search our Job Opportunities at Allied Universal",
+   "u": "https://jobs.aus.com/search-jobs",
+   "s": "Search our Job Opportunities at Allied Universal Security Officer Full Time Unarmed Patrol Credential Reconciliation Brookhaven, DeKalb County, GA Req ID: 2026-"
+  },
+  {
+   "t": "University Jobs Gangwon-do",
+   "u": "https://www.academicjobs.com/en-kr/gangwon-do",
+   "s": "Discover faculty jobs, salaries, weather, work environments, and professor ratings in Gangwon-do with AcademicJobs.com."
+  },
+  {
+   "t": "Aux",
+   "u": "https://auxhq.com/",
+   "s": "At Aux, we PAIR A+ TALENT WITH BUSINESS LEADERS AND PROMISING STARTUPS ACROSS THE GLOBE Backed by K5 Global, a $1B venture firm."
+  },
+  {
+   "t": "Explore Jobs and Careers at Allied Universal by Map",
+   "u": "https://jobs.aus.com/careerarc-map",
+   "s": "Search Allied Universal jobs near you using our interactive map. Explore security jobs and more by location and find opportunities hiring in your area. Jobs nea"
+  },
+  {
+   "t": "Careers - Aux",
+   "u": "https://auxhq.com/careers",
+   "s": "Why Aux? Full local benefits while connecting you with top-tier U.S. companies and startups. Committed to supporting your self-development and career growth. Al"
+  },
+  {
+   "t": "Aux Jobs in Singapore - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/aux-jobs/in-Singapore",
+   "s": "Find your ideal job at Jobstreet with 7 Aux jobs found in Singapore. View all our Aux vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Aux Jobs in Singapore (with Salaries) - Nov 2025 | Jobstreet",
+   "u": "https://sg.jobstreet.com/aux-jobs",
+   "s": "Find your ideal job on Jobstreet with 6 Aux jobs (0 at Aux) listed in Singapore. View all the Aux vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Aux - LinkedIn",
+   "u": "https://www.linkedin.com/company/aux-hq/",
+   "s": "Aux | 10,677 followers on LinkedIn. We pair up A+ talent with business leaders and promising startups across the globe. We offer a full-time work-from-home setu"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://apply.workable.com/aux/j/6784B76F49/",
+  "title": "",
+  "status": 200,
+  "bytes": 1931,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "workable:aux",
+  "score": 15,
+  "snippet": "At Aux, we offer more than just a job—we provide a platform to elevate your career while achieving work-life balance. Join a supportive community of driven prof",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

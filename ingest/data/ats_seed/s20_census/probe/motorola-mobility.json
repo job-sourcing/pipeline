@@ -2,10 +2,168 @@
  "brand": "Motorola Mobility",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:09:17.689Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:20:04.150Z",
+ "candidates": [
+  {
+   "url": "https://careers.smartrecruiters.com/MotorolaMobilityALenovoCompany",
+   "title": "Careers at Motorola Mobility, A Lenovo Company",
+   "status": 200,
+   "bytes": 95225,
+   "markers": [
+    "smartrecruiters"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "smartrecruiters:MotorolaMobilityALenovoCompany",
+   "score": 17,
+   "snippet": "Bengaluru, India 3 jobs Senior Software Engineer/Lead Software Engineer (Cloud Client) Senior Software Engineer/Lead Software Engineer (Cloud Server) Full-time ",
+   "backend": "direct",
+   "sr_err": 404
+  },
+  {
+   "url": "https://motorolasolutions.wd5.myworkdayjobs.com/Careers",
+   "title": "",
+   "status": 200,
+   "bytes": 7196,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:Careers",
+   "score": 17,
+   "snippet": "MOTOROLA SOLUTIONS OVERVIEW At Motorola Solutions, we believe that everything starts with our people. We're a global close-knit community, united by the relentl",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.motorolasolutions.com/en_us/about/careers.html",
+   "title": "",
+   "status": 200,
+   "bytes": 984304,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find out how you can leverage your expertise at Motorola Solutions and connect to a career that matters. Search open job positions today.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers and Benefits - Motorola Solutions",
+   "u": "https://www.motorolasolutions.com/en_us/about/careers.html",
+   "s": "Find out how you can leverage your expertise at Motorola Solutions and connect to a career that matters. Search open job positions today."
+  },
+  {
+   "t": "Careers and benefits - Motorola Solutions LACR",
+   "u": "https://www.motorolasolutions.com/en_xl/about/careers.html",
+   "s": "Learn how you can leverage your expertise at Motorola Solutions and connect to a career that matters. Find open jobs today."
+  },
+  {
+   "t": "Careers at Motorola Mobility, A Lenovo Company",
+   "u": "https://careers.smartrecruiters.com/MotorolaMobilityALenovoCompany",
+   "s": "Bengaluru, India 3 jobs Senior Software Engineer/Lead Software Engineer (Cloud Client) Senior Software Engineer/Lead Software Engineer (Cloud Server) Full-time "
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://motorolasolutions.wd5.myworkdayjobs.com/Careers",
+   "s": "MOTOROLA SOLUTIONS OVERVIEW At Motorola Solutions, we believe that everything starts with our people. We're a global close-knit community, united by the relentl"
+  },
+  {
+   "t": "28 Motorola Mobility (a Lenovo Company) jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/motorola-mobility-(a-lenovo-company)-jobs-worldwide",
+   "s": "Today's top 28 Motorola Mobility (a Lenovo Company) jobs in Worldwide. Leverage your professional network, and get hired. New Motorola Mobility (a Lenovo Compan"
+  },
+  {
+   "t": "Motorola Mobility Jobs Jobs in United States (6,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/motorola-mobility-jobs-jobs",
+   "s": "Today's top 6,000+ Motorola Mobility Jobs jobs in United States. Leverage your professional network, and get hired. New Motorola Mobility Jobs jobs added daily."
+  },
+  {
+   "t": "Motorola Mobility Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Motorola-Mobility",
+   "s": "Find out what works well at Motorola Mobility from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Com"
+  },
+  {
+   "t": "Motorola Mobility Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-motorola-mobility-jobs-jobs.html",
+   "s": "20 Motorola Mobility jobs. Apply to Product Manager, Mobility Specialist, Trustee and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "11 motorola mobility singapore pte ltd jobs in Singapore",
+   "u": "https://sg.jobstreet.com/motorola-mobility-singapore-pte-ltd-jobs",
+   "s": "Find your ideal job at Jobstreet with 11 Motorola Mobility Singapore Pte Ltd jobs found in Singapore. View all our Motorola Mobility Singapore Pte Ltd vacancies"
+  },
+  {
+   "t": "Careers and Benefits - Motorola Solutions",
+   "u": "https://www.motorolasolutions.com/en_us/about/careers.html",
+   "s": "Find out how you can leverage your expertise at Motorola Solutions and connect to a career that matters. Search open job positions today."
+  },
+  {
+   "t": "28 Motorola Mobility (a Lenovo Company) jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/motorola-mobility-(a-lenovo-company)-jobs-worldwide",
+   "s": "Today's top 28 Motorola Mobility (a Lenovo Company) jobs in Worldwide. Leverage your professional network, and get hired. New Motorola Mobility (a Lenovo Compan"
+  },
+  {
+   "t": "Motorola Jobs in Singapore (458 Open Roles) | LinkedIn",
+   "u": "https://sg.linkedin.com/jobs/motorola-jobs",
+   "s": "Today's top 458 Motorola jobs in Singapore. Leverage your professional network, and get hired. New Motorola jobs added daily."
+  },
+  {
+   "t": "Careers and Benefits - Motorola Solutions Asia",
+   "u": "https://www.motorolasolutions.com/en_xp/about/careers.html",
+   "s": "Learn how you can leverage your expertise at Motorola Solutions and connect to a career that matters. Find open jobs today."
+  },
+  {
+   "t": "Motorola Singapore Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/motorola-singapore-jobs",
+   "s": "Find your ideal job at Jobstreet with 48 Motorola Singapore jobs found in Singapore. View all our Motorola Singapore vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Motorola Solutions Jobs in Singapore (3,000+ Open Roles) | LinkedIn",
+   "u": "https://sg.linkedin.com/jobs/motorola-solutions-jobs",
+   "s": "Today's top 3,000+ Motorola Solutions jobs in Singapore. Leverage your professional network, and get hired. New Motorola Solutions jobs added daily."
+  },
+  {
+   "t": "Motorola Mobility Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Motorola-Mobility",
+   "s": "Find out what works well at Motorola Mobility from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Com"
+  },
+  {
+   "t": "Careers and Benefits - Motorola Solutions",
+   "u": "https://www.motorolasolutions.com/en_us/about/careers.html",
+   "s": "Find out how you can leverage your expertise at Motorola Solutions and connect to a career that matters. Search open job positions today."
+  },
+  {
+   "t": "Motorola Mobility Careers Jobs in United States (5,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/motorola-mobility-careers-jobs",
+   "s": "Today's top 5,000+ Motorola Mobility Careers jobs in United States. Leverage your professional network, and get hired. New Motorola Mobility Careers jobs added "
+  },
+  {
+   "t": "Motorola Mobility Jobs Jobs in United States (6,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/motorola-mobility-jobs-jobs",
+   "s": "Today's top 6,000+ Motorola Mobility Jobs jobs in United States. Leverage your professional network, and get hired. New Motorola Mobility Jobs jobs added daily."
+  },
+  {
+   "t": "200 Motorola Mobility Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Motorola-Mobility-jobs.html",
+   "s": "248 Motorola Mobility jobs. Apply to Sales Representative, Onboarding Manager, Sales Lead and more. Hiring now on Indeed.com."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.smartrecruiters.com/MotorolaMobilityALenovoCompany",
+  "title": "Careers at Motorola Mobility, A Lenovo Company",
+  "status": 200,
+  "bytes": 95225,
+  "markers": [
+   "smartrecruiters"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "smartrecruiters:MotorolaMobilityALenovoCompany",
+  "score": 17,
+  "snippet": "Bengaluru, India 3 jobs Senior Software Engineer/Lead Software Engineer (Cloud Client) Senior Software Engineer/Lead Software Engineer (Cloud Server) Full-time ",
+  "backend": "direct",
+  "sr_err": 404
+ },
+ "verdict": "ats_surface"
 }

@@ -2,10 +2,153 @@
  "brand": "Bluestar Company",
  "tier": "lca",
  "lca": "BLUESTAR SYSTEMS, INC.",
- "ts": "2026-09-27T02:08:57.163Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:01:19.609Z",
+ "candidates": [
+  {
+   "url": "https://www.bluestarinc.com/en-us/about-the-company/careers",
+   "title": "Careers | BlueStar",
+   "status": 200,
+   "bytes": 254098,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore exciting career opportunities at BlueStar, a leading computer hardware distributor with global headquarters in Hebron, KY. Come join the team!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.bluestarinc.com/en-gb/careers-bluestar",
+   "title": "Careers | BlueStar",
+   "status": 200,
+   "bytes": 222909,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join BlueStar's dynamic team and explore diverse career opportunities in a culture that values integrity, respect, and employee empowerment. Apply now to secure",
+   "backend": "direct"
+  },
+  {
+   "url": "https://bluestarplm.com/career/",
+   "title": "",
+   "status": 200,
+   "bytes": 23106,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "To learn more about what it is like to work with us and how you can apply to be part of our innovative team, explore your opportunities below. We believe in a c",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - BlueStar",
+   "u": "https://www.bluestarinc.com/en-us/about-the-company/careers",
+   "s": "Explore exciting career opportunities at BlueStar, a leading computer hardware distributor with global headquarters in Hebron, KY. Come join the team!"
+  },
+  {
+   "t": "Careers - BlueStar",
+   "u": "https://www.bluestarinc.com/en-gb/careers-bluestar",
+   "s": "Join BlueStar's dynamic team and explore diverse career opportunities in a culture that values integrity, respect, and employee empowerment. Apply now to secure"
+  },
+  {
+   "t": "Career: Become part of Team Bluestar » Bluestar PLM",
+   "u": "https://bluestarplm.com/career/",
+   "s": "To learn more about what it is like to work with us and how you can apply to be part of our innovative team, explore your opportunities below. We believe in a c"
+  },
+  {
+   "t": "Career Opportunities with a Leading HVAC Manufacturer | Blue Star ...",
+   "u": "https://www.globalbluestar.com/eu/join-us",
+   "s": "Join a team of 3,200 professionals. Blue Star UK & Ireland offers rewarding careers in a growing global company. We develop innovative heat pump and HVAC soluti"
+  },
+  {
+   "t": "Careers - BlueStar",
+   "u": "https://www.bluestarcooking.com/careers/",
+   "s": "Join the team at BlueStar for an exciting career in the appliance manufacturing industry. See all of our available positions now."
+  },
+  {
+   "t": "Careers - Blue Star Engineering & Electronics",
+   "u": "https://bluestar-ee.com/careers/",
+   "s": "Build your career at Blue Star E&E and grow in an environment that values innovation with strong training programmes and market-aligned compensation."
+  },
+  {
+   "t": "Job Openings - Bluestar PLM",
+   "u": "https://bluestarplm.com/career/job-openings/",
+   "s": "Reach out to job@bluestarplm.com to explore available options. No open positions available. We want to ensure you are well-prepared for what comes next. Our rec"
+  },
+  {
+   "t": "Careers at Blue Star",
+   "u": "https://www.globalbluestar.com/gl/join-us",
+   "s": "Join 3,200+ professionals in HVAC industry. Engineering careers in manufacturing, MEP solutions, commercial refrigeration & heat pump technology."
+  },
+  {
+   "t": "Careers - BlueStar",
+   "u": "https://www.bluestarinc.com/en-us/about-the-company/careers",
+   "s": "Explore exciting career opportunities at BlueStar, a leading computer hardware distributor with global headquarters in Hebron, KY. Come join the team!"
+  },
+  {
+   "t": "Job Listings - BlueStar US Jobs - ApplicantPool",
+   "u": "https://bluestarinc.applicantpool.com/jobs/",
+   "s": "View All Current Job Listings Below is a list of the current openings with our company. Click on the job title to learn more about the opening."
+  },
+  {
+   "t": "Careers - BlueStar",
+   "u": "https://www.bluestarinc.com/en-gb/careers-bluestar",
+   "s": "Join BlueStar's dynamic team and explore diverse career opportunities in a culture that values integrity, respect, and employee empowerment. Apply now to secure"
+  },
+  {
+   "t": "Careers - BlueStar",
+   "u": "https://www.bluestarcooking.com/careers/",
+   "s": "Join the team at BlueStar for an exciting career in the appliance manufacturing industry. See all of our available positions now."
+  },
+  {
+   "t": "BlueStar Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bluestar",
+   "s": "Find out what works well at BlueStar from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "Jobs - Bluestar",
+   "u": "https://www.bluestarbus.co.uk/jobs",
+   "s": "Apply to drive for Bluestar. We now pay £16 per hour... Jobs for young people"
+  },
+  {
+   "t": "Join Our Team - BlueStar Resort & Golf",
+   "u": "https://www.bluestargolf.com/join-our-team/",
+   "s": "BlueStar Resort & Golf has cultivated a reputation for excellence for 15 years. We seek to hire the best and brightest in all roles, and then we work hard to re"
+  },
+  {
+   "t": "100 Bluestar Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-company%3abluestar-jobs.html",
+   "s": "171 Bluestar jobs available on Indeed.com. Apply to Food Service Associate, Banquet Server, Dishwasher and more!"
+  },
+  {
+   "t": "Careers - BlueStar",
+   "u": "https://www.bluestarinc.com/en-us/about-the-company/careers",
+   "s": "Explore exciting career opportunities at BlueStar, a leading computer hardware distributor with global headquarters in Hebron, KY. Come join the team!"
+  },
+  {
+   "t": "Careers | Job Opportunities | Join Blue Star in Asia",
+   "u": "https://www.globalbluestar.com/as/join-us",
+   "s": "The Blue Star Way Our diverse team reflects various backgrounds and perspectives, fostering an inclusive work environment. The Blue Star Way is more than a care"
+  },
+  {
+   "t": "Job Listings - BlueStar US Jobs - ApplicantPool",
+   "u": "https://bluestarinc.applicantpool.com/jobs/",
+   "s": "View All Current Job Listings Below is a list of the current openings with our company. Click on the job title to learn more about the opening."
+  },
+  {
+   "t": "Careers - BlueStar",
+   "u": "https://www.bluestarinc.com/en-gb/careers-bluestar",
+   "s": "Join BlueStar's dynamic team and explore diverse career opportunities in a culture that values integrity, respect, and employee empowerment. Apply now to secure"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.bluestarinc.com/en-us/about-the-company/careers",
+  "platform": "custom",
+  "title": "Careers | BlueStar"
+ },
+ "verdict": "custom_surface"
 }

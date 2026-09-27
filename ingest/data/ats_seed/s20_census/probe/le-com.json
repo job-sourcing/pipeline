@@ -2,10 +2,157 @@
  "brand": "Le.com",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:14:54.239Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:29:30.037Z",
+ "candidates": [
+  {
+   "url": "https://www.nestle.com/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 79331,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Looking for exciting career opportunities? Nestle has a wide range of job opportunities available for you to explore; from graduates to those with years of expe",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.google.com/about/careers/applications/jobs/results/",
+   "title": "",
+   "status": 200,
+   "bytes": 1267458,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find your next job at Google — Careers at Google. Search by location, role, skills, and more.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.lego.com/de-de/careers",
+   "title": "Home Careers - Careers - LEGO.com",
+   "status": 200,
+   "bytes": 211664,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Hier gibt es alle Stellenangebote, die wir derzeit haben.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Home Careers - Careers - LEGO.com",
+   "u": "https://www.lego.com/de-de/careers",
+   "s": "Hier gibt es alle Stellenangebote, die wir derzeit haben."
+  },
+  {
+   "t": "Careers - LeCom",
+   "u": "https://lecomutility.com/careers/",
+   "s": "Explore our open career opportunities and join our team! We are dedicated to empowering your professional journey with outstanding benefits. Let's pave the way "
+  },
+  {
+   "t": "Stadt LE - Karriereportal der Stadt Leinfelden-Echterdingen",
+   "u": "https://jobs-le.de/",
+   "s": "Die Stadt LE bietet Ihnen mit sowohl hochtechnisierten als auch kleinstädtisch geprägten Räumen ein vielfältiges und anspruchsvolles Aufgabenfeld."
+  },
+  {
+   "t": "Legrand Group Opportunities - Join us Careers",
+   "u": "https://careers.legrand.com/",
+   "s": "© 2025 Legrand All rights reserved. By clicking on \"Accept all \", you agree to the use of cookies essential to the functioning of the site, for the purposes of "
+  },
+  {
+   "t": "Careers - The Estée Lauder Companies Inc.",
+   "u": "https://www.elcompanies.com/en/careers",
+   "s": "At The Estée Lauder Companies there are exciting opportunities to play a role in our global success. Browse open jobs by career area, brand or location."
+  },
+  {
+   "t": "Careers | L&E International",
+   "u": "https://www.le-intl.com/careers",
+   "s": "Working at L&E has been an exceptional journey that has allowed me to grow professionally and contribute to a sustainable future in the packaging industry. As p"
+  },
+  {
+   "t": "Start Your Career Journey with Nestlé | Nestlé Global",
+   "u": "https://www.nestle.com/jobs",
+   "s": "Looking for exciting career opportunities? Nestle has a wide range of job opportunities available for you to explore; from graduates to those with years of expe"
+  },
+  {
+   "t": "Welcome - Legrand",
+   "u": "https://www.legrand.com/en/working-at-legrand",
+   "s": "Do you want to join Legrand? You've come to the right place! Keep up to date, in real time, with job, internship and work-study programme opportunities from Leg"
+  },
+  {
+   "t": "Careers - LeCom",
+   "u": "https://lecomutility.com/careers/",
+   "s": "Careers Your Career Starts Here Apply Now Explore our open career opportunities and join our team! We are dedicated to empowering your professional journey with"
+  },
+  {
+   "t": "Jobs Archive - LECOM Health",
+   "u": "https://lecomhealth.com/jobs/",
+   "s": "The LECOM Institute for Successful Living has implemented a BRAND NEW Preferred PRN program aimed at offering one of the most competitive pay rates in our regio"
+  },
+  {
+   "t": "L&E Research Employment Opportunities | L & E Research, Inc.",
+   "u": "https://ats.rippling.com/le-research-employment-opportunities/jobs",
+   "s": "Client Services Representative - Part Time Operations Columbus, OH View job Field Client Services Assistant - Columbus Operations Columbus, OH"
+  },
+  {
+   "t": "Legrand Group Opportunities - Join us Careers",
+   "u": "https://careers.legrand.com/",
+   "s": "Legrand Group Career Site By clicking on \"Accept all \", you agree to the use of cookies essential to the functioning of the site, for the purposes of customizat"
+  },
+  {
+   "t": "Start Your Career Journey with Nestlé | Nestlé Global",
+   "u": "https://www.nestle.com/jobs",
+   "s": "Be a part of Nestlé. Be a force for good Help us make a real difference on a global scale. With a presence in almost 185 countries, we're dedicated to our purpo"
+  },
+  {
+   "t": "LECO Careers | 90 Years of Innovative Laboratory Excellence",
+   "u": "https://www.leco.com/careers/",
+   "s": "Become the future of science. Explore precision manufacturing careers or join our global team in technical sales and applications. Start your career with LECO."
+  },
+  {
+   "t": "Search Jobs — Google Careers",
+   "u": "https://www.google.com/about/careers/applications/jobs/results/",
+   "s": "Find your next job at Google — Careers at Google. Search by location, role, skills, and more."
+  },
+  {
+   "t": "LES Careers | Home",
+   "u": "https://careers.les.com/",
+   "s": "Equal employment opportunity LES actively promotes equal-opportunity employment and equal pay on the basis of merit and ability to perform work. Equal opportuni"
+  },
+  {
+   "t": "Legrand Group Opportunities - Join us Careers",
+   "u": "https://careers.legrand.com/",
+   "s": "Legrand Group Career Site By clicking on \"Accept all \", you agree to the use of cookies essential to the functioning of the site, for the purposes of customizat"
+  },
+  {
+   "t": "Our job offers - Legrand",
+   "u": "https://www.legrand.com/en/working-legrand/join-us/our-job-offers",
+   "s": "Discover our job offers Sales, engineering, marketing, IT, legal, accounting, human resources… Legrand offers recruitment opportunities in many areas. Our promi"
+  },
+  {
+   "t": "Careers at Legrand",
+   "u": "https://www.legrand.us/about-us/careers",
+   "s": "Careers at Legrand We are driven to design products, systems and services that provide better form, better function and better experiences for our customers. Jo"
+  },
+  {
+   "t": "Careers - The Estée Lauder Companies Inc.",
+   "u": "https://www.elcompanies.com/en/careers",
+   "s": "At The Estée Lauder Companies there are exciting opportunities to play a role in our global success. Browse open jobs by career area, brand or location."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.nestle.com/jobs",
+  "platform": "successfactors",
+  "title": ""
+ },
+ "verdict": "marker_surface"
 }

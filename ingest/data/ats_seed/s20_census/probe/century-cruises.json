@@ -2,10 +2,153 @@
  "brand": "Century Cruises",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:16:29.316Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:32:40.781Z",
+ "candidates": [
+  {
+   "url": "https://cruisejobdirectory.com/cruise-line-employment-websites/century-cruises-jobs/",
+   "title": "Century Cruises Jobs &#8211; Cruise Job Directory",
+   "status": 200,
+   "bytes": 76019,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Century Cruises Jobs Century Cruises is a river cruise line headquartered in China, offering cruises on the Yangtze River. They have seven ships with another th",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.century-group.com/",
+   "title": "Jobs | Century Group",
+   "status": 200,
+   "bytes": 119636,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Accounting Operations (29) Human Resources (18) Corporate (14) Century Group Careers (6) Audit (4) Job Type Direct Hire (224)",
+   "backend": "direct"
+  },
+  {
+   "url": "https://centurycruise.com/",
+   "title": "Luxury River Cruises on the Yangtze, Danube, Rhine &amp; Nile",
+   "status": 200,
+   "bytes": 289594,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Discover luxury European and Chinese river cruises with refined accommodations, curated itineraries, and exceptional service for every traveler on every trip.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Century Cruises Jobs - Cruise Job Directory",
+   "u": "https://cruisejobdirectory.com/cruise-line-employment-websites/century-cruises-jobs/",
+   "s": "Century Cruises Jobs Century Cruises is a river cruise line headquartered in China, offering cruises on the Yangtze River. They have seven ships with another th"
+  },
+  {
+   "t": "Cruise Careers",
+   "u": "https://cruisecareers.global/CruiseCareersWebsite/#!home/",
+   "s": "Cruise Careers ... Cruise Careers"
+  },
+  {
+   "t": "#hiring #nowhiring #joinourteam #jobopening # ... - LinkedIn",
+   "u": "https://www.linkedin.com/posts/century-river-cruises_hiring-nowhiring-joinourteam-activity-7336466344055332866-3ldn",
+   "s": "Looking for your next career move? 😍 Explore our latest opening and take the next step with us. 💫 #Hiring #NowHiring #JoinOurTeam #JobOpening #CareerOpportuni"
+  },
+  {
+   "t": "Century Cruises Inc. - LinkedIn",
+   "u": "https://www.linkedin.com/company/centurycruises",
+   "s": "Century Cruises Inc. | 2,418 followers on LinkedIn. 🚢 Cruise the World's Rivers in Luxury! | Century Cruise Lines is the premier luxury river cruise company in"
+  },
+  {
+   "t": "Cruise Careers",
+   "u": "http://cruisecareers.global/",
+   "s": "Begin Your Cruise Career Now! Search for your dream job on a cruise"
+  },
+  {
+   "t": "Century Cruises - We're Hiring! Ready to launch your ... - Facebook",
+   "u": "https://www.facebook.com/centuryrivercruises/posts/were-hiring-ready-to-launch-your-career-in-the-cruise-industry-were-looking-for-/1191121206358873/",
+   "s": "We're Hiring! Ready to launch your career in the cruise industry? We're looking for passionate, talented individuals to join our world-class team. Learn from th"
+  },
+  {
+   "t": "Search our Job Opportunities at CARNIVAL CRUISE LINE",
+   "u": "https://jobs.carnival.com/search-jobs",
+   "s": "Search our Job Opportunities at CARNIVAL CRUISE LINE Find Your Perfect Role. Start Your New Journey. Bring Your True Self."
+  },
+  {
+   "t": "Jobs Available :: Carnival Cruise Line",
+   "u": "https://shipjobs.carnival.com/search?d=hotel-ccl",
+   "s": "Carnival Cruise Line is the most popular cruise brand in North America and operates a fleet of ships designed to foster exceptionally safe, fun and memorable va"
+  },
+  {
+   "t": "Century Cruises Jobs - Cruise Job Directory",
+   "u": "https://cruisejobdirectory.com/cruise-line-employment-websites/century-cruises-jobs/",
+   "s": "Century Cruises Jobs Century Cruises is a river cruise line headquartered in China, offering cruises on the Yangtze River. They have seven ships with another th"
+  },
+  {
+   "t": "Century Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/century-jobs",
+   "s": "Find your ideal job at Jobsdb with 85 Century jobs found in Hong Kong. View all our Century vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Century Cruises Inc.'s Post - LinkedIn",
+   "u": "https://www.linkedin.com/posts/century-river-cruises_hiring-nowhiring-joinourteam-activity-7336466344055332866-3ldn",
+   "s": "Looking for your next career move? 😍 Explore our latest opening and take the next step with us. 💫 #Hiring #NowHiring #JoinOurTeam #JobOpening #CareerOpportuni"
+  },
+  {
+   "t": "Careers - Royal Caribbean Group Careers",
+   "u": "https://careers.royalcaribbeangroup.com/careers/",
+   "s": "STUDENTS Intern and Rotational Programs Apply Brand Sites Royal Caribbean Celebrity Cruises Silversea TUI Cruises Hapag-Lloyd Cruises"
+  },
+  {
+   "t": "Century Cruises - We're Hiring! Ready to launch your ... - Facebook",
+   "u": "https://www.facebook.com/centuryrivercruises/posts/were-hiring-ready-to-launch-your-career-in-the-cruise-industry-were-looking-for-/1191121206358873/",
+   "s": "We're Hiring! 🌊 Ready to launch your career in the cruise industry? We're looking for passionate, talented individuals to join our world-class team. Learn from"
+  },
+  {
+   "t": "Luxury River Cruises in China and Europe | Century Cruises",
+   "u": "https://centurycruise.com/",
+   "s": "Discover luxury European and Chinese river cruises with refined accommodations, curated itineraries, and exceptional service for every traveler on every trip."
+  },
+  {
+   "t": "Royal Caribbean Group Careers - Royal Caribbean Group owns four global ...",
+   "u": "https://careers.royalcaribbeangroup.com/",
+   "s": "Explore the array of benefits and experiences that make life aboard our ships rewarding and inspiring."
+  },
+  {
+   "t": "Century Cruises Inc. - LinkedIn",
+   "u": "https://www.linkedin.com/company/centurycruises",
+   "s": "Century Cruises Inc. | 2,418 followers on LinkedIn. 🚢 Cruise the World's Rivers in Luxury! | Century Cruise Lines is the premier luxury river cruise company in"
+  },
+  {
+   "t": "Century Cruises Jobs - Cruise Job Directory",
+   "u": "https://cruisejobdirectory.com/cruise-line-employment-websites/century-cruises-jobs/",
+   "s": "Century Cruises Jobs Century Cruises Jobs Century Cruises is a river cruise line headquartered in China, offering cruises on the Yangtze River. They have seven "
+  },
+  {
+   "t": "#hiring #nowhiring #joinourteam #jobopening # ... - LinkedIn",
+   "u": "https://www.linkedin.com/posts/century-river-cruises_hiring-nowhiring-joinourteam-activity-7336466344055332866-3ldn",
+   "s": "Looking for your next career move? 😍 Explore our latest opening and take the next step with us. 💫 #Hiring #NowHiring #JoinOurTeam #JobOpening #CareerOpportuni"
+  },
+  {
+   "t": "Century Cruises Career Jobs in United States (6,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/century-cruises-career-jobs",
+   "s": "Today's top 6,000+ Century Cruises Career jobs in United States. Leverage your professional network, and get hired. New Century Cruises Career jobs added daily."
+  },
+  {
+   "t": "Century Cruises - We're Hiring! Ready to launch your ... - Facebook",
+   "u": "https://www.facebook.com/centuryrivercruises/posts/were-hiring-ready-to-launch-your-career-in-the-cruise-industry-were-looking-for-/1191121206358873/",
+   "s": "We're Hiring! 🌊 Ready to launch your career in the cruise industry? We're looking for passionate, talented individuals to join our world-class team. Learn from"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://cruisejobdirectory.com/cruise-line-employment-websites/century-cruises-jobs/",
+  "platform": "custom",
+  "title": "Century Cruises Jobs &#8211; Cruise Job Directory"
+ },
+ "verdict": "custom_surface"
 }

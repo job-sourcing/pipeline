@@ -2,65 +2,150 @@
  "brand": "GAC Mitsubishi",
  "tier": "lca",
  "lca": "GAC SOLUTIONS INC",
- "ts": "2026-09-27T02:06:22.220Z",
- "candidates": [],
+ "ts": "2026-09-27T07:36:37.486Z",
+ "candidates": [
+  {
+   "url": "https://career.gac.com/",
+   "title": "Careers at GAC | Global Careers",
+   "status": 200,
+   "bytes": 958799,
+   "markers": [
+    "recruitee"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://career.gac-international.com/apply/gac-international/100006013",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "As the main undertaker of GAC GROUP's overseas business, GAC INTERNATIONAL CO., LTD., together with its branches and affiliates across the globe，has established",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.gaccv.com/en/about/job/vacancy/",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号",
+   "backend": "direct"
+  }
+ ],
  "results": [
   {
-   "t": "Zoberetimifid | PDF | Copyright",
-   "u": "https://www.scribd.com",
-   "s": "The document provides a detailed guide on the Swift gloves in Old School RuneScape (OSRS), including their requirements, effects, and how to obtain them. Read m"
+   "t": "Careers at GAC | Global Careers",
+   "u": "https://career.gac.com/",
+   "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
   },
   {
-   "t": "Zoberetimifid | PDF | Copyright",
-   "u": "https://www.scribd.com",
-   "s": "The document provides a detailed guide on the Swift gloves in Old School RuneScape (OSRS), including their requirements, effects, and how to obtain them. Read m"
+   "t": "GAC (Singapore) Pte Ltd Jobs in Singapore (with Salaries ...",
+   "u": "https://sg.jobstreet.com/GAC-(Singapore)-Pte-Ltd-jobs",
+   "s": "Find your ideal job on Jobstreet with 29 GAC (Singapore) Pte Ltd jobs (2 at GAC (Singapore) Pte Ltd) listed in Singapore. View all the GAC (Singapore) Pte Ltd v"
   },
   {
-   "t": "Cars - Auto",
-   "u": "https://www.gazeti.ge",
-   "s": "Gazeti.ge - classifieds site in Georgia! Mitsubishi Mitsuoka Morgan. Cars - Auto Categories +AC (0) 378 GT … es - Auto Jobs Requisites"
+   "t": "Gac Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/gac-jobs",
+   "s": "Find your ideal job at Jobstreet with 6 Gac jobs found in Singapore. View all our Gac vacancies now with new jobs added daily!"
   },
   {
-   "t": "Cars for sale - sewônè africa",
-   "u": "https://www.sewone.africa",
-   "s": "Search for Cars Category - Any - There are no listings. Be the first to add a listing."
+   "t": "career.gac-international.com",
+   "u": "https://career.gac-international.com/apply/gac-international/100006013",
+   "s": "As the main undertaker of GAC GROUP's overseas business, GAC INTERNATIONAL CO., LTD., together with its branches and affiliates across the globe，has established"
   },
   {
-   "t": "75 Weekend Only Jobs & Work in Pooler, GA",
-   "u": "https://www.indeed.com",
-   "s": "98 Weekend Only jobs available in Pooler, GA on Indeed.com. Apply to Assembly Technician, Caregiver, Day Porter and more!"
+   "t": "GAC Singapore Pte Ltd Careers and Employment - Indeed",
+   "u": "https://sg.indeed.com/cmp/Gac-Singapore-Pte-Ltd",
+   "s": "Find out what works well at GAC Singapore Pte Ltd from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
   },
   {
-   "t": "Manufacturing Jobs in Pembroke, GA (NOW HIRING)",
-   "u": "https://www.ziprecruiter.com",
-   "s": "Browse 1000+ PEMBROKE, GA MANUFACTURING jobs ($18-$29/hr) hiring now. New openings posted daily. Apply early, get seen first & 1-click apply ..."
+   "t": "GAC (SINGAPORE) PTE. LTD. Careers Singapore | Get A Job At GAC ...",
+   "u": "https://www.mycareersfuture.gov.sg/companies/gac-198100305Z",
+   "s": "GAC Singapore is part of the GAC Group, the world's leading provider of shipping, logistics and marine services with over 300 offices worldwide. Established in "
   },
   {
-   "t": "Wanderer Street N2 | Tiger Wheel & Tyre",
-   "u": "https://twt.co.za",
-   "s": "... Careers · WhatsApp · Log In / Register. Search for: ×. Search for: ×. Warranties; Contact Us. General Enquiry · Customer Feedback · Corporate Sales Solution"
+   "t": "GAC (SINGAPORE) PTE. LTD. Careers and Employment - Indeed",
+   "u": "https://sg.indeed.com/cmp/Gac-(singapore)-Pte.-Ltd.",
+   "s": "Find out what works well at GAC (SINGAPORE) PTE. LTD. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insig"
   },
   {
-   "t": "Mitsubishi Jobs in Tauranga Central Bay of Plenty, Job Vacancies",
-   "u": "https://nz.seek.com",
-   "s": "Tauranga Motor Company is looking for a parts assistant to join their high performing Kia, Suzuki, GAC and Mahindra dealership in Mount Maunganui."
+   "t": "Vacancy-GAC COMMERCIAL VEHICLE - gaccv.com",
+   "u": "https://www.gaccv.com/en/about/job/vacancy/",
+   "s": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号"
   },
   {
-   "t": "Newsflash: Volvo EX30 krijgt Smart techniek",
-   "u": "https://www.autointernationaal.nl",
-   "s": "Oct 25, 2022 — Mitsubishi Nissan Opel. Guangzhou Automobile Group ( GAC ) said on Monday, GAC said it was “deeply shocked”"
+   "t": "Mitsubishi Jobbörse",
+   "u": "https://www.mitsubishi-jobs.de/",
+   "s": "Auf unserer Jobbörse finden Sie immer aktuelle Stellenangebote aus ganz Deutschland."
   },
   {
-   "t": "Automotive Manager Gac Phils jobs in Dasmariñas",
-   "u": "https://ph.indeed.com",
-   "s": "8 days ago — Apply to Automotive Manager Gac Phils jobs available in Dasmariñas on Indeed.com, the worlds largest job site."
+   "t": "Current job openings - GAC Motor Europe B.V.",
+   "u": "https://gacmotoreuropebv-1747132357.teamtailor.com/jobs",
+   "s": "Already working at GAC Motor Europe B.V.?"
   },
   {
-   "t": "Suzuki Jimny vs Toyota HiLux 2024 | CarsGuide",
-   "u": "https://www.carsguide.com.au",
-   "s": "Are you looking to buy a car but can't decide between a Suzuki Jimny or Toyota HiLux 2024? Use our side by side comparison to help you make a decision."
+   "t": "Careers | Mitsubishi Chemical Group",
+   "u": "https://eu.mitsubishi-chemical.com/careers/",
+   "s": "Ready to make a difference? Explore opportunities across EMEA and start your journey with us today. Joining us is more than just a job. It's about growing your "
+  },
+  {
+   "t": "MITSUBISHI MOTORS - Karriere",
+   "u": "https://www.mitsubishi-motors.de/berufundkarriere/",
+   "s": "Eine Übersicht aller offenen Stellen im Handel finden Sie auf unserer Jobbörse. Vielen Dank für Ihr Interesse an unseren Stellenausschreibungen. Wir freuen uns "
+  },
+  {
+   "t": "Karriere | gac.de",
+   "u": "https://www.gac.de/index.php?//Karriere",
+   "s": "Du freust Dich auf die Zusammenarbeit mit internationalen Kunden und Partnern, bist Teamplayer durch und durch und suchst eine Herausforderung in einem modernen"
+  },
+  {
+   "t": "Director of Aftersales, Germany bei GAC Motor Europe — Berlin ...",
+   "u": "https://de.linkedin.com/jobs/view/director-of-aftersales-germany-at-gac-motor-europe-4448220908",
+   "s": "Bewerben Sie sich für die Stelle als Director of Aftersales, Germany bei GAC Motor Europe in Berlin. Position mit Vollzeit Direktor:in, VP etc.. Sehen Sie sich "
+  },
+  {
+   "t": "MITSUBISHI ELECTRIC GERMANY - In 46",
+   "u": "https://www.mitsubishielectric-jobs.de/",
+   "s": "Als japanischer Hersteller von elektrischen sowie elektronischen Produkten und Systemen gestalten wir seit über 100 Jahren die Zukunft in den Bereichen Energie,"
+  },
+  {
+   "t": "Karriere",
+   "u": "https://de-fa.mitsubishielectric.com/fa/about-us/careers",
+   "s": "Träger unseres Erfolges sind hoch qualifizierte, engagierte Mitarbeiter in den verschiedensten Berufsfeldern. Für Ihre Karriere bei Mitsubishi Electric bieten w"
+  },
+  {
+   "t": "Careers at GAC | Global Careers",
+   "u": "https://career.gac.com/",
+   "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
+  },
+  {
+   "t": "Careers | Mitsubishi Corporation (Americas)",
+   "u": "https://www.mitsubishicorp.com/us/en/mca/careers/",
+   "s": "Mitsubishi Corporation (Americas) is a wholly owned subsidiary of Mitsubishi Corporation - Mitsubishi Corporation is a global integrated business enterprise tha"
+  },
+  {
+   "t": "Career | Mitsubishi Fuso Truck and Bus Corporation",
+   "u": "https://www.mitsubishi-fuso.com/en/career/",
+   "s": "Mitsubishi FUSO Sales include new vehicle sales, service sales, and parts sales. There is a sales job where you can make use of various experiences. In new vehi"
+  },
+  {
+   "t": "Job Opportunities at Global Affairs Canada",
+   "u": "https://international.canada.ca/en/global-affairs/corporate/jobs/opportunities",
+   "s": "Locally engaged staff Student employment opportunities Job opportunities in Canada Find current job opportunities available at GAC's offices in Canada. Canadian"
   }
  ],
  "dict_hits": [],
- "verdict": "no_results"
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

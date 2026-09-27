@@ -2,10 +2,149 @@
  "brand": "Brite Semiconductor",
  "tier": "lca",
  "lca": "BRITE SYSTEMS, INC.",
- "ts": "2026-09-27T02:11:49.522Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:42:47.455Z",
+ "candidates": [
+  {
+   "url": "https://brite.com/about/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 33843,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers A fun, hard-working, and very employee-oriented company, Brite invests time and energy in creating a great place to work. We offer generous employee ben",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.snagajob.com/company/brite+semiconductor",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5851,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore Brite Semiconductor job and employer opportunities hiring near you. Start your Brite Semiconductor career today.",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://www.siliconbrite.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 8141,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Silicon Brite Why Choose Us Silicon Brite Technologies is a global fabless analog and mixed-signal semiconductor solutions company founded in 2018 that delivers",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Brite",
+   "u": "https://brite.com/about/careers/",
+   "s": "Careers A fun, hard-working, and very employee-oriented company, Brite invests time and energy in creating a great place to work. We offer generous employee ben"
+  },
+  {
+   "t": "Open Positions-Brite Semiconductor (Shanghai) Co., Ltd",
+   "u": "https://www.britesemi.com/en/Join_Us/Open_Positions.jsp",
+   "s": "Open Positions Home > Join Us > Open Positions Open Positions Campus Recruitment Life at Brite"
+  },
+  {
+   "t": "Join Us-Brite Semiconductor (Shanghai) Co., Ltd",
+   "u": "https://www.britesemi.com/en/Join_Us/Join_Us.htm",
+   "s": "Brite attaches great importance to its talent reservation and enhancement. In order to meet employees' demands of career development and foster a high-quality m"
+  },
+  {
+   "t": "Brite Semiconductor Jobs & Employment Opportunities - Snagajob",
+   "u": "https://www.snagajob.com/company/brite+semiconductor",
+   "s": "Explore Brite Semiconductor job and employer opportunities hiring near you. Start your Brite Semiconductor career today."
+  },
+  {
+   "t": "SiliconBrite Careers | Innovate in Semiconductor Industry",
+   "u": "https://www.siliconbrite.com/careers/",
+   "s": "Silicon Brite Why Choose Us Silicon Brite Technologies is a global fabless analog and mixed-signal semiconductor solutions company founded in 2018 that delivers"
+  },
+  {
+   "t": "Brite Semiconductor - LinkedIn",
+   "u": "https://www.linkedin.com/company/brite-semiconductor",
+   "s": "Brite Semiconductor is a leading custom ASIC and IP provider, and committed to provide flexible one-stop services from architecture design to chip delivery with"
+  },
+  {
+   "t": "Brite Jobs in Worldwide (152 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/brite-jobs-worldwide",
+   "s": "Today's top 152 Brite jobs in Worldwide. Leverage your professional network, and get hired. New Brite jobs added daily."
+  },
+  {
+   "t": "Careers at Brite - recruiterflow.com",
+   "u": "https://recruiterflow.com/brite/jobs",
+   "s": "Incrementum is hiring! Apply now. We Help LATAM Marketers Get Remote Jobs at US Startups"
+  },
+  {
+   "t": "Open Positions-Brite Semiconductor (Shanghai) Co., Ltd",
+   "u": "https://www.britesemi.com/en/Join_Us/Open_Positions.jsp",
+   "s": "Open Positions Home > Join Us > Open Positions Open Positions Campus Recruitment Life at Brite"
+  },
+  {
+   "t": "Open Positions-Brite Semiconductor (Shanghai) Co., Ltd",
+   "u": "https://www.senranmei.com/en/Join_Us/Open_Positions.jsp",
+   "s": "Join Us Open Positions Campus Recruitment Life at Brite Open Positions Home > Join Us > Open Positions Open Positions Campus Recruitment"
+  },
+  {
+   "t": "Join Us-Brite Semiconductor (Shanghai) Co., Ltd",
+   "u": "http://www.britesemi.com/en/Join_Us/Join_Us.htm",
+   "s": "We boast an open and shared internal technical training in Brite. We provide a useful platform on which our employees can learn the latest technologies of Semic"
+  },
+  {
+   "t": "Open Positions-Brite Semiconductor (Shanghai) Co., Ltd",
+   "u": "https://rzgswl.com/en/Join_Us/Open_Positions.jsp",
+   "s": "Home > Join Us > Open Positions Open Positions Campus Recruitment Life at Brite"
+  },
+  {
+   "t": "Careers - Brite",
+   "u": "https://brite.com/about/careers/",
+   "s": "Join Brite's successful, rapidly growing team! We are looking for passionate individuals to continue our growth and excellence. View current openings here."
+  },
+  {
+   "t": "Brite Semiconductor Jobs & Employment Opportunities - Snagajob",
+   "u": "https://www.snagajob.com/company/brite+semiconductor",
+   "s": "Explore Brite Semiconductor job and employer opportunities hiring near you. Start your Brite Semiconductor career today."
+  },
+  {
+   "t": "Campus Recruitment-Brite Semiconductor (Shanghai) Co., Ltd",
+   "u": "https://www.12530qiye.com/en/Join_Us/Campus_Recruitment.jsp",
+   "s": "your_description_here The position has not been recruited yet ， ，Please look forward to..."
+  },
+  {
+   "t": "Careers - Living Brite",
+   "u": "https://livingbrite.com/careers/",
+   "s": "Click a job posting below Select any of our available job positions to learn more. Brite Jobs | Sales Vacancies Apply Now: Part time and Full time sales positio"
+  },
+  {
+   "t": "Careers - Brite",
+   "u": "https://brite.com/about/careers/",
+   "s": "Join Brite's successful, rapidly growing team! We are looking for passionate individuals to continue our growth and excellence. View current openings here."
+  },
+  {
+   "t": "Open Positions-灿芯半导体英文",
+   "u": "https://www.britesemi.com/en/join/job.jsp",
+   "s": "Home > JOIN US > Open Positions Open Positions Campus Recruitment Life at Brite"
+  },
+  {
+   "t": "Open Positions-Brite Semiconductor (Shanghai) Co., Ltd",
+   "u": "https://www.britesemi.com/en/Join_Us/Open_Positions.jsp",
+   "s": "Open Positions Home > Join Us > Open Positions Open Positions Campus Recruitment Life at Brite"
+  },
+  {
+   "t": "Brite Jobs in United States (127 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/brite-jobs",
+   "s": "Today's top 127 Brite jobs in United States. Leverage your professional network, and get hired. New Brite jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

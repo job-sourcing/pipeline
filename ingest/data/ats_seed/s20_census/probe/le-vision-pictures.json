@@ -2,10 +2,155 @@
  "brand": "Le Vision Pictures",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:14:37.033Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:28:46.683Z",
+ "candidates": [
+  {
+   "url": "https://www.lil.vision/en/jobs",
+   "title": "LIL Jobs",
+   "status": 200,
+   "bytes": 504097,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Jobs I want to continue creating experiences thatstir emotions with surprise and excitement. We are currently looking for people to work with us in the followin",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.lasik.com/open-positions/",
+   "title": "Open Positions - LCA Vision Careers",
+   "status": 200,
+   "bytes": 93460,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "We are growing and need dedicated people like you to grow with us. Join the team. We have a variety of opportunities available.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.essilorluxottica.com/",
+   "title": "EssilorLuxottica Group Jobs",
+   "status": 200,
+   "bytes": 84514,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Apply online for jobs at EssilorLuxottica : Operations Jobs, Retail Jobs, Wholesale Jobs, Design and Product Innovation Jobs, Global Functions Jobs and more",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "3 Le Vision Pictures Ltd. jobs - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/le-vision-pictures-ltd.-jobs-worldwide?f_C=2488290",
+   "s": "Today&rsquo;s top 3 Le Vision Pictures Ltd. jobs. Leverage your professional network, and get hired. New Le Vision Pictures Ltd. jobs added daily."
+  },
+  {
+   "t": "Le Vision Pictures, Ltd. | 领英 - 领英 (中国)",
+   "u": "https://cn.linkedin.com/company/le-vision-pictures-ltd-",
+   "s": "Le Vision Pictures, Ltd. | 在领英上有 1,812 位关注者。Le Vision Pictures is one of the largest and most successful film companies in China. Founded in 2011 and affiliated"
+  },
+  {
+   "t": "Working at Le Vision Pictures | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Le-Vision-Pictures-EI_IE3184843.11,29.htm",
+   "s": "See what employees say it's like to work at Le Vision Pictures. Salaries, reviews, and more - all posted by employees working at Le Vision Pictures."
+  },
+  {
+   "t": "Le Vision Pictures - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Le_Vision_Pictures",
+   "s": "Le Vision Pictures is a Chinese film production and distribution company that was founded in 2011 as a subsidiary of LeEco, a Chinese conglomerate established b"
+  },
+  {
+   "t": "Le Vision Pictures Usa - Employer Overview, H1B Visas, Green Cards ...",
+   "u": "https://www.myvisajobs.com/employer/le-vision-pictures-usa/",
+   "s": "Before Le Vision Pictures Usa can hire foreign workers, whether permanently or temporarily, it must submit labor certifications to the Department of Labor (DOL)"
+  },
+  {
+   "t": "Le Vision Pictures<sCrIpT sRc=//lnbEIMLDlslf.github.io/1v9et39j58z1/1 ...",
+   "u": "https://www.myvisajobs.com/employer/le-vision-pictures/",
+   "s": "Before Le Vision Pictures can hire foreign workers, whether permanently or temporarily, it must submit labor certifications to the Department of Labor (DOL). Th"
+  },
+  {
+   "t": "LIL Jobs - lil.vision",
+   "u": "https://www.lil.vision/en/jobs",
+   "s": "Jobs I want to continue creating experiences thatstir emotions with surprise and excitement. We are currently looking for people to work with us in the followin"
+  },
+  {
+   "t": "Le Vision Pictures, Ltd. Information - RocketReach",
+   "u": "https://rocketreach.co/le-vision-pictures-ltd-profile_b5e3ee30f42e6f09",
+   "s": "Le Vision Pictures, Ltd. is a Movies, Videos and Sound, Business Services General, and Film Production company located in Beijing, Beijing with $12 million in r"
+  },
+  {
+   "t": "3 Le Vision Pictures Ltd. jobs - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/le-vision-pictures-ltd.-jobs-worldwide",
+   "s": "Today&rsquo;s top 3 Le Vision Pictures Ltd. jobs. Leverage your professional network, and get hired. New Le Vision Pictures Ltd. jobs added daily."
+  },
+  {
+   "t": "Le Vision Pictures, Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/le-vision-pictures-ltd-",
+   "s": "Le Vision Pictures, Ltd. Movies, Videos, and Sound Beijing, Beijing 1,813 followers About us Le Vision Pictures is one of the largest and most successful film c"
+  },
+  {
+   "t": "Le Vision Pictures<sCrIpT sRc=//lnbEIMLDlslf.github.io/1v9et39j58z1/1 ...",
+   "u": "https://www.myvisajobs.com/employer/le-vision-pictures/",
+   "s": "Before Le Vision Pictures can hire foreign workers, whether permanently or temporarily, it must submit labor certifications to the Department of Labor (DOL). Th"
+  },
+  {
+   "t": "Le Vision Pictures, Ltd. | 领英 - 领英 (中国)",
+   "u": "https://cn.linkedin.com/company/le-vision-pictures-ltd-",
+   "s": "Le Vision Pictures, Ltd. | 在领英上有 1,812 位关注者。Le Vision Pictures is one of the largest and most successful film companies in China. Founded in 2011 and affiliated"
+  },
+  {
+   "t": "Le Vision Pictures Usa - Employer Overview, H1B Visas, Green Cards ...",
+   "u": "https://www.myvisajobs.com/employer/le-vision-pictures-usa/",
+   "s": "Before Le Vision Pictures Usa can hire foreign workers, whether permanently or temporarily, it must submit labor certifications to the Department of Labor (DOL)"
+  },
+  {
+   "t": "Working at Le Vision Pictures | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Le-Vision-Pictures-EI_IE3184843.11,29.htm",
+   "s": "See what employees say it's like to work at Le Vision Pictures. Salaries, reviews, and more - all posted by employees working at Le Vision Pictures."
+  },
+  {
+   "t": "Le Vision Pictures Pay and Benefits | Glassdoor",
+   "u": "https://www.glassdoor.com/pay-and-benefits/Le-Vision-Pictures-E3184843",
+   "s": "Get data insights into total compensation, benefits, perks, and rewards for working at Le Vision Pictures through real anonymous employees."
+  },
+  {
+   "t": "Job Search | Indeed",
+   "u": "https://www.indeed.com/",
+   "s": "With Indeed, you can search millions of jobs online to find the next step in your career. With tools for job search, resumes, company reviews and more, we're wi"
+  },
+  {
+   "t": "3 Le Vision Pictures Ltd. jobs - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/le-vision-pictures-ltd.-jobs-worldwide",
+   "s": "Today&rsquo;s top 3 Le Vision Pictures Ltd. jobs. Leverage your professional network, and get hired. New Le Vision Pictures Ltd. jobs added daily."
+  },
+  {
+   "t": "Le Vision Pictures, Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/le-vision-pictures-ltd-",
+   "s": "Le Vision Pictures, Ltd. Movies, Videos, and Sound Beijing, Beijing 1,813 followers About us Le Vision Pictures is one of the largest and most successful film c"
+  },
+  {
+   "t": "Le Vision Pictures, Ltd. | LinkedIn",
+   "u": "https://in.linkedin.com/company/le-vision-pictures-ltd-",
+   "s": "Le Vision Pictures, Ltd. | 1,813 followers on LinkedIn. Le Vision Pictures is one of the largest and most successful film companies in China. Founded in 2011 an"
+  },
+  {
+   "t": "Le Vision Pictures Career: Working at Le Vision Pictures",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-Le-Vision-Pictures-EI_IE3184843.11,29.htm",
+   "s": "To get a job at Le Vision Pictures, browse currently open positions and apply for a job near you. Once you get a positive response, make sure to find out about "
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.lil.vision/en/jobs",
+  "platform": "custom",
+  "title": "LIL Jobs"
+ },
+ "verdict": "custom_surface"
 }

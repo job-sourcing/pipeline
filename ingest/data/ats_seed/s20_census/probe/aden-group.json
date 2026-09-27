@@ -2,10 +2,155 @@
  "brand": "Aden Group",
  "tier": "lca",
  "lca": "ADEN STAFF, INC.",
- "ts": "2026-09-27T02:21:55.941Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:50:22.502Z",
+ "candidates": [
+  {
+   "url": "https://adengroup.com/career/",
+   "title": "",
+   "status": 200,
+   "bytes": 18755,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Aden Group is a place where talent from building operations, tech, sustainability, energy, AI and more come together to build careers with impact.",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://adenhq.com/careers",
+   "title": "Careers - Aden",
+   "status": 200,
+   "bytes": 22555,
+   "markers": [],
+   "jsonld_jobs": 3,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Aden and help build the native cloud for AI agents. View open positions in infrastructure, go-to-market, and hardware.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.maaden.com/gb/en/home",
+   "title": "Maaden: Exciting Career Opportunities in Mining Industry",
+   "status": 200,
+   "bytes": 87127,
+   "markers": [
+    "phenom"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Unlock exciting career opportunities in a dynamic and innovative mining industry with Maaden - the largest multi-commodity mining and metals powerhouse in the M",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers & Culture | Aden Group",
+   "u": "https://adengroup.com/career/",
+   "s": "Aden Group is a place where talent from building operations, tech, sustainability, energy, AI and more come together to build careers with impact."
+  },
+  {
+   "t": "Aden Group Jobs in Worldwide (5 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/aden-group-jobs-worldwide",
+   "s": "Today's top 5 Aden Group jobs in Worldwide. Leverage your professional network, and get hired. New Aden Group jobs added daily."
+  },
+  {
+   "t": "Aden Group | LinkedIn",
+   "u": "https://sg.linkedin.com/company/aden-group",
+   "s": "Aden Group | 54,761 followers on LinkedIn. Technology with a human touch | Aden Group is a Euro-Asian enterprise delivering comprehensive solutions to boost dec"
+  },
+  {
+   "t": "Aden Group | Facilities expertise, data & decarbonization",
+   "u": "https://adengroup.com/",
+   "s": "Aden Group manages client facilities, assets energy and data to achieve major jumps in building performance and decarbonizaton."
+  },
+  {
+   "t": "Careers - Aden - adenhq.com",
+   "u": "https://adenhq.com/careers",
+   "s": "Join Aden and help build the native cloud for AI agents. View open positions in infrastructure, go-to-market, and hardware."
+  },
+  {
+   "t": "Careers - Adyen",
+   "u": "https://careers.adyen.com/",
+   "s": "To maintain our momentum, we need people to join us in finding new ways of solving our unique challenges - people like you"
+  },
+  {
+   "t": "Aden Group - LinkedIn",
+   "u": "https://mm.linkedin.com/company/aden-group",
+   "s": "Aden Group is a Euro-Asian enterprise delivering comprehensive solutions to boost decarbonization, productivity and energy transition in the built environment. "
+  },
+  {
+   "t": "Maaden: Exciting Career Opportunities in Mining Industry",
+   "u": "https://careers.maaden.com/gb/en/home",
+   "s": "Unlock exciting career opportunities in a dynamic and innovative mining industry with Maaden - the largest multi-commodity mining and metals powerhouse in the M"
+  },
+  {
+   "t": "Careers & Culture | Aden Group",
+   "u": "https://adengroup.com/career/",
+   "s": "Aden Group is a place where talent from building operations, tech, sustainability, energy, AI and more come together to build careers with impact."
+  },
+  {
+   "t": "Aden Group Jobs in Worldwide (5 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/aden-group-jobs-worldwide",
+   "s": "Today's top 5 Aden Group jobs in Worldwide. Leverage your professional network, and get hired. New Aden Group jobs added daily."
+  },
+  {
+   "t": "Aden Group - LinkedIn",
+   "u": "https://www.linkedin.com/company/aden-group",
+   "s": "Aden Group | 54,788 followers on LinkedIn. Technology with a human touch | Aden Group is a Euro-Asian enterprise delivering comprehensive solutions to boost dec"
+  },
+  {
+   "t": "Aden Group - LinkedIn",
+   "u": "https://mm.linkedin.com/company/aden-group",
+   "s": "Aden Group | 55,369 followers on LinkedIn. Technology with a human touch | Aden Group is a Euro-Asian enterprise delivering comprehensive solutions to boost dec"
+  },
+  {
+   "t": "Aden Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Aden-jobs.html",
+   "s": "Browse 8 Aden jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "About Us - Aden Group",
+   "u": "https://adengroup.com/about-us/",
+   "s": "About us Aden Group is a Euro-Asian enterprise dedicated to managing, digitalizing and optimizing the decarbonization of the built environment through its portf"
+  },
+  {
+   "t": "UN Jobs in Aden (2026) — 3 Open Roles | unvacancies",
+   "u": "https://unvacancies.org/jobs/location/aden",
+   "s": "3+ open UN jobs in Aden. Find UN jobs in Aden across OCHA, WFP, UNICEF and WHO. Filter by grade, contract type and deadline. Updated daily."
+  },
+  {
+   "t": "Working at ADEN Group | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-ADEN-Group-EI_IE668343.11,21.htm",
+   "s": "See what employees say it's like to work at ADEN Group. Salaries, reviews, and more - all posted by employees working at ADEN Group."
+  },
+  {
+   "t": "Careers & Culture | Aden Group",
+   "u": "https://adengroup.com/career/",
+   "s": "Aden Group is a place where talent from building operations, tech, sustainability, energy, AI and more come together to build careers with impact."
+  },
+  {
+   "t": "Aden Group Jobs in Worldwide (5 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/aden-group-jobs-worldwide",
+   "s": "Today's top 5 Aden Group jobs in Worldwide. Leverage your professional network, and get hired. New Aden Group jobs added daily."
+  },
+  {
+   "t": "Aden Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Aden-jobs.html",
+   "s": "Browse 8 Aden jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Aden Group - LinkedIn",
+   "u": "https://mm.linkedin.com/company/aden-group",
+   "s": "Aden Group | 55,369 followers on LinkedIn. Technology with a human touch | Aden Group is a Euro-Asian enterprise delivering comprehensive solutions to boost dec"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.maaden.com/gb/en/home",
+  "platform": "phenom",
+  "title": "Maaden: Exciting Career Opportunities in Mining Industry"
+ },
+ "verdict": "marker_surface"
 }

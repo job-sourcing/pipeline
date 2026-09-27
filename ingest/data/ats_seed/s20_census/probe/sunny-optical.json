@@ -2,10 +2,155 @@
  "brand": "Sunny Optical",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:15:17.264Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:30:23.814Z",
+ "candidates": [
+  {
+   "url": "https://www.sunnysmartlead.com/job.html",
+   "title": "Job-Sunny Optical Intelligent",
+   "status": 200,
+   "bytes": 207418,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Sunny Optical Intelligent Job It specializes in automotive camera module.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://job.sunnyoptical.cn/",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "2026年舜宇光学科技 (集团)有限公司校园招聘正在进行，点击申请职位",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.sunnyoptical.com/jobs.html",
+   "title": "人才招聘-舜宇集团",
+   "status": 200,
+   "bytes": 38757,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "舜宇集团人才招聘页面，提供光学产品制造企业的职位信息和申请渠道。",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Sunny Optical Intelligent Optics Recruitment | Join hands to create a ...",
+   "u": "https://www.sunnyaiot.com/en/join-us/",
+   "s": "Sunny Optical Intelligent Optics sincerely invites people with lofty ideals to join us to explore new areas of intelligent optics, open a new chapter in their c"
+  },
+  {
+   "t": "Job-Sunny Optical Intelligent",
+   "u": "https://www.sunnysmartlead.com/job.html",
+   "s": "Sunny Optical Intelligent Job It specializes in automotive camera module."
+  },
+  {
+   "t": "舜宇集团有限公司-加入我们",
+   "u": "https://job.sunnyoptical.cn/",
+   "s": "2026年舜宇光学科技 (集团)有限公司校园招聘正在进行，点击申请职位"
+  },
+  {
+   "t": "人才招聘-舜宇集团",
+   "u": "https://www.sunnyoptical.com/jobs.html",
+   "s": "舜宇集团人才招聘页面，提供光学产品制造企业的职位信息和申请渠道。"
+  },
+  {
+   "t": "人才招聘-舜宇集团 - sunnyoptical.com",
+   "u": "https://www.sunnyoptical.com/sunnyoptical/jobs.html",
+   "s": "人力资源 聚焦科技之美 实施名配角战略，成为全球领先的综合光学产品制造企业。"
+  },
+  {
+   "t": "Join Us - Sunny Research——Optics ╳ Sensing",
+   "u": "https://en.sunnyresearch.com/join/",
+   "s": "Join Us Embrace change and start a journey of light and […]"
+  },
+  {
+   "t": "舜宇集团有限公司 - 校园招聘",
+   "u": "https://campus.sunnyoptical.cn/",
+   "s": "2026年舜宇光学科技 (集团)有限公司校园招聘正在进行，点击申请职位"
+  },
+  {
+   "t": "Sunny Optical Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sunny-optical-jobs",
+   "s": "Today's top Sunny Optical jobs in United States. Leverage your professional network, and get hired. New Sunny Optical jobs added daily."
+  },
+  {
+   "t": "Sunny Optical Intelligent Optics Recruitment | Join hands to create a ...",
+   "u": "https://www.sunnyaiot.com/en/join-us/",
+   "s": "Sunny Optical Intelligent Optics sincerely invites people with lofty ideals to join us to explore new areas of intelligent optics, open a new chapter in their c"
+  },
+  {
+   "t": "舜宇集团有限公司-加入我们",
+   "u": "https://job.sunnyoptical.cn/",
+   "s": "2026年舜宇光学科技 (集团)有限公司校园招聘正在进行，点击申请职位"
+  },
+  {
+   "t": "Job-Sunny Optical Intelligent",
+   "u": "https://www.sunnysmartlead.com/job.html",
+   "s": "Sunny Optical Intelligent Job It specializes in automotive camera module."
+  },
+  {
+   "t": "Sunny Optical Technology Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-sunny-optical-technology-jobs.html",
+   "s": "20 Sunny Optical Technology jobs available on Indeed.com. Apply to Optometrist, Senior Mechanical Engineer, Electrical Designer and more!"
+  },
+  {
+   "t": "人才招聘-舜宇集团",
+   "u": "https://www.sunnyoptical.com/jobs.html",
+   "s": "舜宇集团人才招聘页面，提供光学产品制造企业的职位信息和申请渠道。"
+  },
+  {
+   "t": "舜宇集团有限公司 - 校园招聘",
+   "u": "https://campus.sunnyoptical.cn/",
+   "s": "2026年舜宇光学科技 (集团)有限公司校园招聘正在进行，点击申请职位"
+  },
+  {
+   "t": "1,000+ Sunny Optical Technology (group) Co. Ltd. jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/sunny-optical-technology-(group)-co.-ltd.-jobs-worldwide",
+   "s": "Today's top 1,000+ Sunny Optical Technology (group) Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Sunny Optical Technology "
+  },
+  {
+   "t": "Sunny Optical Technology (Group) Company Limited",
+   "u": "https://www.sunnyoptical.com/en/default.html",
+   "s": "舜宇光学科技 (集团)有限公司是国内领先的光学产品制造企业，具备全面的设计实力及专业生产技术,公司立足光电行业 ..."
+  },
+  {
+   "t": "Sunny Optical Intelligent Optics Recruitment | Join hands to create a ...",
+   "u": "https://www.sunnyaiot.com/en/join-us/",
+   "s": "Sunny Optical Intelligent Optics sincerely invites people with lofty ideals to join us to explore new areas of intelligent optics, open a new chapter in their c"
+  },
+  {
+   "t": "Job-Sunny Optical Intelligent",
+   "u": "https://www.sunnysmartlead.com/job.html",
+   "s": "Sunny Optical Intelligent Job It specializes in automotive camera module."
+  },
+  {
+   "t": "Sunny Optical Technology Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-sunny-optical-technology-jobs.html",
+   "s": "20 Sunny Optical Technology jobs available on Indeed.com. Apply to Optometrist, Senior Mechanical Engineer, Electrical Designer and more!"
+  },
+  {
+   "t": "1,000+ Sunny Optical Technology (group) Co. Ltd. jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/sunny-optical-technology-(group)-co.-ltd.-jobs-worldwide",
+   "s": "Today's top 1,000+ Sunny Optical Technology (group) Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Sunny Optical Technology "
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.sunnyoptical.com/jobs.html",
+  "platform": "moka",
+  "title": "人才招聘-舜宇集团"
+ },
+ "verdict": "marker_surface"
 }

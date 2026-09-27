@@ -2,10 +2,166 @@
  "brand": "WuXi AppTec",
  "tier": "lca",
  "lca": "WUXI APPTEC SALES, LLC",
- "ts": "2026-09-27T02:17:52.853Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:49:09.547Z",
+ "candidates": [
+  {
+   "url": "https://careers-wuxiapptec.icims.com/",
+   "title": "Career Opportunities at WuXi AppTec",
+   "status": 200,
+   "bytes": 43652,
+   "markers": [
+    "icims"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "icims:careers-wuxiapptec",
+   "score": 17,
+   "snippet": "ABOUT US CAREERS Our People Opportunities SERVICES & SOLUTIONS Discovery Development Chemistry Biologics Medical Devices",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers-wuxiapptec.icims.com/jobs/intro",
+   "title": "Career Opportunities at WuXi AppTec",
+   "status": 200,
+   "bytes": 43634,
+   "markers": [
+    "icims"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "icims:careers-wuxiapptec",
+   "score": 17,
+   "snippet": "ABOUT US CAREERS Our People Opportunities SERVICES & SOLUTIONS Discovery Development Chemistry Biologics Medical Devices",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.wuxiappteccareers.com/jobs/",
+   "title": "Jobs | WuXi AppTec Careers",
+   "status": 200,
+   "bytes": 47772,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "WuXi AppTec Pathologists contribute to a wide range of critical activities within Toxicology, Safety, and Biocompatibility.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Jobs | WuXi AppTec Careers",
+   "u": "https://www.wuxiappteccareers.com/jobs/",
+   "s": "WuXi AppTec Pathologists contribute to a wide range of critical activities within Toxicology, Safety, and Biocompatibility."
+  },
+  {
+   "t": "Our Talent Outlook - WuXi AppTec",
+   "u": "https://www.wuxiapptec.com/careers/talent",
+   "s": "Cultivate self-driven excellence to achieve the highest standards, and pursue efficiency, accuracy, and resilience. Proactively engage in cross-disciplinary lea"
+  },
+  {
+   "t": "Career Opportunities at WuXi AppTec",
+   "u": "https://careers-wuxiapptec.icims.com/",
+   "s": "ABOUT US CAREERS Our People Opportunities SERVICES & SOLUTIONS Discovery Development Chemistry Biologics Medical Devices"
+  },
+  {
+   "t": "Clinical Research and Biotech Jobs | Wuxi AppTech",
+   "u": "https://www.wuxiappteccareers.com/",
+   "s": "Apply online for Clinical Research and Biotech Jobs with WuXi AppTec. Join us in our mission to enable improved productivity that brings new medicines to patien"
+  },
+  {
+   "t": "Meaningful Growth - WuXi AppTec",
+   "u": "https://www.wuxiapptec.com/careers/career",
+   "s": "We provide a clear career development path, an inspiring incentive mechanism, and a diverse range of talent development programs to support our colleagues' rapi"
+  },
+  {
+   "t": "Careers | WuXi STA",
+   "u": "https://sta.wuxiapptec.com/careers/",
+   "s": "Join WuXi STA for exciting career opportunities in the pharmaceutical industry. Explore our job openings and take the next step in your career today!"
+  },
+  {
+   "t": "Career Opportunities at WuXi AppTec - iCIMS",
+   "u": "https://careers-wuxiapptec.icims.com/jobs/intro",
+   "s": "ABOUT US CAREERS Our People Opportunities SERVICES & SOLUTIONS Discovery Development Chemistry Biologics Medical Devices"
+  },
+  {
+   "t": "Careers | WuXi RCS-Research Chemistry Services，small molecule discovery",
+   "u": "https://rcs.wuxiapptec.com/career/",
+   "s": "WuXi AppTec advocate a positive lifestyle in addition to passion for work. Here you have opportunities to join diversified cultural and sports activities to pre"
+  },
+  {
+   "t": "Jobs | WuXi AppTec Careers",
+   "u": "https://www.wuxiappteccareers.com/jobs/",
+   "s": "Jobs at WuXi AppTec Summary of Job: Responsible for managing projects within WuXi TIDES. Leads the orderly progression of projects from the proposal stage throu"
+  },
+  {
+   "t": "Our Talent Outlook - WuXi AppTec",
+   "u": "https://www.wuxiapptec.com/careers/talent",
+   "s": "Our Talent Outlook | WuXi AppTec \" We value talents who are aspirational, self-driven, passionate about learning and value creation. \""
+  },
+  {
+   "t": "Clinical Research and Biotech Jobs | Wuxi AppTech",
+   "u": "https://www.wuxiappteccareers.com/",
+   "s": "Apply online for Clinical Research and Biotech Jobs with WuXi AppTec. Join us in our mission to enable improved productivity that brings new medicines to patien"
+  },
+  {
+   "t": "Meaningful Growth - WuXi AppTec",
+   "u": "https://www.wuxiapptec.com/careers/career",
+   "s": "WuXi AppTec has established a systematic talent development plan, including on-boarding training and on-the-job training. The trainees range from grass-roots em"
+  },
+  {
+   "t": "Career Opportunities at WuXi AppTec",
+   "u": "https://careers-wuxiapptec.icims.com/",
+   "s": "Copyright © 2014 WuXi AppTec, All Rights Reserved Privacy Policy | Terms of Use | Sitemap | Blog"
+  },
+  {
+   "t": "WuXi AppTec: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/wuxi-apptec/jobs",
+   "s": "WuXi AppTec | 96,007 followers on LinkedIn. The global pharmaceutical open-access capability and technology platform | WuXi AppTec is a trusted partner and cont"
+  },
+  {
+   "t": "WuXi AppTec Jobs (September 2026)",
+   "u": "https://startup.jobs/company/wuxi-apptec",
+   "s": "WuXi AppTec is a leading global Contract Research, Development, and Manufacturing Organization (CRDMO) that partners with the pharmaceutical and life sciences i"
+  },
+  {
+   "t": "WuXi AppTec Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/19109502/jobs/",
+   "s": "(WuXi AppTec招聘)WuXi AppTec Co., Ltd.招聘WuXi AppTec相关领域：新药研发，生物制剂，医药中间体，医药，原料药。想了解WuXi AppTec招聘条件，学历要求，需要什么专业，就上职友集。发现和了解你未来的雇主。"
+  },
+  {
+   "t": "Jobs | WuXi AppTec Careers",
+   "u": "https://www.wuxiappteccareers.com/jobs/",
+   "s": "Jobs at WuXi AppTec Summary of Job: Responsible for managing projects within WuXi TIDES. Leads the orderly progression of projects from the proposal stage throu"
+  },
+  {
+   "t": "Our Talent Outlook - WuXi AppTec",
+   "u": "https://www.wuxiapptec.com/careers/talent",
+   "s": "Careers Our Talent Outlook \" We value talents who are aspirational, self-driven, passionate about learning and value creation. \" Ning Zhao, Ph.D."
+  },
+  {
+   "t": "Wuxi Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/wuxi-jobs",
+   "s": "Find your ideal job at Jobstreet with 40 Wuxi jobs found in Singapore. View all our Wuxi vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Careers | WuXi STA",
+   "u": "https://sta.wuxiapptec.com/careers/",
+   "s": "Join WuXi STA for exciting career opportunities in the pharmaceutical industry. Explore our job openings and take the next step in your career today!"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers-wuxiapptec.icims.com/",
+  "title": "Career Opportunities at WuXi AppTec",
+  "status": 200,
+  "bytes": 43652,
+  "markers": [
+   "icims"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "icims:careers-wuxiapptec",
+  "score": 17,
+  "snippet": "ABOUT US CAREERS Our People Opportunities SERVICES & SOLUTIONS Discovery Development Chemistry Biologics Medical Devices",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
 }

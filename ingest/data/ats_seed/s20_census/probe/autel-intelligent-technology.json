@@ -2,10 +2,153 @@
  "brand": "Autel Intelligent Technology",
  "tier": "lca",
  "lca": "AUTEL US INC",
- "ts": "2026-09-27T02:11:28.908Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:42:14.264Z",
+ "candidates": [
+  {
+   "url": "https://autelenergy.us/pages/careers",
+   "title": "Autel Energy Careers",
+   "status": 200,
+   "bytes": 328336,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Established in 2004, Autel quickly became one of the world's leading providers of intelligent automotive products and services. Now, with the launch of our EV C",
+   "backend": "direct"
+  },
+  {
+   "url": "https://shop.autelrobotics.com/pages/career-opportunities",
+   "title": "Career Opportunities\n&ndash; Autel Robotics",
+   "status": 200,
+   "bytes": 155277,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We use cookies to ensure you get the best experience on our website. By continuing to browse, you agree to our use of cookies.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.autelrobotics.com/join/",
+   "title": "Join",
+   "status": 200,
+   "bytes": 209658,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Mentor team members and develop their career path Qualifications Doctoral degree, more than 3 years of deep learning algorithm research and project experience; ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join - Autel Robotics",
+   "u": "https://www.autelrobotics.com/join/",
+   "s": "Mentor team members and develop their career path Qualifications Doctoral degree, more than 3 years of deep learning algorithm research and project experience; "
+  },
+  {
+   "t": "Autel Energy Careers",
+   "u": "https://autelenergy.us/pages/careers",
+   "s": "Established in 2004, Autel quickly became one of the world's leading providers of intelligent automotive products and services. Now, with the launch of our EV C"
+  },
+  {
+   "t": "Career Opportunities: careers@autel.com | Autel",
+   "u": "https://autel.com/special/3572.jhtml",
+   "s": "© Intelligent Technology Corp., Ltd. 2004-2026, All Rights Reserved. 粤ICP备14011537号"
+  },
+  {
+   "t": "8,000+ Autel jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/autel-jobs",
+   "s": "Today's top 8,000+ Autel jobs in United States. Leverage your professional network, and get hired. New Autel jobs added daily."
+  },
+  {
+   "t": "Autel US Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Autel-US",
+   "s": "Find out what works well at Autel US from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "About Autel",
+   "u": "https://autel.com/about/3092.jhtml",
+   "s": "Autel adheres to independent research and development and continuous innovation and has formed its own unique core technology accumulation.The core technology s"
+  },
+  {
+   "t": "Automotive Diagnostics, TPMS, ADAS, & Key Programming | Autel",
+   "u": "https://autel.us/",
+   "s": "Autel.us is the official Autel website for North America. This is your definitive source for genuine product and warranty information, software updates, and aut"
+  },
+  {
+   "t": "Autel Us Inc Jobs in United States (84 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/autel-us-inc-jobs",
+   "s": "Today's top 84 Autel Us Inc jobs in United States. Leverage your professional network, and get hired. New Autel Us Inc jobs added daily."
+  },
+  {
+   "t": "Join - Autel Robotics",
+   "u": "https://www.autelrobotics.com/join/",
+   "s": "Job Requirements: Description This role will advance the technologies that support the next-generation edge-deployed AI powering advanced robotic products and s"
+  },
+  {
+   "t": "8,000+ Autel jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/autel-jobs",
+   "s": "Today's top 8,000+ Autel jobs in United States. Leverage your professional network, and get hired. New Autel jobs added daily."
+  },
+  {
+   "t": "Autel Us Inc Jobs in United States (84 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/autel-us-inc-jobs",
+   "s": "Today's top 84 Autel Us Inc jobs in United States. Leverage your professional network, and get hired. New Autel Us Inc jobs added daily."
+  },
+  {
+   "t": "Autel US Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Autel-US",
+   "s": "Find out what works well at Autel US from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "Home | AUTEL",
+   "u": "https://autel.com/",
+   "s": "Automotive diagnostic and calibration tools, scan tools and diagnostic software from Autel"
+  },
+  {
+   "t": "Career Opportunities: careers@autel.com | Autel",
+   "u": "https://autel.com/contactus/3572.jhtml",
+   "s": "© Intelligent Technology Corp., Ltd. 2004-2026, All Rights Reserved. 粤ICP备14011537号"
+  },
+  {
+   "t": "Autel North America Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Autel-North-America",
+   "s": "Find out what works well at Autel North America from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "$29-$123/hr Autel Jobs (NOW HIRING) Sep 2026 - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/Jobs/Autel?lk=4bPnrW26aoi7egQHCJJXjw",
+   "s": "An Autel job typically refers to positions at Autel, a company known for automotive diagnostic tools, EV chargers, and drone technology. Jobs at Autel can inclu"
+  },
+  {
+   "t": "Join - Autel Robotics",
+   "u": "https://www.autelrobotics.com/join/",
+   "s": "Job Requirements: Description This role will advance the technologies that support the next-generation edge-deployed AI powering advanced robotic products and s"
+  },
+  {
+   "t": "8,000+ Autel jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/autel-jobs",
+   "s": "Today's top 8,000+ Autel jobs in United States. Leverage your professional network, and get hired. New Autel jobs added daily."
+  },
+  {
+   "t": "Autel Robotics Jobs in Worldwide (29,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/autel-robotics-jobs-worldwide",
+   "s": "Today's top 29,000+ Autel Robotics jobs in Worldwide. Leverage your professional network, and get hired. New Autel Robotics jobs added daily."
+  },
+  {
+   "t": "Autel Energy Careers",
+   "u": "https://autelenergy.us/pages/careers",
+   "s": "Established in 2004, Autel quickly became one of the world's leading providers of intelligent automotive products and services. Now, with the launch of our EV C"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://autelenergy.us/pages/careers",
+  "platform": "custom",
+  "title": "Autel Energy Careers"
+ },
+ "verdict": "custom_surface"
 }

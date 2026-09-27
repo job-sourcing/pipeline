@@ -2,10 +2,168 @@
  "brand": "PNC Process Systems",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:10:30.432Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:23:07.814Z",
+ "candidates": [
+  {
+   "url": "https://pnc.wd5.myworkdayjobs.com/External",
+   "title": "",
+   "status": 200,
+   "bytes": 7109,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:External",
+   "score": 17,
+   "snippet": "For nearly 160 years, PNC has strived to make a meaningful impact for our employees, customers, communities, and shareholders. We believe our success and positi",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://pnc.wd5.myworkdayjobs.com/en-US/External/job/Process-Improvement-Consultant-Senior--Retail-Bank-Operations_R223703-1",
+   "title": "",
+   "status": 200,
+   "bytes": 27273,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 1,
+   "spec": "workday:en-US",
+   "score": 17,
+   "snippet": "Position Overview At PNC, our people are our greatest differentiator and competitive advantage in the markets we serve. We are all united in delivering the best",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://careers.pnc.com/",
+   "title": "PNC Careers",
+   "status": 200,
+   "bytes": 157719,
+   "markers": [
+    "phenom"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "As FirstBank and PNC come together, applicants can explore current openings directly through PNC Careers. Search available roles, learn more about PNC's culture",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "PNC Careers",
+   "u": "https://careers.pnc.com/",
+   "s": "As FirstBank and PNC come together, applicants can explore current openings directly through PNC Careers. Search available roles, learn more about PNC's culture"
+  },
+  {
+   "t": "Our Hiring Process - PNC Careers",
+   "u": "https://careers.pnc.com/global/en/our-hiring-process?lnksrc=topnav",
+   "s": "PNC's Guidelines for Candidate AI Usage Our hiring process is designed to learn more about you and how your skills might match our careers and culture. Understa"
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://pnc.wd5.myworkdayjobs.com/External",
+   "s": "For nearly 160 years, PNC has strived to make a meaningful impact for our employees, customers, communities, and shareholders. We believe our success and positi"
+  },
+  {
+   "t": "Employment - PNC",
+   "u": "https://www.pncinc.com/employment",
+   "s": "We're a growing company seeking reliable and committed individuals to join our team and produce high-quality products for our customers. As a member of our team"
+  },
+  {
+   "t": "PNC brand-PNC Technology",
+   "u": "https://en.pncs.cn/brand/index.html",
+   "s": "PNC brand Shanghai PNC Integration Co., Ltd, a subsidiary company under PNC Technology, is the leading domestic company and also regarded as an international st"
+  },
+  {
+   "t": "PNC Hiring Process: Steps and Timeline | Job Applications",
+   "u": "https://www.job-applications.com/pnc-hiring-process",
+   "s": "What is PNC's hiring process? Step-by-step timeline from application to offer, with role-specific differences and average days to hire."
+  },
+  {
+   "t": "PNC: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/pnc-bank/jobs",
+   "s": "PNC Financial Services Pittsburgh, Pennsylvania 429,100 followers Jobs at PNC Software Engineer Principal (Pipeline Engineering Team) PNC Pittsburgh, PA 13 hour"
+  },
+  {
+   "t": "Process Improvement Specialist Pnc jobs - Indeed",
+   "u": "https://www.indeed.com/q-Process-Improvement-Specialist-Pnc-jobs.html",
+   "s": "80 Process Improvement Specialist Pnc jobs available on Indeed.com. Apply to Administrative Specialist, Director of Process Improvement, Human Resources Associa"
+  },
+  {
+   "t": "PNC Careers",
+   "u": "https://careers.pnc.com/global/en",
+   "s": "As FirstBank and PNC come together, applicants can explore current openings directly through PNC Careers. Search available roles, learn more about PNC's culture"
+  },
+  {
+   "t": "technology jobs | technology jobs at PNC",
+   "u": "https://careers.pnc.com/global/en/c/technology-jobs?from=10&s=1",
+   "s": "Technology is transforming the banking industry and is key to PNC's long-term success. \"When seeking out talent for tech and security jobs at PNC, we look for p"
+  },
+  {
+   "t": "Pnc Pandan Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/pnc-pandan-jobs",
+   "s": "Find your ideal job at Jobstreet with 43 Pnc Pandan jobs found in Singapore. View all our Pnc Pandan vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "277 Pnc Singapore Traders Pte Ltd jobs in Singapore",
+   "u": "https://sg.jobstreet.com/pnc-singapore-traders-pte-ltd-jobs",
+   "s": "Find your ideal job at Jobstreet with 277 Pnc Singapore Traders Pte Ltd jobs found in Singapore. View all our Pnc Singapore Traders Pte Ltd vacancies now with n"
+  },
+  {
+   "t": "PNC brand-PNC Technology",
+   "u": "https://en.pncs.cn/brand/index.html",
+   "s": "PNC brand Shanghai PNC Integration Co., Ltd, a subsidiary company under PNC Technology, is the leading domestic company and also regarded as an international st"
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://pnc.wd5.myworkdayjobs.com/External",
+   "s": "For nearly 160 years, PNC has strived to make a meaningful impact for our employees, customers, communities, and shareholders. We believe our success and positi"
+  },
+  {
+   "t": "Join Our Growing Manufacturing Team: We're Looking for ... - PNC",
+   "u": "https://www.pncinc.com/employment",
+   "s": "If you are looking for a challenging and rewarding career in manufacturing, we invite you to explore our current job openings and apply to join our team. Thank "
+  },
+  {
+   "t": "PNC Hiring Process: Steps and Timeline | Job Applications",
+   "u": "https://www.job-applications.com/pnc-hiring-process",
+   "s": "What is PNC's hiring process? Step-by-step timeline from application to offer, with role-specific differences and average days to hire."
+  },
+  {
+   "t": "PNC Careers",
+   "u": "https://careers.pnc.com/global/en",
+   "s": "As FirstBank and PNC come together, applicants can explore current openings directly through PNC Careers. Search available roles, learn more about PNC's culture"
+  },
+  {
+   "t": "Our Hiring Process - PNC Careers",
+   "u": "https://careers.pnc.com/global/en/our-hiring-process",
+   "s": "PNC's Guidelines for Candidate AI Usage Our hiring process is designed to learn more about you and how your skills might match our careers and culture. Understa"
+  },
+  {
+   "t": "Process Improvement Consultant Senior- Retail Bank Operations",
+   "u": "https://pnc.wd5.myworkdayjobs.com/en-US/External/job/Process-Improvement-Consultant-Senior--Retail-Bank-Operations_R223703-1",
+   "s": "Position Overview At PNC, our people are our greatest differentiator and competitive advantage in the markets we serve. We are all united in delivering the best"
+  },
+  {
+   "t": "PNC: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/pnc-bank/jobs",
+   "s": "PNC Financial Services Pittsburgh, Pennsylvania 429,100 followers Jobs at PNC Software Engineer Principal (Pipeline Engineering Team) PNC Pittsburgh, PA 13 hour"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://pnc.wd5.myworkdayjobs.com/External",
+  "title": "",
+  "status": 200,
+  "bytes": 7109,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:External",
+  "score": 17,
+  "snippet": "For nearly 160 years, PNC has strived to make a meaningful impact for our employees, customers, communities, and shareholders. We believe our success and positi",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

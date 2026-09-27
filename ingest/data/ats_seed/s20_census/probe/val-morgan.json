@@ -2,10 +2,160 @@
  "brand": "Val Morgan",
  "tier": "lca",
  "lca": "ALPHA-VAL LLC",
- "ts": "2026-09-27T02:22:14.102Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:11:32.759Z",
+ "candidates": [
+  {
+   "url": "https://jobs.ashbyhq.com/ValonVM",
+   "title": "",
+   "status": 200,
+   "bytes": 4212,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "ashby:ValonVM",
+   "score": 17,
+   "snippet": "Valon Mortgage Jobs We're on a mission to empower every homeowner. We believe the journey of home ownership starts when you get your keys, but lasts far beyond.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.valmorganoutdoor.com/careers/",
+   "title": "Careers &mdash; VMO",
+   "status": 200,
+   "bytes": 1304212,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Sonder access for you and your family. Career progression and training opportunities. Work with a company who strives for a sustainable future. Flexible working",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.valmorgan.co.nz/careers/",
+   "title": "Careers &mdash; Val Morgan New Zealand",
+   "status": 200,
+   "bytes": 392560,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers The Val Morgan Group is Australia & New Zealand's largest digital advertising network comprising of Val Morgan Cinema, VMO and Val Morgan Digital. Toget",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers — VMO",
+   "u": "https://www.valmorganoutdoor.com/careers/",
+   "s": "Sonder access for you and your family. Career progression and training opportunities. Work with a company who strives for a sustainable future. Flexible working"
+  },
+  {
+   "t": "Careers | JPMorganChase",
+   "u": "https://www.jpmorganchase.com/careers",
+   "s": "Pathways for professionals Whether you're pivoting careers, rejoining the workforce, or refining your skills—our pathways for professionals are designed to help"
+  },
+  {
+   "t": "Careers — Val Morgan New Zealand",
+   "u": "https://www.valmorgan.co.nz/careers/",
+   "s": "Careers The Val Morgan Group is Australia & New Zealand's largest digital advertising network comprising of Val Morgan Cinema, VMO and Val Morgan Digital. Toget"
+  },
+  {
+   "t": "Career - Val Morgan",
+   "u": "https://valmorgan-ukbusiness.com/career/",
+   "s": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru"
+  },
+  {
+   "t": "About Val Morgan — VMO",
+   "u": "https://www.valmorganoutdoor.com/about-val-morgan",
+   "s": "Since 1894, Val Morgan Cinema has provided brands with a unique opportunity to reach highly valuable consumers through the unrivalled cinema experience. Based a"
+  },
+  {
+   "t": "Val Morgan Careers and Employment | Indeed.com",
+   "u": "https://au.indeed.com/cmp/Val-Morgan",
+   "s": "Find out what works well at Val Morgan from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "Val Morgan - LinkedIn",
+   "u": "https://au.linkedin.com/company/val-morgan",
+   "s": "Val Morgan | 9,811 followers on LinkedIn. CINEMA'S HOTTEST SUMMER ON RECORD 🔥 | Val Morgan Cinema Network is Australia and New Zealand's leading national suppl"
+  },
+  {
+   "t": "Careers - Val Morgan",
+   "u": "https://uk.vmorgan.co.uk/careers/",
+   "s": "Through years of successful support on international immigration, Val Morgan Immigration Lawyers have created a worldwide network of understanding with immigrat"
+  },
+  {
+   "t": "Careers — VMO",
+   "u": "https://www.valmorganoutdoor.com/careers/",
+   "s": "VMO connects brands with audiences via formats that command attention and with content that complements their daily routines. People love working at VMO because"
+  },
+  {
+   "t": "Val Morgan Jobs (with Salaries) - SEEK",
+   "u": "https://au.seek.com/Val-Morgan-jobs",
+   "s": "Find your ideal job at SEEK with 2 Val Morgan jobs found in Australia. View all our Val Morgan vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "2 Val Morgan jobs - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/val-morgan-jobs-worldwide",
+   "s": "Today's top 3 Val Morgan jobs in Worldwide. Leverage your professional network, and get hired. New Val Morgan jobs added daily."
+  },
+  {
+   "t": "Val Morgan Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Val-Morgan",
+   "s": "Find out what works well at Val Morgan from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "Val Jobs in Singapore (with Salaries) - Aug 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/val-jobs",
+   "s": "Find your ideal job at Jobstreet with 18 Val jobs found in Singapore. View all our Val vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Val Morgan Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/val-morgan-jobs",
+   "s": "Today's top Val Morgan jobs in United States. Leverage your professional network, and get hired. New Val Morgan jobs added daily."
+  },
+  {
+   "t": "Val Morgan - LinkedIn",
+   "u": "https://au.linkedin.com/company/val-morgan",
+   "s": "Val Morgan | 9,811 followers on LinkedIn. CINEMA'S HOTTEST SUMMER ON RECORD 🔥 | Val Morgan Cinema Network is Australia and New Zealand's leading national suppl"
+  },
+  {
+   "t": "Careers | JPMorganChase",
+   "u": "https://www.jpmorganchase.com/careers",
+   "s": "The scale of our firm opens wide-ranging opportunities. With 300,000+ employees globally, we serve millions of clients, customers businesses, hospitals, schools"
+  },
+  {
+   "t": "Careers — VMO",
+   "u": "https://www.valmorganoutdoor.com/careers/",
+   "s": "Sonder access for you and your family. Career progression and training opportunities. Work with a company who strives for a sustainable future. Flexible working"
+  },
+  {
+   "t": "Val Morgan Careers and Employment | Indeed.com",
+   "u": "https://au.indeed.com/cmp/Val-Morgan",
+   "s": "Find out what works well at Val Morgan from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "2 Val Morgan jobs - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/val-morgan-jobs-worldwide",
+   "s": "Today&rsquo;s top 2 Val Morgan jobs. Leverage your professional network, and get hired. New Val Morgan jobs added daily."
+  },
+  {
+   "t": "Val Morgan Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/val-morgan-jobs",
+   "s": "Today's top Val Morgan jobs in United States. Leverage your professional network, and get hired. New Val Morgan jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.ashbyhq.com/ValonVM",
+  "title": "",
+  "status": 200,
+  "bytes": 4212,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "ashby:ValonVM",
+  "score": 17,
+  "snippet": "Valon Mortgage Jobs We're on a mission to empower every homeowner. We believe the journey of home ownership starts when you get your keys, but lasts far beyond.",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

@@ -2,144 +2,153 @@
  "brand": "Robam",
  "tier": "lca",
  "lca": "ROBAM APPLIANCES LA TRADE LLC",
- "ts": "2026-09-27T02:03:10.708Z",
+ "ts": "2026-09-27T07:54:01.260Z",
  "candidates": [
   {
-   "url": "https://www.robam.com/upload/2023/05/18/16843915098401dclef.pdf",
-   "title": "",
-   "status": 0,
-   "bytes": 0,
+   "url": "https://www.robametals.com/en/working-at-roba/job-openings/",
+   "title": "Job openings | Roba Metals",
+   "status": 200,
+   "bytes": 61895,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore all current vacancies at Roba Metals and discover career opportunities in steel, stainless, aluminium, non‑ferrous and recycling. Apply today.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.robamworld.com/",
+   "title": "ROBAM",
+   "status": 200,
+   "bytes": 252986,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 5,
-   "snippet": "six career promotion channels for management, product development, supply chain, marketing, professional service and skill operation, etc. · ..."
+   "snippet": "ROBAM's high-suction range hoods are built to keep up with the intensity of stir-fry cooking, instantly exhaust away smoke and grease to create a fresher, healt",
+   "backend": "direct"
   },
   {
-   "url": "https://www.walmart.com/brand/robam/10059091",
+   "url": "https://www.robam.com/recruit.html",
    "title": "",
-   "status": 412,
-   "bytes": 396,
+   "status": 200,
+   "bytes": 19305,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 5,
-   "snippet": "Shop items from Robam at Walmart.com and learn more about how you can save money on the best Robam products to help you live better ... Careers · Our Company .."
-  },
-  {
-   "url": "https://www.redrobin.com/jobs-and-careers",
-   "title": "Attention Required! | Cloudflare",
-   "status": 403,
-   "bytes": 5485,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 2,
-   "snippet": "Build a career while creating memories with awesome people. From great benefits to 50% off food, the reasons are as bottomless as our Steak Fries. Apply Now."
+   "snippet": "老板电器以47年专研烹饪的专业积淀，首创行业领先的AI数字厨电与\"食神\"烹饪大模型。在烹饪过程中与每一位创造者一起，实现烹饪自由，享受创造。",
+   "backend": "zenrows"
   }
  ],
  "results": [
   {
    "t": "ROBAM",
+   "u": "https://www.robamworld.com/",
+   "s": "ROBAM's high-suction range hoods are built to keep up with the intensity of stir-fry cooking, instantly exhaust away smoke and grease to create a fresher, healt"
+  },
+  {
+   "t": "人才招聘-老板厨房电器官方网站 - Robam",
+   "u": "https://www.robam.com/recruit.html",
+   "s": "老板电器以47年专研烹饪的专业积淀，首创行业领先的AI数字厨电与\"食神\"烹饪大模型。在烹饪过程中与每一位创造者一起，实现烹饪自由，享受创造。"
+  },
+  {
+   "t": "ROBAM - LinkedIn",
    "u": "https://www.linkedin.com/company/robam",
-   "s": "Browse jobs. Internal Auditor jobs. 46,649 open jobs · Account Executive jobs. 71,457 open jobs · Executive jobs. 690,514 open jobs · Accountant jobs. 91,739 .."
+   "s": "ROBAM | 739 followers on LinkedIn. 始创于1979年的老板电器（股票代码：002508），是中国厨房电器行业的领导者，也是迄今为止历史最悠久的专业厨房电器 ..."
   },
   {
-   "t": "HANGZHOU ROBAM APPLIANCES CO., LTD.",
-   "u": "https://www.robam.com/upload/2023/05/18/16843915098401dclef.pdf",
-   "s": "six career promotion channels for management, product development, supply chain, marketing, professional service and skill operation, etc. · ..."
+   "t": "Vacancies - robam",
+   "u": "https://www.robammall.com.au/vacanies/",
+   "s": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque elit eget tellus maximus euismod. Etiam ut efficitur nibh. Aenean lobortis nunc a"
   },
   {
-   "t": "3184 Robam Appliances Jobs September 2026",
-   "u": "https://www.naukri.com/robam-appliances-jobs-careers-2780994",
-   "s": "Apply To Robam Appliances Jobs On Naukri.com. Explore Your Career In Robam Appliances Across Different Locations In Your Preferred Industry."
+   "t": "Working at ROBAM Appliances | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-ROBAM-Appliances-EI_IE4771607.11,27.htm",
+   "s": "See what employees say it's like to work at ROBAM Appliances. Salaries, reviews, and more - all posted by employees working at ROBAM Appliances."
   },
   {
-   "t": "Robam - Walmart.com",
-   "u": "https://www.walmart.com/brand/robam/10059091",
-   "s": "Shop items from Robam at Walmart.com and learn more about how you can save money on the best Robam products to help you live better ... Careers · Our Company .."
+   "t": "杭州老板电器股份有限公司 - 校园招聘",
+   "u": "https://campus.robam.com/",
+   "s": "2026年杭州老板电器股份有限公司校园招聘正在进行，点击申请职位"
   },
   {
-   "t": "ROBAM Appliances Reviews: What Is It Like to Work At",
-   "u": "https://www.glassdoor.ie/Reviews/ROBAM-Appliances-Reviews-E4771607.htm",
-   "s": "The company exhibits a pronounced ageing trend, with both its workforce and corporate culture proving ill-suited to younger professionals seeking career ..."
+   "t": "Robam-Official | LinkedIn",
+   "u": "https://www.linkedin.com/company/robam-official",
+   "s": "Robam-Official Appliances, Electrical, and Electronics Manufacturing hangzhou, zhejiang 140 followers We also want to be casting hundred years Enterprise compan"
   },
   {
-   "t": "Join our team! View career options and benefits",
-   "u": "https://www.redrobin.com/jobs-and-careers",
-   "s": "Build a career while creating memories with awesome people. From great benefits to 50% off food, the reasons are as bottomless as our Steak Fries. Apply Now."
+   "t": "Robam - Employer Overview, H1B Visas, Green Cards, Salaries, Jobs ...",
+   "u": "https://www.myvisajobs.com/employer/robam/",
+   "s": "Explore Robam's employer profile with up-to-date information on H1B visas, green cards, salaries, job openings, contact details, employee reviews, FAQs, and off"
   },
   {
-   "t": "Alro Careers",
-   "u": "https://careers.alro.com/career-home",
-   "s": "Alro offers rewarding and challenging career opportunities, as well as a competitive compensation and benefits package. Since its founding in 1948, Alro has ..."
+   "t": "人才招聘-老板厨房电器官方网站 - Robam",
+   "u": "https://www.robam.com/recruit.html",
+   "s": "老板电器以47年专研烹饪的专业积淀，首创行业领先的AI数字厨电与\"食神\"烹饪大模型。在烹饪过程中与每一位创造者一起，实现烹饪自由，享受创造。"
   },
   {
-   "t": "Search Careers",
-   "u": "https://www.fbin.com/careers/search-careers",
-   "s": "We have a wide range of open roles across our companies. Explore opportunities in North America by clicking locations on the map, or via the search tool below."
+   "t": "Hangzhou Robam Appliances Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/1572577/jobs/",
+   "s": "(Robam Appliances招聘)Hangzhou Robam Appliances Co., Ltd.招聘：语音交互测试工程师（实验室）、运动控制算法工程师（强化学习）、硬件工程师等86个职位。其中，应届生校园招聘1条，硕士研究生招聘10条。Robam Appliances相关领域：净水器，烤箱，消毒柜，蒸汽炉"
   },
   {
-   "t": "Join our team! View career options and benefits",
-   "u": "https://www.redrobin.com",
-   "s": "Build a career while creating memories with awesome people. From great benefits to 50% off food, the reasons are as bottomless as our Steak Fries. Apply Now. Re"
+   "t": "Roba Jobs in United States (437 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/roba-jobs",
+   "s": "Today's top 437 Roba jobs in United States. Leverage your professional network, and get hired. New Roba jobs added daily."
   },
   {
-   "t": "Republic Services Job Seekers: Explore Career Categories",
-   "u": "https://jobs.republicservices.com",
-   "s": "Explore career opportunities at Republic Services . Seeking a Container Driver to safely operate collection trucks and provide prompt, courteous ..."
+   "t": "Robam Cn Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/robam-cn-jobs",
+   "s": "Today's top 9,000+ Robam Cn jobs in United States. Leverage your professional network, and get hired. New Robam Cn jobs added daily."
   },
   {
-   "t": "Search Careers",
-   "u": "https://www.fbin.com",
-   "s": "We have a wide range of open roles across our companies. Explore opportunities in North America by clicking locations on the map, or via the search tool below. "
+   "t": "ROBAM",
+   "u": "https://www.robamworld.com/",
+   "s": "ROBAM's high-suction range hoods are built to keep up with the intensity of stir-fry cooking, instantly exhaust away smoke and grease to create a fresher, healt"
   },
   {
-   "t": "Careers at Robert Half | Robert Half jobs | Make your move to",
-   "u": "https://careers.roberthalf.com",
-   "s": "As a Robert Half employee you'll have opportunities to advance your career while helping candidates and businesses find the jobs and talent they need to succeed"
+   "t": "ROBAM: Kitchen Range Hoods, Cooktops, Steam Oven, Dishwasher",
+   "u": "https://robamliving.com/",
+   "s": "Discover ROBAM premium kitchen appliances, including powerful range hoods, gas cooktops, steam ovens, ranges and dishwashers—designed for modern home cooking."
   },
   {
-   "t": "Careers at Robin | Hybrid, Remote, and Growth Opportunities",
-   "u": "https://robinpowered.com",
-   "s": "Explore your career choices at Robin , a growing company that focuses on mentorship, healthy culture, valuable training, and inclusion. See where you fit in."
+   "t": "杭州老板电器股份有限公司 - 校园招聘",
+   "u": "https://campus.robam.com/",
+   "s": "2026年杭州老板电器股份有限公司校园招聘正在进行，点击申请职位"
   },
   {
-   "t": "Job Openings",
-   "u": "https://therobohub.com",
-   "s": "Open Positions: Build Your Career with Us · About The Robo Hub · Hub Operations Manager · Head of Finance and Technology · Software Engineer, Platform & Systems"
+   "t": "ROBAM - #Robam WE ARE HIRING IN LA，USA ROBAM,... | Facebook",
+   "u": "https://www.facebook.com/ROBAM.WORLD/posts/robam-we-are-hiring-in-lausarobam-especializing-in-manufacturing-household-kitch/5947095195332019/",
+   "s": "#Robam WE ARE HIRING IN LA，USA ROBAM, especializing in manufacturing household kitchen appliances over 40 years, has been widely recognized as leading brand in "
   },
   {
-   "t": "Working at Romac",
-   "u": "https://www.romac.com",
-   "s": "We are curious, open, flexible, and focus on winning solutions. JOB OPENINGS (800) 426-9341 Romac … 800-426-9341 Hours Mon 6am - 5pm Tue 6am - Manufacturing, .."
+   "t": "Job openings - Roba Metals",
+   "u": "https://www.robametals.com/en/working-at-roba/job-openings/",
+   "s": "Explore all current vacancies at Roba Metals and discover career opportunities in steel, stainless, aluminium, non‑ferrous and recycling. Apply today."
   },
   {
-   "t": "Restaurant Support Center Careers",
-   "u": "https://jobs.bloominbrands.com",
-   "s": "Restaurant Support Center Careers · Search filters · Filter Results · Financial Analyst · Financial Analyst, Corporate FP&A · Lease Auditor · Lease ... Read mor"
+   "t": "Job Openings | Careers at ROHM | ROHM Semiconductor",
+   "u": "https://www.rohm.com/job-openings",
+   "s": "Job Openings At ROHM, we place emphasis on our mission - \"Quality is our top priority at all times. Our objective is to contribute to the advancement and progre"
   },
   {
-   "t": "Top Electric Chimney Dealers Hot Touch near Mahagun",
-   "u": "https://www.justdial.com",
-   "s": "Top Electric Chimney Dealers Hot Touch near Mahagun Sarovar Portico Suites Vaishali Sector 3, Ghaziabad. Find ✓Electric Chimney Dealers, ..."
+   "t": "人才招聘-老板厨房电器官方网站 - Robam",
+   "u": "https://www.robam.com/recruit/",
+   "s": "老板电器以47年专研烹饪的专业积淀，首创行业领先的AI数字厨电与\"食神\"烹饪大模型。在烹饪过程中与每一位创造者一起，实现烹饪自由，享受创造。"
   },
   {
-   "t": "Victoria's largest construction & design show returns with",
-   "u": "https://www.facebook.com",
-   "s": "Victoria's largest construction & design show returns with 20000+ attendees, plus HVAC&R, Fire Safety & Security. See what's on."
-  },
-  {
-   "t": "Folk and Traditional Arts Program",
-   "u": "https://parks.wa.gov",
-   "s": "“The Folk & Traditional. Arts program is an incredible partner and a joy to work with. The programs we have created together are so special and meaningful to .."
-  },
-  {
-   "t": "Nate Yang - Industrial designer in Nanjing, China",
-   "u": "https://www.behance.net",
-   "s": "Available for Freelance; Industrial designer; Nanjing, China; opens in a new tab or window www.Yangtianzhao.com. Follow. Message. Read more"
+   "t": "ROHM - Careers",
+   "u": "https://www.rohm.com/careers",
+   "s": "Careers Join ROHM- The fastest growing semiconductor manufacturer in the world! ROHM Semiconductor is an industry leader in system LSIs, discrete components, an"
   }
  ],
  "dict_hits": [],
- "verdict": "no_clear_surface"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.robametals.com/en/working-at-roba/job-openings/",
+  "platform": "custom",
+  "title": "Job openings | Roba Metals"
+ },
+ "verdict": "custom_surface"
 }

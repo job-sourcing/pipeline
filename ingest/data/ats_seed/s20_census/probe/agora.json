@@ -2,103 +2,155 @@
  "brand": "Agora",
  "tier": "lca",
  "lca": "AGORA DATA INC.",
- "ts": "2026-09-27T02:06:54.341Z",
+ "ts": "2026-09-27T07:59:02.029Z",
  "candidates": [
   {
-   "url": "https://agorareal.com",
-   "title": "Agora | Real estate investment management software",
+   "url": "https://www.agora.io/en/careers/",
+   "title": "Careers",
    "status": 200,
-   "bytes": 302751,
+   "bytes": 121785,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 5,
-   "snippet": "Browse career opportunities at Agora . Join our team of innovative professionals and help us reinvent real estate investment management."
+   "score": 7,
+   "snippet": "Agora has enriched my career by allowing me to scale up my technical customer success skills. Building and nurturing long-term customer relationships, together ",
+   "backend": "direct"
   },
   {
-   "url": "https://jobs.insightpartners.com",
-   "title": "Companies | Insight Partners Job Board",
+   "url": "https://agorareal.com/careers/",
+   "title": "Agora careers: Check open roles and join our team",
    "status": 200,
-   "bytes": 225513,
+   "bytes": 318518,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 2,
-   "snippet": "Apr 23, 2026 — As a Customer Success Manager at Agora , you will be the trusted partner for our clients, guiding them throughout their journey and ensuring they"
+   "score": 7,
+   "snippet": "Browse career opportunities at Agora. Join our team of innovative professionals and help us reinvent real estate investment management.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.agora.io/en/careers/open-positions/",
+   "title": "Open Positions",
+   "status": 200,
+   "bytes": 112594,
+   "markers": [
+    "rippling"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "If you are looking for a super fast-growing startup, high-caliber colleagues, fun work environment, we are the place for you! Check out current openings.",
+   "backend": "direct"
   }
  ],
  "results": [
   {
-   "t": "Athenian Lettering of the Fifth Century B.C.",
-   "u": "https://dokumen.pub",
-   "s": "This book has chapters on methodology, on the writing of the first decrees and laws of the years ca. 515 to 450 B.C., on..."
-  },
-  {
-   "t": "A Text-Book of The History of Architecture by A. D. F. Hamlin",
-   "u": "https://www.scribd.com",
-   "s": "The document is an introduction to a textbook on the history of architecture. It discusses the contents of the book, which provides a broad overview of ... Read"
-  },
-  {
-   "t": "[groovy-scm] [contrib] [28] process/trunk",
-   "u": "https://marc.info",
-   "s": "... agora +agorae +agoraphobe +agoraphobes +agoraphobia +agoraphobia&#39;s + ... careers +career&#39;s +carefree +careful +carefuller +carefullest + ... Read mo"
-  },
-  {
-   "t": "Top 10 Best Video Calling Software of 2026 - Axiobench",
-   "u": "https://axiobench.com",
-   "s": "Aug 7, 2026 — + Agora Analytics exposes session quality, participant events, and ... Careers · Partner · Contact. Legal. Editorial Process · Facts · Privacy ..."
-  },
-  {
-   "t": "administração francisco amaral documentário",
-   "u": "https://arq-camp.campinas.sp.gov.br",
-   "s": "Jan 31, 1978 — Job : Figueiredo, diretorga Remonta; Vejamos, + agora , “as Ê tc a : mento da cidade. Foi construida em 1885, 168 pages"
-  },
-  {
-   "t": "Doja Cat concert <Ma vie> 25~26 World Tour",
-   "u": "https://blog.naver.com",
-   "s": "Dec 28, 2025 — 25년 8월 28일. 대망의 티켓팅날. ​. ​. 행운이 찾아옴. ​. ​. 티켓팅 개빡세겠지ㄷㄷㄷ;;;. 떨면서 들어갔는데 웬걸. Read more"
-  },
-  {
-   "t": "Como Vai Ficar O Vento Em Nova Iguaçu",
-   "u": "https://www.tiktok.com",
-   "s": "Aug 10, 2026 — Atenção alguns lugares já se encontra com ventos fortes no município de Nova Iguaçu, vamos redobrar atenção Read more"
+   "t": "Careers - Agora",
+   "u": "https://www.agora.io/en/careers/",
+   "s": "Agora has enriched my career by allowing me to scale up my technical customer success skills. Building and nurturing long-term customer relationships, together "
   },
   {
    "t": "Agora careers: Check open roles and join our team",
-   "u": "https://agorareal.com",
-   "s": "Browse career opportunities at Agora . Join our team of innovative professionals and help us reinvent real estate investment management."
+   "u": "https://agorareal.com/careers/",
+   "s": "Browse career opportunities at Agora. Join our team of innovative professionals and help us reinvent real estate investment management."
   },
   {
-   "t": "Agora Cyber Charter School careers in King of Prussia, PA",
-   "u": "https://www.indeed.com",
-   "s": "Education & Instruction Teacher $52,736 per year . Special Education Teacher $48,615 per year. Elementary School Teacher $42,246 per year 4.00. Great benefits ."
+   "t": "Open Positions - Agora",
+   "u": "https://www.agora.io/en/careers/open-positions/",
+   "s": "If you are looking for a super fast-growing startup, high-caliber colleagues, fun work environment, we are the place for you! Check out current openings."
   },
   {
-   "t": "AGORA SA Jobs & Careers - 2 Open Positions",
-   "u": "https://www.glassdoor.com",
-   "s": "Yes, AGORA SA is currently hiring for 2 open positions in the United States. Use Glassdoor to find and apply for a job that loves you back."
+   "t": "Careers - The Agora Companies",
+   "u": "https://theagora.com/careers/",
+   "s": "Calling all entrepreneurs, deep thinkers, and the endlessly curious… Join Our Team There is no one-size-fits-all path here, just people who ask better questions"
   },
   {
-   "t": "Agora Jobs",
-   "u": "https://www.levels.fyi",
-   "s": "Explore and search open jobs from Agora . Negotiate$10K+ guaranteed or money back Free Consult. Data Center Deployment EngineerNebius"
+   "t": "Careers at Agora Energiewende | Join Our Team",
+   "u": "https://www.agora-energiewende.org/about-us/careers-at-agora-energiewende",
+   "s": "Explore career opportunities at Agora Energiewende, a leading think tank driving global energy transitions. Join our international team."
   },
   {
-   "t": "Agora Cyber Charter School Jobs (NOW HIRING)",
-   "u": "https://www.ziprecruiter.com",
-   "s": "Browse 96 AGORA CYBER CHARTER SCHOOL jobs ($91k-$66k) hiring now . New openings posted daily. Math Teacher York, PA · On-site $46K - $60K/yr. ..."
+   "t": "Agora Careers",
+   "u": "https://jobs.gem.com/agora",
+   "s": "Agora Careers Senior AML/KYC Onboarding Manager USA"
   },
   {
-   "t": "Agora remote jobs and company guide",
-   "u": "https://wfh.team",
-   "s": "Research Agora remote careers, hiring locations, work style, and official career links . WFH.team has not detected an active remote opening right now."
+   "t": "Home - Agora Cyber Charter School",
+   "u": "https://agora.org/",
+   "s": "Agora Cyber Charter School offers tuition-free, flexible online K-12 education built for every student's success and growth."
   },
   {
-   "t": "Customer Success Manager (Spanish/English) @ Agora",
-   "u": "https://jobs.insightpartners.com",
-   "s": "Apr 23, 2026 — As a Customer Success Manager at Agora , you will be the trusted partner for our clients, guiding them throughout their journey and ensuring they"
+   "t": "Careers - Agora Data, Inc.",
+   "u": "https://agoradata.com/careers/",
+   "s": "Agora provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, sex, national origin"
+  },
+  {
+   "t": "Careers - Agora",
+   "u": "https://www.agora.io/en/careers/",
+   "s": "Agora has enriched my career by allowing me to scale up my technical customer success skills. Building and nurturing long-term customer relationships, together "
+  },
+  {
+   "t": "Open Positions - Agora",
+   "u": "https://www.agora.io/en/careers/open-positions/",
+   "s": "If you are looking for a super fast-growing startup, high-caliber colleagues, fun work environment, we are the place for you! Check out current openings."
+  },
+  {
+   "t": "U.S. Jobs with Green Card Sponsorship | Agora",
+   "u": "https://jobs.agoravisa.com/",
+   "s": "Full-time U.S. jobs with employer-sponsored EB-3 green cards. Covers spouse and children under 21. Apply free with Agora."
+  },
+  {
+   "t": "Careers at Agora Energiewende | Join Our Team",
+   "u": "https://www.agora-energiewende.org/about-us/careers-at-agora-energiewende",
+   "s": "Explore career opportunities at Agora Energiewende, a leading think tank driving global energy transitions. Join our international team."
+  },
+  {
+   "t": "AGORA International School | JOBS IN JAPAN",
+   "u": "https://jobsinjapan.com/companies/agora-international-school/",
+   "s": "About AGORA International School AGORA International School is a community of families and educators with a shared philosophy in early childhood education. We a"
+  },
+  {
+   "t": "agora Careers | Onsite, Remote, Hybrid | 18 Open Positions | September 2026",
+   "u": "https://jobera.com/employer/agora-19/",
+   "s": "Browse 18 open positions at agora. Find onsite, remote, hybrid jobs and apply today on Jobera."
+  },
+  {
+   "t": "Careers - The Agora Companies",
+   "u": "https://theagora.com/careers/",
+   "s": "Calling all entrepreneurs, deep thinkers, and the endlessly curious… Join Our Team There is no one-size-fits-all path here, just people who ask better questions"
+  },
+  {
+   "t": "Agora careers: Check open roles and join our team",
+   "u": "https://agorareal.com/careers/",
+   "s": "Browse career opportunities at Agora. Join our team of innovative professionals and help us reinvent real estate investment management."
+  },
+  {
+   "t": "Careers - Agora",
+   "u": "https://www.agora.io/en/careers/",
+   "s": "Agora has enriched my career by allowing me to scale up my technical customer success skills. Building and nurturing long-term customer relationships, together "
+  },
+  {
+   "t": "Open Positions - Agora",
+   "u": "https://www.agora.io/en/careers/open-positions/",
+   "s": "If you are looking for a super fast-growing startup, high-caliber colleagues, fun work environment, we are the place for you! Check out current openings."
+  },
+  {
+   "t": "Careers - The Agora Companies",
+   "u": "https://theagora.com/careers/",
+   "s": "Calling all entrepreneurs, deep thinkers, and the endlessly curious… Join Our Team There is no one-size-fits-all path here, just people who ask better questions"
+  },
+  {
+   "t": "agora Careers | Onsite, Remote, Hybrid | 18 Open Positions | September 2026",
+   "u": "https://jobera.com/employer/agora-19/",
+   "s": "Browse 18 open positions at agora. Find onsite, remote, hybrid jobs and apply today on Jobera."
   }
  ],
  "dict_hits": [],
- "verdict": "no_clear_surface"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.agora.io/en/careers/open-positions/",
+  "platform": "rippling",
+  "title": "Open Positions"
+ },
+ "verdict": "marker_surface"
 }

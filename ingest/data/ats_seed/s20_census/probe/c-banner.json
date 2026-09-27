@@ -2,10 +2,169 @@
  "brand": "C.banner",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:11:57.081Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:25:36.137Z",
+ "candidates": [
+  {
+   "url": "https://bannerhealth.wd108.myworkdayjobs.com/Careers",
+   "title": "",
+   "status": 200,
+   "bytes": 8808,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:Careers",
+   "score": 15,
+   "snippet": "Banner Health is one of the largest, nonprofit health care systems in the country and the leading nonprofit provider of hospital services in all the communities",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.bannerhealth.com/careers/job-search",
+   "title": "Job Search | Careers",
+   "status": 200,
+   "bytes": 55275,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "A career at Banner Health is a rewarding experience. From jobs for doctors, advanced practitioners, nurses and more, you'll find the right job for you here at B",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.bannerhealth.com/careers",
+   "title": "Health Care Careers",
+   "status": 200,
+   "bytes": 69682,
+   "markers": [
+    "workday",
+    "icims"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Start your health care career or continue your professional experience to make a real difference in the industry. Find your future with Banner Health today.",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Job Search | Careers - Banner Health",
+   "u": "https://www.bannerhealth.com/careers/job-search",
+   "s": "A career at Banner Health is a rewarding experience. From jobs for doctors, advanced practitioners, nurses and more, you'll find the right job for you here at B"
+  },
+  {
+   "t": "Health Care Careers - Banner Health",
+   "u": "https://www.bannerhealth.com/careers",
+   "s": "Start your health care career or continue your professional experience to make a real difference in the industry. Find your future with Banner Health today."
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://bannerhealth.wd108.myworkdayjobs.com/Careers",
+   "s": "Banner Health is one of the largest, nonprofit health care systems in the country and the leading nonprofit provider of hospital services in all the communities"
+  },
+  {
+   "t": "People, Culture and Diversity - The Banner",
+   "u": "https://www.thebanner.com/culture-careers/",
+   "s": "Culture & Careers The Banner covers all of us. We embrace the uniqueness of each person on our team, encourage collaboration and create a space for individual c"
+  },
+  {
+   "t": "Careers at Banner Bank",
+   "u": "https://www.bannerbank.com/about-us/careers",
+   "s": "Banner Bank offers a variety of employment opportunities with great pay, benefits, and paths for career growth. Come join the best bank in the Pacific region!"
+  },
+  {
+   "t": "Careers - Banner Industries",
+   "u": "https://www.bannerindustries.com/careers/",
+   "s": "Careers Banner Industries is a fast growing, successful corporation that is in constant need for quality people to join our team. Since its inception in 1985, B"
+  },
+  {
+   "t": "Current Career Opportunities - Banner Bank",
+   "u": "https://www.bannerbank.com/about-us/careers/current-career-opportunities",
+   "s": "Search for all open career opportunities at Banner Bank."
+  },
+  {
+   "t": "Careers | Banner Life family of companies | Life Insurance Company",
+   "u": "https://www.bannerlife.com/about-us/careers",
+   "s": "The Banner Life family of companies offers exciting life insurance career opportunities. See our available insurance underwriter jobs with Banner Life and Willi"
+  },
+  {
+   "t": "Banner Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/banner-jobs",
+   "s": "Find your ideal job at Jobstreet with 27 Banner jobs found in Singapore. View all our Banner vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Health Care Careers - Banner Health",
+   "u": "https://www.bannerhealth.com/careers",
+   "s": "Start your health care career or continue your professional experience to make a real difference in the industry. Find your future with Banner Health today."
+  },
+  {
+   "t": "Locations | Careers - Banner Health",
+   "u": "https://www.bannerhealth.com/careers/locations",
+   "s": "As one of the largest nonprofit health systems in the country, Banner Health offers both the stability that comes with success and the possibility of exploring "
+  },
+  {
+   "t": "People, Culture and Diversity - The Banner",
+   "u": "https://www.thebanner.com/culture-careers/",
+   "s": "Culture & Careers The Banner covers all of us. We embrace the uniqueness of each person on our team, encourage collaboration and create a space for individual c"
+  },
+  {
+   "t": "Banner jobs in Singapore - August 2026 | Jora",
+   "u": "https://sg.jora.com/Banner-jobs-in-Singapore",
+   "s": "View 43 Banner jobs in Singapore at Jora, create free email alerts and never miss another career opportunity again."
+  },
+  {
+   "t": "Jobs in Singapore - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/jobs",
+   "s": "Find your ideal job at Jobstreet with 68243 jobs found in Singapore. View all our vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Banner Health Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Banner-Health-jobs.html",
+   "s": "Browse 2,589 Banner Health jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Job Board - Banner Health",
+   "u": "https://practicewithus.bannerhealth.com/s/job-board",
+   "s": "Banner University Medical Group offers a generous salary and recruitment incentives, along with an industry leading benefits package that provides security for "
+  },
+  {
+   "t": "Health Care Careers - Banner Health",
+   "u": "https://www.bannerhealth.com/careers",
+   "s": "Start your health care career or continue your professional experience to make a real difference in the industry. Find your future with Banner Health today."
+  },
+  {
+   "t": "Job Search | Careers - Banner Health",
+   "u": "https://www.bannerhealth.com/careers/job-search",
+   "s": "A career at Banner Health is a rewarding experience. From jobs for doctors, advanced practitioners, nurses and more, you'll find the right job for you here at B"
+  },
+  {
+   "t": "Banner Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/banner-jobs",
+   "s": "Find your ideal job at Jobstreet with 27 Banner jobs found in Singapore. View all our Banner vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://bannerhealth.wd108.myworkdayjobs.com/Careers",
+   "s": "Need help? Contact the Banner Health Talent Acquisition team at Employment@bannerhealth.com. This website contains the current Banner Health job openings. Appli"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://bannerhealth.wd108.myworkdayjobs.com/Careers",
+  "title": "",
+  "status": 200,
+  "bytes": 8808,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:Careers",
+  "score": 15,
+  "snippet": "Banner Health is one of the largest, nonprofit health care systems in the country and the leading nonprofit provider of hospital services in all the communities",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

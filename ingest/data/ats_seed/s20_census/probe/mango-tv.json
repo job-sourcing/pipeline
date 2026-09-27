@@ -2,10 +2,166 @@
  "brand": "Mango TV",
  "tier": "lca",
  "lca": "MANGO TECHNOLOGIES, INC.",
- "ts": "2026-09-27T02:07:40.260Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T07:39:38.356Z",
+ "candidates": [
+  {
+   "url": "https://mango.wd3.myworkdayjobs.com/Mango_Work_Your_Passion",
+   "title": "",
+   "status": 200,
+   "bytes": 7352,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:Mango_Work_Your_Passion",
+   "score": 17,
+   "snippet": "At Mango, we put passion into everything that we do. Born in Barcelona, we are the place where creativity, innovation, diversity, digitalization, and sustainabi",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://mango.wd3.myworkdayjobs.com/de-DE/Mango_Work_Your_Passion",
+   "title": "",
+   "status": 200,
+   "bytes": 7528,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:de-DE",
+   "score": 17,
+   "snippet": "Bei MANGO setzen wir Leidenschaft in alles, was wir tun. In Barcelona gegründet, sind wir der Ort, an dem Kreativität, Innovation, Vielfalt, Digitalisierung und",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://jobs.mango.com/en",
+   "title": "Taking Fashion Further - MANGO Jobs",
+   "status": 200,
+   "bytes": 91104,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We inspire the world by sharing our passion for Mediterranean style & culture. Mango is one of Europe's leading fashion companies, with design, creativity and t",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Taking Fashion Further - MANGO Jobs",
+   "u": "https://jobs.mango.com/en",
+   "s": "We inspire the world by sharing our passion for Mediterranean style & culture. Mango is one of Europe's leading fashion companies, with design, creativity and t"
+  },
+  {
+   "t": "Taking Fashion Further - MANGO Jobs",
+   "u": "https://jobs.mango.com/careers",
+   "s": "Inspiramos al mundo compartiendo nuestra pasión por el estilo y la cultura Mediterránea. Mango es una de las empresas de moda líderes en Europa, con el diseño, "
+  },
+  {
+   "t": "MangoTV Careers | Join Our Team",
+   "u": "https://hicareer.com/mangotv",
+   "s": "Explore career opportunities at MangoTV. Join our team and make an impact."
+  },
+  {
+   "t": "芒果tv-招聘",
+   "u": "https://hr.mgtv.com/",
+   "s": "芒果TV是湖南卫视的在线视频媒体平台，提供热门综艺、最新电影和电视剧的在线观看。"
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://mango.wd3.myworkdayjobs.com/Mango_Work_Your_Passion",
+   "s": "At Mango, we put passion into everything that we do. Born in Barcelona, we are the place where creativity, innovation, diversity, digitalization, and sustainabi"
+  },
+  {
+   "t": "Mango TV+ - LinkedIn",
+   "u": "https://www.linkedin.com/company/mangotv24",
+   "s": "Mango TV+ Movies, Videos, and Sound Serving sports fans. Anytime. Anywhere."
+  },
+  {
+   "t": "Careers | Jobs in Film, Digital Media & Media Tech — Mango Mass Media",
+   "u": "https://mangomassmedia.com/careers/",
+   "s": "Ready to Join the Team? Explore current openings on our careers portal and take the next step in your career with Mango Mass Media."
+  },
+  {
+   "t": "Working at Mango Tv | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Mango-Tv-EI_IE8142199.11,19.htm",
+   "s": "See what employees say it's like to work at Mango Tv. Salaries, reviews, and more - all posted by employees working at Mango Tv."
+  },
+  {
+   "t": "Taking Fashion Further - MANGO Jobs",
+   "u": "https://jobs.mango.com/de",
+   "s": "Wir behandeln alle Menschen, die Mango ausmachen - Kunden, Lieferanten und Franchisenehmer - wie eine Familie. Wir sind bestrebt, Mango aktiv zu verbessern. Ein"
+  },
+  {
+   "t": "Taking Fashion Further - MANGO Jobs",
+   "u": "https://jobs.mango.com/de/work",
+   "s": "Bei Mango arbeiten Werte im Job Wir bei Mango glauben an die Power der Mode, aber vor allem an die Power der Personen."
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://mango.wd3.myworkdayjobs.com/Mango_Work_Your_Passion",
+   "s": "At Mango, we put passion into everything that we do. Born in Barcelona, we are the place where creativity, innovation, diversity, digitalization, and sustainabi"
+  },
+  {
+   "t": "MANGO Karriere Arbeitsplätze - FashionJobs.com Deutschland",
+   "u": "https://de.fashionjobs.com/karriere-arbeitspl%C3%A4tze/mango.html",
+   "s": "MANGO bietet dir internationale Möglichkeiten in über 120 Märkten, um deine Horizonte zu erweitern und mit uns global zu wachsen. Bei MANGO glauben wir an eine "
+  },
+  {
+   "t": "Mango Stellenangebote - fashionunited.de",
+   "u": "https://fashionunited.de/jobs-in-der-mode/arbeiten-bei/mango-stellenangebote",
+   "s": "Klick hier, um die aktuellsten Mango Stellenangebote zu finden und dich direkt zu bewerben."
+  },
+  {
+   "t": "Stellen suchen - myworkdayjobs.com",
+   "u": "https://mango.wd3.myworkdayjobs.com/de-DE/Mango_Work_Your_Passion",
+   "s": "Bei MANGO setzen wir Leidenschaft in alles, was wir tun. In Barcelona gegründet, sind wir der Ort, an dem Kreativität, Innovation, Vielfalt, Digitalisierung und"
+  },
+  {
+   "t": "芒果tv-招聘",
+   "u": "https://hr.mgtv.com/",
+   "s": "芒果TV是湖南卫视的在线视频媒体平台，提供热门综艺、最新电影和电视剧的在线观看。"
+  },
+  {
+   "t": "MANGO: Jobangebote | LinkedIn",
+   "u": "https://de.linkedin.com/company/mango/jobs",
+   "s": "With its roots in Barcelona, one of the cradles of the textile industry, since it was founded in 1984, Mango has spent four decades looking to the future and in"
+  },
+  {
+   "t": "Taking Fashion Further - MANGO Jobs",
+   "u": "https://jobs.mango.com/en",
+   "s": "We inspire the world by sharing our passion for Mediterranean style & culture. Mango is one of Europe's leading fashion companies, with design, creativity and t"
+  },
+  {
+   "t": "Taking Fashion Further - MANGO Jobs",
+   "u": "https://jobs.mango.com/",
+   "s": "Inspiramos al mundo compartiendo nuestra pasión por el estilo y la cultura Mediterránea. Mango es una de las empresas de moda líderes en Europa, con el diseño, "
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://mango.wd3.myworkdayjobs.com/Mango_Work_Your_Passion",
+   "s": "At Mango, we put passion into everything that we do. Born in Barcelona, we are the place where creativity, innovation, diversity, digitalization, and sustainabi"
+  },
+  {
+   "t": "©mango Jobs in United States (207 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/%C2%A9mango-jobs",
+   "s": "Today's top 207 ©mango jobs in United States. Leverage your professional network, and get hired. New ©mango jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://mango.wd3.myworkdayjobs.com/Mango_Work_Your_Passion",
+  "title": "",
+  "status": 200,
+  "bytes": 7352,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:Mango_Work_Your_Passion",
+  "score": 17,
+  "snippet": "At Mango, we put passion into everything that we do. Born in Barcelona, we are the place where creativity, innovation, diversity, digitalization, and sustainabi",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

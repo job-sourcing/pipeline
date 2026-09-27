@@ -2,10 +2,153 @@
  "brand": "BGI Group",
  "tier": "lca",
  "lca": "BGI FINANCIAL, LLC",
- "ts": "2026-09-27T02:08:24.515Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:00:15.409Z",
+ "candidates": [
+  {
+   "url": "https://www.bgi-llc.com/careers/",
+   "title": "Careers - We&#039;re Hiring",
+   "status": 200,
+   "bytes": 40165,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Since 1994, BGI has grown from a core group of aviators consulting on training device development to a multifaceted organization of nearly 400 personnel offerin",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.bgiworldwide.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 19303,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "BGI career opportunities. Discover your new job in logistics and submit your resume for current or future job openings at BGI Worldwide.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.bgi.com/global/company/careers",
+   "title": "Page not found - BGI - Global",
+   "status": 404,
+   "bytes": 74755,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We would like to show you a description here but the site won't allow us.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - We're Hiring - BGI",
+   "u": "https://www.bgi-llc.com/careers/",
+   "s": "Since 1994, BGI has grown from a core group of aviators consulting on training device development to a multifaceted organization of nearly 400 personnel offerin"
+  },
+  {
+   "t": "BGI Career Opportunities | BGI Worldwide Logistics",
+   "u": "https://www.bgiworldwide.com/careers/",
+   "s": "BGI career opportunities. Discover your new job in logistics and submit your resume for current or future job openings at BGI Worldwide."
+  },
+  {
+   "t": "www.bgi.com",
+   "u": "https://www.bgi.com/global/company/careers",
+   "s": "We would like to show you a description here but the site won't allow us."
+  },
+  {
+   "t": "Join Us - Banda Group International",
+   "u": "https://bandagroupintl.com/join-us/",
+   "s": "The BGI team is always on the lookout for top talent. BGI wants to help you find your next career opportunity — cultivating the growth and success of our employ"
+  },
+  {
+   "t": "genomics - BGI Group Official Website",
+   "u": "https://en.genomics.cn/",
+   "s": "BGI follows a genomics development model of \"research, production and application\". With businesses in more than 100 countries and regions around the world, BGI"
+  },
+  {
+   "t": "BGI Group Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bgi-Group",
+   "s": "Find out what works well at BGI Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "Bgi Group Jobs in Worldwide (16,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bgi-group-jobs-worldwide",
+   "s": "Today's top 16,000+ Bgi Group jobs in Worldwide. Leverage your professional network, and get hired. New Bgi Group jobs added daily."
+  },
+  {
+   "t": "BGI: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/we-are-bgi/jobs/",
+   "s": "BGI | 10,793 followers on LinkedIn. At BGI, we're more than just a workplace—we're a global community of diverse brands, where people grow together. Bright Grou"
+  },
+  {
+   "t": "Careers - We're Hiring - BGI",
+   "u": "https://www.bgi-llc.com/careers/",
+   "s": "Since 1994, BGI has grown from a core group of aviators consulting on training device development to a multifaceted organization of nearly 400 personnel offerin"
+  },
+  {
+   "t": "BGI Career Opportunities | BGI Worldwide Logistics",
+   "u": "https://www.bgiworldwide.com/careers/",
+   "s": "BGI career opportunities. Discover your new job in logistics and submit your resume for current or future job openings at BGI Worldwide."
+  },
+  {
+   "t": "Join Us - Banda Group International",
+   "u": "https://bandagroupintl.com/join-us/",
+   "s": "Banda Group International, LLC and BGI Security, LLC are proud veteran-owned companies committed to hiring those who have sacrificed for our country. Bring your"
+  },
+  {
+   "t": "Bgi Group Jobs in Worldwide (16,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bgi-group-jobs-worldwide",
+   "s": "Today's top 16,000+ Bgi Group jobs in Worldwide. Leverage your professional network, and get hired. New Bgi Group jobs added daily."
+  },
+  {
+   "t": "BGI Recruitment Page",
+   "u": "https://services.bgi.com/we-are-recruiting",
+   "s": "With businesses in more than 100 countries and regions around the world, BGI has established cooperation and partnerships with thousands of different organizati"
+  },
+  {
+   "t": "BGI: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/we-are-bgi/jobs/",
+   "s": "BGI | 10,793 followers on LinkedIn. At BGI, we're more than just a workplace—we're a global community of diverse brands, where people grow together. Bright Grou"
+  },
+  {
+   "t": "BGI: Jobs | LinkedIn",
+   "u": "https://uk.linkedin.com/company/we-are-bgi/jobs",
+   "s": "BGI | 10,794 followers on LinkedIn. At BGI, we're more than just a workplace—we're a global community of diverse brands, where people grow together. Bright Grou"
+  },
+  {
+   "t": "Baltic Group International - Vacancies",
+   "u": "https://www.bgicrew.com/eng/jobs",
+   "s": "BGI At sea (55) Ashore (0) Oil and gas (6) Passanger fleet (1)"
+  },
+  {
+   "t": "Careers - We're Hiring - BGI",
+   "u": "https://www.bgi-llc.com/careers/",
+   "s": "BGI is a worldwide veteran-owned firm employing personnel with a wide range of military and technical expertise related to aviation and training. We foster an e"
+  },
+  {
+   "t": "BGI Career Opportunities | BGI Worldwide Logistics",
+   "u": "https://www.bgiworldwide.com/careers/",
+   "s": "BGI career opportunities. Discover your new job in logistics and submit your resume for current or future job openings at BGI Worldwide."
+  },
+  {
+   "t": "BGI Recruitment Page",
+   "u": "https://services.bgi.com/we-are-recruiting",
+   "s": "Become part of one of the world's most exciting and innovative genomics companies!"
+  },
+  {
+   "t": "Join Us - Banda Group International",
+   "u": "https://bandagroupintl.com/join-us/",
+   "s": "The BGI team is always on the lookout for top talent. BGI wants to help you find your next career opportunity — cultivating the growth and success of our employ"
+  }
+ ],
  "dict_hits": [],
- "search_err": "Error: Function invoke failed with status 429: {\"error\":\"Too many requests, please try again later\"}",
- "verdict": "no_results"
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.bgi-llc.com/careers/",
+  "platform": "custom",
+  "title": "Careers - We&#039;re Hiring"
+ },
+ "verdict": "custom_surface"
 }

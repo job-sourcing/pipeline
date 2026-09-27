@@ -2,35 +2,149 @@
  "brand": "Shanghai Forte Land",
  "tier": "lca",
  "lca": "FORTE CONSTRUCTION CORP",
- "ts": "2026-09-27T02:03:41.952Z",
- "candidates": [],
+ "ts": "2026-09-27T07:31:51.597Z",
+ "candidates": [
+  {
+   "url": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
+   "title": "301 Jobs in Shanghai, Shanghai | Randstad",
+   "status": 200,
+   "bytes": 644568,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse 301 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.isacjobs.com/job-location/shanghai/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5729,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse the latest jobs in Shanghai for foreigners, including teaching and company jobs for international jobseekers.",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://www.smartshanghai.com/jobs/",
+   "title": "Work in Shanghai | SmartShanghai",
+   "status": 200,
+   "bytes": 75238,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Work in Shanghai Jobs, gigs, co-working, and visa basics — a smarter guide to working in Shanghai. List Your Job Curated by humans who live here — not AI.",
+   "backend": "direct"
+  }
+ ],
  "results": [
   {
-   "t": "Zoberetimifid | PDF | Copyright",
-   "u": "https://www.scribd.com",
-   "s": "The document provides a detailed guide on the Swift gloves in Old School RuneScape (OSRS), including their requirements, effects, and how to obtain them. Read m"
+   "t": "Working at Shanghai Forte Land | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "See what employees say it's like to work at Shanghai Forte Land. Salaries, reviews, and more - all posted by employees working at Shanghai Forte Land."
   },
   {
-   "t": "Zoberetimifid | PDF | Copyright",
-   "u": "https://www.scribd.com",
-   "s": "The document provides a detailed guide on the Swift gloves in Old School RuneScape (OSRS), including their requirements, effects, and how to obtain them. Read m"
+   "t": "Shanghai Forte Land Career: Working at Shanghai Forte Land",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "Shanghai Forte Land develops and sells residential properties. Serving the mass residential property market in Shanghai, the company also other real estate serv"
   },
   {
-   "t": "Cars - Auto",
-   "u": "https://www.gazeti.ge",
-   "s": "Gazeti.ge - classifieds site in Georgia! Cars - Auto Categories +AC. Vacancies Shop Accounts Auto Parts - Auto Special Equipment"
+   "t": "FORTE复地_复地产发集团",
+   "u": "https://www.forte.com.cn/",
+   "s": "驱动城市更新 打造线下时尚地标和城市文化名片 复悦置地 领先的产城融合与 幸福场景智造商 复悦商管 领先的商业资产管理 ..."
   },
   {
-   "t": "Cars for sale - sewônè africa",
-   "u": "https://www.sewone.africa",
-   "s": "Vehicles Real Estate Jobs For Sale Services Rent Lend Donation Barter Event Employee Accounts Event Organizer Accounts"
+   "t": "Careers",
+   "u": "https://www.forteholdings.com/careers.php",
+   "s": "Careers You're a creative problem solver with a passion for innovation. Join our team and revolutionize the way the industry does business. We hire exceptional "
   },
   {
-   "t": "Zoberetimifid | PDF | Copyright",
-   "u": "https://www.scribd.com",
-   "s": "The document provides a detailed guide on the Swift gloves in Old School RuneScape (OSRS), including their requirements, effects, and how to obtain them."
+   "t": "forte.careers",
+   "u": "http://forte.careers/",
+   "s": "forte.careers"
+  },
+  {
+   "t": "Careers | Explore Open Roles | Forte Group",
+   "u": "https://www.fortegrp.com/company/careers",
+   "s": "Today, Forte Group brings together engineers, strategists, and creators from around the world to solve complex challenges with modern tech. We cultivate a cultu"
+  },
+  {
+   "t": "复地 (集团)股份有限公司 | LinkedIn",
+   "u": "https://www.linkedin.com/company/%E5%A4%8D%E5%9C%B0-%E9%9B%86%E5%9B%A2-%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+   "s": "复地 (集团)股份有限公司 is a real estate company based out of 上海市普陀区曹杨路510号9楼, 上海市, 上海市, China."
+  },
+  {
+   "t": "www.forteglobal.com",
+   "u": "https://www.forteglobal.com/careers",
+   "s": "www.forteglobal.com"
+  },
+  {
+   "t": "Working at Shanghai Forte Land | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "See what employees say it's like to work at Shanghai Forte Land. Salaries, reviews, and more - all posted by employees working at Shanghai Forte Land."
+  },
+  {
+   "t": "FORTE复地_复地产发集团",
+   "u": "https://www.forte.com.cn/",
+   "s": "驱动城市更新 打造线下时尚地标和城市文化名片 复悦置地 领先的产城融合与 幸福场景智造商 复悦商管 领先的商业资产管理 ..."
+  },
+  {
+   "t": "Shanghai Forte Land Career: Working at Shanghai Forte Land",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "Shanghai Forte Land develops and sells residential properties. Serving the mass residential property market in Shanghai, the company also other real estate serv"
+  },
+  {
+   "t": "What is Shanghai Forte Land? Company Culture, Mission, Values",
+   "u": "https://www.glassdoor.ca/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "Shanghai Forte Land develops and sells residential properties. Serving the mass residential property market in Shanghai, the company also other real estate serv"
+  },
+  {
+   "t": "301 Jobs in Shanghai, Shanghai | Randstad",
+   "u": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
+   "s": "Browse 301 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals."
+  },
+  {
+   "t": "Jobs in Shanghai - China Foreigner Jobs",
+   "u": "https://www.isacjobs.com/job-location/shanghai/",
+   "s": "Browse the latest jobs in Shanghai for foreigners, including teaching and company jobs for international jobseekers."
+  },
+  {
+   "t": "Open Positions | Forte Group",
+   "u": "https://fortegroup.my.site.com/jobs/s/",
+   "s": "Empowering Individuals and Teams for Maximum Impact We believe in collaboration, autonomy, trust, and well-being to foster a transparent and supportive environm"
+  },
+  {
+   "t": "Shanghai Forte Land pay and benefits | Glassdoor | Glassdoor",
+   "u": "https://www.glassdoor.com.hk/pay-and-benefits/Shanghai-Forte-Land-E40710",
+   "s": "Get data insights into total compensation, benefits, perks and rewards for working at Shanghai Forte Land through real anonymous employees."
+  },
+  {
+   "t": "Shanghai Forte Land Career: Working at Shanghai Forte Land",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "What is it really like to work at Shanghai Forte Land? What do employees say about pay and career opportunities? Discover anonymous reviews now!"
+  },
+  {
+   "t": "Working at Shanghai Forte Land | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "See what employees say it's like to work at Shanghai Forte Land. Salaries, reviews, and more - all posted by employees working at Shanghai Forte Land."
+  },
+  {
+   "t": "301 Jobs in Shanghai, Shanghai | Randstad",
+   "u": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
+   "s": "Browse 301 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals."
+  },
+  {
+   "t": "Careers | Explore Open Roles | Forte Group",
+   "u": "https://www.fortegrp.com/company/careers",
+   "s": "No matter where you are in your career journey, you'll find room to grow, contribute, and make a real difference."
   }
  ],
  "dict_hits": [],
- "verdict": "no_results"
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }
