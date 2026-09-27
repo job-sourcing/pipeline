@@ -158,7 +158,7 @@
 {"reqId": "Tepnn39eXo", "title": "Thermal Engineer (HH)", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": ""}
 {"reqId": "GW0r9mHgk0", "title": "Warehouse Assistant -Accountant", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": ""}
 {"reqId": "Rj8iLvhfzq", "title": "Warehouse Kitter (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "FE30xRIXyP", "title": "Warehouse Kitter (NVD) - Day Shift", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": "", "needs_enrich": true}
-{"reqId": "sNaIL03Sd8", "title": "Warehouse Manager - IB4", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": "", "needs_enrich": true}
-{"reqId": "SK5Snfr6GY", "title": "Warehouse Receiving Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": "", "needs_enrich": true}
-{"reqId": "qlIJoDAMUl", "title": "Warehouse Shipping Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": "", "needs_enrich": true}
+{"reqId": "FE30xRIXyP", "title": "Warehouse Kitter (NVD) - Day Shift", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "sNaIL03Sd8", "title": "Warehouse Manager - IB4", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": "2026-08-16", "startDate_first": "2026-08-16"}
+{"reqId": "SK5Snfr6GY", "title": "Warehouse Receiving Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "qlIJoDAMUl", "title": "Warehouse Shipping Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-09-27", "last_postedOn": "", "last_startDate": ""}
