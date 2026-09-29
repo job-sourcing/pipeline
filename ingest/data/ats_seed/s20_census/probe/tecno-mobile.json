@@ -2,39 +2,25 @@
  "brand": "Tecno Mobile",
  "tier": "lca",
  "lca": "TECNO GROUP LLC",
- "ts": "2026-09-27T08:07:28.079Z",
+ "ts": "2026-09-29T04:39:10.230Z",
  "candidates": [
   {
-   "url": "https://www.tecno-mobile.com/",
-   "title": "TECNO Mobile | Official TECNO Website",
+   "url": "https://jobs.tecnoblocks.com/dashboard",
+   "title": "Tecno Job Board - Find Your Next Opportunity",
    "status": 200,
-   "bytes": 134166,
+   "bytes": 12331,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 5,
-   "snippet": "Explore the latest TECNO smartphones on the official TECNO website. Find the best phone with cutting-edge features, long lasting batteries and affordable prices",
+   "score": 7,
+   "snippet": "A modern job board platform for connecting talent with opportunities",
    "backend": "direct"
-  },
-  {
-   "url": "https://careers.t-mobile.com/",
-   "title": "Careers at T-Mobile",
-   "status": 200,
-   "bytes": 256095,
-   "markers": [
-    "workday"
-   ],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 5,
-   "snippet": "At T-Mobile, we're breaking the rules of wireless and we're just getting started. Join our revolution and change wireless for good.",
-   "backend": "supabase"
   },
   {
    "url": "https://jobs.telefonica.com/?locale=en_US",
    "title": "Jobs at Telefónica Global",
    "status": 200,
-   "bytes": 103913,
+   "bytes": 103912,
    "markers": [
     "successfactors"
    ],
@@ -57,14 +43,14 @@
    "s": "Today's top 10,000+ Tecno Mobile jobs in United States. Leverage your professional network, and get hired. New Tecno Mobile jobs added daily."
   },
   {
+   "t": "TECNO Mobile Global - LinkedIn",
+   "u": "https://www.linkedin.com/company/tecno-mobile-global",
+   "s": "TECNO Mobile Global Computers and Electronics Manufacturing About us Welcome to the official TECNO Mobile page on LinkedIn."
+  },
+  {
    "t": "TECNO MOBILE Careers (2026) - Bayt.com",
    "u": "https://www.bayt.com/en/company/tecno-mobile-1835284/",
    "s": "TECNO was the first dual SIM mobile phone brand to hit the market in Africa, and staying true to the maxim \"think globally, act locally\", TECNO has achieved gre"
-  },
-  {
-   "t": "TECNO Mobile | Official TECNO Website",
-   "u": "https://www.tecno-mobile.com/",
-   "s": "Explore the latest TECNO smartphones on the official TECNO website. Find the best phone with cutting-edge features, long lasting batteries and affordable prices"
   },
   {
    "t": "TECNO Mobile Careers, Perks + Culture | Built In",
@@ -72,39 +58,9 @@
    "s": "Learn more about TECNO Mobile. Find jobs, explore benefits, and research company culture at Built In."
   },
   {
-   "t": "TECNO Mobile Global - LinkedIn",
-   "u": "https://www.linkedin.com/company/tecno-mobile-global",
-   "s": "TECNO Mobile Global Computers and Electronics Manufacturing About us Welcome to the official TECNO Mobile page on LinkedIn."
-  },
-  {
-   "t": "Careers at T-Mobile",
-   "u": "https://careers.t-mobile.com/",
-   "s": "At T-Mobile, we're breaking the rules of wireless and we're just getting started. Join our revolution and change wireless for good."
-  },
-  {
-   "t": "Tecno Mobile Careers | Levels.fyi",
-   "u": "https://www.levels.fyi/companies/tecno-mobile",
-   "s": "Everything you need to know about Tecno Mobile including salaries, levels, benefits, and more."
-  },
-  {
-   "t": "TECNO Mobile Careers and Employment | Indeed.com",
-   "u": "https://www.indeed.com/cmp/Tecno-Mobile",
-   "s": "Find out what works well at TECNO Mobile from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare "
-  },
-  {
-   "t": "TECNO MOBILE Careers (2026) - Bayt.com",
-   "u": "https://www.bayt.com/en/company/tecno-mobile-1835284/",
-   "s": "TECNO was the first dual SIM mobile phone brand to hit the market in Africa, and staying true to the maxim \"think globally, act locally\", TECNO has achieved gre"
-  },
-  {
-   "t": "Tecno Mobile Jobs in United States (10,000+ Open Roles) | LinkedIn",
-   "u": "https://www.linkedin.com/jobs/tecno-mobile-jobs",
-   "s": "Today's top 10,000+ Tecno Mobile jobs in United States. Leverage your professional network, and get hired. New Tecno Mobile jobs added daily."
-  },
-  {
-   "t": "10,000+ Tecno Mobile Station jobs in Worldwide - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/tecno-mobile-station-jobs-worldwide",
-   "s": "Today's top 10,000+ Tecno Mobile Station jobs in Worldwide. Leverage your professional network, and get hired. New Tecno Mobile Station jobs added daily."
+   "t": "Tecno Mobile Jobs & Careers - 22 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Tecno-Mobile-Jobs-E1306414.htm",
+   "s": "Search job openings at Tecno Mobile. 22 Tecno Mobile jobs including salaries, ratings, and reviews, posted by Tecno Mobile employees."
   },
   {
    "t": "Jobs at Telefónica Global",
@@ -112,19 +68,9 @@
    "s": "Apply online for jobs at Telefónica - Technology Jobs, Engineering Jobs, Video & Media Jobs, Ecommerce Jobs, Sales Jobs, Customer Service Jobs, Business Intelli"
   },
   {
-   "t": "Tecno Mobile Jobs and Careers | Indeed.com",
-   "u": "https://ph.indeed.com/cmp/Tecno-Mobile-551530fe/jobs",
-   "s": "10 Tecno Mobile jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
-  },
-  {
-   "t": "Tecno Mobile Careers | Levels.fyi",
-   "u": "https://www.levels.fyi/companies/tecno-mobile",
-   "s": "Everything you need to know about Tecno Mobile including salaries, levels, benefits, and more."
-  },
-  {
-   "t": "Experienced | Tencent Careers",
-   "u": "https://careers.tencent.com/en-us/jobopportunity.html",
-   "s": "Discover career opportunities at Tencent with job listings and applications for various cities."
+   "t": "Tecno Mobile Jobs | Indeed.com",
+   "u": "https://ph.indeed.com/browsejobs/Company/Tecno-Mobile",
+   "s": "Tecno Mobile jobs Tecno Mobile Jobs Jobs by Location manila national capital region pasay quezon city"
   },
   {
    "t": "TECNO Mobile Careers and Employment | Indeed.com",
@@ -132,22 +78,67 @@
    "s": "Find out what works well at TECNO Mobile from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare "
   },
   {
-   "t": "TECNO MOBILE Careers (2026) - Bayt.com",
-   "u": "https://www.bayt.com/en/company/tecno-mobile-1835284/",
-   "s": "TECNO puts heavy consideration on the customers experience and endeavours to provide consumers with the most suitable products for their environment by adopting"
+   "t": "Tecno Mobile Jobs & Careers - 22 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Tecno-Mobile-Jobs-E1306414.htm",
+   "s": "Search job openings at Tecno Mobile. 22 Tecno Mobile jobs including salaries, ratings, and reviews, posted by Tecno Mobile employees."
   },
   {
-   "t": "Tecno Mobile Jobs & Careers - 2 Open Positions | Glassdoor",
-   "u": "https://www.glassdoor.com/Jobs/Tecno-Mobile-Marketing-Jobs-EI_IE1306414.0,12_KO13,22.htm",
-   "s": "Search job openings at Tecno Mobile. 2 Tecno Mobile jobs including salaries, ratings, and reviews, posted by Tecno Mobile employees."
+   "t": "Tecno Mobile Jobs in United States (10,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tecno-mobile-jobs",
+   "s": "Today's top 10,000+ Tecno Mobile jobs in United States. Leverage your professional network, and get hired. New Tecno Mobile jobs added daily."
+  },
+  {
+   "t": "TECNO MOBILE Careers (2026) - Bayt.com",
+   "u": "https://www.bayt.com/en/company/tecno-mobile-1835284/",
+   "s": "TECNO was the first dual SIM mobile phone brand to hit the market in Africa, and staying true to the maxim \"think globally, act locally\", TECNO has achieved gre"
+  },
+  {
+   "t": "Jobs at Telefónica Global",
+   "u": "https://jobs.telefonica.com/?locale=en_US",
+   "s": "Apply online for jobs at Telefónica - Technology Jobs, Engineering Jobs, Video & Media Jobs, Ecommerce Jobs, Sales Jobs, Customer Service Jobs, Business Intelli"
+  },
+  {
+   "t": "TECNO Mobile Global - LinkedIn",
+   "u": "https://www.linkedin.com/company/tecno-mobile-global",
+   "s": "TECNO Mobile Global Computers and Electronics Manufacturing About us Welcome to the official TECNO Mobile page on LinkedIn."
   },
   {
    "t": "Tecno Mobile Jobs and Careers | Indeed.com",
    "u": "https://ph.indeed.com/cmp/Tecno-Mobile-551530fe/jobs",
-   "s": "10 Tecno Mobile jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+   "s": "9 Tecno Mobile jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "1,000+ Tecno+mobile+limited jobs in India - LinkedIn India",
+   "u": "https://in.linkedin.com/jobs/tecno%2Bmobile%2Blimited-jobs",
+   "s": "Today's top 1,000+ Tecno+mobile+limited jobs in India. Leverage your professional network, and get hired. New Tecno+mobile+limited jobs added daily."
+  },
+  {
+   "t": "TECNO Mobile Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Tecno-Mobile",
+   "s": "Find out what works well at TECNO Mobile from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare "
+  },
+  {
+   "t": "Tecno Mobile Jobs in United States (10,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tecno-mobile-jobs",
+   "s": "Today's top 10,000+ Tecno Mobile jobs in United States. Leverage your professional network, and get hired. New Tecno Mobile jobs added daily."
+  },
+  {
+   "t": "Tecno Mobile Jobs & Careers - 22 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Tecno-Mobile-Jobs-E1306414.htm",
+   "s": "Search job openings at Tecno Mobile. 22 Tecno Mobile jobs including salaries, ratings, and reviews, posted by Tecno Mobile employees."
+  },
+  {
+   "t": "TECNO MOBILE Careers (2026) - Bayt.com",
+   "u": "https://www.bayt.com/en/company/tecno-mobile-1835284/",
+   "s": "TECNO puts heavy consideration on the customers experience and endeavours to provide consumers with the most suitable products for their environment by adopting"
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://jobs.tecnoblocks.com/dashboard",
+  "platform": "custom",
+  "title": "Tecno Job Board - Find Your Next Opportunity"
+ },
+ "verdict": "custom_surface"
 }

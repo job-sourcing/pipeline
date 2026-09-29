@@ -2,10 +2,149 @@
  "brand": "Yunnan People's Publishing House",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:48:13.111Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:41:11.243Z",
+ "candidates": [
+  {
+   "url": "https://www.isacjobs.com/job-location/yunnan/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5723,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse the latest jobs in Yunnan Province for foreigners, including teaching and company jobs for international jobseekers.",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://baike.baidu.com/en/item/Yunnan%20People%27s%20Publishing%20House/933102",
+   "title": "Yunnan People&#x27;s Publishing House（An affiliate of Yunnan Publishing Group.）_Baiduwiki",
+   "status": 200,
+   "bytes": 144061,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Yunnan People's Publishing House is affiliated with Yunnan Publishing Group Co., Ltd. It is the only comprehensive publishing house in Yunnan Province, with a h",
+   "backend": "direct"
+  },
+  {
+   "url": "https://rmrbhr.peopledaily.com.cn/",
+   "title": "",
+   "status": 200,
+   "bytes": 1835,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "更多招聘服务信息 请微信扫码关注",
+   "backend": "firecrawl"
+  }
+ ],
+ "results": [
+  {
+   "t": "www.ynpph.com.cn",
+   "u": "http://www.ynpph.com.cn/",
+   "s": "正在为您跳转到访问页面...... 如果您的浏览器没有自动跳转，请检查以下设置。 (1)请确保浏览器没有禁止发送Cookie。 (2)请 ..."
+  },
+  {
+   "t": "Yunnan People's Publishing House - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Yunnan_People%27s_Publishing_House",
+   "s": "Yunnan People's Publishing House (Chinese: 云南人民出版社) is a publishing company based in Kunming, Yunnan, China, established on December 25, 1950. It is the only ge"
+  },
+  {
+   "t": "云南出版集团所属单位2024年公开招聘工作人员公告",
+   "u": "https://www.ynpublish.com/news-3bfe4d7f7f6d4cc080624c001927b7be",
+   "s": "为满足高质量发展需求，进一步加强人才队伍建设，云南出版集团所属云南人民出版社有限责任公司等7家二级企业2024年将面向社会公开招聘工作人员44名。现将有关事项公告如下。"
+  },
+  {
+   "t": "Yunnan People's Publishing House（An affiliate of ... - 百度百科",
+   "u": "https://baike.baidu.com/en/item/Yunnan%20People%27s%20Publishing%20House/933102",
+   "s": "Yunnan People's Publishing House is affiliated with Yunnan Publishing Group Co., Ltd. It is the only comprehensive publishing house in Yunnan Province, with a h"
+  },
+  {
+   "t": "人民日报社公开招聘-首页",
+   "u": "https://rmrbhr.peopledaily.com.cn/",
+   "s": "更多招聘服务信息 请微信扫码关注"
+  },
+  {
+   "t": "校园招聘",
+   "u": "https://join.yuewen.com/school",
+   "s": "毫不犹豫地选择阅文，很大一部分原因是源于我自己对文化以及IP产业的喜爱。阅文一直在IP孵化方面保持着领先地位，不仅有《庆余年》《赘婿》这样的优质影视作品，在许多动画平台上，阅文IP的动漫播放量也跻身前列。我相信在这些亮眼成绩的背后，一定有着优秀的人才，以及体系化的工作方法……"
+  },
+  {
+   "t": "2026云南出版集团招聘信息",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=70865346cf57d6162d2e1956c6a0d624",
+   "s": "除云南出版印刷集团有限责任公司公务用车购置等采购项目外，云南出版集团有限责任公司 2026 年招聘工作也在同步进行，涵盖校园招聘及下属子公司社会招聘，详细信息可通过集团官网（www.ynpublish.com）及高校就业平台查询。"
+  },
+  {
+   "t": "Job Board - Publishers Marketplace",
+   "u": "https://www.publishersmarketplace.com/jobs/",
+   "s": "Job Board The definitive source for jobs in publishing. For job seekers we offer a free search for the most, best, and most recently posted publishing jobs in t"
+  },
+  {
+   "t": "www.ynpph.com.cn",
+   "u": "http://www.ynpph.com.cn/",
+   "s": "正在为您跳转到访问页面...... 如果您的浏览器没有自动跳转，请检查以下设置。 (1)请确保浏览器没有禁止发送Cookie。 (2)请 ..."
+  },
+  {
+   "t": "云南出版集团所属单位2024年公开招聘工作人员公告",
+   "u": "https://www.ynpublish.com/news-3bfe4d7f7f6d4cc080624c001927b7be",
+   "s": "为满足高质量发展需求，进一步加强人才队伍建设，云南出版集团所属云南人民出版社有限责任公司等7家二级企业2024年将面向社会公开招聘工作人员44名。现将有关事项公告如下。"
+  },
+  {
+   "t": "Book Industry and Publishing Jobs",
+   "u": "https://jobs.bisg.org/",
+   "s": "The BISG Job Board serves as a dedicated job portal for the publishing industry. Jobs seekers: easily search and apply to book and publishing jobs."
+  },
+  {
+   "t": "Job Board - Publishers Marketplace",
+   "u": "https://www.publishersmarketplace.com/jobs/",
+   "s": "The definitive source for jobs in publishing. For job seekers we offer a free search for the most, best, and most recently posted publishing jobs in the industr"
+  },
+  {
+   "t": "2026云南出版集团招聘信息",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=70865346cf57d6162d2e1956c6a0d624",
+   "s": "除云南出版印刷集团有限责任公司公务用车购置等采购项目外，云南出版集团有限责任公司 2026 年招聘工作也在同步进行，涵盖校园招聘及下属子公司社会招聘，详细信息可通过集团官网（www.ynpublish.com）及高校就业平台查询。"
+  },
+  {
+   "t": "Jobs in Kunming - Job Opportunities in Kunming for Expats",
+   "u": "https://jobs.echinacities.com/Kunming-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Kunming with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL,"
+  },
+  {
+   "t": "Jobs Classifieds - GoKunming",
+   "u": "https://www.gokunming.com/en/classifieds/folder/1/jobs",
+   "s": "GoKunming is the online resource for Yunnan Province and its capital city, Kunming. We offer up-to-date information regarding events, local businesses, news, ni"
+  },
+  {
+   "t": "All jobs in Kunming | JobsCina.com",
+   "u": "https://www.jobscina.com/jobs-in-Kunming",
+   "s": "Kunming international school, High school DP English teacher position is available. starting ASAP. Work time: around 8am to 4:30pm, Mon to Fri. Salary: 22000 to"
+  },
+  {
+   "t": "Job Board - Publishers Marketplace",
+   "u": "https://www.publishersmarketplace.com/jobs/",
+   "s": "The definitive source for jobs in publishing. For job seekers we offer a free search for the most, best, and most recently posted publishing jobs in the industr"
+  },
+  {
+   "t": "SLP Incheon Namdong Hiring English Teachers | Korea, Republic of ...",
+   "u": "https://www.theworknplay.com/Work/Detail/Job/222315",
+   "s": "SLP is looking for qualified teachers to serve as kindergarten and elementary English teachers. As a kindergarten and elementary school teacher at SLP, you will"
+  },
+  {
+   "t": "Jobs in Incheon hiring English speakers (6 live) | Seoulstart",
+   "u": "https://seoulstart.com/jobs/in/incheon",
+   "s": "12 jobs in Incheon, Korea right now have English-friendly job descriptions or are tagged for foreign hires. Incheon hosts a smaller but growing slice of Korea's"
+  },
+  {
+   "t": "云南出版集团所属单位2024年公开招聘工作人员公告",
+   "u": "https://www.ynpublish.com/news-3bfe4d7f7f6d4cc080624c001927b7be",
+   "s": "为满足高质量发展需求，进一步加强人才队伍建设，云南出版集团所属云南人民出版社有限责任公司等7家二级企业2024年将面向社会公开招聘工作人员44名。现将有关事项公告如下。"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

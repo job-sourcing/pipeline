@@ -8,3 +8,4 @@ location entries total (sum nLocations): 164
 similar-job edges: 0
 facet-tagged rows: workerSubType=0 jobFamilyGroup=12 (from facet_tags.jsonl)
 facet tag coverage: 12/164 rows (152 untagged)
+h1b wage bands: 6/164 rows banded (0 title+state, 6 title-only) from 53 LCA filings → foxconnfii_us_fulltime.h1b_lca.csv

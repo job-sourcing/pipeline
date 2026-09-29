@@ -2,10 +2,154 @@
  "brand": "League of Legends",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:22:03.896Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:32:44.350Z",
+ "candidates": [
+  {
+   "url": "https://esportsjobs.quest/league-of-legends-jobs",
+   "title": "League of Legends Jobs 🎮 LoL Esports Careers | Riot Games",
+   "status": 200,
+   "bytes": 103243,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "League of Legends is the world's biggest esport. From Riot Games to professional teams competing in the LEC, LCS, and LCK, discover careers in the LoL ecosystem",
+   "backend": "direct"
+  },
+  {
+   "url": "https://lolscape.com/articles/career-paths-league-of-legends/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5872,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover diverse career paths within the League of Legends ecosystem. From game development to esports management, learn how to forge your career in this vibran",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://curry.gg/en/league-of-legends/offers",
+   "title": "",
+   "status": 200,
+   "bytes": 27803,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Curry has all the current LoL job offers in one spot. Search in League of Legends recruit offers and join your next team.",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Riot Games",
+   "u": "https://www.riotgames.com/en/work-with-us/jobs",
+   "s": "Los Angeles, USA Manager, Software Engineering - League of Legends, Alternate Play Modes Software Engineering Group League of Legends Los Angeles, USA Manager, "
+  },
+  {
+   "t": "League of Legends Jobs LoL Esports Careers | Riot Games",
+   "u": "https://esportsjobs.quest/league-of-legends-jobs",
+   "s": "League of Legends is the world's biggest esport. From Riot Games to professional teams competing in the LEC, LCS, and LCK, discover careers in the LoL ecosystem"
+  },
+  {
+   "t": "Work With Us | Riot Games",
+   "u": "https://www.riotgames.com/en/work-with-us",
+   "s": "Production Group Riot Game Operations Los Angeles, USA Principal Concept Artist, Environment - League of Legends Art League of Legends Los Angeles, USA"
+  },
+  {
+   "t": "Riot Games: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/riot-games/jobs",
+   "s": "From our first title, League of Legends, to 2020's VALORANT; we have strived to evolve the community with growth in Esports, and expansion from games into enter"
+  },
+  {
+   "t": "Riot Games League Of Legends Jobs in United States (4,000 ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/riot-games-league-of-legends-jobs",
+   "s": "Today's top 4,000+ Riot Games League Of Legends jobs in United States. Leverage your professional network, and get hired. New Riot Games League Of Legends jobs "
+  },
+  {
+   "t": "Every League of Legends (LoL) team recruitment offers and jobs - Curry.gg",
+   "u": "https://curry.gg/en/league-of-legends/offers",
+   "s": "Curry has all the current LoL job offers in one spot. Search in League of Legends recruit offers and join your next team."
+  },
+  {
+   "t": "Career Paths in the League of Legends Gaming World",
+   "u": "https://lolscape.com/articles/career-paths-league-of-legends/",
+   "s": "Discover diverse career paths within the League of Legends ecosystem. From game development to esports management, learn how to forge your career in this vibran"
+  },
+  {
+   "t": "75 League of Legends Jobs, Employment - Indeed",
+   "u": "https://www.indeed.com/q-League-of-Legends-jobs.html",
+   "s": "78 League of Legends jobs available on Indeed.com. Apply to Head Coach, Senior Sales Director, Director of Food and Beverage and more!"
+  },
+  {
+   "t": "Careers - Riot Games",
+   "u": "https://www.riotgames.com/en/work-with-us/jobs",
+   "s": "Production Group Riot Game Operations Los Angeles, USA Principal Concept Artist, Environment - League of Legends Art League of Legends Los Angeles, USA"
+  },
+  {
+   "t": "League of Legends Jobs LoL Esports Careers | Riot Games",
+   "u": "https://esportsjobs.quest/league-of-legends-jobs",
+   "s": "Riot Games - The Publisher Riot Games develops League of Legends and runs all official LoL esports leagues. They hire across game development, esports operation"
+  },
+  {
+   "t": "Riot Games Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/Riot-Games-jobs",
+   "s": "Find your ideal job at Jobstreet with 20 Riot Games jobs found in Singapore. View all our Riot Games vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Work With Us | Riot Games",
+   "u": "https://www.riotgames.com/en/work-with-us",
+   "s": "Production Group Riot Game Operations Los Angeles, USA Principal Concept Artist, Environment - League of Legends Art League of Legends Los Angeles, USA"
+  },
+  {
+   "t": "Riot Games League Of Legends Jobs in United States (4,000 ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/riot-games-league-of-legends-jobs",
+   "s": "Today's top 4,000+ Riot Games League Of Legends jobs in United States. Leverage your professional network, and get hired. New Riot Games League Of Legends jobs "
+  },
+  {
+   "t": "League Of Legends Jobs in United States (880 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/league-of-legends-jobs",
+   "s": "Today's top 880 League Of Legends jobs in United States. Leverage your professional network, and get hired. New League Of Legends jobs added daily."
+  },
+  {
+   "t": "League of Legends Game Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-league-of-legends-game-jobs.html",
+   "s": "Browse 67 League of Legends Game jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Every League of Legends (LoL) team recruitment offers and jobs - Curry.gg",
+   "u": "https://curry.gg/en/league-of-legends/offers",
+   "s": "Curry has all the current LoL job offers in one spot. Search in League of Legends recruit offers and join your next team."
+  },
+  {
+   "t": "Careers - Riot Games",
+   "u": "https://www.riotgames.com/en/work-with-us/jobs",
+   "s": "Los Angeles, USA Manager, Software Engineering - League of Legends, Alternate Play Modes Software Engineering Group League of Legends Los Angeles, USA Manager, "
+  },
+  {
+   "t": "Work With Us | Riot Games",
+   "u": "https://www.riotgames.com/en/work-with-us",
+   "s": "We turn passion into play. We're looking for S-tier pros to join us in shaping unforgettable experiences for players."
+  },
+  {
+   "t": "League Of Legends Jobs in United States (880 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/league-of-legends-jobs",
+   "s": "Today's top 880 League Of Legends jobs in United States. Leverage your professional network, and get hired. New League Of Legends jobs added daily."
+  },
+  {
+   "t": "League of Legends Jobs LoL Esports Careers | Riot Games",
+   "u": "https://esportsjobs.quest/league-of-legends-jobs",
+   "s": "Home / Esports Jobs /League of Legends League of Legends Jobs: LoL Esports Careers League of Legends is the world's biggest esport. From Riot Games to professio"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://esportsjobs.quest/league-of-legends-jobs",
+  "platform": "custom",
+  "title": "League of Legends Jobs 🎮 LoL Esports Careers | Riot Games"
+ },
+ "verdict": "custom_surface"
 }

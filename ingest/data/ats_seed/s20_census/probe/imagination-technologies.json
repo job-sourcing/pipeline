@@ -2,10 +2,148 @@
  "brand": "Imagination Technologies",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:21:48.045Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:32:10.526Z",
+ "candidates": [
+  {
+   "url": "https://www.imaginationtech.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 108802,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "The people at Imagination enable the tech that's shaping our world, from virtual reality to smart phones, autonomous cars to space probes.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.imaginationtech.com/careers/vacancies/",
+   "title": "",
+   "status": 200,
+   "bytes": 107095,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "A career at Imagination means you are part of constant innovation; collaborating with the most brilliant minds to push the limits of technology.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://imagination.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 16898,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join a culture of independent creativity with offices across the globe. Our roles offer bespoke professional development with lots of incentives. Learn more.",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at Imagination - Imagination",
+   "u": "https://www.imaginationtech.com/careers/",
+   "s": "The people at Imagination enable the tech that's shaping our world, from virtual reality to smart phones, autonomous cars to space probes."
+  },
+  {
+   "t": "Search our jobs - Imagination",
+   "u": "https://www.imaginationtech.com/careers/vacancies/",
+   "s": "A career at Imagination means you are part of constant innovation; collaborating with the most brilliant minds to push the limits of technology."
+  },
+  {
+   "t": "Imagination Technologies: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/imaginationtech/jobs",
+   "s": "Imagination Technologies | 53,330 followers on LinkedIn. #EdgeAI #imgtec #PowerVR #GPU #WeAreImagination | At Imagination, we love engineering the semiconductor"
+  },
+  {
+   "t": "Imagination Technologies: Jobs | LinkedIn",
+   "u": "https://in.linkedin.com/company/imaginationtech/jobs",
+   "s": "Imagination Technologies | 53,182 followers on LinkedIn. #EdgeAI #imgtec #PowerVR #GPU #WeAreImagination | At Imagination, we love engineering the semiconductor"
+  },
+  {
+   "t": "Imagination Technologies Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Imagination-Technologies",
+   "s": "Find out what works well at Imagination Technologies from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insigh"
+  },
+  {
+   "t": "Join a Creative Brand Agency | Careers | Imagination",
+   "u": "https://imagination.com/careers/",
+   "s": "Join a culture of independent creativity with offices across the globe. Our roles offer bespoke professional development with lots of incentives. Learn more."
+  },
+  {
+   "t": "34 Imagination Technologies jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/imagination-technologies-jobs-worldwide?f_C=13326&amp;pageNum=0",
+   "s": "Today's top 34 Imagination Technologies jobs in Worldwide. Leverage your professional network, and get hired. New Imagination Technologies jobs added daily."
+  },
+  {
+   "t": "Imagination Tech (imgtec) - Jobs",
+   "u": "https://careers.pageuppeople.com/mob/774/ci/en/listing/",
+   "s": "Imagination is an industry leader in designing power-efficient and high-performance GPU technology for graphics and compute. This is an opportunity for you to i"
+  },
+  {
+   "t": "Careers at Imagination - Imagination",
+   "u": "https://www.imaginationtech.com/careers/",
+   "s": "The people at Imagination enable the tech that's shaping our world, from virtual reality to smart phones, autonomous cars to space probes."
+  },
+  {
+   "t": "Search our jobs - Imagination",
+   "u": "https://www.imaginationtech.com/careers/vacancies/",
+   "s": "A career at Imagination means you are part of constant innovation; collaborating with the most brilliant minds to push the limits of technology."
+  },
+  {
+   "t": "Imagination Technologies: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/imaginationtech/jobs",
+   "s": "Imagination Technologies | 53,330 followers on LinkedIn. #EdgeAI #imgtec #PowerVR #GPU #WeAreImagination | At Imagination, we love engineering the semiconductor"
+  },
+  {
+   "t": "Imagination Technologies: Jobs | LinkedIn",
+   "u": "https://in.linkedin.com/company/imaginationtech/jobs",
+   "s": "Imagination Technologies | 53,182 followers on LinkedIn. #EdgeAI #imgtec #PowerVR #GPU #WeAreImagination | At Imagination, we love engineering the semiconductor"
+  },
+  {
+   "t": "Imagination Technologies Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Imagination-Technologies",
+   "s": "Find out what works well at Imagination Technologies from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insigh"
+  },
+  {
+   "t": "Imagination Tech (imgtec) - Jobs",
+   "u": "https://careers.pageuppeople.com/mob/774/ci/en/listing/",
+   "s": "Imagination is an industry leader in designing power-efficient and high-performance GPU technology for graphics and compute. This is an opportunity for you to i"
+  },
+  {
+   "t": "Imagination Tech (imgtec) - Jobs - PageUp",
+   "u": "https://careersmanager.pageuppeople.com/mob/774/cw/en/search/",
+   "s": "Engineers at Imagination Technologies are currently designing the world's highest performing graphics processors. We need you to join the Linux driver developme"
+  },
+  {
+   "t": "Imagination Technologies：職缺 | LinkedIn",
+   "u": "https://tw.linkedin.com/company/imaginationtech/jobs",
+   "s": "Imagination Technologies | 53,053 位 LinkedIn 關注者。#EdgeAI #imgtec #PowerVR #GPU #WeAreImagination | At Imagination, we love engineering the semiconductor IP at t"
+  },
+  {
+   "t": "Careers at Imagination - Imagination",
+   "u": "https://www.imaginationtech.com/careers/",
+   "s": "The people at Imagination enable the tech that's shaping our world, from virtual reality to smart phones, autonomous cars to space probes."
+  },
+  {
+   "t": "Search our jobs - Imagination",
+   "u": "https://www.imaginationtech.com/careers/vacancies/",
+   "s": "A career at Imagination means you are part of constant innovation; collaborating with the most brilliant minds to push the limits of technology."
+  },
+  {
+   "t": "Imagination Technologies: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/imaginationtech/jobs",
+   "s": "Imagination Technologies | 53,330 followers on LinkedIn. #EdgeAI #imgtec #PowerVR #GPU #WeAreImagination | At Imagination, we love engineering the semiconductor"
+  },
+  {
+   "t": "Imagination Technologies: Jobs | LinkedIn",
+   "u": "https://in.linkedin.com/company/imaginationtech/jobs",
+   "s": "Imagination Technologies | 53,182 followers on LinkedIn. #EdgeAI #imgtec #PowerVR #GPU #WeAreImagination | At Imagination, we love engineering the semiconductor"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

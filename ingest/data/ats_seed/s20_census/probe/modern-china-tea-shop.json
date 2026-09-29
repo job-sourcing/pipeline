@@ -2,10 +2,148 @@
  "brand": "Modern China Tea Shop",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:39:49.780Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:43:09.408Z",
+ "candidates": [
+  {
+   "url": "https://bossjob.ph/en-us/company/modern-china",
+   "title": "",
+   "status": 200,
+   "bytes": 104683,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover career opportunities at Modern China, learn more about Modern China by reading employee reviews, benefits and culture on Bossjob!",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.modernchinacafe.com/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 858684,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Looking for a career at Modern China? See our job application.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.cbinsights.com/company/modern-china-tea-shop",
+   "title": "Modern China Tea Shop - Products, Competitors, Financials, Employees, Headquarters Locations",
+   "status": 200,
+   "bytes": 110206,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Modern China Tea Shop is an online streaming platform that offers content including films, television series, short-form content, and series in genres such as c",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Modern China Tea Shop - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Modern_China_Tea_Shop",
+   "s": "Modern China Tea Shop[1] (Chinese: 茶颜悦色; pinyin: Cháyán Yuèsè), also known as Sexy Tea, is a Chinese milk tea chain based in Changsha, Hunan Province. Milk tea "
+  },
+  {
+   "t": "Modern China Tea Shop - CB Insights",
+   "u": "https://www.cbinsights.com/company/modern-china-tea-shop",
+   "s": "Modern China Tea Shop is an online streaming platform that offers content including films, television series, short-form content, and series in genres such as c"
+  },
+  {
+   "t": "Careers - chagee.us",
+   "u": "https://www.chagee.us/careers",
+   "s": "The Modern Tea Movement starts with you. At CHAGEE, we're connecting the world through modern tea — making friends, pouring tea, and building careers along the "
+  },
+  {
+   "t": "Modern China Tea Shop - Wikiwand",
+   "u": "https://www.wikiwand.com/en/Modern_China_Tea_Shop",
+   "s": "Modern China Tea Shop, also known as Sexy Tea, is a Chinese milk tea chain based in Changsha, Hunan Province."
+  },
+  {
+   "t": "800 Tea Shop Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Tea-Shop-jobs.html",
+   "s": "871 Tea Shop jobs available on Indeed.com. Apply to Barista, Server, Food Runner and more!"
+  },
+  {
+   "t": "Working at Modern China | Bossjob",
+   "u": "https://bossjob.ph/en-us/company/modern-china",
+   "s": "Discover career opportunities at Modern China, learn more about Modern China by reading employee reviews, benefits and culture on Bossjob!"
+  },
+  {
+   "t": "Modern Tea Shop Nyc jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/modern-tea-shop-nyc-jobs",
+   "s": "Today's top Modern Tea Shop Nyc jobs in United States. Leverage your professional network, and get hired. New Modern Tea Shop Nyc jobs added daily."
+  },
+  {
+   "t": "Modern Tea - Modern Tea co.,Ltd | 领英 - 领英 (中国)",
+   "u": "https://cn.linkedin.com/in/modern-tea-aa6a9281",
+   "s": "工作经历: Modern Tea co.,Ltd · 地点: 中国。在领英 (一个拥有 10 亿会员的职业社区) 查看Modern Tea的职业档案。"
+  },
+  {
+   "t": "Modern Tea Shop Jobs in United States (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/modern-tea-shop-jobs?f_EA=true",
+   "s": "Today's top 1,000+ Modern Tea Shop jobs in United States. Leverage your professional network, and get hired. New Modern Tea Shop jobs added daily."
+  },
+  {
+   "t": "Modern China Tea Shop - CB Insights",
+   "u": "https://www.cbinsights.com/company/modern-china-tea-shop",
+   "s": "Modern China Tea Shop is an online streaming platform that offers content including films, television series, short-form content, and series in genres such as c"
+  },
+  {
+   "t": "Careers - chagee.us",
+   "u": "https://www.chagee.us/careers",
+   "s": "The Modern Tea Movement starts with you. At CHAGEE, we're connecting the world through modern tea — making friends, pouring tea, and building careers along the "
+  },
+  {
+   "t": "Modern China Tea Shop - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Modern_China_Tea_Shop",
+   "s": "Modern China Tea Shop[1] (Chinese: 茶颜悦色; pinyin: Cháyán Yuèsè), also known as Sexy Tea, is a Chinese milk tea chain based in Changsha, Hunan Province. Milk tea "
+  },
+  {
+   "t": "800 Tea Shop Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Tea-Shop-jobs.html",
+   "s": "871 Tea Shop jobs available on Indeed.com. Apply to Barista, Server, Food Runner and more!"
+  },
+  {
+   "t": "0 Modern China Tea Shop Listing 2025 jobs in United States",
+   "u": "https://www.linkedin.com/jobs/modern-china-tea-shop-listing-2025-jobs",
+   "s": "Today's top 0 Modern China Tea Shop Listing 2025 jobs in United States. Leverage your professional network, and get hired. New Modern China Tea Shop Listing 202"
+  },
+  {
+   "t": "Milk Tea Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Milk-Tea-jobs.html",
+   "s": "Prepare tea, milk tea, fruit tea, specialty beverages, toppings, and other menu items according to company recipes and standards."
+  },
+  {
+   "t": "China Foreigner Jobs - Jobs in China",
+   "u": "https://www.isacjobs.com/",
+   "s": "Latest jobs in China for foreigners in 2026. Find the newest professional and teaching in China jobs tailored for international talents."
+  },
+  {
+   "t": "JOBS - Modern China",
+   "u": "https://www.modernchinacafe.com/jobs",
+   "s": "Looking for a career at Modern China? See our job application."
+  },
+  {
+   "t": "eChinaCareers",
+   "u": "https://echinacareers.com/",
+   "s": "eChinaCareers is the first and only website designed solely to help foreign talents find their dream job in China. Our jobs all specifically recruit at the inte"
+  },
+  {
+   "t": "Now Hiring: 100 Chinese Tea Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Chinese-Tea-jobs.html",
+   "s": "100 Chinese Tea jobs. Apply to Barista, Retail Sales Associate, Farmer and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Careers - chagee.us",
+   "u": "https://www.chagee.us/careers",
+   "s": "The Modern Tea Movement starts with you. At CHAGEE, we're connecting the world through modern tea — making friends, pouring tea, and building careers along the "
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

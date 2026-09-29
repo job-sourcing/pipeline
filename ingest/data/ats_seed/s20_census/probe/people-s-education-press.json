@@ -2,10 +2,163 @@
  "brand": "People's Education Press",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:33:19.435Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:30:40.764Z",
+ "candidates": [
+  {
+   "url": "https://www.people.inc/careers",
+   "title": "Career Opportunities | People Inc",
+   "status": 200,
+   "bytes": 173700,
+   "markers": [
+    "workday",
+    "jobvite"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore career opportunities available at People Inc. and join a team shaping the future of media and publishing",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://populationeducation.org/about-us/jobs/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5840,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Jobs Curriculum Development Fellow - 6-month, paid, full-time position; starting July 26, 2026 Student Engagement Fellow - 6-month, paid, full-time position; st",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://www.proliteracy.org/careers/",
+   "title": "Careers - ProLiteracy",
+   "status": 200,
+   "bytes": 67608,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Education leads to equal opportunities, liberties, and protection under the law. For that, we must stand against bigotry, racism, and hatred. The ProLiteracy Hu",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "5,000+People's Education Press Jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/people%27s-education-press-jobs",
+   "s": "Today's top 5,000+ People's Education Press jobs in United States. Leverage your professional network, and get hired. New People's Education Press jobs added da"
+  },
+  {
+   "t": "Careers - ProLiteracy",
+   "u": "https://www.proliteracy.org/careers/",
+   "s": "Education leads to equal opportunities, liberties, and protection under the law. For that, we must stand against bigotry, racism, and hatred. The ProLiteracy Hu"
+  },
+  {
+   "t": "\u4eba\u6c11\u6559\u80b2\u51fa\u7248\u793e People's Education Press - LinkedIn",
+   "u": "https://www.linkedin.com/company/%E4%BA%BA%E6%B0%91%E6%95%99%E8%82%B2%E5%87%BA%E7%89%88%E7%A4%BE",
+   "s": "The People's Education Press (PEP) is a publishing house under the leadership of the Ministry of Education (MOE) of the People's Republic of China. With over 60"
+  },
+  {
+   "t": "Career Opportunities | People Inc",
+   "u": "https://www.people.inc/careers",
+   "s": "Explore career opportunities available at People Inc. and join a team shaping the future of media and publishing"
+  },
+  {
+   "t": "Working at People's Education Press | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-People-s-Education-Press-EI_IE3527409.11,35.htm",
+   "s": "See what employees say it's like to work at People's Education Press. Salaries, reviews, and more - all posted by employees working at People's Education Press."
+  },
+  {
+   "t": "Careers - Amplify",
+   "u": "https://amplify.com/careers/",
+   "s": "Leadership Amplify's leadership includes executives and board members from the fields of education, technology, design, business, and media."
+  },
+  {
+   "t": "Join Our Team - Macmillan Publishers",
+   "u": "https://us.macmillan.com/careers/",
+   "s": "Career Opportunities At Macmillan, we come together to publish a wide variety of books that entertain, educate, and challenge our readers. Explore our current c"
+  },
+  {
+   "t": "Jobs and Careers at PopEd, K-12 Program - Population Education",
+   "u": "https://populationeducation.org/about-us/jobs/",
+   "s": "Jobs Curriculum Development Fellow - 6-month, paid, full-time position; starting July 26, 2026 Student Engagement Fellow - 6-month, paid, full-time position; st"
+  },
+  {
+   "t": "5,000+People's Education Press Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/people%27s-education-press-jobs",
+   "s": "Today's top 5,000+ People's Education Press jobs in United States. Leverage your professional network, and get hired. New People's Education Press jobs added da"
+  },
+  {
+   "t": "Jobs and Careers at PopEd, K-12 Program - Population Education",
+   "u": "https://populationeducation.org/about-us/jobs/",
+   "s": "Jobs Curriculum Development Fellow - 6-month, paid, full-time position; starting July 26, 2026 Student Engagement Fellow - 6-month, paid, full-time position; st"
+  },
+  {
+   "t": "Home | Pearson",
+   "u": "https://pearson.jobs/",
+   "s": "Our Purpose At Pearson, our purpose is to help people realize the life they imagine through learning. We're a place where talented people with different viewpoi"
+  },
+  {
+   "t": "\u4eba\u6c11\u6559\u80b2\u51fa\u7248\u793e People's Education Press - LinkedIn",
+   "u": "https://www.linkedin.com/company/%E4%BA%BA%E6%B0%91%E6%95%99%E8%82%B2%E5%87%BA%E7%89%88%E7%A4%BE",
+   "s": "The People's Education Press (PEP) is a publishing house under the leadership of the Ministry of Education (MOE) of the People's Republic of China. With over 60"
+  },
+  {
+   "t": "Career & Job Opportunities - People Inc",
+   "u": "https://www.people.inc/careers",
+   "s": "Explore career opportunities available at People Inc. and join a team shaping the future of media and publishing"
+  },
+  {
+   "t": "0 \u4eba\u6c11\u6559\u80b2\u51fa\u7248\u793e People's Education Press jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/%E4%BA%BA%E6%B0%91%E6%95%99%E8%82%B2%E5%87%BA%E7%89%88%E7%A4%BE-people%27s-education-press-jobs-worldwide",
+   "s": "Today's top 0 \u4eba\u6c11\u6559\u80b2\u51fa\u7248\u793e People's Education Press jobs in Worldwide. Leverage your professional network, and get hired."
+  },
+  {
+   "t": "\u5b54\u5b50\u5b66\u9662\u00d7\u4eba\u6c11\u6559\u80b2\u51fa\u7248\u793e",
+   "u": "https://ci.cn/en/PEP",
+   "s": "Founded in 1950, People's Education Press (PEP) is a large-scale professional publisher under the Ministry of Education of China. It is mainly engaged in the re"
+  },
+  {
+   "t": "OUP Careers | Home",
+   "u": "https://careers.oup.com/",
+   "s": "Careers beyond definition We are Oxford University Press. Thousands of brilliant minds, working together to champion research, foster learning, and unlock poten"
+  },
+  {
+   "t": "5,000+People's Education Press Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/people%27s-education-press-jobs",
+   "s": "Today's top 5,000+ People's Education Press jobs in United States. Leverage your professional network, and get hired. New People's Education Press jobs added da"
+  },
+  {
+   "t": "0 \u4eba\u6c11\u6559\u80b2\u51fa\u7248\u793e People's Education Press jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/%E4%BA%BA%E6%B0%91%E6%95%99%E8%82%B2%E5%87%BA%E7%89%88%E7%A4%BE-people%27s-education-press-jobs-worldwide?f_C=6669488",
+   "s": "Leverage your professional network, and get hired. New \u4eba\u6c11\u6559\u80b2\u51fa\u7248\u793e People's Education Press jobs added daily."
+  },
+  {
+   "t": "Jobs in Seoul hiring English speakers (514 live) | Seoulstart",
+   "u": "https://seoulstart.com/jobs/in/seoul",
+   "s": "1215 jobs in Seoul, Korea right now have English-friendly job descriptions or are tagged for foreign hires. Seoul holds the bulk of Korea's foreigner-friendly h"
+  },
+  {
+   "t": "OUP Careers | Home",
+   "u": "https://careers.oup.com/",
+   "s": "Careers beyond definition We are Oxford University Press. Thousands of brilliant minds, working together to champion research, foster learning, and unlock poten"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.people.inc/careers",
+  "platform": "workday",
+  "title": "Career Opportunities | People Inc"
+ },
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "people.inc = People Inc US disability services, not the PRC textbook publisher",
+  "ts": "2026-09-29T04:43:56.028997Z",
+  "by": "S21 retry-wave adjudication"
+ }
 }

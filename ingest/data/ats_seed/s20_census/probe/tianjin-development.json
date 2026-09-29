@@ -2,13 +2,13 @@
  "brand": "Tianjin Development",
  "tier": "lca",
  "lca": "TIANJIN BOND USA, LLC",
- "ts": "2026-09-27T08:09:16.617Z",
+ "ts": "2026-09-29T04:42:31.721Z",
  "candidates": [
   {
-   "url": "https://jobs.echinacities.com/Tianjin-Developer-jobs.html",
+   "url": "https://jobs.echinacities.com/Tianjin-Developer-jobs.html?lang=en&keyword=Tianjin+Developer",
    "title": "Tianjin Developer Jobs | eChinaJOBs",
    "status": 200,
-   "bytes": 705965,
+   "bytes": 706280,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -25,31 +25,38 @@
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "Explore 52 exciting development experience positions in tianjin! From Haleon to Nxp Semiconductors, find your perfect match today. Competitive salaries and care",
+   "snippet": "Explore 77 exciting development experience positions in tianjin! From Caterpillar to Airbus, find your perfect match today. Competitive salaries and career grow",
    "backend": "direct",
    "cf_challenge": true
   },
   {
-   "url": "https://www.isacjobs.com/job-location/tianjin/",
-   "title": "",
+   "url": "https://tianjinjobs.com/",
+   "title": "Jobs in Tianjin",
    "status": 200,
-   "bytes": 36133,
-   "markers": [
-    "workday",
-    "avature"
-   ],
+   "bytes": 250372,
+   "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "Browse the latest jobs in Tianjin for foreigners, including teaching and company jobs for international jobseekers.",
-   "backend": "zenrows"
+   "snippet": "We Also Provide Ongoing Professional Development Opportunities And Opportunities For Advancement. **Job Location:** This Position Is Based In Tianjin, China, An",
+   "backend": "direct"
   }
  ],
  "results": [
   {
+   "t": "Tianjin Developer Jobs | eChinaJOBs",
+   "u": "https://jobs.echinacities.com/Tianjin-Developer-jobs.html?lang=en&keyword=Tianjin+Developer",
+   "s": "eChinaJOBs Tianjin Developer jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching"
+  },
+  {
    "t": "Tianjin Development Career: Working at Tianjin Development",
    "u": "https://www.glassdoor.co.uk/Overview/Working-at-Tianjin-Development-EI_IE41084.11,30.htm",
    "s": "What is it really like to work at Tianjin Development? What do employees say about pay and career opportunities? Discover anonymous reviews now!"
+  },
+  {
+   "t": "Development Experience 招聘 在 Tianjin (Hiring near me) | Recruit.net",
+   "u": "https://cn.recruit.net/search-development-experience-jobs-tianjin",
+   "s": "Explore 77 exciting development experience positions in tianjin! From Caterpillar to Airbus, find your perfect match today. Competitive salaries and career grow"
   },
   {
    "t": "Working at Tianjin Development | Glassdoor",
@@ -57,9 +64,19 @@
    "s": "See what employees say it's like to work at Tianjin Development. Salaries, reviews, and more - all posted by employees working at Tianjin Development."
   },
   {
-   "t": "Tianjin Developer Jobs | eChinaJOBs",
-   "u": "https://jobs.echinacities.com/Tianjin-Developer-jobs.html",
-   "s": "eChinaJOBs Tianjin Developer jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching"
+   "t": "Jobs in Tianjin",
+   "u": "https://tianjinjobs.com/",
+   "s": "We Also Provide Ongoing Professional Development Opportunities And Opportunities For Advancement. **Job Location:** This Position Is Based In Tianjin, China, An"
+  },
+  {
+   "t": "Jobs & Careers - TEIJIN",
+   "u": "https://www.teijin.com/recruit/",
+   "s": "Jobs & Careers. The Teijin Group is expanding globally. We are committed to providing new and innovative solutions to respond to the needs and challenges of the"
+  },
+  {
+   "t": "Development Projects 招聘 在 Tianjin (Hiring near me) | Recruit.net",
+   "u": "https://cn.recruit.net/search-development-projects-jobs-tianjin",
+   "s": "Explore 31 exciting development projects positions in tianjin! From Lindsay to Kbr,, find your perfect match today. Competitive salaries and career growth await"
   },
   {
    "t": "Tianjin Development Holdings Limited",
@@ -67,33 +84,18 @@
    "s": "Tianjin Development Holdings Limited"
   },
   {
-   "t": "Development Experience 招聘 在 Tianjin (Hiring near me) | Recruit.net",
-   "u": "https://cn.recruit.net/search-development-experience-jobs-tianjin",
-   "s": "Explore 52 exciting development experience positions in tianjin! From Haleon to Nxp Semiconductors, find your perfect match today. Competitive salaries and care"
-  },
-  {
-   "t": "Jobs in Tianjin - China Foreigner Jobs - isacjobs.com",
-   "u": "https://www.isacjobs.com/job-location/tianjin/",
-   "s": "Browse the latest jobs in Tianjin for foreigners, including teaching and company jobs for international jobseekers."
-  },
-  {
-   "t": "Working in Tianjin - Tianjin Guide | Cities Insider - Cities Insider",
-   "u": "https://citiesinsider.com/country/china/tianjin/guides/tianjin-employment/it",
-   "s": "Working in Tianjin Tianjin is a major economic hub in northern China with diverse employment opportunities in manufacturing, IT, logistics, finance, and educati"
-  },
-  {
-   "t": "chinajob.com - Working in China,Start Here! - Jobs",
-   "u": "https://www.chinajob.com/job/index.php?m=s&l=Tianjin",
-   "s": "Explore job opportunities in Tianjin, China through ChinaJOB's comprehensive platform for working and living in China."
-  },
-  {
    "t": "Tianjin Developer Jobs | eChinacities.com",
    "u": "https://jobs.echinacities.com/q-Tianjin-Developer-jobs.html",
-   "s": "806 Tianjin Developer jobs available on eChinacities.com. one search. all jobs."
+   "s": "562 Tianjin Developer jobs available on eChinacities.com. one search. all jobs."
+  },
+  {
+   "t": "Development Experience 招聘 在 Tianjin (Hiring near me) | Recruit.net",
+   "u": "https://cn.recruit.net/search-development-experience-jobs-tianjin",
+   "s": "Explore 77 exciting development experience positions in tianjin! From Caterpillar to Airbus, find your perfect match today. Competitive salaries and career grow"
   },
   {
    "t": "Tianjin Developer Jobs | eChinaJOBs",
-   "u": "https://jobs.echinacities.com/Tianjin-Developer-jobs.html?lang=en&keyword=Tianjin+Developer",
+   "u": "https://jobs.echinacities.com/Tianjin-Developer-jobs.html",
    "s": "eChinaJOBs Tianjin Developer jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching"
   },
   {
@@ -102,24 +104,14 @@
    "s": "Explore job opportunities in Tianjin, China through ChinaJOB's comprehensive platform for working and living in China."
   },
   {
-   "t": "Vishay Jobs | OperatorI - Vishay Jobs",
-   "u": "https://jobs.vishay.com/jobs/operatori-11/",
-   "s": "Job Location: Vishay General Semiconductor (China) Co., Ltd. is one of the TOP 100 enterprises in Tianjin Economic-Technological Development Area, Tianjin, PRC."
-  },
-  {
-   "t": "424 Tianjin jobs - Glassdoor",
-   "u": "https://www.glassdoor.com/Job/tianjin-jobs-SRCH_IL.0,7_IS4172.htm",
-   "s": "Search jobs in Tianjin. Get the right job in Tianjin with company ratings & salaries. 424 open jobs in Tianjin. Get hired!"
-  },
-  {
    "t": "427 Tianjin, Tianjin jobs - Glassdoor",
    "u": "https://www.glassdoor.com/Job/tianjin-jobs-SRCH_IL.0,7_IC2236410.htm",
    "s": "Search jobs in Tianjin, Tianjin. Get the right job in Tianjin with company ratings & salaries. 427 open jobs in Tianjin. Get hired!"
   },
   {
-   "t": "chinajob.com - Working in China,Start Here! - Jobs",
-   "u": "https://www.chinajob.com/job/index.php?d=-1&m=a&l=Tianjin",
-   "s": "China Net for International Talent Job Search Results 263 jobs found on chinajob.com Job Location: Tianjin"
+   "t": "424 Tianjin jobs - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/tianjin-jobs-SRCH_IL.0,7_IS4172.htm",
+   "s": "Search jobs in Tianjin. Get the right job in Tianjin with company ratings & salaries. 424 open jobs in Tianjin. Get hired!"
   },
   {
    "t": "full development Jobs in Tianjin - Rigzone",
@@ -128,26 +120,36 @@
   },
   {
    "t": "chinajob.com - Working in China,Start Here! - Jobs",
+   "u": "https://www.chinajob.com/job/index.php?d=-1&m=a&l=Tianjin",
+   "s": "China Net for International Talent Job Search Results 263 jobs found on chinajob.com Job Location: Tianjin"
+  },
+  {
+   "t": "chinajob.com - Working in China,Start Here! - Jobs",
    "u": "https://www.chinajob.com/job/index.php?m=s&l=Tianjin",
    "s": "Explore job opportunities in Tianjin, China through ChinaJOB's comprehensive platform for working and living in China."
   },
   {
-   "t": "Tianjin Developer Jobs | eChinaJOBs",
-   "u": "https://jobs.echinacities.com/Tianjin-Developer-jobs.html",
-   "s": "eChinaJOBs Tianjin Developer jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching"
+   "t": "chinajob.com - Working in China,Start Here! - Jobs",
+   "u": "https://www.chinajob.com/job/index.php?d=-1&m=a&l=Tianjin",
+   "s": "China Net for International Talent Job Search Results 263 jobs found on chinajob.com Job Location: Tianjin"
   },
   {
-   "t": "Jobs in Tianjin - China Foreigner Jobs - isacjobs.com",
-   "u": "https://www.isacjobs.com/job-location/tianjin/",
-   "s": "Browse the latest jobs in Tianjin for foreigners, including teaching and company jobs for international jobseekers."
+   "t": "Development Experience 招聘 在 Tianjin (Hiring near me) | Recruit.net",
+   "u": "https://cn.recruit.net/search-development-experience-jobs-tianjin",
+   "s": "Explore 77 exciting development experience positions in tianjin! From Caterpillar to Airbus, find your perfect match today. Competitive salaries and career grow"
   },
   {
-   "t": "Tianjin Jobs - for Expats in Tianjin",
-   "u": "https://jobs.echinacities.com/en/Tianjin-jobs",
-   "s": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities."
+   "t": "Development Administration 招聘 在 Tianjin - 10 Job Positions Available",
+   "u": "https://cn.recruit.net/search-development-administration-jobs-tianjin",
+   "s": "Explore 10 exciting development administration positions in tianjin! From Louis Dreyfus Company to Cargo Partner, find your perfect match today. Competitive sal"
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://tianjinjobs.com/",
+  "platform": "custom",
+  "title": "Jobs in Tianjin"
+ },
+ "verdict": "custom_surface"
 }

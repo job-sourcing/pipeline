@@ -2,10 +2,148 @@
  "brand": "Shentong Metro Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:24:08.276Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:38:43.834Z",
+ "candidates": [
+  {
+   "url": "https://grokipedia.com/page/shentong_metro_group",
+   "title": "Shentong Metro Group — Grokipedia",
+   "status": 200,
+   "bytes": 307713,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "The Shanghai Shentong Metro Group Co., Ltd. (Shentong Metro Group) is a state-owned Chinese enterprise headquartered in Shanghai, primarily responsible for the ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.shmetro.com/",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "上海地铁（Shanghai Metro），是指服务于中国上海市和上海大都市圈的城市轨道交通系统，是国际地铁联盟（CoMET）的成员之一 ，其首条线路上海地铁1号线于1993年5月28日正式运营，使上海成为中国内地第三座、南方地区首座开通城市轨道交通的城市。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.shmetro.com/p1/shzp.html",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "上海地铁（Shanghai Metro），是指服务于中国上海市和上海大都市圈的城市轨道交通系统，是国际地铁联盟（CoMET）的成员之一 ，其首条线路上海地铁1号线于1993年5月28日正式运营，使上海成为中国内地第三座、南方地区首座开通城市轨道交通的城市。",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "加入晟通-晟通集团 - chinasnto.com",
+   "u": "http://www.chinasnto.com/index.php/recruitment.html",
+   "s": "工作在晟通 为您提供世界级的舞台 高技术、高成长、高门槛的国家战略新兴产业，万亿蓝海市场 行业全球领导者，参与最前沿的研发创新课题，引领行业发展 参与2060研发，共同寻求企业未来的生存与发展之道路 高技术、高成长、高门槛的国家战略新兴产业，万亿蓝海市场 行业全球领导者，参与 ..."
+  },
+  {
+   "t": "Shentong Metro Group - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Shentong_Metro_Group",
+   "s": "Shanghai Shentong Metro Group Co., Ltd. known as Shentong Metro Group is the operator of the Shanghai Metro and Shanghai Maglev, as well as the parent company o"
+  },
+  {
+   "t": "「上海申通地铁股份有限公司招聘」-boss直聘",
+   "u": "https://www.zhipin.com/companys/55ff96ddecab0bde1Xx_3tu6.html",
+   "s": "申通地铁是上海申通地铁股份有限公司旗下品牌。上海申通地铁股份有限公司创建于1992年06月12日，总部位于中国（上海）自由贸易试验区浦电路489号；全心致力于地铁经营及相关综合开发，轨道交通投资，企业管理咨询，商务咨询，附设分支机构。 等服务。公司性质为其他股份有限公司（上市 ..."
+  },
+  {
+   "t": "Alstom in China",
+   "u": "https://www.alstom.com/alstom-china",
+   "s": "Metro Maintenance Alstom JV SHBRT is providing Shanghai Shentong Metro Group Co., Ltd. 12 years' (on a 6+6 basis) full fleet maintenance service for 246 metro c"
+  },
+  {
+   "t": "Shanghai Shentong Metro Group - ZoomInfo",
+   "u": "https://www.zoominfo.com/c/shanghai-shentong-metro-group-company-ltd/1144351513",
+   "s": "View Shanghai Shentong Metro Group (www.shmetro.com) location in China , revenue, industry and description. Find related and similar companies as well as employ"
+  },
+  {
+   "t": "Shanghai Shentong Metro Company Description - Stock Analysis",
+   "u": "https://stockanalysis.com/quote/sha/600834/company/",
+   "s": "Company profile for Shanghai Shentong Metro Co.,Ltd. (SHA:600834) with a description, list of executives, contact details and other key facts."
+  },
+  {
+   "t": "Shentong Metro Group — Grokipedia",
+   "u": "https://grokipedia.com/page/shentong_metro_group",
+   "s": "The Shanghai Shentong Metro Group Co., Ltd. (Shentong Metro Group) is a state-owned Chinese enterprise headquartered in Shanghai, primarily responsible for the "
+  },
+  {
+   "t": "首页-上海地铁",
+   "u": "https://www.shmetro.com/",
+   "s": "上海地铁（Shanghai Metro），是指服务于中国上海市和上海大都市圈的城市轨道交通系统，是国际地铁联盟（CoMET）的成员之一 ，其首条线路上海地铁1号线于1993年5月28日正式运营，使上海成为中国内地第三座、南方地区首座开通城市轨道交通的城市。"
+  },
+  {
+   "t": "社会招聘-上海地铁",
+   "u": "https://www.shmetro.com/p1/shzp.html",
+   "s": "上海地铁（Shanghai Metro），是指服务于中国上海市和上海大都市圈的城市轨道交通系统，是国际地铁联盟（CoMET）的成员之一 ，其首条线路上海地铁1号线于1993年5月28日正式运营，使上海成为中国内地第三座、南方地区首座开通城市轨道交通的城市。"
+  },
+  {
+   "t": "加入晟通-晟通集团 - chinasnto.com",
+   "u": "http://www.chinasnto.com/index.php/recruitment.html",
+   "s": "1 + 1%×365 > 4 发现解决一个问题就进了一步，每天进步1%定能创造奇绩，成就精彩人生! 人才的基本特征是把功夫下在自己身上，不断学习、思考、发现、判断和解决价值问题。 我们寻找愿意改变、富有激情和创新能力的你，一起探索未知挑战\"不可能\"，引领行业穿越无人区! 发现解决一个问题就 ..."
+  },
+  {
+   "t": "校园招聘-上海地铁",
+   "u": "https://www.shmetro.com/p1/xyzp.html",
+   "s": "上海地铁（Shanghai Metro），是指服务于中国上海市和上海大都市圈的城市轨道交通系统，是国际地铁联盟（CoMET）的成员之一 ，其首条线路上海地铁1号线于1993年5月28日正式运营，使上海成为中国内地第三座、南方地区首座开通城市轨道交通的城市。"
+  },
+  {
+   "t": "Careers at Stellantis | Explore global opportunities",
+   "u": "https://careers.stellantis.com/",
+   "s": "The Group's automotive brands are: Abarth, Alfa Romeo, Chrysler, Dodge, Fiat, Fiat Professional, Jeep, Lancia, Ram, SRT and Maserati, in addition to Mopar, the "
+  },
+  {
+   "t": "Careers at MTR",
+   "u": "https://careers.mtr.com.hk/careersection/mtr_external/joblist.ftl?lang=en",
+   "s": "Job Openings (28 jobs found) This list includes all jobs currently available within our organization."
+  },
+  {
+   "t": "Shentong Metro Group - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Shentong_Metro_Group",
+   "s": "Shanghai Shentong Metro Group Co., Ltd. known as Shentong Metro Group is the operator of the Shanghai Metro and Shanghai Maglev, as well as the parent company o"
+  },
+  {
+   "t": "「上海申通地铁股份有限公司招聘」-boss直聘",
+   "u": "https://www.zhipin.com/companys/55ff96ddecab0bde1Xx_3tu6.html",
+   "s": "申通地铁是上海申通地铁股份有限公司旗下品牌。上海申通地铁股份有限公司创建于1992年06月12日，总部位于中国（上海）自由贸易试验区浦电路489号；全心致力于地铁经营及相关综合开发，轨道交通投资，企业管理咨询，商务咨询，附设分支机构。 等服务。公司性质为其他股份有限公司（上市 ..."
+  },
+  {
+   "t": "上海申通地铁集团有限公司2025届高校毕业生招聘简章- 上海本地宝",
+   "u": "https://sh.bendibao.com/job/202493/290768.shtm",
+   "s": "【导语】： 为适应超大规模轨道交通网络建设和运营的人才需求，上海申通地铁集团有限公司下属相关单位面向2025届高校 ..."
+  },
+  {
+   "t": "上海申通地铁2026年校招",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=653d3dcf33c3830f58c616d6409bc535",
+   "s": "上海申通地铁集团2026校园招聘已启动，涉及下属多个子公司（如第四运营公司、维护保障公司），提供技术管理、站务员等岗位，要求2026年全日制本科及以上应届毕业生，可通过上海地铁官网（ www.shmetro.com ）或政府平台申请。"
+  },
+  {
+   "t": "上海申通地铁2026校园招聘",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=74c249f5edf0655983340e1145c044e1",
+   "s": "上海申通地铁集团2026校园招聘已启动，涉及下属多个子公司（如第四运营公司、维护保障公司），提供技术管理、站务员等岗位，要求2026年全日制本科及以上应届毕业生，可通过上海地铁官网（ www.shmetro.com ）或政府平台申请。"
+  },
+  {
+   "t": "社会招聘-上海地铁",
+   "u": "https://www.shmetro.com/p1/shzp.html",
+   "s": "上海地铁（Shanghai Metro），是指服务于中国上海市和上海大都市圈的城市轨道交通系统，是国际地铁联盟（CoMET）的成员之一 ，其首条线路上海地铁1号线于1993年5月28日正式运营，使上海成为中国内地第三座、南方地区首座开通城市轨道交通的城市。"
+  },
+  {
+   "t": "上海申通地铁集团有限公司2025届高校毕业生招聘简章- 上海本地宝",
+   "u": "https://sh.bendibao.com/job/202493/290768.shtm",
+   "s": "【导语】： 为适应超大规模轨道交通网络建设和运营的人才需求，上海申通地铁集团有限公司下属相关单位面向2025届高校 ..."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

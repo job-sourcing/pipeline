@@ -2,7 +2,7 @@
  "brand": "ThinkPad",
  "tier": "lca",
  "lca": "THINKPAD FOUNDATION",
- "ts": "2026-09-27T08:08:10.743Z",
+ "ts": "2026-09-29T04:39:48.551Z",
  "candidates": [
   {
    "url": "https://thinkpadinfotechpvtltd.com/career/",
@@ -18,30 +18,27 @@
    "cf_challenge": true
   },
   {
-   "url": "https://thinkpalm.com/company/careers/",
-   "title": "ThinkPalm Careers | Job Openings | Work Culture and Values",
+   "url": "https://jobs.ctgoodjobs.hk/jobs/lenovo-thinkpad-gen-6-jobs",
+   "title": "Lenovo Thinkpad Gen 6 Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
    "status": 200,
-   "bytes": 92764,
+   "bytes": 655299,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 4,
-   "snippet": "ThinkPalm Careers: Unlock Your Next Big Opportunity We Are A Great Place To Work-Certified Organisation! At ThinkPalm, we make a conscious effort to provide the",
-   "backend": "supabase"
+   "score": 7,
+   "snippet": "Explore 1 Lenovo Thinkpad Gen 6 jobs in Hong Kong. Browse through all our new daily-updated Lenovo Thinkpad Gen 6 job listing now!",
+   "backend": "direct"
   },
   {
-   "url": "https://jobs.lenovo.com/",
-   "title": "Jobs at Lenovo",
+   "url": "https://jobs.ctgoodjobs.hk/jobs/laptop-thinkpad-jobs",
+   "title": "Laptop Thinkpad Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
    "status": 200,
-   "bytes": 65885,
-   "markers": [
-    "radancy",
-    "avature"
-   ],
+   "bytes": 769831,
+   "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 2,
-   "snippet": "Jobs at Lenovo https://jobs.lenovo.com Explore career opportunities at Lenovo! Apply, manage your profile, view job activity, join our talent community and sign",
+   "score": 7,
+   "snippet": "Explore top job openings at CTgoodjobs with 0 Laptop Thinkpad jobs available in Hong Kong. Browse through all our new daily-updated Laptop Thinkpad jobs listing",
    "backend": "direct"
   }
  ],
@@ -52,54 +49,24 @@
    "s": "Jobs at Lenovo https://jobs.lenovo.com Explore career opportunities at Lenovo! Apply, manage your profile, view job activity, join our talent community and sign"
   },
   {
-   "t": "Career - Thinkpad Infotech Pvt. Ltd",
-   "u": "https://thinkpadinfotechpvtltd.com/career/",
-   "s": "Are you ready to be on our success teams Just as every organization needs the right people to be successful, employees too require the optimal work environment "
-  },
-  {
    "t": "Early Career | Lenovo",
    "u": "https://jobs.lenovo.com/en_US/careers/EarlyCareer",
    "s": "Full-Time Early Career Opportunities Lenovo hires hundreds of new graduates globally each year to join our team of world-class innovators. Joining Lenovo will p"
   },
   {
-   "t": "Lenovo Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
-   "u": "https://sg.jobstreet.com/Lenovo-jobs",
-   "s": "Find your ideal job on Jobstreet with 113 Lenovo jobs (19 at Lenovo) listed in Singapore. View all the Lenovo vacancies now with new jobs added daily!"
+   "t": "Career - Thinkpad Infotech Pvt. Ltd",
+   "u": "https://thinkpadinfotechpvtltd.com/career/",
+   "s": "Are you ready to be on our success teams Just as every organization needs the right people to be successful, employees too require the optimal work environment "
   },
   {
    "t": "11,000+ Thinkpad jobs in Worldwide - LinkedIn",
    "u": "https://www.linkedin.com/jobs/thinkpad-jobs-worldwide",
    "s": "Today's top 11,000+ Thinkpad jobs in Worldwide. Leverage your professional network, and get hired. New Thinkpad jobs added daily."
-  },
-  {
-   "t": "LENOVO (SINGAPORE) PTE. LTD. Careers Singapore | Get A Job At LENOVO ...",
-   "u": "https://www.mycareersfuture.gov.sg/companies/lenovo-200415694w",
-   "s": "The smarter way for Singaporeans to find jobs. Match jobs to your skills, explore new careers, and access job opportunities with government support."
   },
   {
    "t": "Lenovo: Jobs | LinkedIn",
    "u": "https://www.linkedin.com/company/lenovo/jobs/",
-   "s": "Lenovo | 1,373,362 followers on LinkedIn. Smarter technology for all | Lenovo is a US$83 billion revenue global technology powerhouse, ranked #196 in the Fortun"
-  },
-  {
-   "t": "ThinkPalm Careers | Job Openings | Work Culture and Values",
-   "u": "https://thinkpalm.com/company/careers/",
-   "s": "ThinkPalm Careers: Unlock Your Next Big Opportunity We Are A Great Place To Work-Certified Organisation! At ThinkPalm, we make a conscious effort to provide the"
-  },
-  {
-   "t": "Jobs at Lenovo",
-   "u": "https://jobs.lenovo.com/",
-   "s": "Jobs at Lenovo https://jobs.lenovo.com Explore career opportunities at Lenovo! Apply, manage your profile, view job activity, join our talent community and sign"
-  },
-  {
-   "t": "Job Search | Lenovo",
-   "u": "https://jobs.lenovo.com/en_US/careers/SearchJobs/",
-   "s": "Jobs at Lenovo https://jobs.lenovo.com Explore career opportunities at Lenovo! Apply, manage your profile, view job activity, join our talent community and sign"
-  },
-  {
-   "t": "11,000+ Thinkpad jobs in Worldwide - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/thinkpad-jobs-worldwide",
-   "s": "Today's top 11,000+ Thinkpad jobs in Worldwide. Leverage your professional network, and get hired. New Thinkpad jobs added daily."
+   "s": "Lenovo | 1,374,055 followers on LinkedIn. Smarter technology for all | Lenovo is a US$83 billion revenue global technology powerhouse, ranked #196 in the Fortun"
   },
   {
    "t": "Thinkpad Jobs, Employment | Indeed",
@@ -107,29 +74,54 @@
    "s": "Today's top Thinkpad jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
   },
   {
-   "t": "Redefine what's next for you | HPE Careers",
-   "u": "https://careers.hpe.com/",
-   "s": "Advancing the way we live and work isn't possible by playing it safe. It can only be done by those who think differently—by those who take smart risks and defy "
-  },
-  {
-   "t": "Lenovo: Jobs | LinkedIn",
-   "u": "https://www.linkedin.com/company/lenovo/jobs/",
-   "s": "Lenovo | 1,373,362 followers on LinkedIn. Smarter technology for all | Lenovo is a US$83 billion revenue global technology powerhouse, ranked #196 in the Fortun"
-  },
-  {
-   "t": "Careers at Tokyo Electron (TEL)",
-   "u": "https://www.tel.com/careers/careercenter/index.html",
-   "s": "As a leading innovator of semiconductor production equipment, our internship and co-op program provides participants the opportunity to gain meaningful experien"
-  },
-  {
-   "t": "Now Hiring: 16,000 Lenovo Thinkpad Assistant Jobs | Indeed",
-   "u": "https://www.indeed.com/q-lenovo-thinkpad-assistant-jobs.html",
-   "s": "Todays top {1} jobs. New openings added daily. Apply now and find your next opportunity on {3}"
-  },
-  {
    "t": "Job Search | Lenovo",
    "u": "https://jobs.lenovo.com/en_US/careers/SearchJobs/",
    "s": "Jobs at Lenovo https://jobs.lenovo.com Explore career opportunities at Lenovo! Apply, manage your profile, view job activity, join our talent community and sign"
+  },
+  {
+   "t": "Location | Lenovo",
+   "u": "https://jobs.lenovo.com/en_US/careers/Locations",
+   "s": "Jobs at Lenovo https://jobs.lenovo.com Explore career opportunities at Lenovo! Apply, manage your profile, view job activity, join our talent community and sign"
+  },
+  {
+   "t": "Jobs at Lenovo",
+   "u": "https://jobs.lenovo.com/",
+   "s": "Jobs at Lenovo https://jobs.lenovo.com Explore career opportunities at Lenovo! Apply, manage your profile, view job activity, join our talent community and sign"
+  },
+  {
+   "t": "Lenovo Thinkpad Gen 6 Jobs in Hong Kong - Aug 2026 | CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/lenovo-thinkpad-gen-6-jobs",
+   "s": "Explore 1 Lenovo Thinkpad Gen 6 jobs in Hong Kong. Browse through all our new daily-updated Lenovo Thinkpad Gen 6 job listing now!"
+  },
+  {
+   "t": "11,000+ Thinkpad jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/thinkpad-jobs-worldwide",
+   "s": "Today's top 11,000+ Thinkpad jobs in Worldwide. Leverage your professional network, and get hired. New Thinkpad jobs added daily."
+  },
+  {
+   "t": "Lenovo ThinkPad E14 Gen6 Review Jobs in Hong Kong - Apr 2025 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Lenovo-ThinkPad-E14-Gen6-review-jobs",
+   "s": "Find your ideal job at Jobsdb with 100 Lenovo ThinkPad E14 Gen6 Review jobs found in Hong Kong. View all our Lenovo ThinkPad E14 Gen6 Review vacancies now with "
+  },
+  {
+   "t": "Thinkpad Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Thinkpad-jobs.html",
+   "s": "Today's top Thinkpad jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Laptop Thinkpad Jobs in Hong Kong | CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/laptop-thinkpad-jobs",
+   "s": "Explore top job openings at CTgoodjobs with 0 Laptop Thinkpad jobs available in Hong Kong. Browse through all our new daily-updated Laptop Thinkpad jobs listing"
+  },
+  {
+   "t": "Thinkpad X13 Android Studio Jobs in Hong Kong - Nov 2025 | Jobsdb",
+   "u": "https://hk.jobsdb.com/thinkpad-x13-Android-Studio-jobs",
+   "s": "Find your ideal job at Jobsdb with 100 Thinkpad X13 Android Studio jobs found in Hong Kong. View all our Thinkpad X13 Android Studio vacancies now with new jobs"
+  },
+  {
+   "t": "Early Career | Lenovo",
+   "u": "https://jobs.lenovo.com/en_US/careers/EarlyCareer",
+   "s": "Full-Time Early Career Opportunities Lenovo hires hundreds of new graduates globally each year to join our team of world-class innovators. Joining Lenovo will p"
   },
   {
    "t": "5,000+ Thinkpad jobs in United States - LinkedIn",
@@ -145,9 +137,25 @@
    "t": "Jobs at Lenovo",
    "u": "https://jobs.lenovo.com/en_US/careers",
    "s": "Jobs at Lenovo https://jobs.lenovo.com Explore career opportunities at Lenovo! Apply, manage your profile, view job activity, join our talent community and sign"
+  },
+  {
+   "t": "238 Lenovo Thinkpad jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/lenovo-thinkpad-jobs",
+   "s": "Today's top 238 Lenovo Thinkpad jobs in United States. Leverage your professional network, and get hired. New Lenovo Thinkpad jobs added daily."
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://jobs.ctgoodjobs.hk/jobs/lenovo-thinkpad-gen-6-jobs",
+  "platform": "custom",
+  "title": "Lenovo Thinkpad Gen 6 Jobs in Hong Kong - Sep 2026 | CTgoodjobs"
+ },
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "ThinkPad is a Lenovo product line (covered by the lenovo board); thinkpadinfotechpvtltd = Indian staffing noise",
+  "ts": "2026-09-29T04:43:56.028997Z",
+  "by": "S21 retry-wave adjudication"
+ }
 }

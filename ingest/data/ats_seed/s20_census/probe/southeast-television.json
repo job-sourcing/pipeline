@@ -2,10 +2,153 @@
  "brand": "Southeast Television",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:34:25.203Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:33:46.242Z",
+ "candidates": [
+  {
+   "url": "https://www.jobsinsports.com/c/the-southeastern-channel/jobs",
+   "title": "The Southeastern Channel Sports Jobs & Careers | JobsInSports.com",
+   "status": 200,
+   "bytes": 36965,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "The Southeastern Channel is Southeastern Louisiana University''s Emmy-winning television channel which has won over 400 national, international, and regional aw",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.southeasthealth.org/careers/",
+   "title": "Careers &#8211; Southeast Health | Dothan, AL",
+   "status": 200,
+   "bytes": 1412079,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Southeast Health is a community-based academic health system, which includes the region's largest not-for-profit Medical Center. The organization is comprised o",
+   "backend": "direct"
+  },
+  {
+   "url": "https://joinhearsttelevision.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 286084,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Careers Build Your Career With Purpose Grow, learn and make an impact with a team that supports your success.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers · Gray Media",
+   "u": "https://graymedia.com/careers/",
+   "s": "Gray Media is a leading media company that owns and operates high-quality stations in 113 television markets that collectively reach 36 percent of US television"
+  },
+  {
+   "t": "Build Your Career With Purpose - Hearst Television",
+   "u": "https://joinhearsttelevision.com/careers/",
+   "s": "Careers Build Your Career With Purpose Grow, learn and make an impact with a team that supports your success."
+  },
+  {
+   "t": "The Southeastern Channel Sports Jobs & Careers | JobsInSports.com",
+   "u": "https://www.jobsinsports.com/c/the-southeastern-channel/jobs",
+   "s": "The Southeastern Channel is Southeastern Louisiana University''s Emmy-winning television channel which has won over 400 national, international, and regional aw"
+  },
+  {
+   "t": "Job Opportunities | ETV - Come join us! - GovernmentJobs.com",
+   "u": "https://www.governmentjobs.com/careers/sc/etv",
+   "s": "The number of messages you receive will vary depending on the number of jobs you applied to, jobs you searched for, or the number Customers you allow to contact"
+  },
+  {
+   "t": "318 current jobs in Television (TV) for Sep 28, 2026. Broadcast ...",
+   "u": "https://www.tvjobs.com/",
+   "s": "TVJobs.com is the best place on the web to find jobs in Broadcast Television - plus Station Information, Salaries, Talent, Agents, Resumes, Freelance, Internshi"
+  },
+  {
+   "t": "Careers - Southeast Health | Dothan, AL",
+   "u": "https://www.southeasthealth.org/careers/",
+   "s": "Southeast Health is a community-based academic health system, which includes the region's largest not-for-profit Medical Center. The organization is comprised o"
+  },
+  {
+   "t": "Work or Volunteer at ETV - South Carolina ETV",
+   "u": "https://www.scetv.org/work-or-volunteer-etv",
+   "s": "You may find out about current employment opportunities here at SCETV by visiting the \"State Jobs on the Internet\" web site. While we would prefer you use the c"
+  },
+  {
+   "t": "FOX Careers - Jobs in Sports, News, Entertainment and More",
+   "u": "https://www.foxcareers.com/",
+   "s": "Find jobs and career opportunities in sports, news and entertainment at FOX. Work for the world's premier portfolio of cable, broadcast, news, sports, entertain"
+  },
+  {
+   "t": "Careers at Paramount",
+   "u": "https://careers.paramount.com/",
+   "s": "JOIN OUR TALENT COMMUNITY Join our Talent Community to stay connected, receive updates on career opportunities, and discover how you can make an impact with us."
+  },
+  {
+   "t": "Search our Job Opportunities at DISNEY - Disney Careers",
+   "u": "https://www.disneycareers.com/en/search-jobs?acm=ALL&amp;alrpm=ALL&amp;ascf=[%7B%22key%22:%22custom_fields.IndustryCustomField%22,%22value%22:%22Disney+Entertainment+Television%22%7D,%7B%22key%22:%22custom_fields.IndustryCustomField%22,%22value%22:%22ABC+News%22%7D]",
+   "s": "Search our Job Opportunities at DISNEY EXPLORE OPPORTUNITIES Whether you're looking to create magic in our Parks and Resorts, support business growth and develo"
+  },
+  {
+   "t": "Job Listings - TEGNA",
+   "u": "https://www.tegna.com/job-listings/",
+   "s": "Job Listings So what are you waiting for? Be our next great hire. We're looking for talented people who are interested in an exciting career with an established"
+  },
+  {
+   "t": "Build Your Career With Purpose - Hearst Television",
+   "u": "https://joinhearsttelevision.com/careers/",
+   "s": "Careers Build Your Career With Purpose Grow, learn and make an impact with a team that supports your success."
+  },
+  {
+   "t": "318 current jobs in Television (TV) for Sep 28, 2026. Broadcast ...",
+   "u": "https://www.tvjobs.com/",
+   "s": "TVJobs.com is the best place on the web to find jobs in Broadcast Television - plus Station Information, Salaries, Talent, Agents, Resumes, Freelance, Internshi"
+  },
+  {
+   "t": "Work or Volunteer at ETV - South Carolina ETV",
+   "u": "https://www.scetv.org/work-or-volunteer-etv",
+   "s": "You may find out about current employment opportunities here at SCETV by visiting the \"State Jobs on the Internet\" web site. While we would prefer you use the c"
+  },
+  {
+   "t": "Television Jobs in South Africa (1,000+ Open Roles) | LinkedIn",
+   "u": "https://za.linkedin.com/jobs/television-jobs",
+   "s": "Today's top 1,000+ Television jobs in South Africa. Leverage your professional network, and get hired. New Television jobs added daily."
+  },
+  {
+   "t": "Nexstar Media Group, Inc. | Careers",
+   "u": "https://www.nexstar.tv/careers/",
+   "s": "Recruiters with Nexstar Media Group and its local stations will only contact you through official job boards, LinkedIn, or e-mail with Nexstar.tv domain or offi"
+  },
+  {
+   "t": "Careers · Gray Media",
+   "u": "https://graymedia.com/careers/",
+   "s": "Grow With Gray! Gray offers a transformative internship experience that empowers students to secure their future in the media industry by providing hands-on tra"
+  },
+  {
+   "t": "Employment Opportunities - WSVN 7News",
+   "u": "https://wsvn.com/employment/",
+   "s": "Below are all available employment opportunities at WSVN. To apply for a particular position, click on the heading to complete our online form."
+  },
+  {
+   "t": "3,000 Television Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Television-jobs.html",
+   "s": "3,215 Television jobs available on Indeed.com. Apply to Videographer, Producer, Production Assistant and more!"
+  },
+  {
+   "t": "Search Jobs - Sinclair Broadcast Group Careers",
+   "u": "https://edyy.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2002/jobs?lastSelectedFacet=CATEGORIES&mode=location&selectedCategoriesFacet=300000001772728%3B300000001772730",
+   "s": "WSTM/CW6/WTVH-TV has a great opportunity for you! We are looking for interns for our News Department for . Qualified candidates should also be planning and prep"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.southeasthealth.org/careers/",
+  "platform": "custom",
+  "title": "Careers &#8211; Southeast Health | Dothan, AL"
+ },
+ "verdict": "custom_surface"
 }

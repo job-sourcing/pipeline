@@ -2,10 +2,159 @@
  "brand": "Trip.com",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:25:19.368Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:43:06.217Z",
+ "candidates": [
+  {
+   "url": "https://careers.trip.com/",
+   "title": "Trip.com Group Careers",
+   "status": 200,
+   "bytes": 285902,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Trip.com Group is a leading one-stop travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar. Founded in 1999 and listed on Nasdaq in 2003 ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.trip.com/m/index.html",
+   "title": "",
+   "status": 200,
+   "bytes": 286394,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore career opportunities at Trip.com Group and join a leading global travel service provider.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.trip.com/?locale=en-US",
+   "title": "Trip.com Group Careers",
+   "status": 200,
+   "bytes": 285902,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Trip.com Group is a leading one-stop travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar. Founded in 1999 and listed on Nasdaq in 2003 ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Trip.com Group Careers",
+   "u": "https://careers.trip.com/",
+   "s": "Trip.com Group is a leading one-stop travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar. Founded in 1999 and listed on Nasdaq in 2003 "
+  },
+  {
+   "t": "Careers | Trip.com Group",
+   "u": "https://careers.trip.com/m/index.html",
+   "s": "Explore career opportunities at Trip.com Group and join a leading global travel service provider."
+  },
+  {
+   "t": "Careers | Trip.com Group",
+   "u": "https://careers.trip.com/?locale=en-US",
+   "s": "Trip.com Group is a leading one-stop travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar. Founded in 1999 and listed on Nasdaq in 2003 "
+  },
+  {
+   "t": "Careers | Trip.com Group",
+   "u": "https://careers.trip.com/m/",
+   "s": "Explore career opportunities at Trip.com Group, a global leader in travel services. Join our team and start your journey today!"
+  },
+  {
+   "t": "Trip.com Group Careers",
+   "u": "https://careers.trip.com/ement",
+   "s": "Join Trip.com Group and turn your passion for travel into your career"
+  },
+  {
+   "t": "Trip.com Group Careers",
+   "u": "https://careers.trip.com/",
+   "s": "Trip.com Group is a leading one-stop travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar. Founded in 1999 and listed on Nasdaq in 2003 "
+  },
+  {
+   "t": "Careers | Trip.com Group",
+   "u": "https://careers.trip.com/m/index.html",
+   "s": "Trip.com Group is a leading one-stop travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar. Founded in 1999 and listed on Nasdaq in 2003 "
+  },
+  {
+   "t": "Trip.com Group: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/tripcomgroup/jobs",
+   "s": "Trip.com Group | 336,917 followers on LinkedIn. Trip.com Group is a leading one-stop travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Quna"
+  },
+  {
+   "t": "携程集团招聘官网",
+   "u": "https://job.ctrip.com/",
+   "s": "携程集团（Trip.com Group）是全球领先的一站式旅行平台，公司旗下的平台，包括携程旅行、Trip.com、去哪儿、天巡等，可面向全球用户提供一套完整的旅行产品、服务及差异化的旅行内容。携程于2003年在美国纳斯达克交易所上市，并于2021年在香港联合交易所上市。未来几年，携程致力于成为具有全球 ..."
+  },
+  {
+   "t": "181 Trip.com Group jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/trip.com-group-jobs-worldwide",
+   "s": "Today's top 181 Trip.com Group jobs in Worldwide. Leverage your professional network, and get hired. New Trip.com Group jobs added daily."
+  },
+  {
+   "t": "1,000+ Trip.com jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/trip.com-jobs-worldwide",
+   "s": "Today's top 1,000+ Trip.com jobs in Worldwide. Leverage your professional network, and get hired. New Trip.com jobs added daily."
+  },
+  {
+   "t": "Trip Com Group Jobs in United States (8 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/trip-com-group-jobs",
+   "s": "Today's top 8 Trip Com Group jobs in United States. Leverage your professional network, and get hired. New Trip Com Group jobs added daily."
+  },
+  {
+   "t": "Trip.com Group: Jobs | LinkedIn",
+   "u": "https://sg.linkedin.com/company/tripcomgroup/jobs",
+   "s": "Trip.com Group | 336,881 followers on LinkedIn. Trip.com Group is a leading one-stop travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Quna"
+  },
+  {
+   "t": "Careers | Trip.com Group",
+   "u": "https://careers.trip.com/",
+   "s": "The platform has wide search and reservation coverage worldwide including hotels, vacation routes, and destination tickets and entertainment listings. Trip.com "
+  },
+  {
+   "t": "Careers | Trip.com Group",
+   "u": "https://careers.trip.com/m/index.html",
+   "s": "Explore career opportunities at Trip.com Group and join a leading global travel service provider."
+  },
+  {
+   "t": "8 Trip.com Careers jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/trip.com-careers-jobs",
+   "s": "Today's top 8 Trip.com Careers jobs in United States. Leverage your professional network, and get hired. New Trip.com Careers jobs added daily."
+  },
+  {
+   "t": "Trip.com Group: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/tripcomgroup/jobs",
+   "s": "Trip.com Group | 336,917 followers on LinkedIn. Trip.com Group is a leading one-stop travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Quna"
+  },
+  {
+   "t": "携程集团招聘官网",
+   "u": "https://careers.ctrip.com/",
+   "s": "携程集团（Trip.com Group）是全球领先的一站式旅行平台，公司旗下的平台，包括携程旅行、Trip.com、去哪儿、天巡等，可面向全球用户提供一套完整的旅行产品、服务及差异化的旅行内容。携程于2003年在美国纳斯达克交易所上市，并于2021年在香港联合交易所上市。未来几年，携程致力于成为具有全球 ..."
+  },
+  {
+   "t": "Welcome to the TRIP careers site",
+   "u": "https://careers.drink-trip.com/",
+   "s": "Welcome to our TRIP Careers site ️ Our mission is to create calm in the everyday chaos. These are more than just words, they are our core values and our daily m"
+  },
+  {
+   "t": "Trip.com group Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Trip.com-Group-1",
+   "s": "Find out what works well at Trip.com group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.trip.com/",
+  "platform": "moka",
+  "title": "Trip.com Group Careers"
+ },
+ "verdict": "marker_surface"
 }

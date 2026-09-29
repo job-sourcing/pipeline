@@ -2,10 +2,153 @@
  "brand": "Pinpoint Asset Management",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:44:24.952Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:31:19.718Z",
+ "candidates": [
+  {
+   "url": "https://www.pinpointfund.com/career/",
+   "title": "Pinpoint Asset Management",
+   "status": 200,
+   "bytes": 53948,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Pinpoint Asset Management Careers Pinpoint is committed to your personal growth, fostering a culture of continuous learning and development. Whether you're laun",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.pinpointasia.com/pinpointasia-jobs",
+   "title": "Pinpoint Asia-Jobs (List) | Pinpoint Asia",
+   "status": 200,
+   "bytes": 927002,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Director of Delivery - FSI Tech Modernization - J13196 16 September 2026 Lead large-scale core banking and insurance transformations. Top-tier global technology",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.ctgoodjobs.hk/jobs/Pinpoint-Asset-Management-Limited-jobs",
+   "title": "Pinpoint Asset Management Limited Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 789067,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 43 Pinpoint Asset Management Limited jobs in Hong Kong. Browse through all our new daily-updated Pinpoint Asset Management Limited job listing now!",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Pinpoint Asset Management",
+   "u": "https://www.pinpointfund.com/career/",
+   "s": "Pinpoint Asset Management Careers Pinpoint is committed to your personal growth, fostering a culture of continuous learning and development. Whether you're laun"
+  },
+  {
+   "t": "Jobs at Pinpoint | Pinpoint Careers",
+   "u": "https://workwithus.pinpointhq.com/",
+   "s": "Careers at Pinpoint Help us change the way companies hire. We're rewriting the rules of recruitment, making it easier for in-house recruiters to attract, hire, "
+  },
+  {
+   "t": "Pinpoint Asset Management",
+   "u": "https://www.pinpointfund.com/en/join",
+   "s": "Pinpoint is an investment firm providing investment advice or services for Accredited and Institutional Investors only."
+  },
+  {
+   "t": "Pinpoint Asia-Jobs (List) | Pinpoint Asia",
+   "u": "https://www.pinpointasia.com/pinpointasia-jobs",
+   "s": "Director of Delivery - FSI Tech Modernization - J13196 16 September 2026 Lead large-scale core banking and insurance transformations. Top-tier global technology"
+  },
+  {
+   "t": "Pinpoint Asset Management - LinkedIn",
+   "u": "https://www.linkedin.com/company/pinpoint-asset-management-group/",
+   "s": "Pinpoint Asset Management Investment Management Pinpoint is a multi-manager investment firm with an award-winning multi-strategy hedge fund."
+  },
+  {
+   "t": "Working at Pinpoint Asset Management | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Pinpoint-Asset-Management-EI_IE1140894.11,36.htm",
+   "s": "See what employees say it's like to work at Pinpoint Asset Management. Salaries, reviews, and more - all posted by employees working at Pinpoint Asset Managemen"
+  },
+  {
+   "t": "Pinpoint Asset Management - LinkedIn",
+   "u": "https://hk.linkedin.com/company/pinpoint-asset-management-group",
+   "s": "Pinpoint Asset Management Investment Management Pinpoint is a multi-manager investment firm with an award-winning multi-strategy hedge fund. About us Pinpoint i"
+  },
+  {
+   "t": "Join Our Team - Pinpoint Asia",
+   "u": "https://www.pinpointasia.com/join-our-team",
+   "s": "Join Our Team With close to a decade of a solid and enviable track record behind us, Pinpoint Asia is the go-to IT Search Firm for several top Investment Banks,"
+  },
+  {
+   "t": "Pinpoint Asset Management",
+   "u": "https://www.pinpointfund.com/career/",
+   "s": "Pinpoint Asset Management Careers Pinpoint is committed to your personal growth, fostering a culture of continuous learning and development. Whether you're laun"
+  },
+  {
+   "t": "Jobs at Pinpoint | Pinpoint Careers",
+   "u": "https://workwithus.pinpointhq.com/",
+   "s": "We're changing the way companies hire, and rewriting the rules of recruitment. We're a high-growth HR tech company building software that makes hiring faster, f"
+  },
+  {
+   "t": "4 Pinpoint Asset Management Limited jobs in Hong Kong",
+   "u": "https://hk.jobsdb.com/Pinpoint-Asset-Management-Limited-jobs",
+   "s": "Find your ideal job at Jobsdb with 4 Pinpoint Asset Management Limited jobs found in Hong Kong. View all our Pinpoint Asset Management Limited vacancies now wit"
+  },
+  {
+   "t": "Pinpoint Asia-Jobs (List) | Pinpoint Asia",
+   "u": "https://www.pinpointasia.com/pinpointasia-jobs",
+   "s": "Director of Delivery - FSI Tech Modernization - J13196 16 September 2026 Lead large-scale core banking and insurance transformations. Top-tier global technology"
+  },
+  {
+   "t": "Pinpoint Asset Management Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/pinpoint-asset-management-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 Pinpoint Asset Management job found in Hong Kong. View all our Pinpoint Asset Management vacancies now with new jobs added "
+  },
+  {
+   "t": "Working at Pinpoint Asset Management | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Pinpoint-Asset-Management-EI_IE1140894.11,36.htm",
+   "s": "See what employees say it's like to work at Pinpoint Asset Management. Salaries, reviews, and more - all posted by employees working at Pinpoint Asset Managemen"
+  },
+  {
+   "t": "Pinpoint Asset Management Limited Jobs in Hong Kong - CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/Pinpoint-Asset-Management-Limited-jobs",
+   "s": "Explore 43 Pinpoint Asset Management Limited jobs in Hong Kong. Browse through all our new daily-updated Pinpoint Asset Management Limited job listing now!"
+  },
+  {
+   "t": "Pinpoint Asset Management",
+   "u": "https://www.pinpointfund.com/en/joinDetail/27",
+   "s": "Pinpoint is an investment firm providing investment advice or services for Accredited and Institutional Investors only."
+  },
+  {
+   "t": "Pinpoint Asset Management",
+   "u": "https://www.pinpointfund.com/career/",
+   "s": "Pinpoint Asset Management Careers Pinpoint is committed to your personal growth, fostering a culture of continuous learning and development. Whether you're laun"
+  },
+  {
+   "t": "Jobs at Pinpoint | Pinpoint Careers",
+   "u": "https://workwithus.pinpointhq.com/",
+   "s": "We're changing the way companies hire, and rewriting the rules of recruitment. We're a high-growth HR tech company building software that makes hiring faster, f"
+  },
+  {
+   "t": "Pinpoint Asia-Jobs (List) | Pinpoint Asia",
+   "u": "https://www.pinpointasia.com/pinpointasia-jobs",
+   "s": "Director of Delivery - FSI Tech Modernization - J13196 16 September 2026 Lead large-scale core banking and insurance transformations. Top-tier global technology"
+  },
+  {
+   "t": "Pinpoint Asset Management",
+   "u": "https://www.pinpointfund.com/en/join",
+   "s": "Pinpoint is an investment firm providing investment advice or services for Accredited and Institutional Investors only."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.pinpointasia.com/pinpointasia-jobs",
+  "platform": "custom",
+  "title": "Pinpoint Asia-Jobs (List) | Pinpoint Asia"
+ },
+ "verdict": "custom_surface"
 }

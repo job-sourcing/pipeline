@@ -2,10 +2,150 @@
  "brand": "Guangzhou Book Center",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:39:15.895Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:41:56.697Z",
+ "candidates": [
+  {
+   "url": "https://jobs.echinacities.com/guangzhou-jobs",
+   "title": "Jobs in Guangzhou - Job Opportunities in Guangzhou for Expats|广州招聘外国人|外籍招聘网|招聘外教|外国人招聘|外国人才网",
+   "status": 200,
+   "bytes": 705933,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinacities Jobs provides expats who want to work in Guangzhou with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEF",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.isacjobs.com/job-location/guangzhou/",
+   "title": "",
+   "status": 200,
+   "bytes": 34800,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse the latest jobs in Guangzhou for foreigners, including teaching and company jobs for international jobseekers.",
+   "backend": "firecrawl"
+  },
+  {
+   "url": "https://jobs.echinacities.com/en/Guangzhou-jobs",
+   "title": "Guangzhou Jobs – for Expats in Guangzhou",
+   "status": 200,
+   "bytes": 705271,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinacities Jobs provides expats who want to work in Guangzhou with updated employment opportunities.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Guangzhou Book Center - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Guangzhou_Book_Center",
+   "s": "Guangzhou Book Center Bookstore Atrium Guangzhou Book Center (simplified Chinese: 广州购书中心; traditional Chinese: 廣州購書中心; pinyin: Guǎngzhōu Gòushū Zhōngxīn) is a l"
+  },
+  {
+   "t": "人才招聘 || 成功的人生，一定要勇于尝试 - 广州新华发行官方网站——卓越的城市文化服务提供商",
+   "u": "https://www.gzbookcenter.com/nd.jsp?id=18",
+   "s": "在新年来临之际，你还有什么愿望没有说出来呢？ 我想瘦成一道闪电! 我希望一夜暴富! 我希望我的头发能懂事点，不要再掉了! 我只想找到一份好工作! 对!找到一份好工作实在太重要了! 于不同的人而言，一份好的工作，可能是因为它提供了让你充分展示才能的平台；也可能是因为它能够让 ..."
+  },
+  {
+   "t": "广州购书中心有限公司招聘 - 智联招聘",
+   "u": "https://www.zhaopin.com/companydetail/CC557426520.htm",
+   "s": "智联招聘人才招聘网为求职者提供广州购书中心有限公司2026年最新招聘信息,多个岗位在线直招,薪资待遇一目了然,求职找工作找人才就上智联招聘!"
+  },
+  {
+   "t": "Jobs in Guangzhou - Job Opportunities in Guangzhou for Expats",
+   "u": "https://jobs.echinacities.com/guangzhou-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Guangzhou with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEF"
+  },
+  {
+   "t": "The World Of Chinese Distributed China China International Book Trading ...",
+   "u": "https://www.linkedin.com/jobs/the-world-of-chinese-distributed-china-china-international-book-trading-corporation-guangzhou-branch-jobs",
+   "s": "Today's top 5,000+ The World Of Chinese Distributed China China International Book Trading Corporation Guangzhou Branch jobs in United States. Leverage your pro"
+  },
+  {
+   "t": "「广州新华发行招聘」-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/bf8c2ade60a2184a0XNy3NW7.html",
+   "s": "BOSS直聘为求职者提供2026年最新广州新华发行招聘，更有广州新华发行的公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，广州新华发行正在线直聘4条职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  },
+  {
+   "t": "中国出版集团2027届校园招聘",
+   "u": "https://cnpubg.iguopin.com/job",
+   "s": "中国出版集团2027届校园招聘 中国大百科全书第三版技术与运营中心（新媒体中心）"
+  },
+  {
+   "t": "Urgent! Guangzhou jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-guangzhou",
+   "s": "Active 124 vacancies • Guangzhou jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Guangzhou jobs in USA and abroad"
+  },
+  {
+   "t": "广州购书中心有限公司招聘 - 智联招聘",
+   "u": "https://www.zhaopin.com/companydetail/CC557426520.htm",
+   "s": "智联招聘人才招聘网为求职者提供广州购书中心有限公司2026年最新招聘信息,多个岗位在线直招,薪资待遇一目了然,求职找工作找人才就上智联招聘!"
+  },
+  {
+   "t": "「广州购书中心招聘」2026年广州购书中心招聘信息-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/job/db769c41f1d136c40HV-09u-.html",
+   "s": "BOSS直聘为您提供2026年广州购书中心最新招聘信息，1个岗位正在直招牛人，广州购书中心招聘岗位类别有：设计，进入网站与广州购书中心的Boss在线直接开聊吧!"
+  },
+  {
+   "t": "Urgent! Guangzhou jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-guangzhou",
+   "s": "Active 124 vacancies • Guangzhou jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Guangzhou jobs in USA and abroad"
+  },
+  {
+   "t": "Jobs in Guangzhou - Job Opportunities in Guangzhou for Expats",
+   "u": "https://jobs.echinacities.com/guangzhou-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Guangzhou with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEF"
+  },
+  {
+   "t": "The World Of Chinese Distributed China China International Book Trading ...",
+   "u": "https://www.linkedin.com/jobs/the-world-of-chinese-distributed-china-china-international-book-trading-corporation-guangzhou-branch-jobs",
+   "s": "Today's top 5,000+ The World Of Chinese Distributed China China International Book Trading Corporation Guangzhou Branch jobs in United States. Leverage your pro"
+  },
+  {
+   "t": "Guangzhou Book Center - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Guangzhou_Book_Center",
+   "s": "Guangzhou Book Center Bookstore Atrium Guangzhou Book Center (simplified Chinese: 广州购书中心; traditional Chinese: 廣州購書中心; pinyin: Guǎngzhōu Gòushū Zhōngxīn) is a l"
+  },
+  {
+   "t": "Jobs in Guangzhou - China Foreigner Jobs",
+   "u": "https://www.isacjobs.com/job-location/guangzhou/",
+   "s": "Browse the latest jobs in Guangzhou for foreigners, including teaching and company jobs for international jobseekers."
+  },
+  {
+   "t": "Guangzhou Jobs - for Expats in Guangzhou",
+   "u": "https://jobs.echinacities.com/en/Guangzhou-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Guangzhou with updated employment opportunities."
+  },
+  {
+   "t": "Urgent! Guangzhou jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-guangzhou",
+   "s": "Active 124 vacancies • Guangzhou jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Guangzhou jobs in USA and abroad"
+  },
+  {
+   "t": "300 In Guangzhou China Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-In-Guangzhou-China-jobs.html",
+   "s": "Browse 361 In Guangzhou China jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Find Guangzhou latest job vacancies, careers & employment. - China Business",
+   "u": "http://www.foreignercn.com/info/index.php?m=content&a=lists&catid=35&city=guangzhou",
+   "s": "Search the latest job vacancies & careers in Guangzhou including full time & part time teaching jobs, sales & marketing jobs, IT jobs, translation jobs & so on."
+  },
+  {
+   "t": "6,000+ jobs in Guangzhou - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/jobs-in-guangzhou",
+   "s": "Today's top 6,000+ jobs in Guangzhou. Leverage your professional network, and get hired. New Guangzhou jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

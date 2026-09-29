@@ -2,10 +2,150 @@
  "brand": "Hu Ge",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:21:03.721Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:29:59.510Z",
+ "candidates": [
+  {
+   "url": "https://careers.bakerhughes.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 212,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "We are a leading energy technology company providing solutions for the energy and industrial industries. At Baker Hughes we design, manufacture, and service tra",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://careers.geaerospace.com/hu/hu/hungary",
+   "title": "GE Aerospace is now hiring in Hungary!",
+   "status": 200,
+   "bytes": 88884,
+   "markers": [
+    "phenom"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "A GE Aerospace-nél úgy gondoljuk, hogy a világ jobban működik, ha repül. A kereskedelmi és katonai repülőgépek sugárhajtóműveinek, alkatrészeinek és integrált r",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.hugeinc.com/careers",
+   "title": "Careers | Huge",
+   "status": 200,
+   "bytes": 250938,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "We create digital products and experiences that grow ambitious brands.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Baker Hughes | Career Opportunities",
+   "u": "https://careers.bakerhughes.com/",
+   "s": "We are a leading energy technology company providing solutions for the energy and industrial industries. At Baker Hughes we design, manufacture, and service tra"
+  },
+  {
+   "t": "Careers at GE HealthCare | GE HealthCare jobs",
+   "u": "https://careers.gehealthcare.com/global/en/home",
+   "s": "Colleague stories From personal connections to healthcare to pioneering industry-firsts, hear firsthand from change-makers around the globe about building a car"
+  },
+  {
+   "t": "Hu Ge - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Hu_Ge",
+   "s": "Hu Ge (Chinese: 胡歌, born 20 September 1982), [1] also known as Hugh Hu or Hugo Hu, is a Chinese actor and singer. He rose to fame for his role as Li Xiaoyao in "
+  },
+  {
+   "t": "GE Aerospace is now hiring in Hungary! - careers.geaerospace.com",
+   "u": "https://careers.geaerospace.com/hu/hu/hungary",
+   "s": "A GE Aerospace-nél úgy gondoljuk, hogy a világ jobban működik, ha repül. A kereskedelmi és katonai repülőgépek sugárhajtóműveinek, alkatrészeinek és integrált r"
+  },
+  {
+   "t": "Careers - Huge",
+   "u": "https://www.hugeinc.com/careers",
+   "s": "We create digital products and experiences that grow ambitious brands."
+  },
+  {
+   "t": "GE Aerospace is now hiring in Hungary! - careers.geaerospace.com",
+   "u": "https://careers.geaerospace.com/global/en/hungary",
+   "s": "Job Description Summary. A Raktár és Logisztikai Vezető egy belső és külső kapcsolatokkal járó szerepkör, amely a GE Aerospace Hungary wing-to-wing szállítási f"
+  },
+  {
+   "t": "careers | General Electric",
+   "u": "https://www.ge.com/taxonomy/term/1825",
+   "s": "GE.com has been updated to serve our three go-forward companies. Please visit these standalone sites for more information GE Aerospace | GE Vernova | GE HealthC"
+  },
+  {
+   "t": "hu ge - Self-employed | LinkedIn",
+   "u": "https://sg.linkedin.com/in/hu-ge-82274b251",
+   "s": "Experience: Self-employed · Location: Singapore. View hu ge's profile on LinkedIn, a professional community of 1 billion members."
+  },
+  {
+   "t": "Baker Hughes | Career Opportunities",
+   "u": "https://careers.bakerhughes.com/",
+   "s": "We are a leading energy technology company providing solutions for the energy and industrial industries. At Baker Hughes we design, manufacture, and service tra"
+  },
+  {
+   "t": "GE Aerospace is now hiring in Hungary!",
+   "u": "https://careers.geaerospace.com/hu/hu/hungary",
+   "s": "A GE Aerospace-nél úgy gondoljuk, hogy a világ jobban működik, ha repül. A kereskedelmi és katonai repülőgépek sugárhajtóműveinek, alkatrészeinek és integrált r"
+  },
+  {
+   "t": "Careers at GE HealthCare | GE HealthCare jobs",
+   "u": "https://careers.gehealthcare.com/global/en/home",
+   "s": "Colleague stories From personal connections to healthcare to pioneering industry-firsts, hear firsthand from change-makers around the globe about building a car"
+  },
+  {
+   "t": "Ge Állások itt: Hungary (76 Nyitva szerepkörök) | LinkedIn",
+   "u": "https://hu.linkedin.com/jobs/ge-jobs",
+   "s": "Napjaink legjobb 76 Ge állásai Hungary. Használja ki szakmai hálózatát, és szerezzen felvételt. Naponta új Ge állások bővülnek."
+  },
+  {
+   "t": "Sürgős ge állás, munka - 30 friss állásajánlat - Profession.hu",
+   "u": "https://www.profession.hu/allasok/1,0,0,ge",
+   "s": "30 db friss ge állás, munka. Nézze meg a legfrissebb ge állásajánlatokat Magyarország közkedvelt állásportálján és jelentkezzen egyszerűen most!"
+  },
+  {
+   "t": "GE Aerospace is now hiring in Hungary!",
+   "u": "https://careers.geaerospace.com/global/en/hungary",
+   "s": "Job Description Summary. A Raktár és Logisztikai Vezető egy belső és külső kapcsolatokkal járó szerepkör, amely a GE Aerospace Hungary wing-to-wing szállítási f"
+  },
+  {
+   "t": "job openings | General Electric",
+   "u": "https://www.ge.com/taxonomy/term/4263",
+   "s": "GE.com has been updated to serve our three go-forward companies. Please visit these standalone sites for more information GE Aerospace | GE Vernova | GE HealthC"
+  },
+  {
+   "t": "Több mint 50 GE állás, munka: 2026, szeptember 28.| Indeed",
+   "u": "https://hu.indeed.com/GE-jobs",
+   "s": "Job Description Summary Job Description Summary GE HealthCare is looking for a talented and motivated Software Engineer to join our Advanced Visualization team."
+  },
+  {
+   "t": "Baker Hughes | Career Opportunities",
+   "u": "https://careers.bakerhughes.com/",
+   "s": "Baker Hughes is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, national or ethnic origin, sex, sexual ori"
+  },
+  {
+   "t": "GE Aerospace is now hiring in Hungary!",
+   "u": "https://careers.geaerospace.com/global/en/hungary",
+   "s": "Job Description Summary. GE Aerospace is the leading manufacturer of jet engines for civil and military aviation in the world producing 37 types of engines that"
+  },
+  {
+   "t": "GE Aerospace is now hiring in Hungary!",
+   "u": "https://careers.geaerospace.com/hu/hu/hungary",
+   "s": "A GE Aerospace-nél úgy gondoljuk, hogy a világ jobban működik, ha repül. A kereskedelmi és katonai repülőgépek sugárhajtóműveinek, alkatrészeinek és integrált r"
+  },
+  {
+   "t": "Ge Állások itt: Hungary (76 Nyitva szerepkörök) | LinkedIn",
+   "u": "https://hu.linkedin.com/jobs/ge-jobs",
+   "s": "Napjaink legjobb 76 Ge állásai Hungary. Használja ki szakmai hálózatát, és szerezzen felvételt. Naponta új Ge állások bővülnek."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

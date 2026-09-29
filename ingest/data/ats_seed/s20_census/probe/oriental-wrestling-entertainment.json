@@ -2,10 +2,170 @@
  "brand": "Oriental Wrestling Entertainment",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:43:11.237Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:29:25.714Z",
+ "candidates": [
+  {
+   "url": "https://careers-orientaltrading.icims.com/jobs/",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 40915,
+   "markers": [
+    "icims"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "icims:careers-orientaltrading",
+   "score": 17,
+   "snippet": "Explore job opportunities at Oriental Trading Company, Inc. and apply for positions across various categories and locations.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.mandarinoriental.com/en/careers",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 1278322,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Should you have any questions or concerns related to jobs advertised or offers made using Mandarin Oriental Hotel Group's name or the name of any of the propert",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.mandarinoriental.com/jobs/manager-global-entertainment-media-sports-new-york-united-states",
+   "title": "Manager, Global Entertainment, Media & Sports - New York, United States",
+   "status": 200,
+   "bytes": 117041,
+   "markers": [],
+   "jsonld_jobs": 1,
+   "spec": null,
+   "score": 7,
+   "snippet": "About the job Based in the New York Corporate Office and reporting to the Head of Global Entertainment, Media & Sport, the Account Manager, Global Entertainment",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Oriental Wrestling Entertainment - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Oriental_Wrestling_Entertainment",
+   "s": "Oriental Wrestling Entertainment (OWE) (Chinese: \u4e1c\u65b9\u804c\u4e1a\u6454\u89d2) was a Chinese-based professional wrestling promotion founded in 2017. OWE shows normally combined wrest"
+  },
+  {
+   "t": "Oriental Wrestling Entertainment",
+   "u": "https://prowrestling.fandom.com/wiki/Oriental_Wrestling_Entertainment",
+   "s": "Oriental Wrestling Entertainment (OWE) is a Chinese professional wrestling promotion based in Shanghai, China. OWE has had working relationships with the All El"
+  },
+  {
+   "t": "Oriental Wrestling Entertainment - Wikiwand",
+   "u": "https://www.wikiwand.com/en/articles/Oriental_Wrestling_Entertainment",
+   "s": "Oriental Wrestling Entertainment (OWE) (Chinese: \u4e1c\u65b9\u804c\u4e1a\u6454\u89d2) was a Chinese-based professional wrestling promotion founded in 2017. OWE shows normally combined wrest"
+  },
+  {
+   "t": "Oriental Wrestling Entertainment Explained",
+   "u": "https://everything.explained.today/Oriental_Wrestling_Entertainment/",
+   "s": "Oriental Wrestling Entertainment (OWE) (Chinese: s=\u4e1c\u65b9\u804c\u4e1a\u6454\u89d2) was a Chinese-based professional wrestling promotion founded in 2017. OWE shows normally combined wre"
+  },
+  {
+   "t": "Oriental Wrestling Entertainment - grokipedia.com",
+   "u": "https://grokipedia.com/page/Oriental_Wrestling_Entertainment",
+   "s": "Oriental Wrestling Entertainment (OWE; Chinese: \u4e1c\u65b9\u804c\u4e1a\u6454\u89d2) was a professional wrestling promotion headquartered in Shanghai, China. Founded in 2017 by film directo"
+  },
+  {
+   "t": "Oriental Wrestling Entertainment (OWE) \u00ab Promotions Database ...",
+   "u": "https://www.cagematch.net/?id=8&nr=2123",
+   "s": "Latest comments of the CAGEMATCH inmates [] \"OWE was a strong promotion featuring many hard-working wrestlers with solid skills in professional wrestling. Even "
+  },
+  {
+   "t": "Oriental Wrestling Entertainment alumni",
+   "u": "https://prowrestling.fandom.com/wiki/Category:Oriental_Wrestling_Entertainment_alumni",
+   "s": "The following individuals have participated in at least one event for the promotion Oriental Wrestling Entertainment."
+  },
+  {
+   "t": "Oriental Wrestling Entertainment - Detailed Pedia",
+   "u": "https://www.detailedpedia.com/wiki-Oriental_Wrestling_Entertainment",
+   "s": "Oriental Wrestling Entertainment (OWE) (Chinese: \u4e1c\u65b9\u804c\u4e1a\u6454\u89d2) is a Chinese-based professional wrestling promotion founded in 2017. OWE shows normally combine wrestli"
+  },
+  {
+   "t": "Oriental Wrestling Entertainment - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Oriental_Wrestling_Entertainment",
+   "s": "Oriental Wrestling Entertainment (OWE) (Chinese: \u4e1c\u65b9\u804c\u4e1a\u6454\u89d2) was a Chinese-based professional wrestling promotion founded in 2017. OWE shows normally combined wrest"
+  },
+  {
+   "t": "Oriental Wrestling Entertainment",
+   "u": "https://prowrestling.fandom.com/wiki/Oriental_Wrestling_Entertainment",
+   "s": "Oriental Wrestling Entertainment (OWE) is a Chinese professional wrestling promotion based in Shanghai, China. OWE has had working relationships with the All El"
+  },
+  {
+   "t": "AEW Careers | All Elite Wrestling Official Website",
+   "u": "https://www.allelitewrestling.com/aew-careers",
+   "s": "Find Your Passion. From live event production, emerging technology, marketing, and more, All Elite Wrestling (AEW) has positions available for the most elite ca"
+  },
+  {
+   "t": "$44k-$146k Tokyo Film Jobs (NOW HIRING) Sep 2026 - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/Jobs/Tokyo-Film?lk=YuD5XyBZBb00ZVArLxE9ow",
+   "s": "Browse 759 TOKYO FILM jobs ($44k-$146k) from companies hiring now. New openings posted daily. Apply early, be seen first & 1-click apply today!"
+  },
+  {
+   "t": "tokyo Jobs - ShowbizJobs",
+   "u": "https://www.showbizjobs.com/jobs/location/city/tokyo",
+   "s": "Find amazing dream jobs in the tokyo area in Film, TV, Production, Streaming Media, Video Games, Theater, Movies, Show Business, Entertainment, and the Arts."
+  },
+  {
+   "t": "Professional Wrestling Sports Jobs & Careers | JobsInSports.com",
+   "u": "https://www.jobsinsports.com/c/professional-wrestling/jobs",
+   "s": "JobsInSports.com is the top job board in the industry for Professional Wrestling sports jobs. Access Professional Wrestling careers today!"
+  },
+  {
+   "t": "Search Tokyo Jobs at DISNEY - Disney Careers",
+   "u": "https://www.disneycareers.com/en/location/tokyo-jobs/391/1861060-1850144/3",
+   "s": "Search Tokyo Jobs at DISNEY EXPLORE OPPORTUNITIES Whether you're looking to create magic in our Parks and Resorts, support business growth and development, work"
+  },
+  {
+   "t": "CAREERS | Corporate",
+   "u": "https://corporate.wwe.com/careers",
+   "s": "WWE is proud to offer competitive employee compensation and benefits along with an exciting variety of health and wellness initiatives."
+  },
+  {
+   "t": "Careers",
+   "u": "https://careers-orientaltrading.icims.com/jobs/",
+   "s": "Explore job opportunities at Oriental Trading Company, Inc. and apply for positions across various categories and locations."
+  },
+  {
+   "t": "Wrestling Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/wrestling-jobs",
+   "s": "Find your ideal job at Jobstreet with 3 Wrestling jobs found in Singapore. View all our Wrestling vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Oriental Weavers Submit Application - owrugs.net",
+   "u": "https://www.owrugs.net/cgi-bin2/hr_appsub.mbr/start",
+   "s": "If you have applied with Oriental Weavers USA, Inc. within the past 12 months, please do not re-apply. We have your applicaiton in our database and you will be "
+  },
+  {
+   "t": "CAREERS | Corporate",
+   "u": "https://corporate.wwe.com/careers",
+   "s": "WWE is proud to offer competitive employee compensation and benefits along with an exciting variety of health and wellness initiatives."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers-orientaltrading.icims.com/jobs/",
+  "title": "Careers",
+  "status": 200,
+  "bytes": 40915,
+  "markers": [
+   "icims"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "icims:careers-orientaltrading",
+  "score": 17,
+  "snippet": "Explore job opportunities at Oriental Trading Company, Inc. and apply for positions across various categories and locations.",
+  "backend": "direct"
+ },
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "careers-orientaltrading = Oriental Trading (US party supplies), not Oriental Wrestling Entertainment",
+  "ts": "2026-09-29T04:43:56.028997Z",
+  "by": "S21 retry-wave adjudication"
+ }
 }

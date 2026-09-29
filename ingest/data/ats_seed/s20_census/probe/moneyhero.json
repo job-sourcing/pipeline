@@ -2,10 +2,172 @@
  "brand": "MoneyHero",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:37:46.954Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:35:42.075Z",
+ "candidates": [
+  {
+   "url": "https://job-boards.greenhouse.io/moneyherogroup",
+   "title": "Jobs at MoneyHero Group",
+   "status": 200,
+   "bytes": 53798,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "greenhouse:moneyherogroup",
+   "score": 17,
+   "snippet": "At MoneyHero Group, our digital financial comparison platforms engage millions of consumers monthly across our markets: Singapore, Hong Kong SAR, The Philippine",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.moneyherogroup.com/careers",
+   "title": "Careers - MoneyHero Group",
+   "status": 200,
+   "bytes": 91423,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Asia's leading personal finance comparison group, empowering 7.4M+ users monthly to compare and find the best credit cards, loans, insurance, and savings. Helpi",
+   "backend": "direct"
+  },
+  {
+   "url": "https://alion.io/company/moneyherogroup/jobs",
+   "title": "MoneyHero Group Jobs: 7 Open Vacancies, Salaries and Locations (2026) | Alion",
+   "status": 200,
+   "bytes": 58385,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "What jobs is MoneyHero Group hiring for right now? As of Sep 28, 2026, MoneyHero Group has 7 open jobs on Alion. They are posted in 4 cities. 7 allow remote or ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - MoneyHero Group",
+   "u": "https://www.moneyherogroup.com/careers",
+   "s": "Asia's leading personal finance comparison group, empowering 7.4M+ users monthly to compare and find the best credit cards, loans, insurance, and savings. Helpi"
+  },
+  {
+   "t": "Jobs at MoneyHero Group",
+   "u": "https://job-boards.greenhouse.io/moneyherogroup",
+   "s": "At MoneyHero Group, our digital financial comparison platforms engage millions of consumers monthly across our markets: Singapore, Hong Kong SAR, The Philippine"
+  },
+  {
+   "t": "MoneyHero Group (Nasdaq: MNY): Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/moneyherogroup/jobs/",
+   "s": "MoneyHero Limited (NASDAQ: MNY) is a leading tech- and AI-powered personal finance aggregation and comparison platform that provides consumers with actionable i"
+  },
+  {
+   "t": "MoneyHero Group Jobs (September 2026)",
+   "u": "https://startup.jobs/company/moneyhero-group",
+   "s": "MoneyHero Group is hiring. Apply to 17 jobs like Associate Director, Engineering, Senior IT Support Specialist, and Senior Staff, Platform Engineer, DevOps"
+  },
+  {
+   "t": "MoneyHero Group (Nasdaq: MNY): Jobs | LinkedIn",
+   "u": "https://sg.linkedin.com/company/moneyherogroup/jobs",
+   "s": "MoneyHero Limited (NASDAQ: MNY) is a leading tech- and AI-powered personal finance aggregation and comparison platform that provides consumers with actionable i"
+  },
+  {
+   "t": "MoneyHero Group Jobs: 7 Open Vacancies, Salaries and Locations (2026 ...",
+   "u": "https://alion.io/company/moneyherogroup/jobs",
+   "s": "What jobs is MoneyHero Group hiring for right now? As of Sep 28, 2026, MoneyHero Group has 7 open jobs on Alion. They are posted in 4 cities. 7 allow remote or "
+  },
+  {
+   "t": "MoneyHero Group - Creating resilient financial futures for all",
+   "u": "https://www.moneyherogroup.com/",
+   "s": "Asia's leading personal finance comparison group, empowering 7.4M+ users monthly to compare and find the best credit cards, loans, insurance, and savings. Helpi"
+  },
+  {
+   "t": "19 Moneyhero Group jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/moneyhero-group-jobs-worldwide",
+   "s": "Today's top 19 Moneyhero Group jobs in Worldwide. Leverage your professional network, and get hired. New Moneyhero Group jobs added daily."
+  },
+  {
+   "t": "Careers - MoneyHero Group",
+   "u": "https://www.moneyherogroup.com/careers",
+   "s": "Asia's leading personal finance comparison group, empowering 7.4M+ users monthly to compare and find the best credit cards, loans, insurance, and savings. Helpi"
+  },
+  {
+   "t": "Jobs at MoneyHero Group",
+   "u": "https://job-boards.greenhouse.io/moneyherogroup",
+   "s": "At MoneyHero Group, our digital financial comparison platforms engage millions of consumers monthly across our markets: Singapore, Hong Kong SAR, The Philippine"
+  },
+  {
+   "t": "MoneyHero Group Jobs (September 2026)",
+   "u": "https://startup.jobs/company/moneyhero-group",
+   "s": "MoneyHero Group is hiring. Apply to 17 jobs like Associate Director, Engineering, Senior IT Support Specialist, and Senior Staff, Platform Engineer, DevOps"
+  },
+  {
+   "t": "MoneyHero Group (Nasdaq: MNY): Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/moneyherogroup/jobs/",
+   "s": "MoneyHero Limited (NASDAQ: MNY) is a leading tech- and AI-powered personal finance aggregation and comparison platform that provides consumers with actionable i"
+  },
+  {
+   "t": "MoneyHero Group Jobs: 7 Open Vacancies, Salaries and Locations (2026 ...",
+   "u": "https://alion.io/company/moneyherogroup/jobs",
+   "s": "As of Sep 28, 2026, MoneyHero Group has 7 open jobs on Alion. They are posted in 4 cities. 7 allow remote or hybrid work."
+  },
+  {
+   "t": "19 Moneyhero Group jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/moneyhero-group-jobs-worldwide",
+   "s": "Today's top 19 Moneyhero Group jobs in Worldwide. Leverage your professional network, and get hired. New Moneyhero Group jobs added daily."
+  },
+  {
+   "t": "MoneyHero Group (Nasdaq: MNY): Jobs | LinkedIn",
+   "u": "https://sg.linkedin.com/company/moneyherogroup/jobs",
+   "s": "MoneyHero Limited (NASDAQ: MNY) is a leading tech- and AI-powered personal finance aggregation and comparison platform that provides consumers with actionable i"
+  },
+  {
+   "t": "MoneyHero Group Jobs & Careers - 6 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Moneyhero-Group-Jobs-E8752700.htm",
+   "s": "Search job openings at MoneyHero Group. 6 MoneyHero Group jobs including salaries, ratings, and reviews, posted by MoneyHero Group employees."
+  },
+  {
+   "t": "Careers - MoneyHero Group",
+   "u": "https://www.moneyherogroup.com/careers",
+   "s": "As an Equal Employment Opportunity employer, we welcome you to join us if your skills, aptitude and qualifications fit the job requirements. None of these will "
+  },
+  {
+   "t": "MoneyHero Group (Nasdaq: MNY): Jobs | LinkedIn",
+   "u": "https://sg.linkedin.com/company/moneyherogroup/jobs",
+   "s": "MoneyHero Limited (NASDAQ: MNY) is a leading tech- and AI-powered personal finance aggregation and comparison platform that provides consumers with actionable i"
+  },
+  {
+   "t": "Jobs at MoneyHero Group - job-boards.greenhouse.io",
+   "u": "https://job-boards.greenhouse.io/moneyherogroup",
+   "s": "At MoneyHero Group, our digital financial comparison platforms engage millions of consumers monthly across our markets: Singapore, Hong Kong SAR, The Philippine"
+  },
+  {
+   "t": "23,000+ Moneyhero jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/moneyhero-jobs-worldwide",
+   "s": "Today's top 23,000+ Moneyhero jobs in Worldwide. Leverage your professional network, and get hired. New Moneyhero jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://job-boards.greenhouse.io/moneyherogroup",
+  "title": "Jobs at MoneyHero Group",
+  "status": 200,
+  "bytes": 53798,
+  "markers": [
+   "greenhouse"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "greenhouse:moneyherogroup",
+  "score": 17,
+  "snippet": "At MoneyHero Group, our digital financial comparison platforms engage millions of consumers monthly across our markets: Singapore, Hong Kong SAR, The Philippine",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "greenhouse:moneyherogroup authentic (HK fintech MoneyHero) \u2014 18 jobs, empty location strings, no US evidence",
+  "ts": "2026-09-29T04:43:56.028997Z",
+  "by": "S21 retry-wave adjudication"
+ }
 }

@@ -2,10 +2,166 @@
  "brand": "Centro Digital Pictures",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:38:31.603Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:37:50.363Z",
+ "candidates": [
+  {
+   "url": "https://onedigital.wd504.myworkdayjobs.com/Centro",
+   "title": "",
+   "status": 200,
+   "bytes": 3140,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "workday:Centro",
+   "score": 17,
+   "snippet": "Centro Benefits Research is an employee benefits service organization which provides research, analysis, and process facilitation for employee benefits consulta",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://careers.centrocdx.com/index.html",
+   "title": "Centro Careers",
+   "status": 200,
+   "bytes": 25029,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Centro is fully invested in your success, offering clear pathways for career progression and continuous learning so you can grow, learn, and advance. With acces",
+   "backend": "direct"
+  },
+  {
+   "url": "https://centrocdx.com/careers/",
+   "title": "Careers | Centro",
+   "status": 200,
+   "bytes": 26555,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore careers at Centro across project management, talent acquisition, finance and IT, and build your career in BPO and digital transformation.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Centro Careers",
+   "u": "https://careers.centrocdx.com/index.html",
+   "s": "Centro is fully invested in your success, offering clear pathways for career progression and continuous learning so you can grow, learn, and advance. With acces"
+  },
+  {
+   "t": "Careers at Centro | Top BPO and Technology Jobs in 2026",
+   "u": "https://centrocdx.com/careers/",
+   "s": "Explore careers at Centro across project management, talent acquisition, finance and IT, and build your career in BPO and digital transformation."
+  },
+  {
+   "t": "Jobs at Centro",
+   "u": "https://jobs.centrocdx.com/jobs/Career",
+   "s": "Everyone at Centro is free to explore and work the way they want. Come join us!"
+  },
+  {
+   "t": "Centro Digital Pictures Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/centro-digital-pictures-ltd.",
+   "s": "Centro Digital Pictures Ltd. | 113 followers on LinkedIn. Centro Digital Pictures was founded by John Chu in 1987. Initially specializing in post-production wor"
+  },
+  {
+   "t": "Centro Digital Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Centro-Digital-jobs.html",
+   "s": "102 Centro Digital jobs available on Indeed.com. Apply to Finance Manager, Digital Strategist, Gerente De Casino and more!"
+  },
+  {
+   "t": "Centro - LinkedIn",
+   "u": "https://www.linkedin.com/company/centro",
+   "s": "Centro | 37,495 followers on LinkedIn. All Digital. One Platform. | Basis Technologies is a global provider of workflow automation, intelligence and programmati"
+  },
+  {
+   "t": "Centro Jobs (August 2026)",
+   "u": "https://startup.jobs/company/centro",
+   "s": "Centro is hiring. Apply to jobs like Sr Compensation Analyst, Integrated Media Planner, and Senior Software Engineer, Platform. Updated daily!"
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://onedigital.wd504.myworkdayjobs.com/Centro",
+   "s": "Centro Benefits Research is an employee benefits service organization which provides research, analysis, and process facilitation for employee benefits consulta"
+  },
+  {
+   "t": "Centro Careers",
+   "u": "https://careers.centrocdx.com/index.html",
+   "s": "Centro is fully invested in your success, offering clear pathways for career progression and continuous learning so you can grow, learn, and advance. With acces"
+  },
+  {
+   "t": "Careers at Centro | Top BPO and Technology Jobs in 2026",
+   "u": "https://centrocdx.com/careers/",
+   "s": "Explore careers at Centro across project management, talent acquisition, finance and IT, and build your career in BPO and digital transformation."
+  },
+  {
+   "t": "Centro Digital Pictures Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/centro-digital-pictures-ltd.",
+   "s": "Centro Digital Pictures was founded by John Chu in 1987. Initially specializing in post-production work, in 1998 they decided to co-produce The Storm Riders a f"
+  },
+  {
+   "t": "Jobs at Centro",
+   "u": "https://jobs.centrocdx.com/jobs/Career",
+   "s": "Everyone at Centro is free to explore and work the way they want. Come join us!"
+  },
+  {
+   "t": "Centro.team - Career Page",
+   "u": "https://career.centro.team/apply",
+   "s": "Explore open job opportunities at Centro.team. Thanks for visiting our Career Page. Please review our open positions and apply to the positions that match your "
+  },
+  {
+   "t": "Centro Jobs (August 2026)",
+   "u": "https://startup.jobs/company/centro",
+   "s": "Centro is hiring. Apply to jobs like Sr Compensation Analyst, Integrated Media Planner, and Senior Software Engineer, Platform. Updated daily!"
+  },
+  {
+   "t": "Centro Inc Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Centro-Inc",
+   "s": "Centro is a software and managed services company used by brands and advertising agencies to buy online ads from publishers. Advertisers use Centro for digital "
+  },
+  {
+   "t": "5,000+ Centro Digital jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/centro-digital-jobs",
+   "s": "Today's top 5,000+ Centro Digital jobs in United States. Leverage your professional network, and get hired. New Centro Digital jobs added daily."
+  },
+  {
+   "t": "Centro Careers",
+   "u": "https://careers.centrocdx.com/index.html",
+   "s": "Centro is fully invested in your success, offering clear pathways for career progression and continuous learning so you can grow, learn, and advance. With acces"
+  },
+  {
+   "t": "Careers at Centro | Top BPO and Technology Jobs in 2026",
+   "u": "https://centrocdx.com/careers/",
+   "s": "Explore careers at Centro across project management, talent acquisition, finance and IT, and build your career in BPO and digital transformation."
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://onedigital.wd504.myworkdayjobs.com/Centro",
+   "s": "Centro Benefits Research is an employee benefits service organization which provides research, analysis, and process facilitation for employee benefits consulta"
+  },
+  {
+   "t": "Centro Jobs (August 2026)",
+   "u": "https://startup.jobs/company/centro",
+   "s": "Centro is hiring. Apply to jobs like Sr Compensation Analyst, Integrated Media Planner, and Senior Software Engineer, Platform. Updated daily!"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://onedigital.wd504.myworkdayjobs.com/Centro",
+  "title": "",
+  "status": 200,
+  "bytes": 3140,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "workday:Centro",
+  "score": 17,
+  "snippet": "Centro Benefits Research is an employee benefits service organization which provides research, analysis, and process facilitation for employee benefits consulta",
+  "backend": "supabase"
+ },
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "onedigital.wd504 = OneDigital US insurance; careers.centrocdx.com unverified-low-value",
+  "ts": "2026-09-29T04:43:56.028997Z",
+  "by": "S21 retry-wave adjudication"
+ }
 }

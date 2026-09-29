@@ -2,20 +2,8 @@
  "brand": "Chaoda Modern Agriculture",
  "tier": "lca",
  "lca": "CHAODA GROUP USA CO. LTD.",
- "ts": "2026-09-27T08:02:31.583Z",
+ "ts": "2026-09-29T04:37:23.004Z",
  "candidates": [
-  {
-   "url": "http://www.chaoda.hk.cn/",
-   "title": "超大现代农业集团 - 超大 超大现代农业 超大现代农业集团",
-   "status": 200,
-   "bytes": 11987,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 5,
-   "snippet": "Home page About us News Centre Brand and Products Innovation Quality Management Corporate Responsibility For Investors",
-   "backend": "direct"
-  },
   {
    "url": "http://www.chaoda.com/",
    "title": "超大现代农业集团 - 超大 超大现代农业 超大现代农业集团",
@@ -37,7 +25,19 @@
    "jsonld_jobs": 0,
    "spec": null,
    "score": 5,
-   "snippet": "超大集团诞生于习近平新时代中国特色社会主义思想重要孕育地和实践地福建，深耕农业30载，回望走过的路，每一步都镌刻着习近平新时代中国特色社会主义思想的伟力。",
+   "snippet": "超大集团诞生于习近平新时代中国特色社会主义思想重要孕育地和实践地福建，深耕农业30载，回望走过的路，每一步都镌刻着习近平新时代中国特色社会主义思想的伟力。习总书记曾7次亲临超大集团指导工作，对超大集团提出殷切期望与诚挚要求，超大人始终牢记习总书记的谆谆嘱托，主动把企业 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "http://www.chaoda.hk.cn/",
+   "title": "超大现代农业集团 - 超大 超大现代农业 超大现代农业集团",
+   "status": 200,
+   "bytes": 11987,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Home page About us News Centre Brand and Products Innovation Quality Management Corporate Responsibility For Investors",
    "backend": "direct"
   }
  ],
@@ -53,44 +53,9 @@
    "s": "Offertoday.com provides job seekers with the latest recruitment, as well as s company industry, profile and online recruiters.Chaoda Modern Agriculture (Holding"
   },
   {
-   "t": "Chaoda Modern Agriculture Pay and Benefits | Glassdoor",
-   "u": "https://www.glassdoor.com/pay-and-benefits/Chaoda-Modern-Agriculture-E40494",
-   "s": "Get data insights into total compensation, benefits, perks, and rewards for working at Chaoda Modern Agriculture through real anonymous employees."
-  },
-  {
-   "t": "CHAODA MODERN AGRICULTURE (HOLDINGS) LIMITED - cpjobs.com",
-   "u": "https://www.cpjobs.com/hk/en/company/36999",
-   "s": "Company info Location All Hong KongRM 2705, CHINA RESOURCES BLDG, 26 HARBOUR ROAD, WANCHAI, HONG KONG, , Now hiring"
-  },
-  {
-   "t": "Chaoda Modern Agriculture - Wikipedia",
-   "u": "https://en.wikipedia.org/wiki/Chaoda_Modern_Agriculture",
-   "s": "Chaoda Modern Agriculture (Holdings) Limited is a publicly owned company in the production and distribution of ecologically grown vegetables and other agricultu"
-  },
-  {
-   "t": "Chaoda - 超大现代农业集团",
-   "u": "http://www.chaoda.hk.cn/",
-   "s": "Home page About us News Centre Brand and Products Innovation Quality Management Corporate Responsibility For Investors"
-  },
-  {
-   "t": "Chaoda Modern Agriculture Officer Reviews | Glassdoor",
-   "u": "https://www.glassdoor.sg/Reviews/Chaoda-Modern-Agriculture-Officer-Reviews-EI_IE40494.0,25_KO26,33.htm",
-   "s": "1 Chaoda Modern Agriculture review. A free inside look at company reviews and salaries posted anonymously by employees."
-  },
-  {
-   "t": "Chaoda Group USA Careers and Employment | Indeed.com",
-   "u": "https://www.indeed.com/cmp/Chaoda-Group-USA",
-   "s": "Find out what works well at Chaoda Group USA from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Comp"
-  },
-  {
-   "t": "Working at Chaoda Modern Agriculture | Glassdoor",
-   "u": "https://www.glassdoor.com/Overview/Working-at-Chaoda-Modern-Agriculture-EI_IE40494.11,36.htm",
+   "t": "What is Chaoda Modern Agriculture? Company Culture, Mission, Values",
+   "u": "https://www.glassdoor.ca/Overview/Working-at-Chaoda-Modern-Agriculture-EI_IE40494.11,36.htm",
    "s": "See what employees say it's like to work at Chaoda Modern Agriculture. Salaries, reviews, and more - all posted by employees working at Chaoda Modern Agricultur"
-  },
-  {
-   "t": "Chaoda Modern Agriculture (Holdings) Limited jobs recruitment-2026 Hong ...",
-   "u": "https://www.offertoday.com/en/company/U835jn1BvigYFcCfzTGuWQ==",
-   "s": "Offertoday.com provides job seekers with the latest recruitment, as well as s company industry, profile and online recruiters.Chaoda Modern Agriculture (Holding"
   },
   {
    "t": "超大现代农业集团 - 超大 超大现代农业 超大现代农业集团",
@@ -108,19 +73,14 @@
    "s": "Looking for a Personal Assistant position in Southern? Chaoda Modern Agriculture (Holdings) Limited is now hiring Personal Assistant. Location: Southern, Experi"
   },
   {
-   "t": "What is Chaoda Modern Agriculture? Company Culture, Mission, Values",
-   "u": "https://www.glassdoor.ca/Overview/Working-at-Chaoda-Modern-Agriculture-EI_IE40494.11,36.htm",
-   "s": "Chaoda Modern Agriculture produces and distributes vegetables in China. The company operates some 30 production bases and a total production area of more than 2"
-  },
-  {
-   "t": "Chaoda - 超大现代农业集团",
-   "u": "http://www.chaoda.hk.cn/",
-   "s": "Home page About us News Centre Brand and Products Innovation Quality Management Corporate Responsibility For Investors"
+   "t": "Chaoda Group USA Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Chaoda-Group-USA",
+   "s": "Find out what works well at Chaoda Group USA from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Comp"
   },
   {
    "t": "公司概况-超大现代农业集团 - chaoda.com",
    "u": "http://www.chaoda.com/about/",
-   "s": "超大集团诞生于习近平新时代中国特色社会主义思想重要孕育地和实践地福建，深耕农业30载，回望走过的路，每一步都镌刻着习近平新时代中国特色社会主义思想的伟力。"
+   "s": "超大集团诞生于习近平新时代中国特色社会主义思想重要孕育地和实践地福建，深耕农业30载，回望走过的路，每一步都镌刻着习近平新时代中国特色社会主义思想的伟力。习总书记曾7次亲临超大集团指导工作，对超大集团提出殷切期望与诚挚要求，超大人始终牢记习总书记的谆谆嘱托，主动把企业 ..."
   },
   {
    "t": "Working at Chaoda Modern Agriculture | Glassdoor",
@@ -133,14 +93,54 @@
    "s": "Offertoday.com provides job seekers with the latest recruitment, as well as s company industry, profile and online recruiters.Chaoda Modern Agriculture (Holding"
   },
   {
-   "t": "Chaoda Group USA Careers and Employment | Indeed.com",
-   "u": "https://www.indeed.com/cmp/Chaoda-Group-USA",
-   "s": "Find out what works well at Chaoda Group USA from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Comp"
-  },
-  {
    "t": "Southern Personal Assistant jobs recruitment-Chaoda Modern Agriculture ...",
    "u": "https://m.offertoday.com/en/job/Xf-9DxrIIjTSqVDlfDd3zA==",
    "s": "Looking for a Personal Assistant position in Southern? Chaoda Modern Agriculture (Holdings) Limited is now hiring Personal Assistant. Location: Southern, Experi"
+  },
+  {
+   "t": "Chaoda Modern Agriculture Pay and Benefits | Glassdoor",
+   "u": "https://www.glassdoor.com/pay-and-benefits/Chaoda-Modern-Agriculture-E40494",
+   "s": "Get data insights into total compensation, benefits, perks, and rewards for working at Chaoda Modern Agriculture through real anonymous employees."
+  },
+  {
+   "t": "超大现代农业集团 - 超大 超大现代农业 超大现代农业集团",
+   "u": "http://www.chaoda.com/",
+   "s": "超大集团诞生于习近平新时代中国特色社会主义思想重要孕育地和实践地福建，深耕农业30载，回望走过的路，每一步都镌刻着习近平新时代中国特色社会主义思想的伟力。"
+  },
+  {
+   "t": "What is Chaoda Modern Agriculture? Company Culture, Mission, Values",
+   "u": "https://www.glassdoor.ca/Overview/Working-at-Chaoda-Modern-Agriculture-EI_IE40494.11,36.htm",
+   "s": "Chaoda Modern Agriculture produces and distributes vegetables in China. The company operates some 30 production bases and a total production area of more than 2"
+  },
+  {
+   "t": "No Jobs at Chaoda Modern Agriculture | Glassdoor",
+   "u": "https://www.glassdoor.co.uk/Jobs/Chaoda-Modern-Agriculture-Jobs-E40494.htm",
+   "s": "There are currently no open jobs at Chaoda Modern Agriculture listed on Glassdoor. Sign up to get notified as soon as new Chaoda Modern Agriculture jobs are pos"
+  },
+  {
+   "t": "公司概况-超大现代农业集团 - chaoda.com",
+   "u": "http://www.chaoda.com/about/",
+   "s": "超大集团诞生于习近平新时代中国特色社会主义思想重要孕育地和实践地福建，深耕农业30载，回望走过的路，每一步都镌刻着习近平新时代中国特色社会主义思想的伟力。"
+  },
+  {
+   "t": "Chaoda Modern Agriculture (Holdings) Limited jobs recruitment-2026 Hong ...",
+   "u": "https://www.offertoday.com/en/company/U835jn1BvigYFcCfzTGuWQ==",
+   "s": "Offertoday.com provides job seekers with the latest recruitment, as well as s company industry, profile and online recruiters.Chaoda Modern Agriculture (Holding"
+  },
+  {
+   "t": "Working at Chaoda Modern Agriculture | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Chaoda-Modern-Agriculture-EI_IE40494.11,36.htm",
+   "s": "See what employees say it's like to work at Chaoda Modern Agriculture. Salaries, reviews, and more - all posted by employees working at Chaoda Modern Agricultur"
+  },
+  {
+   "t": "Chaoda Modern Agriculture Pay and Benefits | Glassdoor",
+   "u": "https://www.glassdoor.com/pay-and-benefits/Chaoda-Modern-Agriculture-E40494",
+   "s": "Get data insights into total compensation, benefits, perks, and rewards for working at Chaoda Modern Agriculture through real anonymous employees."
+  },
+  {
+   "t": "Chaoda Group USA Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Chaoda-Group-USA",
+   "s": "Find out what works well at Chaoda Group USA from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Comp"
   }
  ],
  "dict_hits": [],

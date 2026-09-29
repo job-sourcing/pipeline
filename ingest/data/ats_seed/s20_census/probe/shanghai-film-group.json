@@ -2,10 +2,148 @@
  "brand": "Shanghai Film Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:23:10.632Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:36:51.752Z",
+ "candidates": [
+  {
+   "url": "https://www.showbizjobs.com/jobs/location/city/shanghai",
+   "title": "",
+   "status": 200,
+   "bytes": 23339,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find amazing dream jobs in the shanghai area in Film, TV, Production, Streaming Media, Video Games, Theater, Movies, Show Business, Entertainment, and the Arts.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.reveliolabs.com/companies/shanghai-film-group/employees",
+   "title": "Shanghai Film Group Number of Employees 2026 | Employee Count &amp; Headcount Data | Revelio Labs",
+   "status": 200,
+   "bytes": 188736,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Shanghai Film Group had 421 employees as of March 2026, up 35 (+9.6%) from the prior year. Headcount, salary, location, and hiring trends from Revelio Labs.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.smg.cn/review/job/flow.html",
+   "title": "招聘",
+   "status": 200,
+   "bytes": 4474,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "上海广播电视台官方网站 上海文化广播影视集团有限公司 版权所有 © 2004 - 2026 备案号: 沪ICP备10218859号-2 沪公网安备 ...",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Shanghai Film Group Co. Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/shanghai-film-group-co-ltd-",
+   "s": "Shanghai Film Group Co. Ltd. | 308 followers on LinkedIn. Shanghai Film is a motion pictures and film company based out of SHANGHAI. Shanghai Film representativ"
+  },
+  {
+   "t": "Shanghai Film Group - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Shanghai_Film_Group",
+   "s": "Shanghai Film Group Corporation (Chinese: 上海電影集團公司) is a film, animation and documentary production company running several studios all of which are located in "
+  },
+  {
+   "t": "上影2026年招聘公告",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=ef4cafb92b937650e39aaeaaf9b90824",
+   "s": "上海电影（集团）有限公司2026年的招聘信息主要通过智联招聘平台（ www.zhaopin.com ）发布，涵盖校园招聘与社会招聘，求职者可搜索\"上海电影 (集团)有限公司\"查看具体岗位并投递简历。"
+  },
+  {
+   "t": "Shanghai Film Group Number of Employees 2026 | Employee Count ...",
+   "u": "https://www.reveliolabs.com/companies/shanghai-film-group/employees",
+   "s": "Shanghai Film Group had 421 employees as of March 2026, up 35 (+9.6%) from the prior year. Headcount, salary, location, and hiring trends from Revelio Labs."
+  },
+  {
+   "t": "上海电影股份有限公司 - sh-sfc.com",
+   "u": "https://www.sh-sfc.com/col3/index.html",
+   "s": "上海电影股份有限公司为国内首批实现A股主板上市的国有电影企业之一，其主营业务涵盖电影发行及放映、版权运营销售、院线和影院经营、线上票务与会员服务等，以及影院、文化设施的投资、开发和经营。上影股份具有完整的电影发行放映产业链，在电影发行及放映业务的各个领域均具有领先 ..."
+  },
+  {
+   "t": "231 Film jobs in Shanghai - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/film-jobs-shanghai-city-china",
+   "s": "Today's top 231 Film jobs in Shanghai. Leverage your professional network, and get hired. New Film jobs added daily."
+  },
+  {
+   "t": "上海电影（集团）有限公司2026届校园招聘 - 后期制作/制片管理/项目执行 - 全职招聘网",
+   "u": "https://www.quanzhi.com/notice/690e227cb49f1f3fbebf129c",
+   "s": "【上海电影（集团）有限公司2026届校园招聘】面向2026届应届生，招聘后期制作/制片管理/项目执行，工作地上海，不限专业可 ..."
+  },
+  {
+   "t": "上影集团2026校招公告",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=7b99b4fb8a0ffcfbb0e7b10caa3c09ee",
+   "s": "上影集团（上海电影集团有限公司）2026年校园招聘已启动，面向应届毕业生提供影视制作、市场营销、产品设计等多个岗位类别，招聘单位包括集团旗下多家子公司，可通过智联招聘平台申请。"
+  },
+  {
+   "t": "48 film Jobs in Shanghai, China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/shanghai-film-jobs-SRCH_IL.0,8_IM999_KO9,13.htm",
+   "s": "Search Film jobs in Shanghai, China with company ratings & salaries. 48 open jobs for Film in Shanghai."
+  },
+  {
+   "t": "shanghai Jobs - ShowbizJobs",
+   "u": "https://www.showbizjobs.com/jobs/location/city/shanghai",
+   "s": "Find amazing dream jobs in the shanghai area in Film, TV, Production, Streaming Media, Video Games, Theater, Movies, Show Business, Entertainment, and the Arts."
+  },
+  {
+   "t": "231 Film jobs in Shanghai - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/film-jobs-shanghai-city-china",
+   "s": "Today's top 231 Film jobs in Shanghai. Leverage your professional network, and get hired. New Film jobs added daily."
+  },
+  {
+   "t": "Shanghai Film Group Number of Employees 2026 | Employee Count ...",
+   "u": "https://www.reveliolabs.com/companies/shanghai-film-group/employees",
+   "s": "Shanghai Film Group had 421 employees as of March 2026, up 35 (+9.6%) from the prior year. Headcount, salary, location, and hiring trends from Revelio Labs."
+  },
+  {
+   "t": "上影2026年招聘公告",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=ef4cafb92b937650e39aaeaaf9b90824",
+   "s": "上海电影（集团）有限公司2026年的招聘信息主要通过智联招聘平台（ www.zhaopin.com ）发布，涵盖校园招聘与社会招聘，求职者可搜索\"上海电影 (集团)有限公司\"查看具体岗位并投递简历。"
+  },
+  {
+   "t": "Shanghai Film Group Co. Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/shanghai-film-group-co-ltd-",
+   "s": "Shanghai Film Group Co. Ltd. | 308 followers on LinkedIn. Shanghai Film is a motion pictures and film company based out of SHANGHAI. Shanghai Film representativ"
+  },
+  {
+   "t": "「上海电影（集团）有限公司招聘」-boss直聘",
+   "u": "https://www.zhipin.com/companys/5c5e11253949ee141nB82di-.html",
+   "s": "BOSS直聘为求职者提供2026年上海电影（集团）有限公司招聘信息，更有上海电影（集团）有限公司的品牌信息（上海电影集团有限公司，上海电影集团）、公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，上海电影（集团）有限公司正在线直聘职位，找工作就登录BOSS直聘 ..."
+  },
+  {
+   "t": "上影集团2026校招公告",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=7b99b4fb8a0ffcfbb0e7b10caa3c09ee",
+   "s": "上影集团（上海电影集团有限公司）2026年校园招聘已启动，面向应届毕业生提供影视制作、市场营销、产品设计等多个岗位类别，招聘单位包括集团旗下多家子公司，可通过智联招聘平台申请。"
+  },
+  {
+   "t": "shanghai Jobs - ShowbizJobs",
+   "u": "https://www.showbizjobs.com/jobs/location/city/shanghai",
+   "s": "Find amazing dream jobs in the shanghai area in Film, TV, Production, Streaming Media, Video Games, Theater, Movies, Show Business, Entertainment, and the Arts."
+  },
+  {
+   "t": "Shanghai Film Group Number of Employees 2026 | Employee Count ...",
+   "u": "https://www.reveliolabs.com/companies/shanghai-film-group/employees",
+   "s": "Is Shanghai Film Group hiring right now? Yes, Shanghai Film Group is actively hiring. Shanghai Film Group had 1 active job postings in 2026, a 200.0 % increase "
+  },
+  {
+   "t": "48 film Jobs in Shanghai, China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/shanghai-film-jobs-SRCH_IL.0,8_IM999_KO9,13.htm",
+   "s": "Search Film jobs in Shanghai, China with company ratings & salaries. 48 open jobs for Film in Shanghai."
+  },
+  {
+   "t": "231 Film jobs in Shanghai - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/film-jobs-shanghai-city-china",
+   "s": "Today's top 231 Film jobs in Shanghai. Leverage your professional network, and get hired. New Film jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

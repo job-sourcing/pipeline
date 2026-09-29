@@ -2,10 +2,161 @@
  "brand": "Sunshine Kaidi",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:44:43.196Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:31:52.353Z",
+ "candidates": [
+  {
+   "url": "https://sunshinecareers.com/",
+   "title": "Sunshine Careers & Consulting Services",
+   "status": 200,
+   "bytes": 2421,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "An Global Career Platform Empowering Your Career, Globally. Jobs, Internships, Study Abroad, Freelancing, AI Tools & Learning Your unified ecosystem to bridge t",
+   "backend": "direct"
+  },
+  {
+   "url": "https://sunshine-energieberatung-gmbh.jobs.personio.de/?language=de",
+   "title": "Jobs bei Sunshine Energieberatung GmbH",
+   "status": 200,
+   "bytes": 124680,
+   "markers": [
+    "personio"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Energieberater / Energie-Effizienz-Experte (m/w/d) im Raum Nordrhein-Westfalen Au\u00dfendienst / Remote Nordrhein-Westfalen Voll- oder Teilzeit Festanstellung",
+   "backend": "direct"
+  },
+  {
+   "url": "https://enipedia.org/wiki/Sunshine_Kaidi",
+   "title": "Sunshine Kaidi: Corporate History and Bioenergy Operations | Enipedia",
+   "status": 200,
+   "bytes": 90536,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Profile of Sunshine Kaidi, a major Chinese bioenergy holding company founded in 1992, covering its acquisitions and debt challenges",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Kaidi New Energy Group - LinkedIn",
+   "u": "https://www.linkedin.com/company/sunshine-kaidi-new-energy-group-co-ltd-",
+   "s": "Kaidi New Energy Group | 175 followers on LinkedIn. Sunshine Kaidi New Energy Group Co., Ltd. is a Renewables and Environment company located in Wuhan, Hubei, C"
+  },
+  {
+   "t": "Sunshine Kaidi: Corporate History and Bioenergy Operations",
+   "u": "https://enipedia.org/wiki/Sunshine_Kaidi",
+   "s": "Profile of Sunshine Kaidi, a major Chinese bioenergy holding company founded in 1992, covering its acquisitions and debt challenges"
+  },
+  {
+   "t": "Sunshine Kaidi - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Sunshine_Kaidi",
+   "s": "Sunshine Kaidi New Energy Group Co. Ltd. (Sunshine Kaidi, former name: Wuhan Kaidi Holding Investment Co., Ltd.) is a Chinese holding company. It is one of the "
+  },
+  {
+   "t": "Sunshine Kaidi \u2014 Grokipedia",
+   "u": "https://grokipedia.com/page/sunshine_kaidi",
+   "s": "Sunshine Kaidi New Energy Group Co., Ltd. is a Chinese high-tech enterprise specializing in renewable energy, with a primary focus on biomass energy production,"
+  },
+  {
+   "t": "KAIDI Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Kaidi",
+   "s": "Find out what works well at KAIDI from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for"
+  },
+  {
+   "t": "Sunshine Careers & Consulting Services",
+   "u": "https://sunshinecareers.com/",
+   "s": "An Global Career Platform Empowering Your Career, Globally. Jobs, Internships, Study Abroad, Freelancing, AI Tools & Learning Your unified ecosystem to bridge t"
+  },
+  {
+   "t": "Sunshine Kaidi (Finland) New Energy Co. Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/sunshine-kaidi-finland-new-energy-co--ltd-",
+   "s": "Founded in 2016, Kaidi Finland is part of Sunshine Kaidi New Energy Group. Kaidi Group is a Chinese conglomerate that focuses on renewable energy production, en"
+  },
+  {
+   "t": "Sunshine Kaidi New Energy Group Co., Ltd - cnverify.com",
+   "u": "https://www.cnverify.com/company/Sunshine-Kaidi-New-Energy-Group-Co-Ltd",
+   "s": "What year was Sunshine Kaidi New Energy Group Co., Ltd started? The company was started in 2002-12-31"
+  },
+  {
+   "t": "Karriere Sunshine | SunShine",
+   "u": "https://sunshineenergy.de/kontakt/karriere/",
+   "s": "Karriere bei der SunShine Group: Aktuelle Stellenangebote f\u00fcr Buchhalter, Elektriker, Bauleiter und Azubis. Werden Sie Teil der Energiewende!"
+  },
+  {
+   "t": "Kaidi New Energy Group - LinkedIn",
+   "u": "https://www.linkedin.com/company/sunshine-kaidi-new-energy-group-co-ltd-",
+   "s": "Kaidi New Energy Group | 175 followers on LinkedIn. Sunshine Kaidi New Energy Group Co., Ltd. is a Renewables and Environment company located in Wuhan, Hubei, C"
+  },
+  {
+   "t": "Sunshine Jobs | Jetzt 200 offene Stellen finden | Indeed",
+   "u": "https://de.indeed.com/q-sunshine-jobs.html?vjk=c7fd3cc5d6ed180c",
+   "s": "Finden Sie jetzt 214 zu besetzende Sunshine Jobs auf Indeed.com, der weltweiten Nr. 1 der Online-Jobb\u00f6rsen. (Basierend auf Total Visits weltweit, Quelle: comSco"
+  },
+  {
+   "t": "Sunshine Kaidi \u2014 chemical projects, investments & news",
+   "u": "https://chemxplore.com/companies/sunshine-kaidi",
+   "s": "Track Sunshine Kaidi's chemical projects and investments on chemXplore \u2014 plant capacities, project milestones, the companies involved, and the latest industry n"
+  },
+  {
+   "t": "Sunshine Kaidi - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Sunshine_Kaidi",
+   "s": "Sunshine Kaidi New Energy Group Co. Ltd. (Sunshine Kaidi, former name: Wuhan Kaidi Holding Investment Co., Ltd.) is a Chinese holding company. It is one of the "
+  },
+  {
+   "t": "Jobs und Karriere bei Sunshine Energieberatung GmbH - Indeed",
+   "u": "https://de.indeed.com/cmp/Sunshine-Energieberatung-Gmbh/jobs",
+   "s": "Sunshine Energieberatung GmbH Jobs. Bewerben Sie sich auf die neusten Stellen in Ihrer N\u00e4he. Erfahren Sie mehr \u00fcber Geh\u00e4lter, Bewertungen, den Einstellungsproze"
+  },
+  {
+   "t": "Sunshine Kaidi (Finland) New Energy Co. Ltd. | LinkedIn",
+   "u": "https://in.linkedin.com/company/sunshine-kaidi-finland-new-energy-co--ltd-",
+   "s": "Founded in 2016, Kaidi Finland is part of Sunshine Kaidi New Energy Group. Kaidi Group is a Chinese conglomerate that focuses on renewable energy production, en"
+  },
+  {
+   "t": "Jobs bei Sunshine Energieberatung GmbH",
+   "u": "https://sunshine-energieberatung-gmbh.jobs.personio.de/?language=de",
+   "s": "Energieberater / Energie-Effizienz-Experte (m/w/d) im Raum Nordrhein-Westfalen Au\u00dfendienst / Remote Nordrhein-Westfalen Voll- oder Teilzeit Festanstellung"
+  },
+  {
+   "t": "Job Listings - Kaidi LLC Jobs",
+   "u": "https://kaidiofficeusa.applicantpro.com/jobs/",
+   "s": "See current career opportunities that are available at Kaidi LLC"
+  },
+  {
+   "t": "kaidi llc Jobs and Careers | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Kaidi-LLC/jobs",
+   "s": "Kaidi LLC is a Smart Office division of Kaidi Electrical, and we produce inline actuators and understructure assemblies for height-adjustable desk applications."
+  },
+  {
+   "t": "kaidi llc Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Kaidi-LLC",
+   "s": "Find out what works well at kaidi llc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "Kaidi New Energy Group - LinkedIn",
+   "u": "https://www.linkedin.com/company/sunshine-kaidi-new-energy-group-co-ltd-",
+   "s": "Kaidi New Energy Group | 175 followers on LinkedIn. Sunshine Kaidi New Energy Group Co., Ltd. is a Renewables and Environment company located in Wuhan, Hubei, C"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://sunshine-energieberatung-gmbh.jobs.personio.de/?language=de",
+  "platform": "personio",
+  "title": "Jobs bei Sunshine Energieberatung GmbH"
+ },
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "sunshine-energieberatung-gmbh.jobs.personio.de = German solar consulting; sunshinecareers.com unverified \u2014 no authentic Kaidi surface",
+  "ts": "2026-09-29T04:43:56.028997Z",
+  "by": "S21 retry-wave adjudication"
+ }
 }

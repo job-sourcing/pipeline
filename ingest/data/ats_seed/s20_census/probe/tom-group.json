@@ -2,10 +2,153 @@
  "brand": "TOM Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:24:59.474Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:42:35.294Z",
+ "candidates": [
+  {
+   "url": "https://tomgroup.com/en/jobs.html",
+   "title": "Career With Us",
+   "status": 200,
+   "bytes": 6218,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Personal data collected will be treated in the strictest confidence and handled confidentially by authorised personnel for recruitment-related purposes only wit",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.tomtom.com/careers/",
+   "title": "TomTom Careers",
+   "status": 200,
+   "bytes": 314658,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Opening doors and growing careers: How TomTom fosters tech talent from the ground up Aug 08, 2025 · 4 mins read Read more See all articles",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.tomtom.com/careers/joboverview/",
+   "title": "Jobs | TomTom Careers",
+   "status": 200,
+   "bytes": 167399,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join us to engineer the first real-time map.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Career With Us - TOM Group",
+   "u": "https://tomgroup.com/en/jobs.html",
+   "s": "Personal data collected will be treated in the strictest confidence and handled confidentially by authorised personnel for recruitment-related purposes only wit"
+  },
+  {
+   "t": "Careers at Toms Group",
+   "u": "https://www.tomsgroup.com/work-with-us",
+   "s": "Toms Group is a Danish confectionary manufacturer with more than 100 years of experience in making quality chocolate and sweets. Our iconic products are world f"
+  },
+  {
+   "t": "TomTom Careers",
+   "u": "https://www.tomtom.com/careers/",
+   "s": "Opening doors and growing careers: How TomTom fosters tech talent from the ground up Aug 08, 2025 · 4 mins read Read more See all articles"
+  },
+  {
+   "t": "TOM Group",
+   "u": "https://tomgroup.com/en/index.html",
+   "s": "MioTech In March 2020, TOM Group invested in MioTech which is a sustainability data and software provider in Asia. MioTech uses artificial intelligence to solve"
+  },
+  {
+   "t": "Job offers - THOM",
+   "u": "https://www.thomgroup.com/talents/job-offers/",
+   "s": "Explore retail job opportunities with THOM, a leading group in affordable jewellery and watches across seven countries."
+  },
+  {
+   "t": "Jobs | TomTom Careers",
+   "u": "https://www.tomtom.com/careers/joboverview/",
+   "s": "Join us to engineer the first real-time map."
+  },
+  {
+   "t": "Tom Group International Limited - LinkedIn",
+   "u": "https://www.linkedin.com/company/tom-group-international-limited",
+   "s": "Tom Group International Limited IT Services and IT Consulting About us Website http://www.tomgroup.com/ External link for Tom Group International Limited"
+  },
+  {
+   "t": "Incheon Careers (@incheoncareers) • Instagram photos and videos",
+   "u": "https://www.instagram.com/incheoncareers/",
+   "s": "2,431 Followers, 7 Following, 87 Posts - Incheon Careers (@incheoncareers) on Instagram: \"Incheon is looking for passionate, self- driven people who are ready t"
+  },
+  {
+   "t": "TomTom Careers",
+   "u": "https://www.tomtom.com/careers/",
+   "s": "Opening doors and growing careers: How TomTom fosters tech talent from the ground up Aug 08, 2025 · 4 mins read Read more See all articles"
+  },
+  {
+   "t": "Career With Us - TOM Group",
+   "u": "https://tomgroup.com/en/jobs.html",
+   "s": "Personal data collected will be treated in the strictest confidence and handled confidentially by authorised personnel for recruitment-related purposes only wit"
+  },
+  {
+   "t": "Jobs | TomTom Careers",
+   "u": "https://www.tomtom.com/careers/joboverview/",
+   "s": "Join us to engineer the first real-time map."
+  },
+  {
+   "t": "TOM Group",
+   "u": "https://tomgroup.com/en/index.html",
+   "s": "TOM Group invested in WeLab, a leading pan-Asian fintech platform, in 2014. WeLab operates two digital banks as well as multiple online financial services in Ho"
+  },
+  {
+   "t": "Job offers - THOM",
+   "u": "https://www.thomgroup.com/talents/job-offers/",
+   "s": "Explore retail job opportunities with THOM, a leading group in affordable jewellery and watches across seven countries."
+  },
+  {
+   "t": "Tom group Jobs - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/tom-group-jobs-SRCH_KO0,9.htm",
+   "s": "Search Tom group jobs. Get the right Tom group job with company ratings & salaries. 522 open jobs for Tom group."
+  },
+  {
+   "t": "Careers at Toms Group",
+   "u": "https://www.tomsgroup.com/work-with-us",
+   "s": "Toms Group is a Danish confectionary manufacturer with more than 100 years of experience in making quality chocolate and sweets. Our iconic products are world f"
+  },
+  {
+   "t": "Tom Group International Limited - LinkedIn",
+   "u": "https://www.linkedin.com/company/tom-group-international-limited",
+   "s": "Tom Group International Limited IT Services and IT Consulting About us Website http://www.tomgroup.com/ External link for Tom Group International Limited"
+  },
+  {
+   "t": "TomTom Careers",
+   "u": "https://www.tomtom.com/careers/",
+   "s": "Opening doors and growing careers: How TomTom fosters tech talent from the ground up Aug 08, 2025 · 4 mins read Read more See all articles"
+  },
+  {
+   "t": "Career With Us - TOM Group",
+   "u": "https://tomgroup.com/en/jobs.html",
+   "s": "Personal data collected will be treated in the strictest confidence and handled confidentially by authorised personnel for recruitment-related purposes only wit"
+  },
+  {
+   "t": "Jobs | TomTom Careers",
+   "u": "https://www.tomtom.com/careers/joboverview/",
+   "s": "Join us to engineer the first real-time map."
+  },
+  {
+   "t": "Careers at Toms Group",
+   "u": "https://www.tomsgroup.com/work-with-us",
+   "s": "Explore job opportunities at Toms Group and let's find out how we can bring smiles to life together."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://tomgroup.com/en/jobs.html",
+  "platform": "custom",
+  "title": "Career With Us"
+ },
+ "verdict": "custom_surface"
 }

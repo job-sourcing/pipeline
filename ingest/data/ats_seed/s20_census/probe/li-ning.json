@@ -2,10 +2,148 @@
  "brand": "Li-Ning",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:22:21.301Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:34:19.156Z",
+ "candidates": [
+  {
+   "url": "https://www.stepstone.de/jobs/li-ning-europe-gmbh",
+   "title": "",
+   "status": 200,
+   "bytes": 45651,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Li Ning Europe Gmbh Jobs in Deutschland - Finden Sie passende Li Ning Europe Gmbh Stellenangebote mit Stepstone!",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.stepstone.de/jobs/li-ning-europe-gmbh/in-darmstadt",
+   "title": "",
+   "status": 200,
+   "bytes": 46849,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Li Ning Europe Gmbh Jobs in Darmstadt - Finden Sie passende Li Ning Europe Gmbh Stellenangebote in Darmstadt mit Stepstone!",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://lining.hotjob.cn/",
+   "title": "李宁招聘官网",
+   "status": 200,
+   "bytes": 540,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "李宁招聘官网提供最新职位信息，涵盖多个岗位，助您找到适合的职业机会。",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "李宁招聘官网",
+   "u": "https://lining.hotjob.cn/",
+   "s": "李宁招聘官网提供最新职位信息，涵盖多个岗位，助您找到适合的职业机会。"
+  },
+  {
+   "t": "Li-Ning Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Li--ning",
+   "s": "Find out what works well at Li-Ning from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
+  },
+  {
+   "t": "Li-Ning Official Site | Innovation in Sportswear & Footwear",
+   "u": "https://en.lining.com/",
+   "s": "Explore cutting-edge sportswear, performance sneakers, and collaborations with world-class athletes."
+  },
+  {
+   "t": "Li Ning Europe Gmbh Jobs und Stellenangebote - 2026 - StepStone",
+   "u": "https://www.stepstone.de/jobs/li-ning-europe-gmbh",
+   "s": "Li Ning Europe Gmbh Jobs in Deutschland - Finden Sie passende Li Ning Europe Gmbh Stellenangebote mit Stepstone!"
+  },
+  {
+   "t": "Li Ning Europe Gmbh: 111 Jobs & Stellenangebote in Darmstadt - StepStone",
+   "u": "https://www.stepstone.de/jobs/li-ning-europe-gmbh/in-darmstadt",
+   "s": "Li Ning Europe Gmbh Jobs in Darmstadt - Finden Sie passende Li Ning Europe Gmbh Stellenangebote in Darmstadt mit Stepstone!"
+  },
+  {
+   "t": "Li Ning - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Li_Ning",
+   "s": "Li Ning (Chinese: 李宁; Zhuang: Lij Ningz; born March 10, 1963, in Liuzhou, Guangxi) is a Chinese billionaire entrepreneur, the founder of the eponymous sportswea"
+  },
+  {
+   "t": "Li-Ning - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Li-Ning",
+   "s": "In 2005, Li-Ning created a joint-venture with French sports apparel company, AIGLE, giving Li-Ning the exclusive right to be the sole distributor of AIGLE's pro"
+  },
+  {
+   "t": "Li Ning — Grokipedia",
+   "u": "https://grokipedia.com/page/Li_Ning",
+   "s": "Over his career, he won 11 World Championship medals, including two golds, and 106 gold medals in national and international competitions, innovating techniques"
+  },
+  {
+   "t": "Li-Ning Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Li--ning",
+   "s": "Find out what works well at Li-Ning from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
+  },
+  {
+   "t": "Li-Ning Company Limited job openings and vacancies | Jobsdb",
+   "u": "https://hk.jobsdb.com/companies/li-ning-company-limited-171089121839975/jobs",
+   "s": "Explore current job openings at Li-Ning Company Limited on hk.jobsdb.com and find your ideal career opportunity in Hong Kong."
+  },
+  {
+   "t": "李宁招聘官网",
+   "u": "https://lining.hotjob.cn/",
+   "s": "李宁招聘官网提供最新职位信息，涵盖多个岗位，助您找到适合的职业机会。"
+  },
+  {
+   "t": "Urgent! Li ning jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-li-ning",
+   "s": "Active 62988 vacancies • Li ning jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Li ning jobs in USA and abroad •"
+  },
+  {
+   "t": "Li-Ning Official Site | Innovation in Sportswear & Footwear",
+   "u": "https://en.lining.com/",
+   "s": "Discover Li-Ning's official global store. Explore cutting-edge sportswear, performance sneakers, and collaborations with world-class athletes."
+  },
+  {
+   "t": "Li Ning Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/li-ning-jobs",
+   "s": "Find your ideal job at Jobsdb with 3 Li Ning jobs found in Hong Kong. View all our Li Ning vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "2 Li Ning Sports (china) Co. Ltd. jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/li-ning-sports-%28china%29-co.-ltd.-jobs-worldwide?f_C=586998",
+   "s": "Today's top 2 Li Ning Sports (china) Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Li Ning Sports (china) Co. Ltd. jobs add"
+  },
+  {
+   "t": "Now Hiring: 50 Lining Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Lining-jobs.html",
+   "s": "Today's top Lining jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "29 li ning sports singapore pte ltd jobs in Singapore",
+   "u": "https://sg.jobstreet.com/li-ning-sports-singapore-pte-ltd-jobs",
+   "s": "Find your ideal job at Jobstreet with 29 Li Ning Sports Singapore Pte Ltd jobs found in Singapore. View all our Li Ning Sports Singapore Pte Ltd vacancies now w"
+  },
+  {
+   "t": "Li Ning (Singapore) International Trading Pte Ltd Jobs in Singapore ...",
+   "u": "https://sg.jobstreet.com/Li-Ning-(Singapore)-International-Trading-Pte-Ltd-jobs",
+   "s": "Find your ideal job at Jobstreet with 1012 Li Ning (Singapore) International Trading Pte Ltd jobs found in Singapore. View all our Li Ning (Singapore) Internati"
+  },
+  {
+   "t": "Li-Ning Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Li--ning",
+   "s": "Find out what works well at Li-Ning from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
+  },
+  {
+   "t": "1,000+ Li Ning Singapore Outlet jobs in Singapore - LinkedIn",
+   "u": "https://sg.linkedin.com/jobs/li-ning-singapore-outlet-jobs",
+   "s": "Today's top 1,000+ Li Ning Singapore Outlet jobs in Singapore. Leverage your professional network, and get hired. New Li Ning Singapore Outlet jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

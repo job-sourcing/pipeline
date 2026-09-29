@@ -1,2 +1,21 @@
 no_clear_surface | Language Press -> no_clear_surface
 custom_surface | Orient Group -> custom
+no_clear_surface | Oriental Press Group -> no_clear_surface
+marker_surface | People's Education Press -> workday
+no_clear_surface | Phoenix Television -> no_clear_surface
+no_clear_surface | Shenzhen Press Group -> no_clear_surface
+custom_surface | Southeast Television -> custom
+ats_surface | World Affairs Press -> icims:careers-foreignaffairs-cfr
+skip (done) LakeShore Biopharma
+ats_surface | Generation Essentials -> workday:GMI_External_Careers
+skip (done) Honor of Kings
+skip (done) Zoo Holdings
+ats_surface | MoneyHero -> greenhouse:moneyherogroup
+skip (done) So-Young
+marker_surface | Brilliance Auto -> successfactors
+ats_surface | Centro Digital Pictures -> workday:Centro
+no_clear_surface | Golden Feather New Energy -> no_clear_surface
+no_clear_surface | Guangzhou Book Center -> no_clear_surface
+custom_surface | Meyer Manufacturing -> custom
+no_clear_surface | Modern China Tea Shop -> no_clear_surface
+custom_surface | Shanghai Scientific and Technical Publishers -> custom

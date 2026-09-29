@@ -2,7 +2,7 @@
  "brand": "BBK Electronics",
  "tier": "lca",
  "lca": "BBK ENTERPRISES, LLC.",
- "ts": "2026-09-27T07:47:46.302Z",
+ "ts": "2026-09-29T04:33:59.644Z",
  "candidates": [
   {
    "url": "https://www.bbkonline.com/Careers/",
@@ -17,45 +17,40 @@
    "backend": "direct"
   },
   {
-   "url": "https://careers.bk.com/",
-   "title": "",
+   "url": "https://www.bbk-electronics.com/",
+   "title": "BBK Electronics",
    "status": 200,
-   "bytes": 6888,
+   "bytes": 16179,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 2,
-   "snippet": "Hiring decisions, compensations, benefits, and employment terms and conditions at independent franchised Burger King® Restaurants will vary and are determined s",
-   "backend": "zenrows"
+   "score": 5,
+   "snippet": "BBK Electronics is one of the largest manufactures of consumer electronics in China. The BBK Electronics corporate group was established in 1998 and since then ",
+   "backend": "direct"
   },
   {
-   "url": "https://careers.bk.com/job-opportunities",
-   "title": "",
+   "url": "http://cis7.bbk.ac.uk/home.html",
+   "title": "Current Vacancies - Birkbeck, University of London",
    "status": 200,
-   "bytes": 11038,
+   "bytes": 22859,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 2,
-   "snippet": "There are many ways to bring it at your local Burger King® restaurant. In-restaurant jobs range from Team Members all the way to Restaurant General Managers. Ex",
-   "backend": "zenrows"
+   "score": 5,
+   "snippet": "Birkbeck @BirkbeckUoL on X Birkbeck on TikTok BirkbeckVideo on YouTube BirkbeckUni on Instagram Birkbeck on Facebook Birkbeck on LinkedIn",
+   "backend": "direct"
   }
  ],
  "results": [
-  {
-   "t": "BBK Electronics Careers | Levels.fyi",
-   "u": "https://www.levels.fyi/companies/bbk-electronics",
-   "s": "BBK Electronics Corporation is a private Chinese multinational conglomerate. The company in electronics such as television sets, MP3 players, digital cameras an"
-  },
   {
    "t": "Careers - BBK",
    "u": "https://www.bbkonline.com/Careers/",
    "s": "Careers Your best career move awaits. Be a part in BBK's goal to change the world, one banking service at a time."
   },
   {
-   "t": "Bbk Electronics Corporation. jobs in United States - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/bbk-electronics-corporation.-jobs?countryRedirected=1",
-   "s": "Today's top Bbk Electronics Corporation. jobs in United States. Leverage your professional network, and get hired. New Bbk Electronics Corporation. jobs added d"
+   "t": "BBK Electronics Careers | Levels.fyi",
+   "u": "https://www.levels.fyi/companies/bbk-electronics",
+   "s": "BBK Electronics Corporation is a private Chinese multinational conglomerate. The company in electronics such as television sets, MP3 players, digital cameras an"
   },
   {
    "t": "BBK Electronics Jobs | Levels.fyi",
@@ -63,14 +58,19 @@
    "s": "Explore and search open jobs from BBK Electronics."
   },
   {
-   "t": "BBK Electronics LTD. - LinkedIn",
-   "u": "https://www.linkedin.com/company/bbk-electronics-ltd.",
-   "s": "BBK Electronics LTD. | 1,983 followers on LinkedIn."
+   "t": "10,000+Bbk Electronics Corporation. Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/bbk-electronics-corporation.-jobs",
+   "s": "Today's top 10,000+ Bbk Electronics Corporation. jobs in United States. Leverage your professional network, and get hired. New Bbk Electronics Corporation. jobs"
   },
   {
-   "t": "Life at BBK Electronics: Culture, Salary, Reviews ... - AmbitionBox",
-   "u": "https://www.ambitionbox.com/overview/bbk-electronics-overview",
-   "s": "BBK Electronics is rated 4.5 out of 5 stars on AmbitionBox, based on 3 company reviews. This rating reflects a generally positive employee experience, indicatin"
+   "t": "BBK Electronics LTD. - LinkedIn",
+   "u": "https://www.linkedin.com/company/bbk-electronics-ltd.",
+   "s": "BBK Electronics LTD. | 1,982 followers on LinkedIn."
+  },
+  {
+   "t": "BBK Electronics",
+   "u": "https://www.bbk-electronics.com/",
+   "s": "BBK Electronics is one of the largest manufactures of consumer electronics in China. The BBK Electronics corporate group was established in 1998 and since then "
   },
   {
    "t": "BBK Electronics - Wikipedia",
@@ -78,14 +78,19 @@
    "s": "BBK Electronics Corporation was a Chinese multinational electronics conglomerate, created by Duan Yongping. It was a leading consumer electronics brand speciali"
   },
   {
-   "t": "Clinical Research | Heartbeat - BBK Worldwide",
-   "u": "https://weareheartbeat.com/clinical-research",
-   "s": "Challenging conventional recruitment by activating patients We believe that finding patients for studies isn't enough. True success happens when patients become"
+   "t": "Life at BBK Electronics: Culture, Salary, Reviews ... - AmbitionBox",
+   "u": "https://www.ambitionbox.com/overview/bbk-electronics-overview",
+   "s": "BBK Electronics is rated 4.5 out of 5 stars on AmbitionBox, based on 3 company reviews. This rating reflects a generally positive employee experience, indicatin"
   },
   {
-   "t": "Bbk Electronics Corporation. jobs in United States - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/bbk-electronics-corporation.-jobs?countryRedirected=1",
-   "s": "Today's top Bbk Electronics Corporation. jobs in United States. Leverage your professional network, and get hired. New Bbk Electronics Corporation. jobs added d"
+   "t": "10,000+Bbk Electronics Corporation. Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/bbk-electronics-corporation.-jobs",
+   "s": "Today's top 10,000+ Bbk Electronics Corporation. jobs in United States. Leverage your professional network, and get hired. New Bbk Electronics Corporation. jobs"
+  },
+  {
+   "t": "Esco Bbk Jobs in Singapore (381 Open Roles) | LinkedIn",
+   "u": "https://sg.linkedin.com/jobs/esco-bbk-jobs",
+   "s": "Today's top 381 Esco Bbk jobs in Singapore. Leverage your professional network, and get hired. New Esco Bbk jobs added daily."
   },
   {
    "t": "BBK Electronics Jobs | Levels.fyi",
@@ -93,14 +98,14 @@
    "s": "Explore and search open jobs from BBK Electronics."
   },
   {
-   "t": "Life at BBK Electronics: Culture, Salary, Reviews ... - AmbitionBox",
-   "u": "https://www.ambitionbox.com/overview/bbk-electronics-overview",
-   "s": "BBK Electronics is rated 4.5 out of 5 stars on AmbitionBox, based on 3 company reviews. This rating reflects a generally positive employee experience, indicatin"
-  },
-  {
    "t": "Careers - BBK",
    "u": "https://www.bbkonline.com/Careers/",
    "s": "Careers Your best career move awaits. Be a part in BBK's goal to change the world, one banking service at a time."
+  },
+  {
+   "t": "Life at BBK Electronics: Culture, Salary, Reviews ... - AmbitionBox",
+   "u": "https://www.ambitionbox.com/overview/bbk-electronics-overview",
+   "s": "BBK Electronics is rated 4.5 out of 5 stars on AmbitionBox, based on 3 company reviews. This rating reflects a generally positive employee experience, indicatin"
   },
   {
    "t": "BBK Electronics Jobs - Levels.fyi",
@@ -108,24 +113,19 @@
    "s": "Browse job openings for BBK Electronics Jobs. Filter by title, location, level, remote policy and more."
   },
   {
-   "t": "156Is Bbk Electronics The Number Two Smartphone Company Jobs in United ...",
+   "t": "Electronics Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/electronics-jobs",
+   "s": "Find your ideal job at Jobstreet with 6588 Electronics jobs found in Singapore. View all our Electronics vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "8,000+Is Bbk Electronics The Number Two Smartphone Company Jobs in ...",
    "u": "https://www.linkedin.com/jobs/is-bbk-electronics-the-number-two-smartphone-company-jobs",
-   "s": "Today's top 156 Is Bbk Electronics The Number Two Smartphone Company jobs in United States. Leverage your professional network, and get hired. New Is Bbk Electr"
+   "s": "Today's top 8,000+ Is Bbk Electronics The Number Two Smartphone Company jobs in United States. Leverage your professional network, and get hired. New Is Bbk Ele"
   },
   {
-   "t": "BK electronics - Electronics Manufacturing Service Korea",
-   "u": "https://www.bkec.co.kr/en/home-en/",
-   "s": "BK Electronics is a premier Electronics Manufacturing Service Korea provider and EMS company in Vietnam, specializing in PCB assembly, SMT, and cable harnesses."
-  },
-  {
-   "t": "Working at BBK Electronics | Glassdoor",
-   "u": "https://www.glassdoor.com/Overview/Working-at-BBK-Electronics-EI_IE1456988.11,26.htm",
-   "s": "See what employees say it's like to work at BBK Electronics . Salaries, reviews, and more - all posted by employees working at BBK Electronics ."
-  },
-  {
-   "t": "Bbk Electronics Corporation. jobs in United States - LinkedIn",
+   "t": "10,000+Bbk Electronics Corporation. Jobs in United States",
    "u": "https://www.linkedin.com/jobs/bbk-electronics-corporation.-jobs?countryRedirected=1",
-   "s": "Today's top Bbk Electronics Corporation. jobs in United States. Leverage your professional network, and get hired. New Bbk Electronics Corporation. jobs added d"
+   "s": "Today's top 10,000+ Bbk Electronics Corporation. jobs in United States. Leverage your professional network, and get hired. New Bbk Electronics Corporation. jobs"
   },
   {
    "t": "BBK Electronics Jobs | Levels.fyi",
@@ -133,14 +133,14 @@
    "s": "BBK Electronics Open Jobs Are you ready to level up your career? Check out these open roles at BBK Electronics."
   },
   {
-   "t": "BBK Electronics Jobs - Levels.fyi",
-   "u": "https://www.levels.fyi/jobs/company/bbk-electronics?jobId=98006526995636934",
-   "s": "Browse job openings for BBK Electronics Jobs. Filter by title, location, level, remote policy and more."
+   "t": "BBK Electronics Careers | Levels.fyi",
+   "u": "https://www.levels.fyi/companies/bbk-electronics",
+   "s": "BBK Electronics Corporation is a private Chinese multinational conglomerate. The company in electronics such as television sets, MP3 players, digital cameras an"
   },
   {
-   "t": "Home | BK Careers",
-   "u": "https://careers.bk.com/",
-   "s": "Hiring decisions, compensations, benefits, and employment terms and conditions at independent franchised Burger King® Restaurants will vary and are determined s"
+   "t": "Careers at Tokyo Electron (TEL)",
+   "u": "https://www.tel.com/careers/careercenter/index.html",
+   "s": "As a leading innovator of semiconductor production equipment, our internship and co-op program provides participants the opportunity to gain meaningful experien"
   }
  ],
  "dict_hits": [],

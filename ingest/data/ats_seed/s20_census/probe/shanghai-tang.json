@@ -2,10 +2,148 @@
  "brand": "Shanghai Tang",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:23:30.213Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:37:37.466Z",
+ "candidates": [
+  {
+   "url": "https://fashionunited.fr/fashion-jobs/travailler-chez/shanghai-tang-recrutement",
+   "title": "Offres d&#x27;emploi chez Shanghai Tang",
+   "status": 200,
+   "bytes": 59612,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Découvrez ici les dernières offres d'emploi Shanghai Tang auxquelles vous pouvez postuler.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.smartshanghai.com/jobs/",
+   "title": "Work in Shanghai | SmartShanghai",
+   "status": 200,
+   "bytes": 74065,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Shanghai jobs board: find jobs, post openings, and browse roles across industries — curated by SmartShanghai.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
+   "title": "299 Jobs in Shanghai, Shanghai | Randstad",
+   "status": 200,
+   "bytes": 644473,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse 299 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals.",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Shanghai Tang Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Shanghai-Tang",
+   "s": "Find out what works well at Shanghai Tang from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  },
+  {
+   "t": "SHANGHAI TANG - LinkedIn",
+   "u": "https://hk.linkedin.com/company/shanghai-tang",
+   "s": "SHANGHAI TANG | 4,692 followers on LinkedIn. SHANGHAI TANG IS JOYFUL, MODERN, & EVOCATIVE WITH EASTERN ELEGANCE AND PLAYFUL IRREVERENCE ROOTED IN CULTURAL AUTHE"
+  },
+  {
+   "t": "Graphic Designer at SHANGHAI TANG — Hong Kong, Hong Kong SAR - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/view/graphic-designer-at-shanghai-tang-4307015225",
+   "s": "Apply for Graphic Designer at SHANGHAI TANG in Hong Kong, Hong Kong SAR. Full-time Mid-Senior level role. See responsibilities, qualifications, and similar jobs"
+  },
+  {
+   "t": "Shanghai Tang Careers and Employment | Indeed.com",
+   "u": "https://sg.indeed.com/cmp/Shanghai-Tang",
+   "s": "Find out what works well at Shanghai Tang from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  },
+  {
+   "t": "Offres d'emploi chez Shanghai Tang - fashionunited.fr",
+   "u": "https://fashionunited.fr/fashion-jobs/travailler-chez/shanghai-tang-recrutement",
+   "s": "Découvrez ici les dernières offres d'emploi Shanghai Tang auxquelles vous pouvez postuler."
+  },
+  {
+   "t": "Shanghai Tang | Joyful, Modern, & Evocative With Eastern Elegance ...",
+   "u": "https://www.shanghaitang.com/",
+   "s": "Discover the world of SHANGHAI TANG, where we infuse luxury with modern Asian aesthetics and a touch of contemporary chinoiserie across lifestyle and fashion. R"
+  },
+  {
+   "t": "Shanghai Tang 上海滩的招聘-数英",
+   "u": "https://www.digitaling.com/company/jobs/10371",
+   "s": "在东风西渐的今天，\"东风\"开始时髦起来，打着\"东方遇见西方\"设计主题的Shanghai Tang为中国时尚披上了名牌的外衣，设计与包装别有特色。 与在内地鲜为人知的知名度相比，Shanghai Tang品牌自问世之日起就受到西方時尚人士的狂热追捧。"
+  },
+  {
+   "t": "【唐势 (上海)商贸有限公司招聘】-猎聘",
+   "u": "https://www.liepin.com/company/13637405/",
+   "s": "从\"中式灵感 Inspired by China\"到\"中国创造 Created by Chinese\"，如今的上海滩Shanghai Tang延续品牌历史核心，以当代中国精神重塑品牌于当今时代的话语权，打造代表中国的国际高端生活方式奢侈品牌。"
+  },
+  {
+   "t": "Shanghai Tang Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Shanghai-Tang",
+   "s": "Find out what works well at Shanghai Tang from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  },
+  {
+   "t": "33,000+ Shanghai Tang jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/shanghai-tang-jobs-worldwide?f_AL=true&f_EA=true",
+   "s": "Today's top 33,000+ Shanghai Tang jobs in Worldwide. Leverage your professional network, and get hired. New Shanghai Tang jobs added daily."
+  },
+  {
+   "t": "SHANGHAI TANG - LinkedIn",
+   "u": "https://www.linkedin.com/company/shanghai-tang",
+   "s": "SHANGHAI TANG Retail Apparel and Fashion About us SHANGHAI TANG IS JOYFUL, MODERN, & EVOCATIVE WITH EASTERN ELEGANCE AND PLAYFUL IRREVERENCE ROOTED IN CULTURAL "
+  },
+  {
+   "t": "Urgent! Shanghai tang 上海灘 jobs - August 2026 - 252 Shanghai tang 上海灘 ...",
+   "u": "https://hk.jooble.org/jobs-shanghai-tang-%E4%B8%8A%E6%B5%B7%E7%81%98",
+   "s": "Search and apply for the latest Shanghai tang 上海灘 jobs. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job email alerts. Free"
+  },
+  {
+   "t": "Working at Shanghai Tang | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Shanghai-Tang-EI_IE844395.11,24.htm",
+   "s": "To get a job at Shanghai Tang, browse currently open positions and apply for a job near you. Once you get a positive response, make sure to find out about the i"
+  },
+  {
+   "t": "Tang Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/tang-jobs",
+   "s": "Find your ideal job at Jobsdb with 31 Tang jobs found in Hong Kong. View all our Tang vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Graphic Designer at SHANGHAI TANG — Hong Kong, Hong Kong SAR - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/view/graphic-designer-at-shanghai-tang-4307015225",
+   "s": "Apply for Graphic Designer at SHANGHAI TANG in Hong Kong, Hong Kong SAR. Full-time Mid-Senior level role. See responsibilities, qualifications, and similar jobs"
+  },
+  {
+   "t": "Work in Shanghai | SmartShanghai",
+   "u": "https://www.smartshanghai.com/jobs/",
+   "s": "Shanghai jobs board: find jobs, post openings, and browse roles across industries — curated by SmartShanghai."
+  },
+  {
+   "t": "Shanghai Tang Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Shanghai-Tang",
+   "s": "Find out what works well at Shanghai Tang from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  },
+  {
+   "t": "SHANGHAI TANG - LinkedIn",
+   "u": "https://hk.linkedin.com/company/shanghai-tang",
+   "s": "SHANGHAI TANG | 4,692 followers on LinkedIn. SHANGHAI TANG IS JOYFUL, MODERN, & EVOCATIVE WITH EASTERN ELEGANCE AND PLAYFUL IRREVERENCE ROOTED IN CULTURAL AUTHE"
+  },
+  {
+   "t": "33,000+ Shanghai Tang jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/shanghai-tang-jobs-worldwide?f_AL=true&f_EA=true",
+   "s": "Today's top 33,000+ Shanghai Tang jobs in Worldwide. Leverage your professional network, and get hired. New Shanghai Tang jobs added daily."
+  },
+  {
+   "t": "Working at Shanghai Tang | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Shanghai-Tang-EI_IE844395.11,24.htm",
+   "s": "To get a job at Shanghai Tang, browse currently open positions and apply for a job near you. Once you get a positive response, make sure to find out about the i"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

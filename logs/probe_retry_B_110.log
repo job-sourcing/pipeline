@@ -5,3 +5,19 @@ marker_surface | Galactic Energy -> phenom
 custom_surface | Greenland Holdings -> custom
 no_clear_surface | Hainan Airlines -> no_clear_surface
 marker_surface | High-Flyer -> moka
+no_clear_surface | Hu Ge -> no_clear_surface
+no_clear_surface | Imagination Technologies -> no_clear_surface
+custom_surface | League of Legends -> custom
+no_clear_surface | Li-Ning -> no_clear_surface
+no_clear_surface | Various Chinese companies -> no_clear_surface
+skip (done) Mandarin Oriental
+no_clear_surface | Shanghai Film Group -> no_clear_surface
+no_clear_surface | Shanghai Tang -> no_clear_surface
+no_clear_surface | Shanghai Tobacco Group -> no_clear_surface
+no_clear_surface | Shentong Metro Group -> no_clear_surface
+skip (done) Skydance Media
+skip (done) Space Epoch
+skip (done) Spotlight Automotive
+custom_surface | TOM Group -> custom
+marker_surface | Trip.com -> moka
+custom_surface | Truly -> custom

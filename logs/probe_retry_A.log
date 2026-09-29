@@ -25,3 +25,50 @@ skip (done) Hailiang Group
 skip (done) China Merchants Bank
 skip (done) Ant Group
 skip (done) Autel Intelligent Technology
+no_clear_surface | Brite Semiconductor -> no_clear_surface
+skip (done) China CITIC Bank
+no_clear_surface | China Unicom -> no_clear_surface
+skip (done) MTR Corporation
+no_clear_surface | Zhong Lun -> no_clear_surface
+skip (done) Bitdeer
+no_clear_surface | BBK Electronics -> no_clear_surface
+skip (done) Dreame Technology
+skip (done) JAC Group
+skip (done) WuXi AppTec
+skip (done) DeepRoute.ai
+skip (done) EVE Energy
+skip (done) Webull
+skip (done) Aden Group
+skip (done) AUX
+no_clear_surface | Chinatex -> no_clear_surface
+skip (done) Chint Group
+skip (done) Joyson Safety Systems
+skip (done) Marvelous
+skip (done) Paramount Skydance
+skip (done) Robam
+no_clear_surface | TPV Technology -> no_clear_surface
+skip (done) Weichai
+skip (done) Fang Holdings
+no_clear_surface | GreenTree Hospitality -> no_clear_surface
+skip (done) Canaan
+skip (done) Agora
+skip (done) Antalpha Platform Holding Co
+skip (done) Amer Sports
+skip (done) BGI Group
+skip (done) Bluestar Company
+skip (done) Camel Group
+no_clear_surface | Chaoda Modern Agriculture -> no_clear_surface
+skip (done) Cheetah Mobile
+skip (done) COFCO Group
+skip (done) Fufeng Group
+skip (done) Jereh Group
+skip (done) King & Wood Mallesons
+skip (done) Lee Kum Kee
+skip (done) Niu Technologies
+no_clear_surface | Ofo -> no_clear_surface
+custom_surface | Tecno Mobile -> custom
+custom_surface | ThinkPad -> custom
+custom_surface | Tianjin Development -> custom
+skip (done) Tianjin Port
+skip (done) Trina Solar
+skip (done) Val Morgan

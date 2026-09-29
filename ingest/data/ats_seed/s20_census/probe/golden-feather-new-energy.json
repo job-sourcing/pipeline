@@ -2,10 +2,148 @@
  "brand": "Golden Feather New Energy",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:39:00.166Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:38:29.831Z",
+ "candidates": [
+  {
+   "url": "https://battery-tech.net/company/golden-feather-new-energy/",
+   "title": "Golden Feather New Energy - Battery-Tech Network",
+   "status": 200,
+   "bytes": 242358,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Golden Feather New Energy (Beijing, China) develops lithium‑metal solid‑state and quasi‑solid batteries with high energy density and fast‑charge capability for ",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.gfenergy.com/jrwm",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "金羽新能 地址 杭州生产基地：浙江省杭州市临平区临平大道596号 湖州生产基地：浙江省长三角（湖州）产业合作区兴业路998号 北京研发中心：海淀区T8SPACE塔院创新中心",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.gfenergy.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 5385,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "金羽新能 金羽提供小试—中试一体的定制化研发服务，包括锂离子电池/锂金属电池，全固态锂金属电池等。",
+   "backend": "firecrawl"
+  }
+ ],
+ "results": [
+  {
+   "t": "Golden Feather New Energy - LinkedIn",
+   "u": "https://www.linkedin.com/company/golden-feather-new-energy/",
+   "s": "Golden Feather New Energy (GF Energy) is a technology-driven innovator specializing in advanced solid-state battery solutions. Founded by a team of PhD graduate"
+  },
+  {
+   "t": "Golden Feather New Energy - LinkedIn",
+   "u": "https://www.linkedin.com/posts/golden-feather-new-energy_goldenfeathernewenergy-solidstatebattery-activity-7479808068730413057-qcJ0",
+   "s": "The future of battery innovation starts with people. This July, Golden Feather New Energy welcomed 70 outstanding graduates from leading universities across Chi"
+  },
+  {
+   "t": "Golden Feather New Energy - Battery-Tech Network",
+   "u": "https://battery-tech.net/company/golden-feather-new-energy/",
+   "s": "Golden Feather New Energy (Beijing, China) develops lithium‑metal solid‑state and quasi‑solid batteries with high energy density and fast‑charge capability for "
+  },
+  {
+   "t": "加入我们-金羽新能 - GF Energy",
+   "u": "https://www.gfenergy.com/jrwm",
+   "s": "金羽新能 地址 杭州生产基地：浙江省杭州市临平区临平大道596号 湖州生产基地：浙江省长三角（湖州）产业合作区兴业路998号 北京研发中心：海淀区T8SPACE塔院创新中心"
+  },
+  {
+   "t": "Company Overview - Zhejiang Golden Feather New Energy Technology Co., Ltd.",
+   "u": "https://gfne.en.alibaba.com/company_profile.html",
+   "s": "Golden Feather New Energy is a technology-driven innovator specializing in advanced solid-state battery solutions. Founded by a team of PhD graduates from Pekin"
+  },
+  {
+   "t": "Jobs in Incheon hiring English speakers (6 live) | Seoulstart",
+   "u": "https://seoulstart.com/jobs/in/incheon",
+   "s": "12 jobs in Incheon, Korea right now have English-friendly job descriptions or are tagged for foreign hires. Incheon hosts a smaller but growing slice of Korea's"
+  },
+  {
+   "t": "Golden Feather New Energy - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Golden_Feather_New_Energy",
+   "s": "Golden Feather New Energy (Chinese: 浙江金羽新能源科技有限公司), commonly known as GF New Energy, is a company engaged in the research, development and manufacturing of soli"
+  },
+  {
+   "t": "UN Jobs and internships at Incheon",
+   "u": "https://uncareer.net/city/Incheon",
+   "s": "The biggest source of job vacancies and internships in United Nations, European Union and International NGOs. Check now."
+  },
+  {
+   "t": "Golden Feather New Energy - LinkedIn",
+   "u": "https://www.linkedin.com/company/golden-feather-new-energy/",
+   "s": "Golden Feather New Energy (GF Energy) is a technology-driven innovator specializing in advanced solid-state battery solutions. Founded by a team of PhD graduate"
+  },
+  {
+   "t": "Golden Feather Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Golden-Feather",
+   "s": "Find out what works well at Golden Feather from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  },
+  {
+   "t": "加入我们-金羽新能 - GF Energy",
+   "u": "https://www.gfenergy.com/jrwm",
+   "s": "金羽新能 地址 杭州生产基地：浙江省杭州市临平区临平大道596号 湖州生产基地：浙江省长三角（湖州）产业合作区兴业路998号 北京研发中心：海淀区T8SPACE塔院创新中心"
+  },
+  {
+   "t": "Company Overview - Zhejiang Golden Feather New Energy Technology Co., Ltd.",
+   "u": "https://gfne.en.alibaba.com/company_profile.html",
+   "s": "Golden Feather New Energy is a technology-driven innovator specializing in advanced solid-state battery solutions. Founded by a team of PhD graduates from Pekin"
+  },
+  {
+   "t": "Golden Feather New Energy - LinkedIn",
+   "u": "https://www.linkedin.com/posts/golden-feather-new-energy_goldenfeathernewenergy-solidstatebattery-activity-7479808068730413057-qcJ0",
+   "s": "The future of battery innovation starts with people. This July, Golden Feather New Energy welcomed 70 outstanding graduates from leading universities across Chi"
+  },
+  {
+   "t": "Golden Feather New Energy - Battery-Tech Network",
+   "u": "https://battery-tech.net/company/golden-feather-new-energy/",
+   "s": "Golden Feather New Energy (Beijing, China) develops lithium‑metal solid‑state and quasi‑solid batteries with high energy density and fast‑charge capability for "
+  },
+  {
+   "t": "Careers - Calpine",
+   "u": "https://www.calpine.com/careers/",
+   "s": "Constellation and Calpine Unite Constellation and Calpine have combined to create the nation's largest clean energy producer, delivering reliable power that kee"
+  },
+  {
+   "t": "GF Energy - 金羽新能-固态电池产业化引领者",
+   "u": "https://www.gfenergy.com/",
+   "s": "金羽新能 金羽提供小试—中试一体的定制化研发服务，包括锂离子电池/锂金属电池，全固态锂金属电池等。"
+  },
+  {
+   "t": "加入我们-金羽新能 - GF Energy",
+   "u": "https://www.gfenergy.com/jrwm",
+   "s": "金羽新能 地址 杭州生产基地：浙江省杭州市临平区临平大道596号 湖州生产基地：浙江省长三角（湖州）产业合作区兴业路998号 北京研发中心：海淀区T8SPACE塔院创新中心"
+  },
+  {
+   "t": "Golden Feather New Energy",
+   "u": "https://www.linkedin.com/posts/golden-feather-new-energy_goldenfeathernewenergy-solidstatebattery-activity-7479808068730413057-qcJ0",
+   "s": "The future of battery innovation starts with people. This July, Golden Feather New Energy welcomed 70 outstanding graduates from leading universities across Chi"
+  },
+  {
+   "t": "Golden Feather Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Golden-Feather",
+   "s": "Find out what works well at Golden Feather from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  },
+  {
+   "t": "Golden Feather New Energy | 领英 - 领英 (中国)",
+   "u": "https://cn.linkedin.com/company/golden-feather-new-energy",
+   "s": "关于我们 Golden Feather New Energy (GF Energy) is a pioneer in the development and commercialization of next-generation solid-state battery technologies. With over "
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

@@ -2,7 +2,7 @@
  "brand": "GreenTree Hospitality",
  "tier": "lca",
  "lca": "GREENTREE HOSPITALITY GROUP, INC",
- "ts": "2026-09-27T07:58:16.745Z",
+ "ts": "2026-09-29T04:35:50.079Z",
  "candidates": [
   {
    "url": "https://www.greentreegroup.com/careers/",
@@ -18,21 +18,22 @@
   },
   {
    "url": "https://www.jobstagg.com/company-profile/greentree-hospitality-group",
-   "title": "",
-   "status": 200,
-   "bytes": 1552,
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5941,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Explore jobs at Greentree Hospitality Group. Discover job openings, company culture, benifits and growth opportunities.",
-   "backend": "zenrows"
+   "backend": "direct",
+   "cf_challenge": true
   },
   {
    "url": "https://greentreeinn.com/talent-community/",
    "title": "Talent Community - GreenTree Inn",
    "status": 200,
-   "bytes": 122625,
+   "bytes": 122329,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -73,9 +74,9 @@
    "s": "Data Automation Internship During this internship, you'll engage in the analysis of business operations by collaborating closely with other teams within the com"
   },
   {
-   "t": "GreenTree Hospitality Group Jobs & Careers - 1 Open Position",
-   "u": "https://www.glassdoor.com/Jobs/GreenTree-Hospitality-Group-Jobs-E2133403.htm",
-   "s": "Search job openings at GreenTree Hospitality Group. 1 GreenTree Hospitality Group jobs including salaries, ratings, and reviews, posted by GreenTree Hospitality"
+   "t": "GreenTree Hospitality Group - LinkedIn",
+   "u": "https://www.linkedin.com/company/greentreeinnhotels",
+   "s": "GreenTree Hospitality Group Hospitality Scottsdale, Arizona 1,736 followers An eco-friendly hospitality franchise dedicated to enabling the success of our hotel"
   },
   {
    "t": "Explore jobs at Greentree Hospitality Group - jobstagg.com",
@@ -93,29 +94,24 @@
    "s": "Find out what works well at GreenTree Hospitality Group, Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and C"
   },
   {
-   "t": "Greentree Hospitality Careers and Employment | Indeed.com",
-   "u": "https://www.indeed.com/cmp/Greentree-Hospitality",
-   "s": "Find out what works well at Greentree Hospitality from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
-  },
-  {
    "t": "Careers - The Greentree Group",
    "u": "https://www.greentreegroup.com/careers/",
    "s": "Careers - View open positions, benefits, and read real reviews from current and past employees at The Greentree Group!"
   },
   {
-   "t": "Explore jobs at Greentree Hospitality Group - jobstagg.com",
-   "u": "https://www.jobstagg.com/company-profile/greentree-hospitality-group",
-   "s": "Explore jobs at Greentree Hospitality Group. Discover job openings, company culture, benifits and growth opportunities."
+   "t": "Greentree Hospitality Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Greentree-Hospitality",
+   "s": "Find out what works well at Greentree Hospitality from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
   },
   {
-   "t": "Greentree Hospitality Employment and Reviews | SimplyHired",
-   "u": "https://www.simplyhired.com/browse-jobs/companies/Greentree-Hospitality",
-   "s": "Read Greentree Hospitality reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at Green"
+   "t": "10 Best greentree hospitality group jobs (Hiring Now!) | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=greentree+hospitality+group",
+   "s": "10 greentree hospitality group jobs available. See salaries, compare reviews, easily apply, and get hired. New greentree hospitality group careers are added dai"
   },
   {
-   "t": "GreenTree Hospitality Group Jobs & Careers - 1 Open Position",
-   "u": "https://www.glassdoor.com/Jobs/GreenTree-Hospitality-Group-Jobs-E2133403.htm",
-   "s": "Search job openings at GreenTree Hospitality Group. 1 GreenTree Hospitality Group jobs including salaries, ratings, and reviews, posted by GreenTree Hospitality"
+   "t": "Hospitality jobs in Korea hiring English speakers | Seoulstart",
+   "u": "https://seoulstart.com/jobs/roles/hospitality",
+   "s": "Live hospitality roles in Korea with English job descriptions. Coupang, Krafton, Palantir, Naver, OpenAI, and more. Refreshed every weekday. Free to browse."
   },
   {
    "t": "GreenTree Hospitality Group, Inc. Employment and Reviews | SimplyHired",
@@ -123,19 +119,24 @@
    "s": "Read GreenTree Hospitality Group, Inc. reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is l"
   },
   {
+   "t": "GreenTree Hospitality Group | Eco-Friendly Stays & Quality Service",
+   "u": "https://greentreeinn.com/",
+   "s": "Plan your next getaway with GreenTree Hospitality Group - eco-friendly rooms, modern comfort, and the best price guaranteed on every stay. Call Us Now!"
+  },
+  {
    "t": "Talent Community - GreenTree Inn",
    "u": "https://greentreeinn.com/talent-community/",
    "s": "Talent Community At GreenTree, we know great hotels start with great people. We are always looking for passionate, dependable individuals who want to build a ca"
   },
   {
-   "t": "Greentree Jobs in Singapore (with Salaries) - May 2026 | Jobstreet",
-   "u": "https://sg.jobstreet.com/greentree-jobs",
-   "s": "Find your ideal job at Jobstreet with 3 Greentree jobs found in Singapore. View all our Greentree vacancies now with new jobs added daily!"
-  },
-  {
    "t": "Greentree Hospitality Careers and Employment | Indeed.com",
    "u": "https://www.indeed.com/cmp/Greentree-Hospitality",
    "s": "Find out what works well at Greentree Hospitality from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+  },
+  {
+   "t": "Careers - GreenTree Inn | GreenTree Hospitality Group - LinkedIn",
+   "u": "https://www.linkedin.com/posts/greentreeinnhotels_careers-greentree-inn-activity-7460002009589428224-tE_a",
+   "s": "We have a #Careers Page! From front desk agents to positions at Corporate, view all of our current openings at www. greentreeinn.com/careers #Hiring #Hospitalit"
   },
   {
    "t": "Careers - The Greentree Group",

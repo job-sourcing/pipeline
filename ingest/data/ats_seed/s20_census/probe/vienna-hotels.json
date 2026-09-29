@@ -2,10 +2,150 @@
  "brand": "Vienna Hotels",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:47:18.462Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:36:15.269Z",
+ "candidates": [
+  {
+   "url": "https://www.hotelcareer.com/jobs/hospitality-catering-vienna",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "You are looking for jobs in Vienna? Our job board offers matching vacancies in Vienna. Just apply directly online.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobshotels.eu/hotel-jobs-in-vienna/",
+   "title": "",
+   "status": 200,
+   "bytes": 22603,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Hotel Jobs in Vienna with a Culture of Service Find hotel jobs in Vienna or hire hospitality professionals for hotels, restaurants, conference venues and touris",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://jobs.motel-one.com/en/jobsearch/location/austria/vienna/",
+   "title": "Hotel jobs Vienna | vacancies tourism hospitality travel Motel One",
+   "status": 200,
+   "bytes": 380615,
+   "markers": [
+    "smartrecruiters"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Hotel jobs in Vienna: Find out about vacancies and career opportunities at Motel One!",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Jobs and vacancies in Vienna | Hotelcareer",
+   "u": "https://www.hotelcareer.com/jobs/hospitality-catering-vienna",
+   "s": "You are looking for jobs in Vienna? Our job board offers matching vacancies in Vienna. Just apply directly online."
+  },
+  {
+   "t": "hotel English-speaking jobs in Vienna",
+   "u": "https://englishjobsearch.at/in/wien/hotel",
+   "s": "English-speaking job offers for hotel in the city of Vienna, Austria"
+  },
+  {
+   "t": "Jobs and vacancies in Austria | Hotelcareer",
+   "u": "https://www.hotelcareer.com/jobs/hospitality-catering-austria",
+   "s": "You are looking for jobs in Austria? Our job board offers matching vacancies in Austria. Just apply directly online."
+  },
+  {
+   "t": "Hotel Jobs In Vienna | Hospitality Careers In Austria",
+   "u": "https://jobshotels.eu/hotel-jobs-in-vienna/",
+   "s": "Hotel Jobs in Vienna with a Culture of Service Find hotel jobs in Vienna or hire hospitality professionals for hotels, restaurants, conference venues and touris"
+  },
+  {
+   "t": "Hotel jobs Vienna | vacancies tourism hospitality travel Motel One",
+   "u": "https://jobs.motel-one.com/en/jobsearch/location/austria/vienna/",
+   "s": "Hotel jobs in Vienna: Find out about vacancies and career opportunities at Motel One!"
+  },
+  {
+   "t": "191 hospitality Jobs in Vienna, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/vienna-hospitality-jobs-SRCH_IL.0,6_IC3174503_KO7,18.htm",
+   "s": "Search Hospitality jobs in Vienna with company ratings & salaries. 191 open jobs for Hospitality in Vienna."
+  },
+  {
+   "t": "Careers in Hospitality | Grand Hotel Wien",
+   "u": "https://en.grandhotelwien.com/careers/",
+   "s": "Careers at Grand Hotel Wien Further your career at the Grand Hotel Wien The Grand Hotel Wien is one of the most exclusive luxury hotels in Vienna. This high sta"
+  },
+  {
+   "t": "SO/ VIENNA · Karriere",
+   "u": "https://so-vienna.connectoor.de/",
+   "s": "Über uns A fashion statement in the heart of Vienna SO/ Vienna ist ein avantgardistisches Luxus-Lifestyle-Hotel im Herzen von Wien, das die Welten von Design, M"
+  },
+  {
+   "t": "Jobs and vacancies in Vienna | Hotelcareer",
+   "u": "https://www.hotelcareer.com/jobs/hospitality-catering-vienna",
+   "s": "You are looking for jobs in Vienna? Our job board offers matching vacancies in Vienna. Just apply directly online."
+  },
+  {
+   "t": "Hotel Jobs in Wien | aktuell 40+ offen | karriere.at",
+   "u": "https://www.karriere.at/jobs/hotel/wien",
+   "s": "Aktuell 44 Hotel Jobs in Wien ☆ Freie Stellen wie zB: ☛ Rezeptionist:in bei ÖJAB - Österreichische Jungarbeiterbewegung Jetzt schnell und unkompliziert bewerben"
+  },
+  {
+   "t": "136 Hotel Jobs in Wien - wienerjobs.at",
+   "u": "https://www.wienerjobs.at/jobs/hotel",
+   "s": "Welche Jobs gibt es im Hotel-Bereich? Die Wiener Hotellandschaft bietet vielfältige Karrierewege: Von Hotelkaufleuten über Rezeptionisten bis zu Concierge und G"
+  },
+  {
+   "t": "Tophotels.wien - Bewirb dich hier und starte durch!",
+   "u": "https://www.tophotels.wien/de/jobs",
+   "s": "Finde deinen neuen Job in einem von 23 Wiener Top-Hotels im 4 und 5 Sterne-Bereich. Egal ob internationale Hotelkette, Traditionshaus oder Wiener Boutiquehotel."
+  },
+  {
+   "t": "Hotel jobs Vienna | vacancies tourism hospitality travel Motel One",
+   "u": "https://jobs.motel-one.com/en/jobsearch/location/austria/vienna/",
+   "s": "Hotel jobs in Vienna: Find out about vacancies and career opportunities at Motel One!"
+  },
+  {
+   "t": "Hotel Jobs in Wien | Jetzt 600 offene Stellen finden | Indeed",
+   "u": "https://at.indeed.com/q-hotel-l-wien-jobs.html?vjk=6b557fc1227ada9f",
+   "s": "Unternehmen suchen jetzt Kandidaten für Hotel Jobs in Wien. Empfangsmitarbeiter, Kellner, Front Office Mitarbeiter und viele weitere Jobs auf Indeed.com"
+  },
+  {
+   "t": "59 Jobs in Wien | HotelStellen",
+   "u": "https://jobs.hotelstellen.com/jobs/locations/wien",
+   "s": "👋 DU BIST DAS ORGANISATIONSTALENT AM EMPFANG? Vienna, AT (Vor Ort) 19,00 € pro Stunde. ihre aufgaben: Sie sind erste Ansprechperson für Kund:innen, Besucher:in"
+  },
+  {
+   "t": "Tophotels.wien - Apply here and get started!",
+   "u": "https://www.tophotels.wien/en/jobs/",
+   "s": "Find your new job in a top Viennese hotel in the 4 and 5 star range. Whether international hotel chain, traditional house or Viennese boutique hotel."
+  },
+  {
+   "t": "Jobs and vacancies in Vienna | Hotelcareer",
+   "u": "https://www.hotelcareer.com/jobs/hospitality-catering-vienna",
+   "s": "You are looking for jobs in Vienna? Our job board offers matching vacancies in Vienna. Just apply directly online."
+  },
+  {
+   "t": "191 hospitality Jobs in Vienna, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/vienna-hospitality-jobs-SRCH_IL.0,6_IC3174503_KO7,18.htm",
+   "s": "Search Hospitality jobs in Vienna with company ratings & salaries. 191 open jobs for Hospitality in Vienna."
+  },
+  {
+   "t": "hotel English-speaking jobs in Vienna",
+   "u": "https://englishjobsearch.at/in/wien/hotel",
+   "s": "English-speaking job offers for hotel in the city of Vienna, Austria"
+  },
+  {
+   "t": "Hotel Jobs In Vienna | Hospitality Careers In Austria",
+   "u": "https://jobshotels.eu/hotel-jobs-in-vienna/",
+   "s": "Hotel Jobs in Vienna with a Culture of Service Find hotel jobs in Vienna or hire hospitality professionals for hotels, restaurants, conference venues and touris"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

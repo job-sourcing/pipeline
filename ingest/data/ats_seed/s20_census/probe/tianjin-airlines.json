@@ -2,10 +2,153 @@
  "brand": "Tianjin Airlines",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:45:50.797Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:33:26.545Z",
+ "candidates": [
+  {
+   "url": "https://pilotcareercenter.com/Air-Carrier-PCC-Profile/2077/Tianjin-Airlines",
+   "title": "Tianjin Airlines - PILOT CAREER CENTER",
+   "status": 200,
+   "bytes": 79739,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Information about Tianjin Airlines on PILOT CAREER CENTER. Welcome to PILOT CAREER CENTER - Pilot Jobs and more! pilotcareercenter.com is a dedicated 24 hour we",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://skybound.jobs/jobs/Tianjin-Airlines-A330-350-Captain-44657",
+   "title": "A330/350 Captain at Tianjin Airlines, China | SkyBound.Jobs",
+   "status": 200,
+   "bytes": 11151,
+   "markers": [],
+   "jsonld_jobs": 1,
+   "spec": null,
+   "score": 7,
+   "snippet": "ATPL A330/350 Captain at Tianjin Airlines in China. Apply via SkyBound.Jobs.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://bestpilotjobs.com/airlines/tianjin-airlines",
+   "title": "Tianjin Airlines Careers — Pilot Hiring Status &amp; Airline Profile",
+   "status": 200,
+   "bytes": 85124,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Tianjin Airlines careers — pilot hiring profile, China: fleet, bases and typical requirements. No open vacancy right now; free alerts when one is posted.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Tianjin Airlines Pilot Jobs | A320, E190 Recruitment | FCI",
+   "u": "https://fci.aero/airlines/tianjin-airlines/",
+   "s": "Discover exciting Tianjin Airlines pilot jobs for A320 and E190 aircraft recruitment at FCI. Explore opportunities and elevate your aviation career."
+  },
+  {
+   "t": "Tianjin Airlines - PILOT CAREER CENTER",
+   "u": "https://pilotcareercenter.com/Air-Carrier-PCC-Profile/2077/Tianjin-Airlines",
+   "s": "Information about Tianjin Airlines on PILOT CAREER CENTER. Welcome to PILOT CAREER CENTER - Pilot Jobs and more! pilotcareercenter.com is a dedicated 24 hour we"
+  },
+  {
+   "t": "天津航空官方网站 - tianjin-air.com",
+   "u": "https://www.tianjin-air.com/recruit/",
+   "s": "天津航空 我们使用Cookies 为了提供个性化的展示与改善的浏览体验。本网站使用cookie。继续浏览我们的网站，即表示您同意我们的 cookie政策 以及 隐私条款。"
+  },
+  {
+   "t": "A330/350 Captain at Tianjin Airlines, China | SkyBound.Jobs",
+   "u": "https://skybound.jobs/jobs/Tianjin-Airlines-A330-350-Captain-44657",
+   "s": "ATPL A330/350 Captain at Tianjin Airlines in China. Apply via SkyBound.Jobs."
+  },
+  {
+   "t": "天津航空官方网站",
+   "u": "https://www.tianjin-air.com/",
+   "s": "天津航空 【出行提示】 尊敬的旅客： 天津航空提醒您提高短信诈骗防范意识，我司官方短信为 95350，请在收到航班取消、航班变动、客票退改签等信息时，通过天津航空客服热线 95350 或天津航空官网（www.tianjin-air.com） 等正规渠道进行信息核实，切勿轻信陌生电话、短信，提高警惕，谨防诈骗 ..."
+  },
+  {
+   "t": "Tianjin Airlines - globalpilotrecruiting.com",
+   "u": "https://www.globalpilotrecruiting.com/tianjin-airlines.html",
+   "s": "Fuzhou Airlines is a subsidiary of Hainan Airlines. Location: Tianjin, China Founded: 2007 Fleet: 35 x A320Family, 6 x A330, 13 x Embraer ERJ145, 32 x Embraer E"
+  },
+  {
+   "t": "Tianjin Airlines Company Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/tianjin-airlines",
+   "s": "Tianjin Airlines Company Limited (hereinafter referred to as Tianjin Airlines) is based in Tianjin, the economic center of Bohai Rim. Aggressively serving devel"
+  },
+  {
+   "t": "Tianjin Airlines Careers — Pilot Jobs & Requirements",
+   "u": "https://bestpilotjobs.com/airlines/tianjin-airlines",
+   "s": "Tianjin Airlines careers — pilot hiring profile, China: fleet, bases and typical requirements. No open vacancy right now; free alerts when one is posted."
+  },
+  {
+   "t": "Tianjin Airlines Pilot Jobs | A320, E190 Recruitment | FCI",
+   "u": "https://fci.aero/airlines/tianjin-airlines/",
+   "s": "Discover exciting Tianjin Airlines pilot jobs for A320 and E190 aircraft recruitment at FCI. Explore opportunities and elevate your aviation career."
+  },
+  {
+   "t": "A330/350 Captain at Tianjin Airlines, China | SkyBound.Jobs",
+   "u": "https://skybound.jobs/jobs/Tianjin-Airlines-A330-350-Captain-44657",
+   "s": "Tianjin Airlines - Pilot Position Tianjin Airlines seeks highly qualified candidates to join its esteemed team. Successful applicants will possess exceptional p"
+  },
+  {
+   "t": "天津航空官方网站 - tianjin-air.com",
+   "u": "https://www.tianjin-air.com/recruit/",
+   "s": "天津航空 我们使用Cookies 为了提供个性化的展示与改善的浏览体验。本网站使用cookie。继续浏览我们的网站，即表示您同意我们的 cookie政策 以及 隐私条款。"
+  },
+  {
+   "t": "天津航空官方网站",
+   "u": "https://www.tianjin-air.com/",
+   "s": "天津航空 【出行提示】 尊敬的旅客： 天津航空提醒您提高短信诈骗防范意识，我司官方短信为 95350，请在收到航班取消、航班变动、客票退改签等信息时，通过天津航空客服热线 95350 或天津航空官网（www.tianjin-air.com） 等正规渠道进行信息核实，切勿轻信陌生电话、短信，提高警惕，谨防诈骗 ..."
+  },
+  {
+   "t": "Tianjin Airlines - PILOT CAREER CENTER",
+   "u": "https://pilotcareercenter.com/Air-Carrier-PCC-Profile/2077/Tianjin-Airlines",
+   "s": "Information about Tianjin Airlines on PILOT CAREER CENTER. Welcome to PILOT CAREER CENTER - Pilot Jobs and more! pilotcareercenter.com is a dedicated 24 hour we"
+  },
+  {
+   "t": "Tianjin Airlines - globalpilotrecruiting.com",
+   "u": "https://www.globalpilotrecruiting.com/tianjin-airlines.html",
+   "s": "Tianjin Airlines, A320 Captain, A330 Captain, ERJ Captain, pilot job, fly in China"
+  },
+  {
+   "t": "Tianjin Airlines Careers — Pilot Jobs & Requirements",
+   "u": "https://bestpilotjobs.com/airlines/tianjin-airlines",
+   "s": "Tianjin Airlines careers — pilot hiring profile, China: fleet, bases and typical requirements. No open vacancy right now; free alerts when one is posted."
+  },
+  {
+   "t": "Tianjin Airlines - VOR Holdings",
+   "u": "https://vorholdings.com/jobs/airline/tianjin-airlines/",
+   "s": "Tianjin A320 Captains (Eight Options) VOR Holdings is NOW accepting applications from A320 Captains for positions with Tianjin Airlines. These are IMMEDIATE con"
+  },
+  {
+   "t": "Tianjin Airlines - PILOT CAREER CENTER",
+   "u": "https://pilotcareercenter.com/Air-Carrier-PCC-Profile/2077/Tianjin-Airlines",
+   "s": "Information about Tianjin Airlines on PILOT CAREER CENTER. Welcome to PILOT CAREER CENTER - Pilot Jobs and more! pilotcareercenter.com is a dedicated 24 hour we"
+  },
+  {
+   "t": "Tianjin Airlines Pilot Jobs | A320, E190 Recruitment | FCI",
+   "u": "https://fci.aero/airlines/tianjin-airlines/",
+   "s": "Discover exciting Tianjin Airlines pilot jobs for A320 and E190 aircraft recruitment at FCI. Explore opportunities and elevate your aviation career."
+  },
+  {
+   "t": "Tianjin Airlines - globalpilotrecruiting.com",
+   "u": "https://www.globalpilotrecruiting.com/tianjin-airlines.html",
+   "s": "Tianjin Airlines, A320 Captain, A330 Captain, ERJ Captain, pilot job, fly in China"
+  },
+  {
+   "t": "天津航空官方网站 - tianjin-air.com",
+   "u": "https://www.tianjin-air.com/recruit/",
+   "s": "天津航空 我们使用Cookies 为了提供个性化的展示与改善的浏览体验。本网站使用cookie。继续浏览我们的网站，即表示您同意我们的 cookie政策 以及 隐私条款。"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://pilotcareercenter.com/Air-Carrier-PCC-Profile/2077/Tianjin-Airlines",
+  "platform": "custom",
+  "title": "Tianjin Airlines - PILOT CAREER CENTER"
+ },
+ "verdict": "custom_surface"
 }

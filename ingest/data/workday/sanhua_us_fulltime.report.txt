@@ -8,3 +8,4 @@ location entries total (sum nLocations): 9
 similar-job edges: 0
 facet-tagged rows: workerSubType=0 jobFamilyGroup=7 (from facet_tags.jsonl)
 facet tag coverage: 7/9 rows (2 untagged)
+h1b wage bands: 2/9 rows banded (0 title+state, 2 title-only) from 27 LCA filings → sanhua_us_fulltime.h1b_lca.csv

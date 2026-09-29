@@ -8,3 +8,17 @@ custom_surface | MAD Studio -> custom
 custom_surface | Metallurgical Corporation of China -> custom
 custom_surface | Miramar Hotel and Investment -> custom
 skip (done) MMG Limited
+ats_surface | Oriental Wrestling Entertainment -> icims:careers-orientaltrading
+no_clear_surface | Perseverance Asset Management -> no_clear_surface
+custom_surface | Pinpoint Asset Management -> custom
+marker_surface | Sunshine Kaidi -> personio
+ats_surface | Tai Lin Radio Service -> workday:Tait_External_Career_Site
+custom_surface | Tianjin Airlines -> custom
+no_clear_surface | Tibet Development -> no_clear_surface
+custom_surface | Tibet Everest Resources -> custom
+custom_surface | Tibet Tourism -> custom
+skip (done) Titan Sports
+no_clear_surface | Vienna Hotels -> no_clear_surface
+custom_surface | Vivo -> custom
+skip (done) Wanda Group
+no_clear_surface | Yunnan People's Publishing House -> no_clear_surface

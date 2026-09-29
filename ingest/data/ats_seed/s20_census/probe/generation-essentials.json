@@ -2,10 +2,172 @@
  "brand": "Generation Essentials",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:35:36.875Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:34:58.631Z",
+ "candidates": [
+  {
+   "url": "https://genmills.wd1.myworkdayjobs.com/GMI_External_Careers",
+   "title": "",
+   "status": 200,
+   "bytes": 7895,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:GMI_External_Careers",
+   "score": 12,
+   "snippet": "New possibilities. Bold thinking. Real heart. Build remarkable brands with remarkable people. At General Mills, we make food the world loves. Across 100+ market",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.generation.org/careers/",
+   "title": "Careers | Generation",
+   "status": 200,
+   "bytes": 116212,
+   "markers": [
+    "workable"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "What is it like to work at Generation? Working at Generation is more than just a job: it is an opportunity to drive social impact globally. We are working to im",
+   "backend": "direct"
+  },
+  {
+   "url": "https://usa.generation.org/jobsprint/",
+   "title": "Generation JobSprint | Generation United States",
+   "status": 200,
+   "bytes": 114853,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "For recent graduates, career changers, and mid-career professionals alike, the job search has become more complicated - more competition, more automated screeni",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | Generation",
+   "u": "https://www.generation.org/careers/",
+   "s": "What is it like to work at Generation? Working at Generation is more than just a job: it is an opportunity to drive social impact globally. We are working to im"
+  },
+  {
+   "t": "THE GENERATION ESSENTIALS - We Are The Definitive Voice In Fashion, Art ...",
+   "u": "https://www.thegenerationessentials.com/",
+   "s": "Creating a global media and entertainment ecosystem covering high fashion, arts, lifestyle, culture, entertainment, and hospitality."
+  },
+  {
+   "t": "The Generation Essentials Group - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/The_Generation_Essentials_Group",
+   "s": "The Generation Essentials Group[2] is a French media and entertainment company. It is the parent company of the fashion magazines L'Officiel, L'Officiel Hommes,"
+  },
+  {
+   "t": "GM Jobs | General Motors Careers",
+   "u": "https://search-careers.gm.com/",
+   "s": "General Motors are working to make our world better, safer and more equitable for all. Find the job you've always been looking for."
+  },
+  {
+   "t": "Meta Careers",
+   "u": "https://www.metacareers.com/jobsearch/",
+   "s": "Search open positions at Meta across AI, engineering, research, product, design, and more."
+  },
+  {
+   "t": "Generation JobSprint | Generation United States",
+   "u": "https://usa.generation.org/jobsprint/",
+   "s": "For recent graduates, career changers, and mid-career professionals alike, the job search has become more complicated - more competition, more automated screeni"
+  },
+  {
+   "t": "Generation Jobs & Careers - 6 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Generation-Jobs-E2169553.htm",
+   "s": "Search job openings at Generation. 6 Generation jobs including salaries, ratings, and reviews, posted by Generation employees."
+  },
+  {
+   "t": "Home | Generation",
+   "u": "https://www.generation.org/",
+   "s": "Generation is a global nonprofit that believes in the power of jobs to change lives We train and place adults into careers that would otherwise be inaccessible."
+  },
+  {
+   "t": "Generation Essentials Reviews, Interview Guide, Real Salaries & Jobs ...",
+   "u": "https://candidatesreach.com/companies/generation-essentials",
+   "s": "Complete hiring intelligence for Generation Essentials: verified workplace culture, key interview checkpoints, real compensation benchmarks, and direct referral"
+  },
+  {
+   "t": "THE GENERATION ESSENTIALS - We Are The Definitive Voice In Fashion, Art ...",
+   "u": "https://www.thegenerationessentials.com/",
+   "s": "Creating a global media and entertainment ecosystem covering high fashion, arts, lifestyle, culture, entertainment, and hospitality."
+  },
+  {
+   "t": "Careers | Generation",
+   "u": "https://www.generation.org/careers/",
+   "s": "What is it like to work at Generation? Working at Generation is more than just a job: it is an opportunity to drive social impact globally. We are working to im"
+  },
+  {
+   "t": "The Daily Essentials Careers - jobs.gem.com",
+   "u": "https://jobs.gem.com/the-daily-essentials",
+   "s": "The Daily Essentials Careers"
+  },
+  {
+   "t": "Home | Generation",
+   "u": "https://www.generation.org/",
+   "s": "Generation continues to meet this moment with urgency and innovation, with more than 155,000 graduates earning $2.5 billion in wages. While 90% of learners are "
+  },
+  {
+   "t": "Jobs | Find the right role for you | General Motors Careers",
+   "u": "https://search-careers.gm.com/en/jobs/",
+   "s": "Our team brings their collective passion for innovation. Find a role that's right for you and discover your career purpose at General Motors."
+  },
+  {
+   "t": "Generation Jobs & Careers - 6 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Generation-Jobs-E2169553.htm",
+   "s": "Search job openings at Generation. 6 Generation jobs including salaries, ratings, and reviews, posted by Generation employees."
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://genmills.wd1.myworkdayjobs.com/GMI_External_Careers",
+   "s": "New possibilities. Bold thinking. Real heart. Build remarkable brands with remarkable people. At General Mills, we make food the world loves. Across 100+ market"
+  },
+  {
+   "t": "Careers | Generation Singapore",
+   "u": "https://singapore.generation.org/careers/",
+   "s": "Together we'll prepare, place, and support people into life-changing careers. Do you want every working day to have a positive impact? Looking to join colle ..."
+  },
+  {
+   "t": "Generation Singapore Jobs in Singapore (with Salaries) - May 2026 ...",
+   "u": "https://sg.jobstreet.com/Generation-Singapore-jobs",
+   "s": "Find your ideal job at Jobstreet with 759 Generation Singapore jobs found in Singapore. View all our Generation Singapore vacancies now with new jobs added dail"
+  },
+  {
+   "t": "Generation Group SG Pte Ltd Jobs in Singapore (with Salaries) - Jun ...",
+   "u": "https://sg.jobstreet.com/Generation-Group-SG-Pte-Ltd-jobs",
+   "s": "Find your ideal job on Jobstreet with 7 Generation Group SG Pte Ltd jobs (1 at Generation Group SG Pte Ltd) listed in Singapore. View all the Generation Group S"
+  },
+  {
+   "t": "Careers | Generation",
+   "u": "https://www.generation.org/careers/",
+   "s": "What is it like to work at Generation? Working at Generation is more than just a job: it is an opportunity to drive social impact globally. We are working to im"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://genmills.wd1.myworkdayjobs.com/GMI_External_Careers",
+  "title": "",
+  "status": 200,
+  "bytes": 7895,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:GMI_External_Careers",
+  "score": 12,
+  "snippet": "New possibilities. Bold thinking. Real heart. Build remarkable brands with remarkable people. At General Mills, we make food the world loves. Across 100+ market",
+  "backend": "supabase"
+ },
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "genmills = General Mills; generation.org = US nonprofit \u2014 neither is Generation Essentials (HK)",
+  "ts": "2026-09-29T04:43:56.028997Z",
+  "by": "S21 retry-wave adjudication"
+ }
 }

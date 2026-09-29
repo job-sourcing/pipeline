@@ -2,10 +2,148 @@
  "brand": "Shenzhen Press Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:34:07.205Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:33:01.833Z",
+ "candidates": [
+  {
+   "url": "https://nowshenzhen.com/jobs/",
+   "title": "",
+   "status": 200,
+   "bytes": 13733,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find your next job in Shenzhen — tech, education, hospitality, design and management roles. English-friendly listings updated daily from companies hiring expats",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://jobs.echinacities.com/en/Shenzhen-jobs",
+   "title": "Shenzhen Jobs – for Expats in Shenzhen",
+   "status": 200,
+   "bytes": 704587,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinacities Jobs provides expats who want to work in Shenzhen with updated employment opportunities.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://baike.baidu.com/en/item/Shen%20Zhen%20Press%20Group/43459",
+   "title": "Shen Zhen Press Group（A newspaper group in China）_Baiduwiki",
+   "status": 200,
+   "bytes": 140005,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "Shenzhen Press Group (English name: Shenzhen Press Group) was established on September 30, 2002. It is one of the top ten press groups in China and one of the l",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "首页-南方报业招聘",
+   "u": "https://campus.southcn.com/",
+   "s": "Explore job opportunities and recruitment information on this platform."
+  },
+  {
+   "t": "深圳出版集团有限公司2025年招聘简章",
+   "u": "https://www.job.sjtu.edu.cn/career/zpxx/view/zpxx/40458280589463552",
+   "s": "深圳出版集团有限公司2025年校园招聘 简章 一、集团简介 （一）发展历史 深圳出版集团有限公司（原深圳出版发行集团）于2007年正式成立，是我国第一家经中宣部和国家新闻出版广电总局（原新闻出版总署）批准成立、融合出版发行业上下游资源于一体的大型出版发行集团。深圳出版集团由深圳 ..."
+  },
+  {
+   "t": "Shenzhen Publishing Group Co., Ltd. Hiring Now-jobs opening-Offertoday",
+   "u": "https://m.offertoday.com/en/company/eTcLaXbTNlyFSkQXizepaw==",
+   "s": "Shenzhen Publishing Group Co., Ltd. is hiring on Offertoday.com, providing job seekers with industry background, company profile, and online recruitment informa"
+  },
+  {
+   "t": "深圳出版集团有限公司",
+   "u": "https://www.szcbfx.com/",
+   "s": "深圳出版集团有限公司 中共广东省委宣传部公布广东省第十三届精神文明建设\"五个一工程\"\"优秀作品奖\"入选作品名单。全省共60部作品入选，涵盖图书、戏剧、电视剧、广播剧、歌曲、电影六大门类。在12部图书类获奖作品中，深圳出版社《奔腾的深圳河》《金墟》两部图书入选。"
+  },
+  {
+   "t": "深圳出版集团有限公司招聘 - 智联招聘",
+   "u": "https://www.zhaopin.com/companydetail/CZ846349120D00307129855.htm",
+   "s": "深圳出版集团有限公司（原深圳出版发行集团公司）成立于2007年11月，是我国第一家经中宣部和国家新闻出版广电总局（原新闻出版总署）批准成立、融合出版发行业上下游资源于一体的大型出版发行集团，是深圳市三大国有文化产业集团和首批九个文化产业基地之一。集团由深圳发行集团和海天 ..."
+  },
+  {
+   "t": "Shen Zhen Press Group（A newspaper group in China）_Baiduwiki",
+   "u": "https://baike.baidu.com/en/item/Shen%20Zhen%20Press%20Group/43459",
+   "s": "Shenzhen Press Group (English name: Shenzhen Press Group) was established on September 30, 2002. It is one of the top ten press groups in China and one of the l"
+  },
+  {
+   "t": "2026深圳出版集团有限公司招聘_深圳出版集团有限公司招聘公告_本地宝招聘",
+   "u": "https://sz.bendibao.com/job/company/5393629/gonggao/",
+   "s": "深圳出版集团有限公司8月招聘 招聘岗位 2个全职岗位：市场策划专员、数据分析员，一共2人 5个实习/兼职岗位：宣传营销岗、活动策划执行岗、文 ..."
+  },
+  {
+   "t": "深圳出版集团有限公司_2026校园招聘最新信息 - 鼠鼠求职",
+   "u": "https://www.shushuqiuzhi.com/article/60273",
+   "s": "深圳出版集团有限公司2025年校园招聘 简章 一、集团简介 （一）发展历史 深圳出版集团有限公司于2007年正式成立，深圳市属国企，我国第一家经中宣部和国家新闻出版广电总局批准成立、融合出版发行业上下游资源于一体的大型出版发行集团。深圳出版集团由深圳行集团和深圳出版社（原海天出版 ..."
+  },
+  {
+   "t": "Urgent! Shenzhen jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-shenzhen",
+   "s": "Active 121 vacancies • Shenzhen jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Shenzhen jobs in USA and abroad •"
+  },
+  {
+   "t": "深圳出版集团有限公司2025年招聘简章 - job.sjtu.edu.cn",
+   "u": "https://www.job.sjtu.edu.cn/career/zpxx/view/zpxx/40458280589463552",
+   "s": "深圳出版集团有限公司2025年校园招聘 简章 一、集团简介 （一）发展历史 深圳出版集团有限公司（原深圳出版发行集团）于2007年正式成立，是我国第一家经中宣部和国家新闻出版广电总局（原新闻出版总署）批准成立、融合出版发行业上下游资源于一体的大型出版发行集团。深圳出版集团由深圳 ..."
+  },
+  {
+   "t": "Shen Zhen Press Group（A newspaper group in China）_Baiduwiki",
+   "u": "https://baike.baidu.com/en/item/Shen%20Zhen%20Press%20Group/43459",
+   "s": "Shenzhen Press Group (English name: Shenzhen Press Group) was established on September 30, 2002. It is one of the top ten press groups in China and one of the l"
+  },
+  {
+   "t": "Shenzhen Jobs — Now Shenzhen",
+   "u": "https://nowshenzhen.com/jobs/",
+   "s": "Find your next job in Shenzhen — tech, education, hospitality, design and management roles. English-friendly listings updated daily from companies hiring expats"
+  },
+  {
+   "t": "深圳出版集团有限公司招聘 - 智联招聘",
+   "u": "https://www.zhaopin.com/companydetail/CZ846349120D00307129855.htm",
+   "s": "深圳出版集团有限公司（原深圳出版发行集团公司）成立于2007年11月，是我国第一家经中宣部和国家新闻出版广电总局（原新闻出版总署）批准成立、融合出版发行业上下游资源于一体的大型出版发行集团，是深圳市三大国有文化产业集团和首批九个文化产业基地之一。集团由深圳发行集团和海天 ..."
+  },
+  {
+   "t": "人民日报社公开招聘-首页",
+   "u": "https://rmrbhr.peopledaily.com.cn/",
+   "s": "更多招聘服务信息 请微信扫码关注"
+  },
+  {
+   "t": "Shenzhen Jobs - for Expats in Shenzhen",
+   "u": "https://jobs.echinacities.com/en/Shenzhen-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Shenzhen with updated employment opportunities."
+  },
+  {
+   "t": "【深圳出版集团有限公司招聘】-猎聘",
+   "u": "https://www.liepin.com/company/8001663/",
+   "s": "猎聘为您提供2026年深圳出版集团有限公司招聘信息，更有深圳出版集团有限公司企业介绍、深圳出版集团有限公司地址、深圳出版集团有限公司工作环境以及深圳出版集团有限公司招聘岗位信息，全面的为您提供深圳出版集团有限公司高薪职位，求职找工作就上猎聘。"
+  },
+  {
+   "t": "Shenzhen Publishing Group Co., Ltd. Hiring Now-jobs opening-Offertoday",
+   "u": "https://m.offertoday.com/en/company/eTcLaXbTNlyFSkQXizepaw==",
+   "s": "Shenzhen Publishing Group Co., Ltd. is hiring on Offertoday.com, providing job seekers with industry background, company profile, and online recruitment informa"
+  },
+  {
+   "t": "Urgent! Shenzhen jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-shenzhen",
+   "s": "Active 121 vacancies • Shenzhen jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Shenzhen jobs in USA and abroad •"
+  },
+  {
+   "t": "深圳出版集团有限公司招聘 - 智联招聘",
+   "u": "https://www.zhaopin.com/companydetail/CZ846349120D00307129855.htm",
+   "s": "深圳出版集团有限公司（原深圳出版发行集团公司）成立于2007年11月，是我国第一家经中宣部和国家新闻出版广电总局（原新闻出版总署）批准成立、融合出版发行业上下游资源于一体的大型出版发行集团，是深圳市三大国有文化产业集团和首批九个文化产业基地之一。集团由深圳发行集团和海天 ..."
+  },
+  {
+   "t": "「深圳报业集团招聘」2026年深圳报业集团招聘信息-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/job/1f9e35179834a3e10ndy3dy1FA~~.html",
+   "s": "BOSS直聘为您提供2026年深圳报业集团最新招聘信息，查看深圳报业集团职位信息，关注深圳报业集团招聘动态，欢迎进入本页面与深圳报业集团BOSS们在线开聊!"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

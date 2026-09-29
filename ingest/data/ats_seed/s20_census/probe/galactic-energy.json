@@ -152,5 +152,11 @@
   "platform": "phenom",
   "title": "Careers at Virgin Galactic | Virgin Galactic jobs"
  },
- "verdict": "marker_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "gengalactic.com = General Galactic (US space startup, El Segundo) \u2014 a DIFFERENT company from Chinese Galactic Energy/\u94f6\u6cb3\u822a\u5929; vgcareers.virgingalactic also a collision",
+  "ts": "2026-09-29T04:43:56.028997Z",
+  "by": "S21 retry-wave adjudication"
+ }
 }

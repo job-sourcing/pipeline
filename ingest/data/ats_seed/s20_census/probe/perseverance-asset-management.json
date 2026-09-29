@@ -2,10 +2,148 @@
  "brand": "Perseverance Asset Management",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:44:04.250Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:30:36.086Z",
+ "candidates": [
+  {
+   "url": "https://www.efinancialcareers.sg/jobs/asset-management/in-singapore?q=asset+management&location=Singapore&latitude=1.35208&longitude=103.81983&countryCode=SG&locationPrecision=Country&radius=40&radiusUnit=km&pageSize=15&currencyCode=SGD&language=en&includeUnspecifiedSalary=true",
+   "title": "",
+   "status": 200,
+   "bytes": 71891,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Click here to view 716 Asset Management jobs in Singapore, brought to you by eFinancialCareers.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.gyasset.com/en",
+   "title": "Perseverance Asset Management - Home",
+   "status": 200,
+   "bytes": 13276,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "Perseverance Asset Management is China's leading asset management firm dedicated to Greater China Public Equities investment. It adopts a unique multi-manager s",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.gyasset.com/En/index.html",
+   "title": "Perseverance Asset Management - Home",
+   "status": 200,
+   "bytes": 13276,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "Perseverance Asset Management is China's leading asset management firm dedicated to Greater China Public Equities investment. It adopts a unique multi-manager s",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Perseverance Asset Management International (Singapore) Pte. Ltd. Jobs ...",
+   "u": "https://sg.jobstreet.com/perseverance-asset-management-international-(singapore)-pte.-ltd.-jobs",
+   "s": "Find your ideal job at Jobstreet with 98 Perseverance Asset Management International (Singapore) Pte. Ltd. jobs found in Singapore. View all our Perseverance As"
+  },
+  {
+   "t": "Perseverance Asset Management International (Singapore) Pte. Ltd.",
+   "u": "https://www.mycareersfuture.gov.sg/companies/perseverance-asset-management-international-201833493C",
+   "s": "Considering a job @ PERSEVERANCE ASSET MANAGEMENT INTERNATIONAL (SINGAPORE) PTE. LTD. in Singapore? View the latest jobs on offer from PERSEVERANCE ASSET MANAGE"
+  },
+  {
+   "t": "Perseverance Asset Management International Singapore Pte. Ltd. Jobs in ...",
+   "u": "https://sg.jobstreet.com/perseverance-asset-management-international-singapore-pte.-ltd.-jobs",
+   "s": "Find your ideal job at Jobstreet with 27 Perseverance Asset Management International Singapore Pte. Ltd. jobs found in Singapore. View all our Perseverance Asse"
+  },
+  {
+   "t": "5 Perseverance Asset Management 高毅资产 jobs in Worldwide",
+   "u": "https://linkedin.com/jobs/perseverance-asset-management-%E9%AB%98%E6%AF%85%E8%B5%84%E4%BA%A7-jobs-worldwide?f_C=14414657",
+   "s": "Today's top 5 Perseverance Asset Management 高毅资产 jobs in Worldwide. Leverage your professional network, and get hired. New Perseverance Asset Management 高毅资产 jo"
+  },
+  {
+   "t": "Perseverance Asset Management - Home",
+   "u": "https://www.gyasset.com/en",
+   "s": "Perseverance Asset Management is China's leading asset management firm dedicated to Greater China Public Equities investment. It adopts a unique multi-manager s"
+  },
+  {
+   "t": "Working at Perseverance Asset Management | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Perseverance-Asset-Management-EI_IE7231529.11,40.htm",
+   "s": "See what employees say it's like to work at Perseverance Asset Management. Salaries, reviews, and more - all posted by employees working at Perseverance Asset M"
+  },
+  {
+   "t": "Perseverance Asset Management 高毅资产 - LinkedIn",
+   "u": "https://sg.linkedin.com/company/gaoyi-asset-management",
+   "s": "Perseverance Asset Management is China's leading asset management firm dedicated to Greater China Public Equities investment. It adopts a unique multi-manager s"
+  },
+  {
+   "t": "Perseverance Asset Management Pay and Benefits - Glassdoor",
+   "u": "https://www.glassdoor.com/pay-and-benefits/Perseverance-Asset-Management-E7231529.htm",
+   "s": "Get data insights into total compensation, benefits, perks, and rewards for working at Perseverance Asset Management through real anonymous employees."
+  },
+  {
+   "t": "perseverance investment management hedge fund jobs",
+   "u": "https://www.indeed.com/q-perseverance-investment-management-hedge-fund-jobs.html",
+   "s": "66 Perseverance Investment Management Hedge Fund jobs available on Indeed.com. Apply to Counselor, Investment Manager, Vice President of Finance and more!"
+  },
+  {
+   "t": "5 Perseverance Asset Management 高毅资产 jobs in Worldwide",
+   "u": "https://linkedin.com/jobs/perseverance-asset-management-%E9%AB%98%E6%AF%85%E8%B5%84%E4%BA%A7-jobs-worldwide?f_C=14414657",
+   "s": "Today's top 5 Perseverance Asset Management 高毅资产 jobs in Worldwide. Leverage your professional network, and get hired. New Perseverance Asset Management 高毅资产 jo"
+  },
+  {
+   "t": "Perseverance Asset Management International Jobs in United States ...",
+   "u": "https://www.linkedin.com/jobs/perseverance-asset-management-international-jobs",
+   "s": "Today's top 0 Perseverance Asset Management International jobs in United States. Leverage your professional network, and get hired. New Perseverance Asset Manag"
+  },
+  {
+   "t": "Perseverance Asset Management - Home",
+   "u": "https://www.gyasset.com/En/index.html",
+   "s": "Perseverance Asset Management is China's leading asset management firm dedicated to Greater China Public Equities investment. It adopts a unique multi-manager s"
+  },
+  {
+   "t": "Working at Perseverance Asset Management | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Perseverance-Asset-Management-EI_IE7231529.11,40.htm",
+   "s": "See what employees say it's like to work at Perseverance Asset Management. Salaries, reviews, and more - all posted by employees working at Perseverance Asset M"
+  },
+  {
+   "t": "Perseverance Asset Management 高毅资产 | 领英 - 领英 (中国)",
+   "u": "https://cn.linkedin.com/company/gaoyi-asset-management",
+   "s": "Perseverance Asset Management is China's leading asset management firm dedicated to Greater China Public Equities investment. It adopts a unique multi-manager s"
+  },
+  {
+   "t": "Perseverance Asset Management International (Singapore) Pte. Ltd. Jobs ...",
+   "u": "https://sg.jobstreet.com/perseverance-asset-management-international-(singapore)-pte.-ltd.-jobs",
+   "s": "Find your ideal job at Jobstreet with 98 Perseverance Asset Management International (Singapore) Pte. Ltd. jobs found in Singapore. View all our Perseverance As"
+  },
+  {
+   "t": "Marketing Operations at Perseverance Asset Management ... - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/view/marketing-operations-at-perseverance-asset-management-%E9%AB%98%E6%AF%85%E8%B5%84%E4%BA%A7-4357376351",
+   "s": "Apply for Marketing Operations at Perseverance Asset Management 高毅资产 in Central &amp; Western District, Hong Kong SAR. Full-time Entry level role. See responsib"
+  },
+  {
+   "t": "Perseverance Asset Management International (Singapore) Pte. Ltd. Jobs ...",
+   "u": "https://sg.jobstreet.com/perseverance-asset-management-international-(singapore)-pte.-ltd.-jobs",
+   "s": "Find your ideal job at Jobstreet with 98 Perseverance Asset Management International (Singapore) Pte. Ltd. jobs found in Singapore. View all our Perseverance As"
+  },
+  {
+   "t": "Perseverance Asset Management International Singapore Pte. Ltd. Jobs in ...",
+   "u": "https://sg.jobstreet.com/perseverance-asset-management-international-singapore-pte.-ltd.-jobs",
+   "s": "Find your ideal job at Jobstreet with 27 Perseverance Asset Management International Singapore Pte. Ltd. jobs found in Singapore. View all our Perseverance Asse"
+  },
+  {
+   "t": "Perseverance Asset Management International (Singapore) Pte. Ltd ...",
+   "u": "https://www.mycareersfuture.gov.sg/companies/perseverance-asset-management-international-201833493C",
+   "s": "Considering a job @ PERSEVERANCE ASSET MANAGEMENT INTERNATIONAL (SINGAPORE) PTE. LTD. in Singapore? View the latest jobs on offer from PERSEVERANCE ASSET MANAGE"
+  },
+  {
+   "t": "5 Perseverance Asset Management 高毅资产 jobs in Worldwide",
+   "u": "https://linkedin.com/jobs/perseverance-asset-management-%E9%AB%98%E6%AF%85%E8%B5%84%E4%BA%A7-jobs-worldwide?f_C=14414657",
+   "s": "Today's top 5 Perseverance Asset Management 高毅资产 jobs in Worldwide. Leverage your professional network, and get hired. New Perseverance Asset Management 高毅资产 jo"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

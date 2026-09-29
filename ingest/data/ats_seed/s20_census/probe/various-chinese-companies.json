@@ -2,10 +2,148 @@
  "brand": "Various Chinese companies",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:22:36.723Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:36:13.253Z",
+ "candidates": [
+  {
+   "url": "https://www.echinacities.com/career-advice/Top-Jobs-with-Foreign-Companies-in-China",
+   "title": "Top Jobs with Foreign Companies in China",
+   "status": 200,
+   "bytes": 270918,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Many foreign companies employ expats to top positions in China, opening the door for some hefty salaries. Let's take a look at some of the top jobs with foreign",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.china-admissions.com/blog/10-most-popular-jobs-for-foreigners-in-china/",
+   "title": "10 Most Popular Jobs for Foreigners in China &#8226; China Admissions",
+   "status": 200,
+   "bytes": 321534,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "As China continues to grow as a global powerhouse, the opportunities for foreign professionals to live and work in the country are more abundant than ever. The ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.hiredchina.com/articles/global-talent-china-careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 24768,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "China's emerging enterprises in AI, new energy, biomedicine, cross-border e-commerce and low-altitude economy offer abundant high-demand careers for global tale",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "10 Most Popular Jobs for Foreigners in China",
+   "u": "https://www.china-admissions.com/blog/10-most-popular-jobs-for-foreigners-in-china/",
+   "s": "As China continues to grow as a global powerhouse, the opportunities for foreign professionals to live and work in the country are more abundant than ever. The "
+  },
+  {
+   "t": "Global Talent Opportunities 2026: In-Demand Careers at China's ...",
+   "u": "https://www.hiredchina.com/articles/global-talent-china-careers/",
+   "s": "China's emerging enterprises in AI, new energy, biomedicine, cross-border e-commerce and low-altitude economy offer abundant high-demand careers for global tale"
+  },
+  {
+   "t": "List of International Companies in China and Jobs",
+   "u": "https://www.isacjobs.com/job/international-company-careers/",
+   "s": "List of International Companies in China and Jobs Professional Jobs Shanghai, Beijing September 16, 2026"
+  },
+  {
+   "t": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for ...",
+   "u": "https://chinajobsdaily.com/",
+   "s": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!"
+  },
+  {
+   "t": "Job Opportunities and Career Paths for Foreigners in China",
+   "u": "https://www.whatson.red/blog/job-opportunities-and-career-paths-for-foreigners-in-china",
+   "s": "For foreign professionals and expats looking to build a career in China, the employment landscape is rapidly diversifying. While English teaching remains a high"
+  },
+  {
+   "t": "2,591 chinese Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-chinese-jobs-SRCH_IL.0,5_IN48_KO6,13.htm",
+   "s": "Search Chinese jobs in China with company ratings & salaries. 2,591 open jobs for Chinese in China."
+  },
+  {
+   "t": "Top Jobs with Foreign Companies in China - echinacities.com",
+   "u": "https://www.echinacities.com/career-advice/Top-Jobs-with-Foreign-Companies-in-China",
+   "s": "Many foreign companies employ expats to top positions in China, opening the door for some hefty salaries. Let's take a look at some of the top jobs with foreign"
+  },
+  {
+   "t": "China Job Market Guide: Salaries, Visas & Top Companies 2026",
+   "u": "https://www.cityjobs.info/countries/china/",
+   "s": "Get the definitive guide to China's job market: essential insights on monthly average salaries (966 USD), visa rules, and employment trends. Learn about top emp"
+  },
+  {
+   "t": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for ...",
+   "u": "https://chinajobsdaily.com/",
+   "s": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!"
+  },
+  {
+   "t": "Local Hiring Platform- JobtoCN",
+   "u": "https://jobtocn.com/",
+   "s": "At JobtoCN, we specialize in connecting job seekers with top Chinese companies. We also feature a dedicated remote marketing job opportunities section, where yo"
+  },
+  {
+   "t": "2,591 chinese Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-chinese-jobs-SRCH_IL.0,5_IN48_KO6,13.htm",
+   "s": "Search Chinese jobs in China with company ratings & salaries. 2,591 open jobs for Chinese in China."
+  },
+  {
+   "t": "11,000 Chinese Companies Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Chinese-Companies-jobs.html",
+   "s": "11,839 Chinese Companies jobs available on Indeed.com. Apply to Filmmaker, Sourcing Specialist, Operation Specialist and more!"
+  },
+  {
+   "t": "chinajob.com - Working in China,Start Here! - Jobs",
+   "u": "https://www.chinajob.com/job/search_do.php",
+   "s": "Find job opportunities in China, connect with employers, and access resources for working and living in the country."
+  },
+  {
+   "t": "165 Jobs in China - Vacancies & Salaries (Oct 2026) - Edarabia",
+   "u": "https://www.edarabia.com/jobs/china/",
+   "s": "Jobs in China (Vacancies) As the world's most populous country with an estimated population of 1,408,526,449, there is a sizeable amount of jobs in China that o"
+  },
+  {
+   "t": "Chinese Company Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-chinese-company-jobs.html",
+   "s": "16,394 Chinese Company jobs. Apply to Analyst, Instructor, Junior Software Test Engineer and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "chinajob.com - Working in China,Start Here! - Jobs",
+   "u": "https://www.chinajob.com/job/",
+   "s": "Explore the latest job opportunities in China and start your career journey with ChinaJOB."
+  },
+  {
+   "t": "HiredChina Jobs Board",
+   "u": "https://cn.hiredchina.com/",
+   "s": "HiredChina.com - The platform with the best job varieties for expats in China. Choose your ideal job from 5000+ companies! HiredChina.com"
+  },
+  {
+   "t": "2,591 chinese Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-chinese-jobs-SRCH_IL.0,5_IN48_KO6,13.htm",
+   "s": "Search Chinese jobs in China with company ratings & salaries. 2,591 open jobs for Chinese in China."
+  },
+  {
+   "t": "Jobs, Employment in China - Now Hiring in September 2026 - Jooble",
+   "u": "https://jooble.org/jobs/China",
+   "s": "Active 865 vacancies • Jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Free, fast and easy way to find a job "
+  },
+  {
+   "t": "chinajob.com - Working in China,Start Here! - Jobs",
+   "u": "https://www.chinajob.com/job/search_do.php",
+   "s": "Find job opportunities in China, connect with employers, and access resources for working and living in the country."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

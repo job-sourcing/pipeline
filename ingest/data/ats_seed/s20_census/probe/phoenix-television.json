@@ -2,10 +2,148 @@
  "brand": "Phoenix Television",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:33:37.459Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:32:19.451Z",
+ "candidates": [
+  {
+   "url": "https://www.fox10phoenix.com/jobs",
+   "title": "Work for Us | FOX 10 Phoenix",
+   "status": 200,
+   "bytes": 183294,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Work for Us View current employment opportunities at KSAZ-TV FOX 10 and KUTP-TV FOX 10+ in Phoenix, Arizona. For all current job postings, please visit foxcaree",
+   "backend": "direct"
+  },
+  {
+   "url": "http://careers.phoenixtv.com/",
+   "title": "鳳凰衛視招聘",
+   "status": 200,
+   "bytes": 14837,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "1、負責節目資料搜集、撰稿、策劃及製作，獨立承擔選題到成片的全流程工作； 2、統籌特別項目的籌備及執行，協調內外部 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.showbizjobs.com/jobs/location/city/phoenix",
+   "title": "",
+   "status": 200,
+   "bytes": 23822,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find amazing dream jobs in the phoenix area in Film, TV, Production, Streaming Media, Video Games, Theater, Movies, Show Business, Entertainment, and the Arts.",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "25 Television Jobs, Employment in Phoenix, AZ | Indeed",
+   "u": "https://www.indeed.com/q-Television-l-Phoenix,-AZ-jobs.html",
+   "s": "44 Television jobs in Phoenix, AZ. Apply to Broadcaster, Director of Operations, Preconstruction Manager and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Work for Us - FOX 10 Phoenix",
+   "u": "https://www.fox10phoenix.com/jobs",
+   "s": "Work for Us View current employment opportunities at KSAZ-TV FOX 10 and KUTP-TV FOX 10+ in Phoenix, Arizona. For all current job postings, please visit foxcaree"
+  },
+  {
+   "t": "Television Jobs in Phoenix (417 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/television-jobs-phoenix-az",
+   "s": "Today's top 417 Television jobs in Phoenix. Leverage your professional network, and get hired. New Television jobs added daily."
+  },
+  {
+   "t": "Television Stations jobs in Phoenix, AZ - Indeed",
+   "u": "https://www.indeed.com/q-Television-Stations-l-Phoenix,-AZ-jobs.html",
+   "s": "47 Television Stations jobs in Phoenix, AZ. Apply to Broadcaster, Audio Visual Engineer, Host/hostess and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Tv Jobs in Phoenix (624 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tv-jobs-phoenix-az",
+   "s": "Today's top 624 Tv jobs in Phoenix. Leverage your professional network, and get hired. New Tv jobs added daily."
+  },
+  {
+   "t": "Careers - Arizona PBS",
+   "u": "https://azpbs.org/about/careers/",
+   "s": "Explore open staff and student positions at Arizona PBS, one of the country's largest public television stations."
+  },
+  {
+   "t": "ifeng.com - 鳳凰衛視招聘",
+   "u": "http://careers.phoenixtv.com/",
+   "s": "1、負責節目資料搜集、撰稿、策劃及製作，獨立承擔選題到成片的全流程工作； 2、統籌特別項目的籌備及執行，協調內外部 ..."
+  },
+  {
+   "t": "Jobs - Arizona Media Association + Arizona Local News Foundation",
+   "u": "https://azmedia.org/jobs/",
+   "s": "Telemundo Arizona Telemundo Arizona / KTAZ is Telemundo's local television station serving the Spanish-speaking community in the Phoenix area for over 30 years."
+  },
+  {
+   "t": "25 Television Jobs, Employment in Phoenix, AZ | Indeed",
+   "u": "https://www.indeed.com/q-Television-l-Phoenix,-AZ-jobs.html",
+   "s": "44 Television jobs in Phoenix, AZ. Apply to Broadcaster, Director of Operations, Preconstruction Manager and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Television Stations jobs in Phoenix, AZ - Indeed",
+   "u": "https://www.indeed.com/q-Television-Stations-l-Phoenix,-AZ-jobs.html",
+   "s": "47 Television Stations jobs in Phoenix, AZ. Apply to Broadcaster, Audio Visual Engineer, Host/hostess and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Television Jobs in Phoenix (417 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/television-jobs-phoenix-az",
+   "s": "Today's top 417 Television jobs in Phoenix. Leverage your professional network, and get hired. New Television jobs added daily."
+  },
+  {
+   "t": "Work for Us - FOX 10 Phoenix",
+   "u": "https://www.fox10phoenix.com/jobs",
+   "s": "Work for Us View current employment opportunities at KSAZ-TV FOX 10 and KUTP-TV FOX 10+ in Phoenix, Arizona. For all current job postings, please visit foxcaree"
+  },
+  {
+   "t": "Television Jobs in Greater Phoenix Area (894 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/television-jobs-greater-phoenix-area",
+   "s": "Today's top 894 Television jobs in Greater Phoenix Area. Leverage your professional network, and get hired. New Television jobs added daily."
+  },
+  {
+   "t": "Top 37 Television Jobs in Phoenix, Az | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=television&l=phoenix%2C+az",
+   "s": "37 Television jobs available in Phoenix, Az. See salaries, compare reviews, easily apply, and get hired. New Television careers in Phoenix, Az are added daily o"
+  },
+  {
+   "t": "Jobs - Arizona Media Association + Arizona Local News Foundation",
+   "u": "https://azmedia.org/jobs/",
+   "s": "Telemundo Arizona Telemundo Arizona / KTAZ is Telemundo's local television station serving the Spanish-speaking community in the Phoenix area for over 30 years."
+  },
+  {
+   "t": "Careers - Arizona PBS",
+   "u": "https://azpbs.org/about/careers/",
+   "s": "Explore open staff and student positions at Arizona PBS, one of the country's largest public television stations."
+  },
+  {
+   "t": "Now Hiring: 25 Television Stations Jobs in Phoenix, AZ | Indeed",
+   "u": "https://www.indeed.com/q-Television-Stations-l-Phoenix,-AZ-jobs.html",
+   "s": "47 Television Stations jobs in Phoenix, AZ. Apply to Broadcaster, Audio Visual Engineer, Host/hostess and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Work for Us - FOX 10 Phoenix",
+   "u": "https://www.fox10phoenix.com/jobs",
+   "s": "Work for Us View current employment opportunities at KSAZ-TV FOX 10 and KUTP-TV FOX 10+ in Phoenix, Arizona. For all current job postings, please visit foxcaree"
+  },
+  {
+   "t": "25 Television Jobs, Employment in Phoenix, AZ | Indeed",
+   "u": "https://www.indeed.com/q-Television-l-Phoenix,-AZ-jobs.html",
+   "s": "44 Television jobs in Phoenix, AZ. Apply to Broadcaster, Director of Operations, Preconstruction Manager and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Television Jobs in Phoenix (417 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/television-jobs-phoenix-az",
+   "s": "Today's top 417 Television jobs in Phoenix. Leverage your professional network, and get hired. New Television jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

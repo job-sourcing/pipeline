@@ -2,10 +2,153 @@
  "brand": "Tibet Tourism",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:46:51.714Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:35:30.800Z",
+ "candidates": [
+  {
+   "url": "https://www.exploretibet.com/careers/",
+   "title": "Join Our Team: Careers and Job Opportunities in Tibet",
+   "status": 200,
+   "bytes": 208001,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Start your career with Explore Tibet. Join a team of passionate local professionals dedicated to providing authentic travel experiences across the plateau.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.tibetdiscovery.com/travel-job-offer/",
+   "title": "Work with Tibet Travel Agency - Tibet Discovery",
+   "status": 200,
+   "bytes": 37986,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Welcome to Work at Tibet Discovery! Do you have a passion for travel? Want to know more about Tibet and China? Want to stay for a time in Tibet and China? Want ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://tibet.net/wp-content/uploads/2026/02/Job-announcement-English-Destination-management-officers.pdf",
+   "title": "",
+   "status": 200,
+   "bytes": 650889,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "JOB VACANCY The Central Tibetan Relief Committee (CTRC), under the Department of Home, CTA, is pleased to announce the establishment of a Destination Management",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Our Team: Careers and Job Opportunities in Tibet",
+   "u": "https://www.exploretibet.com/careers/",
+   "s": "Start your career with Explore Tibet. Join a team of passionate local professionals dedicated to providing authentic travel experiences across the plateau."
+  },
+  {
+   "t": "Work with Tibet Travel Agency - Tibet Discovery",
+   "u": "https://www.tibetdiscovery.com/travel-job-offer/",
+   "s": "Welcome to Work at Tibet Discovery! Do you have a passion for travel? Want to know more about Tibet and China? Want to stay for a time in Tibet and China? Want "
+  },
+  {
+   "t": "PDF JOB VACANCY - tibet.net",
+   "u": "https://tibet.net/wp-content/uploads/2026/02/Job-announcement-English-Destination-management-officers.pdf",
+   "s": "JOB VACANCY The Central Tibetan Relief Committee (CTRC), under the Department of Home, CTA, is pleased to announce the establishment of a Destination Management"
+  },
+  {
+   "t": "Jobs & Volunteering - Access Tibet Tour",
+   "u": "https://www.accesstibettour.com/jobs.html",
+   "s": "Job opportunities and volunteering positions in Tibet with Access Tibet Tour. Tibet tour guide jobs, office positions and volunteer opportunities in Lhasa."
+  },
+  {
+   "t": "74 Tibet jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-jobs-worldwide",
+   "s": "Today's top 74 Tibet jobs in Worldwide. Leverage your professional network, and get hired. New Tibet jobs added daily."
+  },
+  {
+   "t": "Tibetan Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Tibetan-jobs.html",
+   "s": "Browse 16 Tibetan jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Job und Karriere | Stellenangebote | Praktikum vom Amazing Tibet",
+   "u": "https://www.amazing-tibet.com/karriere-jobs.htm",
+   "s": "Karriere & Jobs Als einer der führenden Veranstalter für Reisen nach Tibet sucht Amazing Tibet regelmässig neue Mitarbeiter in verschiedenen Bereichen: 2 Mitarb"
+  },
+  {
+   "t": "Jobs - Free Tibet",
+   "u": "https://freetibet.org/jobs/",
+   "s": "Jobs Volunteer - Free Tibet Free Tibet is looking for a dedicated and energetic individual (s) looking to gain work experience at our small human rights and cam"
+  },
+  {
+   "t": "Join Our Team: Careers and Job Opportunities in Tibet",
+   "u": "https://www.exploretibet.com/careers/",
+   "s": "Start your career with Explore Tibet. Join a team of passionate local professionals dedicated to providing authentic travel experiences across the plateau."
+  },
+  {
+   "t": "Jobs & Volunteering - Access Tibet Tour",
+   "u": "https://www.accesstibettour.com/jobs.html",
+   "s": "Job opportunities and volunteering positions in Tibet with Access Tibet Tour. Tibet tour guide jobs, office positions and volunteer opportunities in Lhasa."
+  },
+  {
+   "t": "PDF JOB VACANCY - tibet.net",
+   "u": "https://tibet.net/wp-content/uploads/2026/02/Job-announcement-English-Destination-management-officers.pdf",
+   "s": "JOB VACANCY The Central Tibetan Relief Committee (CTRC), under the Department of Home, CTA, is pleased to announce the establishment of a Destination Management"
+  },
+  {
+   "t": "74 Tibet jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-jobs-worldwide",
+   "s": "Today's top 74 Tibet jobs in Worldwide. Leverage your professional network, and get hired. New Tibet jobs added daily."
+  },
+  {
+   "t": "Tibetan Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Tibetan-jobs.html",
+   "s": "Browse 16 Tibetan jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Job und Karriere | Stellenangebote | Praktikum vom Amazing Tibet",
+   "u": "https://www.amazing-tibet.com/karriere-jobs.htm",
+   "s": "Karriere & Jobs Als einer der führenden Veranstalter für Reisen nach Tibet sucht Amazing Tibet regelmässig neue Mitarbeiter in verschiedenen Bereichen: 2 Mitarb"
+  },
+  {
+   "t": "Work with Tibet Travel Agency - Tibet Discovery",
+   "u": "https://www.tibetdiscovery.com/travel-job-offer/",
+   "s": "Welcome to Work at Tibet Discovery! Do you have a passion for travel? Want to know more about Tibet and China? Want to stay for a time in Tibet and China? Want "
+  },
+  {
+   "t": "Vacancy notice from Nepal Tourism Board (NTB), Top Tourism job ...",
+   "u": "https://www.educatenepal.com/vacancies/detail/vacancy-announcement-from-nepal-tourism-board-ntb",
+   "s": "Nepal Tourism Board (NTB) is a national tourism organization of Nepal established in 1998 by an Act of Parliament in the form of partnership between the Governm"
+  },
+  {
+   "t": "74 Tibet jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-jobs-worldwide",
+   "s": "Today's top 74 Tibet jobs in Worldwide. Leverage your professional network, and get hired. New Tibet jobs added daily."
+  },
+  {
+   "t": "Join Our Team: Careers and Job Opportunities in Tibet",
+   "u": "https://www.exploretibet.com/careers/",
+   "s": "Start your career with Explore Tibet. Join a team of passionate local professionals dedicated to providing authentic travel experiences across the plateau."
+  },
+  {
+   "t": "PDF JOB VACANCY - tibet.net",
+   "u": "https://tibet.net/wp-content/uploads/2026/02/Job-announcement-English-Destination-management-officers.pdf",
+   "s": "JOB VACANCY The Central Tibetan Relief Committee (CTRC), under the Department of Home, CTA, is pleased to announce the establishment of a Destination Management"
+  },
+  {
+   "t": "Tibetan Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Tibetan-jobs.html",
+   "s": "Browse 16 Tibetan jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.exploretibet.com/careers/",
+  "platform": "custom",
+  "title": "Join Our Team: Careers and Job Opportunities in Tibet"
+ },
+ "verdict": "custom_surface"
 }

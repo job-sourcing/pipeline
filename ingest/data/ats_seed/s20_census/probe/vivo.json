@@ -2,10 +2,153 @@
  "brand": "Vivo",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:47:38.590Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:38:44.398Z",
+ "candidates": [
+  {
+   "url": "https://www.vivo.com/en/about-vivo/career/jobs",
+   "title": "vivo Jobs | vivo Global",
+   "status": 200,
+   "bytes": 82508,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find the jobs in vivo near you. We hope you can join in vivo for our future.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://vivoinfusion.com/careers/",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers At Vivo Infusion At Vivo Infusion, we're not only dedicated to providing exceptional, compassionate infusion care, we're also committed to nurturing a w",
+   "backend": "direct"
+  },
+  {
+   "url": "https://vivo-us.com/pages/careers",
+   "title": "Careers &ndash; VIVO - desk solutions, screen mounting, and more",
+   "status": 200,
+   "bytes": 435227,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CAREERS If you're interested in working with VIVO, we'd love to hear from you! Discover new opportunities below.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "vivo Jobs | vivo Global",
+   "u": "https://www.vivo.com/en/about-vivo/career/jobs",
+   "s": "Find the jobs in vivo near you. We hope you can join in vivo for our future."
+  },
+  {
+   "t": "Careers - Vivo Infusion",
+   "u": "https://vivoinfusion.com/careers/",
+   "s": "Careers At Vivo Infusion At Vivo Infusion, we're not only dedicated to providing exceptional, compassionate infusion care, we're also committed to nurturing a w"
+  },
+  {
+   "t": "vivo招聘官方网站",
+   "u": "https://hr.vivo.com/wt/vivo/web/index/CompvivoPageindex",
+   "s": "vivo官方招聘平台，诚邀精英共创智能未来!未来，在世界所有充满渴望极致的角落，vivo与你共同创造令人震撼的奇迹!"
+  },
+  {
+   "t": "Careers - VIVO - desk solutions, screen mounting, and more",
+   "u": "https://vivo-us.com/pages/careers",
+   "s": "CAREERS If you're interested in working with VIVO, we'd love to hear from you! Discover new opportunities below."
+  },
+  {
+   "t": "Careers at Vivo Energy",
+   "u": "https://www.vivoenergy.com/en/careers",
+   "s": "Careers at Vivo Energy We offer careers in several sectors, for both junior and senior positions, across 29 markets in Africa and beyond. If you are interested "
+  },
+  {
+   "t": "Careers | Vivo",
+   "u": "https://www.vivo.ca/careers/",
+   "s": "We yearn for a better future, for ourselves, our community and our planet. We see our employees as a force for good. We empower them to tackle inspiring challen"
+  },
+  {
+   "t": "Careers at VIVO",
+   "u": "https://www.vivodefence.com/careers-at-vivo",
+   "s": "Careers at VIVO VIVO is an exciting new company dedicated to defence, built upon our collective experience to create a people first approach that will inspire a"
+  },
+  {
+   "t": "Vivo",
+   "u": "https://opportunities.vivoinc.com/",
+   "s": "We're hiring a in Pleasanton, CA. Find Jobs Faster Login or sign up to create customized job alerts, save your searches, upload your resume and more!"
+  },
+  {
+   "t": "vivo Jobs | vivo Global",
+   "u": "https://www.vivo.com/en/about-vivo/career/jobs",
+   "s": "Find the jobs in vivo near you. We hope you can join in vivo for our future."
+  },
+  {
+   "t": "Vivo | Search Jobs",
+   "u": "https://opportunities.vivoinc.com/index.smpl?arg=jb_search",
+   "s": "Find Jobs Faster Login or sign up to create customized job alerts, save your searches, upload your resume and more!"
+  },
+  {
+   "t": "vivo招聘官方网站",
+   "u": "https://hr.vivo.com/personal-home",
+   "s": "vivo官方招聘平台，诚邀精英共创智能未来!未来，在世界所有充满渴望极致的角落，vivo与你共同创造令人震撼的奇迹!"
+  },
+  {
+   "t": "Careers - VIVO - desk solutions, screen mounting, and more",
+   "u": "https://vivo-us.com/pages/careers",
+   "s": "Job Openings All resumes should be submitted to jobs@vivo-us.com."
+  },
+  {
+   "t": "Jobs at vivo",
+   "u": "https://www.vivo.com/in/about-vivo/career/jobs",
+   "s": "About vivo Jobs at vivo Popular Links X300 Pro X300 V70 V70 Elite T5e All Models vivo ZEISS co-engineered Imaging vivo Exclusive store"
+  },
+  {
+   "t": "100 Vivo Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-company%3avivo-jobs.html",
+   "s": "143 Vivo jobs available on Indeed.com. Apply to Psychiatrist, Director of Housekeeping, Sales Representative and more!"
+  },
+  {
+   "t": "Opportunities - Vivo, Inc.",
+   "u": "https://vivoinc.com/job-board/",
+   "s": "Ready to join the Vivo team? Find out about the details of our latest job opportunities."
+  },
+  {
+   "t": "VIVO Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Vivo-eeb98c38",
+   "s": "Find out what works well at VIVO from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for "
+  },
+  {
+   "t": "vivo Jobs | vivo Global",
+   "u": "https://www.vivo.com/en/about-vivo/career/jobs",
+   "s": "Find the jobs in vivo near you. We hope you can join in vivo for our future."
+  },
+  {
+   "t": "Vivo | Search Jobs",
+   "u": "https://opportunities.vivoinc.com/index.smpl?arg=jb_search",
+   "s": "We're hiring a in Pleasanton, CA. Find Jobs Faster Login or sign up to create customized job alerts, save your searches, upload your resume and more!"
+  },
+  {
+   "t": "Opportunities - Vivo, Inc.",
+   "u": "https://vivoinc.com/job-board/",
+   "s": "Ready to join the Vivo team? Find out about the details of our latest job opportunities."
+  },
+  {
+   "t": "Careers - VIVO - desk solutions, screen mounting, and more",
+   "u": "https://vivo-us.com/pages/careers",
+   "s": "Job Openings All resumes should be submitted to jobs@vivo-us.com."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.vivo.com/en/about-vivo/career/jobs",
+  "platform": "custom",
+  "title": "vivo Jobs | vivo Global"
+ },
+ "verdict": "custom_surface"
 }

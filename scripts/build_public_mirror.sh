@@ -69,6 +69,7 @@ echo "== rsync tree (with exclusions) =="
 rsync -a --delete \
   --exclude='.git/' \
   --exclude='ingest/.env' \
+  --exclude='ingest/.netlify_fleet_keys' \
   --exclude='research_data/' \
   --exclude='validation_results/' \
   --exclude='audit/' \

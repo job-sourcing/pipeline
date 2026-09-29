@@ -2,10 +2,153 @@
  "brand": "Tibet Everest Resources",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:46:29.438Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:34:56.756Z",
+ "candidates": [
+  {
+   "url": "https://tibet.net/announcements/job-announcements/",
+   "title": "Job Announcements &#8211; Central Tibetan Administration",
+   "status": 200,
+   "bytes": 172979,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Job Vacancy: Storekeeper Required at Ngoenga School for Tibetan Children with Special Needs Education Department Announces Vacancies of Principal (Grade II), Re",
+   "backend": "direct"
+  },
+  {
+   "url": "https://grokipedia.com/page/tibet_everest_resources",
+   "title": "Tibet Everest Resources — Grokipedia",
+   "status": 200,
+   "bytes": 359361,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "While Tibet Everest Resources' Tibetan operations focus on base metals amid the region's rich polymetallic deposits, its lithium pursuits abroad mitigate risks ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.everestglobal.com/us-en/career-opportunities/overview",
+   "title": "Careers | Everest",
+   "status": 200,
+   "bytes": 185777,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "The sky is the limit at Everest - where we offer more than jobs, we help build careers. Explore a wealth of opportunities across our insurance, reinsurance, and",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Tibet Everest Resources - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Tibet_Everest_Resources",
+   "s": "Tibet Everest Resources (Chinese: 西藏珠峰资源股份有限公司), also known as Tibet Summit Resources or simply Tibet Summit in English-language sources, stock abbreviation: Ti"
+  },
+  {
+   "t": "Tibet Everest Resources — Grokipedia",
+   "u": "https://grokipedia.com/page/tibet_everest_resources",
+   "s": "While Tibet Everest Resources' Tibetan operations focus on base metals amid the region's rich polymetallic deposits, its lithium pursuits abroad mitigate risks "
+  },
+  {
+   "t": "Careers | Everest",
+   "u": "https://www.everestglobal.com/us-en/career-opportunities/overview",
+   "s": "The sky is the limit at Everest - where we offer more than jobs, we help build careers. Explore a wealth of opportunities across our insurance, reinsurance, and"
+  },
+  {
+   "t": "10 Tibet Summit Resources jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-summit-resources-jobs",
+   "s": "Today&rsquo;s top 10 Tibet Summit Resources jobs in United States. Leverage your professional network, and get hired. New Tibet Summit Resources jobs added dail"
+  },
+  {
+   "t": "Tibet Everest Resources - Detailed Pedia",
+   "u": "https://www.detailedpedia.com/wiki-Tibet_Everest_Resources",
+   "s": "Corporate affairs Tibet Everest Resources was listed on the Shanghai Stock Exchange (ticker: SZSE: 600338) on December 27, 2000. Initially operating in the moto"
+  },
+  {
+   "t": "Careers - Everest Group Research Portal",
+   "u": "https://www.everestgrp.com/Careers/",
+   "s": "Everest Group has become aware of incidents where scammers are using its likeness to post fictitious jobs and make fraudulent job offers. These individuals may "
+  },
+  {
+   "t": "Tibet Summit Resources Company Profile - Office Locations ... - Craft",
+   "u": "https://craft.co/tibet-summit-resources",
+   "s": "Tibet Summit Resources (also known as 西藏珠峰资源股份有限公司, Tibet Everest Resources) is a company that develops non-ferrous metal and mineral deposit resources. It enga"
+  },
+  {
+   "t": "Careers - Everest Clinical Research",
+   "u": "https://everestclinical.com/careers/",
+   "s": "At Everest Clinical Research, our mission is to be a trusted partner in advancing global health through high-quality, timely, and effective clinical research se"
+  },
+  {
+   "t": "Tibet Everest Resources - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Tibet_Everest_Resources",
+   "s": "Tibet Everest Resources (Chinese: 西藏珠峰资源股份有限公司), also known as Tibet Summit Resources or simply Tibet Summit in English-language sources, stock abbreviation: Ti"
+  },
+  {
+   "t": "10 Tibet Summit Resources jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-summit-resources-jobs",
+   "s": "Today&rsquo;s top 10 Tibet Summit Resources jobs in United States. Leverage your professional network, and get hired. New Tibet Summit Resources jobs added dail"
+  },
+  {
+   "t": "Tibetan Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Tibetan-jobs.html",
+   "s": "Browse 16 Tibetan jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "74 Tibet jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-jobs-worldwide",
+   "s": "Today's top 74 Tibet jobs in Worldwide. Leverage your professional network, and get hired. New Tibet jobs added daily."
+  },
+  {
+   "t": "Job Announcements - Central Tibetan Administration",
+   "u": "https://tibet.net/announcements/job-announcements/",
+   "s": "Job Vacancy: Storekeeper Required at Ngoenga School for Tibetan Children with Special Needs Education Department Announces Vacancies of Principal (Grade II), Re"
+  },
+  {
+   "t": "Tibet Everest Resources — Grokipedia",
+   "u": "https://grokipedia.com/page/tibet_everest_resources",
+   "s": "While Tibet Everest Resources' Tibetan operations focus on base metals amid the region's rich polymetallic deposits, its lithium pursuits abroad mitigate risks "
+  },
+  {
+   "t": "Tibet Summit Resources Company Profile - Office Locations ... - Craft",
+   "u": "https://craft.co/tibet-summit-resources",
+   "s": "Tibet Summit Resources (also known as 西藏珠峰资源股份有限公司, Tibet Everest Resources) is a company that develops non-ferrous metal and mineral deposit resources. It enga"
+  },
+  {
+   "t": "Careers | Everest",
+   "u": "https://www.everestglobal.com/us-en/career-opportunities/overview",
+   "s": "The sky is the limit at Everest - where we offer more than jobs, we help build careers. Explore a wealth of opportunities across our insurance, reinsurance, and"
+  },
+  {
+   "t": "74 Tibet jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-jobs-worldwide",
+   "s": "Today's top 74 Tibet jobs in Worldwide. Leverage your professional network, and get hired. New Tibet jobs added daily."
+  },
+  {
+   "t": "Careers | Everest",
+   "u": "https://www.everestglobal.com/us-en/career-opportunities/overview",
+   "s": "The sky is the limit at Everest - where we offer more than jobs, we help build careers. Explore a wealth of opportunities across our insurance, reinsurance, and"
+  },
+  {
+   "t": "Tibetan Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Tibetan-jobs.html",
+   "s": "Browse 16 Tibetan jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "ལས་ཀ་དང་གོ་་སྐབས་ JOBS & OPPORTUNITY FOR TIBETAN | Facebook",
+   "u": "https://www.facebook.com/groups/tibetanyouthcareer/",
+   "s": "J&O* is a non-profit project that seeks to cater Tibetan youth through its accessible, comprehensive, and updated information portal on available employment and"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://tibet.net/announcements/job-announcements/",
+  "platform": "custom",
+  "title": "Job Announcements &#8211; Central Tibetan Administration"
+ },
+ "verdict": "custom_surface"
 }

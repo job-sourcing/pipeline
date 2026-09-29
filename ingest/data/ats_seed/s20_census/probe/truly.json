@@ -2,10 +2,153 @@
  "brand": "Truly",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:25:47.088Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:43:35.049Z",
+ "candidates": [
+  {
+   "url": "https://trulypizza.com/pages/careers",
+   "title": "Careers\n &ndash; Truly Pizza",
+   "status": 200,
+   "bytes": 244642,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Truly Pizza Address: 24402 Del Prado Ave Dana Point, CA 92629 Phone: (949) 218-8220 Open 11am-9pm Closed Tuesdays",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.trulynolen.com/careers/",
+   "title": "Truly Nolen Careers | Truly Nolen",
+   "status": 200,
+   "bytes": 187627,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore career opportunities at Truly Nolen, the world's largest family-owned pest control company with excellent benefits and a commitment to employee partners",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://trulydevs.com/careers",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 36307,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Truly is a social-tech AI hub built to bring people, technology, and ideas together. Whether you're a developer, analyst, QA engineer, product manager, ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Truly Nolen Careers",
+   "u": "https://www.trulytalent.com/",
+   "s": "Truly Nolen of America, Inc. is an equal employment opportunity employer and is committed to providing a work environment that is free from any form of discrimi"
+  },
+  {
+   "t": "Everyone's Got Their Flavor | Truly Hard Seltzer",
+   "u": "https://www.trulyhardseltzer.com/",
+   "s": "Refresh your routine with Truly Hard Seltzer. Light, crisp, and bursting with real fruit flavor—perfect for every occasion."
+  },
+  {
+   "t": "Careers - Truly Pizza",
+   "u": "https://trulypizza.com/pages/careers",
+   "s": "Truly Pizza Address: 24402 Del Prado Ave Dana Point, CA 92629 Phone: (949) 218-8220 Open 11am-9pm Closed Tuesdays"
+  },
+  {
+   "t": "Truly Nolen Careers",
+   "u": "https://www.trulynolen.com/careers/",
+   "s": "Explore career opportunities at Truly Nolen, the world's largest family-owned pest control company with excellent benefits and a commitment to employee partners"
+  },
+  {
+   "t": "Truly Nolen Careers",
+   "u": "https://www.trulytalent.com/?trk=public_post_reshare-text",
+   "s": "We strive to provide a great work environment and create a dynamic company culture for everyone at Truly Nolen."
+  },
+  {
+   "t": "Careers - Truly",
+   "u": "https://trulydevs.com/careers",
+   "s": "Careers Truly is a social-tech AI hub built to bring people, technology, and ideas together. Whether you're a developer, analyst, QA engineer, product manager, "
+  },
+  {
+   "t": "Truly - LinkedIn",
+   "u": "https://www.linkedin.com/company/blend-organic",
+   "s": "Truly believes you should never have to settle when it comes to self love. So, we always practice what we preach. Whether it's haircare, skincare, or beauty - a"
+  },
+  {
+   "t": "International Remote Jobs & Work From Anywhere Jobs | Truly Remote",
+   "u": "https://trulyremote.co/",
+   "s": "Explore legit remote jobs that hire worldwide, updated daily. Join Truly Remote to find complete remote, international, and work-from-anywhere roles."
+  },
+  {
+   "t": "Truly Gmbh Jobs und Stellenangebote - 2026 - StepStone",
+   "u": "https://www.stepstone.de/jobs/truly-gmbh",
+   "s": "Truly Gmbh Jobs in Deutschland - Finden Sie passende Truly Gmbh Stellenangebote mit Stepstone!"
+  },
+  {
+   "t": "Careers - Truly",
+   "u": "https://trulydevs.com/careers",
+   "s": "Whether you're a developer, analyst, QA engineer, product manager, UI designer, or citizen developer, Truly gives you a place to discover people, explore techno"
+  },
+  {
+   "t": "Truly Jobs - 35 Stellenangebote auf JobScout24",
+   "u": "https://www.jobscout24.ch/de/jobs/truly/",
+   "s": "We will help you grow both personally and professionally: through our trainings, mentoring programs and on-the-job learning, but also by connecting with your co"
+  },
+  {
+   "t": "Truly Remote Jobs: Work From Anywhere, Open Worldwide",
+   "u": "https://trulyremotework.com/",
+   "s": "Browse 705+ truly remote jobs you can do from anywhere, open to any country. Screened: no location limits, no relocation, no timezone rules."
+  },
+  {
+   "t": "Remote Jobs Worldwide — Work From Anywhere | Truly Remote",
+   "u": "https://trulyremote.co/jobs?category=All",
+   "s": "Explore legit remote jobs that hire worldwide, updated daily. Join Truly Remote to find complete remote, international, and work-from-anywhere roles."
+  },
+  {
+   "t": "International Remote Jobs & Work From Anywhere Jobs | Truly Remote",
+   "u": "https://trulyremote.co/",
+   "s": "Explore legit remote jobs that hire worldwide, updated daily. Join Truly Remote to find complete remote, international, and work-from-anywhere roles."
+  },
+  {
+   "t": "Remote jobs | TrulyHired",
+   "u": "https://trulyhired.com/cities/remote-jobs/",
+   "s": "We empower K-12 educators to raise student achievement through a wide range of services and products including educator conferences, customized district solutio"
+  },
+  {
+   "t": "Truly Remote Jobs | Jetzt 500 offene Stellen finden | Indeed",
+   "u": "https://de.indeed.com/q-truly-remote-jobs.html?vjk=aa1cbe50a70466cf",
+   "s": "We're hiring a software engineer embedded in Developer Advocacy who ships real product code that directly impacts both Grafana Cloud and Grafana OSS."
+  },
+  {
+   "t": "Now Hiring: 100 Truly Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Truly-jobs.html",
+   "s": "Browse 123 Truly jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "We're Hiring! - Truly's",
+   "u": "https://trulys.com/were-hiring/",
+   "s": "We're Hiring! Want to join the Truly's team? Fill in the form below and we'll get in touch with you soon. If you'd prefer, you can print out the form… Read More"
+  },
+  {
+   "t": "Truly Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Truly",
+   "s": "Find out what works well at Truly from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for"
+  },
+  {
+   "t": "Truly Company Jobs in United States (6,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/truly-company-jobs",
+   "s": "Today's top 6,000+ Truly Company jobs in United States. Leverage your professional network, and get hired. New Truly Company jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://trulypizza.com/pages/careers",
+  "platform": "custom",
+  "title": "Careers\n &ndash; Truly Pizza"
+ },
+ "verdict": "custom_surface"
 }

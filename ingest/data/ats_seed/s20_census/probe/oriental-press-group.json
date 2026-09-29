@@ -2,10 +2,148 @@
  "brand": "Oriental Press Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:33:01.770Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:26:00.487Z",
+ "candidates": [
+  {
+   "url": "https://orientalpress.com/careers.php",
+   "title": "403 Forbidden",
+   "status": 403,
+   "bytes": 561,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Founded in Manama in 1952, Oriental Press has grown to become a global printing group with operations in Bahrain, Dubai, and London.",
+   "backend": "direct"
+  },
+  {
+   "url": "http://www.oriental-press.com/page.php?content=careers",
+   "title": "403 Forbidden",
+   "status": 403,
+   "bytes": 561,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "A global printing group Oriental Group is one of the world's premier print organizations! Founded in Manama in 1952, Oriental Press has grown to become a global",
+   "backend": "direct"
+  },
+  {
+   "url": "https://orientalpress.com/category/careers.php",
+   "title": "403 Forbidden",
+   "status": 403,
+   "bytes": 561,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Here for all your print needs. We are experts in colored book printing, flexible & paperboard packaging, and security printing. A global printing group Oriental",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Oriental Press - Official Website",
+   "u": "https://orientalpress.com/careers.php",
+   "s": "Founded in Manama in 1952, Oriental Press has grown to become a global printing group with operations in Bahrain, Dubai, and London."
+  },
+  {
+   "t": "Oriental Press - Official Website",
+   "u": "http://www.oriental-press.com/page.php?content=careers",
+   "s": "A global printing group Oriental Group is one of the world's premier print organizations! Founded in Manama in 1952, Oriental Press has grown to become a global"
+  },
+  {
+   "t": "Oriental Press - Official Website",
+   "u": "https://orientalpress.com/category/careers.php",
+   "s": "Here for all your print needs. We are experts in colored book printing, flexible & paperboard packaging, and security printing. A global printing group Oriental"
+  },
+  {
+   "t": "Oriental Press Group Jobs in Singapore (with Salaries) - Jan 2026 ...",
+   "u": "https://sg.jobstreet.com/Oriental-Press-Group-jobs",
+   "s": "Find your ideal job at Jobstreet with 1 Oriental Press Group job found in Singapore. View all our Oriental Press Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Oriental Press Group Careers and Employment | Indeed.com",
+   "u": "https://hk.indeed.com/cmp/Oriental-Press-Group",
+   "s": "Find out what works well at Oriental Press Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
+  },
+  {
+   "t": "Oriental Printing Group B.S.C (c) - LinkedIn",
+   "u": "https://www.linkedin.com/company/oriental-printing-group",
+   "s": "Oriental Printing Group B.S.C (c) | 5,698 followers on LinkedIn. Flexible Packaging, Folding Cartons, Security Printing, Commercial Printing & Books Printing | "
+  },
+  {
+   "t": "Oriental Press Malaysia Jobs (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://my.jobstreet.com/oriental-press-malaysia-jobs",
+   "s": "Find your ideal job at Jobstreet with 29 Oriental Press Malaysia jobs found in Malaysia. View all our Oriental Press Malaysia vacancies now with new jobs added "
+  },
+  {
+   "t": "Careers - Oriental Castle Group",
+   "u": "https://orientalcastle.com/careers/",
+   "s": "Developing and engaging an innovative content to align with group / company's digital branding; Task include social media design and content work; Liaison with "
+  },
+  {
+   "t": "Oriental Press - Official Website",
+   "u": "https://orientalpress.com/category/careers.php",
+   "s": "Here for all your print needs. We are experts in colored book printing, flexible & paperboard packaging, and security printing. A global printing group Oriental"
+  },
+  {
+   "t": "Oriental Press - Official Website",
+   "u": "https://orientalpress.com/careers.php",
+   "s": "Founded in Manama in 1952, Oriental Press has grown to become a global printing group with operations in Bahrain, Dubai, and London."
+  },
+  {
+   "t": "Oriental Press - Official Website",
+   "u": "http://www.oriental-press.com/page.php?content=careers",
+   "s": "A global printing group Oriental Group is one of the world's premier print organizations! Founded in Manama in 1952, Oriental Press has grown to become a global"
+  },
+  {
+   "t": "Oriental Press Group Jobs in Singapore (with Salaries) - Jan 2026 ...",
+   "u": "https://sg.jobstreet.com/Oriental-Press-Group-jobs",
+   "s": "Find your ideal job at Jobstreet with 1 Oriental Press Group job found in Singapore. View all our Oriental Press Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Oriental Press Group Careers and Employment - Indeed",
+   "u": "https://hk.indeed.com/cmp/Oriental-Press-Group",
+   "s": "Find out what works well at Oriental Press Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
+  },
+  {
+   "t": "Oriental Printing Group B.S.C (c) - LinkedIn",
+   "u": "https://www.linkedin.com/company/oriental-printing-group",
+   "s": "Oriental Printing Group B.S.C (c) | 5,698 followers on LinkedIn. Flexible Packaging, Folding Cartons, Security Printing, Commercial Printing & Books Printing | "
+  },
+  {
+   "t": "Oriental Press Group Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/oriental-press-group-jobs",
+   "s": "Find your ideal job on Jobsdb with 3 Oriental Press Group jobs (2 at Oriental Press Group) listed in Hong Kong. View all the Oriental Press Group vacancies now "
+  },
+  {
+   "t": "Careers at Epson",
+   "u": "https://jobs.epson.com/",
+   "s": "A leading manufacturer in the printer, professional imaging, projector, scanner, system devices, and factory automation categories."
+  },
+  {
+   "t": "Oriental Press - Official Website",
+   "u": "https://orientalpress.com/category/careers.php",
+   "s": "Founded in Manama in 1952, Oriental Press has grown to become a global printing group with operations in Bahrain, Dubai, and London. For more than 70 years Orie"
+  },
+  {
+   "t": "Oriental Press - Official Website",
+   "u": "http://www.oriental-press.com/page.php?content=careers",
+   "s": "A global printing group Oriental Group is one of the world's premier print organizations! Founded in Manama in 1952, Oriental Press has grown to become a global"
+  },
+  {
+   "t": "Oriental Press - Official Website",
+   "u": "http://oriental-press.com/careers.php",
+   "s": "Here at Oriental Press we are always open for energetic, and creative people to work with us, you can visit our office to apply, and we require the following: R"
+  },
+  {
+   "t": "Oriental Press Group Careers and Employment - Indeed",
+   "u": "https://hk.indeed.com/cmp/Oriental-Press-Group",
+   "s": "Find out what works well at Oriental Press Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

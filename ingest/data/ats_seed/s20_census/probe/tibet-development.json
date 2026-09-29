@@ -2,10 +2,148 @@
  "brand": "Tibet Development",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:46:09.057Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:34:15.451Z",
+ "candidates": [
+  {
+   "url": "https://tibetfund.org/job-opportunities/",
+   "title": "",
+   "status": 200,
+   "bytes": 40128,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Job Opportunities Vice President of Communications Application Closed The Vice President of Communications is a senior leadership role responsible for shaping a",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://synoviq.com/careers/china/tibet/",
+   "title": "Tibet Careers - Join Synoviq | Synoviq",
+   "status": 200,
+   "bytes": 113849,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore exciting career opportunities in Tibet, China with Synoviq. Join our team and work on innovative technology projects.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://tibetancareercentre.wixsite.com/tibet",
+   "title": "",
+   "status": 200,
+   "bytes": 116748,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "DHARAMSHALA: The Tibetan Career Centre, a joint initiative of Central Tibetan Administration and TechnoServe, is holding its first ever recruitment fo...",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Job Opportunities - The Tibet Fund",
+   "u": "https://tibetfund.org/job-opportunities/",
+   "s": "Job Opportunities Vice President of Communications Application Closed The Vice President of Communications is a senior leadership role responsible for shaping a"
+  },
+  {
+   "t": "74 Tibet jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-jobs-worldwide",
+   "s": "Today's top 74 Tibet jobs in Worldwide. Leverage your professional network, and get hired. New Tibet jobs added daily."
+  },
+  {
+   "t": "Tibet Careers - Join Synoviq | Synoviq",
+   "u": "https://synoviq.com/careers/china/tibet/",
+   "s": "Explore exciting career opportunities in Tibet, China with Synoviq. Join our team and work on innovative technology projects."
+  },
+  {
+   "t": "Home | Tibet",
+   "u": "https://tibetancareercentre.wixsite.com/tibet",
+   "s": "DHARAMSHALA: The Tibetan Career Centre, a joint initiative of Central Tibetan Administration and TechnoServe, is holding its first ever recruitment fo..."
+  },
+  {
+   "t": "Job Announcements - Central Tibetan Administration",
+   "u": "https://tibet.net/announcements/job-announcements/",
+   "s": "Job Vacancy: Storekeeper Required at Ngoenga School for Tibetan Children with Special Needs Education Department Announces Vacancies of Principal (Grade II), Re"
+  },
+  {
+   "t": "YES Tibetan Career Centre | LinkedIn",
+   "u": "https://in.linkedin.com/company/yes-tibetan-career-centre",
+   "s": "YES Tibetan Career Centre | 112 followers on LinkedIn. YES Tibetan Career Centre Tibetan Career Centre is a program run by YES- Youth Empowerment Support under "
+  },
+  {
+   "t": "Tibetan Career Services - Empowering the Vision Project",
+   "u": "https://www.empoweringvision.org/tibetan-career-services/",
+   "s": "Tibetan Career Service is a vital platform that helps young Tibetan professionals to advance in their careers and achieve their goals. By providing access to ba"
+  },
+  {
+   "t": "Tibet Development Co. Ltd Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-development-co.-ltd-jobs",
+   "s": "Today's top Tibet Development Co. Ltd jobs in United States. Leverage your professional network, and get hired. New Tibet Development Co. Ltd jobs added daily."
+  },
+  {
+   "t": "74 Tibet jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-jobs-worldwide",
+   "s": "Today's top 74 Tibet jobs in Worldwide. Leverage your professional network, and get hired. New Tibet jobs added daily."
+  },
+  {
+   "t": "Tibetan Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Tibetan-jobs.html",
+   "s": "Browse 16 Tibetan jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Junior Developer and Sysadmin - Tibet Action Institute",
+   "u": "https://tibetaction.net/junior-developer-and-sysadmin/",
+   "s": "Tibet Action Institute Junior Developer and Sysadmin Organization Tibet Action Institute's dynamic and curated global team of campaigners, technology experts an"
+  },
+  {
+   "t": "ལས་ཀ་དང་གོ་་སྐབས་ JOBS & OPPORTUNITY FOR TIBETAN | Facebook",
+   "u": "https://www.facebook.com/groups/tibetanyouthcareer/",
+   "s": "Hello my tibetan brothers and sisters'Are you one of those people who is always the last person to find out about job and scholarship opportunities? Or worse, D"
+  },
+  {
+   "t": "Tibet Development Co. Ltd Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-development-co.-ltd-jobs",
+   "s": "Today's top Tibet Development Co. Ltd jobs in United States. Leverage your professional network, and get hired. New Tibet Development Co. Ltd jobs added daily."
+  },
+  {
+   "t": "25 Of Tibetan Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Of-Tibetan-jobs.html",
+   "s": "38 Of Tibetan jobs available on Indeed.com. Apply to Interpreter, Foreign Language Teacher, Adjunct Faculty and more!"
+  },
+  {
+   "t": "Jobs in Tibet - Careerjet",
+   "u": "https://www.career-jet.cn/jobs/Tibet",
+   "s": "Search for the latest Tibet jobs on Careerjet, the employment search engine. Covers all industry sectors."
+  },
+  {
+   "t": "Job Announcements - Central Tibetan Administration",
+   "u": "https://tibet.net/announcements/job-announcements/",
+   "s": "Job Vacancy: Storekeeper Required at Ngoenga School for Tibetan Children with Special Needs Education Department Announces Vacancies of Principal (Grade II), Re"
+  },
+  {
+   "t": "74 Tibet jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tibet-jobs-worldwide",
+   "s": "Today's top 74 Tibet jobs in Worldwide. Leverage your professional network, and get hired. New Tibet jobs added daily."
+  },
+  {
+   "t": "Job Announcements - Central Tibetan Administration",
+   "u": "https://tibet.net/announcements/job-announcements/",
+   "s": "Job Vacancy: Storekeeper Required at Ngoenga School for Tibetan Children with Special Needs Education Department Announces Vacancies of Principal (Grade II), Re"
+  },
+  {
+   "t": "Tibetan Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Tibetan-jobs.html",
+   "s": "Browse 16 Tibetan jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "ལས་ཀ་དང་གོ་་སྐབས་ JOBS & OPPORTUNITY FOR TIBETAN | Facebook",
+   "u": "https://www.facebook.com/groups/tibetanyouthcareer/",
+   "s": "Hello my tibetan brothers and sisters'Are you one of those people who is always the last person to find out about job and scholarship opportunities? Or worse, D"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }
