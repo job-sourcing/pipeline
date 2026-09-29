@@ -2,10 +2,153 @@
  "brand": "Cheer Holding",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:28:47.626Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:49:53.516Z",
+ "candidates": [
+  {
+   "url": "https://www.cheerde.com/careers-2/",
+   "title": "Careers - Cheer DE",
+   "status": 200,
+   "bytes": 231484,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "It is the policy of CHEER to provide employment opportunities equally to all individuals without regard to race, color, religion, gender, national origin or anc",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.cheerleading.com/careers.html",
+   "title": "ERROR: The request could not be satisfied",
+   "status": 403,
+   "bytes": 919,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Thank you for considering us as part of your career journey! About Cheerleading.com Cheerleading.com is a leader in the cheer apparel and accessories industry, ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://usacheer.org/jobs-dashboard",
+   "title": "Jobs Dashboard - USA Cheer",
+   "status": 200,
+   "bytes": 1634862,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Job Dashboard United States Governing Body for Sport Cheering Recognized by the International Cheer Union Serving the cheer, dance team, and spirit community.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Cheer DE",
+   "u": "https://www.cheerde.com/careers-2/",
+   "s": "It is the policy of CHEER to provide employment opportunities equally to all individuals without regard to race, color, religion, gender, national origin or anc"
+  },
+  {
+   "t": "USA Cheer hiring EDUCATION, RESEARCH & SPECIAL PROJECTS ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/education-research-special-projects-manager-at-usa-cheer-4464116698",
+   "s": "POSITION OVERVIEW USA Cheer is seeking an exceptionally organized, resourceful and detail-oriented Education, Research & Special Projects Manager to manage sign"
+  },
+  {
+   "t": "Careers at Cheerleading.com",
+   "u": "https://www.cheerleading.com/careers.html",
+   "s": "Thank you for considering us as part of your career journey! About Cheerleading.com Cheerleading.com is a leader in the cheer apparel and accessories industry, "
+  },
+  {
+   "t": "Careers - Join Our Team & Empower Athletes - Nfinity™ Cheer",
+   "u": "https://www.nfinity.com/pages/careers",
+   "s": "Explore exciting career opportunities at Nfinity! Join a passionate team dedicated to supporting athletes and cheerleaders with innovative products."
+  },
+  {
+   "t": "Cheerleading Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-cheerleading-jobs.html",
+   "s": "Browse 1,095 Cheerleading jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Cheer Holding (CHR) Company Profile, History, Products & Services",
+   "u": "https://www.financecharts.com/stocks/CHR/profile",
+   "s": "Cheer Holding, Inc. engages in the provision of advertisement and content production services. The company is headquartered in Beijing, Beijing and currently em"
+  },
+  {
+   "t": "Jobs Dashboard - USA Cheer",
+   "u": "https://usacheer.org/jobs-dashboard",
+   "s": "Job Dashboard United States Governing Body for Sport Cheering Recognized by the International Cheer Union Serving the cheer, dance team, and spirit community."
+  },
+  {
+   "t": "Cheer Holding, Inc. (CHR) company profile and facts - Yahoo Finance",
+   "u": "https://uk.finance.yahoo.com/quote/CHR/profile/",
+   "s": "See the company profile for Cheer Holding, Inc. (CHR), including business summary, industry/sector information, number of employees, corporate governance, key e"
+  },
+  {
+   "t": "Cheer Hold Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-cheer-hold-jobs.html",
+   "s": "64 Cheer Hold jobs available on Indeed.com. Apply to Head Coach, Assistant Coach, Assistant Teacher and more!"
+  },
+  {
+   "t": "Cheer, STUNT & Dance Coaching Jobs Board — Cheer Daily",
+   "u": "https://cheerdaily.com/jobs-board",
+   "s": "Browse open coaching positions in cheerleading, STUNT, and dance — college, high school, all-star, and youth programs. Updated daily."
+  },
+  {
+   "t": "4,000 Cheer Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-cheer-jobs.html",
+   "s": "Today's top Cheer jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Coaching Jobs - USA Cheer",
+   "u": "https://usacheer.org/coaching-jobs",
+   "s": "Coaching Jobs Institution Name George School City Newtown State Pennsylvania Job Title Cheer Assistant Coach Category Cheer Level High School Position Assistant"
+  },
+  {
+   "t": "Careers at Varsity Brands | Varsity Brands jobs",
+   "u": "https://careers.varsitybrands.com/us/en",
+   "s": "Find your dream job at Varsity. At Varsity Brands, we aim to build school pride, student engagement and community spirit Brands. Find the available jobs at Vars"
+  },
+  {
+   "t": "Careers - STUNT the Sport",
+   "u": "https://stuntthesport.org/careers/",
+   "s": "Looking for a fulfilling career path in STUNT? STUNT is expanding nationwide and looking to fill ongoing coaching and officiating roles at the club, high school"
+  },
+  {
+   "t": "College Job Openings - Varsity.com",
+   "u": "https://www.varsity.com/college-job-openings/",
+   "s": "Are you looking for a College Spirit Program coaching position? We would love to help connect you to a program with openings."
+  },
+  {
+   "t": "Top 607 Cheerleading coach Jobs | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=cheerleading+coach",
+   "s": "607 Cheerleading coach jobs available. See salaries, compare reviews, easily apply, and get hired. New Cheerleading coach careers are added daily on SimplyHired"
+  },
+  {
+   "t": "Cheerleading Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-cheerleading-jobs.html",
+   "s": "Browse 1,095 Cheerleading jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Cheer Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/jobs?q=cheer",
+   "s": "1,562 Cheer jobs available on Indeed.com. Apply to Head of School, Assistant Coach, Head Coach and more!"
+  },
+  {
+   "t": "PDF ;CHEER We are iring! OIN OUR TEAM • Center Support Manager APPLY NOW ...",
+   "u": "https://www.cheerde.com/wp-content/uploads/2025/09/We-Are-Hiring-Ad-September-2025.pdf",
+   "s": ";CHEER We are iring! OIN OUR TEAM • Center Support Manager APPLY NOW Bus Drivers Cook - Cafe Salud Cook - Central Kitchen Food Van Driver Direct Care Worker (Pe"
+  },
+  {
+   "t": "Jobs Dashboard - USA Cheer",
+   "u": "https://usacheer.org/jobs-dashboard",
+   "s": "Job Dashboard United States Governing Body for Sport Cheering Recognized by the International Cheer Union Serving the cheer, dance team, and spirit community."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.cheerde.com/careers-2/",
+  "platform": "custom",
+  "title": "Careers - Cheer DE"
+ },
+ "verdict": "custom_surface"
 }

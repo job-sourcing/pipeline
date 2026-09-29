@@ -2,10 +2,159 @@
  "brand": "Full Truck Alliance",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:49:50.208Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:45:56.943Z",
+ "candidates": [
+  {
+   "url": "https://us.trabajo.org/jobs-full+truck+alliance+co+ltd+maples+corporate+services/Chicago",
+   "title": "full truck alliance co ltd maples corporate services in Chicago - job offers | Trabajo.org",
+   "status": 200,
+   "bytes": 140425,
+   "markers": [
+    "greenhouse",
+    "workday",
+    "smartrecruiters"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "53 full truck alliance co ltd maples corporate services job listings in United States. Find daily updated positions from leading job boards.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://campus.fulltruckalliance.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 2277,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "2026年满帮集团校园招聘正在进行，点击申请职位",
+   "backend": "firecrawl"
+  },
+  {
+   "url": "https://www.fulltruckalliance.com/",
+   "title": "满帮集团官网-智慧物流生态平台",
+   "status": 200,
+   "bytes": 17306,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Full Truck Alliance wholeheartedly helps drivers and consignors to help reduce costs and increase efficiency in logistics. By using mobile Internet, big data, a",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Full Truck Alliance Jobs in United States (7,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/full-truck-alliance-jobs",
+   "s": "Today's top 7,000+ Full Truck Alliance jobs in United States. Leverage your professional network, and get hired. New Full Truck Alliance jobs added daily."
+  },
+  {
+   "t": "56 Full Truck Alliance Wiki jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/full-truck-alliance-wiki-jobs",
+   "s": "Today's top 56 Full Truck Alliance Wiki jobs in United States. Leverage your professional network, and get hired. New Full Truck Alliance Wiki jobs added daily."
+  },
+  {
+   "t": "满帮集团 - 校园招聘",
+   "u": "https://campus.fulltruckalliance.com/",
+   "s": "2026年满帮集团校园招聘正在进行，点击申请职位"
+  },
+  {
+   "t": "满帮 - Full truck alliance - 满帮集团官网-智慧物流生态平台",
+   "u": "https://www.fulltruckalliance.com/",
+   "s": "Full Truck Alliance wholeheartedly helps drivers and consignors to help reduce costs and increase efficiency in logistics. By using mobile Internet, big data, a"
+  },
+  {
+   "t": "Top 607 Full truck alliance Jobs | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=full+truck+alliance",
+   "s": "607 Full truck alliance jobs available. See salaries, compare reviews, easily apply, and get hired. New Full truck alliance careers are added daily on SimplyHir"
+  },
+  {
+   "t": "20 Best full truck alliance jobs (Hiring Now!) | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=full%2520truck%2520alliance",
+   "s": "154 full truck alliance jobs available. See salaries, compare reviews, easily apply, and get hired. New full truck alliance careers are added daily on SimplyHir"
+  },
+  {
+   "t": "Working at Full Truck Alliance | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Full-Truck-Alliance-EI_IE5515467.11,30.htm",
+   "s": "See what employees say it's like to work at Full Truck Alliance. Salaries, reviews, and more - all posted by employees working at Full Truck Alliance."
+  },
+  {
+   "t": "满帮集团-关于我们 - Full truck alliance",
+   "u": "http://www.fulltruckalliance.com/en/about/",
+   "s": "The core of Full Truck alliance is the car-cargo matching information platform, which provides efficient, safe and assured solutions for \"car-seeking\" and \"cars"
+  },
+  {
+   "t": "Full Truck Alliance Jobs in United States (7,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/full-truck-alliance-jobs",
+   "s": "Today's top 7,000+ Full Truck Alliance jobs in United States. Leverage your professional network, and get hired. New Full Truck Alliance jobs added daily."
+  },
+  {
+   "t": "56 Full Truck Alliance Vision jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/full-truck-alliance-vision-jobs",
+   "s": "Today's top 56 Full Truck Alliance Vision jobs in United States. Leverage your professional network, and get hired. New Full Truck Alliance Vision jobs added da"
+  },
+  {
+   "t": "20 Best full truck alliance jobs (Hiring Now!) | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=full%2520truck%2520alliance",
+   "s": "154 full truck alliance jobs available. See salaries, compare reviews, easily apply, and get hired. New full truck alliance careers are added daily on SimplyHir"
+  },
+  {
+   "t": "Top 607 Full truck alliance Jobs | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=full+truck+alliance",
+   "s": "607 Full truck alliance jobs available. See salaries, compare reviews, easily apply, and get hired. New Full truck alliance careers are added daily on SimplyHir"
+  },
+  {
+   "t": "满帮 - Full truck alliance - 满帮集团官网-智慧物流生态平台",
+   "u": "https://www.fulltruckalliance.com/",
+   "s": "Full Truck Alliance wholeheartedly helps drivers and consignors to help reduce costs and increase efficiency in logistics. By using mobile Internet, big data, a"
+  },
+  {
+   "t": "满帮集团-关于我们 - Full truck alliance",
+   "u": "http://www.fulltruckalliance.com/en/about/",
+   "s": "The core of Full Truck alliance is the car-cargo matching information platform, which provides efficient, safe and assured solutions for \"car-seeking\" and \"cars"
+  },
+  {
+   "t": "满帮集团 - 校园招聘",
+   "u": "https://campus.fulltruckalliance.com/",
+   "s": "2026年满帮集团校园招聘正在进行，点击申请职位"
+  },
+  {
+   "t": "Alliance Driver Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-alliance-driver-jobs.html",
+   "s": "Today's top Alliance Driver jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Full Truck Alliance Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/full-truck-alliance-jobs",
+   "s": "Today's top 7,000+ Full Truck Alliance jobs in United States. Leverage your professional network, and get hired. New Full Truck Alliance jobs added daily."
+  },
+  {
+   "t": "20 Best full truck alliance jobs (Hiring Now!) | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=full%2520truck%2520alliance",
+   "s": "154 full truck alliance jobs available. See salaries, compare reviews, easily apply, and get hired. New full truck alliance careers are added daily on SimplyHir"
+  },
+  {
+   "t": "Top 607 Full truck alliance Jobs | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=full+truck+alliance",
+   "s": "607 Full truck alliance jobs available. See salaries, compare reviews, easily apply, and get hired. New Full truck alliance careers are added daily on SimplyHir"
+  },
+  {
+   "t": "Full Truck Alliance Co. Ltd. Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Full-Truck-Alliance-Co.-Ltd.-jobs",
+   "s": "Find your ideal job at Jobsdb with 2 Full Truck Alliance Co. Ltd. jobs found in Hong Kong. View all our Full Truck Alliance Co. Ltd. vacancies now with new jobs"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://us.trabajo.org/jobs-full+truck+alliance+co+ltd+maples+corporate+services/Chicago",
+  "platform": "greenhouse",
+  "title": "full truck alliance co ltd maples corporate services in Chicago - job offers | Trabajo.org"
+ },
+ "verdict": "marker_surface"
 }

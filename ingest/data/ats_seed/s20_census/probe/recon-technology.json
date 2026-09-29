@@ -2,10 +2,153 @@
  "brand": "Recon Technology",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:28:29.092Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:49:09.881Z",
+ "candidates": [
+  {
+   "url": "https://recon.careers/",
+   "title": "Recon Careers",
+   "status": 200,
+   "bytes": 20558,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Recon Careers Insurance Recruiting for Roles That Actually Drive Revenue Operator-led, retained recruiting focused on producers, account managers, leadership, a",
+   "backend": "direct"
+  },
+  {
+   "url": "https://recontechnologies.in/contact/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 14525,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Recon Technologies philosophy is based on responsibility and mutual respect. People who come to Recon Technologies wants to work here because we have created an",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.reconanalytics.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 27442,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At Recon Analytics, we're building the future of market intelligence. Our team combines deep industry expertise with cutting-edge analytical tools to deliver in",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Recon Careers",
+   "u": "https://recon.careers/",
+   "s": "Recon Careers Insurance Recruiting for Roles That Actually Drive Revenue Operator-led, retained recruiting focused on producers, account managers, leadership, a"
+  },
+  {
+   "t": "Careers - Recon Technologies",
+   "u": "https://recontechnologies.in/contact/careers/",
+   "s": "Recon Technologies philosophy is based on responsibility and mutual respect. People who come to Recon Technologies wants to work here because we have created an"
+  },
+  {
+   "t": "Careers | Reconn",
+   "u": "https://www.reconnus.com/workatreconn.com/p/reconn-openings",
+   "s": "My Reconn Contact Us Services Technology Safety & Training About Careers News & Media Call Us 631-318-2660"
+  },
+  {
+   "t": "Recon Analytics Job Openings: Careers",
+   "u": "https://www.reconanalytics.com/careers/",
+   "s": "At Recon Analytics, we're building the future of market intelligence. Our team combines deep industry expertise with cutting-edge analytical tools to deliver in"
+  },
+  {
+   "t": "Careers - Recon",
+   "u": "https://recon-inc.com/careers/",
+   "s": "Careers Who We Are We provide the latest technology, the highest quality design, engineering, installation and construction methods. We maintain a proactive saf"
+  },
+  {
+   "t": "RECONN Careers",
+   "u": "https://workatreconn.com/p/reconn-openings",
+   "s": "RECONN is a leading provider of gas services and an emerging leader in water services for utilities nationwide. We use advanced technologies for surveying the i"
+  },
+  {
+   "t": "Homepage [careers.reconext.com]",
+   "u": "https://careers.reconext.com/",
+   "s": "Homepage Our Mission As a services company, our mission is to deliver solutions that enable our customers to meet their objectives by optimizing the value of re"
+  },
+  {
+   "t": "Recon Technology jobs in Texas - Indeed",
+   "u": "https://www.indeed.com/q-Recon-Technology-l-Texas-jobs.html",
+   "s": "782 Recon Technology jobs available in Texas on Indeed.com. Apply to Special Agent, Energy Consultant, Technician and more!"
+  },
+  {
+   "t": "10,000+ Recon Tech jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/recon-tech-jobs",
+   "s": "Today's top 10,000+ Recon Tech jobs in United States. Leverage your professional network, and get hired. New Recon Tech jobs added daily."
+  },
+  {
+   "t": "Recon Technologies Jobs (September 2026)",
+   "u": "https://startup.jobs/company/recon-technologies",
+   "s": "Recon Technologies is hiring. Apply to jobs like Registered Nurse, Registered Nurse, and Registered Nurse. Updated daily!"
+  },
+  {
+   "t": "Now Hiring: 100 Recon Tech Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Recon-Tech-jobs.html",
+   "s": "160 Recon Tech jobs. Apply to Technician, Staff Software Engineer, Dent Repair Technician and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Taking your Career to New Heights - Reconnaissance Technologies",
+   "u": "https://reconnaissancetechnologies.com/our-company/career-overview",
+   "s": "Careers at Reconnaissance Technologies - the best IT company that will take your career to the next level. Looking for career opportunities to work with us. App"
+  },
+  {
+   "t": "Careers - Recon Technologies",
+   "u": "https://recontechnologies.in/contact/careers/",
+   "s": "Recon Technologies philosophy is based on responsibility and mutual respect. People who come to Recon Technologies wants to work here because we have created an"
+  },
+  {
+   "t": "Recon# Jobs in United States (690 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/recon%23-jobs",
+   "s": "Today's top 690 Recon# jobs in United States. Leverage your professional network, and get hired. New Recon# jobs added daily."
+  },
+  {
+   "t": "900 Recon Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-recon%5d-jobs.html",
+   "s": "Today's top Recon jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "RECON TECHNOLOGIES Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Recon-Technologies,-Inc.",
+   "s": "Read RECON TECHNOLOGIES reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at RECON TE"
+  },
+  {
+   "t": "Recon Careers",
+   "u": "https://recon.careers/",
+   "s": "Recon Careers Insurance Recruiting for Roles That Actually Drive Revenue Operator-led, retained recruiting focused on producers, account managers, leadership, a"
+  },
+  {
+   "t": "Recon Technologies, Inc. Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Recon-Technologies,-Inc.",
+   "s": "Find out what works well at Recon Technologies, Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insigh"
+  },
+  {
+   "t": "Taking your Career to New Heights - Reconnaissance Technologies",
+   "u": "https://reconnaissancetechnologies.com/our-company/career-overview",
+   "s": "Careers at Reconnaissance Technologies - the best IT company that will take your career to the next level. Looking for career opportunities to work with us. App"
+  },
+  {
+   "t": "Now Hiring: 100 Recon Tech Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Recon-Tech-jobs.html",
+   "s": "160 Recon Tech jobs. Apply to Technician, Staff Software Engineer, Dent Repair Technician and more. Hiring now on Indeed.com."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://recon.careers/",
+  "platform": "custom",
+  "title": "Recon Careers"
+ },
+ "verdict": "custom_surface"
 }

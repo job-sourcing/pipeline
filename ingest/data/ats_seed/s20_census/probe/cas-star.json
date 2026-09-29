@@ -2,10 +2,164 @@
  "brand": "CAS Star",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:42:27.565Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:50:10.657Z",
+ "candidates": [
+  {
+   "url": "https://costar.wd1.myworkdayjobs.com/CoStarCareers",
+   "title": "",
+   "status": 200,
+   "bytes": 7881,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:CoStarCareers",
+   "score": 15,
+   "snippet": "CoStar Group (NASDAQ: CSGP) is a leading global provider of commercial and residential real estate information, analytics, and online marketplaces. Included in ",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://careers.casact.org/",
+   "title": "Casualty Actuarial Society (CAS), CAS Career Center|Find Your Career Here",
+   "status": 200,
+   "bytes": 52146,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Casualty Actuarial Society (CAS) - Find your next career at CAS Career Center. Check back frequently as new jobs are posted every day.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.cas.org/careers/science",
+   "title": "Careers in Science | CAS",
+   "status": 200,
+   "bytes": 109035,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At CAS, you get more than just a job. Enjoy professional growth opportunities, a generous benefits plan, and a crucial role in our purpose to better people's li",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "CAS Star - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/CAS_Star",
+   "s": "CAS Star (Chinese: 中科创星; pinyin: Zhōngkē Chuàngxīng) is a Chinese venture capital firm that focuses on investments in hard tech startups. It is backed by the Ch"
+  },
+  {
+   "t": "Casualty Actuarial Society (CAS), CAS Career Center|Find Your Career Here",
+   "u": "https://careers.casact.org/",
+   "s": "Casualty Actuarial Society (CAS) - Find your next career at CAS Career Center. Check back frequently as new jobs are posted every day."
+  },
+  {
+   "t": "costar.com",
+   "u": "http://costar.com/careers/",
+   "s": "costar.com"
+  },
+  {
+   "t": "The Star Careers",
+   "u": "https://www.thestarcareers.com/",
+   "s": "Join us in our dynamic workplace with a proudly diverse team, world-class training, and a commitment to creating Australia's leading entertainment hub. Shine wi"
+  },
+  {
+   "t": "CAREERS - CoStar Group",
+   "u": "https://www.costargroup.com/careers",
+   "s": "We also provide education reimbursement opportunities and career progression supported by in-depth training. In addition to these benefits, you'll experience a "
+  },
+  {
+   "t": "Careers at CoStar Group",
+   "u": "https://careers.costargroup.com/careers",
+   "s": "Explore career opportunities at CoStar Group and join a thriving environment where you can excel in various fields like finance, marketing, or human resources."
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://costar.wd1.myworkdayjobs.com/CoStarCareers",
+   "s": "CoStar Group (NASDAQ: CSGP) is a leading global provider of commercial and residential real estate information, analytics, and online marketplaces. Included in "
+  },
+  {
+   "t": "Careers - CareStar",
+   "u": "https://www.carestar.com/about-carestar/careers/",
+   "s": "This Professional development can also start early with our Rising Star Program. What can you gain from the Program? Operation assessment case management suppor"
+  },
+  {
+   "t": "costar.com",
+   "u": "http://costar.com/careers/",
+   "s": "costar.com"
+  },
+  {
+   "t": "Starcom Jobs",
+   "u": "https://www.starcom.spaceforce.mil/STARCOM-Careers/",
+   "s": "STARCOM job openings STARCOM is actively hiring and we want YOU on our team to help build the future of the U.S. Space Force! We are seeking talented and driven"
+  },
+  {
+   "t": "CAREERS - CoStar Group",
+   "u": "https://www.costargroup.com/careers",
+   "s": "CAREERS Whatever path you take, you'll be choosing a path with a truly innovative company. SEARCH JOBS"
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://costar.wd1.myworkdayjobs.com/CoStarCareers",
+   "s": "CoStar Group (NASDAQ: CSGP) is a leading global provider of commercial and residential real estate information, analytics, and online marketplaces. Included in "
+  },
+  {
+   "t": "Careers at CoStar Group",
+   "u": "https://careers.costargroup.com/careers",
+   "s": "Careers at CoStar Group 429 open jobs. Use your resume to get matched with the right job."
+  },
+  {
+   "t": "Careers in Science | CAS",
+   "u": "https://www.cas.org/careers/science",
+   "s": "At CAS, you get more than just a job. Enjoy professional growth opportunities, a generous benefits plan, and a crucial role in our purpose to better people's li"
+  },
+  {
+   "t": "CoStar Group Jobs & Careers - 304 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/CoStar-Group-Jobs-E7901.htm",
+   "s": "Search job openings at CoStar Group. 304 CoStar Group jobs including salaries, ratings, and reviews, posted by CoStar Group employees."
+  },
+  {
+   "t": "Tech Careers | CAS",
+   "u": "https://www.cas.org/careers/tech",
+   "s": "Join CAS tech team to design world-class scientific solutions. Explore opportunities in software engineering, data science, and technology innovation."
+  },
+  {
+   "t": "costar.com",
+   "u": "http://costar.com/careers/",
+   "s": "costar.com"
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://costar.wd1.myworkdayjobs.com/CoStarCareers",
+   "s": "All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orient"
+  },
+  {
+   "t": "View Careers & Employment Vacancies at Canstar",
+   "u": "https://www.canstar.com.au/canstar-careers/",
+   "s": "Canstar Careers Canstar began in 1992 in Brisbane as a privately-owned financial research agency and has grown into one of Australia's leading comparison websit"
+  },
+  {
+   "t": "Careers - Canstar",
+   "u": "https://www.canstar.com.au/careers/",
+   "s": "Careers At Canstar, our teams bring together a wide mix of skills, backgrounds, and ideas — all united by a shared goal: helping Australians make confident fina"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://costar.wd1.myworkdayjobs.com/CoStarCareers",
+  "title": "",
+  "status": 200,
+  "bytes": 7881,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:CoStarCareers",
+  "score": 15,
+  "snippet": "CoStar Group (NASDAQ: CSGP) is a leading global provider of commercial and residential real estate information, analytics, and online marketplaces. Included in ",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

@@ -2,43 +2,45 @@
  "brand": "Sieyuan Electric",
  "tier": "lca",
  "lca": "SIEYUAN ELECTRIC USA, LLC",
- "ts": "2026-09-27T08:13:23.337Z",
+ "ts": "2026-09-29T04:45:30.682Z",
  "candidates": [
   {
-   "url": "https://teamedupchina.com/job/power-electronics-engineer-power-supply-sieyuan-electric-shanghai/",
-   "title": "",
-   "status": 200,
-   "bytes": 49783,
+   "url": "https://my.epicareer.com/companies/sieyuan-electric",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5852,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "This role is responsible for ensuring the safety and integrity of network connections for a technology services company. The position requires 1-3 years of expe",
-   "backend": "supabase"
+   "snippet": "Want to work at Sieyuan Electric? Learn what its like to work here. See job vacancies, salaries, benefits, location, photos, videos, and more.",
+   "backend": "direct",
+   "cf_challenge": true
   },
   {
-   "url": "https://www.georjob.com/companies/sieyuan-s-ojftjnidkitskudjbqkqjrkphcffwi",
-   "title": "Sieyuan(S)",
+   "url": "https://www.jobaaj.com/jobs/sieyuan-electric-usa-llc-careers-jobs-415343",
+   "title": "Latest 1 Sieyuan Electric Usa Llc jobs Vacancies - 29 September 2026 | Jobaaj",
    "status": 200,
-   "bytes": 234553,
+   "bytes": 415568,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "Sieyuan Electric Co., Ltd. is a manufacturer of electrical equipment with 50 years of manufacturing experience，specialized in R&D of electric power technology, ",
+   "snippet": "28-Sep-2026 - Sieyuan Electric Usa Llc job openings - Check out latest Sieyuan Electric Usa Llc job vacancies on Jobaaj for Free, #1 Job Portal in India. Contac",
    "backend": "direct"
   },
   {
-   "url": "https://en.sieyuan.com/join",
-   "title": "",
-   "status": 200,
-   "bytes": 21721,
+   "url": "https://uk.whatjobs.com/company/sieyuan-electric-usa-llc/profile",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5910,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 5,
-   "snippet": "Join Sieyuan Electric — open roles in R&D, manufacturing, engineering and sales, with a people-oriented culture and global development opportunities.",
-   "backend": "supabase"
+   "score": 7,
+   "snippet": "Looking for jobs at Sieyuan Electric USA LLC? Browse current openings, salary insights, and company details. Apply today and explore careers with Sieyuan Electr",
+   "backend": "direct",
+   "cf_challenge": true
   }
  ],
  "results": [
@@ -68,29 +70,24 @@
    "s": "Career Electrical Engineer Electrical Engineer Multiple openings | Global locations | 2026-03-01 — 2099-01-01 Job Description: Engaged in Research and Developme"
   },
   {
-   "t": "电气工程师 - sieyuan.com",
-   "u": "https://www.sieyuan.com/join/7",
+   "t": "Sieyuan Electric Careers and Profile Overview | Epicareer",
+   "u": "https://my.epicareer.com/companies/sieyuan-electric",
+   "s": "Want to work at Sieyuan Electric? Learn what its like to work here. See job vacancies, salaries, benefits, location, photos, videos, and more."
+  },
+  {
+   "t": "Sieyuan Electric Co.,Ltd | LinkedIn",
+   "u": "https://ec.linkedin.com/company/sieyuan",
+   "s": "Sieyuan Electric Co., Ltd. (hereinafter referred to as \"Sieyuan Electric \"), established in December 1993, is a well-know listed company in China specialized in"
+  },
+  {
+   "t": "Sieyuan思源电气",
+   "u": "https://www.sieyuan.com/",
    "s": "思源电气股份有限公司是一家专业从事电力技术研发、设备制造、工程服务的上市公司（股票代码002028）。"
-  },
-  {
-   "t": "Sieyuan Electric Co.,Ltd. - Welcome Guide",
-   "u": "https://welcome.informaengage.com/sponsorships-2026/sieyuan-electric-co-ltd/",
-   "s": "Sieyuan Electric Co.,Ltd. - Welcome Guide ixengage"
-  },
-  {
-   "t": "Sieyuan Electric Co.,Ltd | Salaries, Culture & Jobs - SalaryGuide",
-   "u": "https://salaryguide.com/companies/sieyuan-electric-coltd",
-   "s": "Learn about working at Sieyuan Electric Co.,Ltd. 5001-10000 · Based in CHN. View salaries, reviews, job openings, and company culture insights."
   },
   {
    "t": "Careers & Job Opportunities | Sieyuan Electric",
    "u": "https://en.sieyuan.com/join",
    "s": "Join Sieyuan Electric — open roles in R&D, manufacturing, engineering and sales, with a people-oriented culture and global development opportunities."
-  },
-  {
-   "t": "Electrical Engineer | Sieyuan Electric",
-   "u": "https://en.sieyuan.com/join/9",
-   "s": "Sieyuan Electric is a global power equipment manufacturer with over 30 years of expertise in delivering reliable, high-quality power solutions across the world."
   },
   {
    "t": "加入思源 - sieyuan.com",
@@ -103,24 +100,29 @@
    "s": "Apply for Field Services Engineer at Sieyuan Electric USA LLC in United States. Full-time Entry level role. See responsibilities, qualifications, and similar jo"
   },
   {
-   "t": "Sieyuan Electric USA LLC hiring Field Service Engineer ... - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/view/field-service-engineer-%E5%94%AE%E5%90%8E%E6%9C%8D%E5%8A%A1%E5%B7%A5%E7%A8%8B%E5%B8%88-remote-anywhere-in-the-us-at-sieyuan-electric-usa-llc-4452426478",
-   "s": "Sieyuan Electric (established in 1993) is a world-renowned, publicly listed leader in electric power technology, advanced equipment manufacturing, and EPC engin"
+   "t": "Sieyuan+electric Jobs in United States (11,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sieyuan%2Belectric-jobs",
+   "s": "Today's top 11,000+ Sieyuan+electric jobs in United States. Leverage your professional network, and get hired. New Sieyuan+electric jobs added daily."
   },
   {
-   "t": "Power Electronics Engineer (Power Supply) at Sieyuan Electric (思源电气) -",
-   "u": "https://teamedupchina.com/job/power-electronics-engineer-power-supply-sieyuan-electric-shanghai/",
-   "s": "This role is responsible for ensuring the safety and integrity of network connections for a technology services company. The position requires 1-3 years of expe"
+   "t": "Latest 1 Sieyuan Electric Usa Llc jobs Vacancies - jobaaj.com",
+   "u": "https://www.jobaaj.com/jobs/sieyuan-electric-usa-llc-careers-jobs-415343",
+   "s": "28-Sep-2026 - Sieyuan Electric Usa Llc job openings - Check out latest Sieyuan Electric Usa Llc job vacancies on Jobaaj for Free, #1 Job Portal in India. Contac"
+  },
+  {
+   "t": "Sieyuan Electric USA, LLC H-1B Jobs and Salaries 2026, 2 LCA Filings",
+   "u": "https://h1bsalary.net/h1b-sponsors/sieyuan-electric-usa-llc",
+   "s": "Sieyuan Electric USA, LLC has filed 2 H-1B LCAs (FY2017-2026). Salaries by role and location, green-card (PERM) filings, and current openings."
   },
   {
    "t": "Sieyuan Electric Co.,Ltd - LinkedIn",
-   "u": "https://ca.linkedin.com/company/sieyuan",
+   "u": "https://sg.linkedin.com/company/sieyuan",
    "s": "Sieyuan Electric Co., Ltd. (hereinafter referred to as \"Sieyuan Electric \"), established in December 1993, is a well-know listed company in China specialized in"
   },
   {
-   "t": "电气工程师 - sieyuan.com",
-   "u": "https://www.sieyuan.com/join/7",
-   "s": "思源电气股份有限公司是一家专业从事电力技术研发、设备制造、工程服务的上市公司（股票代码002028）。"
+   "t": "Sieyuan Electric Co.,Ltd | Salaries, Culture & Jobs - SalaryGuide",
+   "u": "https://salaryguide.com/companies/sieyuan-electric-coltd",
+   "s": "Learn about working at Sieyuan Electric Co.,Ltd. 5001-10000 · Based in CHN. View salaries, reviews, job openings, and company culture insights."
   },
   {
    "t": "Careers & Job Opportunities | Sieyuan Electric",
@@ -138,12 +140,17 @@
    "s": "加入思源 工作在 Sieyuan 我们秉承\"以人为本，创新为魂\"的企业理念，致力于打造一个充满活力、开放包容的工作环境。 思源电气集团视人才为企业最宝贵的财富，倡导团队合作与个人成长并重，为每一位员工提供广阔的发展平台和无限的职业机会。"
   },
   {
-   "t": "Field Services Engineer at Sieyuan Electric USA LLC - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/view/field-services-engineer-at-sieyuan-electric-usa-llc-4458332352",
-   "s": "Apply for Field Services Engineer at Sieyuan Electric USA LLC in United States. Full-time Entry level role. See responsibilities, qualifications, and similar jo"
+   "t": "Sieyuan Electric USA LLC hiring Field Service Engineer / 售后服务工程师 ...",
+   "u": "https://www.linkedin.com/jobs/view/4452426478/",
+   "s": "Sieyuan Electric (established in 1993) is a world-renowned, publicly listed leader in electric power technology, advanced equipment manufacturing, and EPC engin"
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://www.jobaaj.com/jobs/sieyuan-electric-usa-llc-careers-jobs-415343",
+  "platform": "custom",
+  "title": "Latest 1 Sieyuan Electric Usa Llc jobs Vacancies - 29 September 2026 | Jobaaj"
+ },
+ "verdict": "custom_surface"
 }

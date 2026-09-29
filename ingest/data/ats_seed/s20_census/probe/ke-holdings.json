@@ -2,10 +2,152 @@
  "brand": "KE Holdings",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:29:24.171Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:51:57.730Z",
+ "candidates": [
+  {
+   "url": "https://careers.ke.com.pk/",
+   "title": "KE Career Site",
+   "status": 200,
+   "bytes": 134492,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "Looking for challenges, rewards, and performance-based career development? K-Electric (KE), a company with a 106 year old legacy, has many success stories with ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.ke.com.pk/go/Job-Search/8645702/",
+   "title": "",
+   "status": 200,
+   "bytes": 102401,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "Search our positions by using the search area to the left. To see all openings sorted select \"Any\". Each job description includes a link for applying and submit",
+   "backend": "direct"
+  },
+  {
+   "url": "https://ke.com.pk/careers-at-ke/",
+   "title": "",
+   "status": 200,
+   "bytes": 14802,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "Summer program with hands-on experience for skill development. Recruitment across departments to ensure equal employment opportunities. A platform connecting PW",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "KE Career Site",
+   "u": "https://careers.ke.com.pk/",
+   "s": "Looking for challenges, rewards, and performance-based career development? K-Electric (KE), a company with a 106 year old legacy, has many success stories with "
+  },
+  {
+   "t": "KE Career Site",
+   "u": "https://careers.ke.com.pk/go/Job-Search/8645702/",
+   "s": "Search our positions by using the search area to the left. To see all openings sorted select \"Any\". Each job description includes a link for applying and submit"
+  },
+  {
+   "t": "KE Holdings Careers - Latest Job Openings | Talentd",
+   "u": "https://www.talentd.in/companies/ke-holdings",
+   "s": "Explore career opportunities at KE Holdings. Find latest job openings, internships, and more on Talentd."
+  },
+  {
+   "t": "Working at KE Holdings | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-KE-Holdings-EI_IE4491593.11,22.htm",
+   "s": "See what employees say it's like to work at KE Holdings. Salaries, reviews, and more - all posted by employees working at KE Holdings."
+  },
+  {
+   "t": "Ke Holdings Inc. - LinkedIn",
+   "u": "https://www.linkedin.com/company/ke-holdings-inc",
+   "s": "Ke Holdings Inc. Information Services HOME COMPREHENSIVE SMILE About us Website https://bj.ke.com External link for Ke Holdings Inc."
+  },
+  {
+   "t": "Heavy Civil Construction in Arizona, New Mexico & Texas | KE&G",
+   "u": "https://www.kegtus.com/",
+   "s": "KE&G is a 100% employee-owned heavy civil and commercial contractor delivering roads, bridges, utilities, site development, commercial construction, and infrast"
+  },
+  {
+   "t": "Investor Relations - KE Holdings Inc.",
+   "u": "https://investors.ke.com/",
+   "s": "The Investor Relations website contains information about KE Holdings Inc.'s business for stockholders, potential investors, and financial analysts."
+  },
+  {
+   "t": "KE Holdings Career: Working at KE Holdings | Glassdoor",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-KE-Holdings-EI_IE4491593.11,22.htm",
+   "s": "What is it really like to work at KE Holdings? What do employees say about pay and career opportunities? Discover anonymous reviews now!"
+  },
+  {
+   "t": "KE Career Site",
+   "u": "https://careers.ke.com.pk/",
+   "s": "Follow this link to reach our Job Search page to search for available jobs in a more accessible format."
+  },
+  {
+   "t": "KE Holdings Careers - Latest Job Openings | Talentd",
+   "u": "https://www.talentd.in/companies/ke-holdings",
+   "s": "Explore career opportunities at KE Holdings. Find latest job openings, internships, and more on Talentd."
+  },
+  {
+   "t": "KE Holdings Salary Guide: Complete Compensation Analysis for Germany ...",
+   "u": "https://jobbridge.io/blog/salary-guide/KE-Holdings/germany",
+   "s": "Considering a career at KE Holdings in Germany? Our comprehensive salary guide provides accurate compensation data across various roles, experience levels, and "
+  },
+  {
+   "t": "Jobs und Karriere bei KE Elektronik GmbH | Indeed.com",
+   "u": "https://de.indeed.com/cmp/Ke-Elektronik-Gmbh/jobs",
+   "s": "KE Elektronik GmbH Jobs. Bewerben Sie sich auf die neusten Stellen in Ihrer Nähe. Erfahren Sie mehr über Gehälter, Bewertungen, den Einstellungsprozess und das "
+  },
+  {
+   "t": "Ke Holdings Inc. - LinkedIn",
+   "u": "https://www.linkedin.com/company/ke-holdings-inc",
+   "s": "Ke Holdings Inc. | 61 followers on LinkedIn. HOME COMPREHENSIVE SMILE."
+  },
+  {
+   "t": "Homepage - KE Elektronik",
+   "u": "https://ke-elektronik.de/",
+   "s": "KE Elektronik ist ein leistungsstarkes und innovatives Unternehmen mit über 3.500 Mitarbeitern weltweit. Als Teil der amerikanischen Amphenol Corporation - eine"
+  },
+  {
+   "t": "KE Holdings Inc - LinkedIn",
+   "u": "https://www.linkedin.com/company/ke-holdings",
+   "s": "KE Holdings Inc. is a publicly listed Chinese real estate holding company that engages in the provision of an integrated online and offline platform for housing"
+  },
+  {
+   "t": "KE Career Site",
+   "u": "https://careers.ke.com.pk/go/Job-Search/8645702/",
+   "s": "Search our positions by using the search area to the left. To see all openings sorted select \"Any\". Each job description includes a link for applying and submit"
+  },
+  {
+   "t": "KE Career Site",
+   "u": "https://careers.ke.com.pk/",
+   "s": "Looking for challenges, rewards, and performance-based career development? K-Electric (KE), a company with a 106 year old legacy, has many success stories with "
+  },
+  {
+   "t": "KE Career Site",
+   "u": "https://careers.ke.com.pk/go/Job-Search/8645702/",
+   "s": "Search our positions by using the search area to the left. To see all openings sorted select \"Any\". Each job description includes a link for applying and submit"
+  },
+  {
+   "t": "KE Holdings Careers - Latest Job Openings | Talentd",
+   "u": "https://www.talentd.in/companies/ke-holdings",
+   "s": "Explore career opportunities at KE Holdings. Find latest job openings, internships, and more on Talentd."
+  },
+  {
+   "t": "Careers at KE - K-Electric",
+   "u": "https://ke.com.pk/careers-at-ke/",
+   "s": "Summer program with hands-on experience for skill development. Recruitment across departments to ensure equal employment opportunities. A platform connecting PW"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

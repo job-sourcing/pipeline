@@ -2,10 +2,153 @@
  "brand": "CDH Investments",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:43:21.063Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:51:11.955Z",
+ "candidates": [
+  {
+   "url": "https://www.cdhfund.com/en/careers-en/",
+   "title": "Careers-CDH Investments",
+   "status": 200,
+   "bytes": 25412,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "\"CDH Investments Summer Intern Program\" has a history of 17 years. Every year, this program attracts elite students from various schools. They join CDH through ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.cdhfund.com/careers/",
+   "title": "来鼎晖工作-鼎晖投资 - CDH Investments",
+   "status": 200,
+   "bytes": 22299,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "鼎晖暑期实习生项目已有17年历史。每年都有来自各个学校的精英学子，通过暑期实习生项目加入鼎晖，与鼎晖共同成长。我们始终坚信，鼎晖的平台能帮助你获得非凡的成长，彼此成就并创造更长远的价值。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://cdh.hireology.careers/",
+   "title": "Jobs | CDH, PC",
+   "status": 200,
+   "bytes": 20130,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers at CDH, PC Are you ready for a career at a fast growing firm with excellent company culture? Apply today to join our team.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers-CDH Investments - cdhfund.com",
+   "u": "https://www.cdhfund.com/en/careers-en/",
+   "s": "\"CDH Investments Summer Intern Program\" has a history of 17 years. Every year, this program attracts elite students from various schools. They join CDH through "
+  },
+  {
+   "t": "来鼎晖工作-鼎晖投资 - CDH Investments",
+   "u": "https://www.cdhfund.com/careers/",
+   "s": "鼎晖暑期实习生项目已有17年历史。每年都有来自各个学校的精英学子，通过暑期实习生项目加入鼎晖，与鼎晖共同成长。我们始终坚信，鼎晖的平台能帮助你获得非凡的成长，彼此成就并创造更长远的价值。"
+  },
+  {
+   "t": "CDH Investments Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Cdh-Investments",
+   "s": "Find out what works well at CDH Investments from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "Cdh Investments Jobs at CDH Investments in Worldwide (2 Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/cdh-investments-jobs-worldwide?f_C=66986&f_EA=true",
+   "s": "Today's top 2 Cdh Investments jobs at CDH Investments in Worldwide. Leverage your professional network, and get hired. New Cdh Investments jobs added daily."
+  },
+  {
+   "t": "Jobs | CDH, PC",
+   "u": "https://cdh.hireology.careers/",
+   "s": "Careers at CDH, PC Are you ready for a career at a fast growing firm with excellent company culture? Apply today to join our team."
+  },
+  {
+   "t": "Careers - CDHCPA",
+   "u": "https://www.cdhcpa.com/careers/",
+   "s": "CDH invests in your professional growth by offering support for credentials like the CPA exam, including study resources, exam fee assistance, and dedicated tim"
+  },
+  {
+   "t": "Careers - CD&H, Inc.",
+   "u": "https://cdh-inc.com/careers/",
+   "s": "Serving: Kansas, Oklahoma, Texas, Missouri, Nebraska, Colorado & Wyoming 2510 W 6th Ave. | El Dorado, KS 67042 p. 316-320-7187 | f. 316-320-0097"
+  },
+  {
+   "t": "CDH Investments - Job Search Digest",
+   "u": "https://www.jobsearchdigest.com/private-equity-jobs/firms/cdh-investments/",
+   "s": "CDH Investments has invested in more than 150 companies in China's most attractive sectors, including retail and consumer, industrial manufacturing, financial, "
+  },
+  {
+   "t": "Careers-CDH Investments - cdhfund.com",
+   "u": "https://www.cdhfund.com/en/careers-en/",
+   "s": "CDH is one of the first China focused alternative asset managers founded by a group of investment/finance professionals, most of whom remain active in the busin"
+  },
+  {
+   "t": "来鼎晖工作-鼎晖投资 - CDH Investments",
+   "u": "https://www.cdhfund.com/careers/",
+   "s": "鼎晖暑期实习生项目已有17年历史。每年都有来自各个学校的精英学子，通过暑期实习生项目加入鼎晖，与鼎晖共同成长。我们始终坚信，鼎晖的平台能帮助你获得非凡的成长，彼此成就并创造更长远的价值。"
+  },
+  {
+   "t": "Cdh Investments Jobs at CDH Investments in Worldwide (2 Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/cdh-investments-jobs-worldwide?f_C=66986&f_EA=true",
+   "s": "Today's top 2 Cdh Investments jobs at CDH Investments in Worldwide. Leverage your professional network, and get hired. New Cdh Investments jobs added daily."
+  },
+  {
+   "t": "CDH Investments Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Cdh-Investments",
+   "s": "Find out what works well at CDH Investments from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "Jobs | CDH, PC",
+   "u": "https://cdh.hireology.careers/",
+   "s": "CDH is an active and committed supporter of our communities and various charitable causes. Through our proactive community outreach and fundraising programs, we"
+  },
+  {
+   "t": "Working at CDH Investments | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-CDH-Investments-EI_IE801780.11,26.htm",
+   "s": "See what employees say it's like to work at CDH Investments. Salaries, reviews, and more - all posted by employees working at CDH Investments."
+  },
+  {
+   "t": "Cdh Fms",
+   "u": "https://apps.cdhfund.com/recruit/positions",
+   "s": "鼎晖投资招聘岗位，欢迎加入我们，共同创造长期真实价值。"
+  },
+  {
+   "t": "CDH Investments - LinkedIn",
+   "u": "https://www.linkedin.com/company/cdh-investments",
+   "s": "CDH was founded by WU Shangzhi, JIAO Shuge and four other investment professionals who worked together in the direct investment department of China Internationa"
+  },
+  {
+   "t": "Careers-CDH Investments - cdhfund.com",
+   "u": "https://www.cdhfund.com/en/careers-en/",
+   "s": "We hope to recruit professionals in various fields for CDH Investment, and promote a diversified, creative and dynamic working environment."
+  },
+  {
+   "t": "CDH Investments Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Cdh-Investments",
+   "s": "Find out what works well at CDH Investments from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "Jobs | CDH, PC",
+   "u": "https://cdh.hireology.careers/",
+   "s": "Careers at CDH, PC Are you ready for a career at a fast growing firm with excellent company culture? Apply today to join our team."
+  },
+  {
+   "t": "Now Hiring: 25 Cdh Jobs | Indeed",
+   "u": "https://www.indeed.com/q-cdh-jobs-jobs.html",
+   "s": "Todays top {1} jobs. New openings added daily. Apply now and find your next opportunity on {3}"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.cdhfund.com/en/careers-en/",
+  "platform": "custom",
+  "title": "Careers-CDH Investments"
+ },
+ "verdict": "custom_surface"
 }

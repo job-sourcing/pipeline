@@ -2,10 +2,153 @@
  "brand": "Yalla Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:29:03.163Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:51:25.828Z",
+ "candidates": [
+  {
+   "url": "https://careers.yalladuka.com/",
+   "title": "Yalla Careers -Latest jobs advertised by popular companies, We connect talents",
+   "status": 200,
+   "bytes": 309919,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Chef de Partie Jobs in Dubai - AURA Skypool, Palm Jumeirah AURA Skypool is hiring Chefs de Partie to run key sections of its kitchen at The Palm Tower, Palm Jum",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.yallaglobal.net/careers",
+   "title": "YALLA — Vacation Rentals Worldwide",
+   "status": 200,
+   "bytes": 24179,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At YALLA.., we're building more than a platform — we're building a community. We value authenticity, embrace curiosity, and believe that great work happens when",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.yalladuka.com/category/careers/",
+   "title": "Careers at Yalla Careers",
+   "status": 200,
+   "bytes": 226070,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Posts about Careers written by Yallacareers admin AURA Skypool, the world's highest 360° infinity pool perched on the 50th floor of The Palm Tower in Palm Jumei",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Yalla Careers -Latest jobs advertised by popular companies, We connect ...",
+   "u": "https://careers.yalladuka.com/",
+   "s": "Chef de Partie Jobs in Dubai - AURA Skypool, Palm Jumeirah AURA Skypool is hiring Chefs de Partie to run key sections of its kitchen at The Palm Tower, Palm Jum"
+  },
+  {
+   "t": "Careers at YALLA.. - Join Our Team | Yalla Global",
+   "u": "https://www.yallaglobal.net/careers",
+   "s": "At YALLA.., we're building more than a platform — we're building a community. We value authenticity, embrace curiosity, and believe that great work happens when"
+  },
+  {
+   "t": "Careers at Yalla Careers",
+   "u": "https://careers.yalladuka.com/category/careers/",
+   "s": "Posts about Careers written by Yallacareers admin AURA Skypool, the world's highest 360° infinity pool perched on the 50th floor of The Palm Tower in Palm Jumei"
+  },
+  {
+   "t": "Yalla Careers",
+   "u": "https://yalla.online/Careers/",
+   "s": "Careers We currently have no job openings"
+  },
+  {
+   "t": "Yalla Group",
+   "u": "https://www.yalla.com/",
+   "s": "We use cookies and other tracking technologies to improve your browsing experience on our website, to analyze our website traffic, and to understand where our v"
+  },
+  {
+   "t": "Yalla Careers | Work With Us | yallacompare",
+   "u": "https://yc3.yallacompare.com/uae/en/yalla-careers",
+   "s": "Join Us! Yalla Careers Calling all innovators, creative thinkers, and analytic junkies! We'd want to meet you. We're growing our team, why not explore our flexi"
+  },
+  {
+   "t": "Yalla group limited Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Yalla-Group-Limited",
+   "s": "Find out what works well at Yalla group limited from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Yalla Group Limited (NYSE:YALA) - LinkedIn",
+   "u": "https://ae.linkedin.com/company/yallagroupltd",
+   "s": "‏Yalla Group Limited (NYSE:YALA)‏ | ‏٤١٬٢٠٨‏ من المتابعين على LinkedIn. ‏Yalla Group Limited is the largest MENA-based online social networking and gaming compa"
+  },
+  {
+   "t": "Yalla Careers -Latest jobs advertised by popular companies, We connect ...",
+   "u": "https://careers.yalladuka.com/",
+   "s": "Chef de Partie Jobs in Dubai - AURA Skypool, Palm Jumeirah AURA Skypool is hiring Chefs de Partie to run key sections of its kitchen at The Palm Tower, Palm Jum"
+  },
+  {
+   "t": "Careers at Yalla Careers",
+   "u": "https://careers.yalladuka.com/category/careers/",
+   "s": "The Espresso Lab Careers Dubai: Now Hiring (2026) Brew your career with The Espresso Lab, one of Dubai's most celebrated specialty coffee houses, known for its "
+  },
+  {
+   "t": "Yalla group limited Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Yalla-Group-Limited",
+   "s": "Find out what works well at Yalla group limited from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Yalla Group",
+   "u": "https://www.yalla.com/",
+   "s": "Largest MENA-based Online Social Networking and Gaming Company"
+  },
+  {
+   "t": "Careers at YALLA.. - Join Our Team | Yalla Global",
+   "u": "https://www.yallaglobal.net/careers",
+   "s": "At YALLA.., we're building more than a platform — we're building a community. We value authenticity, embrace curiosity, and believe that great work happens when"
+  },
+  {
+   "t": "Yalla Group Limited (NYSE:YALA) - LinkedIn",
+   "u": "https://ae.linkedin.com/company/yallagroupltd",
+   "s": "‏Yalla Group Limited (NYSE:YALA)‏ | ‏٤١٬٢٠٨‏ من المتابعين على LinkedIn. ‏Yalla Group Limited is the largest MENA-based online social networking and gaming compa"
+  },
+  {
+   "t": "Yalla Careers",
+   "u": "https://yalla.online/Careers/ar/home-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/",
+   "s": "Yalla Careers Careers"
+  },
+  {
+   "t": "Yalla Careers",
+   "u": "https://yalla.online/Careers/",
+   "s": "Careers We currently have no job openings"
+  },
+  {
+   "t": "Yalla Careers -Latest jobs advertised by popular companies, We connect ...",
+   "u": "https://careers.yalladuka.com/",
+   "s": "\"We used Yalla Careers for our pre-opening hiring push and had a strong pool of hospitality candidates within days. The platform understands F&B recruitment in "
+  },
+  {
+   "t": "Careers at Yalla Careers",
+   "u": "https://careers.yalladuka.com/category/careers/",
+   "s": "Ritual Cafe, a specialty coffee and dessert destination in Dubai known for its artistic espresso-based drinks and warm, design-forward atmosphere, is expanding "
+  },
+  {
+   "t": "Careers at YALLA.. - Join Our Team | Yalla Global",
+   "u": "https://www.yallaglobal.net/careers",
+   "s": "At YALLA.., we're building more than a platform — we're building a community. We value authenticity, embrace curiosity, and believe that great work happens when"
+  },
+  {
+   "t": "Yalla group limited Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Yalla-Group-Limited",
+   "s": "Find out what works well at Yalla group limited from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.yalladuka.com/",
+  "platform": "custom",
+  "title": "Yalla Careers -Latest jobs advertised by popular companies, We connect talents"
+ },
+ "verdict": "custom_surface"
 }

@@ -2,10 +2,154 @@
  "brand": "Golden Heaven Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:29:41.134Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:53:32.708Z",
+ "candidates": [
+  {
+   "url": "https://goldenhavenservices.com/careers/",
+   "title": "Careers &#8211; goldenhavenservices.com",
+   "status": 200,
+   "bytes": 279859,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Fill out all required fields in the application form. Provide accurate and detailed information about your qualifications and experiences. Return to the Golden ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://goldenent.com/careers.html?trk=public_post_main-feed-card_reshare-text",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5864,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We are an equal opportunity employer by choice and believe a diverse group of talented people make the difference between an average company and one that excels",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://www.goldenhaven.com.ph/careers/",
+   "title": "Careers - Golden Haven",
+   "status": 200,
+   "bytes": 132614,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "GOLDEN HAVEN CAREERS Join our Golden Haven team and be part of a legacy that shines with excellence and opportunity SEND CV",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Golden Heaven Group Holdings Ltd, GDHG:NAQ profile - FT.com",
+   "u": "https://markets.ft.com/data/equities/tearsheet/profile?s=GDHG:NAQ",
+   "s": "Golden Heaven Group Holdings Ltd (GDHG:NAQ) company profile with history, revenue, mergers & acquisitions, peer analysis, institutional shareholders and more."
+  },
+  {
+   "t": "Golden Heaven Group Holdings Ltd. (GDHG) - Yahoo Finance",
+   "u": "https://finance.yahoo.com/quote/GDHG/profile/",
+   "s": "See the company profile for Golden Heaven Group Holdings Ltd. (GDHG) including business summary, industry/sector information, number of employees, business summ"
+  },
+  {
+   "t": "Golden Heaven Group Holdings Ltd. - The Wall Street Journal",
+   "u": "https://www.wsj.com/market-data/quotes/GDHG/company-people",
+   "s": "Company profile for Golden Heaven Group Holdings Ltd. including key executives, insider trading, ownership, revenue and average growth rates. View detailed GDHG"
+  },
+  {
+   "t": "Golden Heaven Group Holdings Ltd. - GDHG | Barron's",
+   "u": "https://www.barrons.com/market-data/stocks/gdhg/company-people",
+   "s": "Golden Heaven Group Holdings Ltd. company and executive profile by Barron's. View the latest GDHG company infomation and executive bios."
+  },
+  {
+   "t": "Careers - goldenhavenservices.com",
+   "u": "https://goldenhavenservices.com/careers/",
+   "s": "Fill out all required fields in the application form. Provide accurate and detailed information about your qualifications and experiences. Return to the Golden "
+  },
+  {
+   "t": "Golden Heaven Group Holdings Ltd. (China) - EMIS",
+   "u": "https://www.emis.com/php/company-profile/CN/Golden_Heaven_Group_Holdings_Ltd__Golden_Heaven_Group_Holdings_Ltd__en_14785126.html",
+   "s": "Golden Heaven Group Holdings Ltd. is an enterprise located in China, with the main office in Nanping. It operates in the Other Amusement and Recreation Industri"
+  },
+  {
+   "t": "Golden Heaven Group Holdings (GDHG) - financecharts.com",
+   "u": "https://www.financecharts.com/stocks/GDHG/profile",
+   "s": "Golden Heaven Group Holdings Ltd. engages in the construction, development, management, and operation of urban amusement parks, water parks, amusement projects,"
+  },
+  {
+   "t": "Golden Entertainment | Careers",
+   "u": "https://goldenent.com/careers.html?trk=public_post_main-feed-card_reshare-text",
+   "s": "We are an equal opportunity employer by choice and believe a diverse group of talented people make the difference between an average company and one that excels"
+  },
+  {
+   "t": "Zachry Group Careers",
+   "u": "https://careers.zachrygroup.com/",
+   "s": "Zachry Group Careers ... Zachry Group"
+  },
+  {
+   "t": "Careers - Golden Haven",
+   "u": "https://www.goldenhaven.com.ph/careers/",
+   "s": "GOLDEN HAVEN CAREERS Join our Golden Haven team and be part of a legacy that shines with excellence and opportunity SEND CV"
+  },
+  {
+   "t": "Golden Heaven Group Holdings Ltd, GDHG:NAQ profile - FT.com",
+   "u": "https://markets.ft.com/data/equities/tearsheet/profile?s=GDHG:NAQ",
+   "s": "Golden Heaven Group Holdings Ltd (GDHG:NAQ) company profile with history, revenue, mergers & acquisitions, peer analysis, institutional shareholders and more."
+  },
+  {
+   "t": "Golden Heaven Group Holdings Ltd. (GDHG) - Yahoo Finance",
+   "u": "https://finance.yahoo.com/quote/GDHG/profile/",
+   "s": "See the company profile for Golden Heaven Group Holdings Ltd. (GDHG) including business summary, industry/sector information, number of employees, business summ"
+  },
+  {
+   "t": "Careers - goldenhavenservices.com",
+   "u": "https://goldenhavenservices.com/careers/",
+   "s": "Golden Haven Services is hereby granted authorization to conduct investigations into my employment, educational, credit, or criminal history through any chosen "
+  },
+  {
+   "t": "Golden Entertainment | Careers",
+   "u": "https://goldenent.com/careers.html?trk=public_post_main-feed-card_reshare-text",
+   "s": "We are an equal opportunity employer by choice and believe a diverse group of talented people make the difference between an average company and one that excels"
+  },
+  {
+   "t": "Golden Heaven Group Holdings Ltd. (GDHG) - Yahoo Finance Canada",
+   "u": "https://ca.finance.yahoo.com/quote/GDHG/profile/",
+   "s": "See the company profile for Golden Heaven Group Holdings Ltd. (GDHG) including business summary, industry/sector information, number of employees, business summ"
+  },
+  {
+   "t": "Golden Heaven Group Holdings (GDHG) Number of Employees",
+   "u": "https://stockanalysis.com/stocks/gdhg/employees/",
+   "s": "Current and historical number of employees for Golden Heaven Group Holdings (GDHG) with related statistics, a chart and a data table."
+  },
+  {
+   "t": "Careers - goldenhavenservices.com",
+   "u": "https://goldenhavenservices.com/careers/",
+   "s": "Fill out all required fields in the application form. Provide accurate and detailed information about your qualifications and experiences. Return to the Golden "
+  },
+  {
+   "t": "Careers - Golden Haven",
+   "u": "https://www.goldenhaven.com.ph/careers/",
+   "s": "GOLDEN HAVEN CAREERS Join our Golden Haven team and be part of a legacy that shines with excellence and opportunity SEND CV"
+  },
+  {
+   "t": "Golden Entertainment | Careers",
+   "u": "https://goldenent.com/careers.html?trk=public_post_main-feed-card_reshare-text",
+   "s": "We are an equal opportunity employer by choice and believe a diverse group of talented people make the difference between an average company and one that excels"
+  },
+  {
+   "t": "Golden haven Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Golden-Haven",
+   "s": "Find out what works well at Golden haven from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare "
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://goldenhavenservices.com/careers/",
+  "platform": "custom",
+  "title": "Careers &#8211; goldenhavenservices.com"
+ },
+ "verdict": "custom_surface"
 }

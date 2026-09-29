@@ -2,10 +2,166 @@
  "brand": "ATL",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:41:44.035Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:47:01.007Z",
+ "candidates": [
+  {
+   "url": "https://careers-atl.icims.com/jobs/search?hashed=-435655875&mobile=false&bga=true&needsRedirect=false&jan1offset=-300",
+   "title": "ATL Careers",
+   "status": 200,
+   "bytes": 31577,
+   "markers": [
+    "icims"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "icims:careers-atl",
+   "score": 17,
+   "snippet": "ATL Careers ... ATL Careers",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.atl.com/business-information/careers/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5808,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Jobs with the City of Atlanta Department of Aviation High performance, efficiency and excellence are hallmarks of our culture at the Department of Aviat",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://www.atl.com/category/atlstories/jobs/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5796,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Hartsfield-Jackson Atlanta International Airport (ATL) is hosting an Airport Community Job Fair in October. Like its spring counterpart, the fall fair will feat",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at City Of Atlanta",
+   "u": "https://www.atlantaga.gov/government/departments/human-resources/employment-opportunities",
+   "s": "Careers at City Of Atlanta At the City of Atlanta, we are passionate about building and improving our community. Our police officers, firefighters and building "
+  },
+  {
+   "t": "Careers - The official website of Hartsfield-Jackson Atlanta ...",
+   "u": "https://www.atl.com/business-information/careers/",
+   "s": "Careers Jobs with the City of Atlanta Department of Aviation High performance, efficiency and excellence are hallmarks of our culture at the Department of Aviat"
+  },
+  {
+   "t": "Now Hiring: 137,000 Jobs in Atlanta, GA | Indeed",
+   "u": "https://www.indeed.com/l-Atlanta,-GA-jobs.html",
+   "s": "Browse 137,724 jobs in Atlanta, GA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Jobs - The official website of Hartsfield-Jackson Atlanta International ...",
+   "u": "https://www.atl.com/category/atlstories/jobs/",
+   "s": "Hartsfield-Jackson Atlanta International Airport (ATL) is hosting an Airport Community Job Fair in October. Like its spring counterpart, the fall fair will feat"
+  },
+  {
+   "t": "ATL / Join Us - atlbattery.com",
+   "u": "https://www.atlbattery.com/en/join.html",
+   "s": "B Career Development: Dual career development path, unimpeded internal promotional channel, and good career development platform. C Key Talents Plan: Especially"
+  },
+  {
+   "t": "Search Jobs - City Of Atlanta Careers Careers",
+   "u": "https://ehxr.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/City-of-Atlanta-Careers/jobs",
+   "s": "Join Our Talent Community Didn't find what you are looking for? Join our Talent Community and receive future career opportunities direct in your mailbox."
+  },
+  {
+   "t": "Human Resources - Atlanta, GA",
+   "u": "https://www.atlantaga.gov/government/departments/human-resources",
+   "s": "The Department of Human Resources partners with city agencies and employees to hire, compensate, support, and develop a diverse workforce that is dedicated to d"
+  },
+  {
+   "t": "Job Application - ATL Automotive",
+   "u": "https://www.atlautomotive.com/job-application/",
+   "s": "Honda SENSINGTM is a series of advanced safety technologies that provide comprehensive protection for drivers and passengers by providing warnings and automatic"
+  },
+  {
+   "t": "Now Hiring: 137,000 Jobs in Atlanta, GA | Indeed",
+   "u": "https://www.indeed.com/l-Atlanta,-GA-jobs.html",
+   "s": "Browse 137,724 jobs in Atlanta, GA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 600 Atl Jobs in Atlanta, GA | Indeed",
+   "u": "https://www.indeed.com/q-Atl-l-Atlanta,-GA-jobs.html",
+   "s": "640 Atl jobs in Atlanta, GA. Apply to Customer Service Representative, Stocking Associate, Front Desk Agent and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "MetroAtlanta.Jobs - Atlanta's Local Job Board",
+   "u": "https://www.metroatlanta.jobs/",
+   "s": "MetroAtlanta.Jobs job board. Atlanta's dedicated local job board. Browse thousands of Metro Atlanta jobs across healthcare, tech, logistics, finance and more. E"
+  },
+  {
+   "t": "Careers - The official website of Hartsfield-Jackson Atlanta ...",
+   "u": "https://www.atl.com/business-information/careers/",
+   "s": "Careers Jobs with the City of Atlanta Department of Aviation High performance, efficiency and excellence are hallmarks of our culture at the Department of Aviat"
+  },
+  {
+   "t": "Jobs - The official website of Hartsfield-Jackson Atlanta International ...",
+   "u": "https://www.atl.com/category/atlstories/jobs/",
+   "s": "By Shane Blatt Senior Public Relations Manager Hartsfield-Jackson Atlanta International Airport (ATL) hosted its first fall job fair Oct. 19, drawing thousands "
+  },
+  {
+   "t": "4,000+ Atlanta (atl) jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/atlanta-%28atl%29-jobs",
+   "s": "Today's top 4,000+ Atlanta (atl) jobs in United States. Leverage your professional network, and get hired. New Atlanta (atl) jobs added daily."
+  },
+  {
+   "t": "City Of Atlanta Careers Careers",
+   "u": "https://www.atlantaga.gov/government/departments/human-resources/employment-opportunities",
+   "s": "Careers at City Of Atlanta At the City of Atlanta, we are passionate about building and improving our community. Our police officers, firefighters and building "
+  },
+  {
+   "t": "Search our Job Opportunities at AT&T",
+   "u": "https://www.att.jobs/search-jobs",
+   "s": "Search our Job Opportunities at AT&T Lead Cybersecurity - Insider Risk Analyst (Telemetry, Insider Risk Detection, and AI-Driven Security Operations) Charlotte,"
+  },
+  {
+   "t": "Now Hiring: 137,000 Jobs in Atlanta, GA | Indeed",
+   "u": "https://www.indeed.com/l-Atlanta,-GA-jobs.html",
+   "s": "Browse 137,724 jobs in Atlanta, GA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers - The official website of Hartsfield-Jackson Atlanta ...",
+   "u": "https://www.atl.com/business-information/careers/",
+   "s": "Careers Jobs with the City of Atlanta Department of Aviation High performance, efficiency and excellence are hallmarks of our culture at the Department of Aviat"
+  },
+  {
+   "t": "Now Hiring: 600 Atl Jobs in Atlanta, GA | Indeed",
+   "u": "https://www.indeed.com/q-Atl-l-Atlanta,-GA-jobs.html",
+   "s": "640 Atl jobs in Atlanta, GA. Apply to Customer Service Representative, Stocking Associate, Front Desk Agent and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "City Of Atlanta Careers Careers",
+   "u": "https://www.atlantaga.gov/government/departments/human-resources/employment-opportunities",
+   "s": "Along with the host of Finance, Procurement, and Human Resources professionals whose support is vital, we are the City of Atlanta! If you are seeking a meaningf"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers-atl.icims.com/jobs/search?hashed=-435655875&mobile=false&bga=true&needsRedirect=false&jan1offset=-300",
+  "title": "ATL Careers",
+  "status": 200,
+  "bytes": 31577,
+  "markers": [
+   "icims"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "icims:careers-atl",
+  "score": 17,
+  "snippet": "ATL Careers ... ATL Careers",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
 }

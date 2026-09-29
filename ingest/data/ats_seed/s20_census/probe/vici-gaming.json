@@ -2,10 +2,164 @@
  "brand": "Vici Gaming",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:26:05.411Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:44:11.007Z",
+ "candidates": [
+  {
+   "url": "https://jobs.lever.co/vicicollection",
+   "title": "VICI",
+   "status": 200,
+   "bytes": 721352,
+   "markers": [
+    "lever"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "lever:vicicollection",
+   "score": 17,
+   "snippet": "Job openings at VICI On-site — Regular, Full-time Walnut Creek, CA",
+   "backend": "direct"
+  },
+  {
+   "url": "https://vici.it/en/careers/",
+   "title": "Working at VICI",
+   "status": 200,
+   "bytes": 27279,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At VICI, we believe that the growth of the company starts with the growth of our people. For this reason, we invest in the continuous development of skills, enh",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.vici.com/jobs/",
+   "title": "Jobs at VICI",
+   "status": 200,
+   "bytes": 20841,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We currently have the following positions available at Valco Instruments in Houston, Texas. Valco is a leading manufacturer of valves, fittings, detectors, pump",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Working at VICI - VICIVISION",
+   "u": "https://vici.it/en/careers/",
+   "s": "At VICI, we believe that the growth of the company starts with the growth of our people. For this reason, we invest in the continuous development of skills, enh"
+  },
+  {
+   "t": "Jobs at VICI",
+   "u": "https://www.vici.com/jobs/",
+   "s": "We currently have the following positions available at Valco Instruments in Houston, Texas. Valco is a leading manufacturer of valves, fittings, detectors, pump"
+  },
+  {
+   "t": "VICI jobs - Lever",
+   "u": "https://jobs.lever.co/vicicollection",
+   "s": "Job openings at VICI On-site — Regular, Full-time Walnut Creek, CA"
+  },
+  {
+   "t": "Open positions - vici.it",
+   "u": "https://vici.it/en/careers/open-positions/",
+   "s": "At VICI, we are looking for curious and skilled people who are ready to grow with us. Every open position is an opportunity to put your talent at the service of"
+  },
+  {
+   "t": "VICI GAMING - LinkedIn",
+   "u": "https://www.linkedin.com/company/vici-gaming",
+   "s": "ViCi Gaming (VG) is a professional eSports organization based in Shanghai, China. We have teams competing in Dota 2, League of Legends, StarCraft II, WarCraft I"
+  },
+  {
+   "t": "Careers - VICI Properties",
+   "u": "https://viciproperties.com/careers/",
+   "s": "We welcome inquiries about career opportunities with VICI Properties. Contact us by email at HR@VICIPROPERTIES.COM."
+  },
+  {
+   "t": "Vici Jobs in Worldwide (35 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/vici-jobs-worldwide",
+   "s": "Today's top 35 Vici jobs in Worldwide. Leverage your professional network, and get hired. New Vici jobs added daily."
+  },
+  {
+   "t": "vici - Careers",
+   "u": "https://vici.jobsoid.com/",
+   "s": "Current Openings No Current Openings ×"
+  },
+  {
+   "t": "VICI jobs - Lever",
+   "u": "https://jobs.lever.co/vicicollection",
+   "s": "Job openings at VICI On-site — Regular, Full-time Walnut Creek, CA"
+  },
+  {
+   "t": "Working at VICI - VICIVISION",
+   "u": "https://vici.it/en/careers/",
+   "s": "At VICI, we are looking for curious and skilled people who are ready to grow with us. Every open position is an opportunity to put your talent at the service of"
+  },
+  {
+   "t": "VICI Collection, LLC Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Vici-Collection,-LLC",
+   "s": "Find out what works well at VICI Collection, LLC from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
+  },
+  {
+   "t": "Jobs at VICI",
+   "u": "https://www.vici.com/jobs/",
+   "s": "ABOUT VICI Job Openings at VICI About us VICI Valco Instruments VICI AG International VICI Metronics VICI Precision Sampling VICI Jour VICI Gig Harbor Group Hay"
+  },
+  {
+   "t": "Vici Jobs in Worldwide (35 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/vici-jobs-worldwide",
+   "s": "Today's top 35 Vici jobs in Worldwide. Leverage your professional network, and get hired. New Vici jobs added daily."
+  },
+  {
+   "t": "Careers - Vici Media Inc.",
+   "u": "https://www.vicimediainc.com/careers",
+   "s": "At Vici, we go beyond the basics—offering standout perks like a birthday vacation day, monthly wellness credits, home office upgrades, and even annual vacation "
+  },
+  {
+   "t": "vici - Careers",
+   "u": "https://vici.jobsoid.com/",
+   "s": "Current Openings No Current Openings ×"
+  },
+  {
+   "t": "Jobs at VICI",
+   "u": "https://www.vici.com/jobs/marketingcoordinator.php",
+   "s": "Job openings: We need a sales analyst/marketing coordinator with experience in chromatographic instrumentation."
+  },
+  {
+   "t": "Jobs at VICI",
+   "u": "https://www.vici.com/jobs/",
+   "s": "ABOUT VICI Job Openings at VICI About us VICI Valco Instruments VICI AG International VICI Metronics VICI Precision Sampling VICI Jour VICI Gig Harbor Group Hay"
+  },
+  {
+   "t": "Open positions - vici.it",
+   "u": "https://vici.it/en/careers/open-positions/",
+   "s": "At VICI, we are looking for curious and skilled people who are ready to grow with us. Every open position is an opportunity to put your talent at the service of"
+  },
+  {
+   "t": "Jobs at VICI",
+   "u": "https://www.vici.com/jobs/index_test.php",
+   "s": "ABOUT VICI Job Openings at VICI About us VICI Valco Instruments VICI AG International VICI Metronics VICI Precision Sampling VICI Jour VICI Gig Harbor Group Hay"
+  },
+  {
+   "t": "Working at VICI - VICIVISION",
+   "u": "https://vici.it/en/careers/",
+   "s": "On-the-job learning also plays a central role: learning by doing, sharing daily experiences with our internal teams, and receiving continuous feedback from supe"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.lever.co/vicicollection",
+  "title": "VICI",
+  "status": 200,
+  "bytes": 721352,
+  "markers": [
+   "lever"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "lever:vicicollection",
+  "score": 17,
+  "snippet": "Job openings at VICI On-site — Regular, Full-time Walnut Creek, CA",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
 }

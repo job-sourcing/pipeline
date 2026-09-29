@@ -2,10 +2,153 @@
  "brand": "World Triathlon Corporation",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:26:39.858Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:45:01.471Z",
+ "candidates": [
+  {
+   "url": "https://www.inhersight.com/company/world-triathlon-corporation/jobs",
+   "title": "World Triathlon Corporation Jobs | InHerSight",
+   "status": 200,
+   "bytes": 90828,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find remote and on-location jobs at World Triathlon Corporation, see if they're a match for you, and apply now.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.triathlon.org/jobs",
+   "title": "Jobs at World Triathlon",
+   "status": 200,
+   "bytes": 1720812,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "World Triathlon is the international governing body for the sport of Triathlon and all related multisports. Be your extraordinary!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://staging-web.triathlon.org/jobs",
+   "title": "World Triathlon Jobs",
+   "status": 200,
+   "bytes": 1009282,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Explore career opportunities and job openings at World Triathlon. Join the team shaping the future of triathlon globally.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Jobs at World Triathlon",
+   "u": "https://www.triathlon.org/jobs",
+   "s": "World Triathlon is the international governing body for the sport of Triathlon and all related multisports. Be your extraordinary!"
+  },
+  {
+   "t": "World Triathlon Jobs",
+   "u": "https://staging-web.triathlon.org/jobs",
+   "s": "Explore career opportunities and job openings at World Triathlon. Join the team shaping the future of triathlon globally."
+  },
+  {
+   "t": "World Triathlon Corporation Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/World-Triathlon-Corporation",
+   "s": "The World Triathlon Corporation (WTC) is a for-profit corporation, owned by Dalian Wanda Group, that organizes, promotes and licenses the Ironman Triathlon, Iro"
+  },
+  {
+   "t": "Careers | IRONMAN",
+   "u": "https://www.ironman.com/about/careers",
+   "s": "Join The IRONMAN Group for a rewarding career in the world's leading endurance sports brand, uniting people globally since 1978."
+  },
+  {
+   "t": "World Triathlon Corporation Jobs in United States (1,000 ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/world-triathlon-corporation-jobs",
+   "s": "Today's top 1,000+ World Triathlon Corporation jobs in United States. Leverage your professional network, and get hired. New World Triathlon Corporation jobs ad"
+  },
+  {
+   "t": "World Triathlon Corporation jobs - Indeed",
+   "u": "https://www.indeed.com/q-World-Triathlon-Corporation-jobs.html",
+   "s": "3 World Triathlon Corporation jobs available on Indeed.com. Apply to Installer, Merchandising Associate, Sales Representative and more!"
+  },
+  {
+   "t": "World Triathlon Corporation Jobs | InHerSight",
+   "u": "https://www.inhersight.com/company/world-triathlon-corporation/jobs",
+   "s": "Find remote and on-location jobs at World Triathlon Corporation, see if they're a match for you, and apply now."
+  },
+  {
+   "t": "World Triathlon Corporation Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/World-Triathlon-Corporation",
+   "s": "Read World Triathlon Corporation reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at"
+  },
+  {
+   "t": "Jobs at World Triathlon",
+   "u": "https://www.triathlon.org/jobs",
+   "s": "World Triathlon is the international governing body for the sport of Triathlon and all related multisports. Be your extraordinary!"
+  },
+  {
+   "t": "World Triathlon Jobs",
+   "u": "https://staging-web.triathlon.org/jobs",
+   "s": "Explore career opportunities and job openings at World Triathlon. Join the team shaping the future of triathlon globally."
+  },
+  {
+   "t": "World Triathlon Corporation Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/World-Triathlon-Corporation",
+   "s": "The World Triathlon Corporation (WTC) is a for-profit corporation, owned by Dalian Wanda Group, that organizes, promotes and licenses the Ironman Triathlon, Iro"
+  },
+  {
+   "t": "Careers | IRONMAN",
+   "u": "https://www.ironman.com/about/careers",
+   "s": "Join The IRONMAN Group for a rewarding career in the world's leading endurance sports brand, uniting people globally since 1978."
+  },
+  {
+   "t": "World Triathlon Corporation jobs - Indeed",
+   "u": "https://www.indeed.com/q-World-Triathlon-Corporation-jobs.html",
+   "s": "3 World Triathlon Corporation jobs available on Indeed.com. Apply to Installer, Merchandising Associate, Sales Representative and more!"
+  },
+  {
+   "t": "World Triathlon Corporation Jobs in United States (1,000 ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/world-triathlon-corporation-jobs",
+   "s": "Today's top 1,000+ World Triathlon Corporation jobs in United States. Leverage your professional network, and get hired. New World Triathlon Corporation jobs ad"
+  },
+  {
+   "t": "World Triathlon Corporation Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/World-Triathlon-Corporation",
+   "s": "Read World Triathlon Corporation reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at"
+  },
+  {
+   "t": "World Triathlon Corporation Jobs | InHerSight",
+   "u": "https://www.inhersight.com/company/world-triathlon-corporation/jobs",
+   "s": "Find remote and on-location jobs at World Triathlon Corporation, see if they're a match for you, and apply now."
+  },
+  {
+   "t": "Jobs at World Triathlon",
+   "u": "https://www.triathlon.org/jobs",
+   "s": "World Triathlon is the international governing body for the sport of Triathlon and all related multisports. Be your extraordinary!"
+  },
+  {
+   "t": "World Triathlon Jobs",
+   "u": "https://staging-web.triathlon.org/jobs",
+   "s": "Explore career opportunities and job openings at World Triathlon. Join the team shaping the future of triathlon globally."
+  },
+  {
+   "t": "World Triathlon Corporation Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/World-Triathlon-Corporation",
+   "s": "Find out what works well at World Triathlon Corporation from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO ins"
+  },
+  {
+   "t": "World Triathlon Corporation Jobs in United States (1,000 ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/world-triathlon-corporation-jobs",
+   "s": "Today's top 1,000+ World Triathlon Corporation jobs in United States. Leverage your professional network, and get hired. New World Triathlon Corporation jobs ad"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.inhersight.com/company/world-triathlon-corporation/jobs",
+  "platform": "custom",
+  "title": "World Triathlon Corporation Jobs | InHerSight"
+ },
+ "verdict": "custom_surface"
 }

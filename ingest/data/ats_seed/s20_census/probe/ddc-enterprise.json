@@ -2,10 +2,148 @@
  "brand": "DDC Enterprise",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:49:24.357Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:45:09.771Z",
+ "candidates": [
+  {
+   "url": "https://www.ddc-web.com/en/careers",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 107417,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Our expanding global organization consists of more than 600 manufacturing, engineering, operations, and sales personnel, working together to provide best-in-cla",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.ddc-web.com/user/careers",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 107665,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers DDC's core competencies and unique suite of capabilities for the production of custom solutions span every stage of development including electrical des",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.ddcdolphin.com/careers",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 173812,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join DDC as a National Account Manager - Moving & Handling, leading national growth through new business development, strategic account expansion and sales enab",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - ddc-web.com",
+   "u": "https://www.ddc-web.com/en/careers",
+   "s": "Our expanding global organization consists of more than 600 manufacturing, engineering, operations, and sales personnel, working together to provide best-in-cla"
+  },
+  {
+   "t": "Careers - ddc-web.com",
+   "u": "https://www.ddc-web.com/user/careers",
+   "s": "Careers DDC's core competencies and unique suite of capabilities for the production of custom solutions span every stage of development including electrical des"
+  },
+  {
+   "t": "Now Hiring: 25 Ddc Enterprise Limited Linkedin Jobs | Indeed",
+   "u": "https://www.indeed.com/q-ddc-enterprise-limited-linkedin-jobs.html",
+   "s": "34 Ddc Enterprise Limited Linkedin jobs available on Indeed.com. Apply to Staff Software Engineer, Operations Analyst, Operations Manager and more!"
+  },
+  {
+   "t": "Ddc Enterprise Limited Jobs in United States (5,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/ddc-enterprise-limited-jobs",
+   "s": "Today's top 5,000+ Ddc Enterprise Limited jobs in United States. Leverage your professional network, and get hired. New Ddc Enterprise Limited jobs added daily."
+  },
+  {
+   "t": "Careers at Ddc",
+   "u": "https://www.ddcdolphin.com/careers",
+   "s": "Join DDC as a National Account Manager - Moving & Handling, leading national growth through new business development, strategic account expansion and sales enab"
+  },
+  {
+   "t": "Careers | BPO Jobs | The DDC Group",
+   "u": "https://theddcgroup.com/careers",
+   "s": "Explore DDC business process outsourcing jobs in your region Working toward a better world At The DDC Group, our robust ESG charter is a cornerstone of our orga"
+  },
+  {
+   "t": "Careers at DDC Solutions | Data Center Cooling Open Positions",
+   "u": "https://ddcsolutions.com/careers/",
+   "s": "Careers at DDC Solutions At DDC Solutions, we're building cutting edge cooling technology designed specifically for the world's most demanding AI and GPU worklo"
+  },
+  {
+   "t": "Jobs | DDC-I | Mission & Safety Critical RTOS",
+   "u": "https://www.ddci.com/about/jobs/",
+   "s": "Learn more about jobs at DDC-I and our Safety Critical Software Solutions for Mission Critical Systems, including time & space partitioned multicore RTOS."
+  },
+  {
+   "t": "Ddc Enterprise Limited Jobs in United States (5,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/ddc-enterprise-limited-jobs",
+   "s": "Today's top 5,000+ Ddc Enterprise Limited jobs in United States. Leverage your professional network, and get hired. New Ddc Enterprise Limited jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 25 Ddc Enterprise Limited Linkedin Jobs | Indeed",
+   "u": "https://www.indeed.com/q-ddc-enterprise-limited-linkedin-jobs.html",
+   "s": "34 Ddc Enterprise Limited Linkedin jobs available on Indeed.com. Apply to Staff Software Engineer, Operations Analyst, Operations Manager and more!"
+  },
+  {
+   "t": "Careers | BPO Jobs | The DDC Group",
+   "u": "https://theddcgroup.com/careers",
+   "s": "Explore DDC business process outsourcing jobs in your region Working toward a better world At The DDC Group, our robust ESG charter is a cornerstone of our orga"
+  },
+  {
+   "t": "CAREERS AT DDC - DDC Dolphin",
+   "u": "https://www.ddcdolphin.com/careers",
+   "s": "Join DDC as a National Account Manager - Moving & Handling, leading national growth through new business development, strategic account expansion and sales enab"
+  },
+  {
+   "t": "Ddc Jobs - 58 Ddc Job Vacancies In September 2026 - Naukri.com",
+   "u": "https://www.naukri.com/ddc-jobs",
+   "s": "58 Ddc Jobs Available On Naukri.com. Explore Ddc Job Vacancies In Your Desired Locations Now!"
+  },
+  {
+   "t": "DDC Enterprise Limited (DDC)",
+   "u": "https://ir.ddc.xyz/",
+   "s": "DDC Enterprise Limited (NYSE: DDC) is spearheading the corporate Bitcoin treasury revolution while maintaining its foundation as a leading global Asian food pla"
+  },
+  {
+   "t": "Ddc Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-,ddc-jobs.html",
+   "s": "2,393 Ddc jobs. Apply to HVAC Technician, Journeyperson Plumber, Programmer and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Careers - ddc-web.com",
+   "u": "https://www.ddc-web.com/en/careers",
+   "s": "Our expanding global organization consists of more than 600 manufacturing, engineering, operations, and sales personnel, working together to provide best-in-cla"
+  },
+  {
+   "t": "Now Hiring: 25 Ddc Enterprise Limited Linkedin Jobs | Indeed",
+   "u": "https://www.indeed.com/q-ddc-enterprise-limited-linkedin-jobs.html",
+   "s": "34 Ddc Enterprise Limited Linkedin jobs available on Indeed.com. Apply to Staff Software Engineer, Operations Analyst, Operations Manager and more!"
+  },
+  {
+   "t": "Ddc Enterprise Limited Jobs in United States (5,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/ddc-enterprise-limited-jobs",
+   "s": "Today's top 5,000+ Ddc Enterprise Limited jobs in United States. Leverage your professional network, and get hired. New Ddc Enterprise Limited jobs added daily."
+  },
+  {
+   "t": "Careers | BPO Jobs | The DDC Group",
+   "u": "https://theddcgroup.com/careers",
+   "s": "Explore DDC business process outsourcing jobs in your region Working toward a better world At The DDC Group, our robust ESG charter is a cornerstone of our orga"
+  },
+  {
+   "t": "Jobs | DDC-I | Mission & Safety Critical RTOS",
+   "u": "https://www.ddci.com/about/jobs/",
+   "s": "Learn more about jobs at DDC-I and our Safety Critical Software Solutions for Mission Critical Systems, including time & space partitioned multicore RTOS."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

@@ -2,10 +2,153 @@
  "brand": "China Chang Feng",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:31:01.532Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:57:25.056Z",
+ "candidates": [
+  {
+   "url": "https://www.chinajob.com/",
+   "title": "chinajob.com - Working in China,Start Here! - Home",
+   "status": 200,
+   "bytes": 118685,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Guangdong Releases New Legal Guide for Foreigners Guangdong has released an updated version of its legal guide for foreigners, providing practical information o",
+   "backend": "direct"
+  },
+  {
+   "url": "https://chinajobsdaily.com/",
+   "title": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for foreigners in China. - Home",
+   "status": 200,
+   "bytes": 50632,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://echinacareers.com/",
+   "title": "eChinaCareers",
+   "status": 200,
+   "bytes": 109384,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinaCareers is the first and only website designed solely to help foreign talents find their dream job in China. Our jobs all specifically recruit at the inte",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Chang Feng - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Chang_Feng",
+   "s": "Chang Feng (6 April 1923 - 6 February 2022) was a Chinese actor of Manchu descent based in Taiwan. He died on 6 February 2022, at the age of 98. [1]"
+  },
+  {
+   "t": "Chang Feng — Grokipedia",
+   "u": "https://grokipedia.com/page/chang_feng",
+   "s": "Chang Feng (6 April 1923 - 6 February 2022) was a Taiwanese actor of Manchu descent, celebrated for his extensive career in film, television, and theater spanni"
+  },
+  {
+   "t": "Chang Feng（Mainland Chinese actor）_Baiduwiki - 百度百科",
+   "u": "https://baike.baidu.com/en/item/Chang%20Feng/38219",
+   "s": "After reaching adulthood, Chang Feng initially worked at a bank and participated in performances with amateur theater troupes. During his military service, Chan"
+  },
+  {
+   "t": "Feng Chang - IMDb",
+   "u": "https://www.imdb.com/name/nm2186174/",
+   "s": "Feng Chang was born on 6 April 1923 in Harbin, China. He was an actor and assistant director, known for The Warmth of an Old House (1984), The Return (2019) and"
+  },
+  {
+   "t": "China Chang Feng Mechanics and Electronics Technology - CCF 2nd Academy ...",
+   "u": "https://nuke.fas.org/guide/china/contractor/ccf.htm",
+   "s": "China Chang Feng Science and Technology Industry Group (CCF) is a corporation attributed to the Second Academy of China Aerospace Corporation. With 70 member co"
+  },
+  {
+   "t": "Chang Feng (常楓) - MyDramaList",
+   "u": "https://mydramalist.com/people/93545-chang-feng",
+   "s": "Chang Feng was a Taiwanese actor born in Harbin, China. He moved to Taiwan in 1949. Chang became an actor, and since then, he won the Golden Horse Award for Bes"
+  },
+  {
+   "t": "China Chang Feng - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/China_Chang_Feng",
+   "s": "China Changfeng Mechanics and Electronics Technology Academy (Chinese: 中国长峰机电技术研究设计院; pinyin: Zhōngguó zhǎng fēng jīdiàn jìshù yánjiū shèjì yuàn) or China Chang"
+  },
+  {
+   "t": "China Chang Feng - Wikiwand",
+   "u": "https://www.wikiwand.com/en/China_Chang_Feng",
+   "s": "China Changfeng Mechanics and Electronics Technology Academy or China Changfeng, founded in 1957, is one of the four design academies under the China Aerospace "
+  },
+  {
+   "t": "to jobs in Changfeng (Hefei) - Careerjet",
+   "u": "https://www.career-jet.cn/to-jobs/Changfeng-(Hefei)",
+   "s": "All to jobs in Changfeng (Hefei) on Careerjet.cn, the search engine for jobs in China"
+  },
+  {
+   "t": "chinajob.com - Working in China,Start Here! - Home",
+   "u": "https://www.chinajob.com/",
+   "s": "Guangdong Releases New Legal Guide for Foreigners Guangdong has released an updated version of its legal guide for foreigners, providing practical information o"
+  },
+  {
+   "t": "1,000+ Changfeng Special Polyurethane Co. Ltd. jobs in United States",
+   "u": "https://www.linkedin.com/jobs/changfeng-special-polyurethane-co.-ltd.-jobs",
+   "s": "Today's top 1,000+ Changfeng Special Polyurethane Co. Ltd. jobs in United States. Leverage your professional network, and get hired. New Changfeng Special Polyu"
+  },
+  {
+   "t": "HE CHANG FENG PTE. LTD. Careers Singapore | Get A Job At HE CHANG FENG ...",
+   "u": "https://www.mycareersfuture.gov.sg/companies/chang-feng-202145072W",
+   "s": "Considering a job @ HE CHANG FENG PTE. LTD. in Singapore? View the latest jobs on offer from HE CHANG FENG PTE. LTD. on MyCareersFuture.gov.sg"
+  },
+  {
+   "t": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for ...",
+   "u": "https://chinajobsdaily.com/",
+   "s": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!"
+  },
+  {
+   "t": "China Foreigner Jobs - Jobs in China",
+   "u": "https://www.isacjobs.com/",
+   "s": "Latest jobs in China for foreigners in 2026. Find the newest professional and teaching in China jobs tailored for international talents."
+  },
+  {
+   "t": "Introduction-Changfeng Group Co., Ltd",
+   "u": "https://www.changfenggroup.com/about/1614810733377572864.html",
+   "s": "Changfeng Group Co., Ltd was established in 1996, with total assets of $200million and annual cable production capacity of $750 million. As a high-tech enterpri"
+  },
+  {
+   "t": "8,000+ Shanxi Changfeng New Energy Industry Group Careers jobs in ...",
+   "u": "https://www.linkedin.com/jobs/shanxi-changfeng-new-energy-industry-group-careers-jobs",
+   "s": "Today's top 8,000+ Shanxi Changfeng New Energy Industry Group Careers jobs in United States. Leverage your professional network, and get hired. New Shanxi Chang"
+  },
+  {
+   "t": "chinajob.com - Working in China,Start Here! - Home",
+   "u": "https://www.chinajob.com/",
+   "s": "For Job Seekers Find Jobs Add Resume For Employers Post Jobs Search Resumes About Us About Us Contact Us Resources TEFL in China Links State Council People's Da"
+  },
+  {
+   "t": "常发集团2027届校园招聘 - 前程无忧校园招聘",
+   "u": "https://campus.51job.com/changfa2027/jobs.html",
+   "s": "本次校园招聘仅接受线上申请，简历提交后不可修改，提交前请务必仔细核对，确保信息无误。 建议投递简历时，先选择投递公司，再选择岗位类别。如后续求职意向有所变化，可反馈信息至面试官，无需重复投递。 应聘者对于 \"Star 计划\" 和 \"百人工程\" 两项人才计划无需专门申请，在面试中 ..."
+  },
+  {
+   "t": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for ...",
+   "u": "https://chinajobsdaily.com/",
+   "s": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!"
+  },
+  {
+   "t": "Chang Feng - LinkedIn",
+   "u": "https://www.linkedin.com/in/chang-feng-409431325",
+   "s": "· Experience: KPMG China · Education: The Johns Hopkins University · Location: Arlington · 152 connections on LinkedIn. View Chang Feng's profile on LinkedIn, a"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.chinajob.com/",
+  "platform": "custom",
+  "title": "chinajob.com - Working in China,Start Here! - Home"
+ },
+ "verdict": "custom_surface"
 }

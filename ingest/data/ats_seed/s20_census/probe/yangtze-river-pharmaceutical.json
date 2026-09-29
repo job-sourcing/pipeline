@@ -2,10 +2,153 @@
  "brand": "Yangtze River Pharmaceutical",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:28:05.128Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:48:19.577Z",
+ "candidates": [
+  {
+   "url": "https://www.jobscina.com/company-Yangtze-River-Pharmaceutical-Group-jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 19898,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Jobs at Yangtze River Pharmaceutical Group. List maintained by JobsCina.com, the employment search engine.",
+   "backend": "firecrawl"
+  },
+  {
+   "url": "https://en.yangzijiang.com/careers",
+   "title": "Careers_Yangtze River Pharmaceutical Group (YRPG)",
+   "status": 200,
+   "bytes": 29557,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Dedicated to providing healthcare solutions and real-world outcomes globally, YRPG aims to improve patient health and well-being, and support international comm",
+   "backend": "direct"
+  },
+  {
+   "url": "https://en.yangzijiang.com/careers/talent_development",
+   "title": "Talent Development_Careers_Yangtze River Pharmaceutical Group (YRPG)",
+   "status": 200,
+   "bytes": 35313,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Dedicated to providing healthcare solutions and real-world outcomes globally, YRPG aims to improve patient health and well-being, and support international comm",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers_Yangtze River Pharmaceutical Group (YRPG)",
+   "u": "https://en.yangzijiang.com/careers",
+   "s": "Dedicated to providing healthcare solutions and real-world outcomes globally, YRPG aims to improve patient health and well-being, and support international comm"
+  },
+  {
+   "t": "Talent Development_Careers_Yangtze River Pharmaceutical Group (YRPG)",
+   "u": "https://en.yangzijiang.com/careers/talent_development",
+   "s": "Dedicated to providing healthcare solutions and real-world outcomes globally, YRPG aims to improve patient health and well-being, and support international comm"
+  },
+  {
+   "t": "439 Yangtze River Pharmaceutical Group Co. Ltd. jobs - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yangtze-river-pharmaceutical-group-co.-ltd.-jobs-worldwide",
+   "s": "Today&rsquo;s top 439 Yangtze River Pharmaceutical Group Co. Ltd. jobs. Leverage your professional network, and get hired. New Yangtze River Pharmaceutical Grou"
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Co. Ltd Jobs in United ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yangtze-river-pharmaceutical-group-co.-ltd-jobs?f_AL=true",
+   "s": "Today's top 322 Yangtze River Pharmaceutical Group Co. Ltd jobs in United States. Leverage your professional network, and get hired. New Yangtze River Pharmaceu"
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/33256/jobs/all/guiyang/",
+   "s": "(GuiyangYangtze River Pharmaceutical, Yangtze River Pharmaceutical Group, Yangtze River招聘)Yangtze River Pharmaceutical Group Co., Ltd.Guiyang分公司招聘Yangtze River "
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/33256/jobs/all/suzhou/",
+   "s": "(SuzhouYangtze River Pharmaceutical, Yangtze River Pharmaceutical Group, Yangtze River招聘)Yangtze River Pharmaceutical Group Co., Ltd.Suzhou分公司招聘Yangtze River Ph"
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Jobs - jobscina.com",
+   "u": "https://www.jobscina.com/company-Yangtze-River-Pharmaceutical-Group-jobs",
+   "s": "Jobs at Yangtze River Pharmaceutical Group. List maintained by JobsCina.com, the employment search engine."
+  },
+  {
+   "t": "Working at Yangtze River Pharmaceutical Group: Culture, Careers ...",
+   "u": "https://www.ambitionbox.com/overview/yangtze-river-pharmaceutical-group-overview",
+   "s": "Yangtze River Pharmaceutical Group is rated 4.0 out of 5 stars on AmbitionBox, based on 1 company reviews. This rating reflects a generally positive employee ex"
+  },
+  {
+   "t": "Careers_Yangtze River Pharmaceutical Group (YRPG)",
+   "u": "https://en.yangzijiang.com/careers",
+   "s": "Dedicated to providing healthcare solutions and real-world outcomes globally, YRPG aims to improve patient health and well-being, and support international comm"
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Co. Ltd Jobs in United ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yangtze-river-pharmaceutical-group-co.-ltd-jobs?f_AL=true",
+   "s": "Today's top 322 Yangtze River Pharmaceutical Group Co. Ltd jobs in United States. Leverage your professional network, and get hired. New Yangtze River Pharmaceu"
+  },
+  {
+   "t": "439 Yangtze River Pharmaceutical Group Co. Ltd. jobs - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yangtze-river-pharmaceutical-group-co.-ltd.-jobs-worldwide",
+   "s": "Today&rsquo;s top 439 Yangtze River Pharmaceutical Group Co. Ltd. jobs. Leverage your professional network, and get hired. New Yangtze River Pharmaceutical Grou"
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/33256/jobs/all/guiyang/",
+   "s": "(GuiyangYangtze River Pharmaceutical, Yangtze River Pharmaceutical Group, Yangtze River招聘)Yangtze River Pharmaceutical Group Co., Ltd.Guiyang分公司招聘Yangtze River "
+  },
+  {
+   "t": "Talent Development_Careers_Yangtze River Pharmaceutical Group (YRPG)",
+   "u": "https://en.yangzijiang.com/careers/talent_development",
+   "s": "Dedicated to providing healthcare solutions and real-world outcomes globally, YRPG aims to improve patient health and well-being, and support international comm"
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/33256/jobs/all/suzhou/",
+   "s": "(SuzhouYangtze River Pharmaceutical, Yangtze River Pharmaceutical Group, Yangtze River招聘)Yangtze River Pharmaceutical Group Co., Ltd.Suzhou分公司招聘Yangtze River Ph"
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Jobs - jobscina.com",
+   "u": "https://www.jobscina.com/company-Yangtze-River-Pharmaceutical-Group-jobs",
+   "s": "Jobs at Yangtze River Pharmaceutical Group. List maintained by JobsCina.com, the employment search engine."
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Co., Ltd. Jobs (with Salaries) - Dec ...",
+   "u": "https://my.jobstreet.com/yangtze-river-pharmaceutical-group-co.,-ltd.-jobs",
+   "s": "Find your ideal job at Jobstreet with 2 Yangtze River Pharmaceutical Group Co., Ltd. jobs found in Malaysia. View all our Yangtze River Pharmaceutical Group Co."
+  },
+  {
+   "t": "Careers_Yangtze River Pharmaceutical Group (YRPG)",
+   "u": "https://en.yangzijiang.com/careers",
+   "s": "Dedicated to providing healthcare solutions and real-world outcomes globally, YRPG aims to improve patient health and well-being, and support international comm"
+  },
+  {
+   "t": "Yangtze River Pharmaceutical Group Co. Ltd Jobs in United ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yangtze-river-pharmaceutical-group-co.-ltd-jobs?f_AL=true",
+   "s": "Today's top 322 Yangtze River Pharmaceutical Group Co. Ltd jobs in United States. Leverage your professional network, and get hired. New Yangtze River Pharmaceu"
+  },
+  {
+   "t": "439 Yangtze River Pharmaceutical Group Co. Ltd. jobs - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yangtze-river-pharmaceutical-group-co.-ltd.-jobs-worldwide",
+   "s": "Today&rsquo;s top 439 Yangtze River Pharmaceutical Group Co. Ltd. jobs. Leverage your professional network, and get hired. New Yangtze River Pharmaceutical Grou"
+  },
+  {
+   "t": "Talent Development_Careers_Yangtze River Pharmaceutical Group (YRPG)",
+   "u": "https://en.yangzijiang.com/careers/talent_development",
+   "s": "Expand cooperation with local pharmaceutical companies, healthcare institutions, and other partners. Identify collaboration opportunities and promote the supply"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://en.yangzijiang.com/careers",
+  "platform": "custom",
+  "title": "Careers_Yangtze River Pharmaceutical Group (YRPG)"
+ },
+ "verdict": "custom_surface"
 }

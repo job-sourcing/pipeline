@@ -2,10 +2,153 @@
  "brand": "Bank of Tianjin",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:30:22.366Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:56:45.061Z",
+ "candidates": [
+  {
+   "url": "https://www.bankoftianjin.com/tianjincareer/index/index.html",
+   "title": "首页",
+   "status": 200,
+   "bytes": 25774,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "津公网安备12010302001437号 2021 版权所有 天津银行 津ICP备10000003号-1 本网站已支持IPV6访问",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.echinacities.com/q-Tianjin-Bank-jobs.html",
+   "title": "Tianjin Bank Jobs | eChinacities.com",
+   "status": 200,
+   "bytes": 705213,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "66 Tianjin Bank jobs available on eChinacities.com. one search. all jobs.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.yes.bank.in/work-with-us/career-opportunities",
+   "title": "",
+   "status": 200,
+   "bytes": 60473,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore exciting career opportunities at YES BANK. Join our team of skilled professionals and take your career to new heights.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "首页 - bankoftianjin.com",
+   "u": "https://www.bankoftianjin.com/tianjincareer/index/index.html",
+   "s": "津公网安备12010302001437号 2021 版权所有 天津银行 津ICP备10000003号-1 本网站已支持IPV6访问"
+  },
+  {
+   "t": "Bank of Tianjin Careers | Talentd",
+   "u": "https://www.talentd.in/companies/bank-of-tianjin",
+   "s": "About Bank of Tianjin Bank of Tianjin Co., Ltd. is a regional commercial bank headquartered in Tianjin, China. Established in 1996, the bank has grown to become"
+  },
+  {
+   "t": "Working at Bank of Tianjin | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Bank-of-Tianjin-EI_IE2911799.11,26.htm",
+   "s": "See what employees say it's like to work at Bank of Tianjin. Salaries, reviews, and more - all posted by employees working at Bank of Tianjin."
+  },
+  {
+   "t": "About Us - bankoftianjin.com",
+   "u": "https://www.bankoftianjin.com/tianjinyinwen/about_us/index.html",
+   "s": "About Us Bank of Tianjin CO., LTD., referred to as Bank of Tianjin, is a company listed on the main board of the Hong Kong Stock Exchange with stock code 1578 a"
+  },
+  {
+   "t": "Tianjin Bank Jobs | eChinacities.com",
+   "u": "https://jobs.echinacities.com/q-Tianjin-Bank-jobs.html",
+   "s": "66 Tianjin Bank jobs available on eChinacities.com. one search. all jobs."
+  },
+  {
+   "t": "2027 Bank of China Global Campus Recruitment - 中国银行网站",
+   "u": "https://www.bankofchina.com/en/bocinfo/bi7/202609/t20260903_25689313.html",
+   "s": "The official website of BOC, the official WeChat account \"Bank of China Talent Recruitment\" (中国银行人才招聘) and the website \"Bank of China Global Campus Recruitment\""
+  },
+  {
+   "t": "1,000+ Tianjin Bank jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tianjin-bank-jobs-worldwide",
+   "s": "Today's top 1,000+ Tianjin Bank jobs in Worldwide. Leverage your professional network, and get hired. New Tianjin Bank jobs added daily."
+  },
+  {
+   "t": "YES BANK Career Opportunities | Join Our Team Today",
+   "u": "https://www.yes.bank.in/work-with-us/career-opportunities",
+   "s": "Explore exciting career opportunities at YES BANK. Join our team of skilled professionals and take your career to new heights."
+  },
+  {
+   "t": "首页 - bankoftianjin.com",
+   "u": "https://www.bankoftianjin.com/tianjincareer/index/index.html",
+   "s": "天津银行人才招聘默认栏目 微信银行服务号 信用卡中心服务号"
+  },
+  {
+   "t": "社会招聘 - bankoftianjin.com",
+   "u": "https://www.bankoftianjin.com/tianjincareer/shzp/index.html",
+   "s": "初始化栏目：社会招聘 微信银行服务号 信用卡中心服务号"
+  },
+  {
+   "t": "Bank of Tianjin Careers | Talentd",
+   "u": "https://www.talentd.in/companies/bank-of-tianjin",
+   "s": "Bank of Tianjin Co., Ltd. is a regional commercial bank headquartered in Tianjin, China. Established in 1996, the bank has grown to become a key financial insti"
+  },
+  {
+   "t": "Jobs in Tianjin - Job Opportunities in Tianjin for Expats",
+   "u": "https://jobs.echinacities.com/tianjin-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL,"
+  },
+  {
+   "t": "Tianjin Jobs - for Expats in Tianjin",
+   "u": "https://jobs.echinacities.com/en/Tianjin-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Tianjin with updated employment opportunities."
+  },
+  {
+   "t": "Jobs in Tianjin - China Foreigner Jobs - isacjobs.com",
+   "u": "https://www.isacjobs.com/job-location/tianjin/",
+   "s": "Browse the latest jobs in Tianjin for foreigners, including teaching and company jobs for international jobseekers."
+  },
+  {
+   "t": "Working at Bank of Tianjin | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Bank-of-Tianjin-EI_IE2911799.11,26.htm",
+   "s": "See what employees say it's like to work at Bank of Tianjin. Salaries, reviews, and more - all posted by employees working at Bank of Tianjin."
+  },
+  {
+   "t": "天津银行股份有限公司",
+   "u": "https://campus.51job.com/tjyh_2026/",
+   "s": "未经51job.com同意，不得转载本网站之所有招聘信息及作品；无忧工作网版权所有©1999- 2026"
+  },
+  {
+   "t": "首页 - bankoftianjin.com",
+   "u": "https://www.bankoftianjin.com/tianjincareer/index/index.html",
+   "s": "津公网安备12010302001437号 2021 版权所有 天津银行 津ICP备10000003号-1 本网站已支持IPV6访问"
+  },
+  {
+   "t": "天津银行分支机构专业岗位人才社会招聘启事",
+   "u": "https://www.bankoftianjin.com/bjfh/fxgg/2024012415405731325/index.html",
+   "s": "天津银行成立于1996年，是一家极具成长性的区域性股份制商业银行，总部位于天津。2006年引入澳新银行作为境外战略投资者。2007年更名为\"天津银行\"，并获准跨区域经营，已在北京、天津、上海三个直辖市及河北、山东、四川三个省份设有包括7家一级分行、6家二级分行及6家中心支行在内的共计 ..."
+  },
+  {
+   "t": "Tianjin Bank Jobs | eChinacities.com",
+   "u": "https://jobs.echinacities.com/q-Tianjin-Bank-jobs.html",
+   "s": "66 Tianjin Bank jobs available on eChinacities.com. one search. all jobs."
+  },
+  {
+   "t": "天津银行2026校园招聘公告 - career.uibe.edu.cn",
+   "u": "https://career.uibe.edu.cn/front/zpxx.jspa?tid=1980135328719110145",
+   "s": "天津银行2026校园招聘公告 一、关于我们 天津银行是天津市属国有银行，资产规模近万亿。天津银行紧跟时代步伐，面对更加深刻的变革和更加广阔的发展机遇，坚持干字当头、实字托底、闯字开路，扎实推动转段工作纵深落实，通过\"转思想、转理念、转认识\"带动\"转方式、转方法、转手段、转 ..."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.echinacities.com/q-Tianjin-Bank-jobs.html",
+  "platform": "custom",
+  "title": "Tianjin Bank Jobs | eChinacities.com"
+ },
+ "verdict": "custom_surface"
 }

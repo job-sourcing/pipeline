@@ -2,10 +2,153 @@
  "brand": "Xiao-i",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:27:32.992Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:46:15.120Z",
+ "candidates": [
+  {
+   "url": "https://simplify.jobs/c/Xiao-I",
+   "title": "Jobs and Employment at Xiao-I | Simplify Jobs",
+   "status": 200,
+   "bytes": 119281,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Apply to jobs at Xiao-I and thousands of other companies in one-click on Simplify!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://xiaomi.jobs.f.mioffice.cn/global",
+   "title": "Job Openings",
+   "status": 200,
+   "bytes": 117829,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Advance your career with 小米科技. Search, browse, and apply for current job openings and join us.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://xiaomi.jobs.f.mioffice.cn/global/login",
+   "title": "Sign In - Job Openings",
+   "status": 200,
+   "bytes": 117498,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Sign in to search and apply for open opportunities.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Cognitive Intelligence AI Solution Provider | Xiao-i",
+   "u": "https://cn.xiaoi.com/en/aboutPage/joinUs",
+   "s": "Xiao-i (\"Xiaoi\") is a leading Cognitive Intelligence enterprise in China that offers a wide range of business solutions in Artificial Intelligence. Since its es"
+  },
+  {
+   "t": "career.mi.com",
+   "u": "https://career.mi.com/home",
+   "s": "career.mi.com"
+  },
+  {
+   "t": "Open Roles | SpaceXAI & X Platform | SpaceXAI",
+   "u": "https://x.ai/careers/open-roles",
+   "s": "SpaceXAI builds Grok, an AI chatbot with voice chat, image and video generation, real-time search, and advanced reasoning. Try Grok at grok.com."
+  },
+  {
+   "t": "校园招聘 - 小米招聘",
+   "u": "https://hr.xiaomi.com/website/campus.html",
+   "s": "面向应届毕业生开放机会，覆盖AI大模型、软硬件、汽车、供应链、产品、设计、新零售等全方向岗位，来小米和同频伙伴一起成长，共同定义下一代产品。"
+  },
+  {
+   "t": "Job Openings - xiaomi.jobs.f.mioffice.cn",
+   "u": "https://xiaomi.jobs.f.mioffice.cn/global",
+   "s": "Advance your career with 小米科技. Search, browse, and apply for current job openings and join us."
+  },
+  {
+   "t": "Xiao-i - LinkedIn",
+   "u": "https://www.linkedin.com/company/xiaoi",
+   "s": "Xiao-I is deeply committed to our mission \"Serve and benefit more people with our AI technology,\" ensuring that our innovations drive business success and contr"
+  },
+  {
+   "t": "Xiaomi Technology: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/xiaomi-technology/jobs/",
+   "s": "Xiaomi Technology | 1,682,164 followers on LinkedIn. Xiaomi Corporation was founded in April 2010 and listed on the Main Board of the Hong Kong Stock Exchange o"
+  },
+  {
+   "t": "探索机会 - 小米招聘",
+   "u": "https://hr.xiaomi.com/website/opportunities.html",
+   "s": "在小米 找到属于你的热爱 覆盖AI、手机、汽车、芯片等业务方向及研发、产品、设计、职能、市场等多类型岗位。"
+  },
+  {
+   "t": "Cognitive Intelligence AI Solution Provider | Xiao-i",
+   "u": "https://cn.xiaoi.com/en/aboutPage/joinUs",
+   "s": "Xiao-i (\"Xiaoi\") is a leading Cognitive Intelligence enterprise in China that offers a wide range of business solutions in Artificial Intelligence. Since its es"
+  },
+  {
+   "t": "Xiao-i - LinkedIn",
+   "u": "https://www.linkedin.com/company/xiaoi",
+   "s": "Xiao-i | 4,347 followers on LinkedIn. Cognitive Intelligence AI Solution Provider | Xiao-I (NASDAQ: AIXI) has been at the forefront of AI and AIGC technologies "
+  },
+  {
+   "t": "Jobs and Employment at Xiao-I | Simplify Jobs",
+   "u": "https://simplify.jobs/c/Xiao-I",
+   "s": "Apply to jobs at Xiao-I and thousands of other companies in one-click on Simplify!"
+  },
+  {
+   "t": "Open Roles | SpaceXAI & X Platform | SpaceXAI",
+   "u": "https://x.ai/careers/open-roles",
+   "s": "SpaceXAI builds Grok, an AI chatbot with voice chat, image and video generation, real-time search, and advanced reasoning. Try Grok at grok.com."
+  },
+  {
+   "t": "Xiaomi Global Home",
+   "u": "https://www.mi.com/global/careers/list",
+   "s": "Welcome to Xiaomi global official website to buy your favorite products. Here you can buy the latest Xiaomi smartphones, Redmi smartphones, Mi Bands, Power bank"
+  },
+  {
+   "t": "Job Openings - xiaomi.jobs.f.mioffice.cn",
+   "u": "https://xiaomi.jobs.f.mioffice.cn/global",
+   "s": "Advance your career with 小米科技. Search, browse, and apply for current job openings and join us."
+  },
+  {
+   "t": "校园招聘 - 小米招聘",
+   "u": "https://hr.xiaomi.com/website/campus.html",
+   "s": "面向应届毕业生开放机会，覆盖AI大模型、软硬件、汽车、供应链、产品、设计、新零售等全方向岗位，来小米和同频伙伴一起成长，共同定义下一代产品。"
+  },
+  {
+   "t": "career.mi.com",
+   "u": "https://career.mi.com/home",
+   "s": "career.mi.com"
+  },
+  {
+   "t": "Cognitive Intelligence AI Solution Provider | Xiao-i",
+   "u": "https://cn.xiaoi.com/en/aboutPage/recruit",
+   "s": "Xiao-i (\"Xiaoi\") is a leading Cognitive Intelligence enterprise in China that offers a wide range of business solutions in Artificial Intelligence. Since its es"
+  },
+  {
+   "t": "Open Roles | SpaceXAI & X Platform | SpaceXAI",
+   "u": "https://x.ai/careers/open-roles",
+   "s": "SpaceXAI builds Grok, an AI chatbot with voice chat, image and video generation, real-time search, and advanced reasoning. Try Grok at grok.com."
+  },
+  {
+   "t": "Jobs and Employment at Xiao-I | Simplify Jobs",
+   "u": "https://simplify.jobs/c/Xiao-I",
+   "s": "Apply to jobs at Xiao-I and thousands of other companies in one-click on Simplify!"
+  },
+  {
+   "t": "Xiao-i - LinkedIn",
+   "u": "https://www.linkedin.com/company/xiaoi",
+   "s": "Xiao-I is deeply committed to our mission \"Serve and benefit more people with our AI technology,\" ensuring that our innovations drive business success and contr"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://simplify.jobs/c/Xiao-I",
+  "platform": "custom",
+  "title": "Jobs and Employment at Xiao-I | Simplify Jobs"
+ },
+ "verdict": "custom_surface"
 }

@@ -72,3 +72,12 @@ custom_surface | Tianjin Development -> custom
 skip (done) Tianjin Port
 skip (done) Trina Solar
 skip (done) Val Morgan
+marker_surface | Yili -> workday
+no_clear_surface | COSCO Shipping -> no_clear_surface
+custom_surface | Sieyuan Electric -> custom
+no_clear_surface | Simcere Pharmaceutical -> no_clear_surface
+skip (done) CLPS
+skip (done) Paranovus Entertainment Technology
+skip (done) Afya
+skip (done) Baosheng Media
+probe done for 82 records from probe_A

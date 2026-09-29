@@ -2,7 +2,7 @@
  "brand": "Yili",
  "tier": "lca",
  "lca": "YILI INDUSTRIAL U.S. CO. LTD.",
- "ts": "2026-09-27T08:12:04.735Z",
+ "ts": "2026-09-29T04:44:05.526Z",
  "candidates": [
   {
    "url": "https://www.yili.com/careers/",
@@ -13,31 +13,33 @@
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "伊利品质 伊利视品质如生命，始终为消费者提供品质最优的产品和服务 ——伊利集团董事长兼总裁 潘刚 伊利品质体验月 奶源 南北纬45℃黄金奶源带奶源，规模化、集约化养殖奶源供应比例居国内行业首位，各类牧场近1500座 品控 与国际接轨的品质管理标准，聚焦\"全球最优品质\"的管控体系 创新 ...",
+   "snippet": "至此，伊利已累计揽获4个奖项，成为行业内荣获\"中华慈善奖\"数量最多的企业。 8月1日，为期两天的2026年世界奶业大会在呼和浩特开幕。 大会由伊利集团主办，以\"科技引领、合作共赢，共建全球奶业可持续生态圈\"为主题，设置开幕式、产业项目观摩、平行会议等系列核心活动。 国际行业协会负责人、院士、全球乳产业链龙头企业负责人等",
    "backend": "direct"
   },
   {
-   "url": "https://yili.hotjob.cn/wt/yili/web/index/campus",
+   "url": "https://www.instagram.com/yili.career/",
+   "title": "Instagram",
+   "status": 200,
+   "bytes": 515369,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Yili Indonesia Dairy (@yili.career) on Instagram: \"\"",
+   "backend": "supabase"
+  },
+  {
+   "url": "http://yili.hotjob.cn/wt/yili/web/index/campus",
    "title": "伊利招聘官网",
    "status": 200,
-   "bytes": 35548,
+   "bytes": 35516,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "液态奶事业部拥有金典、安慕希、舒化、优酸乳、QQ星、谷粒多、味可滋、植选等多个享誉海内外的知名品牌，超高温灭菌奶产销量连续多年在全国遥遥领先。",
-   "backend": "direct"
-  },
-  {
-   "url": "http://yili.hotjob.cn/wt/yili/web/index/CompyiliPageindex_campus",
-   "title": "伊利招聘官网",
-   "status": 200,
-   "bytes": 94408,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 7,
-   "snippet": "伊利集团校园招聘官网，提供最新招聘信息和流程，助力学生加入中国乳业领军企业，开启职业新篇章。",
    "backend": "direct"
   }
  ],
@@ -48,14 +50,29 @@
    "s": "Yili adheres to the human resources management philosophy of \"focusing on the cultivation of outstanding value creators.\" It has constructed two major career de"
   },
   {
-   "t": "Join Us - Yili - nxmlnj.com",
-   "u": "https://www.nxmlnj.com/en/joinus",
+   "t": "伊利官网 - yili.com",
+   "u": "https://www.yili.com/careers/",
+   "s": "至此，伊利已累计揽获4个奖项，成为行业内荣获\"中华慈善奖\"数量最多的企业。 8月1日，为期两天的2026年世界奶业大会在呼和浩特开幕。 大会由伊利集团主办，以\"科技引领、合作共赢，共建全球奶业可持续生态圈\"为主题，设置开幕式、产业项目观摩、平行会议等系列核心活动。 国际行业协会负责人、院士、全球乳产业链龙头企业负责人等"
+  },
+  {
+   "t": "Join Us - Yili",
+   "u": "https://www.sanshaxing.com/en/joinus",
    "s": "Yili adheres to the human resources management philosophy of \"focusing on the cultivation of outstanding value creators.\" It has constructed two major career de"
   },
   {
-   "t": "伊利官网 - yili.com",
-   "u": "https://www.yili.com/careers/",
-   "s": "伊利品质 伊利视品质如生命，始终为消费者提供品质最优的产品和服务 ——伊利集团董事长兼总裁 潘刚 伊利品质体验月 奶源 南北纬45℃黄金奶源带奶源，规模化、集约化养殖奶源供应比例居国内行业首位，各类牧场近1500座 品控 与国际接轨的品质管理标准，聚焦\"全球最优品质\"的管控体系 创新 ..."
+   "t": "伊利官网 - Yili.com",
+   "u": "https://www.yili.com/joinus",
+   "s": "伊利坚持\"以卓越价值创造者为本\"的人力资源管理理念，公司构建了管理、专业两大职业发展引擎和职务、职级晋升四大通路，公平、公正、公开的内部用人环境，让人才在一流的、国际化的平台上尽情施展才能，成就卓越价值创造者。 管理发展通路方面，公司不断完善管理岗位人员任用机制，构建关键岗位人才成长白皮书，以实战、赛马为主线促进管理人"
+  },
+  {
+   "t": "PT. Yili Indonesia Dairy (@yili.career) - Instagram",
+   "u": "https://www.instagram.com/yili.career/",
+   "s": "Yili Indonesia Dairy (@yili.career) on Instagram: \"\""
+  },
+  {
+   "t": "Yili Jobs in Indonesia - Sep 2026 | Jobstreet",
+   "u": "https://id.jobstreet.com/yili-jobs",
+   "s": "View all the Yili vacancies now with new jobs added daily!"
   },
   {
    "t": "Yili Careers - Latest Job Openings | Talentd",
@@ -63,8 +80,28 @@
    "s": "Explore career opportunities at Yili. Find latest job openings, internships, and more on Talentd."
   },
   {
+   "t": "#wearehiring #hiring #yiliindonesiadairy #yili #joyday # ... - LinkedIn",
+   "u": "https://www.linkedin.com/posts/yili-indonesia-dairy-careers_wearehiring-hiring-yiliindonesiadairy-activity-7503667427923312640-K-cl",
+   "s": "🚨 WE ARE HIRING! | PT Yili Indonesia Dairy 🥛🍦 We're expanding our team and currently looking for talented professionals to join our Company! 🔹Open Positions"
+  },
+  {
+   "t": "Join Us - Yili",
+   "u": "https://www.yili.com/en/joinus",
+   "s": "Yili adheres to the human resources management philosophy of \"focusing on the cultivation of outstanding value creators.\" It has constructed two major career de"
+  },
+  {
+   "t": "Join Us - Yili",
+   "u": "https://m.jiyuanjingguan.com/en/joinus",
+   "s": "Yili adheres to the human resources management philosophy of \"focusing on the cultivation of outstanding value creators.\" It has constructed two major career de"
+  },
+  {
+   "t": "伊利官网 - Yili.com",
+   "u": "http://www.yili.com/joinus",
+   "s": "伊利坚持\"以卓越价值创造者为本\"的人力资源管理理念，公司构建了管理、专业两大职业发展引擎和职务、职级晋升四大通路，公平、公正、公开的内部用人环境，让人才在一流的、国际化的平台上尽情施展才能，成就卓越价值创造者。 管理发展通路方面，公司不断完善管理岗位人员任用机制 ..."
+  },
+  {
    "t": "伊利招聘官网 - yili.hotjob.cn",
-   "u": "https://yili.hotjob.cn/wt/yili/web/index/campus",
+   "u": "http://yili.hotjob.cn/wt/yili/web/index/campus",
    "s": "液态奶事业部拥有金典、安慕希、舒化、优酸乳、QQ星、谷粒多、味可滋、植选等多个享誉海内外的知名品牌，超高温灭菌奶产销量连续多年在全国遥遥领先。"
   },
   {
@@ -73,54 +110,19 @@
    "s": "Today's top 3,000+ Yili Group jobs in United States. Leverage your professional network, and get hired. New Yili Group jobs added daily."
   },
   {
-   "t": "Yili Group - LinkedIn",
-   "u": "https://www.linkedin.com/company/inner-mongolia-yili-industrial-group-co-ltd-",
-   "s": "Yili Group | 28,819 followers on LinkedIn. As the largest dairy producer and the dairy producer with the fullest product-lines in China, Inner Mongolia Yili Ind"
-  },
-  {
-   "t": "伊利招聘官网 - yili.hotjob.cn",
-   "u": "http://yili.hotjob.cn/wt/yili/web/index/CompyiliPageindex_campus",
-   "s": "伊利集团校园招聘官网，提供最新招聘信息和流程，助力学生加入中国乳业领军企业，开启职业新篇章。"
-  },
-  {
-   "t": "Join Us - Yili",
-   "u": "https://www.yili.com/en/joinus",
-   "s": "Yili adheres to the human resources management philosophy of \"focusing on the cultivation of outstanding value creators.\" It has constructed two major career de"
-  },
-  {
-   "t": "Yili Indonesia Dairy Jobs in Singapore (with Salaries) - Jul 2026 ...",
-   "u": "https://sg.jobstreet.com/Yili-indonesia-dairy-jobs",
-   "s": "Find your ideal job on Jobstreet with 6 Yili Indonesia Dairy jobs (0 at Yili Indonesia Dairy) listed in Singapore. View all the Yili Indonesia Dairy vacancies n"
-  },
-  {
-   "t": "Yili Indonesia Dairy Jobs in Singapore - Jun 2026 | Jobstreet",
-   "u": "https://sg.jobstreet.com/Yili-indonesia-dairy-jobs/in-Singapore",
-   "s": "Find your ideal job on Jobstreet with 7 Yili Indonesia Dairy jobs (0 at Yili Indonesia Dairy) listed in Singapore. View all the Yili Indonesia Dairy vacancies n"
-  },
-  {
-   "t": "伊利官网 - Yili.com",
-   "u": "http://www.yili.com/joinus",
-   "s": "伊利坚持\"以卓越价值创造者为本\"的人力资源管理理念，公司构建了管理、专业两大职业发展引擎和职务、职级晋升四大通路，公平、公正、公开的内部用人环境，让人才在一流的、国际化的平台上尽情施展才能，成就卓越价值创造者。 管理发展通路方面，公司不断完善管理岗位人员任用机制 ..."
-  },
-  {
    "t": "10,000+ Yili Group jobs in Worldwide - LinkedIn",
    "u": "https://www.linkedin.com/jobs/yili-group-jobs-worldwide",
    "s": "Today's top 10,000+ Yili Group jobs in Worldwide. Leverage your professional network, and get hired. New Yili Group jobs added daily."
   },
   {
-   "t": "Home - Yili",
-   "u": "https://www.yili.com/en/",
-   "s": "Yili is the leading domestic dairy industry, offering an extensive and highly-focused supply of dairy sources, including milk from the 45℃ Golden Milk Source Be"
+   "t": "Current Job Openings at Yili Group | JobzMall",
+   "u": "https://www.jobzmall.com/yili-group/jobs",
+   "s": "Inner Mongolia Yili Industrial Group Co., Ltd. engages in the production and sale of dairy products. Its products include liquid milk, ice cream, milk powder, y"
   },
   {
-   "t": "伊利官网 - yili.com",
-   "u": "https://www.yili.com/careers/",
-   "s": "伊利品质 伊利视品质如生命，始终为消费者提供品质最优的产品和服务 ——伊利集团董事长兼总裁 潘刚 伊利品质体验月 奶源 南北纬45℃黄金奶源带奶源，规模化、集约化养殖奶源供应比例居国内行业首位，各类牧场近1500座 品控 与国际接轨的品质管理标准，聚焦\"全球最优品质\"的管控体系 创新 ..."
-  },
-  {
-   "t": "伊利招聘官网 - yili.hotjob.cn",
-   "u": "https://yili.hotjob.cn/wt/yili/web/index/campus",
-   "s": "液态奶事业部拥有金典、安慕希、舒化、优酸乳、QQ星、谷粒多、味可滋、植选等多个享誉海内外的知名品牌，超高温灭菌奶产销量连续多年在全国遥遥领先。"
+   "t": "What are the job opportunities available at Yili Group?",
+   "u": "https://www.jobzmall.com/yili-group/faqs/what-are-the-job-opportunities-available-at-yili-group",
+   "s": "What are the job opportunities available at Yili Group? Yili Group offers a wide range of job opportunities, including research and development, production, sal"
   },
   {
    "t": "Join Us - Yili",
@@ -145,5 +147,10 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://www.instagram.com/yili.career/",
+  "platform": "workday",
+  "title": "Instagram"
+ },
+ "verdict": "marker_surface"
 }

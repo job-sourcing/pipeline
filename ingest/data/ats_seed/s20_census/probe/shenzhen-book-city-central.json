@@ -2,10 +2,149 @@
  "brand": "Shenzhen Book City (Central)",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:40:28.832Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:44:17.474Z",
+ "candidates": [
+  {
+   "url": "https://jobs.echinacities.com/en/Shenzhen-jobs",
+   "title": "Shenzhen Jobs – for Expats in Shenzhen",
+   "status": 200,
+   "bytes": 704587,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinacities Jobs provides expats who want to work in Shenzhen with updated employment opportunities.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.isacjobs.com/job-location/shenzhen/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5729,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse the latest jobs in Shenzhen for foreigners, including teaching and company jobs for international jobseekers.",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://hishenzhen.com/how-to-find-a-job-in-shenzhen/",
+   "title": "",
+   "status": 200,
+   "bytes": 29415,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find work in Shenzhen as a foreigner. 2026 guide covering Z visas, Class B work permit salary thresholds, Liepin, Boss Zhipin, and salary negotiation tips for e",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Shenzhen Jobs - for Expats in Shenzhen",
+   "u": "https://jobs.echinacities.com/en/Shenzhen-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Shenzhen with updated employment opportunities."
+  },
+  {
+   "t": "Urgent! Shenzhen jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-shenzhen",
+   "s": "Active 121 vacancies • Shenzhen jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Shenzhen jobs in USA and abroad •"
+  },
+  {
+   "t": "「深圳中心书城招聘信息」-boss直聘",
+   "u": "https://www.zhipin.com/zhaopin/42b7c2bb53e3c1201nFz0ti6EA~~/",
+   "s": "BOSS直聘为您提供2026年深圳中心书城信息，BOSS直聘在线开聊约面试，及时反馈，让深圳中心书城更便捷，找工作就上BOSS直聘!"
+  },
+  {
+   "t": "Jobs in Shenzhen - China Foreigner Jobs",
+   "u": "https://www.isacjobs.com/job-location/shenzhen/",
+   "s": "Browse the latest jobs in Shenzhen for foreigners, including teaching and company jobs for international jobseekers."
+  },
+  {
+   "t": "Working in Shenzhen: Jobs, Business and Career Guide — Life Shenzhen",
+   "u": "https://lifeshenzhen.com/working-in-shenzhen/",
+   "s": "Working in Shenzhen: An Overview Explore the city's industries, compare employer opportunities and plan the practical side of a move. Whether you are an experie"
+  },
+  {
+   "t": "Now Hiring: 100 Shenzhen Jobs | Indeed",
+   "u": "https://www.indeed.com/q-shenzhen-jobs.html",
+   "s": "Browse 134 Shenzhen jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Shenzhen Employment & Career Guide - 深圳 (Shenzhen) Guide | Cities ...",
+   "u": "https://citiesinsider.com/country/china/shenzhen/guides/shenzhen-employment/zh",
+   "s": "For international professionals, Shenzhen offers a unique value proposition: highly competitive salaries combined with a high quality of life, a world-leading s"
+  },
+  {
+   "t": "深圳出版集团在线平台——深圳书城——深圳书城唯一官方网站",
+   "u": "https://www.szbookmall.com/",
+   "s": "深圳出版集团 | 深圳出版社 深圳书城中心城 0755-2399 2013 深圳书城罗湖城 0755-8207 3030 深圳书城南山城 0755-8612 2001 深圳书城宝安城 0755-2300 0666 深圳书城龙岗城 0755-2890 3001 深圳书城龙华城0755-28198986 湾区之眼 0755"
+  },
+  {
+   "t": "Urgent! Shenzhen jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-shenzhen",
+   "s": "Active 121 vacancies • Shenzhen jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Shenzhen jobs in USA and abroad •"
+  },
+  {
+   "t": "Shenzhen Jobs - for Expats in Shenzhen",
+   "u": "https://jobs.echinacities.com/en/Shenzhen-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Shenzhen with updated employment opportunities."
+  },
+  {
+   "t": "「深圳中心书城招聘信息」-boss直聘",
+   "u": "https://www.zhipin.com/zhaopin/42b7c2bb53e3c1201nFz0ti6EA~~/",
+   "s": "BOSS直聘为您提供2026年深圳中心书城信息，BOSS直聘在线开聊约面试，及时反馈，让深圳中心书城更便捷，找工作就上BOSS直聘!"
+  },
+  {
+   "t": "Jobs in Shenzhen - China Foreigner Jobs",
+   "u": "https://www.isacjobs.com/job-location/shenzhen/",
+   "s": "Browse the latest jobs in Shenzhen for foreigners, including teaching and company jobs for international jobseekers."
+  },
+  {
+   "t": "Working in Shenzhen: Jobs, Business and Career Guide — Life Shenzhen",
+   "u": "https://lifeshenzhen.com/working-in-shenzhen/",
+   "s": "Find employer-listed Shenzhen jobs with direct application links, plus practical guides to work permits, cost of living, business setup and local connections."
+  },
+  {
+   "t": "How to Find a Job in Shenzhen (2026 Guide for Expats) - HiShenzhen",
+   "u": "https://hishenzhen.com/how-to-find-a-job-in-shenzhen/",
+   "s": "Find work in Shenzhen as a foreigner. 2026 guide covering Z visas, Class B work permit salary thresholds, Liepin, Boss Zhipin, and salary negotiation tips for e"
+  },
+  {
+   "t": "Now Hiring: 100 Shenzhen Jobs | Indeed",
+   "u": "https://www.indeed.com/q-shenzhen-jobs.html",
+   "s": "Browse 134 Shenzhen jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Urgent! Shenzhen jobs - September 2026 - 27 Shenzhen vacancies - Jooble",
+   "u": "https://hk.jooble.org/jobs-shenzhen",
+   "s": "Search and apply for the latest Shenzhen jobs. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job email alerts. Free, fast an"
+  },
+  {
+   "t": "Shenzhen Jobs - for Expats in Shenzhen",
+   "u": "https://jobs.echinacities.com/en/Shenzhen-jobs",
+   "s": "eChinacities Jobs provides expats who want to work in Shenzhen with updated employment opportunities."
+  },
+  {
+   "t": "Urgent! Shenzhen jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-shenzhen",
+   "s": "Active 121 vacancies • Shenzhen jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Shenzhen jobs in USA and abroad •"
+  },
+  {
+   "t": "Shenzhen Jobs — Now Shenzhen",
+   "u": "https://nowshenzhen.com/jobs/",
+   "s": "Find your next job in Shenzhen — tech, education, hospitality, design and management roles. English-friendly listings updated daily from companies hiring expats"
+  },
+  {
+   "t": "Working in Shenzhen: Jobs, Business and Career Guide — Life Shenzhen",
+   "u": "https://lifeshenzhen.com/working-in-shenzhen/",
+   "s": "Find employer-listed Shenzhen jobs with direct application links, plus practical guides to work permits, cost of living, business setup and local connections."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

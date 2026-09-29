@@ -2,10 +2,153 @@
  "brand": "Xiu.com",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:27:48.356Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:46:45.533Z",
+ "candidates": [
+  {
+   "url": "https://www.sinojobs.com/en/list-of-employers/company-details/xiucom.html",
+   "title": "SinoJobs: XIU.COM",
+   "status": 200,
+   "bytes": 13562,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Contact the company XIU.COM for other career opportunities in China and Europe.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.zalora.com/careers?store=xiu-small-be-xinh",
+   "title": "ZALORA SEA - Careers Page",
+   "status": 200,
+   "bytes": 3572877,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "ZALORA Careers Website.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.jobscina.com/company-YUE-XIU-ENTERPRISES-HOLDINGS-LIMITED-jobs",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Jobs at YUE XIU ENTERPRISES (HOLDINGS) LIMITED. List maintained by JobsCina.com, the employment search engine.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "www.xiu.com (Shenzhen Xiu Network Technology) - LinkedIn",
+   "u": "https://www.linkedin.com/company/www-xiu-com",
+   "s": "Xiu.com is a 10 million users based China e-retailer, rated as No.1 China fashion online retailer by third party research institutions like iresearch etc. in te"
+  },
+  {
+   "t": "XIU.COM - sinojobs.com",
+   "u": "https://www.sinojobs.com/en/list-of-employers/company-details/xiucom.html",
+   "s": "Contact the company XIU.COM for other career opportunities in China and Europe."
+  },
+  {
+   "t": "Xiu.com Culture | Comparably",
+   "u": "https://www.comparably.com/companies/xiu-com",
+   "s": "Learn about Xiu.com's culture, see what work's like, read reviews, and find job opportunities."
+  },
+  {
+   "t": "Xiu.com | Latest news, analysis and jobs",
+   "u": "https://www.businessoffashion.com/organisations/xiu-com/",
+   "s": "Discover the latest news, insight and analysis about Xiu.com on The Business of Fashion. Our articles offer comprehensive coverage of industry leaders, includin"
+  },
+  {
+   "t": "0 Xiu Global jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xiu-global-jobs",
+   "s": "Today's top 0 Xiu Global jobs in United States. Leverage your professional network, and get hired. New Xiu Global jobs added daily."
+  },
+  {
+   "t": "10,000+Xiu Hon Jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xiu-hon-jobs",
+   "s": "Today's top 10,000+ Xiu Hon jobs in United States. Leverage your professional network, and get hired. New Xiu Hon jobs added daily."
+  },
+  {
+   "t": "ZALORA SEA - Careers Page",
+   "u": "https://careers.zalora.com/careers?store=xiu-small-be-xinh",
+   "s": "ZALORA Careers Website."
+  },
+  {
+   "t": "Xiu.com - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Xiu.com",
+   "s": "Xiu (simplified Chinese: 走秀网; traditional Chinese: 走秀網; pinyin: zǒuxiùwǎng) is a Chinese language on-line shopping vertical, e-commerce company that operates in"
+  },
+  {
+   "t": "Yi Xiu.com Jobs in United States (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yi-xiu.com-jobs",
+   "s": "Today's top 1,000+ Yi Xiu.com jobs in United States. Leverage your professional network, and get hired. New Yi Xiu.com jobs added daily."
+  },
+  {
+   "t": "704 Xiu Holdings jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xiu-holdings-jobs",
+   "s": "Today's top 704 Xiu Holdings jobs in United States. Leverage your professional network, and get hired. New Xiu Holdings jobs added daily."
+  },
+  {
+   "t": "www.xiu.com (Shenzhen Xiu Network Technology) | 领英",
+   "u": "https://cn.linkedin.com/company/www-xiu-com",
+   "s": "www.xiu.com (Shenzhen Xiu Network Technology) | 在领英上有 644 位关注者。Xiu.com is a 10 million users based China e-retailer, rated as No.1 China fashion online retailer"
+  },
+  {
+   "t": "Xiu.com | Latest news, analysis and jobs",
+   "u": "https://www.businessoffashion.com/organisations/xiu-com/",
+   "s": "Discover the latest news, insight and analysis about Xiu.com on The Business of Fashion. Our articles offer comprehensive coverage of industry leaders, includin"
+  },
+  {
+   "t": "XIU.COM - sinojobs.com",
+   "u": "https://www.sinojobs.com/en/list-of-employers/company-details/xiucom.html",
+   "s": "Contact the company XIU.COM for other career opportunities in China and Europe."
+  },
+  {
+   "t": "Xiu.com Culture | Comparably",
+   "u": "https://www.comparably.com/companies/xiu-com",
+   "s": "At Xiu.com, the highest paid job is a Sales Rep at $114,816 annually and the lowest is a Bookkeeper at $42,281 annually. Average Xiu.com salaries by department "
+  },
+  {
+   "t": "Now Hiring: 900 Site Xiu Miletiyu Com Jobs | Indeed",
+   "u": "https://www.indeed.com/q-site-xiu-miletiyu-com-jobs.html",
+   "s": "Browse 916 Site Xiu Miletiyu Com jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Xiu.com - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Xiu.com",
+   "s": "Xiu (simplified Chinese: 走秀网; traditional Chinese: 走秀網; pinyin: zǒuxiùwǎng) is a Chinese language on-line shopping vertical, e-commerce company that operates in"
+  },
+  {
+   "t": "Xiu Holdings Jobs in United States (2,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xiu-holdings-jobs?f_EA=true&amp;f_AL=true",
+   "s": "Today's top 2,000+ Xiu Holdings jobs in United States. Leverage your professional network, and get hired. New Xiu Holdings jobs added daily."
+  },
+  {
+   "t": "1,000+ Xiu、 jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xiu%E3%80%81-jobs",
+   "s": "Today's top 1,000+ Xiu、 jobs in United States. Leverage your professional network, and get hired. New Xiu、 jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 900 Site Xiu Miletiyu Com Jobs | Indeed",
+   "u": "https://www.indeed.com/q-site-xiu-miletiyu-com-jobs.html",
+   "s": "Browse 916 Site Xiu Miletiyu Com jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "14 Yue Xiu Securities Holdings Limited jobs in Hong Kong",
+   "u": "https://hk.jobsdb.com/Yue-Xiu-Securities-Holdings-Limited-jobs",
+   "s": "Find your ideal job on Jobsdb with 14 Yue Xiu Securities Holdings Limited jobs (14 at Yue Xiu Securities Holdings Limited) listed in Hong Kong. View all the Yue"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.sinojobs.com/en/list-of-employers/company-details/xiucom.html",
+  "platform": "custom",
+  "title": "SinoJobs: XIU.COM"
+ },
+ "verdict": "custom_surface"
 }

@@ -2,10 +2,157 @@
  "brand": "SPR Coffee",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:40:45.252Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:45:49.949Z",
+ "candidates": [
+  {
+   "url": "https://spr.com/careers/",
+   "title": "Careers at SPR: You&#039;ll Love It Here! | SPR",
+   "status": 200,
+   "bytes": 65684,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We're always on the lookout for talented go-getters to join our team of pros, from data analysts and strategists to designers and developers.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.sprichards.com/careers/",
+   "title": "Careers | S.P. Richards",
+   "status": 200,
+   "bytes": 123500,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Come work with us Why choose SPR? We're passionate about our work and dedicated to being a reliable and supportive partner for our employees. Find your ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://apply.starbucks.com/careers?query=spr+coffee",
+   "title": "Careers at Starbucks",
+   "status": 200,
+   "bytes": 348457,
+   "markers": [
+    "eightfold"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers at Starbucks",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at SPR: You'll Love It Here! | SPR",
+   "u": "https://spr.com/careers/",
+   "s": "We're always on the lookout for talented go-getters to join our team of pros, from data analysts and strategists to designers and developers."
+  },
+  {
+   "t": "Careers - S.P. Richards",
+   "u": "https://www.sprichards.com/careers/",
+   "s": "Careers Come work with us Why choose SPR? We're passionate about our work and dedicated to being a reliable and supportive partner for our employees. Find your "
+  },
+  {
+   "t": "Starbucks Careers - Starbucks Careers",
+   "u": "https://careers.starbucks.com/",
+   "s": "Starbucks Coffee Company is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, rel"
+  },
+  {
+   "t": "Careers at Starbucks",
+   "u": "https://apply.starbucks.com/careers?query=spr+coffee",
+   "s": "Careers at Starbucks"
+  },
+  {
+   "t": "Careers at Starbucks Coffee Company",
+   "u": "https://apply.starbucks.com/careers/dashboard?domain=starbucks.com&customredirect=1",
+   "s": "Dashboard jobs in Starbucks Coffee Company"
+  },
+  {
+   "t": "SPR - Job Opportunities",
+   "u": "https://recruiting.paylocity.com/Recruiting/Jobs/All/2d128e0f-0a71-49c5-babf-2400ef0de2b0",
+   "s": "SPR Careers Page - View all jobs and opportunities at SPR and apply today. | Powered By Paylocity"
+  },
+  {
+   "t": "SPR Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Spr-3",
+   "s": "Find out what works well at SPR from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for p"
+  },
+  {
+   "t": "Corporate - Starbucks Careers",
+   "u": "https://careers.starbucks.com/discover-opportunities/corporate/",
+   "s": "See our benefits, perks, and get to know how you can make an impact for people around the world as a Starbucks corporate employee"
+  },
+  {
+   "t": "Careers - S.P. Richards",
+   "u": "https://www.sprichards.com/careers/",
+   "s": "Come work with us Why choose SPR? We're passionate about our work and dedicated to being a reliable and supportive partner for our employees. Find your perfect "
+  },
+  {
+   "t": "Careers at Starbucks",
+   "u": "https://apply.starbucks.com/careers?query=spr+coffee",
+   "s": "Careers at Starbucks"
+  },
+  {
+   "t": "Starbucks Careers - Starbucks Careers",
+   "u": "https://careers.starbucks.com/",
+   "s": "Starbucks Coffee Company is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, rel"
+  },
+  {
+   "t": "SPR - Job Opportunities",
+   "u": "https://recruiting.paylocity.com/Recruiting/Jobs/All/2d128e0f-0a71-49c5-babf-2400ef0de2b0",
+   "s": "SPR Careers Page - View all jobs and opportunities at SPR and apply today. | Powered By Paylocity"
+  },
+  {
+   "t": "Careers - Press Coffee Roasters",
+   "u": "https://presscoffee.com/pages/careers",
+   "s": "Press Coffee is a small batch craft coffee roaster shipping specialty coffee worldwide. Visit our multiple Phoenix, Arizona cafés. Buy coffee online, order a co"
+  },
+  {
+   "t": "sprcompanies.com",
+   "u": "http://sprcompanies.com/careers/",
+   "s": "sprcompanies.com"
+  },
+  {
+   "t": "Coffee Jobs, Employment in Hot Slphr Spr, CO | Indeed",
+   "u": "https://www.indeed.com/q-coffee-l-hot-slphr-spr,-co-jobs.html",
+   "s": "17 Coffee jobs available in Hot Slphr Spr, CO on Indeed.com. Apply to Barista, Server, Line Cook and more!"
+  },
+  {
+   "t": "Careers at SPR: You'll Love It Here! | SPR",
+   "u": "https://spr.com/careers/",
+   "s": "We're always on the lookout for talented go-getters to join our team of pros, from data analysts and strategists to designers and developers."
+  },
+  {
+   "t": "Careers at Starbucks",
+   "u": "https://apply.starbucks.com/careers?query=spr+coffee",
+   "s": "Careers at Starbucks"
+  },
+  {
+   "t": "Starbucks Careers - Starbucks Careers",
+   "u": "https://careers.starbucks.com/",
+   "s": "Starbucks Coffee Company is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, rel"
+  },
+  {
+   "t": "SPR - Job Opportunities",
+   "u": "https://recruiting.paylocity.com/recruiting/jobs/All/2d128e0f-0a71-49c5-babf-2400ef0de2b0/SPR-Therapeutics-Inc",
+   "s": "SPR Careers Page - View all jobs and opportunities at SPR and apply today. | Powered By Paylocity"
+  },
+  {
+   "t": "Careers - S.P. Richards",
+   "u": "https://www.sprichards.com/careers/",
+   "s": "Careers Come work with us Why choose SPR? We're passionate about our work and dedicated to being a reliable and supportive partner for our employees. Find your "
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://apply.starbucks.com/careers?query=spr+coffee",
+  "platform": "eightfold",
+  "title": "Careers at Starbucks"
+ },
+ "verdict": "marker_surface"
 }

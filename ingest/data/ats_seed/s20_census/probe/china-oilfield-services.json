@@ -2,10 +2,154 @@
  "brand": "China Oilfield Services",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:44:38.971Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:56:14.496Z",
+ "candidates": [
+  {
+   "url": "https://petroleumjobs.com/all/oilfield-services-jobs-in-china",
+   "title": "Oilfield Services (OFS) Jobs in China — PetroleumJobs.com",
+   "status": 200,
+   "bytes": 23864,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse oilfield services (ofs) jobs in china on PetroleumJobs.com. Find petroleum engineering, drilling, and energy sector positions worldwide.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://petroleumjobs.com/all/jobs-in-china",
+   "title": "Oil &amp; Gas Jobs in China — PetroleumJobs.com",
+   "status": 200,
+   "bytes": 28031,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse oil & gas jobs in china on PetroleumJobs.com. Find petroleum engineering, drilling, and energy sector positions worldwide.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://energyjobsearch.com/jobs/jobs-in-china",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5827,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore millions of job vacancies in China and apply online. Find your next job at Energy JobSearch!",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "Oilfield Services (OFS) Jobs in China — PetroleumJobs.com",
+   "u": "https://petroleumjobs.com/all/oilfield-services-jobs-in-china",
+   "s": "Browse oilfield services (ofs) jobs in china on PetroleumJobs.com. Find petroleum engineering, drilling, and energy sector positions worldwide."
+  },
+  {
+   "t": "Oil & Gas Jobs in China — PetroleumJobs.com",
+   "u": "https://petroleumjobs.com/all/jobs-in-china",
+   "s": "Browse oil & gas jobs in china on PetroleumJobs.com. Find petroleum engineering, drilling, and energy sector positions worldwide."
+  },
+  {
+   "t": "中海油田服务股份有限公司",
+   "u": "https://www.cosl.com.cn/english/",
+   "s": "COSL is an all-round offshore oilfield services company that possesses a comparatively complete service chain and covers every phase of oil and gas exploration,"
+  },
+  {
+   "t": "China Oilfield Services Limited (COSL) Careers - GulfTalent",
+   "u": "https://www.gulftalent.com/companies/china-oilfield-services-limited-cosl-careers",
+   "s": "China Oilfield Services Limited (COSL) is a company active in the Oil & Gas sector. Their job roles cover Admin, Petroleum Engineering, and R&D among others."
+  },
+  {
+   "t": "Job vacancies China | Energy JobSearch",
+   "u": "https://energyjobsearch.com/jobs/jobs-in-china",
+   "s": "Explore millions of job vacancies in China and apply online. Find your next job at Energy JobSearch!"
+  },
+  {
+   "t": "Search Oil & Gas Jobs in China - Rigzone",
+   "u": "https://www.rigzone.com/b-china-jobs",
+   "s": "Search Oil & Gas Jobs in China on Rigzone.com. R&M Electrical Tech I, Project Management Senior Specialist and many more"
+  },
+  {
+   "t": "Urgent! Oil field jobs in China - September 2026 (with ... - Jooble",
+   "u": "https://jooble.org/jobs-oil-field/China",
+   "s": "Active 43 vacancies • Oil field jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Oil field jobs in China "
+  },
+  {
+   "t": "China Oilfield Services Jobs (NOW HIRING) - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/Jobs/China-Oilfield-Services?lk=T_s1KReqicz9bUL8Yzrjkg",
+   "s": "Browse 722 CHINA OILFIELD SERVICES jobs ($57k-$104k) hiring now. New openings posted daily. Apply early, get seen first & 1-click apply today!"
+  },
+  {
+   "t": "Oil & Gas Jobs in China — PetroleumJobs.com",
+   "u": "https://petroleumjobs.com/all/jobs-in-china",
+   "s": "Browse oil & gas jobs in china on PetroleumJobs.com. Find petroleum engineering, drilling, and energy sector positions worldwide."
+  },
+  {
+   "t": "Oilfield Services (OFS) Jobs in China — PetroleumJobs.com",
+   "u": "https://petroleumjobs.com/all/oilfield-services-jobs-in-china",
+   "s": "Browse oilfield services (ofs) jobs in china on PetroleumJobs.com. Find petroleum engineering, drilling, and energy sector positions worldwide."
+  },
+  {
+   "t": "Urgent! Oil field jobs in China - September 2026 (with ... - Jooble",
+   "u": "https://jooble.org/jobs-oil-field/China",
+   "s": "Active 43 vacancies • Oil field jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Oil field jobs in China "
+  },
+  {
+   "t": "Search Oil & Gas Jobs in China - Rigzone",
+   "u": "https://www.rigzone.com/b-china-jobs",
+   "s": "Search Oil & Gas Jobs in China on Rigzone.com. R&M Electrical Tech I, Project Management Senior Specialist and many more"
+  },
+  {
+   "t": "197 oil and gas Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-oil-and-gas-jobs-SRCH_IL.0,5_IN48_KO6,17.htm",
+   "s": "Search Oil and gas jobs in China with company ratings & salaries. 197 open jobs for Oil and gas in China."
+  },
+  {
+   "t": "China Oilfield Services Jobs (NOW HIRING) - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/Jobs/China-Oilfield-Services?lk=T_s1KReqicz9bUL8Yzrjkg",
+   "s": "Browse 722 CHINA OILFIELD SERVICES jobs ($57k-$104k) hiring now. New openings posted daily. Apply early, get seen first & 1-click apply today!"
+  },
+  {
+   "t": "Oil & Gas Jobs in China",
+   "u": "https://oilgasalert.com/oil-gas-jobs-china",
+   "s": "Oil & Gas Jobs in China Browse 99 active oil & gas vacancies in China, pulled directly from company career pages and updated daily. Set a free alert to get new "
+  },
+  {
+   "t": "354 Oil Gas jobs in China - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/oil-gas-jobs-china",
+   "s": "Today's top 354 Oil Gas jobs in China. Leverage your professional network, and get hired. New Oil Gas jobs added daily."
+  },
+  {
+   "t": "354 Oil Gas jobs in China - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/oil-gas-jobs-china",
+   "s": "Today's top 354 Oil Gas jobs in China. Leverage your professional network, and get hired. New Oil Gas jobs added daily."
+  },
+  {
+   "t": "Oil & Gas Jobs in China — PetroleumJobs.com",
+   "u": "https://petroleumjobs.com/all/jobs-in-china",
+   "s": "Browse oil & gas jobs in china on PetroleumJobs.com. Find petroleum engineering, drilling, and energy sector positions worldwide."
+  },
+  {
+   "t": "Urgent! Oil field jobs in China - September 2026 (with ... - Jooble",
+   "u": "https://jooble.org/jobs-oil-field/China",
+   "s": "Active 43 vacancies • Oil field jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Oil field jobs in China "
+  },
+  {
+   "t": "Search Oil & Gas Jobs in China - Rigzone",
+   "u": "https://www.rigzone.com/b-china-jobs",
+   "s": "Search Oil & Gas Jobs in China on Rigzone.com. R&M Electrical Tech I, Project Management Senior Specialist and many more"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://petroleumjobs.com/all/oilfield-services-jobs-in-china",
+  "platform": "custom",
+  "title": "Oilfield Services (OFS) Jobs in China — PetroleumJobs.com"
+ },
+ "verdict": "custom_surface"
 }

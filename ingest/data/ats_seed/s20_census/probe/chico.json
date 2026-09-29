@@ -2,10 +2,155 @@
  "brand": "CHICO",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:43:47.306Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:51:54.747Z",
+ "candidates": [
+  {
+   "url": "https://chicoca.gov/Departments/Human-Resources--Risk-Management/Human-Resources/Careers/index.html",
+   "title": "City of Chico - Careers",
+   "status": 200,
+   "bytes": 99062,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Spotlight career opportunity Are you an experienced and collaborative Risk Manager with sound judgement, initiative, and have a proactive approach to protecting",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.knitwellgroup.com/chicos-fas",
+   "title": "Learn About Chico&#x27;s FAS and Explore Our Careers",
+   "status": 200,
+   "bytes": 72779,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At Chico's FAS, we're lifelong learners and accountable change makers—always striving to get better every day. We do that by staying curious, embracing new ways",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.governmentjobs.com/careers/chico",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "THE CITY OF CHICO OFFERS EXTREMELY COMPETITIVE SIGNING BONUSES! For more information, look for the tagline \"signing bonus available\" on our job Postings!!! To v",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "City of Chico - Careers",
+   "u": "https://chicoca.gov/Departments/Human-Resources--Risk-Management/Human-Resources/Careers/index.html",
+   "s": "Spotlight career opportunity Are you an experienced and collaborative Risk Manager with sound judgement, initiative, and have a proactive approach to protecting"
+  },
+  {
+   "t": "Learn About Chico's FAS and Explore Our Careers",
+   "u": "https://jobs.knitwellgroup.com/chicos-fas",
+   "s": "At Chico's FAS, we're lifelong learners and accountable change makers—always striving to get better every day. We do that by staying curious, embracing new ways"
+  },
+  {
+   "t": "Employment Opportunities | City of Chico Employment Opportunities",
+   "u": "https://www.governmentjobs.com/careers/chico",
+   "s": "THE CITY OF CHICO OFFERS EXTREMELY COMPETITIVE SIGNING BONUSES! For more information, look for the tagline \"signing bonus available\" on our job Postings!!! To v"
+  },
+  {
+   "t": "Now Hiring: 4,000 Jobs in Chico, CA | Indeed",
+   "u": "https://www.indeed.com/l-Chico,-CA-jobs.html",
+   "s": "Browse 4,966 jobs in Chico, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Career Opportunities at Chico State",
+   "u": "https://www.csuchico.edu/about/job-opportunities.shtml",
+   "s": "The Associated Students is the center of the diverse co-curricular experience at Chico State. Employment opportunities are available for both career-seeking and"
+  },
+  {
+   "t": "Online Employment System - Chico State",
+   "u": "https://jobs.csuchico.edu/",
+   "s": "Search and apply for jobs at Chico State"
+  },
+  {
+   "t": "Jobs - Chico Marketplace",
+   "u": "https://www.shopchicomarketplace.com/jobs/",
+   "s": "Browse the fantastic jobs available at Chico Marketplace in [site_city], [site_state], and apply today! We hope to hear from you."
+  },
+  {
+   "t": "City of Chico - Human Resources",
+   "u": "https://chicoca.gov/Departments/Human-Resources--Risk-Management/Human-Resources/index.html",
+   "s": "The Human Resources Office coordinates the human resources and personnel of the City. This includes recruitment, testing, and hiring of new employees and manage"
+  },
+  {
+   "t": "Now Hiring: 4,000 Jobs in Chico, CA | Indeed",
+   "u": "https://www.indeed.com/l-Chico,-CA-jobs.html",
+   "s": "Browse 4,966 jobs in Chico, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Chico Jobs, Employment in Chico, CA | Indeed",
+   "u": "https://www.indeed.com/q-Chico-l-Chico,-CA-jobs.html",
+   "s": "633 Chico jobs available in Chico, CA on Indeed.com. Apply to Seasonal Associate, Retail Sales Associate, Barista and more!"
+  },
+  {
+   "t": "7,558 Chico, CA jobs - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/chico-jobs-SRCH_IL.0,5_IC1146608.htm",
+   "s": "Search jobs in Chico, CA. Get the right job in Chico with company ratings & salaries. 7,558 open jobs in Chico. Get hired!"
+  },
+  {
+   "t": "City of Chico - Careers",
+   "u": "https://chicoca.gov/Departments/Human-Resources--Risk-Management/Human-Resources/Careers/index.html",
+   "s": "Welcome to the City of Chico Human Resources careers page. Please use the following links to view current employment opportunities or sign up for a Job Interest"
+  },
+  {
+   "t": "Chico Jobs & Employment | ChicoJobs.com",
+   "u": "https://chicojobs.com/",
+   "s": "Chico jobs are waiting for you. Find jobs in Chico . We are your employment and hiring solution. Find a job, post a job in Chico ."
+  },
+  {
+   "t": "Chico Jobs in Chico (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/chico-jobs-chico-ca",
+   "s": "Today's top 1,000+ Chico jobs in Chico. Leverage your professional network, and get hired. New Chico jobs added daily."
+  },
+  {
+   "t": "846 Jobs jobs in Chico - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/jobs-in-chico-ca",
+   "s": "Today's top 846 Jobs jobs in Chico. Leverage your professional network, and get hired. New Jobs jobs added daily."
+  },
+  {
+   "t": "Jobs in Chico, CA | ChicoHelpWanted.com",
+   "u": "https://regionalhelpwanted.com/chico-jobs/?sn=85&d=summary&page=1",
+   "s": "Jobs, job search and local employment opportunities in Chico, CA. Post your resume and apply to jobs for free. Let the best local employers in Chico, CA find yo"
+  },
+  {
+   "t": "Now Hiring: 4,000 Jobs in Chico, CA | Indeed",
+   "u": "https://www.indeed.com/l-Chico,-CA-jobs.html",
+   "s": "Browse 4,966 jobs in Chico, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 200 Hiring Immediately * Jobs in Chico, CA | Indeed",
+   "u": "https://www.indeed.com/q-hiring-immediately-*-l-chico%2c-ca-jobs.html",
+   "s": "Browse 216 Hiring Immediately * jobs in Chico, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "City of Chico - Careers",
+   "u": "https://chicoca.gov/Departments/Human-Resources--Risk-Management/Human-Resources/Careers/index.html",
+   "s": "Welcome to the City of Chico Human Resources careers page. Please use the following links to view current employment opportunities or sign up for a Job Interest"
+  },
+  {
+   "t": "Jobs in Chico, CA | ChicoHelpWanted.com",
+   "u": "https://regionalhelpwanted.com/chico-jobs/?sn=85&d=summary&page=1",
+   "s": "Jobs, job search and local employment opportunities in Chico, CA. Post your resume and apply to jobs for free. Let the best local employers in Chico, CA find yo"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.knitwellgroup.com/chicos-fas",
+  "platform": "workday",
+  "title": "Learn About Chico&#x27;s FAS and Explore Our Careers"
+ },
+ "verdict": "marker_surface"
 }

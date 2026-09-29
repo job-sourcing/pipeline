@@ -2,10 +2,148 @@
  "brand": "Wetour Robotics",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:50:23.157Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:47:52.086Z",
+ "candidates": [
+  {
+   "url": "https://wetourrobotics.com/",
+   "title": "wetourrobotics",
+   "status": 200,
+   "bytes": 22670,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Wetour Robotics (NASDAQ: WETO) is building the Human Augmentation Platform. Humanics™ upgrades human capability while ensuring humans stay in control.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.datanyze.com/companies/wetour-robotics/5000717341",
+   "title": "",
+   "status": 200,
+   "bytes": 5508,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Find contact information for Wetour Robotics. Learn about their Engineering Software, Software market share, competitors, and Wetour Robotics's email format.",
+   "backend": "firecrawl"
+  },
+  {
+   "url": "https://apply.wetourrobotics.com/",
+   "title": "Orchestra Early Access — Wetour Robotics",
+   "status": 200,
+   "bytes": 19563,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Apply to the Orchestra Early Access Program by Wetour Robotics. Build the next layer of Physical AI with us.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Wetour Robotics - Human Augmentation Platform",
+   "u": "https://wetourrobotics.com/",
+   "s": "Wetour Robotics (NASDAQ: WETO) is building the Human Augmentation Platform. Humanics™ upgrades human capability while ensuring humans stay in control."
+  },
+  {
+   "t": "Wetour Robotics Limited Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/wetour-robotics-limited-jobs",
+   "s": "Today's top Wetour Robotics Limited jobs in United States. Leverage your professional network, and get hired. New Wetour Robotics Limited jobs added daily."
+  },
+  {
+   "t": "WETOUR ROBOTICS - LinkedIn",
+   "u": "https://www.linkedin.com/company/wetour-robotics",
+   "s": "Wetour Travel Tech LLC is the U.S. operating arm of Wetour Robotics (NASDAQ: WETO). Our R&D center in Austin, Texas is where Orchestra is conceived, designed, a"
+  },
+  {
+   "t": "Wetour Robotics Limited (WETO) Stock Price, News, Quote & History ...",
+   "u": "https://finance.yahoo.com/quote/WETO/",
+   "s": "Find the latest Wetour Robotics Limited (WETO) stock quote, history, news and other vital information to help you with your stock trading and investing."
+  },
+  {
+   "t": "Wetour Robotics Limited (WETO) - Yahoo Finance",
+   "u": "https://finance.yahoo.com/quote/WETO/profile/",
+   "s": "See the company profile for Wetour Robotics Limited (WETO) including business summary, industry/sector information, number of employees, business summary, corpo"
+  },
+  {
+   "t": "Wetour Robotics Company Profile | Management and Employees List - Datanyze",
+   "u": "https://www.datanyze.com/companies/wetour-robotics/5000717341",
+   "s": "Find contact information for Wetour Robotics. Learn about their Engineering Software, Software market share, competitors, and Wetour Robotics's email format."
+  },
+  {
+   "t": "Orchestra Early Access — Wetour Robotics",
+   "u": "https://apply.wetourrobotics.com/",
+   "s": "Apply to the Orchestra Early Access Program by Wetour Robotics. Build the next layer of Physical AI with us."
+  },
+  {
+   "t": "Machine Learning Engineer Intern - Career Center | University of Montana",
+   "u": "https://careerhub.umt.edu/jobs/113-machine-learning-engineer-intern/",
+   "s": "Machine Learning Engineer Intern | Bio-Signal Interaction Wetour Robotics | Austin, TX (Onsite) | Project-Based | Paid | Apr-May 2026 (application form linked b"
+  },
+  {
+   "t": "Wetour Robotics - Human Augmentation Platform",
+   "u": "https://wetourrobotics.com/",
+   "s": "Wetour Robotics (NASDAQ: WETO) is building the Human Augmentation Platform. Humanics™ upgrades human capability while ensuring humans stay in control."
+  },
+  {
+   "t": "768 Wetour Robotics Ltd. jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/wetour-robotics-ltd.-jobs",
+   "s": "Today's top 768 Wetour Robotics Ltd. jobs in United States. Leverage your professional network, and get hired. New Wetour Robotics Ltd. jobs added daily."
+  },
+  {
+   "t": "Wetour Robotics Limited Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/wetour-robotics-limited-jobs",
+   "s": "Today's top Wetour Robotics Limited jobs in United States. Leverage your professional network, and get hired. New Wetour Robotics Limited jobs added daily."
+  },
+  {
+   "t": "Orchestra Early Access — Wetour Robotics",
+   "u": "https://apply.wetourrobotics.com/",
+   "s": "Apply to the Orchestra Early Access Program by Wetour Robotics. Build the next layer of Physical AI with us."
+  },
+  {
+   "t": "Wetour Robotics Limited (WETO) - Yahoo Finance",
+   "u": "https://finance.yahoo.com/quote/WETO/profile/",
+   "s": "See the company profile for Wetour Robotics Limited (WETO) including business summary, industry/sector information, number of employees, business summary, corpo"
+  },
+  {
+   "t": "48,000 Robotics Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Robotics-jobs.html",
+   "s": "Today's top Robotics jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Machine Learning Engineer Intern - Career Center | University of Montana",
+   "u": "https://careerhub.umt.edu/jobs/113-machine-learning-engineer-intern/",
+   "s": "Machine Learning Engineer Intern | Bio-Signal Interaction Wetour Robotics | Austin, TX (Onsite) | Project-Based | Paid | Apr-May 2026 (application form linked b"
+  },
+  {
+   "t": "Wetour Robotics Limited Company Information - Simply Wall St",
+   "u": "https://simplywall.st/stocks/us/transportation/nasdaq-weto/wetour-robotics/information",
+   "s": "Learn more about Wetour Robotics Limited (WETO). From their employee growth over the years and their exchange listings."
+  },
+  {
+   "t": "768 Wetour Robotics Ltd. jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/wetour-robotics-ltd.-jobs",
+   "s": "Today's top 768 Wetour Robotics Ltd. jobs in United States. Leverage your professional network, and get hired. New Wetour Robotics Ltd. jobs added daily."
+  },
+  {
+   "t": "Wetour Robotics Limited Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/wetour-robotics-limited-jobs",
+   "s": "Today's top Wetour Robotics Limited jobs in United States. Leverage your professional network, and get hired. New Wetour Robotics Limited jobs added daily."
+  },
+  {
+   "t": "Wetour Robotics - Human Augmentation Platform",
+   "u": "https://wetourrobotics.com/",
+   "s": "Wetour Robotics (NASDAQ: WETO) is building the Human Augmentation Platform. Humanics™ upgrades human capability while ensuring humans stay in control."
+  },
+  {
+   "t": "Orchestra Early Access — Wetour Robotics",
+   "u": "https://apply.wetourrobotics.com/",
+   "s": "Apply to the Orchestra Early Access Program by Wetour Robotics. Build the next layer of Physical AI with us."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

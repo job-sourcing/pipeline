@@ -22,3 +22,15 @@ no_clear_surface | Vienna Hotels -> no_clear_surface
 custom_surface | Vivo -> custom
 skip (done) Wanda Group
 no_clear_surface | Yunnan People's Publishing House -> no_clear_surface
+custom_surface | China Netcom -> custom
+skip (done) Opera
+no_clear_surface | DDC Enterprise -> no_clear_surface
+marker_surface | Full Truck Alliance -> greenhouse
+no_clear_surface | Wetour Robotics -> no_clear_surface
+no_clear_surface | LZ Technology -> no_clear_surface
+custom_surface | Ascentage Pharma -> custom
+marker_surface | Call of Duty -> workday
+ats_surface | FWD Group -> workday:FWDcareersite
+skip (done) Lark
+custom_surface | Coconut Palm Group -> custom
+probe done for 35 records from probe_B

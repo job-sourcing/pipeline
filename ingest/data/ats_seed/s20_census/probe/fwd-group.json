@@ -2,10 +2,168 @@
  "brand": "FWD Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:51:44.027Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:51:54.577Z",
+ "candidates": [
+  {
+   "url": "https://fwd.wd3.myworkdayjobs.com/FWDcareersite",
+   "title": "",
+   "status": 200,
+   "bytes": 7024,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:FWDcareersite",
+   "score": 17,
+   "snippet": "FWD Group (1828.HK) is a pan-Asian life and health insurance business that serves approximately 40 million customers across 10 markets, including BRI Life in In",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://fwd.wd3.myworkdayjobs.com/en-US/FWDcareersite/job/Director--Product-Management_JR-0023912",
+   "title": "",
+   "status": 200,
+   "bytes": 23309,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 1,
+   "spec": "workday:en-US",
+   "score": 17,
+   "snippet": "The Group Platforms team operates across FWD Group to: Collaborate with functions to drive the design conceptualization and development of new business platform",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://careers.smartrecruiters.com/FWDus",
+   "title": "Careers at FWD.us",
+   "status": 200,
+   "bytes": 93840,
+   "markers": [
+    "smartrecruiters"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "smartrecruiters:FWDus",
+   "score": 17,
+   "snippet": "Careers at FWD.us. Find Great Talent with Career Pages. | powered by SmartRecruiters | <a href='https://www.smartrecruiters.com/product/career-website/' target ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join us | FWD Group",
+   "u": "https://www.fwd.com/en/join-us/",
+   "s": "Join FWD and explore career opportunities across Asia, from agent to corporate roles and internships—be part of a team changing the way people feel about insura"
+  },
+  {
+   "t": "FWD Careers",
+   "u": "https://fwd.wd3.myworkdayjobs.com/FWDcareersite",
+   "s": "FWD Group (1828.HK) is a pan-Asian life and health insurance business that serves approximately 40 million customers across 10 markets, including BRI Life in In"
+  },
+  {
+   "t": "Careers at FWD | FWD Insurance and Takaful",
+   "u": "https://www.fwd.com.my/careers/",
+   "s": "Working with FWD means access to a range of perks, benefits, and career development training. Let us know where you want to be and we'll do our best to get you "
+  },
+  {
+   "t": "FWD Careers",
+   "u": "https://fwd.wd3.myworkdayjobs.com/en-US/FWDcareersite/job/Director--Product-Management_JR-0023912",
+   "s": "The Group Platforms team operates across FWD Group to: Collaborate with functions to drive the design conceptualization and development of new business platform"
+  },
+  {
+   "t": "Careers at FWD.us",
+   "u": "https://careers.smartrecruiters.com/FWDus",
+   "s": "Careers at FWD.us. Find Great Talent with Career Pages. | powered by SmartRecruiters | <a href='https://www.smartrecruiters.com/product/career-website/' target "
+  },
+  {
+   "t": "Our internship programme | FWD Group",
+   "u": "https://www.fwd.com/en/join-us/our-internship-programme/",
+   "s": "Start your career with the FWD internship programme. Find out more."
+  },
+  {
+   "t": "FWD Insurance: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/fwd-insurance/jobs",
+   "s": "FWD Insurance | 163,698 followers on LinkedIn. We are #FWDInsurance, a leading pan-Asian insurer that is changing the way people feel about insurance | FWD Grou"
+  },
+  {
+   "t": "Careers - Find a job you love at FWD | FWD Thailand",
+   "u": "https://www.fwd.co.th/en/about-us/careers/",
+   "s": "We set ourselves apart as a challenger brand and operate a workspace that nurtures fearless innovation and big ideas. Be part of our team."
+  },
+  {
+   "t": "Join us | FWD Group",
+   "u": "https://www.fwd.com/en/join-us/",
+   "s": "Join FWD and explore career opportunities across Asia, from agent to corporate roles and internships—be part of a team changing the way people feel about insura"
+  },
+  {
+   "t": "FWD Careers",
+   "u": "https://fwd.wd3.myworkdayjobs.com/FWDcareersite",
+   "s": "FWD Group (1828.HK) is a pan-Asian life and health insurance business that serves approximately 40 million customers across 10 markets, including BRI Life in In"
+  },
+  {
+   "t": "FWD Group Management Holding Jobs & Careers - 74 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/FWD-Insurance-Jobs-E1109044.htm",
+   "s": "Search job openings at FWD Group Management Holding. 74 FWD Group Management Holding jobs including salaries, ratings, and reviews, posted by FWD Group Manageme"
+  },
+  {
+   "t": "Fwd Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-fwd-jobs.html",
+   "s": "FWD People is a full-service strategic marketing agency delivering meaningful and measurable results in the health and non-profit sectors. We take pride in bein"
+  },
+  {
+   "t": "Careers at FWD.us",
+   "u": "https://careers.smartrecruiters.com/FWDus",
+   "s": "Careers at FWD.us. Find Great Talent with Career Pages. | powered by SmartRecruiters | <a href='https://www.smartrecruiters.com/product/career-website/' target "
+  },
+  {
+   "t": "Careers at FWD | FWD Insurance and Takaful",
+   "u": "https://www.fwd.com.my/careers/",
+   "s": "Working with FWD means access to a range of perks, benefits, and career development training. Let us know where you want to be and we'll do our best to get you "
+  },
+  {
+   "t": "Careers at FWD People — Healthcare Marketing Jobs",
+   "u": "https://fwdpeople.com/careers",
+   "s": "Join a team that builds brands for healthcare and animal health companies. See open roles, benefits, and life at FWD People in Brooklyn, NY."
+  },
+  {
+   "t": "FWD Insurance: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/fwd-insurance/jobs",
+   "s": "FWD Insurance | 163,698 followers on LinkedIn. We are #FWDInsurance, a leading pan-Asian insurer that is changing the way people feel about insurance | FWD Grou"
+  },
+  {
+   "t": "Join us | FWD Group",
+   "u": "https://www.fwd.com/en/join-us/",
+   "s": "Join FWD and explore career opportunities across Asia, from agent to corporate roles and internships—be part of a team changing the way people feel about insura"
+  },
+  {
+   "t": "FWD Careers",
+   "u": "https://fwd.wd3.myworkdayjobs.com/FWDcareersite",
+   "s": "FWD Group (1828.HK) is a pan-Asian life and health insurance business that serves approximately 40 million customers across 10 markets, including BRI Life in In"
+  },
+  {
+   "t": "Careers at FWD | FWD Insurance and Takaful",
+   "u": "https://www.fwd.com.my/careers/",
+   "s": "Find a job you love and create the future you want Come and make a difference with us At FWD, we know that none of us are as smart as all of us - so together, w"
+  },
+  {
+   "t": "FWD Group Management Holding Jobs & Careers - 74 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/FWD-Insurance-Jobs-E1109044.htm",
+   "s": "Search job openings at FWD Group Management Holding. 74 FWD Group Management Holding jobs including salaries, ratings, and reviews, posted by FWD Group Manageme"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://fwd.wd3.myworkdayjobs.com/FWDcareersite",
+  "title": "",
+  "status": 200,
+  "bytes": 7024,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:FWDcareersite",
+  "score": 17,
+  "snippet": "FWD Group (1828.HK) is a pan-Asian life and health insurance business that serves approximately 40 million customers across 10 markets, including BRI Life in In",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

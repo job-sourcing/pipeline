@@ -2,10 +2,159 @@
  "brand": "Call of Duty",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:51:28.960Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:51:24.516Z",
+ "candidates": [
+  {
+   "url": "https://careers.activision.com/search-results?keywords=call%20of%20duty",
+   "title": "call of duty Search results | Find available job openings at Activision",
+   "status": 200,
+   "bytes": 93114,
+   "markers": [
+    "workday",
+    "phenom"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Game Security Analyst - Ricochet Anti-Cheat (Call of Duty) Join our team as a Game Security Analyst, where you will play a vital role in protecting the integrit",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.callofduty.com/hub?page=jobs",
+   "title": "Call of Duty® | Best-Selling Video Game Franchise",
+   "status": 200,
+   "bytes": 132733,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Pre-order Call of Duty: Modern Warfare 4 now.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.activision.com/",
+   "title": "Careers at Activision | Activision jobs",
+   "status": 200,
+   "bytes": 100621,
+   "markers": [
+    "workday",
+    "phenom"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, gender exp",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at Activision | Activision jobs",
+   "u": "https://careers.activision.com/",
+   "s": "All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, gender exp"
+  },
+  {
+   "t": "call of duty job openings at Activision",
+   "u": "https://careers.activision.com/search-results?keywords=call%20of%20duty",
+   "s": "Game Security Analyst - Ricochet Anti-Cheat (Call of Duty) Join our team as a Game Security Analyst, where you will play a vital role in protecting the integrit"
+  },
+  {
+   "t": "Careers at Activision Blizzard | Activision Blizzard Job Opportunities",
+   "u": "https://careers.activisionblizzard.com/",
+   "s": "Ready to launch your career in making epic entertainment? You've come to the right place. As an intern at Activision, Blizzard, or King, you'll work alongside s"
+  },
+  {
+   "t": "Military Veterans - Activision",
+   "u": "https://www.activision.com/careers/veterans",
+   "s": "Call of Duty Endowment The Call of Duty Endowment is a 501 (c) (3) nonprofit co-founded by our CEO, Bobby Kotick, and supported by Activision Blizzard and our e"
+  },
+  {
+   "t": "Now Hiring: 75 Call of Duty Esports Jobs | Indeed",
+   "u": "https://www.indeed.com/q-call-of-duty-esports-jobs.html",
+   "s": "Browse 90 Call of Duty Esports jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Activision: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/activision/jobs",
+   "s": "Home to iconic franchises like Call of Duty®, Crash Bandicoot™, and Tony Hawk's™ Pro Skater™, we're a global leader in interactive entertainment. Our goal?"
+  },
+  {
+   "t": "Now Hiring: 25 Call of Duty Activision Jobs | Indeed",
+   "u": "https://www.indeed.com/q-call-of-duty-activision-jobs.html",
+   "s": "Browse 32 Call of Duty Activision jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers at Raven Software | Raven Software jobs",
+   "u": "https://careers.ravensoftware.com/",
+   "s": "SEARCH JOBS Founded in 1990, Raven Software has gone from a five-person company with big dreams (and some pretty big expectations) to an industry leading, genre"
+  },
+  {
+   "t": "Careers at Activision | Activision jobs",
+   "u": "https://careers.activision.com/",
+   "s": "Recruitment Scam Advisory: We have seen a recent rise in recruitment scams and wanted to share some info to help you protect yourself during your job search wit"
+  },
+  {
+   "t": "call of duty job openings at Activision",
+   "u": "https://careers.activision.com/search-results?keywords=call%20of%20duty",
+   "s": "Game Security Analyst - Ricochet Anti-Cheat (Call of Duty) Join our team as a Game Security Analyst, where you will play a vital role in protecting the integrit"
+  },
+  {
+   "t": "Careers at Activision Blizzard | Activision Blizzard Job Opportunities",
+   "u": "https://careers.activisionblizzard.com/",
+   "s": "Careers at Activision Blizzard. Join us and help to connect and engage the world through epic entertainment."
+  },
+  {
+   "t": "472,000 Call of Duty Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Call-of-Duty-jobs.html",
+   "s": "472,213 Call of Duty jobs available on Indeed.com. Apply to Office Assistant, Customer Service Representative, Administrative Assistant and more!"
+  },
+  {
+   "t": "Now Hiring: 25 Call of Duty Activision Jobs | Indeed",
+   "u": "https://www.indeed.com/q-call-of-duty-activision-jobs.html",
+   "s": "Browse 32 Call of Duty Activision jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Activision Blizzard Jobs",
+   "u": "https://careers.activisionblizzard.com/search-results",
+   "s": "Your search results for the jobs at Blue tech migration.Find the available job openings and apply for the job which matches your skills."
+  },
+  {
+   "t": "Call of Duty® | Best-Selling Video Game Franchise",
+   "u": "https://www.callofduty.com/hub?page=jobs",
+   "s": "Pre-order Call of Duty: Modern Warfare 4 now."
+  },
+  {
+   "t": "Activision: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/activision/jobs",
+   "s": "Home to iconic franchises like Call of Duty®, Crash Bandicoot™, and Tony Hawk's™ Pro Skater™, we're a global leader in interactive entertainment. Our goal?"
+  },
+  {
+   "t": "Careers at Activision | Activision jobs",
+   "u": "https://careers.activision.com/",
+   "s": "All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, gender exp"
+  },
+  {
+   "t": "call of duty job openings at Activision",
+   "u": "https://careers.activision.com/search-results?keywords=call%20of%20duty",
+   "s": "Join our team as a Game Security Analyst, where you will play a vital role in protecting the integrity of the Call of Duty player experience by identifying and "
+  },
+  {
+   "t": "Now Hiring: 25 Call of Duty Activision Jobs | Indeed",
+   "u": "https://www.indeed.com/q-call-of-duty-activision-jobs.html",
+   "s": "Browse 32 Call of Duty Activision jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Activision Blizzard Call of Duty Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Activision-Blizzard-Call-of-Duty-jobs.html",
+   "s": "23 Activision Blizzard Call of Duty jobs available on Indeed.com. Apply to Intelligence Analyst, Site Reliability Engineer, Product Manager and more!"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.activision.com/search-results?keywords=call%20of%20duty",
+  "platform": "workday",
+  "title": "call of duty Search results | Find available job openings at Activision"
+ },
+ "verdict": "marker_surface"
 }

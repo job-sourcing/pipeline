@@ -2,10 +2,153 @@
  "brand": "Coconut Palm Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:52:07.338Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:52:37.740Z",
+ "candidates": [
+  {
+   "url": "https://www.coconutjobs.com/jobs-by-category",
+   "title": "Jobs by Positions | Coconut",
+   "status": 200,
+   "bytes": 34493,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Administrations Jobs (91) Assistant Club Manager Jobs (10) Assistant Door Manager Jobs (6) Assistant General Manager Jobs (57) Assistant Reservation Manager Job",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.coconutpalminn.com/careers",
+   "title": "Hospitality Careers – Coconut Palm Inn Key Largo",
+   "status": 200,
+   "bytes": 20064,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore hospitality career opportunities at Coconut Palm Inn and join our welcoming waterfront resort team in Key Largo.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.coconutjobs.com/search",
+   "title": "Coconut",
+   "status": 200,
+   "bytes": 121998,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find your dream hospitality job or build your dream team with Coconut, the global hub for top talent and opportunities.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "75 Coconut Palm Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Coconut-Palm-jobs.html",
+   "s": "96 Coconut Palm jobs. Apply to Restaurant Manager, Server, Dishwasher and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Jobs by Positions | Coconut",
+   "u": "https://www.coconutjobs.com/jobs-by-category",
+   "s": "Administrations Jobs (91) Assistant Club Manager Jobs (10) Assistant Door Manager Jobs (6) Assistant General Manager Jobs (57) Assistant Reservation Manager Job"
+  },
+  {
+   "t": "1 Coconut Palm jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/coconut-palm-jobs",
+   "s": "Today's top 1 Coconut Palm jobs in United States. Leverage your professional network, and get hired. New Coconut Palm jobs added daily."
+  },
+  {
+   "t": "Coconut Palm",
+   "u": "http://www.coconutpalm.com/en/",
+   "s": "Coconut Palm Group: the biggest enterprise to produce natural plant protein soft drinks in China Coconut Palm Group is a specialized company engaged in deeply p"
+  },
+  {
+   "t": "Coconut Palm",
+   "u": "http://www.coconutpalm.com/en/about.html",
+   "s": "Coconut Palm Group: the biggest enterprise to produce natural plant protein soft drinks in China Coconut Palm Group is a specialized company engaged in deeply p"
+  },
+  {
+   "t": "Hospitality Careers - Coconut Palm Inn Key Largo",
+   "u": "https://www.coconutpalminn.com/careers",
+   "s": "Explore hospitality career opportunities at Coconut Palm Inn and join our welcoming waterfront resort team in Key Largo."
+  },
+  {
+   "t": "Search Members - Coconut",
+   "u": "https://www.coconutjobs.com/search",
+   "s": "Find your dream hospitality job or build your dream team with Coconut, the global hub for top talent and opportunities."
+  },
+  {
+   "t": "Contact Us - HCI Group",
+   "u": "https://www.hcigroup.com/contact-us",
+   "s": "Contact Us Whether you have questions about our operations, or are interested in career opportunities, our team is ready to assist you."
+  },
+  {
+   "t": "75 Coconut Palm Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Coconut-Palm-jobs.html",
+   "s": "96 Coconut Palm jobs. Apply to Restaurant Manager, Server, Dishwasher and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "COTTON ON Careers Careers",
+   "u": "https://ekxm.fa.ap1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX",
+   "s": "All Jobs (419) New Jobs (257) Retail (263) Product (17) Customer (15) VM (10) Ecommerce/Digital (7) All Events (0)"
+  },
+  {
+   "t": "Jobs by Positions | Coconut",
+   "u": "https://www.coconutjobs.com/jobs-by-category",
+   "s": "Front Of The House Manager Jobs (14) General Manager Jobs (108)"
+  },
+  {
+   "t": "The Hospitality Recruitment Hub | Coconut",
+   "u": "https://www.coconutjobs.com/",
+   "s": "In fact, so many members of our team are resourced from Coconut, and with each candidate, we are experiencing a great deal of success. You make posting jobs rea"
+  },
+  {
+   "t": "Coconut Palm",
+   "u": "http://www.coconutpalm.com/en/",
+   "s": "Coconut Palm Group: the biggest enterprise to produce natural plant protein soft drinks in China Coconut Palm Group is a specialized company engaged in deeply p"
+  },
+  {
+   "t": "Coconut Palm",
+   "u": "http://www.coconutpalm.com/en/about.html",
+   "s": "Coconut Palm Group: the biggest enterprise to produce natural plant protein soft drinks in China Coconut Palm Group is a specialized company engaged in deeply p"
+  },
+  {
+   "t": "Coconut Jobs in Philippines - Sep 2026 | Jobstreet",
+   "u": "https://ph.jobstreet.com/coconut-jobs",
+   "s": "Find your ideal job on Jobstreet with 63 Coconut jobs (32 at Coconut) listed in Philippines. View all the Coconut vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Coconut Palm - yeshu",
+   "u": "http://www.yeshu.com/en/",
+   "s": "Coconut Palm Group: the biggest enterprise to produce natural plant protein soft drinks in China Coconut Palm Group is a specialized company engaged in deeply p"
+  },
+  {
+   "t": "75 Coconut Palm Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Coconut-Palm-jobs.html",
+   "s": "96 Coconut Palm jobs. Apply to Restaurant Manager, Server, Dishwasher and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Coconut Jobs, Hiring in Philippines - Sep 2026 | Jobstreet",
+   "u": "https://ph.jobstreet.com/coconut-jobs/in-Philippines",
+   "s": "Find your ideal job on Jobstreet with 58 Coconut jobs (28 at Coconut) listed in Philippines. View all the Coconut vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Hiring Coconut Jobs | Indeed",
+   "u": "https://ph.indeed.com/q-coconut-jobs.html",
+   "s": "Apply to Coconut jobs available on Indeed.com, the worlds largest job site."
+  },
+  {
+   "t": "Search Members - Coconut",
+   "u": "https://www.coconutjobs.com/search",
+   "s": "Find your dream hospitality job or build your dream team with Coconut, the global hub for top talent and opportunities."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.coconutjobs.com/jobs-by-category",
+  "platform": "custom",
+  "title": "Jobs by Positions | Coconut"
+ },
+ "verdict": "custom_surface"
 }
