@@ -2,10 +2,166 @@
  "brand": "Little Sheep",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:40:24.218Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:23:18.864Z",
+ "candidates": [
+  {
+   "url": "https://ilitch.wd5.myworkdayjobs.com/Ilitch-Sports-Entertainment",
+   "title": "",
+   "status": 200,
+   "bytes": 8562,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:Ilitch-Sports-Entertainment",
+   "score": 12,
+   "snippet": "Ilitch Companies and our colleagues are committed to being the best in all that we do - whether it's providing a delicious, quality meal from Little Caesars, de",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.instagram.com/little_sheep_careers/",
+   "title": "Instagram",
+   "status": 200,
+   "bytes": 643303,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "8 Followers, 0 Following, 2 Posts - See Instagram photos and videos from Little Sheep Careers (@little_sheep_careers)",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.littlesheepcentre.ca/careers",
+   "title": "Careers | Join Our Team - Inspire Young Minds &mdash; LITTLE SHEEP",
+   "status": 200,
+   "bytes": 300877,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Little Sheep's team of passionate, faith-driven early childhood educators. Grow professionally while nurturing children in a Christ-centered environment.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Little Sheep Careers (@little_sheep_careers) - Instagram",
+   "u": "https://www.instagram.com/little_sheep_careers/",
+   "s": "8 Followers, 0 Following, 2 Posts - See Instagram photos and videos from Little Sheep Careers (@little_sheep_careers)"
+  },
+  {
+   "t": "Careers | Join Our Team - Inspire Young Minds — LITTLE SHEEP",
+   "u": "https://www.littlesheepcentre.ca/careers",
+   "s": "Join Little Sheep's team of passionate, faith-driven early childhood educators. Grow professionally while nurturing children in a Christ-centered environment."
+  },
+  {
+   "t": "Little Sheep International Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Little-Sheep-International",
+   "s": "Find out what works well at Little Sheep International from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insi"
+  },
+  {
+   "t": "Little Sheep Mongolian Hotpot Careers and Employment",
+   "u": "https://www.indeed.com/cmp/Little-Sheep-Mongolian-Hotpot",
+   "s": "Find out what works well at Little Sheep Mongolian Hotpot from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO i"
+  },
+  {
+   "t": "Little Sheep Group Limited - LinkedIn",
+   "u": "https://www.linkedin.com/company/little-sheep-group-limited",
+   "s": "Little Sheep Group Limited | 55 followers on LinkedIn. Largest hotpot restaurant chain in China"
+  },
+  {
+   "t": "LOCATIONSLOCATION",
+   "u": "http://www.littlesheep.com/enfranchise/Locations/Index",
+   "s": "LOCATIONSLOCATION Indonesia Jakarta Apartment Complex, Green Central City, Jl. Gajah Mada No.188, Glodok, Kec. Taman Sari, Kota Jakarta Barat, Daerah Khusus Ibu"
+  },
+  {
+   "t": "1,000+ Little Sheep Day Care jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/little-sheep-day-care-jobs",
+   "s": "Today's top 1,000+ Little Sheep Day Care jobs in United States. Leverage your professional network, and get hired. New Little Sheep Day Care jobs added daily."
+  },
+  {
+   "t": "HOME | Little Sheep Hot Pot & Bar",
+   "u": "https://www.littlesheepusa.com/",
+   "s": "Located at the American Dream, Little Sheep Hot Pot & Bar offers the highest quality ingredients and service in a fine dining setting. We are proud to serve del"
+  },
+  {
+   "t": "Naughty Sheep | Little People | Wildbrain Little Jobs - YouTube",
+   "u": "https://www.youtube.com/watch?v=zDiWe-KXNBM",
+   "s": "Welcome to Little Jobs! Click here for more videos just like this one: • Brand New Videos! 🆕 WildBrain Little Jobs WildBrain creates and broadcasts video enter"
+  },
+  {
+   "t": "470Chinese Mecha Animation Little Sheep Villain Character Design ...",
+   "u": "https://www.linkedin.com/jobs/chinese-mecha-animation-little-sheep-villain-character-design-overseas-official-release-jobs",
+   "s": "Today's top 470 Chinese Mecha Animation Little Sheep Villain Character Design Overseas Official Release jobs in United States. Leverage your professional networ"
+  },
+  {
+   "t": "Sheep Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Sheep-Job-jobs.html",
+   "s": "Todays top {1} jobs. New openings added daily. Apply now and find your next opportunity on {3}"
+  },
+  {
+   "t": "25 Little Shepherd Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Little-Shepherd-jobs.html",
+   "s": "Browse 49 Little Shepherd jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Urgent! Sheep farm jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-sheep-farm",
+   "s": "Active 14235 vacancies • Sheep farm jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Sheep farm jobs in USA and ab"
+  },
+  {
+   "t": "Playing with Baa Baa Black Sheep | Job and Careers | Little ... - YouTube",
+   "u": "https://www.youtube.com/watch?v=DzpMp1yuLB8",
+   "s": "The sheep needs to have his summer cut done, but is he ready? Baa baa goes the little black sheep, running away with all that wool! How many bags of wool do ..."
+  },
+  {
+   "t": "Carolyn on Instagram: \"A little mini vlog of a day of sheep jobs on the ...",
+   "u": "https://www.instagram.com/reel/DdzTBvOocns/",
+   "s": "21 likes, 3 comments - carolynscountrylife on September 27, 2026: \"A little mini vlog of a day of sheep jobs on the farm 🐑 Every day is different on the farm a"
+  },
+  {
+   "t": "Sheep / Goat Ranch Jobs - RanchWork.com",
+   "u": "https://www.ranchwork.com/jcategory/sheep-ranch-jobs/",
+   "s": "Sheep / Goat Ranch Jobs Assistant Livestock Manager needed in southern New York Glynwood Center for Regional Food and Farming Cold Spring, NY"
+  },
+  {
+   "t": "1,000+ Little Sheep Day Care jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/little-sheep-day-care-jobs",
+   "s": "Today's top 1,000+ Little Sheep Day Care jobs in United States. Leverage your professional network, and get hired. New Little Sheep Day Care jobs added daily."
+  },
+  {
+   "t": "Little Sheep Hot Pot Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Little-Sheep-Hot-Pot",
+   "s": "Find out what works well at Little Sheep Hot Pot from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
+  },
+  {
+   "t": "600 Sheep Farm Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Sheep-Farm-jobs.html",
+   "s": "659 Sheep Farm jobs available on Indeed.com. Apply to Veterinary Assistant, Animal Caretaker, Natural Resource Technician and more!"
+  },
+  {
+   "t": "Urgent! Sheep farm jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-sheep-farm",
+   "s": "Active 14235 vacancies • Sheep farm jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Sheep farm jobs in USA and ab"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://ilitch.wd5.myworkdayjobs.com/Ilitch-Sports-Entertainment",
+  "title": "",
+  "status": 200,
+  "bytes": 8562,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:Ilitch-Sports-Entertainment",
+  "score": 12,
+  "snippet": "Ilitch Companies and our colleagues are committed to being the best in all that we do - whether it's providing a delicious, quality meal from Little Caesars, de",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

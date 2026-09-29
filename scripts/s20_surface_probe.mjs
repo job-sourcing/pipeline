@@ -17,7 +17,10 @@ import { searchWeb } from './s20_kit_search.mjs'
 import { execFile } from 'node:child_process'
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 
-const DIR = '/home/z/job-sourcing-research/ingest/data/ats_seed/s20_census'
+import { fileURLToPath } from 'node:url'
+import { dirname, join } from 'node:path'
+const REPO = join(dirname(dirname(fileURLToPath(import.meta.url))), '')
+const DIR = join(REPO, 'ingest/data/ats_seed/s20_census')
 const QUEUE = `${DIR}/s20_queue.json`
 const PROBE = `${DIR}/probe`
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
@@ -173,7 +176,7 @@ async function fetchPage (url, timeoutMs = 15000) {
 /** kit-backed page fetch: used when direct fetch fails (status 0/403/429/
  *  503, tiny body, or CF-challenge markers) — supabase rotating AWS IP
  *  first, zenrows antibot for hard CF (the BeOne class). */
-const KIT_BIN = '/home/z/job-sourcing-research/tools/agent-fetch-kit/bin/wfetch'
+const KIT_BIN = join(REPO, 'tools/agent-fetch-kit/bin/wfetch')
 async function fetchPageKit (url, { antibot = false } = {}) {
   const args = [KIT_BIN, url, '--out', '/tmp/s20p_kit.body', '--json', '--timeout', '40']
   if (antibot) args.push('--antibot')

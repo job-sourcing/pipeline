@@ -2,10 +2,153 @@
  "brand": "LJ Air",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:40:42.969Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:23:52.819Z",
+ "candidates": [
+  {
+   "url": "https://au.jora.com/Lj-Air-jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 12795,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "View 5 Lj Air jobs at Jora, create free email alerts and never miss another career opportunity again.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.allegiantair.jobs/jobs/",
+   "title": "Jobs | Allegiant Air",
+   "status": 200,
+   "bytes": 98380,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Explore job opportunities at Allegiant Air, a low-cost airline, and apply online for various roles including pilots, flight attendants, and ground staff.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://ljinc.applicantpro.com/jobs/",
+   "title": "Job Listings - LJ Inc. Jobs",
+   "status": 200,
+   "bytes": 17080,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "See current career opportunities that are available at LJ Inc.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "LJ Air Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Lj-Air",
+   "s": "Find out what works well at LJ Air from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "LJ AVIATION Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Lj-Aviation",
+   "s": "Find out what works well at LJ AVIATION from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare p"
+  },
+  {
+   "t": "Lufthansa Group Careers",
+   "u": "https://lufthansagroup.careers/en",
+   "s": "Über die Lufthansa Group. Wir überbrücken Distanzen und bringen die Welt näher zusammen. Wir verbinden Menschen, Märkte und Kulturen und geben unserer Arbeit da"
+  },
+  {
+   "t": "Job Listings - LJ Inc. Jobs - ApplicantPro",
+   "u": "https://ljinc.applicantpro.com/jobs/",
+   "s": "See current career opportunities that are available at LJ Inc."
+  },
+  {
+   "t": "Careers - L.J. Aviation",
+   "u": "https://www.ljaviation.com/careers/",
+   "s": "We offer competitive salaries, hiring bonuses commensurate to experience as well as fully-funded pension plans and health benefits. For more information or empl"
+  },
+  {
+   "t": "Careers at Royal Jordanian",
+   "u": "https://careers.royaljordanian.com/",
+   "s": "Careers at Royal Jordanian We are dedicated to delivering excellence and innovation to our clients, seeking the same qualities in our team members. Our HR depar"
+  },
+  {
+   "t": "Explore Lufthansa Group Careers in the USA",
+   "u": "https://the-americas.lufthansagroup.careers/",
+   "s": "Ready to elevate your career? Explore rewarding jobs with Lufthansa Group in the USA. Be part of a team revolutionizing the aviation industry."
+  },
+  {
+   "t": "5 jobs - Lj Air - Jora",
+   "u": "https://au.jora.com/Lj-Air-jobs",
+   "s": "View 5 Lj Air jobs at Jora, create free email alerts and never miss another career opportunity again."
+  },
+  {
+   "t": "LJ Air Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Lj-Air",
+   "s": "Find out what works well at LJ Air from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Careers at Royal Jordanian",
+   "u": "https://careers.royaljordanian.com/",
+   "s": "Careers at Royal Jordanian We are dedicated to delivering excellence and innovation to our clients, seeking the same qualities in our team members. Our HR depar"
+  },
+  {
+   "t": "LJ AVIATION Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Lj-Aviation",
+   "s": "Find out what works well at LJ AVIATION from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare p"
+  },
+  {
+   "t": "Job Listings - LJ Inc. Jobs - ApplicantPro",
+   "u": "https://ljinc.applicantpro.com/jobs/",
+   "s": "See current career opportunities that are available at LJ Inc."
+  },
+  {
+   "t": "5 jobs - Lj Air - Jora",
+   "u": "https://au.jora.com/Lj-Air-jobs",
+   "s": "View 5 Lj Air jobs at Jora, create free email alerts and never miss another career opportunity again."
+  },
+  {
+   "t": "Jobs | Allegiant Air",
+   "u": "https://www.allegiantair.jobs/jobs/",
+   "s": "Explore job opportunities at Allegiant Air, a low-cost airline, and apply online for various roles including pilots, flight attendants, and ground staff."
+  },
+  {
+   "t": "Lufthansa Group Careers",
+   "u": "https://lufthansagroup.careers/en",
+   "s": "Über die Lufthansa Group. Wir überbrücken Distanzen und bringen die Welt näher zusammen. Wir verbinden Menschen, Märkte und Kulturen und geben unserer Arbeit da"
+  },
+  {
+   "t": "LJ Jobs & Careers - 22 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/LJ-Jobs-E4446658.htm",
+   "s": "Is LJ currently hiring? Yes, LJ is currently hiring for 22 open positions in the United States. Use Glassdoor to find and apply for a job that loves you back. T"
+  },
+  {
+   "t": "LJ Air Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Lj-Air",
+   "s": "Find out what works well at LJ Air from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Careers at Royal Jordanian",
+   "u": "https://careers.royaljordanian.com/",
+   "s": "Careers at Royal Jordanian We are dedicated to delivering excellence and innovation to our clients, seeking the same qualities in our team members. Our HR depar"
+  },
+  {
+   "t": "Careers - L.J. Aviation",
+   "u": "https://www.ljaviation.com/careers/",
+   "s": "We offer competitive salaries, hiring bonuses commensurate to experience as well as fully-funded pension plans and health benefits. For more information or empl"
+  },
+  {
+   "t": "ljhorizons.careers-page.com",
+   "u": "https://ljhorizons.careers-page.com/",
+   "s": "Unleash your potential on an irresistible career journey with captivating pathways, unparalleled mentorship, and a dynamic, innovative environment. Don't miss t"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.allegiantair.jobs/jobs/",
+  "platform": "custom",
+  "title": "Jobs | Allegiant Air"
+ },
+ "verdict": "custom_surface"
 }

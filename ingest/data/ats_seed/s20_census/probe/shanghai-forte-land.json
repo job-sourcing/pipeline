@@ -2,19 +2,21 @@
  "brand": "Shanghai Forte Land",
  "tier": "lca",
  "lca": "FORTE CONSTRUCTION CORP",
- "ts": "2026-09-27T07:31:51.597Z",
+ "ts": "2026-09-29T04:26:25.573Z",
  "candidates": [
   {
-   "url": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
-   "title": "301 Jobs in Shanghai, Shanghai | Randstad",
+   "url": "https://careers-apply.fortescue.com/job/Shanghai-Quality-Lead-China-Operations-SH/1367016066/",
+   "title": "Quality Lead - China Operations Job Details | fmgl",
    "status": 200,
-   "bytes": 644568,
-   "markers": [],
+   "bytes": 94508,
+   "markers": [
+    "successfactors"
+   ],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "Browse 301 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals.",
-   "backend": "supabase"
+   "snippet": "Internal Candidates / Current Contractors please apply via Success Factors Careers Portal. For further information on how to apply please visit the Fortescue Hu",
+   "backend": "direct"
   },
   {
    "url": "https://www.isacjobs.com/job-location/shanghai/",
@@ -30,20 +32,60 @@
    "cf_challenge": true
   },
   {
-   "url": "https://www.smartshanghai.com/jobs/",
-   "title": "Work in Shanghai | SmartShanghai",
+   "url": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
+   "title": "299 Jobs in Shanghai, Shanghai | Randstad",
    "status": 200,
-   "bytes": 75238,
+   "bytes": 644333,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "Work in Shanghai Jobs, gigs, co-working, and visa basics — a smarter guide to working in Shanghai. List Your Job Curated by humans who live here — not AI.",
-   "backend": "direct"
+   "snippet": "Browse 299 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals.",
+   "backend": "supabase"
   }
  ],
  "results": [
   {
+   "t": "Shanghai Forte Land Karriere: Arbeiten bei Shanghai Forte Land",
+   "u": "https://www.glassdoor.de/%C3%9Cberblick/Arbeit-bei-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "Glassdoor bietet Insider-Infos über die Arbeit bei Shanghai Forte Land, inklusive Gehälter, Bewertungen, Fotos und vieles mehr. Dies ist das Profil von Shanghai"
+  },
+  {
+   "t": "FORTE复地_复地产发集团",
+   "u": "https://www.forte.com.cn/",
+   "s": "驱动城市更新 打造线下时尚地标和城市文化名片 复悦置地 领先的产城融合与 幸福场景智造商 复悦商管 领先的商业资产管理 ..."
+  },
+  {
+   "t": "Careers at Fortescue",
+   "u": "https://careers.fortescue.com/",
+   "s": "Explore open jobs and sign up to our talent community to be notified about future roles at Fortescue."
+  },
+  {
+   "t": "Shanghai Forte Land Career: Working at Shanghai Forte Land",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "Glassdoor gives you an inside look at what it's like to work at Shanghai Forte Land, including salaries, reviews, office photos and more. This is the Shanghai F"
+  },
+  {
+   "t": "Working at Shanghai Forte Land | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
+   "s": "Glassdoor gives you an inside look at what it's like to work at Shanghai Forte Land, including salaries, reviews, office photos, and more. This is the Shanghai "
+  },
+  {
+   "t": "Quality Lead - China Operations Job Details | fmgl",
+   "u": "https://careers-apply.fortescue.com/job/Shanghai-Quality-Lead-China-Operations-SH/1367016066/",
+   "s": "Internal Candidates / Current Contractors please apply via Success Factors Careers Portal. For further information on how to apply please visit the Fortescue Hu"
+  },
+  {
+   "t": "Jobs at Fortescue",
+   "u": "https://careers-apply.fortescue.com/",
+   "s": "Follow this link to reach our Job Search page to search for available jobs in a more accessible format."
+  },
+  {
+   "t": "Open Positions | Forte Group",
+   "u": "https://fortegroup.my.site.com/jobs/s/?keyword",
+   "s": "Choose Forte Group to take the next step in your career: Internal Growth: 60% of our managers built their careers right here at Forte Group. AI-First Mindset: 1"
+  },
+  {
    "t": "Working at Shanghai Forte Land | Glassdoor",
    "u": "https://www.glassdoor.com/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
    "s": "See what employees say it's like to work at Shanghai Forte Land. Salaries, reviews, and more - all posted by employees working at Shanghai Forte Land."
@@ -54,49 +96,14 @@
    "s": "Shanghai Forte Land develops and sells residential properties. Serving the mass residential property market in Shanghai, the company also other real estate serv"
   },
   {
-   "t": "FORTE复地_复地产发集团",
-   "u": "https://www.forte.com.cn/",
-   "s": "驱动城市更新 打造线下时尚地标和城市文化名片 复悦置地 领先的产城融合与 幸福场景智造商 复悦商管 领先的商业资产管理 ..."
-  },
-  {
-   "t": "Careers",
-   "u": "https://www.forteholdings.com/careers.php",
-   "s": "Careers You're a creative problem solver with a passion for innovation. Join our team and revolutionize the way the industry does business. We hire exceptional "
-  },
-  {
-   "t": "forte.careers",
-   "u": "http://forte.careers/",
-   "s": "forte.careers"
-  },
-  {
-   "t": "Careers | Explore Open Roles | Forte Group",
-   "u": "https://www.fortegrp.com/company/careers",
-   "s": "Today, Forte Group brings together engineers, strategists, and creators from around the world to solve complex challenges with modern tech. We cultivate a cultu"
-  },
-  {
-   "t": "复地 (集团)股份有限公司 | LinkedIn",
-   "u": "https://www.linkedin.com/company/%E5%A4%8D%E5%9C%B0-%E9%9B%86%E5%9B%A2-%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
-   "s": "复地 (集团)股份有限公司 is a real estate company based out of 上海市普陀区曹杨路510号9楼, 上海市, 上海市, China."
-  },
-  {
-   "t": "www.forteglobal.com",
-   "u": "https://www.forteglobal.com/careers",
-   "s": "www.forteglobal.com"
-  },
-  {
-   "t": "Working at Shanghai Forte Land | Glassdoor",
-   "u": "https://www.glassdoor.com/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
-   "s": "See what employees say it's like to work at Shanghai Forte Land. Salaries, reviews, and more - all posted by employees working at Shanghai Forte Land."
+   "t": "Careers at Fortrea | Fortrea Jobs",
+   "u": "https://careers.fortrea.com/",
+   "s": "Search Jobs At Fortrea, your career is more than just a job - it's a journey of innovation, impact, and purpose. Every day, you'll help advance life-saving ther"
   },
   {
    "t": "FORTE复地_复地产发集团",
    "u": "https://www.forte.com.cn/",
    "s": "驱动城市更新 打造线下时尚地标和城市文化名片 复悦置地 领先的产城融合与 幸福场景智造商 复悦商管 领先的商业资产管理 ..."
-  },
-  {
-   "t": "Shanghai Forte Land Career: Working at Shanghai Forte Land",
-   "u": "https://www.glassdoor.co.uk/Overview/Working-at-Shanghai-Forte-Land-EI_IE40710.11,30.htm",
-   "s": "Shanghai Forte Land develops and sells residential properties. Serving the mass residential property market in Shanghai, the company also other real estate serv"
   },
   {
    "t": "What is Shanghai Forte Land? Company Culture, Mission, Values",
@@ -104,14 +111,9 @@
    "s": "Shanghai Forte Land develops and sells residential properties. Serving the mass residential property market in Shanghai, the company also other real estate serv"
   },
   {
-   "t": "301 Jobs in Shanghai, Shanghai | Randstad",
-   "u": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
-   "s": "Browse 301 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals."
-  },
-  {
-   "t": "Jobs in Shanghai - China Foreigner Jobs",
-   "u": "https://www.isacjobs.com/job-location/shanghai/",
-   "s": "Browse the latest jobs in Shanghai for foreigners, including teaching and company jobs for international jobseekers."
+   "t": "Shanghai Forte Land pay and benefits | Glassdoor | Glassdoor",
+   "u": "https://www.glassdoor.com.hk/pay-and-benefits/Shanghai-Forte-Land-E40710",
+   "s": "Get data insights into total compensation, benefits, perks and rewards for working at Shanghai Forte Land through real anonymous employees."
   },
   {
    "t": "Open Positions | Forte Group",
@@ -119,9 +121,9 @@
    "s": "Empowering Individuals and Teams for Maximum Impact We believe in collaboration, autonomy, trust, and well-being to foster a transparent and supportive environm"
   },
   {
-   "t": "Shanghai Forte Land pay and benefits | Glassdoor | Glassdoor",
-   "u": "https://www.glassdoor.com.hk/pay-and-benefits/Shanghai-Forte-Land-E40710",
-   "s": "Get data insights into total compensation, benefits, perks and rewards for working at Shanghai Forte Land through real anonymous employees."
+   "t": "Job Search - General Dynamics",
+   "u": "https://www.gd.com/careers/job-search",
+   "s": "Job Search Use the search tool below to find opportunities that match your background and interests. You can search multiple locations and job categories by pre"
   },
   {
    "t": "Shanghai Forte Land Career: Working at Shanghai Forte Land",
@@ -134,17 +136,22 @@
    "s": "See what employees say it's like to work at Shanghai Forte Land. Salaries, reviews, and more - all posted by employees working at Shanghai Forte Land."
   },
   {
-   "t": "301 Jobs in Shanghai, Shanghai | Randstad",
-   "u": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
-   "s": "Browse 301 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals."
+   "t": "Jobs in Shanghai - China Foreigner Jobs",
+   "u": "https://www.isacjobs.com/job-location/shanghai/",
+   "s": "Browse the latest jobs in Shanghai for foreigners, including teaching and company jobs for international jobseekers."
   },
   {
-   "t": "Careers | Explore Open Roles | Forte Group",
-   "u": "https://www.fortegrp.com/company/careers",
-   "s": "No matter where you are in your career journey, you'll find room to grow, contribute, and make a real difference."
+   "t": "299 Jobs in Shanghai, Shanghai | Randstad",
+   "u": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
+   "s": "Browse 299 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals."
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://careers-apply.fortescue.com/job/Shanghai-Quality-Lead-China-Operations-SH/1367016066/",
+  "platform": "successfactors",
+  "title": "Quality Lead - China Operations Job Details | fmgl"
+ },
+ "verdict": "marker_surface"
 }

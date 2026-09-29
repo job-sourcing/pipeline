@@ -2,105 +2,95 @@
  "brand": "SG Automotive",
  "tier": "lca",
  "lca": "SG AMERICAS OPERATIONAL SERVICES, LLC",
- "ts": "2026-09-27T07:27:23.765Z",
+ "ts": "2026-09-29T04:21:46.374Z",
  "candidates": [
   {
    "url": "https://www.foundit.sg/search/automotive-jobs",
-   "title": "",
-   "status": 200,
-   "bytes": 24077,
+   "title": "Access Denied",
+   "status": 403,
+   "bytes": 396,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "Find 4427 Automotive Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportunities in your pr",
-   "backend": "zenrows"
+   "snippet": "Find 4222 Automotive Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportunities in your pr",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.foundit.sg/search/automotive-automobile-jobs",
+   "title": "Access Denied",
+   "status": 403,
+   "bytes": 411,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find 125069 Automotive Automobile Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportuniti",
+   "backend": "direct"
   },
   {
    "url": "https://jobcube.sg/Automotive-jobs-in-Singapore",
    "title": "",
    "status": 200,
-   "bytes": 236586,
+   "bytes": 239239,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "4,605 Automotive jobs in Singapore are available today on Jobcube. View job details and find your next opportunity now!",
    "backend": "direct"
-  },
-  {
-   "url": "https://www.foundit.sg/search/automotive-automobile-jobs",
-   "title": "",
-   "status": 200,
-   "bytes": 23696,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 7,
-   "snippet": "Find 138194 Automotive Automobile Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportuniti",
-   "backend": "zenrows"
   }
  ],
  "results": [
   {
-   "t": "Automotive Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
-   "u": "https://sg.jobstreet.com/automotive-jobs",
-   "s": "Find your ideal job at Jobstreet with 1166 Automotive jobs found in Singapore. View all our Automotive vacancies now with new jobs added daily!"
+   "t": "Working with us - SG Automotive",
+   "u": "https://www.sgautomotive.gr/working-with-us/",
+   "s": "Explore career opportunities at SG Automotive. Join a team representing Citroën, Peugeot, Opel, Mazda, MG & DS with growth and development prospects."
   },
   {
-   "t": "Sg Automotive Jobs in Singapore (with Salaries) - Jobstreet",
-   "u": "https://sg.jobstreet.com/sg-automotive-jobs",
-   "s": "Find your ideal job at Jobstreet with 61 Sg Automotive jobs found in Singapore. View all our Sg Automotive vacancies now with new jobs added daily!"
-  },
-  {
-   "t": "4427 Automotive Jobs in Singapore: Latest Automotive Jobs Vacancies 26 ...",
-   "u": "https://www.foundit.sg/search/automotive-jobs",
-   "s": "Find 4427 Automotive Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportunities in your pr"
-  },
-  {
-   "t": "Automotive Jobs in Singapore - NOW HIRING | Jobcube",
-   "u": "https://jobcube.sg/Automotive-jobs-in-Singapore",
-   "s": "4,605 Automotive jobs in Singapore are available today on Jobcube. View job details and find your next opportunity now!"
-  },
-  {
-   "t": "6,000+ Automotive jobs in Singapore - LinkedIn",
-   "u": "https://sg.linkedin.com/jobs/automotive-jobs",
-   "s": "Today's top 6,000+ Automotive jobs in Singapore. Leverage your professional network, and get hired. New Automotive jobs added daily."
-  },
-  {
-   "t": "Careers - SCW Automotive Singapore",
-   "u": "https://scw.com.sg/careers/",
-   "s": "careers Our drive & motivation at SCW Automotive Are you looking for diverse, exciting and new challenges? Every day, our vehicles save lives all over Asia. In "
-  },
-  {
-   "t": "138194 Automotive Automobile Jobs in Singapore: Latest Automotive ...",
-   "u": "https://www.foundit.sg/search/automotive-automobile-jobs",
-   "s": "Find 138194 Automotive Automobile Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportuniti"
-  },
-  {
-   "t": "Automotive jobs in Singapore - Indeed",
-   "u": "https://sg.indeed.com/Automotive-jobs-in-Singapore",
-   "s": "458 Automotive jobs available in Singapore on Indeed.com. Apply to Process Technician, Country Manager, Manager of Business Development and more!"
+   "t": "Automotive Electronics & Mechatronic Systems - SG Automotive",
+   "u": "https://sga.si/",
+   "s": "SG Automotive develops and manufactures automotive-grade electronics, integrated mechatronic systems and complete box-build solutions for global industries."
   },
   {
    "t": "Automotive Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
    "u": "https://sg.jobstreet.com/automotive-jobs",
-   "s": "Find your ideal job at Jobstreet with 1166 Automotive jobs found in Singapore. View all our Automotive vacancies now with new jobs added daily!"
+   "s": "Find your ideal job at Jobstreet with 1174 Automotive jobs found in Singapore. View all our Automotive vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Jobs at SEG Automotive, a supplier of powertrain components",
+   "u": "https://www.seg-automotive.com/career/career-application-platform/",
+   "s": "Apply for our jobs and become one of the more than 7,000 employees in 14 countries worldwide. Apply now!"
   },
   {
    "t": "Automotive Jobs in Singapore - Sep 2026 | Jobstreet",
    "u": "https://sg.jobstreet.com/automotive-jobs/in-Singapore",
-   "s": "Find your ideal job at Jobstreet with 1181 Automotive jobs found in Singapore. View all our Automotive vacancies now with new jobs added daily!"
+   "s": "Find your ideal job at Jobstreet with 1165 Automotive jobs found in Singapore. View all our Automotive vacancies now with new jobs added daily!"
   },
   {
-   "t": "4427 Automotive Jobs in Singapore: Latest Automotive Jobs Vacancies 26 ...",
-   "u": "https://www.foundit.sg/search/automotive-jobs",
-   "s": "Find 4427 Automotive Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportunities in your pr"
+   "t": "Our People - SG Automotive",
+   "u": "https://www.sgautomotive.gr/human-resources/",
+   "s": "Human Resources at SG Automotive: our people-first culture, internal mobility, training programs and commitment to career development."
   },
   {
-   "t": "Urgent! Automotive industry jobs in Singapore - September 2026 - 41150 ...",
-   "u": "https://sg.jooble.org/jobs-automotive-industry/Singapore",
-   "s": "Search and apply for the latest Automotive industry jobs in Singapore. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job ema"
+   "t": "Incheon Careers - Facebook",
+   "u": "https://www.facebook.com/IncheonCareers/",
+   "s": "Incheon Careers. 6,791 likes · 5 talking about this. Incheon is looking for passionate, self- driven people who are ready to build the future of automobiles wit"
+  },
+  {
+   "t": "SL Automotive Pte Ltd",
+   "u": "http://slautomotive.com.sg/join-us",
+   "s": "Our Career Opportunities Build your future with SLAutomotive Pte Ltd. We offer exciting career opportunities for individuals who are passionate about the automo"
+  },
+  {
+   "t": "Automotive Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/automotive-jobs",
+   "s": "Find your ideal job at Jobstreet with 1174 Automotive jobs found in Singapore. View all our Automotive vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Sg Automotive Jobs in Singapore (with Salaries) - Jobstreet",
+   "u": "https://sg.jobstreet.com/sg-automotive-jobs",
+   "s": "Find your ideal job at Jobstreet with 50 Sg Automotive jobs found in Singapore. View all our Sg Automotive vacancies now with new jobs added daily!"
   },
   {
    "t": "6,000+ Automotive jobs in Singapore - LinkedIn",
@@ -110,12 +100,37 @@
   {
    "t": "Automotive jobs in Singapore - Indeed",
    "u": "https://sg.indeed.com/Automotive-jobs-in-Singapore",
-   "s": "460 Automotive jobs available in Singapore on Indeed.com. Apply to Process Technician, Country Manager, Manager of Business Development and more!"
+   "s": "459 Automotive jobs available in Singapore on Indeed.com. Apply to New Graduate, Automotive Technician, Director of Product Management and more!"
   },
   {
-   "t": "138194 Automotive Automobile Jobs in Singapore: Latest Automotive ...",
+   "t": "Urgent! Automotive jobs in Singapore - September 2026 - Jooble",
+   "u": "https://sg.jooble.org/jobs-automotive/Singapore",
+   "s": "Search and apply for the latest Automotive jobs in Singapore. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job email alerts"
+  },
+  {
+   "t": "4222 Automotive Jobs in Singapore: Latest Automotive Jobs Vacancies 28 ...",
+   "u": "https://www.foundit.sg/search/automotive-jobs",
+   "s": "Find 4222 Automotive Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportunities in your pr"
+  },
+  {
+   "t": "125069 Automotive Automobile Jobs in Singapore: Latest Automotive ...",
    "u": "https://www.foundit.sg/search/automotive-automobile-jobs",
-   "s": "Find 138194 Automotive Automobile Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportuniti"
+   "s": "Find 125069 Automotive Automobile Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportuniti"
+  },
+  {
+   "t": "Urgent! Automotive jobs - September 2026 - 1155 Automotive vacancies ...",
+   "u": "https://sg.jooble.org/jobs-automotive",
+   "s": "Search and apply for the latest Automotive jobs. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job email alerts. Free, fast "
+  },
+  {
+   "t": "Automotive Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/automotive-jobs",
+   "s": "Find your ideal job at Jobstreet with 1174 Automotive jobs found in Singapore. View all our Automotive vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Sg Automotive Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/sg-automotive-jobs",
+   "s": "Find your ideal job at Jobstreet with 50 Sg Automotive jobs found in Singapore. View all our Sg Automotive vacancies now with new jobs added daily!"
   },
   {
    "t": "Automotive Jobs in Singapore - NOW HIRING | Jobcube",
@@ -123,24 +138,9 @@
    "s": "4,605 Automotive jobs in Singapore are available today on Jobcube. View job details and find your next opportunity now!"
   },
   {
-   "t": "Automotive Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
-   "u": "https://sg.jobstreet.com/automotive-jobs",
-   "s": "Find your ideal job at Jobstreet with 1166 Automotive jobs found in Singapore. View all our Automotive vacancies now with new jobs added daily!"
-  },
-  {
-   "t": "Sg Automotive Jobs in Singapore (with Salaries) - May 2026 | Jobstreet",
-   "u": "https://sg.jobstreet.com/sg-automotive-jobs",
-   "s": "Find your ideal job at Jobstreet with 61 Sg Automotive jobs found in Singapore. View all our Sg Automotive vacancies now with new jobs added daily!"
-  },
-  {
-   "t": "6,000+ Automotive jobs in Singapore - LinkedIn",
-   "u": "https://sg.linkedin.com/jobs/automotive-jobs",
-   "s": "Today's top 6,000+ Automotive jobs in Singapore. Leverage your professional network, and get hired. New Automotive jobs added daily."
-  },
-  {
-   "t": "Automotive Jobs, Hiring in Singapore - Sep 2026 | Jobstreet",
-   "u": "https://ph.jobstreet.com/automotive-jobs/in-Singapore",
-   "s": "Find your ideal job at Jobstreet with 1169 Automotive jobs found in Singapore. View all our Automotive vacancies now with new jobs added daily!"
+   "t": "400+ Automotive Jobs, Employment in Singapore September 28 ... - Indeed",
+   "u": "https://sg.indeed.com/Automotive-jobs-in-Singapore",
+   "s": "459 Automotive jobs available in Singapore on Indeed.com. Apply to New Graduate, Automotive Technician, Director of Product Management and more!"
   }
  ],
  "dict_hits": [],

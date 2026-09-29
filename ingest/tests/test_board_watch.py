@@ -1977,7 +1977,7 @@ class TestShippedWatchConfig:
         assert "ats:greenhouse:neteasegames" in boards
         assert "ats:greenhouse:shein" in boards
 
-    def test_roster_is_exactly_twentythree(self):
+    def test_roster_count_matches_spec(self):
         """S15 (review #7f) → S16 → S17 → S18 → S19 → S20: the EXACT
         roster count — a watch added or lost by a hand-edit fails HERE,
         not silently on the runner. S16 census wires: gea (workday) +
@@ -1993,7 +1993,7 @@ class TestShippedWatchConfig:
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 35
+        assert len(cfg["watches"]) == 41
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",

@@ -2,8 +2,32 @@
  "brand": "Yum China",
  "tier": "lca",
  "lca": "YUM CONNECT, LLC",
- "ts": "2026-09-27T07:30:44.577Z",
+ "ts": "2026-09-29T04:25:46.373Z",
  "candidates": [
+  {
+   "url": "https://www.yumchina.com/career",
+   "title": "百胜中国-YumChina",
+   "status": 200,
+   "bytes": 3584,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "作为中国最大的餐饮企业，百胜中国在全国拥有大约40万名员工，每年服务数以亿计人次的顾客。进入中国三十七年来，从员工到顾客，从供应商到社区公众，我们秉持着\"以人为本\"的核心价值观，关心企业价值链所牵动的每个利益相关方。我们努力为员工打造\"公平、关爱、自豪\"的工作环境 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.yum.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 40547,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Open Jobs at Yum! Brands Building the World's Most Loved, Trusted and Connected Restaurant Brands",
+   "backend": "direct"
+  },
   {
    "url": "https://www.yumchina.com/careers",
    "title": "百胜中国-YumChina",
@@ -15,47 +39,13 @@
    "score": 7,
    "snippet": "地址：上海市天钥桥路 20 号百胜中国大厦 邮编：200030 电话： (86 21) 2407-7777 传真： (86 21) 2407-8888 媒体邮箱：media@Yumchina.com",
    "backend": "direct"
-  },
-  {
-   "url": "https://jobs.yum.com/?page=0",
-   "title": "",
-   "status": 200,
-   "bytes": 40591,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 7,
-   "snippet": "Who is Yum! Brands? Ready to make your mark at an iconic global powerhouse? Join Yum! Brands...",
-   "backend": "direct"
-  },
-  {
-   "url": "https://www.yum.com/careers",
-   "title": "Careers",
-   "status": 200,
-   "bytes": 319324,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 7,
-   "snippet": "Yum! Careers Start Your Yum! Career Search Jobs Think you know Yum!? Think again. At Yum!, our purpose is unlocking opportunity - for our people, communities an",
-   "backend": "direct"
   }
  ],
  "results": [
   {
    "t": "百胜中国-YumChina",
-   "u": "https://www.yumchina.com/careers",
-   "s": "地址：上海市天钥桥路 20 号百胜中国大厦 邮编：200030 电话： (86 21) 2407-7777 传真： (86 21) 2407-8888 媒体邮箱：media@Yumchina.com"
-  },
-  {
-   "t": "Careers at Yum! Brands",
-   "u": "https://jobs.yum.com/?page=0",
-   "s": "Who is Yum! Brands? Ready to make your mark at an iconic global powerhouse? Join Yum! Brands..."
-  },
-  {
-   "t": "Careers - Yum",
-   "u": "https://www.yum.com/careers",
-   "s": "Yum! Careers Start Your Yum! Career Search Jobs Think you know Yum!? Think again. At Yum!, our purpose is unlocking opportunity - for our people, communities an"
+   "u": "https://www.yumchina.com/career",
+   "s": "作为中国最大的餐饮企业，百胜中国在全国拥有大约40万名员工，每年服务数以亿计人次的顾客。进入中国三十七年来，从员工到顾客，从供应商到社区公众，我们秉持着\"以人为本\"的核心价值观，关心企业价值链所牵动的每个利益相关方。我们努力为员工打造\"公平、关爱、自豪\"的工作环境 ..."
   },
   {
    "t": "Yum China Jobs in Worldwide (32,000+ Open Roles) | LinkedIn",
@@ -69,13 +59,23 @@
   },
   {
    "t": "百胜中国-YumChina",
-   "u": "https://www.yumchina.com/career",
-   "s": "作为中国最大的餐饮企业，百胜中国在全国拥有大约40万名员工，每年服务数以亿计人次的顾客。进入中国三十七年来，从员工到顾客，从供应商到社区公众，我们秉持着\"以人为本\"的核心价值观，关心企业价值链所牵动的每个利益相关方。我们努力为员工打造\"公平、关爱、自豪\"的工作环境 ..."
+   "u": "https://www.yumchina.com/careers",
+   "s": "地址：上海市天钥桥路 20 号百胜中国大厦 邮编：200030 电话： (86 21) 2407-7777 传真： (86 21) 2407-8888 媒体邮箱：media@Yumchina.com"
   },
   {
-   "t": "百胜中国招聘系统--全部职位",
-   "u": "https://yumchina.zhiye.com/alljob?c=1",
-   "s": "职位搜索 共100条记录"
+   "t": "Careers - Yum",
+   "u": "https://www.yum.com/careers",
+   "s": "Yum! Careers Start Your Yum! Career Search Jobs Think you know Yum!? Think again. At Yum!, our purpose is unlocking opportunity - for our people, communities an"
+  },
+  {
+   "t": "Careers - yum.com",
+   "u": "https://www.yum.com/careers?trk=public_post-text",
+   "s": "Join the world's largest restaurant company to have a direct impact on our iconic brands: KFC, Pizza Hut, Taco Bell and The Habit Burger Grill."
+  },
+  {
+   "t": "Careers at Yum! Brands",
+   "u": "https://jobs.yum.com/?size=n_5_n",
+   "s": "Who is Yum! Brands? Ready to make your mark at an iconic global powerhouse? Join Yum! Brands..."
   },
   {
    "t": "Yum China 2027 Management Trainee Program - Career Development Yale ...",
@@ -98,14 +98,14 @@
    "s": "作为中国最大的餐饮企业，百胜中国在全国拥有大约40万名员工，每年服务数以亿计人次的顾客。进入中国三十七年来，从员工到顾客，从供应商到社区公众，我们秉持着\"以人为本\"的核心价值观，关心企业价值链所牵动的每个利益相关方。我们努力为员工打造\"公平、关爱、自豪\"的工作环境 ..."
   },
   {
-   "t": "Careers at Yum Brands",
-   "u": "https://jobs.yum.com/",
-   "s": "Open Jobs at Yum! Brands Building the World's Most Loved, Trusted and Connected Restaurant Brands"
+   "t": "百胜中国-YumChina",
+   "u": "https://www.yumchina.com/careers",
+   "s": "地址：上海市天钥桥路 20 号百胜中国大厦 邮编：200030 电话： (86 21) 2407-7777 传真： (86 21) 2407-8888 媒体邮箱：media@Yumchina.com"
   },
   {
-   "t": "Careers at Yum! Brands",
-   "u": "https://jobs.yum.com/?size=n_5_n",
-   "s": "Open Jobs at Yum! Brands Yum! UK & I and Europe is a part of One Yum! Supply Chain Centre of Excellence (COE), set up..."
+   "t": "Yum China Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yum-china-jobs",
+   "s": "Today's top 11,000+ Yum China jobs in United States. Leverage your professional network, and get hired. New Yum China jobs added daily."
   },
   {
    "t": "How to Find and Apply for Jobs at Yum China Holdings",
@@ -113,14 +113,14 @@
    "s": "Finding and applying for jobs at Yum China Holdings is often easiest when candidates start from the company-controlled Career Site, then focus on roles that clo"
   },
   {
-   "t": "百胜中国招聘系统--全部职位",
-   "u": "https://yumchina.zhiye.com/alljob?c=1",
-   "s": "职位搜索 共100条记录"
-  },
-  {
    "t": "Yum! Careers",
    "u": "https://eczd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
    "s": "Upload or drag and drop your resume here to get recommended jobs based on your skills and experience."
+  },
+  {
+   "t": "百胜中国招聘系统--全部职位",
+   "u": "https://yumchina.zhiye.com/alljob?c=1",
+   "s": "百胜中国招聘系统，提供多个品牌的全职和兼职职位信息，包括餐厅管理和服务岗位。"
   },
   {
    "t": "Yum China Jobs in Worldwide (32,000+ Open Roles) | LinkedIn",
@@ -128,9 +128,9 @@
    "s": "Today's top 32,000+ Yum China jobs in Worldwide. Leverage your professional network, and get hired. New Yum China jobs added daily."
   },
   {
-   "t": "Careers - Yum",
-   "u": "https://www.yum.com/careers",
-   "s": "Yum! Careers Start Your Yum! Career Search Jobs Think you know Yum!? Think again. At Yum!, our purpose is unlocking opportunity - for our people, communities an"
+   "t": "Careers at Yum Brands",
+   "u": "https://jobs.yum.com/",
+   "s": "Open Jobs at Yum! Brands Building the World's Most Loved, Trusted and Connected Restaurant Brands"
   },
   {
    "t": "Yum! Careers",
@@ -138,9 +138,9 @@
    "s": "Upload or drag and drop your resume here to get recommended jobs based on your skills and experience."
   },
   {
-   "t": "Careers at Yum Brands",
-   "u": "https://jobs.yum.com/",
-   "s": "Open Jobs at Yum! Brands Building the World's Most Loved, Trusted and Connected Restaurant Brands"
+   "t": "百胜中国-YumChina",
+   "u": "https://www.yumchina.com/careers",
+   "s": "地址：上海市天钥桥路 20 号百胜中国大厦 邮编：200030 电话： (86 21) 2407-7777 传真： (86 21) 2407-8888 媒体邮箱：media@Yumchina.com"
   }
  ],
  "dict_hits": [],

@@ -343,6 +343,12 @@ ten proofs per company.
 | `foxit_us_fulltime` | `ats:lever:foxitsoftware` | 4 | 4 (100.0%) | S20 wire wave 1; Foxit Software (Fremont CA — PDF tools, the CN-software-with-US-arm class); 1 US row of 6 via location facet + LI 4/4; LCA evidence 3 filings (FOXIT SOFTWARE INCORPORATED) |
 | `poizon_us_fulltime` | `ats:feishuhire:poizon` | 3 | 0 (0.0%) | S20 wire wave 1; POIZON/得物 (Shanghai sneakers-marketplace giant — the US beachhead: LA + Brooklyn + Essex County rows of a 579-row board); the S20 feishu-sweep census class; 2 portal cities added to the curated map (Brooklyn, Essex County); honest 0% LI |
 
+| `fuyao_us_fulltime` | `ats:adp:25319558-…` | 173 | 0 (0.0%) | S21 wave-2 adapter class 1/5 (ADP WorkforceNow mascsr REST — cid-only auth, the page-0 19-row + page-boundary-dup quirks pinned); Fuyao Glass America (Moraine OH — the 180-opening auto-glass board); LCA evidence FUYAO GLASS AMERICA INC.; honest 0% LI (shop-floor roles don't cross-post) |
+| `sanhua_us_fulltime` | `ats:jazzhr:sanhua` | 9 | 0 (0.0%) | S21 adapter class 2/5 (JazzHR applytojob — one-call server-rendered list + JSON-LD details, the no-JobPosting-LD fallback pinned); Sanhua International (HVAC components, Auburn Hills MI); 9 of 34 US (25 MX rows dropped via the plain-loc ladder) |
+| `foxconnfii_us_fulltime` | `ats:jazzhr:foxconnassemblyllc` | 164 | 0 (0.0%) | S21; Foxconn Industrial Internet / FII (Houston TX + San Jose CA electronics manufacturing); 164 of 172 US; honest 0% LI |
+| `lenovo_us_fulltime` | `ats:radancy:jobs.lenovo.com` | 251 | 76 (30.3%) | S21 adapter class 3/5 (Radancy TPT portal — 10/page jobOffset walk + the search='United States' server-side location prefilter + client ladder re-verify); Lenovo (Morrisville/Whitsett NC…); Req # preserved in bulletFields |
+| `cainiao_us_fulltime` | `ats:teamtailor:cainiao` | 5 | 0 (0.0%) | S21 adapter class 4/5 (Teamtailor jobs.json one-call feed — structured ISO countries); Cainiao (Port Wentworth GA — the Alibaba logistics arm's Savannah warehouse); 5 of 48 US |
+| `webull_us_fulltime` | `ats:rippling:webull` | 29 | 28 (96.6%) | S21 adapter class 5/5 (Rippling SSR __NEXT_DATA__ — the CF-proof transport); Webull Financial (NYC fintech); employmentType SALARIED_FT normalized |
 
 (matched = LinkedIn corroboration; H-1B wage-band coverage is
 separate — see §7. US rows/matched are the S12–S15 dump values; the

@@ -2,10 +2,155 @@
  "brand": "Pop Culture Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:19:28.292Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:36:43.308Z",
+ "candidates": [
+  {
+   "url": "https://popculture.com/jobs/",
+   "title": "PopCulture Careers - PopCulture.com",
+   "status": 200,
+   "bytes": 198539,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "PopCulture.com is a Savage Ventures brand delivering premium content to audiences across emerging media platforms. With a spirited focus on celebrity news, real",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.reedpop.com/en-us/careers.html",
+   "title": "Careers | ReedPop",
+   "status": 200,
+   "bytes": 111732,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We are a best-in-class pop culture based company that thrives on creativity, diversity, and collaboration. Join us and be part of a team that brings iconic char",
+   "backend": "direct"
+  },
+  {
+   "url": "https://interviewguy.com/jobs-for-pop-culture-junkies/",
+   "title": "",
+   "status": 200,
+   "bytes": 42795,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Pop Culture Savvy: A passion for pop culture, comics, and storytelling, with a wealth of knowledge about characters, lore, and fan communities. Networking: The ",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "PopCulture Careers - PopCulture.com",
+   "u": "https://popculture.com/jobs/",
+   "s": "PopCulture.com is a Savage Ventures brand delivering premium content to audiences across emerging media platforms. With a spirited focus on celebrity news, real"
+  },
+  {
+   "t": "Pop Culture Jobs in Singapore (with Salaries) - May 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/pop-culture-jobs",
+   "s": "Find your ideal job at Jobstreet with 82 Pop Culture jobs found in Singapore. View all our Pop Culture vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Join the Team - Museum of Pop Culture",
+   "u": "https://www.mopop.org/join-the-team",
+   "s": "Seattle's MOPOP is hiring! Share your love for pop culture and create unforgettable experiences. Join our diverse, collaborative team. Learn more."
+  },
+  {
+   "t": "Careers - ReedPop",
+   "u": "https://www.reedpop.com/en-us/careers.html",
+   "s": "We are a best-in-class pop culture based company that thrives on creativity, diversity, and collaboration. Join us and be part of a team that brings iconic char"
+  },
+  {
+   "t": "Now Hiring: 8,000 Pop Culture Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Pop-Culture-jobs.html",
+   "s": "Today's top Pop Culture jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "35 Jobs For Pop Culture Junkies (Comic Con Careers)",
+   "u": "https://interviewguy.com/jobs-for-pop-culture-junkies/",
+   "s": "Pop Culture Savvy: A passion for pop culture, comics, and storytelling, with a wealth of knowledge about characters, lore, and fan communities. Networking: The "
+  },
+  {
+   "t": "POP MART: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/pop-mart/jobs/",
+   "s": "POP MART | 262,461 followers on LinkedIn. To light up Passion and Bring Joy | Founded in 2010, POP MART (09992.HK) is a leading company in the designer collecti"
+  },
+  {
+   "t": "We're Hiring! Current Job Openings at PEOPLE",
+   "u": "https://people.com/lifestyle/people-is-hiring-check-out-our-current-job-openings/",
+   "s": "Apply for one of our PEOPLE's career opportunities and join the legacy brand at the forefront of pop culture and everyday inspiration"
+  },
+  {
+   "t": "Now Hiring: 8,000 Pop Culture Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Pop-Culture-jobs.html",
+   "s": "Today's top Pop Culture jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "PopCulture Careers - PopCulture.com",
+   "u": "https://popculture.com/jobs/",
+   "s": "PopCulture.com is a Savage Ventures brand delivering premium content to audiences across emerging media platforms. With a spirited focus on celebrity news, real"
+  },
+  {
+   "t": "Pop Culture Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/pop-culture-jobs",
+   "s": "Today's top 9,000+ Pop Culture jobs in United States. Leverage your professional network, and get hired. New Pop Culture jobs added daily."
+  },
+  {
+   "t": "1,000 Pop Culture Department Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-pop-culture-department-jobs.html",
+   "s": "Browse 1,326 Pop Culture Department jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "35 Jobs For Pop Culture Junkies (Comic Con Careers)",
+   "u": "https://interviewguy.com/jobs-for-pop-culture-junkies/",
+   "s": "Pop Culture Savvy: A passion for pop culture, comics, and storytelling, with a wealth of knowledge about characters, lore, and fan communities. Networking: The "
+  },
+  {
+   "t": "Join the Team - Museum of Pop Culture",
+   "u": "https://www.mopop.org/join-the-team",
+   "s": "Seattle's MOPOP is hiring! Share your love for pop culture and create unforgettable experiences. Join our diverse, collaborative team. Learn more."
+  },
+  {
+   "t": "Urgent! Pop culture jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-pop-culture",
+   "s": "Active 46183 vacancies • Pop culture jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Pop culture jobs in USA and "
+  },
+  {
+   "t": "Pop Culture Events Jobs in United States (101 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/pop-culture-events-jobs",
+   "s": "Today's top 101 Pop Culture Events jobs in United States. Leverage your professional network, and get hired. New Pop Culture Events jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 8,000 Pop Culture Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Pop-Culture-jobs.html",
+   "s": "Today's top Pop Culture jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Pop Culture Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/pop-culture-jobs",
+   "s": "Today's top 9,000+ Pop Culture jobs in United States. Leverage your professional network, and get hired. New Pop Culture jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 7,000 Pop Culture Jobs | Indeed",
+   "u": "https://www.indeed.com/q-pop-culture-job-jobs.html",
+   "s": "7,822 Pop Culture jobs available on Indeed.com. Apply to Retail Sales Associate, Educator, Brand Ambassador and more!"
+  },
+  {
+   "t": "Culture Pop Careers Jobs in United States (11,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/culture-pop-careers-jobs",
+   "s": "Today's top 11,000+ Culture Pop Careers jobs in United States. Leverage your professional network, and get hired. New Culture Pop Careers jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://popculture.com/jobs/",
+  "platform": "custom",
+  "title": "PopCulture Careers - PopCulture.com"
+ },
+ "verdict": "custom_surface"
 }

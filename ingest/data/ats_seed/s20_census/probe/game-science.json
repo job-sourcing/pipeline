@@ -2,10 +2,157 @@
  "brand": "Game Science",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:19:44.571Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:37:18.285Z",
+ "candidates": [
+  {
+   "url": "https://www.scientificgames.com/careers/",
+   "title": "Scientific Games",
+   "status": 200,
+   "bytes": 52579,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Our global headquarters - the world's largest lottery instant game production facility - is located in metro Atlanta. With world-class dining, shopping, sports ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.riotgames.com/en/work-with-us/jobs",
+   "title": "Careers | Riot Games",
+   "status": 200,
+   "bytes": 253651,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Design Riot Discovery Shanghai, China Game Designer, System - Unpublished R&D Product (Contract) Design Research & Development Guangzhou, China",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.jobsingames.com/",
+   "title": "Games Jobs — Live Roles, Updated Daily",
+   "status": 200,
+   "bytes": 930879,
+   "markers": [
+    "greenhouse",
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse live Games jobs, updated daily. Roles for engineers, researchers & AI agents. Free for job seekers. Apply direct.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Scientific Games",
+   "u": "https://www.scientificgames.com/careers/",
+   "s": "Our global headquarters - the world's largest lottery instant game production facility - is located in metro Atlanta. With world-class dining, shopping, sports "
+  },
+  {
+   "t": "游戏科学 Game Science",
+   "u": "https://gamesci.cn/",
+   "s": "公司名字由Game（游戏）和Science（科学）拼接而成，希望能够融合游戏的趣味感性与科学的认真严谨。我们坚信对核心玩法的持续创新和对细分领域的长期深耕才能收获真正的用户口碑，只做开发者自己能玩、爱玩、愿意向朋友推荐的产品。公司成立于2014年6月，目前在中国深圳与杭州两地均有工作室。"
+  },
+  {
+   "t": "Careers at Sony Interactive Entertainment",
+   "u": "https://careers.playstation.com/",
+   "s": "Explore career opportunities at Sony Interactive Entertainment (SIE), the team behind PlayStation. Join us in shaping the future of interactive entertainment."
+  },
+  {
+   "t": "Careers - Riot Games",
+   "u": "https://www.riotgames.com/en/work-with-us/jobs",
+   "s": "Design Riot Discovery Shanghai, China Game Designer, System - Unpublished R&D Product (Contract) Design Research & Development Guangzhou, China"
+  },
+  {
+   "t": "2,000 Game Science Careers Jobs & Work - Indeed",
+   "u": "https://www.indeed.com/q-game-science-careers-jobs.html",
+   "s": "Browse 2,698 Game Science Careers jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "2,000+ Game Science jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/game-science-jobs",
+   "s": "Today's top 2,000+ Game Science jobs in United States. Leverage your professional network, and get hired. New Game Science jobs added daily."
+  },
+  {
+   "t": "Game Science Studio Jobs (NOW HIRING) - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/Jobs/Game-Science-Studio",
+   "s": "Browse 110 GAME SCIENCE STUDIO jobs ($131k-$165k) from companies hiring now. New openings posted daily. Apply early, get seen first & 1-click apply!"
+  },
+  {
+   "t": "Interns & Graduates | Ubisoft Careers",
+   "u": "https://www.ubisoft.com/en-us/company/careers/interns-graduates",
+   "s": "At Ubisoft, interns and graduates will have the opportunity to work alongside some of the most talented people in the industry. Join us!"
+  },
+  {
+   "t": "2,000+ Game Science jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/game-science-jobs",
+   "s": "Today's top 2,000+ Game Science jobs in United States. Leverage your professional network, and get hired. New Game Science jobs added daily."
+  },
+  {
+   "t": "2,000 Game Science Careers Jobs & Work - Indeed",
+   "u": "https://www.indeed.com/q-game-science-careers-jobs.html",
+   "s": "Browse 2,698 Game Science Careers jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "3,000+ Gaming Scientist jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gaming-scientist-jobs",
+   "s": "Today's top 3,000+ Gaming Scientist jobs in United States. Leverage your professional network, and get hired. New Gaming Scientist jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 1,000 Games Scientist Jobs | Indeed",
+   "u": "https://www.indeed.com/q-games-scientist-jobs.html",
+   "s": "1,278 Games Scientist jobs available on Indeed.com. Apply to Research Scientist, Compliance Engineer, Shift Leader and more!"
+  },
+  {
+   "t": "Games Jobs — Live Roles, Updated Daily",
+   "u": "https://www.jobsingames.com/",
+   "s": "Browse live Games jobs, updated daily. Roles for engineers, researchers & AI agents. Free for job seekers. Apply direct."
+  },
+  {
+   "t": "Game Science Studio Jobs (NOW HIRING) - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/Jobs/Game-Science-Studio",
+   "s": "A Game Science Studio job involves applying data science, psychology, and game design principles to analyze player behavior, improve game mechanics, and enhance"
+  },
+  {
+   "t": "Gaming, Esports & Content Jobs | Hitmarker",
+   "u": "https://hitmarker.net/jobs",
+   "s": "Browse thousands of verified roles at the studios, esports orgs, agencies and creator teams hiring right now on Hitmarker."
+  },
+  {
+   "t": "Games, Esports & Content Jobs | Hitmarker",
+   "u": "https://hitmarker.net/",
+   "s": "Find jobs across games, esports, content and media. Hire talented people across the industry. Make your mark."
+  },
+  {
+   "t": "4,000+ Gamescience Careers jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gamescience-careers-jobs",
+   "s": "Today's top 4,000+ Gamescience Careers jobs in United States. Leverage your professional network, and get hired. New Gamescience Careers jobs added daily."
+  },
+  {
+   "t": "2,000+ Game Science jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/game-science-jobs",
+   "s": "Today's top 2,000+ Game Science jobs in United States. Leverage your professional network, and get hired. New Game Science jobs added daily."
+  },
+  {
+   "t": "2,000 Game Science Careers Jobs & Work - Indeed",
+   "u": "https://www.indeed.com/q-game-science-careers-jobs.html",
+   "s": "Browse 2,698 Game Science Careers jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Scientific Games",
+   "u": "https://www.scientificgames.com/careers/",
+   "s": "Our global teams operate with the highest standards of excellence and the right mix of creativity. We bring our personal best to work every day while understand"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.jobsingames.com/",
+  "platform": "greenhouse",
+  "title": "Games Jobs — Live Roles, Updated Daily"
+ },
+ "verdict": "marker_surface"
 }

@@ -33,6 +33,6 @@ def daemonize():
 
 
 daemonize()
-os.chdir('/home/z/job-sourcing-research')
+os.chdir(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 env = dict(os.environ)
 os.execvp(CMD[0], CMD)

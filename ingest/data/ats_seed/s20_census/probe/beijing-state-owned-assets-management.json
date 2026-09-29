@@ -2,10 +2,153 @@
  "brand": "Beijing State-owned Assets Management",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:20:23.544Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:37:49.760Z",
+ "candidates": [
+  {
+   "url": "https://baike.baidu.com/en/item/Beijing%20State-owned%20Assets%20Management%20Co.%2CLtd./40607",
+   "title": "Beijing State-owned Assets Management Co.,Ltd._Baiduwiki",
+   "status": 200,
+   "bytes": 154146,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Beijing State-owned Assets Management Co.,Ltd. (abbreviated as Beijing State-owned Assets Company) is a wholly state-owned company specializing in capital opera",
+   "backend": "direct"
+  },
+  {
+   "url": "https://altss.com/profile/beijing-state-owned-assets-management",
+   "title": "Beijing State-Owned Assets Management | Altss",
+   "status": 200,
+   "bytes": 183615,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "The Beijing Municipal People's Government exercises full control through the Beijing State-owned Assets Supervision and Administration Commission, which is the ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://english.beijing.gov.cn/workinginbeijing/whybeijing/jobopportunities/",
+   "title": "Job Opportunities",
+   "status": 200,
+   "bytes": 12356,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Looking for a job in Beijing? Don't miss this career fair! This map brings together the city's employment service stations, gig markets, training institutions, ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "BSAM_Overview of BSAM",
+   "u": "https://www.bsam.com.cn/en/about",
+   "s": "Since its inception, Beijing State-Owned Assets Management Co., Ltd. has actively advanced in resource organization for the capital's development, investment an"
+  },
+  {
+   "t": "BSAM",
+   "u": "https://www.bsam.com.cn/en/",
+   "s": "As a municipal-level state-owned enterprise with the most extensive sphere for financial equity investment , the most comprehensive financial license, and the t"
+  },
+  {
+   "t": "北京国资公司集团招聘平台 - zhaopin.bsam.com.cn",
+   "u": "https://zhaopin.bsam.com.cn/default/bsam",
+   "s": "北京国资公司集团招聘平台提供社会招聘和校园招聘信息，助力人才与企业的精准匹配。"
+  },
+  {
+   "t": "Beijing State-owned Assets Management - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Beijing_State-owned_Assets_Management",
+   "s": "Beijing State-Owned Assets Management Co., Ltd. (BSAM) is a Chinese sovereign wealth fund based in Beijing. It was owned by Beijing Municipal People's Governmen"
+  },
+  {
+   "t": "CAREER",
+   "u": "https://www.csopasset.com/en/career/careerSearch",
+   "s": "Explore career opportunities at CSOP, a firm committed to diversity, innovation, and inclusivity in shaping extraordinary ideas and leadership."
+  },
+  {
+   "t": "北京国有资本运营管理有限公司",
+   "u": "https://www.bscomc.com/",
+   "s": "北京国有资本运营管理有限公司（以下简称\"北京国管\"）于2008年12月由北京市政府出资设立，注册资本500亿元。北京国管是以国有资本运营和股权管理为重点，以国有资本证券化和价值最大化为目标的市属重点骨干企业。"
+  },
+  {
+   "t": "Beijing State-owned Assets Management Co.,Ltd._Baiduwiki",
+   "u": "https://baike.baidu.com/en/item/Beijing%20State-owned%20Assets%20Management%20Co.%2CLtd./40607",
+   "s": "Beijing State-owned Assets Management Co.,Ltd. (abbreviated as Beijing State-owned Assets Company) is a wholly state-owned company specializing in capital opera"
+  },
+  {
+   "t": "Beijing State-Owned Assets Management - Altss",
+   "u": "https://altss.com/profile/beijing-state-owned-assets-management",
+   "s": "The Beijing Municipal People's Government exercises full control through the Beijing State-owned Assets Supervision and Administration Commission, which is the "
+  },
+  {
+   "t": "北京国资公司集团招聘平台 - zhaopin.bsam.com.cn",
+   "u": "https://zhaopin.bsam.com.cn/default/bsam",
+   "s": "北京国资公司集团招聘平台提供社会招聘和校园招聘信息，助力人才与企业的精准匹配。"
+  },
+  {
+   "t": "BSAM_Overview of BSAM",
+   "u": "https://www.bsam.com.cn/en/about",
+   "s": "Since its inception, Beijing State-Owned Assets Management Co., Ltd. has actively advanced in resource organization for the capital's development, investment an"
+  },
+  {
+   "t": "北京市国有资产经营有限责任公司",
+   "u": "https://www.bsam.com.cn/",
+   "s": "北京国资公司积极响应和助推国家\"双碳\"目标实现，助力\"绿色北京\"建设，以\"做强固废综合处理板块，做精垃圾焚烧发电主业\"为核心，大力发展循环经济产业园；平稳运行全国温室气体自愿减排交易平台，推进建设绿色金融与可持续金融中心，高质量建设运营国家级绿色交易所和国家绿色 ..."
+  },
+  {
+   "t": "Beijing State-owned Assets Management - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Beijing_State-owned_Assets_Management",
+   "s": "Beijing State-Owned Assets Management Co., Ltd. (BSAM) is a Chinese sovereign wealth fund based in Beijing. It was owned by Beijing Municipal People's Governmen"
+  },
+  {
+   "t": "北京国有资本运营管理有限公司",
+   "u": "https://www.bscomc.com/",
+   "s": "北京国有资本运营管理有限公司（以下简称\"北京国管\"）于2008年12月由北京市政府出资设立，注册资本500亿元。北京国管是以国有资本运营和股权管理为重点，以国有资本证券化和价值最大化为目标的市属重点骨干企业。"
+  },
+  {
+   "t": "0 Director Of Beijing State Owned Assets Management jobs in ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/director-of-beijing-state-owned-assets-management-jobs",
+   "s": "Today's top 0 Director Of Beijing State Owned Assets Management jobs in United States. Leverage your professional network, and get hired. New Director Of Beijin"
+  },
+  {
+   "t": "Beijing State-Owned Assets Management - Altss",
+   "u": "https://altss.com/profile/beijing-state-owned-assets-management",
+   "s": "The Beijing Municipal People's Government exercises full control through the Beijing State-owned Assets Supervision and Administration Commission, which is the "
+  },
+  {
+   "t": "北京市国有资产经营有限责任公司 - 企查查",
+   "u": "https://www.qcc.com/firm/7531384b48246da75f2a2e6ef85558b7.html",
+   "s": "公司为省属国企，主要职能是管理和运营国有资产，保证国有资产在流动中实现保值增值。业务已形成金融服务、环保与园区运营、信息服务与数字产业、文化体育四大产业板块，并积极发挥金融服务业优势，服务实体经济发展和高精尖产业构建，同时深耕环保与园区运营产业，助推绿色发展战略 ..."
+  },
+  {
+   "t": "北京国资公司集团招聘平台 - zhaopin.bsam.com.cn",
+   "u": "https://zhaopin.bsam.com.cn/default/bsam",
+   "s": "北京国资公司集团招聘平台提供社会招聘和校园招聘信息，助力人才与企业的精准匹配。"
+  },
+  {
+   "t": "北京市国有资产经营有限责任公司",
+   "u": "https://www.bsam.com.cn/",
+   "s": "北京国资公司积极响应和助推国家\"双碳\"目标实现，助力\"绿色北京\"建设，以\"做强固废综合处理板块，做精垃圾焚烧发电主业\"为核心，大力发展循环经济产业园；平稳运行全国温室气体自愿减排交易平台，推进建设绿色金融与可持续金融中心，高质量建设运营国家级绿色交易所和国家绿色 ..."
+  },
+  {
+   "t": "北京大学就业信息网 - scc.pku.edu.cn",
+   "u": "https://scc.pku.edu.cn/f/recruitmentinfo/show?recruitmentId=9e811789ca8846ada56ada477e3bf4fe",
+   "s": "北京市国有资产经营有限责任公司 2026届高校毕业生校园招聘公告 一、 关于北京国资公司 北京市国有资产经营有限责任公司（简称 \"北京国资公司\"）在北京市国有资产管理体制改革大潮中应运而生，主要职能是管理和运营国有资产，保证国有资产在流动中实现保值增值。自成立以来，北京国资 ..."
+  },
+  {
+   "t": "82 asset management Jobs in Beijing, Beijing, March 2025",
+   "u": "https://www.glassdoor.com/Job/beijing-asset-management-jobs-SRCH_IL.0,7_IC2398510_KO8,24.htm",
+   "s": "Search Asset management jobs in Beijing, Beijing with company ratings & salaries. 82 open jobs for Asset management in Beijing."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://english.beijing.gov.cn/workinginbeijing/whybeijing/jobopportunities/",
+  "platform": "custom",
+  "title": "Job Opportunities"
+ },
+ "verdict": "custom_surface"
 }

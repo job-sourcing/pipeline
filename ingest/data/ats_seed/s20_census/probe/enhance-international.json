@@ -2,10 +2,153 @@
  "brand": "ENHANCE International",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:16:39.506Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:22:43.493Z",
+ "candidates": [
+  {
+   "url": "https://enhance.com/careers",
+   "title": "Join the team | Enhance",
+   "status": 200,
+   "bytes": 98391,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join the team at Enhance! We're always looking for talented individuals to join us. We offer hybrid working options, value passion over credentials, and ensure ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://official.enhance-group.com/careers/",
+   "title": "Careers - Enhance",
+   "status": 200,
+   "bytes": 95818,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consecte",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://enhance-international.com/Join-Us/",
+   "title": "",
+   "status": 200,
+   "bytes": 137,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "We are a global and diversified firm with well-rounded and proactive team-players that have deep expertise in their areas. Generating measurable bottom-line imp",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Us - enhance-international.com",
+   "u": "https://enhance-international.com/Join-Us/",
+   "s": "We are a global and diversified firm with well-rounded and proactive team-players that have deep expertise in their areas. Generating measurable bottom-line imp"
+  },
+  {
+   "t": "Join the team - Enhance",
+   "u": "https://enhance.com/careers",
+   "s": "Join the team at Enhance! We're always looking for talented individuals to join us. We offer hybrid working options, value passion over credentials, and ensure "
+  },
+  {
+   "t": "Careers at Enhance International | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/enhance%20international",
+   "s": "Enhance International LLC is a privately held consultancy firm headquartered in Chicago, Illinois, with operations spanning three continents. Established in 200"
+  },
+  {
+   "t": "Enhance International LLC - LinkedIn",
+   "u": "https://www.linkedin.com/company/enhance-international",
+   "s": "ENHANCE International is a management consultancy focused on achieving measurable and sustainable results. Our experience spans US, Europe, and Asia, and are on"
+  },
+  {
+   "t": "Enhance International LLC hiring Analyst in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/analyst-at-enhance-international-llc-4250826963",
+   "s": "Posted 12:05:09 AM. Policy Analyst Job DescriptionWe are looking for a part-time analyst to conduct research and…See this and similar jobs on LinkedIn."
+  },
+  {
+   "t": "Jobs at Enhance Group | Enhance Group Careers",
+   "u": "https://enhance.pinpointhq.com/",
+   "s": "Learn more about working at Enhance Group and discover our latest career opportunities"
+  },
+  {
+   "t": "Careers - Enhance",
+   "u": "https://official.enhance-group.com/careers/",
+   "s": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consecte"
+  },
+  {
+   "t": "美商瀚思国际股份有限公司 - ENHANCE International",
+   "u": "http://www.enhance-international.com/Home/",
+   "s": "ENHANCE International LLC offers financial services management consulting, focusing on strategic relationships and innovative solutions for the insurance indust"
+  },
+  {
+   "t": "Join Us - enhance-international.com",
+   "u": "https://enhance-international.com/Join-Us/",
+   "s": "We are a global and diversified firm with well-rounded and proactive team-players that have deep expertise in their areas. Generating measurable bottom-line imp"
+  },
+  {
+   "t": "Join the team - Enhance",
+   "u": "https://enhance.com/careers",
+   "s": "Join the team at Enhance! We're always looking for talented individuals to join us. We offer hybrid working options, value passion over credentials, and ensure "
+  },
+  {
+   "t": "Analyst at Enhance International LLC - LinkedIn Jobs",
+   "u": "https://www.linkedin.com/jobs/view/analyst-at-enhance-international-llc-4456682652",
+   "s": "Apply for Analyst at Enhance International LLC in Washington, DC. Part-time Entry level role. See responsibilities, qualifications, and similar jobs on LinkedIn"
+  },
+  {
+   "t": "Careers at Enhance International | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/enhance-international",
+   "s": "Enhance International LLC is a privately held consultancy firm headquartered in Chicago, Illinois, with operations spanning three continents. Established in 200"
+  },
+  {
+   "t": "Careers at Enhance International | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/enhance%20international",
+   "s": "Enhance International LLC is a privately held consultancy firm headquartered in Chicago, Illinois, with operations spanning three continents. Established in 200"
+  },
+  {
+   "t": "Enhance International LLC - LinkedIn",
+   "u": "https://www.linkedin.com/company/enhance-international",
+   "s": "ENHANCE International is a management consultancy focused on achieving measurable and sustainable results. Our experience spans US, Europe, and Asia, and are on"
+  },
+  {
+   "t": "ENHANCE International LLC",
+   "u": "http://www.enhance-international.com/",
+   "s": "ENHANCE International LLC are able to be one step ahead on the trends in China's Insurance industry by leveraging their global best practice expertise while und"
+  },
+  {
+   "t": "Jobs at Enhance Group | Enhance Group Careers",
+   "u": "https://enhance.pinpointhq.com/",
+   "s": "Learn more about working at Enhance Group and discover our latest career opportunities"
+  },
+  {
+   "t": "Join Us - enhance-international.com",
+   "u": "http://www.enhance-international.com/Join-Us/",
+   "s": "We are a global and diversified firm with well-rounded and proactive team-players that have deep expertise in their areas. Generating measurable bottom-line imp"
+  },
+  {
+   "t": "Join the team - Enhance",
+   "u": "https://enhance.com/careers",
+   "s": "Join the team at Enhance! We're always looking for talented individuals to join us. We offer hybrid working options, value passion over credentials, and ensure "
+  },
+  {
+   "t": "Careers at Enhance International | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/enhance%20international",
+   "s": "Job openings at Enhance International. Enhance International LLC is a privately held consultancy firm headquartered in Chicago, Illinois, with operations..."
+  },
+  {
+   "t": "International Jobs with Visa Sponsorship | Search 15,000+ Global ...",
+   "u": "https://abroadjobseeker.com/job_list.html",
+   "s": "Browse 15,000+ international job opportunities with verified visa sponsorship. Filter by country, industry, salary. H1B, Express Entry, skilled migration positi"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://official.enhance-group.com/careers/",
+  "platform": "custom",
+  "title": "Careers - Enhance"
+ },
+ "verdict": "custom_surface"
 }

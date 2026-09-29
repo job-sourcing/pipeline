@@ -1,0 +1,7 @@
+[build]
+  command = "echo fleet-worker"
+  publish = "src"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"

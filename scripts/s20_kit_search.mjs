@@ -20,9 +20,24 @@ import { execFile } from 'node:child_process'
 import { gunzipSync, brotliDecompressSync, inflateSync } from 'node:zlib'
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { createHash } from 'node:crypto'
+import { fileURLToPath } from 'node:url'
+import { dirname, join } from 'node:path'
 
-const KIT_BIN = '/home/z/job-sourcing-research/tools/agent-fetch-kit/bin/wfetch'
-const CACHE_DIR = '/home/z/job-sourcing-research/ingest/data/ats_seed/s20_census/search_cache'
+const REPO = join(dirname(dirname(fileURLToPath(import.meta.url))), '')
+const DIR = join(REPO, 'ingest/data/ats_seed/s20_census')
+
+// self-load ingest/.env (kit needs SUPABASE_PROXY_* / FIRECRAWL_API_KEY;
+// the kit's own loader reads $KIT_ROOT/.env which is NOT committed)
+if (!process.env.SUPABASE_PROXY_URL) {
+  try {
+    for (const line of readFileSync(join(REPO, 'ingest/.env'), 'utf8').split('\n')) {
+      const m = line.match(/^([A-Z0-9_]+)=(.*)$/)
+      if (m && !(m[1] in process.env)) process.env[m[1]] = m[2]
+    }
+  } catch { }
+}
+const KIT_BIN = join(REPO, 'tools/agent-fetch-kit/bin/wfetch')
+const CACHE_DIR = join(DIR, 'search_cache')
 const CACHE_TTL_MS = 14 * 24 * 3600 * 1000
 
 mkdirSync(CACHE_DIR, { recursive: true })

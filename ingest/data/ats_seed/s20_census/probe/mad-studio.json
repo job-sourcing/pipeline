@@ -2,10 +2,153 @@
  "brand": "MAD Studio",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:41:28.512Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:26:57.770Z",
+ "candidates": [
+  {
+   "url": "https://www.i-mad.com/careers",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 123758,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Our offices With locations in Beijing, Los Angeles, and Rome, our offices reflect MAD's global perspective and collaborative spirit. Each studio operates as par",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.madstudiohk.com/careers",
+   "title": "CAREERS | MAD STUDIO",
+   "status": 200,
+   "bytes": 673539,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We're hiring Interior Designers! Submit your portfolio & CV to start your career with MAD Studio.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.mad-studios.co.uk/careers",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 37306,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Agency for 3D Visuali­za­tion and Vir­tual Real­ity",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - i-mad.com",
+   "u": "https://www.i-mad.com/careers",
+   "s": "Our offices With locations in Beijing, Los Angeles, and Rome, our offices reflect MAD's global perspective and collaborative spirit. Each studio operates as par"
+  },
+  {
+   "t": "Careers - Mad Studio",
+   "u": "https://www.madstudiohk.com/careers",
+   "s": "We're hiring Interior Designers! Submit your portfolio & CV to start your career with MAD Studio."
+  },
+  {
+   "t": "MAD Studio Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Mad-Studio",
+   "s": "Find out what works well at MAD Studio from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "Careers - mad-studios.co.uk",
+   "u": "https://www.mad-studios.co.uk/careers",
+   "s": "Agency for 3D Visuali­za­tion and Vir­tual Real­ity"
+  },
+  {
+   "t": "Mad Studios Jobs in Worldwide (21,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/mad-studios-jobs-worldwide",
+   "s": "Today's top 21,000+ Mad Studios jobs in Worldwide. Leverage your professional network, and get hired. New Mad Studios jobs added daily."
+  },
+  {
+   "t": "MAD Studio",
+   "u": "https://www.linkedin.com/posts/mad-studiola_wearehiring-madstudio-designcareers-activity-7238961129392103424-nKzA",
+   "s": "We're Hiring! Calling all MAD minds ready to push the boundaries of design! Do you live and breathe creativity? Want to work with a team that's all about bold i"
+  },
+  {
+   "t": "CAREER - madstudio.al",
+   "u": "https://madstudio.al/index.php/career/",
+   "s": "CAREER Thank you for your interest in working at MAD Studio. We are always on the lookout for talented people driven by creativity and collaboration to join our"
+  },
+  {
+   "t": "join us | MAD STUDIO",
+   "u": "https://www.madstudio.ca/join-us",
+   "s": "Would you like to join our team? Our diverse and knowledgeable team has specialties in various fields of architecture: ranging from sustainable design, to herit"
+  },
+  {
+   "t": "Mad Studios Jobs in Worldwide (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/mad-studios-jobs-worldwide?f_EA=true",
+   "s": "Today's top 1,000+ Mad Studios jobs in Worldwide. Leverage your professional network, and get hired. New Mad Studios jobs added daily."
+  },
+  {
+   "t": "MAD Studio Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Mad-Studio",
+   "s": "Find out what works well at MAD Studio from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "CAREER - madstudio.al",
+   "u": "https://madstudio.al/index.php/career/",
+   "s": "CAREER Thank you for your interest in working at MAD Studio. We are always on the lookout for talented people driven by creativity and collaboration to join our"
+  },
+  {
+   "t": "Careers - Mad Studio",
+   "u": "https://www.madstudiohk.com/careers",
+   "s": "We're hiring Interior Designers! Submit your portfolio & CV to start your career with MAD Studio."
+  },
+  {
+   "t": "join us | MAD STUDIO",
+   "u": "https://www.madstudio.ca/join-us",
+   "s": "Would you like to join our team? Our diverse and knowledgeable team has specialties in various fields of architecture: ranging from sustainable design, to herit"
+  },
+  {
+   "t": "MAD Studios - Remote Work From Home Jobs & Careers | FlexJobs",
+   "u": "https://www.flexjobs.com/remote-jobs/company/mad_studios",
+   "s": "Find remote work from home jobs and careers with MAD Studios. Get a better remote job search with FlexJobs today!"
+  },
+  {
+   "t": "MAD Studio",
+   "u": "https://www.linkedin.com/posts/mad-studiola_wearehiring-madstudio-designcareers-activity-7238961129392103424-nKzA",
+   "s": "We're Hiring! Calling all MAD minds ready to push the boundaries of design! Do you live and breathe creativity? Want to work with a team that's all about bold i"
+  },
+  {
+   "t": "Jobs at Mad Studio",
+   "u": "https://meetfrank.com/company/mad-studio",
+   "s": "We're mad enough to believe that having one partner, who takes care of everything from creating your visual brand identity to developing a user-friendly website"
+  },
+  {
+   "t": "MAD Studio Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Mad-Studio",
+   "s": "Find out what works well at MAD Studio from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "Careers - Mad Studio",
+   "u": "https://www.madstudiohk.com/careers",
+   "s": "We're hiring Interior Designers! Submit your portfolio & CV to start your career with MAD Studio."
+  },
+  {
+   "t": "MAD Studios Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Mad-Studios",
+   "s": "Find out what works well at MAD Studios from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare p"
+  },
+  {
+   "t": "Careers - i-mad.com",
+   "u": "https://www.i-mad.com/careers",
+   "s": "With locations in Beijing, Los Angeles, and Rome, our offices reflect MAD's global perspective and collaborative spirit. Each studio operates as part of an inte"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.madstudiohk.com/careers",
+  "platform": "custom",
+  "title": "CAREERS | MAD STUDIO"
+ },
+ "verdict": "custom_surface"
 }

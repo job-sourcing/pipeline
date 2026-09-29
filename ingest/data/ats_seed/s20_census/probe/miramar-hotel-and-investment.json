@@ -2,10 +2,153 @@
  "brand": "Miramar Hotel and Investment",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:42:09.649Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:28:44.406Z",
+ "candidates": [
+  {
+   "url": "https://www.miramar-group.com/careers/",
+   "title": "Careers - Miramar Group",
+   "status": 200,
+   "bytes": 51609,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Our team is the backbone of our business and the foundation of our success. Miramar Group currently hires more than 1,000 employees, and we emphasize on",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careerpanels.com/company-career-portals/company/miramar-hotel-and-investment",
+   "title": "Miramar Hotel and Investment Careers, Jobs and Official Career Portal | CareerPanels",
+   "status": 200,
+   "bytes": 88043,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Miramar Hotel and Investment hires across Operations, Operations Manager, Business Operations Manager, General Manager, plus 52 additional career areas. Explore",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.miramar-group.com/jobs_category/jobs/",
+   "title": "Job-Opportunities - Miramar Group",
+   "status": 200,
+   "bytes": 52071,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Job-Opportunities - Miramar Group | MG",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Miramar Group",
+   "u": "https://www.miramar-group.com/careers/",
+   "s": "Careers Our team is the backbone of our business and the foundation of our success. Miramar Group currently hires more than 1,000 employees, and we emphasize on"
+  },
+  {
+   "t": "Miramar Hotel and Investment Careers and Jobs",
+   "u": "https://careerpanels.com/company-career-portals/company/miramar-hotel-and-investment",
+   "s": "Miramar Hotel and Investment hires across Operations, Operations Manager, Business Operations Manager, General Manager, plus 52 additional career areas. Explore"
+  },
+  {
+   "t": "Miramar Hotel And Investment Jobs & Careers - Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Miramar-Hotel-And-Investment-Jobs-E41086.htm",
+   "s": "What do employees say about career development at Miramar Hotel And Investment? As of September 2026, Miramar Hotel And Investment employees rate their career o"
+  },
+  {
+   "t": "Job-Opportunities - Miramar Group",
+   "u": "https://www.miramar-group.com/jobs_category/jobs/",
+   "s": "Job-Opportunities - Miramar Group | MG"
+  },
+  {
+   "t": "Miramar Hotel And Investment Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/miramar-hotel-and-investment-jobs",
+   "s": "Find your ideal job at Jobsdb with 17 Miramar Hotel And Investment jobs found in Hong Kong. View all our Miramar Hotel And Investment vacancies now with new job"
+  },
+  {
+   "t": "12 Miramar Hotel And Investment Company, Limited jobs in Hong Kong",
+   "u": "https://hk.jobsdb.com/Miramar-Hotel-and-Investment-Company,-Limited-jobs",
+   "s": "Find your ideal job on Jobsdb with 12 Miramar Hotel And Investment Company, Limited jobs (30 at Miramar Hotel And Investment Company, Limited) listed in Hong Ko"
+  },
+  {
+   "t": "Hotel Management Careers | Miramar Hospitality",
+   "u": "https://www.miramarhospitality.com/about-us/careers",
+   "s": "Explore hotel management careers at Miramar Hospitality. Join our dynamic team and grow professionally in a company that values service, innovation, and quality"
+  },
+  {
+   "t": "HOTEL MIRAMAR Careers and Employment | Indeed.com",
+   "u": "https://sg.indeed.com/cmp/Hotel-Miramar",
+   "s": "Find out what works well at HOTEL MIRAMAR from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  },
+  {
+   "t": "Miramar Hotel And Investment Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/miramar-hotel-and-investment-jobs",
+   "s": "Find your ideal job at Jobsdb with 17 Miramar Hotel And Investment jobs found in Hong Kong. View all our Miramar Hotel And Investment vacancies now with new job"
+  },
+  {
+   "t": "Miramar Hotel and Investment Careers and Jobs",
+   "u": "https://careerpanels.com/company-career-portals/company/miramar-hotel-and-investment",
+   "s": "Miramar Hotel and Investment hires across Operations, Operations Manager, Business Operations Manager, General Manager, plus 52 additional career areas. Explore"
+  },
+  {
+   "t": "12 Miramar Hotel And Investment Company, Limited jobs in Hong Kong",
+   "u": "https://hk.jobsdb.com/Miramar-Hotel-and-Investment-Company,-Limited-jobs",
+   "s": "Find your ideal job on Jobsdb with 12 Miramar Hotel And Investment Company, Limited jobs (30 at Miramar Hotel And Investment Company, Limited) listed in Hong Ko"
+  },
+  {
+   "t": "Miramar Hotel And Investment Jobs & Careers - Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Miramar-Hotel-And-Investment-Jobs-E41086.htm",
+   "s": "What do employees say about career development at Miramar Hotel And Investment? As of September 2026, Miramar Hotel And Investment employees rate their career o"
+  },
+  {
+   "t": "Careers - Miramar Group",
+   "u": "https://www.miramar-group.com/careers/",
+   "s": "Careers - Miramar Group | MG Our team is the backbone of our business and the foundation of our success. Miramar Group currently hires more than 1,000 employees"
+  },
+  {
+   "t": "Miramar Hotel And Investment Jobs & Careers - 31 Open Positions",
+   "u": "https://www.glassdoor.com.hk/Jobs/Miramar-Hotel-And-Investment-Jobs-E41086.htm",
+   "s": "Miramar Hotel And Investment Jobs FAQs Is Miramar Hotel And Investment currently hiring? Yes, Miramar Hotel And Investment is currently hiring for 31 open posit"
+  },
+  {
+   "t": "Job Opportunities - Hotels & Serviced Apartment - Miramar Group",
+   "u": "https://www.miramar-group.com/jobs_category/hotels/",
+   "s": "Job Opportunities - Hotels & Serviced Apartment - Miramar Group | MG"
+  },
+  {
+   "t": "Miramar Hotel & Investment Co. Ltd. Jobs in Hong Kong - Aug 2026 ...",
+   "u": "https://jobs.ctgoodjobs.hk/company-jobs/00013119/miramar-hotel-investment-co-ltd",
+   "s": "Explore 9 jobs in Hong Kong from Miramar Hotel & Investment Co. Ltd.. Browse through all our new daily-updated job listing now!"
+  },
+  {
+   "t": "Miramar Hotel and Investment Careers and Jobs",
+   "u": "https://careerpanels.com/company-career-portals/company/miramar-hotel-and-investment",
+   "s": "Explore Miramar Hotel and Investment careers in Operations, Operations Manager, Business Operations Manager, General Manager, Project Manager and other job fami"
+  },
+  {
+   "t": "Miramar Hotel And Investment Jobs & Careers - Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Miramar-Hotel-And-Investment-Jobs-E41086.htm",
+   "s": "Search job openings at Miramar Hotel And Investment. 29 Miramar Hotel And Investment jobs including salaries, ratings, and reviews, posted by Miramar Hotel And "
+  },
+  {
+   "t": "Job-Opportunities - Miramar Group",
+   "u": "https://www.miramar-group.com/jobs_category/jobs/",
+   "s": "Job-Opportunities - Miramar Group | MG"
+  },
+  {
+   "t": "Careers - Miramar Group",
+   "u": "https://www.miramar-group.com/careers/",
+   "s": "Careers Our team is the backbone of our business and the foundation of our success. Miramar Group currently hires more than 1,000 employees, and we emphasize on"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.miramar-group.com/careers/",
+  "platform": "custom",
+  "title": "Careers - Miramar Group"
+ },
+ "verdict": "custom_surface"
 }

@@ -2,10 +2,148 @@
  "brand": "Hainan Airlines",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:18:52.479Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:27:14.972Z",
+ "candidates": [
+  {
+   "url": "https://www.hainanairlines.com/US/GB/FlyingCareer",
+   "title": "HNA Foreign Captain Recruitment",
+   "status": 200,
+   "bytes": 152493,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Flight check-in deadline of each airport. Information for Passengers. Transfer information. Transit service for domestic hub city airports.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.hainanairlines.com/AT/DE/FlyingCareer",
+   "title": "HNA Foreign Captain Recruitment",
+   "status": 200,
+   "bytes": 151563,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Transitdienste an inländischen Drehkreuzflughäfen.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.hainanairlines.com/INT/DE/FlyingCareer",
+   "title": "HNA Foreign Captain Recruitment",
+   "status": 200,
+   "bytes": 150795,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Sie haben Ihr Passwort vergessen?",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "HNA Foreign Captain Recruitment - hainanairlines.com",
+   "u": "https://www.hainanairlines.com/US/GB/FlyingCareer",
+   "s": "Flight check-in deadline of each airport. Information for Passengers. Transfer information. Transit service for domestic hub city airports."
+  },
+  {
+   "t": "Please select your location and your preferred language",
+   "u": "https://www.hainanairlines.com/en/recruitment",
+   "s": "United States 美国 - 简体中文 Estados Unidos - Español USA - English Mexico 墨西哥 - 简体中文 Mexico - English México - Español"
+  },
+  {
+   "t": "Career - hainanairlines.com",
+   "u": "https://www.hainanairlines.com/HUPortal/dyn/portal/DisplayPage?COUNTRY_SITE=JP&SITE=CBHZCBHZ&LANGUAGE=GB&PAGE=JPCA",
+   "s": "Transit service for domestic hub city airports."
+  },
+  {
+   "t": "新海航航空集团招聘网-官方网站 - hnair.com",
+   "u": "http://recruitment.hnair.com/HRCandidateManageAir/home.aspx",
+   "s": "新海航航空集团旗下三亚航院是教育部批准备案的全日制高职院校、海南省内唯一获批\"双高\"学校的民办高职高专，构建航空、航海、旅游免税三大专业集群，拥有CCAR-147培训资质，学生在校期间即可考取飞机维修执照，实现带照毕业。 学校在2026年GDI高职高专（民办）排行榜中排名海南省第一。 从生活关爱、工作服务、家庭保障、职"
+  },
+  {
+   "t": "HNA Foreign Captain Recruitment - Hainan Airlines",
+   "u": "https://www.hainanairlines.com/AT/DE/FlyingCareer",
+   "s": "Transitdienste an inländischen Drehkreuzflughäfen."
+  },
+  {
+   "t": "HNA Foreign Captain Recruitment - Hainan Airlines",
+   "u": "https://www.hainanairlines.com/INT/DE/FlyingCareer",
+   "s": "Sie haben Ihr Passwort vergessen?"
+  },
+  {
+   "t": "Career prospects with Hainan Airlines | AviationCV.com",
+   "u": "https://www.aviationcv.com/organization/hainan-airlines",
+   "s": "Find highest paying jobs in aviation presented by Hainan Airlines on AviationCV.com. Airlines and MRO providers worldwide offer cabin crew, engineer and pilot j"
+  },
+  {
+   "t": "How to Become Cabin Crew with Hainan Airlines in 2026",
+   "u": "https://cabincrew24.com/how-to-become-cabin-crew-with-hainan-airlines/",
+   "s": "Visit Hainan Airlines' official career page and find the available cabin crew positions. Submit your updated resume, head and full-body photographs, and require"
+  },
+  {
+   "t": "Please select your location and your preferred language",
+   "u": "https://www.hainanairlines.com/en/recruitment",
+   "s": "United States 美国 - 简体中文 Estados Unidos - Español USA - English Mexico 墨西哥 - 简体中文 Mexico - English México - Español"
+  },
+  {
+   "t": "HNA Foreign Captain Recruitment - hainanairlines.com",
+   "u": "https://www.hainanairlines.com/US/GB/FlyingCareer",
+   "s": "HNA Foreign Captain Recruitment ???ALLP.text.SRlanguageSelectlanguage??? 澳大利亚 - 简体中文Australia - EnglishAustria - Deutsch奥地利 - 简体中文Austria - English比利时 - 简体中文Bel"
+  },
+  {
+   "t": "Career prospects with Hainan Airlines | AviationCV.com",
+   "u": "https://www.aviationcv.com/organization/hainan-airlines",
+   "s": "Find highest paying jobs in aviation presented by Hainan Airlines on AviationCV.com. Airlines and MRO providers worldwide offer cabin crew, engineer and pilot j"
+  },
+  {
+   "t": "Hainan Airlines International Cabin Crew Recruitment",
+   "u": "https://betteraviationjobs.com/job/hainan-airlines-international-cabin-crew-recruitment-july-2026/",
+   "s": "Company Profile: Hainan Airlines Holding Co., Ltd. (hereafter referred to as \"Hainan Airlines\") was established in January, 1993 in Hainan Province, China's lar"
+  },
+  {
+   "t": "新海航航空集团招聘网-官方网站 - hnair.com",
+   "u": "http://recruitment.hnair.com/HRCandidateManageAir/home.aspx",
+   "s": "新海航航空集团自2021年12月8日以来由辽宁方大集团控股，控股航空公司23家，资产规模近2800亿元，是国内第四大航空集团，实现航空客运、航空货运、通用航空、航空辅业等全业务体系运营。 新海航航空集团全面弘扬辽宁方大集团\"党建为魂\"的企业文化，坚持发展企业要符合习近平总书记和党 ..."
+  },
+  {
+   "t": "Hainan Airlines Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Hainan-Airlines",
+   "s": "Find out what works well at Hainan Airlines from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "Hainan Airlines - PILOT CAREER CENTER",
+   "u": "https://pilotcareercenter.com/Air-Carrier-PCC-Profile/468/Hainan-Airlines",
+   "s": "Information about Hainan Airlines on PILOT CAREER CENTER. Welcome to PILOT CAREER CENTER - Pilot Jobs and more! pilotcareercenter.com is a dedicated 24 hour web"
+  },
+  {
+   "t": "How to Become Cabin Crew with Hainan Airlines in 2026",
+   "u": "https://cabincrew24.com/how-to-become-cabin-crew-with-hainan-airlines/",
+   "s": "Why join Hainan Airlines as a cabin crew member? Hainan Airlines has earned a reputation as one of China's leading airlines, offering top-tier customer service "
+  },
+  {
+   "t": "Please select your location and your preferred language",
+   "u": "https://www.hainanairlines.com/en/recruitment",
+   "s": "United States 美国 - 简体中文 Estados Unidos - Español USA - English Mexico 墨西哥 - 简体中文 Mexico - English México - Español"
+  },
+  {
+   "t": "Hainan Airlines Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Hainan-Airlines",
+   "s": "Find out what works well at Hainan Airlines from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "HNA Foreign Captain Recruitment - Hainan Airlines",
+   "u": "https://www.hainanairlines.com/US/US/FlyingCareer",
+   "s": "HNA Foreign Captain Recruitment ???ALLP.text.SRlanguageSelectlanguage??? 澳大利亚 - 简体中文Australia - EnglishAustria - Deutsch奥地利 - 简体中文Austria - English比利时 - 简体中文Bel"
+  },
+  {
+   "t": "Hainan Airlines International Cabin Crew Recruitment",
+   "u": "https://betteraviationjobs.com/job/hainan-airlines-international-cabin-crew-recruitment-july-2026/",
+   "s": "Company Profile: Hainan Airlines Holding Co., Ltd. (hereafter referred to as \"Hainan Airlines\") was established in January, 1993 in Hainan Province, China's lar"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

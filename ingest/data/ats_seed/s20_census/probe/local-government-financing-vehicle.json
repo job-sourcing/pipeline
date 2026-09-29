@@ -2,10 +2,148 @@
  "brand": "Local government financing vehicle",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:41:04.009Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:24:30.925Z",
+ "candidates": [
+  {
+   "url": "https://elgl.org/elgl-job-board-the-premiere-resource-for-local-gov-careers/",
+   "title": "ELGL Job Board the Premiere Resource for Local Gov Careers - ELGL",
+   "status": 200,
+   "bytes": 73796,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Did you know that there are more than 440 jobs posted right now on the ELGL Job Board? Unlike the jobs on other job boards, ours are from organizations that are",
+   "backend": "direct"
+  },
+  {
+   "url": "https://sgrjobs.governmentresource.com/",
+   "title": "SGR Job Board",
+   "status": 200,
+   "bytes": 679294,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Explore SGR Job Board: Your source for 1,600+ daily local government job openings. Post your job for 16,000+ monthly visitors.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.governmentjobs.com/",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Find a government job today! Use our job search engine to browse federal, city and state jobs, and apply online. From entry-level to executive, find your career",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Government Resource - SGR Job Board",
+   "u": "https://sgrjobs.governmentresource.com/",
+   "s": "Explore SGR Job Board: Your source for 1,600+ daily local government job openings. Post your job for 16,000+ monthly visitors."
+  },
+  {
+   "t": "Local Government Finance Jobs in Chicago (128 Open Roles ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/local-government-finance-jobs-chicago-il",
+   "s": "Today's top 128 Local Government Finance jobs in Chicago. Leverage your professional network, and get hired. New Local Government Finance jobs added daily."
+  },
+  {
+   "t": "Local Government Finance Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Local-Government-Finance-jobs.html",
+   "s": "Today's top Local Government Finance jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Employment Resources for Finance Officers",
+   "u": "https://www.gfoa.org/employment-resources",
+   "s": "Resources for Government Employers GFOA can assist local government recruit for your finance office. Using resources on this site, create job postings, develop "
+  },
+  {
+   "t": "Jobs Board - Government Finance Officers Association",
+   "u": "https://www.gfoa.org/jobs",
+   "s": "The Government Finance Officers Association (GFOA), founded in 1906, represents public finance officials throughout the United States and Canada."
+  },
+  {
+   "t": "Jobs - ELGL",
+   "u": "https://elgl.org/jobs/",
+   "s": "The ELGL Job Board is a member-powered hub built by and for local government professionals. Members can post jobs for free (yes, really), share opportunities wi"
+  },
+  {
+   "t": "ELGL Job Board the Premiere Resource for Local Gov Careers - ELGL",
+   "u": "https://elgl.org/elgl-job-board-the-premiere-resource-for-local-gov-careers/",
+   "s": "Did you know that there are more than 440 jobs posted right now on the ELGL Job Board? Unlike the jobs on other job boards, ours are from organizations that are"
+  },
+  {
+   "t": "The Rise and Fall of LGFVs - by Jordan Schneider",
+   "u": "https://www.chinatalk.media/p/the-rise-and-fall-of-lgfvs",
+   "s": "The Rise and Fall of LGFVs How China's local government financing vehicles (LGFVs) became China's most complex economic challenge Jordan Schneider Sep 19, 2024 "
+  },
+  {
+   "t": "Local government financing vehicle - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Local_government_financing_vehicle",
+   "s": "Local government financing vehicle In China, a local government financing vehicle (LGFV) (Chinese: 地方政府融资平台) is an investment company formed by local government"
+  },
+  {
+   "t": "Jobs - ELGL",
+   "u": "https://elgl.org/jobs/",
+   "s": "The ELGL Job Board is a member-powered hub built by and for local government professionals. Members can post jobs for free (yes, really), share opportunities wi"
+  },
+  {
+   "t": "Government Resource - SGR Job Board",
+   "u": "https://sgrjobs.governmentresource.com/",
+   "s": "Explore SGR Job Board: Your source for 1,600+ daily local government job openings. Post your job for 16,000+ monthly visitors."
+  },
+  {
+   "t": "Local Government Finance Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Local-Government-Finance-jobs.html",
+   "s": "Today's top Local Government Finance jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "The Rise and Fall of LGFVs - by Jordan Schneider",
+   "u": "https://www.chinatalk.media/p/the-rise-and-fall-of-lgfvs",
+   "s": "\"Allowing local government to finance the investment projects by essentially all sources of funds, including budgetary revenue, land revenue and fund borrowed b"
+  },
+  {
+   "t": "GovernmentJobs | City, State, Federal & Public Sector Jobs",
+   "u": "https://www.governmentjobs.com/",
+   "s": "Find a government job today! Use our job search engine to browse federal, city and state jobs, and apply online. From entry-level to executive, find your career"
+  },
+  {
+   "t": "Employment Resources for Finance Officers",
+   "u": "https://www.gfoa.org/employment-resources",
+   "s": "Resources for Government Employers GFOA can assist local government recruit for your finance office. Using resources on this site, create job postings, develop "
+  },
+  {
+   "t": "Jobs Board - Government Finance Officers Association",
+   "u": "https://www.gfoa.org/jobs",
+   "s": "The Government Finance Officers Association (GFOA), founded in 1906, represents public finance officials throughout the United States and Canada."
+  },
+  {
+   "t": "Local Government Finance Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Local-Government-Finance-jobs.html",
+   "s": "Today's top Local Government Finance jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Now Hiring: 3,000 Government Vehicle Fleet Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Government-Vehicle-Fleet-jobs.html",
+   "s": "3,166 Government Vehicle Fleet jobs. Apply to Fleet Manager, Operator, Mechanic and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "8,000+ Local Government Finance jobs in United States",
+   "u": "https://www.linkedin.com/jobs/local-government-finance-jobs",
+   "s": "Today's top 8,000+ Local Government Finance jobs in United States. Leverage your professional network, and get hired. New Local Government Finance jobs added da"
+  },
+  {
+   "t": "Government Jobs in City, County & State - GovtJobs",
+   "u": "https://www.govtjobs.com/",
+   "s": "Since 1997, Leading government career site devoted to government professionals seeking employment in the public sector. Find state and local government jobs for"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

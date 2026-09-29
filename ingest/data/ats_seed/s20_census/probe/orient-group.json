@@ -2,10 +2,153 @@
  "brand": "Orient Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:32:44.306Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:25:14.751Z",
+ "candidates": [
+  {
+   "url": "https://orient.global/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 26224,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Jobs Archive - Orient Group We are seeking a skilled and experienced SAP PP Consultant to join our dynamic team and support our companies in implementing, confi",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.orient-express.com/en/your-careers",
+   "title": "Your careers | Orient Express",
+   "status": 200,
+   "bytes": 237526,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Since 2022, Orient Express is part of Accor Group's leading collection of luxury brands with a century-old legacy in the hotels and fine- dining sectors. In 202",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.orientgroup.com/en/job.html",
+   "title": "Career Training",
+   "status": 200,
+   "bytes": 6913,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Career Training A small step of growth of each employee is a big step of development of the enterprise. We will do our best to let every passionate and dreamy e",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Jobs Archive - Orient Group",
+   "u": "https://orient.global/careers/",
+   "s": "Jobs Archive - Orient Group We are seeking a skilled and experienced SAP PP Consultant to join our dynamic team and support our companies in implementing, confi"
+  },
+  {
+   "t": "Your careers | Orient Express",
+   "u": "https://www.orient-express.com/en/your-careers",
+   "s": "Since 2022, Orient Express is part of Accor Group's leading collection of luxury brands with a century-old legacy in the hotels and fine- dining sectors. In 202"
+  },
+  {
+   "t": "Career Training - orientgroup.com",
+   "u": "https://www.orientgroup.com/en/job.html",
+   "s": "Career Training A small step of growth of each employee is a big step of development of the enterprise. We will do our best to let every passionate and dreamy e"
+  },
+  {
+   "t": "Careers - orientgroups.net",
+   "u": "https://orientgroups.net/careers.html",
+   "s": "Add. Al sadd St.Doha, Qatar tel. +74 44421812 FAX +974 444157313 Email info@orientqatar.com"
+  },
+  {
+   "t": "Careers - Mandarin Oriental Hotel Group",
+   "u": "https://www.mandarinoriental.com/en/careers",
+   "s": "Should you have any questions or concerns related to jobs advertised or offers made using Mandarin Oriental Hotel Group's name or the name of any of the propert"
+  },
+  {
+   "t": "Careers: Join the Orient Electric Family - Where Careers Soar",
+   "u": "https://orientelectric.com/pages/careers",
+   "s": "Join Orient Electric's dynamic team! Explore career opportunities and be a part of our commitment to excellence."
+  },
+  {
+   "t": "Jobs - orientgroup4u.com",
+   "u": "https://orientgroup4u.com/jobs/",
+   "s": "Our jobs Restaurant Operations (SGD $18 - $35 / hr) Support daily restaurant operations, coordination, and backend processes in a remote environment."
+  },
+  {
+   "t": "Open Positions at Orient Software | Join Our Team",
+   "u": "https://www.orientsoftware.com/company/careers/",
+   "s": "Join Orient Software and build technology that makes a real impact. A team where your ideas matter and your growth is genuinely supported"
+  },
+  {
+   "t": "Jobs Archive - Orient Group",
+   "u": "https://orient.global/careers/",
+   "s": "Orient Group of Companies is looking for a competent and detail-oriented Assistant Manager - Import for our Head Office in Lahore. The ideal candidate will be r"
+  },
+  {
+   "t": "Career Training",
+   "u": "https://www.orientgroup.com/en/job.html",
+   "s": "Orient Group attaches great importance to the overall positioning strategy,combining personal goals with our training system to build a learning-oriented enterp"
+  },
+  {
+   "t": "Careers - orientgroups.net",
+   "u": "https://orientgroups.net/careers.html",
+   "s": "Add. Al sadd St.Doha, Qatar tel. +74 44421812 FAX +974 444157313 Email info@orientqatar.com"
+  },
+  {
+   "t": "orientgroup4u.com",
+   "u": "https://orientgroup4u.com/",
+   "s": "Orient Group is a remote-first team supporting global hospitality and restaurant brands. We bring together talented professionals across marketing, operations, "
+  },
+  {
+   "t": "Your careers | Orient Express",
+   "u": "https://www.orient-express.com/en/your-careers",
+   "s": "Since 2022, Orient Express is part of Accor Group's leading collection of luxury brands with a century-old legacy in the hotels and fine- dining sectors. In 202"
+  },
+  {
+   "t": "Orient Group",
+   "u": "https://www.orientgroup.com/en/",
+   "s": "Orient Group Vision To be a world-class enterprise with independent intellectual property rights and core competitiveness. Mission From Orient to World. Strateg"
+  },
+  {
+   "t": "4 Orient Group jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/orient-group-jobs-worldwide",
+   "s": "Today's top 4 Orient Group jobs in Worldwide. Leverage your professional network, and get hired. New Orient Group jobs added daily."
+  },
+  {
+   "t": "Recruit | ORIENTAL HOTELS ＆ RESORTS Co., Ltd.",
+   "u": "https://www.oriental-hotels.com/en/recruit/",
+   "s": "The philosophy of the Hotel Management Japan Group, a multi-brand operator, is that the hotel itself provides a valuable experience as a unique travel destinati"
+  },
+  {
+   "t": "Jobs Archive - Orient Group",
+   "u": "https://orient.global/careers/",
+   "s": "Dear Students, Thank you for expressing your interest in career opportunities at Orient Group of Companies.Please submit your resumes, and our hiring team will "
+  },
+  {
+   "t": "Careers - orientgroups.net",
+   "u": "https://orientgroups.net/careers.html",
+   "s": "please Send your CV to This E-mail : recruitment@orientqatar.com"
+  },
+  {
+   "t": "Career Training",
+   "u": "https://www.orientgroup.com/en/job.html",
+   "s": "Career Training A small step of growth of each employee is a big step of development of the enterprise. We will do our best to let every passionate and dreamy e"
+  },
+  {
+   "t": "job - Oriental Group",
+   "u": "http://group-oriental.com/job/",
+   "s": "job Job Application Form Hello, We have received your application for a job within our company and thank you for it. To examine your application more thoroughly"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.orient-express.com/en/your-careers",
+  "platform": "custom",
+  "title": "Your careers | Orient Express"
+ },
+ "verdict": "custom_surface"
 }

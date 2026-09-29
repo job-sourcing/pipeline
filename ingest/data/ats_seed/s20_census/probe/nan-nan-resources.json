@@ -2,7 +2,7 @@
  "brand": "Nan Nan Resources",
  "tier": "lca",
  "lca": "NAN, INC.",
- "ts": "2026-09-27T07:28:36.659Z",
+ "ts": "2026-09-29T04:24:21.076Z",
  "candidates": [
   {
    "url": "https://nan.com/careers",
@@ -17,28 +17,28 @@
    "backend": "direct"
   },
   {
-   "url": "https://nana.dejobs.org/jobs/",
-   "title": "",
-   "status": 202,
-   "bytes": 2412,
+   "url": "https://nanonuclearenergy.com/careers/",
+   "title": "Careers | NANO Nuclear Energy",
+   "status": 200,
+   "bytes": 125075,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "Jobs, updated and verified daily by DirectEmployers Association.",
+   "snippet": "About NANO Nuclear Energy NANO Nuclear Energy is an advanced nuclear technology company developing next-generation microreactor systems that will help transform",
    "backend": "direct"
   },
   {
-   "url": "https://www.nanonline.org/Nanweb24/Nanweb/Jobs/Job-Bank.aspx",
-   "title": "Job Bank | National Academy of Neuropsychology",
+   "url": "https://careercentral.nann.org/jobseekers/index.cfm",
+   "title": "National Association of Neonatal Nurses (NANN), NANN Career Central|Find Your Career Here",
    "status": 200,
-   "bytes": 1380476,
+   "bytes": 109742,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "Find neuropsychology job opportunities and resources through the National Academy of Neuropsychology's Job Bank.",
-   "backend": "supabase"
+   "snippet": "National Association of Neonatal Nurses (NANN) - Find your next career at NANN Career Central. Check back frequently as new jobs are posted every day.",
+   "backend": "direct"
   }
  ],
  "results": [
@@ -53,89 +53,89 @@
    "s": "NAN is an Equal Opportunity Employer and does not discriminate on the basis of race, color, religion, sex, age, national origin, disability, veteran status, sex"
   },
   {
+   "t": "Home - Nishnawbe Aski Nation",
+   "u": "https://www.nan.ca/",
+   "s": "APITIPI ANICINAPEK NATION: Leaders from across Nishnawbe Aski Nation (NAN) stood united today in defence of their Treaty and inherent rights, and jurisdiction o"
+  },
+  {
+   "t": "Nan Nan Resources - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Nan_Nan_Resources",
+   "s": "Nan Nan Resources Enterprise Limited (Chinese: 南南資源實業有限公司) (SEHK: 1229) is a Hong Kong -based investment holding company. It is primarily focused on mining coal"
+  },
+  {
+   "t": "NAN, INC Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Nan,-Inc",
+   "s": "Find out what works well at NAN, INC from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "Nan Nan Resources Enterprise Limited (1229.HK)",
+   "u": "https://ca.finance.yahoo.com/quote/1229.HK/profile/",
+   "s": "See the company profile for Nan Nan Resources Enterprise Limited (1229.HK) including business summary, industry/sector information, number of employees, busines"
+  },
+  {
+   "t": "Nan Nan Resources Enterprise Company Description",
+   "u": "https://stockanalysis.com/quote/hkg/1229/company/",
+   "s": "Company profile for Nan Nan Resources Enterprise Limited (HKG:1229) with a description, list of executives, contact details and other key facts."
+  },
+  {
+   "t": "Careers at NAN - ici.net",
+   "u": "https://www.ici.net/careers",
+   "s": "NAN leads the industry in wellness, work-life balance, and growth opportunities through a competitive mix of perks and benefits."
+  },
+  {
+   "t": "Nan Nan Resources Enterprise Limited - Home",
+   "u": "http://www.nannanlisted.com/en/",
+   "s": "Nan Nan Resources Enterprise Limited (the \"Company\") is a company incorporated in Bermuda with limited liability whose shares are listed and trade on the Main B"
+  },
+  {
+   "t": "Careers at NAN | Trusted Technology Advisor",
+   "u": "https://nan.com/careers",
+   "s": "NAN is an Equal Opportunity Employer and does not discriminate on the basis of race, color, religion, sex, age, national origin, disability, veteran status, sex"
+  },
+  {
+   "t": "Home - Nishnawbe Aski Nation",
+   "u": "https://www.nan.ca/",
+   "s": "Nishnawbe Aski Nation is a political territorial organization representing 49 First Nation communities within northern Ontario. It represents the legitimate, so"
+  },
+  {
+   "t": "NAN, INC Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Nan,-Inc",
+   "s": "Find out what works well at NAN, INC from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "100 Nan Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-nan-jobs.html",
+   "s": "118 Nan jobs available on Indeed.com. Apply to Site Manager, Ada Coordinator, Reading Specialist and more!"
+  },
+  {
+   "t": "Careers at NAN",
+   "u": "https://www.ici.net/careers",
+   "s": "NAN is committed to creating an accessible and inclusive hiring process. As part of this commitment, we strive to provide reasonable accommodations for persons "
+  },
+  {
+   "t": "Home | National Academy of Neuropsychology",
+   "u": "https://www.nanonline.org/",
+   "s": "I utilize NAN resources in my leadership role and I enjoy having a community of professionals that I trust as a 'go to' for mentorship and guidance. The resourc"
+  },
+  {
+   "t": "Project Coordinator for Governance, RECOFTC Thailand (Based in Nan ...",
+   "u": "https://unjobs.org/vacancies/1790581835089",
+   "s": "About the project The Phu Kha forest landscape in Nan province faces mounting pressure from the expansion of monoculture agriculture, habitat degradation, unsus"
+  },
+  {
+   "t": "Careers at NAN | Trusted Technology Advisor",
+   "u": "https://nan.com/careers",
+   "s": "NAN is an Equal Opportunity Employer and does not discriminate on the basis of race, color, religion, sex, age, national origin, disability, veteran status, sex"
+  },
+  {
    "t": "NAN NAN WELLNESS Careers Singapore | Get A Job At NAN NAN WELLNESS in ...",
    "u": "https://www.mycareersfuture.gov.sg/companies/nan-nan-wellness-53468773C",
    "s": "The smarter way for Singaporeans to find jobs. Match jobs to your skills, explore new careers, and access job opportunities with government support."
   },
   {
-   "t": "NANA Regional Corp Jobs & Careers - 54 Open Positions",
-   "u": "https://www.glassdoor.com/Jobs/NANA-Regional-Corp-Jobs-E542221.htm",
-   "s": "Search job openings at NANA Regional Corp. 54 NANA Regional Corp jobs including salaries, ratings, and reviews, posted by NANA Regional Corp employees."
-  },
-  {
-   "t": "Jobs | NANA Regional Corporation",
-   "u": "https://nana.dejobs.org/jobs/",
-   "s": "Jobs, updated and verified daily by DirectEmployers Association."
-  },
-  {
-   "t": "50 Nana Regional Jobs, Employment | Indeed",
-   "u": "https://www.indeed.com/q-Nana-Regional-jobs.html",
-   "s": "Today's top Nana Regional jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
-  },
-  {
-   "t": "Job Bank | National Academy of Neuropsychology",
-   "u": "https://www.nanonline.org/Nanweb24/Nanweb/Jobs/Job-Bank.aspx",
-   "s": "Find neuropsychology job opportunities and resources through the National Academy of Neuropsychology's Job Bank."
-  },
-  {
-   "t": "Nan Nan Resources Enterprise Limited - Corporate Profile",
-   "u": "https://www.nannanlisted.com/en/about-us.html",
-   "s": "Nan Nan Resources Enterprise Limited (the \"Company\") is a company incorporated in Bermuda with limited liability whose shares are listed and trade on the Main B"
-  },
-  {
-   "t": "Nan Nan Resources Enterprise Limited - Home",
-   "u": "http://www.nannanlisted.com/en/",
-   "s": "Corporate Profile Nan Nan Resources Enterprise Limited (the \"Company\") is a company incorporated in Bermuda with limited liability whose shares are listed and t"
-  },
-  {
-   "t": "Careers at NAN | Trusted Technology Advisor",
-   "u": "https://nan.com/careers",
-   "s": "NAN is an Equal Opportunity Employer and does not discriminate on the basis of race, color, religion, sex, age, national origin, disability, veteran status, sex"
-  },
-  {
-   "t": "Nan Jobs in United States (64 Open Roles) | LinkedIn",
-   "u": "https://www.linkedin.com/jobs/nan-jobs?countryRedirected=1",
-   "s": "Today's top 64 Nan jobs in United States. Leverage your professional network, and get hired. New Nan jobs added daily."
-  },
-  {
-   "t": "50 Nan Jobs & Work | Indeed",
-   "u": "https://www.indeed.com/q-company%3anan-jobs.html",
-   "s": "71 Nan jobs available on Indeed.com. Apply to Server, Customer Service Representative, Supervisor and more!"
-  },
-  {
-   "t": "Careers - Nishnawbe Aski Nation",
-   "u": "https://www.nan.ca/careers/",
-   "s": "Careers NAN Corporate Services combines competitive pay, comprehensive benefits and an employee-focused, progressive and flexible working environment. In additi"
-  },
-  {
-   "t": "Career Opportunities - Nan, Inc. A trusted name in the building ...",
-   "u": "https://www.nanhawaii.com/career-opportunities/",
-   "s": "A trusted name in the building industry, Nan, Inc. provides a wide array of professional construction services — including preconstruction, general contracting,"
-  },
-  {
-   "t": "Nan Inc Careers and Employment | Indeed.com",
-   "u": "https://www.indeed.com/cmp/Nan-Inc",
-   "s": "Find out what works well at Nan Inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
-  },
-  {
-   "t": "Nan Nan Resources Enterprise Limited - Corporate Profile",
-   "u": "https://www.nannanlisted.com/en/about-us.html",
-   "s": "Nan Nan Resources Enterprise Limited (the \"Company\") is a company incorporated in Bermuda with limited liability whose shares are listed and trade on the Main B"
-  },
-  {
-   "t": "Careers at NAN | Trusted Technology Advisor",
-   "u": "https://nan.com/careers",
-   "s": "NAN is an Equal Opportunity Employer and does not discriminate on the basis of race, color, religion, sex, age, national origin, disability, veteran status, sex"
-  },
-  {
-   "t": "Career Center - NANN",
-   "u": "https://nann.org/professional-development/career-center/",
-   "s": "Neonatal Nursing Careers: Connecting the Best Nurses with Great Jobs The National Association of Neonatal Nurses (NANN) Career Center is the premier resource fo"
-  },
-  {
-   "t": "National Association of Neonatal Nurses (NANN), NANN Career Central ...",
-   "u": "https://careercentral.nann.org/jobseekers/index.cfm",
-   "s": "National Association of Neonatal Nurses (NANN) - Find your next career at NANN Career Central. Check back frequently as new jobs are posted every day."
+   "t": "NAN TRADER PTE. LTD. Careers Singapore | Get A Job At NAN TRADER PTE ...",
+   "u": "https://www.mycareersfuture.gov.sg/companies/nan-trader-202609705N",
+   "s": "The smarter way for Singaporeans to find jobs. Match jobs to your skills, explore new careers, and access job opportunities with government support."
   },
   {
    "t": "Nan Nan Resources Enterprise Limited - Home",

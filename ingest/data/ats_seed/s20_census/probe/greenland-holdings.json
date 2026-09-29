@@ -2,10 +2,153 @@
  "brand": "Greenland Holdings",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:18:31.464Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:26:37.350Z",
+ "candidates": [
+  {
+   "url": "https://greenlandusa.com/careers",
+   "title": "Careers | Greenland",
+   "status": 200,
+   "bytes": 21094,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Greenland USA develops residential and commercial properties that transform communities and exemplify modern living throughout the United States.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://app.jobzmall.com/greenland-holdings-group/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 10599,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Greenland Holdings Corp. Ltd. engaged in development, sales and leasing of real estates. The company also involves in the second-hand housing agency, financial ",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.thejobsmap.com/company/greenland-holding-group",
+   "title": "Greenland Holding Group Jobs &amp; Careers | TheJobsMap",
+   "status": 200,
+   "bytes": 14680,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "About Greenland Holding Group Greenland Holdings Corp., Ltd. is a Chinese state-owned real estate developer and one of Chinas largest property conglomerates, fo",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | Greenland",
+   "u": "https://greenlandusa.com/careers",
+   "s": "Greenland USA develops residential and commercial properties that transform communities and exemplify modern living throughout the United States."
+  },
+  {
+   "t": "Greenland Holding Group Company Limited - LinkedIn",
+   "u": "https://www.linkedin.com/company/greenland-holding-group-company-limited",
+   "s": "Greenland Holding Group Company Limited | 10,871 followers on LinkedIn. Established on July 18, 1992, Greenland Group has become one of the biggest state-owned "
+  },
+  {
+   "t": "Careers and Job Openings @ Greenland Holdings Group | JobzMall",
+   "u": "https://app.jobzmall.com/greenland-holdings-group/jobs",
+   "s": "Greenland Holdings Corp. Ltd. engaged in development, sales and leasing of real estates. The company also involves in the second-hand housing agency, financial "
+  },
+  {
+   "t": "Home | Greenland",
+   "u": "https://greenlandusa.com/",
+   "s": "Greenland USA was established in 2013 as a subsidiary of Greenland Holding Group, which is publicly traded on the Shanghai Stock Exchange (SSE) and ranked 252nd"
+  },
+  {
+   "t": "Greenland Holding Group Jobs & Careers | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/greenland-holding-group",
+   "s": "About Greenland Holding Group Greenland Holdings Corp., Ltd. is a Chinese state-owned real estate developer and one of Chinas largest property conglomerates, fo"
+  },
+  {
+   "t": "Greenland Holdings Group Corporation Limited Reviews, Salaries and Jobs ...",
+   "u": "https://en.jobui.com/company/13905193/",
+   "s": "Learn about working at Greenland Holdings Group Corporation Limited. Get the latest jobs, salary information, employee reviews and company introduction. Summary"
+  },
+  {
+   "t": "Greenland Investment Management - Careers",
+   "u": "https://greenlandim.com/pages/Careers.html",
+   "s": "Careers We provide an intellectually driven environment for the brightest minds to work on hard problems using cutting edge technology and making a large impact"
+  },
+  {
+   "t": "Greenland Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Greenland",
+   "s": "Find out what works well at Greenland from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "Careers | Greenland",
+   "u": "https://greenlandusa.com/careers",
+   "s": "Greenland USA develops residential and commercial properties that transform communities and exemplify modern living throughout the United States."
+  },
+  {
+   "t": "Greenland Holding Group Company Limited - LinkedIn",
+   "u": "https://www.linkedin.com/company/greenland-holding-group-company-limited",
+   "s": "Greenland Holding Group Company Limited | 10,871 followers on LinkedIn. Established on July 18, 1992, Greenland Group has become one of the biggest state-owned "
+  },
+  {
+   "t": "Greenland Holding Group Jobs & Careers | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/greenland-holding-group",
+   "s": "About Greenland Holding Group Greenland Holdings Corp., Ltd. is a Chinese state-owned real estate developer and one of Chinas largest property conglomerates, fo"
+  },
+  {
+   "t": "Greenland Holding Reviews, Salaries, Interview Intel & Jobs [2026 ...",
+   "u": "https://candidatesreach.com/companies/greenland-holding",
+   "s": "Greenland Holding Group is a major Chinese state-backed real estate developer and diversified enterprise. It focuses primarily on large-scale urban complex deve"
+  },
+  {
+   "t": "10,000+ Greenland Technologies Holding Corp jobs in United States",
+   "u": "https://www.linkedin.com/jobs/greenland-technologies-holding-corp-jobs",
+   "s": "Today's top 10,000+ Greenland Technologies Holding Corp jobs in United States. Leverage your professional network, and get hired. New Greenland Technologies Hol"
+  },
+  {
+   "t": "Home | Greenland",
+   "u": "https://greenlandusa.com/",
+   "s": "Greenland USA was established in 2013 as a subsidiary of Greenland Holding Group, which is publicly traded on the Shanghai Stock Exchange (SSE) and ranked 252nd"
+  },
+  {
+   "t": "Greenland USA Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Greenland-USA",
+   "s": "Greenland USA is a subsidiary of Shanghai-based Greenland Group and is ranked 202nd among the Fortune Global 500 in 2019, and first among diversified real estat"
+  },
+  {
+   "t": "Working in Greenland: Jobs, Salaries, and Requirements",
+   "u": "https://movegreenland.com/work/",
+   "s": "Greenland offers employment opportunities in several key industries, but working in Greenland usually requires planning, the right qualifications, and a legal w"
+  },
+  {
+   "t": "Careers | Greenland",
+   "u": "https://greenlandusa.com/careers",
+   "s": "We are always on the lookout for the best and brightest talent in the real estate and development industry: these individuals share our passion for achieving gr"
+  },
+  {
+   "t": "Employment Opportunities - grnland.com",
+   "u": "https://www.grnland.com/Employment-Opportunities/Employment-Opportunities.html",
+   "s": "With offices in Collingwood, North Brampton and Mississauga, Canada, the GREENLAND® corporate structure and entrepreneurial business plan cultivates career grow"
+  },
+  {
+   "t": "Greenland Holding Group Jobs & Careers | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/greenland-holding-group",
+   "s": "About Greenland Holding Group Greenland Holdings Corp., Ltd. is a Chinese state-owned real estate developer and one of Chinas largest property conglomerates, fo"
+  },
+  {
+   "t": "Greenland Holding Group Company Limited - LinkedIn",
+   "u": "https://www.linkedin.com/company/greenland-holding-group-company-limited",
+   "s": "Greenland Holding Group Company Limited | 10,871 followers on LinkedIn. Established on July 18, 1992, Greenland Group has become one of the biggest state-owned "
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://greenlandusa.com/careers",
+  "platform": "custom",
+  "title": "Careers | Greenland"
+ },
+ "verdict": "custom_surface"
 }

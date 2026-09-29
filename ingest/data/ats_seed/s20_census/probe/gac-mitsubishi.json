@@ -2,13 +2,13 @@
  "brand": "GAC Mitsubishi",
  "tier": "lca",
  "lca": "GAC SOLUTIONS INC",
- "ts": "2026-09-27T07:36:37.486Z",
+ "ts": "2026-09-29T04:28:01.486Z",
  "candidates": [
   {
    "url": "https://career.gac.com/",
    "title": "Careers at GAC | Global Careers",
    "status": 200,
-   "bytes": 958799,
+   "bytes": 996712,
    "markers": [
     "recruitee"
    ],
@@ -19,7 +19,7 @@
    "backend": "supabase"
   },
   {
-   "url": "https://career.gac-international.com/apply/gac-international/100006013",
+   "url": "https://career.gac-international.com/",
    "title": "",
    "status": 0,
    "bytes": 0,
@@ -31,15 +31,15 @@
    "backend": "direct"
   },
   {
-   "url": "https://www.gaccv.com/en/about/job/vacancy/",
-   "title": "",
-   "status": 0,
-   "bytes": 0,
+   "url": "https://gacrnd.zhiye.com/jobs",
+   "title": "广汽集团",
+   "status": 200,
+   "bytes": 20826,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号",
+   "snippet": "广汽集团招聘页面，提供社会招聘、校园招聘及实习生招聘信息。",
    "backend": "direct"
   }
  ],
@@ -50,79 +50,79 @@
    "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
   },
   {
-   "t": "GAC (Singapore) Pte Ltd Jobs in Singapore (with Salaries ...",
-   "u": "https://sg.jobstreet.com/GAC-(Singapore)-Pte-Ltd-jobs",
-   "s": "Find your ideal job on Jobstreet with 29 GAC (Singapore) Pte Ltd jobs (2 at GAC (Singapore) Pte Ltd) listed in Singapore. View all the GAC (Singapore) Pte Ltd v"
+   "t": "Job Opportunities at Global Affairs Canada",
+   "u": "https://international.canada.ca/en/global-affairs/corporate/jobs/opportunities",
+   "s": "Locally engaged staff Student employment opportunities Job opportunities in Canada Find current job opportunities available at GAC's offices in Canada. Canadian"
   },
   {
-   "t": "Gac Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
-   "u": "https://sg.jobstreet.com/gac-jobs",
-   "s": "Find your ideal job at Jobstreet with 6 Gac jobs found in Singapore. View all our Gac vacancies now with new jobs added daily!"
+   "t": "Careers | Mitsubishi Corporation (Americas)",
+   "u": "https://www.mitsubishicorp.com/us/en/mca/careers/",
+   "s": "Mitsubishi Corporation (Americas) is a wholly owned subsidiary of Mitsubishi Corporation - Mitsubishi Corporation is a global integrated business enterprise tha"
   },
   {
    "t": "career.gac-international.com",
-   "u": "https://career.gac-international.com/apply/gac-international/100006013",
+   "u": "https://career.gac-international.com/",
    "s": "As the main undertaker of GAC GROUP's overseas business, GAC INTERNATIONAL CO., LTD., together with its branches and affiliates across the globe，has established"
   },
   {
-   "t": "GAC Singapore Pte Ltd Careers and Employment - Indeed",
-   "u": "https://sg.indeed.com/cmp/Gac-Singapore-Pte-Ltd",
-   "s": "Find out what works well at GAC Singapore Pte Ltd from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+   "t": "广汽集团 - zhiye.com",
+   "u": "https://gacrnd.zhiye.com/jobs",
+   "s": "广汽集团招聘页面，提供社会招聘、校园招聘及实习生招聘信息。"
   },
   {
-   "t": "GAC (SINGAPORE) PTE. LTD. Careers Singapore | Get A Job At GAC ...",
-   "u": "https://www.mycareersfuture.gov.sg/companies/gac-198100305Z",
-   "s": "GAC Singapore is part of the GAC Group, the world's leading provider of shipping, logistics and marine services with over 300 offices worldwide. Established in "
+   "t": "广汽本田官网网站-诚聘英才",
+   "u": "https://job.ghac.cn/",
+   "s": "广汽本田尊重每名成员的个性差异，努力为每个人提供具有挑战性的发展平台来实现自己的梦想。"
   },
   {
-   "t": "GAC (SINGAPORE) PTE. LTD. Careers and Employment - Indeed",
-   "u": "https://sg.indeed.com/cmp/Gac-(singapore)-Pte.-Ltd.",
-   "s": "Find out what works well at GAC (SINGAPORE) PTE. LTD. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insig"
+   "t": "广汽丰田汽车有限公司招聘系统--校园招聘 - zhiye.com",
+   "u": "https://gac-toyota.zhiye.com/Campus",
+   "s": "全部 三天内 一周内 一个月内 三个月内 半年内"
   },
   {
-   "t": "Vacancy-GAC COMMERCIAL VEHICLE - gaccv.com",
-   "u": "https://www.gaccv.com/en/about/job/vacancy/",
-   "s": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号"
+   "t": "GAC Group | GAC Global",
+   "u": "https://www.gacgroup.com/en/gac-group",
+   "s": "We are committed to building a world-class company which wins customers' trust, ensures staff's well-being, meets social expectation. Guangzhou Automobile Group"
   },
   {
-   "t": "Mitsubishi Jobbörse",
-   "u": "https://www.mitsubishi-jobs.de/",
-   "s": "Auf unserer Jobbörse finden Sie immer aktuelle Stellenangebote aus ganz Deutschland."
+   "t": "Job Opportunities at Global Affairs Canada",
+   "u": "https://international.canada.ca/en/global-affairs/corporate/jobs/opportunities",
+   "s": "Locally engaged staff Student employment opportunities Job opportunities in Canada Find current job opportunities available at GAC's offices in Canada. Canadian"
   },
   {
-   "t": "Current job openings - GAC Motor Europe B.V.",
-   "u": "https://gacmotoreuropebv-1747132357.teamtailor.com/jobs",
-   "s": "Already working at GAC Motor Europe B.V.?"
+   "t": "Careers at GAC | Global Careers",
+   "u": "https://career.gac.com/",
+   "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
   },
   {
-   "t": "Careers | Mitsubishi Chemical Group",
-   "u": "https://eu.mitsubishi-chemical.com/careers/",
-   "s": "Ready to make a difference? Explore opportunities across EMEA and start your journey with us today. Joining us is more than just a job. It's about growing your "
+   "t": "Careers | Mitsubishi International Corporation",
+   "u": "https://www.mitsubishicorp.com/us/en/mic/careers/",
+   "s": "Mitsubishi International Corporation (MIC) is a wholly owned subsidiary of Mitsubishi Corporation - Mitsubishi Corporation is a global integrated business enter"
   },
   {
-   "t": "MITSUBISHI MOTORS - Karriere",
-   "u": "https://www.mitsubishi-motors.de/berufundkarriere/",
-   "s": "Eine Übersicht aller offenen Stellen im Handel finden Sie auf unserer Jobbörse. Vielen Dank für Ihr Interesse an unseren Stellenausschreibungen. Wir freuen uns "
+   "t": "Careers | Mitsubishi Corporation (Americas)",
+   "u": "https://www.mitsubishicorp.com/us/en/mca/careers/",
+   "s": "Mitsubishi Corporation (Americas) is a wholly owned subsidiary of Mitsubishi Corporation - Mitsubishi Corporation is a global integrated business enterprise tha"
   },
   {
-   "t": "Karriere | gac.de",
-   "u": "https://www.gac.de/index.php?//Karriere",
-   "s": "Du freust Dich auf die Zusammenarbeit mit internationalen Kunden und Partnern, bist Teamplayer durch und durch und suchst eine Herausforderung in einem modernen"
+   "t": "9 Gac Group jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gac-group-jobs",
+   "s": "Today's top 9 Gac Group jobs in United States. Leverage your professional network, and get hired. New Gac Group jobs added daily."
   },
   {
-   "t": "Director of Aftersales, Germany bei GAC Motor Europe — Berlin ...",
-   "u": "https://de.linkedin.com/jobs/view/director-of-aftersales-germany-at-gac-motor-europe-4448220908",
-   "s": "Bewerben Sie sich für die Stelle als Director of Aftersales, Germany bei GAC Motor Europe in Berlin. Position mit Vollzeit Direktor:in, VP etc.. Sehen Sie sich "
+   "t": "Job Board | Dayforce Jobs",
+   "u": "https://jobs.dayforcehcm.com/mca/MICMCACombinedCareerSite",
+   "s": "Find your next adventure Search by job title, keywords, req ID"
   },
   {
-   "t": "MITSUBISHI ELECTRIC GERMANY - In 46",
-   "u": "https://www.mitsubishielectric-jobs.de/",
-   "s": "Als japanischer Hersteller von elektrischen sowie elektronischen Produkten und Systemen gestalten wir seit über 100 Jahren die Zukunft in den Bereichen Energie,"
+   "t": "Gac Group Jobs in Worldwide (17,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gac-group-jobs-worldwide",
+   "s": "Today's top 17,000+ Gac Group jobs in Worldwide. Leverage your professional network, and get hired. New Gac Group jobs added daily."
   },
   {
-   "t": "Karriere",
-   "u": "https://de-fa.mitsubishielectric.com/fa/about-us/careers",
-   "s": "Träger unseres Erfolges sind hoch qualifizierte, engagierte Mitarbeiter in den verschiedensten Berufsfeldern. Für Ihre Karriere bei Mitsubishi Electric bieten w"
+   "t": "GAC Mitsubishi - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/GAC_Mitsubishi",
+   "s": "GAC Mitsubishi Motors Co., Ltd. was a joint venture automobile manufacturing company headquartered in Changsha, China. [1] Established in 2012, it was the secon"
   },
   {
    "t": "Careers at GAC | Global Careers",
@@ -135,14 +135,14 @@
    "s": "Mitsubishi Corporation (Americas) is a wholly owned subsidiary of Mitsubishi Corporation - Mitsubishi Corporation is a global integrated business enterprise tha"
   },
   {
-   "t": "Career | Mitsubishi Fuso Truck and Bus Corporation",
-   "u": "https://www.mitsubishi-fuso.com/en/career/",
-   "s": "Mitsubishi FUSO Sales include new vehicle sales, service sales, and parts sales. There is a sales job where you can make use of various experiences. In new vehi"
-  },
-  {
    "t": "Job Opportunities at Global Affairs Canada",
    "u": "https://international.canada.ca/en/global-affairs/corporate/jobs/opportunities",
    "s": "Locally engaged staff Student employment opportunities Job opportunities in Canada Find current job opportunities available at GAC's offices in Canada. Canadian"
+  },
+  {
+   "t": "30,000+ Gac Motor jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gac-motor-jobs-worldwide",
+   "s": "Today's top 30,000+ Gac Motor jobs in Worldwide. Leverage your professional network, and get hired. New Gac Motor jobs added daily."
   }
  ],
  "dict_hits": [],

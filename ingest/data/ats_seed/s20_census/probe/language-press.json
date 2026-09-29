@@ -2,10 +2,160 @@
  "brand": "Language Press",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:31:42.023Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:22:43.422Z",
+ "candidates": [
+  {
+   "url": "https://www.languagemagazine.com/jobs/",
+   "title": "",
+   "status": 200,
+   "bytes": 47499,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Jobs Keywords Location Remote positions only Load more listings",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.isacjobs.com/employer/foreign-languages-press/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5783,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Founded in 1952, Foreign Languages Press (FLP) is the largest international-facing publisher in the People's Republic of China. It is now part of China Internat",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://translatorsjournal.com/current-language-industry-jobs/",
+   "title": "This Week’s Language Industry Jobs - Translators&#039; Journal",
+   "status": 200,
+   "bytes": 261469,
+   "markers": [
+    "greenhouse",
+    "lever",
+    "ashby",
+    "workday",
+    "workable",
+    "icims",
+    "successfactors",
+    "jobvite",
+    "personio",
+    "jazzhr"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Every week we scan the market for translation jobs, localization jobs, linguist jobs, and remote translator roles across the language industry. Serious in-house",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Jobs | Language Science Press",
+   "u": "https://langsci-press.org/jobs",
+   "s": "Language Science Press is a very innovative publisher. We care more about your spirit and your commitment than about your formal education, so feel free to appl"
+  },
+  {
+   "t": "Oxford University Press Jobs",
+   "u": "https://jobs.oup.com/jobs/profiles/",
+   "s": "Oxford University Press Making an Impact With more than 6,000 employees and a presence in more than 50 countries, the OUP team is making its mark on a global sc"
+  },
+  {
+   "t": "Jobs - Language Magazine",
+   "u": "https://www.languagemagazine.com/jobs/",
+   "s": "Jobs Keywords Location Remote positions only Load more listings"
+  },
+  {
+   "t": "Jobs with Publishers - Community of Literary Magazines and Presses",
+   "u": "https://www.clmp.org/programs-opportunities/jobs-with-publishers/",
+   "s": "We list job, volunteer, internship, and fellowship openings with the independent literary magazines and publishers that are members of CLMP and other literary c"
+  },
+  {
+   "t": "AUPresses Jobs",
+   "u": "https://jobs.up.hcommons.org/",
+   "s": "Director, Johns Hopkins University Press Johns Hopkins University Press Baltimore, MD Full Time Posted on August 10, 2026 Closes: October 9, 2026 Load more list"
+  },
+  {
+   "t": "Publishing Careers | Yen Press",
+   "u": "https://yenpress.com/careers",
+   "s": "Want to work at Yen Press? Yen Press boasts a large and prolific catalog of manga, light novels, original graphic novels. Check out our open positions and apply"
+  },
+  {
+   "t": "Duolingo Careers",
+   "u": "https://careers.duolingo.com/",
+   "s": "Develop the best education in the world and make it universally available."
+  },
+  {
+   "t": "Career Center - MultiLingual",
+   "u": "https://multilingual.com/jobs/",
+   "s": "MultiLingual has been the go-to language industry resource since 1987. Find opportunities and search job openings in the international localization space by vis"
+  },
+  {
+   "t": "Jobs | Language Science Press",
+   "u": "https://langsci-press.org/jobs",
+   "s": "Language Science Press is a very innovative publisher. We care more about your spirit and your commitment than about your formal education, so feel free to appl"
+  },
+  {
+   "t": "Jobs with Publishers - Community of Literary Magazines and Presses",
+   "u": "https://www.clmp.org/programs-opportunities/jobs-with-publishers/",
+   "s": "We list job, volunteer, internship, and fellowship openings with the independent literary magazines and publishers that are members of CLMP and other literary c"
+  },
+  {
+   "t": "AUPresses Jobs",
+   "u": "https://jobs.up.hcommons.org/",
+   "s": "Director, Johns Hopkins University Press Johns Hopkins University Press Baltimore, MD Full Time Posted on August 10, 2026 Closes: October 9, 2026 Load more list"
+  },
+  {
+   "t": "Career Center - MultiLingual",
+   "u": "https://multilingual.com/jobs/",
+   "s": "MultiLingual has been the go-to language industry resource since 1987. Find opportunities and search job openings in the international localization space by vis"
+  },
+  {
+   "t": "Oxford University Press Jobs",
+   "u": "https://jobs.oup.com/jobs/profiles/",
+   "s": "Oxford University Press Making an Impact With more than 6,000 employees and a presence in more than 50 countries, the OUP team is making its mark on a global sc"
+  },
+  {
+   "t": "Jobs - Language Magazine",
+   "u": "https://www.languagemagazine.com/jobs/",
+   "s": "Jobs Keywords Location Remote positions only Load more listings"
+  },
+  {
+   "t": "Job Board - Publishers Marketplace",
+   "u": "https://www.publishersmarketplace.com/jobs/",
+   "s": "Job Board The definitive source for jobs in publishing. For job seekers we offer a free search for the most, best, and most recently posted publishing jobs in t"
+  },
+  {
+   "t": "Foreign Languages Press - China Foreigner Jobs",
+   "u": "https://www.isacjobs.com/employer/foreign-languages-press/",
+   "s": "Founded in 1952, Foreign Languages Press (FLP) is the largest international-facing publisher in the People's Republic of China. It is now part of China Internat"
+  },
+  {
+   "t": "Now Hiring: 507,000 Language Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Language-jobs.html",
+   "s": "Today's top Language jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Language Jobs | Lingua-Jobs",
+   "u": "https://www.lingua-jobs.com/",
+   "s": "Lingua-Jobs careers advice How to write a career break CV If you are looking to get back into the workplace having taken some time out the prospect may seem dau"
+  },
+  {
+   "t": "184,000 Careers in Language Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-careers-in-language-jobs.html",
+   "s": "Browse 184,134 Careers in Language jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Jobs - SIL Language Technology",
+   "u": "https://software.sil.org/jobs/",
+   "s": "Job Openings Language Technology provides software tools and language services to support communities in writing, literacy, and translation. From documentation,"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

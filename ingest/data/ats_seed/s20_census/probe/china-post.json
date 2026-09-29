@@ -2,10 +2,153 @@
  "brand": "China Post",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:18:22.244Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:35:44.512Z",
+ "candidates": [
+  {
+   "url": "https://dailychinapost.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 35740,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Build a strong foundation for your journalism and media career through the Amazon Media Internship Program. Our internships are designed to provide aspiring pro",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://echinacareers.com/",
+   "title": "eChinaCareers",
+   "status": 200,
+   "bytes": 109298,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinaCareers is the first and only website designed solely to help foreign talents find their dream job in China. Our jobs all specifically recruit at the inte",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.thejobsmap.com/company/china-post-group",
+   "title": "China Post Group Jobs &amp; Careers | TheJobsMap",
+   "status": 200,
+   "bytes": 17723,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "About China Post Group China Post Group Corporation is the national postal service corporation of the Peoples Republic of China, operating as a state-owned ente",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - South China Morning Post Publishers Limited",
+   "u": "https://corp.scmp.com/work-with-us/",
+   "s": "South China Morning Post is a leading news media company that has reported on China and Asia for more than a century with global impact. Founded in 1903, SCMP i"
+  },
+  {
+   "t": "South China Morning Post - Career Page",
+   "u": "https://scmp.applytojob.com/",
+   "s": "Explore open job opportunities at South China Morning Post."
+  },
+  {
+   "t": "中国邮政2027年度联合校园招聘",
+   "u": "https://chinapost2027.zhaopin.com/job/index.html",
+   "s": "智联校园招聘xiaoyuan.zhaopin.com为应届大学毕业生及在校生提供最新校园招聘信息，实习信息以及校园宣讲会信息等.为企业提供一站式专业人力资源服务,包括网络招聘,报纸招聘,校园招聘,猎头服务,招聘外包,企业培训以及人才测评等."
+  },
+  {
+   "t": "Careers - DAILY CHINA POST",
+   "u": "https://dailychinapost.com/careers/",
+   "s": "Build a strong foundation for your journalism and media career through the Amazon Media Internship Program. Our internships are designed to provide aspiring pro"
+  },
+  {
+   "t": "中国邮政集团有限公司2027年度联合校园招聘公告 - 中国邮政集团有限公司",
+   "u": "https://www.chinapost.com.cn/cn/report/2609/1176-1.htm",
+   "s": "一、公司介绍 中国邮政集团有限公司是大型国有独资企业。公司依法经营各项邮政业务，承担邮政普遍服务义务，受政府委托提供邮政特殊服务，对竞争性邮政业务实行商业化运营。公司以邮政、快递物流、金融、电子商务为主业，实行多元化经营。经过多年持续发展，中国邮政集团有限公司已 ..."
+  },
+  {
+   "t": "eChinaCareers",
+   "u": "https://echinacareers.com/",
+   "s": "eChinaCareers is the first and only website designed solely to help foreign talents find their dream job in China. Our jobs all specifically recruit at the inte"
+  },
+  {
+   "t": "China Post Group Jobs & Careers | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/china-post-group",
+   "s": "About China Post Group China Post Group Corporation is the national postal service corporation of the Peoples Republic of China, operating as a state-owned ente"
+  },
+  {
+   "t": "首页 - 中国邮政集团有限公司",
+   "u": "https://www.chinapost.com.cn/",
+   "s": "中国邮政集团有限公司2027年度联合校园招聘公告 2026-09-07 2026年度邮储银行短视频暨好新闻征集活动启事 2026-07-16 2026年中国邮政集团有限公司执纪审查骨干集中社会招聘公告 2026-06-15 中国邮政集团有限公司关于公开征集《丁未年》特种邮票图稿的公告 2026-04-20 2026年中"
+  },
+  {
+   "t": "中国邮政2027年度联合校园招聘",
+   "u": "https://chinapost2027.zhaopin.com/job/index.html",
+   "s": "智联校园招聘xiaoyuan.zhaopin.com为应届大学毕业生及在校生提供最新校园招聘信息，实习信息以及校园宣讲会信息等.为企业提供一站式专业人力资源服务,包括网络招聘,报纸招聘,校园招聘,猎头服务,招聘外包,企业培训以及人才测评等."
+  },
+  {
+   "t": "China Post Group Co., Ltd. Reviews, Salaries and Jobs - Jobui",
+   "u": "https://en.jobui.com/company/9038940/",
+   "s": "Learn about working at China Post Group Co., Ltd.. Get the latest jobs, salary information, employee reviews and company introduction. Summary: People's Post fo"
+  },
+  {
+   "t": "中国邮政集团有限公司2027年度联合校园招聘公告 - 中国邮政集团有限公司",
+   "u": "https://www.chinapost.com.cn/cn/report/2609/1176-1.htm",
+   "s": "一、公司介绍 中国邮政集团有限公司是大型国有独资企业。公司依法经营各项邮政业务，承担邮政普遍服务义务，受政府委托提供邮政特殊服务，对竞争性邮政业务实行商业化运营。公司以邮政、快递物流、金融、电子商务为主业，实行多元化经营。经过多年持续发展，中国邮政集团有限公司已 ..."
+  },
+  {
+   "t": "2026年中国邮政集团有限公司执纪审查骨干集中社会招聘",
+   "u": "https://chinapostshzp.zhaopin.com/",
+   "s": "未经zhaopin.com 同意，不得转载本网站之所有招聘信息及作品。智联招聘网版权所有"
+  },
+  {
+   "t": "《中国邮政报》社有限公司2025年公开招聘公告 - 中国邮政集团有限公司",
+   "u": "https://www.chinapost.com.cn/cn/report/2512/5820-1.htm",
+   "s": "《中国邮政报》社有限公司（以下简称\"报社\"）成立于2000年，是中国邮政集团有限公司直属单位。报社始终以宣传邮政、服务邮政为核心使命，聚焦行业发展大局，充分发挥新闻宣传的舆论引导、行业引领与价值传播作用，已发展成为邮政行业的权威主流媒体。为进一步推进报社高素质专业化 ..."
+  },
+  {
+   "t": "「中国邮政招聘」中国邮政集团有限公司（物流/运输公司） - 职友集",
+   "u": "https://www.jobui.com/company/9038940/jobs/",
+   "s": "中国邮政集团有限公司最新招聘204个职位，分布在37个地区（北京，襄阳，十堰），招聘硕士3个，招聘类别金融类（银行/基金 ..."
+  },
+  {
+   "t": "中国邮政 2025 社招全面启动：正式编制 + 八险二金，3500 + 岗位覆盖全国 2000 县区",
+   "u": "https://www.sohu.com/a/953289961_121124331",
+   "s": "作为承载着百年历史记忆、服务亿万民众的特大型中央企业，中国邮政始终以 \"人民邮政为人民\" 为初心，在邮政寄递、储蓄金融、快递物流、电商服务等领域构建起覆盖全国的综合服务网络。如今，这家 \"国民企业\" 2025 年社会招聘正式拉开帷幕，不仅推出 3529 个正式编制岗位，更以 \"八险二 ..."
+  },
+  {
+   "t": "【中国邮政招聘，求职】中国邮政招聘前程无忧官方招聘网站",
+   "u": "https://campus.51job.com/chinapost2017/intr.html",
+   "s": "中国邮政认真贯彻落实党中央、国务院的各项方针政策，积极应对复杂多变的经济环境，深化改革，拓展市场，强化管理，提质增效，实现平稳较快发展。2015年，集团公司总收入完成4376.3亿元，同比 增长8.1%。"
+  },
+  {
+   "t": "中国邮政集团有限公司2027年度联合校园招聘公告 - 中国邮政集团有限公司",
+   "u": "https://www.chinapost.com.cn/cn/report/2609/1176-1.html",
+   "s": "一、公司介绍 中国邮政集团有限公司是大型国有独资企业。公司依法经营各项邮政业务，承担邮政普遍服务义务，受政府委托提供邮政特殊服务，对竞争性邮政业务实行商业化运营。公司以邮政、快递物流、金融、电子商务为主业，实行多元化经营。经过多年持续发展，中国邮政集团有限公司已 ..."
+  },
+  {
+   "t": "中国邮政2027年度联合校园招聘",
+   "u": "https://chinapost2027.zhaopin.com/",
+   "s": "智联校园招聘xiaoyuan.zhaopin.com为应届大学毕业生及在校生提供最新校园招聘信息，实习信息以及校园宣讲会信息等.为企业提供一站式专业人力资源服务,包括网络招聘,报纸招聘,校园招聘,猎头服务,招聘外包,企业培训以及人才测评等."
+  },
+  {
+   "t": "jobs in china, work in china | JobSiteChina",
+   "u": "https://www.jobsitechina.com/jobs/",
+   "s": "Find jobs in China and work in China. jobs site in China helps you get a job in China in many cities such as Shanghai, Beijing, Guangzhou, Shenzhen, etc."
+  },
+  {
+   "t": "Jobs in China for International Graduates 2026: Complete Guide to Work ...",
+   "u": "https://wentchina.com/jobs-in-china-for-international-graduates-2026-complete-guide-to-work-visas-top-industries-salary-expectations-and-long-term-career-pathways/",
+   "s": "This guide covers everything you need to know about landing a job in China after your studies in 2026 — from visa pathways and work permit regulations to job se"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://echinacareers.com/",
+  "platform": "custom",
+  "title": "eChinaCareers"
+ },
+ "verdict": "custom_surface"
 }

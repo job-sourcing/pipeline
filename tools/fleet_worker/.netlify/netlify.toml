@@ -1,0 +1,32 @@
+functionsDirectory = "/home/z/research/tools/fleet_worker/netlify/functions"
+functionsDirectoryOrigin = "config-v1"
+plugins = []
+headers = []
+redirects = []
+
+[build]
+publish = "/home/z/research/tools/fleet_worker/src"
+publishOrigin = "config"
+commandOrigin = "config"
+base = "/home/z/research/tools/fleet_worker"
+command = "echo fleet-worker"
+functions = "/home/z/research/tools/fleet_worker/netlify/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[functions]
+
+[functions."*"]
+node_bundler = "esbuild"

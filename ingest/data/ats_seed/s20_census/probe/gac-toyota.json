@@ -2,7 +2,7 @@
  "brand": "GAC Toyota",
  "tier": "lca",
  "lca": "GAC SOLUTIONS INC",
- "ts": "2026-09-27T07:39:08.595Z",
+ "ts": "2026-09-29T04:29:46.414Z",
  "candidates": [
   {
    "url": "https://gacrnd.zhiye.com/jobs",
@@ -17,20 +17,6 @@
    "backend": "direct"
   },
   {
-   "url": "https://career.gac.com/",
-   "title": "Careers at GAC | Global Careers",
-   "status": 200,
-   "bytes": 958799,
-   "markers": [
-    "recruitee"
-   ],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 7,
-   "snippet": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w",
-   "backend": "supabase"
-  },
-  {
    "url": "https://gac-toyota.zhiye.com/alljob/?PageIndex=0",
    "title": "广汽丰田汽车有限公司招聘系统--全部职位",
    "status": 200,
@@ -41,18 +27,32 @@
    "score": 7,
    "snippet": "全部 三天内 一周内 一个月内 三个月内 半年内",
    "backend": "direct"
+  },
+  {
+   "url": "https://career.gac.com/",
+   "title": "Careers at GAC | Global Careers",
+   "status": 200,
+   "bytes": 996712,
+   "markers": [
+    "recruitee"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w",
+   "backend": "supabase"
   }
  ],
  "results": [
   {
-   "t": "Gac Toyota Jobs in United States (8 Open Roles) | LinkedIn",
-   "u": "https://www.linkedin.com/jobs/gac-toyota-jobs",
-   "s": "Today's top 8 Gac Toyota jobs in United States. Leverage your professional network, and get hired. New Gac Toyota jobs added daily."
-  },
-  {
    "t": "广汽丰田汽车有限公司招聘系统 - zhiye.com",
    "u": "https://gac-toyota.zhiye.com/home",
    "s": "©2026 广汽丰田汽车有限公司 京ICP备05051632号-16 京公网安备 11010802032024号 隐私政策 Powered by"
+  },
+  {
+   "t": "Careers at Toyota | Toyota jobs",
+   "u": "https://careers.toyota.com/us/en/home",
+   "s": "We help millions of Toyota customers drive the vehicle of their dreams through our flexible finance, lease and voluntary protection products and services. Join "
   },
   {
    "t": "广汽丰田汽车有限公司招聘系统--校园招聘 - zhiye.com",
@@ -60,9 +60,14 @@
    "s": "广汽丰田汽车有限公司校园招聘信息平台，提供职位发布、简历投递等服务，助力学生开启职业生涯。"
   },
   {
-   "t": "Careers at Toyota | Toyota jobs",
-   "u": "https://careers.toyota.com/us/en/home",
-   "s": "We help millions of Toyota customers drive the vehicle of their dreams through our flexible finance, lease and voluntary protection products and services. Join "
+   "t": "8,000+ Toyota Gac jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/toyota-gac-jobs",
+   "s": "Today's top 8,000+ Toyota Gac jobs in United States. Leverage your professional network, and get hired. New Toyota Gac jobs added daily."
+  },
+  {
+   "t": "Gac Toyota Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gac-toyota-jobs",
+   "s": "Today's top Gac Toyota jobs in United States. Leverage your professional network, and get hired. New Gac Toyota jobs added daily."
   },
   {
    "t": "广汽集团 - zhiye.com",
@@ -70,24 +75,24 @@
    "s": "广汽集团招聘页面，提供社会招聘、校园招聘及实习生招聘信息。"
   },
   {
+   "t": "GM Jobs | General Motors Careers",
+   "u": "https://search-careers.gm.com/",
+   "s": "General Motors are working to make our world better, safer and more equitable for all. Find the job you've always been looking for."
+  },
+  {
+   "t": "Job Openings | Find available job openings at Toyota",
+   "u": "https://careers.toyota.com/us/en/search-results",
+   "s": "We are looking for a strategic leader to drive Toyota's research strategy and portfolio management. Lead the development of governance frameworks, advise senior"
+  },
+  {
+   "t": "Gac Toyota Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gac-toyota-jobs",
+   "s": "Today's top Gac Toyota jobs in United States. Leverage your professional network, and get hired. New Gac Toyota jobs added daily."
+  },
+  {
    "t": "8,000+ Toyota Gac jobs in United States - LinkedIn",
    "u": "https://www.linkedin.com/jobs/toyota-gac-jobs",
    "s": "Today's top 8,000+ Toyota Gac jobs in United States. Leverage your professional network, and get hired. New Toyota Gac jobs added daily."
-  },
-  {
-   "t": "Careers at GAC | Global Careers",
-   "u": "https://career.gac.com/",
-   "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
-  },
-  {
-   "t": "GAC Group | GAC Global",
-   "u": "https://www.gacgroup.com/en/gac-group",
-   "s": "We are committed to building a world-class company which wins customers' trust, ensures staff's well-being, meets social expectation. Guangzhou Automobile Group"
-  },
-  {
-   "t": "Gac Toyota Jobs in United States (8 Open Roles) | LinkedIn",
-   "u": "https://www.linkedin.com/jobs/gac-toyota-jobs",
-   "s": "Today's top 8 Gac Toyota jobs in United States. Leverage your professional network, and get hired. New Gac Toyota jobs added daily."
   },
   {
    "t": "广汽丰田汽车有限公司招聘系统 - zhiye.com",
@@ -95,24 +100,14 @@
    "s": "©2026 广汽丰田汽车有限公司 京ICP备05051632号-16 京公网安备 11010802032024号 隐私政策 Powered by"
   },
   {
-   "t": "8,000+ Toyota Gac jobs in United States - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/toyota-gac-jobs",
-   "s": "Today's top 8,000+ Toyota Gac jobs in United States. Leverage your professional network, and get hired. New Toyota Gac jobs added daily."
-  },
-  {
-   "t": "广汽丰田汽车有限公司招聘系统--全部职位",
-   "u": "https://gac-toyota.zhiye.com/alljob/?PageIndex=0",
-   "s": "全部 三天内 一周内 一个月内 三个月内 半年内"
-  },
-  {
    "t": "Careers at Toyota | Toyota jobs",
    "u": "https://careers.toyota.com/us/en/home",
    "s": "We help millions of Toyota customers drive the vehicle of their dreams through our flexible finance, lease and voluntary protection products and services. Join "
   },
   {
-   "t": "Vacancy-GAC COMMERCIAL VEHICLE - gaccv.com",
-   "u": "https://www.gaccv.com/en/about/job/vacancy/",
-   "s": "Job Web Statement E-Mail Environmental Disclosure 2007 - 2025 GAC COMMERCIAL VEHICLE 粤ICP13042899号-8 粤公网安备44011702000904号"
+   "t": "广汽丰田汽车有限公司招聘系统--全部职位",
+   "u": "https://gac-toyota.zhiye.com/alljob/?PageIndex=0",
+   "s": "全部 三天内 一周内 一个月内 三个月内 半年内"
   },
   {
    "t": "Careers at GAC | Global Careers",
@@ -122,17 +117,12 @@
   {
    "t": "Job Openings | Find available job openings at Toyota",
    "u": "https://careers.toyota.com/us/en/search-results",
-   "s": "Drive validation of complex integrations, develop and execute test cases, and collaborate with cross-functional teams. Ideal for candidates with hands-on cybers"
+   "s": "Gain practical experience, apply classroom knowledge, and collaborate with experienced professionals. Ideal for juniors or seniors in relevant engineering or te"
   },
   {
-   "t": "Careers at GAC | Global Careers",
-   "u": "https://career.gac.com/",
-   "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
-  },
-  {
-   "t": "Gac Toyota Jobs in United States (8 Open Roles) | LinkedIn",
-   "u": "https://www.linkedin.com/jobs/gac-toyota-jobs",
-   "s": "Today's top 8 Gac Toyota jobs in United States. Leverage your professional network, and get hired. New Gac Toyota jobs added daily."
+   "t": "career.gac-international.com",
+   "u": "https://career.gac-international.com/apply/gac-international/100006013",
+   "s": "As the main undertaker of GAC GROUP's overseas business, GAC INTERNATIONAL CO., LTD., together with its branches and affiliates across the globe，has established"
   },
   {
    "t": "Careers at Toyota | Toyota jobs",
@@ -140,9 +130,19 @@
    "s": "We help millions of Toyota customers drive the vehicle of their dreams through our flexible finance, lease and voluntary protection products and services. Join "
   },
   {
-   "t": "GAC (Singapore) Pte Ltd Jobs in Singapore (with Salaries ...",
-   "u": "https://sg.jobstreet.com/GAC-(Singapore)-Pte-Ltd-jobs",
-   "s": "Find your ideal job on Jobstreet with 29 GAC (Singapore) Pte Ltd jobs (2 at GAC (Singapore) Pte Ltd) listed in Singapore. View all the GAC (Singapore) Pte Ltd v"
+   "t": "Careers at GAC | Global Careers",
+   "u": "https://career.gac.com/",
+   "s": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w"
+  },
+  {
+   "t": "Gac Toyota Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gac-toyota-jobs",
+   "s": "Today's top Gac Toyota jobs in United States. Leverage your professional network, and get hired. New Gac Toyota jobs added daily."
+  },
+  {
+   "t": "CAREERS - TOYOTA Otemachi",
+   "u": "https://www.toyota-tokyo.tech/en/careers/",
+   "s": "/en/ ©TOYOTA MOTOR CORPORATION. ALL RIGHTS RESERVED. Social"
   }
  ],
  "dict_hits": [],

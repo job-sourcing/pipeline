@@ -2,10 +2,157 @@
  "brand": "Eurasia Aviation",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:17:10.332Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:24:20.681Z",
+ "candidates": [
+  {
+   "url": "https://www.eurasiagroup.net/careers",
+   "title": "Eurasia Group | Careers",
+   "status": 200,
+   "bytes": 25471,
+   "markers": [
+    "rippling"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Eurasia Group is made up of highly talented, diverse, and motivated people who are dedicated to defining the business of politics. Headquartered in New York, we",
+   "backend": "direct"
+  },
+  {
+   "url": "https://eurasia-global.com/en/careers/",
+   "title": "Variety and global perspectives | Careers at Eurasia",
+   "status": 200,
+   "bytes": 100837,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Current vacancies and job opportunities at Eurasia: Discover your professional opportunities in the international logistics industry.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://ats.rippling.com/eurasia-group/jobs",
+   "title": "Careers at Eurasia Group",
+   "status": 200,
+   "bytes": 190844,
+   "markers": [
+    "rippling"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Household and Personal Operations Manager, Office of the President Office of the President New York, NY View job",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "EASA Careers",
+   "u": "https://careers.easa.europa.eu/",
+   "s": "THE place to work. EASA. EASA is the leading aviation authority in Europe. A career at EASA means contributing to our vision for an ever safer and greener civil"
+  },
+  {
+   "t": "Careers - EASA",
+   "u": "https://www.easa.europa.eu/en/the-agency/careers",
+   "s": "EASA is the leading aviation authority in Europe. A career at EASA means contributing to our vision for an ever safer and greener civil aviation. As an EASA emp"
+  },
+  {
+   "t": "Careers - Eurasia Group",
+   "u": "https://www.eurasiagroup.net/careers",
+   "s": "Eurasia Group is made up of highly talented, diverse, and motivated people who are dedicated to defining the business of politics. Headquartered in New York, we"
+  },
+  {
+   "t": "View all jobs - EASA Careers - Europa",
+   "u": "https://careers.easa.europa.eu/viewalljobs/",
+   "s": "Careers at EASA - Explore and search job openings at the European Union Aviation Safety Agency"
+  },
+  {
+   "t": "Variety and global perspectives | Careers at Eurasia",
+   "u": "https://eurasia-global.com/en/careers/",
+   "s": "Current vacancies and job opportunities at Eurasia: Discover your professional opportunities in the international logistics industry."
+  },
+  {
+   "t": "Working for us - EASA",
+   "u": "https://www.easa.europa.eu/en/the-agency/careers-working-for-us/working-for-us",
+   "s": "EASA | European Union Aviation Safety Agency: The European Union Authority for aviation safety"
+  },
+  {
+   "t": "Careers at Eurasia Group - ats.rippling.com",
+   "u": "https://ats.rippling.com/eurasia-group/jobs",
+   "s": "Household and Personal Operations Manager, Office of the President Office of the President New York, NY View job"
+  },
+  {
+   "t": "(EASA) European Union Aviation Safety Agency | EU Careers",
+   "u": "https://eu-careers.europa.eu/en/easa-european-union-aviation-safety-agency",
+   "s": "EASA works to ensure the highest common level of aviation safety protection for EU citizens and the highest common level of environmental protection. It also fa"
+  },
+  {
+   "t": "EASA Careers",
+   "u": "https://careers.easa.europa.eu/",
+   "s": "Careers at EASA - Explore and search job openings at the European Union Aviation Safety Agency"
+  },
+  {
+   "t": "EASA Careers - Europa",
+   "u": "https://careers.easa.europa.eu/h",
+   "s": "In addition to core aviation profiles, we also look for talents in fields such as law, finance, HR, communications, IT, and many more. Whether you are looking f"
+  },
+  {
+   "t": "Careers - EASA",
+   "u": "https://www.easa.europa.eu/en/the-agency/careers",
+   "s": "EASA is the leading aviation authority in Europe. A career at EASA means contributing to our vision for an ever safer and greener civil aviation. As an EASA emp"
+  },
+  {
+   "t": "Stay informed - EASA Careers - Interested in EASA Careers? New ...",
+   "u": "https://www.easa.europa.eu/en/stayinformed/careers",
+   "s": "Follow the 3 steps below: 1. Create an account Create an account with social logins or use the normal registration form. 2. Follow the category \"News - Careers\""
+  },
+  {
+   "t": "A320 Captains & First Officers - Eurasia Region - FCI",
+   "u": "https://fci.aero/jobs/a320-captains-first-officers-eurasia-region-432856/",
+   "s": "Apply now for the A320 Captains & First Officers - Eurasia Region position. Flight Crew International will work with you throughout the application process."
+  },
+  {
+   "t": "A320 CAPTAIN - EURASIA September Start at Flight Crew International",
+   "u": "https://www.aiaviationjobs.com/job/job_wjyckthhv3t2u4814jivz36y",
+   "s": "A320 CAPTAIN - EURASIA September Start 💼 Commuting Contract | High Earnings | Immediate Start 🌟 Opportunity OverviewAzerbaijan Airlines (AZAL) is expanding an"
+  },
+  {
+   "t": "A320 Captain - Eurasia Region at Aviation JobSearch Europa — Baku, Baku ...",
+   "u": "https://az.linkedin.com/jobs/view/a320-captain-eurasia-region-at-aviation-jobsearch-europa-4466471874",
+   "s": "Apply for A320 Captain - Eurasia Region at Aviation JobSearch Europa in Baku, Baku Ekonomic Zone, Azerbaijan. Full-time Mid-Senior level role. See responsibilit"
+  },
+  {
+   "t": "Pilot job vacancy: A320 Captains & First Officers - Eurasia Region ...",
+   "u": "https://www.allflyingjobs.com/jobs/a320-captains-first-officers-eurasia-region",
+   "s": "A major national airline in the Eurasia region is expanding its fleet and route network and is now recruiting experienced A320 Captains & First Officers to join"
+  },
+  {
+   "t": "EASA Careers",
+   "u": "https://careers.easa.europa.eu/",
+   "s": "In addition to core aviation profiles, we also look for talents in fields such as law, finance, HR, communications, IT, and many more. Whether you are looking f"
+  },
+  {
+   "t": "Careers - EASA",
+   "u": "https://www.easa.europa.eu/en/the-agency/careers",
+   "s": "EASA is the leading aviation authority in Europe. A career at EASA means contributing to our vision for an ever safer and greener civil aviation. As an EASA emp"
+  },
+  {
+   "t": "All Jobs - Europa",
+   "u": "https://careers.easa.europa.eu/go/All-Jobs/8855901/",
+   "s": "Check out our FAQs to learn more about the Agency and our recruitment procedures."
+  },
+  {
+   "t": "Variety and global perspectives | Careers at Eurasia",
+   "u": "https://eurasia-global.com/en/careers/",
+   "s": "Current vacancies and job opportunities at Eurasia: Discover your professional opportunities in the international logistics industry."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.eurasiagroup.net/careers",
+  "platform": "rippling",
+  "title": "Eurasia Group | Careers"
+ },
+ "verdict": "marker_surface"
 }

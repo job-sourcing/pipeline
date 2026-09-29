@@ -24,6 +24,9 @@ ingest/data/ats_seed/s20_census/*.xlsx
 scripts/probe_tmp/*.xlsx
 scripts/probe_tmp/*.pdf
 
+# netlify fleet keys (git-is-disk, same policy as ingest/.env)
+!ingest/.netlify_fleet_keys
+
 # --- public-mirror guards (never commit these here) ---
 ingest/.env
 research_data/

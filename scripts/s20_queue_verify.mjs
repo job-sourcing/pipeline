@@ -4,7 +4,10 @@
 import ZAI from '../ingest/vendor/z-ai-web-dev-sdk/dist/index.js'
 import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'node:fs'
 
-const DIR = '/home/z/job-sourcing-research/ingest/data/ats_seed/s20_census'
+import { fileURLToPath } from 'node:url'
+import { dirname, join } from 'node:path'
+const REPO = join(dirname(dirname(fileURLToPath(import.meta.url))), '')
+const DIR = join(REPO, 'ingest/data/ats_seed/s20_census')
 const CAND = `${DIR}/queue_candidates.jsonl`
 const VER = `${DIR}/queue_verdicts.jsonl`
 

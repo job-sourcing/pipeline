@@ -1,0 +1,27 @@
+no_clear_surface | CSC Financial -> no_clear_surface
+skip (done) Fuyao Group
+skip (done) Lenovo
+no_clear_surface | SG Automotive -> no_clear_surface
+skip (done) WuXi Biologics
+skip (done) OmniVision
+skip (done) Foxconn Industrial Internet
+skip (done) UP Fintech
+no_clear_surface | Nan Nan Resources -> no_clear_surface
+skip (done) BeOne Medicines
+custom_surface | Aesthetic Medical International -> custom
+skip (done) Mattson Technology
+skip (done) Oasis Management
+no_clear_surface | Yum China -> no_clear_surface
+skip (done) Pop Mart
+marker_surface | Shanghai Forte Land -> successfactors
+skip (done) Techtronic Industries
+skip (done) Enlight Media
+skip (done) Black Sesame Technologies
+skip (done) GAC Commercial Vehicle
+no_clear_surface | GAC Mitsubishi -> no_clear_surface
+no_clear_surface | GAC Toyota -> no_clear_surface
+skip (done) Mango TV
+skip (done) Hailiang Group
+skip (done) China Merchants Bank
+skip (done) Ant Group
+skip (done) Autel Intelligent Technology

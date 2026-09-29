@@ -2,10 +2,153 @@
  "brand": "Metallurgical Corporation of China",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:41:50.391Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-29T04:27:46.010Z",
+ "candidates": [
+  {
+   "url": "https://www.jobzmall.com/metallurgical-corp-of-china/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 9029,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Metallurgical Corp. of China Ltd. engages in the metallurgical engineering and construction business. It operates through five segments: Engineering, Constructi",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.talentd.in/companies/metallurgical-corporation-of-china",
+   "title": "Metallurgical Corporation of China Careers | Talentd",
+   "status": 200,
+   "bytes": 100395,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "No open roles at Metallurgical Corporation of China right now. Read what they do, see past openings, and browse similar fresher and internship roles on Talentd.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.devex.com/organizations/metallurgical-corporation-of-china-ltd-mcc-70516",
+   "title": "Metallurgical Corporation of China LTD. (MCC) | Devex",
+   "status": 200,
+   "bytes": 57779,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Learn more about Metallurgical Corporation of China LTD. (MCC)'s jobs, projects, latest news, contact information and geographical presence. As an extra-large e",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Metallurgical Corporation of China Ltd Careers and Employment",
+   "u": "https://www.indeed.com/cmp/Metallurgical-Corporation-of-China-Ltd",
+   "s": "Find out what works well at Metallurgical Corporation of China Ltd from the people who know best. Get the inside scoop on jobs, salaries, top office locations, "
+  },
+  {
+   "t": "Current Job Openings at Metallurgical Corp of China | JobzMall",
+   "u": "https://www.jobzmall.com/metallurgical-corp-of-china/jobs",
+   "s": "Metallurgical Corp. of China Ltd. engages in the metallurgical engineering and construction business. It operates through five segments: Engineering, Constructi"
+  },
+  {
+   "t": "中国中冶-中国冶金科工股份有限公司",
+   "u": "https://mcc.com.cn/mcc_en/",
+   "s": "China Metallurgical Industry Group Co., Ltd., abbreviated as MCC Group, is a super large enterprise group in China. It is the earliest steel industry constructi"
+  },
+  {
+   "t": "metallurgical corporation of china jobs - Indeed",
+   "u": "https://www.indeed.com/q-metallurgical-corporation-of-china-jobs.html",
+   "s": "18,759 Metallurgical Corporation of China jobs available on Indeed.com. Apply to Entry Level Engineer, Engineer, Manufacturing Specialist and more!"
+  },
+  {
+   "t": "About Us - mcc.com.cn",
+   "u": "https://www.mcc.com.cn/mcc_en/aboutmcc/aboutus/",
+   "s": "Metallurgical Corporation of China Limited (MCC) ,is a large state-owned construction conglomerate affiliated with China Minmetals. With a remarkable legacy spa"
+  },
+  {
+   "t": "Metallurgical Corporation of China - LinkedIn",
+   "u": "https://www.linkedin.com/company/metallurgical-corporation-of-china",
+   "s": "Metallurgical Corporation of China | 5,538 followers on LinkedIn. China Metallurgical Group Corporation (Chinese: 中国冶金科工集团公司), (MCC), is a state-owned enterpris"
+  },
+  {
+   "t": "Metallurgical Corporation of China Careers | Talentd",
+   "u": "https://www.talentd.in/companies/metallurgical-corporation-of-china",
+   "s": "No open roles at Metallurgical Corporation of China right now. Read what they do, see past openings, and browse similar fresher and internship roles on Talentd."
+  },
+  {
+   "t": "Metallurgical Corporation of China LTD. (MCC) - Devex",
+   "u": "https://www.devex.com/organizations/metallurgical-corporation-of-china-ltd-mcc-70516",
+   "s": "Learn more about Metallurgical Corporation of China LTD. (MCC)'s jobs, projects, latest news, contact information and geographical presence. As an extra-large e"
+  },
+  {
+   "t": "metallurgical corporation of china jobs - Indeed",
+   "u": "https://www.indeed.com/q-metallurgical-corporation-of-china-jobs.html",
+   "s": "18,759 Metallurgical Corporation of China jobs available on Indeed.com. Apply to Entry Level Engineer, Engineer, Manufacturing Specialist and more!"
+  },
+  {
+   "t": "Metallurgical Corporation of China Ltd Careers and Employment",
+   "u": "https://www.indeed.com/cmp/Metallurgical-Corporation-of-China-Ltd",
+   "s": "Find out what works well at Metallurgical Corporation of China Ltd from the people who know best. Get the inside scoop on jobs, salaries, top office locations, "
+  },
+  {
+   "t": "Current Job Openings at Metallurgical Corp of China | JobzMall",
+   "u": "https://www.jobzmall.com/metallurgical-corp-of-china/jobs",
+   "s": "Metallurgical Corp. of China Ltd. engages in the metallurgical engineering and construction business. It operates through five segments: Engineering, Constructi"
+  },
+  {
+   "t": "中国中冶-中国冶金科工股份有限公司",
+   "u": "https://mcc.com.cn/mcc_en/",
+   "s": "China Metallurgical Industry Group Co., Ltd., abbreviated as MCC Group, is a super large enterprise group in China. It is the earliest steel industry constructi"
+  },
+  {
+   "t": "About Us - mcc.com.cn",
+   "u": "https://www.mcc.com.cn/mcc_en/aboutmcc/aboutus/",
+   "s": "Metallurgical Corporation of China Limited (MCC) ,is a large state-owned construction conglomerate affiliated with China Minmetals. With a remarkable legacy spa"
+  },
+  {
+   "t": "Metallurgical Corporation of China - LinkedIn",
+   "u": "https://www.linkedin.com/company/metallurgical-corporation-of-china",
+   "s": "Metallurgical Corporation of China | 5,538 followers on LinkedIn. China Metallurgical Group Corporation (Chinese: 中国冶金科工集团公司), (MCC), is a state-owned enterpris"
+  },
+  {
+   "t": "Metallurgical Corporation Of China Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/metallurgical-corporation-of-china-ltd-",
+   "s": "Metallurgical Corporation Of China is a civil engineering company based out of BEIJING. Metallurgical Corporation Of China representatives, don't miss out on op"
+  },
+  {
+   "t": "Working at Metallurgical Corporation of China | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Metallurgical-Corporation-of-China-EI_IE8967256.11,45.htm",
+   "s": "See what employees say it's like to work at Metallurgical Corporation of China. Salaries, reviews, and more - all posted by employees working at Metallurgical C"
+  },
+  {
+   "t": "Metallurgical Corporation of China Ltd Careers and Employment",
+   "u": "https://www.indeed.com/cmp/Metallurgical-Corporation-of-China-Ltd",
+   "s": "Find out what works well at Metallurgical Corporation of China Ltd from the people who know best. Get the inside scoop on jobs, salaries, top office locations, "
+  },
+  {
+   "t": "Current Job Openings at Metallurgical Corp of China | JobzMall",
+   "u": "https://www.jobzmall.com/metallurgical-corp-of-china/jobs",
+   "s": "Metallurgical Corp. of China Ltd. engages in the metallurgical engineering and construction business. It operates through five segments: Engineering, Constructi"
+  },
+  {
+   "t": "18,000 Metallurgical Corporation of China Jobs, Employment - Indeed",
+   "u": "https://www.indeed.com/q-metallurgical-corporation-of-china-jobs.html",
+   "s": "18,759 Metallurgical Corporation of China jobs available on Indeed.com. Apply to Entry Level Engineer, Engineer, Manufacturing Specialist and more!"
+  },
+  {
+   "t": "Metallurgical Corporation of China - LinkedIn",
+   "u": "https://www.linkedin.com/company/metallurgical-corporation-of-china",
+   "s": "China Metallurgical Group Corporation (Chinese: 中国冶金科工集团公司), (MCC), is a state-owned enterprise in Beijing, China, engaging in EPC (engineering, procurement and"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.talentd.in/companies/metallurgical-corporation-of-china",
+  "platform": "custom",
+  "title": "Metallurgical Corporation of China Careers | Talentd"
+ },
+ "verdict": "custom_surface"
 }

@@ -2,10 +2,153 @@
  "brand": "State-owned enterprises of China",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:20:58.183Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-27T08:38:45.651Z",
+ "candidates": [
+  {
+   "url": "https://thetailorcv.com/blog/china-state-owned-enterprise-jobs",
+   "title": "State-Owned Enterprise Jobs for Graduates in China | TailorCV Blog",
+   "status": 200,
+   "bytes": 76228,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "State-owned enterprises employ graduates at massive scale across banking, energy, telecommunications and infrastructure, offering stability and structure that d",
+   "backend": "direct"
+  },
+  {
+   "url": "https://askai.glarity.app/search/What-are-the-Job-Opportunities-and-Recruitment-Platforms-for-Central-State-Owned-Enterprises--SOEs--in-China",
+   "title": "What are the Job Opportunities and Recruitment Platforms for Central State-Owned Enterprises (SOEs) in China? - Ask and Answer - Glarity",
+   "status": 200,
+   "bytes": 92798,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Here's a comprehensive overview of recruitment opportunities in Chinese Central State-Owned Enterprises (SOEs): 1. Official Recruitment Platforms: - The State-o",
+   "backend": "direct"
+  },
+  {
+   "url": "https://unilink.co/posts/china-state-owned-enterprises-2026-recruitment-overseas-graduates-benefits/",
+   "title": "State-Owned Enterprises in China 2026: Recruitment Cycles and Benefits for Overseas Graduates | UNILINK Education — Free Study Abroad Agency 2026",
+   "status": 200,
+   "bytes": 79041,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "State-owned enterprises in China are ramping up recruitment of overseas graduates in 2026. Discover SOE hiring windows, salary ranges, housing subsidies, hukou ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "State-Owned Enterprises in China 2026: Recruitment Cycles and Benefits ...",
+   "u": "https://unilink.co/posts/china-state-owned-enterprises-2026-recruitment-overseas-graduates-benefits/",
+   "s": "State-owned enterprises in China are ramping up recruitment of overseas graduates in 2026. Discover SOE hiring windows, salary ranges, housing subsidies, hukou "
+  },
+  {
+   "t": "State-owned enterprises of China - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/State-owned_enterprises_of_China",
+   "s": "A state-owned enterprise of the People's Republic of China (Chinese: 国有企业) is a legal entity that undertakes commercial activities on behalf of an owner governm"
+  },
+  {
+   "t": "China's New SOE Reform Plan (2026 - 2029): What State-Owned Enterprises ...",
+   "u": "https://freshfromchina.com/chinas-new-soe-reform-plan-2026-2029-what-state-owned-enterprises-need-to-know/",
+   "s": "Key Points China has launched the \"Plan for Further Deepening Reform of State-Owned Capital and State-Owned Enterprises (2026-2029)\", a major blueprint for maki"
+  },
+  {
+   "t": "THE EVOLUTION OF CHINA'S STATE-OWNED ENTERPRISES (SOEs)",
+   "u": "https://orcasia.org/article/1093/the-evolution-of-chinas-state-owned-enterprises-soes",
+   "s": "State Owned Enterprises (SOEs) in China is a key component of China's Party-State structure. It receives policy and funding support from the State and Party and"
+  },
+  {
+   "t": "How to Work with Chinese State-Owned Enterprises (SOEs)",
+   "u": "https://danielgarst.com/how-to-work-with-chinese-state-owned-enterprises-soes/",
+   "s": "What Are Chinese State-Owned Enterprises (SOEs)? Chinese state-owned enterprises are companies owned or controlled by the government. They operate with both com"
+  },
+  {
+   "t": "China's State-Owned Enterprises — Sang-Yong Oh",
+   "u": "https://seandaddy.github.io/soe/",
+   "s": "The Role of State-Owned Enterprises State-owned enterprises are business entities in which the government holds a significant ownership stake, and they play a p"
+  },
+  {
+   "t": "Directory Names - sasac.gov.cn",
+   "u": "http://en.sasac.gov.cn/directorynames.html",
+   "s": "Directory The State-owned Assets Supervision and Administration Commission of the State Council (SASAC) released the latest directory of central State-owned ent"
+  },
+  {
+   "t": "State-owned enterprises - South China Morning Post",
+   "u": "https://www.scmp.com/topics/state-owned-enterprises",
+   "s": "State-owned enterprises (SOEs) are legal entities that undertake commercial activities on behalf of an owner, which is the government of the country where the f"
+  },
+  {
+   "t": "State-Owned Enterprises in China 2026: Recruitment Cycles and Benefits ...",
+   "u": "https://unilink.co/posts/china-state-owned-enterprises-2026-recruitment-overseas-graduates-benefits/",
+   "s": "State-owned enterprises in China are ramping up recruitment of overseas graduates in 2026. Discover SOE hiring windows, salary ranges, housing subsidies, hukou "
+  },
+  {
+   "t": "State-Owned Enterprise Jobs for Graduates in China",
+   "u": "https://thetailorcv.com/blog/china-state-owned-enterprise-jobs",
+   "s": "State-owned enterprises employ graduates at massive scale across banking, energy, telecommunications and infrastructure, offering stability and structure that d"
+  },
+  {
+   "t": "State-owned enterprises of China - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/State-owned_enterprises_of_China",
+   "s": "A state-owned enterprise of the People's Republic of China (Chinese: 国有企业) is a legal entity that undertakes commercial activities on behalf of an owner governm"
+  },
+  {
+   "t": "State-owned enterprises - South China Morning Post",
+   "u": "https://www.scmp.com/topics/state-owned-enterprises",
+   "s": "State-owned enterprises (SOEs) are legal entities that undertake commercial activities on behalf of an owner, which is the government of the country where the f"
+  },
+  {
+   "t": "China's State-Owned Enterprises — Sang-Yong Oh",
+   "u": "https://seandaddy.github.io/soe/",
+   "s": "The Role of State-Owned Enterprises State-owned enterprises are business entities in which the government holds a significant ownership stake, and they play a p"
+  },
+  {
+   "t": "Chinese Private Enterprises vs. State-Owned Enterprises: Key ...",
+   "u": "https://cnbizinsight.com/chinese-private-enterprises-vs-state-owned-enterprises-key-differences/",
+   "s": "When it comes to doing business in China, understanding the landscape of Chinese companies is crucial. Two major types of enterprises dominate the market: Priva"
+  },
+  {
+   "t": "State Owned Enterprises Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/state%2Bowned-enterprises-jobs",
+   "s": "Find your ideal job at Jobsdb with 652 State Owned Enterprises jobs found in Hong Kong. View all our State Owned Enterprises vacancies now with new jobs added d"
+  },
+  {
+   "t": "China's New SOE Reform Plan (2026 - 2029): What State-Owned Enterprises ...",
+   "u": "https://freshfromchina.com/chinas-new-soe-reform-plan-2026-2029-what-state-owned-enterprises-need-to-know/",
+   "s": "Key Points China has launched the \"Plan for Further Deepening Reform of State-Owned Capital and State-Owned Enterprises (2026-2029)\", a major blueprint for maki"
+  },
+  {
+   "t": "State-Owned Enterprises in China 2026: Recruitment Cycles and Benefits ...",
+   "u": "https://unilink.co/posts/china-state-owned-enterprises-2026-recruitment-overseas-graduates-benefits/",
+   "s": "State-owned enterprises in China are ramping up recruitment of overseas graduates in 2026. Discover SOE hiring windows, salary ranges, housing subsidies, hukou "
+  },
+  {
+   "t": "State-Owned Enterprise Jobs for Graduates in China",
+   "u": "https://thetailorcv.com/blog/china-state-owned-enterprise-jobs",
+   "s": "State-owned enterprises employ graduates at massive scale across banking, energy, telecommunications and infrastructure, offering stability and structure that d"
+  },
+  {
+   "t": "State-owned Central Enterprises Recruitment Platform",
+   "u": "https://grokipedia.com/page/State-owned_Central_Enterprises_Recruitment_Platform",
+   "s": "The State-owned Central Enterprises Recruitment Platform primarily aggregates job postings from central state-owned enterprises (央企) and their subsidiaries, suc"
+  },
+  {
+   "t": "State Owned Enterprises Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/state-owned-enterprises-jobs",
+   "s": "Find your ideal job at Jobsdb with 166 State Owned Enterprises jobs found in Hong Kong. View all our State Owned Enterprises vacancies now with new jobs added d"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://thetailorcv.com/blog/china-state-owned-enterprise-jobs",
+  "platform": "custom",
+  "title": "State-Owned Enterprise Jobs for Graduates in China | TailorCV Blog"
+ },
+ "verdict": "custom_surface"
 }

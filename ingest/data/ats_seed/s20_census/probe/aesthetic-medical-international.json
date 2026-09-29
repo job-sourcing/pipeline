@@ -2,7 +2,7 @@
  "brand": "Aesthetic Medical International",
  "tier": "lca",
  "lca": "AESTHETIC RECORD LLC",
- "ts": "2026-09-27T07:30:02.914Z",
+ "ts": "2026-09-29T04:25:01.992Z",
  "candidates": [
   {
    "url": "https://aestheticsbiomedical.com/abm-careers/",
@@ -17,50 +17,35 @@
    "backend": "supabase"
   },
   {
+   "url": "https://ibmaesthetics.com/careers/",
+   "title": "Careers &#8211; International Board of Medical Aesthetics",
+   "status": 200,
+   "bytes": 95498,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers - International Board of Medical Aesthetics",
+   "backend": "direct"
+  },
+  {
    "url": "https://aestheticsbiomedical.com/careers/",
    "title": "",
    "status": 200,
-   "bytes": 14908,
+   "bytes": 14909,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Advance your career with Aesthetics Biomedical. Join an innovative team shaping the future of skin aesthetics and discover rewarding opportunities today.",
    "backend": "supabase"
-  },
-  {
-   "url": "https://www.vaestheticsclinic.com.sg/careers/",
-   "title": "",
-   "status": 200,
-   "bytes": 29547,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 7,
-   "snippet": "Careers at V Medical Aesthetics & Laser Clinic V Medical Aesthetics Group is Singapore's largest medical aesthetics group. With 21 clinic locations islandwide a",
-   "backend": "supabase"
   }
  ],
  "results": [
   {
-   "t": "27 aesthetic medical international holdings (singapore) pte. ltd. jobs ...",
-   "u": "https://sg.jobstreet.com/AESTHETIC-MEDICAL-INTERNATIONAL-HOLDINGS-(SINGAPORE)-PTE.-LTD.-jobs",
-   "s": "Find your ideal job at Jobstreet with 27 AESTHETIC MEDICAL INTERNATIONAL HOLDINGS (SINGAPORE) PTE. LTD. jobs found in Singapore. View all our AESTHETIC MEDICAL "
-  },
-  {
-   "t": "Aesthetic Medical International Holdings (Singapore) Pte. Ltd.",
-   "u": "https://www.mycareersfuture.gov.sg/companies/aesthetic-medical-international-holdings-201714271c",
-   "s": "Aesthetic Medical International Holdings Group Limited (Nasdaq:AIH) is a leading provider of aesthetic medical services in China. We have grown our network sign"
-  },
-  {
-   "t": "501 The Aesthetic Medical Clinic jobs in Singapore",
-   "u": "https://sg.jobstreet.com/the-aesthetic-medical-clinic-jobs",
-   "s": "Find your ideal job at Jobstreet with 501 The Aesthetic Medical Clinic jobs found in Singapore. View all our The Aesthetic Medical Clinic vacancies now with new"
-  },
-  {
-   "t": "AESTHETIC MEDICAL HOLDINGS PTE LTD Careers and Employment - Indeed",
-   "u": "https://sg.indeed.com/cmp/Aesthetic-Medical-Holdings-Pte-Ltd",
-   "s": "Aesthetic Medical International Holdings Group Limited (Nasdaq:AIH) is a leading provider of aesthetic medical services in China. We have grown our network sign"
+   "t": "Aesthetic Careers | Medical Laser Jobs | Acclaro UltraClear®",
+   "u": "https://ultraclearlaser.com/careers/",
+   "s": "Explore career opportunities with Acclaro Aesthetics and discover roles supporting UltraClear® technology, aesthetic innovation, clinical education, and profess"
   },
   {
    "t": "Careers | Join the Aesthetics Biomedical Team",
@@ -68,9 +53,24 @@
    "s": "Innovating the Future of Aesthetic Medicine Technology At Aesthetics Biomedical® Inc., we are at the forefront of aesthetic medicine, developing cutting-edge te"
   },
   {
+   "t": "Careers - International Board of Medical Aesthetics",
+   "u": "https://ibmaesthetics.com/careers/",
+   "s": "Careers - International Board of Medical Aesthetics"
+  },
+  {
    "t": "Careers with Aesthetics Biomedical Skincare Innovation Team",
    "u": "https://aestheticsbiomedical.com/careers/",
    "s": "Advance your career with Aesthetics Biomedical. Join an innovative team shaping the future of skin aesthetics and discover rewarding opportunities today."
+  },
+  {
+   "t": "Careers | Candela",
+   "u": "https://candelamedical.com/careers/",
+   "s": "Join Candela, a global leader in medical aesthetic devices. Explore careers in engineering, marketing, and clinical training worldwide"
+  },
+  {
+   "t": "Job Board | Exclusive to IIAM Alumni",
+   "u": "https://www.aestheticmedicineinstitute.org/job-board",
+   "s": "Discover career opportunities in medical aesthetics through the International Institute of Aesthetic Medicine's Job Board. Exclusive to IIAM alumni!"
   },
   {
    "t": "Medical Aesthetic Jobs | Aesthetic Injector, Med Spa & Dermatology ...",
@@ -78,59 +78,29 @@
    "s": "Browse confidential medical aesthetic jobs with leading med spas, plastic surgery practices, dermatology clinics, wellness, and aesthetic companies nationwide. "
   },
   {
-   "t": "Careers | V Medical Aesthetics & Laser Clinic",
-   "u": "https://www.vaestheticsclinic.com.sg/careers/",
-   "s": "Careers at V Medical Aesthetics & Laser Clinic V Medical Aesthetics Group is Singapore's largest medical aesthetics group. With 21 clinic locations islandwide a"
+   "t": "1,000 International Aesthetics Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-International-Aesthetics-jobs.html",
+   "s": "1,404 International Aesthetics jobs available on Indeed.com. Apply to Esthetician, Client Specialist, Beauty Sales Consultant and more!"
   },
   {
-   "t": "Aesthetic Jobs in Singapore (with Salaries) - Sep 2026 | Jobstreet",
-   "u": "https://sg.jobstreet.com/aesthetic-jobs",
-   "s": "Find your ideal job at Jobstreet with 914 Aesthetic jobs found in Singapore. View all our Aesthetic vacancies now with new jobs added daily!"
-  },
-  {
-   "t": "Medical Aesthetics Jobs in Singapore (with Salaries) - Jobstreet",
-   "u": "https://sg.jobstreet.com/medical-aesthetics-jobs",
-   "s": "Find your ideal job at Jobstreet with 798 Medical Aesthetics jobs found in Singapore. View all our Medical Aesthetics vacancies now with new jobs added daily!"
-  },
-  {
-   "t": "Urgent! Aesthetic jobs in Singapore - September 2026 - 933 current ...",
-   "u": "https://sg.jooble.org/jobs-aesthetic/Singapore",
-   "s": "Search and apply for the latest Aesthetic jobs in Singapore. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job email alerts."
-  },
-  {
-   "t": "1,000+ Aesthetic Medicine jobs in Worldwide - LinkedIn",
+   "t": "20,000+ Aesthetic Medicine jobs in Worldwide - LinkedIn",
    "u": "https://www.linkedin.com/jobs/aesthetic-medicine-jobs-worldwide",
-   "s": "Today's top 1,000+ Aesthetic Medicine jobs in Worldwide. Leverage your professional network, and get hired. New Aesthetic Medicine jobs added daily."
+   "s": "Today's top 20,000+ Aesthetic Medicine jobs in Worldwide. Leverage your professional network, and get hired. New Aesthetic Medicine jobs added daily."
   },
   {
-   "t": "600+ Aesthetic Jobs, Employment in Singapore September 26 ... - Indeed",
-   "u": "https://sg.indeed.com/Aesthetic-jobs-in-Singapore",
-   "s": "640 Aesthetic jobs available in Singapore on Indeed.com. Apply to Artist, Physician, Clinical Assistant and more!"
-  },
-  {
-   "t": "Aesthetic Doctor Jobs in Singapore (41 Open Roles) | LinkedIn",
-   "u": "https://sg.linkedin.com/jobs/aesthetic-doctor-jobs",
-   "s": "Today's top 41 Aesthetic Doctor jobs in Singapore. Leverage your professional network, and get hired. New Aesthetic Doctor jobs added daily."
-  },
-  {
-   "t": "30,000+ Global Aesthetics jobs in Worldwide - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/global-aesthetics-jobs-worldwide",
-   "s": "Today's top 30,000+ Global Aesthetics jobs in Worldwide. Leverage your professional network, and get hired. New Global Aesthetics jobs added daily."
+   "t": "16,000+ Aesthetic Clinic jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/aesthetic-clinic-jobs-worldwide",
+   "s": "Today's top 16,000+ Aesthetic Clinic jobs in Worldwide. Leverage your professional network, and get hired. New Aesthetic Clinic jobs added daily."
   },
   {
    "t": "Urgent! Aesthetic jobs in Abroad - Jooble",
    "u": "https://jooble.org/jobs-aesthetic/Abroad",
-   "s": "Active 26 vacancies • Aesthetic jobs in Abroad • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Aesthetic jobs in Abroa"
+   "s": "Active 22 vacancies • Aesthetic jobs in Abroad • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Aesthetic jobs in Abroa"
   },
   {
-   "t": "JobSnob | Industry Leader for Medical Aesthetics Jobs",
-   "u": "https://www.jobsnob.com/",
-   "s": "JobSnob is the exclusive site for Medical Aesthetics jobs. Post a job opening or submit a resume for aesthetics jobs here."
-  },
-  {
-   "t": "Worldwide Career Opportunities - Spa Elite",
-   "u": "https://spa-elite.com/find-a-job",
-   "s": "Your Global Career Journey in Spa, Beauty, Wellness, Aesthetics & Fitness Starts Here Discover the latest international job opportunities in spa careers, aesthe"
+   "t": "Urgent! Aesthetic nurse jobs in Abroad - September 2026 - Jooble",
+   "u": "https://uk.jooble.org/jobs-aesthetic-nurse/Abroad",
+   "s": "Apply for Aesthetic nurse jobs in Abroad. Explore 309.000+ new and current Job vacancies. Competitive salary. Full-time, temporary, and part-time jobs. Fast & F"
   },
   {
    "t": "1,000 International Aesthetics Jobs, Employment | Indeed",
@@ -138,12 +108,47 @@
    "s": "1,404 International Aesthetics jobs available on Indeed.com. Apply to Esthetician, Client Specialist, Beauty Sales Consultant and more!"
   },
   {
-   "t": "1,000+ Aesthetic Medicine jobs in Worldwide - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/aesthetic-medicine-jobs-worldwide",
-   "s": "Today's top 1,000+ Aesthetic Medicine jobs in Worldwide. Leverage your professional network, and get hired. New Aesthetic Medicine jobs added daily."
+   "t": "Urgent! Aesthetic practitioner jobs in Abroad - June 2026 - Jooble",
+   "u": "https://uk.jooble.org/jobs-aesthetic-practitioner/Abroad",
+   "s": "Apply for Aesthetic practitioner jobs in Abroad. Explore 431.000+ new and current Job vacancies. Competitive salary. Full-time, temporary, and part-time jobs. F"
+  },
+  {
+   "t": "Worldwide Career Opportunities - Spa Elite",
+   "u": "https://spa-elite.com/find-a-job",
+   "s": "Your Global Career Journey in Spa, Beauty, Wellness, Aesthetics & Fitness Starts Here Discover the latest international job opportunities in spa careers, aesthe"
+  },
+  {
+   "t": "1,000 International Aesthetic Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-International-Aesthetic-jobs.html",
+   "s": "1,343 International Aesthetic jobs. Apply to Product Designer, Designer, Locator and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "1,000 International Aesthetics Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-International-Aesthetics-jobs.html",
+   "s": "1,404 International Aesthetics jobs available on Indeed.com. Apply to Esthetician, Client Specialist, Beauty Sales Consultant and more!"
+  },
+  {
+   "t": "JobSnob | Industry Leader for Medical Aesthetics Jobs",
+   "u": "https://www.jobsnob.com/",
+   "s": "JobSnob is the exclusive site for Medical Aesthetics jobs. Post a job opening or submit a resume for aesthetics jobs here."
+  },
+  {
+   "t": "Career page and job offers - Merz Aesthetics",
+   "u": "https://careers.merz-aesthetics.com/",
+   "s": "Merz Aesthetics introduces itself: 33 job offers and company profile. We look forward to getting to know you!"
+  },
+  {
+   "t": "Careers | Candela",
+   "u": "https://candelamedical.com/careers/",
+   "s": "Join Candela, a global leader in medical aesthetic devices. Explore careers in engineering, marketing, and clinical training worldwide"
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://ibmaesthetics.com/careers/",
+  "platform": "custom",
+  "title": "Careers &#8211; International Board of Medical Aesthetics"
+ },
+ "verdict": "custom_surface"
 }
