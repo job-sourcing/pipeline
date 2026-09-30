@@ -83,7 +83,11 @@ def main() -> int:
 
     spec = args.spec.strip()
     out = {"spec": spec, "country": args.country}
-    if args.url:
+    if args.url or spec.startswith("http"):
+        # S22: an http(s) spec routes to the raw-URL probe (the GHA
+        # workflow input only carries --spec — URL-shape specs are the
+        # CF/geo-walled board triage class)
+        args.url = args.url or spec
         import re as _re
         u = args.url.strip()
         out = {"url": u}
