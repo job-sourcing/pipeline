@@ -2,10 +2,153 @@
  "brand": "CITIC Telecom International",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:29:44.305Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:37:38.425Z",
+ "candidates": [
+  {
+   "url": "https://www.citictel.com/job-opportunities/",
+   "title": "Job Opportunities | CITIC Telecom International Holdings Limited",
+   "status": 200,
+   "bytes": 75836,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CITIC Telecom International Group is an equal opportunity employer and adheres to non-discriminatory employment practices and procedures in recognising and resp",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.citictel.com/about-us/job-opportunities/",
+   "title": "Join Us | CITIC Telecom International Holdings Limited",
+   "status": 200,
+   "bytes": 82746,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CITIC Telecom International Group is an equal opportunity employer and adheres to non-discriminatory employment practices and procedures in recognising and resp",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.citictel-cpc.com/en-hk/recruitment-job",
+   "title": "CITIC TELECOM CPC | CITIC TELECOM CPC",
+   "status": 200,
+   "bytes": 89610,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "The personal data collected by jobs@citictel-cpc.com will be used by CITIC Telecom International CPC Limited to assess your suitability to assume the job duties",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Job Opportunities | CITIC Telecom International Holdings Limited",
+   "u": "https://www.citictel.com/job-opportunities/",
+   "s": "CITIC Telecom International Group is an equal opportunity employer and adheres to non-discriminatory employment practices and procedures in recognising and resp"
+  },
+  {
+   "t": "Join Us | CITIC Telecom International Holdings Limited",
+   "u": "https://www.citictel.com/about-us/job-opportunities/",
+   "s": "CITIC Telecom International Group is an equal opportunity employer and adheres to non-discriminatory employment practices and procedures in recognising and resp"
+  },
+  {
+   "t": "CITIC Telecom International Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/CITIC-Telecom-International-jobs",
+   "s": "Find your ideal job on Jobsdb with 22 CITIC Telecom International jobs (16 at CITIC Telecom International) listed in Hong Kong. View all the CITIC Telecom Inter"
+  },
+  {
+   "t": "CITIC Telecom International job openings and vacancies | Jobsdb",
+   "u": "https://hk.jobsdb.com/companies/citic-telecom-international-171082550558334/jobs",
+   "s": "View all current job openings at CITIC Telecom International here on hk.jobsdb.com"
+  },
+  {
+   "t": "11,000+Citic Telecom International Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/citic-telecom-international-jobs",
+   "s": "Today's top 11,000+ Citic Telecom International jobs in United States. Leverage your professional network, and get hired. New Citic Telecom International jobs a"
+  },
+  {
+   "t": "Careers - China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/en/index.jsp",
+   "s": "A World of Opportunities We provide promising career opportunities to top talents. Join us and become part of our international success story."
+  },
+  {
+   "t": "Citic Telecom Cpc | Citic Telecom Cpc",
+   "u": "https://www.citictel-cpc.com/en-hk/recruitment-job",
+   "s": "The personal data collected by jobs@citictel-cpc.com will be used by CITIC Telecom International CPC Limited to assess your suitability to assume the job duties"
+  },
+  {
+   "t": "CITIC Telecom International Careers and Employment - Indeed",
+   "u": "https://hk.indeed.com/cmp/Citic-Telecom-International",
+   "s": "Find out what works well at CITIC Telecom International from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO ins"
+  },
+  {
+   "t": "Job Opportunities | CITIC Telecom International Holdings Limited",
+   "u": "https://www.citictel.com/job-opportunities/",
+   "s": "CITIC Telecom International Group is an equal opportunity employer and adheres to non-discriminatory employment practices and procedures in recognising and resp"
+  },
+  {
+   "t": "Join Us | CITIC Telecom International Holdings Limited",
+   "u": "https://www.citictel.com/about-us/job-opportunities/",
+   "s": "CITIC Telecom International Group is an equal opportunity employer and adheres to non-discriminatory employment practices and procedures in recognising and resp"
+  },
+  {
+   "t": "CITIC Telecom International Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/CITIC-Telecom-International-jobs",
+   "s": "Find your ideal job on Jobsdb with 22 CITIC Telecom International jobs (16 at CITIC Telecom International) listed in Hong Kong. View all the CITIC Telecom Inter"
+  },
+  {
+   "t": "25 Citic Telecom International jobs in Hong Kong SAR",
+   "u": "https://hk.jobsdb.com/citic-telecom-international-jobs/in-Hong-Kong-SAR",
+   "s": "Find your ideal job on Jobsdb with 25 Citic Telecom International jobs (16 at Citic Telecom International) listed in Hong Kong SAR. View all the Citic Telecom I"
+  },
+  {
+   "t": "Citic Telecom International Cpc Limited Jobs in Worldwide ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/citic-telecom-international-cpc-limited-jobs-worldwide",
+   "s": "Today's top 21,000+ Citic Telecom International Cpc Limited jobs in Worldwide. Leverage your professional network, and get hired. New Citic Telecom Internationa"
+  },
+  {
+   "t": "All CITIC Telecom International job titles | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Citic-Telecom-International/job-titles",
+   "s": "Select a job title to read reviews and discover what it's like to work in that position. Companies CITIC Telecom International"
+  },
+  {
+   "t": "Citic Telecom International Holdings Ltd Jobs in Hong Kong - Aug 2026 ...",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/citic-telecom-international-holdings-ltd-jobs",
+   "s": "Explore 147 Citic Telecom International Holdings Ltd jobs in Hong Kong. Browse through all our new daily-updated Citic Telecom International Holdings Ltd job li"
+  },
+  {
+   "t": "CITIC Telecom International Careers and Employment - Indeed",
+   "u": "https://hk.indeed.com/cmp/Citic-Telecom-International",
+   "s": "Find out what works well at CITIC Telecom International from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO ins"
+  },
+  {
+   "t": "Job Opportunities | CITIC Telecom International Holdings Limited",
+   "u": "https://www.citictel.com/job-opportunities/",
+   "s": "CITIC Telecom International Group is an equal opportunity employer and adheres to non-discriminatory employment practices and procedures in recognising and resp"
+  },
+  {
+   "t": "Join Us | CITIC Telecom International Holdings Limited",
+   "u": "https://www.citictel.com/about-us/job-opportunities/",
+   "s": "CITIC Telecom International Group is an equal opportunity employer and adheres to non-discriminatory employment practices and procedures in recognising and resp"
+  },
+  {
+   "t": "CITIC Telecom International Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/CITIC-Telecom-International-jobs",
+   "s": "Find your ideal job on Jobsdb with 22 CITIC Telecom International jobs (16 at CITIC Telecom International) listed in Hong Kong. View all the CITIC Telecom Inter"
+  },
+  {
+   "t": "CITIC Telecom International job openings and vacancies | Jobsdb",
+   "u": "https://hk.jobsdb.com/companies/citic-telecom-international-171082550558334/jobs",
+   "s": "View all current job openings at CITIC Telecom International here on hk.jobsdb.com"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.citictel.com/job-opportunities/",
+  "platform": "custom",
+  "title": "Job Opportunities | CITIC Telecom International Holdings Limited"
+ },
+ "verdict": "custom_surface"
 }

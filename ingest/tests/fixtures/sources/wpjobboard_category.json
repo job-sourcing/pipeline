@@ -1,0 +1,32 @@
+[
+ {
+  "id": 43,
+  "name": "Clinical Development",
+  "slug": "clinical-development",
+  "count": 2
+ },
+ {
+  "id": 71,
+  "name": "Finance",
+  "slug": "finance",
+  "count": 0
+ },
+ {
+  "id": 73,
+  "name": "Investor Relation",
+  "slug": "investor-relation",
+  "count": 1
+ },
+ {
+  "id": 44,
+  "name": "Pharmaceutical Development",
+  "slug": "pharmaceutical-development",
+  "count": 1
+ },
+ {
+  "id": 42,
+  "name": "Regulatory Affairs",
+  "slug": "regulatory-affairs",
+  "count": 3
+ }
+]

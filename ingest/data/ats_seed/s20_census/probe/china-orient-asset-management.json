@@ -2,10 +2,143 @@
  "brand": "China Orient Asset Management",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:27:49.902Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:34:15.825Z",
+ "candidates": [
+  {
+   "url": "https://corient.com/us/en/careers",
+   "title": "Careers\n    | Corient",
+   "status": 200,
+   "bytes": 207495,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Attend annual conferences, maintain certifications and improve your job skills through coaching opportunities. We want you to feel empowered and confident in yo",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.coamci.com.cn/en/careers/",
+   "title": "Careers - China Orient Asset Management (international) Holding Limited",
+   "status": 200,
+   "bytes": 15450,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "You will be able to excel wherever you are in your career path. You can expect merit-based competitive remuneration that commensurate with your experience and e",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - China Orient Asset Management (international) Holding Limited",
+   "u": "https://www.coamci.com.cn/en/careers/",
+   "s": "You will be able to excel wherever you are in your career path. You can expect merit-based competitive remuneration that commensurate with your experience and e"
+  },
+  {
+   "t": "China Orient Asset Management International Holding Limited Jobs in ...",
+   "u": "https://hk.jobsdb.com/china-orient-asset-management-international-holding-limited-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 China Orient Asset Management International Holding Limited job found in Hong Kong. View all our China Orient Asset Managem"
+  },
+  {
+   "t": "China Orient Asset Management (international) Holding Limited",
+   "u": "https://coamci.com.cn/index.php/en",
+   "s": "Headquartered in Hong Kong, China Orient Asset Management (International) Holding Limited (COAMCI), a wholly-owned subsidiary of China Orient Asset Management C"
+  },
+  {
+   "t": "China Orient Asset Management Co., Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/%E4%B8%AD%E5%9B%BD%E4%B8%9C%E6%96%B9%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+   "s": "China Orient Asset Management Co., Ltd. (Hereinafter referred to as China Orient) is a state-owned centralfinancialenterprise jointly established by the Ministr"
+  },
+  {
+   "t": "Working at China Orient Asset Management | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-China-Orient-Asset-Management-EI_IE1940572.11,40.htm",
+   "s": "See what employees say it's like to work at China Orient Asset Management. Salaries, reviews, and more - all posted by employees working at China Orient Asset M"
+  },
+  {
+   "t": "China Orient Asset Management Corporation - LinkedIn",
+   "u": "https://www.linkedin.com/company/china-orient-asset-management-corporation",
+   "s": "China Orient Asset Management Corporation | 1,519 followers on LinkedIn. Powered by \"insurance and asset management\" as its core business with sound coordinatio"
+  },
+  {
+   "t": "中国东方资产管理股份有限公司2026秋招校招 - 校招信息 - Up求职官网（原up简历）",
+   "u": "https://www.upcv.tech/xiaozhao/cmsk5a60e000qm928lpb5211f.html",
+   "s": "智汇东方 才聚未来 | 中国东方2027年度校园招聘正式启动 发布日期： 2026年8月7日 招聘主体： 中国东方资产管理股份有限公司（CHINA ORIENT ASSET MANAGEMENT CO., LTD.）"
+  },
+  {
+   "t": "Careers - Corient",
+   "u": "https://corient.com/us/en/careers",
+   "s": "Attend annual conferences, maintain certifications and improve your job skills through coaching opportunities. We want you to feel empowered and confident in yo"
+  },
+  {
+   "t": "Careers - China Orient Asset Management (international) Holding Limited",
+   "u": "https://www.coamci.com.cn/en/careers/",
+   "s": "At COAMCI, we offer exciting career opportunities. We welcome talents of diverse backgrounds and cultures to join our teams. You will be able to excel wherever "
+  },
+  {
+   "t": "Working at China Orient Asset Management | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-China-Orient-Asset-Management-EI_IE1940572.11,40.htm",
+   "s": "See what employees say it's like to work at China Orient Asset Management. Salaries, reviews, and more - all posted by employees working at China Orient Asset M"
+  },
+  {
+   "t": "China Orient Asset Management International Holding Limited Jobs in ...",
+   "u": "https://hk.jobsdb.com/china-orient-asset-management-international-holding-limited-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 China Orient Asset Management International Holding Limited job found in Hong Kong. View all our China Orient Asset Managem"
+  },
+  {
+   "t": "China Orient Asset Management Co., Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/%E4%B8%AD%E5%9B%BD%E4%B8%9C%E6%96%B9%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+   "s": "China Orient Asset Management Co., Ltd. (Hereinafter referred to as China Orient) is a state-owned centralfinancialenterprise jointly established by the Ministr"
+  },
+  {
+   "t": "Urgent! China asset management jobs - September 2026 - Jooble",
+   "u": "https://hk.jooble.org/jobs-china-asset-management",
+   "s": "Search and apply for the latest China asset management jobs. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job email alerts."
+  },
+  {
+   "t": "China Asset Management Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/china-asset-management-jobs",
+   "s": "Find your ideal job at Jobsdb with 1424 China Asset Management jobs found in Hong Kong. View all our China Asset Management vacancies now with new jobs added da"
+  },
+  {
+   "t": "China Orient Asset Management Corporation - LinkedIn",
+   "u": "https://www.linkedin.com/company/china-orient-asset-management-corporation",
+   "s": "China Orient Asset Management Corporation | 1,519 followers on LinkedIn. Powered by \"insurance and asset management\" as its core business with sound coordinatio"
+  },
+  {
+   "t": "中国东方资产管理股份有限公司2026秋招校招 - 校招信息 - Up求职官网（原up简历）",
+   "u": "https://www.upcv.tech/xiaozhao/cmsk5a60e000qm928lpb5211f.html",
+   "s": "智汇东方 才聚未来 | 中国东方2027年度校园招聘正式启动 发布日期： 2026年8月7日 招聘主体： 中国东方资产管理股份有限公司（CHINA ORIENT ASSET MANAGEMENT CO., LTD.）"
+  },
+  {
+   "t": "Careers - China Orient Asset Management (international) Holding Limited",
+   "u": "https://www.coamci.com.cn/en/careers/",
+   "s": "You will be able to excel wherever you are in your career path. You can expect merit-based competitive remuneration that commensurate with your experience and e"
+  },
+  {
+   "t": "China Orient Asset Management International Holding Limited Jobs in ...",
+   "u": "https://hk.jobsdb.com/china-orient-asset-management-international-holding-limited-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 China Orient Asset Management International Holding Limited job found in Hong Kong. View all our China Orient Asset Managem"
+  },
+  {
+   "t": "China Asset Management Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/china-asset-management-jobs",
+   "s": "Find your ideal job at Jobsdb with 1424 China Asset Management jobs found in Hong Kong. View all our China Asset Management vacancies now with new jobs added da"
+  },
+  {
+   "t": "Working at China Orient Asset Management | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-China-Orient-Asset-Management-EI_IE1940572.11,40.htm",
+   "s": "To get a job at China Orient Asset Management, browse currently open positions and apply for a job near you. Once you get a positive response, make sure to find"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.coamci.com.cn/en/careers/",
+  "platform": "custom",
+  "title": "Careers - China Orient Asset Management (international) Holding Limited"
+ },
+ "verdict": "custom_surface"
 }

@@ -1,0 +1,38 @@
+﻿questionnaireId,instructions,questionId,order,question,required,type,answers
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1d45d0a60000,a,How many years’ experience do you have as a Store Manager?,true,Number,
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1d45d0a60001,b,What are your current working rights in Australia?,true,Text,
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1ddfbe090002,c,What is your expected annual base salary?,true,Number,
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1e79a1120000,d,What is your notice period?,true,Text,
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1e79a1120001,e,Do you have planned leave in the next 12 months?,true,Multiple Choice - Single Select,Yes; No
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1e79a1120004,f,Why would you like to work at POP MART?,true,Text,
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1e79a1120005,g,What is the largest retail team you have directly led?,true,Text,
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1e79a1120006,h,Which KPIs were you accountable for and how did you review them?,true,Text,
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1e79a1120007,i,What is your greatest leadership achievement?,true,Text,
+33706627ad141001227d1cabe4330000,,33706627ad141001227d1f135b160000,j,Is a 7? day retail roster suitable for you?,true,Multiple Choice - Single Select,Yes; No
+33706627ad141001287e5e98c9910000,,33706627ad141001287e5e98c9910001,a,How many years’ experience do you have in retail leadership?,true,Number,
+33706627ad141001287e5e98c9910000,,33706627ad141001287e5f3280d10000,b,What are your current working rights in Australia?,true,Text,
+33706627ad141001287e5e98c9910000,,33706627ad141001287e5f3280d10001,c,What is your expected annual base salary?,true,Number,
+33706627ad141001287e5e98c9910000,,33706627ad141001287e5f3280d10002,d,What is your notice period?,true,Text,
+33706627ad141001287e5e98c9910000,,33706627ad141001287e5f3280d10003,e,Do you have planned leave in the next 12 months?,true,Multiple Choice - Single Select,Yes; No
+33706627ad141001287e5e98c9910000,,33706627ad141001287e5f3280d10006,f,Why would you like to work at POP MART?,true,Text,
+33706627ad141001287e5e98c9910000,,33706627ad141001287e5f3280d10007,g,What is the largest team you have managed?,true,Text,
+33706627ad141001287e5e98c9910000,,33706627ad141001287e5fcc42920000,h,What is your greatest leadership achievement?,true,Text,
+33706627ad141001287e5e98c9910000,,33706627ad141001287e5fcc42920001,i,Is a 7-day retail roster suitable for you?,true,Multiple Choice - Single Select,Yes; No
+391ef40db1491000db75948305c00000,,391ef40db1491000db75951cb5680000,a,Earliest Availability,true,Date,
+391ef40db1491000db75948305c00000,,391ef40db1491000db7595b6bdd20000,b,Are you authorized to work in the country that you applied for without any restriction?,true,Multiple Choice - Single Select,Yes; No
+391ef40db1491000db75948305c00000,,391ef40db1491000db7596ea415f0000,c,"Do you have any family members, relatives and / or friends working in POP MART?",true,Multiple Choice - Single Select,Yes; No
+391ef40db1491000db75948305c00000,,391ef40db1491000db75981da9330000,c.a,"Please give details of family members, relatives and/ or friends working in POP MART. If not applicable, indicate N.A.",true,Text,
+391ef40db1491000db75948305c00000,,391ef40db1491000db7598b756f00000,d,What interested you in applying for the position?,true,Text,
+4b10732b2ec410016d32e757399e0000,,4b10732b2ec410018e0b4ee1ebd00000,a,Do you have unrestricted and permanent working rights in the country of your application?,true,Multiple Choice - Single Select,Yes; No
+4b10732b2ec410016d32e757399e0000,,4b10732b2ec410018e0b4f7ba2910000,b,What is your expected annual base salary?,true,Number,
+4b10732b2ec410016d32e757399e0000,,4b10732b2ec410018e0b4f7ba2910001,c,Why would you like to work at POP MART?,true,Text,
+4b10732b2ec410016d32e757399e0000,,4b10732b2ec410018e0b4f7ba2910002,d,What is your notice period?,true,Text,
+6e21e1ac657d1001294e2373c4110000,,6e21e1ac657d1001294e240da5d60000,a,How many years’ experience do you have in retail or sales?,true,Number,
+6e21e1ac657d1001294e2373c4110000,,6e21e1ac657d1001294e240da5d60001,b,Are you a current resident with full working rights?,true,Multiple Choice - Single Select,Yes; No
+6e21e1ac657d1001294e2373c4110000,,6e21e1ac657d1001294e24a76dbf0002,c,What is your expected annual base salary?,true,Number,
+6e21e1ac657d1001294e2373c4110000,,6e21e1ac657d1001294e24a76dbf0003,d,What is your notice period?,true,Text,
+6e21e1ac657d1001294e2373c4110000,,6e21e1ac657d1001294e24a76dbf0004,e,Do you have planned leave in the next 12 months?,true,Multiple Choice - Single Select,Yes; No
+6e21e1ac657d1001294e2373c4110000,,6e21e1ac657d1001294e2541303a0001,f,What is your preferred work type (full-time/part-time)?,true,Multiple Choice - Multi Select,Full-time; Part-time
+6e21e1ac657d1001294e2373c4110000,,6e21e1ac657d1001294e2541303a0004,g,What is your regular availability?,true,Multiple Choice - Multi Select,Monday; Tuesday; Wednesday; Thursday; Friday; Saturday; Sunday
+6e21e1ac657d1001294e2373c4110000,,6e21e1ac657d1001294e25dadeac0004,h,Why would you like to work at POP MART?,true,Text,
+6e21e1ac657d1001294e2373c4110000,,6e21e1ac657d1001294e25dadeac0005,i,Which POP MART character resonates with you most and why?,true,Text,

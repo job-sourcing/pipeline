@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers - We&#039;re Hiring"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "bgi-llc.com/careers = US veteran-owned aviation firm; bgiworldwide.com = BGI Worldwide Logistics (US); authentic BGI Genomics (Shenzhen, bgi.com/genomics.cn) posts only EU sales roles via services.bgi.com/we-are-recruiting — no US board/jobs",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

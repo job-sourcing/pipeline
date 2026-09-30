@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "dict board feishuhire:asia is 404 (dead slug) and self-titles '欢迎加入亚创集团' = Asia Innovations Group — not the HK-based Asia Cruises line (Wikipedia: former Asia Cruiser Club)",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

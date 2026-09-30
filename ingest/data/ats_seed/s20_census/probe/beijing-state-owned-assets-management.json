@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Job Opportunities"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "china_only: BSAM (Beijing municipal SOE) recruits via own zhaopin white-label zhaopin.bsam.com.cn (北京国资公司集团招聘平台, CN-language campus/social jobs); probed candidates were wiki/directory pages; no US/EN surface.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

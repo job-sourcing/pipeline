@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers - Cheer DE"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Surfaces belong to unrelated US cheerleading-industry orgs: USA Cheer (governing body), Cheerleading.com (apparel), CHEER DE (DE care agency); none is Cheer Holding Inc (Beijing ad/content co, NASDAQ CHR).",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

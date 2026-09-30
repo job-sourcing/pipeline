@@ -2,10 +2,153 @@
  "brand": "CHN Energy Investment Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:34:32.305Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:27:36.498Z",
+ "candidates": [
+  {
+   "url": "https://jobsearch.entergy.com/locations/chn/jobs/",
+   "title": "",
+   "status": 200,
+   "bytes": 2853,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Jobs in CHN, updated and verified daily by DirectEmployers Association.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.chnenergy.com.cn/gjnyjtwwEn/index.shtml",
+   "title": "CHN ENERGY Investment Group Co. LTD",
+   "status": 200,
+   "bytes": 36177,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "With the approval of the CPC Central Committee and the State Council, China Energy Investment Corporation (China Energy) was formally established on November 28",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.thejobsmap.com/company/china-energy-investment",
+   "title": "China Energy Investment Jobs &amp; Careers (1,553 Open Roles) | TheJobsMap",
+   "status": 200,
+   "bytes": 202827,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "About China Energy Investment China Energy Investment Corporation (CHN Energy) is a Chinese state-owned energy conglomerate and the worlds largest company in co",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "CHN ENERGY Investment Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Chn-Energy-Investment",
+   "s": "Find out what works well at CHN ENERGY Investment from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+  },
+  {
+   "t": "CHN ENERGY Investment Group Co. LTD",
+   "u": "https://www.chnenergy.com.cn/gjnyjtwwEn/index.shtml",
+   "s": "With the approval of the CPC Central Committee and the State Council, China Energy Investment Corporation (China Energy) was formally established on November 28"
+  },
+  {
+   "t": "Working at CHN ENERGY Investment Group | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-CHN-ENERGY-Investment-Group-EI_IE5181321.11,38.htm",
+   "s": "See what employees say it's like to work at CHN ENERGY Investment Group. Salaries, reviews, and more - all posted by employees working at CHN ENERGY Investment "
+  },
+  {
+   "t": "10 Chn Energy Investment Group Co Ltd的中文公司名 jobs ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/chn-energy-investment-group-co-ltd%E7%9A%84%E4%B8%AD%E6%96%87%E5%85%AC%E5%8F%B8%E5%90%8D-jobs",
+   "s": "Today&rsquo;s top 10 Chn Energy Investment Group Co Ltd的中文公司名 jobs in United States. Leverage your professional network, and get hired."
+  },
+  {
+   "t": "CHN ENERGY Investment Group Co.,LTD - LinkedIn",
+   "u": "https://www.linkedin.com/company/chn-energy-investment-group-co-ltd",
+   "s": "CHN ENERGY Investment Group Co.,LTD Electric Power Generation CHN Energy Investment Group is a key state-owned energy enterprise directly administered by the ce"
+  },
+  {
+   "t": "CHN ENERGY Investment Group Career: Working at CHN ENERGY ... - Glassdoor",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-CHN-ENERGY-Investment-Group-EI_IE5181321.11,38.htm",
+   "s": "What is it really like to work at CHN ENERGY Investment Group? What do employees say about pay and career opportunities? Discover anonymous reviews now!"
+  },
+  {
+   "t": "China Energy Investment Jobs & Careers (4,054 Open Roles) | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/china-energy-investment",
+   "s": "About China Energy Investment China Energy Investment Corporation (CHN Energy) is a Chinese state-owned energy conglomerate and the worlds largest company in co"
+  },
+  {
+   "t": "CHN ENERGY Investment Group - Glassdoor",
+   "u": "https://www.glassdoor.com/Reviews/CHN-ENERGY-Investment-Group-Reviews-E5181321.htm",
+   "s": "3 CHN ENERGY Investment Group reviews. A free inside look at company reviews and salaries posted anonymously by employees."
+  },
+  {
+   "t": "CHN ENERGY Investment Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Chn-Energy-Investment",
+   "s": "Find out what works well at CHN ENERGY Investment from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+  },
+  {
+   "t": "10 Chn Energy Investment Group Co Ltd的中文公司名 jobs ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/chn-energy-investment-group-co-ltd%E7%9A%84%E4%B8%AD%E6%96%87%E5%85%AC%E5%8F%B8%E5%90%8D-jobs",
+   "s": "Today&rsquo;s top 10 Chn Energy Investment Group Co Ltd的中文公司名 jobs in United States. Leverage your professional network, and get hired."
+  },
+  {
+   "t": "CHN ENERGY Investment Group Co. LTD",
+   "u": "https://www.chnenergy.com.cn/gjnyjtwwEn/index.shtml",
+   "s": "Profile With the approval of the CPC Central Committee and the State Council, China Energy Investment Corporation (China Energy) was formally established on Nov"
+  },
+  {
+   "t": "Recruitment-China energy group",
+   "u": "https://en.cngn.net.cn/Recruitment/3.html",
+   "s": "China energy group The large-scale diversified holding enterprise group approved by the State Council in 1983 is headquartered in Beijing with a registered capi"
+  },
+  {
+   "t": "Working at CHN ENERGY Investment Group | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-CHN-ENERGY-Investment-Group-EI_IE5181321.11,38.htm",
+   "s": "See what employees say it's like to work at CHN ENERGY Investment Group. Salaries, reviews, and more - all posted by employees working at CHN ENERGY Investment "
+  },
+  {
+   "t": "CHN ENERGY Investment Group Co.,LTD - LinkedIn",
+   "u": "https://www.linkedin.com/company/chn-energy-investment-group-co-ltd",
+   "s": "CHN ENERGY Investment Group Co.,LTD | 609 followers on LinkedIn. CHN Energy Investment Group is a key state-owned energy enterprise directly administered by the"
+  },
+  {
+   "t": "Jobs in CHN | Entergy",
+   "u": "https://jobsearch.entergy.com/locations/chn/jobs/",
+   "s": "Jobs in CHN, updated and verified daily by DirectEmployers Association."
+  },
+  {
+   "t": "CHN ENERGY Investment Group - Glassdoor",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-CHN-ENERGY-Investment-Group-EI_IE5181321.11,38.htm",
+   "s": "Glassdoor gives you an inside look at what it's like to work at CHN ENERGY Investment Group, including salaries, reviews, office photos and more. This is the CH"
+  },
+  {
+   "t": "CHN ENERGY Investment Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Chn-Energy-Investment",
+   "s": "Find out what works well at CHN ENERGY Investment from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+  },
+  {
+   "t": "10 Chn Energy Investment Group Co Ltd的中文公司名 jobs ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/chn-energy-investment-group-co-ltd%E7%9A%84%E4%B8%AD%E6%96%87%E5%85%AC%E5%8F%B8%E5%90%8D-jobs",
+   "s": "Today&rsquo;s top 10 Chn Energy Investment Group Co Ltd的中文公司名 jobs in United States. Leverage your professional network, and get hired."
+  },
+  {
+   "t": "Jobs in CHN | Entergy",
+   "u": "https://jobsearch.entergy.com/locations/chn/jobs/",
+   "s": "Jobs in CHN, updated and verified daily by DirectEmployers Association."
+  },
+  {
+   "t": "China Energy Investment Jobs & Careers (4,054 Open Roles) | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/china-energy-investment",
+   "s": "About China Energy Investment China Energy Investment Corporation (CHN Energy) is a Chinese state-owned energy conglomerate and the worlds largest company in co"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.thejobsmap.com/company/china-energy-investment",
+  "platform": "custom",
+  "title": "China Energy Investment Jobs &amp; Careers (1,553 Open Roles) | TheJobsMap"
+ },
+ "verdict": "custom_surface"
 }

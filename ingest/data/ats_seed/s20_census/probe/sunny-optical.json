@@ -152,5 +152,11 @@
   "platform": "moka",
   "title": "人才招聘-舜宇集团"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic Sunny Optical (舜宇集团 2382.HK): sunnyoptical.com/jobs.html (moka) is a China-only 社会招聘/校园招聘 board — no US job rows",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

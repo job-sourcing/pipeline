@@ -1,0 +1,4 @@
+{"reqId": "1834", "title": "Management Trainee", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "2212", "title": "Head of Engineering Services (Remote)", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}
+{"reqId": "2256", "title": "Business Development Manager (Westcoast)", "primaryLocation": "", "query_location": "United States", "status": "error", "error": "429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Business+Development+Manager+%28Westcoast%29&location=United+States&start=0"}
+{"reqId": "2256", "title": "Business Development Manager (Westcoast)", "primaryLocation": "", "query_location": "United States", "hits": [], "status": "no_card"}

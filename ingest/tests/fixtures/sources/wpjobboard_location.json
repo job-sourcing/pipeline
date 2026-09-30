@@ -1,0 +1,56 @@
+[
+ {
+  "id": 39,
+  "name": "Beijing",
+  "slug": "beijing",
+  "count": 2
+ },
+ {
+  "id": 37,
+  "name": "Flexible",
+  "slug": "flexible",
+  "count": 3
+ },
+ {
+  "id": 41,
+  "name": "Guangzhou",
+  "slug": "guangzhou",
+  "count": 2
+ },
+ {
+  "id": 46,
+  "name": "Jiangsu Province",
+  "slug": "jiangsu-province",
+  "count": 1
+ },
+ {
+  "id": 40,
+  "name": "Shanghai",
+  "slug": "shanghai",
+  "count": 2
+ },
+ {
+  "id": 47,
+  "name": "Suzhou",
+  "slug": "suzhou",
+  "count": 1
+ },
+ {
+  "id": 45,
+  "name": "Suzhou or Taizhou",
+  "slug": "suzhou-or-taizhou",
+  "count": 0
+ },
+ {
+  "id": 48,
+  "name": "Taizhou",
+  "slug": "taizhou",
+  "count": 1
+ },
+ {
+  "id": 38,
+  "name": "United States",
+  "slug": "united-states",
+  "count": 4
+ }
+]

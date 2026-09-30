@@ -150,5 +150,17 @@
   "platform": "custom",
   "title": "Careers | Meyer Manufacturing"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "authentic — meyerus.com = Meyer Corporation ('Meyer Is A Registered Trademark of Meyer Manufacturing Company Limited', HK census brand's US cookware arm); careers → UltiPro/UKG board with 7 US rows. Top probe candidate meyermfg.com = Dorchester WI farm-equipment homonym.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ },
+ "wire": {
+  "platform": "ultipro",
+  "board": "https://recruiting.ultipro.com/MEY1000MEYER/JobBoard/7a970c3d-b076-4042-8735-673b5e5508ac/",
+  "us_rows": 7,
+  "sample": "Sales Operations Coordinator — Vallejo, CA; Import Compliance Manager — Remote - USA; Regional Sales Manager Residential — Pompano Beach, FL; Automated Systems & Facilities Manager — Fairfield, CA"
+ }
 }

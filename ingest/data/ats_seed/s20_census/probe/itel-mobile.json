@@ -12,5 +12,11 @@
   "title": "Join the team at iTel Networks Inc. | Careers",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "itel.com/careers-at-itel = iTel Networks Inc (Canadian business ISP); itelinc.com/itelinternational.com = US insurance-claims firms; authentic itel (itel-life.com, Transsion) has no careers page (/careers → 404)",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

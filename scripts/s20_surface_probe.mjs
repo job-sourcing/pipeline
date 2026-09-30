@@ -441,7 +441,9 @@ async function probeSurface (rec, zai, noSearch = false) {
     out.search_skipped = true
     return out
   }
-  const engine = (process.env.S20_SEARCH_ENGINE || 'auto')
+  // S22: kit is the DEFAULT engine (quota-free DDG via supabase rotating
+  // IPs; z-ai only on explicit --engine auto — the user's 429 directive)
+  const engine = (process.env.S20_SEARCH_ENGINE || 'kit')
   const queries = [`${rec.brand} careers`, `${rec.brand} jobs`, `${rec.brand} careers jobs hiring`]
   const results = []
   let searchBackend = null
@@ -563,7 +565,10 @@ async function main () {
     if (existsSync(f)) {
       const prior = JSON.parse(readFileSync(f, 'utf8'))
       const good = ['ats_surface', 'marker_surface', 'custom_surface', 'dict_collision'].includes(prior.verdict)
-      if (good || !args.retry) { console.log('skip', good ? '(done)' : '(exists, use --retry)', rec.brand); continue }
+      // S22: an adjudication block is terminal (refuted homonyms carry
+      // no_clear_surface top-level verdicts — retry must never clobber them)
+      const settled = good || prior.adjudication
+      if (settled || !args.retry) { console.log('skip', settled ? '(done)' : '(exists, use --retry)', rec.brand); continue }
       // retry mode: only failed verdicts get re-probed (search variance,
       // rate-limit blanks, CF challenges)
     }

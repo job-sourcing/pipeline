@@ -157,5 +157,17 @@
   "snippet": "Careers at Deeproute.ai Deeproute.ai, an autonomous driving startup, stands for innovation in mobility. Our mission is to provide a self-driving technology that",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "AUTHENTIC: Workable board self-describes 'Deeproute.ai, an autonomous driving startup... headquarters in Shenzhen and Beijing, China, and Silicon Valley'; 4 jobs, ALL Fremont, United States.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ },
+ "wire": {
+  "platform": "workable",
+  "board": "https://apply.workable.com/deeproute-dot-a-i/",
+  "us_rows": 4,
+  "sample": "Autonomous Driving Systems Project Manager — Fremont, US; Member of Technical Staff (MTS) Multimodal Foundation Models — Fremont, US; Research Scientist, RL — Fremont, US"
+ }
 }

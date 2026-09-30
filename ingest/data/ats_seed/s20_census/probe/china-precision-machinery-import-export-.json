@@ -2,10 +2,153 @@
  "brand": "China Precision Machinery Import-Export Corporation",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:32:19.434Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:23:52.584Z",
+ "candidates": [
+  {
+   "url": "https://chinajobsdaily.com/",
+   "title": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for foreigners in China. - Home",
+   "status": 200,
+   "bytes": 50628,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.iranwatch.org/suppliers/china-precision-machinery-import-export-corporation-cpmiec",
+   "title": "",
+   "status": 200,
+   "bytes": 39954,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "China Precision Machinery Import-Export Corporation (CPMIEC) Also Known As: China National Precision Machinery I/E Corp. China National Precision Machinery Impo",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.unitedagainstnucleariran.com/company/china-precision-machinery-import-export-corp-cpmiec",
+   "title": "",
+   "status": 200,
+   "bytes": 32649,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "A unit of state-owned China Precision Machinery Import-Export Corp., for example, has made nearly 300 illegal shipments to U.S. firms since a ban was imposed on",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "China Precision Machinery Import-Export Corporation - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/China_Precision_Machinery_Import-Export_Corporation",
+   "s": "China Precision Machinery Import-Export Corporation (CPMIEC, Chinese: 中国精密机械进出口总公司) is a Chinese defense company that acts as one of a number of authorized defe"
+  },
+  {
+   "t": "中国精密机械进出口有限公司 - 企查查",
+   "u": "https://www.qcc.com/firm/8a461652cb491a1dac477c9bde93c3c8.html",
+   "s": "企查查为您提供中国精密机械进出口有限公司的最新工商信息、公司简介、公司地址、电话号码、招聘信息、信用信息、财务信息、法律诉讼等多维度详细信息查询，让您对中国精密机械进出口有限公司能够做到全面的了解!"
+  },
+  {
+   "t": "China National Precision Machinery Import & Export Corporation",
+   "u": "https://www.worlddefenseshow.com/en/exhibitors/AC-014951",
+   "s": "China National Precision Machinery Import & Export Corporation CPMIEC is a large-scale modern aerospace defense enterprise which combines trade with industry an"
+  },
+  {
+   "t": "「中国精密机械进出口有限公司招聘」-boss直聘",
+   "u": "https://www.zhipin.com/companys/f68952ecd391144e3nF43dq1.html",
+   "s": "BOSS直聘为求职者提供2026年中国精密机械进出口有限公司招聘信息，更有中国精密机械进出口有限公司的品牌信息、公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，中国精密机械进出口有限公司正在线直聘职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  },
+  {
+   "t": "China National Precision Machinery Import/Export Corporation",
+   "u": "https://www.opensanctions.org/entities/NK-JumJzCNBz5AkZJcXorVjRQ/",
+   "s": "CHINA NATIONAL PRECISION MACHINERY IMPORT/EXPORT CORPORATION is a company registered in China, which is sanctioned, debarred and subject to export controls. Vie"
+  },
+  {
+   "t": "China Precision Machinery Import-Export Corporation (CPMIEC)",
+   "u": "https://www.iranwatch.org/suppliers/china-precision-machinery-import-export-corporation-cpmiec",
+   "s": "China Precision Machinery Import-Export Corporation (CPMIEC) Also Known As: China National Precision Machinery I/E Corp. China National Precision Machinery Impo"
+  },
+  {
+   "t": "Yi Tang - China National Precision Machinery Import & Export ...",
+   "u": "https://cn.linkedin.com/in/yi-tang-0a949877",
+   "s": "China National Precision Machinery Import & Export Corporation (CPMIEC) - Deputy Division Chief · 工作经历: China National Precision Machinery Import & Export Corpo"
+  },
+  {
+   "t": "China Precision Machinery Import and Export Corporation (CPMIEC)",
+   "u": "https://www.army-guide.com/eng/firm1425.html",
+   "s": "Army Guide - information about the main battle tanks, armoured vehicles and armament of the land forces and also the information concerning other army subjects "
+  },
+  {
+   "t": "China Precision Machinery Import-Export Corporation - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/China_Precision_Machinery_Import-Export_Corporation",
+   "s": "China Precision Machinery Import-Export Corporation (CPMIEC, Chinese: 中国精密机械进出口总公司) is a Chinese defense company that acts as one of a number of authorized defe"
+  },
+  {
+   "t": "中国精密机械进出口有限公司 - 企查查",
+   "u": "https://www.qcc.com/firm/8a461652cb491a1dac477c9bde93c3c8.html",
+   "s": "企查查为您提供中国精密机械进出口有限公司的最新工商信息、公司简介、公司地址、电话号码、招聘信息、信用信息、财务信息、法律诉讼等多维度详细信息查询，让您对中国精密机械进出口有限公司能够做到全面的了解!"
+  },
+  {
+   "t": "「中国精密机械进出口有限公司招聘」-boss直聘",
+   "u": "https://www.zhipin.com/companys/f68952ecd391144e3nF43dq1.html",
+   "s": "BOSS直聘为求职者提供2026年中国精密机械进出口有限公司招聘信息，更有中国精密机械进出口有限公司的品牌信息、公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，中国精密机械进出口有限公司正在线直聘职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  },
+  {
+   "t": "China National Precision Machinery Import/Export Corporation",
+   "u": "https://www.opensanctions.org/entities/NK-JumJzCNBz5AkZJcXorVjRQ/",
+   "s": "CHINA NATIONAL PRECISION MACHINERY IMPORT/EXPORT CORPORATION is a company registered in China, which is sanctioned, debarred and subject to export controls. Vie"
+  },
+  {
+   "t": "China Precision Machinery Import-Export Corporation (CPMIEC)",
+   "u": "https://www.iranwatch.org/suppliers/china-precision-machinery-import-export-corporation-cpmiec",
+   "s": "China Precision Machinery Import-Export Corporation (CPMIEC) Also Known As: China National Precision Machinery I/E Corp. China National Precision Machinery Impo"
+  },
+  {
+   "t": "中国机械进出口（集团）有限公司",
+   "u": "https://www.cmc.com.cn/",
+   "s": "通用技术中机公司与恒力造船（大连）有限公司合作出口德国18.1万吨散货船3号船顺利下水 号船命名仪式 成功举行 10月9日，国际公司风控法律部、财务部负责人以及总经理一行赴大连参加以交通和基础设施事业部（中机公司）名义签署、轨道公司业务五部执行的与恒力造船（大连）有限公司合作 ..."
+  },
+  {
+   "t": "China Precision Machinery Import-Export Corp. (CPMIEC) - UANI",
+   "u": "https://www.unitedagainstnucleariran.com/company/china-precision-machinery-import-export-corp-cpmiec",
+   "s": "A unit of state-owned China Precision Machinery Import-Export Corp., for example, has made nearly 300 illegal shipments to U.S. firms since a ban was imposed on"
+  },
+  {
+   "t": "中国精密机械进出口有限公司_百度百科",
+   "u": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E7%B2%BE%E5%AF%86%E6%9C%BA%E6%A2%B0%E8%BF%9B%E5%87%BA%E5%8F%A3%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/24378803",
+   "s": "中国精密机械进出口有限公司成立于1980年6月12日，总部位于北京市海淀区，法定代表人为曹哲，是中国航天科工集团有限公司控股的国有企业。公司主要经营防御性武器系统、卫星技术、安保科技以及民用产业等。公司以\"中国军工\"展团形式参加国际防务展，展品包括FD-2000远程防空导弹武器系统 ..."
+  },
+  {
+   "t": "中国精密机械进出口有限公司招聘信息 - 智联招聘",
+   "u": "https://www.zhaopin.com/companydetail/9111F3HLCS9T94AST1.htm",
+   "s": "智联招聘为求职者提供中国精密机械进出口有限公司招聘信息，整合中国精密机械进出口有限公司详细工商信息、公司简介及高管团队资料，同步更新该企业所属行业20个热门在招职位。求职招聘，高效对接，尽在智联招聘!"
+  },
+  {
+   "t": "China Precision Machinery Import-Export Corporation - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/China_Precision_Machinery_Import-Export_Corporation",
+   "s": "China Precision Machinery Import-Export Corporation (CPMIEC, Chinese: 中国精密机械进出口总公司) is a Chinese defense company that acts as one of a number of authorized defe"
+  },
+  {
+   "t": "【中国精密机械进出口有限公司招聘人才信息】-猎聘",
+   "u": "https://m.liepin.com/company/gs24186538/zhaopin/",
+   "s": "猎聘为您提供2026年中国精密机械进出口有限公司招聘信息，可查询中国精密机械进出口有限公司招聘信息，中国精密机械进出口有限公司招聘职位，以及中国精密机械进出口有限公司职位薪资。求职找工作就上猎聘。"
+  },
+  {
+   "t": "「中国精密机械进出口有限公司招聘」-boss直聘",
+   "u": "https://www.zhipin.com/companys/f68952ecd391144e3nF43dq1.html",
+   "s": "BOSS直聘为求职者提供2026年中国精密机械进出口有限公司招聘信息，更有中国精密机械进出口有限公司的品牌信息、公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，中国精密机械进出口有限公司正在线直聘职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://chinajobsdaily.com/",
+  "platform": "custom",
+  "title": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for foreigners in China. - Home"
+ },
+ "verdict": "custom_surface"
 }

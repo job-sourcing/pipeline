@@ -2,10 +2,153 @@
  "brand": "GF Securities",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:37:27.097Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:31:10.492Z",
+ "candidates": [
+  {
+   "url": "https://jobs.ctgoodjobs.hk/company-jobs/00123642/gf-securities-hong-kong",
+   "title": "GF Securities (Hong Kong) Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 691786,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 9 jobs in Hong Kong from GF Securities (Hong Kong). Browse through all our new daily-updated job listing now!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.gfgroup.com.hk/en/job/jobs",
+   "title": "Careers_廣發證券（香港）-招賢納士",
+   "status": 200,
+   "bytes": 100981,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "GF Securities (Hong Kong), which includes GF Holdings (Hong Kong) Corporation Limited and its subsidiaries, is the core platform for GF Securities Co., Ltd. to ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://en.gf.com.cn/careers",
+   "title": "GF Securities",
+   "status": 200,
+   "bytes": 11111,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "Address: GF Securities Tower, 26 Machang Rd, Tianhe District, Guangzhou Postcode: 510627",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers_廣發證券（香港）-招賢納士",
+   "u": "https://www.gfgroup.com.hk/en/job/jobs",
+   "s": "GF Securities (Hong Kong), which includes GF Holdings (Hong Kong) Corporation Limited and its subsidiaries, is the core platform for GF Securities Co., Ltd. to "
+  },
+  {
+   "t": "GF Securities",
+   "u": "https://en.gf.com.cn/careers",
+   "s": "Address: GF Securities Tower, 26 Machang Rd, Tianhe District, Guangzhou Postcode: 510627"
+  },
+  {
+   "t": "GF Securities Jobs & Careers - 10 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/GF-Securities-Jobs-E391083.htm",
+   "s": "Search job openings at GF Securities. 10 GF Securities jobs including salaries, ratings, and reviews, posted by GF Securities employees."
+  },
+  {
+   "t": "20 Gf Securities jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gf-securities-jobs-worldwide",
+   "s": "Today's top 20 Gf Securities jobs in Worldwide. Leverage your professional network, and get hired. New Gf Securities jobs added daily."
+  },
+  {
+   "t": "GF Securities (Hong Kong): Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/gf-holdings-hong-kong/jobs",
+   "s": "After nearly 20 years of development, GF Securities (Hong Kong) provides comprehensive financial services, including global markets, wealth management and broke"
+  },
+  {
+   "t": "GF Securities Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Gf-Securities",
+   "s": "Find out what works well at GF Securities from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  },
+  {
+   "t": "GF Securities",
+   "u": "https://en.gf.com.cn/index",
+   "s": "Social Responsibility GF Securities not only believes in creating economic value for society as a whole, but to actively give back directly to those who are in "
+  },
+  {
+   "t": "广发证券人才招聘网",
+   "u": "http://job.gf.com.cn/",
+   "s": "关于广发 拥有领先创新能力的资本市场综合服务商，自1994年起公司主要经营指标已连续20年稳居国内十大券商行列"
+  },
+  {
+   "t": "GF Securities Jobs & Careers - 10 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/GF-Securities-Jobs-E391083.htm",
+   "s": "Search job openings at GF Securities. 10 GF Securities jobs including salaries, ratings, and reviews, posted by GF Securities employees."
+  },
+  {
+   "t": "20 Gf Securities jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gf-securities-jobs-worldwide",
+   "s": "Today's top 20 Gf Securities jobs in Worldwide. Leverage your professional network, and get hired. New Gf Securities jobs added daily."
+  },
+  {
+   "t": "GF Securities",
+   "u": "https://en.gf.com.cn/careers",
+   "s": "Address: GF Securities Tower, 26 Machang Rd, Tianhe District, Guangzhou Postcode: 510627"
+  },
+  {
+   "t": "Careers at GF - GlobalFoundries",
+   "u": "https://gf.com/careers/",
+   "s": "Careers at GF Join a team that powers the world's essential technologies. At GF, you'll help create innovations that enable AI at scale from the cloud to the ph"
+  },
+  {
+   "t": "广发证券人才招聘网 - job.gf.com.cn",
+   "u": "http://job.gf.com.cn/index",
+   "s": "广发证券招聘 新鲜招聘动态，尽在掌握 一键挑选岗位，职通广发"
+  },
+  {
+   "t": "Gf Securities (hong Kong) Jobs in Worldwide (19 Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gf-securities-%28hong-kong%29-jobs-worldwide",
+   "s": "Today's top 19 Gf Securities (hong Kong) jobs in Worldwide. Leverage your professional network, and get hired. New Gf Securities (hong Kong) jobs added daily."
+  },
+  {
+   "t": "Careers_廣發證券（香港）-招賢納士",
+   "u": "https://www.gfgroup.com.hk/en/job/jobs",
+   "s": "GF Securities (Hong Kong), which includes GF Holdings (Hong Kong) Corporation Limited and its subsidiaries, is the core platform for GF Securities Co., Ltd. to "
+  },
+  {
+   "t": "GF Securities Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Gf-Securities",
+   "s": "Find out what works well at GF Securities from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  },
+  {
+   "t": "20 Gf Securities jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gf-securities-jobs-worldwide",
+   "s": "Today's top 20 Gf Securities jobs in Worldwide. Leverage your professional network, and get hired. New Gf Securities jobs added daily."
+  },
+  {
+   "t": "GF Securities (Hong Kong): Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/gf-holdings-hong-kong/jobs",
+   "s": "After nearly 20 years of development, GF Securities (Hong Kong) provides comprehensive financial services, including global markets, wealth management and broke"
+  },
+  {
+   "t": "GF Securities Jobs & Careers - 10 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/GF-Securities-Jobs-E391083.htm",
+   "s": "Search job openings at GF Securities. 10 GF Securities jobs including salaries, ratings, and reviews, posted by GF Securities employees."
+  },
+  {
+   "t": "Careers_廣發證券（香港）-招賢納士",
+   "u": "https://www.gfgroup.com.hk/en/job/detail?id=100161",
+   "s": "Bond and Equity Dealer (Securities Brokerage) Department： Securities Brokerage Publish Time： 2025/10/23 Location： Hong Kong Responsibilities Execute bond and se"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.ctgoodjobs.hk/company-jobs/00123642/gf-securities-hong-kong",
+  "platform": "custom",
+  "title": "GF Securities (Hong Kong) Jobs in Hong Kong - Sep 2026 | CTgoodjobs"
+ },
+ "verdict": "custom_surface"
 }

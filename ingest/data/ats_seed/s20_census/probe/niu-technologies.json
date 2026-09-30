@@ -150,5 +150,17 @@
   "platform": "custom",
   "title": "Job Seekers | Human Resource Services | Northern Illinois University"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "NIU Technologies (Changzhou e-mobility, Nasdaq NIU; LCA NIU POWER INC) global.niu.com/en-us/jobs 'United States:' section lists 7 roles: Sales Director Dealerships (GTM golf carts & LSV), Key Account Managers MID-WEST/NORTH-EAST/NORTH-WEST/CENTRAL USA, Marketing Director, Channel Marketing Manager Best Buy/Target.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://global.niu.com/en-us/jobs",
+  "us_rows": 7,
+  "sample": "Sales Director Dealerships — GTM for Golf Carts & LSV Vehicles — United States"
+ }
 }

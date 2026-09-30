@@ -12,5 +12,11 @@
   "title": "Careers at King | Making the World Playful",
   "via": "guess"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: no_jobs_section — authentic KWM (金杜, Chinese law firm, LCA KING & WOOD MALLESONS NY); own site kingandwood.com/us/en/careers = US recruitment info (Graduates/Qualified Lawyers/Other Professionals, 'LOCATION: United States') with zero job listings; no own job board (listings only on LinkedIn ~19 worldwide). Best guess careers.king.com was King.com games homonym.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

@@ -2,25 +2,28 @@
  "brand": "Hu Ge",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:29:59.510Z",
+ "ts": "2026-09-30T06:12:38.375Z",
  "candidates": [
   {
    "url": "https://careers.bakerhughes.com/",
    "title": "",
    "status": 200,
-   "bytes": 212,
-   "markers": [],
+   "bytes": 5382,
+   "markers": [
+    "workday",
+    "phenom"
+   ],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 4,
    "snippet": "We are a leading energy technology company providing solutions for the energy and industrial industries. At Baker Hughes we design, manufacture, and service tra",
-   "backend": "supabase"
+   "backend": "zenrows"
   },
   {
    "url": "https://careers.geaerospace.com/hu/hu/hungary",
    "title": "GE Aerospace is now hiring in Hungary!",
    "status": 200,
-   "bytes": 88884,
+   "bytes": 89055,
    "markers": [
     "phenom"
    ],
@@ -32,9 +35,9 @@
   },
   {
    "url": "https://www.hugeinc.com/careers",
-   "title": "Careers | Huge",
+   "title": "Huge",
    "status": 200,
-   "bytes": 250938,
+   "bytes": 251024,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

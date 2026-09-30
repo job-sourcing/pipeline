@@ -12,5 +12,11 @@
   "title": "Jobs - Opera",
   "via": "guess"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: no_us_rows — jobs.opera.com (teamtailor; Opera is Kunlun-led CN consortium-owned, Oslo HQ) lists 11 jobs with locations only in Europe (Oslo, Linköping, Gothenburg, Wrocław, Barcelona, Dublin, Dundee) per /jobs.json feed + locations pages; 0 US rows.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

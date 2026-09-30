@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "empty_board: feishu portal jac-group.jobs.feishu.cn live-checked via API — 0 job postings (board exists but empty).",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

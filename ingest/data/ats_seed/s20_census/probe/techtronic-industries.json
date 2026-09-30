@@ -121,5 +121,17 @@
   "platform": "custom",
   "title": "Career Opportunities | Cordless Power Tools Leader - Techtronic Industries TTI"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "AUTHENTIC: ttigroup.com (HK-listed Techtronic Industries, Milwaukee/Ryobi) US listing /careers/career-opportunities/us renders 24 US jobs/page x 28 pages = 662 US rows (Anderson SC, Olive Branch MS, Menomonee Falls WI...); NA board also on ttigroupna.dejobs.org.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://www.ttigroup.com/careers/career-opportunities/us",
+  "us_rows": 662,
+  "sample": "Accounts Payable Specialist — Menomonee Falls, WI; Field Sales & Marketing Representative — Kansas City, MO; Forklift Operator — Anderson, SC"
+ }
 }

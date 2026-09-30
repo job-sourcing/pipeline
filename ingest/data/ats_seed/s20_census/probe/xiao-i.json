@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Jobs and Employment at Xiao-I | Simplify Jobs"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "simplify.jobs/c/Xiao-I is an aggregator wrapper profile (describes Xiao-i correctly but lists 0 job rows); xiaomi.jobs.f.mioffice.cn links = Xiaomi (different company); xiaoi.com has no careers links — no authentic Xiao-I (小i/AIXI) career surface.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

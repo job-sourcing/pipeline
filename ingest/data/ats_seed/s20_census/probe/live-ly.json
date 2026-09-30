@@ -2,10 +2,153 @@
  "brand": "Live.ly",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:22:55.036Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:28:01.286Z",
+ "candidates": [
+  {
+   "url": "https://getlive.ly/jobs",
+   "title": "Jobs | Lively",
+   "status": 200,
+   "bytes": 48420,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Unpaid Internships Are you a fan of live music? We are looking for a few great interns to support the promotion of the Lively app, the artists, and the music, t",
+   "backend": "direct"
+  },
+  {
+   "url": "https://livelyme.com/careers",
+   "title": "Join our team | Lively",
+   "status": 200,
+   "bytes": 611413,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "We're driven by integrity, empathy, determination, accountability, and building a product people love and every candidate completes a values interview before jo",
+   "backend": "direct"
+  },
+  {
+   "url": "https://livelyliveevents.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 5478,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Careers at Lively At Lively Live Events, we believe that our greatest strength lies in our team. We are dedicated to fostering a vibrant, inclusive, and growth-",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join our team | Lively",
+   "u": "https://livelyme.com/careers",
+   "s": "We're driven by integrity, empathy, determination, accountability, and building a product people love and every candidate completes a values interview before jo"
+  },
+  {
+   "t": "Careers | Livly",
+   "u": "https://www.livly.io/careers",
+   "s": "At Livly, we are a team of talented, passionate, and gritty individuals working together to change how people live and communicate. Meet our team or join our st"
+  },
+  {
+   "t": "Jobs | Lively",
+   "u": "https://getlive.ly/jobs",
+   "s": "Unpaid Internships Are you a fan of live music? We are looking for a few great interns to support the promotion of the Lively app, the artists, and the music, t"
+  },
+  {
+   "t": "Liive",
+   "u": "https://www.liive.ly/",
+   "s": "Liively is the cure for queuing, offering an out of the box solution for Stadiums, Venues, Events, Festivals, Vendors and Food Trucks for ordering and to-the-se"
+  },
+  {
+   "t": "Open Positions - Livly",
+   "u": "https://www.livly.io/open-positions",
+   "s": "At Livly, we are a team of talented, passionate, and gritty individuals working together to change how people live and communicate. Join the Livly team."
+  },
+  {
+   "t": "Liively | Antler Job Board",
+   "u": "https://careers.antler.co/companies/liively?q=Venues",
+   "s": "Search job openings across the Antler network. Explore companies My job alerts Liively www.liive.ly Locations Melbourne, VIC, Australia industry Events · Events"
+  },
+  {
+   "t": "Careers - Lively Live Events",
+   "u": "https://livelyliveevents.com/careers/",
+   "s": "Careers at Lively At Lively Live Events, we believe that our greatest strength lies in our team. We are dedicated to fostering a vibrant, inclusive, and growth-"
+  },
+  {
+   "t": "Liively - jobs.workable.com",
+   "u": "https://jobs.workable.com/company/tJ1mQafMCwDTqhBtZyhLv9/jobs-at-liively",
+   "s": "Liively Operations Pty Ltd provides a contactless event ordering platform which integrates with our team of dedicated event runners for the optimal patron exper"
+  },
+  {
+   "t": "Liive",
+   "u": "https://www.liive.ly/",
+   "s": "Liively is the cure for queuing, offering an out of the box solution for Stadiums, Venues, Events, Festivals, Vendors and Food Trucks for ordering and to-the-se"
+  },
+  {
+   "t": "Jobs | Lively",
+   "u": "https://getlive.ly/jobs",
+   "s": "Unpaid Internships Are you a fan of live music? We are looking for a few great interns to support the promotion of the Lively app, the artists, and the music, t"
+  },
+  {
+   "t": "Join our team | Lively",
+   "u": "https://livelyme.com/careers",
+   "s": "We're driven by integrity, empathy, determination, accountability, and building a product people love and every candidate completes a values interview before jo"
+  },
+  {
+   "t": "Liively | Antler Job Board",
+   "u": "https://careers.antler.co/companies/liively?q=NBA",
+   "s": "Search job openings across the Antler network. Explore companies My job alerts Liively www.liive.ly Locations Melbourne, VIC, Australia industry Events · Events"
+  },
+  {
+   "t": "Careers | Livly",
+   "u": "https://www.livly.io/careers",
+   "s": "At Livly, we are a team of talented, passionate, and gritty individuals working together to change how people live and communicate. Meet our team or join our st"
+  },
+  {
+   "t": "Liively - jobs.workable.com",
+   "u": "https://jobs.workable.com/company/tJ1mQafMCwDTqhBtZyhLv9/jobs-at-liively",
+   "s": "Liively Operations Pty Ltd provides a contactless event ordering platform which integrates with our team of dedicated event runners for the optimal patron exper"
+  },
+  {
+   "t": "Join the Team and Build the Future of AI Careers | Laivly",
+   "u": "https://laivly.com/join-the-team/",
+   "s": "Join the team at Laivly and grow your AI career. Collaborate with innovators, shape solutions, and make an impact every day..."
+  },
+  {
+   "t": "Open Positions - Livly",
+   "u": "https://www.livly.io/open-positions",
+   "s": "At Livly, we are a team of talented, passionate, and gritty individuals working together to change how people live and communicate. Join the Livly team."
+  },
+  {
+   "t": "Liively | Antler Job Board",
+   "u": "https://careers.antler.co/companies/liively?q=NBA",
+   "s": "Search job openings across the Antler network. Explore companies My job alerts Liively www.liive.ly Locations Melbourne, VIC, Australia industry Events · Events"
+  },
+  {
+   "t": "Jobs | Lively",
+   "u": "https://getlive.ly/jobs",
+   "s": "Unpaid Internships Are you a fan of live music? We are looking for a few great interns to support the promotion of the Lively app, the artists, and the music, t"
+  },
+  {
+   "t": "Join our team | Lively",
+   "u": "https://livelyme.com/careers",
+   "s": "When people come together with a shared vision, something clicks, and I can feel that we're all working on something that's bigger than ourselves. Our hiring pr"
+  },
+  {
+   "t": "Open Positions - Livly",
+   "u": "https://www.livly.io/open-positions",
+   "s": "At Livly, we are a team of talented, passionate, and gritty individuals working together to change how people live and communicate. Join the Livly team."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://getlive.ly/jobs",
+  "platform": "custom",
+  "title": "Jobs | Lively"
+ },
+ "verdict": "custom_surface"
 }

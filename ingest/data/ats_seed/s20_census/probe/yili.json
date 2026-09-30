@@ -152,5 +152,11 @@
   "platform": "workday",
   "title": "Instagram"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic Yili (伊利) but yili.com/careers and yili.hotjob.cn are China-only boards; LCA YILI INDUSTRIAL U.S. CO. LTD proves a US arm yet no US careers surface/jobs found — china_only",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

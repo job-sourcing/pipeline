@@ -2,43 +2,43 @@
  "brand": "Oriental Press Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:26:00.487Z",
+ "ts": "2026-09-30T06:06:35.979Z",
  "candidates": [
   {
    "url": "https://orientalpress.com/careers.php",
-   "title": "403 Forbidden",
-   "status": 403,
-   "bytes": 561,
+   "title": "Oriental Press – Official Website",
+   "status": 200,
+   "bytes": 10431,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Founded in Manama in 1952, Oriental Press has grown to become a global printing group with operations in Bahrain, Dubai, and London.",
-   "backend": "direct"
+   "backend": "supabase"
   },
   {
    "url": "http://www.oriental-press.com/page.php?content=careers",
-   "title": "403 Forbidden",
-   "status": 403,
-   "bytes": 561,
+   "title": "",
+   "status": 200,
+   "bytes": 6670,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "A global printing group Oriental Group is one of the world's premier print organizations! Founded in Manama in 1952, Oriental Press has grown to become a global",
-   "backend": "direct"
+   "backend": "zenrows"
   },
   {
    "url": "https://orientalpress.com/category/careers.php",
-   "title": "403 Forbidden",
-   "status": 403,
-   "bytes": 561,
+   "title": "Oriental Press – Official Website",
+   "status": 200,
+   "bytes": 20052,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Here for all your print needs. We are experts in colored book printing, flexible & paperboard packaging, and security printing. A global printing group Oriental",
-   "backend": "direct"
+   "backend": "supabase"
   }
  ],
  "results": [

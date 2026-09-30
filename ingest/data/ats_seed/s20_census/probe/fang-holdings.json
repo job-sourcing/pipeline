@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Fang Holdings | Career Development | Monmouth University"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic board job.fang.com = 房天下招聘 (Beijing SouFun, Fang Holdings) with China campus/social recruiting only — china_only; Monmouth/Kean candidates are university employer pages",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

@@ -2,10 +2,153 @@
  "brand": "Esprit Holdings",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:36:12.591Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:29:03.293Z",
+ "candidates": [
+  {
+   "url": "https://esprit.jobsoid.com/",
+   "title": "Careers @ Esprit",
+   "status": 200,
+   "bytes": 16860,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "SubmitCancel We hire with Jobsoid",
+   "backend": "direct"
+  },
+  {
+   "url": "https://fashionunited.com/fashion-jobs/work-at/esprit-jobs",
+   "title": "Esprit jobs",
+   "status": 200,
+   "bytes": 68134,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Esprit is a Hong-Kong-based manufacturer of apparel, footwear, accessories, jewellery and housewares under the ESPRIT label. The international fashion brand was",
+   "backend": "direct"
+  },
+  {
+   "url": "https://londondaily.com/esprit-files-for-bankruptcy-in-europe-putting-hundreds-of-jobs-at-risk",
+   "title": "Esprit Files for Bankruptcy in Europe, Putting Hundreds of Jobs at Risk - London Daily",
+   "status": 200,
+   "bytes": 73719,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Fashion brand Esprit has filed for insolvency for seven of its subsidiaries in Düsseldorf, Germany, due to financial challenges. The affected entities include E",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Esprit - LinkedIn",
+   "u": "https://www.linkedin.com/company/esprit",
+   "s": "ESPRIT today has a presence in more than 30 markets around the world. The Group has been listed on the Hong Kong Stock Exchange since 1993, and ESPRIT's interna"
+  },
+  {
+   "t": "Esprit Holdings - LinkedIn",
+   "u": "https://www.linkedin.com/company/esprit-holdings",
+   "s": "External link for Esprit Holdings Industry Software Development Company size 11-50 employees Headquarters New York, New York"
+  },
+  {
+   "t": "Esprit Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Esprit",
+   "s": "Find out what works well at Esprit from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Careers @ Esprit",
+   "u": "https://esprit.jobsoid.com/",
+   "s": "SubmitCancel We hire with Jobsoid"
+  },
+  {
+   "t": "Esprit jobs - fashionunited.com",
+   "u": "https://fashionunited.com/fashion-jobs/work-at/esprit-jobs",
+   "s": "Esprit is a Hong-Kong-based manufacturer of apparel, footwear, accessories, jewellery and housewares under the ESPRIT label. The international fashion brand was"
+  },
+  {
+   "t": "ESPRIT",
+   "u": "https://esprit.com/",
+   "s": "ESPRIT By joining you agree to receive promotional updates from ESPRIT, no Spam, Unsubscribe at any time."
+  },
+  {
+   "t": "Esprit | Latest news, analysis and jobs - The Business of Fashion",
+   "u": "https://www.businessoffashion.com/organisations/esprit/",
+   "s": "Discover the latest news, insight and analysis about Esprit on The Business of Fashion. Our articles offer comprehensive coverage of industry leaders, including"
+  },
+  {
+   "t": "Esprit Holdings - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Esprit_Holdings",
+   "s": "Esprit Holdings Limited (Chinese: 思捷環球控股有限公司) is a global, publicly traded retail company incorporated in Bermuda, [1] with headquarters in North Point, Hong Ko"
+  },
+  {
+   "t": "Esprit - LinkedIn",
+   "u": "https://www.linkedin.com/company/esprit",
+   "s": "ESPRIT today has a presence in more than 30 markets around the world. The Group has been listed on the Hong Kong Stock Exchange since 1993, and ESPRIT's interna"
+  },
+  {
+   "t": "Esprit Holdings - LinkedIn",
+   "u": "https://www.linkedin.com/company/esprit-holdings",
+   "s": "External link for Esprit Holdings Industry Software Development Company size 11-50 employees Headquarters New York, New York"
+  },
+  {
+   "t": "Esprit Careers and Employment | Indeed.com",
+   "u": "https://ca.indeed.com/cmp/Esprit",
+   "s": "Find out what works well at Esprit from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Esprit Files for Bankruptcy in Europe, Putting Hundreds of Jobs at Risk",
+   "u": "https://londondaily.com/esprit-files-for-bankruptcy-in-europe-putting-hundreds-of-jobs-at-risk",
+   "s": "Fashion brand Esprit has filed for insolvency for seven of its subsidiaries in Düsseldorf, Germany, due to financial challenges. The affected entities include E"
+  },
+  {
+   "t": "Esprit Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Esprit-jobs.html",
+   "s": "Browse 12 Esprit jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Esprit Holdings - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Esprit_Holdings",
+   "s": "Esprit Holdings Limited (Chinese: 思捷環球控股有限公司) is a global, publicly traded retail company incorporated in Bermuda, [1] with headquarters in North Point, Hong Ko"
+  },
+  {
+   "t": "Esprit | Latest news, analysis and jobs - The Business of Fashion",
+   "u": "https://www.businessoffashion.com/organisations/esprit/",
+   "s": "Discover the latest news, insight and analysis about Esprit on The Business of Fashion. Our articles offer comprehensive coverage of industry leaders, including"
+  },
+  {
+   "t": "Esprit Stellenangebote - fashionunited.de",
+   "u": "https://fashionunited.de/jobs-in-der-mode/arbeiten-bei/esprit-stellenangebote",
+   "s": "Träumst du von einer Karriere bei Esprit? Klick hier, um die aktuellsten Esprit Stellenangebote zu finden und dich direkt zu bewerben."
+  },
+  {
+   "t": "Careers @ Esprit",
+   "u": "https://esprit.jobsoid.com/",
+   "s": "SubmitCancel We hire with Jobsoid"
+  },
+  {
+   "t": "Esprit - LinkedIn",
+   "u": "https://www.linkedin.com/company/esprit",
+   "s": "ESPRIT today has a presence in more than 30 markets around the world. The Group has been listed on the Hong Kong Stock Exchange since 1993, and ESPRIT's interna"
+  },
+  {
+   "t": "Esprit£ Jobs in United States (664 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/esprit%C2%A3-jobs",
+   "s": "Today's top 664 Esprit£ jobs in United States. Leverage your professional network, and get hired. New Esprit£ jobs added daily."
+  },
+  {
+   "t": "Esprit Careers and Employment | Indeed.com",
+   "u": "https://ca.indeed.com/cmp/Esprit",
+   "s": "Find out what works well at Esprit from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://esprit.jobsoid.com/",
+  "platform": "custom",
+  "title": "Careers @ Esprit"
+ },
+ "verdict": "custom_surface"
 }

@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Home | Afya Careers"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "All candidates are non-Chinese Afya firms: afyacareers.com = AfyaCareers (US healthcare staffing network), afya.com.br = Afya S.A. (Brazilian med-ed group), afyasacco/equityafya = Kenya; no Chinese-brand career surface",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

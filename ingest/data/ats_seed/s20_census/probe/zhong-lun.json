@@ -2,7 +2,7 @@
  "brand": "Zhong Lun",
  "tier": "lca",
  "lca": "ZHONG LUN LAW FIRM LLP",
- "ts": "2026-09-29T04:32:54.643Z",
+ "ts": "2026-09-30T06:06:01.745Z",
  "candidates": [
   {
    "url": "https://en.zhonglun.com/career",
@@ -32,7 +32,7 @@
    "url": "https://www.zhonglun.com/career",
    "title": "中伦律师事务所官方网站",
    "status": 200,
-   "bytes": 46833,
+   "bytes": 46829,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

@@ -165,5 +165,11 @@
   "snippet": "Advanced job search To perform a job search using advanced search criteria, click the \"Advanced Search\" tab and select the relevant criteria.",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "hongkong_only: mtr.taleo.net authentic (HK railway) but all roles HK; no US ops",
+  "ts": "2026-09-30T05:10:00Z",
+  "by": "S22-ADJ-main"
+ }
 }

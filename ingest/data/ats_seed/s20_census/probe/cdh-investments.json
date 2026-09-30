@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers-CDH Investments"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "js_rendered_inconclusive: CDH 鼎晖 EN careers page (cdhfund.com/en/careers-en/) shows intern-program text only, no job rows; positions SPA apps.cdhfund.com/recruit/positions (Vue+WeCom login, broken SSL cert) renders no rows and no API found; LinkedIn 2 worldwide roles; no US-office evidence.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Tianjin Bank Jobs | eChinacities.com"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic Bank of Tianjin official career page (campus/social recruitment, Chinese-language); Chinese city-commercial bank, China-only, no US jobs",
+  "ts": "2026-09-30T10:12Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

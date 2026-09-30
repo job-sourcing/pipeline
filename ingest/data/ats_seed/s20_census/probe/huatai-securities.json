@@ -2,10 +2,166 @@
  "brand": "Huatai Securities",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:48:05.730Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:30:49.798Z",
+ "candidates": [
+  {
+   "url": "https://htsc.wd102.myworkdayjobs.com/Huatai_Careers",
+   "title": "",
+   "status": 200,
+   "bytes": 8954,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:Huatai_Careers",
+   "score": 17,
+   "snippet": "About Us Huatai International Financial Holdings Company Limited (\"Huatai International\" or \"the Company\"), is the only overseas wholly-owned or controlled subs",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://htsc.wd102.myworkdayjobs.com/en-US/Huatai_Careers/job/Private-Equity-Fund---Investment-Associate_",
+   "title": "",
+   "status": 200,
+   "bytes": 16771,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 1,
+   "spec": "workday:en-US",
+   "score": 17,
+   "snippet": "About Us: Huatai International Financial Holdings Company Limited (\"Huatai International\" or \"the Company\"), is the only overseas wholly-owned or controlled sub",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.huataiusa.com/careers",
+   "title": "CAREERS | huatai",
+   "status": 200,
+   "bytes": 579452,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "141 W Jackson Blvd, Suite 1220A, Chicago, IL 60604 (833) 213-0635",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers Where You Create Value | Huatai Securities (USA)",
+   "u": "https://htsc-us.com/careers/",
+   "s": "Careers An international bank with international opportunities - discover careers at Huatai Securities (USA), Inc."
+  },
+  {
+   "t": "Huatai Careers",
+   "u": "https://htsc.wd102.myworkdayjobs.com/Huatai_Careers",
+   "s": "About Us Huatai International Financial Holdings Company Limited (\"Huatai International\" or \"the Company\"), is the only overseas wholly-owned or controlled subs"
+  },
+  {
+   "t": "CAREERS - huatai",
+   "u": "https://www.huataiusa.com/careers",
+   "s": "141 W Jackson Blvd, Suite 1220A, Chicago, IL 60604 (833) 213-0635"
+  },
+  {
+   "t": "Careers | Huatai Securities (USA)",
+   "u": "https://htsc-us.com/zh-hans/careers/",
+   "s": "在华泰证券 (美国)，您将与纽约和中国团队的高级成员密切合作，积极拥抱不同的商业机遇。 华泰在全球拥有超过 14,000 名员工，分布在 28 个分支机构和 245 个证券分支机构。"
+  },
+  {
+   "t": "Huatai Securities Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Huatai-Securities",
+   "s": "Find out what works well at Huatai Securities from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Com"
+  },
+  {
+   "t": "Huatai Securities Co., Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/huataisecurities/",
+   "s": "Huatai Securities' major financial indicators and business indicators are among the forefront of the domestic securities industry."
+  },
+  {
+   "t": "Private Equity Fund（Consumer Sector） - Investment Associate",
+   "u": "https://htsc.wd102.myworkdayjobs.com/en-US/Huatai_Careers/job/Private-Equity-Fund---Investment-Associate_",
+   "s": "About Us: Huatai International Financial Holdings Company Limited (\"Huatai International\" or \"the Company\"), is the only overseas wholly-owned or controlled sub"
+  },
+  {
+   "t": "2027 Campus Recruitment - Career Management Center UCSD Rady",
+   "u": "https://career.rady.ucsd.edu/jobs/huatai-securities-co-ltd-2027-campus-recruitment-2/",
+   "s": "Huatai Securities and its affiliated companies are recruiting 2027 graduates for opportunities across financial services, investment, technology, and corporate "
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://htsc.wd102.myworkdayjobs.com/Huatai_Careers",
+   "s": "About Us Huatai International Financial Holdings Company Limited (\"Huatai International\" or \"the Company\"), is the only overseas wholly-owned or controlled subs"
+  },
+  {
+   "t": "Careers Where You Create Value | Huatai Securities (USA)",
+   "u": "https://htsc-us.com/careers/",
+   "s": "Careers An international bank with international opportunities - discover careers at Huatai Securities (USA), Inc."
+  },
+  {
+   "t": "CAREERS - huatai",
+   "u": "https://www.huataiusa.com/careers",
+   "s": "Job Title Location Currently, no open job opportunities 141 W Jackson Blvd, Suite 1220A, Chicago, IL 60604 (833) 213-0635"
+  },
+  {
+   "t": "Huatai Securities Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Huatai-Securities",
+   "s": "Find out what works well at Huatai Securities from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Com"
+  },
+  {
+   "t": "Huatai Securities Jobs (with Salaries) - May 2026 | Jobstreet",
+   "u": "https://my.jobstreet.com/Huatai-securities-jobs",
+   "s": "Find your ideal job at Jobstreet with 21 Huatai Securities jobs found in Malaysia. View all our Huatai Securities vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "2027 Campus Recruitment - Career Management Center UCSD Rady",
+   "u": "https://career.rady.ucsd.edu/jobs/huatai-securities-co-ltd-2027-campus-recruitment-2/",
+   "s": "Huatai Securities and its affiliated companies are recruiting 2027 graduates for opportunities across financial services, investment, technology, and corporate "
+  },
+  {
+   "t": "Private Equity Fund（Consumer Sector） - Investment Associate",
+   "u": "https://htsc.wd102.myworkdayjobs.com/en-US/Huatai_Careers/job/Private-Equity-Fund---Investment-Associate_",
+   "s": "About Us: Huatai International Financial Holdings Company Limited (\"Huatai International\" or \"the Company\"), is the only overseas wholly-owned or controlled sub"
+  },
+  {
+   "t": "Current Job Openings at Huatai Securities | JobzMall",
+   "u": "https://www.jobzmall.com/huatai-securities/jobs",
+   "s": "Huatai Securities Co., Ltd. engages in the securities brokerage business. It operates through the following segments: Brokerage and Wealth Management; Investmen"
+  },
+  {
+   "t": "Careers Where You Create Value | Huatai Securities (USA)",
+   "u": "https://htsc-us.com/careers/",
+   "s": "Careers An international bank with international opportunities - discover careers at Huatai Securities (USA), Inc."
+  },
+  {
+   "t": "CAREERS - huatai",
+   "u": "https://www.huataiusa.com/careers",
+   "s": "Welcome to our Careers Page. Here you can view our latest jobs opportunities."
+  },
+  {
+   "t": "Huatai Careers",
+   "u": "https://htsc.wd102.myworkdayjobs.com/Huatai_Careers",
+   "s": "About Us Huatai International Financial Holdings Company Limited (\"Huatai International\" or \"the Company\"), is the only overseas wholly-owned or controlled subs"
+  },
+  {
+   "t": "Huatai Securities Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Huatai-Securities",
+   "s": "Find out what works well at Huatai Securities from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Com"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://htsc.wd102.myworkdayjobs.com/Huatai_Careers",
+  "title": "",
+  "status": 200,
+  "bytes": 8954,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:Huatai_Careers",
+  "score": 17,
+  "snippet": "About Us Huatai International Financial Holdings Company Limited (\"Huatai International\" or \"the Company\"), is the only overseas wholly-owned or controlled subs",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

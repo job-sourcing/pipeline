@@ -152,5 +152,11 @@
   "platform": "custom",
   "title": "LIL Jobs"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "lil.vision = LIL (Japanese spatial-design/CG production studio hiring CG/CG-AI artists, Tokyo-style roles); careers.lasik.com = LCA Vision (US laser-eye-surgery); EssilorLuxottica = successfactors board — no Le Vision Pictures (LeEco) career surface.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

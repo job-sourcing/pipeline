@@ -112,5 +112,17 @@
   "platform": "adp",
   "title": ""
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic Sungrow USA (us.sungrowpower.com links to ADP Workforce Now board); ADP job-requisitions API: 62 jobs, 61 US rows (1 Ottawa CA)",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ },
+ "wire": {
+  "platform": "adp",
+  "board": "https://us.sungrowpower.com/jobList (ADP WFN cid c2e0ba67-e6f9-439e-b8a3-0d734568eac2)",
+  "us_rows": 61,
+  "sample": "Field Service Technician - BESS — Hybrid Fresno, CA, US; Vendor Contract Specialist — Hybrid Houston, TX, US; SAP Specialist — US (remote)"
+ }
 }

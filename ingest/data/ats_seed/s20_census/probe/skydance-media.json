@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — US studio (Paramount merge); not Chinese"
+ "manual_adjudication": "REFUTED — US studio (Paramount merge); not Chinese",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Skydance Media is a US studio (founded by David Ellison; merged with Paramount 2025) — not Chinese; lever:skydance board (0 jobs hint) is its own — out of scope.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

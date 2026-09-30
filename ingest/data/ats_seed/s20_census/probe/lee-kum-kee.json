@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers | Lee Kum Kee Group"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: china_only — authentic Lee Kum Kee (HK sauce multinational, LCA LEE KUM KEE (USA) INC GA); corporate.lkk.com/en/career/career-opportunities (custom) lists 3 open roles all in Xinhui 新會 Guangdong (高级设备技术员, 高级化验员, 区域MES副经理); 'United States 美國' is a filter option but 0 US rows.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

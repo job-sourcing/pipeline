@@ -2,13 +2,13 @@
  "brand": "Shanghai Tobacco Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:38:10.878Z",
+ "ts": "2026-09-30T06:18:04.286Z",
  "candidates": [
   {
    "url": "https://www.smartshanghai.com/jobs/",
    "title": "Work in Shanghai | SmartShanghai",
    "status": 200,
-   "bytes": 73996,
+   "bytes": 74292,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -34,7 +34,7 @@
    "url": "https://careers.bat.com/en",
    "title": "Working at BAT | Jobs and Careers at BAT",
    "status": 200,
-   "bytes": 72793,
+   "bytes": 72794,
    "markers": [
     "successfactors"
    ],

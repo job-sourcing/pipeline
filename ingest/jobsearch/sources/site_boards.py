@@ -61,8 +61,10 @@ from . import workday
 from .base import fetch_json, fetch_text
 
 _SPEC_RE = re.compile(
-    r"^ats:(greenhouse|ashby|lever|workable|feishuhire|paylocity|adp|jazzhr|teamtailor|radancy|rippling):"
-    r"([A-Za-z0-9_.\-]+)$")
+    r"^ats:(greenhouse|ashby|lever|workable|feishuhire|paylocity|adp|jazzhr|"
+    r"teamtailor|radancy|rippling|breezy|jobvite|oraclehcm|bamboohr|j2w|"
+    r"ultipro|talentadore|workstream|ttiproxy|sanity|wpjobboard|wuxibio|"
+    r"antintl):([A-Za-z0-9_.\-|/]+)$")
 # S14 registry-driven custom grammar: 'custom:{kind}' where kind ∈ _ADAPTERS
 # (own-platform boards — the platform IS the company; adding one = a class
 # + a registry entry, no grammar edit).
@@ -108,7 +110,9 @@ def parse_site(spec: str) -> tuple[str, str]:
         return m.group(1), ""
     raise ValueError(
         f"not a site spec: {spec!r} (expected 'ats:kind:org' with kind in "
-        f"greenhouse|ashby|lever|workable|feishuhire|paylocity|adp, or "
+        f"greenhouse|ashby|lever|workable|feishuhire|paylocity|adp|"
+        f"breezy|jobvite|oraclehcm|bamboohr|j2w|ultipro|talentadore|"
+        f"workstream|ttiproxy|sanity|wpjobboard|wuxibio|antintl, or "
         f"'custom:kind' with kind in "
         f"{sorted(k for k in _ADAPTERS)})")
 
@@ -4017,6 +4021,2081 @@ class RipplingAdapter:
         }
 
 
+# ══ S22 wave-3 platform classes ═══════════════════════════════════════════
+# Contracts: ingest/data/ats_seed/s22_wave3/re_A.md / re_B.md (live-verified
+# 2026-09-30). Each class follows the ADP/Rippling conventions: list_board
+# returns (rows, meta) in the workday dialect; detail_payload(external_path)
+# returns the workday-dialect jobPostingInfo envelope.
+
+
+# ── breezy (S22: <org>.breezy.hr flat /json feed; detail = 2nd ld+json) ───
+class BreezyAdapter:
+    """bitdeer.breezy.hr/json — one call, whole board, no pagination, no
+    auth (re_A.md §1). Rows: reqId=id, timeType=type.name map, country
+    via locations[].country.id ISO-2. Detail = /p/<friendly_id> page →
+    the JobPosting ld+json (2nd block; 1st is WebSite)."""
+
+    KIND = "breezy"
+    _TT = {"fulltime": "Full time", "full-time": "Full time",
+           "full time": "Full time", "parttime": "Part time",
+           "part-time": "Part time", "part time": "Part time",
+           "contract": "Contract", "internship": "Internship",
+           "temporary": "Temporary"}
+    _COUNTRY = {"US": "United States", "CA": "Canada", "SG": "Singapore",
+                "GB": "United Kingdom", "DE": "Germany", "JP": "Japan",
+                "AU": "Australia", "MY": "Malaysia", "NO": "Norway"}
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    def _feed(self) -> list:
+        url = f"https://{self.org}.breezy.hr/json"
+        payload = _CACHE.get(url)
+        if payload and time.monotonic() - payload[0] < _CACHE_TTL:
+            return payload[1]
+        d = fetch_json(url, cfg=self.cfg)
+        if not isinstance(d, list) or not d:
+            raise RuntimeError(
+                f"breezy:{self.org}: /json payload is not a non-empty "
+                f"list — board dead or shape changed; refusing")
+        _CACHE[url] = (time.monotonic(), d)
+        return d
+
+    @staticmethod
+    def _row_country(job: dict) -> str:
+        """ANY-location rule (re_A.md §1.6): a row is US if ANY entry
+        in locations[] carries country.id == 'US' (multi-loc rows list
+        the non-US primary first — a first-only check under-counted
+        bitdeer 46 → 41). Returns the first US country when one exists
+        (else the first non-empty country)."""
+        locs = ([job.get("location")] if job.get("location") else []) \
+            + (job.get("locations") or [])
+        first_any = ""
+        for loc in locs:
+            code = ((loc or {}).get("country") or {}).get("id") or ""
+            if not code:
+                continue
+            name = BreezyAdapter._COUNTRY.get(code, code)
+            if code == "US":
+                return name
+            if not first_any:
+                first_any = name
+        return first_any
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped_country = dropped_tt = 0
+        feed = self._feed()
+        for job in feed:
+            rid = str(job.get("id") or "")
+            if not rid:
+                continue
+            c = self._row_country(job)
+            if country and not workday.country_str_matches(c, country):
+                dropped_country += 1
+                continue
+            tt = self._TT.get(str(((job.get("type") or {}).get("name")
+                                   or "")).strip().lower(), "")
+            if time_type and tt and tt.lower() != time_type.lower():
+                dropped_tt += 1
+                continue
+            locs = []
+            for loc in (job.get("locations") or []) or []:
+                name = str((loc or {}).get("name") or "").strip()
+                if name and name not in locs:
+                    locs.append(name)
+            primary = str((job.get("location") or {}).get("name") or "")
+            if primary and primary not in locs:
+                locs.insert(0, primary)
+            label, iso = _posted_label(str(job.get("published_date") or ""))
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(job.get("name") or ""),
+                "company": str(((job.get("company") or {}).get("name"))
+                               or ""),
+                "url": str(job.get("url") or ""),
+                "externalPath": f"/{job.get('friendly_id') or rid}",
+                "locationsText": "; ".join(locs[:4]),
+                "postedOn": label,
+                "postedOnIso": iso,
+                "timeType": tt,
+                "bulletFields": [rid],
+                "ats": "breezy",
+            }
+        meta = {"rows": len(rows), "total": len(feed), "complete": True,
+                "pages": 1,
+                "client_filtered": dropped_country + dropped_tt,
+                "client_filtered_country": dropped_country,
+                "client_filtered_time": dropped_tt}
+        print(f"[{progress_label}] breezy:{self.org}: {len(rows)} rows of "
+              f"{len(feed)} listed ({dropped_country} non-{country or '-'},"
+              f" {dropped_tt} non-FT dropped client-side)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        fid = str(external_path or "").strip("/").split("/")[-1] or None
+        if not fid:
+            return None
+        # find the feed row first (authoritative fields incl. locations)
+        row = None
+        for job in self._feed():
+            if str(job.get("friendly_id") or "") == fid \
+                    or str(job.get("id") or "") == fid:
+                row = job
+                break
+        if row is None:
+            return None
+        url = str(row.get("url") or
+                  f"https://{self.org}.breezy.hr/p/{fid}")
+        html = _fetch_text_cached(url, f"ats:breezy:{self.org}:{fid}",
+                                  self.cfg)
+        desc = ""
+        for block in re.findall(
+                r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>'
+                r'(.*?)</script>', html or "", re.S):
+            try:
+                d = json.loads(block)
+            except (json.JSONDecodeError, ValueError):
+                continue
+            if isinstance(d, dict) and d.get("@type") == "JobPosting":
+                desc = str(d.get("description") or "")
+                break
+        if not desc:
+            # re_A.md §1.4 fallback: <div class="description"> holds the
+            # same markup when the ld+json is absent (GTT pages)
+            m = re.search(r'class="description">(.*?)</div>',
+                          html or "", re.S)
+            if m:
+                desc = m.group(1).strip()
+        locs = [str((l or {}).get("name") or "").strip()
+                for l in (row.get("locations") or [])]
+        tt = self._TT.get(str(((row.get("type") or {}).get("name") or "")
+                              ).strip().lower(), "")
+        return {
+            "jobPostingInfo": {
+                "title": str(row.get("name") or ""),
+                "location": str((row.get("location") or {}).get("name")
+                                or ""),
+                "additionalLocations": [l for l in locs if l][1:],
+                "jobDescription": desc,
+                "timeType": tt,
+                "startDate": str(row.get("published_date") or ""),
+                "externalUrl": url,
+                "jobReqId": str(row.get("id") or ""),
+                "postedOn": "",
+                "country": {"descriptor": self._row_country(row)},
+            },
+            "hiringOrganization": {
+                "name": str(((row.get("company") or {}).get("name"))
+                            or "")},
+            "similarJobs": [],
+        }
+
+
+# ── jobvite (S22: jobs.jobvite.com SSR search; r=USA server filter) ────────
+class JobviteAdapter:
+    """jobs.jobvite.com/{org}/search?p=N — 50 rows/page SSR table; the
+    region facet `r=USA` is server-side WHEN paired with p (re_A.md §3).
+    reqId = /{org}/job/<EId> path segment. Detail = job page ld+json
+    (jobLocation ARRAY — any US address makes the row US). Board home
+    /{org} is INCOMPLETE (77/108) — always walk /search."""
+
+    KIND = "jobvite"
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    def _page(self, p: int, region: str) -> tuple[list, int, str]:
+        url = (f"https://jobs.jobvite.com/{self.org}/search"
+               f"?p={p}" + (f"&r={region}" if region else ""))
+        html = fetch_text(url, cfg=self.cfg)
+        if not html or "jv-search-list" not in html:
+            return [], 0, html or ""
+        total = 0
+        m = re.search(r'jv-pagination-text">\s*(\d+)\s*-\s*(\d+) of (\d+)',
+                      html)
+        if m:
+            total = int(m.group(3))
+        jobs = []
+        for tr in re.findall(r'<tr>(.*?)</tr>', html, re.S):
+            a = re.search(
+                r'<a[^>]+href="(/' + re.escape(self.org) +
+                r'/job/([A-Za-z0-9]+))"[^>]*>\s*(.*?)\s*</a>', tr, re.S)
+            if not a:
+                continue
+            loc = re.search(
+                r'jv-job-list-location">\s*(.*?)\s*</td>', tr, re.S)
+            jobs.append({
+                "href": a.group(1),
+                "rid": a.group(2),
+                "title": re.sub(r"<[^>]+>", "", a.group(3)).strip(),
+                "loc": re.sub(r"<[^>]+>+", " ",
+                              re.sub(r"<[^>]+>", "", loc.group(1)
+                                     if loc else "")).strip(),
+            })
+        return jobs, total, html
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        region = "USA" if country else ""
+        rows: dict[str, dict] = {}
+        total = 0
+        pages = 0
+        p = 0
+        while True:
+            jobs, t, _html = self._page(p, region)
+            if not jobs:
+                break
+            if t:
+                total = t
+            pages += 1
+            for j in jobs:
+                if j["rid"] in rows:
+                    continue
+                rows[j["rid"]] = {
+                    "reqId": j["rid"],
+                    "title": j["title"],
+                    "company": "",
+                    "url": f"https://jobs.jobvite.com{j['href']}",
+                    "externalPath": f"/{j['rid']}",
+                    "locationsText": j["loc"],
+                    "postedOn": "",
+                    "timeType": "",
+                    "bulletFields": [j["rid"]],
+                    "ats": "jobvite",
+                }
+            first, last = (p * 50) + 1, (p * 50) + len(jobs)
+            if total and last >= total:
+                break
+            if len(jobs) < 50:
+                break
+            p += 1
+            if pages > 30:
+                break
+        # guard: an ignored r-filter can silently 0-result — if the
+        # region filter produced nothing, retry unfiltered (detail-side
+        # classification will trim; the countryfilter phase handles it)
+        if region and not rows:
+            print(f"[{progress_label}] jobvite:{self.org}: r={region} "
+                  f"produced 0 rows — retrying unfiltered")
+            return self.list_board(country=None, time_type=time_type,
+                                   progress_label=progress_label)
+        meta = {"rows": len(rows), "total": total, "complete": True,
+                "pages": pages, "client_filtered": 0,
+                "client_filtered_country": 0, "client_filtered_time": 0}
+        print(f"[{progress_label}] jobvite:{self.org}: {len(rows)} rows "
+              f"(total {total}, {pages} pages"
+              f"{' , r=USA server filter' if region else ''})")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        if not rid:
+            return None
+        html = _fetch_text_cached(
+            f"https://jobs.jobvite.com/{self.org}/job/{rid}",
+            f"ats:jobvite:{self.org}:{rid}", self.cfg)
+        info = {}
+        for block in re.findall(
+                r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>'
+                r'(.*?)</script>', html or "", re.S):
+            try:
+                d = json.loads(block)
+            except (json.JSONDecodeError, ValueError):
+                continue
+            if isinstance(d, dict) and d.get("@type") == "JobPosting":
+                info = d
+                break
+        desc = str(info.get("description") or "")
+        # meta line: CATEGORY<sep>LOC1<sep>LOC2 (all locations as text)
+        meta_m = re.search(
+            r'jv-job-detail-meta">\s*(.*?)\s*</p>', html or "", re.S)
+        locs = []
+        is_us = False
+        jl = info.get("jobLocation") or []
+        if isinstance(jl, dict):
+            jl = [jl]
+        for place in jl:
+            addr = (place or {}).get("address") or {}
+            city = str(addr.get("addressLocality") or "")
+            region_name = str(addr.get("addressRegion") or "")
+            cc = str(addr.get("addressCountry") or "")
+            if cc and "united states" in cc.lower():
+                is_us = True
+            locs.append(", ".join(x for x in (city, region_name) if x))
+        if meta_m and not locs:
+            locs = [re.sub(r"<[^>]+>", "", x).strip() for x in
+                    re.split(r"jv-inline-separator", meta_m.group(1))][1:]
+        tt = ""
+        et = info.get("employmentType")
+        if isinstance(et, list) and et:
+            tt = {"FULL_TIME": "Full time", "PART_TIME": "Part time",
+                  "CONTRACTOR": "Contract"}.get(str(et[0]).upper(), "")
+        elif isinstance(et, str):
+            tt = {"FULL_TIME": "Full time", "PART_TIME": "Part time",
+                  "CONTRACTOR": "Contract"}.get(et.upper(), "")
+        return {
+            "jobPostingInfo": {
+                "title": str(info.get("title") or ""),
+                "location": locs[0] if locs else "",
+                "additionalLocations": locs[1:],
+                "jobDescription": desc,
+                "timeType": tt,
+                "startDate": str(info.get("datePosted") or ""),
+                "externalUrl":
+                    f"https://jobs.jobvite.com/{self.org}/job/{rid}",
+                "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor":
+                            "United States" if is_us else None},
+            },
+            "hiringOrganization": {"name": ""},
+            "similarJobs": [],
+        }
+
+
+# ── oracle hcm CE (S22: hcmRestApi recruitingCEJobRequisitions) ────────────
+class OracleHCMAdapter:
+    """spec org = '<host>|<siteNumber>' (e.g.
+    eidg.fa.us6.oraclecloud.com|CX_1). List = the findReqs finder with
+    limit/offset; rows carry Id/Title/PrimaryLocation/
+    PrimaryLocationCountry + secondaryLocations. Detail =
+    recruitingCEJobRequisitionDetails finder=ById;Id="<reqId>" (the
+    quotes are REQUIRED, URL-encoded %22). re_B.md §1."""
+
+    KIND = "oraclehcm"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        parts = org.split("|")
+        self.host = parts[0]
+        self.site = parts[1] if len(parts) > 1 else "CX_1"
+        self.cfg = cfg
+
+    def _list_url(self, offset: int, limit: int = 100) -> str:
+        return (f"https://{self.host}/hcmRestApi/resources/latest/"
+                f"recruitingCEJobRequisitions?onlyData=true"
+                f"&expand=requisitionList.secondaryLocations"
+                f"&finder=findReqs;siteNumber={self.site},"
+                f"limit={limit},offset={offset}")
+
+    def _rows(self) -> list:
+        key = f"oraclehcm:{self.host}:{self.site}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        out = []
+        total = None
+        offset = 0
+        while True:
+            d = fetch_json(self._list_url(offset), cfg=self.cfg)
+            items = (d or {}).get("items") or []
+            if not items or "requisitionList" not in items[0]:
+                raise RuntimeError(
+                    f"oraclehcm:{self.host}: unexpected list payload "
+                    f"(no items[0].requisitionList) — refusing")
+            reqs = items[0].get("requisitionList") or []
+            total = int(items[0].get("TotalJobsCount") or 0)
+            out.extend(reqs)
+            offset += 100
+            if not reqs or (total and offset >= total) or len(reqs) < 100:
+                break
+            if offset > 3000:
+                break
+        _CACHE[key] = (time.monotonic(), out)
+        return out
+
+    @staticmethod
+    def _row_country(req: dict) -> str:
+        if str(req.get("PrimaryLocationCountry") or "").upper() == "US":
+            return OracleHCMAdapter._US
+        for sec in req.get("secondaryLocations") or []:
+            if str((sec or {}).get("CountryCode") or "").upper() == "US":
+                return OracleHCMAdapter._US
+        c = str(req.get("PrimaryLocationCountry") or "")
+        return c or ""
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        if time_type:
+            # S13 refuse-the-unanswerable (pinned S22): both live boards
+            # serve WorkerType/JobSchedule/ContractType = null — a time
+            # filter would be a silent lie
+            raise RuntimeError(
+                f"oraclehcm:{self.host}: the CE API serves no reliable "
+                f"timeType (WorkerType null on both live boards) — a "
+                f"time filter is unanswerable; refusing")
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        reqs = self._rows()
+        for req in reqs:
+            rid = str(req.get("Id") or "")
+            if not rid:
+                continue
+            c = self._row_country(req)
+            if country and not workday.country_str_matches(c, country):
+                dropped_country += 1
+                continue
+            label, iso = _posted_label(str(req.get("PostedDate") or ""))
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(req.get("Title") or ""),
+                "company": "",
+                "url": (f"https://{self.host}/hcmUI/CandidateExperience/"
+                        f"en/sites/{self.site}/job/{rid}"),
+                "externalPath": f"/{rid}",
+                "locationsText": str(req.get("PrimaryLocation") or ""),
+                "postedOn": label,
+                "postedOnIso": iso,
+                "timeType": "",
+                "bulletFields": [rid],
+                "ats": "oraclehcm",
+            }
+        meta = {"rows": len(rows), "total": len(reqs), "complete": True,
+                "pages": 1, "client_filtered": dropped_country,
+                "client_filtered_country": dropped_country,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] oraclehcm:{self.host}: {len(rows)} "
+              f"rows of {len(reqs)} listed ({dropped_country} "
+              f"non-{country or '-'} dropped client-side)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        if not rid:
+            return None
+        url = (f"https://{self.host}/hcmRestApi/resources/latest/"
+               f"recruitingCEJobRequisitionDetails?expand=all"
+               f"&onlyData=true&finder=ById;Id=%22{rid}%22,"
+               f"siteNumber={self.site}")
+        d = fetch_json(url, cfg=self.cfg)
+        items = (d or {}).get("items") or []
+        if not items:
+            return None
+        info = items[0]
+        req = next((r for r in self._rows() if str(r.get("Id")) == rid),
+                   {})
+        desc = str(info.get("ExternalDescriptionStr") or "")
+        qual = str(info.get("ExternalQualificationsStr") or "")
+        resp = str(info.get("ExternalResponsibilitiesStr") or "")
+        body = "\n".join(x for x in (desc, resp, qual) if x and x != "None")
+        return {
+            "jobPostingInfo": {
+                "title": str(info.get("Title") or req.get("Title") or ""),
+                "location": str(info.get("PrimaryLocation")
+                                or req.get("PrimaryLocation") or ""),
+                "additionalLocations": [
+                    str((s or {}).get("Name") or "")
+                    for s in (info.get("secondaryLocations")
+                              or req.get("secondaryLocations") or [])],
+                "jobDescription": body,
+                "timeType": str(info.get("WorkerType") or ""),
+                "startDate": str(info.get("ExternalPostedStartDate")
+                                 or req.get("PostedDate") or ""),
+                "externalUrl": (f"https://{self.host}/hcmUI/"
+                                f"CandidateExperience/en/sites/"
+                                f"{self.site}/job/{rid}"),
+                "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor": self._row_country(req)},
+            },
+            "hiringOrganization": {"name": ""},
+            "similarJobs": [],
+        }
+
+
+# ── talentadore (S22: ats.talentadore.com feed via the careers page) ───────
+class TalentAdoreAdapter:
+    """spec org = careers-page host (e.g. amersports.careers.talentadore
+    .com). The page carries #ta-json-careers[data-url] = space-separated
+    feed urls (one per business unit); each feed is a FULL unpaginated
+    dump with descriptions inline (re_B.md §4)."""
+
+    KIND = "talentadore"
+    _TT = {"full time": "Full time", "full-time": "Full time",
+           "part time": "Part time", "part-time": "Part time"}
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    def _feed_urls(self) -> list:
+        html = _fetch_text_cached(f"https://{self.org}/",
+                                  f"ats:talentadore:{self.org}",
+                                  self.cfg)
+        m = re.search(
+            r'id=["\']ta-json-careers["\'][^>]*data-url=["\']([^"\']+)["\']',
+            html or "")
+        if not m:
+            raise RuntimeError(
+                f"talentadore:{self.org}: no #ta-json-careers[data-url] "
+                f"on the careers page — engine changed; refusing")
+        return [u for u in m.group(1).split() if u.startswith("http")]
+
+    def _jobs(self) -> list:
+        key = f"talentadore:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        jobs = []
+        seen = set()
+        for u in self._feed_urls():
+            d = fetch_json(u, cfg=self.cfg)
+            for j in (d or {}).get("jobs") or []:
+                tok = str(j.get("job_token") or "")
+                if tok and tok in seen:
+                    continue
+                if tok:
+                    seen.add(tok)
+                jobs.append(j)
+        _CACHE[key] = (time.monotonic(), jobs)
+        return jobs
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped_country = dropped_tt = 0
+        jobs = self._jobs()
+        for j in jobs:
+            tok = str(j.get("job_token") or j.get("id") or "")
+            if not tok:
+                continue
+            c = str(j.get("country") or "")
+            if country and not workday.country_str_matches(c, country):
+                dropped_country += 1
+                continue
+            tt = self._TT.get(str(j.get("employment_type") or
+                                  "").strip().lower(), "")
+            if time_type and tt and tt.lower() != time_type.lower():
+                dropped_tt += 1
+                continue
+            label, iso = _posted_label(str(j.get("start_date") or ""))
+            loc_bits = [str(j.get("city") or ""), str(j.get("location")
+                                                      or "")]
+            loc = " — ".join(x for x in loc_bits if x)
+            rows[tok] = {
+                "reqId": tok,
+                "title": str(j.get("name") or ""),
+                "company": str(j.get("business_unit_name") or ""),
+                "url": str(j.get("link") or ""),
+                "externalPath": f"/{tok}",
+                "locationsText": loc,
+                "postedOn": label,
+                "postedOnIso": iso,
+                "timeType": tt,
+                "bulletFields": [tok],
+                "ats": "talentadore",
+            }
+        meta = {"rows": len(rows), "total": len(jobs), "complete": True,
+                "pages": len(self._feed_urls()),
+                "client_filtered": dropped_country + dropped_tt,
+                "client_filtered_country": dropped_country,
+                "client_filtered_time": dropped_tt}
+        print(f"[{progress_label}] talentadore:{self.org}: {len(rows)} "
+              f"rows of {len(jobs)} listed ({dropped_country} "
+              f"non-{country or '-'} dropped client-side)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        tok = str(external_path or "").strip("/").split("/")[-1]
+        j = next((x for x in self._jobs()
+                  if str(x.get("job_token")) == tok
+                  or str(x.get("id")) == tok), None)
+        if j is None:
+            return None
+        tt = self._TT.get(str(j.get("employment_type") or
+                              "").strip().lower(), "")
+        return {
+            "jobPostingInfo": {
+                "title": str(j.get("name") or ""),
+                "location": str(j.get("city") or ""),
+                "additionalLocations": [],
+                "jobDescription": str(j.get("description_html") or
+                                      j.get("description_text") or ""),
+                "timeType": tt,
+                "startDate": str(j.get("start_date") or ""),
+                "externalUrl": str(j.get("link") or ""),
+                "jobReqId": tok,
+                "postedOn": "",
+                "country": {"descriptor": str(j.get("country") or "")},
+            },
+            "hiringOrganization": {
+                "name": str(j.get("business_unit_name") or "")},
+            "similarJobs": [],
+        }
+
+
+# ── workstream (S22: workstream.us SSR HTML board; JSON-LD detail) ─────────
+class WorkstreamAdapter:
+    """spec org = the board short-id (fcc54c54 — the slug 301s to it).
+    List = /j/{org}/positions?page=N (10/page; currentPage/totalPages
+    inline JS; page>totalPages = 200-with-0-cards stop). reqId =
+    trailing 8-hex of the detail-URL slug. Detail = the job page's
+    single JobPosting ld+json (re_A.md §2). Employment-type tags are
+    on the card only ~40% of the time — detail is authoritative."""
+
+    KIND = "workstream"
+    _TT = {"full-time": "Full time", "full time": "Full time",
+           "part-time": "Part time", "part time": "Part time"}
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    def _page(self, p: int) -> tuple[list, int]:
+        url = f"https://www.workstream.us/j/{self.org}/positions?page={p}"
+        html = fetch_text(url, cfg=self.cfg)
+        if not html or "position-card" not in (html or ""):
+            return [], 0
+        tp = 1
+        m = re.search(r"totalPages\s*=\s*(\d+)", html)
+        if m:
+            tp = int(m.group(1))
+        cards = re.findall(
+            r'<div class="position-card[^"]*"[^>]*>(.*?)(?=<div class="position-card|<div class="pagination|$)',
+            html, re.S)
+        jobs = []
+        for card in cards:
+            href = re.search(
+                r"""onclick="location\.href='([^']+)'""", card)
+            a = re.search(
+                r"""<a[^>]+href="([^"]+)"[^>]*>\s*(.*?)\s*</a>""", card,
+                re.S)
+            loc = re.search(
+                r'position-address[^>]*>\s*(.*?)\s*</div>', card, re.S)
+            tag = re.search(r'<span class="tag[^"]*">\s*(.*?)\s*</span>',
+                            card, re.S)
+            if not href and not a:
+                continue
+            link = (href.group(1) if href
+                    else (a.group(1) if a else ""))
+            m2 = re.search(r"-([0-9a-f]{8})(?:\?|$)", link or "")
+            rid = m2.group(1) if m2 else link.rsplit("/", 1)[-1][:40]
+            jobs.append({
+                "rid": rid,
+                "url": link,
+                "title": re.sub(r"<[^>]+>", "",
+                                (a.group(2) if a else "")).strip(),
+                "loc": re.sub(r"<[^>]+>", "",
+                              loc.group(1) if loc else "").strip(),
+                "tt": re.sub(r"<[^>]+>", "",
+                             tag.group(1) if tag else "").strip(),
+            })
+        return jobs, tp
+
+    def _all_jobs(self) -> list:
+        """The full page walk, in-process cached. BOTH list_board and
+        detail_payload call this — the details phase runs in a FRESH
+        process (board_dump subprocess), so a list-populated _CACHE is
+        EMPTY there; the walk must be re-runnable on demand."""
+        key = f"workstream:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        all_jobs = []
+        total_pages = 1
+        p = 1
+        while p <= total_pages and p <= 40:
+            jobs, tp = self._page(p)
+            total_pages = max(total_pages, tp)
+            if not jobs:
+                break
+            all_jobs.extend(jobs)
+            p += 1
+        _CACHE[key] = (time.monotonic(), all_jobs)
+        return all_jobs
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        all_jobs = self._all_jobs()
+        for j in all_jobs:
+            if j["rid"] in rows:
+                continue
+            # every workstream address ends ', USA' (re_A.md) —
+            # country marker from the address suffix
+            is_us = bool(re.search(
+                r",\s*(?:USA|U\.S\.A\.?)\s*$", j["loc"])) or bool(
+                re.search(r",\s*[A-Z]{2}\s+\d{5}(?:,|$)", j["loc"]))
+            if country and not is_us:
+                dropped_country += 1
+                continue
+            rows[j["rid"]] = {
+                "reqId": j["rid"],
+                "title": j["title"],
+                "company": "",
+                "url": j["url"],
+                "externalPath": f"/{j['rid']}",
+                "locationsText": j["loc"],
+                "postedOn": "",
+                "timeType": self._TT.get(j["tt"].lower(), ""),
+                "bulletFields": [j["rid"]],
+                "ats": "workstream",
+            }
+        meta = {"rows": len(rows), "total": len(rows), "complete": True,
+                "pages": 1, "client_filtered": dropped_country,
+                "client_filtered_country": dropped_country,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] workstream:{self.org}: {len(rows)} "
+              f"rows of {len(all_jobs)} ({dropped_country} "
+              f"non-{country or '-'} dropped client-side)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        if not rid:
+            return None
+        # resolve the detail URL via the on-demand page walk (the
+        # details phase is a FRESH process — no list cache exists)
+        row_url = next((r["url"] for r in self._all_jobs()
+                        if r.get("rid") == rid
+                        or (r.get("url") or "").endswith(rid)), "")
+        if not row_url:
+            return None
+        html = _fetch_text_cached(
+            row_url, f"ats:workstream:{self.org}:{rid}", self.cfg)
+        info = {}
+        for block in re.findall(
+                r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>'
+                r'(.*?)</script>', html or "", re.S):
+            try:
+                d = json.loads(block)
+            except (json.JSONDecodeError, ValueError):
+                continue
+            if isinstance(d, dict) and d.get("@type") == "JobPosting":
+                info = d
+                break
+        et = info.get("employmentType")
+        tt = ""
+        if isinstance(et, list) and et:
+            tt = {"FULL_TIME": "Full time", "PART_TIME": "Part time",
+                  "CONTRACTOR": "Contract"}.get(str(et[0]).upper(), "")
+        elif isinstance(et, str):
+            tt = {"FULL_TIME": "Full time", "PART_TIME": "Part time",
+                  "CONTRACTOR": "Contract"}.get(et.upper(), "")
+        addr = ((info.get("jobLocation") or {}).get("address") or {})
+        loc = ", ".join(x for x in (str(addr.get("streetAddress") or ""),
+                                    str(addr.get("addressLocality") or ""),
+                                    str(addr.get("addressRegion") or ""))
+                        if x)
+        return {
+            "jobPostingInfo": {
+                "title": str(info.get("title") or ""),
+                "location": loc,
+                "additionalLocations": [],
+                "jobDescription": str(info.get("description") or ""),
+                "timeType": tt,
+                "startDate": str(info.get("datePosted") or ""),
+                "externalUrl": row_url,
+                "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor":
+                            str(addr.get("addressCountry") or "")},
+            },
+            "hiringOrganization": {
+                "name": str(((info.get("hiringOrganization") or {})
+                             .get("name")) or "")},
+            "similarJobs": [],
+        }
+
+# ── bamboohr (S22: /jobs/embed2.php feed + /careers/<id>/detail JSON) ──────
+class BambooHRAdapter:
+    """spec org = the company subdomain (hisenseusacorporation). Listing
+    = the embed2.php widget feed (departments[].positions[] — NO
+    country field, dates only at detail); detail = /careers/<id>/detail
+    with atsLocation.country + employmentStatusLabel + description
+    (re_C.md §2). The country filter is therefore DETAIL-CLASSIFIED —
+    boards on this platform are typically single-country, so the list
+    phase ships all rows and the countryfilter phase trims."""
+
+    KIND = "bamboohr"
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    def _feed(self) -> list:
+        key = f"bamboohr:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        url = (f"https://{self.org}.bamboohr.com/jobs/embed2.php"
+               f"?version=1.0.0&format=json")
+        d = fetch_json(url, cfg=self.cfg)
+        positions = []
+        for dept in (d or {}).get("departments") or []:
+            for pos in dept.get("positions") or []:
+                if pos.get("id") is not None:
+                    pos = dict(pos)
+                    pos["_department"] = str(dept.get("label") or "")
+                    positions.append(pos)
+        if not positions:
+            raise RuntimeError(
+                f"bamboohr:{self.org}: embed2.php returned no positions "
+                f"— board dead or shape changed; refusing")
+        _CACHE[key] = (time.monotonic(), positions)
+        return positions
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        positions = self._feed()
+        for pos in positions:
+            rid = str(pos.get("id") or "")
+            if not rid:
+                continue
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(pos.get("name") or ""),
+                "company": "",
+                "url": str(pos.get("url") or
+                           f"https://{self.org}.bamboohr.com/careers/{rid}"),
+                "externalPath": f"/{rid}",
+                "locationsText": str(pos.get("location") or ""),
+                "postedOn": "",
+                "timeType": "",
+                "bulletFields": [rid, pos.get("_department") or ""],
+                "ats": "bamboohr",
+                "department": pos.get("_department") or "",
+            }
+        # NOTE (S12/S13 honest contract): country cannot be filtered at
+        # list time (no field) — the netflix-class countryfilter phase
+        # classifies from details. single-country boards ship as-is.
+        meta = {"rows": len(rows), "total": len(rows), "complete": True,
+                "pages": 1, "client_filtered": 0,
+                "client_filtered_country": 0, "client_filtered_time": 0,
+                "country_filter_pending": bool(country)}
+        print(f"[{progress_label}] bamboohr:{self.org}: {len(rows)} rows "
+              f"listed (country {country!r} is detail-classified "
+              f"client-side — S12/S13)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        if not rid:
+            return None
+        url = (f"https://{self.org}.bamboohr.com/careers/{rid}/detail")
+        # the detail endpoint requires the XHR headers (re_C.md §2)
+        d = _fetch_json_xhr(url, f"ats:bamboohr:{self.org}:{rid}",
+                            self.cfg)
+        if not d:
+            return None
+        opening = ((d or {}).get("result") or {}).get("jobOpening") or {}
+        if not opening:
+            return None
+        ats_loc = opening.get("atsLocation") or {}
+        tt = str(opening.get("employmentStatusLabel") or "")
+        tt = {"full-time": "Full time", "full time": "Full time",
+              "part-time": "Part time", "part time": "Part time",
+              }.get(tt.strip().lower(), tt)
+        city = str(ats_loc.get("city") or "")
+        state = str(ats_loc.get("state") or "")
+        pos = next((p for p in self._feed()
+                    if str(p.get("id")) == rid), {})
+        return {
+            "jobPostingInfo": {
+                "title": str(opening.get("jobOpeningName")
+                             or pos.get("name") or ""),
+                "location": ", ".join(x for x in (city, state) if x),
+                "additionalLocations": [],
+                "jobDescription": str(opening.get("description") or ""),
+                "timeType": tt,
+                "startDate": str(opening.get("datePosted") or ""),
+                "externalUrl": str(opening.get("jobOpeningShareUrl")
+                                   or pos.get("url") or ""),
+                "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor":
+                            str(ats_loc.get("country") or "")},
+            },
+            "hiringOrganization": {"name": ""},
+            "similarJobs": [],
+        }
+
+
+# ── ultipro / UKG (S22: LoadSearchResults POST; silent-empty trap) ─────────
+class UltiProAdapter:
+    """spec org = '<tenant>|<boardHash>' (MEY1000MEYER|7a970c3d-…).
+    List = POST JobBoardView/LoadSearchResults with a PASCALCASE body —
+    ProximitySearchType:0 is REQUIRED (null → silent empty, the trap
+    pinned in re_B.md §3). Detail = OpportunityDetail page; the model
+    is inline JS `new US.Opportunity.CandidateOpportunityDetail({...})`
+    — string-aware brace scan."""
+
+    KIND = "ultipro"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        parts = org.split("|")
+        self.tenant = parts[0]
+        self.hash = parts[1] if len(parts) > 1 else ""
+        self.cfg = cfg
+
+    def _board_url(self) -> str:
+        return (f"https://recruiting.ultipro.com/{self.tenant}/JobBoard/"
+                f"{self.hash}")
+
+    def _search(self, skip: int, top: int = 50) -> dict:
+        import urllib.request
+        url = (self._board_url() + "/JobBoardView/LoadSearchResults")
+        body = json.dumps({"opportunitySearch": {
+            "Top": top, "Skip": skip, "QueryString": "",
+            "OrderBy": None, "OrderByKey": None, "Filters": [],
+            "Coordinates": None, "Extent": None,
+            "ProximitySearchType": 0}}).encode()
+        req = urllib.request.Request(
+            url, data=body, method="POST", headers={
+                "Content-Type": "application/json; charset=utf-8",
+                "Accept": "application/json",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X "
+                              "10_15_7) AppleWebKit/537.36"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read().decode("utf-8", "replace") or "{}")
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        total = None
+        skip = 0
+        while True:
+            d = self._search(skip)
+            opps = d.get("opportunities") or []
+            total = int(d.get("totalCount") or 0)
+            if total == 0:
+                raise RuntimeError(
+                    f"ultipro:{self.tenant}: totalCount=0 — silent-empty "
+                    f"trap (wrong body?) or dead board; refusing")
+            for o in opps:
+                rid = str(o.get("RequisitionNumber") or o.get("Id") or "")
+                if not rid:
+                    continue
+                locs = []
+                is_us = False
+                for loc in o.get("Locations") or []:
+                    addr = (loc or {}).get("Address") or {}
+                    cc = str(((addr.get("Country") or {}).get("Code"))
+                             or "")
+                    if cc.upper() in ("USA", "US"):
+                        is_us = True
+                    piece = ", ".join(x for x in (
+                        str(loc.get("LocalizedName") or ""),
+                        str(((addr.get("State") or {}).get("Code")) or ""))
+                        if x)
+                    if piece and piece not in locs:
+                        locs.append(piece)
+                if country and not is_us:
+                    dropped_country += 1
+                    continue
+                ft = o.get("FullTime")
+                tt = "Full time" if ft else ("Part time" if ft is False
+                                             else "")
+                label, iso = _posted_label(str(o.get("PostedDate") or ""))
+                rows[rid] = {
+                    "reqId": rid,
+                    "title": str(o.get("Title") or ""),
+                    "company": "",
+                    "url": (self._board_url()
+                            + f"/OpportunityDetail?opportunityId="
+                            f"{o.get('Id')}"),
+                    "externalPath": f"/{rid}",
+                    "locationsText": "; ".join(locs[:3]),
+                    "postedOn": label,
+                    "postedOnIso": iso,
+                    "timeType": tt,
+                    "bulletFields": [rid],
+                    "ats": "ultipro",
+                }
+            skip += 50
+            if skip >= total or not opps:
+                break
+            if skip > 5000:
+                break
+        meta = {"rows": len(rows), "total": total, "complete": True,
+                "pages": (skip // 50), "client_filtered": dropped_country,
+                "client_filtered_country": dropped_country,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] ultipro:{self.tenant}: {len(rows)} "
+              f"rows of {total} listed ({dropped_country} "
+              f"non-{country or '-'} dropped client-side)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        if not rid:
+            return None
+        row = None
+        cached = _CACHE.get(f"ultipro:{self.tenant}")
+        if cached:
+            pass  # list cache stores rows dict; find via full re-search
+        # resolve the GUID via one search call (rows carry RequisitionNumber)
+        d = self._search(0, top=500)
+        opp = next((o for o in (d.get("opportunities") or [])
+                    if str(o.get("RequisitionNumber")) == rid
+                    or str(o.get("Id")) == rid), None)
+        if opp is None:
+            return None
+        url = (self._board_url()
+               + f"/OpportunityDetail?opportunityId={opp.get('Id')}")
+        html = _fetch_text_cached(url, f"ats:ultipro:{self.tenant}:{rid}",
+                                  self.cfg)
+        desc = ""
+        m = re.search(r"new\s+US\.Opportunity\.CandidateOpportunity"
+                      r"Detail\(", html or "")
+        if m:
+            model = _brace_scan(html, m.end())
+            try:
+                obj = json.loads(model)
+                desc = str(obj.get("Description") or "")
+            except (json.JSONDecodeError, ValueError):
+                desc = ""
+        if not desc:
+            desc = str(opp.get("BriefDescription") or "")
+        locs = []
+        for loc in opp.get("Locations") or []:
+            addr = (loc or {}).get("Address") or {}
+            piece = ", ".join(x for x in (
+                str(addr.get("City") or ""),
+                str(((addr.get("State") or {}).get("Code")) or ""))
+                if x)
+            if piece:
+                locs.append(piece)
+        ft = opp.get("FullTime")
+        tt = "Full time" if ft else ("Part time" if ft is False else "")
+        return {
+            "jobPostingInfo": {
+                "title": str(opp.get("Title") or ""),
+                "location": locs[0] if locs else "",
+                "additionalLocations": locs[1:],
+                "jobDescription": desc,
+                "timeType": tt,
+                "startDate": str(opp.get("PostedDate") or ""),
+                "externalUrl": url,
+                "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor": self._US},
+            },
+            "hiringOrganization": {"name": ""},
+            "similarJobs": [],
+        }
+
+
+def _brace_scan(s: str, start: int) -> str:
+    """Extract a balanced {…} JSON object starting AT `start` (string-
+    aware: braces inside quoted strings don't count). For the UltiPro
+    inline-JS model extraction (re_B.md §3.5)."""
+    if start >= len(s) or s[start] != "{":
+        return ""
+    depth = 0
+    in_str = False
+    esc = False
+    for i in range(start, len(s)):
+        ch = s[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                return s[start:i + 1]
+    return ""
+
+
+def _fetch_json_xhr(url: str, spec: str, cfg: "Config") -> Optional[dict]:
+    """GET with X-Requested-With + Accept json (the BambooHR detail
+    contract, re_C.md §2). Returns None on failure (callers decide)."""
+    import urllib.request
+    req = urllib.request.Request(url, headers={
+        "Accept": "application/json",
+        "X-Requested-With": "XMLHttpRequest",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                      "AppleWebKit/537.36"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            body = r.read().decode("utf-8", "replace")
+    except Exception:
+        return None
+    try:
+        return json.loads(body)
+    except (json.JSONDecodeError, ValueError):
+        return None
+
+
+# ── j2w / SAP SuccessFactors RMK (S22: SSR 25-row pages + microdata) ───────
+class J2WAdapter:
+    """spec org = '<host>/<path>' (careers.joysonsafety.com/search;
+    careers.cofcointernational.com/search-jobs). Server-rendered
+    HTML: 25 rows/page via startrow=N; total from .paginationLabel.
+    Rows: tr.data-row + a.jobTitle-link + span.jobLocation/jobDate.
+    Detail = /job/<slug>/<reqId>/ with itemprop microdata (re_B.md
+    §2). Country token = last comma-token (US/USA); multi-loc rows
+    ('+1 more…') are detail-classified (netflix-class)."""
+
+    KIND = "j2w"
+    _US_TOKENS = {"us", "usa", "united states", "united states of america"}
+    _DATE_FORMATS = ("%b %d, %Y", "%d %b %Y")
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org.rstrip("/")
+        self.cfg = cfg
+
+    def _page(self, startrow: int) -> tuple[list, int, str]:
+        url = f"https://{self.org}?q=&sortColumn=referencedate&" \
+              f"sortDirection=desc&startrow={startrow}"
+        html = fetch_text(url, cfg=self.cfg)
+        if not html or "searchresults" not in html:
+            return [], 0, html or ""
+        total = 0
+        m = re.search(
+            r'paginationLabel[^>]*>.*?of\s*<b>\s*(\d+)\s*</b>', html, re.S)
+        if not m:
+            m = re.search(r'Results\s*.*?of\s*<b>\s*(\d+)', html, re.S)
+        if m:
+            total = int(m.group(1))
+        rows = []
+        for tr in re.findall(r'<tr class="data-row">(.*?)</tr>',
+                             html, re.S):
+            a = re.search(
+                r'<a[^>]+class="jobTitle-link"[^>]+href="([^"]+)"'
+                r'[^>]*>\s*(.*?)\s*</a>', tr, re.S)
+            if not a:
+                continue
+            loc = re.search(r'jobLocation[^>]*>\s*(.*?)\s*</span>',
+                            tr, re.S)
+            date = re.search(r'jobDate[^>]*>\s*(.*?)\s*</span>', tr, re.S)
+            href = a.group(1)
+            rid = href.strip("/").rsplit("/", 1)[-1]
+            rows.append({
+                "rid": rid,
+                "href": href if href.startswith("http")
+                        else f"https://{self.org.split('/')[0]}{href}",
+                "title": re.sub(r"<[^>]+>", "", a.group(2)).strip(),
+                "loc": re.sub(r"\s+", " ", re.sub(
+                    r"<[^>]+>", " ", loc.group(1) if loc else "")).strip(),
+                "date": re.sub(r"<[^>]+>", "", date.group(1)
+                               if date else "").strip(),
+            })
+        return rows, total, html
+
+    def _all_rows(self) -> list:
+        """The full startrow walk, in-process cached. BOTH list_board and
+        detail_payload call this — the details phase is a FRESH process
+        (the list-populated _CACHE is empty there), so the walk must be
+        re-runnable on demand."""
+        key = f"j2w:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        all_rows: list = []
+        total = 0
+        startrow = 0
+        pages = 0
+        while True:
+            page_rows, t, _html = self._page(startrow)
+            if not page_rows:
+                break
+            if t:
+                total = t
+            pages += 1
+            all_rows.extend(page_rows)
+            startrow += 25
+            if total and startrow >= total:
+                break
+            if len(page_rows) < 25:
+                break
+            if pages > 60:
+                break
+        _CACHE[key] = (time.monotonic(), all_rows)
+        return all_rows
+
+    @staticmethod
+    def _row_is_us(loc: str) -> bool:
+        tokens = [t.strip().lower() for t in loc.split(",")]
+        return bool(tokens) and tokens[-1] in J2WAdapter._US_TOKENS
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        pending_detail = 0
+        all_rows = self._all_rows()
+        total = len(all_rows)
+        for j in all_rows:
+            if j["rid"] in rows:
+                continue
+            loc_clean = re.sub(r"\(\+?\s*\d*\s*more[^)]*\)", "",
+                               j["loc"]).strip()
+            multi = "more" in j["loc"]
+            if country:
+                if self._row_is_us(loc_clean) or multi:
+                    if multi and not self._row_is_us(loc_clean):
+                        pending_detail += 1
+                else:
+                    dropped_country += 1
+                    continue
+            # dates: 'Sep 24, 2026' (en_US) or '21 Sept 2026' (en_GB)
+            iso = ""
+            for fmt in self._DATE_FORMATS:
+                try:
+                    iso = datetime.strptime(j["date"], fmt).date() \
+                        .isoformat()
+                    break
+                except ValueError:
+                    continue
+            label, iso = _posted_label(iso)
+            rows[j["rid"]] = {
+                "reqId": j["rid"],
+                "title": j["title"],
+                "company": "",
+                "url": j["href"],
+                "externalPath": f"/{j['rid']}",
+                "locationsText": j["loc"],
+                "postedOn": label,
+                "postedOnIso": iso,
+                "timeType": "",
+                "bulletFields": [j["rid"]],
+                "ats": "j2w",
+            }
+        meta = {"rows": len(rows), "total": total, "complete": True,
+                "pages": 1, "client_filtered": dropped_country,
+                "client_filtered_country": dropped_country,
+                "client_filtered_time": 0,
+                "detail_pending_country": pending_detail}
+        print(f"[{progress_label}] j2w:{self.org}: {len(rows)} rows of "
+              f"{total} ({dropped_country} non-{country or '-'} dropped,"
+              f" {pending_detail} multi-loc → detail)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        if not rid:
+            return None
+        # resolve the detail URL via the on-demand page walk (the
+        # details phase is a FRESH process — no list cache exists)
+        row_url = next((r["href"] for r in self._all_rows()
+                        if r.get("rid") == rid), "")
+        if not row_url:
+            return None
+        html = _fetch_text_cached(row_url, f"ats:j2w:{self.org}:{rid}",
+                                  self.cfg)
+        if not html:
+            return None
+        title_m = re.search(
+            r'itemprop="title"[^>]*>\s*(.*?)\s*</span>', html, re.S)
+        desc = ""
+        # the description span NESTS another span (19KB payload): a
+        # naive non-greedy match stops at the inner </span> — require
+        # the double close (re_B.md §2.4 + live-verified 2026-09-30)
+        desc_m = re.search(
+            r'itemprop="description".*?<span class="jobdescription">'
+            r'(.*?)</span>\s*</span>', html, re.S)
+        if desc_m:
+            desc = desc_m.group(1)
+        else:
+            desc_m = re.search(
+                r'<span[^>]*class="jobdescription">(.*?)</span>',
+                html or "", re.S)
+            if desc_m:
+                desc = desc_m.group(1)
+        locs = re.findall(r'jobGeoLocation[^>]*>\s*(.*?)\s*</span>',
+                          html, re.S)
+        date_m = re.search(
+            r'itemprop="datePosted"[^>]+content="([^"]+)"', html)
+        date_iso = ""
+        if date_m:
+            raw = date_m.group(1)
+            try:
+                date_iso = datetime.strptime(
+                    raw, "%a %b %d %H:%M:%S %Z %Y").date().isoformat()
+            except ValueError:
+                date_iso = ""
+        label, iso = _posted_label(date_iso)
+        is_us = any(self._row_is_us(l) for l in locs) if locs else False
+        return {
+            "jobPostingInfo": {
+                "title": re.sub(r"<[^>]+>", "",
+                                title_m.group(1) if title_m else "").strip(),
+                "location": locs[0] if locs else "",
+                "additionalLocations": locs[1:],
+                "jobDescription": desc,
+                "timeType": "",
+                "startDate": iso or date_iso,
+                "externalUrl": row_url,
+                "jobReqId": rid,
+                "postedOn": label,
+                "country": {"descriptor": "United States" if is_us
+                            else None},
+            },
+            "hiringOrganization": {"name": ""},
+            "similarJobs": [],
+        }
+
+
+# ── ttiproxy (S22: ttigroup.com Drupal Workday-proxy module) ───────────────
+class TTIDrupalAdapter:
+    """spec org = region ('US'). ttigroup.com/ttigroup/api/v1/workday/
+    jobPostings?region={org}&page=1&take=1000 — unauthenticated JSON,
+    full Workday-shaped rows under job_json_data INCLUDING the HTML
+    description (single call for the whole region board; re_C.md §1).
+    7/645 rows have primaryLocation=null (all-US by region — honest
+    fallback to the jobSite descriptor)."""
+
+    KIND = "ttiproxy"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org or "US"
+        self.cfg = cfg
+
+    def _rows(self) -> list:
+        key = f"ttiproxy:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        url = (f"https://www.ttigroup.com/ttigroup/api/v1/workday/"
+               f"jobPostings?region={self.org}&page=1&take=1000"
+               f"&ajax_wrapper=html")
+        d = fetch_json(url, cfg=self.cfg)
+        data = (d or {}).get("data")
+        if not isinstance(data, list) or not data:
+            raise RuntimeError(
+                f"ttiproxy:{self.org}: jobPostings returned no data[] — "
+                f"board dead or shape changed; refusing")
+        _CACHE[key] = (time.monotonic(), data)
+        return data
+
+    @staticmethod
+    def _row_country(row: dict) -> str:
+        jd = (row.get("job_json_data") or {})
+        loc = jd.get("primaryLocation") or {}
+        a3 = str(((loc.get("country") or {}).get("alpha3Code")) or "")
+        if a3.upper() == "USA":
+            return TTIDrupalAdapter._US
+        if a3:
+            return a3
+        # region=US boards: null primaryLocation rows are US jobs
+        return TTIDrupalAdapter._US
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped_tt = 0
+        data = self._rows()
+        for row in data:
+            jd = (row.get("job_json_data") or {})
+            rid = str(jd.get("id") or row.get("workday_id") or "")
+            if not rid:
+                continue
+            loc = jd.get("primaryLocation") or {}
+            # null-primaryLocation fallback (7/645 rows): the jobSite
+            # DESCRIPTOR (not the raw job_site id — pinned S22)
+            loc_text = str(loc.get("descriptor") or
+                           ((jd.get("jobSite") or {}).get("descriptor"))
+                           or "")
+            tt = str(((jd.get("timeType") or {}).get("descriptor"))
+                     or "")
+            if time_type and tt and tt.lower() != time_type.lower():
+                dropped_tt += 1
+                continue
+            label, iso = _posted_label(str(jd.get("startDate") or ""))
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(jd.get("title") or row.get("title") or ""),
+                "company": str(((jd.get("company") or {}).get("descriptor"))
+                               or "Techtronic Industries"),
+                "url": str(jd.get("url") or
+                           (f"https://www.ttigroup.com/careers/"
+                            f"career-opportunities/job-details"
+                            f"?data_source=wd&job_id={rid}")),
+                "externalPath": f"/{rid}",
+                "locationsText": loc_text,
+                "postedOn": label,
+                "postedOnIso": iso,
+                "timeType": tt,
+                "bulletFields": [rid],
+                "ats": "ttiproxy",
+                "jobSite": str(((jd.get("jobSite") or {}).get("descriptor"))
+                               or ""),
+            }
+        meta = {"rows": len(rows), "total": len(data), "complete": True,
+                "pages": 1, "client_filtered": dropped_tt,
+                "client_filtered_country": 0,
+                "client_filtered_time": dropped_tt}
+        print(f"[{progress_label}] ttiproxy:{self.org}: {len(rows)} rows "
+              f"of {len(data)} listed ({dropped_tt} non-FT dropped "
+              f"client-side)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        row = next((r for r in self._rows()
+                    if str((r.get("job_json_data") or {}).get("id"))
+                    == rid or str(r.get("workday_id")) == rid), None)
+        if row is None:
+            return None
+        jd = row.get("job_json_data") or {}
+        loc = jd.get("primaryLocation") or {}
+        loc_text = str(loc.get("descriptor") or
+                       ((jd.get("jobSite") or {}).get("descriptor"))
+                       or "")
+        sec = str(jd.get("jobDescription") or "")
+        return {
+            "jobPostingInfo": {
+                "title": str(jd.get("title") or ""),
+                "location": loc_text,
+                "additionalLocations": [],
+                "jobDescription": sec,
+                "timeType": str(((jd.get("timeType") or {})
+                                 .get("descriptor")) or ""),
+                "startDate": str(jd.get("startDate") or ""),
+                "externalUrl": str(jd.get("url") or ""),
+                "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor": self._row_country(row)},
+            },
+            "hiringOrganization": {
+                "name": str(((jd.get("company") or {}).get("descriptor"))
+                            or "Techtronic Industries")},
+            "similarJobs": [],
+        }
+
+
+# ── wuxibio (S22: WP static + /server.php AJAX mirror of SAP SF) ───────────
+class WuXiBioAdapter:
+    """spec org = host (www.wuxibiologics.com). POST /server.php with
+    type=join_us_filterBy_sapsf (first 50 + postCount) then
+    join_us_more_sapsf with cumulative postId until drained
+    (re_C.md §3). country[] MUST be an array key. Detail = the WP page
+    (div.applyD_right > div.text = full description)."""
+
+    KIND = "wuxibio"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    def _post_form(self, params: list) -> Optional[dict]:
+        import urllib.request
+        import urllib.parse
+        body = urllib.parse.urlencode(params).encode()
+        req = urllib.request.Request(
+            f"https://{self.org}/server.php", data=body, method="POST",
+            headers={"Content-Type":
+                     "application/x-www-form-urlencoded",
+                     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac "
+                                   "OS X 10_15_7) AppleWebKit/537.36",
+                     "Accept": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read().decode("utf-8", "replace"))
+        except Exception:
+            return None
+
+    def _rows(self, country: str) -> list:
+        key = f"wuxibio:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        d = self._post_form([
+            ("catId", "30"), ("country[]", country),
+            ("type", "join_us_filterBy_sapsf")])
+        if not d or "result" not in d:
+            raise RuntimeError(
+                f"wuxibio:{self.org}: server.php filterBy failed — "
+                f"board dead or shape changed; refusing")
+        rows = list(d.get("result") or [])
+        ids = [str(r.get("id")) for r in rows]
+        total = int(d.get("postCount") or len(rows))
+        guard = 0
+        while len(rows) < total and guard < 40:
+            guard += 1
+            d2 = self._post_form([
+                ("postId", ",".join(ids)), ("type", "join_us_more_sapsf"),
+                ("catId", "30"), ("country[]", country),
+                ("total", str(total))])
+            if not d2:
+                break
+            more = list(d2.get("result") or [])
+            if not more:
+                break
+            for r in more:
+                if str(r.get("id")) not in ids:
+                    ids.append(str(r.get("id")))
+                    rows.append(r)
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        want = country or "all"
+        rows: dict[str, dict] = {}
+        data = self._rows(want)
+        for r in data:
+            rid = str(r.get("id") or "")
+            if not rid:
+                continue
+            c = str(r.get("country") or "")
+            if country and not workday.country_str_matches(c, country):
+                continue
+            label, iso = _posted_label(str(r.get("date") or ""))
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(r.get("title") or ""),
+                "company": "WuXi Biologics",
+                "url": str(r.get("href") or ""),
+                "externalPath": f"/{rid}",
+                "locationsText": c,
+                "postedOn": label,
+                "postedOnIso": iso,
+                "timeType": "",
+                "bulletFields": [rid],
+                "ats": "wuxibio",
+            }
+        meta = {"rows": len(rows), "total": len(data), "complete": True,
+                "pages": 1, "client_filtered": 0,
+                "client_filtered_country": 0, "client_filtered_time": 0}
+        print(f"[{progress_label}] wuxibio:{self.org}: {len(rows)} rows "
+              f"of {len(data)} (country[] filter {want!r})")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        r = next((x for x in self._rows(country or "all")
+                  if str(x.get("id")) == rid), None)
+        if r is None:
+            return None
+        url = str(r.get("href") or "")
+        html = _fetch_text_cached(url, f"ats:wuxibio:{self.org}:{rid}",
+                                  self.cfg)
+        desc = ""
+        title = str(r.get("title") or "")
+        m = re.search(
+            r'<div class="title">([^<]*)</div>', html or "")
+        if m:
+            title = m.group(1).strip() or title
+        m2 = re.search(r'applyD_right.*?<div class="text">(.*?)'
+                       r'</div>\s*<', html or "", re.S)
+        if m2:
+            desc = m2.group(1)
+        else:
+            # broader: the .text div inside applyD_right
+            m3 = re.search(
+                r'<div class="applyD_right">(.*?)<div class="apply',
+                html or "", re.S)
+            if m3:
+                seg = m3.group(1)
+                m4 = re.search(r'<div class="text">(.*?)</div>\s*(?:<|$)',
+                               seg, re.S)
+                if m4:
+                    desc = m4.group(1)
+        return {
+            "jobPostingInfo": {
+                "title": title,
+                "location": str(r.get("country") or ""),
+                "additionalLocations": [],
+                "jobDescription": desc,
+                "timeType": "",
+                "startDate": str(r.get("date") or ""),
+                "externalUrl": url,
+                "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor": str(r.get("country") or "")},
+            },
+            "hiringOrganization": {"name": "WuXi Biologics"},
+            "similarJobs": [],
+        }
+
+
+# ── antintl (S22: hrcareersweb.antgroup.com social/position API) ───────────
+class AntIntlAdapter:
+    """spec org = bgCode ('M7892' = Ant International). POST
+    hrcareersweb.antgroup.com/api/social/position/search — the US
+    region filter is a HARDCODED city-code list (SUNNYVALE,USANYNYQEE,
+    USADCDCWAS; country codes alone return 0), pageSize caps at 49
+    (re_C.md §4). description+requirement are INLINE in rows."""
+
+    KIND = "antintl"
+    _US_REGIONS = "SUNNYVALE,USANYNYQEE,USADCDCWAS"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org or "M7892"
+        self.cfg = cfg
+
+    def _search(self, page: int) -> dict:
+        import urllib.request
+        body = json.dumps({
+            "language": "en", "channel": "group_official_site",
+            "categories": "", "key": "",
+            "regions": self._US_REGIONS, "subCategories": "",
+            "pageIndex": page, "pageSize": 49,
+            "bgCode": self.org}).encode()
+        req = urllib.request.Request(
+            "https://hrcareersweb.antgroup.com/api/social/position/search",
+            data=body, method="POST", headers={
+                "Content-Type": "application/json",
+                "Origin": "https://www.ant-intl.com",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X "
+                              "10_15_7) AppleWebKit/537.36"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read().decode("utf-8", "replace") or "{}")
+
+    def _rows(self) -> list:
+        key = f"antintl:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        out = []
+        total = None
+        page = 1
+        while True:
+            d = self._search(page)
+            if not d.get("success"):
+                raise RuntimeError(
+                    f"antintl:{self.org}: position/search success=false "
+                    f"({d.get('errorCode')}) — refusing")
+            rows = d.get("content") or []
+            total = int(d.get("totalCount") or 0)
+            out.extend(rows)
+            if not rows or len(out) >= total or page > 20:
+                break
+            page += 1
+        _CACHE[key] = (time.monotonic(), out)
+        return out
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        data = self._rows()
+        for j in data:
+            rid = str(j.get("id") or "")
+            if not rid:
+                continue
+            locs = ", ".join(str(x) for x in (j.get("workLocations")
+                                              or []))
+            label, iso = _posted_label(str(j.get("publishTime") or ""))
+            rows[rid] = {
+                "reqId": rid,
+                "title": str(j.get("name") or ""),
+                "company": "Ant International",
+                "url": (f"https://talent.antgroup.com/off-campus-position"
+                        f"?positionId={rid}&from=intl"),
+                "externalPath": f"/{rid}",
+                "locationsText": locs,
+                "postedOn": label,
+                "postedOnIso": iso,
+                "timeType": "",
+                "bulletFields": [rid],
+                "ats": "antintl",
+            }
+        meta = {"rows": len(rows), "total": len(data), "complete": True,
+                "pages": 1, "client_filtered": 0,
+                "client_filtered_country": 0, "client_filtered_time": 0}
+        print(f"[{progress_label}] antintl:{self.org}: {len(rows)} US "
+              f"rows (regions filter server-side)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        j = next((x for x in self._rows() if str(x.get("id")) == rid),
+                 None)
+        if j is None:
+            return None
+        body = "\n\n".join(x for x in (
+            str(j.get("description") or ""),
+            str(j.get("requirement") or "")) if x)
+        locs = ", ".join(str(x) for x in (j.get("workLocations") or []))
+        return {
+            "jobPostingInfo": {
+                "title": str(j.get("name") or ""),
+                "location": locs,
+                "additionalLocations": [],
+                "jobDescription": body,
+                "timeType": "",
+                "startDate": str(j.get("publishTime") or ""),
+                "externalUrl": (f"https://talent.antgroup.com/"
+                                f"off-campus-position?positionId={rid}"
+                                f"&from=intl"),
+                "jobReqId": str(j.get("code") or rid),
+                "postedOn": "",
+                "country": {"descriptor": self._US},
+            },
+            "hiringOrganization": {"name": "Ant International"},
+            "similarJobs": [],
+        }
+
+
+# ── sanity (S22: public Content-Lake GROQ over the site's dataset) ─────────
+class SanityAdapter:
+    """spec org = '<projectId>/<dataset>|<slug>|<language>' (NIU:
+    cd9iwvgl/production|Jobs|en-us). One GROQ fetch returns the whole
+    Jobs page doc; jobs = pageBuilder textArea sections (h4 title,
+    first normal block = region, rest = description, ctas[0] = PDF
+    link — re_D.md §2). No reqIds exist — the PDF sha1 in the cta url
+    is the stable row key."""
+
+    KIND = "sanity"
+
+    def __init__(self, org: str, cfg: Config):
+        parts = org.split("|")
+        pid_ds = parts[0].split("/")
+        self.project = pid_ds[0]
+        self.dataset = pid_ds[1] if len(pid_ds) > 1 else "production"
+        self.slug = parts[1] if len(parts) > 1 else "Jobs"
+        self.language = parts[2] if len(parts) > 2 else "en-us"
+        self.cfg = cfg
+
+    def _groq(self) -> Optional[dict]:
+        key = f"sanity:{self.project}:{self.dataset}:{self.slug}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        q = (f'*[_type=="page" && slug.current=="{self.slug}" && '
+             f'language=="{self.language}"][0]'
+             f'{{pageBuilder, _updatedAt}}')
+        import urllib.parse
+        url = (f"https://{self.project}.api.sanity.io/v2024-07-15/data/"
+               f"query/{self.dataset}?query="
+               f"{urllib.parse.quote(q)}")
+        d = fetch_json(url, cfg=self.cfg)
+        result = ((d or {}).get("result") if isinstance(d, dict)
+                  else None)
+        if result is None:
+            raise RuntimeError(
+                f"sanity:{self.project}: query returned no result doc — "
+                f"dataset/slug/language wrong or engine changed; "
+                f"refusing")
+        _CACHE[key] = (time.monotonic(), result)
+        return result
+
+    @staticmethod
+    def _blocks_text(blocks: list) -> str:
+        out = []
+        for b in blocks or []:
+            if not isinstance(b, dict):
+                continue
+            text = "".join(str(c.get("text") or "")
+                           for c in b.get("children") or []
+                           if isinstance(c, dict))
+            if text:
+                out.append(text)
+        return "\n".join(out)
+
+    def _sections(self) -> list:
+        doc = self._groq() or {}
+        out = []
+        region = ""
+        for section in doc.get("pageBuilder") or []:
+            if not isinstance(section, dict):
+                continue
+            # NIU shape (re_D.md §2): the SECTION ITSELF is _type
+            # 'textArea' with text[]/ctas at the section level (NOT
+            # nested under a .textArea key). Region headers are the
+            # textArea sections whose blocks carry an h2 but no h4.
+            _type = str(section.get("_type") or "")
+            ta = section if _type == "textArea" else (section.get(
+                "textArea") or {})
+            if not ta or not ta.get("text"):
+                continue
+            blocks = [b for b in (ta.get("text") or [])
+                      if isinstance(b, dict)]
+            h2s = [self._blocks_text([b]) for b in blocks
+                   if b.get("style") == "h2"]
+            h4s = [self._blocks_text([b]) for b in blocks
+                   if b.get("style") == "h4"]
+            normals = [self._blocks_text([b]) for b in blocks
+                       if b.get("style") in (None, "normal")]
+            if h2s and not h4s:
+                region = h2s[0]
+                continue
+            if not h4s:
+                continue
+            title = h4s[0]
+            subtitle = normals[0] if normals else ""
+            desc = "\n".join(normals[1:])
+            url = ""
+            ctas = (ta.get("ctas") or [])
+            if isinstance(ctas, dict):
+                ctas = ctas.get("ctas") or []
+            if ctas and isinstance(ctas[0], dict):
+                url = str((((ctas[0].get("link") or {})
+                            .get("url"))) or "")
+            out.append({"title": title, "subtitle": subtitle,
+                        "desc": desc, "url": url, "region": region,
+                        "updatedAt": str(doc.get("_updatedAt") or "")})
+        return out
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        sections = self._sections()
+        for s in sections:
+            # US rows: the section's region header or the row subtitle
+            # carries the country (NIU: h2 'United States:' headers)
+            blob = (s["region"] + " " + s["subtitle"]).lower()
+            is_us = ("united states" in blob or "usa" in blob
+                     or bool(re.search(r"\bUS\b", s["region"])))
+            if country and not is_us:
+                continue
+            m = re.search(r"/([0-9a-f]{40})\.(?:pdf|PDF)", s["url"])
+            rid = m.group(1) if m else (
+                re.sub(r"\W+", "-", s["title"]).strip("-").lower())
+            if rid in rows:
+                continue
+            rows[rid] = {
+                "reqId": rid,
+                "title": s["title"],
+                "company": "",
+                "url": s["url"],
+                "externalPath": f"/{rid}",
+                "locationsText": s["region"],
+                "postedOn": "",
+                "timeType": "",
+                "bulletFields": [rid],
+                "ats": "sanity",
+                "region": s["region"],
+            }
+        meta = {"rows": len(rows), "total": len(sections),
+                "complete": True, "pages": 1,
+                "client_filtered": 0, "client_filtered_country": 0,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] sanity:{self.project}/{self.dataset}:"
+              f" {len(rows)} rows of {len(sections)} sections")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        s = None
+        for cand in self._sections():
+            m = re.search(r"/([0-9a-f]{40})\.(?:pdf|PDF)", cand["url"])
+            key = m.group(1) if m else (
+                re.sub(r"\W+", "-", cand["title"]).strip("-").lower())
+            if key == rid:
+                s = cand
+                break
+        if s is None:
+            return None
+        return {
+            "jobPostingInfo": {
+                "title": s["title"],
+                "location": s["region"],
+                "additionalLocations": [],
+                "jobDescription": (s["subtitle"] + "\n" + s["desc"]).strip(),
+                "timeType": "",
+                "startDate": s["updatedAt"],
+                "externalUrl": s["url"],
+                "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor": "United States"},
+            },
+            "hiringOrganization": {"name": ""},
+            "similarJobs": [],
+        }
+
+
+# ── wpjobboard (S22: WordPress Simple Job Board plugin REST) ───────────────
+class WPJobBoardAdapter:
+    """spec org = host (www.ascentage.com). /wp-json/wp/v2/jobpost
+    (public CPT) + jobpost_location taxonomy; US = the 'United States'
+    term (ascentage term id 38 — resolved by NAME at runtime, not the
+    id). content.rendered = full JD inline (re_D.md §4)."""
+
+    KIND = "wpjobboard"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        self.org = org
+        self.cfg = cfg
+
+    def _taxonomy(self, tax: str) -> dict:
+        key = f"wpjobboard:{self.org}:{tax}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        d = fetch_json(
+            f"https://{self.org}/wp-json/wp/v2/{tax}?per_page=100",
+            cfg=self.cfg)
+        mapping = {}
+        for t in d or []:
+            mapping[int(t.get("id") or 0)] = str(t.get("name") or "")
+        _CACHE[key] = (time.monotonic(), mapping)
+        return mapping
+
+    def _posts(self) -> list:
+        key = f"wpjobboard:{self.org}:posts"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        d = fetch_json(
+            f"https://{self.org}/wp-json/wp/v2/jobpost?per_page=100",
+            cfg=self.cfg)
+        if not isinstance(d, list):
+            raise RuntimeError(
+                f"wpjobboard:{self.org}: jobpost CPT not exposed — "
+                f"engine changed; refusing")
+        _CACHE[key] = (time.monotonic(), d)
+        return d
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        locs = self._taxonomy("jobpost_location")
+        cats = self._taxonomy("jobpost_category")
+        posts = self._posts()
+        rows: dict[str, dict] = {}
+        dropped_country = 0
+        for p in posts:
+            rid = str(p.get("id") or "")
+            if not rid:
+                continue
+            loc_names = [locs.get(int(t), "") for t in
+                         p.get("jobpost_location") or []]
+            cat_names = [cats.get(int(t), "") for t in
+                         p.get("jobpost_category") or []]
+            c = "; ".join(x for x in loc_names if x)
+            is_us = any("united states" in x.lower()
+                        for x in loc_names if x)
+            if country and not is_us:
+                dropped_country += 1
+                continue
+            title = re.sub(r"<[^>]+>", "",
+                           str((p.get("title") or {}).get("rendered")
+                               or "")).strip()
+            label, iso = _posted_label(str(p.get("date") or ""))
+            rows[rid] = {
+                "reqId": rid,
+                "title": title,
+                "company": "",
+                "url": str(p.get("link") or ""),
+                "externalPath": f"/{rid}",
+                "locationsText": c,
+                "postedOn": label,
+                "postedOnIso": iso,
+                "timeType": "",
+                "bulletFields": [rid],
+                "ats": "wpjobboard",
+                "department": "; ".join(x for x in cat_names if x),
+            }
+        meta = {"rows": len(rows), "total": len(posts), "complete": True,
+                "pages": 1, "client_filtered": dropped_country,
+                "client_filtered_country": dropped_country,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] wpjobboard:{self.org}: {len(rows)} "
+              f"rows of {len(posts)} listed ({dropped_country} "
+              f"non-{country or '-'} dropped client-side)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("/")[-1]
+        p = next((x for x in self._posts()
+                  if str(x.get("id")) == rid), None)
+        if p is None:
+            return None
+        locs = self._taxonomy("jobpost_location")
+        loc_names = [locs.get(int(t), "") for t in
+                     p.get("jobpost_location") or []]
+        c = "; ".join(x for x in loc_names if x)
+        is_us = any("united states" in x.lower()
+                    for x in loc_names if x)
+        return {
+            "jobPostingInfo": {
+                "title": re.sub(r"<[^>]+>", "",
+                                str((p.get("title") or {})
+                                    .get("rendered") or "")).strip(),
+                "location": c,
+                "additionalLocations": [],
+                "jobDescription": str((p.get("content") or {})
+                                      .get("rendered") or ""),
+                "timeType": "",
+                "startDate": str(p.get("date") or ""),
+                "externalUrl": str(p.get("link") or ""),
+                "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor": self._US if is_us else None},
+            },
+            "hiringOrganization": {"name": ""},
+            "similarJobs": [],
+        }
+
+
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "lever": LeverAdapter, "workable": WorkableAdapter,
              "feishuhire": FeishuHireAdapter,
@@ -4024,4 +6103,14 @@ _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "tripcom": TripComAdapter, "xiaohongshu": XiaohongshuAdapter,
              "paylocity": PaylocityAdapter, "adp": ADPWorkforceNowAdapter,
              "jazzhr": JazzHRAdapter, "teamtailor": TeamtailorAdapter,
-             "radancy": RadancyAdapter, "rippling": RipplingAdapter}
+             "radancy": RadancyAdapter, "rippling": RipplingAdapter,
+             # S22 wave-3 (13 new classes; contracts in
+             # ingest/data/ats_seed/s22_wave3/re_*.md)
+             "breezy": BreezyAdapter, "jobvite": JobviteAdapter,
+             "oraclehcm": OracleHCMAdapter, "bamboohr": BambooHRAdapter,
+             "j2w": J2WAdapter, "ultipro": UltiProAdapter,
+             "talentadore": TalentAdoreAdapter,
+             "workstream": WorkstreamAdapter,
+             "ttiproxy": TTIDrupalAdapter, "sanity": SanityAdapter,
+             "wpjobboard": WPJobBoardAdapter, "wuxibio": WuXiBioAdapter,
+             "antintl": AntIntlAdapter}

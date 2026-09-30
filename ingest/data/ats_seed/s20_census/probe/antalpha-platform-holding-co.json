@@ -154,5 +154,11 @@
   "platform": "moka",
   "title": "Join Us | Antalpha ai"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: empty_board — authentic Antalpha (NASDAQ:ANTA, Bitmain-linked crypto finance, ANTALPHA TECHNOLOGIES PTE. LTD., SG/HK/USA/CH offices); apply.workable.com/antalpha shows 0 current openings (llms.txt: '0 current openings'); own antalpha.com/join-us links Moka boards (app.mokahr.com/social-recruitment/antalpha/146730) listing 5 roles — Senior Onboarding Specialist (Hong Kong), 日本增长负责人 (Japan), 土建工程师 (Indonesia), 弱电/机电工程师 (CN) — no US rows.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

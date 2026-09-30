@@ -2,13 +2,13 @@
  "brand": "GAC Mitsubishi",
  "tier": "lca",
  "lca": "GAC SOLUTIONS INC",
- "ts": "2026-09-29T04:28:01.486Z",
+ "ts": "2026-09-30T06:02:20.290Z",
  "candidates": [
   {
    "url": "https://career.gac.com/",
    "title": "Careers at GAC | Global Careers",
    "status": 200,
-   "bytes": 996712,
+   "bytes": 1001357,
    "markers": [
     "recruitee"
    ],
@@ -21,14 +21,14 @@
   {
    "url": "https://career.gac-international.com/",
    "title": "",
-   "status": 0,
-   "bytes": 0,
+   "status": 200,
+   "bytes": 11400,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "As the main undertaker of GAC GROUP's overseas business, GAC INTERNATIONAL CO., LTD., together with its branches and affiliates across the globe，has established",
-   "backend": "direct"
+   "backend": "zenrows"
   },
   {
    "url": "https://gacrnd.zhiye.com/jobs",

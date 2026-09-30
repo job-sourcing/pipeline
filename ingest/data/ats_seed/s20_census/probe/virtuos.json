@@ -12,5 +12,17 @@
   "title": "Careers | Job Opportunities | Seek rewarding careers – Careers Virtuos Digital Ltd.",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Guessed URL virtuos.com/careers is a HOMONYM (Virtuos Digital Ltd, India CX/Salesforce consulting). Authentic board found via virtuosgames.com → Oracle Recruiting Cloud CX_1: 91 jobs, 6 requisitions with US locations (LA/San Francisco, facet TotalCount 7). Virtuos = 2004 Shanghai-founded game co-dev giant (HQ Singapore, LCA Virtuos North America LLC).",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ },
+ "wire": {
+  "platform": "oracle_hcm",
+  "board": "https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
+  "us_rows": 6,
+  "sample": "Key Account Manager — Los Angeles/San Francisco, US; Business Development Manager (Westcoast) — Los Angeles/San Francisco, US; Sales Development Representative — Los Angeles/San Francisco, US"
+ }
 }

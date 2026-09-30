@@ -152,5 +152,17 @@
   "platform": "rippling",
   "title": "Open Positions"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "AUTHENTIC: agora.io (Shanghai-origin video SDK, US HQ Santa Clara) embeds rippling board; 10 jobs, 2 US-located (Sales, US dept; Product Marketing — Santa Clara, CA). Note: file LCA 'AGORA DATA INC.' is a different TX data co.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ },
+ "wire": {
+  "platform": "rippling",
+  "board": "https://ats.rippling.com/agora/jobs",
+  "us_rows": 2,
+  "sample": "Product Marketing Manager — Santa Clara, CA; Account Executive (Sales, US) — Santa Clara, CA"
+ }
 }

@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: empty_board — authentic 晶泰科技 XtalPi (Shenzhen AI drug discovery); dict feishu portal xtalpi.jobs.feishu.cn = 0 jobs (API search count=0); CN moka board app.mokahr.com/apply/jingtai/2144 = ~124 roles all Shenzhen/Shanghai (checked: 智能实验室 13 & 职能 23 categories, incl 'Senior Manager, Global Communications' = Shenzhen); en.xtalpi.com/careers Cloudflare-blocked; US roles (Boston/Cambridge MA, LCA XTALPI INC) visible only on LinkedIn/Wellfound aggregators.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

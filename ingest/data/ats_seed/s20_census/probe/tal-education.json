@@ -2,10 +2,166 @@
  "brand": "TAL Education",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:10:37.026Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:37:58.443Z",
+ "candidates": [
+  {
+   "url": "https://careers.smartrecruiters.com/TAL",
+   "title": "Careers at TAL",
+   "status": 200,
+   "bytes": 126062,
+   "markers": [
+    "smartrecruiters"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "smartrecruiters:TAL",
+   "score": 17,
+   "snippet": "Explore career opportunities at TAL, a leading company offering a dynamic work environment and growth potential. Join us to make a difference.",
+   "backend": "direct",
+   "sr_err": 404
+  },
+  {
+   "url": "https://apply.workable.com/tal-education-group-1/",
+   "title": "",
+   "status": 200,
+   "bytes": 2126,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "workable:tal-education-group-1",
+   "score": 15,
+   "snippet": "Careers at TAL Education Group Tomorrow Advancing Life (NYSE: TAL) is a leading education and technology enterprise in China, which holds close the core develop",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://career360.snhu.edu/companies/think-academy-us-tal-education-group/jobs/",
+   "title": "Think Academy US &#8211; TAL Education Group &#8211; Jobs &#8211; Career 360: Virtual Career Center SNHU",
+   "status": 200,
+   "bytes": 233591,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Recruiting Intern Location: San Jose, CA Job Type: Full-Time (40 Hours Per Week) Pay Range: $20 - $22 About Think Academy: Think Academy US (www.TheThinkAcademy",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "TAL Education Group Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Tal-Education-Group",
+   "s": "Find out what works well at TAL Education Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Tal Education Group Jobs in United States (107 Open Roles ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tal-education-group-jobs",
+   "s": "Today's top 107 Tal Education Group jobs in United States. Leverage your professional network, and get hired. New Tal Education Group jobs added daily."
+  },
+  {
+   "t": "TAL Education Group - Current Openings",
+   "u": "https://apply.workable.com/tal-education-group-1/",
+   "s": "Careers at TAL Education Group Tomorrow Advancing Life (NYSE: TAL) is a leading education and technology enterprise in China, which holds close the core develop"
+  },
+  {
+   "t": "9,000+ Tal Education jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tal-education-jobs",
+   "s": "Today's top 9,000+ Tal Education jobs in United States. Leverage your professional network, and get hired. New Tal Education jobs added daily."
+  },
+  {
+   "t": "TAL Education Group - To Empower Life-long Growth with Love and ...",
+   "u": "https://www.tal.com/en-us",
+   "s": "Since its inception, the foundation has leveraged corporate resources to focus on youth science education, concentrate on the development of education technolog"
+  },
+  {
+   "t": "Careers at TAL",
+   "u": "https://careers.smartrecruiters.com/TAL",
+   "s": "Explore career opportunities at TAL, a leading company offering a dynamic work environment and growth potential. Join us to make a difference."
+  },
+  {
+   "t": "TAL Education Group Jobs (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://my.jobstreet.com/TAL-Education-Group-jobs",
+   "s": "Find your ideal job at Jobstreet with 9 TAL Education Group jobs found in Malaysia. View all our TAL Education Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Think Academy，TAL Education Group Careers and Employment",
+   "u": "https://www.indeed.com/cmp/Think-Academy-Tal-Education-Group",
+   "s": "Find out what works well at Think Academy，TAL Education Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and C"
+  },
+  {
+   "t": "Tal Education Group Jobs in United States (107 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tal-education-group-jobs",
+   "s": "Today's top 107 Tal Education Group jobs in United States. Leverage your professional network, and get hired. New Tal Education Group jobs added daily."
+  },
+  {
+   "t": "TAL Education Group Jobs (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://my.jobstreet.com/TAL-Education-Group-jobs",
+   "s": "Find your ideal job at Jobstreet with 9 TAL Education Group jobs found in Malaysia. View all our TAL Education Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "9,000+ Tal Education jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tal-education-jobs",
+   "s": "Today's top 9,000+ Tal Education jobs in United States. Leverage your professional network, and get hired. New Tal Education jobs added daily."
+  },
+  {
+   "t": "TAL Education Group - Current Openings",
+   "u": "https://apply.workable.com/tal-education-group-1/",
+   "s": "TAL continuously makes efforts to integrate technology with education, promotes innovation, and leads development within the Industry. TAL provides quality prod"
+  },
+  {
+   "t": "TAL Education Group Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Tal-Education-Group",
+   "s": "Find out what works well at TAL Education Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "$65k-$116k Tal Education Group Jobs (NOW HIRING) Sep 2026",
+   "u": "https://www.ziprecruiter.com/Jobs/Tal-Education-Group?lk=DBsmO9AvHWr-t7G5RFBNQw",
+   "s": "Browse 4 TAL EDUCATION GROUP jobs ($65k-$116k) from companies hiring now. New openings posted daily. Apply early, get seen first & 1-click apply!"
+  },
+  {
+   "t": "Think Academy，TAL Education Group Careers and Employment",
+   "u": "https://www.indeed.com/cmp/Think-Academy-Tal-Education-Group",
+   "s": "Find out what works well at Think Academy，TAL Education Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and C"
+  },
+  {
+   "t": "Think Academy US - TAL Education Group - Jobs - Career 360: Virtual ...",
+   "u": "https://career360.snhu.edu/companies/think-academy-us-tal-education-group/jobs/",
+   "s": "Recruiting Intern Location: San Jose, CA Job Type: Full-Time (40 Hours Per Week) Pay Range: $20 - $22 About Think Academy: Think Academy US (www.TheThinkAcademy"
+  },
+  {
+   "t": "TAL Education Group - Current Openings",
+   "u": "https://apply.workable.com/tal-education-group-1/",
+   "s": "Careers at TAL Education Group Tomorrow Advancing Life (NYSE: TAL) is a leading education and technology enterprise in China, which holds close the core develop"
+  },
+  {
+   "t": "Tal Education Group Jobs in United States (107 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tal-education-group-jobs",
+   "s": "Today's top 107 Tal Education Group jobs in United States. Leverage your professional network, and get hired. New Tal Education Group jobs added daily."
+  },
+  {
+   "t": "20,000+ Tal Education Group jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tal-education-group-jobs-worldwide",
+   "s": "Today's top 20,000+ Tal Education Group jobs in Worldwide. Leverage your professional network, and get hired. New Tal Education Group jobs added daily."
+  },
+  {
+   "t": "TAL Education Group Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Tal-Education-Group",
+   "s": "Find out what works well at TAL Education Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.smartrecruiters.com/TAL",
+  "title": "Careers at TAL",
+  "status": 200,
+  "bytes": 126062,
+  "markers": [
+   "smartrecruiters"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "smartrecruiters:TAL",
+  "score": 17,
+  "snippet": "Explore career opportunities at TAL, a leading company offering a dynamic work environment and growth potential. Join us to make a difference.",
+  "backend": "direct",
+  "sr_err": 404
+ },
+ "verdict": "ats_surface"
 }

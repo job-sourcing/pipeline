@@ -12,5 +12,11 @@
   "title": "Careers | PING",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "ping.com/en-us/careers is PING (Karsten Manufacturing, golf-equipment maker, US) — 'help drive innovation in golf' — not Ping An (中国平安); no Ping An career surface among candidates.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

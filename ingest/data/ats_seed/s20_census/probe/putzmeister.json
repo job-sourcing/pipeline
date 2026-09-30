@@ -147,5 +147,11 @@
   "platform": "custom",
   "title": "Job Publications"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: no_us_rows — recruiting.putzmeister.com is an authentic d.vinci portal (Sany-owned Putzmeister) listing 39 jobs (jobPublication/list.json), all German-language (Aichtal HQ + apprenticeships) — 0 US rows despite Putzmeister America (Sturtevant WI).",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

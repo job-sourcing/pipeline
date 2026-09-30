@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — Jobs at Space Programs; unrelated"
+ "manual_adjudication": "REFUTED — Jobs at Space Programs; unrelated",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "dict hit greenhouse:space = 'Jobs at Space Programs' (unrelated org, 5 jobs) — not Space Epoch (时空道宇, Geely's satellite unit); matches file's manual_adjudication REFUTED.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

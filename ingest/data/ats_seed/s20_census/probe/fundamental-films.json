@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — SF/Barcelona forward-deployed AI company (Palantir-pattern); not the HK film co"
+ "manual_adjudication": "REFUTED — SF/Barcelona forward-deployed AI company (Palantir-pattern); not the HK film co",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "surface = ashby:fundamental = Fundamental, US AI research lab (SF/Barcelona/Houston; 19 jobs e.g. 'Data Scientist (Forward Deployed) — US (remote)', 'Forward Deployed Data Scientist — Houston TX', LCA FUNDAMENTAL AI); census brand Fundamental Films = Shanghai film production/distributor (EuropaCorp 27.9% stake).",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

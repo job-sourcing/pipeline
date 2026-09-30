@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "js_rendered_inconclusive: census surface = feishu hire 'ming' tenant (ming.jobs.feishu.cn) — JS app, tenant name absent from HTML, jobs API unreachable; brand's own surfaces are China-only (mywind.zhiye.com campus 700+ HC, boss直聘 125 roles); mingyang.com/careers behind Cloudflare JS challenge (failed 2 fetches); no US rows found anywhere.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

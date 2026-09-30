@@ -2,31 +2,31 @@
  "brand": "Simcere Pharmaceutical",
  "tier": "lca",
  "lca": "SIMCERE OF AMERICA INC.",
- "ts": "2026-09-29T04:48:04.997Z",
+ "ts": "2026-09-30T06:12:13.489Z",
  "candidates": [
   {
    "url": "https://www.whatjobs.com/company/simcere-pharmaceutical-group/profile",
    "title": "",
    "status": 200,
-   "bytes": 11839,
+   "bytes": 11974,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Looking for jobs at Simcere Pharmaceutical Group? Browse current openings, salary insights, and company details. Apply today and explore careers with Simcere Ph",
-   "backend": "firecrawl"
+   "backend": "zenrows"
   },
   {
    "url": "https://www.whatjobs.com/company/simcere-pharmaceutical-group/jobs",
    "title": "",
    "status": 200,
-   "bytes": 26695,
+   "bytes": 19168,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Simcere Pharmaceutical Group is an innovation-driven pharmaceutical company committed to \"For patience, for life.\" Our core therapeutic areas include oncology, ",
-   "backend": "firecrawl"
+   "backend": "zenrows"
   },
   {
    "url": "https://en.simcere.com/jrwm/jrwm.aspx",
@@ -63,19 +63,19 @@
    "s": "Search job openings at Simcere Pharmaceutical Group. 3 Simcere Pharmaceutical Group jobs including salaries, ratings, and reviews, posted by Simcere Pharmaceuti"
   },
   {
+   "t": "Simcere Pharmaceutical Group - LinkedIn",
+   "u": "https://www.linkedin.com/company/simcere-pharmaceutical-group",
+   "s": "Simcere Pharmaceutical Group Limited（2096.HK） is a pharmaceutical company driven by innovation and focusing on four therapeutic areas including Neuroscience, On"
+  },
+  {
    "t": "Simcere",
    "u": "https://en.simcere.com/",
    "s": "Simcere Zaiming Enters Exclusive License Agreement with Roche for SIM0660 Global Development September 1 2026 - Simcere Zaiming，a subsidiary of Simcere Pharmace"
   },
   {
-   "t": "Simcere Pharmaceutical Group Limited",
-   "u": "https://www.simcere.com/en/",
-   "s": "Simcere Pharmaceutical Group Limited 5,000+ Staff 14.2% 2017-2019 Net Profit CAGR 40+ Current Brands of Products 50+ Innovative Product Candidates 1,900+ Coveri"
-  },
-  {
-   "t": "Simcere Pharmaceutical Group Us jobs in Worldwide - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/simcere-pharmaceutical-group-us-jobs-worldwide",
-   "s": "Today's top Simcere Pharmaceutical Group Us jobs in Worldwide. Leverage your professional network, and get hired. New Simcere Pharmaceutical Group Us jobs added"
+   "t": "Urgent! Simcere pharmaceutical group jobs - Jooble",
+   "u": "https://jooble.org/jobs-simcere-pharmaceutical-group",
+   "s": "Active 248215 vacancies • Simcere pharmaceutical group jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Simcere ph"
   },
   {
    "t": "Simcere Pharmaceutical Group Careers: Jobs, Salaries & Hiring Info ...",
@@ -110,7 +110,7 @@
   {
    "t": "Urgent! Simcere pharmaceutical group jobs - Jooble",
    "u": "https://jooble.org/jobs-simcere-pharmaceutical-group",
-   "s": "Active 591802 vacancies • Simcere pharmaceutical group jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Simcere ph"
+   "s": "Active 248215 vacancies • Simcere pharmaceutical group jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Simcere ph"
   },
   {
    "t": "Simcere",
@@ -138,9 +138,9 @@
    "s": "Simcere Pharmaceutical Group Jobs FAQs Is Simcere Pharmaceutical Group currently hiring? Yes, Simcere Pharmaceutical Group is currently hiring for 3 open positi"
   },
   {
-   "t": "Simcere Pharmaceutical Group hiring Scientist, Neuroscience discovery ...",
-   "u": "https://www.linkedin.com/jobs/view/4468485248",
-   "s": "Posted 7:05:06 PM. About Simcere:Simcere Pharmaceutical Group is an innovation-driven pharmaceutical company committed…See this and similar jobs on LinkedIn."
+   "t": "9,000+Simcere Pharmaceutical Group Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/simcere-pharmaceutical-group-jobs?f_AL=true",
+   "s": "Today's top 9,000+ Simcere Pharmaceutical Group jobs in United States. Leverage your professional network, and get hired. New Simcere Pharmaceutical Group jobs "
   }
  ],
  "dict_hits": [],

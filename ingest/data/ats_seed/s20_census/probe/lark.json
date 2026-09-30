@@ -26,5 +26,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Lark is ByteDance's collaboration suite (Feishu) — ByteDance is already wired; NB: dict ashby:lark board is actually Lark Health (US digital health, homonym)",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

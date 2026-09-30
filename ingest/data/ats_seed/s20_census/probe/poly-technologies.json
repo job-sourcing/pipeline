@@ -2,10 +2,153 @@
  "brand": "Poly Technologies",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:50:00.882Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:34:05.731Z",
+ "candidates": [
+  {
+   "url": "https://polycareers.com/",
+   "title": "PolyCareers | Find Tech, Engineering &amp; Corporate Jobs",
+   "status": 200,
+   "bytes": 121388,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Search live job openings across top employers — engineering, tech, quality, and corporate roles. Create a free profile and apply in minutes with PolyCareers.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://polycareers.com/job-search/search",
+   "title": "Job Search | Browse Open Positions on PolyCareers",
+   "status": 200,
+   "bytes": 112828,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Poly Tech Talent is proud to be partnering with a leading global pharmaceutical organization to build a brand-new Workplace Technology & Collaboration Services ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://dev.polycareers.com/job-search",
+   "title": "Job Search | Browse Open Positions on PolyCareers",
+   "status": 200,
+   "bytes": 70046,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We are in search of a Junior JAVA Developer to join our Information Technology (IT) team. You will contribute to the development of Java applications, participa",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "PolyCareers | Find Tech, Engineering & Corporate Jobs",
+   "u": "https://polycareers.com/",
+   "s": "Search live job openings across top employers — engineering, tech, quality, and corporate roles. Create a free profile and apply in minutes with PolyCareers."
+  },
+  {
+   "t": "Job Search | Browse Open Positions on PolyCareers",
+   "u": "https://polycareers.com/job-search/search",
+   "s": "Poly Tech Talent is proud to be partnering with a leading global pharmaceutical organization to build a brand-new Workplace Technology & Collaboration Services "
+  },
+  {
+   "t": "26 Poly Tech jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/poly-tech-jobs",
+   "s": "Today's top 26 Poly Tech jobs in United States. Leverage your professional network, and get hired. New Poly Tech jobs added daily."
+  },
+  {
+   "t": "Full Time Poly Tech Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Full-Time-Poly-Tech-jobs.html",
+   "s": "Browse 169 Full Time Poly Tech jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Poly Tech Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Poly-Tech",
+   "s": "Find out what works well at Poly Tech from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "Global Talent Solutions for Hiring Remote Teams | Poly Tech Talent",
+   "u": "https://polytechtalent.com/",
+   "s": "Scale faster with global talent solutions. Hire remote talent and overseas tech professionals through our end-to-end global recruitment services."
+  },
+  {
+   "t": "PolyCareers",
+   "u": "https://dev.polycareers.com/job-search",
+   "s": "We are in search of a Junior JAVA Developer to join our Information Technology (IT) team. You will contribute to the development of Java applications, participa"
+  },
+  {
+   "t": "All Current Job Opportunities - jobs.polyvantis.com",
+   "u": "https://jobs.polyvantis.com/go/All-Current-Job-Opportunities/9398855/",
+   "s": "Select how often (in days) to receive an alert: Create Alert"
+  },
+  {
+   "t": "PolyCareers | Find Tech, Engineering & Corporate Jobs",
+   "u": "https://polycareers.com/",
+   "s": "Search live job openings across top employers — engineering, tech, quality, and corporate roles. Create a free profile and apply in minutes with PolyCareers."
+  },
+  {
+   "t": "Now Hiring: 4,000 Poly Technology Jobs | Indeed",
+   "u": "https://www.indeed.com/q-poly-technology-jobs.html",
+   "s": "Browse 4,050 Poly Technology jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Job Search | Browse Open Positions on PolyCareers",
+   "u": "https://polycareers.com/job-search/search",
+   "s": "Poly Tech Talent is proud to be partnering with a leading global pharmaceutical organization to build a brand-new Workplace Technology & Collaboration Services "
+  },
+  {
+   "t": "Work with us | PolyTechnologies",
+   "u": "https://poly-technologies.com/work-with-us",
+   "s": "PolyTechnologies LLC Sharjah Media City, Al Messaned, Al Bataeh, Sharjah, United Arab Emirates. +971585150234"
+  },
+  {
+   "t": "Poly Technologist Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Poly-Technologist-jobs.html",
+   "s": "100 Poly Technologist jobs. Apply to Systems Administrator, Technician, Database Engineer and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Open positions - Polytech",
+   "u": "https://www.polytech.com/career/open-positions/",
+   "s": "See our job openings and join our mission to make wind power the preferred source of energy."
+  },
+  {
+   "t": "Global Talent Solutions for Hiring Remote Teams | Poly Tech Talent",
+   "u": "https://polytechtalent.com/",
+   "s": "Scale faster with global talent solutions. Hire remote talent and overseas tech professionals through our end-to-end global recruitment services."
+  },
+  {
+   "t": "Job Search | PolyCareers",
+   "u": "https://qa.polycareers.com/job-search/search",
+   "s": "Job location Date posted Find jobs Clear filter Most searched jobs: Poly Tech Talent SQA Engineer SQA Engineer INb Full Stack Development Full Stack Full Stack "
+  },
+  {
+   "t": "PolyCareers | Find Tech, Engineering & Corporate Jobs",
+   "u": "https://polycareers.com/",
+   "s": "Search live job openings across top employers — engineering, tech, quality, and corporate roles. Create a free profile and apply in minutes with PolyCareers."
+  },
+  {
+   "t": "Now Hiring: 4,000 Poly Technology Jobs | Indeed",
+   "u": "https://www.indeed.com/q-poly-technology-jobs.html",
+   "s": "Browse 4,050 Poly Technology jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Job Search | Browse Open Positions on PolyCareers",
+   "u": "https://polycareers.com/job-search/search",
+   "s": "Filter thousands of open roles by title, location, and category. New jobs added daily — find your next opportunity on PolyCareers today."
+  },
+  {
+   "t": "Poly Technologist Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Poly-Technologist-jobs.html",
+   "s": "100 Poly Technologist jobs. Apply to Systems Administrator, Technician, Database Engineer and more. Hiring now on Indeed.com."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://polycareers.com/",
+  "platform": "custom",
+  "title": "PolyCareers | Find Tech, Engineering &amp; Corporate Jobs"
+ },
+ "verdict": "custom_surface"
 }

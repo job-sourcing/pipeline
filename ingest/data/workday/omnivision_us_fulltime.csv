@@ -1,0 +1,2304 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+owqyzfwN,Analog CAD Engineer,OmniVision,,,,2026-02-04,238,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Position Overview:
+
+Support and enhance the Analog CAD design flow across the full custom IC design cycle, including schematic, layout, simulation, and physical verification using Cadence Virtuoso and Calibre tools.
+
+Responsibilities:
+
+• Support and optimize Analog CAD flows on the Cadence Virtuoso platform (Schematic, Layout, ADE)
+
+• Work with PDKs from multiple foundries to ensure correct setup and improve design efficiency
+
+• Develop and maintain scripts and automation to streamline analog design workflows
+
+• Provide support for Calibre verification flows, including DRC, LVS, and PEX rule decks
+
+• Collaborate with analog designers to troubleshoot tool, flow, and PDK-related issues
+
+Requirements:
+
+• BSEE and 2+ years of experience in Analog CAD development or support
+
+• Hands-on experience with Cadence Virtuoso or Synopsys Custom Compiler
+
+• Familiarity with Calibre rule decks and physical verification flows
+
+• Experience enhancing analog design efficiency through flow or automation improvements
+
+• Python, Perl, or other scripting experience is a strong plus
+
+• Experience with multiple PDKs preferred
+
+• Business-level English communication skills
+
+Annual base salary for this role in California, US is expected to be between $110,000 - $145,000. Actual pay will be determined by several factors such as relevant skills and experience, and the pay of employees in a similar role.
+
+EOE/Minorities/Females/Vet/Disability",1437,https://jobs.jobvite.com/ovt/job/owqyzfwN,,,,,,,no_match,,2026-09-30,,2026-09-30,,238,startDate,true,0,,,,,,2026-02-04,,false,,,,,,
+oLz6yfwI,Analog Design Engineer,OmniVision,,,,2025-12-18,286,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Design analog and mixed-signal circuits for CMOS image sensors, including:
+
+• Pixel arrays and architectures.
+
+• Column amplifiers.
+
+• Analog-to-digital converters (ADCs).
+
+• Bias generators and reference circuits.
+
+Circuit simulation and verification, including:
+
+• Run detailed SPICE simulations.
+
+• Perform corner analysis and Monte Carlo simulations.
+
+• Temperature and process variation analysis.
+
+• Noise analysis and optimization.
+
+Layout design and verification, including:
+
+• Create and optimize analog circuit layouts.
+
+• Ensure compliance with design rules.
+
+• Perform parasitic extraction and post-layout simulations.
+
+Technical documentation and collaboration, including:
+
+• Collaborate with digital design, system architecture, and test teams.
+
+• Participate in design reviews.
+
+• Support chip verification and validation.
+
+Performance optimization, including:
+
+• Improve sensor parameters like H-banding, noise, linearity, etc.
+
+• Address cross-talk and other interference issues.
+
+Requirement:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering, or a closely related field with a focus on mixed-signal circuit design.
+
+Must have skills in:
+
+• Digital MOS VLSI circuit design and layout; circuit simulation and synthesis.
+
+• MOSFET operation and models; Elementary amplifier configurations; biasing and references; frequency response; noise; feedback; operational amplifiers; frequency compensation; non-linearity and mismatch; passive and active filters.
+
+• System and transistor-level analysis and design of integrated circuits.
+
+• Schematic design, simulation, layout, post-layout verification of analog, mixed signal integrated circuits.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",1937,https://jobs.jobvite.com/ovt/job/oLz6yfwI,,https://www.linkedin.com/jobs/view/4344934601,2026-09-25,200,Over 200 applicants,281,matched,title,2026-09-30,2026-09-30T05:59:01,2026-09-30,,286,startDate,true,0,,,,,,2025-12-18,,true,,,,,,
+oT1yzfwL,Analog Design Engineer,OmniVision,,,,2026-02-03,239,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Conduct end-to-end design and development of advanced CMOS Image Sensor (CIS) technologies with a focus on transistor-level design, simulation, and verification of analog circuits using Cadence Virtuoso.
+•    Design analog building blocks such as Analog Static RAM (ASRAM), ensuring support for complex readout formats including Dual Conversion Gain (DCG), Correlated Double Sampling (CDS), Correlated Multiple Sampling (CMS), and 4c2p.
+•    Perform complete schematic design flow, closely collaborate with layout engineers on device matching, symmetry, shielding, and routing for optimal noise performance and area efficiency.
+•    Carry out comprehensive post-layout verification, including Parasitic Extraction (PEX), Design Rule Check (DRC), Layout vs. Schematic (LVS), and Physical Electrical Rule Check (PERC) using Calibre.
+•    Conduct system-level analog simulation and CIS signal chain verification to ensure correct signal propagation from pixel through the entire analog front-end to digital input interface.
+•    Execute extensive process, voltage and temperature (PVT) and Monte Carlo simulations to evaluate functional robustness, and performance margins.
+•    Perform IR drop analysis and power integrity verification to ensure reliable power delivery and layout feasibility.
+•    Utilize Analog FastSPICE (AFS), Empyrean ALPS, and NanoSpice for block-level and full-chain validation under realistic operating scenarios.
+•    Develop and maintain automation scripts in Python and Perl to streamline simulation flow, including netlist generation, corner sweeping, batch result parsing, and yield analysis. Build scalable toolchains to support multi-corner, multi-mode simulations and regression testing, enhancing design turnaround and validation coverage.
+•    Collaborate with cross-functional teams with digital design, verification, process, and test to define analog-digital interface specifications, establish timing constraints, support readout calibration algorithms, and debug post-silicon performance issues.
+•    Participate in design reviews, tapeout signoff, and lab characterization, contributing to silicon bring-up and performance optimization.
+
+Requirements:
+
+Master’s degree in Electrical Engineering, Computer Engineering, or a related field with advanced-level courses work in Analog Integrated Circuit, CMOS Circuit Design, RF Circuits and Systems Design, VLSI system design, and VLSI Signal Processing.
+
+Must possess the following skills:
+
+•    Analog circuits using MOS models,
+•    Operational amplifier and current mirror design,
+•    Noise analysis and feedback system,
+•    Evaluation of offset distortion and nonlinearity,
+•    Functional verification using ModelSim,
+•    Static timing analysis, power and area estimation,
+•    Standard-cell based logic and physical synthesis,
+•    Hardware scheduling and retiming,
+•    Number representation and digital arithmetic,
+•    Full analog IC design flow,
+•    Post-tapeout chip testing and validation,
+•    VLSI circuit and system design using Verilog,
+•    Architecture design space exploration,
+•    Spectrum Analyzer.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3353,https://jobs.jobvite.com/ovt/job/oT1yzfwL,,https://www.linkedin.com/jobs/view/4425531635,2026-09-24,62,62 applicants,233,matched,title,2026-09-30,2026-09-30T05:59:02,2026-09-30,,239,startDate,true,0,,,,,,2026-02-03,,false,,,,,,
+om1yzfwe,Analog Design Engineer,OmniVision,,,,2026-02-03,239,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Conduct design and development of image sensor technologies, work on transistor level design of analog and mixed-signal circuits for CMOS Image Sensor such as asic_pixel array, column-amplifier, comparator, ramp generator, ASRAM and XDEC by using Cadence Virtuoso; Work on whole chip floorplan design and pad frame; Work on analog and mixed signal circuits layout design by Cadence Virtuoso, such as column_array; Collaborate with layout engineer on whole chip layout integration and improvement by Cadence Virtuoso; Perform sub-blocks and whole image sensor readout circuit simulation by simulators such as Analog FastSPICE (AFS), Empyrean ALPS and NanoSpice; Perform design verification such as DRC, LVS, PERC check by using Siemens Calibre; Perform whole chip IR drop check by using Ansys Totem; Conduct script modification using Perl programming language; Collaborate with Digital Engineer to define and design the analog to digital interface; Collaborate with verification, process, test, and application engineers to debug, characterize and optimize performance of fabricated image sensors; Analyze project-specific specifications, such as speed, linearity, noise, power consumption, etc, and improve circuit designs or implement innovative solutions to meet performance requirements; Define corners based on chip operating conditions, ensuring the chip meets specifications and operates reliably with sufficient margin for robustness under all conditions; Propose innovative and creative solutions along with new circuit R&D and be ahead of current technology.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering, or related fields. Require coursework in Analog Integrated Circuit and Power Electronics Design.
+
+Require knowledge or skills of:
+
+•    Analyze analog and mixed-signal circuits; troubleshoot and resolve circuit issues;
+•    Design analog/mixed-signal circuits based on specifications; optimize for higher performance;
+•    Perform circuit simulations using tools such as Cadence Spectre or HSPICE;
+•    Understand layout impact on circuit performance; apply layout strategies to minimize adverse effects;
+•    Knowledge of semiconductor device physics and its influence on circuit behavior;
+•    Analyze and mitigate thermal, flicker, and shot noise in analog designs;
+•    Knowledge of integrated circuit fabrication processes and incorporating process variation considerations into schematic and layout design.
+•    Design and analyze power management circuits, including LDOs and charge pumps.
+
+Annual base salary for this role in California, US is expected to be between $125,000 - $135,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2812,https://jobs.jobvite.com/ovt/job/om1yzfwe,,https://www.linkedin.com/jobs/view/4368558972,2026-09-28,200,Over 200 applicants,237,matched,title,2026-09-30,2026-09-30T05:59:18,2026-09-30,,239,startDate,true,0,,,,,,2026-02-03,,true,,,,,,
+oUgjAfwN,Analog Design Engineer,OmniVision,,,,2026-06-08,114,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Analog Design Engineer
+
+Job Duties:
+
+Conduct design and development of image sensor technologies, work on transistor level design of analog and mixed-signal circuits for CMOS Image Sensor such as asic_pixel array, column-amplifier, switch capacitor, comparator, ramp generator, ASRAM and XDEC by using Cadence Virtuoso. Work on whole chip floorplan design and pad frame. Work on analog and mixed signal circuits layout design by Cadence Virtuoso, such as column_array. Collaborate with layout engineer on whole chip layout integration and improvement by Cadence Virtuoso. Perform sub-blocks and whole image sensor readout circuit simulation by simulators such as Analog FastSPICE (AFS), Empyrean ALPS and NanoSpice. Perform design verification such as DRC, LVS, PERC check by using Siemens Caliber. Collaborate with Digital Engineer to define and design the analog to digital interface. Collaborate with verification, process, test, and application engineers to debug, characterize and optimize performance of fabricated image sensors. Propose innovative and creative solutions along with new circuit R&D and be ahead of current technology. Process the column readout data from the CMOS sensor using data processing software like Excel and MATLAB. Perform a performance check and conduct debug analysis based on the data results. Design the internal Discrete-time Circuits, Peripheral circuits and Timing control for a CMOS image sensor, including bias circuits, driver/level shifter, switched capacitor, logic gates and slew rate control.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineer, Electro-Optics, or a related field with graduate level course work of Analog IC Design, Data Converters, and VLSI Circuits and Technology.
+
+Must possess the skills of:
+
+• Layout design and floor planning.
+
+• Testing and troubleshooting power IC.
+
+• Using lab equipment testing specific IC.
+
+• Photonic device manufacturing processes and principles, e.g. SPAD, CMOS sensors, Optical filters.
+
+• Matlab and Excel to do signal processing, imaging processing and data analysis.
+
+• Feedback, opamp, switched-capacitor circuits, layout and mismatch, and noise.
+
+• Data converter systems and circuits, including ADC and DAC architecture such as flash, two-step, pipelined, algorithmic, successive-approximation, R-2R DACs.
+
+• Analysis and design of modern digital circuits. Design and analyze CMOS digital circuit. Use commercial software Cadence.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2736,https://jobs.jobvite.com/ovt/job/oUgjAfwN,,https://www.linkedin.com/jobs/view/4254150465,2026-09-16,200,Over 200 applicants,100,matched,title,2026-09-30,2026-09-30T05:59:11,2026-09-30,,114,startDate,true,0,,,,,,2026-06-08,,true,,,,,,
+ohaIzfws,Analog Design Engineer,OmniVision,,,,2026-02-20,222,"Irvine, California",1,"Irvine, California",false,,United States,,0,"We are looking for Image Sensor Analog Design Engineer for design and development of next generation image sensors and related technologies. The candidate should have strong fundamentals in analog circuit design and ability to work independently to develop analog blocks for given specifications. The candidate should have the capability to lead, design and develop analog circuits, as well as experience in debugging/verifying design issues, plus capability to do analog layout.
+
+As an Analog Circuit Design Engineer, you will:
+
+• Design and work on detailed transistor level design of analog and mixed signal circuits for image sensors and related silicon/system designs.
+
+• Perform the whole chip simulation along with the block level, transistor level schematic simulations.
+
+• Perform the block level and transistor level layout design and optimization of sensor array readout circuits using CAD tools like Cadence Virtuoso and Calibre.
+
+• Collaborate with verification, process, test, and application engineers to debug, characterize and optimize performance of fabricated image sensors and successfully bring new products from initial concept through release.
+
+• Propose innovative and creative solutions where necessary to meet customer needs.
+
+• New circuit R&D to be ahead of current technology.
+
+• Instruct and guide less experienced engineers when necessary.
+
+Qualifications:
+
+• Must have overall 1-6 yrs experience/knowledge in analog circuits, digital circuits and semiconductor device physics.
+
+• Be familiar with image sensor manufacturing technology, image sensor performance metrics, image sensor usage and integration into camera systems.
+
+• Experience/knowledge in CMOS image sensor readout circuit design.
+
+• Experience/knowledge in image sensor and camera system is a plus.
+
+• MSEE or equivalent
+
+Annual base salary for this role in California, US is expected to be between $110,000 - $150,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",2094,https://jobs.jobvite.com/ovt/job/ohaIzfws,,https://www.linkedin.com/jobs/view/4374649504,2026-09-22,200,Over 200 applicants,214,matched,title,2026-09-30,2026-09-30T05:59:19,2026-09-30,,222,startDate,true,0,,,,,,2026-02-20,,true,,,,,,
+ob7owfwW,Analog Design Engineer,OmniVision,,,,2025-06-20,467,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"We are looking for qualified Analog design engineers who have a good understanding of analog circuit and CMOS Image Sensor. Candidates should have the capability to design and develop analog circuit independently, as well as experience in debugging/verifying design issues, plus capability to do analog layout.
+
+As an Analog Design Engineer, you will:
+
+• Work on detailed transistor level design of analog and mixed signal circuits for CMOS image sensors.
+
+• Perform the whole chip simulation along with the block level, transistor level schematic simulations.
+
+• Perform the block level and transistor level layout design and optimization of sensor array readout circuits using CAD tools like Cadence Virtuoso and Calibre.
+
+• Collaborate with verification, process, test, and application engineers to debug, characterize and optimize performance of fabricated image sensors and successfully bring new products from initial concept through release.
+
+Qualifications
+
+• Must have 2+ yrs of experience/knowledge in analog circuits, digital circuits and semiconductor device physics.
+
+• Experience/knowledge in image sensor and camera system is a plus.
+
+• PhD or MSEE or equivalent
+
+Annual base salary for this role in California, US is expected to be between $110,400 - $140,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1462,https://jobs.jobvite.com/ovt/job/ob7owfwW,,https://www.linkedin.com/jobs/view/4368297970,2026-09-27,186,186 applicants,464,matched,title,2026-09-30,2026-09-30T06:00:17,2026-09-30,,467,startDate,true,0,,,,,,2025-06-20,,false,,,,,,
+ojejAfwa,Analog Mixed-Signal Design Engineer,OmniVision,,,,2026-06-08,114,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Analog Mixed-Signal Design Engineer
+
+Job Duties:
+
+• Design, develop, and characterize embedded analog circuits, such as high speed I/O, SerDes, FIFO, CDR, PLL, etc.
+
+• Design and debug RTL level signal synchronization, clock tree and conduct cross domain clock designs.
+
+• Evaluate and characterize the circuit performance under various conditions such as process variation and mismatches, power supply change, high/low working temperature, noise and crosstalk.
+
+• Perform analysis of circuits’ performance degradation and signal integrity drop due to layout induced parasitic effects based on simulations with extracted post-layout circuit netlist.
+
+• Work closely with system and test engineers to develop high speed interface, package/board, and system clocks in image sensor and bridge chip products.
+
+• Conduct Layout design and support.  Get involved into layout optimizations for high speed or high precision performance directly.  Use Cadence analog design/layout flow and spice/spectre MDL simulations.
+
+• Perform transistor level integrated circuit design and simulation. Develop clock generator and distribution tree circuits with low jitter and low duty-cycle distortion.  Perform transistor level design of serializer circuit which works up to Gbps data rate within process and temperature corners.  Design accurate analog biasing and reference circuit for IO links.  Characterize the IO links circuit performance under non-ideal environment (high power supply noise, crosstalk, process variation and mismatches). Use software: Cadence Virtuoso, Cadence Spectre simulator and AFS simulators.
+
+• Cooperate with other circuit designer to solve problems and issues discovered on system level. Assist top-level circuit designer in checking register settings, power and ground layout routing and connections between blocks of the certain circuit.
+
+• Debug and design change solutions on signal integrity, EMI/RFI., ESD/latch up issues.  Develop the floor-plan of IO link that is friendly to signal-integrity. Develop and improve ESD circuit on the IC chip to pass industry ESD standards.
+
+• Perform necessary data analysis on simulation results. Write design documents to record design review, updated information, knowledge and lesson learned from projects.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Electronic Circuits & Systems, or a related field.
+
+Require one year of experience as an Analog Design Engineer.
+
+Must possess the following experience:
+
+• Experience in researching and developing with embedded MIPI C/D-PHY transmitter circuit.
+
+• Expertise in programming using Python, perl, scilab and Cshell;
+
+• Experience with EDA tools such as Cadence Virtuoso, Cadence Simvision, Cadence Layout in circuit design;
+
+• Experience in RTL level functional block behavioral verification;
+
+• Experience in using Hspice, Spectre to build-up analog circuit test bench to perform transistor level simulation on analog/mixed-signal circuits.
+
+• Experience in using EDA tools such as EZwave, Cadence Viva to check the simulation result, plot eye-diagram and evaluate circuit performance.
+
+• Experience with chip test instruments such as oscilloscope, function generator, power supply and network analyzer;
+
+• Experienced with high-speed circuit layout support.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3559,https://jobs.jobvite.com/ovt/job/ojejAfwa,,https://www.linkedin.com/jobs/view/4425542602,2026-09-23,88,88 applicants,107,matched,title,2026-09-30,2026-09-30T06:00:20,2026-09-30,,114,startDate,true,0,,,,,,2026-06-08,,false,,,,,,
+oA9KzfwM,Analog-Mixed Signal Design Engineer,OmniVision,,,,2026-02-26,216,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+
+Responsible for the design development and characterization of embedded analog circuits, such as high speed I/O, SerDes, FIFO, CDR, PLL etc.
+Design and debug experience on RTL level signal synchronization, clock tree and cross domain clock designs is a significant plus.
+Need to work closely with system and test engineers to develop high speed interface, package/board, and system clocks in image sensor and bridge chip products.
+
+Responsibilities :
+
+• Analog/Mixed-Signal design, simulation and verifications.
+
+• High speed test with scope and BERT.
+
+• Layout design and support. Need to get involved into layout optimizations for high speed or high precision performance directly.
+
+• Interface verifications between analog and digital.
+
+• IP and design spec documentations.
+
+Requirements  :
+
+• Familiar with Cadence analog design/layout flow and spice/spectreMDL simulations.
+
+• Masters of Electrical Engineering or PhD
+
+Annual base salary for this role in California, US is expected to be between $105,000 - $135,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1180,https://jobs.jobvite.com/ovt/job/oA9KzfwM,,https://www.linkedin.com/jobs/view/4316677678,2026-09-09,200,Over 200 applicants,195,matched,title,2026-09-30,2026-09-30T05:59:07,2026-09-30,,216,startDate,true,0,,,,,,2026-02-26,,true,,,,,,
+opKJyfwa,Analog-Mixed Signal Design Engineer,OmniVision,,,,2025-10-20,345,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+
+Responsible for the design development and characterization of embedded analog circuits, such as high speed I/O, SerDes, FIFO, CDR, PLL etc.
+Design and debug experience on RTL level signal synchronization, clock tree and cross domain clock designs is a significant plus.
+Need to work closely with system and test engineers to develop high speed interface, package/board, and system clocks in image sensor and bridge chip products.
+
+Responsibilities :
+
+• Analog/Mixed-Signal design, simulation and verifications.
+
+• High speed test with scope and BERT.
+
+• Layout design and support. Need to get involved into layout optimizations for high speed or high precision performance directly.
+
+• Interface verifications between analog and digital.
+
+• IP and design spec documentations.
+
+Requirements  :
+
+• Familiar with Cadence analog design/layout flow and spice/spectreMDL simulations.
+
+• Masters of Electrical Engineering or PhD
+
+Annual base salary for this role in California, US is expected to be between $105,000 - $140,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1180,https://jobs.jobvite.com/ovt/job/opKJyfwa,,https://www.linkedin.com/jobs/view/4394226272,2026-09-24,110,110 applicants,339,matched,title,2026-09-30,2026-09-30T05:59:08,2026-09-30,,345,startDate,true,0,,,,,,2025-10-20,,false,,,,,,
+oK5Wzfw4,Analog-Mixed Signal Design Engineer,OmniVision,,,,2026-04-03,180,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+
+Responsible for the design development and characterization of embedded analog circuits, such as high speed I/O, SerDes, FIFO, CDR, PLL etc.
+Design and debug experience on RTL level signal synchronization, clock tree and cross domain clock designs is a significant plus.
+Need to work closely with system and test engineers to develop high speed interface, package/board, and system clocks in image sensor and bridge chip products.
+
+Responsibilities :
+
+• Analog/Mixed-Signal design, simulation and verifications.
+
+• High speed test with scope and BERT.
+
+• Layout design and support. Need to get involved into layout optimizations for high speed or high precision performance directly.
+
+• Interface verifications between analog and digital.
+
+• IP and design spec documentations.
+
+Requirements  :
+
+• Familiar with Cadence analog design/layout flow and spice/spectreMDL simulations.
+
+• Masters of Electrical Engineering or PhD
+
+Annual base salary for this role in California, US is expected to be between $105,000 - $140,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1180,https://jobs.jobvite.com/ovt/job/oK5Wzfw4,,https://www.linkedin.com/jobs/view/4377613480,2026-09-08,147,147 applicants,158,matched,title,2026-09-30,2026-09-30T05:59:05,2026-09-30,,180,startDate,true,0,,,,,,2026-04-03,,false,,,,,,
+oAQQzfwz,Design Characterization Engineer,OmniVision,,,,2026-03-18,196,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"We are seeking a highly skilled Design Characterization Engineer to join our fast‑paced, innovation‑driven R&D team. In this role, you will characterize and optimize CMOS image sensor performance, collaborate closely across engineering disciplines, and help deliver industry‑leading sensor products with exceptional quality.
+
+Responsibilities:
+
+• Bring up new silicon and validate CMOS image sensor functionality and performance in partnership with design engineers
+
+• Develop and refine characterization methodologies to evaluate image sensor behavior and collect performance data
+
+• Analyze pixel‑level, analog, and digital subsystems to identify fundamental performance limitations and propose technical improvements
+
+• Collaborate with analog and digital design teams to tune performance parameters and resolve system‑level issues
+
+• Work cross‑functionally with process, applications, production, and quality teams to transition new designs into production and resolve yield, reliability, and overall product quality issues
+
+Requirements
+
+• MS or PhD in Electrical Engineering or a related field
+
+• Strong expertise in CMOS analog, mixed‑signal, and/or digital design, along with solid understanding of semiconductor device physics
+
+• Proficiency with Python and/or MATLAB for data analysis and automation
+
+• Experience or strong interest in hands‑on electrical testing using oscilloscopes and other lab instrumentation
+
+• Excellent communication skills and a collaborative mindset, with the ability to work effectively in multidisciplinary teams
+
+Annual base salary for this role in California, US is expected to be between $110,600 - $140,000.
+Actual pay will be determined on several factors such as relevant skills and experience, the pay of employees in the similar role etc.
+
+EOE/Minorities/Females/Vet/Disability",1824,https://jobs.jobvite.com/ovt/job/oAQQzfwz,,https://www.linkedin.com/jobs/view/4387180304,2026-09-29,135,135 applicants,195,matched,title,2026-09-30,2026-09-30T05:58:46,2026-09-30,,196,startDate,true,0,,,,,,2026-03-18,,false,,,,,,
+oGoWzfwj,Design Characterization Engineer,OmniVision,,,,2026-04-06,177,"Irvine, California",1,"Irvine, California",false,,United States,,0,"We are seeking a highly skilled Design Characterization Engineer to join our fast‑paced, innovation‑driven R&D team. In this role, you will characterize and optimize CMOS image sensor performance, collaborate closely across engineering disciplines, and help deliver industry‑leading sensor products with exceptional quality.
+
+Responsibilities:
+
+• Bring up new silicon and validate CMOS image sensor functionality and performance in partnership with design engineers
+
+• Develop and refine characterization methodologies to evaluate image sensor behavior and collect performance data
+
+• Analyze pixel‑level, analog, and digital subsystems to identify fundamental performance limitations and propose technical improvements
+
+• Collaborate with analog and digital design teams to tune performance parameters and resolve system‑level issues
+
+• Work cross‑functionally with process, applications, production, and quality teams to transition new designs into production and resolve yield, reliability, and overall product quality issues
+
+Requirements:
+
+• MS or PhD in Electrical Engineering or a related field
+
+• Strong expertise in CMOS analog, mixed‑signal, and/or digital design, along with solid understanding of semiconductor device physics
+
+• Proficiency with Python and/or MATLAB for data analysis and automation
+
+• Experience or strong interest in hands‑on electrical testing using oscilloscopes and other lab instrumentation
+
+• Excellent communication skills and a collaborative mindset, with the ability to work effectively in multidisciplinary teams
+
+Annual base salary for this role in California, US is expected to be between $110,600 - $140,000.
+Actual pay will be determined on several factors such as relevant skills and experience, the pay of employees in the similar role etc.
+
+EOE/Minorities/Females/Vet/Disability",1825,https://jobs.jobvite.com/ovt/job/oGoWzfwj,,https://www.linkedin.com/jobs/view/4394740169,2026-09-26,104,104 applicants,173,matched,title,2026-09-30,2026-09-30T05:58:48,2026-09-30,,177,startDate,true,0,,,,,,2026-04-06,,false,,,,,,
+owQTzfwy,Digital Design Engineer,OmniVision,,,,2026-03-27,187,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
+
+• Design and implement sensor timing control logic and contribute to ISP system-level integration
+
+• Participate in chip-level architecture definition, including analog interfaces, control logic, image data processing pipelines, and power/performance/area (PPA) trade-offs
+
+• Integrate and validate ISP data paths based on PRD, design specifications, and overall SoC architecture
+
+• Collaborate closely with CIS project leads and sensor digital/analog engineers for system integration and validation
+
+• Work with physical design teams on floor planning, timing closure, and DFT implementation
+
+• Perform full-chip integration and verification
+
+• Support chip bring-up, validation, and silicon debugging
+
+• Collaborate with algorithm and application engineers on image tuning, optimization, and qualification
+
+• Support silicon validation, debugging, and image quality tuning through production readiness
+
+Minimum Qualifications
+
+• Bachelor’s degree in Electrical Engineering, Computer Engineering, or a closely related field, or equivalent practical experience
+
+• At least 2 years of hands-on experience designing RTL digital logic using Verilog/System Verilog, or equivalent industry experience
+
+• Proficiency with scripting languages such as Python or Perl to support design, verification, and automation workflows
+
+• Experience analyzing and optimizing area, power, and performance (PPA) trade-offs in digital designs
+
+Preferred Qualifications
+
+• Master’s degree or PhD in Electrical Engineering, Computer Engineering, or a related discipline
+
+• Strong background in image sensor and camera system design or integration
+
+• Experience with high-speed MIPI interfaces (e.g., CSI-2 / D-PHY / C-PHY)
+
+• Practical experience with Image Signal Processing (ISP) architectures and pipelines
+
+Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on several factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/owQTzfwy,,https://www.linkedin.com/jobs/view/4422065385,2026-09-13,200,Over 200 applicants,170,matched,title,2026-09-30,2026-09-30T05:58:51,2026-09-30,,187,startDate,true,0,,,,,,2026-03-27,,true,,,,,,
+oa1zzfw3,Digital Design Engineer,OmniVision,,,,2026-02-05,237,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
+
+• Design and implement sensor timing control logic and contribute to ISP system-level integration
+
+• Participate in chip-level architecture definition, including analog interfaces, control logic, image data processing pipelines, and power/performance/area (PPA) trade-offs
+
+• Integrate and validate ISP data paths based on PRD, design specifications, and overall SoC architecture
+
+• Collaborate closely with CIS project leads and sensor digital/analog engineers for system integration and validation
+
+• Work with physical design teams on floor planning, timing closure, and DFT implementation
+
+• Perform full-chip integration and verification
+
+• Support chip bring-up, validation, and silicon debugging
+
+• Collaborate with algorithm and application engineers on image tuning, optimization, and qualification
+
+• Support silicon validation, debugging, and image quality tuning through production readiness
+
+Minimum Qualifications
+
+• Bachelor’s degree in Electrical Engineering, Computer Engineering, or a closely related field, or equivalent practical experience
+
+• At least 2 years of hands-on experience designing RTL digital logic using Verilog/System Verilog, or equivalent industry experience
+
+• Proficiency with scripting languages such as Python or Perl to support design, verification, and automation workflows
+
+• Experience analyzing and optimizing area, power, and performance (PPA) trade-offs in digital designs
+
+Preferred Qualifications
+
+• Master’s degree or PhD in Electrical Engineering, Computer Engineering, or a related discipline
+
+• Strong background in image sensor and camera system design or integration
+
+• Experience with high-speed MIPI interfaces (e.g., CSI-2 / D-PHY / C-PHY)
+
+• Practical experience with Image Signal Processing (ISP) architectures and pipelines
+
+Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on several factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/oa1zzfw3,,https://www.linkedin.com/jobs/view/4391217036,2026-09-16,200,Over 200 applicants,223,matched,title,2026-09-30,2026-09-30T05:58:50,2026-09-30,,237,startDate,true,0,,,,,,2026-02-05,,true,,,,,,
+ojHGzfwZ,Document Control Administrator,OmniVision,,,,2026-02-17,225,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Position: Document Control Administrator
+Pay Rate: $35–$45 per hour
+Location: Santa Clara, CA
+
+We are seeking a proactive, detail-oriented Document Control Administrator to join our team in Santa Clara, CA. This role is essential to maintaining efficient day-to-day operations, supporting cross-functional teams, and delivering a high standard of internal and external customer service.
+
+The ideal candidate is highly organized, technologically savvy, and an excellent communicator who thrives in a fast-paced, professional environment.
+
+Key Responsibilities
+
+• Provide comprehensive administrative support across multiple departments and office functions
+
+• Utilize the Microsoft Office Suite—particularly Excel—to streamline workflows and support data-driven initiatives
+
+• Maintain accurate, well-organized records and filing systems in compliance with company standards
+
+• Coordinate calendars, schedule meetings, and manage travel arrangements as needed
+
+• Handle inbound and outbound communications with professionalism and efficiency
+
+• Prepare reports, presentations, spreadsheets, and other business documents
+
+• Ensure document control processes are followed and continuously improved
+
+Qualifications & Skills
+
+• Strong proficiency in Microsoft Office, with advanced or solid working knowledge of Excel
+
+• Excellent written and verbal communication skills
+
+• Strong interpersonal skills with the ability to build positive relationships with vendors, customers, and internal partners
+
+• Comfortable working with modern office software, digital tools, and workplace technologies
+
+• Highly organized with strong attention to detail and time management skills
+
+• Mandarin speaking and writing skills preferred",1715,https://jobs.jobvite.com/ovt/job/ojHGzfwZ,,,,,,,no_match,,2026-09-30,,2026-09-30,,225,startDate,true,0,,,,,,2026-02-17,,false,,,,,,
+oFkQzfw8,IT Support Engineer,OmniVision,,,,2026-03-16,198,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+
+The IT Support Engineer provides support to employees experiencing technical problems and performs troubleshooting, problem diagnosis, resolution, and escalations. In-depth knowledge and hands-on experience with system and server administration and virtualization experiences are required. Area of expertise for this position includes Microsoft technologies, VMware virtualization, Citrix VDI, Linux and storage. Prior experience supporting L1 and L2 requests in IT would be helpful for this position.
+
+Job Responsibilities :
+
+• Responds to requests for technical assistance.
+
+• Diagnoses and resolves technical hardware and software issues where applicable.
+
+• Research questions using available information resources.
+
+• Acts as an escalation resource for helpdesk support and advises on appropriate solutions.
+
+• Follows standard support procedures, provides troubleshooting guidelines, and assists with issue analysis and resolution.
+
+• Logs all system/infrastructure change and support interactions.
+
+• Assist with infrastructure and service deployment for new applications, including configuration, validation, and post‑deployment support.
+
+• Creates documents for users, staff, consulting personnel, and developers.
+
+• Compares, evaluates, and assists in implementation and integration of new technologies into the computing environment.
+
+• Administers and performs assessment of standard software.
+
+Job Requirements :
+
+• Approximately 8+ years of experience in IT support, systems administration, or IT engineering, with experience handling increasingly complex technical issues in enterprise environments.
+
+• Excellent knowledge of Windows Operating systems.
+
+• Knowledge of Active Directory (AD) & Domain Controller Administration including DNS and GPO management in a multi-site environment.
+
+• Experience with building and administering Windows servers and accompanying infrastructure, maintaining capacity and performance in enterprise environment.
+
+• Candidates must possess experience with both Windows and Linux mixed environments.
+
+• Experience supporting security incident investigations and remediation efforts, and escalating incidents according to established security policies.
+
+• Ability to multi-task in a dynamic environment with changing priorities.
+
+• Understanding of NAS\SAN Storage, Replication, load balancing, and LAN\WAN Technologies.
+
+• Work with vendors and perform upgrade/installation related activities, analysis and troubleshooting issues to provide resolution and execute on any new enhancement as required by business.
+
+• Experience and knowledge administering workflows and issue schemes in Jira Software and Confluence.
+
+• Experience with Infrastructure – virtual environment, VDi, Citrix Netscalar, Backup& Restore, disaster recovery and business continuity, is a PLUS.
+
+• Experience with automation scripting, such as Windows server Powershell, MS Exchange Cmdlets, Windows Server 2016, 2019, and 2022, is a PLUS.
+
+• Strong customer service skills with the ability to communicate effectively are required.
+
+• Collaborative IT professional with strong troubleshooting, research, documentation, and multitasking skills, able to work effectively with cross-functional teams and varying technical skill levels in a fast-paced environment.
+
+• Excellent English communication skills, both written and verbal are required.
+
+• BS in Computer Science or equivalent preferred
+
+Annual base salary for this role in California, US is expected to be between  $110,000 - $135,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3661,https://jobs.jobvite.com/ovt/job/oFkQzfw8,,https://www.linkedin.com/jobs/view/4385663500,2026-09-25,200,Over 200 applicants,193,matched,title,2026-09-30,2026-09-30T05:59:04,2026-09-30,,198,startDate,true,0,,,,,,2026-03-16,,true,,,,,,
+oQUOwfwO,Optical Engineer,OmniVision,,,,2025-07-25,432,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview:
+
+The Sr/Staff/Principal Optical Engineer works in an aggressive, fast-paced R&D environment to develop and design optical structure to improve image sensor performance.
+
+Responsibilities:
+
+• Design Metasurface for light manipulation
+
+• Troubleshoot optical issue and provide solution
+
+Requirements:
+
+• Experience of Metasurface structure design or similar
+
+• Experience of diffractive optical device design or similar.
+
+• Proficient in FDTD simulation, and optimization.
+
+• Knowledge of Wave, Fourier and Geometrical optics.
+
+• Good Image/Data analysis skill, by like Matlab, or Python, Excel etc.
+
+• Good communication skills, good at team work.
+
+• Graduate degree and above in the area of optics, physics, EE or related
+
+Annual base salary for this role in California, US is expected to be between $120,600 - $200,200.
+Actual pay will be determined on a number of factors such as relevant skills and experience, and
+the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1008,https://jobs.jobvite.com/ovt/job/oQUOwfwO,,https://www.linkedin.com/jobs/view/4272450798,2026-09-28,200,Over 200 applicants,430,matched,title,2026-09-30,2026-09-30T05:59:12,2026-09-30,,432,startDate,true,0,,,,,,2025-07-25,,true,,,,,,
+oXK2zfw2,Partnership Business Development Manager (Global – Medical Imaging & Embedded Systems),OmniVision,,,,2026-04-27,156,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Role Overview
+
+This role drives global partnership development across the medical (imaging and embedded) systems ecosystem. You will build and manage relationships with semiconductor companies, software vendors, innovation partners and medical device manufacturers.
+
+Unlike a pure BD role, this position requires strong, proven technical design experience—enabling you to engage credibly with engineering teams, influence product direction, and translate complex technologies into commercial opportunities.
+
+You will convert partner roadmaps and market trends into actionable insights for Product Marketing and Executive Management. The role requires ~25–30% travel.
+
+Key Responsibilities
+
+Global Partnerships & Business Development (Primary – ~70%)
+
+• Identify growth opportunities, innovations and trends in medical, dental and health monitoring markets
+
+• Build and manage strategic relationships with semiconductor vendors, embedded platform providers, computer vision, AI and AR ecosystem partners
+
+• Identify and execute partnership opportunities that drive design wins and revenue growth
+
+• Engage deeply with partner engineering teams to align on architectures, integration, and product roadmaps to ensure our medical imaging solutions are ""first-in-line"" for integration
+
+• Analyse partner roadmaps, technology trends, and competitive landscape; deliver clear insights to Product Marketing and Executive teams
+
+• Represent the company in customer engagements, partner reviews, and industry events
+
+Market Expansion & Strategic Initiatives (Secondary – ~30%)
+
+• Identify emerging technologies and partnership for expansion into adjacent markets including Dental Imaging, Medical AI, Medical AR, Health Monitoring, Multispectral Imaging etc.
+
+• Contribute to global go-to-market strategies
+
+Qualifications & Experience
+
+Technical Expertise (Non-negotiable)
+
+• Bachelor’s or Master’s degree in Electrical Engineering, Computer Engineering, Biomedical Engineering or related field
+
+• 5–10 years of hands-on experience in:
+
+• Embedded systems design
+
+• Semiconductor or SoC platforms
+
+• Imaging / Image Signal Processing (ISP) or Computer Vision
+
+• Medical devices or regulated hardware systems (strong plus)
+
+• Strong understanding of system architecture, algorithms. including hardware-software integration
+
+Preferred Technical Depth
+
+• Exposure to DSP, AI/ML, or vision processing pipelines
+
+• Familiarity with optics, image sensor, image signal processing and camera systems
+
+Commercial & Leadership Skills
+
+• Proven track record in business development, technical marketing, or product-facing roles
+
+• Ability to influence both technical and commercial stakeholders
+
+• Strong communication skills—able to translate engineering detail into business value
+
+• Demonstrated ability to operate in a global, cross-functional environment
+
+What This Role Is (and Isn’t)
+
+• Is:  A hybrid technical + commercial role requiring credibility with engineers and partners
+
+• Isn’t:  A pure sales role or a purely academic/engineering position
+
+Success Metrics
+
+• Identification of key medical imaging growth areas
+
+• Number and quality of strategic partnerships and design wins
+
+• Contribution to revenue pipeline and new market entry
+
+• Impact of partner insights on product and roadmap decisions
+
+Annual base salary for this role in California, US is expected to be between  $150,000 - $190,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",3569,https://jobs.jobvite.com/ovt/job/oXK2zfw2,,https://www.linkedin.com/jobs/view/4406225075,2026-09-26,27,27 applicants,152,matched,title,2026-09-30,2026-09-30T05:58:30,2026-09-30,,156,startDate,true,0,,,,,,2026-04-27,,false,,,,,,
+oEaFzfwM,Pixel Design Engineer – Process R&D,OmniVision,,,,2026-02-12,230,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Role Overview
+
+As a Pixel Design Engineer within the Process R&D team, you will work on innovation in pixel architecture and process optimization. You will play a key role in advancing simulation methodologies, developing next-generation pixel technologies, and collaborating cross-functionally to enable cutting-edge imaging and display solutions.
+
+Key Responsibilities
+
+• Optimize pixel structures and fabrication processes to improve electrical/optical performance and efficiency.
+
+• Develop, enhance, and validate simulation methodologies for CIS (CMOS Image Sensor) pixel optimization and system-level modeling.
+
+• Collaborate with process integration and design teams to improve pixel characteristics and develop new pixel architectures tailored to specific applications, including - Phase Detect (PD), Dual Pixel Detection (DPD), Near-Infrared (NIR), Time-of-Flight (ToF) and LCOS (Liquid Crystal on Silicon)
+
+• Partner with system engineering and architecture teams to model and optimize devices, components, and full systems leveraging OVT sensors and display technologies.
+
+• Contribute to next-generation sensors and display performance through data-driven modeling and cross-functional innovation.
+
+Qualifications
+
+• 5+ years of experience in pixel optimization and performance enhancement.
+
+• 5+ years of experience in device-based technologies, including development of advanced semiconductor processes (CIS process experience strongly preferred).
+
+• MSEE, MS in Physics, or equivalent required; PhD preferred.
+
+• Background in simulation tools and semiconductor device physics.
+
+• Demonstrated ability to work cross-functionally in R&D environments.
+
+Annual base salary for this role in California, US is expected to be between  $140,000 - $170,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1942,https://jobs.jobvite.com/ovt/job/oEaFzfwM,,https://www.linkedin.com/jobs/view/4364474582,2026-09-17,63,63 applicants,217,matched,title,2026-09-30,2026-09-30T05:59:22,2026-09-30,,230,startDate,true,0,,,,,,2026-02-12,,false,,,,,,
+oohGsfwx,Principal Image Sensor Technology Engineer,OmniVision,,,,2024-04-01,912,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"As the Principal Image Sensor Technology Engineer in the Office of the CTO at OMNIVISION (OVT), you will drive the systems development of CMOS Image Sensors. This includes next generation image sensors, modules and or imaging systems.   You will create suitable models and analyze these systems using both hand calculations and simulation.  You will also summarize the pros and cons of the development directions you analyze. You will work with multiple engineering teams to apply the results of your analysis to product development and or to R&D projects at OVT.
+
+Responsibilities
+
+• Study feasibility of various technology development options
+
+• Create CMOS Image Sensor product concepts utilizing new technologies
+
+• Work closely with engineering and sales/marketing groups to drive the next-generation CMOS Image Sensor R&D projects
+
+• Communicate and align product planning objectives and R&D directions / status with the Product Marketing groups
+
+• Lead technical discussions with OVT’s customers and partners, and feedback the results of these discussions to R&D projects
+
+Requirements
+
+• BSEE or MSEE or equivalent required, PhD desired
+
+• Prior experience in CMOS image sensor product development, application engineering or product engineering required
+
+• Strong analytical skills required
+
+• Excellent verbal, written and communications skills required
+
+• 5+ year prior experience in image sensor product planning and/or design leadership desired
+
+• Experience in specification negotiation with customers/partners desired
+
+• Strong organization skills desired
+
+• Good interpersonal skills desired
+
+• CMOS image sensor, camera systems, Image Signal processing and/or Digital Signal processing, optics, electro-optics or related field preferred
+
+• Python programming skills preferred
+
+Annual base salary for this role in California, US is expected to be between  $180,000 - $230,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",2070,https://jobs.jobvite.com/ovt/job/oohGsfwx,,https://www.linkedin.com/jobs/view/3878501608,2026-09-08,123,123 applicants,890,matched,title,2026-09-30,2026-09-30T05:58:55,2026-09-30,,912,startDate,true,0,,,,,,2024-04-01,,false,,,,,,
+ou1yzfwm,Product Engineer,OmniVision,,,,2026-02-03,239,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Work on new product introduction and ramp-up of CMOS Image Sensors (CIS) and ASIC products from initial tape-out to mass production.
+•    Collaborate with design, test, reliability, and packaging teams to troubleshoot issues and support product development.
+•    Perform design rule checks and product validation to ensure robust product design; defining new product process criteria and GDS checks for tape-out.
+•    Develop comprehensive product characterization and testing plans with R&D and foundry teams to ensure products performance meets requirements.
+•    Ensure product roadmap success by identifying improvement opportunities through physical/electrical failure analysis, process optimization and defect reduction.
+•    Access pixel performance through statistical analysis of electrical and functional metrics at both wafer- and chip-level testing.
+•    Work with quality engineers to address customer complaints, implement corrective actions, and track improvements after solution implemented to minimize field returns.
+•    Collaborate with different foundries to optimize processes, including silicon, color and packaging processes, enhancing overall product performance.
+•    Work with testing engineers to develop, verify, and release CP and FT testing programs; perform sensors validation on manual testing board.
+•    Improve product yield by process and layout optimization; analyze yield data and drive improvement actions.
+•    Define production testing specifications, ensure product yield on target, and reduce process and test fluctuating issue for timely ramp-up.
+•    Ensure products meet AEC Q-100 standards and other relevant automotive specifications.
+•    Work with foundries to drive continuous yield enhancements, continuous improvement plans (CIP), and best-known-methods (BKM) updates throughout the product lifecycle.
+•    Deliver cutting-edge CIS solutions for the automotive industry.
+
+Requirements:
+
+Master’s degree in Electrical Engineering, Physics, Material Science or a related field.
+
+One year’s experience in product engineering.
+
+Experience shall include:
+•    Support IC-design clients in ramping up the new tape out (NTO) products, sustaining yields for high‐volume production products and improving product quality and functionality.
+•    Design rules checks and layout review to ensure robust product design.
+•    Experience in raw materials, production processes, quality control, costs, and techniques for maximizing the effective manufacture of products.
+•    Experience in cross-team work for joint project development; coordination with client, Fab and support teams to identify improvement opportunities and implement solutions.
+•    Monitor the CP and FT testing result to gate and resolve issues in mass production.
+•    Experience in physical failure analysis techniques, such as TEM, EDX, and OBIRCH.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3104,https://jobs.jobvite.com/ovt/job/ou1yzfwm,,,,,,,no_match,,2026-09-30,,2026-09-30,,239,startDate,true,0,,,,,,2026-02-03,,false,,,,,,
+on1Jzfwq,Product Engineer,OmniVision,,,,2026-02-23,219,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Description
+
+• Owner of assigned products
+
+• Participate in product definition and provide DFM inputs.
+
+• Lead product introduction and ramp-up for image sensors and ASIC devices.
+
+• Analyze yield and drive corrective actions for yield improvements.
+
+• Drive characterization to finalize the product datasheet.
+
+• Co-work with testing engineers to develop, verify and release testing program at CP or FT.
+
+Preferred-
+
+• Some Product Engineering experience in image sensor or memory (flash, SRAM, DRAM) or ASIC products.
+
+• Familiarity with silicon process will be plus.
+
+• Good communication and organizational skills
+
+• Strong analytical and problem solving skills.
+
+• Master's Degree in EE or Physics, or a related field.
+
+• Fluency in Mandarin (both spoken and written) is strongly preferred
+
+Annual base salary for this role in California, US is expected to be between $90,600 - $120,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1070,https://jobs.jobvite.com/ovt/job/on1Jzfwq,,https://www.linkedin.com/jobs/view/4368501934,2026-09-28,179,179 applicants,217,matched,title,2026-09-30,2026-09-30T06:00:22,2026-09-30,,219,startDate,true,0,,,,,,2026-02-23,,false,,,,,,
+obzyzfwB,Product Marketing Engineer,OmniVision,,,,2026-02-04,238,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Conduct in-depth market research and competitive benchmarking on CMOS image sensors across AR/VR, mobile, automotive, and surveillance segments in global markets.
+•    Define product positioning, pricing, go-to-market strategy, and manage full product lifecycle from concept to mass production and EOL.
+•    Collaborate with cross-functional teams (engineering, operations, sales) across the U.S. and Asia to translate customer needs into technical requirements and product features.
+•    Provide cross-regional technical support to ensure alignment on sensor specification, performance tuning, and integration.
+•    Develop technical collateral including datasheets, feature comparisons, and sales training decks to support internal education and external promotion.
+•    Deliver system-level guidance and product selection strategy based on use-case and performance criteria.
+•    Participate in roadmap discussions with engineering and marketing leadership to identify future opportunities and define new product architectures.
+•    Communicate customer feedback and market signals into design specifications to inform new sensor and platform development.
+•    Assist in preparing and delivering technical training to global sales and application engineering teams.
+
+Requirements:
+
+Master’s degree in Electrical Engineering, Computer Engineering, or a closely related field and 6 months of experience in product marketing.
+
+The experience shall include:
+
+•    The integration, testing, and optimization of video surveillance systems, including IP cameras, NVRs, and edge AI-enabled devices used in commercial and public security applications
+•    Video quality tuning and evaluation, including configuration of camera parameters such as exposure, white balance, sharpness, and dynamic range to meet deployment-specific requirements.
+•    Technical support to internal teams on camera installation, system compatibility, remote access, and video management software (VMS) operation.
+•    Working with cross-functional product managers, sales engineers, and firmware teams to resolve field issues and contribute to product feature enhancements.
+•    Preparing technical documentation, setup guides, and internal training materials for the global teams.
+•    Experience in Microsoft Excel and PowerPoint for reporting, Jira and Confluence for issue tracking and documentation, and remote testing equipment for validating surveillance system functionality.
+
+Annual base salary for this role in California, US is expected to be between $139,235 - $145,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2698,https://jobs.jobvite.com/ovt/job/obzyzfwB,,https://www.linkedin.com/jobs/view/4410820640,2026-09-16,48,48 applicants,224,matched,title,2026-09-30,2026-09-30T05:58:57,2026-09-30,,238,startDate,true,0,,,,,,2026-02-04,,false,,,,,,
+oxa6zfw6,Product Marketing Engineer,OmniVision,,,,2026-05-07,146,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OMNIVISION is looking for a Product Marketing Engineer who will define CMOS image sensor products based on security market requirements. This individual will manage and promote OVT products to customers/partners, support Sales and develop new markets for OVT.
+
+Description
+
+• North America / Euro Region Security Product Marketing
+
+• Security Segment Sensor Product Definition
+
+• Security System Solutions Product Definition
+
+• Key Partnership Strategy
+
+• Key Customers Promotion
+
+Qualifications
+
+• Bachelors of Science degree in Electrical Engineering
+
+• 1-4 year experience in Applications engineering, marketing or product engineering
+
+• CMOS image sensor, camera systems, Image Signal processing and/or Digital Signal processing, optics, electro-optics or related field preferred
+
+• Have a good understanding of the security market trends and requirements
+
+• Limited travel might be required – customer promotion and tradeshow
+
+• Strong verbal, written and communications skills required
+
+Annual base salary for this role in California, US is expected to be between  $110,000 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1269,https://jobs.jobvite.com/ovt/job/oxa6zfw6,,https://www.linkedin.com/jobs/view/4368796242,2026-09-09,118,118 applicants,125,matched,title,2026-09-30,2026-09-30T05:58:36,2026-09-30,,146,startDate,true,0,,,,,,2026-05-07,,false,,,,,,
+oCa6zfwb,Product Marketing Manager,OmniVision,,,,2026-05-07,146,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OMNIVISION is seeking a Product Marketing Manager to drive the definition and positioning of CMOS image sensor products tailored for the security market. This role will be responsible for translating market needs into product requirements, promoting OVT solutions to customers and partners, and supporting Sales in expanding into new markets.
+
+Description
+
+• Lead product marketing efforts for the Security segment across North America and Europe
+
+• Define next-generation security-focused CMOS image sensor products based on market trends and customer requirements
+
+• Develop and articulate end-to-end security system solutions
+
+• Establish and execute key partnership strategies to strengthen market presence
+
+• Drive customer engagement and product promotion, working closely with strategic accounts
+
+• Collaborate with Sales to identify opportunities and support new market development
+
+Qualifications
+
+• BS/MS in Electrical Engineering or a related field
+
+• 6+ years of experience in applications engineering, product marketing, or product engineering
+
+• Strong technical background in one or more of the following areas preferred:
+
+• CMOS image sensors
+
+• Camera systems
+
+• Image Signal Processing (ISP) / Digital Signal Processing (DSP)
+
+• Optics or electro-optics
+
+• Solid understanding of security market trends, applications, and customer requirements
+
+• Willingness to travel (limited) for customer engagement and industry trade shows
+
+• Excellent communication, presentation, and interpersonal skills
+
+Annual base salary for this role in California, US is expected to be between  $130,000 - $170,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1790,https://jobs.jobvite.com/ovt/job/oCa6zfwb,,https://www.linkedin.com/jobs/view/4410834081,2026-09-14,55,55 applicants,130,matched,title,2026-09-30,2026-09-30T05:58:53,2026-09-30,,146,startDate,true,0,,,,,,2026-05-07,,false,,,,,,
+oph1zfw0,Product Validation Engineer,OmniVision,,,,2026-04-21,162,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Product Validation Engineer
+
+Job Duties:
+
+• Design a characterization/testing plan and work with R&D teams and manufacturing engineers to resolve various technical issues to meet performance requirements.
+
+• Evaluate image sensor manufacturing quality by statistically analyzing multiple electrical and functional parameters in wafer level characterization and chip scale testing.
+
+• Drive production yield rate reach to target yield level from new product tape out, listing parameters according to yield loss rate from high to low.
+
+• Debug root cause of process and design related yield loss happening in initial silicon; cooperate with process and design engineers to solve problems.
+
+• Conduct product introduction and ramp-up for image sensors and ASIC devices.
+
+• Work in close collaboration with silicon foundry, image characterization and pixel design.
+
+• Interact with foundry fab in improving all silicon process, color, and package issues.
+
+• Improve product yield and performance by process optimization and layout design update.
+
+• Analyze yield and drive corrective actions for yield improvements.
+
+• Drive characterization to finalize the product datasheet.
+
+• Work with pixel design group to design the most sophisticated and optimized pixel layout.
+
+• Work with characterization team to analyze and debug pixel device circuit and various image related issues.
+
+• Work with quality engineers to solve customer quality complaints and track quality improvement after solution implemented.
+
+• Support reliability engineers on production quality analysis and update relative criteria on product reliability documents.
+
+• Coordinate with company's fab to drive semiconductor processing tool vendors to optimize processes, including raw material vendor, IMP tool vendor and photo resist vendor etc.
+
+• Set up new tape out product process flows, inline handbooks, JDV check etc.
+
+• Work with testing engineers to develop, verify and release testing program at CP or FT. Test sample sensors on manual testing board, and help testing engineer finalize ATE testing program.
+
+• Determine production testing specifications base on wafer level characterization and packaged chip testing data.
+
+• Cooperate with testing engineers to debug testing problems such as tester mechanical failure, manufacture fluctuating issue and error handling.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering, or related fields.
+
+Required skills:
+
+• Semiconductor physics, including CMOS transistor performance and NMOS/PMOS device behavior.
+
+• Digital circuit design and hardware/software integration for system-level applications, with proficiency in digital logic design, simulation, and synthesis using Verilog and Xcelium.
+
+• Software development and research involving digital signal processing principles and statistical analysis methods.
+
+• Proficiency in data analysis and visualization using Python and Excel to manage large datasets, identify trends, and support engineering decision-making.
+
+• Ability to apply advanced engineering techniques for system modeling, optimization, and control in complex applications.
+
+Annual base salary for this role in California, US is expected to be between $120,182 - $125,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3418,https://jobs.jobvite.com/ovt/job/oph1zfw0,,https://www.linkedin.com/jobs/view/4404241269,2026-09-21,169,169 applicants,153,matched,title,2026-09-30,2026-09-30T06:00:27,2026-09-30,,162,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
+odg1zfwN,Quality Engineer,OmniVision,,,,2026-04-21,162,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Quality Engineer
+
+Job Duties:
+
+• Assure quality throughout the product lifecycle, including product development, manufacturing, failure analysis, production release, and servicing.
+
+• Plan and execute quality strategies during the design and development phases by defining standard operating procedures for electrical quality control and assurance, ensuring that risks are mitigated and issues are promptly corrected during ramp-up.
+
+• Lead automotive quality improvement initiatives by implementing proactive measures to reduce test-related quality incidents, driving cross-department Lessons Learned activities for manufacturing and test items, improving outgoing electrical quality control processes, and managing Safe Launch and High Voltage Stress Testing for automotive products.
+
+• Ensure product quality and reliability through statistical yield analysis techniques such as and Statistical Yield and Bin Limit (SYL, SBL) evaluations.
+
+• Perform failure analysis utilizing pFA and eFA tools — including cross-sectioning, emission microscopy, X-ray analysis, SEM (Scanning Electron Microscope), optical microscopy, oscilloscope probing, and OBIRCH — to identify failure modes, localize physical hot spots, and determine root causes.
+
+• Conduct FMEA (Failure Mode and Effect Analysis) and statistical data analysis — such as box plots, histograms, distributions, scatter charts, normalization, and linearity — using MATLAB, Visual C, Excel, and internal OVT tools for reliability and yield assessments.
+
+• Handle customer complaint (CCN) cases and customer return analyses, providing detailed failure reports and coordinating with cross-functional teams to identify root causes and implement corrective actions.
+
+• Communicate directly with end customers and supply chain partners, including package houses and foundries (e.g., TSMC), to resolve quality and process issues identified during IC manufacturing. Apply IC fabrication knowledge to evaluate wafer- or process-related deviations.
+
+• Provide remote support for customers with multi-region manufacturing sites producing camera modules and related automotive imaging products.
+
+• Drive Corrective and Preventive Actions (CAPA) across functional engineering teams to ensure continuous improvement, enhance product robustness, and maintain stable production quality.
+
+Requirements:
+
+Require Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering, or a related field.
+
+Must acquire the following knowledge and/or skills from the graduate level course study:
+
+• Digital IC design
+
+• IC fabrication
+
+• C programming
+
+• RTL design
+
+• VHDL programming
+
+• Verilog programming
+
+• Semiconductor physics
+
+• Reliability prediction
+
+Annual base salary for this role in California, US is expected to be between $120,182 - $125,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2967,https://jobs.jobvite.com/ovt/job/odg1zfwN,,,,,,,no_match,,2026-09-30,,2026-09-30,,162,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
+oZz6yfwW,Senior Staff Analog Design Engineer,OmniVision,,,,2025-12-18,286,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"• Work on detailed transistor level design of analog and mixed signal circuits for CMOS image sensors.
+
+• Oversee the floor plan and layout to make sure design responded as designed.
+
+• Perform the whole chip simulation along with the block level, transistor level schematic simulations.
+
+• Work with system timing designer to define sensor readout timing control.
+
+• Perform the block level and transistor level layout design and optimize sensor array readout circuits using CAD tools like Cadence Virtuoso and Calibre.
+
+• Collaborate with verification, process, test, and application engineers to debug, characterize and optimize performance of fabricated image sensors and successfully bring new products from initial concept through release.
+
+• Propose innovative and creative solutions where necessary to meet customer needs.
+
+• R&D new circuit to be ahead of current technology.
+
+• Determine methods and procedures on new assignments and coordinate activities with other personnel.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Electronics Engineering or a closely related field.
+
+Require three years of experience in CMOS image sensor products related.
+
+The experience shall include:
+
+• Transistor level design of analog and mixed signal circuits for CMOS image sensors.
+
+• Whole chip simulation with the block level, transistor level schematic simulations.
+
+• Block level and transistor level layout design and optimization of sensor array readout circuits using CAD tools like Cadence Virtuoso and Calibre.
+
+• Collaboration with verification, process test and application engineers to debug, characterize, and optimize performance of fabricated image sensors and bring new products from initial concept through release.
+
+• Innovative and creative solutions per customers’ needs.
+
+• New circuits research and development.
+
+Annual base salary for this role in California, US is expected to be between $186,472 - $220,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2109,https://jobs.jobvite.com/ovt/job/oZz6yfwW,,https://www.linkedin.com/jobs/view/4345017746,2026-09-24,62,62 applicants,280,matched,title,2026-09-30,2026-09-30T06:00:26,2026-09-30,,286,startDate,true,0,,,,,,2025-12-18,,false,,,,,,
+oMz6yfwJ,Sensor Characterization Engineer,OmniVision,,,,2025-12-18,286,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"• Perform bench test and analysis to ensure accurate and reproducible image sensor performance metrics;
+
+• Conduct analytic studies of CMOS image sensor’s fundamental performance issues and provide technical suggestions of improvement;
+
+• Work with analog/digital design team to troubleshoot chip/system level performance issues;
+
+• Support R&D teams by providing detailed performance reports and actionable recommendations for future product development and process optimization;
+
+• Develop scientific image quality measurement, calibration, evaluation, analysis and ISP verification tools;
+
+• Conduct modeling and simulation of imaging systems, image sensor readout circuit and image sensor digital timing;
+
+• Focus on mobile image sensor projects verification and optimization;
+
+• Develop Python and MATLAB scripts to automate data acquisition, processing, and visualization of large characterization datasets.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering or a closely related field with a focus on Electronic Circuits and Systems.
+
+Must have the skills in:
+
+• Integrated CMOS analog/digital systems, analog IC design, CMOS logic design, integrated circuit analysis, sensors.
+
+• Digital circuit, ADC/DAC, Phase-locked loops(PLL), evaluation and feedback of noise performance, performance estimation, lab simulation, test of circuits, analysis of noise and distortion
+
+• Circuit characterization, Cadence tools for transistor level simulation, layout, verification, VLSI implementation methodology, EDA tools.
+
+• Python program.
+
+• MATLAB software simulation.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",1863,https://jobs.jobvite.com/ovt/job/oMz6yfwJ,,https://www.linkedin.com/jobs/view/4345004098,2026-09-24,198,198 applicants,280,matched,title,2026-09-30,2026-09-30T05:58:44,2026-09-30,,286,startDate,true,0,,,,,,2025-12-18,,false,,,,,,
+oOjWyfwl,SoC Design Engineer,OmniVision,,,,2025-11-19,315,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
+
+• Image sensor control or processing function design and verification
+
+• High speed interface (USB/MIPI) design and verification
+
+• Full-chip integration and verification
+
+• Chip bring-up, validation, and debugging
+
+• Participate in the FPGA development
+
+• Architecture, registers, interface and design documentation.
+
+Qualifications :
+
+• PhD or MSEE with some experience of digital design
+
+• Familiar with digital design flow, including verilog RTL coding/simulation, synthesis, static timing analysis, and formality
+
+• Knowledge of high performance and low power design techniques.
+
+• Knowledge of FPGA and emulation platforms.
+
+• Knowledge of SOC architecture.
+
+• Knowledge of assertion-based formal verification is a plus
+
+• Image processing/DSP knowledge is a plus
+
+Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/oOjWyfwl,,https://www.linkedin.com/jobs/view/4323573880,2026-09-27,200,Over 200 applicants,312,matched,title,2026-09-30,2026-09-30T05:58:41,2026-09-30,,315,startDate,true,0,,,,,,2025-11-19,,true,,,,,,
+o7gjAfw0,SoC Design Engineer,OmniVision,,,,2026-06-08,114,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: SoC Design Engineer
+
+Job Duties:
+
+• Design and verify digital circuits for CMOS image sensors (CIS), including sensor array timing control logic, analog-digital interface modules, and ISP (Image Signal Processing) data pipelines, in accordance with product requirements, system architecture, and ASIC design methodology.
+
+• Perform full-chip SoC integration, including IP integration, clock/reset domain management, power-aware design, and system-level verification to ensure functional correctness and tape-out readiness.
+
+• Develop, integrate, and validate IPs through the complete ASIC design flow: RTL coding in Verilog/SystemVerilog, simulation, synthesis and DFT implementation.
+
+• Conduct static timing analysis (STA) for image sensor timing-critical paths, including interfaces between analog front-end and digital control logic, ensuring robust timing closure across process corners.
+
+• Collaborate closely with the back-end physical design team on floor planning, timing closure, power optimization, and DFT strategy throughout the implementation cycle.
+
+• Perform pre-silicon verification using UVM-based testbenches, and scripting languages (Python, Perl) for automation, coverage analysis, and regression testing.
+
+• Work with sensor analog/digital engineers to co-develop system-level architectures, define interface protocols, and validate mixed-signal functionality during integration and bring-up.
+
+• Partner with algorithm engineers to implement hardware-efficient microarchitectures, develop C/C++ reference models, perform RTL-to-model co-simulation, and optimize hardware/software partitioning for imaging pipelines.
+
+• Support post-silicon activities including chip bring-up, silicon validation, debugging, and performance tuning in collaboration with firmware, application, and image quality teams.
+
+• Contribute to image tuning, sensor characterization, and product qualification by analyzing hardware behavior and providing feedback to algorithm and system teams.
+
+• Create and maintain technical documentation, including architecture specifications, registers, interface control documents.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering, or a closely related field
+
+Require one year experience in digital design.
+
+Must have the experience/skills:
+
+• Architecture for Wi-Fi 6 AP transmitter.
+
+• Wi-Fi PHY based RTL design and verification using Verilog.
+
+• Module-level verification and full-chip integration support.
+
+• Design optimization techniques for area, power, and timing.
+
+• Using industry-standard digital design and verification tools.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2882,https://jobs.jobvite.com/ovt/job/o7gjAfw0,,https://www.linkedin.com/jobs/view/4389827428,2026-09-13,200,Over 200 applicants,97,matched,title,2026-09-30,2026-09-30T05:58:37,2026-09-30,,114,startDate,true,0,,,,,,2026-06-08,,true,,,,,,
+owBSzfwi,SoC Design Engineer,OmniVision,,,,2026-03-24,190,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
+
+• Image sensor control or processing function design and verification
+
+• High speed interface (USB/MIPI) design and verification
+
+• Full-chip integration and verification
+
+• Chip bring-up, validation, and debugging
+
+• Participate in the FPGA development
+
+• Architecture, registers, interface and design documentation.
+
+Qualifications :
+
+• PhD or MSEE with some experience of digital design
+
+• Familiar with digital design flow, including verilog RTL coding/simulation, synthesis, static timing analysis, and formality
+
+• Knowledge of high performance and low power design techniques.
+
+• Knowledge of FPGA and emulation platforms.
+
+• Knowledge of SOC architecture.
+
+• Knowledge of assertion-based formal verification is a plus
+
+• Image processing/DSP knowledge is a plus
+
+Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/owBSzfwi,,https://www.linkedin.com/jobs/view/4425526741,2026-09-24,200,Over 200 applicants,184,matched,title,2026-09-30,2026-09-30T05:58:34,2026-09-30,,190,startDate,true,0,,,,,,2026-03-24,,true,,,,,,
+o2g1zfwC,SoC Design Engineer,OmniVision,,,,2026-04-21,162,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: SoC Design Engineer
+
+Job Duties:
+
+Be responsible for digital design of ASIC cores within image sensor SoC products, including IP design, analysis, integration, and validation. Collaborate with physical design teams on floor-planning, timing closure, and DFT implementation. Conduct timing control logic design and static timing analysis (STA) for sensor interfaces and mixed-signal integration. Perform chip bring-up, validation and debugging. Design, integrate and validate data pipeline according to PRD/design specification and system architecture of SoC products, following ASIC design flow: coding, simulation, synthesis, static timing analysis, formality verification, DFT, using Simvision, EDA tools such as Prime Time, cadence Virtuoso, Design Compiler, Integrator, and Verilog and System Verilog programming languages etc. Conduct design verification and modeling using SVA, Python, Perl, C++/C, and HLS. Work with digital and analog engineers for system design, integration and validation. Work with algorithm engineers for module level design, including hardware C model implementation, micro architecture design, RTL design and hardware/software co-simulation. Work with algorithm and application engineers for project-based microarchitecture improvements. Conduct silicon validation, debugging and tuning.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering, or a related field.
+
+Required skills and/or academic training in the following:
+
+• Arithmetic circuit design related to general datapath circuits, ML and AI circuits.
+
+• Arithmetic circuit design, timing analysis; synchronous and asynchronous FSMs; power, test, and debug.
+
+• Design and design debug with System Verilog; Logic design and analysis.
+
+• Processing Subsystem, including superscalar out-of-order cores, multicore and heterogeneous processors, and purpose-specific accelerators.
+
+• Design tools, such as microarchitecture simulators, RTL synthesis tools, and modeling for area, power, and thermal.
+
+• FPGA platforms to compute acceleration.
+
+• FPGAs technology, architecture and applications.
+
+• Register-Transfer Level (RTL) hardware design.
+
+• Planning and specification, writing Verilog models, and designing custom circuits and synthesized standard cell blocks.
+
+• Using industrial CAD tools and flows for digital, analog/RF, or mixed-signal chip design.
+
+• Full-chip integration and verification for tapeout.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2702,https://jobs.jobvite.com/ovt/job/o2g1zfwC,,https://www.linkedin.com/jobs/view/4404224587,2026-09-20,200,Over 200 applicants,152,matched,title,2026-09-30,2026-09-30T05:59:23,2026-09-30,,162,startDate,true,0,,,,,,2026-04-21,,true,,,,,,
+oJfjAfwB,SoC Design Engineer,OmniVision,,,,2026-06-08,114,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: SoC Design Engineer
+
+Job Duties:
+
+Responsible for digital design and verification of image sensor and SoC systems, including IP design, integration, analysis, and validation. Design and verify image sensor control and processing functions, as well as high-speed interfaces such as USB and MIPI. Perform full-chip integration, verification, and system-level validation following standard ASIC design flows. Work closely with back-end teams on floorplanning, timing closure, static timing analysis (STA), and design-for-test (DFT). Design and integrate ISP data paths according to PRD/design specifications and overall SoC architecture. Execute ASIC implementation tasks including RTL coding, simulation, synthesis, formal verification, and DFT using industry-standard EDA tools such as Synopsys PrimeTime, Cadence Virtuoso, Design Compiler, and Integrator. Conduct chip bring-up, silicon validation, debugging, and performance tuning. Participate in FPGA prototyping and validation activities. Develop verification environments and models using SystemVerilog, SVA, Python, and Perl, and support hardware/software co-simulation. Collaborate with sensor, analog, algorithm, and application engineers on system design, module-level architecture, RTL implementation, micro-architecture design, image tuning, and product qualification. Prepare and maintain architecture, register, interface, and design documentation throughout the development lifecycle.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering, or related fields.
+
+Require one year experience in Digital Design.
+
+Experience shall include:
+
+• Wi-Fi PHY baseband RTL design and verification.
+
+• Digital signal processing module implementation using Verilog.
+
+• Module-level verification and full-chip integration support.
+
+• Design optimization techniques for area, power, and timing.
+
+• Using industry-standard digital design and verification tools.
+
+• Reading schematics and data sheets for software driver development on the SoC.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2293,https://jobs.jobvite.com/ovt/job/oJfjAfwB,,https://www.linkedin.com/jobs/view/4414158177,2026-09-18,122,122 applicants,102,matched,title,2026-09-30,2026-09-30T05:58:39,2026-09-30,,114,startDate,true,0,,,,,,2026-06-08,,false,,,,,,
+oRMSzfwO,SoC Design Engineer,OmniVision,,,,2026-03-24,190,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
+
+• Image sensor control or processing function design and verification
+
+• High speed interface (USB/MIPI) design and verification
+
+• Full-chip integration and verification
+
+• Chip bring-up, validation, and debugging
+
+• Participate in the FPGA development
+
+• Architecture, registers, interface and design documentation.
+
+Qualifications :
+
+• PhD or MSEE with some experience of digital design
+
+• Familiar with digital design flow, including verilog RTL coding/simulation, synthesis, static timing analysis, and formality
+
+• Knowledge of high performance and low power design techniques.
+
+• Knowledge of FPGA and emulation platforms.
+
+• Knowledge of SOC architecture.
+
+• Knowledge of assertion-based formal verification is a plus
+
+• Image processing/DSP knowledge is a plus
+
+Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/oRMSzfwO,,https://www.linkedin.com/jobs/view/4425538593,2026-09-23,171,171 applicants,183,matched,title,2026-09-30,2026-09-30T05:58:43,2026-09-30,,190,startDate,true,0,,,,,,2026-03-24,,false,,,,,,
+oL74zfwf,SoC Design Engineer,OmniVision,,,,2026-04-30,153,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
+
+• Image sensor control or processing function design and verification
+
+• High speed interface (USB/MIPI) design and verification
+
+• Full-chip integration and verification
+
+• Chip bring-up, validation, and debugging
+
+• Participate in the FPGA development
+
+• Architecture, registers, interface and design documentation.
+
+Qualifications :
+
+• PhD or MSEE with some experience of digital design
+
+• Familiar with digital design flow, including verilog RTL coding/simulation, synthesis, static timing analysis, and formality
+
+• Knowledge of high performance and low power design techniques.
+
+• Knowledge of FPGA and emulation platforms.
+
+• Knowledge of SOC architecture.
+
+• Knowledge of assertion-based formal verification is a plus
+
+• Image processing/DSP knowledge is a plus
+
+Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/oL74zfwf,,https://www.linkedin.com/jobs/view/4423282781,2026-09-18,156,156 applicants,141,matched,title,2026-09-30,2026-09-30T05:58:40,2026-09-30,,153,startDate,true,0,,,,,,2026-04-30,,false,,,,,,
+oy1svfwg,Sr. /Staff/Principal Analog Mixed-Signal Design Engineer,OmniVision,,,,2025-02-14,593,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+Responsible for design, development, and refinement of Multi-Gbps PAM4 SerDes IP. Design and debug experience on RTL level signal synchronization, clock tree and cross domain clock designs is a significant plus.
+
+Need to work closely with system and test engineers to develop high speed interface, package/board, and system clocks in image sensor and bridge chip products.
+
+Responsibilities :
+•    Analog/Mixed-Signal design, simulation and verifications esp PAM4 receiver designs such as TI-SAR ADC, CTLE/DFE and other blocks in AFE.
+•    CDR design experience is significant plus.
+•    High speed test with scope and BERT.
+•    Layout design and support. Need to get involved into layout optimizations for high speed or high precision performance directly.
+•    Interface verifications between analog and digital.
+•    IP and design spec documentations.
+
+Requirements  :
+•    Familiar with Cadence analog design/layout flow and spice/spectreMDL simulations.
+•    Masters of Electrical Engineering or PhD with 3+ yrs of expertise.
+
+Annual base salary for this role in California, US is expected to be between $150,000 - $250,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1288,https://jobs.jobvite.com/ovt/job/oy1svfwg,,,,,,,no_match,,2026-09-30,,2026-09-30,,593,startDate,true,0,,,,,,2025-02-14,,false,,,,,,
+oWYXvfw6,Sr. Analog Design Engineer,OmniVision,,,,2025-04-28,520,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"We are looking for qualified Analog circuit design engineers who have a good understanding of analog circuit and CMOS Image Sensor. Candidates should have the capability to design and develop analog circuit independently, as well as experience in debugging/verifying design issues, plus capability to do analog layout.
+
+As an Analog Circuit Design Engineer, you will:
+
+• Work on detailed transistor level design of analog and mixed signal circuits for CMOS image sensors.
+
+• Perform the whole chip simulation along with the block level, transistor level schematic simulations.
+
+• Perform the block level and transistor level layout design and optimization of sensor array readout circuits using CAD tools like Cadence Virtuoso and Calibre.
+
+• Collaborate with verification, process, test, and application engineers to debug, characterize and optimize performance of fabricated image sensors and successfully bring new products from initial concept through release.
+
+Qualifications
+
+• Must have 5+ yrs of experience/knowledge in analog circuits, digital circuits and semiconductor device physics.
+
+• Experience/knowledge in image sensor and camera system is a plus.
+
+• PhD or MSEE or equivalent
+
+Annual base salary for this role in California, US is expected to be between $130,400 - $150,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1478,https://jobs.jobvite.com/ovt/job/oWYXvfw6,,https://www.linkedin.com/jobs/view/4216462585,2026-09-28,79,79 applicants,518,matched,title,2026-09-30,2026-09-30T06:00:24,2026-09-30,,520,startDate,true,0,,,,,,2025-04-28,,false,,,,,,
+oAh1zfwb,Sr. Analog Design Engineer,OmniVision,,,,2026-04-21,162,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Sr. Analog Design Engineer
+
+Job Duties:
+
+• Conduct design and development of image sensor technologies in advanced sub-micron node, including finfet, work on transistor level design of analog and mixed-signal circuits for CMOS Image Sensor such as asic_pixel array, column-bias generation, rampbuffer, column-amplifier, comparator, ramp generator, ASRAM and XDEC by using Cadence Virtuoso.
+
+• Work on analog and mixed signal circuits layout design by Cadence Layout tool, such as column_array.
+
+• Collaborate with layout engineer on whole chip layout integration, verification, and improvement.
+
+• Perform sub-blocks and whole image sensor readout circuit simulation (DCG function, noise, PSRR, H-banding, etc.) by simulators such as Cadence Spectre, Analog FastSPICE (AFS), Empyrean ALPS and NanoSpice.
+
+• Perform design verification such as DRC, LVS, antenna rule, and PERC check by using Siemens Caliber tools.
+
+• Extract post-layout parasitic parameters by Calibre PEX.
+
+• Process simulation data and develop script for test bench.
+
+• Collaborate with Digital Engineer to define and design the analog to digital interface and timing generation.
+
+• Collaborate with verification, process, test, and application engineers to debug, characterize and optimize performance of fabricated image sensors.
+
+• Propose innovative and creative solutions along with new circuit R&D and be ahead of current technology.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering, or a related field.
+
+Must have 2 years of experience in analog circuit, digital circuits and semiconductor device physics.
+
+Required experience:
+
+• Tape-out experiences of CMOS analog and mixed-signal integrated circuits (ICs).
+
+• Industry-standard CAD tools for analog design, such as Cadence Virtuoso for schematic design, Cadence Spectre, LTspic for simulation, and DRC, LVS Calibre for layout.
+
+• Digital hardware design using HDLs and RTL design, with hands-on experience in FPGA development using Xilinx Vivado.
+
+• Arduino and Bluetooth Low Energy (BLE) microcontroller programming.
+
+• Printed circuit boards (PCB) design and layout, using tools such as Autodesk Eagle.
+
+• Scripting and numerical computing with Python and MATLAB for simulation, automation, and data analysis.
+
+• Chip test, verification, debug and measurements using lab equipment such as oscilloscopes, function generators, and data acquisition (DAQ) systems.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2701,https://jobs.jobvite.com/ovt/job/oAh1zfwb,,https://www.linkedin.com/jobs/view/4404226554,2026-09-19,26,26 applicants,151,matched,title,2026-09-30,2026-09-30T06:00:23,2026-09-30,,162,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
+oZXTzfw8,Sr. Analog Physical Design Engineer,OmniVision,,,,2026-03-25,189,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"This role focuses on the design, optimization, and physical implementation of column-level ADC circuits used in CMOS image sensors.
+
+The engineer will work closely with cross-functional teams to enhance performance, silicon efficiency, and image quality while ensuring robust and scalable layout solutions.
+
+Responsibilities
+
+• Work on detailed column ADC circuit design, with a focus on column layout design. Collaborating with other column ADC designers to optimize column ADC’s performance with minimum silicon area.
+
+• Cross products column ADC layout comparison and IP layout development and maintenance.
+
+• Perform RCX extraction of column circuit, taking care of critical signals parasitic analysis, and propose optimized design to improve column ADC performance and image quality.
+
+• Image sensor pixel array and column ADC supply analysis using Totem or other methodologies, including worst case P2P resistor extraction, and optimize chip floorplan and power routing.
+
+• Study design rules for new processes and provide physical design guidelines to design team. Debug and develop Calibre svrf files when needed.
+
+• SKILL script to improve productivity and design robustness.
+
+• Other duties as assigned.
+
+Requirements
+
+• Must have experience/knowledge in analog circuits and semiconductor.
+
+• Experience/knowledge in CMOS image sensor readout circuit design
+
+• Experience/knowledge in image sensor and camera system is a plus
+
+• Minimum of 6+  years of relevant experience
+
+• MSEE or equivalent
+
+Annual base salary for this role in California, US is expected to be between $130,600 - $170,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1781,https://jobs.jobvite.com/ovt/job/oZXTzfw8,,https://www.linkedin.com/jobs/view/4404231446,2026-09-20,46,46 applicants,179,matched,title,2026-09-30,2026-09-30T05:59:25,2026-09-30,,189,startDate,true,0,,,,,,2026-03-25,,false,,,,,,
+ouh1zfw5,Sr. Analog Physical Design Engineer,OmniVision,,,,2026-04-21,162,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Sr. Analog Physical Design Engineer
+
+Job Duties:
+
+• Work on detailed column ADC circuit design, with a focus on column layout design. Collaborating with other column ADC designers to optimize column ADC’s performance with minimum silicon area.
+
+• Conduct cross products column ADC layout comparison and IP layout development and maintenance.
+
+• Perform RCX extraction of column circuit and critical signals parasitic analysis and propose optimized design to improve column ADC performance and image quality.
+
+• Conduct image sensor pixel array and column ADC supply analysis using Totem or other methodologies, including worst case P2P resistor extraction, and optimize chip floorplan and power routing.
+
+• Study design rules for new processes and provide physical design guidelines to the design team. Debug and develop Calibre svrf files when needed.
+
+• Apply SKILL script to improve productivity and design robustness.
+
+• Responsible for full-custom analog IC layout and physical verification (DRC/ANT/DFM/ERC/LVS) using industry-standard tools like Cadence Virtuoso and Calibre.
+
+• Execute top-level layout and coordinate layout resources and schedules for all modules.
+
+• Perform floor planning and placements including pad locations, power/clock domain planning, ESD, integration of AMS and digital blocks, and chip-level routing strategy.
+
+• Lead top-level implementation from floorplan through GDS tape-out.
+
+• Develop and maintain layout methodologies and documentation to ensure efficient and consistent design practices.
+
+Requirements:
+
+Require Master’s degree or foreign equivalent degree in Electrical Engineering, Electronics Engineering, or a closely related field.
+
+Require 2 years of experience in CMOS image sensor IC layout design.
+
+Require the following experience or skills:
+
+• Semiconductor process and device fundamentals, with expertise in addressing advanced technology nodes challenges.
+
+• Experience in image sensor manufacturing technology, performance metrics, and system-level integration in camera applications.
+
+• Experience with industry standard EDA tools, such as Cadence Virtuoso, PVS, Spectre, Innovus, Skipper, Siemens Calibre, Synopsys Hspice, Design Compiler, IC Compiler, PrimeTime, Laker and P2P.
+
+• Front-end and back-end ASIC design flows.
+
+• Experience in stacked chip process flow and related design considerations.
+
+• Skills in interpreting physical verification reports (DRC, DFM, ERC, LVS, etc.) and understanding SVRF rule files.
+
+• Advanced layout skills such as common-centroid layouts, symmetrical layouts, use of dummy devices, matching, ESD, latch-up, antenna effects, etc.
+
+• Understanding of layout impact on device matching, noise coupling, guard-ring, electromigration, isolation and IR drop.
+
+• Developing CAD flow automation using scripting languages like Perl, Skill, and Tcl.
+
+• Expertise in low-power, high-precision, high speed analog layout design techniques.
+
+• Solving crosstalk challenges between adjacent column ADCs in image sensor circuits.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3261,https://jobs.jobvite.com/ovt/job/ouh1zfw5,,https://www.linkedin.com/jobs/view/4390138752,2026-09-14,38,38 applicants,146,matched,title,2026-09-30,2026-09-30T06:00:19,2026-09-30,,162,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
+ooVJzfwl,Sr. Applications Engineer,OmniVision,,,,2026-02-23,219,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The ideal candidate should have an electrical/computer engineering, imaging science, or color science background, or experience on image processing, image quality evaluation/tuning, or image sensor related system debugging. Basic knowledge about CMOS sensor and pixel design is a plus.
+
+Responsibilities
+
+• Sensor Verification: works closely with design team to verify each function of the new sensor, evaluates image quality to see if it meets the design target and application requirements and identifies alternate solutions if issues can’t be addressed by design.
+
+• Creates and maintains sensor datasheet, application note, and reference design.
+
+• Delivers useful and accurate information to help various image sensor applications
+
+• Directs customer support and helps FAEs support their customers. Helps customers bring up and troubleshoot their system. Suggests image quality tuning based on the customer's requirement.
+
+Qualifications
+
+• BSEE or equivalent, with an emphasis in Image Science, Color Science or related field . MSEE is a plus.
+
+• 4+ years experience.
+
+• Experience with system level hardware, firmware or software
+
+• Good communication skills
+
+Annual base salary for this role in California, US is expected to be between  $120,000 - $145,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1443,https://jobs.jobvite.com/ovt/job/ooVJzfwl,,https://www.linkedin.com/jobs/view/4376769565,2026-09-28,63,63 applicants,217,matched,title,2026-09-30,2026-09-30T05:58:33,2026-09-30,,219,startDate,true,0,,,,,,2026-02-23,,false,,,,,,
+ot2zzfwn,Sr. Digital Circuit Design Engineer,OmniVision,,,,2026-02-05,237,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
+
+• Design and implement sensor timing control logic and contribute to ISP system-level integration
+
+• Participate in chip-level architecture definition, including analog interfaces, control logic, image data processing pipelines, and power/performance/area (PPA) trade-offs
+
+• Integrate and validate ISP data paths based on PRD, design specifications, and overall SoC architecture
+
+• Collaborate closely with CIS project leads and sensor digital/analog engineers for system integration and validation
+
+• Work with physical design teams on floor planning, timing closure, and DFT implementation
+
+• Perform full-chip integration and verification
+
+• Support chip bring-up, validation, and silicon debugging
+
+• Collaborate with algorithm and application engineers on image tuning, optimization, and qualification
+
+• Support silicon validation, debugging, and image quality tuning through production readiness
+
+Minimum Qualifications
+
+• Bachelor’s degree in Electrical Engineering, Computer Engineering, or a closely related field, or equivalent practical experience
+
+• At least 4 years of hands-on experience designing RTL digital logic using Verilog/System Verilog, or equivalent industry experience
+
+• Proficiency with scripting languages such as Python or Perl to support design, verification, and automation workflows
+
+• Experience analyzing and optimizing area, power, and performance (PPA) trade-offs in digital designs
+
+Preferred Qualifications
+
+• Master’s degree or PhD in Electrical Engineering, Computer Engineering, or a related discipline
+
+• Strong background in image sensor and camera system design or integration
+
+• Experience with high-speed MIPI interfaces (e.g., CSI-2 / D-PHY / C-PHY)
+
+• Practical experience with Image Signal Processing (ISP) architectures and pipelines
+
+Annual base salary for this role in California, US is expected to be between $130,600 - $160,000. Actual pay will be determined on several factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/ot2zzfwn,,https://www.linkedin.com/jobs/view/4390999955,2026-09-16,50,50 applicants,223,matched,title,2026-09-30,2026-09-30T05:59:16,2026-09-30,,237,startDate,true,0,,,,,,2026-02-05,,false,,,,,,
+oLQTzfwN,Sr. Digital Circuit Design Engineer,OmniVision,,,,2026-03-27,187,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
+
+• Design and implement sensor timing control logic and contribute to ISP system-level integration
+
+• Participate in chip-level architecture definition, including analog interfaces, control logic, image data processing pipelines, and power/performance/area (PPA) trade-offs
+
+• Integrate and validate ISP data paths based on PRD, design specifications, and overall SoC architecture
+
+• Collaborate closely with CIS project leads and sensor digital/analog engineers for system integration and validation
+
+• Work with physical design teams on floor planning, timing closure, and DFT implementation
+
+• Perform full-chip integration and verification
+
+• Support chip bring-up, validation, and silicon debugging
+
+• Collaborate with algorithm and application engineers on image tuning, optimization, and qualification
+
+• Support silicon validation, debugging, and image quality tuning through production readiness
+
+Minimum Qualifications
+
+• Bachelor’s degree in Electrical Engineering, Computer Engineering, or a closely related field, or equivalent practical experience
+
+• At least 5 years of hands-on experience designing RTL digital logic using Verilog/System Verilog, or equivalent industry experience
+
+• Proficiency with scripting languages such as Python or Perl to support design, verification, and automation workflows
+
+• Experience analyzing and optimizing area, power, and performance (PPA) trade-offs in digital designs
+
+Preferred Qualifications
+
+• Master’s degree or PhD in Electrical Engineering, Computer Engineering, or a related discipline
+
+• Strong background in image sensor and camera system design or integration
+
+• Experience with high-speed MIPI interfaces (e.g., CSI-2 / D-PHY / C-PHY)
+
+• Practical experience with Image Signal Processing (ISP) architectures and pipelines
+
+Annual base salary for this role in California, US is expected to be between $130,600 - $160,000. Actual pay will be determined on several factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/oLQTzfwN,,https://www.linkedin.com/jobs/view/4369173565,2026-09-09,63,63 applicants,166,matched,title,2026-09-30,2026-09-30T05:59:15,2026-09-30,,187,startDate,true,0,,,,,,2026-03-27,,false,,,,,,
+oawFvfwA,Sr. Digital Design Engineer,OmniVision,,,,2025-03-21,558,"Irvine, California",1,"Irvine, California",false,,United States,,0,"We are looking for Digital Design Engineer for design and development of next generation image sensors and related technologies. The candidate should have strong fundamentals in digital circuit design and ability to  independently design blocks with given specifications. The candidate should have the capability to lead, design and develop circuits, as well as experience in debugging/verifying design issues.
+
+As Digital Circuit Design Engineer, you will:
+
+• Primarily responsible for sensor timing control design and Image Signal Processing (ISP) system level integration.
+
+• Actively participate in chip level architecture definition, including analog interface/control, image data processing, power, performance, and area trade-offs.
+
+• Integrate and validate ISP data pipes according to PRD/design specification & system architecture of SoC CIS products
+
+• Work with CIS project lead, sensor digital & analog engineers for system integration & validation
+
+• Work with back-end team closely in floor planning, timing closure, and DFT.
+
+• Full-chip integration and verification.
+
+• Chip bring-up, validation, and debugging
+
+• Work with algorithm and application engineers for image tuning and qualification
+
+• Silicon validation, debugging & tuning
+
+Qualifications:
+
+• In depth hands-on experience in ASIC design flow: RTL coding, simulation, synthesis, static timing analysis, formality verification, DFT.
+
+• Extensive knowledge of all aspects of chip development: from design specification, architecture definition, low-power design, tape-out, chip validation, chip debugging, mass production, to customer support.
+
+• Be familiar with image sensor performance metrics, image signal processing (ISP), image sensor usage and integration into camera systems.
+
+• Experience/knowledge in image sensor and camera system is a plus
+
+• Minimum of 4 plus years of relevant experience.
+
+• MSEE or equivalent
+
+Annual base salary for this role in California, US is expected to be between $120,600 - $150,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",2179,https://jobs.jobvite.com/ovt/job/oawFvfwA,,https://www.linkedin.com/jobs/view/4188604180,2026-09-29,83,83 applicants,557,matched,title,2026-09-30,2026-09-30T05:58:58,2026-09-30,,558,startDate,true,0,,,,,,2025-03-21,,false,,,,,,
+oFqyzfwW,Sr. EDA Flow Engineer,OmniVision,,,,2026-02-04,238,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Position Overview:
+
+Work closely with design teams and CAD/EDA stakeholders to identify workflow bottlenecks across the chip development lifecycle—such as DRC/CDC/STA debug, regression triage, PPA convergence, and ECO iteration. This role focuses on building scalable data pipelines and models, and integrating AI-driven solutions into production CAD and verification flows.
+
+Responsibilities:
+
+• Identify and prioritize high-impact opportunities to apply AI/ML to chip design and verification workflows, spanning RTL-to-GDS, signoff, debug, and regression
+
+• Build and maintain data pipelines to extract, normalize, and analyze signals from EDA tool logs, reports, run artifacts, and design metadata (e.g., timing reports, violations, coverage, failures)
+
+• Develop ML models, heuristics, and analytics to improve efficiency and quality in areas such as STA, DRC/LVS, ECO optimization, and debug acceleration
+
+• Integrate AI solutions into existing CAD infrastructure, including automation systems, regression frameworks, job schedulers, and design databases
+
+• Collaborate with EDA vendors as needed for tool enablement, feature requests, debugging, and evaluation of vendor solutions versus internal implementations
+
+Requirements:
+
+• BS or MS in Electrical Engineering, Computer Science, or equivalent industry experience
+
+• 2+ years of experience in CAD/EDA flow engineering, design automation, or a related semiconductor workflow role
+
+• Strong programming skills, with Python required; experience with shell, Tcl, or Perl as needed
+
+• Hands-on experience applying machine learning to real-world engineering problems
+
+• Solid understanding of at least one major EDA workflow domain (e.g., place & route, physical layout, DRC/LVS, STA, power, CDC, DFT, simulation/regressions)
+
+• Experience working with large-scale, noisy operational data (EDA logs and reports) and building robust automation around it
+
+Annual base salary for this role in California, US is expected to be between $110,000 - $145,000. Actual pay will be determined by several factors such as relevant skills and experience, and the pay of employees in a similar role.
+
+EOE/Minorities/Females/Vet/Disability",2178,https://jobs.jobvite.com/ovt/job/oFqyzfwW,,https://www.linkedin.com/jobs/view/4415690390,2026-09-24,34,34 applicants,232,matched,title,2026-09-30,2026-09-30T06:00:30,2026-09-30,,238,startDate,true,0,,,,,,2026-02-04,,false,,,,,,
+oggjAfw9,Sr. Information Security Engineer,OmniVision,,,,2026-06-08,114,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Sr. Information Security Engineer
+
+Job Duties:
+
+• Design, implement, maintain, and support security tools/platforms to protect company’s computer systems, networks and data and assist with improving overall security posture applying knowledge in computer and information technology systems such as networks, applications, servers, cloud, authentication, emerging technologies, TCP/IP networking, Windows, Unix/Linux, and networking services such as SSL, DNS, SMTP, DHCP.
+
+• Handle security engineering, security operations, vulnerability assessment, vulnerability threat management, security incident management, threat intelligence, threat hunting, and cyber threat analytics by complying with Cyber Security Standards (ISO27001, NIST CSF, CIS Benchmarks).
+
+• Collaborate closely with cross-functional teams to ensure the confidentiality, integrity, and availability of company’s systems and data.
+
+• Manage security tools/platforms such as EDR, DLP, Web Proxy, Messaging, Vulnerability Management, Identity and Access Management.
+
+• Develop playbooks/runbook, operational and troubleshoot documentation for use.
+
+• Assist with Incident Response efforts.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Computer Science, Computer Information Technology, Cyber Security, or a related field.
+
+Must possess the knowledge or skills of:
+
+• Network performance – jitter, latency, and packet loss.
+
+• Ticketing systems – ServiceNow, ITG Ticketing, Service Catalog (ESC).
+
+• Compliance – PCI, HIPAA and PII regulations.
+
+• Configuration – IPSEC and SSL VPNs on Palo Alto firewalls.
+
+• Network optimization – TCP/IP, communication protocols, IPSec, GRE tunnels, Multicast technologies, and traffic-balancing methods.
+
+• Network security – Check Point Firewall versions NG, NGX R65/R70/R75/R77, VMware NSX network.
+
+• Cisco routers and switches – OSI model, TCP/IP protocol suite, BGP, OSPF, IPv4, and IPv6.
+
+Annual base salary for this role in California, US is expected to be between $154,960 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role",2162,https://jobs.jobvite.com/ovt/job/oggjAfw9,,https://www.linkedin.com/jobs/view/4369185471,2026-09-09,200,Over 200 applicants,93,matched,title,2026-09-30,2026-09-30T05:59:09,2026-09-30,,114,startDate,true,0,,,,,,2026-06-08,,true,,,,,,
+oEazzfwG,Sr. Information Security Engineer,OmniVision,,,,2026-02-05,237,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OMNIVISION is a leading developer of advanced digital imaging solutions.  They provide a diverse culture that works together on the development of cutting-edge imaging technology, products and solutions.  At OMNIVISION, they know that happy employees are critical to success, so they have created a culture focused on three tenets: Thrive, Engage, Innovate.
+
+OMNIVISION’s Information Security organization is looking for a hands-on Sr. Information Security Engineer to join its Security Engineering team.
+
+Under general direction, implements the design of a unified Cyber security infrastructure
+
+• The Engineer will be responsible for designing, implementing, maintaining, and supporting security tools / platforms to protect our organization's computer systems, networks and data and assist with improving overall security posture.
+
+• The Engineer will collaborate closely with cross-functional teams to ensure the confidentiality, integrity, and availability of our systems and data.
+
+• The Engineer will have the opportunity to work on a variety of projects and will require a strong sense of accountability.
+
+• Manage security tools / platforms such as EDR, DLP, Web Proxy, Messaging, Vulnerability Management, Identity and Access Management etc.
+
+• Developing playbooks/runbook, operational and troubleshooting documentation for use.
+
+• Assist with Incident Response efforts.
+
+Qualifications
+
+• Understanding of technology systems such as networks, applications, servers, cloud, authentication, and emerging technologies
+
+• Experience with TCP/IP networking, Windows, Unix/Linux, and networking services such as SSL, DNS, SMTP, DHCP, etc.
+
+• 8+ years of experience with implementing, maintaining and supporting security tools / platforms
+
+• Experience working with information security teams and functions, such as security engineering, security operations centers, vulnerability assessment, vulnerability threat management, security incident management, threat intelligence, threat hunting, and cyber threat analytics
+
+• Good communications skills (oral and written) with a history of successfully engaging with multiple levels of leadership
+
+• Strong understanding of Cyber Security Standards (ISO27001, NIST CSF, CIS Benchmarks)
+
+• Must be a self-starter, self-motivated, and able to work independently with little oversight
+
+• Proficiency in scripting languages, would be an advantage.
+
+• Ability to grasp new technologies quickly, prioritize and multitask on multiple responsibilities
+
+• Bachelor's Degree or commensurate experience required
+
+Annual base salary for this role in California, US is expected to be between  $120,000 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",2830,https://jobs.jobvite.com/ovt/job/oEazzfwG,,https://www.linkedin.com/jobs/view/4425547568,2026-09-25,124,124 applicants,232,matched,title,2026-09-30,2026-09-30T05:58:54,2026-09-30,,237,startDate,true,0,,,,,,2026-02-05,,false,,,,,,
+o0ePzfwm,Sr. Infrastructure Engineer,OmniVision,,,,2026-03-12,202,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Note-  This role focuses on IT infrastructure and systems automation, not software or QA test automation.
+
+Candidates with backgrounds primarily in test automation, CI/CD pipelines, or application QA will not be considered.
+
+We are seeking a Senior IT Automation Engineer to lead enterprise automation initiatives and improve operational efficiency across a global hybrid IT environment.
+
+Responsibilities
+
+• Design and implement automation using PowerShell, Azure Automation, Power Automate, Freshworks, Workato, and Postman
+
+• Build scalable automation for user/device provisioning, software deployment, and self-service workflows
+
+• Develop automation for hybrid cloud and on-prem environments
+
+• Integrate automation with Microsoft 365, Azure, Entra, Intune, Exchange, Teams, and SharePoint
+
+• Administer Active Directory, DNS, GPOs, and Windows Server (2016+)
+
+• Manage virtualization (VMware/Hyper-V) and NAS/SAN storage
+
+• Lead global automation projects, create dashboards, and maintain documentation
+
+Requirements
+
+• 8+ years in enterprise IT systems engineering
+
+• Advanced automation and scripting skills (PowerShell, Python, Batch)
+
+• Strong expertise in Active Directory and Microsoft 365
+
+• Experience with Azure and AWS
+
+• Background in enterprise virtualization and storage
+
+• Proven leadership in large-scale automation initiatives
+
+• Excellent communication and problem-solving skills
+
+On-Call & Availability
+
+• Participate in a rotating 24/7 on-call schedule
+
+• Respond to critical incidents and support after-hours deployments
+
+Annual base salary for this role in California, US is expected to be between  $120,000 - $155,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1824,https://jobs.jobvite.com/ovt/job/o0ePzfwm,,https://www.linkedin.com/jobs/view/4383983279,2026-09-22,182,182 applicants,194,matched,title,2026-09-30,2026-09-30T05:58:47,2026-09-30,,202,startDate,true,0,,,,,,2026-03-12,,false,,,,,,
+ogBLAfwW,Sr. Linux Engineer (Contract),OmniVision,,,,2026-09-08,22,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Pay rate : $60/hr - $75/hr
+
+Duration : 12  months contract
+
+As a Sr. Linux Engineer, you will play a pivotal role in ensuring the stability, security, and efficiency of our Linux server infrastructure and Virtual Desktop Infrastructure (VDI). Your responsibilities will encompass a broad spectrum of technical tasks, requiring both deep expertise in Linux systems administration and the ability to innovate and automate solutions to enhance operational efficiency and manage a wide range of activities, including the architecture, planning, implementation, design, capacity management, and operational support for the Linux Virtual and Physical infrastructure for an on-premises environment. This role also supports Electronic Design Automation (EDA) compute environments, including EDA tools administration and IBM LSF job scheduler management.
+
+Job Responsibilities
+
+• Oversee and execute system-based projects, write scripts to automate manual processes, and create system documentation and diagrams. Provide system administration and configuration of specialized mission applications and software.
+
+• Strategic Infrastructure Management: Lead the administration, maintenance, and support of our Linux server environment and VDI infrastructure, ensuring optimal performance and scalability to meet the evolving needs of the organization.
+
+• Automation & Configuration Management: Lead the design, implementation, and optimization of automation solutions leveraging Ansible and Ansible AWX for configuration management, provisioning, and orchestration of Linux servers and infrastructure components. Develop and maintain Ansible playbooks and AWX workflows to automate routine tasks, streamline system deployments, and enhance operational efficiency across the Linux environment.
+
+• EDA & IBM LSF Support: Administer and support Electronic Design Automation (EDA) software applications and compute environments. Configure, maintain, and troubleshoot the IBM LSF job scheduler, including queue configuration, resource allocation, license integration, and job throughput optimization to support engineering compute workloads.
+
+• Incident Resolution and Technical Escalations: Act as a point of escalation for complex technical issues, leveraging advanced troubleshooting skills to swiftly diagnose and resolve incidents, minimizing impact on business operations.
+
+• Advanced Problem Analysis and Resolution: Conduct in-depth analysis of system problems, particularly those related to hardware, EDA software applications, job scheduling systems, and operating system servers, employing sophisticated diagnostic techniques to implement effective solutions.
+
+• Comprehensive Documentation and Knowledge Management: Develop and maintain comprehensive documentation, including automation scripts and procedures, to streamline troubleshooting processes, enhance team collaboration, and ensure continuity of operations.
+
+• Root Cause Analysis and Problem Management: Lead root cause analysis efforts for critical problems and major incidents, identifying underlying issues and implementing preventive measures to mitigate future occurrences, thereby safeguarding business continuity.
+
+• Proactive Performance Monitoring and Security Compliance: Utilize advanced monitoring tools and command-line interface utilities to continuously assess server performance, identify potential vulnerabilities, and ensure adherence to stringent security standards.
+
+• Change Management and Risk Mitigation: Spearhead the planning, coordinating, and executing of system software upgrades, patches, and firmware updates, meticulously evaluating risks and impacts to minimize disruptions and maintain system integrity.
+
+• On-call Support and Vendor Coordination: Provide responsive support during both regular business hours and after-hours as part of on-call rotations, collaborating closely with external vendors, internal stakeholders, and cross-functional teams to swiftly resolve issues and optimize service delivery.
+
+• Continuous Improvement Initiatives: Proactively identify opportunities for process enhancements and technical innovations, advocating for adopting best practices and driving efficiency gains across the IT infrastructure landscape.
+
+• Effective Communication and Stakeholder Engagement: Interface with IT management, end-users, and departmental teams to communicate feedback, share insights, and champion initiatives aimed at enhancing operational excellence and delivering exceptional service quality.
+
+• By embracing these responsibilities, you will not only elevate the performance and reliability of our Linux infrastructure but also play a pivotal role in driving strategic initiatives that propel our organization toward greater technological innovation and business success.
+
+Job Requirements
+
+• BS degree or equivalent experience.
+
+• 5+ years of experience as a Linux Engineer, with expert-level Linux systems administration; senior candidates should have 10+ years demonstrating advanced, expert-level Linux administration.
+
+• In-depth knowledge and expertise in Linux systems, preferably RedHat / Ubuntu, RedHat Satellite
+
+• Patching and vulnerability management on a monthly basis.
+
+Version Control
+
+SVN, GitLab
+
+Scripting and Automation
+
+Bash, Python, Ansible, Ansible AWX
+
+Applications & Tools
+
+SOS, Jira, Confluence, Nagios, GitHub, Jenkins, Linux Kickstart, Cobbler, Puppet, Chef
+
+EDA Applications & Job Scheduling
+
+Working knowledge of how Electronic Design Automation (EDA) applications function and support their compute environments.
+
+Hands-on experience with the IBM LSF job scheduler, LSF RTM including installation, configuration, queue and resource management, license scheduler integration, and troubleshooting job scheduling issues.
+
+Hardware
+
+Hands-on experience with Dell PowerEdge GPU servers, Dell MX7000 Chassis and MX700 series blade configuration; Cisco UCS blades and rack servers.
+
+Security Tools
+
+Automox, Qualys, Axonius, Splunk SEIM agent deployment
+
+Storage
+
+NFS and iSCSI storage concepts; cron jobs and rsync functionality.
+
+Networking
+
+TCP/IP, VLAN, DNS, load balancing, and security concepts.
+
+Database Maintenance
+
+MySQL, PostgreSQL
+
+Virtualization
+
+Experience with VMware (version 8 and above) and Citrix StoreFront for Linux workloads.
+
+Transferable Skills
+
+• Strong communication and collaboration skills, with the ability to work with a diversity of people.
+
+• Ability to plan, organize, and manage time effectively; analytical problem-solving and project management skills.
+
+• Strong customer service orientation.
+
+• Ability to work independently and as part of a team.
+
+• Willingness to learn and adapt to new technologies and processes.
+
+This is a contract position and is not eligible for visa sponsorship.
+
+We are accepting applications only from candidates who are able to work directly on a W-2 or 1099 basis.
+
+Please note: We are not accepting submissions from third-party agencies, staffing firms, or other intermediaries for this position. Direct candidate applications only.",7031,https://jobs.jobvite.com/ovt/job/ogBLAfwW,,https://www.linkedin.com/jobs/view/4463568237,2026-09-08,55,55 applicants,0,matched,title,2026-09-30,2026-09-30T06:00:31,2026-09-30,,22,startDate,true,0,,,,,,2026-09-08,,false,,,,,,
+oGWKzfwF,Sr. Process Integration Engineer,OmniVision,,,,2026-02-25,217,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The Process Integration Engineer will use experience with device physics to develop advanced processes to their fullest extent, working in close collaboration with silicon and color foundries, image characterization, modeling and pixel design.
+
+Responsibilities:
+
+• Develops process modules to realize new CIS technologies
+
+• Collaborates with foundry partners to define and improve the CIS silicon, color and package process for each CIS technology
+
+• Provides support to production and design teams to improve yield and overall sensor performance
+
+• Analyzes and interprets bench and wafer level data
+
+• Designs and manages silicon split lots with respect to project goals and schedules
+
+Qualifications:
+
+• 2-10 yrs experience in Si based device technology (CMOS, CIS, etc), including developing advanced processes; CIS process experience is a plus (but not a requirement)
+
+• Device physics background is desired.
+
+• PhD or MS in Electrical Engineering or Physics.
+
+Annual base salary for this role in California, US is expected to be between $120,600 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1243,https://jobs.jobvite.com/ovt/job/oGWKzfwF,,,,,,,no_match,,2026-09-30,,2026-09-30,,217,startDate,true,0,,,,,,2026-02-25,,false,,,,,,
+osrKzfwW,Sr. Process Integration Engineer,OmniVision,,,,2026-02-26,216,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The Process Integration Engineer will use experience with device physics to develop advanced processes to their fullest extent, working in close collaboration with silicon and color foundries, image characterization, modeling and pixel design.
+
+Responsibilities:
+
+• Develops process modules to realize new CIS technologies
+
+• Collaborates with foundry partners to define and improve the CIS silicon, color and package process for each CIS technology
+
+• Provides support to production and design teams to improve yield and overall sensor performance
+
+• Analyzes and interprets bench and wafer level data
+
+• Designs and manages silicon split lots with respect to project goals and schedules
+
+Qualifications:
+
+• 4+ yrs experience in Si based device technology (CMOS, CIS, etc), including developing advanced processes; CIS process experience is a plus (but not a requirement)
+
+• Device physics background is desired.
+
+• PhD or MS in Electrical Engineering or Physics.
+
+Annual base salary for this role in California, US is expected to be between $120,600 - $155,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1241,https://jobs.jobvite.com/ovt/job/osrKzfwW,,,,,,,no_match,,2026-09-30,,2026-09-30,,216,startDate,true,0,,,,,,2026-02-26,,false,,,,,,
+oWz6yfwT,Sr. Product Engineer,OmniVision,,,,2025-12-18,286,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Design a characterization/testing plan and work with R&D teams and manufacturing engineers to resolve various technical issues to meet performance requirements; participate in product definition and provide DFM inputs; work in close collaboration with silicon foundry, imager characterization and pixel design; interact with foundry fab in improving all silicon process, color, and package issues; improve product yield and performance by process optimization and layout design update; analyze yield and drive corrective actions for yield improvements; drive characterization to finalize the product datasheet; work with pixel design group to design the most sophisticated and optimized pixel layout; work with characterization team to analyze and debug pixel device circuit and various image related issues; ramp up for image sensors and ASIC devices; coordinate with company's fab to drive semiconductor processing tool vendors to optimize processes, including raw material vendor, IMP tool vendor and photo resist vendor etc.; set up new tape out product process flows, inline handbooks, JDV check etc.; work with testing engineers to develop, verify and release testing program at CP or FT.Program coding, such as python, to improve work efficiency in data analysis.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Materials Science & Engineering, Physics, or related fields.
+
+Require two years of experience in process integration.
+
+Require experience/skills of:
+
+• Analyze the correlation among Yield/Defect/Inline/Reliability and reduce lost.
+
+• Assess CMOS Imaging Process to maximize the production capacity in Fab.
+
+• Construct multiple work systems with IT to reduce workload.
+
+• Release CMOS Imaging Process proposals to deduct the expense of material and improve the yield of wafer edge.
+
+• Conduct a course to enhance colleagues' vigilance against product defect disasters.
+
+• Implement customers’ IP design into new node and perform trial run in Fab.
+
+• Forecast yield precisely and estimate the target in next season.
+
+• Plan the process/testing priority of the product to trace issues during the mass production.
+
+• Ensure the quality of the wafers by the strict management from wafer-start to fab-out.
+
+Annual base salary for this role in California, US is expected to be between $131,706 - $135,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2473,https://jobs.jobvite.com/ovt/job/oWz6yfwT,,,,,,,no_match,,2026-09-30,,2026-09-30,,286,startDate,true,0,,,,,,2025-12-18,,false,,,,,,
+oX5fAfwB,Sr. Product Engineer,OmniVision,,,,2026-06-04,118,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Primary responsibility is to bring a new product from tapeout to mass production. Candidate designs a characterization/testing plan and works with R&D teams and manufacturing engineers on technical issues, resolving these issues to meet performance requirements on product requirement documents. For existing products, the senior product engineer will maintain and sustain technical support and actively participate in yield improvements.
+
+Description:
+
+• Owner of assigned products
+
+• Participate in product definition and provide DFM inputs.
+
+• Lead product introduction and ramp-up for image sensors and ASIC devices.
+
+• Analyze yield and drive corrective actions for yield improvements.
+
+• Drive characterization to finalize the product datasheet.
+
+• Co-work with testing engineers to develop, verify and release testing program at CP or FT.
+
+Preferred:
+
+• 4-6 yrs of Product Engineering experience in image sensor or memory (flash, SRAM, DRAM) or ASIC products.
+
+• Familiarity with silicon process will be plus.
+
+• Good communication and organizational skills
+
+• Strong analytical and problem solving skills.
+
+• Master's Degree in EE or Physics, or a related field.
+
+• Mandarin speaking proficiency (both spoken and written), strongly preferred due to daily interactions with our China-based team. This skill is crucial for effective communication, understanding project requirements, and fostering strong relationships within our international team.
+
+Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1732,https://jobs.jobvite.com/ovt/job/oX5fAfwB,,,,,,,no_match,,2026-09-30,,2026-09-30,,118,startDate,true,0,,,,,,2026-06-04,,false,,,,,,
+orAJzfw3,Sr. Product Quality Engineer,OmniVision,,,,2026-02-24,218,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"In this role, you will be:
+
+• Responsible for failure analysis of OmniVision Image Sensor products and issue failure analysis reports for customer failures.
+
+• Assure quality throughout the product life cycle: product development, manufacturing, failure analysis, production releases; and servicing
+
+• Drive and improve product, test, and quality processes
+
+• Lead quality improvement initiatives, implement proactive actions to reduce test quality incidents
+
+• The candidate will be required to assist with the analysis of customer returns and generating technical reports for internal and external consumption.
+
+• Drive customer problem analysis, corrective actions, and issue reports
+
+• Improve customer processes and advocate test quality in the context of end-user satisfaction
+
+• Drive internal Quality improvement activities such as design, test and supplier quality.
+
+Qualifications:
+
+• 5+ years of experience in Product, Quality or Test engineering in semiconductor industry (Knowledge of image sensor testing and quality is a plus)
+
+• Good understanding and experience of Electrical failure analysis of electronic component/module testing.
+
+• Dynamic, progressive, proactive, responsive, and hands-on experience and ability to work in multi-functional teams with minimum supervision
+
+• Strong interpersonal and communication skills, flexibility, team spirit, and positive approach.
+
+• Proficient in problem solving, report writing, and follow through
+
+• BS degree in Electrical or Computer Engineering
+
+• MS degree preferred
+
+Annual base salary for this role in California, US is expected to be between $120,500 - $150,500. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1819,https://jobs.jobvite.com/ovt/job/orAJzfw3,,https://www.linkedin.com/jobs/view/4376764997,2026-09-26,124,124 applicants,214,matched,title,2026-09-30,2026-09-30T05:58:59,2026-09-30,,218,startDate,true,0,,,,,,2026-02-24,,false,,,,,,
+ogmlzfwg,Sr. Sales Account Manager,OmniVision,,,,2026-01-21,252,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview
+
+The Sales Account Manager is responsible for driving revenue growth and managing key customer relationships within assigned territory. This role combines technical expertise, strategic account management, and strong interpersonal skills to identify new business opportunities, support existing customers, and collaborate cross-functionally to deliver customer-focused solutions. The ideal candidate is highly organized, customer-driven, and capable of managing multiple engagements in a fast-paced, technology-oriented environment.
+
+Responsibilities
+
+• Manage tier-1 accounts.
+
+• Collaborate closely with Business Development and Marketing teams to identify, qualify, and pursue strategic customer opportunities.
+
+• Own customer forecasting activities, including purchase planning, demand tracking, and order status management on a global scale.
+
+• Develop and leverage strong business and technical relationships to drive revenue growth and long-term customer success within the region.
+
+• Actively network within the industry to expand market presence and establish partnerships with key stakeholders and technology partners.
+
+• Provide clear communication of customer requirements, market trends, and competitive insights to internal teams.
+
+Qualifications
+
+• Bachelor’s or Master’s degree in Electrical Engineering (BSEE or MSEE) with 5-10 yrs relevant experience preferred.
+
+• Demonstrated success in a customer-facing role, ideally within technical sales, applications engineering, or account management.
+
+• Strong interpersonal, communication, and presentation skills, with the ability to influence, engage, and build trust with diverse technical and business audiences.
+
+Annual base salary for this role in California, US is expected to be between $125,500 - $165,000.
+Actual pay will be determined on several factors such as relevant skills and experience, the pay of employees in the similar role etc.",1921,https://jobs.jobvite.com/ovt/job/ogmlzfwg,,https://www.linkedin.com/jobs/view/4362530926,2026-09-15,59,59 applicants,237,matched,title,2026-09-30,2026-09-30T06:00:29,2026-09-30,,252,startDate,true,0,,,,,,2026-01-21,,false,,,,,,
+oqSBzfwc,Sr. Staff Image Scientist,OmniVision,,,,2026-02-10,232,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities:
+
+• Research new image and color processing or computer vision techniques and technologies for digital camera systems
+
+• Design and develop new algorithms for image and color processing or computer vision
+
+• Expand our ISP or CV solution to new levels of functionality, quality, and performance
+
+• Assist the hardware design team with algorithm implementation and validation
+
+• Image quality tuning and measure
+
+• Algorithm documentation
+
+Qualifications:
+
+• MS/PhD in Electrical Engineering or Computer Science with 10+ yrs of experience.
+
+• Familiar with camera ISP algorithm and pipeline or computer vision algorithms
+
+• A solid working understanding of colorimetry and image sensing technology
+
+• Hands on experience with mobile cameras a plus
+
+• Strong C/C++ and MATLAB programming skills
+
+• Organizational skills, computer skills, writing and researching skills
+
+Annual base salary for this role in California, US is expected to be between  $170,000 - $200,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1161,https://jobs.jobvite.com/ovt/job/oqSBzfwc,,https://www.linkedin.com/jobs/view/4405393674,2026-09-22,98,98 applicants,224,matched,title,2026-09-30,2026-09-30T05:59:20,2026-09-30,,232,startDate,true,0,,,,,,2026-02-10,,false,,,,,,
+o11yzfwT,Staff Process Integration Engineer,OmniVision,,,,2026-02-03,239,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Develop advanced CMOS image sensor (CIS) process to meet performance targets under a defined schedule and budget.
+•    Collaborate with foundry partners to define and improve the CIS silicon, color and package process for each CIS technology.
+•    Provide support to production and design teams to improve yield and overall sensor performance, establishing process flow applicable to mass production.
+•    Design and manage silicon split lots with respect to project goals and schedules to achieve performance targets, meet production requirements, and research and development of future technologies.
+•    Analyze and interpret large volumes of bench and wafer level data; feedback to pixel and wafer split design to optimize design and improve performance.
+•    Work in close collaboration with internal pixel design and characterization engineers, and external foundry partners; primary liaison between internal and external teams to drive effective technical communication and discussion.
+•    Work with characterization engineers to analyze data and test results, provide feedback on evaluation methods and settings to improve testing efficiency and accuracy; coordinate evaluation schedule and equipment to enable testing.
+•    Continuously track technology improvement and state of art developed by foundry; select and implement appropriate fabrication processes to meet CIS performance and yield targets; closely monitor lot processing and swiftly address/feedback any issues to foundry to mitigate product loss and schedule delay.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Electrical Engineering, Computer Engineering, or a related field.
+
+Two years of experience in developing and fabricating semiconductor devices.
+
+Required experience or skills in:
+
+•    Developing and fabricating semiconductor devices, including designing and managing experimental splits to achieve performance targets.
+•    Photolithography and microfabrication techniques (electron beam, thermal deposition, sputtering, reactive ion etching) in a clean room environment.
+•    Silicon and semiconductor device testing, including electron microscopy (SEM, TEM), atomic force microscopy (AFM), spectroscopy techniques (photo- and fluoro- luminescence, Fourier transform IR spectroscopy, UV-vis), and optical and electrical device characterization.
+•    Defining project roadmaps, performance targets, and schedules.
+
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2661,https://jobs.jobvite.com/ovt/job/o11yzfwT,,https://www.linkedin.com/jobs/view/4368514205,2026-09-28,167,167 applicants,237,matched,title,2026-09-30,2026-09-30T05:59:14,2026-09-30,,239,startDate,true,0,,,,,,2026-02-03,,false,,,,,,
+oQtWufwt,Staff Software Algorithm Engineer,OmniVision,,,,2024-12-05,664,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OmniVision Technologies, Inc. – Santa Clara is currently looking for Staff  Algorithm Engineer to support ISP algorithm development.
+
+Responsibilities:
+
+• Research new image and color processing or computer vision techniques and technologies for digital camera systems
+
+• Design and develop new algorithms for image and color processing or computer vision
+
+• Expand our ISP or CV solution to new levels of functionality, quality, and performance
+
+• Assist the hardware design team with algorithm implementation and validation
+
+• Image quality tuning and measure
+
+• Algorithm documentation
+
+Qualifications:
+
+• MS/PhD in Electrical Engineering or Computer Science with 6+ yrs of experience.
+
+• Familiar with camera ISP algorithm and pipeline or computer vision algorithms
+
+• A solid working understanding of colorimetry and image sensing technology
+
+• Hands on experience with mobile cameras a plus
+
+• Strong C/C++ and MATLAB programming skills
+
+• Organizational skills, computer skills, writing and researching skills
+
+Annual base salary for this role in California, US is expected to be between  $150,000 - $180,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
+
+EOE/Minorities/Females/Vet/Disability",1294,https://jobs.jobvite.com/ovt/job/oQtWufwt,,https://www.linkedin.com/jobs/view/4091538873,2026-09-24,122,122 applicants,658,matched,title,2026-09-30,2026-09-30T05:58:32,2026-09-30,,664,startDate,true,0,,,,,,2024-12-05,,false,,,,,,
+oLh1zfwm,Supply Chain Analyst,OmniVision,,,,2026-04-21,162,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Supply Chain Analyst
+
+Job Duties:
+
+• Control supply chain from release of new device to mass production of CMOS sensors.
+
+• Identify functions and properties difference when a new version flow is established with various photo masks.
+
+• Create wafer loading request by foundry service form and activate lot handling in OVT internal system.
+
+• Oversee and regulate the schedule in various subcontractors by daily WIP report.
+
+• Estimate wafer cycle time for each device.
+
+• Modify the production schedule and manage safety inventory to fit the demand changes from sales or engineers.
+
+• Maintain the material requirements planning and analyze the wafer yield die, silicon version and cycle time to load bare wafers.
+
+• Realize process flow from wafer, color filter to assembly, and also understand shared material for each device to mediate inventory by weekly customer demand.
+
+• Enhance the FAB out schedule by skip unnecessary layers to fit abruptly upside demand.
+
+• Perform planning for the required material based on the sales forecast.
+
+• Administer device milestone and demand table to assess the quantity and quality for customer sample.
+
+• Arrange the purpose for wafers by the qualification map and split table from engineer and product management team.
+
+• Coordinate with related parties, including engineering, suppliers, overseas production facilities to meet output plan.
+
+• Collaborate with product and process engineers to develop mask saving flow to reduce production cost.
+
+• Establish the schedule of backend flow for engineering device and based on the testing result, arrange production flow.
+
+• Communicate with fulfillment team in Taiwan and China to monitor the output schedule.
+
+• Regulate the supply plan by the weekly meeting with Taiwan and China fulfillment and foundry team.
+
+• Liaison with various subcontractors and coordinate with product planners in Asia and product sales managers.
+
+• Interface with sales, marketing and product management teams to resolve the issues of sales department and production supply.
+
+• Collaborate with product engineer to resolve unexpected issues such as petal flare, white pixel image, or particle wafer.
+
+• Coordinate with project management team to rearrange the supply plan for customers when engineering issue occurs.
+
+• Improve yield die and boost reliability by qualification testing result.
+
+Requirements:
+
+Master’s degree or foreign equivalent degree in Industrial Engineering, Supply Chain Management, Logistics Engineering or a closely related field.
+
+With graduate-level courses of:
+
+• Product Development & Management
+
+• Operation research
+
+• Engineering management
+
+• Database design
+
+• Manufacturing system
+
+• Supply chain analysis
+
+• Lean six sigma
+
+• Data analytics
+
+Must possess the skills of:
+
+• Manufacturing fundamentals and production processes.
+
+• Cost drivers in engineering and production.
+
+• Data warehouse plans.
+
+• SQL.
+
+• Supply Chain Analysis.
+
+• Inventory management and control.
+
+• Demand forecasting and planning.
+
+• Lean Six Sigma Methodologies.
+
+Annual base salary for this role in California, US is expected to be between $100,589 - $105,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3293,https://jobs.jobvite.com/ovt/job/oLh1zfwm,,,,,,,no_match,,2026-09-30,,2026-09-30,,162,startDate,true,0,,,,,,2026-04-21,,false,,,,,,

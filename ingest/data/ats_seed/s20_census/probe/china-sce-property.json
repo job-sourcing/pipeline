@@ -2,10 +2,153 @@
  "brand": "China SCE Property",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:32:52.182Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:24:52.664Z",
+ "candidates": [
+  {
+   "url": "https://chinajobsdaily.com/",
+   "title": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for foreigners in China. - Home",
+   "status": 200,
+   "bytes": 50628,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.echinacities.com/",
+   "title": "China Jobs – Job Opportunities for Expats in China|招聘外国人|外籍招聘网|外国人才网|招聘外教|外国人招聘|外籍人才网 - eChinacities.com",
+   "status": 200,
+   "bytes": 995704,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinacities Jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL, E",
+   "backend": "direct"
+  },
+  {
+   "url": "https://echinacareers.com/",
+   "title": "eChinaCareers",
+   "status": 200,
+   "bytes": 109404,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "eChinaCareers is the first and only website designed solely to help foreign talents find their dream job in China. Our jobs all specifically recruit at the inte",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Recruitment of China SCE - China SCE Group Holdings Limited",
+   "u": "http://www.z-s-a.com/en/join_recruit.html",
+   "s": "Its business system covers commercial real estate, cultural tourism real estate, industrial real estate, residential real estate, property management, long-Rent"
+  },
+  {
+   "t": "CHINA SCE PROPERTY HOLDINGS LIMITED - cpjobs.com",
+   "u": "https://www.cpjobs.com/hk/en/company/113410",
+   "s": "Company info Location RM 1606 NANYANG PLAZA, 57 HUNG TO ROAD, KWUN TONG, KOWLOON, , Now hiring"
+  },
+  {
+   "t": "China SCE Group Holdings Limited",
+   "u": "https://www.sce-re.com/en/index_sitemap.html",
+   "s": "Established in 1987 and headquartered in Shanghai, China SCE Group Holdings Limited (the \"Company\") is an integrated urban services provider focusing on real es"
+  },
+  {
+   "t": "Contact Us - China SCE Group Holdings Limited",
+   "u": "https://www.sce-re.com/en/join_contact2041.html",
+   "s": "Founded in 1987, Zhongjun Group, headquartered in Shanghai, is a comprehensive urban operation service provider focusing on real estate development and related "
+  },
+  {
+   "t": "中国石化招聘网站 - job.sinopec.com",
+   "u": "https://job.sinopec.com/?/index",
+   "s": "中国石化 中石化 校园招聘 校招 社会招聘 社招 优化配置 内部招聘 毕业生校园招聘 毕业生专项招聘 中石化校招"
+  },
+  {
+   "t": "SCE Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sce",
+   "s": "Find out what works well at SCE from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for p"
+  },
+  {
+   "t": "China Resources Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/China-Resources-jobs",
+   "s": "Find your ideal job on Jobsdb with 1883 China Resources jobs (10 at China Resources) listed in Hong Kong. View all the China Resources vacancies now with new jo"
+  },
+  {
+   "t": "CHINA SCE PROPERTY HOLDINGS LIMITED - cpjobs.com",
+   "u": "https://www.cpjobs.com/hk/zh/company/113410",
+   "s": "公司資料 地點 RM 1606 NANYANG PLAZA, 57 HUNG TO ROAD, KWUN TONG, KOWLOON, , 招聘中"
+  },
+  {
+   "t": "Recruitment of China SCE - China SCE Group Holdings Limited",
+   "u": "http://www.z-s-a.com/en/join_recruit.html",
+   "s": "Its business system covers commercial real estate, cultural tourism real estate, industrial real estate, residential real estate, property management, long-Rent"
+  },
+  {
+   "t": "China SCE Group Holdings Limited",
+   "u": "https://www.sce-re.com/en/index_sitemap.html",
+   "s": "Established in 1987 and headquartered in Shanghai, China SCE Group Holdings Limited (the \"Company\") is an integrated urban services provider focusing on real es"
+  },
+  {
+   "t": "CHINA SCE PROPERTY HOLDINGS LIMITED - cpjobs.com",
+   "u": "https://www.cpjobs.com/hk/en/company/113410",
+   "s": "Company info Location RM 1606 NANYANG PLAZA, 57 HUNG TO ROAD, KWUN TONG, KOWLOON, , Now hiring"
+  },
+  {
+   "t": "SCE Profile - China SCE Group Holdings Limited",
+   "u": "https://www.sce-re.com/en/about7.html",
+   "s": "Established in 1987 and headquartered in Shanghai, China SCE Group Holdings Limited (the \"Company\") is an integrated urban services provider focusing on real es"
+  },
+  {
+   "t": "Contact Us - China SCE Group Holdings Limited",
+   "u": "http://www.z-s-a.com/en/join_contact.html",
+   "s": "Founded in 1987, Zhongjun Group, headquartered in Shanghai, is a comprehensive urban operation service provider focusing on real estate development and related "
+  },
+  {
+   "t": "China Resources Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/China-Resources-jobs",
+   "s": "Find your ideal job on Jobsdb with 1883 China Resources jobs (10 at China Resources) listed in Hong Kong. View all the China Resources vacancies now with new jo"
+  },
+  {
+   "t": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for ...",
+   "u": "https://chinajobsdaily.com/",
+   "s": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!"
+  },
+  {
+   "t": "China Jobs - Job Opportunities for Expats in China - eChinaJOBs",
+   "u": "https://jobs.echinacities.com/",
+   "s": "eChinacities Jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL, E"
+  },
+  {
+   "t": "Recruitment of China SCE - China SCE Group Holdings Limited",
+   "u": "http://www.z-s-a.com/en/join_recruit.html",
+   "s": "Its business system covers commercial real estate, cultural tourism real estate, industrial real estate, residential real estate, property management, long-Rent"
+  },
+  {
+   "t": "中国化学工程集团有限公司官网 - cncec.cn",
+   "u": "https://www.cncec.cn/human-resources/recruitment-info",
+   "s": "中国化学工程集团有限公司官网 关于中国化学工程集团有限公司公开招聘集团总部相关岗位人员的公告 中化学建设投资集团有限公司2024年公开招聘公告 中化学南方建设投资有限公司2024年公开招聘公告 中国化学诚东资产管理有限公司北京、上海、天津招聘公告 中化学西南工程科技有限公司招聘 ..."
+  },
+  {
+   "t": "Southern California Edison",
+   "u": "https://apply.edisoncareers.com/",
+   "s": "Personal Information Request Notice Privacy Notice Terms of Service Copyright © 2024 Southern California Edison."
+  },
+  {
+   "t": "Home - China SCE Group Holdings Limited",
+   "u": "http://www.z-s-a.com/en/index.html",
+   "s": "Established in 1987 and headquartered in Shanghai, China SCE Group Holdings Limited (the \"Company\") is an integrated urban services provider focusing on real es"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://chinajobsdaily.com/",
+  "platform": "custom",
+  "title": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for foreigners in China. - Home"
+ },
+ "verdict": "custom_surface"
 }

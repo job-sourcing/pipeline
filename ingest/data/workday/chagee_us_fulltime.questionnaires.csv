@@ -1,0 +1,4 @@
+﻿questionnaireId,instructions,questionId,order,question,required,type,answers
+b5fd469ab403100118caf7e6dcb90000,,d7fba7a3e9e41002eed184715e4c0000,a,Singapore Citizenship Status,true,Multiple Choice - Single Select,Citizen; Permanent Resident; Foreigner
+b5fd469ab403100118caf7e6dcb90000,,d7fba7a3e9e41002eed184715e4c0004,a.c,"Kindly describe the type of pass you're holding in Singapore. (e.g. Employment Pass, Work Pass, S Pass, Personalized Employment Pass, LTVP etc.)",true,Text,
+b5fd469ab403100118cafc1c3b550000,,d7fba7a3e9e41002eed18209fc310000,a,Do you possess a vehicle?,true,Multiple Choice - Single Select,Yes; No

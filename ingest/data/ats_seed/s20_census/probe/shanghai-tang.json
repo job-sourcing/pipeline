@@ -2,13 +2,13 @@
  "brand": "Shanghai Tang",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:37:37.466Z",
+ "ts": "2026-09-30T06:16:52.392Z",
  "candidates": [
   {
    "url": "https://fashionunited.fr/fashion-jobs/travailler-chez/shanghai-tang-recrutement",
    "title": "Offres d&#x27;emploi chez Shanghai Tang",
    "status": 200,
-   "bytes": 59612,
+   "bytes": 59613,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -20,7 +20,7 @@
    "url": "https://www.smartshanghai.com/jobs/",
    "title": "Work in Shanghai | SmartShanghai",
    "status": 200,
-   "bytes": 74065,
+   "bytes": 74292,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -30,15 +30,15 @@
   },
   {
    "url": "https://www.randstad.cn/en/jobs/shanghai/shanghai/",
-   "title": "299 Jobs in Shanghai, Shanghai | Randstad",
+   "title": "",
    "status": 200,
-   "bytes": 644473,
+   "bytes": 63007,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Browse 299 jobs in Shanghai, Shanghai. Choose from temporary and permanent jobs that'll help you reach your career goals.",
-   "backend": "supabase"
+   "backend": "zenrows"
   }
  ],
  "results": [

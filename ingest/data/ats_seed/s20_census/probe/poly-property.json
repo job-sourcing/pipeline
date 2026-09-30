@@ -2,10 +2,160 @@
  "brand": "Poly Property",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:49:33.353Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:33:26.997Z",
+ "candidates": [
+  {
+   "url": "https://jobs.ashbyhq.com/polymarket",
+   "title": "",
+   "status": 200,
+   "bytes": 6941,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "ashby:polymarket",
+   "score": 17,
+   "snippet": "Explore career opportunities at Polymarket and join a dynamic team shaping the future of information markets.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.polyhongkong.com/EN/join/job",
+   "title": "Poly Property",
+   "status": 200,
+   "bytes": 19877,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "China Poly Property Group Corporation (Poly Group) is a large state-owned enterprise under the supervision and administration of the State-owned Assets Supervis",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.polymarket.com/",
+   "title": "Polymarket: Careers",
+   "status": 200,
+   "bytes": 257677,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Polymarket and work across engineering, product, design, operations, compliance, marketing, and people teams to build transparent, real-time forecasting fo",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "24 Poly Property jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/poly-property-jobs",
+   "s": "Today's top 24 Poly Property jobs in United States. Leverage your professional network, and get hired. New Poly Property jobs added daily."
+  },
+  {
+   "t": "200Linkedin Poly Property Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/linkedin-poly-property-jobs",
+   "s": "Today's top 200 Linkedin Poly Property jobs in United States. Leverage your professional network, and get hired. New Linkedin Poly Property jobs added daily."
+  },
+  {
+   "t": "Poly Property - polyhongkong.com",
+   "u": "https://www.polyhongkong.com/EN/join/job",
+   "s": "China Poly Property Group Corporation (Poly Group) is a large state-owned enterprise under the supervision and administration of the State-owned Assets Supervis"
+  },
+  {
+   "t": "城市传奇 - Poly Property",
+   "u": "https://polyhongkong.com/en/",
+   "s": "China Poly Property Group Corporation (Poly Group) is a large state-owned enterprise under the supervision and administration of the State-owned Assets Supervis"
+  },
+  {
+   "t": "Polymarket: Careers",
+   "u": "https://careers.polymarket.com/",
+   "s": "Join Polymarket and work across engineering, product, design, operations, compliance, marketing, and people teams to build transparent, real-time forecasting fo"
+  },
+  {
+   "t": "Polymarket Jobs",
+   "u": "https://jobs.ashbyhq.com/polymarket",
+   "s": "Explore career opportunities at Polymarket and join a dynamic team shaping the future of information markets."
+  },
+  {
+   "t": "Poly Property Jobs (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://my.jobstreet.com/poly-property-jobs",
+   "s": "Find your ideal job at Jobstreet with 24 Poly Property jobs found in Malaysia. View all our Poly Property vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "人才招聘 - poly.com.cn",
+   "u": "https://www.poly.com.cn/poly/rlzy/rczp/A044008002Gone1.html",
+   "s": "CHINA POLY GROUP CORPORATION LIMITED 保国利民 追求卓越 Safeguard the conuntry & Serve the people Strive for excellence 人力资本 人才招聘"
+  },
+  {
+   "t": "24 Poly Property jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/poly-property-jobs",
+   "s": "Today's top 24 Poly Property jobs in United States. Leverage your professional network, and get hired. New Poly Property jobs added daily."
+  },
+  {
+   "t": "Poly Property - polyhongkong.com",
+   "u": "https://www.polyhongkong.com/EN/join/index",
+   "s": "China Poly Property Group Corporation (Poly Group) is a large state-owned enterprise under the supervision and administration of the State-owned Assets Supervis"
+  },
+  {
+   "t": "Poly Property Jobs in Hong Kong SAR - Jul 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/poly-property-jobs/in-Hong-Kong-SAR",
+   "s": "Find your ideal job at Jobsdb with 2 Poly Property jobs found in Hong Kong SAR. View all our Poly Property vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "200Linkedin Poly Property Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/linkedin-poly-property-jobs",
+   "s": "Today's top 200 Linkedin Poly Property jobs in United States. Leverage your professional network, and get hired. New Linkedin Poly Property jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 1,000 Poly University Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Poly-University-jobs.html",
+   "s": "Browse 1,336 Poly University jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Career Opportunities | Human Resources Office",
+   "u": "https://www.polyu.edu.hk/hro/careers/",
+   "s": "Career opportunities available in PolyU Rooted in 90 years of heritage and intellectual achievement, The Hong Kong Polytechnic University (PolyU) has ev..."
+  },
+  {
+   "t": "Poly Property Jobs (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://my.jobstreet.com/poly-property-jobs",
+   "s": "Find your ideal job at Jobstreet with 24 Poly Property jobs found in Malaysia. View all our Poly Property vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Poly Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-poly-jobs.html",
+   "s": "613 Poly jobs available on Indeed.com. Apply to Cashier, Business Analytics Analyst, Quality Assurance Manager and more!"
+  },
+  {
+   "t": "24 Poly Property jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/poly-property-jobs",
+   "s": "Today's top 24 Poly Property jobs in United States. Leverage your professional network, and get hired. New Poly Property jobs added daily."
+  },
+  {
+   "t": "Job Search | Browse Open Positions on PolyCareers",
+   "u": "https://polycareers.com/job-search/search",
+   "s": "Filter thousands of open roles by title, location, and category. New jobs added daily — find your next opportunity on PolyCareers today."
+  },
+  {
+   "t": "Poly Property Jobs (with Salaries) - Sep 2026 | Jobstreet",
+   "u": "https://my.jobstreet.com/poly-property-jobs",
+   "s": "Find your ideal job at Jobstreet with 24 Poly Property jobs found in Malaysia. View all our Poly Property vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Poly Property Jobs in Hong Kong - Nov 2024 | Jobsdb",
+   "u": "https://hk.jobsdb.com/poly-property-jobs",
+   "s": "Find your ideal job at Jobsdb with 3 Poly Property jobs found in Hong Kong. View all our Poly Property vacancies now with new jobs added daily!"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.ashbyhq.com/polymarket",
+  "title": "",
+  "status": 200,
+  "bytes": 6941,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "ashby:polymarket",
+  "score": 17,
+  "snippet": "Explore career opportunities at Polymarket and join a dynamic team shaping the future of information markets.",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

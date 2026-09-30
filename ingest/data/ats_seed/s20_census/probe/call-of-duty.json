@@ -156,5 +156,11 @@
   "platform": "workday",
   "title": "call of duty Search results | Find available job openings at Activision"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Surface careers.activision.com (workday/phenom) belongs to Activision — a US (Microsoft-owned) publisher; Call of Duty is a US game franchise, not a Chinese company's career surface.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

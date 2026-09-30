@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers | BlueStar"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "bluestarinc.com is BlueStar Inc, US/UK value-added distributor of POS/payment/RFID hardware — homonym, unrelated to ChemChina Bluestar (Bluestar Silicones/Elkem)",
+  "ts": "2026-09-30T10:18Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

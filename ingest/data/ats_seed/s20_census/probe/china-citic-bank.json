@@ -161,5 +161,11 @@
   "snippet": "China CITIC Bank International's footprint includes 21 branches, two business banking centres and one private banking centre in Hong Kong, as well as branches i",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "hongkong_only: authentic CNCBI Workday board (cncbinternational.wd3.myworkdayjobs.com/CNCBIExternalCareerSite) — 82 jobs total; sampled 40 = all 'China Hong Kong' + Singapore roles; CXS searches 'New York'/'Los Angeles'/'United States' return 0 US rows (US branches exist but no postings).",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

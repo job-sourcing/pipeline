@@ -2,13 +2,13 @@
  "brand": "LZ Technology",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:48:56.706Z",
+ "ts": "2026-09-30T06:12:05.787Z",
  "candidates": [
   {
    "url": "https://lzt.biz/careers/",
    "title": "Careers &amp; Internships - LZ Technology Inc.",
    "status": 200,
-   "bytes": 162724,
+   "bytes": 162725,
    "markers": [
     "adp"
    ],
@@ -22,7 +22,7 @@
    "url": "https://lzt.biz/",
    "title": "Home - LZ Technology Inc.",
    "status": 200,
-   "bytes": 188815,
+   "bytes": 188816,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -48,7 +48,7 @@
    "s": "Yes, LZ Technology, Inc. has 14 open jobs. Before applying to LZ Technology, Inc., it's a good idea to research the company, and read reviews from employees wor"
   },
   {
-   "t": "LZ Technology, Inc. Jobs and Careers - Indeed",
+   "t": "LZ Technology, Inc. Jobs and Careers | Indeed.com",
    "u": "https://www.indeed.com/cmp/Lz-Technology,-Inc./jobs",
    "s": "14 LZ Technology, Inc. jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
   },
@@ -63,14 +63,14 @@
    "s": "Search job openings at LZ Technology. 17 LZ Technology jobs including salaries, ratings, and reviews, posted by LZ Technology employees."
   },
   {
+   "t": "Top 15 Lz technology Jobs | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=lz+technology",
+   "s": "15 Lz technology jobs available. See salaries, compare reviews, easily apply, and get hired. New Lz technology careers are added daily on SimplyHired.com."
+  },
+  {
    "t": "LZ TECHNOLOGY Employment and Reviews | SimplyHired",
    "u": "https://www.simplyhired.com/browse-jobs/companies/Lz-Technology,-Inc.",
    "s": "Read LZ TECHNOLOGY reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at LZ TECHNOLOGY"
-  },
-  {
-   "t": "Working at LZ Technology | Glassdoor",
-   "u": "https://www.glassdoor.com/Overview/Working-at-LZ-Technology-EI_IE658457.11,24.htm",
-   "s": "See what employees say it's like to work at LZ Technology. Salaries, reviews, and more - all posted by employees working at LZ Technology."
   },
   {
    "t": "Careers & Internships - LZ Technology Inc.",
@@ -83,7 +83,7 @@
    "s": "LZ Technology delivers quietly essential mission support across engineering, IT, operations, and talent programs for federal and mission-driven teams."
   },
   {
-   "t": "LZ Technology, Inc. Careers and Employment - Indeed",
+   "t": "LZ Technology, Inc. Careers and Employment | Indeed.com",
    "u": "https://www.indeed.com/cmp/Lz-Technology,-Inc.",
    "s": "Yes, LZ Technology, Inc. has 14 open jobs. Before applying to LZ Technology, Inc., it's a good idea to research the company, and read reviews from employees wor"
   },
@@ -98,19 +98,19 @@
    "s": "Search job openings at LZ Technology. 17 LZ Technology jobs including salaries, ratings, and reviews, posted by LZ Technology employees."
   },
   {
-   "t": "LZ Technology, Inc. - LinkedIn",
-   "u": "https://www.linkedin.com/company/lz-technology-inc",
-   "s": "LZ Technology, Inc. is a Woman-Owned Small Business (WOSB) engineering firm based in Houston, Texas, providing engineering, mission operations, systems integrat"
-  },
-  {
    "t": "Top 15 Lz technology Jobs | SimplyHired",
    "u": "https://www.simplyhired.com/search?q=lz+technology",
    "s": "15 Lz technology jobs available. See salaries, compare reviews, easily apply, and get hired. New Lz technology careers are added daily on SimplyHired.com."
   },
   {
-   "t": "Top 14 LZ Technology Jobs in Houston | SimplyHired",
-   "u": "https://www.simplyhired.com/search?q=LZ+Technology&amp;l=houston",
-   "s": "14 LZ Technology jobs available in Houston. See salaries, compare reviews, easily apply, and get hired. New LZ Technology careers in Houston are added daily on "
+   "t": "LZ Technology, Inc. - LinkedIn",
+   "u": "https://www.linkedin.com/company/lz-technology-inc",
+   "s": "LZ Technology, Inc. is a Woman-Owned Small Business (WOSB) engineering firm based in Houston, Texas, providing engineering, mission operations, systems integrat"
+  },
+  {
+   "t": "Top 15 LZ Technology Jobs in Houston | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=LZ+Technology&l=houston",
+   "s": "15 LZ Technology jobs available in Houston. See salaries, compare reviews, easily apply, and get hired. New LZ Technology careers in Houston are added daily on "
   },
   {
    "t": "Careers & Internships - LZ Technology Inc.",
@@ -123,14 +123,14 @@
    "s": "LZ Technology is a caring, family oriented employer that places employees first and foremost. Management works tirelessly to ensure continued employment for all"
   },
   {
+   "t": "LZ Technology, Inc. Jobs and Careers | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Lz-Technology,-Inc./jobs",
+   "s": "14 LZ Technology, Inc. jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
    "t": "Home - LZ Technology Inc.",
    "u": "https://lzt.biz/",
    "s": "LZ Technology delivers quietly essential mission support across engineering, IT, operations, and talent programs for federal and mission-driven teams."
-  },
-  {
-   "t": "LZ Technology Jobs & Careers - 17 Open Positions | Glassdoor",
-   "u": "https://www.glassdoor.com/Jobs/LZ-Technology-Jobs-E658457.htm",
-   "s": "Search job openings at LZ Technology. 17 LZ Technology jobs including salaries, ratings, and reviews, posted by LZ Technology employees."
   }
  ],
  "dict_hits": [],

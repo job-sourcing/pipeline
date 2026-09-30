@@ -2,10 +2,153 @@
  "brand": "Cheung Kong Holdings",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:13:56.404Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:44:59.514Z",
+ "candidates": [
+  {
+   "url": "https://www.techjobasia.com/companies/m-8LoeO4Q5KNxJf7FMCxHA---Cheung-Kong-(Holdings)-Limited",
+   "title": "Job openings at Cheung Kong (Holdings) Limited in Central and Western, Hong Kong, China | Apply now at TechJobAsia",
+   "status": 200,
+   "bytes": 290272,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Working at Cheung Kong (Holdings) Limited in Central and Western, Hong Kong, China, Apply now! As the leading job board specializing in the tech industry, we co",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.ckah.com/careers",
+   "title": "Careers | CKA",
+   "status": 200,
+   "bytes": 110209,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Please send application enclosing resume stating career and salary history, expected salary and date of availability to The Senior Manager, Human Resources Depa",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.cki.com.hk/english/careers/home/index.htm",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 11097,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Please send application enclosing resume stating career and salary history, expected salary and date of availability to The Human Resources Manager, CK Infrastr",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Career Opportunities - Cheung Kong Holdings",
+   "u": "https://www.ckh.com.hk/en/about/opportunities.php",
+   "s": "CK Hutchison Holdings Limited (CK Hutchison) is a renowned multinational conglomerate committed to innovation and technology. Our diverse businesses employ over"
+  },
+  {
+   "t": "Cheung Kong Holdings Jobs & Careers - 2 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Cheung-Kong-Holdings-Jobs-E7652.htm",
+   "s": "Search job openings at Cheung Kong Holdings. 2 Cheung Kong Holdings jobs including salaries, ratings, and reviews, posted by Cheung Kong Holdings employees."
+  },
+  {
+   "t": "Cheung Kong Holdings Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/cheung-kong-holdings-jobs",
+   "s": "Find your ideal job at Jobsdb with 8 Cheung Kong Holdings jobs found in Hong Kong. View all our Cheung Kong Holdings vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Careers | CKA",
+   "u": "https://www.ckah.com/careers",
+   "s": "Please send application enclosing resume stating career and salary history, expected salary and date of availability to The Senior Manager, Human Resources Depa"
+  },
+  {
+   "t": "CHEUNG KONG (HOLDINGS) LIMITED Careers and Employment - Indeed",
+   "u": "https://hk.indeed.com/cmp/Cheung-Kong-(holdings)-Limited",
+   "s": "Find out what works well at CHEUNG KONG (HOLDINGS) LIMITED from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO "
+  },
+  {
+   "t": "5,000+ Cheung Kong (holdings) Limited jobs in Hong Kong SAR",
+   "u": "https://hk.linkedin.com/jobs/cheung-kong-%28holdings%29-limited-jobs",
+   "s": "Today's top 5,000+ Cheung Kong (holdings) Limited jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Cheung Kong (holdings) Limited j"
+  },
+  {
+   "t": "cheung kong holdings limited jobs - Indeed",
+   "u": "https://hk.indeed.com/q-cheung-kong-(holdings)-limited-jobs.html",
+   "s": "8 Cheung Kong Holdings Limited jobs available on Indeed.com. Apply to Promoter, Chief Operating Officer, Sales Professional and more!"
+  },
+  {
+   "t": "Careers - CK Infrastructure Holdings",
+   "u": "https://www.cki.com.hk/english/careers/home/index.htm",
+   "s": "Please send application enclosing resume stating career and salary history, expected salary and date of availability to The Human Resources Manager, CK Infrastr"
+  },
+  {
+   "t": "Cheung Kong Holdings Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/cheung-kong-holdings-jobs",
+   "s": "Find your ideal job at Jobsdb with 8 Cheung Kong Holdings jobs found in Hong Kong. View all our Cheung Kong Holdings vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "50+ Cheung Kong Holdings Jobs, Employment September 29, 2026| Indeed",
+   "u": "https://hk.indeed.com/q-cheung-kong-holdings-jobs.html?vjk=c1e29382411c5bc6",
+   "s": "50 Cheung Kong Holdings jobs available on Indeed.com. Apply to Stocker, Sales Professional, Senior Medical Officer and more!"
+  },
+  {
+   "t": "Cheung Kong Holdings Jobs & Careers - 2 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Cheung-Kong-Holdings-Jobs-E7652.htm",
+   "s": "Search job openings at Cheung Kong Holdings. 2 Cheung Kong Holdings jobs including salaries, ratings, and reviews, posted by Cheung Kong Holdings employees."
+  },
+  {
+   "t": "5,000+ Cheung Kong (holdings) Limited jobs in Hong Kong SAR",
+   "u": "https://hk.linkedin.com/jobs/cheung-kong-%28holdings%29-limited-jobs",
+   "s": "Today's top 5,000+ Cheung Kong (holdings) Limited jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Cheung Kong (holdings) Limited j"
+  },
+  {
+   "t": "Career Opportunities - Cheung Kong Holdings",
+   "u": "https://www.ckh.com.hk/en/about/opportunities.php",
+   "s": "CK Hutchison Holdings Limited (CK Hutchison) is a renowned multinational conglomerate committed to innovation and technology. Our diverse businesses employ over"
+  },
+  {
+   "t": "Cheung Kong Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Cheung-Kong-jobs",
+   "s": "Find your ideal job at Jobsdb with 62 Cheung Kong jobs found in Hong Kong. View all our Cheung Kong vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Job openings at Cheung Kong (Holdings) Limited in Central and Western ...",
+   "u": "https://www.techjobasia.com/companies/m-8LoeO4Q5KNxJf7FMCxHA---Cheung-Kong-(Holdings)-Limited",
+   "s": "Working at Cheung Kong (Holdings) Limited in Central and Western, Hong Kong, China, Apply now! As the leading job board specializing in the tech industry, we co"
+  },
+  {
+   "t": "Careers | CKA",
+   "u": "https://www.ckah.com/careers",
+   "s": "Please send application enclosing resume stating career and salary history, expected salary and date of availability to The Senior Manager, Human Resources Depa"
+  },
+  {
+   "t": "Cheung Kong Holdings Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/cheung-kong-holdings-jobs",
+   "s": "Find your ideal job at Jobsdb with 8 Cheung Kong Holdings jobs found in Hong Kong. View all our Cheung Kong Holdings vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Cheung Kong Holdings Jobs & Careers - 2 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Cheung-Kong-Holdings-Jobs-E7652.htm",
+   "s": "Search job openings at Cheung Kong Holdings. 2 Cheung Kong Holdings jobs including salaries, ratings, and reviews, posted by Cheung Kong Holdings employees."
+  },
+  {
+   "t": "Career Opportunities - Cheung Kong Holdings",
+   "u": "https://www.ckh.com.hk/en/about/opportunities.php",
+   "s": "CK Hutchison Holdings Limited (CK Hutchison) is a renowned multinational conglomerate committed to innovation and technology. Our diverse businesses employ over"
+  },
+  {
+   "t": "8 Cheung Kong Holdings Limited Jobs, Employment September 30, 2026 | Indeed",
+   "u": "https://hk.indeed.com/q-cheung-kong-(holdings)-limited-jobs.html",
+   "s": "8 Cheung Kong Holdings Limited jobs available on Indeed.com. Apply to Promoter, Chief Operating Officer, Sales Professional and more!"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.techjobasia.com/companies/m-8LoeO4Q5KNxJf7FMCxHA---Cheung-Kong-(Holdings)-Limited",
+  "platform": "custom",
+  "title": "Job openings at Cheung Kong (Holdings) Limited in Central and Western, Hong Kong, China | Apply now at TechJobAsia"
+ },
+ "verdict": "custom_surface"
 }

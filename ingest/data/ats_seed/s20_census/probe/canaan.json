@@ -12,5 +12,11 @@
   "title": "Companies | Canaan Partners Job Board",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "careers.canaan.com is Canaan Partners Job Board (US venture capital firm), not Canaan Inc. (NASDAQ:CAN Chinese ASIC miner); canaan.io has no career surface",
+  "ts": "2026-09-30T10:24Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

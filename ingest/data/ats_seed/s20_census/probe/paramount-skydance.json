@@ -12,5 +12,11 @@
   "title": "Careers at Paramount",
   "via": "guess"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Not Chinese-origin: brand = Paramount Skydance, US media company (LCA 'CBS INTERACTIVE INC., D/B/A PARAMOUNT SKYDANCE'; 2025 Skydance merger); careers.paramount.com (successfactors guess) is Paramount's own US board — out of scope for the Chinese-company pipeline.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

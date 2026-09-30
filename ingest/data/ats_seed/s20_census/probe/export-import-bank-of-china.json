@@ -2,10 +2,153 @@
  "brand": "Export–Import Bank of China",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:36:39.881Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:29:45.043Z",
+ "candidates": [
+  {
+   "url": "https://www.afreximbank.com/our-bank/careers/",
+   "title": "Careers - African Export-Import Bank",
+   "status": 200,
+   "bytes": 67480,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "The Bank is set up in such a way that your job will be related to its origination and business development activities across the African continent (Trade Financ",
+   "backend": "supabase"
+  },
+  {
+   "url": "http://english.eximbank.gov.cn/",
+   "title": "",
+   "status": 200,
+   "bytes": 11427,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "THE EXPORT-IMPORT BANK OF CHINA MAJOR PROJECTS Maputo Ka Tembe Bridge and Related Link Roads in Mozambique G6 Foldable LTPS-AMOLED Display Panel Project Support",
+   "backend": "zenrows"
+  },
+  {
+   "url": "http://www.eximbank.gov.cn/info/notice/recruit/",
+   "title": "",
+   "status": 200,
+   "bytes": 7543,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "首页 新闻资讯 通知公告 人才招聘 人才招聘 中国进出口银行2026年社会招聘启事 2026-08-12 区域信用担保与投资基金（CGIF）总法律顾问兼董事会秘书岗位招聘启事 2026-05-14 中国进出口银行2026年校园招聘公告 2025-10-29 中国进出口银行总行2025年系统开发岗专项校园招聘公告 202",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | EXIM.GOV - Export-Import Bank of the United States",
+   "u": "https://www.exim.gov/about/careers",
+   "s": "The Export-Import Bank of the United States offers many opportunities to energetic individuals looking to broaden their horizons in a challenging and rewarding "
+  },
+  {
+   "t": "Job Opportunities | EXIM.GOV",
+   "u": "https://www.exim.gov/about/careers/job-opportunities",
+   "s": "Career transition (ICTAP, RPL), Overseas, Federal employees - Competitive, Individuals with disabilities, Military Spouses, Peace Corps & AmeriCorps VISTA, Spec"
+  },
+  {
+   "t": "CAREERS - Bank Of China",
+   "u": "https://www.bocusa.com/careers",
+   "s": "Here at the Bank of China, our employees are the core of our identity, and we are proud of fostering a diverse workplace. As a global bank with local expertise,"
+  },
+  {
+   "t": "The Export-Import Bank of China",
+   "u": "http://english.eximbank.gov.cn/",
+   "s": "THE EXPORT-IMPORT BANK OF CHINA MAJOR PROJECTS Maputo Ka Tembe Bridge and Related Link Roads in Mozambique G6 Foldable LTPS-AMOLED Display Panel Project Support"
+  },
+  {
+   "t": "Careers - African Export-Import Bank",
+   "u": "https://www.afreximbank.com/our-bank/careers/",
+   "s": "The Bank is set up in such a way that your job will be related to its origination and business development activities across the African continent (Trade Financ"
+  },
+  {
+   "t": "人才招聘_中国进出口银行",
+   "u": "http://www.eximbank.gov.cn/info/notice/recruit/",
+   "s": "首页 新闻资讯 通知公告 人才招聘 人才招聘 中国进出口银行2026年社会招聘启事 2026-08-12 区域信用担保与投资基金（CGIF）总法律顾问兼董事会秘书岗位招聘启事 2026-05-14 中国进出口银行2026年校园招聘公告 2025-10-29 中国进出口银行总行2025年系统开发岗专项校园招聘公告 202"
+  },
+  {
+   "t": "The Export-Import Bank of China - LinkedIn",
+   "u": "https://www.linkedin.com/company/the-export-import-bank-of-china",
+   "s": "The Export-Import Bank of China | 5,842 followers on LinkedIn. The Export-Import Bank of China"
+  },
+  {
+   "t": "人才招聘_中国进出口银行",
+   "u": "http://www.eximbank.gov.cn/info/notice/recruit/202510/t20251029_70302.html",
+   "s": "中国进出口银行是由国家出资设立、直属国务院领导、支持中国对外经济贸易投资发展与国际经济合作、具有独立法人地位的国家政策性银行。依托国家信用支持，积极发挥在服务国家战略和实体经济， 促进国内国际双循环有效衔接，统筹支持 \"引进来\"和\"走出去\"等方面的重要作用，加大对 ..."
+  },
+  {
+   "t": "Job Opportunities | EXIM.GOV - Export-Import Bank of the United States",
+   "u": "https://www.exim.gov/about/careers/job-opportunities",
+   "s": "Job Opportunities USA Jobs Total Jobs Found: 1 Security Specialist (Insider Threat) Washington, District of Columbia Open 09/14/2026 to 09/28/2026"
+  },
+  {
+   "t": "Careers | EXIM.GOV - Export-Import Bank of the United States",
+   "u": "https://www.exim.gov/about/careers",
+   "s": "The Export-Import Bank of the United States offers many opportunities to energetic individuals looking to broaden their horizons in a challenging and rewarding "
+  },
+  {
+   "t": "CAREERS - Bank Of China",
+   "u": "https://www.bocusa.com/careers",
+   "s": "Please refer to the \" Complete List of Bank of China U.S.A. Partnering Job Boards PDF file \" to see the full list of partnering job boards. If you would like to"
+  },
+  {
+   "t": "The Export-Import Bank of China",
+   "u": "http://english.eximbank.gov.cn/",
+   "s": "THE EXPORT-IMPORT BANK OF CHINA MAJOR PROJECTS Maputo Ka Tembe Bridge and Related Link Roads in Mozambique G6 Foldable LTPS-AMOLED Display Panel Project Support"
+  },
+  {
+   "t": "人才招聘_中国进出口银行",
+   "u": "http://www.eximbank.gov.cn/info/notice/recruit/202510/t20251029_70302.html",
+   "s": "中国进出口银行是由国家出资设立、直属国务院领导、支持中国对外经济贸易投资发展与国际经济合作、具有独立法人地位的国家政策性银行。依托国家信用支持，积极发挥在服务国家战略和实体经济， 促进国内国际双循环有效衔接，统筹支持 \"引进来\"和\"走出去\"等方面的重要作用，加大对 ..."
+  },
+  {
+   "t": "Careers - African Export-Import Bank",
+   "u": "https://www.afreximbank.com/our-bank/careers/",
+   "s": "The Bank is set up in such a way that your job will be related to its origination and business development activities across the African continent (Trade Financ"
+  },
+  {
+   "t": "人才招聘_中国进出口银行",
+   "u": "http://www.eximbank.gov.cn/info/notice/recruit/",
+   "s": "首页 新闻资讯 通知公告 人才招聘 人才招聘 中国进出口银行2026年社会招聘启事 2026-08-12 区域信用担保与投资基金（CGIF）总法律顾问兼董事会秘书岗位招聘启事 2026-05-14 中国进出口银行2026年校园招聘公告 2025-10-29 中国进出口银行总行2025年系统开发岗专项校园招聘公告 202"
+  },
+  {
+   "t": "中国进出口银行招聘系统",
+   "u": "https://zhaopin.eximbank.gov.cn/",
+   "s": "中国进出口银行招聘系统，提供最新的招聘信息和在线申请服务。"
+  },
+  {
+   "t": "Job Opportunities | EXIM.GOV",
+   "u": "https://www.exim.gov/about/careers/job-opportunities",
+   "s": "Career transition (ICTAP, RPL), Overseas, Federal employees - Competitive, Individuals with disabilities, Military Spouses, Peace Corps & AmeriCorps VISTA, Spec"
+  },
+  {
+   "t": "Careers | EXIM.GOV - Export-Import Bank of the United States",
+   "u": "https://www.exim.gov/about/careers",
+   "s": "Careers The Export-Import Bank of the United States offers many opportunities to energetic individuals looking to broaden their horizons in a challenging and re"
+  },
+  {
+   "t": "人才招聘_中国进出口银行",
+   "u": "http://www.eximbank.gov.cn/info/notice/recruit/",
+   "s": "首页 新闻资讯 通知公告 人才招聘 人才招聘 中国进出口银行2026年社会招聘启事 2026-08-12 区域信用担保与投资基金（CGIF）总法律顾问兼董事会秘书岗位招聘启事 2026-05-14 中国进出口银行2026年校园招聘公告 2025-10-29 中国进出口银行总行2025年系统开发岗专项校园招聘公告 202"
+  },
+  {
+   "t": "CAREERS - Bank Of China",
+   "u": "https://www.bocusa.com/careers",
+   "s": "Here at the Bank of China, our employees are the core of our identity, and we are proud of fostering a diverse workplace. As a global bank with local expertise,"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.afreximbank.com/our-bank/careers/",
+  "platform": "custom",
+  "title": "Careers - African Export-Import Bank"
+ },
+ "verdict": "custom_surface"
 }

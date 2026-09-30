@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — Jobs at Spotlight Referrals (US medical); not Great Wall-BMW Spotlight"
+ "manual_adjudication": "REFUTED — Jobs at Spotlight Referrals (US medical); not Great Wall-BMW Spotlight",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "greenhouse board 'spotlight' = 'Jobs at Spotlight Referrals' — 'Current Openings at Kirby' with 'Prospective Referrals - Test Job'/'Spotlight - Test' rows — a referral/test board for a different org, not the GWM-BMW Spotlight Automotive JV (光束汽车).",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

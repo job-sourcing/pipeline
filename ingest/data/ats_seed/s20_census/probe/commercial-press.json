@@ -2,10 +2,150 @@
  "brand": "Commercial Press",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:30:18.396Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:03:53.939Z",
+ "candidates": [
+  {
+   "url": "https://www.ap.org/about/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 43736,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Build the foundation for your journalism career with us through our news internships. The AP Global News Internship is a paid, highly selective, individually ta",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://careers.newscorp.com/jobs/",
+   "title": "",
+   "status": 200,
+   "bytes": 3084,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "As a global, diversified media and information services company, we strive to educate, enlighten and entertain people around the world.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.ap.org/join",
+   "title": "Careers at The Associated Press",
+   "status": 200,
+   "bytes": 48361,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "The Associated Press is an equal opportunity employer, and all qualified applicants will receive consideration for employment without regard to race, color, rel",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Commercial Press Jobs in United States (4,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/commercial-press-jobs",
+   "s": "Today's top 4,000+ Commercial Press jobs in United States. Leverage your professional network, and get hired. New Commercial Press jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 3,000 Commercial Press Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Commercial-Press-jobs.html",
+   "s": "Browse 3,809 Commercial Press jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers | The Associated Press",
+   "u": "https://www.ap.org/about/careers/",
+   "s": "Build the foundation for your journalism career with us through our news internships. The AP Global News Internship is a paid, highly selective, individually ta"
+  },
+  {
+   "t": "Hearst Careers",
+   "u": "https://eevd.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
+   "s": "Our learning experiences combine best-in-class design with diverse facilitators inside and outside of the organization to spur discovery and growth. Careers nee"
+  },
+  {
+   "t": "Jobs | News Corp",
+   "u": "https://careers.newscorp.com/jobs/",
+   "s": "As a global, diversified media and information services company, we strive to educate, enlighten and entertain people around the world."
+  },
+  {
+   "t": "Careers at The Associated Press",
+   "u": "https://careers.ap.org/join",
+   "s": "The Associated Press is an equal opportunity employer, and all qualified applicants will receive consideration for employment without regard to race, color, rel"
+  },
+  {
+   "t": "AUPresses Jobs",
+   "u": "https://jobs.up.hcommons.org/",
+   "s": "Acquisitions Editorial Business & Administration Director IT/Digital Publishing Journals Marketing"
+  },
+  {
+   "t": "All Positions | Join Our Team",
+   "u": "https://www.pmc.com/join-our-team",
+   "s": "Want to work for us? Visit our careers page to see what's available."
+  },
+  {
+   "t": "Now Hiring: 3,000 Commercial Press Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Commercial-Press-jobs.html",
+   "s": "Browse 3,809 Commercial Press jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Commercial Press Jobs in United States (4,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/commercial-press-jobs",
+   "s": "Today's top 4,000+ Commercial Press jobs in United States. Leverage your professional network, and get hired. New Commercial Press jobs added daily."
+  },
+  {
+   "t": "AUPresses Jobs",
+   "u": "https://jobs.up.hcommons.org/",
+   "s": "Acquisitions Editorial Business & Administration Director IT/Digital Publishing Journals Marketing"
+  },
+  {
+   "t": "Careers | The Associated Press",
+   "u": "https://www.ap.org/about/careers/",
+   "s": "Submit a press release to our newsroom Inquire about AP's data and AI solutions (AP Intelligence) Hire an AP production studio, team or facilities Access AP's n"
+  },
+  {
+   "t": "Careers at The Associated Press",
+   "u": "https://careers.ap.org/",
+   "s": "The Associated Press is an equal opportunity employer, and all qualified applicants will receive consideration for employment without regard to race, color, rel"
+  },
+  {
+   "t": "Careers - The New York Times Company",
+   "u": "https://www.nytco.com/careers/",
+   "s": "Whether bringing new truths to light with our reporting, building innovative products that deliver a best-in-class digital experience, or analyzing data to unde"
+  },
+  {
+   "t": "Job Openings - Clipp Advertise",
+   "u": "https://advertise.clipp.com/careers/job-openings/",
+   "s": "Location Media Sales Consultant 09/24/2026 Fully Remote Cherry Hill, NJ Printing Press Technician (Commercial Printing) 09/23/2026 ON-SITE Collation Process Tec"
+  },
+  {
+   "t": "All Positions | Join Our Team",
+   "u": "https://www.pmc.com/join-our-team",
+   "s": "Want to work for us? Visit our careers page to see what's available."
+  },
+  {
+   "t": "Commercial Press Jobs in United States (4,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/commercial-press-jobs",
+   "s": "Today's top 4,000+ Commercial Press jobs in United States. Leverage your professional network, and get hired. New Commercial Press jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 3,000 Commercial Press Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Commercial-Press-jobs.html",
+   "s": "Browse 3,809 Commercial Press jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers at The Associated Press",
+   "u": "https://careers.ap.org/?locale=en_US",
+   "s": "The Associated Press is an equal opportunity employer, and all qualified applicants will receive consideration for employment without regard to race, color, rel"
+  },
+  {
+   "t": "2,675 Commercial press jobs in United States - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/commercial-press-jobs-SRCH_KO0,16.htm",
+   "s": "Search Commercial press jobs. Get the right Commercial press job with company ratings & salaries. 2,675 open jobs for Commercial press."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

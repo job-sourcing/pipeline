@@ -157,5 +157,11 @@
   "snippet": "Careers at GAC Enterprises, LLC Job Openings Driver / Laborer Posted 7 days ago On-site",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "apply.workable.com/gac-enterprises-llc = GAC Enterprises LLC, US construction firm (Construction CDL Driver, Houston TX); career.gac.com = Gulf Agency Company (Dubai shipping/logistics); authentic GAC CV (gaccv.com, 粤ICP) has no US roles",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

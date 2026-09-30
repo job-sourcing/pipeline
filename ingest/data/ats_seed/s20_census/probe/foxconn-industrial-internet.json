@@ -43,5 +43,11 @@
   "platform": "custom",
   "title": "Foxconn Industrial Internet - FII - Career Page"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Foxconn Industrial Internet is itself on the wired roster — not re-flagged; note authentic FII USA Inc jazzhr board foxconnassemblyllc.applytojob.com (Houston TX, San Jose CA, Austin TX, Mt. Pleasant WI jobs)",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

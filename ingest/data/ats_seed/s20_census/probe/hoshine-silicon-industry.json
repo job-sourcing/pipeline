@@ -2,10 +2,164 @@
  "brand": "Hoshine Silicon Industry",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:38:13.233Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:32:58.724Z",
+ "candidates": [
+  {
+   "url": "https://job-boards.greenhouse.io/skhynixamerica",
+   "title": "Jobs at SK hynix America",
+   "status": 200,
+   "bytes": 67206,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "greenhouse:skhynixamerica",
+   "score": 12,
+   "snippet": "Explore current job openings and career opportunities at SK hynix America.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.devjobsscanner.com/company/hoshine-silicon-industry-co-ltd/",
+   "title": "",
+   "status": 200,
+   "bytes": 15727,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover current developer jobs at Hoshine silicon industry co ltd. Find your next tech role in software engineering, web development, and more with Hoshine sil",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://hoshinesilicon.com/index_en.aspx.htm",
+   "title": "Hoshine Silicon Industry Co., Ltd.",
+   "status": 200,
+   "bytes": 33949,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Focusing on silicon-based new materials and photovoltaic new energy as the main core business, Hoshine Silicon continues to expand industry and technology, and ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Hoshine Silicon Industry Co Ltd Jobs in Worldwide (6,000 ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/hoshine-silicon-industry-co-ltd-jobs-worldwide",
+   "s": "Today's top 6,000+ Hoshine Silicon Industry Co Ltd jobs in Worldwide. Leverage your professional network, and get hired. New Hoshine Silicon Industry Co Ltd job"
+  },
+  {
+   "t": "9,000+ Hoshine Silicon Industry Co. Ltd. jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/hoshine-silicon-industry-co.-ltd.-jobs-worldwide?f_AL=true",
+   "s": "Today's top 9,000+ Hoshine Silicon Industry Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Hoshine Silicon Industry Co. Ltd."
+  },
+  {
+   "t": "Hoshine Silicon Industry Co., Ltd.",
+   "u": "https://hoshinesilicon.com/index_en.aspx.htm",
+   "s": "Focusing on silicon-based new materials and photovoltaic new energy as the main core business, Hoshine Silicon continues to expand industry and technology, and "
+  },
+  {
+   "t": "HOSHINE SILICON INDUSTRY CO., LTD. | LinkedIn",
+   "u": "https://in.linkedin.com/company/zhejiang-hoshine-silicon-industry-co-ltd",
+   "s": "Hoshine Silicon Industry Co., Ltd. (603260.SH) is a global leader in vertically integrated silicon-based materials, founded by Ningbo Hoshine Group in 2005 and "
+  },
+  {
+   "t": "Hoshine Silicon Industry Co Ltd - Org Chart, Teams, Culture & Jobs ...",
+   "u": "https://theorg.com/org/hoshine-silicon-industry-co-ltd",
+   "s": "View Hoshine Silicon Industry Co Ltd's up-to-date org chart, open roles, and culture details. Find executives, board members, teams, related companies, and more"
+  },
+  {
+   "t": "合盛硅业股份有限公司",
+   "u": "https://hoshinesilicon.com/",
+   "s": "About Hoshine 走进合盛 合盛硅业股份有限公司由宁波合盛集团于2005年投资成立，并于2017年在上交所主板成功上市，是全球最完整硅基全产业链公司，是硅基新材料一体化绿色循环经济模式的开创者，是绿色能源整体解决方案的引领者。"
+  },
+  {
+   "t": "Careers - onsemi",
+   "u": "https://www.onsemi.com/careers",
+   "s": "Explore exciting opportunities at onsemi. Join our innovative team and contribute to shaping the future of semiconductor technology across the globe."
+  },
+  {
+   "t": "Hoshine Silicon Industry - Reviews, Salary & Career | Grapevine",
+   "u": "https://www.grapevine.in/company/hoshine-silicon-industry",
+   "s": "Get Hoshine Silicon Industry reviews from real Hoshine Silicon Industry employees, discuss salary and jobs opening in Hoshine Silicon Industry at Grapevine. Dow"
+  },
+  {
+   "t": "Hoshine Silicon Industry Co Ltd Jobs in Worldwide (6,000 ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/hoshine-silicon-industry-co-ltd-jobs-worldwide",
+   "s": "Today's top 6,000+ Hoshine Silicon Industry Co Ltd jobs in Worldwide. Leverage your professional network, and get hired. New Hoshine Silicon Industry Co Ltd job"
+  },
+  {
+   "t": "9,000+ Hoshine Silicon Industry Co. Ltd. jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/hoshine-silicon-industry-co.-ltd.-jobs-worldwide?f_AL=true",
+   "s": "Today's top 9,000+ Hoshine Silicon Industry Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Hoshine Silicon Industry Co. Ltd."
+  },
+  {
+   "t": "HOSHINE SILICON INDUSTRY CO., LTD. | LinkedIn",
+   "u": "https://in.linkedin.com/company/zhejiang-hoshine-silicon-industry-co-ltd",
+   "s": "Hoshine Silicon Industry Co., Ltd. (603260.SH) is a global leader in vertically integrated silicon-based materials, founded by Ningbo Hoshine Group in 2005 and "
+  },
+  {
+   "t": "Hoshine Silicon Industry Co Ltd - Org Chart, Teams, Culture & Jobs ...",
+   "u": "https://theorg.com/org/hoshine-silicon-industry-co-ltd",
+   "s": "View Hoshine Silicon Industry Co Ltd's up-to-date org chart, open roles, and culture details. Find executives, board members, teams, related companies, and more"
+  },
+  {
+   "t": "Hoshine Silicon Industry Co., Ltd. - shyield.com",
+   "u": "http://www.shyield.com/index_en.aspx.html",
+   "s": "Focusing on silicon-based new materials and photovoltaic new energy as the main core business, Hoshine Silicon continues to expand industry and technology, and "
+  },
+  {
+   "t": "合盛硅业股份有限公司",
+   "u": "https://hoshinesilicon.com/",
+   "s": "About Hoshine 走进合盛 合盛硅业股份有限公司由宁波合盛集团于2005年投资成立，并于2017年在上交所主板成功上市，是全球最完整硅基全产业链公司，是硅基新材料一体化绿色循环经济模式的开创者，是绿色能源整体解决方案的引领者。"
+  },
+  {
+   "t": "Hoshine silicon industry co ltd Latest Developer Job Openings ...",
+   "u": "https://www.devjobsscanner.com/company/hoshine-silicon-industry-co-ltd/",
+   "s": "Discover current developer jobs at Hoshine silicon industry co ltd. Find your next tech role in software engineering, web development, and more with Hoshine sil"
+  },
+  {
+   "t": "Forced Labor Finding at United States Court of International Trade",
+   "u": "https://globaltrainingcenter.com/chinese-silicon-producer-challenges-forced-labor-finding-at-u-s-court-of-international-trade/",
+   "s": "In a significant legal development, Hoshine Silicon (Jia Xing) Industry Co., Ltd., a Chinese silicon producer, has lodged a complaint with the United States Cou"
+  },
+  {
+   "t": "64 Hoshine Silicon Industry Co. Ltd. jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/hoshine-silicon-industry-co.-ltd.-jobs-worldwide?f_C=8755617",
+   "s": "Today's top 64 Hoshine Silicon Industry Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Hoshine Silicon Industry Co. Ltd. job"
+  },
+  {
+   "t": "Hoshine Silicon Industry Co Ltd Jobs in Worldwide (6,000 ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/hoshine-silicon-industry-co-ltd-jobs-worldwide",
+   "s": "Today's top 6,000+ Hoshine Silicon Industry Co Ltd jobs in Worldwide. Leverage your professional network, and get hired. New Hoshine Silicon Industry Co Ltd job"
+  },
+  {
+   "t": "首页",
+   "u": "https://hoshine.zhiye.com/",
+   "s": "合盛招聘官网提供最新的工作机会和企业信息。"
+  },
+  {
+   "t": "Reliability/Component Engineer - Optics/Silicon Photonics",
+   "u": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2025733EXTERNALENGLOBAL/Reliability-Component-Engineer-Optics-Silicon-Photonics",
+   "s": "Apply for Reliability/Component Engineer - Optics/Silicon Photonics job with Cisco in Allentown, Pennsylvania, United States of America. Supply Chain and Manufa"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://job-boards.greenhouse.io/skhynixamerica",
+  "title": "Jobs at SK hynix America",
+  "status": 200,
+  "bytes": 67206,
+  "markers": [
+   "greenhouse"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "greenhouse:skhynixamerica",
+  "score": 12,
+  "snippet": "Explore current job openings and career opportunities at SK hynix America.",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
 }

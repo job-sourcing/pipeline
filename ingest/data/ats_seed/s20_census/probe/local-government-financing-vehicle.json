@@ -2,7 +2,7 @@
  "brand": "Local government financing vehicle",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:24:30.925Z",
+ "ts": "2026-09-30T06:05:00.820Z",
  "candidates": [
   {
    "url": "https://elgl.org/elgl-job-board-the-premiere-resource-for-local-gov-careers/",
@@ -20,7 +20,7 @@
    "url": "https://sgrjobs.governmentresource.com/",
    "title": "SGR Job Board",
    "status": 200,
-   "bytes": 679294,
+   "bytes": 710207,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -31,14 +31,14 @@
   {
    "url": "https://www.governmentjobs.com/",
    "title": "",
-   "status": 0,
-   "bytes": 0,
+   "status": 200,
+   "bytes": 112822,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 5,
    "snippet": "Find a government job today! Use our job search engine to browse federal, city and state jobs, and apply online. From entry-level to executive, find your career",
-   "backend": "direct"
+   "backend": "zenrows"
   }
  ],
  "results": [

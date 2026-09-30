@@ -156,5 +156,11 @@
   "platform": "moka",
   "title": "Trip.com Group Careers"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Trip.com = roster company Trip.com Group (careers.trip.com, moka custom board) — already wired, not re-flagged.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

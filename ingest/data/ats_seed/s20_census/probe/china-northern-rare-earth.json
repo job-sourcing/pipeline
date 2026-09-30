@@ -2,10 +2,148 @@
  "brand": "China Northern Rare Earth",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:25:03.315Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:02:07.243Z",
+ "candidates": [
+  {
+   "url": "https://rareearthexchanges.com/news/china-northern-rare-earth-accelerates-talent-driven-industrial-upgrade-with-national-skills-standards-and-training-hub/",
+   "title": "",
+   "status": 200,
+   "bytes": 36322,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Setting the National Benchmark CNRE has also become the first in China's rare earth industry to publish a comprehensive vocational skills standard, codifying jo",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://baike.baidu.com/en/item/China%20Northern%20Rare%20Earth%20(Group)%20High-Tech%20Co.,%20Ltd./29275",
+   "title": "",
+   "status": 200,
+   "bytes": 541544,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "China Northern Rare Earth (Group) High-Tech Co., Ltd. (CNRE), founded in 1961, is the origin of China's rare earth industry, with its headquarters located in Ba",
+   "backend": "direct"
+  },
+  {
+   "url": "https://rareearthexchanges.com/news/northern-rare-earth-rallies-new-recruits-with-vision-of-innovation-discipline-and-national-purpose/",
+   "title": "",
+   "status": 200,
+   "bytes": 35862,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "Highlights China's largest rare earth producer hosts a comprehensive five-day orientation blending technical training with ideological alignment. Northern Rare ",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "China Northern Rare Earth Accelerates Talent-Driven Industrial Upgrade ...",
+   "u": "https://rareearthexchanges.com/news/china-northern-rare-earth-accelerates-talent-driven-industrial-upgrade-with-national-skills-standards-and-training-hub/",
+   "s": "Setting the National Benchmark CNRE has also become the first in China's rare earth industry to publish a comprehensive vocational skills standard, codifying jo"
+  },
+  {
+   "t": "Northern Rare Earth Rallies New Recruits with Vision of Innovation ...",
+   "u": "https://rareearthexchanges.com/news/northern-rare-earth-rallies-new-recruits-with-vision-of-innovation-discipline-and-national-purpose/",
+   "s": "Highlights China's largest rare earth producer hosts a comprehensive five-day orientation blending technical training with ideological alignment. Northern Rare "
+  },
+  {
+   "t": "中国稀土集团社会招聘平台",
+   "u": "https://regccsz.iguopin.com/",
+   "s": "提供多元化稀土产业招聘信息及企业发展概况。"
+  },
+  {
+   "t": "China Northern Rare Earth - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/China_Northern_Rare_Earth",
+   "s": "China Northern Rare Earth (Group) High-tech Co., Ltd. (Chinese: 中国北方稀土（集团）高科技股份有限公司), known as China Northern Rare Earth (Chinese: 北方稀土; pinyin: Běifāng Xītǔ) a"
+  },
+  {
+   "t": "Northern Rare Earth | Unlocking the Power of Rare Earth Elements for a ...",
+   "u": "https://northernrareearth.com/",
+   "s": "Northern Rare Earth is focused on leading the charge in the sustainable discovery and utilization of rare earth elements. Through our commitment to ethical mini"
+  },
+  {
+   "t": "China Northern Rare Earth (Group) High-Tech Co.,Ltd (600111.SS)",
+   "u": "https://finance.yahoo.com/quote/600111.SS/",
+   "s": "Find the latest China Northern Rare Earth (Group) High-Tech Co.,Ltd (600111.SS) stock quote, history, news and other vital information to help you with your sto"
+  },
+  {
+   "t": "China Northern Rare Earth (Group) High-Tech Co.,Ltd (600111.SS)",
+   "u": "https://finance.yahoo.com/quote/600111.SS/profile/",
+   "s": "See the company profile for China Northern Rare Earth (Group) High-Tech Co.,Ltd (600111.SS) including business summary, industry/sector information, number of e"
+  },
+  {
+   "t": "China Northern Rare Earth (Group) High-Tech Co., Ltd.",
+   "u": "https://baike.baidu.com/en/item/China%20Northern%20Rare%20Earth%20(Group)%20High-Tech%20Co.,%20Ltd./29275",
+   "s": "China Northern Rare Earth (Group) High-Tech Co., Ltd. (CNRE), founded in 1961, is the origin of China's rare earth industry, with its headquarters located in Ba"
+  },
+  {
+   "t": "China Northern Rare Earth Accelerates Talent-Driven Industrial Upgrade ...",
+   "u": "https://rareearthexchanges.com/news/china-northern-rare-earth-accelerates-talent-driven-industrial-upgrade-with-national-skills-standards-and-training-hub/",
+   "s": "Setting the National Benchmark CNRE has also become the first in China's rare earth industry to publish a comprehensive vocational skills standard, codifying jo"
+  },
+  {
+   "t": "North Rare Earth Welcomes New Talent-And a Message to the West",
+   "u": "https://rareearthexchanges.com/news/north-rare-earth-welcomes-new-talent-and-a-message-to-the-west/",
+   "s": "In a highly choreographed onboarding ceremony on July 18, China's Northern Rare Earth Group (North Rare Earth), one of the world's largest rare earth producers,"
+  },
+  {
+   "t": "10,000+China Northern Rare Earth Ticker Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/china-northern-rare-earth-ticker-jobs",
+   "s": "Today's top 10,000+ China Northern Rare Earth Ticker jobs in United States. Leverage your professional network, and get hired. New China Northern Rare Earth Tic"
+  },
+  {
+   "t": "China Northern Rare Earth - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/China_Northern_Rare_Earth",
+   "s": "China Northern Rare Earth (Group) High-tech Co., Ltd. (Chinese: 中国北方稀土（集团）高科技股份有限公司), known as China Northern Rare Earth (Chinese: 北方稀土; pinyin: Běifāng Xītǔ) a"
+  },
+  {
+   "t": "1,000+Northern China New Rare Earth Minerals Jobs in United States",
+   "u": "https://www.linkedin.com/jobs/northern-china-new-rare-earth-minerals-jobs",
+   "s": "Today's top 1,000+ Northern China New Rare Earth Minerals jobs in United States. Leverage your professional network, and get hired. New Northern China New Rare "
+  },
+  {
+   "t": "China Northern Rare Earth (Group) High-Tech Co.,Ltd (600111.SS)",
+   "u": "https://finance.yahoo.com/quote/600111.SS/",
+   "s": "Find the latest China Northern Rare Earth (Group) High-Tech Co.,Ltd (600111.SS) stock quote, history, news and other vital information to help you with your sto"
+  },
+  {
+   "t": "Northern Rare Earth | Unlocking the Power of Rare Earth Elements for a ...",
+   "u": "https://northernrareearth.com/",
+   "s": "Northern Rare Earth is focused on leading the charge in the sustainable discovery and utilization of rare earth elements. Through our commitment to ethical mini"
+  },
+  {
+   "t": "China Northern Rare Earth (Group) High-Tech Co.,Ltd Employees",
+   "u": "https://stockanalysis.com/quote/sha/600111/employees/",
+   "s": "Current and historical number of employees for China Northern Rare Earth (Group) High-Tech Co.,Ltd (SHA:600111) with related statistics, a chart and a data tabl"
+  },
+  {
+   "t": "Northern Rare Earth Rallies New Recruits with Vision of Innovation ...",
+   "u": "https://rareearthexchanges.com/news/northern-rare-earth-rallies-new-recruits-with-vision-of-innovation-discipline-and-national-purpose/",
+   "s": "Highlights China's largest rare earth producer hosts a comprehensive five-day orientation blending technical training with ideological alignment. Northern Rare "
+  },
+  {
+   "t": "中国稀土集团社会招聘平台",
+   "u": "https://regccsz.iguopin.com/",
+   "s": "提供多元化稀土产业招聘信息及企业发展概况。"
+  },
+  {
+   "t": "North Rare Earth Welcomes New Talent-And a Message to the West",
+   "u": "https://rareearthexchanges.com/news/north-rare-earth-welcomes-new-talent-and-a-message-to-the-west/",
+   "s": "In a highly choreographed onboarding ceremony on July 18, China's Northern Rare Earth Group (North Rare Earth), one of the world's largest rare earth producers,"
+  },
+  {
+   "t": "Rare Earth Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-rare-earth-jobs.html",
+   "s": "1,113 Rare Earth jobs available on Indeed.com. Apply to Senior Geologist, Pilot, Registered Nurse II and more!"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

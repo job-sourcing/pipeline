@@ -150,5 +150,17 @@
   "platform": "custom",
   "title": "Job Search | Ant International"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Ant International (Ant Group global arm) careers; platform API hrcareersweb.antgroup.com/api/social/position/search returns 161 jobs incl 8 US rows (Sunnyvale x7, New York x1)",
+  "ts": "2026-09-30T10:05Z",
+  "by": "S22-ADJ-5R2"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://www.ant-intl.com/en/job-search/",
+  "us_rows": 8,
+  "sample": "SRE Engineer (US)-Americas & EMEA Tech — Sunnyvale; Senior Manager, AML Testing & Control Assurance-US AML Compliance — New York"
+ }
 }

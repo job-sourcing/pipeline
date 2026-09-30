@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "chinajob.com - Working in China,Start Here! - Home"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "candidates are foreigner-in-China job boards (chinajob.com, chinajobsdaily.com, echinacareers.com), no company career surface; China Chang Feng = CASC 2nd Academy defense contractor (military, no public careers site).",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

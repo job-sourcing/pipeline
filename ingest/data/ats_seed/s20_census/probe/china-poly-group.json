@@ -2,10 +2,153 @@
  "brand": "China Poly Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:45:56.865Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:27:56.902Z",
+ "candidates": [
+  {
+   "url": "https://www.thejobsmap.com/company/china-poly-group",
+   "title": "China Poly Group Jobs &amp; Careers (342 Open Roles) | TheJobsMap",
+   "status": 200,
+   "bytes": 206408,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "About China Poly Group China Poly Group Corporation is a Chinese state-owned enterprise under the supervision of the State-owned Assets Supervision and Administ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.polyhongkong.com/EN/join/job",
+   "title": "Poly Property",
+   "status": 200,
+   "bytes": 19877,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "China Poly Property Group Corporation (Poly Group) is a large state-owned enterprise under the supervision and administration of the State-owned Assets Supervis",
+   "backend": "direct"
+  },
+  {
+   "url": "https://polycareer.zhiye.com/campus",
+   "title": "保利发展控股集团股份有限公司",
+   "status": 200,
+   "bytes": 45610,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "关于保利和伙人 Poly Partners 自1995年起，保利发展控股开始招纳并培养优秀大学生。 在30年的积淀中，保利发展控股形成了\"和你成长\"的人才观，建立起\"保利和伙人\"校园招聘品牌，为优秀大学生提供个人发展平台。",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "人才招聘 - poly.com.cn",
+   "u": "https://www.poly.com.cn/poly/rlzy/rczp/A044008002Gone1.html",
+   "s": "CHINA POLY GROUP CORPORATION LIMITED 保国利民 追求卓越 Safeguard the conuntry & Serve the people Strive for excellence 人力资本 人才招聘"
+  },
+  {
+   "t": "China Poly Group Jobs & Careers (528 Open Roles) | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/china-poly-group",
+   "s": "About China Poly Group China Poly Group Corporation is a Chinese state-owned enterprise under the supervision of the State-owned Assets Supervision and Administ"
+  },
+  {
+   "t": "China Poly Group Corporation Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-poly-group-corporation-jobs",
+   "s": "Today's top China Poly Group Corporation jobs in United States. Leverage your professional network, and get hired. New China Poly Group Corporation jobs added d"
+  },
+  {
+   "t": "Poly Property Group - polyhongkong.com",
+   "u": "https://www.polyhongkong.com/EN/join/job",
+   "s": "China Poly Property Group Corporation (Poly Group) is a large state-owned enterprise under the supervision and administration of the State-owned Assets Supervis"
+  },
+  {
+   "t": "中国保利集团有限公司EN - poly.com.cn",
+   "u": "https://www.poly.com.cn/polyen/index.html",
+   "s": "international trade Poly Group integrates China Silk Corporation, China Plaited Products Import & Export Corporation and other trade businesses into the unified"
+  },
+  {
+   "t": "校园招聘 - zhiye.com",
+   "u": "https://polycareer.zhiye.com/campus",
+   "s": "关于保利和伙人 Poly Partners 自1995年起，保利发展控股开始招纳并培养优秀大学生。 在30年的积淀中，保利发展控股形成了\"和你成长\"的人才观，建立起\"保利和伙人\"校园招聘品牌，为优秀大学生提供个人发展平台。"
+  },
+  {
+   "t": "China Poly Group Career: Working at China Poly Group | Glassdoor",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-China-Poly-Group-EI_IE2284751.11,27.htm",
+   "s": "What is it really like to work at China Poly Group? What do employees say about pay and career opportunities? Discover anonymous reviews now!"
+  },
+  {
+   "t": "保利发展控股集团股份有限公司 - zhiye.com",
+   "u": "https://polycareer.zhiye.com/social",
+   "s": "保利发展控股集团股份有限公司"
+  },
+  {
+   "t": "人才招聘 - poly.com.cn",
+   "u": "https://www.poly.com.cn/poly/rlzy/rczp/A044008002Gone1.html",
+   "s": "CHINA POLY GROUP CORPORATION LIMITED 保国利民 追求卓越 Safeguard the conuntry & Serve the people Strive for excellence 人力资本 人才招聘"
+  },
+  {
+   "t": "China Poly Group Jobs & Careers (528 Open Roles) | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/china-poly-group",
+   "s": "About China Poly Group China Poly Group Corporation is a Chinese state-owned enterprise under the supervision of the State-owned Assets Supervision and Administ"
+  },
+  {
+   "t": "China Poly Group Corporation Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-poly-group-corporation-jobs",
+   "s": "Today's top China Poly Group Corporation jobs in United States. Leverage your professional network, and get hired. New China Poly Group Corporation jobs added d"
+  },
+  {
+   "t": "中国保利集团有限公司EN - poly.com.cn",
+   "u": "https://www.poly.com.cn/polyen/index.html",
+   "s": "international trade Poly Group integrates China Silk Corporation, China Plaited Products Import & Export Corporation and other trade businesses into the unified"
+  },
+  {
+   "t": "校园招聘 - zhiye.com",
+   "u": "https://polycareer.zhiye.com/campus",
+   "s": "自1995年起，保利发展控股开始招纳并培养优秀大学生。在30年的积淀中，保利发展控股形成了\"和你成长\"的人才观，建立起\"保利和伙人\"校园招聘品牌，为优秀大学生提供个人发展平台。\"和\"源于保利发展控股\"和者筑善\"的品牌理念，承载企业的文化内核。\"保利和伙人\"管培生计划涵盖校 ..."
+  },
+  {
+   "t": "Careers - PolyGroup Inc. - Official Site",
+   "u": "https://polygroupinc.com/about-us/careers",
+   "s": "At Polygroup Inc., we value our people, encourage their development and reward their performance. We believe that all individuals can and want to contribute to "
+  },
+  {
+   "t": "Poly Property Group - polyhongkong.com",
+   "u": "https://www.polyhongkong.com/EN/join/job",
+   "s": "China Poly Group has real estate, trade, mineral resources, culture, and civilian blasting service, which is regarded as one of the most important real estate e"
+  },
+  {
+   "t": "Polygroup",
+   "u": "https://www.polygroup.com/",
+   "s": "Polygroup® is a global consumer goods leader with companies that design, manufacture and distribute outdoor recreation and seasonal home décor products that ins"
+  },
+  {
+   "t": "人才招聘 - poly.com.cn",
+   "u": "https://www.poly.com.cn/poly/rlzy/rczp/A044008002Gone1.html",
+   "s": "CHINA POLY GROUP CORPORATION LIMITED 保国利民 追求卓越 Safeguard the conuntry & Serve the people Strive for excellence 人力资本 人才招聘"
+  },
+  {
+   "t": "China Poly Group Jobs & Careers (528 Open Roles) | TheJobsMap",
+   "u": "https://www.thejobsmap.com/company/china-poly-group",
+   "s": "About China Poly Group China Poly Group Corporation is a Chinese state-owned enterprise under the supervision of the State-owned Assets Supervision and Administ"
+  },
+  {
+   "t": "China Poly Group Corporation Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-poly-group-corporation-jobs",
+   "s": "Today's top China Poly Group Corporation jobs in United States. Leverage your professional network, and get hired. New China Poly Group Corporation jobs added d"
+  },
+  {
+   "t": "Poly Property Group - polyhongkong.com",
+   "u": "https://www.polyhongkong.com/EN/join/job",
+   "s": "China Poly Property Group Corporation (Poly Group) is a large state-owned enterprise under the supervision and administration of the State-owned Assets Supervis"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.thejobsmap.com/company/china-poly-group",
+  "platform": "custom",
+  "title": "China Poly Group Jobs &amp; Careers (342 Open Roles) | TheJobsMap"
+ },
+ "verdict": "custom_surface"
 }

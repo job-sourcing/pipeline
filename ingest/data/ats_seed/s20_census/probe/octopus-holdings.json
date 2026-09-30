@@ -12,5 +12,11 @@
   "title": "Careers at Octopus Deploy - Octopus Deploy",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "octopus.com/company/careers = 'Careers at Octopus Deploy' (Australian software company) — not Octopus Holdings (HK payments, octopus.com.hk)",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

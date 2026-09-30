@@ -25,5 +25,17 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic Haidilao (LCA HAIDILAO RESTAURANT GROUP, INC.); haidilao-inc.com/us/join/employment routes US applicants to Workstream board 'Haidilao Hot Pot' — 52 US job rows across 6 pages (Bellevue/Seattle/Tukwila WA, Cupertino/Fremont/LA/Arcadia/San Diego CA, Chicago IL, Frisco/Katy TX, Mesa AZ, Duluth GA, Flushing NY)",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ },
+ "wire": {
+  "platform": "workstream",
+  "board": "https://www.workstream.us/j/hdl_management_usa_corporation?locale=en",
+  "us_rows": 52,
+  "sample": "Server — Bellevue, WA ($17.13-50/hr); Kitchen Prep — Cupertino, CA; Manager Trainee — Katy, TX"
+ }
 }

@@ -161,5 +161,17 @@
   "snippet": "Sunday Robotics Jobs ML & Robotics Infra • Redwood City, CA • Full time • On-site",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "sunday.ai = Sunday Robotics (Redwood City CA; founded 2024 by Tony Zhao & Cheng Chi, creators of ALOHA/Diffusion Policy — Chinese-origin Stanford roboticists); Ashby posting API: 24 jobs (23 Redwood City CA + 1 Remote); US-incorporated with Chinese-founder origin — flag origin policy at wire.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ },
+ "wire": {
+  "platform": "ashby",
+  "board": "https://jobs.ashbyhq.com/sunday",
+  "us_rows": 24,
+  "sample": "Mechanical Engineer — Redwood City, CA"
+ }
 }

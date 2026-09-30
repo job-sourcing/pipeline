@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "china_only: feishu portal hailiang.jobs.feishu.cn live-checked via API — 106 postings, 0 US rows, all China cities (LCA 'Hailiang Copper Texas' has no US postings on this board).",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

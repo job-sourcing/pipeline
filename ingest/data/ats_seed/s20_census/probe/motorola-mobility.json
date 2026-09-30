@@ -165,5 +165,11 @@
   "backend": "direct",
   "sr_err": 404
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Motorola Mobility is a Lenovo company (roster parent: Lenovo) — authentic smartrecruiters board careers.smartrecruiters.com/MotorolaMobilityALenovoCompany exists but is parent-covered (not re-flagged); the workday candidate motorolasolutions.wd5.* is Motorola Solutions (different company).",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

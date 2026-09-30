@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Recon Careers"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "recon.careers = US digital consultancy Recon; Recon Technology (RCON, CN oilfield services) has no own board",
+  "ts": "2026-09-30T05:10:00Z",
+  "by": "S22-ADJ-main"
+ }
 }

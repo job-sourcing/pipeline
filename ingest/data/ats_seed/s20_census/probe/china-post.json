@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "eChinaCareers"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "All candidates are aggregators/news: echinacareers.com (foreigner-in-China job board), thejobsmap.com (directory), dailychinapost.com (Amazon-media-internship news page). China Post's own site only posts Chinese campus-recruitment announcements (chinapost.com.cn) — no company career surface.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

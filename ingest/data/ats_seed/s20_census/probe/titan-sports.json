@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — ashby titan US roles; the wiki article is a newspaper"
+ "manual_adjudication": "REFUTED — ashby titan US roles; the wiki article is a newspaper",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "ashby board 'titan' (12 jobs, New York: Wealth Advisor SVP/VP, Founding Account Executive) is Titan the US wealth/investing app — not Titan Sports (体坛周报, Chinese sports newspaper); matches manual_adjudication REFUTED.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

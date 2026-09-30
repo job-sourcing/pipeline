@@ -2,10 +2,153 @@
  "brand": "Bonjour Holdings",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:13:28.961Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:44:24.987Z",
+ "candidates": [
+  {
+   "url": "https://bonjour-group.careers-page.com/open-application",
+   "title": "Apply now | Bonjour Group",
+   "status": 200,
+   "bytes": 67135,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We are always looking for bright minds and enthusiastic people from diverse backgrounds, who want to be part of an outstanding team. Even if you don't find a su",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.bonjourretail.com/pages/careers",
+   "title": "Careers\n &ndash; BONJOUR",
+   "status": 200,
+   "bytes": 441570,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers at Bonjour Group- find a job at Bonjour.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.ctgoodjobs.hk/jobs/bonjour%40-jobs",
+   "title": "Bonjour@ Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 788426,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 406 Bonjour@ jobs in Hong Kong. Browse through all our new daily-updated Bonjour@ job listing now!",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "RECRUITMENT - Bonjour Holdings Limited",
+   "u": "https://corp.bonjourhk.com/en/recruitment/",
+   "s": "6615 8263 (Whatsapp / Wechat微信) E-mail:"
+  },
+  {
+   "t": "HOME - Bonjour Holdings Limited",
+   "u": "https://corp.bonjourhk.com/en/",
+   "s": "BONJOUR Global Online Shopping Platform ... Terms of use Private Policy Store Information 2025 © Bonjour Holdings Limited"
+  },
+  {
+   "t": "Bonjour Holdings Limited - LinkedIn",
+   "u": "https://hk.linkedin.com/company/bonjour-holdings-limited",
+   "s": "Bonjour Holdings Limited (\"Bonjour\" or the \"Group\") is one of the most leading retail stores selling beauty and lifestyle products in Hong Kong. It was listed o"
+  },
+  {
+   "t": "BONJOUR : carrières et emplois | Indeed.com",
+   "u": "https://fr.indeed.com/cmp/Bonjour",
+   "s": "Découvrez ce qui fonctionne bien chez BONJOUR d'après les personnes qui sont le mieux placées pour le savoir. Obtenez des informations sur les postes, les salai"
+  },
+  {
+   "t": "Apply now | Bonjour Group",
+   "u": "https://bonjour-group.careers-page.com/open-application",
+   "s": "We are always looking for bright minds and enthusiastic people from diverse backgrounds, who want to be part of an outstanding team. Even if you don't find a su"
+  },
+  {
+   "t": "Bonjour Jobs in Worldwide (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bonjour-jobs-worldwide",
+   "s": "Today's top 11,000+ Bonjour jobs in Worldwide. Leverage your professional network, and get hired. New Bonjour jobs added daily."
+  },
+  {
+   "t": "Careers - BONJOUR",
+   "u": "https://www.bonjourretail.com/pages/careers",
+   "s": "Careers at Bonjour Group- find a job at Bonjour."
+  },
+  {
+   "t": "Accueil - Bonjour Services Recrutement",
+   "u": "https://recrutement-bonjourservices.fr/",
+   "s": "Les agences du réseau Bonjour Services recrutent aux quatre coins de la France en permanence des personnes motivées pour exercer les métiers d'aide à domicile, "
+  },
+  {
+   "t": "RECRUITMENT - Bonjour Holdings Limited",
+   "u": "https://corp.bonjourhk.com/en/recruitment/",
+   "s": "6615 8263 (Whatsapp / Wechat微信) E-mail:"
+  },
+  {
+   "t": "人才招聘 - Bonjour Holdings Limited",
+   "u": "https://corp.bonjourhk.com/recruitment/",
+   "s": "卓悅控股有限公司為香港領先化粧品連鎖店之一。集團於2003年在香港聯合交易所主板上市。 （上市編號：653）"
+  },
+  {
+   "t": "Careers - BONJOUR",
+   "u": "https://www.bonjourretail.com/pages/careers",
+   "s": "Careers at Bonjour Group- find a job at Bonjour."
+  },
+  {
+   "t": "Now Hiring: 100 Bonjour Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Bonjour-jobs.html",
+   "s": "141 Bonjour jobs. Apply to Dishwasher, Cashier, Warehouse Manager and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "21 Bonjour. jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bonjour.-jobs",
+   "s": "Today's top 21 Bonjour. jobs in United States. Leverage your professional network, and get hired. New Bonjour. jobs added daily."
+  },
+  {
+   "t": "Apply now | Bonjour Group",
+   "u": "https://bonjour-group.careers-page.com/open-application",
+   "s": "Open application We are always looking for bright minds and enthusiastic people from diverse backgrounds, who want to be part of an outstanding team. Even if yo"
+  },
+  {
+   "t": "Bonjour Jobs in Worldwide (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bonjour-jobs-worldwide",
+   "s": "Today's top 11,000+ Bonjour jobs in Worldwide. Leverage your professional network, and get hired. New Bonjour jobs added daily."
+  },
+  {
+   "t": "Bonjour Holdings Limited - LinkedIn",
+   "u": "https://sg.linkedin.com/company/bonjour-holdings-limited",
+   "s": "Bonjour Holdings Limited | 214 followers on LinkedIn. #Beauty #Health #Beautiful Life | Bonjour Holdings Limited (\"Bonjour\" or the \"Group\") is one of the most l"
+  },
+  {
+   "t": "RECRUITMENT - Bonjour Holdings Limited",
+   "u": "https://corp.bonjourhk.com/en/recruitment/",
+   "s": "6615 8263 (Whatsapp / Wechat微信) E-mail:"
+  },
+  {
+   "t": "Bonjour!@ Jobs in United States (18 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bonjour%21%40-jobs",
+   "s": "Today's top 18 Bonjour!@ jobs in United States. Leverage your professional network, and get hired. New Bonjour!@ jobs added daily."
+  },
+  {
+   "t": "21 Bonjour. jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bonjour.-jobs",
+   "s": "Today's top 21 Bonjour. jobs in United States. Leverage your professional network, and get hired. New Bonjour. jobs added daily."
+  },
+  {
+   "t": "Bonjour@ Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/bonjour%40-jobs",
+   "s": "Explore 406 Bonjour@ jobs in Hong Kong. Browse through all our new daily-updated Bonjour@ job listing now!"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.bonjourretail.com/pages/careers",
+  "platform": "custom",
+  "title": "Careers\n &ndash; BONJOUR"
+ },
+ "verdict": "custom_surface"
 }

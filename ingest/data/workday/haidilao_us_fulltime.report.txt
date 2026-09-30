@@ -1,0 +1,8 @@
+rows: 60 (unique reqIds: 60)
+details merged: 60
+descriptions present: 56
+locations enumerated (not 'N Locations'): 60
+startDate present: 56
+signals: matched=0 no_match=0 blocked=0 not_checked=60
+location entries total (sum nLocations): 60
+similar-job edges: 0

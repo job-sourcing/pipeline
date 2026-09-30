@@ -12,5 +12,11 @@
   "title": "Careers",
   "via": "guess"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "no_jobs_section: real company = LakeShore Biopharma 湖岸生物 (Beijing, Nasdaq LSB, ex-Yisheng Bio); own careers page en.lakeshorebio.com (tid=6) lists no openings — email-only 'send resume to hr@lakeshorebio.com'; probe best-guess lakeshore.com/paylocity = Lake Shore Cryotronics, Ohio (homonym).",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

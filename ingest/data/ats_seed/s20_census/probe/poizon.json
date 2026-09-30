@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "POIZON is itself on the wired roster (LCA POIZON INC; census dict feishuhire:poizon = 得物App China board); do not re-wire.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

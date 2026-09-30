@@ -152,5 +152,11 @@
   "platform": "adp",
   "title": "Engineering &amp; Manufacturing Jobs | Weichai America Careers"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "js_rendered_inconclusive: Weichai America (authentic US arm of Weichai Holding Group; LCA WEICHAI AMERICA CORP; Rolling Meadows IL; '800+ people across the United States') careers page links ADP workforcenow board (cid 173c7f84-bab8-41af-85ea-7c3b3b163cd1); board is JS-rendered — no rows in HTML and 4 ADP API probes failed; LinkedIn shows 4 US roles (aggregator corroboration only).",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

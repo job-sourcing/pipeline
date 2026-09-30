@@ -33,6 +33,10 @@ def daemonize():
 
 
 daemonize()
-os.chdir(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+# S22 (4th recurrence of the baked-path class): chdir from the script's OWN
+# realpath — the repo root is one dirname above scripts/. Never a literal.
+_here = os.path.dirname(os.path.realpath(__file__))
+_repo = os.path.dirname(_here)
+os.chdir(_repo)
 env = dict(os.environ)
 os.execvp(CMD[0], CMD)

@@ -2,13 +2,13 @@
  "brand": "China Satellite Communications",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T08:34:51.519Z",
+ "ts": "2026-09-30T03:24:36.743Z",
  "candidates": [
   {
    "url": "https://www.hiredchina.com/articles/commercial-space-jobs-china-for-foreign-engineers/",
    "title": "",
    "status": 200,
-   "bytes": 24084,
+   "bytes": 24177,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -17,60 +17,45 @@
    "backend": "supabase"
   },
   {
-   "url": "http://english.csat.spacechina.com/n931656/n931684/index.html",
-   "title": "Human Resources",
+   "url": "https://chinajobsdaily.com/",
+   "title": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for foreigners in China. - Home",
    "status": 200,
-   "bytes": 13880,
+   "bytes": 50628,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 5,
-   "snippet": "Over nearly thirty years of rapid growth, China Satcom has nurtured a batch of experts with great experiences in satellite communication; it also has many recog",
+   "score": 7,
+   "snippet": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!",
    "backend": "direct"
   },
   {
-   "url": "http://english.csat.spacechina.com/",
-   "title": "China Satellite Communications Co. Ltd.",
+   "url": "https://www.hiredchina.com/articles/aerospace-jobs-in-china/",
+   "title": "",
    "status": 200,
-   "bytes": 20811,
+   "bytes": 28670,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 5,
-   "snippet": "Subsidiary News ... · \"Serve the Needs of Broadcasting Busines... [2015-03-31] Satellite Resources · ChinaSat 26 · ChinaSat 19 · ChinaSat 10R",
-   "backend": "direct"
+   "score": 7,
+   "snippet": "Discover how to find and secure top aerospace jobs in China as a foreign engineer. This complete guide covers high-demand positions, visa strategies, salary ins",
+   "backend": "supabase"
   }
  ],
  "results": [
   {
    "t": "Urgent! Satellite communications jobs in China - Jooble",
    "u": "https://jooble.org/jobs-satellite-communications/China",
-   "s": "Active 46 vacancies • Satellite communications jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Satellite"
+   "s": "Active 39 vacancies • Satellite communications jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Satellite"
   },
   {
-   "t": "Human Resources - spacechina.com",
-   "u": "http://english.csat.spacechina.com/n931656/n931684/index.html",
-   "s": "Over nearly thirty years of rapid growth, China Satcom has nurtured a batch of experts with great experiences in satellite communication; it also has many recog"
-  },
-  {
-   "t": "Urgent! Satellite communications jobs in China - September 2026 - 41 ...",
+   "t": "Urgent! Satellite communications jobs in China - September 2026 - 39 ...",
    "u": "https://sg.jooble.org/jobs-satellite-communications/China",
    "s": "Search and apply for the latest Satellite communications jobs in China. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job em"
   },
   {
-   "t": "China Satellite Communications Co. Ltd.",
-   "u": "http://english.csat.spacechina.com/",
-   "s": "Subsidiary News ... · \"Serve the Needs of Broadcasting Busines... [2015-03-31] Satellite Resources · ChinaSat 26 · ChinaSat 19 · ChinaSat 10R"
-  },
-  {
    "t": "217 China Satellite Communications 593 Employees 2023 jobs ... - LinkedIn",
    "u": "https://www.linkedin.com/jobs/china-satellite-communications-593-employees-2023-jobs",
-   "s": "Today's top 217 China Satellite Communications 593 Employees 2023 jobs in United States. Leverage your professional network, and get hired. New China Satellite "
-  },
-  {
-   "t": "中国卫通集团股份有限公司-人才招聘",
-   "u": "http://www.chinasatcom.com/n3338860/n3338922/index.html",
-   "s": "京 ICP 备13027524号 中国航天科技集团公司版权所有 地址：北京市海淀区知春路65号中国卫星通信大厦A座21层 邮编：100190 网站管理邮箱：casc@spacechina.com 网站运维电话：010-62586600 传真：010-62586677 网站维护：中国航天报社"
+   "s": "Today's top 217 China Satellite Communications 593 Employees 2023 jobs in United States. Leverage your professional network, and get hired."
   },
   {
    "t": "Careers | Eutelsat",
@@ -78,17 +63,32 @@
    "s": "Discover international satellite communication careers at one of the world's leading providers. Find a role and kickstart your journey today. Apply now."
   },
   {
-   "t": "Career Opportunities | Satcom Global - Satellite Communications Jobs in ...",
-   "u": "https://www.satcomglobal.com/career-opportunities",
-   "s": "We are looking for outstanding and talented individuals in a highly competitive satellite communications marketplace, so if you are keen to hear more about job "
+   "t": "China Satellite Communications Co. Ltd.",
+   "u": "http://english.csat.spacechina.com/",
+   "s": "Subsidiary News ... · \"Serve the Needs of Broadcasting Busines... [2015-03-31] Satellite Resources · ChinaSat 26 · ChinaSat 19 · ChinaSat 10R"
+  },
+  {
+   "t": "中国卫通集团股份有限公司-人才招聘",
+   "u": "http://www.chinasatcom.com/n3338860/n3338922/index.html",
+   "s": "京 ICP 备13027524号 中国航天科技集团公司版权所有 地址：北京市海淀区知春路65号中国卫星通信大厦A座21层 邮编：100190 网站管理邮箱：casc@spacechina.com 网站运维电话：010-62586600 传真：010-62586677 网站维护：中国航天报社"
+  },
+  {
+   "t": "Careers - Meet the Team | SWISSto12",
+   "u": "https://swissto12.com/careers/",
+   "s": "Dream of Working Somewhere Different? Careers hub Welcome to SWISSto12, where your work makes a difference to the future Satellite and Radio Frequency communica"
+  },
+  {
+   "t": "Careers - Iridium Satellite Communications",
+   "u": "https://www.iridium.com/company/careers",
+   "s": "Careers Launch Your Space Career Into Orbit Kickstart an 18-month journey* rotating through three elite engineering teams. Explore different specialties, build "
   },
   {
    "t": "Satellite communications jobs in China - Jooble",
    "u": "https://jooble.org/jobs-satellite-communications/China",
-   "s": "Active 46 vacancies • Satellite communications jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Satellite"
+   "s": "Active 39 vacancies • Satellite communications jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Satellite"
   },
   {
-   "t": "Urgent! Satellite communications jobs in China - September 2026 - 41 ...",
+   "t": "Urgent! Satellite communications jobs in China - September 2026 - 39 ...",
    "u": "https://sg.jooble.org/jobs-satellite-communications/China",
    "s": "Search and apply for the latest Satellite communications jobs in China. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job em"
   },
@@ -96,6 +96,16 @@
    "t": "Commercial Space in China 2026: Job Opportunities and Company List for ...",
    "u": "https://www.hiredchina.com/articles/commercial-space-jobs-china-for-foreign-engineers/",
    "s": "Explore in-depth employment opportunities for foreign engineers in China's booming commercial space sector. This guide includes a detailed company list, analysi"
+  },
+  {
+   "t": "6 satellite engineer Jobs in China, July 2024 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-satellite-engineer-jobs-SRCH_IL.0,5_IN48_KO6,24.htm",
+   "s": "Frequently asked questions What should I search on Glassdoor to find satellite engineer jobs in China? People who searched for satellite engineer jobs in China "
+  },
+  {
+   "t": "Satellite Jobs - Space Crew",
+   "u": "https://spacecrew.com/space-satellite-jobs",
+   "s": "Explore 4246+ satellite jobs from leading space companies, find great space industry opportunities and boost your space career. Join the space industry workforc"
   },
   {
    "t": "Careers | Eutelsat",
@@ -108,42 +118,37 @@
    "s": "Overview: Asia Satellite Telecommunications Company Limited is a market leading company in the Asia-Pacific satellite market. We offer a comprehensive mix of jo"
   },
   {
-   "t": "Satellite Jobs - Space Crew",
-   "u": "https://spacecrew.com/space-satellite-jobs",
-   "s": "Explore 4219+ satellite jobs from leading space companies, find great space industry opportunities and boost your space career. Join the space industry workforc"
-  },
-  {
-   "t": "Careers - Iridium Satellite Communications",
-   "u": "https://www.iridium.com/company/careers",
-   "s": "Thirty years ago, three engineers envisioned a satellite constellation that would provide communications anywhere in the world. Our mission started there. Where"
-  },
-  {
-   "t": "Apsatcom - 亚太星通招聘网站",
-   "u": "https://hr.apsatcom.com/",
-   "s": "深圳星（亚太6D）最大回传速率195Mbps刷新纪录 2021年8月31日，亚太星通于深圳卫星关口站利用1米陆地便携站，使用某国产基带系统在亚太6D卫星1号波束下进行大带宽极速测试。前向速率达到280Mbps；返向采用32APSK 3/4的调制方式，回传速率达到了惊人的195Mbps，这一数据刷新了国内卫星通信行业的最"
+   "t": "社会招聘",
+   "u": "https://cscnrczp.zhiye.com/",
+   "s": "中国星网招聘信息平台，提供最新职位机会及人才招聘信息。"
   },
   {
    "t": "Satellite communications jobs in China - Jooble",
    "u": "https://jooble.org/jobs-satellite-communications/China",
-   "s": "Active 46 vacancies • Satellite communications jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Satellite"
+   "s": "Active 39 vacancies • Satellite communications jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Satellite"
   },
   {
-   "t": "Urgent! Satellite communications jobs in China - September 2026 - 41 ...",
+   "t": "Urgent! Satellite communications jobs in China - September 2026 - 39 ...",
    "u": "https://sg.jooble.org/jobs-satellite-communications/China",
    "s": "Search and apply for the latest Satellite communications jobs in China. Verified employers. Competitive salary. Full-time, temporary, and part-time jobs. Job em"
+  },
+  {
+   "t": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for ...",
+   "u": "https://chinajobsdaily.com/",
+   "s": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!"
   },
   {
    "t": "Commercial Space in China 2026: Job Opportunities and Company List for ...",
    "u": "https://www.hiredchina.com/articles/commercial-space-jobs-china-for-foreign-engineers/",
    "s": "Explore in-depth employment opportunities for foreign engineers in China's booming commercial space sector. This guide includes a detailed company list, analysi"
-  },
-  {
-   "t": "2027中国星网集团招聘官网：https://cscnrczp.zhiye.com/campus/jobs - 高顿央国企招聘",
-   "u": "https://m.gwy.com/gqzp/409717.html",
-   "s": "中国星网统一线上报名系统唯一有效PC端入口，PC端官方招聘主站：https://cscnrczp.zhiye.com/campus/jobs 二、2027中国星网招聘专业要求 结合近三年校招招录计划，星网以理工科研发岗为主，配套少量职能管理岗，分五大专业板块。 （一）航空航天类（核心刚需，硕博 ..."
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://chinajobsdaily.com/",
+  "platform": "custom",
+  "title": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for foreigners in China. - Home"
+ },
+ "verdict": "custom_surface"
 }

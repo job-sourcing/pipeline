@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers | Marvelous Technologies Inc"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Surfaces belong to unrelated firms: Marvelous Technologies Inc (US software consulting, Gurnee IL per D&B), marvelous-tech.com (Bangladesh IT, salaries in BDT), Marvelous Support (US care); Marvelous Inc the game publisher is Japanese — no Chinese company.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

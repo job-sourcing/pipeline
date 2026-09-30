@@ -161,5 +161,17 @@
   "snippet": "POP MART is a rising global force in pop culture and entertainment. Our purpose is to celebrate daily moments and inspire through designer toys and fun experien",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic POP MART (09992.HK, LCA POP MART AMERICAS INC); workday API shows 354 postings, 223 with US locations (California 49, New York 16, Florida 12, New Jersey 11, Maryland 9 + dozens of US-mall retail rows); secondary board pop-mart-americas-inc.breezy.hr",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ },
+ "wire": {
+  "platform": "workday",
+  "board": "https://popmart.wd102.myworkdayjobs.com/popmart",
+  "us_rows": 223,
+  "sample": "Construction Project Manager — California; Retail Sales Lead - Natick Mall — Natick, MA; Retail Sales Associate - Westfarms Mall — Westfarms, CT"
+ }
 }

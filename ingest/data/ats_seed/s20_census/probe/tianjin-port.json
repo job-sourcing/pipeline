@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Jobs in Tianjin - Job Opportunities in Tianjin for Expats|天津招聘外国人|外籍招聘网|招聘外教|外国人招聘|外国人才网"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "china_only: probed candidates were eChinacities/Randstad job-board aggregators; brand's own surface = ptacn.zhaopin.com (天津港（集团）有限公司2027校园招聘, zhaopin white-label) — China campus recruiting only; US arm (LCA TIANJIN BOND USA LLC) has no public board.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

@@ -25,5 +25,17 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic CHAGEE (霸王茶姬, LCA CHAGEE CA LLC); workday board lists 61 jobs of which 5 US — all Irvine CA",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ },
+ "wire": {
+  "platform": "workday",
+  "board": "https://chagee.wd102.myworkdayjobs.com/External",
+  "us_rows": 5,
+  "sample": "Director, Supply Chain — Irvine, CA; Manager, Real Estate Development — Irvine, CA; Manager, Social & Creator Marketing — Irvine, CA"
+ }
 }

@@ -2,7 +2,7 @@
  "brand": "GAC Toyota",
  "tier": "lca",
  "lca": "GAC SOLUTIONS INC",
- "ts": "2026-09-29T04:29:46.414Z",
+ "ts": "2026-09-30T06:03:02.685Z",
  "candidates": [
   {
    "url": "https://gacrnd.zhiye.com/jobs",
@@ -20,7 +20,7 @@
    "url": "https://gac-toyota.zhiye.com/alljob/?PageIndex=0",
    "title": "广汽丰田汽车有限公司招聘系统--全部职位",
    "status": 200,
-   "bytes": 21350,
+   "bytes": 21334,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -30,9 +30,9 @@
   },
   {
    "url": "https://career.gac.com/",
-   "title": "Careers at GAC | Global Careers",
+   "title": "",
    "status": 200,
-   "bytes": 996712,
+   "bytes": 14078,
    "markers": [
     "recruitee"
    ],
@@ -40,7 +40,7 @@
    "spec": null,
    "score": 7,
    "snippet": "Discover global job opportunities at GAC. Join 8000+ professionals in 50+ countries in shipping, logistics, and marine services. This is your next career move w",
-   "backend": "supabase"
+   "backend": "zenrows"
   }
  ],
  "results": [

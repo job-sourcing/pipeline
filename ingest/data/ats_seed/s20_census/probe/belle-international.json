@@ -2,10 +2,153 @@
  "brand": "Belle International",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:21:15.258Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:25:36.574Z",
+ "candidates": [
+  {
+   "url": "https://www.bellebrands.com/jobs",
+   "title": "Jobs",
+   "status": 200,
+   "bytes": 6117,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Terms & Conditions Privacy policy Copyright © 2025 Belle Brands",
+   "backend": "direct"
+  },
+  {
+   "url": "https://bellevieinternational.com/careers/",
+   "title": "404 Error: Page Not Found",
+   "status": 404,
+   "bytes": 2205,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers We currently don't have any openings at Belle Vie, but please submit your resume for our files. thank you.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://belleglobalinc.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 35648,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers at Belle Global, Inc. Join a team that's transforming supply chain and procurement for the modern world At Belle Global, Inc., we're building the",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Belle Jobs and Careers | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Belle/jobs",
+   "s": "53 Belle jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "Careers - Bell International Laboratories",
+   "u": "https://bellinternationallabs.com/careers/",
+   "s": "Join the Team at Bell Laboratories Bell International Laboratories is a family-owned product manufacturing company, dedicated to helping personal care and consu"
+  },
+  {
+   "t": "Belle Holdings Careers - Talentreef",
+   "u": "https://apply.jobappnetwork.com/belle-holdings/en",
+   "s": "By selecting your communications preferences and clicking \"Join Now\" you agree and consent via your electronic signature to receive calls at the number (s) you "
+  },
+  {
+   "t": "Jobs - bellebrands.com",
+   "u": "https://www.bellebrands.com/jobs",
+   "s": "Careers Terms & Conditions Privacy policy Copyright © 2025 Belle Brands"
+  },
+  {
+   "t": "Belle Chemical Jobs in United States (10,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/belle-chemical-jobs",
+   "s": "Today's top 10,000+ Belle Chemical jobs in United States. Leverage your professional network, and get hired. New Belle Chemical jobs added daily."
+  },
+  {
+   "t": "Careers - Belle Vie International",
+   "u": "https://bellevieinternational.com/careers/",
+   "s": "Careers We currently don't have any openings at Belle Vie, but please submit your resume for our files. thank you."
+  },
+  {
+   "t": "Careers at Bell | Join the Future of Flight",
+   "u": "https://www.bellflight.com/company/careers",
+   "s": "Shape the future of aviation with a career at Bell. Explore opportunities in engineering, manufacturing, operations, and business across our global team."
+  },
+  {
+   "t": "Bella International Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bella-International",
+   "s": "Find out what works well at Bella International from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Belle Jobs and Careers | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Belle/jobs",
+   "s": "53 Belle jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "Belle Jobs at Belle in Worldwide (67 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/belle-jobs-worldwide?f_C=9452769&pageNum=0",
+   "s": "Today's top 67 Belle jobs at Belle in Worldwide. Leverage your professional network, and get hired. New Belle jobs added daily."
+  },
+  {
+   "t": "Belle Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/belle-jobs",
+   "s": "Find your ideal job at Jobsdb with 6 Belle jobs found in Hong Kong. View all our Belle vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Careers - BelleGlobal",
+   "u": "https://belleglobalinc.com/careers/",
+   "s": "Careers at Belle Global, Inc. Join a team that's transforming supply chain and procurement for the modern world At Belle Global, Inc., we're building the"
+  },
+  {
+   "t": "Belle Chemical Jobs in United States (10,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/belle-chemical-jobs",
+   "s": "Today's top 10,000+ Belle Chemical jobs in United States. Leverage your professional network, and get hired. New Belle Chemical jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 300 Belle Jobs | Indeed",
+   "u": "https://www.indeed.com/q-company%3abelle-jobs.html",
+   "s": "Browse 376 Belle jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers - Bell International Laboratories",
+   "u": "https://bellinternationallabs.com/careers/",
+   "s": "Bell International Laboratories is a family-owned product manufacturing company, dedicated to helping personal care and consumer health brands bring innovative "
+  },
+  {
+   "t": "Global - BelleGlobal",
+   "u": "https://belleglobalinc.com/global/",
+   "s": "This Policy applies to (a) visitors to belleglobalinc.com and associated microsites; (b) users of Belle Global's digital supply chain and procurement platform; "
+  },
+  {
+   "t": "Belle Jobs and Careers | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Belle/jobs",
+   "s": "53 Belle jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "Bella International Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bella-International",
+   "s": "Find out what works well at Bella International from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Careers - Bell International Laboratories",
+   "u": "https://bellinternationallabs.com/careers/",
+   "s": "Join the Team at Bell Laboratories Bell International Laboratories is a family-owned product manufacturing company, dedicated to helping personal care and consu"
+  },
+  {
+   "t": "UN, NGO & International Jobs (11 open roles) - Global Roles",
+   "u": "https://www.globalroles.com/jobs-in/south-korea",
+   "s": "Browse 11 current UN, NGO and international organization jobs with duty stations in South Korea. Aggregated and updated daily on Global Roles — check your AI ma"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.bellebrands.com/jobs",
+  "platform": "custom",
+  "title": "Jobs"
+ },
+ "verdict": "custom_surface"
 }

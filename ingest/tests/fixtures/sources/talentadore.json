@@ -1,0 +1,49 @@
+{
+ "version": "v2",
+ "company": "Amer Sports",
+ "generated_at": "2026-10-09T10:11:12Z",
+ "jobs": [
+  {
+   "id": "Ab8nz",
+   "job_token": "Zk4KMo",
+   "name": "IT Field Services & Support (FSS) Specialist",
+   "business_unit_id": "p1yw",
+   "business_unit_name": "Amer Sports",
+   "link": "https://ats.talentadore.com/apply/it-field-services-support-fss-specialist/Zk4KMo",
+   "city": "New York City",
+   "location": "New York City",
+   "country": "United States",
+   "employment_type": "Full Time",
+   "start_date": "2026-08-27T14:14:00Z",
+   "description_html": "<div><p>New York City \u2014 hybrid.</p><p>Provide front-line IT support. TRIMMED-FOR-FIXTURE.</p></div>"
+  },
+  {
+   "id": "4nyL2",
+   "job_token": "D4vNd0",
+   "name": "Solution Architect \u2013 SAP Sales \u2013 Fashion (m/f/d) ",
+   "business_unit_id": "gz9q",
+   "business_unit_name": "Amer Sports",
+   "link": "https://ats.talentadore.com/apply/solution-architect---sap-sales---fashion-m-f-d/D4vNd0",
+   "city": "Garching bei M\u00fcnchen",
+   "location": "Parkring 15-17, 85748 Garching bei M\u00fcnchen",
+   "country": "Germany",
+   "employment_type": null,
+   "start_date": "2026-04-29T13:22:53Z",
+   "description_html": "<div><p>Hybrid/Garching near Munich.</p><p>Join Amer Sports as an IT Solution Architect. TRIMMED-FOR-FIXTURE.</p></div>"
+  },
+  {
+   "id": "5B18V",
+   "job_token": "Db7qK9",
+   "name": "Order to Cash Junior Specialist (Cash Collection)",
+   "business_unit_id": "0Bqj",
+   "business_unit_name": "Amer Sports",
+   "link": "https://ats.talentadore.com/apply/order-to-cash-junior-specialist-cash-collection/Db7qK9",
+   "city": "Krakow",
+   "location": "Zab\u0142ocie 43B, 30-701 Krak\u00f3w",
+   "country": "Poland",
+   "employment_type": "full time",
+   "start_date": "2026-08-21T06:22:00Z",
+   "description_html": "<div><p>Process customer orders and payments. TRIMMED-FOR-FIXTURE.</p></div>"
+  }
+ ]
+}

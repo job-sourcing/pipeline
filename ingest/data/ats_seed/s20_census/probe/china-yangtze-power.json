@@ -2,10 +2,153 @@
  "brand": "China Yangtze Power",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:16:00.437Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:48:14.698Z",
+ "candidates": [
+  {
+   "url": "https://www.jobzmall.com/china-yangtze-power/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 1213,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "China Yangtze Power Co., Ltd. engages in hydropower generation. The company's business includes electric power production, management and investment, technologi",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://en.powerchina.cn/career.html",
+   "title": "Career",
+   "status": 200,
+   "bytes": 13612,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "POWER CONSTRUCTION CORPORATION OF CHINA Add: Building 1, Courtyard 1, Linglongxiang Road, Haidian District, Beijing, 100037, P.R.China Powerchina Overseas Busin",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.talentd.in/companies/china-yangtze-power",
+   "title": "China Yangtze Power Careers | Talentd",
+   "status": 200,
+   "bytes": 98695,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "No open roles at China Yangtze Power right now. Read what they do, see past openings, and browse similar fresher and internship roles on Talentd.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Current Job Openings at China Yangtze Power | JobzMall",
+   "u": "https://www.jobzmall.com/china-yangtze-power/jobs",
+   "s": "China Yangtze Power Co., Ltd. engages in hydropower generation. The company's business includes electric power production, management and investment, technologi"
+  },
+  {
+   "t": "China Yangtze Power Careers | Talentd",
+   "u": "https://www.talentd.in/companies/china-yangtze-power",
+   "s": "No open roles at China Yangtze Power right now. Read what they do, see past openings, and browse similar fresher and internship roles on Talentd."
+  },
+  {
+   "t": "Working at China Yangtze Power | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-China-Yangtze-Power-EI_IE40804.11,30.htm",
+   "s": "See what employees say it's like to work at China Yangtze Power. Salaries, reviews, and more - all posted by employees working at China Yangtze Power."
+  },
+  {
+   "t": "企业招聘 - cypc.com.cn",
+   "u": "https://www.cypc.com.cn/cypc/qyzp/index.html",
+   "s": "京ICP备05051793号-1鄂公网安备 42050202000260号"
+  },
+  {
+   "t": "About China Yangtze Power | JobzMall",
+   "u": "https://www.jobzmall.com/china-yangtze-power",
+   "s": "China Yangtze Power Co., Ltd. engages in hydropower generation. The company's business includes electric power production, management and investment, technologi"
+  },
+  {
+   "t": "中国长江电力股份有限公司",
+   "u": "https://www.cypc.com.cn/",
+   "s": "长江电力是由中国长江三峡集团有限公司作为主发起人设立的股份有限公司。公司创立于2002年9月29日，2003年11月在上交所IPO挂牌上市，股票代码600900，现有股份244.68亿股。2020年9月，长江电力所发行的\"沪伦通\"全球存托凭证在英国伦敦证券交易所上市交易。"
+  },
+  {
+   "t": "China Yangtze Power - Reviews, Salary & Career | Grapevine",
+   "u": "https://www.grapevine.in/company/china-yangtze-power",
+   "s": "Get China Yangtze Power reviews from real China Yangtze Power employees, discuss salary and jobs opening in China Yangtze Power at Grapevine. Download now."
+  },
+  {
+   "t": "China Yangtze Power Career: Working at China Yangtze Power",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-China-Yangtze-Power-EI_IE40804.11,30.htm",
+   "s": "What is it really like to work at China Yangtze Power? What do employees say about pay and career opportunities? Discover anonymous reviews now!"
+  },
+  {
+   "t": "Current Job Openings at China Yangtze Power | JobzMall",
+   "u": "https://www.jobzmall.com/china-yangtze-power/jobs",
+   "s": "China Yangtze Power Co., Ltd. engages in hydropower generation. The company's business includes electric power production, management and investment, technologi"
+  },
+  {
+   "t": "About China Yangtze Power | JobzMall",
+   "u": "https://www.jobzmall.com/china-yangtze-power",
+   "s": "China Yangtze Power Co., Ltd. engages in hydropower generation. The company's business includes electric power production, management and investment, technologi"
+  },
+  {
+   "t": "企业招聘 - cypc.com.cn",
+   "u": "https://www.cypc.com.cn/cypc/qyzp/index.html",
+   "s": "京ICP备05051793号-1鄂公网安备 42050202000260号"
+  },
+  {
+   "t": "Working at China Yangtze Power | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-China-Yangtze-Power-EI_IE40804.11,30.htm",
+   "s": "See what employees say it's like to work at China Yangtze Power. Salaries, reviews, and more - all posted by employees working at China Yangtze Power."
+  },
+  {
+   "t": "China Yangtze Power Careers | Talentd",
+   "u": "https://www.talentd.in/companies/china-yangtze-power",
+   "s": "No open roles at China Yangtze Power right now. Read what they do, see past openings, and browse similar fresher and internship roles on Talentd."
+  },
+  {
+   "t": "Homepage [www.cypc.com.cn]",
+   "u": "http://www.cypc.com.cn/encypc/index/index.html",
+   "s": "03 New Energy Business In 2021, China Yangtze Power New Energy Co., Ltd was established to implement CYPC's new energy business development strategy and promote"
+  },
+  {
+   "t": "Career - POWERCHINA",
+   "u": "https://en.powerchina.cn/career.html",
+   "s": "POWER CONSTRUCTION CORPORATION OF CHINA Add: Building 1, Courtyard 1, Linglongxiang Road, Haidian District, Beijing, 100037, P.R.China Powerchina Overseas Busin"
+  },
+  {
+   "t": "Post Application-Changzhou China Yangtze Power Machinery Factory Co.，Ltd",
+   "u": "http://en.cjdljx.com/join_us/c-CID%3D56291.html",
+   "s": "Changzhou China Yangtze Power Machinery Factory Co.，Ltd Post Application The company integrates research and development, design, and manufacturing, specializin"
+  },
+  {
+   "t": "Current Job Openings at China Yangtze Power | JobzMall",
+   "u": "https://www.jobzmall.com/china-yangtze-power/jobs",
+   "s": "China Yangtze Power Co., Ltd. engages in hydropower generation. The company's business includes electric power production, management and investment, technologi"
+  },
+  {
+   "t": "校园招聘",
+   "u": "https://gwpst.zhiye.com/campus",
+   "s": "2027届国内应届毕业生 毕业时间：2026年9月1日-2027年8月31日 2027届海外应届毕业生 毕业时间：2027年1月1日-2027年12月31日"
+  },
+  {
+   "t": "Career - POWERCHINA",
+   "u": "https://en.powerchina.cn/career.html",
+   "s": "POWER CONSTRUCTION CORPORATION OF CHINA Add: Building 1, Courtyard 1, Linglongxiang Road, Haidian District, Beijing, 100037, P.R.China Powerchina Overseas Busin"
+  },
+  {
+   "t": "About China Yangtze Power | JobzMall",
+   "u": "https://www.jobzmall.com/china-yangtze-power",
+   "s": "China Yangtze Power Co., Ltd. engages in hydropower generation. The company's business includes electric power production, management and investment, technologi"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://en.powerchina.cn/career.html",
+  "platform": "custom",
+  "title": "Career"
+ },
+ "verdict": "custom_surface"
 }

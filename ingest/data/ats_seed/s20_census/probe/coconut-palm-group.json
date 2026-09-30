@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Jobs by Positions | Coconut"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "Top candidates = Coconut hospitality job-board aggregator (coconutjobs.com, PH/Global) and Coconut Palm Inn Key Largo FL (homonym); actual 椰树集团 (Hainan beverage, coconutpalm.com) has no EN/US careers page.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers_Yangtze River Pharmaceutical Group (YRPG)"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic YRPG (en.yangzijiang.com/careers) but careers page is a brochure (talent development/benefits/international recruitment copy) with no job rows; HQ Taizhou, Jiangsu, China — no_jobs_section",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

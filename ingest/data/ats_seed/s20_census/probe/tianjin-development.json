@@ -151,5 +151,11 @@
   "platform": "custom",
   "title": "Jobs in Tianjin"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "candidates = Tianjin-city job aggregators (jobs.echinacities.com, cn.recruit.net, tianjinjobs.com, Glassdoor); Tianjin Development Holdings (882.HK investment holding) has no own career surface.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

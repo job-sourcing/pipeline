@@ -657,6 +657,376 @@
         "United States",
         "New York, New York, United States"
       ]
+    },
+    {
+      "label": "popmart_us_fulltime",
+      "board": "popmart|wd102|popmart",
+      "company": "Pop Mart",
+      "country": "United States",
+      "time_type": "Full time",
+      "li_variants": [
+        "Pop Mart",
+        "POP MART",
+        "Pop Mart International Group",
+        "Pop Mart Americas"
+      ],
+      "slice_locations": [
+        "United States",
+        "Los Angeles, California, United States",
+        "New York, New York, United States",
+        "Bellevue, Washington, United States",
+        "Remote, United States"
+      ]
+    },
+    {
+      "label": "beone_us_fulltime",
+      "board": "beigene|wd5|BeiGene",
+      "company": "BeOne Medicines",
+      "country": "United States",
+      "li_variants": [
+        "BeOne Medicines",
+        "BeiGene",
+        "BeOne Medicines US",
+        "BeiGene US"
+      ],
+      "slice_locations": [
+        "United States",
+        "Remote, United States",
+        "San Carlos, California, United States",
+        "San Diego, California, United States",
+        "Hopewell, New Jersey, United States",
+        "Foster City, California, United States"
+      ]
+    },
+    {
+      "label": "chagee_us_fulltime",
+      "board": "chagee|wd102|External",
+      "company": "Chagee",
+      "country": "United States",
+      "time_type": "Full time",
+      "li_variants": [
+        "Chagee",
+        "CHAGEE",
+        "Chagee Holdings",
+        "Bawang Chagee"
+      ],
+      "slice_locations": [
+        "United States",
+        "Irvine, California, United States"
+      ]
+    },
+    {
+      "label": "sungrow_us_fulltime",
+      "board": "ats:adp:c2e0ba67-e6f9-439e-b8a3-0d734568eac2",
+      "company": "Sungrow",
+      "country": "United States",
+      "time_type": "Full time",
+      "li_variants": [
+        "Sungrow",
+        "Sungrow Power Supply",
+        "Sungrow US",
+        "Sungrow Power Supply Co., Ltd"
+      ],
+      "slice_locations": [
+        "United States",
+        "Fresno, California, United States",
+        "Houston, Texas, United States",
+        "Tempe, Arizona, United States",
+        "Remote, United States"
+      ]
+    },
+    {
+      "label": "deeproute_us_fulltime",
+      "board": "ats:workable:deeproute-dot-a-i",
+      "company": "DeepRoute.ai",
+      "country": "United States",
+      "time_type": "Full time",
+      "li_variants": [
+        "DeepRoute.ai",
+        "DeepRoute",
+        "DeepRoute AI",
+        "DeepRoute.ai Inc"
+      ],
+      "slice_locations": [
+        "United States",
+        "Fremont, California, United States",
+        "San Jose, California, United States"
+      ]
+    },
+    {
+      "label": "agora_us_fulltime",
+      "board": "ats:rippling:agora",
+      "company": "Agora",
+      "country": "United States",
+      "li_variants": [
+        "Agora",
+        "Agora.io",
+        "Agora Lab",
+        "Agora Communications"
+      ],
+      "slice_locations": [
+        "United States",
+        "Santa Clara, California, United States",
+        "Remote, United States"
+      ]
+    },
+    {
+      "label": "bitdeer_us_fulltime",
+      "board": "ats:breezy:bitdeer",
+      "company": "Bitdeer",
+      "time_type": "Full time",
+      "li_variants": [
+        "Bitdeer",
+        "Bitdeer Technologies Group",
+        "Bitdeer Inc"
+      ],
+      "slice_locations": [
+        "United States",
+        "Austin, Texas, United States",
+        "San Jose, California, United States",
+        "Remote, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "omnivision_us_fulltime",
+      "board": "ats:jobvite:ovt",
+      "company": "OmniVision",
+      "li_variants": [
+        "OmniVision",
+        "OmniVision Technologies",
+        "Will Semiconductor",
+        "Will Semi"
+      ],
+      "slice_locations": [
+        "United States",
+        "Santa Clara, California, United States",
+        "Irvine, California, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "mattson_us_fulltime",
+      "board": "ats:oraclehcm:eidg.fa.us6.oraclecloud.com|CX_1",
+      "company": "Mattson Technology",
+      "li_variants": [
+        "Mattson Technology",
+        "Mattson",
+        "Etown Capital"
+      ],
+      "slice_locations": [
+        "United States",
+        "Fremont, California, United States",
+        "Hillsboro, Oregon, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "virtuos_us_fulltime",
+      "board": "ats:oraclehcm:fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com|CX_1",
+      "company": "Virtuos",
+      "li_variants": [
+        "Virtuos",
+        "Virtuos Games",
+        "Virtuos North America"
+      ],
+      "slice_locations": [
+        "United States",
+        "Los Angeles, California, United States",
+        "San Francisco, California, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "hisense_us_fulltime",
+      "board": "ats:bamboohr:hisenseusacorporation",
+      "company": "Hisense USA",
+      "li_variants": [
+        "Hisense",
+        "Hisense USA",
+        "Hisense Corporation"
+      ],
+      "slice_locations": [
+        "United States",
+        "Alpharetta, Georgia, United States",
+        "Suwanee, Georgia, United States",
+        "Remote, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "joyson_us_fulltime",
+      "board": "ats:j2w:careers.joysonsafety.com/search",
+      "company": "Joyson Safety Systems",
+      "li_variants": [
+        "Joyson Safety Systems",
+        "Joyson",
+        "Key Safety Systems",
+        "Joyson Safety Systems Acquisition"
+      ],
+      "slice_locations": [
+        "United States",
+        "Auburn Hills, Michigan, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "cofco_us_fulltime",
+      "board": "ats:j2w:careers.cofcointernational.com/search-jobs",
+      "company": "COFCO International",
+      "li_variants": [
+        "COFCO International",
+        "COFCO",
+        "COFCO International North America"
+      ],
+      "slice_locations": [
+        "United States",
+        "Chicago, Illinois, United States",
+        "Stamford, Connecticut, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "meyer_us_fulltime",
+      "board": "ats:ultipro:MEY1000MEYER|7a970c3d-b076-4042-8735-673b5e5508ac",
+      "company": "Meyer",
+      "time_type": "Full time",
+      "li_variants": [
+        "Meyer",
+        "Meyer Corporation",
+        "Meyer Manufacturing",
+        "Meyer Cookware"
+      ],
+      "slice_locations": [
+        "United States",
+        "Vallejo, California, United States",
+        "Remote, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "amersports_us_fulltime",
+      "board": "ats:talentadore:amersports.careers.talentadore.com",
+      "company": "Amer Sports",
+      "time_type": "Full time",
+      "li_variants": [
+        "Amer Sports",
+        "Wilson Sporting Goods",
+        "Salomon",
+        "Arc'teryx",
+        "Atomic"
+      ],
+      "slice_locations": [
+        "United States",
+        "New York, New York, United States",
+        "Chicago, Illinois, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "haidilao_us_fulltime",
+      "board": "ats:workstream:fcc54c54",
+      "company": "Haidilao",
+      "li_variants": [
+        "Haidilao",
+        "Haidilao Hot Pot",
+        "HDL Management USA",
+        "Haidilao International"
+      ],
+      "slice_locations": [
+        "United States",
+        "Los Angeles, California, United States",
+        "Seattle, Washington, United States",
+        "Chicago, Illinois, United States",
+        "Irvine, California, United States",
+        "Bellevue, Washington, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "tti_us_fulltime",
+      "board": "ats:ttiproxy:US",
+      "company": "Techtronic Industries",
+      "time_type": "Full time",
+      "li_variants": [
+        "Techtronic Industries",
+        "TTI",
+        "Milwaukee Tool",
+        "Ryobi",
+        "Techtronic Industries North America",
+        "TTI Floor Care"
+      ],
+      "slice_locations": [
+        "United States",
+        "Anderson, South Carolina, United States",
+        "Brookfield, Wisconsin, United States",
+        "Memphis, Tennessee, United States",
+        "Remote, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "niu_us_fulltime",
+      "board": "ats:sanity:cd9iwvgl/production|Jobs|en-us",
+      "company": "NIU Technologies",
+      "li_variants": [
+        "NIU",
+        "NIU Technologies",
+        "Niu Power"
+      ],
+      "slice_locations": [
+        "United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "ascentage_us_fulltime",
+      "board": "ats:wpjobboard:www.ascentage.com",
+      "company": "Ascentage Pharma",
+      "li_variants": [
+        "Ascentage Pharma",
+        "Ascentage",
+        "Ascentage Pharma Group"
+      ],
+      "slice_locations": [
+        "United States",
+        "Remote, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "wuxibio_us_fulltime",
+      "board": "ats:wuxibio:www.wuxibiologics.com",
+      "company": "WuXi Biologics",
+      "li_variants": [
+        "WuXi Biologics",
+        "WuXi Biologics USA",
+        "WuXi Advanced Therapies"
+      ],
+      "slice_locations": [
+        "United States",
+        "Cranbury, New Jersey, United States",
+        "Philadelphia, Pennsylvania, United States",
+        "San Diego, California, United States"
+      ],
+      "country": "United States"
+    },
+    {
+      "label": "antintl_us_fulltime",
+      "board": "ats:antintl:M7892",
+      "company": "Ant International",
+      "li_variants": [
+        "Ant International",
+        "Ant Group",
+        "Ant Tech",
+        "Quadrant Technologies"
+      ],
+      "slice_locations": [
+        "United States",
+        "Sunnyvale, California, United States",
+        "New York, New York, United States"
+      ],
+      "country": "United States"
     }
   ]
 }

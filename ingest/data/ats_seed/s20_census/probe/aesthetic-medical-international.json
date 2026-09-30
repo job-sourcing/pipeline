@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers &#8211; International Board of Medical Aesthetics"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "No AMI career surface: candidates are unrelated US aesthetics-device companies (Acclaro UltraClear, Aesthetics Biomedical, Candela) + job boards; AMI (Nasdaq:AIH 'Peng'ai', China/Singapore clinics) hires via JobStreet SG only",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

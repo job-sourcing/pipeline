@@ -2,10 +2,148 @@
  "brand": "Dickson Concepts",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:35:48.939Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:02:30.429Z",
+ "candidates": [
+  {
+   "url": "https://dickson.com.hk/career/join-us/",
+   "title": "",
+   "status": 200,
+   "bytes": 14158,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Interested parties, please send your resume with expected salary and date of availability to dwj_career@dickson.com.hk or contact us at 22688889 for any enquiry",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://dickson.com.hk/career/join-us/application/",
+   "title": "",
+   "status": 200,
+   "bytes": 11400,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "JOIN US Please use the form below to submit your application The information provided is intended for use solely by Dickson Concepts (International) Limited and",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://dicksondata.com/careers",
+   "title": "",
+   "status": 200,
+   "bytes": 147821,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Dickson is a cutting edge company creating innovative products full of talented, enthusiastic people who enjoy coming to work.",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "JOIN US | Dickson Group",
+   "u": "https://dickson.com.hk/career/join-us/",
+   "s": "Interested parties, please send your resume with expected salary and date of availability to dwj_career@dickson.com.hk or contact us at 22688889 for any enquiry"
+  },
+  {
+   "t": "JOIN US - Dickson Group -",
+   "u": "https://dickson.com.hk/career/join-us/application/",
+   "s": "JOIN US Please use the form below to submit your application The information provided is intended for use solely by Dickson Concepts (International) Limited and"
+  },
+  {
+   "t": "dickson concepts Jobs - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/dickson-concepts-jobs-SRCH_KE0,16.htm",
+   "s": "Search dickson concepts jobs. Get the right dickson concepts job with company ratings & salaries. 22 open jobs for dickson concepts. Get hired!"
+  },
+  {
+   "t": "8 Dickson concepts jobs in United States - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/dickson-concepts-jobs-SRCH_KO0,16.htm",
+   "s": "Search Dickson concepts jobs. Get the right Dickson concepts job with company ratings & salaries. 8 open jobs for Dickson concepts."
+  },
+  {
+   "t": "Careers - Dickson Data",
+   "u": "https://dicksondata.com/careers",
+   "s": "Careers Dickson is a cutting edge company creating innovative products full of talented, enthusiastic people who enjoy coming to work."
+  },
+  {
+   "t": "Dickson Concepts (International) Limited - LinkedIn",
+   "u": "https://www.linkedin.com/company/dickson-concepts-international-ltd.",
+   "s": "Founded in 1980, Dickson Concepts has always been focused on introducing leading international luxury brands and retail concepts to consumers in Asia. Its key m"
+  },
+  {
+   "t": "Dickson Concepts Ltd. 迪生創建有限公司 Careers",
+   "u": "https://www.techjobasia.com/companies/4sQ_SLL5QH6Asgy-ZtzFfA---Dickson-Concepts-Ltd.-%E8%BF%AA%E7%94%9F%E5%89%B5%E5%BB%BA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+   "s": "Working at Dickson Concepts Ltd. 迪生創建有限公司 in Central and Western, Hong Kong, China, Apply now! As the leading job board specializing in the tech industry, we co"
+  },
+  {
+   "t": "Dickson Concepts Career: Working at Dickson Concepts | Glassdoor",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-Dickson-Concepts-EI_IE14242.11,27.htm",
+   "s": "What is it really like to work at Dickson Concepts? What do employees say about pay and career opportunities? Discover anonymous reviews now!"
+  },
+  {
+   "t": "Dickson Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/dickson-jobs",
+   "s": "Find your ideal job at Jobsdb with 3 Dickson jobs found in Hong Kong. View all our Dickson vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "JOIN US | Dickson Group",
+   "u": "https://dickson.com.hk/career/join-us/",
+   "s": "Job Responsibilities: Assist in preparation of various regular or ad hoc management reports, budgets and forecasts Requirements: Higher Diploma or above in Acco"
+  },
+  {
+   "t": "JOIN US - Dickson Group -",
+   "u": "https://dickson.com.hk/career/join-us/application/",
+   "s": "JOIN US Please use the form below to submit your application The information provided is intended for use solely by Dickson Concepts (International) Limited and"
+  },
+  {
+   "t": "14,000+Dickson Concepts (international) Limited Jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/dickson-concepts-%28international%29-limited-jobs-worldwide",
+   "s": "Today's top 14,000+ Dickson Concepts (international) Limited jobs in Worldwide. Leverage your professional network, and get hired. New Dickson Concepts (interna"
+  },
+  {
+   "t": "dickson concepts Jobs - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/dickson-concepts-jobs-SRCH_KE0,16.htm",
+   "s": "Search dickson concepts jobs. Get the right dickson concepts job with company ratings & salaries. 22 open jobs for dickson concepts. Get hired!"
+  },
+  {
+   "t": "Careers - Dickson Data",
+   "u": "https://dicksondata.com/careers",
+   "s": "Careers Dickson is a cutting edge company creating innovative products full of talented, enthusiastic people who enjoy coming to work."
+  },
+  {
+   "t": "Dickson Concepts Ltd Jobs - Me2Works - \"Experts On Demand, Your Terms\"",
+   "u": "https://www.me2works.com/companies/dickson-concepts-ltd-7867839",
+   "s": "Latest Jobs RECEPTIONIST (REF : AW-R) Full Time • Hong Kong, Hong Kong • 4d ago Human Resources / Office Administration Administration Full Time Customer Servic"
+  },
+  {
+   "t": "Dickson Concepts (International) Limited - LinkedIn",
+   "u": "https://hk.linkedin.com/company/dickson-concepts-international-ltd.",
+   "s": "Founded in 1980, Dickson Concepts has always been focused on introducing leading international luxury brands and retail concepts to consumers in Asia. Its key m"
+  },
+  {
+   "t": "dickson concepts Jobs - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/dickson-concepts-jobs-SRCH_KE0,16.htm",
+   "s": "Search dickson concepts jobs. Get the right dickson concepts job with company ratings & salaries. 22 open jobs for dickson concepts. Get hired!"
+  },
+  {
+   "t": "8 Dickson concepts jobs in United States - Glassdoor",
+   "u": "https://www.glassdoor.com/Job/dickson-concepts-jobs-SRCH_KO0,16.htm",
+   "s": "Search Dickson concepts jobs. Get the right Dickson concepts job with company ratings & salaries. 8 open jobs for Dickson concepts."
+  },
+  {
+   "t": "JOIN US | Dickson Group",
+   "u": "https://dickson.com.hk/career/join-us/",
+   "s": "Attendance bonus 12 days' annual leave Public Holidays Medical benefits On-the-job training Interested parties, please send your resume with expected salary and"
+  },
+  {
+   "t": "JOIN US - Dickson Group -",
+   "u": "https://dickson.com.hk/career/join-us/application/",
+   "s": "JOIN US Please use the form below to submit your application The information provided is intended for use solely by Dickson Concepts (International) Limited and"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

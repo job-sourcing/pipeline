@@ -2,10 +2,148 @@
  "brand": "L'est Films",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:24:46.585Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:01:30.686Z",
+ "candidates": [
+  {
+   "url": "https://www.ctfilms.com/company/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 114,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "www.ctfilms.com",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://nofilmschool.com/entertainment-industry-crisis",
+   "title": "",
+   "status": 200,
+   "bytes": 41727,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "Hollywood is turning into a real-life disaster movie: 42,000 entertainment jobs lost, productions declining, and LA's film industry facing its darkest days. Her",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.filmindustryjobs.co.uk/",
+   "title": "FilmIndustry Jobs · Film, TV and screen-sector hiring",
+   "status": 200,
+   "bytes": 58582,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Find film jobs, production roles, company profiles, freelancer talent and career resources for the screen industries.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "L'est Films Group - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/L%27est_films_group",
+   "s": "L'Est Films Group Int'l Co (EFG) is an entertainment industry company involved in movie distribution and production."
+  },
+  {
+   "t": "FilmIndustry Jobs · Film, TV and screen-sector hiring",
+   "u": "https://www.filmindustryjobs.co.uk/",
+   "s": "Find film jobs, production roles, company profiles, freelancer talent and career resources for the screen industries."
+  },
+  {
+   "t": "www.ctfilms.com",
+   "u": "https://www.ctfilms.com/company/careers/",
+   "s": "www.ctfilms.com"
+  },
+  {
+   "t": "Film Est Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-film-est-jobs.html",
+   "s": "Browse 77 Film Est jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Google",
+   "u": "https://www.google.com/",
+   "s": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for."
+  },
+  {
+   "t": "Careers at Warner Bros. Discovery",
+   "u": "https://careers.wbd.com/global/en/home",
+   "s": "Warner Bros. Discovery offers exciting and rewarding career opportunities across a multitude of disciplines. Join us as we step into the next chapter."
+  },
+  {
+   "t": "Home - STARZ Careers",
+   "u": "https://careers.starz.com/",
+   "s": "Join STARZ, where we champion equity and inclusion both on and off screen. Explore opportunities to grow your career in a supportive, inclusive workplace."
+  },
+  {
+   "t": "Vertical Drama Jobs",
+   "u": "https://verticaldramajobs.com/",
+   "s": "The #1 job board for vertical drama casting calls, microdrama roles and short drama production. Find paid casting calls on ReelShort, DramaWave, DramaBox, Short"
+  },
+  {
+   "t": "Film Est Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-film-est-jobs.html",
+   "s": "Browse 77 Film Est jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 1,000 Film Editor Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Film-Editor-jobs.html",
+   "s": "Browse 1,579 Film Editor jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers - Lucasfilm.com",
+   "u": "https://www.lucasfilm.com/careers/",
+   "s": "Perks & Benefits The Walt Disney Company offers a competitive total rewards package that includes pay, health and savings benefits, time-off programs, education"
+  },
+  {
+   "t": "FilmIndustry Jobs · Film, TV and screen-sector hiring",
+   "u": "https://www.filmindustryjobs.co.uk/",
+   "s": "Find film jobs, production roles, company profiles, freelancer talent and career resources for the screen industries."
+  },
+  {
+   "t": "Hollywood Is Dying—42,000 Jobs Gone in Just 2 Years - No Film School",
+   "u": "https://nofilmschool.com/entertainment-industry-crisis",
+   "s": "Hollywood is turning into a real-life disaster movie: 42,000 entertainment jobs lost, productions declining, and LA's film industry facing its darkest days. Her"
+  },
+  {
+   "t": "Movie Casting Calls, Auditions, & Acting Jobs",
+   "u": "https://www.castingnetworks.com/film-auditions/",
+   "s": "Find current movie jobs and casting calls near you, including roles for actors and models in blockbuster features and indie films."
+  },
+  {
+   "t": "Film Jobs | Think Film Jobs",
+   "u": "https://thinkfilmjobs.com/",
+   "s": "Find the best film jobs. Search thousands of opportunities from top companies."
+  },
+  {
+   "t": "Film Jobs in United States (92,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/film-jobs",
+   "s": "Today's top 92,000+ Film jobs in United States. Leverage your professional network, and get hired. New Film jobs added daily."
+  },
+  {
+   "t": "Film Est Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-film-est-jobs.html",
+   "s": "Browse 77 Film Est jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 1,000 Film Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Film-jobs.html",
+   "s": "Browse 1,462 Film jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "167 Film Entertainment jobs in Los Angeles, California",
+   "u": "https://entertainment.thecreativeloft.com/entertainment-jobs/film-jobs-in-los-angeles/",
+   "s": "Browse 167 Film Entertainment jobs in Los Angeles, California. New jobs added daily - latest posted Sep 28, 2026. Find your next Entertainment career on Creativ"
+  },
+  {
+   "t": "Crew Jobs - TV and Film Production | EntertainmentCareers.Net",
+   "u": "https://www.entertainmentcareers.net/film-tv-reality-production-jobs/jcat.asp?jcat=109",
+   "s": "Production Jobs Jobs in Film, TV, Reality, Webisodes & Original Online Production Showing 1-50 of 854 jobs Sort: Newest Company Job Title Location View:"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

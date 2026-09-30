@@ -152,5 +152,11 @@
   "platform": "adp",
   "title": "Careers | Fufeng USA"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: js_rendered_inconclusive — Fufeng USA (US arm of HK-listed Fufeng Group, Oak Brook IL) careers is a Wix page linking to ADP Workforce Now portal (cid=48bd9484...); ADP board is a JS shell with no reachable public job API (endpoints 404/redirect); no US rows derivable from the static page.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

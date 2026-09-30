@@ -163,5 +163,11 @@
   "snippet": "ATL Careers ... ATL Careers",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "careers-atl.icims.com = 'Advanced Technologies and Laboratories (ATL), a Planned Systems International (PSI) company' — US gov contractor (US-VA-Lynchburg, US-Remote rows), not ATL Amperex Technology (HK battery maker)",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

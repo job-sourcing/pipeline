@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Yunnan Lucky Air LLC - PILOT CAREER CENTER"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic Yunnan Lucky Air (Chinese airline, Hainan Group); luckyair.com is parked, official luckyair.net has only a Join Us contact section with no job board - no_jobs_section, China-only operations",
+  "ts": "2026-09-30T10:32Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

@@ -27,5 +27,11 @@
   "n": 2
  },
  "verdict": "ats_surface",
- "manual_adjudication": "UNVERIFIED — RedCircle US podcast-ads; 红圈营销 unlikely"
+ "manual_adjudication": "UNVERIFIED — RedCircle US podcast-ads; 红圈营销 unlikely",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "surface = greenhouse:redcircle = RedCircle, US podcast advertising platform (redcircle.com; 1 job 'Business Operations Analyst — Los Angeles, California or Boston, Massachusetts'); census brand 'Red Circle' = China elite law-firm term 红圈所 (Red Circle law firms), not this company.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

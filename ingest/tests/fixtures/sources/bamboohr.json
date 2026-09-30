@@ -1,0 +1,37 @@
+{
+ "success": true,
+ "version": "1.0.0",
+ "labels": {
+  "heading": "Open Positions",
+  "blankStateTitle": "We currently have no open positions.",
+  "blankStateBody": "Please check back as we will most certainly be looking for great people to join our team in the future."
+ },
+ "departments": [
+  {
+   "id": 18612,
+   "label": "CE Sales",
+   "positions": [
+    {
+     "id": 304,
+     "name": "Sr. Sales Manager - Walmart/Sam's Club",
+     "location": "Bentonville, AR",
+     "url": "https://hisenseusacorporation.bamboohr.com/careers/304",
+     "departmentId": null
+    }
+   ]
+  },
+  {
+   "id": 19031,
+   "label": "HA GTM",
+   "positions": [
+    {
+     "id": 316,
+     "name": "Commercial Cooling Business Development Manager",
+     "location": "Remote",
+     "url": "https://hisenseusacorporation.bamboohr.com/careers/316",
+     "departmentId": null
+    }
+   ]
+  }
+ ]
+}

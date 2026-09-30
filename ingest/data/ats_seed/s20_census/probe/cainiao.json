@@ -148,5 +148,11 @@
   "platform": "teamtailor",
   "title": "Welcome to Cainiao - Cainiao"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Cainiao is itself on the 41-company wired roster — not re-flagged; note cainiao.teamtailor.com carries 48 jobs (mostly EU/SG, incl. 'Administrative Operations Specialist—GA' US)",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

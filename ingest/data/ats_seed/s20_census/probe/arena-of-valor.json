@@ -2,10 +2,153 @@
  "brand": "Arena of Valor",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:13:09.307Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:43:48.904Z",
+ "candidates": [
+  {
+   "url": "https://careers.garena.com/global/careers?category=Esports",
+   "title": "Careers | Garena Careers",
+   "status": 200,
+   "bytes": 74163,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Unleash the Power: Join Our Arena of Valor Esports Team! Are you ready to step into the world of AOV Esports, the operating unit behind a myriad of exhilarating",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.garena.com/global/careers/J02053728",
+   "title": "[HN, Lien Quan Mobile] Senior Marketing (ABM) | Garena Careers",
+   "status": 200,
+   "bytes": 68096,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Unleash the Power: Join Our Arena of Valor Marketing Team! Are you ready to take your creativity to the next level? At Garena Arena of Valor (AOV), we're lookin",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.garena.vn/global/careers",
+   "title": "Careers | Garena Careers",
+   "status": 200,
+   "bytes": 109332,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Game to shape the global arena? Leave your mark on the games industry as you help each of our hit titles serve millions of users worldwide.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | Garena Careers",
+   "u": "https://careers.garena.com/global/careers?category=Esports",
+   "s": "Unleash the Power: Join Our Arena of Valor Esports Team! Are you ready to step into the world of AOV Esports, the operating unit behind a myriad of exhilarating"
+  },
+  {
+   "t": "[HN, Lien Quan Mobile] Senior Marketing (ABM) | Garena Careers",
+   "u": "https://careers.garena.com/global/careers/J02053728",
+   "s": "Unleash the Power: Join Our Arena of Valor Marketing Team! Are you ready to take your creativity to the next level? At Garena Arena of Valor (AOV), we're lookin"
+  },
+  {
+   "t": "TiMi Studio Group - Arena of Valor",
+   "u": "https://www.timistudios.com/games/arena-of-valor",
+   "s": "Join your friends, create a guild, and master over 100 unique heroes from internationally acclaimed franchise. The future of mobile MOBAs has arrived."
+  },
+  {
+   "t": "Arena of Valor",
+   "u": "https://www.arenaofvalor.com/?lang=en",
+   "s": "DOWNLOAD NOW Experience Arena of Valor, an epic new 5v5 multiplayer online battle arena (MOBA) developed by TiMi Studio Group! Master unique and powerful heroes"
+  },
+  {
+   "t": "Arena of Valor",
+   "u": "https://www.arenaofvalor.com/m/",
+   "s": "Experience Arena of Valor, an epic new 5v5 multiplayer online battle arena (MOBA) developed by TiMi Studio Group! Master unique and powerful heroes, like Batman"
+  },
+  {
+   "t": "Careers | Garena Careers",
+   "u": "https://careers.garena.vn/global/careers",
+   "s": "Game to shape the global arena? Leave your mark on the games industry as you help each of our hit titles serve millions of users worldwide."
+  },
+  {
+   "t": "Garena",
+   "u": "https://www.garena.sg/",
+   "s": "It exclusively licenses and publishes hit titles from global partners - such as Arena of Valor and Call of Duty: Mobile - in selected markets globally. Garena c"
+  },
+  {
+   "t": "Home page - Arena of Valor",
+   "u": "https://aovheroes.com/",
+   "s": "Arena of Valor is a multiplayer online battle arena (MOBA) game developed for mobile. The overall gameplay of Arena of Valor highly resembles League of Legends,"
+  },
+  {
+   "t": "Careers | Garena Careers",
+   "u": "https://careers.garena.com/global/careers?category=Esports",
+   "s": "Unleash the Power: Join Our Arena of Valor Esports Team! Are you ready to step into the world of AOV Esports, the operating unit behind a myriad of exhilarating"
+  },
+  {
+   "t": "ArenaNet",
+   "u": "https://www.arena.net/en/careers/job/6874212",
+   "s": "Bringing art to life through our online worlds."
+  },
+  {
+   "t": "Jobs | Arena Job Board",
+   "u": "https://careers.arena.run/jobs",
+   "s": "Finding your dream job on Arena Careers is easy! Search thousands of roles across campaigns, committees, consultancies, and civic orgs. Search by what matters t"
+  },
+  {
+   "t": "Support - Arena of Valor",
+   "u": "https://aovheroes.com/job/support",
+   "s": "Heroes whose abilities aid the rest of the team by providing healing, buffing allies (such as movement speed buffs), debuffing the enemy team (such as stunning)"
+  },
+  {
+   "t": "TiMi Studio Group - Arena of Valor",
+   "u": "https://www.timistudios.com/games/arena-of-valor",
+   "s": "Join your friends, create a guild, and master over 100 unique heroes from internationally acclaimed franchise. The future of mobile MOBAs has arrived."
+  },
+  {
+   "t": "Code Arena Of Valor Roblox jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/code-arena-of-valor-roblox-jobs",
+   "s": "Today's top Code Arena Of Valor Roblox jobs in United States. Leverage your professional network, and get hired. New Code Arena Of Valor Roblox jobs added daily"
+  },
+  {
+   "t": "Arena of Valor",
+   "u": "https://www.arenaofvalor.com/?lang=en",
+   "s": "DOWNLOAD NOW Experience Arena of Valor, an epic new 5v5 multiplayer online battle arena (MOBA) developed by TiMi Studio Group! Master unique and powerful heroes"
+  },
+  {
+   "t": "Your perspective changes everything. - ArenaNet",
+   "u": "https://www.arena.net/careers",
+   "s": "Your perspective changes everything. Game development is an incredible collaboration between individual artists and designers, bringing together expertise and i"
+  },
+  {
+   "t": "Careers | Garena Careers",
+   "u": "https://careers.garena.com/global/careers?category=Esports",
+   "s": "Unleash the Power: Join Our Arena of Valor Esports Team! Are you ready to step into the world of AOV Esports, the operating unit behind a myriad of exhilarating"
+  },
+  {
+   "t": "Careers | Garena Careers",
+   "u": "https://careers.garena.com/global/careers",
+   "s": "Game to shape the global arena? Leave your mark on the games industry as you help each of our hit titles serve millions of users worldwide."
+  },
+  {
+   "t": "Jobs | Arena Job Board",
+   "u": "https://careers.arena.run/",
+   "s": "Finding your dream job on Arena Careers is easy! Search thousands of roles across campaigns, committees, consultancies, and civic orgs. Search by what matters t"
+  },
+  {
+   "t": "Garena Careers — 94 Open Jobs & Hiring Trends (Sep 2026)",
+   "u": "https://jobs.christran.gg/studios/garena",
+   "s": "94 open jobs at Garena right now — business & operations, marketing & comms, engineering. 1 remote role, 13-week hiring trend. Updated hourly."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.garena.com/global/careers?category=Esports",
+  "platform": "custom",
+  "title": "Careers | Garena Careers"
+ },
+ "verdict": "custom_surface"
 }

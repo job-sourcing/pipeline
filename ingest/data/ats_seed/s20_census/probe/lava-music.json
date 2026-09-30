@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Lava Music Publishing Jobs | EntertainmentCareers.Net"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "Best candidate is EntertainmentCareers.net aggregator carrying US 'Lava Music Publishing' listings (different company); authentic LAVA MUSIC (拿火, Guangzhou, lavamusic.com) has no jobs section (/careers → 404)",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

@@ -2,25 +2,25 @@
  "brand": "Vienna Hotels",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:36:15.269Z",
+ "ts": "2026-09-30T06:07:49.205Z",
  "candidates": [
   {
    "url": "https://www.hotelcareer.com/jobs/hospitality-catering-vienna",
    "title": "",
-   "status": 0,
-   "bytes": 0,
+   "status": 200,
+   "bytes": 29909,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "You are looking for jobs in Vienna? Our job board offers matching vacancies in Vienna. Just apply directly online.",
-   "backend": "direct"
+   "backend": "zenrows"
   },
   {
    "url": "https://jobshotels.eu/hotel-jobs-in-vienna/",
    "title": "",
    "status": 200,
-   "bytes": 22603,
+   "bytes": 22588,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -32,7 +32,7 @@
    "url": "https://jobs.motel-one.com/en/jobsearch/location/austria/vienna/",
    "title": "Hotel jobs Vienna | vacancies tourism hospitality travel Motel One",
    "status": 200,
-   "bytes": 380615,
+   "bytes": 379338,
    "markers": [
     "smartrecruiters"
    ],

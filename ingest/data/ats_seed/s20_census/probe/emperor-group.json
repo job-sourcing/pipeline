@@ -2,10 +2,156 @@
  "brand": "Emperor Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:47:13.604Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:29:41.147Z",
+ "candidates": [
+  {
+   "url": "https://emperor.works/careers/",
+   "title": "Careers | Emperor",
+   "status": 200,
+   "bytes": 36986,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Emperor is an employee-owned strategic and creative communications consultancy.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.emperorcapital.com/en/careers/",
+   "title": "Careers | Emperor Capital Group Limited",
+   "status": 200,
+   "bytes": 52403,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Emperor Capital Group is a diversified, Chinese-funded financial institution build on solid foundations. We know that people are our most important asse",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.emperorgroup.com/en/join_us/join_our_team/",
+   "title": "Join Our Team | Join Us | EMPEROR GROUP OFFICIAL WEBSITE",
+   "status": 200,
+   "bytes": 120694,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Join Our Team We believe that our eighty plus years' legacy is the cumulative efforts of our staff, both in the past and the present. Over time we have created ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Our Team | Join Us | EMPEROR GROUP OFFICIAL WEBSITE",
+   "u": "https://www.emperorgroup.com/en/join_us/join_our_team/",
+   "s": "Join Our Team We believe that our eighty plus years' legacy is the cumulative efforts of our staff, both in the past and the present. Over time we have created "
+  },
+  {
+   "t": "Talent Concept | Join Us | EMPEROR GROUP OFFICIAL WEBSITE",
+   "u": "https://www.emperorgroup.com/en/join_us/talent_concept/",
+   "s": "Founded as a humble watch retailer in 1942, Emperor Group has grown and expanded into a diversified conglomerate of businesses that includes Property, Financial"
+  },
+  {
+   "t": "Careers - Emperor",
+   "u": "https://emperor.works/careers/",
+   "s": "Emperor is an employee-owned strategic and creative communications consultancy."
+  },
+  {
+   "t": "Emperor Group Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Emperor-Group-jobs",
+   "s": "Find your ideal job at Jobsdb with 7 Emperor Group jobs found in Hong Kong. View all our Emperor Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Emperor Group Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/emperor-group-jobs",
+   "s": "Today's top Emperor Group jobs in United States. Leverage your professional network, and get hired. New Emperor Group jobs added daily."
+  },
+  {
+   "t": "Careers | Emperor Capital Group Limited",
+   "u": "https://www.emperorcapital.com/en/careers/",
+   "s": "Careers Emperor Capital Group is a diversified, Chinese-funded financial institution build on solid foundations. We know that people are our most important asse"
+  },
+  {
+   "t": "Emperor Group Jobs and Careers | GetLinks",
+   "u": "https://getlinks.com/en/company/emperor-group",
+   "s": "About the company Established in 1942, Emperor Group started as a small watch retail shop. Over the past decades, we have grown and expanded into a conglomerate"
+  },
+  {
+   "t": "Welcome to our career site - Emperor",
+   "u": "https://emperor.teamtailor.com/",
+   "s": "Emperor is for your great ambitions. We're an employee-owned corporate communications and creative agency with 250 partners specialising in reporting, brand, di"
+  },
+  {
+   "t": "Join Our Team | Join Us | EMPEROR GROUP OFFICIAL WEBSITE",
+   "u": "https://www.emperorgroup.com/en/join_us/join_our_team/",
+   "s": "Founded as a humble watch retailer in 1942, Emperor Group has grown and expanded into a diversified conglomerate of businesses that includes Property, Financial"
+  },
+  {
+   "t": "Talent Concept | Join Us | EMPEROR GROUP OFFICIAL WEBSITE",
+   "u": "https://www.emperorgroup.com/en/join_us/talent_concept/",
+   "s": "Join Us. We Excel Together Emperor Group is one of the leading local enterprises with a long history in Hong Kong. For 80 years, employees are always one of the"
+  },
+  {
+   "t": "Emperor Group Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/emperor-group-jobs",
+   "s": "Today's top Emperor Group jobs in United States. Leverage your professional network, and get hired. New Emperor Group jobs added daily."
+  },
+  {
+   "t": "Careers - Emperor",
+   "u": "https://emperor.works/careers/",
+   "s": "Emperor is an employee-owned strategic and creative communications consultancy."
+  },
+  {
+   "t": "3,000+ Emperor Group Limited jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/emperor-group-limited-jobs",
+   "s": "Today's top 3,000+ Emperor Group Limited jobs in United States. Leverage your professional network, and get hired. New Emperor Group Limited jobs added daily."
+  },
+  {
+   "t": "Welcome to our career site - Emperor",
+   "u": "https://emperor.teamtailor.com/",
+   "s": "Emperor is for your great ambitions. We're an employee-owned corporate communications and creative agency with 250 partners specialising in reporting, brand, di"
+  },
+  {
+   "t": "Emperor - Connect",
+   "u": "https://emperor.teamtailor.com/connect",
+   "s": "Connect with Emperor to stay up-to-date and receive notifications about new job openings"
+  },
+  {
+   "t": "Emperor Group Full Time Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/emperor-group-jobs/full-time",
+   "s": "Find your ideal job at Jobsdb with 7 Full Time Emperor Group jobs found in Hong Kong. View all our Emperor Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Join Our Team | Join Us | EMPEROR GROUP OFFICIAL WEBSITE",
+   "u": "https://www.emperorgroup.com/en/join_us/join_our_team/",
+   "s": "If you are passionate, looking for achievement and willing to grow to new heights together with Emperor Group, here are the opportunities for you. Join us - be "
+  },
+  {
+   "t": "Join Our Team | Join Us | EMPEROR GROUP OFFICIAL WEBSITE",
+   "u": "https://www.emperorgroup.com/en/join_us/join_our_team/corporate_functions/",
+   "s": "Prior HR experience in front line hiring, mass recruitment or talent acquisition in Retail, F&B, Hospitality is highly preferred Well-versed in Employment Ordin"
+  },
+  {
+   "t": "Emperor Group Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/emperor-group-jobs",
+   "s": "Today's top Emperor Group jobs in United States. Leverage your professional network, and get hired. New Emperor Group jobs added daily."
+  },
+  {
+   "t": "Emperor Group Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Emperor-Group-jobs",
+   "s": "Find your ideal job at Jobsdb with 7 Emperor Group jobs found in Hong Kong. View all our Emperor Group vacancies now with new jobs added daily!"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://emperor.works/careers/",
+  "platform": "teamtailor",
+  "title": "Careers | Emperor"
+ },
+ "verdict": "marker_surface"
 }

@@ -2,10 +2,152 @@
  "brand": "China Metallurgical Group Corporation",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:31:35.423Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T05:59:54.503Z",
+ "candidates": [
+  {
+   "url": "https://jobs.cmc.com/",
+   "title": "Join CMC's Team",
+   "status": 200,
+   "bytes": 79428,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Every job at CMC is critical to our success - drivers, auditors, mill operators, IT professionals, and 100 other corporate and field-based roles. Join our hardw",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.cmacgm-group.com/",
+   "title": "Careers opportunities in CMA CGM Group",
+   "status": 200,
+   "bytes": 154547,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Apply online for jobs at CMA CGM Group (CMA CGM, APL, ANL, Mercosul, Containership, MacAndrews, OPDR) - Jobs for Experienced Professionals, Jobs for Students, J",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.mmg.com/careers/",
+   "title": "Careers - MMG",
+   "status": 200,
+   "bytes": 195855,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "We operate and develop copper, zinc and other base metals projects across Australia, Botswana, the Democratic Republic of the Congo, and Peru with corporate off",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "China Metallurgical Group Corporation Jobs in United States (9,000 ...",
+   "u": "https://www.linkedin.com/jobs/china-metallurgical-group-corporation-jobs",
+   "s": "Today's top 9,000+ China Metallurgical Group Corporation jobs in United States. Leverage your professional network, and get hired. New China Metallurgical Group"
+  },
+  {
+   "t": "中国中冶-中国冶金科工股份有限公司",
+   "u": "https://mcc.com.cn/mcc_en/",
+   "s": "China Metallurgical Industry Group Co., Ltd., abbreviated as MCC Group, is a super large enterprise group in China. It is the earliest steel industry constructi"
+  },
+  {
+   "t": "中信金属股份有限公司招聘",
+   "u": "https://cmghr.metal.citic/recruit",
+   "s": "HCM Cloud,超出你想象的人力资源服务空间"
+  },
+  {
+   "t": "Join CMC's Team",
+   "u": "https://jobs.cmc.com/",
+   "s": "Every job at CMC is critical to our success - drivers, auditors, mill operators, IT professionals, and 100 other corporate and field-based roles. Join our hardw"
+  },
+  {
+   "t": "Home - MMG",
+   "u": "https://www.mmg.com/",
+   "s": "Join our team As a global resources company that mines, explores and develops base metal projects, MMG offers a wide variety of career pathways. View our curren"
+  },
+  {
+   "t": "招聘官网 - zhaopin.sinomach.com.cn",
+   "u": "https://zhaopin.sinomach.com.cn/aloneHome/index.html?v=1742477167732",
+   "s": "社会招聘丨国机集团总部、国机党校2026年社会招聘公告 @中国人民大学 9月23日 | 国机集团2027届校招专场双选会预告 国机集团总部及下属企业\"青蓝计划\"2027届管培生招聘全面启动 @浙江大学 9月23日 | 国机集团2027届校招专场宣讲双选会预告 @江苏大学 9月23日 | 国机集团2027届校招专场双选会"
+  },
+  {
+   "t": "Metallurgical Corporation of China - LinkedIn",
+   "u": "https://www.linkedin.com/company/metallurgical-corporation-of-china",
+   "s": "China Metallurgical Group Corporation (Chinese: 中国冶金科工集团公司), (MCC), is a state-owned enterprise in Beijing, China, engaging in EPC (engineering, procurement and"
+  },
+  {
+   "t": "中国矿产资源集团有限公司",
+   "u": "http://www.cmr-co.com/joinUs/",
+   "s": "中国矿产资源集团总部及所属单位2026年社会招聘公告"
+  },
+  {
+   "t": "China Metallurgical Group Corporation Jobs in United States (9,000 ...",
+   "u": "https://www.linkedin.com/jobs/china-metallurgical-group-corporation-jobs",
+   "s": "Today's top 9,000+ China Metallurgical Group Corporation jobs in United States. Leverage your professional network, and get hired. New China Metallurgical Group"
+  },
+  {
+   "t": "中国中冶-中国冶金科工股份有限公司",
+   "u": "https://mcc.com.cn/mcc_en/",
+   "s": "China Metallurgical Industry Group Co., Ltd., abbreviated as MCC Group, is a super large enterprise group in China. It is the earliest steel industry constructi"
+  },
+  {
+   "t": "招聘官网 - zhaopin.sinomach.com.cn",
+   "u": "https://zhaopin.sinomach.com.cn/aloneHome/index.html?v=1742477167732",
+   "s": "社会招聘丨国机集团总部、国机党校2026年社会招聘公告 @中国人民大学 9月23日 | 国机集团2027届校招专场双选会预告 国机集团总部及下属企业\"青蓝计划\"2027届管培生招聘全面启动 @浙江大学 9月23日 | 国机集团2027届校招专场宣讲双选会预告 @江苏大学 9月23日 | 国机集团2027届校招专场双选会"
+  },
+  {
+   "t": "中信金属股份有限公司招聘",
+   "u": "https://cmghr.metal.citic/recruit",
+   "s": "HCM Cloud,超出你想象的人力资源服务空间"
+  },
+  {
+   "t": "Join CMC's Team",
+   "u": "https://jobs.cmc.com/",
+   "s": "Every job at CMC is critical to our success - drivers, auditors, mill operators, IT professionals, and 100 other corporate and field-based roles. Join our hardw"
+  },
+  {
+   "t": "Metallurgical Corporation of China - LinkedIn",
+   "u": "https://www.linkedin.com/company/metallurgical-corporation-of-china",
+   "s": "China Metallurgical Group Corporation (Chinese: 中国冶金科工集团公司), (MCC), is a state-owned enterprise in Beijing, China, engaging in EPC (engineering, procurement and"
+  },
+  {
+   "t": "Home - MMG",
+   "u": "https://www.mmg.com/",
+   "s": "Join our team As a global resources company that mines, explores and develops base metal projects, MMG offers a wide variety of career pathways. View our curren"
+  },
+  {
+   "t": "中国矿产资源集团有限公司",
+   "u": "http://www.cmr-co.com/joinUs/",
+   "s": "中国矿产资源集团总部及所属单位2026年社会招聘公告"
+  },
+  {
+   "t": "China Metallurgical Group Corporation Jobs in United States (9,000 ...",
+   "u": "https://www.linkedin.com/jobs/china-metallurgical-group-corporation-jobs",
+   "s": "Today's top 9,000+ China Metallurgical Group Corporation jobs in United States. Leverage your professional network, and get hired. New China Metallurgical Group"
+  },
+  {
+   "t": "Careers opportunities in CMA CGM Group",
+   "u": "https://jobs.cmacgm-group.com/",
+   "s": "Apply online for jobs at CMA CGM Group (CMA CGM, APL, ANL, Mercosul, Containership, MacAndrews, OPDR) - Jobs for Experienced Professionals, Jobs for Students, J"
+  },
+  {
+   "t": "18,000 Metallurgical Corporation of China Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-metallurgical-corporation-of-china-jobs.html",
+   "s": "18,759 Metallurgical Corporation of China jobs available on Indeed.com. Apply to Entry Level Engineer, Engineer, Manufacturing Specialist and more!"
+  },
+  {
+   "t": "Metallurgical Corporation of China - LinkedIn",
+   "u": "https://www.linkedin.com/company/metallurgical-corporation-of-china",
+   "s": "China Metallurgical Group Corporation (Chinese: 中国冶金科工集团公司), (MCC), is a state-owned enterprise in Beijing, China, engaging in EPC (engineering, procurement and"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

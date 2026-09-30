@@ -2,10 +2,152 @@
  "brand": "ZGC Motors",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:11:46.743Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:07:16.815Z",
+ "candidates": [
+  {
+   "url": "https://zgcmotors.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 55441,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "ZGC Motors manufactures precision stepper, servo, BLDC and geared motors with custom motion control solutions for industrial automation and OEM equipment.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://recruiting.paylocity.com/recruiting/jobs/All/dbd7a5cf-adb7-440a-aef2-8ee4551c7f45/ECS-Tuning-LLC?location=Z1%20Motorsports&department=All%20Departments",
+   "title": "Enthusiast Auto Holdings - Job Opportunities",
+   "status": 200,
+   "bytes": 54130,
+   "markers": [
+    "paylocity"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Enthusiast Auto Holdings Careers Page - View all jobs and opportunities at Enthusiast Auto Holdings and apply today. | Powered By Paylocity",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://jobs.zf.com/en-US/",
+   "title": "ZF Jobs",
+   "status": 200,
+   "bytes": 264707,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Why Choose ZF? Global Opportunities: With approximately 230 locations across 40 markets and 19 main development sites worldwide, ZF offers diverse, internationa",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "ZGC Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Zgc",
+   "s": "Find out what works well at ZGC from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for p"
+  },
+  {
+   "t": "ZF Jobs",
+   "u": "https://jobs.zf.com/en-US/",
+   "s": "Why Choose ZF? Global Opportunities: With approximately 230 locations across 40 markets and 19 main development sites worldwide, ZF offers diverse, internationa"
+  },
+  {
+   "t": "Precision Stepper, Servo & BLDC Motor Manufacturer | ZGC Motors",
+   "u": "https://zgcmotors.com/",
+   "s": "ZGC Motors manufactures precision stepper, servo, BLDC and geared motors with custom motion control solutions for industrial automation and OEM equipment."
+  },
+  {
+   "t": "11,000+ Zg Motors jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zg-motors-jobs",
+   "s": "Today's top 11,000+ Zg Motors jobs in United States. Leverage your professional network, and get hired. New Zg Motors jobs added daily."
+  },
+  {
+   "t": "Incheon Motors Pvt Ltd Jobs and Careers | Indeed.com",
+   "u": "https://in.indeed.com/cmp/Incheon-Motors-Pvt-Ltd/jobs",
+   "s": "11 Incheon Motors Pvt Ltd jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "Changzhou ZGC Mechanical and Electrical Co.,ltd | LinkedIn",
+   "u": "https://www.linkedin.com/company/zgcmotors",
+   "s": "Changzhou ZGC Mechanical and Electrical Co.,ltd Automation Machinery Manufacturing Changzhou, Jiangsu 26 followers Assist to drive your life!"
+  },
+  {
+   "t": "Incheon Motors Pvt Ltd Careers and Employment - Indeed",
+   "u": "https://in.indeed.com/cmp/Incheon-Motors-Pvt-Ltd",
+   "s": "Find out what works well at Incheon Motors Pvt Ltd from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights"
+  },
+  {
+   "t": "Join ZF North America: Careers in Technology and Innovation | Jobs - ZF",
+   "u": "https://www.zf.com/usa_canada/en/careers/careers.html",
+   "s": "Explore diverse career opportunities at ZF North America. Innovate in automotive and industrial tech and shape the future of mobility with us!"
+  },
+  {
+   "t": "ZGC Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Zgc",
+   "s": "Find out what works well at ZGC from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for p"
+  },
+  {
+   "t": "11,000+ Zg Motors jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zg-motors-jobs",
+   "s": "Today's top 11,000+ Zg Motors jobs in United States. Leverage your professional network, and get hired. New Zg Motors jobs added daily."
+  },
+  {
+   "t": "Precision Stepper, Servo & BLDC Motor Manufacturer | ZGC Motors",
+   "u": "https://zgcmotors.com/",
+   "s": "ZGC Motors manufactures precision stepper, servo, BLDC and geared motors with custom motion control solutions for industrial automation and OEM equipment."
+  },
+  {
+   "t": "GM Jobs | General Motors Careers",
+   "u": "https://search-careers.gm.com/",
+   "s": "General Motors are working to make our world better, safer and more equitable for all. Find the job you've always been looking for."
+  },
+  {
+   "t": "Enthusiast Auto Holdings - Job Opportunities",
+   "u": "https://recruiting.paylocity.com/recruiting/jobs/All/dbd7a5cf-adb7-440a-aef2-8ee4551c7f45/ECS-Tuning-LLC?location=Z1%20Motorsports&department=All%20Departments",
+   "s": "Enthusiast Auto Holdings Careers Page - View all jobs and opportunities at Enthusiast Auto Holdings and apply today. | Powered By Paylocity"
+  },
+  {
+   "t": "0 Zgc Auto Inc jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zgc-auto-inc-jobs",
+   "s": "Today's top 0 Zgc Auto Inc jobs in United States. Leverage your professional network, and get hired. New Zgc Auto Inc jobs added daily."
+  },
+  {
+   "t": "ZT Auto - Job Opportunities - recruiting.paylocity.com",
+   "u": "https://recruiting.paylocity.com/recruiting/jobs/All/9ef1d12a-cfd5-44f6-a6c1-04e896aa285e/ZT-Auto",
+   "s": "ZT Auto Careers Page - View all jobs and opportunities at ZT Auto and apply today. | Powered By Paylocity"
+  },
+  {
+   "t": "ZF Jobs",
+   "u": "https://jobs.zf.com/en-US/",
+   "s": "Why Choose ZF? Global Opportunities: With approximately 230 locations across 40 markets and 19 main development sites worldwide, ZF offers diverse, internationa"
+  },
+  {
+   "t": "ZGC Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Zgc",
+   "s": "Find out what works well at ZGC from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for p"
+  },
+  {
+   "t": "Incheon Motors Pvt Ltd Jobs and Careers | Indeed.com",
+   "u": "https://in.indeed.com/cmp/Incheon-Motors-Pvt-Ltd/jobs",
+   "s": "11 Incheon Motors Pvt Ltd jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "Incheon Motors Pvt Ltd Careers and Employment | Indeed.com",
+   "u": "https://in.indeed.com/cmp/Incheon-Motors-Pvt-Ltd",
+   "s": "Find out what works well at Incheon Motors Pvt Ltd from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights"
+  },
+  {
+   "t": "Careers at Incheon KIA | Join Our Team in Kerala",
+   "u": "https://incheonkia.com/careers/",
+   "s": "Explore career opportunities at Incheon KIA. We are hiring experienced Kia consultants for our showrooms in Trivandrum, Kollam, Thellakom, Kodimatha, Thiruvalla"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

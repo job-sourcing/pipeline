@@ -157,5 +157,11 @@
   "snippet": "Valon Mortgage Jobs We're on a mission to empower every homeowner. We believe the journey of home ownership starts when you get your keys, but lasts far beyond.",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Census best ashby:ValonVM = Valon Mortgage (US fintech 'empower every homeowner') — not Val Morgan; the genuine Val Morgan (valmorganoutdoor.com/VMO, since 1894) is an Australian/NZ cinema-ad network, not a Chinese company; LCA ALPHA-VAL LLC matches neither",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

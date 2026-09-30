@@ -154,5 +154,11 @@
   "platform": "greenhouse",
   "title": "Games Jobs — Live Roles, Updated Daily"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "Probe 'best' jobsingames.com is a games-jobs aggregator; candidates Scientific Games (US lottery co) and Riot Games are homonyms; Game Science (gamesci.cn, Shenzhen/Hangzhou studios) publishes no US careers surface (China hiring only).",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

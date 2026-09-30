@@ -152,5 +152,11 @@
   "platform": "workable",
   "title": "black sesame technologies | Jobs by Workable"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: empty_board — workable company board verified authentic (website blacksesame.com; API totalSize=0, 0 published jobs); embedded.jobs shows 0 positions; own join-us page has no location-tagged rows (no Santa Clara listings).",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

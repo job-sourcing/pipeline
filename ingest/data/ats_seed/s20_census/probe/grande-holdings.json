@@ -12,5 +12,11 @@
   "title": "Careers at Grande Cheese Company | Wisconsin Jobs",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "surface = grande.com/careers = Grande Cheese Company (Wisconsin dairy, 'Careers at Grande Cheese Company | Wisconsin Jobs'); census brand Grande Holdings = HK conglomerate (ex-Akai) with no own career surface found.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

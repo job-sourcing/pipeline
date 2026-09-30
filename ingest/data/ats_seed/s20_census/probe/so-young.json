@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic feishu hire board soyoung.jobs.feishu.cn/index ('加入北京新氧科技有限公司') with ~47 China roles (连锁店44/销售1/职能2) — china_only; dict slug jobs.feishu.cn/soyoung is 404",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

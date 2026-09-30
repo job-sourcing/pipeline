@@ -1,0 +1,238 @@
+[
+ {
+  "id": "6a9e745f68c0",
+  "friendly_id": "6a9e745f68c0-account-manager-mining-datacenter-seal-miner",
+  "name": "Account Manager - Mining Datacenter / Seal Miner",
+  "url": "https://bitdeer.breezy.hr/p/6a9e745f68c0-account-manager-mining-datacenter-seal-miner",
+  "published_date": "2026-08-12T23:24:08.692Z",
+  "type": {
+   "id": "fullTime",
+   "name": "Full-Time"
+  },
+  "location": {
+   "country": {
+    "name": "United States",
+    "id": "US"
+   },
+   "state": {
+    "id": "TX",
+    "name": "Texas"
+   },
+   "city": "Austin",
+   "primary": true,
+   "is_remote": true,
+   "remote_details": {
+    "value": "hybrid",
+    "label": "Hybrid (Some remote, some in person)"
+   },
+   "name": "Austin, TX",
+   "id": "ec8201ebfb13"
+  },
+  "department": "Sales & Marketing",
+  "salary": "",
+  "company": {
+   "name": "Bitdeer Technologies Group",
+   "logo_url": null,
+   "friendly_id": "bitdeer",
+   "isMultipleLocationsEnabled": true
+  },
+  "locations": [
+   {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "state": {
+     "id": "TX",
+     "name": "Texas"
+    },
+    "city": "Austin",
+    "primary": true,
+    "is_remote": true,
+    "remote_details": {
+     "value": "hybrid",
+     "label": "Hybrid (Some remote, some in person)"
+    },
+    "name": "Austin, TX",
+    "id": "ec8201ebfb13"
+   }
+  ]
+ },
+ {
+  "id": "4e1b1785fe35",
+  "friendly_id": "4e1b1785fe35-2026-gtt-indication-of-interest",
+  "name": "2026 GTT: Indication of Interest",
+  "url": "https://bitdeer.breezy.hr/p/4e1b1785fe35-2026-gtt-indication-of-interest",
+  "published_date": "2026-09-17T02:36:56.796Z",
+  "type": {
+   "id": "fullTime",
+   "name": "Full-Time"
+  },
+  "location": {
+   "country": {
+    "name": "Singapore",
+    "id": "SG"
+   },
+   "primary": true,
+   "is_remote": false,
+   "isOtherSelected": false,
+   "name": "Singapore",
+   "id": "a97d46a8cbc0"
+  },
+  "department": "2026 Graduate Talent Trainee Program",
+  "salary": "",
+  "company": {
+   "name": "Bitdeer Technologies Group",
+   "logo_url": null,
+   "friendly_id": "bitdeer",
+   "isMultipleLocationsEnabled": true
+  },
+  "locations": [
+   {
+    "country": {
+     "name": "Malaysia",
+     "id": "MY"
+    },
+    "primary": false,
+    "isOtherSelected": true,
+    "is_remote": false,
+    "name": "Malaysia",
+    "id": "c7529d5a5eab",
+    "job_id": "4e1b1785fe35-c7529d5a5eab-1789612616796"
+   },
+   {
+    "country": {
+     "name": "Singapore",
+     "id": "SG"
+    },
+    "primary": true,
+    "is_remote": false,
+    "isOtherSelected": false,
+    "name": "Singapore",
+    "id": "a97d46a8cbc0",
+    "job_id": "4e1b1785fe35-a97d46a8cbc0-1789612616796"
+   },
+   {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "primary": false,
+    "isOtherSelected": true,
+    "is_remote": false,
+    "name": "United States",
+    "id": "80f7fff1fc0f",
+    "job_id": "4e1b1785fe35-80f7fff1fc0f-1789612616796"
+   },
+   {
+    "country": {
+     "name": "Hong Kong",
+     "id": "HK"
+    },
+    "primary": false,
+    "isOtherSelected": true,
+    "is_remote": false,
+    "name": "Hong Kong",
+    "id": "b8ee36bee01c",
+    "job_id": "4e1b1785fe35-b8ee36bee01c-1789612616796"
+   }
+  ]
+ },
+ {
+  "id": "ee3fec2fc12a",
+  "friendly_id": "ee3fec2fc12a-2026-compliance-risk-management-graduate-talent-trainee",
+  "name": "2026 Compliance & Risk Management Graduate Talent Trainee",
+  "url": "https://bitdeer.breezy.hr/p/ee3fec2fc12a-2026-compliance-risk-management-graduate-talent-trainee",
+  "published_date": "2026-07-21T03:44:11.885Z",
+  "type": {
+   "id": "fullTime",
+   "name": "Full-Time"
+  },
+  "location": {
+   "country": {
+    "name": "Singapore",
+    "id": "SG"
+   },
+   "city": "Singapore",
+   "primary": true,
+   "is_remote": false,
+   "name": "Singapore, SG",
+   "id": "37450646cddc"
+  },
+  "department": "2026 Graduate Talent Trainee Program",
+  "salary": "",
+  "company": {
+   "name": "Bitdeer Technologies Group",
+   "logo_url": null,
+   "friendly_id": "bitdeer",
+   "isMultipleLocationsEnabled": true
+  },
+  "locations": [
+   {
+    "country": {
+     "name": "Singapore",
+     "id": "SG"
+    },
+    "city": "Singapore",
+    "primary": true,
+    "is_remote": false,
+    "name": "Singapore, SG",
+    "id": "37450646cddc"
+   }
+  ]
+ },
+ {
+  "id": "c45e44fa50c6",
+  "friendly_id": "c45e44fa50c6-research-scientist-model-efficiency-intern",
+  "name": "Research Scientist-Model Efficiency (Intern)",
+  "url": "https://bitdeer.breezy.hr/p/c45e44fa50c6-research-scientist-model-efficiency-intern",
+  "published_date": "2026-08-10T01:24:31.427Z",
+  "type": {
+   "id": "other",
+   "name": "Other"
+  },
+  "location": {
+   "country": {
+    "name": "Singapore",
+    "id": "SG"
+   },
+   "city": "Singapore",
+   "primary": true,
+   "is_remote": false,
+   "name": "Singapore, SG",
+   "id": "b7cdb1f9d6ec"
+  },
+  "department": "AI Lab",
+  "salary": "",
+  "company": {
+   "name": "Bitdeer Technologies Group",
+   "logo_url": null,
+   "friendly_id": "bitdeer",
+   "isMultipleLocationsEnabled": true
+  },
+  "locations": [
+   {
+    "country": {
+     "name": "Singapore",
+     "id": "SG"
+    },
+    "city": "Singapore",
+    "primary": true,
+    "is_remote": false,
+    "name": "Singapore, SG",
+    "id": "b7cdb1f9d6ec"
+   },
+   {
+    "country": {
+     "name": "United States",
+     "id": "US"
+    },
+    "city": "Austin",
+    "primary": false,
+    "is_remote": false,
+    "name": "Austin, US",
+    "id": "314769aaa1f4"
+   }
+  ]
+ }
+]

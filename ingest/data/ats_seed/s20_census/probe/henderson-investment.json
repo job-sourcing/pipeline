@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers - Janus Henderson Investors - Global Corporate"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "hendersoninvestmentgroup.com = Charlotte NC real-estate investment firm recruiting agents; janushenderson.com = Janus Henderson Investors (US/UK asset manager, formed Janus+Henderson Group merger) — neither is HK's Henderson Investment (Henderson Land arm).",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

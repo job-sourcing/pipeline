@@ -2,10 +2,153 @@
  "brand": "Hutchison Port Holdings",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:24:22.136Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:29:40.544Z",
+ "candidates": [
+  {
+   "url": "https://www.hit.com.hk/en/Career-With-Us/Career-Opportunities.html",
+   "title": "Career Opportunities | HIT",
+   "status": 200,
+   "bytes": 33276,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Career Opportunities Hongkong International Terminals (HIT) is one of the leading container terminals in Hong Kong. With a strong emphasis on productivity and e",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.hutchinson.com/en/career",
+   "title": "Career | Hutchinson",
+   "status": 200,
+   "bytes": 117493,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 4,
+   "snippet": "Career We are a global network of 40,000 talents with a passion for solving our clients' challenges. Our rich entrepreneurial spirit drives us to explore new fr",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.ckh.com.hk/en/about/opportunities.php",
+   "title": "CK Hutchison Holdings Limited - About Us > Careers > Career Opportunities",
+   "status": 200,
+   "bytes": 27006,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 3,
+   "snippet": "CK Hutchison Holdings Limited (CK Hutchison) is a renowned multinational conglomerate committed to innovation and technology. Our diverse businesses employ over",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "34 Hutchison Ports jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/hutchison-ports-jobs-worldwide",
+   "s": "Today's top 34 Hutchison Ports jobs in Worldwide. Leverage your professional network, and get hired. New Hutchison Ports jobs added daily."
+  },
+  {
+   "t": "Hutchison Ports: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/hutchison-port-holdings/jobs",
+   "s": "Hutchison Ports | 68,228 followers on LinkedIn. THE WORLD'S LEADING PORT NETWORK We are Hutchison Ports. A network of over 30,000 employees, operating ports and"
+  },
+  {
+   "t": "CK Hutchison Holdings Limited - About Us > Careers > Career Opportunities",
+   "u": "https://www.ckh.com.hk/en/about/opportunities.php",
+   "s": "CK Hutchison Holdings Limited (CK Hutchison) is a renowned multinational conglomerate committed to innovation and technology. Our diverse businesses employ over"
+  },
+  {
+   "t": "Career - Hutchinson",
+   "u": "https://www.hutchinson.com/en/career",
+   "s": "Career We are a global network of 40,000 talents with a passion for solving our clients' challenges. Our rich entrepreneurial spirit drives us to explore new fr"
+  },
+  {
+   "t": "Career Opportunities | HIT",
+   "u": "https://www.hit.com.hk/en/Career-With-Us/Career-Opportunities.html",
+   "s": "Career Opportunities Hongkong International Terminals (HIT) is one of the leading container terminals in Hong Kong. With a strong emphasis on productivity and e"
+  },
+  {
+   "t": "Hutchison Ports Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Hutchison-Ports-jobs",
+   "s": "Find your ideal job on Jobsdb with 17 Hutchison Ports jobs (5 at Hutchison Ports) listed in Hong Kong. View all the Hutchison Ports vacancies now with new jobs "
+  },
+  {
+   "t": "Hutchison Port Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Hutchison-Port",
+   "s": "Find out what works well at Hutchison Port from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  },
+  {
+   "t": "Hutchison Port Holdings Careers and Employment - Indeed",
+   "u": "https://hk.indeed.com/cmp/Hutchison-Port-Holdings",
+   "s": "Find out what works well at Hutchison Port Holdings from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insight"
+  },
+  {
+   "t": "34 Hutchison Ports jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/hutchison-ports-jobs-worldwide",
+   "s": "Today's top 34 Hutchison Ports jobs in Worldwide. Leverage your professional network, and get hired. New Hutchison Ports jobs added daily."
+  },
+  {
+   "t": "Hutchison Ports: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/hutchison-port-holdings/jobs",
+   "s": "Hutchison Ports | 68,228 followers on LinkedIn. THE WORLD'S LEADING PORT NETWORK We are Hutchison Ports. A network of over 30,000 employees, operating ports and"
+  },
+  {
+   "t": "CK Hutchison Holdings Limited - About Us > Careers > Career Opportunities",
+   "u": "https://www.ckh.com.hk/en/about/opportunities.php",
+   "s": "CK Hutchison Holdings Limited (CK Hutchison) is a renowned multinational conglomerate committed to innovation and technology. Our diverse businesses employ over"
+  },
+  {
+   "t": "Hutchison Ports Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Hutchison-Ports-jobs",
+   "s": "Find your ideal job on Jobsdb with 17 Hutchison Ports jobs (5 at Hutchison Ports) listed in Hong Kong. View all the Hutchison Ports vacancies now with new jobs "
+  },
+  {
+   "t": "Career - Hutchinson",
+   "u": "https://www.hutchinson.com/en/career",
+   "s": "Join Hutchinson's global network of 40,000 talents. Our rich entrepreneurial spirit drives us to explore new frontiers in technology and business."
+  },
+  {
+   "t": "Career Opportunities | HIT",
+   "u": "https://www.hit.com.hk/en/Career-With-Us/Career-Opportunities.html",
+   "s": "HIT is a member of Hutchison Port Holdings Trust, the world's first container port business trust listed in Singapore. HIT is also a part of Hutchison Ports' gl"
+  },
+  {
+   "t": "Hutchison Ports Jobs & Careers - 13 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Hutchison-Ports-Jobs-E2233125.htm",
+   "s": "Search job openings at Hutchison Ports. 13 Hutchison Ports jobs including salaries, ratings, and reviews, posted by Hutchison Ports employees."
+  },
+  {
+   "t": "Hutchison Port Holdings Jobs & Careers - 2 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/London-Thamesport-Jobs-E32302.htm",
+   "s": "Search job openings at Hutchison Port Holdings. 2 Hutchison Port Holdings jobs including salaries, ratings, and reviews, posted by Hutchison Port Holdings emplo"
+  },
+  {
+   "t": "34 Hutchison Ports jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/hutchison-ports-jobs-worldwide",
+   "s": "Today's top 34 Hutchison Ports jobs in Worldwide. Leverage your professional network, and get hired. New Hutchison Ports jobs added daily."
+  },
+  {
+   "t": "Hutchison Ports: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/hutchison-port-holdings/jobs",
+   "s": "Hutchison Ports | 68,228 followers on LinkedIn. THE WORLD'S LEADING PORT NETWORK We are Hutchison Ports. A network of over 30,000 employees, operating ports and"
+  },
+  {
+   "t": "Career - Hutchinson",
+   "u": "https://www.hutchinson.com/en/career",
+   "s": "Career We are a global network of 40,000 talents with a passion for solving our clients' challenges. Our rich entrepreneurial spirit drives us to explore new fr"
+  },
+  {
+   "t": "Hutchison Ports Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Hutchison-Ports-jobs",
+   "s": "Find your ideal job on Jobsdb with 17 Hutchison Ports jobs (5 at Hutchison Ports) listed in Hong Kong. View all the Hutchison Ports vacancies now with new jobs "
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.ckh.com.hk/en/about/opportunities.php",
+  "platform": "custom",
+  "title": "CK Hutchison Holdings Limited - About Us > Careers > Career Opportunities"
+ },
+ "verdict": "custom_surface"
 }

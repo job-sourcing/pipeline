@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers | Cineworld"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Candidates = Regal Wings (US private-aviation desk) and Regal Cineworld (UK cinemas) — homonyms; actual brand = Regal International Airport Group (Hainan Meilan International Airport, Haikou; ex-HNA Infrastructure) — China airport operator with no EN/US career surface.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

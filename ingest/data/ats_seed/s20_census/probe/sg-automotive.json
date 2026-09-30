@@ -2,37 +2,37 @@
  "brand": "SG Automotive",
  "tier": "lca",
  "lca": "SG AMERICAS OPERATIONAL SERVICES, LLC",
- "ts": "2026-09-29T04:21:46.374Z",
+ "ts": "2026-09-30T06:00:29.632Z",
  "candidates": [
   {
    "url": "https://www.foundit.sg/search/automotive-jobs",
-   "title": "Access Denied",
-   "status": 403,
-   "bytes": 396,
+   "title": "",
+   "status": 200,
+   "bytes": 24801,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Find 4222 Automotive Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportunities in your pr",
-   "backend": "direct"
+   "backend": "zenrows"
   },
   {
    "url": "https://www.foundit.sg/search/automotive-automobile-jobs",
-   "title": "Access Denied",
-   "status": 403,
-   "bytes": 411,
+   "title": "",
+   "status": 200,
+   "bytes": 24151,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Find 125069 Automotive Automobile Jobs in Singapore at foundit.sg. Apply to top companies hiring now. Explore job vacancies with higher salaries and opportuniti",
-   "backend": "direct"
+   "backend": "zenrows"
   },
   {
    "url": "https://jobcube.sg/Automotive-jobs-in-Singapore",
    "title": "",
    "status": 200,
-   "bytes": 239239,
+   "bytes": 239107,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

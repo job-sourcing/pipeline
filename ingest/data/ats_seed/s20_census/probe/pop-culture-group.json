@@ -152,5 +152,11 @@
   "platform": "custom",
   "title": "PopCulture Careers - PopCulture.com"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Surface popculture.com/jobs = PopCulture.com, 'a Savage Ventures brand' (US digital media) — not the Chinese Pop Culture Group Co. (Nasdaq: POP); MoPOP/ReedPop/Indeed also unrelated",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

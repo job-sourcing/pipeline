@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — self-name Phoenix Ecommerce Technologies; not Phoenix TV"
+ "manual_adjudication": "REFUTED — self-name Phoenix Ecommerce Technologies; not Phoenix TV",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "lever board 'Phoenix Ecommerce Technologies' (US fintech/ecommerce; 'Remote (U.S.)' payments-infra roles) is not Phoenix TV (凤凰卫视) — matches file's manual_adjudication REFUTED.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

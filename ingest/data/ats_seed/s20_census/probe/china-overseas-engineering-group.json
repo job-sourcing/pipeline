@@ -2,10 +2,136 @@
  "brand": "China Overseas Engineering Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:45:23.771Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:04:05.342Z",
+ "candidates": [
+  {
+   "url": "https://www.devex.com/organizations/china-overseas-engineering-co-ltd-covec-57124",
+   "title": "",
+   "status": 200,
+   "bytes": 15123,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Learn more about China Overseas Engineering Co. Ltd.'s jobs, projects, latest news, contact information and geographical presence. China Overseas Engineering Gr",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.oocl.com/eng/aboutoocl/ooclcareer/jobopportunity/Pages/default.aspx",
+   "title": "OOCL - Job Opportunities",
+   "status": 200,
+   "bytes": 204385,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Working in the OOCL Group, you will be nurtured and given numerous learning and development opportunities. Advocating that our employees take the initiative to ",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "China Overseas Engineering Group Co.,Ltd.",
+   "u": "http://en.covec.com/",
+   "s": "Wang Kun Holds Business Talks with Xie Yi, General Manager of China Railway Eryuan Engineering Group (CREEC) 2025-11-10 Wang Kun Holds Talks with Ruth Zaipuna, "
+  },
+  {
+   "t": "人才招聘_中国海外工程有限责任公司 - Covec",
+   "u": "http://www.covec.com/intro/41.html",
+   "s": "中国海外工程有限责任公司 2025届校园招聘简章 我的名字叫中国海外 国际名称 COVEC 欢迎加入国际业务的 \"国家队\" 践行 \"一带一路\"战略，承担国字号发展使命! 我们的志向：美美与同，和合共生 我们的文化：学海无涯，心海无界 我们的愿景：崇尚价值创造，铸造优质品格 一、 公司简介 中国 ..."
+  },
+  {
+   "t": "Talent Recruitment_China Overseas Engineering Group Co.,Ltd.",
+   "u": "http://en.covec.com/intro/18.html",
+   "s": "Recruitment major Major in civil engineering, water conservancy and Hydropower Engineering, English, French, accounting, financial management, law, etc. Applica"
+  },
+  {
+   "t": "Covec - 中国海外工程有限责任公司",
+   "u": "http://www.covec.com/",
+   "s": "中国海外工程有限责任公司中国海外工程有限责任公司（中海外，COVEC）系世界500强企业——中国中铁股份有限公司旗下中铁国际集团有限公司全资子公司"
+  },
+  {
+   "t": "China Overseas Engineering Group Co., Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/china-overseas-engineering-group-co-ltd-",
+   "s": "China Overseas Engineering Group Co., Ltd. is a construction company based out of Zizhuyuan Rd Side Rd, Beijing, Beijing, China."
+  },
+  {
+   "t": "Join Us | 中國海外集團 - COHL",
+   "u": "https://www.cohl.com/en/jrzh/",
+   "s": "For job vacancies of our subsidiaries, please visit their recruitment webpages: China Overseas Land & Investment China State Construction China Overseas Propert"
+  },
+  {
+   "t": "【China Overseas Engineering Group Co. Limited招聘】-猎聘",
+   "u": "https://www.liepin.com/company/21414107/",
+   "s": "LIMITED企业介绍、CHINA OVERSEAS ENGINEERING GROUP CO. LIMITED地址、CHINA OVERSEAS ENGINEERING GROUP CO. LIMITED工作环境以及CHINA OVERSEAS ENGINEERING GROUP CO. LIMITED招聘岗位信息，"
+  },
+  {
+   "t": "Working at China Overseas Engineering Group | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-China-Overseas-Engineering-Group-EI_IE2343640.11,43.htm",
+   "s": "See what employees say it's like to work at China Overseas Engineering Group. Salaries, reviews, and more - all posted by employees working at China Overseas En"
+  },
+  {
+   "t": "人才招聘_中国海外工程有限责任公司 - Covec",
+   "u": "http://www.covec.com/intro/41.html",
+   "s": "中国海外工程有限责任公司 2025届校园招聘简章 我的名字叫中国海外 国际名称 COVEC 欢迎加入国际业务的 \"国家队\" 践行 \"一带一路\"战略，承担国字号发展使命! 我们的志向：美美与同，和合共生 我们的文化：学海无涯，心海无界 我们的愿景：崇尚价值创造，铸造优质品格 一、 公司简介 中国 ..."
+  },
+  {
+   "t": "【China Overseas Engineering Group Co. Limited招聘】-猎聘",
+   "u": "https://www.liepin.com/company/21414107/",
+   "s": "LIMITED企业介绍、CHINA OVERSEAS ENGINEERING GROUP CO. LIMITED地址、CHINA OVERSEAS ENGINEERING GROUP CO. LIMITED工作环境以及CHINA OVERSEAS ENGINEERING GROUP CO. LIMITED招聘岗位信息，"
+  },
+  {
+   "t": "Talent Recruitment_China Overseas Engineering Group Co.,Ltd.",
+   "u": "http://en.covec.com/intro/18.html",
+   "s": "Recruitment major Major in civil engineering, water conservancy and Hydropower Engineering, English, French, accounting, financial management, law, etc. Applica"
+  },
+  {
+   "t": "China Overseas Engineering Group Co.,Ltd.",
+   "u": "http://en.covec.com/",
+   "s": "Wang Kun Holds Business Talks with Xie Yi, General Manager of China Railway Eryuan Engineering Group (CREEC) 2025-11-10 Wang Kun Holds Talks with Ruth Zaipuna, "
+  },
+  {
+   "t": "Covec - 中国海外工程有限责任公司",
+   "u": "http://www.covec.com/",
+   "s": "中国海外工程有限责任公司中国海外工程有限责任公司（中海外，COVEC）系世界500强企业——中国中铁股份有限公司旗下中铁国际集团有限公司全资子公司"
+  },
+  {
+   "t": "Join Us | 中國海外集團 - COHL",
+   "u": "https://www.cohl.com/en/jrzh/",
+   "s": "For job vacancies of our subsidiaries, please visit their recruitment webpages: China Overseas Land & Investment China State Construction China Overseas Propert"
+  },
+  {
+   "t": "China Overseas Engineering Co. Ltd. - Devex",
+   "u": "https://www.devex.com/organizations/china-overseas-engineering-co-ltd-covec-57124",
+   "s": "Learn more about China Overseas Engineering Co. Ltd.'s jobs, projects, latest news, contact information and geographical presence. China Overseas Engineering Gr"
+  },
+  {
+   "t": "China Overseas Engineering Group Co., Ltd. - LinkedIn",
+   "u": "https://www.linkedin.com/company/china-overseas-engineering-group-co-ltd-",
+   "s": "China Overseas Engineering Group Co., Ltd. is a construction company based out of Zizhuyuan Rd Side Rd, Beijing, Beijing, China."
+  },
+  {
+   "t": "【China Overseas Engineering Group Co. Limited招聘】-猎聘",
+   "u": "https://www.liepin.com/company/21414107/",
+   "s": "LIMITED企业介绍、CHINA OVERSEAS ENGINEERING GROUP CO. LIMITED地址、CHINA OVERSEAS ENGINEERING GROUP CO. LIMITED工作环境以及CHINA OVERSEAS ENGINEERING GROUP CO. LIMITED招聘岗位信息，"
+  },
+  {
+   "t": "Join Us | 中國海外集團 - COHL",
+   "u": "https://www.cohl.com/en/jrzh/",
+   "s": "For job vacancies of our subsidiaries, please visit their recruitment webpages: China Overseas Land & Investment China State Construction China Overseas Propert"
+  },
+  {
+   "t": "Talent Recruitment_China Overseas Engineering Group Co.,Ltd.",
+   "u": "http://en.covec.com/intro/18.html",
+   "s": "Recruitment major Major in civil engineering, water conservancy and Hydropower Engineering, English, French, accounting, financial management, law, etc. Applica"
+  },
+  {
+   "t": "人才招聘_中国海外工程有限责任公司 - Covec",
+   "u": "http://www.covec.com/intro/41.html",
+   "s": "中国海外工程有限责任公司 2025届校园招聘简章 我的名字叫中国海外 国际名称 COVEC 欢迎加入国际业务的 \"国家队\" 践行 \"一带一路\"战略，承担国字号发展使命! 我们的志向：美美与同，和合共生 我们的文化：学海无涯，心海无界 我们的愿景：崇尚价值创造，铸造优质品格 一、 公司简介 中国 ..."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

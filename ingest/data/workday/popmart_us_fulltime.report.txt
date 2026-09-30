@@ -1,0 +1,12 @@
+rows: 70 (unique reqIds: 70)
+details merged: 70
+descriptions present: 70
+locations enumerated (not 'N Locations'): 70
+startDate present: 70
+signals: matched=42 no_match=21 blocked=0 not_checked=7
+location entries total (sum nLocations): 73
+similar-job edges: 245
+facet census: 6 facets / 143 values (popmart_us_fulltime.facets.json)
+facet-tagged rows: workerSubType=167 jobFamilyGroup=163 (from facet_tags.jsonl)
+facet tag coverage: 68/70 rows (2 untagged)
+questionnaire definitions: 5 id(s) covering 70/70 rows; 5 fetched (37 questions → popmart_us_fulltime.questionnaires.csv)

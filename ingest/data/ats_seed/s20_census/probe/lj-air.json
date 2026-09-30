@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Jobs | Allegiant Air"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "best surface allegiantair.jobs = Allegiant Air (US ultra-low-cost carrier); au.jora.com is an aggregator; ljinc.applicantpro.com = LJ Inc (US manufacturer, isolved ATS) — no authentic LJ Air (Chinese carrier) career surface.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

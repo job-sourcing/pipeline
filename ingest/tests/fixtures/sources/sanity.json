@@ -1,0 +1,229 @@
+{
+ "query": "*[_type==\"page\" && slug.current==\"Jobs\" && language==\"en-us\"][0]{pageBuilder, _updatedAt}",
+ "result": {
+  "_updatedAt": "2026-05-12T12:20:27Z",
+  "pageBuilder": [
+   {
+    "_key": "09097988f4ec",
+    "_type": "textArea",
+    "background": "background--white",
+    "text": [
+     {
+      "_key": "757a70202bd6",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "0da5579dffd20",
+        "_type": "span",
+        "marks": [],
+        "text": "Join the NIU Team"
+       }
+      ],
+      "markDefs": [],
+      "style": "h2"
+     },
+     {
+      "_key": "21257bd66512",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "f8fa098cc620",
+        "_type": "span",
+        "marks": [],
+        "text": "At NIU, we're on a mission to revolutionize urban mobility and create a sustainable future. Join a dynamic, forward-thinking team where innovation, collaboration, and passion drive everything we do. W TRIMMED-FOR-FIXTURE."
+       }
+      ],
+      "markDefs": [],
+      "style": "h4"
+     }
+    ],
+    "textAlignment": "text--center"
+   },
+   {
+    "_key": "9711d332b58c208930d2beacd2ec28df",
+    "_type": "textArea",
+    "background": "background--white",
+    "text": [
+     {
+      "_key": "2dbb81965a49",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "879d99318565",
+        "_type": "span",
+        "marks": [],
+        "text": "United States: "
+       }
+      ],
+      "markDefs": [],
+      "style": "h2"
+     }
+    ],
+    "textAlignment": "text--center"
+   },
+   {
+    "_key": "a1fd783bc63354ab05b7e6429b573f20",
+    "_type": "textArea",
+    "background": "background--white",
+    "ctas": {
+     "_type": "ctas",
+     "ctas": [
+      {
+       "_key": "20e0ef6ed459",
+       "_type": "cta",
+       "link": {
+        "_type": "link",
+        "blank": true,
+        "text": "View Job Listing",
+        "type": "external",
+        "url": "https://cdn.sanity.io/files/cd9iwvgl/production/7bef58a1a84a728055baadf95445992daf585834.pdf"
+       },
+       "style": "button--primary"
+      }
+     ]
+    },
+    "text": [
+     {
+      "_key": "b418b6e3e5b1",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "62d167afefa0",
+        "_type": "span",
+        "marks": [],
+        "text": "SALES DIRECTOR DEALERSHIPS (M/F/D) "
+       }
+      ],
+      "markDefs": [],
+      "style": "h4"
+     },
+     {
+      "_key": "1d43e016a92c",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "dd4a0aab98530",
+        "_type": "span",
+        "marks": [],
+        "text": "GTM STRATEGY FOR GOLF CARTS & LSV VEHICLES"
+       }
+      ],
+      "markDefs": [],
+      "style": "normal"
+     },
+     {
+      "_key": "303850895e83",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "fb11cf694a7c0",
+        "_type": "span",
+        "marks": [],
+        "text": "As the Sales Director of Dealerships, you will play a critical role in driving the go-to-market (GTM) strategy for golf carts and LSV (Low-Speed Vehicle) sales within NIU Technologies\u2019 Dealer Network  TRIMMED-FOR-FIXTURE."
+       }
+      ],
+      "markDefs": [],
+      "style": "normal"
+     },
+     {
+      "_key": "6bc536f80770",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "b5498a336cf9",
+        "_type": "span",
+        "marks": [],
+        "text": ""
+       }
+      ],
+      "markDefs": [],
+      "style": "normal"
+     }
+    ],
+    "textAlignment": "text--center"
+   },
+   {
+    "_key": "6303cd010855a07a3eb737482a0eba4f",
+    "_type": "textArea",
+    "background": "background--white",
+    "ctas": {
+     "_type": "ctas",
+     "ctas": [
+      {
+       "_key": "20e0ef6ed459",
+       "_type": "cta",
+       "link": {
+        "_type": "link",
+        "blank": true,
+        "text": "View Job Listing",
+        "type": "external",
+        "url": "https://cdn.sanity.io/files/cd9iwvgl/production/d56314d3b460307ddc956e2d50ba619d807d02e0.pdf"
+       },
+       "style": "button--primary"
+      }
+     ]
+    },
+    "text": [
+     {
+      "_key": "b418b6e3e5b1",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "935de4eafe9c",
+        "_type": "span",
+        "marks": [],
+        "text": "KEY ACCOUNT MANAGER (M/F/D) "
+       }
+      ],
+      "markDefs": [],
+      "style": "h4"
+     },
+     {
+      "_key": "d0af387039a6",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "81b1bbde6aa40",
+        "_type": "span",
+        "marks": [],
+        "text": "DEALERSHIPS & FLAGSHIPS - MID-WEST USA"
+       }
+      ],
+      "markDefs": [],
+      "style": "normal"
+     },
+     {
+      "_key": "d2124c82533a",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "52c72ccbed190",
+        "_type": "span",
+        "marks": [],
+        "text": "As a Key Account Manager, you will be responsible for building and maintaining key accounts for NIU Technologies in the Flagship Store and Dealer network for our Micro-Mobility line of kick-scooters a TRIMMED-FOR-FIXTURE."
+       }
+      ],
+      "markDefs": [],
+      "style": "normal"
+     },
+     {
+      "_key": "6bc536f80770",
+      "_type": "block",
+      "children": [
+       {
+        "_key": "b5498a336cf9",
+        "_type": "span",
+        "marks": [],
+        "text": ""
+       }
+      ],
+      "markDefs": [],
+      "style": "normal"
+     }
+    ],
+    "textAlignment": "text--center"
+   }
+  ]
+ },
+ "ms": 12
+}

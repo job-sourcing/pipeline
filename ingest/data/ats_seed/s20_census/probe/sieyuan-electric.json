@@ -152,5 +152,11 @@
   "platform": "custom",
   "title": "Latest 1 Sieyuan Electric Usa Llc jobs Vacancies - 29 September 2026 | Jobaaj"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "china_only: en.sieyuan.com/join shows China roles; no US rows on page",
+  "ts": "2026-09-30T05:10:00Z",
+  "by": "S22-ADJ-main"
+ }
 }

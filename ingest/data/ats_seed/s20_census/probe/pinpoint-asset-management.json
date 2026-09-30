@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Pinpoint Asia-Jobs (List) | Pinpoint Asia"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "workwithus.pinpointhq.com = Pinpoint (UK recruiting-software co) with US/London roles; brand = Pinpoint Asset Management (HK fund) whose own /career SPA has no US rows",
+  "ts": "2026-09-30T05:10:00Z",
+  "by": "S22-ADJ-main"
+ }
 }

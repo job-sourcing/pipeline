@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "vivo Jobs | vivo Global"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: empty_board — vivo.com/en/about-vivo/career/jobs is JS-rendered; its search API (aboutVivo/queryPostManagementByCondition) returns 0 postings across en/in/id/th regions; no US rows (vivo has no US consumer market); vivo-us.com = US desk-solutions homonym.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

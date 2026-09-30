@@ -2,13 +2,13 @@
  "brand": "Li-Ning",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:34:19.156Z",
+ "ts": "2026-09-30T06:14:16.317Z",
  "candidates": [
   {
    "url": "https://www.stepstone.de/jobs/li-ning-europe-gmbh",
    "title": "",
    "status": 200,
-   "bytes": 45651,
+   "bytes": 45552,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -20,7 +20,7 @@
    "url": "https://www.stepstone.de/jobs/li-ning-europe-gmbh/in-darmstadt",
    "title": "",
    "status": 200,
-   "bytes": 46849,
+   "bytes": 46656,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -38,7 +38,7 @@
    "spec": null,
    "score": 5,
    "snippet": "李宁招聘官网提供最新职位信息，涵盖多个岗位，助您找到适合的职业机会。",
-   "backend": "supabase"
+   "backend": "direct"
   }
  ],
  "results": [

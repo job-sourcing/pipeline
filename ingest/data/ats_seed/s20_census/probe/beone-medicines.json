@@ -161,5 +161,17 @@
   "snippet": "BeOne is a global oncology company that is discovering and developing innovative treatments that are more affordable and accessible to cancer patients worldwide",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "BeOne = renamed BeiGene; authentic workday board beigene.wd5.myworkdayjobs.com/BeiGene; API shows 272 jobs, 138 US rows (Remote-US/Hopewell NJ/San Carlos CA)",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ },
+ "wire": {
+  "platform": "workday",
+  "board": "https://beigene.wd5.myworkdayjobs.com/BeiGene",
+  "us_rows": 138,
+  "sample": "Senior Clinical Research Associate - West Coast — Remote (US); Principal Scientist, Discovery Chemistry — San Carlos, CA; Associate Director, Maintenance & Facilities — Hopewell, NJ"
+ }
 }

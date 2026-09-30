@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Dreame Careers"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic Dreame Technology (Chinese smart-appliance maker; LCA DREAME TECHNOLOGY USA INC); US dreametech.com is Shopify store with no_jobs_section, only careers surface is Indonesia PT dreame.co.id (Indonesia roles only) - no US rows found",
+  "ts": "2026-09-30T10:32Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

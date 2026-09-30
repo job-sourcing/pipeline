@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "SinoJobs: XIU.COM"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "dead CN fashion e-commerce; candidates = LinkedIn/aggregator profiles only",
+  "ts": "2026-09-30T05:10:00Z",
+  "by": "S22-ADJ-main"
+ }
 }

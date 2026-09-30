@@ -2,10 +2,148 @@
  "brand": "KWG Property",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:39:26.315Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:04:09.809Z",
+ "candidates": [
+  {
+   "url": "https://www.careers-page.com/kwg-2",
+   "title": "- KWG | Career Page",
+   "status": 200,
+   "bytes": 20669,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Come work with us We're looking for great people to join our growing team View Openings",
+   "backend": "direct"
+  },
+  {
+   "url": "https://kwg.eu/en/careers-at-kwg/",
+   "title": "",
+   "status": 200,
+   "bytes": 463,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "kwg.eu",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://kwgreater360.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 10855,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Our mission is clear: to build careers worth having, businesses worth owning and lives worth living. And that means an unapologetic focus on you - the most impo",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "- KWG | Career Page",
+   "u": "https://www.careers-page.com/kwg-2",
+   "s": "Come work with us We're looking for great people to join our growing team View Openings"
+  },
+  {
+   "t": "Kwg Jobs in United States (6,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/kwg-jobs",
+   "s": "Today's top 6,000+ Kwg jobs in United States. Leverage your professional network, and get hired. New Kwg jobs added daily."
+  },
+  {
+   "t": "kwg.eu",
+   "u": "https://kwg.eu/en/careers-at-kwg/",
+   "s": "kwg.eu"
+  },
+  {
+   "t": "KWG Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Kwg",
+   "s": "Find out what works well at KWG from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for p"
+  },
+  {
+   "t": "KWG Property Holding Limited - LinkedIn",
+   "u": "https://www.linkedin.com/company/kwg-property-holding-limited",
+   "s": "KWG Property Holding Limited | 338 followers on LinkedIn."
+  },
+  {
+   "t": "Careers - KWG360 - KWG360",
+   "u": "https://kwgreater360.com/careers/",
+   "s": "Our mission is clear: to build careers worth having, businesses worth owning and lives worth living. And that means an unapologetic focus on you - the most impo"
+  },
+  {
+   "t": "KWG Property Holding Limited Careers and Employment",
+   "u": "https://hk.indeed.com/cmp/Kwg-Property-Holding-Limited",
+   "s": "Find out what works well at KWG Property Holding Limited from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO in"
+  },
+  {
+   "t": "Join our Team - kwge.kw.com",
+   "u": "https://kwge.kw.com/join-our-team",
+   "s": "Ready to amplify your real estate career? Fill out the form below and a member of our market center will contact you shortly."
+  },
+  {
+   "t": "kw.jobs",
+   "u": "http://www.kw.jobs/",
+   "s": "kw.jobs bietet Immobilienprofis Bildung, Coaching, Technologie und Möglichkeiten zur Vermögensbildung, um ihre Karriere auf neue Höhen zu bringen."
+  },
+  {
+   "t": "Careers - KWG360 - KWG360",
+   "u": "https://kwgreater360.com/careers/",
+   "s": "Built By Agents, For Agents Keller Williams has always been more than just a real estate company. Our mission is clear: to build careers worth having, businesse"
+  },
+  {
+   "t": "- KWG | Career Page",
+   "u": "https://www.careers-page.com/kwg-2",
+   "s": "Come work with us We're looking for great people to join our growing team View Openings"
+  },
+  {
+   "t": "Keller Williams Realty | Careers with Keller Williams",
+   "u": "https://usekw.com/careers",
+   "s": "Interested in starting a real estate career with Keller Williams Advantage Realty? Find out what opportunities are waiting for you today."
+  },
+  {
+   "t": "Join our Team - professionals.kw.com",
+   "u": "https://professionals.kw.com/join-our-team",
+   "s": "Keller Williams offers a comprehensive ecosystem of education, training, coaching, mentorship, and professional development for real estate agents."
+  },
+  {
+   "t": "Careers at Keller Williams - Keller Williams Realty Professional Partners",
+   "u": "https://kwprofessionalpartners.kw.com/careers-at-keller-williams/",
+   "s": "Who We Are Keller Williams Realty is an international real estate franchise company with more than 110,000 real estate agents, operating in 700 offices across t"
+  },
+  {
+   "t": "Join Keller Williams - Join KW",
+   "u": "https://join-kw.com/join-keller-williams/",
+   "s": "Ready to apply for a career in real estate with Keller Williams? Our career consultants are ready to help you launch a successful real estate career with KW! We"
+  },
+  {
+   "t": "Real Estate Careers at Keller Williams Realty - reCareers",
+   "u": "https://recareers.net/",
+   "s": "Build successful real estate careers at Keller WIlliams Realty with the best training, technology, support and culture in the business."
+  },
+  {
+   "t": "Kwg Jobs in United States (6,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/kwg-jobs",
+   "s": "Today's top 6,000+ Kwg jobs in United States. Leverage your professional network, and get hired. New Kwg jobs added daily."
+  },
+  {
+   "t": "- KWG | Career Page",
+   "u": "https://www.careers-page.com/kwg-2",
+   "s": "Come work with us We're looking for great people to join our growing team View Openings"
+  },
+  {
+   "t": "Careers - KWG360 - KWG360",
+   "u": "https://kwgreater360.com/careers/",
+   "s": "As a result, more real estate professionals than ever are turning to Keller Williams Realty. And, we're powering their businesses with the education, coaching, "
+  },
+  {
+   "t": "KWG Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Kwg",
+   "s": "Find out what works well at KWG from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for p"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

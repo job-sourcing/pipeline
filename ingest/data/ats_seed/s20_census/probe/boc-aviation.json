@@ -12,5 +12,11 @@
   "title": "Careers",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: singapore_only — authentic BOC Aviation ('A Member of Bank of China Group', HKEx 2588, HQ Singapore + NY office); bocaviation.com/careers (custom) lists 3 current openings: Settlement Manager (Singapore), Transaction Manager Legal & TM (Based in London), Manager IT AI/Digital Transformation (Singapore) — no US/NY rows.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

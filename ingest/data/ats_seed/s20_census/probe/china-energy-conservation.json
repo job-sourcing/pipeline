@@ -2,10 +2,153 @@
  "brand": "China Energy Conservation",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:22:21.210Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:27:06.973Z",
+ "candidates": [
+  {
+   "url": "https://www.conservation-careers.com/job-region/conservation-jobs-china/",
+   "title": "",
+   "status": 200,
+   "bytes": 32973,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Browse the latest Conservation jobs in China, from Conservation Careers - the world's biggest conservation jobs board.",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.sustainabilityjobs.net/china",
+   "title": "Sustainability Jobs in China - Sustainability Jobs",
+   "status": 200,
+   "bytes": 59611,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover exciting sustainability jobs in China, one of the world's most dynamic markets for green careers and environmental innovation. As the world's largest i",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.greenrecruitmentcompany.com/jobs/china/renewable-energy",
+   "title": "All jobs near China in the Renewable · Green Recruitment Company",
+   "status": 200,
+   "bytes": 1088375,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Our client is an innovative energy storage technology company developing advanced battery solutions for large-scale energy applications. With growing commercial",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Conservation jobs in China",
+   "u": "https://www.conservation-careers.com/job-region/conservation-jobs-china/",
+   "s": "Browse the latest Conservation jobs in China, from Conservation Careers - the world's biggest conservation jobs board."
+  },
+  {
+   "t": "conservation jobs in China - Careerjet",
+   "u": "https://www.career-jet.cn/conservation-jobs",
+   "s": "All conservation jobs in China on Careerjet.cn, the search engine for jobs in China"
+  },
+  {
+   "t": "32 conservation Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-conservation-jobs-SRCH_IL.0,5_IN48_KO6,18.htm",
+   "s": "Search Conservation jobs in China with company ratings & salaries. 32 open jobs for Conservation in China."
+  },
+  {
+   "t": "Sustainability Jobs in China",
+   "u": "https://www.sustainabilityjobs.net/china",
+   "s": "Discover exciting sustainability jobs in China, one of the world's most dynamic markets for green careers and environmental innovation. As the world's largest i"
+  },
+  {
+   "t": "1,357 environmental Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-environmental-jobs-SRCH_IL.0,5_IN48_KO6,19.htm",
+   "s": "Search Environmental jobs in China with company ratings & salaries. 1,357 open jobs for Environmental in China."
+  },
+  {
+   "t": "中国节能环保集团有限公司 - Cecep",
+   "u": "http://www.cecep.cn/cecep/zyly/rczp/jngs/A008014003001Gone1.html",
+   "s": "中国节能环保集团有限公司是唯一一家主业为节能减排、环境保护的中央企业。拥有各级子公司338家，上市公司5家，分布在国内近30个省市及境外近40个国家和地区，致力于成为质量优秀的科技型服务型跨国经营企业集团。"
+  },
+  {
+   "t": "Urgent! Renewable energy jobs in China - Jooble",
+   "u": "https://jooble.org/jobs-renewable-energy/China",
+   "s": "Active 46 vacancies • Renewable energy jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Renewable energy "
+  },
+  {
+   "t": "All jobs near China in the Renewable Energy sector",
+   "u": "https://www.greenrecruitmentcompany.com/jobs/china/renewable-energy",
+   "s": "Our client is an innovative energy storage technology company developing advanced battery solutions for large-scale energy applications. With growing commercial"
+  },
+  {
+   "t": "Job vacancies China | Energy JobSearch",
+   "u": "https://energyjobsearch.com/jobs/jobs-in-china",
+   "s": "Explore millions of job vacancies in China and apply online. Find your next job at Energy JobSearch!"
+  },
+  {
+   "t": "2,975 energy Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-energy-jobs-SRCH_IL.0,5_IN48_KO6,12.htm",
+   "s": "Search Energy jobs in China with company ratings & salaries. 2,975 open jobs for Energy in China."
+  },
+  {
+   "t": "1,357 environmental Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-environmental-jobs-SRCH_IL.0,5_IN48_KO6,19.htm",
+   "s": "Search Environmental jobs in China with company ratings & salaries. 1,357 open jobs for Environmental in China."
+  },
+  {
+   "t": "Urgent! Renewable energy jobs in China - Jooble",
+   "u": "https://jooble.org/jobs-renewable-energy/China",
+   "s": "Active 46 vacancies • Renewable energy jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Renewable energy "
+  },
+  {
+   "t": "Renewable energy jobs, China - rejobs.org",
+   "u": "https://rejobs.org/en/renewable-energy-jobs/china",
+   "s": "Renewable energy jobs, China on Rejobs.org. Current openings from employers across solar, wind, storage, hydrogen and the grid."
+  },
+  {
+   "t": "China Climate Jobs - ClimateChangeJobs.com",
+   "u": "https://climatechangejobs.com/jobs/in-china",
+   "s": "Browse China climate jobs on Climate Change Jobs, the job board for climate action. Featuring more than 20,000 opportunities!"
+  },
+  {
+   "t": "Sustainability & ESG Jobs in China | CSR Jobs",
+   "u": "https://csrjobs.club/jobboard/china",
+   "s": "Access top sustainability and ESG job offers in China. Find in-house CSR roles, reporting positions, and green careers with leading local companies."
+  },
+  {
+   "t": "Renewable Energy Jobs in China - September 2026 | EarthStream",
+   "u": "https://www.earthstreamglobal.com/job-role/renewable-energy-jobs-in-china",
+   "s": "Search and apply online for Renewable Energy Jobs in China today. EarthStream is a leading recruiter for Nuclear, Renewables, Power & Utilities and Commodities."
+  },
+  {
+   "t": "Conservation jobs in China",
+   "u": "https://www.conservation-careers.com/job-region/conservation-jobs-china/",
+   "s": "Browse the latest Conservation jobs in China, from Conservation Careers - the world's biggest conservation jobs board."
+  },
+  {
+   "t": "2,975 energy Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-energy-jobs-SRCH_IL.0,5_IN48_KO6,12.htm",
+   "s": "Search Energy jobs in China with company ratings & salaries. 2,975 open jobs for Energy in China."
+  },
+  {
+   "t": "All jobs near China in the Renewable Energy sector",
+   "u": "https://www.greenrecruitmentcompany.com/jobs/china/renewable-energy",
+   "s": "Our client is an innovative energy storage technology company developing advanced battery solutions for large-scale energy applications. With growing commercial"
+  },
+  {
+   "t": "1,357 environmental Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-environmental-jobs-SRCH_IL.0,5_IN48_KO6,19.htm",
+   "s": "Search Environmental jobs in China with company ratings & salaries. 1,357 open jobs for Environmental in China."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.greenrecruitmentcompany.com/jobs/china/renewable-energy",
+  "platform": "custom",
+  "title": "All jobs near China in the Renewable · Green Recruitment Company"
+ },
+ "verdict": "custom_surface"
 }

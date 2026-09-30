@@ -165,5 +165,11 @@
   "snippet": "Job Openings 1 - 25 of 1229 Job Openings Save this Search Multi-line",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "surface = Chicago Public Schools (cpsk12il.taleo.net, 'CPS Careers', 1229 openings) and Center Line Public Schools (clps.org) — school-district homonyms; census brand CLPS Inc = CLPS Global, Shanghai IT consulting (NASDAQ:CLPS, LCA CLPS TECHNOLOGY (CALIFORNIA) INC).",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

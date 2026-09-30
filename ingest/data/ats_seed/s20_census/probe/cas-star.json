@@ -161,5 +161,11 @@
   "snippet": "CoStar Group (NASDAQ: CSGP) is a leading global provider of commercial and residential real estate information, analytics, and online marketplaces. Included in ",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "surface = CoStar Group (NASDAQ:CSGP, US commercial real-estate analytics) workday board costar.wd1.myworkdayjobs.com/CoStarCareers, plus CASact/cas.org (American Chemical Society) homonyms; census brand CAS Star = Xi'an CAS-backed hard-tech VC 中科创星 — no own board.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

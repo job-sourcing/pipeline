@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Jobs at Enlight"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Census surface enlight.zohorecruit.com 'Jobs at Enlight' belongs to Enlight (Mexico; Zoho career-site JSON shows company 'Enlight', website enlight.mx); other candidates = Enlight Renewable Energy (Israel), esports enlight.gg, US e-learning video firm; actual 光线传媒 Enlight Media (Beijing) has no EN career surface (LCA ENLIGHT GROWTH IT LLC is a separate US entity).",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

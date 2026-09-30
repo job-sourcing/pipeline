@@ -152,5 +152,11 @@
   "platform": "icims",
   "title": "CAREERS | Bank Of China"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Census surface bocusa.com/careers (icims) = Bank of China U.S.A. — a different bank ('Here at the Bank of China'); CMB (Shenzhen) recruits via cmbchina.com CN site + JobsDB HK/SG; no own US surface",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

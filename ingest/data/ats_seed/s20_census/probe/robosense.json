@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic RoboSense (速腾聚创) but robosense.ai/about/joinus lists Shenzhen 社会招聘/校园招聘 only (no US roles); LCA ROBOSENSE INC shows a US arm yet no public US job board found — china_only",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

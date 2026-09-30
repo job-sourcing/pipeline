@@ -12,5 +12,17 @@
   "title": "Job Opportunities With Bitdeer - Enquire Here",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "AUTHENTIC: bitdeer.com links to breezy board 'Bitdeer Technologies Group' (Chinese-origin crypto-mining/AI cloud, Bitmain spin-off); 249 postings, 72 rows in US location groups (Austin TX, San Jose CA, Rockdale TX, Aurora CO, OH, MA, remote-US).",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ },
+ "wire": {
+  "platform": "breezy",
+  "board": "https://bitdeer.breezy.hr/",
+  "us_rows": 72,
+  "sample": "Payroll Manager — Austin, TX; Senior IT Application Lead — United States (Remote/Hybrid); Repair Technician — Rockdale, TX"
+ }
 }

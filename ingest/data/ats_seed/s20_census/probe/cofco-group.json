@@ -154,5 +154,17 @@
   "platform": "successfactors",
   "title": ""
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic COFCO International (global arm of SOE COFCO; LCA COFCO INTERNATIONAL GRAINS US LLC); successfactors board careers.cofcointernational.com; 63 jobs, 3 US rows",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ },
+ "wire": {
+  "platform": "successfactors",
+  "board": "https://careers.cofcointernational.com/search-jobs",
+  "us_rows": 3,
+  "sample": "Senior Legal Counsel, North America — Chicago, IL, US; Head of Compliance for North America and Derivatives — Stamford, CT, USA; Business Analyst — Memphis, TX, US"
+ }
 }

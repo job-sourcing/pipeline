@@ -1,0 +1,284 @@
+{
+ "wave3": [
+  {
+   "brand": "Aden Group",
+   "wire": {
+    "platform": "custom",
+    "board": "https://adengroup.com/career/",
+    "us_rows": 2,
+    "sample": "Project Manager (PMO) — Akila, Remote, USA (+ Technical Sales Manager — Akila, North America)"
+   },
+   "adjudication_note": "Authentic Aden Group (Shanghai-founded, Singapore-HQ FM/energy; LCA ADEN STAFF INC); own careers page adengroup.com/career/ lists 5 open roles incl. 'Project Manager (PMO) — Akila, Remote, USA' and 'Technical Sales Manager — Akila, North American'; adenhq.com (AI cloud startup) and careers.maaden.com (Saudi mining) are homonyms."
+  },
+  {
+   "brand": "Agora",
+   "wire": {
+    "platform": "rippling",
+    "board": "https://ats.rippling.com/agora/jobs",
+    "us_rows": 2,
+    "sample": "Product Marketing Manager — Santa Clara, CA; Account Executive (Sales, US) — Santa Clara, CA"
+   },
+   "adjudication_note": "AUTHENTIC: agora.io (Shanghai-origin video SDK, US HQ Santa Clara) embeds rippling board; 10 jobs, 2 US-located (Sales, US dept; Product Marketing — Santa Clara, CA). Note: file LCA 'AGORA DATA INC.' is a different TX data co."
+  },
+  {
+   "brand": "Amer Sports",
+   "wire": {
+    "platform": "talentadore",
+    "board": "https://amersports.careers.talentadore.com/",
+    "us_rows": 12,
+    "sample": "Director, Global Tax — New York City, US; Sr. Analyst SAP FI/CO — Chicago, IL"
+   },
+   "adjudication_note": "Authentic (Anta-led CN-owned). amersports.com/careers is a per-brand link hub, but its 'Europe & north america' TalentAdore portal (amersports.careers.talentadore.com) lists 44 jobs incl 12 US rows: New York City x8, Chicago IL x2, Pittston Township PA x2 (verified via ats.talentadore.com/positions/mwRcjSn/json)."
+  },
+  {
+   "brand": "Ant Group",
+   "wire": {
+    "platform": "custom",
+    "board": "https://www.ant-intl.com/en/job-search/",
+    "us_rows": 8,
+    "sample": "SRE Engineer (US)-Americas & EMEA Tech — Sunnyvale; Senior Manager, AML Testing & Control Assurance-US AML Compliance — New York"
+   },
+   "adjudication_note": "Ant International (Ant Group global arm) careers; platform API hrcareersweb.antgroup.com/api/social/position/search returns 161 jobs incl 8 US rows (Sunnyvale x7, New York x1)"
+  },
+  {
+   "brand": "Ascentage Pharma",
+   "wire": {
+    "platform": "custom",
+    "board": "https://www.ascentage.com/careers/job-opportunities/",
+    "us_rows": 4,
+    "sample": "Regulatory CMC Lead — Flexible, United States"
+   },
+   "adjudication_note": "Authentic Ascentage Pharma (Suzhou/Nasdaq AAPM) own job board: 4 US-location rows ('Flexible, United States' x3 + 'United States' x1) among CN roles; note rows posted 4-6y ago (stale board — verify at wire)."
+  },
+  {
+   "brand": "Autel Intelligent Technology",
+   "wire": {
+    "platform": "custom",
+    "board": "https://autelenergy.us/pages/careers",
+    "us_rows": 3,
+    "sample": "IT Manager — North Carolina, United States; Production Supervisor — North Carolina, United States; Quality Technician — North Carolina, United States"
+   },
+   "adjudication_note": "AUTHENTIC: Autel Energy (autelenergy.us) is Autel Intelligent Technology's (Shenzhen) US EV-charger arm — page self-describes 'Established in 2004, Autel... leading providers of intelligent automotive products'; 3 US job rows, all North Carolina–United States."
+  },
+  {
+   "brand": "BeOne Medicines",
+   "wire": {
+    "platform": "workday",
+    "board": "https://beigene.wd5.myworkdayjobs.com/BeiGene",
+    "us_rows": 138,
+    "sample": "Senior Clinical Research Associate - West Coast — Remote (US); Principal Scientist, Discovery Chemistry — San Carlos, CA; Associate Director, Maintenance & Facilities — Hopewell, NJ"
+   },
+   "adjudication_note": "BeOne = renamed BeiGene; authentic workday board beigene.wd5.myworkdayjobs.com/BeiGene; API shows 272 jobs, 138 US rows (Remote-US/Hopewell NJ/San Carlos CA)"
+  },
+  {
+   "brand": "Bitdeer",
+   "wire": {
+    "platform": "breezy",
+    "board": "https://bitdeer.breezy.hr/",
+    "us_rows": 72,
+    "sample": "Payroll Manager — Austin, TX; Senior IT Application Lead — United States (Remote/Hybrid); Repair Technician — Rockdale, TX"
+   },
+   "adjudication_note": "AUTHENTIC: bitdeer.com links to breezy board 'Bitdeer Technologies Group' (Chinese-origin crypto-mining/AI cloud, Bitmain spin-off); 249 postings, 72 rows in US location groups (Austin TX, San Jose CA, Rockdale TX, Aurora CO, OH, MA, remote-US)."
+  },
+  {
+   "brand": "Chagee",
+   "wire": {
+    "platform": "workday",
+    "board": "https://chagee.wd102.myworkdayjobs.com/External",
+    "us_rows": 5,
+    "sample": "Director, Supply Chain — Irvine, CA; Manager, Real Estate Development — Irvine, CA; Manager, Social & Creator Marketing — Irvine, CA"
+   },
+   "adjudication_note": "Authentic CHAGEE (霸王茶姬, LCA CHAGEE CA LLC); workday board lists 61 jobs of which 5 US — all Irvine CA"
+  },
+  {
+   "brand": "COFCO Group",
+   "wire": {
+    "platform": "successfactors",
+    "board": "https://careers.cofcointernational.com/search-jobs",
+    "us_rows": 3,
+    "sample": "Senior Legal Counsel, North America — Chicago, IL, US; Head of Compliance for North America and Derivatives — Stamford, CT, USA; Business Analyst — Memphis, TX, US"
+   },
+   "adjudication_note": "Authentic COFCO International (global arm of SOE COFCO; LCA COFCO INTERNATIONAL GRAINS US LLC); successfactors board careers.cofcointernational.com; 63 jobs, 3 US rows"
+  },
+  {
+   "brand": "DeepRoute.ai",
+   "wire": {
+    "platform": "workable",
+    "board": "https://apply.workable.com/deeproute-dot-a-i/",
+    "us_rows": 4,
+    "sample": "Autonomous Driving Systems Project Manager — Fremont, US; Member of Technical Staff (MTS) Multimodal Foundation Models — Fremont, US; Research Scientist, RL — Fremont, US"
+   },
+   "adjudication_note": "AUTHENTIC: Workable board self-describes 'Deeproute.ai, an autonomous driving startup... headquarters in Shenzhen and Beijing, China, and Silicon Valley'; 4 jobs, ALL Fremont, United States."
+  },
+  {
+   "brand": "Greenland Holdings",
+   "wire": {
+    "platform": "custom",
+    "board": "https://greenlandusa.com/careers",
+    "us_rows": 8,
+    "sample": "Marketing Director — Los Angeles, CA"
+   },
+   "adjudication_note": "Greenland USA (US subsidiary of Shanghai Greenland Holding Group) greenlandusa.com/careers lists 8 open roles: Los Angeles x4 (Escrow Closing Supervisor/Manager, HR Generalist, Marketing Director, Sr. Construction Accountant) + New York x4 (Accounting Manager, Construction Mgmt Coordinator, Interior Design Manager, Recruiter); HQ 777 S. Figueroa St, LA."
+  },
+  {
+   "brand": "Haidilao",
+   "wire": {
+    "platform": "workstream",
+    "board": "https://www.workstream.us/j/hdl_management_usa_corporation?locale=en",
+    "us_rows": 52,
+    "sample": "Server — Bellevue, WA ($17.13-50/hr); Kitchen Prep — Cupertino, CA; Manager Trainee — Katy, TX"
+   },
+   "adjudication_note": "Authentic Haidilao (LCA HAIDILAO RESTAURANT GROUP, INC.); haidilao-inc.com/us/join/employment routes US applicants to Workstream board 'Haidilao Hot Pot' — 52 US job rows across 6 pages (Bellevue/Seattle/Tukwila WA, Cupertino/Fremont/LA/Arcadia/San Diego CA, Chicago IL, Frisco/Katy TX, Mesa AZ, Duluth GA, Flushing NY)"
+  },
+  {
+   "brand": "Hisense",
+   "wire": {
+    "platform": "custom",
+    "board": "https://www.hisense-usa.com/careers/job-postings",
+    "us_rows": 19,
+    "sample": "Sr. Sales Manager - Walmart/Sam's Club - Bentonville, AR; Bilingual Supply Planning Manager - Alpharetta, GA; Home Appliances Technical Trainer - Suwanee, GA; Field Service Technician - Remote"
+   },
+   "adjudication_note": "Authentic Hisense USA (US arm of Chinese Hisense, LCA HISENSE USA CORPORATION) Wix careers page lists 19 open positions, all US locations (Alpharetta/Suwanee GA, Bentonville AR, Remote)"
+  },
+  {
+   "brand": "Jereh Group",
+   "wire": {
+    "platform": "custom",
+    "board": "https://www.jereh-nag.com/careers/careers.jsp",
+    "us_rows": 4,
+    "sample": "Senior HR Recruiter, Oil & Gas/Energy Sector — Houston, TX (+1 Remote row; +1 Marketing Specialists, Houston TX on americanjereh.com)"
+   },
+   "adjudication_note": "Authentic: jereh-nag.com = Jereh Energy Equipment and Technologies Corp (Jereh North American Group, Houston TX), US arm of CN Jereh Group (americanjereh.com footer shows SZ002353). Board lists 6 rows: 4 Houston TX + 1 Remote + 1 Canada; americanjereh.com adds 'Marketing Specialists — Job site: Houston, Texas'."
+  },
+  {
+   "brand": "Joyson Safety Systems",
+   "wire": {
+    "platform": "successfactors",
+    "board": "https://careers.joysonsafety.com/search/?q=&locale=en_US",
+    "us_rows": 7,
+    "sample": "Sr. Product Engineer SW - Auburn Hills, US; Manager, Compensation & Benefits - Auburn Hills, US; System Performance Engineer AB - Auburn Hills, US"
+   },
+   "adjudication_note": "Authentic Joyson Safety Systems (subsidiary of Ningbo Joyson Electronics, ex-Takata/KSS) careers on SuccessFactors/RMK careers.joysonsafety.com; 26 jobs, 7 US rows all Auburn Hills US"
+  },
+  {
+   "brand": "Mandarin Oriental",
+   "wire": {
+    "platform": "custom",
+    "board": "https://careers.mandarinoriental.com/jobs/search",
+    "us_rows": 2,
+    "sample": "Revenue and Reservations Manager — Mandarin Oriental, Boston; Marketing Administrator — Mandarin Oriental, New York"
+   },
+   "adjudication_note": "Authentic Mandarin Oriental Hotel Group (HK, careers.mandarinoriental.com custom board); 150 jobs across 5 pages, 2 US rows (Boston, New York)"
+  },
+  {
+   "brand": "Mattson Technology",
+   "wire": {
+    "platform": "oracle_hcm",
+    "board": "https://eidg.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/requisitions",
+    "us_rows": 24,
+    "sample": "VP of Product — Fremont, CA, United States; Field Service Engineer 3 — Hillsboro, OR, United States"
+   },
+   "adjudication_note": "Authentic: Mattson Technology (Fremont CA; Chinese state-owned E-Town parent — Oracle tenant 'eidg' = E-Town Industrial Development Group). mattson.com/careers links to Oracle HCM Candidate Experience site; REST API shows 40 requisitions, 24 US rows (Fremont CA x21, Hillsboro OR, Taylor TX, TX)."
+  },
+  {
+   "brand": "Meyer Manufacturing",
+   "wire": {
+    "platform": "ultipro",
+    "board": "https://recruiting.ultipro.com/MEY1000MEYER/JobBoard/7a970c3d-b076-4042-8735-673b5e5508ac/",
+    "us_rows": 7,
+    "sample": "Sales Operations Coordinator — Vallejo, CA; Import Compliance Manager — Remote - USA; Regional Sales Manager Residential — Pompano Beach, FL; Automated Systems & Facilities Manager — Fairfield, CA"
+   },
+   "adjudication_note": "authentic — meyerus.com = Meyer Corporation ('Meyer Is A Registered Trademark of Meyer Manufacturing Company Limited', HK census brand's US cookware arm); careers → UltiPro/UKG board with 7 US rows. Top probe candidate meyermfg.com = Dorchester WI farm-equipment homonym."
+  },
+  {
+   "brand": "Niu Technologies",
+   "wire": {
+    "platform": "custom",
+    "board": "https://global.niu.com/en-us/jobs",
+    "us_rows": 7,
+    "sample": "Sales Director Dealerships — GTM for Golf Carts & LSV Vehicles — United States"
+   },
+   "adjudication_note": "NIU Technologies (Changzhou e-mobility, Nasdaq NIU; LCA NIU POWER INC) global.niu.com/en-us/jobs 'United States:' section lists 7 roles: Sales Director Dealerships (GTM golf carts & LSV), Key Account Managers MID-WEST/NORTH-EAST/NORTH-WEST/CENTRAL USA, Marketing Director, Channel Marketing Manager Best Buy/Target."
+  },
+  {
+   "brand": "OmniVision",
+   "wire": {
+    "platform": "jobvite",
+    "board": "https://jobs.jobvite.com/ovt/index.htm",
+    "us_rows": 37,
+    "sample": "Sr. Applications Engineer — Santa Clara, CA; Analog Design Engineer — Irvine, CA; Partnership Business Development Manager — Santa Clara, CA"
+   },
+   "adjudication_note": "AUTHENTIC: ovt.com 'OMNIVISION Careers' (Chinese-owned since 2019 via Will Semiconductor/韦尔股份) jobvite board lists 60 roles; 37 US rows (Santa Clara CA x33, Irvine CA x4) + Singapore/Oslo/Japan."
+  },
+  {
+   "brand": "Pop Mart",
+   "wire": {
+    "platform": "workday",
+    "board": "https://popmart.wd102.myworkdayjobs.com/popmart",
+    "us_rows": 223,
+    "sample": "Construction Project Manager — California; Retail Sales Lead - Natick Mall — Natick, MA; Retail Sales Associate - Westfarms Mall — Westfarms, CT"
+   },
+   "adjudication_note": "Authentic POP MART (09992.HK, LCA POP MART AMERICAS INC); workday API shows 354 postings, 223 with US locations (California 49, New York 16, Florida 12, New Jersey 11, Maryland 9 + dozens of US-mall retail rows); secondary board pop-mart-americas-inc.breezy.hr"
+  },
+  {
+   "brand": "Sunday Robotics",
+   "wire": {
+    "platform": "ashby",
+    "board": "https://jobs.ashbyhq.com/sunday",
+    "us_rows": 24,
+    "sample": "Mechanical Engineer — Redwood City, CA"
+   },
+   "adjudication_note": "sunday.ai = Sunday Robotics (Redwood City CA; founded 2024 by Tony Zhao & Cheng Chi, creators of ALOHA/Diffusion Policy — Chinese-origin Stanford roboticists); Ashby posting API: 24 jobs (23 Redwood City CA + 1 Remote); US-incorporated with Chinese-founder origin — flag origin policy at wire."
+  },
+  {
+   "brand": "Sungrow",
+   "wire": {
+    "platform": "adp",
+    "board": "https://us.sungrowpower.com/jobList (ADP WFN cid c2e0ba67-e6f9-439e-b8a3-0d734568eac2)",
+    "us_rows": 61,
+    "sample": "Field Service Technician - BESS — Hybrid Fresno, CA, US; Vendor Contract Specialist — Hybrid Houston, TX, US; SAP Specialist — US (remote)"
+   },
+   "adjudication_note": "Authentic Sungrow USA (us.sungrowpower.com links to ADP Workforce Now board); ADP job-requisitions API: 62 jobs, 61 US rows (1 Ottawa CA)"
+  },
+  {
+   "brand": "Techtronic Industries",
+   "wire": {
+    "platform": "custom",
+    "board": "https://www.ttigroup.com/careers/career-opportunities/us",
+    "us_rows": 662,
+    "sample": "Accounts Payable Specialist — Menomonee Falls, WI; Field Sales & Marketing Representative — Kansas City, MO; Forklift Operator — Anderson, SC"
+   },
+   "adjudication_note": "AUTHENTIC: ttigroup.com (HK-listed Techtronic Industries, Milwaukee/Ryobi) US listing /careers/career-opportunities/us renders 24 US jobs/page x 28 pages = 662 US rows (Anderson SC, Olive Branch MS, Menomonee Falls WI...); NA board also on ttigroupna.dejobs.org."
+  },
+  {
+   "brand": "Virtuos",
+   "wire": {
+    "platform": "oracle_hcm",
+    "board": "https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
+    "us_rows": 6,
+    "sample": "Key Account Manager — Los Angeles/San Francisco, US; Business Development Manager (Westcoast) — Los Angeles/San Francisco, US; Sales Development Representative — Los Angeles/San Francisco, US"
+   },
+   "adjudication_note": "Guessed URL virtuos.com/careers is a HOMONYM (Virtuos Digital Ltd, India CX/Salesforce consulting). Authentic board found via virtuosgames.com → Oracle Recruiting Cloud CX_1: 91 jobs, 6 requisitions with US locations (LA/San Francisco, facet TotalCount 7). Virtuos = 2004 Shanghai-founded game co-dev giant (HQ Singapore, LCA Virtuos North America LLC)."
+  },
+  {
+   "brand": "WuXi AppTec",
+   "wire": {
+    "platform": "icims",
+    "board": "https://careers-wuxiapptec.icims.com/jobs/search",
+    "us_rows": 18,
+    "sample": "Chemical and Industrial Hygiene Manager — Cranbury, NJ; Facilities Technician II — San Diego, CA; Automation Lead Engineering — Middletown, DE"
+   },
+   "adjudication_note": "Authentic WuXi AppTec (LCA WUXI APPTEC SALES, LLC); icims portal careers-wuxiapptec.icims.com + custom mirror wuxiappteccareers.com/jobs lists 20 jobs, 18 US-located"
+  },
+  {
+   "brand": "WuXi Biologics",
+   "wire": {
+    "platform": "custom",
+    "board": "https://www.wuxibiologics.com/join-us/",
+    "us_rows": 19,
+    "sample": "Lead Technician, Process Mechanic — United States; Senior Director, CMC — United States; Scientist II, Drug Product Manufacturing — United States"
+   },
+   "adjudication_note": "AUTHENTIC: wuxibiologics.com/join-us (China CDMO, LCA WuXi Biologics USA LLC) embeds job table with 19 US rows (all 'United States'); search/apply via SAP SuccessFactors portal career55.sapsf.eu?company=wuxibiolog; separate .ie/.cn boards."
+  }
+ ]
+}

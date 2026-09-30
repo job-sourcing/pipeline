@@ -2,10 +2,148 @@
  "brand": "China Shipbuilding Industry Corporation",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:33:25.532Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:00:42.580Z",
+ "candidates": [
+  {
+   "url": "http://china-csicpower.com.cn/n9/n63/c34095/content.html",
+   "title": "人才招聘_中国船舶集团有限公司",
+   "status": 200,
+   "bytes": 12532,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "中国船舶集团有限公司 版权所有 地址：上海市黄浦区老西门街道中华路889号 邮政编码：200011 电话：86-21-3311-6666 传真：86-21-33116699 E-mail：cssc@cssc.net.cn 中小企业房租减免申诉电话：021-33116289 民企清欠、中小企业清欠申诉电话：021-331",
+   "backend": "direct"
+  },
+  {
+   "url": "http://china-csicpower.com.cn/n9/index.html",
+   "title": "人力资源_中国船舶集团有限公司",
+   "status": 200,
+   "bytes": 20232,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "中国船舶集团坚持以习近平新时代中国特色社会主义思想为指导，坚持面向世界科技前沿、面向经济主战场、面向国家重大需求、面向人民生命健康，聚焦建设海洋强国、科技强国、制造强国和建设世界一流海军、世界一流企业等战略需求，深入实施人才强企战略，落实人才是第一资源、人才优先 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "http://china-csicpower.com.cn/",
+   "title": "中国船舶集团有限公司",
+   "status": 200,
+   "bytes": 51121,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "中国船舶集团有限公司 版权所有 地址：上海市黄浦区老西门街道中华路889号 邮政编码：200011 电话：86-21-3311-6666 传真：86-21-33116699 E-mail：cssc@cssc.net.cn 中小企业房租减免申诉电话：021-33116289 民企清欠、中小企业清欠申诉电话：021-331",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "人才招聘_中国船舶集团有限公司 - china-csicpower.com.cn",
+   "u": "http://china-csicpower.com.cn/n9/n63/c34095/content.html",
+   "s": "中国船舶集团有限公司 版权所有 地址：上海市黄浦区老西门街道中华路889号 邮政编码：200011 电话：86-21-3311-6666 传真：86-21-33116699 E-mail：cssc@cssc.net.cn 中小企业房租减免申诉电话：021-33116289 民企清欠、中小企业清欠申诉电话：021-331"
+  },
+  {
+   "t": "Recruit - CSSC",
+   "u": "https://csscshipping.com/en/recruit",
+   "s": "Our mission is to promote the integration of industry and finance in China's shipbuilding industry, gather the superior industry resources, talents and capital "
+  },
+  {
+   "t": "人力资源_中国船舶集团有限公司 - china-csicpower.com.cn",
+   "u": "http://china-csicpower.com.cn/n9/index.html",
+   "s": "中国船舶集团坚持以习近平新时代中国特色社会主义思想为指导，坚持面向世界科技前沿、面向经济主战场、面向国家重大需求、面向人民生命健康，聚焦建设海洋强国、科技强国、制造强国和建设世界一流海军、世界一流企业等战略需求，深入实施人才强企战略，落实人才是第一资源、人才优先 ..."
+  },
+  {
+   "t": "中国船舶集团有限公司2027届校园招聘 - zhaopin.com",
+   "u": "https://cssc.zhaopin.com/job/index.html",
+   "s": "智联校园招聘xiaoyuan.zhaopin.com为应届大学毕业生及在校生提供最新校园招聘信息，实习信息以及校园宣讲会信息等.为企业提供一站式专业人力资源服务,包括网络招聘,报纸招聘,校园招聘,猎头服务,招聘外包,企业培训以及人才测评等."
+  },
+  {
+   "t": "China State Shipbuilding Corporation Limited Jobs - Jobui",
+   "u": "https://en.jobui.com/company/15750746/jobs/",
+   "s": "(CSSC招聘)China State Shipbuilding Corporation Limited招聘CSSC相关领域：船舶，船舶工业，工业，工程，研发。想了解CSSC招聘条件，学历要求，需要什么专业，就上职友集。发现和了解你未来的雇主。"
+  },
+  {
+   "t": "22,000+ China State Shipbuilding Corporation jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/china-state-shipbuilding-corporation-jobs-worldwide",
+   "s": "Today's top 22,000+ China State Shipbuilding Corporation jobs in Worldwide. Leverage your professional network, and get hired. New China State Shipbuilding Corp"
+  },
+  {
+   "t": "中船集团网申系统--首页",
+   "u": "https://cssc.zhiye.com/",
+   "s": "©2026 中船集团 京ICP备05051632号-16 京公网安备 11010802032024号 隐私政策 Powered by"
+  },
+  {
+   "t": "中国船舶集团有限公司2027届校园招聘",
+   "u": "https://cssc.zhaopin.com/about/index.html",
+   "s": "湖南省交通规划勘察设计院股份有限公司始创于1960年，是国家甲级综合大型勘察设计企业，国家高新技术企业，位列全国勘察设计企业百强。 作为湖南省属国企混合所有制改革试点企业，目前公司股东包括湖南轨道交通控股集团、湖南港航水利集团、佛山交通集团、中国铁路设计集团、长沙交通 ..."
+  },
+  {
+   "t": "22,000+ China State Shipbuilding Corporation jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/china-state-shipbuilding-corporation-jobs-worldwide",
+   "s": "Today's top 22,000+ China State Shipbuilding Corporation jobs in Worldwide. Leverage your professional network, and get hired. New China State Shipbuilding Corp"
+  },
+  {
+   "t": "China State Shipbuilding Corporation Limited Jobs - Jobui",
+   "u": "https://en.jobui.com/company/15750746/jobs/",
+   "s": "(CSSC招聘)China State Shipbuilding Corporation Limited招聘CSSC相关领域：船舶，船舶工业，工业，工程，研发。想了解CSSC招聘条件，学历要求，需要什么专业，就上职友集。发现和了解你未来的雇主。"
+  },
+  {
+   "t": "China Shipbuilding Industry Corporation Jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/china-shipbuilding-industry-corporation-jobs",
+   "s": "Today's top China Shipbuilding Industry Corporation jobs in United States. Leverage your professional network, and get hired. New China Shipbuilding Industry Co"
+  },
+  {
+   "t": "22 shipbuilding Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-shipbuilding-jobs-SRCH_IL.0,5_IN48_KO6,18.htm",
+   "s": "Search Shipbuilding jobs in China with company ratings & salaries. 22 open jobs for Shipbuilding in China."
+  },
+  {
+   "t": "中国船舶集团有限公司2027届校园招聘 - zhaopin.com",
+   "u": "https://cssc.zhaopin.com/job/index.html",
+   "s": "智联校园招聘xiaoyuan.zhaopin.com为应届大学毕业生及在校生提供最新校园招聘信息，实习信息以及校园宣讲会信息等.为企业提供一站式专业人力资源服务,包括网络招聘,报纸招聘,校园招聘,猎头服务,招聘外包,企业培训以及人才测评等."
+  },
+  {
+   "t": "Recruit - CSSC",
+   "u": "https://csscshipping.com/en/recruit",
+   "s": "Our mission is to promote the integration of industry and finance in China's shipbuilding industry, gather the superior industry resources, talents and capital "
+  },
+  {
+   "t": "china-csicpower.com.cn - 中国船舶集团有限公司",
+   "u": "http://china-csicpower.com.cn/",
+   "s": "中国船舶集团有限公司 版权所有 地址：上海市黄浦区老西门街道中华路889号 邮政编码：200011 电话：86-21-3311-6666 传真：86-21-33116699 E-mail：cssc@cssc.net.cn 中小企业房租减免申诉电话：021-33116289 民企清欠、中小企业清欠申诉电话：021-331"
+  },
+  {
+   "t": "中船集团网申系统--首页",
+   "u": "https://cssc.zhiye.com/",
+   "s": "©2026 中船集团 京ICP备05051632号-16 京公网安备 11010802032024号 隐私政策 Powered by"
+  },
+  {
+   "t": "HII Careers",
+   "u": "https://www.hii.com/careers",
+   "s": "From skilled tradespeople to AI experts and engineers, HII offers meaningful careers, strong benefits, and a values-driven culture built on safety and respect."
+  },
+  {
+   "t": "22 shipbuilding Jobs in China, September 2026 | Glassdoor",
+   "u": "https://www.glassdoor.com/Job/china-shipbuilding-jobs-SRCH_IL.0,5_IN48_KO6,18.htm",
+   "s": "Search Shipbuilding jobs in China with company ratings & salaries. 22 open jobs for Shipbuilding in China."
+  },
+  {
+   "t": "China Shipbuilding Industry Corporation (CSIC) Salary Guide: Complete ...",
+   "u": "https://jobbridge.io/blog/salary-guide/China-Shipbuilding-Industry/beijing",
+   "s": "Considering a career at China Shipbuilding Industry Corporation (CSIC) in Beijing? Our comprehensive salary guide provides accurate compensation data across var"
+  },
+  {
+   "t": "China Shipbuilding Industry Corporation (CSIC) Salary Guide: Complete ...",
+   "u": "https://jobbridge.io/blog/salary-guide/China-Shipbuilding-Industry/shanghai",
+   "s": "Considering a career at China Shipbuilding Industry Corporation (CSIC) in Shanghai? Our comprehensive salary guide provides accurate compensation data across va"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

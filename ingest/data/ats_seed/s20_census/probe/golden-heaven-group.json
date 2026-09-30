@@ -151,5 +151,11 @@
   "platform": "custom",
   "title": "Careers &#8211; goldenhavenservices.com"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "goldenhavenservices.com is a US home-services firm (W4/W9 application); other hits Golden Entertainment (US casino) and Golden Haven PH memorial parks - all homonyms of Nasdaq-listed Chinese park operator Golden Heaven Group Holdings",
+  "ts": "2026-09-30T10:32Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

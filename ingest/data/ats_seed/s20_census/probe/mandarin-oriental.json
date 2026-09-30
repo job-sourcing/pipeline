@@ -12,5 +12,17 @@
   "title": "MO Careers | Search Jobs",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic Mandarin Oriental Hotel Group (HK, careers.mandarinoriental.com custom board); 150 jobs across 5 pages, 2 US rows (Boston, New York)",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://careers.mandarinoriental.com/jobs/search",
+  "us_rows": 2,
+  "sample": "Revenue and Reservations Manager — Mandarin Oriental, Boston; Marketing Administrator — Mandarin Oriental, New York"
+ }
 }

@@ -152,5 +152,11 @@
   "platform": "avature",
   "title": "Careers | Broad Institute"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Marker surface broadinstitute.org/careers = Broad Institute of MIT & Harvard (avature) — homonym; actual brand 世泽/Broad & Bright is a Beijing law firm (broadbright.com, offices CN/HK) with no US career board.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

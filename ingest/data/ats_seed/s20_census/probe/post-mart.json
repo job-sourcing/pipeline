@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "UNVERIFIED — ashby post 4 jobs; no identity"
+ "manual_adjudication": "UNVERIFIED — ashby post 4 jobs; no identity",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "ashby board 'post' (4 jobs: Principal Software Engineer-Backend, Senior iOS Engineer, Remote) is a small US software startup 'Post.'; no Chinese 'Post Mart' identity exists.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

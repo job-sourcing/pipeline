@@ -1,0 +1,232 @@
+{
+ "board": "ats:workable:deeproute-dot-a-i",
+ "company": "DeepRoute.ai",
+ "country": "United States",
+ "time_type": "Full time",
+ "dumpDate": "2026-09-30",
+ "count": 4,
+ "details_merged": 4,
+ "signals_matched": 3,
+ "similar_edges": 0,
+ "facet_tagged_rows": 2,
+ "rows": [
+  {
+   "reqId": "7A1D662123",
+   "title": "Autonomous Driving Systems Project Manager",
+   "company": "deeproute-dot-a-i",
+   "url": "https://apply.workable.com/j/7A1D662123",
+   "externalPath": "/j/7A1D662123",
+   "locationsText": "Fremont",
+   "postedOn": "Posted 116 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7A1D662123"
+   ],
+   "ats": "workable",
+   "firstPublishedIso": "2026-06-06",
+   "departments": [
+    "Project Management",
+    "Associate"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Autonomous Driving Systems Project Manager",
+    "location": "Fremont",
+    "additionalLocations": [
+     "Fremont"
+    ],
+    "jobDescription": "<p>·&nbsp;&nbsp;&nbsp; Lead end-to-end project management for the development of autonomous vehicle planning modules, working closely with cross-functional teams, and testing to ensure timely and quality-driven execution of project deliverables.</p><p>·&nbsp;&nbsp;&nbsp; Define and oversee the technical roadmap and execution plans for key planning functionalities, including rare-scenario handling, constraint-aware motion planning, and overall system robustness, leveraging deep technical understanding of autonomous driving software systems.</p><p>·&nbsp;&nbsp;&nbsp; Manage the full project lifecycle, including requirements definition, milestone planning, resource coordination, risk identification and mitigation, technical documentation, and regular status reporting to stakeholders and senior leadership.</p><p>·&nbsp;&nbsp;&nbsp; Contribute to platform architecture and integration strategy, coordinating the deployment of planning algorithms into both simulation platforms and real-world driving environments, ensuring alignment with system-level goals and performance KPIs.</p><p>&nbsp;</p><p><strong>Requirements</strong></p><ol><li><a rel=\"nofollow noreferrer noopener\" class=\"external\"></a>Master’s degree in Mechanical Engineering, or a related field; <br>At least 2 years’ experience in algorithms planning and software systems within the autonomous driving industry including: <br>1) Develop and test planning systems; <br>2) Execute software development lifecycles; <br>3) Integrate in real-time systems; <br>4) Optimize motion-planning performance and robustness; and proficiency in C++, Python, Machine Learning, Git, simulation tooling.</li><li> Annual salary is $130,000.<br><br>Send resumes to HR, <a rel=\"nofollow noreferrer noopener\" class=\"external\"></a>Deeproute.AI Ltd., 3125 Skyway Court, Fremont, CA 94539, or email to usoperations@deeproute.ai.</li></ol><p><strong>Benefits</strong></p><p></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://apply.workable.com/j/7A1D662123",
+    "jobReqId": "7A1D662123",
+    "postedOn": "Posted 116 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "deeproute-dot-a-i",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Project Management"
+  },
+  {
+   "reqId": "1B2095FC2B",
+   "title": "Member of Technical Staff (MTS) - Multimodal Foundation Models",
+   "company": "deeproute-dot-a-i",
+   "url": "https://apply.workable.com/j/1B2095FC2B",
+   "externalPath": "/j/1B2095FC2B",
+   "locationsText": "Fremont, California | Fremont",
+   "postedOn": "Posted 116 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "1B2095FC2B"
+   ],
+   "ats": "workable",
+   "firstPublishedIso": "2026-06-06",
+   "departments": [],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Member of Technical Staff (MTS) - Multimodal Foundation Models",
+    "location": "Fremont, California",
+    "additionalLocations": [
+     "Fremont"
+    ],
+    "jobDescription": "<p><strong>Focus</strong></p><p>Multimodal Foundation Models · Representation Learning · Method Innovation<br><br>We are looking for strong technical builders and researchers who deeply understand foundation models and representation learning beyond simply applying existing frameworks.</p><p>Ideal candidates should have:</p><ul><li>Strong experimental rigor</li><li>Solid systems and modeling intuition</li><li>Hands-on engineering ability</li><li>Interest in scalable multimodal AI systems for real-world autonomy</li></ul><p>We value people who can bridge research and production, and who care about robustness, scalability, efficiency, and practical deployment in large-scale autonomous driving systems.<br><br><strong>Responsibilities</strong></p><p><strong>1. Large-Scale Foundation Model Pretraining</strong></p><ul><li>Develop scalable pretraining pipelines for large-scale multimodal driving data</li><li>Design and optimize training strategies for:</li><ul><ul><li>Vision-language-action models</li><li>Video foundation models</li><li>Long-context temporal modeling</li><li>Multimodal representation alignment</li></ul></ul><li>Improve:</li><ul><li>Training stability</li><li>Data efficiency</li><li>Scaling efficiency</li><li>Representation robustness</li></ul><li>Work on distributed training systems and large-scale model optimization using frameworks such as:</li><ul><li>PyTorch Distributed</li><li>DeepSpeed</li><li>Megatron-LM</li></ul></ul><p><strong>2. Representation Learning &amp; Method Innovation</strong></p><ul><li>Design and improve self-supervised and multimodal learning methods for real-world autonomous driving systems</li><li>Conduct architecture-level research on:</li><ul><li>Vision Transformers (ViT)</li><li>Video / temporal architectures</li><li>Multimodal fusion and alignment</li><li>Embedding and retrieval systems</li><li>Long-context and memory-efficient architectures</li></ul><li>Explore and improve:</li><ul><li>Pretraining objectives</li><li>Loss functions</li><li>Training paradigms</li><li>Generalization and robustness</li></ul><li>Analyze model behavior through:</li><ul><li>Rigorous ablation studies</li><li>Failure case analysis</li></ul><li>Representation probing and evaluation</li></ul><p><strong>3. Efficient Foundation Models &amp; Scalable Deployment</strong></p><ul><li>Improve the efficiency, scalability, and deployability of large multimodal foundation models for real-world autonomous driving systems</li><li>Work on areas such as:</li><ul><li>Model quantization</li><li>Knowledge distillation</li><li>Efficient attention mechanisms</li><li>Sparse architectures and Mixture-of-Experts (MoE)</li><li>Long-context and memory-efficient modeling</li><li>Inference acceleration and serving optimization</li><li>Training and inference system efficiency</li></ul><li>Optimize model throughput, latency, memory usage, and deployment performance for large-scale production environments</li></ul><p><strong>Requirements</strong></p><ol><li>MS or PhD in:</li><ul><ul><li>Computer Vision</li><li>Machine Learning</li><li>Robotics</li><li>Computer Science</li><li>Related fields</li></ul></ul><li>Strong understanding of:</li><ul><ul><li>Foundation models</li><li>Self-supervised learning</li><li>Representation learning</li><li>Multimodal learning</li><li>Large-scale pretraining</li></ul></ul><li>Hands-on experience with methods such as:</li><ul><ul><li>CLIP</li><li>DINO / DINOv2</li><li>MAE</li><li>Contrastive learning</li><li>Masked modeling</li><li>MoE or scalable transformer architectures</li></ul></ul><li>Experience with one or more of the following is highly valued:</li><ul><ul><li>Video foundation models</li><li>Long-context modeling</li><li>Retrieval systems</li><li>Efficient inference</li><li>Distributed training</li><li>Model compression and deployment optimization</li></ul></ul><li>Strong publication record in top-tier venues is preferred:</li><ul><ul><li>CVPR</li><li>ICCV</li><li>ECCV</li><li>NeurIPS</li><li>ICLR</li><li>ICML</li></ul></ul></ol>",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://apply.workable.com/j/1B2095FC2B",
+    "jobReqId": "1B2095FC2B",
+    "postedOn": "Posted 116 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "deeproute-dot-a-i",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "linkedin_job_id": "4424934926",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4424934926",
+    "title": "Member of Technical Staff (MTS) - Multimodal Foundation Models",
+    "company": "DeepRoute.ai",
+    "location": "Fremont, CA",
+    "linkedin_posted_date": "2026-05-12",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-30T05:40:38",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "9AD9D79305",
+   "title": "Research Scientist, Reinforcement Learning",
+   "company": "deeproute-dot-a-i",
+   "url": "https://apply.workable.com/j/9AD9D79305",
+   "externalPath": "/j/9AD9D79305",
+   "locationsText": "Fremont, California | Fremont",
+   "postedOn": "Posted 116 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "9AD9D79305"
+   ],
+   "ats": "workable",
+   "firstPublishedIso": "2026-06-06",
+   "departments": [],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Research Scientist, Reinforcement Learning",
+    "location": "Fremont, California",
+    "additionalLocations": [
+     "Fremont"
+    ],
+    "jobDescription": "<p>We are building next-generation <strong>end-to-end autonomous driving systems</strong> powered by reinforcement learning.</p><p>You will work on applying RL in <strong>closed-loop, safety-critical environments</strong>, leveraging large-scale simulation and real-world driving data to improve safety, comfort, and robustness.</p><ul><li> Train and deploy RL policies in <strong>closed-loop driving environments</strong> </li><li> Scale RL training using <strong>massively parallel simulation systems</strong> </li><li> Design and optimize reward functions for complex driving behaviors </li><li> Improve <strong>sim-to-real transfer</strong> for real-world robustness </li><li> Collaborate with cross-functional teams to integrate models into production systems </li></ul><p><strong>Requirements</strong></p><p><strong>Core Technical Skills</strong></p><ul><li>Proficiency in modern RL algorithms: DQN, PPO, SAC, TD3, etc.</li><li>Proficiency in modern RLHF algorithms: PPO, DPO, GRPO, etc.</li><li>Hands-on experience training reward models and finetuning LLM/VLM/VLA</li><li>Knowledge of distributed RL training at scale</li><li>Proficiency with massively parallel simulation environments</li><li>Knowledge of sim-to-real transfer techniques and domain randomization</li><li>Proficiency in Python, comfortable with C++</li><li>Proficiency in deep learning frameworks such as PyTorch</li><li>Experience with distributed training frameworks (Ray, Horovod, etc.)</li><li>Knowledge of model optimization (quantization, pruning) and CUDA is a plus</li><li>Knowledge of traffic rules, driving behavior modeling</li></ul><p><strong>Preferred Qualifications</strong></p><ul><li>Publications in top-tier venues (ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, ICRA, IROS, etc.)</li><li>Open-source contributions to RL libraries or autonomous driving projects</li><li>Previous experience with LLM fine-tuning using RLHF</li><li>Knowledge of safe RL, interpretable AI, or robustness techniques</li><li>Familiarity with autonomous vehicle regulations and safety standards</li></ul><p></p><p></p>",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://apply.workable.com/j/9AD9D79305",
+    "jobReqId": "9AD9D79305",
+    "postedOn": "Posted 116 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "deeproute-dot-a-i",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "linkedin_job_id": "4424953731",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4424953731",
+    "title": "Research Scientist, Reinforcement Learning",
+    "company": "DeepRoute.ai",
+    "location": "Fremont, CA",
+    "linkedin_posted_date": "2026-05-12",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-30T05:40:36",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "7EAA46F6A5",
+   "title": "Software Engineer Planning",
+   "company": "deeproute-dot-a-i",
+   "url": "https://apply.workable.com/j/7EAA46F6A5",
+   "externalPath": "/j/7EAA46F6A5",
+   "locationsText": "Fremont, California | Fremont",
+   "postedOn": "Posted 114 Days Ago",
+   "timeType": "",
+   "bulletFields": [
+    "7EAA46F6A5"
+   ],
+   "ats": "workable",
+   "firstPublishedIso": "2026-06-08",
+   "departments": [
+    "PNC"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Software Engineer Planning",
+    "location": "Fremont, California",
+    "additionalLocations": [
+     "Fremont"
+    ],
+    "jobDescription": "<ul> <li>Develop planning algorithms for trajectories</li> <li>Design policies and plans to manage multi-actor interactions and plans under uncertainty</li> <li>Work with other internal autonomy teams to help to continuously improve and refine the self-driving system </li> </ul><p><strong>Requirements</strong></p><ul> <li>Master or Ph.D. degree in Computer Science, Electric Engineering, Mechanical Engineering or a related field</li> <li>Professional C++ experience designing any-angle robotic navigation algorithms such as Dijkstra, A*, D*, RRT, RRT* and RRG</li> <li>Experience in at least one of: robotics research in motion planning, trajectory optimization, planning under uncertainty, probabilistic robotics, data analysis at scale, machine learning at scale</li> <li>Experience in data structures and advanced algorithms </li> <li>Experience in ROS is a plus.</li> <li>Publications in top conferences/journals in a related field or equivalent experiences is a plus</li> </ul>",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://apply.workable.com/j/7EAA46F6A5",
+    "jobReqId": "7EAA46F6A5",
+    "postedOn": "Posted 114 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "deeproute-dot-a-i",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "PNC",
+   "signals": {
+    "linkedin_job_id": "4425915870",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4425915870",
+    "title": "Software Engineer Planning",
+    "company": "DeepRoute.ai",
+    "location": "Fremont, CA",
+    "linkedin_posted_date": "2026-05-14",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "4 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-09-30T05:40:37",
+    "match_method": "title"
+   }
+  }
+ ]
+}

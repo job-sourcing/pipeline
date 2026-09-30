@@ -12,5 +12,11 @@
   "title": "Webull Jobs | Webull Financial",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Webull Corp (NYSE:BULL, WEBULL TECHNOLOGIES INC. LCA FL) = roster company Webull; board ats.rippling.com/webull/jobs (rippling) — already wired, not re-flagged.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

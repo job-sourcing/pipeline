@@ -2,7 +2,7 @@
  "brand": "Nan Nan Resources",
  "tier": "lca",
  "lca": "NAN, INC.",
- "ts": "2026-09-29T04:24:21.076Z",
+ "ts": "2026-09-30T06:01:11.627Z",
  "candidates": [
   {
    "url": "https://nan.com/careers",
@@ -20,7 +20,7 @@
    "url": "https://nanonuclearenergy.com/careers/",
    "title": "Careers | NANO Nuclear Energy",
    "status": 200,
-   "bytes": 125075,
+   "bytes": 124460,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -32,7 +32,7 @@
    "url": "https://careercentral.nann.org/jobseekers/index.cfm",
    "title": "National Association of Neonatal Nurses (NANN), NANN Career Central|Find Your Career Here",
    "status": 200,
-   "bytes": 109742,
+   "bytes": 140293,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

@@ -151,5 +151,11 @@
   "platform": "custom",
   "title": "Guangzhou Automobile Industry Group Jobs &amp; Careers (71 Open Roles) | TheJobsMap"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic GAC Group (Chinese SOE automaker); own board gacrnd.zhiye.com (Beisen) lists China R&D roles in Chinese — china_only; global site gacgroup.com has no job board; career.gac.com = GAC Shipping (Dubai) homonym; thejobsmap = aggregator",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

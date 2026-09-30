@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "State-Owned Enterprise Jobs for Graduates in China | TailorCV Blog"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "not a company — Wikipedia concept page + SOE-recruitment blog posts (thetailorcv.com, unilink.co, glarity); no company career surface.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

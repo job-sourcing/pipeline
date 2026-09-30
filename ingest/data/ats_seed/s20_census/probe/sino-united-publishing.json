@@ -12,5 +12,11 @@
   "title": "Careers - Job Opening and Job Vacancy in Hong Kong | Sino Group",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: hongkong_only — authentic Sino United Publishing (Holdings) Ltd (HK's largest publishing group); own board sup.com.hk/recruitment/jobVacancies (custom) lists 10+ vacancies all in HK districts (大埔區/深水埗區/觀塘區/東區 — 中華商務印刷, 聯合新零售 etc.); location filter has 香港以外地區 but 0 non-HK rows; US subsidiaries exist but no US openings.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

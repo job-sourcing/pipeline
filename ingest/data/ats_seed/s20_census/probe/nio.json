@@ -26,5 +26,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "NIO Inc = roster company NIO (NIO USA, INC. LCA CA; dict lever:nio-usa) — already wired, not re-flagged.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

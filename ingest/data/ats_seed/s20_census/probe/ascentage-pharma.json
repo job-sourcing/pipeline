@@ -150,5 +150,17 @@
   "platform": "custom",
   "title": "Job Opportunities -"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic Ascentage Pharma (Suzhou/Nasdaq AAPM) own job board: 4 US-location rows ('Flexible, United States' x3 + 'United States' x1) among CN roles; note rows posted 4-6y ago (stale board — verify at wire).",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://www.ascentage.com/careers/job-opportunities/",
+  "us_rows": 4,
+  "sample": "Regulatory CMC Lead — Flexible, United States"
+ }
 }

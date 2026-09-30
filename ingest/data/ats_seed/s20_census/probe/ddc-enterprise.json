@@ -2,13 +2,13 @@
  "brand": "DDC Enterprise",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:45:09.771Z",
+ "ts": "2026-09-30T06:10:54.818Z",
  "candidates": [
   {
    "url": "https://www.ddc-web.com/en/careers",
    "title": "Careers",
    "status": 200,
-   "bytes": 107417,
+   "bytes": 107419,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

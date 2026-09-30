@@ -2,7 +2,7 @@
  "brand": "CSC Financial",
  "tier": "lca",
  "lca": "CSC  INVESTMENTS II, LLC",
- "ts": "2026-09-29T04:20:42.899Z",
+ "ts": "2026-09-30T05:59:16.641Z",
  "candidates": [
   {
    "url": "https://www.cscglobal.com/service/careers/global-career-opportunities/",
@@ -32,7 +32,7 @@
    "url": "https://www.cschl.com.sg/career.php",
    "title": "",
    "status": 200,
-   "bytes": 5028,
+   "bytes": 5027,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

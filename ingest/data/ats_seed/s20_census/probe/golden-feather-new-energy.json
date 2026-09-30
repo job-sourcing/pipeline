@@ -2,13 +2,13 @@
  "brand": "Golden Feather New Energy",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:38:29.831Z",
+ "ts": "2026-09-30T05:59:16.835Z",
  "candidates": [
   {
    "url": "https://battery-tech.net/company/golden-feather-new-energy/",
    "title": "Golden Feather New Energy - Battery-Tech Network",
    "status": 200,
-   "bytes": 242358,
+   "bytes": 242155,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -32,13 +32,13 @@
    "url": "https://www.gfenergy.com/",
    "title": "",
    "status": 200,
-   "bytes": 5385,
+   "bytes": 5474,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 3,
    "snippet": "金羽新能 金羽提供小试—中试一体的定制化研发服务，包括锂离子电池/锂金属电池，全固态锂金属电池等。",
-   "backend": "firecrawl"
+   "backend": "zenrows"
   }
  ],
  "results": [

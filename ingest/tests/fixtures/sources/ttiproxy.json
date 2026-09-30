@@ -1,0 +1,157 @@
+{
+ "page": 1,
+ "take": 1000,
+ "total": 645,
+ "html": "",
+ "data": [
+  {
+   "id": "15149",
+   "workday_id": "05368db6fe2f100111079a9696af0000",
+   "job_site": "e945e55d9e460105d7c44c95bfbe0000",
+   "job_region": "US",
+   "job_categories": [
+    "f5ba2987e1c90101195d74c6644c0000"
+   ],
+   "job_company": "710a78806b5201011386bf06762a0000",
+   "job_locations": [
+    "5ca1ea84392b0107180bfd8045850000"
+   ],
+   "job_status": "1",
+   "title": "Field Sales and Marekting Representative - Lompoc, CA",
+   "job_json_data": {
+    "id": "05368db6fe2f100111079a9696af0000",
+    "title": "Field Sales and Marekting Representative - Lompoc, CA",
+    "timeType": {
+     "id": "b82be81dd3cb01131cbdf9533a2d0000",
+     "descriptor": "Full time"
+    },
+    "categories": [
+     {
+      "id": "f5ba2987e1c90101195d74c6644c0000",
+      "descriptor": "Power Equipment/Team TTI"
+     }
+    ],
+    "jobSite": {
+     "id": "e945e55d9e460105d7c44c95bfbe0000",
+     "descriptor": "Team TTI Careers"
+    },
+    "company": {
+     "id": "710a78806b5201011386bf06762a0000",
+     "descriptor": "Bakerfield, CA"
+    },
+    "primaryLocation": {
+     "id": "5ca1ea84392b0107180bfd8045850000",
+     "descriptor": "Lompoc, CA",
+     "country": {
+      "descriptor": "United States of America",
+      "alpha3Code": "USA"
+     },
+     "region": {
+      "descriptor": "California",
+      "code": "CA"
+     }
+    },
+    "jobType": {
+     "id": "f5ba2987e1c90101042839071d5d0000",
+     "descriptor": "Regular"
+    },
+    "startDate": "2026-09-29",
+    "url": "https://tti.wd1.myworkdayjobs.com/TeamTTI-Jobs/job/Lompoc-CA/Field-Sales-and-Marekting-Representative---Lompoc--CA_R78170",
+    "jobDescription": "<p>Workday-shaped job description block. TRIMMED-FOR-FIXTURE.</p>",
+    "spotlightJob": false
+   }
+  },
+  {
+   "id": "10692",
+   "workday_id": "64a6d00c226610011109dbd9d8700000",
+   "job_site": "e945e55d9e460105d7c44c95bfbe0000",
+   "job_region": "US",
+   "job_categories": [
+    "f5ba2987e1c90101195d74c6644c0000"
+   ],
+   "job_company": null,
+   "job_locations": [],
+   "job_status": "1",
+   "title": "2026 Leadership Development Program - Internship (Nationwide)",
+   "job_json_data": {
+    "id": "64a6d00c226610011109dbd9d8700000",
+    "timeType": {
+     "id": "b82be81dd3cb01131cbdf8b9519a0001",
+     "descriptor": "Part time"
+    },
+    "url": "https://tti.wd1.myworkdayjobs.com/TeamTTI-Jobs/job/XMLNAME-2026-Leadership-Development-Program---Internship--Nationwide-_R69319",
+    "title": "2026 Leadership Development Program - Internship (Nationwide)",
+    "startDate": "2025-11-25",
+    "jobSite": {
+     "id": "e945e55d9e460105d7c44c95bfbe0000",
+     "descriptor": "Team TTI Careers"
+    },
+    "jobDescription": "<p>Workday-shaped job description block. TRIMMED-FOR-FIXTURE.</p>",
+    "categories": [
+     {
+      "id": "f5ba2987e1c90101195d74c6644c0000",
+      "descriptor": "Power Equipment/Team TTI"
+     }
+    ],
+    "spotlightJob": false,
+    "jobType": {
+     "id": "f5ba2987e1c901010428266432670000",
+     "descriptor": "Intern / Co-op (Trainee)"
+    }
+   }
+  },
+  {
+   "id": "15092",
+   "workday_id": "6d0e05bec27b1001ed561e9c872b0000",
+   "job_site": "e945e55d9e460105d7c453cd04d70000",
+   "job_region": "US",
+   "job_categories": [
+    "f5ba2987e1c90101195cdc98ecd70000"
+   ],
+   "job_company": "f5ba2987e1c901014c9019f542c60000",
+   "job_locations": [
+    "5ca1ea84392b0107180d70a104ea0000"
+   ],
+   "job_status": "1",
+   "title": "Fulfillment Associate I all shifts",
+   "job_json_data": {
+    "id": "6d0e05bec27b1001ed561e9c872b0000",
+    "jobType": {
+     "id": "f5ba2987e1c90101042839071d5d0000",
+     "descriptor": "Regular"
+    },
+    "categories": [
+     {
+      "id": "f5ba2987e1c90101195cdc98ecd70000",
+      "descriptor": "Milwaukee Tool"
+     }
+    ],
+    "primaryLocation": {
+     "id": "5ca1ea84392b0107180d70a104ea0000",
+     "descriptor": "Olive Branch, MS",
+     "country": {
+      "descriptor": "United States of America",
+      "alpha3Code": "USA"
+     },
+     "region": {
+      "descriptor": "Mississippi",
+      "code": "MS"
+     }
+    },
+    "url": "https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Olive-Branch-MS/Fulfillment-Associate-I-all-shifts_R78067",
+    "title": "Fulfillment Associate I all shifts",
+    "jobDescription": "<p>Workday-shaped job description block. TRIMMED-FOR-FIXTURE.</p>",
+    "startDate": "2026-09-25",
+    "jobSite": {
+     "id": "e945e55d9e460105d7c453cd04d70000",
+     "descriptor": "Milwaukee"
+    },
+    "company": {
+     "id": "f5ba2987e1c901014c9019f542c60000",
+     "descriptor": "Talent Acquisition - U.S. Operations"
+    },
+    "spotlightJob": false
+   }
+  }
+ ]
+}

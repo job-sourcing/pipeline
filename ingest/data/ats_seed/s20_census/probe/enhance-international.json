@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers - Enhance"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: no_jobs_section — authentic ENHANCE International LLC (China-focused management consultancy advising CIRC/NHFPC; site ICP 151003602-2); enhance-international.com/Join-Us is recruiting copy only with zero job listings; other candidates are different companies (enhance.com = hosting platform; official.enhance-group.com = lorem-ipsum placeholder behind bot check).",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

@@ -25,5 +25,11 @@
   "ok": true,
   "n": 2
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: china_only — feishu portal cheetah-mobile.jobs.feishu.cn ('加入猎户星空' = OrionStar, Cheetah Mobile robotics arm) has 4 jobs, all Xi'an/Beijing (incl 'GTM经理（北美市场）' based in Beijing); 0 US rows.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

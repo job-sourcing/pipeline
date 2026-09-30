@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — Northbrook IL robotics roles; not Tencent LightSpeed (LA games studio)"
+ "manual_adjudication": "REFUTED — Northbrook IL robotics roles; not Tencent LightSpeed (LA games studio)",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "LightSpeed Studios is Tencent's global games studio (Tencent on roster); the dict hit ashby:lightspeed is a different Northbrook-IL robotics co (refuted in file's manual_adjudication).",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

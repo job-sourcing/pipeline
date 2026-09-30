@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers - Miramar Group"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic Miramar Group (HK, Henderson-affiliated; miramar-group.com/careers); job board lists HK-only roles (The Mira Hong Kong, Mira Moon Hotel) — hongkong_only",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

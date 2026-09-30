@@ -2,13 +2,13 @@
  "brand": "Language Press",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:22:43.422Z",
+ "ts": "2026-09-30T06:05:04.691Z",
  "candidates": [
   {
    "url": "https://www.languagemagazine.com/jobs/",
    "title": "",
    "status": 200,
-   "bytes": 47499,
+   "bytes": 47464,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -18,16 +18,15 @@
   },
   {
    "url": "https://www.isacjobs.com/employer/foreign-languages-press/",
-   "title": "Just a moment...",
-   "status": 403,
-   "bytes": 5783,
+   "title": "",
+   "status": 200,
+   "bytes": 16541,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Founded in 1952, Foreign Languages Press (FLP) is the largest international-facing publisher in the People's Republic of China. It is now part of China Internat",
-   "backend": "direct",
-   "cf_challenge": true
+   "backend": "zenrows"
   },
   {
    "url": "https://translatorsjournal.com/current-language-industry-jobs/",

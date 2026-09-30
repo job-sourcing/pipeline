@@ -152,5 +152,11 @@
   "platform": "workday",
   "title": "Learn About Chico&#x27;s FAS and Explore Our Careers"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Surface is Chicos FAS (US womens apparel retailer, Fort Myers FL, Sycamore/KnitWell) Workday board jobs.knitwellgroup.com/chicos-fas - US company, no Chinese origin; other results are City of Chico CA / Chico State noise",
+  "ts": "2026-09-30T10:32Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

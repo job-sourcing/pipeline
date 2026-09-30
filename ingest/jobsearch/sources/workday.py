@@ -697,11 +697,31 @@ def resolve_facets(board: tuple[str, str, str], first: dict,
     return facets, country_client
 
 
+def _rid_of(p: dict) -> str:
+    """reqId from a CXS list posting — SHAPE-AWARE (S22, the beigene
+    board class). Standard shape: bulletFields[0] IS the jobReqId
+    ('R34730', '9201242416293_1', '1311'). New-generation shape
+    (beigene/BeiGene): bulletFields = [workerType, country, reqId]
+    ('Regular', 'United States of America', 'R34730') — bulletFields[0]
+    is NOT the reqId (it collapses every row to the same key). Rule:
+    take the first bulletField that LOOKS like a requisition id; fall
+    back to the externalPath's _R12345(-1) suffix (the SEO path shape);
+    last resort the legacy bulletFields[0]."""
+    bf = p.get("bulletFields") or []
+    rid_rx = re.compile(r"^(?:R\d+(?:-\d+)?|\d+(?:_\d+)?)$")
+    for f in bf:
+        if rid_rx.match(str(f or "")):
+            return str(f)
+    m = re.search(r"_((?:R)?\d+(?:-\d+)?)$", str(p.get("externalPath") or ""))
+    if m:
+        return m.group(1)
+    return str(bf[0]) if bf else str(p.get("externalPath") or "")
+
+
 def _row_of(board: tuple[str, str, str], p: dict) -> tuple[str, dict]:
     """One CXS list posting → (reqId, row) with company + canonical url."""
     tenant, instance, site = board
-    rid = (p.get("bulletFields") or [None])[0] \
-        or p.get("externalPath", "")
+    rid = _rid_of(p)
     row = dict(p)
     row["reqId"] = rid
     row["company"] = company_display(tenant)

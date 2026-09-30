@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Jobs in Hong Kong - Sep 2026 | CTgoodjobs"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "china_only: Lee & Man Paper (HK-listed) own careers pages (leemanpaper.com, leemanchemical.com) list PRC/HK contact addresses only; 1 HK opening via CTgoodjobs/JobsDB ('Procurement Manager, station in PRC'); no US ops.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

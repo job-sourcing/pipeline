@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — board is Honor the US eldercare startup; and it is a Tencent game not a US hiring entity"
+ "manual_adjudication": "REFUTED — board is Honor the US eldercare startup; and it is a Tencent game not a US hiring entity",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Honor of Kings is a Tencent (roster) game title — sub-brand with no standalone US hiring entity; the greenhouse 'honor' dict board belongs to Honor, the US eldercare startup (homonym).",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

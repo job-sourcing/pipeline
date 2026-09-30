@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "china_only: feishu portal momenta.jobs.feishu.cn live-checked via API — 248 postings, 0 US rows (China cities only; LCA 'MOMENTA USA, INC.' posts no US jobs on this board).",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

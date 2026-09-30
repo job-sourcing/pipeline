@@ -2,10 +2,164 @@
  "brand": "Victory Giant Technology",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:10:55.657Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:38:42.326Z",
+ "candidates": [
+  {
+   "url": "https://job-boards.greenhouse.io/vianttechnology",
+   "title": "Jobs at Viant Technology",
+   "status": 200,
+   "bytes": 48229,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "greenhouse:vianttechnology",
+   "score": 15,
+   "snippet": "32 jobs Business Development Job Inventory Partnerships Senior Manager New York, New York, United States",
+   "backend": "direct"
+  },
+  {
+   "url": "https://getlinks.com/en/company/victory-giant-technology-thailand-co-ltd",
+   "title": "",
+   "status": 200,
+   "bytes": 278422,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Explore VICTORY GIANT TECHNOLOGY (THAILAND) CO., LTD. jobs, salary insights, hiring activity, and career opportunities on GetLinks.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://en.jobui.com/company/11719541/jobs/",
+   "title": "",
+   "status": 200,
+   "bytes": 21198,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "(Victory Giant Technology招聘)Victory Giant Technology (Huizhou) Co., Ltd.招聘Victory Giant Technology相关领域：汽车电子，光电，工业控制，控制线，混合材。想了解Victory Giant Technology招聘条件，学历要求",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "Victory Giant Technology",
+   "u": "https://en.shpcb.com/",
+   "s": "About Victory Giant Victory Giant Technology specializes in the research and development, production, and sales of high-precision printed circuit boards. Its pr"
+  },
+  {
+   "t": "14,000+ Victory Giant Technology Co. Ltd jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/victory-giant-technology-co.-ltd-jobs-worldwide",
+   "s": "Today's top 14,000+ Victory Giant Technology Co. Ltd jobs in Worldwide. Leverage your professional network, and get hired. New Victory Giant Technology Co. Ltd "
+  },
+  {
+   "t": "Victory Giant Technology (huizhou) Co Ltd Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/victory-giant-technology-%28huizhou%29-co-ltd-jobs",
+   "s": "Today's top Victory Giant Technology (huizhou) Co Ltd jobs in United States. Leverage your professional network, and get hired. New Victory Giant Technology (hu"
+  },
+  {
+   "t": "Job Hotline-Victory Giant Technology",
+   "u": "https://en.shpcb.com/hrshow-33-1.html",
+   "s": "Victory Giant Technology (Hui Zhou) Co., Ltd. \"He who got the talent could win the world.\" The talent is the soul of corporate operation and development."
+  },
+  {
+   "t": "Victory Giant Technology - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Victory_Giant_Technology",
+   "s": "Victory Giant Technology (HuiZhou) Co., Ltd. (VGT; Chinese: 胜宏科技; pinyin: Shènghóng kējì) is a publicly listed Chinese company that engages in the provision of "
+  },
+  {
+   "t": "Now Hiring: 335,000 Victory Giant Technology Sales Jobs | Indeed",
+   "u": "https://www.indeed.com/q-victory-giant-technology-sales-jobs.html",
+   "s": "Browse 335,499 Victory Giant Technology Sales jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Working at Victory Giant Technology | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Victory-Giant-Technology-EI_IE6537562.11,35.htm",
+   "s": "See what employees say it's like to work at Victory Giant Technology . Salaries, reviews, and more - all posted by employees working at Victory Giant Technology"
+  },
+  {
+   "t": "Victory Giant Technology (Huizhou) Co.,Ltd - LinkedIn",
+   "u": "https://kr.linkedin.com/company/vgtpcb",
+   "s": "Victory Giant Technology (Chinese name: Sheng Hong) was founded in 2003 in Huizhou, Guangdong, China. The company operates advanced PCB manufacturing facilities"
+  },
+  {
+   "t": "14,000+ Victory Giant Technology Co. Ltd jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/victory-giant-technology-co.-ltd-jobs-worldwide",
+   "s": "Today's top 14,000+ Victory Giant Technology Co. Ltd jobs in Worldwide. Leverage your professional network, and get hired. New Victory Giant Technology Co. Ltd "
+  },
+  {
+   "t": "Victory Giant Technology (huizhou) Co Ltd Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/victory-giant-technology-%28huizhou%29-co-ltd-jobs",
+   "s": "Today's top Victory Giant Technology (huizhou) Co Ltd jobs in United States. Leverage your professional network, and get hired. New Victory Giant Technology (hu"
+  },
+  {
+   "t": "Recruitment-Victory Giant Technology",
+   "u": "https://en.shpcb.com/hrlist-32-1.html",
+   "s": "Victory Giant Technology (Hui Zhou) Co., Ltd. 1、本科以上学历； 2、2年以上跟单相关工作经验者优先； 3、沟通能力及执行力强； 4、外语（英语、日语、韩语）特长者优先。"
+  },
+  {
+   "t": "Victory Giant Technology",
+   "u": "https://en.shpcb.com/",
+   "s": "About Victory Giant Victory Giant Technology specializes in the research and development, production, and sales of high-precision printed circuit boards. Its pr"
+  },
+  {
+   "t": "Victory Giant Technology (Huizhou) Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/11719541/jobs/",
+   "s": "(Victory Giant Technology招聘)Victory Giant Technology (Huizhou) Co., Ltd.招聘Victory Giant Technology相关领域：汽车电子，光电，工业控制，控制线，混合材。想了解Victory Giant Technology招聘条件，学历要求"
+  },
+  {
+   "t": "Now Hiring: 335,000 Victory Giant Technology Sales Jobs | Indeed",
+   "u": "https://www.indeed.com/q-victory-giant-technology-sales-jobs.html",
+   "s": "Browse 335,499 Victory Giant Technology Sales jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Victory Giant VN - Facebook",
+   "u": "https://www.facebook.com/61579292413757/",
+   "s": "Victory Giant VN. 1,460 followers · 10 talking about this. Kênh thông báo chính thức CÔNG TY TNHH CÔNG NGHỆ VICTORY GIANT (VIỆT NAM)"
+  },
+  {
+   "t": "Jobs at Viant Technology",
+   "u": "https://job-boards.greenhouse.io/vianttechnology",
+   "s": "32 jobs Business Development Job Inventory Partnerships Senior Manager New York, New York, United States"
+  },
+  {
+   "t": "14,000+ Victory Giant Technology Co. Ltd jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/victory-giant-technology-co.-ltd-jobs-worldwide",
+   "s": "Today's top 14,000+ Victory Giant Technology Co. Ltd jobs in Worldwide. Leverage your professional network, and get hired. New Victory Giant Technology Co. Ltd "
+  },
+  {
+   "t": "Victory Giant Technology (huizhou) Co Ltd Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/victory-giant-technology-%28huizhou%29-co-ltd-jobs",
+   "s": "Today's top Victory Giant Technology (huizhou) Co Ltd jobs in United States. Leverage your professional network, and get hired. New Victory Giant Technology (hu"
+  },
+  {
+   "t": "Victory Giant Technology",
+   "u": "https://en.shpcb.com/",
+   "s": "About Victory Giant Victory Giant Technology specializes in the research and development, production, and sales of high-precision printed circuit boards. Its pr"
+  },
+  {
+   "t": "Now Hiring: 335,000 Victory Giant Technology Sales Jobs | Indeed",
+   "u": "https://www.indeed.com/q-victory-giant-technology-sales-jobs.html",
+   "s": "Browse 335,499 Victory Giant Technology Sales jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://job-boards.greenhouse.io/vianttechnology",
+  "title": "Jobs at Viant Technology",
+  "status": 200,
+  "bytes": 48229,
+  "markers": [
+   "greenhouse"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "greenhouse:vianttechnology",
+  "score": 15,
+  "snippet": "32 jobs Business Development Job Inventory Partnerships Senior Manager New York, New York, United States",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
 }

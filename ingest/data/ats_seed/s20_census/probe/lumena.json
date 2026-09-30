@@ -26,5 +26,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "surface = ashby:lumena — empty board (0 jobs) belonging to a different 'Lumena' (US Lumena Systems Inc, LCA CA NAICS 541511; ashby is US-tech ATS); census brand Lumena = China Lumena New Materials (Sichuan PPS mining/manufacturing) — no connection.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

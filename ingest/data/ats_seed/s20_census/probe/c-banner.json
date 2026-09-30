@@ -166,5 +166,11 @@
   "snippet": "Banner Health is one of the largest, nonprofit health care systems in the country and the leading nonprofit provider of hospital services in all the communities",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Surface is Banner Health (US nonprofit health system, bannerhealth.com + workday board bannerhealth.wd108.myworkdayjobs.com/Careers 'largest nonprofit health care systems'); C.banner (千百度, HK footwear) has no matching surface; Banner Bank/Life/Industries also homonyms",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

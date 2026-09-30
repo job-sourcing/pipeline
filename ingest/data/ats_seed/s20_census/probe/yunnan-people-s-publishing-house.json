@@ -2,20 +2,19 @@
  "brand": "Yunnan People's Publishing House",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:41:11.243Z",
+ "ts": "2026-09-30T06:09:29.344Z",
  "candidates": [
   {
    "url": "https://www.isacjobs.com/job-location/yunnan/",
-   "title": "Just a moment...",
-   "status": 403,
-   "bytes": 5723,
+   "title": "",
+   "status": 200,
+   "bytes": 27600,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Browse the latest jobs in Yunnan Province for foreigners, including teaching and company jobs for international jobseekers.",
-   "backend": "direct",
-   "cf_challenge": true
+   "backend": "zenrows"
   },
   {
    "url": "https://baike.baidu.com/en/item/Yunnan%20People%27s%20Publishing%20House/933102",
@@ -33,13 +32,13 @@
    "url": "https://rmrbhr.peopledaily.com.cn/",
    "title": "",
    "status": 200,
-   "bytes": 1835,
+   "bytes": 15068,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 3,
    "snippet": "更多招聘服务信息 请微信扫码关注",
-   "backend": "firecrawl"
+   "backend": "zenrows"
   }
  ],
  "results": [

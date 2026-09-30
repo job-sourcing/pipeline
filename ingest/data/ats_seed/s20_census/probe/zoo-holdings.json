@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "UNVERIFIED — Careers | Zoo; ambiguous"
+ "manual_adjudication": "UNVERIFIED — Careers | Zoo; ambiguous",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "greenhouse board 'zoo' (9 jobs) is Zoo (zoo.dev — Los Angeles AI-CAD startup: 'CAD Graphics Engine Software Engineer — Los Angeles, California, United States; Remote'); not Zoo Holdings.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

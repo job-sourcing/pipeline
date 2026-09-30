@@ -165,5 +165,11 @@
   "snippet": "For nearly 160 years, PNC has strived to make a meaningful impact for our employees, customers, communities, and shareholders. We believe our success and positi",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "surface = PNC Financial Services Group (US bank, pnc.wd5.myworkdayjobs.com 'For nearly 160 years, PNC…'); census brand = PNC Process Systems (Shanghai, SH-listed 603690, en.pncs.cn) — unrelated.",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

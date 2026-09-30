@@ -2,13 +2,13 @@
  "brand": "Shenzhen Book City (Central)",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:44:17.474Z",
+ "ts": "2026-09-30T06:02:56.278Z",
  "candidates": [
   {
    "url": "https://jobs.echinacities.com/en/Shenzhen-jobs",
    "title": "Shenzhen Jobs – for Expats in Shenzhen",
    "status": 200,
-   "bytes": 704587,
+   "bytes": 704599,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -18,22 +18,24 @@
   },
   {
    "url": "https://www.isacjobs.com/job-location/shenzhen/",
-   "title": "Just a moment...",
-   "status": 403,
-   "bytes": 5729,
-   "markers": [],
+   "title": "",
+   "status": 200,
+   "bytes": 35337,
+   "markers": [
+    "workday",
+    "avature"
+   ],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Browse the latest jobs in Shenzhen for foreigners, including teaching and company jobs for international jobseekers.",
-   "backend": "direct",
-   "cf_challenge": true
+   "backend": "zenrows"
   },
   {
    "url": "https://hishenzhen.com/how-to-find-a-job-in-shenzhen/",
    "title": "",
    "status": 200,
-   "bytes": 29415,
+   "bytes": 29402,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

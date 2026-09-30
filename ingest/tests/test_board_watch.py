@@ -1927,8 +1927,13 @@ class TestShippedWatchConfig:
             required = ["label", "board", "company", "country"]
             # time_type: REQUIRED for workday boards (the facet exists);
             # OPTIONAL for site specs (greenhouse serves none — an
-            # empty value there would be a lie, S13)
-            if not site_boards.is_site_spec(w["board"]):
+            # empty value there would be a lie, S13). S22 EXCEPTION:
+            # workday boards WITHOUT the timeType facet (the beigene
+            # class — the adapter refuses the filter, so the config
+            # must not claim one)
+            _NO_TIME_FACET = {"beigene|wd5|BeiGene"}
+            if not site_boards.is_site_spec(w["board"]) \
+                    and w["board"] not in _NO_TIME_FACET:
                 required.append("time_type")
             for key in required:
                 assert w.get(key), f"watch missing {key}: {w}"
@@ -1993,7 +1998,7 @@ class TestShippedWatchConfig:
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 41
+        assert len(cfg["watches"]) == 62
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",
@@ -2008,6 +2013,26 @@ class TestShippedWatchConfig:
                   "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2",
                   # S20 wire wave 1
                   "ats:greenhouse:genscript",
+                  # S22 wave-3 (the 21-board round: workday beigene row
+                  # shape + adp/workable/rippling config wires + 13 new
+                  # platform classes)
+                  "popmart|wd102|popmart", "beigene|wd5|BeiGene",
+                  "chagee|wd102|External",
+                  "ats:adp:c2e0ba67-e6f9-439e-b8a3-0d734568eac2",
+                  "ats:workable:deeproute-dot-a-i", "ats:rippling:agora",
+                  "ats:breezy:bitdeer", "ats:jobvite:ovt",
+                  "ats:oraclehcm:eidg.fa.us6.oraclecloud.com|CX_1",
+                  "ats:oraclehcm:fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com|CX_1",
+                  "ats:bamboohr:hisenseusacorporation",
+                  "ats:j2w:careers.joysonsafety.com/search",
+                  "ats:j2w:careers.cofcointernational.com/search-jobs",
+                  "ats:ultipro:MEY1000MEYER|7a970c3d-b076-4042-8735-673b5e5508ac",
+                  "ats:talentadore:amersports.careers.talentadore.com",
+                  "ats:workstream:fcc54c54", "ats:ttiproxy:US",
+                  "ats:sanity:cd9iwvgl/production|Jobs|en-us",
+                  "ats:wpjobboard:www.ascentage.com",
+                  "ats:wuxibio:www.wuxibiologics.com",
+                  "ats:antintl:M7892",
                   "ats:greenhouse:legendcareers",
                   "ats:lever:nio-usa", "ats:lever:foxitsoftware",
                   "ats:feishuhire:poizon"):

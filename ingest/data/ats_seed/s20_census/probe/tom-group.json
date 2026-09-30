@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Career With Us"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: empty_board — tomgroup.com/en/jobs.html (authentic TOM Group, 02383.HK, HK employer) states 'No vacant position is available at the moment' (apply to hrd@tomgroup.com); TomTom candidates are homonyms.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

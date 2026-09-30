@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Baosheng Media Reviews, Interview Guide, Real Salaries &amp; Jobs [2026] | CandidatesReach"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "no company career surface — all candidates are aggregators/directories (candidatesreach, seedtable, EMIS, craft.co, qcc); own IR site ir.bsacme.com ('online marketing solution provider based in China', BAOS) has no careers section; Beijing co (~26 employees).",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

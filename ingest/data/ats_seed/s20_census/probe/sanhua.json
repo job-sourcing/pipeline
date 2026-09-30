@@ -146,5 +146,11 @@
   "platform": "custom",
   "title": "Sanhua International - Career Page"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Sanhua IS roster company 'Sanhua' — its jazzhr board sanhua.applytojob.com (Sanhua International, US jobs in San Jose CA / Gluckstadt MS) is already wired; do not re-flag.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

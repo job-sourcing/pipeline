@@ -43,5 +43,17 @@
   "platform": "custom",
   "title": "Our career areas | WuXi Biologics Jobs"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "AUTHENTIC: wuxibiologics.com/join-us (China CDMO, LCA WuXi Biologics USA LLC) embeds job table with 19 US rows (all 'United States'); search/apply via SAP SuccessFactors portal career55.sapsf.eu?company=wuxibiolog; separate .ie/.cn boards.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://www.wuxibiologics.com/join-us/",
+  "us_rows": 19,
+  "sample": "Lead Technician, Process Mechanic — United States; Senior Director, CMC — United States; Scientist II, Drug Product Manufacturing — United States"
+ }
 }

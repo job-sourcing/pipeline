@@ -32,5 +32,17 @@
   "platform": "custom",
   "title": "Careers Overview - Mattson Technology, Inc."
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic: Mattson Technology (Fremont CA; Chinese state-owned E-Town parent — Oracle tenant 'eidg' = E-Town Industrial Development Group). mattson.com/careers links to Oracle HCM Candidate Experience site; REST API shows 40 requisitions, 24 US rows (Fremont CA x21, Hillsboro OR, Taylor TX, TX).",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ },
+ "wire": {
+  "platform": "oracle_hcm",
+  "board": "https://eidg.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/requisitions",
+  "us_rows": 24,
+  "sample": "VP of Product — Fremont, CA, United States; Field Service Engineer 3 — Hillsboro, OR, United States"
+ }
 }

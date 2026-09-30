@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Job openings | Roba Metals"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "ROBAM (Hangzhou Robam Appliances, 002508.SZ); global site robamworld.com has no jobs section (products/partner only); recruiting is China-only (robam.com/recruit.html, campus.robam.com) — china_only; robammall.com.au vacancies = distributor lorem-ipsum; census best robametals.com = Roba Metals NL homonym",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

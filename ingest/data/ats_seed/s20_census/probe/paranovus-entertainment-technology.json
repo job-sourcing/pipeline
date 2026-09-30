@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Paranovus Entertainment Technology — Hiring Transparency | Quaerent | Quaerent"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "fetch_failed: Cloudflare challenge on pavs.ai (2 curl tries + 2 browser tries, 'One moment, please'); PAVS (Nasdaq, HQ New York, PRC nutraceutical ops, 2 H-1B LCAs) own site unreachable; quaerent/myvisajobs/LinkedIn = aggregators",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

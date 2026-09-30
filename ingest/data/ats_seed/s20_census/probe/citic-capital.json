@@ -2,10 +2,153 @@
  "brand": "CITIC Capital",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:28:56.835Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:36:02.769Z",
+ "candidates": [
+  {
+   "url": "http://careers.citics.com/",
+   "title": "中信证券招聘",
+   "status": 200,
+   "bytes": 1001,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CITIC Securities consistently upholds the core corporate values of \"integrity, innovation, excellence, and sharing,\" adhering to the principles of open, fair, a",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.citibank.com/icg/sa/citicommunitycapital/careers/",
+   "title": "Careers | Citi Community Capital",
+   "status": 200,
+   "bytes": 3135,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Citi Community Capital, the community development lending and investing group of Citi, offers the industry's most comprehensive affordable housing and community",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.citiccapital.com/",
+   "title": "Home - Citic Capital Citic Capital",
+   "status": 200,
+   "bytes": 129243,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "We are a China-focused alternative investment managers with deep experience, creating value for clients and building success with companies through investments ",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - CITIC CLSA",
+   "u": "https://www.clsa.com/careers/",
+   "s": "Internships CITIC CLSA offers a comprehensive eight-week internship programme for aspiring graduates considering a career in financial services in Asia. From ou"
+  },
+  {
+   "t": "Home - Citic Capital",
+   "u": "https://www.citiccapital.com/",
+   "s": "We are a China-focused alternative investment managers with deep experience, creating value for clients and building success with companies through investments "
+  },
+  {
+   "t": "Citic Capital Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/citic-capital-jobs",
+   "s": "Today's top 9,000+ Citic Capital jobs in United States. Leverage your professional network, and get hired. New Citic Capital jobs added daily."
+  },
+  {
+   "t": "21,000+ Citic Capital jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/citic-capital-jobs-worldwide",
+   "s": "Today's top 21,000+ Citic Capital jobs in Worldwide. Leverage your professional network, and get hired. New Citic Capital jobs added daily."
+  },
+  {
+   "t": "Citi Careers | Find Your Next Opportunity",
+   "u": "https://jobs.citi.com/",
+   "s": "Explore global career opportunities at Citi. Discover our workplace culture, values and open positions across various business areas."
+  },
+  {
+   "t": "CITIC Capital - LinkedIn",
+   "u": "https://www.linkedin.com/company/citic-capital",
+   "s": "CITIC Capital Holdings Limited (\"CITIC Capital\") is an alternative investment management and advisory company. The firm manages USD14 billion of capital through"
+  },
+  {
+   "t": "Careers — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/en/index.jsp",
+   "s": "Search and apply for jobs Our current vacancies in and beyond Hong Kong from trainee to management level."
+  },
+  {
+   "t": "Citic S - 中信证券招聘",
+   "u": "http://careers.citics.com/",
+   "s": "CITIC Securities consistently upholds the core corporate values of \"integrity, innovation, excellence, and sharing,\" adhering to the principles of open, fair, a"
+  },
+  {
+   "t": "Careers - CITIC CLSA",
+   "u": "https://www.clsa.com/careers/",
+   "s": "Internships CITIC CLSA offers a comprehensive eight-week internship programme for aspiring graduates considering a career in financial services in Asia. From ou"
+  },
+  {
+   "t": "Citic Capital Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/citic-capital-jobs",
+   "s": "Find your ideal job at Jobsdb with 12 Citic Capital jobs found in Hong Kong. View all our Citic Capital vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Citic Capital Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/citic-capital-jobs",
+   "s": "Today's top 9,000+ Citic Capital jobs in United States. Leverage your professional network, and get hired. New Citic Capital jobs added daily."
+  },
+  {
+   "t": "21,000+ Citic Capital jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/citic-capital-jobs-worldwide",
+   "s": "Today's top 21,000+ Citic Capital jobs in Worldwide. Leverage your professional network, and get hired. New Citic Capital jobs added daily."
+  },
+  {
+   "t": "Citic S - 中信证券招聘",
+   "u": "http://careers.citics.com/",
+   "s": "CITIC Securities consistently upholds the core corporate values of \"integrity, innovation, excellence, and sharing,\" adhering to the principles of open, fair, a"
+  },
+  {
+   "t": "Careers — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/en/index.jsp",
+   "s": "Search and apply for jobs Our current vacancies in and beyond Hong Kong from trainee to management level."
+  },
+  {
+   "t": "Citic Securities Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/citic-securities-jobs",
+   "s": "Find your ideal job on Jobsdb with 96 Citic Securities jobs (57 at Citic Securities) listed in Hong Kong. View all the Citic Securities vacancies now with new j"
+  },
+  {
+   "t": "Citi Careers | Find Your Next Opportunity",
+   "u": "https://jobs.citi.com/",
+   "s": "Explore global career opportunities at Citi. Discover our workplace culture, values and open positions across various business areas."
+  },
+  {
+   "t": "Citic Capital Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/citic-capital-jobs",
+   "s": "Today's top 9,000+ Citic Capital jobs in United States. Leverage your professional network, and get hired. New Citic Capital jobs added daily."
+  },
+  {
+   "t": "21,000+ Citic Capital jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/citic-capital-jobs-worldwide",
+   "s": "Today's top 21,000+ Citic Capital jobs in Worldwide. Leverage your professional network, and get hired. New Citic Capital jobs added daily."
+  },
+  {
+   "t": "Job Search | Citi Careers",
+   "u": "https://jobs.citi.com/search-jobs?acm=ALL&amp;alrpm=ALL&amp;ascf=[%7b",
+   "s": "Search for jobs at Citi. Filter by location, function and keyword to help find a role that may be ideal for you. Apply online today."
+  },
+  {
+   "t": "Citi Careers | Find Your Next Opportunity",
+   "u": "https://jobs.citi.com/",
+   "s": "Explore global career opportunities at Citi. Discover our workplace culture, values and open positions across various business areas."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.citibank.com/icg/sa/citicommunitycapital/careers/",
+  "platform": "custom",
+  "title": "Careers | Citi Community Capital"
+ },
+ "verdict": "custom_surface"
 }

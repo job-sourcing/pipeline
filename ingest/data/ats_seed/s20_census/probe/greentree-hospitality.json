@@ -2,7 +2,7 @@
  "brand": "GreenTree Hospitality",
  "tier": "lca",
  "lca": "GREENTREE HOSPITALITY GROUP, INC",
- "ts": "2026-09-29T04:35:50.079Z",
+ "ts": "2026-09-30T06:09:06.306Z",
  "candidates": [
   {
    "url": "https://www.greentreegroup.com/careers/",
@@ -18,22 +18,21 @@
   },
   {
    "url": "https://www.jobstagg.com/company-profile/greentree-hospitality-group",
-   "title": "Just a moment...",
-   "status": 403,
-   "bytes": 5941,
+   "title": "",
+   "status": 200,
+   "bytes": 1552,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Explore jobs at Greentree Hospitality Group. Discover job openings, company culture, benifits and growth opportunities.",
-   "backend": "direct",
-   "cf_challenge": true
+   "backend": "zenrows"
   },
   {
    "url": "https://greentreeinn.com/talent-community/",
    "title": "Talent Community - GreenTree Inn",
    "status": 200,
-   "bytes": 122329,
+   "bytes": 122609,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

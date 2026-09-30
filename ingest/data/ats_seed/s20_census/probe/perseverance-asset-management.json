@@ -2,13 +2,13 @@
  "brand": "Perseverance Asset Management",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:30:36.086Z",
+ "ts": "2026-09-30T06:06:30.581Z",
  "candidates": [
   {
    "url": "https://www.efinancialcareers.sg/jobs/asset-management/in-singapore?q=asset+management&location=Singapore&latitude=1.35208&longitude=103.81983&countryCode=SG&locationPrecision=Country&radius=40&radiusUnit=km&pageSize=15&currencyCode=SGD&language=en&includeUnspecifiedSalary=true",
    "title": "",
    "status": 200,
-   "bytes": 71891,
+   "bytes": 70978,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

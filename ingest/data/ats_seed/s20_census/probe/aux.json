@@ -159,5 +159,11 @@
   "snippet": "At Aux, we offer more than just a job—we provide a platform to elevate your career while achieving work-life balance. Join a supportive community of driven prof",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "apply.workable.com/aux = 'Aux' (auxhq.com), PH-based talent-matching firm pairing talent w/ US startups — sole opening 'Executive Assistant' is Philippines-located (workable widget API); auxteam.com = AUX CUSO credit-union services. Neither is the Chinese appliance maker AUX Group.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

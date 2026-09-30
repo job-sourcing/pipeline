@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "World Triathlon Corporation Jobs | InHerSight"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "The IRONMAN Group (ex-WTC) was sold by Wanda Sports to Advance Publications (completed 2020, $730M) — no longer Chinese-owned; triathlon.org/jobs = World Triathlon NPO governing body (different org); no Chinese-company surface",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

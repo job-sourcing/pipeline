@@ -163,5 +163,11 @@
   "snippet": "At Mango, we put passion into everything that we do. Born in Barcelona, we are the place where creativity, innovation, diversity, digitalization, and sustainabi",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "mango.wd3.myworkdayjobs.com = Mango the Spanish fashion retailer ('Born in Barcelona'); jobs.mango.com likewise fashion; authentic Mango TV (湖南广电) uses hr.mgtv.com — China-only recruitment",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

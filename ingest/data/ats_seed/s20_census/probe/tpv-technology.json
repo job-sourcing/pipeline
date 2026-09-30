@@ -2,7 +2,7 @@
  "brand": "TPV Technology",
  "tier": "lca",
  "lca": "TPV-USA CORP.",
- "ts": "2026-09-29T04:35:07.193Z",
+ "ts": "2026-09-30T06:08:11.631Z",
  "candidates": [
   {
    "url": "https://www.tpvision.com/careers/",
@@ -18,15 +18,15 @@
   },
   {
    "url": "https://tpv360.com/careers/",
-   "title": "Careers - TPV360",
+   "title": "",
    "status": 200,
-   "bytes": 167051,
+   "bytes": 6252,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Join the world's #1 TPV cloud platform and work with a technologically-driven team to help businesses and communities achieve their goals, solve biggest challen",
-   "backend": "supabase"
+   "backend": "zenrows"
   },
   {
    "url": "https://www.tpvision.com/current-job-openings/",

@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Metallurgical Corporation of China Careers | Talentd"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "Candidates jobzmall/talentd/devex are job aggregators; MCC (Chinese SOE 中国中冶) has no company career surface in probe, no US board",
+  "ts": "2026-09-30T10:32Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

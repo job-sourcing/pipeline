@@ -154,5 +154,11 @@
   "platform": "eightfold",
   "title": "Careers at Starbucks"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "candidates = SPR (US IT), S.P. Richards, Starbucks; SPR Coffee (CN chain) has no EN surface",
+  "ts": "2026-09-30T05:10:00Z",
+  "by": "S22-ADJ-main"
+ }
 }

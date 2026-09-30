@@ -152,5 +152,17 @@
   "platform": "phenom",
   "title": "Maaden: Exciting Career Opportunities in Mining Industry"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic Aden Group (Shanghai-founded, Singapore-HQ FM/energy; LCA ADEN STAFF INC); own careers page adengroup.com/career/ lists 5 open roles incl. 'Project Manager (PMO) — Akila, Remote, USA' and 'Technical Sales Manager — Akila, North American'; adenhq.com (AI cloud startup) and careers.maaden.com (Saudi mining) are homonyms.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://adengroup.com/career/",
+  "us_rows": 2,
+  "sample": "Project Manager (PMO) — Akila, Remote, USA (+ Technical Sales Manager — Akila, North America)"
+ }
 }

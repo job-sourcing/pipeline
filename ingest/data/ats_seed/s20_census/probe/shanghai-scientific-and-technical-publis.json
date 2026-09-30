@@ -152,5 +152,11 @@
   "platform": "custom",
   "title": "Job Opportunities"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: china_only — sstp.cn/p/job.html is the publisher's own 2024 recruitment page (Shanghai-based editorial roles, Chinese-language); other candidates (shanghai.gov.cn news page, Elsevier careers) are noise/homonym.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

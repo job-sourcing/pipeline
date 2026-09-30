@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Career - Deli Group Co., Ltd."
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: china_only — deliworld.com/career.html is authentic Deli Group (得力, stationery, Ningbo) but has no job listings, only HR contact (lvchenyang@nbdeli.com, Ninghai County, Ningbo, +86); DeliBurgers/stepstone candidates are homonyms/aggregators.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

@@ -12,5 +12,11 @@
   "title": "Careers at Orbbec - 3D Vision &amp; Robotics Jobs",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "static-WP catalog class: US rows inline (Orbbec 3D Technology International, Troy MI; BD/Admin/R&D categories) but no API/board structure — custom parser candidate, not config-wire",
+  "ts": "2026-09-30T05:10:00Z",
+  "by": "S22-ADJ-main"
+ }
 }

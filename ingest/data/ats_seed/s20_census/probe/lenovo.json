@@ -12,5 +12,11 @@
   "title": "Jobs at Lenovo",
   "via": "guess"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Lenovo is itself in the wired roster (jobs.lenovo.com, radancy); LCA LENOVO (UNITED STATES) INC; do not re-flag",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

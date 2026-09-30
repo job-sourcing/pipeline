@@ -151,5 +151,11 @@
   "platform": "custom",
   "title": "League of Legends Jobs 🎮 LoL Esports Careers | Riot Games"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "League of Legends is a game IP of Riot Games (Tencent-owned, roster: Tencent); probe surfaces are esports job aggregators (esportsjobs.quest, curry.gg), careers live at riotgames.com",
+  "ts": "2026-09-30T10:32Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

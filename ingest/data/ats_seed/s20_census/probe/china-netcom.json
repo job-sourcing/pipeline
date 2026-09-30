@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers | One of The World&#x27;s Largest Telecommunications Service Providers - China Telecom Global"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Top candidates are China Telecom Global pages (chinatelecomglobal.com/tc/careers, job.chinatelecom.com.cn) — a different company; China Netcom merged into China Unicom in 2008 and has no own career surface (careerbliss = aggregator)",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

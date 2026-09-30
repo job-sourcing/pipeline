@@ -165,5 +165,11 @@
   "snippet": "FWD Group (1828.HK) is a pan-Asian life and health insurance business that serves approximately 40 million customers across 10 markets, including BRI Life in In",
   "backend": "supabase"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic workday board fwd.wd3.myworkdayjobs.com/FWDcareersite ('pan-Asian life and health insurance', 1828.HK); API: 183 jobs, 0 US — all HK/MY/PH/JP/TH/SG/ID/VN/Dubai; smartrecruiters FWDus = FWD.us advocacy org homonym",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

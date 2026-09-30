@@ -151,5 +151,11 @@
   "platform": "custom",
   "title": "Oilfield Services (OFS) Jobs in China — PetroleumJobs.com"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "Probe 'best' petroleumjobs.com and all candidates are job aggregators (Rigzone/Jooble/ZipRecruiter/LinkedIn); COSL's own cosl.com.cn has a 'Join US' page with no US job board — no company career surface found.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

@@ -140,5 +140,11 @@
   "platform": "custom",
   "title": "Tecno Job Board - Find Your Next Opportunity"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "jobs.tecnoblocks.com is an unrelated 'Tecno Job Board' platform (dashboard page); telefonica careers = homonym; tecno-mobile.com has no careers section and transsion.com/careers errors (500/404); only aggregator listings (Indeed/Bayt/LinkedIn) — no authentic Tecno/Transsion career surface.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

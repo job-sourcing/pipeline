@@ -25,5 +25,17 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic Hisense USA (US arm of Chinese Hisense, LCA HISENSE USA CORPORATION) Wix careers page lists 19 open positions, all US locations (Alpharetta/Suwanee GA, Bentonville AR, Remote)",
+  "ts": "2026-09-30T10:32Z",
+  "by": "S22-ADJ-5R2"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://www.hisense-usa.com/careers/job-postings",
+  "us_rows": 19,
+  "sample": "Sr. Sales Manager - Walmart/Sam's Club - Bentonville, AR; Bilingual Supply Planning Manager - Alpharetta, GA; Home Appliances Technical Trainer - Suwanee, GA; Field Service Technician - Remote"
+ }
 }

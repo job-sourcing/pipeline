@@ -2,10 +2,159 @@
  "brand": "Horse Powertrain",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:31:25.379Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:40:56.032Z",
+ "candidates": [
+  {
+   "url": "https://jobs.horse-powertrain.com/jobs",
+   "title": "Current job openings - Horse Powertrain",
+   "status": 200,
+   "bytes": 131753,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Job openings at Horse Powertrain At Horse Powertrain, we're known for being caring, collaborative people with a global mindset, a passion for innovation and a d",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.horse-powertrain.com/",
+   "title": "Powering your career - Horse Powertrain",
+   "status": 200,
+   "bytes": 73530,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join HORSE: Innovate the future of mobility with a global leader in sustainable powertrain technologies. Grow your career and shape tomorrow's technology today!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://echojobs.io/company/horse-powertrain.com",
+   "title": "",
+   "status": 200,
+   "bytes": 10022,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Horse Powertrain: Joint venture for hybrid and combustion powertrain solutions. Browse 17 open software roles at Horse Powertrain, sourced directly from their c",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "Current job openings - Horse Powertrain",
+   "u": "https://jobs.horse-powertrain.com/jobs",
+   "s": "Job openings at Horse Powertrain At Horse Powertrain, we're known for being caring, collaborative people with a global mindset, a passion for innovation and a d"
+  },
+  {
+   "t": "Powering your career - Horse Powertrain",
+   "u": "https://jobs.horse-powertrain.com/",
+   "s": "Join HORSE: Innovate the future of mobility with a global leader in sustainable powertrain technologies. Grow your career and shape tomorrow's technology today!"
+  },
+  {
+   "t": "Horse Powertrain",
+   "u": "https://horse-powertrain.com/",
+   "s": "At Horse Powertrain, we design and deliver highly efficient integrated powertrain systems and standalone powertrain products. From compact range extenders to fu"
+  },
+  {
+   "t": "Horse Powertrain Jobs in Worldwide (46 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/horse-powertrain-jobs-worldwide",
+   "s": "Today's top 46 Horse Powertrain jobs in Worldwide. Leverage your professional network, and get hired. New Horse Powertrain jobs added daily."
+  },
+  {
+   "t": "Horse Powertrain jobs — 17 open roles · EchoJobs",
+   "u": "https://echojobs.io/company/horse-powertrain.com",
+   "s": "Horse Powertrain: Joint venture for hybrid and combustion powertrain solutions. Browse 17 open software roles at Horse Powertrain, sourced directly from their c"
+  },
+  {
+   "t": "Horse Powertrain - Ework Verama",
+   "u": "https://app.verama.com/en/company/Horsepowertrain/?tab=jobs",
+   "s": "Horse Powertrain is an independent powertrain ..."
+  },
+  {
+   "t": "1,000+ Horse Powertrain jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/horse-powertrain-jobs?countryRedirected=1",
+   "s": "Today's top 1,000+ Horse Powertrain jobs in United States. Leverage your professional network, and get hired. New Horse Powertrain jobs added daily."
+  },
+  {
+   "t": "HORSE POWERTRAIN Jobs (Now Hiring) Near Me Sep 2026 - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/co/Horse-Powertrain/Jobs",
+   "s": "Looking to work for Horse Powertrain? ZipRecruiter has 37 Horse Powertrain jobs available that are hiring now. Start your career at Horse Powertrain Today."
+  },
+  {
+   "t": "Current job openings - Horse Powertrain - Aurobay",
+   "u": "https://jobs.horse-powertrain.com/jobs",
+   "s": "Job openings at Horse Powertrain At Horse Powertrain, we're known for being caring, collaborative people with a global mindset, a passion for innovation and a d"
+  },
+  {
+   "t": "Powering your career - Horse Powertrain",
+   "u": "https://jobs.horse-powertrain.com/",
+   "s": "Join HORSE: Innovate the future of mobility with a global leader in sustainable powertrain technologies. Grow your career and shape tomorrow's technology today!"
+  },
+  {
+   "t": "Horse Powertrain",
+   "u": "https://horse-powertrain.com/",
+   "s": "At Horse Powertrain, we design and deliver highly efficient integrated powertrain systems and standalone powertrain products. From compact range extenders to fu"
+  },
+  {
+   "t": "Horse Powertrain jobs — 17 open roles · EchoJobs",
+   "u": "https://echojobs.io/company/horse-powertrain.com",
+   "s": "Horse Powertrain: Joint venture for hybrid and combustion powertrain solutions. Browse 17 open software roles at Horse Powertrain, sourced directly from their c"
+  },
+  {
+   "t": "HORSE POWERTRAIN Jobs (Now Hiring) Near Me Sep 2026 - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/co/Horse-Powertrain/Jobs",
+   "s": "Looking to work for Horse Powertrain? ZipRecruiter has 37 Horse Powertrain jobs available that are hiring now. Start your career at Horse Powertrain Today."
+  },
+  {
+   "t": "1,000+ Horse Powertrain jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/horse-powertrain-jobs?countryRedirected=1",
+   "s": "Today's top 1,000+ Horse Powertrain jobs in United States. Leverage your professional network, and get hired. New Horse Powertrain jobs added daily."
+  },
+  {
+   "t": "Horse Powertrain Jobs in Worldwide (46 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/horse-powertrain-jobs-worldwide",
+   "s": "Today's top 46 Horse Powertrain jobs in Worldwide. Leverage your professional network, and get hired. New Horse Powertrain jobs added daily."
+  },
+  {
+   "t": "Horse Powertrain Jobs & Careers - Clera",
+   "u": "https://www.getclera.com/co/horse-powertrain",
+   "s": "Browse open roles at Horse Powertrain. New jobs added daily — apply directly with the company or let Clera match you."
+  },
+  {
+   "t": "Current job openings - Horse Powertrain",
+   "u": "https://jobs.horse-powertrain.com/jobs",
+   "s": "About Horse Powertrain At Horse Powertrain, we're known for being caring, collaborative people with a global mindset, a passion for innovation and a drive to cr"
+  },
+  {
+   "t": "HORSE POWERTRAIN Jobs (Now Hiring) Near Me Sep 2026 - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/co/Horse-Powertrain/Jobs",
+   "s": "Looking to work for Horse Powertrain? ZipRecruiter has 37 Horse Powertrain jobs available that are hiring now. Start your career at Horse Powertrain Today."
+  },
+  {
+   "t": "Current job openings - Horse Powertrain",
+   "u": "https://jobs.horse-powertrain.com/es/jobs",
+   "s": "Sobre HORSE Powertrain Limited HORSE es una división de HORSE Powertrain Limited, un líder mundial en soluciones de tren motriz híbrido y de combustión. Con sed"
+  },
+  {
+   "t": "Horse Powertrain jobs — 17 open roles · EchoJobs",
+   "u": "https://echojobs.io/company/horse-powertrain.com",
+   "s": "Horse Powertrain: Joint venture for hybrid and combustion powertrain solutions. Browse 17 open software roles at Horse Powertrain, sourced directly from their c"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.horse-powertrain.com/jobs",
+  "platform": "teamtailor",
+  "title": "Current job openings - Horse Powertrain"
+ },
+ "verdict": "marker_surface"
 }

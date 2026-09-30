@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — Oasis Physical Therapy; not the HK hedge fund"
+ "manual_adjudication": "REFUTED — Oasis Physical Therapy; not the HK hedge fund",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "boards.greenhouse.io/oasis = 'Jobs at Oasis Physical Therapy' (US PT clinics) — not Oasis Management; LCA OASIS PROFESSIONAL MANAGEMENT GROUP also not the HK hedge fund",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

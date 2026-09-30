@@ -2,10 +2,153 @@
  "brand": "Enrich",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:23:33.429Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:28:49.193Z",
+ "candidates": [
+  {
+   "url": "https://www.enrichsoftware.com/careers/",
+   "title": "Careers | Enrich",
+   "status": 200,
+   "bytes": 100641,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Enrich to explore exciting career opportunities in a dynamic environment. We value your growth. Apply today and shape your future with us!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://enrichco.us/careers",
+   "title": "Careers - Enrich",
+   "status": 200,
+   "bytes": 173800,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CAREERS We are excited to share new opening (s) within our company. Join us ! Director of Finance and Investment (Master's w/ 3 yrs exp or Bach w/ 5 yrs exp; Ma",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://www.enrichsoftware.com/careers/generic-position/",
+   "title": "Work with Us | Enrich",
+   "status": 200,
+   "bytes": 85801,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Submit your CV and apply for future opportunities at Enrich. Join our team to shape the future together and be part of our innovative journey.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Enrich",
+   "u": "https://www.enrichsoftware.com/careers/",
+   "s": "Join Enrich to explore exciting career opportunities in a dynamic environment. We value your growth. Apply today and shape your future with us!"
+  },
+  {
+   "t": "Careers - Enrich",
+   "u": "https://enrichco.us/careers",
+   "s": "CAREERS We are excited to share new opening (s) within our company. Join us ! Director of Finance and Investment (Master's w/ 3 yrs exp or Bach w/ 5 yrs exp; Ma"
+  },
+  {
+   "t": "Enrich Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/enrich-jobs",
+   "s": "Today's top 7,000+ Enrich jobs in United States. Leverage your professional network, and get hired. New Enrich jobs added daily."
+  },
+  {
+   "t": "Enrich: Jobs | LinkedIn",
+   "u": "https://in.linkedin.com/company/enrich/jobs",
+   "s": "Enrich | 80,229 followers on LinkedIn. Salons | At-Home Services | Retail | Academy | At Enrich, we strive to help people realize how gifted they are &amp; also"
+  },
+  {
+   "t": "Panasonic Careers | Create Today, Enrich Tomorrow",
+   "u": "https://careers.na.panasonic.com/",
+   "s": "Join Panasonic North America and shape the future of technology. Explore our career opportunities today."
+  },
+  {
+   "t": "Work with Us | Enrich",
+   "u": "https://www.enrichsoftware.com/careers/generic-position/",
+   "s": "Submit your CV and apply for future opportunities at Enrich. Join our team to shape the future together and be part of our innovative journey."
+  },
+  {
+   "t": "Careers - Enrich Marketing",
+   "u": "https://enrichmarketinginc.com/careers/",
+   "s": "Enrich Marketing starts each relationship with our client's success in mind. Of course, that means well-researched strategies informed by the client's business "
+  },
+  {
+   "t": "Enrich Associates inc., - Career Center",
+   "u": "https://www.enrichasc.com/career-center/",
+   "s": "ENRICH is a highly ethical and value based company. At ENRICH, every employee plays a part in maintaining our corporate reputation for the highest ethical stand"
+  },
+  {
+   "t": "Job enrichment: Definition, examples, strategy | Factorial",
+   "u": "https://factorialhr.com/blog/job-enrichment/",
+   "s": "Increasingly, organizations need to look for new ways to increase employee satisfaction and engagement. One such method is job enrichment."
+  },
+  {
+   "t": "Enrich Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/enrich-jobs",
+   "s": "Today's top 7,000+ Enrich jobs in United States. Leverage your professional network, and get hired. New Enrich jobs added daily."
+  },
+  {
+   "t": "Job Enrichment: A Practical Guide + 13 Examples | AIHR",
+   "u": "https://www.aihr.com/blog/job-enrichment/",
+   "s": "Learn about the ins and outs of job enrichment, explore examples of how to enrich jobs, and help your employees thrive!"
+  },
+  {
+   "t": "$14-$48/hr Enrich Jobs (NOW HIRING) Sep 2026 - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/Jobs/Enrich?lk=mpQCugzloPjglGqMSJfu_w",
+   "s": "Browse 1000+ ENRICH jobs ($14-$48/hr) from companies hiring now. New openings posted daily. Apply early, be seen first & 1-click apply today!"
+  },
+  {
+   "t": "Careers - Enrich",
+   "u": "https://www.enrichsoftware.com/careers/",
+   "s": "Join Enrich to explore exciting career opportunities in a dynamic environment. We value your growth. Apply today and shape your future with us!"
+  },
+  {
+   "t": "Apply — Enrich inc",
+   "u": "http://www.enrichinc.com/apply",
+   "s": "Are you creative, energetic, and love making people smile? Looking for a rewarding job that fits your schedule? At the Fun House, Enrich's Adult Day Program, we"
+  },
+  {
+   "t": "Now Hiring: 30,000 Enrichment Jobs | Indeed",
+   "u": "https://www.indeed.com/q-enrichment-jobs.html",
+   "s": "Browse 30,896 Enrichment jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Enrich Learning Trust - School and Trust Recruitment",
+   "u": "https://www.enrich-learning.org/Vacancies/",
+   "s": "Welcome to the website of Enrich Learning Trust, Norfolk"
+  },
+  {
+   "t": "Careers - Enrich",
+   "u": "https://www.enrichsoftware.com/careers/",
+   "s": "Join Enrich to explore exciting career opportunities in a dynamic environment. We value your growth. Apply today and shape your future with us!"
+  },
+  {
+   "t": "Careers - Enrich",
+   "u": "https://enrichco.us/careers",
+   "s": "Job entails working w/ & reqs exp that must be in enterprise level ecommerce & incl: Providing financial leadership; implementing investment analysis framework;"
+  },
+  {
+   "t": "37 Enrich Company jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/enrich-company-jobs",
+   "s": "Today's top 37 Enrich Company jobs in United States. Leverage your professional network, and get hired. New Enrich Company jobs added daily."
+  },
+  {
+   "t": "Enrich Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/enrich-jobs",
+   "s": "Today's top 7,000+ Enrich jobs in United States. Leverage your professional network, and get hired. New Enrich jobs added daily."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.enrichsoftware.com/careers/",
+  "platform": "custom",
+  "title": "Careers | Enrich"
+ },
+ "verdict": "custom_surface"
 }

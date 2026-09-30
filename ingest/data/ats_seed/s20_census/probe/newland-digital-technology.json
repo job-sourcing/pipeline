@@ -2,10 +2,153 @@
  "brand": "Newland Digital Technology",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:48:23.035Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:31:38.784Z",
+ "candidates": [
+  {
+   "url": "https://www.newlandnpt.com/career.html",
+   "title": "Career - Newland NPT",
+   "status": 200,
+   "bytes": 136940,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Career - Grow together with Newland NPT As an ITBP in NewlandNPT, I serve as a bridge between technology and business, ensuring seamless operations and innovati",
+   "backend": "direct"
+  },
+  {
+   "url": "https://newlandnpt.co.jp/career.html",
+   "title": "Newland NPT",
+   "status": 200,
+   "bytes": 41719,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Newland Payment Technology (Newland NPT) is a leader in the global digital payment terminal industry.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://dt.newland.com.cn/en/join/A029006index_1.htm",
+   "title": "Careers - Newland Hi-Tech Group Co., Ltd.",
+   "status": 200,
+   "bytes": 71743,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Newland fosters an inclusive and innovative culture with a focus on \"Truth, Goodness, and Care\". Our \"dual-channel\" talent development system allows employees t",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Newland Hi-Tech Group Co., Ltd.",
+   "u": "https://dt.newland.com.cn/en/join/A029006index_1.htm",
+   "s": "Newland fosters an inclusive and innovative culture with a focus on \"Truth, Goodness, and Care\". Our \"dual-channel\" talent development system allows employees t"
+  },
+  {
+   "t": "Careers - Newland Technology GROUP Co., Ltd.",
+   "u": "https://www.newland.com.cn/en/join/A036006index_1.htm",
+   "s": "Newland fosters an inclusive and innovative culture with a focus on \"Truth, Goodness, and Care\". Our \"dual-channel\" talent development system allows employees t"
+  },
+  {
+   "t": "Career - Newland NPT",
+   "u": "https://www.newlandnpt.com/career.html",
+   "s": "Career - Grow together with Newland NPT As an ITBP in NewlandNPT, I serve as a bridge between technology and business, ensuring seamless operations and innovati"
+  },
+  {
+   "t": "Newland NPT",
+   "u": "https://newlandnpt.co.jp/career.html",
+   "s": "Newland Payment Technology (Newland NPT) is a leader in the global digital payment terminal industry."
+  },
+  {
+   "t": "Find your role - Career - Newland NPT",
+   "u": "https://www.newlandnpt.com/join.html",
+   "s": "Find your role - Career - Newland NPT QR Code Payment Sound Box"
+  },
+  {
+   "t": "Newland Technology GROUP Co., Ltd.",
+   "u": "https://www.newland.com.cn/en/index.htm",
+   "s": "Digital Commerce Using payment as a gateway to provide digital payment, vertical SaaS, digital marketing, and value-added services to millions of merchants"
+  },
+  {
+   "t": "Home [www.newlandits.com]",
+   "u": "https://www.newlandits.com/en/index.htm",
+   "s": "Newland Digital Technology Co., Ltd. Information Engineering Company was established in 1998. Since its inception, it engaged in the field of expressway electro"
+  },
+  {
+   "t": "Newland Hi-Tech Group Co., Ltd.",
+   "u": "https://dt.newland.com.cn/en/index.htm",
+   "s": "Industry Digital Clusters Digital Solutions for Commerce, Software, Big Data, and Smart Transportation Driven by High-Frequency Data"
+  },
+  {
+   "t": "Careers - Newland Hi-Tech Group Co., Ltd.",
+   "u": "https://dt.newland.com.cn/en/join/A029006index_1.htm",
+   "s": "Newland fosters an inclusive and innovative culture with a focus on \"Truth, Goodness, and Care\". Our \"dual-channel\" talent development system allows employees t"
+  },
+  {
+   "t": "Career - Newland NPT",
+   "u": "https://www.newlandnpt.com/career.html",
+   "s": "Why Newland NPT? As a provider of payment technology solutions, Newland NPT is at its best when every member of our team feels respected, included, and heard—wh"
+  },
+  {
+   "t": "Newland NPT",
+   "u": "https://newlandnpt.co.jp/career.html",
+   "s": "Newland Payment Technology (Newland NPT) is a leader in the global digital payment terminal industry."
+  },
+  {
+   "t": "Find your role - Career - Newland NPT",
+   "u": "https://www.newlandnpt.com/join.html",
+   "s": "Find your role - Career - Newland NPT QR Code Payment Sound Box"
+  },
+  {
+   "t": "Newland Jobs in Worldwide (35,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/newland-jobs-worldwide",
+   "s": "Today's top 35,000+ Newland jobs in Worldwide. Leverage your professional network, and get hired. New Newland jobs added daily."
+  },
+  {
+   "t": "0 Newland Digital Technology jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/newland-digital-technology-jobs",
+   "s": "Today's top 0 Newland Digital Technology jobs in United States. Leverage your professional network, and get hired. New Newland Digital Technology jobs added dai"
+  },
+  {
+   "t": "Newland Hi-Tech Group Co., Ltd.",
+   "u": "https://dt.newland.com.cn/en/index.htm",
+   "s": "Industry Digital Clusters Digital Solutions for Commerce, Software, Big Data, and Smart Transportation Driven by High-Frequency Data"
+  },
+  {
+   "t": "Newland Technology GROUP Co., Ltd.",
+   "u": "https://www.newland.com.cn/en/index.htm",
+   "s": "Digital Commerce Using payment as a gateway to provide digital payment, vertical SaaS, digital marketing, and value-added services to millions of merchants"
+  },
+  {
+   "t": "Career - Newland NPT",
+   "u": "https://www.newlandnpt.com/career.html",
+   "s": "Our values, which shape our mindset, choices, and actions, inspire everything we do—from delivering digital technology services to driving the digital transform"
+  },
+  {
+   "t": "Careers - Newland Technology GROUP Co., Ltd.",
+   "u": "https://www.newland.com.cn/en/join/A036006index_1.htm",
+   "s": "Newland fosters an inclusive and innovative culture with a focus on \"Truth, Goodness, and Care\". Our \"dual-channel\" talent development system allows employees t"
+  },
+  {
+   "t": "Careers - Newland Hi-Tech Group Co., Ltd.",
+   "u": "https://dt.newland.com.cn/en/join/A029006index_1.htm",
+   "s": "Newland fosters an inclusive and innovative culture with a focus on \"Truth, Goodness, and Care\". Our \"dual-channel\" talent development system allows employees t"
+  },
+  {
+   "t": "Newland NPT",
+   "u": "https://newlandnpt.co.jp/career.html",
+   "s": "Newland Payment Technology (Newland NPT) is a leader in the global digital payment terminal industry."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.newlandnpt.com/career.html",
+  "platform": "custom",
+  "title": "Career - Newland NPT"
+ },
+ "verdict": "custom_surface"
 }

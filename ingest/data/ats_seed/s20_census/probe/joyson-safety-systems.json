@@ -148,5 +148,17 @@
   "platform": "successfactors",
   "title": ""
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic Joyson Safety Systems (subsidiary of Ningbo Joyson Electronics, ex-Takata/KSS) careers on SuccessFactors/RMK careers.joysonsafety.com; 26 jobs, 7 US rows all Auburn Hills US",
+  "ts": "2026-09-30T10:32Z",
+  "by": "S22-ADJ-5R2"
+ },
+ "wire": {
+  "platform": "successfactors",
+  "board": "https://careers.joysonsafety.com/search/?q=&locale=en_US",
+  "us_rows": 7,
+  "sample": "Sr. Product Engineer SW - Auburn Hills, US; Manager, Compensation & Benefits - Auburn Hills, US; System Performance Engineer AB - Auburn Hills, US"
+ }
 }

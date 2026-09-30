@@ -12,5 +12,11 @@
   "title": "Search Page | MMG Careers",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic MMG (China Minmetals-backed miner) careers.mmg.com (successfactors-style): vacancies only at Dugald River/Rosebery (AU), Kinsevere, Las Bambas (PE), Khoemacau (BW) + Corporate Office — zero US locations",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

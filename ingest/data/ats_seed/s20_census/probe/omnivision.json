@@ -150,5 +150,17 @@
   "platform": "custom",
   "title": "Careers at Omnivision – Join Our Security Team"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "AUTHENTIC: ovt.com 'OMNIVISION Careers' (Chinese-owned since 2019 via Will Semiconductor/韦尔股份) jobvite board lists 60 roles; 37 US rows (Santa Clara CA x33, Irvine CA x4) + Singapore/Oslo/Japan.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ },
+ "wire": {
+  "platform": "jobvite",
+  "board": "https://jobs.jobvite.com/ovt/index.htm",
+  "us_rows": 37,
+  "sample": "Sr. Applications Engineer — Santa Clara, CA; Analog Design Engineer — Irvine, CA; Partnership Business Development Manager — Santa Clara, CA"
+ }
 }

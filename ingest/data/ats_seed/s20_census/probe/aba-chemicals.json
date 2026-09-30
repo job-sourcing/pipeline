@@ -2,10 +2,148 @@
  "brand": "ABA Chemicals",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:12:16.589Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:08:39.573Z",
+ "candidates": [
+  {
+   "url": "https://www.abacareer.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 114,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "www.abacareer.com",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.abadirect.com/employment/browsejobs.aspx",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "ABA Direct connects BCBAs and RBTs with ABA Therapy Employers and Families. We feature top quality ABA clinicians and the best ABA jobs, driving more value to t",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.myabajobs.com/",
+   "title": "My ABA Jobs — ABA Therapy Job Board for BCBA, RBT &amp; Behavior Analysts",
+   "status": 200,
+   "bytes": 214467,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find ABA therapy jobs, BCBA positions, RBT openings, and behavior analyst careers. Browse 50+ states with salary data, company profiles, and certification guide",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Recruitment_ ABA CHEMICALS CORPORATION",
+   "u": "https://abachem.com/en/joinUs.html",
+   "s": "Good working environment and broad development prospects We provide a safe and good working environment for every employee and a career stage for every aspiring"
+  },
+  {
+   "t": "Aba Chemicals Jobs, Employment - Indeed",
+   "u": "https://www.indeed.com/q-aba-chemicals-jobs.html",
+   "s": "39 Aba Chemicals jobs available on Indeed.com. Apply to Board Certified Behavior Analyst, Registered Behavior Technician, Paralegal and more!"
+  },
+  {
+   "t": "Aba Chemicals Corporation",
+   "u": "https://www.abachem.com/en/index.html",
+   "s": "ABA CHEMICALS CORPORATION was founded in July 2003 and restructured into a joint stock limited company in February 2010; In September 2011, it was listed on the"
+  },
+  {
+   "t": "ABA Chemical Career - LinkedIn",
+   "u": "https://www.linkedin.com/company/aba-chemical-career",
+   "s": "ABA Chemical Career Agricultural Chemical Manufacturing ABA Chemical là đơn vị sản xuất và cung ứng thuốc BVTV - phân bón hàng đầu tại Việt Nam."
+  },
+  {
+   "t": "ABA Chemical Career - ABA Chemical | LinkedIn",
+   "u": "https://www.linkedin.com/pub/dir/ABA/Career",
+   "s": "Experience: ABA Chemical · Location: Can Tho · 95 connections on LinkedIn. View ABA Chemical Career's profile on LinkedIn, a professional community of 1 billion"
+  },
+  {
+   "t": "www.abacareer.com",
+   "u": "https://www.abacareer.com/",
+   "s": "www.abacareer.com"
+  },
+  {
+   "t": "ABA CHEMICALS CORPORATION - sanyagov.com",
+   "u": "https://www.sanyagov.com/en/index.html",
+   "s": "ABA CHEMICALS CORPORATION was founded in July 2003 and restructured into a joint stock limited company in February 2010; In September 2011, it was listed on the"
+  },
+  {
+   "t": "ABOUT - Aba chemicals",
+   "u": "https://abachemicals.com/about/",
+   "s": "Welcome to ABA Chemicals, your trusted partner in the world of specialty chemicals, with a focus on silver liquid mercury. Based in the heart of chemical innova"
+  },
+  {
+   "t": "Recruitment_ ABA CHEMICALS CORPORATION",
+   "u": "https://abachem.com/en/joinUs.html",
+   "s": "We constantly strive to create a fair, just and effective compensation system for employees, and enhance and maintain our continuous competitiveness in the mark"
+  },
+  {
+   "t": "Aba Chemicals Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-aba-chemicals-jobs.html",
+   "s": "39 Aba Chemicals jobs available on Indeed.com. Apply to Board Certified Behavior Analyst, Registered Behavior Technician, Paralegal and more!"
+  },
+  {
+   "t": "Aba Chemicals Corporation",
+   "u": "https://www.abachem.com/en/index.html",
+   "s": "ABA CHEMICALS CORPORATION was founded in July 2003 and restructured into a joint stock limited company in February 2010; In September 2011, it was listed on the"
+  },
+  {
+   "t": "ABA Chemical Career - LinkedIn",
+   "u": "https://www.linkedin.com/company/aba-chemical-career",
+   "s": "ABA Chemical là đơn vị sản xuất và cung ứng thuốc BVTV - phân bón hàng đầu tại Việt Nam. Tiên phong đổi mới với mô hình kinh doanh theo định hướng cung ..."
+  },
+  {
+   "t": "ABA Chemical Career - ABA Chemical | LinkedIn",
+   "u": "https://www.linkedin.com/pub/dir/ABA/Career",
+   "s": "Experience: ABA Chemical · Location: Can Tho · 95 connections on LinkedIn. View ABA Chemical Career's profile on LinkedIn, a professional community of 1 billion"
+  },
+  {
+   "t": "Abbott Jobs | Apply Now | Abbott Careers",
+   "u": "https://www.jobs.abbott/us/en/home",
+   "s": "Be challenged in a career that helps people around the world live fuller lives through better health. Search and apply now for a job at Abbott."
+  },
+  {
+   "t": "The Best ABA Therapy Jobs for BCBAs, RBTs, and Behavior Techs",
+   "u": "https://www.abadirect.com/employment/browsejobs.aspx",
+   "s": "ABA Direct connects BCBAs and RBTs with ABA Therapy Employers and Families. We feature top quality ABA clinicians and the best ABA jobs, driving more value to t"
+  },
+  {
+   "t": "My ABA Jobs — ABA Therapy Job Board for BCBA, RBT & Behavior Analysts",
+   "u": "https://www.myabajobs.com/",
+   "s": "Find ABA therapy jobs, BCBA positions, RBT openings, and behavior analyst careers. Browse 50+ states with salary data, company profiles, and certification guide"
+  },
+  {
+   "t": "Recruitment_ ABA CHEMICALS CORPORATION",
+   "u": "https://abachem.com/en/joinUs.html",
+   "s": "We constantly strive to create a fair, just and effective compensation system for employees, and enhance and maintain our continuous competitiveness in the mark"
+  },
+  {
+   "t": "Aba Chemicals Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-aba-chemicals-jobs.html",
+   "s": "39 Aba Chemicals jobs available on Indeed.com. Apply to Board Certified Behavior Analyst, Registered Behavior Technician, Paralegal and more!"
+  },
+  {
+   "t": "ABA Jobs - Apply Now - Join a Company That Cares",
+   "u": "https://careers.behavioral-innovations.com/careers-home/jobs/categories",
+   "s": "We're hiring! We're looking for motivated individuals who are passionate about making a difference in the lives of kids and families."
+  },
+  {
+   "t": "ABA Chemical Career - LinkedIn",
+   "u": "https://www.linkedin.com/company/aba-chemical-career",
+   "s": "ABA Chemical Career Agricultural Chemical Manufacturing ABA Chemical là đơn vị sản xuất và cung ứng thuốc BVTV - phân bón hàng đầu tại Việt Nam."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

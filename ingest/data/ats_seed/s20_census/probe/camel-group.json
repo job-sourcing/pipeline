@@ -25,5 +25,11 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "reason: empty_board — feishu hire portal camel.jobs.feishu.cn (title '加入骆驼集团股份有限公司' = Camel Group Co, CN Hubei battery maker) currently lists 0 jobs (search API count=0).",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

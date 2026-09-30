@@ -27,5 +27,11 @@
   "n": 1
  },
  "verdict": "ats_surface",
- "manual_adjudication": "REFUTED — LA startup roles (Security/PeopleOps/ExecOps); not 蓝思科技 Changsha manufacturer"
+ "manual_adjudication": "REFUTED — LA startup roles (Security/PeopleOps/ExecOps); not 蓝思科技 Changsha manufacturer",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "jobs.ashbyhq.com/lens = LENS (US traffic-accident-prevention AI, Los Angeles CA: 'LENS's mission is to end traffic accidents') — not Lens Technology (蓝思科技)",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

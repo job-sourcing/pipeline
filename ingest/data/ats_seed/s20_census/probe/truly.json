@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers\n &ndash; Truly Pizza"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "empty_board: real company = Truly International 信利國際 (HK 0732, Shanwei/Huizhou display maker; probe candidates are homonyms — Truly Pizza Dana Point CA, Truly Nolen pest control); own careers page truly.com.hk/job.aspx shows zero rows ('資料更新中'), recruiting via boss直聘 (67 PRC roles).",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

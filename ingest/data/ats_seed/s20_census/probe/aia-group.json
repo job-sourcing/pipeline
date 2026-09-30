@@ -2,10 +2,168 @@
  "brand": "AIA Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:12:36.240Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:43:02.039Z",
+ "candidates": [
+  {
+   "url": "https://aia.wd3.myworkdayjobs.com/External",
+   "title": "",
+   "status": 200,
+   "bytes": 7347,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:External",
+   "score": 17,
+   "snippet": "\"Better\" starts with people who reimagine what is possible and turn ideas into meaningful action. At AIA, you will contribute in your own way, help shape outcom",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://aia.wd3.myworkdayjobs.com/External/8/refreshFacet/318c8bb6f553100021d223d9780d30be",
+   "title": "",
+   "status": 200,
+   "bytes": 180351,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workday:External",
+   "score": 17,
+   "snippet": "Explore career opportunities at AIA and shape your future with us.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.aia.com/en/careers/overview",
+   "title": "Careers | AIA Group Limited\n  \n  \n    | AIA Group Limited",
+   "status": 200,
+   "bytes": 337415,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "AIA was celebrated for our strong focus on employee well-being, inclusive leadership, and long-term career development, ranking first in Best Places to Work's A",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | AIA Group Limited | AIA Group Limited",
+   "u": "https://www.aia.com/en/careers/overview",
+   "s": "AIA was celebrated for our strong focus on employee well-being, inclusive leadership, and long-term career development, ranking first in Best Places to Work's A"
+  },
+  {
+   "t": "AIA Careers",
+   "u": "https://aia.wd3.myworkdayjobs.com/External",
+   "s": "\"Better\" starts with people who reimagine what is possible and turn ideas into meaningful action. At AIA, you will contribute in your own way, help shape outcom"
+  },
+  {
+   "t": "Diverse Customer Experience Jobs - AIA Group - Careers at AIA Group",
+   "u": "https://aiagroup.co/careers/",
+   "s": "CAREERS Thank you for considering AIA for your next career opportunity. We are always on the look-out for talented, visionary people who are passionate about de"
+  },
+  {
+   "t": "Careers | AIA Hong Kong",
+   "u": "https://www.aia.com.hk/en/about-aia/careers",
+   "s": "We safeguard AIA's financial interests through effective financial controls, timely and accurate management information and insightful financial analysis to sup"
+  },
+  {
+   "t": "Careers at AIA",
+   "u": "https://www.aia.org/about-aia/careers-at-aia",
+   "s": "Explore exciting career opportunities at AIA. Join a dynamic team committed to shaping the future of architecture."
+  },
+  {
+   "t": "Careers | AIA Singapore",
+   "u": "https://www.aia.com.sg/en/about-aia/careers",
+   "s": "Please note that official career opportunities with AIA Singapore (AIA) are only posted on our Corporate Website, Career Section (AIA Singapore Jobs and Careers"
+  },
+  {
+   "t": "Career Opportunities | AIA Malaysia",
+   "u": "https://www.aia.com.my/en/about-aia/careers/corporate-careers.html",
+   "s": "Start your career with Malaysia's leading insurance company, AIA. We offer diverse career options and opportunities in the insurance industry. Discover your pas"
+  },
+  {
+   "t": "The American Institute of Architects (AIA), AIA Career Center|Find Your ...",
+   "u": "https://careercenter.aia.org/",
+   "s": "Advanced Search AIA Career Center Account Benefits Take advantage of our job seeker account features below to help you do your research, find the right job oppo"
+  },
+  {
+   "t": "Careers | AIA Group Limited | AIA Group Limited",
+   "u": "https://www.aia.com/en/careers/overview",
+   "s": "AIA's commitment to sustainable capability building was recognised with Excellence in Practice awards in 2026 for LIFT, our onboarding programme for new joiners"
+  },
+  {
+   "t": "AIA Careers",
+   "u": "https://aia.wd3.myworkdayjobs.com/External",
+   "s": "\"Better\" starts with people who reimagine what is possible and turn ideas into meaningful action. At AIA, you will contribute in your own way, help shape outcom"
+  },
+  {
+   "t": "Diverse Customer Experience Jobs - AIA Group - Careers at AIA Group",
+   "u": "https://aiagroup.co/careers/",
+   "s": "CAREERS Thank you for considering AIA for your next career opportunity. We are always on the look-out for talented, visionary people who are passionate about de"
+  },
+  {
+   "t": "Careers at AIA",
+   "u": "https://www.aia.org/about-aia/careers-at-aia",
+   "s": "Explore exciting career opportunities at AIA. Join a dynamic team committed to shaping the future of architecture."
+  },
+  {
+   "t": "AIA Group Jobs & Careers - 4 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/AIA-Group-Jobs-E337791.htm",
+   "s": "Search job openings at AIA Group. 4 AIA Group jobs including salaries, ratings, and reviews, posted by AIA Group employees."
+  },
+  {
+   "t": "The American Institute of Architects (AIA), AIA Career Center|Find Your ...",
+   "u": "https://careercenter.aia.org/",
+   "s": "The American Institute of Architects (AIA) - Find your next career at AIA Career Center. Check back frequently as new jobs are posted every day."
+  },
+  {
+   "t": "AIA Group Jobs: 119 Open Vacancies, Salaries and Locations (2026) | Alion",
+   "u": "https://alion.io/company/aia/jobs",
+   "s": "As of Sep 29, 2026, AIA Group has 119 open jobs on Alion. They are posted in 10 cities. 3 allow remote or hybrid work. Its postings score B on the Alion truth i"
+  },
+  {
+   "t": "AIA: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/aia/jobs",
+   "s": "AIA | 267,628 followers on LinkedIn. AIA Group Limited and its subsidiaries (collectively \"AIA\" or the \"Group\") comprise the largest independent publicly listed"
+  },
+  {
+   "t": "Careers | AIA Group Limited | AIA Group Limited",
+   "u": "https://www.aia.com/en/careers/overview",
+   "s": "Leading the way in employee engagement, innovative HR practices and exceptional workplace cultures. AIA was celebrated for our strong focus on employee well-bei"
+  },
+  {
+   "t": "AIA Careers",
+   "u": "https://aia.wd3.myworkdayjobs.com/External",
+   "s": "\"Better\" starts with people who reimagine what is possible and turn ideas into meaningful action. At AIA, you will contribute in your own way, help shape outcom"
+  },
+  {
+   "t": "The American Institute of Architects (AIA), AIA Career Center|Find Your ...",
+   "u": "https://careercenter.aia.org/",
+   "s": "AIA Career Center Account Benefits Take advantage of our job seeker account features below to help you do your research, find the right job opportunity, and get"
+  },
+  {
+   "t": "Diverse Customer Experience Jobs - AIA Group - Careers at AIA Group",
+   "u": "https://aiagroup.co/careers/",
+   "s": "Thank you for considering AIA for your next career opportunity. We are always on the look-out for talented, visionary people who are passionate about delivering"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://aia.wd3.myworkdayjobs.com/External",
+  "title": "",
+  "status": 200,
+  "bytes": 7347,
+  "markers": [
+   "workday"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workday:External",
+  "score": 17,
+  "snippet": "\"Better\" starts with people who reimagine what is possible and turn ideas into meaningful action. At AIA, you will contribute in your own way, help shape outcom",
+  "backend": "supabase"
+ },
+ "verdict": "ats_surface"
 }

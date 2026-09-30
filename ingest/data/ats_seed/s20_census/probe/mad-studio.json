@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "CAREERS | MAD STUDIO"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "china_only: MAD Architects (i-mad.com, Beijing/Los Angeles/Rome — Ma Yansong) careers page lists a single open role 'Architectural Designer — Beijing Office'; LA office exists but no US openings now; madstudiohk.com and mad-studios.co.uk are homonyms.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

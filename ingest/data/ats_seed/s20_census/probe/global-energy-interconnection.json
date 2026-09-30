@@ -12,5 +12,11 @@
   "title": "The home of Global Media and Entertainment Careers",
   "via": "guess"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "best surface careers.global.com is Global Media and Entertainment (UK radio/outdoor-advertising group — 'The home of Global Media and Entertainment Careers'), not GEIDCO (全球能源互联网发展合作组织, State Grid-affiliated); geidco.org unreachable from sandbox; no GEI career surface among candidates.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ }
 }

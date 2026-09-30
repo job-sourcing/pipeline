@@ -2,10 +2,148 @@
  "brand": "China State Shipbuilding Corporation",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:33:58.485Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:01:25.296Z",
+ "candidates": [
+  {
+   "url": "https://www.jobzmall.com/china-state-shipbuilding-corporation/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 8356,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers and Openings at China State Shipbuilding Corporation The China State Shipbuilding Corporation is a Chinese shipbuilding conglomerate.",
+   "backend": "supabase"
+  },
+  {
+   "url": "http://china-csicpower.com.cn/n9/n63/c34095/content.html",
+   "title": "人才招聘_中国船舶集团有限公司",
+   "status": 200,
+   "bytes": 12532,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "中国船舶集团有限公司 版权所有 地址：上海市黄浦区老西门街道中华路889号 邮政编码：200011 电话：86-21-3311-6666 传真：86-21-33116699 E-mail：cssc@cssc.net.cn 中小企业房租减免申诉电话：021-33116289 民企清欠、中小企业清欠申诉电话：021-331",
+   "backend": "direct"
+  },
+  {
+   "url": "https://english.cscec.com/Career_en/JobOpportunities/",
+   "title": "Join Us",
+   "status": 200,
+   "bytes": 38318,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Overview Management Team Company Structure Business Housing Construction Infrastructure & Investment Real Estate Investment & Development Investigation & Design",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Us - CSCEC",
+   "u": "https://english.cscec.com/Career_en/JobOpportunities/",
+   "s": "Overview Management Team Company Structure Business Housing Construction Infrastructure & Investment Real Estate Investment & Development Investigation & Design"
+  },
+  {
+   "t": "22,000+ China State Shipbuilding Corporation jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/china-state-shipbuilding-corporation-jobs-worldwide",
+   "s": "Today's top 22,000+ China State Shipbuilding Corporation jobs in Worldwide. Leverage your professional network, and get hired. New China State Shipbuilding Corp"
+  },
+  {
+   "t": "China State Shipbuilding Corporation Limited Jobs - Jobui",
+   "u": "https://en.jobui.com/company/15750746/jobs/",
+   "s": "(CSSC招聘)China State Shipbuilding Corporation Limited招聘CSSC相关领域：船舶，船舶工业，工业，工程，研发。想了解CSSC招聘条件，学历要求，需要什么专业，就上职友集。发现和了解你未来的雇主。"
+  },
+  {
+   "t": "Current Job Openings at China State Shipbuilding Corporation | JobzMall",
+   "u": "https://www.jobzmall.com/china-state-shipbuilding-corporation/jobs",
+   "s": "Careers and Openings at China State Shipbuilding Corporation The China State Shipbuilding Corporation is a Chinese shipbuilding conglomerate."
+  },
+  {
+   "t": "Career Development - CSCEC",
+   "u": "https://english.cscec.com/Career_en/CareerDevelopment/",
+   "s": "We will maintain the leading position in the industry and promote improvement of China Construction's quality and efficiency, transformation and upgrading. We w"
+  },
+  {
+   "t": "中国船舶集团有限公司2027届校园招聘 - zhaopin.com",
+   "u": "https://cssc.zhaopin.com/job/index.html",
+   "s": "智联校园招聘xiaoyuan.zhaopin.com为应届大学毕业生及在校生提供最新校园招聘信息，实习信息以及校园宣讲会信息等.为企业提供一站式专业人力资源服务,包括网络招聘,报纸招聘,校园招聘,猎头服务,招聘外包,企业培训以及人才测评等."
+  },
+  {
+   "t": "Recruit - CSSC",
+   "u": "https://csscshipping.com/en/recruit",
+   "s": "The CSSC official website Our mission is to promote the integration of industry and finance in China's shipbuilding industry, gather the superior industry resou"
+  },
+  {
+   "t": "CSSC",
+   "u": "https://csscshipping.com/en",
+   "s": "As intermediaries between shipbuilders and potential buyers, we offer a wide range of services, including assisting shipbuilders in identifying market opportuni"
+  },
+  {
+   "t": "22,000+ China State Shipbuilding Corporation jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/china-state-shipbuilding-corporation-jobs-worldwide",
+   "s": "Today's top 22,000+ China State Shipbuilding Corporation jobs in Worldwide. Leverage your professional network, and get hired. New China State Shipbuilding Corp"
+  },
+  {
+   "t": "China State Shipbuilding Corporation Limited Jobs - Jobui",
+   "u": "https://en.jobui.com/company/15750746/jobs/",
+   "s": "(CSSC招聘)China State Shipbuilding Corporation Limited招聘CSSC相关领域：船舶，船舶工业，工业，工程，研发。想了解CSSC招聘条件，学历要求，需要什么专业，就上职友集。发现和了解你未来的雇主。"
+  },
+  {
+   "t": "Join Us - CSCEC",
+   "u": "https://english.cscec.com/Career_en/JobOpportunities/",
+   "s": "Join Us CCA Won Chapin High School Extension and Renovation Works Dec.05,2011 CCA Won Chapin High School Extension and Renovation Works Dec.05,2011 Five Contrac"
+  },
+  {
+   "t": "Current Job Openings at China State Shipbuilding Corporation | JobzMall",
+   "u": "https://www.jobzmall.com/china-state-shipbuilding-corporation/jobs",
+   "s": "Careers and Openings at China State Shipbuilding Corporation The China State Shipbuilding Corporation is a Chinese shipbuilding conglomerate."
+  },
+  {
+   "t": "中国船舶集团有限公司2027届校园招聘 - zhaopin.com",
+   "u": "https://cssc.zhaopin.com/job/index.html",
+   "s": "智联校园招聘xiaoyuan.zhaopin.com为应届大学毕业生及在校生提供最新校园招聘信息，实习信息以及校园宣讲会信息等.为企业提供一站式专业人力资源服务,包括网络招聘,报纸招聘,校园招聘,猎头服务,招聘外包,企业培训以及人才测评等."
+  },
+  {
+   "t": "Recruit - CSSC",
+   "u": "https://csscshipping.com/en/recruit",
+   "s": "Our mission is to promote the integration of industry and finance in China's shipbuilding industry, gather the superior industry resources, talents and capital "
+  },
+  {
+   "t": "China State Shipbuilding Corporation hiring 2025届应届 ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/2025%E5%B1%8A%E5%BA%94%E5%B1%8A%E6%AF%95%E4%B8%9A%E7%94%9F%EF%BC%88%E8%AE%BE%E8%AE%A1%E5%88%B6%E9%80%A0%E6%96%B9%E5%90%91%EF%BC%89-at-china-state-shipbuilding-corporation-4165590380",
+   "s": "China State Shipbuilding Corporation Guangzhou, Guangdong, China 9 months ago Be among the first 25 applicants See who China State Shipbuilding Corporation has "
+  },
+  {
+   "t": "Remote Jobs at China State Shipbuilding Corporation",
+   "u": "https://remoteok.com/company/china-state-shipbuilding-corporation",
+   "s": "There is currently one remote job at China State Shipbuilding Corporation tagged Education, Non Tech and Developer such as 兵器"
+  },
+  {
+   "t": "Join Us - CSCEC",
+   "u": "https://english.cscec.com/Career_en/JobOpportunities/",
+   "s": "Overview Management Team Company Structure Business Housing Construction Infrastructure & Investment Real Estate Investment & Development Investigation & Design"
+  },
+  {
+   "t": "China State Shipbuilding Corporation Limited Jobs - Jobui",
+   "u": "https://en.jobui.com/company/15750746/jobs/",
+   "s": "(CSSC招聘)China State Shipbuilding Corporation Limited招聘CSSC相关领域：船舶，船舶工业，工业，工程，研发。想了解CSSC招聘条件，学历要求，需要什么专业，就上职友集。发现和了解你未来的雇主。"
+  },
+  {
+   "t": "22,000+ China State Shipbuilding Corporation jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/china-state-shipbuilding-corporation-jobs-worldwide",
+   "s": "Today's top 22,000+ China State Shipbuilding Corporation jobs in Worldwide. Leverage your professional network, and get hired. New China State Shipbuilding Corp"
+  },
+  {
+   "t": "Current Job Openings at China State Shipbuilding Corporation | JobzMall",
+   "u": "https://www.jobzmall.com/china-state-shipbuilding-corporation/jobs",
+   "s": "Careers and Openings at China State Shipbuilding Corporation The China State Shipbuilding Corporation is a Chinese shipbuilding conglomerate."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

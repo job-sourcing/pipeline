@@ -12,5 +12,17 @@
   "title": "Careers at Amer Sports and our brands | Amer Sports",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic (Anta-led CN-owned). amersports.com/careers is a per-brand link hub, but its 'Europe & north america' TalentAdore portal (amersports.careers.talentadore.com) lists 44 jobs incl 12 US rows: New York City x8, Chicago IL x2, Pittston Township PA x2 (verified via ats.talentadore.com/positions/mwRcjSn/json).",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ },
+ "wire": {
+  "platform": "talentadore",
+  "board": "https://amersports.careers.talentadore.com/",
+  "us_rows": 12,
+  "sample": "Director, Global Tax — New York City, US; Sr. Analyst SAP FI/CO — Chicago, IL"
+ }
 }

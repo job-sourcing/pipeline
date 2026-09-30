@@ -26,5 +26,11 @@
   "ok": true,
   "n": 2
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Foxit Software IS roster company 'Foxit' (lever:foxitsoftware board, identity_check ok) — already wired; do not re-flag.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

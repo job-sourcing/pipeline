@@ -2,13 +2,13 @@
  "brand": "Guangzhou Book Center",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-29T04:41:56.697Z",
+ "ts": "2026-09-30T06:01:42.108Z",
  "candidates": [
   {
    "url": "https://jobs.echinacities.com/guangzhou-jobs",
    "title": "Jobs in Guangzhou - Job Opportunities in Guangzhou for Expats|广州招聘外国人|外籍招聘网|招聘外教|外国人招聘|外国人才网",
    "status": 200,
-   "bytes": 705933,
+   "bytes": 705483,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -18,23 +18,22 @@
   },
   {
    "url": "https://www.isacjobs.com/job-location/guangzhou/",
-   "title": "",
-   "status": 200,
-   "bytes": 34800,
-   "markers": [
-    "workday"
-   ],
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5732,
+   "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
    "snippet": "Browse the latest jobs in Guangzhou for foreigners, including teaching and company jobs for international jobseekers.",
-   "backend": "firecrawl"
+   "backend": "direct",
+   "cf_challenge": true
   },
   {
    "url": "https://jobs.echinacities.com/en/Guangzhou-jobs",
    "title": "Guangzhou Jobs – for Expats in Guangzhou",
    "status": 200,
-   "bytes": 705271,
+   "bytes": 704821,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

@@ -2,10 +2,148 @@
  "brand": "T-Head",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:09:32.738Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:05:58.145Z",
+ "candidates": [
+  {
+   "url": "https://www.t-head.cn/?lang=en",
+   "title": "平头哥半导体",
+   "status": 200,
+   "bytes": 47519,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "平头哥半导体有限公司成立于2018年9月19日，是阿里巴巴集团的全资半导体芯片业务主体。平头哥拥有端云一体全栈产品系列，涵盖数据中心人工智能芯片、处理器IP授权等，实现芯片端到端设计链路全覆盖。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.head.com/en_US/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 4108,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "As a global player in the international sports equipment business HEAD has a lot to offer for qualified employees and dedicated apprentices. To attract and reta",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.head.com/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 4108,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Find career opportunities at HEAD and join a team committed to excellence in sports equipment.",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "Travis Head Profile - Cricket Player Australia | Stats, Records, Video",
+   "u": "https://www.cricinfo.com/cricketers/travis-head-530011",
+   "s": "Travis Head player profile A talented, aggressive left-hand batter earmarked for big things at a young age, it was Travis Head's second coming as an internation"
+  },
+  {
+   "t": "平头哥半导体 - t-head.cn",
+   "u": "https://www.t-head.cn/?lang=en",
+   "s": "平头哥半导体有限公司成立于2018年9月19日，是阿里巴巴集团的全资半导体芯片业务主体。平头哥拥有端云一体全栈产品系列，涵盖数据中心人工智能芯片、处理器IP授权等，实现芯片端到端设计链路全覆盖。"
+  },
+  {
+   "t": "T Head Jobs in United States (275 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/t-head-jobs",
+   "s": "Today's top 275 T Head jobs in United States. Leverage your professional network, and get hired. New T Head jobs added daily."
+  },
+  {
+   "t": "Travis Head - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Travis_Head",
+   "s": "Travis Michael Head (born 29 December 1993) is an Australian international cricketer who represents the Australia national cricket team in all formats and is th"
+  },
+  {
+   "t": "Travis Head Profile - ICC Ranking, Age, Career Info & Stats",
+   "u": "https://www.cricbuzz.com/profiles/8497/travis-head",
+   "s": "Head wasn't picked for the 2016 World T20 but since then, managed to be in the selectors' plans. In 50-overs cricket, Head started to become a vital cog of the "
+  },
+  {
+   "t": "Jobs - HEAD",
+   "u": "https://www.head.com/en_US/jobs",
+   "s": "As a global player in the international sports equipment business HEAD has a lot to offer for qualified employees and dedicated apprentices. To attract and reta"
+  },
+  {
+   "t": "Jobs - HEAD",
+   "u": "https://www.head.com/jobs",
+   "s": "Find career opportunities at HEAD and join a team committed to excellence in sports equipment."
+  },
+  {
+   "t": "平头哥校园招聘 - recruitment.t-head.cn",
+   "u": "https://recruitment.t-head.cn/campus/home?lang=zh",
+   "s": "阿里巴巴平头哥2027届校园大使招聘已开启，快来投递哦~ 2026.3.18"
+  },
+  {
+   "t": "T Head Jobs in United States (275 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/t-head-jobs",
+   "s": "Today's top 275 T Head jobs in United States. Leverage your professional network, and get hired. New T Head jobs added daily."
+  },
+  {
+   "t": "T Head Dock Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/t-head-dock-jobs",
+   "s": "Today's top T Head Dock jobs in United States. Leverage your professional network, and get hired. New T Head Dock jobs added daily."
+  },
+  {
+   "t": "Head in T Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-head-in-t-jobs.html",
+   "s": "Shadow department heads and front-line staff to understand the day-to-day rhythm of community life. This salaried, full-time training program typically lasts 3-"
+  },
+  {
+   "t": "20 Best t ('head_department') jobs (Hiring Now!) | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=t%28%27head_department%27%29",
+   "s": "390 t ('head_department') jobs available. See salaries, compare reviews, easily apply, and get hired. New t ('head_department') careers are added daily on Simpl"
+  },
+  {
+   "t": "t-head.cn - 平头哥半导体",
+   "u": "https://www.t-head.cn/",
+   "s": "平头哥半导体有限公司成立于2018年9月19日，是阿里巴巴集团的全资半导体芯片业务主体。平头哥拥有端云一体全栈产品系列，涵盖数据中心人工智能芯片、处理器IP授权等，实现芯片端到端设计链路全覆盖。"
+  },
+  {
+   "t": "3,000 Tech Head Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Tech-Head-jobs.html",
+   "s": "Browse 3,218 Tech Head jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Jobs at Thinkahead | LeadNear Jobs",
+   "u": "https://www.leadnear.com/jobs/company/thinkahead",
+   "s": "Browse all open positions at Thinkahead on LeadNear Jobs."
+  },
+  {
+   "t": "Monster Jobs Search - Find Jobs Near Me | Monster.com",
+   "u": "https://www.monster.com/",
+   "s": "Search millions of job openings, build your resume, and apply in minutes to connect with employers hiring now. Find your next job at Monster.com"
+  },
+  {
+   "t": "T Head Jobs in United States (275 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/t-head-jobs",
+   "s": "Today's top 275 T Head jobs in United States. Leverage your professional network, and get hired. New T Head jobs added daily."
+  },
+  {
+   "t": "Head in T Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-head-in-t-jobs.html",
+   "s": "Shadow department heads and front-line staff to understand the day-to-day rhythm of community life. This salaried, full-time training program typically lasts 3-"
+  },
+  {
+   "t": "48 Jobs jobs in Incheon - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/search?geoId=106997361",
+   "s": "Today's top 48 Jobs jobs in Incheon. Leverage your professional network, and get hired. New Jobs jobs added daily."
+  },
+  {
+   "t": "2026 Teaching Jobs in Korea | Gone2Korea Job Board",
+   "u": "https://www.gone2korea.com/teaching-jobs-korea/",
+   "s": "The official Job Board of Gone2Korea. Browse job vacancies by location and start date. Apply for full-time teaching jobs in South Korea."
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

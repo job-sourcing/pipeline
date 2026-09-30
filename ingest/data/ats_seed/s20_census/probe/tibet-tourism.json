@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Join Our Team: Careers and Job Opportunities in Tibet"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "Candidates are Lhasa-based travel agencies' career pages (Explore Tibet, Tibet Discovery, Access Tibet Tour) — different companies, not the listed Tibet Tourism Co. (西藏旅游) scenic operator",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

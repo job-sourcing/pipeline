@@ -1,0 +1,60 @@
+{
+ "totalCount": 8,
+ "locations": [],
+ "opportunities": [
+  {
+   "Id": "875b40ec-0fa1-4e22-9781-ef5c447a05c5",
+   "Title": "Regional Sales Manager Residential (Florida Homebase)-HCC",
+   "RequisitionNumber": "REGIO002359",
+   "FullTime": true,
+   "PostedDate": "2026-09-11T21:50:09.576Z",
+   "BriefDescription": "As a Regional Sales Manager, you will play a pivotal role in driving revenue growth and expanding our market presence within your designated region. You will be responsible for developing and executing strategic sales initiatives and fostering strong relationships with clients. Your primary focus will be on sales; however, you will also engage in diverse responsibilities as our business evolves. Our goal is to provide leading solutions that are tailored to meet the diverse needs of our clients. We have a strong focus on innovation and customer satisfaction, and we strive to exceed expectations and drive growth in our industry. You will work closely with internal teams and clients to ensure seamless execution of sales strategies and achieve organizational objectives.",
+   "JobCategoryName": "Manager",
+   "Locations": [
+    {
+     "Id": "6dd375b7-e07b-5d76-ac13-34f26eeb418b",
+     "LocalizedName": null,
+     "LocalizedDescription": "Florida-HCC",
+     "Address": {
+      "City": "Pompano Beach",
+      "State": {
+       "Code": "FL",
+       "Name": "Florida"
+      },
+      "Country": {
+       "Code": "USA",
+       "Name": "United States"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "Id": "33b666d6-4043-42e6-922f-717c17ea2fee",
+   "Title": "Content Creator",
+   "RequisitionNumber": "CONTE002357",
+   "FullTime": false,
+   "PostedDate": "2026-09-04T17:05:51.214Z",
+   "BriefDescription": "Your mission is to turn our products, our team, and our journey into content people come back for: trend-aware short-form video, images, and any other formats that convert viewers into followers and followers into buyers.",
+   "JobCategoryName": "Staff",
+   "Locations": [
+    {
+     "Id": "ab75f7b0-332c-501a-8008-5a6f585fc8ea",
+     "LocalizedName": "Vallejo",
+     "LocalizedDescription": "Vallejo",
+     "Address": {
+      "City": "Vallejo",
+      "State": {
+       "Code": "CA",
+       "Name": "California"
+      },
+      "Country": {
+       "Code": "USA",
+       "Name": "United States"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -2,10 +2,156 @@
  "brand": "Wallace",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:11:29.847Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:39:40.325Z",
+ "candidates": [
+  {
+   "url": "https://catalog.wallace.edu/job-listings",
+   "title": "Job Listings | Wallace Community College",
+   "status": 200,
+   "bytes": 10580,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "To remain on active file, students must update their resumes at the beginning of each term. For more information, please visit Career Services by clicking here.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.wallace.edu/campus-life-resources/career-services/area-job-listings/",
+   "title": "Area Job Listings | Wallace Community College",
+   "status": 200,
+   "bytes": 124851,
+   "markers": [
+    "workday",
+    "avature"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Welcome to the Wallace Community College Job Listings page—a dedicated resource connecting our students and alumni with local employment opportunities. Whether ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://wallace.design/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 54166,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Experienced professionals are valued for more than their resumes - they're respected for the insight, leadership and innovation they bring to every challenge. J",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Employment - Wallace State",
+   "u": "https://www.wallacestate.edu/employment/index.html",
+   "s": "Wallace State Community College is committed to equal employment and educational opportunities. No person is discriminated against on the basis of race, color, "
+  },
+  {
+   "t": "Job Listings - Wallace Community College",
+   "u": "https://catalog.wallace.edu/job-listings",
+   "s": "To remain on active file, students must update their resumes at the beginning of each term. For more information, please visit Career Services by clicking here."
+  },
+  {
+   "t": "Area Job Listings | Wallace Community College",
+   "u": "https://www.wallace.edu/campus-life-resources/career-services/area-job-listings/",
+   "s": "Welcome to the Wallace Community College Job Listings page—a dedicated resource connecting our students and alumni with local employment opportunities. Whether "
+  },
+  {
+   "t": "Human Resources - Wallace Community College",
+   "u": "https://www.wallace.edu/about/human-resources/",
+   "s": "The Human Resources Department will serve as a strategic partner alongside of WCC administration, faculty, and staff in supporting the mission of Wallace Commun"
+  },
+  {
+   "t": "Work With Us - Wallace Medical & Dental",
+   "u": "https://mywallace.org/about-us/work-with-us/",
+   "s": "Work with us! The Wallace staff is our greatest asset in providing compassionate, high-quality health services to overlooked and underserved individuals and fam"
+  },
+  {
+   "t": "Careers - Wallace Design Collective",
+   "u": "https://wallace.design/careers/",
+   "s": "Experienced professionals are valued for more than their resumes - they're respected for the insight, leadership and innovation they bring to every challenge. J"
+  },
+  {
+   "t": "Employment Opportunities | Working at Wallace | Wallace Foundation",
+   "u": "https://wallacefoundation.org/about-wallace/working-wallace",
+   "s": "Our Cultural Values At Wallace, we strive to do excellent work in service to and with others. Together, we aspire to create an engaging and inclusive work envir"
+  },
+  {
+   "t": "Careers - Wallace Pharmaceuticals",
+   "u": "https://wallacepharma.com/careers-page/",
+   "s": "Understanding that employees are valuable assets, Wallace Pharmaceuticals offers a comprehensive employee development programme aimed at enhancing skills, foste"
+  },
+  {
+   "t": "Jobs in Wallace (90 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/jobs-in-wallace-id",
+   "s": "Today's top 90 jobs in Wallace. Leverage your professional network, and get hired. New Wallace jobs added daily."
+  },
+  {
+   "t": "2,000 Jobs, Employment in Wallace, ID September 27, 2026| Indeed",
+   "u": "https://www.indeed.com/l-Wallace,-ID-jobs.html",
+   "s": "2,323 jobs in Wallace, ID. Apply to Barista, Van Driver, Stocker and more. Hiring now on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 300 Wallace Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Wallace-jobs.html",
+   "s": "Browse 337 Wallace jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Work With Us - Wallace Medical & Dental",
+   "u": "https://mywallace.org/about-us/work-with-us/",
+   "s": "Work with us! The Wallace staff is our greatest asset in providing compassionate, high-quality health services to overlooked and underserved individuals and fam"
+  },
+  {
+   "t": "Area Job Listings | Wallace Community College",
+   "u": "https://www.wallace.edu/campus-life-resources/career-services/area-job-listings/",
+   "s": "Welcome to the Wallace Community College Job Listings page—a dedicated resource connecting our students and alumni with local employment opportunities. Whether "
+  },
+  {
+   "t": "Employment Opportunities | Working at Wallace | Wallace Foundation",
+   "u": "https://wallacefoundation.org/about-wallace/working-wallace",
+   "s": "At Wallace, we strive to do excellent work in service to and with others. Together, we aspire to create an engaging and inclusive work environment based on mutu"
+  },
+  {
+   "t": "Employment - Wallace State",
+   "u": "https://www.wallacestate.edu/employment/index.html",
+   "s": "Wallace State Community College does not discriminate in employment on the basis of race, sex, national origin, or handicap unrelated to job performance, or any"
+  },
+  {
+   "t": "Employment | Wallace School District",
+   "u": "https://www.wsd393.org/page/employment/",
+   "s": "EMPLOYMENT OPPORTUNITIES Application for Certified Teachers Certified employees hold a certificate or licensure for job qualification. Certified Job Openings Cl"
+  },
+  {
+   "t": "Area Job Listings | Wallace Community College",
+   "u": "https://www.wallace.edu/campus-life-resources/career-services/area-job-listings/",
+   "s": "Welcome to the Wallace Community College Job Listings page—a dedicated resource connecting our students and alumni with local employment opportunities. Whether "
+  },
+  {
+   "t": "Job Listings - Wallace Community College",
+   "u": "https://catalog.wallace.edu/job-listings",
+   "s": "To remain on active file, students must update their resumes at the beginning of each term. For more information, please visit Career Services by clicking here."
+  },
+  {
+   "t": "Employment - Wallace State",
+   "u": "https://www.wallacestate.edu/employment/index.html",
+   "s": "Employment Disclaimer Applications will be accepted only for current employment opportunities at Wallace State Community College. Application packets are accept"
+  },
+  {
+   "t": "Human Resources - Wallace Community College",
+   "u": "https://www.wallace.edu/about/human-resources/",
+   "s": "The Human Resources Department will serve as a strategic partner alongside of WCC administration, faculty, and staff in supporting the mission of Wallace Commun"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.wallace.edu/campus-life-resources/career-services/area-job-listings/",
+  "platform": "workday",
+  "title": "Area Job Listings | Wallace Community College"
+ },
+ "verdict": "marker_surface"
 }

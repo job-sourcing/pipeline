@@ -2,10 +2,157 @@
  "brand": "China Tobacco",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:15:25.645Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:46:59.957Z",
+ "candidates": [
+  {
+   "url": "https://careers.bat.com/en/location/china-jobs/27325/1814991/2",
+   "title": "Search China Jobs at British American Tobacco",
+   "status": 200,
+   "bytes": 122929,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Search China Jobs at British American Tobacco Discover Opportunities Search Search Jobs Job title, category, or keyword City, region, or country Search Search",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.bat.com/en",
+   "title": "Working at BAT | Jobs and Careers at BAT",
+   "status": 200,
+   "bytes": 72794,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Join BAT and help build A Better Tomorrow. Explore global career opportunities and help build a smokeless world.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://ctbat.com.cn/en/careers/careers.php",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "We strive to build a highly motivated team to drive our business forward. We do this by converging exceptional talents from diverse backgrounds together with ou",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Us - CTIHK",
+   "u": "https://www.ctihk.com.hk/en/join.html",
+   "s": "China Tobacco International (HK) Company Limited ('CTIHK') was incorporated in Hong Kong in February 2004 and listed on the Hong Kong Stock Exchange in June 201"
+  },
+  {
+   "t": "Working at BAT | Jobs and Careers at BAT - British American Tobacco",
+   "u": "https://careers.bat.com/en",
+   "s": "Join BAT and help build A Better Tomorrow. Explore global career opportunities and help build a smokeless world."
+  },
+  {
+   "t": "CTBAT - Careers Overview",
+   "u": "https://ctbat.com.cn/en/careers/careers.php",
+   "s": "We strive to build a highly motivated team to drive our business forward. We do this by converging exceptional talents from diverse backgrounds together with ou"
+  },
+  {
+   "t": "加入我们 - 中烟香港",
+   "u": "https://www.ctihk.com.hk/join.html",
+   "s": "中烟国际（香港）有限公司（简称\"中烟香港\"，股份代号：6055.HK）于2004年2月在香港注册成立，2019年6月在香港联交所上市，现为中国烟草体系内唯一的烟草业务上市公司，并成为恒生综合指数、恒生消费品制造及服务业指数、MSCI沪港深可投资市场等指数的成分股。"
+  },
+  {
+   "t": "CTBAT - Our Talent",
+   "u": "https://www.ctbati.com/en/aboutus/our-talent.php",
+   "s": "The unique partnership of China Tobacco and British American Tobacco opens the path for creativity and inspiration as well as learning from and leveraging the s"
+  },
+  {
+   "t": "BAT Early Careers",
+   "u": "https://careers.bat.com/en/early-careers",
+   "s": "Kickstart your career with BAT's graduate programs and internships, designed to develop future leaders."
+  },
+  {
+   "t": "Ctbat - 职业概览",
+   "u": "https://www.ctbati.com/sc/careers/careers.php",
+   "s": "中烟英美烟草国际有限公司 香港鲗鱼涌英皇道979号 太古坊濠丰大厦29层"
+  },
+  {
+   "t": "China Tobacco Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/china-tobacco-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 China Tobacco job found in Hong Kong. View all our China Tobacco vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "China Tobacco Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/china-tobacco-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 China Tobacco job found in Hong Kong. View all our China Tobacco vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Working at BAT | Jobs and Careers at BAT - British American Tobacco",
+   "u": "https://careers.bat.com/en",
+   "s": "Join BAT and help build A Better Tomorrow. Explore global career opportunities and help build a smokeless world."
+  },
+  {
+   "t": "Search China Jobs at British American Tobacco",
+   "u": "https://careers.bat.com/en/location/china-jobs/27325/1814991/2",
+   "s": "Search China Jobs at British American Tobacco Discover Opportunities Search Search Jobs Job title, category, or keyword City, region, or country Search Search"
+  },
+  {
+   "t": "China Tobacco International Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/china-tobacco-international-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 China Tobacco International job found in Hong Kong. View all our China Tobacco International vacancies now with new jobs ad"
+  },
+  {
+   "t": "Join Us - CTIHK",
+   "u": "https://www.ctihk.com.hk/en/join.html",
+   "s": "China Tobacco International (HK) Company Limited ('CTIHK') was incorporated in Hong Kong in February 2004 and listed on the Hong Kong Stock Exchange in June 201"
+  },
+  {
+   "t": "CTBAT - Careers Overview",
+   "u": "https://ctbat.com.cn/en/careers/careers.php",
+   "s": "CTBAT International,tobacco,British American Tobacco,Chinese National Tobacco Corporation"
+  },
+  {
+   "t": "加入我们 - 中烟香港",
+   "u": "https://www.ctihk.com.hk/join.html",
+   "s": "中烟国际（香港）有限公司（简称\"中烟香港\"，股份代号：6055.HK）于2004年2月在香港注册成立，2019年6月在香港联交所上市，现为中国烟草体系内唯一的烟草业务上市公司，并成为恒生综合指数、恒生消费品制造及服务业指数、MSCI沪港深可投资市场等指数的成分股。"
+  },
+  {
+   "t": "China National Tobacco Corporation - LinkedIn",
+   "u": "https://www.linkedin.com/company/china-national-tobacco-corporation",
+   "s": "China National Tobacco Corporation | 767 followers on LinkedIn. 中国烟草行业实行统一领导、垂直管理、专卖专营的管理体制。国家烟草专卖局、中国烟草总公司对 ..."
+  },
+  {
+   "t": "2 China Tobacco International Group Limited jobs in Hong Kong",
+   "u": "https://hk.jobsdb.com/china-tobacco-international-group-limited-jobs",
+   "s": "Find your ideal job on Jobsdb with 2 China Tobacco International Group Limited jobs (5 at China Tobacco International Group Limited) listed in Hong Kong. View a"
+  },
+  {
+   "t": "China Tobacco Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/china-tobacco-jobs",
+   "s": "Find your ideal job at Jobsdb with 1 China Tobacco job found in Hong Kong. View all our China Tobacco vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Join Us - CTIHK",
+   "u": "https://www.ctihk.com.hk/en/join.html",
+   "s": "China Tobacco International (HK) Company Limited ('CTIHK') was incorporated in Hong Kong in February 2004 and listed on the Hong Kong Stock Exchange in June 201"
+  },
+  {
+   "t": "加入我们 - 中烟香港",
+   "u": "https://www.ctihk.com.hk/join.html",
+   "s": "中烟国际（香港）有限公司（简称\"中烟香港\"，股份代号：6055.HK）于2004年2月在香港注册成立，2019年6月在香港联交所上市，现为中国烟草体系内唯一的烟草业务上市公司，并成为恒生综合指数、恒生消费品制造及服务业指数、MSCI沪港深可投资市场等指数的成分股。"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.bat.com/en/location/china-jobs/27325/1814991/2",
+  "platform": "successfactors",
+  "title": "Search China Jobs at British American Tobacco"
+ },
+ "verdict": "marker_surface"
 }

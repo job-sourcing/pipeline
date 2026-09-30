@@ -2,10 +2,148 @@
  "brand": "Overseas Chinese Town Enterprises",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:48:40.524Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:04:55.171Z",
+ "candidates": [
+  {
+   "url": "https://grokipedia.com/page/Overseas_Chinese_Town_Enterprises",
+   "title": "Overseas Chinese Town Enterprises — Grokipedia",
+   "status": 200,
+   "bytes": 340734,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Overseas Chinese Town Enterprises Co., Ltd., commonly known as the OCT Group, is a major Chinese state-owned enterprise headquartered in Shenzhen, Guangdong Pro",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.echinacities.com/",
+   "title": "China Jobs – Job Opportunities for Expats in China|招聘外国人|外籍招聘网|外国人才网|招聘外教|外国人招聘|外籍人才网 - eChinacities.com",
+   "status": 200,
+   "bytes": 995479,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "eChinacities Jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL, E",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.echinacities.com/jobs/search",
+   "title": "China Jobs – Job Opportunities for Expats in China",
+   "status": 200,
+   "bytes": 704651,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "eChinacities Jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL, E",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "HiredChina",
+   "u": "https://www.hiredchina.com/en",
+   "s": "Over 50,000 corporate clients served, with a talent pool of 600,000 international professionals spanning 123 countries worldwide, backed by extensive experience"
+  },
+  {
+   "t": "Overseas Chinese Town Enterprises - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Overseas_Chinese_Town_Enterprises",
+   "s": "Overseas Chinese Town Enterprises is the parent company of publicly traded companies Overseas Chinese Town Limited (SZSE: 000069), Overseas Chinese Town (Asia) "
+  },
+  {
+   "t": "Shenzhen Overseas Chinese Town Co., Ltd - LinkedIn",
+   "u": "https://www.linkedin.com/company/shenzhen-overseas-chinese-town-co-ltd",
+   "s": "Shenzhen Overseas Chinese Town Co., Ltd | 290 followers on LinkedIn. Shenzhen Overseas Chinese Town is a environmental services company based out of SHENZHEN, G"
+  },
+  {
+   "t": "4,000+ Andrew Liu Overseas Chinese Town Enterprises ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/andrew-liu-overseas-chinese-town-enterprises-investigation-regulator-2026-after-2026-09-20-jobs",
+   "s": "Today's top 4,000+ Andrew Liu Overseas Chinese Town Enterprises Investigation Regulator 2026 After 2026 09 20 jobs in United States. Leverage your professional "
+  },
+  {
+   "t": "China Jobs - Job Opportunities for Expats in China - eChinaJOBs",
+   "u": "https://jobs.echinacities.com/",
+   "s": "eChinacities Jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL, E"
+  },
+  {
+   "t": "Overseas Chinese Town Enterprises — Grokipedia",
+   "u": "https://grokipedia.com/page/Overseas_Chinese_Town_Enterprises",
+   "s": "Overseas Chinese Town Enterprises Co., Ltd., commonly known as the OCT Group, is a major Chinese state-owned enterprise headquartered in Shenzhen, Guangdong Pro"
+  },
+  {
+   "t": "华侨城集团欢迎您",
+   "u": "https://www.chinaoct.com/",
+   "s": "华侨城集团是国务院国资委直接管理的大型中央企业，控股华侨城A、康佳集团、华侨城亚洲、云南旅游、天视文化等多家上市公司，是国家首批文化产业示范基地、全国文化企业30强，资产规模已突破3000亿元。连续6年雄踞全球主题公园集团四强，持续领跑亚洲。华侨城培育了旅游及相关文化产业 ..."
+  },
+  {
+   "t": "Urgent! Overseas jobs in China - September 2026 (with Salaries ... - Jooble",
+   "u": "https://jooble.org/jobs-overseas/China",
+   "s": "Active 569 vacancies • Overseas jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Overseas jobs in China a"
+  },
+  {
+   "t": "China Jobs - Job Opportunities for Expats in China",
+   "u": "https://jobs.echinacities.com/jobs/search",
+   "s": "eChinacities Jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL, E"
+  },
+  {
+   "t": "Jobs and Recruitment on chinajobsdaily.com, the #1 job site for ...",
+   "u": "https://chinajobsdaily.com/",
+   "s": "China's #1 job and career site for foreigners, with jobs from top employers all over China added daily!"
+  },
+  {
+   "t": "China Jobs - Job Opportunities for Expats in China - eChinaJOBs",
+   "u": "https://jobs.echinacities.com/",
+   "s": "eChinacities Jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL, E"
+  },
+  {
+   "t": "Now Hiring: 26,000 Chinese Overseas Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Chinese-Overseas-jobs.html",
+   "s": "Browse 26,242 Chinese Overseas jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 300 Overseas Chinese Jobs | Indeed",
+   "u": "https://www.indeed.com/q-overseas-chinese-jobs.html",
+   "s": "Browse 368 Overseas Chinese jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "The Leading Job Site for Foreigners in China - eChinacities.com",
+   "u": "https://www.echinacities.com/jobs",
+   "s": "eChinacities Jobs provides expats who want to working in China with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL"
+  },
+  {
+   "t": "Overseas Chinese Town Enterprises - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Overseas_Chinese_Town_Enterprises",
+   "s": "Overseas Chinese Town Enterprises Co. is a Chinese state-owned enterprise, supervised by the State-owned Assets Supervision and Administration Commission of the"
+  },
+  {
+   "t": "China Foreigner Jobs - Jobs in China",
+   "u": "https://www.isacjobs.com/",
+   "s": "Latest jobs in China for foreigners in 2026. Find the newest professional and teaching in China jobs tailored for international talents."
+  },
+  {
+   "t": "China Jobs - Job Opportunities for Expats in China",
+   "u": "https://jobs.echinacities.com/jobs/search",
+   "s": "eChinacities Jobs provides expats who want to work in China with updated employment opportunities. Full time and part-time jobs include teaching abroad, TEFL, E"
+  },
+  {
+   "t": "Now Hiring: 26,000 Chinese Overseas Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Chinese-Overseas-jobs.html",
+   "s": "Browse 26,242 Chinese Overseas jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 300 Overseas Chinese Jobs | Indeed",
+   "u": "https://www.indeed.com/q-overseas-chinese-jobs.html",
+   "s": "Browse 368 Overseas Chinese jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Urgent! Overseas jobs in China - September 2026 (with Salaries ... - Jooble",
+   "u": "https://jooble.org/jobs-overseas/China",
+   "s": "Active 569 vacancies • Overseas jobs in China • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Overseas jobs in China a"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

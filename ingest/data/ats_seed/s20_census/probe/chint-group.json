@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers | Join a Global Leader in Smart Energy"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "Authentic CHINT Group (Zhejiang, electrical equipment) global career board; JS job list via filter shows US=0 results, only 1 open posting (Production Manager West Asia & Africa, Hong Kong) - hongkong_only",
+  "ts": "2026-09-30T10:32Z",
+  "by": "S22-ADJ-5R2"
+ }
 }

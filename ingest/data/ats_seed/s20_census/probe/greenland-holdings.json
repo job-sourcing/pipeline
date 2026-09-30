@@ -150,5 +150,17 @@
   "platform": "custom",
   "title": "Careers | Greenland"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Greenland USA (US subsidiary of Shanghai Greenland Holding Group) greenlandusa.com/careers lists 8 open roles: Los Angeles x4 (Escrow Closing Supervisor/Manager, HR Generalist, Marketing Director, Sr. Construction Accountant) + New York x4 (Accounting Manager, Construction Mgmt Coordinator, Interior Design Manager, Recruiter); HQ 777 S. Figueroa St, LA.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://greenlandusa.com/careers",
+  "us_rows": 8,
+  "sample": "Marketing Director — Los Angeles, CA"
+ }
 }

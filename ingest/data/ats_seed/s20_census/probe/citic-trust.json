@@ -2,10 +2,148 @@
  "brand": "CITIC Trust",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:29:59.399Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:03:06.579Z",
+ "candidates": [
+  {
+   "url": "https://job.citic.com/recruit",
+   "title": "中信集团人才招聘系统",
+   "status": 200,
+   "bytes": 22482,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "中信集团人才招聘系统，提供丰富的人力资源服务与招聘信息，助力求职者找到理想工作机会。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.efinancialcareers.hk/jobs/at-china-citic-bank-international-limited",
+   "title": "",
+   "status": 200,
+   "bytes": 17849,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Click here to view 27 China CITIC Bank International Limited jobs at China CITIC Bank International Limited, brought to you by eFinancialCareers.",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://careers.citics.com/",
+   "title": "中信证券招聘",
+   "status": 200,
+   "bytes": 1001,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CITIC Securities consistently upholds the core corporate values of \"integrity, innovation, excellence, and sharing,\" adhering to the principles of open, fair, a",
+   "backend": "supabase"
+  }
+ ],
+ "results": [
+  {
+   "t": "Job Search | Citi Careers",
+   "u": "https://jobs.citi.com/search-jobs?acm=ALL&alrpm=ALL&ascf=[%7b",
+   "s": "Search for jobs at Citi. Filter by location, function and keyword to help find a role that may be ideal for you. Apply online today."
+  },
+  {
+   "t": "Citi Careers | Find Your Next Opportunity",
+   "u": "https://jobs.citi.com/",
+   "s": "Explore global career opportunities at Citi. Discover our workplace culture, values and open positions across various business areas."
+  },
+  {
+   "t": "Citi Corporate Trust Jobs in United States (7,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/citi-corporate-trust-jobs",
+   "s": "Today's top 7,000+ Citi Corporate Trust jobs in United States. Leverage your professional network, and get hired. New Citi Corporate Trust jobs added daily."
+  },
+  {
+   "t": "Internships | Citi Careers",
+   "u": "https://jobs.citi.com/early-career-programs-internships",
+   "s": "Learn about Citi internship programs designed to provide students with opportunities to gain practical experience and launch a career at a global bank."
+  },
+  {
+   "t": "1,000+ Citi Trust jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/citi-trust-jobs",
+   "s": "Today's top 1,000+ Citi Trust jobs in United States. Leverage your professional network, and get hired. New Citi Trust jobs added daily."
+  },
+  {
+   "t": "Careers — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/en/index.jsp",
+   "s": "Search and apply for jobs Our current vacancies in and beyond Hong Kong from trainee to management level."
+  },
+  {
+   "t": "中信集团人才招聘系统 - CITIC Limited",
+   "u": "https://job.citic.com/recruit",
+   "s": "中信集团人才招聘系统，提供丰富的人力资源服务与招聘信息，助力求职者找到理想工作机会。"
+  },
+  {
+   "t": "Citi: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/citi/jobs/",
+   "s": "Citi | 5,536,960 followers on LinkedIn. Citi's mission is to serve as a trusted partner to our clients by responsibly providing financial services that enable g"
+  },
+  {
+   "t": "Job Search | Citi Careers",
+   "u": "https://jobs.citi.com/search-jobs?acm=ALL&alrpm=ALL&ascf=[%7b",
+   "s": "Search for jobs at Citi. Filter by location, function and keyword to help find a role that may be ideal for you. Apply online today."
+  },
+  {
+   "t": "Citi Careers | Find Your Next Opportunity",
+   "u": "https://jobs.citi.com/",
+   "s": "Explore global career opportunities at Citi. Discover our workplace culture, values and open positions across various business areas."
+  },
+  {
+   "t": "Citi Corporate Trust Jobs in United States (7,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/citi-corporate-trust-jobs",
+   "s": "Today's top 7,000+ Citi Corporate Trust jobs in United States. Leverage your professional network, and get hired. New Citi Corporate Trust jobs added daily."
+  },
+  {
+   "t": "中信集团人才招聘系统 - CITIC Limited",
+   "u": "https://job.citic.com/recruit",
+   "s": "中信集团人才招聘系统，提供丰富的人力资源服务与招聘信息，助力求职者找到理想工作机会。"
+  },
+  {
+   "t": "CITIC Trust Co., Ltd - LinkedIn",
+   "u": "https://www.linkedin.com/company/citic-trust-co-ltd",
+   "s": "CITIC Trust Co., Ltd (hereinafter referred to as the \"Corporation\" is a national non-banking financial institution under direct supervision of China Banking Reg"
+  },
+  {
+   "t": "Jobs at China CITIC Bank International Limited - eFinancialCareers",
+   "u": "https://www.efinancialcareers.hk/jobs/at-china-citic-bank-international-limited",
+   "s": "Click here to view 27 China CITIC Bank International Limited jobs at China CITIC Bank International Limited, brought to you by eFinancialCareers."
+  },
+  {
+   "t": "中信信托2027校园招聘",
+   "u": "https://citictrust.zhaopin.com/",
+   "s": "一、公司简介 中信信托有限责任公司是以信托业务为主业的全国性非银行金融机构、中信集团系统重要性成员企业、中国综合实力领先的信托公司。公司围绕\"打造具有信托特色的私募资产管理机构\"的战略定位，坚持\"创新、协调、绿色、开放、共享\"的新发展理念，秉承\"无边界服务、无障碍 ..."
+  },
+  {
+   "t": "中信信托 - citictrust.com.cn",
+   "u": "https://www.citictrust.com.cn/content/xyzp-zpdt/2024/09-02/212353.html",
+   "s": "一、公司简介 中信信托有限责任公司是以信托业务为主业的全国性非银行金融机构、中信集团系统重要性成员企业、中国综合实力领先的信托公司。面对新的市场环境，公司立足于\"大型金融机构综合服务商、实体企业综合金融方案解决者、地方政府综合信托合作者、信托特色财富管理受托人\"的 ..."
+  },
+  {
+   "t": "Job Search | Citi Careers",
+   "u": "https://jobs.citi.com/search-jobs?acm=ALL&alrpm=ALL&ascf=[%7b",
+   "s": "Search for jobs at Citi. Filter by location, function and keyword to help find a role that may be ideal for you. Apply online today."
+  },
+  {
+   "t": "Citi Careers | Find Your Next Opportunity",
+   "u": "https://jobs.citi.com/",
+   "s": "Explore global career opportunities at Citi. Discover our workplace culture, values and open positions across various business areas."
+  },
+  {
+   "t": "Careers — China CITIC Bank International",
+   "u": "https://www.cncbinternational.com/careers/en/index.jsp",
+   "s": "How To Join Us To move your career forward, browse our job openings now."
+  },
+  {
+   "t": "Citi: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/citi/jobs/",
+   "s": "Citi | 5,536,960 followers on LinkedIn. Citi's mission is to serve as a trusted partner to our clients by responsibly providing financial services that enable g"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

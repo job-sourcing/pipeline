@@ -2,10 +2,155 @@
  "brand": "Well Link Financial Group",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:26:06.751Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T03:32:47.382Z",
+ "candidates": [
+  {
+   "url": "https://www.well.co/careers",
+   "title": "",
+   "status": 200,
+   "bytes": 14465,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We recognize the health inequities in our country, and we strive for a reality where everyone has a fair and just opportunity to attain their optimal health*. W",
+   "backend": "supabase"
+  },
+  {
+   "url": "https://welllinkgpo.com/home/about/careers",
+   "title": "Careers &raquo; WellLink Group Purchasing",
+   "status": 200,
+   "bytes": 47054,
+   "markers": [
+    "paylocity"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "From comprehensive health coverage to mental wellness resources and financial support, we invest in your total well-being — because when you thrive, our communi",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.ctgoodjobs.hk/jobs/well-link-financial-group-jobs",
+   "title": "Well Link Financial Group Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 779852,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 44 Well Link Financial Group jobs in Hong Kong. Browse through all our new daily-updated Well Link Financial Group job listing now!",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Well Link Insurance",
+   "u": "https://www.welllinkgroup.com/en/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%9C%83",
+   "s": "Join Well Link Bank We will carry on the spiritual idea of Well Link, cultivate employees by the professional team, build a training system with the characteris"
+  },
+  {
+   "t": "10,000+ Well Link Financial Group jobs in United States",
+   "u": "https://www.linkedin.com/jobs/well-link-financial-group-jobs",
+   "s": "Today's top 10,000+ Well Link Financial Group jobs in United States. Leverage your professional network, and get hired. New Well Link Financial Group jobs added"
+  },
+  {
+   "t": "Well Link | 立橋金融集團",
+   "u": "https://www.welllinkgroup.com/en",
+   "s": "Well Link Financial Group is committed to innovation, delivering more efficient and personalized wealth management. As an integrated platform of banking, insura"
+  },
+  {
+   "t": "Well - Careers",
+   "u": "https://www.well.co/careers",
+   "s": "We recognize the health inequities in our country, and we strive for a reality where everyone has a fair and just opportunity to attain their optimal health*. W"
+  },
+  {
+   "t": "Well Link Financial Group Jobs in Worldwide (27,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/well-link-financial-group-jobs-worldwide",
+   "s": "Today's top 27,000+ Well Link Financial Group jobs in Worldwide. Leverage your professional network, and get hired. New Well Link Financial Group jobs added dai"
+  },
+  {
+   "t": "Careers » WellLink Group Purchasing - CHAMPS GPO",
+   "u": "https://welllinkgpo.com/home/about/careers",
+   "s": "From comprehensive health coverage to mental wellness resources and financial support, we invest in your total well-being — because when you thrive, our communi"
+  },
+  {
+   "t": "Jobs - fin.link",
+   "u": "https://fin.link/jobs",
+   "s": "Browse and apply for jobs on Finlink."
+  },
+  {
+   "t": "Join Us - wli.com.hk",
+   "u": "https://www.wli.com.hk/en/career.jhtml",
+   "s": "Join Us Talent-oriented staffing and pursuit of excellence are pillars of Well Link Insurance. We always welcome like-minded professionals to join our winning t"
+  },
+  {
+   "t": "10,000+ Well Link Financial Group jobs in United States",
+   "u": "https://www.linkedin.com/jobs/well-link-financial-group-jobs",
+   "s": "Today's top 10,000+ Well Link Financial Group jobs in United States. Leverage your professional network, and get hired. New Well Link Financial Group jobs added"
+  },
+  {
+   "t": "Join Well Link Insurance",
+   "u": "https://www.welllinkgroup.com/en/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%9C%83",
+   "s": "Join Well Link Bank We will carry on the spiritual idea of Well Link, cultivate employees by the professional team, build a training system with the characteris"
+  },
+  {
+   "t": "Well Link Financial Group Jobs in Worldwide (27,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/well-link-financial-group-jobs-worldwide",
+   "s": "Today's top 27,000+ Well Link Financial Group jobs in Worldwide. Leverage your professional network, and get hired. New Well Link Financial Group jobs added dai"
+  },
+  {
+   "t": "Well Link | 立橋金融集團",
+   "u": "https://www.welllinkgroup.com/en",
+   "s": "Well Link Financial Group is committed to innovation, delivering more efficient and personalized wealth management. As an integrated platform of banking, insura"
+  },
+  {
+   "t": "Well Link Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/well-link-jobs",
+   "s": "Find your ideal job at Jobsdb with 14 Well Link jobs found in Hong Kong. View all our Well Link vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Jobs - fin.link",
+   "u": "https://fin.link/jobs",
+   "s": "Browse and apply for jobs on Finlink."
+  },
+  {
+   "t": "Well Link Financial Group Jobs in Hong Kong - Mar 2026 | CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/well-link-financial-group-jobs",
+   "s": "Explore 44 Well Link Financial Group jobs in Hong Kong. Browse through all our new daily-updated Well Link Financial Group job listing now!"
+  },
+  {
+   "t": "Well Link Insurance Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/well-link-insurance-jobs",
+   "s": "Find your ideal job at Jobsdb with 10 Well Link Insurance jobs found in Hong Kong. View all our Well Link Insurance vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Join Well Link Insurance",
+   "u": "https://www.welllinkgroup.com/en/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%9C%83",
+   "s": "1.Company / Organization-Well Link Life Insurance Company Limited Position：Insurance Specialist in Wealth Management Location：Hong Kong Employment Type：Full-tim"
+  },
+  {
+   "t": "10,000+ Well Link Financial Group jobs in United States",
+   "u": "https://www.linkedin.com/jobs/well-link-financial-group-jobs",
+   "s": "Today's top 10,000+ Well Link Financial Group jobs in United States. Leverage your professional network, and get hired. New Well Link Financial Group jobs added"
+  },
+  {
+   "t": "Join Us - wli.com.hk",
+   "u": "https://www.wli.com.hk/en/career.jhtml",
+   "s": "Join Us Talent-oriented staffing and pursuit of excellence are pillars of Well Link Insurance. We always welcome like-minded professionals to join our winning t"
+  },
+  {
+   "t": "Well Link Financial Group Jobs in Worldwide (27,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/well-link-financial-group-jobs-worldwide",
+   "s": "Today's top 27,000+ Well Link Financial Group jobs in Worldwide. Leverage your professional network, and get hired. New Well Link Financial Group jobs added dai"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "best": {
+  "url": "https://welllinkgpo.com/home/about/careers",
+  "platform": "paylocity",
+  "title": "Careers &raquo; WellLink Group Purchasing"
+ },
+ "verdict": "marker_surface"
 }

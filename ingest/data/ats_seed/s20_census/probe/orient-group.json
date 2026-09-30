@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Your careers | Orient Express"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "all 3 surfaces = other companies: orient.global = Pakistani Orient Group (Orient Ceramica/Apparel, Faisalabad/Lahore jobs), orient-express.com = Accor luxury brand, orientgroup.com = Ningbo 'Orient Group Inc.' (SH 603606 cable group, 'Orient Cable NBO'); census brand = Harbin Orient Group Inc. (SH 600811 finance/trading conglomerate).",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

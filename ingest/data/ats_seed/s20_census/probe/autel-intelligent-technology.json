@@ -150,5 +150,17 @@
   "platform": "custom",
   "title": "Autel Energy Careers"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "AUTHENTIC: Autel Energy (autelenergy.us) is Autel Intelligent Technology's (Shenzhen) US EV-charger arm — page self-describes 'Established in 2004, Autel... leading providers of intelligent automotive products'; 3 US job rows, all North Carolina–United States.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://autelenergy.us/pages/careers",
+  "us_rows": 3,
+  "sample": "IT Manager — North Carolina, United States; Production Supervisor — North Carolina, United States; Quality Technician — North Carolina, United States"
+ }
 }

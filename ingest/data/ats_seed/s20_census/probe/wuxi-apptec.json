@@ -163,5 +163,17 @@
   "snippet": "ABOUT US CAREERS Our People Opportunities SERVICES & SOLUTIONS Discovery Development Chemistry Biologics Medical Devices",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic WuXi AppTec (LCA WUXI APPTEC SALES, LLC); icims portal careers-wuxiapptec.icims.com + custom mirror wuxiappteccareers.com/jobs lists 20 jobs, 18 US-located",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ },
+ "wire": {
+  "platform": "icims",
+  "board": "https://careers-wuxiapptec.icims.com/jobs/search",
+  "us_rows": 18,
+  "sample": "Chemical and Industrial Hygiene Manager — Cranbury, NJ; Facilities Technician II — San Diego, CA; Automation Lead Engineering — Middletown, DE"
+ }
 }

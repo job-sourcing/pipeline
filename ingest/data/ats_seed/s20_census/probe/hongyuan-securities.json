@@ -2,10 +2,148 @@
  "brand": "Hongyuan Securities",
  "tier": "ats",
  "lca": null,
- "ts": "2026-09-27T03:37:47.865Z",
- "candidates": [],
- "results": [],
+ "ts": "2026-09-30T06:03:09.711Z",
+ "candidates": [
+  {
+   "url": "https://hongkong.recruit.net/company-shenwan-hongyuan-securities-h-k-jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 1066,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Shenwan Hongyuan Securities (H. K.) Limited is seeking a strategic planning professional to lead medium- and long-term planning, risk management, and cross-depa",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.jobscina.com/company-Shenwan-Hongyuan-Securities-H-K-Ltd-jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 24150,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Jobs at Shenwan Hongyuan Securities (H.K.) Ltd.. List maintained by JobsCina.com, the employment search engine.",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.swhyhk.com/en/career-opportunities",
+   "title": "申萬宏源（香港）有限公司 - Career Opportunities",
+   "status": 200,
+   "bytes": 51703,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Being a fast-growing PRC financial service group based in Hong Kong, we are constantly looking for talented individuals to join us. You are encouraged to explor",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "申萬宏源（香港）有限公司 - Career Opportunities",
+   "u": "https://www.swhyhk.com/en/career-opportunities",
+   "s": "Being a fast-growing PRC financial service group based in Hong Kong, we are constantly looking for talented individuals to join us. You are encouraged to explor"
+  },
+  {
+   "t": "Shenwan Hongyuan Securities Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/shenwan-hongyuan-securities-jobs",
+   "s": "Find your ideal job at Jobsdb with 18 Shenwan Hongyuan Securities jobs found in Hong Kong. View all our Shenwan Hongyuan Securities vacancies now with new jobs "
+  },
+  {
+   "t": "Shenwan Hongyuan Jobs in Hong Kong SAR - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Shenwan-Hongyuan-jobs/in-Hong-Kong-SAR",
+   "s": "Find your ideal job on Jobsdb with 20 Shenwan Hongyuan jobs (18 at Shenwan Hongyuan) listed in Hong Kong SAR. View all the Shenwan Hongyuan vacancies now with n"
+  },
+  {
+   "t": "Shenwan Hongyuan Securities Co. Ltd. Jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/shenwan-hongyuan-securities-co.-ltd.-jobs-worldwide?f_EA=true",
+   "s": "Today's top Shenwan Hongyuan Securities Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Shenwan Hongyuan Securities Co. Ltd. "
+  },
+  {
+   "t": "Shenwan Hongyuan Securities (h.k.) Ltd Jobs at Shenwan ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/shenwan-hongyuan-securities-%28h.k.%29-ltd-jobs-worldwide?f_C=684931",
+   "s": "Today's top 2 Shenwan Hongyuan Securities (h.k.) Ltd jobs at Shenwan Hongyuan (H.K.) Limited in Worldwide. Leverage your professional network, and get hired. Ne"
+  },
+  {
+   "t": "Shenwan Hongyuan",
+   "u": "https://www.swhysc.com/securityweb-eng/",
+   "s": "Shenwan Hongyuan Securities Co., Ltd. was incorporated after the merger of Shenyin & Wanguo Securities Co., Ltd, the first joint-stock securities company in Chi"
+  },
+  {
+   "t": "申萬宏源（香港）有限公司 - 就業機會",
+   "u": "https://www.swhyhk.com/tc/career-opportunities",
+   "s": "我們深信重視人才乃企業成功之道，因此我們視員工為我們的重要資產。作為一快速發展的在港中資金融服務機構，我們正致力招聘人才，請瀏覽下列各欄發掘閣下在申萬宏源香港的就業前景。"
+  },
+  {
+   "t": "Shenwan Hongyuan Securities H K Jobs In Hong Kong | Recruit.net",
+   "u": "https://hongkong.recruit.net/company-shenwan-hongyuan-securities-h-k-jobs",
+   "s": "Shenwan Hongyuan Securities (H. K.) Limited is seeking a strategic planning professional to lead medium- and long-term planning, risk management, and cross-depa"
+  },
+  {
+   "t": "Shenwan Hongyuan Securities Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/shenwan-hongyuan-securities-jobs",
+   "s": "Find your ideal job at Jobsdb with 18 Shenwan Hongyuan Securities jobs found in Hong Kong. View all our Shenwan Hongyuan Securities vacancies now with new jobs "
+  },
+  {
+   "t": "Shenwan Hongyuan Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/shenwan-hongyuan-jobs",
+   "s": "Find your ideal job on Jobsdb with 19 Shenwan Hongyuan jobs (18 at Shenwan Hongyuan) listed in Hong Kong. View all the Shenwan Hongyuan vacancies now with new j"
+  },
+  {
+   "t": "申萬宏源（香港）有限公司 - Career Opportunities",
+   "u": "https://www.swhyhk.com/en/career-opportunities",
+   "s": "Being a fast-growing PRC financial service group based in Hong Kong, we are constantly looking for talented individuals to join us. You are encouraged to explor"
+  },
+  {
+   "t": "Shenwan Hongyuan Securities (hk) Ltd Jobs in Worldwide ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/shenwan-hongyuan-securities-%28hk%29-ltd-jobs-worldwide",
+   "s": "Today's top 19,000+ Shenwan Hongyuan Securities (hk) Ltd jobs in Worldwide. Leverage your professional network, and get hired. New Shenwan Hongyuan Securities ("
+  },
+  {
+   "t": "Shenwan Hongyuan Securities Co. Ltd. Jobs in Worldwide | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/shenwan-hongyuan-securities-co.-ltd.-jobs-worldwide?f_EA=true",
+   "s": "Today's top Shenwan Hongyuan Securities Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Shenwan Hongyuan Securities Co. Ltd. "
+  },
+  {
+   "t": "申萬宏源（香港）有限公司 - 就業機會",
+   "u": "https://www.swhyhk.com/tc/career-opportunities",
+   "s": "我們深信重視人才乃企業成功之道，因此我們視員工為我們的重要資產。作為一快速發展的在港中資金融服務機構，我們正致力招聘人才，請瀏覽下列各欄發掘閣下在申萬宏源香港的就業前景。"
+  },
+  {
+   "t": "Shenwan Hongyuan Securities (H.K.) Ltd jobs recruitment-2026 Hong Kong ...",
+   "u": "https://www.offertoday.com/en/company/4D6ECSNUDBGIuhflMTt7Cw==",
+   "s": "Offertoday.com provides job seekers with the latest recruitment, as well as s company industry, profile and online recruiters.Shenwan Hongyuan Securities (H.K.)"
+  },
+  {
+   "t": "Shenwan Hongyuan Securities (H.K.) Ltd. Jobs - jobscina.com",
+   "u": "https://www.jobscina.com/company-Shenwan-Hongyuan-Securities-H-K-Ltd-jobs",
+   "s": "Jobs at Shenwan Hongyuan Securities (H.K.) Ltd.. List maintained by JobsCina.com, the employment search engine."
+  },
+  {
+   "t": "Shenwan Hongyuan Securities Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/shenwan-hongyuan-securities-jobs",
+   "s": "Find your ideal job at Jobsdb with 18 Shenwan Hongyuan Securities jobs found in Hong Kong. View all our Shenwan Hongyuan Securities vacancies now with new jobs "
+  },
+  {
+   "t": "申萬宏源（香港）有限公司 - Career Opportunities",
+   "u": "https://www.swhyhk.com/en/career-opportunities",
+   "s": "Being a fast-growing PRC financial service group based in Hong Kong, we are constantly looking for talented individuals to join us. You are encouraged to explor"
+  },
+  {
+   "t": "Shenwan Hongyuan Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/shenwan-hongyuan-jobs",
+   "s": "Find your ideal job on Jobsdb with 19 Shenwan Hongyuan jobs (18 at Shenwan Hongyuan) listed in Hong Kong. View all the Shenwan Hongyuan vacancies now with new j"
+  },
+  {
+   "t": "Shenwan Hongyuan Securities (h.k.) Ltd Jobs at Shenwan ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/shenwan-hongyuan-securities-%28h.k.%29-ltd-jobs-worldwide?f_C=684931",
+   "s": "Today's top 2 Shenwan Hongyuan Securities (h.k.) Ltd jobs at Shenwan Hongyuan (H.K.) Limited in Worldwide. Leverage your professional network, and get hired. Ne"
+  }
+ ],
  "dict_hits": [],
- "verdict": "no_results",
- "search_skipped": true
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
 }

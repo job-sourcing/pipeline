@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Career Home"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "surface = Hong Kong Airlines (modern HK carrier, hongkongairlines.com careers — e.g. 'Supervisor/Assistant Manager, Corporate Safety' Location: Hong Kong SAR), a different company; census brand Hong Kong Airways = defunct 1947-58 British-HK flag carrier (Jardines category).",
+  "ts": "2026-09-30T04:06Z",
+  "by": "S22-ADJ-6"
+ }
 }

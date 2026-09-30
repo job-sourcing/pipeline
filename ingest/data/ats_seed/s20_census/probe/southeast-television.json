@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Careers &#8211; Southeast Health | Dothan, AL"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "Candidates are unrelated US orgs/aggregators: Southeast Health (Dothan AL hospital), Gray Media, Hearst Television, JobsInSports — no 东南卫视 (Southeast TV) career surface exists",
+  "ts": "2026-09-30T04:05Z",
+  "by": "S22-ADJ-2"
+ }
 }

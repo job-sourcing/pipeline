@@ -1,0 +1,55 @@
+{
+ "items": [
+  {
+   "SearchId": 1,
+   "SiteNumber": "CX_1",
+   "Limit": 100,
+   "Offset": 0,
+   "Keyword": null,
+   "Radius": 0,
+   "TotalJobsCount": 3,
+   "Location": null,
+   "WorkplaceType": null,
+   "requisitionList": [
+    {
+     "Id": "3009",
+     "Title": "Field Service Engineer 3",
+     "PostedDate": "2026-09-28",
+     "Language": "US",
+     "PrimaryLocationCountry": "US",
+     "PrimaryLocation": "Hillsboro, OR, United States",
+     "WorkplaceType": "",
+     "secondaryLocations": []
+    },
+    {
+     "Id": "2890",
+     "Title": "Field Service Engineer 2",
+     "PostedDate": "2026-04-23",
+     "Language": "US",
+     "PrimaryLocationCountry": "TW",
+     "PrimaryLocation": "Tainan, Taiwan",
+     "WorkplaceType": "",
+     "secondaryLocations": []
+    },
+    {
+     "Id": "2891",
+     "Title": "Field Service Engineer 2 (US)",
+     "PostedDate": "2026-04-23",
+     "Language": "US",
+     "PrimaryLocationCountry": "TW",
+     "PrimaryLocation": "Tainan, Taiwan",
+     "WorkplaceType": "",
+     "secondaryLocations": [
+      {
+       "Id": "2891001",
+       "Name": "Hillsboro, OR, United States",
+       "CountryCode": "US",
+       "Latitude": 45.53,
+       "Longitude": -122.98
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

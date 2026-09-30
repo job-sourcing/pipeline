@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Century Cruises Jobs &#8211; Cruise Job Directory"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "note": "Candidates are a cruise-job directory, LinkedIn/FB posts and Carnival's board; Chinese Yangtze operator (Century Cruises, Chongqing) has no own ATS; US sales site centurycruises.com has no jobs section (About/Contact only)",
+  "ts": "2026-09-30T03:44Z",
+  "by": "S22-ADJ-1"
+ }
 }

@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Yalla Careers -Latest jobs advertised by popular companies, We connect talents"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "empty_board: Yalla Group (NYSE:YALA, Dubai-HQ MENA social, Chinese founders) own careers page yalla.online/Careers states 'We currently have no job openings'; other candidates are homonyms (Yalladuka job aggregator, Yalla Global vacation rentals).",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

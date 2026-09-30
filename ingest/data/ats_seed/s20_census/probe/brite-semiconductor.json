@@ -2,13 +2,13 @@
  "brand": "Brite Semiconductor",
  "tier": "lca",
  "lca": "BRITE SYSTEMS, INC.",
- "ts": "2026-09-29T04:30:17.768Z",
+ "ts": "2026-09-30T06:03:31.732Z",
  "candidates": [
   {
    "url": "https://brite.com/about/careers/",
    "title": "",
    "status": 200,
-   "bytes": 33833,
+   "bytes": 33843,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,

@@ -154,5 +154,11 @@
   "platform": "successfactors",
   "title": ""
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "note": "All candidates are unrelated companies (Nestlé, Google, LEGO, Legrand, LeCom Utility); no Le.com/LeEco career surface exists — probe 'best' nestle.com/jobs is Swiss Nestlé.",
+  "ts": "2026-09-30T03:37Z",
+  "by": "S22-ADJ-3"
+ }
 }

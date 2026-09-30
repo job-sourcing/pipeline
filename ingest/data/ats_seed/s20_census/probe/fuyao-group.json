@@ -53,5 +53,11 @@
   "score": 10,
   "snippet": "Current Openings (20 of 180) · Cost Accountant - Finance Dept · Production Associate--ALL SHIFTS · Logistics Operator 3rd Shift · Logistics Operator 1st Shift."
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "parent_covered",
+  "note": "Fuyao Group is the parent of roster company Fuyao Glass America; US hiring flows through fuyaousa.com → ADP workforcenow (cid 25319558…, 180 openings e.g. 'Production Associate — ALL SHIFTS', Moraine OH) — already wired via roster.",
+  "ts": "2026-09-30T03:36Z",
+  "by": "S22-ADJ-0"
+ }
 }

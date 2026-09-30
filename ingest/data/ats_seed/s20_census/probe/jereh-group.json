@@ -150,5 +150,17 @@
   "platform": "custom",
   "title": "Careers-Jereh Group"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "note": "Authentic: jereh-nag.com = Jereh Energy Equipment and Technologies Corp (Jereh North American Group, Houston TX), US arm of CN Jereh Group (americanjereh.com footer shows SZ002353). Board lists 6 rows: 4 Houston TX + 1 Remote + 1 Canada; americanjereh.com adds 'Marketing Specialists — Job site: Houston, Texas'.",
+  "ts": "2026-09-30T04:21Z",
+  "by": "S22-ADJ-4R"
+ },
+ "wire": {
+  "platform": "custom",
+  "board": "https://www.jereh-nag.com/careers/careers.jsp",
+  "us_rows": 4,
+  "sample": "Senior HR Recruiter, Oil & Gas/Energy Sector — Houston, TX (+1 Remote row; +1 Marketing Specialists, Houston TX on americanjereh.com)"
+ }
 }

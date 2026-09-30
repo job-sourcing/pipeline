@@ -150,5 +150,11 @@
   "platform": "custom",
   "title": "Tianjin Airlines - PILOT CAREER CENTER"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred",
+  "note": "china_only: own recruit page CN; candidates are pilot-recruit aggregators",
+  "ts": "2026-09-30T05:10:00Z",
+  "by": "S22-ADJ-main"
+ }
 }
