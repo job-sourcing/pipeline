@@ -69,15 +69,67 @@ def discover_workday_site(tenant: str, instance: str) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--spec", required=True,
+    ap.add_argument("--spec", default="",
                     help='board spec: "tenant|instance|site" (site "?" = '
                          "auto-discover), ats:kind:org, or custom:kind")
+    ap.add_argument("--url", default="",
+                    help="S22 raw-URL probe: fetch from GHA egress, "
+                         "report bytes/status/title/platform hints (the "
+                         "CF/geo-walled board triage — careers pages "
+                         "that need a US egress read)")
     ap.add_argument("--country", default="United States")
     ap.add_argument("--time-type", default=None)
     args = ap.parse_args()
 
     spec = args.spec.strip()
     out = {"spec": spec, "country": args.country}
+    if args.url:
+        import re as _re
+        u = args.url.strip()
+        out = {"url": u}
+        try:
+            req = urllib.request.Request(u, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                              "AppleWebKit/537.36 (KHTML, like Gecko) "
+                              "Chrome/131.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,"
+                          "application/json;q=0.9,*/*;q=0.8"})
+            with urllib.request.urlopen(req, timeout=45) as r:
+                body = r.read().decode("utf-8", "replace")
+                out.update({"status": "ok", "http": r.status,
+                            "final_url": r.geturl(), "bytes": len(body)})
+            t = _re.search(r"<title[^>]*>(.*?)</title>", body,
+                           _re.S | _re.I)
+            out["title"] = (t.group(1).strip()[:120] if t else "")
+            hints = []
+            for pat, name in [
+                    (r"wd\d+\.myworkdayjobs", "workday"),
+                    (r"boards\.greenhouse\.io|job-boards\.greenhouse",
+                     "greenhouse"), (r"jobs\.ashbyhq\.com", "ashby"),
+                    (r"jobs\.lever\.co", "lever"),
+                    (r"apply\.workable\.com|jobs\.workable", "workable"),
+                    ("smartrecruiters", "smartrecruiters"),
+                    ("myworkdaysite", "workday-site"),
+                    ("__NEXT_DATA__", "nextjs"),
+                    (r"breezy\.hr", "breezy"), ("icims", "icims"),
+                    ("successfactors|sapsf", "successfactors"),
+                    ("taleo", "taleo"), ("jobvite", "jobvite"),
+                    ("brassring", "brassring"),
+                    (r"application/ld\+json", "jsonld"),
+                    ("wp-json", "wordpress")]:
+                if _re.search(pat, body, _re.I):
+                    hints.append(name)
+            out["platform_hints"] = hints
+            us = _re.findall(
+                r"[^<>]{0,50}(?:United States|, [A-Z]{2}\b|Remote - US)"
+                r"[^<>]{0,40}", body)
+            out["us_text_hits"] = len(us)
+            out["us_samples"] = [x.strip()[:70] for x in us[:5]]
+        except Exception as e:
+            out.update({"status": "error",
+                        "error": f"{type(e).__name__}: {e}"[:300]})
+        print(json.dumps(out, ensure_ascii=False))
+        return 0
     try:
         if "|" in spec:
             parts = spec.split("|")
