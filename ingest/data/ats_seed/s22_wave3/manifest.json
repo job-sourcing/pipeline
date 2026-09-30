@@ -8,7 +8,8 @@
     "us_rows": 2,
     "sample": "Project Manager (PMO) — Akila, Remote, USA (+ Technical Sales Manager — Akila, North America)"
    },
-   "adjudication_note": "Authentic Aden Group (Shanghai-founded, Singapore-HQ FM/energy; LCA ADEN STAFF INC); own careers page adengroup.com/career/ lists 5 open roles incl. 'Project Manager (PMO) — Akila, Remote, USA' and 'Technical Sales Manager — Akila, North American'; adenhq.com (AI cloud startup) and careers.maaden.com (Saudi mining) are homonyms."
+   "adjudication_note": "Authentic Aden Group (Shanghai-founded, Singapore-HQ FM/energy; LCA ADEN STAFF INC); own careers page adengroup.com/career/ lists 5 open roles incl. 'Project Manager (PMO) — Akila, Remote, USA' and 'Technical Sales Manager — Akila, North American'; adenhq.com (AI cloud startup) and careers.maaden.com (Saudi mining) are homonyms.",
+   "park": "PARKED-wire-next: WP hand-coded accordion, 2 US rows (Akila Remote USA/NA), RE at re_D.md §6. Static-parser class."
   },
   {
    "brand": "Agora",
@@ -58,7 +59,8 @@
     "us_rows": 3,
     "sample": "IT Manager — North Carolina, United States; Production Supervisor — North Carolina, United States; Quality Technician — North Carolina, United States"
    },
-   "adjudication_note": "AUTHENTIC: Autel Energy (autelenergy.us) is Autel Intelligent Technology's (Shenzhen) US EV-charger arm — page self-describes 'Established in 2004, Autel... leading providers of intelligent automotive products'; 3 US job rows, all North Carolina–United States."
+   "adjudication_note": "AUTHENTIC: Autel Energy (autelenergy.us) is Autel Intelligent Technology's (Shenzhen) US EV-charger arm — page self-describes 'Established in 2004, Autel... leading providers of intelligent automotive products'; 3 US job rows, all North Carolina–United States.",
+   "park": "PARKED-wire-next: Shopify/PageFly accordion, 3 US rows (NC), RE at re_D.md §5. Static-parser class."
   },
   {
    "brand": "BeOne Medicines",
@@ -118,7 +120,8 @@
     "us_rows": 8,
     "sample": "Marketing Director — Los Angeles, CA"
    },
-   "adjudication_note": "Greenland USA (US subsidiary of Shanghai Greenland Holding Group) greenlandusa.com/careers lists 8 open roles: Los Angeles x4 (Escrow Closing Supervisor/Manager, HR Generalist, Marketing Director, Sr. Construction Accountant) + New York x4 (Accounting Manager, Construction Mgmt Coordinator, Interior Design Manager, Recruiter); HQ 777 S. Figueroa St, LA."
+   "adjudication_note": "Greenland USA (US subsidiary of Shanghai Greenland Holding Group) greenlandusa.com/careers lists 8 open roles: Los Angeles x4 (Escrow Closing Supervisor/Manager, HR Generalist, Marketing Director, Sr. Construction Accountant) + New York x4 (Accounting Manager, Construction Mgmt Coordinator, Interior Design Manager, Recruiter); HQ 777 S. Figueroa St, LA.",
+   "park": "PARKED-wire-next: static Drupal page, 8 US rows (LA×4/NY×4), RE at re_D.md §1 (field-current-openings HTML parse). Static-parser class."
   },
   {
    "brand": "Haidilao",
@@ -148,7 +151,8 @@
     "us_rows": 4,
     "sample": "Senior HR Recruiter, Oil & Gas/Energy Sector — Houston, TX (+1 Remote row; +1 Marketing Specialists, Houston TX on americanjereh.com)"
    },
-   "adjudication_note": "Authentic: jereh-nag.com = Jereh Energy Equipment and Technologies Corp (Jereh North American Group, Houston TX), US arm of CN Jereh Group (americanjereh.com footer shows SZ002353). Board lists 6 rows: 4 Houston TX + 1 Remote + 1 Canada; americanjereh.com adds 'Marketing Specialists — Job site: Houston, Texas'."
+   "adjudication_note": "Authentic: jereh-nag.com = Jereh Energy Equipment and Technologies Corp (Jereh North American Group, Houston TX), US arm of CN Jereh Group (americanjereh.com footer shows SZ002353). Board lists 6 rows: 4 Houston TX + 1 Remote + 1 Canada; americanjereh.com adds 'Marketing Specialists — Job site: Houston, Texas'.",
+   "park": "PARKED-wire-next: jereh-nag.com JSP static + ajax_job.jsp fragments, 5-6 US rows (Houston), RE at re_D.md §3. Static-parser class."
   },
   {
    "brand": "Joyson Safety Systems",
@@ -168,7 +172,8 @@
     "us_rows": 2,
     "sample": "Revenue and Reservations Manager — Mandarin Oriental, Boston; Marketing Administrator — Mandarin Oriental, New York"
    },
-   "adjudication_note": "Authentic Mandarin Oriental Hotel Group (HK, careers.mandarinoriental.com custom board); 150 jobs across 5 pages, 2 US rows (Boston, New York)"
+   "adjudication_note": "Authentic Mandarin Oriental Hotel Group (HK, careers.mandarinoriental.com custom board); 150 jobs across 5 pages, 2 US rows (Boston, New York)",
+   "park": "PARKED-wire-next: custom Rails SSR board, 29 US rows (Boston 6/NY 21/Miami 1/BH 1), full RE contract at s22_wave3/re_D.md §7 (cities[] filter = 4 requests). Class: new custom adapter."
   },
   {
    "brand": "Mattson Technology",
@@ -228,7 +233,8 @@
     "us_rows": 24,
     "sample": "Mechanical Engineer — Redwood City, CA"
    },
-   "adjudication_note": "sunday.ai = Sunday Robotics (Redwood City CA; founded 2024 by Tony Zhao & Cheng Chi, creators of ALOHA/Diffusion Policy — Chinese-origin Stanford roboticists); Ashby posting API: 24 jobs (23 Redwood City CA + 1 Remote); US-incorporated with Chinese-founder origin — flag origin policy at wire."
+   "adjudication_note": "sunday.ai = Sunday Robotics (Redwood City CA; founded 2024 by Tony Zhao & Cheng Chi, creators of ALOHA/Diffusion Policy — Chinese-origin Stanford roboticists); Ashby posting API: 24 jobs (23 Redwood City CA + 1 Remote); US-incorporated with Chinese-founder origin — flag origin policy at wire.",
+   "park": "PARKED-user-decision: US-incorporated (Redwood City) startup by Chinese founders (ALOHA creators); NOT majority-Chinese-owned under the queue's origin criteria. 24 US rows on ashby:sunday. Wire only on explicit user signal — the origin-policy call is theirs."
   },
   {
    "brand": "Sungrow",
@@ -268,7 +274,8 @@
     "us_rows": 18,
     "sample": "Chemical and Industrial Hygiene Manager — Cranbury, NJ; Facilities Technician II — San Diego, CA; Automation Lead Engineering — Middletown, DE"
    },
-   "adjudication_note": "Authentic WuXi AppTec (LCA WUXI APPTEC SALES, LLC); icims portal careers-wuxiapptec.icims.com + custom mirror wuxiappteccareers.com/jobs lists 20 jobs, 18 US-located"
+   "adjudication_note": "Authentic WuXi AppTec (LCA WUXI APPTEC SALES, LLC); icims portal careers-wuxiapptec.icims.com + custom mirror wuxiappteccareers.com/jobs lists 20 jobs, 18 US-located",
+   "park": "PARKED-wire-next: wuxiappteccareers.com Django mirror of the bot-walled iCIMS board, 36 US rows, full RE at re_D.md §8 (page_jobs=N cards + per-job JSON-LD; mirror job_id IS the iCIMS id). Class: new custom adapter."
   },
   {
    "brand": "WuXi Biologics",

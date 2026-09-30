@@ -6,3 +6,4 @@ startDate present: 4
 signals: matched=0 no_match=4 blocked=0 not_checked=0
 location entries total (sum nLocations): 4
 similar-job edges: 0
+h1b wage bands: 0/4 rows banded (0 title+state, 0 title-only) from 2 LCA filings → ascentage_us_fulltime.h1b_lca.csv

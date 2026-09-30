@@ -4217,3 +4217,45 @@ class TestAntIntlAdapter:
         monkeypatch.setattr(urllib.request, "urlopen", fake_open)
         with pytest.raises(RuntimeError, match="success=false"):
             site_boards.list_board("ats:antintl:M7892")
+
+
+class TestS22WorkdayRidShape:
+    """S22 (audit P2-3): the SECOND-GENERATION workday list shape —
+    bulletFields = [workerType, country, reqId] (beigene/BeiGene) vs the
+    standard [reqId, ...]. A naive bulletFields[0] collapses every row
+    to the same reqId (272 rows → 1); _rid_of must be shape-aware, and
+    the path-suffix fallback must survive board mutations."""
+
+    def test_standard_shape_first_field_is_rid(self):
+        from jobsearch.sources import workday as wd
+        p = {"bulletFields": ["R34730", "Full time"],
+             "externalPath": "/job/Foo_R34730-1"}
+        assert wd._rid_of(p) == "R34730"
+
+    def test_adp_numeric_rid_shape(self):
+        from jobsearch.sources import workday as wd
+        p = {"bulletFields": ["9201242416293_1", "1311"],
+             "externalPath": "/9201242416293_1"}
+        assert wd._rid_of(p) == "9201242416293_1"
+
+    def test_second_gen_shape_worker_type_first(self):
+        from jobsearch.sources import workday as wd
+        # beigene: bulletFields[0] = 'Regular' (workerType) — the reqId
+        # is bulletFields[2] AND the externalPath suffix carries the -1
+        # variant; _rid_of must return 'R34730' NOT 'Regular'
+        p = {"bulletFields": ["Regular", "United States of America",
+                              "R34730"],
+             "externalPath":
+                 "/job/Remote-US/Senior-CRA_R34730-1"}
+        assert wd._rid_of(p) == "R34730"
+
+    def test_path_suffix_fallback_when_no_bulletfield_matches(self):
+        from jobsearch.sources import workday as wd
+        p = {"bulletFields": ["Regular", "Germany"],
+             "externalPath": "/job/Berlin/QA-Specialist_R4811"}
+        assert wd._rid_of(p) == "R4811"
+
+    def test_last_resort_legacy_behavior(self):
+        from jobsearch.sources import workday as wd
+        p = {"bulletFields": ["weird"], "externalPath": "/some/path"}
+        assert wd._rid_of(p) == "weird"

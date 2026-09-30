@@ -6,3 +6,4 @@ startDate present: 61
 signals: matched=51 no_match=10 blocked=0 not_checked=0
 location entries total (sum nLocations): 61
 similar-job edges: 0
+h1b wage bands: 18/61 rows banded (0 title+state, 18 title-only) from 107 LCA filings → omnivision_us_fulltime.h1b_lca.csv

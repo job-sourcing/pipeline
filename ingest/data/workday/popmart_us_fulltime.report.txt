@@ -10,3 +10,4 @@ facet census: 6 facets / 143 values (popmart_us_fulltime.facets.json)
 facet-tagged rows: workerSubType=167 jobFamilyGroup=163 (from facet_tags.jsonl)
 facet tag coverage: 68/70 rows (2 untagged)
 questionnaire definitions: 5 id(s) covering 70/70 rows; 5 fetched (37 questions → popmart_us_fulltime.questionnaires.csv)
+h1b wage bands: 0/70 rows banded (0 title+state, 0 title-only) from 12 LCA filings → popmart_us_fulltime.h1b_lca.csv
