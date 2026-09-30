@@ -21,15 +21,15 @@
   "unmapped_cities": []
  },
  "haidilao": {
-  "total": 149,
-  "fetched": 149,
+  "total": 152,
+  "fetched": 152,
   "us_count": 0,
   "us_rows": [],
   "unmapped_cities": []
  },
  "hailiang": {
-  "total": 106,
-  "fetched": 106,
+  "total": 107,
+  "fetched": 107,
   "us_count": 0,
   "us_rows": [],
   "unmapped_cities": [
@@ -71,10 +71,23 @@
   ]
  },
  "poizon": {
-  "total": 579,
-  "fetched": 579,
-  "us_count": 1,
+  "total": 575,
+  "fetched": 575,
+  "us_count": 3,
   "us_rows": [
+   {
+    "title": "Business Development-US",
+    "cities": [
+     "Brooklyn"
+    ]
+   },
+   {
+    "title": "美国商家运营",
+    "cities": [
+     "Brooklyn",
+     "Shanghai"
+    ]
+   },
    {
     "title": "品牌研究运营（美国）",
     "cities": [
@@ -83,11 +96,7 @@
     ]
    }
   ],
-  "unmapped_cities": [
-   "Brooklyn",
-   "Langfang",
-   "Yulin"
-  ]
+  "unmapped_cities": []
  },
  "robosense": {
   "total": 0,

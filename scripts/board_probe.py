@@ -129,6 +129,37 @@ def main() -> int:
                 r"[^<>]{0,40}", body)
             out["us_text_hits"] = len(us)
             out["us_samples"] = [x.strip()[:70] for x in us[:5]]
+            # S22b: SPA triage — collect script srcs + api/fetch hints
+            # from the first N bundles (the Trina class: real HTML from
+            # GHA but data lives in XHRs the shell references)
+            srcs = _re.findall(
+                r'<script[^>]+src="([^"]+\.js[^"]*)"', body)
+            out["script_srcs"] = [x[:120] for x in srcs[:8]]
+            api_hints = []
+            for src in srcs[:6]:
+                if src.startswith("/"):
+                    src = u.rstrip("/") + src
+                elif not src.startswith("http"):
+                    continue
+                try:
+                    req2 = urllib.request.Request(src, headers={
+                        "User-Agent": "Mozilla/5.0"})
+                    with urllib.request.urlopen(req2, timeout=25) as r2:
+                        js = r2.read(400000).decode("utf-8", "replace")
+                    for m2 in _re.findall(
+                            r'https?://[A-Za-z0-9._\-]+(?:/api/|/v[0-9]/)'
+                            r"[A-Za-z0-9/._\-]{2,50}", js)[:6]:
+                        if m2 not in api_hints:
+                            api_hints.append(m2)
+                    for m3 in _re.findall(
+                            r'["\']/(api/[A-Za-z0-9/._\-]{2,60})'
+                            r'["\']', js)[:8]:
+                        cand = u.rstrip("/") + "/" + m3
+                        if cand not in api_hints:
+                            api_hints.append(cand)
+                except Exception:
+                    pass
+            out["api_hints"] = api_hints[:12]
         except Exception as e:
             out.update({"status": "error",
                         "error": f"{type(e).__name__}: {e}"[:300]})
