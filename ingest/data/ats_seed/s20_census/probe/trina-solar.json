@@ -159,8 +159,8 @@
  "verdict": "marker_surface",
  "adjudication": {
   "verdict": "deferred",
-  "note": "careers.trinasolar.com CF-JS-walled from HK + fleet (200/0-bytes; browser challenge stuck); global site links LI for jobs; GHA-egress board-probe is the rescue path — Trina Solar US (Santa Clara/TX plants) is real, re-probe scheduled",
-  "ts": "2026-09-30T05:10:00Z",
-  "by": "S22-ADJ-main"
+  "note": "S22 update: careers.trinasolar.com = WordPress (theme mohito) — HK+fleet CF-walled but GHA-REACHABLE (58KB real page, URL-probe mode). jobpost CPT 404, posts empty; the wp-json/ route index (205KB) reveals the jobs mechanism NEXT SESSION (extend board_probe --url to surface job-named routes, then wire as wpjobboard-class or custom). Trina Solar US (Santa Clara TX plants) is real — LCA TRINA SOLAR U.S. MANUFACTURING.",
+  "ts": "2026-09-30T06:40:00Z",
+  "by": "S22 GHA URL-probe"
  }
 }
