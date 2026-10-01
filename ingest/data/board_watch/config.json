@@ -1123,6 +1123,232 @@
     "Cranbury, New Jersey, United States"
    ],
    "country": "United States"
+  },
+  {
+   "label": "bosonai_us_fulltime",
+   "board": "ats:lever:bosonai",
+   "company": "Boson AI",
+   "li_variants": [
+    "Boson AI",
+    "Boson AI USA",
+    "BosonAI"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States",
+    "San Francisco, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "hesai_us_fulltime",
+   "board": "ats:feishuhire:kwh0jtf778",
+   "company": "Hesai Technology",
+   "li_variants": [
+    "Hesai",
+    "Hesai Technology",
+    "Hesai LiDAR"
+   ],
+   "slice_locations": [
+    "United States",
+    "Palo Alto, California, United States",
+    "Sunnyvale, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "blacksesame_us_fulltime",
+   "board": "custom:blacksesame",
+   "company": "Black Sesame Technologies",
+   "li_variants": [
+    "Black Sesame Technologies",
+    "Black Sesame"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "ecovacsus_us_fulltime",
+   "board": "custom:ecovacsus",
+   "company": "Ecovacs Robotics",
+   "li_variants": [
+    "Ecovacs Robotics",
+    "ECOVACS",
+    "Ecovacs"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "accutar_us_fulltime",
+   "board": "custom:accutar",
+   "company": "Accutar Biotech",
+   "li_variants": [
+    "Accutar Biotech",
+    "Accutar Biotechnology"
+   ],
+   "slice_locations": [
+    "United States",
+    "Cranbury, New Jersey, United States",
+    "Mountain View, California, United States",
+    "Bellevue, Washington, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "hitgen_us_fulltime",
+   "board": "custom:hitgen",
+   "company": "HitGen",
+   "li_variants": [
+    "HitGen",
+    "HitGen Inc",
+    "Chengdu HitGen"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "insilico_us_fulltime",
+   "board": "custom:insilico",
+   "company": "Insilico Medicine",
+   "li_variants": [
+    "Insilico Medicine",
+    "Insilico"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "insta360_us_fulltime",
+   "board": "ats:feishuhire:arashivision",
+   "company": "Insta360",
+   "li_variants": [
+    "Insta360",
+    "Arashi Vision",
+    "Insta360 USA"
+   ],
+   "slice_locations": [
+    "United States",
+    "New York, New York, United States",
+    "Los Angeles, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "liauto_us_fulltime",
+   "board": "ats:feishuhire:li",
+   "company": "Li Auto",
+   "li_variants": [
+    "Li Auto",
+    "Li Auto Inc",
+    "Lixiang"
+   ],
+   "slice_locations": [
+    "United States",
+    "Irvine, California, United States",
+    "San Jose, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "meitu_us_fulltime",
+   "board": "ats:feishuhire:meitu",
+   "company": "Meitu",
+   "li_variants": [
+    "Meitu",
+    "Pixocial",
+    "Meitu Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "orionstar_us_fulltime",
+   "board": "ats:feishuhire:orionstar",
+   "company": "OrionStar",
+   "li_variants": [
+    "OrionStar",
+    "OrionStar Robotics",
+    "Cheetah Mobile"
+   ],
+   "slice_locations": [
+    "United States",
+    "Washington, District of Columbia, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "orbbec_us_fulltime",
+   "board": "custom:orbbec",
+   "company": "Orbbec",
+   "li_variants": [
+    "Orbbec",
+    "Orbbec 3D Technology International"
+   ],
+   "slice_locations": [
+    "United States",
+    "Detroit, Michigan, United States",
+    "Troy, Michigan, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "visionnav_us_fulltime",
+   "board": "custom:visionnav",
+   "company": "VisionNav Robotics",
+   "li_variants": [
+    "VisionNav",
+    "VisionNav Robotics",
+    "VisionNav Robotics USA"
+   ],
+   "slice_locations": [
+    "United States",
+    "Atlanta, Georgia, United States",
+    "Lawrenceville, Georgia, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "verisilicon_us_fulltime",
+   "board": "custom:verisilicon",
+   "company": "VeriSilicon",
+   "li_variants": [
+    "VeriSilicon",
+    "VeriSilicon Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "uniview_us_fulltime",
+   "board": "custom:uniview",
+   "company": "Uniview",
+   "li_variants": [
+    "Uniview",
+    "Uniview Technologies",
+    "Zhejiang Uniview"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "country": "United States"
   }
  ]
 }

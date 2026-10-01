@@ -1,0 +1,37 @@
+{
+ "brand": "Roborock",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:50:44.329Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "roborock",
+   "spec": "feishuhire:roborock",
+   "title": "加入石头科技roborock"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:roborock",
+  "platform": "feishu",
+  "title": "加入石头科技roborock",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入石头科技roborock",
+  "brand": "Roborock",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:roborock",
+  "identity": "confirmed",
+  "note": "feishu board (加入石头科技roborock) live 0 posts 2026-10-01 via peer-reviewed adapter path; CN hiring active on zhipin instead; recheck when posts return.",
+  "ts": "2026-10-01"
+ }
+}

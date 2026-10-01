@@ -1,0 +1,29 @@
+{
+ "brand": "Zhipu AI",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:14:51.757Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "zhipu-ai",
+   "spec": "feishuhire:zhipu-ai",
+   "title": "加入北京智谱华章科技有限公司"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:zhipu-ai",
+  "platform": "feishu",
+  "title": "加入北京智谱华章科技有限公司",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入北京智谱华章科技有限公司",
+  "brand": "Zhipu AI",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

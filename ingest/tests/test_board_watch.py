@@ -1998,7 +1998,7 @@ class TestShippedWatchConfig:
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 62
+        assert len(cfg["watches"]) == 83  # S23 final: +visionnav/verisilicon/uniview
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",

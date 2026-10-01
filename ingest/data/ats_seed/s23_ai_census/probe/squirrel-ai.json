@@ -1,0 +1,157 @@
+{
+ "brand": "Squirrel AI",
+ "tier": "probe_A",
+ "lca": "SQUIRREL AI LEARNING INC",
+ "ts": "2026-10-01T12:56:52.265Z",
+ "candidates": [
+  {
+   "url": "https://squirrelai.com/careers/",
+   "title": "",
+   "status": 200,
+   "bytes": 18004,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "On this page you'll find open positions and ways to apply and Join the Squirrel Ai Team. Read the job descriptions and apply today!",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://squirrelai.com/job-application-form/",
+   "title": "",
+   "status": 200,
+   "bytes": 18167,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers at Squirrel Ai Apply For a Position Fill out the form below to apply for an open position. Someone from the Squirrel Ai team will contact you shortly.",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://jobs.gusto.com/boards/squirrel-ai-learning-inc-e541a8ba-d508-4cb3-af14-51eb144606db",
+   "title": "",
+   "status": 200,
+   "bytes": 1607,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Squirrel Ai Learning Inc Squirrel Ai Learning, a pioneering force in the K12 AI domain, stands out as a unicorn company renowned for its groundbreaking integrat",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Job Postings - Squirrel AI",
+   "u": "https://squirrelai.com/careers/",
+   "s": "On this page you'll find open positions and ways to apply and Join the Squirrel Ai Team. Read the job descriptions and apply today!"
+  },
+  {
+   "t": "Job Application Form - Squirrel AI",
+   "u": "https://squirrelai.com/job-application-form/",
+   "s": "Careers at Squirrel Ai Apply For a Position Fill out the form below to apply for an open position. Someone from the Squirrel Ai team will contact you shortly."
+  },
+  {
+   "t": "Careers at Squirrel Ai Learning Inc",
+   "u": "https://jobs.gusto.com/boards/squirrel-ai-learning-inc-e541a8ba-d508-4cb3-af14-51eb144606db",
+   "s": "Squirrel Ai Learning Inc Squirrel Ai Learning, a pioneering force in the K12 AI domain, stands out as a unicorn company renowned for its groundbreaking integrat"
+  },
+  {
+   "t": "Squirrel AI learning Inc Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Squirrel-Ai-Learning-Inc",
+   "s": "Find out what works well at Squirrel AI learning Inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insigh"
+  },
+  {
+   "t": "Squirrel Ai Learning Jobs | EdTechJobs.io",
+   "u": "https://edtechjobs.io/companies/squirrel-ai-learning-2280542",
+   "s": "Open positions at Squirrel Ai Learning. Found in 2014, headquartered in Shanghai, with an AI Research Team in Seattle and a Curriculum Development Team in the L"
+  },
+  {
+   "t": "Squirrel Ai Learning - LinkedIn",
+   "u": "https://www.linkedin.com/company/squirrelai",
+   "s": "Found in 2014, headquartered in Shanghai, with an AI Research Team in Seattle and a Curriculum Development Team in the LA area, Squirrel Ai Learning is the firs"
+  },
+  {
+   "t": "Home - Squirrel AI",
+   "u": "https://squirrelai.com/",
+   "s": "Squirrel Ai is a leading education technology company that offers a unique blend of cutting-edge artificial intelligence and human teaching expertise. Our intel"
+  },
+  {
+   "t": "Squirrel Ai Learning Jobs in Worldwide | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/squirrel-ai-learning-jobs-worldwide",
+   "s": "Today's top Squirrel Ai Learning jobs in Worldwide. Leverage your professional network, and get hired. New Squirrel Ai Learning jobs added daily."
+  },
+  {
+   "t": "Careers - Job Postings - Squirrel AI",
+   "u": "https://squirrelai.com/careers/",
+   "s": "On this page you'll find open positions and ways to apply and Join the Squirrel Ai Team. Read the job descriptions and apply today!"
+  },
+  {
+   "t": "Job Application Form - Squirrel AI",
+   "u": "https://squirrelai.com/job-application-form/",
+   "s": "Careers at Squirrel Ai Apply For a Position Fill out the form below to apply for an open position. Someone from the Squirrel Ai team will contact you shortly."
+  },
+  {
+   "t": "Squirrel Ai Learning Jobs in Worldwide | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/squirrel-ai-learning-jobs-worldwide",
+   "s": "Today's top Squirrel Ai Learning jobs in Worldwide. Leverage your professional network, and get hired. New Squirrel Ai Learning jobs added daily."
+  },
+  {
+   "t": "Careers at Squirrel Ai Learning Inc - jobs.gusto.com",
+   "u": "https://jobs.gusto.com/boards/squirrel-ai-learning-inc-e541a8ba-d508-4cb3-af14-51eb144606db",
+   "s": "Squirrel Ai Learning Inc Squirrel Ai Learning, a pioneering force in the K12 AI domain, stands out as a unicorn company renowned for its groundbreaking integrat"
+  },
+  {
+   "t": "Squirrel AI learning Inc Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Squirrel-Ai-Learning-Inc",
+   "s": "Find out what works well at Squirrel AI learning Inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insigh"
+  },
+  {
+   "t": "Squirrel Ai Learning Jobs | EdTechJobs.io",
+   "u": "https://edtechjobs.io/companies/squirrel-ai-learning-2280542",
+   "s": "Open positions at Squirrel Ai Learning. Found in 2014, headquartered in Shanghai, with an AI Research Team in Seattle and a Curriculum Development Team in the L"
+  },
+  {
+   "t": "Squirrel Ai Jobs in Worldwide | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/squirrel-ai-jobs-worldwide",
+   "s": "Today's top Squirrel Ai jobs in Worldwide. Leverage your professional network, and get hired. New Squirrel Ai jobs added daily."
+  },
+  {
+   "t": "Squirrel Ai Learning: Jobs & Salaries (2026) | Alion",
+   "u": "https://alion.io/company/squirrel-ai-learning",
+   "s": "Squirrel Ai Learning is a Chinese education company founded in 2014 that built one of the earliest large-scale adaptive tutoring systems. It decomposes subjects"
+  },
+  {
+   "t": "Careers - Job Postings - Squirrel AI",
+   "u": "https://squirrelai.com/careers/",
+   "s": "On this page you'll find open positions and ways to apply and Join the Squirrel Ai Team. Read the job descriptions and apply today!"
+  },
+  {
+   "t": "Job Application Form - Squirrel AI",
+   "u": "https://squirrelai.com/job-application-form/",
+   "s": "Careers at Squirrel Ai Apply For a Position Fill out the form below to apply for an open position. Someone from the Squirrel Ai team will contact you shortly."
+  },
+  {
+   "t": "Squirrel AI learning Inc Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Squirrel-Ai-Learning-Inc",
+   "s": "Find out what works well at Squirrel AI learning Inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insigh"
+  },
+  {
+   "t": "Careers at Squirrel Ai Learning Inc - jobs.gusto.com",
+   "u": "https://jobs.gusto.com/boards/squirrel-ai-learning-inc-e541a8ba-d508-4cb3-af14-51eb144606db",
+   "s": "Squirrel Ai Learning Inc Squirrel Ai Learning, a pioneering force in the K12 AI domain, stands out as a unicorn company renowned for its groundbreaking integrat"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "deferred_walled",
+  "us_rows": null,
+  "spec": "https://jobs.gusto.com/boards/squirrel-ai-learning-inc-e541a8ba-d508-4cb3-af14-51eb144606db",
+  "identity": "confirmed",
+  "note": "Gusto board = own surface (board desc 'Squirrel Ai Learning Inc, K12 AI unicorn' matches SQUIRREL AI LEARNING INC LCA; Seattle AI research + LA curriculum teams per LinkedIn) but CF-walled 403 — live US-row count unverifiable; kit-indexed 'Video Reviewer' posting exists; edtechjobs mirror shows 0 active today; prior remote-US report unconfirmed — needs gusto adapter/zenrows pass.",
+  "ts": "2026-10-01"
+ }
+}

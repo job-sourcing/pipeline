@@ -1,0 +1,37 @@
+{
+ "brand": "FJ Dynamics",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:14:07.531Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "fjdynamics",
+   "spec": "feishuhire:fjdynamics",
+   "title": "加入丰疆智能"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:fjdynamics",
+  "platform": "feishu",
+  "title": "加入丰疆智能",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入丰疆智能",
+  "brand": "FJ Dynamics",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:fjdynamics",
+  "identity": "confirmed",
+  "note": "Feishu-Hire portal '加入丰疆智能' = FJ Dynamics (cn-name match); live: 0 total posts (matches census 'own jobs page 0 open roles'); BU pages e.g. agriculture.fjdynamics.com/jobs exist.",
+  "ts": "2026-10-01"
+ }
+}

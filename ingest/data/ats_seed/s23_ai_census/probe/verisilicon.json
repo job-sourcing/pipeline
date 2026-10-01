@@ -1,0 +1,162 @@
+{
+ "brand": "VeriSilicon",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:04:47.223Z",
+ "candidates": [
+  {
+   "url": "https://www.verisilicon.com/en/Careers",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 69857,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "VeriSilicon Microelectronics (Shanghai) Co., Ltd. (VeriSilicon, 688521.SH) is a leading public company that provides custom silicon solutions, leveraging its co",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.verisilicon.com/cn/Careers",
+   "title": "加入我们",
+   "status": 200,
+   "bytes": 66803,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Serve as the primary technical interface between customers and VeriSilicon internal teams for ASIC, SoC, IP licensing, and turnkey design service engagements Su",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.verisilicon.com/en/InvestorRelations/Careers",
+   "title": "Investor Relations",
+   "status": 200,
+   "bytes": 50692,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Investor Relations VeriSilicon Microelectronics (Shanghai) Co., Ltd. (VeriSilicon, 688521.SH) is a leading public company that provides custom silicon solutions",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - VeriSilicon",
+   "u": "https://www.verisilicon.com/en/Careers",
+   "s": "VeriSilicon Microelectronics (Shanghai) Co., Ltd. (VeriSilicon, 688521.SH) is a leading public company that provides custom silicon solutions, leveraging its co"
+  },
+  {
+   "t": "加入我们 - VeriSilicon",
+   "u": "https://www.verisilicon.com/cn/Careers",
+   "s": "Serve as the primary technical interface between customers and VeriSilicon internal teams for ASIC, SoC, IP licensing, and turnkey design service engagements Su"
+  },
+  {
+   "t": "Jobs - Verisign",
+   "u": "https://www.verisign.com/careers/jobs/",
+   "s": "Explore open Verisign jobs to help shape the internet for today and tomorrow."
+  },
+  {
+   "t": "Careers Overview | Verisign",
+   "u": "https://www.verisign.com/careers/",
+   "s": "Find your Verisign career today and help shape the future of the internet."
+  },
+  {
+   "t": "VeriSilicon Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Verisilicon",
+   "s": "VeriSilicon Holdings Co., Ltd. is a Silicon Platform as a Service (SiPaaS) company that provides IP-centric, platform based custom silicon solutions and end-to-"
+  },
+  {
+   "t": "Verisk Careers",
+   "u": "https://www.verisk.com/company/careers/",
+   "s": "Search for innovative, challenging careers and learn how our work benefits businesses, communities, and people. We value your commitment and drive to succeed."
+  },
+  {
+   "t": "Welcome to the V Team life | Verizon Careers",
+   "u": "https://mycareer.verizon.com/",
+   "s": "Find full time and part time jobs near you. Search retail, corporate, marketing and other positions at Verizon, and learn about hybrid and remote opportunities."
+  },
+  {
+   "t": "22,000+ Verisilicon Holdings Co. Ltd. jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/verisilicon-holdings-co.-ltd.-jobs-worldwide",
+   "s": "Today's top 22,000+ Verisilicon Holdings Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Verisilicon Holdings Co. Ltd. jobs a"
+  },
+  {
+   "t": "Careers - VeriSilicon",
+   "u": "https://www.verisilicon.com/en/Careers",
+   "s": "VeriSilicon Microelectronics (Shanghai) Co., Ltd. (VeriSilicon, 688521.SH) is a leading public company that provides custom silicon solutions, leveraging its co"
+  },
+  {
+   "t": "加入我们 - VeriSilicon",
+   "u": "https://www.verisilicon.com/cn/Careers",
+   "s": "Serve as the primary technical interface between customers and VeriSilicon internal teams for ASIC, SoC, IP licensing, and turnkey design service engagements Su"
+  },
+  {
+   "t": "VeriSilicon Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Verisilicon",
+   "s": "VeriSilicon Holdings Co., Ltd. is a Silicon Platform as a Service (SiPaaS) company that provides IP-centric, platform based custom silicon solutions and end-to-"
+  },
+  {
+   "t": "VeriSilicon - A Silicon Platform as a Service Company.",
+   "u": "https://www.verisilicon.com/en/Home",
+   "s": "VeriSilicon Microelectronics (Shanghai) Co., Ltd. (VeriSilicon, 688521.SH) is a leading public company that provides custom silicon solutions, leveraging its co"
+  },
+  {
+   "t": "Investor Relations - VeriSilicon",
+   "u": "https://www.verisilicon.com/en/InvestorRelations/Careers",
+   "s": "Investor Relations VeriSilicon Microelectronics (Shanghai) Co., Ltd. (VeriSilicon, 688521.SH) is a leading public company that provides custom silicon solutions"
+  },
+  {
+   "t": "Verisilicon Inc Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Verisilicon-Inc",
+   "s": "Read Verisilicon Inc reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at Verisilicon"
+  },
+  {
+   "t": "22,000+ Verisilicon Holdings Co. Ltd. jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/verisilicon-holdings-co.-ltd.-jobs-worldwide",
+   "s": "Today's top 22,000+ Verisilicon Holdings Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Verisilicon Holdings Co. Ltd. jobs a"
+  },
+  {
+   "t": "JOIN VERISILICON AT CSE JOB FAIR 2026 Time: 7:30 AM - Facebook",
+   "u": "https://www.facebook.com/Electronics.Dpt.HCMUT/posts/-join-verisilicon-at-cse-job-fair-2026-time-730-am-1100-am-march-28-2026-locatio/1403696855108341/",
+   "s": "🚀 JOIN VERISILICON AT CSE JOB FAIR 2026 🕢 Time: 7:30 AM - 11:00 AM, March 28, 2026 📍 Location: Booth No. 4 & 5 - BK.B6 Yard, HCMC University of Technology - "
+  },
+  {
+   "t": "Careers - VeriSilicon",
+   "u": "https://www.verisilicon.com/en/Careers",
+   "s": "VeriSilicon Microelectronics (Shanghai) Co., Ltd. (VeriSilicon, 688521.SH) is a leading public company that provides custom silicon solutions, leveraging its co"
+  },
+  {
+   "t": "VeriSilicon Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Verisilicon",
+   "s": "Find out what works well at VeriSilicon from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare p"
+  },
+  {
+   "t": "加入我们 - VeriSilicon",
+   "u": "https://www.verisilicon.com/cn/Careers",
+   "s": "Relevant Experience: Proven sales or business development experience in Silicon IP and SoC Design Services and/or in OEM systems industry. This is a senior-leve"
+  },
+  {
+   "t": "22,000+ Verisilicon Holdings Co. Ltd. jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/verisilicon-holdings-co.-ltd.-jobs-worldwide",
+   "s": "Today's top 22,000+ Verisilicon Holdings Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Verisilicon Holdings Co. Ltd. jobs a"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.verisilicon.com/en/Careers",
+  "platform": "custom",
+  "title": "Careers"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 4,
+  "spec": "https://www.verisilicon.com/en/Careers",
+  "identity": "confirmed",
+  "note": "Own EN careers page divUS section: 4 San Jose CA roles (NA Sales BD, Technical Customer Interface & Success Mgr/AE, FAE, Customer Engineering), apply via US.HR@verisilicon.com; custom HTML not ATS.",
+  "ts": "2026-10-01"
+ }
+}

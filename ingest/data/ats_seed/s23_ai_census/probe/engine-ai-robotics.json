@@ -1,0 +1,38 @@
+{
+ "brand": "Engine AI Robotics",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:14:04.013Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "engine",
+   "spec": "greenhouse:engine",
+   "title": "Jobs at Engine",
+   "jobs_hint": 78
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:engine",
+  "platform": "greenhouse",
+  "title": "Jobs at Engine",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Engine",
+  "brand": "Engine AI Robotics",
+  "ok": false,
+  "n": 1
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "ats:greenhouse:engine",
+  "identity": "refuted",
+  "note": "dict hit greenhouse:engine = US 'Engine' sales org (78 jobs: Account Executives, Remote-US) ≠ 众擎机器人 Engine AI (Shenzhen humanoid, engineai.com.cn); no own board surfaced.",
+  "ts": "2026-10-01"
+ }
+}

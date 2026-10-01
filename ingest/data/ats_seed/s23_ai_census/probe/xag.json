@@ -1,0 +1,175 @@
+{
+ "brand": "XAG",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:07:46.743Z",
+ "candidates": [
+  {
+   "url": "https://apply.workable.com/studioxag/j/64D258C2A6/",
+   "title": "StudioXAG - Current Openings",
+   "status": 200,
+   "bytes": 5775,
+   "markers": [
+    "workable"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workable:studioxag",
+   "score": 15,
+   "snippet": "StudioXAG creates bold spaces that tell big storiesWe are a B Corp-certified creative studio in London and Amsterdam that believe in business as a force for goo",
+   "backend": "direct"
+  },
+  {
+   "url": "https://apply.workable.com/studioxag/",
+   "title": "StudioXAG - Current Openings",
+   "status": 200,
+   "bytes": 5775,
+   "markers": [
+    "workable"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workable:studioxag",
+   "score": 15,
+   "snippet": "StudioXAG create bold spaces that tell big stories. We aim to create the world's most creative experiences - reimagining retail through the power of storytellin",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.xag-au.com/careers",
+   "title": "",
+   "status": 200,
+   "bytes": 17338,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore exciting career opportunities at XAG Australia and be part of a dynamic team transforming the industry with advanced agricultural technology.",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "极飞科技人才招聘_加入我们 - 极飞科技xag",
+   "u": "https://www.xa.com/about/career",
+   "s": "极飞科技下设极飞制造、极飞农业、极飞地理、极飞教育等，在澳大利亚、日本等 19 个国家设立了研发与实验基地，参与了多个全球农业重点科研项目，同时与多家世界知名农业企业建立了战略合作关系，通过整合多方资源，为全球农户提供完善的智慧农业解决方案。"
+  },
+  {
+   "t": "Xag Jobs in Worldwide | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xag-jobs-worldwide",
+   "s": "Today's top Xag jobs in Worldwide. Leverage your professional network, and get hired. New Xag jobs added daily."
+  },
+  {
+   "t": "Home - Oversea Website",
+   "u": "https://www.xa.com/en",
+   "s": "XAG's commitment to responsible growth goes beyond the field. We strive to advance farm productivity, create opportunities in rural communities, and reduce envi"
+  },
+  {
+   "t": "XAG Group Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Xag-Group",
+   "s": "Find out what works well at XAG Group from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "Career | XAG Australia",
+   "u": "https://www.xag-au.com/careers",
+   "s": "Explore exciting career opportunities at XAG Australia and be part of a dynamic team transforming the industry with advanced agricultural technology."
+  },
+  {
+   "t": "Careers - Xage Security",
+   "u": "https://xage.com/careers/",
+   "s": "Our mission is to protect critical infrastructure - energy, utilities, defense, manufacturing, logistics & supply chain, and many more."
+  },
+  {
+   "t": "XAG - LinkedIn",
+   "u": "https://www.linkedin.com/company/xagofficial",
+   "s": "XAG is a leading agricultural robotics company driving innovation to make farming smarter, more sustainable, and more rewarding for those who feed the world. Ou"
+  },
+  {
+   "t": "Bold Retail Design + Production Studio Jobs | StudioXAG",
+   "u": "https://studioxag.com/join-us/",
+   "s": "We create the world's most exciting retail experiences. See our vacancies in retail design, production and strategy in London and Amsterdam."
+  },
+  {
+   "t": "Bold Retail Design + Production Studio Jobs | StudioXAG",
+   "u": "https://studioxag.com/join-us/",
+   "s": "We create the world's most exciting retail experiences. See our vacancies in retail design, production and strategy in London and Amsterdam."
+  },
+  {
+   "t": "极飞科技人才招聘_加入我们 - 极飞科技xag",
+   "u": "https://www.xa.com/about/career",
+   "s": "极飞科技下设极飞制造、极飞农业、极飞地理、极飞教育等，在澳大利亚、日本等 19 个国家设立了研发与实验基地，参与了多个全球农业重点科研项目，同时与多家世界知名农业企业建立了战略合作关系，通过整合多方资源，为全球农户提供完善的智慧农业解决方案。"
+  },
+  {
+   "t": "Xag Group Jobs in Worldwide (22,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xag-group-jobs-worldwide",
+   "s": "Today's top 22,000+ Xag Group jobs in Worldwide. Leverage your professional network, and get hired. New Xag Group jobs added daily."
+  },
+  {
+   "t": "Xag Jobs in Worldwide | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xag-jobs-worldwide",
+   "s": "Today's top Xag jobs in Worldwide. Leverage your professional network, and get hired. New Xag jobs added daily."
+  },
+  {
+   "t": "Home - Oversea Website",
+   "u": "https://www.xa.com/en",
+   "s": "XAG's commitment to responsible growth goes beyond the field. We strive to advance farm productivity, create opportunities in rural communities, and reduce envi"
+  },
+  {
+   "t": "Luxury Brand Experience Design + Production | StudioXAG",
+   "u": "https://studioxag.com/",
+   "s": "StudioXAG creates bold brand experiences and spaces on a global yet sustainable scale. B Corp design + production studio. London + Amsterdam."
+  },
+  {
+   "t": "Creative Studio Project Manager - StudioXAG",
+   "u": "https://apply.workable.com/studioxag/j/64D258C2A6/",
+   "s": "StudioXAG creates bold spaces that tell big storiesWe are a B Corp-certified creative studio in London and Amsterdam that believe in business as a force for goo"
+  },
+  {
+   "t": "StudioXAG - Current Openings - Workable",
+   "u": "https://apply.workable.com/studioxag/",
+   "s": "StudioXAG create bold spaces that tell big stories. We aim to create the world's most creative experiences - reimagining retail through the power of storytellin"
+  },
+  {
+   "t": "极飞科技人才招聘_加入我们 - 极飞科技xag",
+   "u": "https://www.xa.com/about/career",
+   "s": "极飞科技下设极飞制造、极飞农业、极飞地理、极飞教育等，在澳大利亚、日本等 19 个国家设立了研发与实验基地，参与了多个全球农业重点科研项目，同时与多家世界知名农业企业建立了战略合作关系，通过整合多方资源，为全球农户提供完善的智慧农业解决方案。"
+  },
+  {
+   "t": "Xag Jobs in Worldwide | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xag-jobs-worldwide",
+   "s": "Today's top Xag jobs in Worldwide. Leverage your professional network, and get hired. New Xag jobs added daily."
+  },
+  {
+   "t": "Careers - Xage Security",
+   "u": "https://xage.com/careers/",
+   "s": "Xage Named One of America's Best Startup Employers Job Openings We want you to join our growing team! Xagers are dedicated to intentional and creative innovatio"
+  },
+  {
+   "t": "XAG - LinkedIn",
+   "u": "https://www.linkedin.com/company/xagofficial",
+   "s": "XAG is a leading agricultural robotics company driving innovation to make farming smarter, more sustainable, and more rewarding for those who feed the world. Ou"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://apply.workable.com/studioxag/j/64D258C2A6/",
+  "title": "StudioXAG - Current Openings",
+  "status": 200,
+  "bytes": 5775,
+  "markers": [
+   "workable"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workable:studioxag",
+  "score": 15,
+  "snippet": "StudioXAG creates bold spaces that tell big storiesWe are a B Corp-certified creative studio in London and Amsterdam that believe in business as a force for goo",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": 0,
+  "spec": "https://www.xa.com/about/career",
+  "identity": "refuted",
+  "note": "workable:studioxag = StudioXAG UK retail-design B-Corp homonym (live: 4 rows, 0 US); xagapply.com = US (Greensburg IN) drone-service application portal with no job listings; real XAG board xa.com/about/career is CN-only.",
+  "ts": "2026-10-01"
+ }
+}

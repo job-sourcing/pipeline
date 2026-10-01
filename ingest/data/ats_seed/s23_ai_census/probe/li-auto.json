@@ -1,0 +1,37 @@
+{
+ "brand": "Li Auto",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:37:23.371Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "li",
+   "spec": "feishuhire:li",
+   "title": "加入理想汽车"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:li",
+  "platform": "feishu",
+  "title": "加入理想汽车",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入理想汽车",
+  "brand": "Li Auto",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 7,
+  "spec": "ats:feishuhire:li",
+  "identity": "confirmed",
+  "note": "feishu slug 'li' board title 加入理想汽车 = Li Auto confirmed; live: 765 jobs, 7 US rows (HR&Admin Operations x2, Senior CMF Designer, Senior Interior Designer, +3) — US design/ops hiring on own board.",
+  "ts": "2026-10-01"
+ }
+}

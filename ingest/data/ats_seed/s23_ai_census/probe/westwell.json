@@ -1,0 +1,37 @@
+{
+ "brand": "Westwell",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:06:53.256Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "westwell",
+   "spec": "feishuhire:westwell",
+   "title": "加入westwell 西井科技"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:westwell",
+  "platform": "feishu",
+  "title": "加入westwell 西井科技",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入westwell 西井科技",
+  "brand": "Westwell",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:westwell",
+  "identity": "confirmed",
+  "note": "feishu board live-checked: 42 rows, 0 US (Ealing UK, Klang/Petaling Malaysia, 4 unresolved); Shanghai HQ with UK/TH/ME ops only, no US entity - matches census.",
+  "ts": "2026-10-01"
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "brand": "Huawei",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:25:29.101Z",
+ "candidates": [
+  {
+   "url": "https://careers.smartrecruiters.com/HuaweiTechnologies2",
+   "title": "Careers at Huawei Technologies",
+   "status": 200,
+   "bytes": 99396,
+   "markers": [
+    "smartrecruiters"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "smartrecruiters:HuaweiTechnologies2",
+   "score": 17,
+   "snippet": "Explore career opportunities at Huawei Technologies, a leading global technology company. Browse jobs by location and department, and apply online.",
+   "backend": "direct",
+   "sr_err": 404
+  },
+  {
+   "url": "https://career.huawei.com/en",
+   "title": "Huawei Careers Homepage",
+   "status": 200,
+   "bytes": 42076,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Huawei offers flexible career paths in all domains to help you unleash your full potential. You can build a diverse range of skills by working in a variety of d",
+   "backend": "direct"
+  },
+  {
+   "url": "https://career.huawei.com/reccampportal/portal5/index.html?v=x1x120241120",
+   "title": "华为招聘-找工作-求职-最新招聘信息-华为招聘官方网站",
+   "status": 200,
+   "bytes": 42839,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "华为招聘官方网站，提供最新的华为职位招聘信息，了解华为岗位要求、薪资待遇等等，海量职位等你来选，在华为开启一段 ...",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Huawei Careers Homepage",
+   "u": "https://career.huawei.com/en",
+   "s": "Huawei offers flexible career paths in all domains to help you unleash your full potential. You can build a diverse range of skills by working in a variety of d"
+  },
+  {
+   "t": "Huawei Career - 华为",
+   "u": "https://career.huawei.com/reccampportal/portal5/index.html?v=x1x120241120",
+   "s": "华为招聘官方网站，提供最新的华为职位招聘信息，了解华为岗位要求、薪资待遇等等，海量职位等你来选，在华为开启一段 ..."
+  },
+  {
+   "t": "Huawei Technologies Canada Co., Ltd. - Careers homepage",
+   "u": "https://huaweicanada.recruitee.com/",
+   "s": "Careers homepage About Huawei Huawei is a global technology leader that develops integrated products and solutions across four key areas: information and commun"
+  },
+  {
+   "t": "Huawei Jobs in Worldwide (29,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/huawei-jobs-worldwide",
+   "s": "Today's top 29,000+ Huawei jobs in Worldwide. Leverage your professional network, and get hired. New Huawei jobs added daily."
+  },
+  {
+   "t": "Careers at Huawei Technologies",
+   "u": "https://careers.smartrecruiters.com/HuaweiTechnologies2",
+   "s": "Explore career opportunities at Huawei Technologies, a leading global technology company. Browse jobs by location and department, and apply online."
+  },
+  {
+   "t": "careers-HUAWEI CLOUD - 华为云",
+   "u": "https://www.huaweicloud.com/intl/en-us/careers.html",
+   "s": "careers Huawei Cloud Computing Internships It doesn't matter if you are an undergraduate, a postgraduate, or a PhD, you are warmly welcomed to enroll in the Hua"
+  },
+  {
+   "t": "228 Huawei jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/huawei-jobs",
+   "s": "Today's top 228 Huawei jobs in United States. Leverage your professional network, and get hired. New Huawei jobs added daily."
+  },
+  {
+   "t": "97 Huawei jobs in Singapore - LinkedIn",
+   "u": "https://sg.linkedin.com/jobs/huawei-jobs",
+   "s": "Today's top 97 Huawei jobs in Singapore. Leverage your professional network, and get hired. New Huawei jobs added daily."
+  },
+  {
+   "t": "Huawei Careers Homepage",
+   "u": "https://career.huawei.com/en",
+   "s": "Huawei offers flexible career paths in all domains to help you unleash your full potential. You can build a diverse range of skills by working in a variety of d"
+  },
+  {
+   "t": "Huawei Career",
+   "u": "https://career.huawei.com/reccampportal/portal5/index.html?v=x1x120241120",
+   "s": "华为招聘官方网站，提供最新的华为职位招聘信息，了解华为岗位要求、薪资待遇等等，海量职位等你来选，在华为开启一段 ..."
+  },
+  {
+   "t": "Huawei Technologies Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Huawei-Technologies-jobs",
+   "s": "Find your ideal job on Jobsdb with 124 Huawei Technologies jobs (18 at Huawei Technologies) listed in Hong Kong. View all the Huawei Technologies vacancies now "
+  },
+  {
+   "t": "55 Huawei jobs in Hong Kong SAR - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/huawei-jobs",
+   "s": "Today's top 55 Huawei jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Huawei jobs added daily."
+  },
+  {
+   "t": "Huawei Hk Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/huawei-hk-jobs",
+   "s": "Find your ideal job at Jobsdb with 540 Huawei Hk jobs found in Hong Kong. View all our Huawei Hk vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Huawei Hong Kong Jobs in Hong Kong SAR (27 Open Roles) | LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/huawei-hong-kong-jobs",
+   "s": "Today's top 27 Huawei Hong Kong jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Huawei Hong Kong jobs added daily."
+  },
+  {
+   "t": "Huawei Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/Huawei-jobs",
+   "s": "Explore 53 Huawei jobs in Hong Kong. Browse through all our new daily-updated Huawei job listing now!"
+  },
+  {
+   "t": "64 Huawei jobs in Shenzhen - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/huawei-jobs-shenzhen-guangdong-china",
+   "s": "Today's top 64 Huawei jobs in Shenzhen. Leverage your professional network, and get hired. New Huawei jobs added daily."
+  },
+  {
+   "t": "Huawei Careers Homepage",
+   "u": "https://career.huawei.com/en",
+   "s": "Huawei offers flexible career paths in all domains to help you unleash your full potential. You can build a diverse range of skills by working in a variety of d"
+  },
+  {
+   "t": "Huawei Technologies Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Huawei-Technologies-jobs",
+   "s": "Find your ideal job on Jobsdb with 124 Huawei Technologies jobs (18 at Huawei Technologies) listed in Hong Kong. View all the Huawei Technologies vacancies now "
+  },
+  {
+   "t": "55 Huawei jobs in Hong Kong SAR - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/huawei-jobs",
+   "s": "Today's top 55 Huawei jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Huawei jobs added daily."
+  },
+  {
+   "t": "Huawei Career - 华为",
+   "u": "https://career.huawei.com/reccampportal/portal5/index.html?v=x1x120241120",
+   "s": "Chinese graduates (Bachelor's & Master's) Chinese graduates (Doctor's) Overseas Chinese graduates (Bachelor's & Master's) Overseas Chinese graduates (Doctor's) "
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.smartrecruiters.com/HuaweiTechnologies2",
+  "title": "Careers at Huawei Technologies",
+  "status": 200,
+  "bytes": 99396,
+  "markers": [
+   "smartrecruiters"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "smartrecruiters:HuaweiTechnologies2",
+  "score": 17,
+  "snippet": "Explore career opportunities at Huawei Technologies, a leading global technology company. Browse jobs by location and department, and apply online.",
+  "backend": "direct",
+  "sr_err": 404
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 1,
+  "spec": "smartrecruiters:HuaweiTechnologies2",
+  "identity": "confirmed",
+  "note": "Genuine Huawei SR board but stale legacy (35 postings, India-centric; country=us returns 1 ghost posting: 2015 'Chief Cloud Architect @ Bangalore, India' mislocated to New York); US Entity List — US hiring frozen; POLICY: do not wire regardless of rows; career.huawei.com is own board, China/global portals.",
+  "ts": "2026-10-01"
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "brand": "Xiaomi",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:12:14.399Z",
+ "candidates": [
+  {
+   "url": "https://xiaomi.jobs.f.mioffice.cn/global",
+   "title": "Job Openings",
+   "status": 200,
+   "bytes": 117536,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Advance your career with 小米科技. Search, browse, and apply for current job openings and join us.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://xiaomi.jobs.f.mioffice.cn/index",
+   "title": "小米社会招聘",
+   "status": 200,
+   "bytes": 110201,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "到小米科技，开启你的新工作",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.ctgoodjobs.hk/jobs/xiaomi-jobs",
+   "title": "Xiaomi Jobs in Hong Kong - Oct 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 723903,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 10 Xiaomi jobs in Hong Kong. Browse through all our new daily-updated Xiaomi job listing now!",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "career.mi.com",
+   "u": "https://career.mi.com/home",
+   "s": "career.mi.com"
+  },
+  {
+   "t": "Xiaomi Careers",
+   "u": "https://career.mi.com/career",
+   "s": "Xiaomi Careers This programme offers practical opportunities for students at various academic stages, serving as a key channel for Xiaomi to cultivate new talen"
+  },
+  {
+   "t": "Job Openings - xiaomi.jobs.f.mioffice.cn",
+   "u": "https://xiaomi.jobs.f.mioffice.cn/global",
+   "s": "Advance your career with 小米科技. Search, browse, and apply for current job openings and join us."
+  },
+  {
+   "t": "Xiaomi Technology: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/xiaomi-technology/jobs/",
+   "s": "Xiaomi Technology | 1,685,195 followers on LinkedIn. Xiaomi Corporation was founded in April 2010 and listed on the Main Board of the Hong Kong Stock Exchange o"
+  },
+  {
+   "t": "Xiaomi Global Home",
+   "u": "https://www.mi.com/global/careers/list",
+   "s": "Welcome to Xiaomi global official website to buy your favorite products. Here you can buy the latest Xiaomi smartphones, Redmi smartphones, Mi Bands, Power bank"
+  },
+  {
+   "t": "校园招聘 - 小米招聘",
+   "u": "https://hr.xiaomi.com/website/campus.html",
+   "s": "面向应届毕业生开放机会，覆盖AI大模型、软硬件、汽车、供应链、产品、设计、新零售等全方向岗位，来小米和同频伙伴一起成长，共同定义下一代产品。"
+  },
+  {
+   "t": "加入小米 - 小米香港官網 - Xiaomi",
+   "u": "https://www.mi.com/hk/careers/",
+   "s": "Xiaomi Care 以舊換新 學生優惠 幫助中心 付款幫助 常見Q&A PayPal使用幫助 聯絡我們 除舊服務條款 客戶支援 商品召回通知 線下維修站點 手機維修價格查詢 使用指南 服務進度查詢 小米售後政策 配送規範 尊享服務 致電我們:3077-3620 關於小米 瞭解小米 管理團隊 隱私 ..."
+  },
+  {
+   "t": "Xiaomi Technology - LinkedIn",
+   "u": "https://www.linkedin.com/company/xiaomi-technology/",
+   "s": "Xiaomi Technology | 1,684,854 followers on LinkedIn. Xiaomi Corporation was founded in April 2010 and listed on the Main Board of the Hong Kong Stock Exchange o"
+  },
+  {
+   "t": "Job Openings - xiaomi.jobs.f.mioffice.cn",
+   "u": "https://xiaomi.jobs.f.mioffice.cn/global",
+   "s": "Advance your career with 小米科技. Search, browse, and apply for current job openings and join us."
+  },
+  {
+   "t": "Xiaomi Global Home",
+   "u": "https://www.mi.com/global/careers/list",
+   "s": "Welcome to Xiaomi global official website to buy your favorite products. Here you can buy the latest Xiaomi smartphones, Redmi smartphones, Mi Bands, Power bank"
+  },
+  {
+   "t": "Xiaomi Technology: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/xiaomi-technology/jobs/",
+   "s": "Xiaomi Technology | 1,685,195 followers on LinkedIn. Xiaomi Corporation was founded in April 2010 and listed on the Main Board of the Hong Kong Stock Exchange o"
+  },
+  {
+   "t": "career.mi.com",
+   "u": "https://career.mi.com/home",
+   "s": "career.mi.com"
+  },
+  {
+   "t": "Xiaomi Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/xiaomi-jobs",
+   "s": "Find your ideal job on Jobsdb with 15 Xiaomi jobs (2 at Xiaomi) listed in Hong Kong. View all the Xiaomi vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "小米社会招聘 - xiaomi.jobs.f.mioffice.cn",
+   "u": "https://xiaomi.jobs.f.mioffice.cn/index",
+   "s": "到小米科技，开启你的新工作"
+  },
+  {
+   "t": "校园招聘 - 小米招聘",
+   "u": "https://hr.xiaomi.com/website/campus.html",
+   "s": "面向应届毕业生开放机会，覆盖AI大模型、软硬件、汽车、供应链、产品、设计、新零售等全方向岗位，来小米和同频伙伴一起成长，共同定义下一代产品。"
+  },
+  {
+   "t": "Xiaomi Careers",
+   "u": "https://career.mi.com/career",
+   "s": "Xiaomi Careers This programme offers practical opportunities for students at various academic stages, serving as a key channel for Xiaomi to cultivate new talen"
+  },
+  {
+   "t": "Xiaomi Careers - career.mi.com",
+   "u": "https://career.mi.com/career",
+   "s": "This programme offers practical opportunities for students at various academic stages, serving as a key channel for Xiaomi to cultivate new talent and support s"
+  },
+  {
+   "t": "Xiaomi Technology: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/xiaomi-technology/jobs/",
+   "s": "Xiaomi Technology | 1,685,195 followers on LinkedIn. Xiaomi Corporation was founded in April 2010 and listed on the Main Board of the Hong Kong Stock Exchange o"
+  },
+  {
+   "t": "Job Openings - xiaomi.jobs.f.mioffice.cn",
+   "u": "https://xiaomi.jobs.f.mioffice.cn/global",
+   "s": "Advance your career with 小米科技. Search, browse, and apply for current job openings and join us."
+  },
+  {
+   "t": "Xiaomi Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/xiaomi-jobs",
+   "s": "Find your ideal job on Jobsdb with 15 Xiaomi jobs (2 at Xiaomi) listed in Hong Kong. View all the Xiaomi vacancies now with new jobs added daily!"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://xiaomi.jobs.f.mioffice.cn/global",
+  "platform": "custom",
+  "title": "Job Openings"
+ },
+ "verdict": "custom_surface"
+}

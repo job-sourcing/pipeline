@@ -1,0 +1,37 @@
+{
+ "brand": "RoboSense",
+ "tier": "probe_A",
+ "lca": "ROBOSENSE INC.",
+ "ts": "2026-10-01T12:50:31.156Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "robosense",
+   "spec": "feishuhire:robosense",
+   "title": "加入深圳市速腾聚创科技有限公司"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:robosense",
+  "platform": "feishu",
+  "title": "加入深圳市速腾聚创科技有限公司",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入深圳市速腾聚创科技有限公司",
+  "brand": "RoboSense",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:robosense",
+  "identity": "confirmed",
+  "note": "feishu board (加入深圳市速腾聚创科技有限公司 = RoboSense 速腾聚创; EN-name identity_check false but CN name matches) live 0 posts; ROBOSENSE INC. Plymouth MI (LCA x1) but no own-board US rows; robosense.ai global careers unchecked (budget).",
+  "ts": "2026-10-01"
+ }
+}

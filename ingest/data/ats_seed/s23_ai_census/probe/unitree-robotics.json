@@ -1,0 +1,24 @@
+{
+ "brand": "Unitree Robotics",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:03:33.215Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.unitree.com/position/",
+  "platform": "custom",
+  "title": "Join Us - Unitree Robotics",
+  "via": "guess"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.unitree.com/position/",
+  "identity": "confirmed",
+  "note": "Own board unitree.com/position (SSR custom Nuxt): 26 jobs ALL Hangzhou; /us/jobs 404; footer 'United States/English' is locale switcher only; US sales via unitree.com/us but no US job rows on own surface.",
+  "ts": "2026-10-01"
+ }
+}

@@ -1,0 +1,236 @@
+{
+ "board": "custom:blacksesame",
+ "company": "Black Sesame Technologies",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-01",
+ "count": 6,
+ "details_merged": 6,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 0,
+ "rows": [
+  {
+   "reqId": "sr-engineer-embedded-software",
+   "title": "Sr. Engineer, Embedded Software",
+   "company": "Black Sesame Technologies",
+   "url": "https://www.blacksesame.com/en/join-us/",
+   "externalPath": "/sr-engineer-embedded-software",
+   "locationsText": "San Jose, US",
+   "postedOn": "Posted 32 Days Ago",
+   "postedOnIso": "2026-08-30",
+   "timeType": "",
+   "bulletFields": [
+    "sr-engineer-embedded-software"
+   ],
+   "ats": "blacksesame",
+   "detail": {
+    "title": "Sr. Engineer, Embedded Software",
+    "location": "San Jose, US",
+    "additionalLocations": [],
+    "jobDescription": "",
+    "timeType": "",
+    "startDate": "2026-08-30",
+    "externalUrl": "https://www.blacksesame.com/en/join-us/",
+    "jobReqId": "sr-engineer-embedded-software",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Black Sesame Technologies",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "software-engineer-ai-framework",
+   "title": "Software Engineer, AI Framework",
+   "company": "Black Sesame Technologies",
+   "url": "https://www.blacksesame.com/en/join-us/",
+   "externalPath": "/software-engineer-ai-framework",
+   "locationsText": "San Jose, US",
+   "postedOn": "Posted 567 Days Ago",
+   "postedOnIso": "2025-03-13",
+   "timeType": "",
+   "bulletFields": [
+    "software-engineer-ai-framework"
+   ],
+   "ats": "blacksesame",
+   "detail": {
+    "title": "Software Engineer, AI Framework",
+    "location": "San Jose, US",
+    "additionalLocations": [],
+    "jobDescription": "",
+    "timeType": "",
+    "startDate": "2025-03-13",
+    "externalUrl": "https://www.blacksesame.com/en/join-us/",
+    "jobReqId": "software-engineer-ai-framework",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Black Sesame Technologies",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "software-engineer-ai-compiler",
+   "title": "Software Engineer, AI Compiler",
+   "company": "Black Sesame Technologies",
+   "url": "https://www.blacksesame.com/en/join-us/",
+   "externalPath": "/software-engineer-ai-compiler",
+   "locationsText": "San Jose, US",
+   "postedOn": "Posted 567 Days Ago",
+   "postedOnIso": "2025-03-13",
+   "timeType": "",
+   "bulletFields": [
+    "software-engineer-ai-compiler"
+   ],
+   "ats": "blacksesame",
+   "detail": {
+    "title": "Software Engineer, AI Compiler",
+    "location": "San Jose, US",
+    "additionalLocations": [],
+    "jobDescription": "",
+    "timeType": "",
+    "startDate": "2025-03-13",
+    "externalUrl": "https://www.blacksesame.com/en/join-us/",
+    "jobReqId": "software-engineer-ai-compiler",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Black Sesame Technologies",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "ml-accelerator-compiler-developer",
+   "title": "ML Accelerator Compiler Developer",
+   "company": "Black Sesame Technologies",
+   "url": "https://www.blacksesame.com/en/join-us/",
+   "externalPath": "/ml-accelerator-compiler-developer",
+   "locationsText": "San Jose, US",
+   "postedOn": "Posted 567 Days Ago",
+   "postedOnIso": "2025-03-13",
+   "timeType": "",
+   "bulletFields": [
+    "ml-accelerator-compiler-developer"
+   ],
+   "ats": "blacksesame",
+   "detail": {
+    "title": "ML Accelerator Compiler Developer",
+    "location": "San Jose, US",
+    "additionalLocations": [],
+    "jobDescription": "",
+    "timeType": "",
+    "startDate": "2025-03-13",
+    "externalUrl": "https://www.blacksesame.com/en/join-us/",
+    "jobReqId": "ml-accelerator-compiler-developer",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Black Sesame Technologies",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "ai-perception-algorithm-engineer-scientist",
+   "title": "AI Perception Algorithm Engineer/Scientist",
+   "company": "Black Sesame Technologies",
+   "url": "https://www.blacksesame.com/en/join-us/",
+   "externalPath": "/ai-perception-algorithm-engineer-scientist",
+   "locationsText": "San Jose, US",
+   "postedOn": "Posted 567 Days Ago",
+   "postedOnIso": "2025-03-13",
+   "timeType": "",
+   "bulletFields": [
+    "ai-perception-algorithm-engineer-scientist"
+   ],
+   "ats": "blacksesame",
+   "detail": {
+    "title": "AI Perception Algorithm Engineer/Scientist",
+    "location": "San Jose, US",
+    "additionalLocations": [],
+    "jobDescription": "",
+    "timeType": "",
+    "startDate": "2025-03-13",
+    "externalUrl": "https://www.blacksesame.com/en/join-us/",
+    "jobReqId": "ai-perception-algorithm-engineer-scientist",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Black Sesame Technologies",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "ip-counsel",
+   "title": "IP Counsel",
+   "company": "Black Sesame Technologies",
+   "url": "https://www.blacksesame.com/en/join-us/",
+   "externalPath": "/ip-counsel",
+   "locationsText": "San Jose, US",
+   "postedOn": "Posted 567 Days Ago",
+   "postedOnIso": "2025-03-13",
+   "timeType": "",
+   "bulletFields": [
+    "ip-counsel"
+   ],
+   "ats": "blacksesame",
+   "detail": {
+    "title": "IP Counsel",
+    "location": "San Jose, US",
+    "additionalLocations": [],
+    "jobDescription": "",
+    "timeType": "",
+    "startDate": "2025-03-13",
+    "externalUrl": "https://www.blacksesame.com/en/join-us/",
+    "jobReqId": "ip-counsel",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Black Sesame Technologies",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

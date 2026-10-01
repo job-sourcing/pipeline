@@ -1,0 +1,37 @@
+{
+ "brand": "Infinigence",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:28:39.246Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "infinigence",
+   "spec": "feishuhire:infinigence",
+   "title": "加入无问芯穹"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:infinigence",
+  "platform": "feishu",
+  "title": "加入无问芯穹",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入无问芯穹",
+  "brand": "Infinigence",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:infinigence",
+  "identity": "confirmed",
+  "note": "feishuhire board '加入无问芯穹' = Infinigence (probe identity_check Latin-vs-Chinese false negative); live adapter: 60 postings, 60 non-US, 0 US rows — China-only.",
+  "ts": "2026-10-01"
+ }
+}

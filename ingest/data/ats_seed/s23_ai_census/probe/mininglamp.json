@@ -1,0 +1,162 @@
+{
+ "brand": "MiningLamp",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:42:29.342Z",
+ "candidates": [
+  {
+   "url": "https://mininglamp.zhiye.com/campus/jobs",
+   "title": "明略科技招聘官网",
+   "status": 200,
+   "bytes": 46216,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "©2026 明略科技招聘官网 京ICP备05051632号-16 京公网安备 11010802032024号 | 隐私政策 Powered by Beisen",
+   "backend": "direct"
+  },
+  {
+   "url": "https://mininglamp.zhiye.com/",
+   "title": "明略科技招聘官网",
+   "status": 200,
+   "bytes": 46216,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "社会招聘 校园招聘",
+   "backend": "direct"
+  },
+  {
+   "url": "https://alion.io/company/mininglamp-technology",
+   "title": "MiningLamp Technology: Jobs & Salaries (2026) | Alion",
+   "status": 200,
+   "bytes": 19405,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "MiningLamp Technology — MiningLamp Technology builds knowledge graph and data intelligence platforms. Its analytics serve. tech stack & team (2026) on Alion.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "明略科技招聘官网",
+   "u": "https://mininglamp.zhiye.com/",
+   "s": "社会招聘 校园招聘"
+  },
+  {
+   "t": "明略科技招聘官网 - mininglamp.zhiye.com",
+   "u": "https://mininglamp.zhiye.com/campus/jobs",
+   "s": "©2026 明略科技招聘官网 京ICP备05051632号-16 京公网安备 11010802032024号 | 隐私政策 Powered by Beisen"
+  },
+  {
+   "t": "MiningLamp Technology: Jobs & Salaries (2026) | Alion",
+   "u": "https://alion.io/company/mininglamp-technology",
+   "s": "MiningLamp Technology — MiningLamp Technology builds knowledge graph and data intelligence platforms. Its analytics serve. tech stack & team (2026) on Alion."
+  },
+  {
+   "t": "MININGLAMP Technology hiring Business Director in Hong Kong ... - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/view/business-director-at-mininglamp-technology-4422269754",
+   "s": "Posted 9:23:35 AM. Key ResponsibilitiesTeam Leadership &amp; Client ManagementLead and manage business teams…See this and similar jobs on LinkedIn."
+  },
+  {
+   "t": "MiningLamp - LinkedIn",
+   "u": "https://www.linkedin.com/company/semidata",
+   "s": "MiningLamp | 1,306 followers on LinkedIn. 明略数据成立于2014年，是行业人工智能解决方案提供商，深耕公共安全、金融、工业与物联网等行业领域，通过构建 ..."
+  },
+  {
+   "t": "MININGLAMP Technology hiring Market Development & Partnerships Manager ...",
+   "u": "https://hk.linkedin.com/jobs/view/market-development-partnerships-manager-at-mininglamp-technology-4434196713",
+   "s": "About Mininglamp Technology Mininglamp Technology (2718.HK) is an enterprise AI and data intelligence company that helps brands and organisations turn complex d"
+  },
+  {
+   "t": "Enterprise-Level Data Intelligence Application Software ... - Mininglamp",
+   "u": "https://www.mininglamp.com/en/",
+   "s": "The competition is hosted by Mininglamp Technology, and co-organized by PekingUniversity, the Institute of Automation of the Chinese Academy of Sciences, the Ce"
+  },
+  {
+   "t": "MININGLAMP Technology - LinkedIn",
+   "u": "https://www.linkedin.com/company/mininglamp-technology",
+   "s": "Mininglamp Technology Group is a leading group in China that provides one-stop artificial intelligence (AI) products and service platform. We aim to apply the n"
+  },
+  {
+   "t": "MININGLAMP Technology hiring Business Director in Hong Kong ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/4314341610",
+   "s": "Business Director MININGLAMP Technology Hong Kong, Hong Kong SAR 10 months ago Be among the first 25 applicants See who MININGLAMP Technology has hired for this"
+  },
+  {
+   "t": "MiningLamp Technology: Jobs & Salaries (2026) | Alion",
+   "u": "https://alion.io/company/mininglamp-technology",
+   "s": "MiningLamp Technology — MiningLamp Technology builds knowledge graph and data intelligence platforms. Its analytics serve. tech stack & team (2026) on Alion."
+  },
+  {
+   "t": "MININGLAMP Technology hiring 销售营销经理 in Hong Kong ... - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/view/%E9%94%80%E5%94%AE%E8%90%A5%E9%94%80%E7%BB%8F%E7%90%86-at-mininglamp-technology-4433910568",
+   "s": "MININGLAMP Technology Hong Kong, Hong Kong SAR Just now Be among the first 25 applicants See who MININGLAMP Technology has hired for this role Apply"
+  },
+  {
+   "t": "MININGLAMP Technology hiring Market Development & Partnerships Manager ...",
+   "u": "https://hk.linkedin.com/jobs/view/market-development-partnerships-manager-at-mininglamp-technology-4434196713",
+   "s": "About Mininglamp Technology Mininglamp Technology (2718.HK) is an enterprise AI and data intelligence company that helps brands and organisations turn complex d"
+  },
+  {
+   "t": "明略科技招聘官网 - mininglamp.zhiye.com",
+   "u": "https://mininglamp.zhiye.com/campus/jobs",
+   "s": "©2026 明略科技招聘官网 京ICP备05051632号-16 京公网安备 11010802032024号 | 隐私政策 Powered by Beisen"
+  },
+  {
+   "t": "明略科技招聘官网",
+   "u": "https://mininglamp.zhiye.com/",
+   "s": "社会招聘 校园招聘"
+  },
+  {
+   "t": "1,000+ Mininglamp Technology jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/mininglamp-technology-jobs-worldwide?f_EA=true",
+   "s": "Today's top 1,000+ Mininglamp Technology jobs in Worldwide. Leverage your professional network, and get hired. New Mininglamp Technology jobs added daily."
+  },
+  {
+   "t": "Business Director at MININGLAMP Technology in Hong Kong | Jobrapido.com",
+   "u": "https://hk.jobrapido.com/jobpreview/2207640323599892480",
+   "s": "Job Location: Hong Kong Company: MININGLAMP Technology Employment Type Full Time Other jobs like this Published on www.allthetopbananas.com 2026年6月12日 Lead and "
+  },
+  {
+   "t": "MiningLamp Technology: Jobs & Salaries (2026) | Alion",
+   "u": "https://alion.io/company/mininglamp-technology",
+   "s": "Overview MiningLamp Technology builds knowledge graph and data intelligence platforms. Its analytics serve public security, finance and industrial customers inv"
+  },
+  {
+   "t": "MININGLAMP Technology hiring Business Director in Hong Kong ... - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/view/business-director-at-mininglamp-technology-4422269754",
+   "s": "Posted 9:23:35 AM. Key ResponsibilitiesTeam Leadership &amp; Client ManagementLead and manage business teams…See this and similar jobs on LinkedIn."
+  },
+  {
+   "t": "明略科技招聘官网",
+   "u": "https://mininglamp.zhiye.com/",
+   "s": "校园招聘 登录/注册"
+  },
+  {
+   "t": "明略科技招聘官网 - mininglamp.zhiye.com",
+   "u": "https://mininglamp.zhiye.com/campus/jobs",
+   "s": "©2026 明略科技招聘官网 京ICP备05051632号-16 京公网安备 11010802032024号 | 隐私政策 Powered by Beisen"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://alion.io/company/mininglamp-technology",
+  "platform": "custom",
+  "title": "MiningLamp Technology: Jobs & Salaries (2026) | Alion"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://mininglamp.zhiye.com",
+  "identity": "confirmed",
+  "note": "own Beisen/zhiye board (明略科技招聘官网) — CN roles; HK-listed 2718.HK; HK BD roles seen only via LinkedIn (not own board); probe best alion.io = 3rd-party aggregator; no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
+}

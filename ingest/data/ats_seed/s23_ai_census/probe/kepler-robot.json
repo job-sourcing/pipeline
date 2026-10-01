@@ -1,0 +1,38 @@
+{
+ "brand": "Kepler Robot",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:33:45.010Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "kepler",
+   "spec": "ashby:kepler",
+   "title": " (0 jobs)",
+   "jobs": 0
+  }
+ ],
+ "best": {
+  "spec": "ashby:kepler",
+  "platform": "ashby",
+  "title": " (0 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": null,
+  "brand": "Kepler Robot",
+  "ok": null,
+  "note": "no self-name — job-content adjudication required"
+ },
+ "verdict": "dict_unverified",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": null,
+  "spec": "ashby:kepler",
+  "identity": "unverified",
+  "note": "live ashby:kepler = 0 jobs, no company self-name (API returns jobs:[]) so cannot attribute — matches known trap that KEPLER COMPUTING LCA is an unrelated US chip startup; Kepler Robot's gotokepler.com has no careers board, no US hiring.",
+  "ts": "2026-10-01"
+ }
+}

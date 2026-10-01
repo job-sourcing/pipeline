@@ -1,0 +1,169 @@
+{
+ "brand": "Kuaishou",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:34:46.733Z",
+ "candidates": [
+  {
+   "url": "https://kwai.wd3.myworkdayjobs.com/Kuaishou_External",
+   "title": "",
+   "status": 200,
+   "bytes": 67,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "workday:Kuaishou_External",
+   "score": 17,
+   "snippet": "Kuaishou is a leading content community and social platform globally. Kuaishou international business includes two short video and social platforms called Kwai ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://zhaopin.kuaishou.cn/recruit/e/",
+   "title": "快手招聘",
+   "status": 200,
+   "bytes": 2195,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "快手招聘官方平台，邀请来自国内外各界精英，了解快手、关注快手、加入快手，快手招聘无界限，让有才华、有创造性的 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "https://usrdc.kuaishou.com/join-us",
+   "title": "KuaiShou U.S. R&D Center",
+   "status": 200,
+   "bytes": 4589,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Kuaishou is committed to the principles of equal employment. We are committed to complying with all federal, state, and local laws providing equal employment op",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "快手招聘 - kuaishou",
+   "u": "https://zhaopin.kuaishou.cn/recruit/e/",
+   "s": "快手招聘官方平台，邀请来自国内外各界精英，了解快手、关注快手、加入快手，快手招聘无界限，让有才华、有创造性的 ..."
+  },
+  {
+   "t": "KuaiShou U.S. R&D Center",
+   "u": "https://usrdc.kuaishou.com/join-us",
+   "s": "Kuaishou is committed to the principles of equal employment. We are committed to complying with all federal, state, and local laws providing equal employment op"
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://kwai.wd3.myworkdayjobs.com/Kuaishou_External",
+   "s": "Kuaishou is a leading content community and social platform globally. Kuaishou international business includes two short video and social platforms called Kwai "
+  },
+  {
+   "t": "Kuaishou Technology: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/kuaishou/jobs",
+   "s": "Kuaishou Technology is a technology company that develops content sharing platforms and makes content production, distribution, and consumption fast and easy."
+  },
+  {
+   "t": "加入快手",
+   "u": "https://www.kuaishou.com/joinus.he.html",
+   "s": "简历请投递: hr@kuaishou.com 1、是靠谱的工程师：有扎实的基础，有丰富开发经验，有钻研新技术的热情 2、有创业者基因：你渴望一个能够共同成长的团队，而不是找一份养家糊口工作 3、有开发高品质产品、编写高质量代码的自我要求 4、丰富的iOS客户端开发经验"
+  },
+  {
+   "t": "KuaiShou English Website",
+   "u": "https://www.kuaishou.com/en",
+   "s": "Kuaishou is a leading content community and social platform globally. We believe each person is unique with his or her own strengths and needs. We believe engag"
+  },
+  {
+   "t": "Kuaishou Technology Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Kuaishou-Technology",
+   "s": "Find out what works well at Kuaishou Technology from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Kuaishou Technology Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/kuaishou-technology/jobs",
+   "s": "Explore jobs and careers at Kuaishou Technology. Kuaishou Technology is currently hiring for a range of positions."
+  },
+  {
+   "t": "快手招聘 - kuaishou",
+   "u": "https://zhaopin.kuaishou.cn/recruit/e/",
+   "s": "快手招聘官方平台，邀请来自国内外各界精英，了解快手、关注快手、加入快手，快手招聘无界限，让有才华、有创造性的 ..."
+  },
+  {
+   "t": "Kuaishou Technology: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/kuaishou/jobs",
+   "s": "Kuaishou Technology is a technology company that develops content sharing platforms and makes content production, distribution, and consumption fast and easy."
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://kwai.wd3.myworkdayjobs.com/Kuaishou_External",
+   "s": "Kuaishou is a leading content community and social platform globally. Kuaishou international business includes two short video and social platforms called Kwai "
+  },
+  {
+   "t": "KuaiShou U.S. R&D Center",
+   "u": "https://usrdc.kuaishou.com/join-us",
+   "s": "Kuaishou is committed to the principles of equal employment. We are committed to complying with all federal, state, and local laws providing equal employment op"
+  },
+  {
+   "t": "Kuaishou Technology: Jobs | LinkedIn",
+   "u": "https://pk.linkedin.com/company/kuaishou/jobs",
+   "s": "Kuaishou Technology | 145,969 followers on LinkedIn. Kuaishou Technology is a technology company that develops content sharing platforms and makes content produ"
+  },
+  {
+   "t": "21,000+ Kuaishou Technology jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/kuaishou-technology-jobs-worldwide",
+   "s": "Today's top 21,000+ Kuaishou Technology jobs in Worldwide. Leverage your professional network, and get hired. New Kuaishou Technology jobs added daily."
+  },
+  {
+   "t": "加入快手游戏 - 匠心弹指 游戏宇宙 - Kuaishou",
+   "u": "https://sogame.kuaishou.com/gamewebsite/kwaiGames/join",
+   "s": "欢迎来到快手游戏招聘官网。无论你是职场人士、应届毕业生或在校学生，你都能加入我们的游戏宇宙创行之路，让\"做游戏\"成为\"创造宇宙\"的梦想之旅。"
+  },
+  {
+   "t": "Kuaishou Technology: Jobs | LinkedIn",
+   "u": "https://sg.linkedin.com/company/kuaishou/jobs",
+   "s": "Kuaishou Technology | 146,831 followers on LinkedIn. Kuaishou Technology is a technology company that develops content sharing platforms and makes content produ"
+  },
+  {
+   "t": "快手招聘 - kuaishou",
+   "u": "https://zhaopin.kuaishou.cn/recruit/e/",
+   "s": "快手招聘官方平台，邀请来自国内外各界精英，了解快手、关注快手、加入快手，快手招聘无界限，让有才华、有创造性的 ..."
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://kwai.wd3.myworkdayjobs.com/Kuaishou_External",
+   "s": "Kuaishou is a leading content community and social platform globally. Kuaishou international business includes two short video and social platforms called Kwai "
+  },
+  {
+   "t": "Kuaishou Technology: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/kuaishou/jobs",
+   "s": "Kuaishou Technology is a technology company that develops content sharing platforms and makes content production, distribution, and consumption fast and easy."
+  },
+  {
+   "t": "kuaishou - 快手招聘",
+   "u": "https://zhaopin.kuaishou.cn/",
+   "s": "快手招聘官方平台，邀请来自国内外各界精英，了解快手、关注快手、加入快手，快手招聘无界限，让有才华、有创造性的 ..."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://kwai.wd3.myworkdayjobs.com/Kuaishou_External",
+  "title": "",
+  "status": 200,
+  "bytes": 67,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "workday:Kuaishou_External",
+  "score": 17,
+  "snippet": "Kuaishou is a leading content community and social platform globally. Kuaishou international business includes two short video and social platforms called Kwai ",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "deferred_js",
+  "us_rows": null,
+  "spec": "https://usrdc.kuaishou.com/join-us",
+  "identity": "confirmed",
+  "note": "KuaiShou U.S. R&D Center (Silicon Valley HQ + Seattle/San Diego, est. 2018) own join-us page is a JS app (no static jobs) — needs headless pass; workday kwai.wd3.myworkdayjobs.com/Kuaishou_External verified own: 46 jobs, 0 US (Sao Paulo 27/Jakarta 8/Singapore 4/Riyadh 2/Bogota 2/Dubai/Cairo) = intl arm only.",
+  "ts": "2026-10-01"
+ }
+}

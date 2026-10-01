@@ -1,0 +1,166 @@
+{
+ "brand": "IDEA Research Institute",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:26:45.876Z",
+ "candidates": [
+  {
+   "url": "https://www.idea.int/careers",
+   "title": "Careers | International IDEA",
+   "status": 200,
+   "bytes": 86919,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Put your passion for democracy—our universal human aspiration—into practice. Work with us and support democracy. For more information about Internationa",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.idea.int/jobs",
+   "title": "Current job openings - International IDEA",
+   "status": 200,
+   "bytes": 103510,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "The International Institute for Democracy and Electoral Assistance (International IDEA) is an intergovernmental organization that supports sustainable democracy",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.ideapublicschools.org/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5804,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We're IDEA From the first day students set foot on an IDEA Public Schools campus, we begin preparing them for success in college and in life. We achieve our rec",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | International IDEA",
+   "u": "https://www.idea.int/careers",
+   "s": "Careers Put your passion for democracy—our universal human aspiration—into practice. Work with us and support democracy. For more information about Internationa"
+  },
+  {
+   "t": "Current job openings - International IDEA",
+   "u": "https://careers.idea.int/jobs",
+   "s": "The International Institute for Democracy and Electoral Assistance (International IDEA) is an intergovernmental organization that supports sustainable democracy"
+  },
+  {
+   "t": "IDEA Public Schools Careers",
+   "u": "https://careers.ideapublicschools.org/",
+   "s": "We're IDEA From the first day students set foot on an IDEA Public Schools campus, we begin preparing them for success in college and in life. We achieve our rec"
+  },
+  {
+   "t": "粤港澳大湾区数字经济研究院（IDEA研究院）",
+   "u": "https://www.idea.edu.cn/",
+   "s": "粤港澳大湾区数字经济研究院（International Digital Economy Academy，简称IDEA研究院）致力于人工智能和数字经济领域的前沿研究与产业落地，是一家国际化创新型机构。IDEA研究院力求从技术出发，孵化优质企业、培养杰出人才、构建合作生态。我们坚持科技擎天、产业立地，相信最好的研究从需求中"
+  },
+  {
+   "t": "Careers · IDEA - Islamic Relief USA",
+   "u": "https://development.org/careers",
+   "s": "Open roles at IDEA, formerly Islamic Relief USA, live from our hiring portal: the Alexandria headquarters and four regional offices, and the benefits package in"
+  },
+  {
+   "t": "International IDEA",
+   "u": "https://www.idea.int/",
+   "s": "International IDEA is an intergovernmental organization (IGO) with a mandate to support sustainable democracy worldwide."
+  },
+  {
+   "t": "A unique career - International IDEA",
+   "u": "https://careers.idea.int/",
+   "s": "About International IDEA The International Institute for Democracy and Electoral Assistance (International IDEA) is an intergovernmental organization that suppo"
+  },
+  {
+   "t": "Jobs at the IDEA Institute | IDEA Institute | Illinois",
+   "u": "https://idea.illinois.edu/about/jobs",
+   "s": "Jobs at the IDEA Institute Graduate and Undergraduate Research Aides Job Description: The IDEA Institute is seeking hourly student workers for short-, medium- a"
+  },
+  {
+   "t": "Careers | International IDEA",
+   "u": "https://www.idea.int/careers",
+   "s": "For more information about International IDEA's recruitment process, how to apply for a post or how to receive notifications when a position that matches your p"
+  },
+  {
+   "t": "Current job openings - International IDEA",
+   "u": "https://careers.idea.int/jobs",
+   "s": "The International Institute for Democracy and Electoral Assistance (International IDEA) is an intergovernmental organization that supports sustainable democracy"
+  },
+  {
+   "t": "粤港澳大湾区数字经济研究院（IDEA研究院）",
+   "u": "https://www.idea.edu.cn/",
+   "s": "粤港澳大湾区数字经济研究院（International Digital Economy Academy，简称IDEA研究院）致力于人工智能和数字经济领域的前沿研究与产业落地，是一家国际化创新型机构。IDEA研究院力求从技术出发，孵化优质企业、培养杰出人才、构建合作生态。我们坚持科技擎天、产业立地，相信最好的研究从需求中"
+  },
+  {
+   "t": "首页",
+   "u": "https://idea.zhiye.com/",
+   "s": "IDEA研究院秉承共享共赢共生的开源开放精神，积极营造自由而富有激情的创新工作环境，聚集全世界最聪慧的大脑一起创造人类社会最需要的价值。 我们坚持科技擎天、产业立地，相信最好的研究从需求中来，到需求中去，最终惠及广大企业和受众。"
+  },
+  {
+   "t": "International IDEA",
+   "u": "https://www.idea.int/",
+   "s": "International IDEA is an intergovernmental organization (IGO) with a mandate to support sustainable democracy worldwide."
+  },
+  {
+   "t": "A unique career - International IDEA",
+   "u": "https://careers.idea.int/",
+   "s": "About International IDEA The International Institute for Democracy and Electoral Assistance (International IDEA) is an intergovernmental organization that suppo"
+  },
+  {
+   "t": "Instytut Badawczy IDEAS",
+   "u": "https://www.ideas.edu.pl/en/",
+   "s": "The IDEAS Research Institute (IB IDEAS) is a state research and scientific unit operating under the Law on Research Institutes and a decree of the Council of Mi"
+  },
+  {
+   "t": "Research Assistant, Sweden | IDEA - International Institute for ...",
+   "u": "https://www.impactpool.org/jobs/1179948",
+   "s": "Context The International Institute for Democracy and Electoral Assistance (International IDEA) is an intergovernmental organization established in 1995, with 3"
+  },
+  {
+   "t": "Careers | International IDEA",
+   "u": "https://www.idea.int/careers",
+   "s": "For more information about International IDEA's recruitment process, how to apply for a post or how to receive notifications when a position that matches your p"
+  },
+  {
+   "t": "Current job openings - International IDEA",
+   "u": "https://careers.idea.int/jobs",
+   "s": "Job openings at International IDEA Apply your skills and talents to help countries be better democracies for their citizens. Come and join our dynamic teams of "
+  },
+  {
+   "t": "Idea Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/idea-jobs",
+   "s": "Find your ideal job at Jobsdb with 215 Idea jobs found in Hong Kong. View all our Idea vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "A unique career - International IDEA",
+   "u": "https://careers.idea.int/",
+   "s": "Put your passion for democracy into practice. Apply your skills to help countries be better democracies. Come and join our dynamic teams of experts."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.idea.int/jobs",
+  "platform": "teamtailor",
+  "title": "Current job openings - International IDEA"
+ },
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": 0,
+  "spec": "https://idea.zhiye.com/",
+  "identity": "refuted",
+  "note": "Probe's marker surface careers.idea.int (teamtailor) = International IDEA, a Stockholm democracy IGO — homonym, NOT the Shenzhen AI institute; real IDEA研究院 board is idea.zhiye.com (zhiye = China-only recruiting platform), no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
+}

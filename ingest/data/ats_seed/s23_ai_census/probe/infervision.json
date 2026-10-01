@@ -1,0 +1,164 @@
+{
+ "brand": "Infervision",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:27:51.061Z",
+ "candidates": [
+  {
+   "url": "https://www.infervision.com/career.html",
+   "title": "加入我们-推想医疗科技股份有限公司-致力成为全院级AI品牌",
+   "status": 200,
+   "bytes": 54003,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "推想医疗科技股份有限公司-致力成为全院级AI品牌 加入我们 推想医疗科技股份有限公司成立于2016年，专注于AI医疗领域，以\"AI改善生命健康\"为愿景，致力成为全院级AI品牌。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://global.infervision.com/careers",
+   "title": "Careers | Softkit - Webflow HTML website template",
+   "status": 200,
+   "bytes": 52976,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "The ultimate Webflow design system and UI kit. Premium dark and white Webflow template for SaaS, startup, desktop & mobile app, dev tools, crypto, NFT, and any ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://global.infervision.com/careers/3d-graphics-engineer",
+   "title": "3D Graphics Engineer",
+   "status": 200,
+   "bytes": 21361,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "3D Graphics Engineer Remote or New York, USA Assumenda fuga enim neque Apply for this job",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "加入我们-推想医疗科技股份有限公司-致力成为全院级ai品牌",
+   "u": "https://www.infervision.com/career.html",
+   "s": "推想医疗科技股份有限公司-致力成为全院级AI品牌 加入我们 推想医疗科技股份有限公司成立于2016年，专注于AI医疗领域，以\"AI改善生命健康\"为愿景，致力成为全院级AI品牌。"
+  },
+  {
+   "t": "Careers - InterVision Systems",
+   "u": "https://intervision.com/careers/",
+   "s": "Careers Be unique. Be you. Be here. We don't settle for 'good enough'. Fueled by our fierce focus on customer success, we're committed to doing whatever it take"
+  },
+  {
+   "t": "Careers at Infravision | Join the Grid Transformation",
+   "u": "https://www.infravisioninc.com/careers",
+   "s": "Build the future of transmission infrastructure with a fast-growing global team advancing drone-enabled grid construction."
+  },
+  {
+   "t": "Careers | Softkit - Webflow HTML website template - Infervision",
+   "u": "https://global.infervision.com/careers",
+   "s": "The ultimate Webflow design system and UI kit. Premium dark and white Webflow template for SaaS, startup, desktop & mobile app, dev tools, crypto, NFT, and any "
+  },
+  {
+   "t": "Careers - Infovision",
+   "u": "https://www.infovision.com/careers/",
+   "s": "Join us to embark on an exciting journey where you can make a significant impact, push the boundaries of innovation and unlock your full potential. Together, le"
+  },
+  {
+   "t": "Infervision - LinkedIn",
+   "u": "https://www.linkedin.com/company/infervision",
+   "s": "Infervision is a pioneering AI medical technology company, established in 2016, with a mission to advance multidisciplinary healthcare services through artifici"
+  },
+  {
+   "t": "Infervision - Homepage",
+   "u": "https://global.infervision.com/",
+   "s": "Infervision uses AI technology to assist hospitals and organizations in improving detection and treatment options for patients anywhere, anytime."
+  },
+  {
+   "t": "Careers at Invision: Come Work With Us! — Invision",
+   "u": "https://www.iv.com/careers",
+   "s": "As a 100% employee-owned agency, we take pride in our work, our culture, and importantly, our people. See how InVision can support your career goals while makin"
+  },
+  {
+   "t": "加入我们-推想医疗科技股份有限公司-致力成为全院级ai品牌",
+   "u": "https://www.infervision.com/career.html",
+   "s": "推想医疗科技股份有限公司-致力成为全院级AI品牌 加入我们 推想医疗科技股份有限公司成立于2016年，专注于AI医疗领域，以\"AI改善生命健康\"为愿景，致力成为全院级AI品牌。"
+  },
+  {
+   "t": "Infervision - LinkedIn",
+   "u": "https://hk.linkedin.com/company/infervision",
+   "s": "Infervision is a pioneering AI medical technology company, established in 2016, with a mission to advance multidisciplinary healthcare services through artifici"
+  },
+  {
+   "t": "Infervision - Homepage",
+   "u": "https://global.infervision.com/",
+   "s": "Infervision uses AI technology to assist hospitals and organizations in improving detection and treatment options for patients anywhere, anytime."
+  },
+  {
+   "t": "Infervision Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Infervision",
+   "s": "Read Infervision reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at Infervision, th"
+  },
+  {
+   "t": "Careers | Softkit - Webflow HTML website template - Infervision",
+   "u": "https://global.infervision.com/careers",
+   "s": "The ultimate Webflow design system and UI kit. Premium dark and white Webflow template for SaaS, startup, desktop & mobile app, dev tools, crypto, NFT, and any "
+  },
+  {
+   "t": "InferVision Medical Technology Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/17140777/jobs/",
+   "s": "(InferVision Technology招聘)InferVision Medical Technology Co., Ltd.招聘：客户经理、客户经理、客户经理等3个职位。InferVision Technology相关领域：人工智能，深度学习，健康管理，医疗服务，数据挖掘。想了解InferVision Tech"
+  },
+  {
+   "t": "Careers - InterVision Systems",
+   "u": "https://intervision.com/careers/",
+   "s": "Bold thinkers wanted Ready to make your personal mark on history? Join a team with decades of experience and unparalleled expertise. Work side by side with stra"
+  },
+  {
+   "t": "Careers At InterVision Systems - ClearCompany",
+   "u": "https://intervision.hrmdirect.com/employment/job-openings.php",
+   "s": "Careers At InterVision Systems Current job opportunities are posted here as they become available. Subscribe to our RSS feeds to receive instant updates as new "
+  },
+  {
+   "t": "加入我们-推想医疗科技股份有限公司-致力成为全院级ai品牌",
+   "u": "https://www.infervision.com/career.html",
+   "s": "推想医疗科技股份有限公司-致力成为全院级AI品牌 加入我们 推想医疗科技股份有限公司成立于2016年，专注于AI医疗领域，以\"AI改善生命健康\"为愿景，致力成为全院级AI品牌。"
+  },
+  {
+   "t": "Infervision Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Infervision",
+   "s": "Read Infervision reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at Infervision, th"
+  },
+  {
+   "t": "Infervision - LinkedIn",
+   "u": "https://www.linkedin.com/company/infervision",
+   "s": "Infervision is a pioneering AI medical technology company, established in 2016, with a mission to advance multidisciplinary healthcare services through artifici"
+  },
+  {
+   "t": "Careers At InterVision Systems",
+   "u": "https://intervision.hrmdirect.com/",
+   "s": "Careers At InterVision Systems Current job opportunities are posted here as they become available."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.infervision.com/career.html",
+  "platform": "moka",
+  "title": "加入我们-推想医疗科技股份有限公司-致力成为全院级AI品牌"
+ },
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.infervision.com/career.html",
+  "identity": "confirmed",
+  "note": "Own CN board (moka) is China-only; global.infervision.com/careers is an unpopulated Webflow 'Softkit' template with Latin filler (dummy 'Remote or New York' 3D Graphics Engineer) — not a real board; reported US VP Sales hiring is LinkedIn-only.",
+  "ts": "2026-10-01"
+ }
+}

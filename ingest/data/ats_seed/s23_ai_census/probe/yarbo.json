@@ -1,0 +1,149 @@
+{
+ "brand": "Yarbo",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:14:20.650Z",
+ "candidates": [
+  {
+   "url": "https://www.yarbo.com/pages/career",
+   "title": "Join Team Yarbo",
+   "status": 200,
+   "bytes": 897157,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At Yarbo, we believe in fostering talent, nurturing innovation, and celebrating achievements together as a team. Discover exciting career opportunities and beco",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.yarbo.com/pages/become-a-dealer",
+   "title": "BECOME A DEALER NEW\n\n        &ndash; Yarbo",
+   "status": 200,
+   "bytes": 963019,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "One robot, every season. Yarbo's modular yard robots swap between mowing, snow removal, leaf blowing & trimming—powered by smart autonomous navigation.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.yarbo.com/pages/about-us",
+   "title": "ABOUT US\n\n        &ndash; Yarbo",
+   "status": 200,
+   "bytes": 1008458,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "One robot, every season. Yarbo's modular yard robots swap between mowing, snow removal, leaf blowing & trimming—powered by smart autonomous navigation.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Team Yarbo",
+   "u": "https://www.yarbo.com/pages/career",
+   "s": "At Yarbo, we believe in fostering talent, nurturing innovation, and celebrating achievements together as a team. Discover exciting career opportunities and beco"
+  },
+  {
+   "t": "Yarbo Inc. Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Yarbo-Inc.",
+   "s": "Find out what works well at Yarbo Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "Yarbo - LinkedIn",
+   "u": "https://www.linkedin.com/company/yarboglobal",
+   "s": "Yarbo | 6,533 followers on LinkedIn. All You Need, All In One. | Your Big Yard. Your Free Time. Yarbo is a smart, all-season yard care robot that offers a hassl"
+  },
+  {
+   "t": "BECOME A DEALER NEW - Yarbo",
+   "u": "https://www.yarbo.com/pages/become-a-dealer",
+   "s": "One robot, every season. Yarbo's modular yard robots swap between mowing, snow removal, leaf blowing & trimming—powered by smart autonomous navigation."
+  },
+  {
+   "t": "Yarbo Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/jobs?q=yarbo",
+   "s": "2 Yarbo jobs available on Indeed.com. Apply to Warehouse Worker, Repair Technician and more!"
+  },
+  {
+   "t": "Career Opportunities - Jarbo Employment",
+   "u": "https://jarboemployment.com/job-seekers/career-opportunities/",
+   "s": "Tagged: OpenRoads Designer Tampa PE civil engineering Engineer of Record roadway design Transportation AASHTO ORD FDOT Microstation highway design"
+  },
+  {
+   "t": "2,000 Jobs & Work in Yarbo, AL | Indeed",
+   "u": "https://www.indeed.com/l-yarbo,-al-jobs.html",
+   "s": "2,575 jobs available in Yarbo, AL on Indeed.com. Apply to Registration Clerk, Trader, Bank Clerk and more!"
+  },
+  {
+   "t": "ABOUT US - Yarbo",
+   "u": "https://www.yarbo.com/pages/about-us",
+   "s": "One robot, every season. Yarbo's modular yard robots swap between mowing, snow removal, leaf blowing & trimming—powered by smart autonomous navigation."
+  },
+  {
+   "t": "Join Team Yarbo",
+   "u": "https://www.yarbo.com/pages/career",
+   "s": "At Yarbo, we believe in fostering talent, nurturing innovation, and celebrating achievements together as a team. Discover exciting career opportunities and beco"
+  },
+  {
+   "t": "Yarbo Inc. Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Yarbo-Inc.",
+   "s": "Find out what works well at Yarbo Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "Yarbo - LinkedIn",
+   "u": "https://www.linkedin.com/company/yarboglobal",
+   "s": "Yarbo | 6,533 followers on LinkedIn. All You Need, All In One. | Your Big Yard. Your Free Time. Yarbo is a smart, all-season yard care robot that offers a hassl"
+  },
+  {
+   "t": "YARBO HONG KONG LIMITED在香港特別行政區招聘Full-Stack Development Software ...",
+   "u": "https://www.offertoday.com/hk/job/cQJUiipOOrdWlPTRwTVrkA==",
+   "s": "Yarbo香港研究部門正在招聘一位全棧開發工程師。此角色將專注於快速原型設計和關鍵技術模組的工程實現，可能的方向包括AI代理工作流程、機械人仿真環境、OpenClaw應用程式和相關內部系統。這並非傳統的流程驅動研發角色。我們正在尋找一位能力強且自我驅動的個人，能夠獨立思考、快速執行並 ..."
+  },
+  {
+   "t": "Yarbo Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/jobs?q=yarbo",
+   "s": "2 Yarbo jobs available on Indeed.com. Apply to Warehouse Worker, Repair Technician and more!"
+  },
+  {
+   "t": "YARBO HONG KONG LIMITED is recruiting for Full-Stack Development ...",
+   "u": "https://www.offertoday.com/en/job/cQJUiipOOrdWlPTRwTVrkA%3D%3D",
+   "s": "Job Description Yarbo Hong Kong Research Division is hiring a Full-Stack Development Engineer. This role will focus on rapid prototyping and engineering impleme"
+  },
+  {
+   "t": "121 Yarbo Hong Kong Limited jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yarbo-hong-kong-limited-jobs-worldwide",
+   "s": "Today's top 121 Yarbo Hong Kong Limited jobs in Worldwide. Leverage your professional network, and get hired. New Yarbo Hong Kong Limited jobs added daily."
+  },
+  {
+   "t": "Chief of Staff at Yarbo — Hong Kong SAR | LinkedIn Jobs",
+   "u": "https://hk.linkedin.com/jobs/view/chief-of-staff-at-yarbo-4370000479",
+   "s": "Apply for Chief of Staff at Yarbo in Hong Kong SAR. Full-time Director role. See responsibilities, qualifications, and similar jobs on LinkedIn."
+  },
+  {
+   "t": "Join Team Yarbo",
+   "u": "https://www.yarbo.com/pages/career",
+   "s": "At Yarbo, we believe in fostering talent, nurturing innovation, and celebrating achievements together as a team. Discover exciting career opportunities and beco"
+  },
+  {
+   "t": "Yarbo Inc. Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Yarbo-Inc.",
+   "s": "Find out what works well at Yarbo Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "2,000 Jobs & Work in Yarbo, AL | Indeed",
+   "u": "https://www.indeed.com/l-yarbo,-al-jobs.html",
+   "s": "2,575 jobs available in Yarbo, AL on Indeed.com. Apply to Registration Clerk, Trader, Bank Clerk and more!"
+  },
+  {
+   "t": "Yarbo - LinkedIn",
+   "u": "https://www.linkedin.com/company/yarboglobal",
+   "s": "Yarbo | 6,533 followers on LinkedIn. All You Need, All In One. | Your Big Yard. Your Free Time. Yarbo is a smart, all-season yard care robot that offers a hassl"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

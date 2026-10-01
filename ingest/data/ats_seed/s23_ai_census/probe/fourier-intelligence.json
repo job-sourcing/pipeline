@@ -1,0 +1,38 @@
+{
+ "brand": "Fourier Intelligence",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:14:28.143Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "fourier",
+   "spec": "ashby:fourier",
+   "title": " (8 jobs)",
+   "jobs": 8
+  }
+ ],
+ "best": {
+  "spec": "ashby:fourier",
+  "platform": "ashby",
+  "title": " (8 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": null,
+  "brand": "Fourier Intelligence",
+  "ok": null,
+  "note": "no self-name — job-content adjudication required"
+ },
+ "verdict": "dict_unverified",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "ats:ashby:fourier",
+  "identity": "refuted",
+  "note": "ashby:fourier serves a Mountain View hydrogen-systems startup (8 jobs incl 'Fall 2026 R&D Engineering Intern – Hydrogen Systems' + Hyderabad office) — NOT 傅利叶智能 (fftai.com) robotics; known trap re-confirmed via live API.",
+  "ts": "2026-10-01"
+ }
+}

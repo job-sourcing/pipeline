@@ -1,0 +1,162 @@
+{
+ "brand": "Vimicro",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:05:16.499Z",
+ "candidates": [
+  {
+   "url": "http://www.vimicro.com/english/corporates/career.htm",
+   "title": "Vimicro career",
+   "status": 200,
+   "bytes": 21613,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Since its founding, Vimicro has regarded human resources as its first priority, having attracted many experienced team members and senior experts in IC design, ",
+   "backend": "direct"
+  },
+  {
+   "url": "http://www.vimicro.com/english2/careers/index.html",
+   "title": "Welcome to Vimicro",
+   "status": 200,
+   "bytes": 35537,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "What's more, Vimicro has cultimated a great number of excellent people who are capable of technology developing and project managing, constituting the most powe",
+   "backend": "direct"
+  },
+  {
+   "url": "http://www.vimicro.com.cn/career.htm",
+   "title": "��������",
+   "status": 200,
+   "bytes": 27207,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "以上职位，有意者请发简历至:jobs@vimicro.com",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Vimicro career",
+   "u": "http://www.vimicro.com/english/corporates/career.htm",
+   "s": "Since its founding, Vimicro has regarded human resources as its first priority, having attracted many experienced team members and senior experts in IC design, "
+  },
+  {
+   "t": "Welcome to Vimicro",
+   "u": "http://www.vimicro.com/english2/careers/index.html",
+   "s": "What's more, Vimicro has cultimated a great number of excellent people who are capable of technology developing and project managing, constituting the most powe"
+  },
+  {
+   "t": "工作机会 - Vimicro",
+   "u": "http://www.vimicro.com.cn/career.htm",
+   "s": "以上职位，有意者请发简历至:jobs@vimicro.com"
+  },
+  {
+   "t": "Tuyển dụng - vimicro",
+   "u": "https://vimicro.vn/tuyendung/",
+   "s": "Tuyển dụng Archive - vimicro Công ty cổ phần Vi Sinh Việt - Vimicro chuyên cung cấp các loại thuốc trừ bệnh sinh học, trừ sâu sinh học, trừ tuyến trùng sinh học"
+  },
+  {
+   "t": "人才招聘-中星微技术股份有限公司",
+   "u": "https://www.vitechnology.com.cn/list-10.html",
+   "s": "首页 中星微技术股份有限公司 Vimicro Technology Corporation 珠海总部：横琴粤澳深度合作区国际金融中心大厦12层 www.vitechnology.com.cn 0756-8671888 PR邮箱:PR@vimicro.com 售后服务：400-00-25724 service@vimic"
+  },
+  {
+   "t": "Tuyển dụng - Vimicro - Giải pháp vi sinh Việt",
+   "u": "https://vimicro.com.vn/tuyen-dung/",
+   "s": "CÔNG TY CỔ PHẦN NÔNG NGHIỆP VI SINH VIỆT (VIMICRO) chuyên cung cấp các loại thuốc trừ bệnh sinh học, trừ sâu sinh học, trừ tuyến trùng sinh học, dinh dưỡng cho "
+  },
+  {
+   "t": "Vimicro Corp. | LinkedIn",
+   "u": "https://in.linkedin.com/company/vimicro-corp-",
+   "s": "Vimicro Corp. | 88 followers on LinkedIn. Vimicro Corp is a computer software company based out of BEIJING, BEJ, China."
+  },
+  {
+   "t": "中星微电子有限公司 - Vimicro",
+   "u": "http://www.vimicro.com/career/career.html",
+   "s": "中星微电子有限公司是在国家信息产业部和北京市政府的直接支持下，由一批来自硅谷的博士企业家于1999年10月在北京中关村科技园区创建的一家跨国、跨地域经营的高科技企业，目前已发展成为总部在北京，下辖美国硅谷、深圳、上海、香港四家分公司的具有一定国际影响力的现代化集成电路设计 ..."
+  },
+  {
+   "t": "Vimicro career",
+   "u": "http://www.vimicro.com/english/corporates/career.htm",
+   "s": "Since its founding, Vimicro has regarded human resources as its first priority, having attracted many experienced team members and senior experts in IC design, "
+  },
+  {
+   "t": "Welcome to Vimicro",
+   "u": "http://www.vimicro.com/english2/careers/index.html",
+   "s": "What's more, Vimicro has cultimated a great number of excellent people who are capable of technology developing and project managing, constituting the most powe"
+  },
+  {
+   "t": "中星微电子公司人事招聘 - vimicro.com",
+   "u": "http://www.vimicro.com/english/corporates/careers/50.htm",
+   "s": "Job Description: Vimicro is offering a manager or director level position to lead the development of CMOS image sensor imaging systems for special applications."
+  },
+  {
+   "t": "中星微电子有限公司 - Vimicro",
+   "u": "http://www.vimicro.com/career/career.html",
+   "s": "中星微电子有限公司是在国家信息产业部和北京市政府的直接支持下，由一批来自硅谷的博士企业家于1999年10月在北京中关村科技园区创建的一家跨国、跨地域经营的高科技企业，目前已发展成为总部在北京，下辖美国硅谷、深圳、上海、香港四家分公司的具有一定国际影响力的现代化集成电路设计 ..."
+  },
+  {
+   "t": "中星微电子公司人事招聘 - vimicro.com",
+   "u": "http://www.vimicro.com/english/corporates/careers/1.htm",
+   "s": "Job Description: Responsible for the research of multimedia algorithmt. Qualification: Rich experienced with development of image algorithm Preference to skills"
+  },
+  {
+   "t": "Tuyển dụng - vimicro",
+   "u": "https://vimicro.vn/tuyendung/",
+   "s": "Tuyển dụng Archive - vimicro Công ty cổ phần Vi Sinh Việt - Vimicro chuyên cung cấp các loại thuốc trừ bệnh sinh học, trừ sâu sinh học, trừ tuyến trùng sinh học"
+  },
+  {
+   "t": "人才招聘-中星微技术股份有限公司",
+   "u": "https://www.vitechnology.com.cn/list-10.html",
+   "s": "首页 中星微技术股份有限公司 Vimicro Technology Corporation 珠海总部：横琴粤澳深度合作区国际金融中心大厦12层 www.vitechnology.com.cn 0756-8671888 PR邮箱:PR@vimicro.com 售后服务：400-00-25724 service@vimic"
+  },
+  {
+   "t": "Tuyển dụng - Vimicro - Giải pháp vi sinh Việt",
+   "u": "https://vimicro.com.vn/tuyen-dung/",
+   "s": "CÔNG TY CỔ PHẦN NÔNG NGHIỆP VI SINH VIỆT (VIMICRO) chuyên cung cấp các loại thuốc trừ bệnh sinh học, trừ sâu sinh học, trừ tuyến trùng sinh học, dinh dưỡng cho "
+  },
+  {
+   "t": "Vimicro career",
+   "u": "http://www.vimicro.com/english/corporates/career.htm",
+   "s": "Since its founding, Vimicro has regarded human resources as its first priority, having attracted many experienced team members and senior experts in IC design, "
+  },
+  {
+   "t": "Welcome to Vimicro",
+   "u": "http://www.vimicro.com/career/career_e.html",
+   "s": "What's more, Vimicro has cultimated a great number of excellent people who are capable of technology developing and project managing, constituting the most powe"
+  },
+  {
+   "t": "Tuyển dụng - vimicro",
+   "u": "https://vimicro.vn/tuyendung/",
+   "s": "Tuyển dụng Archive - vimicro Công ty cổ phần Vi Sinh Việt - Vimicro chuyên cung cấp các loại thuốc trừ bệnh sinh học, trừ sâu sinh học, trừ tuyến trùng sinh học"
+  },
+  {
+   "t": "工作机会 - Vimicro",
+   "u": "http://www.vimicro.com.cn/career.htm",
+   "s": "以上职位，有意者请发简历至:jobs@vimicro.com"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "http://www.vimicro.com/english/corporates/career.htm",
+  "platform": "custom",
+  "title": "Vimicro career"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "http://www.vimicro.com/english/corporates/career.htm",
+  "identity": "confirmed",
+  "note": "Legacy static EN career page with zero listings (2010s-era); real CN hiring via vitechnology.com.cn; no US presence (Nasdaq VIMC delisted ~2016); vimicro.vn hits are Vietnamese micro-solution homonyms.",
+  "ts": "2026-10-01"
+ }
+}

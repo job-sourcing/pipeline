@@ -1,0 +1,233 @@
+{
+ "board": "ats:lever:bosonai",
+ "company": "Boson AI",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-01",
+ "count": 4,
+ "details_merged": 4,
+ "signals_matched": 3,
+ "similar_edges": 0,
+ "facet_tagged_rows": 4,
+ "rows": [
+  {
+   "reqId": "c019bac7-dbb5-4b0a-a78e-e13fd0d30444",
+   "title": "Frontend Engineer",
+   "company": "bosonai",
+   "url": "https://jobs.lever.co/bosonai/c019bac7-dbb5-4b0a-a78e-e13fd0d30444",
+   "externalPath": "/c019bac7-dbb5-4b0a-a78e-e13fd0d30444",
+   "locationsText": "Santa Clara HQ",
+   "postedOn": "Posted 470 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "c019bac7-dbb5-4b0a-a78e-e13fd0d30444"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-06-18",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Frontend Engineer",
+    "location": "Santa Clara HQ",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong style=\"font-size: 11pt;\">About Boson AI:</strong><span style=\"font-size: 11pt;\"> At Boson AI, we are not just building AI solutions; we are pioneering the future of enterprise AI. Driven by a passion for cutting-edge AI research, particularly in the transformative areas of large language models and agentic systems, our mission is to tackle the most complex real-world problems for businesses and unlock significant value. We are a dynamic and collaborative team of researchers and engineers who thrive on pushing the boundaries of what's possible, dedicated to delivering high-quality, reliable products that seamlessly integrate into the fabric of enterprise workflows and set new industry standards.</span></div>\n<div>&nbsp;</div>\n<div><strong style=\"font-size: 11pt;\">About the Role:</strong><span style=\"font-size: 11pt;\"> We are seeking a talented and versatile Frontend Engineer to join our growing team. In this pivotal role, you will lead the development of our next-generation LLM-powered platforms, crafting user interfaces and experiences that are intuitive, highly interactive, and designed for enterprise efficiency. You will work across the entire stack, from designing captivating front-end experiences with the latest JavaScript tooling to connecting robust backend services that integrate seamlessly with our advanced multimodal AI models. This is an exciting opportunity to directly shape critical enterprise applications, bringing cutting-edge AI to life for our clients.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/bosonai/c019bac7-dbb5-4b0a-a78e-e13fd0d30444",
+    "jobReqId": "c019bac7-dbb5-4b0a-a78e-e13fd0d30444",
+    "postedOn": "Posted 470 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "bosonai",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "35858631-de70-4ddf-b310-ea9417af3b29",
+   "title": "Member of Technical Staff - Agent Platform (Agent OS)",
+   "company": "bosonai",
+   "url": "https://jobs.lever.co/bosonai/35858631-de70-4ddf-b310-ea9417af3b29",
+   "externalPath": "/35858631-de70-4ddf-b310-ea9417af3b29",
+   "locationsText": "Santa Clara HQ",
+   "postedOn": "Posted 482 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "35858631-de70-4ddf-b310-ea9417af3b29"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-06-06",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Member of Technical Staff - Agent Platform (Agent OS)",
+    "location": "Santa Clara HQ",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong style=\"font-size: 11pt;\">About Boson AI:</strong><span style=\"font-size: 11pt;\"> At Boson AI, we are not just building AI solutions; we are pioneering the future of enterprise AI. Driven by a passion for cutting-edge AI research, particularly in the transformative areas of large language models and agentic systems, our mission is to tackle the most complex real-world problems for businesses and unlock significant value. We are a dynamic and collaborative team of researchers and engineers who thrive on pushing the boundaries of what's possible, dedicated to delivering high-quality, reliable products that seamlessly integrate into the fabric of enterprise workflows and set new industry standards.</span></div>\n<div>&nbsp;</div>\n<div><strong style=\"font-size: 11pt;\">About the Role:</strong><span style=\"font-size: 11pt;\"> Engineer and evolve the core Agent OS&mdash;a high-performance, resilient platform encompassing the dialog &amp; policy engine, distributed context &amp; memory, execution runtime, security isolation, voice runtime, and complex agentic orchestration frameworks. This system underpins all Boson agents, from low-code configuration flows in Workspace to advanced, production-grade systems leveraging RAG, ReAct, robust tool calling, and multi-step execution.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/bosonai/35858631-de70-4ddf-b310-ea9417af3b29",
+    "jobReqId": "35858631-de70-4ddf-b310-ea9417af3b29",
+    "postedOn": "Posted 482 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "bosonai",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4266777241",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4266777241",
+    "title": "Member of Technical Staff - Agent Platform (Agent OS)",
+    "company": "Boson AI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-10",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-01T12:17:32",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "fef8e0fe-2795-40af-91fd-c545c15c1426",
+   "title": "Senior Software Engineer - Systems",
+   "company": "bosonai",
+   "url": "https://jobs.lever.co/bosonai/fef8e0fe-2795-40af-91fd-c545c15c1426",
+   "externalPath": "/fef8e0fe-2795-40af-91fd-c545c15c1426",
+   "locationsText": "Santa Clara HQ",
+   "postedOn": "Posted 85 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "fef8e0fe-2795-40af-91fd-c545c15c1426"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-08",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Senior Software Engineer - Systems",
+    "location": "Santa Clara HQ",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong style=\"font-size: 11pt;\">About Boson AI:</strong><span style=\"font-size: 11pt;\"> At Boson AI, we are not just building AI solutions; we are pioneering the future of enterprise AI. Driven by a passion for cutting-edge AI research, particularly in the transformative areas of large language models and agentic systems, our mission is to tackle the most complex real-world problems for businesses and unlock significant value. We are a dynamic and collaborative team of researchers and engineers who thrive on pushing the boundaries of what's possible, dedicated to delivering high-quality, reliable products that seamlessly integrate into the fabric of enterprise workflows and set new industry standards.</span></div>\n<div>&nbsp;</div>\n<div><span style=\"font-size: 11pt;\"><strong style=\"font-size: 11pt;\">About the Role:</strong> Build and operate the core platform behind Boson's model APIs and agentic products. You'll own the infrastructure that every Boson agent runs on &mdash; API serving, state management, data pipelines, context retrieval, and execution runtime &mdash; and make it fast, reliable, and easy for product teams to build on.</span></div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/bosonai/fef8e0fe-2795-40af-91fd-c545c15c1426",
+    "jobReqId": "fef8e0fe-2795-40af-91fd-c545c15c1426",
+    "postedOn": "Posted 85 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "bosonai",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4438292859",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4438292859",
+    "title": "Senior Software Engineer - Systems",
+    "company": "Boson AI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-11",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-01T12:17:34",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "2b520a0f-556a-4dc2-a5a7-d8845a921335",
+   "title": "Software Engineer - Platform & Application",
+   "company": "bosonai",
+   "url": "https://jobs.lever.co/bosonai/2b520a0f-556a-4dc2-a5a7-d8845a921335",
+   "externalPath": "/2b520a0f-556a-4dc2-a5a7-d8845a921335",
+   "locationsText": "Santa Clara HQ",
+   "postedOn": "Posted 71 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "2b520a0f-556a-4dc2-a5a7-d8845a921335"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-07-22",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "onsite",
+   "detail": {
+    "title": "Software Engineer - Platform & Application",
+    "location": "Santa Clara HQ",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p dir=\"ltr\"><strong>About Boson AI:</strong> At Boson AI, we are not just building AI solutions; we are pioneering the future of enterprise AI. Driven by a passion for cutting-edge AI research, particularly in the transformative areas of large language models and agentic systems, our mission is to tackle the most complex real-world problems for businesses and unlock significant value. We are a dynamic and collaborative team of researchers and engineers who thrive on pushing the boundaries of what's possible, dedicated to delivering high-quality, reliable products that seamlessly integrate into the fabric of enterprise workflows and set new industry standards.</p>\n<p dir=\"ltr\"><strong>About the Role:</strong> Help build and operate the core platform behind Boson's model APIs and agentic products. You'll work alongside senior engineers on the infrastructure that every Boson agent runs on &mdash; API serving, state management, data pipelines, context retrieval, and execution runtime &mdash; shipping real features while growing into deeper ownership over time. This is a role for someone early in their career who wants to learn distributed systems by building them, with strong mentorship and meaningful production responsibility from day one.</p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/bosonai/2b520a0f-556a-4dc2-a5a7-d8845a921335",
+    "jobReqId": "2b520a0f-556a-4dc2-a5a7-d8845a921335",
+    "postedOn": "Posted 71 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "bosonai",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4444216120",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4444216120",
+    "title": "Software Engineer - Platform & Application",
+    "company": "Boson AI",
+    "location": "Santa Clara, CA",
+    "linkedin_posted_date": "2026-09-25",
+    "num_applicants": 84,
+    "applicants_label": "84 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "6 days ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-01T12:17:31",
+    "match_method": "title"
+   }
+  }
+ ]
+}

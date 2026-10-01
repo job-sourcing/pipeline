@@ -1,0 +1,162 @@
+{
+ "brand": "UBTech Robotics",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:01:48.140Z",
+ "candidates": [
+  {
+   "url": "https://ubtech.edu/job-board/",
+   "title": "Job Board - UBTech",
+   "status": 200,
+   "bytes": 1752113,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Post a Job UBTech is utilizing JobWise.com to power our job board. JobWise.com has become a powerful tool in helping local job seekers and employers connect. So",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.ctgoodjobs.hk/jobs/ubtech-robotics-jobs",
+   "title": "Ubtech Robotics Jobs in Hong Kong - Oct 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 683990,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 10 Ubtech Robotics jobs in Hong Kong. Browse through all our new daily-updated Ubtech Robotics job listing now!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://ubtech.edu/employment-opportunities/",
+   "title": "Employment Opportunities - UBTech",
+   "status": 200,
+   "bytes": 1777291,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "UBTech Employment Thank you for your interest in working with Uintah Basin Technical College. We're excited to share that we've recently changed our recruitment",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Employment Opportunities - UBTech",
+   "u": "https://ubtech.edu/employment-opportunities/",
+   "s": "UBTech Employment Thank you for your interest in working with Uintah Basin Technical College. We're excited to share that we've recently changed our recruitment"
+  },
+  {
+   "t": "28,000+ Ubtech Robotics jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ubtech-robotics-jobs-worldwide",
+   "s": "Today's top 28,000+ Ubtech Robotics jobs in Worldwide. Leverage your professional network, and get hired. New Ubtech Robotics jobs added daily."
+  },
+  {
+   "t": "UBTECH Robotics - LinkedIn",
+   "u": "https://www.linkedin.com/company/ubtech-robotics",
+   "s": "Founded in March 2012, UBTECH Robotics is a global leader in humanoid and smart service robots. The company was listed on the Main Board of the Hong Kong Stock "
+  },
+  {
+   "t": "校园招聘",
+   "u": "http://zhaopin.ubtrobot.com/campus",
+   "s": "每位同学最多可选择三个志愿，投递后若HR已查看简历，则无法再修改简历内容、投递岗位和志愿顺序，投递需谨慎哟。 ️ 探索TIP：第一志愿成功率＞70%!建议按\"Dream岗 → 冲刺岗 → 保底岗\"排序"
+  },
+  {
+   "t": "Job Board - UBTech",
+   "u": "https://ubtech.edu/job-board/",
+   "s": "Post a Job UBTech is utilizing JobWise.com to power our job board. JobWise.com has become a powerful tool in helping local job seekers and employers connect. So"
+  },
+  {
+   "t": "About-UBTECH | UBTECH Robotics - Ubtrobot.com",
+   "u": "https://www.ubtrobot.com/en/about/company-profile",
+   "s": "About Established in March 2012, UBTECH ROBOTICS CORP LTD is a leading humanoid robots and smart service robots company. On 29 December, 2023, we were listed on"
+  },
+  {
+   "t": "UBTECH Robotics jobs recruitment-2026 Hong Kong jobs vacancies-Offertoday",
+   "u": "https://www.offertoday.com/en/company/biWz8RVEjv6_skyYWGyEvw==",
+   "s": "Offertoday.com provides job seekers with the latest recruitment, as well as s company industry, profile and online recruiters.UBTECH Robotics is currently direc"
+  },
+  {
+   "t": "Explore jobs at Ubtech Robotics - vettedtalents.com",
+   "u": "https://vettedtalents.com/company-profile/ubtech-robotics",
+   "s": "Explore jobs at Ubtech Robotics. Discover job openings, company culture, benifits and growth opportunities."
+  },
+  {
+   "t": "Employment Opportunities - UBTech",
+   "u": "https://ubtech.edu/employment-opportunities/",
+   "s": "UBTech Employment Thank you for your interest in working with Uintah Basin Technical College. We're excited to share that we've recently changed our recruitment"
+  },
+  {
+   "t": "Ubtech Robotics Jobs in Hong Kong SAR - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Ubtech-Robotics-jobs/in-Hong-Kong-SAR",
+   "s": "Find your ideal job on Jobsdb with 4 Ubtech Robotics jobs (4 at Ubtech Robotics) listed in Hong Kong SAR. View all the Ubtech Robotics vacancies now with new jo"
+  },
+  {
+   "t": "28,000+ Ubtech Robotics jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ubtech-robotics-jobs-worldwide",
+   "s": "Today's top 28,000+ Ubtech Robotics jobs in Worldwide. Leverage your professional network, and get hired. New Ubtech Robotics jobs added daily."
+  },
+  {
+   "t": "Ubtech Robotics Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/ubtech-robotics-jobs",
+   "s": "Explore 10 Ubtech Robotics jobs in Hong Kong. Browse through all our new daily-updated Ubtech Robotics job listing now!"
+  },
+  {
+   "t": "香港 的 Ubtech Robotics 職位 - 9 月 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/zh/Ubtech-Robotics-jobs",
+   "s": "在 Jobsdb 搜尋理想職位，於 香港 找到 1 個 Ubtech Robotics 職位。立即查看所有 Ubtech Robotics 空缺，每日新增職位!"
+  },
+  {
+   "t": "校园招聘",
+   "u": "http://zhaopin.ubtrobot.com/campus",
+   "s": "每位同学最多可选择三个志愿，投递后若HR已查看简历，则无法再修改简历内容、投递岗位和志愿顺序，投递需谨慎哟。 ️ 探索TIP：第一志愿成功率＞70%!建议按\"Dream岗 → 冲刺岗 → 保底岗\"排序"
+  },
+  {
+   "t": "2 Ubtech Robotics jobs in Shenzhen - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ubtech-robotics-jobs-shenzhen",
+   "s": "Today's top 2 Ubtech Robotics jobs in Shenzhen. Leverage your professional network, and get hired. New Ubtech Robotics jobs added daily."
+  },
+  {
+   "t": "Job Board - UBTech",
+   "u": "https://ubtech.edu/job-board/",
+   "s": "Post a Job UBTech is utilizing JobWise.com to power our job board. JobWise.com has become a powerful tool in helping local job seekers and employers connect. So"
+  },
+  {
+   "t": "Employment Opportunities - UBTech",
+   "u": "https://ubtech.edu/employment-opportunities/",
+   "s": "Why UBTech? At UBTech, we hire great people. That's why we're always looking for people who are bright, bold, collaborative, and interested in helping change st"
+  },
+  {
+   "t": "Ubtech Robotics Jobs in Hong Kong SAR - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Ubtech-Robotics-jobs/in-Hong-Kong-SAR",
+   "s": "Find your ideal job on Jobsdb with 4 Ubtech Robotics jobs (4 at Ubtech Robotics) listed in Hong Kong SAR. View all the Ubtech Robotics vacancies now with new jo"
+  },
+  {
+   "t": "Ubtech Robotics Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/ubtech-robotics-jobs",
+   "s": "Explore 10 Ubtech Robotics jobs in Hong Kong. Browse through all our new daily-updated Ubtech Robotics job listing now!"
+  },
+  {
+   "t": "28,000+ Ubtech Robotics jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ubtech-robotics-jobs-worldwide",
+   "s": "Today's top 28,000+ Ubtech Robotics jobs in Worldwide. Leverage your professional network, and get hired. New Ubtech Robotics jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://ubtech.edu/job-board/",
+  "platform": "custom",
+  "title": "Job Board - UBTech"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "http://zhaopin.ubtrobot.com/campus",
+  "identity": "confirmed",
+  "note": "Own board zhaopin.ubtrobot.com (UBTECH Shenzhen, campus+social) CN-only; ubtech.edu = Uintah Basin Technical College (Utah) homonym; no US hiring surface (LinkedIn no US roles).",
+  "ts": "2026-10-01"
+ }
+}

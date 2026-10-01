@@ -144,7 +144,9 @@ def parse_site(spec: str) -> tuple[str, str]:
         f"greenhouse|ashby|lever|workable|feishuhire|paylocity|adp|"
         f"breezy|jobvite|oraclehcm|bamboohr|j2w|ultipro|talentadore|"
         f"workstream|ttiproxy|sanity|wpjobboard|wuxibio|antintl|"
-        f"greenland|jereh|autelenergy|aden|mandarinoriental|wuxiapptec, "
+        f"greenland|jereh|autelenergy|aden|mandarinoriental|wuxiapptec|"
+        f"blacksesame|ecovacsus|accutar|hitgen|insilico|orbbec|"
+        f"visionnav|verisilicon|uniview, "
         f"or 'custom:kind' with kind in "
         f"{sorted(k for k in _ADAPTERS)})")
 
@@ -1873,6 +1875,9 @@ _FEISHU_CITY_COUNTRY = {
     "Denver": "United States", "Miami": "United States",
     "Philadelphia": "United States", "Phoenix": "United States",
     "Portland": "United States", "Washington": "United States",
+    # S23 (orionstar): "Washington D.C." is its own token, not "Washington"
+    "Washington D.C.": "United States", "Washington DC": "United States",
+    "Washington, D.C.": "United States",
     "San Mateo": "United States", "Menlo Park": "United States",
     "Redwood City": "United States", "Fremont": "United States",
     "Milpitas": "United States", "Santa Monica": "United States",
@@ -6986,6 +6991,1117 @@ class WuXiAppTecAdapter:
         }
 
 
+# ── blacksesame (S23: PbootCMS SSR cards — s23_ai_census/re_E.md §1) ───────
+class BlackSesameAdapter:
+    """spec org = host (www.blacksesame.com). One SSR page; job-card
+    divs with data-department; detail = /en/join-us/<id>.html (numeric
+    PbootCMS ids, unordered). div.job-type holds a DATE (misnamed).
+    The Tencent WAF serves plain fetches; the resilient fallback
+    covers any future escalation."""
+
+    KIND = "blacksesame"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "www.blacksesame.com"   # custom: grammar — host baked
+        self.org = org
+        self.cfg = cfg
+
+    def _page(self) -> str:
+        return _fetch_text_resilient(
+            f"https://{self.org}/en/join-us/", f"ats:bs:{self.org}",
+            self.cfg)
+
+    def _rows(self) -> list:
+        key = f"blacksesame:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        html = self._page()
+        rows: list[dict] = []
+        for m in re.finditer(
+                r'<div class="job-card"[^>]*data-department="([^"]*)"'
+                r'(.*?)</div>\s*(?=<div class="job-card|</div>\s*</div>'
+                r'\s*</div>)', html, re.S):
+            dept, body = m.group(1), m.group(2)
+            tm = re.search(r'<h3 class="job-title"[^>]*>(.*?)</h3>',
+                           body, re.S)
+            lm = re.search(r'<div class="job-location"[^>]*>(.*?)</div>',
+                           body, re.S)
+            dm = re.search(
+                r'<a[^>]*class="apply-btn"[^>]*href="([^"]+)"', body)
+            dym = re.search(r'<div class="job-type"[^>]*>(.*?)</div>',
+                            body, re.S)
+            title = unescape(re.sub(r"<[^>]+>", "",
+                                    tm.group(1) if tm else "")).strip()
+            loc = unescape(re.sub(r"<[^>]+>", "",
+                                  lm.group(1) if lm else "")).strip()
+            href = dm.group(1) if dm else ""
+            im = re.search(r"/(\d+)\.html", href)
+            rid = im.group(1) if im else _slugify(title)
+            posted = unescape(re.sub(r"<[^>]+>", "", dym.group(1)
+                                     if dym else "")).strip()
+            if not title:
+                continue
+            rows.append({
+                "rid": rid, "title": title, "loc": loc, "dept": dept,
+                "posted": posted if re.match(r"\d{4}-\d", posted) else "",
+                "url": (f"https://{self.org}{href}" if href.startswith("/")
+                        else href) or f"https://{self.org}/en/join-us/",
+            })
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped = 0
+        for j in self._rows():
+            is_us = bool(re.search(r",\s*US\s*$", j["loc"]))
+            if country and not is_us:
+                dropped += 1
+                continue
+            label, iso = _posted_label(j["posted"] or "")
+            rows[j["rid"]] = {
+                "reqId": j["rid"], "title": j["title"],
+                "company": "Black Sesame Technologies",
+                "url": j["url"], "externalPath": f"/{j['rid']}",
+                "locationsText": j["loc"], "postedOn": label,
+                "postedOnIso": iso, "timeType": "",
+                "bulletFields": [j["rid"]], "ats": "blacksesame",
+            }
+        meta = {"rows": len(rows), "total": len(rows) + dropped,
+                "complete": True, "pages": 1,
+                "client_filtered": dropped,
+                "client_filtered_country": dropped,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] blacksesame:{self.org}: {len(rows)} "
+              f"rows ({dropped} non-{country or '-'} dropped)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        r = next((x for x in self._rows() if x["rid"] == rid), None)
+        if r is None:
+            return None
+        url = (f"https://{self.org}/en/join-us/{rid}.html"
+               if rid.isdigit() else r["url"])
+        html = _fetch_text_resilient(url, f"ats:bs:{self.org}:{rid}",
+                                     self.cfg)
+        desc = ""
+        secs = re.findall(
+            r'<div class="job-section"[^>]*>(.*?)</div>\s*</div>\s*'
+            r'(?:<div class="job-section"|</div>)', html or "", re.S)
+        for s_ in secs:
+            dmm = re.search(r'<div class="job-description"[^>]*>'
+                            r'(.*?)</div>', s_, re.S)
+            if dmm:
+                txt = unescape(re.sub(r"<[^>]+>", "\n", dmm.group(1)))
+                desc += re.sub(r"\n{2,}", "\n", txt).strip() + "\n\n"
+        if not desc:                     # fallback: the list snippet
+            desc = ""
+        return {
+            "jobPostingInfo": {
+                "title": r["title"], "location": r["loc"],
+                "additionalLocations": [],
+                "jobDescription": desc.strip(),
+                "timeType": "", "startDate": r["posted"],
+                "externalUrl": url, "jobReqId": rid, "postedOn": "",
+                "country": {"descriptor":
+                            "US" if re.search(r",\s*US\s*$", r["loc"])
+                            else None},
+            },
+            "hiringOrganization": {
+                "name": "Black Sesame Technologies"},
+            "similarJobs": [],
+        }
+
+
+# ── ecovacsus (S23: Astro shell + Next.js data island — re_E.md §2) ────────
+class EcovacsUSAdapter:
+    """spec org = host (www.ecovacs.com). The /us/careers board is a
+    Next SSR island inside an Astro shell: buildId is re-read from the
+    HTML each run (drifts on redeploy), then
+    /_next/data/<bid>/us/careers/job-list.json (+ ?page=N) lists and
+    job-detail.json?id=<id> details. Detail JSON has a literal "type;"
+    key (backend typo)."""
+
+    KIND = "ecovacsus"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "www.ecovacs.com"      # custom: grammar — host baked
+        self.org = org
+        self.cfg = cfg
+
+    def _build_id(self) -> str:
+        html = _fetch_text_resilient(
+            f"https://{self.org}/us/careers/job-list",
+            f"ats:ecovacs:{self.org}:html", self.cfg)
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)'
+                      r'</script>', html or "", re.S)
+        if not m:
+            raise RuntimeError(
+                f"ecovacsus:{self.org}: no __NEXT_DATA__ island — board "
+                "shape changed; refusing")
+        return str(json.loads(m.group(1)).get("buildId") or "")
+
+    def _rows(self) -> list:
+        key = f"ecovacsus:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        bid = self._build_id()
+        rows: list[dict] = []
+        page = 1
+        while page < 10:
+            url = (f"https://{self.org}/_next/data/{bid}/us/careers/"
+                   f"job-list.json" + (f"?page={page}" if page > 1 else ""))
+            d = fetch_json(url, cfg=self.cfg)
+            # _next/data JSON root: pageProps DIRECTLY (no "props"
+            # wrapper — re_E.md's path had a subtle error; live-verified)
+            pd_ = ((d or {}).get("pageProps")
+                   or (d or {}).get("props", {}).get("pageProps")
+                   or {}).get("pageData", {})
+            lst = pd_.get("list") or []
+            for r in lst or []:
+                rid = str(r.get("id") or "")
+                if not rid:
+                    continue
+                rows.append({
+                    "rid": rid,
+                    "title": str(r.get("title") or "").strip(),
+                    "tt": str(r.get("type") or "").strip(),
+                    "loc": str(r.get("work_place") or "").strip(),
+                    "bid": bid,
+                })
+            total_page = int(pd_.get("page_data", {}).get(
+                "total_page", 1) or 1)
+            if page >= total_page or not lst:
+                break
+            page += 1
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped = 0
+        for j in self._rows():
+            if country and not _plain_loc_in_country(
+                    j["loc"], country):
+                dropped += 1
+                continue
+            rows[j["rid"]] = {
+                "reqId": j["rid"], "title": j["title"],
+                "company": "Ecovacs Robotics",
+                "url": (f"https://{self.org}/us/careers/job-detail"
+                        f"?id={j['rid']}"),
+                "externalPath": f"/{j['rid']}",
+                "locationsText": j["loc"], "postedOn": "",
+                "timeType": j["tt"], "bulletFields": [j["rid"]],
+                "ats": "ecovacsus",
+            }
+        meta = {"rows": len(rows), "total": len(rows) + dropped,
+                "complete": True, "pages": 1,
+                "client_filtered": dropped,
+                "client_filtered_country": dropped,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] ecovacsus:{self.org}: {len(rows)} "
+              f"rows ({dropped} non-{country or '-'} dropped)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        r = next((x for x in self._rows() if x["rid"] == rid), None)
+        if r is None:
+            return None
+        bid = r["bid"]
+        d = fetch_json(
+            f"https://{self.org}/_next/data/{bid}/us/careers/"
+            f"job-detail.json?id={rid}", cfg=self.cfg)
+        career = (((d or {}).get("pageProps")
+                   or (d or {}).get("props", {}).get("pageProps")
+                   or {}).get("pageData", {})).get("career") or {}
+        # NB: detail JSON uses "type;" (trailing semicolon) — backend
+        # typo documented in re_E.md §2
+        tt = str(career.get("type;") or career.get("type")
+                 or r["tt"]).strip()
+        parts = []
+        for f in ("description", "responsibility",
+                  "mini_qualification", "preferred_qualification"):
+            v = career.get(f)
+            if v:
+                txt = unescape(re.sub(r"<[^>]+>", "\n", str(v)))
+                txt = txt.replace("\xa0", " ")
+                parts.append(re.sub(r"\n{2,}", "\n", txt).strip())
+        desc = "\n\n".join(x for x in parts if x)
+        loc = str(career.get("work_place") or r["loc"]).strip()
+        return {
+            "jobPostingInfo": {
+                "title": str(career.get("title") or r["title"]).strip(),
+                "location": loc, "additionalLocations": [],
+                "jobDescription": desc, "timeType": tt,
+                "startDate": "",
+                "externalUrl": (f"https://{self.org}/us/careers/"
+                                f"job-detail?id={rid}"),
+                "jobReqId": rid, "postedOn": "",
+                "country": {"descriptor":
+                            "US" if _plain_loc_in_country(
+                                loc, "United States") else None},
+            },
+            "hiringOrganization": {"name": "Ecovacs Robotics"},
+            "similarJobs": [],
+        }
+
+
+# ── accutar (S23: WP page accordion, no REST CPT — re_E.md §3) ─────────────
+class AccutarAdapter:
+    """spec org = host (www.accutarbio.com). Jobs are PAGE CONTENT (WP
+    blocks), not a CPT — no REST feed. Parse the mobile list for
+    ids+links and the desktop accordion for full descriptions
+    (index-aligned by data-category+data-index); locations derived
+    from 3-address regexes (Cranbury/Mountain View/Bellevue)."""
+
+    KIND = "accutar"
+    _US = "United States"
+    _LOCS = [
+        (r"Cranbury[, ]+(?:New Jersey|NJ)", "Cranbury, NJ"),
+        (r"Mountain View,? CA", "Mountain View, CA"),
+        (r"Bellevue,? WA", "Bellevue, WA"),
+    ]
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "www.accutarbio.com"   # custom: grammar — host baked
+        self.org = org
+        self.cfg = cfg
+
+    def _page(self) -> str:
+        return _fetch_text_resilient(
+            f"https://{self.org}/careers/", f"ats:accutar:{self.org}",
+            self.cfg)
+
+    def _rows(self) -> list:
+        key = f"accutar:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        html = self._page()
+        rows: list[dict] = []
+        # 1) mobile list: title -> career-detail id (mixed-quote attrs!)
+        rid_by_title: dict[str, str] = {}
+        for m in re.finditer(
+                r"<div class=\"position-title\"[^>]*data-category=['\"]"
+                r"([^'\"]*)['\"][^>]*data-index=['\"](\d+)['\"][^>]*>"
+                r"\s*<a[^>]*href=\"[^\"]*career-detail\??id=(\d+)\"[^>]*>"
+                r"(.*?)</a>", html, re.S):
+            _cat, _idx, rid, title = m.groups()
+            t = unescape(re.sub(r"<[^>]+>", "", title)).strip()
+            if t:
+                rid_by_title[t] = rid
+        # 2) desktop cards: title + description TOGETHER in one card
+        # (button.position-title + #collapse-<cat>-<n> body)
+        for seg in re.split(r'<div class="card position ', html)[1:]:
+            tm = re.search(
+                r'<button[^>]*position-title[^>]*>(.*?)</button>',
+                seg, re.S)
+            title = unescape(re.sub(r"<[^>]+>", "",
+                                    tm.group(1) if tm else "")).strip()
+            if not title:
+                continue
+            dm = re.search(
+                r'<div class="card-body position-requirement"[^>]*>'
+                r'(.*?)</div>\s*</div>\s*</div>', seg, re.S)
+            desc = ""
+            if dm:
+                d_ = unescape(re.sub(r"<!--.*?-->", "", dm.group(1)))
+                desc = re.sub(r"<[^>]+>", "\n", d_)
+                desc = re.sub(r"\n{2,}", "\n", desc).strip()
+                desc = desc.replace("\xa0", " ")
+            loc = ""
+            # addresses line-wrap ("Bellevue,\nWA") — flatten first
+            flat = re.sub(r"\s+", " ", desc or "")
+            for pat, lbl in self._LOCS:
+                if re.search(pat, flat):
+                    loc = lbl
+                    break
+            rid = rid_by_title.get(title) or _slugify(title)
+            rows.append({"rid": rid, "title": title,
+                         "cat": "bio" if " bio" in seg[:60] else "com",
+                         "desc": desc, "loc": loc})
+        # 3) mobile-only rows (ids with no desktop twin) stay honest:
+        # skipped — desktop carries the full text
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped = 0
+        for j in self._rows():
+            if country and not (j["loc"] and _plain_loc_in_country(
+                    j["loc"], country)):
+                dropped += 1
+                continue
+            rows[j["rid"]] = {
+                "reqId": j["rid"], "title": j["title"],
+                "company": "Accutar Biotech",
+                "url": f"https://{self.org}/career-detail/?id={j['rid']}",
+                "externalPath": f"/{j['rid']}",
+                "locationsText": j["loc"] or "US (see description)",
+                "postedOn": "", "timeType": "",
+                "bulletFields": [j["rid"]], "ats": "accutar",
+            }
+        meta = {"rows": len(rows), "total": len(rows) + dropped,
+                "complete": True, "pages": 1,
+                "client_filtered": dropped,
+                "client_filtered_country": dropped,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] accutar:{self.org}: {len(rows)} "
+              f"rows ({dropped} non-{country or '-'} dropped)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        r = next((x for x in self._rows() if x["rid"] == rid), None)
+        if r is None:
+            return None
+        return {
+            "jobPostingInfo": {
+                "title": r["title"], "location": r["loc"],
+                "additionalLocations": [],
+                "jobDescription": r["desc"], "timeType": "",
+                "startDate": "",
+                "externalUrl": (f"https://{self.org}/career-detail/"
+                                f"?id={rid}"),
+                "jobReqId": rid, "postedOn": "",
+                "country": {"descriptor":
+                            "US" if r["loc"] else None},
+            },
+            "hiringOrganization": {"name": "Accutar Biotech"},
+            "similarJobs": [],
+        }
+
+
+# ── hitgen (S23: ThinkPHP SSR + ?location=US filter — re_E.md §4) ──────────
+class HitGenAdapter:
+    """spec org = host (www.hitgen.com). No JSON; li[data-id] rows;
+    detail popups at /en/careers-position-popup-<id>.html. US rule:
+    rows under ?location=US (NEVER ?location=USA — dirty DB tagging,
+    maps to a China row!) cross-checked against "Base in China"
+    full-width-paren titles."""
+
+    KIND = "hitgen"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "www.hitgen.com"       # custom: grammar — host baked
+        self.org = org
+        self.cfg = cfg
+
+    def _us_page(self) -> str:
+        return _fetch_text_resilient(
+            f"https://{self.org}/en/careers-position.html?location=US",
+            f"ats:hitgen:{self.org}:us", self.cfg)
+
+    def _all_page(self) -> str:
+        return _fetch_text_resilient(
+            f"https://{self.org}/en/careers-position.html",
+            f"ats:hitgen:{self.org}:all", self.cfg)
+
+    def _rows(self) -> list:
+        key = f"hitgen:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        us_html = self._us_page()
+        all_html = self._all_page()
+
+        def _ids(html: str) -> set:
+            return set(re.findall(
+                r'<li[^>]*data-id="(\d+)"[^>]*>', html or ""))
+        us_ids = _ids(us_html)
+        rows: list[dict] = []
+        for m in re.finditer(
+                r'<li[^>]*data-id="(\d+)"[^>]*>(.*?)</li>', all_html,
+                re.S):
+            rid, body = m.group(1), m.group(2)
+            tm = re.search(r'<div class="results-txt"[^>]*>(.*?)'
+                           r'</div>', body, re.S)
+            title = unescape(re.sub(r"<[^>]+>", "",
+                                    tm.group(1) if tm else "")).strip()
+            if not title:
+                continue
+            # the US filter result + the Base-in-China cross-check
+            is_us = rid in us_ids and not re.search(
+                r"Base in China", title)
+            rows.append({"rid": rid, "title": title, "us": is_us})
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped = 0
+        for j in self._rows():
+            if country and not j["us"]:
+                dropped += 1
+                continue
+            rows[j["rid"]] = {
+                "reqId": j["rid"], "title": j["title"],
+                "company": "HitGen",
+                "url": (f"https://{self.org}/en/careers-position-"
+                        f"popup-{j['rid']}.html"),
+                "externalPath": f"/{j['rid']}",
+                "locationsText": "US" if j["us"] else "China",
+                "postedOn": "", "timeType": "",
+                "bulletFields": [j["rid"]], "ats": "hitgen",
+            }
+        meta = {"rows": len(rows), "total": len(rows) + dropped,
+                "complete": True, "pages": 1,
+                "client_filtered": dropped,
+                "client_filtered_country": dropped,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] hitgen:{self.org}: {len(rows)} rows "
+              f"({dropped} non-{country or '-'} dropped; "
+              "location=US filter)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        r = next((x for x in self._rows() if x["rid"] == rid), None)
+        if r is None:
+            return None
+        html = _fetch_text_resilient(
+            f"https://{self.org}/en/careers-position-popup-{rid}.html",
+            f"ats:hitgen:{self.org}:{rid}", self.cfg)
+        desc = ""
+        dm = re.search(r'<div class="popup-dt"[^>]*>(.*?)</div>',
+                       html or "", re.S)
+        if dm:
+            d_ = unescape(re.sub(r"<[^>]+>", "\n", dm.group(1)))
+            desc = re.sub(r"\n{2,}", "\n", d_).strip()
+        return {
+            "jobPostingInfo": {
+                "title": r["title"],
+                "location": "US" if r["us"] else "China",
+                "additionalLocations": [],
+                "jobDescription": desc, "timeType": "",
+                "startDate": "",
+                "externalUrl": (f"https://{self.org}/en/"
+                                f"careers-position.html?location=US"),
+                "jobReqId": rid, "postedOn": "",
+                "country": {"descriptor": "US" if r["us"] else None},
+            },
+            "hiringOrganization": {"name": "HitGen"},
+            "similarJobs": [],
+        }
+
+
+# ── insilico (S23: Tilda SSR accordion — re_E.md §5) ───────────────────────
+class InsilicoAdapter:
+    """spec org = host (insilico.com). Tilda t849 accordion, fully
+    server-rendered; scoped to the rec block (marketing noise
+    elsewhere). US eligibility = the remote-global row (the mission's
+    remote-friendly class); UAE rows drop under a US country filter."""
+
+    KIND = "insilico"
+    _US = "United States"
+    _REC = "rec620788308"
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "insilico.com"         # custom: grammar — host baked
+        self.org = org
+        self.cfg = cfg
+
+    def _page(self) -> str:
+        return _fetch_text_resilient(
+            f"https://{self.org}/careers", f"ats:insilico:{self.org}",
+            self.cfg)
+
+    def _rows(self) -> list:
+        key = f"insilico:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        html = self._page()
+        m = re.search(r'id="' + self._REC + r'"(.*?)<!--/ record -->'
+                      r'|id="' + self._REC + r'"(.*)', html or "", re.S)
+        scope = (m.group(1) or m.group(2)) if m else (html or "")
+        rows: list[dict] = []
+        for hm in re.finditer(
+                r'<div class="t849__header\s*"[^>]*>(.*?)</div>\s*'
+                r'<div class="t849__content"[^>]*>(.*?)(?=<div '
+                r'class="t849__wrapper"|$)', scope, re.S):
+            head, body = hm.group(1), hm.group(2)
+            tm2 = re.search(
+                r'<span class="t849__title[^"]*"[^>]*>(.*?)</span>',
+                head, re.S)
+            title = unescape(re.sub(
+                r"<[^>]+>", "", tm2.group(1) if tm2 else head)).strip()
+            title = re.sub(r"\s+", " ", title)
+            dm = re.search(
+                r'<div class="t849__text [^"]*"[^>]*>(.*?)'
+                r'(?=</div>\s*</div>\s*<div|</div>\s*</div>\s*$)'
+                r'|<div class="t849__text"[^>]*>(.*?)'
+                r'(?=</div>\s*</div>\s*<div|</div>\s*$)',
+                body, re.S)
+            desc_raw = (dm.group(1) or dm.group(2)) if dm else ""
+            desc = ""
+            if dm:
+                d_ = unescape(re.sub(r"<[^>]+>", "\n", desc_raw))
+                desc = re.sub(r"\n{2,}", "\n", d_
+                              ).strip().replace("\xa0", " ")
+            pm = re.search(r"Place of work[:\s]*(.*?)(?:\n|\.|$)",
+                           desc or "")
+            place = (pm.group(1).strip() if pm else "")
+            rid = _slugify(title)
+            rows.append({"rid": rid, "title": title, "desc": desc,
+                         "place": place})
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped = 0
+        for j in self._rows():
+            # US eligibility: remote-global rows (remote-friendly
+            # mission class); explicit non-US places drop
+            remote_global = re.search(
+                r"remote,? open globally", j["place"], re.I)
+            if country and not remote_global:
+                dropped += 1
+                continue
+            rows[j["rid"]] = {
+                "reqId": j["rid"], "title": j["title"],
+                "company": "Insilico Medicine",
+                "url": f"https://{self.org}/careers",
+                "externalPath": f"/{j['rid']}",
+                "locationsText": j["place"] or "Remote (global)",
+                "postedOn": "", "timeType": "",
+                "bulletFields": [j["rid"]], "ats": "insilico",
+            }
+        meta = {"rows": len(rows), "total": len(rows) + dropped,
+                "complete": True, "pages": 1,
+                "client_filtered": dropped,
+                "client_filtered_country": dropped,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] insilico:{self.org}: {len(rows)} "
+              f"rows ({dropped} non-remote-global dropped)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        r = next((x for x in self._rows() if x["rid"] == rid), None)
+        if r is None:
+            return None
+        return {
+            "jobPostingInfo": {
+                "title": r["title"],
+                "location": r["place"] or "Remote (global)",
+                "additionalLocations": [],
+                "jobDescription": r["desc"], "timeType": "",
+                "startDate": "",
+                "externalUrl": f"https://{self.org}/careers",
+                "jobReqId": rid, "postedOn": "",
+                "country": {"descriptor":
+                            "Remote" if re.search(
+                                r"remote,? open globally", r["place"],
+                                re.I) else None},
+            },
+            "hiringOrganization": {"name": "Insilico Medicine"},
+            "similarJobs": [],
+        }
+
+
+# ── orbbec (S23: Elementor inline-JD static page — the S21 catalog
+#    class, upgraded to wire per the adj-5 evidence) ───────────────────
+class OrbbecAdapter:
+    """spec org = host (www.orbbec.com). Jobs are inline text-editor
+    widgets: '<p><strong>TITLE</strong></p>' followed by Job
+    Responsibilities/Requirements + a resume address. US evidence =
+    the resume address (Troy MI — the LCA employer's address). No
+    ids/dates; rid = slug(title)."""
+
+    KIND = "orbbec"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "www.orbbec.com"       # custom: grammar — host baked
+        self.org = org
+        self.cfg = cfg
+
+    def _page(self) -> str:
+        return _fetch_text_resilient(
+            f"https://{self.org}/careers/", f"ats:orbbec:{self.org}",
+            self.cfg)
+
+    def _rows(self) -> list:
+        key = f"orbbec:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        html = self._page()
+        # strip scripts/styles FIRST — the last block would otherwise
+        # absorb the page tail (CSS/JS noise, false US matches)
+        html = re.sub(r'<script[^>]*>.*?</script>', '', html, flags=re.S)
+        html = re.sub(r'<style[^>]*>.*?</style>', '', html, flags=re.S)
+        rows: list[dict] = []
+        # job blocks: <p><strong>Title</strong></p> then the body until
+        # the next <p><strong> (Elementor wraps each job in its own
+        # text-editor widget; titles are the bold-lead paragraphs)
+        blocks = re.split(r'<p>\s*<strong>', html)
+        cur: Optional[dict] = None
+        for b in blocks[1:]:
+            tm = re.match(r'([^<]{3,120})</strong>\s*</p>', b)
+            head = unescape(tm.group(1)).strip() if tm else ""
+            is_job_title = bool(re.search(
+                r'(engineer|developer|manager|scientist|designer'
+                r'|specialist|director|analyst|architect|intern|sales'
+                r'|marketing|technician|consultant|lead)', head, re.I))
+            txt = unescape(re.sub(r"<[^>]+>", "\n", b))
+            txt = re.sub(r"\n{2,}", "\n", txt).strip()
+            txt = txt.replace("\xa0", " ")
+            if is_job_title and head:
+                if cur:
+                    rows.append(cur)
+                cur = {"rid": _slugify(head), "title": head,
+                       "desc": txt}
+            elif cur is not None:
+                # section blocks (Job Responsibilities:, requirements,
+                # address) MERGE into the current job
+                cur["desc"] += "\n" + txt
+        if cur:
+            rows.append(cur)
+        # classify AFTER merging — trim the FOOTER first (the last
+        # job's desc absorbs page-tail marketing/footer text where the
+        # resume address repeats and would misclassify it)
+        for r in rows:
+            d = re.split(
+                r"Terms and Conditions|Stay updated|粤ICP备|"
+                r"Facebook-f\s*Linkedin|North America 2800",
+                r["desc"])[0]
+            r["desc"] = d.strip()
+            r["us"] = bool(re.search(
+                r"(?:Troy\s*,?\s*MI|Livernois|,\s*[A-Z]{2}\s+\d{5}"
+                r"|United States)", d))
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped = 0
+        for j in self._rows():
+            if country and not j["us"]:
+                dropped += 1
+                continue
+            rows[j["rid"]] = {
+                "reqId": j["rid"], "title": j["title"],
+                "company": "Orbbec",
+                "url": f"https://{self.org}/careers/",
+                "externalPath": f"/{j['rid']}",
+                "locationsText": "US" if j["us"] else "See description",
+                "postedOn": "", "timeType": "",
+                "bulletFields": [j["rid"]], "ats": "orbbec",
+            }
+        meta = {"rows": len(rows), "total": len(rows) + dropped,
+                "complete": True, "pages": 1,
+                "client_filtered": dropped,
+                "client_filtered_country": dropped,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] orbbec:{self.org}: {len(rows)} rows "
+              f"({dropped} non-{country or '-'} dropped; inline-JD "
+              "address classification)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        r = next((x for x in self._rows() if x["rid"] == rid), None)
+        if r is None:
+            return None
+        return {
+            "jobPostingInfo": {
+                "title": r["title"],
+                "location": "US" if r["us"] else "See description",
+                "additionalLocations": [],
+                "jobDescription": r["desc"], "timeType": "",
+                "startDate": "",
+                "externalUrl": f"https://{self.org}/careers/",
+                "jobReqId": rid, "postedOn": "",
+                "country": {"descriptor": "US" if r["us"] else None},
+            },
+            "hiringOrganization": {"name": "Orbbec"},
+            "similarJobs": [],
+        }
+
+
+# ── visionnav (S23: SSR data.php list + detail pages — adj-6) ──────────────
+class VisionNavAdapter:
+    """spec org = host (www.visionnav.com). data.php = the SSR jobs
+    list (19 recruiting-item cards: title h4 + 'Product | <loc> |
+    Social Recruitment | <date>' meta + detail<N>.html links). US rule
+    from the meta location token (North America / USA / Remote,US)."""
+
+    KIND = "visionnav"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "www.visionnav.com"     # custom: grammar — host baked
+        self.org = org
+        self.cfg = cfg
+
+    def _page(self) -> str:
+        return _fetch_text_resilient(
+            f"https://{self.org}/about/data.php",
+            f"ats:visionnav:{self.org}", self.cfg)
+
+    def _rows(self) -> list:
+        key = f"visionnav:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        html = self._page()
+        rows: list[dict] = []
+        for m in re.finditer(
+                r'<div class="recruiting-item"[^>]*>\s*<a href="'
+                r'(detail\d+\.html)"[^>]*>(.*?)</a>', html, re.S):
+            href, body = m.groups()
+            tm = re.search(r'<h4[^>]*>(.*?)</h4>', body, re.S)
+            mm = re.search(r'<div class="text-2[^"]*"[^>]*>(.*?)'
+                           r'</div>', body, re.S)
+            title = unescape(re.sub(r"<[^>]+>", "",
+                                    tm.group(1) if tm else "")).strip()
+            meta = unescape(re.sub(r"<[^>]+>", " ",
+                                   mm.group(1) if mm else "")).strip()
+            parts = [p.strip() for p in meta.split("|")]
+            loc = parts[1] if len(parts) >= 2 else ""
+            posted = parts[-1] if parts and re.match(
+                r"\d{4}\.", parts[-1]) else ""
+            is_us = bool(re.search(
+                r"North America|USA|Remote,\s*US\b|United States", loc))
+            if not title:
+                continue
+            rows.append({"rid": href.replace(".html", ""),
+                         "title": title, "loc": loc or "See meta",
+                         "posted": posted, "us": is_us,
+                         "url": f"https://{self.org}/about/{href}"})
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped = 0
+        for j in self._rows():
+            if country and not j["us"]:
+                dropped += 1
+                continue
+            label, iso = _posted_label(_dotdate_iso(j["posted"]))
+            rows[j["rid"]] = {
+                "reqId": j["rid"], "title": j["title"],
+                "company": "VisionNav Robotics",
+                "url": j["url"], "externalPath": f"/{j['rid']}",
+                "locationsText": j["loc"], "postedOn": label,
+                "postedOnIso": iso, "timeType": "",
+                "bulletFields": [j["rid"]], "ats": "visionnav",
+            }
+        meta = {"rows": len(rows), "total": len(rows) + dropped,
+                "complete": True, "pages": 1,
+                "client_filtered": dropped,
+                "client_filtered_country": dropped,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] visionnav:{self.org}: {len(rows)} "
+              f"rows ({dropped} non-{country or '-'} dropped)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        r = next((x for x in self._rows() if x["rid"] == rid), None)
+        if r is None:
+            return None
+        html = _fetch_text_resilient(r["url"],
+                                     f"ats:visionnav:{self.org}:{rid}",
+                                     self.cfg)
+        desc = ""
+        dm = re.search(r'<div class="recruiting-detail[^"]*"'
+                       r'[^>]*>(.*?)</div>\s*</div>', html or "", re.S)
+        if not dm:
+            dm = re.search(
+                r'Position</[^>]+>(.*?)</div>\s*</div>', html or "",
+                re.S)
+        if dm:
+            d_ = unescape(re.sub(r"<[^>]+>", "\n", dm.group(1)))
+            desc = re.sub(r"\n{2,}", "\n", d_).strip()
+        if not desc:               # whole-body fallback (scoped page)
+            body = re.sub(r"<script[^>]*>.*?</script>", "",
+                          html or "", flags=re.S)
+            d_ = unescape(re.sub(r"<[^>]+>", "\n", body))
+            desc = re.sub(r"\n{2,}", "\n", d_).strip()[:6000]
+        return {
+            "jobPostingInfo": {
+                "title": r["title"], "location": r["loc"],
+                "additionalLocations": [],
+                "jobDescription": desc, "timeType": "",
+                "startDate": _dotdate_iso(r["posted"]),
+                "externalUrl": r["url"], "jobReqId": rid,
+                "postedOn": "",
+                "country": {"descriptor": "US" if r["us"] else None},
+            },
+            "hiringOrganization": {"name": "VisionNav Robotics"},
+            "similarJobs": [],
+        }
+
+
+def _dotdate_iso(text: str) -> str:
+    """"2026.03.31" → "2026-03-31" (the VisionNav dot-date format)."""
+    m = re.search(r"(\d{4})\.(\d{1,2})\.(\d{1,2})", text or "")
+    if not m:
+        return ""
+    return f"{int(m.group(1)):04d}-{int(m.group(2)):02d}-" \
+           f"{int(m.group(3)):02d}"
+
+
+# ── verisilicon (S23: Careers page divUSTabsItem h3 sections — adj-6) ─────
+class VeriSiliconAdapter:
+    """spec org = host (www.verisilicon.com). The Careers page's US tab
+    (divUSTabsItem) renders jobs as careertabcont blocks: h3 title +
+    opencareercont description; email apply (US.HR@). 2 live US roles
+    (the adj note's 4 counted description bullets as roles)."""
+
+    KIND = "verisilicon"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "www.verisilicon.com"   # custom: grammar — host baked
+        self.org = org
+        self.cfg = cfg
+
+    def _page(self) -> str:
+        return _fetch_text_resilient(
+            f"https://{self.org}/en/Careers", f"ats:vs:{self.org}",
+            self.cfg)
+
+    def _rows(self) -> list:
+        key = f"verisilicon:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        html = self._page()
+        i = html.find("divUSTabsItem")
+        seg = html[i:] if i >= 0 else ""
+        rows: list[dict] = []
+        for m in re.finditer(
+                r'<div class="careertabcont">(.*?)(?=<div class='
+                r'"careertabcont">|</div>\s*</div>\s*</div>\s*</div>)',
+                seg, re.S):
+            blk = m.group(1)
+            tm = re.search(r'<h3>([^<]+)</h3>', blk)
+            title = unescape(tm.group(1)).strip() if tm else ""
+            if not title:
+                continue
+            d_ = unescape(re.sub(r"<[^>]+>", "\n", blk))
+            desc = re.sub(r"\n{2,}", "\n", d_).strip()
+            desc = desc.replace("\xa0", " ")
+            # drop the leading title echo in the description
+            desc = re.sub(r"^\s*" + re.escape(title) + r"\s*", "", desc)
+            rows.append({"rid": _slugify(title), "title": title,
+                         "desc": desc})
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        for j in self._rows():      # the /en US tab IS the US board
+            rows[j["rid"]] = {
+                "reqId": j["rid"], "title": j["title"],
+                "company": "VeriSilicon",
+                "url": f"https://{self.org}/en/Careers",
+                "externalPath": f"/{j['rid']}",
+                "locationsText": "San Jose, CA",
+                "postedOn": "", "timeType": "",
+                "bulletFields": [j["rid"]], "ats": "verisilicon",
+            }
+        meta = {"rows": len(rows), "total": len(rows), "complete": True,
+                "pages": 1, "client_filtered": 0,
+                "client_filtered_country": 0,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] verisilicon:{self.org}: {len(rows)} "
+              "US rows (en/Careers divUS tab)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        r = next((x for x in self._rows() if x["rid"] == rid), None)
+        if r is None:
+            return None
+        return {
+            "jobPostingInfo": {
+                "title": r["title"], "location": "San Jose, CA",
+                "additionalLocations": [],
+                "jobDescription": r["desc"], "timeType": "",
+                "startDate": "",
+                "externalUrl": f"https://{self.org}/en/Careers",
+                "jobReqId": rid, "postedOn": "",
+                "country": {"descriptor": "US"},
+            },
+            "hiringOrganization": {"name": "VeriSilicon"},
+            "similarJobs": [],
+        }
+
+
+# ── uniview (S23: US careers page div.li blocks — adj-6) ───────────────────
+class UniviewAdapter:
+    """spec org = host (www.uniview.com). /us/About_Us/Career/ renders
+    div.li blocks: div.tit-20 title ('Sales Engineer(Based in
+    USA/Canada)') + body with description and 'Base in: USA/Canada'.
+    US rule: 'Based in USA' / 'Base in: USA' in title or body."""
+
+    KIND = "uniview"
+    _US = "United States"
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "www.uniview.com"       # custom: grammar — host baked
+        self.org = org
+        self.cfg = cfg
+
+    def _page(self) -> str:
+        return _fetch_text_resilient(
+            f"https://{self.org}/us/About_Us/Career/",
+            f"ats:uniview:{self.org}", self.cfg)
+
+    def _rows(self) -> list:
+        key = f"uniview:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        html = self._page()
+        rows: list[dict] = []
+        # split on the li openers (nested divs make close-matching
+        # unreliable; each segment runs to the next li or page end)
+        for blk in re.split(r'<div class="li\w*">', html)[1:]:
+            blk = blk.split('<div class="page')[0]
+            tm = re.search(r'<div class="tit-20"[^>]*>(.*?)</div>',
+                           blk, re.S)
+            title = unescape(re.sub(r"<[^>]+>", "",
+                                    tm.group(1) if tm else "")).strip()
+            if not title:
+                continue
+            d_ = unescape(re.sub(r"<[^>]+>", "\n", blk))
+            desc = re.sub(r"\n{2,}", "\n", d_).strip()
+            desc = desc.replace("\xa0", " ")
+            is_us = bool(re.search(r"Bas(?:e|ed) in[:\s]*USA",
+                                   title + " " + desc))
+            rows.append({"rid": _slugify(title), "title": title,
+                         "desc": desc, "us": is_us})
+        _CACHE[key] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped = 0
+        for j in self._rows():
+            if country and not j["us"]:
+                dropped += 1
+                continue
+            rows[j["rid"]] = {
+                "reqId": j["rid"], "title": j["title"],
+                "company": "Uniview",
+                "url": f"https://{self.org}/us/About_Us/Career/",
+                "externalPath": f"/{j['rid']}",
+                "locationsText": "USA/Canada" if j["us"]
+                else "See description",
+                "postedOn": "", "timeType": "",
+                "bulletFields": [j["rid"]], "ats": "uniview",
+            }
+        meta = {"rows": len(rows), "total": len(rows) + dropped,
+                "complete": True, "pages": 1,
+                "client_filtered": dropped,
+                "client_filtered_country": dropped,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] uniview:{self.org}: {len(rows)} rows "
+              f"({dropped} non-{country or '-'} dropped)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        r = next((x for x in self._rows() if x["rid"] == rid), None)
+        if r is None:
+            return None
+        return {
+            "jobPostingInfo": {
+                "title": r["title"],
+                "location": "USA/Canada" if r["us"] else "See description",
+                "additionalLocations": [],
+                "jobDescription": r["desc"], "timeType": "",
+                "startDate": "",
+                "externalUrl": (f"https://{self.org}/us/About_Us/"
+                                f"Career/"),
+                "jobReqId": rid, "postedOn": "",
+                "country": {"descriptor": "US" if r["us"] else None},
+            },
+            "hiringOrganization": {"name": "Uniview"},
+            "similarJobs": [],
+        }
+
+
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "lever": LeverAdapter, "workable": WorkableAdapter,
              "feishuhire": FeishuHireAdapter,
@@ -7009,4 +8125,11 @@ _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "greenland": GreenlandAdapter, "jereh": JerehAdapter,
              "autelenergy": AutelEnergyAdapter, "aden": AdenAdapter,
              "mandarinoriental": MandarinOrientalAdapter,
-             "wuxiapptec": WuXiAppTecAdapter}
+             "wuxiapptec": WuXiAppTecAdapter,
+             # S23 AI-census customs (contracts in
+             # ingest/data/ats_seed/s23_ai_census/re_E.md)
+             "blacksesame": BlackSesameAdapter,
+             "ecovacsus": EcovacsUSAdapter, "accutar": AccutarAdapter,
+             "hitgen": HitGenAdapter, "insilico": InsilicoAdapter,
+             "orbbec": OrbbecAdapter, "visionnav": VisionNavAdapter,
+             "verisilicon": VeriSiliconAdapter, "uniview": UniviewAdapter}

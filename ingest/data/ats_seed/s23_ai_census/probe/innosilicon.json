@@ -1,0 +1,162 @@
+{
+ "brand": "Innosilicon",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:28:55.818Z",
+ "candidates": [
+  {
+   "url": "https://www.innosilicon.shop/html/about/career/job-detail.html?id=1",
+   "title": "Careers - INNOSILICON",
+   "status": 200,
+   "bytes": 90854,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "1. Participate in the development and tape-out of chips in advanced process nodes (28nm, 14nm, 10nm, 7nm, 5nm), including high-speed digital-analog hybrid circu",
+   "backend": "direct"
+  },
+  {
+   "url": "https://innosilicon.shop/html/about/career/index.html",
+   "title": "Careers - INNOSILICON",
+   "status": 200,
+   "bytes": 31589,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Innosilicon Institute — Move Your Career Forward With the flat management and effective learning environment, employees are directly involved in the world-class",
+   "backend": "direct"
+  },
+  {
+   "url": "https://innosilicon.com/",
+   "title": "Home - INNOSILICON",
+   "status": 200,
+   "bytes": 237034,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Innosilicon, a leading provider of IP and SoC services with over 19 years of experience, specializes in computing, storage, and connectivity.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - INNOSILICON",
+   "u": "https://www.innosilicon.shop/html/about/career/job-detail.html?id=1",
+   "s": "1. Participate in the development and tape-out of chips in advanced process nodes (28nm, 14nm, 10nm, 7nm, 5nm), including high-speed digital-analog hybrid circu"
+  },
+  {
+   "t": "Careers - INNOSILICON",
+   "u": "https://innosilicon.shop/html/about/career/index.html",
+   "s": "Innosilicon Institute — Move Your Career Forward With the flat management and effective learning environment, employees are directly involved in the world-class"
+  },
+  {
+   "t": "Innosilicon Jobs in Worldwide (33,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/innosilicon-jobs-worldwide",
+   "s": "Today's top 33,000+ Innosilicon jobs in Worldwide. Leverage your professional network, and get hired. New Innosilicon jobs added daily."
+  },
+  {
+   "t": "Home - INNOSILICON",
+   "u": "https://innosilicon.com/",
+   "s": "Innosilicon, a leading provider of IP and SoC services with over 19 years of experience, specializes in computing, storage, and connectivity."
+  },
+  {
+   "t": "芯动科技 - zhiye.com",
+   "u": "https://innosilicon.zhiye.com/Campus",
+   "s": "INNOSILICON 中国芯片行业Top10独角兽、IP&GPU硬科技领军企业 即将登陆科创板，高科技、高成长、高待遇! 加入温暖互助朝气蓬勃的胜利之师 让你的才华放异彩，让你的青春不虚度 competence = 脱颖而出，contribution = 丰硕收获"
+  },
+  {
+   "t": "INNOSILICON - LinkedIn",
+   "u": "https://www.linkedin.com/company/innosiliconglobal",
+   "s": "Innosilicon is a world-class one-stop shop of high-speed interface IP and design services with 18 years of history. Having empowered hundreds of well-known cust"
+  },
+  {
+   "t": "INNOSILICA",
+   "u": "https://innosilica.com/",
+   "s": "Partner with Us to Build the Future! Whether you're looking for a technology partner, training, or career opportunities, Innosilica is here to empower your jour"
+  },
+  {
+   "t": "Company - INNOSILICON",
+   "u": "https://www.innosilicon.com/about",
+   "s": "Innosilicon - High Speed IP & Design Services Leader Innosilicon is a global, world-class one-stop shop of high-speed interface IP and ASIC Design services with"
+  },
+  {
+   "t": "Careers - INNOSILICON",
+   "u": "https://innosilicon.shop/html/about/career/index.html",
+   "s": "Innosilicon's Memorial Day Enjoy Your Own Carnival On the anniversary day, employees put on the company's cultural shirt and participate in collective interacti"
+  },
+  {
+   "t": "Careers - INNOSILICON",
+   "u": "https://www.innosilicon.shop/html/about/career/job-detail.html?id=1",
+   "s": "1. Participate in the development and tape-out of chips in advanced process nodes (28nm, 14nm, 10nm, 7nm, 5nm), including high-speed digital-analog hybrid circu"
+  },
+  {
+   "t": "Innosilicon Jobs in Worldwide (33,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/innosilicon-jobs-worldwide",
+   "s": "Today's top 33,000+ Innosilicon jobs in Worldwide. Leverage your professional network, and get hired. New Innosilicon jobs added daily."
+  },
+  {
+   "t": "Home - INNOSILICON",
+   "u": "https://innosilicon.com/?lang=en",
+   "s": "Innosilicon, a leading provider of IP and SoC services with over 19 years of experience, specializes in computing, storage, and connectivity."
+  },
+  {
+   "t": "Careers | Insilico Medicine",
+   "u": "https://insilico.com/careers",
+   "s": "Place of work Abu Dhabi, United Arab Emirates About Role Insilico Medicine is seeking a Machine Learning Engineer to develop, support and improve predictive mod"
+  },
+  {
+   "t": "芯动科技 - zhiye.com",
+   "u": "https://innosilicon.zhiye.com/Campus",
+   "s": "中国芯片行业Top10独角兽、IP&GPU硬科技领军企业 即将登陆科创板，高科技、高成长、高待遇! 加入温暖互助朝气蓬勃的胜利之师 让你的才华放异彩，让你的青春不虚度 competence = 脱颖而出，contribution = 丰硕收获 做有挑战且有意义的事，成为行业引领者，一起改变世界!"
+  },
+  {
+   "t": "芯动微电子科技（珠海）有限公司2027届秋季校园招聘",
+   "u": "https://www.jrzp.com/xiaozhaoView/5704379.shtml",
+   "s": "芯动微电子科技（珠海）有限公司 网申：https://innosilicon.zhiye.com/campus 工作地点：全国 雇主简介 芯动科技（innosilicon）是中国芯片行业top10独角兽、preipo领军设计企业，18年来重兵布局高性能gpu等蓝海，在计算、存储和连接等三大赛道具备全球竞争力。"
+  },
+  {
+   "t": "芯动科技 - innosilicon.zhiye.com",
+   "u": "https://innosilicon.zhiye.com/campus?c=4403",
+   "s": "芯动科技"
+  },
+  {
+   "t": "Careers - INNOSILICON",
+   "u": "https://innosilicon.shop/html/about/career/index.html",
+   "s": "Innosilicon Institute — Move Your Career Forward With the flat management and effective learning environment, employees are directly involved in the world-class"
+  },
+  {
+   "t": "Careers - INNOSILICON",
+   "u": "https://www.innosilicon.shop/html/about/career/job-detail.html?id=1",
+   "s": "Recruitment (70%): Understand the employment demands, assist in formulating recruitment plans, maintain existing recruitment channels, develop new channels base"
+  },
+  {
+   "t": "Innosilicon Jobs in Worldwide (33,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/innosilicon-jobs-worldwide",
+   "s": "Today's top 33,000+ Innosilicon jobs in Worldwide. Leverage your professional network, and get hired. New Innosilicon jobs added daily."
+  },
+  {
+   "t": "INNOSILICA",
+   "u": "https://innosilica.com/",
+   "s": "Partner with Us to Build the Future! Whether you're looking for a technology partner, training, or career opportunities, Innosilica is here to empower your jour"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.innosilicon.shop/html/about/career/job-detail.html?id=1",
+  "platform": "custom",
+  "title": "Careers - INNOSILICON"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.innosilicon.shop/html/about/career/index.html",
+  "identity": "confirmed",
+  "note": "Own static careers pages (innosilicon.shop job-detail pages + innosilicon.zhiye.com campus board) reference Wuhan/Shanghai/Suzhou only; no US/remote roles; LCA null.",
+  "ts": "2026-10-01"
+ }
+}

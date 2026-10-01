@@ -1,0 +1,159 @@
+{
+ "brand": "Metaso",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:41:54.577Z",
+ "candidates": [
+  {
+   "url": "https://www.metso.com/corporate/careers/",
+   "title": "Careers - Metso",
+   "status": 200,
+   "bytes": 470579,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Eager to work at Metso? Join an industry leader and make a positive change in the sustainable use of the world's natural resources.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.metso.com/corporate/careers/open-jobs/",
+   "title": "Open jobs - Metso",
+   "status": 200,
+   "bytes": 487386,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "With locations in over 50 countries, Metso offers a wide range of job opportunities. In the list below you can find all our current open positions.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.metso.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 21510,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Metso is a frontrunner in sustainable technologies, end-to-end solutions and services for the aggregates, minerals processing and metals refining industries glo",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Metso",
+   "u": "https://www.metso.com/corporate/careers/",
+   "s": "Eager to work at Metso? Join an industry leader and make a positive change in the sustainable use of the world's natural resources."
+  },
+  {
+   "t": "Open jobs - Metso",
+   "u": "https://www.metso.com/corporate/careers/open-jobs/",
+   "s": "With locations in over 50 countries, Metso offers a wide range of job opportunities. In the list below you can find all our current open positions."
+  },
+  {
+   "t": "Metso",
+   "u": "https://careers.metso.com/",
+   "s": "Metso is a frontrunner in sustainable technologies, end-to-end solutions and services for the aggregates, minerals processing and metals refining industries glo"
+  },
+  {
+   "t": "careers.metso.com",
+   "u": "https://careers.metso.com/job/",
+   "s": "Would you like to take the opportunity to influence the industry towards a more responsible use of the world's natural resources? By joining us, it is possible."
+  },
+  {
+   "t": "空缺岗位 - Metso",
+   "u": "https://www.metso.cn/corporate/careers/open-jobs/",
+   "s": "美卓在全球50多个国家设有办事处，提供广泛的工作机会。您可以从以下列表中看到我们目前所有的空缺岗位。"
+  },
+  {
+   "t": "Metso: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/metsoofficial/jobs/",
+   "s": "Metso | 500,500 followers on LinkedIn. The partner for positive change. | Metso is a frontrunner in sustainable technologies, end-to-end solutions and services "
+  },
+  {
+   "t": "Meta Careers",
+   "u": "https://www.metacareers.com/jobsearch/",
+   "s": "Search open positions at Meta across AI, engineering, research, product, design, and more."
+  },
+  {
+   "t": "Meta Jobs & Careers | Do the Most Meaningful Work of Your Career",
+   "u": "https://www.metacareers.com/",
+   "s": "Meta's mission is to build the future of human connection and the technology that makes it possible. Find your job with Meta."
+  },
+  {
+   "t": "Open jobs - Metso",
+   "u": "https://www.metso.com/corporate/careers/open-jobs/",
+   "s": "See all available positions and apply, or create a candidate profile for future openings."
+  },
+  {
+   "t": "Careers - Metso",
+   "u": "https://www.metso.com/corporate/careers/",
+   "s": "Eager to work at Metso? Join an industry leader and make a positive change in the sustainable use of the world's natural resources."
+  },
+  {
+   "t": "Metso",
+   "u": "https://careers.metso.com/",
+   "s": "Would you like to take the opportunity to influence the industry towards a more responsible use of the world's natural resources? By joining us, it is possible."
+  },
+  {
+   "t": "How to join - Metso",
+   "u": "https://www.metso.com/corporate/careers/open-jobs/how-to-join/",
+   "s": "Find more information on our recruitment process and what we emphasize in recruitment."
+  },
+  {
+   "t": "Working at Metso - Metso",
+   "u": "https://www.metso.com/corporate/careers/working-at-metso/",
+   "s": "meal benefits, car/bicycle benefits and the opportunity for job rotation Flexible working Metso's global guidelines encourage a hybrid work model, whenever poss"
+  },
+  {
+   "t": "空缺岗位 - Metso",
+   "u": "https://www.metso.cn/corporate/careers/open-jobs/",
+   "s": "美卓在全球50多个国家设有办事处，提供广泛的工作机会。您可以从以下列表中看到我们目前所有的空缺岗位。"
+  },
+  {
+   "t": "Vacantes disponibles - Metso",
+   "u": "https://www.metso.com/es/informacion-corporativa/oportunidades-laborales/vacantes-disponibles/",
+   "s": "Revisa todos los puestos disponibles y postúlete, o cree un perfil de candidato para futuras vacantes"
+  },
+  {
+   "t": "Students and Graduates - Metso",
+   "u": "https://www.metso.com/corporate/careers/students-and-graduates/",
+   "s": "Students and graduates, we want to invest in you! We offer many opportunities for future Metsonites to kickstart their careers and make a positive impact on the"
+  },
+  {
+   "t": "Open jobs - Metso",
+   "u": "https://www.metso.com/corporate/careers/open-jobs/",
+   "s": "With locations in over 50 countries, Metso offers a wide range of job opportunities. In the list below you can find all our current open positions."
+  },
+  {
+   "t": "Careers - Metso",
+   "u": "https://www.metso.com/corporate/careers/",
+   "s": "Eager to work at Metso? Join an industry leader and make a positive change in the sustainable use of the world's natural resources."
+  },
+  {
+   "t": "Metso",
+   "u": "https://careers.metso.com/",
+   "s": "Would you like to take the opportunity to influence the industry towards a more responsible use of the world's natural resources? By joining us, it is possible."
+  },
+  {
+   "t": "Metso careers — 145 open jobs in 26 countries — Hiring Ticker",
+   "u": "https://hiringticker.com/company/metso/",
+   "s": "Metso has 145 open positions right now, across 26 countries — most in the United States (22). Mostly Engineering & R&D, Production & Operations, Supply Chain & "
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "us_rows": null,
+  "spec": "https://www.metso.com/corporate/careers/",
+  "identity": "refuted",
+  "note": "all probe hits = Metso (Finnish minerals-tech; 145 open jobs incl 22 US) — homonym, NOT Shanghai 秘塔AI搜索; real Metaso (metaso.cn) has no own US board/entity/LCA; never attribute Metso's US jobs.",
+  "ts": "2026-10-01"
+ }
+}

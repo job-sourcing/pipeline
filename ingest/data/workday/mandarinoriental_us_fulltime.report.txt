@@ -1,0 +1,9 @@
+rows: 30 (unique reqIds: 30)
+details merged: 30
+descriptions present: 30
+locations enumerated (not 'N Locations'): 30
+startDate present: 30
+signals: matched=22 no_match=8 blocked=0 not_checked=0
+location entries total (sum nLocations): 30
+similar-job edges: 0
+h1b wage bands: 0/30 rows banded (0 title+state, 0 title-only) from 1 LCA filings → mandarinoriental_us_fulltime.h1b_lca.csv

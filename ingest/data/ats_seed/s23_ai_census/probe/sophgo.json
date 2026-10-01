@@ -1,0 +1,9 @@
+{
+ "brand": "SOPHGO",
+ "tier": "wire_now",
+ "spec": "undefined:undefined",
+ "ts": "2026-10-01T12:11:11.426Z",
+ "unsupported_platform": true,
+ "s23_verdict": "deferred_js_walled",
+ "note": "successfactors jobs.sophgo.com — the cataloged JS-rendered class (S21); fleet-v2/tls-impersonate target, not wireable now"
+}

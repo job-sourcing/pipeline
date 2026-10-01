@@ -1,0 +1,24 @@
+{
+ "brand": "Insilico Medicine",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:30:52.782Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://insilico.com/careers",
+  "platform": "custom",
+  "title": "Careers | Insilico Medicine",
+  "via": "guess"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 1,
+  "spec": "https://insilico.com/careers",
+  "identity": "confirmed",
+  "note": "Own on-domain board lists 3 current roles: 2 Abu Dhabi + 1 'Fully remote, open globally' (remote-friendly/US-eligible); dual-HQ HK/NY per census and site shows US office (Cambridge MA); custom board — needs scraper wiring.",
+  "ts": "2026-10-01"
+ }
+}

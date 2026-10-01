@@ -1,0 +1,24 @@
+{
+ "brand": "HitGen",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:25:10.627Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.hitgen.com/en/careers",
+  "platform": "custom",
+  "title": "HitGen-Careers",
+  "via": "guess"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 1,
+  "spec": "https://www.hitgen.com/en/careers-position.html",
+  "identity": "confirmed",
+  "note": "Own EN board (hitgen.com) lists 3 roles with a USA/US location filter; 'Director of Business Development' carries no China base tag (the US role) while VP CMC + Dir MedChem are 'Base in China'; corroborates census US-sub HitGen Inc hiring.",
+  "ts": "2026-10-01"
+ }
+}

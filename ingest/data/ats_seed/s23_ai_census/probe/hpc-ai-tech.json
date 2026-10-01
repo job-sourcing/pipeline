@@ -1,0 +1,160 @@
+{
+ "brand": "HPC-AI Tech",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:20:47.902Z",
+ "candidates": [
+  {
+   "url": "https://company.hpc-ai.com/company/careers",
+   "title": "Careers with Colossal-AI",
+   "status": 200,
+   "bytes": 56600,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join us in our mission of democratizing AI with performance optimization in the world.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://company.hpc-ai.com/company/careers/ai-systems-engineers",
+   "title": "AI Systems Engineers",
+   "status": 200,
+   "bytes": 47513,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "AI Systems Engineers We are seeking talented and motivated AI Systems Engineers to join our team. As an AI Systems Engineer, you will have the opportunity to de",
+   "backend": "direct"
+  },
+  {
+   "url": "https://hpc.social/jobs/",
+   "title": "hpc.social - Jobs",
+   "status": 200,
+   "bytes": 28711,
+   "markers": [
+    "greenhouse",
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Community jobs feed Posted after Show jobs that were posted on (and after) selected date",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers with Colossal-AI - company.hpc-ai.com",
+   "u": "https://company.hpc-ai.com/company/careers",
+   "s": "Join us in our mission of democratizing AI with performance optimization in the world."
+  },
+  {
+   "t": "HPC-AI Tech Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/hpc-ai-tech",
+   "s": "HPC-AI Tech is a startup focusing on improving the efficiency of enterprise AI model training and deployment. Before his startup launched, the founder had broke"
+  },
+  {
+   "t": "HPC AI TECHNOLOGY PTE. LTD. Careers and Employment",
+   "u": "https://sg.indeed.com/cmp/Hpc-Ai-Technology-Pte.-Ltd.",
+   "s": "Find out what works well at HPC AI TECHNOLOGY PTE. LTD. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO ins"
+  },
+  {
+   "t": "HPC-AI Tech Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/hpc-ai-tech/jobs",
+   "s": "Explore jobs and careers at HPC-AI Tech. HPC-AI Tech is currently hiring for a range of positions."
+  },
+  {
+   "t": "AI Systems Engineers - company.hpc-ai.com",
+   "u": "https://company.hpc-ai.com/company/careers/ai-systems-engineers",
+   "s": "AI Systems Engineers We are seeking talented and motivated AI Systems Engineers to join our team. As an AI Systems Engineer, you will have the opportunity to de"
+  },
+  {
+   "t": "HPC-AI Tech - LinkedIn",
+   "u": "https://www.linkedin.com/company/hpc-ai-technology/",
+   "s": "HPC-AI Tech | 1,009 followers on LinkedIn. The leader in AI/ML acceleration software and creator of the open source Colossal-AI. | HPC-AI Tech is a startup focu"
+  },
+  {
+   "t": "HPC AI TECHNOLOGY PTE. LTD. Jobs and Careers - Indeed",
+   "u": "https://sg.indeed.com/cmp/Hpc-Ai-Technology-Pte.-Ltd./jobs",
+   "s": "7 HPC AI TECHNOLOGY PTE. LTD. jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "35 HPC AI TECHNOLOGY PTE. LTD. jobs in Singapore",
+   "u": "https://sg.jobstreet.com/HPC-AI-TECHNOLOGY-PTE.-LTD.-jobs",
+   "s": "Find your ideal job at Jobstreet with 35 HPC AI TECHNOLOGY PTE. LTD. jobs found in Singapore. View all our HPC AI TECHNOLOGY PTE. LTD. vacancies now with new jo"
+  },
+  {
+   "t": "Hpc Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/hpc-jobs",
+   "s": "Find your ideal job at Jobsdb with 116 Hpc jobs found in Hong Kong. View all our Hpc vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "98 C Engineer High Performance Computing (HPC) jobs in Hong Kong",
+   "u": "https://hk.jobsdb.com/C-Engineer-High-Performance-Computing-(HPC)-jobs",
+   "s": "Find your ideal job at Jobsdb with 98 C Engineer High Performance Computing (HPC) jobs found in Hong Kong. View all our C Engineer High Performance Computing (H"
+  },
+  {
+   "t": "Careers with Colossal-AI",
+   "u": "https://company.hpc-ai.com/company/careers",
+   "s": "Job openings AI Systems Engineers As an AI Systems Engineer, you will have the opportunity to develop and optimize artificial intelligence algorithms and system"
+  },
+  {
+   "t": "Global Tech (AI Compute Infra/ HPC - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/view/solution-manager-director-global-tech-ai-compute-infra-hpc-5-8m-bonus-perm-at-adecco-4460205724",
+   "s": "At least 5 years of experience in infrastructure design/architecture, with solid exposure to HPC and/or AI computing center design, advisory work, and/or deploy"
+  },
+  {
+   "t": "Hpc Jobs in Hong Kong SAR (33 Open Roles) | LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/hpc-jobs",
+   "s": "Today's top 33 Hpc jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Hpc jobs added daily."
+  },
+  {
+   "t": "AI & HPC Infrastructure Engineer - Accenture",
+   "u": "https://www.accenture.com/us-en/careers/jobdetails?id=R00339803_en",
+   "s": "We Are: The Global AI Infrastructure team is at the center of enabling infrastructure reinvention for the next era of digital solutions powered by AI, accelerat"
+  },
+  {
+   "t": "29,000 Hpc Ai Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-Hpc-Ai-jobs.html",
+   "s": "Government and Public Sector - Technology Consulting - AI & Data - GenAI Developer - Manager From strategy to execution, the Government and Public Sector practi"
+  },
+  {
+   "t": "hpc.social - Jobs",
+   "u": "https://hpc.social/jobs/",
+   "s": "Community jobs feed Posted after Show jobs that were posted on (and after) selected date"
+  },
+  {
+   "t": "Careers with Colossal-AI",
+   "u": "https://company.hpc-ai.com/company/careers",
+   "s": "Job openings AI Systems Engineers As an AI Systems Engineer, you will have the opportunity to develop and optimize artificial intelligence algorithms and system"
+  },
+  {
+   "t": "Hpc Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/hpc-jobs",
+   "s": "Find your ideal job at Jobsdb with 116 Hpc jobs found in Hong Kong. View all our Hpc vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Artificial Intelligence Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/artificial-intelligence-jobs",
+   "s": "Find your ideal job at Jobsdb with 1654 Artificial Intelligence jobs found in Hong Kong. View all our Artificial Intelligence vacancies now with new jobs added "
+  },
+  {
+   "t": "HPC AI TECHNOLOGY PTE. LTD. Careers and Employment",
+   "u": "https://sg.indeed.com/cmp/Hpc-Ai-Technology-Pte.-Ltd.",
+   "s": "Find out what works well at HPC AI TECHNOLOGY PTE. LTD. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO ins"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://company.hpc-ai.com/company/careers",
+  "identity": "confirmed",
+  "note": "Genuine Colossal-AI careers page (static site; opening = AI Systems Engineers, no US/remote location markers now); SG entity HPC AI TECHNOLOGY PTE hires via SG boards; historical US-remote ads not present",
+  "ts": "2026-10-01"
+ }
+}

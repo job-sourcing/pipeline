@@ -1,0 +1,154 @@
+{
+ "brand": "iFLYTEK",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:15:52.063Z",
+ "candidates": [
+  {
+   "url": "https://iflytek.zhiye.com/jobs",
+   "title": "官网 | 科大讯飞招聘",
+   "status": 200,
+   "bytes": 33580,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "科大讯飞成立于1999年，是亚太地区知名的智能语音和人工智能上市企业。秉承\"解放生产力、释放想象力，用人工智能建设美好世界\"的使命愿景，基于自主可控的人工智能核心技术，科大讯飞持续打造\"更懂你的AI\"，构建了以\"讯飞星火大模型\"为核心的多元化AI应用生态，赋能教育、医疗 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.ctgoodjobs.hk/jobs/iflytek-hong-kong-company-limited-jobs",
+   "title": "Iflytek Hong Kong Company Limited Jobs in Hong Kong - Oct 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 801752,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 7052 Iflytek Hong Kong Company Limited jobs in Hong Kong. Browse through all our new daily-updated Iflytek Hong Kong Company Limited job listing now!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.techjobasia.com/companies/_lzUO4G-SKKXv1MMB_m8LQ---iFlytek",
+   "title": "Job openings at iFlytek in Central and Western, Hong Kong, China | Apply now at TechJobAsia",
+   "status": 200,
+   "bytes": 297877,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Working at iFlytek in Central and Western, Hong Kong, China, Apply now! As the leading job board specializing in the tech industry, we connect talented professi",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "官网 | 科大讯飞招聘 - iflytek.zhiye.com",
+   "u": "https://iflytek.zhiye.com/jobs",
+   "s": "科大讯飞成立于1999年，是亚太地区知名的智能语音和人工智能上市企业。秉承\"解放生产力、释放想象力，用人工智能建设美好世界\"的使命愿景，基于自主可控的人工智能核心技术，科大讯飞持续打造\"更懂你的AI\"，构建了以\"讯飞星火大模型\"为核心的多元化AI应用生态，赋能教育、医疗 ..."
+  },
+  {
+   "t": "iFLYTEK Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Iflytek",
+   "s": "Find out what works well at iFLYTEK from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
+  },
+  {
+   "t": "Job openings at iFlytek in Central and Western, Hong Kong, China ...",
+   "u": "https://www.techjobasia.com/companies/_lzUO4G-SKKXv1MMB_m8LQ---iFlytek",
+   "s": "Working at iFlytek in Central and Western, Hong Kong, China, Apply now! As the leading job board specializing in the tech industry, we connect talented professi"
+  },
+  {
+   "t": "iFLYTEK Co., Ltd. - LinkedIn",
+   "u": "https://hk.linkedin.com/company/iflytekcoltd.",
+   "s": "iFLYTEK Co., Ltd. | 20,310 followers on LinkedIn. iFLYTEK Co., Ltd. (SZ 002230) is a cutting edge speech technology company Core business Fundamental speech tec"
+  },
+  {
+   "t": "IFLYTEK - LinkedIn",
+   "u": "https://www.linkedin.com/company/iflytek",
+   "s": "IFLYTEK | 1,244 followers on LinkedIn. As a leading company in the field of artificial intelligence, iFLYTEK has accumulated rich experience and technical exper"
+  },
+  {
+   "t": "World-leading AI Solution Provider of Language Exchange ... - iFlytek",
+   "u": "https://www.iflytek.com/en/",
+   "s": "Real-Time voice recording and transcription, revolutionizing efficiency for meetings, interviews, content creation, and more."
+  },
+  {
+   "t": "Iflytek科大訊飛 Recruitment-offerToday",
+   "u": "https://www.offertoday.com/en/company/ytmj-AXXD_-1XElflthxTg==",
+   "s": "Offertoday provides job seekers with the latest recruitment, as well as company industry, profile and online recruiters. Iflytek科大訊飛 is currently directly hirin"
+  },
+  {
+   "t": "iFLYTEK Jobs and Careers | GetLinks",
+   "u": "https://getlinks.com/en/company/iflytek",
+   "s": "Explore iFLYTEK jobs, salary insights, hiring activity, and career opportunities on GetLinks."
+  },
+  {
+   "t": "官网 | 科大讯飞招聘 - iflytek.zhiye.com",
+   "u": "https://iflytek.zhiye.com/jobs",
+   "s": "科大讯飞成立于1999年，是亚太地区知名的智能语音和人工智能上市企业。秉承\"解放生产力、释放想象力，用人工智能建设美好世界\"的使命愿景，基于自主可控的人工智能核心技术，科大讯飞持续打造\"更懂你的AI\"，构建了以\"讯飞星火大模型\"为核心的多元化AI应用生态，赋能教育、医疗 ..."
+  },
+  {
+   "t": "iFLYTEK Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Iflytek",
+   "s": "Find out what works well at iFLYTEK from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
+  },
+  {
+   "t": "Job openings at iFlytek in Central and Western, Hong Kong, China ...",
+   "u": "https://www.techjobasia.com/companies/_lzUO4G-SKKXv1MMB_m8LQ---iFlytek",
+   "s": "Working at iFlytek in Central and Western, Hong Kong, China, Apply now! As the leading job board specializing in the tech industry, we connect talented professi"
+  },
+  {
+   "t": "Iflytek Hong Kong Company Limited Jobs in Hong Kong - Sep 2026 - CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/iflytek-hong-kong-company-limited-jobs",
+   "s": "Explore 7052 Iflytek Hong Kong Company Limited jobs in Hong Kong. Browse through all our new daily-updated Iflytek Hong Kong Company Limited job listing now!"
+  },
+  {
+   "t": "5 Iflytek Co. Ltd. jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/iflytek-co.-ltd.-jobs-worldwide?f_AL=true",
+   "s": "Today's top 5 Iflytek Co. Ltd. jobs in Worldwide. Leverage your professional network, and get hired. New Iflytek Co. Ltd. jobs added daily."
+  },
+  {
+   "t": "Iflytek Jobs in Worldwide (12,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/iflytek-jobs-worldwide",
+   "s": "Today's top 12,000+ Iflytek jobs in Worldwide. Leverage your professional network, and get hired. New Iflytek jobs added daily."
+  },
+  {
+   "t": "Iflytek科大訊飛 Recruitment-offerToday",
+   "u": "https://www.offertoday.com/en/company/ytmj-AXXD_-1XElflthxTg==",
+   "s": "Offertoday provides job seekers with the latest recruitment, as well as company industry, profile and online recruiters. Iflytek科大訊飛 is currently directly hirin"
+  },
+  {
+   "t": "IFLYTEK (HONG KONG) COMPANY LIMITED hiring Customer Manager-Business ...",
+   "u": "https://hk.linkedin.com/jobs/view/customer-manager-business-development-at-iflytek-hong-kong-company-limited-4317150287",
+   "s": "Company Description IFLYTEK (HONG KONG) COMPANY LIMITED Role Description Develop and execute strategic sales plans aligned with overall business objectives, dec"
+  },
+  {
+   "t": "官网 | 科大讯飞招聘 - iflytek.zhiye.com",
+   "u": "https://iflytek.zhiye.com/jobs",
+   "s": "科大讯飞成立于1999年，是亚太地区知名的智能语音和人工智能上市企业。秉承\"解放生产力、释放想象力，用人工智能建设美好世界\"的使命愿景，基于自主可控的人工智能核心技术，科大讯飞持续打造\"更懂你的AI\"，构建了以\"讯飞星火大模型\"为核心的多元化AI应用生态，赋能教育、医疗 ..."
+  },
+  {
+   "t": "iFLYTEK Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Iflytek",
+   "s": "Find out what works well at iFLYTEK from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
+  },
+  {
+   "t": "Job openings at iFlytek in Central and Western, Hong Kong, China ...",
+   "u": "https://www.techjobasia.com/companies/_lzUO4G-SKKXv1MMB_m8LQ---iFlytek",
+   "s": "Working at iFlytek in Central and Western, Hong Kong, China, Apply now! As the leading job board specializing in the tech industry, we connect talented professi"
+  },
+  {
+   "t": "Iflytek Hong Kong Company Limited Jobs in Hong Kong - Sep 2026 - CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/iflytek-hong-kong-company-limited-jobs",
+   "s": "Explore 7052 Iflytek Hong Kong Company Limited jobs in Hong Kong. Browse through all our new daily-updated Iflytek Hong Kong Company Limited job listing now!"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.ctgoodjobs.hk/jobs/iflytek-hong-kong-company-limited-jobs",
+  "platform": "custom",
+  "title": "Iflytek Hong Kong Company Limited Jobs in Hong Kong - Oct 2026 | CTgoodjobs"
+ },
+ "verdict": "custom_surface"
+}

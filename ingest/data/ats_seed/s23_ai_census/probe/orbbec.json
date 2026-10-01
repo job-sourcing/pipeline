@@ -1,0 +1,24 @@
+{
+ "brand": "Orbbec",
+ "tier": "probe_A",
+ "lca": "ORBBEC 3D TECHNOLOGY INTERNATIONAL, INC.",
+ "ts": "2026-10-01T12:48:13.254Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.orbbec.com/careers/",
+  "platform": "custom",
+  "title": "Careers at Orbbec - 3D Vision &amp; Robotics Jobs",
+  "via": "guess"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 1,
+  "spec": "https://www.orbbec.com/careers/",
+  "identity": "confirmed",
+  "note": "static WP inline JDs live today: 'Software Developer' (R&D) with resume address Orbbec 3D Technology International Inc, 2800 Livernois Rd Suite 220, Troy MI 48083 — matches LCA employer (2 filings) = 1 US row; 2nd live role Seoul. S21 catalog upgrades to wire_candidate.",
+  "ts": "2026-10-01"
+ }
+}

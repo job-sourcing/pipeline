@@ -1,0 +1,157 @@
+{
+ "brand": "Haomo.ai",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:22:06.748Z",
+ "candidates": [
+  {
+   "url": "https://houmo.jobs.feishu.cn/career",
+   "title": "后摩智能",
+   "status": 200,
+   "bytes": 133069,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "feishu:houmo",
+   "score": 12,
+   "snippet": "后摩智能科技有限公司，提供多样化职业机会，欢迎加入，共创未来!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.washingtonpost.com/business/2026/09/29/job-scams-have-gotten-more-sophisticated-heres-how-spot-avoid-them/",
+   "title": "",
+   "status": 200,
+   "bytes": 11985,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Job seekers should watch out for \"ghost\" AI job postings and data phishing disguised as listings.",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "HAOMO.AI - LinkedIn",
+   "u": "https://www.linkedin.com/company/%E6%AF%AB%E6%9C%AB%E6%99%BA%E8%A1%8C",
+   "s": "HAOMO.AI | 504 followers on LinkedIn. 合抱之木，生于毫末。 | 合抱之木，生于毫末。"
+  },
+  {
+   "t": "Haomo.AI Technology Co., Ltd. | 领英 - 领英 (中国)",
+   "u": "https://cn.linkedin.com/company/haomo",
+   "s": "Haomo.AI Technology Co., Ltd. | 在领英上有 166 位关注者。Haomo.AI is an autonomous driving company that aims to reshape how people travel and handle logistics across the "
+  },
+  {
+   "t": "HAOMO.AI hiring 研发实习生（纳米制剂） in Nanjing, Jiangsu, China | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/4452312980",
+   "s": "研发实习生（纳米制剂） HAOMO.AI Nanjing, Jiangsu, China 2 weeks ago Be among the first 25 applicants See who HAOMO.AI has hired for this role"
+  },
+  {
+   "t": "毫末智行公司招聘 - 爱企查",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=878a2dca51571824bb712abbacc8d3a3",
+   "s": "官网投递：访问毫末智行招聘官网 career.haomoai.com，进入后点击顶部菜单栏的\"校园招聘\"，选择对应招聘届次（如 2024 届、2025 届等）后选择心仪岗位并在线提交简历 。 公众号投递：微信搜索并关注【毫末智行招聘】公众号，通过公众号菜单栏点击\"校园招聘\"，选择\"秋招\"或\"领航者计划\"（应届博士 .."
+  },
+  {
+   "t": "Haomo.AI - Org Chart, Teams, Culture & Jobs | The Org",
+   "u": "https://theorg.com/org/haomo-ai",
+   "s": "View Haomo.AI's up-to-date org chart, open roles, and culture details. Find executives, board members, teams, related companies, and more."
+  },
+  {
+   "t": "Working at HAOMO.AI | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-HAOMO-AI-EI_IE7220708.11,19.htm",
+   "s": "See what employees say it's like to work at HAOMO.AI. Salaries, reviews, and more - all posted by employees working at HAOMO.AI."
+  },
+  {
+   "t": "HAOMO.AI Reviews (2): Pros & Cons of Working At HAOMO.AI",
+   "u": "https://www.glassdoor.com/Reviews/HAOMO-AI-Reviews-E7220708.htm",
+   "s": "2 HAOMO.AI reviews. A free inside look at company reviews and salaries posted anonymously by employees."
+  },
+  {
+   "t": "后摩智能 - Feishu",
+   "u": "https://houmo.jobs.feishu.cn/career",
+   "s": "后摩智能科技有限公司，提供多样化职业机会，欢迎加入，共创未来!"
+  },
+  {
+   "t": "HAOMO.AI - LinkedIn",
+   "u": "https://www.linkedin.com/company/%E6%AF%AB%E6%9C%AB%E6%99%BA%E8%A1%8C",
+   "s": "HAOMO.AI | 504 followers on LinkedIn. 合抱之木，生于毫末。 | 合抱之木，生于毫末。"
+  },
+  {
+   "t": "HAOMO.AI hiring 研发实习生（纳米制剂） in Nanjing, Jiangsu, China | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/4452312980",
+   "s": "研发实习生（纳米制剂） HAOMO.AI Nanjing, Jiangsu, China 2 weeks ago Be among the first 25 applicants See who HAOMO.AI has hired for this role"
+  },
+  {
+   "t": "Haomo.AI - Org Chart, Teams, Culture & Jobs | The Org",
+   "u": "https://theorg.com/org/haomo-ai",
+   "s": "View Haomo.AI's up-to-date org chart, open roles, and culture details. Find executives, board members, teams, related companies, and more."
+  },
+  {
+   "t": "Haomo.AI Technology Co., Ltd. | 领英 - 领英 (中国)",
+   "u": "https://cn.linkedin.com/company/haomo",
+   "s": "Haomo.AI Technology Co., Ltd. | 在领英上有 166 位关注者。Haomo.AI is an autonomous driving company that aims to reshape how people travel and handle logistics across the "
+  },
+  {
+   "t": "Autonomous Driving Pioneer Haomo. AI Shutters",
+   "u": "https://www.newsglobenow.com/new252365.html",
+   "s": "It's official: Haomo. AI, once hailed as China's 'mass-production pioneer' in autonomous driving, is done for. Late in the afternoon on November 22nd, employees"
+  },
+  {
+   "t": "Working at HAOMO.AI | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-HAOMO-AI-EI_IE7220708.11,19.htm",
+   "s": "See what employees say it's like to work at HAOMO.AI. Salaries, reviews, and more - all posted by employees working at HAOMO.AI."
+  },
+  {
+   "t": "HAOMO.AI Reviews (2): Pros & Cons of Working At HAOMO.AI",
+   "u": "https://www.glassdoor.com/Reviews/HAOMO-AI-Reviews-E7220708.htm",
+   "s": "2 HAOMO.AI reviews. A free inside look at company reviews and salaries posted anonymously by employees."
+  },
+  {
+   "t": "毫末智行公司招聘 - 爱企查",
+   "u": "https://aiqicha.baidu.com/details/ugknowledge?id=878a2dca51571824bb712abbacc8d3a3",
+   "s": "毫末智行招聘主要通过官方招聘官网career.haomoai.com 及微信公众号【毫末智行招聘】发布，第三方平台如 Boss 直聘也有部分岗位更新 。"
+  },
+  {
+   "t": "HAOMO.AI - LinkedIn",
+   "u": "https://www.linkedin.com/company/%E6%AF%AB%E6%9C%AB%E6%99%BA%E8%A1%8C",
+   "s": "HAOMO.AI | 504 followers on LinkedIn. 合抱之木，生于毫末。 | 合抱之木，生于毫末。"
+  },
+  {
+   "t": "HAOMO.AI hiring 研发实习生（纳米制剂） in Nanjing, Jiangsu, China | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/4452312980",
+   "s": "This range is provided by HAOMO.AI. Your actual pay will be based on your skills and experience — talk with your recruiter to learn more."
+  },
+  {
+   "t": "后摩智能 - Feishu",
+   "u": "https://houmo.jobs.feishu.cn/career",
+   "s": "后摩智能科技有限公司，提供多样化职业机会，欢迎加入，共创未来!"
+  },
+  {
+   "t": "Haomo.AI Technology Co., Ltd. - 领英 (中国)",
+   "u": "https://cn.linkedin.com/company/haomo",
+   "s": "Haomo.AI Technology Co., Ltd. | 在领英上有 166 位关注者。Haomo.AI is an autonomous driving company that aims to reshape how people travel and handle logistics across the "
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://houmo.jobs.feishu.cn/career",
+  "title": "后摩智能",
+  "status": 200,
+  "bytes": 133069,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "feishu:houmo",
+  "score": 12,
+  "snippet": "后摩智能科技有限公司，提供多样化职业机会，欢迎加入，共创未来!",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": 0,
+  "spec": null,
+  "identity": "refuted",
+  "note": "Found feishu board houmo.jobs.feishu.cn = 后摩智能 (Houmo Intelligence), different company; real career.haomoai.com + haomo.ai both unreachable (curl 000); press reports Haomo AI wound down",
+  "ts": "2026-10-01"
+ }
+}

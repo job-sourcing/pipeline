@@ -1,0 +1,37 @@
+{
+ "brand": "ModelBest",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:44:13.256Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "modelbest",
+   "spec": "feishuhire:modelbest",
+   "title": "加入面壁智能"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:modelbest",
+  "platform": "feishu",
+  "title": "加入面壁智能",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入面壁智能",
+  "brand": "ModelBest",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:modelbest",
+  "identity": "confirmed",
+  "note": "dict title 加入面壁智能 = ModelBest's Chinese name (EN-name identity check false-negatives); live: 96 jobs, 0 US — CN only; Beijing/Tsinghua-affiliated; no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
+}

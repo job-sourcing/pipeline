@@ -1,0 +1,157 @@
+{
+ "brand": "Inspur",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:31:09.506Z",
+ "candidates": [
+  {
+   "url": "http://career.inspur.com/campus2027/index.html",
+   "title": "浪潮招聘",
+   "status": 200,
+   "bytes": 20745,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "后浪潮起，浪潮集团2027届校园招聘火热进行中!",
+   "backend": "direct"
+  },
+  {
+   "url": "http://career.inspur.com/campus2027/campus.html",
+   "title": "浪潮校园招聘",
+   "status": 200,
+   "bytes": 13375,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Q：收到测评短信，但没有收到测评邮件怎么办？ A：可以查看下自己投递简历时填写的邮箱是否正确，或者查看邮箱是否屏蔽，如果确认没有收到测评邮件，可以在网申界面跟HR小助手反馈或者发送邮件至 inspurhr@inspur.com，HR第一时间处理。 Q：浪潮今年还会进校举办宣讲会吗？ A：9月起，我们将陆续 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "https://en.inspur.com/en/2822784/index.html",
+   "title": "",
+   "status": 200,
+   "bytes": 18220,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "About Inspur Inspur is a leading Chinese provider of cloud computing and big data services. The group comprises three listed companies: Inspur Information, Insp",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers: Join the INSPYR Solutions Team!",
+   "u": "https://www.inspyrsolutions.com/careers/",
+   "s": "Find out more about working with us and check out our current opportunities - apply to join our team today!"
+  },
+  {
+   "t": "浪潮招聘 - career.inspur.com",
+   "u": "http://career.inspur.com/campus2027/index.html",
+   "s": "后浪潮起，浪潮集团2027届校园招聘火热进行中!"
+  },
+  {
+   "t": "浪潮校园招聘 - career.inspur.com",
+   "u": "http://career.inspur.com/campus2027/campus.html",
+   "s": "Q：收到测评短信，但没有收到测评邮件怎么办？ A：可以查看下自己投递简历时填写的邮箱是否正确，或者查看邮箱是否屏蔽，如果确认没有收到测评邮件，可以在网申界面跟HR小助手反馈或者发送邮件至 inspurhr@inspur.com，HR第一时间处理。 Q：浪潮今年还会进校举办宣讲会吗？ A：9月起，我们将陆续 ..."
+  },
+  {
+   "t": "Find Your Next Career Opportunity - Insperity Careers",
+   "u": "https://careers.insperity.com/",
+   "s": "We believe in people and their potential and actively invest in opportunities to grow their careers with us or one of our amazing clients."
+  },
+  {
+   "t": "Job Search: Find IT and Technology Job Opportunities - INSPYR Solutions",
+   "u": "https://www.inspyrsolutions.com/job-search/",
+   "s": "Looking for your next IT job opportunity? We match proven technology professionals with contract, contract-to-hire, and direct hire roles."
+  },
+  {
+   "t": "About Inspur",
+   "u": "https://en.inspur.com/en/2822784/index.html",
+   "s": "About Inspur Inspur is a leading Chinese provider of cloud computing and big data services. The group comprises three listed companies: Inspur Information, Insp"
+  },
+  {
+   "t": "Inspur International Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Inspur-International",
+   "s": "Find out what works well at Inspur International from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
+  },
+  {
+   "t": "Careers | INSHUR",
+   "u": "https://inshur.com/careers",
+   "s": "Ready to take the next step in your career? Work alongside talented individuals, develop your skills, and make a difference to customers around the world."
+  },
+  {
+   "t": "浪潮校园招聘 - career.inspur.com",
+   "u": "http://career.inspur.com/campus2027/campus.html",
+   "s": "Q：忘记网申登录密码该如何处理？ A：请在首页登录时选择\"忘记密码\"，可通过\"账号\"、\"邮箱\"、\"手机号\"设置新密码。 Q：如何投递简历？ A：关注\"浪潮招聘\"公众号，点击\"【热招职位】—【校园招聘】\"即可编辑简历或上传简历进行投递，或者在浪潮校园招聘官网投递。 Q：每人可以 ..."
+  },
+  {
+   "t": "浪潮招聘 - career.inspur.com",
+   "u": "http://career.inspur.com/campus2027/index.html",
+   "s": "后浪潮起，浪潮集团2027届校园招聘火热进行中!"
+  },
+  {
+   "t": "Careers: Join the INSPYR Solutions Team!",
+   "u": "https://www.inspyrsolutions.com/careers/",
+   "s": "Find out more about working with us and check out our current opportunities - apply to join our team today!"
+  },
+  {
+   "t": "Find Your Next Career Opportunity - Insperity Careers",
+   "u": "https://careers.insperity.com/",
+   "s": "We believe in people and their potential and actively invest in opportunities to grow their careers with us or one of our amazing clients."
+  },
+  {
+   "t": "Job Search: Find IT and Technology Job Opportunities - INSPYR Solutions",
+   "u": "https://www.inspyrsolutions.com/job-search/",
+   "s": "Looking for your next IT job opportunity? We match proven technology professionals with contract, contract-to-hire, and direct hire roles."
+  },
+  {
+   "t": "Job Listings - Insperity",
+   "u": "https://careers.insperity.com/jobs/",
+   "s": "Find your next job Use the search fields to customize your view of the available positions - both at Insperity and our client companies."
+  },
+  {
+   "t": "Inspur International Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Inspur-International",
+   "s": "Find out what works well at Inspur International from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
+  },
+  {
+   "t": "1 Inspur jobs in Hong Kong SAR - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/inspur-jobs",
+   "s": "Today&rsquo;s top 1 Inspur jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Inspur jobs added daily."
+  },
+  {
+   "t": "浪潮校园招聘 - career.inspur.com",
+   "u": "http://career.inspur.com/campus2027/campus.html",
+   "s": "Q：收到测评短信，但没有收到测评邮件怎么办？ A：可以查看下自己投递简历时填写的邮箱是否正确，或者查看邮箱是否屏蔽，如果确认没有收到测评邮件，可以在网申界面跟HR小助手反馈或者发送邮件至 inspurhr@inspur.com，HR第一时间处理。 Q：浪潮今年还会进校举办宣讲会吗？ A：9月起，我们将陆续 ..."
+  },
+  {
+   "t": "浪潮招聘 - career.inspur.com",
+   "u": "http://career.inspur.com/campus2027/index.html",
+   "s": "后浪潮起，浪潮集团2027届校园招聘火热进行中!"
+  },
+  {
+   "t": "3,000+ Inspur Group jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/inspur-group-jobs-worldwide",
+   "s": "Today's top 3,000+ Inspur Group jobs in Worldwide. Leverage your professional network, and get hired. New Inspur Group jobs added daily."
+  },
+  {
+   "t": "Careers: Join the INSPYR Solutions Team!",
+   "u": "https://www.inspyrsolutions.com/careers/",
+   "s": "Find out more about working with us and check out our current opportunities - apply to join our team today!"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "http://career.inspur.com/",
+  "identity": "confirmed",
+  "note": "Own board career.inspur.com is Chinese-language campus recruitment only (social/main.html 404s — no intl board); en.inspur.com bot-walled for direct curl (000) but no US jobs page evidence; US ops pressured since 2020 DoD list; 120+ 'Inspur' US roles are LinkedIn aggregator noise.",
+  "ts": "2026-10-01"
+ }
+}

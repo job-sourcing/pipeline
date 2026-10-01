@@ -1,0 +1,37 @@
+{
+ "brand": "Meitu",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:39:47.663Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "meitu",
+   "spec": "feishuhire:meitu",
+   "title": "加入Pixocial 像素互联"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:meitu",
+  "platform": "feishu",
+  "title": "加入Pixocial 像素互联",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入Pixocial 像素互联",
+  "brand": "Meitu",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 1,
+  "spec": "ats:feishuhire:meitu",
+  "identity": "confirmed",
+  "note": "meitu.jobs.feishu.cn title 加入Pixocial 像素互联 = Meitu's overseas arm Pixocial (own group board); live: 20 jobs, 1 US row (Applied Researcher); no LCA.",
+  "ts": "2026-10-01"
+ }
+}

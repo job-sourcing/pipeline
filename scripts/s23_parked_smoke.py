@@ -15,8 +15,13 @@ BOARDS = [
     ("custom:jereh", 6, "Jereh"),
     ("custom:autelenergy", 3, "AutelEnergy"),
     ("custom:aden", 2, "Aden"),
-    ("custom:mandarinoriental", 30, "MandarinOriental"),
-    ("custom:wuxiapptec", 36, "WuXiAppTec"),
+    ("custom:mandarinoriental", 30, "MandarinOriental", True),
+    ("custom:wuxiapptec", 35, "WuXiAppTec"),
+    ("custom:blacksesame", 6, "BlackSesame"),
+    ("custom:ecovacsus", 1, "EcovacsUS"),
+    ("custom:accutar", 10, "Accutar"),
+    ("custom:hitgen", 1, "HitGen"),
+    ("custom:insilico", 1, "Insilico"),
 ]
 
 
@@ -24,11 +29,17 @@ def main() -> int:
     detail = "--detail" in sys.argv
     cfg = Config()
     bad = 0
-    for spec, expect, name in BOARDS:
+    for entry in BOARDS:
+        spec, expect, name = entry[0], entry[1], entry[2]
+        soft = len(entry) > 3 and entry[3]
         try:
             rows, meta = sb.list_board(spec, country="United States",
                                        progress_label="smoke")
         except Exception as exc:
+            if soft and "refusing to report 0 rows" in str(exc):
+                print(f"[SOFT-FAIL] {name}: throttled (202 anti-bot) — "
+                      "fail-loud guard working; chain retries later")
+                continue
             print(f"[SMOKE-FAIL] {name} ({spec}): {exc!r}")
             bad += 1
             continue

@@ -1,0 +1,162 @@
+{
+ "brand": "Qihoo 360",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:49:18.406Z",
+ "candidates": [
+  {
+   "url": "https://www.360careers.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 3777,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "www.360careers.com",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.hiredchina.com/zh/company/qihoo_360_technology_co._ltd_1489367637456",
+   "title": "",
+   "status": 200,
+   "bytes": 1676,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Discover jobs in China, connect with employers, and hire international talent through HiredChina.",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://consider.com/boards/co/qihoo-360",
+   "title": "Jobs at Qihoo 360 | Consider",
+   "status": 200,
+   "bytes": 4730,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Jobs at Qihoo 360 | Consider",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Qihoo 360 - LinkedIn",
+   "u": "https://www.linkedin.com/company/qihoo-360",
+   "s": "Qihoo 360 Technology Co. Ltd. (NYSE: QIHU) is a leading Internet company in China. The Company is also the number one provider of Internet and mobile security p"
+  },
+  {
+   "t": "Qihoo 360 Career: Working at Qihoo 360 | Glassdoor",
+   "u": "https://www.glassdoor.co.uk/Overview/Working-at-Qihoo-360-EI_IE325614.11,20.htm",
+   "s": "What is it really like to work at Qihoo 360? What do employees say about pay and career opportunities? Discover anonymous reviews now!"
+  },
+  {
+   "t": "Working at Qihoo 360 | Glassdoor",
+   "u": "https://www.glassdoor.sg/Overview/Working-at-Qihoo-360-EI_IE325614.11,20.htm",
+   "s": "See what employees say it's like to work at Qihoo 360. Salaries, reviews, and more - all posted by employees working at Qihoo 360."
+  },
+  {
+   "t": "Qihoo 360 Reviews: What Is It Like to Work At Qihoo 360?",
+   "u": "https://www.glassdoor.com/Reviews/Qihoo-360-Reviews-E325614.htm",
+   "s": "49 Qihoo 360 reviews. A free inside look at company reviews and salaries posted anonymously by employees."
+  },
+  {
+   "t": "www.360careers.com",
+   "u": "https://www.360careers.com/",
+   "s": "www.360careers.com"
+  },
+  {
+   "t": "What is Qihoo 360? Company Culture, Mission, Values",
+   "u": "https://www.glassdoor.ca/Overview/Working-at-Qihoo-360-EI_IE325614.11,20.htm",
+   "s": "See what employees say it's like to work at Qihoo 360. Salaries, reviews, and more - all posted by employees working at Qihoo 360."
+  },
+  {
+   "t": "QIHOO 360 INTERNATIONAL PTE. LTD. Careers Singapore | Get A Job At ...",
+   "u": "https://www.mycareersfuture.gov.sg/companies/qihoo-360-international-201714188R",
+   "s": "Qihoo 360 International PTE. LTD. operates as a subsidiary of Qihoo 360 Technology Co. Ltd. which is a leading Chinese Internet platform company with a large an"
+  },
+  {
+   "t": "Life at Qihoo 360: Culture, Salary, Reviews, Interviews & more",
+   "u": "https://www.ambitionbox.com/overview/qihoo-360-overview",
+   "s": "Get an inside look of Qihoo 360 — culture, pay, reviews, interview questions, job openings, corporate offices, peer comparison and more on AmbitionBox"
+  },
+  {
+   "t": "Qihoo 360 - LinkedIn",
+   "u": "https://na.linkedin.com/company/qihoo-360",
+   "s": "Qihoo 360 Technology Co. Ltd. (NYSE: QIHU) is a leading Internet company in China. The Company is also the number one provider of Internet and mobile security p"
+  },
+  {
+   "t": "360招聘官网",
+   "u": "https://hr.360.cn/hr/",
+   "s": "360招聘官网提供全面的社会和校园招聘信息，涵盖多个领域和岗位，助力求职者找到理想工作机会。"
+  },
+  {
+   "t": "360招聘官网",
+   "u": "https://hr.360.cn/m/list",
+   "s": "360招聘官网提供全面的职位信息，涵盖多个领域和岗位，助力求职者找到理想工作机会。"
+  },
+  {
+   "t": "「奇虎360招聘」2026年奇虎360招聘信息-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/job/0ac3daa93b4ee7011XN4.html",
+   "s": "BOSS直聘为您提供2026年奇虎360最新招聘信息，11个岗位正在直招牛人，奇虎360招聘岗位类别有：服务端工程师、实习生、实施交付工程师、红队攻防、红队攻防专家，进入网站与奇虎360的Boss在线直接开聊吧!"
+  },
+  {
+   "t": "「奇虎360招聘」-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/0ac3daa93b4ee7011XN4.html",
+   "s": "BOSS直聘为求职者提供2026年最新奇虎360招聘，更有奇虎360的公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，奇虎360正在线直聘11条职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  },
+  {
+   "t": "Qihoo 360 Technology Co. Ltd - hiredchina.com",
+   "u": "https://www.hiredchina.com/zh/company/qihoo_360_technology_co._ltd_1489367637456",
+   "s": "Discover jobs in China, connect with employers, and hire international talent through HiredChina."
+  },
+  {
+   "t": "Jobs at Qihoo 360 | Consider",
+   "u": "https://consider.com/boards/co/qihoo-360",
+   "s": "Jobs at Qihoo 360 | Consider"
+  },
+  {
+   "t": "Working at Qihoo 360 | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Qihoo-360-EI_IE325614.11,20.htm",
+   "s": "See what employees say it's like to work at Qihoo 360. Salaries, reviews, and more - all posted by employees working at Qihoo 360."
+  },
+  {
+   "t": "360招聘官网",
+   "u": "https://hr.360.cn/hr/",
+   "s": "360招聘官网提供全面的社会和校园招聘信息，涵盖多个领域和岗位，助力求职者找到理想工作机会。"
+  },
+  {
+   "t": "Working at Qihoo 360 | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Qihoo-360-EI_IE325614.11,20.htm",
+   "s": "To get a job at Qihoo 360, browse currently open positions and apply for a job near you. Once you get a positive response, make sure to find out about the inter"
+  },
+  {
+   "t": "360招聘官网",
+   "u": "https://hr.360.cn/hr/list",
+   "s": "360招聘官网提供全面的职位和招聘信息，涵盖多个领域，助力求职者找到理想工作机会。"
+  },
+  {
+   "t": "Qihoo 360 - LinkedIn",
+   "u": "https://www.linkedin.com/company/qihoo-360",
+   "s": "Qihoo 360 Technology Co. Ltd. (NYSE: QIHU) is a leading Internet company in China. The Company is also the number one provider of Internet and mobile security p"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://consider.com/boards/co/qihoo-360",
+  "platform": "custom",
+  "title": "Jobs at Qihoo 360 | Consider"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://hr.360.cn/hr/",
+  "identity": "confirmed",
+  "note": "360careers.com parked (114 bytes empty); consider.com = 3rd-party board; own official surface = hr.360.cn 360招聘官网, zh-CN roles only.",
+  "ts": "2026-10-01"
+ }
+}

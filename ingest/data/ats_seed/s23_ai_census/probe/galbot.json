@@ -1,0 +1,175 @@
+{
+ "brand": "Galbot",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:18:05.699Z",
+ "candidates": [
+  {
+   "url": "https://owm6ymi5v9b.jobs.feishu.cn/584984/page-pGc7k2",
+   "title": "加入银河通用机器人",
+   "status": 200,
+   "bytes": 143069,
+   "markers": [
+    "feishu"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "feishu:owm6ymi5v9b",
+   "score": 12,
+   "snippet": "面试轮次预计在3轮左右。 问：临时需要调整面试时间怎么办？ 答：如临时有事无法按时参加面试，请与邮件/短信中的HR联系人取得联系。 若无法联系上对应HR，可发送邮件至recruitment@galbot.com邮箱说明情况。 关于投递 关于笔面试",
+   "backend": "direct"
+  },
+  {
+   "url": "http://galbot.com/careers",
+   "title": "",
+   "status": 200,
+   "bytes": 1496,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "galbot.com",
+   "backend": "direct"
+  },
+  {
+   "url": "http://www.galbot.com/",
+   "title": "Galbot 银河通用机器人官方网站",
+   "status": 200,
+   "bytes": 107671,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Galbot - Empower various industries and serve every home with embodied AGI robots.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "galbot.com",
+   "u": "http://galbot.com/careers",
+   "s": "galbot.com"
+  },
+  {
+   "t": "Galbot - Official Website",
+   "u": "http://www.galbot.com/",
+   "s": "Galbot - Empower various industries and serve every home with embodied AGI robots."
+  },
+  {
+   "t": "Galbot - LinkedIn",
+   "u": "https://www.linkedin.com/company/galbot-robotics",
+   "s": "Galbot is a global leader in embodied AI and general-purpose robotics, pioneering end-to-end Vision-Language-Action (VLA) models and scalable robotic solutions."
+  },
+  {
+   "t": "Explore Job Opportunities and Careers | Talbots",
+   "u": "https://www.talbots.com/clothing/about-us/careers",
+   "s": "Discover all career opportunities at Talbots in your area and at our main campus"
+  },
+  {
+   "t": "Careers at Talbot | Talbot AIG",
+   "u": "https://www.talbot.aig.com/home/careers",
+   "s": "Career Advancement We support career growth through experiences, skill building, and our focus on internal mobility. Talbot has developed numerous programs to p"
+  },
+  {
+   "t": "Explore Career Opportunities at Talbots",
+   "u": "https://jobs.knitwellgroup.com/talbots",
+   "s": "No matter what role you're thinking about, you'll find opportunities to lean, grow, and build your career at Talbots. Come join our team!"
+  },
+  {
+   "t": "Galbot Careers | Levels.fyi",
+   "u": "https://www.levels.fyi/companies/galbot",
+   "s": "Galbot is a global leader in embodied AI and general-purpose robotics, pioneering end-to-end Vision-Language-Action (VLA) models and scalable robotic solutions."
+  },
+  {
+   "t": "银河通用机器人2027秋季校园招聘 具身领航者人才计划-北京银河通用机器人股份有限公司",
+   "u": "https://career.nankai.edu.cn/correcruit/content/id/116497.html",
+   "s": "2025.08 发布 Galbot G1 Premium，全球首台搭载英伟达最新 Jetson Thor 芯片的机器人 2025.08 2025世界人形机器人运动会机器人干活场景赛-分拣技能竞技项目中夺冠 2025.11 发布全球首个跨本体全域环视的导航基座大模型——NavFoM（Navigation Foundati"
+  },
+  {
+   "t": "Galbot - Official Website",
+   "u": "https://www.galbot.com/",
+   "s": "Galbot - Empower various industries and serve every home with embodied AGI robots."
+  },
+  {
+   "t": "Galbot - LinkedIn",
+   "u": "https://www.linkedin.com/company/galbot-robotics",
+   "s": "Galbot is a global leader in embodied AI and general-purpose robotics, pioneering end-to-end Vision-Language-Action (VLA) models and scalable robotic solutions."
+  },
+  {
+   "t": "Galbot opens 1st overseas fully autonomous robot retail stores in HK",
+   "u": "https://www.chinadailyhk.com/hk/article/638790",
+   "s": "The three new Galbot Stores - located in Hung Hom, Kai Tak, and Wan Chai - will officially welcome customers on Tuesday, making them the first of their kind in "
+  },
+  {
+   "t": "加入银河通用机器人 - owm6ymi5v9b.jobs.feishu.cn",
+   "u": "https://owm6ymi5v9b.jobs.feishu.cn/584984/page-pGc7k2",
+   "s": "面试轮次预计在3轮左右。 问：临时需要调整面试时间怎么办？ 答：如临时有事无法按时参加面试，请与邮件/短信中的HR联系人取得联系。 若无法联系上对应HR，可发送邮件至recruitment@galbot.com邮箱说明情况。 关于投递 关于笔面试"
+  },
+  {
+   "t": "We went shopping at a store run by a robot - CNN",
+   "u": "https://www.cnn.com/2026/09/09/world/video/robot-hong-kong-humanoid-galbot-china-digvid-vrtc-hnk",
+   "s": "Chinese robotics company Galbot has opened three \"autonomous\" shops run by a humanoid robot in Hong Kong. CNN's Stephanie Yang visits to see what they can and c"
+  },
+  {
+   "t": "Hong Kong convenience store to be staffed solely by a humanoid robot",
+   "u": "https://www.homebotradar.com/news/galbot-xiao-gai-hong-kong-robot-convenience-store/",
+   "s": "Hong Kong convenience store to be staffed solely by a humanoid robot Galbot's 173-cm G1 humanoid Xiao Gai will run a 24-hour capsule store on the Hung Hom water"
+  },
+  {
+   "t": "银河通用机器人2027秋季校园招聘 具身领航者人才计划-北京银河通用机器人股份有限公司",
+   "u": "https://career.nankai.edu.cn/correcruit/content/id/116497.html",
+   "s": "银河通用机器人2027秋季校园招聘 具身领航者人才计划 在这个技术加速从概念走向现实的时代， 人类对通用智能的美好憧憬正逐步兑现。 通用智能的美好未来不再是遥远的愿景， 它正在你面前的每一个真实场景中发生。 这场浪潮，最缺的是敢想敢闯的年轻人， 27届青年，将成为这场大变革的创造 ..."
+  },
+  {
+   "t": "Galbot Careers | Levels.fyi",
+   "u": "https://www.levels.fyi/companies/galbot",
+   "s": "Galbot is a global leader in embodied AI and general-purpose robotics, pioneering end-to-end Vision-Language-Action (VLA) models and scalable robotic solutions."
+  },
+  {
+   "t": "Galbot - LinkedIn",
+   "u": "https://www.linkedin.com/company/galbot-robotics",
+   "s": "Galbot is a global leader in embodied AI and general-purpose robotics, pioneering end-to-end Vision-Language-Action (VLA) models and scalable robotic solutions."
+  },
+  {
+   "t": "1,000+ Galbot jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/galbot-jobs",
+   "s": "Today's top 1,000+ Galbot jobs in United States. Leverage your professional network, and get hired. New Galbot jobs added daily."
+  },
+  {
+   "t": "Galbot Careers | Levels.fyi",
+   "u": "https://www.levels.fyi/companies/galbot",
+   "s": "Galbot is a global leader in embodied AI and general-purpose robotics, pioneering end-to-end Vision-Language-Action (VLA) models and scalable robotic solutions."
+  },
+  {
+   "t": "Galbot - Official Website",
+   "u": "https://www.galbot.com/",
+   "s": "Galbot 银河通用机器人 - 具身多模态大模型通用机器人，服务千行百业、千家万户。"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://owm6ymi5v9b.jobs.feishu.cn/584984/page-pGc7k2",
+  "title": "加入银河通用机器人",
+  "status": 200,
+  "bytes": 143069,
+  "markers": [
+   "feishu"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "feishu:owm6ymi5v9b",
+  "score": 12,
+  "snippet": "面试轮次预计在3轮左右。 问：临时需要调整面试时间怎么办？ 答：如临时有事无法按时参加面试，请与邮件/短信中的HR联系人取得联系。 若无法联系上对应HR，可发送邮件至recruitment@galbot.com邮箱说明情况。 关于投递 关于笔面试",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:owm6ymi5v9b",
+  "identity": "confirmed",
+  "note": "Genuine feishu board 加入银河通用机器人 (recruitment@galbot.com); adapter returns 0 US rows; CN-only despite HK robot retail stores",
+  "ts": "2026-10-01"
+ }
+}

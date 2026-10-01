@@ -1,0 +1,569 @@
+{
+ "board": "custom:visionnav",
+ "company": "VisionNav Robotics",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-01",
+ "count": 15,
+ "details_merged": 15,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 0,
+ "rows": [
+  {
+   "reqId": "detail115",
+   "title": "Test Engineer",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail115.html",
+   "externalPath": "/detail115",
+   "locationsText": "North America",
+   "postedOn": "Posted 184 Days Ago",
+   "postedOnIso": "2026-03-31",
+   "timeType": "",
+   "bulletFields": [
+    "detail115"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Test Engineer",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Test Engineer\n            \nProduct | North America | Social Recruitment | 2026.03.31",
+    "timeType": "",
+    "startDate": "2026-03-31",
+    "externalUrl": "https://www.visionnav.com/about/detail115.html",
+    "jobReqId": "detail115",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail114",
+   "title": "Solution Engineer",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail114.html",
+   "externalPath": "/detail114",
+   "locationsText": "North America",
+   "postedOn": "Posted 184 Days Ago",
+   "postedOnIso": "2026-03-31",
+   "timeType": "",
+   "bulletFields": [
+    "detail114"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Solution Engineer",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Solution Engineer\n            \nSolutions | North America | Social Recruitment | 2026.03.31",
+    "timeType": "",
+    "startDate": "2026-03-31",
+    "externalUrl": "https://www.visionnav.com/about/detail114.html",
+    "jobReqId": "detail114",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail113",
+   "title": "Senior Project Manager",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail113.html",
+   "externalPath": "/detail113",
+   "locationsText": "North America",
+   "postedOn": "Posted 184 Days Ago",
+   "postedOnIso": "2026-03-31",
+   "timeType": "",
+   "bulletFields": [
+    "detail113"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Senior Project Manager",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Senior Project Manager\n            \nProject | North America | Social Recruitment | 2026.03.31",
+    "timeType": "",
+    "startDate": "2026-03-31",
+    "externalUrl": "https://www.visionnav.com/about/detail113.html",
+    "jobReqId": "detail113",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail112",
+   "title": "Project Manager",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail112.html",
+   "externalPath": "/detail112",
+   "locationsText": "North America",
+   "postedOn": "Posted 184 Days Ago",
+   "postedOnIso": "2026-03-31",
+   "timeType": "",
+   "bulletFields": [
+    "detail112"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Project Manager",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Project Manager\n            \nProject | North America | Social Recruitment | 2026.03.31",
+    "timeType": "",
+    "startDate": "2026-03-31",
+    "externalUrl": "https://www.visionnav.com/about/detail112.html",
+    "jobReqId": "detail112",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail111",
+   "title": "Project Application Engineer",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail111.html",
+   "externalPath": "/detail111",
+   "locationsText": "North America",
+   "postedOn": "Posted 184 Days Ago",
+   "postedOnIso": "2026-03-31",
+   "timeType": "",
+   "bulletFields": [
+    "detail111"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Project Application Engineer",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Project Application Engineer\n            \nProject | North America | Social Recruitment | 2026.03.31",
+    "timeType": "",
+    "startDate": "2026-03-31",
+    "externalUrl": "https://www.visionnav.com/about/detail111.html",
+    "jobReqId": "detail111",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail110",
+   "title": "Robotics Software Engineer, SLAM",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail110.html",
+   "externalPath": "/detail110",
+   "locationsText": "North America",
+   "postedOn": "Posted 184 Days Ago",
+   "postedOnIso": "2026-03-31",
+   "timeType": "",
+   "bulletFields": [
+    "detail110"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Robotics Software Engineer, SLAM",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Robotics Software Engineer, SLAM\n            \nR&D | North America | Social Recruitment | 2026.03.31",
+    "timeType": "",
+    "startDate": "2026-03-31",
+    "externalUrl": "https://www.visionnav.com/about/detail110.html",
+    "jobReqId": "detail110",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail109",
+   "title": "Robotics Software Engineer",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail109.html",
+   "externalPath": "/detail109",
+   "locationsText": "North America",
+   "postedOn": "Posted 184 Days Ago",
+   "postedOnIso": "2026-03-31",
+   "timeType": "",
+   "bulletFields": [
+    "detail109"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Robotics Software Engineer",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Robotics Software Engineer\n            \nR&D | North America | Social Recruitment | 2026.03.31",
+    "timeType": "",
+    "startDate": "2026-03-31",
+    "externalUrl": "https://www.visionnav.com/about/detail109.html",
+    "jobReqId": "detail109",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail108",
+   "title": "Channel Sales Manager",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail108.html",
+   "externalPath": "/detail108",
+   "locationsText": "North America",
+   "postedOn": "Posted 184 Days Ago",
+   "postedOnIso": "2026-03-31",
+   "timeType": "",
+   "bulletFields": [
+    "detail108"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Channel Sales Manager",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Channel Sales Manager\n            \nSales | North America | Social Recruitment | 2026.03.31",
+    "timeType": "",
+    "startDate": "2026-03-31",
+    "externalUrl": "https://www.visionnav.com/about/detail108.html",
+    "jobReqId": "detail108",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail107",
+   "title": "Account Manager",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail107.html",
+   "externalPath": "/detail107",
+   "locationsText": "North America",
+   "postedOn": "Posted 184 Days Ago",
+   "postedOnIso": "2026-03-31",
+   "timeType": "",
+   "bulletFields": [
+    "detail107"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Account Manager",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Account Manager\n            \nSales | North America | Social Recruitment | 2026.03.31",
+    "timeType": "",
+    "startDate": "2026-03-31",
+    "externalUrl": "https://www.visionnav.com/about/detail107.html",
+    "jobReqId": "detail107",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail99",
+   "title": "Senior Robotics Software Engineer, Computer Vision",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail99.html",
+   "externalPath": "/detail99",
+   "locationsText": "North America",
+   "postedOn": "Posted 440 Days Ago",
+   "postedOnIso": "2025-07-18",
+   "timeType": "",
+   "bulletFields": [
+    "detail99"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Senior Robotics Software Engineer, Computer Vision",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Senior Robotics Software Engineer, Computer Vision\n            \nR&D | North America | Social Recruitment | 2025.07.18",
+    "timeType": "",
+    "startDate": "2025-07-18",
+    "externalUrl": "https://www.visionnav.com/about/detail99.html",
+    "jobReqId": "detail99",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail103",
+   "title": "Senior Robotics Software Engineer, Control",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail103.html",
+   "externalPath": "/detail103",
+   "locationsText": "North America",
+   "postedOn": "Posted 440 Days Ago",
+   "postedOnIso": "2025-07-18",
+   "timeType": "",
+   "bulletFields": [
+    "detail103"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Senior Robotics Software Engineer, Control",
+    "location": "North America",
+    "additionalLocations": [],
+    "jobDescription": "Senior Robotics Software Engineer, Control\n            \nR&D | North America | Social Recruitment | 2025.07.18",
+    "timeType": "",
+    "startDate": "2025-07-18",
+    "externalUrl": "https://www.visionnav.com/about/detail103.html",
+    "jobReqId": "detail103",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail102",
+   "title": "Solution Engineer",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail102.html",
+   "externalPath": "/detail102",
+   "locationsText": "USA/Europe",
+   "postedOn": "Posted 1429 Days Ago",
+   "postedOnIso": "2022-11-02",
+   "timeType": "",
+   "bulletFields": [
+    "detail102"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Solution Engineer",
+    "location": "USA/Europe",
+    "additionalLocations": [],
+    "jobDescription": "Solution Engineer\n            \nSolutions | USA/Europe | Social Recruitment | 2022.11.02",
+    "timeType": "",
+    "startDate": "2022-11-02",
+    "externalUrl": "https://www.visionnav.com/about/detail102.html",
+    "jobReqId": "detail102",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail101",
+   "title": "Project Application Engineer",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail101.html",
+   "externalPath": "/detail101",
+   "locationsText": "USA/Europe",
+   "postedOn": "Posted 1429 Days Ago",
+   "postedOnIso": "2022-11-02",
+   "timeType": "",
+   "bulletFields": [
+    "detail101"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Project Application Engineer",
+    "location": "USA/Europe",
+    "additionalLocations": [],
+    "jobDescription": "Project Application Engineer\n            \nProject | USA/Europe | Social Recruitment | 2022.11.02",
+    "timeType": "",
+    "startDate": "2022-11-02",
+    "externalUrl": "https://www.visionnav.com/about/detail101.html",
+    "jobReqId": "detail101",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail100",
+   "title": "Project Manager",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail100.html",
+   "externalPath": "/detail100",
+   "locationsText": "USA/Europe",
+   "postedOn": "Posted 1429 Days Ago",
+   "postedOnIso": "2022-11-02",
+   "timeType": "",
+   "bulletFields": [
+    "detail100"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Project Manager",
+    "location": "USA/Europe",
+    "additionalLocations": [],
+    "jobDescription": "Project Manager\n            \nProject | USA/Europe | Social Recruitment | 2022.11.02",
+    "timeType": "",
+    "startDate": "2022-11-02",
+    "externalUrl": "https://www.visionnav.com/about/detail100.html",
+    "jobReqId": "detail100",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "detail96",
+   "title": "Sales Executive",
+   "company": "VisionNav Robotics",
+   "url": "https://www.visionnav.com/about/detail96.html",
+   "externalPath": "/detail96",
+   "locationsText": "Remote, US",
+   "postedOn": "Posted 972 Days Ago",
+   "postedOnIso": "2024-02-02",
+   "timeType": "",
+   "bulletFields": [
+    "detail96"
+   ],
+   "ats": "visionnav",
+   "detail": {
+    "title": "Sales Executive",
+    "location": "Remote, US",
+    "additionalLocations": [],
+    "jobDescription": "Sales Executive\n            \nSales | Remote, US | Social Recruitment | 2024.02.02",
+    "timeType": "",
+    "startDate": "2024-02-02",
+    "externalUrl": "https://www.visionnav.com/about/detail96.html",
+    "jobReqId": "detail96",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VisionNav Robotics",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

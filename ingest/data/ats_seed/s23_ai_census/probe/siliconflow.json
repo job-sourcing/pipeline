@@ -1,0 +1,162 @@
+{
+ "brand": "SiliconFlow",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:54:45.626Z",
+ "candidates": [
+  {
+   "url": "https://github.com/siliconflow/silicondata/blob/main/careers",
+   "title": "silicondata/careers at main · siliconflow/silicondata · GitHub",
+   "status": 200,
+   "bytes": 233131,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "baseon langfuse: 🪢 Open source LLM engineering platform: LLM Observability, metrics, evals, prompt management, playground, datasets. Integrates with LlamaIndex",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.ctgoodjobs.hk/jobs/siliconflow-%E9%A6%99%E6%B8%AF-jobs",
+   "title": "Siliconflow 香港 Jobs in Hong Kong - Oct 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 657810,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 0 Siliconflow 香港 jobs in Hong Kong. Browse through all our new daily-updated Siliconflow 香港 job listing now!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.devjobsscanner.com/siliconflow/",
+   "title": "",
+   "status": 200,
+   "bytes": 28911,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Search Siliconflow from over 15+ jobs listing platforms",
+   "backend": "zenrows"
+  }
+ ],
+ "results": [
+  {
+   "t": "SiliconFlow - LinkedIn",
+   "u": "https://www.linkedin.com/company/siliconflow",
+   "s": "SiliconFlow is a global AI infrastructure platform built for developers. Accelerate inference, fine-tuning, and deployment for both language and multimodal mode"
+  },
+  {
+   "t": "silicondata/careers at main · siliconflow/silicondata · GitHub",
+   "u": "https://github.com/siliconflow/silicondata/blob/main/careers",
+   "s": "baseon langfuse: 🪢 Open source LLM engineering platform: LLM Observability, metrics, evals, prompt management, playground, datasets. Integrates with LlamaIndex"
+  },
+  {
+   "t": "Careers | SyliFlow",
+   "u": "https://syliflow.com/careers",
+   "s": "Join SyliFlow — we're hiring for AI systems, product, and platform. Remote-first, mission-driven team building the future of work."
+  },
+  {
+   "t": "Siliconflow 香港 Jobs in Hong Kong - Jul 2026 | CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/siliconflow-%E9%A6%99%E6%B8%AF-jobs",
+   "s": "Explore 0 Siliconflow 香港 jobs in Hong Kong. Browse through all our new daily-updated Siliconflow 香港 job listing now!"
+  },
+  {
+   "t": "About Us - SiliconFlow | Global AI Infrastructure Provider",
+   "u": "https://www.siliconflow.com/about",
+   "s": "about SiliconFlow, AI inference frameworks, lightning-fast inference, diffusion models optimization"
+  },
+  {
+   "t": "「硅基流动招聘」2026年硅基流动招聘信息-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/job/fe6bfcdfcb16ac2d1HZ43dm8GVE~.html",
+   "s": "BOSS直聘为您提供2026年硅基流动最新招聘信息，查看硅基流动职位信息，关注硅基流动招聘动态，欢迎进入本页面与硅基流动BOSS们在线开聊!"
+  },
+  {
+   "t": "硅基流动招聘工程师、销售、运营等岗位 - 知乎",
+   "u": "https://zhuanlan.zhihu.com/p/20604169411",
+   "s": "期待你的加入。 简历投递邮箱：talent@siliconflow.cn 让超级产品开发者实现\"Token自由\" 邀请好友体验SiliconCloud，狂送2000万Token/人 邀请越多，Token奖励越多 SiliconCloud"
+  },
+  {
+   "t": "Careers - Silicon Labs",
+   "u": "https://www.silabs.com/about-us/careers",
+   "s": "Careers at Silicon Labs. Join us in creating a more connected, energy-friendly world. Together we will do incredible things."
+  },
+  {
+   "t": "「硅基流动招聘」2026年硅基流动招聘信息-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/job/015ae67e8b3d5ee203173dm4ElE~.html",
+   "s": "BOSS直聘为您提供2026年硅基流动最新招聘信息，8个岗位正在直招牛人，硅基流动招聘岗位类别有：大模型测试开发工程师、AI解决方案架构师（公有云方向）、招聘专家、推理引擎 (LLM与AIGC方向)研发工程师、推理引擎研发工程师，进入网站与硅基流动的Boss在线直接开聊吧!"
+  },
+  {
+   "t": "SiliconFlow - LinkedIn",
+   "u": "https://www.linkedin.com/company/siliconflow",
+   "s": "SiliconFlow is a global AI infrastructure platform built for developers. Accelerate inference, fine-tuning, and deployment for both language and multimodal mode"
+  },
+  {
+   "t": "「硅基流动招聘」-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/015ae67e8b3d5ee203173dm4ElE~.html",
+   "s": "BOSS直聘为求职者提供2026年最新硅基流动招聘，更有硅基流动的公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，硅基流动正在线直聘27条职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  },
+  {
+   "t": "硅基流动在招 4 个岗位 · Offer岛",
+   "u": "https://offerdao.ai/j/manual_y4h23gh6tgpnis",
+   "s": "硅基流动（SiliconFlow）专注于提供高效能、低成本的多品类AI 模型服务，助力开发者和企业聚焦产品创新。近日，硅基流动已完成超 20 亿元 B 轮融资。"
+  },
+  {
+   "t": "GitHub - mkt-0/job-rag-assistant: A RAG-powered job Q&A web app for ...",
+   "u": "https://github.com/mkt-0/job-rag-assistant",
+   "s": "A RAG-powered job Q&A web app for students seeking internships/grad roles — ask in plain language, get matched real job postings with sources. Flask + Chroma + "
+  },
+  {
+   "t": "Siliconflow Jobs in Worldwide | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/siliconflow-jobs-worldwide",
+   "s": "Today's top Siliconflow jobs in Worldwide. Leverage your professional network, and get hired. New Siliconflow jobs added daily."
+  },
+  {
+   "t": "Siliconflow | Devjobsscanner",
+   "u": "https://www.devjobsscanner.com/siliconflow/",
+   "s": "Search Siliconflow from over 15+ jobs listing platforms"
+  },
+  {
+   "t": "SiliconFlow jobs in Netflix",
+   "u": "https://explore.jobs.netflix.net/careers?query=SiliconFlow",
+   "s": "SiliconFlow jobs in Netflix"
+  },
+  {
+   "t": "Careers | SyliFlow",
+   "u": "https://syliflow.com/careers",
+   "s": "Join SyliFlow — we're hiring for AI systems, product, and platform. Remote-first, mission-driven team building the future of work."
+  },
+  {
+   "t": "SiliconFlow - LinkedIn",
+   "u": "https://www.linkedin.com/company/siliconflow",
+   "s": "SiliconFlow is a global AI infrastructure platform built for developers. Accelerate inference, fine-tuning, and deployment for both language and multimodal mode"
+  },
+  {
+   "t": "silicondata/careers at main · siliconflow/silicondata · GitHub",
+   "u": "https://github.com/siliconflow/silicondata/blob/main/careers",
+   "s": "13 lines (9 loc) · 540 Bytes main silicondata / careers Top Code Blame 13 lines (9 loc) · 540 Bytes Raw Open symbols panel Edit and raw actions 1 2 3 4 5 6 7 8 "
+  },
+  {
+   "t": "1 Silicon Flow jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/silicon-flow-jobs",
+   "s": "Today&rsquo;s top 1 Silicon Flow jobs in United States. Leverage your professional network, and get hired. New Silicon Flow jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://github.com/siliconflow/silicondata/blob/main/careers",
+  "platform": "custom",
+  "title": "silicondata/careers at main · siliconflow/silicondata · GitHub"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "us_rows": 0,
+  "spec": "https://github.com/siliconflow/silicondata/blob/main/careers",
+  "identity": "refuted",
+  "note": "github siliconflow/silicondata 'careers' file = Langfuse Berlin hiring text (repo is a langfuse-based telemetry data project) — not a jobs board; SiliconFlow has no own board: CN hiring via BOSS直聘 + talent@siliconflow.cn email; LinkedIn 'Silicon Flow US' = keyword noise.",
+  "ts": "2026-10-01"
+ }
+}

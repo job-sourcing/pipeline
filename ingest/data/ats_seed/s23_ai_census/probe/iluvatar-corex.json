@@ -1,0 +1,37 @@
+{
+ "brand": "Iluvatar Corex",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:27:29.745Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "iluvatarcorex",
+   "spec": "feishuhire:iluvatarcorex",
+   "title": "加入天数智芯"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:iluvatarcorex",
+  "platform": "feishu",
+  "title": "加入天数智芯",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入天数智芯",
+  "brand": "Iluvatar Corex",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:iluvatarcorex",
+  "identity": "confirmed",
+  "note": "feishuhire board title '加入天数智芯' = Iluvatar CoreX (probe identity_check was a Latin-vs-Chinese-script false negative); live adapter check: 0 postings total (0 of 0, unfiltered) — board currently empty.",
+  "ts": "2026-10-01"
+ }
+}

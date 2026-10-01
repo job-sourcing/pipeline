@@ -1,0 +1,155 @@
+{
+ "brand": "YITU Technology",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T13:12:47.442Z",
+ "candidates": [
+  {
+   "url": "https://www.yitutech.com/en/career",
+   "title": "Career-walker | YITU Technology",
+   "status": 200,
+   "bytes": 36281,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "About YITU Founders Milestones Career Experienced Fresh Graduate Follow YITU LinkedIn Twitter Facebook YouTube Shanghai: 21F, AI Tower,701 Yunjin Rd, Xuhui Dist",
+   "backend": "direct"
+  },
+  {
+   "url": "https://cn.epicareer.com/companies/yitutech",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5806,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "YITU Technology, founded in 2012, is a Chinese AI company pioneering in artificial intelligence research and innovation to build a safer, faster, and more intel",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://jobs.ctgoodjobs.hk/jobs/zhang-hao%2c-yitu-pte-ltd-jobs",
+   "title": "Zhang Hao, Yitu Pte Ltd Jobs in Hong Kong - Oct 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 662825,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 0 Zhang Hao, Yitu Pte Ltd jobs in Hong Kong. Browse through all our new daily-updated Zhang Hao, Yitu Pte Ltd job listing now!",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Us | YITU Technology",
+   "u": "https://www.yitutech.com/en/join-us",
+   "s": "Join Us We imagine a safer and smarter world connected by our technology, driven by you. Join us today."
+  },
+  {
+   "t": "Career-walker | YITU Technology",
+   "u": "https://www.yitutech.com/en/career",
+   "s": "About YITU Founders Milestones Career Experienced Fresh Graduate Follow YITU LinkedIn Twitter Facebook YouTube Shanghai: 21F, AI Tower,701 Yunjin Rd, Xuhui Dist"
+  },
+  {
+   "t": "YITUTech - LinkedIn",
+   "u": "https://www.linkedin.com/company/yitutech/",
+   "s": "YITU Technology, founded in 2012, is a Chinese AI company pioneering in artificial intelligence research and innovation to build a safer, faster, and more intel"
+  },
+  {
+   "t": "Yitutech Careers and Profile Overview | Epicareer",
+   "u": "https://cn.epicareer.com/companies/yitutech",
+   "s": "YITU Technology, founded in 2012, is a Chinese AI company pioneering in artificial intelligence research and innovation to build a safer, faster, and more intel"
+  },
+  {
+   "t": "3,000+ Yitu Technology jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yitu-technology-jobs?f_EA=true",
+   "s": "Today's top 3,000+ Yitu Technology jobs in United States. Leverage your professional network, and get hired. New Yitu Technology jobs added daily."
+  },
+  {
+   "t": "Shanghai YITU Network Technology Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/13198847/jobs/all/shanghai/",
+   "s": "(ShanghaiYITU Technology, YITU招聘)Shanghai YITU Network Technology Co., Ltd.Shanghai分公司招聘YITU Technology相关领域：机器学习，智慧医疗，边缘计算，大模型，算力。想了解YITU Technology招聘条件，学历要求，需要"
+  },
+  {
+   "t": "Careers at Vitu",
+   "u": "https://www.vitu.com/company/careers.html",
+   "s": "Looking for a career? Vitu is the leading innovator in vehicle to government solutions — with an inclusive culture. Browse open positions here."
+  },
+  {
+   "t": "Shanghai YITU Network Technology Co., Ltd. hiring requirements - Jobui",
+   "u": "https://en.jobui.com/company/13198847/jobs/analysis/shanghai/",
+   "s": "Are the hiring requirements high at YITU Technology?Most positions require 本科 (accounting for 90.9%), Most positions require 3-5年 experience (accounting for 59."
+  },
+  {
+   "t": "Join Us | YITU Technology",
+   "u": "https://www.yitutech.com/en/join-us",
+   "s": "Join Us We imagine a safer and smarter world connected by our technology, driven by you. Join us today."
+  },
+  {
+   "t": "Career-walker | YITU Technology",
+   "u": "https://www.yitutech.com/en/career",
+   "s": "Founders Milestones Career Experienced Fresh Graduate Follow YITU LinkedIn Twitter Facebook YouTube Shanghai: 21F, AI Tower,701 Yunjin Rd, Xuhui District, Shang"
+  },
+  {
+   "t": "Yitutech Careers and Profile Overview | Epicareer",
+   "u": "https://cn.epicareer.com/companies/yitutech",
+   "s": "YITU Technology, founded in 2012, is a Chinese AI company pioneering in artificial intelligence research and innovation to build a safer, faster, and more intel"
+  },
+  {
+   "t": "YITUTech - LinkedIn",
+   "u": "https://www.linkedin.com/company/yitutech/",
+   "s": "YITUTech | 14,752 followers on LinkedIn. Our mission is to reach, to break, and to extend the boundaries of the AI. | YITU Technology, founded in 2012, is a Chi"
+  },
+  {
+   "t": "3,000+ Yitu Technology jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yitu-technology-jobs?f_EA=true",
+   "s": "Today's top 3,000+ Yitu Technology jobs in United States. Leverage your professional network, and get hired. New Yitu Technology jobs added daily."
+  },
+  {
+   "t": "Shanghai YITU Network Technology Co., Ltd. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/13198847/jobs/all/shanghai/",
+   "s": "(ShanghaiYITU Technology, YITU招聘)Shanghai YITU Network Technology Co., Ltd.Shanghai分公司招聘YITU Technology相关领域：机器学习，智慧医疗，边缘计算，大模型，算力。想了解YITU Technology招聘条件，学历要求，需要"
+  },
+  {
+   "t": "Intuitive Careers - Explore Exciting Job Opportunities",
+   "u": "https://careers.intuitive.com/en/jobs/",
+   "s": "Find your dream job at Intuitive. Explore diverse opportunities and join a team dedicated to transforming the landscape of surgical technology."
+  },
+  {
+   "t": "Job Openings at Yipit | Zipline Jobs",
+   "u": "https://ziplinejobs.com/company/yipit.com",
+   "s": "View 66 job openings at Yipit, discovered directly from their career page. Apply direct and increase your chances of success."
+  },
+  {
+   "t": "Join Us | YITU Technology",
+   "u": "https://www.yitutech.com/en/join-us",
+   "s": "Join Us We imagine a safer and smarter world connected by our technology, driven by you. Join us today."
+  },
+  {
+   "t": "Career-walker | YITU Technology",
+   "u": "https://www.yitutech.com/en/career",
+   "s": "Founders Milestones Career Experienced Fresh Graduate Follow YITU LinkedIn Twitter Facebook YouTube Shanghai: 21F, AI Tower,701 Yunjin Rd, Xuhui District, Shang"
+  },
+  {
+   "t": "Yitutech Careers and Profile Overview | Epicareer",
+   "u": "https://cn.epicareer.com/companies/yitutech",
+   "s": "Want to work at Yitutech? Learn what its like to work here. See job vacancies, salaries, benefits, location, photos, videos, and more."
+  },
+  {
+   "t": "YITUTech - LinkedIn",
+   "u": "https://www.linkedin.com/company/yitutech/",
+   "s": "YITU Technology, founded in 2012, is a Chinese AI company pioneering in artificial intelligence research and innovation to build a safer, faster, and more intel"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.yitutech.com/en/career",
+  "platform": "custom",
+  "title": "Career-walker | YITU Technology"
+ },
+ "verdict": "custom_surface"
+}

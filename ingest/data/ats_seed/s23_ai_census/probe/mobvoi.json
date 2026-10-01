@@ -1,0 +1,37 @@
+{
+ "brand": "Mobvoi",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:43:57.203Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "mobvoi",
+   "spec": "feishuhire:mobvoi",
+   "title": "加入出门问问（Mobvoi）"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:mobvoi",
+  "platform": "feishu",
+  "title": "加入出门问问（Mobvoi）",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入出门问问（Mobvoi）",
+  "brand": "Mobvoi",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:mobvoi",
+  "identity": "confirmed",
+  "note": "feishu board 加入出门问问（Mobvoi） self-name identity OK but live check = 0 open jobs of 0 total; HK-listed 2438.HK; no US hiring/LCA.",
+  "ts": "2026-10-01"
+ }
+}

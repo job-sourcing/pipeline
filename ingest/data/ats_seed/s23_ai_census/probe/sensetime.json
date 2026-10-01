@@ -1,0 +1,37 @@
+{
+ "brand": "SenseTime",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:52:31.549Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "sensetime",
+   "spec": "feishuhire:sensetime",
+   "title": "加入商汤科技"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:sensetime",
+  "platform": "feishu",
+  "title": "加入商汤科技",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入商汤科技",
+  "brand": "SenseTime",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:sensetime",
+  "identity": "confirmed",
+  "note": "live feishu board 84 posts (加入商汤科技; EN-name identity_check false, CN name 商汤科技 matches): locs all CN + 1 Singapore + 2 HK New Territories, 0 US; US-sanctioned group — US rows unlikely on own board.",
+  "ts": "2026-10-01"
+ }
+}

@@ -1,0 +1,162 @@
+{
+ "brand": "Segway",
+ "tier": "probe_A",
+ "lca": "SEGWAY INC.",
+ "ts": "2026-10-01T12:51:46.180Z",
+ "candidates": [
+  {
+   "url": "https://powersports.segway.com/careers.jsp",
+   "title": "CAREERS | Segway Powersports",
+   "status": 200,
+   "bytes": 56128,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Notice: Segway Powersports Global manufacture and market ATV's and SXS's using the latest technology for retail around the World except the US. (for US developm",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.segwaypowersports.us/careers",
+   "title": "",
+   "status": 200,
+   "bytes": 30729,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Segway Powersports Inc. is committed to providing Equal Opportunity in Employment to all applicants and employees regardless of race, color, religion, gender, a",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://eu-en.segway.com/career.html",
+   "title": "Working at Segway-Ninebot Europe",
+   "status": 200,
+   "bytes": 137098,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We are always looking for new talents to join us on our exciting adventure! Please check the available vacancies below and we will contact you shortly. Amsterda",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "CAREERS | Segway Powersports",
+   "u": "https://powersports.segway.com/careers.jsp",
+   "s": "Notice: Segway Powersports Global manufacture and market ATV's and SXS's using the latest technology for retail around the World except the US. (for US developm"
+  },
+  {
+   "t": "CAREERS | Segway Powersports",
+   "u": "https://www.segwaypowersports.us/careers",
+   "s": "Segway Powersports Inc. is committed to providing Equal Opportunity in Employment to all applicants and employees regardless of race, color, religion, gender, a"
+  },
+  {
+   "t": "Segway Inc Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Segway-Inc",
+   "s": "Find out what works well at Segway Inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "Welcome to Segway ,Your Premier Choice for Personal Transportation",
+   "u": "http://www.segway.com/",
+   "s": "Discover the world of Segway, where innovative mobility solutions meet personal transportation need"
+  },
+  {
+   "t": "Segway Jobs in United States (54 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/segway-jobs",
+   "s": "Today's top 54 Segway jobs in United States. Leverage your professional network, and get hired. New Segway jobs added daily."
+  },
+  {
+   "t": "Careers | Sedgwick",
+   "u": "https://www.sedgwick.com/Careers/",
+   "s": "Join Sedgwick's global team of professionals. Explore meaningful careers at Sedgwick for opportunities in claims management, support, and more."
+  },
+  {
+   "t": "Working at Segway-Ninebot Europe",
+   "u": "https://eu-en.segway.com/career.html",
+   "s": "We are always looking for new talents to join us on our exciting adventure! Please check the available vacancies below and we will contact you shortly. Amsterda"
+  },
+  {
+   "t": "Segway Powersports Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Segway-Powersports",
+   "s": "Find out what works well at Segway Powersports from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Co"
+  },
+  {
+   "t": "CAREERS | Segway Powersports",
+   "u": "https://powersports.segway.com/careers.jsp",
+   "s": "Notice: Segway Powersports Global manufacture and market ATV's and SXS's using the latest technology for retail around the World except the US. (for US developm"
+  },
+  {
+   "t": "CAREERS | Segway Powersports",
+   "u": "https://www.segwaypowersports.us/careers",
+   "s": "Segway Powersports Inc. is committed to providing Equal Opportunity in Employment to all applicants and employees regardless of race, color, religion, gender, a"
+  },
+  {
+   "t": "18Studio Director Segway Jobs in Hong Kong SAR - LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/studio-director-segway-jobs",
+   "s": "Today's top 18 Studio Director Segway jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Studio Director Segway jobs added daily."
+  },
+  {
+   "t": "Segway Jobs in United States (54 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/segway-jobs",
+   "s": "Today's top 54 Segway jobs in United States. Leverage your professional network, and get hired. New Segway jobs added daily."
+  },
+  {
+   "t": "Segway Inc Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Segway-Inc",
+   "s": "Find out what works well at Segway Inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "82 Segway jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/segway-jobs-worldwide",
+   "s": "Today's top 82 Segway jobs in Worldwide. Leverage your professional network, and get hired. New Segway jobs added daily."
+  },
+  {
+   "t": "Segway Powersports Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Segway-Powersports",
+   "s": "Find out what works well at Segway Powersports from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Co"
+  },
+  {
+   "t": "Urgent! Segway jobs - July 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-segway",
+   "s": "Active 40 vacancies • Segway jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Segway jobs in USA and abroad • Star"
+  },
+  {
+   "t": "CAREERS | Segway Powersports",
+   "u": "https://powersports.segway.com/careers.jsp",
+   "s": "Careers Screening Jobs Serch Jobs Job Title Workplace Department View Details"
+  },
+  {
+   "t": "CAREERS | Segway Powersports",
+   "u": "https://www.segwaypowersports.us/careers",
+   "s": "Segway Powersports Inc. is committed to providing Equal Opportunity in Employment to all applicants and employees regardless of race, color, religion, gender, a"
+  },
+  {
+   "t": "Segway Jobs in United States (54 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/segway-jobs",
+   "s": "Today's top 54 Segway jobs in United States. Leverage your professional network, and get hired. New Segway jobs added daily."
+  },
+  {
+   "t": "Segway Inc Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Segway-Inc",
+   "s": "Find out what works well at Segway Inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://powersports.segway.com/careers.jsp",
+  "platform": "custom",
+  "title": "CAREERS | Segway Powersports"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred_walled",
+  "us_rows": null,
+  "spec": "https://www.segwaypowersports.us/careers",
+  "identity": "confirmed",
+  "note": "US entity careers page CF-walled (403 'Just a moment'); global powersports.segway.com/careers.jsp jobs table JS-rendered (headers only, 0 static rows) and its notice says powersports sold worldwide EXCEPT US (US ops = segwaypowersports.us); Segway-Ninebot family + SEGWAY INC. LCA x5 — recheck US page via zenrows.",
+  "ts": "2026-10-01"
+ }
+}

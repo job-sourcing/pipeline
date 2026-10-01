@@ -1,0 +1,163 @@
+{
+ "brand": "Shanghai AI Laboratory",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:52:43.898Z",
+ "candidates": [
+  {
+   "url": "https://www.academicjobs.com/shanghai-ai-laboratory-careers",
+   "title": "Shanghai AI Laboratory Careers: Join Our Talent Network",
+   "status": 200,
+   "bytes": 274551,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore career opportunities at Shanghai AI Laboratory. Join our exclusive talent network to connect with research, teaching, and leadership roles. Register you",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.academicjobs.com/employers/shanghai-ai-laboratory/16756",
+   "title": "Shanghai AI Laboratory Careers | Higher Ed Jobs",
+   "status": 200,
+   "bytes": 324385,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Shanghai AI Laboratory stands as a premier destination for groundbreaking AI research, fostering a vibrant culture of innovation and global collaboration. This ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.chinauniversityjobs.com/employer/shanghai-ai-laboratory/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5813,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "About Shanghai AI Laboratory The Shanghai AI Laboratory was officially unveiled at the World AI Conference (WAIC) in July 2020 and positioned as a national-leve",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "加入我们 - 上海人工智能实验室",
+   "u": "https://www.shlab.org.cn/joinus",
+   "s": "北极星计划 全球招聘顶尖科研人才 校招 | 星启计划 | 实习 与顶尖科研团队并肩，攻克AI真问题 社会招聘 有志于投身人工智能领域 专项博士招生 培养兼具高度学术科研能力 和社会责任感的青年人才 日常实习生招聘 毕业时间： 2026.10之后"
+  },
+  {
+   "t": "Shanghai AI Laboratory Careers: Join Our Talent Network",
+   "u": "https://www.academicjobs.com/shanghai-ai-laboratory-careers",
+   "s": "Explore career opportunities at Shanghai AI Laboratory. Join our exclusive talent network to connect with research, teaching, and leadership roles. Register you"
+  },
+  {
+   "t": "Shanghai AI Lab launches summer recruitment for global research talent",
+   "u": "https://english.shanghai.gov.cn/en-JobOpportunities/20250606/c4c95a0f4bcd4bfc933df5f965302732.html",
+   "s": "Shanghai Artificial Intelligence Laboratory has launched its 2025 summer global recruitment campaign, welcoming outstanding professionals worldwide to join its "
+  },
+  {
+   "t": "Shanghai AI lab launches 2025 spring campus recruitment",
+   "u": "https://english.shanghai.gov.cn/en-JobOpportunities/20250319/60d2134b7055440bac5d0c219bd99764.html",
+   "s": "Shanghai Artificial Intelligence Laboratory has launched its 2025 spring campus recruitment, offering full-time positions for 2025 graduates and internship-to-f"
+  },
+  {
+   "t": "校园招聘_加入我们 - 上海人工智能实验室",
+   "u": "https://www.shlab.org.cn/joinus/campus",
+   "s": "1）AI 驱动科学计算算法研究：面向流体、电磁等复杂工业场景，研究基于深度学习、大模型或神经算子的 PDE 建模与求解方法，探索 AI 对传统数值仿真方法的加速、替代或增强能力。"
+  },
+  {
+   "t": "Hiring — AISI Lab",
+   "u": "https://rootchang.github.io/AISI_Lab/hiring.html",
+   "s": "Open positions at the AISI Lab: Research Scientists, Postdoctoral Fellows, and Research Assistants in AI, systems immunology, and precision oncology."
+  },
+  {
+   "t": "Shanghai AI Laboratory Careers | Higher Ed Jobs",
+   "u": "https://www.academicjobs.com/employers/shanghai-ai-laboratory/16756",
+   "s": "Shanghai AI Laboratory stands as a premier destination for groundbreaking AI research, fostering a vibrant culture of innovation and global collaboration. This "
+  },
+  {
+   "t": "上海人工智能实验室2026届全球招聘启动：海量HC、落户支持，聚焦AGI核心研发",
+   "u": "https://www.80aj.com/2026/02/05/shanghai-ai-lab-hiring-2026/",
+   "s": "上海人工智能实验室（Shanghai AI Lab）正式启动2026届全球校园招聘及社会招聘，释放大量Headcount。 作为国家级新型科研机构，实验室以实现通用人工智能（AGI）为愿景，承担多项国家级战略科研项目。"
+  },
+  {
+   "t": "加入我们 - 上海人工智能实验室",
+   "u": "https://www.shlab.org.cn/joinus",
+   "s": "北极星计划 全球招聘顶尖科研人才 校招 | 星启计划 | 实习 与顶尖科研团队并肩，攻克AI真问题 社会招聘 有志于投身人工智能领域 专项博士招生 培养兼具高度学术科研能力 和社会责任感的青年人才 日常实习生招聘 毕业时间： 2026.10之后"
+  },
+  {
+   "t": "Shanghai AI Lab launches summer recruitment for global research talent",
+   "u": "https://english.shanghai.gov.cn/en-JobOpportunities/20250606/c4c95a0f4bcd4bfc933df5f965302732.html",
+   "s": "Shanghai Artificial Intelligence Laboratory has launched its 2025 summer global recruitment campaign, welcoming outstanding professionals worldwide to join its "
+  },
+  {
+   "t": "社会招聘_加入我们 - 上海人工智能实验室",
+   "u": "https://www.shlab.org.cn/joinus/social",
+   "s": "1. 探索 AI 驱动的自主物质科学发现闭环，构建大模型驱动的材料发现与优化决策自进化智能体，推动通用材料研发 AI 新范式； 2. 负责科学场景下 Agent 系统的设计与落地，包括任务规划、工具调用、多轮交互、记忆机制与执行轨迹管理，打通从假设生成到实验验证的完整链路； 3. 主导大模型后训练 ..."
+  },
+  {
+   "t": "Shanghai AI Laboratory Careers: Join Our Talent Network",
+   "u": "https://www.academicjobs.com/shanghai-ai-laboratory-careers",
+   "s": "Explore career opportunities at Shanghai AI Laboratory. Join our exclusive talent network to connect with research, teaching, and leadership roles. Register you"
+  },
+  {
+   "t": "Shanghai AI Laboratory Careers | Higher Ed Jobs",
+   "u": "https://www.academicjobs.com/employers/shanghai-ai-laboratory/16756",
+   "s": "Shanghai AI Laboratory stands as a premier destination for groundbreaking AI research, fostering a vibrant culture of innovation and global collaboration. This "
+  },
+  {
+   "t": "Shanghai AI Laboratory - China University Jobs",
+   "u": "https://www.chinauniversityjobs.com/employer/shanghai-ai-laboratory/",
+   "s": "About Shanghai AI Laboratory The Shanghai AI Laboratory was officially unveiled at the World AI Conference (WAIC) in July 2020 and positioned as a national-leve"
+  },
+  {
+   "t": "Shanghai AI lab launches 2025 spring campus recruitment",
+   "u": "https://english.shanghai.gov.cn/en-JobOpportunities/20250319/60d2134b7055440bac5d0c219bd99764.html",
+   "s": "Shanghai Artificial Intelligence Laboratory has launched its 2025 spring campus recruitment, offering full-time positions for 2025 graduates and internship-to-f"
+  },
+  {
+   "t": "30,000+ Shanghai Ai Laboratory jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/shanghai-ai-laboratory-jobs-worldwide",
+   "s": "Today's top 30,000+ Shanghai Ai Laboratory jobs in Worldwide. Leverage your professional network, and get hired. New Shanghai Ai Laboratory jobs added daily."
+  },
+  {
+   "t": "加入我们 - 上海人工智能实验室",
+   "u": "https://www.shlab.org.cn/joinus",
+   "s": "AI驱动物质、生物、地球、农业、神经科学等交叉学科研究 强化学习、机制可信，可信边界、多模态交互、可信知识系统、认知和推理可信、模型训练框架、模型部署等 大模型评测， 具身评测， 安全评测 ，AI for Science 评测，垂域评测"
+  },
+  {
+   "t": "Shanghai AI Laboratory Careers: Join Our Talent Network",
+   "u": "https://www.academicjobs.com/shanghai-ai-laboratory-careers",
+   "s": "Explore career opportunities at Shanghai AI Laboratory. Join our exclusive talent network to connect with research, teaching, and leadership roles. Register you"
+  },
+  {
+   "t": "Shanghai AI Laboratory Careers | Higher Ed Jobs",
+   "u": "https://www.academicjobs.com/employers/shanghai-ai-laboratory/16756",
+   "s": "Shanghai AI Laboratory stands as a premier destination for groundbreaking AI research, fostering a vibrant culture of innovation and global collaboration. This "
+  },
+  {
+   "t": "校园招聘_加入我们 - 上海人工智能实验室",
+   "u": "https://www.shlab.org.cn/joinus/campus",
+   "s": "1）AI 驱动科学计算算法研究：面向流体、电磁等复杂工业场景，研究基于深度学习、大模型或神经算子的 PDE 建模与求解方法，探索 AI 对传统数值仿真方法的加速、替代或增强能力。"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.academicjobs.com/shanghai-ai-laboratory-careers",
+  "platform": "custom",
+  "title": "Shanghai AI Laboratory Careers: Join Our Talent Network"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.shlab.org.cn/joinus",
+  "identity": "confirmed",
+  "note": "own site joinus = CN campus(星启)/social/PhD programs, roles Shanghai-based; 'Polaris global recruitment' targets talent worldwide but work loc = Shanghai; academicjobs.com + chinauniversityjobs = 3rd-party aggregators, not own boards.",
+  "ts": "2026-10-01"
+ }
+}

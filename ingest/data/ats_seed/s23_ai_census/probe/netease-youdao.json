@@ -1,0 +1,38 @@
+{
+ "brand": "NetEase Youdao",
+ "tier": "probe_A",
+ "lca": "NETEASE INFORMATION TECHNOLOGY CORPORATION",
+ "ts": "2026-10-01T12:47:00.847Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "netease",
+   "spec": "ashby:netease",
+   "title": " (0 jobs)",
+   "jobs": 0
+  }
+ ],
+ "best": {
+  "spec": "ashby:netease",
+  "platform": "ashby",
+  "title": " (0 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": null,
+  "brand": "NetEase Youdao",
+  "ok": null,
+  "note": "no self-name — job-content adjudication required"
+ },
+ "verdict": "dict_unverified",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "ats:ashby:netease",
+  "identity": "unverified",
+  "note": "ashby:netease live-check 2026-10-01: 0 jobs (matches probe 0) — empty/dead board, identity unverifiable from content; NetEase hiring runs on hr.163.com (CN).",
+  "ts": "2026-10-01"
+ }
+}

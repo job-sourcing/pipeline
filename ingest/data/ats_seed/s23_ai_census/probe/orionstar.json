@@ -1,0 +1,37 @@
+{
+ "brand": "OrionStar",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:48:30.383Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "orionstar",
+   "spec": "feishuhire:orionstar",
+   "title": "加入猎户星空"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:orionstar",
+  "platform": "feishu",
+  "title": "加入猎户星空",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入猎户星空",
+  "brand": "OrionStar",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 1,
+  "spec": "ats:feishuhire:orionstar",
+  "identity": "confirmed",
+  "note": "live feishu board 8 posts (orionstar.jobs.feishu.cn, 猎户星空 robotics roles); 1 row 海外销售经理(欧洲/美国/加拿大) multi-loc Beijing|Shenzhen|Washington D.C.|Vancouver — genuine US loc option but DC unmapped by adapter city filter (fix before wiring); rest CN.",
+  "ts": "2026-10-01"
+ }
+}

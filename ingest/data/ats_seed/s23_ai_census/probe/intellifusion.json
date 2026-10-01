@@ -1,0 +1,24 @@
+{
+ "brand": "Intellifusion",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:32:32.383Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.intellifusion.com/careers",
+  "platform": "custom",
+  "title": "Careers At IntelliFusion",
+  "via": "guess"
+ },
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "https://www.intellifusion.com/careers",
+  "identity": "refuted",
+  "note": "intellifusion.com/careers = US IT-services firm (NJ, tel 732-665-6000, pharma/auto/edu staffing), NOT Shenzhen 云天励飞 (Entity List); real Intellifusion has no own board, no US/LCA.",
+  "ts": "2026-10-01"
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "brand": "SmartMore",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:55:34.146Z",
+ "candidates": [
+  {
+   "url": "https://global.smartmore.com/careers/",
+   "title": "Career-SmartMore",
+   "status": 200,
+   "bytes": 30225,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "career Subscribe to our latest news and products! Products",
+   "backend": "direct"
+  },
+  {
+   "url": "https://global.smartmore.com/careers.html",
+   "title": "Career-SmartMore",
+   "status": 200,
+   "bytes": 30225,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "career We use cookies to improve user experience and to analyze performance and traffic on our website. Please see our Cookie Policy for more information and yo",
+   "backend": "direct"
+  },
+  {
+   "url": "https://global.smartmore.com/",
+   "title": "SmartMore",
+   "status": 200,
+   "bytes": 40496,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "SmartMore Corporation is a fast-growing high-tech company specialized in providing comprehensive products & solutions for smart manufacturing and digital innova",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Career-SmartMore",
+   "u": "https://global.smartmore.com/careers/",
+   "s": "career Subscribe to our latest news and products! Products"
+  },
+  {
+   "t": "SmartMore",
+   "u": "https://global.smartmore.com/",
+   "s": "SmartMore Corporation is a fast-growing high-tech company specialized in providing comprehensive products & solutions for smart manufacturing and digital innova"
+  },
+  {
+   "t": "SmartMore思谋科技官网 - 全球领先的工业AI智能体公司",
+   "u": "https://cn.smartmore.com/",
+   "s": "思谋科技（SmartMore），全球领先的工业AI智能体公司，以全球首个专有工业多模态大模型IndustryGPT为核心，深度整合工业领域专业知识与软硬件生态体系，帮助企业构建与运营智能制造系统，加速工业生产从自动化向自主化演进，推动AI时代工业自动化范式升级。"
+  },
+  {
+   "t": "SmartMore Corporation - LinkedIn",
+   "u": "https://hk.linkedin.com/company/smartmore-global",
+   "s": "SmartMore is a global leader in Industrial AI agents. Powered by IndustryGPT, the world's first proprietary industrial multimodal foundation model, the Company "
+  },
+  {
+   "t": "Smartmore Corporation Jobs in Worldwide (115 Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/smartmore-corporation-jobs-worldwide",
+   "s": "Today's top 115 Smartmore Corporation jobs in Worldwide. Leverage your professional network, and get hired. New Smartmore Corporation jobs added daily."
+  },
+  {
+   "t": "Smartmove Global Limited - AI & Casual Games",
+   "u": "https://www.smartmoveglobal.co/careers",
+   "s": "A technology company, creating impactful products across two key sectors: AI-powered applications and casual mobile games. Helping billions work better, learn f"
+  },
+  {
+   "t": "Company - SmartMore",
+   "u": "https://global.smartmore.com/company.html",
+   "s": "SmartMore corporation is a fast-growing high-tech company specialized in providing comprehensive products & solutions for smart manufacturing and digital innova"
+  },
+  {
+   "t": "1,000+ Smartmore jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/smartmore-jobs-worldwide",
+   "s": "Today's top 1,000+ Smartmore jobs in Worldwide. Leverage your professional network, and get hired. New Smartmore jobs added daily."
+  },
+  {
+   "t": "Career-SmartMore",
+   "u": "https://global.smartmore.com/careers/",
+   "s": "career Subscribe to our latest news and products! Products"
+  },
+  {
+   "t": "Career-SmartMore",
+   "u": "https://global.smartmore.com/careers.html",
+   "s": "career We use cookies to improve user experience and to analyze performance and traffic on our website. Please see our Cookie Policy for more information and yo"
+  },
+  {
+   "t": "Working at Smartmore Corporation Limited company profile and ... - Jobsdb",
+   "u": "https://hk.jobsdb.com/companies/smartmore-corporation-limited-171089980682113",
+   "s": "Find out more about working at Smartmore Corporation Limited. Read company reviews from real employees, explore life and culture; and view all open jobs. This p"
+  },
+  {
+   "t": "Working at Smartmore Corporation Limited company profile and ...",
+   "u": "https://hk.jobsdb.com/zh/companies/smartmore-corporation-limited-171089980682113",
+   "s": "Considering a career at Smartmore Corporation Limited? Learn what its like to work for Smartmore Corporation Limited by reading employee ratings and reviews on "
+  },
+  {
+   "t": "SmartMore Corporation - LinkedIn",
+   "u": "https://hk.linkedin.com/company/smartmore-global",
+   "s": "SmartMore Corporation | 2,724 followers on LinkedIn. Smart Tech for Smarter Future | SmartMore is a global leader in Industrial AI agents. Powered by IndustryGP"
+  },
+  {
+   "t": "Smartmore Corporation Jobs in Worldwide (115 Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/smartmore-corporation-jobs-worldwide",
+   "s": "Today's top 115 Smartmore Corporation jobs in Worldwide. Leverage your professional network, and get hired. New Smartmore Corporation jobs added daily."
+  },
+  {
+   "t": "SmartMore思谋科技官网 - 全球领先的工业AI智能体公司",
+   "u": "https://cn.smartmore.com/",
+   "s": "思谋科技（SmartMore），全球领先的工业AI智能体公司，以全球首个专有工业多模态大模型IndustryGPT为核心，深度整合工业领域专业知识与软硬件生态体系，帮助企业构建与运营智能制造系统，加速工业生产从自动化向自主化演进，推动AI时代工业自动化范式升级。"
+  },
+  {
+   "t": "【27届】全栈工程师_思谋科技（SmartMore）校招_牛客网",
+   "u": "https://www.nowcoder.com/jobs/detail/434430",
+   "s": "思谋科技（SmartMore）校招 【27届】全栈工程师 2026最新招聘求职信息，薪资：20-40，地点：深圳，点击查看更多思谋科技（SmartMore）招聘岗位、岗位职责要求、工作内容、薪资待遇介绍等企业招聘信息。"
+  },
+  {
+   "t": "Career-SmartMore",
+   "u": "https://global.smartmore.com/careers/",
+   "s": "career Subscribe to our latest news and products! Products"
+  },
+  {
+   "t": "Smartmore Corporation Jobs in Worldwide (115 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/smartmore-corporation-jobs-worldwide",
+   "s": "Today's top 115 Smartmore Corporation jobs in Worldwide. Leverage your professional network, and get hired. New Smartmore Corporation jobs added daily."
+  },
+  {
+   "t": "SmartMore",
+   "u": "https://global.smartmore.com/",
+   "s": "SmartMore offers solutions that enable enterprises to achieve Manufacturing Optimization and Automation (MOA), through the optimization of cost, manufacturing e"
+  },
+  {
+   "t": "SmartMore Corporation - LinkedIn",
+   "u": "https://hk.linkedin.com/company/smartmore-global",
+   "s": "SmartMore is a global leader in Industrial AI agents. Powered by IndustryGPT, the world's first proprietary industrial multimodal foundation model, the Company "
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://global.smartmore.com/careers/",
+  "platform": "moka",
+  "title": "Career-SmartMore"
+ },
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "deferred_js",
+  "us_rows": null,
+  "spec": "https://app.mokahr.com/social-recruitment/smartmore/143311",
+  "identity": "confirmed",
+  "note": "own board = MokaHR SPA linked from global.smartmore.com/careers (moka marker); public API endpoints return 404/gated, static curl 302-redirects — job list JS-only, US rows unverifiable without moka adapter; global site EN but offices Shanghai/HK.",
+  "ts": "2026-10-01"
+ }
+}

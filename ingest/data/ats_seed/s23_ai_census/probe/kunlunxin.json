@@ -1,0 +1,157 @@
+{
+ "brand": "Kunlunxin",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:36:36.991Z",
+ "candidates": [
+  {
+   "url": "https://kunlunxin.zhiye.com/campuslist/?PageIndex=1",
+   "title": "昆仑芯官方招聘",
+   "status": 200,
+   "bytes": 14611,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "邮箱：kunlunxin-recruiter-group@kunlunxin.com 总部地址：北京市海淀区信息路甲9号",
+   "backend": "direct"
+  },
+  {
+   "url": "https://kunlunxin1.zhiye.com/login",
+   "title": "昆仑芯招聘门户",
+   "status": 200,
+   "bytes": 33036,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "昆仑芯招聘门户",
+   "backend": "direct"
+  },
+  {
+   "url": "https://kunlunxin.zhiye.com/",
+   "title": "昆仑芯官方招聘",
+   "status": 200,
+   "bytes": 8313,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "昆仑芯官方招聘网站，提供最新职位信息和申请渠道。",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "昆仑芯官方招聘 - kunlunxin.zhiye.com",
+   "u": "https://kunlunxin.zhiye.com/campuslist/?PageIndex=1",
+   "s": "邮箱：kunlunxin-recruiter-group@kunlunxin.com 总部地址：北京市海淀区信息路甲9号"
+  },
+  {
+   "t": "昆仑芯招聘门户 - kunlunxin1.zhiye.com",
+   "u": "https://kunlunxin1.zhiye.com/login",
+   "s": "昆仑芯招聘门户"
+  },
+  {
+   "t": "昆仑芯官方招聘",
+   "u": "https://kunlunxin.zhiye.com/",
+   "s": "昆仑芯官方招聘网站，提供最新职位信息和申请渠道。"
+  },
+  {
+   "t": "昆仑芯官方招聘 - zhiye.com",
+   "u": "https://kunlunxin.zhiye.com/Campus",
+   "s": "浓厚的技术氛围 我们崇尚务实，主动担当，鼓励创新"
+  },
+  {
+   "t": "昆仑芯官方招聘 - kunlunxin.zhiye.com",
+   "u": "https://kunlunxin.zhiye.com/campuslist/?PageIndex=2",
+   "s": "职位筛选 职位类别 软件研发类 硬件研发类 其他 工作地点 北京市 上海市 深圳市 招聘单位 昆仑芯片 昆仑芯片研发部 财务部 ..."
+  },
+  {
+   "t": "昆仑芯官方招聘 - kunlunxin.zhiye.com",
+   "u": "https://kunlunxin.zhiye.com/xiangqing?jobId=151212891",
+   "s": "工作职责: -深度贴合公司战略与管理理念，落地组织规划及管理方案设计 -开展组织诊断与研究，识别组织问题、输出优化建议并推动组织迭代 -持续调研行业前沿管理模式，输出前瞻性研究成果 -跟进AI前沿趋势，研判AI对组织形态、管理模式的影响，落地人机协同相关组织优化动作"
+  },
+  {
+   "t": "昆仑芯官方招聘 - kunlunxin.zhiye.com",
+   "u": "https://kunlunxin.zhiye.com/social/?PageIndex=6",
+   "s": "职位筛选 职位类别 软件研发类 硬件研发类 系统工程类 销售及支持类 市场类 综合职能类 工作地点 北京市 上海市 深圳市 ..."
+  },
+  {
+   "t": "昆仑芯官方招聘 - kunlunxin.zhiye.com",
+   "u": "https://kunlunxin.zhiye.com/xiangqing?jobId=151167818",
+   "s": "工作职责: -负责昆仑芯AI芯片性能深度学习高性能计算库开发，支持各种AI场景 -探索新一代AI芯片编程模型和架构 -深度学习框架PaddlePaddle图性能优化 -大规模分布式训练性能优化，AI芯片通信库开发，探索高效的芯片互联架构 任职要求: -计算机及计算机相关专业，硕士及以上学历 -熟悉Python/C/C+"
+  },
+  {
+   "t": "昆仑芯官方招聘 - kunlunxin.zhiye.com",
+   "u": "https://kunlunxin.zhiye.com/campuslist/?PageIndex=1",
+   "s": "邮箱：kunlunxin-recruiter-group@kunlunxin.com 总部地址：北京市海淀区信息路甲9号"
+  },
+  {
+   "t": "昆仑芯官方招聘",
+   "u": "https://kunlunxin.zhiye.com/",
+   "s": "昆仑芯官方招聘网站，提供最新职位信息和申请渠道。"
+  },
+  {
+   "t": "昆仑芯招聘门户 - kunlunxin1.zhiye.com",
+   "u": "https://kunlunxin1.zhiye.com/login",
+   "s": "昆仑芯招聘门户"
+  },
+  {
+   "t": "昆仑芯2026暑期实习实习 - 校招信息 - Up求职官网（原up简历）",
+   "u": "https://www.upcv.tech/xiaozhao/cmpysj5op000km9lypnxu21ct.html",
+   "s": "*附：近期重要动态（供参考）* 超节点智算服务器亮相2025中关村论坛（ZGC FORUM） 中标中国移动十亿级AI芯片集采项目，三个标包均位列第一 参与2026亚布力中国企业家论坛，共话AI基础设施发展新范式 🔍 更多资讯请关注： 官方网站： www.kunlunxin.com 官方微信服务号 & 视频号：搜索「昆"
+  },
+  {
+   "t": "昆仑芯（北京）科技股份有限公司",
+   "u": "https://www.kunlunxin.com/",
+   "s": "关于昆仑芯 公司介绍 智能计算 加入我们 新闻中心 法律声明 用户协议 安全中心 办公地址 北京市海淀区中关村东升科技园·东畔科创中心C座 上海市浦东新区盛夏路399弄6号楼 广东省深圳市南山区百度国际大厦东塔16楼 联系我们 业务与合作咨询 marketing@kunlunxin.com 技术与售后服务 邮箱：ser"
+  },
+  {
+   "t": "Kunlunxin - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Kunlunxin",
+   "s": "Kunlunxin (Beijing) Technology Co Ltd (Kunlunxin; Chinese: 昆仑芯; pinyin: Kūnlúnxīn) is the semiconductor subsidiary of Baidu."
+  },
+  {
+   "t": "加入Kunlun",
+   "u": "https://jobs.kunlun.com/index",
+   "s": "加入昆仑万维，探索科技前沿，开启全新职业旅程。"
+  },
+  {
+   "t": "昆仑芯科技招聘日常实习2027校园招聘,招聘城市有:北京,上海,深圳,杭州,昆仑芯科技,internship",
+   "u": "https://campus.niuqizp.com/job-vm85ztaCZ.html",
+   "s": "昆仑芯科技招聘投递方式： 本次招聘活动为昆仑芯科技27届实习生招募，网申持续开放，面试6月起，offer6月起发放，实习7月启动。可通过昆仑芯官网或发送邮件至 hr_campus@kunlunxin.com 进行投递，内推已开启，快找昆仑芯的学长学姐帮你内推。"
+  },
+  {
+   "t": "昆仑芯官方招聘 - kunlunxin.zhiye.com",
+   "u": "https://kunlunxin.zhiye.com/campuslist/?PageIndex=1",
+   "s": "邮箱：kunlunxin-recruiter-group@kunlunxin.com 总部地址：北京市海淀区信息路甲9号"
+  },
+  {
+   "t": "昆仑芯官方招聘 - kunlunxin.zhiye.com",
+   "u": "https://kunlunxin.zhiye.com/campuslist/?PageIndex=2",
+   "s": "职位筛选 职位类别 软件研发类 硬件研发类 其他 工作地点 北京市 上海市 深圳市 招聘单位 昆仑芯片 昆仑芯片研发部 财务部 ..."
+  },
+  {
+   "t": "加入Kunlun",
+   "u": "https://jobs.kunlun.com/index",
+   "s": "加入昆仑万维，探索科技前沿，开启全新职业旅程。"
+  },
+  {
+   "t": "昆仑芯（北京）科技股份有限公司",
+   "u": "https://www.kunlunxin.com/",
+   "s": "关于昆仑芯 公司介绍 智能计算 加入我们 新闻中心 法律声明 用户协议 安全中心 办公地址 北京市海淀区中关村东升科技园·东畔科创中心C座 上海市浦东新区盛夏路399弄6号楼 广东省深圳市南山区百度国际大厦东塔16楼 联系我们 业务与合作咨询 marketing@kunlunxin.com 技术与售后服务 邮箱：ser"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://kunlunxin.zhiye.com",
+  "identity": "confirmed",
+  "note": "own Beisen/zhiye board (昆仑芯官方招聘, HQ Beijing) — job filters list only 北京/上海/深圳; Baidu spin-out, no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
+}

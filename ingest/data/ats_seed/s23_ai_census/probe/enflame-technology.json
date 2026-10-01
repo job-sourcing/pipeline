@@ -1,0 +1,164 @@
+{
+ "brand": "Enflame Technology",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:13:08.278Z",
+ "candidates": [
+  {
+   "url": "https://www.enflame-tech.com/careers",
+   "title": "加入我们 - 燧原科技",
+   "status": 200,
+   "bytes": 65600,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "首页 加入我们 招聘渠道 燧原文化 燧原生活 燧原团队 燧原风采 投递渠道 Recruitment",
+   "backend": "direct"
+  },
+  {
+   "url": "https://alion.io/company/enflame-technology",
+   "title": "Enflame Technology: Jobs & Salaries (2026) | Alion",
+   "status": 200,
+   "bytes": 27958,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Enflame Technology — Enflame Technology is a Shanghai chip designer founded in 2018 that develops accelerators for. tech stack & team (2026) on Alion.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://resumegeni.com/companies/enflame-technology/how-to-apply",
+   "title": "410 Gone",
+   "status": 410,
+   "bytes": 233,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "How to apply to Enflame Technology: application steps, resume tips, interview prep, and custom system context.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "加入我们 - 燧原科技 - enflame-tech.com",
+   "u": "https://www.enflame-tech.com/careers",
+   "s": "首页 加入我们 招聘渠道 燧原文化 燧原生活 燧原团队 燧原风采 投递渠道 Recruitment"
+  },
+  {
+   "t": "Enflame Technology: Jobs & Salaries (2026) | Alion",
+   "u": "https://alion.io/company/enflame-technology",
+   "s": "Enflame Technology — Enflame Technology is a Shanghai chip designer founded in 2018 that develops accelerators for. tech stack & team (2026) on Alion."
+  },
+  {
+   "t": "Enflame Jobs in Worldwide (29 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/enflame-jobs-worldwide",
+   "s": "Today's top 29 Enflame jobs in Worldwide. Leverage your professional network, and get hired. New Enflame jobs added daily."
+  },
+  {
+   "t": "How to Apply to Enflame Technology - ResumeGeni",
+   "u": "https://resumegeni.com/companies/enflame-technology/how-to-apply",
+   "s": "How to apply to Enflame Technology: application steps, resume tips, interview prep, and custom system context."
+  },
+  {
+   "t": "Enflame | LinkedIn",
+   "u": "https://in.linkedin.com/company/enflame",
+   "s": "Enflame is a company with the mission and vision of providing cutting-edge software/hardware solution to revolutionize the technology. The core R&D teams in Enf"
+  },
+  {
+   "t": "公司介绍 - 燧原科技 - enflame-tech.com",
+   "u": "https://www.enflame-tech.com/aboutus",
+   "s": "燧原科技是我国云端AI芯片领域的领军企业之一，致力于打造通用人工智能核心算力基础设施。公司坚持原始创新、自主研发的技术路线，构筑长期可持续发展的核心竞争力和护城河。成立8年来，公司自研迭代了四代架构5款云端AI芯片，构建了覆盖AI芯片、AI加速卡及模组、智算系统及集群和AI计算及 ..."
+  },
+  {
+   "t": "Enflame - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Enflame",
+   "s": "Shanghai Enflame Technology Co., Ltd. (Enflame; Chinese: 燧原科技; pinyin: Suìyuán Kējì) is a Chinese technology company headquartered in Shanghai. The company deve"
+  },
+  {
+   "t": "Enflame Technology Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/enflame-technology-jobs",
+   "s": "Today's top Enflame Technology jobs in United States. Leverage your professional network, and get hired. New Enflame Technology jobs added daily."
+  },
+  {
+   "t": "加入我们 - 燧原科技 - enflame-tech.com",
+   "u": "https://www.enflame-tech.com/team/",
+   "s": "首页 加入我们 招聘渠道 燧原文化 燧原生活 燧原团队 燧原风采 投递渠道 Recruitment"
+  },
+  {
+   "t": "Enflame Technology: Jobs & Salaries (2026) | Alion",
+   "u": "https://alion.io/company/enflame-technology",
+   "s": "Enflame Technology — Enflame Technology is a Shanghai chip designer founded in 2018 that develops accelerators for. tech stack & team (2026) on Alion."
+  },
+  {
+   "t": "Enflame Jobs in Worldwide (29 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/enflame-jobs-worldwide",
+   "s": "Today's top 29 Enflame jobs in Worldwide. Leverage your professional network, and get hired. New Enflame jobs added daily."
+  },
+  {
+   "t": "262 Enflame Tech jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/enflame-tech-jobs",
+   "s": "Today's top 262 Enflame Tech jobs in United States. Leverage your professional network, and get hired. New Enflame Tech jobs added daily."
+  },
+  {
+   "t": "Enflame | LinkedIn",
+   "u": "https://in.linkedin.com/company/enflame",
+   "s": "Enflame is a company with the mission and vision of providing cutting-edge software/hardware solution to revolutionize the technology. The core R&D teams in Enf"
+  },
+  {
+   "t": "2026 Enflame燧原校招，燧原社招，燧原实习，燧原内推",
+   "u": "https://www.nowcoder.com/feed/main/detail/c474338bb8244e7f9a9b0316d0c6126c",
+   "s": "燧原科技官网： https://www.enflame-tech.com 我们是燧原科技，一家专注人工智能领域云端算力产品，致力为通用人工智能打造算力底座，提供原始创新、具备自主知识产权的AI加速卡、系统集群和软硬件解决方案。"
+  },
+  {
+   "t": "Enflame - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Enflame",
+   "s": "Shanghai Enflame Technology Co., Ltd. (Enflame; Chinese: 燧原科技; pinyin: Suìyuán Kējì) is a Chinese technology company headquartered in Shanghai. The company deve"
+  },
+  {
+   "t": "Enflame Technology raised $912M — AI Chips funding & jobs | MapCo",
+   "u": "https://www.mapco.ai/company/enflame-technology",
+   "s": "Enflame Technology raised $912M (China) — AI Chips. Shanghai Enflame Technology Co. raised 6.12 billion… Track funding, investors, valuation and jobs on MapCo."
+  },
+  {
+   "t": "加入我们 - 燧原科技 - enflame-tech.com",
+   "u": "https://www.enflame-tech.com/careers",
+   "s": "首页 加入我们 招聘渠道 燧原文化 燧原生活 燧原团队 燧原风采 投递渠道 Recruitment"
+  },
+  {
+   "t": "How to Apply to Enflame Technology - ResumeGeni",
+   "u": "https://resumegeni.com/companies/enflame-technology/how-to-apply",
+   "s": "How to apply to Enflame Technology: application steps, resume tips, interview prep, and custom system context."
+  },
+  {
+   "t": "Enflame Jobs in Worldwide (29 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/enflame-jobs-worldwide",
+   "s": "Today's top 29 Enflame jobs in Worldwide. Leverage your professional network, and get hired. New Enflame jobs added daily."
+  },
+  {
+   "t": "Enflame Technology: Jobs & Salaries (2026) | Alion",
+   "u": "https://alion.io/company/enflame-technology",
+   "s": "Enflame Technology — Enflame Technology is a Shanghai chip designer founded in 2018 that develops accelerators for. tech stack & team (2026) on Alion."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.enflame-tech.com/careers",
+  "platform": "moka",
+  "title": "加入我们 - 燧原科技"
+ },
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.enflame-tech.com/careers",
+  "identity": "confirmed",
+  "note": "Own 燧原科技 careers page (Moka-marked); no US entity/LCA; '262 Enflame Tech jobs in US' LinkedIn noise.",
+  "ts": "2026-10-01"
+ }
+}

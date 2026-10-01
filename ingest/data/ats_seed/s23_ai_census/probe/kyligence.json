@@ -1,0 +1,37 @@
+{
+ "brand": "Kyligence",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:37:09.294Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "kyligence",
+   "spec": "feishuhire:kyligence",
+   "title": "加入Kyligence Inc."
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:kyligence",
+  "platform": "feishu",
+  "title": "加入Kyligence Inc.",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入Kyligence Inc.",
+  "brand": "Kyligence",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:kyligence",
+  "identity": "confirmed",
+  "note": "feishu board '加入Kyligence Inc.' self-name identity OK but live check = 0 open jobs of 0 total (company dormant/wound down despite census San Jose office); no LCA.",
+  "ts": "2026-10-01"
+ }
+}
