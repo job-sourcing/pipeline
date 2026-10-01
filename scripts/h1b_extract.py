@@ -108,9 +108,27 @@ def _list_quarters(cfg) -> list[str]:
             r2.raise_for_status()
             text = r2.text
         except Exception as exc2:
-            raise RuntimeError(
-                f"quarter discovery failed: proxy={err!r} "
-                f"direct={exc2!r}") from exc2
+            # S23: BOTH page paths dead (proxy NXDOMAIN + Akamai) —
+            # fall back to the PREDICTABLE quarter calendar (DOL FY
+            # runs Oct-Sep; non-existent quarters 404 downstream and
+            # are skipped by the download's path-verdict contract)
+            print(f"[h1b] quarter-discovery page unreachable "
+                  f"(proxy={err!r} direct={exc2!r}) — using the "
+                  "calendar fallback FY2024_Q1..current", flush=True)
+            from datetime import date
+            # last COMPLETE calendar quarter (Oct 2026 → FY2026_Q3,
+            # matching the live file-name evidence; the DOL labels use
+            # the calendar-year prefix with quarter-of-year numbering)
+            t = date.today()
+            pm = t.month - 1 or 12
+            py = t.year if t.month > 1 else t.year - 1
+            fy_q = (py, (pm - 1) // 3 + 1)
+            out = []
+            for fy in range(2024, fy_q[0] + 1):
+                for q in range(1, 5):
+                    if (fy, q) <= (fy_q[0], fy_q[1]):
+                        out.append(f"FY{fy}_Q{q}")
+            return out
     found = sorted(set(f"FY{m.group(1)}_Q{m.group(2)}"
                        for m in _FILE_RE.finditer(text)),
                    key=lambda s: (s.split("_")[0], s.split("_Q")[1]))
