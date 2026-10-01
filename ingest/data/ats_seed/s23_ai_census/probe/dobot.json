@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.dobot-robots.com/about/recruitment/social",
+  "identity": "confirmed",
+  "note": "Global-site social board lists Shanghai/Shenzhen + 'Overseas Technical Support' w/o US city (United States hits = country dropdown); DOBOT USA LLC 3 LCA (Carrollton TX)",
+  "ts": "2026-10-01"
+ }
 }

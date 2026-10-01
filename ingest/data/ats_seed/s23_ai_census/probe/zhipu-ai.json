@@ -25,5 +25,13 @@
   "ok": false,
   "n": 0
  },
- "verdict": "dict_collision"
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:zhipu-ai",
+  "identity": "confirmed",
+  "note": "Live adapter: 0 US rows of 237 on zhipu-ai.jobs.feishu.cn (zhipucampus portal 400s as org); GLM/Z.ai global brand but CN-only hiring; US Commerce Entity List (Jan 2025) → POLICY HOLD: do not wire without policy sign-off.",
+  "ts": "2026-10-01"
+ }
 }

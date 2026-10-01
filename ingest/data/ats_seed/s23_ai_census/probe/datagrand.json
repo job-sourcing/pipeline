@@ -161,5 +161,13 @@
   "snippet": "Create a Job Alert Level-up your career by having opportunities at DataGrail sent directly to your inbox. Create alert",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "ats:greenhouse:datagrail",
+  "identity": "refuted",
+  "note": "greenhouse:datagrail = DataGrail (SF data-privacy co) — dict/kit homonym; real DataGrand (达观数据) own join-us page datagrand.com/join-us is CN-only.",
+  "ts": "2026-10-01"
+ }
 }

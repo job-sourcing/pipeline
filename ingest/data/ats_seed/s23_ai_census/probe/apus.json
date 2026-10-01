@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Career Opportunities | American Public University System"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "https://militaryplus.apus.edu/about/careers/",
+  "identity": "refuted",
+  "note": "Probe best = American Public University System (APUS.edu) homonym; real own board apusapps.com/en/jobs live-checked: CN/India roles only, 0 US rows (APUS TECHNOLOGY LLC 1 LCA Irvine unverified).",
+  "ts": "2026-10-01"
+ }
 }

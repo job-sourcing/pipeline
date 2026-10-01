@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": null,
+  "identity": "confirmed",
+  "note": "datacanvas.com is real 九章云极 (AI infra) but no own jobs board surfaced; hiring via BOSS直聘 (26 jobs); no US entity/LCA",
+  "ts": "2026-10-01"
+ }
 }

@@ -151,5 +151,13 @@
   "platform": "custom",
   "title": "Career-walker | YITU Technology"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "https://www.yitutech.com/en/career",
+  "identity": "confirmed",
+  "note": "EN 'International' career page live-checked: '共 0 页 | 0 个职位' — zero open roles (CN 社会招聘 presumably on zh site); offices Shanghai/Singapore/London, no US; US expansion wound down after Entity List (Oct 2019) → policy hold. kit noise = 'Zhang Hao, Yitu Pte' HK aggregator + CF-walled epicareer.",
+  "ts": "2026-10-01"
+ }
 }

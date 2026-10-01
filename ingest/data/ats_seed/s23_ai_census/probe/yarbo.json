@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "https://www.yarbo.com/pages/career",
+  "identity": "confirmed",
+  "note": "Careers page = Shopify general-application form (10 position categories, zero job listings) + resume to career@yarbo.com; US entity (Ronkonkoma NY) + US field-installation roles live on Indeed only — no own board to wire (revisit if listings appear).",
+  "ts": "2026-10-01"
+ }
 }

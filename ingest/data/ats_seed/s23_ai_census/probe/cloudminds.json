@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "CloudMinds: Jobs, Salaries & Tech Stack (2026) | Alion"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_noise",
+  "us_rows": null,
+  "spec": "https://alion.io/company/cloudminds",
+  "identity": "unverified",
+  "note": "Probe best = Alion aggregator; cloudminds.se is a tiny Swedish site (homonym); cloudminds.com unreachable from this env; US arm (CloudMinds Technology Inc, Santa Clara/LA) hires via LinkedIn/BuiltIn per census.",
+  "ts": "2026-10-01"
+ }
 }

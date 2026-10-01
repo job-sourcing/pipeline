@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Dreame Careers"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.dreame.co.id/pages/careers",
+  "identity": "confirmed",
+  "note": "Found board = Dreame Indonesia careers (own sub, Indonesia-local, 0 US rows); US arm exists (DREAME TECHNOLOGY USA INC 4 LCA Culver City, Indeed ~75 US rows) but own US board not locatable — dreametech.com 429-walled, us.dreame.com unreachable; CN board dreame.zhiye.com.",
+  "ts": "2026-10-01"
+ }
 }

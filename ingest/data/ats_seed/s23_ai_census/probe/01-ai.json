@@ -25,5 +25,13 @@
   "ok": false,
   "n": 0
  },
- "verdict": "dict_collision"
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:01ai",
+  "identity": "confirmed",
+  "note": "Feishu-Hire portal '加入零一万物AGI' = 01.AI (cn-name match; probe identity_check false-neg on latin brand); live: 0 US rows of 55.",
+  "ts": "2026-10-01"
+ }
 }

@@ -157,5 +157,13 @@
   "snippet": "Advance your career with ECARXGROUP. Search, browse, and apply for current job openings and join us.",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:ecarxgroup",
+  "identity": "confirmed",
+  "note": "Own English Feishu board ecarxgroup.jobs.feishu.cn (ECARXGROUP 亿咖通, Nasdaq ECX); live: 0 US rows of 115 (Göteborg/Stuttgart etc); careers page claims USA ops but no US posts.",
+  "ts": "2026-10-01"
+ }
 }

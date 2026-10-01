@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Career - Zhejiang Dahua Technology Co., Ltd."
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.dahuasecurity.com/about-dahua/career",
+  "identity": "confirmed",
+  "note": "Own Zhejiang Dahua career + join-the-team pages (live: country list covers Africa/Europe/Asia, no US openings — Entity List); CN board job.dahuatech.com.",
+  "ts": "2026-10-01"
+ }
 }

@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Axera | Careers"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "https://www.axera.uk/contact/careers",
+  "identity": "refuted",
+  "note": "axera.uk = small UK SaaS/consulting firm ('About/Pricing/Request a demo') and axera.digital = consulting — neither is 爱芯元智; real own board zhaopin.axera-tech.com (爱芯科技招聘系统) CN-only.",
+  "ts": "2026-10-01"
+ }
 }

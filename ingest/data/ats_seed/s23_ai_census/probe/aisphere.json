@@ -25,5 +25,13 @@
   "ok": false,
   "n": 0
  },
- "verdict": "dict_collision"
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:aisphere",
+  "identity": "confirmed",
+  "note": "Feishu-Hire '爱诗科技招聘官网' = AISphere/PixVerse (cn-name match); live: 0 US rows of 19; global consumer app but CN-only hiring.",
+  "ts": "2026-10-01"
+ }
 }

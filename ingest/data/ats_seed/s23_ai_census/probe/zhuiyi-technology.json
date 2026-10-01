@@ -152,5 +152,13 @@
   "platform": "moka",
   "title": "人才计划：加入追一 - 追一科技"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://zhuiyi.ai/about/job",
+  "identity": "confirmed",
+  "note": "Own job page live: locations only Shenzhen/Beijing/Shanghai (0 US markers); Moka boards app.mokahr.com/apply/wezhuiyi/3441 + campus 3440 (no Moka adapter in kit); 追一科技 enterprise NLP, no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
 }

@@ -25,5 +25,13 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:aibee",
+  "identity": "confirmed",
+  "note": "Own Feishu-Hire board '欢迎加入Aibee'; live: 0 US rows of 6; Aibee (US) Inc is historical per census.",
+  "ts": "2026-10-01"
+ }
 }

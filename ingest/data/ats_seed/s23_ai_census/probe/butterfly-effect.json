@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "CAREERS — BUTTERFLY EFFECT"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred_js",
+  "us_rows": null,
+  "spec": "https://careers.manus.im/en/jobs",
+  "identity": "confirmed",
+  "note": "Probe surfaces all homonyms (Butterfly Effects ABA therapy / butterflyeffect.ai / London marketing agency); real board = careers.manus.im React SPA (manus-runtime, JS-walled, no JSON API at /api/jobs); rescue: headless render or API hunt in /assets JS bundle.",
+  "ts": "2026-10-01"
+ }
 }

@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "deferred_js",
+  "us_rows": null,
+  "spec": "https://www.xiaoi.com/jobs.html",
+  "identity": "confirmed",
+  "note": "Same company+surface as xiao-i-corporation slug (小i机器人, AIXI): www.xiaoi.com/jobs.html → same Nuxt SPA (277KB, jobs JS-only; cascader incl. Americas); cn.xiaoi.com/aboutPage/recruit mirrors it with 美国 option. Rescue: headless render/API hunt.",
+  "ts": "2026-10-01"
+ }
 }

@@ -12,5 +12,13 @@
   "title": "Companies | Canaan Partners Job Board",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "https://careers.canaan.com/companies",
+  "identity": "refuted",
+  "note": "careers.canaan.com = Canaan Partners (US VC) — known trap; real 嘉楠科技 Canaan Inc (Nasdaq CAN) own board not surfaced; Canaan US Inc 2 LCA Campbell CA.",
+  "ts": "2026-10-01"
+ }
 }

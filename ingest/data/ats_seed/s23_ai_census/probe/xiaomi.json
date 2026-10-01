@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Job Openings"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:xiaomi",
+  "identity": "confirmed",
+  "note": "Global board = Feishu-Hire portal on CUSTOM domain xiaomi.jobs.f.mioffice.cn (not {org}.jobs.feishu.cn — adapter needs base-override to wire); live API (csrf+search dialect): 0 US rows of 2131 — cities CN+Munich/Copenhagen/Düsseldorf/Prague/Paris/Cairo/Jakarta/Singapore/Bangkok/Mexico City; kit '6,000+ Xiaomi US jobs' = LinkedIn aggregator noise.",
+  "ts": "2026-10-01"
+ }
 }

@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "DeepSeek Jobs: 35 Open Jobs | Salary &amp; Interviews - refresh.cv"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://talent.deepseek.com/",
+  "identity": "confirmed",
+  "note": "Own talent.deepseek.com (588B JS shell, 杭州深度求索); probe best refresh.cv is an aggregator mirror (35-37 roles, all Hangzhou/Beijing); no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
 }

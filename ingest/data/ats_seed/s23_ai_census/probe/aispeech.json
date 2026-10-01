@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://aispeech.zhiye.com/",
+  "identity": "confirmed",
+  "note": "Beisen/zhiye CN campus board (思必驰, Powered by Beisen); en.aispeech.com is product site; no US entity/LCA",
+  "ts": "2026-10-01"
+ }
 }

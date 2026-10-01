@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Iflytek Hong Kong Company Limited Jobs in Hong Kong - Oct 2026 | CTgoodjobs"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://iflytek.zhiye.com/",
+  "identity": "confirmed",
+  "note": "Own Beisen/zhiye CN portal (科大讯飞招聘, same dialect as aispeech); kit noise = HK-sub listings on ctgoodjobs/TechJobAsia (HK only); no US hiring/LCA; US Entity-List/DoD-list class → POLICY HOLD if US rows ever appear.",
+  "ts": "2026-10-01"
+ }
 }

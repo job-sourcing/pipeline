@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "deferred_js",
+  "us_rows": null,
+  "spec": "https://www.xiaoi.com/careers",
+  "identity": "confirmed",
+  "note": "Own Nuxt/Element SPA careers for 小i机器人 Xiao-I (Nasdaq AIXI); window.__NUXT__ data empty, job rows client-side, but location cascader includes 'Americas' region (US roles possible); no LCA. Rescue: _nuxt bundle API hunt or headless render; adjudicate jointly with 'xiaoi' slug (same company/surface).",
+  "ts": "2026-10-01"
+ }
 }

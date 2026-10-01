@@ -25,5 +25,13 @@
   "ok": false,
   "n": 0
  },
- "verdict": "dict_collision"
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:deeplang",
+  "identity": "confirmed",
+  "note": "Feishu-Hire portal '加入深言' = DeepLang 深言科技 (cn-name match); live: 0 US rows of 4.",
+  "ts": "2026-10-01"
+ }
 }

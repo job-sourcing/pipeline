@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Careers | AM Logic Corporation | LifeSciences Consulting, Pharmaceutical staffing, Recruitment Services"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "http://www.amlogiccorp.com/careers.html",
+  "identity": "refuted",
+  "note": "Probe best = 'AM Logic Corporation' (US life-sciences consulting) ≠ 晶晨半导体 Amlogic; real amlogic.com/about/jobs is a static Silicon-Valley blurb with no listings; CN board amlogicsh.zhiye.com; 1 LCA Mountain View.",
+  "ts": "2026-10-01"
+ }
 }

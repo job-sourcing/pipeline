@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Allwinner Technology: Jobs & Salaries (2026) | Alion"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.allwinnertech.com/index.php?c=join",
+  "identity": "confirmed",
+  "note": "Probe best = Alion aggregator (noise); own 人才招募 page + campus.allwinnertech.com are CN-only (珠海全志); no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
 }

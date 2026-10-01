@@ -154,5 +154,13 @@
   "platform": "moka",
   "title": "第四范式招聘官网-求职找工作-最新招聘信息"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.4paradigm.com/about/hr.html",
+  "identity": "confirmed",
+  "note": "Own 第四范式 recruiting site (Moka-marked); live fetch shows zero US markers; US Entity List 2022, HK 6682; kit results were Paradigm homonyms.",
+  "ts": "2026-10-01"
+ }
 }

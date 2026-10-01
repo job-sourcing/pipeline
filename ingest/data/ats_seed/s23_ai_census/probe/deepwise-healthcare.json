@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.deepwise.com/opportunity",
+  "identity": "confirmed",
+  "note": "Own CN-language board (/opportunity, /join; NLP/CV roles); no US entity, LinkedIn jobs CN-only",
+  "ts": "2026-10-01"
+ }
 }

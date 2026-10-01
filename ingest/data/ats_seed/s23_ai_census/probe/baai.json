@@ -152,5 +152,13 @@
   "platform": "moka",
   "title": ""
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.baai.ac.cn/jobs",
+  "identity": "confirmed",
+  "note": "Own BAAI 智源 /jobs page (Moka marker); CN non-profit research institute, no US entity; kit noise = BAI/BAI Insurance/Jobsdb HK.",
+  "ts": "2026-10-01"
+ }
 }

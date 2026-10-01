@@ -152,5 +152,13 @@
   "platform": "moka",
   "title": "加入我们 - 壁仞科技官网"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.birentech.com/join/",
+  "identity": "confirmed",
+  "note": "Own 壁仞科技 join page (Moka-marked) + app.mokahr.com campus board (dead); US export-control pressure, no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
 }

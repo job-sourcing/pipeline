@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "https://lp.cloudwalk.io/jobs",
+  "identity": "refuted",
+  "note": "lp.cloudwalk.io = CloudWalk Inc, Brazilian fintech (payment network/wolfpack), NOT 云从科技; real CloudWalk Technology (SSE 688327, US Entity List) join page cloudwalk.com/en/join.html is CN-only",
+  "ts": "2026-10-01"
+ }
 }

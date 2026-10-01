@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Xiaoice: Jobs, Salaries & Tech Stack (2026) | Alion"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "deferred_js",
+  "us_rows": null,
+  "spec": "https://www.xiaoice.com/joinus",
+  "identity": "confirmed",
+  "note": "joinUs = JS shells on both xiaoice.com (152KB Vue SPA, empty static text) and xiaoice.cn (3.3KB shell w/ aliyuncs virtualhuman SDKs) — no job rows reachable statically; census: MSFT spinoff 2020, CN+Japan (Rinna) only, no US entity/LCA. Rescue: headless render.",
+  "ts": "2026-10-01"
+ }
 }

@@ -133,5 +133,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 10,
+  "spec": "https://www.accutarbio.com/careers/",
+  "identity": "confirmed",
+  "note": "Own custom WP board: 10 live roles (career-detail pages), all at Cranbury NJ US HQ (dual-HQ Shanghai); no ATS spec",
+  "ts": "2026-10-01"
+ }
 }

@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "https://lp.cloudwalk.io/jobs",
+  "identity": "refuted",
+  "note": "All found surfaces (lp.cloudwalk.io, jobera/newjob/FlexJobs) = Brazilian fintech CloudWalk Inc; real 云从科技 has no US hiring (Entity List Oct-2019)",
+  "ts": "2026-10-01"
+ }
 }

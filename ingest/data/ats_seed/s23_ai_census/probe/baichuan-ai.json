@@ -165,5 +165,13 @@
   "snippet": "登录百川智能招聘，开启你的新工作",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:cq6qe6bvfr6",
+  "identity": "confirmed",
+  "note": "Own Feishu portal cq6qe6bvfr6/baichuanzhaopin (百川智能); live: 0 US rows of 15; careers.baichuan-inc.com campus site CN-only.",
+  "ts": "2026-10-01"
+ }
 }

@@ -6,7 +6,7 @@
  "candidates": [
   {
    "url": "https://brilliance.betterteam.com/",
-   "title": "Quick security check \u2014 Betterteam",
+   "title": "Quick security check — Betterteam",
    "status": 403,
    "bytes": 21745,
    "markers": [],
@@ -30,7 +30,7 @@
   },
   {
    "url": "https://www.bmw-brilliance.cn/cn/en/hr/opportunity.html",
-   "title": "BMW Brilliance\uff1aJob Opportunity",
+   "title": "BMW Brilliance：Job Opportunity",
    "status": 200,
    "bytes": 7973,
    "markers": [
@@ -80,7 +80,7 @@
    "s": "Our team brings their collective passion for innovation. Find a role that's right for you and discover your career purpose at General Motors."
   },
   {
-   "t": "BMW Brilliance\uff1aJob Opportunity",
+   "t": "BMW Brilliance：Job Opportunity",
    "u": "https://www.bmw-brilliance.cn/cn/en/hr/opportunity.html",
    "s": "Career Opportunities As an innovative premium automotive manufacturer, BMW Brilliance provides comfortable working environment, excellent team work and challeng"
   },
@@ -100,7 +100,7 @@
    "s": "Today's top Brilliance Auto Insurance jobs in India. Leverage your professional network, and get hired. New Brilliance Auto Insurance jobs added daily."
   },
   {
-   "t": "BMW Brilliance\uff1aJob Opportunity",
+   "t": "BMW Brilliance：Job Opportunity",
    "u": "https://www.bmw-brilliance.cn/cn/en/hr/opportunity.html",
    "s": "As an innovative premium automotive manufacturer, BMW Brilliance provides comfortable working environment, excellent team work and challenging projects. What we"
   },
@@ -150,7 +150,7 @@
  "best": {
   "url": "https://www.bmw-brilliance.cn/cn/en/hr/opportunity.html",
   "platform": "successfactors",
-  "title": "BMW Brilliance\uff1aJob Opportunity"
+  "title": "BMW Brilliance：Job Opportunity"
  },
  "verdict": "marker_surface",
  "adjudication": {

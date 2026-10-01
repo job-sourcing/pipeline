@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Job Opportunities - iMotions"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "https://imotions.com/about-us/job-opportunities/",
+  "identity": "refuted",
+  "note": "Probe bests = iMotions (Copenhagen eye-tracking biometrics), iMotion Security (FR), imozengroup.eu — homonyms; real 知行汽车科技 iMotion (Suzhou, HK:1274, imotion-tech.com) is a JS SPA with no careers surface (SPA catch-all 200s); CN-only ADAS, no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
 }

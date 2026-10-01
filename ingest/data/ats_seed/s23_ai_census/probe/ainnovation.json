@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Careers | IA Innovations"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "refuted_homonym",
+  "us_rows": null,
+  "spec": "https://iainnovations.com/careers/",
+  "identity": "refuted",
+  "note": "Found surface = 'IA Innovations' (US human-centered consulting), NOT 创新奇智 AInnovation; real co only via VentureLoop aggregator profile; own board (ainnovation.com) not surfaced, CN-only.",
+  "ts": "2026-10-01"
+ }
 }

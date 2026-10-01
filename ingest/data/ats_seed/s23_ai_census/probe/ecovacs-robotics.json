@@ -152,5 +152,13 @@
   "platform": "moka",
   "title": "招贤纳士-科沃斯机器人HR官网"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 1,
+  "spec": "https://www.ecovacs.com/us/careers/job-list",
+  "identity": "confirmed",
+  "note": "Own ECOVACS US job-list page live-verified: 1 US row (Warehouse Supervisor - 3PL Operations, Los Angeles CA, Full Time); CN Moka board hr.ecovacs.cn/social; LCA 1 filing San Mateo.",
+  "ts": "2026-10-01"
+ }
 }

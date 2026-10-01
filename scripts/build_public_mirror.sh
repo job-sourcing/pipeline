@@ -72,11 +72,39 @@ if [ -d "$DEST/ingest/data/ats_seed" ]; then
     name=$(basename "$d")
     if [ -d "$d/probe" ]; then
       mkdir -p "$SRC/ingest/data/ats_seed/$name/probe"
-      rsync -a "$d/probe/" "$SRC/ingest/data/ats_seed/$name/probe/"
+      # MERGE, never overwrite: an incoming org-side probe file must
+      # not clobber archive-side ADJUDICATION/s23_verdict fields (the
+      # S23-audit P1: f40a1a4 wiped 37 verdicts). Python merge keeps
+      # the incoming probe body + re-applies archive verdict keys.
+      (cd "$SRC" && python3 - "$d/probe" "ingest/data/ats_seed/$name/probe" <<'PYEOF'
+import json, sys, shutil
+from pathlib import Path
+incoming, target = Path(sys.argv[1]), Path(sys.argv[2])
+VERDICT_KEYS = ("adjudication", "s23_verdict")
+n_merged = 0
+for f in incoming.glob("*.json"):
+    dst = target / f.name
+    try:
+        new = json.loads(f.read_text(encoding="utf-8"))
+    except Exception:
+        shutil.copyfile(f, dst); continue
+    if dst.exists():
+        try:
+            old = json.loads(dst.read_text(encoding="utf-8"))
+        except Exception:
+            shutil.copyfile(f, dst); continue
+        for k in VERDICT_KEYS:
+            if k in old and k not in new:
+                new[k] = old[k]; n_merged += 1
+    dst.write_text(json.dumps(new, indent=1, ensure_ascii=False),
+                   encoding="utf-8")
+print(f"[back-sync-merge] {incoming.name}: {n_merged} verdict key(s) preserved")
+PYEOF
+)
     fi
   done
   (cd "$SRC" && git add ingest/data/ats_seed 2>/dev/null && \
-    git diff --cached --quiet || git commit -q -m "sector-probe evidence back-sync from org runtime")
+    git diff --cached --quiet || git commit -q -m "sector-probe evidence back-sync from org runtime (adjudication-merge)")
 fi
 
 echo "== pre-rsync cleanup (leaked untracked files; rsync --delete cannot remove excluded dest paths) =="

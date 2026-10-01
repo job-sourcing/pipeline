@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "deferred_js",
+  "us_rows": null,
+  "spec": "https://jobs.bitmain.com/",
+  "identity": "confirmed",
+  "note": "Official career site = Vue SPA over Beisen beisenSiteApi (405 w/o session; roles JS-only); US LCA Bitmain Delaware (Irvine CA) + Bitmain Development (Houston) so US roles may exist behind JS",
+  "ts": "2026-10-01"
+ }
 }

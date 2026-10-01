@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Careers - 鹰瞳Airdoc"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.airdoc.com/career",
+  "identity": "confirmed",
+  "note": "Own 鹰瞳Airdoc careers page live-checked: no US/Seattle roles (historic Seattle R&D per Boss直聘 only); aidoc.com (Israel) homonym correctly avoided.",
+  "ts": "2026-10-01"
+ }
 }

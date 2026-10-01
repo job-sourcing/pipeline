@@ -25,5 +25,13 @@
   "ok": false,
   "n": 0
  },
- "verdict": "dict_collision"
+ "verdict": "dict_collision",
+ "adjudication": {
+  "verdict": "board_empty",
+  "us_rows": 0,
+  "spec": "ats:feishuhire:dataelem",
+  "identity": "confirmed",
+  "note": "Feishu-Hire portal '加入北京数据项素智能科技有限公司' = DataElem (registered cn-name match); live: 0 total posts.",
+  "ts": "2026-10-01"
+ }
 }

@@ -150,5 +150,13 @@
   "platform": "custom",
   "title": "Job Search | Ant International"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "verdict": "already_wired",
+  "us_rows": null,
+  "spec": "https://www.ant-intl.com/en/job-search/",
+  "identity": "confirmed",
+  "note": "Found surface = Ant International job-search (already wired); domestic talent.antgroup.com is CN-only; ant-group.net is an unrelated education/media homonym.",
+  "ts": "2026-10-01"
+ }
 }

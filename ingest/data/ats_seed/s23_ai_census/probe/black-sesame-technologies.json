@@ -152,5 +152,13 @@
   "platform": "workable",
   "title": "black sesame technologies | Jobs by Workable"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "wire_candidate",
+  "us_rows": 6,
+  "spec": "https://www.blacksesame.com/en/join-us/",
+  "identity": "confirmed",
+  "note": "Own join-us page live-verified: 6 San Jose US job cards (Embedded SW Sr Eng, AI Framework, AI Compiler, AI Perception, Design Eng) matching 8 LCA San Jose; Workable board black-sesame-technologies-1 exists but 0 rows (jobs live on site page).",
+  "ts": "2026-10-01"
+ }
 }

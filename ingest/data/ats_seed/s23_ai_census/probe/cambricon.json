@@ -154,5 +154,13 @@
   "platform": "moka",
   "title": "寒武纪"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://www.cambricon.com/",
+  "identity": "confirmed",
+  "note": "Own 寒武纪 site (Moka marker, careers embedded); jobui mirror shows 178 CN roles; US 1260H restricted, no US entity/LCA.",
+  "ts": "2026-10-01"
+ }
 }

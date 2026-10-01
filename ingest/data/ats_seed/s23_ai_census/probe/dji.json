@@ -145,5 +145,13 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "verdict": "china_only",
+  "us_rows": 0,
+  "spec": "https://we.dji.com/jobs_en.html",
+  "identity": "confirmed",
+  "note": "EN board live API (hire_front/queryUsingAndOldPositionVoList): 22 roles total, all Shenzhen/Shanghai/Beijing, 0 US; apply.careers.dji.com unreachable; DJI Technology Inc (Burbank) 3 LCA — US hiring not on public board",
+  "ts": "2026-10-01"
+ }
 }
