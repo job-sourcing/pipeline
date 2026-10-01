@@ -62,6 +62,23 @@ if ls "$DEST"/ingest/data/workday/*.h1b_lca.jsonl >/dev/null 2>&1; then
     git diff --cached --quiet || git commit -q -m "h1b extract back-sync from org runtime")
 fi
 
+echo "== back-sync sector-census probe evidence (GHA sector-probe legs) =="
+# S23: the sector-probe workflow commits probe/<slug>.json evidence on
+# the ORG repo (US-egress reads). Pull them back into the archive —
+# the same org-to-archive state-flow as h1b extracts above (the forward
+# rsync would otherwise wipe them from the mirror).
+if [ -d "$DEST/ingest/data/ats_seed" ]; then
+  for d in "$DEST"/ingest/data/ats_seed/*/; do
+    name=$(basename "$d")
+    if [ -d "$d/probe" ]; then
+      mkdir -p "$SRC/ingest/data/ats_seed/$name/probe"
+      rsync -a "$d/probe/" "$SRC/ingest/data/ats_seed/$name/probe/"
+    fi
+  done
+  (cd "$SRC" && git add ingest/data/ats_seed 2>/dev/null && \
+    git diff --cached --quiet || git commit -q -m "sector-probe evidence back-sync from org runtime")
+fi
+
 echo "== pre-rsync cleanup (leaked untracked files; rsync --delete cannot remove excluded dest paths) =="
 rm -f "$DEST/ingest/.coverage"
 

@@ -1,0 +1,156 @@
+{
+ "brand": "Ecovacs Robotics",
+ "tier": "probe_A",
+ "lca": "ECOVACS ROBOTICS, INC",
+ "ts": "2026-10-01T12:12:15.407Z",
+ "candidates": [
+  {
+   "url": "https://www.ecovacs.com/us/careers",
+   "title": "Careers - ECOVACS US",
+   "status": 200,
+   "bytes": 80099,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CAREERS At ECOVACS Robotics, we care about innovating solutions to enhance your lifestyle. Being a part of our team means being a part of a new frontier where c",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.ecovacs.com/global/careers",
+   "title": "CAREERS - ECOVACS GLOBAL",
+   "status": 200,
+   "bytes": 62041,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CAREERS At ECOVACS Robotics, we care about innovating solutions to enhance your lifestyle. Being a part of our team means being a part of a new frontier where c",
+   "backend": "direct"
+  },
+  {
+   "url": "https://hr.ecovacs.cn/social",
+   "title": "招贤纳士-科沃斯机器人HR官网",
+   "status": 200,
+   "bytes": 20582,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "热门搜索： 资深IE 模流分析工程师 物流综合管理科科长 国际物流科长 成本主管 总务管理师 风控管理师 总账经理 财务分析师/经理 退换修科长 线上营销-活动策划 品牌整合营销主管 社交媒体与粉丝运营主管 用户体验经理 非地宝产品营销经理 大客户部KA渠道经理 CRM主管 数据分析 人资管理员 策划 ...",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - ECOVACS US",
+   "u": "https://www.ecovacs.com/us/careers",
+   "s": "CAREERS At ECOVACS Robotics, we care about innovating solutions to enhance your lifestyle. Being a part of our team means being a part of a new frontier where c"
+  },
+  {
+   "t": "Careers - Ecovacs Global",
+   "u": "https://www.ecovacs.com/global/careers",
+   "s": "CAREERS At ECOVACS Robotics, we care about innovating solutions to enhance your lifestyle. Being a part of our team means being a part of a new frontier where c"
+  },
+  {
+   "t": "Ecovacs Robotics Jobs in Worldwide (19,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ecovacs-robotics-jobs-worldwide",
+   "s": "Today's top 19,000+ Ecovacs Robotics jobs in Worldwide. Leverage your professional network, and get hired. New Ecovacs Robotics jobs added daily."
+  },
+  {
+   "t": "招贤纳士-科沃斯机器人HR官网 - hr.ecovacs.cn",
+   "u": "https://hr.ecovacs.cn/social",
+   "s": "热门搜索： 资深IE 模流分析工程师 物流综合管理科科长 国际物流科长 成本主管 总务管理师 风控管理师 总账经理 财务分析师/经理 退换修科长 线上营销-活动策划 品牌整合营销主管 社交媒体与粉丝运营主管 用户体验经理 非地宝产品营销经理 大客户部KA渠道经理 CRM主管 数据分析 人资管理员 策划 ..."
+  },
+  {
+   "t": "ECOVACS ROBOTICS: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/ecovacs-robotics-inc-/jobs",
+   "s": "ECOVACS ROBOTICS | 33,708 followers on LinkedIn. Innovating Since Day One - Creating the Intelligent Home With over 20 years of design and industry-leading rese"
+  },
+  {
+   "t": "Ecovacs Robotics, Inc. Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Ecovacs-Robotics,-Inc.",
+   "s": "Find out what works well at Ecovacs Robotics, Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights"
+  },
+  {
+   "t": "ECOVACS ROBOTICS: Jobs | LinkedIn",
+   "u": "https://hk.linkedin.com/company/ecovacs-robotics-inc-/jobs",
+   "s": "ECOVACS ROBOTICS | 33,678 followers on LinkedIn. Innovating Since Day One - Creating the Intelligent Home With over 20 years of design and industry-leading rese"
+  },
+  {
+   "t": "ECOVACS ROBOTICS: Jobs | LinkedIn",
+   "u": "https://in.linkedin.com/company/ecovacs-robotics-inc-/jobs",
+   "s": "ECOVACS ROBOTICS | 33,623 followers on LinkedIn. Innovating Since Day One - Creating the Intelligent Home With over 20 years of design and industry-leading rese"
+  },
+  {
+   "t": "Careers - ECOVACS US",
+   "u": "https://www.ecovacs.com/us/careers",
+   "s": "CAREERS At ECOVACS Robotics, we care about innovating solutions to enhance your lifestyle. Being a part of our team means being a part of a new frontier where c"
+  },
+  {
+   "t": "Careers - Ecovacs Global",
+   "u": "https://www.ecovacs.com/global/careers",
+   "s": "CAREERS At ECOVACS Robotics, we care about innovating solutions to enhance your lifestyle. Being a part of our team means being a part of a new frontier where c"
+  },
+  {
+   "t": "Ecovacs Robotics Jobs in Worldwide (19,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ecovacs-robotics-jobs-worldwide",
+   "s": "Today's top 19,000+ Ecovacs Robotics jobs in Worldwide. Leverage your professional network, and get hired. New Ecovacs Robotics jobs added daily."
+  },
+  {
+   "t": "ECOVACS ROBOTICS CO., LTD. Jobs - Jobui",
+   "u": "https://en.jobui.com/company/13282439/jobs/",
+   "s": "(ECOVACS招聘)ECOVACS ROBOTICS CO., LTD.招聘ECOVACS相关领域：服务机器人，家用机器人，家庭服务机器人，擦窗机器人，擦窗机。想了解ECOVACS招聘条件，学历要求，需要什么专业，就上职友集。发现和了解你未来的雇主。"
+  },
+  {
+   "t": "ECOVACS ROBOTICS: Jobs | LinkedIn",
+   "u": "https://hk.linkedin.com/company/ecovacs-robotics-inc-/jobs",
+   "s": "ECOVACS ROBOTICS | 33,678 followers on LinkedIn. Innovating Since Day One - Creating the Intelligent Home With over 20 years of design and industry-leading rese"
+  },
+  {
+   "t": "ECOVACS Robotics Jobs & Careers - 18 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/ECOVACS-Robotics-Jobs-E749613.htm",
+   "s": "Search job openings at ECOVACS Robotics. 18 ECOVACS Robotics jobs including salaries, ratings, and reviews, posted by ECOVACS Robotics employees."
+  },
+  {
+   "t": "ECOVACS ROBOTICS: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/ecovacs-robotics-inc-/jobs",
+   "s": "ECOVACS ROBOTICS | 33,708 followers on LinkedIn. Innovating Since Day One - Creating the Intelligent Home With over 20 years of design and industry-leading rese"
+  },
+  {
+   "t": "招贤纳士-科沃斯机器人HR官网 - hr.ecovacs.cn",
+   "u": "https://hr.ecovacs.cn/social",
+   "s": "热门搜索： 资深IE 模流分析工程师 物流综合管理科科长 国际物流科长 成本主管 总务管理师 风控管理师 总账经理 财务分析师/经理 退换修科长 线上营销-活动策划 品牌整合营销主管 社交媒体与粉丝运营主管 用户体验经理 非地宝产品营销经理 大客户部KA渠道经理 CRM主管 数据分析 人资管理员 策划 ..."
+  },
+  {
+   "t": "Careers - ECOVACS US",
+   "u": "https://www.ecovacs.com/us/careers",
+   "s": "CAREERS At ECOVACS Robotics, we care about innovating solutions to enhance your lifestyle. Being a part of our team means being a part of a new frontier where c"
+  },
+  {
+   "t": "Careers - Ecovacs Global",
+   "u": "https://www.ecovacs.com/global/careers",
+   "s": "CAREERS At ECOVACS Robotics, we care about innovating solutions to enhance your lifestyle. Being a part of our team means being a part of a new frontier where c"
+  },
+  {
+   "t": "Ecovacs Robotics Jobs in Worldwide (19,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ecovacs-robotics-jobs-worldwide",
+   "s": "Today's top 19,000+ Ecovacs Robotics jobs in Worldwide. Leverage your professional network, and get hired. New Ecovacs Robotics jobs added daily."
+  },
+  {
+   "t": "Ecovacs Robotics, Inc. Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Ecovacs-Robotics,-Inc.",
+   "s": "Find out what works well at Ecovacs Robotics, Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://hr.ecovacs.cn/social",
+  "platform": "moka",
+  "title": "招贤纳士-科沃斯机器人HR官网"
+ },
+ "verdict": "marker_surface"
+}
