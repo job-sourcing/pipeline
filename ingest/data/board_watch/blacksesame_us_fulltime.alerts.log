@@ -1,0 +1,3 @@
+board-watch blacksesame_us_fulltime FAILED: list fetch crashed (ConnectTimeout: HTTPSConnectionPool(host='www.blacksesame.com', port=443): Max retries exceeded with url: /en/join-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.blacksesame.com', port=443) at 0x7f4ee0e74c80>, 'Connection to www.blacksesame.com timed out. (connect timeout=15)')))
+(2026-10-01T14:38:37)
+
