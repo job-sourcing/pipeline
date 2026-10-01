@@ -1,0 +1,149 @@
+{
+ "brand": "Dobot",
+ "tier": "probe_A",
+ "lca": "DOBOT USA LLC",
+ "ts": "2026-10-01T12:10:27.140Z",
+ "candidates": [
+  {
+   "url": "https://dobot.zhiye.com/jobs",
+   "title": "越疆机器人",
+   "status": 200,
+   "bytes": 34780,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "1、精通机器人学，数学、物理学功底扎实，可以对高水平论文中的难点进行快速的推导和代码实现； 2、有机器人理论、机器人抓取、运动规划等领域扎实的研究背景，创新能力强；； 3、熟悉机器人硬件系统，清晰了解电机、减速器、驱动器、编码器、力矩传感器等一种或多种核心部件的性能指标 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.dobot-robots.com/about/recruitment/social",
+   "title": "Social Recruitment",
+   "status": 200,
+   "bytes": 154651,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Dobot is committed to protecting and respecting your privacy. We prioritize the security of your information and employ industry-standard security measures to p",
+   "backend": "direct"
+  },
+  {
+   "url": "http://www.dobot-robots.com/",
+   "title": "Dobot Robotics | Official website",
+   "status": 200,
+   "bytes": 171731,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Dobot Robotics provides innovative integrated robotics solutions and guides customers in sustainable industry automation and STEM education. Learn more about ou",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Social Recruitment - dobot-robots.com",
+   "u": "https://www.dobot-robots.com/about/recruitment/social",
+   "s": "Dobot is committed to protecting and respecting your privacy. We prioritize the security of your information and employ industry-standard security measures to p"
+  },
+  {
+   "t": "Dobot Robotics - LinkedIn",
+   "u": "https://www.linkedin.com/company/dobotrobotics",
+   "s": "DOBOT, Shape the Future of Automation As a global leader in collaborative robotics, DOBOT specializes in desktop-grade and industrial robotic arms powered by pr"
+  },
+  {
+   "t": "Dobot Global Recruitment | Dobot Robotics - LinkedIn",
+   "u": "https://www.linkedin.com/posts/dobotrobotics_dobot-global-recruitment-activity-7089894357280960513-si-f",
+   "s": "🌍 Ready for an Exciting Career with Dobot? We're Hiring Now! 💼 Calling all talented individuals worldwide! 🌟 Dobot is expanding its team and seeking exceptio"
+  },
+  {
+   "t": "越疆机器人 - dobot.zhiye.com",
+   "u": "https://dobot.zhiye.com/jobs",
+   "s": "1、精通机器人学，数学、物理学功底扎实，可以对高水平论文中的难点进行快速的推导和代码实现； 2、有机器人理论、机器人抓取、运动规划等领域扎实的研究背景，创新能力强；； 3、熟悉机器人硬件系统，清晰了解电机、减速器、驱动器、编码器、力矩传感器等一种或多种核心部件的性能指标 ..."
+  },
+  {
+   "t": "Dobot Robotics | Official website",
+   "u": "http://www.dobot-robots.com/",
+   "s": "Dobot Robotics provides innovative integrated robotics solutions and guides customers in sustainable industry automation and STEM education. Learn more about ou"
+  },
+  {
+   "t": "校园招聘 - dobot.cn",
+   "u": "https://www.dobot.cn/about/recruitment/campus",
+   "s": "Dobot越疆科技提供高性能协作机器人、工业机器人、协作机械臂、码垛机器人、焊接机器人、装配机器人及智能制造解决方案，助力企业实现自动化升级。"
+  },
+  {
+   "t": "Careers at Dobot Amer | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/dobot-amer",
+   "s": "Dobot AMER is the North American branch of Dobot, a global robotics company specializing in the design and manufacture of collaborative robotic arms and automat"
+  },
+  {
+   "t": "Dobot Careers - Insights and Opportunities",
+   "u": "https://wellfound.com/company/my-dobot",
+   "s": "Find out if Dobot is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benefits,"
+  },
+  {
+   "t": "Social Recruitment - dobot-robots.com",
+   "u": "https://www.dobot-robots.com/about/recruitment/social",
+   "s": "Dobot is committed to protecting and respecting your privacy. We prioritize the security of your information and employ industry-standard security measures to p"
+  },
+  {
+   "t": "Dobot Jobs in Worldwide (10 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/dobot-jobs-worldwide",
+   "s": "Today's top 10 Dobot jobs in Worldwide. Leverage your professional network, and get hired. New Dobot jobs added daily."
+  },
+  {
+   "t": "Dobot Robotics Jobs in Worldwide (23,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/dobot-robotics-jobs-worldwide",
+   "s": "Today's top 23,000+ Dobot Robotics jobs in Worldwide. Leverage your professional network, and get hired. New Dobot Robotics jobs added daily."
+  },
+  {
+   "t": "越疆机器人 - dobot.zhiye.com",
+   "u": "https://dobot.zhiye.com/jobs",
+   "s": "1、精通机器人学，数学、物理学功底扎实，可以对高水平论文中的难点进行快速的推导和代码实现； 2、有机器人理论、机器人抓取、运动规划等领域扎实的研究背景，创新能力强；； 3、熟悉机器人硬件系统，清晰了解电机、减速器、驱动器、编码器、力矩传感器等一种或多种核心部件的性能指标 ..."
+  },
+  {
+   "t": "Dobot Robotics | Official website",
+   "u": "https://www.dobot-robots.com/",
+   "s": "Dobot Robotics provides innovative integrated robotics solutions and guides customers in sustainable industry automation and STEM education. Learn more about ou"
+  },
+  {
+   "t": "Robotics Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/robotics-jobs",
+   "s": "Find your ideal job at Jobsdb with 570 Robotics jobs found in Hong Kong. View all our Robotics vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Homepage | DOBOT HK",
+   "u": "https://dobot.hk/",
+   "s": "DOBOT 是全球輕量型機械臂的技術領導者。DOBOT 以先進技術和簡易介面，將機械臂產品與啟蒙、職業應用、科學教育深度結合，形成系列 STEAM 教育課程及不同範疇方案，為用戶提供無盡可能性。 如今機械臂產品已取得82項國際專利，及全球範圍內的安規認證等系列國際資質，產品行銷全球一百多個 ..."
+  },
+  {
+   "t": "Dobot Robotics | LinkedIn",
+   "u": "https://in.linkedin.com/company/dobotrobotics",
+   "s": "DOBOT, Shape the Future of Automation As a global leader in collaborative robotics, DOBOT specializes in desktop-grade and industrial robotic arms powered by pr"
+  },
+  {
+   "t": "Social Recruitment - dobot-robots.com",
+   "u": "https://www.dobot-robots.com/about/recruitment/social",
+   "s": "Social Recruitment Campus Recruitment Job Category: R&D Work City: Shang HaiShen Zhen PositionJob CategoryWork CityTime NPIR&DShang HaiMar 29, 2022Overseas Tech"
+  },
+  {
+   "t": "Dobot Robotics Jobs in Worldwide (23,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/dobot-robotics-jobs-worldwide",
+   "s": "Today's top 23,000+ Dobot Robotics jobs in Worldwide. Leverage your professional network, and get hired. New Dobot Robotics jobs added daily."
+  },
+  {
+   "t": "Dobot Jobs in Worldwide (10 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/dobot-jobs-worldwide",
+   "s": "Today's top 10 Dobot jobs in Worldwide. Leverage your professional network, and get hired. New Dobot jobs added daily."
+  },
+  {
+   "t": "Robotics Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/robotics-jobs",
+   "s": "Find your ideal job at Jobsdb with 570 Robotics jobs found in Hong Kong. View all our Robotics vacancies now with new jobs added daily!"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}
