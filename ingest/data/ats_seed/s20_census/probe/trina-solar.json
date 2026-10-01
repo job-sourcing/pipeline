@@ -162,5 +162,19 @@
   "note": "S22 update: careers.trinasolar.com = WordPress (theme mohito) — HK+fleet CF-walled but GHA-REACHABLE (58KB real page, URL-probe mode). jobpost CPT 404, posts empty; the wp-json/ route index (205KB) reveals the jobs mechanism NEXT SESSION (extend board_probe --url to surface job-named routes, then wire as wpjobboard-class or custom). Trina Solar US (Santa Clara TX plants) is real — LCA TRINA SOLAR U.S. MANUFACTURING.",
   "ts": "2026-09-30T06:40:00Z",
   "by": "S22 GHA URL-probe"
+ },
+ "s23_verdict": {
+  "verdict": "parked_no_surface",
+  "date": "2026-10-01",
+  "evidence": [
+   "careers.trinasolar.com (WP, theme mohito) GHA-readable 58KB but CF-walled for HK+fleet (fleet 200/0-byte)",
+   "wp-json/ route index: 137 routes, ZERO job-named (no job CPT/API)",
+   "wp-sitemap-posts-post-1.xml: exactly 1 post = witaj-swiecie (Polish WP default sample) — the WP hosts NO job content",
+   "main.js/vendor.js bundles: zero /api/ or /vN/ hints",
+   "www.trinasolar.com/en-glb/our-company/careers-search → 302 to /en-glb/ homepage (page removed)",
+   "en-us locale + us.trinasolar.com variants: 404/DNS dead",
+   "aggregators (LinkedIn ~90 US, startup.jobs 29) list Trina US jobs — no own-board surface identifiable"
+  ],
+  "conclusion": "The WordPress careers install is a placeholder shell; the real application flow is not discoverable from public static surfaces. The 10-row LCA needle stays; re-open only if a US-entity board surface emerges (e.g. via future aggregator trails or Moka/feishu-style portal discovery)."
  }
 }

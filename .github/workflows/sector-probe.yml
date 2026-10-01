@@ -1,0 +1,165 @@
+# S23 sector-census probe wave — the programmatic layer of the
+# standardized sector-expansion flow (SKILL §26.1 layer 3).
+#
+# WHAT THIS IS: given a census dir under ingest/data/ats_seed/ (built by
+# the sub-agent census + s23_sector_census.py --merge --triage), run the
+# surface-probe wave ON GHA — US egress (beats CF walls the sandbox
+# can't), durable (evidence files checkpoint-committed = the resume
+# point), and re-dispatchable while records remain.
+#
+# Inputs:
+#   sector  — census dir name (e.g. s23_ai_census)
+#   tier    — probe_A | probe_B | wire_now (identity mode)
+#   limit   — records per leg (default 25; ~2.5s+search per record)
+#   engine  — kit (default; quota-free DDG via rotating IPs) | auto
+#
+# Self-retrigger: pending while un-probed records remain (the probe
+# skips existing evidence files; a leg that makes NO progress stops
+# the chain). Daily leg cap = 24 (the S12 burn-incident guard).
+name: Sector Probe
+on:
+  workflow_dispatch:
+    inputs:
+      sector:
+        description: 'census dir under ingest/data/ats_seed/'
+        default: 's23_ai_census'
+      tier:
+        description: 'probe_A | probe_B | wire_now (identity mode)'
+        default: 'probe_A'
+      limit:
+        description: 'records per leg'
+        default: '25'
+      engine:
+        description: 'search engine: kit | auto'
+        default: 'kit'
+  schedule:
+    - cron: '30 3 * * *'   # safety net for dispatched waves (no-op fast)
+
+concurrency:
+  group: sector-probe
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      SECTOR: ${{ inputs.sector || 's23_ai_census' }}
+      TIER: ${{ inputs.tier || 'probe_A' }}
+      LIMIT: ${{ inputs.limit || '25' }}
+      ENGINE: ${{ inputs.engine || 'kit' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        run: |
+          python3 -m pip install --break-system-packages curl_cffi || true
+
+      - name: Count remaining probe records
+        id: count
+        run: |
+          set -e
+          SECTOR_DIR="ingest/data/ats_seed/$SECTOR"
+          QUEUE="$SECTOR_DIR/sector_queue.json"
+          if [ ! -f "$QUEUE" ]; then
+            echo "remaining=0" >> $GITHUB_ENV
+            echo "::error::no sector_queue.json under $SECTOR_DIR (run the census + triage first)"
+            exit 1
+          fi
+          python3 - <<'PY' >> $GITHUB_ENV
+          import json, os
+          from pathlib import Path
+          sector = os.environ['SECTOR']
+          tier = os.environ['TIER']
+          qdir = Path('ingest/data/ats_seed') / sector
+          q = json.loads((qdir / 'sector_queue.json').read_text())
+          recs = q.get(tier, [])
+          import re
+          def slug(t):
+              s = re.sub(r'[^a-z0-9]+', '-', (t or '').lower()).strip('-')
+              return s[:80]
+          remaining = 0
+          for r in recs:
+              f = qdir / 'probe' / (slug(r.get('brand') or r.get('name') or '') + '.json')
+              if not f.exists():
+                  remaining += 1
+          print(f"remaining={remaining}")
+          print(f"::notice::{sector}/{tier}: {remaining} of {len(recs)} un-probed")
+          PY
+
+      - name: Daily leg cap (S12 burn guard)
+        run: |
+          LEGS_FILE="/tmp/legs_$(date -u +%Y-%m-%d).txt"
+          echo "leg" >> "$LEGS_FILE"
+          N=$(wc -l < "$LEGS_FILE")
+          if [ "$N" -gt 24 ]; then
+            echo "::notice::daily leg cap reached ($N) — tomorrow's safety cron continues"
+            echo "PROBE_RESULT=complete" >> $GITHUB_ENV
+          fi
+
+      - name: Run the probe wave leg
+        if: env.remaining != '0' && env.PROBE_RESULT != 'complete'
+        run: |
+          set -e
+          cd ingest && python3 -m pip install --break-system-packages -q -e . 2>/dev/null || true
+          cd ..
+          MODE=surface
+          if [ "$TIER" = "wire_now" ]; then MODE=identity; fi
+          node scripts/s20_surface_probe.mjs \
+            --mode "$MODE" --tier "$TIER" \
+            --dir "$SECTOR" --queue sector_queue.json \
+            --engine "$ENGINE" --limit "$LIMIT" --retry true \
+            2>&1 | tee probe_leg.log
+          echo "PROBE_RESULT=pending" >> $GITHUB_ENV
+
+      - name: Checkpoint evidence to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/probe_state
+          SECTOR_DIR="ingest/data/ats_seed/$SECTOR"
+          cp -r "$SECTOR_DIR/probe" /tmp/probe_state/ 2>/dev/null || true
+          git config user.name "sector-probe-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            rm -rf "$SECTOR_DIR/probe"
+            cp -r /tmp/probe_state/probe "$SECTOR_DIR/probe" 2>/dev/null || true
+            git add "$SECTOR_DIR/probe" || true
+            if git diff --cached --quiet; then
+              echo "no probe evidence change to commit"
+              push_ok=1; break
+            fi
+            git commit -m "sector-probe checkpoint: $SECTOR/$TIER evidence [skip ci]"
+            if git push; then push_ok=1; break; fi
+            echo "push attempt $i failed — refetching and retrying"
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::probe-evidence push failed after 3 attempts — state preserved in /tmp (tomorrow's cron retries)"
+          fi
+
+      - name: Fail loudly on probe error
+        if: failure()
+        run: echo "::error::sector-probe leg failed — see probe_leg.log above"
+
+      - name: Self-retrigger while pending
+        if: env.PROBE_RESULT == 'pending'
+        run: |
+          gh workflow run sector-probe.yml \
+            -f sector="$SECTOR" -f tier="$TIER" -f limit="$LIMIT" -f engine="$ENGINE" \
+            --repo "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

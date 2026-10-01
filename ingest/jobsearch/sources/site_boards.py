@@ -6795,6 +6795,10 @@ class MandarinOrientalAdapter:
         r = next((x for x in self._rows() if x["rid"] == rid), None)
         if r is None:
             return None
+        # per-row pacing: the platform's anti-bot escalates on bursts
+        # (202 shells); the details phase's default sleep is too fast
+        # for this board. ~0.9s/row ≈ 27s for the full 30-row board.
+        time.sleep(0.9)
         html = _fetch_text_resilient(r["url"],
                                   f"ats:mo:{self.org}:{rid}", self.cfg)
         info = _ld_jobposting(html)

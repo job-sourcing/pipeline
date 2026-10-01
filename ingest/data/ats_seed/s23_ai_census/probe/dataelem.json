@@ -1,0 +1,29 @@
+{
+ "brand": "DataElem",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:07:58.892Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "dataelem",
+   "spec": "feishuhire:dataelem",
+   "title": "加入北京数据项素智能科技有限公司"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:dataelem",
+  "platform": "feishu",
+  "title": "加入北京数据项素智能科技有限公司",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入北京数据项素智能科技有限公司",
+  "brand": "DataElem",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

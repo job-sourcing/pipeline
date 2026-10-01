@@ -1,0 +1,149 @@
+{
+ "brand": "DJI",
+ "tier": "probe_A",
+ "lca": "DJI TECHNOLOGY INC.",
+ "ts": "2026-10-01T12:05:58.415Z",
+ "candidates": [
+  {
+   "url": "https://careers.dji.com/zh-CN",
+   "title": "首页 - DJI 大疆招聘",
+   "status": 200,
+   "bytes": 54148,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "大疆官方招聘平台。社会招聘、校园招聘、实习机会，大疆最新招聘信息尽在这里。加入我们，一起把想象，变成世界现象。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.dji.com/zh-CN/campus",
+   "title": "校园招聘 - DJI 大疆招聘",
+   "status": 200,
+   "bytes": 49119,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "DJI 大疆 2027 \" 拓疆者 \" 校园招聘 - 数字管理构建者计划已开启 New DJI 大疆 2027 \" 拓疆者 \" 校园招聘热招职位一览 New DJI 大疆 2027 \" 拓疆者 \" 校园招聘网申开启 DJI 大疆 2027 \" 拓疆者 \" 校园招聘常见问题 DJI 大疆 2026 高校光学设计大赛作品提",
+   "backend": "direct"
+  },
+  {
+   "url": "https://apply.careers.dji.com/",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "2026年DJI 大疆社会招聘正在进行，点击申请职位",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Home-DJI Recruits Genius",
+   "u": "https://we.dji.com/index_en.html",
+   "s": "Careers at DJI We are a team of designers, inventors, creators and innovators, but above all we are a team of dreamers."
+  },
+  {
+   "t": "首页 - DJI 大疆招聘 - careers.dji.com",
+   "u": "https://careers.dji.com/zh-CN",
+   "s": "大疆官方招聘平台。社会招聘、校园招聘、实习机会，大疆最新招聘信息尽在这里。加入我们，一起把想象，变成世界现象。"
+  },
+  {
+   "t": "校园招聘 - DJI 大疆招聘 - careers.dji.com",
+   "u": "https://careers.dji.com/zh-CN/campus",
+   "s": "DJI 大疆 2027 \" 拓疆者 \" 校园招聘 - 数字管理构建者计划已开启 New DJI 大疆 2027 \" 拓疆者 \" 校园招聘热招职位一览 New DJI 大疆 2027 \" 拓疆者 \" 校园招聘网申开启 DJI 大疆 2027 \" 拓疆者 \" 校园招聘常见问题 DJI 大疆 2026 高校光学设计大赛作品提"
+  },
+  {
+   "t": "社会招聘 - Dji 大疆招聘",
+   "u": "https://apply.careers.dji.com/",
+   "s": "2026年DJI 大疆社会招聘正在进行，点击申请职位"
+  },
+  {
+   "t": "20,000+ Dji jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/dji-jobs-worldwide",
+   "s": "Today's top 20,000+ Dji jobs in Worldwide. Leverage your professional network, and get hired. New Dji jobs added daily."
+  },
+  {
+   "t": "Dji Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Dji",
+   "s": "Find out what works well at Dji from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for p"
+  },
+  {
+   "t": "DJI - LinkedIn",
+   "u": "https://www.linkedin.com/company/dji",
+   "s": "DJI is the global leader in developing and manufacturing innovative drone and camera technology for commercial and recreational use. DJI was founded and is run "
+  },
+  {
+   "t": "Dji Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/dji-jobs",
+   "s": "Find your ideal job at Jobsdb with 2 Dji jobs found in Hong Kong. View all our Dji vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Home-DJI Recruits Genius",
+   "u": "https://we.dji.com/index_en.html",
+   "s": "DJI advocates the values of \"promote the common good, look first from within, seek truth with conviction, keep pursuing the right goals toward perfection, adopt"
+  },
+  {
+   "t": "Dji Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/dji-jobs",
+   "s": "Find your ideal job at Jobsdb with 2 Dji jobs found in Hong Kong. View all our Dji vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Jobs-DJI Recruits Genius",
+   "u": "https://we.dji.com/jobs_en.html",
+   "s": "Work at DJI Locations Roles If you cannot find matched position, you can also send your resume to hr@dji.com"
+  },
+  {
+   "t": "Dji Full Time Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/dji-jobs/full-time",
+   "s": "Find your ideal job at Jobsdb with 2 Full Time Dji jobs found in Hong Kong. View all our Dji vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "首页 - Dji 大疆招聘",
+   "u": "https://careers.dji.com/zh-CN",
+   "s": "大疆官方招聘平台。社会招聘、校园招聘、实习机会，大疆最新招聘信息尽在这里。加入我们，一起把想象，变成世界现象。"
+  },
+  {
+   "t": "20,000+ Dji jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/dji-jobs-worldwide",
+   "s": "Today's top 20,000+ Dji jobs in Worldwide. Leverage your professional network, and get hired. New Dji jobs added daily."
+  },
+  {
+   "t": "DJI Hong Kong Jobs in Hong Kong - Sep 2026 | CTgoodjobs",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/DJI-hong-kong-jobs",
+   "s": "Explore 0 DJI Hong Kong jobs in Hong Kong. Browse through all our new daily-updated DJI Hong Kong job listing now!"
+  },
+  {
+   "t": "Urgent! Dji jobs - September 2026 (with Salaries!) - Jooble",
+   "u": "https://jooble.org/jobs-dji",
+   "s": "Active 72 vacancies • Dji jobs • Competitive salary • Full-time, temporary, and part-time jobs • Job email alerts • Find Dji jobs in USA and abroad • Start your"
+  },
+  {
+   "t": "Home-DJI Recruits Genius",
+   "u": "https://we.dji.com/index_en.html",
+   "s": "Careers at DJI We are a team of designers, inventors, creators and innovators, but above all we are a team of dreamers."
+  },
+  {
+   "t": "Dji Jobs in Hong Kong - Sep 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/dji-jobs",
+   "s": "Find your ideal job at Jobsdb with 2 Dji jobs found in Hong Kong. View all our Dji vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Jobs-DJI Recruits Genius",
+   "u": "https://we.dji.com/jobs_en.html",
+   "s": "Work at DJI Locations Roles If you cannot find matched position, you can also send your resume to hr@dji.com"
+  },
+  {
+   "t": "首页 - Dji 大疆招聘",
+   "u": "https://careers.dji.com/zh-CN",
+   "s": "大疆官方招聘平台。社会招聘、校园招聘、实习机会，大疆最新招聘信息尽在这里。加入我们，一起把想象，变成世界现象。"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

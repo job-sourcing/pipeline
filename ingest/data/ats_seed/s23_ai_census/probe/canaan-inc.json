@@ -1,0 +1,16 @@
+{
+ "brand": "Canaan Inc",
+ "tier": "probe_A",
+ "lca": "CANAAN US INC.",
+ "ts": "2026-10-01T12:02:56.816Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://careers.canaan.com/companies",
+  "platform": "custom",
+  "title": "Companies | Canaan Partners Job Board",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

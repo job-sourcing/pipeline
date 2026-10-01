@@ -564,7 +564,12 @@ async function main () {
   const queue = JSON.parse(readFileSync(queuePath, 'utf8'))
   const list = mode === 'identity' ? queue.wire_now : (queue[tier] || [])
   const slice = list.slice(offset, offset + limit)
-  const zai = await ZAI.create()
+  // S23: zai is OPTIONAL — the kit engine covers search, and identity
+  // judgments are adjudicated by sub-agents from evidence (the S23
+  // no-zai-quota directive). Guarded lazy init so GHA runs (no creds)
+  // never crash at startup.
+  let zai = null
+  const getZai = async () => { if (!zai) { try { zai = await ZAI.create() } catch { zai = { unavailable: true } } } return zai }
 
   for (const rec of slice) {
     const f = `${PROBE}/${slugify(rec.brand) || slugify(rec.name)}.json`
@@ -580,7 +585,7 @@ async function main () {
     }
     let out
     try {
-      out = mode === 'identity' ? await probeIdentity(rec, zai) : await probeSurface(rec, zai, args.search === 'false')
+      out = mode === 'identity' ? await probeIdentity(rec, await getZai()) : await probeSurface(rec, await getZai(), args.search === 'false')
     } catch (e) { out = { brand: rec.brand, err: String(e).slice(0, 200) } }
     writeFileSync(f, JSON.stringify(out, null, 1))
     const best = out.best ? (out.best.spec || out.best.platform || out.best.url) : (out.verdict || 'err')

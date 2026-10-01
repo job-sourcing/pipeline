@@ -1,0 +1,149 @@
+{
+ "brand": "CloudWalk",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:04:43.250Z",
+ "candidates": [
+  {
+   "url": "https://lp.cloudwalk.io/jobs",
+   "title": "Work with us — CloudWalk",
+   "status": 200,
+   "bytes": 43442,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We are building a global payment network. Explore open roles across engineering, product, design, finance, and more — and find your place in the wolfpack.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://newjob.tech/company/cloudwalk",
+   "title": "",
+   "status": 200,
+   "bytes": 1552,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "26 open jobs at CloudWalk — salaries, visa sponsorship and remote filters. Updated 2026-07-04 from their career site.",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://www.cloudwalk.com/en/join.html",
+   "title": "Join Us | CloudWalk Technology Co., Ltd.",
+   "status": 200,
+   "bytes": 41005,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Clear Career Development Path We have a well-defined promotion channel and talent development system, including core project experience, mentorship, job rotatio",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Work with us — CloudWalk",
+   "u": "https://lp.cloudwalk.io/jobs",
+   "s": "We are building a global payment network. Explore open roles across engineering, product, design, finance, and more — and find your place in the wolfpack."
+  },
+  {
+   "t": "CloudWalk, Inc.: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/cloudwalk-inc/jobs",
+   "s": "CloudWalk, Inc. | 59,806 followers on LinkedIn. We are the next generation payment network | CloudWalk is a technology company that empowers individuals and sma"
+  },
+  {
+   "t": "Join Us | CloudWalk Technology Co., Ltd.",
+   "u": "https://www.cloudwalk.com/en/join.html",
+   "s": "Clear Career Development Path We have a well-defined promotion channel and talent development system, including core project experience, mentorship, job rotatio"
+  },
+  {
+   "t": "Cloudwalk Careers | Remote, Onsite, Hybrid | 42 Open Positions | August ...",
+   "u": "https://jobera.com/employer/cloudwalk/",
+   "s": "CloudWalk is a global financial technology company that pioneers AI and blockchain-driven solutions, including payment processing and digital banking, thro…"
+  },
+  {
+   "t": "CloudWalk - Remote Work From Home Jobs & Careers | FlexJobs",
+   "u": "https://www.flexjobs.com/remote-jobs/company/cloudwalk",
+   "s": "Find remote work from home jobs and careers with CloudWalk. Get a better remote job search with FlexJobs today!"
+  },
+  {
+   "t": "CloudWalk - Remote",
+   "u": "https://remote.com/jobs/cloudwalk-c12rfz8c",
+   "s": "Explore open roles at global companies. Enjoy a more transparent job search."
+  },
+  {
+   "t": "Cloudwalk Careers - Jobs & Open Positions 2026 | Jobhyre",
+   "u": "https://jobhyre.com/companies/cloudwalk/",
+   "s": "Explore career opportunities at Cloudwalk. Browse current job openings, company culture, and apply to positions at Cloudwalk. Find your next role today."
+  },
+  {
+   "t": "CloudWalk Inc.",
+   "u": "https://www.cloudwalk.io/",
+   "s": "CloudWalk, Inc. builds the intelligence layer where money, software, and trust converge. One foundation, three brands: InfinitePay, Jim, and Pierre."
+  },
+  {
+   "t": "Work with us — CloudWalk",
+   "u": "https://lp.cloudwalk.io/jobs",
+   "s": "We are building a global payment network. Explore open roles across engineering, product, design, finance, and more — and find your place in the wolfpack."
+  },
+  {
+   "t": "CloudWalk, Inc.: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/cloudwalk-inc/jobs",
+   "s": "CloudWalk, Inc. | 59,806 followers on LinkedIn. We are the next generation payment network | CloudWalk is a technology company that empowers individuals and sma"
+  },
+  {
+   "t": "Cloudwalk Jobs in Worldwide (28,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/cloudwalk-jobs-worldwide",
+   "s": "Today's top 28,000+ Cloudwalk jobs in Worldwide. Leverage your professional network, and get hired. New Cloudwalk jobs added daily."
+  },
+  {
+   "t": "Cloudwalk Inc. Jobs at CloudWalk, Inc. in Worldwide (32 Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/cloudwalk-inc.-jobs-worldwide?f_C=3523168",
+   "s": "Today's top 32 Cloudwalk Inc. jobs at CloudWalk, Inc. in Worldwide. Leverage your professional network, and get hired. New Cloudwalk Inc. jobs added daily."
+  },
+  {
+   "t": "Cloudwalk Careers - Jobs & Open Positions 2026 | Jobhyre",
+   "u": "https://jobhyre.com/companies/cloudwalk/",
+   "s": "Explore career opportunities at Cloudwalk. Browse current job openings, company culture, and apply to positions at Cloudwalk. Find your next role today."
+  },
+  {
+   "t": "Cloudwalk Careers | Remote, Onsite, Hybrid | 42 Open Positions | August ...",
+   "u": "https://jobera.com/employer/cloudwalk/",
+   "s": "CloudWalk is a global financial technology company that pioneers AI and blockchain-driven solutions, including payment processing and digital banking, thro…"
+  },
+  {
+   "t": "CloudWalk - Remote",
+   "u": "https://remote.com/jobs/cloudwalk-c12rfz8c",
+   "s": "Explore open roles at global companies. Enjoy a more transparent job search."
+  },
+  {
+   "t": "CloudWalk - Remote Work From Home Jobs & Careers | FlexJobs",
+   "u": "https://www.flexjobs.com/remote-jobs/company/cloudwalk",
+   "s": "Find remote work from home jobs and careers with CloudWalk. Get a better remote job search with FlexJobs today!"
+  },
+  {
+   "t": "Work with us — CloudWalk",
+   "u": "https://lp.cloudwalk.io/jobs",
+   "s": "We are building a global payment network. Explore open roles across engineering, product, design, finance, and more — and find your place in the wolfpack."
+  },
+  {
+   "t": "Cloudwalk Careers | Remote, Onsite, Hybrid | 42 Open Positions | August ...",
+   "u": "https://jobera.com/employer/cloudwalk/",
+   "s": "At CloudWalk, Attraction & Selection is more than hiring—it's about building the systems, processes, and experiences that help us attract exceptional people at "
+  },
+  {
+   "t": "CloudWalk, Inc.: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/cloudwalk-inc/jobs",
+   "s": "CloudWalk, Inc. | 59,806 followers on LinkedIn. We are the next generation payment network | CloudWalk is a technology company that empowers individuals and sma"
+  },
+  {
+   "t": "CloudWalk Careers (26 open jobs) | NewJob",
+   "u": "https://newjob.tech/company/cloudwalk",
+   "s": "26 open jobs at CloudWalk — salaries, visa sponsorship and remote filters. Updated 2026-07-04 from their career site."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}
