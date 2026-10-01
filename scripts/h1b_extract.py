@@ -81,18 +81,38 @@ def _load_env():
 
 
 def _list_quarters(cfg) -> list[str]:
-    """Published FY_Q quarters off the DOL performance page (via the
-    supabase proxy — the page itself is small, well under the cap)."""
+    """Published FY_Q quarters off the DOL performance page. S23 fix:
+    the supabase proxy project went NXDOMAIN (retired) — the page fetch
+    now tries the proxy but falls back to DIRECT (GHA US egress reads
+    dol.gov fine; the proxy was only for Akamai-blocked sandboxes)."""
     import requests
-    q = urlencode({"url": DOL_PAGE, "mode": "raw"})
-    r = requests.get(
-        f"{cfg.supabase_proxy_url}?{q}",
-        headers={"Authorization": f"Bearer {cfg.supabase_proxy_token}",
-                 "x-region": "us-east-1"},
-        timeout=60)
-    r.raise_for_status()
+    text = ""
+    err = None
+    try:
+        q = urlencode({"url": DOL_PAGE, "mode": "raw"})
+        r = requests.get(
+            f"{cfg.supabase_proxy_url}?{q}",
+            headers={"Authorization":
+                     f"Bearer {cfg.supabase_proxy_token}",
+                     "x-region": "us-east-1"},
+            timeout=60)
+        r.raise_for_status()
+        text = r.text
+    except Exception as exc:          # proxy dead/blocked — direct next
+        err = exc
+    if not text:
+        try:
+            r2 = requests.get(DOL_PAGE, timeout=60, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; "
+                              "x64) AppleWebKit/537.36 Chrome/131"})
+            r2.raise_for_status()
+            text = r2.text
+        except Exception as exc2:
+            raise RuntimeError(
+                f"quarter discovery failed: proxy={err!r} "
+                f"direct={exc2!r}") from exc2
     found = sorted(set(f"FY{m.group(1)}_Q{m.group(2)}"
-                       for m in _FILE_RE.finditer(r.text)),
+                       for m in _FILE_RE.finditer(text)),
                    key=lambda s: (s.split("_")[0], s.split("_Q")[1]))
     return found
 

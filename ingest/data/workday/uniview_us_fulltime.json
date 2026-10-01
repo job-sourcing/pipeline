@@ -1,0 +1,86 @@
+{
+ "board": "custom:uniview",
+ "company": "Uniview",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-01",
+ "count": 2,
+ "details_merged": 2,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 0,
+ "rows": [
+  {
+   "reqId": "sales-engineer-based-in-usa-canada",
+   "title": "Sales Engineer(Based in USA/Canada)",
+   "company": "Uniview",
+   "url": "https://www.uniview.com/us/About_Us/Career/",
+   "externalPath": "/sales-engineer-based-in-usa-canada",
+   "locationsText": "USA/Canada",
+   "postedOn": "",
+   "timeType": "",
+   "bulletFields": [
+    "sales-engineer-based-in-usa-canada"
+   ],
+   "ats": "uniview",
+   "detail": {
+    "title": "Sales Engineer(Based in USA/Canada)",
+    "location": "USA/Canada",
+    "additionalLocations": [],
+    "jobDescription": "Sales Engineer(Based in USA/Canada)",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://www.uniview.com/us/About_Us/Career/",
+    "jobReqId": "sales-engineer-based-in-usa-canada",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Uniview",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "sales-representative-based-in-usa-canada",
+   "title": "Sales Representative(Based in USA/Canada)",
+   "company": "Uniview",
+   "url": "https://www.uniview.com/us/About_Us/Career/",
+   "externalPath": "/sales-representative-based-in-usa-canada",
+   "locationsText": "USA/Canada",
+   "postedOn": "",
+   "timeType": "",
+   "bulletFields": [
+    "sales-representative-based-in-usa-canada"
+   ],
+   "ats": "uniview",
+   "detail": {
+    "title": "Sales Representative(Based in USA/Canada)",
+    "location": "USA/Canada",
+    "additionalLocations": [],
+    "jobDescription": "Sales Representative(Based in USA/Canada)",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://www.uniview.com/us/About_Us/Career/",
+    "jobReqId": "sales-representative-based-in-usa-canada",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Uniview",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

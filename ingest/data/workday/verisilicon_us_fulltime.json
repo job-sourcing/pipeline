@@ -1,0 +1,86 @@
+{
+ "board": "custom:verisilicon",
+ "company": "VeriSilicon",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-01",
+ "count": 2,
+ "details_merged": 2,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 0,
+ "rows": [
+  {
+   "reqId": "sales",
+   "title": "Sales",
+   "company": "VeriSilicon",
+   "url": "https://www.verisilicon.com/en/Careers",
+   "externalPath": "/sales",
+   "locationsText": "San Jose, CA",
+   "postedOn": "",
+   "timeType": "",
+   "bulletFields": [
+    "sales"
+   ],
+   "ats": "verisilicon",
+   "detail": {
+    "title": "Sales",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "Descriptions\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\nRelevant Experience: Proven sales or business development experience in Silicon IP and SoC Design Services and/or in OEM systems industry.\nThis is a senior-level, position within the North America Sales Team that will focus on developing new businesses and manage existing business at OEM system and semiconductor companies in the North America market.\nQualified candidates must possess a strong ability to develop and build business engagements, comprehend and convey technical customer product requirements, have excellent customer management skills, and proven experience in negotiating and closing major business opportunities.\nCandidates must be comfortable working across multi-national team environments.\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\nRequirements\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n    \n        \n            At least 5 years of experience in Silicon IP and SoC Design Services.\n        \n    \n    \n        \n            Preferred 3 years of direct sales and business development experience.\n        \n    \n    \n        \n            Proven experience forecasting and achieving quarterly revenue goals.\n        \n    \n    \n        \n            Ability in structuring, negotiating, and closing contracts for IP and Design Services business.\n        \n    \n    \n        \n            Excellent communication and teamwork skills.\n        \n    \n    \n        \n            Self-motivated and results-driven.\n        \n    \n    \n        \n            Creative business thinking.\n        \n    \n    \n        \n            Knowledge of end-to-end chip SoC development methods is a strong plus.\n        \n    \n    \n        \n            Experience with consumer, industrial, or automotive programs a strong plus.\n        \n    \n    \n    Please submit your resume to \nUS.HR@verisilicon.com\n for consideration.",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://www.verisilicon.com/en/Careers",
+    "jobReqId": "sales",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VeriSilicon",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "technical-customer-interface-success-manager-ae",
+   "title": "Technical Customer Interface & Success Manager/AE",
+   "company": "VeriSilicon",
+   "url": "https://www.verisilicon.com/en/Careers",
+   "externalPath": "/technical-customer-interface-success-manager-ae",
+   "locationsText": "San Jose, CA",
+   "postedOn": "",
+   "timeType": "",
+   "bulletFields": [
+    "technical-customer-interface-success-manager-ae"
+   ],
+   "ats": "verisilicon",
+   "detail": {
+    "title": "Technical Customer Interface & Success Manager/AE",
+    "location": "San Jose, CA",
+    "additionalLocations": [],
+    "jobDescription": "Descriptions\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n    \n        \n            Serve as the primary technical interface between customers and VeriSilicon internal teams for ASIC, SoC, IP licensing, and turnkey design service engagements\n        \n    \n    \n        \n            Support pre-sales and post-sales customer activities including technical presentations, solution alignment, proposal reviews, and issue resolution\n        \n    \n    \n        \n            Work closely with Sales teams to support new business development opportunities in North America\n        \n    \n    \n        \n            Coordinate with worldwide engineering teams to define schedules, deliverables, resource planning, and project execution milestones\n        \n    \n    \n        \n            Drive customer core team meetings involving cross-functional engineering teams\n        \n    \n    \n        \n            Support NPI (New Product Introduction) programs from pre-silicon through qualification and production ramp\n        \n    \n    \n        \n            Translate customer technical requirements into actionable engineering deliverables\n        \n    \n    \n        \n            Track and manage project schedules, risks, dependencies, and customer deliverables\n        \n    \n    \n        \n            Interface with customers on technical topics including:\n        \n        \n            \n-  \nSoC architecture\n        \n        \n            \n-  \nIP integration\n        \n        \n            \n-  \nsystem performance\n        \n        \n            \n-  \npower optimization\n        \n        \n            \n-  \ndie size tradeoffs\n        \n        \n            \n-  \nproduct qualification\n        \n        \n            \n-  \nmanufacturing readiness\n        \n    \n    \n        \n            Coordinate issue escalation and resolution across engineering, operations, and customer teams\n        \n    \n    \n        \n            Assist customers with silicon bring-up, validation, and production ramp activities\n        \n    \n    \n        \n            Support customer presentations, documentation, and technical reviews\n        \n    \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\nRequirements\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n    \n        \n            BSEE a must, MSEE preferred\n        \n    \n    \n        \n            Preferred 3 years of experience in semiconductor industry with emphasis on:\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nSilicon IP\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nASIC/SoC development\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nDesign Services\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nSemiconductor systems\n        \n        \n            \t\t\n        \n    \n    \n        \n            5+ years of customer-facing experience in:\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nField Applications Engineering\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nTechnical Program Management\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nCustomer Engineering\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nTechnical Account Management\n        \n        \n            \t\t\n        \n    \n    \n        \n            Strong understanding of end-to-end chip development flow including:\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \narchitecture\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nRTL design\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nverification\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nphysical design\n        \n        \n            \t\t\n\t\t\n        \n        \n            \n\t\t\t\n-  \npackaging\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nsilicon validation\n        \n        \n            \n\t\t\n        \n        \n            \n\t\t\t\n-  \nproduction ramp\n        \n        \n            \n\t\t\n        \n    \n    \n        \n            Experience managing complex semiconductor projects in fast-paced global environments\n        \n    \n    \n        \n            Solid understanding of fabless semiconductor ecosystem and foundry flows\n        \n    \n    \n        \n            Experience coordinating worldwide hardware/software engineering teams\n        \n    \n    \n        \n            Strong communication and presentation skills with ability to interface effectively with customers and executives\n        \n    \n    \n        \n            Ability to manage schedules, priorities, risks, and technical deliverables across multiple programs\n        \n    \n    \n        \n            Self-directed, motivated, and results-driven\n        \n    \n    \n        \n            Strong teamwork and cross-functional collaboration skills\n        \n    \n    \n    Please submit your resume to \nUS.HR@verisilicon.com\n for consideration.",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://www.verisilicon.com/en/Careers",
+    "jobReqId": "technical-customer-interface-success-manager-ae",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "VeriSilicon",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

@@ -422,3 +422,26 @@ convention in `ingest/data/workday/` — see the v2.6 sibling table
 | `ascentage_us_fulltime` | `ats:wpjobboard:www.ascentage.com` | 4 | 6 matched | S22 adapter class (WP Simple Job Board REST — jobpost CPT + jobpost_location taxonomy); Ascentage Pharma (Suzhou/Nasdaq — 4 'Flexible, United States' rows of 7; stale-dated board noted at adjudication) |
 | `wuxibio_us_fulltime` | `ats:wuxibio:www.wuxibiologics.com` | 61 | 34 matched | S22 adapter class (WP + POST /server.php AJAX mirror of SAP SF — country[] array-key + cumulative postId pagination); WuXi Biologics (Cranbury NJ/Philadelphia — 61 US of 77 global; descriptions from div.applyD_right > div.text) |
 | `antintl_us_fulltime` | `ats:antintl:M7892` | 7 | 4 matched | S22 adapter class (hrcareersweb.antgroup.com POST API — the HARDCODED US city-code regions SUNNYVALE,USANYNYQEE,USADCDCWAS, pageSize max 49); Ant International (Alipay's global arm — Sunnyvale/NY; desc+requirement inline) |
+
+<!-- S23 wires: parked-six + AI-census waves (matched counts pending the LI corroborate drain) -->
+| `greenland_us_fulltime` | `custom:greenland` | 8 | 0 (0.0%) | S23; Drupal static field-collection — no ids/dates/descriptions (titles-only board, honest empty desc); rid=slug(loc+title) |
+| `jereh_us_fulltime` | `custom:jereh` | 6 | 0 (0.0%) | S23; JSP board + ajax_job.jsp detail fragments; month-year dates; americanjereh.com secondary surface |
+| `autel_us_fulltime` | `custom:autelenergy` | 3 | 0 (0.0%) | S23; Shopify PageFly accordion (curl_cffi fallback for the shopify 429); rid=slug(title) |
+| `aden_us_fulltime` | `custom:aden` | 2 | 0 (0.0%) | S23; WP hand-coded accordion — question string carries title+company+location; Akila US rows |
+| `mandarinoriental_us_fulltime` | `custom:mandarinoriental` | 30 | 0 (0.0%) | S23; Rails careers platform — 4 city-filter requests + per-job JSON-LD; 202 anti-bot guard (fail-loudly); +0.9s/row pacing |
+| `wuxiapptec_us_fulltime` | `custom:wuxiapptec` | 36 | 0 (0.0%) | S23; Django mirror of the bot-walled iCIMS board; rid=iCIMS job id; JSON-LD details |
+| `bosonai_us_fulltime` | `ats:lever:bosonai` | 4 | 0 (0.0%) | S23; HK-inc remote-first LLM co; Boson AI USA 4 LCA |
+| `hesai_us_fulltime` | `ats:feishuhire:kwh0jtf778` | 8 | 0 (0.0%) | S23; lidar leader; 141 posts, 8 US (Palo Alto/Sunnyvale); DoD 1260H flag noted |
+| `blacksesame_us_fulltime` | `custom:blacksesame` | 6 | 0 (0.0%) | S23; PbootCMS SSR cards; div.job-type holds a DATE (misnamed); 8 LCA |
+| `ecovacsus_us_fulltime` | `custom:ecovacsus` | 1 | 0 (0.0%) | S23; Astro shell + Next data island (buildId re-read per run; pageProps-direct root; 'type;' key typo) |
+| `accutar_us_fulltime` | `custom:accutar` | 10 | 0 (0.0%) | S23; WP page accordion (no CPT); desktop cards + mobile id map; 3-site location regex |
+| `hitgen_us_fulltime` | `custom:hitgen` | 1 | 0 (0.0%) | S23; ThinkPHP + ?location=US filter (USA variant is dirty-tagged to a China row!); popup detail pages |
+| `insilico_us_fulltime` | `custom:insilico` | 1 | 0 (0.0%) | S23; Tilda t849 accordion; the remote-global row (mission's remote-friendly class); UAE rows drop |
+| `orbbec_us_fulltime` | `custom:orbbec` | 1 | 0 (0.0%) | S23; Elementor inline-JD page — the S21 catalog class upgraded; US = resume-address (Troy MI LCA match); footer-boundary classification |
+| `insta360_us_fulltime` | `ats:feishuhire:arashivision` | 1 | 0 (0.0%) | S23; parent Arashi Vision; ARASHI IMAGE INC 3 LCA NY; multi-page list drains on watch |
+| `liauto_us_fulltime` | `ats:feishuhire:li` | 7 | 0 (0.0%) | S23; Li Auto 765-post board, 7 US; multi-page list drains on watch |
+| `meitu_us_fulltime` | `ats:feishuhire:meitu` | 1 | 0 (0.0%) | S23; board is Pixocial (Meitu overseas arm) |
+| `orionstar_us_fulltime` | `ats:feishuhire:orionstar` | 1 | 0 (0.0%) | S23; multi-loc sales row incl Washington D.C. (city-map fix) |
+| `visionnav_us_fulltime` | `custom:visionnav` | 15 | 0 (0.0%) | S23; data.php SSR list + detail pages; 19 LCA (Lawrenceville GA); North America/USA/Remote,US classification |
+| `verisilicon_us_fulltime` | `custom:verisilicon` | 2 | 0 (0.0%) | S23; Careers divUS tab (h3 sections); San Jose; email apply |
+| `uniview_us_fulltime` | `custom:uniview` | 2 | 0 (0.0%) | S23; US career page div.li blocks; 'Based in USA/Canada' titles |
