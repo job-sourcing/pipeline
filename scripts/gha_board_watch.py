@@ -254,10 +254,20 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
             "url": r.get("url") or "",
         }
         if is_site:
-            payload = site_boards.detail_payload(board_spec,
-                                                 r.get("externalPath", ""),
-                                                 cfg, country=country,
-                                                 time_type=time_type)
+            # S23: a detail fetch must NEVER escape the best-effort
+            # contract (a single workstream 429 failed a whole watch leg
+            # 2026-09-30). Transient HTTP errors surface as an
+            # error-status record (3-strike) exactly like an unreachable
+            # detail — the documented enrich_new behaviour.
+            try:
+                payload = site_boards.detail_payload(
+                    board_spec, r.get("externalPath", ""), cfg,
+                    country=country, time_type=time_type)
+            except Exception as exc:
+                print(f"[watch:{company}] detail fetch failed for "
+                      f"{r.get('reqId', '?')} ({exc!r}) — "
+                      "error-status record", flush=True)
+                payload = None
         else:
             payload = workday.detail_payload(
                 board, r.get("externalPath", ""), cfg)
@@ -767,10 +777,22 @@ def refetch_repost_details(flags: list[dict], board_spec: str,
         if not path:
             continue
         fetched += 1
-        if is_site:                     # S13 site dispatch (cached)
-            payload = site_boards.detail_payload(board_spec, path, cfg)
-        else:
-            payload = workday.detail_payload(board, path, cfg)
+        # S23: best-effort REALLY means best-effort — a transient 429/
+        # HTTPError during the re-fetch must leave the event at 'label'
+        # confidence, not crash the watch leg (the 2026-09-30 haidilao
+        # failure). Mirrors the enrich_new guard.
+        try:
+            if is_site:                 # S13 site dispatch (cached)
+                payload = site_boards.detail_payload(
+                    board_spec, path, cfg)
+            else:
+                payload = workday.detail_payload(board, path, cfg)
+        except Exception as exc:
+            print(f"[watch] repost re-fetch failed for "
+                  f"{ev.get('reqId', '?')} ({exc!r}) — 'label' stays",
+                  flush=True)
+            time.sleep(REPOST_REFETCH_SLEEP)   # politeness still applies
+            continue
         info = (payload or {}).get("jobPostingInfo") or {}
         new_sd = (info.get("startDate") or "").strip()
         if not new_sd:

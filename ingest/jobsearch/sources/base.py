@@ -7,6 +7,7 @@ crashes the pipeline; it reports a SourceResult with error set.
 from __future__ import annotations
 
 import re
+import time
 from datetime import datetime, timezone
 from html import unescape
 from dataclasses import dataclass
@@ -181,6 +182,36 @@ def is_within_days(date_str: Optional[str], days: int) -> bool:
         return True
 
 
+# Transient HTTP statuses worth ONE bounded retry round with backoff
+# (S23: a single workstream.us 429 on a detail page failed an entire
+# 62-board watch leg — transient rate-limit walls must not escape the
+# best-effort contracts). Tests that mock these functions never raise
+# these statuses, so behaviour is unchanged for them.
+_TRANSIENT_STATUSES = (429, 503)
+_TRANSIENT_RETRIES = 2          # initial attempt + 2 retries max
+_TRANSIENT_BACKOFF_S = (2.0, 4.0)  # sleep before retry 1 / retry 2
+
+
+def _request_with_transient_retry(method: str, url: str, *, params, json,
+                                   auth, headers, timeout: float):
+    """requests.request + bounded 429/503 backoff. Non-transient errors
+    and the final attempt surface exactly as before (raise_for_status is
+    the caller's job)."""
+    r = None
+    for attempt in range(_TRANSIENT_RETRIES + 1):
+        r = requests.request(method, url, params=params, json=json,
+                             auth=auth, timeout=timeout, headers=headers)
+        if r.status_code not in _TRANSIENT_STATUSES:
+            break
+        if attempt < _TRANSIENT_RETRIES:
+            wait = _TRANSIENT_BACKOFF_S[min(attempt, len(_TRANSIENT_BACKOFF_S) - 1)]
+            print(f"[fetch] transient {r.status_code} on {url[:100]} — "
+                  f"retry {attempt + 1}/{_TRANSIENT_RETRIES} after {wait}s",
+                  flush=True)
+            time.sleep(wait)
+    return r
+
+
 def fetch_json(url: str, *, params: dict | None = None, cfg: Config,
                headers: dict | None = None, method: str = "GET",
                json: dict | None = None, auth: tuple | None = None
@@ -192,17 +223,20 @@ def fetch_json(url: str, *, params: dict | None = None, cfg: Config,
     mockable seam instead of calling requests directly. Defaults keep the
     GET behaviour the existing 6 sources rely on unchanged.
     """
-    r = requests.request(method, url, params=params, json=json, auth=auth,
-                         timeout=cfg.http_timeout_s,
-                         headers=headers or {"User-Agent": USER_AGENT})
+    r = _request_with_transient_retry(
+        method, url, params=params, json=json, auth=auth,
+        headers=headers or {"User-Agent": USER_AGENT},
+        timeout=cfg.http_timeout_s)
     r.raise_for_status()
     return r.json()
 
 
 def fetch_text(url: str, *, params: dict | None = None, cfg: Config,
                headers: dict | None = None) -> str:
-    r = requests.get(url, params=params, timeout=cfg.http_timeout_s,
-                     headers=headers or {"User-Agent": USER_AGENT})
+    r = _request_with_transient_retry(
+        "GET", url, params=params, json=None, auth=None,
+        headers=headers or {"User-Agent": USER_AGENT},
+        timeout=cfg.http_timeout_s)
     r.raise_for_status()
     return r.text
 

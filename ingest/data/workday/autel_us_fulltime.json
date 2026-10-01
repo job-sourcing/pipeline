@@ -1,0 +1,122 @@
+{
+ "board": "custom:autelenergy",
+ "company": "Autel Energy",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-01",
+ "count": 3,
+ "details_merged": 3,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 0,
+ "rows": [
+  {
+   "reqId": "it-manager",
+   "title": "IT Manager",
+   "company": "Autel Energy",
+   "url": "https://autelenergy.us/pages/careers",
+   "externalPath": "/it-manager",
+   "locationsText": "North Carolina – United States",
+   "postedOn": "",
+   "timeType": "",
+   "bulletFields": [
+    "it-manager"
+   ],
+   "ats": "autelenergy",
+   "detail": {
+    "title": "IT Manager",
+    "location": "North Carolina – United States",
+    "additionalLocations": [],
+    "jobDescription": "IT Manager\nAutel Energy\nNorth Carolina – United States\nEstablished in 2004, Autel quickly became one of the world's leading providers of intelligent automotive products and services. Now, with the launch of our EV Charging and Energy Solutions product line, we offer solutions with the latest features, highest quality standards, and best-valued products in the industry. With the experience of our global brand, and an international presence in over 70 countries, Autel is committed to green energy solutions that combine hardware, software, and support for all our customers’ varying needs.\nGeneral:\nAutel, a global leader in automotive equipment is seeking an IT Manager. The IT Manager will be responsible for and accountable for the smooth running of our computer systems within the limits of requirements, specifications, costs, and timelines. You will supervise the implementation and maintenance of our company’s computing needs.\nRESPONSIBILITIES\n• Coordinate with Headquarters in China to manage information technology and computer systems.\n• Plan, organize, control, and evaluate IT and electronic data operations.\n• Manage IT staff by recruiting, training, and coaching employees, communicating job expectations, and appraising their performance.\n• Ensure security of data, network access and backup systems.\n• Act in alignment with user needs and system functionality to contribute to organizational policy.\n• Identify problematic areas and implement strategic solutions in time.\n• Audit systems and assess their outcomes.\n• Support in-house software.\n• Preserve assets, information security and control structures.\n• Ensure all computer systems are effectively backed up.\n• Assist in management of Access Control and security systems.\n• Handle annual budget and ensure cost effectiveness.\nQUALIFICATIONS\n• BS in Computer Science, MIS, or similar field.\n• + 5 years’ experience in IT Management with proven working experience with IT systems.\n• Good working knowledge of MS Office system set up.\n• Excellent knowledge of technical management, information analysis and of computer hardware/software systems.\n• Expertise in document file system management and backups.\nAPPLY NOW <button type=\"button\" class=\"sc-dcJtft kcDHMr pf-25_ pf-bg-lazy pf-anchor\" data-header-id=\"8ee7d19a-b7de-48f5-a914-9038e7c34473\" data-active=\"false\"",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://autelenergy.us/pages/careers",
+    "jobReqId": "it-manager",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Autel Energy",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "production-supervisor",
+   "title": "Production Supervisor",
+   "company": "Autel Energy",
+   "url": "https://autelenergy.us/pages/careers",
+   "externalPath": "/production-supervisor",
+   "locationsText": "North Carolina – United States",
+   "postedOn": "",
+   "timeType": "",
+   "bulletFields": [
+    "production-supervisor"
+   ],
+   "ats": "autelenergy",
+   "detail": {
+    "title": "Production Supervisor",
+    "location": "North Carolina – United States",
+    "additionalLocations": [],
+    "jobDescription": "Production Supervisor\nAutel Energy\nNorth Carolina – United States\nEstablished in 2004, Autel quickly became one of the world's leading providers of intelligent automotive products and services. Now, with the launch of our EV Charging and Energy Solutions product line, we offer solutions with the latest features, highest quality standards, and best-valued products in the industry. With the experience of our global brand, and an international presence in over 70 countries, Autel is committed to green energy solutions that combine hardware, software, and support for all our customers’ varying needs.\nGeneral:\nAutel, a global leader in automotive equipment, is seeking a Production Supervisor to oversee part of our assembly operations. The supervisor is an integral part of the manufacturing process. They must be competent and comprehend complex operations. They should also be able to optimize day-to-day activities while minimizing the costs. The goal is to ensure that production processes deliver products of maximum quality in a profitable manner.\nRESPONSIBILITIES\n•\tSet daily/weekly/monthly objectives and communicate them to associates.\n•\tOrganize workflow by assigning responsibilities and preparing schedules.\n•\tOversee and coach associates.\n•\tEnsure the safe use of equipment and schedule regular maintenance.\n•\tCheck production output according to specifications.\n•\tSubmit reports on performance and progress.\n•\tIdentify issues in efficiency and suggest improvements.\n•\tTrain new employees in how to safely use machinery and follow procedures.\n•\tEnforce strict safety guidelines and company standards.\nQUALIFICATIONS\n•\tProven experience as Production Supervisor or similar role\n•\tExperience in using various types of manufacturing machinery and tools.\n•\tAdvanced skills in MS Office\n•\tOrganizational and leadership abilities\n•\tCommunication and interpersonal skills\n•\tSelf-motivated with a results-driven approach\n•\tProblem-solving skills\n•\tLean understanding and practice, preferred.\n•\tHigh School Diploma: Degree in a technical, engineering or relevant field will be an advantage.\nAPPLY NOW\n<button type=\"button\" class=\"sc-dcJtft kcDHMr pf-33_ pf-bg-lazy pf-anchor\" data-header-id=\"f33db0ec-867d-490d-b57c-15fa36a411e1\" data-active=\"false\"",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://autelenergy.us/pages/careers",
+    "jobReqId": "production-supervisor",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Autel Energy",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "quality-technician",
+   "title": "Quality Technician",
+   "company": "Autel Energy",
+   "url": "https://autelenergy.us/pages/careers",
+   "externalPath": "/quality-technician",
+   "locationsText": "North Carolina – United States",
+   "postedOn": "",
+   "timeType": "",
+   "bulletFields": [
+    "quality-technician"
+   ],
+   "ats": "autelenergy",
+   "detail": {
+    "title": "Quality Technician",
+    "location": "North Carolina – United States",
+    "additionalLocations": [],
+    "jobDescription": "Quality Technician\nAutel Energy\nNorth Carolina – United States\nEstablished in 2004, Autel quickly became one of the world's leading providers of intelligent automotive products and services. Now, with the launch of our EV Charging and Energy Solutions product line, we offer solutions with the latest features, highest quality standards, and the best-valued products in the industry. With the experience of our global brand, and an international presence in over 70 countries, Autel is committed to green energy solutions that combine hardware, software, and support for all our customers’ varying needs.\nGeneral:\nAutel, a global leader in automotive equipment, is seeking a Quality Technician. In this role, you will get to show off your technical and mechanical skills while inspecting materials and products to ensure they meet proper standards. A quality technician's duties may include creating new techniques for inspecting and testing products to ensure they meet the necessary standards. This usually involves creating new procedures and tests to find flaws or defects in components or manufacturing materials. A quality control technician's objectives are to improve the cost-effectiveness of the production process, monitor output efficiency, and ensure that products are market ready. This is a great position for those looking to hone in on their skills and challenge their abilities as a valued member of a hard-working team.\nRESPONSIBILITIES\n•\tConduct analyses of raw materials, in-process materials, finished goods and environmental samples, checking for quality and that they meet necessary specifications.\n•\tMonitor testing procedures and processes to ensure tests performed are done according to item specifications, protocols, and standard test methods.\n•\tInterpret test results and compare them to the specifications and control limits in place while providing recommendations on the appropriateness of data.\n•\tComplete documentation necessary for the support of testing procedures, including inventory forms, data capture forms and equipment logbooks.\n•\tEnsure equipment is calibrated, validated, and maintained properly and ensure safety during operation of equipment.\n•\tPerform routine checks throughout the day to monitor assembly, packaging, and test.\n•\tAssist with training new technicians, teaching them the ins and outs of the job and the specifications, standards, and regulations to be met.\n•\tAssess analytical and testing methods and procedures to determine how they can be improved in the future.\nQUALIFICATIONS\n•\tHigh school diploma or equivalent\n•\tGood understanding of Quality standards and testing methodologies\n•\tExcellent verbal and written communication skills\n•\tAnalytical abilities with good attention to detail\n•\tGD&T knowledge and ability to read blueprints\n•\tTwo to three years of quality assurance experience\n•\tProficiency in Microsoft Word and Excel\n• Experience working with quality management systems (understanding of ISO 9001 & 14001 requirements is preferred)\nAPPLY NOW",
+    "timeType": "",
+    "startDate": "",
+    "externalUrl": "https://autelenergy.us/pages/careers",
+    "jobReqId": "quality-technician",
+    "postedOn": "",
+    "country": {
+     "descriptor": "US"
+    }
+   },
+   "hiringOrg": "Autel Energy",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

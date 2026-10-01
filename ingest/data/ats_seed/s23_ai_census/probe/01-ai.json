@@ -1,0 +1,29 @@
+{
+ "brand": "01.AI",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T11:49:30.134Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "01ai",
+   "spec": "feishuhire:01ai",
+   "title": "加入零一万物AGI"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:01ai",
+  "platform": "feishu",
+  "title": "加入零一万物AGI",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入零一万物AGI",
+  "brand": "01.AI",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

@@ -22,7 +22,7 @@ import { dirname, join } from 'node:path'
 const REPO = join(dirname(dirname(fileURLToPath(import.meta.url))), '')
 const DIR = join(REPO, 'ingest/data/ats_seed/s20_census')
 const QUEUE = `${DIR}/s20_queue.json`
-const PROBE = `${DIR}/probe`
+// PROBE is resolved per-run (S23 --dir support)
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
 
 // ---- aggregator / non-career domains (never a company's own surface) ----
@@ -555,7 +555,13 @@ async function main () {
   const limit = parseInt(args.limit || '15')
   const offset = parseInt(args.offset || '0')
 
-  const queue = JSON.parse(readFileSync(QUEUE, 'utf8'))
+  // S23 sector-expansion: --dir/--queue generalize the instrument
+  // beyond s20_census (defaults unchanged — the classic queue still
+  // works). Evidence files land under <dir>/probe/.
+  const censusDir = args.dir ? join(REPO, 'ingest/data/ats_seed', args.dir) : DIR
+  const queuePath = args.queue ? (args.queue.startsWith('/') ? args.queue : join(censusDir, args.queue)) : QUEUE
+  const PROBE = `${censusDir}/probe`
+  const queue = JSON.parse(readFileSync(queuePath, 'utf8'))
   const list = mode === 'identity' ? queue.wire_now : (queue[tier] || [])
   const slice = list.slice(offset, offset + limit)
   const zai = await ZAI.create()

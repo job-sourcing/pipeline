@@ -102,6 +102,21 @@ def main() -> int:
                 body = r.read().decode("utf-8", "replace")
                 out.update({"status": "ok", "http": r.status,
                             "final_url": r.geturl(), "bytes": len(body)})
+            # S23: WordPress route-index extraction — a wp-json/ root
+            # body IS the route table (205KB JSON listing every REST
+            # route); surface job/career-named routes directly
+            if "wp-json" in u and body.lstrip()[:1] == "{":
+                try:
+                    j = json.loads(body)
+                    job_routes = [r_ for r_ in (j.get("routes") or {})
+                                  if _re.search(
+                                      r"job|career|position|vacancy|"
+                                      r"recruit|hiring|opening", r_,
+                                      _re.I)]
+                    out["wp_routes_total"] = len(j.get("routes") or {})
+                    out["wp_job_routes"] = job_routes[:40]
+                except json.JSONDecodeError:
+                    pass
             t = _re.search(r"<title[^>]*>(.*?)</title>", body,
                            _re.S | _re.I)
             out["title"] = (t.group(1).strip()[:120] if t else "")

@@ -80,6 +80,7 @@ tests/test_pipeline_lock.py
 tests/test_prompts.py
 tests/test_regressions.py
 tests/test_reposts.py
+tests/test_s23_transient_resilience.py
 tests/test_s9_titlesearch.py
 tests/test_scoring.py
 tests/test_site_boards.py
