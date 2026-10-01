@@ -1,0 +1,9 @@
+rows: 36 (unique reqIds: 36)
+details merged: 36
+descriptions present: 36
+locations enumerated (not 'N Locations'): 36
+startDate present: 36
+signals: matched=24 no_match=12 blocked=0 not_checked=0
+location entries total (sum nLocations): 36
+similar-job edges: 0
+h1b wage bands: 2/36 rows banded (0 title+state, 2 title-only) from 18 LCA filings → wuxiapptec_us_fulltime.h1b_lca.csv

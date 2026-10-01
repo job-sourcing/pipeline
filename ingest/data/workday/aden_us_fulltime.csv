@@ -1,0 +1,275 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+project-manager-pmo-akila-remote-usa,"Project Manager (PMO) - Akila, Remote, USA",Aden Group,Aden Group,,,,,USA,1,USA,false,,US,,0,"Mission
+
+Akila is looking for a Project Manager for the deployment of Akila solution in the US as we rapidly scale there. You will work in a multidisciplinary team and an international environment, handling customer relationships for as long as the client uses the platform. You will lead a cross functional project team, from kick-off to end of roll-out, working closely with our US partner ecosystem including during the commercial process.
+
+Candidate will have great communication and relationship management skills; demonstrate rigor to drive projects to meet all the project requirements (client satisfaction, planification, quality of the delivery, budget). Must be comfortable in a startup environment where speed, hard work and fresh thinking are critical to success.
+
+Key Responsibilities
+
+- Take ownership of the customer relationship from project kick-off and for as long as the client uses the platform
+
+- Communicate proactively with the client on its satisfaction, identify new requirements and opportunities or dissatisfaction and churn risk.
+
+- Drive deployment projects from project kick-off till the “go live” with a high level of rigor and professionalism.
+
+- Support the customer in its operational objectives definition and coordinate the cross-functional team to achieve it.
+
+- Ensure client satisfaction as a top priority.
+
+- Deliver best quality deliverables on-time within the budget.
+
+- Document the project internally.
+
+- Define the project KPI’s and measure the project performance.
+
+-Support our partner’s ecosystem locally including as a solution expert during the commercial phase.
+
+Key Skills
+
+- Master’s degree or higher in Computer Science, IT, or a related field
+
+- Good verbal and written English proficiency.
+
+- At least 3 years working in a similar position. Previous Product-focused Startup experience
+
+- Ability to work both as a team leader and as an individual contributor, including occasionally writing and reviewing code.
+
+- Strong technical knowledge of large-scale software development, design, and architecture
+
+- Impressive problem-solving, leadership, communication, and interpersonal skills with an ability to work in a metrics-based, fast-paced, and dynamic team environment.
+
+- Experience delivering large-scale mobile and/or cloud apps Extra Bonus
+
+- Experience managing a team of 20+ engineers & experience working with distributed development teams.
+
+- Experience in backend/frontend development in AI, Java & JavaScript",2476,https://adengroup.com/career/,,,,,,,no_match,,2026-10-01,,2026-10-01,,,,true,0,,,,,,,,false,,,,,,
+technical-sales-manager-akila-north-american,"Technical Sales Manager-Akila, North American",Aden Group,Aden Group,,,,,North American,1,North American,false,,US,,0,"Mission
+
+Akila is looking for an Technical Sales Manager to work with ambition, creativity, and a passion for building our Akila platform to transform and implement sustainability into facility management. The candidate should be comfortable working in a fast-moving startup environment where speed, hard work, and fresh thinking are critical to success
+
+Key Responsibilities
+
+- Identify Opportunities. Identify and optimize opportunities for business growth and development within the relevant business lines to offer the new solution to existing and new clients and promote expansion of the business.
+
+- Provide technical pre-sale support & conduct pre-sales presentations and product demonstration if applicable, in support of Sales’ needs and requests.
+
+- Request for Proposal (RFP) support: Evaluate criteria, coordinate support for entire response process, create deliverable metrics, identify timelines, and coordinate resources. Ensure client needs are met by proposal content; contribute to proposal writing as needed.
+
+- Proposal delivery: QC, edit, and submit proposals as needed by sales, track status and send regular updates to team. Preparation of technical sales materials including collateral, quotation, timeline, project plan and solution proposals.
+
+- Lead Proof of Concept (POC) activities with customers for our platform and set up projects team to ensure success of POC project.
+
+- Proactively provide feedbacks to the Product and R&D and Commercial teams to drive the development and improvement of product direction and features based on customer experience and field observations.
+
+Key Skills
+
+- Solid network within the industry with a minimum of 8 years digital product presales & solution experience.
+
+- Good knowledge on building management/automation system and operation or technical/computer science background.
+
+- Excellent interpersonal skills and easy to connect and relate with. Able to “solution sell” with the ability to listen to your clients and understand what they really need rather than hard sell.
+
+- English language, both oral and written, is a must.
+
+Academic
+collaborations
+
+Don't miss your next opportunity
+
+Subscribe
+
+jQuery(document).ready(function($) {
+$('#subscription-form').on('submit', function(e) {
+e.preventDefault();
+var email = $('#subscriber-email').val();
+$.ajax({
+url: 'https://adengroup.com/wp-admin/admin-ajax.php',
+type: 'POST',
+data: {
+action: 'subscribe_email',
+email: email
+},
+beforeSend: function() {
+$('button[type=""submit""]').prop('disabled', true);
+},
+success: function(response) {
+if (response.success) {
+alert('Thank you for subscribing!');
+$('#subscriber-email').val('');
+} else {
+alert('Failed to subscribe. Please try again.');
+}
+},
+error: function() {
+alert('An error occurred. Please try again later.');
+},
+complete: function() {
+$('button[type=""submit""]').prop('disabled', false);
+}
+});
+});
+});
+
+Don’t see the right job? Subscribe to be notified the next time a job opens up.
+
+Life at Aden
+
+View more
+
+Read article
+
+Akila R
+&
+D grows in Vietnam, pioneering the future of smart buildings
+
+Aden Group advancing cognitive buildings and AI-powered efficiency...
+
+News
+Life@Aden
+Akila
+
+Read article
+
+Aden celebrating a landmark year of training
+&
+growth
+
+2024 Redefined Training & Development, Setting New Standards at Aden
+
+Life@Aden
+Training
+
+Read article
+
+Aden Group accelerates sustainability initiatives with comprehensive ESG training
+
+Aden Group accelerates sustainability initiatives with comprehensive...
+
+Life@Aden
+ESG
+Training
+
+Read article
+
+Akila R
+&
+D grows in Vietnam, pioneering the future of smart buildings
+
+Aden Group advancing cognitive buildings and AI-powered efficiency...
+
+News
+Life@Aden
+Akila
+
+Read article
+
+Aden celebrating a landmark year of training
+&
+growth
+
+2024 Redefined Training & Development, Setting New Standards at Aden
+
+Life@Aden
+Training
+
+Read article
+
+Aden Group accelerates sustainability initiatives with comprehensive ESG training
+
+Aden Group accelerates sustainability initiatives with comprehensive...
+
+Life@Aden
+ESG
+Training
+
+Follow us
+
+.popup-container {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 999;
+text-align: center;
+}
+.popup-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+$(document).ready(function() {
+$('.wechat-icon-link').click(function() {
+$('#wechat-popup').fadeIn();
+});
+$('.popup-container').click(function(e) {
+if (e.target === this) {
+$(this).fadeOut();
+}
+});
+});
+
+Group
+
+Akila
+
+Aden Energies
+
+Aden Services
+
+NXpark by Aden
+
+Sitemap
+
+Home
+
+Career
+
+About
+
+Media
+
+Sustainability
+
+Contact
+
+Terms
+
+|
+
+Privacy policy
+
+© Aden Group 2026
+
+{""prefetch"":[{""source"":""document"",""where"":{""and"":[{""href_matches"":""/*""},{""not"":{""href_matches"":[""/wp-*.php"",""/wp-admin/*"",""/wp-content/uploads/*"",""/wp-content/*"",""/wp-content/plugins/*"",""/wp-content/themes/aden-group/*"",""/*\\?(.+)""]}},{""not"":{""selector_matches"":""a[rel~=\""nofollow\""]""}},{""not"":{""selector_matches"":"".no-prefetch, .no-prefetch a""}}]},""eagerness"":""conservative""}]}
+var HCaptchaMainObject = {""params"":""{\""sitekey\"":\""4d849146-96f4-494a-acfc-df7a06e8b78a\"",\""theme\"":\""light\"",\""size\"":\""invisible\"",\""hl\"":\""en\""}""};
+(function() {
+var expirationDate = new Date();
+expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+document.cookie = ""pll_language=en; expires="" + expirationDate.toUTCString() + ""; path=/; secure; SameSite=Lax"";
+}());
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+var wpcf7 = {
+""api"": {
+""root"": ""https:\/\/adengroup.com\/wp-json\/"",
+""namespace"": ""contact-form-7\/v1""
+},
+""cached"": 1
+};
+//# sourceURL=contact-form-7-js-before
+{""baseUrl"":""https://s.w.org/images/core/emoji/17.0.2/72x72/"",""ext"":"".png"",""svgUrl"":""https://s.w.org/images/core/emoji/17.0.2/svg/"",""svgExt"":"".svg"",""source"":{""concatemoji"":""https://adengroup.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.2""}}
+/*! This file is auto-generated */
+var e=""script#wp-emoji-settings"",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error(""Element missing: ""+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,""wpEmojiSettingsSupports""),o=[""flag"",""emoji""];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e
+{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement(""script"");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if(""object""==typeof e&&""number""==typeof e.timestamp&&(new Date).valueOf()
+{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],""flag""!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://adengroup.com/wp-includes/js/wp-emoji-loader.min.js",7807,https://adengroup.com/career/,,,,,,,no_match,,2026-10-01,,2026-10-01,,,,true,0,,,,,,,,false,,,,,,

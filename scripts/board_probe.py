@@ -102,6 +102,13 @@ def main() -> int:
                 body = r.read().decode("utf-8", "replace")
                 out.update({"status": "ok", "http": r.status,
                             "final_url": r.geturl(), "bytes": len(body)})
+            # S23b: XML sitemap parsing — a sitemap body lists <loc>
+            # URLs (or sub-sitemap indexes); surface them directly
+            if "<loc>" in body and ("sitemap" in u or
+                                    body.lstrip()[:5] == "<?xml"):
+                locs = _re.findall(r"<loc>\s*([^<\s]+)\s*</loc>",
+                                   body)
+                out["sitemap_locs"] = locs[:60]
             # S23: WordPress route-index extraction — a wp-json/ root
             # body IS the route table (205KB JSON listing every REST
             # route); surface job/career-named routes directly

@@ -1,0 +1,156 @@
+{
+ "brand": "BAAI",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T11:56:42.454Z",
+ "candidates": [
+  {
+   "url": "https://www.baai.ac.cn/jobs",
+   "title": "",
+   "status": 200,
+   "bytes": 12985,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "2026年6月13日，为期两天的2026第八届北京智源大会圆满落下帷幕。作为全球人工智能领域最具影响力的学术盛会之一，智源大会已连续成功举办八届，累计吸引14位图灵奖得主、上千位产学研顶尖专家亲临，辐射全球30多个国家和地区。",
+   "backend": "zenrows"
+  },
+  {
+   "url": "https://jobs.ctgoodjobs.hk/jobs/baai-international-program-manager-jobs",
+   "title": "Baai International Program Manager Jobs in Hong Kong - Oct 2026 | CTgoodjobs",
+   "status": 200,
+   "bytes": 780256,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore 51 Baai International Program Manager jobs in Hong Kong. Browse through all our new daily-updated Baai International Program Manager job listing now!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.baai.ac.cn/en/about-us",
+   "title": "BAAI智源研究院",
+   "status": 200,
+   "bytes": 1235,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "The Beijing Academy of Artificial Intelligence (abbreviated as \"BAAI\") is a non-profit new research and development institution established in November 2018. It",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Alibaba Group Careers",
+   "u": "https://careers.alibaba.com/",
+   "s": "Alibaba International Digital Commerce Group operates a portfolio of world-leading B2C e-commerce platforms—including AliExpress, Lazada, Trendyol, and Daraz—as"
+  },
+  {
+   "t": "BAAI Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Baai",
+   "s": "Find out what works well at BAAI from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for "
+  },
+  {
+   "t": "CAREERS | BAI, Inc.",
+   "u": "https://www.bai-inc.net/careers",
+   "s": "Build Your Career at BAI We hire the best in the industry and reward hard work. We promote from within and recognize those who go above and beyond. Within BAI, "
+  },
+  {
+   "t": "Baai Jobs in Worldwide (8 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/baai-jobs-worldwide",
+   "s": "Today's top 8 Baai jobs in Worldwide. Leverage your professional network, and get hired. New Baai jobs added daily."
+  },
+  {
+   "t": "BAAI Innovation Center",
+   "u": "https://www.baai.ac.cn/en/about-us",
+   "s": "The Beijing Academy of Artificial Intelligence (abbreviated as \"BAAI\") is a non-profit new research and development institution established in November 2018. It"
+  },
+  {
+   "t": "BAAI智源研究院",
+   "u": "https://www.baai.ac.cn/jobs",
+   "s": "2026年6月13日，为期两天的2026第八届北京智源大会圆满落下帷幕。作为全球人工智能领域最具影响力的学术盛会之一，智源大会已连续成功举办八届，累计吸引14位图灵奖得主、上千位产学研顶尖专家亲临，辐射全球30多个国家和地区。"
+  },
+  {
+   "t": "Employment | BAI",
+   "u": "https://baigroupllc.com/employment/",
+   "s": "We're always interested in hearing from talented professionals who complement or expand the environmental consulting services we provide. We also seek individua"
+  },
+  {
+   "t": "Baai International Program Manager Jobs in Hong Kong - Mar 2026 ...",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/baai-international-program-manager-jobs",
+   "s": "Explore 51 Baai International Program Manager jobs in Hong Kong. Browse through all our new daily-updated Baai International Program Manager job listing now!"
+  },
+  {
+   "t": "Baai Jobs in Worldwide (8 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/baai-jobs-worldwide",
+   "s": "Today's top 8 Baai jobs in Worldwide. Leverage your professional network, and get hired. New Baai jobs added daily."
+  },
+  {
+   "t": "Baai International Program Manager Jobs in Hong Kong - Mar 2026 ...",
+   "u": "https://jobs.ctgoodjobs.hk/jobs/baai-international-program-manager-jobs",
+   "s": "Explore 51 Baai International Program Manager jobs in Hong Kong. Browse through all our new daily-updated Baai International Program Manager job listing now!"
+  },
+  {
+   "t": "27,000+ Beijing Academy Of Artificial Intelligence(baai) jobs in Worldwide",
+   "u": "https://www.linkedin.com/jobs/beijing-academy-of-artificial-intelligence%28baai%29-jobs-worldwide",
+   "s": "Today's top 27,000+ Beijing Academy Of Artificial Intelligence (baai) jobs in Worldwide. Leverage your professional network, and get hired. New Beijing Academy "
+  },
+  {
+   "t": "Alibaba International Careers",
+   "u": "https://aidc-jobs.alibaba.com/home?lang=en",
+   "s": "Alibaba International Careers Official Website: Recruitment for Alibaba.com, AliExpress, Lazada, Daraz, and other international businesses. We offer global posi"
+  },
+  {
+   "t": "Jobsdb - Hong Kong's no. 1 jobs, employment, career and recruitment site",
+   "u": "https://hk.jobsdb.com/",
+   "s": "Search, browse and apply the latest Admin & HR, Banking, IT, Sales, Marketing and many other jobs in Hong Kong. Start your job search in Hong Kong at Jobsdb.com"
+  },
+  {
+   "t": "BAAI Insurance Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Baai-Insurance",
+   "s": "Find out what works well at BAAI Insurance from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  },
+  {
+   "t": "Job Search | Indeed",
+   "u": "https://hk.indeed.com/",
+   "s": "With Indeed, you can search all jobs online to find the next step in your career. With tools for job search, CVs, company reviews and more, were with you every "
+  },
+  {
+   "t": "Jobs in Hong Kong - Oct 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/jobs",
+   "s": "Find your ideal job at Jobsdb with 32798 jobs found in Hong Kong. View all our vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Baai Jobs in Worldwide (8 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/baai-jobs-worldwide",
+   "s": "Today's top 8 Baai jobs in Worldwide. Leverage your professional network, and get hired. New Baai jobs added daily."
+  },
+  {
+   "t": "BAAI Insurance Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Baai-Insurance",
+   "s": "Find out what works well at BAAI Insurance from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  },
+  {
+   "t": "BAI Careers Job Openings - GOVJOBS.PH",
+   "u": "https://govjobs.ph/csc-job-portal-type/bai-careers/",
+   "s": "The following government jobs might be applicable to you... DSWD Careers"
+  },
+  {
+   "t": "Beijing Academy of Artificial Intelligence(BAAI): Jobs - LinkedIn",
+   "u": "https://www.linkedin.com/company/beijingbaai/jobs",
+   "s": "Beijing Academy of Artificial Intelligence (BAAI) | 1,884 followers on LinkedIn. BAAI is a non-profit organization engaged in AI research and development. We ai"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.baai.ac.cn/jobs",
+  "platform": "moka",
+  "title": ""
+ },
+ "verdict": "marker_surface"
+}

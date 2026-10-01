@@ -1,0 +1,154 @@
+{
+ "brand": "Airdoc",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T11:53:13.014Z",
+ "candidates": [
+  {
+   "url": "http://website.airdoc.com/career",
+   "title": "Careers - 鹰瞳Airdoc",
+   "status": 200,
+   "bytes": 33845,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Airdoc — make health accessible everywhere. Open roles in tech, product, marketing.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.airdoc.com/career",
+   "title": "Careers - 鹰瞳Airdoc",
+   "status": 200,
+   "bytes": 33845,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "加入鹰瞳科技,一起让健康无处不在。开放技术、产品、市场、运营等多类岗位。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.airdoc.com/join-us?name=careers",
+   "title": "鹰瞳Airdoc-全球视网膜影像人工智能领域的领导者-鹰瞳科技官网",
+   "status": 404,
+   "bytes": 11195,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "鹰瞳Airdoc是全球视网膜影像人工智能领域的领导者和先行者，公司基于视网膜影像人工智能识别的早期检测、辅助诊断及健康风险评估解决方案，通过视网膜影像、多模态数据分析以及人工智能深度学习算法。",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - 鹰瞳Airdoc",
+   "u": "http://website.airdoc.com/career",
+   "s": "Join Airdoc — make health accessible everywhere. Open roles in tech, product, marketing."
+  },
+  {
+   "t": "招贤纳士 - 鹰瞳Airdoc",
+   "u": "https://www.airdoc.com/career",
+   "s": "加入鹰瞳科技,一起让健康无处不在。开放技术、产品、市场、运营等多类岗位。"
+  },
+  {
+   "t": "Aidoc Job Opportunities",
+   "u": "https://www.aidoc.com/about/careers/",
+   "s": "Aidoc is looking for extraordinary people to join our industry-leading team that's building cutting-edge artificial intelligence to reshape the future of health"
+  },
+  {
+   "t": "Airdoc鹰瞳科技",
+   "u": "https://www.airdoc.com/join-us?name=careers",
+   "s": "鹰瞳Airdoc是全球视网膜影像人工智能领域的领导者和先行者，公司基于视网膜影像人工智能识别的早期检测、辅助诊断及健康风险评估解决方案，通过视网膜影像、多模态数据分析以及人工智能深度学习算法。"
+  },
+  {
+   "t": "鹰瞳Airdoc-全球视网膜影像人工智能领域的领导者-鹰瞳科技官网",
+   "u": "https://website.airdoc.com/career-detail",
+   "s": "鹰瞳科技（Airdoc），致力于\"让健康无处不在\"，是全球视网膜影像人工智能领域的领导者和先行者。为人们提供慢性病早筛及管理、近视防控、抗压能力监测、斜弱视治疗等全方位的人工智能解决方案，也是国内第一家荣获NMPA眼科人工智能三类辅助诊断医疗器械注册的企业。"
+  },
+  {
+   "t": "Airdoc Technology Inc - LinkedIn",
+   "u": "https://hk.linkedin.com/company/airdoc-technology-inc",
+   "s": "Airdoc Technology Inc | 883 followers on LinkedIn. More Intelligence , Better Care | Airdoc Technology (\"Airdoc\") was founded in September 2015. As a global mar"
+  },
+  {
+   "t": "「鹰瞳招聘」-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/735e815faeaa09ad1nd_3Nu4EVA~.html",
+   "s": "Airdoc成立于2015年9月，是医疗人工智能领先企业，总部位于北京。自成立以来深受资本青睐，累计获得中信、平安、复星等知名机构多轮投资，已和全球众多医疗机构深度合作，在北京、上海、广州、西雅图设有研发中心和分支机构，在墨尔本与Monash大学合作设立了联合实验室。 公司自主研发的AI ..."
+  },
+  {
+   "t": "Airdoc",
+   "u": "https://world.airdoc.com/",
+   "s": "Health Risk Assessment Airdoc AI-empowered health assessment could provide evaluation of 55 risks related to chronic diseases via single retinal image."
+  },
+  {
+   "t": "Careers - 鹰瞳Airdoc",
+   "u": "http://website.airdoc.com/career",
+   "s": "Join Airdoc — make health accessible everywhere. Open roles in tech, product, marketing."
+  },
+  {
+   "t": "招贤纳士 - 鹰瞳Airdoc",
+   "u": "https://www.airdoc.com/career",
+   "s": "加入鹰瞳科技,一起让健康无处不在。开放技术、产品、市场、运营等多类岗位。"
+  },
+  {
+   "t": "Airdoc Technology Inc - LinkedIn",
+   "u": "https://www.linkedin.com/company/airdoc-technology-inc",
+   "s": "Airdoc Technology (\"Airdoc\") was founded in September 2015. As a global market leader and pioneer in the field of AI-based retinal imaging, it endeavors to prov"
+  },
+  {
+   "t": "职位详情 - 鹰瞳Airdoc",
+   "u": "https://www.airdoc.com/career-detail?id=1",
+   "s": "鹰瞳科技招聘职位详情。 我们秉承让健康无处不在的使命愿景，拓展公立医院临床科室、社区诊所、体检中心、保险机构、视光中心、药店、政府等不同行业场景的可能性，帮助客户实现价值是我们团队的使命。"
+  },
+  {
+   "t": "Airdoc",
+   "u": "https://world.airdoc.com/",
+   "s": "Health Risk Assessment Airdoc AI-empowered health assessment could provide evaluation of 55 risks related to chronic diseases via single retinal image."
+  },
+  {
+   "t": "「鹰瞳招聘」-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/735e815faeaa09ad1nd_3Nu4EVA~.html",
+   "s": "Airdoc成立于2015年9月，是医疗人工智能领先企业，总部位于北京。自成立以来深受资本青睐，累计获得中信、平安、复星等知名机构多轮投资，已和全球众多医疗机构深度合作，在北京、上海、广州、西雅图设有研发中心和分支机构，在墨尔本与Monash大学合作设立了联合实验室。 公司自主研发的AI ..."
+  },
+  {
+   "t": "Airdoc",
+   "u": "https://global.airdoc.com/",
+   "s": "Sign in Copyright © 2021 Airdoc Inc. All rights reserved."
+  },
+  {
+   "t": "8,000+ Airdoc jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/airdoc-jobs",
+   "s": "Today's top 8,000+ Airdoc jobs in United States. Leverage your professional network, and get hired. New Airdoc jobs added daily."
+  },
+  {
+   "t": "招贤纳士 - 鹰瞳Airdoc",
+   "u": "https://website.airdoc.com/career",
+   "s": "加入鹰瞳科技,一起让健康无处不在。开放技术、产品、市场、运营等多类岗位。"
+  },
+  {
+   "t": "Airdoc鹰瞳科技",
+   "u": "https://www.airdoc.com/join-us?name=careers",
+   "s": "鹰瞳Airdoc是全球视网膜影像人工智能领域的领导者和先行者，公司基于视网膜影像人工智能识别的早期检测、辅助诊断及健康风险评估解决方案，通过视网膜影像、多模态数据分析以及人工智能深度学习算法。"
+  },
+  {
+   "t": "Airdoc Technology Inc - LinkedIn",
+   "u": "https://www.linkedin.com/company/airdoc-technology-inc",
+   "s": "Airdoc Technology Inc | 882 followers on LinkedIn. More Intelligence , Better Care | Airdoc Technology (\"Airdoc\") was founded in September 2015. As a global mar"
+  },
+  {
+   "t": "「鹰瞳招聘」-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/735e815faeaa09ad1nd_3Nu4EVA~.html",
+   "s": "BOSS直聘为求职者提供2026年最新鹰瞳招聘，更有鹰瞳的公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，鹰瞳正在线直聘9条职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "http://website.airdoc.com/career",
+  "platform": "custom",
+  "title": "Careers - 鹰瞳Airdoc"
+ },
+ "verdict": "custom_surface"
+}

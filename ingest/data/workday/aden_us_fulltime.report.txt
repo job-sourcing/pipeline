@@ -1,0 +1,9 @@
+rows: 2 (unique reqIds: 2)
+details merged: 2
+descriptions present: 2
+locations enumerated (not 'N Locations'): 2
+startDate present: 0
+signals: matched=0 no_match=2 blocked=0 not_checked=0
+location entries total (sum nLocations): 2
+similar-job edges: 0
+h1b wage bands: 0/2 rows banded (0 title+state, 0 title-only) from 11 LCA filings → aden_us_fulltime.h1b_lca.csv

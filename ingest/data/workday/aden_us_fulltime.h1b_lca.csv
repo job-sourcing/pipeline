@@ -1,0 +1,12 @@
+﻿caseNumber,caseStatus,caseSubmitted,decisionDate,employerName,jobTitle,socCode,socTitle,fullTimePosition,wageFrom,wageTo,wageUnit,prevailingWage,pwUnit,worksiteCity,worksiteState,worksitePostalCode,annualizedWage,sourceFile
+I-200-24239-292011,Certified,,2024-08-30T00:00:00,"Aden Staff, Inc.",Software Engineer,15-1252.00,Software Developers,Y,130250,,Year,130250,Year,Fremont,CA,94538,130250,FY2024_Q4
+I-200-24241-301651,Certified,,2024-09-05T00:00:00,"Aden Staff, Inc.",Software Engineer,15-1252.00,Software Developers,Y,75,,Hour,74.81,Hour,Fremont,CA,94538,156000,FY2024_Q4
+I-200-24242-304763,Certified,,2024-09-06T00:00:00,"Aden Staff, Inc.",Computer Systems Analyst,15-1211.00,Computer Systems Analysts,Y,58,,Hour,57.11,Hour,Fremont,CA,94538,120640,FY2024_Q4
+I-203-24241-301641,Certified,,2024-09-05T00:00:00,"Aden Staff, Inc.",Software Applications Engineer,15-1252.00,Software Developers,Y,75,,Hour,74.81,Hour,fremont,CA,94538,156000,FY2024_Q4
+I-200-24275-376812,Certified,,2024-10-08T00:00:00,"Aden Staff, Inc.",Senior Machine Learning Engineer,15-2051.00,Data Scientists,Y,128500,,Year,128398,Year,Fremont,CA,94538,128500,FY2025_Q1
+I-200-25026-643165,Certified,,2025-01-31T00:00:00,"Aden Staff, Inc.",Technical Program Manager,15-1299.09,Information Technology Project Managers,Y,106000,,Year,105560,Year,Fremont,CA,94538,106000,FY2025_Q2
+I-200-25147-022061,Certified,,2025-06-03T00:00:00,"Aden Staff, Inc.",Software Engineer,15-1252.00,Software Developers,Y,60,,Hour,59.45,Hour,New York City,NY,10001,124800,FY2025_Q3
+I-200-25197-177864,Certified,,2025-07-23T00:00:00,"Aden Staff, Inc.",Java Developer,15-1252.00,Software Developers,Y,136000,,Year,135699,Year,Fremont,CA,94538,136000,FY2025_Q4
+I-200-25209-202536,Certified,,2025-08-04T00:00:00,"Aden Staff, Inc.",Software Engineer,15-1252.00,Software Developers,Y,136000,,Year,135699,Year,Fremont,CA,94538,136000,FY2025_Q4
+I-200-26120-856623,Certified,,2026-05-07T00:00:00,"Aden Staff, Inc.",Data Architect,15-1243.00,Database Architects,Y,71.5,,Hour,71.34,Hour,Portland,OR,97204,148720,FY2026_Q3
+I-200-26139-924933,Certified,,2026-05-26T00:00:00,"Aden Staff, Inc.",Computer Systems Analyst,15-1211.00,Computer Systems Analysts,Y,98758,,Year,98758,Year,Fremont,CA,94538-3144,98758,FY2026_Q3

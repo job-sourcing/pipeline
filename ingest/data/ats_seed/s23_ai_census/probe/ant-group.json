@@ -1,0 +1,154 @@
+{
+ "brand": "Ant Group",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T11:55:17.335Z",
+ "candidates": [
+  {
+   "url": "https://www.ant-intl.com/en/career/",
+   "title": "Join Us | Ant International",
+   "status": 200,
+   "bytes": 1373967,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Us World-changing careers at Ant International Join Us How your career with Ant International makes a global impact Search Jobs Discover Ant International'",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.ant-intl.com/en/job-search/",
+   "title": "Job Search | Ant International",
+   "status": 200,
+   "bytes": 1368526,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover career opportunities at Ant International. Search open roles across technology, product, operations, marketing, and more.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://ant-group.net/career",
+   "title": "ANT Group | Career",
+   "status": 200,
+   "bytes": 174773,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Ant Group: Where creativity meets education, media & HR solutions",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Us | Ant International",
+   "u": "https://www.ant-intl.com/en/career/",
+   "s": "Join Us World-changing careers at Ant International Join Us How your career with Ant International makes a global impact Search Jobs Discover Ant International'"
+  },
+  {
+   "t": "Job Search | Ant International",
+   "u": "https://www.ant-intl.com/en/job-search/",
+   "s": "Discover career opportunities at Ant International. Search open roles across technology, product, operations, marketing, and more."
+  },
+  {
+   "t": "antgroup.com",
+   "u": "https://talent.antgroup.com/home?chInfo=ch_official",
+   "s": "蚂蚁集团起步于2004年诞生的支付宝，源于一份为社会解决信任问题的初心，经过近二十年的发展，已成为世界领先的互联网开放平台。期待你的加入，让理想有回响!"
+  },
+  {
+   "t": "Ant Group - Home",
+   "u": "https://www.antgroup.com/en/",
+   "s": "Ant Group traces its roots back to Alipay, which was established in 2004 to create trust between online sellers and buyers. Over the years, Ant Group has grown "
+  },
+  {
+   "t": "Career - ANT Group",
+   "u": "https://ant-group.net/career",
+   "s": "Ant Group: Where creativity meets education, media & HR solutions"
+  },
+  {
+   "t": "香港 的 Ant Group 職位 - 9 月 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/zh/Ant-Group-jobs",
+   "s": "在 Jobsdb 搜尋理想職位，於 香港 找到 7 個 Ant Group 職位。立即查看所有 Ant Group 空缺，每日新增職位!"
+  },
+  {
+   "t": "Home - Ant Group",
+   "u": "https://www.antgroup.com/en/home",
+   "s": "Ant Group is an innovative technology provider that strives to bring the world inclusive, green, and sustainable services."
+  },
+  {
+   "t": "Ant Group Jobs in Hong Kong - Aug 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Ant-Group-jobs",
+   "s": "Find your ideal job on Jobsdb with 3 Ant Group jobs (3 at Ant Group) listed in Hong Kong. View all the Ant Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Join Us | Ant International",
+   "u": "https://www.ant-intl.com/en/career/",
+   "s": "Join Us World-changing careers at Ant International Join Us How your career with Ant International makes a global impact Search Jobs Discover Ant International'"
+  },
+  {
+   "t": "Ant Group Jobs in Hong Kong - Aug 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Ant-Group-jobs",
+   "s": "Find your ideal job on Jobsdb with 3 Ant Group jobs (3 at Ant Group) listed in Hong Kong. View all the Ant Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "香港 的 Ant Group 職位 - 9 月 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/zh/Ant-Group-jobs",
+   "s": "在 Jobsdb 搜尋理想職位，於 香港 找到 7 個 Ant Group 職位。立即查看所有 Ant Group 空缺，每日新增職位!"
+  },
+  {
+   "t": "Job Search | Ant International",
+   "u": "https://www.ant-intl.com/en/job-search/",
+   "s": "Discover career opportunities at Ant International. Search open roles across technology, product, operations, marketing, and more."
+  },
+  {
+   "t": "antgroup.com",
+   "u": "https://talent.antgroup.com/home?chInfo=ch_official",
+   "s": "蚂蚁集团起步于2004年诞生的支付宝，源于一份为社会解决信任问题的初心，经过近二十年的发展，已成为世界领先的互联网开放平台。期待你的加入，让理想有回响!"
+  },
+  {
+   "t": "Ant Group - Home",
+   "u": "https://www.antgroup.com/en/",
+   "s": "Ant Group traces its roots back to Alipay, which was established in 2004 to create trust between online sellers and buyers. Over the years, Ant Group has grown "
+  },
+  {
+   "t": "Ant Group Jobs in Hong Kong SAR (1,000+ Open Roles) | LinkedIn",
+   "u": "https://hk.linkedin.com/jobs/ant-group-jobs",
+   "s": "Today's top 1,000+ Ant Group jobs in Hong Kong SAR. Leverage your professional network, and get hired. New Ant Group jobs added daily."
+  },
+  {
+   "t": "talent.antgroup.com",
+   "u": "https://talent.antgroup.com/",
+   "s": "蚂蚁集团起步于2004年诞生的支付宝，源于一份为社会解决信任问题的初心，经过近二十年的发展，已成为世界领先的互联网开放平台。期待你的加入，让理想有回响!"
+  },
+  {
+   "t": "Join Us | Ant International",
+   "u": "https://www.ant-intl.com/en/career/",
+   "s": "Join Us World-changing careers at Ant International Join Us How your career with Ant International makes a global impact Search Jobs Discover Ant International'"
+  },
+  {
+   "t": "Ant Group Jobs in Hong Kong - Aug 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/Ant-Group-jobs",
+   "s": "Find your ideal job on Jobsdb with 3 Ant Group jobs (3 at Ant Group) listed in Hong Kong. View all the Ant Group vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "antgroup.com",
+   "u": "https://talent.antgroup.com/home?chInfo=ch_official",
+   "s": "蚂蚁集团起步于2004年诞生的支付宝，源于一份为社会解决信任问题的初心，经过近二十年的发展，已成为世界领先的互联网开放平台。期待你的加入，让理想有回响!"
+  },
+  {
+   "t": "Job Search | Ant International",
+   "u": "https://www.ant-intl.com/en/job-search/",
+   "s": "Discover career opportunities at Ant International. Search open roles across technology, product, operations, marketing, and more."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.ant-intl.com/en/job-search/",
+  "platform": "custom",
+  "title": "Job Search | Ant International"
+ },
+ "verdict": "custom_surface"
+}

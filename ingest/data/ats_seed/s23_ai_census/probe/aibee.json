@@ -1,0 +1,29 @@
+{
+ "brand": "Aibee",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T11:52:59.330Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "aibee",
+   "spec": "feishuhire:aibee",
+   "title": "欢迎加入Aibee"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:aibee",
+  "platform": "feishu",
+  "title": "欢迎加入Aibee",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "欢迎加入Aibee",
+  "brand": "Aibee",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

@@ -1,0 +1,154 @@
+{
+ "brand": "Axera",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T11:56:08.691Z",
+ "candidates": [
+  {
+   "url": "https://axera.digital/careers",
+   "title": "AxERA Digital — Global Technology Consulting & Digital Engineering",
+   "status": 200,
+   "bytes": 4365,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Build software that matters, with people who care how it's built We're always interested in meeting engineers, architects and technologists who take pri",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.axera.uk/contact/careers",
+   "title": "Axera | Careers",
+   "status": 200,
+   "bytes": 6612,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Work for us Careers at Axera For opportunities, speculative applications, and conversations about joining the Axera team.",
+   "backend": "direct"
+  },
+  {
+   "url": "http://zhaopin.axera-tech.com/alljob?c=-1",
+   "title": "爱芯科技招聘系统--全部职位",
+   "status": 200,
+   "bytes": 31951,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover career opportunities at Axera Tech with a variety of positions available for professionals, students, and interns.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | AxERA Digital",
+   "u": "https://axera.digital/careers",
+   "s": "Careers Build software that matters, with people who care how it's built We're always interested in meeting engineers, architects and technologists who take pri"
+  },
+  {
+   "t": "Axera | Careers",
+   "u": "https://www.axera.uk/contact/careers",
+   "s": "Work for us Careers at Axera For opportunities, speculative applications, and conversations about joining the Axera team."
+  },
+  {
+   "t": "爱芯元智半导体股份有限公司 - axera-tech.com",
+   "u": "https://axera-tech.com/en",
+   "s": "Axera Semiconductor Co., Ltd. (or Axera 0600.HK) is a global leader in AI inference SoC solutions. We specialize in delivering high-performance perception and c"
+  },
+  {
+   "t": "加入我们 | 爱芯元智半导体股份有限公司 - axera-tech.com",
+   "u": "https://www.axera-tech.com/zh-hans/join/",
+   "s": "法务咨询 legal@axera-tech.com 投诉举报 complaints@axera-tech.com 媒体联络 axerapr@axera-tech.com 算法生态合作"
+  },
+  {
+   "t": "AxERA Digital — Global Technology Consulting & Digital Engineering",
+   "u": "https://axera.digital/",
+   "s": "AxERA Digital is a global technology consulting and software engineering company that designs, builds, modernizes, integrates and scales intelligent software sy"
+  },
+  {
+   "t": "AXERA Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Axera",
+   "s": "Find out what works well at AXERA from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for"
+  },
+  {
+   "t": "Careers in our deep learning acceleration company | Axelera AI",
+   "u": "https://axelera.ai/careers",
+   "s": "Unlimited AI needs unlimited engineering. Work with our passionate team on democratic AI for a green, fair, safe world & make more impact, faster."
+  },
+  {
+   "t": "Join our team at Axcera | We're hiring",
+   "u": "https://axcera.io/careers",
+   "s": "Careers at Axcera. Join a remote-first team building the trading infrastructure behind 50+ prop firms worldwide. View open positions and apply."
+  },
+  {
+   "t": "Careers - Oxera",
+   "u": "https://www.oxera.com/careers/",
+   "s": "Explore exciting career opportunities at Oxera, where integrity, passion, and collaboration drive impactful economic and financial solutions. Join us today!"
+  },
+  {
+   "t": "Current job openings - Oxera",
+   "u": "https://careers.oxera.com/",
+   "s": "Job openings at Oxera You can only submit one application during each recruitment period, so please apply for the role that best suits your skills and interests"
+  },
+  {
+   "t": "校园招聘 | 爱芯元智半导体股份有限公司 - axera-tech.com",
+   "u": "https://www.axera-tech.com/zh-hans/join/1",
+   "s": "校招流程网申时间8月1日至12月31日 宣讲"
+  },
+  {
+   "t": "社会招聘 | 爱芯元智半导体股份有限公司 - axera-tech.com",
+   "u": "https://www.axera-tech.com/zh-hans/join/2",
+   "s": "加入我们加入AXERA，探索无限可能! (点击投递)"
+  },
+  {
+   "t": "Vacancies - Oxera",
+   "u": "https://www.oxera.com/careers/vacancies/",
+   "s": "Discover exciting career opportunities at Oxera. Join our team of experts and work on impactful projects in a supportive environment. Explore vacancies now!"
+  },
+  {
+   "t": "Careers at Axela | Current Job Openings & Opportunities",
+   "u": "https://www.axela-tech.com/about/careers/",
+   "s": "Explore careers at Axela Technologies. We offer generous salary and benefits in a dynamic and exciting environment. Join our team!"
+  },
+  {
+   "t": "登录 - zhaopin.axera-tech.com",
+   "u": "https://zhaopin.axera-tech.com/Portal/Apply/Index",
+   "s": "©2026 爱芯元智AXERA 京ICP备05051632号-16 京公网安备 11010802032024号 帮助热线：4006506886 隐私政策"
+  },
+  {
+   "t": "AXA Careers",
+   "u": "https://careers.axa.com/careers-home/jobs",
+   "s": "AXA Careers Job Search - Jobs Join Our Talent Community Could not find the perfect role for you? Join AXA talent community for future opportunities."
+  },
+  {
+   "t": "Careers | AxERA Digital",
+   "u": "https://axera.digital/careers",
+   "s": "Careers Build software that matters, with people who care how it's built We're always interested in meeting engineers, architects and technologists who take pri"
+  },
+  {
+   "t": "Axera | Careers",
+   "u": "https://www.axera.uk/contact/careers",
+   "s": "Work for us Careers at Axera For opportunities, speculative applications, and conversations about joining the Axera team."
+  },
+  {
+   "t": "AXERA Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Axera",
+   "s": "Find out what works well at AXERA from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for"
+  },
+  {
+   "t": "23,000+ Axelera jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/axelera-jobs-worldwide",
+   "s": "Today's top 23,000+ Axelera jobs in Worldwide. Leverage your professional network, and get hired. New Axelera jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.axera.uk/contact/careers",
+  "platform": "custom",
+  "title": "Axera | Careers"
+ },
+ "verdict": "custom_surface"
+}
