@@ -1,0 +1,29 @@
+{
+ "brand": "Deepglint",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:09:35.795Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "deepglint",
+   "spec": "feishuhire:deepglint",
+   "title": "加入格灵深瞳"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:deepglint",
+  "platform": "feishu",
+  "title": "加入格灵深瞳",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入格灵深瞳",
+  "brand": "Deepglint",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

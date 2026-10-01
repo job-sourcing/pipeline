@@ -1,0 +1,165 @@
+{
+ "brand": "DataGrand",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:08:15.039Z",
+ "candidates": [
+  {
+   "url": "https://job-boards.greenhouse.io/datagrail?error=true",
+   "title": "Jobs at DataGrail",
+   "status": 200,
+   "bytes": 22809,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "greenhouse:datagrail",
+   "score": 14,
+   "snippet": "Create a Job Alert Level-up your career by having opportunities at DataGrail sent directly to your inbox. Create alert",
+   "backend": "direct"
+  },
+  {
+   "url": "http://www.datagrand.com/join-us/",
+   "title": "达观数据有限公司招聘共创人工智能未来-达观数据",
+   "status": 200,
+   "bytes": 36659,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "达观数据是国内领先的文本智能处理专家,利用先进的自然语言处理(NLP)、光学字符识别（OCR）、知识图谱等技术，为大型企业和政府机构提供数字员工、文档智能审阅、垂直搜索、智能推荐、用户意见洞察等智能产品，让计算机代替人工完成业务流程自动化，大幅度提高企业效率。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.datagrand.com/",
+   "title": "达观数据- 知识管理、办公智能体AI Agent、智能文档处理专家",
+   "status": 200,
+   "bytes": 58388,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "达观数据是国内领先的文本智能处理专家,利用先进的自然语言处理(NLP)、光学字符识别（OCR）、知识图谱等技术，为大型企业和政府机构提供数字员工、文档智能审阅、垂直搜索、智能推荐、用户意见洞察等智能产品，让计算机代替人工完成业务流程自动化，大幅度提高企业效率。",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "达观数据有限公司招聘共创人工智能未来-达观数据",
+   "u": "http://www.datagrand.com/join-us/",
+   "s": "达观数据是国内领先的文本智能处理专家,利用先进的自然语言处理(NLP)、光学字符识别（OCR）、知识图谱等技术，为大型企业和政府机构提供数字员工、文档智能审阅、垂直搜索、智能推荐、用户意见洞察等智能产品，让计算机代替人工完成业务流程自动化，大幅度提高企业效率。"
+  },
+  {
+   "t": "Careers & Job Opportunities in Data Privacy | DataGrail",
+   "u": "https://www.datagrail.io/careers/",
+   "s": "Join the DataGrail team, an innovative data privacy company based in San Francisco. We're always looking for new people. Check out our job openings today!"
+  },
+  {
+   "t": "Careers at Datagrid",
+   "u": "https://datagrid.com/careers",
+   "s": "Careers at Datagrid Build the future of AI with us. Are you looking for a career opportunity where you tackle frontier challenges and drive real-world impact? B"
+  },
+  {
+   "t": "DataGrand - LinkedIn",
+   "u": "https://www.linkedin.com/company/datagrandhq",
+   "s": "DataGrand | 3 followers on LinkedIn. Business meet Agentic AI | DataGrand technologies is an specialist for designing AI solutions to ease our customers busines"
+  },
+  {
+   "t": "达观数据- 知识管理、办公智能体AI Agent、智能文档处理专家",
+   "u": "https://www.datagrand.com/",
+   "s": "达观数据是国内领先的文本智能处理专家,利用先进的自然语言处理(NLP)、光学字符识别（OCR）、知识图谱等技术，为大型企业和政府机构提供数字员工、文档智能审阅、垂直搜索、智能推荐、用户意见洞察等智能产品，让计算机代替人工完成业务流程自动化，大幅度提高企业效率。"
+  },
+  {
+   "t": "Datagrid Careers",
+   "u": "https://jobs.gem.com/datagrid",
+   "s": "Hi, we're glad you're here! Big things are happening at Datagrid, and we're expanding our team! If you're looking for a place where AI drives real impact, where"
+  },
+  {
+   "t": "达观数据 | LinkedIn",
+   "u": "https://www.linkedin.com/company/%E8%BE%BE%E8%A7%82%E6%95%B0%E6%8D%AE",
+   "s": "达观数据 IT Services and IT Consulting About us Website http://www.datagrand.com Industry IT Services and IT Consulting Company size 501-1,000 employees Type Privat"
+  },
+  {
+   "t": "Jobs at DataGrail",
+   "u": "https://job-boards.greenhouse.io/datagrail?error=true",
+   "s": "Create a Job Alert Level-up your career by having opportunities at DataGrail sent directly to your inbox. Create alert"
+  },
+  {
+   "t": "达观数据有限公司招聘共创人工智能未来-达观数据",
+   "u": "http://www.datagrand.com/join-us/",
+   "s": "达观数据是国内领先的文本智能处理专家,利用先进的自然语言处理(NLP)、光学字符识别（OCR）、知识图谱等技术，为大型企业和政府机构提供数字员工、文档智能审阅、垂直搜索、智能推荐、用户意见洞察等智能产品，让计算机代替人工完成业务流程自动化，大幅度提高企业效率。"
+  },
+  {
+   "t": "Careers & Job Opportunities in Data Privacy | DataGrail",
+   "u": "https://www.datagrail.io/careers/",
+   "s": "Join the DataGrail team, an innovative data privacy company based in San Francisco. We're always looking for new people. Check out our job openings today!"
+  },
+  {
+   "t": "Data Scientist Jobs in Hong Kong - Oct 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/data-scientist-jobs",
+   "s": "Find your ideal job at Jobsdb with 2308 Data Scientist jobs found in Hong Kong. View all our Data Scientist vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "Data Jobs in Hong Kong - Oct 2026 | Jobsdb",
+   "u": "https://hk.jobsdb.com/data-jobs",
+   "s": "Find your ideal job at Jobsdb with 10546 Data jobs found in Hong Kong. View all our Data vacancies now with new jobs added daily!"
+  },
+  {
+   "t": "DataGrand - LinkedIn",
+   "u": "https://www.linkedin.com/company/datagrandhq",
+   "s": "DataGrand | 3 followers on LinkedIn. Business meet Agentic AI | DataGrand technologies is an specialist for designing AI solutions to ease our customers busines"
+  },
+  {
+   "t": "DataGrail Jobs (September 2026)",
+   "u": "https://startup.jobs/company/datagrail",
+   "s": "DataGrail is hiring. Apply to 8 jobs like Technical Success Engineer, IT Service Manager, and Customer Success Manager. Updated daily!"
+  },
+  {
+   "t": "达观数据 | LinkedIn",
+   "u": "https://www.linkedin.com/company/%E8%BE%BE%E8%A7%82%E6%95%B0%E6%8D%AE",
+   "s": "达观数据 IT Services and IT Consulting About us Website http://www.datagrand.com Industry IT Services and IT Consulting Company size 501-1,000 employees Type Privat"
+  },
+  {
+   "t": "Datagran Careers, Jobs, and Salary Information - Ladders",
+   "u": "https://www.theladders.com/company/datagran-jobs",
+   "s": "Find high paying available jobs at Datagran. For information on Datagran compensation and careers, use Ladders $100K + Club."
+  },
+  {
+   "t": "达观数据有限公司招聘共创人工智能未来-达观数据",
+   "u": "http://www.datagrand.com/join-us/",
+   "s": "达观数据是国内领先的文本智能处理专家,利用先进的自然语言处理(NLP)、光学字符识别（OCR）、知识图谱等技术，为大型企业和政府机构提供数字员工、文档智能审阅、垂直搜索、智能推荐、用户意见洞察等智能产品，让计算机代替人工完成业务流程自动化，大幅度提高企业效率。"
+  },
+  {
+   "t": "DataGrand - LinkedIn",
+   "u": "https://www.linkedin.com/company/datagrandhq",
+   "s": "DataGrand | 3 followers on LinkedIn. Business meet Agentic AI | DataGrand technologies is an specialist for designing AI solutions to ease our customers busines"
+  },
+  {
+   "t": "Find a Job | Versant Careers",
+   "u": "https://careers.versantmedia.com/find-a-job",
+   "s": "Use the search criteria below to quickly find jobs that match your interests. Don't see what you're looking for? Create job alerts using the 'Notify Me of Jobs'"
+  },
+  {
+   "t": "Careers & Job Opportunities in Data Privacy | DataGrail",
+   "u": "https://www.datagrail.io/careers/",
+   "s": "Join the DataGrail team, an innovative data privacy company based in San Francisco. We're always looking for new people. Check out our job openings today!"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://job-boards.greenhouse.io/datagrail?error=true",
+  "title": "Jobs at DataGrail",
+  "status": 200,
+  "bytes": 22809,
+  "markers": [
+   "greenhouse"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "greenhouse:datagrail",
+  "score": 14,
+  "snippet": "Create a Job Alert Level-up your career by having opportunities at DataGrail sent directly to your inbox. Create alert",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
+}

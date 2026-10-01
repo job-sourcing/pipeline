@@ -94,8 +94,8 @@ jobs:
               if not f.exists():
                   remaining += 1
           print(f"remaining={remaining}")
-          print(f"::notice::{sector}/{tier}: {remaining} of {len(recs)} un-probed")
           PY
+          echo "::notice::$SECTOR/$TIER: $remaining of $(python3 -c "import json; q=json.load(open('ingest/data/ats_seed/$SECTOR/sector_queue.json')); print(len(q.get('$TIER', [])))") un-probed"
 
       - name: Daily leg cap (S12 burn guard)
         run: |

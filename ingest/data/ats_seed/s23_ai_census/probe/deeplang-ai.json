@@ -1,0 +1,29 @@
+{
+ "brand": "DeepLang AI",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-01T12:08:45.288Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "deeplang",
+   "spec": "feishuhire:deeplang",
+   "title": "加入深言"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:deeplang",
+  "platform": "feishu",
+  "title": "加入深言",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入深言",
+  "brand": "DeepLang AI",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}
