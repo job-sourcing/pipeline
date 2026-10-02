@@ -2,7 +2,7 @@
  "brand": "Adcentrx Therapeutics",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T12:14:27.899Z",
+ "ts": "2026-10-02T12:17:19.157Z",
  "candidates": [
   {
    "url": "https://www.adcentrx.com/careers/",
@@ -29,15 +29,15 @@
    "backend": "direct"
   },
   {
-   "url": "https://www.employbl.com/companies/adcentrx-therapeutics/jobs",
-   "title": "Vercel Security Checkpoint",
-   "status": 429,
-   "bytes": 31204,
+   "url": "https://www.adcentrx.com/",
+   "title": "403 - Forbidden",
+   "status": 403,
+   "bytes": 75193,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 7,
-   "snippet": "Find your next job at Adcentrx Therapeutics! See all jobs, funding information, investors and more about thousands of startups and tech companies on Employbl.",
+   "score": 5,
+   "snippet": "Adcentrx Therapeutics is a biotechnology company focused on accelerating breakthroughs in developing protein conjugate therapeutics for cancer and other life-th",
    "backend": "direct"
   }
  ],
@@ -68,6 +68,11 @@
    "s": "Adcentrx Therapeutics is a biotechnology company focused on protein conjugate therapeutic development for cancer and other life-threatening diseases."
   },
   {
+   "t": "About - Adcentrx Therapeutics",
+   "u": "https://www.adcentrx.com/about/",
+   "s": "At Adcentrx, we are driven to create the best therapies to treat serious and life-threatening diseases. By leveraging a deep understanding of chemistry and biol"
+  },
+  {
    "t": "Adcentrx Therapeutics - LinkedIn",
    "u": "https://www.linkedin.com/company/adcentrx-therapeutics",
    "s": "Adcentrx Therapeutics is a biotechnology company focused on accelerating breakthroughs in protein conjugate therapeutic development for cancer and other life-th"
@@ -76,11 +81,6 @@
    "t": "Adcentrx Therapeutics Jobs + Careers | Built In",
    "u": "https://builtin.com/company/adcentrx-therapeutics/jobs",
    "s": "Explore jobs and careers at Adcentrx Therapeutics. Adcentrx Therapeutics is currently hiring for a range of positions."
-  },
-  {
-   "t": "Management Team - Adcentrx Therapeutics",
-   "u": "https://www.adcentrx.com/management-team/",
-   "s": "Earlier in her career, Ms. Li held positions of increasing responsibility at Acucela, Seattle Genetics, and Cell Therapeutics, where she managed global regulato"
   },
   {
    "t": "Careers - Adcentrx Therapeutics",
@@ -118,9 +118,9 @@
    "s": "Focus: Adcentrx Therapeutics is an early-stage oncology-focused biotechnology company specializing in antibody-drug conjugate (ADC) development based in San Die"
   },
   {
-   "t": "Jobs at Adcentrx Therapeutics",
-   "u": "https://www.employbl.com/companies/adcentrx-therapeutics/jobs",
-   "s": "Find your next job at Adcentrx Therapeutics! See all jobs, funding information, investors and more about thousands of startups and tech companies on Employbl."
+   "t": "Adcentrx Therapeutics careers in San Diego, CA | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Adcentrx-Therapeutics/locations/CA/San%20Diego",
+   "s": "Adcentrx Therapeutics salaries in San Diego, CA Salary estimated from 9 employees, users, and past and present job advertisements on Indeed."
   },
   {
    "t": "Careers - Adcentrx Therapeutics",
