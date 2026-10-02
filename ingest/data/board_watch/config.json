@@ -1349,6 +1349,62 @@
     "United States"
    ],
    "country": "United States"
+  },
+  {
+   "label": "zilliz_us_fulltime",
+   "board": "ats:lever:zilliz",
+   "company": "Zilliz",
+   "country": "United States",
+   "li_variants": [
+    "Zilliz",
+    "Zilliz Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "Redwood City, California, United States"
+   ]
+  },
+  {
+   "label": "qcraft_us_fulltime",
+   "board": "ats:workable:qcraft",
+   "company": "QCraft",
+   "country": "United States",
+   "li_variants": [
+    "QCraft",
+    "QCraft Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States"
+   ]
+  },
+  {
+   "label": "lightelligence_us_fulltime",
+   "board": "ats:workable:lightelligence",
+   "company": "Lightelligence",
+   "country": "United States",
+   "li_variants": [
+    "Lightelligence",
+    "Lightelligence Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "Boston, Massachusetts, United States"
+   ]
+  },
+  {
+   "label": "dify_us_fulltime",
+   "board": "custom:dify",
+   "company": "Dify (LangGenius)",
+   "country": "United States",
+   "li_variants": [
+    "Dify",
+    "LangGenius"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Mateo, California, United States"
+   ]
   }
  ]
 }

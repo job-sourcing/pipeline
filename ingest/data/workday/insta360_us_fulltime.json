@@ -1,0 +1,38 @@
+{
+ "board": "ats:feishuhire:arashivision",
+ "company": "Insta360",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-01",
+ "count": 1,
+ "details_merged": 0,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 0,
+ "rows": [
+  {
+   "reqId": "7630722362120505663",
+   "title": "Store Manager",
+   "company": "arashivision",
+   "url": "https://arashivision.jobs.feishu.cn/index/position/7630722362120505663/detail",
+   "externalPath": "/index/position/7630722362120505663",
+   "locationsText": "Los Angeles",
+   "postedOn": "Posted 164 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7630722362120505663"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-04-20",
+   "departments": [],
+   "countries": [
+    "United States"
+   ],
+   "detail": null,
+   "hiringOrg": null,
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null
+  }
+ ]
+}

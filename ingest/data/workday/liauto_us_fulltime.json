@@ -1,0 +1,196 @@
+{
+ "board": "ats:feishuhire:li",
+ "company": "Li Auto",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-01",
+ "count": 7,
+ "details_merged": 0,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 0,
+ "rows": [
+  {
+   "reqId": "7687915523137866035",
+   "title": "人事行政岗 （HR& Admin Operations）",
+   "company": "li",
+   "url": "https://li.jobs.feishu.cn/index/position/7687915523137866035/detail",
+   "externalPath": "/index/position/7687915523137866035",
+   "locationsText": "San Jose",
+   "postedOn": "Posted 10 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7687915523137866035"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-09-21",
+   "departments": [
+    "Corporate function / Support"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": null,
+   "hiringOrg": null,
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null
+  },
+  {
+   "reqId": "7615069209999198510",
+   "title": "人事行政岗 （HR& Admin Operations）",
+   "company": "li",
+   "url": "https://li.jobs.feishu.cn/index/position/7615069209999198510/detail",
+   "externalPath": "/index/position/7615069209999198510",
+   "locationsText": "San Jose",
+   "postedOn": "Posted 206 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7615069209999198510"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2026-03-09",
+   "departments": [
+    "Corporate function / Support"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": null,
+   "hiringOrg": null,
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null
+  },
+  {
+   "reqId": "7517580293869046043",
+   "title": "Senior CMF Designer",
+   "company": "li",
+   "url": "https://li.jobs.feishu.cn/index/position/7517580293869046043/detail",
+   "externalPath": "/index/position/7517580293869046043",
+   "locationsText": "San Jose",
+   "postedOn": "Posted 469 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7517580293869046043"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2025-06-19",
+   "departments": [
+    "Design"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": null,
+   "hiringOrg": null,
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null
+  },
+  {
+   "reqId": "7517579056926673171",
+   "title": "Senior Interior Designer",
+   "company": "li",
+   "url": "https://li.jobs.feishu.cn/index/position/7517579056926673171/detail",
+   "externalPath": "/index/position/7517579056926673171",
+   "locationsText": "San Jose",
+   "postedOn": "Posted 469 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7517579056926673171"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2025-06-19",
+   "departments": [
+    "Design"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": null,
+   "hiringOrg": null,
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null
+  },
+  {
+   "reqId": "7517498696263977228",
+   "title": "Senior Exterior Designer",
+   "company": "li",
+   "url": "https://li.jobs.feishu.cn/index/position/7517498696263977228/detail",
+   "externalPath": "/index/position/7517498696263977228",
+   "locationsText": "San Jose",
+   "postedOn": "Posted 469 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7517498696263977228"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2025-06-19",
+   "departments": [
+    "Design"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": null,
+   "hiringOrg": null,
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null
+  },
+  {
+   "reqId": "7512377511080642857",
+   "title": "AI Technology and Strategic Planning Researcher",
+   "company": "li",
+   "url": "https://li.jobs.feishu.cn/index/position/7512377511080642857/detail",
+   "externalPath": "/index/position/7512377511080642857",
+   "locationsText": "San Jose",
+   "postedOn": "Posted 483 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7512377511080642857"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2025-06-05",
+   "departments": [
+    "Technical project management"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": null,
+   "hiringOrg": null,
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null
+  },
+  {
+   "reqId": "7512376968471906610",
+   "title": "AI Research Scientist",
+   "company": "li",
+   "url": "https://li.jobs.feishu.cn/index/position/7512376968471906610/detail",
+   "externalPath": "/index/position/7512376968471906610",
+   "locationsText": "San Jose",
+   "postedOn": "Posted 483 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7512376968471906610"
+   ],
+   "ats": "feishuhire",
+   "firstPublishedIso": "2025-06-05",
+   "departments": [
+    "R&D"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "detail": null,
+   "hiringOrg": null,
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null
+  }
+ ]
+}

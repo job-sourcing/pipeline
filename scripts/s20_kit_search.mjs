@@ -101,6 +101,53 @@ function unwrap (href) {
   return u
 }
 
+/** unwrap Bing's /ck/a redirect: &u=a1<url-safe base64 of real url> (S24) */
+function unwrapBing (href) {
+  if (!href) return ''
+  const m = href.match(/[?&]u=a1([A-Za-z0-9_-]+)/)
+  if (!m) return href
+  try {
+    const b64 = m[1].replace(/-/g, '+').replace(/_/g, '/')
+    const pad = '='.repeat((4 - (b64.length % 4)) % 4)
+    const dec = Buffer.from(b64 + pad, 'base64').toString('utf8')
+    return dec.startsWith('http') ? dec : href
+  } catch { return href }
+}
+
+/* ── fleet fallback (S24): the Netlify US-Ohio workers run the DDG html
+ * scrape from a US IP — the cure for Alibaba-HK-style sandbox egress where
+ * DDG is TCP-dead and Bing serves anti-bot junk. Uses site records from
+ * s21_netlify_fleet.mjs (js-fleet-00..). One engine entry, no quota. */
+const FLEET_REG = join(REPO, 'ingest/data/ats_seed/s21_fleet/sites.json')
+const fleetSites = () => {
+  try { return Object.values(JSON.parse(readFileSync(FLEET_REG, 'utf8'))) } catch { return [] }
+}
+let fleetCursor = Math.floor(Math.random() * 8)
+async function fleetSearch (q, num) {
+  const sites = fleetSites()
+  if (!sites.length) return []
+  const enc = encodeURIComponent(q)
+  const n = sites.length
+  for (let i = 0; i < Math.min(n, 3); i++) {
+    const rec = sites[(fleetCursor++) % n]
+    const url = `https://${rec.deployId}--${rec.site}.netlify.app/fleet`
+    try {
+      const ctl = new AbortController()
+      const t = setTimeout(() => ctl.abort(), 15000)
+      const r = await fetch(url, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ op: 'search', query: q, num }),
+        signal: ctl.signal
+      })
+      clearTimeout(t)
+      const j = await r.json()
+      if (j && Array.isArray(j.results) && j.results.length) return j.results.slice(0, num)
+    } catch { }
+  }
+  return []
+}
+
 /** parse DDG html SERP: result__a (title/url) + result__snippet */
 function parseDDG (html) {
   const out = []
@@ -138,32 +185,65 @@ function parseDDGLite (html) {
 
 /**
  * searchWeb(query, num) → [{name, url, snippet}]
- * Engine ladder: DDG html (supabase → local) → DDG lite → Bing en-US.
- * Cached per-query on disk (14d TTL).
+ * Engine ladder: DDG html → DDG lite → Bing en-US — with a PERSISTENT
+ * circuit breaker (S24): engines that TCP-timeout from the current egress
+ * are marked dead for 1h (engine_health.json in the cache dir) so the
+ * ladder stops burning 3×45s on a dead engine before reaching Bing.
  */
+const HEALTH_F = join(CACHE_DIR, 'engine_health.json')
+function engineHealth () {
+  try { return JSON.parse(readFileSync(HEALTH_F, 'utf8')) } catch { return {} }
+}
+function markEngineDead (name, ms = 3600_000) {
+  try {
+    const h = engineHealth()
+    h[name] = Date.now() + ms
+    writeFileSync(HEALTH_F, JSON.stringify(h))
+  } catch { }
+}
+function engineAlive (name) {
+  const until = engineHealth()[name] || 0
+  return Date.now() < until ? false : true
+}
 export async function searchWeb (q, num = 8) {
   const key = createHash('sha1').update(q).digest('hex').slice(0, 16)
   const cf = `${CACHE_DIR}/${key}.json`
   if (existsSync(cf)) {
     try {
       const c = JSON.parse(readFileSync(cf, 'utf8'))
-      if (Date.now() - c.ts < CACHE_TTL_MS && Array.isArray(c.results)) return c.results.slice(0, num)
+      const ttl = (Array.isArray(c.results) && c.results.length) ? CACHE_TTL_MS : 600_000
+      if (Date.now() - c.ts < ttl && Array.isArray(c.results)) return c.results.slice(0, num)
     } catch { }
   }
   const enc = encodeURIComponent(q)
   const attempts = [
-    { url: `https://html.duckduckgo.com/html/?q=${enc}`, parse: parseDDG },
-    { url: `https://html.duckduckgo.com/html/?q=${enc}&kl=us-en`, parse: parseDDG },
-    { url: `https://lite.duckduckgo.com/lite/?q=${enc}`, parse: parseDDGLite },
-    { url: `https://www.bing.com/search?q=${enc}&count=${Math.max(num, 10)}&ensearch=1&mkt=en-US&setlang=en`,
+    { engine: 'ddg', url: `https://html.duckduckgo.com/html/?q=${enc}`, parse: parseDDG, timeoutS: 12 },
+    { engine: 'ddg', url: `https://html.duckduckgo.com/html/?q=${enc}&kl=us-en`, parse: parseDDG, timeoutS: 12, skipBreaker: true },
+    { engine: 'ddglite', url: `https://lite.duckduckgo.com/lite/?q=${enc}`, parse: parseDDGLite, timeoutS: 12 },
+    { engine: 'bing', url: `https://www.bing.com/search?q=${enc}&count=${Math.max(num, 10)}&ensearch=1&mkt=en-US&setlang=en`, relevanceGate: true,
       parse: (h) => {
         const out = []
         const seen = new Set()
-        for (const m of h.matchAll(/<h2[^>]*><a[^>]+href="([^"]+)"[^>]*>(.*?)<\/a><\/h2>/gs)) {
-          const url = m[1]; const name = strip(m[2])
+        // S24: full b_algo blocks — h2 link + the <p> snippet that follows;
+        // Bing /ck/a redirect hrefs get unwrapped to the real target URL.
+        for (const m of h.matchAll(/<li class="b_algo"[^>]*>([\s\S]*?)<\/li>/gs)) {
+          const block = m[1]
+          const lm = block.match(/<h2[^>]*><a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a><\/h2>/)
+          if (!lm) continue
+          const url = unwrapBing(lm[1].replace(/&amp;/g, '&')); const name = strip(lm[2])
           if (!/^https?:\/\//.test(url) || seen.has(url) || url.includes('bing.com')) continue
           seen.add(url)
-          out.push({ name: name.slice(0, 140), url, snippet: '' })
+          const pm = block.match(/<p[^>]*>([\s\S]*?)<\/p>/)
+          out.push({ name: name.slice(0, 140), url, snippet: (pm ? strip(pm[1]) : '').slice(0, 220) })
+        }
+        // legacy fallback: bare h2 matches (SERP variants without b_algo li)
+        if (!out.length) {
+          for (const m of h.matchAll(/<h2[^>]*><a[^>]+href="([^"]+)"[^>]*>(.*?)<\/a><\/h2>/gs)) {
+            const url = unwrapBing(m[1].replace(/&amp;/g, '&')); const name = strip(m[2])
+            if (!/^https?:\/\//.test(url) || seen.has(url) || url.includes('bing.com')) continue
+            seen.add(url)
+            out.push({ name: name.slice(0, 140), url, snippet: '' })
+          }
         }
         return out
       } },
@@ -171,13 +251,48 @@ export async function searchWeb (q, num = 8) {
   let results = []
   const tried = []
   for (const a of attempts) {
-    const r = await kitFetch(a.url)
+    if (!a.skipBreaker && !engineAlive(a.engine)) {
+      tried.push(`${a.engine}→SKIPPED(breaker)`)
+      continue
+    }
+    const r = await kitFetch(a.url, { timeoutS: a.timeoutS || 45 })
     tried.push(`${a.url.slice(0, 40)}→${r.status}/${r.body.length}b/${r.backend}`)
     if (r.status === 200 && r.body) {
       results = a.parse(r.body)
-      if (results.length) break
+      if (results.length) {
+        // S24 anti-bot-junk gate (Bing class): a SERP where NO result shares
+        // any >=4-char query term in title or URL is a junk serving (real
+        // title echo, unrelated content) — do not accept it.
+        if (a.relevanceGate) {
+          const terms = q.toLowerCase().split(/\s+/).filter(w => w.length >= 4)
+          const longest = terms.slice().sort((x, y) => y.length - x.length)[0] || ''
+          const hay = results.map(x => (x.name + ' ' + x.url).toLowerCase()).join(' ')
+          const hits = terms.filter(t => hay.includes(t)).length
+          const ok = (longest && hay.includes(longest)) || hits >= 2
+          if (!ok) {
+            tried.push(`bing→JUNK(no term overlap, ${results.length}r)`)
+            markEngineDead('bing', 30 * 60_000)
+            results = []
+            continue
+          }
+        }
+        break
+      }
+    } else if (r.status === 0 || r.status === null) {
+      // transport-level failure (timeout / conn refused): breaker this engine
+      markEngineDead(a.engine)
     }
   }
+  // S24 fleet fallback: if the whole local ladder produced nothing (dead
+  // egress for DDG, Bing anti-bot junk), the US-Ohio workers run the DDG
+  // scrape for us. Result shape matches (name, url, snippet-less).
+  if (!results.length) {
+    results = await fleetSearch(q, num)
+    tried.push(`fleet→${results.length}r`)
+  }
+  // S24: only POSITIVE results get the long TTL; empty results are a
+  // negative cache with a 10-min TTL (egress/engine transients must not
+  // poison the query for 14 days).
   writeFileSync(cf, JSON.stringify({ q, ts: Date.now(), tried, results }))
   return results.slice(0, num)
 }

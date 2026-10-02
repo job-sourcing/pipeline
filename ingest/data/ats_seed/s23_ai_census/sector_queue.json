@@ -2,11 +2,13 @@
  "built": "2026-10-01T11:49:12.772757+00:00",
  "counts": {
   "wired_already": 20,
-  "wire_now": 7,
-  "probe_A": 133,
+  "wire_now": 6,
+  "probe_A": 110,
   "probe_B": 0,
   "origin_review": 22,
-  "rejected": 5
+  "rejected": 5,
+  "sanctioned_skip": 23,
+  "restricted_watch": 1
  },
  "wire_now": [
   {
@@ -25,7 +27,9 @@
    "us_signal": "AGIBOT USA LinkedIn entity; LinkedIn post hiring 'USA Sales Manager (Local Sales Manager in USA)'",
    "lca_employers": [],
    "origin": "china",
-   "hq": "Shanghai, China"
+   "hq": "Shanghai, China",
+   "s24_verdict": "s24_park_china_only_board",
+   "s24_note": "feishuhire:agirobot 834 rows ALL-China (S23 verdict); US hiring = LinkedIn-local sales roles only. 0-US-here."
   },
   {
    "brand": "Boson AI",
@@ -67,7 +71,9 @@
    "us_signal": "Fully remote company; hires globally incl. US-remote engineers (Lever board live — verified); no US LCA entity",
    "lca_employers": [],
    "origin": "china",
-   "hq": "Berlin, Germany (HK-incorporated; fully remote)"
+   "hq": "Berlin, Germany (HK-incorporated; fully remote)",
+   "s24_verdict": "s24_park_board_dead",
+   "s24_note": "jobs.lever.co/jina-ai now 404 (slug dead — was live at census time). Remote-first Berlin-based; no US entity/LCA. Re-probe if board resurfaces."
   },
   {
    "brand": "Momenta",
@@ -86,7 +92,9 @@
     "MOMENTA USA, INC."
    ],
    "origin": "china",
-   "hq": "Suzhou, China"
+   "hq": "Suzhou, China",
+   "s24_verdict": "s24_park_china_only_board",
+   "s24_note": "feishuhire:momenta 248 rows ALL-China (verified live 2026-10-02); 2 US LCA filings but US hiring not on the feishu board. 0-US-here."
   },
   {
    "brand": "QCraft",
@@ -103,25 +111,9 @@
    "us_signal": "LIVE WORKABLE BOARD (apply.workable.com/qcraft); San Francisco office (Built In SF profile)",
    "lca_employers": [],
    "origin": "china",
-   "hq": "Beijing/Suzhou, China (dual: San Francisco, CA)"
-  },
-  {
-   "brand": "SOPHGO",
-   "name": "SOPHGO",
-   "cn": "算能科技",
-   "aliases": [
-    "SOPHGO",
-    "算能",
-    "Sophon"
-   ],
-   "sector": "chips",
-   "evidence": "wire_now",
-   "ats_hint": "successfactors:jobs.sophgo.com",
-   "careers_hint": "https://jobs.sophgo.com/site/language.html?lang=en-US",
-   "us_signal": "SOPHGO Inc (Santa Clara, CA) US entity w/ active careers portal (jobs.sophgo.com, SuccessFactors; jobs-en.sophgo.com/experienced). US 1260H/Entity-List pressure (2025, via Bitmain link). LCA null in FY26Q3 (US headcount may be small/contract-based).",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing, China + Santa Clara, USA"
+   "hq": "Beijing/Suzhou, China (dual: San Francisco, CA)",
+   "s24_verdict": "s24_wire_honest0",
+   "s24_note": "workable:qcraft board live but EMPTY (0 jobs 2026-10-02); wired honest-0, watch auto-captures. US: SF office (Built In)."
   },
   {
    "brand": "XtalPi",
@@ -140,7 +132,9 @@
     "XTALPI INC."
    ],
    "origin": "china",
-   "hq": "Shenzhen, China (dual: Cambridge, MA US)"
+   "hq": "Shenzhen, China (dual: Cambridge, MA US)",
+   "s24_verdict": "s24_park_china_only_board",
+   "s24_note": "feishu portal 0 jobs + CN moka board ~124 roles; US entity XtalPi Inc (5 LCA Somerville MA). Parked (moka CN board walled class)."
   }
  ],
  "probe_A": [
@@ -163,26 +157,6 @@
    "ats_hint": null,
    "careers_hint": "https://www.01.ai/",
    "us_signal": "No US entity or hiring known; no LCA filings",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing, China"
-  },
-  {
-   "brand": "4Paradigm",
-   "name": "4Paradigm",
-   "cn": "第四范式",
-   "aliases": [
-    "4Paradigm",
-    "4Paradigm Inc",
-    "Paradigm 4",
-    "phancy.ai",
-    "第四范式"
-   ],
-   "sector": "ai_enterprise_saas",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://en.4paradigm.com/careers",
-   "us_signal": "No US office/hiring evidence found (searches hit homonym Paradigm companies); HK-listed 6682",
    "lca_employers": [],
    "origin": "china",
    "hq": "Beijing, China"
@@ -436,23 +410,6 @@
    "hq": "Beijing, China"
   },
   {
-   "brand": "Biren Technology",
-   "name": "Biren Technology",
-   "cn": "壁仞科技",
-   "aliases": [
-    "Biren",
-    "壁仞"
-   ],
-   "sector": "chips",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.birentech.com/join",
-   "us_signal": "None found; LCA null. US export-control pressure (2023 rules targeted advanced CN GPUs); HK IPO process reported 2025.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Shanghai, China"
-  },
-  {
    "brand": "Bitmain",
    "name": "Bitmain",
    "cn": "比特大陆",
@@ -515,23 +472,6 @@
    "hq": "Singapore (founded Beijing, China)"
   },
   {
-   "brand": "Cambricon",
-   "name": "Cambricon",
-   "cn": "寒武纪",
-   "aliases": [
-    "Cambricon Technologies",
-    "寒武纪科技"
-   ],
-   "sector": "chips",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.cambricon.com/join-us",
-   "us_signal": "No US entity; reportedly on US 1260H/restricted lists; LCA null.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing, China"
-  },
-  {
    "brand": "Canaan Inc",
    "name": "Canaan Inc",
    "cn": "嘉楠科技",
@@ -549,96 +489,6 @@
    ],
    "origin": "china",
    "hq": "Beijing, China"
-  },
-  {
-   "brand": "CloudMinds",
-   "name": "CloudMinds",
-   "cn": "达闼机器人",
-   "aliases": [
-    "CloudMinds Group",
-    "达闼"
-   ],
-   "sector": "robotics",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.cloudminds.com/careers",
-   "us_signal": "CloudMinds Technology Inc — Silicon Valley + Los Angeles offices (Built In LA employer profile; Indeed CA salaries). Founder Bill Huang ex-China Mobile/UTStarcom. LCA null in FY26Q3.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Shanghai, China + Santa Clara/LA, USA"
-  },
-  {
-   "brand": "CloudWalk",
-   "name": "CloudWalk",
-   "cn": "云从科技",
-   "aliases": [
-    "CloudWalk",
-    "云从科技",
-    "从容大模型"
-   ],
-   "sector": "llm",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.cloudwalk.com/joinus",
-   "us_signal": "US Entity List; no US hiring; no LCA filings",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Guangzhou, China"
-  },
-  {
-   "brand": "CloudWalk Technology",
-   "name": "CloudWalk Technology",
-   "cn": "云从科技",
-   "aliases": [
-    "CloudWalk",
-    "云从"
-   ],
-   "sector": "vision",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.cloudwalk.com/en/join.html",
-   "us_signal": "No US entity; Entity List (Oct 2019). CAUTION: 'CloudWalk, Inc.' / lp.cloudwalk.io is a Brazilian fintech — different company.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Guangzhou, China"
-  },
-  {
-   "brand": "DJI",
-   "name": "DJI",
-   "cn": "大疆创新",
-   "aliases": [
-    "DJI Agriculture",
-    "DJI Technology",
-    "Da-Jiang Innovations",
-    "大疆"
-   ],
-   "sector": "robotics",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://we.dji.com/zh-CN/position",
-   "us_signal": "LCA DJI TECHNOLOGY INC (3 filings, Burbank CA); US offices (Burbank CA, Cerritos); agriculture/enterprise robotics US sales",
-   "lca_employers": [
-    "DJI TECHNOLOGY INC."
-   ],
-   "origin": "china",
-   "hq": "Shenzhen, China"
-  },
-  {
-   "brand": "Dahua Technology",
-   "name": "Dahua Technology",
-   "cn": "大华股份",
-   "aliases": [
-    "Zhejiang Dahua",
-    "大华"
-   ],
-   "sector": "vision",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.dahuasecurity.com/aboutUs/careers",
-   "us_signal": "Dahua Technology USA Inc (Irvine, CA) sales arm; Entity List Oct 2019. LCA null in FY26Q3 file.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Hangzhou, China"
   },
   {
    "brand": "DataCanvas",
@@ -911,26 +761,6 @@
    "hq": "Shanghai, China"
   },
   {
-   "brand": "Fourth Paradigm",
-   "name": "Fourth Paradigm",
-   "cn": "第四范式",
-   "aliases": [
-    "Fourth Paradigm",
-    "4Paradigm",
-    "第四范式",
-    "Phancy Group",
-    "式说"
-   ],
-   "sector": "llm",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://en.4paradigm.com/",
-   "us_signal": "US Entity List (2022) — US business restricted; HK-listed; no LCA filings; s18 search artifact exists in repo",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing, China (HK-listed 6682.HK)"
-  },
-  {
    "brand": "Freetech",
    "name": "Freetech",
    "cn": "福瑞泰克",
@@ -997,24 +827,6 @@
    "lca_employers": [],
    "origin": "china",
    "hq": "Shanghai, China"
-  },
-  {
-   "brand": "H3C / New H3C",
-   "name": "H3C / New H3C",
-   "cn": "新华三集团",
-   "aliases": [
-    "New H3C",
-    "紫光股份",
-    "H3C"
-   ],
-   "sector": "ai_infra",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": null,
-   "us_signal": "None current (H3C US legacy from 3Com/H3C era pre-2015). LCA null.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Hangzhou, China"
   },
   {
    "brand": "HPC-AI Tech",
@@ -1110,23 +922,6 @@
    "hq": "Hefei, Anhui, China"
   },
   {
-   "brand": "Hikvision",
-   "name": "Hikvision",
-   "cn": "海康威视",
-   "aliases": [
-    "Hangzhou Hikvision Digital Technology",
-    "海康"
-   ],
-   "sector": "vision",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.hikvision.com/en/careers/",
-   "us_signal": "Hikvision USA Inc (City of Industry, CA) — large US sub historically hiring in sales/support; on Entity List Oct 2019, still operating US sales arm. No FY26 LCA filings found (sanctions chill).",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Hangzhou, China"
-  },
-  {
    "brand": "HitGen",
    "name": "HitGen",
    "cn": "成都先导药物",
@@ -1143,46 +938,6 @@
    "lca_employers": [],
    "origin": "china",
    "hq": "Chengdu, China"
-  },
-  {
-   "brand": "Huawei",
-   "name": "Huawei",
-   "cn": "华为",
-   "aliases": [
-    "Ascend",
-    "Huawei",
-    "Huawei Technologies",
-    "Pangu",
-    "华为",
-    "华为技术",
-    "昇腾",
-    "盘古大模型"
-   ],
-   "sector": "llm",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://career.huawei.com/",
-   "us_signal": "US Entity List (expanded 2019+) — US hiring effectively frozen; ZERO LCA filings FY2026Q3; Pangu LLM + Ascend AI chips; hires heavily outside US",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Shenzhen, China"
-  },
-  {
-   "brand": "Hygon",
-   "name": "Hygon",
-   "cn": "海光信息",
-   "aliases": [
-    "Hygon Information Technology",
-    "海光"
-   ],
-   "sector": "chips",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": null,
-   "us_signal": "None — Chengdu Haiguang/Hygon under US Entity List since June 2019; no US hiring. LCA null.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing/Tianjin, China"
   },
   {
    "brand": "IDEA Research Institute",
@@ -1316,24 +1071,6 @@
    "hq": "Hong Kong / Shanghai, China (dual: New York, NY + Abu Dhabi)"
   },
   {
-   "brand": "Inspur",
-   "name": "Inspur",
-   "cn": "浪潮集团",
-   "aliases": [
-    "Inspur Group",
-    "Inspur Electronic Information",
-    "浪潮"
-   ],
-   "sector": "ai_infra",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://career.inspur.com/",
-   "us_signal": "myvisajobs lists 'Inspur USA' employer (historic visa filings); 120+ 'Inspur' US roles on LinkedIn; US DoD list 2020 pressured US ops. No FY26Q3 LCA hit (INSPIR* miss).",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Jinan, China"
-  },
-  {
    "brand": "Insta360",
    "name": "Insta360",
    "cn": "影石创新",
@@ -1352,23 +1089,6 @@
    ],
    "origin": "china",
    "hq": "Shenzhen, China (US-inc parent Arashi Vision)"
-  },
-  {
-   "brand": "Intellifusion",
-   "name": "Intellifusion",
-   "cn": "云天励飞",
-   "aliases": [
-    "Intellifusion",
-    "云天励飞"
-   ],
-   "sector": "vision",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": null,
-   "us_signal": "None found; reportedly in Oct-2019 Entity List batch; LCA null.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Shenzhen, China"
   },
   {
    "brand": "Keenon Robotics",
@@ -1556,28 +1276,6 @@
    "hq": "Shanghai, China"
   },
   {
-   "brand": "Megvii",
-   "name": "Megvii",
-   "cn": "旷视科技",
-   "aliases": [
-    "Face++",
-    "KuangShi",
-    "MegBrain",
-    "Megvii",
-    "Megvii Technology",
-    "旷视",
-    "旷视科技"
-   ],
-   "sector": "vision",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://en.megvii.com/join_us/",
-   "us_signal": "Megvii USA Inc existed ~2018-19 (US expansion) then wound down after Oct-2019 Entity List; no current US hiring evidence, LCA null.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing, China"
-  },
-  {
    "brand": "Meitu",
    "name": "Meitu",
    "cn": "美图公司",
@@ -1734,23 +1432,6 @@
    "hq": "Beijing, China"
   },
   {
-   "brand": "Moore Threads",
-   "name": "Moore Threads",
-   "cn": "摩尔线程",
-   "aliases": [
-    "Moore Threads Technology",
-    "摩尔线程"
-   ],
-   "sector": "chips",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.mthreads.com/jobs",
-   "us_signal": "myvisajobs has a Moore Threads employer page (historic/weak; no FY26Q3 LCA filings found); reportedly on US 1260H list (2025).",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing, China"
-  },
-  {
    "brand": "Motovis",
    "name": "Motovis",
    "cn": "魔视智能",
@@ -1880,27 +1561,6 @@
    "hq": "Shenzhen, China"
   },
   {
-   "brand": "Qihoo 360",
-   "name": "Qihoo 360",
-   "cn": "奇虎360",
-   "aliases": [
-    "Qihoo 360",
-    "360",
-    "奇虎360",
-    "360智脑",
-    "纳米AI",
-    "Nami AI"
-   ],
-   "sector": "llm",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://career.360.cn/",
-   "us_signal": "No US presence (US sanctions history); 360智脑 LLM + Nami AI agent-search domestic; no LCA filings",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing, China"
-  },
-  {
    "brand": "RoboSense",
    "name": "RoboSense",
    "cn": "速腾聚创",
@@ -1976,30 +1636,6 @@
    ],
    "origin": "china",
    "hq": "Beijing, China"
-  },
-  {
-   "brand": "SenseTime",
-   "name": "SenseTime",
-   "cn": "商汤科技",
-   "aliases": [
-    "SenseChat",
-    "SenseCore",
-    "SenseNova",
-    "SenseTime",
-    "SenseTime Group",
-    "Sensecore",
-    "商汤",
-    "商汤科技",
-    "日日新"
-   ],
-   "sector": "vision",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.sensetime.com/en/join-us",
-   "us_signal": "SenseTime (US) Inc was NJ-registered pre-2019, wound down after Oct-2019 Entity List. LinkedIn still aggregates US-tagged roles; 'Head of Business Development, North America' posting seen 2024-25; vermilionchina.com reports a SenseTime team procuring US frontier tech. SenseCore is its AI-infra brand.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Shanghai, China (HK-inc Group)"
   },
   {
    "brand": "Shanghai AI Laboratory",
@@ -2161,23 +1797,6 @@
    "ats_hint": null,
    "careers_hint": "https://www.stonewise.cn/",
    "us_signal": "None found (CN only)",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing, China"
-  },
-  {
-   "brand": "Sugon",
-   "name": "Sugon",
-   "cn": "中科曙光",
-   "aliases": [
-    "Dawning Information Industry",
-    "曙光"
-   ],
-   "sector": "ai_infra",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": null,
-   "us_signal": "None — Entity List June 2019 (w/ Hygon/Higon); no US hiring. LCA null.",
    "lca_employers": [],
    "origin": "china",
    "hq": "Beijing, China"
@@ -2511,24 +2130,6 @@
    "hq": "Beijing, China"
   },
   {
-   "brand": "YITU Technology",
-   "name": "YITU Technology",
-   "cn": "依图科技",
-   "aliases": [
-    "YITU",
-    "依图",
-    "依图科技"
-   ],
-   "sector": "vision",
-   "evidence": "probe_A",
-   "ats_hint": null,
-   "careers_hint": "https://www.yitutech.com/en/join-us",
-   "us_signal": "Former US expansion (YITU-US ~2019) wound down after Entity List (Oct 2019 batch); LCA null.",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Shanghai, China"
-  },
-  {
    "brand": "Yarbo",
    "name": "Yarbo",
    "cn": "汉阳科技",
@@ -2547,30 +2148,6 @@
    "hq": "Shenzhen, China (dual: Ronkonkoma, NY US)"
   },
   {
-   "brand": "Zhipu AI",
-   "name": "Zhipu AI",
-   "cn": "智谱AI",
-   "aliases": [
-    "Zhipu",
-    "ZhipuAI",
-    "Z.ai",
-    "Zhipu Qingyan",
-    "智谱清言",
-    "ChatGLM",
-    "GLM",
-    "BigModel",
-    "北京智谱华章科技"
-   ],
-   "sector": "llm",
-   "evidence": "probe_A",
-   "ats_hint": "feishu:zhipucampus",
-   "careers_hint": "https://www.zhipuai.cn/zh/joinus",
-   "us_signal": "International brand Z.ai + GLM open weights global; added to US Commerce Entity List Jan 2025; no US entity/hiring; no LCA filings",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Beijing, China"
-  },
-  {
    "brand": "Zhuiyi Technology",
    "name": "Zhuiyi Technology",
    "cn": "追一科技",
@@ -2586,31 +2163,6 @@
    "lca_employers": [],
    "origin": "china",
    "hq": "Shenzhen, China"
-  },
-  {
-   "brand": "iFLYTEK",
-   "name": "iFLYTEK",
-   "cn": "科大讯飞",
-   "aliases": [
-    "IFLYTEK",
-    "Xinghuo",
-    "Xunfei",
-    "iFLYTEK",
-    "iFlytek",
-    "iFlytek Open Platform",
-    "iFlytek Spark",
-    "科大讯飞",
-    "讯飞",
-    "讯飞星火"
-   ],
-   "sector": "ai_education_voice",
-   "evidence": "probe_A",
-   "ats_hint": "zhiye:iflytek",
-   "careers_hint": "https://iflytek.zhiye.com/jobs",
-   "us_signal": "Indeed company page (US); iFlytek US arm historically limited (entity on US entity lists — FCC/DoD restrictions); CN zhiye board is main surface",
-   "lca_employers": [],
-   "origin": "china",
-   "hq": "Hefei, China"
   },
   {
    "brand": "iMotion",
@@ -2670,7 +2222,9 @@
     "AKOOL INC"
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "Palo Alto, CA, USA"
+   "hq": "Palo Alto, CA, USA",
+   "s24_verdict": "s24_park_no_surface",
+   "s24_note": "No direct ATS surface (LinkedIn 3 roles; homepage has no careers path). China ops: 3 Shanghai entities (origin b2). Re-probe when a board appears."
   },
   {
    "brand": "AutoX",
@@ -2687,7 +2241,9 @@
    "us_signal": "San Jose HQ robotaxi; consider.com ATS board w/ San Jose locations",
    "lca_employers": [],
    "origin": "us_inc_chinese_founders",
-   "hq": "San Jose, CA, US"
+   "hq": "San Jose, CA, US",
+   "s24_verdict": "s24_park_board_empty",
+   "s24_note": "consider.com/boards/co/autox LIVE but \"No jobs found\" (2026-10-02); autox.ai/en/careers.html = 404. RE contract for Consider: POST /api-boards/search-jobs {\"meta\":{\"size\":15},\"board\":{\"id\":\"autox\",\"isParent\":false},\"query\":{\"promoteFeatured\":true}} + X-CSRF-Token (session-derived; headless-capture works). Re-check when jobs appear."
   },
   {
    "brand": "CAMEL-AI",
@@ -2746,7 +2302,9 @@
    "us_signal": "US HQ; Ashby board jobs.ashbyhq.com/creatify (verified); ~5 open roles; no LCA filings yet",
    "lca_employers": [],
    "origin": "us_inc_chinese_founders",
-   "hq": "San Mateo, CA, USA"
+   "hq": "San Mateo, CA, USA",
+   "s24_verdict": "s24_gray_zone_china_remote_no_entity",
+   "s24_note": "Gray zone: ≥3 V2EX China-remote rounds (30k+ RMB/mo), no CN entity; US side ashby:creatify ~5 roles. Default skip; user may override."
   },
   {
    "brand": "Curacloud Corporation",
@@ -2763,7 +2321,9 @@
    "us_signal": "Seattle US-inc medical-AI services (Chinese-founded team); serves US health systems; LCA not isolated in FY26Q3",
    "lca_employers": [],
    "origin": "us_inc_chinese_founders",
-   "hq": "Seattle, WA, US"
+   "hq": "Seattle, WA, US",
+   "s24_verdict": "s24_park_no_surface",
+   "s24_note": "Rebranded Keya Medical 科亚医疗 (dual HQ Seattle+Shenzhen, 70+ CN R&D — origin b2). curacloudcorp.com DEAD; keyamedical.com is WordPress with no careers path; US hiring via LinkedIn posts. Re-probe when a board appears. ⚠ homonym curacloud.in = Indian startup."
   },
   {
    "brand": "Dify",
@@ -2784,7 +2344,9 @@
     "LANGGENIUS, INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "US + Singapore + China (distributed; founded Beijing 2023)"
+   "hq": "US + Singapore + China (distributed; founded Beijing 2023)",
+   "s24_verdict": "s24_wire_honest0",
+   "s24_note": "custom:dify adapter (join.dify.ai supabase public-jobs API); 4 jobs all-China today = honest 0 US. China ops: 苏州语灵 entity + Suzhou/Shanghai offices (origin b1)."
   },
   {
    "brand": "Fireworks AI",
@@ -2903,7 +2465,9 @@
    "us_signal": "Dual HQ Boston (US-incorporated entity; MIT photonic-computing origin, founder 沈亦晨 Yichen Shen); startup.jobs lists US roles; LCA null in FY26Q3.",
    "lca_employers": [],
    "origin": "us_inc_chinese_founders",
-   "hq": "Shanghai, China + Boston, USA"
+   "hq": "Shanghai, China + Boston, USA",
+   "s24_verdict": "s24_wire_honest0",
+   "s24_note": "workable:lightelligence account live, jobs:[] today; wired honest-0. China ops: Shanghai+Hangzhou, HK-listed 01879.HK (origin b2). Harvard FAS posting (Field App Eng) = active US hiring."
   },
   {
    "brand": "MyShell",
@@ -2921,7 +2485,9 @@
    "us_signal": "Relocated from China to US (SF); remote roles advertised (wellfound/dailyremote); no US LCA entity",
    "lca_employers": [],
    "origin": "us_inc_chinese_founders",
-   "hq": "San Francisco, CA, USA (originally Shanghai, China)"
+   "hq": "San Francisco, CA, USA (originally Shanghai, China)",
+   "s24_verdict": "s24_gray_zone_china_remote_no_entity",
+   "s24_note": "Gray zone: systematic China-remote hiring (Zhihu rounds), founder Shanghai-based, but NO CN entity/office; tiny team, no own ATS board. Default skip per policy bar (no legal entity = no major operation); user may override."
   },
   {
    "brand": "Nexa AI",
@@ -3060,7 +2626,9 @@
     "ZILLIZ INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "Redwood City, CA, USA (Chinese founder; R&D roots in Hangzhou)"
+   "hq": "Redwood City, CA, USA (Chinese founder; R&D roots in Hangzhou)",
+   "s24_verdict": "s24_wire",
+   "s24_note": "lever:zilliz LIVE 12 postings / 8 US (Redwood City/NY/Seattle/Austin); wired as watch 84. China ops: 上海赜睿 + 3 mainland offices (origin b2)."
   }
  ],
  "rejected": [
@@ -3155,6 +2723,542 @@
    "origin": "china",
    "hq": "Beijing, China",
    "reject_reason": "status=merged"
+  }
+ ],
+ "sanctioned_skip": [
+  {
+   "brand": "Huawei",
+   "name": "Huawei",
+   "cn": "华为",
+   "aliases": [
+    "Ascend",
+    "Huawei",
+    "Huawei Technologies",
+    "Pangu",
+    "华为",
+    "华为技术",
+    "昇腾",
+    "盘古大模型"
+   ],
+   "sector": "llm",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://career.huawei.com/",
+   "us_signal": "US Entity List (expanded 2019+) — US hiring effectively frozen; ZERO LCA filings FY2026Q3; Pangu LLM + Ascend AI chips; hires heavily outside US",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Shenzhen, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2019-05-16 (FR 2019-10616); DoD 1260H",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "iFLYTEK",
+   "name": "iFLYTEK",
+   "cn": "科大讯飞",
+   "aliases": [
+    "IFLYTEK",
+    "Xinghuo",
+    "Xunfei",
+    "iFLYTEK",
+    "iFlytek",
+    "iFlytek Open Platform",
+    "iFlytek Spark",
+    "科大讯飞",
+    "讯飞",
+    "讯飞星火"
+   ],
+   "sector": "ai_education_voice",
+   "evidence": "probe_A",
+   "ats_hint": "zhiye:iflytek",
+   "careers_hint": "https://iflytek.zhiye.com/jobs",
+   "us_signal": "Indeed company page (US); iFlytek US arm historically limited (entity on US entity lists — FCC/DoD restrictions); CN zhiye board is main surface",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Hefei, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2019-10-09 (FR 2019-22210, 28-entity rule)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "SenseTime",
+   "name": "SenseTime",
+   "cn": "商汤科技",
+   "aliases": [
+    "SenseChat",
+    "SenseCore",
+    "SenseNova",
+    "SenseTime",
+    "SenseTime Group",
+    "Sensecore",
+    "商汤",
+    "商汤科技",
+    "日日新"
+   ],
+   "sector": "vision",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.sensetime.com/en/join-us",
+   "us_signal": "SenseTime (US) Inc was NJ-registered pre-2019, wound down after Oct-2019 Entity List. LinkedIn still aggregates US-tagged roles; 'Head of Business Development, North America' posting seen 2024-25; vermilionchina.com reports a SenseTime team procuring US frontier tech. SenseCore is its AI-infra brand.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Shanghai, China (HK-inc Group)",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2019-10-09; OFAC NS-CMIC",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Megvii",
+   "name": "Megvii",
+   "cn": "旷视科技",
+   "aliases": [
+    "Face++",
+    "KuangShi",
+    "MegBrain",
+    "Megvii",
+    "Megvii Technology",
+    "旷视",
+    "旷视科技"
+   ],
+   "sector": "vision",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://en.megvii.com/join_us/",
+   "us_signal": "Megvii USA Inc existed ~2018-19 (US expansion) then wound down after Oct-2019 Entity List; no current US hiring evidence, LCA null.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2019-10-09; OFAC NS-CMIC",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Hikvision",
+   "name": "Hikvision",
+   "cn": "海康威视",
+   "aliases": [
+    "Hangzhou Hikvision Digital Technology",
+    "海康"
+   ],
+   "sector": "vision",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.hikvision.com/en/careers/",
+   "us_signal": "Hikvision USA Inc (City of Industry, CA) — large US sub historically hiring in sales/support; on Entity List Oct 2019, still operating US sales arm. No FY26 LCA filings found (sanctions chill).",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Hangzhou, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2019-10-09; OFAC NS-CMIC; DoD 1260H",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Dahua Technology",
+   "name": "Dahua Technology",
+   "cn": "大华股份",
+   "aliases": [
+    "Zhejiang Dahua",
+    "大华"
+   ],
+   "sector": "vision",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.dahuasecurity.com/aboutUs/careers",
+   "us_signal": "Dahua Technology USA Inc (Irvine, CA) sales arm; Entity List Oct 2019. LCA null in FY26Q3 file.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Hangzhou, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2019-10-09 (28-entity rule)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Sugon",
+   "name": "Sugon",
+   "cn": "中科曙光",
+   "aliases": [
+    "Dawning Information Industry",
+    "曙光"
+   ],
+   "sector": "ai_infra",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": null,
+   "us_signal": "None — Entity List June 2019 (w/ Hygon/Higon); no US hiring. LCA null.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2019-06-24 (FR 2019-13245, supercomputer rule)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Hygon",
+   "name": "Hygon",
+   "cn": "海光信息",
+   "aliases": [
+    "Hygon Information Technology",
+    "海光"
+   ],
+   "sector": "chips",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": null,
+   "us_signal": "None — Chengdu Haiguang/Hygon under US Entity List since June 2019; no US hiring. LCA null.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing/Tianjin, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2019-06-24 (Sugon/Higon action — design arms listed)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "CloudMinds",
+   "name": "CloudMinds",
+   "cn": "达闼机器人",
+   "aliases": [
+    "CloudMinds Group",
+    "达闼"
+   ],
+   "sector": "robotics",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.cloudminds.com/careers",
+   "us_signal": "CloudMinds Technology Inc — Silicon Valley + Los Angeles offices (Built In LA employer profile; Indeed CA salaries). Founder Bill Huang ex-China Mobile/UTStarcom. LCA null in FY26Q3.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Shanghai, China + Santa Clara/LA, USA",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2020-05 (33-entity rule)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "YITU Technology",
+   "name": "YITU Technology",
+   "cn": "依图科技",
+   "aliases": [
+    "YITU",
+    "依图",
+    "依图科技"
+   ],
+   "sector": "vision",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.yitutech.com/en/join-us",
+   "us_signal": "Former US expansion (YITU-US ~2019) wound down after Entity List (Oct 2019 batch); LCA null.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Shanghai, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2019-10-09 (8 surveillance/AI firms)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Zhipu AI",
+   "name": "Zhipu AI",
+   "cn": "智谱AI",
+   "aliases": [
+    "Zhipu",
+    "ZhipuAI",
+    "Z.ai",
+    "Zhipu Qingyan",
+    "智谱清言",
+    "ChatGLM",
+    "GLM",
+    "BigModel",
+    "北京智谱华章科技"
+   ],
+   "sector": "llm",
+   "evidence": "probe_A",
+   "ats_hint": "feishu:zhipucampus",
+   "careers_hint": "https://www.zhipuai.cn/zh/joinus",
+   "us_signal": "International brand Z.ai + GLM open weights global; added to US Commerce Entity List Jan 2025; no US entity/hiring; no LCA filings",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2025-01 (FR 2025-00704)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Cambricon",
+   "name": "Cambricon",
+   "cn": "寒武纪",
+   "aliases": [
+    "Cambricon Technologies",
+    "寒武纪科技"
+   ],
+   "sector": "chips",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.cambricon.com/join-us",
+   "us_signal": "No US entity; reportedly on US 1260H/restricted lists; LCA null.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List (confirmed live: sanctionschecklist + sanctions-finder)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "SOPHGO",
+   "name": "SOPHGO",
+   "cn": "算能科技",
+   "aliases": [
+    "SOPHGO",
+    "算能",
+    "Sophon"
+   ],
+   "sector": "chips",
+   "evidence": "wire_now",
+   "ats_hint": "successfactors:jobs.sophgo.com",
+   "careers_hint": "https://jobs.sophgo.com/site/language.html?lang=en-US",
+   "us_signal": "SOPHGO Inc (Santa Clara, CA) US entity w/ active careers portal (jobs.sophgo.com, SuccessFactors; jobs-en.sophgo.com/experienced). US 1260H/Entity-List pressure (2025, via Bitmain link). LCA null in FY26Q3 (US headcount may be small/contract-based).",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing, China + Santa Clara, USA",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2025-01 (FR 2025-00480, 16-entity rule)",
+   "tier_before_sanction": "wire_now"
+  },
+  {
+   "brand": "Moore Threads",
+   "name": "Moore Threads",
+   "cn": "摩尔线程",
+   "aliases": [
+    "Moore Threads Technology",
+    "摩尔线程"
+   ],
+   "sector": "chips",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.mthreads.com/jobs",
+   "us_signal": "myvisajobs has a Moore Threads employer page (historic/weak; no FY26Q3 LCA filings found); reportedly on US 1260H list (2025).",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2023-10 (FR 2023-23048, 13-entity rule)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Biren Technology",
+   "name": "Biren Technology",
+   "cn": "壁仞科技",
+   "aliases": [
+    "Biren",
+    "壁仞"
+   ],
+   "sector": "chips",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.birentech.com/join",
+   "us_signal": "None found; LCA null. US export-control pressure (2023 rules targeted advanced CN GPUs); HK IPO process reported 2025.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Shanghai, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2023-10 (FR 2023-23048)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Inspur",
+   "name": "Inspur",
+   "cn": "浪潮集团",
+   "aliases": [
+    "Inspur Group",
+    "Inspur Electronic Information",
+    "浪潮"
+   ],
+   "sector": "ai_infra",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://career.inspur.com/",
+   "us_signal": "myvisajobs lists 'Inspur USA' employer (historic visa filings); 120+ 'Inspur' US roles on LinkedIn; US DoD list 2020 pressured US ops. No FY26Q3 LCA hit (INSPIR* miss).",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Jinan, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2025-03-28 (FR 2025-05427, six Inspur entities); DoD 1260H",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "CloudWalk",
+   "name": "CloudWalk",
+   "cn": "云从科技",
+   "aliases": [
+    "CloudWalk",
+    "云从科技",
+    "从容大模型"
+   ],
+   "sector": "llm",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.cloudwalk.com/joinus",
+   "us_signal": "US Entity List; no US hiring; no LCA filings",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Guangzhou, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "OFAC NS-CMIC / CMIC-EO13959 (id 33112) — not BIS Entity List",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "CloudWalk Technology",
+   "name": "CloudWalk Technology",
+   "cn": "云从科技",
+   "aliases": [
+    "CloudWalk",
+    "云从"
+   ],
+   "sector": "vision",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://www.cloudwalk.com/en/join.html",
+   "us_signal": "No US entity; Entity List (Oct 2019). CAUTION: 'CloudWalk, Inc.' / lp.cloudwalk.io is a Brazilian fintech — different company.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Guangzhou, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "OFAC NS-CMIC (same company as CloudWalk — census duplicate)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Intellifusion",
+   "name": "Intellifusion",
+   "cn": "云天励飞",
+   "aliases": [
+    "Intellifusion",
+    "云天励飞"
+   ],
+   "sector": "vision",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": null,
+   "us_signal": "None found; reportedly in Oct-2019 Entity List batch; LCA null.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Shenzhen, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List (surveillance-AI wave; sanctionschecklist BIS_9fd7cd8b270d)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Qihoo 360",
+   "name": "Qihoo 360",
+   "cn": "奇虎360",
+   "aliases": [
+    "Qihoo 360",
+    "360",
+    "奇虎360",
+    "360智脑",
+    "纳米AI",
+    "Nami AI"
+   ],
+   "sector": "llm",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://career.360.cn/",
+   "us_signal": "No US presence (US sanctions history); 360智脑 LLM + Nami AI agent-search domestic; no LCA filings",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List 2020-05-22 (33-entity rule)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "H3C / New H3C",
+   "name": "H3C / New H3C",
+   "cn": "新华三集团",
+   "aliases": [
+    "New H3C",
+    "紫光股份",
+    "H3C"
+   ],
+   "sector": "ai_infra",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": null,
+   "us_signal": "None current (H3C US legacy from 3Com/H3C era pre-2015). LCA null.",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Hangzhou, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "New H3C Semiconductor Technologies on BIS Entity List (sanctions-finder + sanctionschecklist + getembargo)",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "4Paradigm",
+   "name": "4Paradigm",
+   "cn": "第四范式",
+   "aliases": [
+    "4Paradigm",
+    "4Paradigm Inc",
+    "Paradigm 4",
+    "phancy.ai",
+    "第四范式"
+   ],
+   "sector": "ai_enterprise_saas",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://en.4paradigm.com/careers",
+   "us_signal": "No US office/hiring evidence found (searches hit homonym Paradigm companies); HK-listed 6682",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing, China",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "BIS Entity List (sanctions-finder + SCMP 'files for IPO again after US sanctions')",
+   "tier_before_sanction": "probe_A"
+  },
+  {
+   "brand": "Fourth Paradigm",
+   "name": "Fourth Paradigm",
+   "cn": "第四范式",
+   "aliases": [
+    "Fourth Paradigm",
+    "4Paradigm",
+    "第四范式",
+    "Phancy Group",
+    "式说"
+   ],
+   "sector": "llm",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://en.4paradigm.com/",
+   "us_signal": "US Entity List (2022) — US business restricted; HK-listed; no LCA filings; s18 search artifact exists in repo",
+   "lca_employers": [],
+   "origin": "china",
+   "hq": "Beijing, China (HK-listed 6682.HK)",
+   "s24_verdict": "sanctioned_skip",
+   "s24_note": "same company as 4Paradigm (official English name) — census duplicate",
+   "tier_before_sanction": "probe_A"
+  }
+ ],
+ "restricted_watch": [
+  {
+   "brand": "DJI",
+   "name": "DJI",
+   "cn": "大疆创新",
+   "aliases": [
+    "DJI Agriculture",
+    "DJI Technology",
+    "Da-Jiang Innovations",
+    "大疆"
+   ],
+   "sector": "robotics",
+   "evidence": "probe_A",
+   "ats_hint": null,
+   "careers_hint": "https://we.dji.com/zh-CN/position",
+   "us_signal": "LCA DJI TECHNOLOGY INC (3 filings, Burbank CA); US offices (Burbank CA, Cerritos); agriculture/enterprise robotics US sales",
+   "lca_employers": [
+    "DJI TECHNOLOGY INC."
+   ],
+   "origin": "china",
+   "hq": "Shenzhen, China",
+   "s24_verdict": "restricted_watch",
+   "s24_note": "DoD 1260H 'Chinese military companies' + Commerce MEU list — NOT on BIS Entity List (surface probing allowed; wiring needs a user call)",
+   "tier_before_restriction": "probe_A"
   }
  ]
 }

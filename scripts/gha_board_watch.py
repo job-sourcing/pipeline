@@ -938,6 +938,31 @@ def _legs_bump(label: str) -> int:
 
 
 _EGRESS_STREAK_CAP = 14      # ~2 weeks of daily blocked legs -> failed
+_UNREACH_STREAK_CAP = 14     # S24: undeclared network-death -> failed
+
+
+def _streak_bump(label: str, key: str) -> int:
+    """Consecutive-leg counter bump in the legs meta (generic S24 form;
+    the egress_streak contract shares it)."""
+    meta = WATCH_DIR / f"{label}.legs.json"
+    try:
+        m = json.loads(meta.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        m = {}
+    m[key] = int(m.get(key, 0)) + 1
+    _atomic_write(meta, json.dumps(m))
+    return m[key]
+
+
+def _streak_reset(label: str, key: str) -> None:
+    meta = WATCH_DIR / f"{label}.legs.json"
+    try:
+        m = json.loads(meta.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return
+    if m.get(key):
+        m[key] = 0
+        _atomic_write(meta, json.dumps(m))
 
 
 def _egress_streak_bump(label: str) -> int:
@@ -1009,11 +1034,30 @@ def _egress_blocked(w: dict, exc: Exception) -> bool:
                             ConnectionError, OSError, ssl.SSLError))
 
 
+def _net_transient(exc: Exception) -> bool:
+    """S24 (run 36872298267: blacksesame ConnectTimeout): a NETWORK-class
+    exception on an UNDECLARED board in the LIST phase — TCP timeouts /
+    resets / DNS / TLS handshakes. Server ANSWERS (HTTP verdicts) are
+    never transients (they still fail loudly, as does parse-level
+    silent-empty: those are the renamed-board traps). A network-class
+    failure writes NO state — no silent-empty risk — so the honest
+    classification is 'unreachable' with a cross-date streak, escalating
+    to failed only when the board is persistently dead."""
+    if isinstance(exc, urllib.error.HTTPError):
+        return False               # server answered with a verdict
+    if getattr(exc, "response", None) is not None:
+        return False               # requests.HTTPError carries .response
+    return isinstance(exc, (urllib.error.URLError, TimeoutError,
+                            ConnectionError, OSError, ssl.SSLError))
+
+
 def run_watch(w: dict, cfg: Config) -> str:
     """One watch pass. Returns 'complete' | 'backlog' | 'failed' |
     'egress_blocked' (S18: a DECLARED egeo-restricted board whose
     network-class failure on this egress is loud-but-not-failed —
-    state untouched, auto-recovers)."""
+    state untouched, auto-recovers) | 'unreachable' (S24: an UNDECLARED
+    board whose LIST fetch hit a network-class transient — same
+    loud-but-not-failed contract, streak-based escalation)."""
     label = w["label"]
     # S12 multi-company: per-company LI matching knowledge from the watch
     # config (card company variants + partitioned-index slice geography).
@@ -1072,9 +1116,31 @@ def run_watch(w: dict, cfg: Config) -> str:
                     f"watch")
                 return "failed"
             return "egress_blocked"
+        if _net_transient(exc):
+            # S24: undeclared network transient — loud alert, state
+            # untouched, streak escalates to failed only when the board
+            # is persistently unreachable (likely dead, not flaky)
+            streak = _streak_bump(label, "unreach_streak")
+            note = (f"list fetch network-failed (undeclared board; "
+                    f"{type(exc).__name__}: {exc}) — UNREACHABLE, state "
+                    f"untouched; streak {streak}/{_UNREACH_STREAK_CAP}")
+            print(f"[watch:{label}] {note}", file=sys.stderr, flush=True)
+            with open(WATCH_DIR / f"{label}.alerts.log", "a",
+                      encoding="utf-8") as lf:
+                lf.write(f"board-watch {label} UNREACHABLE: {note}"
+                         f"\n({_now_iso()})\n\n")
+            if streak >= _UNREACH_STREAK_CAP:
+                _fail_summary(
+                    f"UNREACHABLE STREAK CAP HIT ({streak} legs) — "
+                    f"escalating to failed: the board is persistently "
+                    f"network-dead from this egress; check the board URL "
+                    f"and the adapter transport")
+                return "failed"
+            return "unreachable"
         _fail_summary(f"list fetch crashed ({type(exc).__name__}: {exc})")
         return "failed"
     _egress_streak_reset(label)   # the block lifted — streak cleared
+    _streak_reset(label, "unreach_streak")  # S24: net healthy again
     if not current and not list_complete:
         _fail_summary("LIST FAILED — nothing to diff; state untouched "
                       "(fail-safe)")

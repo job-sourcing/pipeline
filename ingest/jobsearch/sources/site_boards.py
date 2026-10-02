@@ -8102,6 +8102,132 @@ class UniviewAdapter:
         }
 
 
+class DifyAdapter:
+    """spec org = the supabase project ref (join.dify.ai/roles.html embeds
+    GET https://<ref>.supabase.co/functions/v1/public-jobs?lang=en — the
+    S24 live-board contract). Jobs carry id/title/department/location/
+    work_site/seniority/employment_type/content/benefits/created_at.
+    Location dialect (the page's own getCountries()): ' / ' segments;
+    if ANY segment has a comma those are 'Country, City', else each bare
+    segment is a country; Remote/Hybrid segments never yield countries.
+    US rule: country == 'USA'. Apply = mailto:joinus@dify.ai (no per-job
+    detail page; externalUrl = the roles page)."""
+
+    KIND = "dify"
+
+    def __init__(self, org: str, cfg: Config):
+        if not org:
+            org = "qcnurokxgtyuimuixztr"      # custom: grammar — ref baked
+        self.org = org
+        self.cfg = cfg
+
+    def _jobs(self) -> list:
+        key = f"dify:{self.org}"
+        cached = _CACHE.get(key)
+        if cached and time.monotonic() - cached[0] < _CACHE_TTL:
+            return cached[1]
+        url = (f"https://{self.org}.supabase.co/functions/v1/"
+               "public-jobs?lang=en")
+        import urllib.request
+        req = urllib.request.Request(url, headers={
+            "Accept": "application/json",
+            "User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = json.loads(r.read().decode("utf-8", "replace"))
+        jobs = data.get("jobs") if isinstance(data, dict) else data
+        jobs = [j for j in (jobs or []) if isinstance(j, dict)]
+        _CACHE[key] = (time.monotonic(), jobs)
+        return jobs
+
+    @staticmethod
+    def _countries(loc: str) -> list:
+        if not loc:
+            return ["Other"]
+        parts = [p.strip() for p in loc.split("/")]
+        has_comma = any("," in p for p in parts)
+        out: list = []
+        for p in parts:
+            if not p or re.match(r"^(remote|hybrid)$", p, re.I):
+                continue
+            country = (p.split(",")[0].strip() if (has_comma and "," in p)
+                       else (p if not has_comma else None))
+            if country and country not in out:
+                out.append(country)
+        return out or ["Other"]
+
+    def _row_of(self, j: dict) -> dict:
+        loc = str(j.get("location") or "")
+        countries = self._countries(loc)
+        is_us = any(c.upper() in ("USA", "UNITED STATES", "U.S.")
+                    for c in countries)
+        content = str(j.get("content") or "")
+        desc = unescape(re.sub(r"<[^>]+>", "\n", content))
+        desc = re.sub(r"\n{2,}", "\n", desc).strip() or "(see posting)"
+        rid = str(j.get("id") or _slugify(str(j.get("title") or "")))
+        return {"rid": rid, "title": str(j.get("title") or ""),
+                "desc": desc, "us": is_us, "loc": loc,
+                "dept": str(j.get("department") or ""),
+                "work": str(j.get("employment_type") or
+                            j.get("work_site") or "")}
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list"
+                   ) -> tuple[dict[str, dict], dict]:
+        rows: dict[str, dict] = {}
+        dropped = 0
+        for j in self._jobs():
+            r = self._row_of(j)
+            if country and not r["us"]:
+                dropped += 1
+                continue
+            rows[r["rid"]] = {
+                "reqId": r["rid"], "title": r["title"],
+                "company": "Dify (LangGenius)",
+                "url": f"https://join.dify.ai/roles.html",
+                "externalPath": f"/{r['rid']}",
+                "locationsText": r["loc"] or "See posting",
+                "postedOn": str(j.get("created_at") or "")[:10],
+                "timeType": r["work"],
+                "bulletFields": [r["rid"]], "ats": "dify",
+            }
+        meta = {"rows": len(rows), "total": len(rows) + dropped,
+                "complete": True, "pages": 1,
+                "client_filtered": dropped,
+                "client_filtered_country": dropped,
+                "client_filtered_time": 0}
+        print(f"[{progress_label}] dify:{self.org}: {len(rows)} rows "
+              f"({dropped} non-{country or '-'} dropped)")
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/")
+        j = next((x for x in self._jobs()
+                  if str(x.get("id")) == rid), None)
+        if j is None:
+            return None
+        r = self._row_of(j)
+        return {
+            "jobPostingInfo": {
+                "title": r["title"],
+                "location": r["loc"] or "See posting",
+                "additionalLocations": [],
+                "jobDescription": r["desc"],
+                "timeType": r["work"],
+                "startDate": "",
+                "externalUrl": "https://join.dify.ai/roles.html",
+                "jobReqId": rid,
+                "postedOn": str(j.get("created_at") or "")[:10],
+                "country": {"descriptor": "US" if r["us"] else None},
+            },
+            "hiringOrganization": {"name": "Dify (LangGenius)"},
+            "similarJobs": [],
+        }
+
+
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "lever": LeverAdapter, "workable": WorkableAdapter,
              "feishuhire": FeishuHireAdapter,
@@ -8132,4 +8258,7 @@ _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "ecovacsus": EcovacsUSAdapter, "accutar": AccutarAdapter,
              "hitgen": HitGenAdapter, "insilico": InsilicoAdapter,
              "orbbec": OrbbecAdapter, "visionnav": VisionNavAdapter,
-             "verisilicon": VeriSiliconAdapter, "uniview": UniviewAdapter}
+             "verisilicon": VeriSiliconAdapter, "uniview": UniviewAdapter,
+             # S24 origin-policy wire (China-ops test passed; contract =
+             # the join.dify.ai supabase public-jobs API)
+             "dify": DifyAdapter}

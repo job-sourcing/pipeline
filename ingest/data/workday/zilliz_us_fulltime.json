@@ -1,0 +1,581 @@
+{
+ "board": "ats:lever:zilliz",
+ "company": "Zilliz",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-02",
+ "count": 10,
+ "details_merged": 10,
+ "signals_matched": 9,
+ "similar_edges": 0,
+ "facet_tagged_rows": 10,
+ "rows": [
+  {
+   "reqId": "f9a2360d-f610-4fa7-8fa0-594a1cbf7ed3",
+   "title": "Enterprise Account Executive - New York",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/f9a2360d-f610-4fa7-8fa0-594a1cbf7ed3",
+   "externalPath": "/f9a2360d-f610-4fa7-8fa0-594a1cbf7ed3",
+   "locationsText": "New York",
+   "postedOn": "Posted 347 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "f9a2360d-f610-4fa7-8fa0-594a1cbf7ed3"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-10-20",
+   "departments": [
+    "Accounts"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "remote",
+   "detail": {
+    "title": "Enterprise Account Executive - New York",
+    "location": "New York",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong>About the Role:</strong></div>\n<div>Zilliz is seeking a skilled and experienced Account Executive to assist with expanding our US sales efforts from the New York Metro Area. Our Sales Team at Zilliz is committed to promoting growth through innovative and strategic partnerships with our clients. We aim to assist businesses in thriving by providing solutions to the world's most challenging issues. As an Account Executive, you will inspire and guide customers on their data journey, resulting in more collaborative and productive organizations. Your role in the company is integral, as you can collaborate closely with business leaders to strategically develop your territory. With your passion for technology and determination to succeed, you will aid businesses in realizing their full potential through the strength of Zilliz.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/f9a2360d-f610-4fa7-8fa0-594a1cbf7ed3",
+    "jobReqId": "f9a2360d-f610-4fa7-8fa0-594a1cbf7ed3",
+    "postedOn": "Posted 347 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Accounts",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "23339c54-f28e-4580-b1f0-3b604a7acbc9",
+   "title": "Enterprise Account Executive - Seattle",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/23339c54-f28e-4580-b1f0-3b604a7acbc9",
+   "externalPath": "/23339c54-f28e-4580-b1f0-3b604a7acbc9",
+   "locationsText": "Seattle",
+   "postedOn": "Posted 408 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "23339c54-f28e-4580-b1f0-3b604a7acbc9"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-08-20",
+   "departments": [
+    "Accounts"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "remote",
+   "detail": {
+    "title": "Enterprise Account Executive - Seattle",
+    "location": "Seattle",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong>About the Role:</strong></div>\n<div>Zilliz is seeking a skilled and experienced Account Executive to assist with expanding our US sales efforts from the Seattle metro area. Our Sales Team at Zilliz is committed to promoting growth through innovative and strategic partnerships with our clients. We aim to assist businesses in thriving by providing solutions to the world's most challenging issues. As an Account Executive, you will inspire and guide customers on their data journey, resulting in more collaborative and productive organizations. Your role in the company is integral, as you can collaborate closely with business leaders to strategically develop your territory. With your passion for technology and determination to succeed, you will aid businesses in realizing their full potential through the strength of Zilliz.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/23339c54-f28e-4580-b1f0-3b604a7acbc9",
+    "jobReqId": "23339c54-f28e-4580-b1f0-3b604a7acbc9",
+    "postedOn": "Posted 408 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Accounts",
+   "signals": {
+    "linkedin_job_id": "4447554585",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4447554585",
+    "title": "Enterprise Account Executive - Seattle",
+    "company": "Zilliz",
+    "location": "Seattle, WA",
+    "linkedin_posted_date": "2026-09-07",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T03:04:41",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "3cf825a1-a659-4686-b992-3bf03f5b082c",
+   "title": "Enterprise Account Executive - SF Bay Area",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/3cf825a1-a659-4686-b992-3bf03f5b082c",
+   "externalPath": "/3cf825a1-a659-4686-b992-3bf03f5b082c",
+   "locationsText": "Redwood City",
+   "postedOn": "Posted 1226 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "3cf825a1-a659-4686-b992-3bf03f5b082c"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2023-05-25",
+   "departments": [
+    "Accounts"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Enterprise Account Executive - SF Bay Area",
+    "location": "Redwood City",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong>About the Role:</strong></div>\n<div>Zilliz is seeking a skilled and experienced Account Executive to assist with expanding our US sales efforts from the San Francisco Bay Area. Our Sales Team at Zilliz is committed to promoting growth through innovative and strategic partnerships with our clients. We aim to assist businesses in thriving by providing solutions to the world's most challenging issues. As an Account Executive, you will inspire and guide customers on their data journey, resulting in more collaborative and productive organizations. Your role in the company is integral, as you can collaborate closely with business leaders to strategically develop your territory. With your passion for technology and determination to succeed, you will aid businesses in realizing their full potential through the strength of Zilliz.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/3cf825a1-a659-4686-b992-3bf03f5b082c",
+    "jobReqId": "3cf825a1-a659-4686-b992-3bf03f5b082c",
+    "postedOn": "Posted 1226 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Accounts",
+   "signals": {
+    "linkedin_job_id": "4465615168",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4465615168",
+    "title": "Enterprise Account Executive - SF Bay Area",
+    "company": "Zilliz",
+    "location": "Redwood City, CA",
+    "linkedin_posted_date": "2026-09-10",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T03:04:39",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "4339166e-d342-4058-a4fe-4faaf97454ad",
+   "title": "Enterprise Account Executive - Texas",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/4339166e-d342-4058-a4fe-4faaf97454ad",
+   "externalPath": "/4339166e-d342-4058-a4fe-4faaf97454ad",
+   "locationsText": "Austin",
+   "postedOn": "Posted 171 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "4339166e-d342-4058-a4fe-4faaf97454ad"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-04-14",
+   "departments": [
+    "Accounts"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "remote",
+   "detail": {
+    "title": "Enterprise Account Executive - Texas",
+    "location": "Austin",
+    "additionalLocations": [],
+    "jobDescription": "<div><strong>About the Role:</strong></div>\n<div>Zilliz is seeking a skilled and experienced Account Executive to assist with expanding our US sales efforts from the greater Austin metro area. Our Sales Team at Zilliz is committed to promoting growth through innovative and strategic partnerships with our clients. We aim to assist businesses in thriving by providing solutions to the world's most challenging issues. As an Account Executive, you will inspire and guide customers on their data journey, resulting in more collaborative and productive organizations. Your role in the company is integral, as you can collaborate closely with business leaders to strategically develop your territory. With your passion for technology and determination to succeed, you will aid businesses in realizing their full potential through the strength of Zilliz.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/4339166e-d342-4058-a4fe-4faaf97454ad",
+    "jobReqId": "4339166e-d342-4058-a4fe-4faaf97454ad",
+    "postedOn": "Posted 171 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Accounts",
+   "signals": {
+    "linkedin_job_id": "4402036028",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4402036028",
+    "title": "Enterprise Account Executive - Texas",
+    "company": "Zilliz",
+    "location": "Austin, TX",
+    "linkedin_posted_date": "2026-04-14",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "5 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T03:04:43",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "e5453021-a075-4c18-8094-58215a26821d",
+   "title": "Lead Recruiter, US & Europe",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/e5453021-a075-4c18-8094-58215a26821d",
+   "externalPath": "/e5453021-a075-4c18-8094-58215a26821d",
+   "locationsText": "Redwood City",
+   "postedOn": "Posted 39 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "e5453021-a075-4c18-8094-58215a26821d"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-24",
+   "departments": [
+    "Talent Acquisition"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Lead Recruiter, US & Europe",
+    "location": "Redwood City",
+    "additionalLocations": [],
+    "jobDescription": "<h3>About the Role</h3>\n<p>We are looking for a Lead Recruiter to own recruiting across the United States and Europe and help build the teams behind Zilliz's next stage of growth.&nbsp;</p>\n<p>This is a senior individual contributor role with broad ownership across both recruiting strategy and execution. You will support technical and commercial functions, including Engineering, Product, GTM, and other business teams.</p>\n<p>You will work closely with company and functional leaders to understand business priorities, shape hiring strategies, and deliver against them. We are looking for someone who can think strategically about where and how we hire while remaining highly hands-on in the market.</p>\n<p>This role is based in our Redwood City office and is expected to work onsite at least three days per week.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/e5453021-a075-4c18-8094-58215a26821d",
+    "jobReqId": "e5453021-a075-4c18-8094-58215a26821d",
+    "postedOn": "Posted 39 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Talent Acquisition",
+   "signals": {
+    "linkedin_job_id": "4458168869",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4458168869",
+    "title": "Lead Recruiter, US & Europe",
+    "company": "Zilliz",
+    "location": "Redwood City, CA",
+    "linkedin_posted_date": "2026-08-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 month ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T03:04:38",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "67972bcb-e260-4f6f-a48a-00bccdfe2d8a",
+   "title": "Senior HR Manager, North America & Europe",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/67972bcb-e260-4f6f-a48a-00bccdfe2d8a",
+   "externalPath": "/67972bcb-e260-4f6f-a48a-00bccdfe2d8a",
+   "locationsText": "Redwood City",
+   "postedOn": "Posted 39 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "67972bcb-e260-4f6f-a48a-00bccdfe2d8a"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-08-24",
+   "departments": [
+    "Human Resources"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior HR Manager, North America & Europe",
+    "location": "Redwood City",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"FJSwdtdTao83v0x4iAqc8p6ln1e\">\n<h3><strong>About the Role</strong></h3>\n<div>We are looking for a Senior HR Manager to lead HR support across North America and Europe and help us continue building a scalable people organization as the company grows.</div>\n<div>&nbsp;</div>\n<div>This is a broad, hands-on role for an experienced HR leader who is comfortable working in a fast-moving, international environment. You will serve as the primary HR partner for teams across North America and Europe, lead the regional recruiting function, and take ownership of selected company-wide HR initiatives.</div>\n<div>&nbsp;</div>\n<div>You will work closely with business leaders, managers, global HR colleagues, external employment partners, and the recruiting team. The role offers meaningful ownership across both regional HR and broader organizational initiatives, with the opportunity to help shape how our people practices evolve as the company scales.</div>\n</div>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/67972bcb-e260-4f6f-a48a-00bccdfe2d8a",
+    "jobReqId": "67972bcb-e260-4f6f-a48a-00bccdfe2d8a",
+    "postedOn": "Posted 39 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Human Resources",
+   "signals": {
+    "linkedin_job_id": "4471189583",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471189583",
+    "title": "Senior HR Manager, North America & Europe",
+    "company": "Zilliz",
+    "location": "Redwood City, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T03:04:50",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "193ba194-6df6-4894-9f1b-05ace809c60a",
+   "title": "Senior Software Engineer, Cloud Platform",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/193ba194-6df6-4894-9f1b-05ace809c60a",
+   "externalPath": "/193ba194-6df6-4894-9f1b-05ace809c60a",
+   "locationsText": "Redwood City",
+   "postedOn": "Posted 102 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "193ba194-6df6-4894-9f1b-05ace809c60a"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-22",
+   "departments": [
+    "Cloud Platform"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Software Engineer, Cloud Platform",
+    "location": "Redwood City",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p>We're entering our next phase of 10x growth: more customers, larger datasets, more complex AI workloads, and higher expectations for reliability, performance, and cost efficiency. You'll join a small, fast-moving Cloud Platform team building the core platform capabilities that run Zilliz Cloud at scale across multi-cloud environments.</p>\n<p>This is not a standard control-plane platform role. You will work across both the cloud platform and database runtime, building cloud-and-engine integrated systems around Vector Lakebase so AI workloads can be scheduled faster, run more reliably, and serve real customers more efficiently.</p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/193ba194-6df6-4894-9f1b-05ace809c60a",
+    "jobReqId": "193ba194-6df6-4894-9f1b-05ace809c60a",
+    "postedOn": "Posted 102 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Cloud Platform",
+   "signals": {
+    "linkedin_job_id": "4431756290",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4431756290",
+    "title": "Senior Software Engineer, Cloud Platform",
+    "company": "Zilliz",
+    "location": "Redwood City, CA",
+    "linkedin_posted_date": "2026-06-22",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T03:04:34",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "7f796a0b-c1a5-4011-9e28-1cf9384e4c49",
+   "title": "Senior Software Engineer, Cloud Reliability",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/7f796a0b-c1a5-4011-9e28-1cf9384e4c49",
+   "externalPath": "/7f796a0b-c1a5-4011-9e28-1cf9384e4c49",
+   "locationsText": "Redwood City",
+   "postedOn": "Posted 505 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "7f796a0b-c1a5-4011-9e28-1cf9384e4c49"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-05-15",
+   "departments": [
+    "Cloud Platform"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Software Engineer, Cloud Reliability",
+    "location": "Redwood City",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p data-lark-html-role=\"root\">We're entering our next phase of 10x growth; more customers, larger datasets, and far higher expectations for reliability. You'll join a small, fast-moving Cloud Platform team that operates large-scale, multi-cloud, distributed database systems in production. This is a high-ownership role for engineers who want to move fast, build automation instead of toil, and take real responsibility for production stability.</p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/7f796a0b-c1a5-4011-9e28-1cf9384e4c49",
+    "jobReqId": "7f796a0b-c1a5-4011-9e28-1cf9384e4c49",
+    "postedOn": "Posted 505 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Cloud Platform",
+   "signals": {
+    "linkedin_job_id": "4466021702",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4466021702",
+    "title": "Senior Software Engineer, Cloud Reliability",
+    "company": "Zilliz",
+    "location": "Redwood City, CA",
+    "linkedin_posted_date": "2026-09-11",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T03:04:33",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "02848077-ca83-461e-87cd-e8b95d7f0c51",
+   "title": "Senior Software Engineer, Database Systems",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/02848077-ca83-461e-87cd-e8b95d7f0c51",
+   "externalPath": "/02848077-ca83-461e-87cd-e8b95d7f0c51",
+   "locationsText": "Redwood City",
+   "postedOn": "Posted 505 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "02848077-ca83-461e-87cd-e8b95d7f0c51"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2025-05-15",
+   "departments": [
+    "Vector Database"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Software Engineer, Database Systems",
+    "location": "Redwood City",
+    "additionalLocations": [],
+    "jobDescription": "<div>The Database Systems team builds the core engine behind Milvus and Zilliz Cloud Vector Lakebase; spanning storage, query execution, indexing, load balancing, resource management, and distributed system architecture. We build the next generation of vector databases around three Natives:</div>\n<ol>\n<li><strong>AI-Native:</strong> Born for AI and Agent workloads, with native support for vector data and semantic retrieval</li>\n<li><strong>Cloud-Native: </strong>Designed for elastic scaling and large-scale operation in the cloud</li>\n<li><strong>Lake-Native: </strong>Built on a data-lake architecture that works naturally with data at massive scale</li>\n</ol>\n<div>For this team, scalability, performance, cost efficiency, and reliability are the core engineering goals.</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/02848077-ca83-461e-87cd-e8b95d7f0c51",
+    "jobReqId": "02848077-ca83-461e-87cd-e8b95d7f0c51",
+    "postedOn": "Posted 505 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Vector Database",
+   "signals": {
+    "linkedin_job_id": "4466017851",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4466017851",
+    "title": "Senior Software Engineer, Database Systems",
+    "company": "Zilliz",
+    "location": "Redwood City, CA",
+    "linkedin_posted_date": "2026-09-11",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T03:04:35",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "5e73c85a-7acf-43f1-8936-68396bb74e82",
+   "title": "Senior Software Engineer, Vector Index Research",
+   "company": "zilliz",
+   "url": "https://jobs.lever.co/zilliz/5e73c85a-7acf-43f1-8936-68396bb74e82",
+   "externalPath": "/5e73c85a-7acf-43f1-8936-68396bb74e82",
+   "locationsText": "Redwood City",
+   "postedOn": "Posted 102 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "5e73c85a-7acf-43f1-8936-68396bb74e82"
+   ],
+   "ats": "lever",
+   "firstPublishedIso": "2026-06-22",
+   "departments": [
+    "Vector Database"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "hybrid",
+   "detail": {
+    "title": "Senior Software Engineer, Vector Index Research",
+    "location": "Redwood City",
+    "additionalLocations": [],
+    "jobDescription": "<div>\n<p>The Vector Index team focuses on building the core vector retrieval capabilities behind Milvus, Zilliz Cloud, and Vector Lakebase. We work on making similarity search over massive embedding datasets faster, more accurate, and more cost-efficient, while continuously advancing ANN algorithms, index structures, quantization, compression, recall optimization, CPU/GPU acceleration, and high-performance retrieval frameworks.</p>\n<p>This role sits at the intersection of research and engineering. You will read papers, evaluate new algorithms, build prototypes, and turn promising ideas into production-grade vector indexing and retrieval systems. We are looking for engineers who enjoy research, but also have strong engineering fundamentals, performance optimization skills, and engineering taste.</p>\n</div>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.lever.co/zilliz/5e73c85a-7acf-43f1-8936-68396bb74e82",
+    "jobReqId": "5e73c85a-7acf-43f1-8936-68396bb74e82",
+    "postedOn": "Posted 102 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "zilliz",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Vector Database",
+   "signals": {
+    "linkedin_job_id": "4431761213",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4431761213",
+    "title": "Senior Software Engineer, Vector Index Research",
+    "company": "Zilliz",
+    "location": "Redwood City, CA",
+    "linkedin_posted_date": "2026-06-22",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "3 months ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T03:04:37",
+    "match_method": "title"
+   }
+  }
+ ]
+}
