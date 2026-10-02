@@ -2,13 +2,13 @@
  "brand": "Adcentrx Therapeutics",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T12:07:08.707Z",
+ "ts": "2026-10-02T12:10:58.760Z",
  "candidates": [
   {
    "url": "https://www.adcentrx.com/careers/",
-   "title": "403 - Forbidden",
-   "status": 403,
-   "bytes": 75193,
+   "title": "",
+   "status": 202,
+   "bytes": 180,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -18,9 +18,9 @@
   },
   {
    "url": "https://www.biotech-careers.org/company/adcentrx-therapeutics",
-   "title": "403 - Forbidden",
-   "status": 403,
-   "bytes": 75193,
+   "title": "",
+   "status": 202,
+   "bytes": 201,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -32,7 +32,7 @@
    "url": "https://www.employbl.com/companies/adcentrx-therapeutics/jobs",
    "title": "Vercel Security Checkpoint",
    "status": 429,
-   "bytes": 31202,
+   "bytes": 31198,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -58,14 +58,14 @@
    "s": "Find out what works well at Adcentrx Therapeutics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
   },
   {
-   "t": "Join us - Century Therapeutics",
-   "u": "https://www.centurytx.com/join-us/",
-   "s": "At Century, we are on a mission to expand access to life-saving cancer immunotherapies by engineering the best immune cell products and efficiently bring them t"
-  },
-  {
    "t": "Adcentrx Therapeutics | Biotech Careers",
    "u": "https://www.biotech-careers.org/company/adcentrx-therapeutics",
    "s": "Adcentrx Therapeutics is a biotechnology company focused on protein conjugate therapeutic development for cancer and other life-threatening diseases."
+  },
+  {
+   "t": "Join us - Century Therapeutics",
+   "u": "https://www.centurytx.com/join-us/",
+   "s": "At Century, we are on a mission to expand access to life-saving cancer immunotherapies by engineering the best immune cell products and efficiently bring them t"
   },
   {
    "t": "Adcentrx Therapeutics - LinkedIn",
@@ -98,19 +98,9 @@
    "s": "Adcentrx Therapeutics is a biotechnology company focused on accelerating breakthroughs in developing protein conjugate therapeutics for cancer and other life-th"
   },
   {
-   "t": "ADC Therapeutics - Job Opportunities - Paylocity",
-   "u": "https://recruiting.paylocity.com/recruiting/jobs/All/8759d8d9-b6f5-49b5-b817-f3c4f69a25ed/ADC-Therapeutics-America-Inc",
-   "s": "ADC Therapeutics Careers Page - View all jobs and opportunities at ADC Therapeutics and apply today. | Powered By Paylocity"
-  },
-  {
    "t": "Adcentrx Therapeutics Jobs + Careers | Built In",
    "u": "https://builtin.com/company/adcentrx-therapeutics/jobs",
    "s": "Explore jobs and careers at Adcentrx Therapeutics. Adcentrx Therapeutics is currently hiring for a range of positions."
-  },
-  {
-   "t": "Adcentrx Therapeutics | Biotech Careers",
-   "u": "https://www.biotech-careers.org/company/adcentrx-therapeutics",
-   "s": "Adcentrx Therapeutics is a biotechnology company focused on protein conjugate therapeutic development for cancer and other life-threatening diseases."
   },
   {
    "t": "Adcentrx Therapeutics - Jobs & Pipeline | Formulate",
@@ -118,9 +108,19 @@
    "s": "Focus: Adcentrx Therapeutics is an early-stage oncology-focused biotechnology company specializing in antibody-drug conjugate (ADC) development based in San Die"
   },
   {
+   "t": "Adcentrx Therapeutics | Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/adcentrx-therapeutics",
+   "s": "Adcentrx Therapeutics is a biotechnology company focused on protein conjugate therapeutic development for cancer and other life-threatening diseases."
+  },
+  {
    "t": "Jobs at Adcentrx Therapeutics",
    "u": "https://www.employbl.com/companies/adcentrx-therapeutics/jobs",
    "s": "Find your next job at Adcentrx Therapeutics! See all jobs, funding information, investors and more about thousands of startups and tech companies on Employbl."
+  },
+  {
+   "t": "Adcentrx Therapeutics Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/adcentrx-therapeutics",
+   "s": "Learn more about Adcentrx Therapeutics. Find jobs, explore benefits, and research company culture at Built In."
   },
   {
    "t": "Careers - Adcentrx Therapeutics",
