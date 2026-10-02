@@ -2,7 +2,7 @@
  "brand": "API7",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T11:56:21.213Z",
+ "ts": "2026-10-02T11:59:33.131Z",
  "candidates": [
   {
    "url": "https://api7.ai/",
@@ -20,7 +20,7 @@
    "url": "https://www.apigroupinc.com/careers",
    "title": "Attention Required! | Cloudflare",
    "status": 403,
-   "bytes": 5487,
+   "bytes": 5489,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -50,14 +50,14 @@
    "s": "As a leader on our team, we'll equip you with the industry's best resources and premier opportunities to grow your career, invest in your well-being, and connec"
   },
   {
-   "t": "API Careers | American Petroleum Institute | API",
-   "u": "https://www.api.org/about/careers",
-   "s": "API is an equal opportunity employer and diversity is a core value. We are dedicated to creating and sustaining an inclusive and equitable working environment f"
-  },
-  {
    "t": "API7.ai Careers - Insights and Opportunities",
    "u": "https://wellfound.com/company/api7-ai",
    "s": "Find out if API7.ai is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benefit"
+  },
+  {
+   "t": "API Careers | American Petroleum Institute | API",
+   "u": "https://www.api.org/about/careers",
+   "s": "API is an equal opportunity employer and diversity is a core value. We are dedicated to creating and sustaining an inclusive and equitable working environment f"
   },
   {
    "t": "Hiring at Rapid7 - careers.rapid7.com",
@@ -75,11 +75,6 @@
    "s": "API7.ai, Original Creator of Apache APISIX Software Development API7.ai pioneers open-source API gateway innovation while delivering enterprise-grade API manage"
   },
   {
-   "t": "Careers - Get hired at Academic Programs International - API",
-   "u": "https://apiabroad.com/careers/",
-   "s": "Careers We love where we work, and for good reason. If you'd like to join our mission-driven organization, check out our open positions!"
-  },
-  {
    "t": "Rapid7: Jobs | LinkedIn",
    "u": "https://www.linkedin.com/company/rapid7/jobs/",
    "s": "Rapid7 | 230,362 followers on LinkedIn. Rapid7, Inc. (NASDAQ: RPD) is a global leader in AI-powered managed cybersecurity operations, trusted to advance organiz"
@@ -90,19 +85,29 @@
    "s": "API7.ai hasn't added any jobs yet Get notified when API7.ai posts new jobs."
   },
   {
+   "t": "API7.ai, Original Creator of Apache APISIX hiring GO ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/go-development-engineer-at-api7-ai-original-creator-of-apache-apisix-3458565076",
+   "s": "Rui Cao Head of Human Resources at API7.ai Job Responsibilities： Participate in the design and development of the company's enterprise API Gateway control surfa"
+  },
+  {
+   "t": "API7.ai, Original Creator of Apache APISIX hiring Tech Writer in ...",
+   "u": "https://www.linkedin.com/jobs/view/tech-writer-at-api7-ai-3456002219",
+   "s": "Posted 6:45:24 AM. 职责（可远程办公）：1、为 API7 和 Apache APISIX 开发英文技术文档，如配置指南、用户指南、API…See this and similar jobs on LinkedIn."
+  },
+  {
+   "t": "Jobs at API7.ai: Explore current Opportunities",
+   "u": "https://wellfound.com/company/api7-ai/jobs",
+   "s": "API7.ai hasn't added any jobs yet Get notified when API7.ai posts new jobs."
+  },
+  {
+   "t": "Careers - Salute",
+   "u": "https://salute.com/careers/",
+   "s": "Data center careers Salute supports clients in over 100 markets around the world. We have offices in 12 countries. So just about wherever you are - or wherever "
+  },
+  {
    "t": "Enterprise API Gateway & AI Gateway | API7.ai",
    "u": "https://api7.ai/",
    "s": "Built by the original creators of Apache APISIX. Manage every API with the API7 API Gateway, and govern your LLM and AI-agent traffic with AISIX — our open-sour"
-  },
-  {
-   "t": "API7.ai, Original Creator of Apache APISIX - LinkedIn",
-   "u": "https://www.linkedin.com/company/api7-ai",
-   "s": "API7.ai, Original Creator of Apache APISIX Software Development API7.ai pioneers open-source API gateway innovation while delivering enterprise-grade API manage"
-  },
-  {
-   "t": "90 Api7 Enterprise Pricing Model jobs in United States",
-   "u": "https://www.linkedin.com/jobs/api7-enterprise-pricing-model-jobs",
-   "s": "Today's top 90 Api7 Enterprise Pricing Model jobs in United States. Leverage your professional network, and get hired. New Api7 Enterprise Pricing Model jobs ad"
   },
   {
    "t": "API7.ai Careers - Insights and Opportunities",
@@ -110,24 +115,19 @@
    "s": "Find out if API7.ai is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benefit"
   },
   {
-   "t": "Now Hiring: 8,000 Jobs in Lubbock, TX | Indeed",
-   "u": "https://www.indeed.com/l-Lubbock,-TX-jobs.html",
-   "s": "Browse 8,774 jobs in Lubbock, TX. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+   "t": "Home | Microsoft Careers",
+   "u": "https://careers.microsoft.com/v2/global/en/home.html?lc=Boydton%2C%20Virginia%2C%20United%20States&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true",
+   "s": "When you join Microsoft, you're not just stepping into a job— you're stepping into a mission-driven company where purpose is at the heart of everything we do. O"
   },
   {
-   "t": "Career Opportunities | Lubbock, TX",
-   "u": "https://www.mylubbock.us/974/Career-Opportunities",
-   "s": "Career Opportunities: Thank you for being a part of our journey toward excellence. Please click on the Career Opportunities link below to view current job openi"
+   "t": "Layer7 API Services Administrator / Engineer | Inetum",
+   "u": "https://www.inetum.com/global/en/careers/de6bf7fe-405c-40c0-b128-74a6d615cb0d.html",
+   "s": "Job Description We are looking for a Senior Layer7 API Services Engineer to support and evolve mission‑critical API infrastructures in a 24/7 production environ"
   },
   {
-   "t": "100 API Gateway Layer 7 Jobs, Employment | Indeed",
-   "u": "https://www.indeed.com/q-api-gateway-layer-7-jobs.html",
-   "s": "Browse 113 API Gateway Layer 7 jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
-  },
-  {
-   "t": "Rapid7 - Careers Home",
-   "u": "https://careers.rapid7.com/",
-   "s": "Explore career opportunities at Rapid7 in software engineering, customer success, sales, and business support to help secure a digital future for all."
+   "t": "API7.ai, Original Creator of Apache APISIX hiring ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/development-engineer-at-api7-ai-3544002469",
+   "s": "Be among the first 25 applicants See who API7.ai, Original Creator of Apache APISIX has hired for this role No longer accepting applications Direct message the "
   },
   {
    "t": "Hiring at Rapid7",
@@ -140,9 +140,9 @@
    "s": "Find out if API7.ai is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benefit"
   },
   {
-   "t": "加入我们 | 支流科技招聘 - Apache APISIX 开源社区工作机会 | 支流科技",
-   "u": "https://www.apiseven.com/careers",
-   "s": "寻找优秀的工程师加入支流科技，参与 Apache APISIX 开源项目。提供具有竞争力的薪酬、远程办公机会及卓越的工程师文化。"
+   "t": "Rapid7: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/rapid7/jobs/",
+   "s": "Rapid7 | 230,362 followers on LinkedIn. Rapid7, Inc. (NASDAQ: RPD) is a global leader in AI-powered managed cybersecurity operations, trusted to advance organiz"
   }
  ],
  "dict_hits": [],

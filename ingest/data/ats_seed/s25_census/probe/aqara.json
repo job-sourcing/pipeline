@@ -2,7 +2,7 @@
  "brand": "Aqara",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T11:57:32.745Z",
+ "ts": "2026-10-02T12:00:50.766Z",
  "candidates": [
   {
    "url": "https://erp.aqara.com/en_US/jobs/apply/pqm-755",
@@ -17,7 +17,7 @@
    "backend": "direct"
   },
   {
-   "url": "https://erp.aqara.com/en_US/jobs/apply/361",
+   "url": "https://erp.aqara.com/en_US/jobs/apply/554",
    "title": "",
    "status": 0,
    "bytes": 0,
@@ -25,19 +25,19 @@
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "技术支持工程师（实习） Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司",
+   "snippet": "北美分公司总经理 Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司",
    "backend": "direct"
   },
   {
-   "url": "https://www.aqara.com/en/business/become-an-installer/",
-   "title": "Become an Installer - Aqara",
-   "status": 200,
-   "bytes": 481039,
+   "url": "https://erp.aqara.com/en_US/jobs/apply/169",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 5,
-   "snippet": "The platform provides structured learning paths for both existing Aqara partners and new participants, such as installers, system integrators, and store service",
+   "score": 7,
+   "snippet": "Job Application Form 认证及专利工程师 Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司",
    "backend": "direct"
   }
  ],
@@ -55,7 +55,7 @@
   {
    "t": "Aqara - LinkedIn",
    "u": "https://www.linkedin.com/company/aqara",
-   "s": "Aqara Computers and Electronics Manufacturing New York City, NY 8,524 followers Bringing to you a miraculous smart home with continuous connection."
+   "s": "Aqara Computers and Electronics Manufacturing New York City, NY 8,520 followers Bringing to you a miraculous smart home with continuous connection."
   },
   {
    "t": "Aqara Careers - Insights and Opportunities",
@@ -79,13 +79,8 @@
   },
   {
    "t": "Apply Job | AqaraWebsite - erp.aqara.com",
-   "u": "https://erp.aqara.com/en_US/jobs/apply/361",
-   "s": "技术支持工程师（实习） Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司"
-  },
-  {
-   "t": "Aqara Inc. Careers and Employment | Indeed.com",
-   "u": "https://www.indeed.com/cmp/Aqara-Inc.",
-   "s": "Find out what works well at Aqara Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+   "u": "https://erp.aqara.com/en_US/jobs/apply/554",
+   "s": "北美分公司总经理 Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司"
   },
   {
    "t": "Aqara Jobs in Worldwide (31,000+ Open Roles) | LinkedIn",
@@ -93,9 +88,19 @@
    "s": "Today's top 31,000+ Aqara jobs in Worldwide. Leverage your professional network, and get hired. New Aqara jobs added daily."
   },
   {
+   "t": "Aqara Inc. Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Aqara-Inc.",
+   "s": "Find out what works well at Aqara Inc. from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
    "t": "3,000+ Aqara Company jobs in United States - LinkedIn",
    "u": "https://www.linkedin.com/jobs/aqara-company-jobs",
    "s": "Today's top 3,000+ Aqara Company jobs in United States. Leverage your professional network, and get hired. New Aqara Company jobs added daily."
+  },
+  {
+   "t": "Apply Job | AqaraWebsite - erp.aqara.com",
+   "u": "https://erp.aqara.com/en_US/jobs/apply/pqm-755",
+   "s": "PQM Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司"
   },
   {
    "t": "Aqara Inc. Employment and Reviews | SimplyHired",
@@ -104,13 +109,8 @@
   },
   {
    "t": "Apply Job | AqaraWebsite - erp.aqara.com",
-   "u": "https://erp.aqara.com/en_US/jobs/apply/pqm-755",
-   "s": "PQM Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司"
-  },
-  {
-   "t": "Aqara Careers - Insights and Opportunities",
-   "u": "https://wellfound.com/company/aqarainc",
-   "s": "Find out if Aqara is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benefits,"
+   "u": "https://erp.aqara.com/en_US/jobs/apply/169",
+   "s": "Job Application Form 认证及专利工程师 Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司"
   },
   {
    "t": "Aqara - Smart Home Automation Devices for Better Living",
@@ -118,9 +118,9 @@
    "s": "Aqara is a leading smart home and IoT device manufacturer. Our products are best in class and are compatible with the major home automation platforms."
   },
   {
-   "t": "Explore Job Opportunities | Acara Solutions",
-   "u": "https://acarasolutions.com/careers/search-jobs/",
-   "s": "Whether you're just getting started or are looking to make your next big career move, Acara will help you get there. Search our job board for employment opportu"
+   "t": "Aqara Careers - Insights and Opportunities",
+   "u": "https://wellfound.com/company/aqarainc",
+   "s": "Find out if Aqara is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benefits,"
   },
   {
    "t": "Aqara Inc. Careers and Employment | Indeed.com",
