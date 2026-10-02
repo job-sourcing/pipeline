@@ -2,13 +2,25 @@
  "brand": "AuraMarker",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T12:21:48.693Z",
+ "ts": "2026-10-02T12:24:30.435Z",
  "candidates": [
   {
    "url": "https://auramarker.com/",
    "title": "Aura Marker Studio",
    "status": 200,
    "bytes": 4586,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont",
+   "backend": "direct"
+  },
+  {
+   "url": "https://helps.auramarker.com/en/",
+   "title": "Aura Marker Studio | Aura Marker Studio",
+   "status": 200,
+   "bytes": 14139,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -26,18 +38,6 @@
    "spec": null,
    "score": 2,
    "snippet": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us.",
-   "backend": "direct"
-  },
-  {
-   "url": "https://careers.aramark.com/jobs",
-   "title": "Jobs - Aramark Careers",
-   "status": 200,
-   "bytes": 162018,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 2,
-   "snippet": "Browse 6,800+ jobs at Aramark Careers. Apply online today.",
    "backend": "direct"
   }
  ],
@@ -73,14 +73,14 @@
    "s": "Apply online for jobs at Aramark At Aramark Canada, our vision is to be the most admired employer and trusted hospitality partner. Because we're rooted in servi"
   },
   {
-   "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/UnitedStates/?locale=en_US",
-   "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
-  },
-  {
    "t": "aramarkcareers.com",
    "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
    "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
+  },
+  {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/UnitedStates/?locale=en_US",
+   "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
   },
   {
    "t": "Aramark Careers | Explore Jobs & Opportunities",
@@ -94,7 +94,7 @@
   },
   {
    "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/en-US?locale=en_US",
+   "u": "https://aramarkcareers.com/",
    "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
   },
   {
@@ -103,24 +103,24 @@
    "s": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont"
   },
   {
-   "t": "Now Hiring: 4,000 Aramark Jobs | Indeed",
-   "u": "https://www.indeed.com/q-Aramark-jobs.html",
-   "s": "Browse 4,828 Aramark jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+   "t": "Aramark Jobs, Employment in Washington Dulles International Airport, VA ...",
+   "u": "https://www.indeed.com/q-Aramark-l-Washington-Dulles-International-Airport,-VA-jobs.html",
+   "s": "Search results Upload your resume - Let employers find you Aramark jobs in Washington Dulles International Airport, VA Sort by: relevance - date"
   },
   {
-   "t": "Aramark Jobs, Employment in Wyoming - Indeed",
-   "u": "https://www.indeed.com/q-company%3aaramark-l-wyoming-jobs.html",
-   "s": "11 Aramark jobs available in Wyoming on Indeed.com. Apply to Snow Plow Operator, Housekeeper, Senior Maintenance Person and more!"
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/UnitedStates/?locale=en_US",
+   "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
   },
   {
-   "t": "Food Services and Facilities Management - Aramark",
-   "u": "https://www.aramark.com/home",
-   "s": "Aramark provides food services and facilities management to hospitals, universities, school districts, stadiums, and other businesses around the world."
+   "t": "Aura Marker Studio | Aura Marker Studio",
+   "u": "https://helps.auramarker.com/en/",
+   "s": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont"
   },
   {
-   "t": "Hiring Now Job - Aramark - Cheyenne, WY (Hiring Now) - Monster",
-   "u": "https://www.monster.com/job-openings/cook-hiring-now-cheyenne-wy--2205330c-c221-45ac-8303-e5a0dc0b55dd",
-   "s": "Aramark is hiring a Cook - Hiring Now job in Cheyenne, WY. Build your resume and apply today at Monster. Posted Today."
+   "t": "Now Hiring: 4,000 Aramark' Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Aramark'-jobs.html",
+   "s": "Browse 4,703 Aramark' jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
   },
   {
    "t": "Aramark Careers | Explore Jobs & Opportunities",

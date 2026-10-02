@@ -2,13 +2,13 @@
  "brand": "Adcentrx Therapeutics",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T12:20:03.188Z",
+ "ts": "2026-10-02T12:22:55.928Z",
  "candidates": [
   {
    "url": "https://www.adcentrx.com/careers/",
    "title": "",
    "status": 202,
-   "bytes": 178,
+   "bytes": 179,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -20,7 +20,7 @@
    "url": "https://www.biotech-careers.org/company/adcentrx-therapeutics",
    "title": "",
    "status": 202,
-   "bytes": 199,
+   "bytes": 200,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -29,15 +29,15 @@
    "backend": "direct"
   },
   {
-   "url": "https://www.employbl.com/companies/adcentrx-therapeutics/jobs",
-   "title": "Vercel Security Checkpoint",
-   "status": 429,
-   "bytes": 31192,
+   "url": "https://www.adcentrx.com/",
+   "title": "",
+   "status": 202,
+   "bytes": 169,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 7,
-   "snippet": "Find your next job at Adcentrx Therapeutics! See all jobs, funding information, investors and more about thousands of startups and tech companies on Employbl.",
+   "score": 5,
+   "snippet": "Adcentrx Therapeutics is a biotechnology company focused on accelerating breakthroughs in developing protein conjugate therapeutics for cancer and other life-th",
    "backend": "direct"
   }
  ],
@@ -68,14 +68,14 @@
    "s": "Adcentrx Therapeutics is a biotechnology company focused on protein conjugate therapeutic development for cancer and other life-threatening diseases."
   },
   {
+   "t": "About - Adcentrx Therapeutics",
+   "u": "https://www.adcentrx.com/about/",
+   "s": "At Adcentrx, we are driven to create the best therapies to treat serious and life-threatening diseases. By leveraging a deep understanding of chemistry and biol"
+  },
+  {
    "t": "Adcentrx Therapeutics - LinkedIn",
    "u": "https://www.linkedin.com/company/adcentrx-therapeutics",
    "s": "Adcentrx Therapeutics is a biotechnology company focused on accelerating breakthroughs in protein conjugate therapeutic development for cancer and other life-th"
-  },
-  {
-   "t": "Adcentrx Therapeutics Jobs + Careers | Built In",
-   "u": "https://builtin.com/company/adcentrx-therapeutics/jobs",
-   "s": "Explore jobs and careers at Adcentrx Therapeutics. Adcentrx Therapeutics is currently hiring for a range of positions."
   },
   {
    "t": "Management Team - Adcentrx Therapeutics",
@@ -88,14 +88,14 @@
    "s": "Join us at Adcentrx Therapeutics and be part of a highly collaborative and dynamic research environment working closely on a shared mission. Our research headqu"
   },
   {
-   "t": "Adcentrx Therapeutics Careers and Employment | Indeed.com",
-   "u": "https://www.indeed.com/cmp/Adcentrx-Therapeutics",
-   "s": "Find out what works well at Adcentrx Therapeutics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
-  },
-  {
    "t": "Adcentrx Therapeutics",
    "u": "https://www.adcentrx.com/",
    "s": "Adcentrx Therapeutics is a biotechnology company focused on accelerating breakthroughs in developing protein conjugate therapeutics for cancer and other life-th"
+  },
+  {
+   "t": "Adcentrx Therapeutics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Adcentrx-Therapeutics",
+   "s": "Find out what works well at Adcentrx Therapeutics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
   },
   {
    "t": "ADC Therapeutics - Job Opportunities - Paylocity",
@@ -108,19 +108,19 @@
    "s": "Explore jobs and careers at Adcentrx Therapeutics. Adcentrx Therapeutics is currently hiring for a range of positions."
   },
   {
-   "t": "Adcentrx Therapeutics | Biotech Careers",
-   "u": "https://www.biotech-careers.org/company/adcentrx-therapeutics",
-   "s": "Adcentrx Therapeutics is a biotechnology company focused on protein conjugate therapeutic development for cancer and other life-threatening diseases."
-  },
-  {
    "t": "Adcentrx Therapeutics - Jobs & Pipeline | Formulate",
    "u": "https://formulatesearch.com/companies/adcentrx",
    "s": "Focus: Adcentrx Therapeutics is an early-stage oncology-focused biotechnology company specializing in antibody-drug conjugate (ADC) development based in San Die"
   },
   {
-   "t": "Jobs at Adcentrx Therapeutics",
-   "u": "https://www.employbl.com/companies/adcentrx-therapeutics/jobs",
-   "s": "Find your next job at Adcentrx Therapeutics! See all jobs, funding information, investors and more about thousands of startups and tech companies on Employbl."
+   "t": "Adcentrx Therapeutics | Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/adcentrx-therapeutics",
+   "s": "Adcentrx Therapeutics is a biotechnology company focused on protein conjugate therapeutic development for cancer and other life-threatening diseases."
+  },
+  {
+   "t": "Adcentrx Therapeutics Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/adcentrx-therapeutics",
+   "s": "Learn more about Adcentrx Therapeutics. Find jobs, explore benefits, and research company culture at Built In."
   },
   {
    "t": "Careers - Adcentrx Therapeutics",
