@@ -1,0 +1,156 @@
+{
+ "brand": "Gree Electric",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:10:38.161Z",
+ "candidates": [
+  {
+   "url": "https://gree-us.com/Career",
+   "title": "Gree Climate Solution LLC-Career",
+   "status": 200,
+   "bytes": 234256,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Gree Climate Solution LLC CAREERS — Shape the Future of Comfort In order to improve the manufacture workmanship and quality management and build high-quality ai",
+   "backend": "direct"
+  },
+  {
+   "url": "https://global.gree.com/",
+   "title": "Gree Global",
+   "status": 200,
+   "bytes": 114151,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Now, Gree home appliances covers rice cookers, electric pressure cookers, electric fans, electric heaters, induction cookers, electric hot pots, humidifiers, ai",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.geappliances.com/",
+   "title": "Home | GE Appliances Careers",
+   "status": 200,
+   "bytes": 51036,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "GE Appliances offers a great work environment, professional development, challenging careers and competitive compensation. GE Appliances is an Equal Opportunity",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Gree Climate Solution LLC-Career",
+   "u": "https://gree-us.com/Career",
+   "s": "Gree Climate Solution LLC CAREERS — Shape the Future of Comfort In order to improve the manufacture workmanship and quality management and build high-quality ai"
+  },
+  {
+   "t": "gree electric appliances us company jobs - Indeed",
+   "u": "https://www.indeed.com/q-gree-electric-appliances-us-company-jobs.html",
+   "s": "Browse 66 Gree Electric Appliances US Company jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Home | GE Appliances Careers",
+   "u": "https://careers.geappliances.com/",
+   "s": "GE Appliances offers a great work environment, professional development, challenging careers and competitive compensation. GE Appliances is an Equal Opportunity"
+  },
+  {
+   "t": "Gree Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-gree-jobs.html",
+   "s": "30 Gree jobs available on Indeed.com. Apply to Elementary School Teacher, English As A Second Language Teacher, Bus Driver and more!"
+  },
+  {
+   "t": "11,000+ Gree jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gree-jobs",
+   "s": "Today's top 11,000+ Gree jobs in United States. Leverage your professional network, and get hired. New Gree jobs added daily."
+  },
+  {
+   "t": "Gree Global",
+   "u": "https://global.gree.com/",
+   "s": "Now, Gree home appliances covers rice cookers, electric pressure cookers, electric fans, electric heaters, induction cookers, electric hot pots, humidifiers, ai"
+  },
+  {
+   "t": "Career Opportunities - GMES",
+   "u": "https://www.gmes.com/careers",
+   "s": "Green Mountain Electric Supply (GMES) is a family-owned Vermont-based company that continues to expand. We are looking for individuals to join our team that wil"
+  },
+  {
+   "t": "careers | General Electric",
+   "u": "https://www.ge.com/taxonomy/term/1825",
+   "s": "GE.com has been updated to serve our three go-forward companies. Please visit these standalone sites for more information GE Aerospace | GE Vernova | GE HealthC"
+  },
+  {
+   "t": "Home | GE Appliances Careers",
+   "u": "https://careers.geappliances.com/",
+   "s": "GE Appliances offers a great work environment, professional development, challenging careers and competitive compensation. GE Appliances is an Equal Opportunity"
+  },
+  {
+   "t": "gree electric appliances us company jobs - Indeed",
+   "u": "https://www.indeed.com/q-gree-electric-appliances-us-company-jobs.html",
+   "s": "Browse 66 Gree Electric Appliances US Company jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Gree Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-gree-jobs.html",
+   "s": "30 Gree jobs available on Indeed.com. Apply to Elementary School Teacher, English As A Second Language Teacher, Bus Driver and more!"
+  },
+  {
+   "t": "Gree Climate Solution LLC-Career",
+   "u": "https://gree-us.com/Career",
+   "s": "Gree Climate Solution LLC CAREERS — Shape the Future of Comfort In order to improve the manufacture workmanship and quality management and build high-quality ai"
+  },
+  {
+   "t": "Career Opportunities - GMES",
+   "u": "https://www.gmes.com/careers",
+   "s": "Green Mountain Electric Supply (GMES) is a family-owned Vermont-based company that continues to expand. We are looking for individuals to join our team that wil"
+  },
+  {
+   "t": "Careers | Graybar",
+   "u": "https://www.graybar.com/careers",
+   "s": "Glassdoor Built on the foundation of increasing workplace transparency, Glassdoor combines the latest jobs with millions of company ratings and reviews, CEO app"
+  },
+  {
+   "t": "careers | General Electric",
+   "u": "https://www.ge.com/taxonomy/term/1825",
+   "s": "GE.com has been updated to serve our three go-forward companies. Please visit these standalone sites for more information GE Aerospace | GE Vernova | GE HealthC"
+  },
+  {
+   "t": "11,000+ Gree jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gree-jobs",
+   "s": "Today's top 11,000+ Gree jobs in United States. Leverage your professional network, and get hired. New Gree jobs added daily."
+  },
+  {
+   "t": "Gree Climate Solution LLC-Career",
+   "u": "https://gree-us.com/Career",
+   "s": "Gree Climate Solution LLC CAREERS — Shape the Future of Comfort In order to improve the manufacture workmanship and quality management and build high-quality ai"
+  },
+  {
+   "t": "Now Hiring: 50 Gree Electric Appliances US Company Jobs | Indeed",
+   "u": "https://www.indeed.com/q-gree-electric-appliances-us-company-jobs.html",
+   "s": "Browse 66 Gree Electric Appliances US Company jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Gree Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-gree-jobs.html",
+   "s": "30 Gree jobs available on Indeed.com. Apply to Elementary School Teacher, English As A Second Language Teacher, Bus Driver and more!"
+  },
+  {
+   "t": "11,000+ Gree jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/gree-jobs",
+   "s": "Today's top 11,000+ Gree jobs in United States. Leverage your professional network, and get hired. New Gree jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://gree-us.com/Career",
+  "platform": "custom",
+  "title": "Gree Climate Solution LLC-Career"
+ },
+ "verdict": "custom_surface"
+}

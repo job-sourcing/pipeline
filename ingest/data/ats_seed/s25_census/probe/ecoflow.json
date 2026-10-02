@@ -1,0 +1,29 @@
+{
+ "brand": "EcoFlow",
+ "tier": "probe_A",
+ "lca": "ECOFLOW TECHNOLOGY INC",
+ "ts": "2026-10-02T13:01:24.019Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "ecoflow",
+   "spec": "feishuhire:ecoflow",
+   "title": "EcoFlow 正浩创新 | 社会招聘"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:ecoflow",
+  "platform": "feishu",
+  "title": "EcoFlow 正浩创新 | 社会招聘",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "EcoFlow 正浩创新 | 社会招聘",
+  "brand": "EcoFlow",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

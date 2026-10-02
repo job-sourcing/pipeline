@@ -1,0 +1,169 @@
+{
+ "brand": "Frontage Laboratories",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:06:33.178Z",
+ "candidates": [
+  {
+   "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=0fad767f-f389-40ea-b2d1-d8df05098476",
+   "title": "Recruitment",
+   "status": 200,
+   "bytes": 19449,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "adp:0fad767f-f389-40ea-b2d1-d8df05098476",
+   "score": 10,
+   "snippet": "Why work for Frontage Laboratories? We know that with your unique skills and experience, you probably have several options for your career path. So, why choose ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=0fad767f-f389-40ea-b2d1-d8df05098476&ccId=19000101_000001&lang=en_US&jobId=585181",
+   "title": "Recruitment",
+   "status": 200,
+   "bytes": 19449,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "adp:0fad767f-f389-40ea-b2d1-d8df05098476",
+   "score": 10,
+   "snippet": "Salary and Benefits: Frontage Laboratories offers a competitive compensation and benefits package including health and dental insurance, a 401 (k) plan, disabil",
+   "backend": "direct"
+  },
+  {
+   "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=0fad767f-f389-40ea-b2d1-d8df05098476&ccId=19000101_000001&lang=en_US&jobId=593782",
+   "title": "Recruitment",
+   "status": 200,
+   "bytes": 19449,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "adp:0fad767f-f389-40ea-b2d1-d8df05098476",
+   "score": 10,
+   "snippet": "Frontage Laboratories Inc. is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, religion",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Frontage Laboratories - A global pharmaceutical development organization",
+   "u": "https://www.frontagelab.com/",
+   "s": "Frontage Laboratories is a global pharmaceutical development organization (PDO) advancing drug discovery and development through integrated laboratory and clini"
+  },
+  {
+   "t": "Now Hiring: 75 Frontage Laboratories Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Frontage-Laboratories-jobs.html",
+   "s": "Browse 95 Frontage Laboratories jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Frontage Laboratories, Inc: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/frontage-laboratories-inc/jobs",
+   "s": "Frontage Laboratories, Inc | 17,734 followers on LinkedIn. Accelerating Discoveries, Transforming Lives! | Frontage Laboratories is a US-based Contract Research"
+  },
+  {
+   "t": "Now Hiring: 25 Frontage Laboratories Frontage Lab Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Frontage-Laboratories-Frontage-Lab-jobs.html",
+   "s": "Browse 31 Frontage Laboratories Frontage Lab jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers - frontagelab.com.cn",
+   "u": "https://frontagelab.com.cn/en/about/careers/",
+   "s": "Why Work at Frontage Laboratories? We know that to attract the best candidates we have to provide a stimulating and challenging work environment that gives our "
+  },
+  {
+   "t": "Career Center | Recruitment - ADP",
+   "u": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=0fad767f-f389-40ea-b2d1-d8df05098476",
+   "s": "Why work for Frontage Laboratories? We know that with your unique skills and experience, you probably have several options for your career path. So, why choose "
+  },
+  {
+   "t": "Frontage Laboratories Jobs & Careers - 95 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Frontage-Laboratories-Jobs-E278799.htm",
+   "s": "Search job openings at Frontage Laboratories. 95 Frontage Laboratories jobs including salaries, ratings, and reviews, posted by Frontage Laboratories employees."
+  },
+  {
+   "t": "Career Center | Recruitment - ADP",
+   "u": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=0fad767f-f389-40ea-b2d1-d8df05098476&ccId=19000101_000001&lang=en_US&jobId=585181",
+   "s": "Salary and Benefits: Frontage Laboratories offers a competitive compensation and benefits package including health and dental insurance, a 401 (k) plan, disabil"
+  },
+  {
+   "t": "Now Hiring: 75 Frontage Laboratories Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Frontage-Laboratories-jobs.html",
+   "s": "Browse 95 Frontage Laboratories jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 25 Frontage Laboratories Frontage Lab Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Frontage-Laboratories-Frontage-Lab-jobs.html",
+   "s": "Browse 31 Frontage Laboratories Frontage Lab jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Frontage Laboratories - A global pharmaceutical development organization",
+   "u": "https://www.frontagelab.com/",
+   "s": "Frontage Laboratories is a global pharmaceutical development organization (PDO) advancing drug discovery and development through integrated laboratory and clini"
+  },
+  {
+   "t": "Why work for Frontage Laboratories? - ADP",
+   "u": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=0fad767f-f389-40ea-b2d1-d8df05098476",
+   "s": "Why work for Frontage Laboratories? We know that with your unique skills and experience, you probably have several options for your career path. So, why choose "
+  },
+  {
+   "t": "Frontage Laboratories, Inc: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/frontage-laboratories-inc/jobs",
+   "s": "Frontage Laboratories, Inc | 17,734 followers on LinkedIn. Accelerating Discoveries, Transforming Lives! | Frontage Laboratories is a US-based Contract Research"
+  },
+  {
+   "t": "Frontage Laboratories Jobs (September 2026)",
+   "u": "https://startup.jobs/company/frontage-laboratories",
+   "s": "Frontage Laboratories is hiring. Apply to jobs like Statistician/Junior Statistician, Lab Assistant-Sample Coordinator &amp; Archivist, and Report Writer"
+  },
+  {
+   "t": "FRONTAGE LABORATORIES Jobs (Now Hiring) Near Me Sep 2026 - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/co/frontage-laboratories/Jobs",
+   "s": "Looking to work for Frontage Laboratories? ZipRecruiter has 60 Frontage Laboratories jobs. Start your career at Frontage Laboratories Today."
+  },
+  {
+   "t": "Careers - frontagelab.com.cn",
+   "u": "https://frontagelab.com.cn/en/about/careers/",
+   "s": "Why Work at Frontage Laboratories? We know that to attract the best candidates we have to provide a stimulating and challenging work environment that gives our "
+  },
+  {
+   "t": "Now Hiring: 75 Frontage Laboratories Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Frontage-Laboratories-jobs.html",
+   "s": "Browse 95 Frontage Laboratories jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Now Hiring: 25 Frontage Laboratories Frontage Lab Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Frontage-Laboratories-Frontage-Lab-jobs.html",
+   "s": "Browse 31 Frontage Laboratories Frontage Lab jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Career Center | Recruitment - ADP",
+   "u": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=0fad767f-f389-40ea-b2d1-d8df05098476",
+   "s": "Why work for Frontage Laboratories? We know that with your unique skills and experience, you probably have several options for your career path. So, why choose "
+  },
+  {
+   "t": "Frontage Laboratories, Inc: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/frontage-laboratories-inc/jobs",
+   "s": "Frontage Laboratories, Inc | 17,734 followers on LinkedIn. Accelerating Discoveries, Transforming Lives! | Frontage Laboratories is a US-based Contract Research"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=0fad767f-f389-40ea-b2d1-d8df05098476",
+  "title": "Recruitment",
+  "status": 200,
+  "bytes": 19449,
+  "markers": [
+   "adp"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "adp:0fad767f-f389-40ea-b2d1-d8df05098476",
+  "score": 10,
+  "snippet": "Why work for Frontage Laboratories? We know that with your unique skills and experience, you probably have several options for your career path. So, why choose ",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
+}

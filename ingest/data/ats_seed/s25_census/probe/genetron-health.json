@@ -1,0 +1,155 @@
+{
+ "brand": "Genetron Health",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:07:46.105Z",
+ "candidates": [
+  {
+   "url": "https://genetroncorp.com/careers/",
+   "title": "Genetron Careers",
+   "status": 200,
+   "bytes": 3730,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Welcome to our Careers Page Build your career here at Genetron! Check out our current openings: 1. Account Development Manager (Penang)",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.biotech-careers.org/company/genetron-health",
+   "title": "",
+   "status": 202,
+   "bytes": 194,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Provide cancer-related diagnostic services. COVID-19: Detection Kit for Novel Coronavirus (SARS-CoV-2) RNA (PCR-Fluorescence Probing) - CE Mark 4/2020, EUA 06/2",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.whatjobs.com/company/genetron-holdings-limited-genetron-health/profile",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5983,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Looking for jobs at Genetron Holdings Limited（Genetron Health）? Browse current openings, salary insights, and company details. Apply today and explore careers w",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Us | Genetron",
+   "u": "https://www.genetronhealth.com/en/openposts.html",
+   "s": "GENETRON HEALTH, INC. Suite 120,401 Professional Drive,Gaithersburg, Maryland 20879-3429 Tel: (240) 702-0720 Fax: (240) 654-3274 INDONESIA ABOUT US JOIN US PROD"
+  },
+  {
+   "t": "Genetron Careers",
+   "u": "https://genetroncorp.com/careers/",
+   "s": "Welcome to our Careers Page Build your career here at Genetron! Check out our current openings: 1. Account Development Manager (Penang)"
+  },
+  {
+   "t": "Join Us | Genetron",
+   "u": "https://www.genetronhealth.com/en/contact.html",
+   "s": "Jane worked in biopharma industry for almost 10 years prior to joining Genetron. A government affairs expert by trade, Jane has spent the past year working with"
+  },
+  {
+   "t": "Join Us | Genetron",
+   "u": "https://cscn.genetronhealth.com/en/contact.html",
+   "s": "\"I chose Genetron because I wanted to know my work was making an impact.\" JANE EARLY SCREENING BU Jane worked in biopharma industry for almost 10 years prior to"
+  },
+  {
+   "t": "Genetron Holdings Limited（Genetron Health） hiring Strategic Operations ...",
+   "u": "https://www.linkedin.com/jobs/view/4430326807",
+   "s": "Strategic Operations Lead, Office of the CEO Founding Team | Florentis Health Rockville, Maryland About Florentis Florentis Health is building an AI-enabled Cli"
+  },
+  {
+   "t": "Genetron Health - Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/genetron-health",
+   "s": "Provide cancer-related diagnostic services. COVID-19: Detection Kit for Novel Coronavirus (SARS-CoV-2) RNA (PCR-Fluorescence Probing) - CE Mark 4/2020, EUA 06/2"
+  },
+  {
+   "t": "1,000+ Genetron Health Inc jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/genetron-health-inc-jobs",
+   "s": "Today's top 1,000+ Genetron Health Inc jobs in United States. Leverage your professional network, and get hired. New Genetron Health Inc jobs added daily."
+  },
+  {
+   "t": "Genetron Holdings Limited（Genetron Health） Careers: Jobs, Salaries ...",
+   "u": "https://www.whatjobs.com/company/genetron-holdings-limited-genetron-health/profile",
+   "s": "Looking for jobs at Genetron Holdings Limited（Genetron Health）? Browse current openings, salary insights, and company details. Apply today and explore careers w"
+  },
+  {
+   "t": "Join Us | Genetron",
+   "u": "https://www.genetronhealth.com/en/openposts.html",
+   "s": "GENETRON HEALTH, INC. Suite 120,401 Professional Drive,Gaithersburg, Maryland 20879-3429 Tel: (240) 702-0720 Fax: (240) 654-3274 INDONESIA ABOUT US JOIN US PROD"
+  },
+  {
+   "t": "Join Us | Genetron",
+   "u": "https://www.genetronhealth.com/en/contact.html",
+   "s": "Jane worked in biopharma industry for almost 10 years prior to joining Genetron. A government affairs expert by trade, Jane has spent the past year working with"
+  },
+  {
+   "t": "Genetron Holdings Limited（Genetron Health） hiring Strategic Operations ...",
+   "u": "https://www.linkedin.com/jobs/view/4430326807",
+   "s": "Direct message the job poster from Genetron Holdings Limited（Genetron Health）"
+  },
+  {
+   "t": "Genetron Careers",
+   "u": "https://genetroncorp.com/careers/",
+   "s": "Welcome to our Careers Page Build your career here at Genetron! Check out our current openings: 1. Account Development Manager (Penang)"
+  },
+  {
+   "t": "1,000+ Genetron Health Inc jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/genetron-health-inc-jobs",
+   "s": "Today's top 1,000+ Genetron Health Inc jobs in United States. Leverage your professional network, and get hired. New Genetron Health Inc jobs added daily."
+  },
+  {
+   "t": "Join Us | Genetron",
+   "u": "https://cscn.genetronhealth.com/en/contact.html",
+   "s": "\"I chose Genetron because I wanted to know my work was making an impact.\" JANE EARLY SCREENING BU Jane worked in biopharma industry for almost 10 years prior to"
+  },
+  {
+   "t": "Genetron Health - Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/genetron-health",
+   "s": "Provide cancer-related diagnostic services. COVID-19: Detection Kit for Novel Coronavirus (SARS-CoV-2) RNA (PCR-Fluorescence Probing) - CE Mark 4/2020, EUA 06/2"
+  },
+  {
+   "t": "Careers at TridentCare",
+   "u": "https://tridentcare.com/careers/",
+   "s": "Join TridentCare and build your career in portable diagnostics—imaging, phlebotomy, vascular services across the nation."
+  },
+  {
+   "t": "Join Us | Genetron",
+   "u": "https://www.genetronhealth.com/en/openposts.html",
+   "s": "GENETRON HEALTH, INC. Suite 120,401 Professional Drive,Gaithersburg, Maryland 20879-3429 Tel: (240) 702-0720 Fax: (240) 654-3274 INDONESIA ABOUT US JOIN US PROD"
+  },
+  {
+   "t": "Genetron Careers",
+   "u": "https://genetroncorp.com/careers/",
+   "s": "Welcome to our Careers Page Build your career here at Genetron! Check out our current openings: 1. Account Development Manager (Penang)"
+  },
+  {
+   "t": "Join Us | Genetron",
+   "u": "https://www.genetronhealth.com/en/contact.html",
+   "s": "Jane worked in biopharma industry for almost 10 years prior to joining Genetron. A government affairs expert by trade, Jane has spent the past year working with"
+  },
+  {
+   "t": "Genetron Holdings Limited（Genetron Health） hiring Strategic Operations ...",
+   "u": "https://www.linkedin.com/jobs/view/4430326807",
+   "s": "Direct message the job poster from Genetron Holdings Limited（Genetron Health）"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://genetroncorp.com/careers/",
+  "platform": "custom",
+  "title": "Genetron Careers"
+ },
+ "verdict": "custom_surface"
+}

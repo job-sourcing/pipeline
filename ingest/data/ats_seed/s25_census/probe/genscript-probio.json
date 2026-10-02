@@ -1,0 +1,30 @@
+{
+ "brand": "GenScript ProBio",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:07:42.953Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "genscript",
+   "spec": "greenhouse:genscript",
+   "title": "Jobs at GenScript",
+   "jobs_hint": 72
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:genscript",
+  "platform": "greenhouse",
+  "title": "Jobs at GenScript",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "GenScript",
+  "brand": "GenScript ProBio",
+  "ok": false,
+  "n": 1
+ },
+ "verdict": "dict_collision"
+}

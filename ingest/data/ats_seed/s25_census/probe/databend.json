@@ -1,0 +1,167 @@
+{
+ "brand": "Databend",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:59:02.001Z",
+ "candidates": [
+  {
+   "url": "https://job-boards.greenhouse.io/databento",
+   "title": "Jobs at Databento",
+   "status": 200,
+   "bytes": 32390,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "greenhouse:databento",
+   "score": 14,
+   "snippet": "Below is the full updated list of open positions at Databento today. Other job boards may be outdated, and there is no secret \"back door\" into this company. Ple",
+   "backend": "direct"
+  },
+  {
+   "url": "https://job-boards.greenhouse.io/databento/jobs/6600234",
+   "title": "Jobs at Databento",
+   "status": 200,
+   "bytes": 32434,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "greenhouse:databento",
+   "score": 14,
+   "snippet": "Below is the full updated list of open positions at Databento today. Other job boards may be outdated, and there is no secret \"back door\" into this company. Ple",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.databend.com/jobs/databend-cloud-platform-engineer/",
+   "title": "Databend Cloud Platform Engineer | Join Our Team",
+   "status": 200,
+   "bytes": 67141,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join the Databend Cloud Team as a Platform Engineer. Work remotely to develop secure, scalable, open-source cloud solutions with simplicity and cost-effectivene",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Databend Team - Meet the Minds Behind Our Data Platform",
+   "u": "https://www.databend.com/join-us/",
+   "s": "Get to know the talented minds behind Databend Cloud and our mission to pioneer an open, transparent, and community-driven approach to cloud analytics."
+  },
+  {
+   "t": "Databend Cloud Platform Engineer | Join Our Team",
+   "u": "https://www.databend.com/jobs/databend-cloud-platform-engineer/",
+   "s": "Join the Databend Cloud Team as a Platform Engineer. Work remotely to develop secure, scalable, open-source cloud solutions with simplicity and cost-effectivene"
+  },
+  {
+   "t": "Careers | Databento",
+   "u": "https://databento.com/careers",
+   "s": "Careers Work with us Databento makes it simpler and faster to access market data. Our APIs power top trading firms and emerging fintech startups alike to help t"
+  },
+  {
+   "t": "Databento",
+   "u": "https://databento.com/careers/careers",
+   "s": "Databento provides real-time and historical market data APIs. Access data for equities, futures, options, and more with one integration. Sign up for $125 in fre"
+  },
+  {
+   "t": "Careers at DataBank - DataBank | Data Center Evolved",
+   "u": "https://www.databank.com/about-databank/careers-at-databank/",
+   "s": "Explore careers at DataBank. Join a team building secure, scalable data center and IT infrastructure solutions for enterprises nationwide."
+  },
+  {
+   "t": "Databend - LinkedIn",
+   "u": "https://www.linkedin.com/company/databendlabs",
+   "s": "Databend is an agent-ready cloud data warehouse built for modern analytics, search, and AI workloads. Powered by Rust and built for object storage, Databend Clo"
+  },
+  {
+   "t": "Databento Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Databento",
+   "s": "Find out what works well at Databento from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "Jobs at Databento - Greenhouse Software",
+   "u": "https://job-boards.greenhouse.io/databento",
+   "s": "Below is the full updated list of open positions at Databento today. Other job boards may be outdated, and there is no secret \"back door\" into this company. Ple"
+  },
+  {
+   "t": "Databend Team - Meet the Minds Behind Our Data Platform",
+   "u": "https://www.databend.com/job-detail/",
+   "s": "Get to know the talented minds behind Databend Cloud and our mission to pioneer an open, transparent, and community-driven approach to cloud analytics."
+  },
+  {
+   "t": "Databend Cloud Platform Engineer | Join Our Team",
+   "u": "https://www.databend.com/jobs/databend-cloud-platform-engineer/",
+   "s": "Join the Databend Cloud Team as a Platform Engineer. Work remotely to develop secure, scalable, open-source cloud solutions with simplicity and cost-effectivene"
+  },
+  {
+   "t": "Careers at DataBank - DataBank | Data Center Evolved",
+   "u": "https://www.databank.com/about-databank/careers-at-databank/",
+   "s": "Explore careers at DataBank. Join a team building secure, scalable data center and IT infrastructure solutions for enterprises nationwide."
+  },
+  {
+   "t": "Careers | Databento",
+   "u": "https://databento.com/careers",
+   "s": "View current fintech job openings at Databento. Join our team and help make market data accessible for all."
+  },
+  {
+   "t": "Databend - LinkedIn",
+   "u": "https://www.linkedin.com/company/databendlabs",
+   "s": "Databend is an agent-ready cloud data warehouse built for modern analytics, search, and AI workloads. Powered by Rust and built for object storage, Databend Clo"
+  },
+  {
+   "t": "Databento Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Databento",
+   "s": "Find out what works well at Databento from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "Jobs at Databento",
+   "u": "https://job-boards.greenhouse.io/databento/jobs/6600234",
+   "s": "Below is the full updated list of open positions at Databento today. Other job boards may be outdated, and there is no secret \"back door\" into this company. Ple"
+  },
+  {
+   "t": "Databend - LinkedIn",
+   "u": "https://sg.linkedin.com/company/databendlabs",
+   "s": "Databend is an agent-ready cloud data warehouse built for modern analytics, search, and AI workloads. Powered by Rust and built for object storage, Databend Clo"
+  },
+  {
+   "t": "Databend Team - Meet the Minds Behind Our Data Platform",
+   "u": "https://www.databend.com/job-detail/",
+   "s": "Get to know the talented minds behind Databend Cloud and our mission to pioneer an open, transparent, and community-driven approach to cloud analytics."
+  },
+  {
+   "t": "Databend Cloud Platform Engineer | Join Our Team",
+   "u": "https://www.databend.com/jobs/databend-cloud-platform-engineer/",
+   "s": "Join the Databend Cloud Team as a Platform Engineer. Work remotely to develop secure, scalable, open-source cloud solutions with simplicity and cost-effectivene"
+  },
+  {
+   "t": "Databend | LinkedIn",
+   "u": "https://in.linkedin.com/company/databendlabs",
+   "s": "Databend is an agent-ready cloud data warehouse built for modern analytics, search, and AI workloads. Powered by Rust and built for object storage, Databend Clo"
+  },
+  {
+   "t": "Careers at DataBank - DataBank | Data Center Evolved",
+   "u": "https://www.databank.com/about-databank/careers-at-databank/",
+   "s": "Explore careers at DataBank. Join a team building secure, scalable data center and IT infrastructure solutions for enterprises nationwide."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://job-boards.greenhouse.io/databento",
+  "title": "Jobs at Databento",
+  "status": 200,
+  "bytes": 32390,
+  "markers": [
+   "greenhouse"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "greenhouse:databento",
+  "score": 14,
+  "snippet": "Below is the full updated list of open positions at Databento today. Other job boards may be outdated, and there is no secret \"back door\" into this company. Ple",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
+}

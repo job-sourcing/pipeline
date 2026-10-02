@@ -1,0 +1,146 @@
+{
+ "brand": "Govee",
+ "tier": "probe_A",
+ "lca": "GOVEE MOMENTS US TRADING LIMITED",
+ "ts": "2026-10-02T13:10:09.443Z",
+ "candidates": [
+  {
+   "url": "https://www.whatjobs.com/company/govee/profile",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5833,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Looking for jobs at Govee? Browse current openings, salary insights, and company details. Apply today and explore careers with Govee on WhatJobs.",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://us.govee.com/pages/about-us",
+   "title": "About Govee | Govee US",
+   "status": 200,
+   "bytes": 1171069,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Light Every Moment Beyond On & Off Smart Lighting That Knows You",
+   "backend": "direct"
+  },
+  {
+   "url": "https://community.govee.com/posts/new-ambassador-openings-mid-year-recruitment/259646",
+   "title": "New Ambassador Openings &amp; Mid-Year Recruitment!",
+   "status": 200,
+   "bytes": 158096,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "If you're passionate about smart home tech, love engaging with the community, and want to play a bigger role in shaping the future of Govee community, this is y",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Govee - LinkedIn",
+   "u": "https://www.linkedin.com/company/govee",
+   "s": "Govee Computers and Electronics Manufacturing Bellevue, WA 4,080 followers Life Is Colorful About us We're Govee."
+  },
+  {
+   "t": "Now Hiring: 34,000 Govee, Electronics Jobs | Indeed",
+   "u": "https://www.indeed.com/q-govee,-electronics-jobs.html",
+   "s": "Browse 34,354 Govee, Electronics jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "About Govee | Govee US",
+   "u": "https://us.govee.com/pages/about-us",
+   "s": "Light Every Moment Beyond On & Off Smart Lighting That Knows You"
+  },
+  {
+   "t": "Careers - Gove",
+   "u": "https://gove.co/careers/",
+   "s": "Gove is for the Curious, the Determined, the Creators, and the Problem Solvers. \"We put our people first.\" It's something a lot of companies say, but not a lot "
+  },
+  {
+   "t": "Govee Electronics Jobs in United States (11,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/govee-electronics-jobs",
+   "s": "Today's top 11,000+ Govee Electronics jobs in United States. Leverage your professional network, and get hired. New Govee Electronics jobs added daily."
+  },
+  {
+   "t": "Govee Careers: Jobs, Salaries & Hiring Info | WhatJobs",
+   "u": "https://www.whatjobs.com/company/govee/profile",
+   "s": "Looking for jobs at Govee? Browse current openings, salary insights, and company details. Apply today and explore careers with Govee on WhatJobs."
+  },
+  {
+   "t": "New Ambassador Openings & Mid-Year Recruitment!",
+   "u": "https://community.govee.com/posts/new-ambassador-openings-mid-year-recruitment/259646",
+   "s": "If you're passionate about smart home tech, love engaging with the community, and want to play a bigger role in shaping the future of Govee community, this is y"
+  },
+  {
+   "t": "Govee - Making Life Smarter | Smart Home Lighting",
+   "u": "https://us.govee.com/",
+   "s": "Govee leads with next-gen RGBIC technology, offering smart LED strip lights, outdoor lights, floor lamps, TV backlights, gaming lights, smart bulbs, and more."
+  },
+  {
+   "t": "Now Hiring: 34,000 Govee, Electronics Jobs | Indeed",
+   "u": "https://www.indeed.com/q-govee,-electronics-jobs.html",
+   "s": "Browse 34,354 Govee, Electronics jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "GovernmentJobs | City, State, Federal & Public Sector Jobs",
+   "u": "https://www.governmentjobs.com/",
+   "s": "Find a government job today! Use our job search engine to browse federal, city and state jobs, and apply online. From entry-level to executive, find your career"
+  },
+  {
+   "t": "Govee - LinkedIn",
+   "u": "https://www.linkedin.com/company/govee",
+   "s": "Govee | 4,080 followers on LinkedIn. Life Is Colorful | We're Govee. We bring color &amp; light to all your spaces, featuring the world's best selection of smar"
+  },
+  {
+   "t": "Govee Careers: Jobs, Salaries & Hiring Info | WhatJobs",
+   "u": "https://www.whatjobs.com/company/govee/profile",
+   "s": "Looking for jobs at Govee? Browse current openings, salary insights, and company details. Apply today and explore careers with Govee on WhatJobs."
+  },
+  {
+   "t": "Govee Electronics Jobs in United States (11,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/govee-electronics-jobs",
+   "s": "Today's top 11,000+ Govee Electronics jobs in United States. Leverage your professional network, and get hired. New Govee Electronics jobs added daily."
+  },
+  {
+   "t": "USAJOBS - The Federal Government's Official Jobs Site",
+   "u": "https://www.usajobs.gov/",
+   "s": "USAJOBS is the Federal Government's official one-stop source for Federal jobs and employment information."
+  },
+  {
+   "t": "63,000 Govee Installers Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-govee-installers-jobs.html",
+   "s": "Today's top Govee Installers jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "New Ambassador Openings & Mid-Year Recruitment!",
+   "u": "https://community.govee.com/posts/new-ambassador-openings-mid-year-recruitment/259646",
+   "s": "If you're passionate about smart home tech, love engaging with the community, and want to play a bigger role in shaping the future of Govee community, this is y"
+  },
+  {
+   "t": "Now Hiring: 34,000 Govee, Electronics Jobs | Indeed",
+   "u": "https://www.indeed.com/q-govee,-electronics-jobs.html"
+  },
+  {
+   "t": "Govee Electronics Jobs in United States (10,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/govee-electronics-jobs"
+  },
+  {
+   "t": "Govee - LinkedIn",
+   "u": "https://www.linkedin.com/company/govee"
+  },
+  {
+   "t": "Govee Careers: Jobs, Salaries &amp; Hiring Info | WhatJobs",
+   "u": "https://www.whatjobs.com/company/govee/profile"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

@@ -1,0 +1,16 @@
+{
+ "brand": "FinalRound AI",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:03:18.628Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.finalroundai.com/careers",
+  "platform": "ashby",
+  "title": "Careers Opportunities: Explore Job Opportunities at Final Round AI",
+  "via": "guess"
+ },
+ "verdict": "marker_surface"
+}

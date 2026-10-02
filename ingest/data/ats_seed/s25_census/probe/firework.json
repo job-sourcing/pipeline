@@ -1,0 +1,16 @@
+{
+ "brand": "Firework",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:03:36.245Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://firework.com/careers",
+  "platform": "lever",
+  "title": "Careers",
+  "via": "guess"
+ },
+ "verdict": "marker_surface"
+}

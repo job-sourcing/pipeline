@@ -1,0 +1,30 @@
+{
+ "brand": "EVE Energy",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:01:20.528Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "eve",
+   "spec": "greenhouse:eve",
+   "title": "Jobs at Eve",
+   "jobs_hint": 30
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:eve",
+  "platform": "greenhouse",
+  "title": "Jobs at Eve",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Eve",
+  "brand": "EVE Energy",
+  "ok": false,
+  "n": 1
+ },
+ "verdict": "dict_collision"
+}
