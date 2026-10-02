@@ -1,0 +1,11 @@
+rows: 22 (unique reqIds: 22)
+details merged: 22
+descriptions present: 22
+locations enumerated (not 'N Locations'): 22
+startDate present: 0
+signals: matched=18 no_match=4 blocked=0 not_checked=0
+location entries total (sum nLocations): 28
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=22 (from facet_tags.jsonl)
+facet tag coverage: 22/22 rows (0 untagged)
+h1b wage bands: 3/22 rows banded (0 title+state, 3 title-only) from 11 LCA filings → retellai_us_fulltime.h1b_lca.csv

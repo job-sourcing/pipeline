@@ -1,0 +1,11 @@
+rows: 137 (unique reqIds: 137)
+details merged: 137
+descriptions present: 137
+locations enumerated (not 'N Locations'): 137
+startDate present: 0
+signals: matched=72 no_match=65 blocked=0 not_checked=0
+location entries total (sum nLocations): 158
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=137 (from facet_tags.jsonl)
+facet tag coverage: 137/137 rows (0 untagged)
+h1b wage bands: 1/137 rows banded (0 title+state, 1 title-only) from 24 LCA filings → airwallex_us_fulltime.h1b_lca.csv

@@ -111,6 +111,8 @@ jobs:
         if: env.remaining != '0' && env.PROBE_RESULT != 'complete'
         run: |
           set -e
+          # S25 debug: prove the evidence dir state before the leg
+          echo "probe dir state:"; ls -la "ingest/data/ats_seed/$SECTOR/probe" || echo "MISSING probe dir"
           cd ingest && python3 -m pip install --break-system-packages -q -e . 2>/dev/null || true
           cd ..
           MODE=surface

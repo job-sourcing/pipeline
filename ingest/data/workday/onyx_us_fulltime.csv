@@ -1,0 +1,314 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+8209d4b3-4206-4583-b379-605caece9ba6,Machine Learning Engineer,onyx,onyx,Full time,Posted 529 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the role
+
+💥 Your impact
+
+Onyx is a popular open source project with hundreds of thousands of users. The project has over 10K stars and over 3K community members across Slack and Discord (these stats may already be out of date when you read this). You’ll have the opportunity to build in the open and your work may be used by millions of people in the future.
+
+💡 About the role
+
+Onyx is the knowledge layer on top of LLMs. Help us improve our agent and knowledge retrieval capabilities to push the frontier on unsolved problems like multi-hop QA, needle in haystack, aggregation type RAG, etc. This is an in-person role based in San Francisco, CA.
+
+You’ll be:
+
+•
+Evaluating and implementing LLM based knowledge graphs, advanced RAG approaches (StructRAG, etc.), LLM agents, advances in NLP, multi-modal transformers, advanced information retrieval algorithms
+
+•
+Working on users’ experience with the platform through features like learn from feedback, search personalization, SME suggestion, etc.
+
+•
+Build a semantic and programmatically useful understanding of the organization's priorities, projects, and people as additional signals to the answering capabilities of Onyx
+
+•
+Own the approach from inception to validation to production code
+
+•
+Collaborate with Founders and the Head of AI to shape and influence the direction of the product and contribute to the AI/ML engineering strategy
+
+🚀 You’ll be successful if you…
+
+•
+Have 3+ years of AI/ML engineering experience building real-world applications
+
+•
+have in-depth experience with PyTorch/Tensorflow, NLP models, and standard ML algorithms
+
+•
+Are up date with new advances such as open source/proprietary LLMs, RAG and agent-frameworks
+
+•
+Strong software engineering background and capable of building backend features with web frameworks, ORMs and relational DBs
+
+•
+Excellent communication skills and ability to collaborate with full stack roles
+
+⭐ Bonus points
+
+•
+Familiar with the full stack Typescript/React/NextJS, Python, Postgres
+
+•
+Interested in writing technical blogs to establish Onyx is leader in the space
+
+About the interview
+
+•
+Non-technical Phone Screen (30 mins)
+
+•
+ML Interview (45 mins)
+
+•
+Practical Coding Interview (30 mins)
+
+•
+Work Trial (3 days in person, fully covered + compensated)
+
+About Onyx
+
+Onyx is the open source GenAI platform connected to your company's docs, apps, and people. We ingest and sync from all sources of information (Google Drive, Slack, GitHub, Confluence, Salesforce, etc.) to provide a centralized place for users to ask about anything. Imagine your most knowledgeable co-workers, all-rolled into one, and available 24/7!
+
+We believe that every modern team will be adopting knowledge enhanced GenAI within the next 5 years and it is our goal to bring this technology to all the teams of the world.
+
+We raised a $10M seed coming out of YCombinator, backed by Khosla Ventures (early/seed backers of OpenAI, Doordash, GitLab, etc.) and First Round Capital (Notion, Square, Roblox, etc.). Our customers include of the best teams in the world like Netflix, Ramp, Applied Intuition and dozens of others. We also have incredible open source users like Roku, Zendesk, L3Harris and more.",3190,https://jobs.ashbyhq.com/onyx/8209d4b3-4206-4583-b379-605caece9ba6,,,,,,,no_match,,2026-10-02,,2026-10-02,,,,true,0,,,,,Engineering,,,false,,,,,,
+019079d7-6479-44e7-b616-b11605385515,Fullstack Engineer,onyx,onyx,Full time,Posted 529 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the role
+
+💥 Your impact
+
+Onyx is a popular open source project with hundreds of thousands of users. The project has over 13K stars and over 3K community members across Slack and Discord (these stats may already be out of date when you read this). You’ll have the opportunity to build in the open and your work may be used by millions of people in the future.
+
+💡 About the role
+
+As an early hire, you'll play a pivotal role in shaping the core product. Help us become the biggest “GenAI for work” application in the world. This is an in-person role based in San Francisco, CA.
+
+You’ll be:
+
+•
+Building a consumer grade UI experience for the GenAI Chat, Enterprise Search, Agents, and Admin features
+
+•
+Extending the backend functionalities and APIs (see below)
+
+•
+Improving the flexibility and quality of the search pipeline, building a semantic understanding of customer organizations, extending the current permission/access controls, and expanding the knowledge curation features
+
+•
+Implementing the latest approaches in NLP research like LLM based Knowledge Graphs, StructRAG, Agent/Deep-Research, etc. to increase the range of questions the system can answer (AI / deep learning experience not required)
+
+•
+Own the entire development cycle of new features, from conception to production
+
+•
+Collaborate with the founders and team to shape and influence the direction of the product and contribute to the engineering strategy
+
+🚀 You’ll be successful if you…
+
+•
+Have 1-5 years (or more) of software engineering experience building real-world applications
+
+•
+Know Typescript/React/NextJS, Python, Relational DBs (Postgres)
+
+•
+Enjoy working in a fast moving startup with low amounts of process
+
+•
+Have excellent communication skills, with a strong ability to collaborate with others (both teammates and external customers)
+
+⭐ Bonus points
+
+•
+Experience with Docker/Kubernetes, cloud technologies (AWS, GCP, Azure), and on-prem/cloud deployments
+
+•
+Experience (or even just interest) in AI (NLP, Deep Learning, GenAI) and information retrieval
+
+•
+Previous founder or early engineer at seed/series-A startup
+
+About the interview
+
+•
+Non-technical Phone Screen (30 mins)
+
+•
+Practical Coding Interview (45 mins)
+
+•
+Work Trial (2-3 days in person, fully covered + compensated)
+
+About Onyx
+
+Onyx is the open source GenAI platform connected to your company's docs, apps, and people. We ingest and sync from all sources of information (Google Drive, Slack, GitHub, Confluence, Salesforce, etc.) to provide a centralized place for users to ask about anything. Imagine your most knowledgeable co-workers, all-rolled into one, and available 24/7!
+
+We believe that every modern team will be adopting knowledge enhanced GenAI within the next 5 years and it is our goal to bring this technology to all the teams of the world.
+
+We raised a $10M seed coming out of YCombinator, backed by Khosla Ventures (early/seed backers of OpenAI, Doordash, GitLab, etc.) and First Round Capital (Notion, Square, Roblox, etc.). Our customers include some of the best teams in the world like Netflix, Ramp, Applied Intuition and dozens of others. We also have incredible open source users like Roku, Zendesk, L3Harris and more.",3200,https://jobs.ashbyhq.com/onyx/019079d7-6479-44e7-b616-b11605385515,,,,,,,no_match,,2026-10-02,,2026-10-02,,,,true,0,,,,,Engineering,,,false,,,,,,
+065a86bc-b273-4d9f-a4b3-ea402008512d,Founding Account Executive,onyx,onyx,Full time,Posted 484 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the role
+
+💥 Your Impact
+
+At Onyx, we’re building the connective tissue between generative AI and the modern workplace, unlocking company-specific knowledge and making AI truly useful at work. We’re fortunate to have incredible customers using Onyx every day and inbound interest from world-class brands landing in our inbox weekly. Now, we’re ready to scale what’s working and go even bigger.
+
+As our first Account Executive, you won’t just sell, you’ll help build our entire GTM engine. From refining our sales playbook to helping us define how we grow, your fingerprints will be all over our next chapter. There’s real opportunity here to grow into sales leadership as we scale.
+
+💡 About the Role
+
+You’ll be the tip of the spear for our GTM efforts, working across the entire sales funnel while partnering closely with our founders and technical team. This is a high-ownership, high-impact role for someone who thrives in ambiguity, loves to build from scratch, and wants to shape how great sales is done at a startup.
+
+In this role, you will:
+
+•
+Own the Full Sales Cycle: Run discovery calls, product demos, pricing discussions, proof-of-concepts (POCs), and close deals end-to-end.
+
+•
+Generate Pipeline: Work inbound leads while also building pipeline through outbound prospecting and creative channels.
+
+•
+Navigate Complex Deals: Partner with prospects to handle security reviews, legal redlines, and procurement processes.
+
+•
+Collaborate Cross-Functionally: Partner with engineering and product to ensure a smooth POC experience and customer handoff.
+
+•
+Refine Our Sales Playbook: Track pipeline, update CRM, build forecasts, and help codify our most effective sales motions.
+
+🚀 You’ll be successful if you…
+
+•
+Have 5+ years of experience in mid-market or enterprise software sales, ideally at a B2B SaaS company.
+
+•
+Have experience owning complex deals end-to-end, working with both technical stakeholders and executive buyers.
+
+•
+Thrive in early-stage environments where you wear multiple hats and create structure as you go.
+
+•
+Are a self-starter who doesn’t wait for someone to tell you what to do; you figure it out and make it better.
+
+•
+Know how to prioritize, forecast, and manage pipeline like a pro.
+
+•
+Bring curiosity, creativity, and grit to every step of the sales process.
+
+⭐ Bonus Points
+
+•
+You’ve worked at an early-stage startup and helped build GTM motions from the ground up.
+
+•
+You’ve sold a technical product with a lot of surface area, think APIs, platforms, or deep integrations.
+
+•
+You’ve sold SaaS productivity or knowledge management tools and understand that buyer ecosystem.
+
+•
+You’re excited about AI, obsessed with product, and passionate about making work more seamless and intelligent.
+
+About the interview
+
+•
+Intro Call (30 minutes)
+
+•
+Sales Process Review (30 minutes)
+
+•
+Mock Sales Call (30 minutes)
+
+•
+Onsite with Team (half day)
+
+About Onyx
+
+Onyx is the open source GenAI platform connected to your company's docs, apps, and people. We ingest and sync from all sources of information (Google Drive, Slack, GitHub, Confluence, Salesforce, etc.) to provide a centralized place for users to ask about anything. Imagine your most knowledgeable co-workers, all-rolled into one, and available 24/7!
+
+We believe that every modern team will be adopting knowledge enhanced GenAI within the next 5 years and it is our goal to bring this technology to all the teams of the world.
+
+We raised a $10M seed coming out of YCombinator, backed by Khosla Ventures (early/seed backers of OpenAI, Doordash, GitLab, etc.) and First Round Capital (Notion, Square, Roblox, etc.). Our customers include of the best teams in the world like Netflix, Ramp, Applied Intuition and dozens of others. We also have incredible open source users like Roku, Zendesk, L3Harris and more.",3798,https://jobs.ashbyhq.com/onyx/065a86bc-b273-4d9f-a4b3-ea402008512d,,,,,,,no_match,,2026-10-02,,2026-10-02,,,,true,0,,,,,Sales,,,false,,,,,,
+2b0fbfaf-6f68-45e2-8bd0-e46020f7a36e,"Technical Lead, Frontend",onyx,onyx,Full time,Posted 395 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"💥 Your impact
+
+Onyx is a popular open source project with hundreds of thousands of users. The project has over 13K stars and over 3K community members across Slack and Discord (these stats may already be out of date when you read this). You’ll have the opportunity to build in the open and your work may be used by millions of people in the future.
+
+💡 About the role
+
+As an early hire, you'll play a pivotal role in shaping the core product. Help us become the biggest “GenAI for work” application in the world!
+
+You’ll be:
+
+•
+Doing everything frontend for the default open-source chat interface, enterprise search platform, and agent builder. Some specific features:
+
+•
+Beautiful core search and chat experience (animations, speed, etc.). Think building the UI/UX layer for Perplexity AND ChatGPT in one.
+
+•
+Huge feature set: workspace search, internet search, code interpreter, artifacts, deep research, and so much more
+
+•
+Collaborating closely with the design team + founders
+
+•
+Setting frontend priorities and best practices
+
+•
+Building an exceptional design / frontend engineering culture
+
+•
+Fostering an open-source community; guiding contributors on adding to the frontend
+
+This is an in-person role based in San Francisco, CA.
+
+🚀 You’ll be successful if you have…
+
+•
+4+ years of frontend engineering experience building complex, user-facing applications
+
+•
+Have an incredible bar for yourself and for others. You want your work to be exceptional, and accept nothing less.
+
+•
+In-depth experience with JavaScript, TypeScript, React, NextJS and other modern frontend technologies
+
+•
+Excellent communication skills and ability to collaborate with cross-functional teams
+
+•
+Strong product/design intuition.
+
+⭐ Bonus points
+
+•
+Familiar with Python, Postgres
+
+•
+Degree in Computer Science or related technical field
+
+•
+Previous founder or early engineer at seed/series-A startup
+
+🤝 Why you should join us
+
+•
+You like working with brilliant (yet humble), thoughtful, and collaborative people
+
+•
+Great benefits including fully covered health/dental/vision and transportation reimbursement
+
+•
+Free meals — We have our Mix’t loyalists and a rebel faction of unhealthy eaters
+
+•
+Stocked kitchen with drinks, snacks, matcha and an espresso machine
+
+•
+Monthly company outings (bike rides to Mt. Tamalpais, escape rooms, etc.)
+
+•
+We enjoy friendly competition — we built an internal ELO system to find the best ping pong players on the team
+
+•
+Exceptional compensation packages for exceptional people",2494,https://jobs.ashbyhq.com/onyx/2b0fbfaf-6f68-45e2-8bd0-e46020f7a36e,,,,,,,no_match,,2026-10-02,,2026-10-02,,,,true,0,,,,,Engineering,,,false,,,,,,

@@ -1,0 +1,639 @@
+{
+ "board": "ats:ashby:hyperbolic",
+ "company": "Hyperbolic",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-02",
+ "count": 11,
+ "details_merged": 11,
+ "signals_matched": 10,
+ "similar_edges": 0,
+ "facet_tagged_rows": 11,
+ "rows": [
+  {
+   "reqId": "668d9b32-b1f5-41a6-9e8e-5e3978ec555c",
+   "title": "Member of Technical Staff - Full Stack",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/668d9b32-b1f5-41a6-9e8e-5e3978ec555c",
+   "externalPath": "/668d9b32-b1f5-41a6-9e8e-5e3978ec555c",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 234 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "668d9b32-b1f5-41a6-9e8e-5e3978ec555c"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-02-10",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Member of Technical Staff - Full Stack",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"></p><h2><strong>About the Role</strong></h2><p style=\"min-height:1.5em\">As a Full Stack Engineer at Hyperbolic Labs, you’ll work closely with our Product and Engineering teams to design, build, and scale end-to-end applications that power our AI cloud platform. You’ll contribute across the stack — from infrastructure and backend systems to intuitive frontend interfaces — helping us deliver a seamless experience for our GPU marketplace, inference tools, and platform services.<br /><br />In this role, you’ll be deeply involved in shaping both our product and the technology behind it. You’ll architect scalable systems, implement new features, and continuously improve our development practices to support rapid growth. This is a high-impact role where you’ll collaborate with talented engineers to build the backbone of Hyperbolic’s core products.</p><p style=\"min-height:1.5em\"></p><h2><strong>Who You Are</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">8+ years of experience in full-stack development, preferably in high-growth product environments.</p></li><li><p style=\"min-height:1.5em\">Expert in Node.JS, TypeScript, with some Python fluency for backend systems</p></li><li><p style=\"min-height:1.5em\">Experience with Drizzle ORM, Postgres, and Vercel and Github-based CI/CD pipelines.</p></li><li><p style=\"min-height:1.5em\">Strong product sense — you care about user experience as much as technical elegance.</p></li><li><p style=\"min-height:1.5em\">Effective communicator who thrives in fast-paced, cross-functional teams.</p></li><li><p style=\"min-height:1.5em\">Demonstrated experience shipping production-ready features end-to-end.</p></li><li><p style=\"min-height:1.5em\"> Skilled in structuring, running, and interpreting A/B and multivariate experiments to inform data-driven product decisions.</p></li><li><p style=\"min-height:1.5em\">Experience designing and building large-scale applications, from data modeling and API design to front-end architecture.</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Preferred Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Strong Python expertise and familiarity with scripting for automation or integration.</p></li><li><p style=\"min-height:1.5em\">Experience working on AI developer tools or at-scale distributed systems.</p></li><li><p style=\"min-height:1.5em\">Experience with Supabase, Figma, or design collaboration workflows.</p></li><li><p style=\"min-height:1.5em\">Familiarity with A/B testing and feature flag systems (PostHog).</p></li><li><p style=\"min-height:1.5em\">Familiarity with LLM APIs (OpenAI, Anthropic, etc.) and AI integration patterns.</p></li><li><p style=\"min-height:1.5em\">Previous leadership or mentorship experience within engineering teams.</p></li><li><p style=\"min-height:1.5em\">Passion for building tools that empower developers and accelerate innovation.</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/668d9b32-b1f5-41a6-9e8e-5e3978ec555c",
+    "jobReqId": "668d9b32-b1f5-41a6-9e8e-5e3978ec555c",
+    "postedOn": "Posted 234 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4471656830",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471656830",
+    "title": "Member of Technical Staff - Full Stack",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 26,
+    "applicants_label": "26 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:12:59",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "c6039f86-4915-4d1d-9e10-ac7c2a484d5c",
+   "title": "VP of Engineering",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/c6039f86-4915-4d1d-9e10-ac7c2a484d5c",
+   "externalPath": "/c6039f86-4915-4d1d-9e10-ac7c2a484d5c",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 112 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "c6039f86-4915-4d1d-9e10-ac7c2a484d5c"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-06-12",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "VP of Engineering",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><h2><strong>About the Role</strong></h2><p style=\"min-height:1.5em\">We are seeking a highly technical Vice President of Infrastructure to build and scale the foundational infrastructure powering our AI cloud platform.</p><p style=\"min-height:1.5em\">This is a hands-on executive leadership role. While you will own infrastructure strategy, organizational growth, and executive-level decision making, we expect you to remain deeply engaged in architecture, design, and engineering execution. You should expect to spend approximately <strong>30-40% of your time directly contributing to technical design, architecture reviews, debugging critical production issues, and partnering with engineers on implementation.</strong></p><p style=\"min-height:1.5em\">The ideal candidate has previously built and scaled cloud platforms, preferably GPU-native cloud infrastructure supporting AI training and inference workloads. You have experience operating at the intersection of executive leadership and hands-on engineering and are excited to help build both the technology and the team.</p><p style=\"min-height:1.5em\"></p><h2><strong>What You'll Own</strong></h2><h3><strong>Cloud Infrastructure Architecture</strong></h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Lead the design and evolution of our AI cloud platform</p></li><li><p style=\"min-height:1.5em\">Define the architecture for GPU orchestration, compute scheduling, networking, storage, and distributed systems</p></li><li><p style=\"min-height:1.5em\">Make critical decisions regarding cloud infrastructure, bare-metal deployments, and platform scalability</p></li><li><p style=\"min-height:1.5em\">Personally participate in architecture reviews and key technical initiatives</p></li></ul><h3><strong>GPU Cloud Platform</strong></h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Build and scale large GPU clusters supporting customer workloads</p></li><li><p style=\"min-height:1.5em\">Design systems for GPU provisioning, scheduling, utilization optimization, and capacity management</p></li><li><p style=\"min-height:1.5em\">Drive platform reliability and performance for AI training and inference workloads</p></li><li><p style=\"min-height:1.5em\">Partner closely with engineering teams on infrastructure requirements for next-generation AI systems</p></li></ul><h3><strong>Technical Leadership</strong></h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Remain deeply involved in engineering decisions and technical direction</p></li><li><p style=\"min-height:1.5em\">Contribute directly to infrastructure design and implementation efforts</p></li><li><p style=\"min-height:1.5em\">Review architecture proposals, system designs, and major infrastructure changes</p></li><li><p style=\"min-height:1.5em\">Act as the technical escalation point for complex infrastructure challenges</p></li></ul><h3><strong>Infrastructure &amp; Reliability</strong></h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Establish best practices for Kubernetes, observability, CI/CD, security, and operational excellence</p></li><li><p style=\"min-height:1.5em\">Build SRE and Platform Engineering functions from the ground up</p></li><li><p style=\"min-height:1.5em\">Define reliability standards including SLOs, SLIs, incident response processes, and capacity planning</p></li><li><p style=\"min-height:1.5em\">Drive automation across infrastructure operations</p></li></ul><h3><strong>Organizational Leadership</strong></h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Recruit and develop world-class Infrastructure, Platform, and SRE teams</p></li><li><p style=\"min-height:1.5em\">Build a high-performance engineering culture focused on ownership and execution</p></li><li><p style=\"min-height:1.5em\">Partner with executive leadership on company strategy and infrastructure investments</p></li><li><p style=\"min-height:1.5em\">Manage infrastructure budgets, vendor relationships, and capacity planning</p><p style=\"min-height:1.5em\"></p></li></ul><h2><strong>Required Experience</strong></h2><h3><strong>Must-Have Background</strong></h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">12+ years building and operating large-scale infrastructure systems</p></li><li><p style=\"min-height:1.5em\">Experience leading infrastructure organizations while remaining hands-on technically</p></li><li><p style=\"min-height:1.5em\">Previous experience building or operating a cloud platform at scale</p></li><li><p style=\"min-height:1.5em\">Experience building GPU infrastructure or AI/ML compute platforms</p></li><li><p style=\"min-height:1.5em\">Proven track record scaling infrastructure in high-growth startup environments</p></li></ul><h3><strong>Deep Technical Expertise</strong></h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Expert-level Kubernetes knowledge</p></li><li><p style=\"min-height:1.5em\">Experience designing and operating multi-region cloud infrastructure</p></li><li><p style=\"min-height:1.5em\">Strong understanding of Linux, networking, distributed systems, and storage architecture</p></li><li><p style=\"min-height:1.5em\">Experience with Infrastructure-as-Code and automation frameworks</p></li><li><p style=\"min-height:1.5em\">Deep expertise in observability, monitoring, and reliability engineering</p></li><li><p style=\"min-height:1.5em\">Experience building highly available production systems</p></li></ul><h3><strong>Strongly Preferred</strong></h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience with GPU scheduling, Slurm, Kubernetes GPU operators, Ray, or distributed training systems</p></li><li><p style=\"min-height:1.5em\">Experience managing thousands of GPUs in production environments</p></li><li><p style=\"min-height:1.5em\">Background supporting AI training and inference platforms</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/c6039f86-4915-4d1d-9e10-ac7c2a484d5c",
+    "jobReqId": "c6039f86-4915-4d1d-9e10-ac7c2a484d5c",
+    "postedOn": "Posted 112 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4471670359",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471670359",
+    "title": "VP of Engineering",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 39,
+    "applicants_label": "39 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:13:01",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "87282817-fd20-415c-bd9f-7e06d1f9f114",
+   "title": "Senior Data Lead",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/87282817-fd20-415c-bd9f-7e06d1f9f114",
+   "externalPath": "/87282817-fd20-415c-bd9f-7e06d1f9f114",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 227 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "87282817-fd20-415c-bd9f-7e06d1f9f114"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-02-17",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Senior Data Lead",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"></p><h2><strong>About the Role</strong></h2><p style=\"min-height:1.5em\">We're seeking a data analytics lead to establish and own the data foundation for our rapidly growing GPU marketplace. This is a high-impact role where you'll work directly with leadership to define, build, and deliver the critical metrics that drive business decisions across the company. You'll bridge the gap between our highly technical AI infrastructure and business needs, transforming complex data into actionable insights.</p><p style=\"min-height:1.5em\">As a data-heavy compute marketplace business, we need someone who can understand the nuances of our marketplace, work independently to produce accurate metrics, and communicate insights clearly to stakeholders. You'll have the opportunity to shape our data analytics function from the ground up, with a clear path to growing into a leadership role as the team expands.</p><p style=\"min-height:1.5em\"></p><h2><strong>Who You Are</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">8+ years of experience in data analytics, preferably at a technical startup with a small analytics team where you had significant ownership</p></li><li><p style=\"min-height:1.5em\">Strong SQL and Python scripting skills for data manipulation and analysis</p></li><li><p style=\"min-height:1.5em\">Expert at data debugging and ensuring data correctness with a proactive approach to data health</p></li><li><p style=\"min-height:1.5em\">Experience with dashboard development and business intelligence tools (Hex, Metabase, PostHog, or similar)</p></li><li><p style=\"min-height:1.5em\">Exceptional attention to detail with consistent review and improvement of data systems</p></li><li><p style=\"min-height:1.5em\">Strong communication and collaboration skills with the ability to articulate complex data insights to leadership</p></li><li><p style=\"min-height:1.5em\">Experience working with highly technical teams and understanding technical business models</p></li><li><p style=\"min-height:1.5em\">Proactive in seeking clarification when needed and comfortable navigating ambiguity</p></li><li><p style=\"min-height:1.5em\">Ability to accept direct feedback and continuously improve</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Preferred Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience in GPU compute infrastructure or cloud computing space</p></li><li><p style=\"min-height:1.5em\">Background in AI infrastructure or related technical domains</p></li><li><p style=\"min-height:1.5em\">Data engineering skills or familiarity with data pipeline development</p></li><li><p style=\"min-height:1.5em\">Experience at high-growth, early stage, technical companies</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/87282817-fd20-415c-bd9f-7e06d1f9f114",
+    "jobReqId": "87282817-fd20-415c-bd9f-7e06d1f9f114",
+    "postedOn": "Posted 227 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4471654924",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471654924",
+    "title": "Senior Data Lead",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 72,
+    "applicants_label": "72 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:13:02",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "d502a262-5764-4505-a00c-67a0b403664a",
+   "title": "Head of Marketing",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/d502a262-5764-4505-a00c-67a0b403664a",
+   "externalPath": "/d502a262-5764-4505-a00c-67a0b403664a",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 23 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "d502a262-5764-4505-a00c-67a0b403664a"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-09",
+   "departments": [
+    "Marketing"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Head of Marketing",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"></p><h2><strong>Who You Are</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">8- 10 years of marketing experience with a proven track record in brand building and global communications at high-growth technology companies</p></li><li><p style=\"min-height:1.5em\">Expertise in developing and executing comprehensive brand marketing and PR strategies that resonate with developers and enterprise leaders</p></li><li><p style=\"min-height:1.5em\">A solid understanding of the artificial intelligence ecosystem, machine learning, generative AI, and data annotation is required.</p></li><li><p style=\"min-height:1.5em\">Strong background in product marketing, including positioning, messaging, and storytelling for complex technical products</p></li><li><p style=\"min-height:1.5em\">Highly quantitative mindset focused on metrics, conversion rates, and understanding how users sign up and engage with products</p></li><li><p style=\"min-height:1.5em\">Exceptional brand instincts and creative judgment, with a track record of building distinctive, high-quality brands for technical products and sophisticated audiences</p></li><li><p style=\"min-height:1.5em\">Ability to partner deeply with engineering and product teams, translate complex infrastructure into clear and credible narratives, and shape differentiated positioning for developers and enterprise leaders</p></li><li><p style=\"min-height:1.5em\">Proven experience building a marketing function from the ground up, including recruiting, developing, and leading a team of exceptional marketing talent</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Preferred Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Deep knowledge of GPU compute, AI infrastructure, or cloud computing space</p></li><li><p style=\"min-height:1.5em\">Proven ability to build and manage a diverse ecosystem of partners, contributors, and community advocates</p></li><li><p style=\"min-height:1.5em\">Track record of proactive channel growth tactics and creative experimentation</p></li><li><p style=\"min-height:1.5em\">Experience delegating tasks and projects to marketing support positions or agencies</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/d502a262-5764-4505-a00c-67a0b403664a",
+    "jobReqId": "d502a262-5764-4505-a00c-67a0b403664a",
+    "postedOn": "Posted 23 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Marketing",
+   "signals": {
+    "linkedin_job_id": "4471661733",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471661733",
+    "title": "Head of Marketing",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 47,
+    "applicants_label": "47 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:13:05",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "0cd2cbf3-bc38-4e02-84c1-ac7a7c285105",
+   "title": "Member of Technical Staff - GPU Infrastructure",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/0cd2cbf3-bc38-4e02-84c1-ac7a7c285105",
+   "externalPath": "/0cd2cbf3-bc38-4e02-84c1-ac7a7c285105",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 190 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "0cd2cbf3-bc38-4e02-84c1-ac7a7c285105"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-03-26",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Member of Technical Staff - GPU Infrastructure",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"></p><h2><strong>About the Role</strong></h2><p style=\"min-height:1.5em\">We're seeking a very senior Infrastructure Engineer to help build and scale Hyperbolic's GPU Cloud Marketplace, by building a multi-tenancy provisioning and virtualization solution.  This is a foundational role where you'll be responsible for transforming raw GPUs from diverse global suppliers into a programmable, orchestrated pool that serves thousands of AI developers and researchers. You'll work at the cutting edge of cloud infrastructure, building the core orchestration layer that enables our platform to deliver up to 75% cost savings compared to traditional cloud providers.</p><p style=\"min-height:1.5em\"></p><h2><strong>Who You Are</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Deep understanding of bare-metal provisioning and lifecycle management, including IPMI/Redfish, BMC-based remote management, PXE boot, and automated OS deployment workflows</p></li><li><p style=\"min-height:1.5em\">Deep understanding of GPU scheduling and orchestration, including GPU type awareness, memory management, topology considerations, placement strategies for multi-GPU jobs, and fragmentation minimization</p></li><li><p style=\"min-height:1.5em\">Strong infrastructure and DevOps engineering skills with proficiency in Terraform or Pulumi, CI/CD for infrastructure, secrets management, configuration management, and observability stack implementation</p></li><li><p style=\"min-height:1.5em\">Experience with storage and data infrastructure for AI/ML workloads, including object storage, high-IOPS block storage, and distributed file systems for training data and checkpoints</p></li><li><p style=\"min-height:1.5em\">Proficiency with API design and cloud-init for automated provisioning and configuration</p></li><li><p style=\"min-height:1.5em\">Solid understanding of GPU architecture, CUDA, and GPU compute optimization</p></li><li><p style=\"min-height:1.5em\">Highly collaborative team player with excellent communication skills across technical and non-technical stakeholders</p></li><li><p style=\"min-height:1.5em\">Proven ability to work effectively with hardware vendors and vendor engineering teams to troubleshoot issues and optimize integrations</p></li><li><p style=\"min-height:1.5em\">Experience building and scaling cloud infrastructure or distributed systems in production environments</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Preferred Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Familiarity with high-performance networking technologies such as InfiniBand and RoCE (RDMA over Converged Ethernet)</p></li><li><p style=\"min-height:1.5em\">Experience with distributed storage systems such as Ceph, Weka, or VAST Data</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/0cd2cbf3-bc38-4e02-84c1-ac7a7c285105",
+    "jobReqId": "0cd2cbf3-bc38-4e02-84c1-ac7a7c285105",
+    "postedOn": "Posted 190 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4471667519",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471667519",
+    "title": "Member of Technical Staff - GPU Infrastructure",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:13:03",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "78ff7797-58d4-435a-a229-58425036d716",
+   "title": "Member of Technical Staff - Platform",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/78ff7797-58d4-435a-a229-58425036d716",
+   "externalPath": "/78ff7797-58d4-435a-a229-58425036d716",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 185 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "78ff7797-58d4-435a-a229-58425036d716"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-03-31",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Member of Technical Staff - Platform",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"></p><h2><strong>About the Role</strong></h2><p style=\"min-height:1.5em\">We're seeking a Platform Engineer to design and build the control plane that powers Hyperbolic's GPU marketplace. This is the \"aggregator brain\" that transforms raw compute from hundreds of diverse vendors into a unified, programmable product. You'll architect the abstractions, policies, and golden paths that enable thousands of developers to seamlessly access GPU resources across our global network without thinking about the underlying complexity.</p><p style=\"min-height:1.5em\">In this role, you'll design the tenant management system, build resource lifecycle APIs, implement identity and access control, establish billing and quota frameworks, and create the multi-cloud abstractions that make our platform feel native regardless of the underlying provider. You'll work closely with our engineering team to craft elegant solutions for complex distributed systems challenges, ensuring our control plane is robust, scalable, and developer-friendly. This is a foundational engineering role where your architectural decisions will shape how AI developers worldwide interact with compute resources.</p><p style=\"min-height:1.5em\"></p><h2><strong>Who You Are</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Expert in platform engineering with experience designing and building control planes for cloud platforms, developer platforms, or infrastructure services</p></li><li><p style=\"min-height:1.5em\">Expert-level software engineering skills in Go (Golang) with a track record of building and operating production distributed systems and infrastructure services.</p></li><li><p style=\"min-height:1.5em\">Strong background in API design and development, including RESTful APIs, resource lifecycles, versioning strategies, and multi-cloud abstractions</p></li><li><p style=\"min-height:1.5em\">Deep understanding of multi-tenancy architecture including tenant isolation, project hierarchies, resource quotas, and billing integration</p></li><li><p style=\"min-height:1.5em\">Experience with identity, access management, and policy systems including SSO integration, organizational structures, role-based access control (RBAC), and fine-grained permissions</p></li><li><p style=\"min-height:1.5em\">Proven ability to design \"golden paths\" and developer experiences that abstract complexity while maintaining power and flexibility</p></li><li><p style=\"min-height:1.5em\">Strong systems thinking with ability to design scalable, maintainable architectures for distributed control planes</p></li><li><p style=\"min-height:1.5em\">Experience building compliance hooks, policy enforcement, and governance frameworks for cloud platforms</p></li><li><p style=\"min-height:1.5em\">Excellent communication skills with ability to collaborate across product, engineering, and business teams</p></li><li><p style=\"min-height:1.5em\">Track record of building production-grade platform services used by developers or enterprises</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Preferred Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience building cloud platforms, PaaS, or infrastructure-as-a-service products</p></li><li><p style=\"min-height:1.5em\">Deep experience building backend services in Go, including API servers, controllers/operators, resource lifecycle management systems, and distributed control plane components</p></li><li><p style=\"min-height:1.5em\">Knowledge of Kubernetes control plane architecture, custom resource definitions (CRDs), and operator patterns</p></li><li><p style=\"min-height:1.5em\">Familiarity with billing systems, metering, usage tracking, and quota enforcement mechanisms</p></li><li><p style=\"min-height:1.5em\">Experience with service mesh, API gateway technologies, and rate limiting strategies</p></li><li><p style=\"min-height:1.5em\">Background in security, compliance frameworks (SOC 2, GDPR, HIPAA), and audit logging</p></li><li><p style=\"min-height:1.5em\">Contributions to open-source platform or infrastructure projects</p></li><li><p style=\"min-height:1.5em\">Experience at companies like AWS, Google Cloud, Azure, or fast-growing infrastructure startups</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/78ff7797-58d4-435a-a229-58425036d716",
+    "jobReqId": "78ff7797-58d4-435a-a229-58425036d716",
+    "postedOn": "Posted 185 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4471677023",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471677023",
+    "title": "Member of Technical Staff - Platform",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 29,
+    "applicants_label": "29 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:12:54",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "9d1d8e21-a7eb-46a3-bc70-d01536ff79e9",
+   "title": "Head of Compute",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/9d1d8e21-a7eb-46a3-bc70-d01536ff79e9",
+   "externalPath": "/9d1d8e21-a7eb-46a3-bc70-d01536ff79e9",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 158 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "9d1d8e21-a7eb-46a3-bc70-d01536ff79e9"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-04-27",
+   "departments": [
+    "Supply"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Head of Compute",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"><strong>About the Role</strong></p><p style=\"min-height:1.5em\">We're seeking a Head of Supply to build and scale the GPU supply side of Hyperbolic's marketplace. This is a relationships-first role where your existing connections with data centers, NeoClouds, and GPU suppliers are your most valuable asset. You'll be responsible for onboarding a large number of NeoCloud providers to our platform, sourcing GPU capacity through your network, and ensuring we always have the supply needed to meet customer demand. This isn't a traditional supply chain role—we're looking for someone who knows the GPU landscape intimately, has direct relationships with suppliers, and can pick up the phone to find capacity when needed.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">You will manage ongoing supplier relationships, maintain accurate inventory and pricing data, process reserve deals by matching customer requests with the right suppliers, and work closely with our sales team to rapidly respond to \"Can you find me X GPUs?\" requests. You'll ensure our scaling limit is demand, not supply availability. This role combines supplier relationship management, deal sourcing, and technical understanding of GPU infrastructure—requiring someone who can talk technical details with engineers while building deep partnerships with data center operators.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Who You Are</strong></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Established relationships with data centers, NeoClouds, and GPU suppliers with a proven track record of sourcing GPU capacity directly</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Deep knowledge of the GPU landscape including where capacity exists, key players in the market, and how to access underutilized resources</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience sourcing from multiple NeoClouds or data centers, or similar GPU aggregators</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Technical background or strong technical understanding that enables engineer-to-engineer conversations about infrastructure and GPU specifications</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Proven ability to build and maintain supplier relationships, onboard new partners, and manage ongoing account dynamics</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Strong deal-making and negotiation skills with ability to match customer needs with supplier capabilities</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Excellent organizational skills to manage inventory data, pricing information, and supplier engagement across 70-100+ providers</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Ability to move quickly and respond to urgent capacity requests from sales and customers</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Strong communication skills for coordinating between suppliers, internal teams, and customers</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Demonstrated stability in previous roles with commitment to building long-term relationships and infrastructure</p></li></ul><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Preferred Qualifications</strong></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Direct experience at GPU aggregators, cloud marketplaces, or companies managing multi-supplier GPU networks</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Existing relationships with major NeoCloudsKnowledge of bare metal data center operations and capacity planning</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Understanding of GPU types, specifications, and use cases for AI/ML workloads</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience with supplier onboarding processes, inventory management systems, and pricing dynamics</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Track record of scaling supplier networks from tens to hundreds of partners</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Background in high-growth startups or marketplaces where supply availability was a key constraint</p></li></ul><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/9d1d8e21-a7eb-46a3-bc70-d01536ff79e9",
+    "jobReqId": "9d1d8e21-a7eb-46a3-bc70-d01536ff79e9",
+    "postedOn": "Posted 158 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Supply",
+   "signals": {
+    "linkedin_job_id": "4471655813",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471655813",
+    "title": "Head of Compute",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:12:58",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "3bf4456d-7244-4b7c-a7e6-db0ebfef011f",
+   "title": "Capital Markets Lead",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/3bf4456d-7244-4b7c-a7e6-db0ebfef011f",
+   "externalPath": "/3bf4456d-7244-4b7c-a7e6-db0ebfef011f",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 36 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "3bf4456d-7244-4b7c-a7e6-db0ebfef011f"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-08-27",
+   "departments": [
+    "Finance"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Capital Markets Lead",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"></p><h2><strong>About the Role</strong></h2><p style=\"min-height:1.5em\">You'll work directly with the Head of Finance and CEO to raise the capital that funds our compute supply, across conventional facilities and structures that don't have a standard playbook yet. Compute is an unusual asset class. It has contracted cash flows, a real residual value, a depreciation curve nobody agrees on, and a lender base that is still forming an opinion about it. You'll build the financing architecture around it, and make the case to a credit committee that our receivables are money good. This is a builder's seat, not a maintenance seat — there is no existing facility to administer, and you will originate the first ones.</p><p style=\"min-height:1.5em\">You'll originate and structure debt capital to fund vendor down payments and capacity commitments, spanning bank revolvers, private credit and non-bank facilities, receivables- and contract-backed structures, SPV and project-style financings, and vendor and equipment financing. You'll own the lender and investor relationship map, run raises end to end from positioning through definitive documentation, and sit in the redlines on covenants, lien priority, DACA mechanics, borrowing base definitions, and advance rates. You'll own the financing side of our contract-level model and bring leadership a defensible recommendation rather than a menu, support the concurrent equity round without letting the debt and equity tracks collide, manage post-close lender reporting and compliance, and work closely with the teams negotiating vendor supply and customer contracts so that what we sign is financeable.</p><p style=\"min-height:1.5em\">In your first 90 days, you'll know our unit economics and contract mechanics, have a mapped and prioritized lender universe, and have first meetings underway. By six months, you'll have a term sheet in hand for a facility that funds vendor down payments on terms we'd sign again. By twelve months, capital is no longer the constraint on how much capacity we can commit to.</p><p style=\"min-height:1.5em\"></p><h2><strong>Who You Are</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">5+ years in capital markets, corporate development, or institutional fundraising; 10+ preferred</p></li><li><p style=\"min-height:1.5em\">You have raised institutional capital before — specifically from institutional LPs for a hedge fund, private equity firm, or venture capital firm — and you can name the relationships you'd bring</p></li><li><p style=\"min-height:1.5em\">Investment bank capital markets experience, ideally debt: DCM, leveraged finance, structured finance, private capital markets, or a financial sponsors group</p></li><li><p style=\"min-height:1.5em\">Existing relationships with bank, non-bank, and private credit lenders active in the AI space</p></li><li><p style=\"min-height:1.5em\">Real fluency in credit documentation and structure — comfortable arguing about first-lien vs. second-lien, intercreditor terms, cash sweeps, and what a lender actually means when they ask for control over an account</p></li><li><p style=\"min-height:1.5em\">Strong financial modeling skills; you can build the facility model yourself and defend every assumption in it</p></li><li><p style=\"min-height:1.5em\">Comfortable operating with ambiguity, a small team, and no analyst bench</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Preferred Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">You've raised a Series B or Series C at a startup — as an operator, not an advisor</p></li><li><p style=\"min-height:1.5em\">Exposure to asset-backed, equipment, infrastructure, or project finance</p></li><li><p style=\"min-height:1.5em\">Familiarity with AI infrastructure, data centers, semiconductors, or energy — or a demonstrated ability to get up the curve on a technical market fast</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/3bf4456d-7244-4b7c-a7e6-db0ebfef011f",
+    "jobReqId": "3bf4456d-7244-4b7c-a7e6-db0ebfef011f",
+    "postedOn": "Posted 36 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Finance",
+   "signals": {
+    "linkedin_job_id": "4471677034",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471677034",
+    "title": "Capital Markets Lead",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:12:52",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "38121cf9-aa24-44f6-a500-ebcd2d3ca3ef",
+   "title": "Member of Technical Staff - Inference",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/38121cf9-aa24-44f6-a500-ebcd2d3ca3ef",
+   "externalPath": "/38121cf9-aa24-44f6-a500-ebcd2d3ca3ef",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 23 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "38121cf9-aa24-44f6-a500-ebcd2d3ca3ef"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-09",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Member of Technical Staff - Inference",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"></p><h2><strong>About the Role</strong></h2><p style=\"min-height:1.5em\">We're looking for an Inference Engineer to build inference capabilities on top of Forge, our unified control plane, so customers can consume model tokens without managing GPUs and our NeoCloud partners get a full-stack path to their own token-factory offering. You'll own how models get deployed and served across clusters distributed around the world, on heterogeneous hardware.</p><p style=\"min-height:1.5em\">Deployment comes first: serving models on Forge and our Kubernetes offering, evaluating inference frameworks, and standing up the monitoring, gateways, and endpoints that make a deployment production-ready. From there the work expands into optimization, autoscaling, KV-cache orchestration, and customer inference debugging. This is the primary seat for inference at Hyperbolic \\u2014 you'll build it end to end, with real influence over where the scope lands.</p><p style=\"min-height:1.5em\"></p><h2><strong>Who You Are</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Strong general inference background with a broad, high-level command of the stack rather than a narrow specialty — you can reason about the whole path from request to token</p></li><li><p style=\"min-height:1.5em\">Deep Kubernetes experience, including hands-on ability to operate clusters in production, not just deploy to them</p></li><li><p style=\"min-height:1.5em\">Solid grasp of the concepts that govern inference performance: TTFT, disaggregated inference, speculative decoding, and KV cache and its inner workings</p></li><li><p style=\"min-height:1.5em\">Familiarity with modern inference frameworks and serving engines, and the judgment to evaluate and select among them for a given workload</p></li><li><p style=\"min-height:1.5em\">Working knowledge of NVIDIA Dynamo and how it fits into a distributed serving architecture</p></li><li><p style=\"min-height:1.5em\">Experience setting up monitoring, gateways, and endpoints for production inference services</p></li><li><p style=\"min-height:1.5em\">Proven ability to build a product end to end — you've taken something from nothing to serving real traffic</p></li><li><p style=\"min-height:1.5em\">Strong self-initiative and comfort operating as the primary owner of an area with minimal direction</p></li><li><p style=\"min-height:1.5em\">Generalist instincts: you're willing to pick up adjacent work when it's what the product needs</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Preferred Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience spanning both inference deployment and inference optimization</p></li><li><p style=\"min-height:1.5em\">Hands-on model optimization work — quantization, batching strategies, kernel-level tuning, or similar</p></li><li><p style=\"min-height:1.5em\">Understanding of RDMA and high-performance networking as they apply to distributed serving</p></li><li><p style=\"min-height:1.5em\">Experience deploying inference across heterogeneous accelerators</p></li><li><p style=\"min-height:1.5em\">Background supporting customers directly on inference debugging and performance issues</p></li><li><p style=\"min-height:1.5em\">Experience at a GPU cloud, inference provider, or AI infrastructure company</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/38121cf9-aa24-44f6-a500-ebcd2d3ca3ef",
+    "jobReqId": "38121cf9-aa24-44f6-a500-ebcd2d3ca3ef",
+    "postedOn": "Posted 23 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4471666566",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471666566",
+    "title": "Member of Technical Staff - Inference",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 25,
+    "applicants_label": "among first 25",
+    "applicantCensored": true,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:12:57",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "fd861fe3-88a2-436d-8391-c5c8f35e5793",
+   "title": "Quantitative Researcher",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/fd861fe3-88a2-436d-8391-c5c8f35e5793",
+   "externalPath": "/fd861fe3-88a2-436d-8391-c5c8f35e5793",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 23 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "fd861fe3-88a2-436d-8391-c5c8f35e5793"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-09",
+   "departments": [
+    "Finance"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Quantitative Researcher",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"></p><h2><strong>About the Role</strong></h2><p style=\"min-height:1.5em\">Compute is becoming a traded asset, and almost none of the market structure exists yet. There is no settled forward curve, no standard contract, no consensus on how to price optionality on a GPU-hour. We're building the financial layer of our marketplace, and we're looking for a Quantitative Researcher to own the modeling behind it.</p><p style=\"min-height:1.5em\">You'll build the pricing models that set spot and term rates dynamically across GPU types and regions, hedge our compute portfolio using both conventional derivatives and non-traditional instruments, and design the options and futures structures that let customers and suppliers transfer compute risk. You'll also be our read on the market — where pricing is heading, what's tradable, and what we should be building next. This is early, unmapped work: you'll be defining the methodology rather than applying an existing one.</p><p style=\"min-height:1.5em\"></p><h2><strong>Who You Are</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">5+ years in quantitative research, trading, or structuring, with hands-on experience building pricing or risk models that were actually traded on, not just backtested</p></li><li><p style=\"min-height:1.5em\">Deep fluency in derivatives pricing and hedging — options, futures, forwards — and the ability to reason about instruments where no liquid market or clean volatility surface exists</p></li><li><p style=\"min-height:1.5em\">Experience constructing hedges for a portfolio of physical or contracted assets, using both conventional derivatives and non-standard instruments</p></li><li><p style=\"min-height:1.5em\">Dynamic pricing expertise: building models that set spot and term prices from supply, demand, and inventory signals in near real time</p></li><li><p style=\"min-height:1.5em\">Strong programming skills in Python and comfort working directly with messy production data rather than a curated research dataset</p></li><li><p style=\"min-height:1.5em\">Ability to structure new financial products from first principles, including contract design, settlement mechanics, and the assumptions underneath them</p></li><li><p style=\"min-height:1.5em\">Clear communicator who can defend a model to finance, engineering, and commercial stakeholders and translate output into a decision</p></li><li><p style=\"min-height:1.5em\">Comfortable operating with ambiguity, incomplete data, and no established playbook for the asset class</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Preferred Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience in commodities, power, or energy markets — the closest existing analogue to compute, with similar delivery, storage, and locational constraints</p></li><li><p style=\"min-height:1.5em\">Background in market making, systematic trading, or structuring at a hedge fund, prop shop, bank, or exchange</p></li><li><p style=\"min-height:1.5em\">Exposure to nascent or illiquid markets where you had to build the curve rather than consume it</p></li><li><p style=\"min-height:1.5em\">Familiarity with GPU compute, AI infrastructure economics, or data center cost structures</p></li><li><p style=\"min-height:1.5em\">Experience with crypto or other markets where compute, hashrate, or energy was the underlying</p></li><li><p style=\"min-height:1.5em\">Advanced degree in a quantitative field, or equivalent demonstrated depth</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/fd861fe3-88a2-436d-8391-c5c8f35e5793",
+    "jobReqId": "fd861fe3-88a2-436d-8391-c5c8f35e5793",
+    "postedOn": "Posted 23 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Finance",
+   "signals": {
+    "linkedin_job_id": "4471662716",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4471662716",
+    "title": "Quantitative Researcher",
+    "company": "Hyperbolic",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-24",
+    "num_applicants": 32,
+    "applicants_label": "32 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T11:12:55",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "209b6140-aaf0-490e-a0f6-ccbcd442980b",
+   "title": "Corporate Counsel",
+   "company": "hyperbolic",
+   "url": "https://jobs.ashbyhq.com/hyperbolic/209b6140-aaf0-490e-a0f6-ccbcd442980b",
+   "externalPath": "/209b6140-aaf0-490e-a0f6-ccbcd442980b",
+   "locationsText": "San Francisco, CA",
+   "postedOn": "Posted 9 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "209b6140-aaf0-490e-a0f6-ccbcd442980b"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-23",
+   "departments": [
+    "Legal"
+   ],
+   "countries": [
+    "USA"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Corporate Counsel",
+    "location": "San Francisco, CA",
+    "additionalLocations": [],
+    "jobDescription": "<h1><strong>Who We Are</strong></h1><p style=\"min-height:1.5em\">Hyperbolic Labs is on a mission to democratize AI by breaking down the barriers to computing power with our Open-Access AI Cloud. By making better use of idle computing resources across the globe, we offer an innovative GPU marketplace and AI inference service that promise affordability and accessibility for all. As pioneers at the intersection of AI and open-source technology, we believe in an open future where AI innovation is limited only by imagination, not by access to resources. We're looking for forward-thinking individuals who share our passion for making AI universally accessible, secure, and affordable. Join us in building a platform that empowers innovators everywhere to turn their visionary AI projects into reality.</p><p style=\"min-height:1.5em\"></p><h2><strong>About the Role</strong></h2><p style=\"min-height:1.5em\">Hyperbolic is seeking a high-impact, commercially minded in-house legal counsel to help shape the legal and commercial foundation of our AI infrastructure business.</p><p style=\"min-height:1.5em\">This is a highly visible role working directly with our founders and leadership team on some of the company’s most important transactions. You will own the agreements through which Hyperbolic secures GPU capacity, brings strategic partners onto its platform, and serves its customers.</p><p style=\"min-height:1.5em\">A central part of your mandate will be aligning MSAs with neocloud providers and customers to deliver a consistently high quality of service while protecting Hyperbolic from legal, operational, and financial risk. Your work will directly influence how we scale, enter new markets, and build durable relationships across the AI infrastructure ecosystem.</p><p style=\"min-height:1.5em\"></p><h2><strong>What You Will Do</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Draft, review, and negotiate MSAs with neoclouds and customers, matching terms across capacity, pricing, timeline, performance, service levels, security, liability, and termination.</p></li><li><p style=\"min-height:1.5em\">Design a wide range of innovative commercial agreements, including creative deal structures with neoclouds, channel partners, market makers, vendors, and technology providers.</p></li><li><p style=\"min-height:1.5em\">Partner with Product, Engineering, Security, Finance, and Operations to ensure contractual commitments are technically achievable and financially supportable.</p></li><li><p style=\"min-height:1.5em\">Navigate an evolving regulatory and compliance landscape, including AI sales restrictions, potential CFTC oversight, SOC 2 &amp; GDPR requirements, and financial-services and data-privacy laws across jurisdictions.</p></li><li><p style=\"min-height:1.5em\">Lead the company’s response to disputes, litigation, and regulatory inquiries, providing clear and decisive counsel under pressure.</p></li><li><p style=\"min-height:1.5em\">Advise on corporate governance, fundraising, debt and equity financings, intellectual property protection, and other strategic corporate matters.</p></li><li><p style=\"min-height:1.5em\">Build contract templates, negotiation playbooks, approval processes, and systems for tracking contractual obligations and risk.</p></li><li><p style=\"min-height:1.5em\">Manage outside counsel and the legal budget.</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Who You Are</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">J.D. and active membership in good standing in at least one U.S. state bar.</p></li><li><p style=\"min-height:1.5em\">5+ years of relevant legal experience, including commercial technology transactions and meaningful in-house experience.</p></li><li><p style=\"min-height:1.5em\">Significant experience drafting and negotiating complex infrastructure, cloud, or enterprise customer MSAs.</p></li><li><p style=\"min-height:1.5em\">Strong understanding of committed capacity, usage-based pricing, SLAs, security obligations, indemnities, liability caps, and termination economics.</p></li><li><p style=\"min-height:1.5em\">Able to compare interconnected supplier and customer agreements, identify mismatched obligations, and develop practical risk mitigations.</p></li><li><p style=\"min-height:1.5em\">Commercial, collaborative, and comfortable making sound decisions in a fast-moving environment.</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Preferred Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience at a neocloud, GPU cloud, public-cloud provider, data-center operator, high-performance computing company, or infrastructure marketplace.</p></li><li><p style=\"min-height:1.5em\">Experience with channel, reseller, marketplace, referral, capacity-sharing, or other non-standard commercial arrangements.</p></li><li><p style=\"min-height:1.5em\">Experience supporting an early-stage company across commercial, corporate, regulatory, and product matters.</p></li></ul><p style=\"min-height:1.5em\"><em>Hyperbolic is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</em></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/hyperbolic/209b6140-aaf0-490e-a0f6-ccbcd442980b",
+    "jobReqId": "209b6140-aaf0-490e-a0f6-ccbcd442980b",
+    "postedOn": "Posted 9 Days Ago",
+    "country": {
+     "descriptor": "USA"
+    }
+   },
+   "hiringOrg": "hyperbolic",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Legal",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}
