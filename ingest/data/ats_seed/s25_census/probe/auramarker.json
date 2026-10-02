@@ -2,13 +2,13 @@
  "brand": "AuraMarker",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T11:47:15.871Z",
+ "ts": "2026-10-02T11:51:41.740Z",
  "candidates": [
   {
    "url": "https://careers.aramark.com/",
    "title": "Aramark Careers | Explore Jobs &amp; Opportunities",
    "status": 200,
-   "bytes": 159725,
+   "bytes": 159678,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -32,7 +32,7 @@
    "url": "https://aramarkcareers.com/",
    "title": "Jobs at Aramark",
    "status": 200,
-   "bytes": 72101,
+   "bytes": 72102,
    "markers": [
     "successfactors"
    ],

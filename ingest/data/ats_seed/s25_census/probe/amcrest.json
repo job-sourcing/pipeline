@@ -2,7 +2,7 @@
  "brand": "Amcrest",
  "tier": "probe_A",
  "lca": "AMCREST INDUSTRIES LLC",
- "ts": "2026-10-02T11:44:19.435Z",
+ "ts": "2026-10-02T11:49:28.352Z",
  "candidates": [
   {
    "url": "https://amcrest.com/careers",
@@ -19,9 +19,9 @@
   },
   {
    "url": "https://amcrest.com/careers-amcrest",
-   "title": "",
-   "status": 0,
-   "bytes": 0,
+   "title": "Careers Amcrest",
+   "status": 200,
+   "bytes": 134675,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -100,6 +100,11 @@
    "s": "Hi! I'm A.V.A., your AMC Theatres virtual job assistant. Thank you for your interest. We are looking for great talent for many types of jobs."
   },
   {
+   "t": "Jobs at AMC Theatre",
+   "u": "https://careers.amctheatres.com/page/1",
+   "s": "8600 Ward Parkway Ste 14, Kansas City, MO Ward Parkway 14"
+  },
+  {
    "t": "7,000+ Amcrest.com jobs in United States - LinkedIn",
    "u": "https://www.linkedin.com/jobs/amcrest.com-jobs",
    "s": "Today's top 7,000+ Amcrest.com jobs in United States. Leverage your professional network, and get hired. New Amcrest.com jobs added daily."
@@ -110,19 +115,14 @@
    "s": "Find out what works well at Amcrest from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
   },
   {
-   "t": "Jobs at AMC Theatre",
-   "u": "https://careers.amctheatres.com/page/1",
-   "s": "8600 Ward Parkway Ste 14, Kansas City, MO Ward Parkway 14"
+   "t": "Aramark Careers | Explore Jobs & Opportunities",
+   "u": "https://careers.aramark.com/",
+   "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
   },
   {
-   "t": "Amcrest Support Jobs in United States (3,000+ Open Roles) | LinkedIn",
-   "u": "https://www.linkedin.com/jobs/amcrest-support-jobs",
-   "s": "Today's top 3,000+ Amcrest Support jobs in United States. Leverage your professional network, and get hired. New Amcrest Support jobs added daily."
-  },
-  {
-   "t": "Recent Jobs - amcrest - Association of Certified Anti-Money Laundering ...",
-   "u": "https://careers.acams.org/jobs/?keywords=amcrest",
-   "s": "View - amcrest jobs available on Association of Certified Anti-Money Laundering Specialists (ACAMS). Search for and apply to open jobs from Association of Certi"
+   "t": "Amcrest Surveillance Pro Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-amcrest-surveillance-pro-jobs.html",
+   "s": "1,263 Amcrest Surveillance Pro jobs available on Indeed.com. Apply to Surveillance Operator, Security Officer, Gsoc Operator and more!"
   },
   {
    "t": "Careers - Amcrest",
@@ -135,17 +135,22 @@
    "s": "Need Help ? Check out our online knowledge base for support and assistance. Support Center"
   },
   {
-   "t": "7,000+ Amcrest.com jobs in United States - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/amcrest.com-jobs",
-   "s": "Today's top 7,000+ Amcrest.com jobs in United States. Leverage your professional network, and get hired. New Amcrest.com jobs added daily."
-  },
-  {
    "t": "Amcrest Careers and Employment | Indeed.com",
    "u": "https://www.indeed.com/cmp/Amcrest-1",
    "s": "Find out what works well at Amcrest from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
+  },
+  {
+   "t": "7,000+ Amcrest.com jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/amcrest.com-jobs",
+   "s": "Today's top 7,000+ Amcrest.com jobs in United States. Leverage your professional network, and get hired. New Amcrest.com jobs added daily."
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://amcrest.com/careers-amcrest",
+  "platform": "custom",
+  "title": "Careers Amcrest"
+ },
+ "verdict": "custom_surface"
 }

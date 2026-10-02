@@ -2,7 +2,7 @@
  "brand": "API7",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T11:43:13.635Z",
+ "ts": "2026-10-02T11:48:24.523Z",
  "candidates": [
   {
    "url": "https://api7.ai/",
@@ -17,19 +17,6 @@
    "backend": "direct"
   },
   {
-   "url": "https://peerlist.io/company/api7_ai",
-   "title": "Just a moment...",
-   "status": 403,
-   "bytes": 5766,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 5,
-   "snippet": "Explore jobs and know more about verified People who work at API7.ai, perks, benefits, and much more!",
-   "backend": "direct",
-   "cf_challenge": true
-  },
-  {
    "url": "https://www.apigroupinc.com/careers",
    "title": "Attention Required! | Cloudflare",
    "status": 403,
@@ -39,6 +26,20 @@
    "spec": null,
    "score": 2,
    "snippet": "As a leader on our team, we'll equip you with the industry's best resources and premier opportunities to grow your career, invest in your well-being, and connec",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.api.org/about/careers",
+   "title": "API Careers | American Petroleum Institute | API",
+   "status": 200,
+   "bytes": 36033,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "API is an equal opportunity employer and diversity is a core value. We are dedicated to creating and sustaining an inclusive and equitable working environment f",
    "backend": "direct"
   }
  ],
@@ -74,14 +75,14 @@
    "s": "Join our mission to secure a digital future for all. Our open roles for Software Engineering - Customer Success - Sales - Business Support and more."
   },
   {
-   "t": "Rapid7: Jobs | LinkedIn",
-   "u": "https://www.linkedin.com/company/rapid7/jobs/",
-   "s": "Rapid7 | 230,362 followers on LinkedIn. Rapid7, Inc. (NASDAQ: RPD) is a global leader in AI-powered managed cybersecurity operations, trusted to advance organiz"
-  },
-  {
    "t": "Careers - Get hired at Academic Programs International - API",
    "u": "https://apiabroad.com/careers/",
    "s": "Careers We love where we work, and for good reason. If you'd like to join our mission-driven organization, check out our open positions!"
+  },
+  {
+   "t": "Rapid7: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/rapid7/jobs/",
+   "s": "Rapid7 | 230,362 followers on LinkedIn. Rapid7, Inc. (NASDAQ: RPD) is a global leader in AI-powered managed cybersecurity operations, trusted to advance organiz"
   },
   {
    "t": "Jobs at API7.ai: Explore current Opportunities",
@@ -124,9 +125,14 @@
    "s": "Layer 7 API Developer jobs"
   },
   {
-   "t": "API7.ai, Original Creator of Apache APISIX hiring ... - LinkedIn",
-   "u": "https://www.linkedin.com/jobs/view/development-engineer-at-api7-ai-3544002469",
-   "s": "Be among the first 25 applicants See who API7.ai, Original Creator of Apache APISIX has hired for this role No longer accepting applications Direct message the "
+   "t": "加入我们 | 支流科技招聘 - Apache APISIX 开源社区工作机会 | 支流科技",
+   "u": "https://www.apiseven.com/careers",
+   "s": "寻找优秀的工程师加入支流科技，参与 Apache APISIX 开源项目。提供具有竞争力的薪酬、远程办公机会及卓越的工程师文化。"
+  },
+  {
+   "t": "Hiring at Rapid7",
+   "u": "https://careers.rapid7.com/hiring-at-rapid7",
+   "s": "Hiring at Rapid7 As we grow our teams, we're committed to upholding our values through each stage of our hiring process. Our Talent Acquisition team works consu"
   },
   {
    "t": "API7.ai Careers - Insights and Opportunities",
@@ -134,14 +140,9 @@
    "s": "Find out if API7.ai is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benefit"
   },
   {
-   "t": "Rapid7: Jobs | LinkedIn",
-   "u": "https://www.linkedin.com/company/rapid7/jobs/",
-   "s": "Rapid7 | 230,362 followers on LinkedIn. Rapid7, Inc. (NASDAQ: RPD) is a global leader in AI-powered managed cybersecurity operations, trusted to advance organiz"
-  },
-  {
-   "t": "加入我们 | 支流科技招聘 - Apache APISIX 开源社区工作机会 | 支流科技",
-   "u": "https://www.apiseven.com/careers",
-   "s": "寻找优秀的工程师加入支流科技，参与 Apache APISIX 开源项目。提供具有竞争力的薪酬、远程办公机会及卓越的工程师文化。"
+   "t": "API7.ai, Original Creator of Apache APISIX hiring ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/development-engineer-at-api7-ai-3544002469",
+   "s": "Be among the first 25 applicants See who API7.ai, Original Creator of Apache APISIX has hired for this role No longer accepting applications Direct message the "
   }
  ],
  "dict_hits": [],
