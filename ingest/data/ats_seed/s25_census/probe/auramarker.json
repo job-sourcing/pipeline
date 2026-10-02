@@ -2,7 +2,7 @@
  "brand": "AuraMarker",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T12:18:57.649Z",
+ "ts": "2026-10-02T12:21:48.693Z",
  "candidates": [
   {
    "url": "https://auramarker.com/",
@@ -20,7 +20,7 @@
    "url": "https://careers.aramark.com/",
    "title": "Aramark Careers | Explore Jobs &amp; Opportunities",
    "status": 200,
-   "bytes": 160065,
+   "bytes": 159678,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -63,14 +63,14 @@
    "s": "Find food service career opportunities at Aramark. Explore dining, catering, and hospitality roles with growth potential and flexible schedules."
   },
   {
-   "t": "aramarkcareers.com",
-   "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
-   "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
-  },
-  {
    "t": "Aramark Career Locations | Find Jobs Near You",
    "u": "https://careers.aramark.com/locations",
    "s": "Browse Aramark job opportunities by location. Find open positions near you and start your career with a global leader in food and facilities services."
+  },
+  {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/Canada",
+   "s": "Apply online for jobs at Aramark At Aramark Canada, our vision is to be the most admired employer and trusted hospitality partner. Because we're rooted in servi"
   },
   {
    "t": "Jobs at Aramark",
@@ -78,9 +78,9 @@
    "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
   },
   {
-   "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/Canada",
-   "s": "Apply online for jobs at Aramark At Aramark Canada, our vision is to be the most admired employer and trusted hospitality partner. Because we're rooted in servi"
+   "t": "aramarkcareers.com",
+   "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
+   "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
   },
   {
    "t": "Aramark Careers | Explore Jobs & Opportunities",
@@ -93,34 +93,34 @@
    "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
   },
   {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/en-US?locale=en_US",
+   "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
+  },
+  {
    "t": "Aura Marker Studio",
    "u": "https://auramarker.com/",
    "s": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont"
   },
   {
-   "t": "aramark food service jobs in Cape Girardeau, MO - Indeed",
-   "u": "https://www.indeed.com/q-aramark-food-service-l-cape-girardeau,-mo-jobs.html",
-   "s": "Aramark Food Service jobs available in Cape Girardeau, MO on Indeed.com. Apply to Food Service Director and more!"
+   "t": "Now Hiring: 4,000 Aramark Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Aramark-jobs.html",
+   "s": "Browse 4,828 Aramark jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
   },
   {
-   "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/content/?locale=en_US",
-   "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
+   "t": "Aramark Jobs, Employment in Wyoming - Indeed",
+   "u": "https://www.indeed.com/q-company%3aaramark-l-wyoming-jobs.html",
+   "s": "11 Aramark jobs available in Wyoming on Indeed.com. Apply to Snow Plow Operator, Housekeeper, Senior Maintenance Person and more!"
   },
   {
-   "t": "Aramark Career Locations | Find Jobs Near You",
-   "u": "https://careers.aramark.com/locations",
-   "s": "Browse Aramark job opportunities by location. Find open positions near you and start your career with a global leader in food and facilities services."
+   "t": "Food Services and Facilities Management - Aramark",
+   "u": "https://www.aramark.com/home",
+   "s": "Aramark provides food services and facilities management to hospitals, universities, school districts, stadiums, and other businesses around the world."
   },
   {
-   "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/UnitedStates/?locale=en_US",
-   "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
-  },
-  {
-   "t": "Food Service Careers | Aramark Jobs",
-   "u": "https://careers.aramark.com/food-service-careers",
-   "s": "Find food service career opportunities at Aramark. Explore dining, catering, and hospitality roles with growth potential and flexible schedules."
+   "t": "Hiring Now Job - Aramark - Cheyenne, WY (Hiring Now) - Monster",
+   "u": "https://www.monster.com/job-openings/cook-hiring-now-cheyenne-wy--2205330c-c221-45ac-8303-e5a0dc0b55dd",
+   "s": "Aramark is hiring a Cook - Hiring Now job in Cheyenne, WY. Build your resume and apply today at Monster. Posted Today."
   },
   {
    "t": "Aramark Careers | Explore Jobs & Opportunities",
@@ -128,19 +128,19 @@
    "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
   },
   {
-   "t": "Jobs in Yakima, WA at Aramark Careers",
-   "u": "https://careers.aramark.com/jobs/location/WA/Yakima/",
-   "s": "Browse 1 job in Yakima, WA at Aramark Careers. Apply online today."
+   "t": "Jobs - Aramark Careers",
+   "u": "https://careers.aramark.com/jobs",
+   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
   },
   {
    "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/",
-   "s": "Follow this link to reach our Job Search page to search for available jobs in a more accessible format."
+   "u": "https://aramarkcareers.com/content/?locale=en_US",
+   "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
   },
   {
-   "t": "Now Hiring: 50 Aramark Jobs in Washington State | Indeed",
-   "u": "https://www.indeed.com/q-Aramark-l-Washington-State-jobs.html",
-   "s": "70 Aramark jobs in Washington State. Apply to Warehouse Worker, Cook, General Worker and more. Hiring now on Indeed.com."
+   "t": "aramarkcareers.com",
+   "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
+   "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
   }
  ],
  "dict_hits": [],
