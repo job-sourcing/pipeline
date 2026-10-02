@@ -153,19 +153,37 @@ def parse_site(spec: str) -> tuple[str, str]:
 
 # ── dispatch seam (callers import THIS, not workday) ─────────────────────
 
+# S25: adapter kinds whose list_board accepts include_remote (the
+# remote-OK policy). Others ignore the flag (honest — no remote signal).
+_ADAPTER_ACCEPTS_REMOTE = {"greenhouse": True, "ashby": True,
+                           "lever": True, "workable": True}
+
+
 def list_board(spec: str, *, country: Optional[str] = None,
                time_type: Optional[str] = None,
                cfg: Optional[Config] = None, sleep_s: float = 0.2,
                progress_every: int = 0,
                progress_label: str = "list",
                client_filter: bool = True,
+               include_remote: bool = False,
                ) -> tuple[dict[str, dict], dict]:
     """workday.list_board's contract for ANY board spec. Routes to the
     matching adapter; a workday spec (no 'ats:' prefix) goes to the
-    workday path unchanged (byte-identical behavior)."""
+    workday path unchanged (byte-identical behavior).
+
+    S25 remote-OK policy: include_remote=True keeps rows whose own
+    data says the role is remote-friendly even when the country does
+    not match ("any remote-ok role is basically US-based" — D-S25-2).
+    Opt-in per watch config; adapters without a remote signal ignore
+    the flag (never guessed — the S24 honesty convention)."""
     if is_site_spec(spec):
         kind, org = parse_site(spec)
         adapter = _ADAPTERS[kind](org, cfg or Config())
+        if _ADAPTER_ACCEPTS_REMOTE.get(kind):
+            return adapter.list_board(country=country,
+                                      time_type=time_type,
+                                      progress_label=progress_label,
+                                      include_remote=include_remote)
         return adapter.list_board(country=country, time_type=time_type,
                                   progress_label=progress_label)
     return workday.list_board(spec, country=country, time_type=time_type,
@@ -433,7 +451,8 @@ class GreenhouseAdapter:
 
     def list_board(self, *, country: Optional[str] = None,
                    time_type: Optional[str] = None,
-                   progress_label: str = "list"
+                   progress_label: str = "list",
+                   include_remote: bool = False,
                    ) -> tuple[dict[str, dict], dict]:
         jobs = self._jobs()
         serves_tt = any(self._time_type_from_metadata(j) for j in jobs)
@@ -444,7 +463,7 @@ class GreenhouseAdapter:
                   file=sys.stderr, flush=True)
         offices_discriminate = self._offices_discriminate(jobs)
         rows: dict[str, dict] = {}
-        dropped_country = dropped_tt = 0
+        dropped_country = dropped_tt = kept_remote = 0
         for job in jobs:
             rid = str(job.get("requisition_id") or job.get("id") or "")
             if not rid:
@@ -458,8 +477,17 @@ class GreenhouseAdapter:
                 continue
             if country and not self._job_in_country(
                     job, country, offices_discriminate):
-                dropped_country += 1
-                continue
+                # S25 remote-OK policy: greenhouse has no structured
+                # remote field — the location text saying 'Remote' is
+                # the row's own evidence (D-S25-2; the S16 lesson kept:
+                # never guess beyond what the row itself says)
+                loc_name = str((job.get("location") or {}).get("name")
+                               or "")
+                if include_remote and "remote" in loc_name.lower():
+                    kept_remote += 1
+                else:
+                    dropped_country += 1
+                    continue
             label, iso = _posted_label(job.get("first_published"))
             row = {
                 "reqId": rid,
@@ -488,6 +516,7 @@ class GreenhouseAdapter:
             "client_filtered": dropped_country + dropped_tt,
             "client_filtered_country": dropped_country,
             "client_filtered_time": dropped_tt,
+            "kept_remote": kept_remote,
             "offices_discriminate": offices_discriminate,
             "ats": "greenhouse",
         }
@@ -498,7 +527,10 @@ class GreenhouseAdapter:
                 parts.append(f"{dropped_country} non-{country}")
             if time_type:
                 parts.append(f"{dropped_tt} non-{time_type}")
-            drop_note = f" ({' + '.join(parts)} dropped client-side)"
+            drop_note = f" ({' + '.join(parts)} dropped client-side"
+            if kept_remote:
+                drop_note += f", {kept_remote} remote-OK kept"
+            drop_note += ")"
         print(f"[{progress_label}] greenhouse:{self.org}: {len(rows)} rows"
               + drop_note, file=sys.stderr, flush=True)
         return rows, meta
@@ -603,11 +635,12 @@ class AshbyAdapter:
 
     def list_board(self, *, country: Optional[str] = None,
                    time_type: Optional[str] = None,
-                   progress_label: str = "list"
+                   progress_label: str = "list",
+                   include_remote: bool = False,
                    ) -> tuple[dict[str, dict], dict]:
         jobs = self._jobs()
         rows: dict[str, dict] = {}
-        dropped_country = dropped_tt = 0
+        dropped_country = dropped_tt = kept_remote = 0
         for job in jobs:
             rid = str(job.get("id") or "")
             if not rid or rid in rows:
@@ -621,12 +654,19 @@ class AshbyAdapter:
             c = self._country(job)
             if country:
                 if not workday.country_str_matches(c, country):
-                    # location fallback only when the address is absent
-                    loc = str(job.get("location") or "")
-                    last = loc.split(",")[-1].strip() if loc else ""
-                    if not workday.country_str_matches(last, country):
-                        dropped_country += 1
-                        continue
+                    # S25 remote-OK policy: ashby's workplaceType is the
+                    # row's own remote evidence (D-S25-2)
+                    if include_remote and str(
+                            job.get("workplaceType") or "").lower() \
+                            == "remote":
+                        kept_remote += 1
+                    else:
+                        # location fallback only when the address is absent
+                        loc = str(job.get("location") or "")
+                        last = loc.split(",")[-1].strip() if loc else ""
+                        if not workday.country_str_matches(last, country):
+                            dropped_country += 1
+                            continue
             label, iso = _posted_label(job.get("publishedAt"))
             row = {
                 "reqId": rid,
@@ -650,12 +690,14 @@ class AshbyAdapter:
             "complete": True, "total": len(jobs), "pages": 1,
             "country_client": False,
             "client_filtered": dropped_country + dropped_tt,
+            "kept_remote": kept_remote,
             "ats": "ashby",
         }
         print(f"[{progress_label}] ashby:{self.org}: {len(rows)} rows"
               + (f" ({dropped_country} non-{country} + {dropped_tt} "
-                 f"non-{time_type} dropped client-side)" if country
-                 or time_type else ""),
+                 f"non-{time_type} dropped client-side"
+                 + (f", {kept_remote} remote-OK kept" if kept_remote
+                    else "") + ")" if country or time_type else ""),
               file=sys.stderr, flush=True)
         return rows, meta
 
@@ -1574,11 +1616,12 @@ class LeverAdapter:
 
     def list_board(self, *, country: Optional[str] = None,
                    time_type: Optional[str] = None,
-                   progress_label: str = "list"
+                   progress_label: str = "list",
+                   include_remote: bool = False,
                    ) -> tuple[dict[str, dict], dict]:
         jobs = self._jobs()
         rows: dict[str, dict] = {}
-        dropped_country = dropped_tt = 0
+        dropped_country = dropped_tt = kept_remote = 0
         for job in jobs:
             rid = str(job.get("id") or "")
             if not rid or rid in rows:
@@ -1589,17 +1632,24 @@ class LeverAdapter:
                 continue
             c = self._country(job)
             if country and not workday.country_str_matches(c, country):
-                # location fallback ONLY when the structured code is
-                # absent (never override an authoritative mismatch)
-                if c:
-                    dropped_country += 1
-                    continue
-                loc = str((job.get("categories") or {}).get("location")
-                          or "")
-                last = loc.split(",")[-1].strip() if loc else ""
-                if not workday.country_str_matches(last, country):
-                    dropped_country += 1
-                    continue
+                # S25 remote-OK policy: lever's workplaceType is the
+                # row's own remote evidence — a 'remote' role stays
+                # when the watch opted in (D-S25-2)
+                if include_remote and str(
+                        job.get("workplaceType") or "").lower() == "remote":
+                    kept_remote += 1
+                else:
+                    # location fallback ONLY when the structured code is
+                    # absent (never override an authoritative mismatch)
+                    if c:
+                        dropped_country += 1
+                        continue
+                    loc = str((job.get("categories") or {}).get("location")
+                              or "")
+                    last = loc.split(",")[-1].strip() if loc else ""
+                    if not workday.country_str_matches(last, country):
+                        dropped_country += 1
+                        continue
             cats = job.get("categories") or {}
             label, iso = _posted_label(_epoch_ms_to_iso(
                 job.get("createdAt")))
@@ -1627,12 +1677,14 @@ class LeverAdapter:
             "complete": True, "total": len(jobs), "pages": 1,
             "country_client": False,
             "client_filtered": dropped_country + dropped_tt,
+            "kept_remote": kept_remote,
             "ats": "lever",
         }
         print(f"[{progress_label}] lever:{self.org}: {len(rows)} rows"
               + (f" ({dropped_country} non-{country} + {dropped_tt} "
-                 f"non-{time_type} dropped client-side)" if country
-                 or time_type else ""),
+                 f"non-{time_type} dropped client-side"
+                 + (f", {kept_remote} remote-OK kept" if kept_remote
+                    else "") + ")" if country or time_type else ""),
               file=sys.stderr, flush=True)
         return rows, meta
 
@@ -1734,11 +1786,12 @@ class WorkableAdapter:
 
     def list_board(self, *, country: Optional[str] = None,
                    time_type: Optional[str] = None,
-                   progress_label: str = "list"
+                   progress_label: str = "list",
+                   include_remote: bool = False,
                    ) -> tuple[dict[str, dict], dict]:
         jobs = self._jobs()
         rows: dict[str, dict] = {}
-        dropped_country = dropped_tt = 0
+        dropped_country = dropped_tt = kept_remote = 0
         for job in jobs:
             rid = str(job.get("shortcode") or "")
             if not rid or rid in rows:
@@ -1749,8 +1802,13 @@ class WorkableAdapter:
                 continue
             c = str(job.get("country") or "").strip()
             if country and not workday.country_str_matches(c, country):
-                dropped_country += 1
-                continue
+                # S25 remote-OK policy: workable's telecommuting flag is
+                # the row's own remote evidence (D-S25-2)
+                if include_remote and job.get("telecommuting"):
+                    kept_remote += 1
+                else:
+                    dropped_country += 1
+                    continue
             label, iso = _posted_label(job.get("published_on"))
             row = {
                 "reqId": rid,
@@ -1784,12 +1842,14 @@ class WorkableAdapter:
             "complete": True, "total": len(jobs), "pages": 1,
             "country_client": False,
             "client_filtered": dropped_country + dropped_tt,
+            "kept_remote": kept_remote,
             "ats": "workable",
         }
         print(f"[{progress_label}] workable:{self.org}: {len(rows)} rows"
               + (f" ({dropped_country} non-{country} + {dropped_tt} "
-                 f"non-{time_type} dropped client-side)" if country
-                 or time_type else ""),
+                 f"non-{time_type} dropped client-side"
+                 + (f", {kept_remote} remote-OK kept" if kept_remote
+                    else "") + ")" if country or time_type else ""),
               file=sys.stderr, flush=True)
         return rows, meta
 
@@ -1962,6 +2022,10 @@ _PORTAL_COMPANY = {
     "zhipu-ai": "Zhipu AI", "01ai": "01.AI", "sensetime": "SenseTime",
     "agirobot": "AgiBot", "nio": "NIO", "moonshot": "Moonshot AI",
     "momenta": "Momenta", "infinigence": "Infinigence",
+    # S25 (census 2-b wire wave): the feishu-US class — CN HQs whose
+    # feishu portals carry live US satellite roles
+    "anker-in": "Anker", "bambulab": "Bambu Lab", "ecoflow": "EcoFlow",
+    "makeblock": "Makeblock", "mammotion": "Mammotion",
 }
 
 

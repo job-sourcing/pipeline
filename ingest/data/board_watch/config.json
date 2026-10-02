@@ -77,7 +77,6 @@
       "board": "custom:bytedance",
       "company": "ByteDance",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "ByteDance",
         "TikTok",
@@ -92,7 +91,8 @@
         "San Diego, California, United States",
         "Boston, Massachusetts, United States",
         "Ashburn, Virginia, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "didi_us_fulltime",
@@ -191,7 +191,6 @@
       "board": "ats:feishuhire:vrfi1sk8a0",
       "company": "MiniMax",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "MiniMax",
         "MiniMax AI"
@@ -199,7 +198,8 @@
       "slice_locations": [
         "United States",
         "San Francisco, California, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "moonshot_us_fulltime",
@@ -265,7 +265,6 @@
       "board": "ats:ashby:openai",
       "company": "OpenAI",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "OpenAI"
       ],
@@ -275,14 +274,14 @@
         "Seattle, Washington, United States",
         "New York, New York, United States",
         "Remote, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "pony_us_fulltime",
       "board": "ats:workable:pony-dot-ai",
       "company": "Pony.ai",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "Pony.ai",
         "Pony AI"
@@ -290,14 +289,14 @@
       "slice_locations": [
         "United States",
         "Fremont, California, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "shein_us_fulltime",
       "board": "ats:greenhouse:shein",
       "company": "SHEIN",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "SHEIN",
         "SHEIN U.S."
@@ -306,7 +305,8 @@
         "United States",
         "Los Angeles, California, United States",
         "San Diego, California, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "shengshu_us_fulltime",
@@ -361,7 +361,6 @@
       "board": "ats:workable:tp-link-usa-corp",
       "company": "TP-Link",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "TP-Link",
         "TP-Link Systems Inc."
@@ -369,7 +368,8 @@
       "slice_locations": [
         "United States",
         "Irvine, California, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "tripcom_us_fulltime",
@@ -396,7 +396,6 @@
       "board": "ats:lever:weride",
       "company": "WeRide",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "WeRide",
         "WeRide Inc."
@@ -404,7 +403,8 @@
       "slice_locations": [
         "United States",
         "San Jose, California, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "xiaohongshu_us_fulltime",
@@ -441,7 +441,6 @@
       "board": "ats:ashby:hoyoverse",
       "company": "HoYoverse",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "HoYoverse"
       ],
@@ -449,14 +448,14 @@
         "United States",
         "Los Angeles, California, United States",
         "Remote, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "plusai_us_fulltime",
       "board": "ats:lever:plus-2",
       "company": "PlusAI",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "PlusAI"
       ],
@@ -465,7 +464,8 @@
         "Santa Clara, California, United States",
         "Fremont, California, United States",
         "Dallas, Texas, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "unitedimaging_us_fulltime",
@@ -520,7 +520,6 @@
       "board": "ats:lever:nio-usa",
       "company": "NIO",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "NIO",
         "NIO USA, Inc.",
@@ -529,14 +528,14 @@
       "slice_locations": [
         "United States",
         "San Jose, California, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "foxit_us_fulltime",
       "board": "ats:lever:foxitsoftware",
       "company": "Foxit",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "Foxit",
         "Foxit Software",
@@ -546,7 +545,8 @@
         "United States",
         "Fremont, California, United States",
         "Milpitas, California, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "poizon_us_fulltime",
@@ -568,7 +568,6 @@
       "board": "ats:adp:25319558-d6a9-48ab-93d2-99e4878a8ffc",
       "company": "Fuyao Glass America",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "Fuyao Glass America",
         "Fuyao Glass America Inc.",
@@ -578,7 +577,8 @@
         "United States",
         "Moraine, Ohio, United States",
         "Dayton, Ohio, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "sanhua_us_fulltime",
@@ -696,7 +696,8 @@
         "San Diego, California, United States",
         "Hopewell, New Jersey, United States",
         "Foster City, California, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "chagee_us_fulltime",
@@ -720,7 +721,6 @@
       "board": "ats:adp:c2e0ba67-e6f9-439e-b8a3-0d734568eac2",
       "company": "Sungrow",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "Sungrow",
         "Sungrow Power Supply",
@@ -733,14 +733,14 @@
         "Houston, Texas, United States",
         "Tempe, Arizona, United States",
         "Remote, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "deeproute_us_fulltime",
       "board": "ats:workable:deeproute-dot-a-i",
       "company": "DeepRoute.ai",
       "country": "United States",
-      "time_type": "Full time",
       "li_variants": [
         "DeepRoute.ai",
         "DeepRoute",
@@ -751,7 +751,8 @@
         "United States",
         "Fremont, California, United States",
         "San Jose, California, United States"
-      ]
+      ],
+      "time_type": "Full time"
     },
     {
       "label": "agora_us_fulltime",
@@ -774,7 +775,6 @@
       "label": "bitdeer_us_fulltime",
       "board": "ats:breezy:bitdeer",
       "company": "Bitdeer",
-      "time_type": "Full time",
       "li_variants": [
         "Bitdeer",
         "Bitdeer Technologies Group",
@@ -786,7 +786,8 @@
         "San Jose, California, United States",
         "Remote, United States"
       ],
-      "country": "United States"
+      "country": "United States",
+      "time_type": "Full time"
     },
     {
       "label": "omnivision_us_fulltime",
@@ -890,7 +891,6 @@
       "label": "meyer_us_fulltime",
       "board": "ats:ultipro:MEY1000MEYER|7a970c3d-b076-4042-8735-673b5e5508ac",
       "company": "Meyer",
-      "time_type": "Full time",
       "li_variants": [
         "Meyer",
         "Meyer Corporation",
@@ -902,13 +902,13 @@
         "Vallejo, California, United States",
         "Remote, United States"
       ],
-      "country": "United States"
+      "country": "United States",
+      "time_type": "Full time"
     },
     {
       "label": "amersports_us_fulltime",
       "board": "ats:talentadore:amersports.careers.talentadore.com",
       "company": "Amer Sports",
-      "time_type": "Full time",
       "li_variants": [
         "Amer Sports",
         "Wilson Sporting Goods",
@@ -921,7 +921,8 @@
         "New York, New York, United States",
         "Chicago, Illinois, United States"
       ],
-      "country": "United States"
+      "country": "United States",
+      "time_type": "Full time"
     },
     {
       "label": "haidilao_us_fulltime",
@@ -947,7 +948,6 @@
       "label": "tti_us_fulltime",
       "board": "ats:ttiproxy:US",
       "company": "Techtronic Industries",
-      "time_type": "Full time",
       "li_variants": [
         "Techtronic Industries",
         "TTI",
@@ -963,7 +963,8 @@
         "Memphis, Tennessee, United States",
         "Remote, United States"
       ],
-      "country": "United States"
+      "country": "United States",
+      "time_type": "Full time"
     },
     {
       "label": "niu_us_fulltime",
@@ -1760,7 +1761,8 @@
       ],
       "slice_locations": [
         "United States"
-      ]
+      ],
+      "include_remote": true
     },
     {
       "label": "binance_us_fulltime",
@@ -1772,7 +1774,8 @@
       ],
       "slice_locations": [
         "United States"
-      ]
+      ],
+      "include_remote": true
     },
     {
       "label": "funplus_us_fulltime",
@@ -1977,7 +1980,8 @@
       ],
       "slice_locations": [
         "United States"
-      ]
+      ],
+      "time_type": "Full time"
     }
   ]
 }

@@ -1998,7 +1998,7 @@ class TestShippedWatchConfig:
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 87  # S24: +zilliz/qcraft/lightelligence/dify (origin-policy wires)
+        assert len(cfg["watches"]) == 128  # S25: +9 loosened-bar (origin_review wave) +32 census wire_now (SKILL §26 census→wire flow)
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",

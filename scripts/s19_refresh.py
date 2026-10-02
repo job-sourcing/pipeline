@@ -140,6 +140,10 @@ def run_phase(lbl: str, w: dict, phase: str) -> int:
            "--label", f"{lbl}_us_fulltime",
            "--country", w.get("country", "United States"),
            "--time-type", tt if tt else ""]
+    if w.get("include_remote"):
+        # S25 remote-OK policy (D-S25-2): remote rows survive the
+        # country filter for this watch
+        cmd += ["--include-remote"]
     if variants:
         cmd += ["--li-variants", variants]
     if slices:

@@ -455,7 +455,8 @@ def phase_list(args, out: Path) -> int:
             args.board, country=args.country or None,
             time_type=args.time_type or None, cfg=cfg,
             sleep_s=args.sleep, progress_every=10,
-            client_filter=False)
+            client_filter=False,
+            include_remote=bool(getattr(args, "include_remote", False)))
     except ValueError as exc:
         print(f"[list] {exc}")
         return 2
@@ -2440,6 +2441,12 @@ def main() -> int:
                     help="output filename prefix")
     ap.add_argument("--country", default="United States",
                     help="locationHierarchy1 facet value (empty = all)")
+    ap.add_argument("--include-remote", action="store_true",
+                    help="S25 remote-OK policy: keep rows whose own data "
+                         "says remote (lever workplaceType / ashby "
+                         "workplaceType / workable telecommuting / "
+                         "greenhouse location text) even when country "
+                         "does not match (D-S25-2)")
     ap.add_argument("--time-type", default="Full time",
                     help="timeType facet value (empty = all)")
     ap.add_argument("--location", default="United States",
