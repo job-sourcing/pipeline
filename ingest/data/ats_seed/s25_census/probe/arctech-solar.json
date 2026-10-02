@@ -2,7 +2,7 @@
  "brand": "Arctech Solar",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T11:39:08.347Z",
+ "ts": "2026-10-02T11:46:37.110Z",
  "candidates": [
   {
    "url": "https://arctechsolarltd.com/en/careers.html",
@@ -29,15 +29,15 @@
    "backend": "direct"
   },
   {
-   "url": "https://www.arctech.com/careers.html",
-   "title": "Contact ARCTECH",
+   "url": "https://arctech-global.com/career/",
+   "title": "Career &#8211; arctech-global.com",
    "status": 200,
-   "bytes": 5939,
+   "bytes": 50195,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "CHIEF EXECUTIVE OFFICERS: Seeking dynamic entrepreneurial individual experienced in growing energy and environmental business in four diverse but interrelated m",
+   "snippet": "We connect expertise across services, markets, and geographies to deliver transformative outcomes. Worldwide, we design, build, finance, operate and manage proj",
    "backend": "direct"
   }
  ],
@@ -53,14 +53,14 @@
    "s": "Explore Job Opportunities We are expanding and seeking talented individuals to join our innovative team. Explore current job openings and take the first step to"
   },
   {
-   "t": "Join Our Team - Careers at Artech",
-   "u": "https://www.artech.com/careers/",
-   "s": "Explore exciting career opportunities at Artech! Join our team of experts and advance your skills in a dynamic, supportive work environment."
-  },
-  {
    "t": "Application Form - Arctech Solar Ltd",
    "u": "https://arctechsolarltd.com/en/application.html",
    "s": "I would like to receive updates about new job opportunities at Arctech Solar Ltd. Back to Careers Submit Application"
+  },
+  {
+   "t": "Career - arctech-global.com",
+   "u": "https://arctech-global.com/career/",
+   "s": "We connect expertise across services, markets, and geographies to deliver transformative outcomes. Worldwide, we design, build, finance, operate and manage proj"
   },
   {
    "t": "Contact ARCTECH",
@@ -68,9 +68,9 @@
    "s": "CHIEF EXECUTIVE OFFICERS: Seeking dynamic entrepreneurial individual experienced in growing energy and environmental business in four diverse but interrelated m"
   },
   {
-   "t": "Career - arctech-global.com",
-   "u": "https://arctech-global.com/career/",
-   "s": "We connect expertise across services, markets, and geographies to deliver transformative outcomes. Worldwide, we design, build, finance, operate and manage proj"
+   "t": "Join Our Team - Careers at Artech",
+   "u": "https://www.artech.com/careers/",
+   "s": "Explore exciting career opportunities at Artech! Join our team of experts and advance your skills in a dynamic, supportive work environment."
   },
   {
    "t": "Arctech - LinkedIn",
@@ -83,24 +83,34 @@
    "s": "Our hiring, promotion, and employment practices are based solely on qualifications, merit, and business needs, ensuring fair treatment for all applicants and em"
   },
   {
-   "t": "Explore Job Opportunities - Arctech",
-   "u": "https://en.arctechsolar.com/explore-job-opportunities/",
-   "s": "Explore Job Opportunities We are expanding and seeking talented individuals to join our innovative team. Explore current job openings and take the first step to"
-  },
-  {
    "t": "Careers - Arctech Solar Ltd",
    "u": "https://arctechsolarltd.com/en/careers.html",
    "s": "Why Join Arctech Solar Ltd? At Arctech Solar Ltd, we're not just manufacturing solar components - we're powering the renewable energy revolution. Join us to mak"
   },
   {
-   "t": "Contact ARCTECH",
-   "u": "https://www.arctech.com/careers.html",
-   "s": "CHIEF EXECUTIVE OFFICERS: Seeking dynamic entrepreneurial individual experienced in growing energy and environmental business in four diverse but interrelated m"
+   "t": "Explore Job Opportunities - Arctech",
+   "u": "https://en.arctechsolar.com/explore-job-opportunities/",
+   "s": "Explore Job Opportunities We are expanding and seeking talented individuals to join our innovative team. Explore current job openings and take the first step to"
+  },
+  {
+   "t": "Solar Project Manager Job in San Jose, CA at Arctech Solar",
+   "u": "https://www.ziprecruiter.com/c/Arctech/Job/Solar-Project-Manager-(J10107)/-in-San-Jose,CA?jid=159794354f939b3c",
+   "s": "Easy 1-Click Apply Arctech Solar Solar Project Manager (J10107) Other ($55,700 - $121,900) job opening hiring now in San Jose, CA 95199. Don't wait - apply now!"
   },
   {
    "t": "1,000+ Arctech Solar jobs in United States - LinkedIn",
    "u": "https://www.linkedin.com/jobs/arctech-solar-jobs",
    "s": "Today's top 1,000+ Arctech Solar jobs in United States. Leverage your professional network, and get hired. New Arctech Solar jobs added daily."
+  },
+  {
+   "t": "Solar Project Manager Job Opening in San Jose, CA at Arctech | Career.com",
+   "u": "https://www.career.com/job/arctech/solar-project-manager/j202501111939026557477",
+   "s": "What are the responsibilities and job description for the Solar Project Manager position at Arctech? Established in 2009, Arctech Solar (SSE-STAR : 688408) is a"
+  },
+  {
+   "t": "Latest Arctech solar Job Openings — ClimateTechList",
+   "u": "https://www.climatetechlist.com/jobs?company=Arctech%20solar",
+   "s": "Up-to-date job openings from Arctech solar & other climate tech & clean tech companies, updated daily. ClimateTechList is the web's most comprehensive climate, "
   },
   {
    "t": "Application Form - Arctech Solar Ltd",
@@ -108,19 +118,9 @@
    "s": "I would like to receive updates about new job opportunities at Arctech Solar Ltd."
   },
   {
-   "t": "Home - Arctech",
-   "u": "https://en.arctechsolar.com/",
-   "s": "Arctech, the world's leading provider of solar tracker and racking solutions, has delivered 100 GW of capacity to 2,000+ solar plants across 40+ countries, driv"
-  },
-  {
-   "t": "Careers at Arctech | Jennie Johnson",
-   "u": "https://jenniejohnson.com/company/arctech",
-   "s": "Job openings at Arctech. Arctech is a leading global provider of solar tracking, racking, and Building Integrated Photovoltaics (BIPV) solutions. The..."
-  },
-  {
-   "t": "Career - arctech-global.com",
-   "u": "https://arctech-global.com/career/",
-   "s": "We connect expertise across services, markets, and geographies to deliver transformative outcomes. Worldwide, we design, build, finance, operate and manage proj"
+   "t": "Solar Project Manager (J10107) - Arctech - Job San Jose",
+   "u": "https://www.talent.com/view?id=c04b67ba1c3b",
+   "s": "Apply for Solar Project Manager (J10107) in San Jose. Arctech is hiring now. Discover your next career opportunity today on Talent.com."
   },
   {
    "t": "Careers - Arctech Solar Ltd",
@@ -133,17 +133,22 @@
    "s": "Explore Job Opportunities We are expanding and seeking talented individuals to join our innovative team. Explore current job openings and take the first step to"
   },
   {
-   "t": "Contact ARCTECH",
-   "u": "https://www.arctech.com/careers.html",
-   "s": "CHIEF EXECUTIVE OFFICERS: Seeking dynamic entrepreneurial individual experienced in growing energy and environmental business in four diverse but interrelated m"
-  },
-  {
    "t": "1,000+ Arctech Solar jobs in United States - LinkedIn",
    "u": "https://www.linkedin.com/jobs/arctech-solar-jobs",
    "s": "Today's top 1,000+ Arctech Solar jobs in United States. Leverage your professional network, and get hired. New Arctech Solar jobs added daily."
+  },
+  {
+   "t": "Contact ARCTECH",
+   "u": "https://www.arctech.com/careers.html",
+   "s": "CHIEF EXECUTIVE OFFICERS: Seeking dynamic entrepreneurial individual experienced in growing energy and environmental business in four diverse but interrelated m"
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://arctech-global.com/career/",
+  "platform": "custom",
+  "title": "Career &#8211; arctech-global.com"
+ },
+ "verdict": "custom_surface"
 }

@@ -2,42 +2,44 @@
  "brand": "AuraMarker",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T11:40:15.595Z",
+ "ts": "2026-10-02T11:47:15.871Z",
  "candidates": [
-  {
-   "url": "https://auramarker.com/",
-   "title": "Aura Marker Studio",
-   "status": 200,
-   "bytes": 4586,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 5,
-   "snippet": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont",
-   "backend": "direct"
-  },
-  {
-   "url": "https://helps.auramarker.com/en/",
-   "title": "Aura Marker Studio | Aura Marker Studio",
-   "status": 200,
-   "bytes": 14139,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 5,
-   "snippet": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont",
-   "backend": "direct"
-  },
   {
    "url": "https://careers.aramark.com/",
    "title": "Aramark Careers | Explore Jobs &amp; Opportunities",
    "status": 200,
-   "bytes": 159759,
+   "bytes": 159725,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 2,
    "snippet": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.aramark.com/jobs",
+   "title": "Jobs - Aramark Careers",
+   "status": 200,
+   "bytes": 160208,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Browse 6,800+ jobs at Aramark Careers. Apply online today.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://aramarkcareers.com/",
+   "title": "Jobs at Aramark",
+   "status": 200,
+   "bytes": 72101,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e",
    "backend": "direct"
   }
  ],
@@ -83,44 +85,9 @@
    "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
   },
   {
-   "t": "Aramark Careers | Explore Jobs & Opportunities",
-   "u": "https://careers.aramark.com/",
-   "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
-  },
-  {
-   "t": "Jobs - Aramark Careers",
-   "u": "https://careers.aramark.com/jobs",
-   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
-  },
-  {
-   "t": "Aramark Jobs, Employment in Turlock, CA | Indeed.com",
-   "u": "https://www.indeed.com/q-aramark-l-turlock,-ca-jobs.html",
-   "s": "Aramark jobs available in Turlock, CA on Indeed.com. Apply to Commissary Worker - Merced County Commissary and more!"
-  },
-  {
-   "t": "Aura Marker Studio",
-   "u": "https://auramarker.com/",
-   "s": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont"
-  },
-  {
-   "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/content/?locale=en_US",
-   "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
-  },
-  {
-   "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/UnitedStates/?locale=en_US",
-   "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
-  },
-  {
-   "t": "Aura Marker Studio | Aura Marker Studio",
-   "u": "https://helps.auramarker.com/en/",
-   "s": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont"
-  },
-  {
-   "t": "Now Hiring: 4,000 Aramark Jobs | Indeed",
-   "u": "https://www.indeed.com/q-Aramark-jobs.html",
-   "s": "Browse 4,804 Aramark jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+   "t": "Jobs in San Jose, CA at Aramark Careers",
+   "u": "https://careers.aramark.com/jobs/location/CA/San-Jose/",
+   "s": "Browse 50+ jobs in San Jose, CA at Aramark Careers. Apply online today."
   },
   {
    "t": "Aramark Careers | Explore Jobs & Opportunities",
@@ -128,19 +95,54 @@
    "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
   },
   {
-   "t": "Jobs - Aramark Careers",
-   "u": "https://careers.aramark.com/jobs",
-   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
+   "t": "Now Hiring: 50 Aramark Jobs in San Jose, CA | Indeed",
+   "u": "https://www.indeed.com/q-Aramark-l-San-Jose,-CA-jobs.html",
+   "s": "Browse 53 Aramark jobs in San Jose, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
   },
   {
-   "t": "Aramark Jobs, Employment in Des Moines, IA | Indeed",
-   "u": "https://www.indeed.com/q-ARAMARK-l-Des-Moines,-IA-jobs.html",
-   "s": "Today's top Aramark jobs in Des Moines, IA. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+   "t": "Warehouse Worker - SAP Center - SAP Center @ San Jose-Conc. Job Details ...",
+   "u": "https://aramarkcareers.com/UnitedStates/job/San-Jose-Warehouse-Worker-SAP-Center-SAP-Center-%40-San-Jose-Conc_-CA-95113/669164-en_US/",
+   "s": "Job Responsibilities Responsible for receiving and inspecting products, accurately labeling items and reporting any discrepancies in reconciliation of deliverie"
   },
   {
-   "t": "Now Hiring: 25 Aramark Jobs in Iowa - Indeed",
-   "u": "https://www.indeed.com/q-Aramark-l-Iowa-jobs.html",
-   "s": "44 Aramark jobs available in Iowa on Indeed.com. Apply to Catering Manager, Cook, Food Service Supervisor and more!"
+   "t": "Wait Staff - Server - SAP Center @ San Jose-Rest. Job Details | Aramark",
+   "u": "https://aramarkcareers.com/UnitedStates/job/San-Jose-Wait-Staff-Server-SAP-Center-%40-San-Jose-Rest_-CA-95113/674121-en_US/",
+   "s": "At Aramark, developing new skills and doing what it takes to get the job done make a positive impact for our employees and for our customers. In order to meet o"
+  },
+  {
+   "t": "75 Aramark SAP Jobs & Work in San Jose, CA - Indeed",
+   "u": "https://www.indeed.com/q-Aramark-SAP-l-San-Jose,-CA-jobs.html",
+   "s": "View all Aramark jobs in San Jose, CA - San Jose jobs - Concession Stand Worker jobs in San Jose, CA Salary Search: Concession Stand Worker - SAP Center - SAP C"
+  },
+  {
+   "t": "Aramark Jobs in San Jose (77 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/aramark-jobs-san-jose-ca",
+   "s": "Today's top 77 Aramark jobs in San Jose. Leverage your professional network, and get hired. New Aramark jobs added daily."
+  },
+  {
+   "t": "Concession Stand Worker - SAP Center - SAP Center @ San Jose-Conc.",
+   "u": "https://www.linkedin.com/jobs/view/concession-stand-worker-sap-center-sap-center-%40-san-jose-conc-at-aramark-4446701923",
+   "s": "Apply for Concession Stand Worker - SAP Center - SAP Center @ San Jose-Conc. at Aramark in San Jose, CA. Full-time Entry level role. See responsibilities, quali"
+  },
+  {
+   "t": "Jobs in San Jose, CA at Aramark Careers",
+   "u": "https://careers.aramark.com/jobs/location/CA/San-Jose/",
+   "s": "Browse 50+ jobs in San Jose, CA at Aramark Careers. Apply online today."
+  },
+  {
+   "t": "Aramark Careers | Explore Jobs & Opportunities",
+   "u": "https://careers.aramark.com/",
+   "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
+  },
+  {
+   "t": "Now Hiring: 50 Aramark Jobs in San Jose, CA | Indeed",
+   "u": "https://www.indeed.com/q-Aramark-l-San-Jose,-CA-jobs.html",
+   "s": "Browse 53 Aramark jobs in San Jose, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Warehouse Worker - SAP Center - SAP Center @ San Jose-Conc. Job Details ...",
+   "u": "https://aramarkcareers.com/UnitedStates/job/San-Jose-Warehouse-Worker-SAP-Center-SAP-Center-%40-San-Jose-Conc_-CA-95113/669164-en_US/",
+   "s": "The Warehouse Worker's main responsibilities include receiving and processing incoming products, preparing orders for transport, and performing inventory and qu"
   }
  ],
  "dict_hits": [],
