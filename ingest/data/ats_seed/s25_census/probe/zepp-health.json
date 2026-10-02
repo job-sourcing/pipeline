@@ -1,0 +1,29 @@
+{
+ "brand": "Zepp Health",
+ "tier": "probe_A",
+ "lca": "ZEPP INC",
+ "ts": "2026-10-02T14:29:00.013Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "zepp",
+   "spec": "feishuhire:zepp",
+   "title": "加入华米科技"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:zepp",
+  "platform": "feishu",
+  "title": "加入华米科技",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入华米科技",
+  "brand": "Zepp Health",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

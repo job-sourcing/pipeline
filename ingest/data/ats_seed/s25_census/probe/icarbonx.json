@@ -1,0 +1,150 @@
+{
+ "brand": "iCarbonX",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:30:35.893Z",
+ "candidates": [
+  {
+   "url": "https://icarbonx.com/careers.html",
+   "title": "",
+   "status": 200,
+   "bytes": 34003,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "碳云智能 — 以领先的多组学技术、AI算法与大数据为核心，提供一站式多组学检测与生命健康管理解决方案。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://icarbonx.com/en/careers.html",
+   "title": "",
+   "status": 200,
+   "bytes": 34025,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "碳云智能 — 以领先的多组学技术、AI算法与大数据为核心，提供一站式多组学检测与生命健康管理解决方案。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://lenscareer.com/en/companies/icarbonx",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5702,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover honest company reviews, salary information, and job opportunities. Make informed career decisions with insights from real employees.",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "碳云智能 iCarbonX — 官方网站",
+   "u": "https://icarbonx.com/careers.html",
+   "s": "碳云智能 — 以领先的多组学技术、AI算法与大数据为核心，提供一站式多组学检测与生命健康管理解决方案。"
+  },
+  {
+   "t": "加入我们 — 碳云智能 - icarbonx.com",
+   "u": "https://icarbonx.com/join",
+   "s": "碳云智能 — 以领先的多组学技术、AI算法与大数据为核心，提供一站式多组学检测与生命健康管理解决方案。"
+  },
+  {
+   "t": "iCarbonX Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/icarbonx/jobs",
+   "s": "Explore jobs and careers at iCarbonX. iCarbonX is currently hiring for a range of positions."
+  },
+  {
+   "t": "iCarbonX - LinkedIn",
+   "u": "https://www.linkedin.com/company/icarbonx",
+   "s": "iCarbonX (Carbon Cloud Intelligent) is a unicorn company in the digital life sector, founded in October 2015. The company focuses on building new standards for "
+  },
+  {
+   "t": "Careers - Carbonx Group",
+   "u": "https://carbonx-group.com/pages/careers",
+   "s": "Carbonx Group If you're passionate about chemistry, materials science, advanced equipment design, automation, and building a sustainable future, join us."
+  },
+  {
+   "t": "iCarbonX Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/icarbonx",
+   "s": "iCarbonX is a technology company that is changing how people monitor and understand their health status and optimize their lives. We are building the platform a"
+  },
+  {
+   "t": "Icarbonx Jobs in Worldwide (2 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/icarbonx-jobs-worldwide",
+   "s": "Today's top 2 Icarbonx jobs in Worldwide. Leverage your professional network, and get hired. New Icarbonx jobs added daily."
+  },
+  {
+   "t": "iCarbonX Jobs and Careers | GetLinks",
+   "u": "https://getlinks.com/en/company/icarbonx",
+   "s": "Explore iCarbonX jobs, salary insights, hiring activity, and career opportunities on GetLinks."
+  },
+  {
+   "t": "碳云智能 iCarbonX — 官方网站",
+   "u": "https://icarbonx.com/careers.html",
+   "s": "碳云智能 — 以领先的多组学技术、AI算法与大数据为核心，提供一站式多组学检测与生命健康管理解决方案。"
+  },
+  {
+   "t": "加入我们 — 碳云智能 - icarbonx.com",
+   "u": "https://icarbonx.com/join",
+   "s": "碳云智能 — 以领先的多组学技术、AI算法与大数据为核心，提供一站式多组学检测与生命健康管理解决方案。"
+  },
+  {
+   "t": "iCarbonX - LinkedIn",
+   "u": "https://www.linkedin.com/company/icarbonx",
+   "s": "iCarbonX (Carbon Cloud Intelligent) is a unicorn company in the digital life sector, founded in October 2015. The company focuses on building new standards for "
+  },
+  {
+   "t": "iCarbonX Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/icarbonx/jobs",
+   "s": "Explore jobs and careers at iCarbonX. iCarbonX is currently hiring for a range of positions."
+  },
+  {
+   "t": "Icarbonx Jobs in Worldwide (2 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/icarbonx-jobs-worldwide",
+   "s": "Today's top 2 Icarbonx jobs in Worldwide. Leverage your professional network, and get hired. New Icarbonx jobs added daily."
+  },
+  {
+   "t": "iCarbonX Jobs and Careers | GetLinks",
+   "u": "https://getlinks.com/en/company/icarbonx",
+   "s": "Explore iCarbonX jobs, salary insights, hiring activity, and career opportunities on GetLinks."
+  },
+  {
+   "t": "iCarbonX Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/icarbonx",
+   "s": "Learn more about iCarbonX. Find jobs, explore benefits, and research company culture at Built In."
+  },
+  {
+   "t": "Careers & Job Openings | Join Our Team - Intoxalock",
+   "u": "https://www.intoxalock.com/about/careers",
+   "s": "Ready to make a difference? Explore rewarding career opportunities at Intoxalock, leaders in the ignition interlock industry. Apply today!"
+  },
+  {
+   "t": "iCarbonX Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/icarbonx/jobs",
+   "s": "Explore jobs and careers at iCarbonX. iCarbonX is currently hiring for a range of positions."
+  },
+  {
+   "t": "2,000+ Icarbonx Peptide Arrays jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/icarbonx-peptide-arrays-jobs?f_EA=true&f_AL=true",
+   "s": "Today's top 2,000+ Icarbonx Peptide Arrays jobs in United States. Leverage your professional network, and get hired. New Icarbonx Peptide Arrays jobs added dail"
+  },
+  {
+   "t": "碳云智能 iCarbonX — 官方网站",
+   "u": "https://icarbonx.com/en/careers.html",
+   "s": "碳云智能 — 以领先的多组学技术、AI算法与大数据为核心，提供一站式多组学检测与生命健康管理解决方案。"
+  },
+  {
+   "t": "iCarbonX Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/icarbonx",
+   "s": "iCarbonX is a technology company that is changing how people monitor and understand their health status and optimize their lives. We are building the platform a"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

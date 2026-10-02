@@ -1,0 +1,149 @@
+{
+ "brand": "Zhiyun",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:29:13.498Z",
+ "candidates": [
+  {
+   "url": "http://zhiyun.net/careers",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Web site created using create-react-app",
+   "backend": "direct"
+  },
+  {
+   "url": "https://zhiyunllm.com/careers",
+   "title": "栉云科技 | 让 AI，进入真实业务",
+   "status": 200,
+   "bytes": 29385,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "栉云科技专注于AI应用和智能体开发，为企业和个人提供先进的人工智能解决方案。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://m.zhiyun-tech.com/careers",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Refyn Data is a software development and IT staffing agency with a global presence, including offices in the U.S. and India.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Refyndata - zhiyun.net",
+   "u": "http://zhiyun.net/careers",
+   "s": "Web site created using create-react-app"
+  },
+  {
+   "t": "Zhiyun-Tech | LinkedIn",
+   "u": "https://www.linkedin.com/company/zhiyun",
+   "s": "Zhiyun-Tech | 2,810 followers on LinkedIn. We make the world's most innovative and versatile gimbals. | Inspired by the mission of delivering ever ground-breaki"
+  },
+  {
+   "t": "「智云招聘」-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/62a33adb3e17e14d1HF909i4EFY~.html",
+   "s": "智云（ZHIYUN） 成立于2015年，是一家以产品研发驱动创造伟大产品，以科技创新和生态战略为核心的科技公司。业务涵盖智云、写趣两大产品线，支持相机与手机全系列云台、摄影灯及相关配件设备。拥有自有工厂，集研发、生产、销售、服务于一体的摄影配件行业引领者。目前产品已服务90多个 ..."
+  },
+  {
+   "t": "About ZHIYUN",
+   "u": "https://www.zhiyun-tech.com/en/about?ref=fstopshere",
+   "s": "ZHIYUN is a pioneer and no.1 brand in the gimbal market , whose audience ranges from professionals in the film and TV industry, independent video production stu"
+  },
+  {
+   "t": "Zhiyun-tech",
+   "u": "https://www.zhiyun-tech.com/en/active/index/1",
+   "s": "In this regard, Zhiyun and Boostermedia established \"Support Program for Global Filmmakers\", which aims to meet the growing demand of video production businesse"
+  },
+  {
+   "t": "栉云科技 - Ai应用与智能体开发",
+   "u": "https://zhiyunllm.com/careers",
+   "s": "栉云科技专注于AI应用和智能体开发，为企业和个人提供先进的人工智能解决方案。"
+  },
+  {
+   "t": "Career Opportunities-HOME_Shenyang Tianyan Zhiyun Information ...",
+   "u": "https://en.syseic.com/job.html",
+   "s": "HOME_Shenyang Tianyan Zhiyun Information Technology Co., Ltd Career Opportunities"
+  },
+  {
+   "t": "Zhiyun (Jessica) Ren - Career Transition | Former Machine Learning ...",
+   "u": "https://www.linkedin.com/in/zhiyunren",
+   "s": "Career Transition | Former Machine Learning Engineer | Precision Nutrition Level 1 Student · I spent more than 10 years building machine learning systems and so"
+  },
+  {
+   "t": "Zhiyun Tech.com Jobs in United States (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zhiyun-tech.com-jobs",
+   "s": "Today's top 1,000+ Zhiyun Tech.com jobs in United States. Leverage your professional network, and get hired. New Zhiyun Tech.com jobs added daily."
+  },
+  {
+   "t": "Refyn Data - m.zhiyun-tech.com",
+   "u": "https://m.zhiyun-tech.com/careers",
+   "s": "Refyn Data is a software development and IT staffing agency with a global presence, including offices in the U.S. and India."
+  },
+  {
+   "t": "Zhiyun Tech Jobs in Worldwide (17,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zhiyun-tech-jobs-worldwide",
+   "s": "Today's top 17,000+ Zhiyun Tech jobs in Worldwide. Leverage your professional network, and get hired. New Zhiyun Tech jobs added daily."
+  },
+  {
+   "t": "「智云招聘」-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/62a33adb3e17e14d1HF909i4EFY~.html",
+   "s": "智云（ZHIYUN） 成立于2015年，是一家以产品研发驱动创造伟大产品，以科技创新和生态战略为核心的科技公司。业务涵盖智云、写趣两大产品线，支持相机与手机全系列云台、摄影灯及相关配件设备。拥有自有工厂，集研发、生产、销售、服务于一体的摄影配件行业引领者。目前产品已服务90多个 ..."
+  },
+  {
+   "t": "Home Page [www.zhiyun-tech.com]",
+   "u": "https://www.zhiyun-tech.com/en",
+   "s": "Discover ZHIYUN's MOLUS X100 RGB, a cutting-edge camera stabilizer and photography light designed for versatile shooting scenarios."
+  },
+  {
+   "t": "Zhiyun-tech",
+   "u": "https://www.zhiyun-tech.com/en/active/index/1",
+   "s": "Over the years, Zhiyun has developed and launched 3-axis stabilizers for generations, propelling many photography enthusiasts to become professional filmmakers "
+  },
+  {
+   "t": "How much do Zhiyun employees make? | Salary.com",
+   "u": "https://www.salary.com/research/company/zhiyun-salary",
+   "s": "The average annual salary of Zhiyun is estimated to be approximate $97,822 per year. The majority pay is between $86,156 to $110,379 per year. Visit Salary.com "
+  },
+  {
+   "t": "「智云招聘」2026年智云招聘信息-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/job/62a33adb3e17e14d1HF909i4EFY~.html",
+   "s": "BOSS直聘为您提供2026年智云最新招聘信息，7个岗位正在直招牛人，智云招聘岗位类别有：人事行政专员（实习）周末双休、Meta广告投放、独立站运营主管、带货主播、应届毕业生就业岗，进入网站与智云的Boss在线直接开聊吧!"
+  },
+  {
+   "t": "Zhiyun Tech.com Jobs in United States (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zhiyun-tech.com-jobs",
+   "s": "Today's top 1,000+ Zhiyun Tech.com jobs in United States. Leverage your professional network, and get hired. New Zhiyun Tech.com jobs added daily."
+  },
+  {
+   "t": "Refyn Data - m.zhiyun-tech.com",
+   "u": "https://m.zhiyun-tech.com/careers",
+   "s": "Refyn Data is a software development and IT staffing agency with a global presence, including offices in the U.S. and India."
+  },
+  {
+   "t": "5,000+ Www Zhiyun Tech Com jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/www-zhiyun-tech-com-jobs",
+   "s": "Today's top 5,000+ Www Zhiyun Tech Com jobs in United States. Leverage your professional network, and get hired. New Www Zhiyun Tech Com jobs added daily."
+  },
+  {
+   "t": "「智云招聘」-boss直聘",
+   "u": "https://www.zhipin.com/gongsi/62a33adb3e17e14d1HF909i4EFY~.html",
+   "s": "BOSS直聘为求职者提供2026年最新智云招聘，更有智云的公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，智云正在线直聘8条职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

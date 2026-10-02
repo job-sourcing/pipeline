@@ -1,0 +1,156 @@
+{
+ "brand": "iFresh",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:31:16.295Z",
+ "candidates": [
+  {
+   "url": "https://www.oxifresh.com/carpet-cleaning-companies/career-opportunities/",
+   "title": "Career Opportunities | Oxi Fresh",
+   "status": 200,
+   "bytes": 288122,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Oxi Fresh is a growing green carpet cleaning company and are always on the lookout for talented, service-oriented women and men. Please apply!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.afresh.com/company/careers",
+   "title": "Careers at Afresh | Grocery AI Jobs",
+   "status": 200,
+   "bytes": 328366,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Build AI that changes how grocery works. Afresh is hiring team members to help grocery retailers reduce waste and run better.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.hellofresh.com/",
+   "title": "Careers at HelloFresh | HelloFresh jobs",
+   "status": 200,
+   "bytes": 881425,
+   "markers": [
+    "phenom"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "At HelloFresh, we are a global tech company driven to deliver delicious meals for our customers. Our team is diverse, dynamic and data-driven. Join us today.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "IFRESH SUPERMARKET Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Ifresh-Supermarket",
+   "s": "Find out what works well at IFRESH SUPERMARKET from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Co"
+  },
+  {
+   "t": "Careers at Afresh | Grocery AI Jobs",
+   "u": "https://www.afresh.com/company/careers",
+   "s": "Build AI that changes how grocery works. Afresh is hiring team members to help grocery retailers reduce waste and run better."
+  },
+  {
+   "t": "Careers at HelloFresh | HelloFresh jobs",
+   "u": "https://careers.hellofresh.com/",
+   "s": "At HelloFresh, we are a global tech company driven to deliver delicious meals for our customers. Our team is diverse, dynamic and data-driven. Join us today."
+  },
+  {
+   "t": "Careers - infresh.co",
+   "u": "https://infresh.co/en/careers",
+   "s": "INFRESH เซรั่มลดหลุมสิว ตัวดัง รีวิวเพียบ! ช่วยเติมเต็มหลุมสิว ลดรอยสิว กระชับรูขุมขน เห็นผลจริง ปลอดภัย อ่อนโยนต่อผิว จัดโปรแรง ส่งฟรีทั่วไทย ..."
+  },
+  {
+   "t": "Careers At Loffredo Fresh Foods",
+   "u": "https://www.loffredo.com/careers",
+   "s": "Careers Loffredo Fresh Foods believes that our employees are the key to a successful future. We are committed to attracting and maintaining a dedicated and tale"
+  },
+  {
+   "t": "Jobs at Fresh | Fresh",
+   "u": "https://www.fresh.com/us/careers-at-fresh.html",
+   "s": "Careers at fresh fresh is a global skincare brand within the LVMH Group, headquartered in New York City. Our collection of skincare, lip care, body care, and fr"
+  },
+  {
+   "t": "Careers - Fresh",
+   "u": "https://www.fresh.com/us/customer-service/links/Careers.html",
+   "s": "Our core value of hand picked can refer to many facets of life at Fresh: hand-picked ingredients, hand-picked designs, and even hand-picking our prestigious emp"
+  },
+  {
+   "t": "Career Opportunities - Oxi Fresh",
+   "u": "https://www.oxifresh.com/carpet-cleaning-companies/career-opportunities/",
+   "s": "Oxi Fresh is a growing green carpet cleaning company and are always on the lookout for talented, service-oriented women and men. Please apply!"
+  },
+  {
+   "t": "IFRESH SUPERMARKET Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Ifresh-Supermarket",
+   "s": "Find out what works well at IFRESH SUPERMARKET from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Co"
+  },
+  {
+   "t": "Dialysis and Healthcare Jobs | Fresenius Medical Care",
+   "u": "https://jobs.freseniusmedicalcare.com/",
+   "s": "Explore careers at Fresenius Medical Care. We are hiring nurses, PCTs, clinical managers, production workers, and corporate professionals worldwide."
+  },
+  {
+   "t": "Careers At Loffredo Fresh Foods",
+   "u": "https://www.loffredo.com/careers",
+   "s": "Loffredo Fresh Foods believes that our employees are the key to a successful future. We are committed to attracting and maintaining a dedicated and talented tea"
+  },
+  {
+   "t": "Now Hiring: 24,000 Jobs in Des Moines, IA | Indeed",
+   "u": "https://www.indeed.com/l-Des-Moines,-IA-jobs.html",
+   "s": "Browse 24,256 jobs in Des Moines, IA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers - Des Moines, Iowa",
+   "u": "https://www.dsm.city/departments/human_resources/careers/index.php",
+   "s": "Careers with the City of Des Moines: explore job openings, application tips, benefits, and recruitment for Fire, Police, and other city departments."
+  },
+  {
+   "t": "Join Our Team - Iowa Events Center",
+   "u": "https://www.iowaeventscenter.com/about/now-hiring",
+   "s": "Join Our Team The Iowa Events Center, a leader in sports, entertainment, and venue management, is dedicated to recruiting and developing individuals with the sk"
+  },
+  {
+   "t": "Join Our Team - UnityPoint Health",
+   "u": "https://www.unitypoint.org/join-our-team",
+   "s": "Explore what it's like to work at UnityPoint Health through the eyes of our dedicated team members. Our \"Day in the Life\" series offers an inside look at variou"
+  },
+  {
+   "t": "Job Opportunities & Careers at DART | Des Moines Metro",
+   "u": "https://www.ridedart.com/careers-at-dart/",
+   "s": "We're hiring! Find job opportunities & careers at DART in Central Iowa. Browse job openings: part-time, full-time, flexible & CDL options."
+  },
+  {
+   "t": "IFRESH SUPERMARKET Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Ifresh-Supermarket",
+   "s": "Find out what works well at IFRESH SUPERMARKET from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Co"
+  },
+  {
+   "t": "Now Hiring: 11,000 Jobs in Myrtle Beach, SC | Indeed",
+   "u": "https://www.indeed.com/l-Myrtle-Beach,-SC-jobs.html",
+   "s": "Browse 11,593 jobs in Myrtle Beach, SC. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "City of Myrtle Beach Career Opportunities",
+   "u": "https://www.cityofmyrtlebeach.com/careers/departments/human_resources/index.php",
+   "s": "Job Opportunities Employee Benefits Americans with Disabilities Act The City of Myrtle Beach is an Equal Opportunity Employer and, as such, will recruit and hir"
+  },
+  {
+   "t": "Careers | BlueCross BlueShield of South Carolina",
+   "u": "https://www.southcarolinablues.com/en/home/about-us/careers.html",
+   "s": "BlueCross BlueShield of South Carolina and our subsidiary companies maintain a continuing policy of nondiscrimination in employment to promote employment opport"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.oxifresh.com/carpet-cleaning-companies/career-opportunities/",
+  "platform": "custom",
+  "title": "Career Opportunities | Oxi Fresh"
+ },
+ "verdict": "custom_surface"
+}
