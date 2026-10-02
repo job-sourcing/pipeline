@@ -1718,6 +1718,12 @@ class TestFeishuHireAdapter:
         assert M["Essex County"] == "United States"
         assert M["Langfang"] == "China"
         assert M["Yulin"] == "China"
+        # S25 (feishu-US census class): Chino + Wildwood were LIVE
+        # undercount bugs on mammotion/ecoflow boards (2-b census);
+        # these pins keep the grown map from regressing
+        assert M["Chino"] == "United States"
+        assert M["Wildwood"] == "United States"
+        assert M["Rancho Cucamonga"] == "United States"
 
     def test_no_country_filter_returns_all(self, monkeypatch):
         # regression: list without a country filter keeps every row

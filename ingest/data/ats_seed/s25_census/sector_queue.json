@@ -1,0 +1,4379 @@
+{
+  "built": "2026-10-02T10:42:57.726990+00:00",
+  "counts": {
+    "wired_already": 0,
+    "wire_now": 28,
+    "probe_A": 203,
+    "probe_B": 0,
+    "origin_review": 3,
+    "rejected": 0
+  },
+  "wire_now": [
+    {
+      "brand": "Airwallex",
+      "name": "Airwallex",
+      "cn": "空中云汇",
+      "aliases": [
+        "Airwallex US LLC",
+        "空中云汇",
+        "Airwallex Financial"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "ashby:airwallex",
+      "careers_hint": "https://careers.airwallex.com/",
+      "us_signal": "Ashby board 547 jobs, ~136 US-located (108 San Francisco); NYC LCA rows 2026",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, USA (global; founded Melbourne)"
+    },
+    {
+      "brand": "Alluxio",
+      "name": "Alluxio",
+      "cn": "",
+      "aliases": [
+        "Alluxio Inc",
+        "Tachyon",
+        "Alluxio Open Foundation"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "lever:alluxio",
+      "careers_hint": "https://www.alluxio.com/careers + jobs.lever.com/alluxio",
+      "us_signal": "Lever board live: 9 postings — Foster City CA on-site roles (Eng Manager, Sr Staff SWE) plus China/Beijing/Shanghai remote roles (CN-language presale/AM); LCA ALLUXIO INC",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Foster City, CA (Alluxio Inc)"
+    },
+    {
+      "brand": "Amber Group",
+      "name": "Amber Group",
+      "cn": "琥珀资本(非上市)",
+      "aliases": [
+        "Amber Group",
+        "Amberdata no",
+        "Amber AI Labs",
+        "琥珀集团"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "lever:ambergroup",
+      "careers_hint": "https://www.ambergroup.io/careers",
+      "us_signal": "Lever board live 200 (3 jobs: Hong Kong, Singapore today); historically US remote roles; no LCA rows",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Singapore (founded Hong Kong; founders ex-Morgan Stanley China)"
+    },
+    {
+      "brand": "Autel Robotics",
+      "name": "Autel Robotics",
+      "cn": "道通智能",
+      "aliases": [
+        "Autel Robotics",
+        "AUTEL ROBOTICS USA LLC",
+        "Autel Robotics USA",
+        "道通智能航空技术"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "wire_now",
+      "ats_hint": "workable:autel-robotics",
+      "careers_hint": "https://www.autelrobotics.com/pages/careers",
+      "us_signal": "LIVE workable board (workable:autel-robotics, HTTP 200, 0 open jobs right now); LCA AUTEL ROBOTICS USA LLC 18 filings — sustained US hiring history (US drone sales/support/repair ops).",
+      "lca_employers": [
+        "AUTEL ROBOTICS USA LLC"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Binance",
+      "name": "Binance",
+      "cn": "币安",
+      "aliases": [
+        "Binance",
+        "BAM Trading Services",
+        "Binance.US",
+        "币安"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "lever:binance",
+      "careers_hint": "https://www.binance.com/en/careers",
+      "us_signal": "Lever board live 200: 309 jobs, 2 US ('Cloud AI Engineer - US', 'Regulatory Legal Counsel - US Monitorships'); greenhouse:binance exists but is a TEST/sandbox board (Alan test reqs) — use lever",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Global (no formal HQ; Cayman/Dubai/Paris entities)"
+    },
+    {
+      "brand": "FunPlus",
+      "name": "FunPlus",
+      "cn": "趣加互动娱乐(北京)",
+      "aliases": [
+        "FunPlus",
+        "Fun Plus",
+        "趣加",
+        "FunPlus International"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "workable:fun-plus",
+      "careers_hint": "https://funplus.com/careers/",
+      "us_signal": "Workable board live 200 (account 'FunPlus', 0 published jobs today); US HQ Redwood City; careers also via factorialhr embed",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Redwood City, USA (R&D Beijing/Shanghai/Barcelona)"
+    },
+    {
+      "brand": "GPTZero",
+      "name": "GPTZero",
+      "cn": "",
+      "aliases": [
+        "GPTZero Inc",
+        "gptzero.me"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "ashby:gptzero",
+      "careers_hint": "https://gptzero.me/careers -> jobs.ashbyhq.com/gptzero",
+      "us_signal": "Ashby board LIVE: 5 open roles (NYC Hybrid x2, Toronto Hybrid x3)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "New York, NY"
+    },
+    {
+      "brand": "GrubMarket",
+      "name": "GrubMarket",
+      "cn": "GrubMarket(华人生鲜B2B)",
+      "aliases": [
+        "GrubMarket Inc",
+        "FreshLife",
+        "GrubCapital"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "workable:grubmarket",
+      "careers_hint": "https://www.grubmarket.com/hello/jobs/openings/",
+      "us_signal": "Custom openings page live w/ SF roles (Full Stack SW Eng - SF, Digital Marketing Mgr - SF); Workable account live 200 (0 published today)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, USA (Chinese founder)"
+    },
+    {
+      "brand": "HeyGen",
+      "name": "HeyGen",
+      "cn": "",
+      "aliases": [
+        "HeyGen Inc",
+        "Sensetime no - HeyGen",
+        "诗云科技 (predecessor)"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:heygen",
+      "careers_hint": "https://www.heygen.com/careers + boards.greenhouse.io/heygen",
+      "us_signal": "Greenhouse board live: 19 open roles (Backend/Infra/Data/Frontend engineers at SF, Palo Alto, Los Angeles, Toronto; some Remote-Europe)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco Bay Area (SF/Palo Alto/LA hubs)"
+    },
+    {
+      "brand": "I-Mab",
+      "name": "I-Mab",
+      "cn": "天境生物",
+      "aliases": [
+        "I-Mab Biopharma",
+        "I-Mab Biopharma US Limited",
+        "Tianjing Biopharma"
+      ],
+      "sector": "biopharma",
+      "evidence": "wire_now",
+      "ats_hint": "smartrecruiters:I-MabBiopharma",
+      "careers_hint": "https://careers.smartrecruiters.com/I-MabBiopharma",
+      "us_signal": "US-pivoted after China divestiture; LCA I-MAB BIOPHARMA US LIMITED 2026 (Gaithersburg/Rockville MD, Holden MA); Glassdoor/LinkedIn live postings 2026 (Pharmacometrician, Assoc Dir CMC)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Gaithersburg, MD, USA (was Shanghai)"
+    },
+    {
+      "brand": "LlamaIndex",
+      "name": "LlamaIndex",
+      "cn": "",
+      "aliases": [
+        "LlamaIndex AI",
+        "LlamaIndex Inc",
+        "GPT Index",
+        "llamaindex.ai"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "ashby:llamaindex",
+      "careers_hint": "https://www.llamaindex.ai/ -> jobs.ashbyhq.com/llamaindex (Ashby board)",
+      "us_signal": "Ashby board LIVE: 9 open roles (San Francisco x7, London UK x2) incl MTS Infrastructure/Backend/Applied Research, Developer Evangelists",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA (remote-first)"
+    },
+    {
+      "brand": "OKX",
+      "name": "OKX",
+      "cn": "欧科云链/欧易",
+      "aliases": [
+        "OKX",
+        "OKCoin",
+        "OK Group",
+        "Star Xu",
+        "欧易"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:okx",
+      "careers_hint": "https://www.okx.com/careers",
+      "us_signal": "Greenhouse board live 200: 328 jobs, ~26 US-located",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Singapore (founder Star Xu, Chinese; ops Seychelles/HK)"
+    },
+    {
+      "brand": "Onyx",
+      "name": "Onyx (Danswer)",
+      "cn": "",
+      "aliases": [
+        "Onyx AI",
+        "Danswer",
+        "onyx.app"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "ashby:onyx",
+      "careers_hint": "https://www.onyx.app/careers -> jobs.ashbyhq.com/onyx",
+      "us_signal": "Ashby board LIVE: 4 open roles (San Francisco); Zhihu coverage: '旧金山AI Agent初创公司Onyx完成$1000万种子轮融资, 华人Yuhong Sun为联创'",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA"
+    },
+    {
+      "brand": "OpusClip",
+      "name": "OpusClip",
+      "cn": "",
+      "aliases": [
+        "Opus Clip",
+        "OpusClip Inc",
+        "opus.pro"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "ashby:opusclip",
+      "careers_hint": "https://opus.pro/careers -> embeds jobs.ashbyhq.com/opusclip",
+      "us_signal": "Ashby board LIVE: 8 open roles (Mountain View x6, Burnaby x2) incl Engineering Lead, Lead AI Researcher, MTS AI Engineer",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Mountain View, CA"
+    },
+    {
+      "brand": "Otter.ai",
+      "name": "Otter.ai",
+      "cn": "",
+      "aliases": [
+        "OtterAI",
+        "AISense",
+        "Otter ai"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:otterai",
+      "careers_hint": "https://otter.ai/careers + boards.greenhouse.io/otterai",
+      "us_signal": "Greenhouse board live: 24 US roles (Mountain View/SF/Phoenix) incl 'Engineering Director, Infrastructure' and 'Senior Applied Scientist, Speech'; LCA OTTERAI INC",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Mountain View, CA (OtterAI Inc)"
+    },
+    {
+      "brand": "PhoenixAI",
+      "name": "PhoenixAI (CelerData/StarRocks)",
+      "cn": "镜舟科技",
+      "aliases": [
+        "CelerData",
+        "CelerData Inc",
+        "StarRocks",
+        "PhoenixAI",
+        "phoenixdata.ai"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "rippling:celerdataopenroles",
+      "careers_hint": "https://www.celerdata.com/careers (redirects to phoenixdata.ai) -> ats.rippling.com/celerdataopenroles/jobs",
+      "us_signal": "Rippling board live: 16 roles (Database Support Engineer Singapore, Presales Solutions Architect, 5x Enterprise AE, Lead PM Database Core, Sr/Lead SWE Cloud Platform & Database System, GTM Recruiter, Talent Pool); US 401(k)/premium health benefits; careers asset even advertises H-1B sponsorship image; LCA CELERDATA INC",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Menlo Park, CA (HQ per careers page; CN entity 镜舟科技)"
+    },
+    {
+      "brand": "PingCAP",
+      "name": "PingCAP",
+      "cn": "平凯星辰",
+      "aliases": [
+        "PingCAP Inc",
+        "TiDB",
+        "PingCAP US"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:pingcap",
+      "careers_hint": "https://pingcap.com/careers/ + boards.greenhouse.io/pingcap",
+      "us_signal": "Greenhouse board live: 7 open roles incl 'Remote - Bay Area, Seattle, or Pacific Time Zone', 'Remote - South Korea', Hybrid-Tokyo; LCA PINGCAP (US) INC files H1Bs",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Global remote; US entity PingCAP (US) Inc"
+    },
+    {
+      "brand": "Retell AI",
+      "name": "Retell AI",
+      "cn": "",
+      "aliases": [
+        "Retell",
+        "RetellAI",
+        "retellai.com"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "ashby:retell-ai",
+      "careers_hint": "https://www.retellai.com/careers -> embeds jobs.ashbyhq.com/retell-ai",
+      "us_signal": "Ashby board LIVE: 28 open roles, SF Bay Area (Senior SWE Backend/Frontend/Full-stack, Forward Deployed Eng, New Grad SWE) + 1 Remote content role",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA"
+    },
+    {
+      "brand": "Riot Games",
+      "name": "Riot Games",
+      "cn": "(腾讯全资子公司)",
+      "aliases": [
+        "Riot Games",
+        "拳头游戏",
+        "拳头"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:riotgames",
+      "careers_hint": "https://www.riotgames.com/en/work-with-us",
+      "us_signal": "Greenhouse board live 200: 166 jobs, ~82 US (LA/Mercer Island; also Guangzhou/Shanghai China roles)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Los Angeles, USA"
+    },
+    {
+      "brand": "RisingWave",
+      "name": "RisingWave",
+      "cn": "",
+      "aliases": [
+        "RisingWave Labs",
+        "Risingwave",
+        "RW Labs"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "workable:risingwave-labs",
+      "careers_hint": "https://risingwave.com/careers/ -> apply.workable.com/risingwave-labs",
+      "us_signal": "Workable account live (0 open roles today, board exists); LinkedIn shows US open roles e.g. Founding Forward Deployed Engineer; SF HQ",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA (plus London/Singapore)"
+    },
+    {
+      "brand": "StreamNative",
+      "name": "StreamNative",
+      "cn": "",
+      "aliases": [
+        "StreamNative Inc",
+        "Apache Pulsar commercial"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:streamnative",
+      "careers_hint": "https://streamnative.io/careers + boards.greenhouse.io/streamnative",
+      "us_signal": "Greenhouse board live with 1 Remote role; LCA STREAMNATIVE INC files H1Bs",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US Bay Area (StreamNative Inc)"
+    },
+    {
+      "brand": "TigerGraph",
+      "name": "TigerGraph",
+      "cn": "",
+      "aliases": [
+        "TigerGraph Inc",
+        "GraphSQL"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:tigergraph",
+      "careers_hint": "https://www.tigergraph.com/careers/ + boards.greenhouse.io/tigergraph",
+      "us_signal": "Greenhouse board live: 3 California roles (Milpitas CA, Redwood City CA)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco Bay Area, CA (Milpitas/Redwood City roles)"
+    },
+    {
+      "brand": "UniUni",
+      "name": "UniUni",
+      "cn": "UniUni(华人末端物流)",
+      "aliases": [
+        "UniUni Logistics Inc",
+        "UniUni Express"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "rippling:uniuni",
+      "careers_hint": "https://www.uniuni.com/career-open-roles/",
+      "us_signal": "Rippling board live 200 (ats.rippling.com/uniuni/jobs): 15 jobs p1 incl US (Spokane Valley) + Canada + India/Vietnam",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Vancouver, Canada (Chinese founders; US ops)"
+    },
+    {
+      "brand": "Weee!",
+      "name": "Weee!",
+      "cn": "上海旺洋经贸/Weee!华人电商",
+      "aliases": [
+        "Weee",
+        "SayWeee",
+        "Weee Inc",
+        "Weee! Inc"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:weee",
+      "careers_hint": "https://www.weee.com/en/company/careers",
+      "us_signal": "Greenhouse board live 200: 18 jobs ALL US (Hodgkins IL, Clifton NJ, Houston TX, La Mirada/Landover/Milpitas CA/MD, Chicago IL)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Fremont, USA (Chinese founders)"
+    },
+    {
+      "brand": "Wyze",
+      "name": "Wyze",
+      "cn": "",
+      "aliases": [
+        "Wyze",
+        "Wyze Labs",
+        "WYZE LABS INC",
+        "Wyze Cam"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "wire_now",
+      "ats_hint": "workable:wyze",
+      "careers_hint": "https://apply.workable.com/wyze",
+      "us_signal": "LIVE workable board (workable:wyze, HTTP 200, 0 open jobs at probe); LCA: WYZE LABS INC 18 filings incl. 2026 — ACTIVE US sponsor. Chinese-founded (ex-Amazon engineers), Seattle HQ.",
+      "lca_employers": [
+        "WYZE LABS INC"
+      ],
+      "origin": "us_chinese_founder",
+      "hq": "Seattle, WA, USA (Chinese-founded)"
+    },
+    {
+      "brand": "Zai Lab",
+      "name": "Zai Lab",
+      "cn": "再鼎医药",
+      "aliases": [
+        "Zai Lab (US) LLC",
+        "ZAILAB",
+        "Zai Laboratory"
+      ],
+      "sector": "biopharma",
+      "evidence": "wire_now",
+      "ats_hint": "smartrecruiters:ZaiLabUSLLC1",
+      "careers_hint": "https://www.zailaboratory.com/jobs/ (custom) + https://careers.smartrecruiters.com/ZaiLabUSLLC1",
+      "us_signal": "12 live US roles on SmartRecruiters (Senior Medical Director Oncology Cambridge MA, Clinical Trial Manager South San Francisco, VP Global Medical Affairs, Reg/ClinPharm dirs); legal entity Zai Lab (US) LLC",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Zingage",
+      "name": "Zingage",
+      "cn": "",
+      "aliases": [
+        "Zingage Inc",
+        "zingage.com"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "ashby:zingage",
+      "careers_hint": "https://zingage.com (no public careers page — /careers 404); China-side hiring via V2EX remote posts",
+      "us_signal": "US home-care AI-agent SaaS (Zingage Operator/Perform; 400+ agencies, 10M patient visits); $12.5M seed led by Bessemer, w/ TQ Ventures, South Park Commons, WndrCo; Ashby board slug 'zingage' live but 0 open roles today; hires China-remote core engineers at 40-45K RMB/month via V2EX (2026)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "New York, NY"
+    },
+    {
+      "brand": "Zoomlion",
+      "name": "Zoomlion",
+      "cn": "中联重科股份有限公司",
+      "aliases": [
+        "Zoomlion",
+        "Zoomlion Heavy Industry NA Inc",
+        "中联重科"
+      ],
+      "sector": "cross",
+      "evidence": "wire_now",
+      "ats_hint": "workable:zoomlion",
+      "careers_hint": "https://zoomlion-na.com/about/career",
+      "us_signal": "Workable account 'zoomlion' live 200 (0 published today); LCA ZOOMLION HEAVY INDUSTRY NA INC 8 rows active 2026",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Changsha, China (US: Zoomlion NA)"
+    }
+  ],
+  "probe_A": [
+    {
+      "brand": "1MORE",
+      "name": "1MORE",
+      "cn": "万魔声学",
+      "aliases": [
+        "1MORE",
+        "万魔",
+        "1MORE USA"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.1more.com/",
+      "us_signal": "Historic 1MORE USA arm (US distribution + marketing); no current US LCA/board signal. Careers surface = CN portal.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "A123 Systems",
+      "name": "A123 Systems (Wanxiang)",
+      "cn": "万向集团旗下A123系统",
+      "aliases": [
+        "A123 Systems",
+        "A123 Systems LLC",
+        "万向",
+        "Wanxiang America Corporation"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.a123systems.com/careers",
+      "us_signal": "LCA A123 SYSTEMS LLC 137 rows — very active 2026; Michigan manufacturing hubs (Livonia, Romulus); careers site 403-walled (CN WAF '异常访问')",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Novi, MI, USA (parent: Wanxiang Group, Hangzhou)"
+    },
+    {
+      "brand": "AFFiNE",
+      "name": "AFFiNE",
+      "cn": "",
+      "aliases": [
+        "toeverything",
+        "ToEverything Pte",
+        "AFFiNE AI",
+        "affine.pro"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://affine.pro/careers (404 today); workable 'Affine' account exists, 0 jobs, unverified",
+      "us_signal": "Global remote team; no verified live board (affine.pro/careers 404)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Singapore (global remote team)"
+    },
+    {
+      "brand": "AIsa",
+      "name": "AIsa",
+      "cn": "",
+      "aliases": [
+        "AIsa One",
+        "AIsa Inc",
+        "aisa.one",
+        "aisaonehq"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://aisa.one (careers route exists, JS SPA — no job list found; China-side hiring via V2EX remote posts)",
+      "us_signal": "SF-headquartered AI-agent infrastructure startup (founded 2025); investors incl Alibaba, Tribe Capital, Draper Associates, Sumitomo, Saison Capital; hires China-remote Staff/Principal platform engineers at 50-80K RMB and 大模型平台运营 30-50K via V2EX (2026)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA"
+    },
+    {
+      "brand": "API7",
+      "name": "API7",
+      "cn": "支流科技",
+      "aliases": [
+        "API7.ai",
+        "APISEVEN",
+        "Apache APISIX commercial",
+        "Zhiliu Tech"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://archived-site.api7.ai/careers (archived) — api7.ai/careers currently 404",
+      "us_signal": "Careers messaging advertises 'remote work' (远程办公) + competitive comp for Apache APISIX open-source engineers — China-remote workforce class (MyShell-class per D-S25-2)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Hangzhou, China (global remote workforce)"
+    },
+    {
+      "brand": "Abelian",
+      "name": "Abelian",
+      "cn": "",
+      "aliases": [
+        "Abelian Foundation",
+        "pqabelian",
+        "Abelian Network"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.pqabelian.io",
+      "us_signal": "US foundation (Irvine); no software hiring board",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Irvine, CA, USA (foundation)"
+    },
+    {
+      "brand": "Adagene",
+      "name": "Adagene",
+      "cn": "",
+      "aliases": [
+        "Adagene Inc",
+        "Adagene Incorporated"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.adagene.com/careers/ -> https://app.trinethire.com/companies/33812-adagene-incorporated/jobs",
+      "us_signal": "TriNet Hire board LIVE: 'Director, Study Physician (U.S. Remote)' + 'Medical Director/Assoc Medical Director (U.S. Remote)' — US-remote roles on a live board",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Diego, CA, USA + Suzhou, China"
+    },
+    {
+      "brand": "Adcentrx Therapeutics",
+      "name": "Adcentrx Therapeutics",
+      "cn": "",
+      "aliases": [
+        "Adcentrx"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://adcentrx.com/ (202 challenge from this egress)",
+      "us_signal": "San Diego ADC biotech (Chinese-founded); LCA 0; site challenge-gated from HK egress",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Diego, CA, USA"
+    },
+    {
+      "brand": "Akeso",
+      "name": "Akeso",
+      "cn": "康方生物",
+      "aliases": [
+        "Akeso Inc",
+        "Akeso Biopharma"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.akesobio.com/cn/career/ (CN only)",
+      "us_signal": "No US roles/board found; US commercialization runs through Summit Therapeutics partnership (ivonescimab)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Zhongshan, Guangdong, China"
+    },
+    {
+      "brand": "Amcrest",
+      "name": "Amcrest",
+      "cn": "",
+      "aliases": [
+        "Amcrest",
+        "AMCREST INDUSTRIES LLC",
+        "Amcrest Industries",
+        "Amcrest View"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/amcrest/jobs/",
+      "us_signal": "LCA: AMCREST INDUSTRIES LLC 2 filings (2021); amcrest.com/careers 403 (WAF) — no board accessible; US-inc Chinese-owned security-cam brand (Foscam-affiliated).",
+      "lca_employers": [
+        "AMCREST INDUSTRIES LLC"
+      ],
+      "origin": "us_chinese_founder",
+      "hq": "Houston, TX, USA (Chinese-owned; Shenzhen mfg, Foscam lineage)"
+    },
+    {
+      "brand": "AnHeart Therapeutics",
+      "name": "AnHeart Therapeutics",
+      "cn": "",
+      "aliases": [
+        "AnHeart"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Acquired by Nuvation Bio in all-stock transaction (2024; announced+completed) — pipeline now Nuvation's; domain anhearttx.com FOR SALE",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "New York, NY, USA"
+    },
+    {
+      "brand": "Anker Innovations",
+      "name": "Anker Innovations",
+      "cn": "安克创新",
+      "aliases": [
+        "Anker",
+        "Anker Innovations",
+        "Anker Innovations Ltd",
+        "Anker Solix",
+        "AnkerWork",
+        "Eufy",
+        "Nebula",
+        "Soundcore",
+        "eufy",
+        "eufy Security",
+        "安克创新"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": "feishu:anker-in",
+      "careers_hint": "https://career.anker-in.com/",
+      "us_signal": "LIVE feishu board (anker-in.jobs.feishu.cn, HTTP 200): 850 total jobs, 18 US-mapped roles in first 200 (Seattle x12 incl. eufy B2B Security Sr System Engineer + Product Security Engineers, LA x6); LinkedIn shows ~29 US Anker roles. US sub Anker Innovations Limited + Anker Technology USA LLC.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Anycubic",
+      "name": "Anycubic",
+      "cn": "纵维立方",
+      "aliases": [
+        "Anycubic",
+        "纵维立方",
+        "Anycubic 3D"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.anycubic.com/pages/careers",
+      "us_signal": "US storefront + Amazon; no US LCA; no US job board found (careers page Shopify 429-bot-guarded). Hiring via CN portal.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Apollomics",
+      "name": "Apollomics",
+      "cn": "",
+      "aliases": [
+        "Apollomics Inc"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.apollomicsinc.com/ (Wix; /careers 404)",
+      "us_signal": "US-inc with CN roots; board dead (careers 404); LinkedIn jobs via simplify.jobs/c/Apollomics; company reportedly downsizing",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Carlos, CA, USA (was Hangzhou)"
+    },
+    {
+      "brand": "Aputure",
+      "name": "Aputure",
+      "cn": "",
+      "aliases": [
+        "Aputure",
+        "Aputure Imaging Industries",
+        "Amaran (product)",
+        "Aputure USA"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/aputure/jobs/",
+      "us_signal": "Global film-lighting leader with US market focus; no US LCA found; aputure.com/pages/careers 404 — no board found; US ops via distributors (B&H).",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Hong Kong / Shenzhen, China"
+    },
+    {
+      "brand": "Aqara",
+      "name": "Aqara",
+      "cn": "绿米联创",
+      "aliases": [
+        "Aqara",
+        "Lumi United Technology",
+        "绿米",
+        "Aqara Inc",
+        "米家生态链?"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://erp.aqara.com/en_US/jobs",
+      "us_signal": "US entity Aqara Inc (Indeed company page w/ US careers); custom global hiring portal erp.aqara.com/en_US/jobs (live, custom ERP board, English locale). No LCA filings. US retail presence (Best Buy/Home Depot).",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Arctech Solar",
+      "name": "Arctech Solar",
+      "cn": "江苏中信博新能源科技股份有限公司",
+      "aliases": [
+        "Arctech",
+        "Arctech Solar",
+        "中信博"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Minimal US presence (tracking sales); no US hiring evidence",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Suzhou (Jiangsu), China"
+    },
+    {
+      "brand": "Asymchem",
+      "name": "Asymchem",
+      "cn": "凯莱英",
+      "aliases": [
+        "Asymchem Laboratories",
+        "Asymchem Boston Corporation",
+        "Tianjin Asymchem"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.asymchem.com/ (careers page 404s; site shows US marker)",
+      "us_signal": "ASYMCHEM BOSTON CORPORATION: LCA Woburn MA (BD Manager 2023) + Piedmont CA (Assoc Dir BD 2025); 'United States' presence on site",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Tianjin, China"
+    },
+    {
+      "brand": "Atlas Cloud",
+      "name": "Atlas Cloud",
+      "cn": "",
+      "aliases": [
+        "AtlasCloud",
+        "Atlas Cloud AI",
+        "atlascloud.ai"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "V2EX 远程工作 posts (2026) + email applications; atlascloud.ai/careers is a marketing page, no ATS",
+      "us_signal": "US-headquartered multimodal AI API platform (400+ models: Seedance/Kling/GPT-Image/DeepSeek via one API); hires China-remote at 15-25K RMB with 五险一金, remote-friendly (前端全员远程) via V2EX (2026)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "United States (self-reported US HQ in V2EX posting; China-based remote team)"
+    },
+    {
+      "brand": "AuraMarker",
+      "name": "AuraMarker",
+      "cn": "",
+      "aliases": [
+        "AuraMarker Studio",
+        "Zine",
+        "Varlens",
+        "Lattics"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "V2EX 远程工作 posts (e.g. t/1202642) — hr@auramarker.com; no ATS",
+      "us_signal": "Fully-remote Chinese product-innovation team for 13 years, no external funding; global products incl AI writing app Lattics; hires full-time remote devs in China (salary calibrated to base city, RMB)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "China (fully remote, no office — 13 years bootstrapped)"
+    },
+    {
+      "brand": "AutoMQ",
+      "name": "AutoMQ",
+      "cn": "",
+      "aliases": [
+        "AutoMQ Inc",
+        "automq.com",
+        "Apache Kafka cloud-native"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.automq.com/careers (form-based application)",
+      "us_signal": "Careers page LIVE: 4 open roles ALL Remote — Senior Software Engineer, Software Engineer Intern, Sales AE Global, Marketing & Community Operations; 'remote-first, work from anywhere'",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US entity + global remote (founders ex-Alibaba RocketMQ team)"
+    },
+    {
+      "brand": "Axiom Math",
+      "name": "Axiom Math",
+      "cn": "",
+      "aliases": [
+        "Axiom",
+        "AxiomMath"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "(no careers page found — stealth-ish)",
+      "us_signal": "SF-based; $64M seed (B Capital + Menlo Ventures, 2025) — team built from Meta AI researchers",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA"
+    },
+    {
+      "brand": "Bambu Lab",
+      "name": "Bambu Lab",
+      "cn": "拓竹科技",
+      "aliases": [
+        "Bambu Lab",
+        "Bambulab",
+        "BAMBULAB USA INC",
+        "拓竹"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": "feishu:bambulab",
+      "careers_hint": "https://bambulab.com/en-us/join-us",
+      "us_signal": "LIVE feishu board (bambulab.jobs.feishu.cn, 400 jobs): 4+ US roles in Santa Clara CA (IT & Security Operations Engineer, SRE Engineer, DBA/DBRE, Data Engineer-US) + Austin office (LinkedIn 'Bambu Labs Austin Office'); LCA BAMBULAB USA INC 3 filings (2022-2025); WayUp shows Bambulab USA Inc US roles.",
+      "lca_employers": [
+        "BAMBULAB USA INC"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Baseus",
+      "name": "Baseus",
+      "cn": "倍思科技",
+      "aliases": [
+        "Baseus",
+        "倍思"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.baseus.com/pages/careers",
+      "us_signal": "US storefront + Amazon presence; no US entity hiring signal found (no LCA, no US board). Careers = CN portal.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Beelink",
+      "name": "Beelink",
+      "cn": "",
+      "aliases": [
+        "Beelink",
+        "Beelink Mini PC",
+        "SER (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Amazon mini-PC brand with US storefront; no US LCA; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "BentoML",
+      "name": "BentoML",
+      "cn": "",
+      "aliases": [
+        "BentoML Inc",
+        "BentoCloud",
+        "bentoml"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.bentoml.com/careers (404 today)",
+      "us_signal": "US company; $9M seed (2023); no live board found — bentoml.com/careers 404; unverified ashby/workable accounts",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA"
+    },
+    {
+      "brand": "BioDuro-Sundia",
+      "name": "BioDuro-Sundia",
+      "cn": "",
+      "aliases": [
+        "BioDuro",
+        "Sundia",
+        "Sundia Medtech"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.bioduro-sundia.com/careers/",
+      "us_signal": "BioDuro brand US site (San Diego) + Shanghai; careers page global, no US job rows found on curl; LCA 0",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "San Diego, CA, USA + Shanghai, China"
+    },
+    {
+      "brand": "Bluetti",
+      "name": "Bluetti",
+      "cn": "德兰明海（PowerOak）",
+      "aliases": [
+        "BLUETTI",
+        "BLUETTI POWER INC",
+        "Bluetti",
+        "Bluetti Power Inc",
+        "PowerOak",
+        "德兰明海"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://we.bluettipower.com/",
+      "us_signal": "US sales/ops (Bluetti US); custom careers site we.bluettipower.com live (HTTP 200) but no ATS detected (custom form/email apply). No LCA filings found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "BougeRV",
+      "name": "BougeRV",
+      "cn": "",
+      "aliases": [
+        "BougeRV",
+        "BougeRV US"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US-targeted RV/solar power brand (Amazon); no US LCA; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Brii Biosciences",
+      "name": "Brii Biosciences",
+      "cn": "",
+      "aliases": [
+        "Brii Bio",
+        "BRII"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.briibio.com/en/careers/ (CN postings — Shenzhen markers)",
+      "us_signal": "US-inc structure (Brii Bio US Inc; founder/CEO Zhi Hong); careers page shows CN roles only; LCA 0; verify US hiring via LinkedIn",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Beijing/Shenzhen, China + Durham, NC, USA"
+    },
+    {
+      "brand": "Burning Rock Biotech",
+      "name": "Burning Rock Biotech",
+      "cn": "燃石医学",
+      "aliases": [
+        "Burning Rock Dx",
+        "Burning Rock DX LLC",
+        "BR Biotech"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.brbiotech.com/careers.php",
+      "us_signal": "BURNING ROCK DX LLC: LCA Irvine CA 2026 (Bioinformatics Scientist, Data Scientist); careers.php lists US roles (Director of BD — Biopharma Solutions, Associate Scientist) with Irvine/US markers",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Guangzhou, China"
+    },
+    {
+      "brand": "Bytebase",
+      "name": "Bytebase",
+      "cn": "贝十云计算",
+      "aliases": [
+        "Bytebase Inc",
+        "上海贝十云计算科技有限公司",
+        "bytebase.com"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "No public careers page (bytebase.com/about only; /careers 404) — hiring via GitHub/community channels",
+      "us_signal": "Open-source database DevOps/governance platform (database change management, access control, masking, MCP server); globally distributed team, global customers",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Distributed/remote (CN entity Shanghai 贝十云计算; global customer base)"
+    },
+    {
+      "brand": "CATL",
+      "name": "CATL (Contemporary Amperex Technology)",
+      "cn": "宁德时代新能源科技股份有限公司",
+      "aliases": [
+        "CATL",
+        "Contemporary Amperex Technology",
+        "宁德时代"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.catl-career.com/viewalljobs/?locale=en_US",
+      "us_signal": "catl-career.com US-locale portal live; LinkedIn 88 US roles; Michigan hiring (Ford LFP licensing + Marshall plant dispute); LCA shows only school homonym",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Ningde, China"
+    },
+    {
+      "brand": "CATLINK",
+      "name": "CATLINK",
+      "cn": "",
+      "aliases": [
+        "CATLINK",
+        "Catlink",
+        "CatLink"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Smart litter-box brand with US Amazon sales; no US LCA; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "CRRC MA",
+      "name": "CRRC MA (CRRC USA)",
+      "cn": "中车集团(美国马萨诸塞)",
+      "aliases": [
+        "CRRC",
+        "CRRC MA Corporation",
+        "CRRC Sifang America",
+        "中车",
+        "中国中车"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.crrcma.com/",
+      "us_signal": "crrcma.com live 200 with job_seekers section; LCA CRRC MA CORPORATION (11) + CRRC SIFANG AMERICA INC (3), active Oct 2026",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Beijing, China (US: Springfield MA railcar plant)"
+    },
+    {
+      "brand": "Canadian Solar",
+      "name": "Canadian Solar",
+      "cn": "阿特斯阳光电力集团",
+      "aliases": [
+        "Canadian Solar Inc",
+        "CSI Solar",
+        "CSI Solar Co Ltd",
+        "阿特斯"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": "workday:canadiansolar",
+      "careers_hint": "https://www.csisolar.com/na/career/",
+      "us_signal": "Workday board live: canadiansolar.wd5.myworkdayjobs.com/CanadianSolar 157 jobs (CXS POST verified); US+Germany+China roles",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Guelph, Canada + Suzhou, China (US: e-STORAGE/Matrix)"
+    },
+    {
+      "brand": "Cellular Biomedicine Group",
+      "name": "Cellular Biomedicine Group",
+      "cn": "西比曼生物",
+      "aliases": [
+        "CBMG",
+        "Cellular Biomedicine Group Inc"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "no live board found (site post-privatization)",
+      "us_signal": "Legacy: LCA CELLULAR BIOMEDICINE GROUP INC (Rockville MD, Regulatory & Program Mgmt Scientist) — old rows; company taken private 2021",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Rockville, MD, USA + Shanghai, China"
+    },
+    {
+      "brand": "Century Games",
+      "name": "Century Games",
+      "cn": "世纪华通旗下/自由星系(北京)",
+      "aliases": [
+        "Century Games",
+        "Century Game",
+        "Whiteout Survival developer",
+        "自由星系"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.centurygames.com/careers/",
+      "us_signal": "Remote-US roles verified: 'Bilingual Game Operations Support [Remote]' postings (SimplyHired/Glassdoor 2025); careers page = WordPress custom",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Beijing/Shanghai, China (US remote roles)"
+    },
+    {
+      "brand": "Changhong",
+      "name": "Changhong",
+      "cn": "长虹",
+      "aliases": [
+        "CHiQ",
+        "Changhong",
+        "Changhong America",
+        "长虹",
+        "长虹电器"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US sales entities (Changhong America / TV distribution); no LCA; no US board found. Careers = CN portal.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Mianyang, China"
+    },
+    {
+      "brand": "ChemPartner",
+      "name": "ChemPartner",
+      "cn": "睿智化学",
+      "aliases": [
+        "Shanghai ChemPartner",
+        "ChemPartner (a Pharmaron company)"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.chempartner.com/careers/",
+      "us_signal": "Careers page: 'new R&D Center of Excellence in Boston... expanding opportunities' (US expansion statement)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China (Pharmaron subsidiary)"
+    },
+    {
+      "brand": "China Construction America",
+      "name": "China Construction America (CSCEC)",
+      "cn": "中国建筑(美国)公司",
+      "aliases": [
+        "China Construction America",
+        "CCA",
+        "CSCEC Americas",
+        "中国建筑美国",
+        "China State Construction Engineering"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.chinaconstructionamericas.com/careers/",
+      "us_signal": "LCA CHINA CONSTRUCTION AMERICA OF SOUTH CAROLINA INC (29, active Oct 2026) + CCA INC; careers domain DNS-dead from this HK egress (verifiable via fleet/GHA)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "New York, USA (parent: Beijing CSCEC)"
+    },
+    {
+      "brand": "Cider",
+      "name": "Cider",
+      "cn": "喜德时尚(广州)",
+      "aliases": [
+        "Cider",
+        "shopcider.com",
+        "Cider Global Holding"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "LCA CIDER GLOBAL HOLDING LIMITED (2 rows, 2026); no careers page on site; US roles via LinkedIn",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Guangzhou, China + LA, USA (Chinese founders)"
+    },
+    {
+      "brand": "Cobo",
+      "name": "Cobo",
+      "cn": "库币/陀螺科技系",
+      "aliases": [
+        "Cobo",
+        "Cobo Custody",
+        "Cobo Global",
+        "Cobo Ventures"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.cobo.com/careers",
+      "us_signal": "Global remote roles (US-eligible per D-S25-2); no public board on standard ATS",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Singapore (founded Beijing)"
+    },
+    {
+      "brand": "Complete Genomics",
+      "name": "Complete Genomics (BGI/MGI)",
+      "cn": "华大系",
+      "aliases": [
+        "BGI",
+        "MGI Tech",
+        "MGI Americas",
+        "Complete Genomics Inc",
+        "BGI Genomics"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.completegenomics.com/ (Cloudflare-403 from this egress) + MGI Americas",
+      "us_signal": "COMPLETE GENOMICS INC: 45 LCA rows (San Jose CA; 2026 rows: Sr Systems Engineer, HR Generalist, Bioengineer) — active US hiring",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "San Jose, CA, USA (CG) / Shenzhen, China (BGI/MGI)"
+    },
+    {
+      "brand": "Conflux Network",
+      "name": "Conflux Network",
+      "cn": "树图区块链研究院",
+      "aliases": [
+        "Conflux",
+        "Conflux Network",
+        "树图",
+        "Conflux Foundation"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Distributed team incl US contributors; no public board found (greenhouse/lever/ashby all miss)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China / Singapore foundation"
+    },
+    {
+      "brand": "Continue.dev",
+      "name": "Continue.dev",
+      "cn": "",
+      "aliases": [
+        "Continue",
+        "continuedev"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://continue.dev (banner: 'Continue was acquired by Cursor')",
+      "us_signal": "N/A — acquired by Cursor",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US (YC W23)"
+    },
+    {
+      "brand": "Creality",
+      "name": "Creality",
+      "cn": "创想三维",
+      "aliases": [
+        "Creality",
+        "CREALITY INC",
+        "Creality 3D",
+        "创想"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.creality.com/pages/careers",
+      "us_signal": "LCA CREALITY INC 1 filing (11/2025) — US entity formed; US distribution (Creality US); careers page creality.com/pages/careers live (custom, no ATS detected). LinkedIn US roles limited.",
+      "lca_employers": [
+        "CREALITY INC"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Cutout.pro",
+      "name": "Cutout.pro",
+      "cn": "",
+      "aliases": [
+        "Cutout Pro",
+        "VerSpeC",
+        "cutout.pro"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "cutout.pro (no careers surface found)",
+      "us_signal": "Global AI visual-editing platform (photo background removal/retouch/avcleanup) with US/EMEA users",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Shanghai/Hong Kong, China (Chinese-founded)"
+    },
+    {
+      "brand": "Databend",
+      "name": "Databend",
+      "cn": "",
+      "aliases": [
+        "Databend Cloud",
+        "Databend Inc",
+        "databend.com"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.databend.com/join-us",
+      "us_signal": "join-us page live: 'Databend Cloud Platform Engineer (Remote) — Remote, Anywhere'; US footer address Las Vegas NV",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US entity Las Vegas, NV (732 S 6TH ST); remote-first global team"
+    },
+    {
+      "brand": "Dreo",
+      "name": "Dreo",
+      "cn": "",
+      "aliases": [
+        "Dreo",
+        "Dreo Home",
+        "Shenzhen Times Innovation Technology"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/dreo/jobs/",
+      "us_signal": "Top US Amazon appliance brand (fans/heaters/humidifiers, NYC-listed influencers); dreo.com careers paths 429/404; no US LCA found under 'Dreo'.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "EHang",
+      "name": "EHang",
+      "cn": "亿航智能",
+      "aliases": [
+        "EHang",
+        "EHang Holdings",
+        "亿航",
+        "EH216"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.ehang.com/talent/",
+      "us_signal": "US: regulatory pilot programs/partnerships only (EH216-S demo flights); no US entity hiring, no LCA, no US board. Careers = CN portal (Moka/feishu-class).",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Guangzhou, China"
+    },
+    {
+      "brand": "EMQ",
+      "name": "EMQ",
+      "cn": "杭州映云科技",
+      "aliases": [
+        "EMQX",
+        "EMQ Technologies",
+        "emqx.io",
+        "Hangzhou EMQ"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.emqx.com/en/careers",
+      "us_signal": "Careers page live: 'Technical Support Engineer - EMQX Cloud' based Europe but supporting Europe AND North America customers, requires English+Chinese fluency; global remote culture; no US-located role today",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Hangzhou, China + global (EMQ Inc?)"
+    },
+    {
+      "brand": "EVE Energy",
+      "name": "EVE Energy",
+      "cn": "惠州亿纬锂能股份有限公司",
+      "aliases": [
+        "EVE Energy",
+        "EVE Battery",
+        "亿纬锂能",
+        "EVE Energy North America Corporation"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "LCA: EVE ENERGY NORTH AMERICA CORPORATION (43) + EVE ENERGY US HOLDING LLC (25) + VENTURES INC (5) = 75 rows, VERY active 2026 (Kentucky battery plants)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Huizhou, China (US: Kentucky)"
+    },
+    {
+      "brand": "EcoFlow",
+      "name": "EcoFlow",
+      "cn": "深圳正浩创新科技",
+      "aliases": [
+        "ECOFLOW TECHNOLOGY INC",
+        "EF ECOFLOW",
+        "EcoFlow",
+        "EcoFlow Technology",
+        "EcoFlow Technology Inc",
+        "正浩创新"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": "feishu:ecoflow",
+      "careers_hint": "https://jobs.ecoflow.com/",
+      "us_signal": "LIVE feishu board (jobs.ecoflow.com CNAME ecoflow.jobs.feishu.cn, 194 jobs): 2 US roles (Field Sales Honolulu/Miami/Wildwood; Key Account BD Manager-New Home Division Irvine). LCA: ECOFLOW TECHNOLOGY INC 10 filings (2023+2026). US entity EcoFlow Technology Inc (LA/Irvine).",
+      "lca_employers": [
+        "ECOFLOW TECHNOLOGY INC"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Edifier",
+      "name": "Edifier",
+      "cn": "漫步者",
+      "aliases": [
+        "EDIFIER",
+        "漫步者科技",
+        "STAX (owned)",
+        "AirPulse"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.edifier.com/en/global/careers",
+      "us_signal": "US distribution (Edifier North America); no US LCA; no US board found. Careers = CN portal + LinkedIn.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Beijing, China"
+    },
+    {
+      "brand": "Elegoo",
+      "name": "Elegoo",
+      "cn": "智能派",
+      "aliases": [
+        "ELEGOO",
+        "Elegoo",
+        "智能派"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.elegoo.com/pages/careers",
+      "us_signal": "US sales + US warehouse (huge Amazon resin-printer brand); careers page Shopify 429; no US LCA; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "FeiyuTech",
+      "name": "FeiyuTech",
+      "cn": "飞宇科技",
+      "aliases": [
+        "FeiyuTech",
+        "Feiyu",
+        "飞宇",
+        "FeiyuPocket (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Gimbal brand with US storefront; no US LCA; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Guilin, China"
+    },
+    {
+      "brand": "FinalRound AI",
+      "name": "FinalRound AI",
+      "cn": "",
+      "aliases": [
+        "Final Round AI",
+        "Interview CoPilot",
+        "finalroundai"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.finalroundai.com/careers (embeds jobs.ashbyhq.com/finalroundai)",
+      "us_signal": "Careers page embeds an Ashby board (jobs.ashbyhq.com/finalroundai) — board exists but Ashby posting-API 404s for slug (needs JS-capable probe); ~$10M ARR; offices in US + Shanghai + Bangalore",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US (SF) + Shanghai + Bangalore offices"
+    },
+    {
+      "brand": "Firework",
+      "name": "Firework",
+      "cn": "",
+      "aliases": [
+        "Firework Video Commerce",
+        "Firework Inc",
+        "firework.com",
+        "FWRD"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://firework.com/careers (email: job@firework.com)",
+      "us_signal": "Careers page live (US HQ Palo Alto; roles via email job@firework.com — 'Don't see an open role? submit resume')",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Palo Alto / San Mateo, CA"
+    },
+    {
+      "brand": "Fish Audio",
+      "name": "Fish Audio",
+      "cn": "",
+      "aliases": [
+        "FishAudio",
+        "Fish Speech",
+        "fish.audio"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "fish.audio blog ('still hiring') — no public careers page found (/careers 404); hiring likely via email/community",
+      "us_signal": "$52M seed round; $21M ARR; 8M+ users; 22-person team scaling; partners LiveKit & Retell; enterprise (on-prem/HIPAA) demand",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US-incorporated remote-first (core team Chinese; started 'from our living room')"
+    },
+    {
+      "brand": "Fosi Audio",
+      "name": "Fosi Audio",
+      "cn": "",
+      "aliases": [
+        "Fosi Audio",
+        "FOSI"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Amazon hi-fi amp/DAC brand with US customers; no US entity/LCA/board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Fosun Pharma",
+      "name": "Fosun Pharma",
+      "cn": "复星医药",
+      "aliases": [
+        "Fosun Pharma USA Inc",
+        "Fosun Pharmaceutical",
+        "Shanghai Fosun Pharma"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://fosunpharma.com/en/careers/ (CN-centric; LinkedIn.cn outlink)",
+      "us_signal": "FOSUN PHARMA USA INC: LCA Lexington MA (Translational Medicine Scientist 2023) + Woburn MA (Sr Scientist 2023); FOSUN MANAGEMENT (US) INC NY (2022)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Fotor",
+      "name": "Fotor",
+      "cn": "恒图科技",
+      "aliases": [
+        "Fotor AI",
+        "Everimaging",
+        "成都恒图科技"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "fotor.com (CN hiring via 恒图科技 channels; no western ATS)",
+      "us_signal": "Global AI photo editor/design tool (US/EU users, subscription)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Chengdu, China (Everimaging/恒图科技)"
+    },
+    {
+      "brand": "Frontage Laboratories",
+      "name": "Frontage Laboratories",
+      "cn": "方达医药",
+      "aliases": [
+        "Frontage Holdings",
+        "Frontage Clinical Services",
+        "Frontage Laboratories Inc"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.frontagelab.com/about/careers/ -> ADP Workforce Now portal (cid=0fad767f-f389-40ea-b2d1-d8df05098476)",
+      "us_signal": "262 LCA rows 2026 (FRONTAGE CLINICAL SERVICES Princeton NJ, FRONTAGE LABORATORIES Exton/Chesterfield/Chicago) — the largest LCA footprint in this segment; Indeed shows 50 Exton PA jobs",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Exton, PA, USA (Chinese-owned)"
+    },
+    {
+      "brand": "Gamehaus",
+      "name": "Gamehaus",
+      "cn": "游戏屋(北京/深圳)",
+      "aliases": [
+        "Gamehaus",
+        "Gamehaus Games",
+        "Free-to-play publisher"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "gamehaus.com live 200 but /careers 404; no US hiring surface found",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai/Beijing, China"
+    },
+    {
+      "brand": "GenScript ProBio",
+      "name": "GenScript ProBio",
+      "cn": "药明? no - GenScript ProBio",
+      "aliases": [
+        "GenScript ProBio USA Inc",
+        "Probio"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.genscriptprobio.com/careers -> links to greenhouse board 'genscript' (department-filtered)",
+      "us_signal": "GENSCRIPT PROBIO USA INC: 9 LCA rows (Piscataway NJ x6, Chicago IL, Quincy MA, Middlesex NJ) — CGT CDMO US arm",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China (GenScript subsidiary)"
+    },
+    {
+      "brand": "Genetron Health",
+      "name": "Genetron Health",
+      "cn": "泛生子",
+      "aliases": [
+        "Genetron Corporation",
+        "Genetron Holdings"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://openpost.genetronhealth.com/social-recruitment/genetronhealth/47202 (Moka openpost, CN) + genetronhealth.com",
+      "us_signal": "US entity marker (Gaithersburg) on genetronhealth.com; Moka openpost social-recruitment board; LCA 0",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Beijing, China"
+    },
+    {
+      "brand": "GigaCloud Technology",
+      "name": "GigaCloud Technology",
+      "cn": "大健云仓",
+      "aliases": [
+        "GigaCloud",
+        "GCT",
+        "大健云仓",
+        "GigaCloud Technology USA Inc",
+        "GigaCloud Services Inc"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.gigacloudtech.com/careers/",
+      "us_signal": "LCA GIGACLOUD SERVICES INC (32) + GIGACLOUD TECHNOLOGY (USA) INC (14) = 46 rows, active Dec 2026; US warehouses nationwide",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "El Monte, USA (Shanghai roots; Nasdaq: GCT)"
+    },
+    {
+      "brand": "Govee",
+      "name": "Govee",
+      "cn": "",
+      "aliases": [
+        "Govee",
+        "GOVEE MOMENTS US TRADING LIMITED",
+        "Govee US",
+        "H6072 etc (product lines)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/govee/jobs/",
+      "us_signal": "LCA: GOVEE MOMENTS US TRADING LIMITED 5 filings (2023-2025) — active US entity; live US role evidence: 'Logistics Specialist Bilingual' Bellevue WA (ZipRecruiter, Govee employer page). No standard ATS; govee.com/pages/careers is Shopify (429 bot-guard).",
+      "lca_employers": [
+        "GOVEE MOMENTS US TRADING LIMITED"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Gree Electric",
+      "name": "Gree Electric",
+      "cn": "珠海格力电器股份有限公司",
+      "aliases": [
+        "Gree",
+        "Gree USA",
+        "格力电器"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US presence minimal (sales); gree.com/us 404; no US board",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Zhuhai, China (US: small sales offices)"
+    },
+    {
+      "brand": "Gree Electric Appliances",
+      "name": "Gree Electric Appliances",
+      "cn": "格力电器",
+      "aliases": [
+        "Gree",
+        "格力",
+        "Gree USA"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US sales/subsidiaries (Gree USA distribution); NO US LCA filings (h1bdata 'Gree' returns only unrelated Greek- homonyms); no US board. Careers = CN portal.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Zhuhai, China"
+    },
+    {
+      "brand": "Greptime",
+      "name": "Greptime",
+      "cn": "格睿科技",
+      "aliases": [
+        "Greptime Inc",
+        "GreptimeDB"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://greptime.com/careers (email-based)",
+      "us_signal": "Careers page live: 'Developer Advocate — Remote, Americas or Europe' with US 401(k)/US comp bands; 'team distributed across the US and China'",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Distributed US + China team"
+    },
+    {
+      "brand": "HUTCHMED",
+      "name": "HUTCHMED",
+      "cn": "和黄医药",
+      "aliases": [
+        "Hutchison MediPharma",
+        "HUTCHMED Limited",
+        "Chi-Med"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.hutch-med.com/career-opportunities/ (links out to LinkedIn)",
+      "us_signal": "US commercial footprint (Fruzaqla royalties, Takeda partnership; US team listings on LinkedIn company jobs); NO LCA records (uses partner/PD hires?)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai/Hong Kong, China"
+    },
+    {
+      "brand": "HaoYuan",
+      "name": "HaoYuan (MedChemExpress)",
+      "cn": "皓元医药",
+      "aliases": [
+        "MedChemExpress",
+        "MCE",
+        "Shanghai Haoyuan Chemexpress",
+        "ChemExpress"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.medchemexpress.com/careers.html (global; US/Intl roles)",
+      "us_signal": "MEDCHEMEXPRESS LLC: LCA Monmouth Junction NJ x2 + Santa Clara CA (Biochemist, Research Associate, Business Ops Specialist)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Happy Elements",
+      "name": "Happy Elements",
+      "cn": "乐元素科技(北京)股份有限公司",
+      "aliases": [
+        "Happy Elements",
+        "乐元素",
+        "Happy Elements Japan"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "No US roles found (China + Japan focus)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Beijing, China + Tokyo, Japan"
+    },
+    {
+      "brand": "Harbour BioMed",
+      "name": "Harbour BioMed",
+      "cn": "和铂医药",
+      "aliases": [
+        "Harbour Biomed US Inc",
+        "Harbour Antibodies",
+        "HBM Holdings",
+        "The HBM Therapeutics? no"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.harbourbiomed.com/recruitment (JS; /career page CN nav)",
+      "us_signal": "LCA HARBOUR BIOMED US INC 2026 x2 (Clinical Ops Exec Dir Boston MA $210k, Therapeutic Area Program Leader Cambridge MA $200k) + HARBOUR ANTIBODIES US INC (Natick MA); LinkedIn 'Harbour Biomed Jobs in United States'",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China (+ Cambridge/Boston MA US)"
+    },
+    {
+      "brand": "HashKey Group",
+      "name": "HashKey Group",
+      "cn": "数字资产集团(香港)",
+      "aliases": [
+        "HashKey Group",
+        "HashKey Capital",
+        "HashKey Exchange",
+        "HashKey Cloud"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Primarily HK/SG; US presence minimal",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Hong Kong"
+    },
+    {
+      "brand": "Henlius",
+      "name": "Henlius",
+      "cn": "复宏汉霖",
+      "aliases": [
+        "Shanghai Henlius Biotech",
+        "Henlius USA Inc"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.henlius.com/job-opportunities.html (CN)",
+      "us_signal": "HENLIUS USA INC: LCA Milpitas CA (Research Associate II, 2025)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "HeyTea",
+      "name": "HeyTea",
+      "cn": "喜茶",
+      "aliases": [
+        "HEYTEA",
+        "HEYTEA USA INC",
+        "HeyTea",
+        "Heytea USA Inc",
+        "喜茶",
+        "喜茶美国"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/heytea/jobs/",
+      "us_signal": "US stores (NYC/LA/Boston etc via HEYTEA USA INC); LCA: HEYTEA USA INC 12 filings (2025) — active US corporate hiring (store ops + HQ roles). No public ATS; LinkedIn surface.",
+      "lca_employers": [
+        "HEYTEA USA INC"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Hollyland",
+      "name": "Hollyland",
+      "cn": "",
+      "aliases": [
+        "Hollyland",
+        "Hollyland Technology",
+        "Hollyland North America",
+        "Solidcom (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/hollyland/jobs/",
+      "us_signal": "US market leader niche (wireless video for creators/film); LinkedIn shows 'Hollyland North America' roles surface; no US LCA; hollyland.com/pages/careers 404 — no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Innovent Biologics",
+      "name": "Innovent Biologics",
+      "cn": "信达生物",
+      "aliases": [
+        "Innovent",
+        "Innovent Biologics (Suzhou)"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://en.innoventbio.com/Careers (JS shell; CN board innoventbio.com)",
+      "us_signal": "LinkedIn: 1 US open role (2026); no LCA records; US presence minimal (BD/scientific affairs)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Suzhou, China"
+    },
+    {
+      "brand": "JA Solar",
+      "name": "JA Solar",
+      "cn": "晶澳太阳能科技股份有限公司",
+      "aliases": [
+        "JA Solar",
+        "JA Solar Technology",
+        "晶澳科技"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US sales office; minimal US hiring evidence",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Beijing/Ningjin, China (US: Pasadena CA sales)"
+    },
+    {
+      "brand": "JOINN Laboratories",
+      "name": "JOINN Laboratories",
+      "cn": "昭衍新药",
+      "aliases": [
+        "JOINN Biologics US",
+        "Biomere",
+        "JOINN Laboratories CA Inc"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://biomere.com/careers/ (US CRO Biomere, Worcester MA — Cloudflare 403 from this egress)",
+      "us_signal": "LCA JOINN LABORATORIES CA INC 2026 x2 (BD Manager, Windham NH?); US sites: Biomere Worcester MA + JOINN Biologics (CA); LinkedIn JOINN Biologics US Inc active",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Beijing, China"
+    },
+    {
+      "brand": "Jackery",
+      "name": "Jackery",
+      "cn": "",
+      "aliases": [
+        "Jackery",
+        "Jackery Explorer",
+        "Jackery Inc",
+        "华宝新能"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/jackery/jobs/",
+      "us_signal": "US-inc (Jackery Inc), Milpitas/San Jose CA HQ; LCA JACKERY INC 3 filings (2021/2022/2024). Own careers page jackery.com blocked probes (429 bot-guard) — LinkedIn is the visible surface.",
+      "lca_employers": [
+        "JACKERY INC"
+      ],
+      "origin": "us_chinese_founder",
+      "hq": "Milpitas/San Jose, CA, USA (Chinese-founded, Shenzhen R&D)"
+    },
+    {
+      "brand": "JinkoSolar",
+      "name": "JinkoSolar",
+      "cn": "晶科能源股份有限公司",
+      "aliases": [
+        "Jinko Solar",
+        "JinkoSolar US",
+        "JINKO SOLAR (US) INDUSTRIES INC",
+        "晶科能源"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "LCA JINKO SOLAR (US) INDUSTRIES INC: 27 rows — 26 filed Oct 2026 (active burst!)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shangrao, China (US: Jacksonville FL)"
+    },
+    {
+      "brand": "JuiceFS",
+      "name": "JuiceFS",
+      "cn": "",
+      "aliases": [
+        "Juicedata",
+        "JuiceFS Inc",
+        "juice"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.juicefs.com/en/careers (email-based applications)",
+      "us_signal": "Careers page live: 'Solutions Architect, North America' — remote within the United States, professional fluency in Mandarin Chinese + English required, collaborates with teams in North America and China",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Remote-first, US + China teams"
+    },
+    {
+      "brand": "Junshi Biosciences",
+      "name": "Junshi Biosciences",
+      "cn": "君实生物",
+      "aliases": [
+        "TopAlliance BioSciences",
+        "Junshi Biosciences USA",
+        "Shanghai Junshi Biosciences"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.junshipharma.com/en/ + https://www.topalliancebio.com/ (US arm; Cloudflare-gated)",
+      "us_signal": "US arm TopAlliance BioSciences (Rockville MD + Menlo Park CA): LCA TOPALLIANCE BIOSCIENCES INC x5 (CMC RA Sr Specialist, DBA etc.); Xueqiu founder-letter confirms 君实 US operation (25-yr US pharma veteran leading it); toripalimab US BLA team",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "LONGi Solar",
+      "name": "LONGi Solar",
+      "cn": "隆基绿能科技股份有限公司",
+      "aliases": [
+        "LONGi",
+        "LONGi Green Energy",
+        "LONGi Solar Technology (U.S.) Inc",
+        "隆基"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.longi.com/us/jobs/",
+      "us_signal": "US jobs page live (custom); LinkedIn 12 US roles; LONGi Solar Technology (U.S.) Inc on Indeed",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Xi'an, China (US: Wilmington DE + sales)"
+    },
+    {
+      "brand": "LaNova Medicines",
+      "name": "LaNova Medicines",
+      "cn": "礼新生物",
+      "aliases": [
+        "LaNova Therapeutics",
+        "Shanghai LaNova"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.lanovamedicines.com/en/careers (CN roles)",
+      "us_signal": "No US roles found on careers page (no US markers); LCA 0; 'Lanova US jobs' LinkedIn results are LivaNova homonyms",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Laifen",
+      "name": "Laifen",
+      "cn": "徕芬科技",
+      "aliases": [
+        "Laifen",
+        "徕芬",
+        "Laifen Technology"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.laifen.com/pages/careers",
+      "us_signal": "US sales (laifen.com US storefront, Amazon); no US LCA; careers page unreachable at probe (000/timeout). No US board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "LaserPecker",
+      "name": "LaserPecker",
+      "cn": "",
+      "aliases": [
+        "LaserPecker",
+        "LP4 (product)",
+        "Shenzhen LaserPecker"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.laserpecker.com/pages/careers",
+      "us_signal": "US sales (Amazon top desktop-laser brand); careers page Shopify 429 at probe; no LCA; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "LiTime",
+      "name": "LiTime",
+      "cn": "",
+      "aliases": [
+        "LiTime",
+        "Ampere Time (former)",
+        "LiTime US"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US-focused LiFePO4 battery Amazon brand (formerly Ampere Time); no US LCA under LiTime/Ampere Time; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "LianLian Global",
+      "name": "LianLian Global",
+      "cn": "连连数字科技股份有限公司",
+      "aliases": [
+        "LianLian",
+        "Lianlian Digital",
+        "连连数字",
+        "LianLian Pay"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://global.lianlianpay.com/company/join",
+      "us_signal": "LinkedIn 24 worldwide roles; US entity LianLian (US) exists; LCA no rows under 'LianLian'",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Hangzhou, China"
+    },
+    {
+      "brand": "LightSpeed Studios",
+      "name": "LightSpeed Studios",
+      "cn": "腾讯光子工作室群(国际)",
+      "aliases": [
+        "LightSpeed Studios",
+        "LightSpeed LA",
+        "光子工作室",
+        "Tencent LightSpeed"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.lightspeedstudios.com/",
+      "us_signal": "LightSpeed LA + other US studios hire US-based AAA dev roles (LinkedIn surface); site 525 from this egress",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen/Los Angeles, USA (Tencent)"
+    },
+    {
+      "brand": "Lilith Games",
+      "name": "Lilith Games",
+      "cn": "上海莉莉丝科技股份有限公司",
+      "aliases": [
+        "Lilith Games",
+        "Lilith",
+        "莉莉丝",
+        "Farlight 84",
+        "AFK Arena"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://jobs.lilith.com/",
+      "us_signal": "LinkedIn shows 4 US jobs; jobs.lilith.com = custom SPA (CN-focused)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Lilysilk",
+      "name": "Lilysilk",
+      "cn": "苏州丝赋/Lilysilk",
+      "aliases": [
+        "Lilysilk",
+        "LILYSILK",
+        "丝绸家纺"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "No careers page (404); no LCA; US roles minimal (remote support)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Suzhou, China + UK (Chinese founder)"
+    },
+    {
+      "brand": "Liugong",
+      "name": "Liugong (Guangxi LiuGong Machinery)",
+      "cn": "广西柳工机械股份有限公司",
+      "aliases": [
+        "Liugong",
+        "LiuGong North America",
+        "柳工机械"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.liugongna.com/jobs-and-careers/",
+      "us_signal": "Liugong NA careers page live (custom); LinkedIn 19 US roles; no LCA rows",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Liuzhou, China (US: Liugong NA)"
+    },
+    {
+      "brand": "Luye Pharma",
+      "name": "Luye Pharma",
+      "cn": "绿叶制药",
+      "aliases": [
+        "Luye Life Sciences Group",
+        "Luye Boston R&D LLC",
+        "Luye Pharmaceutical"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.luye.com/en/joinus.php",
+      "us_signal": "LUYE BOSTON R&D LLC: LCA Woburn MA (Sr Scientist 2022); US Boston R&D center",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Yantai/Shanghai, China"
+    },
+    {
+      "brand": "MINISO",
+      "name": "MINISO",
+      "cn": "名创优品集团",
+      "aliases": [
+        "MINISO",
+        "Miniso USA",
+        "名创优品",
+        "MINISO FT Technologies LLC"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.miniso-us.com/careers",
+      "us_signal": "US careers page live → embeds iCIMS board (careers-miniso-us.icims.com, live 200); LCA MINISO FT TECHNOLOGIES LLC (21) + MINISO DEPOT CA INC (9)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Guangzhou, China (US: 300+ stores)"
+    },
+    {
+      "brand": "MINISO Group",
+      "name": "MINISO Group",
+      "cn": "名创优品",
+      "aliases": [
+        "MINISO",
+        "名创优品",
+        "MINISO Depot",
+        "MNSO",
+        "Top Toy"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/miniso/jobs/",
+      "us_signal": "US retail footprint (MINISO USA stores); LCA: MINISO DEPOT CA INC 9 filings (2026) — active sponsor for US store ops. (MINISOFT TECHNOLOGIES LLC = unrelated homonym, excluded.)",
+      "lca_employers": [
+        "MINISO DEPOT CA INC"
+      ],
+      "origin": "china",
+      "hq": "Guangzhou, China"
+    },
+    {
+      "brand": "Makeblock",
+      "name": "Makeblock",
+      "cn": "童心制物",
+      "aliases": [
+        "Makeblock",
+        "xTool",
+        "Makeblock Co",
+        "童心制物",
+        "xTool Technology"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": "feishu:makeblock",
+      "careers_hint": "https://www.makeblock.com/pages/careers",
+      "us_signal": "LIVE feishu board (makeblock.jobs.feishu.cn, 192 jobs; slug 'xtool' resolves to the same portal): 2 US roles in Mountain View CA (Event Marketing Manager, Field Service Engineer (US)). No LCA filings under Makeblock.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Mammotion",
+      "name": "Mammotion",
+      "cn": "库犸",
+      "aliases": [
+        "Mammotion",
+        "MAMMOTION",
+        "库犸科技",
+        "LUBA (product)",
+        "YUKA (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": "feishu:mammotion",
+      "careers_hint": "https://www.mammotion.com/pages/careers",
+      "us_signal": "LIVE feishu board (mammotion.jobs.feishu.cn, 122 jobs): 8 US roles in Chino CA — Process Quality Engineer, FAE, Regional Sales Manager, field test engineer, Key Account Manager, Key Account Support Specialist, Logistics Specialist (+ DE/AU rows). No LCA filings.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Mask Network",
+      "name": "Mask Network",
+      "cn": "罕言科技(上海)",
+      "aliases": [
+        "Mask Network",
+        "Maskbook",
+        "Next.ID",
+        "罕见智能"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://mask.io/jobs",
+      "us_signal": "Remote-first team; US contributors; no public ATS board found",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China (distributed)"
+    },
+    {
+      "brand": "Medicilon",
+      "name": "Medicilon",
+      "cn": "美迪西",
+      "aliases": [
+        "Shanghai Medicilon",
+        "Medicilon USA Corp"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.medicilon.com/ (CN careers; US via contact)",
+      "us_signal": "LCA MEDICILON USA CORP 2026 x2 (BD Engineer, Sunnyvale CA)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Merach",
+      "name": "Merach",
+      "cn": "麦瑞克",
+      "aliases": [
+        "Merach",
+        "麦瑞克",
+        "Merach Tech"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Top Amazon fitness-equipment brand (under-desk treadmills/exercise bikes) targeting US; no US LCA; no US board found (merach.com careers paths 404).",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Metanovas Biotech",
+      "name": "Metanovas Biotech",
+      "cn": "",
+      "aliases": [
+        "Metanovas",
+        "METANOVA LLC"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.metanovas.com/ (minimal landing site)",
+      "us_signal": "METANOVAS BIOTECH: LCA Mountain View CA (Bioinformatics Data Analyst, 2022+2024) x3; METANOVA LLC Arcadia CA",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Mountain View, CA, USA"
+    },
+    {
+      "brand": "MeterSphere",
+      "name": "MeterSphere",
+      "cn": "飞致云",
+      "aliases": [
+        "MeterSphere",
+        "FIT2CLOUD 飞致云",
+        "开源持续测试平台"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://metersphere.com + FIT2CLOUD CN hiring channels (no western ATS)",
+      "us_signal": "None found (CN-only hiring) — recorded per D-S25 loosened bar",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Beijing, China (FIT2CLOUD 飞致云)"
+    },
+    {
+      "brand": "MicroPort Scientific",
+      "name": "MicroPort Scientific",
+      "cn": "微创医疗",
+      "aliases": [
+        "MicroPort",
+        "MicroPort Orthopedics",
+        "MicroPort NaviBot",
+        "MicroPort NeuroTech"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://microport.com/careers/ + https://www.microportortho.com/about-us/microport-orthopedics-careers/careers-north-america (Arlington TN; TLS-blocked from this egress) + https://www.microportsurgical.com/talent/",
+      "us_signal": "MicroPort Orthopedics (ex-Wright Medical, Arlington TN): 6 US LinkedIn jobs; US subsidiaries (Orthopedics/Surgical) with own career pages; LCA 0 (uses own portals)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Midea America",
+      "name": "Midea America",
+      "cn": "美的集团(美国)",
+      "aliases": [
+        "Midea",
+        "Midea America Corporation",
+        "美的",
+        "Midea Group"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://midea.hire.trakstar.com/",
+      "us_signal": "Trakstar board live 200 (midea.hire.trakstar.com 'Jobs at Midea'); midea.com/us/careers live; LinkedIn 55 US roles; LCA MIDEA AMERICA CORPORATION + MIDEA EMERGING TECHNOLOGY CO LTD (5)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Foshan, China (US: Parsippany NJ + Louisville KY)"
+    },
+    {
+      "brand": "Midea Group",
+      "name": "Midea Group",
+      "cn": "美的集团",
+      "aliases": [
+        "Midea",
+        "美的",
+        "Midea America Corp",
+        "MIDEA AMERICA CORPORATION",
+        "Midea Emerging Technology",
+        "Comfee",
+        "Toshiba appliances (licensed)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.midea.com/us/careers",
+      "us_signal": "LCA: MIDEA AMERICA CORPORATION (1) + MIDEA EMERGING TECHNOLOGY CO LTD (4 filings). US careers page midea.com/us/careers live (custom); LinkedIn shows 55 'Jobs At Midea' US roles + 41 Midea America Corp roles; careers.midea.com = CN campus SPA (custom, no ATS).",
+      "lca_employers": [
+        "MIDEA EMERGING TECHNOLOGY CO LTD"
+      ],
+      "origin": "china",
+      "hq": "Foshan, China"
+    },
+    {
+      "brand": "Mindray",
+      "name": "Mindray",
+      "cn": "迈瑞医疗",
+      "aliases": [
+        "Mindray North America",
+        "Mindray DS USA",
+        "Shenzhen Mindray Bio-Medical Electronics"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.mindray.com/na/careers/ (US) + https://mindray.jobs.hr.cloud.sap/ (SAP SuccessFactors global) + https://recruiting.paylocity.com/recruiting/jobs/All/de4f3c8e-1679-4dad-a21b-a3ebaf254893/Mindray-North-America",
+      "us_signal": "Mindray North America (Mahwah NJ): 10 live US roles on Paylocity board (Field Service Rep, Clinical Solutions Specialist, Install PM — all US, many fully remote); LCA MINDRAY DS USA INC 2026",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Minisforum",
+      "name": "Minisforum",
+      "cn": "",
+      "aliases": [
+        "Minisforum",
+        "MINISFORUM",
+        "AtomMan (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/minisforum/jobs/",
+      "us_signal": "Mini-PC brand with US storefront + US Amazon; no US LCA; careers page Shopify 429; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Guangzhou, China"
+    },
+    {
+      "brand": "Mixue Bingcheng",
+      "name": "Mixue Bingcheng",
+      "cn": "蜜雪冰城股份有限公司",
+      "aliases": [
+        "Mixue",
+        "MIXUE Ice Cream & Tea",
+        "蜜雪冰城",
+        "Mixue Group"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US stores opening 2025+ (Brooklyn Indeed jobs; 4000+ US jobs on LinkedIn mostly franchise noise); no corporate US board",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Zhengzhou, China (US: Brooklyn NY + expanding 2025+)"
+    },
+    {
+      "brand": "Mixue Group",
+      "name": "Mixue Group",
+      "cn": "蜜雪冰城",
+      "aliases": [
+        "MIXUE",
+        "蜜雪冰城",
+        "MIXUE USA",
+        "2097.HK",
+        "Ice Cream & Tea"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://join.mixueusfranchise.com/",
+      "us_signal": "US debut: first US store Hollywood Dec 2025 (PR Newswire + China Daily); franchise recruiting live at join.mixueusfranchise.com (store locator 'Open & Coming Soon 2026'). No LCA yet; hiring = franchise/store-level.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Zhengzhou, China"
+    },
+    {
+      "brand": "Moondrop",
+      "name": "Moondrop",
+      "cn": "水月雨",
+      "aliases": [
+        "Moondrop",
+        "水月雨",
+        "Chuwi? no (unrelated)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Global IEM (in-ear-monitor) audio brand with US fanbase/resellers; no US entity/LCA/board signal. Careers = CN (Taobao/BOSS class).",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Chengdu, China"
+    },
+    {
+      "brand": "More Health",
+      "name": "More Health",
+      "cn": "",
+      "aliases": [
+        "MORE Health Inc"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://morehealth.com/ (no careers page found; about-us/our-story live)",
+      "us_signal": "LCA MORE HEALTH INC: 22 rows (San Mateo CA case manager 107k; Azusa CA; Houston TX; NY) — HOMONYM CAVEAT: some rows look like an unrelated healthcare-nonprofit mix; verify employer address before trusting all rows",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Mateo, CA, USA + Beijing/Shanghai, China"
+    },
+    {
+      "brand": "Morph AI",
+      "name": "Morph AI",
+      "cn": "",
+      "aliases": [
+        "Morph AI 影视工作台",
+        "mymorph.cn",
+        "app.mymorph.cn"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "app.mymorph.cn (product surface; no careers page found)",
+      "us_signal": "AI-native video production workflow ('影视工作台'); overseas customers incl German TV, Japan local tourism boards, South Indian film companies; global revenue in millions USD per QQ 'AI出海新锐15强'",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "China-registered, overseas-market-first (customers in Germany/Japan/India)"
+    },
+    {
+      "brand": "Motiff",
+      "name": "Motiff",
+      "cn": "妙多",
+      "aliases": [
+        "Motiff AI",
+        "妙多科技",
+        "Kanyun Software",
+        "看云软件"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.motiff.com (global site; careers page exists but empty/JS — hiring via LinkedIn & CN channels; CN site miaoduo.com)",
+      "us_signal": "Global-market AI-powered professional UI design tool (Figma-class competitor); Singapore hiring per press; global remote OK",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Beijing / Singapore (Chinese team)"
+    },
+    {
+      "brand": "Neakasa",
+      "name": "Neakasa",
+      "cn": "",
+      "aliases": [
+        "Neakasa",
+        "Neakasa Home"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US-targeted pet-appliance Amazon brand (grooming vacuums); careers page Shopify bot-guard (429); no US LCA; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Notta",
+      "name": "Notta",
+      "cn": "",
+      "aliases": [
+        "Notta AI",
+        "Notta Inc",
+        "NottaMemo"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://global.notta.ai (careers dead); notta.ai/en/careers 404",
+      "us_signal": "July 2025: raised $6.3M explicitly to 'storm America' (US market expansion) — US hiring ramp",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Tokyo, Japan (US expansion 2025)"
+    },
+    {
+      "brand": "Olight",
+      "name": "Olight",
+      "cn": "",
+      "aliases": [
+        "Olight",
+        "OLIGHTSTORE USA INC",
+        "Olight Store US",
+        "Baton (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/olight/jobs/",
+      "us_signal": "LCA: OLIGHTSTORE USA INC 6 filings (2021-2025) — US entity hires (flashlight brand, US fan community). No public board found.",
+      "lca_employers": [
+        "OLIGHTSTORE USA INC"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "OncoC4",
+      "name": "OncoC4",
+      "cn": "",
+      "aliases": [
+        "OncoC4 Inc",
+        "NextCure? no — OncoC4"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.oncoc4.com/en/careers/job-opportunities/",
+      "us_signal": "Rockville MD HQ + Beijing ops; EN careers page live (server-rendered table: 1 open role 'Quality Assurance Auditor' Beijing, Sep 2026); 'United States' site markers; LCA 0",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Rockville, MD, USA + Beijing, China"
+    },
+    {
+      "brand": "Paper Games",
+      "name": "Paper Games (Infold)",
+      "cn": "苏州叠纸网络科技股份有限公司",
+      "aliases": [
+        "Paper Games",
+        "Papergames",
+        "Infold Games",
+        "叠纸游戏",
+        "Infold"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://career.infoldgames.com/EN",
+      "us_signal": "Infold Games careers SPA live (custom, own CDN assets); LinkedIn 2 US roles (Papergames Infold)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Suzhou/Shanghai, China (Infold = overseas brand)"
+    },
+    {
+      "brand": "PatPat",
+      "name": "PatPat",
+      "cn": "杭州帕特信息技术(童装DTC)",
+      "aliases": [
+        "PatPat",
+        "PatPat US"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "CF-walled (403 'Just a moment'); US roles via LinkedIn; no LCA rows",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Mountain View, USA + Guangzhou, China (Chinese founders)"
+    },
+    {
+      "brand": "Petkit",
+      "name": "Petkit",
+      "cn": "小佩",
+      "aliases": [
+        "PETKIT",
+        "小佩网络科技",
+        "Petkit US",
+        "PETKIT SMART TECHNOLOGY LIMITED"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/petkit_/jobs/",
+      "us_signal": "LCA: PETKIT SMART TECHNOLOGY LIMITED 1 filing (2023); US sales entity + Amazon pet-tech brand; petkit.com/careers 404 (pages path 429) — no public board found.",
+      "lca_employers": [
+        "PETKIT SMART TECHNOLOGY LIMITED"
+      ],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Petlibro",
+      "name": "Petlibro",
+      "cn": "",
+      "aliases": [
+        "PETLIBRO",
+        "Petlibro US",
+        "PETLIBRO Inc"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.petlibro.com/pages/careers",
+      "us_signal": "US-inc Chinese-founded pet-tech brand (aVenture: Santa Clara CA); top Amazon smart-feeder brand; careers page rate-limited (429) at probe; LinkedIn company/jobs surface; no LCA filings found.",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Santa Clara, CA, USA (Chinese-founded; Shenzhen supply/design)"
+    },
+    {
+      "brand": "Phanes Therapeutics",
+      "name": "Phanes Therapeutics",
+      "cn": "",
+      "aliases": [
+        "Phanes",
+        "phanesthera"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.phanesthera.com/careers/ (Cloudflare challenge from this egress)",
+      "us_signal": "San Diego ADC/immuno-onc biotech; clinical-stage (spevatamig + Merck KEYTRUDA collab); LCA PHANES THERAPEUTICS 1 row (Principal Scientist, San Diego 2021)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Diego, CA, USA"
+    },
+    {
+      "brand": "PharmaBlock",
+      "name": "PharmaBlock",
+      "cn": "药石科技",
+      "aliases": [
+        "PharmaBlock USA Inc",
+        "PharmaBlock Sciences",
+        "Nanjing PharmaBlock"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.pharmablock.com/ (US site root 'PharmaBlock USA Inc', Hatfield/West Chester PA)",
+      "us_signal": "PHARMABLOCK (USA) INC: 17 LCA rows — Hatfield PA (Sales Dir BD, Catalog Data Analyst), Hayward CA (Sales Dir), West Chester PA (Process Chemist II)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Nanjing, China"
+    },
+    {
+      "brand": "Pharmaron",
+      "name": "Pharmaron",
+      "cn": "康龙化成",
+      "aliases": [
+        "Pharmaron US Inc",
+        "Pharmaron Beijing",
+        "Pharmaron US Clinical Services",
+        "Pharmaron Boston Lab Services"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://careerssearch.pharmaron.com/ (Tribepad global board) + https://pharmaron.isolvedhire.com/jobs/ (isolved, US)",
+      "us_signal": "3 US legal entities 2026 LCA (PHARMARON BOSTON LAB SERVICES Woburn MA, PHARMARON GERMANTOWN LAB SERVICES MD, PHARMARON US CLINICAL SERVICES Somerset/Piscataway NJ); LinkedIn 36 US open roles",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Beijing, China"
+    },
+    {
+      "brand": "PicWish",
+      "name": "PicWish",
+      "cn": "网旭科技",
+      "aliases": [
+        "PicWish AI",
+        "深圳市网旭科技",
+        "picwish.com"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "picwish.com (no careers surface found)",
+      "us_signal": "Global AI image editing SaaS (background remover, upscale, portrait gen) with US/EMEA users",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Shenzhen, China (网旭科技 Wangxu Technology)"
+    },
+    {
+      "brand": "PingPong",
+      "name": "PingPong",
+      "cn": "乒乓智能技术(杭州)有限公司",
+      "aliases": [
+        "PingPong Global",
+        "PingPong Payments",
+        "乒乓智能",
+        "PingPongX"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.pingpongx.com/global/career",
+      "us_signal": "Custom career board w/ career-detail pages (EU/UK live; account-manager-us page exists); LinkedIn 10 US open roles",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Hangzhou, China (US: Santa Clara CA / Elmhurst NY)"
+    },
+    {
+      "brand": "PixVerse",
+      "name": "PixVerse",
+      "cn": "爱诗科技",
+      "aliases": [
+        "PixVerse AI",
+        "北京爱诗科技",
+        "Aisphere",
+        "爱诗智能"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://pixverse.ai/en/careers (JS-rendered 'Join Us' page; jobs also on LinkedIn) + CN entity Feishu board aisphere.jobs.feishu.cn",
+      "us_signal": "LinkedIn job: 'Account Executive — United States' at PixVerse; global AI video generator (V-series models, real-time world model) targeting US/EMEA creators",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Beijing, China + global product (US market focus)"
+    },
+    {
+      "brand": "Polestar",
+      "name": "Polestar",
+      "cn": "极星(吉利旗下)",
+      "aliases": [
+        "Polestar",
+        "Polestar Automotive",
+        "Polestar USA",
+        "极星"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.polestar.com/us/careers/",
+      "us_signal": "US careers site live (JS app); LCA POLESTAR AUTOMOTIVE USA INC + POLESTAR INSIGHTS INC (4 rows); 146 US jobs on LinkedIn",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Gothenburg, Sweden (Geely-owned; US: Mahwah NJ + Palo Alto)"
+    },
+    {
+      "brand": "Pollo AI",
+      "name": "Pollo AI",
+      "cn": "",
+      "aliases": [
+        "Pollo",
+        "PolloAI",
+        "pollo.ai"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://pollo.ai/about-us (no ATS; hiring channels unclear)",
+      "us_signal": "All-in-one global AI video/image generation platform (aggregates MiniMax H3/Seedance/Kling/GPT-Image models) sold to US/EMEA users",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Global (Chinese-founded; Singapore/HK-linked entity)"
+    },
+    {
+      "brand": "Polymaker",
+      "name": "Polymaker",
+      "cn": "",
+      "aliases": [
+        "Polymaker",
+        "Polymaker LLC",
+        "POLYMAKER 3D"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.polymaker.com/careers",
+      "us_signal": "LCA POLYMAKER LLC 1 filing (2022) — US entity; polymaker.com/careers live (HTTP 200, static/email-apply, no ATS); US team small (NY/Brooklyn class).",
+      "lca_employers": [
+        "POLYMAKER LLC"
+      ],
+      "origin": "us_chinese_founder",
+      "hq": "Shanghai, China + US office (Chinese-founded)"
+    },
+    {
+      "brand": "Porton Pharma Solutions",
+      "name": "Porton Pharma Solutions",
+      "cn": "博腾股份",
+      "aliases": [
+        "Porton",
+        "Porton USA LLC",
+        "Chongqing Porton"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.portonpharma.com/career (CN)",
+      "us_signal": "PORTON USA LLC: LCA Cranbury NJ 2026 x2 (Logistician, Project Management Specialist) + San Diego CA BD 2025 x3",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Chongqing, China"
+    },
+    {
+      "brand": "PuppyGraph",
+      "name": "PuppyGraph",
+      "cn": "",
+      "aliases": [
+        "PuppyGraph Inc",
+        "Puppy Graph"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.puppygraph.com (no careers page; community Slack)",
+      "us_signal": "US company; no live board (puppygraph.com/careers 404)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US (San Francisco Bay Area)"
+    },
+    {
+      "brand": "Qbit",
+      "name": "Qbit",
+      "cn": "Qbit(全球资金管理)",
+      "aliases": [
+        "Qbit",
+        "Qbit Network",
+        "Qbit Pay"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "qbitnetwork.com live 200 (CN-language fintech platform); US hiring unclear; no board on standard ATS",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China (US presence reported)"
+    },
+    {
+      "brand": "RSS3",
+      "name": "RSS3",
+      "cn": "",
+      "aliases": [
+        "RSS3 Labs",
+        "RSS3 protocol",
+        "rss3.io"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "No careers page/board found — GitHub-adjacent hiring",
+      "us_signal": "Remote-first open-information-layer web3 protocol with global contributors (incl US)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Distributed/remote-first (Singapore-linked; founder Chinese)"
+    },
+    {
+      "brand": "Recurrent Energy",
+      "name": "Recurrent Energy",
+      "cn": "阿特斯旗下Recurrent",
+      "aliases": [
+        "Recurrent Energy",
+        "Recurrent Energy Development Holdings"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": "workday:recurrentenergy",
+      "careers_hint": "https://recurrentenergy.com/careers/",
+      "us_signal": "Workday board live: recurrentenergy.wd12.myworkdayjobs.com/RecurrentEnergy 9 jobs (US solar dev roles: Blythe CA, finance, DevOps)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Austin, USA (Canadian Solar/CSI subsidiary)"
+    },
+    {
+      "brand": "Regor Therapeutics",
+      "name": "Regor Therapeutics",
+      "cn": "",
+      "aliases": [
+        "Regor Therapeutics Group",
+        "璎? unverified CN name"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "careers via LinkedIn (no own board reachable)",
+      "us_signal": "Dual Shanghai + San Diego ops (seed: ex-Hengrui founders); LCA 0; regortx.com dead from this egress (000)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China + San Diego, CA, USA"
+    },
+    {
+      "brand": "Renogy",
+      "name": "Renogy",
+      "cn": "",
+      "aliases": [
+        "Renogy",
+        "Renogy HQ",
+        "Renogy Industries"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/renogy/jobs/",
+      "us_signal": "Chinese-founded US solar brand (HQ CA, CN manufacturing/R&D per loose bar); renogy.com careers 429 (Shopify guard); no LCA filings found under 'Renogy'.",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US (California; Chinese-founded Yi Li) + China ops"
+    },
+    {
+      "brand": "Renpho",
+      "name": "Renpho",
+      "cn": "",
+      "aliases": [
+        "Renpho",
+        "Renpho US",
+        "Renpho Health"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/renpho/jobs/",
+      "us_signal": "Top Amazon massage/smart-scale brand; US-inc (Chinese-founded); renpho.com/pages/careers is Shopify (429 bot-guard) — no board accessible; no LCA filings found under 'Renpho'.",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US (Chinese-founded; Shenzhen product ops)"
+    },
+    {
+      "brand": "Reolink",
+      "name": "Reolink",
+      "cn": "睿联技术",
+      "aliases": [
+        "Reolink",
+        "RLC",
+        "Argus (product line)",
+        "睿联"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.reolink.com/about/careers/",
+      "us_signal": "US sales + support + engineering per segment brief; careers page /about/careers 404s at probe time; hiring surface = LinkedIn (Reolink US roles incl. Houston?). No LCA.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Rokid",
+      "name": "Rokid",
+      "cn": "Rokid",
+      "aliases": [
+        "Rokid",
+        "ROKID INC",
+        "若琪",
+        "Rokid AR"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.rokid.com/",
+      "us_signal": "LCA: ROKID INC 4 filings (2021/2023/2025) — real US entity hiring; US AR-glasses distribution. No public board found (careers = CN portal).",
+      "lca_employers": [
+        "ROKID INC"
+      ],
+      "origin": "china",
+      "hq": "Hangzhou, China"
+    },
+    {
+      "brand": "SF Express",
+      "name": "SF Express (International US)",
+      "cn": "顺丰控股股份有限公司",
+      "aliases": [
+        "SF Express",
+        "SF International",
+        "顺丰速运",
+        "SF EXPRESS CORPORATION"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.sf-international.com/us/en/about/careers",
+      "us_signal": "LCA SF EXPRESS CORPORATION 57 rows (28 in Oct 2026 alone); US ops across CA/NJ/TX; careers page custom",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China (US: City of Industry CA)"
+    },
+    {
+      "brand": "Sany America",
+      "name": "Sany America",
+      "cn": "三一重工(美国)",
+      "aliases": [
+        "Sany America Inc",
+        "SANY America",
+        "三一美国",
+        "Sany Heavy Industry"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.sanyamerica.com/careers/",
+      "us_signal": "Careers page live (custom); LinkedIn 37 US open roles; LCA SANY AMERICA INC 5 rows (active 2026)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Peachtree City, GA, USA (parent: Changsha)"
+    },
+    {
+      "brand": "Seasun Games",
+      "name": "Seasun Games",
+      "cn": "西山居(金山软件旗下)",
+      "aliases": [
+        "Seasun Games",
+        "Seasun",
+        "西山居",
+        "Kingsoft Seasun"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "No US hiring surface found; Kingsoft sub",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Zhuhai, China"
+    },
+    {
+      "brand": "SelectDB",
+      "name": "SelectDB",
+      "cn": "飞轮科技",
+      "aliases": [
+        "SelectDB Inc",
+        "北京飞轮数据科技有限公司",
+        "飞轮科技",
+        "Apache Doris commercial",
+        "cn.selectdb.com"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.selectdb.com/about + cn.selectdb.com (CN-channel hiring; no western ATS found)",
+      "us_signal": "Enterprise OLAP / Apache Doris commercial vendor ('面向 Agent 的极速分析数据库') with global marketing site; US hiring surface not found",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Beijing, China (北京飞轮数据科技有限公司) + global/US-facing product"
+    },
+    {
+      "brand": "Selleck Chemicals",
+      "name": "Selleck Chemicals",
+      "cn": "",
+      "aliases": [
+        "Selleck Chemicals LLC",
+        "selleckchem"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://selleckchem.com/career.html",
+      "us_signal": "LCA SELLECK CHEMICALS LLC: Houston TX (Chemist 2022+2025, Statistician 2020) x3",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Houston, TX, USA"
+    },
+    {
+      "brand": "Sengled",
+      "name": "Sengled",
+      "cn": "生迪",
+      "aliases": [
+        "Sengled",
+        "Sengled USA",
+        "生迪光电"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US smart-bulb brand (Amazon/Walmart retail); no US LCA; no US board found. Careers = CN portal.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Sharge",
+      "name": "Sharge",
+      "cn": "闪极科技",
+      "aliases": [
+        "Sharge",
+        "Shargeek",
+        "闪极"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": "feishu:sharge",
+      "careers_hint": "https://www.sharge.com/",
+      "us_signal": "LIVE feishu board (sharge.jobs.feishu.cn, HTTP 200, 0 open jobs). Global charging brand (Shark/eGo bags). No US LCA.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Sharkmob",
+      "name": "Sharkmob",
+      "cn": "(腾讯全资瑞典工作室)",
+      "aliases": [
+        "Sharkmob",
+        "Sharkmob AB"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://career.sharkmob.com/",
+      "us_signal": "EU/UK hiring only (remote-EU roles); no US roles — note only",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Malmö/London, UK offices (Tencent-owned)"
+    },
+    {
+      "brand": "Shokz",
+      "name": "Shokz",
+      "cn": "韶音科技",
+      "aliases": [
+        "Shokz",
+        "AfterShokz",
+        "韶音",
+        "Shokz Inc",
+        "OpenRun (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/shokz/jobs/",
+      "us_signal": "Dominant US bone-conduction headphone brand; US commercial team (marketing/sales) per LinkedIn; no US LCA filings under Shokz/AfterShokz; shokz.com/careers 404 and /pages/careers 429 (Shopify guard) — no public board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Sider",
+      "name": "Sider",
+      "cn": "",
+      "aliases": [
+        "Sider AI",
+        "Sider.ai",
+        "ChatGPT Sidebar"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://sider.ai (403 to bots; no ATS found)",
+      "us_signal": "10M+ users AI sidebar/assistant for browsers; overseas subscription revenue (profitable AI-出海 company per Chinese coverage)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "China (Shanghai/Shenzhen) — global subscription SaaS"
+    },
+    {
+      "brand": "Sirnaomics",
+      "name": "Sirnaomics",
+      "cn": "",
+      "aliases": [
+        "Sirnaomics Inc",
+        "RNA Innovation? no"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.sirnaomics.com/en/careers/",
+      "us_signal": "US HQ Gaithersburg MD (dual-HQ with Suzhou); careers page live but no posted roles/ATS; LCA 0",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Gaithersburg, MD, USA + Suzhou, China"
+    },
+    {
+      "brand": "Skyworth",
+      "name": "Skyworth",
+      "cn": "创维",
+      "aliases": [
+        "SKYWORTH USA CORPORATION",
+        "Skyworth",
+        "Skyworth Digital",
+        "Skyworth USA Corporation",
+        "创维",
+        "创维集团"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "LCA: SKYWORTH USA CORPORATION 5 filings (incl. 03/2026 — active US sponsor!). TV/display US sales. No US board found; careers = CN portal.",
+      "lca_employers": [
+        "SKYWORTH USA CORPORATION"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "SphereEx",
+      "name": "SphereEx",
+      "cn": "思极软件",
+      "aliases": [
+        "SphereEx Inc",
+        "Apache ShardingSphere commercial",
+        "sphere-ex.com"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://sphere-ex.com/about (Open Positions section)",
+      "us_signal": "Open position live: 'Overseas Technical Operations' (open-source community/overseas DevRel — remote-oriented); wellfound.com/company/sphereex profile",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Hangzhou, China"
+    },
+    {
+      "brand": "Structure Therapeutics",
+      "name": "Structure Therapeutics",
+      "cn": "",
+      "aliases": [
+        "ShouTi",
+        "Structure Therapeutics Inc",
+        "GPCR Therapeutics"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://careers.structuretx.com/",
+      "us_signal": "Live job pages (Sr. Clinical Research Associate, South San Francisco CA); LinkedIn 24 US roles; SF HQ + Shanghai R&D",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA, USA + Shanghai, China"
+    },
+    {
+      "brand": "Supercell",
+      "name": "Supercell",
+      "cn": "(腾讯控股芬兰手游)",
+      "aliases": [
+        "Supercell",
+        "超级细胞"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://supercell.com/en/careers/",
+      "us_signal": "Finland-centric hiring; no US roles (note only per instruction)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Helsinki, Finland (Tencent-owned)"
+    },
+    {
+      "brand": "SwitchBot",
+      "name": "SwitchBot",
+      "cn": "",
+      "aliases": [
+        "SwitchBot",
+        "Wonderlabs",
+        "Switchbot Hub"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Top US smart-home brand (Amazon switch/curtain robots); no US LCA; no US board found. Hiring via CN portal.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China (Wonderlabs)"
+    },
+    {
+      "brand": "TDengine",
+      "name": "TDengine",
+      "cn": "涛思数据",
+      "aliases": [
+        "TDengine Inc",
+        "taosdata",
+        "TDengine US",
+        "taos Data"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://tdengine.com/about (tdengine.com/careers currently 404 — jobs via CN channels/Built In SF)",
+      "us_signal": "SF office listed on Built In San Francisco; US-incorporated entity; founder operates US+CN; no live US jobs page today",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA (US) + Hangzhou/Shanghai, China"
+    },
+    {
+      "brand": "TabbyML",
+      "name": "TabbyML",
+      "cn": "",
+      "aliases": [
+        "Tabby",
+        "Tabby AI",
+        "tabbyml"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.tabbyml.com (no jobs page; community Slack)",
+      "us_signal": "No live board found; OSS community hiring via Slack; founders ex-Google",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US (remote-first)"
+    },
+    {
+      "brand": "Temu",
+      "name": "Temu (PDD Holdings)",
+      "cn": "拼多多控股(Temu)",
+      "aliases": [
+        "Temu",
+        "PDD Holdings",
+        "拼多多",
+        "Pinduoduo",
+        "Whaleco Inc"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US hiring via LinkedIn (Temu US: Boston/San Jose/remote roles; entity Whaleco Inc); no public careers board; no LCA rows under Temu/PDD",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Dublin, Ireland (ops: Shanghai/Boston)"
+    },
+    {
+      "brand": "Tigermed",
+      "name": "Tigermed",
+      "cn": "泰格医药",
+      "aliases": [
+        "Tigermed Group",
+        "Tigermed-BDM Inc",
+        "Hangzhou Tigermed"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://hire-r1.mokahr.com/social-recruitment/tigermed/100004122?locale=en-US (global, Moka) + https://www.tigermedus.com/en/join_us (Cloudflare-gated)",
+      "us_signal": "LCA TIGERMED-BDM INC 2026 x14 (statistical analysts, remote across SC/OH/TX/NC/NJ); LinkedIn 13 Tigermed US jobs; tigermedus.com US entity site",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Hangzhou, China"
+    },
+    {
+      "brand": "Timecho",
+      "name": "Timecho",
+      "cn": "时间洞察科技",
+      "aliases": [
+        "Timecho Inc",
+        "Apache IoTDB commercial",
+        "timecho-global"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.timecho-global.com/aboutus (email-based: hr@timecho.com)",
+      "us_signal": "About-page job listings carry '[Stuttgart/Beijing/Remote]' location options — remote-OK roles qualify under D-S25-2",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Beijing, China (Tsinghua-origin team) + Stuttgart; global remote roles"
+    },
+    {
+      "brand": "Timekettle",
+      "name": "Timekettle",
+      "cn": "时空壶",
+      "aliases": [
+        "Timekettle",
+        "时空壶科技",
+        "Timekettle Tech"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/timekettle/jobs/",
+      "us_signal": "US-targeted translator-device brand (W4 Pro etc.); careers page Shopify 429; no US LCA; no board found.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Timeplus",
+      "name": "Timeplus",
+      "cn": "",
+      "aliases": [
+        "Timeplus Inc",
+        "Timeplus.io",
+        "Proton"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.timeplus.com/our-team (no jobs page found)",
+      "us_signal": "'Headquartered in Santa Clara, California' per team page; no live board found (timeplus.com/careers + /jobs 404)",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Santa Clara, California"
+    },
+    {
+      "brand": "Tims China",
+      "name": "Tims China (TH International)",
+      "cn": "Tims中国(卡笛尔咖啡)",
+      "aliases": [
+        "Tims China",
+        "TH International",
+        "Tims Hortons China",
+        "卡笛尔咖啡"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "NO US operations — China ops only (note per instruction: does not meet US-role bar)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China (Nasdaq: THCH)"
+    },
+    {
+      "brand": "Tineco",
+      "name": "Tineco",
+      "cn": "添可智能",
+      "aliases": [
+        "Tineco",
+        "添可",
+        "TEK",
+        "Tineco Intelligent Technology"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://app.trinethire.com/companies/27406-tineco/jobs",
+      "us_signal": "US storefront us.tineco.com; LIVE Trinethire board (public, non-standard ATS, HTTP 200) + global.tineco.com/career. No US LCA filings; US hiring surface unclear — mostly sales/support.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Suzhou, China"
+    },
+    {
+      "brand": "Torras",
+      "name": "Torras",
+      "cn": "图拉斯",
+      "aliases": [
+        "Torras",
+        "图拉斯",
+        "TORRAS Tech"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/torras/jobs/",
+      "us_signal": "US Amazon accessories leader (phone cases/laptop stands); no US LCA; no board found. Anker-competitor class per discovery search.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Treatlife",
+      "name": "Treatlife",
+      "cn": "",
+      "aliases": [
+        "Treatlife",
+        "Treatlife Home"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Amazon smart-home brand (switches/dimmers); no US LCA; no board; careers via CN channels.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Trina Solar",
+      "name": "Trina Solar (US)",
+      "cn": "天合光能股份有限公司",
+      "aliases": [
+        "Trina Solar",
+        "Trina Solar US",
+        "天合光能",
+        "Trina Mix"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "LCA: TRINA SOLAR US MANUFACTURING MODULE 1 LLC (8) + TRINA MIX INC (181 — verify; likely the TX plant entities); LinkedIn US roles",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Changzhou, China (US: Wilbarger County TX plant)"
+    },
+    {
+      "brand": "Ugreen",
+      "name": "Ugreen",
+      "cn": "绿联科技",
+      "aliases": [
+        "UGREEN",
+        "Ugreen Group",
+        "绿联"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/ugreen-technology/jobs/",
+      "us_signal": "US storefront ugreen.com/us + Amazon top-3 charging brand; US entity Ugreen Group / US sales team. No US job board found; hiring surfaces = CN portals (campus/social) + LinkedIn.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Ultipa",
+      "name": "Ultipa",
+      "cn": "",
+      "aliases": [
+        "Ultipa Inc",
+        "Ultipa Graph",
+        "Aichax"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "ultipa.com/news (no careers page/board found)",
+      "us_signal": "US-incorporated graph-database vendor (high-density graph compute 'Ultipa Graph'); California Business Journal coverage",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "US-incorporated (California-registered; Beijing R&D)"
+    },
+    {
+      "brand": "UnionPay International",
+      "name": "UnionPay International (Americas)",
+      "cn": "中国银联(国际美国)",
+      "aliases": [
+        "UnionPay",
+        "UnionPay International",
+        "UPI Americas",
+        "中国银联"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "LCA UNIONPAY INTERNATIONAL (USA) LLC — 5 rows, Oct 2026 active; unionpayintl.com/us 404 (site restructure); no public board",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China (US: New York)"
+    },
+    {
+      "brand": "Urbanic",
+      "name": "Urbanic",
+      "cn": "Urbanic(杭州智韵网络)",
+      "aliases": [
+        "Urbanic",
+        "URBANICA INC",
+        "智韵网络"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "LCA URBANICA INC (4 rows, active 2026); urbanic.com/careers 471-walled; US roles via LinkedIn",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Hangzhou, China + London + LA (Chinese founders)"
+    },
+    {
+      "brand": "VAVA",
+      "name": "VAVA (Sunvalley Group)",
+      "cn": "桑格尔",
+      "aliases": [
+        "Sunvalley",
+        "Sunvalleytek",
+        "SUNVALLEYTEK INTERNATIONAL INC",
+        "VAVA",
+        "VAVA TECHNOLOGIES INC",
+        "VAVA INTERNATIONAL INC",
+        "RAVPower",
+        "TaoTronics",
+        "HooToo"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/sunvalley-technology/jobs/",
+      "us_signal": "LCA: VAVA TECHNOLOGIES INC 17 filings + SUNVALLEYTEK INTERNATIONAL INC 11 + VAVA INTERNATIONAL INC 5 — with 2026 filings = ACTIVE US employer. Amazon brands VAVA/RAVPower/TaoTronics/HooToo.",
+      "lca_employers": [
+        "VAVA TECHNOLOGIES INC"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "VeSync",
+      "name": "VeSync",
+      "cn": "",
+      "aliases": [
+        "VeSync",
+        "晨北科技? (HKEX 2148)",
+        "Levoit",
+        "Cosori",
+        "Etekcity",
+        "VESYNC (US) CORPORATION",
+        "ETEKCITY CORPORATION"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/vesync/jobs/",
+      "us_signal": "LCA: VESYNC (US) CORPORATION 2 filings (11/2025, 3/2026) + ETEKCITY CORPORATION 11 filings (2023-2024) — ACTIVE US hiring. Brands Levoit/Cosori/Etekcity are top US Amazon brands. No public board (vesync.com/careers 404; feishu slug 'vesync' exists but 0 jobs).",
+      "lca_employers": [
+        "VESYNC (US) CORPORATION"
+      ],
+      "origin": "china",
+      "hq": "Shenzhen, China (HKEX: 2148)"
+    },
+    {
+      "brand": "Vesoft",
+      "name": "Vesoft (NebulaGraph)",
+      "cn": "杭州悦数科技",
+      "aliases": [
+        "NebulaGraph",
+        "nebula-graph",
+        "Vesoft Inc",
+        "Vesoft Company Limited",
+        "悦数科技"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.nebulagraph.io (careers page 404 today; site JS-heavy)",
+      "us_signal": "LCA rows: VESOFT COMPANY LIMITED Software Engineer @ Foster City CA (2024) & Fremont CA (2021), Research Scientist Santa Clara CA (2023) — H1B US hiring history",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Hangzhou, China; US entity Vesoft Company Limited (Fremont/Foster City CA filings)"
+    },
+    {
+      "brand": "Vidnoz",
+      "name": "Vidnoz",
+      "cn": "",
+      "aliases": [
+        "Vidnoz AI",
+        "Vidnoz Flex",
+        "vidnoz.com"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "vidnoz.com (no careers page found; no western ATS)",
+      "us_signal": "Global AI video platform (talking avatars, AI dubbing, Face Swap) serving US/EMEA users",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Shenzhen/Hong Kong, China (global product)"
+    },
+    {
+      "brand": "Viva Biotech",
+      "name": "Viva Biotech",
+      "cn": "维亚生物",
+      "aliases": [
+        "Viva Biotech Holdings",
+        "Viva BioInCell"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.vivabiotech.com/join (CN: campus + social recruiting)",
+      "us_signal": "No US markers on careers/join pages; no US LCA (VIVA* rows are homonyms: Viva Doria/Manufacturing/Pictures etc.)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Vozo",
+      "name": "Vozo",
+      "cn": "",
+      "aliases": [
+        "Vozo AI",
+        "Honeybee Technology Ltd",
+        "vozo.ai"
+      ],
+      "sector": "us_software",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "vozo.ai (no careers surface found)",
+      "us_signal": "Global AI video translation/dubbing/lip-sync product (160+ languages) for US/EMEA users",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "China (Honeybee Technology Ltd — footer entity)"
+    },
+    {
+      "brand": "WalkingPad",
+      "name": "WalkingPad",
+      "cn": "金史密斯",
+      "aliases": [
+        "WalkingPad",
+        "KingSmith",
+        "金史密斯科技",
+        "WalkingPad A1 Pro (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Top US Amazon walking-treadmill brand; no US LCA; no US board found. Careers = CN portal (KingSmith 金史密斯).",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Beijing, China"
+    },
+    {
+      "brand": "Wansview",
+      "name": "Wansview",
+      "cn": "",
+      "aliases": [
+        "Wansview",
+        "Wansview CCTV"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "Amazon-focused security-cam brand (US customers); no US LCA; no board. Small brand.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "Weichai America / Power Solutions International",
+      "name": "Weichai America / Power Solutions International",
+      "cn": "潍柴控股/动力系统PSI",
+      "aliases": [
+        "Weichai America",
+        "Power Solutions International",
+        "PSI",
+        "潍柴动力",
+        "Weichai Power"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://psiengines.com/careers/",
+      "us_signal": "Weichai America careers page live ('800+ US employees'); PSI careers = Paycom portal + jobappnetwork; LCA POWER SOLUTIONS INTERNATIONAL INC 21 rows active 2026",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Weifang, China (US: Rolling Meadows IL — 800+ employees)"
+    },
+    {
+      "brand": "WuXi XDC",
+      "name": "WuXi XDC",
+      "cn": "药明合联",
+      "aliases": [
+        "WuXinda? no",
+        "WuXi XDC Cayman",
+        "2226.HK"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "hiring routes through parent portals: wuxiappteccareers.com / wuxibiologics.com/join-us (both wired)",
+      "us_signal": "No separate careers board (checked wuxixdc.com — careers 404, no join links); no US LCA entity; global sites Singapore/China",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai/Wuxi, China"
+    },
+    {
+      "brand": "XCMG",
+      "name": "XCMG (Xuzhou Construction Machinery)",
+      "cn": "徐工集团/徐州工程机械",
+      "aliases": [
+        "XCMG",
+        "XCMG America",
+        "XCMG North America",
+        "徐工机械"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.xcmgglobal.com/career/north-america-region/",
+      "us_signal": "XCMG global careers has North America region page (live); LinkedIn 81 XCMG NA roles; LCA XCMG AMERICAN RESEARCH CORPORATION (3)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Xuzhou, China (US: XCMG America Research Corp)"
+    },
+    {
+      "brand": "XD Inc",
+      "name": "XD Inc",
+      "cn": "心动公司(TapTap母公司)",
+      "aliases": [
+        "XD Inc",
+        "TapTap",
+        "心动公司",
+        "XD.com",
+        "Taptap"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "LinkedIn 18 'TapTap' US open roles; careers.xd.com DNS-dead; no standard ATS board found",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China (US: TapTap/TapTap io)"
+    },
+    {
+      "brand": "XGIMI",
+      "name": "XGIMI",
+      "cn": "极米科技",
+      "aliases": [
+        "XGIMI",
+        "极米",
+        "XGIMI TECHNOLOGY INCORPORATED",
+        "Horizon/Elfin (products)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/xgimi/jobs/",
+      "us_signal": "LCA: XGIMI TECHNOLOGY INCORPORATED 1 filing (05/2024) — US entity formed. US storefront + Amazon projector leader. No public board found; careers = CN portal.",
+      "lca_employers": [
+        "XGIMI TECHNOLOGY INCORPORATED"
+      ],
+      "origin": "china",
+      "hq": "Chengdu, China"
+    },
+    {
+      "brand": "XREAL",
+      "name": "XREAL",
+      "cn": "",
+      "aliases": [
+        "XREAL",
+        "Nreal (former)",
+        "XREAL INC",
+        "XREALONE INC",
+        "Air/One (products)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": "feishu:xreal",
+      "careers_hint": "https://www.xreal.com/career",
+      "us_signal": "LIVE feishu board (xreal.jobs.feishu.cn, 40 jobs — Beijing/Shanghai/Shenzhen/London; 0 US rows at probe). LCA: XREAL INC 2 filings + XREALONE INC 1. xreal.com/career live (static/SPA, no ATS detected).",
+      "lca_employers": [
+        "XREAL INC"
+      ],
+      "origin": "china",
+      "hq": "Beijing, China"
+    },
+    {
+      "brand": "XTransfer",
+      "name": "XTransfer",
+      "cn": "上海夺畅网络技术有限公司",
+      "aliases": [
+        "XTransfer Inc",
+        "XTransfer跨境支付"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "NYC office reported; hiring mainly CN",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China (US: New York)"
+    },
+    {
+      "brand": "Yeelight",
+      "name": "Yeelight",
+      "cn": "易来智能",
+      "aliases": [
+        "Yeelight",
+        "易来",
+        "Yeelight (Xiaomi ecosystem)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US sales (smart lighting via Amazon/Home Depot); no US LCA; no US board found. Careers = CN portal.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Qingdao, China"
+    },
+    {
+      "brand": "Yi Technology",
+      "name": "Yi Technology",
+      "cn": "小蚁科技",
+      "aliases": [
+        "Yi Technology",
+        "YI",
+        "小蚁",
+        "Kami (brand)",
+        "Yi 4K (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/yitechnology/jobs/",
+      "us_signal": "Historic US entity (Yi Technology US — action cams/smart cams sold via Amazon/Best Buy); current US hiring signal weak; no LCA found; no board.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Yoozoo Games",
+      "name": "Yoozoo Games",
+      "cn": "游族网络股份有限公司",
+      "aliases": [
+        "Yoozoo",
+        "Yoozoo Games",
+        "游族网络",
+        "Youzu Interactive"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "No live US roles (Built In page stale; historical US office closed)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shanghai, China"
+    },
+    {
+      "brand": "Zeekr",
+      "name": "Zeekr",
+      "cn": "极氪智能科技(吉利旗下)",
+      "aliases": [
+        "Zeekr",
+        "Zeekr Technology America",
+        "ZEEKR INTELLIGENT TECHNOLOGY US LLC",
+        "极氪"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.zeekr.com/us",
+      "us_signal": "US entity ZEEKR INTELLIGENT TECHNOLOGY US LLC (LCA 1 row 2026); LinkedIn 'Zeekr USA' jobs; US R&D (Palo Alto?)",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Ningbo/Hangzhou, China (Geely)"
+    },
+    {
+      "brand": "Zendure",
+      "name": "Zendure",
+      "cn": "",
+      "aliases": [
+        "Zendure",
+        "ZENDURE USA INC",
+        "Zendure Inc",
+        "Solarflow (product)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.linkedin.com/company/zendure/jobs/",
+      "us_signal": "LCA: ZENDURE USA INC 2 filings (2020); US-inc Chinese-founded (Stanford-affiliated founders); US sales + global solar-battery brand; no public board found (zendure.com Shopify 429).",
+      "lca_employers": [
+        "ZENDURE USA INC"
+      ],
+      "origin": "us_chinese_founder",
+      "hq": "US-inc (Palo Alto roots) with Shenzhen ops; Chinese-founded"
+    },
+    {
+      "brand": "Zepp Health",
+      "name": "Zepp Health",
+      "cn": "华米科技",
+      "aliases": [
+        "Zepp Health",
+        "Huami",
+        "华米",
+        "Amazfit",
+        "ZEPP INC",
+        "Zepp Labs"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": "feishu:zepp",
+      "careers_hint": "https://www.zepp.com/careers",
+      "us_signal": "LIVE feishu board (zepp.jobs.feishu.cn, 64 jobs — ALL China: Shenzhen/Beijing/Nanjing/Hefei; 0 US rows). LCA: ZEPP INC 5 filings. zepp.com/careers live (Webflow, no board — medical-diagnostics positioning).",
+      "lca_employers": [
+        "ZEPP INC"
+      ],
+      "origin": "china",
+      "hq": "Hefei, China (Cayman-inc, NYSE: ZEPP)"
+    },
+    {
+      "brand": "Zhiyun",
+      "name": "Zhiyun",
+      "cn": "智云",
+      "aliases": [
+        "Zhiyun Tech",
+        "智云科技",
+        "Zhiyun Smooth/Crane (product lines)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.zhiyun-tech.com/",
+      "us_signal": "US storefront + Amazon (gimbal leader); no US LCA; no US board found. Hiring via CN portal.",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Guilin, China"
+    },
+    {
+      "brand": "Zmodo",
+      "name": "Zmodo",
+      "cn": "",
+      "aliases": [
+        "Zmodo",
+        "Zmodo Technology",
+        "Funlux (brand)"
+      ],
+      "sector": "cn_hardware",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US smart-camera brand (Amazon/Zmodo app); no US LCA; no board found. Weakened brand (post-2019).",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "iCarbonX",
+      "name": "iCarbonX",
+      "cn": "碳云智能",
+      "aliases": [
+        "iCarbonX Inc",
+        "Digital Life"
+      ],
+      "sector": "biopharma",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://www.icarbonx.com/ (CN site, no careers link found)",
+      "us_signal": "No US hiring found; US arm historically PatientsLikeMe (acquired 2017; later divested); LCA 0",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Shenzhen, China"
+    },
+    {
+      "brand": "iFresh",
+      "name": "iFresh",
+      "cn": "纽约宁波超市(iFresh)",
+      "aliases": [
+        "iFresh Inc",
+        "NYMKT",
+        "宁波超市"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": null,
+      "us_signal": "US Chinese grocery chain (9 stores NY/CT); minimal corporate hiring",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "Queens, NY, USA (Chinese founder)"
+    },
+    {
+      "brand": "imToken",
+      "name": "imToken",
+      "cn": "杭州融识科技",
+      "aliases": [
+        "imToken",
+        "imToken Labs",
+        "融识科技"
+      ],
+      "sector": "cross",
+      "evidence": "probe_A",
+      "ats_hint": null,
+      "careers_hint": "https://token.im/careers",
+      "us_signal": "Distributed; no US-specific roles observed; no board on standard ATS",
+      "lca_employers": [],
+      "origin": "china",
+      "hq": "Hangzhou, China (Singapore entity)"
+    }
+  ],
+  "probe_B": [],
+  "origin_review": [
+    {
+      "brand": "Databricks",
+      "name": "Databricks",
+      "cn": "",
+      "aliases": [
+        "Databricks Inc",
+        "spark",
+        "Delta Lake"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:databricks",
+      "careers_hint": "https://www.databricks.com/company/careers",
+      "us_signal": "Greenhouse board LIVE: hundreds of open US roles",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA",
+      "s25_verdict": "s25_origin_review_one_of_many",
+      "s25_note": "LOOSE BAR EDGE: Chinese-descent founder is one of several co-founders / US-born (Ivan Zhao leads Notion but US-culture hiring; Scale AI = US-born Wang; Databricks = 1-of-5). Surfaced for the user's call — never silently wired (the S24 origin_review convention)."
+    },
+    {
+      "brand": "Notion",
+      "name": "Notion",
+      "cn": "",
+      "aliases": [
+        "Notion Labs",
+        "Notion HQ",
+        "notion.so"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "ashby:notion",
+      "careers_hint": "https://www.notion.com/careers",
+      "us_signal": "Ashby board LIVE: 134 open roles (SF, NY, Tokyo) — engineering/PM/design; huge US hiring",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA",
+      "s25_verdict": "s25_origin_review_one_of_many",
+      "s25_note": "LOOSE BAR EDGE: Chinese-descent founder is one of several co-founders / US-born (Ivan Zhao leads Notion but US-culture hiring; Scale AI = US-born Wang; Databricks = 1-of-5). Surfaced for the user's call — never silently wired (the S24 origin_review convention)."
+    },
+    {
+      "brand": "Scale AI",
+      "name": "Scale AI",
+      "cn": "",
+      "aliases": [
+        "Scale",
+        "Scale AI Inc",
+        "Superintelligence Labs"
+      ],
+      "sector": "us_software",
+      "evidence": "wire_now",
+      "ats_hint": "greenhouse:scaleai",
+      "careers_hint": "https://scale.com/careers",
+      "us_signal": "Greenhouse board LIVE: 194 open roles (SF, NY, Doha, London); major US hiring",
+      "lca_employers": [],
+      "origin": "us_chinese_founder",
+      "hq": "San Francisco, CA",
+      "s25_verdict": "s25_origin_review_one_of_many",
+      "s25_note": "LOOSE BAR EDGE: Chinese-descent founder is one of several co-founders / US-born (Ivan Zhao leads Notion but US-culture hiring; Scale AI = US-born Wang; Databricks = 1-of-5). Surfaced for the user's call — never silently wired (the S24 origin_review convention)."
+    }
+  ],
+  "rejected": []
+}

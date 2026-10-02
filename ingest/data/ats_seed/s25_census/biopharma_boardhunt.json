@@ -1,0 +1,17 @@
+{
+  "Mindray": {
+    "ats": "workable:mindray",
+    "jobs": 0,
+    "probe": "workable"
+  },
+  "Structure Therapeutics": {
+    "ats": "workable:structure",
+    "jobs": 0,
+    "probe": "workable"
+  },
+  "Porton Pharma Solutions": {
+    "ats": "workable:porton",
+    "jobs": 0,
+    "probe": "workable"
+  }
+}

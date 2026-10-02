@@ -1,0 +1,644 @@
+{
+ "board": "ats:ashby:pika",
+ "company": "Pika",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-02",
+ "count": 14,
+ "details_merged": 14,
+ "signals_matched": 0,
+ "similar_edges": 0,
+ "facet_tagged_rows": 14,
+ "rows": [
+  {
+   "reqId": "d3993c91-4dd5-4868-8108-4e9b78133e7b",
+   "title": "Research Scientist, Post-Training — Video Generation",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/d3993c91-4dd5-4868-8108-4e9b78133e7b",
+   "externalPath": "/d3993c91-4dd5-4868-8108-4e9b78133e7b",
+   "locationsText": "US remote",
+   "postedOn": "Posted 139 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "d3993c91-4dd5-4868-8108-4e9b78133e7b"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-05-16",
+   "departments": [
+    "Research"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Research Scientist, Post-Training — Video Generation",
+    "location": "US remote",
+    "additionalLocations": [],
+    "jobDescription": "<h1>About the Role</h1><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">At Pika, we are pioneering the next generation of creative infrastructure built around real-time, multimodal generation and intelligent agentic platforms. We are seeking Research Scientists with expertise in RL post-training and generative modeling for large-scale video generation. The focus is on refining Pika's video generation models using RL alignment and building robust video reward models. This is a staff and lead-level opportunity.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">As a key member of our research team, you will own RL-based post-training for video diffusion/flow-matching models, develop state-of-the-art reward models, and lead post-training evaluation across human and automated metrics. You will collaborate closely with engineering and product teams, shaping the frontier of real-time creative and agentic video platforms.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>Scope</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">RL alignment of Pika's video generation models and the reward models that drive them.</p></li><li><p style=\"min-height:1.5em\">Distillation of RL-tuned models is a secondary focus.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>Responsibilities</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Run RL post-training (preference optimization, online RL against learned rewards) for video diffusion/flow-matching models at multi-node scale.</p></li><li><p style=\"min-height:1.5em\">Build video reward models: define target evaluation dimensions, design/configure preference data collection workflows, train and validate learned judges, and safeguard against reward hacking.</p></li><li><p style=\"min-height:1.5em\">Own post-training evaluation, including human preference studies and their correlation with automated metrics.</p></li><li><p style=\"min-height:1.5em\">Distill RL-tuned models to efficient few-step samplers while preserving alignment gains (secondary focus).</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We’re Looking For</h2><h3>Required</h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">2+ years hands-on research experience in post-training or generative modeling.</p></li><li><p style=\"min-height:1.5em\">RL or preference-optimization experience on generative models with evidence of model improvement.</p></li><li><p style=\"min-height:1.5em\">Strong grounding in diffusion or flow-matching models, PyTorch, and multi-node distributed training.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h3>Preferred</h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience developing reward models for visual generation, including VLM-as-judge or large-scale preference data collection.</p></li><li><p style=\"min-height:1.5em\">Distillation expertise (distribution matching, consistency, adversarial approaches), ideally for video models.</p></li><li><p style=\"min-height:1.5em\">Familiarity with video-specific failure modes: temporal drift, motion and physics realism.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We Offer</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary and substantial equity in a high-growth startup</p></li><li><p style=\"min-height:1.5em\">Full health benefits + 401k matching and more</p></li><li><p style=\"min-height:1.5em\">Collaborative, mission-driven team environment with significant growth opportunities</p></li><li><p style=\"min-height:1.5em\">Flexible on-site/remote hybrid (HQ in Palo Alto, CA)</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>About Pika</h2><p style=\"min-height:1.5em\">Pika empowers creators by building state-of-the-art agentic and multimedia platforms. Our vision is to break down technical barriers to creativity, making real-time generative and intelligent orchestration accessible to all. Join us to shape the next evolution of creative technology!</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">If you are passionate about advancing RL alignment and generative modeling for video, and want to scale real-time multimodal foundation models, we want to hear from you.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/d3993c91-4dd5-4868-8108-4e9b78133e7b",
+    "jobReqId": "d3993c91-4dd5-4868-8108-4e9b78133e7b",
+    "postedOn": "Posted 139 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Research",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "fb9e43d7-36b8-46c7-93cd-2b7504e30363",
+   "title": "ML Engineer, Inference & Optimization",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/fb9e43d7-36b8-46c7-93cd-2b7504e30363",
+   "externalPath": "/fb9e43d7-36b8-46c7-93cd-2b7504e30363",
+   "locationsText": "Palo Alto HQ",
+   "postedOn": "Posted 101 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "fb9e43d7-36b8-46c7-93cd-2b7504e30363"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-06-23",
+   "departments": [
+    "Research"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "ML Engineer, Inference & Optimization",
+    "location": "Palo Alto HQ",
+    "additionalLocations": [],
+    "jobDescription": "<h3>About the Role</h3><p style=\"min-height:1.5em\">We are seeking Senior/Staff level Inference Engineers to accelerate the performance of Pika's AI-driven products. In this highly technical role, you will operate at the intersection of cutting-edge inference acceleration, GPU parallelism, advanced model deployment, and video generation technologies. Your expertise will drive significant improvements to model speed and efficiency, ensuring our creative AI systems deliver industry-leading user experiences at scale.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">You will design and optimize inference pipelines, implement state-of-the-art acceleration techniques, and work closely with researchers and engineers across the team to push the boundaries of what’s possible in real-time AI deployment. Your efforts will play a foundational role in powering the next generation of Pika’s video and language models.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h3>What You’ll Do</h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Accelerate Inference</strong>: Lead and implement advanced inference acceleration techniques, including attention optimization and quantization for efficient model serving.</p></li><li><p style=\"min-height:1.5em\"><strong>Maximize GPU Parallelism</strong>: Engineer and optimize GPU strategies across tensor, sequence, and pipeline parallelism (TP, SP, PP) for maximal efficiency and scalability.</p></li><li><p style=\"min-height:1.5em\"><strong>Programming for Performance</strong>: Develop and optimize high-performance computing kernels and distributed workloads using CUDA and NCCL.</p></li><li><p style=\"min-height:1.5em\"><strong>Advance AI Deployment</strong>: Collaborate with research and engineering teams to bring state-of-the-art videogen and large language models into production.</p></li><li><p style=\"min-height:1.5em\"><strong>Improve Training Efficiency</strong>: (Bonus) Contribute to improvements in model training speed, stability, and resource utilization as part of our deployment lifecycle.</p></li><li><p style=\"min-height:1.5em\"><strong>Technical Excellence</strong>: Drive rigorous code reviews, participate in technical discussions, and mentor fellow engineers on best practices in inference and GPU programming.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h3>What We’re Looking For</h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Experience</strong>: 5+ years engineering experience, with a strong track record in inference acceleration and model deployment at scale.</p></li><li><p style=\"min-height:1.5em\"><strong>Inference Mastery</strong>: Proven expertise in inference optimization, including quantization, attention acceleration, and deep learning compiler stacks.</p></li><li><p style=\"min-height:1.5em\"><strong>GPU &amp; Parallelism</strong>: Deep knowledge of GPU programming (CUDA, NCCL) and experience with SP, TP, PP, and other forms of parallelism for distributed inference.</p></li><li><p style=\"min-height:1.5em\"><strong>AI Domain Knowledge</strong>: Familiarity with video generation (videogen) models and large language models (LLMs).</p></li><li><p style=\"min-height:1.5em\"><strong>Collaboration</strong>: Strong cross-discipline communication skills; able to drive shared goals across research and engineering functions.</p></li><li><p style=\"min-height:1.5em\"><strong>Ownership Mindset</strong>: Self-driven, solutions-oriented, and capable of managing ambiguity in a fast-paced startup environment.</p></li><li><p style=\"min-height:1.5em\"><strong>Bonus</strong>: Experience in enhancing training efficiency, stability, or resource optimization for large models.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h3>Nice to Have</h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience with high-throughput video or real-time streaming model deployment</p></li><li><p style=\"min-height:1.5em\">Familiarity with distributed training and optimization toolkits</p></li><li><p style=\"min-height:1.5em\">Contributions to open source projects in AI infrastructure or deep learning compilers</p></li><li><p style=\"min-height:1.5em\">Startup or rapid prototyping experience</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h3>What We Offer</h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary in the AI industry</p></li><li><p style=\"min-height:1.5em\">Equity in a fast-growing startup shaping the future of AI</p></li><li><p style=\"min-height:1.5em\">Comprehensive health benefits, monthly stipends, company retreats</p></li><li><p style=\"min-height:1.5em\">A supportive and collaborative office culture—we’re all building and launching together</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h3>About Pika</h3><p style=\"min-height:1.5em\">At Pika, we're crafting a future where video creation is seamless, intuitive, and universally accessible. Our mission is to empower creativity by breaking down technical barriers using the transformative power of AI. We’re a tight-knit, energetic team based in Palo Alto, CA, valuing efficiency, curiosity, and the ambition to make a meaningful impact on the world.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We work from our Palo Alto office 3–5 days a week and welcome applicants who are eager to contribute onsite.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/fb9e43d7-36b8-46c7-93cd-2b7504e30363",
+    "jobReqId": "fb9e43d7-36b8-46c7-93cd-2b7504e30363",
+    "postedOn": "Posted 101 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Research",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "8dab8b44-71cd-4ed9-a598-34111d534ac1",
+   "title": "Senior/Staff Software Engineer, Backend",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/8dab8b44-71cd-4ed9-a598-34111d534ac1",
+   "externalPath": "/8dab8b44-71cd-4ed9-a598-34111d534ac1",
+   "locationsText": "US remote",
+   "postedOn": "Posted 93 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "8dab8b44-71cd-4ed9-a598-34111d534ac1"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-07-01",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "Remote",
+   "detail": {
+    "title": "Senior/Staff Software Engineer, Backend",
+    "location": "US remote",
+    "additionalLocations": [],
+    "jobDescription": "<p style=\"min-height:1.5em\"><strong>About Pika</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">At Pika, we’re building the next generation of AI creative tools to empower human creativity. Our mission is to make video creation seamless, intuitive, and accessible to everyone, leveraging the power of advanced AI. We believe that AI should amplify creative expression—enabling everyone to create, collaborate, and communicate across media. Our team includes engineers, artists, and product thinkers, all passionate about building tools that unlock new creative possibilities.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Pika has raised significant funding and is backed by leading investors, with a collaborative culture based in Palo Alto, CA. We prefer hybrid in-office, sharing ideas and launching products together.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>About the Role</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We are looking for a Staff Software Engineer, Backend, to lead and scale the backend infrastructure powering Pika’s user-facing products. In this high-impact role, you’ll own the design and delivery of robust, scalable backend systems, APIs, and infrastructure that support real-time collaboration, AI-powered workflows, and seamless product experiences.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">You’ll work closely with engineering, product, and design teams to deliver features that are reliable, performant, and secure. Your leadership in architectural decisions and backend best practices will shape the technical foundation of Pika for millions of users, helping to define both the immediate experience and the long-term direction of our core backend platforms.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What You’ll Do</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Architect and develop scalable, high-performing backend systems and APIs powering all Pika products and services</p></li><li><p style=\"min-height:1.5em\">Build, maintain, and enhance distributed systems and cloud infrastructure (AWS/GCP), ensuring high availability and reliability</p></li><li><p style=\"min-height:1.5em\">Take ownership of backend features and platforms from ideation through launch and ongoing iteration</p></li><li><p style=\"min-height:1.5em\">Develop systems to support low-latency, real-time collaboration and messaging at scale</p></li><li><p style=\"min-height:1.5em\">Design and optimize backend features that power creative, AI-driven product capabilities</p></li><li><p style=\"min-height:1.5em\">Lead technical discussions, review code, drive backend architecture proposals, and mentor engineers to elevate standards across the team</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We’re Looking For</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">5+ years of backend software engineering experience, with at least 2+ years in senior backend roles</p></li><li><p style=\"min-height:1.5em\">Deep expertise in building distributed systems, RESTful and real-time APIs, and cloud-native infrastructure (AWS, GCP, Kubernetes, etc.)</p></li><li><p style=\"min-height:1.5em\">Strong system design skills for reliable, scalable backend services for high-traffic applications</p></li><li><p style=\"min-height:1.5em\">Track record of launching impactful backend features that balance technical quality with business needs</p></li><li><p style=\"min-height:1.5em\">Proven ability to independently lead complex projects, troubleshoot problems, and deliver impactful solutions</p></li><li><p style=\"min-height:1.5em\">Excellent written and verbal communication, able to thrive in cross-functional teams</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Nice to Have</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience with real-time collaboration platforms, creative tools, or media-rich applications</p></li><li><p style=\"min-height:1.5em\">Familiarity with integrating generative AI or agent-based systems</p></li><li><p style=\"min-height:1.5em\">Experience at high-growth startups or in rapidly evolving settings</p></li><li><p style=\"min-height:1.5em\">Competitive coding, hackathon, or open-source contributions</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Our Stack</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Python, Go, Node.js, Postgres, Redis, Docker, Kubernetes, AWS/GCP</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We Offer</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary in the AI industry</p></li><li><p style=\"min-height:1.5em\">Equity in a rapidly growing startup shaping the future of AI and creativity</p></li><li><p style=\"min-height:1.5em\">Comprehensive health benefits, monthly stipends, and company retreats</p></li><li><p style=\"min-height:1.5em\">Supportive, collaborative office culture—we’re all building and launching together</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"></p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/8dab8b44-71cd-4ed9-a598-34111d534ac1",
+    "jobReqId": "8dab8b44-71cd-4ed9-a598-34111d534ac1",
+    "postedOn": "Posted 93 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "82835e51-284c-47af-b254-088fff23acd5",
+   "title": "Research Scientist, Data",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/82835e51-284c-47af-b254-088fff23acd5",
+   "externalPath": "/82835e51-284c-47af-b254-088fff23acd5",
+   "locationsText": "US remote",
+   "postedOn": "Posted 93 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "82835e51-284c-47af-b254-088fff23acd5"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-07-01",
+   "departments": [
+    "Research"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "Remote",
+   "detail": {
+    "title": "Research Scientist, Data",
+    "location": "US remote",
+    "additionalLocations": [],
+    "jobDescription": "<h1></h1><h2>About the Role</h2><p style=\"min-height:1.5em\">At Pika, we are pioneering the next generation of creative infrastructure built around real-time, multimodal generation and intelligent agentic platforms. We are looking for a staff or lead-level Research Engineer, Data to architect and scale data engineering systems supporting model training for our advanced multimodal foundation models. This pivotal role will strengthen our research teams by building, optimizing, and owning large-scale data pipelines and robust ML data curation, ensuring our foundation models have access to the highest quality and most diverse datasets. If you are passionate about powerful data infrastructure and innovative research-engineering, join us to make an impact for millions of creators.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What You’ll Do</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Take ownership of large-scale data pipeline architecture and implementation to support model training and research workflows for text, image, audio, and video datasets</p></li><li><p style=\"min-height:1.5em\">Partner with research and engineering teams to curate, clean, and manage diverse, sensory-rich datasets for pre-training and mid-training of multimodal models</p></li><li><p style=\"min-height:1.5em\">Develop strategies and tools for scalable data ingestion, labeling, filtering, augmentation, and storage</p></li><li><p style=\"min-height:1.5em\">Ensure data quality, reliability, and compliance, including managing privacy and ethical considerations throughout the data lifecycle</p></li><li><p style=\"min-height:1.5em\">Optimize data processing, transformation, and delivery for large-scale distributed training pipelines</p></li><li><p style=\"min-height:1.5em\">Prototype and productionize new methods for dataset creation, management, and continuous improvement in response to researcher needs</p></li><li><p style=\"min-height:1.5em\">Contribute to the integration of research-driven data advancements into production-ready systems</p></li><li><p style=\"min-height:1.5em\">Stay informed on emerging data engineering and ML data management developments, bringing best practices to our systems</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We’re Looking For</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">5+ years of experience building and scaling data pipelines for machine learning applications at staff or lead engineer level, ideally in research or model training environments</p></li><li><p style=\"min-height:1.5em\">Strong background in data engineering and ML data curation for LLMs, VLMs, or other large-scale multimodal models</p></li><li><p style=\"min-height:1.5em\">Expertise in distributed data systems (e.g., Spark, Hadoop, Ray, or similar) and efficient large dataset processing/ETL workflows</p></li><li><p style=\"min-height:1.5em\">Proven ability to build robust, scalable, and production-grade data infrastructure for ML pipelines</p></li><li><p style=\"min-height:1.5em\">Experience developing tools for data labeling, filtering, deduplication, quality assurance, and dataset management</p></li><li><p style=\"min-height:1.5em\">Strong programming skills (Python, SQL, PySpark, or similar) and familiarity with cloud data platforms (AWS, GCP, Azure)</p></li><li><p style=\"min-height:1.5em\">Knowledge of privacy, compliance, ethics, and best practices in data collection and management</p></li><li><p style=\"min-height:1.5em\">Excellent cross-functional collaboration, problem-solving, and communication skills</p></li><li><p style=\"min-height:1.5em\">Passion for enabling cutting-edge generative AI and creative technology through data excellence</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We Offer</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary and substantial equity in a high-growth startup</p></li><li><p style=\"min-height:1.5em\">Full health benefits, 401k matching, and more</p></li><li><p style=\"min-height:1.5em\">Collaborative, mission-driven team environment with major growth opportunities</p></li><li><p style=\"min-height:1.5em\">Flexible on-site/remote hybrid (HQ in Palo Alto, CA)</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>About Pika</h2><p style=\"min-height:1.5em\">Pika empowers creators by building state-of-the-art agentic and multimedia platforms. Our vision is to break down technical barriers to creativity, making real-time generative and intelligent orchestration accessible to all. Join us and help shape the next evolution of creative technology!</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">If you are a data-driven research engineer excited to lead and scale the data infrastructure powering real-time multimodal foundation models, we want to hear from you.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/82835e51-284c-47af-b254-088fff23acd5",
+    "jobReqId": "82835e51-284c-47af-b254-088fff23acd5",
+    "postedOn": "Posted 93 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Research",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "ab076a0a-8abc-4110-a0ab-a56e276ac891",
+   "title": "Head of Growth",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/ab076a0a-8abc-4110-a0ab-a56e276ac891",
+   "externalPath": "/ab076a0a-8abc-4110-a0ab-a56e276ac891",
+   "locationsText": "Palo Alto HQ",
+   "postedOn": "Posted 92 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "ab076a0a-8abc-4110-a0ab-a56e276ac891"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-07-02",
+   "departments": [
+    "Product"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Head of Growth",
+    "location": "Palo Alto HQ",
+    "additionalLocations": [],
+    "jobDescription": "<p style=\"min-height:1.5em\"><strong>About the Role</strong></p><p style=\"min-height:1.5em\"><br />We're looking for a Head of Growth with a passion for creative AI and user empowerment to help us shape the future of video creation. You’ll turn first-time visitors into lifelong Pika creators, owning the growth levers that drive activation, retention, and monetization. Through bold experimentation, rapid iteration, and hands-on product changes, you’ll directly influence how millions discover, create, and stay inspired with Pika.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What You’ll Do</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Own the entire growth journey: from acquisition and activation to crafting retention loops and creative, user-centric monetization paths.</p></li><li><p style=\"min-height:1.5em\">Conceptualize, launch, and analyze rapid-fire experiments (A/B tests, feature flags) with an eye toward out-of-the-box creative impact.</p></li><li><p style=\"min-height:1.5em\">Build and champion a deep understanding of our users—how they create, what motivates them, and how our creative AI can unlock their potential.</p></li><li><p style=\"min-height:1.5em\">Collaborate daily with world-class engineering, design, marketing, and data teams to deliver bold, high-impact growth initiatives.</p></li><li><p style=\"min-height:1.5em\">Set up and evolve the metrics and dashboards that reveal what truly powers user creativity—double down on what works, swiftly sunset what doesn’t.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We’re Looking For</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">2–5 years in product management or growth, ideally at a consumer or PLG company where experimentation is in your DNA.</p></li><li><p style=\"min-height:1.5em\">Relentlessly analytical: fluent in SQL and analytics tools, with a strong bias for insights that fuel creative product direction.</p></li><li><p style=\"min-height:1.5em\">Fast to ship, fast to learn: you thrive on velocity, creative risk-taking, and rapidly learning from real-world results.</p></li><li><p style=\"min-height:1.5em\">Deep product intuition: you know how to balance ambitious near-term growth bets with sustaining long-term creative ecosystems.</p></li><li><p style=\"min-height:1.5em\">Crystal-clear communicator: you can champion a bold new idea—or pivot away from one—fast and persuasively.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Nice to Have</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience with consumer subscription, freemium, or creator monetization models.</p></li><li><p style=\"min-height:1.5em\">Familiarity with creative AI, generative media products, or creator-economy platforms.</p></li><li><p style=\"min-height:1.5em\">Background at an early-stage or hypergrowth startup where creativity and speed rule.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We Offer</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary in the thriving creative AI space</p></li><li><p style=\"min-height:1.5em\">Equity in a high-growth startup shaping the landscape of generative creativity</p></li><li><p style=\"min-height:1.5em\">Comprehensive health benefits, monthly stipends, company retreats</p></li><li><p style=\"min-height:1.5em\">A collaborative office culture in Palo Alto—where we build, iterate, and celebrate creativity together</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>About Pika</strong></p><p style=\"min-height:1.5em\"><br />At Pika, our mission is to make video creation radically seamless, deeply intuitive, and universally accessible. We’re reimagining how everyone can express their creativity through video, driven by the latest advances in AI. Our culture is inventive, collaborative, and deeply focused on impact. Join us in Palo Alto, CA (office 3–5 days a week) to help push the boundaries of creative technology and empower the next generation of creators.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/ab076a0a-8abc-4110-a0ab-a56e276ac891",
+    "jobReqId": "ab076a0a-8abc-4110-a0ab-a56e276ac891",
+    "postedOn": "Posted 92 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Product",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "e0533e4b-28a2-4c18-be00-73111f84f326",
+   "title": "Product Manager",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/e0533e4b-28a2-4c18-be00-73111f84f326",
+   "externalPath": "/e0533e4b-28a2-4c18-be00-73111f84f326",
+   "locationsText": "US remote",
+   "postedOn": "Posted 92 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "e0533e4b-28a2-4c18-be00-73111f84f326"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-07-02",
+   "departments": [
+    "Product"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "Remote",
+   "detail": {
+    "title": "Product Manager",
+    "location": "US remote",
+    "additionalLocations": [],
+    "jobDescription": "<h2>About the Role</h2><p style=\"min-height:1.5em\">We're looking for a Product Manager to help drive the next creative leap at Pika. In this high-impact, hands-on role, you'll help shape the core experience of our generative AI platform, empowering millions of creators to bring bold ideas to life with powerful, intuitive tools. If you love the intersection of technology and creativity, you'll thrive here.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What You'll Do</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Own the roadmap and lead projects from initial idea to launch for a key area of our creative platform.</p></li><li><p style=\"min-height:1.5em\">Work closely with talented engineers, designers, and researchers to turn visionary ideas and AI advancements into delightful user experiences.</p></li><li><p style=\"min-height:1.5em\">Define and track success metrics, using data, feedback, and creative insights to uncover what creators really need next.</p></li><li><p style=\"min-height:1.5em\">Connect directly with creators and the Pika community to understand how generative AI inspires—and how we can go even further.</p></li><li><p style=\"min-height:1.5em\">Write clear specs, rally the team, and help lead projects in our fast-moving, collaborative environment.</p></li><li><p style=\"min-height:1.5em\">Collaborate smoothly across teams to align stakeholders and deliver great results.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We're Looking For</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">4+ years of product management experience in creative-tech, consumer platforms, or innovative startups.</p></li><li><p style=\"min-height:1.5em\">Proven track record of shipping impactful features with minimal guidance, anticipating creative needs before they arise.</p></li><li><p style=\"min-height:1.5em\">Strong product sense and creative instincts—especially when working in uncharted or ambiguous areas.</p></li><li><p style=\"min-height:1.5em\">Great communicator who inspires teams and fosters collaboration through clear, concise writing and conversation.</p></li><li><p style=\"min-height:1.5em\">Genuine excitement about the creative revolution enabled by generative AI—and a drive to explore where it can take us next.</p></li><li><p style=\"min-height:1.5em\">Responsible, organized, and able to juggle priorities while staying on top of every detail.</p></li><li><p style=\"min-height:1.5em\">Enjoys building relationships and working across different teams to make things happen.</p></li><li><p style=\"min-height:1.5em\">Passionate about products that empower creative people and help them do their best work.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h3>Bonus Points</h3><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience with consumer, media-rich, or collaborative creation products.</p></li><li><p style=\"min-height:1.5em\">Thrives in 0–1 or “blank page” startup environments.</p></li><li><p style=\"min-height:1.5em\">Technical fluency or the ability to collaborate closely with engineering on creative tradeoffs.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We Offer</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary at the frontier of AI</p></li><li><p style=\"min-height:1.5em\">Equity in a rapidly growing creative AI startup</p></li><li><p style=\"min-height:1.5em\">Comprehensive benefits, monthly creative stipends, and team retreats</p></li><li><p style=\"min-height:1.5em\">Flexible remote work, or join us in our vibrant Palo Alto office—where inspiration, ambition, and fun all come together</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>About Pika</h2><p style=\"min-height:1.5em\">Pika is reimagining creative expression with AI. We’re building breakthrough tools to make video creation radically intuitive, lightning-fast, and accessible to everyone. Our culture thrives on smart people, great teamwork, and a shared passion for shaping the future of creativity. We're open to remote team members, or you can join us at our Palo Alto HQ (in-office 3–5 days a week) to help invent what’s next in creative AI.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/e0533e4b-28a2-4c18-be00-73111f84f326",
+    "jobReqId": "e0533e4b-28a2-4c18-be00-73111f84f326",
+    "postedOn": "Posted 92 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Product",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "e135acb1-2a0b-47b4-81b2-3cb0f787657a",
+   "title": "Research Intern (BS/MS/PhD)",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/e135acb1-2a0b-47b4-81b2-3cb0f787657a",
+   "externalPath": "/e135acb1-2a0b-47b4-81b2-3cb0f787657a",
+   "locationsText": "Palo Alto HQ",
+   "postedOn": "Posted 84 Days Ago",
+   "timeType": "Intern",
+   "bulletFields": [
+    "e135acb1-2a0b-47b4-81b2-3cb0f787657a"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-07-10",
+   "departments": [
+    "Research"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Research Intern (BS/MS/PhD)",
+    "location": "Palo Alto HQ",
+    "additionalLocations": [],
+    "jobDescription": "<p style=\"min-height:1.5em\"><strong>About the Role</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">At Pika, we are shaping the future of creative infrastructure with real-time, multimodal generation and intelligent agentic platforms. We are looking for passionate Research Interns at the BS, MS, or PhD level with significant experience working on Videogen to join our team and make an immediate impact. In this role, you will directly contribute to mid-training and post-training efforts for Videogen models and support advanced generative systems. Familiarity with multimodal large language models (MLLMs) is valued as a bonus.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">This internship is ideal for students and researchers who have hands-on Videogen experience, are excited to work at the intersection of generative AI and multimedia, and are eager to make meaningful contributions alongside top AI talent. Flexible part-time and full-time internship terms are available.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What You’ll Do</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Work directly on large-scale mid-training, post-training, and optimization efforts for Videogen models.</p></li><li><p style=\"min-height:1.5em\">Design, prototype, and refine algorithms for high-throughput video and multimedia data pipelines.</p></li><li><p style=\"min-height:1.5em\">Collaborate with experienced researchers and engineers on advanced AI and video generation technology.</p></li><li><p style=\"min-height:1.5em\">Apply new research techniques and production-scale workflows to deploy Videogen advancements into real-world applications.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We’re Looking For</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">BS, MS, or PhD-level backgrounds, with demonstrated Videogen experience strongly preferred.</p></li><li><p style=\"min-height:1.5em\">Expertise in video generation models or frameworks.</p></li><li><p style=\"min-height:1.5em\">Proficiency in Python and ML toolkits (such as PyTorch, TensorFlow, etc.).</p></li><li><p style=\"min-height:1.5em\">Prior exposure to multimodal LLM inference, generative models, or related areas is a bonus.</p></li><li><p style=\"min-height:1.5em\">Fast learner who can adapt to new research and technologies quickly.</p></li><li><p style=\"min-height:1.5em\">Excellent communicator and effective team collaborator.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We Offer</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Flexible internship: part-time or full-time roles available</p></li><li><p style=\"min-height:1.5em\">Unique opportunity to make an immediate impact with Videogen and generative AI research</p></li><li><p style=\"min-height:1.5em\">Mentorship and collaboration with innovative researchers and engineers</p></li><li><p style=\"min-height:1.5em\">Competitive compensation and a dynamic, mission-driven environment</p></li><li><p style=\"min-height:1.5em\">Onsite work setup, with headquarters in Palo Alto, CA</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>About Pika</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Pika empowers creators by building cutting-edge agentic and multimedia platforms. Our mission is to remove technical barriers and make real-time generative and intelligent orchestration accessible to everyone. If you are ready to accelerate your AI career, hone your video generation expertise, and contribute to the next wave of creative technology, we want to hear from you.</p>",
+    "timeType": "Intern",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/e135acb1-2a0b-47b4-81b2-3cb0f787657a",
+    "jobReqId": "e135acb1-2a0b-47b4-81b2-3cb0f787657a",
+    "postedOn": "Posted 84 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Research",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "8fbdfff7-71d5-49d1-a10c-d93eb4205f22",
+   "title": "Head of Sales",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/8fbdfff7-71d5-49d1-a10c-d93eb4205f22",
+   "externalPath": "/8fbdfff7-71d5-49d1-a10c-d93eb4205f22",
+   "locationsText": "Palo Alto HQ",
+   "postedOn": "Posted 53 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "8fbdfff7-71d5-49d1-a10c-d93eb4205f22"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-08-10",
+   "departments": [
+    "Business"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Head of Sales",
+    "location": "Palo Alto HQ",
+    "additionalLocations": [],
+    "jobDescription": "<p style=\"min-height:1.5em\"><strong>About the Role</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're seeking a Founding Go-To-Market (GTM) expert who will play a foundational role in building our sales and account management capabilities at Pika. As the first member of our GTM team, you will take ownership of driving customer acquisition, building strong client relationships, and establishing the go-to-market strategies that power our continued growth. You’ll be responsible for leading sales efforts, managing key accounts, and setting the standard for how we engage with customers and execute commercial initiatives.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What You’ll Do</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Own the full sales cycle from prospecting to closing and account management</p></li><li><p style=\"min-height:1.5em\">Build and nurture relationships with new and existing clients</p></li><li><p style=\"min-height:1.5em\">Develop and execute go-to-market strategies to drive adoption and revenue</p></li><li><p style=\"min-height:1.5em\">Serve as the primary point of contact for clients, understanding their needs and delivering tailored solutions</p></li><li><p style=\"min-height:1.5em\">Collaborate with product, marketing, and leadership teams to align on customer needs and opportunities</p></li><li><p style=\"min-height:1.5em\">Provide feedback to internal teams to inform product development and strategy</p></li><li><p style=\"min-height:1.5em\">Set and track performance metrics to measure and report on sales impact</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We’re Looking For</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Proven experience in account management, sales, or business development</p></li><li><p style=\"min-height:1.5em\">Self-starter attitude and ability to thrive in a fast-paced, startup environment</p></li><li><p style=\"min-height:1.5em\">Excellent communication and relationship-building skills</p></li><li><p style=\"min-height:1.5em\">Strong problem-solving abilities and customer-oriented mindset</p></li><li><p style=\"min-height:1.5em\">Comfortable taking ownership and leading go-to-market efforts from the ground up</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Nice to Have</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience in the technology or creative AI space</p></li><li><p style=\"min-height:1.5em\">Familiarity with building sales processes and playbooks at early-stage startups</p></li><li><p style=\"min-height:1.5em\">Background working closely with product and marketing teams</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We Offer</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive compensation package</p></li><li><p style=\"min-height:1.5em\">Equity in a high-growth creative AI startup</p></li><li><p style=\"min-height:1.5em\">Comprehensive health benefits, monthly stipends, and company retreats</p></li><li><p style=\"min-height:1.5em\">Collaborative office culture in Palo Alto, CA (remote ok within US)</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>About Pika</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">At Pika, our mission is to make video creation radically seamless, deeply intuitive, and universally accessible. We're driven by the latest advances in AI and a passion for empowering creators. Join us in Palo Alto, CA to help shape the future of creative technology as the cornerstone of our go-to-market team.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/8fbdfff7-71d5-49d1-a10c-d93eb4205f22",
+    "jobReqId": "8fbdfff7-71d5-49d1-a10c-d93eb4205f22",
+    "postedOn": "Posted 53 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "2a284a94-c473-4b30-b079-e06881f36983",
+   "title": "Head of Finance",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/2a284a94-c473-4b30-b079-e06881f36983",
+   "externalPath": "/2a284a94-c473-4b30-b079-e06881f36983",
+   "locationsText": "Palo Alto HQ",
+   "postedOn": "Posted 32 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "2a284a94-c473-4b30-b079-e06881f36983"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-08-31",
+   "departments": [
+    "Operations"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Head of Finance",
+    "location": "Palo Alto HQ",
+    "additionalLocations": [],
+    "jobDescription": "<h1>Part-time 25 hours/week, open to full-time. <br /></h1><h2>About the Role</h2><p style=\"min-height:1.5em\">Pika is seeking a strategic and experienced Head of Finance to join our on-site team in Palo Alto. As Head of Finance, you will be responsible for the overall financial leadership of the company, driving strategy, planning, compliance, and execution to enable our next phase of growth as a creative AI leader. You’ll work closely with the executive team to ensure financial health, transparency, and effective resource allocation, guiding Pika’s business decisions and growth strategy.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What You’ll Do</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Lead and oversee all aspects of Pika’s financial operations, including accounting, FP&amp;A, budgeting, treasury, AP/AR, and payroll</p></li><li><p style=\"min-height:1.5em\">Build and manage scalable financial planning, modeling, and forecasting processes to guide executive decision-making</p></li><li><p style=\"min-height:1.5em\">Develop and drive the company’s financial strategy, including long-term planning, fundraising support, and cross-functional resource allocation</p></li><li><p style=\"min-height:1.5em\">Direct timely and accurate month-end and year-end close, financial reporting, statutory audits, and tax filings</p></li><li><p style=\"min-height:1.5em\">Ensure compliance with all local, state, and federal regulations, as well as GAAP and internal controls</p></li><li><p style=\"min-height:1.5em\">Monitor key financial indicators and provide proactive insights on risks, opportunities, and performance trends</p></li><li><p style=\"min-height:1.5em\">Set up and manage financial systems and controls necessary for a high-growth, venture-backed environment</p></li><li><p style=\"min-height:1.5em\">Partner with leadership across departments (Product, Sales, Operations) to evaluate and support business initiatives and company-wide strategy</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We’re Looking For</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">7+ years of progressive finance leadership, including experience managing a finance team in a high-growth company or startup</p></li><li><p style=\"min-height:1.5em\">Demonstrated expertise in financial modeling, forecasting, accounting principles, and business analytics</p></li><li><p style=\"min-height:1.5em\">Broad experience managing full-stack finance functions, including budgeting, treasury, compliance, and internal controls</p></li><li><p style=\"min-height:1.5em\">Strong track record of supporting fundraising, investor reporting, and board deliverables</p></li><li><p style=\"min-height:1.5em\">Meticulous attention to detail and exceptional organization and leadership skills</p></li><li><p style=\"min-height:1.5em\">Excellent communication and interpersonal abilities, with confidence presenting to C-suite leadership and the board</p></li><li><p style=\"min-height:1.5em\">Bachelor’s degree in Finance, Accounting, or a related field required; CPA or MBA strongly preferred</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>Nice to Have</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience in technology, SaaS, or creative AI sectors</p></li><li><p style=\"min-height:1.5em\">Prior leadership within a venture-backed startup</p></li><li><p style=\"min-height:1.5em\">Experience implementing or scaling financial systems or working with external partners</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We Offer</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive executive-level compensation</p></li><li><p style=\"min-height:1.5em\">Substantial equity in a high-growth, mission-driven startup</p></li><li><p style=\"min-height:1.5em\">Full health benefits, monthly stipends, and regular company retreats</p></li><li><p style=\"min-height:1.5em\">Collaborative on-site office environment in Palo Alto (WFH Wednesdays)</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>About Pika</h2><p style=\"min-height:1.5em\">At Pika, our mission is to make video creation radically seamless, deeply intuitive, and universally accessible. We're reimagining the creative process through AI and building a world-class team to push the limits of technology. Join us in Palo Alto, CA to help shape the future of creative technology and empower the next generation of creators.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/2a284a94-c473-4b30-b079-e06881f36983",
+    "jobReqId": "2a284a94-c473-4b30-b079-e06881f36983",
+    "postedOn": "Posted 32 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Operations",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "772cd189-caa1-41bc-a0a0-0bb67ef7b3a6",
+   "title": "Principal Software Engineer, Product",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/772cd189-caa1-41bc-a0a0-0bb67ef7b3a6",
+   "externalPath": "/772cd189-caa1-41bc-a0a0-0bb67ef7b3a6",
+   "locationsText": "US remote",
+   "postedOn": "Posted 17 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "772cd189-caa1-41bc-a0a0-0bb67ef7b3a6"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-15",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "Remote",
+   "detail": {
+    "title": "Principal Software Engineer, Product",
+    "location": "US remote",
+    "additionalLocations": [],
+    "jobDescription": "<h2>About Pika</h2><p style=\"min-height:1.5em\">At Pika, we’re building the next generation of AI creative tools to empower human creativity. Our mission is to make video creation seamless, intuitive, and accessible to everyone, leveraging the power of advanced AI. We believe that AI should amplify creative expression—enabling everyone to create, collaborate, and communicate across media. Our team includes engineers, artists, and product thinkers, all passionate about building tools that unlock new creative possibilities.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Pika has raised significant funding and is backed by leading investors, with a collaborative culture based in Palo Alto, CA. We prefer hybrid in-office, sharing ideas and launching products together.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>About the Role</h2><p style=\"min-height:1.5em\">We’re seeking a Principal Product Engineer to lead the technical vision, architecture, and roadmap for user-facing systems at Pika. In this high-impact, senior leadership role, you’ll guide the engineering direction for features that serve millions of creative users—from intuitive UIs and collaboration tools to real-time interactions and advanced generative AI experiences.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">You’ll work closely with product, design, and engineering leadership to deliver features that are robust, scalable, and delightful to use. You’ll influence both the immediate user experience and long-term product vision, taking ideas from strategic conception to launch and ongoing iteration.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What You’ll Do</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Own and define the architecture and technical strategy for Pika’s web and multi-platform products</p></li><li><p style=\"min-height:1.5em\">Spearhead the development of real-time collaboration capabilities, messaging, and live multi-user interactions</p></li><li><p style=\"min-height:1.5em\">Drive product features from ideation through scoping, development, launch, and continuous improvement</p></li><li><p style=\"min-height:1.5em\">Integrate complex generative AI workflows (LLMs, models, agentic tools) into creative tooling</p></li><li><p style=\"min-height:1.5em\">Partner deeply with product and design leaders to deliver groundbreaking, accessible creative workflows</p></li><li><p style=\"min-height:1.5em\">Champion technical excellence through high standards, architecture reviews, mentorship, and proposals</p></li><li><p style=\"min-height:1.5em\">Oversee and improve cross-service metrics, tracing, and observability for critical product features</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We’re Looking For</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">8+ years of professional software engineering experience, with substantial time in senior/principal engineering and product-focused roles</p></li><li><p style=\"min-height:1.5em\">Distinguished track record leading the design, execution, and scaling of high-impact web or mobile products (React, TypeScript, Node.js, Go, or similar)</p></li><li><p style=\"min-height:1.5em\">Demonstrated strategy and execution in building robust, user-centric features for creative applications</p></li><li><p style=\"min-height:1.5em\">Comprehensive expertise in systems design: distributed systems, scalable APIs, and cloud infrastructure (AWS/GCP)</p></li><li><p style=\"min-height:1.5em\">Experience working across the stack, including ML/AI infrastructure (Python, GPU-backed workflows) as required</p></li><li><p style=\"min-height:1.5em\">Exceptional product intuition and a strategic mindset—driven by deep understanding of user and business needs</p></li><li><p style=\"min-height:1.5em\">Excellent communication and leadership skills; able to influence across disciplines and build consensus</p></li><li><p style=\"min-height:1.5em\">Strong sense of ownership and passion for delivering delightful creative experiences at scale</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>Nice to Have</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience building or integrating generative AI, agentic workflows, or ML inference platforms (Python/PyTorch)</p></li><li><p style=\"min-height:1.5em\">Creative background (design, art, architecture, or similar)</p></li><li><p style=\"min-height:1.5em\">Expertise in media-rich and real-time collaboration applications</p></li><li><p style=\"min-height:1.5em\">Startup experience and proven ability to thrive in fast-paced, ambiguous environments</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>Our Stack</h2><p style=\"min-height:1.5em\">React, TypeScript, Python, Go, Postgres, Redis, Docker, Kubernetes, AWS/GCP</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We Offer</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary in the AI industry</p></li><li><p style=\"min-height:1.5em\">Significant equity in a rapidly growing startup shaping the future of AI and creativity</p></li><li><p style=\"min-height:1.5em\">Comprehensive health benefits, monthly stipends, and company retreats</p></li><li><p style=\"min-height:1.5em\">Supportive, collaborative office culture—we’re building and launching together</p></li></ul>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/772cd189-caa1-41bc-a0a0-0bb67ef7b3a6",
+    "jobReqId": "772cd189-caa1-41bc-a0a0-0bb67ef7b3a6",
+    "postedOn": "Posted 17 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "99c13be0-3acc-40cb-b0f9-b546dbd7cf1f",
+   "title": "Head of Engineer, Product",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/99c13be0-3acc-40cb-b0f9-b546dbd7cf1f",
+   "externalPath": "/99c13be0-3acc-40cb-b0f9-b546dbd7cf1f",
+   "locationsText": "US remote",
+   "postedOn": "Posted 17 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "99c13be0-3acc-40cb-b0f9-b546dbd7cf1f"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-15",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "Remote",
+   "detail": {
+    "title": "Head of Engineer, Product",
+    "location": "US remote",
+    "additionalLocations": [],
+    "jobDescription": "<p style=\"min-height:1.5em\"><strong>About Pika</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">At Pika, we’re building the next generation of AI creative tools to empower human creativity. Our mission is to make video creation seamless, intuitive, and accessible to everyone, leveraging the power of advanced AI. We believe that AI should amplify creative expression—enabling everyone to create, collaborate, and communicate across media. Our team includes engineers, artists, and product thinkers, all passionate about building tools that unlock new creative possibilities.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Pika has raised significant funding and is backed by leading investors, with a collaborative culture based in Palo Alto, CA. We prefer hybrid in-office, sharing ideas and launching products together.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>About the Role</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We are seeking a Head of Engineer, Product Engineering, to provide visionary leadership for the strategy, architecture, and execution of Pika’s core product engineering initiatives. In this executive-level role, you will define and drive the execution of our technical roadmap for all user-facing products.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">You will lead and mentor high-performing engineering teams, working closely with product, design, and ML leadership to deliver features that are robust, scalable, and innovative for millions of users. Your technical expertise and leadership will shape product direction, ensuring exceptional engineering standards and prioritizing team growth and cross-functional alignment.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What You’ll Do</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Set and communicate the technical vision and strategy for product engineering across all Pika platforms and user-facing features</p></li><li><p style=\"min-height:1.5em\">Lead, mentor, and scale multiple engineering teams, fostering a culture of technical excellence, ownership, and innovation</p></li><li><p style=\"min-height:1.5em\">Architect and oversee the delivery of scalable, high-performing systems, ensuring best practices in system reliability, security, and efficiency</p></li><li><p style=\"min-height:1.5em\">Partner deeply with product, design, and ML teams to define technical solutions aligned with business and user needs</p></li><li><p style=\"min-height:1.5em\">Guide technical decision-making at both strategic and architectural levels, including technology selection and process improvement</p></li><li><p style=\"min-height:1.5em\">Champion standards for software quality, rapid iteration, and best-in-class product experience</p></li><li><p style=\"min-height:1.5em\">Own the technical roadmap, including resource planning and milestone delivery for major product launches and iterations</p></li><li><p style=\"min-height:1.5em\">Represent engineering in executive discussions and drive cross-functional alignment</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We’re Looking For</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">10+ years of progressive engineering experience, with significant time spent managing and scaling product engineering teams</p></li><li><p style=\"min-height:1.5em\">Strong record of technical leadership in developing and launching complex, high-impact, user-facing products (web/mobile)</p></li><li><p style=\"min-height:1.5em\">Proven experience in building and scaling distributed systems, APIs, and cloud infrastructure (AWS/GCP, Kubernetes, etc.)</p></li><li><p style=\"min-height:1.5em\">Mastery of system and software architecture for high-traffic, media-rich, or AI-powered applications</p></li><li><p style=\"min-height:1.5em\">Emotional intelligence and mentorship skills, with a track record of developing engineering leaders and high-performing teams</p></li><li><p style=\"min-height:1.5em\">Deep experience collaborating with executive leadership to shape organizational vision and drive business outcomes</p></li><li><p style=\"min-height:1.5em\">Outstanding communication and organizational abilities, thriving in a collaborative, dynamic environment</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Nice to Have</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience with generative AI, creative tools, or large-scale collaboration platforms</p></li><li><p style=\"min-height:1.5em\">Background in high-growth startups or high-ambiguity environments</p></li><li><p style=\"min-height:1.5em\">Open source, hackathon, or competitive coding experience</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Our Stack</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Python, Go, Node.js, Postgres, Redis, Docker, Kubernetes, AWS/GCP</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We Offer</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive executive-level salary in the AI industry</p></li><li><p style=\"min-height:1.5em\">Substantial equity in a fast-growing startup defining the future of AI and creativity</p></li><li><p style=\"min-height:1.5em\">Comprehensive health benefits, monthly stipends, and company retreats</p></li><li><p style=\"min-height:1.5em\">A collaborative leadership environment—we’re all building and launching together</p></li></ul>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/99c13be0-3acc-40cb-b0f9-b546dbd7cf1f",
+    "jobReqId": "99c13be0-3acc-40cb-b0f9-b546dbd7cf1f",
+    "postedOn": "Posted 17 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "75d96bc4-db1b-4b24-bbcb-d49739c30290",
+   "title": "Senior/Staff Software Engineer, Product",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/75d96bc4-db1b-4b24-bbcb-d49739c30290",
+   "externalPath": "/75d96bc4-db1b-4b24-bbcb-d49739c30290",
+   "locationsText": "US remote",
+   "postedOn": "Posted 17 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "75d96bc4-db1b-4b24-bbcb-d49739c30290"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-15",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "Remote",
+   "detail": {
+    "title": "Senior/Staff Software Engineer, Product",
+    "location": "US remote",
+    "additionalLocations": [],
+    "jobDescription": "<p style=\"min-height:1.5em\"><strong>About Pika</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">At Pika, we’re building the next generation of AI creative tools to empower human creativity. Our mission is to make video creation seamless, intuitive, and accessible to everyone by leveraging the power of advanced AI. We believe that AI should amplify creative expression—enabling everyone to create, collaborate, and communicate across media. Our team includes engineers, artists, and product thinkers, all passionate about building tools that unlock new creative possibilities.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Pika has raised significant funding and is backed by leading investors, with a collaborative culture based in Palo Alto, CA. We prefer a hybrid in-office model, sharing ideas and launching products together.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>About the Role</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We are seeking a Senior/Staff Product Engineer to play a key role in developing, launching, and scaling the product features that define Pika’s next generation AI-powered creative tools. You will collaborate closely with engineering, design, ML, and product teams to define product vision, design and build user-facing features, and deliver seamless creative experiences powered by cutting-edge AI technology.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">You will be responsible for architecting robust, scalable software systems and crafting high-quality product features from concept to launch. As a technical leader, you’ll mentor peers, drive technical best practices, and have significant ownership in shaping the evolution of our core product.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What You’ll Do</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Design, develop, and launch intuitive product features for AI-powered video and multimedia tools</p></li><li><p style=\"min-height:1.5em\">Collaborate with designers, engineers, and researchers to translate creative possibilities into real, user-facing features</p></li><li><p style=\"min-height:1.5em\">Architect and implement end-to-end product solutions, from backend infrastructure to frontend experience</p></li><li><p style=\"min-height:1.5em\">Ensure product quality, performance, and reliability across platforms</p></li><li><p style=\"min-height:1.5em\">Conduct code reviews, promote engineering best practices, and mentor team members</p></li><li><p style=\"min-height:1.5em\">Iterate rapidly on features, prototypes, and experiments in a fast-paced startup environment</p></li><li><p style=\"min-height:1.5em\">Partner closely with product and UX to deliver delightful, accessible user experiences</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We’re Looking For</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">5+ years experience in a senior engineering or product engineering role, ideally with a focus on user-facing features or creative tools</p></li><li><p style=\"min-height:1.5em\">Strong proficiency in software engineering fundamentals, with experience across the stack (front-end and back-end)</p></li><li><p style=\"min-height:1.5em\">Proven ability to design and build high-quality, scalable product features end-to-end</p></li><li><p style=\"min-height:1.5em\">Experience shipping software in production, ideally in consumer applications, SaaS, or creative technology</p></li><li><p style=\"min-height:1.5em\">Solid coding skills with modern languages and frameworks (e.g., TypeScript, React, Python, Go, or similar)</p></li><li><p style=\"min-height:1.5em\">Strong architectural skills and an eye for product detail and intuitiveness</p></li><li><p style=\"min-height:1.5em\">A collaborative, ownership-driven mindset with the ability to work independently and in teams</p></li><li><p style=\"min-height:1.5em\">Excellent communication skills and a passion for mentorship and technical leadership</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Nice to Have</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience with creative tools, multimedia, generative AI, or video/image/audio product development</p></li><li><p style=\"min-height:1.5em\">Background in building applications that leverage ML or AI-powered features</p></li><li><p style=\"min-height:1.5em\">Startup experience—taking features or products from 0 to 1</p></li><li><p style=\"min-height:1.5em\">Familiarity with designing delightful UX/UI in partnership with designers</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We Offer</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary in the AI and creative technology industry</p></li><li><p style=\"min-height:1.5em\">Equity in a rapidly growing startup shaping the future of AI and creativity</p></li><li><p style=\"min-height:1.5em\">Comprehensive health benefits, monthly stipends, and company retreats</p></li><li><p style=\"min-height:1.5em\">Supportive, collaborative office culture—we’re all building and launching together.</p></li></ul>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/75d96bc4-db1b-4b24-bbcb-d49739c30290",
+    "jobReqId": "75d96bc4-db1b-4b24-bbcb-d49739c30290",
+    "postedOn": "Posted 17 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "6891d634-18ce-4851-bc98-73b6841038ac",
+   "title": "Growth Engineer ",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/6891d634-18ce-4851-bc98-73b6841038ac",
+   "externalPath": "/6891d634-18ce-4851-bc98-73b6841038ac",
+   "locationsText": "US remote",
+   "postedOn": "Posted 10 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "6891d634-18ce-4851-bc98-73b6841038ac"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-22",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "Remote",
+   "detail": {
+    "title": "Growth Engineer ",
+    "location": "US remote",
+    "additionalLocations": [],
+    "jobDescription": "<h2>About Pika</h2><p style=\"min-height:1.5em\">At Pika, we’re building the next generation of AI creative tools to empower human creativity. Our mission is to make video creation seamless, intuitive, and accessible to everyone, leveraging the power of advanced AI. We believe that AI should amplify creative expression—enabling everyone to create, collaborate, and communicate across media. Our team includes engineers, artists, and product thinkers, all passionate about building tools that unlock new creative possibilities.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Pika has raised significant funding and is backed by leading investors, with a collaborative culture based in Palo Alto, CA. We prefer hybrid in-office, sharing ideas and launching products together.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>About the Role</h2><p style=\"min-height:1.5em\">We are seeking a Growth Engineer to accelerate the adoption and expansion of Pika’s creative AI platform. As a Growth Engineer, you will use your technical expertise to identify, build, and optimize features, systems, and experiments that drive user acquisition, activation, engagement, and retention. You’ll collaborate closely with product, design, marketing, and data teams to unlock rapid, measurable growth across the product.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">You will combine hands-on engineering with a deep analytical mindset, iterating quickly on growth initiatives and leveraging both code and data to uncover opportunities. Your work will directly impact millions of creators and help us shape the future of AI-powered media tools.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What You’ll Do</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Design, develop, and launch growth features and experiments across the Pika platform</p></li><li><p style=\"min-height:1.5em\">Implement scalable A/B tests and personalization strategies to optimize user acquisition and retention</p></li><li><p style=\"min-height:1.5em\">Analyze data to discover new growth levers and track the effectiveness of growth strategies</p></li><li><p style=\"min-height:1.5em\">Work closely with product, marketing, and data teams to prioritize and execute high-impact growth initiatives</p></li><li><p style=\"min-height:1.5em\">Rapidly prototype and ship new product surfaces, onboarding flows, and engagement loops</p></li><li><p style=\"min-height:1.5em\">Optimize performance, reliability, and user experience for features targeting key growth metrics</p></li><li><p style=\"min-height:1.5em\">Contribute to product virality, referral, and sharing capabilities to expand reach</p></li><li><p style=\"min-height:1.5em\">Advocate for a data-driven, experimentation-focused engineering culture</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We’re Looking For</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">4+ years of software engineering experience, ideally on product or growth teams</p></li><li><p style=\"min-height:1.5em\">Proven record of building and optimizing user-facing features, preferably in consumer or SaaS products</p></li><li><p style=\"min-height:1.5em\">Experience with experimentation frameworks, A/B testing, and data analysis</p></li><li><p style=\"min-height:1.5em\">Strong problem-solving and analytical skills, with ability to translate insights into scalable solutions</p></li><li><p style=\"min-height:1.5em\">Proficiency with modern web or backend technologies (Python, Go, Node.js, TypeScript, or similar)</p></li><li><p style=\"min-height:1.5em\">Familiarity with growth tools and analytics platforms (Amplitude, Segment, Google Analytics, etc.)</p></li><li><p style=\"min-height:1.5em\">Excellent communication skills and ability to collaborate with cross-functional teams</p></li><li><p style=\"min-height:1.5em\">Self-motivated, curious, and comfortable operating in a fast-paced, high-growth environment</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>Nice to Have</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience in generative AI, creative tools, or social platforms</p></li><li><p style=\"min-height:1.5em\">Background in high-growth startups or rapid experimentation roles</p></li><li><p style=\"min-height:1.5em\">Open source, hackathon, or growth hacking experience</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>Our Stack</h2><p style=\"min-height:1.5em\">Python, Go, Node.js, Postgres, Redis, Docker, Kubernetes, AWS/GCP</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h2>What We Offer</h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary in the AI industry</p></li><li><p style=\"min-height:1.5em\">Substantial equity in a fast-growing startup defining the future of AI and creativity</p></li><li><p style=\"min-height:1.5em\">Comprehensive health benefits, monthly stipends, and company retreats</p></li><li><p style=\"min-height:1.5em\">Collaborative, high-growth culture—everyone contributes to growth and success</p></li></ul>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/6891d634-18ce-4851-bc98-73b6841038ac",
+    "jobReqId": "6891d634-18ce-4851-bc98-73b6841038ac",
+    "postedOn": "Posted 10 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  },
+  {
+   "reqId": "c3e5e920-3ff1-4fdf-a43c-552c94ac5b03",
+   "title": "Data Engineer ",
+   "company": "pika",
+   "url": "https://jobs.ashbyhq.com/pika/c3e5e920-3ff1-4fdf-a43c-552c94ac5b03",
+   "externalPath": "/c3e5e920-3ff1-4fdf-a43c-552c94ac5b03",
+   "locationsText": "US remote",
+   "postedOn": "Posted 10 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "c3e5e920-3ff1-4fdf-a43c-552c94ac5b03"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-22",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "Remote",
+   "detail": {
+    "title": "Data Engineer ",
+    "location": "US remote",
+    "additionalLocations": [],
+    "jobDescription": "<p style=\"min-height:1.5em\"><strong>About Pika</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">At Pika, we’re building the next generation of AI creative tools to empower human creativity. Our mission is to make video creation seamless, intuitive, and accessible to everyone, leveraging the power of advanced AI. We believe that AI should amplify creative expression—enabling everyone to create, collaborate, and communicate across media. Our team includes engineers, artists, and product thinkers, all passionate about building tools that unlock new creative possibilities.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Pika has raised significant funding and is backed by leading investors, with a collaborative culture based in Palo Alto, CA. We prefer hybrid in-office, sharing ideas and launching products together.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>About the Role</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We are seeking a Data Engineer to design, build, and scale the data infrastructure powering Pika’s creative AI platform. As a Data Engineer, you will play a key role in architecting, implementing, and maintaining our data pipelines and analytics systems, enabling our team to make data-driven decisions and deliver world-class AI experiences. You will work closely with product, engineering, and data teams to ensure data is accurate, reliable, and accessible for users and internal business needs.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">You will combine software engineering know-how with data architecture expertise, helping us build robust, scalable, and high-performance systems. Your contributions will directly support the success of millions of creators and help shape the future of AI-powered media tools.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What You’ll Do</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Design, develop, and maintain scalable data pipelines and ETL workflows</p></li><li><p style=\"min-height:1.5em\">Build, automate, and optimize our data infrastructure for analytics, reporting, and machine learning applications</p></li><li><p style=\"min-height:1.5em\">Ensure data quality, consistency, and security across all sources and sinks</p></li><li><p style=\"min-height:1.5em\">Collaborate with engineering, analytics, and product teams to define data requirements and deliver reliable datasets</p></li><li><p style=\"min-height:1.5em\">Implement monitoring solutions and proactively resolve data pipeline issues</p></li><li><p style=\"min-height:1.5em\">Optimize storage and data processing performance for growth and efficiency</p></li><li><p style=\"min-height:1.5em\">Contribute to data modeling efforts and schema design for analytics and product needs</p></li><li><p style=\"min-height:1.5em\">Help establish best practices and empower a data-driven culture across the organization</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We’re Looking For</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">4+ years of experience as a data engineer or in a similar role designing, building, and maintaining data infrastructure</p></li><li><p style=\"min-height:1.5em\">Strong software engineering background with proficiency in Python, SQL, and/or similar languages</p></li><li><p style=\"min-height:1.5em\">Hands-on experience with data pipeline orchestration tools (Airflow, Prefect, Dagster, etc.)</p></li><li><p style=\"min-height:1.5em\">Experience with cloud data platforms (AWS/GCP, Redshift, BigQuery, Snowflake, etc.)</p></li><li><p style=\"min-height:1.5em\">Knowledge of database systems, data modeling, and data warehousing best practices</p></li><li><p style=\"min-height:1.5em\">Familiarity with monitoring, logging, and data quality practices for data workflows</p></li><li><p style=\"min-height:1.5em\">Excellent analytical and problem-solving skills with attention to detail</p></li><li><p style=\"min-height:1.5em\">Great communication skills and ability to work cross-functionally in a collaborative environment</p></li><li><p style=\"min-height:1.5em\">Self-motivated, curious, and comfortable in a fast-paced, high-growth startup</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Nice to Have</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience supporting data for machine learning or AI-powered applications</p></li><li><p style=\"min-height:1.5em\">Familiarity with real-time or streaming data architectures (Kafka, Kinesis, etc.)</p></li><li><p style=\"min-height:1.5em\">Prior work at high-growth startups or experience with rapid scaling</p></li><li><p style=\"min-height:1.5em\">Open source, hackathon, or data engineering community experience</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Our Stack</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">Python, Go, Node.js, Postgres, Redis, Docker, Kubernetes, AWS/GCP</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>What We Offer</strong></p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive salary in the AI industry</p></li><li><p style=\"min-height:1.5em\">Substantial equity in a fast-growing startup defining the future of AI and creativity</p></li><li><p style=\"min-height:1.5em\">Comprehensive health benefits, monthly stipends, and company retreats</p></li><li><p style=\"min-height:1.5em\">Collaborative, high-growth culture—everyone contributes to growth and success</p></li></ul>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/pika/c3e5e920-3ff1-4fdf-a43c-552c94ac5b03",
+    "jobReqId": "c3e5e920-3ff1-4fdf-a43c-552c94ac5b03",
+    "postedOn": "Posted 10 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "pika",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
+  }
+ ]
+}

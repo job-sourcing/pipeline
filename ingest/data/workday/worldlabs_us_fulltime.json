@@ -1,0 +1,652 @@
+{
+ "board": "ats:ashby:worldlabs",
+ "company": "World Labs",
+ "country": "United States",
+ "time_type": "",
+ "dumpDate": "2026-10-02",
+ "count": 11,
+ "details_merged": 11,
+ "signals_matched": 11,
+ "similar_edges": 0,
+ "facet_tagged_rows": 11,
+ "rows": [
+  {
+   "reqId": "5f1829c6-6016-40c6-8855-4ed674819305",
+   "title": "Senior Business Development & Ops Lead, Robotics & Physical AI",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/5f1829c6-6016-40c6-8855-4ed674819305",
+   "externalPath": "/5f1829c6-6016-40c6-8855-4ed674819305",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 46 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "5f1829c6-6016-40c6-8855-4ed674819305"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-08-17",
+   "departments": [
+    "Business"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Senior Business Development & Ops Lead, Robotics & Physical AI",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>Role Overview</strong></h1><p style=\"min-height:1.5em\">We are looking for a Senior Business Development and Operations Lead to help shape how World Labs brings its robotics technology to market.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">This is a highly technical, hands-on business development role at the intersection of Physical AI, simulation, spatial intelligence and enterprise customers. You will be part of our world-class teams partnering closely with research and engineering groups to understand what our technology can do today, where it is heading, and where it can create meaningful value for robotics teams in the real world. </p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">You will own the full lifecycle of strategic and operational customer engagements: from identifying the right problems and shaping the solution to building the commercial relationship and closing the deal.</p><p style=\"min-height:1.5em\"></p><h1><strong>What You Will Do</strong></h1><p style=\"min-height:1.5em\"><em><strong>Market + Technical Understanding</strong></em></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Develop a deep understanding of our robotics technology, its capabilities and limitations, and how the broader robotics and Physical AI ecosystem is evolving.</p></li><li><p style=\"min-height:1.5em\">Identify the customers, use cases, and problems where our technology can create differentiated value, and develop a strong point of view on where the market is heading.</p></li></ul><p style=\"min-height:1.5em\"><em><strong>Customer Discovery + Feedback Loop</strong></em></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Spend meaningful time with customers to understand their workflows, technical constraints, deployment environments, and unmet needs firsthand.</p></li><li><p style=\"min-height:1.5em\">Build a tight feedback loop between customers and the team: translate problems back to research and engineering, synthesize patterns, and help distinguish scalable product opportunities from one-off customization.</p></li></ul><p style=\"min-height:1.5em\"><em><strong>Commercialization + Closing</strong></em></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Shape and execute early customer engagements, pilots, and partnerships in close collaboration with research, engineering, and product teams.</p></li><li><p style=\"min-height:1.5em\">Own strategic opportunities end to end: from prospecting and discovery through technical evaluation, commercial structure, negotiation, contracting, and close.</p></li></ul><p style=\"min-height:1.5em\"><em><strong>Operating + Building the Function</strong></em></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Build the operational foundation for an early commercial function: maintain customer and opportunity pipelines, establish lightweight processes, drive follow-through, unblock dependencies, and make sure commitments get delivered.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>What We Are Looking For</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">8+ years of experience in related industries.</p></li><li><p style=\"min-height:1.5em\">Deep experience in robotics, Physical AI, autonomous systems, simulation, or an adjacent frontier technology, with firsthand exposure to customers, products, or deployments.</p></li><li><p style=\"min-height:1.5em\">Technical fluency to engage credibly with researchers and engineers, with strong curiosity to understand how the technology works and draw connections between technical capabilities and market opportunities.</p></li><li><p style=\"min-height:1.5em\"><strong>Strong understanding of the different generations of robotics technology </strong>- from traditional automation, through the computer-vision-driven wave of robotics, to today’s frontier in imitation learning, reinforcement learning, robot foundation models, and sim-to-real.</p></li><li><p style=\"min-height:1.5em\">Demonstrated ability to develop and close complex B2B relationships, from ambiguous early conversations through signed agreements.</p></li><li><p style=\"min-height:1.5em\"><strong>Strong market and adoption judgment:</strong> you understand where new robotics capabilities will find pull first, which customers and use cases to prioritize, and how to sequence entry across markets. You can reason across environments including logistics and warehousing, industrial and scientific labs, electronics manufacturing, automotive, defense, and emerging consumer/home applications.</p></li><li><p style=\"min-height:1.5em\"><strong>Ability to turn technical capability into repeatable commercial value:</strong> identify the right wedge, business model, pricing, and channel strategy, and build a path from demo → paid PoC → production deployment while avoiding bespoke work that does not scale.</p></li><li><p style=\"min-height:1.5em\">Comfortable quantifying and defending commercial decisions: you can build a credible pipeline forecast, price a pilot, or model a deal structure with real numbers behind it.</p></li><li><p style=\"min-height:1.5em\"><strong>Builder mentality.</strong> You thrive in the ambiguity of early commercialization, creating the processes, tools, and operating cadence needed while figuring out what works.</p></li><li><p style=\"min-height:1.5em\">Experience being an early or founding commercial hire inside a highly technical organization: you know how to earn credibility with researchers and engineers, not just with enterprise buyers.</p></li><li><p style=\"min-height:1.5em\">Low ego and highly collaborative. You seek the best ideas regardless of where they come from, build closely with the team, and do what is needed to deliver results.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>How You Operate</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Pursuit of Greatness:</strong> You have a high bar for the work and the ambition to help build a category-defining business. You are not satisfied with the obvious answer, are willing to take bold swings, and go beyond what is required to create an exceptional outcome.</p></li><li><p style=\"min-height:1.5em\"><strong>Intellectual Honesty:</strong> You are deeply curious about customers, technology, and the market. You seek what is true rather than what validates an existing thesis, listen closely to users, and are willing to change your point of view when the evidence changes.</p></li><li><p style=\"min-height:1.5em\"><strong>Deliver Results:</strong> You own outcomes end to end. You turn conversations into actions, close loops, unblock yourself and others, and get things done—even when the path, process, or ownership is not perfectly defined.</p></li><li><p style=\"min-height:1.5em\"><strong>Build Together:</strong> You work side by side with research, engineering, product, and operations. You communicate constructively, seek the best idea rather than your idea, and can disagree, commit, and move forward as one team.</p></li></ul><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/5f1829c6-6016-40c6-8855-4ed674819305",
+    "jobReqId": "5f1829c6-6016-40c6-8855-4ed674819305",
+    "postedOn": "Posted 46 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business",
+   "signals": {
+    "linkedin_job_id": "4464117178",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4464117178",
+    "title": "Senior Business Development & Ops Lead, Robotics & Physical AI",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-09",
+    "num_applicants": 74,
+    "applicants_label": "74 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:42",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "bbeed7cd-ba6b-4a3b-a02b-0e1744a0ec94",
+   "title": "Research Scientist (Generative Modeling)",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/bbeed7cd-ba6b-4a3b-a02b-0e1744a0ec94",
+   "externalPath": "/bbeed7cd-ba6b-4a3b-a02b-0e1744a0ec94",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 277 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "bbeed7cd-ba6b-4a3b-a02b-0e1744a0ec94"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2025-12-29",
+   "departments": [
+    "Research"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Research Scientist (Generative Modeling)",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>Role Overview</strong></h1><p style=\"min-height:1.5em\">We are looking for a talented Research Scientist with a strong background in generative modeling, particularly diffusion models, to join our modeling team. This role is ideal for candidates with deep expertise in diffusion models applied to images, videos, or 3D assets and scenes.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">While <strong>not required</strong>, experience in one or more of the following areas is <strong>a strong plus</strong>:</p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Large-scale model training</strong></p></li><li><p style=\"min-height:1.5em\"><strong>Data curation for pre-training or post-training</strong></p></li><li><p style=\"min-height:1.5em\"><strong>Tokenizers and VAEs for image, video, or 3D data</strong></p></li><li><p style=\"min-height:1.5em\"><strong>Long-context architectures</strong></p></li><li><p style=\"min-height:1.5em\"><strong>3D vision</strong></p></li></ul><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">You will collaborate closely with researchers, engineers, and product teams to bring advanced 3D modeling and machine learning techniques into real-world applications, ensuring that our technology remains at the forefront of visual innovation. This role involves significant hands-on research and engineering work, driving projects from conceptualization through to production deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>What You Will Do</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Design, implement, and train large-scale diffusion models for generating 3D worlds</p></li><li><p style=\"min-height:1.5em\">Develop and experiment with large-scale diffusion models to add novel control signals, adapt to target aesthetic preferences, or distill for efficient inference</p></li><li><p style=\"min-height:1.5em\">Collaborate closely with research and product teams to understand and translate product requirements into effective technical roadmaps.</p></li><li><p style=\"min-height:1.5em\">Contribute hands-on to all stages of model development including data curation, experimentation, evaluation, and deployment.</p></li><li><p style=\"min-height:1.5em\">Continuously explore and integrate cutting-edge research in diffusion and generative AI more broadly</p></li><li><p style=\"min-height:1.5em\">Act as a key technical resource within the team, mentoring colleagues, and driving best practices in generative modeling and ML engineering</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Key Qualifications</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">3+ years of experience in generative modeling or applied ML roles, ideally at a startup or other fast-paced research environment</p></li><li><p style=\"min-height:1.5em\">Extensive experience with machine learning frameworks such as PyTorch or TensorFlow, especially in the context of diffusion models and other generative models</p></li><li><p style=\"min-height:1.5em\">Deep expertise in at least one area of generative modeling: pre-training, post-training, diffusion distillation, fine-tuning with new conditioning signals, etc for diffusion models</p></li><li><p style=\"min-height:1.5em\">Strong history of publications or open-source contributions involving large-scale diffusion models</p></li><li><p style=\"min-height:1.5em\">Strong coding proficiency in Python and experience with GPU-accelerated computing.</p></li><li><p style=\"min-height:1.5em\">Ability to engage effectively with researchers and cross-functional teams, clearly translating complex technical ideas into actionable tasks and outcomes.</p></li><li><p style=\"min-height:1.5em\">Comfortable operating within a dynamic startup environment with high levels of ambiguity, ownership, and innovation.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Preferred Qualifications</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Contributions to open-source projects in the fields of computer vision, graphics, or ML.</p></li><li><p style=\"min-height:1.5em\">Familiarity with large-scale training infrastructure (e.g., multi-node GPU clusters, distributed training environments).</p></li><li><p style=\"min-height:1.5em\">Experience integrating machine learning models into production environments.</p></li><li><p style=\"min-height:1.5em\">Led or been involved with the development or training of large-scale, state-of-the-art generative models</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/bbeed7cd-ba6b-4a3b-a02b-0e1744a0ec94",
+    "jobReqId": "bbeed7cd-ba6b-4a3b-a02b-0e1744a0ec94",
+    "postedOn": "Posted 277 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Research",
+   "signals": {
+    "linkedin_job_id": "4464109231",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4464109231",
+    "title": "Research Scientist (Generative Modeling)",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-09",
+    "num_applicants": 75,
+    "applicants_label": "75 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:38",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "c00efc41-a495-4a97-94e2-729c0f451f00",
+   "title": "Senior Product Engineer (Tech Lead)",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/c00efc41-a495-4a97-94e2-729c0f451f00",
+   "externalPath": "/c00efc41-a495-4a97-94e2-729c0f451f00",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 277 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "c00efc41-a495-4a97-94e2-729c0f451f00"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2025-12-29",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Senior Product Engineer (Tech Lead)",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>Role Overview</strong></h1><p style=\"min-height:1.5em\">We’re looking for a Senior Product Engineer who thrives at the intersection of product and engineering. You should have strong coding skills across the stack, a deep appreciation for intuitive user experiences, and the technical expertise to design end-to-end systems. In this role, you’ll own product features end-to-end—from ideation through to building responsive, user-centric web apps and backend services. Serving as a \"player-coach,\" you will act as the engineering counterpart to product management to help with technical roadmapping and sprint execution. You will bring crucial software engineering and technical leadership experience to support a highly talented product team that currently leans heavily on design.</p><p style=\"min-height:1.5em\"></p><h1><strong>What You Will Do</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Partner directly with product leadership on architectural decisions, sprint planning and technical execution.</p></li><li><p style=\"min-height:1.5em\">Ship focused, user-facing applications and developer tooling end-to-end, owning frontend, backend, and workflow design.</p></li><li><p style=\"min-height:1.5em\">Design and build complex workflows around generative models: chained and parallel generation calls, long-running async operations, streaming results, caching, retries, and graceful degradation around inference that takes seconds to minutes.</p></li><li><p style=\"min-height:1.5em\">Own the deliverable: you set and hold the quality bar for what ships under your name - correctness, performance, polish, and maintainability - and you review others' work to the same standard.</p></li><li><p style=\"min-height:1.5em\">Work directly with users and design partners; instrument what you ship, watch it get used, and iterate fast.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Key Qualifications</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">6+ years of software engineering experience (8+ for Staff), with a track record of end-to-end ownership. You've shipped user-facing products, not just components of them, and you've been accountable for their quality in production.</p></li><li><p style=\"min-height:1.5em\">Deep proficiency in modern web application technologies for the frontend (e.g., TypeScript, React) and backend services, with a strong understanding of web architecture; especially in interactive and real-time applications with performance considerations.</p></li><li><p style=\"min-height:1.5em\">Fluency with AI-assisted development workflows, grounded in fundamentals strong enough to verify, correct, and own everything you ship — you use the tools to move faster, not to outsource judgment.</p></li><li><p style=\"min-height:1.5em\">Experience building products on top of asynchronous, long-latency, or streaming APIs.</p></li><li><p style=\"min-height:1.5em\">A product-minded approach: you form opinions about what users need, validate them cheaply, and change course on evidence.</p></li><li><p style=\"min-height:1.5em\">Excellent problem-solving abilities and a strong foundation in computer science principles.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Preferred Qualifications</strong></h1><p style=\"min-height:1.5em\">While not required, experience in one or more of the following is a strong plus:</p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience in 3D graphics programming and shader development, particularly web frameworks such as WebGL and three.js.</p></li><li><p style=\"min-height:1.5em\">Experience building applications around generative image, video, or 3D AI models.</p></li><li><p style=\"min-height:1.5em\">Contributions to open-source graphics or machine learning projects.</p></li><li><p style=\"min-height:1.5em\">Experience working in VFX, gaming, 3D design, or other industries that focus on high-fidelity visual outputs.</p></li></ul><h2></h2><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/c00efc41-a495-4a97-94e2-729c0f451f00",
+    "jobReqId": "c00efc41-a495-4a97-94e2-729c0f451f00",
+    "postedOn": "Posted 277 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4464106323",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4464106323",
+    "title": "Senior Product Engineer (Tech Lead)",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-09",
+    "num_applicants": 40,
+    "applicants_label": "40 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:43",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "36cfefe5-8d34-4782-866e-7f5114c637b8",
+   "title": "Pipeline Engineer (Graphics/3D)",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/36cfefe5-8d34-4782-866e-7f5114c637b8",
+   "externalPath": "/36cfefe5-8d34-4782-866e-7f5114c637b8",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 267 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "36cfefe5-8d34-4782-866e-7f5114c637b8"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-01-08",
+   "departments": [
+    "Research"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Pipeline Engineer (Graphics/3D)",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>Role Overview</strong></h1><p style=\"min-height:1.5em\">We are building a production-grade web application for <strong>3D Gaussian Splat scene generation, editing, and publishing</strong>, and we’re looking for a Pipeline Engineer to help integrate cutting-edge research features and make them reliable, debuggable, and delightful to use.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">This is a <strong>high-ownership, fullstack-but-backend-heavy role</strong> that sits between <strong>R&amp;D and frontend</strong>. You will work end-to-end across graphics/ML algorithms, backend services, and frontend UI — turning proof-of-concepts into shipped features that users can rely on. The ideal candidate enjoys making complex, messy systems work smoothly in production and improving them continuously based on both internal testing and external user feedback.</p><p style=\"min-height:1.5em\"></p><h1><strong>Key Responsibilities</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Bridge research and product by working closely with both graphics/computer vision researchers and frontend engineers to ship usable features.</p></li><li><p style=\"min-height:1.5em\">Turn standalone Python scripts into clean, production-ready systems with clear inputs, outputs, validations, and failure modes.</p></li><li><p style=\"min-height:1.5em\">Develop backend services, APIs, and tooling that expose complex 3D workflows in a reliable and scalable way.</p></li><li><p style=\"min-height:1.5em\">Assist in integrations across the 3D ecosystem, including asset import/export and format conversion with common DCC tools.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Ideal Candidate Profile</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">You have a strong <strong>pipeline mindset</strong>, with experience turning scripts into production systems with clear inputs, outputs, validations, and failure modes.</p></li><li><p style=\"min-height:1.5em\">You enjoy building tools and infrastructure that enable others, and you take pride in making complex systems understandable and usable.</p></li><li><p style=\"min-height:1.5em\">You have fluency in the <strong>3D ecosystem</strong>, including familiarity with 3D algorithms, DCC tools and common 3D file formats, sufficient to design integrations and debug workflow issues.</p></li></ul><p style=\"min-height:1.5em\"></p><h2><strong>Minimum Qualifications</strong></h2><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Strong proficiency in <strong>Python</strong>, including packaging, typing, tooling, debugging, and performance profiling.</p></li><li><p style=\"min-height:1.5em\">Strong literacy in core <strong>3D graphics and computer vision concepts</strong>, such as transforms, cameras, coordinate systems, rendering, and visual artifact debugging.</p></li><li><p style=\"min-height:1.5em\">Demonstrated experience taking prototypes to production, including refactoring, testing, CI/CD, versioned artifacts, and reproducibility.</p></li><li><p style=\"min-height:1.5em\">Solid backend fundamentals, including HTTP APIs, FastAPI (or similar frameworks), async/concurrency basics, cloud deployment, and service reliability.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Strongly Preferred / Nice-to-Haves</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience with <strong>photogrammetry, 3D reconstruction, or Gaussian splat rendering pipelines</strong>.</p></li><li><p style=\"min-height:1.5em\">Hands-on experience with DCC tools such as <strong>Blender, Maya, Houdini, Unreal, or Unity</strong>.</p></li><li><p style=\"min-height:1.5em\">Familiarity with the GPU stack (<strong>CUDA, PyTorch)</strong>, batch/queue systems, and containerization (Docker, Kubernetes).</p></li><li><p style=\"min-height:1.5em\">Frontend adjacency, with comfort collaborating on <strong>React-based parameter plumbing</strong> and UX for technical controls.</p></li><li><p style=\"min-height:1.5em\">Experience with production pipelines at <strong>VFX, animation, or gaming</strong> studios.</p></li><li><p style=\"min-height:1.5em\">A production support mindset, including willingness to iterate on documentation, tutorials, and error messages to improve usability and reduce misuse.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Example Projects You Might Work On</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Packaging ML and 3D Python pipelines into GPU-backed FastAPI services with request validation, reproducible outputs, and well-defined request/response schemas.</p></li><li><p style=\"min-height:1.5em\">Designing parameter schemas and defaults that map cleanly from frontend controls to backend APIs and internal pipeline configurations.</p></li><li><p style=\"min-height:1.5em\">Integrating import/export workflows with popular DCC tools (e.g., Blender, Maya, Houdini, Unity, Unreal, USD), identifying workflow friction, and producing lightweight documentation, tutorials, and example code/scripts to help users succeed.</p><p style=\"min-height:1.5em\"></p></li></ul><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/36cfefe5-8d34-4782-866e-7f5114c637b8",
+    "jobReqId": "36cfefe5-8d34-4782-866e-7f5114c637b8",
+    "postedOn": "Posted 267 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Research",
+   "signals": {
+    "linkedin_job_id": "4464112179",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4464112179",
+    "title": "Pipeline Engineer (Graphics/3D)",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-09",
+    "num_applicants": 96,
+    "applicants_label": "96 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:46",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "5c52f4ca-4fee-489b-83a7-88455fb832fd",
+   "title": "Research Engineer / Scientist (3D Tech Lead)",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/5c52f4ca-4fee-489b-83a7-88455fb832fd",
+   "externalPath": "/5c52f4ca-4fee-489b-83a7-88455fb832fd",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 247 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "5c52f4ca-4fee-489b-83a7-88455fb832fd"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-01-28",
+   "departments": [
+    "Research"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Research Engineer / Scientist (3D Tech Lead)",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>Role Overview</strong></h1><p style=\"min-height:1.5em\">We’re looking for a Tech Lead for 3D Modeling &amp; Reconstruction to set technical direction and drive execution for our core 3D modeling efforts. This role is ideal for someone with a strong research science (RS) or research engineering (RE) background who has made meaningful contributions to the field of 3D reconstruction and/or modeling—through academic publications, widely used open-source projects, or production systems deployed at scale.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">This is a hands-on leadership role. You’ll combine deep technical expertise with the ability to guide a high-impact team, shaping both the research roadmap and the production systems that bring modern 3D modeling methods into real-world products. You’ll work closely with research, engineering, and product partners to translate cutting-edge ideas into reliable, scalable capabilities.</p><p style=\"min-height:1.5em\"></p><h1><strong>What You Will Do</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Set the technical vision and roadmap for 3D modeling and reconstruction, balancing research exploration with product-driven milestones.</p></li><li><p style=\"min-height:1.5em\">Lead the design and implementation of state-of-the-art 3D modeling systems, spanning geometry, appearance, and scene-level representations.</p></li><li><p style=\"min-height:1.5em\">Drive innovation in modern 3D modeling approaches, including learning-based and optimization-based methods, with an eye toward robustness, scalability, and real-world data.</p></li><li><p style=\"min-height:1.5em\">Guide architectural decisions around 3D representations, training pipelines, and inference systems, ensuring they integrate cleanly with broader 3D data and rendering platforms.</p></li><li><p style=\"min-height:1.5em\">Lead and mentor a small team of research scientists and/or research engineers: providing technical guidance, setting high standards, and fostering a culture of rigor and ownership.</p></li><li><p style=\"min-height:1.5em\">Own end-to-end execution of key initiatives, from early research prototypes through production deployment and iteration.</p></li><li><p style=\"min-height:1.5em\">Collaborate closely with cross-functional partners to align 3D modeling capabilities with product needs, timelines, and quality bars.</p></li><li><p style=\"min-height:1.5em\">Represent the team and its work internally and externally, including contributing to publications, technical talks, or open-source efforts where appropriate.</p></li><li><p style=\"min-height:1.5em\">Continuously evaluate emerging research and industry trends in 3D modeling and reconstruction, and translate the most promising ideas into actionable plans.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Key Qualifications</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">8+ years of experience in 3D reconstruction, 3D modeling, computer vision, graphics, or closely related fields.</p></li><li><p style=\"min-height:1.5em\">A strong track record of impactful contributions to the field, demonstrated through academic publications, influential open-source work, or widely deployed industry products.</p></li><li><p style=\"min-height:1.5em\">Deep expertise in modern 3D modeling and reconstruction methods, including representation design, optimization strategies, and learning-based approaches.</p></li><li><p style=\"min-height:1.5em\">Proven experience leading or mentoring a small team, lab, or project group, with responsibility for technical direction and delivery.</p></li><li><p style=\"min-height:1.5em\">Strong programming skills in Python and/or C++, with experience building both research prototypes and production-quality systems.</p></li><li><p style=\"min-height:1.5em\">Hands-on experience with machine learning frameworks and large-scale experimentation or training pipelines.</p></li><li><p style=\"min-height:1.5em\">Solid understanding of how 3D modeling systems interface with data pipelines, rendering, and downstream applications.</p></li><li><p style=\"min-height:1.5em\">Comfort operating in fast-moving, ambiguous environments, making high-leverage technical decisions with incomplete information.</p></li><li><p style=\"min-height:1.5em\">High ownership mindset and a product-aware perspective: you care not just about novelty, but about reliability, performance, and impact.</p></li><li><p style=\"min-height:1.5em\">Enjoy collaborating with senior peers across research and engineering, and raising the technical bar through example, mentorship, and clear technical communication.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/5c52f4ca-4fee-489b-83a7-88455fb832fd",
+    "jobReqId": "5c52f4ca-4fee-489b-83a7-88455fb832fd",
+    "postedOn": "Posted 247 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Research",
+   "signals": {
+    "linkedin_job_id": "4464119139",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4464119139",
+    "title": "Research Engineer / Scientist (3D Tech Lead)",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-09",
+    "num_applicants": 35,
+    "applicants_label": "35 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:39",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "c379f1c2-4d49-439c-ad41-98790498428b",
+   "title": "Research Engineer / Scientist (SLAM)",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/c379f1c2-4d49-439c-ad41-98790498428b",
+   "externalPath": "/c379f1c2-4d49-439c-ad41-98790498428b",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 227 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "c379f1c2-4d49-439c-ad41-98790498428b"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-02-17",
+   "departments": [
+    "Research"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Research Engineer / Scientist (SLAM)",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>Role Overview</strong></h1><p style=\"min-height:1.5em\">We’re looking for a <strong>SLAM Specialist</strong> to design, implement, and advance state-of-the-art simultaneous localization and mapping systems that enable accurate, robust spatial understanding from real-world sensor data. This role is focused on modern SLAM techniques—both classical and learning-based—with an emphasis on scalable state estimation, sensor fusion, and long-term mapping in complex, dynamic environments.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">This is a hands-on, research-driven role for someone who enjoys working at the intersection of robotics, computer vision, and probabilistic inference. You’ll collaborate closely with research scientists, ML engineers, and systems teams to translate cutting-edge SLAM ideas into production-ready capabilities that form the backbone of our world modeling stack.</p><p style=\"min-height:1.5em\"></p><h1><strong>What You Will Do</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Design and implement modern SLAM systems for real-world environments, including visual, visual-inertial, lidar, or multi-sensor configurations.</p></li><li><p style=\"min-height:1.5em\">Develop robust localization and mapping pipelines, including pose estimation, map management, loop closure, and global optimization.</p></li><li><p style=\"min-height:1.5em\">Research and prototype learning-based or hybrid SLAM approaches that combine classical geometry with modern machine learning methods.</p></li><li><p style=\"min-height:1.5em\">Build and maintain scalable state estimation frameworks, including factor graph optimization, filtering, and smoothing techniques.</p></li><li><p style=\"min-height:1.5em\">Develop sensor fusion strategies that integrate cameras, IMUs, depth sensors, lidar, or other modalities to improve robustness and accuracy.</p></li><li><p style=\"min-height:1.5em\">Analyze failure modes in real-world SLAM deployments (e.g., perceptual aliasing, dynamic scenes, drift) and design principled solutions.</p></li><li><p style=\"min-height:1.5em\">Create evaluation frameworks, benchmarks, and metrics to measure SLAM accuracy, robustness, and performance across large datasets.</p></li><li><p style=\"min-height:1.5em\">Optimize performance across the stack, including real-time constraints, memory usage, and compute efficiency, for large-scale and production systems.</p></li><li><p style=\"min-height:1.5em\">Collaborate with reconstruction, simulation, and infrastructure teams to ensure SLAM outputs integrate cleanly with downstream world modeling and rendering pipelines.</p></li><li><p style=\"min-height:1.5em\">Contribute to technical direction by proposing new research ideas, mentoring teammates, and helping define best practices for localization and mapping across the organization.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Key Qualifications</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">6+ years of experience working on SLAM, state estimation, robotics perception, or related areas.</p></li><li><p style=\"min-height:1.5em\">Strong foundation in probabilistic estimation, optimization, and geometric vision (e.g., bundle adjustment, factor graphs, Kalman filtering).</p></li><li><p style=\"min-height:1.5em\">Deep experience with one or more SLAM paradigms (visual, visual-inertial, lidar, multi-sensor, or hybrid systems).</p></li><li><p style=\"min-height:1.5em\">Proficiency in Python and/or C++, with hands-on experience building research or production-grade SLAM systems.</p></li><li><p style=\"min-height:1.5em\">Experience with numerical optimization libraries and/or robotics frameworks.</p></li><li><p style=\"min-height:1.5em\">Familiarity with learning-based perception or representation learning and how it can augment classical SLAM pipelines.</p></li><li><p style=\"min-height:1.5em\">Strong understanding of real-world sensor characteristics, calibration, synchronization, and noise modeling.</p></li><li><p style=\"min-height:1.5em\">Proven ability to work in ambiguous, fast-moving environments and drive projects from concept through deployment.</p></li><li><p style=\"min-height:1.5em\">A strong sense of ownership and engineering rigor: you care deeply about correctness, stability, and measurable improvements.</p></li><li><p style=\"min-height:1.5em\">Enjoy collaborating with a small, high-caliber team and raising the technical bar through thoughtful design, experimentation, and code quality.</p><p style=\"min-height:1.5em\"></p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/c379f1c2-4d49-439c-ad41-98790498428b",
+    "jobReqId": "c379f1c2-4d49-439c-ad41-98790498428b",
+    "postedOn": "Posted 227 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Research",
+   "signals": {
+    "linkedin_job_id": "4464112180",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4464112180",
+    "title": "Research Engineer / Scientist (SLAM)",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-09",
+    "num_applicants": 51,
+    "applicants_label": "51 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:35",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "207875a2-d8d9-4b9c-ba9f-a19358c07575",
+   "title": "Performance Engineer (Inference, Training & GPU)",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/207875a2-d8d9-4b9c-ba9f-a19358c07575",
+   "externalPath": "/207875a2-d8d9-4b9c-ba9f-a19358c07575",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 154 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "207875a2-d8d9-4b9c-ba9f-a19358c07575"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-05-01",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Performance Engineer (Inference, Training & GPU)",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>Role Overview</strong></h1><p style=\"min-height:1.5em\">We are looking for a Performance Engineer to make World Labs’ models train and serve as fast as the hardware allows.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">Running large generative world models at scale is a novel systems problem. You will find the bottlenecks — in kernels, in the serving path, in the training loop, in how we use our GPUs — and eliminate them. Your ownership is technical and concrete: the throughput you unlock, the latency you cut, the utilization you win back, and the correctness you hold while doing it. You will work up and down the stack, from low-level tensor and kernel optimization to fleet-wide serving efficiency, in close partnership with the researchers whose models you are accelerating.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">This is a hands-on, individual-contributor role. You will profile, design, build, and ship code directly.</p><p style=\"min-height:1.5em\"></p><h1><strong>What You Will Do</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Optimize inference and serving end to end — latency, throughput, batching, caching, and scheduling — to serve our models efficiently at production scale.</p></li><li><p style=\"min-height:1.5em\">Write and tune GPU kernels (CUDA, Triton) for hot paths; drive kernel fusion, memory- and bandwidth-bound optimization, and low-precision (FP8/INT8) execution.</p></li><li><p style=\"min-height:1.5em\">Optimize training throughput and GPU utilization: parallelism strategies, communication/compute overlap, mixed precision, and eliminating pipeline stalls.</p></li><li><p style=\"min-height:1.5em\">Build performance models, profiling workflows, and observability that make throughput, latency, cost, utilization, and their tradeoffs legible across the stack.</p></li><li><p style=\"min-height:1.5em\">Own numerical correctness across precision, kernel, and hardware changes — treating correctness as part of performance, not separate from it.</p></li><li><p style=\"min-height:1.5em\">Partner with researchers to productionize models for serving and to make experiments run faster and more reliably.</p></li><li><p style=\"min-height:1.5em\">Where needed, work on the distributed systems that training and inference run on — but the core of the job is squeezing the most out of every GPU.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Key Qualifications</strong></h1><p style=\"min-height:1.5em\">You should excel at the fundamentals below — we index on inference, serving, GPU optimization, and training performance. Distributed-systems breadth is welcome, but secondary.</p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Strong performance-engineering foundations: profiling, roofline analysis, latency/throughput optimization, and disciplined root-cause investigation.</p></li><li><p style=\"min-height:1.5em\">Deep GPU programming and optimization experience (CUDA and/or Triton) — kernel-level tuning, memory hierarchy, and bandwidth optimization at scale.</p></li><li><p style=\"min-height:1.5em\">Hands-on experience optimizing inference and serving for large models: batching, KV/prompt caching, quantization, and low-latency, high-throughput sampling.</p></li><li><p style=\"min-height:1.5em\">Hands-on experience optimizing training performance: parallelism, distributed communication, mixed/low precision, and utilization.</p></li><li><p style=\"min-height:1.5em\">Working knowledge of ML framework internals (PyTorch and/or JAX; torch.compile, XLA, or similar compiler paths).</p></li><li><p style=\"min-height:1.5em\">Strong proficiency in Python, with the ability to drop into C++/CUDA (and Rust or Go) as the work demands.</p></li><li><p style=\"min-height:1.5em\">High-ownership mindset — you measure yourself by throughput shipped and latency cut, not tickets closed.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Preferred Qualifications</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience at an AI lab or ML-native company, optimizing systems used directly by researchers and productionizing research code.</p></li><li><p style=\"min-height:1.5em\">Low-precision and numerics depth: FP8/INT8 quantization, mixed-precision, and detecting numerical regressions across hardware platforms.</p></li><li><p style=\"min-height:1.5em\">Distributed systems for large-scale training and inference — collective communication (NCCL), interconnects (NVLink), model and tensor parallelism, and fault tolerance. A strong plus, but not a substitute for the core skills above.</p></li><li><p style=\"min-height:1.5em\">Experience serving generative, diffusion, video, or 3D/spatial models — not just text LLMs.</p></li><li><p style=\"min-height:1.5em\">Multi-accelerator experience (GPU plus TPU or Trainium) and partnering with hardware vendors on accelerator capabilities.</p></li><li><p style=\"min-height:1.5em\">Building performance-modeling and observability frameworks for GPU utilization and cost.</p></li></ul><h1></h1><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/207875a2-d8d9-4b9c-ba9f-a19358c07575",
+    "jobReqId": "207875a2-d8d9-4b9c-ba9f-a19358c07575",
+    "postedOn": "Posted 154 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4464123114",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4464123114",
+    "title": "Performance Engineer (Inference, Training & GPU)",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-09",
+    "num_applicants": 83,
+    "applicants_label": "83 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:36",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "85994fa5-c44c-48b4-84fc-aece7934c2cb",
+   "title": "Research Engineer / Scientist (Robot Learning)",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/85994fa5-c44c-48b4-84fc-aece7934c2cb",
+   "externalPath": "/85994fa5-c44c-48b4-84fc-aece7934c2cb",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 66 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "85994fa5-c44c-48b4-84fc-aece7934c2cb"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-07-28",
+   "departments": [
+    "Research"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Research Engineer / Scientist (Robot Learning)",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>Role Overview</strong></h1><p style=\"min-height:1.5em\">We’re looking for strong Robot Learning Engineer/Scientist to develop and advance state-of-the-art methods for developing robot policies. This role is focused on training end-to-end policies with an emphasis on sim-to-real transfer, robust performance, scalable training and inference pipelines.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">This is a hands-on, research-driven role for someone working at the intersection of robotics and machine learning. You’ll collaborate closely with research scientists, ML engineers and system teams to translate robotic policy and its stack into production-ready systems.</p><p style=\"min-height:1.5em\"></p><h1><strong>What You Will Do</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Design and implement modern robot learning systems, including imitation learning, reinforcement learning for manipulation.</p></li><li><p style=\"min-height:1.5em\">Research, prototype, and productionize robotic policies with a focus on speed, precision and scalability.</p></li><li><p style=\"min-height:1.5em\">Develop and improve training pipelines for sim-to-real transfer, including domain randomization, system identification, real-sim alignment.</p></li><li><p style=\"min-height:1.5em\">Collaborate with simulation and infrastructure teams to minimize sim-to-real gap and ensure learning methods integrate cleanly with real-robot deployment stacks.</p></li><li><p style=\"min-height:1.5em\">Build end-to-end training and evaluation workflows for robot policies, from large-scale data generation to scale up training and evaluation.</p></li><li><p style=\"min-height:1.5em\">Optimize policy performance across the stack, including training speed, inference latency, data generation efficiency to support large scale production constraints.</p></li><li><p style=\"min-height:1.5em\">Diagnose failure modes in simulation and real-world rollouts, design principled solutions to improve robustness, efficiency and generalization.</p></li><li><p style=\"min-height:1.5em\">Contribute to technical direction by proposing new research ideas, mentoring teammates, and helping set best practices for robot learning across the organization.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Key Qualifications</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">PhD in robotics, machine learning, computer science, or a closely related field is strongly preferred.</p></li><li><p style=\"min-height:1.5em\">6+ years of experience working on manipulation, locomotion, robot policy training, or related areas.</p></li><li><p style=\"min-height:1.5em\">Strong foundation in robotics, neural network designs, sim-real transfer.</p></li><li><p style=\"min-height:1.5em\">Deep experience with robot policy designs (e.g., VLA, WAM, diffusion).</p></li><li><p style=\"min-height:1.5em\">Proficiency in Python and/or C++, with hands-on experience building research or production robotic systems.</p></li><li><p style=\"min-height:1.5em\">Experience with deep learning frameworks (e.g., PyTorch) and low-level robotic controller.</p></li><li><p style=\"min-height:1.5em\">Proven ability to work in ambiguous, fast-moving environments and drive projects from concept through deployment.</p></li><li><p style=\"min-height:1.5em\">A strong sense of ownership and engineering rigor: you care deeply about correctness, stability, and measurable improvements.</p></li><li><p style=\"min-height:1.5em\">Enjoy collaborating with a small, high-caliber team and raising the technical bar through thoughtful design, experimentation, and code quality.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/85994fa5-c44c-48b4-84fc-aece7934c2cb",
+    "jobReqId": "85994fa5-c44c-48b4-84fc-aece7934c2cb",
+    "postedOn": "Posted 66 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Research",
+   "signals": {
+    "linkedin_job_id": "4464103846",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4464103846",
+    "title": "Research Engineer / Scientist (Robot Learning)",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-09",
+    "num_applicants": 52,
+    "applicants_label": "52 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "3 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:40",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "28be7eae-7b7d-448e-8131-3e87d4e139fc",
+   "title": "Executive Business Partner (Office of the CEO)",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/28be7eae-7b7d-448e-8131-3e87d4e139fc",
+   "externalPath": "/28be7eae-7b7d-448e-8131-3e87d4e139fc",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 14 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "28be7eae-7b7d-448e-8131-3e87d4e139fc"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-18",
+   "departments": [
+    "Business"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Executive Business Partner (Office of the CEO)",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1><strong>Role Overview</strong></h1><p style=\"min-height:1.5em\">World Labs is seeking an Executive Business Partner (EBP) to support the CEO. This is a highly strategic and execution-oriented role designed to create leverage for one of the most influential leaders in AI.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The EBP will operate as a hybrid of Executive Assistant (EA) and Personal Assistant (PA), owning priorities end-to-end, anticipating needs, and ensuring seamless execution across the CEO’s professional landscape, including both World Labs and her ongoing commitments at Stanford. </p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">This is a high-trust role for someone who brings excellent judgment and discretion, is highly detail-oriented without sacrificing speed, and knows how to create leverage in a fast-moving environment with significant internal and external demands. The ideal candidate will not only manage execution, but also act as a force multiplier, reducing cognitive load, driving alignment, and enabling the leadership to focus on the highest-impact priorities.</p><p style=\"min-height:1.5em\"></p><h1><strong>Key Responsibilities</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Own CEO’s calendar end to end: sequence priorities, protect focus time, anticipate conflicts, and exercise sound judgment on what requires her time and attention. Partner closely with the COO and EA/Ops team to coordinate schedules and priorities.</p></li><li><p style=\"min-height:1.5em\">Work very closely with the CEO’s Stanford team on competing conflicts and priorities to ensure a seamless schedule. Coordinate complex internal and external scheduling, including executive meetings, press, speaking engagements, and cross-functional initiatives. </p></li><li><p style=\"min-height:1.5em\">Plan and coordinate meetings, travels, events, and logistics end to end, ensuring the right preparation, context, and follow-through.</p></li><li><p style=\"min-height:1.5em\">Build and maintain a lightweight operating system around priorities, open loops, follow-ups, and key commitments so important work continues moving forward.</p></li><li><p style=\"min-height:1.5em\">Ensure the CEO is prepared for key meetings with the right context, pre-reads, agendas, and understanding of who is in the room and what matters.</p></li><li><p style=\"min-height:1.5em\">Capture decisions and action items, proactively drive follow-through, and ensure nothing important gets lost between conversations. </p></li><li><p style=\"min-height:1.5em\">Manage and triage CEO’s inbox, surfacing what requires her attention and drafting thoughtful responses when appropriate. Serve as a trusted partner in prioritization.</p></li><li><p style=\"min-height:1.5em\">Personal Assistance: Provide thoughtful personal support when needed, including appointments, vendors, and travel coordination, handling sensitive matters with discretion and sound judgment.</p></li><li><p style=\"min-height:1.5em\">Anticipate needs, identify issues early, and take initiative to resolve them proactively with minimal direction.</p></li><li><p style=\"min-height:1.5em\">Be comfortable working within a high-stakes and time sensitive environment.</p></li></ul><p style=\"min-height:1.5em\"></p><h1><strong>Key Qualifications</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">8+ years of experience supporting c-suite, founder, or similarly high-profile leader in a fast-paced startup environment. </p></li><li><p style=\"min-height:1.5em\">Exceptional judgment, discretion, and ability to handle highly confidential information.</p></li><li><p style=\"min-height:1.5em\">Operationally minded, organized, and detail-oriented, with a natural ability to build systems, create structure, and anticipate needs in ambiguous, fast-moving environments.</p></li><li><p style=\"min-height:1.5em\">Demonstrated capability orchestrating very complex local and global travel logistics, giving consideration to any additional requirements for a high profile and highly recognized individual.</p></li><li><p style=\"min-height:1.5em\">Strong written and verbal communicator who can adapt thoughtfully to different working styles and build effective relationships across research, engineering, product, marketing, and operations.</p></li><li><p style=\"min-height:1.5em\">Experience in technology, AI, academia, or research environments is a plus.</p></li><li><p style=\"min-height:1.5em\"><strong>Bilingual fluency in English and Mandarin is a must.</strong></p></li><li><p style=\"min-height:1.5em\">Thoughtful, considerate, and proactively identifies situations and events that require a more nuanced approach or special touch.</p></li><li><p style=\"min-height:1.5em\">Tech-savvy, with fluency in modern productivity tools (e.g., Claude/ChatGPT/Gemini, Google Workspace, Slack, Signal).</p></li><li><p style=\"min-height:1.5em\">Willingness to be in the San Francisco office 5 days. Flexibility to travel to Palo Alto as required.</p><p style=\"min-height:1.5em\"></p></li></ul><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/28be7eae-7b7d-448e-8131-3e87d4e139fc",
+    "jobReqId": "28be7eae-7b7d-448e-8131-3e87d4e139fc",
+    "postedOn": "Posted 14 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Business",
+   "signals": {
+    "linkedin_job_id": "4467845291",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4467845291",
+    "title": "Executive Business Partner (Office of the CEO)",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-18",
+    "num_applicants": 130,
+    "applicants_label": "130 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "2 weeks ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:34",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "a377b6b8-f335-452c-82f9-8cdb9d08a745",
+   "title": "Rendering Systems Engineer - Simulation & Synthetic Data",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/a377b6b8-f335-452c-82f9-8cdb9d08a745",
+   "externalPath": "/a377b6b8-f335-452c-82f9-8cdb9d08a745",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 9 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "a377b6b8-f335-452c-82f9-8cdb9d08a745"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-23",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Rendering Systems Engineer - Simulation & Synthetic Data",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><h1>Role Overview</h1><p style=\"min-height:1.5em\">We are seeking a Senior/Staff Rendering Systems Engineer to build and scale high-throughput, Unreal Engine–based rendering systems for synthetic data generation.</p><p style=\"min-height:1.5em\">You will own the low-level rendering and GPU performance work required to run many-world rendering efficiently across cloud GPU fleets. You will profile end-to-end workloads, diagnose performance/IO bottlenecks, and implement production-quality C++ and CUDA systems within and around Unreal Engine. You will also partner with infrastructure and data teams to scale distributed execution and integrate the renderer with internal simulation and data pipelines.</p><p style=\"min-height:1.5em\"></p><h1>What You Will Do</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Deep experience modifying Unreal Engine’s renderer to support run independent worlds or cameras across GPUs and build the cloud job-orchestration layer</p></li><li><p style=\"min-height:1.5em\">Maximize hardware throughput and GPU efficiency via custom parallelization, caching strategies, and high-performance interconnect communication.</p></li><li><p style=\"min-height:1.5em\">Integrate rendering system seamlessly with proprietary internal toolchains and data pipelines.</p></li><li><p style=\"min-height:1.5em\">Perform rigorous profiling, roofline analysis, and root-cause diagnosis to resolve compute and I/O limits.</p></li><li><p style=\"min-height:1.5em\">Collaborate with research teams to accelerate experimental iteration and enhance system robustness at scale.</p></li></ul><h1>Key Qualifications</h1><p style=\"min-height:1.5em\">Strong candidates must demonstrate mastery in low-level Unreal rendering architecture and GPU programming. While broad experience on distributed multi-GPU compute are highly valued, core graphics performance engineering remains the primary prerequisite.</p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Strong background in performance engineering, including telemetry profiling, roofline analysis, latency/throughput optimization, and systematic root-cause analysis.</p></li><li><p style=\"min-height:1.5em\">Deep understanding of Unreal rendering stack, familiar with its codebase at platform-agnostic rendering layer, the command lists abstract layer, and the RHI abstraction layer, alongside practical experience customizing engine source at various layers and shader pipelines. Familiar with its GPU resource lifetime and synchronization, as well as async compute.</p></li><li><p style=\"min-height:1.5em\">Working knowledge of Nanite, Lumen, and associated graphics debugging suites.</p></li><li><p style=\"min-height:1.5em\">Advanced low-level GPU optimization skills (CUDA/Vulkan), with emphasis on kernel-level tuning, memory hierarchy management, and memory bandwidth efficiency.</p></li><li><p style=\"min-height:1.5em\">High proficiency in C++, CUDA, Python (and possibly Rust), accompanied by practical Vulkan implementation experience.</p></li><li><p style=\"min-height:1.5em\">Proficiency in rendering material adjustment and custom shader development pipelines.</p></li></ul><h1>Preferred Qualifications</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">3-4+ years of engineering experience within AI research labs, machine learning enterprises, or robotics and autonomous vehicle organizations.</p></li><li><p style=\"min-height:1.5em\">Familiarity with distributed data interconnects and collective communications primitives (e.g., NVLink, NCCL); A strong plus, but not a substitute for the core skills above.</p></li><li><p style=\"min-height:1.5em\">Proven track record deploying or serving large-scale generative, diffusion, spatial, or video foundation models.</p></li><li><p style=\"min-height:1.5em\">Hands-on creation of performance-profiling, telemetry, and observability toolchains for real-time graphics pipelines and GPU workloads.</p></li></ul><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/a377b6b8-f335-452c-82f9-8cdb9d08a745",
+    "jobReqId": "a377b6b8-f335-452c-82f9-8cdb9d08a745",
+    "postedOn": "Posted 9 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4469406415",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4469406415",
+    "title": "Rendering Systems Engineer - Simulation & Synthetic Data",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-23",
+    "num_applicants": 35,
+    "applicants_label": "35 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:44",
+    "match_method": "title"
+   }
+  },
+  {
+   "reqId": "9a1f90f1-660b-48bb-825a-e546d402e17f",
+   "title": "Product Engineer",
+   "company": "worldlabs",
+   "url": "https://jobs.ashbyhq.com/worldlabs/9a1f90f1-660b-48bb-825a-e546d402e17f",
+   "externalPath": "/9a1f90f1-660b-48bb-825a-e546d402e17f",
+   "locationsText": "San Francisco",
+   "postedOn": "Posted 9 Days Ago",
+   "timeType": "Full time",
+   "bulletFields": [
+    "9a1f90f1-660b-48bb-825a-e546d402e17f"
+   ],
+   "ats": "ashby",
+   "firstPublishedIso": "2026-09-23",
+   "departments": [
+    "Engineering"
+   ],
+   "countries": [
+    "United States"
+   ],
+   "remoteType": "",
+   "detail": {
+    "title": "Product Engineer",
+    "location": "San Francisco",
+    "additionalLocations": [],
+    "jobDescription": "<h2><strong>About World Labs</strong></h2><p style=\"min-height:1.5em\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.worldlabs.ai/\"><u>World Labs</u></a> is a frontier AI research and product company advancing spatial intelligence, the next frontier beyond large language models. Co-founded by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://profiles.stanford.edu/fei-fei-li\"><u>Dr. Fei-Fei Li</u></a>, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/justin-johnson-41b43664/\"><u>Justin Johnson</u></a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.linkedin.com/in/ben-mildenhall-86b4739b/\"><u>Ben Mildenhall</u></a>, the company is pioneering world models that perceive, generate, reason, and interact with virtual and physical worlds.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">The company’s flagship product, <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://marble.worldlabs.ai/\"><u>Marble</u></a>, transforms text, images, and video into fully navigable 3D worlds, unlocking applications across gaming, film, architecture, robotics, and immersive digital experiences. Backed by leading investors and with over $1B raised, World Labs is assembling a world-class team at the intersection of AI research and real-world deployment.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>About the Role:</strong></p><p style=\"min-height:1.5em\">We are hiring a Senior Product Engineer who will build and ship new products powered by frontier spatial models. You'll work at the edge of what our models can do, taking ideas from early prototypes to reliable products and APIs that people use, often in weeks rather than months.</p><p style=\"min-height:1.5em\">This role sits at the intersection of product, research and engineering. You'll often be one of the first engineers on a new product idea. You'll own its technical direction and how the model behaves in the product, and you'll build the evals that show whether users get results they can use. <br /><br />We’re looking for someone who enjoys ambiguity, works comfortably across the stack, and wants to get new capabilities in front of real users quickly.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>What You Will Do</strong></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Explore emerging model capabilities with researchers and identify valuable product workflows before a complete specification exists.</p></li><li><p style=\"min-height:1.5em\">Own model behavior in the product, including prompting, conditioning, parameter choices, orchestration, and failure-mode diagnosis.</p></li><li><p style=\"min-height:1.5em\">Build product evals that measure whether users receive usable results.</p></li><li><p style=\"min-height:1.5em\">Ship across the necessary layers: backend or orchestration, public API/SDK and user-facing product.</p></li><li><p style=\"min-height:1.5em\">Work directly with users and own the quality and reliability of what you ship after launch.</p></li></ul><p style=\"min-height:1.5em\"><strong>What we are looking for</strong></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">5+ years of professional software engineering experience, with demonstrated ownership across full stack development.</p></li><li><p style=\"min-height:1.5em\">You have shipped a production API or application on top of generative models and owned end-to-end output quality, not only the surrounding plumbing.</p></li><li><p style=\"min-height:1.5em\">You have a meaningful backend or systems depth and can work through the user-facing surface.</p></li><li><p style=\"min-height:1.5em\">You have built or used evaluations for nondeterministic systems and know where those evaluations can mislead you.</p></li><li><p style=\"min-height:1.5em\">You have worked closely with researchers and can turn product evidence into a precise capability request.</p></li><li><p style=\"min-height:1.5em\">You act without waiting for fully specified tickets, while aligning clearly on the product bet and constraints.</p></li></ul><p style=\"min-height:1.5em\"><strong>Bonus points for:</strong></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">3D, graphics or vision experience</p></li><li><p style=\"min-height:1.5em\">Public API or SDK experience</p></li><li><p style=\"min-height:1.5em\">Fine-tuning, LoRA or adapter experience</p></li><li><p style=\"min-height:1.5em\">Founding or early-engineer experience</p></li></ul><h1><strong>Who You Are</strong></h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Fearless Innovator:</strong> We need people who thrive on challenges and aren't afraid to tackle the impossible.</p></li><li><p style=\"min-height:1.5em\"><strong>Resilient Builder: </strong>Impacting Large World Models isn't a sprint; it's a marathon with hurdles. We're looking for builders who can weather the storms of groundbreaking research and come out stronger.</p></li><li><p style=\"min-height:1.5em\"><strong>Mission-Driven Mindset: </strong>Everything we do is in service of creating the best spatially intelligent AI systems, and using them to empower people.</p></li><li><p style=\"min-height:1.5em\"><strong>Collaborative Spirit:</strong> We're building something bigger than any one person. We need team players who can harness the power of collective intelligence.</p></li></ul><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\">We're hiring the brightest minds from around the globe to bring diverse perspectives to our cutting-edge work. If you're ready to work on technology that will reshape how machines perceive and interact with the world - then World Labs is your launchpad.</p><p style=\"min-height:1.5em\">Join us, and let's make history together.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>Logistics:</strong></p><p style=\"min-height:1.5em\">Location: This role is based in San Francisco, California; we work in-person in the office 5 days a week. </p><p style=\"min-height:1.5em\">Visa sponsorship: We sponsor visas. While we can't guarantee success for every candidate or role, if you're the right fit, we're committed to working through the visa process together.</p><p style=\"min-height:1.5em\">Benefits: We offer generous health, dental, vision and 401K benefits, flexible PTO, paid parental leave, and relocation support as needed.</p><div style=\"min-height:1.2em;margin-top:0;margin-bottom:0\"> </div><p style=\"min-height:1.5em\"><strong>Equal Employment Opportunity</strong></p><p style=\"min-height:1.5em\">World Labs is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetic information, veteran status, or any other characteristic protected under applicable law. We welcome all qualified applicants and are committed to providing reasonable accommodations throughout the hiring process upon request.</p>",
+    "timeType": "Full time",
+    "startDate": "",
+    "externalUrl": "https://jobs.ashbyhq.com/worldlabs/9a1f90f1-660b-48bb-825a-e546d402e17f",
+    "jobReqId": "9a1f90f1-660b-48bb-825a-e546d402e17f",
+    "postedOn": "Posted 9 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "worldlabs",
+   "similarJobsCount": 0,
+   "similarJobs": [],
+   "error": null,
+   "jobFamilyGroup": "Engineering",
+   "signals": {
+    "linkedin_job_id": "4469437524",
+    "linkedin_url": "https://www.linkedin.com/jobs/view/4469437524",
+    "title": "Product Engineer",
+    "company": "World Labs",
+    "location": "San Francisco, CA",
+    "linkedin_posted_date": "2026-09-23",
+    "num_applicants": 87,
+    "applicants_label": "87 applicants",
+    "applicantCensored": false,
+    "job_req_id": "",
+    "posted_time_ago": "1 week ago",
+    "closed": false,
+    "status": "matched",
+    "fetched_at": "2026-10-02T10:46:47",
+    "match_method": "title"
+   }
+  }
+ ]
+}
