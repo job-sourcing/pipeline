@@ -1,3 +1,12 @@
 board-watch blacksesame_us_fulltime FAILED: list fetch crashed (ConnectTimeout: HTTPSConnectionPool(host='www.blacksesame.com', port=443): Max retries exceeded with url: /en/join-us/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.blacksesame.com', port=443) at 0x7f4ee0e74c80>, 'Connection to www.blacksesame.com timed out. (connect timeout=15)')))
 (2026-10-01T14:38:37)
 
+Black Sesame Technologies board-watch 2026-10-02: +6 new, -0 gone (6 active [blacksesame_us_fulltime])
+NEW Sr. Engineer, Embedded Software | San Jose, US | 2026-08-30 | https://www.blacksesame.com/en/join-us/
+NEW Software Engineer, AI Framework | San Jose, US | 2025-03-13 | https://www.blacksesame.com/en/join-us/
+NEW Software Engineer, AI Compiler | San Jose, US | 2025-03-13 | https://www.blacksesame.com/en/join-us/
+NEW ML Accelerator Compiler Developer | San Jose, US | 2025-03-13 | https://www.blacksesame.com/en/join-us/
+NEW AI Perception Algorithm Engineer/Scientist | San Jose, US | 2025-03-13 | https://www.blacksesame.com/en/join-us/
+NEW IP Counsel | San Jose, US | 2025-03-13 | https://www.blacksesame.com/en/join-us/
+(2026-10-02T04:02:03)
+
