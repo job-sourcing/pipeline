@@ -2,20 +2,8 @@
  "brand": "AuraMarker",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T12:02:00.334Z",
+ "ts": "2026-10-02T12:05:26.170Z",
  "candidates": [
-  {
-   "url": "https://auramarker.com/",
-   "title": "Aura Marker Studio",
-   "status": 200,
-   "bytes": 4586,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 5,
-   "snippet": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont",
-   "backend": "direct"
-  },
   {
    "url": "https://careers.aramark.com/",
    "title": "Aramark Careers | Explore Jobs &amp; Opportunities",
@@ -32,12 +20,26 @@
    "url": "https://careers.aramark.com/jobs",
    "title": "Jobs - Aramark Careers",
    "status": 200,
-   "bytes": 160208,
+   "bytes": 160473,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
    "score": 2,
    "snippet": "Browse 6,800+ jobs at Aramark Careers. Apply online today.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://aramarkcareers.com/",
+   "title": "Jobs at Aramark",
+   "status": 200,
+   "bytes": 72102,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e",
    "backend": "direct"
   }
  ],
@@ -63,19 +65,14 @@
    "s": "Find food service career opportunities at Aramark. Explore dining, catering, and hospitality roles with growth potential and flexible schedules."
   },
   {
-   "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/Canada",
-   "s": "Apply online for jobs at Aramark At Aramark Canada, our vision is to be the most admired employer and trusted hospitality partner. Because we're rooted in servi"
+   "t": "aramarkcareers.com",
+   "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
+   "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
   },
   {
    "t": "Aramark Career Locations | Find Jobs Near You",
    "u": "https://careers.aramark.com/locations",
    "s": "Browse Aramark job opportunities by location. Find open positions near you and start your career with a global leader in food and facilities services."
-  },
-  {
-   "t": "aramarkcareers.com",
-   "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
-   "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
   },
   {
    "t": "Jobs at Aramark",
@@ -83,9 +80,34 @@
    "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
   },
   {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/Canada",
+   "s": "At Aramark Canada, our vision is to be the most admired employer and trusted hospitality partner. Because we're rooted in service, we do great things for our pe"
+  },
+  {
+   "t": "Jobs in Phoenix, AZ at Aramark Careers",
+   "u": "https://careers.aramark.com/jobs/location/AZ/Phoenix/",
+   "s": "Browse 170+ jobs in Phoenix, AZ at Aramark Careers. Apply online today."
+  },
+  {
    "t": "Aramark Careers | Explore Jobs & Opportunities",
    "u": "https://careers.aramark.com/",
    "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
+  },
+  {
+   "t": "Now Hiring: 100 Aramark Jobs in Phoenix, AZ | Indeed",
+   "u": "https://www.indeed.com/q-Aramark-l-Phoenix,-AZ-jobs.html",
+   "s": "Browse 138 Aramark jobs in Phoenix, AZ. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Aramark jobs in Phoenix, Arizona - JOB TODAY",
+   "u": "https://jobtoday.com/us/jobs-aramark/az_phoenix",
+   "s": "Apply to 94 aramark jobs available and hiring now in Phoenix, Arizona. New aramark vacancies are added daily on JOB TODAY. Get set up in seconds & start chattin"
+  },
+  {
+   "t": "Location Attendant - Phoenix-OCS Job Details | Aramark",
+   "u": "https://aramarkcareers.com/UnitedStates/job/Phoenix-Location-Attendant-Phoenix-OCS-AZ-85004/682805-en_US/",
+   "s": "Job Description The Location Attendant is responsible for providing exceptional customer service by ensuring that our customers' products are stocked appropriat"
   },
   {
    "t": "Jobs at Aramark",
@@ -93,34 +115,14 @@
    "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
   },
   {
-   "t": "Jobs - Aramark Careers",
-   "u": "https://careers.aramark.com/jobs",
-   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
+   "t": "Aramark careers in Phoenix, AZ | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Aramark/locations/AZ/Phoenix",
+   "s": "Aramark salaries in Phoenix, AZ Salary estimated from 134 employees, users, and past and present job advertisements on Indeed."
   },
   {
-   "t": "Aura Marker Studio",
-   "u": "https://auramarker.com/",
-   "s": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont"
-  },
-  {
-   "t": "Aramark Careers and Employment | Indeed.com",
-   "u": "https://www.indeed.com/cmp/Aramark",
-   "s": "Find out what works well at Aramark from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
-  },
-  {
-   "t": "Jobs | ARAMARK",
-   "u": "https://aramark.dejobs.org/jobs/",
-   "s": "6,825 Jobs Warehouse Worker III Chesapeake, VA Posted today Culinary Specialist - Avantara Long Grove - Food Long Grove, IL Posted today Lead Cook - Medtronic S"
-  },
-  {
-   "t": "Aramark Tour Bus Driver Jobs, Employment | Indeed",
-   "u": "https://www.indeed.com/q-Aramark-Tour-Bus-Driver-jobs.html",
-   "s": "12,784 Aramark Tour Bus Driver jobs available on Indeed.com. Apply to Bus Driver, Motor Coach, Shuttle Driver and more!"
-  },
-  {
-   "t": "Aramark Career Locations | Find Jobs Near You",
-   "u": "https://careers.aramark.com/locations",
-   "s": "Browse Aramark job opportunities by location. Find open positions near you and start your career with a global leader in food and facilities services."
+   "t": "Top 135 Aramark Jobs in Phoenix, Az | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=aramark&l=phoenix%2C+az",
+   "s": "135 Aramark jobs available in Phoenix, Az. See salaries, compare reviews, easily apply, and get hired. New Aramark careers in Phoenix, Az are added daily on Sim"
   },
   {
    "t": "Aramark Careers | Explore Jobs & Opportunities",
@@ -128,19 +130,19 @@
    "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
   },
   {
-   "t": "Jobs - Aramark Careers",
-   "u": "https://careers.aramark.com/jobs",
-   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
+   "t": "Jobs in Phoenix, AZ at Aramark Careers",
+   "u": "https://careers.aramark.com/jobs/location/AZ/Phoenix/",
+   "s": "Browse 170+ jobs in Phoenix, AZ at Aramark Careers. Apply online today."
+  },
+  {
+   "t": "Now Hiring: 100 Aramark Jobs in Phoenix, AZ | Indeed",
+   "u": "https://www.indeed.com/q-Aramark-l-Phoenix,-AZ-jobs.html",
+   "s": "Browse 138 Aramark jobs in Phoenix, AZ. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
   },
   {
    "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/content/?locale=en_US",
+   "u": "https://aramarkcareers.com/job/",
    "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
-  },
-  {
-   "t": "aramarkcareers.com",
-   "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
-   "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
   }
  ],
  "dict_hits": [],
