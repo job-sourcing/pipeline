@@ -1982,6 +1982,19 @@
         "United States"
       ],
       "time_type": "Full time"
+    },
+    {
+      "label": "weee_us_fulltime",
+      "board": "ats:greenhouse:wee",
+      "company": "Weee!",
+      "country": "United States",
+      "li_variants": [
+        "Weee!",
+        "Weee"
+      ],
+      "slice_locations": [
+        "United States"
+      ]
     }
   ]
 }
