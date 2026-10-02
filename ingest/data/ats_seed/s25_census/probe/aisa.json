@@ -1,0 +1,154 @@
+{
+ "brand": "AIsa",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T11:30:12.393Z",
+ "candidates": [
+  {
+   "url": "https://aisaonline.org/jobs/",
+   "title": "Jobs Archive - AISA",
+   "status": 200,
+   "bytes": 353138,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore job opportunities at AISA, serving independent schools in Alabama with a focus on academics, accreditation, and athletics.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.aisa.com/about-us/career/",
+   "title": "Career | Aisa",
+   "status": 200,
+   "bytes": 97829,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Carrières chez Aisa Rejoignez-nous et contribuez à façonner l'avenir : découvrez dès aujourd'hui nos offres d'emploi !",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.aisa.com/jobs/",
+   "title": "Jobs Archive | Aisa",
+   "status": 200,
+   "bytes": 100502,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "AISA Automation Industrielle SA Av. de Savoie 61 P.O. Box 336 CH-1896 Vouvry (VS) Switzerland Tel. +41 24 4820 110 AISA Automation Industrielle France SAS Rue d",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Jobs Archive - AISA",
+   "u": "https://aisaonline.org/jobs/",
+   "s": "Explore job opportunities at AISA, serving independent schools in Alabama with a focus on academics, accreditation, and athletics."
+  },
+  {
+   "t": "Home - AISA",
+   "u": "https://aisaonline.org/",
+   "s": "Video website. The Alabama Independent School Association (AISA) proudly serves as a voice and advocate for independent education statewide. We support our memb"
+  },
+  {
+   "t": "Career | Aisa",
+   "u": "https://www.aisa.com/about-us/career/",
+   "s": "Carrières chez Aisa Rejoignez-nous et contribuez à façonner l'avenir : découvrez dès aujourd'hui nos offres d'emploi !"
+  },
+  {
+   "t": "Careers - AISIN World Corp. of America",
+   "u": "https://www.aisinworld.com/careers/",
+   "s": "Start your global career today at AISIN Corporation, consistently ranked as one of the world's top automotive suppliers. This is your resource for North America"
+  },
+  {
+   "t": "AirAsia Careers | Jobs & Opportunities with AirAsia",
+   "u": "https://careers.airasia.com/",
+   "s": "Explore careers at AirAsia, a global travel and tech company. Find roles in aviation, ground operations, tech, customer service and more. Join our team of Allst"
+  },
+  {
+   "t": "Jobs Archive | Aisa",
+   "u": "https://www.aisa.com/jobs/",
+   "s": "AISA Automation Industrielle SA Av. de Savoie 61 P.O. Box 336 CH-1896 Vouvry (VS) Switzerland Tel. +41 24 4820 110 AISA Automation Industrielle France SAS Rue d"
+  },
+  {
+   "t": "Careers - Aisin USA Manufacturing, Inc.",
+   "u": "https://www.aisinusa.com/careers/",
+   "s": "Start your global career today at AISIN Corporation, consistently ranked as one of the world's top automotive suppliers. This is your resource for North America"
+  },
+  {
+   "t": "Search our Job Opportunities at Saia Inc.",
+   "u": "https://jobs.saia.com/search-jobs",
+   "s": "Search job opportunities at Saia Inc. and explore rewarding careers in logistics, offering growth and success in various roles."
+  },
+  {
+   "t": "Jobs Archive - AISA",
+   "u": "https://aisaonline.org/jobs/",
+   "s": "Explore job opportunities at AISA, serving independent schools in Alabama with a focus on academics, accreditation, and athletics."
+  },
+  {
+   "t": "Home - AISA",
+   "u": "https://aisaonline.org/",
+   "s": "AISA recognizes and respects the autonomy and self-governance of its member schools, including the authority and responsibility of each school's governing body "
+  },
+  {
+   "t": "Pike Liberal Arts School - EMPLOYMENT",
+   "u": "https://www.pikelib.com/employment",
+   "s": "All AISA (including PLAS) job openings are posted on the Alabama Independent School Association Website. Scroll through listing and find Pike Liberal Arts Schoo"
+  },
+  {
+   "t": "Search our Job Opportunities at Saia Inc.",
+   "u": "https://jobs.saia.com/search-jobs",
+   "s": "Search job opportunities at Saia Inc. and explore rewarding careers in logistics, offering growth and success in various roles."
+  },
+  {
+   "t": "Careers - AISIN World Corp. of America",
+   "u": "https://www.aisinworld.com/careers/",
+   "s": "Make a meaningful impact on the future of mobility! Start your global career today at AISIN Corporation, consistently ranked as one of the world's top automotiv"
+  },
+  {
+   "t": "Career - Aisa",
+   "u": "https://www.aisa.com/about-us/career/",
+   "s": "Carrières chez Aisa Rejoignez-nous et contribuez à façonner l'avenir : découvrez dès aujourd'hui nos offres d'emploi !"
+  },
+  {
+   "t": "Jobs Archive | Aisa",
+   "u": "https://www.aisa.com/jobs/",
+   "s": "Job Archives Apprenti Dessinateur-constructeur industriel / Apprentie Dessinatrice-constructrice industrielle CFC 4 ans Vouvry, Chablais Valaisan, Suisse"
+  },
+  {
+   "t": "NAIS Career Center: Independent School Careers and Job Listings",
+   "u": "https://www.nais.org/careers/",
+   "s": "Post and find great independent school career opportunities and job listings. The NAIS Career Center is open to NAIS members and nonmembers alike."
+  },
+  {
+   "t": "Jobs Archive - AISA",
+   "u": "https://aisaonline.org/jobs/",
+   "s": "Explore job opportunities at AISA, serving independent schools in Alabama with a focus on academics, accreditation, and athletics."
+  },
+  {
+   "t": "Work at AirAsia | Careers, Culture & Benefits | Join the Allstars",
+   "u": "https://careers.airasia.com/work-at-airasia/",
+   "s": "Explore careers at AirAsia and find out what it's like to work with a global travel and tech team. Learn about our culture, perks, growth opportunities, and emp"
+  },
+  {
+   "t": "Jobs Board - aisa.org.au",
+   "u": "https://www.aisa.org.au/public/Public/Jobs/Jobs-Board.aspx",
+   "s": "Jobs Board If you have a position to fill, place it where top talent is already looking. Share your vacancy on our jobs board and support the growth of your org"
+  },
+  {
+   "t": "Join Our Team - UnityPoint Health",
+   "u": "https://www.unitypoint.org/join-our-team",
+   "s": "Join Our Team When you select UnityPoint Health for your career, you're choosing to make a difference in someone's life — every minute of every day. There are e"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://aisaonline.org/jobs/",
+  "platform": "custom",
+  "title": "Jobs Archive - AISA"
+ },
+ "verdict": "custom_surface"
+}

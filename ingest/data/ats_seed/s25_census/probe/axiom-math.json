@@ -1,0 +1,30 @@
+{
+ "brand": "Axiom Math",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T11:41:05.226Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "axiom",
+   "spec": "greenhouse:axiom",
+   "title": "Legal Talent Management Network",
+   "jobs_hint": 16
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:axiom",
+  "platform": "greenhouse",
+  "title": "Legal Talent Management Network",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Legal Talent Management Network",
+  "brand": "Axiom Math",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

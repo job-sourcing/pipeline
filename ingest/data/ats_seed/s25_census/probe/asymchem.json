@@ -1,0 +1,154 @@
+{
+ "brand": "Asymchem",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T11:39:44.398Z",
+ "candidates": [
+  {
+   "url": "https://www.asymchem.com/about/careers",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover Asymchem, a top CDMO serving global pharma companies with innovative green solutions, advanced drug development, and manufacturing services.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.asymchem.com/careers",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover Asymchem, a top CDMO serving global pharma companies with innovative green solutions, advanced drug development, and manufacturing services.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://asymchem.co.uk/careers",
+   "title": "Careers-Asymchem UK Sandwich",
+   "status": 200,
+   "bytes": 36090,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers As a global CDMO leader, we accelerate lab-to-patient drug journeys, partnering with pioneers to deliver life-changing therapies. Whether in R&D, manufa",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Asymchem",
+   "u": "https://www.asymchem.com/about/careers",
+   "s": "Discover Asymchem, a top CDMO serving global pharma companies with innovative green solutions, advanced drug development, and manufacturing services."
+  },
+  {
+   "t": "Asymchem: Top CDMO for Global Pharma Companies",
+   "u": "https://www.asymchem.com/careers",
+   "s": "Discover Asymchem, a top CDMO serving global pharma companies with innovative green solutions, advanced drug development, and manufacturing services."
+  },
+  {
+   "t": "Careers-Asymchem UK Sandwich",
+   "u": "https://asymchem.co.uk/careers",
+   "s": "Careers As a global CDMO leader, we accelerate lab-to-patient drug journeys, partnering with pioneers to deliver life-changing therapies. Whether in R&D, manufa"
+  },
+  {
+   "t": "Asymchem Careers - LinkedIn",
+   "u": "https://www.linkedin.com/showcase/asymchem-careers",
+   "s": "Working at Asymchem means interacting with smart and capable people who specialize in innovative drug development and commercial production. If you like a stron"
+  },
+  {
+   "t": "2 Asymchem jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/asymchem-jobs",
+   "s": "Today's top 1 Asymchem jobs in United States. Leverage your professional network, and get hired. New Asymchem jobs added daily."
+  },
+  {
+   "t": "Asymchem Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Asymchem",
+   "s": "Find out what works well at Asymchem from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "Asymchem - Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/asymchem",
+   "s": "Contract Work Business Areas: Contract Services,Contract Manufacturing,Contract Research"
+  },
+  {
+   "t": "凯莱英 - asymchem.zhiye.com",
+   "u": "https://asymchem.zhiye.com/jobs?activityGuid=83c01bd3-a907-4427-a0de-996739521b83",
+   "s": "1.海内外本硕博学历 2.化学、有机化学、药物化学、生物化学、分析化学、应用化学、药物合成、不对称合成、天然产物全合成、生物制药、生物化学与分子生物学、合成生物学、生命科学、结晶、流体动力学、化学工程与工艺、化工机械等化学相关专业 3.具备独立工作能力和解决问题的能力、善于 ..."
+  },
+  {
+   "t": "Asymchem: Top CDMO for Global Pharma Companies",
+   "u": "https://www.asymchem.com/careers",
+   "s": "Discover Asymchem, a top CDMO serving global pharma companies with innovative green solutions, advanced drug development, and manufacturing services."
+  },
+  {
+   "t": "Careers-Asymchem UK Sandwich",
+   "u": "https://asymchem.co.uk/careers",
+   "s": "Careers As a global CDMO leader, we accelerate lab-to-patient drug journeys, partnering with pioneers to deliver life-changing therapies. Whether in R&D, manufa"
+  },
+  {
+   "t": "Careers - Asymchem",
+   "u": "https://www.asymchem.com/about/careers",
+   "s": "Discover Asymchem, a top CDMO serving global pharma companies with innovative green solutions, advanced drug development, and manufacturing services."
+  },
+  {
+   "t": "2 Asymchem jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/asymchem-jobs",
+   "s": "Today's top 2 Asymchem jobs in United States. Leverage your professional network, and get hired. New Asymchem jobs added daily."
+  },
+  {
+   "t": "Asymchem Careers - LinkedIn",
+   "u": "https://www.linkedin.com/showcase/asymchem-careers",
+   "s": "Asymchem Careers Pharmaceutical Manufacturing Morrisville, NC 153 followers A global CDMO providing drug dev & manf services with the assistance of highly quali"
+  },
+  {
+   "t": "凯莱英 - asymchem.zhiye.com",
+   "u": "https://asymchem.zhiye.com/jobs?activityGuid=83c01bd3-a907-4427-a0de-996739521b83",
+   "s": "1.海内外本硕博学历 2.化学、有机化学、药物化学、生物化学、分析化学、应用化学、药物合成、不对称合成、天然产物全合成、生物制药、生物化学与分子生物学、合成生物学、生命科学、结晶、流体动力学、化学工程与工艺、化工机械等化学相关专业 3.具备独立工作能力和解决问题的能力、善于 ..."
+  },
+  {
+   "t": "Asymchem Jobs in United Kingdom | LinkedIn",
+   "u": "https://uk.linkedin.com/jobs/asymchem-jobs",
+   "s": "Today's top Asymchem jobs in United Kingdom. Leverage your professional network, and get hired. New Asymchem jobs added daily."
+  },
+  {
+   "t": "Asymchem Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Asymchem",
+   "s": "Find out what works well at Asymchem from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "Asymchem: Top CDMO for Global Pharma Companies",
+   "u": "https://www.asymchem.com/careers",
+   "s": "Discover Asymchem, a top CDMO serving global pharma companies with innovative green solutions, advanced drug development, and manufacturing services."
+  },
+  {
+   "t": "Careers - Asymchem",
+   "u": "https://www.asymchem.com/about/careers",
+   "s": "Discover Asymchem, a top CDMO serving global pharma companies with innovative green solutions, advanced drug development, and manufacturing services."
+  },
+  {
+   "t": "Careers-Asymchem UK Sandwich",
+   "u": "https://asymchem.co.uk/careers",
+   "s": "Apply your role Current vacancies available and can be found on Asymchem LinkedIn career page Or share your CV and interests to ukhr@asymchem.com"
+  },
+  {
+   "t": "2 Asymchem jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/asymchem-jobs",
+   "s": "Today's top 1 Asymchem jobs in United States. Leverage your professional network, and get hired. New Asymchem jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://asymchem.co.uk/careers",
+  "platform": "custom",
+  "title": "Careers-Asymchem UK Sandwich"
+ },
+ "verdict": "custom_surface"
+}

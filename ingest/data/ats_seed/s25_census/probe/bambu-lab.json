@@ -1,0 +1,29 @@
+{
+ "brand": "Bambu Lab",
+ "tier": "probe_A",
+ "lca": "BAMBULAB USA INC",
+ "ts": "2026-10-02T11:41:10.588Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "bambulab",
+   "spec": "feishuhire:bambulab",
+   "title": "加入拓竹科技"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:bambulab",
+  "platform": "feishu",
+  "title": "加入拓竹科技",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入拓竹科技",
+  "brand": "Bambu Lab",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

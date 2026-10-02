@@ -1,0 +1,154 @@
+{
+ "brand": "Abelian",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T11:31:26.637Z",
+ "candidates": [
+  {
+   "url": "https://www.abelian.us/careers",
+   "title": "Careers at ABELIAN | Your SALESFORCE Partner",
+   "status": 200,
+   "bytes": 30005,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join our team! Explore exciting career opportunities and become part of a leading Salesforce Partner.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.pqabelian.io/career",
+   "title": "Join Our Team | Abelian",
+   "status": 200,
+   "bytes": 104439,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Abelian on building the foundation of a Post-Quantum world.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://abeliantechnologies.com/careers/",
+   "title": "Careers - Abelian Technologies",
+   "status": 200,
+   "bytes": 279834,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Our Team Abelian Technologies > Blog Job Circular Ready to Join Our Team 01",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at ABELIAN | Your SALESFORCE Partner",
+   "u": "https://www.abelian.us/careers",
+   "s": "Join our team! Explore exciting career opportunities and become part of a leading Salesforce Partner."
+  },
+  {
+   "t": "Join Our Team | Abelian",
+   "u": "https://www.pqabelian.io/career",
+   "s": "Join Abelian on building the foundation of a Post-Quantum world."
+  },
+  {
+   "t": "ABELIAN - Salesforce Consulting, Implementation & Managed Services",
+   "u": "https://www.abelian.us/",
+   "s": "Abelian is a Certified Salesforce Consulting Partner Our diverse and talented team has over 50 combined Salesforce certifications! We cover a lot of ground, hel"
+  },
+  {
+   "t": "Abelian - LinkedIn",
+   "u": "https://www.linkedin.com/company/abelian",
+   "s": "Abelian is a SI firm & Salesforce Consulting Partner that specializes in the configuration, customization, and implementation of a unique set of Salesforce solu"
+  },
+  {
+   "t": "Careers - Abelian Technologies",
+   "u": "https://abeliantechnologies.com/careers/",
+   "s": "Join Our Team Abelian Technologies > Blog Job Circular Ready to Join Our Team 01"
+  },
+  {
+   "t": "About Abelian | Practitioner Consulting Solutions to ... - Abelian Partners",
+   "u": "https://www.abelianpartners.com/about/",
+   "s": "Abelian Partners was created by former bank executives to provide practitioner consulting solutions to financial institutions."
+  },
+  {
+   "t": "Abelian Careers - Discover Your Career Opportunities - MyJob.one",
+   "u": "https://www.myjob.one/en/companies/abelian",
+   "s": "Abelian Welcome to Abelian A next-generation Layer 1 blockchain designed to provide long-term security for digital assets in the era of quantum computing. Lever"
+  },
+  {
+   "t": "Opportunities | AbbVie",
+   "u": "https://www.abbvie.com/join-us/opportunities.html",
+   "s": "AbbVie has career opportunities in R&D, Corporate, Commercial, Operations, Aesthetics and IT. See where your skills can apply."
+  },
+  {
+   "t": "Careers at ABELIAN | Your SALESFORCE Partner",
+   "u": "https://www.abelian.us/careers",
+   "s": "Join our team! Explore exciting career opportunities and become part of a leading Salesforce Partner."
+  },
+  {
+   "t": "ABELIAN - Salesforce Consulting, Implementation & Managed Services",
+   "u": "https://www.abelian.us/",
+   "s": "Abelian is a Certified Salesforce Consulting Partner Our diverse and talented team has over 50 combined Salesforce certifications! We cover a lot of ground, hel"
+  },
+  {
+   "t": "Careers - National Able",
+   "u": "https://www.nationalable.org/careers/",
+   "s": "3 of 3 Job Opportunities All Departments All Locations Job, Post Date , Department Location Career Coach WIOA 09/15/2026 Iowa"
+  },
+  {
+   "t": "Abelian group - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Abelian_group",
+   "s": "Abelian group In mathematics, an abelian group, [note 1] also called a commutative group, is a group in which the result of applying the group operation to two "
+  },
+  {
+   "t": "Careers | Job Postings | Des Moines Art Center",
+   "u": "https://desmoinesartcenter.org/careers/",
+   "s": "Start your career at the Des Moines Art Center! View employment information and job postings."
+  },
+  {
+   "t": "IowaWORKS Des Moines - Iowa Workforce Development",
+   "u": "https://workforce.iowa.gov/jobs/iowaworks/iowaworks-des-moines",
+   "s": "As part of the American Job Centers network, the IowaWORKS office in Des Moines serves job seekers and businesses with a number of workforce needs. In-person an"
+  },
+  {
+   "t": "Job Openings & Internships at Vermeer Corporation",
+   "u": "https://www.vermeer.com/na/careers",
+   "s": "Interested in a career in manufacturing? Explore open positions on the Vermeer mile, from the factory to our corporate offices, including seasonal internships."
+  },
+  {
+   "t": "Job Opportunities & Careers at DART | Des Moines Metro",
+   "u": "https://www.ridedart.com/careers-at-dart/",
+   "s": "We're hiring! Find job opportunities & careers at DART in Central Iowa. Browse job openings: part-time, full-time, flexible & CDL options."
+  },
+  {
+   "t": "Careers at ABELIAN | Your SALESFORCE Partner",
+   "u": "https://www.abelian.us/careers",
+   "s": "Join our team! Explore exciting career opportunities and become part of a leading Salesforce Partner."
+  },
+  {
+   "t": "Join Our Team | Abelian",
+   "u": "https://www.pqabelian.io/career",
+   "s": "Join Abelian on building the foundation of a Post-Quantum world."
+  },
+  {
+   "t": "Careers - Abelian Technologies",
+   "u": "https://abeliantechnologies.com/careers/",
+   "s": "Join Our Team Abelian Technologies > Blog Job Circular Ready to Join Our Team 01"
+  },
+  {
+   "t": "Join Our Team - UnityPoint Health",
+   "u": "https://www.unitypoint.org/join-our-team",
+   "s": "Join Our Team When you select UnityPoint Health for your career, you're choosing to make a difference in someone's life — every minute of every day. There are e"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.abelian.us/careers",
+  "platform": "custom",
+  "title": "Careers at ABELIAN | Your SALESFORCE Partner"
+ },
+ "verdict": "custom_surface"
+}

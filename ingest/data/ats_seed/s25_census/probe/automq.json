@@ -1,0 +1,16 @@
+{
+ "brand": "AutoMQ",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T11:40:45.018Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.automq.com/careers",
+  "platform": "custom",
+  "title": "Careers - Join AutoMQ Team | AutoMQ",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

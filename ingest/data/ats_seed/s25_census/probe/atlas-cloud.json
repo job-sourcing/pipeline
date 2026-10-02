@@ -1,0 +1,30 @@
+{
+ "brand": "Atlas Cloud",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T11:40:12.173Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "atlas",
+   "spec": "ashby:atlas",
+   "title": " (7 jobs)",
+   "jobs": 7
+  }
+ ],
+ "best": {
+  "spec": "ashby:atlas",
+  "platform": "ashby",
+  "title": " (7 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": null,
+  "brand": "Atlas Cloud",
+  "ok": null,
+  "note": "no self-name — job-content adjudication required"
+ },
+ "verdict": "dict_unverified"
+}

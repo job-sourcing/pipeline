@@ -1,0 +1,149 @@
+{
+ "brand": "AuraMarker",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T11:40:15.595Z",
+ "candidates": [
+  {
+   "url": "https://auramarker.com/",
+   "title": "Aura Marker Studio",
+   "status": 200,
+   "bytes": 4586,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont",
+   "backend": "direct"
+  },
+  {
+   "url": "https://helps.auramarker.com/en/",
+   "title": "Aura Marker Studio | Aura Marker Studio",
+   "status": 200,
+   "bytes": 14139,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.aramark.com/",
+   "title": "Aramark Careers | Explore Jobs &amp; Opportunities",
+   "status": 200,
+   "bytes": 159759,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Aramark Careers | Explore Jobs & Opportunities",
+   "u": "https://careers.aramark.com/",
+   "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
+  },
+  {
+   "t": "Jobs - Aramark Careers",
+   "u": "https://careers.aramark.com/jobs",
+   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
+  },
+  {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/",
+   "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
+  },
+  {
+   "t": "Food Service Careers | Aramark Jobs",
+   "u": "https://careers.aramark.com/food-service-careers",
+   "s": "Find food service career opportunities at Aramark. Explore dining, catering, and hospitality roles with growth potential and flexible schedules."
+  },
+  {
+   "t": "Aramark Career Locations | Find Jobs Near You",
+   "u": "https://careers.aramark.com/locations",
+   "s": "Browse Aramark job opportunities by location. Find open positions near you and start your career with a global leader in food and facilities services."
+  },
+  {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/Canada",
+   "s": "Apply online for jobs at Aramark At Aramark Canada, our vision is to be the most admired employer and trusted hospitality partner. Because we're rooted in servi"
+  },
+  {
+   "t": "aramarkcareers.com",
+   "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
+   "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
+  },
+  {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/UnitedStates/?locale=en_US",
+   "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
+  },
+  {
+   "t": "Aramark Careers | Explore Jobs & Opportunities",
+   "u": "https://careers.aramark.com/",
+   "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
+  },
+  {
+   "t": "Jobs - Aramark Careers",
+   "u": "https://careers.aramark.com/jobs",
+   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
+  },
+  {
+   "t": "Aramark Jobs, Employment in Turlock, CA | Indeed.com",
+   "u": "https://www.indeed.com/q-aramark-l-turlock,-ca-jobs.html",
+   "s": "Aramark jobs available in Turlock, CA on Indeed.com. Apply to Commissary Worker - Merced County Commissary and more!"
+  },
+  {
+   "t": "Aura Marker Studio",
+   "u": "https://auramarker.com/",
+   "s": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont"
+  },
+  {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/content/?locale=en_US",
+   "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
+  },
+  {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/UnitedStates/?locale=en_US",
+   "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
+  },
+  {
+   "t": "Aura Marker Studio | Aura Marker Studio",
+   "u": "https://helps.auramarker.com/en/",
+   "s": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont"
+  },
+  {
+   "t": "Now Hiring: 4,000 Aramark Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Aramark-jobs.html",
+   "s": "Browse 4,804 Aramark jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Aramark Careers | Explore Jobs & Opportunities",
+   "u": "https://careers.aramark.com/",
+   "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
+  },
+  {
+   "t": "Jobs - Aramark Careers",
+   "u": "https://careers.aramark.com/jobs",
+   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
+  },
+  {
+   "t": "Aramark Jobs, Employment in Des Moines, IA | Indeed",
+   "u": "https://www.indeed.com/q-ARAMARK-l-Des-Moines,-IA-jobs.html",
+   "s": "Today's top Aramark jobs in Des Moines, IA. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "Now Hiring: 25 Aramark Jobs in Iowa - Indeed",
+   "u": "https://www.indeed.com/q-Aramark-l-Iowa-jobs.html",
+   "s": "44 Aramark jobs available in Iowa on Indeed.com. Apply to Catering Manager, Cook, Food Service Supervisor and more!"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}
