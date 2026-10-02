@@ -1,0 +1,90 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+ab568a91-31db-4ef1-89ff-66543e5d3149,Engineering Manager,alluxio,alluxio,Full time,Posted 21 Days Ago,,,"Foster City, California",1,"Foster City, California",false,,United States,,0,"Job description：
+
+As an Engineering Manager, you will oversee the delivery and support of engineering deliverables with high quality and on time, working closely with product management, customer success, field and other key stakeholders. You will be responsible for hiring and career development of your direct reports. As a key member of the Engineering leadership team, you will jointly work to define and improve processes, culture and best practices to align with Alluxio’s rapid growth.
+
+Responsibilities：
+
+•
+
+Build best in class scalable distributed system to help fulfill the vision ""Cloud Data Orchestration""
+
+•
+
+Hands-on design and coding at least 25% of the time
+
+•
+
+Lead, guide and evaluate the work of Engineering direct-reports
+
+•
+
+Actively develop and grow talent through effective mentoring and technical assignments
+
+•
+
+Develop and refine best practices and processes to guide teams, lead by example
+
+Requirements:
+
+•
+
+Bachelor's degree in Computer Science, related technical field
+
+•
+
+7+ years of experience as a strong hands-on engineer
+
+•
+
+3+ years of experience leading or managing a team of engineers
+
+•
+
+Experience working with two or more from the following is a must: distributed and parallel systems, distributed storage systems, architecting large scale software systems, and/or security software development.
+
+•
+
+Software development experience in one or more general purpose programming languages including but not limited to: Java, C/C++, or Go.
+
+•
+
+Ability and desire to work in a fast paced, collaborative and iterative programming environment
+
+•
+
+Strong technical and conversational English language skills to be able to work with global teams and customers.",1691,https://jobs.lever.co/alluxio/ab568a91-31db-4ef1-89ff-66543e5d3149,,https://www.linkedin.com/jobs/view/4463979723,2026-09-11,25,among first 25,,matched,title,2026-10-02,2026-10-02T11:44:10,2026-10-02,,21,startDate+linkedin,true,0,,,,,Engineering,2026-09-11,,true,,,,,,
+f2fd824b-4054-4b22-af36-8375f3cf4340,Senior Software Engineer - Distributed System Development,alluxio,alluxio,Full time,Posted 21 Days Ago,,,"Foster City, California",1,"Foster City, California",false,,United States,,0,,0,https://jobs.lever.co/alluxio/f2fd824b-4054-4b22-af36-8375f3cf4340,,https://www.linkedin.com/jobs/view/4463987415,2026-09-11,31,31 applicants,,matched,title,2026-10-02,2026-10-02T11:44:06,2026-10-02,,21,startDate+linkedin,true,0,,,,,Engineering,2026-09-11,,false,,,,,,
+61977f52-5288-43fa-b4ca-dc604595a89d,Sr. Staff Software Engineer – Distributed Systems,alluxio,alluxio,Full time,Posted 21 Days Ago,,,"Foster City, California",1,"Foster City, California",false,,United States,,0,"As a Sr. Staff Software Engineer – Distributed Systems at Alluxio, you will lead the end-to-end architecture and technical evolution of our next-generation distributed data platform. You will drive system-level design decisions that enable Alluxio to scale to thousands of nodes and exabytes of data, while maintaining performance, reliability, and simplicity for users.
+In this role, you will operate as a technical architect and hands-on engineering leader, partnering closely with engineering teams and product management to translate complex requirements into scalable distributed system designs.
+What You Will Be Able To Build and Owner：
+1.Lead the end-to-end architecture and design of large-scale distributed systems powering the Alluxio platform.
+2.Drive technical strategy and architectural direction across multiple teams and components.
+3.Design systems that support high scalability, fault tolerance, performance optimization, and data durability.
+4.Provide hands-on development and deep technical guidance in critical areas of the system.
+5.Lead complex system design reviews and mentor senior engineers on distributed systems design.
+6.Identify and resolve system-level performance bottlenecks and reliability challenges.
+7.Collaborate with product management and engineering leadership to translate product goals into technical solutions.
+8.Influence the broader technical ecosystem through open-source contributions and architectural thought leadership.
+
+Who We Are Looking For:
+1.Master or BS degree in Computer Science or related technical field, or equivalent practical experience.
+2.Proven experience of 2+ years in a technical leadership or architect role, driving system-level design and guiding engineering teams.
+3.Strong hands-on software development experience in one or more general-purpose programming languages, including but not limited to Java, C/C++, or Go.
+4.Deep architecting expertise in at least two of the following areas:
+1)Distributed and parallel systems
+2)Distributed storage systems
+3)Architecting large-scale software systems
+5.Demonstrated ability to design and implement high-quality, stable, and scalable end-to-end system architectures in production environments.
+6.Strong analytical thinking and complex problem-solving skills.
+7.Excellent communication skills and ability to influence technical direction across teams.
+
+We Would Especially Appreciate If You Have:
+1.PhD in Computer Science, Distributed Systems, or related fields.
+2.Deep understanding of consensus algorithms, storage engines, or large-scale data systems.
+3.Experience building or operating cloud-native infrastructure platforms.
+4.Experience contributing to or maintaining open-source distributed systems projects.
+5.Track record of designing systems that operate at massive scale (thousands of nodes or higher).
+6.Passion for building high-performance infrastructure software.
+7.Contributions to Alluxio open-source community.",2944,https://jobs.lever.co/alluxio/61977f52-5288-43fa-b4ca-dc604595a89d,,https://www.linkedin.com/jobs/view/4463981733,2026-09-11,25,among first 25,,matched,title,2026-10-02,2026-10-02T11:44:07,2026-10-02,,21,startDate+linkedin,true,0,,,,,Engineering,2026-09-11,,true,,,,,,
+7aaad6a6-b103-463b-a3b4-a407a940ea72,Staff Software Engineer - Distributed System Development,alluxio,alluxio,Full time,Posted 21 Days Ago,,,"Foster City, California",1,"Foster City, California",false,,United States,,0,,0,https://jobs.lever.co/alluxio/7aaad6a6-b103-463b-a3b4-a407a940ea72,,https://www.linkedin.com/jobs/view/4463972850,2026-09-11,25,among first 25,,matched,title,2026-10-02,2026-10-02T11:44:09,2026-10-02,,21,startDate+linkedin,true,0,,,,,Engineering,2026-09-11,,true,,,,,,

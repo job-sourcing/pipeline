@@ -1,0 +1,94 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+7386439,Account Executive,tigergraph,TigerGraph,,Posted 57 Days Ago,,,"Milpitas, CA",1,"Milpitas, CA",false,,United States,,0,"<div class=""p-rich_text_section"">
+<p>TigerGraph is the premier enterprise and SaaS platform for advanced analytics, context,  and machine learning on connected data. TigerGraph's core technology is the only scalable graph database to connect  the enterprise. Its proven technology supports fraud detection, customer 360, MDM, IoT, machine learning, and of course AI.  TigerGraph clients leverage its technology to efficiently and accurately harness the true power, accuracy and probability of AI.</p>
+<p>Global Banks, Fortune 500 organizations, and the most innovative mid-size and startup companies choose TigerGraph to accelerate their analytics, AI,machine learning, and indeed decisioning.</p>
+<ul>
+<li>Seven of the top ten global banks use TigerGraph for real-time fraud detection.</li>
+<li>50 million patients receive care path recommendations to assist them on a wellness journey.</li>
+<li>300 million consumers receive personal offer recommendations powered by TigerGraph.</li>
+<li>TigerGraph reduces power outages by optimizing energy infrastructure for 1 billion people.</li>
+</ul>
+<p><strong>Responsibilities</strong></p>
+<ul>
+<li>Define and execute sales plans for assigned accounts and territory</li>
+<li>Meet and exceed quota through prospecting, qualifying, managing and closing sales opportunities within assigned accounts and territory</li>
+<li>Develop account plans for large assigned accounts</li>
+<li>Manage renewals in existing assigned accounts</li>
+<li>Understand the competitive market and industry trends</li>
+<li>Manage and track customer information in the TigerGraph CRM system</li>
+<li>Provide activity forecasts and regular pipeline reporting in sales meetings and through the CRM system</li>
+<li>Other duties as assigned</li>
+</ul>
+<p><strong>Required Education and Experience</strong></p>
+<ul>
+<li>Bachelor’s Degree or equivalent required</li>
+<li>15+ years of enterprise software sales experience</li>
+</ul>
+<p><strong>Qualifications</strong></p>
+<ul>
+<li>Track record of closing sales with companies with revenue of $500M+</li>
+<li>Experience selling to C-suite executives</li>
+<li>Experience selling into financial institutions</li>
+<li>Understanding of AI, ML and  Database & Cloud based solutions a plus</li>
+<li>Consistent overachievement of sales goals in a large geographic territory</li>
+<li>Drive to expand client base and close sales</li>
+<li>Excellent verbal and written communication skills</li>
+<li>Entrepreneurial, strong work ethic, resourceful</li>
+<li>Willing to travel to clients to develop and support customers</li>
+<li>Coachability as well as creativity</li>
+<li>High Emotional Intelligence</li>
+<li>Strong desire to understand complex client ecosystems and successfully navigate within those systems</li>
+<li>A commitment to continuous improvement</li>
+<li>Experience formulating and selling large contracts</li>
+<li>Advanced degrees and/or technical expertise valued</li>
+<li>Understanding and ability to sell enterprise and SaaS contracts from lead to closed sale</li>
+</ul>
+</div>
+<p>The anticipated salary range for candidates is $150,000-$160,000. The final salary offered to a successful candidate will be dependent on several factors that may include, but are not limited to, the type and length of experience within the job, type and length of experience within the industry, education, etc. </p>",3359,https://job-boards.greenhouse.io/tigergraph/jobs/8042548,,https://www.linkedin.com/jobs/view/4450661004,2026-08-06,25,among first 25,,matched,title,2026-10-02,2026-10-02T11:41:27,2026-10-02,,57,startDate+linkedin,true,0,,,,,Sales,2026-08-06,,true,,,,,,
+7997595,Software Engineer,tigergraph,TigerGraph,,Posted 113 Days Ago,,,"Milpitas, CA",1,"Milpitas, CA",false,,United States,,0,"<div class=""p-rich_text_section"">TigerGraph is a platform for advanced analytics and machine learning on connected data. TigerGraph's core technology is the only scalable graph database for the enterprise. Its proven technology supports fraud detection, customer 360, MDM, IoT, AI, and machine learning. <br>Fortune 500 organizations and the most innovative mid-size and startup companies choose TigerGraph to accelerate their analytics, AI, and machine learning:</div>
+<ul class=""p-rich_text_list p-rich_text_list__bullet"" data-stringify-type=""unordered-list"" data-indent=""0"">
+<li data-stringify-indent=""0"">Seven out of the top ten global banks use TigerGraph for real-time fraud detection. </li>
+<li data-stringify-indent=""0"">Over 50 million patients receive care path recommendations to assist them on their wellness journey. </li>
+<li data-stringify-indent=""0"">300 million consumers receive personalized offers with recommendation engines powered by TigerGraph. </li>
+<li data-stringify-indent=""0"">TigerGraph reduces power outages by optimizing the energy infrastructure for 1 billion people. </li>
+</ul>
+<p>This position is primarily remote, but location-based requirements may apply. If the selected candidate is located near one of our company offices, the candidate will have a hybrid work arrangement (2-3 days in-office).</p>
+<p><strong>Job Responsibilities</strong></p>
+<ul>
+<li>Lead the architecture, design, and evolution of highly available, scalable, and fault-tolerant distributed systems for graph data.</li>
+<li>Drive the optimization of data ingestion, indexing, and query pipelines, leading performance analysis and scalability improvements for low-latency, high-throughput workloads.</li>
+<li>Lead the diagnosis and resolution of complex production issues, driving root cause analysis, operational improvements, and preventive engineering practices.</li>
+<li>Provide technical leadership through design reviews, code reviews, mentoring, and driving engineering best practices across the team.</li>
+<li>Other responsibilities as required.</li>
+</ul>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Bachelor’s degree in Computer Science or a related field</li>
+<li>5 years of relevant experience</li>
+</ul>
+<p><strong>Skills and Knowledge</strong></p>
+<p> Deep, hands-on experience with one or more vector databases or similarity search libraries.</p>
+<ul>
+<li>Proven experience designing and working with any graph database and query languages like Cypher</li>
+<li>Solid understanding of distributed systems concepts: consensus, replication, sharding, and fault tolerance.</li>
+<li>Solid programming fundamentals; experienced with C++, Go, or any other major programming language.</li>
+<li>Understanding of distributed systems principles and the ability to evaluate trade-offs in system design.</li>
+<li>Familiar with Kafka, ETCD or similar technologies;</li>
+<li>Proactive and collaborative team player with strong communication skills.</li>
+<li>Open to adopting AI-assisted engineering practices (""vibe coding"") to improve productivity and code quality.</li>
+</ul>
+<p><strong>Bonus Points</strong></p>
+<ul>
+<li>Familiar with container tools such as Docker.</li>
+<li>Hands-on experience with gRPC or REST APIs.</li>
+<li>Passionate about systems performance profiling, tuning, or debugging.</li>
+</ul>
+<p>The anticipated salary range for candidates who will work in Milpitas, CA is $140,000- $160,000. The final salary offered to a successful candidate will be dependent on several factors that may include, but are not limited to, the type and length of experience within the job, type and length of experience within the industry, education, etc. TigerGraph is a multi-state employer and this salary range may not reflect positions that work in other states.</p>",3782,https://job-boards.greenhouse.io/tigergraph/jobs/7997595,,https://www.linkedin.com/jobs/view/4427651524,2026-06-11,25,among first 25,,matched,title,2026-10-02,2026-10-02T11:41:25,2026-10-02,,113,startDate+linkedin,true,0,,,,,Engineering,2026-06-11,,true,3,135000,135000,135142,title,Software Engineer
+50,Stay in touch,tigergraph,TigerGraph,,Posted 2053 Days Ago,,,"Redwood City, CA",1,"Redwood City, CA",false,,United States,,0,"<div class=""p-rich_text_section"">TigerGraph is a platform for advanced analytics and machine learning on connected data. TigerGraph's core technology is the only scalable graph database for the enterprise. Its proven technology supports fraud detection, customer 360, MDM, IoT, AI, and machine learning. <br>Fortune 500 organizations and the most innovative mid-size and startup companies choose TigerGraph to accelerate their analytics, AI, and machine learning:</div>
+<ul class=""p-rich_text_list p-rich_text_list__bullet"" data-stringify-type=""unordered-list"" data-indent=""0"">
+<li data-stringify-indent=""0"">Seven out of the top ten global banks use TigerGraph for real-time fraud detection. </li>
+<li data-stringify-indent=""0"">Over 50 million patients receive care path recommendations to assist them on their wellness journey. </li>
+<li data-stringify-indent=""0"">300 million consumers receive personalized offers with recommendation engines powered by TigerGraph. </li>
+<li data-stringify-indent=""0"">TigerGraph reduces power outages by optimizing the energy infrastructure for 1 billion people. </li>
+</ul>
+<p>Join the graph and analytics revolution!</p>",1156,https://job-boards.greenhouse.io/tigergraph/jobs/2917784,,,,,,,no_match,,2026-10-02,,2026-10-02,,,,true,0,,,,,Business Operations,,,false,,,,,,

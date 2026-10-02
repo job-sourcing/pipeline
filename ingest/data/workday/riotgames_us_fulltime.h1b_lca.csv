@@ -1,0 +1,74 @@
+﻿caseNumber,caseStatus,caseSubmitted,decisionDate,employerName,jobTitle,socCode,socTitle,fullTimePosition,wageFrom,wageTo,wageUnit,prevailingWage,pwUnit,worksiteCity,worksiteState,worksitePostalCode,annualizedWage,sourceFile
+I-200-25274-351413,Certified,,2025-11-07T00:00:00,"Riot Games, Inc.",Technical Product Manager III,11-3021.00,Computer and Information Systems Managers,Y,158439,,Year,158439,Year,Los Angeles,CA,90064,158439,FY2026_Q3
+I-200-25274-351598,Certified,,2025-11-07T00:00:00,"Riot Games, Inc.",Insights Analyst,15-2051.00,Data Scientists,Y,123531,,Year,73174,Year,Los Angeles,CA,90064,123531,FY2026_Q3
+I-200-25308-368662,Certified,,2025-11-14T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,184558,FY2026_Q3
+I-200-25308-373010,Certified,,2025-11-14T00:00:00,"Riot Games, Inc.",Staff Software Engineer,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,184558,FY2026_Q3
+I-200-25309-377612,Certified,,2025-11-14T00:00:00,"Riot Games, Inc.",Insights Analyst II,15-2051.00,Data Scientists,Y,143500,,Year,73174,Year,Los Angeles,CA,90064,143500,FY2026_Q3
+I-200-25311-389338,Certified,,2025-11-17T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,157123,,Year,157123,Year,Los Angeles,CA,90064,157123,FY2026_Q3
+I-200-25318-408721,Certified,,2025-11-21T00:00:00,"Riot Games, Inc.",Software Engineer - MarTech (LM16),15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,184558,FY2026_Q3
+I-200-25329-437350,Certified,,2025-12-03T00:00:00,"Riot Games, Inc.","Manager, Software Engineering",11-3021.00,Computer and Information Systems Managers,Y,237141,,Year,237141,Year,Los Angeles,CA,90064,237141,FY2026_Q3
+I-200-25330-441582,Certified,,2025-12-04T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,157581,,Year,157123,Year,Los Angeles,CA,90064,157581,FY2026_Q3
+I-200-25337-455271,Certified,,2025-12-10T00:00:00,"Riot Games, Inc.",Software Engineer II - Infrastructure Platform,15-1252.00,Software Developers,Y,168814,,Year,168814,Year,Mercer Island,WA,98040,168814,FY2026_Q3
+I-200-25343-468882,Certified,,2025-12-16T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,157581,,Year,157123,Year,Los Angeles,CA,90064,157581,FY2026_Q3
+I-200-25353-499126,Certified,,2025-12-29T00:00:00,"Riot Games, Inc.","Manager, Security Engineering",15-1212.00,Information Security Analysts,Y,172827,,Year,161096,Year,Los Angeles,CA,90064,172827,FY2026_Q3
+I-200-26021-577128,Certified,,2026-01-28T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,171559,,Year,171559,Year,Mercer Island,WA,98040,171559,FY2026_Q3
+I-200-26023-586770,Certified,,2026-01-30T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,212202,,Year,212202,Year,Mercer Island,WA,98040,212202,FY2026_Q3
+I-200-26023-586797,Certified,,2026-01-30T00:00:00,"Riot Games, Inc.",Software Engineer III,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,184558,FY2026_Q3
+I-200-26029-602458,Certified,,2026-02-05T00:00:00,"Riot Games, Inc.",Concept Artist III,27-1024.00,Graphic Designers,Y,128170,,Year,106392,Year,Los Angeles,CA,90064,128170,FY2026_Q3
+I-200-26030-610055,Withdrawn,,2026-02-05T00:00:00,"Riot Games, Inc.",Principal Application Engineer,15-1299.09,Information Technology Project Managers,Y,115835,,Year,115835,Year,Los Angeles,CA,90064,,FY2026_Q3
+I-200-26033-613414,Certified,,2026-02-09T00:00:00,"Riot Games, Inc.",Concept Artist III,27-1024.00,Graphic Designers,Y,128170,,Year,106392,Year,Los Angeles,CA,90064,128170,FY2026_Q3
+I-200-26033-614540,Certified,,2026-02-09T00:00:00,"Riot Games, Inc.",Principal Application Engineer,15-1299.09,Information Technology Project Managers,Y,181293,,Hour,115835,Year,Los Angeles,CA,90064,,FY2026_Q3
+I-200-26033-614545,Certified,,2026-02-09T00:00:00,"Riot Games, Inc.",Software Engineer III,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,184558,FY2026_Q3
+I-200-26036-622636,Certified,,2026-02-12T00:00:00,"Riot Games, Inc.",Principal Application Engineer,15-1299.09,Information Technology Project Managers,Y,181293,,Year,115835,Year,Los Angeles,CA,90064,181293,FY2026_Q3
+I-200-26051-655375,Certified,,2026-02-27T00:00:00,"Riot Games, Inc.","Senior Manager, Insights",13-1161.00,Market Research Analysts and Marketing Specialists,Y,159328,,Year,113256,Year,Los Angeles,CA,90064,159328,FY2026_Q3
+I-200-26063-680577,Certified,,2026-03-11T00:00:00,"Riot Games, Inc.",Technical Sound Designer III,15-1255.01,Video Game Designers,Y,146515,,Year,146515,Year,Los Angeles,CA,90064,146515,FY2026_Q3
+I-200-26064-683392,Certified,,2026-03-12T00:00:00,"Riot Games, Inc.",Insights Analyst II,15-2031.00,Operations Research Analysts,Y,119704,,Year,119704,Year,Los Angeles,CA,90064,119704,FY2026_Q3
+I-200-26065-686755,Certified,,2026-03-13T00:00:00,"Riot Games, Inc.",Senior Game Producer,11-3021.00,Computer and Information Systems Managers,Y,128627,,Year,128627,Year,Los Angeles,CA,90064,128627,FY2026_Q3
+I-200-26068-690063,Certified,,2026-03-16T00:00:00,"Riot Games, Inc.",Security Engineer,15-1252.00,Software Developers,Y,139916,,Year,139916,Year,Los Angeles,CA,90064,139916,FY2026_Q3
+I-200-26069-693318,Certified,,2026-03-17T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,184558,FY2026_Q3
+I-200-26075-704938,Certified,,2026-03-23T00:00:00,"Riot Games, Inc.",3D Character Artist,15-1255.01,Video Game Designers,Y,90293,,Year,90293,Year,Los Angeles,CA,90025,90293,FY2026_Q3
+I-200-26083-726387,Certified,,2026-03-31T00:00:00,"Riot Games, Inc.",Platform Partnerships Specialist III,11-2022.00,Sales Managers,Y,195229,,Year,148096,Year,Los Angeles,CA,90064,195229,FY2026_Q3
+I-200-26085-732470,Certified,,2026-04-02T00:00:00,"Riot Games, Inc.","Manager, Globalization Production",15-1299.09,Information Technology Project Managers,Y,145246,,Year,145246,Year,Los Angeles,CA,90064,145246,FY2026_Q3
+I-200-26089-739186,Certified,,2026-04-06T00:00:00,"Riot Games, Inc.",User Experience Designer III,15-1255.00,Web and Digital Interface Designers,Y,146515,,Year,146515,Year,Los Angeles,CA,90064,146515,FY2026_Q3
+I-200-26089-739556,Certified - Withdrawn,,2026-04-21T00:00:00,"Riot Games, Inc.",Software Engineer,15-1252.00,Software Developers,Y,161637,,Year,161637,Year,Redwood City,CA,94063,161637,FY2026_Q3
+I-200-26091-744520,Certified,,2026-04-07T00:00:00,"Riot Games, Inc.",Software Engineer,15-1252.00,Software Developers,Y,167000,,Year,167000,Year,Redwood City,CA,94063,167000,FY2026_Q3
+I-200-26093-757035,Certified,,2026-04-10T00:00:00,"Riot Games, Inc.",Insights Analyst II,15-2051.01,Business Intelligence Analysts,Y,135016,,Year,135016,Year,Mercer Island,WA,98040,135016,FY2026_Q3
+I-200-26104-791992,Certified - Withdrawn,,2026-05-07T00:00:00,"Riot Games, Inc.",Senior Software Engineer,15-1252.00,Software Developers,Y,226138,,Year,226138,Year,Sunnyvale,CA,94086,226138,FY2026_Q3
+I-200-26105-797211,Certified - Withdrawn,,2026-05-26T00:00:00,"Riot Games, Inc.",Data Scientist III,15-2051.00,Data Scientists,Y,130270,,Year,130270,Year,Los Angeles,CA,90064,130270,FY2026_Q3
+I-200-26105-797358,Certified,,2026-04-22T00:00:00,"Riot Games, Inc.",Researcher II,15-2031.00,Operations Research Analysts,Y,82618,,Year,82618,Year,Los Angeles,CA,90064,82618,FY2026_Q3
+I-200-26106-802071,Certified,,2026-04-23T00:00:00,"Riot Games, Inc.",Service Reliability Analyst II,15-2031.00,Operations Research Analysts,Y,64064,,Year,56077,Year,South Jordan,UT,84009,64064,FY2026_Q3
+I-200-26106-802143,Certified,,2026-04-23T00:00:00,"Riot Games, Inc.",Database Engineer,15-1242.00,Database Administrators,Y,37.97,,Hour,37.97,Hour,Clayton,MO,63105,78978,FY2026_Q3
+I-200-26111-816213,Certified,,2026-04-28T00:00:00,"Riot Games, Inc.",Security Engineer III,15-1299.05,Information Security Engineers,Y,86403,,Year,86403,Year,Los Angeles,CA,90064,86403,FY2026_Q3
+I-200-26113-824706,Certified,,2026-04-30T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,226600,,Year,157123,Year,Los Angeles,CA,90064,226600,FY2026_Q3
+I-200-26119-849435,Certified,,2026-05-06T00:00:00,"Riot Games, Inc.",Database Engineer,15-1242.00,Database Administrators,Y,41.82,,Hour,37.97,Hour,Clayton,MO,63105,86986,FY2026_Q3
+I-200-26120-855814,Certified,,2026-05-07T00:00:00,"Riot Games, Inc.",Database Engineer,15-1242.00,Database Administrators,Y,41.82,,Hour,37.97,Hour,Clayton,MO,63105,86986,FY2026_Q3
+I-200-26124-866332,Certified,,2026-05-11T00:00:00,"Riot Games, Inc.",Systems Engineer III,15-1252.00,Software Developers,Y,213179,,Year,184558,Year,Los Angeles,CA,90064,213179,FY2026_Q3
+I-200-26124-866673,Certified,,2026-05-11T00:00:00,"Riot Games, Inc.",3D Character Artist,15-1255.01,Video Game Designers,Y,90293,,Year,90293,Year,Los Angeles,CA,90025,90293,FY2026_Q3
+I-200-26124-866746,Withdrawn,,2026-05-06T00:00:00,"Riot Games, Inc.",Software Engineer III,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,,FY2026_Q3
+I-200-26125-870151,Certified,,2026-05-12T00:00:00,"Riot Games, Inc.",Public Relations Strategist III,27-3031.00,Public Relations Specialists,Y,105435,,Year,101421,Year,Los Angeles,CA,90064,105435,FY2026_Q3
+I-200-26125-870324,Certified - Withdrawn,,2026-05-26T00:00:00,"Riot Games, Inc.",Data Scientist III,15-2051.00,Data Scientists,Y,158808,,Year,158808,Year,Los Angeles,CA,90064,158808,FY2026_Q3
+I-200-26126-874512,Certified,,2026-05-13T00:00:00,"Riot Games, Inc.",Software Engineer III,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,184558,FY2026_Q3
+I-200-26127-883532,Certified,,2026-05-14T00:00:00,"Riot Games, Inc.",Machine Learning Engineer II,15-1252.00,Software Developers,Y,226138,,Year,226138,Year,Sunnyvale,CA,94086,226138,FY2026_Q3
+I-200-26128-888139,Certified,,2026-05-15T00:00:00,"Riot Games, Inc.","Senior Manager, Brand Management",13-1161.00,Market Research Analysts and Marketing Specialists,Y,113256,,Year,113256,Year,Los Angeles,CA,90064,113256,FY2026_Q3
+I-200-26128-889745,Certified - Withdrawn,,2026-05-26T00:00:00,"Riot Games, Inc.",Data Scientist III,15-2051.00,Data Scientists,Y,158808,,Year,158808,Year,Los Angeles,CA,90064,158808,FY2026_Q3
+I-200-26128-889826,Certified,,2026-05-15T00:00:00,"Riot Games, Inc.",Public Relations Strategist III,27-3031.00,Public Relations Specialists,Y,105435,,Year,101421,Year,Los Angeles,CA,90064,105435,FY2026_Q3
+I-200-26131-894507,Certified,,2026-05-18T00:00:00,"Riot Games, Inc.",Concept Artist III,15-1255.01,Video Game Designers,Y,146515,,Year,146515,Year,Los Angeles,CA,90064,146515,FY2026_Q3
+I-200-26133-904794,Certified,,2026-05-20T00:00:00,"Riot Games, Inc.",Accountant III,13-2011.00,Accountants and Auditors,Y,118435,,Year,118435,Year,Los Angeles,CA,90064,118435,FY2026_Q3
+I-200-26134-910847,Certified,,2026-05-21T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,184558,FY2026_Q3
+I-200-26135-915916,Certified,,2026-05-22T00:00:00,"Riot Games, Inc.",Research Scientist,15-2051.00,Data Scientists,Y,101712,,Year,101712,Year,Los Angeles,CA,90064,101712,FY2026_Q3
+I-200-26135-917975,Certified,,2026-05-22T00:00:00,"Riot Games, Inc.",Machine Learning Engineer III,15-2051.00,Data Scientists,Y,158808,,Year,158808,Year,Los Angeles,CA,90064,158808,FY2026_Q3
+I-200-26138-922204,Certified,,2026-05-26T00:00:00,"Riot Games, Inc.",Machine Learning Engineer II,15-1252.00,Software Developers,Y,157123,,Year,157123,Year,Los Angeles,CA,90064,157123,FY2026_Q3
+I-200-26138-924054,Certified,,2026-05-26T00:00:00,"Riot Games, Inc.",Security Engineer III,15-1299.05,Information Security Engineers,Y,145246,,Year,145246,Year,Los Angeles,CA,90064,145246,FY2026_Q3
+I-200-26139-928688,Certified,,2026-05-27T00:00:00,"Riot Games, Inc.",Accountant II,13-2011.00,Accountants and Auditors,Y,82763,,Year,82763,Year,Los Angeles,CA,90064,82763,FY2026_Q3
+I-200-26139-928835,Certified,,2026-05-27T00:00:00,"Riot Games, Inc.",Data Engineer III,15-1243.00,Database Architects,Y,131976,,Year,131976,Year,Buffalo,NY,14216,131976,FY2026_Q3
+I-200-26139-928922,Certified,,2026-05-27T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,157123,,Year,157123,Year,Los Angeles,CA,90064,157123,FY2026_Q3
+I-200-26141-937160,Certified,,2026-05-29T00:00:00,"Riot Games, Inc.",Database Engineer,15-1242.00,Database Administrators,Y,37.97,,Hour,37.97,Hour,Clayton,MO,63105,78978,FY2026_Q3
+I-200-26141-937859,Certified,,2026-05-29T00:00:00,"Riot Games, Inc.","Manager, VFX Art",27-1011.00,Art Directors,Y,181896,,Year,181896,Year,Los Angeles,CA,90064,181896,FY2026_Q3
+I-200-26152-968623,Certified,,2026-06-08T00:00:00,"Riot Games, Inc.",Game Producer II,15-1299.09,Information Technology Project Managers,Y,130966,,Hour,130966,Hour,Los Angeles,CA,90064,,FY2026_Q3
+I-200-26156-987784,Certified,,2026-06-12T00:00:00,"Riot Games, Inc.",Machine Learning  Engineer II,15-1252.00,Software Developers,Y,213512,,Year,213512,Year,Los Angeles,CA,90064,213512,FY2026_Q3
+I-200-26162-005282,Certified,,2026-06-18T00:00:00,"Riot Games, Inc.",ERP Applications Analyst III,15-1211.00,Computer Systems Analysts,Y,144414,,Year,144414,Year,Los Angeles,CA,90064,144414,FY2026_Q3
+I-200-26162-006530,Certified,,2026-06-18T00:00:00,"Riot Games, Inc.",Machine Learning  Engineer II,15-1252.00,Software Developers,Y,157123,,Year,157123,Year,Los Angeles,CA,90064,157123,FY2026_Q3
+I-200-26162-006890,Certified,,2026-06-18T00:00:00,"Riot Games, Inc.",Research Scientist II - Tech Research,15-1221.00,Computer and Information Research Scientists,Y,119870,,Year,119870,Year,Los Angeles,CA,90064,119870,FY2026_Q3
+I-200-26167-021813,Certified,,2026-06-24T00:00:00,"Riot Games, Inc.","Manager, VFX Art",27-1011.00,Art Directors,Y,181896,,Year,181896,Year,Los Angeles,CA,90064,181896,FY2026_Q3
+I-200-26173-038283,Certified,,2026-06-29T00:00:00,"Riot Games, Inc.",Software Engineer II,15-1252.00,Software Developers,Y,180710,,Year,180710,Year,Mercer Island,WA,98040,180710,FY2026_Q3
+I-203-26169-028645,Certified,,2026-06-26T00:00:00,"Riot Games, Inc.",Software Engineer III,15-1252.00,Software Developers,Y,184558,,Year,184558,Year,Los Angeles,CA,90064,184558,FY2026_Q3
