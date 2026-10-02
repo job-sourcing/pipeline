@@ -1931,7 +1931,9 @@ class TestShippedWatchConfig:
             # workday boards WITHOUT the timeType facet (the beigene
             # class — the adapter refuses the filter, so the config
             # must not claim one)
-            _NO_TIME_FACET = {"beigene|wd5|BeiGene"}
+            # S25: canadiansolar joins the no-facet workday class (timeType
+            # not served — the adapter refuses the filter, config must not claim)
+            _NO_TIME_FACET = {"beigene|wd5|BeiGene", "canadiansolar|wd5|CanadianSolar"}
             if not site_boards.is_site_spec(w["board"]) \
                     and w["board"] not in _NO_TIME_FACET:
                 required.append("time_type")
