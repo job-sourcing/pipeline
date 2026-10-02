@@ -2,7 +2,7 @@
  "brand": "Apollomics",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T11:49:57.294Z",
+ "ts": "2026-10-02T11:53:45.737Z",
  "candidates": [
   {
    "url": "https://www.biotech-careers.org/company/apollomics",
@@ -17,6 +17,18 @@
    "backend": "direct"
   },
   {
+   "url": "https://simplify.jobs/c/Apollomics",
+   "title": "Jobs and Employment at Apollomics | Simplify Jobs",
+   "status": 200,
+   "bytes": 68231,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Apply to jobs at Apollomics and thousands of other companies in one-click on Simplify!",
+   "backend": "direct"
+  },
+  {
    "url": "https://www.apollomicsinc.com/",
    "title": "",
    "status": 200,
@@ -26,18 +38,6 @@
    "spec": null,
    "score": 5,
    "snippet": "Committed to the discovery and development of oncology combination therapies",
-   "backend": "direct"
-  },
-  {
-   "url": "https://www.apollomicsinc.com/zh-hans/join-our-team/our-culture/",
-   "title": "404 Error: Page Not Found",
-   "status": 404,
-   "bytes": 2205,
-   "markers": [],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 5,
-   "snippet": "We believe that our current and future success as a biopharmaceutical company depends on the contribution and dedication of each of our employees. We are proud ",
    "backend": "direct"
   }
  ],
@@ -63,9 +63,14 @@
    "s": "We believe that our current and future success as a biopharmaceutical company depends on the contribution and dedication of each of our employees. We are proud "
   },
   {
-   "t": "Apollomics Careers | Levels.fyi",
-   "u": "https://www.levels.fyi/companies/apollomics",
-   "s": "Everything you need to know about Apollomics including salaries, levels, benefits, and more."
+   "t": "Apollomics - 领英",
+   "u": "https://cn.linkedin.com/company/apollomics",
+   "s": "Apollomics | 在领英上有 2,787 位关注者。We are a biopharmaceutical company committed to the discovery and development of mono- and combination cancer therapies. | Apollom"
+  },
+  {
+   "t": "Jobs and Employment at Apollomics | Simplify",
+   "u": "https://simplify.jobs/c/Apollomics",
+   "s": "Apply to jobs at Apollomics and thousands of other companies in one-click on Simplify!"
   },
   {
    "t": "Apollomics Online Store",
@@ -73,14 +78,9 @@
    "s": "Stable isotope standards, peptide products, and custom synthesis services for international research customers."
   },
   {
-   "t": "Apollomics - 领英",
-   "u": "https://cn.linkedin.com/company/apollomics",
-   "s": "Apollomics | 在领英上有 2,787 位关注者。We are a biopharmaceutical company committed to the discovery and development of mono- and combination cancer therapies. | Apollom"
-  },
-  {
-   "t": "Apollomics Average Salary and Pay Ranges | Salary.com",
-   "u": "https://www.salary.com/research/company/apollomics-salary",
-   "s": "What is the average salary of an Apollomics employee per year? Explore company details, Job salaries, nearby and related companies."
+   "t": "Apollomics Careers | Levels.fyi",
+   "u": "https://www.levels.fyi/companies/apollomics",
+   "s": "Everything you need to know about Apollomics including salaries, levels, benefits, and more."
   },
   {
    "t": "Apollomics - Biotech Careers",
@@ -90,7 +90,7 @@
   {
    "t": "Apollomics - LinkedIn",
    "u": "https://www.linkedin.com/company/apollomics",
-   "s": "Apollomics Biotechnology Research Foster City, California 2,789 followers We are a biopharmaceutical company committed to the discovery and development of mono-"
+   "s": "Apollomics is an innovative biotechnology company committed to the discovery and development of oncology combination therapies. With operations in both the U.S."
   },
   {
    "t": "Home | Apollomics Inc.",
@@ -103,9 +103,9 @@
    "s": "Focus: Apollomics is a public-stage oncology-focused biotechnology company headquartered in Foster City, CA, developing targeted cancer medicines across multipl"
   },
   {
-   "t": "Apollomics - 领英",
-   "u": "https://cn.linkedin.com/company/apollomics",
-   "s": "Apollomics | 在领英上有 2,787 位关注者。We are a biopharmaceutical company committed to the discovery and development of mono- and combination cancer therapies. | Apollom"
+   "t": "Apollomics Reviews, Interview Guide, Real Salaries & Jobs [2026 ...",
+   "u": "https://candidatesreach.com/companies/apollomics",
+   "s": "Complete hiring intelligence for Apollomics: verified workplace culture, key interview checkpoints, real compensation benchmarks, and direct referral opportunit"
   },
   {
    "t": "Apollomics | Work in biotech",
@@ -113,14 +113,14 @@
    "s": "Find all jobs in Apollomics company. Never miss out on new jobs. Join our weekly update! Featured companies Promote a company Enlaza Learn more Glyphic Biotechn"
   },
   {
-   "t": "Apollomics Average Salary and Pay Ranges | Salary.com",
-   "u": "https://www.salary.com/research/company/apollomics-salary",
-   "s": "What is the average salary of an Apollomics employee per year? Explore company details, Job salaries, nearby and related companies."
-  },
-  {
    "t": "Apollomics Careers, Jobs, and Salary Information - Ladders",
    "u": "https://www.theladders.com/company/apollomics-jobs",
    "s": "Find high paying available jobs at Apollomics.For information on Apollomics compensation and careers, use Ladders $100K + Club."
+  },
+  {
+   "t": "Apollomics - Jobs, Funding & Reviews",
+   "u": "https://www.employbl.com/companies/apollomics",
+   "s": "Explore Apollomics: open job listings, funding rounds, office locations, and employee reviews. Find your next opportunity at Apollomics on Employbl."
   },
   {
    "t": "Apollomics - Biotech Careers",
@@ -130,7 +130,7 @@
   {
    "t": "Apollomics - LinkedIn",
    "u": "https://www.linkedin.com/company/apollomics",
-   "s": "Apollomics Biotechnology Research Foster City, California 2,789 followers We are a biopharmaceutical company committed to the discovery and development of mono-"
+   "s": "Apollomics is an innovative biotechnology company committed to the discovery and development of oncology combination therapies. With operations in both the U.S."
   },
   {
    "t": "Home | Apollomics Inc.",
@@ -138,12 +138,17 @@
    "s": "Committed to the discovery and development of oncology combination therapies"
   },
   {
-   "t": "Apollomics | Biotech Careers",
-   "u": "https://www.biotech.org/company/apollomics",
-   "s": "Apollomics is a biopharmaceutical company committed to the discovery and development of oncology combination therapies. Business Areas: Cancer Therapeutics,Anti"
+   "t": "Jobs and Employment at Apollomics | Simplify Jobs",
+   "u": "https://simplify.jobs/c/Apollomics",
+   "s": "Apply to jobs at Apollomics and thousands of other companies in one-click on Simplify!"
   }
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "best": {
+  "url": "https://simplify.jobs/c/Apollomics",
+  "platform": "custom",
+  "title": "Jobs and Employment at Apollomics | Simplify Jobs"
+ },
+ "verdict": "custom_surface"
 }

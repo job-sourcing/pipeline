@@ -2,7 +2,7 @@
  "brand": "Aqara",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T11:50:35.421Z",
+ "ts": "2026-10-02T11:54:19.222Z",
  "candidates": [
   {
    "url": "https://erp.aqara.com/en_US/jobs/apply/pqm-755",
@@ -17,7 +17,7 @@
    "backend": "direct"
   },
   {
-   "url": "https://erp.aqara.com/en_US/jobs/apply/431",
+   "url": "https://erp.aqara.com/en_US/jobs/apply/361",
    "title": "",
    "status": 0,
    "bytes": 0,
@@ -25,19 +25,19 @@
    "jsonld_jobs": 0,
    "spec": null,
    "score": 7,
-   "snippet": "技术支持工程师 Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司",
+   "snippet": "技术支持工程师（实习） Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司",
    "backend": "direct"
   },
   {
-   "url": "https://erp.aqara.com/en_US/jobs/apply/357",
-   "title": "",
-   "status": 0,
-   "bytes": 0,
+   "url": "https://www.aqara.com/en/business/become-an-installer/",
+   "title": "Become an Installer - Aqara",
+   "status": 200,
+   "bytes": 481039,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
-   "score": 7,
-   "snippet": "射频工程师 Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司",
+   "score": 5,
+   "snippet": "The platform provides structured learning paths for both existing Aqara partners and new participants, such as installers, system integrators, and store service",
    "backend": "direct"
   }
  ],
@@ -79,8 +79,8 @@
   },
   {
    "t": "Apply Job | AqaraWebsite - erp.aqara.com",
-   "u": "https://erp.aqara.com/en_US/jobs/apply/431",
-   "s": "技术支持工程师 Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司"
+   "u": "https://erp.aqara.com/en_US/jobs/apply/361",
+   "s": "技术支持工程师（实习） Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司"
   },
   {
    "t": "Aqara Inc. Careers and Employment | Indeed.com",
@@ -113,9 +113,9 @@
    "s": "Find out if Aqara is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benefits,"
   },
   {
-   "t": "Apply Job | AqaraWebsite - erp.aqara.com",
-   "u": "https://erp.aqara.com/en_US/jobs/apply/357",
-   "s": "射频工程师 Your Name Your Email Your Phone Number Short Introduction Resume Submit © 2019 深圳绿米联创科技有限公司"
+   "t": "Jobs at Aqara: Explore current Opportunities - wellfound.com",
+   "u": "https://wellfound.com/company/aqarainc/jobs",
+   "s": "Discover Startups Aqara Jobs at Aqara: Explore current Opportunities Aqara Aqara Inc. is a provider of smart home products and devices 1-10 Employees Scale Stag"
   },
   {
    "t": "Aqara - Smart Home Automation Devices for Better Living",
