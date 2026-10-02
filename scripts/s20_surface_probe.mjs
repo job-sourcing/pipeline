@@ -15,7 +15,7 @@
 import ZAI from '../ingest/vendor/z-ai-web-dev-sdk/dist/index.js'
 import { searchWeb } from './s20_kit_search.mjs'
 import { execFile } from 'node:child_process'
-import { readFileSync, writeFileSync, existsSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
 
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
@@ -561,6 +561,10 @@ async function main () {
   const censusDir = args.dir ? join(REPO, 'ingest/data/ats_seed', args.dir) : DIR
   const queuePath = args.queue ? (args.queue.startsWith('/') ? args.queue : join(censusDir, args.queue)) : QUEUE
   const PROBE = `${censusDir}/probe`
+  // S25: the evidence dir is NOT guaranteed to exist in a fresh
+  // checkout (a census dir born without probe/ crashed every GHA leg
+  // with ENOENT on the first writeFileSync — evidence never landed).
+  try { mkdirSync(PROBE, { recursive: true }) } catch { }
   const queue = JSON.parse(readFileSync(queuePath, 'utf8'))
   const list = mode === 'identity' ? queue.wire_now : (queue[tier] || [])
   const slice = list.slice(offset, offset + limit)

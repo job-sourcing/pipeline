@@ -111,8 +111,6 @@ jobs:
         if: env.remaining != '0' && env.PROBE_RESULT != 'complete'
         run: |
           set -e
-          # S25 debug: prove the evidence dir state before the leg
-          echo "probe dir state:"; ls -la "ingest/data/ats_seed/$SECTOR/probe" || echo "MISSING probe dir"
           cd ingest && python3 -m pip install --break-system-packages -q -e . 2>/dev/null || true
           cd ..
           MODE=surface
@@ -131,15 +129,20 @@ jobs:
           mkdir -p /tmp/probe_state
           SECTOR_DIR="ingest/data/ats_seed/$SECTOR"
           cp -r "$SECTOR_DIR/probe" /tmp/probe_state/ 2>/dev/null || true
+          # S25 guard: if the leg produced no probe dir, restoring
+          # nothing must not STAGE A DELETION of committed evidence
+          HAVE_STATE=0; [ -d /tmp/probe_state/probe ] && HAVE_STATE=1
           git config user.name "sector-probe-bot"
           git config user.email "actions@github.com"
           push_ok=0
           for i in 1 2 3; do
             git fetch origin || true
             git reset --hard origin/main
-            rm -rf "$SECTOR_DIR/probe"
-            cp -r /tmp/probe_state/probe "$SECTOR_DIR/probe" 2>/dev/null || true
-            git add "$SECTOR_DIR/probe" || true
+            if [ "$HAVE_STATE" = "1" ]; then
+              rm -rf "$SECTOR_DIR/probe"
+              cp -r /tmp/probe_state/probe "$SECTOR_DIR/probe"
+              git add "$SECTOR_DIR/probe" || true
+            fi
             if git diff --cached --quiet; then
               echo "no probe evidence change to commit"
               push_ok=1; break
