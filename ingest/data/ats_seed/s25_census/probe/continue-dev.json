@@ -1,0 +1,154 @@
+{
+ "brand": "Continue.dev",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:38:13.850Z",
+ "candidates": [
+  {
+   "url": "https://www.ycombinator.com/companies/continue/jobs",
+   "title": "Jobs at Continue | Y Combinator",
+   "status": 200,
+   "bytes": 113413,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Jobs at Continue No jobs at Continue are currently posted on the YC platform.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://fewerjobs.com/employers/continue",
+   "title": "Continue Jobs - FewerJobs",
+   "status": 200,
+   "bytes": 20574,
+   "markers": [],
+   "jsonld_jobs": 3,
+   "spec": null,
+   "score": 7,
+   "snippet": "Continue has 3 open roles indexed by FewerJobs, with benefits and location signals where available.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://claveprep.com/blog/continuedev-hiring-process-guide-2026",
+   "title": "Continue.dev Hiring Process Guide 2026 | ClavePrep",
+   "status": 200,
+   "bytes": 175894,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "This mid-funnel guide maps the typical Continue.dev hiring process —stage order, what each stage tests, track variations, timelines, and how to prepare—not a le",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Continue (acquired by Cursor) - LinkedIn",
+   "u": "https://www.linkedin.com/company/continuedev",
+   "s": "Continue (acquired by Cursor) Software Development San Francisco, CA 6,662 followers Pioneering open-source coding agent About us Pioneering open-source coding "
+  },
+  {
+   "t": "Careers - ContinuServe",
+   "u": "https://continuserve.com/careers/",
+   "s": "Learning and professional development - Continuous learning opportunities, skill development programs, certifications, and tuition reimbursement to support your"
+  },
+  {
+   "t": "Jobs at Continue - Y Combinator",
+   "u": "https://www.ycombinator.com/companies/continue/jobs",
+   "s": "Jobs at Continue No jobs at Continue are currently posted on the YC platform."
+  },
+  {
+   "t": "Continue.dev Hiring Process Guide 2026 | ClavePrep",
+   "u": "https://claveprep.com/blog/continuedev-hiring-process-guide-2026",
+   "s": "This mid-funnel guide maps the typical Continue.dev hiring process —stage order, what each stage tests, track variations, timelines, and how to prepare—not a le"
+  },
+  {
+   "t": "Continue Jobs — 3 AI Roles | AI Dev Jobs",
+   "u": "https://aidevboard.com/company/continue-dev",
+   "s": "How many AI jobs does Continue have? Continue currently has 3 open AI developer positions on AI Dev Jobs."
+  },
+  {
+   "t": "Continue.dev Jobs with the ClavePrep Chrome Extension",
+   "u": "https://claveprep.com/chrome-extension/continuedev",
+   "s": "Use the ClavePrep Chrome extension on Continue.dev careers and job posts. Save roles, check ATS fit in real time, create résumés, auto-fill applications, and pr"
+  },
+  {
+   "t": "Continue.dev Alternatives After the Cursor Deal (2026)",
+   "u": "https://www.bodegaone.ai/blog/continue-dev-shutdown-alternatives",
+   "s": "Continue.dev is winding down after the Cursor acquisition: where to go next Bodega One · June 29, 2026 · 9 min read Share Quick answer Continue.dev was acquired"
+  },
+  {
+   "t": "Continue Jobs (September 2026)",
+   "u": "https://startup.jobs/company/continue",
+   "s": "Continue builds an automated code review platform that enhances the efficiency and quality of software development. By integrating with pull requests, it provid"
+  },
+  {
+   "t": "Continue Jobs — 3 AI Roles | AI Dev Jobs",
+   "u": "https://aidevboard.com/company/continue-dev",
+   "s": "3 open AI developer roles at Continue. Browse positions, salaries, and apply."
+  },
+  {
+   "t": "Jobs at Continue | Y Combinator",
+   "u": "https://www.ycombinator.com/companies/continue/jobs",
+   "s": "Jobs at Continue No jobs at Continue are currently posted on the YC platform."
+  },
+  {
+   "t": "Continue Jobs - FewerJobs",
+   "u": "https://fewerjobs.com/employers/continue",
+   "s": "Continue has 3 open roles indexed by FewerJobs, with benefits and location signals where available."
+  },
+  {
+   "t": "Continue.dev Alternatives After the Cursor Deal (2026)",
+   "u": "https://www.bodegaone.ai/blog/continue-dev-shutdown-alternatives",
+   "s": "Continue.dev was acquired by Cursor and is no longer maintained. Three honest alternatives for developers who relied on it."
+  },
+  {
+   "t": "Continue.dev Is Dead: What Happened and Best Alternatives (2026)",
+   "u": "https://copilot-alternatives.com/blog/continue-dev-shutdown-alternatives-2026/",
+   "s": "Continue.dev was acquired by Cursor in June 2026 and shut down — final release, read-only repo, data export deadline passed. What happened, and the best replace"
+  },
+  {
+   "t": "Continue (acquired by Cursor) - LinkedIn",
+   "u": "https://www.linkedin.com/company/continuedev",
+   "s": "Continue (acquired by Cursor) Software Development San Francisco, CA 6,662 followers Pioneering open-source coding agent About us Pioneering open-source coding "
+  },
+  {
+   "t": "Continue (acquired by Cursor)",
+   "u": "https://continue.dev/",
+   "s": "Continue has been acquired by Cursor. Continue was acquired by Cursor. Our mission was always to ensure developers are amplified, not automated, and that commit"
+  },
+  {
+   "t": "GitHub - continuedev/continue: open-source coding agent",
+   "u": "https://github.com/continuedev/continue",
+   "s": "open-source coding agent. Contribute to continuedev/continue development by creating an account on GitHub."
+  },
+  {
+   "t": "Continue.dev Hiring Process Guide 2026 | ClavePrep",
+   "u": "https://claveprep.com/blog/continuedev-hiring-process-guide-2026",
+   "s": "Continue.dev ranks #3005 on ClavePrep's Fortune Global 500-style revenue list (~ $0.02B), operates in Software, and has major operations tied to United States. "
+  },
+  {
+   "t": "Continue Jobs (September 2026)",
+   "u": "https://startup.jobs/company/continue",
+   "s": "Continue builds an automated code review platform that enhances the efficiency and quality of software development. By integrating with pull requests, it provid"
+  },
+  {
+   "t": "Continue (acquired by Cursor) - LinkedIn",
+   "u": "https://www.linkedin.com/company/continuedev",
+   "s": "Continue (acquired by Cursor) Software Development San Francisco, CA 6,662 followers Pioneering open-source coding agent"
+  },
+  {
+   "t": "continue Careers | Onsite | 3 Open Positions | August 2026",
+   "u": "https://jobera.com/employer/continue-2/",
+   "s": "Browse 3 open positions at continue. Find onsite jobs and apply today on Jobera."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://claveprep.com/blog/continuedev-hiring-process-guide-2026",
+  "platform": "custom",
+  "title": "Continue.dev Hiring Process Guide 2026 | ClavePrep"
+ },
+ "verdict": "custom_surface"
+}

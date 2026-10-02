@@ -1,0 +1,29 @@
+{
+ "brand": "Cider",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:36:30.426Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "ciderglobal",
+   "spec": "feishuhire:ciderglobal",
+   "title": "我们正在招聘，加入Cider！"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:ciderglobal",
+  "platform": "feishu",
+  "title": "我们正在招聘，加入Cider！",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "我们正在招聘，加入Cider！",
+  "brand": "Cider",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

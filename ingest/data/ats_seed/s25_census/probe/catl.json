@@ -1,0 +1,159 @@
+{
+ "brand": "CATL",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:30:13.757Z",
+ "candidates": [
+  {
+   "url": "https://www.catl-career.com/?locale=en_US",
+   "title": "CATL",
+   "status": 200,
+   "bytes": 79525,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CATL is a Chinese company that produces batteries for electric vehicles and energy storage systems. It has over 100,000 employees and 13 production sites worldw",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.catl-career.com/viewalljobs/?locale=en_US",
+   "title": "View all jobs - CATL",
+   "status": 200,
+   "bytes": 58619,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Here you can find our latest job openings from CATL Germany and Hungary.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://ev.careers/companies/catl-6981186",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5701,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore current job openings at CATL today. Find and apply for your dream career now on EV.Careers.",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "CATL",
+   "u": "https://www.catl-career.com/?locale=en_US",
+   "s": "CATL is a Chinese company that produces batteries for electric vehicles and energy storage systems. It has over 100,000 employees and 13 production sites worldw"
+  },
+  {
+   "t": "View all jobs - CATL",
+   "u": "https://www.catl-career.com/viewalljobs/?locale=en_US",
+   "s": "Here you can find our latest job openings from CATL Germany and Hungary."
+  },
+  {
+   "t": "Build What Matters - Caterpillar Careers",
+   "u": "https://www.caterpillar.com/en/careers.html",
+   "s": "At Caterpillar, you build what matters—whether it's the career you want, crucial work skills, strong relationships or new digital technologies. There are big jo"
+  },
+  {
+   "t": "CATL: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/contemporary-amperex-technology-gmbh/jobs/",
+   "s": "CATL | 336,257 followers on LinkedIn. CATL is a global leader in innovative zero-carbon technology, providing comprehensive energy solutions to accelerate the g"
+  },
+  {
+   "t": "Catl Jobs in United States (86 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/catl-jobs",
+   "s": "Today's top 86 Catl jobs in United States. Leverage your professional network, and get hired. New Catl jobs added daily."
+  },
+  {
+   "t": "宁德时代校招 | 宁德时代社招 | 宁德时代招聘官网",
+   "u": "https://talent.catl.com/",
+   "s": "2026年宁德时代社会招聘正在进行，点击申请职位"
+  },
+  {
+   "t": "CATL Jobs - EV.Careers",
+   "u": "https://ev.careers/companies/catl-6981186",
+   "s": "Explore current job openings at CATL today. Find and apply for your dream career now on EV.Careers."
+  },
+  {
+   "t": "Jobs - Do the Work that Matters | Caterpillar Careers",
+   "u": "https://careers.caterpillar.com/en/jobs/",
+   "s": "Explore career opportunities at Caterpillar and find jobs that align with your skills and aspirations."
+  },
+  {
+   "t": "View all jobs - CATL",
+   "u": "https://www.catl-career.com/viewalljobs/?locale=en_US",
+   "s": "Here you can find our latest job openings from CATL Germany and Hungary."
+  },
+  {
+   "t": "CATL",
+   "u": "https://www.catl-career.com/?locale=en_US",
+   "s": "Here you can find our latest job openings from CATL Germany and Hungary."
+  },
+  {
+   "t": "Build What Matters - Caterpillar Careers",
+   "u": "https://www.caterpillar.com/en/careers.html",
+   "s": "At Caterpillar, you build what matters—whether it's the career you want, crucial work skills, strong relationships or new digital technologies. There are big jo"
+  },
+  {
+   "t": "Catl Jobs in United States (86 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/catl-jobs",
+   "s": "Today's top 86 Catl jobs in United States. Leverage your professional network, and get hired. New Catl jobs added daily."
+  },
+  {
+   "t": "CATL: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/contemporary-amperex-technology-gmbh/jobs/",
+   "s": "CATL | 336,257 followers on LinkedIn. CATL is a global leader in innovative zero-carbon technology, providing comprehensive energy solutions to accelerate the g"
+  },
+  {
+   "t": "Now Hiring: 1,000 Catl Jobs | Indeed",
+   "u": "https://www.indeed.com/q-catl-jobs.html",
+   "s": "Browse 1,391 Catl jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Working at Contemporary Amperex Technology | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-Contemporary-Amperex-Technology-EI_IE1593598.11,42.htm",
+   "s": "How can I get a job at Contemporary Amperex Technology? To get a job at Contemporary Amperex Technology, browse currently open positions and apply for a job nea"
+  },
+  {
+   "t": "CATL Jobs - EV.Careers",
+   "u": "https://ev.careers/companies/catl-6981186",
+   "s": "Explore current job openings at CATL today. Find and apply for your dream career now on EV.Careers."
+  },
+  {
+   "t": "View all jobs - CATL - catl-career.com",
+   "u": "https://www.catl-career.com/viewalljobs/?locale=en_US",
+   "s": "Here you can find our latest job openings from CATL Germany and Hungary."
+  },
+  {
+   "t": "CATL",
+   "u": "https://www.catl-career.com/?locale=en_US",
+   "s": "Here you can find our latest job openings from CATL Germany and Hungary."
+  },
+  {
+   "t": "Now Hiring: 1,000 Catl Jobs | Indeed",
+   "u": "https://www.indeed.com/q-catl-jobs.html",
+   "s": "Browse 1,391 Catl jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Catl Jobs in United States (86 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/catl-jobs",
+   "s": "Today's top 86 Catl jobs in United States. Leverage your professional network, and get hired. New Catl jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.catl-career.com/?locale=en_US",
+  "platform": "successfactors",
+  "title": "CATL"
+ },
+ "verdict": "marker_surface"
+}

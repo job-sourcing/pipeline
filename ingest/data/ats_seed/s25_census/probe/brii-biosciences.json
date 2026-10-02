@@ -1,0 +1,158 @@
+{
+ "brand": "Brii Biosciences",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:28:26.546Z",
+ "candidates": [
+  {
+   "url": "https://www.briibio.com/en/careers/",
+   "title": "Careers | Brii Biosciences",
+   "status": 200,
+   "bytes": 285230,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Brii Bio believes our people are our future, and we are committed to fostering a work culture which supports employee health and well-being, learning and career",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.briibio.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 101470,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "INVESTOR RELATIONS Investor Relations Fact Sheet Corporate Governance Listing Documents Announcements & Circulars Share Graph Financial Calendar Presentation & ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.briibio.com/go/View-All-Jobs/9496800/",
+   "title": "",
+   "status": 200,
+   "bytes": 154847,
+   "markers": [
+    "successfactors"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "INVESTOR RELATIONS Investor Relations Fact Sheet Corporate Governance Listing Documents Announcements & Circulars Share Graph Financial Calendar Presentation & ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | Brii Biosciences",
+   "u": "https://www.briibio.com/en/careers/",
+   "s": "Brii Bio believes our people are our future, and we are committed to fostering a work culture which supports employee health and well-being, learning and career"
+  },
+  {
+   "t": "View All Jobs",
+   "u": "https://careers.briibio.com/",
+   "s": "INVESTOR RELATIONS Investor Relations Fact Sheet Corporate Governance Listing Documents Announcements & Circulars Share Graph Financial Calendar Presentation & "
+  },
+  {
+   "t": "View All Jobs - careers.briibio.com",
+   "u": "https://careers.briibio.com/go/View-All-Jobs/9496800/",
+   "s": "INVESTOR RELATIONS Investor Relations Fact Sheet Corporate Governance Listing Documents Announcements & Circulars Share Graph Financial Calendar Presentation & "
+  },
+  {
+   "t": "Brii Biosciences: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/brii-biosciences/jobs",
+   "s": "Brii Biosciences | 8,842 followers on LinkedIn. Brii Biosciences Limited (\"Brii Bio\", stock code: 2137.HK) is a biotechnology company developing therapies to im"
+  },
+  {
+   "t": "Brii Biosciences Biosciences Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-brii-biosciences-biosciences-jobs.html",
+   "s": "Browse 21 Brii Biosciences Biosciences jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Brii Biosciences Jobs & Careers - 3 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Brii-Biosciences-Jobs-E3271552.htm",
+   "s": "Search job openings at Brii Biosciences. 3 Brii Biosciences jobs including salaries, ratings, and reviews, posted by Brii Biosciences employees."
+  },
+  {
+   "t": "Brii Biosciences - LinkedIn",
+   "u": "https://www.linkedin.com/company/brii-biosciences",
+   "s": "Brii Biosciences Limited (\"Brii Bio\", stock code: 2137.HK) is a biotechnology company developing therapies to improve patients' health by addressing high unmet "
+  },
+  {
+   "t": "Brii Biosciences - Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/brii-biosciences",
+   "s": "Brii Biosciences dedicated to serving patients' needs and improving public health in China. COVID-19 News Apr 02, 2020: Tsinghua University, 3rd People's Hospit"
+  },
+  {
+   "t": "Careers | Brii Biosciences",
+   "u": "https://www.briibio.com/en/careers/",
+   "s": "We innovate and advance novel therapies to provide greater choice and freedom to broad patient populations. Brii Biosciences is a biotechnology company developi"
+  },
+  {
+   "t": "Careers | Brii Biosciences",
+   "u": "https://briibio.com/careers",
+   "s": "Brii Biosciences is a biotechnology company developing therapies to address some of the world's most common public health challenges where patients experience h"
+  },
+  {
+   "t": "View All Jobs",
+   "u": "https://careers.briibio.com/",
+   "s": "INVESTOR RELATIONS Investor Relations Fact Sheet Corporate Governance Listing Documents Announcements & Circulars Share Graph Financial Calendar Presentation & "
+  },
+  {
+   "t": "Brii Biosciences Biosciences Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-brii-biosciences-biosciences-jobs.html",
+   "s": "Browse 21 Brii Biosciences Biosciences jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "View All Jobs - careers.briibio.com",
+   "u": "https://careers.briibio.com/go/View-All-Jobs/9496800/",
+   "s": "INVESTOR RELATIONS Investor Relations Fact Sheet Corporate Governance Listing Documents Announcements & Circulars Share Graph Financial Calendar Presentation & "
+  },
+  {
+   "t": "Brii Biosciences: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/brii-biosciences/jobs",
+   "s": "Brii Biosciences Limited (\"Brii Bio\", stock code: 2137.HK) is a biotechnology company developing therapies to improve patients' health by addressing high unmet "
+  },
+  {
+   "t": "Brii Biosciences Jobs & Careers - 3 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Brii-Biosciences-Jobs-E3271552.htm",
+   "s": "Search job openings at Brii Biosciences. 3 Brii Biosciences jobs including salaries, ratings, and reviews, posted by Brii Biosciences employees."
+  },
+  {
+   "t": "Brii Biosciences Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/brii-biosciences-jobs",
+   "s": "Today's top Brii Biosciences jobs in United States. Leverage your professional network, and get hired. New Brii Biosciences jobs added daily."
+  },
+  {
+   "t": "Careers | Brii Biosciences",
+   "u": "https://www.briibio.com/en/careers/",
+   "s": "Careers At Brii Bio, we are creative, diligent, devoted to excellence and eager to contribute public health solutions for patients around the world. Led by a vi"
+  },
+  {
+   "t": "careers.briibio.com - View All Jobs",
+   "u": "https://careers.briibio.com/",
+   "s": "INVESTOR RELATIONS Investor Relations Fact Sheet Corporate Governance Listing Documents Announcements & Circulars Share Graph Financial Calendar Presentation & "
+  },
+  {
+   "t": "Brii Biosciences Biosciences Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-brii-biosciences-biosciences-jobs.html",
+   "s": "Browse 21 Brii Biosciences Biosciences jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Brii Biosciences: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/brii-biosciences/jobs",
+   "s": "Brii Biosciences Limited (\"Brii Bio\", stock code: 2137.HK) is a biotechnology company developing therapies to improve patients' health by addressing high unmet "
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.briibio.com/",
+  "platform": "successfactors",
+  "title": ""
+ },
+ "verdict": "marker_surface"
+}

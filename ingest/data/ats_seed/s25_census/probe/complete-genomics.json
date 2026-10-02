@@ -1,0 +1,30 @@
+{
+ "brand": "Complete Genomics",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:37:21.731Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "complete",
+   "spec": "ashby:complete",
+   "title": " (7 jobs)",
+   "jobs": 7
+  }
+ ],
+ "best": {
+  "spec": "ashby:complete",
+  "platform": "ashby",
+  "title": " (7 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": null,
+  "brand": "Complete Genomics",
+  "ok": null,
+  "note": "no self-name — job-content adjudication required"
+ },
+ "verdict": "dict_unverified"
+}

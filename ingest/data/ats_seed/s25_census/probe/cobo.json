@@ -1,0 +1,169 @@
+{
+ "brand": "Cobo",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:36:44.891Z",
+ "candidates": [
+  {
+   "url": "https://jobs.ashbyhq.com/cobot/",
+   "title": "Cobot Jobs",
+   "status": 200,
+   "bytes": 18081,
+   "markers": [
+    "ashby"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "ashby:cobot",
+   "score": 17,
+   "snippet": "Cobot Jobs Commercial and Strategic Growth • Santa Clara • Full time • On-site",
+   "backend": "direct"
+  },
+  {
+   "url": "https://job-boards.greenhouse.io/cobo?error=true",
+   "title": "Page not found",
+   "status": 404,
+   "bytes": 12249,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "greenhouse:cobo",
+   "score": 17,
+   "snippet": "Whether you are starting your career or are an experienced professional searching for your next exciting opportunity, Cobo provides a distinctive platform to ma",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.cobo.com/careers",
+   "title": "Join Cobo and Shape the Future of Web3",
+   "status": 200,
+   "bytes": 277422,
+   "markers": [
+    "moka"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers Join Cobo and Shape the Future of Web3 We're an equal opportunity employer, valuing talent above all else. Join in the blockchain revolution with us tod",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Cobo and Shape the Future of Web3",
+   "u": "https://www.cobo.com/careers",
+   "s": "Careers Join Cobo and Shape the Future of Web3 We're an equal opportunity employer, valuing talent above all else. Join in the blockchain revolution with us tod"
+  },
+  {
+   "t": "Career - Cobo Group",
+   "u": "https://www.cobogroup.net/en/career/",
+   "s": "Your career at COBO represents a unique opportunity to grow professionally in a dynamic and innovative environment. By joining our team, you will have the chanc"
+  },
+  {
+   "t": "Careers at Cboe Global Markets | Cboe Global Markets jobs",
+   "u": "https://careers.cboe.com/",
+   "s": "Browse by Job Categories at Cboe. We give you the tools you need to discover your perfect job match, and the freedom and support to take your career to the next"
+  },
+  {
+   "t": "Join Cobo and Shape the Future of Web3",
+   "u": "https://www.cobo.com/zh/careers",
+   "s": "We're an equal opportunity employer, valuing talent above all else. Join in the blockchain revolution with us today."
+  },
+  {
+   "t": "COBO USA | West Burlington, IA Cobo Group",
+   "u": "https://www.cobogroup.net/en/group-company/cobo-usa/",
+   "s": "Design, development and manufacturing from COBO USA in Burlington, Iowa, including low- and high-voltage applications, light kits, and electrical subassemblies."
+  },
+  {
+   "t": "COBO USA Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Cobo-USA",
+   "s": "Find out what works well at COBO USA from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "Kobo Jobs: Open up to a new career | Rakuten Kobo United States",
+   "u": "https://www.kobo.com/us/en/p/careers",
+   "s": "Learning and development opportunities We can help you reach your long-term career goals, with training opportunities for all employees. Tuition reimbursement f"
+  },
+  {
+   "t": "Cobot Jobs",
+   "u": "https://jobs.ashbyhq.com/cobot/",
+   "s": "Cobot Jobs Commercial and Strategic Growth • Santa Clara • Full time • On-site"
+  },
+  {
+   "t": "Join Cobo and Shape the Future of Web3",
+   "u": "https://www.cobo.com/careers",
+   "s": "Careers Join Cobo and Shape the Future of Web3 We're an equal opportunity employer, valuing talent above all else. Join in the blockchain revolution with us tod"
+  },
+  {
+   "t": "Flexible Cobol Remote Jobs - Apply Today to Work From Home ... - Indeed",
+   "u": "https://www.indeed.com/q-Cobol-Remote-jobs.html",
+   "s": "Browse 154 Cobol Remote job openings. Discover flexible, work-from-home opportunities on Indeed in fields like tech, admin, and customer service."
+  },
+  {
+   "t": "COBO USA CORPORATION Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Cobo-USA-Corporation-1",
+   "s": "Find out what works well at COBO USA CORPORATION from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
+  },
+  {
+   "t": "Top 148 Cobol Jobs in Remote | SimplyHired",
+   "u": "https://www.simplyhired.com/search?q=cobol&l=remote",
+   "s": "148 Cobol jobs available in Remote. See salaries, compare reviews, easily apply, and get hired. New Cobol careers in Remote are added daily on SimplyHired.com."
+  },
+  {
+   "t": "Kobo Jobs: Open up to a new career | Rakuten Kobo United States",
+   "u": "https://www.kobo.com/us/en/p/careers",
+   "s": "Work at Kobo. We are looking for talented and passionate people at the top of their game. Check out our opportunities or sign up for job notifications."
+  },
+  {
+   "t": "Cobol Jobs (September 2026)",
+   "u": "https://startup.jobs/cobol-jobs",
+   "s": "Cobol jobs may be remote, part-time, full-time, or freelance. Employers typically look for candidates with experience in programming and software development, a"
+  },
+  {
+   "t": "Careers - Des Moines, Iowa",
+   "u": "https://www.dsm.city/departments/human_resources/careers/index.php",
+   "s": "Careers with the City of Des Moines: explore job openings, application tips, benefits, and recruitment for Fire, Police, and other city departments."
+  },
+  {
+   "t": "Mainframe Job Board | Find COBOL, JCL, CICS & Legacy Tech Jobs",
+   "u": "https://www.mainframemaster.com/jobs",
+   "s": "Mainframe Job Board - Cobol jobs Browse by technology Technologies Find mainframe job opportunities. Browse available positions posted by employers."
+  },
+  {
+   "t": "Join Cobo and Shape the Future of Web3",
+   "u": "https://www.cobo.com/careers",
+   "s": "Careers Join Cobo and Shape the Future of Web3 We're an equal opportunity employer, valuing talent above all else. Join in the blockchain revolution with us tod"
+  },
+  {
+   "t": "Careers | Join Our Team - Cabo Bob's",
+   "u": "https://cabobobs.com/join-our-team/",
+   "s": "If you're looking to kick off your career or learn about top-notch service, apply today to become a part of the Cabo Bob's crew. We'd love to have you!"
+  },
+  {
+   "t": "COBO USA Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Cobo-USA",
+   "s": "Find out what works well at COBO USA from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "COBO USA CORPORATION Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Cobo-USA-Corporation-1",
+   "s": "Find out what works well at COBO USA CORPORATION from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. "
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jobs.ashbyhq.com/cobot/",
+  "title": "Cobot Jobs",
+  "status": 200,
+  "bytes": 18081,
+  "markers": [
+   "ashby"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "ashby:cobot",
+  "score": 17,
+  "snippet": "Cobot Jobs Commercial and Strategic Growth • Santa Clara • Full time • On-site",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
+}

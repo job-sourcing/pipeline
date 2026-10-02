@@ -1,0 +1,154 @@
+{
+ "brand": "Changhong",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:34:03.983Z",
+ "candidates": [
+  {
+   "url": "https://changhongruba.com.pk/career",
+   "title": "Career",
+   "status": 200,
+   "bytes": 48725,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Please apply at career@changhong.com.pk Our Stores Lahore Changhong Ruba Factory Sundar Industrial Estate Plot #440-444 & 452-456 Main Sundar Raiwind Road Lahor",
+   "backend": "direct"
+  },
+  {
+   "url": "https://en.echanghong.com/job/",
+   "title": "Talent Recruitment-Jiangsu Changhong Intelligent Equipment Co., Ltd",
+   "status": 200,
+   "bytes": 61847,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "本页内容为您提供Talent Recruitment，Talent Recruitment为Jiangsu Changhong Intelligent Equipment Co., Ltd整理发布。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://group.changhong.com/jrzh_295/shzp/",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "社会招聘职位搜索 首页 1 2 3 下一页 尾页",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Career - changhong",
+   "u": "http://www.chtplastics.com/career/",
+   "s": "Career Talent that we need We are seeking talented individuals to push the boundaries of innovation in injection molding, ensuring we meet and exceed the market"
+  },
+  {
+   "t": "Apply - changhong",
+   "u": "http://www.chtplastics.com/apply/",
+   "s": "2 HR & Supervisor 3 Manager（if needed）"
+  },
+  {
+   "t": "Career - changhongruba.com.pk",
+   "u": "https://changhongruba.com.pk/career",
+   "s": "Please apply at career@changhong.com.pk Our Stores Lahore Changhong Ruba Factory Sundar Industrial Estate Plot #440-444 & 452-456 Main Sundar Raiwind Road Lahor"
+  },
+  {
+   "t": "社会招聘-关于长虹|长虹官网 - changhong.com",
+   "u": "https://group.changhong.com/jrzh_295/shzp/",
+   "s": "社会招聘职位搜索 首页 1 2 3 下一页 尾页"
+  },
+  {
+   "t": "Talent Recruitment-Jiangsu Changhong Intelligent Equipment Co., Ltd",
+   "u": "https://en.echanghong.com/job/",
+   "s": "本页内容为您提供Talent Recruitment，Talent Recruitment为Jiangsu Changhong Intelligent Equipment Co., Ltd整理发布。"
+  },
+  {
+   "t": "Changhong Career Jobs in United States (6,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/changhong-career-jobs",
+   "s": "Today's top 6,000+ Changhong Career jobs in United States. Leverage your professional network, and get hired. New Changhong Career jobs added daily."
+  },
+  {
+   "t": "zhaopin.changhong.com",
+   "u": "https://zhaopin.changhong.com/SU6886eae30287e94ac767de53/pb/index.html",
+   "s": "【温馨提示】检测到您正在使用兼容模式/旧版IE浏览器，功能可能无法正常使用。请使用以下极速模式浏览器获得最佳体验 ..."
+  },
+  {
+   "t": "changhong Careers and Employment | Indeed.com",
+   "u": "https://ph.indeed.com/cmp/Changhong",
+   "s": "Find out what works well at changhong from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "1,000+ Changhong jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/changhong-jobs?countryRedirected=1&f_AL=true&f_EA=true",
+   "s": "Today's top 1,000+ Changhong jobs in United States. Leverage your professional network, and get hired. New Changhong jobs added daily."
+  },
+  {
+   "t": "Changhong Career Jobs in United States (6,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/changhong-career-jobs",
+   "s": "Today's top 6,000+ Changhong Career jobs in United States. Leverage your professional network, and get hired. New Changhong Career jobs added daily."
+  },
+  {
+   "t": "社会招聘-关于长虹|长虹官网 - changhong.com",
+   "u": "https://group.changhong.com/jrzh_295/shzp/",
+   "s": "社会招聘职位搜索 首页 1 2 3 下一页 尾页"
+  },
+  {
+   "t": "Career - changhong",
+   "u": "http://www.chtplastics.com/career/",
+   "s": "We are seeking talented individuals to push the boundaries of innovation in injection molding, ensuring we meet and exceed the market's demand for high-quality "
+  },
+  {
+   "t": "Talent Recruitment-Jiangsu Changhong Intelligent Equipment Co., Ltd",
+   "u": "https://en.echanghong.com/job/",
+   "s": "For over 30 years, Changhong has remained committed to providing customers with production equipment that offers superior cost-performance value. As a Tier 1 eq"
+  },
+  {
+   "t": "招聘详细 - group.changhong.com",
+   "u": "https://group.changhong.com/jrzh_295/shzp/202509/t20250928_422460.html",
+   "s": "子公司全面人力资源支持：作为子公司与总部之间的关键桥梁，为海外子公司提供一站式、全方位的人力资源运营支持，包括： 1.招聘与配置：全面负责海外子公司人员配置及人员招聘全流程，包括岗位设置、任职资格、需求确认、渠道建设、面试甄选及背景调查等； 2.薪酬与福利：进行海外中方 ..."
+  },
+  {
+   "t": "CHANGHONG RUBA Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Changhong-Ruba",
+   "s": "Find out what works well at CHANGHONG RUBA from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  },
+  {
+   "t": "changhong.com.cn - 四川长虹电子控股集团有限公司",
+   "u": "https://www.changhong.com.cn/",
+   "s": "四川长虹电子控股集团有限公司 长虹深入调研2026世界机器人大会 柳江出席论坛分享具身智能产业实践 长虹8家工厂新增入选2026年省先进级智能工厂 国企改革三部曲：长虹华意从濒临破产到全球第一 国企改革三部曲：长虹爱联科技从\"向死而生\"到\"勇立潮头\" 长虹国企改革三部曲：华丰科技啃下 ..."
+  },
+  {
+   "t": "社会招聘-关于长虹|长虹官网 - changhong.com",
+   "u": "https://group.changhong.com/jrzh_295/shzp/",
+   "s": "社会招聘职位搜索 首页 1 2 3 下一页 尾页"
+  },
+  {
+   "t": "Changhong Career Jobs in United States (6,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/changhong-career-jobs",
+   "s": "Today's top 6,000+ Changhong Career jobs in United States. Leverage your professional network, and get hired. New Changhong Career jobs added daily."
+  },
+  {
+   "t": "Talent Recruitment-Jiangsu Changhong Intelligent Equipment Co., Ltd",
+   "u": "https://en.echanghong.com/job/",
+   "s": "For over 30 years, Changhong has remained committed to providing customers with production equipment that offers superior cost-performance value. As a Tier 1 eq"
+  },
+  {
+   "t": "Career - changhong",
+   "u": "http://www.chtplastics.com/career/",
+   "s": "Career Talent that we need We are seeking talented individuals to push the boundaries of innovation in injection molding, ensuring we meet and exceed the market"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://changhongruba.com.pk/career",
+  "platform": "custom",
+  "title": "Career"
+ },
+ "verdict": "custom_surface"
+}

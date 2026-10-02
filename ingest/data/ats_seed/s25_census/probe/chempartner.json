@@ -1,0 +1,16 @@
+{
+ "brand": "ChemPartner",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:35:09.009Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.chempartner.com/careers/",
+  "platform": "custom",
+  "title": "Careers - ChemPartner",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

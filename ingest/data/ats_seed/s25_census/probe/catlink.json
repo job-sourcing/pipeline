@@ -1,0 +1,149 @@
+{
+ "brand": "CATLINK",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:31:02.812Z",
+ "candidates": [
+  {
+   "url": "https://www.catlinkus.com/",
+   "title": "CATLINK Official Website",
+   "status": 200,
+   "bytes": 660953,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "CATLINK is a global leader in smart pet care, serving 119 countries with auto-cleaning litter boxes, pet feeders, pet fountains and more, loved by over 1,000,00",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.catlinkus.com/pages/professional-program",
+   "title": "Professional program &ndash; CATLINK",
+   "status": 200,
+   "bytes": 560382,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "CATLINK is a global leader in smart pet care, serving 119 countries with auto-cleaning litter boxes, pet feeders, pet fountains and more, loved by over 1,000,00",
+   "backend": "direct"
+  },
+  {
+   "url": "https://catlinkus.shop/",
+   "title": "CATLINK Official Site | CATLINK Official Website",
+   "status": 200,
+   "bytes": 304777,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "A world leader in intelligent pet care, CATLINK provides automatic litter boxes, feeders, and fountains to 119 countries. Trusted by 700,000+ cat families, we s",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "CATLINK Official Website",
+   "u": "https://www.catlinkus.com/",
+   "s": "CATLINK is a global leader in smart pet care, serving 119 countries with auto-cleaning litter boxes, pet feeders, pet fountains and more, loved by over 1,000,00"
+  },
+  {
+   "t": "CATLINK OFFICIAL - LinkedIn",
+   "u": "https://www.linkedin.com/company/catlink-official",
+   "s": "CATLINK OFFICIAL | 619 followers on LinkedIn. Link Everything For Cat's Life | Founded in 2017, CATLINK is a leading intelligent pet carebrand that is committed"
+  },
+  {
+   "t": "Build What Matters - Caterpillar Careers",
+   "u": "https://www.caterpillar.com/en/careers.html",
+   "s": "At Caterpillar, you build what matters—whether it's the career you want, crucial work skills, strong relationships or new digital technologies. There are big jo"
+  },
+  {
+   "t": "Employment Opportunities | City of Grand Rapids, Michigan",
+   "u": "https://www.grandrapidsmi.gov/departments/human-resources/employment-opportunities/",
+   "s": "The City of Grand Rapids does not discriminate in employment on the basis of race, color, religion, sex (including pregnancy or gender identity), national origi"
+  },
+  {
+   "t": "Caterlink Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Caterlink",
+   "s": "Find out what works well at Caterlink from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "Professional program - CATLINK",
+   "u": "https://www.catlinkus.com/pages/professional-program",
+   "s": "CATLINK is a global leader in smart pet care, serving 119 countries with auto-cleaning litter boxes, pet feeders, pet fountains and more, loved by over 1,000,00"
+  },
+  {
+   "t": "Job Search | Indeed",
+   "u": "https://www.indeed.com/",
+   "s": "With Indeed, you can search millions of jobs online to find the next step in your career. With tools for job search, resumes, company reviews and more, we're wi"
+  },
+  {
+   "t": "CATLINK Official Site | CATLINK Official Website",
+   "u": "https://catlinkus.shop/",
+   "s": "A world leader in intelligent pet care, CATLINK provides automatic litter boxes, feeders, and fountains to 119 countries. Trusted by 700,000+ cat families, we s"
+  },
+  {
+   "t": "Build What Matters - Caterpillar Careers",
+   "u": "https://www.caterpillar.com/en/careers.html",
+   "s": "At Caterpillar, you build what matters—whether it's the career you want, crucial work skills, strong relationships or new digital technologies. There are big jo"
+  },
+  {
+   "t": "CATLINK Official Website",
+   "u": "https://www.catlinkus.com/",
+   "s": "CATLINK is a global leader in smart pet care, serving 119 countries with auto-cleaning litter boxes, pet feeders, pet fountains and more, loved by over 1,000,00"
+  },
+  {
+   "t": "47 Catlink Automatic Litter Box jobs in United States (3 new)",
+   "u": "https://www.linkedin.com/jobs/catlink-automatic-litter-box-jobs",
+   "s": "Today&rsquo;s top 47 Catlink Automatic Litter Box jobs in United States. Leverage your professional network, and get hired. New Catlink Automatic Litter Box job"
+  },
+  {
+   "t": "CATLINK OFFICIAL - LinkedIn",
+   "u": "https://www.linkedin.com/company/catlink-official",
+   "s": "CATLINK OFFICIAL | 619 followers on LinkedIn. Link Everything For Cat's Life | Founded in 2017, CATLINK is a leading intelligent pet carebrand that is committed"
+  },
+  {
+   "t": "Careers - Des Moines, Iowa",
+   "u": "https://www.dsm.city/departments/human_resources/careers/index.php",
+   "s": "Careers with the City of Des Moines: explore job openings, application tips, benefits, and recruitment for Fire, Police, and other city departments."
+  },
+  {
+   "t": "CATLINK Self-Cleaning Litter Box - Scooper Open-X (Multi-Cat)",
+   "u": "https://www.catlinkus.com/products/scooper-open-x",
+   "s": "Meet the CATLINK Open-X — a budget-friendly self-cleaning litter box designed to make cat care easier. With its open-top design, spacious litter area, automatic"
+  },
+  {
+   "t": "Careers & Employment Opportunities at DSM International Airport",
+   "u": "https://www.flydsm.com/about-us/careers",
+   "s": "View open positions to join our team and review the Airport Authority Employment Overview Booklet. View Current Openings Other Employment Opportunities at DSM A"
+  },
+  {
+   "t": "Do The Work That Matters - Caterpillar Careers",
+   "u": "https://careers.caterpillar.com/en/",
+   "s": "Discover our latest job opportunities across the globe and learn how we support our employees' mental health for a thriving workplace. Stay informed about your "
+  },
+  {
+   "t": "Caterlink Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Caterlink",
+   "s": "Find out what works well at Caterlink from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay"
+  },
+  {
+   "t": "Join Our Team - UnityPoint Health",
+   "u": "https://www.unitypoint.org/join-our-team",
+   "s": "Join Our Team When you select UnityPoint Health for your career, you're choosing to make a difference in someone's life — every minute of every day. There are e"
+  },
+  {
+   "t": "CATLINK OFFICIAL - LinkedIn",
+   "u": "https://www.linkedin.com/company/catlink-official",
+   "s": "CATLINK OFFICIAL | 619 followers on LinkedIn. Link Everything For Cat's Life | Founded in 2017, CATLINK is a leading intelligent pet carebrand that is committed"
+  },
+  {
+   "t": "Build What Matters - Caterpillar Careers",
+   "u": "https://www.caterpillar.com/en/careers.html",
+   "s": "At Caterpillar, you build what matters—whether it's the career you want, crucial work skills, strong relationships or new digital technologies. There are big jo"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

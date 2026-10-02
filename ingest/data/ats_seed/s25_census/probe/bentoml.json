@@ -2,13 +2,13 @@
  "brand": "BentoML",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T12:22:09.890Z",
+ "ts": "2026-10-02T12:25:33.765Z",
  "candidates": [
   {
    "url": "https://peerlist.io/jobs?skills=BentoML",
    "title": "Just a moment...",
    "status": 403,
-   "bytes": 5815,
+   "bytes": 5793,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -18,9 +18,9 @@
   },
   {
    "url": "https://alion.io/jobs/bentoml",
-   "title": "BentoML Jobs - Remote & On-site | Alion",
+   "title": "48 BentoML Jobs - Remote & On-site | Alion",
    "status": 200,
-   "bytes": 288152,
+   "bytes": 290507,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -31,7 +31,7 @@
    "url": "https://www.bentoml.com/",
    "title": "Bento: Run Inference at Scale",
    "status": 200,
-   "bytes": 418384,
+   "bytes": 418116,
    "markers": [],
    "jsonld_jobs": 0,
    "spec": null,
@@ -126,7 +126,7 @@
  "best": {
   "url": "https://alion.io/jobs/bentoml",
   "platform": "custom",
-  "title": "BentoML Jobs - Remote & On-site | Alion"
+  "title": "48 BentoML Jobs - Remote & On-site | Alion"
  },
  "verdict": "custom_surface"
 }

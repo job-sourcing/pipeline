@@ -1,0 +1,16 @@
+{
+ "brand": "Century Games",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:33:43.415Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.centurygames.com/careers",
+  "platform": "custom",
+  "title": "Careers - Official Site",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

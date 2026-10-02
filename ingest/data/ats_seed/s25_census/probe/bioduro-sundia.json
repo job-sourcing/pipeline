@@ -1,0 +1,154 @@
+{
+ "brand": "BioDuro-Sundia",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:26:33.455Z",
+ "candidates": [
+  {
+   "url": "https://www.bioduro.com/careers/",
+   "title": "Careers at BioDuro: Working With Us | BioDuro",
+   "status": 200,
+   "bytes": 349196,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Work alongside thousands of scientists across the US and China on programs that move real medicines forward. See what working at BioDuro looks like.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.bioduro.com/careers/index.html",
+   "title": "404 Not Found",
+   "status": 404,
+   "bytes": 548,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover rewarding opportunities at BioDuro through our careers page. Join a global leader in drug discovery and development with diverse growth prospects",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.biotech-careers.org/company/bioduro-sundia",
+   "title": "403 - Forbidden",
+   "status": 403,
+   "bytes": 75193,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "The company is a global provider of contract research, development, and manufacturing solutions. Business Areas: Contract Development,Contract Manufacturing,Con",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at BioDuro: Working With Us | BioDuro - BioDuro-Sundia",
+   "u": "https://www.bioduro.com/careers/",
+   "s": "Work alongside thousands of scientists across the US and China on programs that move real medicines forward. See what working at BioDuro looks like."
+  },
+  {
+   "t": "Careers-BioDuro-Global CRDMO, Rooted in Science - BioDuro-Sundia",
+   "u": "https://www.bioduro.com/careers/index.html",
+   "s": "Discover rewarding opportunities at BioDuro through our careers page. Join a global leader in drug discovery and development with diverse growth prospects"
+  },
+  {
+   "t": "BioDuro-Sundia Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bioduro--sundia",
+   "s": "BioDuro-Sundia Careers and Employment Salaries Salary estimated from 100 employees, users, and past and present job advertisements on Indeed."
+  },
+  {
+   "t": "BioDuro-Sundia | Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/bioduro-sundia",
+   "s": "The company is a global provider of contract research, development, and manufacturing solutions. Business Areas: Contract Development,Contract Manufacturing,Con"
+  },
+  {
+   "t": "BioDuro-Sundia Jobs (September 2026)",
+   "u": "https://startup.jobs/company/bioduro-sundia",
+   "s": "BioDuro-Sundia is a global provider of Contract Research, Development and Manufacturing Outsourcing Solutions (CRDMO). Pharmaceutical, biotechnology, and virtua"
+  },
+  {
+   "t": "Bioduro Sundia Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bioduro-sundia-jobs",
+   "s": "Today's top 7,000+ Bioduro Sundia jobs in United States. Leverage your professional network, and get hired. New Bioduro Sundia jobs added daily."
+  },
+  {
+   "t": "人才引进_人才培养_公司招聘_职业发展-保诺-桑迪亚，全球化crdmo创新平台",
+   "u": "https://www.bioduro-sundia.cn/careers/",
+   "s": "您想加入一个充满斗志、创新和热情的团队，用自己的时间和才华为人类健康事业做出贡献吗？在保诺-桑迪亚，您将应用前沿技术，帮助我们的合作伙伴发现开发拯救生命的创新药物。 我们的团队灵活、响应迅速、以人为本，与客户建立了牢固而持久的合作关系，在业内享有良好声誉。"
+  },
+  {
+   "t": "BioDuro - LinkedIn",
+   "u": "https://www.linkedin.com/company/bioduro",
+   "s": "BioDuro, an Advent portfolio company, is a CRDMO with a 30-year proven track record. Headquartered in Irvine, California, BioDuro employs more than 2,000 scient"
+  },
+  {
+   "t": "Careers at BioDuro: Working With Us | BioDuro - BioDuro-Sundia",
+   "u": "https://www.bioduro.com/careers/",
+   "s": "Work alongside thousands of scientists across the US and China on programs that move real medicines forward. See what working at BioDuro looks like."
+  },
+  {
+   "t": "BioDuro-Sundia Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bioduro--sundia",
+   "s": "BioDuro-Sundia Careers and Employment Salaries Salary estimated from 100 employees, users, and past and present job advertisements on Indeed."
+  },
+  {
+   "t": "CRDMO for Drug Discovery & Development | BioDuro",
+   "u": "https://www.bioduro.com/",
+   "s": "BioDuro is a global CRDMO delivering integrated chemistry, biology, DMPK and CMC services - broad capabilities with boutique, hands-on partnership."
+  },
+  {
+   "t": "BioDuro-Sundia Jobs (September 2026)",
+   "u": "https://startup.jobs/company/bioduro-sundia",
+   "s": "BioDuro-Sundia is a global provider of Contract Research, Development and Manufacturing Outsourcing Solutions (CRDMO). Pharmaceutical, biotechnology, and virtua"
+  },
+  {
+   "t": "Bioduro Sundia Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bioduro-sundia-jobs",
+   "s": "Today's top 7,000+ Bioduro Sundia jobs in United States. Leverage your professional network, and get hired. New Bioduro Sundia jobs added daily."
+  },
+  {
+   "t": "BioDuro-Sundia | Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/bioduro-sundia",
+   "s": "The company is a global provider of contract research, development, and manufacturing solutions. Business Areas: Contract Development,Contract Manufacturing,Con"
+  },
+  {
+   "t": "BioDuro-Sundia | Jobs By Workable",
+   "u": "https://jobs.workable.com/company/kLDYbeM5Vp4efy7xxQoSQy/jobs-at-bioduro-sundia",
+   "s": "At BioDuro-Sundia, you'll work to apply cutting-edge technology to help our partners make life-saving medicines. Come join a team of ambitious, innovative and p"
+  },
+  {
+   "t": "BioDuro - LinkedIn",
+   "u": "https://www.linkedin.com/company/bioduro",
+   "s": "BioDuro, an Advent portfolio company, is a CRDMO with a 30-year proven track record. Headquartered in Irvine, California, BioDuro employs more than 2,000 scient"
+  },
+  {
+   "t": "Careers at BioDuro: Working With Us | BioDuro - BioDuro-Sundia",
+   "u": "https://www.bioduro.com/careers/",
+   "s": "Work alongside thousands of scientists across the US and China on programs that move real medicines forward. See what working at BioDuro looks like."
+  },
+  {
+   "t": "BioDuro-Sundia Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bioduro--sundia",
+   "s": "BioDuro-Sundia Careers and Employment Salaries Salary estimated from 100 employees, users, and past and present job advertisements on Indeed."
+  },
+  {
+   "t": "Careers-BioDuro-Global CRDMO, Rooted in Science - BioDuro-Sundia",
+   "u": "https://www.bioduro.com/careers/index.html",
+   "s": "Discover rewarding opportunities at BioDuro through our careers page. Join a global leader in drug discovery and development with diverse growth prospects"
+  },
+  {
+   "t": "Bioduro Sundia Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bioduro-sundia-jobs",
+   "s": "Today's top 7,000+ Bioduro Sundia jobs in United States. Leverage your professional network, and get hired. New Bioduro Sundia jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.bioduro.com/careers/",
+  "platform": "custom",
+  "title": "Careers at BioDuro: Working With Us | BioDuro"
+ },
+ "verdict": "custom_surface"
+}

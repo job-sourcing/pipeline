@@ -1,0 +1,149 @@
+{
+ "brand": "Bytebase",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T12:29:45.836Z",
+ "candidates": [
+  {
+   "url": "https://www.bytebase.com/about/",
+   "title": "About Us",
+   "status": 200,
+   "bytes": 119380,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Meet the team behind Bytebase. We build the database governance platform that unifies schema change, SQL access control, and compliance into one workflow.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.bytebase.com/",
+   "title": "Bytebase - The standard for database governance",
+   "status": 200,
+   "bytes": 854885,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Database governance platform for schema migration, change review, data fix, and query access across Postgres, MySQL, SQL Server, Oracle, and 20+ engines.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jobs.deel.com/bytebridge",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 337532,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Discover opportunities and apply today",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "About Us - Bytebase",
+   "u": "https://www.bytebase.com/about/",
+   "s": "Meet the team behind Bytebase. We build the database governance platform that unifies schema change, SQL access control, and compliance into one workflow."
+  },
+  {
+   "t": "ByteBase Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bytebase",
+   "s": "Find out what works well at ByteBase from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "Bytebase Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bytebase-jobs",
+   "s": "Today's top 9,000+ Bytebase jobs in United States. Leverage your professional network, and get hired. New Bytebase jobs added daily."
+  },
+  {
+   "t": "Bytebase - LinkedIn",
+   "u": "https://www.linkedin.com/company/bytebase",
+   "s": "Bytebase is the open-source database governance platform — the standard for how databases get changed and accessed. Databases hold your most sensitive data, yet"
+  },
+  {
+   "t": "ByteDance Careers",
+   "u": "https://joinbytedance.com/",
+   "s": "ByteDance's mission is to inspire creativity and enrich life. We push the boundaries of innovation with platforms that educate, entertain, and excite people."
+  },
+  {
+   "t": "Bytebase - The standard for database governance",
+   "u": "https://www.bytebase.com/",
+   "s": "Database governance platform for schema migration, change review, data fix, and query access across Postgres, MySQL, SQL Server, Oracle, and 20+ engines."
+  },
+  {
+   "t": "Careers - jobs.deel.com",
+   "u": "https://jobs.deel.com/bytebridge",
+   "s": "Discover opportunities and apply today"
+  },
+  {
+   "t": "Coinbase Careers",
+   "u": "https://www.coinbase.com/careers",
+   "s": "We are builders and techno-optimists. We believe crypto is the most important technology to create more economic freedom in the world. We believe in sound money"
+  },
+  {
+   "t": "ByteBase Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bytebase",
+   "s": "Find out what works well at ByteBase from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "Bytebase Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bytebase-jobs",
+   "s": "Today's top 9,000+ Bytebase jobs in United States. Leverage your professional network, and get hired. New Bytebase jobs added daily."
+  },
+  {
+   "t": "Bytebase - LinkedIn",
+   "u": "https://www.linkedin.com/company/bytebase",
+   "s": "Bytebase | 10,674 followers on LinkedIn. The standard of database governance. Govern changes and access across every major database type - by humans and agents."
+  },
+  {
+   "t": "Bytebase Jobs in Worldwide (3 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bytebase-jobs-worldwide",
+   "s": "Today's top 3 Bytebase jobs in Worldwide. Leverage your professional network, and get hired. New Bytebase jobs added daily."
+  },
+  {
+   "t": "Bytebase Jobs Jobs in United States (1 Open Role) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bytebase-jobs-jobs",
+   "s": "Today's top 1 Bytebase Jobs jobs in United States. Leverage your professional network, and get hired. New Bytebase Jobs jobs added daily."
+  },
+  {
+   "t": "11,000+ Bytebase Careers jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bytebase-careers-jobs",
+   "s": "Today's top 11,000+ Bytebase Careers jobs in United States. Leverage your professional network, and get hired. New Bytebase Careers jobs added daily."
+  },
+  {
+   "t": "Bytebase - The standard for database governance",
+   "u": "https://www.bytebase.com/",
+   "s": "Database governance platform for schema migration, change review, data fix, and query access across Postgres, MySQL, SQL Server, Oracle, and 20+ engines."
+  },
+  {
+   "t": "Join Our Team - UnityPoint Health",
+   "u": "https://www.unitypoint.org/join-our-team",
+   "s": "Explore what it's like to work at UnityPoint Health through the eyes of our dedicated team members. Our \"Day in the Life\" series offers an inside look at variou"
+  },
+  {
+   "t": "ByteBase Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Bytebase",
+   "s": "Find out what works well at ByteBase from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "Bytebase Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bytebase-jobs",
+   "s": "Today's top 9,000+ Bytebase jobs in United States. Leverage your professional network, and get hired. New Bytebase jobs added daily."
+  },
+  {
+   "t": "11,000+ Bytebase Careers jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/bytebase-careers-jobs",
+   "s": "Today's top 11,000+ Bytebase Careers jobs in United States. Leverage your professional network, and get hired. New Bytebase Careers jobs added daily."
+  },
+  {
+   "t": "Join Our Team - UnityPoint Health",
+   "u": "https://www.unitypoint.org/join-our-team",
+   "s": "Join Our Team When you select UnityPoint Health for your career, you're choosing to make a difference in someone's life — every minute of every day. There are e"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}
