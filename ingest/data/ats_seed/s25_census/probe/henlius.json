@@ -1,0 +1,154 @@
+{
+ "brand": "Henlius",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:18:56.373Z",
+ "candidates": [
+  {
+   "url": "https://www.henlius.com/en/careers.html",
+   "title": "Henlius",
+   "status": 200,
+   "bytes": 106319,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.henlius.com/job-opportunities.html",
+   "title": "人力资源-招聘职位",
+   "status": 200,
+   "bytes": 27545,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "关于我们 公司介绍 公司文化 公司荣誉 董事会 公司团队 顾问委员会 产品中心 上市产品 在研产品 临床资讯 科学技术 科研 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "https://jenniejohnson.com/company/henlius%20usa",
+   "title": "Careers at Henlius Usa | Jennie Johnson",
+   "status": 200,
+   "bytes": 95003,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Job openings at Henlius Usa. Henlius USA Inc. is a biopharmaceutical company focused on the development, production, and commercialization of high-quality...",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Henlius",
+   "u": "https://www.henlius.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "Henlius - mbigear.com",
+   "u": "http://www.mbigear.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "Henlius - imxnew.com",
+   "u": "http://www.imxnew.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "Henlius - gzmztech.com",
+   "u": "http://gzmztech.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "Henlius: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/henlius/jobs",
+   "s": "Henlius | 18,713 followers on LinkedIn. Reliable Quality · Affordable Innovation | Henlius is a rapidly growing biopharmaceutical provider that develops, manufa"
+  },
+  {
+   "t": "Henlius - qzjhgc.com",
+   "u": "http://www.qzjhgc.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "人力资源-招聘职位 - Henlius",
+   "u": "https://www.henlius.com/job-opportunities.html",
+   "s": "关于我们 公司介绍 公司文化 公司荣誉 董事会 公司团队 顾问委员会 产品中心 上市产品 在研产品 临床资讯 科学技术 科研 ..."
+  },
+  {
+   "t": "Henlius USA Inc.: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/henliususa/jobs",
+   "s": "Henlius USA Inc., located in Milpitas, CA, focuses on developing and delivering high-quality, innovative, and affordable medicine to patients worldwide to treat"
+  },
+  {
+   "t": "Henlius",
+   "u": "https://www.henlius.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "Henlius: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/henlius/jobs",
+   "s": "Henlius | 18,713 followers on LinkedIn. Reliable Quality · Affordable Innovation | Henlius is a rapidly growing biopharmaceutical provider that develops, manufa"
+  },
+  {
+   "t": "Henlius - mbigear.com",
+   "u": "http://www.mbigear.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "Henlius - gzmztech.com",
+   "u": "http://gzmztech.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "Careers at Henlius Usa | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/henlius%20usa",
+   "s": "Job openings at Henlius Usa. Henlius USA Inc. is a biopharmaceutical company focused on the development, production, and commercialization of high-quality..."
+  },
+  {
+   "t": "Henlius USA Inc.: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/henliususa/jobs",
+   "s": "Henlius USA Inc., located in Milpitas, CA, focuses on developing and delivering high-quality, innovative, and affordable medicine to patients worldwide to treat"
+  },
+  {
+   "t": "Henlius - qzjhgc.com",
+   "u": "http://www.qzjhgc.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "人力资源-招聘职位 - Henlius",
+   "u": "https://www.henlius.com/job-opportunities.html",
+   "s": "关于我们 公司介绍 公司文化 公司荣誉 董事会 公司团队 顾问委员会 产品中心 上市产品 在研产品 临床资讯 科学技术 科研 ..."
+  },
+  {
+   "t": "Henlius",
+   "u": "https://www.henlius.com/en/careers.html",
+   "s": "At Henlius, we believe that our people are the vital force behind innovation and long-term growth. We continue to strengthen our learning and talent development"
+  },
+  {
+   "t": "Henlius: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/henlius/jobs",
+   "s": "Henlius | 18,713 followers on LinkedIn. Reliable Quality · Affordable Innovation | Henlius is a rapidly growing biopharmaceutical provider that develops, manufa"
+  },
+  {
+   "t": "Henlius Usa Jobs in United States (11 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/henlius-usa-jobs",
+   "s": "Today's top 11 Henlius Usa jobs in United States. Leverage your professional network, and get hired. New Henlius Usa jobs added daily."
+  },
+  {
+   "t": "Careers at Henlius Usa | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/henlius%20usa",
+   "s": "Job openings at Henlius Usa. Henlius USA Inc. is a biopharmaceutical company focused on the development, production, and commercialization of high-quality..."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://jenniejohnson.com/company/henlius%20usa",
+  "platform": "custom",
+  "title": "Careers at Henlius Usa | Jennie Johnson"
+ },
+ "verdict": "custom_surface"
+}

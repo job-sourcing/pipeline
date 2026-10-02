@@ -1,0 +1,29 @@
+{
+ "brand": "Lilith Games",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:28:41.924Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "lilithgames",
+   "spec": "feishuhire:lilithgames",
+   "title": "莉莉丝社会招聘"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:lilithgames",
+  "platform": "feishu",
+  "title": "莉莉丝社会招聘",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "莉莉丝社会招聘",
+  "brand": "Lilith Games",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

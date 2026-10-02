@@ -1,0 +1,29 @@
+{
+ "brand": "LianLian Global",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:28:27.789Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "lianlian",
+   "spec": "feishuhire:lianlian",
+   "title": "加入连连"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:lianlian",
+  "platform": "feishu",
+  "title": "加入连连",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入连连",
+  "brand": "LianLian Global",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

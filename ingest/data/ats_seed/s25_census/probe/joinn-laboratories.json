@@ -1,0 +1,151 @@
+{
+ "brand": "JOINN Laboratories",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:22:08.067Z",
+ "candidates": [
+  {
+   "url": "https://www.biotech-careers.org/company/joinn-biologics",
+   "title": "",
+   "status": 202,
+   "bytes": 193,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "US-based CDMO with expertise in ADCs and other next-generation biologics. Business Areas: Contract Development,Contract Manufacturing,Contract Biologics",
+   "backend": "direct"
+  },
+  {
+   "url": "https://recruiting.paylocity.com/recruiting/jobs/All/2f550df5-7d19-4ca7-b2fd-647571bdec9c/153136-JOINN-Biologics",
+   "title": "153136 JOINN Biologics - Job Opportunities",
+   "status": 200,
+   "bytes": 25561,
+   "markers": [
+    "paylocity"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "153136 JOINN Biologics Careers Page - View all jobs and opportunities at 153136 JOINN Biologics and apply today. | Powered By Paylocity",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.joinnlabs.com/en/",
+   "title": "JOINN Laboratories Official Website",
+   "status": 200,
+   "bytes": 41370,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "昭衍新药 JOINN Laboratories 官方网站 Official Website 昭衍官网 JOINN has over 30 years of experience in drug safety evaluation, and has rich experience. By adopting interna",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "JOINN Laboratories Official Website",
+   "u": "https://www.joinnlabs.com/en/",
+   "s": "昭衍新药 JOINN Laboratories 官方网站 Official Website 昭衍官网 JOINN has over 30 years of experience in drug safety evaluation, and has rich experience. By adopting interna"
+  },
+  {
+   "t": "JOINN Biologics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Joinn-Biologics",
+   "s": "Find out what works well at JOINN Biologics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "Joinn Biologics | Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/joinn-biologics",
+   "s": "US-based CDMO with expertise in ADCs and other next-generation biologics. Business Areas: Contract Development,Contract Manufacturing,Contract Biologics"
+  },
+  {
+   "t": "JOINN Laboratories",
+   "u": "https://www.joinnlabs.net/",
+   "s": "JOINN (China) Founded in 1995, JOINN Laboratories (stock codes: 603127.SH / 6127.HK) is a leading global Contract Research Organization (CRO) with operations in"
+  },
+  {
+   "t": "JOINN Biologics - Your Trusted CDMO",
+   "u": "https://www.joinnbio.com/",
+   "s": "JOINN Biologics puts your product first. We deliver an unmatched experience with close collaboration, open communication, flexible workflows, tailored and adapt"
+  },
+  {
+   "t": "JOINN Laboratories",
+   "u": "https://www.joinn-lab.com/JOINNCalifornia.html",
+   "s": "JOINN JOINN California JOINN Laboratories' California facility is AAALAC accredited, DEA licensed, and USDA registered, reflecting its commitment to the highest"
+  },
+  {
+   "t": "Careers - Biomere",
+   "u": "https://biomere.com/careers/",
+   "s": "Careers Join Our Team of Talented Life Science Professionals! Biomere is a preclinical CRO based in Worcester, MA, and Joinn Labs is a preclinical CRO based in "
+  },
+  {
+   "t": "JOINN Biologics US Inc. - LinkedIn",
+   "u": "https://www.linkedin.com/company/joinn-biologics",
+   "s": "JOINN Biologics US Inc. Pharmaceutical Manufacturing Richmond, California 2,848 followers Your premier CDMO for biologics drug development and manufacturing, fr"
+  },
+  {
+   "t": "JOINN Laboratories Official Website",
+   "u": "https://www.joinnlabs.com/en/",
+   "s": "昭衍新药 JOINN Laboratories 官方网站 Official Website 昭衍官网 JOINN has over 30 years of experience in drug safety evaluation, and has rich experience. By adopting interna"
+  },
+  {
+   "t": "JOINN Biologics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Joinn-Biologics",
+   "s": "Find out what works well at JOINN Biologics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "JOINN Laboratories",
+   "u": "https://www.joinnlabs.net/",
+   "s": "JOINN (China) Founded in 1995, JOINN Laboratories (stock codes: 603127.SH / 6127.HK) is a leading global Contract Research Organization (CRO) with operations in"
+  },
+  {
+   "t": "Careers - Biomere",
+   "u": "https://biomere.com/careers/",
+   "s": "Careers Join Our Team of Talented Life Science Professionals! Biomere is a preclinical CRO based in Worcester, MA, and Joinn Labs is a preclinical CRO based in "
+  },
+  {
+   "t": "昭衍新药官方网站 JOINN Laboratories Official Website 昭衍官网",
+   "u": "https://www.joinnlabs.com/en/aboutusfi.php",
+   "s": "Founded in 1995, JOINN Laboratories (China) Co., Ltd. (JOINN Laboratories, stock codes: 603127.SH / 6127.HK) is a specialized drug development outsourcing compa"
+  },
+  {
+   "t": "Joinn Biologics | Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/joinn-biologics",
+   "s": "US-based CDMO with expertise in ADCs and other next-generation biologics. Business Areas: Contract Development,Contract Manufacturing,Contract Biologics"
+  },
+  {
+   "t": "JOINN Laboratories",
+   "u": "https://www.joinn-lab.com/JOINNCalifornia.html",
+   "s": "JOINN JOINN California JOINN Laboratories' California facility is AAALAC accredited, DEA licensed, and USDA registered, reflecting its commitment to the highest"
+  },
+  {
+   "t": "153136 JOINN Biologics - Job Opportunities - Paylocity",
+   "u": "https://recruiting.paylocity.com/recruiting/jobs/All/2f550df5-7d19-4ca7-b2fd-647571bdec9c/153136-JOINN-Biologics",
+   "s": "153136 JOINN Biologics Careers Page - View all jobs and opportunities at 153136 JOINN Biologics and apply today. | Powered By Paylocity"
+  },
+  {
+   "t": "JOINN Biologics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Joinn-Biologics",
+   "s": "Find out what works well at JOINN Biologics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compa"
+  },
+  {
+   "t": "Joinn Biologics | Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/joinn-biologics",
+   "s": "US-based CDMO with expertise in ADCs and other next-generation biologics. Business Areas: Contract Development,Contract Manufacturing,Contract Biologics"
+  },
+  {
+   "t": "Joinn Biologics Elisa Hplc Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Joinn-Biologics-Elisa-Hplc-jobs.html",
+   "s": "This Equal Employment Opportunity policy governs all aspects of employment, including, but not limited to, recruitment, hiring, selection, job assignment, promo"
+  },
+  {
+   "t": "JOINN Laboratories Official Website",
+   "u": "https://www.joinnlabs.com/en/",
+   "s": "昭衍新药 JOINN Laboratories 官方网站 Official Website 昭衍官网 JOINN has over 30 years of experience in drug safety evaluation, and has rich experience. By adopting interna"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

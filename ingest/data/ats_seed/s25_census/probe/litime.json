@@ -1,0 +1,163 @@
+{
+ "brand": "LiTime",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:27:52.713Z",
+ "candidates": [
+  {
+   "url": "https://lifetime.wd1.myworkdayjobs.com/lifetime",
+   "title": "",
+   "status": 200,
+   "bytes": 58,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "workday:lifetime",
+   "score": 12,
+   "snippet": "ABOUT US With over 160 athletic country clubs and offerings for everyone from 90 days to 90 years, Life Time's comprehensive ecosystem goes beyond the idea of \"",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.litime.com/pages/about-litime",
+   "title": "About LiTime",
+   "status": 200,
+   "bytes": 2359180,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "LiTime is a global LiFePO₄ power solutions company dedicated to helping people explore farther, live more freely, and create lasting outdoor memories. From RV j",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.lifetime.life/",
+   "title": "Life Time Jobs | Careers at Life Time",
+   "status": 200,
+   "bytes": 225618,
+   "markers": [
+    "phenom"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Find a career of a Life Time. We have jobs for talented people who believe in living a happier, healthier life and helping Life Time members do the same.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Life Time Jobs | Careers at Life Time",
+   "u": "https://careers.lifetime.life/",
+   "s": "Find a career of a Life Time. We have jobs for talented people who believe in living a happier, healthier life and helping Life Time members do the same."
+  },
+  {
+   "t": "Life Time Job Openings - Careers in Fitness, Wellness & More",
+   "u": "https://careers.lifetime.life/search-results",
+   "s": "Explore current job openings at Life Time. Whether you're passionate about fitness, hospitality, or corporate roles, find a position that aligns with your caree"
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://lifetime.wd1.myworkdayjobs.com/lifetime",
+   "s": "ABOUT US With over 160 athletic country clubs and offerings for everyone from 90 days to 90 years, Life Time's comprehensive ecosystem goes beyond the idea of \""
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://wd1.myworkdaysite.com/recruiting/lifetime/lifetime",
+   "s": "ABOUT US With over 160 athletic country clubs and offerings for everyone from 90 days to 90 years, Life Time's comprehensive ecosystem goes beyond the idea of \""
+  },
+  {
+   "t": "Lifetime Careers",
+   "u": "https://www.lifetime.com/careers",
+   "s": "Lifetime Careers Every day, our team is making innovative, high-quality products that make an impact globally. We're committed to hiring talented individuals wh"
+  },
+  {
+   "t": "About LiTime",
+   "u": "https://www.litime.com/pages/about-litime",
+   "s": "LiTime is a global LiFePO₄ power solutions company dedicated to helping people explore farther, live more freely, and create lasting outdoor memories. From RV j"
+  },
+  {
+   "t": "Corporate Jobs at Life Time",
+   "u": "https://careers.lifetime.life/corporate-careers",
+   "s": "Every corporate job at Life Time supports our Athletic Club destinations. Advance your career at Life Time and receive health, financial and fun benefits."
+  },
+  {
+   "t": "Part Time Jobs at Life Time",
+   "u": "https://careers.lifetime.life/part-time-jobs",
+   "s": "Part time, flexible job openings at Life Time. Join our team, we have part-time jobs available in various departments. Apply today!"
+  },
+  {
+   "t": "Life Time Jobs | Careers at Life Time",
+   "u": "https://careers.lifetime.life/",
+   "s": "Find a career of a Life Time. We have jobs for talented people who believe in living a happier, healthier life and helping Life Time members do the same."
+  },
+  {
+   "t": "Life Time Job Openings - Careers in Fitness, Wellness & More",
+   "u": "https://careers.lifetime.life/search-results",
+   "s": "Explore current job openings at Life Time. Whether you're passionate about fitness, hospitality, or corporate roles, find a position that aligns with your caree"
+  },
+  {
+   "t": "1 Litime jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/litime-jobs",
+   "s": "Today's top 1 Litime jobs in United States. Leverage your professional network, and get hired. New Litime jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 2,000 Life Time Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Life-Time-jobs.html",
+   "s": "Browse 2,366 Life Time jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Lifetime Careers",
+   "u": "https://www.lifetime.com/careers",
+   "s": "Lifetime Careers Every day, our team is making innovative, high-quality products that make an impact globally. We're committed to hiring talented individuals wh"
+  },
+  {
+   "t": "2,000+ Ltim jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ltim-jobs",
+   "s": "Today's top 2,000+ Ltim jobs in United States. Leverage your professional network, and get hired. New Ltim jobs added daily."
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://lifetime.wd1.myworkdayjobs.com/lifetime",
+   "s": "ABOUT US With over 160 athletic country clubs and offerings for everyone from 90 days to 90 years, Life Time's comprehensive ecosystem goes beyond the idea of \""
+  },
+  {
+   "t": "Now Hiring: 2,000 Lifetime Fitness Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Lifetime-Fitness-jobs.html",
+   "s": "Browse 2,260 Lifetime Fitness jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Life Time Jobs | Careers at Life Time",
+   "u": "https://careers.lifetime.life/",
+   "s": "Find a career of a Life Time. We have jobs for talented people who believe in living a happier, healthier life and helping Life Time members do the same."
+  },
+  {
+   "t": "Life Time Job Openings - Careers in Fitness, Wellness & More",
+   "u": "https://careers.lifetime.life/search-results",
+   "s": "Explore current job openings at Life Time. Whether you're passionate about fitness, hospitality, or corporate roles, find a position that aligns with your caree"
+  },
+  {
+   "t": "Search for Jobs - myworkdayjobs.com",
+   "u": "https://lifetime.wd1.myworkdayjobs.com/lifetime",
+   "s": "ABOUT US With over 160 athletic country clubs and offerings for everyone from 90 days to 90 years, Life Time's comprehensive ecosystem goes beyond the idea of \""
+  },
+  {
+   "t": "Lifetime Careers",
+   "u": "https://www.lifetime.com/careers",
+   "s": "Lifetime Careers Every day, our team is making innovative, high-quality products that make an impact globally. We're committed to hiring talented individuals wh"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://lifetime.wd1.myworkdayjobs.com/lifetime",
+  "title": "",
+  "status": 200,
+  "bytes": 58,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "workday:lifetime",
+  "score": 12,
+  "snippet": "ABOUT US With over 160 athletic country clubs and offerings for everyone from 90 days to 90 years, Life Time's comprehensive ecosystem goes beyond the idea of \"",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
+}

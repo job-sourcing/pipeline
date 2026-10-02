@@ -1,0 +1,30 @@
+{
+ "brand": "LightSpeed Studios",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:28:38.888Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "ashby",
+   "slug": "lightspeed",
+   "spec": "ashby:lightspeed",
+   "title": " (4 jobs)",
+   "jobs": 4
+  }
+ ],
+ "best": {
+  "spec": "ashby:lightspeed",
+  "platform": "ashby",
+  "title": " (4 jobs)",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": null,
+  "brand": "LightSpeed Studios",
+  "ok": null,
+  "note": "no self-name — job-content adjudication required"
+ },
+ "verdict": "dict_unverified"
+}

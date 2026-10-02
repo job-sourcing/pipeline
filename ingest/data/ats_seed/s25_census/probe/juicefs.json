@@ -1,0 +1,154 @@
+{
+ "brand": "JuiceFS",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:24:03.285Z",
+ "candidates": [
+  {
+   "url": "https://juicefs.com/en/careers",
+   "title": "Careers - JuiceFS",
+   "status": 200,
+   "bytes": 65706,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Design cloud and hybrid-cloud architectures that integrate JuiceFS with compute, networking, object storage, Kubernetes, and customer security and operations sy",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.iitjobs.com/juicefs-jobs",
+   "title": "Attention Required! | Cloudflare",
+   "status": 403,
+   "bytes": 5845,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover juicefs job opportunities on iitjobs. Connect with leading companies hiring remote and on-site professionals.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://juicefs.com/docs/cloud/guide/background-job/",
+   "title": "Background job | JuiceFS Document Center",
+   "status": 200,
+   "bytes": 51862,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "In JuiceFS Enterprise Edition, we use the phrase \"background job\" (also abbreviated as \"bgjob\") to refer to a series of tasks that's dispatched by the Metadata ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - JuiceFS",
+   "u": "https://juicefs.com/en/careers",
+   "s": "Design cloud and hybrid-cloud architectures that integrate JuiceFS with compute, networking, object storage, Kubernetes, and customer security and operations sy"
+  },
+  {
+   "t": "Careers - Buc-ees",
+   "u": "https://buc-ees.com/careers/",
+   "s": "Careers Join the Buc-ee's Family Do you believe what we believe? We believe our store should be clean. We believe our staff should be friendly. We believe our p"
+  },
+  {
+   "t": "JuiceFS - Open Source Distributed POSIX File System for Cloud",
+   "u": "https://juicefs.com/en/",
+   "s": "JuiceFS is a cloud-based high-performance distributed file system, based on object storage and database to achieve data and metadata separation architecture, ea"
+  },
+  {
+   "t": "Careers - Juice Plus+US",
+   "u": "https://us.juiceplus.com/pages/careers",
+   "s": "Our products are packed with plant-based nutrition from fruits, vegetables, legumes, ancient grains, and superfoods, so you can add more goodness to every day. "
+  },
+  {
+   "t": "1,000+ Juicefs jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/juicefs-jobs",
+   "s": "Today's top 1,000+ Juicefs jobs in United States. Leverage your professional network, and get hired. New Juicefs jobs added daily."
+  },
+  {
+   "t": "CAREERS | Juice Generation",
+   "u": "https://www.juicegeneration.com/careers-page",
+   "s": "We believe a big part of healthy living is working in a place that supports your personal and professional growth. Juice Generation offers a health-minded, upbe"
+  },
+  {
+   "t": "Apply - Juice Stop Smoothies",
+   "u": "https://www.juicestopsmoothies.com/careers/",
+   "s": "Employment Application Juice Stop is growing and we're looking for new team members who will make us better. If you are self-motivated, fun, out-going, can get "
+  },
+  {
+   "t": "JuiceFS - LinkedIn",
+   "u": "https://www.linkedin.com/products/juicedata-juicefs",
+   "s": "JuiceFS | JuiceFS was launched in 2018 on almost every public cloud including AWS, Azure, GCP, OCI and many more. Since then, dozens of innovation leaders are u"
+  },
+  {
+   "t": "Careers - JuiceFS",
+   "u": "https://juicefs.com/en/careers",
+   "s": "Design cloud and hybrid-cloud architectures that integrate JuiceFS with compute, networking, object storage, Kubernetes, and customer security and operations sy"
+  },
+  {
+   "t": "1,000+ Juicefs jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/juicefs-jobs",
+   "s": "Today's top 1,000+ Juicefs jobs in United States. Leverage your professional network, and get hired. New Juicefs jobs added daily."
+  },
+  {
+   "t": "Tropicana Brands Group - Reinventing the Future of Juice",
+   "u": "https://www.tropicanabrandsgroup.com/careers/",
+   "s": "At Tropicana Brands Group, we strive to provide a drinking experience that delights the senses, nourishes the body, and reimagines the future of juice."
+  },
+  {
+   "t": "JuiceFS - LinkedIn",
+   "u": "https://www.linkedin.com/products/juicedata-juicefs",
+   "s": "JuiceFS | JuiceFS was launched in 2018 on almost every public cloud including AWS, Azure, GCP, OCI and many more. Since then, dozens of innovation leaders are u"
+  },
+  {
+   "t": "17 juicefs Jobs | iitjobs",
+   "u": "https://www.iitjobs.com/juicefs-jobs",
+   "s": "Discover juicefs job opportunities on iitjobs. Connect with leading companies hiring remote and on-site professionals."
+  },
+  {
+   "t": "CAREERS | Juice Generation",
+   "u": "https://www.juicegeneration.com/careers-page",
+   "s": "We believe a big part of healthy living is working in a place that supports your personal and professional growth. Juice Generation offers a health-minded, upbe"
+  },
+  {
+   "t": "Open Positions | Juicyway US",
+   "u": "https://www.juicyway.com/us/open-positions",
+   "s": "Current job openings at Juicyway. Find a role and apply to join the team building cross-border money movement. | US"
+  },
+  {
+   "t": "JuiceFS - Open Source Distributed POSIX File System for Cloud",
+   "u": "https://juicefs.com/en/",
+   "s": "JuiceFS is a cloud-based high-performance distributed file system, based on object storage and database to achieve data and metadata separation architecture, ea"
+  },
+  {
+   "t": "Careers - JuiceFS",
+   "u": "https://juicefs.com/en/careers",
+   "s": "JuiceFS is unable to provide employment-based immigration sponsorship for this position now. Compensation The On-Target Earnings range for this position is USD "
+  },
+  {
+   "t": "1,000+ Juicefs jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/juicefs-jobs",
+   "s": "Today's top 1,000+ Juicefs jobs in United States. Leverage your professional network, and get hired. New Juicefs jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 4,000 Juice Jobs | Indeed",
+   "u": "https://www.indeed.com/q-JUICE-jobs.html",
+   "s": "Browse 4,065 Juice jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "17 juicefs Jobs | iitjobs",
+   "u": "https://www.iitjobs.com/juicefs-jobs",
+   "s": "Discover juicefs job opportunities on iitjobs. Connect with leading companies hiring remote and on-site professionals."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://juicefs.com/en/careers",
+  "platform": "custom",
+  "title": "Careers - JuiceFS"
+ },
+ "verdict": "custom_surface"
+}

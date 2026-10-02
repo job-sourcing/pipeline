@@ -1,0 +1,150 @@
+{
+ "brand": "HUTCHMED",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:13:55.888Z",
+ "candidates": [
+  {
+   "url": "https://www.biotech-careers.org/company/hutchmed",
+   "title": "",
+   "status": 202,
+   "bytes": 186,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "HUTCHMED is a commercial-stage biopharmaceutical company committed to the discovery and global development of targeted therapies and immunotherapies for the tre",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.whatjobs.com/company/hutchmed/profile",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5842,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Looking for jobs at HUTCHMED? Browse current openings, salary insights, and company details. Apply today and explore careers with HUTCHMED on WhatJobs.",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://www.hutch-med.com/career-opportunities/",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Career Opportunities We innovate for patients. HUTCHMED aims to become a major pharmaceutical company developing innovative drugs for both the Chinese and globa",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "HUTCHMED - Career Opportunities",
+   "u": "https://www.hutch-med.com/career-opportunities/",
+   "s": "Career Opportunities We innovate for patients. HUTCHMED aims to become a major pharmaceutical company developing innovative drugs for both the Chinese and globa"
+  },
+  {
+   "t": "HUTCHMED: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/hutchmed/jobs",
+   "s": "HUTCHMED | 14,647 followers on LinkedIn. HUTCHMED (Nasdaq/AIM:HCM; HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to th"
+  },
+  {
+   "t": "HUTCHMED - Home",
+   "u": "https://www.hutch-med.com/",
+   "s": "HUTCHMED (Nasdaq/AIM:HCM;HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to the discovery and global development and com"
+  },
+  {
+   "t": "HUTCHMED - Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/hutchmed",
+   "s": "HUTCHMED is a commercial-stage biopharmaceutical company committed to the discovery and global development of targeted therapies and immunotherapies for the tre"
+  },
+  {
+   "t": "HUTCHMED: Jobs | LinkedIn",
+   "u": "https://hk.linkedin.com/company/hutchmed/jobs",
+   "s": "HUTCHMED (Nasdaq/AIM:HCM; HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to the discovery and global development and co"
+  },
+  {
+   "t": "HUTCHMED - LinkedIn",
+   "u": "https://www.linkedin.com/company/hutchmed",
+   "s": "HUTCHMED Biotechnology Research See jobs Follow Report this company Overview Jobs Life About us HUTCHMED (Nasdaq/AIM:HCM; HKEX:13) is an innovative, commercial-"
+  },
+  {
+   "t": "HUTCHMED Careers: Jobs, Salaries & Hiring Info | WhatJobs",
+   "u": "https://www.whatjobs.com/company/hutchmed/profile",
+   "s": "Looking for jobs at HUTCHMED? Browse current openings, salary insights, and company details. Apply today and explore careers with HUTCHMED on WhatJobs."
+  },
+  {
+   "t": "HUTCHMED - LinkedIn",
+   "u": "https://na.linkedin.com/company/hutchmed",
+   "s": "HUTCHMED (Nasdaq/AIM:HCM; HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to the discovery and global development and co"
+  },
+  {
+   "t": "HUTCHMED - Career Opportunities",
+   "u": "https://www.hutch-med.com/career-opportunities/",
+   "s": "HUTCHMED aims to become a major pharmaceutical company developing innovative drugs for both the Chinese and global markets. We invite motivated individuals to j"
+  },
+  {
+   "t": "HUTCHMED: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/hutchmed/jobs",
+   "s": "HUTCHMED | 14,647 followers on LinkedIn. HUTCHMED (Nasdaq/AIM:HCM; HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to th"
+  },
+  {
+   "t": "Hutchmed Limited Formerly Hutchison Medipharma Limited Our Subsidiary ...",
+   "u": "https://www.linkedin.com/jobs/hutchmed-limited-formerly-hutchison-medipharma-limited-our-subsidiary-jobs",
+   "s": "Today's top 693 Hutchmed Limited Formerly Hutchison Medipharma Limited Our Subsidiary jobs in United States. Leverage your professional network, and get hired. "
+  },
+  {
+   "t": "HUTCHMED - Home",
+   "u": "https://www.hutch-med.com/",
+   "s": "HUTCHMED (Nasdaq/AIM:HCM;HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to the discovery and global development and com"
+  },
+  {
+   "t": "HUTCHMED: Jobs | LinkedIn",
+   "u": "https://hk.linkedin.com/company/hutchmed/jobs",
+   "s": "HUTCHMED (Nasdaq/AIM:HCM; HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to the discovery and global development and co"
+  },
+  {
+   "t": "HUTCHMED - LinkedIn",
+   "u": "https://na.linkedin.com/company/hutchmed",
+   "s": "HUTCHMED (Nasdaq/AIM:HCM; HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to the discovery and global development and co"
+  },
+  {
+   "t": "HUTCHMED Careers: Jobs, Salaries & Hiring Info | WhatJobs",
+   "u": "https://www.whatjobs.com/company/hutchmed/profile",
+   "s": "Looking for jobs at HUTCHMED? Browse current openings, salary insights, and company details. Apply today and explore careers with HUTCHMED on WhatJobs."
+  },
+  {
+   "t": "HUTCHMED - Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/hutchmed",
+   "s": "HUTCHMED is a commercial-stage biopharmaceutical company committed to the discovery and global development of targeted therapies and immunotherapies for the tre"
+  },
+  {
+   "t": "HUTCHMED - Career Opportunities",
+   "u": "https://www.hutch-med.com/career-opportunities/",
+   "s": "Career Opportunities We innovate for patients. HUTCHMED aims to become a major pharmaceutical company developing innovative drugs for both the Chinese and globa"
+  },
+  {
+   "t": "HUTCHMED: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/hutchmed/jobs",
+   "s": "HUTCHMED | 14,647 followers on LinkedIn. HUTCHMED (Nasdaq/AIM:HCM; HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to th"
+  },
+  {
+   "t": "HUTCHMED: Jobs | LinkedIn",
+   "u": "https://hk.linkedin.com/company/hutchmed/jobs",
+   "s": "HUTCHMED (Nasdaq/AIM:HCM; HKEX:13) is an innovative, commercial-stage, biopharmaceutical company. It is committed to the discovery and global development and co"
+  },
+  {
+   "t": "Hutchmed Jobs in United States (1 Open Role) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/hutchmed-jobs?countryRedirected=1",
+   "s": "Today's top 1 Hutchmed jobs in United States. Leverage your professional network, and get hired. New Hutchmed jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

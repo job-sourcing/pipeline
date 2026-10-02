@@ -1,0 +1,149 @@
+{
+ "brand": "Innovent Biologics",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:20:46.699Z",
+ "candidates": [
+  {
+   "url": "https://en.innoventbio.com/Careers",
+   "title": "innovent",
+   "status": 200,
+   "bytes": 2519,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "CAREERS AT INNOVENT Innovent is not just another workplace. Working at Innovent is the surest way of making a difference in the world. It's a place where you ca",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.innoventbio.com/Careers",
+   "title": "信达生物制药",
+   "status": 200,
+   "bytes": 5640,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "信达生物制药提供职业发展机会，欢迎有志于创新药物研发、生产和商业化的专业人士加入，共同推动生物医药行业的发展。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.innoventbio.com/Careers/JobOpportunities",
+   "title": "信达生物制药",
+   "status": 200,
+   "bytes": 5640,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explorez les opportunités de carrière chez Innovent et rejoignez une entreprise innovante dans le domaine biopharmaceutique.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at Innovent",
+   "u": "https://en.innoventbio.com/Careers",
+   "s": "CAREERS AT INNOVENT Innovent is not just another workplace. Working at Innovent is the surest way of making a difference in the world. It's a place where you ca"
+  },
+  {
+   "t": "信达生物制药 - Innovent Bio",
+   "u": "https://www.innoventbio.com/Careers",
+   "s": "信达生物制药提供职业发展机会，欢迎有志于创新药物研发、生产和商业化的专业人士加入，共同推动生物医药行业的发展。"
+  },
+  {
+   "t": "Innovent Biologics: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/innovent-biologics/jobs",
+   "s": "Innovent Biologics | 36,500 followers on LinkedIn. To develop and commercialize high-quality biopharmaceuticals that are affordable to ordinary people | Establi"
+  },
+  {
+   "t": "Innovent Biologics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Innovent-Biologics",
+   "s": "Find out what works well at Innovent Biologics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Co"
+  },
+  {
+   "t": "Innovent",
+   "u": "https://en.innoventbio.com/",
+   "s": "Innovent est une entreprise biopharmaceutique spécialisée dans le développement de traitements innovants pour des maladies graves comme le cancer et les trouble"
+  },
+  {
+   "t": "Innovent Biologics Jobs in United States (1 Open Role) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/innovent-biologics-jobs",
+   "s": "Today's top 1 Innovent Biologics jobs in United States. Leverage your professional network, and get hired. New Innovent Biologics jobs added daily."
+  },
+  {
+   "t": "信达生物制药 - Innovent Bio",
+   "u": "https://www.innoventbio.com/Careers/JobOpportunities",
+   "s": "Explorez les opportunités de carrière chez Innovent et rejoignez une entreprise innovante dans le domaine biopharmaceutique."
+  },
+  {
+   "t": "Careers · Innovent",
+   "u": "https://innovent.io/pages/careers.html",
+   "s": "We're a 59-person team across six offices, deploying agentic AI into the operations the world actually depends on — ports, cities, grids, supply chains."
+  },
+  {
+   "t": "Careers at Innovent",
+   "u": "https://en.innoventbio.com/Careers",
+   "s": "Innovent is not just another workplace. Working at Innovent is the surest way of making a difference in the world. It's a place where you can create the future "
+  },
+  {
+   "t": "信达生物制药 - Innovent Bio",
+   "u": "https://www.innoventbio.com/Careers",
+   "s": "信达生物制药提供职业发展机会，欢迎有志于创新药物研发、生产和商业化的专业人士加入，共同推动生物医药行业的发展。"
+  },
+  {
+   "t": "Innovent Biologics: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/innovent-biologics/jobs",
+   "s": "Innovent Biologics | 36,500 followers on LinkedIn. To develop and commercialize high-quality biopharmaceuticals that are affordable to ordinary people | Establi"
+  },
+  {
+   "t": "Innovent Biologics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Innovent-Biologics",
+   "s": "Find out what works well at Innovent Biologics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Co"
+  },
+  {
+   "t": "Innovent Biologics Jobs in United States (1 Open Role) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/innovent-biologics-jobs",
+   "s": "Today's top 1 Innovent Biologics jobs in United States. Leverage your professional network, and get hired. New Innovent Biologics jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 2,000 Innovent Biologic Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Innovent-Biologic-jobs.html",
+   "s": "Todays top {1} jobs. New openings added daily. Apply now and find your next opportunity on {3}"
+  },
+  {
+   "t": "Innovent",
+   "u": "https://en.innoventbio.com/",
+   "s": "Innovent est une entreprise biopharmaceutique spécialisée dans le développement de traitements innovants pour des maladies graves comme le cancer et les trouble"
+  },
+  {
+   "t": "Innovent Biologics: Jobs | LinkedIn",
+   "u": "https://uk.linkedin.com/company/innovent-biologics/jobs",
+   "s": "Innovent Biologics | 36,426 followers on LinkedIn. To develop and commercialize high-quality biopharmaceuticals that are affordable to ordinary people | Establi"
+  },
+  {
+   "t": "Careers at Innovent",
+   "u": "https://en.innoventbio.com/Careers",
+   "s": "CAREERS AT INNOVENT Innovent is not just another workplace. Working at Innovent is the surest way of making a difference in the world. It's a place where you ca"
+  },
+  {
+   "t": "Innovent Biologics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Innovent-Biologics",
+   "s": "Find out what works well at Innovent Biologics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Co"
+  },
+  {
+   "t": "Innovent Biologics: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/innovent-biologics/jobs",
+   "s": "Innovent Biologics | 36,500 followers on LinkedIn. To develop and commercialize high-quality biopharmaceuticals that are affordable to ordinary people | Establi"
+  },
+  {
+   "t": "Now Hiring: 2,000 Innovent Biologic Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Innovent-Biologic-jobs.html",
+   "s": "Todays top {1} jobs. New openings added daily. Apply now and find your next opportunity on {3}"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

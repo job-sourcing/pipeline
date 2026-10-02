@@ -1,0 +1,154 @@
+{
+ "brand": "HeyTea",
+ "tier": "probe_A",
+ "lca": "HEYTEA USA INC",
+ "ts": "2026-10-02T13:19:38.459Z",
+ "candidates": [
+  {
+   "url": "https://www.heytea.com/careers",
+   "title": "heytea - new style tea by inspiration",
+   "status": 200,
+   "bytes": 4975,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "heytea - new style tea by inspiration",
+   "backend": "direct"
+  },
+  {
+   "url": "https://heytea.zhiye.com/jobs",
+   "title": "喜茶",
+   "status": 200,
+   "bytes": 31354,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "1、全域AI Agent产品规划与体验设计：主导公司核心智能体建设，覆盖用户端、门店端智能体等场景。负责需求洞察、场景定义、交互设计、体验验证全流程，打造高可用、高体验的智能服务能力； 2、AI场景建模与能力输出：深度拆解用户旅程与业务链路，将模糊业务痛点沉淀为标准化AI产品方案，精 ...",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.jobilize.com/jobs/company/heytea",
+   "title": "heytea Jobs hiring now | Jobilize",
+   "status": 200,
+   "bytes": 42298,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "heytea Jobs hiring now This range is provided by HEYTEA. Your actual pay will be based on your skills and experience - talk with your recruiter to learn more. •",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "heytea - new style tea by inspiration",
+   "u": "https://www.heytea.com/careers",
+   "s": "heytea - new style tea by inspiration"
+  },
+  {
+   "t": "Now Hiring: 25 Heytea Jobs | Indeed",
+   "u": "https://www.indeed.com/q-heytea-jobs.html",
+   "s": "Browse 28 Heytea jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "heytea: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/heytea/jobs",
+   "s": "heytea | 58,500 followers on LinkedIn. heytea , Originator Of New Style Tea heytea was born in a small alley called Jiangbianli in China. In a shop of less than"
+  },
+  {
+   "t": "8,000+ Heytea jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/heytea-jobs",
+   "s": "Today's top 8,000+ Heytea jobs in United States. Leverage your professional network, and get hired. New Heytea jobs added daily."
+  },
+  {
+   "t": "喜茶 - heytea.zhiye.com",
+   "u": "https://heytea.zhiye.com/campus/",
+   "s": "2018年，带着对新茶饮的解读 我们迈向了连接世界的第一站——新加坡 先后来到英国、澳大利亚 加拿大、马来西亚、美国、韩国... 随着步伐的不断迈进 阿喜邀请你 以更酷、更多元的方式 一起感受新茶饮全球化进程的出海之旅 携手构建喜茶全球化的核心驱动力量"
+  },
+  {
+   "t": "Heytea Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-heytea-job-jobs.html",
+   "s": "Today's top Heytea jobs. New openings added daily. Apply now and find your next opportunity on Indeed.com"
+  },
+  {
+   "t": "heytea - new style tea by inspiration",
+   "u": "https://www.heytea.com/",
+   "s": "heytea - new style tea by inspiration more information here→"
+  },
+  {
+   "t": "Heytea Jobs & Careers - 10 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Heytea-Jobs-E3499779.htm",
+   "s": "Search job openings at Heytea. 10 Heytea jobs including salaries, ratings, and reviews, posted by Heytea employees."
+  },
+  {
+   "t": "Now Hiring: 25 Heytea Jobs | Indeed",
+   "u": "https://www.indeed.com/q-heytea-jobs.html",
+   "s": "Browse 28 Heytea jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "heytea: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/heytea/jobs",
+   "s": "heytea | 58,500 followers on LinkedIn. heytea , Originator Of New Style Tea heytea was born in a small alley called Jiangbianli in China. In a shop of less than"
+  },
+  {
+   "t": "Now Hiring: 25 Heytea Jobs | Indeed",
+   "u": "https://www.indeed.com/q-heytea-jobs-jobs.html",
+   "s": "Browse 27 Heytea jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "heytea - new style tea by inspiration",
+   "u": "https://www.heytea.com/careers",
+   "s": "heytea - new style tea by inspiration"
+  },
+  {
+   "t": "8,000+ Heytea jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/heytea-jobs",
+   "s": "Today's top 8,000+ Heytea jobs in United States. Leverage your professional network, and get hired. New Heytea jobs added daily."
+  },
+  {
+   "t": "Heytea Jobs & Careers - 10 Open Positions | Glassdoor",
+   "u": "https://www.glassdoor.com/Jobs/Heytea-Jobs-E3499779.htm",
+   "s": "Search job openings at Heytea. 10 Heytea jobs including salaries, ratings, and reviews, posted by Heytea employees."
+  },
+  {
+   "t": "喜茶 - heytea.zhiye.com",
+   "u": "https://heytea.zhiye.com/jobs",
+   "s": "1、全域AI Agent产品规划与体验设计：主导公司核心智能体建设，覆盖用户端、门店端智能体等场景。负责需求洞察、场景定义、交互设计、体验验证全流程，打造高可用、高体验的智能服务能力； 2、AI场景建模与能力输出：深度拆解用户旅程与业务链路，将模糊业务痛点沉淀为标准化AI产品方案，精 ..."
+  },
+  {
+   "t": "HEYTEA - Talent Recruitment",
+   "u": "https://hire-r1.mokahr.com/social-recruitment/heytea/100008065?locale=en-US",
+   "s": "High-quality positions are now open. Click to view details"
+  },
+  {
+   "t": "Now Hiring: 25 Heytea Jobs | Indeed",
+   "u": "https://www.indeed.com/q-heytea-jobs.html",
+   "s": "Browse 28 Heytea jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "heytea: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/heytea/jobs",
+   "s": "heytea | 58,500 followers on LinkedIn. heytea , Originator Of New Style Tea heytea was born in a small alley called Jiangbianli in China. In a shop of less than"
+  },
+  {
+   "t": "Now Hiring: 25 Heytea Jobs | Indeed",
+   "u": "https://www.indeed.com/q-heytea-jobs-jobs.html",
+   "s": "Browse 27 Heytea jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "8,000+ Heytea jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/heytea-jobs",
+   "s": "Today's top 8,000+ Heytea jobs in United States. Leverage your professional network, and get hired. New Heytea jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.jobilize.com/jobs/company/heytea",
+  "platform": "custom",
+  "title": "heytea Jobs hiring now | Jobilize"
+ },
+ "verdict": "custom_surface"
+}
