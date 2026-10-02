@@ -1,0 +1,154 @@
+{
+ "brand": "Phanes Therapeutics",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:46:59.128Z",
+ "candidates": [
+  {
+   "url": "https://www.phanesthera.com/careers/",
+   "title": "Careers - Phanes Therapeutics, Inc",
+   "status": 200,
+   "bytes": 48585,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At Phanes, our mission is to become a major source of innovation in the biopharma industry. We understand that scientific innovation is a challenging task and t",
+   "backend": "direct"
+  },
+  {
+   "url": "https://app.trinethire.com/companies/22775-phanes-therapeutics-inc/jobs",
+   "title": "Careers at Phanes Therapeutics Inc",
+   "status": 200,
+   "bytes": 3592,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "© 2014-2026 TriNet Group, Inc. All rights reserved. Privacy Policy",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.phanesthera.com/",
+   "title": "Home - Phanes Therapeutics, Inc",
+   "status": 200,
+   "bytes": 56262,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Phanes Therapeutics, Inc. is a clinical stage biotech company focused on innovative drug discovery and development in immuno-oncology. Currently, it is conducti",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Phanes Therapeutics, Inc",
+   "u": "https://www.phanesthera.com/careers/",
+   "s": "At Phanes, our mission is to become a major source of innovation in the biopharma industry. We understand that scientific innovation is a challenging task and t"
+  },
+  {
+   "t": "Home - Phanes Therapeutics, Inc",
+   "u": "https://www.phanesthera.com/",
+   "s": "Phanes Therapeutics, Inc. is a clinical stage biotech company focused on innovative drug discovery and development in immuno-oncology. Currently, it is conducti"
+  },
+  {
+   "t": "Phanes Therapeutics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Phanes-Therapeutics",
+   "s": "Find out what works well at Phanes Therapeutics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Phanes Therapeutics Inc. Jobs at Phanes Therapeutics, Inc ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/phanes-therapeutics-inc.-jobs-worldwide?f_C=76629806",
+   "s": "Today's top Phanes Therapeutics Inc. jobs at Phanes Therapeutics, Inc. in Worldwide. Leverage your professional network, and get hired. New Phanes Therapeutics "
+  },
+  {
+   "t": "Careers at Phanes Therapeutics Inc - app.trinethire.com",
+   "u": "https://app.trinethire.com/companies/22775-phanes-therapeutics-inc/jobs",
+   "s": "© 2014-2026 TriNet Group, Inc. All rights reserved. Privacy Policy"
+  },
+  {
+   "t": "Phanes Therapeutics, Inc. Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/phanes-therapeutics-inc",
+   "s": "Learn more about Phanes Therapeutics, Inc.. Find jobs, explore benefits, and research company culture at Built In."
+  },
+  {
+   "t": "Careers at Phanes Therapeutics | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/phanes-therapeutics",
+   "s": "Phanes Therapeutics, Inc. is a biotechnology company focused on the discovery and development of innovative immuno-oncology therapies for cancer treatment. The "
+  },
+  {
+   "t": "Phanes Therapeutics, Inc. - LinkedIn",
+   "u": "https://www.linkedin.com/company/phanesthera/",
+   "s": "Phanes Therapeutics, Inc. is a clinical stage biotech company focused on innovative drug discovery and development in oncology. Currently, it is conducting thre"
+  },
+  {
+   "t": "Careers - Phanes Therapeutics, Inc",
+   "u": "https://www.phanesthera.com/careers/",
+   "s": "At Phanes, our mission is to become a major source of innovation in the biopharma industry. We understand that scientific innovation is a challenging task and t"
+  },
+  {
+   "t": "Phanes Therapeutics Inc. Jobs at Phanes Therapeutics, Inc ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/phanes-therapeutics-inc.-jobs-worldwide?f_C=76629806",
+   "s": "Today's top Phanes Therapeutics Inc. jobs at Phanes Therapeutics, Inc. in Worldwide. Leverage your professional network, and get hired. New Phanes Therapeutics "
+  },
+  {
+   "t": "Phanes Therapeutics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Phanes-Therapeutics",
+   "s": "Find out what works well at Phanes Therapeutics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Home - Phanes Therapeutics, Inc",
+   "u": "https://www.phanesthera.com/",
+   "s": "Phanes Therapeutics, Inc. is a clinical stage biotech company focused on innovative drug discovery and development in immuno-oncology. Currently, it is conducti"
+  },
+  {
+   "t": "Phanes Therapeutics Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Phanes-Therapeutics-Inc",
+   "s": "Read Phanes Therapeutics reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at Phanes "
+  },
+  {
+   "t": "Careers at Phanes Therapeutics Inc - app.trinethire.com",
+   "u": "https://app.trinethire.com/companies/22775-phanes-therapeutics-inc/jobs",
+   "s": "Careers at Phanes Therapeutics Inc Our Current Job Openings ... © 2014-2026 TriNet Group, Inc. All rights reserved."
+  },
+  {
+   "t": "Phanes Therapeutics, Inc. - LinkedIn",
+   "u": "https://www.linkedin.com/company/phanesthera/",
+   "s": "Phanes Therapeutics, Inc. is a clinical stage biotech company focused on innovative drug discovery and development in oncology. Currently, it is conducting thre"
+  },
+  {
+   "t": "Careers at Phanes Therapeutics | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/phanes-therapeutics",
+   "s": "Phanes Therapeutics, Inc. is a biotechnology company focused on the discovery and development of innovative immuno-oncology therapies for cancer treatment. The "
+  },
+  {
+   "t": "Careers - Phanes Therapeutics, Inc",
+   "u": "https://www.phanesthera.com/careers/",
+   "s": "At Phanes, our mission is to become a major source of innovation in the biopharma industry. We understand that scientific innovation is a challenging task and t"
+  },
+  {
+   "t": "Phanes Therapeutics Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Phanes-Therapeutics",
+   "s": "Find out what works well at Phanes Therapeutics from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. C"
+  },
+  {
+   "t": "Careers at Phanes Therapeutics Inc - app.trinethire.com",
+   "u": "https://app.trinethire.com/companies/22775-phanes-therapeutics-inc/jobs",
+   "s": "Careers at Phanes Therapeutics Inc Our Current Job Openings ... © 2014-2026 TriNet Group, Inc. All rights reserved."
+  },
+  {
+   "t": "Phanes Therapeutics Inc. Jobs at Phanes Therapeutics, Inc ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/phanes-therapeutics-inc.-jobs-worldwide?f_C=76629806",
+   "s": "Today's top Phanes Therapeutics Inc. jobs at Phanes Therapeutics, Inc. in Worldwide. Leverage your professional network, and get hired. New Phanes Therapeutics "
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.phanesthera.com/careers/",
+  "platform": "custom",
+  "title": "Careers - Phanes Therapeutics, Inc"
+ },
+ "verdict": "custom_surface"
+}

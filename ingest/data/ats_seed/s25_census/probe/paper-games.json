@@ -1,0 +1,29 @@
+{
+ "brand": "Paper Games",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:44:57.275Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "papergames",
+   "spec": "feishuhire:papergames",
+   "title": "加入Papergames"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:papergames",
+  "platform": "feishu",
+  "title": "加入Papergames",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入Papergames",
+  "brand": "Paper Games",
+  "ok": true,
+  "n": 2
+ },
+ "verdict": "ats_surface"
+}

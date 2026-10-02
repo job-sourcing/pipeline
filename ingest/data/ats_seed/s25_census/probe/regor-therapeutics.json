@@ -1,0 +1,16 @@
+{
+ "brand": "Regor Therapeutics",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:55:31.660Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.regor.com/careers/",
+  "platform": "custom",
+  "title": "Career opportunities at Regor Therapeutics",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

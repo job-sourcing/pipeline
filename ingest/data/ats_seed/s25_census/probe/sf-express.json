@@ -1,0 +1,154 @@
+{
+ "brand": "SF Express",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:57:42.796Z",
+ "candidates": [
+  {
+   "url": "http://jobs.sf-express.com/",
+   "title": "Sf-Express",
+   "status": 200,
+   "bytes": 12630,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "顺丰速运 版权所有 Copyright © 2014 sf-express.com Inc. All rights reserved",
+   "backend": "direct"
+  },
+  {
+   "url": "https://hr.sf-express.com/jobMainHandler/main/JobSearch.do",
+   "title": "顺丰人才招聘系统-社会招聘",
+   "status": 200,
+   "bytes": 11018,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "城 市： 温州 时 间： 365 地 点： 浙江省温州市温州永兴转运中心 招聘职位： 装卸员 联系人 ： 李先生 联系方式： 13173981929",
+   "backend": "direct"
+  },
+  {
+   "url": "https://htm.sf-express.com/tw/en/talent_recruitment/",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 69966,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Careers S.F. Express, well established domestically, is continuing our drive as the premier leader in the express delivery industry. We place great value on peo",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - 顺丰国际",
+   "u": "https://www.sf-international.com/us/en/about/careers",
+   "s": "Careers SF Express, an established player in the Chinese express delivery market, is continuing our drive to be the premier leader of the industry. We place gre"
+  },
+  {
+   "t": "Careers - 順豐速運",
+   "u": "https://htm.sf-express.com/tw/en/talent_recruitment/",
+   "s": "Careers S.F. Express, well established domestically, is continuing our drive as the premier leader in the express delivery industry. We place great value on peo"
+  },
+  {
+   "t": "SF EXPRESS Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sf-Express",
+   "s": "Find out what works well at SF EXPRESS from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "SF Express - 顺丰人才招聘系统首页",
+   "u": "https://hr.sf-express.com/index.jsp",
+   "s": "顺丰人才招聘系统主页，提供社会招聘和校园招聘信息，在线申请职位。"
+  },
+  {
+   "t": "Home | Express & Bonobos",
+   "u": "https://careers.express.com/",
+   "s": "Express is a brand with a purpose, powered by a styling community. View our open careers here."
+  },
+  {
+   "t": "Sf-Express",
+   "u": "http://jobs.sf-express.com/",
+   "s": "顺丰速运 版权所有 Copyright © 2014 sf-express.com Inc. All rights reserved"
+  },
+  {
+   "t": "Sf Express Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sf-express-jobs",
+   "s": "Today's top 9,000+ Sf Express jobs in United States. Leverage your professional network, and get hired. New Sf Express jobs added daily."
+  },
+  {
+   "t": "S.F. Express Jobs in Singapore (with Salaries) - Oct 2026 | Jobstreet",
+   "u": "https://sg.jobstreet.com/S.F.-Express-jobs",
+   "s": "Find your ideal job on Jobstreet with 15 S.F. Express jobs (10 at S.F. Express) listed in Singapore. View all the S.F. Express vacancies now with new jobs added"
+  },
+  {
+   "t": "Careers - 顺丰国际",
+   "u": "https://www.sf-international.com/us/en/about/careers",
+   "s": "Careers SF Express, an established player in the Chinese express delivery market, is continuing our drive to be the premier leader of the industry. We place gre"
+  },
+  {
+   "t": "SF EXPRESS Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sf-Express",
+   "s": "Find out what works well at SF EXPRESS from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "SF-Express Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sf--express",
+   "s": "Find out what works well at SF-Express from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "Careers - 順豐速運",
+   "u": "https://htm.sf-express.com/tw/en/talent_recruitment/",
+   "s": "Careers S.F. Express, well established domestically, is continuing our drive as the premier leader in the express delivery industry. We place great value on peo"
+  },
+  {
+   "t": "Sf-Express",
+   "u": "http://jobs.sf-express.com/",
+   "s": "顺丰速运 版权所有 Copyright © 2014 sf-express.com Inc. All rights reserved"
+  },
+  {
+   "t": "SF Express - 顺丰人才招聘系统首页",
+   "u": "https://hr.sf-express.com/index.jsp",
+   "s": "顺丰人才招聘系统主页，提供社会招聘和校园招聘信息，在线申请职位。"
+  },
+  {
+   "t": "S.F. Express Jobs in Singapore (with Salaries) - Jobstreet",
+   "u": "https://sg.jobstreet.com/S.F.-Express-jobs",
+   "s": "Find your ideal job on Jobstreet with 15 S.F. Express jobs (10 at S.F. Express) listed in Singapore. View all the S.F. Express vacancies now with new jobs added"
+  },
+  {
+   "t": "Sf Express Corporation Jobs in United States (8,000+ Open Roles ...",
+   "u": "https://www.linkedin.com/jobs/sf-express-corporation-jobs",
+   "s": "Today's top 8,000+ Sf Express Corporation jobs in United States. Leverage your professional network, and get hired. New Sf Express Corporation jobs added daily."
+  },
+  {
+   "t": "Careers - 顺丰国际",
+   "u": "https://www.sf-international.com/us/en/about/careers",
+   "s": "Careers SF Express, an established player in the Chinese express delivery market, is continuing our drive to be the premier leader of the industry. We place gre"
+  },
+  {
+   "t": "Careers - 順豐速運",
+   "u": "https://htm.sf-express.com/tw/en/talent_recruitment/",
+   "s": "Careers S.F. Express, well established domestically, is continuing our drive as the premier leader in the express delivery industry. We place great value on peo"
+  },
+  {
+   "t": "SF EXPRESS Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sf-Express",
+   "s": "Find out what works well at SF EXPRESS from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pa"
+  },
+  {
+   "t": "SF Express - 顺丰人才招聘系统首页",
+   "u": "https://hr.sf-express.com/index.jsp",
+   "s": "顺丰人才招聘系统主页，提供社会招聘和校园招聘信息，在线申请职位。"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://htm.sf-express.com/tw/en/talent_recruitment/",
+  "platform": "custom",
+  "title": "Careers"
+ },
+ "verdict": "custom_surface"
+}

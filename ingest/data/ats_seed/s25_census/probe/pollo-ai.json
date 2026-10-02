@@ -1,0 +1,156 @@
+{
+ "brand": "Pollo AI",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:50:28.727Z",
+ "candidates": [
+  {
+   "url": "https://pollo.ai/photo-effects/career-switch",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5821,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Pollo AI's career switch effect transforms your photo into multiple professional roles with varied outfits and scenes. Try the career switch effect for free!",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://www.apollo.com/careers",
+   "title": "Careers | Apollo Global Management",
+   "status": 200,
+   "bytes": 365189,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "We aim to provide the ultimate learning environment so that the best talent in our industry can thrive, achieve their full potential and build meaningful, long-",
+   "backend": "direct"
+  },
+  {
+   "url": "https://pollo.ai/home",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5709,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Create AI videos, images, avatars, and ads in one suite. Leading models, production-ready visuals—for creators and marketers on Pollo AI.",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "AI Career Switch: See Yourself in Different Professions | Pollo AI",
+   "u": "https://pollo.ai/photo-effects/career-switch",
+   "s": "Pollo AI's career switch effect transforms your photo into multiple professional roles with varied outfits and scenes. Try the career switch effect for free!"
+  },
+  {
+   "t": "Apollo.io Careers: Join Our Remote-First Sales Intelligence Team",
+   "u": "https://www.apollo.io/careers",
+   "s": "Explore Apollo.io careers across 30+ countries with our remote-first sales intelligence platform. Enjoy flexible work, competitive compensation, healthcare bene"
+  },
+  {
+   "t": "716 Pollo+ai jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/pollo%2Bai-jobs",
+   "s": "Today's top 716 Pollo+ai jobs in United States. Leverage your professional network, and get hired. New Pollo+ai jobs added daily."
+  },
+  {
+   "t": "Home | Pollo AI",
+   "u": "https://pollo.ai/home",
+   "s": "Create AI videos, images, avatars, and ads in one suite. Leading models, production-ready visuals—for creators and marketers on Pollo AI."
+  },
+  {
+   "t": "Pollo AI - LinkedIn",
+   "u": "https://www.linkedin.com/company/pollo-ai",
+   "s": "Pollo AI | 581 followers on LinkedIn. Create AI videos, images, avatars, and ads in one suite. Leading models, production-ready visuals—for marketers and creato"
+  },
+  {
+   "t": "Polly is transforming the future of work.",
+   "u": "https://www.polly.ai/careers",
+   "s": "Empowering teams to capture feedback on Slack and Teams and act on the knowledge, instantly."
+  },
+  {
+   "t": "Careers at PolyAI | Help Build the Future of Dialog Agents",
+   "u": "https://poly.ai/careers",
+   "s": "Explore remote-friendly, flexible roles at PolyAI and help make bad customer service a thing of the past. See open positions and our values."
+  },
+  {
+   "t": "Careers - Apollo Global Management",
+   "u": "https://www.apollo.com/careers",
+   "s": "We aim to provide the ultimate learning environment so that the best talent in our industry can thrive, achieve their full potential and build meaningful, long-"
+  },
+  {
+   "t": "716 Pollo+ai jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/pollo%2Bai-jobs",
+   "s": "Today's top 716 Pollo+ai jobs in United States. Leverage your professional network, and get hired. New Pollo+ai jobs added daily."
+  },
+  {
+   "t": "Apollo.io Careers: Join Our Remote-First Sales Intelligence Team",
+   "u": "https://www.apollo.io/careers",
+   "s": "Explore Apollo.io careers across 30+ countries with our remote-first sales intelligence platform. Enjoy flexible work, competitive compensation, healthcare bene"
+  },
+  {
+   "t": "197 Pollo Ai Linkedin jobs in United States",
+   "u": "https://www.linkedin.com/jobs/pollo-ai-linkedin-jobs",
+   "s": "Today's top 197 Pollo Ai Linkedin jobs in United States. Leverage your professional network, and get hired. New Pollo Ai Linkedin jobs added daily."
+  },
+  {
+   "t": "Careers - Apollo Global Management",
+   "u": "https://www.apollo.com/careers",
+   "s": "We aim to provide the ultimate learning environment so that the best talent in our industry can thrive, achieve their full potential and build meaningful, long-"
+  },
+  {
+   "t": "Pollo AI: The Ultimate AI Creative Suite for Creators & Marketers",
+   "u": "https://pollo.ai/",
+   "s": "Pollo AI is an AI creative suite for video, image, avatar, and audio. Generate, edit, and ship production-ready visuals with multi-model freedom in one place. T"
+  },
+  {
+   "t": "Working Pet: Create Cute Pet Jobs Videos Free | Pollo AI",
+   "u": "https://pollo.ai/video-effects/working-pet",
+   "s": "Try Pollo AI's Working Pet video effect and transform your pet photo into adorable job-themed videos for free! Make your pet a social media star now."
+  },
+  {
+   "t": "RoboApply.jobs | Official AI Job Search, Auto Apply & Interview Copilot",
+   "u": "https://roboapply.jobs/",
+   "s": "Search jobs, auto apply at scale, generate tailored resumes, and use Interview Copilot with RoboApply.jobs, the official AI job search platform."
+  },
+  {
+   "t": "Careers at PolyAI | Help Build the Future of Dialog Agents",
+   "u": "https://poly.ai/careers",
+   "s": "Explore remote-friendly, flexible roles at PolyAI and help make bad customer service a thing of the past. See open positions and our values."
+  },
+  {
+   "t": "716 Pollo+ai jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/pollo%2Bai-jobs",
+   "s": "Today's top 716 Pollo+ai jobs in United States. Leverage your professional network, and get hired. New Pollo+ai jobs added daily."
+  },
+  {
+   "t": "197 Pollo Ai Linkedin jobs in United States",
+   "u": "https://www.linkedin.com/jobs/pollo-ai-linkedin-jobs",
+   "s": "Today's top 197 Pollo Ai Linkedin jobs in United States. Leverage your professional network, and get hired. New Pollo Ai Linkedin jobs added daily."
+  },
+  {
+   "t": "Apollo.io Careers: Join Our Remote-First Sales Intelligence Team",
+   "u": "https://www.apollo.io/careers",
+   "s": "Explore Apollo.io careers across 30+ countries with our remote-first sales intelligence platform. Enjoy flexible work, competitive compensation, healthcare bene"
+  },
+  {
+   "t": "Toloka Careers",
+   "u": "https://toloka.ai/careers",
+   "s": "From agentic skills to coding and AI safety — we build data solutions integrating human expertise and technology to accelerate AI development."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.apollo.com/careers",
+  "platform": "custom",
+  "title": "Careers | Apollo Global Management"
+ },
+ "verdict": "custom_surface"
+}

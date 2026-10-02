@@ -1,0 +1,30 @@
+{
+ "brand": "Reolink",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:56:39.268Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "reolink",
+   "spec": "greenhouse:reolink",
+   "title": "Jobs at Reolink",
+   "jobs_hint": 77
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:reolink",
+  "platform": "greenhouse",
+  "title": "Jobs at Reolink",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Reolink",
+  "brand": "Reolink",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

@@ -1,0 +1,16 @@
+{
+ "brand": "Pharmaron",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:48:09.507Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.pharmaron.com/careers/",
+  "platform": "custom",
+  "title": "Careers | Pharmaron",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

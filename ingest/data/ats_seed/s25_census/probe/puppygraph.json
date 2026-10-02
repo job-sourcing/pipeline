@@ -1,0 +1,154 @@
+{
+ "brand": "PuppyGraph",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:52:32.185Z",
+ "candidates": [
+  {
+   "url": "https://www.puppygraph.com/",
+   "title": "PuppyGraph | Query Your Relational Data As A Graph. No ETL.",
+   "status": 200,
+   "bytes": 172301,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "PuppyGraph is the 1st graph analytic engine that can query existing relational data stores into a unified graph model in <10 mins. No graph databases needed.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://joinus.ie/startups/puppygraph",
+   "title": "PuppyGraph jobs in United States",
+   "status": 200,
+   "bytes": 37597,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "PuppyGraph PuppyGraph provides a graph query engine that allows for querying relational data stores as a unified graph model, eliminating the need for ETL proce",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.puppygraph.com/about",
+   "title": "About PuppyGraph | The First Graph Query Engine",
+   "status": 200,
+   "bytes": 99492,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "PuppyGraph is the 1st graph analytic engine that can query existing relational data stores into a unified graph model in <10 mins. No graph databases needed.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "PuppyGraph - LinkedIn",
+   "u": "https://www.linkedin.com/company/puppygraph",
+   "s": "Replacing an existing database? Effortlessly drop in PuppyGraph as the replacement, seamlessly connecting to third-party tools without the need for data or code"
+  },
+  {
+   "t": "1,000+ Puppygraph jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/puppygraph-jobs?f_AL=true",
+   "s": "Today's top 1,000+ Puppygraph jobs in United States. Leverage your professional network, and get hired. New Puppygraph jobs added daily."
+  },
+  {
+   "t": "PuppyGraph | Query Your Relational Data As A Graph. No ETL.",
+   "u": "https://www.puppygraph.com/",
+   "s": "PuppyGraph is the 1st graph analytic engine that can query existing relational data stores into a unified graph model in <10 mins. No graph databases needed."
+  },
+  {
+   "t": "PuppyGraph - Jobs & Company",
+   "u": "https://joinus.ie/startups/puppygraph",
+   "s": "PuppyGraph PuppyGraph provides a graph query engine that allows for querying relational data stores as a unified graph model, eliminating the need for ETL proce"
+  },
+  {
+   "t": "About PuppyGraph | The First Graph Query Engine",
+   "u": "https://www.puppygraph.com/about",
+   "s": "PuppyGraph is the 1st graph analytic engine that can query existing relational data stores into a unified graph model in <10 mins. No graph databases needed."
+  },
+  {
+   "t": "PuppyGraph - Jobs, Funding & Reviews",
+   "u": "https://www.employbl.com/companies/PuppyGraph",
+   "s": "Explore PuppyGraph: open job listings, funding rounds, office locations, and employee reviews. Find your next opportunity at PuppyGraph on Employbl."
+  },
+  {
+   "t": "Partner Profiles: Zhenni Wu, Co-founder & Head of Marketing at PuppyGraph",
+   "u": "https://www.cloudera.com/about/women-leaders-in-technology/profiles/zhenni-wu.html",
+   "s": "Meet Zhenni Wu, Co-founder and Head of Marketing at PuppyGraph. With a track record that includes serving as an Alumni Ventures Fellow, advising early-stage sta"
+  },
+  {
+   "t": "Weimo Liu - Co-founder and Chief Executive Officer @ PuppyGraph ...",
+   "u": "https://www.crunchbase.com/person/weimo-liu-b148",
+   "s": "Weimo Liu has 2 current jobs as Expert Group on Graph Query Language (GQL) at InterNational Committee for Information Technology Standards (INCITS) and Co-found"
+  },
+  {
+   "t": "1,000+ Puppygraph jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/puppygraph-jobs?f_AL=true",
+   "s": "Today's top 1,000+ Puppygraph jobs in United States. Leverage your professional network, and get hired. New Puppygraph jobs added daily."
+  },
+  {
+   "t": "PuppyGraph - LinkedIn",
+   "u": "https://www.linkedin.com/company/puppygraph",
+   "s": "Replacing an existing database? Effortlessly drop in PuppyGraph as the replacement, seamlessly connecting to third-party tools without the need for data or code"
+  },
+  {
+   "t": "PuppyGraph | Query Your Relational Data As A Graph. No ETL.",
+   "u": "https://www.puppygraph.com/",
+   "s": "PuppyGraph is the 1st graph analytic engine that can query existing relational data stores into a unified graph model in <10 mins. No graph databases needed."
+  },
+  {
+   "t": "PuppyGraph - Jobs, Funding & Reviews",
+   "u": "https://www.employbl.com/companies/PuppyGraph",
+   "s": "Explore PuppyGraph: open job listings, funding rounds, office locations, and employee reviews. Find your next opportunity at PuppyGraph on Employbl."
+  },
+  {
+   "t": "Careers - Delta Dental of Iowa",
+   "u": "https://www.deltadentalia.com/about-us/careers/",
+   "s": "It is also the policy of Delta Dental of Iowa to take affirmative action to employ and to advance in employment, all persons regardless of their status as indiv"
+  },
+  {
+   "t": "Job Search - Find Your Next Job with Palmer Group",
+   "u": "https://jobs.thepalmergroup.com/",
+   "s": "Receive real-time, personalized job alerts via text or email."
+  },
+  {
+   "t": "Careers - Des Moines, Iowa",
+   "u": "https://www.dsm.city/departments/human_resources/careers/index.php",
+   "s": "Careers with the City of Des Moines: explore job openings, application tips, benefits, and recruitment for Fire, Police, and other city departments."
+  },
+  {
+   "t": "Jobs And Careers | VA Central Iowa Health Care | Veterans Affairs",
+   "u": "https://www.va.gov/central-iowa-health-care/work-with-us/jobs-and-careers/",
+   "s": "Build your career with us at the VA Central Iowa Healthcare System, where you'll become part of the nation's largest health care team, earn great benefits, and "
+  },
+  {
+   "t": "1,000+ Puppygraph jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/puppygraph-jobs?f_AL=true",
+   "s": "Today's top 1,000+ Puppygraph jobs in United States. Leverage your professional network, and get hired. New Puppygraph jobs added daily."
+  },
+  {
+   "t": "PuppyGraph - LinkedIn",
+   "u": "https://www.linkedin.com/company/puppygraph",
+   "s": "Petabyte-Level Scalability PuppyGraph eradicates graph scalability issues by separating computation and storage. Our auto-sharded, distributed computation effor"
+  },
+  {
+   "t": "PuppyGraph | Query Your Relational Data As A Graph. No ETL.",
+   "u": "https://www.puppygraph.com/",
+   "s": "PuppyGraph is the 1st graph analytic engine that can query existing relational data stores into a unified graph model in <10 mins. No graph databases needed."
+  },
+  {
+   "t": "Join Our Team - UnityPoint Health",
+   "u": "https://www.unitypoint.org/join-our-team",
+   "s": "Join Our Team When you select UnityPoint Health for your career, you're choosing to make a difference in someone's life — every minute of every day. There are e"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://joinus.ie/startups/puppygraph",
+  "platform": "custom",
+  "title": "PuppyGraph jobs in United States"
+ },
+ "verdict": "custom_surface"
+}

@@ -1,0 +1,16 @@
+{
+ "brand": "Renogy",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:55:48.883Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://renogy.isolvedhire.com/jobs/",
+  "platform": "custom",
+  "title": "Job Listings - Renogy Jobs",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

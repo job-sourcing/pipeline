@@ -1,0 +1,16 @@
+{
+ "brand": "Recurrent Energy",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:55:14.916Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://recurrentenergy.com/careers/",
+  "platform": "custom",
+  "title": "Careers - Recurrent Energy",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

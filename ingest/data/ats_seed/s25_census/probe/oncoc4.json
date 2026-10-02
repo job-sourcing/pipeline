@@ -1,0 +1,16 @@
+{
+ "brand": "OncoC4",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:44:38.084Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.oncoc4.com/en/careers/",
+  "platform": "custom",
+  "title": "Careers | OncoC4",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

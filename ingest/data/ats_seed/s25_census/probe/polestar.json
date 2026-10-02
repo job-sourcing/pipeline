@@ -1,0 +1,167 @@
+{
+ "brand": "Polestar",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:49:56.501Z",
+ "candidates": [
+  {
+   "url": "https://polestar.wd3.myworkdayjobs.com/Careers",
+   "title": "",
+   "status": 200,
+   "bytes": 57,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": "workday:Careers",
+   "score": 17,
+   "snippet": "Polestar - the guiding star. We are an electric performance brand, determined to improve the society we live in. Our focus is on uncompromised design and techno",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.polestar.com/global/about/careers/",
+   "title": "Apply for a career at Polestar",
+   "status": 200,
+   "bytes": 205637,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore over 3000 jobs at Polestar, a company that aims to improve the society through sustainable, electric mobility. Find jobs by location, department, or stu",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.polestarglobal.com/jobs",
+   "title": "Current job openings - Pole Star Global",
+   "status": 200,
+   "bytes": 81390,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "This website uses cookies to ensure you get the best experience. Pole Star Global and our selected partners use cookies and similar technologies (together \"cook",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Apply for a career at Polestar",
+   "u": "https://www.polestar.com/global/about/careers/",
+   "s": "Explore over 3000 jobs at Polestar, a company that aims to improve the society through sustainable, electric mobility. Find jobs by location, department, or stu"
+  },
+  {
+   "t": "Current job openings - Pole Star Global",
+   "u": "https://careers.polestarglobal.com/jobs",
+   "s": "This website uses cookies to ensure you get the best experience. Pole Star Global and our selected partners use cookies and similar technologies (together \"cook"
+  },
+  {
+   "t": "Careers - Pole Star Global",
+   "u": "https://www.polestarglobal.com/careers/",
+   "s": "Careers Explore unchartered waters Join the only company in the world that seamlessly connects governments, defense, financial markets, physical commodity trade"
+  },
+  {
+   "t": "Explore exciting careers at Polestar Analytics Join team & grow with us",
+   "u": "https://www.polestaranalytics.com/career",
+   "s": "Explore career opportunities at Polestar Analytics. Join Polestar Analytics dynamic team & contribute to innovative projects while advancing your professional g"
+  },
+  {
+   "t": "Polestar: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/polestarcars/jobs/",
+   "s": "Polestar Motor Vehicle Manufacturing Göteborg, Västra Götaland 344,703 followers We are an electric performance brand, determined to improve the society we live"
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://polestar.wd3.myworkdayjobs.com/Careers",
+   "s": "Polestar - the guiding star. We are an electric performance brand, determined to improve the society we live in. Our focus is on uncompromised design and techno"
+  },
+  {
+   "t": "Career - Pole Star",
+   "u": "https://www.polestargroup.com/career",
+   "s": "Pole Star Career Opportunities If you want to be part of something that is going to be big, where you will be really valued and where your opinion counts, then "
+  },
+  {
+   "t": "Current job openings - Polestar",
+   "u": "https://polestar.teamtailor.com/jobs?department=Digital",
+   "s": "Job openings at Polestar Join a global team dedicated to improving the societies we live in through sustainable, electric mobility."
+  },
+  {
+   "t": "Apply for a career at Polestar",
+   "u": "https://www.polestar.com/global/about/careers/",
+   "s": "Explore over 3000 jobs at Polestar, a company that aims to improve the society through sustainable, electric mobility. Find jobs by location, department, or stu"
+  },
+  {
+   "t": "Current job openings - Pole Star Global",
+   "u": "https://careers.polestarglobal.com/jobs",
+   "s": "This website uses cookies to ensure you get the best experience. Pole Star Global and our selected partners use cookies and similar technologies (together \"cook"
+  },
+  {
+   "t": "Career - Pole Star",
+   "u": "https://www.polestargroup.com/career",
+   "s": "Career Pole Star is again certified as a Great Places to Work 2025/26. Join a fast growing organisation that puts people first."
+  },
+  {
+   "t": "Polestar: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/polestarcars/jobs/",
+   "s": "Polestar Motor Vehicle Manufacturing Göteborg, Västra Götaland 344,703 followers We are an electric performance brand, determined to improve the society we live"
+  },
+  {
+   "t": "75 Polestar Automotive Jobs & Work | Indeed",
+   "u": "https://www.indeed.com/q-polestar-automotive-jobs.html",
+   "s": "97 Polestar Automotive jobs available on Indeed.com. Apply to Automotive Detailer, Automotive Parts Manager, Car Sales Executive and more!"
+  },
+  {
+   "t": "Polestar Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-company%3apolestar-jobs.html",
+   "s": "Browse 22 Polestar jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Search for Jobs",
+   "u": "https://polestar.wd3.myworkdayjobs.com/Careers",
+   "s": "Polestar - the guiding star. We are an electric performance brand, determined to improve the society we live in. Our focus is on uncompromised design and techno"
+  },
+  {
+   "t": "EXPLORE UNCHARTERED WATERS - Pole Star Global",
+   "u": "https://careers.polestarglobal.com/",
+   "s": "Join the only company in the world that seamlessly connects governments, defense, financial markets, physical commodity traders, and operational maritime stakeh"
+  },
+  {
+   "t": "Polestar Careers - 14 urgent Openings. Apply now",
+   "u": "https://duckduckgo.com/y.js?ad_domain=jobrapido.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=RmHYVeuz39%2DT736x5FhBTUHIWEvqF8pySOIX8luDpNu7WR84avv0SRhKpIkEEP3518kRDLpzXyV7w7tpE%2D4nb293rd7rZbqnsZvnhk4VR5VkDgPitFqrk%2DyDZfFvpCp9%2D7mZLpY7CNrrkz8176Dpfybf_RC0oUUkLuXAw5ZCmWU.GeGIZjzD6V45XQYDetKXog&rut=08ef519f53cd32743a3b6fb33a30fd24bd3e2a77bf65e9ec7b5140afa3f29ad4&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8PcddO9I17f%2DaP_hRjJh5jzVUCUwC1BQGVQYH9wuJt07GyGpkWReHmCzAs5gO1hnsE71CZ_YmBMTxe%2DTiarOacKZGtWBgENnAKPlD2SDGW8jYHcd60rGrT%2DaiKjPmt5JSvnv5YYErk8ieodFe%2DYdMGXY27URg2pdpIVD8mS5W0lPsoad_DvkzFFZq10gMIfFEE9kdwiXfQF3qifW0B_BksFP8oJY%26u%3DaHR0cHMlM2ElMmYlMmZ1cy5qb2JyYXBpZG8uY29tJTJmcG9sZXN0YXItam9icyUzZnIlM2RhdXRvJTI2dXRtX2FnaWQlM2QxMjk3NDIzOTM2NTc0NTc4JTI2dXRtX2t3aWQlM2Rrd2QtODEwODkxMjA0MjAyODAlM2Fsb2MtMTkwJTI2ZXh0JTNkJTI2aW50JTNkJTI2cGh5JTNkMTAxMDQ1JTI2bXQlM2RlJTI2ZGV2JTNkYyUyNm5ldHdvcmslM2RzJTI2bXNjbGtpZCUzZDE3OTJhOWYzNmY1NDEwZmM4YmRmYzM0Y2Q5Y2VjYWFjJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkVFhfQTQ3LUIyX0NvbnN0cnVjdGlvbiUyNTIwVHJhZGVzJTI1MjBXb3JrZXJzJTI2dXRtX3Rlcm0lM2Rwb2xlc3RhciUyNTIwY2FyZWVycyUyNnV0bV9jb250ZW50JTNkQTQ3LUIyLUMxNjEwMC1EMDBfUGxhc3RlcmVyJTI1MjBhbmQlMjUyMFN0dWNjbyUyNTIwTWFzb25fSk9CX0VYQUNU%26rlid%3D1792a9f36f5410fc8bdfc34cd9cecaac&vqd=4-185153243621959960218374679409319014841&iurl=%7B1%7DIG%3DFD98B56FCAC6469897FF6E501B46E38B%26CID%3D2DF5971A415B69AF3C3F80FC40176802%26ID%3DDevEx%2C5036.1",
+   "s": "We've just got new Applications for Polestar Careers. Don't miss out!"
+  },
+  {
+   "t": "Apply for a career at Polestar",
+   "u": "https://www.polestar.com/global/about/careers/",
+   "s": "Explore and apply for jobs at Polestar. Join a global team dedicated to improving the society we live in through sustainable, electric mobility."
+  },
+  {
+   "t": "Current job openings - Pole Star Global",
+   "u": "https://careers.polestarglobal.com/jobs",
+   "s": "3 jobs Operations Officer - Maritime Intelligence Operations · UK - Poole · Onsite Operations Support - Maritime Intelligence & Crisis Support"
+  },
+  {
+   "t": "Careers - Pole Star Global",
+   "u": "https://www.polestarglobal.com/careers/",
+   "s": "Careers Explore unchartered waters Join the only company in the world that seamlessly connects governments, defense, financial markets, physical commodity trade"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://polestar.wd3.myworkdayjobs.com/Careers",
+  "title": "",
+  "status": 200,
+  "bytes": 57,
+  "markers": [],
+  "jsonld_jobs": 0,
+  "spec": "workday:Careers",
+  "score": 17,
+  "snippet": "Polestar - the guiding star. We are an electric performance brand, determined to improve the society we live in. Our focus is on uncompromised design and techno",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
+}
