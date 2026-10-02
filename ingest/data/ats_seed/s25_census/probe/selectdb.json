@@ -1,0 +1,29 @@
+{
+ "brand": "SelectDB",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:59:37.024Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "selectdb",
+   "spec": "feishuhire:selectdb",
+   "title": "加入Flywheels"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:selectdb",
+  "platform": "feishu",
+  "title": "加入Flywheels",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入Flywheels",
+  "brand": "SelectDB",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

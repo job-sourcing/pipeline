@@ -1,0 +1,157 @@
+{
+ "brand": "Torras",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:11:45.182Z",
+ "candidates": [
+  {
+   "url": "https://torrasproperties.com/job-openings/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5706,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "© Copyright 1956 - 2026 Torras Properties, Inc. | Website designed by Golden Isles Design | All Rights Reserved",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://chocolatestorras.com/en/apply-to-chocolates-torras/",
+   "title": "Apply to Chocolates Torras - Torras",
+   "status": 200,
+   "bytes": 163171,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Send us your resume and we will take it into account in the next selection process.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.torras.cn/join",
+   "title": "加入我们_图拉斯TORRAS",
+   "status": 200,
+   "bytes": 98039,
+   "markers": [
+    "feishu"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "01年轻也可以当将军: 我们不论资排辈，只要有能力，新人也能被委以重任。 02更完整的业务视角: 我们鼓励员工多走一步，员工有更多机会了解并参与到业务的上下游链条中。 03更有挑战的工作内容: 通过做难但有价值的事情,练就真正的实战能力。",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Apply to Chocolates Torras - Torras",
+   "u": "https://chocolatestorras.com/en/apply-to-chocolates-torras/",
+   "s": "Send us your resume and we will take it into account in the next selection process."
+  },
+  {
+   "t": "加入我们_图拉斯TORRAS",
+   "u": "https://www.torras.cn/join",
+   "s": "01年轻也可以当将军: 我们不论资排辈，只要有能力，新人也能被委以重任。 02更完整的业务视角: 我们鼓励员工多走一步，员工有更多机会了解并参与到业务的上下游链条中。 03更有挑战的工作内容: 通过做难但有价值的事情,练就真正的实战能力。"
+  },
+  {
+   "t": "Torras Life Jobs in United States (50 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/torras-life-jobs",
+   "s": "Today's top 50 Torras Life jobs in United States. Leverage your professional network, and get hired. New Torras Life jobs added daily."
+  },
+  {
+   "t": "TORRAS - LinkedIn",
+   "u": "https://www.linkedin.com/company/torraslife",
+   "s": "TORRAS focus on keeping things simple, providing people with ultra-sleek design and quality mobile digital products. About us TORRAS, born in 2012, is a trailbl"
+  },
+  {
+   "t": "Walmart Careers",
+   "u": "https://careers.walmart.com/us/en/home",
+   "s": "Walmart and Sam's Club offer diverse career opportunities across stores & clubs, supply chain, healthcare, corporate, and technology, empowering associates to g"
+  },
+  {
+   "t": "Careers at Torras | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/torras",
+   "s": "TORRAS is a global technology company specializing in innovative consumer electronics and accessories, with a focus on creating premium, user-centric products. "
+  },
+  {
+   "t": "Phone Cases & Phone Cover & Cell Phone Cases | TORRAS",
+   "u": "https://torraslife.com/",
+   "s": "Buying high-quality phone cases from our online store, they are meticulously crafted with the finest materials to prevent falls and scratches. Limited-time purc"
+  },
+  {
+   "t": "Influencer Recruitment - TORRAS",
+   "u": "https://torraslife.com/pages/influencer-recruitment",
+   "s": "Learn about TORRAS Influencer Recruitment, with brand updates, community details and service information gathered in one place before you buy or need support."
+  },
+  {
+   "t": "加入我们_图拉斯TORRAS",
+   "u": "https://www.torras.cn/join",
+   "s": "01年轻也可以当将军: 我们不论资排辈，只要有能力，新人也能被委以重任。 02更完整的业务视角: 我们鼓励员工多走一步，员工有更多机会了解并参与到业务的上下游链条中。 03更有挑战的工作内容: 通过做难但有价值的事情,练就真正的实战能力。"
+  },
+  {
+   "t": "Torras Properties Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/torras-properties-jobs",
+   "s": "Today's top Torras Properties jobs in United States. Leverage your professional network, and get hired. New Torras Properties jobs added daily."
+  },
+  {
+   "t": "Careers at Torras | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/torras",
+   "s": "Job openings at Torras. TORRAS is a global technology company specializing in innovative consumer electronics and accessories, with a focus on creating..."
+  },
+  {
+   "t": "Influencer Recruitment - TORRAS",
+   "u": "https://torraslife.com/pages/influencer-recruitment",
+   "s": "Learn about TORRAS Influencer Recruitment, with brand updates, community details and service information gathered in one place before you buy or need support."
+  },
+  {
+   "t": "TORRAS hiring marketing manager in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/view/marketing-manager-at-torras-4382231982",
+   "s": "Posted 12:49:26 PM. 💡About the Role We are a fast-growing Chinese consumer electronics brand expanding aggressively in…See this and similar jobs on LinkedIn."
+  },
+  {
+   "t": "Job Openings - Torras Properties",
+   "u": "https://torrasproperties.com/job-openings/",
+   "s": "© Copyright 1956 - 2026 Torras Properties, Inc. | Website designed by Golden Isles Design | All Rights Reserved"
+  },
+  {
+   "t": "Apply to Chocolates Torras - Torras",
+   "u": "https://chocolatestorras.com/en/apply-to-chocolates-torras/",
+   "s": "Send us your resume and we will take it into account in the next selection process."
+  },
+  {
+   "t": "Ignacio Torras - Forbes",
+   "u": "https://www.forbes.com/profile/ignacio-torras/",
+   "s": "Ignacio Torras is #123 on Forbes' 2026 America's Richest Immigrants list. Read more about Ignacio Torras, their experience, their asset summary, and more here."
+  },
+  {
+   "t": "Torras Properties Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Torras-Properties",
+   "s": "Find out what works well at Torras Properties from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Com"
+  },
+  {
+   "t": "Job Openings - Torras Properties",
+   "u": "https://torrasproperties.com/job-openings/",
+   "s": "© Copyright 1956 - 2026 Torras Properties, Inc. | Website designed by Golden Isles Design | All Rights Reserved"
+  },
+  {
+   "t": "加入我们_图拉斯TORRAS",
+   "u": "https://www.torras.cn/join",
+   "s": "01年轻也可以当将军: 我们不论资排辈，只要有能力，新人也能被委以重任。 02更完整的业务视角: 我们鼓励员工多走一步，员工有更多机会了解并参与到业务的上下游链条中。 03更有挑战的工作内容: 通过做难但有价值的事情,练就真正的实战能力。"
+  },
+  {
+   "t": "Careers at Torras | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/torras",
+   "s": "Job openings at Torras. TORRAS is a global technology company specializing in innovative consumer electronics and accessories, with a focus on creating..."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.torras.cn/join",
+  "platform": "feishu",
+  "title": "加入我们_图拉斯TORRAS"
+ },
+ "verdict": "marker_surface"
+}

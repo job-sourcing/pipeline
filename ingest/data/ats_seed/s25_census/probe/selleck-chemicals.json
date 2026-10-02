@@ -1,0 +1,154 @@
+{
+ "brand": "Selleck Chemicals",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:59:46.593Z",
+ "candidates": [
+  {
+   "url": "https://www.selleckchem.com/career.html",
+   "title": "Careers | Selleckchem.com",
+   "status": 200,
+   "bytes": 34082,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "More Than Just a Job—A Mission. At Selleckchem, we don't just sell chemical reagents; we provide the essential tools that drive scientific breakthroughs. Whethe",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.selleckchem.com/career/us",
+   "title": "Careers | Selleckchem.com",
+   "status": 200,
+   "bytes": 35003,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Requirements: Responsible for the sales of biological reagents in designated territory. Sales Representatives are required to visit both potential and existing ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://selleck.cn/career.html",
+   "title": "人才招聘 | selleck.cn",
+   "status": 200,
+   "bytes": 79245,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "人才招聘 Selleck总公司Selleck Chemicals LLC 2006年成立于美国德克萨斯州休斯敦，作为集研发、生产、销售于一体的全球领先的抑制剂公司，Selleck一直专注于生命科学领域高端试剂的开发与研究，为客户提供用于药物研发的高品质生命科学试剂，产品包括小分子激酶抑制剂、专业的高通量筛选抑制剂分子 ",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | Selleckchem.com",
+   "u": "https://www.selleckchem.com/career.html",
+   "s": "More Than Just a Job—A Mission. At Selleckchem, we don't just sell chemical reagents; we provide the essential tools that drive scientific breakthroughs. Whethe"
+  },
+  {
+   "t": "Careers | Selleckchem.com",
+   "u": "https://www.selleckchem.com/career/us",
+   "s": "Requirements: Responsible for the sales of biological reagents in designated territory. Sales Representatives are required to visit both potential and existing "
+  },
+  {
+   "t": "Selleck Chemicals LLC Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Selleck-Chemicals-LLC",
+   "s": "Selleck Chemicals is a global leader in small molecule inhibitors and biochemicals, supporting the world's top pharmaceutical companies, universities, and resea"
+  },
+  {
+   "t": "Selleck Chemicals Jobs & Careers - 16 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Selleck-Chemicals-Jobs-E1285009.htm",
+   "s": "Search job openings at Selleck Chemicals. 16 Selleck Chemicals jobs including salaries, ratings, and reviews, posted by Selleck Chemicals employees."
+  },
+  {
+   "t": "人才招聘 | selleck.cn",
+   "u": "https://selleck.cn/career.html",
+   "s": "人才招聘 Selleck总公司Selleck Chemicals LLC 2006年成立于美国德克萨斯州休斯敦，作为集研发、生产、销售于一体的全球领先的抑制剂公司，Selleck一直专注于生命科学领域高端试剂的开发与研究，为客户提供用于药物研发的高品质生命科学试剂，产品包括小分子激酶抑制剂、专业的高通量筛选抑制剂分子 "
+  },
+  {
+   "t": "Careers | Selleckchem.com",
+   "u": "https://www.selleckchem.com/career/uk",
+   "s": "What is Selleck quality control protocol? How to prove Selleck quality? Is it possible to find information like concentration and incubation time? How to help c"
+  },
+  {
+   "t": "Selleck Chemicals is your Trusted Supplier",
+   "u": "https://www.selleckchem.com/",
+   "s": "Selleck Chemicals, the leading supplier of high-quality biological reagents including Inhibitors, Antibodies, Proteins and kits for life science."
+  },
+  {
+   "t": "Selleck Chemicals Llc Jobs in Worldwide (18,000+ Open Roles) - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/selleck-chemicals-llc-jobs-worldwide",
+   "s": "Today's top 18,000+ Selleck Chemicals Llc jobs in Worldwide. Leverage your professional network, and get hired. New Selleck Chemicals Llc jobs added daily."
+  },
+  {
+   "t": "Careers | Selleckchem.com",
+   "u": "https://www.selleckchem.com/career.html",
+   "s": "More Than Just a Job—A Mission. At Selleckchem, we don't just sell chemical reagents; we provide the essential tools that drive scientific breakthroughs. Whethe"
+  },
+  {
+   "t": "Careers | Selleckchem.com",
+   "u": "https://www.selleckchem.com/career/us",
+   "s": "Q: What can I achieve from this job? A: This is a great opportunity for candidates who have no life-science background and want to enter the biochemistry indust"
+  },
+  {
+   "t": "Selleck Chemicals LLC Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Selleck-Chemicals-LLC",
+   "s": "Find out what works well at Selleck Chemicals LLC from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+  },
+  {
+   "t": "Selleck Chemicals Jobs & Careers - 16 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Selleck-Chemicals-Jobs-E1285009.htm",
+   "s": "Search job openings at Selleck Chemicals. 16 Selleck Chemicals jobs including salaries, ratings, and reviews, posted by Selleck Chemicals employees."
+  },
+  {
+   "t": "Selleck Chemicals LLC Careers and Employment | Indeed.com",
+   "u": "https://ca.indeed.com/cmp/Selleck-Chemicals-LLC",
+   "s": "Selleck Chemicals is a global leader in small molecule inhibitors and biochemicals, supporting the world's top pharmaceutical companies, universities, and resea"
+  },
+  {
+   "t": "Selleck Chemicals LLC Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Selleck%20Chemicals%20LLC",
+   "s": "Read Selleck Chemicals LLC reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at Selle"
+  },
+  {
+   "t": "人才招聘 | selleck.cn",
+   "u": "https://selleck.cn/career.html",
+   "s": "人才招聘 Selleck总公司Selleck Chemicals LLC 2006年成立于美国德克萨斯州休斯敦，作为集研发、生产、销售于一体的全球领先的抑制剂公司，Selleck一直专注于生命科学领域高端试剂的开发与研究，为客户提供用于药物研发的高品质生命科学试剂，产品包括小分子激酶抑制剂、专业的高通量筛选抑制剂分子 "
+  },
+  {
+   "t": "Careers | Selleckchem.com",
+   "u": "https://www.selleckchem.com/career/de",
+   "s": "What is Selleck quality control protocol? How to prove Selleck quality? Is it possible to find information like concentration and incubation time? How to help c"
+  },
+  {
+   "t": "Careers | Selleckchem.com",
+   "u": "https://www.selleckchem.com/career.html",
+   "s": "More Than Just a Job—A Mission. At Selleckchem, we don't just sell chemical reagents; we provide the essential tools that drive scientific breakthroughs. Whethe"
+  },
+  {
+   "t": "Careers | Selleckchem.com",
+   "u": "https://www.selleckchem.com/career/us",
+   "s": "A: Our clients mainly are in universities and institutes. We will provide the portfolios of clients before you join us to help you start your job. Sales represe"
+  },
+  {
+   "t": "Selleck Chemicals LLC Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Selleck-Chemicals-LLC",
+   "s": "Find out what works well at Selleck Chemicals LLC from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights."
+  },
+  {
+   "t": "Selleck Chemicals Jobs & Careers - 16 Open Positions",
+   "u": "https://www.glassdoor.com/Jobs/Selleck-Chemicals-Jobs-E1285009.htm",
+   "s": "Search job openings at Selleck Chemicals. 16 Selleck Chemicals jobs including salaries, ratings, and reviews, posted by Selleck Chemicals employees."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.selleckchem.com/career.html",
+  "platform": "custom",
+  "title": "Careers | Selleckchem.com"
+ },
+ "verdict": "custom_surface"
+}

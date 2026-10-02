@@ -1,0 +1,149 @@
+{
+ "brand": "Timeplus",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:10:11.527Z",
+ "candidates": [
+  {
+   "url": "https://www.timeplus.com/",
+   "title": "",
+   "status": 200,
+   "bytes": 2440348,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Timeplus unifies real-time streaming and historical data in a single binary, implementing mission-critical workloads to act on fast changing events and insights",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.timeplus.com/our-team",
+   "title": "",
+   "status": 200,
+   "bytes": 1154108,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Meet our leadership team. Headquartered in Santa Clara, California, we are developing an innovative streaming analytics platform.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://timepluspayroll.com/join-us/",
+   "title": "",
+   "status": 200,
+   "bytes": 27357,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "We would like to show you a description here but the site won't allow us.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - eplus.com",
+   "u": "https://www.eplus.com/who-we-are/careers",
+   "s": "Explore career opportunities at ePlus. Learn about our culture, benefits, and how you can grow your career with us."
+  },
+  {
+   "t": "Timeplus - LinkedIn",
+   "u": "https://www.linkedin.com/company/timeplusinc",
+   "s": "Timeplus | 3,524 followers on LinkedIn. One Unified Real-Time Pipeline for Analytics, Telemetry, and AI | Founded in 2021 and headquartered in Santa Clara, Cali"
+  },
+  {
+   "t": "Timeplus | Unified Real-Time Pipelines",
+   "u": "https://www.timeplus.com/",
+   "s": "Timeplus unifies real-time streaming and historical data in a single binary, implementing mission-critical workloads to act on fast changing events and insights"
+  },
+  {
+   "t": "Tires Plus Jobs | Tires Plus",
+   "u": "https://www.tiresplus.com/tiresplusjobs/",
+   "s": "Take the wheel of your career when you join the team at Tires Plus. We offer benefits, competitive pay, and more, as well as opportunities for customer service "
+  },
+  {
+   "t": "TimePlus Payroll Services Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Timeplus-Payroll-Services",
+   "s": "Find out what works well at TimePlus Payroll Services from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insig"
+  },
+  {
+   "t": "Our Team - Timeplus",
+   "u": "https://www.timeplus.com/our-team",
+   "s": "Meet our leadership team. Headquartered in Santa Clara, California, we are developing an innovative streaming analytics platform."
+  },
+  {
+   "t": "21,000+ Timeplus jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/timeplus-jobs-worldwide",
+   "s": "Today's top 21,000+ Timeplus jobs in Worldwide. Leverage your professional network, and get hired. New Timeplus jobs added daily."
+  },
+  {
+   "t": "Timeplus Payroll Calculator Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-timeplus-payroll-calculator-jobs.html",
+   "s": "Browse 3,755 Timeplus Payroll Calculator jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Timeplus | Unified Real-Time Pipelines",
+   "u": "https://www.timeplus.com/",
+   "s": "Timeplus unifies real-time streaming and historical data in a single binary, implementing mission-critical workloads to act on fast changing events and insights"
+  },
+  {
+   "t": "TimePlus Payroll Services Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Timeplus-Payroll-Services",
+   "s": "Find out what works well at TimePlus Payroll Services from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insig"
+  },
+  {
+   "t": "Timeplus - LinkedIn",
+   "u": "https://www.linkedin.com/company/timeplusinc",
+   "s": "Founded in 2021 and headquartered in Santa Clara, California, Timeplus is a pioneering technology company specializing in real-time analytics and stream process"
+  },
+  {
+   "t": "21,000+ Timeplus jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/timeplus-jobs-worldwide",
+   "s": "Today's top 21,000+ Timeplus jobs in Worldwide. Leverage your professional network, and get hired. New Timeplus jobs added daily."
+  },
+  {
+   "t": "Tires Plus Jobs | Tires Plus",
+   "u": "https://www.tiresplus.com/tiresplusjobs/",
+   "s": "Tires Plus is committed to serving society with superior quality. We're always looking for talented innovators to push our service standards, designs, and techn"
+  },
+  {
+   "t": "Timeplus Payroll",
+   "u": "https://timepluspayroll.com/join-us/",
+   "s": "We would like to show you a description here but the site won't allow us."
+  },
+  {
+   "t": "Our Team - Timeplus",
+   "u": "https://www.timeplus.com/our-team",
+   "s": "Meet our leadership team. Headquartered in Santa Clara, California, we are developing an innovative streaming analytics platform."
+  },
+  {
+   "t": "Tempsplus",
+   "u": "https://tempsplus.co/",
+   "s": "TempsPlus connects your business with quality local talent in minutes. Reliable, flexible, and fully vetted professionals for any shift."
+  },
+  {
+   "t": "TimePlus Payroll Services Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Timeplus-Payroll-Services",
+   "s": "Find out what works well at TimePlus Payroll Services from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insig"
+  },
+  {
+   "t": "Careers - eplus.com",
+   "u": "https://www.eplus.com/who-we-are/careers",
+   "s": "Explore career opportunities at ePlus. Learn about our culture, benefits, and how you can grow your career with us."
+  },
+  {
+   "t": "Timeplus - LinkedIn",
+   "u": "https://www.linkedin.com/company/timeplusinc",
+   "s": "Founded in 2021 and headquartered in Santa Clara, California, Timeplus is a pioneering technology company specializing in real-time analytics and stream process"
+  },
+  {
+   "t": "Time Plus Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Time-Plus-jobs.html",
+   "s": "886,125 Time Plus jobs available on Indeed.com. Apply to Truck Driver, Production Specialist, Laborer and more!"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

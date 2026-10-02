@@ -1,0 +1,149 @@
+{
+ "brand": "TDengine",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:07:01.629Z",
+ "candidates": [
+  {
+   "url": "https://www.foundrole.com/companies/tdengine",
+   "title": "Page removed — FoundRole",
+   "status": 410,
+   "bytes": 111984,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "TDengine is a venture-backed software company headquartered in Los Gatos, California, providing an AI-powered time-series database and data historian for indust",
+   "backend": "direct"
+  },
+  {
+   "url": "https://tdengine.com/",
+   "title": "TDengine | Modern Alternative to Traditional Data Historians",
+   "status": 200,
+   "bytes": 379592,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "The best alternative to traditional data historians. TDengine combines time-series storage, asset modeling, and AI agents. Free forever up to 5,000 tags.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.taosdata.com/careers",
+   "title": "招贤纳士 - TDengine | 涛思数据",
+   "status": 200,
+   "bytes": 200648,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "TDengine 是 AI 原生的工业数据平台，包含两个产品：TDengine TSDB 是一款高性能、分布式的时序数据库（Time Series Database），内置数据汇聚、数据存储、查询计算引擎与高级分析；TDengine IDMP 是一款AI原生工业数据管理平台，包含工业本体、原子应用、模型训练与管理 ..",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "TDengine Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Tdengine",
+   "s": "Find out what works well at TDengine from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "招贤纳士 - TDengine | 涛思数据 - TAOSDATA",
+   "u": "https://www.taosdata.com/careers",
+   "s": "TDengine 是 AI 原生的工业数据平台，包含两个产品：TDengine TSDB 是一款高性能、分布式的时序数据库（Time Series Database），内置数据汇聚、数据存储、查询计算引擎与高级分析；TDengine IDMP 是一款AI原生工业数据管理平台，包含工业本体、原子应用、模型训练与管理 .."
+  },
+  {
+   "t": "TDengine Jobs & Careers — Time-Series Database & Industrial IoT",
+   "u": "https://www.foundrole.com/companies/tdengine",
+   "s": "TDengine is a venture-backed software company headquartered in Los Gatos, California, providing an AI-powered time-series database and data historian for indust"
+  },
+  {
+   "t": "11,000+ Tdengine jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tdengine-jobs",
+   "s": "Today's top 11,000+ Tdengine jobs in United States. Leverage your professional network, and get hired. New Tdengine jobs added daily."
+  },
+  {
+   "t": "TD Careers - Join a collaborative workplace that values you for who you ...",
+   "u": "https://careers.td.com/",
+   "s": "TD is a place to work and to grow. Learn about TD job opportunities and take the first step in building a fulfilling career in a supportive workplace."
+  },
+  {
+   "t": "TDengine | Modern Alternative to Traditional Data Historians",
+   "u": "https://tdengine.com/",
+   "s": "The best alternative to traditional data historians. TDengine combines time-series storage, asset modeling, and AI agents. Free forever up to 5,000 tags."
+  },
+  {
+   "t": "TDengine Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/tdengine/jobs",
+   "s": "Explore jobs and careers at TDengine. TDengine is currently hiring for a range of positions."
+  },
+  {
+   "t": "TDengine Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Tdengine",
+   "s": "Read TDengine reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at TDengine, then bro"
+  },
+  {
+   "t": "TDengine Jobs & Careers — Time-Series Database & Industrial IoT",
+   "u": "https://www.foundrole.com/companies/tdengine",
+   "s": "Explore TDengine careers in time-series database software, industrial IoT, and AI-powered data management. Browse engineering and product roles at this VC-backe"
+  },
+  {
+   "t": "TDengine Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Tdengine",
+   "s": "Find out what works well at TDengine from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "招贤纳士 - TDengine | 涛思数据 - TAOSDATA",
+   "u": "https://www.taosdata.com/careers",
+   "s": "公司文化 涛思数据团队直率、真诚、专注、注重细节、自我驱动而且目标导向。团队对世界始终保持好奇心，喜欢尝试、折腾，从不停止从失败中学习。拥抱开源，相信合作的力量。 我们的吸引力： 待遇超过华为、阿里和腾讯，更有丰厚期权等你拿； 获GGV和红杉中国等近 7000 万美元投资； 弹性 ..."
+  },
+  {
+   "t": "11,000+ Tdengine jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tdengine-jobs",
+   "s": "Today's top 11,000+ Tdengine jobs in United States. Leverage your professional network, and get hired. New Tdengine jobs added daily."
+  },
+  {
+   "t": "TDengine Employment and Reviews | SimplyHired",
+   "u": "https://www.simplyhired.com/browse-jobs/companies/Tdengine",
+   "s": "Read TDengine reviews, including information from current and former employees on salaries, benefits, and more. Find out what life is like at TDengine, then bro"
+  },
+  {
+   "t": "TDengine - LinkedIn",
+   "u": "https://na.linkedin.com/company/tdengine",
+   "s": "TDengine® is a modern alternative to traditional data historian that combines a high-performance time-series database with an AI-native industrial data manageme"
+  },
+  {
+   "t": "Browse Tdengine Jobs - Find Jobs Hiring Now - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/browse/companies/t/tdengine",
+   "s": "Find job openings hiring now - browse Tdengine jobs, salaries and advices on ZipRecruiter"
+  },
+  {
+   "t": "20,000+ Tdengine jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tdengine-jobs-worldwide",
+   "s": "Today's top 20,000+ Tdengine jobs in Worldwide. Leverage your professional network, and get hired. New Tdengine jobs added daily."
+  },
+  {
+   "t": "TDengine Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Tdengine",
+   "s": "Find out what works well at TDengine from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay "
+  },
+  {
+   "t": "招贤纳士 - TDengine | 涛思数据 - TAOSDATA",
+   "u": "https://www.taosdata.com/careers",
+   "s": "公司文化 涛思数据团队直率、真诚、专注、注重细节、自我驱动而且目标导向。团队对世界始终保持好奇心，喜欢尝试、折腾，从不停止从失败中学习。拥抱开源，相信合作的力量。 我们的吸引力： 待遇超过华为、阿里和腾讯，更有丰厚期权等你拿； 获GGV和红杉中国等近 7000 万美元投资； 弹性 ..."
+  },
+  {
+   "t": "TDengine Jobs & Careers — Time-Series Database & Industrial IoT",
+   "u": "https://www.foundrole.com/companies/tdengine",
+   "s": "Explore TDengine careers in time-series database software, industrial IoT, and AI-powered data management. Browse engineering and product roles at this VC-backe"
+  },
+  {
+   "t": "11,000+ Tdengine jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tdengine-jobs",
+   "s": "Today's top 11,000+ Tdengine jobs in United States. Leverage your professional network, and get hired. New Tdengine jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

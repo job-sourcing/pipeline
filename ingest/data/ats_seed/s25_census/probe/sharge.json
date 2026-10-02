@@ -1,0 +1,29 @@
+{
+ "brand": "Sharge",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:01:25.026Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "sharge",
+   "spec": "feishuhire:sharge",
+   "title": "加入闪极科技"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:sharge",
+  "platform": "feishu",
+  "title": "加入闪极科技",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入闪极科技",
+  "brand": "Sharge",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

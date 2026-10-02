@@ -1,0 +1,160 @@
+{
+ "brand": "Sharkmob",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:01:41.059Z",
+ "candidates": [
+  {
+   "url": "https://career.sharkmob.com/jobs",
+   "title": "Jobs list - Sharkmob",
+   "status": 200,
+   "bytes": 71739,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Career site Start Jobs Malmö, Sweden Recruitment process Perks Company site Data & privacy Malmö, Sweden sharkmob.com Employee login",
+   "backend": "direct"
+  },
+  {
+   "url": "https://career.sharkmob.com/jobs?preview=true",
+   "title": "Jobs list - Sharkmob",
+   "status": 200,
+   "bytes": 66192,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Sharkmob makes multiplayer games with a focus on the player and the community. Many of us come from a PC and console background and we always push for AAA produ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careerpanels.com/company-career-portals/company/sharkmob",
+   "title": "Sharkmob Careers, Jobs and Official Career Portal | CareerPanels",
+   "status": 200,
+   "bytes": 75267,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore Sharkmob careers in Creative, Media & Content, Content Writer, Copywriter, Editor, Video Editor and other job families. Visit the official Sharkmob care",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Jobs list - Sharkmob",
+   "u": "https://career.sharkmob.com/jobs",
+   "s": "Career site Start Jobs Malmö, Sweden Recruitment process Perks Company site Data & privacy Malmö, Sweden sharkmob.com Employee login"
+  },
+  {
+   "t": "Jobs list - Sharkmob",
+   "u": "https://career.sharkmob.com/jobs?preview=true",
+   "s": "Sharkmob makes multiplayer games with a focus on the player and the community. Many of us come from a PC and console background and we always push for AAA produ"
+  },
+  {
+   "t": "Sharkmob Careers, Jobs and Official Career Portal | CareerPanels",
+   "u": "https://careerpanels.com/company-career-portals/company/sharkmob",
+   "s": "Explore Sharkmob careers in Creative, Media & Content, Content Writer, Copywriter, Editor, Video Editor and other job families. Visit the official Sharkmob care"
+  },
+  {
+   "t": "Sharkmob | Game Developer",
+   "u": "https://www.sharkmob.com/",
+   "s": "Sharkmob: Have fun while doing what you love. Feel ownership of your work. Creative elbow room. Awesome gaming experiences. That's what it's all about. Develope"
+  },
+  {
+   "t": "Sharkmob - LinkedIn",
+   "u": "https://www.linkedin.com/company/sharkmob",
+   "s": "Sharkmob | 25,180 followers on LinkedIn. We believe making games should be fun. Do you agree? Find out more on career.sharkmob.com | Sharkmob was founded in 201"
+  },
+  {
+   "t": "Sharkmob Jobs in Worldwide (8,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sharkmob-jobs-worldwide",
+   "s": "Today's top 8,000+ Sharkmob jobs in Worldwide. Leverage your professional network, and get hired. New Sharkmob jobs added daily."
+  },
+  {
+   "t": "Sharkmob Careers — 5 Open Jobs & Hiring Trends (Sep 2026)",
+   "u": "https://jobs.christran.gg/studios/sharkmob",
+   "s": "5 open jobs at Sharkmob right now — business & operations, engineering, art & animation. 13-week hiring trend. Updated hourly."
+  },
+  {
+   "t": "4 Sharkmob Jobs & Careers (September 2026) · DevQuest",
+   "u": "https://devquest.gg/sharkmob-jobs",
+   "s": "Sharkmob Jobs & Careers, updated hourly. 4 open Sharkmob roles across 1 studios, pulled from studio career pages with salary shown when published and ghost-job "
+  },
+  {
+   "t": "Jobs list - Sharkmob",
+   "u": "https://career.sharkmob.com/jobs",
+   "s": "Sharkmob makes multiplayer games with a focus on the player and the community. Many of us come from a PC and console background and we always push for AAA produ"
+  },
+  {
+   "t": "Find your new job in game development! - Sharkmob",
+   "u": "https://career.sharkmob.com/?preview=true",
+   "s": "Have a look at our career options. Sharkmob has multiple jobs open at our studios in Malmö and London. Find a position that suits you."
+  },
+  {
+   "t": "Sharkmob Careers, Jobs and Official Career Portal | CareerPanels",
+   "u": "https://careerpanels.com/company-career-portals/company/sharkmob",
+   "s": "Explore Sharkmob careers in Creative, Media & Content, Content Writer, Copywriter, Editor, Video Editor and other job families. Visit the official Sharkmob care"
+  },
+  {
+   "t": "Sharkmob Jobs - GameJobs.co",
+   "u": "https://gamejobs.co/search?c=Sharkmob",
+   "s": "7 jobs at Sharkmob. Apply to Senior Data Scientist, Release Manager and more."
+  },
+  {
+   "t": "Sharkmob | Game Developer",
+   "u": "https://www.sharkmob.com/",
+   "s": "Sharkmob: Have fun while doing what you love. Feel ownership of your work. Creative elbow room. Awesome gaming experiences. That's what it's all about. Develope"
+  },
+  {
+   "t": "4 Sharkmob Jobs & Careers (September 2026) · DevQuest",
+   "u": "https://devquest.gg/sharkmob-jobs",
+   "s": "Sharkmob Jobs & Careers, updated hourly. 4 open Sharkmob roles across 1 studios, pulled from studio career pages with salary shown when published and ghost-job "
+  },
+  {
+   "t": "Sharkmob Jobs in Worldwide (8,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sharkmob-jobs-worldwide",
+   "s": "Today's top 8,000+ Sharkmob jobs in Worldwide. Leverage your professional network, and get hired. New Sharkmob jobs added daily."
+  },
+  {
+   "t": "Sharkmob Careers — 5 Open Jobs & Hiring Trends (Sep 2026)",
+   "u": "https://jobs.christran.gg/studios/sharkmob",
+   "s": "5 open jobs at Sharkmob right now — business & operations, engineering, art & animation. 13-week hiring trend. Updated hourly."
+  },
+  {
+   "t": "Jobs list - Sharkmob",
+   "u": "https://career.sharkmob.com/jobs",
+   "s": "Career site Start Jobs Malmö, Sweden Recruitment process Perks Company site Data & privacy Malmö, Sweden sharkmob.com Employee login"
+  },
+  {
+   "t": "Jobs list - Sharkmob",
+   "u": "https://career.sharkmob.com/jobs?preview=true",
+   "s": "Job openings at Sharkmob JOIN THE CREW Fun-loving professionals with team spirit wanted"
+  },
+  {
+   "t": "Sharkmob Careers, Jobs and Official Career Portal | CareerPanels",
+   "u": "https://careerpanels.com/company-career-portals/company/sharkmob",
+   "s": "Explore Sharkmob careers in Creative, Media & Content, Content Writer, Copywriter, Editor, Video Editor and other job families. Visit the official Sharkmob care"
+  },
+  {
+   "t": "Sharkmob Jobs - GameJobs.co",
+   "u": "https://gamejobs.co/search?c=Sharkmob",
+   "s": "7 jobs at Sharkmob. Apply to Senior Data Scientist, Release Manager and more."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://career.sharkmob.com/jobs",
+  "platform": "teamtailor",
+  "title": "Jobs list - Sharkmob"
+ },
+ "verdict": "marker_surface"
+}

@@ -1,0 +1,30 @@
+{
+ "brand": "Sany America",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:58:58.729Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "greenhouse",
+   "slug": "sany",
+   "spec": "greenhouse:sany",
+   "title": "Jobs at Sany, An Equipmentshare Company",
+   "jobs_hint": 3
+  }
+ ],
+ "best": {
+  "spec": "greenhouse:sany",
+  "platform": "greenhouse",
+  "title": "Jobs at Sany, An Equipmentshare Company",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Sany, An Equipmentshare Company",
+  "brand": "Sany America",
+  "ok": false,
+  "n": 1
+ },
+ "verdict": "dict_collision"
+}

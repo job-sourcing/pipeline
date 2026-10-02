@@ -1,0 +1,16 @@
+{
+ "brand": "Supercell",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:06:10.463Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://supercell.com/en/careers/",
+  "platform": "custom",
+  "title": "Careers × Supercell",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

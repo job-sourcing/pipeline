@@ -1,0 +1,154 @@
+{
+ "brand": "Temu",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:08:03.174Z",
+ "candidates": [
+  {
+   "url": "https://www.temu.com/mx-en/careers.html",
+   "title": "Temu | Careers",
+   "status": 200,
+   "bytes": 815507,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers with Temu Join Temu and be part of a global team that's transforming e-commerce. Since our founding in Boston in 2022, we've connected millions of consu",
+   "backend": "direct"
+  },
+  {
+   "url": "https://eworldjobs.com/employer/temu",
+   "title": "Temu Jobs | Temu Careers | Information Technology, Internal Communications in USA",
+   "status": 200,
+   "bytes": 99313,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover Temu jobs and careers, including remote positions in Information Technology, Internal Communications at USA. Join Temu today!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://temus.com/careers/",
+   "title": "Join Temus - Exciting Job Opportunities for Digital Trailblazers",
+   "status": 200,
+   "bytes": 38570,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore career opportunities at Temus. Join our dynamic team driving digital transformation and innovation. Discover how you can contribute to Singapore's digit",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Temu | Careers",
+   "u": "https://www.temu.com/mx-en/careers.html",
+   "s": "Careers with Temu Join Temu and be part of a global team that's transforming e-commerce. Since our founding in Boston in 2022, we've connected millions of consu"
+  },
+  {
+   "t": "Careers with Temu",
+   "u": "https://static-cross.kwcdn.com/careers.html",
+   "s": "Careers with Temu Join Temu and be part of a team that's transforming e-commerce."
+  },
+  {
+   "t": "Temu: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/temuapp/jobs/",
+   "s": "Temu Technology, Information and Internet Boston, Massachusetts 521,977 followers Temu is an e-commerce company that offers a wide selection of quality merchand"
+  },
+  {
+   "t": "118 Temu jobs in Worldwide - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/temu-jobs-worldwide?f_C=90534028",
+   "s": "Today's top 118 Temu jobs in Worldwide. Leverage your professional network, and get hired. New Temu jobs added daily."
+  },
+  {
+   "t": "TEMU Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Temu",
+   "s": "Find out what works well at TEMU from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for "
+  },
+  {
+   "t": "Now Hiring: 50 Temu Jobs | Indeed",
+   "u": "https://www.indeed.com/q-%22temu%22-jobs.html",
+   "s": "Browse 52 Temu jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Temu: Jobs | LinkedIn",
+   "u": "https://ie.linkedin.com/company/temuapp/jobs",
+   "s": "Temu Technology, Information and Internet Boston, Massachusetts 521,796 followers Temu is an e-commerce company that offers a wide selection of quality merchand"
+  },
+  {
+   "t": "Temu Jobs | Temu Careers | Information Technology, Internal ...",
+   "u": "https://eworldjobs.com/employer/temu",
+   "s": "Discover Temu jobs and careers, including remote positions in Information Technology, Internal Communications at USA. Join Temu today!"
+  },
+  {
+   "t": "Temu | Careers",
+   "u": "https://www.temu.com/mx-en/careers.html",
+   "s": "Our mission is to empower better living by making affordable products accessible to all. If you're passionate about innovation and creating opportunities that h"
+  },
+  {
+   "t": "Temu: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/temuapp/jobs/",
+   "s": "Temu Technology, Information and Internet Boston, Massachusetts 521,977 followers Temu is an e-commerce company that offers a wide selection of quality merchand"
+  },
+  {
+   "t": "Now Hiring: 50 Temu Jobs | Indeed",
+   "u": "https://www.indeed.com/q-%22temu%22-jobs.html",
+   "s": "Browse 52 Temu jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers with Temu",
+   "u": "https://static-cross.kwcdn.com/careers.html",
+   "s": "Our mission is to empower better living by making affordable products accessible to all. If you're passionate about innovation and creating opportunities that h"
+  },
+  {
+   "t": "Temu Company Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-temu-company-jobs.html",
+   "s": "2 Temu Company jobs available on Indeed.com. Apply to Customer Service Representative and more!"
+  },
+  {
+   "t": "41 Temu jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/temu-jobs",
+   "s": "Today's top 41 Temu jobs in United States. Leverage your professional network, and get hired. New Temu jobs added daily."
+  },
+  {
+   "t": "Temu: Jobs | LinkedIn",
+   "u": "https://ie.linkedin.com/company/temuapp/jobs",
+   "s": "Temu Technology, Information and Internet Boston, Massachusetts 521,796 followers Temu is an e-commerce company that offers a wide selection of quality merchand"
+  },
+  {
+   "t": "Jobs at Temu: Explore current Opportunities - wellfound.com",
+   "u": "https://wellfound.com/company/temu/jobs",
+   "s": "Temu is hiring! See 5 jobs in October 2026! Apply to the latest jobs with a single profile and get in touch with hiring managers directly. Learn about salary, e"
+  },
+  {
+   "t": "Temu | Careers",
+   "u": "https://www.temu.com/mx-en/careers.html",
+   "s": "Our mission is to empower better living by making affordable products accessible to all. If you're passionate about innovation and creating opportunities that h"
+  },
+  {
+   "t": "Temu: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/temuapp/jobs/",
+   "s": "Temu Technology, Information and Internet Boston, Massachusetts 521,977 followers Temu is an e-commerce company that offers a wide selection of quality merchand"
+  },
+  {
+   "t": "41 Temu jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/temu-jobs",
+   "s": "Today's top 41 Temu jobs in United States. Leverage your professional network, and get hired. New Temu jobs added daily."
+  },
+  {
+   "t": "Careers with Temu",
+   "u": "https://static-cross.kwcdn.com/careers.html",
+   "s": "Our mission is to empower better living by making affordable products accessible to all. If you're passionate about innovation and creating opportunities that h"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.temu.com/mx-en/careers.html",
+  "platform": "custom",
+  "title": "Temu | Careers"
+ },
+ "verdict": "custom_surface"
+}

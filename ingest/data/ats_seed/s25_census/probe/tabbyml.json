@@ -1,0 +1,154 @@
+{
+ "brand": "TabbyML",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:07:34.289Z",
+ "candidates": [
+  {
+   "url": "https://demo.tabbyml.com/jobs/detail?id=Gp3WX1",
+   "title": "Tabby - Dashboard",
+   "status": 200,
+   "bytes": 15014,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Tabby, an opensource, self-hosted AI coding assistant.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://docs.tabbyml.com/",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 134117,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "TabbyML Company Docs Design and build IDE extensions (e.g., VSCode, JetBrains) that deliver smooth, fast, and intelligent in-editor AI experiences. Build agenti",
+   "backend": "direct"
+  },
+  {
+   "url": "https://tabbyml.vercel.app/compensation-sheet",
+   "title": "Notion Page Not Found",
+   "status": 200,
+   "bytes": 4269,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "TabbyML Company Docs We pay more experienced team members a greater amount since it is reasonable to expect this correlates with an increase in skill - being ab",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "docs.tabbyml.com - Careers",
+   "u": "https://docs.tabbyml.com/",
+   "s": "TabbyML Company Docs Design and build IDE extensions (e.g., VSCode, JetBrains) that deliver smooth, fast, and intelligent in-editor AI experiences. Build agenti"
+  },
+  {
+   "t": "TabbyML - LinkedIn",
+   "u": "https://www.linkedin.com/company/tabbyml",
+   "s": "TabbyML | 1,329 followers on LinkedIn. LLM x DevTools ＋ OSS | Open source self-hosted AI Coding Assistant"
+  },
+  {
+   "t": "Tabbyml Jobs in Worldwide (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tabbyml-jobs-worldwide",
+   "s": "Today's top 1,000+ Tabbyml jobs in Worldwide. Leverage your professional network, and get hired. New Tabbyml jobs added daily."
+  },
+  {
+   "t": "Tabby - Sign In",
+   "u": "https://demo.tabbyml.com/jobs/detail?id=Gp3WX1",
+   "s": "Tabby, an opensource, self-hosted AI coding assistant."
+  },
+  {
+   "t": "Compensation Sheet - TabbyML Company Docs",
+   "u": "https://tabbyml.vercel.app/compensation-sheet",
+   "s": "TabbyML Company Docs We pay more experienced team members a greater amount since it is reasonable to expect this correlates with an increase in skill - being ab"
+  },
+  {
+   "t": "Tabby Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Tabby",
+   "s": "Find out what works well at Tabby from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay for"
+  },
+  {
+   "t": "Careers and jobs at Tabby",
+   "u": "https://tabby.ai/en-AE/careers",
+   "s": "Careers Define yourself.u2028Redefine money. We're on a mission to give people power over their money by creating a financial system that's clear, flexible and "
+  },
+  {
+   "t": "Tabby - Opensource, self-hosted AI coding assistant",
+   "u": "https://www.tabbyml.com/?ref=seekmeai",
+   "s": "Tabby is an open-source AI coding assistant that empowers developers to code faster and smarter. Discover a self-contained alternative to GitHub Copilot, tailor"
+  },
+  {
+   "t": "docs.tabbyml.com - Careers",
+   "u": "https://docs.tabbyml.com/",
+   "s": "TabbyML Company Docs Design and build IDE extensions (e.g., VSCode, JetBrains) that deliver smooth, fast, and intelligent in-editor AI experiences. Build agenti"
+  },
+  {
+   "t": "Tabbyml Jobs in Worldwide (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tabbyml-jobs-worldwide",
+   "s": "Today's top 1,000+ Tabbyml jobs in Worldwide. Leverage your professional network, and get hired. New Tabbyml jobs added daily."
+  },
+  {
+   "t": "TabbyML - LinkedIn",
+   "u": "https://www.linkedin.com/company/tabbyml",
+   "s": "TabbyML | 1,329 followers on LinkedIn. LLM x DevTools ＋ OSS | Open source self-hosted AI Coding Assistant"
+  },
+  {
+   "t": "Tabby - Sign In",
+   "u": "https://demo.tabbyml.com/jobs/detail?id=Gp3WX1",
+   "s": "Tabby, an opensource, self-hosted AI coding assistant."
+  },
+  {
+   "t": "Careers and jobs at Tabby",
+   "u": "https://tabby.ai/en-AE/careers",
+   "s": "We're on a mission to give people power over their money by creating a financial system that's clear, flexible and puts them in control. And we'd really like yo"
+  },
+  {
+   "t": "TabbyML Newsletter #1",
+   "u": "https://newsletter.tabbyml.com/archive/f73f79cd-ccc7-48a3-a349-4f5fb0dfa6e6",
+   "s": "We are thrilled to share the news that TabbyML has raised $3M in seed funding from leading VC and angle investors specializing in open source software. The fres"
+  },
+  {
+   "t": "Compensation Sheet - TabbyML Company Docs",
+   "u": "https://tabbyml.vercel.app/compensation-sheet",
+   "s": "TabbyML Company Docs We pay more experienced team members a greater amount since it is reasonable to expect this correlates with an increase in skill - being ab"
+  },
+  {
+   "t": "Tabby Careers - 70 Jobs Open, Updated Daily | Reach",
+   "u": "https://reach.jobs/companies/tabby",
+   "s": "Tabby careers: all 70 open roles in one list, with locations and posted pay ranges, 26 remote, updated daily. Reach tailors your resume to each opening and appl"
+  },
+  {
+   "t": "Careers",
+   "u": "https://docs.tabbyml.com/",
+   "s": "Tabby is an open-source AI coding assistant that serves as an alternative to Github Copilot. We aim to create an AI-first experience that improves intuition and"
+  },
+  {
+   "t": "Careers and jobs at Tabby",
+   "u": "https://tabby.ai/en-AE/careers",
+   "s": "We're on a mission to give people power over their money by creating a financial system that's clear, flexible and puts them in control. And we'd really like yo"
+  },
+  {
+   "t": "Tabbyml Jobs in Worldwide (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/tabbyml-jobs-worldwide",
+   "s": "Today's top 1,000+ Tabbyml jobs in Worldwide. Leverage your professional network, and get hired. New Tabbyml jobs added daily."
+  },
+  {
+   "t": "TabbyML - LinkedIn",
+   "u": "https://www.linkedin.com/company/tabbyml",
+   "s": "TabbyML | 1,329 followers on LinkedIn. LLM x DevTools ＋ OSS | Open source self-hosted AI Coding Assistant"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://docs.tabbyml.com/",
+  "platform": "custom",
+  "title": "Careers"
+ },
+ "verdict": "custom_surface"
+}

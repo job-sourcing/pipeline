@@ -1,0 +1,154 @@
+{
+ "brand": "Sirnaomics",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:03:25.092Z",
+ "candidates": [
+  {
+   "url": "https://www.sirnaomics.com/en/careers/",
+   "title": "Careers | Sirnaomics",
+   "status": 200,
+   "bytes": 24424,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Working @ Sirnaomics Come explore the limitless potential of RNA-targeted therapy with us. At Sirnaomics, we're not just offering jobs — we're building a bold, ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.biotech-careers.org/company/sirnaomics",
+   "title": "403 - Forbidden",
+   "status": 403,
+   "bytes": 75193,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "RNAi Therapeutics Business Areas: RNA Biotech-Careers is funded in part by the National Science Foundation",
+   "backend": "direct"
+  },
+  {
+   "url": "https://sirnaomics.com/?post_type=careers",
+   "title": "Home | Sirnaomics",
+   "status": 200,
+   "bytes": 33372,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Sirnaomics is the first to achieve positive Phase IIb clinical outcomes in oncology clinical-stage RNA therapeutics biopharmaceutical company with a strong pres",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | Sirnaomics",
+   "u": "https://www.sirnaomics.com/en/careers/",
+   "s": "Working @ Sirnaomics Come explore the limitless potential of RNA-targeted therapy with us. At Sirnaomics, we're not just offering jobs — we're building a bold, "
+  },
+  {
+   "t": "Curent Openings | Sirnaomics",
+   "u": "https://www.sirnaomics.com/en/curent-openings/",
+   "s": "Current Openings Got the talent, the drive, and big biotech dreams? Send your resume straight to: HR@sirnaomics.com Your next amazing career chapter starts righ"
+  },
+  {
+   "t": "sirnaomics,inc Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sirnaomics,inc",
+   "s": "Find out what works well at sirnaomics,inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  },
+  {
+   "t": "Sirnaomics Ltd Jobs in United States (8,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sirnaomics-ltd-jobs",
+   "s": "Today's top 8,000+ Sirnaomics Ltd jobs in United States. Leverage your professional network, and get hired. New Sirnaomics Ltd jobs added daily."
+  },
+  {
+   "t": "Sirnaomics | Biotech Careers",
+   "u": "https://www.biotech-careers.org/company/sirnaomics",
+   "s": "RNAi Therapeutics Business Areas: RNA Biotech-Careers is funded in part by the National Science Foundation"
+  },
+  {
+   "t": "Home | Sirnaomics",
+   "u": "https://sirnaomics.com/?post_type=careers",
+   "s": "Sirnaomics is the first to achieve positive Phase IIb clinical outcomes in oncology clinical-stage RNA therapeutics biopharmaceutical company with a strong pres"
+  },
+  {
+   "t": "SIRNAOMICS | LinkedIn",
+   "u": "https://in.linkedin.com/company/sirnaomics-inc",
+   "s": "Sirnaomics is an RNA therapeutics biopharmaceutical company that focuses on the discovery and development of innovative drugs for indications with unmet medical"
+  },
+  {
+   "t": "Sirnaomics Jobs (August 2026)",
+   "u": "https://startup.jobs/company/sirnaomics",
+   "s": "Sirnaomics is hiring. Apply to jobs like Accounting Manager, Clinical Business Operations Specialist, and Senior Accountant. Updated daily!"
+  },
+  {
+   "t": "Careers | Sirnaomics",
+   "u": "https://www.sirnaomics.com/en/careers/",
+   "s": "Working @ Sirnaomics Come explore the limitless potential of RNA-targeted therapy with us. At Sirnaomics, we're not just offering jobs — we're building a bold, "
+  },
+  {
+   "t": "Curent Openings | Sirnaomics",
+   "u": "https://www.sirnaomics.com/en/curent-openings/",
+   "s": "Job Description Responsible for rational design and chemical modification optimization of siRNA/oligonucleotide drug sequences; conduct off-target risk predicti"
+  },
+  {
+   "t": "sirnaomics,inc Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sirnaomics,inc",
+   "s": "Find out what works well at sirnaomics,inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  },
+  {
+   "t": "Sirnaomics Ltd Jobs in United States (8,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sirnaomics-ltd-jobs",
+   "s": "Today's top 8,000+ Sirnaomics Ltd jobs in United States. Leverage your professional network, and get hired. New Sirnaomics Ltd jobs added daily."
+  },
+  {
+   "t": "Sirnaomics Jobs (August 2026)",
+   "u": "https://startup.jobs/company/sirnaomics",
+   "s": "Sirnaomics is hiring. Apply to jobs like Accounting Manager, Clinical Business Operations Specialist, and Senior Accountant. Updated daily!"
+  },
+  {
+   "t": "SIRNAOMICS | LinkedIn",
+   "u": "https://in.linkedin.com/company/sirnaomics-inc",
+   "s": "SIRNAOMICS | 7,700 followers on LinkedIn. Transcribing For Better Lives | Sirnaomics is an RNA therapeutics biopharmaceutical company that focuses on the discov"
+  },
+  {
+   "t": "Careers at Thermo Fisher Scientific | Thermo Fisher Scientific jobs",
+   "u": "https://jobs.thermofisher.com/",
+   "s": "Browse available job openings at Thermo Fisher Scientific. Explore the professional possibilities at Thermo Fisher Scientific, and join us"
+  },
+  {
+   "t": "6,000+ Sirnaomics Chemistry jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sirnaomics-chemistry-jobs",
+   "s": "Today's top 6,000+ Sirnaomics Chemistry jobs in United States. Leverage your professional network, and get hired. New Sirnaomics Chemistry jobs added daily."
+  },
+  {
+   "t": "Careers | Sirnaomics",
+   "u": "https://www.sirnaomics.com/en/careers/",
+   "s": "At Sirnaomics, we're not just offering jobs — we're building a bold, global playground for innovators. Powered by our world-class RNA-targeted technology platfo"
+  },
+  {
+   "t": "Curent Openings | Sirnaomics",
+   "u": "https://www.sirnaomics.com/en/curent-openings/",
+   "s": "Job Description Responsible for rational design and chemical modification optimization of siRNA/oligonucleotide drug sequences; conduct off-target risk predicti"
+  },
+  {
+   "t": "sirnaomics,inc Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Sirnaomics,inc",
+   "s": "Find out what works well at sirnaomics,inc from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compar"
+  },
+  {
+   "t": "Sirnaomics Ltd Jobs in United States (8,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/sirnaomics-ltd-jobs",
+   "s": "Today's top 8,000+ Sirnaomics Ltd jobs in United States. Leverage your professional network, and get hired. New Sirnaomics Ltd jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.sirnaomics.com/en/careers/",
+  "platform": "custom",
+  "title": "Careers | Sirnaomics"
+ },
+ "verdict": "custom_surface"
+}

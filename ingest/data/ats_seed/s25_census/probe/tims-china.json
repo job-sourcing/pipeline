@@ -1,0 +1,16 @@
+{
+ "brand": "Tims China",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:10:44.506Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://www.tims.com/careers",
+  "platform": "custom",
+  "title": "Careers",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}
