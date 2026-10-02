@@ -2202,7 +2202,9 @@
     "AIZIP, INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "Saratoga, CA, USA"
+   "hq": "Saratoga, CA, USA",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "Cupertino/Saratoga HQ; Shenzhen hint uncorroborated (origin b2)."
   },
   {
    "brand": "Akool",
@@ -2262,7 +2264,9 @@
    "us_signal": "US-incorporated non-profit/OSS multi-agent framework org; remote-first community (core team ~20); no LCA filings",
    "lca_employers": [],
    "origin": "us_inc_chinese_founders",
-   "hq": "US (Delaware-inc) — KAUST-adjacent; fully remote OSS community"
+   "hq": "US (Delaware-inc) — KAUST-adjacent; fully remote OSS community",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "OSS community; founder UK-based; camel-ai.cn = docs mirror only (origin b2)."
   },
   {
    "brand": "Cognition",
@@ -2284,7 +2288,9 @@
     "COGNITION AI INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "San Francisco, CA, USA"
+   "hq": "San Francisco, CA, USA",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "SF HQ; founders US-based (origin b1)."
   },
   {
    "brand": "Creatify",
@@ -2366,7 +2372,9 @@
     "FIREWORKS.AI, INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "Redwood City / San Mateo, CA, USA"
+   "hq": "Redwood City / San Mateo, CA, USA",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "45 LCA CA/NY/WA, remote-US; zero mainland footprint (origin b1)."
   },
   {
    "brand": "Genspark",
@@ -2388,7 +2396,9 @@
     "GENSPARK INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "Palo Alto, CA, USA (+Singapore)"
+   "hq": "Palo Alto, CA, USA (+Singapore)",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "Palo Alto + Singapore/Tokyo, overseas-only by design. ⚠ mainfunc.cn = Xi'an mining-AV homonym — never wire (origin b1)."
   },
   {
    "brand": "Haiper",
@@ -2406,7 +2416,9 @@
    "us_signal": "UK-incorporated (London) with Chinese founders (ex-Google DeepMind/TikTok, e.g. Yishu Miao 苗亦舒); occasional US-remote roles on LinkedIn; no US LCA entity",
    "lca_employers": [],
    "origin": "us_inc_chinese_founders",
-   "hq": "London, UK"
+   "hq": "London, UK",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "UK Ltd London-only; founder departed to Microsoft AI (origin b2)."
   },
   {
    "brand": "Hyperbolic Labs",
@@ -2426,7 +2438,9 @@
     "HYPERBOLIC LABS, INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "San Francisco, CA, USA"
+   "hq": "San Francisco, CA, USA",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "SF-inc 2023, CEO Berkeley-PhD SF-based; no China team (origin b1)."
   },
   {
    "brand": "LMArena",
@@ -2448,7 +2462,9 @@
     "ARENA INTELLIGENCE INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "Berkeley / San Francisco, CA, USA"
+   "hq": "Berkeley / San Francisco, CA, USA",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "Berkeley spin-out SF; co-founder Taiwan-descent SF-based — not a mainland-founder case (origin b1)."
   },
   {
    "brand": "Lightelligence",
@@ -2508,7 +2524,9 @@
     "NEXA AI, INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "Cupertino/San Francisco, CA, USA"
+   "hq": "Cupertino/San Francisco, CA, USA",
+   "s24_verdict": "s24_acquired_qualcomm",
+   "s24_note": "BJ/SH/SZ R&D + Shenzhen entity (now DEREGISTERED); acquired by Qualcomm — do not wire (origin b2)."
   },
   {
    "brand": "Pika",
@@ -2526,7 +2544,9 @@
    "us_signal": "US HQ; Ashby board jobs.ashbyhq.com/pika (verified); ~11-14 open roles; no LCA filings yet (PIKA INTERNATIONAL INC, Stafford TX is an unrelated lab)",
    "lca_employers": [],
    "origin": "us_inc_chinese_founders",
-   "hq": "Palo Alto, CA, USA"
+   "hq": "Palo Alto, CA, USA",
+   "s24_verdict": "s24_us_only_high_quality_board",
+   "s24_note": "Ashby board live 14 roles all Palo Alto/US-remote — no CN entity. High-quality US-only wire candidate if the user ever loosens the origin filter (origin b2)."
   },
   {
    "brand": "Sonauto",
@@ -2544,7 +2564,9 @@
    "us_signal": "US company (YC); small team; jobs via YC board; no LCA filings; founder-origin believed Chinese but UNVERIFIED — verify before wiring",
    "lca_employers": [],
    "origin": "us_inc_chinese_founders",
-   "hq": "San Francisco, CA, USA"
+   "hq": "San Francisco, CA, USA",
+   "s24_verdict": "s24_census_flag_wrong",
+   "s24_note": "CENSUS FLAG WRONG: founders Hayden Housen & Ryan Tremblay (Cornell, ex-Meta) — not Chinese. Reclassify out of origin_review (origin b2)."
   },
   {
    "brand": "Sunday Robotics",
@@ -2563,7 +2585,9 @@
     "SUNDAY ROBOTICS, INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "Redwood City, CA, US"
+   "hq": "Redwood City, CA, US",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "Redwood City on-site, Stanford founders (origin b1) — the S22 origin-policy question resolved: US-ops company."
   },
   {
    "brand": "Together AI",
@@ -2585,7 +2609,9 @@
     "TOGETHER COMPUTER, INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "San Francisco, CA, USA"
+   "hq": "San Francisco, CA, USA",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "1 office (SF); CTO US-based professor (origin b1)."
   },
   {
    "brand": "World Labs",
@@ -2606,7 +2632,9 @@
     "WORLD LABS TECHNOLOGIES, INC."
    ],
    "origin": "us_inc_chinese_founders",
-   "hq": "San Francisco, CA, USA"
+   "hq": "San Francisco, CA, USA",
+   "s24_verdict": "s24_us_only",
+   "s24_note": "SF HQ, 6 LCAs, no CN ops; live board = ashby worldlabs (11 SF roles; Greenhouse hint stale). Reported $8.2B AMD acquisition (origin b2)."
   },
   {
    "brand": "Zilliz",
