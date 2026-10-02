@@ -1,0 +1,11 @@
+rows: 13 (unique reqIds: 13)
+details merged: 13
+descriptions present: 13
+locations enumerated (not 'N Locations'): 13
+startDate present: 13
+signals: matched=0 no_match=13 blocked=0 not_checked=0
+location entries total (sum nLocations): 15
+similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=13 (from facet_tags.jsonl)
+facet tag coverage: 13/13 rows (0 untagged)
+h1b wage bands: 2/13 rows banded (0 title+state, 2 title-only) from 5 LCA filings → celerdata_us_fulltime.h1b_lca.csv

@@ -1,0 +1,11 @@
+rows: 98 (unique reqIds: 98)
+details merged: 98
+descriptions present: 98
+locations enumerated (not 'N Locations'): 97
+startDate present: 98
+signals: matched=0 no_match=68 blocked=0 not_checked=30
+location entries total (sum nLocations): 103
+similar-job edges: 198
+facet census: 6 facets / 77 values (canadiansolar_us_fulltime.facets.json)
+questionnaire definitions: 2 id(s) covering 98/98 rows; 2 fetched (8 questions → canadiansolar_us_fulltime.questionnaires.csv)
+h1b wage bands: 0/98 rows banded (0 title+state, 0 title-only) from 10 LCA filings → canadiansolar_us_fulltime.h1b_lca.csv

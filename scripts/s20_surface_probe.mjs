@@ -567,7 +567,6 @@ async function main () {
   try { mkdirSync(PROBE, { recursive: true }) } catch { }
   const queue = JSON.parse(readFileSync(queuePath, 'utf8'))
   const list = mode === 'identity' ? queue.wire_now : (queue[tier] || [])
-  const slice = list.slice(offset, offset + limit)
   // S23: zai is OPTIONAL — the kit engine covers search, and identity
   // judgments are adjudicated by sub-agents from evidence (the S23
   // no-zai-quota directive). Guarded lazy init so GHA runs (no creds)
@@ -575,18 +574,32 @@ async function main () {
   let zai = null
   const getZai = async () => { if (!zai) { try { zai = await ZAI.create() } catch { zai = { unavailable: true } } } return zai }
 
+  // S25: slice over the UNRESOLVED records, not the raw queue head —
+  // the offset-0 slice re-probed/skipped the same first-25 records
+  // forever and the queue never advanced (drain deadlock). A record
+  // resolves when: no evidence yet, OR (retry mode) its prior verdict
+  // failed AND is older than RETRY_AFTER_H.
+  const RETRY_AFTER_H = 20
+  const unresolved = []
+  for (const rec of list) {
+    const f = `${PROBE}/${slugify(rec.brand) || slugify(rec.name)}.json`
+    if (!existsSync(f)) { unresolved.push(rec); continue }
+    let prior
+    try { prior = JSON.parse(readFileSync(f, 'utf8')) } catch { unresolved.push(rec); continue }
+    const good = ['ats_surface', 'marker_surface', 'custom_surface', 'dict_collision'].includes(prior.verdict)
+    // S22: an adjudication block is terminal (refuted homonyms carry
+    // no_clear_surface top-level verdicts — retry must never clobber them)
+    if (good || prior.adjudication) continue
+    if (!args.retry) continue
+    const ts = Date.parse(prior.ts || '')
+    if (Number.isFinite(ts) && (Date.now() - ts) < RETRY_AFTER_H * 3600e3) continue
+    unresolved.push(rec) // stale failure — retry mode gives it another shot
+  }
+  console.log(`unresolved: ${unresolved.length} of ${list.length} in tier (after retry-gate)`)
+  const slice = unresolved.slice(offset, offset + limit)
+
   for (const rec of slice) {
     const f = `${PROBE}/${slugify(rec.brand) || slugify(rec.name)}.json`
-    if (existsSync(f)) {
-      const prior = JSON.parse(readFileSync(f, 'utf8'))
-      const good = ['ats_surface', 'marker_surface', 'custom_surface', 'dict_collision'].includes(prior.verdict)
-      // S22: an adjudication block is terminal (refuted homonyms carry
-      // no_clear_surface top-level verdicts — retry must never clobber them)
-      const settled = good || prior.adjudication
-      if (settled || !args.retry) { console.log('skip', settled ? '(done)' : '(exists, use --retry)', rec.brand); continue }
-      // retry mode: only failed verdicts get re-probed (search variance,
-      // rate-limit blanks, CF challenges)
-    }
     let out
     try {
       out = mode === 'identity' ? await probeIdentity(rec, await getZai()) : await probeSurface(rec, await getZai(), args.search === 'false')

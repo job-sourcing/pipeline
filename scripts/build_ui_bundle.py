@@ -32,6 +32,7 @@ ADAPTER_LABEL = {
     "workday": "Workday", "greenhouse": "Greenhouse", "ashby": "Ashby",
     "lever": "Lever", "workable": "Workable", "feishuhire": "Feishu Hire",
     "paylocity": "Paylocity", "smartrecruiters": "SmartRecruiters",
+    "rippling": "Rippling", "adp": "ADP Workforce Now",
     "bytedance": "ByteDance (custom)", "alibaba": "Alibaba (custom)",
     "tripcom": "Trip.com (custom)", "xiaohongshu": "Xiaohongshu (custom)",
 }
