@@ -2,8 +2,20 @@
  "brand": "AuraMarker",
  "tier": "probe_A",
  "lca": null,
- "ts": "2026-10-02T12:05:26.170Z",
+ "ts": "2026-10-02T12:09:06.893Z",
  "candidates": [
+  {
+   "url": "https://auramarker.com/",
+   "title": "Aura Marker Studio",
+   "status": 200,
+   "bytes": 4586,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont",
+   "backend": "direct"
+  },
   {
    "url": "https://careers.aramark.com/",
    "title": "Aramark Careers | Explore Jobs &amp; Opportunities",
@@ -26,20 +38,6 @@
    "spec": null,
    "score": 2,
    "snippet": "Browse 6,800+ jobs at Aramark Careers. Apply online today.",
-   "backend": "direct"
-  },
-  {
-   "url": "https://aramarkcareers.com/",
-   "title": "Jobs at Aramark",
-   "status": 200,
-   "bytes": 72102,
-   "markers": [
-    "successfactors"
-   ],
-   "jsonld_jobs": 0,
-   "spec": null,
-   "score": 2,
-   "snippet": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e",
    "backend": "direct"
   }
  ],
@@ -65,14 +63,14 @@
    "s": "Find food service career opportunities at Aramark. Explore dining, catering, and hospitality roles with growth potential and flexible schedules."
   },
   {
-   "t": "aramarkcareers.com",
-   "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
-   "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
-  },
-  {
    "t": "Aramark Career Locations | Find Jobs Near You",
    "u": "https://careers.aramark.com/locations",
    "s": "Browse Aramark job opportunities by location. Find open positions near you and start your career with a global leader in food and facilities services."
+  },
+  {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/Canada",
+   "s": "Apply online for jobs at Aramark At Aramark Canada, our vision is to be the most admired employer and trusted hospitality partner. Because we're rooted in servi"
   },
   {
    "t": "Jobs at Aramark",
@@ -80,34 +78,14 @@
    "s": "Apply online for jobs at Aramark Stay connected by joining our network! Enter your e-mail and tell us a bit about yourself, and well keep you informed about upc"
   },
   {
-   "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/Canada",
-   "s": "At Aramark Canada, our vision is to be the most admired employer and trusted hospitality partner. Because we're rooted in service, we do great things for our pe"
-  },
-  {
-   "t": "Jobs in Phoenix, AZ at Aramark Careers",
-   "u": "https://careers.aramark.com/jobs/location/AZ/Phoenix/",
-   "s": "Browse 170+ jobs in Phoenix, AZ at Aramark Careers. Apply online today."
+   "t": "aramarkcareers.com",
+   "u": "https://aramarkcareers.com/go/All-Current-Job-Opportunities-ALL/8816200/",
+   "s": "Aramark Careers Search All Jobs Privacy Policy Aramark.com © 2021 Aramark. All Rights Reserved."
   },
   {
    "t": "Aramark Careers | Explore Jobs & Opportunities",
    "u": "https://careers.aramark.com/",
    "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
-  },
-  {
-   "t": "Now Hiring: 100 Aramark Jobs in Phoenix, AZ | Indeed",
-   "u": "https://www.indeed.com/q-Aramark-l-Phoenix,-AZ-jobs.html",
-   "s": "Browse 138 Aramark jobs in Phoenix, AZ. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
-  },
-  {
-   "t": "Aramark jobs in Phoenix, Arizona - JOB TODAY",
-   "u": "https://jobtoday.com/us/jobs-aramark/az_phoenix",
-   "s": "Apply to 94 aramark jobs available and hiring now in Phoenix, Arizona. New aramark vacancies are added daily on JOB TODAY. Get set up in seconds & start chattin"
-  },
-  {
-   "t": "Location Attendant - Phoenix-OCS Job Details | Aramark",
-   "u": "https://aramarkcareers.com/UnitedStates/job/Phoenix-Location-Attendant-Phoenix-OCS-AZ-85004/682805-en_US/",
-   "s": "Job Description The Location Attendant is responsible for providing exceptional customer service by ensuring that our customers' products are stocked appropriat"
   },
   {
    "t": "Jobs at Aramark",
@@ -115,14 +93,34 @@
    "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
   },
   {
-   "t": "Aramark careers in Phoenix, AZ | Indeed.com",
-   "u": "https://www.indeed.com/cmp/Aramark/locations/AZ/Phoenix",
-   "s": "Aramark salaries in Phoenix, AZ Salary estimated from 134 employees, users, and past and present job advertisements on Indeed."
+   "t": "Jobs - Aramark Careers",
+   "u": "https://careers.aramark.com/jobs",
+   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
   },
   {
-   "t": "Top 135 Aramark Jobs in Phoenix, Az | SimplyHired",
-   "u": "https://www.simplyhired.com/search?q=aramark&l=phoenix%2C+az",
-   "s": "135 Aramark jobs available in Phoenix, Az. See salaries, compare reviews, easily apply, and get hired. New Aramark careers in Phoenix, Az are added daily on Sim"
+   "t": "Aura Marker Studio",
+   "u": "https://auramarker.com/",
+   "s": "Aura Marker Studio is an independent product innovation firm. Lattics - Brain-like KM Notes Varlens - DSLR in Phone Zine - Enjoy Writing For join us please cont"
+  },
+  {
+   "t": "Aramark Jobs, Employment in Wyoming - Indeed",
+   "u": "https://www.indeed.com/q-company%3aaramark-l-wyoming-jobs.html",
+   "s": "11 Aramark jobs available in Wyoming on Indeed.com. Apply to Snow Plow Operator, Housekeeper, Senior Maintenance Person and more!"
+  },
+  {
+   "t": "Hiring Now Job - Aramark - Cheyenne, WY (Hiring Now) - Monster",
+   "u": "https://www.monster.com/job-openings/cook-hiring-now-cheyenne-wy--2205330c-c221-45ac-8303-e5a0dc0b55dd",
+   "s": "Aramark is hiring a Cook - Hiring Now job in Cheyenne, WY. Build your resume and apply today at Monster. Posted Today."
+  },
+  {
+   "t": "Now Hiring: 4,000 Aramark Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Aramark-jobs.html",
+   "s": "Browse 4,828 Aramark jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Togwotee Mountain Lodge Job in Cheyenne, WY - ARAMARK - CareerBuilder",
+   "u": "https://www.careerbuilder.com/job-details/cook-togwotee-mountain-lodge-cheyenne-wy--e2a0eff9-b6db-4ac4-accc-784daf131915",
+   "s": "Now hiring. Cook - Togwotee Mountain Lodge opening in Cheyenne, WY posted Today by ARAMARK. Apply today on CareerBuilder."
   },
   {
    "t": "Aramark Careers | Explore Jobs & Opportunities",
@@ -130,18 +128,18 @@
    "s": "Discover career opportunities at Aramark. Explore jobs in food service, facilities, hospitality, and more. Find your fit and grow with us."
   },
   {
-   "t": "Jobs in Phoenix, AZ at Aramark Careers",
-   "u": "https://careers.aramark.com/jobs/location/AZ/Phoenix/",
-   "s": "Browse 170+ jobs in Phoenix, AZ at Aramark Careers. Apply online today."
-  },
-  {
-   "t": "Now Hiring: 100 Aramark Jobs in Phoenix, AZ | Indeed",
-   "u": "https://www.indeed.com/q-Aramark-l-Phoenix,-AZ-jobs.html",
-   "s": "Browse 138 Aramark jobs in Phoenix, AZ. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+   "t": "Jobs - Aramark Careers",
+   "u": "https://careers.aramark.com/jobs",
+   "s": "Browse 6,800+ jobs at Aramark Careers. Apply online today."
   },
   {
    "t": "Jobs at Aramark",
-   "u": "https://aramarkcareers.com/job/",
+   "u": "https://aramarkcareers.com/",
+   "s": "Follow this link to reach our Job Search page to search for available jobs in a more accessible format."
+  },
+  {
+   "t": "Jobs at Aramark",
+   "u": "https://aramarkcareers.com/content/?locale=en_US",
    "s": "Apply online for jobs at Aramark Aramark (NYSE: ARMK) provides food, facilities, and uniform services to millions of people, in 19 countries around the world, e"
   }
  ],
