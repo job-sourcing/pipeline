@@ -1,0 +1,29 @@
+{
+ "brand": "Merach",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:34:08.567Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "merach",
+   "spec": "feishuhire:merach",
+   "title": "加入麦瑞克"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:merach",
+  "platform": "feishu",
+  "title": "加入麦瑞克",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入麦瑞克",
+  "brand": "Merach",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

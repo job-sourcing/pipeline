@@ -1,0 +1,156 @@
+{
+ "brand": "More Health",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:40:36.548Z",
+ "candidates": [
+  {
+   "url": "https://www.caremore.com/careers/",
+   "title": "Careers - Care More Health | Whole-Person Care",
+   "status": 200,
+   "bytes": 220302,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore careers at CareMore Health. Join a team focused on coordinated, personalized care. We're always seeking compassionate team members.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.morehealthinc.org/donate/join-our-team/",
+   "title": "Join Our Team - More Health, Inc.",
+   "status": 200,
+   "bytes": 354412,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "MORE HEALTH, Inc., a nonprofit 501 (c)3 organization, trains instructors to deliver interactive, exciting health education lessons to students, at no charge to ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://wyhealthworks.org/careers/",
+   "title": "Careers - HealthWorks",
+   "status": 200,
+   "bytes": 403065,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Careers HealthWorks is hiring! Click the name of any position to view the full job description. Medical Doctor Pediatrician Dental Hygienist Mental Health Thera",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Care More Health | Whole-Person Care",
+   "u": "https://www.caremore.com/careers/",
+   "s": "Explore careers at CareMore Health. Join a team focused on coordinated, personalized care. We're always seeking compassionate team members."
+  },
+  {
+   "t": "Join Our Team - More Health, Inc.",
+   "u": "https://www.morehealthinc.org/donate/join-our-team/",
+   "s": "MORE HEALTH, Inc., a nonprofit 501 (c)3 organization, trains instructors to deliver interactive, exciting health education lessons to students, at no charge to "
+  },
+  {
+   "t": "More Health Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/More-Health",
+   "s": "MORE Health is a startup with a positive future and an incredible culture. The Management is made up of sophisticated professionals who care for the quality of "
+  },
+  {
+   "t": "Careers - HealthWorks",
+   "u": "https://wyhealthworks.org/careers/",
+   "s": "Careers HealthWorks is hiring! Click the name of any position to view the full job description. Medical Doctor Pediatrician Dental Hygienist Mental Health Thera"
+  },
+  {
+   "t": "MORE Health",
+   "u": "https://www.morehealth.com/",
+   "s": "MORE Health offers patients access to the best medical minds in the world for expert medical second opinions on serious, life-changing illnesses."
+  },
+  {
+   "t": "&more Health",
+   "u": "https://www.andmorehealth.com/",
+   "s": "&more Health ... &more Health"
+  },
+  {
+   "t": "Now Hiring: 600 Healthcare Jobs in Cheyenne, WY | Indeed",
+   "u": "https://www.indeed.com/q-Healthcare-l-Cheyenne,-WY-jobs.html",
+   "s": "Browse 633 Healthcare jobs in Cheyenne, WY. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Jobs And Careers | VA Cheyenne Health Care | Veterans Affairs",
+   "u": "https://www.va.gov/cheyenne-health-care/work-with-us/jobs-and-careers/",
+   "s": "Build your career with us at the VA Cheyenne Health Care System where you'll become part of the nation's largest health care team, earn great benefits, and enjo"
+  },
+  {
+   "t": "Careers - HealthWorks",
+   "u": "https://wyhealthworks.org/careers/",
+   "s": "Careers HealthWorks is hiring! Click the name of any position to view the full job description. Medical Doctor Pediatrician Dental Hygienist Mental Health Thera"
+  },
+  {
+   "t": "Now Hiring: 600 Healthcare Jobs in Cheyenne, WY | Indeed",
+   "u": "https://www.indeed.com/q-Healthcare-l-Cheyenne,-WY-jobs.html",
+   "s": "Browse 633 Healthcare jobs in Cheyenne, WY. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Wyoming Department of Health Jobs",
+   "u": "https://health.wyo.gov/admin/hr/jobs/",
+   "s": "Wyoming Department of Health Jobs The Wyoming Department of Health (WDH) has a wonderful work environment with room for growth and advancement, as well as gener"
+  },
+  {
+   "t": "Wyoming jobs | Public Health Careers",
+   "u": "https://www.publichealthcareers.org/jobs/us-wy/",
+   "s": "Search Public Health Job Opportunities Across The Nation Jobs in Public Health Found 11 jobs in Wyoming in Public Health Cheyenne, WY Chemical Testing Laborator"
+  },
+  {
+   "t": "Public Health Nursing Employment Opportunities",
+   "u": "https://health.wyo.gov/publichealth/nursing/employmentopportunities/",
+   "s": "Public Health Nursing (PHN) is a specialty practice within nursing and public health. We focus on preventing illness and improving the health of groups, especia"
+  },
+  {
+   "t": "Join Cheyenne Regional: Shape the Future of Healthcare in Wyoming",
+   "u": "https://careers.cheyenneregional.org/us/en/home",
+   "s": "Join Cheyenne Regional and help shape the future of healthcare in Wyoming. Be part of a trusted, growing organization committed to excellence and innovation."
+  },
+  {
+   "t": "$15-$24/hr Healthcare Jobs Cheyenne, WY (NOW HIRING) Sep 26 - ZipRecruiter",
+   "u": "https://www.ziprecruiter.com/Jobs/Healthcare/-in-Cheyenne,WY",
+   "s": "Browse 1000+ CHEYENNE, WY HEALTHCARE jobs ($15-$24/hr) hiring now. New openings posted daily. Apply early, get seen first & 1-click apply today!"
+  },
+  {
+   "t": "Jobs And Careers | VA Cheyenne Health Care | Veterans Affairs",
+   "u": "https://www.va.gov/cheyenne-health-care/work-with-us/jobs-and-careers/",
+   "s": "Jobs and careers Build your career with us at the VA Cheyenne Health Care System where you'll become part of the nation's largest health care team, earn great b"
+  },
+  {
+   "t": "Careers - HealthWorks",
+   "u": "https://wyhealthworks.org/careers/",
+   "s": "Careers HealthWorks is hiring! Click the name of any position to view the full job description. Medical Doctor Pediatrician Dental Hygienist Mental Health Thera"
+  },
+  {
+   "t": "Now Hiring: 600 Healthcare Jobs in Cheyenne, WY | Indeed",
+   "u": "https://www.indeed.com/q-Healthcare-l-Cheyenne,-WY-jobs.html",
+   "s": "Browse 633 Healthcare jobs in Cheyenne, WY. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers - Care More Health | Whole-Person Care",
+   "u": "https://www.caremore.com/careers/",
+   "s": "Explore careers at CareMore Health. Join a team focused on coordinated, personalized care. We're always seeking compassionate team members."
+  },
+  {
+   "t": "More Health Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/More-Health",
+   "s": "MORE Health is a startup with a positive future and an incredible culture. The Management is made up of sophisticated professionals who care for the quality of "
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.caremore.com/careers/",
+  "platform": "workday",
+  "title": "Careers - Care More Health | Whole-Person Care"
+ },
+ "verdict": "marker_surface"
+}

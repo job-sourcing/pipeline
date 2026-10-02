@@ -1,0 +1,149 @@
+{
+ "brand": "Notta",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:42:55.937Z",
+ "candidates": [
+  {
+   "url": "https://www.notta.ai/recruit",
+   "title": "採用情報 | Nｏｔｔａ株式会社",
+   "status": 200,
+   "bytes": 164602,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Notta株式会社の採用サイトです。採用情報のほか、企業理念、事業内容などについての情報を掲載しています。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.notta.ai/en",
+   "title": "AI Note Taker | Free AI Meeting Transcription",
+   "status": 200,
+   "bytes": 185695,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "AI Note Taker to Visualize Meeting Decisions Notta is an AI meeting notetaker that turns your meetings, interviews, or lectures into searchable text or visuals.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.nota.ai/careers",
+   "title": "Careers &mdash; Nota AI",
+   "status": 200,
+   "bytes": 508129,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Design your work schedule and choose your daily work location",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "採用情報 | Notta株式会社",
+   "u": "https://www.notta.ai/recruit",
+   "s": "Notta株式会社の採用サイトです。採用情報のほか、企業理念、事業内容などについての情報を掲載しています。"
+  },
+  {
+   "t": "Careers — Nota AI",
+   "u": "https://www.nota.ai/careers",
+   "s": "Design your work schedule and choose your daily work location"
+  },
+  {
+   "t": "Notta - LinkedIn",
+   "u": "https://www.linkedin.com/company/notta-official",
+   "s": "Notta | 878 followers on LinkedIn. Discovering infinite value from conversations | Transcribe audio to text with the help of AI. Transcribe and summarize your a"
+  },
+  {
+   "t": "CAREERS - Nott Co",
+   "u": "https://www.nottco.com/careers/",
+   "s": "The best part about Nott Company is the opportunity for advancement in your professional career. Every day there are new opportunities to grow and evolve within"
+  },
+  {
+   "t": "Notta Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/%EF%BD%8Eotta-jobs",
+   "s": "Today's top 11,000+ Notta jobs in United States. Leverage your professional network, and get hired. New Notta jobs added daily."
+  },
+  {
+   "t": "Careers - NTTA",
+   "u": "https://www.ntta.org/careers",
+   "s": "Find Your Place Here Join NTTA's diverse team of professionals representing a wide range of career fields. We have a strong, collaborative Team First culture th"
+  },
+  {
+   "t": "「思维巡航（深圳）网络技术有限公司招聘」-boss直聘",
+   "u": "https://www.zhipin.com/companys/8eae91e07e6270ef1Hd42Nu4GVU~.html",
+   "s": "思维巡航是思维巡航（深圳）网络技术有限公司旗下品牌。我们是一家专注做海外AI会议效率工具开发的公司，代表产品Notta通过实时转录、多语言翻译、AI智能摘要等功能，目前已服务全球千万用户，助力微软、普华永道等4000+企业提升会议效率，服务的客户覆盖医疗、教育、咨询等领域，累计已 ..."
+  },
+  {
+   "t": "Nota AI Career - career.nota.ai",
+   "u": "https://career.nota.ai/ko/jobs",
+   "s": "All about Nota recruitment"
+  },
+  {
+   "t": "Now Hiring: 500 Transcribe Notta Jobs | Indeed",
+   "u": "https://www.indeed.com/q-transcribe-notta-jobs.html",
+   "s": "Browse 531 Transcribe Notta jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Notta」 Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/notta%E3%80%8D-jobs",
+   "s": "Today's top Notta」 jobs in United States. Leverage your professional network, and get hired. New Notta」 jobs added daily."
+  },
+  {
+   "t": "Notta Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/%EF%BD%8Eotta-jobs",
+   "s": "Today's top 11,000+ Notta jobs in United States. Leverage your professional network, and get hired. New Notta jobs added daily."
+  },
+  {
+   "t": "Careers at Noota: Join Our Growing AI Team Today",
+   "u": "https://www.noota.io/join-us",
+   "s": "Explore exciting career opportunities at Noota. Be part of a team that's transforming meetings with AI-driven solutions. Join us and shape the future of work."
+  },
+  {
+   "t": "採用情報 | Notta株式会社",
+   "u": "https://www.notta.ai/recruit",
+   "s": "Notta株式会社の採用サイトです。採用情報のほか、企業理念、事業内容などについての情報を掲載しています。"
+  },
+  {
+   "t": "job openings at Cheyenne Regional Medical Center",
+   "u": "https://careers.cheyenneregional.org/us/en/search-results",
+   "s": "job openings at Cheyenne Regional Medical Center. Browse Our Opportunities and apply today to Cheyenne Regional Medical Center"
+  },
+  {
+   "t": "AI Note Taker | Free AI Meeting Transcription",
+   "u": "https://www.notta.ai/en",
+   "s": "AI Note Taker to Visualize Meeting Decisions Notta is an AI meeting notetaker that turns your meetings, interviews, or lectures into searchable text or visuals."
+  },
+  {
+   "t": "Job Opportunities & Open Positions - Noto Group",
+   "u": "https://www.notogroup.com/jobs?trk=organization_guest_main-feed-card_reshare-text",
+   "s": "Job Search Strategies We have seen that a focused, consistent approach to job hunting gives candidates an edge in a competitive market. Explore our curated libr"
+  },
+  {
+   "t": "Now Hiring: 500 Transcribe Notta Jobs | Indeed",
+   "u": "https://www.indeed.com/q-transcribe-notta-jobs.html",
+   "s": "Browse 531 Transcribe Notta jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "542 Notta. Ai Career jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/notta.-ai-career-jobs",
+   "s": "Today's top 542 Notta. Ai Career jobs in United States. Leverage your professional network, and get hired. New Notta. Ai Career jobs added daily."
+  },
+  {
+   "t": "Careers — Nota AI",
+   "u": "https://www.nota.ai/careers",
+   "s": "Design your work schedule and choose your daily work location"
+  },
+  {
+   "t": "Notta Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/%EF%BD%8Eotta-jobs",
+   "s": "Today's top 11,000+ Notta jobs in United States. Leverage your professional network, and get hired. New Notta jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

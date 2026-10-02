@@ -1,0 +1,29 @@
+{
+ "brand": "Mammotion",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:33:09.576Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "mammotion",
+   "spec": "feishuhire:mammotion",
+   "title": "加入深圳库犸科技有限公司"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:mammotion",
+  "platform": "feishu",
+  "title": "加入深圳库犸科技有限公司",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入深圳库犸科技有限公司",
+  "brand": "Mammotion",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

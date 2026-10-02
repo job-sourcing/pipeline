@@ -1,0 +1,171 @@
+{
+ "brand": "Minisforum",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:38:19.782Z",
+ "candidates": [
+  {
+   "url": "https://job-boards.greenhouse.io/pokemoncareers",
+   "title": "page_title",
+   "status": 200,
+   "bytes": 71460,
+   "markers": [
+    "greenhouse"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "greenhouse:pokemoncareers",
+   "score": 12,
+   "snippet": "By joining The Pokémon Company International, you will become part of a diverse team of talented, enthusiastic people who enjoy the benefits of working for the ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.micron.com/careers/search?query=MINISFORUM",
+   "title": "Careers at Micron Technology",
+   "status": 200,
+   "bytes": 254851,
+   "markers": [
+    "workday",
+    "eightfold"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Minisforum jobs in Micron Technology",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.micron.com/careers/search?query=MINISFORUM%E3%80%8CMGA1%E3%80%8D",
+   "title": "Careers at Micron Technology",
+   "status": 200,
+   "bytes": 254875,
+   "markers": [
+    "workday",
+    "eightfold"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Minisforum「Mga1」 jobs in Micron Technology",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "MINISFORUM - LinkedIn",
+   "u": "https://www.linkedin.com/company/minisforum/",
+   "s": "MINISFORUM was born among a group of computer engineers passionate about advanced technology—passion for redefining the power of mini PCs. Product first Custome"
+  },
+  {
+   "t": "Careers | MINISO",
+   "u": "https://www.miniso-us.com/careers",
+   "s": "Careers at MINISO USA Be part of a global brand that celebrates creativity, fun, and growth! View Open Positions"
+  },
+  {
+   "t": "Jobs at The Pokémon Company International - Greenhouse Software",
+   "u": "https://job-boards.greenhouse.io/pokemoncareers",
+   "s": "By joining The Pokémon Company International, you will become part of a diverse team of talented, enthusiastic people who enjoy the benefits of working for the "
+  },
+  {
+   "t": "Work Stations - Refurbished.MINISFORUM",
+   "u": "https://refurbished.minisforum.com/collections/work-stations",
+   "s": "Take a look at Minisforum Refurbished Store! Best price for Refurbished Mini PC. Get refurbished products powered by AMD and Intel at the lowest prices."
+  },
+  {
+   "t": "MINISFORUM Mini PC | Global Brand & Edge AI Solutions",
+   "u": "https://www.minisforum.com/",
+   "s": "Explore the official MINISFORUM brand site. Discover our enterprise MINISFORUM Mini PC solutions, edge AI workstations, AI NAS, and custom B2B hardware."
+  },
+  {
+   "t": "MINISFORUM丨Refurbished丨 Mini PCs, Workstations, NAS & More",
+   "u": "https://refurbished.minisforum.com/",
+   "s": "Take a look at Minisforum Refurbished Store! Best price for Refurbished Mini PC. Get refurbished products powered by AMD and Intel at the lowest prices."
+  },
+  {
+   "t": "About MINISFORUM | Trusted by 4M+ Users in 100+ Countries",
+   "u": "https://store.minisforum.com/pages/about-us",
+   "s": "Learn about MINISFORUM, an award-winning Mini PC and AI Workstation brand. Trusted by 4M+ global users across 100+ countries with 10+ innovation awards."
+  },
+  {
+   "t": "Where To Buy - minisforum.com",
+   "u": "https://www.minisforum.com/pages/where-to-buy",
+   "s": "Explore the official MINISFORUM brand site. Discover our enterprise MINISFORUM Mini PC solutions, edge AI workstations, AI NAS, and custom B2B hardware."
+  },
+  {
+   "t": "141 Minisforum About Us Jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/minisforum-about-us-jobs",
+   "s": "Today's top 141 Minisforum About Us jobs in United States. Leverage your professional network, and get hired. New Minisforum About Us jobs added daily."
+  },
+  {
+   "t": "MINISFORUM - LinkedIn",
+   "u": "https://www.linkedin.com/company/minisforum/",
+   "s": "MINISFORUM was born among a group of computer engineers passionate about advanced technology—passion for redefining the power of mini PCs. Product first Custome"
+  },
+  {
+   "t": "Careers at Micron Technology",
+   "u": "https://careers.micron.com/careers/search?query=MINISFORUM",
+   "s": "Minisforum jobs in Micron Technology"
+  },
+  {
+   "t": "MINISFORUM Mini PC | Global Brand & Edge AI Solutions",
+   "u": "https://www.minisforum.com/",
+   "s": "Explore the official MINISFORUM brand site. Discover our enterprise MINISFORUM Mini PC solutions, edge AI workstations, AI NAS, and custom B2B hardware."
+  },
+  {
+   "t": "Working at MINISFORUM | Glassdoor",
+   "u": "https://www.glassdoor.com/Overview/Working-at-MINISFORUM-EI_IE6692870.11,21.htm",
+   "s": "See what employees say it's like to work at MINISFORUM. Salaries, reviews, and more - all posted by employees working at MINISFORUM."
+  },
+  {
+   "t": "MINISFORUM丨Refurbished丨 Mini PCs, Workstations, NAS & More",
+   "u": "https://refurbished.minisforum.com/",
+   "s": "Take a look at Minisforum Refurbished Store! Best price for Refurbished Mini PC. Get refurbished products powered by AMD and Intel at the lowest prices."
+  },
+  {
+   "t": "MINISFORUM - Facebook",
+   "u": "https://www.facebook.com/Minisforumofficial/",
+   "s": "The MINISFORUM MS-S1 MAX-P495 AI Workstation is now available to order! 🚀 Powered by the AMD Ryzen™ AI Max+ Pro 495 processor and up to 192GB of unified memory"
+  },
+  {
+   "t": "Careers at Bechtel Corporation | Bechtel Corporation jobs",
+   "u": "https://jobs.bechtel.com/",
+   "s": "At Bechtel, we are committed to fostering an inclusive culture where every individual feels a profound sense of belonging and value. Our dedication to safety an"
+  },
+  {
+   "t": "Careers at Micron Technology",
+   "u": "https://careers.micron.com/careers/search?query=MINISFORUM%E3%80%8CMGA1%E3%80%8D",
+   "s": "Minisforum「Mga1」 jobs in Micron Technology"
+  },
+  {
+   "t": "Careers at Micron Technology",
+   "u": "https://careers.micron.com/careers/search?query=MINISFORUM",
+   "s": "Minisforum jobs in Micron Technology"
+  },
+  {
+   "t": "MINISFORUM - LinkedIn",
+   "u": "https://www.linkedin.com/company/minisforum/",
+   "s": "MINISFORUM was born among a group of computer engineers passionate about advanced technology—passion for redefining the power of mini PCs. Product first Custome"
+  },
+  {
+   "t": "141 Minisforum About Us Jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/minisforum-about-us-jobs",
+   "s": "Today's top 141 Minisforum About Us jobs in United States. Leverage your professional network, and get hired. New Minisforum About Us jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://job-boards.greenhouse.io/pokemoncareers",
+  "title": "page_title",
+  "status": 200,
+  "bytes": 71460,
+  "markers": [
+   "greenhouse"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "greenhouse:pokemoncareers",
+  "score": 12,
+  "snippet": "By joining The Pokémon Company International, you will become part of a diverse team of talented, enthusiastic people who enjoy the benefits of working for the ",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
+}

@@ -1,0 +1,151 @@
+{
+ "brand": "Olight",
+ "tier": "probe_A",
+ "lca": "OLIGHTSTORE USA INC",
+ "ts": "2026-10-02T13:43:25.455Z",
+ "candidates": [
+  {
+   "url": "https://www.olight.com/",
+   "title": "Olight Official Premium Flashlights &amp; Illumination Tools - Olight",
+   "status": 200,
+   "bytes": 347334,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Explore to Olight Official. Discover Olight legacy of high-performance illumination tools. Explore innovative tactical lights, EDC flashlights, pen flashlights,",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.olight.com/about-us",
+   "title": "About Us - Olight",
+   "status": 200,
+   "bytes": 298128,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Olight pioneered the world`s hardest and most wear-resistant flashlight using O-Aluminum material. As our toughest aluminum alloy yet, it resists impact, wear, ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.alight.com/",
+   "title": "Careers at Alight | Alight job opportunities",
+   "status": 200,
+   "bytes": 134812,
+   "markers": [
+    "phenom"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Explore career opportunities at Alight and start your journey with us today.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers at Alight | Alight job opportunities",
+   "u": "https://careers.alight.com/",
+   "s": "Explore career opportunities at Alight and start your journey with us today."
+  },
+  {
+   "t": "Olight Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/olight-jobs",
+   "s": "Today's top 11,000+ Olight jobs in United States. Leverage your professional network, and get hired. New Olight jobs added daily."
+  },
+  {
+   "t": "Olight Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Olight",
+   "s": "Find out what works well at Olight from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Olight Official Premium Flashlights & Illumination Tools - Olight",
+   "u": "https://www.olight.com/",
+   "s": "Explore to Olight Official. Discover Olight legacy of high-performance illumination tools. Explore innovative tactical lights, EDC flashlights, pen flashlights,"
+  },
+  {
+   "t": "Careers — nLIGHT",
+   "u": "https://www.nlight.net/careers/",
+   "s": "Careers Create, innovate, and rise with us. The right people are essential to developing our brand and bringing it to life in the products they develop and the "
+  },
+  {
+   "t": "Careers at Alight | Alight job opportunities",
+   "u": "https://careers.alight.com/us/en/leadpage",
+   "s": "We use cookies to offer you a better browsing experience, analyze site traffic, and personalize content. Read about how we use cookies and how you can control t"
+  },
+  {
+   "t": "About Us - Olight",
+   "u": "https://www.olight.com/about-us",
+   "s": "Olight pioneered the world`s hardest and most wear-resistant flashlight using O-Aluminum material. As our toughest aluminum alloy yet, it resists impact, wear, "
+  },
+  {
+   "t": "Olight Company Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/olight-company-jobs",
+   "s": "Today's top 11,000+ Olight Company jobs in United States. Leverage your professional network, and get hired. New Olight Company jobs added daily."
+  },
+  {
+   "t": "Olight Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/olight-jobs",
+   "s": "Today's top 11,000+ Olight jobs in United States. Leverage your professional network, and get hired. New Olight jobs added daily."
+  },
+  {
+   "t": "Olight Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Olight",
+   "s": "Find out what works well at Olight from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Olight Company Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/olight-company-jobs",
+   "s": "Today's top 11,000+ Olight Company jobs in United States. Leverage your professional network, and get hired. New Olight Company jobs added daily."
+  },
+  {
+   "t": "Careers at Alight | Alight job opportunities",
+   "u": "https://careers.alight.com/",
+   "s": "Important information: In an effort to avoid job scams, please keep in mind the items below regarding opportunities at Alight Solutions."
+  },
+  {
+   "t": "O Light Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-O-Light-jobs.html",
+   "s": "Full job description O Light Body Bar We're looking for a friendly, professional, and dependable Front Desk Receptionist to join the O Light Body Bar team."
+  },
+  {
+   "t": "Careers | OpenLight Photonics",
+   "u": "https://openlightphotonics.com/careers",
+   "s": "Learn more about OpenLight and view our current open positions"
+  },
+  {
+   "t": "Home | Microsoft Careers",
+   "u": "https://careers.microsoft.com/v2/global/en/home.html?lc=Cheyenne%2C%20Wyoming%2C%20United%20States&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true",
+   "s": "When you join Microsoft, you're not just stepping into a job— you're stepping into a mission-driven company where purpose is at the heart of everything we do. O"
+  },
+  {
+   "t": "Olight - Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Olight",
+   "s": "Olight is a flashlight manufacturer [1] that was founded in 2007 by Fox Fan. [2] The brand is headquartered in Zhongshan, China, [3] and maintains operations in"
+  },
+  {
+   "t": "Olight Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Olight",
+   "s": "Find out what works well at Olight from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Olight Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/olight-jobs",
+   "s": "Today's top 11,000+ Olight jobs in United States. Leverage your professional network, and get hired. New Olight jobs added daily."
+  },
+  {
+   "t": "Olight Company Jobs in United States (11,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/olight-company-jobs",
+   "s": "Today's top 11,000+ Olight Company jobs in United States. Leverage your professional network, and get hired. New Olight Company jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 5,000 Jobs in Cheyenne, WY | Indeed",
+   "u": "https://www.indeed.com/l-cheyenne,-wy-jobs.html",
+   "s": "Browse 5,302 jobs in Cheyenne, WY. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

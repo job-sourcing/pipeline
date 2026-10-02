@@ -1,0 +1,16 @@
+{
+ "brand": "Medicilon",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:33:52.111Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://medicilon.com/careers/",
+  "platform": "custom",
+  "title": "Careers - Medicilon",
+  "via": "guess"
+ },
+ "verdict": "custom_surface"
+}

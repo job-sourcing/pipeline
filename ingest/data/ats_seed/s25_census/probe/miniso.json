@@ -1,0 +1,157 @@
+{
+ "brand": "MINISO",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:31:22.540Z",
+ "candidates": [
+  {
+   "url": "https://www.miniso-us.com/careers",
+   "title": "",
+   "status": 200,
+   "bytes": 1815423,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers at MINISO USA Be part of a global brand that celebrates creativity, fun, and growth! View Open Positions",
+   "backend": "direct"
+  },
+  {
+   "url": "https://miniso-ca.com/pages/careers",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 107827,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Apply Now Fill out the form below and our team will get back to you.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.minisoindia.com/career/?jid=5544",
+   "title": "Career | Miniso",
+   "status": 200,
+   "bytes": 47658,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "MINISO brings shoppers high-quality, stylish and affordable designer products through a wide range of product categories including skincare & cosmetics, home fu",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | MINISO",
+   "u": "https://www.miniso-us.com/careers",
+   "s": "Careers at MINISO USA Be part of a global brand that celebrates creativity, fun, and growth! View Open Positions"
+  },
+  {
+   "t": "Miniso Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Miniso",
+   "s": "Find out what works well at Miniso from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Careers - miniso-ca.com",
+   "u": "https://miniso-ca.com/pages/careers",
+   "s": "Apply Now Fill out the form below and our team will get back to you."
+  },
+  {
+   "t": "Career | Miniso",
+   "u": "https://www.minisoindia.com/career/?jid=5544",
+   "s": "MINISO brings shoppers high-quality, stylish and affordable designer products through a wide range of product categories including skincare & cosmetics, home fu"
+  },
+  {
+   "t": "Miniso Jobs and Careers | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Miniso/jobs",
+   "s": "543 Miniso jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "Careers | MINISO - minisoshop.co.uk",
+   "u": "https://minisoshop.co.uk/careers",
+   "s": "At MINISO UK, we believe that a great shopping experience starts with an amazing team. As a fast-growing lifestyle and retail brand, we're always looking for pa"
+  },
+  {
+   "t": "MINISO",
+   "u": "https://www.miniso.com/",
+   "s": "MINISO has introduced the highly anticipated BT21 series of IP products, with a variety of new items now available online, providing consumers with a fresh shop"
+  },
+  {
+   "t": "Miniso Careers - MINISO TUYỂN DỤNG TOÀN QUỐC ... - Facebook",
+   "u": "https://www.facebook.com/MinisoCareers/posts/-miniso-tuy%E1%BB%83n-d%E1%BB%A5ng-to%C3%A0n-qu%E1%BB%91c-b%E1%BA%A1n-%C4%91ang-t%C3%ACm-m%E1%BB%99t-c%C3%B4ng-vi%E1%BB%87c-v%E1%BB%9Bi-m%C3%B4i-tr%C6%B0%E1%BB%9Dng-tr%E1%BA%BB-trung/1042607991862235/",
+   "s": "MINISO TUYỂN DỤNG TOÀN QUỐC Bạn đang tìm một công việc với môi trường trẻ trung, năng động và nhiều cơ hội phát triển? Gia nhập đội ngũ Miniso ngay hôm nay! Vị "
+  },
+  {
+   "t": "Careers | MINISO",
+   "u": "https://www.miniso-us.com/careers",
+   "s": "Careers at MINISO USA Be part of a global brand that celebrates creativity, fun, and growth! View Open Positions"
+  },
+  {
+   "t": "Miniso Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Miniso",
+   "s": "Find out what works well at Miniso from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Now Hiring: 400 Miniso Jobs | Indeed",
+   "u": "https://www.indeed.com/q-miniso-jobs-jobs.html",
+   "s": "Browse 409 Miniso jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers - miniso-ca.com",
+   "u": "https://miniso-ca.com/pages/careers",
+   "s": "Apply Now Fill out the form below and our team will get back to you."
+  },
+  {
+   "t": "Miniso Jobs in United States (542 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/miniso-jobs",
+   "s": "Today's top 542 Miniso jobs in United States. Leverage your professional network, and get hired. New Miniso jobs added daily."
+  },
+  {
+   "t": "MINISO USA Talent Community Apply",
+   "u": "https://talent.miniso-us.com/",
+   "s": "Miniso Depot CA Inc. Connect with Us! Join our talent community to keep up to date about the latest job opportunities and company news."
+  },
+  {
+   "t": "Careers | MINISO",
+   "u": "https://minisoshop.co.uk/careers",
+   "s": "At MINISO UK, we believe that a great shopping experience starts with an amazing team. As a fast-growing lifestyle and retail brand, we're always looking for pa"
+  },
+  {
+   "t": "Now Hiring: 400 Miniso Job Vacancies Jobs | Indeed",
+   "u": "https://www.indeed.com/q-miniso-job-vacancies-jobs.html",
+   "s": "Browse 438 Miniso Job Vacancies jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Careers | MINISO",
+   "u": "https://www.miniso-us.com/careers",
+   "s": "Careers at MINISO USA Be part of a global brand that celebrates creativity, fun, and growth! View Open Positions"
+  },
+  {
+   "t": "Miniso Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Miniso",
+   "s": "Find out what works well at Miniso from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay fo"
+  },
+  {
+   "t": "Miniso Jobs and Careers | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Miniso/jobs",
+   "s": "543 Miniso jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "Miniso Jobs in United States (542 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/miniso-jobs",
+   "s": "Today's top 542 Miniso jobs in United States. Leverage your professional network, and get hired. New Miniso jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://miniso-ca.com/pages/careers",
+  "platform": "teamtailor",
+  "title": "Careers"
+ },
+ "verdict": "marker_surface"
+}

@@ -1,0 +1,29 @@
+{
+ "brand": "Makeblock",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:32:52.891Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "makeblock",
+   "spec": "feishuhire:makeblock",
+   "title": "来 xTool ，让更多人享受创造的乐趣"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:makeblock",
+  "platform": "feishu",
+  "title": "来 xTool ，让更多人享受创造的乐趣",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "来 xTool ，让更多人享受创造的乐趣",
+  "brand": "Makeblock",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

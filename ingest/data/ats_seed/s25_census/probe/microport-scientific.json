@@ -1,0 +1,16 @@
+{
+ "brand": "MicroPort Scientific",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:35:24.363Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [],
+ "best": {
+  "url": "https://microport.com/careers",
+  "platform": "moka",
+  "title": "Careers | Job Opportunities | MicroPort",
+  "via": "guess"
+ },
+ "verdict": "marker_surface"
+}

@@ -1,0 +1,154 @@
+{
+ "brand": "Morph AI",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:41:14.790Z",
+ "candidates": [
+  {
+   "url": "https://www.morph.so/careers/",
+   "title": "Careers | Morph",
+   "status": 200,
+   "bytes": 2300,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "careers Member of Technical Staff Morph Labs is hiring researcher-engineers to build infrastructure for AI agents. At Morph Labs, we believe that scheduling inv",
+   "backend": "direct"
+  },
+  {
+   "url": "https://morph.systems/careers",
+   "title": "Careers at Morph | Build the Future of Autonomous App Delivery",
+   "status": 200,
+   "bytes": 297229,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At Morph Systems, we're reimagining software engineering for a world where most code is written by large language models (LLMs). Our mission is to build the dev",
+   "backend": "direct"
+  },
+  {
+   "url": "https://morph.network/careers",
+   "title": "Morph Network Jobs | Build the Future of blockchain and onchain payments | Morph",
+   "status": 200,
+   "bytes": 61951,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join Morph's global team and build next-gen on-chain consumer infrastructure. Explore careers in blockchain engineering, marketing, and web3 payments.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers | Morph",
+   "u": "https://www.morph.so/careers/",
+   "s": "careers Member of Technical Staff Morph Labs is hiring researcher-engineers to build infrastructure for AI agents. At Morph Labs, we believe that scheduling inv"
+  },
+  {
+   "t": "Careers at Morph | Build the Future of Autonomous App Delivery",
+   "u": "https://morph.systems/careers",
+   "s": "At Morph Systems, we're reimagining software engineering for a world where most code is written by large language models (LLMs). Our mission is to build the dev"
+  },
+  {
+   "t": "Morph Network Jobs | Build the Future of blockchain and onchain ...",
+   "u": "https://morph.network/careers",
+   "s": "Join Morph's global team and build next-gen on-chain consumer infrastructure. Explore careers in blockchain engineering, marketing, and web3 payments."
+  },
+  {
+   "t": "Morph",
+   "u": "https://www.morph.so/",
+   "s": "Morph Cloud - Infrastructure for AI agents with instant environment branching and burst scalability. Deploy, branch, and scale computational environments in mil"
+  },
+  {
+   "t": "Morph Labs",
+   "u": "https://morphlabs.tech/join",
+   "s": "The more people use Morph, the more robust the representations of motor intent become—generalizing across users and contexts. Interested in research partnership"
+  },
+  {
+   "t": "MorpheLabs | AI Automation & Voice Agents for Business",
+   "u": "https://www.morphelabs.org/careers",
+   "s": "MorpheLabs builds custom AI voice agents, chatbots, workflow automation, and intelligent business solutions. Transform your operations with cutting-edge AI tech"
+  },
+  {
+   "t": "Morph Jobs | Careers and Open Roles | Fursa",
+   "u": "https://fursa.io/company/morph",
+   "s": "Browse live AI & Machine Learning jobs at Morph and apply directly. Morph open roles on Fursa, updated continuously from the source."
+  },
+  {
+   "t": "Morph Jobs in United States (10,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/morph-jobs",
+   "s": "Today's top 10,000+ Morph jobs in United States. Leverage your professional network, and get hired. New Morph jobs added daily."
+  },
+  {
+   "t": "Careers | Morph",
+   "u": "https://www.morph.so/careers/",
+   "s": "At Morph Labs, we believe that scheduling inventions is a skill issue. We are seeking unusually talented researcher-engineers to help us design, prototype, debu"
+  },
+  {
+   "t": "Morph Network Jobs | Build the Future of blockchain and onchain ...",
+   "u": "https://morph.network/careers",
+   "s": "Join Morph's global team and build next-gen on-chain consumer infrastructure. Explore careers in blockchain engineering, marketing, and web3 payments."
+  },
+  {
+   "t": "Morphe Ai Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/morphe-ai-jobs",
+   "s": "Today's top 7,000+ Morphe Ai jobs in United States. Leverage your professional network, and get hired. New Morphe Ai jobs added daily."
+  },
+  {
+   "t": "Morph Jobs | Careers and Open Roles | Fursa",
+   "u": "https://fursa.io/company/morph",
+   "s": "Browse live AI & Machine Learning jobs at Morph and apply directly. Morph open roles on Fursa, updated continuously from the source."
+  },
+  {
+   "t": "Careers at Morph | Build the Future of Autonomous App Delivery",
+   "u": "https://morph.systems/careers",
+   "s": "At Morph Systems, we're reimagining software engineering for a world where most code is written by large language models (LLMs). Our mission is to build the dev"
+  },
+  {
+   "t": "Morph Labs",
+   "u": "https://morphlabs.tech/join",
+   "s": "The more people use Morph, the more robust the representations of motor intent become—generalizing across users and contexts. Interested in research partnership"
+  },
+  {
+   "t": "Morph.ai - LinkedIn",
+   "u": "https://www.linkedin.com/company/morph-ai",
+   "s": "Morph.ai Technology, Information and Internet Palo Alto, CA 250 followers Bringing Generative AI to the Enterprise"
+  },
+  {
+   "t": "Jobs at Morph - Y Combinator",
+   "u": "https://www.ycombinator.com/companies/morph/jobs",
+   "s": "Jobs at Morph Morph builds specialized code-generation models and serves them on a custom inference stack. Technical work involves autoresearch for kernels and "
+  },
+  {
+   "t": "Careers | Morph",
+   "u": "https://www.morph.so/careers/",
+   "s": "careers Member of Technical Staff Morph Labs is hiring researcher-engineers to build infrastructure for AI agents. At Morph Labs, we believe that scheduling inv"
+  },
+  {
+   "t": "Careers at Morph | Build the Future of Autonomous App Delivery",
+   "u": "https://morph.systems/careers",
+   "s": "At Morph Systems, we're reimagining software engineering for a world where most code is written by large language models (LLMs). Our mission is to build the dev"
+  },
+  {
+   "t": "Morph Jobs | Careers and Open Roles | Fursa",
+   "u": "https://fursa.io/company/morph",
+   "s": "Browse live AI & Machine Learning jobs at Morph and apply directly. Morph open roles on Fursa, updated continuously from the source."
+  },
+  {
+   "t": "Morph Network Jobs | Build the Future of blockchain and onchain ...",
+   "u": "https://morph.network/careers",
+   "s": "Join Morph's global team and build next-gen on-chain consumer infrastructure. Explore careers in blockchain engineering, marketing, and web3 payments."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.morph.so/careers/",
+  "platform": "custom",
+  "title": "Careers | Morph"
+ },
+ "verdict": "custom_surface"
+}

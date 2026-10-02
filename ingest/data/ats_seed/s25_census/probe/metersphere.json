@@ -1,0 +1,152 @@
+{
+ "brand": "MeterSphere",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:34:53.420Z",
+ "candidates": [
+  {
+   "url": "https://metersphere.io/",
+   "title": "MeterSphere - 新一代的开源持续测试工具",
+   "status": 200,
+   "bytes": 29543,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "MeterSphere 是新一代的开源持续测试工具，内置 AI 助手，让软件测试工作更简单、更高效，不再成为持续交付的瓶颈。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.medsphere.com/careers/",
+   "title": "Mesphere Careers",
+   "status": 200,
+   "bytes": 80473,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Careers Health IT Careers with Medsphere If you share a passion for our ideals and objectives and a creative drive to make them happen, consider joining us at o",
+   "backend": "direct"
+  },
+  {
+   "url": "https://metergroup.com/meter-group/job-opportunities/",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5836,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Join METER Group and make a global impact! Browse our current job openings and take the next step in your professional journey.",
+   "backend": "direct",
+   "cf_challenge": true
+  }
+ ],
+ "results": [
+  {
+   "t": "Mesphere Careers",
+   "u": "https://www.medsphere.com/careers/",
+   "s": "Careers Health IT Careers with Medsphere If you share a passion for our ideals and objectives and a creative drive to make them happen, consider joining us at o"
+  },
+  {
+   "t": "Metasphere - LinkedIn",
+   "u": "https://www.linkedin.com/company/metasphere-ltd",
+   "s": "Metasphere's core purpose is: 'To use telemetry to drive sustainable use of the world's natural resources.' Bringing together intelligent, efficient communicati"
+  },
+  {
+   "t": "Job opportunities - METER Group",
+   "u": "https://metergroup.com/meter-group/job-opportunities/",
+   "s": "Join METER Group and make a global impact! Browse our current job openings and take the next step in your professional journey."
+  },
+  {
+   "t": "Labsphere Careers - Find a Job that ILLUMINATES You",
+   "u": "https://www.labsphere.com/careers/",
+   "s": "Come work for a growing, innovative, fast-paced company! Labsphere is a world-leading photonics and light measurement company with a rich 40+ year history."
+  },
+  {
+   "t": "Remote Monitoring Solutions - Experts- Metasphere.",
+   "u": "https://metasphere.co.uk/",
+   "s": "Remote monitoring solutions: Specialising in water, wastewater, gas&environment, Metasphere are experienced in the remote monitoring business."
+  },
+  {
+   "t": "Careers at Thermo Fisher Scientific | Thermo Fisher Scientific jobs",
+   "u": "https://jobs.thermofisher.com/",
+   "s": "Browse available job openings at Thermo Fisher Scientific. Explore the professional possibilities at Thermo Fisher Scientific, and join us"
+  },
+  {
+   "t": "Create the Future - METER Group",
+   "u": "https://metergroup.com/company/careers/",
+   "s": "Discover exciting career opportunities at METER Group. Our team is dedicated to developing solutions for environmental research and agriculture."
+  },
+  {
+   "t": "MeterSphere - 新一代的开源持续测试工具",
+   "u": "https://metersphere.io/",
+   "s": "MeterSphere 是新一代的开源持续测试工具，内置 AI 助手，让软件测试工作更简单、更高效，不再成为持续交付的瓶颈。"
+  },
+  {
+   "t": "MetaSphere Technologies Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Metasphere-Technologies",
+   "s": "Find out what works well at MetaSphere Technologies from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insight"
+  },
+  {
+   "t": "Metasphere Hub Jobs in Worldwide (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/metasphere-hub-jobs-worldwide",
+   "s": "Today's top 1,000+ Metasphere Hub jobs in Worldwide. Leverage your professional network, and get hired. New Metasphere Hub jobs added daily."
+  },
+  {
+   "t": "Careers - Metro Sphere Estate",
+   "u": "https://metrosphere.in/careers",
+   "s": "Careers at Metro Sphere Why Build Your Career with Metro Sphere? We're more than a real estate company — we're a high-performing team designing the future of ur"
+  },
+  {
+   "t": "MeterSphere - 新一代的开源持续测试工具",
+   "u": "https://metersphere.io/",
+   "s": "MeterSphere 是新一代的开源持续测试工具，内置 AI 助手，让软件测试工作更简单、更高效，不再成为持续交付的瓶颈。"
+  },
+  {
+   "t": "Careers - Meta Sphere",
+   "u": "https://metaspheretechnologies.com/careers.php",
+   "s": "Join Our Team at Metaspheretechnologies Are you passionate about creativity, design, and innovation? Are you ready to contribute your skills to a dynamic team t"
+  },
+  {
+   "t": "6,000+ Metasphere 2026 jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/metasphere-2026-jobs",
+   "s": "Today's top 6,000+ Metasphere 2026 jobs in United States. Leverage your professional network, and get hired. New Metasphere 2026 jobs added daily."
+  },
+  {
+   "t": "Open Positions | Metasphere",
+   "u": "https://msphere.io/careers/",
+   "s": "Careers at Metasphere. Open engineering positions in DevOps, backend development, AI/ML, and cloud infrastructure. Join our engineering team at Ahmedabad, IN."
+  },
+  {
+   "t": "job openings at Cheyenne Regional Medical Center",
+   "u": "https://careers.cheyenneregional.org/us/en/search-results",
+   "s": "job openings at Cheyenne Regional Medical Center. Browse Our Opportunities and apply today to Cheyenne Regional Medical Center"
+  },
+  {
+   "t": "Labsphere Careers - Find a Job that ILLUMINATES You",
+   "u": "https://www.labsphere.com/careers/",
+   "s": "Come work for a growing, innovative, fast-paced company! Labsphere is a world-leading photonics and light measurement company with a rich 40+ year history."
+  },
+  {
+   "t": "Job opportunities - METER Group",
+   "u": "https://metergroup.com/meter-group/job-opportunities/",
+   "s": "Join METER Group and make a global impact! Browse our current job openings and take the next step in your professional journey."
+  },
+  {
+   "t": "Now Hiring: 5,000 Jobs in Cheyenne, WY | Indeed",
+   "u": "https://www.indeed.com/l-cheyenne,-wy-jobs.html",
+   "s": "Browse 5,302 jobs in Cheyenne, WY. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "HireWYO - Wyoming Department of Workforce Services",
+   "u": "https://dws.wyo.gov/resources-tools/hirewyo/",
+   "s": "Welcome to HireWyo.com, Wyoming's premier online job board designed to connect skilled job seekers with top employers across the state. If you're an employer, y"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

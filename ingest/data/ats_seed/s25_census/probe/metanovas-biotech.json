@@ -1,0 +1,149 @@
+{
+ "brand": "Metanovas Biotech",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:34:20.679Z",
+ "candidates": [
+  {
+   "url": "https://www.employbl.com/companies/metanovas-biotech/jobs",
+   "title": "Vercel Security Checkpoint",
+   "status": 429,
+   "bytes": 31193,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Find your next job at Metanovas Biotech! See all jobs, funding information, investors and more about thousands of startups and tech companies on Employbl.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://metanovas.bio/",
+   "title": "MetaNovas AI",
+   "status": 200,
+   "bytes": 1301,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "MetaNovas Biotech is an innovative biotechnology company established in early 2021 in Los Angeles, USA and Shanghai, China. Our mission is to integrate artifici",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.metanovas.com/",
+   "title": "Landing site",
+   "status": 200,
+   "bytes": 872,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "MetaNovas Biotech Evidence-backed active compounds trusted by leading personal care and health brands globally.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "MetaNovas AI",
+   "u": "https://metanovas.bio/",
+   "s": "MetaNovas Biotech is an innovative biotechnology company established in early 2021 in Los Angeles, USA and Shanghai, China. Our mission is to integrate artifici"
+  },
+  {
+   "t": "MetaNovas - Landing site",
+   "u": "https://www.metanovas.com/",
+   "s": "MetaNovas Biotech Evidence-backed active compounds trusted by leading personal care and health brands globally."
+  },
+  {
+   "t": "MetaNovas AI",
+   "u": "https://metanovas.bio/contact-us",
+   "s": "hr@metanovas.com Career & Talent bd@metanovas.com Business Development & Partnerships pr@metanovas.com Press & Media Relations MetaNovas Biotech →MetaNovas Biot"
+  },
+  {
+   "t": "Jobs at Metanovas Biotech - employbl.com",
+   "u": "https://www.employbl.com/companies/metanovas-biotech/jobs",
+   "s": "Find your next job at Metanovas Biotech! See all jobs, funding information, investors and more about thousands of startups and tech companies on Employbl."
+  },
+  {
+   "t": "MetaNovas Biotech H1B Visa Data - Salaries, Applications & Approval ...",
+   "u": "https://www.h1btrends.com/h1b/company/metanovas-biotech",
+   "s": "MetaNovas Biotech is a H1B sponsor based in Foster City, CA. The company has filed 3 H1B labor condition applications with a 100% approval rate and a median sal"
+  },
+  {
+   "t": "MetaNovas AI - LinkedIn",
+   "u": "https://www.linkedin.com/company/metanovas-ai",
+   "s": "MetaNovas builds the AI Operating System for Consumer Innovation. We operate two core business pillars: 🧬 MetaNovas Biotech — Our agentic AI-powered material d"
+  },
+  {
+   "t": "MetaNovas Biotech | Cosmetics & Toiletries",
+   "u": "https://www.cosmeticsandtoiletries.com/home/company/22887591/metanovas-biotech",
+   "s": "MetaNovas Biotech is a vanguard in the health and beauty industry, acclaimed for our strategic partnerships with illustrious global brands such as L'Oréal, Beie"
+  },
+  {
+   "t": "Metanovas Biotech, Inc. H-1B Sponsorship & Salaries 2026",
+   "u": "https://h1bsalary.net/h1b-sponsors/metanovas-biotech-inc",
+   "s": "Metanovas Biotech, Inc. has filed 5 H-1B LCAs (FY2017-2026). Salaries by role and location, green-card (PERM) filings, and current openings."
+  },
+  {
+   "t": "MetaNovas - Landing site",
+   "u": "https://www.metanovas.com/",
+   "s": "MetaNovas Biotech Evidence-backed active compounds trusted by leading personal care and health brands globally."
+  },
+  {
+   "t": "MetaNovas AI",
+   "u": "https://metanovas.bio/",
+   "s": "MetaNovas Biotech is an innovative biotechnology company established in early 2021 in Los Angeles, USA and Shanghai, China. Our mission is to integrate artifici"
+  },
+  {
+   "t": "Jobs at Metanovas Biotech - employbl.com",
+   "u": "https://www.employbl.com/companies/metanovas-biotech/jobs",
+   "s": "Find your next job at Metanovas Biotech! See all jobs, funding information, investors and more about thousands of startups and tech companies on Employbl."
+  },
+  {
+   "t": "MetaNovas AI - LinkedIn",
+   "u": "https://www.linkedin.com/company/metanovas-ai",
+   "s": "MetaNovas builds the AI Operating System for Consumer Innovation. We operate two core business pillars: 🧬 MetaNovas Biotech — Our agentic AI-powered material d"
+  },
+  {
+   "t": "MetaNovas Biotech | Cosmetics & Toiletries",
+   "u": "https://www.cosmeticsandtoiletries.com/home/company/22887591/metanovas-biotech",
+   "s": "About MetaNovas Biotech MetaNovas Biotech is a vanguard in the health and beauty industry, acclaimed for our strategic partnerships with illustrious global bran"
+  },
+  {
+   "t": "MetaNovas Biotech H1B Visa Data - Salaries, Applications & Approval ...",
+   "u": "https://www.h1btrends.com/h1b/company/metanovas-biotech",
+   "s": "MetaNovas Biotech is a H1B sponsor based in Foster City, CA. The company has filed 3 H1B labor condition applications with a 100% approval rate and a median sal"
+  },
+  {
+   "t": "MetaNovas Biotech 2026 Company Profile: Valuation, Funding ... - PitchBook",
+   "u": "https://pitchbook.com/profiles/company/494471-26",
+   "s": "MetaNovas Biotech General Information Description Manufacturer of biotechnology ingredients designed to accelerate product development and ingredient discovery "
+  },
+  {
+   "t": "MetaNovas AI",
+   "u": "https://metanovas.bio/contact-us",
+   "s": "hr@metanovas.com Career & Talent bd@metanovas.com Business Development & Partnerships pr@metanovas.com Press & Media Relations MetaNovas Biotech →MetaNovas Biot"
+  },
+  {
+   "t": "Jobs at Metanovas Biotech - employbl.com",
+   "u": "https://www.employbl.com/companies/metanovas-biotech/jobs",
+   "s": "Find your next job at Metanovas Biotech! See all jobs, funding information, investors and more about thousands of startups and tech companies on Employbl."
+  },
+  {
+   "t": "MetaNovas - Landing site",
+   "u": "https://www.metanovas.com/",
+   "s": "MetaNovas Biotech Evidence-backed active compounds trusted by leading personal care and health brands globally."
+  },
+  {
+   "t": "MetaNovas AI",
+   "u": "https://metanovas.bio/contact-us",
+   "s": "hr@metanovas.com Career & Talent bd@metanovas.com Business Development & Partnerships pr@metanovas.com Press & Media Relations MetaNovas Biotech →MetaNovas Biot"
+  },
+  {
+   "t": "MetaNovas AI - LinkedIn",
+   "u": "https://www.linkedin.com/company/metanovas-ai",
+   "s": "MetaNovas builds the AI Operating System for Consumer Innovation. We operate two core business pillars: 🧬 MetaNovas Biotech — Our agentic AI-powered material d"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

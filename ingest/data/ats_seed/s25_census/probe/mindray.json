@@ -1,0 +1,167 @@
+{
+ "brand": "Mindray",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T13:37:43.960Z",
+ "candidates": [
+  {
+   "url": "https://apply.workable.com/mindray-north-america/",
+   "title": "Mindray North America - Current Openings",
+   "status": 200,
+   "bytes": 7087,
+   "markers": [
+    "workable"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "workable:mindray-north-america",
+   "score": 15,
+   "snippet": "Mindray North America - Current Openings",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.mindray.com/en/career",
+   "title": "Jobs and Careers - Mindray",
+   "status": 200,
+   "bytes": 225180,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "At Mindray, we value and enrich our people and inspire everyone's potential. You will grow through on-the-job experiences and enjoy a wealth of talent developme",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.mindray.com/na/careers/",
+   "title": "Careers",
+   "status": 200,
+   "bytes": 153725,
+   "markers": [
+    "paylocity"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Mindray North America offers a variety of career opportunities in healthcare solutions, from sales and service to engineering and marketing. Learn about the Min",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Jobs and Careers - Mindray",
+   "u": "https://www.mindray.com/en/career",
+   "s": "At Mindray, we value and enrich our people and inspire everyone's potential. You will grow through on-the-job experiences and enjoy a wealth of talent developme"
+  },
+  {
+   "t": "Careers - Mindray",
+   "u": "https://www.mindray.com/na/careers/",
+   "s": "Mindray North America offers a variety of career opportunities in healthcare solutions, from sales and service to engineering and marketing. Learn about the Min"
+  },
+  {
+   "t": "Mindray Jobs",
+   "u": "https://mindray.jobs.hr.cloud.sap/",
+   "s": "Apply online for jobs at Mindray: Engineering Jobs, Information Technology Jobs, Management Jobs, Manufacturing and Quality Jobs, Purchasing Jobs, Sales & Marke"
+  },
+  {
+   "t": "Mindray North America - Job Opportunities",
+   "u": "https://recruiting.paylocity.com/recruiting/jobs/All/de4f3c8e-1679-4dad-a21b-a3ebaf254893/Mindray-North-America",
+   "s": "Mindray North America Careers Page - View all jobs and opportunities at Mindray North America and apply today. | Powered By Paylocity"
+  },
+  {
+   "t": "Mindray: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/mindray/jobs/",
+   "s": "Mindray | 464,211 followers on LinkedIn. A leading global provider of medical devices and solutions | Founded in 1991, Mindray is one of the leading global prov"
+  },
+  {
+   "t": "Mindray Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Mindray",
+   "s": "Find out what works well at Mindray from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare pay f"
+  },
+  {
+   "t": "Careers - Mindray",
+   "u": "https://mindraytech.com/company/careers",
+   "s": "Careers Build digital content and engagement services for African telecom markets Join the teams building telecom-integrated digital content, subscriber engagem"
+  },
+  {
+   "t": "Mindray North America - Current Openings",
+   "u": "https://apply.workable.com/mindray-north-america/",
+   "s": "Mindray North America - Current Openings"
+  },
+  {
+   "t": "Jobs and Careers - Mindray",
+   "u": "https://www.mindray.com/en/career",
+   "s": "At Mindray, we value and enrich our people and inspire everyone's potential. You will grow through on-the-job experiences and enjoy a wealth of talent developme"
+  },
+  {
+   "t": "Mindray Jobs",
+   "u": "https://mindray.jobs.hr.cloud.sap/",
+   "s": "Apply online for jobs at Mindray: Engineering Jobs, Information Technology Jobs, Management Jobs, Manufacturing and Quality Jobs, Purchasing Jobs, Sales & Marke"
+  },
+  {
+   "t": "Careers - Mindray",
+   "u": "https://www.mindray.com/na/careers/",
+   "s": "To view or apply for current openings, click on the link below: Mindray Current Openings Only those who meet our requirements will be contacted. Mindray DS USA,"
+  },
+  {
+   "t": "Mindray North America - Job Opportunities",
+   "u": "https://recruiting.paylocity.com/recruiting/jobs/All/de4f3c8e-1679-4dad-a21b-a3ebaf254893/Mindray-North-America",
+   "s": "Mindray North America Careers Page - View all jobs and opportunities at Mindray North America and apply today. | Powered By Paylocity"
+  },
+  {
+   "t": "Mindray Jobs, Employment | Indeed",
+   "u": "https://www.indeed.com/q-Mindray-jobs.html",
+   "s": "Browse 1 Mindray jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Mindray: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/mindray/jobs/",
+   "s": "Mindray | 464,211 followers on LinkedIn. A leading global provider of medical devices and solutions | Founded in 1991, Mindray is one of the leading global prov"
+  },
+  {
+   "t": "[Official] Career Opportunities - Mindray",
+   "u": "https://www.mindray.com/en/career/career-search",
+   "s": "Search for the latest job information of Mindray, join us to Bring Better Healthcare."
+  },
+  {
+   "t": "Healthcare Technology Careers | Medical Innovation Jobs - Mindray",
+   "u": "https://www.mindray.com/en_gb/career.html",
+   "s": "Healthcare technology careers with Mindray. Innovative medical devices for the global healthcare markets. Join us or learn more today."
+  },
+  {
+   "t": "Jobs and Careers - Mindray",
+   "u": "https://www.mindray.com/en/career",
+   "s": "At Mindray, we value and enrich our people and inspire everyone's potential. You will grow through on-the-job experiences and enjoy a wealth of talent developme"
+  },
+  {
+   "t": "Careers - Mindray",
+   "u": "https://www.mindray.com/na/careers/",
+   "s": "To view or apply for current openings, click on the link below: Mindray Current Openings Only those who meet our requirements will be contacted. Mindray DS USA,"
+  },
+  {
+   "t": "Mindray Jobs",
+   "u": "https://mindray.jobs.hr.cloud.sap/",
+   "s": "Apply online for jobs at Mindray: Engineering Jobs, Information Technology Jobs, Management Jobs, Manufacturing and Quality Jobs, Purchasing Jobs, Sales & Marke"
+  },
+  {
+   "t": "Mindray North America - Job Opportunities",
+   "u": "https://recruiting.paylocity.com/recruiting/jobs/All/de4f3c8e-1679-4dad-a21b-a3ebaf254893/Mindray-North-America",
+   "s": "Mindray North America Careers Page - View all jobs and opportunities at Mindray North America and apply today. | Powered By Paylocity"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://apply.workable.com/mindray-north-america/",
+  "title": "Mindray North America - Current Openings",
+  "status": 200,
+  "bytes": 7087,
+  "markers": [
+   "workable"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "workable:mindray-north-america",
+  "score": 15,
+  "snippet": "Mindray North America - Current Openings",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
+}
