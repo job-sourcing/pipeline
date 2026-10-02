@@ -1,0 +1,154 @@
+{
+ "brand": "Vozo",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:19:05.756Z",
+ "candidates": [
+  {
+   "url": "https://www.vozohealth.com/career-page",
+   "title": "Careers - Vozohealth",
+   "status": 200,
+   "bytes": 124968,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Careers We are looking for creative and fun individuals Sodales tempor sapien quaerat ipsum congue undo laoreet turpis neque auctor turpis vitae dolor luctus pl",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.vozohealth.com/",
+   "title": "Vozo: EHR, Practice Management, RCM Software for Medical Practices",
+   "status": 200,
+   "bytes": 180380,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Vozo is the most affordable all-in-one EHR, telehealth, and practice management platform that helps you save time, reduce admin work, simplify billing, & care w",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.vizio.com/en/careers/welcome",
+   "title": "Welcome | VIZIO",
+   "status": 200,
+   "bytes": 167484,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "We're excited for you to join the team! At VIZIO, we're one family, united by our passion to bring the most detailed picture, highest-fidelity audio, and the be",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Careers - Vozohealth",
+   "u": "https://www.vozohealth.com/career-page",
+   "s": "Careers We are looking for creative and fun individuals Sodales tempor sapien quaerat ipsum congue undo laoreet turpis neque auctor turpis vitae dolor luctus pl"
+  },
+  {
+   "t": "Welcome | VIZIO",
+   "u": "https://www.vizio.com/en/careers/welcome",
+   "s": "We're excited for you to join the team! At VIZIO, we're one family, united by our passion to bring the most detailed picture, highest-fidelity audio, and the be"
+  },
+  {
+   "t": "Vozo - LinkedIn",
+   "u": "https://www.linkedin.com/company/vozo/",
+   "s": "Vozo is the industry leading EHR platform for healthcare professionals to manage their practices with advanced, informed & personalised care. The platform offer"
+  },
+  {
+   "t": "VIZIO - Walmart Careers",
+   "u": "https://careers.walmart.com/us/en/home/vizio",
+   "s": "VIZIO is a U.S.-based company with offices across the country, dedicated to delivering high-quality entertainment experiences through detailed visuals and premi"
+  },
+  {
+   "t": "Vozo Ia Jobs in United States (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/vozo-ia-jobs",
+   "s": "Today's top 1,000+ Vozo Ia jobs in United States. Leverage your professional network, and get hired. New Vozo Ia jobs added daily."
+  },
+  {
+   "t": "Vozo Careers | Levels.fyi",
+   "u": "https://www.levels.fyi/companies/vozo",
+   "s": "Everything you need to know about Vozo including salaries, levels, benefits, and more."
+  },
+  {
+   "t": "Vozo: EHR, Practice Management, RCM Software for Medical Practices",
+   "u": "https://www.vozohealth.com/",
+   "s": "Vozo is the most affordable all-in-one EHR, telehealth, and practice management platform that helps you save time, reduce admin work, simplify billing, & care w"
+  },
+  {
+   "t": "VOZ Advisors | Join Our Strategic Advocacy Team",
+   "u": "https://vozadvisors.com/careers/",
+   "s": "Join VOZ Advisors and make an impact. Explore career opportunities in patient advocacy, strategic consulting, and health equity."
+  },
+  {
+   "t": "Welcome | VIZIO",
+   "u": "https://www.vizio.com/en/careers/welcome",
+   "s": "New York, NY Dallas, TX Seattle, WA San Francisco, CA 20 years (and counting) of thoughtful design. VIZIO was founded on a belief that everyone deserves the bes"
+  },
+  {
+   "t": "Vozo Ia Jobs in United States (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/vozo-ia-jobs",
+   "s": "Today's top 1,000+ Vozo Ia jobs in United States. Leverage your professional network, and get hired. New Vozo Ia jobs added daily."
+  },
+  {
+   "t": "VIZIO - Walmart Careers",
+   "u": "https://careers.walmart.com/us/en/home/vizio",
+   "s": "VIZIO is a U.S.-based company with offices across the country, dedicated to delivering high-quality entertainment experiences through detailed visuals and premi"
+  },
+  {
+   "t": "Careers - Vozohealth",
+   "u": "https://www.vozohealth.com/career-page",
+   "s": "CareersWe are looking for creative and fun individualsSodales tempor sapien quaerat ipsum congue undo laoreet turpis neque auctor turpis vitae dolor luctus plac"
+  },
+  {
+   "t": "Vozo AI - LinkedIn",
+   "u": "https://www.linkedin.com/company/vozo-ai",
+   "s": "Vozo AI Online Audio and Video Media Sunnyvale, California 338 followers AI video localization for every layer of video: voice, subtitles, lip sync, and even on"
+  },
+  {
+   "t": "Find a Job | Verizon Careers",
+   "u": "https://mycareer.verizon.com/jobs/",
+   "s": "Explore job vacancies at Verizon. Discover a variety of open positions in sales, customer service, engineering and more that suit your skill set and career inte"
+  },
+  {
+   "t": "Customer Support Representative, Call Center - Walmart Careers",
+   "u": "https://careers.walmart.com/us/en/jobs/R-2596723",
+   "s": "Join Walmart/VIZIO and take your career to the next level! VIZIO is looking for an energetic Technical Support Representative to provide courteous and professio"
+  },
+  {
+   "t": "Now Hiring: 25 Vizio Vizio Jobs | Indeed",
+   "u": "https://www.indeed.com/q-Vizio-Vizio-jobs.html",
+   "s": "Browse 32 Vizio Vizio jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Welcome | VIZIO",
+   "u": "https://www.vizio.com/en/careers/welcome",
+   "s": "We're excited for you to join the team! At VIZIO, we're one family, united by our passion to bring the most detailed picture, highest-fidelity audio, and the be"
+  },
+  {
+   "t": "Vozo Ia Jobs in United States (1,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/vozo-ia-jobs",
+   "s": "Today's top 1,000+ Vozo Ia jobs in United States. Leverage your professional network, and get hired. New Vozo Ia jobs added daily."
+  },
+  {
+   "t": "Careers - Vozohealth",
+   "u": "https://www.vozohealth.com/career-page",
+   "s": "CareersWe are looking for creative and fun individualsSodales tempor sapien quaerat ipsum congue undo laoreet turpis neque auctor turpis vitae dolor luctus plac"
+  },
+  {
+   "t": "VIZIO - Walmart Careers",
+   "u": "https://careers.walmart.com/us/en/home/vizio",
+   "s": "VIZIO is a U.S.-based company with offices across the country, dedicated to delivering high-quality entertainment experiences through detailed visuals and premi"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.vozohealth.com/career-page",
+  "platform": "custom",
+  "title": "Careers - Vozohealth"
+ },
+ "verdict": "custom_surface"
+}

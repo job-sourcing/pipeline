@@ -1,0 +1,29 @@
+{
+ "brand": "XREAL",
+ "tier": "probe_A",
+ "lca": "XREAL INC",
+ "ts": "2026-10-02T14:23:59.590Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "xreal",
+   "spec": "feishuhire:xreal",
+   "title": "加入XREAL"
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:xreal",
+  "platform": "feishu",
+  "title": "加入XREAL",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入XREAL",
+  "brand": "XREAL",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

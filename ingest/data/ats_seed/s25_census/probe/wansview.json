@@ -1,0 +1,149 @@
+{
+ "brand": "Wansview",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:20:10.707Z",
+ "candidates": [
+  {
+   "url": "https://www.wansview.com/career",
+   "title": "Welcome to Wansview",
+   "status": 200,
+   "bytes": 931,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Wansview is a leading security camera technology and service provider, providing security and smart home services for the whole world. Established in 2004, Wans",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.wansview.com/about_contact",
+   "title": "Welcome to Wansview",
+   "status": 200,
+   "bytes": 931,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "About_Contact ꂅ US +1 323 686 3288 ( 9:00 am - 5:00 pm PST Monday to Friday)",
+   "backend": "direct"
+  },
+  {
+   "url": "https://wansview.org/",
+   "title": "Wansview Cloud - Smart Security Camera App for Home Monitoring",
+   "status": 200,
+   "bytes": 349850,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Wansview Cloud app lets you monitor your home security cameras anytime, anywhere. Live streaming, motion alerts, cloud recording, two-way audio, and PTZ control",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Welcome to Wansview",
+   "u": "https://www.wansview.com/career",
+   "s": "Wansview is a leading security camera technology and service provider, providing security and smart home services for the whole world. Established in 2004, Wans"
+  },
+  {
+   "t": "Welcome to Wansview",
+   "u": "https://www.wansview.com/about_contact",
+   "s": "About_Contact ꂅ US +1 323 686 3288 ( 9:00 am - 5:00 pm PST Monday to Friday)"
+  },
+  {
+   "t": "「深圳市网视无忧科技有限公司招聘」-boss直聘",
+   "u": "https://www.zhipin.com/companys/937791b04198236b33J53ty_EA~~.html",
+   "s": "BOSS直聘为求职者提供2026年深圳市网视无忧科技有限公司招聘信息，更有深圳市网视无忧科技有限公司的品牌信息（深圳网视无忧，wansview）、公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，深圳市网视无忧科技有限公司正在线直聘职位，找工作就登录BOSS直聘网站或APP ..."
+  },
+  {
+   "t": "SHEN ZHEN SHI WANG SHI WU YOU KE JI YOU XIAN GONG SI - LinkedIn",
+   "u": "https://www.linkedin.com/company/shenzhen-wansview-technology",
+   "s": "SHEN ZHEN SHI WANG SHI WU YOU KE JI YOU XIAN GONG SI | 61 followers on LinkedIn. Wansview provide security and smart home products to global customers on amazon"
+  },
+  {
+   "t": "Wansview Cloud - Smart Security Camera App for Home Monitoring",
+   "u": "https://wansview.org/",
+   "s": "Wansview Cloud app lets you monitor your home security cameras anytime, anywhere. Live streaming, motion alerts, cloud recording, two-way audio, and PTZ control"
+  },
+  {
+   "t": "Careers | Broadcom",
+   "u": "https://www.broadcom.com/company/careers",
+   "s": "Broadcom is hiring. Search available jobs by role, location, and team. Apply to work at Broadcom today."
+  },
+  {
+   "t": "Planview | Careers",
+   "u": "https://careers.planview.com/careers-home",
+   "s": "Planview | Careers Planview has one mission: to build the future of connected work. Planview is a recognized innovator and industry leader. Our solutions enable"
+  },
+  {
+   "t": "Wansview公式サイト│ホームページ",
+   "u": "https://www.wansview-jp.com/",
+   "s": "Wansview公式サイト│ホームページ 数千円でこの機能はとても良いと思います。仕事の休憩時間にペットの様子を見れるのはとても嬉しいですね。 スマホにこちらのID番号を登録して家族で共有して見れるのもいいです。夜間モードも付いているので暗がりでも大丈夫。首振り機能も左右180度より ..."
+  },
+  {
+   "t": "38 Wansview Q5 jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/wansview-q5-jobs?f_AL=true",
+   "s": "Today's top 38 Wansview Q5 jobs in United States. Leverage your professional network, and get hired. New Wansview Q5 jobs added daily."
+  },
+  {
+   "t": "Welcome to Wansview",
+   "u": "https://www.wansview.com/career",
+   "s": "Wansview is a leading security camera technology and service provider, providing security and smart home services for the whole world. Established in 2004, Wans"
+  },
+  {
+   "t": "Now Hiring: 92,000 Jobs in San Jose, CA | Indeed",
+   "u": "https://www.indeed.com/l-san-jose,-ca-jobs.html",
+   "s": "Browse 92,815 jobs in San Jose, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "9,000+ Now Hiring! jobs in San Jose - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/now-hiring!-jobs-san-jose-ca",
+   "s": "Today's top 9,000+ Now Hiring! jobs in San Jose. Leverage your professional network, and get hired. New Now Hiring! jobs added daily."
+  },
+  {
+   "t": "hiring immediately jobs in San Jose, CA - Indeed",
+   "u": "https://www.indeed.com/q-hiring-immediately-l-san-jose,-ca-jobs.html",
+   "s": "Browse 1,237 Hiring Immediately jobs in San Jose, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "Welcome to Wansview",
+   "u": "https://www.wansview.com/",
+   "s": "Watch on Wansview smart bird feeder with camera - full unboxing, tree install, and first bird visitors! 🐦📦 Wansview Watch on More Videos Wansview A1 Security "
+  },
+  {
+   "t": "Jobs in San Jose, California (8,590+ Jobs) | Joblist",
+   "u": "https://www.joblist.com/l/san-jose-ca",
+   "s": "Find jobs at the best companies hiring right now in San Jose. We have 8,590 roles today including Engineer, Manager, Director, Specialist and many more!"
+  },
+  {
+   "t": "Job Opportunities | City of San Jose Careers - GovernmentJobs.com",
+   "u": "https://www.governmentjobs.com/careers/sanjoseca",
+   "s": "The City of San José is an equal opportunity employer. Applicants for all job openings will be considered without regard to age, race, color, religion, sex, nat"
+  },
+  {
+   "t": "Welcome to Wansview",
+   "u": "https://www.wansview.com/career",
+   "s": "Wansview is a leading security camera technology and service provider, providing security and smart home services for the whole world. Established in 2004, Wans"
+  },
+  {
+   "t": "922 Wansview Camara jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/wansview-camara-jobs?f_AL=true",
+   "s": "Today's top 922 Wansview Camara jobs in United States. Leverage your professional network, and get hired. New Wansview Camara jobs added daily."
+  },
+  {
+   "t": "Now Hiring: 92,000 Jobs in San Jose, CA | Indeed",
+   "u": "https://www.indeed.com/l-san-jose,-ca-jobs.html",
+   "s": "Browse 92,815 jobs in San Jose, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "「深圳市网视无忧科技有限公司招聘」-boss直聘",
+   "u": "https://www.zhipin.com/companys/937791b04198236b33J53ty_EA~~.html",
+   "s": "BOSS直聘为求职者提供2026年深圳市网视无忧科技有限公司招聘信息，更有深圳市网视无忧科技有限公司的品牌信息（深圳网视无忧，wansview）、公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，深圳市网视无忧科技有限公司正在线直聘职位，找工作就登录BOSS直聘网站或APP ..."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

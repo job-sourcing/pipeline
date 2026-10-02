@@ -1,0 +1,156 @@
+{
+ "brand": "Ugreen",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:13:52.931Z",
+ "candidates": [
+  {
+   "url": "https://www.trugreenjobs.com/",
+   "title": "Careers at TruGreen",
+   "status": 200,
+   "bytes": 170036,
+   "markers": [
+    "workday"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Discover rewarding careers at TruGreen! We offer diverse roles in field operations, sales, customer service, and corporate. Join our growing team today!",
+   "backend": "direct"
+  },
+  {
+   "url": "https://us.ugreen.com/pages/join-us",
+   "title": "Join Us\n &ndash; UGREEN US",
+   "status": 200,
+   "bytes": 1176260,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Job description: On behalf of the UGREEN brand, carry out business development, mainly develop channels related to NAS products, integrate internal resources of",
+   "backend": "direct"
+  },
+  {
+   "url": "https://ugreen.io/",
+   "title": "",
+   "status": 200,
+   "bytes": 785914,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "To date, UGREEN has supported over 200,000 change agents in 188 countries, offering actionable sustainability strategies in their full scope and significance. B",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Join Us - UGREEN US",
+   "u": "https://us.ugreen.com/pages/join-us",
+   "s": "Job description: On behalf of the UGREEN brand, carry out business development, mainly develop channels related to NAS products, integrate internal resources of"
+  },
+  {
+   "t": "UGREEN",
+   "u": "https://ugreen.io/",
+   "s": "To date, UGREEN has supported over 200,000 change agents in 188 countries, offering actionable sustainability strategies in their full scope and significance. B"
+  },
+  {
+   "t": "Ugreen Jobs in Worldwide (15 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ugreen-jobs-worldwide",
+   "s": "Today's top 15 Ugreen jobs in Worldwide. Leverage your professional network, and get hired. New Ugreen jobs added daily."
+  },
+  {
+   "t": "Careers at TruGreen",
+   "u": "https://www.trugreenjobs.com/",
+   "s": "Discover rewarding careers at TruGreen! We offer diverse roles in field operations, sales, customer service, and corporate. Join our growing team today!"
+  },
+  {
+   "t": "绿联科技招聘 | Ugreen绿联招聘官网",
+   "u": "https://careers.lulian.cn/",
+   "s": "绿联科技官方招聘平台-与绿联同行成就不凡梦想!探索社会招聘、校园招聘等多样化职位，覆盖研发、设计、市场、运营、客服等领域。绿联提供完善的职业发展路径与创新工作环境，立即投递简历，与绿联共创科技未来!"
+  },
+  {
+   "t": "绿联招聘 - ugreen.zhiye.com",
+   "u": "https://ugreen.zhiye.com/campus",
+   "s": "【PC端】进入，点击自己投递的岗位，进入职位申请页面，右上角【登录】个人账号，在【投递记录】里进行查询! 【移动端】关注【绿联招聘】公众号，点击【绿联招聘】-【校招进度查询】，即可查询个人校招进度哦!"
+  },
+  {
+   "t": "Ugreen Company Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ugreen-company-jobs",
+   "s": "Today's top 7,000+ Ugreen Company jobs in United States. Leverage your professional network, and get hired. New Ugreen Company jobs added daily."
+  },
+  {
+   "t": "Sweetgreen | Careers",
+   "u": "https://careers.sweetgreen.com/",
+   "s": "Sweetgreen Support Center Main Campus Our main campus in sunny Los Angeles is home to a diverse group of people, from chefs to engineers, designers to data scie"
+  },
+  {
+   "t": "Join Us - UGREEN US",
+   "u": "https://us.ugreen.com/pages/join-us",
+   "s": "Job description: On behalf of the UGREEN brand, carry out business development, mainly develop channels related to NAS products, integrate internal resources of"
+  },
+  {
+   "t": "Ugreen Company Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ugreen-company-jobs",
+   "s": "Today's top 7,000+ Ugreen Company jobs in United States. Leverage your professional network, and get hired. New Ugreen Company jobs added daily."
+  },
+  {
+   "t": "Ugreen Jobs in United States (1 Open Role) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ugreen-jobs",
+   "s": "Today's top 1 Ugreen jobs in United States. Leverage your professional network, and get hired. New Ugreen jobs added daily."
+  },
+  {
+   "t": "绿联招聘 - ugreen.zhiye.com",
+   "u": "https://ugreen.zhiye.com/campus",
+   "s": "【PC端】进入，点击自己投递的岗位，进入职位申请页面，右上角【登录】个人账号，在【投递记录】里进行查询! 【移动端】关注【绿联招聘】公众号，点击【绿联招聘】-【校招进度查询】，即可查询个人校招进度哦!"
+  },
+  {
+   "t": "Careers at Micron Technology | Micron Technology",
+   "u": "https://careers.micron.com/careers/search?query=UGREE%EF%BD%8E",
+   "s": "Ugreen jobs in Micron Technology"
+  },
+  {
+   "t": "绿联科技招聘 | Ugreen绿联招聘官网",
+   "u": "https://careers.lulian.cn/",
+   "s": "绿联科技官方招聘平台-与绿联同行成就不凡梦想!探索社会招聘、校园招聘等多样化职位，覆盖研发、设计、市场、运营、客服等领域。绿联提供完善的职业发展路径与创新工作环境，立即投递简历，与绿联共创科技未来!"
+  },
+  {
+   "t": "Careers - Unigen",
+   "u": "https://unigen.com/careers/",
+   "s": "Visit our Careers page and discover what it's like to work at Unigen. Search jobs, explore benefits, and learn about our work environment."
+  },
+  {
+   "t": "绿联招聘",
+   "u": "https://ugreen.zhiye.com/",
+   "s": "广东省深圳市龙华区御安厂区7号办公楼1层—6层、6栋厂房4楼"
+  },
+  {
+   "t": "Join Us - UGREEN US",
+   "u": "https://us.ugreen.com/pages/join-us",
+   "s": "Job description: On behalf of the UGREEN brand, carry out business development, mainly develop channels related to NAS products, integrate internal resources of"
+  },
+  {
+   "t": "419 Ugreen 綠聯 jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ugreen-%E7%B6%A0%E8%81%AF-jobs",
+   "s": "Today's top 419 Ugreen 綠聯 jobs in United States. Leverage your professional network, and get hired. New Ugreen 綠聯 jobs added daily."
+  },
+  {
+   "t": "Ugreen Company Jobs in United States (7,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ugreen-company-jobs",
+   "s": "Today's top 7,000+ Ugreen Company jobs in United States. Leverage your professional network, and get hired. New Ugreen Company jobs added daily."
+  },
+  {
+   "t": "UGG® | Careers",
+   "u": "https://www.ugg.com/general-information-careers.html",
+   "s": "Check out Deckers.com for more information on currently available careers with UGG®."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.trugreenjobs.com/",
+  "platform": "workday",
+  "title": "Careers at TruGreen"
+ },
+ "verdict": "marker_surface"
+}

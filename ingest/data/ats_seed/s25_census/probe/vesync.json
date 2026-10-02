@@ -1,0 +1,30 @@
+{
+ "brand": "VeSync",
+ "tier": "probe_A",
+ "lca": "VESYNC (US) CORPORATION",
+ "ts": "2026-10-02T14:16:49.337Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "lever",
+   "slug": "vesync",
+   "spec": "lever:vesync",
+   "title": "Vesync",
+   "jobs_hint": 0
+  }
+ ],
+ "best": {
+  "spec": "lever:vesync",
+  "platform": "lever",
+  "title": "Vesync",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "Vesync",
+  "brand": "VeSync",
+  "ok": true,
+  "n": 1
+ },
+ "verdict": "ats_surface"
+}

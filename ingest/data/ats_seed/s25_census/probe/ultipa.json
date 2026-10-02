@@ -1,0 +1,151 @@
+{
+ "brand": "Ultipa",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:14:26.148Z",
+ "candidates": [
+  {
+   "url": "https://www.ultipa.com/",
+   "title": "Ultipa Graph Database, Analytics, Solutions",
+   "status": 200,
+   "bytes": 85607,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Ultra-high performance graph database with eXplainable AI and LLM integration. Process billions of nodes in real-time with enterprise-grade security.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://careers.ulta.com/",
+   "title": "ULTA Beauty Careers",
+   "status": 200,
+   "bytes": 446412,
+   "markers": [
+    "icims"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "ULTA Beauty Careers Don't just listen to what we say. Watch what we do. We've grown to a team of over 58,000 associates across our stores, corporate office and ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.claritev.com/who-we-are/careers/",
+   "title": "Healthcare Careers &amp; Opportunities | Claritev",
+   "status": 200,
+   "bytes": 461456,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 2,
+   "snippet": "Join Claritev's award-winning team improving healthcare affordability and transparency. Explore open positions in IT, customer service, sales, and more.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "ULTA Beauty Careers",
+   "u": "https://careers.ulta.com/",
+   "s": "ULTA Beauty Careers Don't just listen to what we say. Watch what we do. We've grown to a team of over 58,000 associates across our stores, corporate office and "
+  },
+  {
+   "t": "Healthcare Careers & Opportunities | Claritev",
+   "u": "https://www.claritev.com/who-we-are/careers/",
+   "s": "Join Claritev's award-winning team improving healthcare affordability and transparency. Explore open positions in IT, customer service, sales, and more."
+  },
+  {
+   "t": "Ultipa Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ultipa-jobs",
+   "s": "Today's top Ultipa jobs in United States. Leverage your professional network, and get hired. New Ultipa jobs added daily."
+  },
+  {
+   "t": "Ultipa Careers | Levels.fyi",
+   "u": "https://www.levels.fyi/companies/ultipa",
+   "s": "Ultipa is a company that creates real-time graph XAI and database products for smart enterprises. Their augmented intelligence offers advanced and networked dat"
+  },
+  {
+   "t": "Ultipa - LinkedIn",
+   "u": "https://www.linkedin.com/company/ultipa/",
+   "s": "Ultipa builds next-generation leading real-time graph XAI & database products, and empowers smart enterprise with graph augmented intelligence (a form of AI tha"
+  },
+  {
+   "t": "Distribution Centers | ULTA Beauty Careers",
+   "u": "https://careers.ulta.com/careers/career-areas/distribution-centers",
+   "s": "Distribution Centers | ULTA Beauty Careers What's a \"regular day\" like at an Ulta Beauty distribution center? With countless products covering 300,000+ square f"
+  },
+  {
+   "t": "Ultipa Graph Database, Analytics, Solutions",
+   "u": "https://www.ultipa.com/",
+   "s": "Ultra-high performance graph database with eXplainable AI and LLM integration. Process billions of nodes in real-time with enterprise-grade security."
+  },
+  {
+   "t": "Claritev - Careers",
+   "u": "https://careers.claritev.com/",
+   "s": "Join our team -- and our journey to improve healthcare."
+  },
+  {
+   "t": "ULTA Beauty Careers",
+   "u": "https://careers.ulta.com/",
+   "s": "ULTA Beauty Careers Don't just listen to what we say. Watch what we do. We've grown to a team of over 58,000 associates across our stores, corporate office and "
+  },
+  {
+   "t": "Ultipa Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ultipa-jobs",
+   "s": "Today's top Ultipa jobs in United States. Leverage your professional network, and get hired. New Ultipa jobs added daily."
+  },
+  {
+   "t": "UltiPro",
+   "u": "https://recruiting.ultipro.com/jobs/",
+   "s": "We would like to show you a description here but the site won't allow us."
+  },
+  {
+   "t": "Ultipa Size Jobs in United States | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/ultipa-size-jobs",
+   "s": "Today's top Ultipa Size jobs in United States. Leverage your professional network, and get hired. New Ultipa Size jobs added daily."
+  },
+  {
+   "t": "Ultipa Careers | Levels.fyi",
+   "u": "https://www.levels.fyi/companies/ultipa",
+   "s": "Ultipa is a company that creates real-time graph XAI and database products for smart enterprises. Their augmented intelligence offers advanced and networked dat"
+  },
+  {
+   "t": "United Launch Alliance",
+   "u": "https://jobs.ulalaunch.com/",
+   "s": "Notice of Reasonable Accommodation: We strive to provide reasonable accommodation for qualified individuals with disabilities, including disabled veterans, in o"
+  },
+  {
+   "t": "Ultipa - LinkedIn",
+   "u": "https://sg.linkedin.com/company/ultipa",
+   "s": "Ultipa builds next-generation leading real-time graph XAI & database products, and empowers smart enterprise with graph augmented intelligence (a form of AI tha"
+  },
+  {
+   "t": "Now Hiring: 1,000 With Ultipro Jobs | Indeed",
+   "u": "https://www.indeed.com/q-With-Ultipro-jobs.html",
+   "s": "Browse 1,189 With Ultipro jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+  },
+  {
+   "t": "ULTA Beauty Careers",
+   "u": "https://careers.ulta.com/",
+   "s": "All employment decisions will be made without unlawful discrimination because race, color, religion, sex, sex stereotyping, pregnancy (which includes pregnancy,"
+  },
+  {
+   "t": "Healthcare Careers & Opportunities | Claritev",
+   "u": "https://www.claritev.com/who-we-are/careers/",
+   "s": "Join Claritev's award-winning team improving healthcare affordability and transparency. Explore open positions in IT, customer service, sales, and more."
+  },
+  {
+   "t": "ULTA Beauty Careers",
+   "u": "https://careers.ulta.com/careers/jobs",
+   "s": "ULTA Beauty Careers Job Search - Jobs ALERT: We are aware of a scam whereby imposters are posing as employees from Ulta Beauty and vendors to Ulta Beauty. Bewar"
+  },
+  {
+   "t": "Claritev - Careers",
+   "u": "https://careers.claritev.com/",
+   "s": "Join our team -- and our journey to improve healthcare."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

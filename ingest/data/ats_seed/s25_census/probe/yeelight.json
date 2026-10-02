@@ -1,0 +1,149 @@
+{
+ "brand": "Yeelight",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:24:47.266Z",
+ "candidates": [
+  {
+   "url": "https://www.yeelight.com/en_us/jobs",
+   "title": "JION US Yeelight",
+   "status": 200,
+   "bytes": 40527,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "我们真希望能找到你! 你将负责： + Yeelight全渠道的文案和内容创意制作 + 所有营销内容制作，包括但不限于文案，音频，视频和线上线下平面设计，及活动策划 + 协调、配合内部团队和第三方创意机构来支持我们的内容创作",
+   "backend": "direct"
+  },
+  {
+   "url": "https://cn.yeelight.com/jobs",
+   "title": "易来全屋智能家居 设计·科技·生活",
+   "status": 200,
+   "bytes": 1635,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Yeelight易来成立于2012年，是全球知名的智能家居品牌，深度融合智能交互科技与空间美学设计，与全球主流物联网协议的深度适配，以开放智能生态，为用户打造高品质、智能化、个性化的全屋智能家居解决方案。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.yeelight.com/en_US/joinus",
+   "title": "JOIN US Yeelight",
+   "status": 200,
+   "bytes": 39269,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "JOIN US 职位描述： 1.从用户体验的角度进行产品的交互设计； 2. 给合用户研究和可用性测试成果，持续提升用户界面的可用性、易用性； 3.根据产品功能和用户需求合理规划APP的交互体验，输出产品完整的高保真交互原型和交互文档； 4.负责制定交互设计规范和流程； 5.关注移动产品设计趋势和动向 ...",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "JOIN US Yeelight",
+   "u": "https://www.yeelight.com/en_US/joinus",
+   "s": "JOIN US 职位描述： 1.从用户体验的角度进行产品的交互设计； 2. 给合用户研究和可用性测试成果，持续提升用户界面的可用性、易用性； 3.根据产品功能和用户需求合理规划APP的交互体验，输出产品完整的高保真交互原型和交互文档； 4.负责制定交互设计规范和流程； 5.关注移动产品设计趋势和动向 ..."
+  },
+  {
+   "t": "JION US Yeelight",
+   "u": "https://www.yeelight.com/en_us/jobs",
+   "s": "我们真希望能找到你! 你将负责： + Yeelight全渠道的文案和内容创意制作 + 所有营销内容制作，包括但不限于文案，音频，视频和线上线下平面设计，及活动策划 + 协调、配合内部团队和第三方创意机构来支持我们的内容创作"
+  },
+  {
+   "t": "Yeelight皎月 Jobs in United States (282 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yeelight%E7%9A%8E%E6%9C%88-jobs",
+   "s": "Today's top 282 Yeelight皎月 jobs in United States. Leverage your professional network, and get hired. New Yeelight皎月 jobs added daily."
+  },
+  {
+   "t": "Yeelight - LinkedIn",
+   "u": "https://www.linkedin.com/company/yeelightglobal",
+   "s": "Yeelight is the world's leading brand in smart lighting, preferred by users from 200 countries and regions in the globe. It has redefined the highest standard o"
+  },
+  {
+   "t": "易来全屋智能家居 设计·科技·生活 - Yeelight",
+   "u": "https://cn.yeelight.com/jobs",
+   "s": "Yeelight易来成立于2012年，是全球知名的智能家居品牌，深度融合智能交互科技与空间美学设计，与全球主流物联网协议的深度适配，以开放智能生态，为用户打造高品质、智能化、个性化的全屋智能家居解决方案。"
+  },
+  {
+   "t": "Careers at Alight | Alight job opportunities",
+   "u": "https://careers.alight.com/",
+   "s": "Explore career opportunities at Alight and start your journey with us today."
+  },
+  {
+   "t": "Career at enlight | enlight Renewable Energy",
+   "u": "https://enlightenergy.com/info/careers/",
+   "s": "A career at enlight combines environmental and social values with the opportunity for personal growth. Join our team today!"
+  },
+  {
+   "t": "About us | The Ultimate RGB Playground Yeelight - YEELIGHT",
+   "u": "https://store.yeelight.com/pages/about-us",
+   "s": "Yeelight Fun is the go-to choice for RGB lighting enthusiasts-champions creativity and individual style, bolstered by reliability, innovation, and ease of use."
+  },
+  {
+   "t": "JION US Yeelight",
+   "u": "https://www.yeelight.com/en_us/jobs",
+   "s": "我们寻找编写和设计品牌传播内容的文案创意经理，帮助我们创意和改进从使用说明、社交平台、时尚网站、产品视频，到包装上那句让人过目不忘的广告语的内容。你正在乙方公司写着不被大家重视的文案吗？或者，你表面是一个记者，内心是一个诗人和艺术家？你既能发文讨论宗教道义又能上台 ..."
+  },
+  {
+   "t": "JOIN US Yeelight",
+   "u": "https://www.yeelight.com/en_US/joinus",
+   "s": "JOIN US 职位描述： 1.从用户体验的角度进行产品的交互设计； 2. 给合用户研究和可用性测试成果，持续提升用户界面的可用性、易用性； 3.根据产品功能和用户需求合理规划APP的交互体验，输出产品完整的高保真交互原型和交互文档； 4.负责制定交互设计规范和流程； 5.关注移动产品设计趋势和动向 ..."
+  },
+  {
+   "t": "Yeelight皎月 Jobs in United States (282 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yeelight%E7%9A%8E%E6%9C%88-jobs",
+   "s": "Today's top 282 Yeelight皎月 jobs in United States. Leverage your professional network, and get hired. New Yeelight皎月 jobs added daily."
+  },
+  {
+   "t": "2,000+Xiaomi Yeelight 2026 Entry Level 3000k 4000k Color ... - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xiaomi-yeelight-2026-entry-level-3000k-4000k-color-temperature-matching-scheme-value-for-money-comparison-jobs?f_AL=true&f_EA=true",
+   "s": "Today's top 2,000+ Xiaomi Yeelight 2026 Entry Level 3000k 4000k Color Temperature Matching Scheme Value For Money Comparison jobs in United States. Leverage you"
+  },
+  {
+   "t": "易来全屋智能家居 设计·科技·生活 - Yeelight",
+   "u": "https://cn.yeelight.com/jobs",
+   "s": "Yeelight易来成立于2012年，是全球知名的智能家居品牌，深度融合智能交互科技与空间美学设计，与全球主流物联网协议的深度适配，以开放智能生态，为用户打造高品质、智能化、个性化的全屋智能家居解决方案。"
+  },
+  {
+   "t": "Careers - Yamaichi Electronics Co",
+   "u": "https://yeu.com/careers/",
+   "s": "Yamaichi Electronics values its employees and their contributions. In order to create a quality employee experience, we want to support your entire employment e"
+  },
+  {
+   "t": "「Yeelight招聘」-BOSS直聘",
+   "u": "https://www.zhipin.com/gongsi/e760f37eda6372b80nVz2A~~.html",
+   "s": "BOSS直聘为求职者提供2026年最新Yeelight招聘，更有Yeelight的公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，Yeelight正在线直聘17条职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  },
+  {
+   "t": "青岛易来智能科技股份有限公司招聘 - 智联招聘",
+   "u": "https://www.zhaopin.com/companydetail/CZ543663620.htm",
+   "s": "公司介绍 青岛易来智能科技股份有限公司（以下简称Yeelight易来）成立于2012年，并于2014年加入小米生态链。 公司以青岛为总部，在青岛、深圳、杭州、美国、德国、香港等地设立了多家子公司，实现业务全球覆盖。"
+  },
+  {
+   "t": "JOIN US Yeelight",
+   "u": "https://www.yeelight.com/en_US/joinus",
+   "s": "JOIN US 职位描述： 1.从用户体验的角度进行产品的交互设计； 2. 给合用户研究和可用性测试成果，持续提升用户界面的可用性、易用性； 3.根据产品功能和用户需求合理规划APP的交互体验，输出产品完整的高保真交互原型和交互文档； 4.负责制定交互设计规范和流程； 5.关注移动产品设计趋势和动向 ..."
+  },
+  {
+   "t": "JION US Yeelight",
+   "u": "https://www.yeelight.com/en_us/jobs",
+   "s": "我们寻找编写和设计品牌传播内容的文案创意经理，帮助我们创意和改进从使用说明、社交平台、时尚网站、产品视频，到包装上那句让人过目不忘的广告语的内容。你正在乙方公司写着不被大家重视的文案吗？或者，你表面是一个记者，内心是一个诗人和艺术家？你既能发文讨论宗教道义又能上台 ..."
+  },
+  {
+   "t": "Yeelight皎月 Jobs in United States (282 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yeelight%E7%9A%8E%E6%9C%88-jobs",
+   "s": "Today's top 282 Yeelight皎月 jobs in United States. Leverage your professional network, and get hired. New Yeelight皎月 jobs added daily."
+  },
+  {
+   "t": "4,000+ Yeelight Razer Chroma jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yeelight-razer-chroma-jobs",
+   "s": "Today's top 4,000+ Yeelight Razer Chroma jobs in United States. Leverage your professional network, and get hired. New Yeelight Razer Chroma jobs added daily."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "verdict": "no_clear_surface"
+}

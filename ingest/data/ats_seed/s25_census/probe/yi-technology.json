@@ -1,0 +1,154 @@
+{
+ "brand": "Yi Technology",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:25:18.847Z",
+ "candidates": [
+  {
+   "url": "http://www.yitechnology.com/career/",
+   "title": "YI Technology",
+   "status": 200,
+   "bytes": 371543,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "See What Matters. AI vision solution. Affordable and accessible for any consumer and business",
+   "backend": "direct"
+  },
+  {
+   "url": "https://api.yitechnology.com/join/index",
+   "title": "YI Careers | YI Technology",
+   "status": 200,
+   "bytes": 18600,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "YI Careers We are inspired by a singular, bold vision of a future powered by widespread, intelligent, video technology, where smart cameras and computer vision ",
+   "backend": "direct"
+  },
+  {
+   "url": "https://api.yitechnology.com/join/content/id/16",
+   "title": "YI Careers | YI Technology",
+   "status": 200,
+   "bytes": 22706,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "YI Careers At YI Technology, we believe innovation should be accessible to everyone. We are committed to enriching the lives of our customers by making the most",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "YI Careers | YI Technology",
+   "u": "https://api.yitechnology.com/join/index",
+   "s": "YI Careers We are inspired by a singular, bold vision of a future powered by widespread, intelligent, video technology, where smart cameras and computer vision "
+  },
+  {
+   "t": "YI Technology",
+   "u": "http://www.yitechnology.com/career/",
+   "s": "See What Matters. AI vision solution. Affordable and accessible for any consumer and business"
+  },
+  {
+   "t": "YI Careers | YI Technology",
+   "u": "https://api.yitechnology.com/join/content/id/16",
+   "s": "YI Careers At YI Technology, we believe innovation should be accessible to everyone. We are committed to enriching the lives of our customers by making the most"
+  },
+  {
+   "t": "Yi Technology Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Yi-Technology",
+   "s": "Find out what works well at Yi Technology from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  },
+  {
+   "t": "YI Technology Careers | Wellfound",
+   "u": "https://wellfound.com/company/yi-technology",
+   "s": "Find out if YI Technology is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, b"
+  },
+  {
+   "t": "YI Technology - LinkedIn",
+   "u": "https://www.linkedin.com/company/yi-technology/",
+   "s": "YI Technology is the leading provider of advanced video, imaging and computer vision technologies. We are inspired by a singular, bold vision of a future powere"
+  },
+  {
+   "t": "YI Technology Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/yi-technology",
+   "s": "Learn more about YI Technology. Find jobs, explore benefits, and research company culture at Built In."
+  },
+  {
+   "t": "YI Technology Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/yi-technology/jobs",
+   "s": "Explore jobs and careers at YI Technology. YI Technology is currently hiring for a range of positions."
+  },
+  {
+   "t": "YI Careers | YI Technology",
+   "u": "https://api.yitechnology.com/join/index",
+   "s": "YI Careers We are inspired by a singular, bold vision of a future powered by widespread, intelligent, video technology, where smart cameras and computer vision "
+  },
+  {
+   "t": "YI Careers | YI Technology",
+   "u": "https://api.yitechnology.com/join/content/id/16",
+   "s": "YI Careers At YI Technology, we believe innovation should be accessible to everyone. We are committed to enriching the lives of our customers by making the most"
+  },
+  {
+   "t": "YI Technology",
+   "u": "http://www.yitechnology.com/career/",
+   "s": "See What Matters. AI vision solution. Affordable and accessible for any consumer and business"
+  },
+  {
+   "t": "Yi] [' Jobs in United States (75 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yi%5D%5B%27-jobs",
+   "s": "Today's top 75 Yi] [' jobs in United States. Leverage your professional network, and get hired. New Yi] [' jobs added daily."
+  },
+  {
+   "t": "661 Yi Fa Technology Co Ltd jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yi-fa-technology-co-ltd-jobs",
+   "s": "Today's top 661 Yi Fa Technology Co Ltd jobs in United States. Leverage your professional network, and get hired. New Yi Fa Technology Co Ltd jobs added daily."
+  },
+  {
+   "t": "Yi Technology Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Yi-Technology",
+   "s": "Find out what works well at Yi Technology from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  },
+  {
+   "t": "YI Technology Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/yi-technology",
+   "s": "Learn more about YI Technology. Find jobs, explore benefits, and research company culture at Built In."
+  },
+  {
+   "t": "YI Technology Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/yi-technology/jobs",
+   "s": "Explore jobs and careers at YI Technology. YI Technology is currently hiring for a range of positions."
+  },
+  {
+   "t": "YI Careers | YI Technology",
+   "u": "https://api.yitechnology.com/join/index",
+   "s": "YI Careers We are inspired by a singular, bold vision of a future powered by widespread, intelligent, video technology, where smart cameras and computer vision "
+  },
+  {
+   "t": "YI Careers | YI Technology",
+   "u": "https://api.yitechnology.com/join/content/id/9",
+   "s": "YI Careers Job Description: YI Technology is looking for an experienced designer to establish and help share the company's brand story in the United States. Thi"
+  },
+  {
+   "t": "YI Technology",
+   "u": "http://www.yitechnology.com/career/",
+   "s": "See What Matters. AI vision solution. Affordable and accessible for any consumer and business"
+  },
+  {
+   "t": "Yi Technology Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Yi-Technology",
+   "s": "Find out what works well at Yi Technology from the people who know best. Get the inside scoop on jobs, salaries, top office locations, and CEO insights. Compare"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://api.yitechnology.com/join/index",
+  "platform": "custom",
+  "title": "YI Careers | YI Technology"
+ },
+ "verdict": "custom_surface"
+}

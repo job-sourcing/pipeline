@@ -1,0 +1,154 @@
+{
+ "brand": "XTransfer",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:24:09.884Z",
+ "candidates": [
+  {
+   "url": "https://www.xtransfer.com/about-us/career",
+   "title": "Embrace the Future of Cross-Border Payments | Careers at XTransfer",
+   "status": 200,
+   "bytes": 346938,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Join XTransfer to revolutionize global B2B trade payments. Explore career opportunities, company culture, employee stories, and open roles in a fast-growing glo",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.xtransfer.com/global/about-us/career?lng=zh-HK",
+   "title": "外貿金融招聘｜多元開放企業文化 | XTransfer",
+   "status": 200,
+   "bytes": 296972,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "XTransfer是全球領先的B2B跨境貿易支付平台，通過先進技術連接全球頂尖金融機構，致力於讓全球貿易的中堅力量——中小企業，享受安全合規、高效便捷的跨境金融服務，獲得與跨國大企業同等的金融服務體驗。",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.xtransfer.com/",
+   "title": "XTransfer: Your choice for global trade payment",
+   "status": 200,
+   "bytes": 393826,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "As the world's leading & China's No.1 B2B Cross-Border Trade Payment Platform, XTransfer is serving more than 1000000+ customers worldwide.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Embrace the Future of Cross-Border Payments | Careers at XTransfer",
+   "u": "https://www.xtransfer.com/about-us/career",
+   "s": "Join XTransfer to revolutionize global B2B trade payments. Explore career opportunities, company culture, employee stories, and open roles in a fast-growing glo"
+  },
+  {
+   "t": "XTransfer: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/xtransfer.cn/jobs/?viewAsMember",
+   "s": "XTransfer | 59,401 followers on LinkedIn. Trade Payment丨FX Management丨Risk&Compliance | XTransfer is a one-stop cross-border financial and risk management servi"
+  },
+  {
+   "t": "Xtransfer Jobs in Worldwide (24 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xtransfer-jobs-worldwide",
+   "s": "Today's top 24 Xtransfer jobs in Worldwide. Leverage your professional network, and get hired. New Xtransfer jobs added daily."
+  },
+  {
+   "t": "外貿金融招聘｜多元開放企業文化 | XTransfer",
+   "u": "https://www.xtransfer.com/global/about-us/career?lng=zh-HK",
+   "s": "XTransfer是全球領先的B2B跨境貿易支付平台，通過先進技術連接全球頂尖金融機構，致力於讓全球貿易的中堅力量——中小企業，享受安全合規、高效便捷的跨境金融服務，獲得與跨國大企業同等的金融服務體驗。"
+  },
+  {
+   "t": "XTransfer Careers - Insights and Opportunities",
+   "u": "https://wellfound.com/company/xtransfer",
+   "s": "Find out if XTransfer is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benef"
+  },
+  {
+   "t": "XTransfer: Your choice for global trade payment",
+   "u": "https://www.xtransfer.com/",
+   "s": "As the world's leading & China's No.1 B2B Cross-Border Trade Payment Platform, XTransfer is serving more than 1000000+ customers worldwide."
+  },
+  {
+   "t": "1,000+ Xtransfer.com jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xtransfer.com-jobs",
+   "s": "Today's top 1,000+ Xtransfer.com jobs in United States. Leverage your professional network, and get hired. New Xtransfer.com jobs added daily."
+  },
+  {
+   "t": "XTransfer: Culture | LinkedIn",
+   "u": "https://www.linkedin.com/company/xtransfer.cn/life?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_jobs%3B21ScC%2BPwRNScXnzm%2Bi6fxg%3D%3D",
+   "s": "XTransfer | 58,961 followers on LinkedIn. Trade Payment丨FX Management丨Risk&amp;Compliance | XTransfer is a one-stop cross-border financial and risk management s"
+  },
+  {
+   "t": "Embrace the Future of Cross-Border Payments - XTransfer",
+   "u": "https://www.xtransfer.com/about-us/career",
+   "s": "About Us XTransfer is a global leader in B2B cross‑border trade payments. The company connect top-tier financial institutions directly to SMEs, the backbone of "
+  },
+  {
+   "t": "XTransfer: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/xtransfer.cn/jobs/",
+   "s": "XTransfer | 59,800 followers on LinkedIn. Trade Payment丨FX Management丨Risk&Compliance | XTransfer is a one-stop cross-border financial and risk management servi"
+  },
+  {
+   "t": "Xtransfer Jobs in Worldwide (24 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xtransfer-jobs-worldwide",
+   "s": "Today's top 24 Xtransfer jobs in Worldwide. Leverage your professional network, and get hired. New Xtransfer jobs added daily."
+  },
+  {
+   "t": "外貿金融招聘｜多元開放企業文化 | XTransfer",
+   "u": "https://www.xtransfer.com/global/about-us/career?lng=zh-HK",
+   "s": "投身高速增長跨境金融賽道，和行業頂尖團隊共建 B2B 外貿支付生態。全球化 B2B 跨境貿易支付龍頭企業，遍佈全球辦公網點，多元開放企業文化，廣闊成長平台，期待敢於創新的你加入。"
+  },
+  {
+   "t": "Careers at Xtransfer | Jennie Johnson",
+   "u": "https://jenniejohnson.com/company/xtransfer",
+   "s": "Job openings at Xtransfer. XTransfer is a leading Chinese fintech company specializing in cross-border financial services for small and medium-sized..."
+  },
+  {
+   "t": "XTransfer Careers - Insights and Opportunities",
+   "u": "https://wellfound.com/company/xtransfer",
+   "s": "Find out if XTransfer is the right fit for your future career! Explore jobs, salary, equity, and funding information. Read about work-life balance, perks, benef"
+  },
+  {
+   "t": "Jobs at XTransfer: Explore current Opportunities",
+   "u": "https://wellfound.com/company/xtransfer/jobs",
+   "s": "Get notified when XTransfer posts jobs. We are on a mission to re-define and bring our current international finance system into the age of technology and autom"
+  },
+  {
+   "t": "「XTransfer招聘」-BOSS直聘",
+   "u": "https://www.zhipin.com/gongsi/474e72d4edc06a371nx439i4F1c~.html",
+   "s": "BOSS直聘为求职者提供2026年最新XTransfer招聘，更有XTransfer的公司简介、公司地址、产品介绍、公司环境、CEO高管资料以及在线的BOSS们，XTransfer正在线直聘418条职位，找工作就登录BOSS直聘网站或APP，直接与Boss开聊吧!"
+  },
+  {
+   "t": "Embrace the Future of Cross-Border Payments | Careers at XTransfer",
+   "u": "https://www.xtransfer.com/about-us/career",
+   "s": "Join XTransfer to revolutionize global B2B trade payments. Explore career opportunities, company culture, employee stories, and open roles in a fast-growing glo"
+  },
+  {
+   "t": "Xtransfer Jobs in Worldwide (24 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xtransfer-jobs-worldwide",
+   "s": "Today's top 24 Xtransfer jobs in Worldwide. Leverage your professional network, and get hired. New Xtransfer jobs added daily."
+  },
+  {
+   "t": "1,000+ Xtransfer.com jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/xtransfer.com-jobs",
+   "s": "Today's top 1,000+ Xtransfer.com jobs in United States. Leverage your professional network, and get hired. New Xtransfer.com jobs added daily."
+  },
+  {
+   "t": "XTransfer: Jobs | LinkedIn",
+   "u": "https://www.linkedin.com/company/xtransfer.cn/jobs/?viewAsMember",
+   "s": "XTransfer | 59,401 followers on LinkedIn. Trade Payment丨FX Management丨Risk&Compliance | XTransfer is a one-stop cross-border financial and risk management servi"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://www.xtransfer.com/about-us/career",
+  "platform": "custom",
+  "title": "Embrace the Future of Cross-Border Payments | Careers at XTransfer"
+ },
+ "verdict": "custom_surface"
+}

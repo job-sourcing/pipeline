@@ -1,0 +1,29 @@
+{
+ "brand": "XD Inc",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:23:06.742Z",
+ "candidates": [],
+ "results": [],
+ "dict_hits": [
+  {
+   "platform": "feishu",
+   "slug": "xd",
+   "spec": "feishuhire:xd",
+   "title": "加入XD Inc."
+  }
+ ],
+ "best": {
+  "spec": "feishuhire:xd",
+  "platform": "feishu",
+  "title": "加入XD Inc.",
+  "via": "dict"
+ },
+ "identity_check": {
+  "self": "加入XD Inc.",
+  "brand": "XD Inc",
+  "ok": false,
+  "n": 0
+ },
+ "verdict": "dict_collision"
+}

@@ -1,0 +1,167 @@
+{
+ "brand": "Weichai America / Power Solutions International",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:20:49.278Z",
+ "candidates": [
+  {
+   "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=173c7f84-bab8-41af-85ea-7c3b3b163cd1&ccId=19000101_000001&lang=en_US&jobId=567319",
+   "title": "Recruitment",
+   "status": 200,
+   "bytes": 19449,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": "adp:173c7f84-bab8-41af-85ea-7c3b3b163cd1",
+   "score": 10,
+   "snippet": "Job Title: Generator Field Service Technician Location: Northern Illinois/Wisconsin Employment Type: Full-Time Reports To: Senior Service Manager Salary: $38-$4",
+   "backend": "direct"
+  },
+  {
+   "url": "http://www.weichaiamerica.com/careers.html",
+   "title": "Engineering &amp; Manufacturing Jobs | Weichai America Careers",
+   "status": 200,
+   "bytes": 22371,
+   "markers": [
+    "adp"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore career opportunities at Weichai America in engineering, manufacturing and support roles. Build your future with a global power solutions leader.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://en.weichaipower.com/hr/",
+   "title": "Careers - WEICHAI POWER CO.,LTD",
+   "status": 200,
+   "bytes": 38127,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "Weichai always adheres to the operating strategy of using both product management and capital operation as the driving force, and constantly enhances its produc",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Engineering & Manufacturing Jobs | Weichai America Careers",
+   "u": "http://www.weichaiamerica.com/careers.html",
+   "s": "Explore career opportunities at Weichai America in engineering, manufacturing and support roles. Build your future with a global power solutions leader."
+  },
+  {
+   "t": "Careers - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/",
+   "s": "Weichai always adheres to the operating strategy of using both product management and capital operation as the driving force, and constantly enhances its produc"
+  },
+  {
+   "t": "Careers-Weichai Official",
+   "u": "https://en.weichai.com/eportal/ui?pageId=fa14042dc778494ea787ef3f9912c72f",
+   "s": "Working Environment It integrates green and low-carbon, lean management, and humanistic care, with constant temperature, noise reduction, and safety protection "
+  },
+  {
+   "t": "Careers-Weichai Official",
+   "u": "https://en.weichai.com/group/weichai/en/about-us/human-resources/index.html",
+   "s": "Founded in 1946, Weichai Holding Group Co., Ltd. has developed into a leading multinational industrial equipment group in China with significant global influenc"
+  },
+  {
+   "t": "Industrial Generators & Engines | Weichai America Corp",
+   "u": "https://www.weichaiamerica.com/",
+   "s": "Manufacturer of industrial generator sets, diesel engines and power solutions for commercial and heavy-duty applications such as Data Centers and Marine engines"
+  },
+  {
+   "t": "Join US - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/join/",
+   "s": "Weichai always adheres to the operating strategy of using both product management and capital operation as the driving force, and constantly enhances its produc"
+  },
+  {
+   "t": "Industrial Manufacturing & Engineering Career Opportunities",
+   "u": "https://psiengines.com/careers/",
+   "s": "PSI's dynamic team of employees drives innovation with competitive compensation, comprehensive benefits, and growth opportunities. Grow your skills with us!"
+  },
+  {
+   "t": "Weichai America Corp Careers and Employment | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Weichai-America-Corp",
+   "s": "Weichai America Corporation is a wholly owned subsidiary of Chinese Weichai Power, the world 2nd largest diesel engine manufacturer. As a strategic move to impl"
+  },
+  {
+   "t": "Engineering & Manufacturing Jobs | Weichai America Careers",
+   "u": "http://www.weichaiamerica.com/careers.html",
+   "s": "Explore career opportunities at Weichai America in engineering, manufacturing and support roles. Build your future with a global power solutions leader."
+  },
+  {
+   "t": "Careers - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/",
+   "s": "Weichai always adheres to the operating strategy of using both product management and capital operation as the driving force, and constantly enhances its produc"
+  },
+  {
+   "t": "Industrial Generators & Engines | Weichai America Corp",
+   "u": "https://www.weichaiamerica.com/",
+   "s": "Manufacturer of industrial generator sets, diesel engines and power solutions for commercial and heavy-duty applications such as Data Centers and Marine engines"
+  },
+  {
+   "t": "Weichai America Corp Careers and Employment - Indeed",
+   "u": "https://www.indeed.com/cmp/Weichai-America-Corp",
+   "s": "Weichai America Corporation is a wholly owned subsidiary of Chinese Weichai Power, the world 2nd largest diesel engine manufacturer. As a strategic move to impl"
+  },
+  {
+   "t": "Weichai America Corp. Jobs and Careers | Indeed.com",
+   "u": "https://www.indeed.com/cmp/Weichai-America-Corp./jobs",
+   "s": "6 Weichai America Corp. jobs. Apply to the latest jobs near you. Learn about salary, employee reviews, interviews, benefits, and work-life balance"
+  },
+  {
+   "t": "Weichai America Jobs in United States (4 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/weichai-america-jobs",
+   "s": "Today's top 4 Weichai America jobs in United States. Leverage your professional network, and get hired. New Weichai America jobs added daily."
+  },
+  {
+   "t": "Careers at Psi",
+   "u": "https://psiengines.com/careers/",
+   "s": "PSI's dynamic team of employees drives innovation with competitive compensation, comprehensive benefits, and growth opportunities. Grow your skills with us!"
+  },
+  {
+   "t": "Join US - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/join/",
+   "s": "Weichai always adheres to the operating strategy of using both product management and capital operation as the driving force, and constantly enhances its produc"
+  },
+  {
+   "t": "Engineering & Manufacturing Jobs | Weichai America Careers",
+   "u": "http://www.weichaiamerica.com/careers.html",
+   "s": "Explore career opportunities at Weichai America in engineering, manufacturing and support roles. Build your future with a global power solutions leader."
+  },
+  {
+   "t": "Careers-Weichai Official",
+   "u": "https://en.weichai.com/eportal/ui?pageId=fa14042dc778494ea787ef3f9912c72f",
+   "s": "Working Environment It integrates green and low-carbon, lean management, and humanistic care, with constant temperature, noise reduction, and safety protection "
+  },
+  {
+   "t": "Careers-Weichai Official",
+   "u": "https://en.weichai.com/group/weichai/en/about-us/human-resources/index.html",
+   "s": "Diversity and Inclusion We respect and attract employees from different countries and cultural backgrounds, gather global wisdom and technological resources, an"
+  },
+  {
+   "t": "Careers - WEICHAI POWER CO.,LTD",
+   "u": "https://en.weichaipower.com/hr/",
+   "s": "Weichai always adheres to the operating strategy of using both product management and capital operation as the driving force, and constantly enhances its produc"
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=173c7f84-bab8-41af-85ea-7c3b3b163cd1&ccId=19000101_000001&lang=en_US&jobId=567319",
+  "title": "Recruitment",
+  "status": 200,
+  "bytes": 19449,
+  "markers": [
+   "adp"
+  ],
+  "jsonld_jobs": 0,
+  "spec": "adp:173c7f84-bab8-41af-85ea-7c3b3b163cd1",
+  "score": 10,
+  "snippet": "Job Title: Generator Field Service Technician Location: Northern Illinois/Wisconsin Employment Type: Full-Time Reports To: Senior Service Manager Salary: $38-$4",
+  "backend": "direct"
+ },
+ "verdict": "ats_surface"
+}

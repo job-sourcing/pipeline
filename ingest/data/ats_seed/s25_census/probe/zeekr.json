@@ -1,0 +1,161 @@
+{
+ "brand": "Zeekr",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:26:41.973Z",
+ "candidates": [
+  {
+   "url": "https://careers.zeekr.eu/jobs",
+   "title": "Current job openings - Zeekr EU",
+   "status": 200,
+   "bytes": 146751,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Job openings at Zeekr EU You will meet with the hiring manager and/or a technical expert from the team to assess key skills that you need for the role. Please t",
+   "backend": "direct"
+  },
+  {
+   "url": "https://ev.careers/companies/zeekr-international-7058009",
+   "title": "Just a moment...",
+   "status": 403,
+   "bytes": 5767,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Explore current job openings at Zeekr International today. Find and apply for your dream career now on EV.Careers.",
+   "backend": "direct",
+   "cf_challenge": true
+  },
+  {
+   "url": "https://careers.zeekr.eu/",
+   "title": "Welcome to Zeekr Careers - Zeekr EU",
+   "status": 200,
+   "bytes": 80254,
+   "markers": [
+    "teamtailor",
+    "teamtailor"
+   ],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Welcome to the Zeekr EU Careers site. Here you will find the latest roles within our Zeekr EU HQ, and our National Sales Company teams in Europe.",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "Current job openings - Zeekr EU",
+   "u": "https://careers.zeekr.eu/jobs",
+   "s": "Job openings at Zeekr EU You will meet with the hiring manager and/or a technical expert from the team to assess key skills that you need for the role. Please t"
+  },
+  {
+   "t": "Zeekr International Jobs - EV.Careers",
+   "u": "https://ev.careers/companies/zeekr-international-7058009",
+   "s": "Explore current job openings at Zeekr International today. Find and apply for your dream career now on EV.Careers."
+  },
+  {
+   "t": "Welcome to Zeekr Careers - Zeekr EU",
+   "u": "https://careers.zeekr.eu/",
+   "s": "Welcome to the Zeekr EU Careers site. Here you will find the latest roles within our Zeekr EU HQ, and our National Sales Company teams in Europe."
+  },
+  {
+   "t": "Zeekr",
+   "u": "https://www.zeekrlife.com/global/",
+   "s": "Explore the premium, intelligent, pure electric vehicles brand, Zeekr. Check out the Zeekr electric vehicles with cutting-edge design and world-leading technolo"
+  },
+  {
+   "t": "Zeekr - AutoWallis Careers",
+   "u": "https://career.autowallis.com/en/zeekr",
+   "s": "ZEEKR is a global premium electric mobility technology brand, part of Geely Holding Group. Founded in 2021, ZEEKR develops intelligent battery electric vehicles"
+  },
+  {
+   "t": "Zeekr极氪 Jobs in Worldwide (30 Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zeekr%E6%9E%81%E6%B0%AA-jobs-worldwide",
+   "s": "Today's top 30 Zeekr极氪 jobs in Worldwide. Leverage your professional network, and get hired. New Zeekr极氪 jobs added daily."
+  },
+  {
+   "t": "8,000+ Zeekr jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zeekr-jobs",
+   "s": "Today's top 8,000+ Zeekr jobs in United States. Leverage your professional network, and get hired. New Zeekr jobs added daily."
+  },
+  {
+   "t": "Digital House of Zeekr",
+   "u": "https://www.zeekr.com/careers",
+   "s": "Welcome to the Digital House of Zeekr. I'm a w| I'm a netrepreneur focused on web production, development and marketing. Zeekr is my affiliate marketer alter eg"
+  },
+  {
+   "t": "Current job openings - Zeekr EU",
+   "u": "https://careers.zeekr.eu/jobs",
+   "s": "Job openings at Zeekr EU You will meet with the hiring manager and/or a technical expert from the team to assess key skills that you need for the role. Please t"
+  },
+  {
+   "t": "5,000+ Zeekr Jobs jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zeekr-jobs-jobs",
+   "s": "Today's top 5,000+ Zeekr Jobs jobs in United States. Leverage your professional network, and get hired. New Zeekr Jobs jobs added daily."
+  },
+  {
+   "t": "Zeekr In Us Jobs in United States (9,000+ Open Roles) | LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zeekr-in-us-jobs",
+   "s": "Today's top 9,000+ Zeekr In Us jobs in United States. Leverage your professional network, and get hired. New Zeekr In Us jobs added daily."
+  },
+  {
+   "t": "Zeekr International Jobs - EV.Careers",
+   "u": "https://ev.careers/companies/zeekr-international-7058009",
+   "s": "Explore current job openings at Zeekr International today. Find and apply for your dream career now on EV.Careers."
+  },
+  {
+   "t": "Welcome to Zeekr Careers - careers.zeekr.eu",
+   "u": "https://careers.zeekr.eu/?trk=public_post-text",
+   "s": "Welcome to the Zeekr EU Careers site. Here you will find the latest roles within our Zeekr EU HQ, and our National Sales Company teams in Europe."
+  },
+  {
+   "t": "Jobs at Zeekr — 4 open roles | Qarera",
+   "u": "https://www.qarera.com/companies/zeekr",
+   "s": "Every live opening at Zeekr: 4 roles, updated 2026-09-27. See how your resume scores against each one free — no credit card, no scan limit."
+  },
+  {
+   "t": "Zeekr Reviews (22): Pros & Cons of Working At Zeekr",
+   "u": "https://www.glassdoor.com/Reviews/Zeekr-Reviews-E7637020.htm",
+   "s": "What employees say about culture at Zeekr Management & leadership - Many reviews highlight chaotic management and a lack of clear direction, leading to internal"
+  },
+  {
+   "t": "Jobs at ZEEKR - Hyper Island",
+   "u": "https://jobs.hyperisland.com/company/zeekr",
+   "s": "Browse jobs at ZEEKR . About the Zeekr brand Zeekr is Geely's luxury EV brand and is committed to being a user-driven tech company. We create new ecosystems foc"
+  },
+  {
+   "t": "Current job openings - Zeekr EU",
+   "u": "https://careers.zeekr.eu/jobs",
+   "s": "Job openings at Zeekr EU You will meet with the hiring manager and/or a technical expert from the team to assess key skills that you need for the role. Please t"
+  },
+  {
+   "t": "5,000+ Zeekr Jobs jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zeekr-jobs-jobs",
+   "s": "Today's top 5,000+ Zeekr Jobs jobs in United States. Leverage your professional network, and get hired. New Zeekr Jobs jobs added daily."
+  },
+  {
+   "t": "8,000+ Zeekr jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/zeekr-jobs",
+   "s": "Today's top 8,000+ Zeekr jobs in United States. Leverage your professional network, and get hired. New Zeekr jobs added daily."
+  },
+  {
+   "t": "Zeekr International Jobs - EV.Careers",
+   "u": "https://ev.careers/companies/zeekr-international-7058009",
+   "s": "Explore current job openings at Zeekr International today. Find and apply for your dream career now on EV.Careers."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://careers.zeekr.eu/jobs",
+  "platform": "teamtailor",
+  "title": "Current job openings - Zeekr EU"
+ },
+ "verdict": "marker_surface"
+}

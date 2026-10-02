@@ -1,0 +1,154 @@
+{
+ "brand": "Yoozoo Games",
+ "tier": "probe_A",
+ "lca": null,
+ "ts": "2026-10-02T14:25:48.188Z",
+ "candidates": [
+  {
+   "url": "https://singapore.yoozoo.com/m/careers.html",
+   "title": "YOOZOO Careers - Inspire Your Dreams",
+   "status": 200,
+   "bytes": 11970,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "YOOZOO Games is a global entertainment company specializing in game development and distribution. The company is headquartered in Shanghai with offices in Londo",
+   "backend": "direct"
+  },
+  {
+   "url": "https://www.jobscina.com/company-YOOZOO-Games-jobs",
+   "title": "",
+   "status": 0,
+   "bytes": 0,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 7,
+   "snippet": "Jobs at YOOZOO Games. List maintained by JobsCina.com, the employment search engine.",
+   "backend": "direct"
+  },
+  {
+   "url": "https://campus.yoozoo.com/m/",
+   "title": "游族网络校园招聘",
+   "status": 200,
+   "bytes": 3571,
+   "markers": [],
+   "jsonld_jobs": 0,
+   "spec": null,
+   "score": 5,
+   "snippet": "全球顶级穆氏设计办公楼、RAMESH私人定制办公桌、SAYLTM座椅，高效工作，从\"装备\"开始。零食投喂、专享夏日季，随时随地，寻找生活小确幸。",
+   "backend": "direct"
+  }
+ ],
+ "results": [
+  {
+   "t": "YOOZOO Careers - Inspire Your Dreams",
+   "u": "https://singapore.yoozoo.com/m/careers.html",
+   "s": "YOOZOO Games is a global entertainment company specializing in game development and distribution. The company is headquartered in Shanghai with offices in Londo"
+  },
+  {
+   "t": "YOOZOO GAMES - LinkedIn",
+   "u": "https://www.linkedin.com/company/yoozoogames/",
+   "s": "YOOZOO GAMES | 29,442 followers on LinkedIn. Celebrate Civilization With Technology | Founded in 2009, YOOZOO GAMES Co., Ltd. (SZ.002174) is a world-leading pro"
+  },
+  {
+   "t": "游族网络校园招聘 - Yoozoo",
+   "u": "https://campus.yoozoo.com/m/",
+   "s": "全球顶级穆氏设计办公楼、RAMESH私人定制办公桌、SAYLTM座椅，高效工作，从\"装备\"开始。零食投喂、专享夏日季，随时随地，寻找生活小确幸。"
+  },
+  {
+   "t": "YOOZOO GAMES - LinkedIn",
+   "u": "https://sg.linkedin.com/company/yoozoogames",
+   "s": "Founded in 2009, YOOZOO GAMES Co., Ltd. (SZ.002174) is a world-leading provider of interactive entertainment.YOOZOO Games implements the strategies of big data,"
+  },
+  {
+   "t": "YOOZOO GAMES Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/yoozoo-games/jobs",
+   "s": "Explore jobs and careers at YOOZOO GAMES. YOOZOO GAMES is currently hiring for a range of positions."
+  },
+  {
+   "t": "7,000+ Yoozoo Games jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yoozoo-games-jobs",
+   "s": "Today's top 7,000+ Yoozoo Games jobs in United States. Leverage your professional network, and get hired. New Yoozoo Games jobs added daily."
+  },
+  {
+   "t": "YOOZOO GAMES Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/yoozoo-games",
+   "s": "Learn more about YOOZOO GAMES. Find jobs, explore benefits, and research company culture at Built In."
+  },
+  {
+   "t": "YOOZOO GAMES | LinkedIn",
+   "u": "https://in.linkedin.com/company/yoozoogames",
+   "s": "YOOZOO GAMES | 29,446 followers on LinkedIn. Celebrate Civilization With Technology | Founded in 2009, YOOZOO GAMES Co., Ltd. (SZ.002174) is a world-leading pro"
+  },
+  {
+   "t": "YOOZOO GAMES Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/yoozoo-games/jobs",
+   "s": "Explore jobs and careers at YOOZOO GAMES. YOOZOO GAMES is currently hiring for a range of positions."
+  },
+  {
+   "t": "7,000+ Yoozoo Games jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yoozoo-games-jobs",
+   "s": "Today's top 7,000+ Yoozoo Games jobs in United States. Leverage your professional network, and get hired. New Yoozoo Games jobs added daily."
+  },
+  {
+   "t": "YOOZOO GAMES - LinkedIn",
+   "u": "https://uk.linkedin.com/company/yoozoogames",
+   "s": "Founded in 2009, YOOZOO GAMES Co., Ltd. (SZ.002174) is a world-leading provider of interactive entertainment.YOOZOO Games implements the strategies of big data,"
+  },
+  {
+   "t": "YOOZOO GAMES - LinkedIn",
+   "u": "https://www.linkedin.com/company/yoozoogames/",
+   "s": "YOOZOO GAMES | 29,442 followers on LinkedIn. Celebrate Civilization With Technology | Founded in 2009, YOOZOO GAMES Co., Ltd. (SZ.002174) is a world-leading pro"
+  },
+  {
+   "t": "YOOZOO GAMES | LinkedIn",
+   "u": "https://in.linkedin.com/company/yoozoogames",
+   "s": "YOOZOO GAMES | 29,446 followers on LinkedIn. Celebrate Civilization With Technology | Founded in 2009, YOOZOO GAMES Co., Ltd. (SZ.002174) is a world-leading pro"
+  },
+  {
+   "t": "YOOZOO GAMES - LinkedIn",
+   "u": "https://sg.linkedin.com/company/yoozoogames",
+   "s": "YOOZOO GAMES | 29,444 followers on LinkedIn. Celebrate Civilization With Technology | Founded in 2009, YOOZOO GAMES Co., Ltd. (SZ.002174) is a world-leading pro"
+  },
+  {
+   "t": "游族网络校园招聘 - Yoozoo",
+   "u": "https://campus.yoozoo.com/m/",
+   "s": "全球顶级穆氏设计办公楼、RAMESH私人定制办公桌、SAYLTM座椅，高效工作，从\"装备\"开始。零食投喂、专享夏日季，随时随地，寻找生活小确幸。"
+  },
+  {
+   "t": "YOOZOO Games Jobs | JobsCina.com",
+   "u": "https://www.jobscina.com/company-YOOZOO-Games-jobs",
+   "s": "Jobs at YOOZOO Games. List maintained by JobsCina.com, the employment search engine."
+  },
+  {
+   "t": "7,000+ Yoozoo Games jobs in United States - LinkedIn",
+   "u": "https://www.linkedin.com/jobs/yoozoo-games-jobs",
+   "s": "Today's top 7,000+ Yoozoo Games jobs in United States. Leverage your professional network, and get hired. New Yoozoo Games jobs added daily."
+  },
+  {
+   "t": "YOOZOO GAMES Jobs + Careers | Built In",
+   "u": "https://builtin.com/company/yoozoo-games/jobs",
+   "s": "Explore jobs and careers at YOOZOO GAMES. YOOZOO GAMES is currently hiring for a range of positions."
+  },
+  {
+   "t": "YOOZOO GAMES Careers, Perks + Culture | Built In",
+   "u": "https://builtin.com/company/yoozoo-games",
+   "s": "Learn more about YOOZOO GAMES. Find jobs, explore benefits, and research company culture at Built In."
+  },
+  {
+   "t": "YOOZOO GAMES San Francisco Jobs + Careers | Built In San Francisco",
+   "u": "https://www.builtinsf.com/company/yoozoo-games/jobs",
+   "s": "Explore jobs and careers at YOOZOO GAMES in San Francisco. YOOZOO GAMES is currently hiring for a range of positions."
+  }
+ ],
+ "dict_hits": [],
+ "search_backend": "kit",
+ "best": {
+  "url": "https://singapore.yoozoo.com/m/careers.html",
+  "platform": "custom",
+  "title": "YOOZOO Careers - Inspire Your Dreams"
+ },
+ "verdict": "custom_surface"
+}
