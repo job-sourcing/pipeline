@@ -3,12 +3,12 @@
  "company": "Li Auto",
  "country": "United States",
  "time_type": "",
- "dumpDate": "2026-10-01",
+ "dumpDate": "2026-10-02",
  "count": 7,
- "details_merged": 0,
+ "details_merged": 7,
  "signals_matched": 0,
  "similar_edges": 0,
- "facet_tagged_rows": 0,
+ "facet_tagged_rows": 7,
  "rows": [
   {
    "reqId": "7687915523137866035",
@@ -30,11 +30,29 @@
    "countries": [
     "United States"
    ],
-   "detail": null,
-   "hiringOrg": null,
+   "detail": {
+    "title": "人事行政岗 （HR& Admin Operations）",
+    "location": "San Jose",
+    "additionalLocations": [],
+    "jobDescription": "一、人力资源运营与合规（核心职责）\n1.政策适配与落地： 理解中国总部现有的人力资源制度体系，结合美国联邦及地方法律法规（如涉及加州、德州或华盛顿州等）、职场文化习惯，进行本地化适配，形成既符合集团要求又在美国切实可行的政策方案（如考勤、假期、行为准则、信息安全等）。\n2.合规管理： 与本地法律顾问协同，确保公司在用工、数据隐私、职场安全等方面完全合规，规避法律风险。负责对接政府及相关监管机构。\n3.薪酬福利执行： 配合总部及第三方薪酬服务提供商（如ADP、TriNet等），确保薪资准确发放；协助员工解答薪酬福利相关问题（薪酬结构已有成熟方案，无需自行设计）。\n4.员工关系与档案管理： 负责员工的入职、离职手续，维护员工档案与HRIS系统数据，确保信息准确完整。\n二、属地运营与员工关怀\n1.研究所日常运营： 负责研究所的日常行政事务，包括办公环境维护、资产与物资管理、供应商对接（IT支持、保洁、快递等），确保员工拥有高效、舒适的工作体验。\n2.员工关怀与文化落地： 负责新员工的入职引导与文化融入；策划并组织团队建设活动、节日关怀、生日庆祝等，营造开放、包容的工程师文化，提升员工归属感。\n3.活动与会议支持： 协调中美跨时差会议、来访接待、内部技术交流活动的组织安排。\n4.文化桥接与沟通： 作为中美团队的沟通枢纽，帮助美国员工理解中国总部的文化与制度背景，同时向总部反馈美国团队的实际感受与建议，促进双向理解。\n\n1.3-6年人力资源工作经验，熟悉美国劳动法及职场文化，有中资企业美国分支HR或行政运营经验者优先。\n2.对美国联邦及主要州的劳动法有基本了解，具备合规意识，知晓何时需寻求专业法律支持。\n3.熟悉美国职场文化，具备将中国政策进行本地化适配的实际判断力。\n4.熟练使用办公软件及HRIS系统，具备基本的数据处理能力。\n5.极强的执行力与责任心： 能够适应初创阶段的快节奏与琐碎事务，亲力亲为、细致入微，确保每一项工作都有始有终。\n6.服务意识与沟通能力： 善于倾听员工需求，能够耐心解答问题，在跨文化环境中建立信任。\n7.学习与适应能力： 对未知领域保持好奇心，能够快速学习并适应新的政策、法规与业务需求。\n8.其他：流利的中文（普通话）和英文听说读写能力（必须）。能够在两种语言环境中自由切换，准确传达管理意图与文化细节，入职时须具备在美国合法工作的条件。",
+    "timeType": "Full time",
+    "startDate": "2026-09-21",
+    "externalUrl": "https://li.jobs.feishu.cn/index/position/7687915523137866035/detail",
+    "jobReqId": "7687915523137866035",
+    "postedOn": "Posted 11 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "li",
    "similarJobsCount": 0,
    "similarJobs": [],
-   "error": null
+   "error": null,
+   "jobFamilyGroup": "Corporate function / Support",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
   },
   {
    "reqId": "7615069209999198510",
@@ -56,11 +74,29 @@
    "countries": [
     "United States"
    ],
-   "detail": null,
-   "hiringOrg": null,
+   "detail": {
+    "title": "人事行政岗 （HR& Admin Operations）",
+    "location": "San Jose",
+    "additionalLocations": [],
+    "jobDescription": "一、人力资源运营与合规（核心职责）\n1.政策适配与落地： 理解中国总部现有的人力资源制度体系，结合美国联邦及地方法律法规（如涉及加州、德州或华盛顿州等）、职场文化习惯，进行本地化适配，形成既符合集团要求又在美国切实可行的政策方案（如考勤、假期、行为准则、信息安全等）。\n2.合规管理： 与本地法律顾问协同，确保公司在用工、数据隐私、职场安全等方面完全合规，规避法律风险。负责对接政府及相关监管机构。\n3.薪酬福利执行： 配合总部及第三方薪酬服务提供商（如ADP、TriNet等），确保薪资准确发放；协助员工解答薪酬福利相关问题（薪酬结构已有成熟方案，无需自行设计）。\n4.员工关系与档案管理： 负责员工的入职、离职手续，维护员工档案与HRIS系统数据，确保信息准确完整。\n二、属地运营与员工关怀\n1.研究所日常运营： 负责研究所的日常行政事务，包括办公环境维护、资产与物资管理、供应商对接（IT支持、保洁、快递等），确保员工拥有高效、舒适的工作体验。\n2.员工关怀与文化落地： 负责新员工的入职引导与文化融入；策划并组织团队建设活动、节日关怀、生日庆祝等，营造开放、包容的工程师文化，提升员工归属感。\n3.活动与会议支持： 协调中美跨时差会议、来访接待、内部技术交流活动的组织安排。\n4.文化桥接与沟通： 作为中美团队的沟通枢纽，帮助美国员工理解中国总部的文化与制度背景，同时向总部反馈美国团队的实际感受与建议，促进双向理解。\n\n1.3-6年人力资源工作经验，熟悉美国劳动法及职场文化，有中资企业美国分支HR或行政运营经验者优先。\n2.对美国联邦及主要州的劳动法有基本了解，具备合规意识，知晓何时需寻求专业法律支持。\n3.熟悉美国职场文化，具备将中国政策进行本地化适配的实际判断力。\n4.熟练使用办公软件及HRIS系统，具备基本的数据处理能力。\n5.极强的执行力与责任心： 能够适应初创阶段的快节奏与琐碎事务，亲力亲为、细致入微，确保每一项工作都有始有终。\n6.服务意识与沟通能力： 善于倾听员工需求，能够耐心解答问题，在跨文化环境中建立信任。\n7.学习与适应能力： 对未知领域保持好奇心，能够快速学习并适应新的政策、法规与业务需求。\n8.其他：流利的中文（普通话）和英文听说读写能力（必须）。能够在两种语言环境中自由切换，准确传达管理意图与文化细节，入职时须具备在美国合法工作的条件。",
+    "timeType": "Full time",
+    "startDate": "2026-03-09",
+    "externalUrl": "https://li.jobs.feishu.cn/index/position/7615069209999198510/detail",
+    "jobReqId": "7615069209999198510",
+    "postedOn": "Posted 207 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "li",
    "similarJobsCount": 0,
    "similarJobs": [],
-   "error": null
+   "error": null,
+   "jobFamilyGroup": "Corporate function / Support",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
   },
   {
    "reqId": "7517580293869046043",
@@ -82,11 +118,29 @@
    "countries": [
     "United States"
    ],
-   "detail": null,
-   "hiringOrg": null,
+   "detail": {
+    "title": "Senior CMF Designer",
+    "location": "San Jose",
+    "additionalLocations": [],
+    "jobDescription": "1. Lead the development of vehicle CMF design with the goal of creating future icon models that are in line with the brand’s DNA. Integrate AI-driven design tools and advanced technology to bring high-quality product sensory experience to users and convey brand value.\n2. Work closely with the design team and be responsible for creating CMF design solutions from initial sketches to design models and finally to manufacturing release.\n3. Foster collaboration with suppliers, engineering and product teams to create exceptional and innovative products. Managing project costs and quality, and clarifying standards.\n4. Establish unified aesthetic standards and a collaborative work culture within the Beijing/Shanghai/Munich design team.\n5. Aim to embody Li Auto's design philosophy in North America, necessitating outstanding connections within the design community. The incumbent will serve as a lighthouse, guiding and representing our brand to ensure a strong and influential presence in the North America design landscape.\n\nEducation/Experience\n1. Bachelor degree or above, majoring in industrial design, transportation design, color design or related field with a focus on AI/technology-driven design applications.\n1. 5- 10 years’ experience in the CMF department of Automotive/luxury brand, exquisite culture and taste, passion for design, future trends and artistic disciplines.\n2. Possess a solid theoretical foundation of CMF until production, to be able to lead a design from strategy, through development, to final color buck release.\nKnowledge\n1. Capbility to researching, analyzing and presenting design trends to create future CMF strategy.\n2. Candidates must possess excellent color acuity.\n3. Proficient in sketching/rendering software (such as Photoshop, Illustrator) and AI tools to optimize design efficiency.\n4. Strong communication and writing skills. Excellent cross-functional coordination and teamwork skills.\nSkills and Competencies\n1. Excellent negotiation and problem-solving skills to connect creative designs to engineering feasibility.\n2. Innovative thinking: combine aesthetic design with craftsmanship to create forwardlooking solutions.\n3. Passionate about exploring advanced materials and new technologies to push creative boundaries.\n4. Self-motivated and adaptable, thrive in a fast-paced environment.\n5. Confident and goal-driven, results-oriented.",
+    "timeType": "Full time",
+    "startDate": "2025-06-19",
+    "externalUrl": "https://li.jobs.feishu.cn/index/position/7517580293869046043/detail",
+    "jobReqId": "7517580293869046043",
+    "postedOn": "Posted 470 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "li",
    "similarJobsCount": 0,
    "similarJobs": [],
-   "error": null
+   "error": null,
+   "jobFamilyGroup": "Design",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
   },
   {
    "reqId": "7517579056926673171",
@@ -108,11 +162,29 @@
    "countries": [
     "United States"
    ],
-   "detail": null,
-   "hiringOrg": null,
+   "detail": {
+    "title": "Senior Interior Designer",
+    "location": "San Jose",
+    "additionalLocations": [],
+    "jobDescription": "1. Lead the development of the vehicle's interior Space design with the mission of creating experiences for families that align seamlessly with our brand identity. integrating AI-driven design tools and advanced technologies to enhance innovation.  \n2. Help lead the design process and be involved in creating interior design solutions, from initial sketches to design models, and finally to manufacturing releases. \n3. Collaborate with our Autonomous driving 'Smart Space' and engineering teams to create exceptional and innovative forward thinking products.\n4. Establish unified aesthetic standards and a collaborative work culture across Beijing/Shanghai/Munich design teams.  \n\nEducation/Experience\n1. Bachelor’s degree or higher in Industrial Design, Transportation Design, or a related field with a focus on AI/technology-driven design applications.  \n2. 5-10 years’ experience in interior design, master of sketching, rendering and presentation skills. Proficiency in AI-driven tools and technologies.  \n3. Deep understanding of full-cycle vehicle design and production, including AI-assisted design validation tools. Proven experience leading projects from concept sketches to tooling.  \nKnowledge\n1. Mastery of sketching/rendering software (e.g., Photoshop) and AI tools to optimize design efficiency.  \n2. Proficient in Alias/Autodesk modeling software and digital workflows (e.g., parametric modeling, real-time rendering).  \n3. Strong communication and writing skills. Excellent cross-functional coordination and teamwork abilities.  \nSkills and Competencies\n1. Exceptional negotiation and problem-solving skills to bridge creative design with engineering feasibility.  \n2. Innovative mindset: Merge aesthetic design with modern technology to create forward-thinking solutions.  \n3. Passion for exploring cutting-edge tools (e.g., VR prototyping, AI-assisted concept iteration) to push creative boundaries.  \n4. Self-motivated and adaptable, thriving in fast-paced, interdisciplinary environments.  \n5. Self-confidence and goal driven. Orientation toward results.",
+    "timeType": "Full time",
+    "startDate": "2025-06-19",
+    "externalUrl": "https://li.jobs.feishu.cn/index/position/7517579056926673171/detail",
+    "jobReqId": "7517579056926673171",
+    "postedOn": "Posted 470 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "li",
    "similarJobsCount": 0,
    "similarJobs": [],
-   "error": null
+   "error": null,
+   "jobFamilyGroup": "Design",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
   },
   {
    "reqId": "7517498696263977228",
@@ -134,11 +206,29 @@
    "countries": [
     "United States"
    ],
-   "detail": null,
-   "hiringOrg": null,
+   "detail": {
+    "title": "Senior Exterior Designer",
+    "location": "San Jose",
+    "additionalLocations": [],
+    "jobDescription": "1. Lead the development of vehicle exterior design with the goal of creating future-icon models that align with the brand DNA, integrating AI-driven design tools and advanced technologies to enhance innovation.  \n2. Oversee the entire design process from concept sketches and design models to product launch.  \n3. Foster collaboration with aerodynamics, engineering, and smart technology teams to deliver breakthrough innovations and integrated technical solutions.  \n4. Establish unified aesthetic standards and a collaborative work culture across Beijing/Shanghai/Munich design teams.  \n\nEducation/Experience\n1. Bachelor’s degree or higher in Industrial Design, Transportation Design, or a related field with a focus on AI/technology-driven design applications.  \n2. 6–10 years of automotive exterior design experience, with expertise in sketching, model-making, and proportion studies. Proficiency in AI-driven tools and technologies.  \n3. Deep understanding of full-cycle vehicle design and production, including AI-assisted design validation tools. Proven experience leading projects from concept sketches to tooling.  \nKnowledge\n1. Mastery of sketching/rendering software (e.g., Photoshop) and AI tools to optimize design efficiency.  \n2. Proficient in Alias/Autodesk modeling software and digital workflows (e.g., parametric modeling, real-time rendering).  \n3. Strong communication and writing skills. Excellent cross-functional coordination and teamwork abilities.  \nSkills and Competencies\n1. Exceptional negotiation and problem-solving skills to bridge creative design with engineering feasibility.  \n2. Innovative mindset: Merge aesthetic design with modern technology to create forward-thinking solutions.  \n3. Passion for exploring cutting-edge tools (e.g., VR prototyping, AI-assisted concept iteration) to push creative boundaries.  \n4. Self-motivated and adaptable, thriving in fast-paced, interdisciplinary environments.  \n5. Self-confidence and goal driven. Orientation toward results.",
+    "timeType": "Full time",
+    "startDate": "2025-06-19",
+    "externalUrl": "https://li.jobs.feishu.cn/index/position/7517498696263977228/detail",
+    "jobReqId": "7517498696263977228",
+    "postedOn": "Posted 470 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "li",
    "similarJobsCount": 0,
    "similarJobs": [],
-   "error": null
+   "error": null,
+   "jobFamilyGroup": "Design",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
   },
   {
    "reqId": "7512377511080642857",
@@ -160,11 +250,29 @@
    "countries": [
     "United States"
    ],
-   "detail": null,
-   "hiringOrg": null,
+   "detail": {
+    "title": "AI Technology and Strategic Planning Researcher",
+    "location": "San Jose",
+    "additionalLocations": [],
+    "jobDescription": "Strategic Leadership:\n· Research and formulate the development of AI technology and business strategies, covering areas such as autonomous driving, embodied intelligence, physical AI, generative AI, etc.\n· Drive cross-functional collaboration to identify emerging opportunities and define roadmaps for AI adoption and innovation.\n\nTechnology Trend Analysis:\n· Monitor global AI advancements, competitive landscapes, and regulatory changes (e.g., AI ethics, compliance frameworks) to inform strategic decision-making.\n· Evaluate cutting-edge technologies (e.g., LLMs, reinforcement learning, multimodal AI) and assess their potential business impact.\n\nEcosystem Development:\n· Build partnerships with academia, industry consortia, and startups to foster co-innovation and leverage external expertise.\n· Establish and maintain collaborative relationships with research institutions, industry associations, and other key stakeholders, and represent the company at conferences, technical committees, etc.\n\nInsight Delivery:\n· Produce strategic and technical insight reports and presentations for executive leadership to inform global perspectives for business planning, and translate insights into strategic recommendations.\n\nEducation/Experience\n· Master’s degree or higher in Artificial Intelligence, Robotics, Computer Science, Data Science, Electrical Engineering, or a related field.\n· 3+ years of professional experience in autonomous driving and/or AI industries, with in-depth knowledge of technology trends, application scenarios, and technical foresight.\n· Proven experience in technology foresight, strategy consulting, or academic research related to areas is highly preferred.\n\nKnowledge\n· Familiar with technical architectures of autonomous driving and Physical AI systems, including planning, simulation, and LLM/VLM integration.\n· Familiar with AI ethics, standards, and governance frameworks.\n· Awareness of global industry and academic trends in intelligent mobility, robotics, etc.\n\nSkills and Competencies\n· Strong analytical, synthesis, and strategic thinking capabilities to balance technical feasibility, market demands, and ROI.\n· Exceptional communication skills to articulate complex AI concepts to non-technical stakeholders.\n· Ability to work cross-functionally, manage uncertainty, and handle ambiguity in emerging technology domains.\n· Bonus: Experience in AI-related product/technology R&D (e.g., AD/ADAS).\n· Bonus: Proficiency in Chinese communication and writing for global collaboration.",
+    "timeType": "Full time",
+    "startDate": "2025-06-05",
+    "externalUrl": "https://li.jobs.feishu.cn/index/position/7512377511080642857/detail",
+    "jobReqId": "7512377511080642857",
+    "postedOn": "Posted 484 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "li",
    "similarJobsCount": 0,
    "similarJobs": [],
-   "error": null
+   "error": null,
+   "jobFamilyGroup": "Technical project management",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
   },
   {
    "reqId": "7512376968471906610",
@@ -186,11 +294,29 @@
    "countries": [
     "United States"
    ],
-   "detail": null,
-   "hiringOrg": null,
+   "detail": {
+    "title": "AI Research Scientist",
+    "location": "San Jose",
+    "additionalLocations": [],
+    "jobDescription": "· Lead strategic analysis on global trends in Physical AI, including autonomous driving, embodied intelligence, robotics, and sensorimotor foundation models.\n· Continuously monitor and benchmark key players (e.g., Tesla FSD, Waymo Robotaxi) and emerging technologies in North America and globally.\n· Conduct exploratory research on cutting-edge technologies related to world models, multimodal large models, and planning frameworks in AI.\n· Produce high-quality technical and strategic insight reports for internal stakeholders to inform roadmap and business decisions.\n· Collaborate with R&D and product teams to shape future research directions and support decision-making with clear, data-driven foresight.\n· Participate in academic engagements, including paper drafting and submission to top-tier AI conferences (e.g., NeurIPS, CVPR, ICRA, RSS).\n\nEducation/Experience\n· Master’s or PhD degree in Artificial Intelligence, Robotics, Computer Science, Cognitive Science, or related disciplines.\n· Minimum 5 years of experience in autonomous driving, embodied AI, strategy research, or related technical domains.\n· Proven experience in technology foresight, strategy consulting, or academic research related to Physical AI is highly preferred.\n\nKnowledge\n· Familiar with technical architectures of autonomous driving and Physical AI systems, including planning, simulation, and LLM/VLM integration.\n· Understanding of multimodal foundation models (e.g., GPT-4V, Gemini, MM-ReAct), NeRF/3D scene generation, and decision-making frameworks.\n· Awareness of global industry and academic trends in intelligent mobility and robotics.\n\nSkills and Competencies\n· Strong analytical, synthesis, and strategic thinking capabilities.\n· Excellent writing and communication skills in English; bilingual in Chinese is a plus.\n· Ability to work cross-functionally, manage uncertainty, and handle ambiguity in emerging technology domains.\n· Self-motivated, intellectually curious, and oriented toward high-impact results.",
+    "timeType": "Full time",
+    "startDate": "2025-06-05",
+    "externalUrl": "https://li.jobs.feishu.cn/index/position/7512376968471906610/detail",
+    "jobReqId": "7512376968471906610",
+    "postedOn": "Posted 484 Days Ago",
+    "country": {
+     "descriptor": "United States"
+    }
+   },
+   "hiringOrg": "li",
    "similarJobsCount": 0,
    "similarJobs": [],
-   "error": null
+   "error": null,
+   "jobFamilyGroup": "R&D",
+   "signals": {
+    "status": "no_match",
+    "fetched_at": ""
+   }
   }
  ]
 }

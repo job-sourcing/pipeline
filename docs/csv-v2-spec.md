@@ -445,3 +445,7 @@ convention in `ingest/data/workday/` — see the v2.6 sibling table
 | `visionnav_us_fulltime` | `custom:visionnav` | 15 | 0 (0.0%) | S23; data.php SSR list + detail pages; 19 LCA (Lawrenceville GA); North America/USA/Remote,US classification |
 | `verisilicon_us_fulltime` | `custom:verisilicon` | 2 | 0 (0.0%) | S23; Careers divUS tab (h3 sections); San Jose; email apply |
 | `uniview_us_fulltime` | `custom:uniview` | 2 | 0 (0.0%) | S23; US career page div.li blocks; 'Based in USA/Canada' titles |
+| `zilliz_us_fulltime` | `ats:lever:zilliz` | 8 | 0 (0.0%) | S24; China-ops origin test passed (SH entity + 3 offices); 12-post board, 8 US Redwood City/NY/Seattle/Austin; ZILLIZ INC 1 LCA |
+| `qcraft_us_fulltime` | `ats:workable:qcraft` | 0 | — | S24; workable board live-but-empty (honest 0, watch auto-captures); SF office |
+| `lightelligence_us_fulltime` | `ats:workable:lightelligence` | 0 | — | S24; workable account live, jobs:[] today; HK-listed 01879.HK dual HQ Boston/Shanghai |
+| `dify_us_fulltime` | `custom:dify` | 0 | — | S24; join.dify.ai supabase public-jobs API (custom adapter); 4 jobs all-China today; 苏州语灵 China entity |

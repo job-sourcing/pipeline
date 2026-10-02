@@ -1,9 +1,11 @@
 rows: 8 (unique reqIds: 8)
-details merged: 0
-descriptions present: 0
+details merged: 8
+descriptions present: 8
 locations enumerated (not 'N Locations'): 8
-startDate present: 0
-signals: matched=0 no_match=0 blocked=0 not_checked=8
-location entries total (sum nLocations): 8
+startDate present: 8
+signals: matched=0 no_match=8 blocked=0 not_checked=0
+location entries total (sum nLocations): 9
 similar-job edges: 0
+facet-tagged rows: workerSubType=0 jobFamilyGroup=8 (from facet_tags.jsonl)
+facet tag coverage: 8/8 rows (0 untagged)
 h1b wage bands: 0 usable filings in the extract (all uncertified/unparseable?)
