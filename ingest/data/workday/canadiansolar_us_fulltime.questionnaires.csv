@@ -1,9 +1,0 @@
-﻿questionnaireId,instructions,questionId,order,question,required,type,answers
-0c9571e486aa1000e2f78b8c50df0000,,0c9571e486aa1000e2f78c2634df0000,a,Are you legally permitted to work in the country where this job is located?,true,Multiple Choice - Single Select,Yes; No
-0c9571e486aa1000e2f78b8c50df0000,,0c9571e486aa1000e2f78d5b1e900001,a.a,You answered 'Yes to the previous question. Please choose the answer below which most accurately fits your situation.,false,Multiple Choice - Single Select,I have an active temporary work permit; I am authorized to work permanently in the country
-0c9571e486aa1000e2f78b8c50df0000,,0c9571e486aa1000e2f78d5b1e900004,a.b,You answered 'No' to the previous question. Please choose the answer below which most accurately fits your situation.,false,Multiple Choice - Single Select,"No, but I am eligible to apply for a work visa within six months; I am not eligible"
-0c9571e486aa1000e2f78b8c50df0000,,0c9571e486aa1000e2f78df4bbaa0000,b,What is your desired start date?,false,Date,
-0c9571e486aa1000e2f78b8c50df0000,,0c9571e486aa1000e2f78df4bbaa0001,c,What is your desired Annual Base Salary?,false,Number,
-dd5b674dd24410011e0d043a95c70000,,dd5b674dd24410011e3e59d565f50000,a,Are you legally permitted to work in the country where this job is located?,true,Multiple Choice - Single Select,"Yes, I have an active temporary work permit.; Yes, I am authorized to work permanently in the country.; No, but I am eligible to apply for a work visa within six months.; No, I am not eligible."
-dd5b674dd24410011e0d043a95c70000,,dd5b674dd24410011e0d04d492100006,b,What is your desired start date?,true,Date,
-dd5b674dd24410011e0d043a95c70000,,dd5b674dd24410011e0d04d492100007,c,What is your desired Annual Base Salary?,true,Number,

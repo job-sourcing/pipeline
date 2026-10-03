@@ -152,3 +152,22 @@ jobs:
           else
             echo "::warning::failed to dispatch next leg — daily cron resumes"
           fi
+
+      - name: Chain the CSV export (state-merge refresh + bundle)
+        # S26 D-S26-2: a COMPLETED watch leg hands its fresh state to
+        # the export workflow — CSVs + the UI bundle refresh in the
+        # same daily cadence. Idempotent (re-derives against today's
+        # snapshot); its own concurrency group serializes overlap.
+        # Backlog legs don't chain (the next leg refreshes more state;
+        # the 22:17Z safety slot covers the day regardless).
+        if: env.WATCH_RESULT == 'complete'
+        run: |
+          if curl -sf -X POST \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/workflows/csv-export.yml/dispatches" \
+              -d '{"ref":"main"}'; then
+            echo "csv-export dispatched (fresh state → CSVs + bundle)"
+          else
+            echo "::warning::failed to chain csv-export — the 22:17Z safety slot covers it"
+          fi

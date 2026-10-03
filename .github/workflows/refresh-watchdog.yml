@@ -1,0 +1,114 @@
+name: Refresh Watchdog
+
+# S26 (D-S26-1) — the daily-refresh GUARANTEE. Evidence: the 06:45Z
+# board-watch cron systematically fires 5-7h late (GitHub scheduler
+# load; every schedule event 2026-09-14 → 10-03 landed 11:34-14:30Z),
+# Oct-2's run was cancelled mid-queue-cleanup, and a true drop leaves
+# the day uncovered.
+#
+# Two off-peak odd-minute slots (GitHub advises off-the-hour times):
+#   10:33Z — MORNING mode: dispatch board-watch iff no SUCCESSFUL run
+#            in the last 30h (heals a failed yesterday; today's delayed
+#            schedule hasn't had its turn yet, so 30h — not "today")
+#   21:33Z — EVENING mode: dispatch board-watch iff NO run was created
+#            TODAY (UTC) — the daily guarantee, last chance of the day
+# Mode is chosen by the ACTUAL UTC hour at execution (a delayed cron
+# slot still lands in the right mode).
+#
+# Every slot appends a heartbeat ledger line to
+# logs/refresh_watchdog.jsonl (committed — the audit instrument for
+# "are companies refreshed daily?"). A dispatch failure = red run
+# (fail loudly). Public repo = free minutes; each slot costs ~1 min.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "33 10 * * *"
+    - cron: "33 21 * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: refresh-watchdog
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check board-watch freshness and dispatch if missed
+        run: |
+          set -e
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" -lt 15 ]; then MODE="morning"; else MODE="evening"; fi
+          echo "watchdog mode: $MODE (utc hour $HOUR)"
+
+          # latest successful board-watch run
+          LAST_OK=$(curl -sf -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/board-watch.yml/runs?status=success&per_page=1" \
+            | python3 -c "import json,sys; r=json.load(sys.stdin)['workflow_runs']; print(r[0]['created_at'] if r else 'none')")
+          # any board-watch run created today (any status — covers
+          # in_progress/queued: it's being handled)
+          TODAY=$(date -u +%F)
+          RUNS_TODAY=$(curl -sf -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/board-watch.yml/runs?per_page=50" \
+            | python3 -c "import json,sys; runs=json.load(sys.stdin)['workflow_runs']; print(sum(1 for r in runs if r['created_at'].startswith('$TODAY')))")
+          echo "last successful watch: $LAST_OK; runs created today: $RUNS_TODAY"
+
+          DISPATCH=0
+          REASON=""
+          if [ "$MODE" = "morning" ]; then
+            if [ "$LAST_OK" = "none" ] || python3 -c "
+import sys
+from datetime import datetime, timezone
+last = datetime.fromisoformat('$LAST_OK'.replace('Z','+00:00'))
+age_h = (datetime.now(timezone.utc) - last).total_seconds()/3600
+sys.exit(0 if age_h > 30 else 1)"; then
+              DISPATCH=1; REASON="no successful watch in 30h (last=$LAST_OK)"
+            fi
+          else
+            if [ "$RUNS_TODAY" = "0" ]; then
+              DISPATCH=1; REASON="no watch run created today ($TODAY, last_ok=$LAST_OK)"
+            fi
+          fi
+
+          if [ "$DISPATCH" = "1" ]; then
+            echo "DISPATCHING board-watch: $REASON"
+            if ! curl -sf -X POST \
+                -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/${{ github.repository }}/actions/workflows/board-watch.yml/dispatches" \
+                -d '{"ref":"main"}'; then
+              echo "::error::watchdog dispatch FAILED ($REASON) — manual coverage needed"
+              exit 1
+            fi
+            DECISION="dispatched"
+          else
+            echo "watch is covered — no dispatch"
+            DECISION="covered"
+          fi
+
+          mkdir -p logs
+          echo "{\"ts\": \"$(date -u +%FT%TZ)\", \"mode\": \"$MODE\", \"last_success\": \"$LAST_OK\", \"runs_today\": $RUNS_TODAY, \"decision\": \"$DECISION\", \"reason\": \"$REASON\"}" >> logs/refresh_watchdog.jsonl
+
+      - name: Commit the heartbeat ledger
+        if: always()
+        run: |
+          git config user.name "refresh-watchdog-bot"
+          git config user.email "actions@github.com"
+          # tiny ledger commit — race-proof like the watch checkpoint
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            git add logs/refresh_watchdog.jsonl
+            if git diff --cached --quiet; then break; fi
+            git commit -m "refresh-watchdog heartbeat [skip ci]" || break
+            if git push; then break; fi
+            sleep 5
+          done
+          echo "heartbeat committed (best-effort)"

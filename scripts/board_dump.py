@@ -1547,8 +1547,12 @@ _H1B_WAGE_MIN, _H1B_WAGE_MAX = 25_000, 1_000_000
 # Token vocabularies for the subset-tier ranking (design-audit S11):
 # level words are the dialect-unstable tokens (the LCA comma-form
 # reorders them) — domain conditioning must outrank level conditioning.
+# D-S26-3: roman-numeral leveling suffixes (Riot/BeOne-style "Engineer
+# II"/"Data Engineer III") are level tokens TOO — they fragment LCA
+# filings into pools that never reach the honest >=3-filings gate.
+# ("i" and "v" stay out: rare/ambiguous single letters.)
 _H1B_LEVEL_TOKENS = {"senior", "staff", "principal", "lead", "chief",
-                     "junior"}
+                     "junior", "ii", "iii", "iv"}
 # Role words that, appearing in the posting OUTSIDE the matched pool,
 # change the occupation family (QA vs SWE, intern vs full-time,
 # marketing vs product) — such matches are SUPPRESSED (honest "",
@@ -1672,6 +1676,15 @@ def _load_h1b_bands(out: Path,
             continue
         toks = _title_tokens(
             _h1b_house_title(company, str(rec.get("jobTitle") or "")))
+        # D-S26-3: level tokens OUT of POOL KEYS — "Data Engineer II" and
+        # "Data Engineer III" filings pool together (audit: 61 boards with
+        # LCA data banded 0 rows because leveled fragments never reached
+        # the honest >=3-filings gate; riot 0→22 banded). Posting-side
+        # matching is unchanged (the subset rule + role-block gate);
+        # raw titles stay the h1bMatchTitle audit string; the band is
+        # the pool's level-mixed distribution, as the subset basis
+        # already documents.
+        toks = frozenset(toks - _H1B_LEVEL_TOKENS)
         if len(toks) < 2:
             continue
         pool = pools.setdefault(toks, {"states": {}, "all": [],

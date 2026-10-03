@@ -62,6 +62,33 @@ if ls "$DEST"/ingest/data/workday/*.h1b_lca.jsonl >/dev/null 2>&1; then
     git diff --cached --quiet || git commit -q -m "h1b extract back-sync from org runtime")
 fi
 
+echo "== back-sync GHA-produced board CSVs + the UI bundle (S26 D-S26-2) =="
+# The chains (board_dump) and the S26 csv-export workflow write
+# {label}.csv on the ORG repo; without this back-sync the archive —
+# the SOURCE OF TRUTH — silently misses them (S26 audit: 31 of 124
+# CSVs were org-only). Same org→archive flow as the LCA extracts:
+# copy BEFORE the forward rsync (which would otherwise wipe them from
+# the mirror), then commit. The {label}.h1b_lca.csv linked views ride
+# along. The UI bundle (ingest/data/ui/) is GHA-built too — same hole,
+# same fix.
+if ls "$DEST"/ingest/data/workday/*_us_fulltime.csv >/dev/null 2>&1; then
+  rsync -a "$DEST"/ingest/data/workday/*_us_fulltime.csv \
+    "$DEST"/ingest/data/workday/*.h1b_lca.csv \
+    "$SRC/ingest/data/workday/" 2>/dev/null || \
+    rsync -a "$DEST"/ingest/data/workday/*_us_fulltime.csv \
+      "$SRC/ingest/data/workday/"
+  (cd "$SRC" && git add ingest/data/workday 2>/dev/null && \
+    git diff --cached --quiet || \
+    git commit -q -m "board CSV back-sync from org runtime (chains + csv-export)")
+fi
+if [ -d "$DEST/ingest/data/ui" ]; then
+  mkdir -p "$SRC/ingest/data/ui"
+  rsync -a --delete "$DEST"/ingest/data/ui/ "$SRC/ingest/data/ui/"
+  (cd "$SRC" && git add ingest/data/ui 2>/dev/null && \
+    git diff --cached --quiet || \
+    git commit -q -m "UI bundle back-sync from org runtime (csv-export)")
+fi
+
 echo "== back-sync sector-census probe evidence (GHA sector-probe legs) =="
 # S23: the sector-probe workflow commits probe/<slug>.json evidence on
 # the ORG repo (US-egress reads). Pull them back into the archive —

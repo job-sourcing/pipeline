@@ -1,0 +1,86 @@
+name: CSV Export & Bundle
+
+# S26 (D-S26-2) — the daily state-merge export: turn the board-watch
+# state (refreshed daily) into refreshed per-board CSVs + the UI data
+# bundle. Closes the audit gap where CSVs froze at chain-time (420 US
+# rows invisible, 391 ghosts, 5 feishu boards in NO artifact, 61
+# boards 0-banded).
+#
+# Triggers:
+#   - workflow_dispatch (manual + the board-watch post-leg chain step)
+#   - 22:17Z daily safety slot (after even the latest delayed watch)
+#
+# Idempotent: re-running re-derives dates against today's snapshot and
+# re-bands from the local LCA extracts — no network fetches at all.
+#
+# BUDGET: all-local computation, ~3-6 min for 129 boards + the bundle
+# build. Public repo = free minutes.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 22 * * *"   # the evening safety slot (odd minute)
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: csv-export
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pipeline (no dev extras)
+        run: pip install -e ingest
+
+      - name: Run the state-merge export + bundle build
+        run: python3 scripts/s26_export_refresh.py --bundle
+
+      - name: Checkpoint CSVs + bundle to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          # rescue the runner-owned artifacts (CSVs, bundle) — NEVER
+          # config.json or state (those belong to the watch's own
+          # checkpoint; the freshly-reset tree = latest main wins)
+          mkdir -p /tmp/export_state
+          cp ingest/data/workday/*.csv /tmp/export_state/ 2>/dev/null || true
+          mkdir -p /tmp/export_ui
+          cp -r ingest/data/ui /tmp/export_ui/ 2>/dev/null || true
+          git config user.name "csv-export-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            cp /tmp/export_state/*.csv ingest/data/workday/ 2>/dev/null || true
+            rm -rf ingest/data/ui
+            cp -r /tmp/export_ui/ui ingest/data/ 2>/dev/null || true
+            git add ingest/data/workday ingest/data/ui
+            if git diff --cached --quiet; then
+              echo "no export change to commit"
+              push_ok=1
+              break
+            fi
+            ROWS=$(python3 -c "import json,pathlib; p=pathlib.Path('ingest/data/ui/index.json'); print(json.loads(p.read_text())['totalRows'] if p.exists() else 0)")
+            git commit -m "csv-export: state-merge refresh (${ROWS} rows bundle) [skip ci]"
+            if git push; then push_ok=1; break; fi
+            echo "push attempt $i failed — refetching and retrying"
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::export checkpoint push failed after 3 attempts"
+            exit 1
+          fi

@@ -467,11 +467,15 @@ class TestH1bWageBands:
             self._rec("Engineer, Senior Systems Software", "CA", 250000,
                       case="C-b3"),
         ])
-        # posting form of the SAME title -> token-exact (title tier)
+        # posting form of the SAME title -> D-S26-3: pool keys are
+        # level-stripped, so the posting's 'senior' makes it a STRICT
+        # SUPERSET of the {engineer, system, software} pool — the tier
+        # is subset (title-consistent + more specialized), the honest
+        # basis for level-mixed bands
         out = board_dump._derive_h1b_columns(
             "Senior System Software Engineer", "US, CA, Santa Clara",
             pools)
-        assert out["h1bMatchBasis"] == "title+state"
+        assert out["h1bMatchBasis"] == "subset+state"
         assert out["h1bFilings"] == 3
         assert out["h1bMatchTitle"] == "Engineer, Senior Systems Software"
         # SPECIALIZED posting -> the 4-token subset pool (not the
@@ -583,11 +587,13 @@ class TestH1bWageBands:
                   encoding="utf-8-sig") as f:
             csv_rows = list(csv.DictReader(f))
         r0 = csv_rows[0]
-        # token-exact tier (reorder-tolerant): the comma-form pool —
+        # D-S26-3: pool keys level-stripped → the comma-form pool is
+        # {engineer, system, software}; the posting's 'senior' token
+        # makes it a strict superset → subset tier (level-mixed band).
         # CA filings C-1+C-2 = n=2 < 3 → the state hop is REJECTED by
         # the min-n gate, falls to the all-state pool (C-1,C-2,C-3).
         # Poison C-4 dropped everywhere (unit corruption).
-        assert r0["h1bMatchBasis"] == "title"
+        assert r0["h1bMatchBasis"] == "subset"
         assert r0["h1bFilings"] == "3"
         assert r0["h1bWageP50"] == "220000"
         assert r0["h1bMatchTitle"] == "Engineer, Senior Systems Software"
@@ -3091,8 +3097,10 @@ class TestH1bHouseTitle:
         assert pool["title"] == \
             "Member of Technical Staff (Software Engineer)"
         assert len(pool["all"]) == 4
-        # without the company: pool keyed on the raw tokens (no match)
+        # without the company: pool keyed on the raw tokens, level-
+        # stripped per D-S26-3 ('staff' is a level token → out of the
+        # POOL KEY; raw titles still carry it as the audit string)
         pools2, _ = board_dump._load_h1b_bands(out, "Somebody Else")
         assert frozenset({"software", "engineer"}) not in pools2
-        assert frozenset({"member", "technical", "staff",
-                          "software", "engineer"}) in pools2
+        assert frozenset({"member", "technical", "software",
+                          "engineer"}) in pools2
