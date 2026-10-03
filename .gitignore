@@ -9,6 +9,7 @@ ingest/data/*
 !ingest/data/workday/
 !ingest/data/board_watch/
 !ingest/data/corpus/
+!ingest/data/ui/
 ingest/.venv/
 *.tmp
 *.pyc

@@ -219,7 +219,9 @@ def main() -> int:
                        ensure_ascii=False), encoding="utf-8")
 
     mb = (out / "jobs.json").stat().st_size / 1e6
-    dmb = sum((out / "desc" / f).stat().st_size
+    # the glob yields PATH objects — join NOTHING onto them (a relative
+    # --out used to double the path: 'out/desc/out/desc/x.json')
+    dmb = sum(f.stat().st_size
               for f in (out / "desc").glob("*.json")) / 1e6
     print(f"bundle: {len(jobs)} rows, {len(companies)} companies, "
           f"jobs.json {mb:.1f}MB, desc/ {dmb:.1f}MB, snapshot "
