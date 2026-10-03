@@ -189,18 +189,20 @@ def _sig_cols(sig: dict | None) -> dict:
 def _date_derived(row: dict, snapshot: date, reposts: dict[str, str]) -> None:
     """Re-derive the snapshot-relative columns IN PLACE against today.
     Uses the row's own evidence only (startDate / linkedinPostedDate /
-    applicationDeadline / description / firstSeenDate)."""
+    applicationDeadline / description / firstSeenDate). All date
+    comparisons are ISO-STRING comparisons (lexicographic = ISO
+    chronological; mixing date objects and strings raises TypeError —
+    the GHA live test caught exactly that on corroborated boards)."""
     start = (row.get("startDate") or "").strip()
     sd = _d(start)
     row["postingAgeDays"] = (snapshot - sd).days if sd else ""
     li = (row.get("linkedinPostedDate") or "").strip()[:10]
-    lid = _d(li)
     earliest = start
     basis = "startDate" if sd else ""
-    if lid:
-        if sd and lid < start[:10]:
+    if li:
+        if start and li < start[:10]:
             earliest, basis = li, "startDate+linkedin"
-        elif not sd:
+        elif not start:
             earliest, basis = li, "startDate+linkedin"
     ed = _d(earliest)
     row["daysOnMarket"] = (snapshot - ed).days if ed and basis else ""
@@ -218,10 +220,11 @@ def _date_derived(row: dict, snapshot: date, reposts: dict[str, str]) -> None:
     else:
         row["daysLeftToApply"] = ""
     row["earliestEvidenceDate"] = earliest
+    li_predates = bool(li and start and li < start[:10])
     row["crossSourceRepostEvidence"] = (
-        "reqId" if (lid and sd and li < start[:10]
+        "reqId" if (li_predates
                     and (row.get("matchMethod") or "title") == "reqId")
-        else "title" if (lid and sd and li < start[:10]) else "")
+        else "title" if li_predates else "")
     row["lastResetDate"] = reposts.get(row.get("reqId") or "", "")
     row["dumpDate"] = snapshot.isoformat()
 

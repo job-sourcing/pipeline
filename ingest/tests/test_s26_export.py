@@ -253,6 +253,33 @@ class TestBanding:
         assert r["h1bFilings"] == ""
 
 
+
+class TestCorroboratedRows:
+    def test_linkedin_date_predates_start_gha_regression(self, tmp_path):
+        # the GHA live test caught a TypeError here (date vs str compare
+        # on corroborated boards) — pin the fixed shape
+        _setup(tmp_path,
+               state_rows=[_state_row("R1")],
+               feed_rows=[],
+               csv_rows=[_csv_row(
+                   "R1", linkedinPostedDate="2026-09-10",
+                   corroborationStatus="matched", matchMethod="reqId",
+                   numApplicants="15")])
+        exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+        with open(tmp_path / "workworkday/testco_us_fulltime.csv" if False
+                  else tmp_path / "workday/testco_us_fulltime.csv",
+                  newline="", encoding="utf-8-sig") as f:
+            r = list(csv.DictReader(f))[0]
+        # 2026-09-10 < startDate 2026-09-18 → DOM from the LI card
+        assert r["daysOnMarketBasis"] == "startDate+linkedin"
+        assert r["earliestEvidenceDate"] == "2026-09-10"
+        assert r["daysOnMarket"] == "23"     # 2026-09-10 → 2026-10-03
+        assert r["crossSourceRepostEvidence"] == "reqId"
+        # corroboration columns survive the export untouched
+        assert r["numApplicants"] == "15"
+        assert r["corroborationStatus"] == "matched"
+
+
 class TestReposts:
     def test_last_reset_date_joined(self, tmp_path):
         _setup(tmp_path,
