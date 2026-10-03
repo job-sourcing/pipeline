@@ -1550,9 +1550,11 @@ _H1B_WAGE_MIN, _H1B_WAGE_MAX = 25_000, 1_000_000
 # D-S26-3: roman-numeral leveling suffixes (Riot/BeOne-style "Engineer
 # II"/"Data Engineer III") are level tokens TOO — they fragment LCA
 # filings into pools that never reach the honest >=3-filings gate.
+# "sr"/"jr" (review P2-1: the abbreviation dialect — live beone pools
+# like {automation, engineer, site, sr} never match "Senior" postings).
 # ("i" and "v" stay out: rare/ambiguous single letters.)
 _H1B_LEVEL_TOKENS = {"senior", "staff", "principal", "lead", "chief",
-                     "junior", "ii", "iii", "iv"}
+                     "junior", "ii", "iii", "iv", "sr", "jr"}
 # Role words that, appearing in the posting OUTSIDE the matched pool,
 # change the occupation family (QA vs SWE, intern vs full-time,
 # marketing vs product) — such matches are SUPPRESSED (honest "",

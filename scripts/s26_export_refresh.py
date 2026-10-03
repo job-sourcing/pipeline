@@ -30,8 +30,9 @@ HONEST LIMITS (documented, not hidden):
     the chain rotation (S27 plan) — this export never re-fetches
   - state rows still awaiting enrichment (needs_enrich / pending)
     are NOT exported — they land on the next watch leg
-  - new rows carry "" for questionnaireId / similarJobsCount (fields
-    only the full detail path produces — honest empty, never guessed)
+  - new rows carry "" for questionnaireId and 0 for similarJobsCount
+    (fields only the full detail path produces — honest empty, never
+    guessed)
 
 Run:  python3 scripts/s26_export_refresh.py [--bundle] [--labels a,b]
       (repo-relative paths — works in any clone; on GHA it runs in the
@@ -53,11 +54,11 @@ sys.path.insert(0, str(REPO / "ingest"))
 sys.path.insert(0, str(HERE))
 
 from board_dump import (          # noqa: E402
-    _annualize_wage, _derive_h1b_columns, _h1b_house_title,
-    _load_h1b_bands, _parse_application_deadline, _slug_repost_count,
-    _state_codes, _title_tokens, WATCH_SEED, _H1B_LEVEL_TOKENS,
+    _derive_h1b_columns, _load_h1b_bands, _parse_application_deadline,
+    _slug_repost_count, _state_codes, WATCH_SEED,
 )
 from jobsearch import corroborate            # noqa: E402
+from jobsearch.sources import workday         # noqa: E402 — country gate
 
 DATA = REPO / "ingest/data"
 WORKDAY = DATA / "workday"
@@ -100,36 +101,10 @@ def _jsonl(path: Path) -> list[dict]:
 
 def _load_h1b_bands_levelstripped(csv_path: Path,
                                   company: str = "") -> dict:
-    """_load_h1b_bands + D-S26-3: level tokens stripped from POOL KEYS
-    (posting-side matching unchanged; raw titles stay audit strings).
-    A thin re-implementation so board_dump's own contract stays pinned
-    independently — the level-strip change lands there too; this copy
-    guarantees the export path even if the chain path lags."""
-    import re as _re  # noqa: F401
-    pools: dict = {}
-    path = Path(str(csv_path).removesuffix(".csv") + ".h1b_lca.jsonl")
-    if not path.exists():
-        return pools
-    for rec in _jsonl(path):
-        wage = _annualize_wage(rec)
-        if wage is None:
-            continue
-        toks = _title_tokens(
-            _h1b_house_title(company, str(rec.get("jobTitle") or "")))
-        toks = frozenset(toks - _H1B_LEVEL_TOKENS)
-        if len(toks) < 2:
-            continue
-        pool = pools.setdefault(toks, {"states": {}, "all": [],
-                                       "titles": {}})
-        pool["all"].append(wage)
-        st = str(rec.get("worksiteState") or "").strip().upper()
-        if st:
-            pool["states"].setdefault(st, []).append(wage)
-        raw = str(rec.get("jobTitle") or "")
-        pool["titles"][raw] = pool["titles"].get(raw, 0) + 1
-    for pool in pools.values():
-        pool["title"] = max(sorted(pool["titles"]),
-                            key=pool["titles"].get)
+    """board_dump._load_h1b_bands + D-S26-3 (single source — the review
+    P2-2: the duplicated loader would drift; board_dump's own function
+    level-strips pool keys identically now). Returns the pools dict."""
+    pools, _ = _load_h1b_bands(csv_path, company)
     return pools
 
 
@@ -284,8 +259,19 @@ def _newpost_row(rec: dict, w: dict, snapshot: date,
 
 
 def refresh_one(label: str, w: dict, snapshot: date) -> dict:
-    """One board's export. Returns stats; writes the CSV only when the
-    board has any output rows OR an existing CSV to prune."""
+    """One board's export. Returns stats; writes the CSV atomically
+    (tmp + os.replace — a killed run can never leave a truncated CSV
+    for the checkpoint to commit; review P1-2) only when the board has
+    any output rows OR an existing CSV to prune.
+
+    Review P0-3 — the country gate: state membership is NOT blindly
+    trusted. A state row whose LAST feed record carries an explicit
+    NON-matching country is excluded (the binance seed-import class:
+    262 state rows, 260 of them feed-classified Singapore/HK/Taiwan…
+    — the include_remote exception kept them in the list and the seed
+    imported them; the export must not ship them in *_us_fulltime).
+    Rows with NO country evidence stay (unclassified ≠ foreign)."""
+    wcountry = w.get("country", "")
     state = {r["reqId"]: r for r in _jsonl(
         WATCH_DIR / f"{label}.state.jsonl")}
     csv_path = WORKDAY / f"{label}.csv"
@@ -299,20 +285,46 @@ def refresh_one(label: str, w: dict, snapshot: date) -> dict:
     for r in _jsonl(WATCH_DIR / f"{label}.newposts.jsonl"):
         feed[r.get("reqId")] = r
 
+    def _feed_foreign(rid: str) -> bool:
+        rec = feed.get(rid)
+        if not rec:
+            return False
+        c = (rec.get("country") or "").strip()
+        return bool(c) and not workday.country_str_matches(c, wcountry)
+
     reposts = _repost_resets(label)
     pools = _load_h1b_bands_levelstripped(csv_path, w.get("company", ""))
-
     csv_ids = {r["reqId"] for r in csv_rows}
-    survivors = [dict(r) for r in csv_rows if r["reqId"] in state]
-    ghosts = [r for r in csv_rows if r["reqId"] not in state]
 
-    new_rows, pending = [], 0
+    # existing CSV rows: gate on the SAME feed evidence (an Anthropic
+    # row or an old binance row classified foreign after landing)
+    survivors = [dict(r) for r in csv_rows
+                 if r["reqId"] in state and not _feed_foreign(r["reqId"])]
+    ghosts = [r for r in csv_rows
+              if r["reqId"] not in state or _feed_foreign(r["reqId"])]
+
+    new_rows, pending, terminal_err = [], 0, 0
     for rid in state:
         if rid in csv_ids:
             continue
+        if _feed_foreign(rid):
+            continue                 # feed-classified foreign — never ship
         rec = feed.get(rid)
-        if not rec or rec.get("error"):
-            pending += 1            # awaiting enrichment (next leg)
+        if not rec:
+            pending += 1             # never enriched — next leg
+            continue
+        if rec.get("error"):
+            # review P1-3: a 3-strike terminal error record would be
+            # 'pending' forever — the recovery query stops at 3. The
+            # error record still carries title/locationsText/postedOn/
+            # url/first_seen: assemble the row honestly with
+            # detailError set (board_dump's detail-unreachable class).
+            if int(rec.get("attempts") or 0) >= 3:
+                new_rows.append(_newpost_row(rec, w, snapshot, reposts,
+                                             rec.get("signals")))
+                terminal_err += 1
+            else:
+                pending += 1         # transient error — retried next leg
             continue
         new_rows.append(_newpost_row(rec, w, snapshot, reposts,
                                      rec.get("signals")))
@@ -337,15 +349,21 @@ def refresh_one(label: str, w: dict, snapshot: date) -> dict:
         "label": label, "rows": len(rows),
         "kept": len(survivors), "new": len(new_rows),
         "ghosts_dropped": len(ghosts), "pending": pending,
+        "terminal_err": terminal_err,
         "banded": banded, "lca_pools": len(pools),
     }
     if rows or csv_path.exists():
-        with open(csv_path, "w", newline="", encoding="utf-8-sig") as f:
+        # atomic: a killed run must never leave a truncated CSV for the
+        # checkpoint to rescue+commit (review P1-2)
+        tmp_path = csv_path.with_suffix(".csv.tmp")
+        with open(tmp_path, "w", newline="", encoding="utf-8-sig") as f:
             wr = csv.DictWriter(f, fieldnames=FIELDS,
                                 extrasaction="ignore")
             wr.writeheader()
             for row in rows:
                 wr.writerow({k: row.get(k, "") for k in FIELDS})
+        import os
+        os.replace(tmp_path, csv_path)
     return stats
 
 
@@ -366,13 +384,15 @@ def main() -> int:
     snapshot = date.today()
 
     tot = {"rows": 0, "new": 0, "ghosts_dropped": 0, "pending": 0,
-           "banded": 0}
+           "terminal_err": 0, "banded": 0}
     n_boards = 0
+    n_err = 0
     print(f"[export] {len(watches)} watches, snapshot {snapshot}", flush=True)
     for w in watches:
         try:
             st = refresh_one(w["label"], w, snapshot)
         except Exception as exc:      # one board never kills the batch
+            n_err += 1
             print(f"[export:{w['label']}] ERROR {type(exc).__name__}: "
                   f"{exc}", file=sys.stderr, flush=True)
             continue
@@ -382,11 +402,19 @@ def main() -> int:
         print(f"[export:{st['label']:34}] rows={st['rows']:4} "
               f"kept={st['kept']:4} +new={st['new']:3} "
               f"-ghost={st['ghosts_dropped']:3} pending={st['pending']:3} "
+              f"terr={st['terminal_err']:2} "
               f"banded={st['banded']:4} pools={st['lca_pools']:3}",
               flush=True)
     print(f"[export] DONE: {n_boards} boards, rows={tot['rows']}, "
           f"+new={tot['new']}, -ghosts={tot['ghosts_dropped']}, "
-          f"pending={tot['pending']}, banded={tot['banded']}", flush=True)
+          f"pending={tot['pending']}, terr={tot['terminal_err']}, "
+          f"banded={tot['banded']}, ERRORS={n_err}", flush=True)
+    if n_err:
+        # review P2-3: per-board failures must not run green — the
+        # checkpoint (if:always) still commits the healthy boards
+        print(f"::error::{n_err} board export(s) failed — see stderr",
+              file=sys.stderr, flush=True)
+        return 1
 
     if args.bundle:
         import os

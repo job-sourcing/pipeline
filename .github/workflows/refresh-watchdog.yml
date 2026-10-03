@@ -52,14 +52,16 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/board-watch.yml/runs?status=success&per_page=1" \
             | python3 -c "import json,sys; r=json.load(sys.stdin)['workflow_runs']; print(r[0]['created_at'] if r else 'none')")
-          # any board-watch run created today (any status — covers
-          # in_progress/queued: it's being handled)
+          # any board-watch run created today that COVERS us: success,
+          # or still active (in_progress/queued — being handled).
+          # review P1-1: a completed-FAILED run today is NOT coverage —
+          # the evening slot must retry the day.
           TODAY=$(date -u +%F)
-          RUNS_TODAY=$(curl -sf -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          COVERED_TODAY=$(curl -sf -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/board-watch.yml/runs?per_page=50" \
-            | python3 -c "import json,sys; runs=json.load(sys.stdin)['workflow_runs']; print(sum(1 for r in runs if r['created_at'].startswith('$TODAY')))")
-          echo "last successful watch: $LAST_OK; runs created today: $RUNS_TODAY"
+            | python3 -c "import json,sys; runs=json.load(sys.stdin)['workflow_runs']; ok=[r for r in runs if r['created_at'].startswith('$TODAY') and (r.get('conclusion')=='success' or r['status'] in ('in_progress','queued','waiting'))]; print(len(ok))")
+          echo "last successful watch: $LAST_OK; covering runs today: $COVERED_TODAY"
 
           DISPATCH=0
           REASON=""
@@ -71,8 +73,8 @@ jobs:
               DISPATCH=1; REASON="no successful watch in 30h (last=$LAST_OK, age=${AGE_H}h)"
             fi
           else
-            if [ "$RUNS_TODAY" = "0" ]; then
-              DISPATCH=1; REASON="no watch run created today ($TODAY, last_ok=$LAST_OK)"
+            if [ "$COVERED_TODAY" = "0" ]; then
+              DISPATCH=1; REASON="no SUCCESSFUL/active watch run today ($TODAY, last_ok=$LAST_OK)"
             fi
           fi
 
@@ -93,17 +95,31 @@ jobs:
           fi
 
           mkdir -p logs
-          echo "{\"ts\": \"$(date -u +%FT%TZ)\", \"mode\": \"$MODE\", \"last_success\": \"$LAST_OK\", \"runs_today\": $RUNS_TODAY, \"decision\": \"$DECISION\", \"reason\": \"$REASON\"}" >> logs/refresh_watchdog.jsonl
+          echo "{\"ts\": \"$(date -u +%FT%TZ)\", \"mode\": \"$MODE\", \"last_success\": \"$LAST_OK\", \"runs_today\": $COVERED_TODAY, \"decision\": \"$DECISION\", \"reason\": \"$REASON\"}" >> logs/refresh_watchdog.jsonl
+          # review P0-2: the commit step below resets --hard BEFORE add —
+          # rescue THIS heartbeat to /tmp and let the step re-apply it
+          # after every reset (the uncommitted append would be thrown
+          # away otherwise; only the LAST line is ours — a concurrent
+          # slot's line on origin/main is preserved by the append)
+          tail -1 logs/refresh_watchdog.jsonl > /tmp/heartbeat_new
 
       - name: Commit the heartbeat ledger
         if: always()
         run: |
           git config user.name "refresh-watchdog-bot"
           git config user.email "actions@github.com"
-          # tiny ledger commit — race-proof like the watch checkpoint
+          # tiny ledger commit — race-proof like the watch checkpoint:
+          # rescue → reset → re-apply → add → commit → push (x3)
           for i in 1 2 3; do
             git fetch origin || true
             git reset --hard origin/main
+            if [ -f /tmp/heartbeat_new ]; then
+              # re-apply OUR heartbeat after the reset (dedup-guarded:
+              # skip if the ledger's last line is already ours)
+              if [ "$(tail -1 logs/refresh_watchdog.jsonl 2>/dev/null)" != "$(cat /tmp/heartbeat_new)" ]; then
+                cat /tmp/heartbeat_new >> logs/refresh_watchdog.jsonl
+              fi
+            fi
             git add logs/refresh_watchdog.jsonl
             if git diff --cached --quiet; then break; fi
             git commit -m "refresh-watchdog heartbeat [skip ci]" || break

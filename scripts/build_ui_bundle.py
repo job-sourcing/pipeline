@@ -217,6 +217,14 @@ def main() -> int:
         (ui_dir / "desc" / f"{cid}.json").write_text(
             json.dumps({"companyId": cid, "rows": rows},
                        ensure_ascii=False), encoding="utf-8")
+    # review P2-6: desc orphans for vanished companies accumulate
+    # forever — prune to the current corpus ids
+    for f in (ui_dir / "desc").glob("*.json"):
+        if f.stem not in descs:
+            f.unlink()
+    for f in (out / "desc").glob("*.json"):
+        if f.stem not in descs:
+            f.unlink()
 
     mb = (out / "jobs.json").stat().st_size / 1e6
     # the glob yields PATH objects — join NOTHING onto them (a relative

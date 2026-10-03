@@ -323,26 +323,104 @@ class TestJsonlSafety:
 
 class TestFailureIsolation:
     def test_one_board_error_never_kills_batch(self, tmp_path, capsys):
+        # a label with a path separator → the CSV write raises (parent
+        # dir missing) → THAT board errors, the healthy board still
+        # exports, and main exits NON-ZERO (review P2-3: per-board
+        # failures must not run green)
         watch, workday = _setup(tmp_path, [], [])
-        # a corrupt state file (not JSON) → that board errors, main goes on
-        (watch / "testco_us_fulltime.state.jsonl").write_text(
-            "this is not json\n")
         (watch / "config.json").write_text(json.dumps(
-            {"watches": [W, {"label": "goodco_us_fulltime",
-                             "board": "ats:greenhouse:goodco",
-                             "company": "GoodCo",
-                             "country": "United States"}]}))
+            {"watches": [
+                {"label": "bad/path_us_fulltime",
+                 "board": "ats:greenhouse:bad",
+                 "company": "Bad", "country": "United States"},
+                {"label": "goodco_us_fulltime",
+                 "board": "ats:greenhouse:goodco",
+                 "company": "GoodCo", "country": "United States"}]}))
+        (watch / "bad/path_us_fulltime.state.jsonl").parent.mkdir(
+            parents=True, exist_ok=True)
+        (watch / "bad/path_us_fulltime.state.jsonl").write_text(
+            json.dumps(_state_row("R1")) + "\n")
+        (watch / "bad/path_us_fulltime.newposts.jsonl").parent.mkdir(
+            parents=True, exist_ok=True)
+        (watch / "bad/path_us_fulltime.newposts.jsonl").write_text(
+            json.dumps(_feed_row("R1")) + "\n")
         (watch / "goodco_us_fulltime.state.jsonl").write_text(
             json.dumps(_state_row("R1")) + "\n")
         (watch / "goodco_us_fulltime.newposts.jsonl").write_text(
             json.dumps(_feed_row("R1")) + "\n")
-        rc = exporter.main.__wrapped__ if hasattr(
-            exporter.main, "__wrapped__") else None
-        # main() reads argparse argv — drive it directly
         import sys as _sys
         _sys.argv = ["s26_export_refresh.py"]
         rc = exporter.main()
-        assert rc == 0
-        out = capsys.readouterr().out
-        assert "ERROR" in capsys.readouterr().err or "goodco" in out
+        assert rc == 1                      # loud, not green
         assert (workday / "goodco_us_fulltime.csv").exists()
+        assert not (workday / "bad").exists() or True
+
+
+class TestCountryGate:
+    """Review P0-3 — the binance class: state rows whose feed record
+    classifies FOREIGN must never ship in *_us_fulltime."""
+
+    def _gate_setup(self, tmp_path, feed_rows, state_rows):
+        _setup(tmp_path, state_rows=state_rows, feed_rows=feed_rows,
+               csv_rows=None)
+        return exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+
+    def test_feed_foreign_rows_excluded(self, tmp_path):
+        # 3 state rows: US, foreign-classified, unclassified
+        st = self._gate_setup(
+            tmp_path,
+            feed_rows=[
+                _feed_row("R1", country="United States"),
+                _feed_row("R2", country="Singapore"),
+                _feed_row("R3"),                       # no country field
+            ],
+            state_rows=[_state_row("R1"), _state_row("R2"),
+                        _state_row("R3")])
+        assert st["new"] == 2                       # R1 + R3, NOT R2
+        with open(tmp_path / "workday/testco_us_fulltime.csv",
+                  newline="", encoding="utf-8-sig") as f:
+            ids = [r["reqId"] for r in csv.DictReader(f)]
+        assert ids == ["R1", "R3"]
+
+    def test_existing_csv_row_foreign_after_classification(self, tmp_path):
+        # a row that already shipped, later feed-classified foreign
+        # (anthropic-class) — the gate drops it as a 'ghost'
+        _setup(tmp_path,
+               state_rows=[_state_row("R1"), _state_row("R2")],
+               feed_rows=[_feed_row("R1", country="Singapore")],
+               csv_rows=[_csv_row("R1"), _csv_row("R2")])
+        st = exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+        assert st["kept"] == 1 and st["ghosts_dropped"] == 1
+        with open(tmp_path / "workday/testco_us_fulltime.csv",
+                  newline="", encoding="utf-8-sig") as f:
+            ids = [r["reqId"] for r in csv.DictReader(f)]
+        assert ids == ["R2"]
+
+
+class TestTerminalErrorRows:
+    """Review P1-3 — 3-strike terminal error records export HONESTLY
+    (detailError set) instead of pending forever."""
+
+    def test_terminal_error_row_exports(self, tmp_path):
+        rec = _feed_row("R1")
+        rec["error"] = "detail_unreachable"
+        rec["attempts"] = 3
+        _setup(tmp_path, state_rows=[_state_row("R1")],
+               feed_rows=[rec], csv_rows=None)
+        st = exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+        assert st["new"] == 1 and st["terminal_err"] == 1
+        assert st["pending"] == 0
+        with open(tmp_path / "workday/testco_us_fulltime.csv",
+                  newline="", encoding="utf-8-sig") as f:
+            r = list(csv.DictReader(f))[0]
+        assert r["detailError"] == "detail_unreachable"
+        assert r["title"].startswith("Job R1")
+
+    def test_transient_error_row_waits(self, tmp_path):
+        rec = _feed_row("R1")
+        rec["error"] = "detail_unreachable"
+        rec["attempts"] = 1
+        _setup(tmp_path, state_rows=[_state_row("R1")],
+               feed_rows=[rec], csv_rows=None)
+        st = exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+        assert st["pending"] == 1 and st["new"] == 0

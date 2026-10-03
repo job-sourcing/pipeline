@@ -139,6 +139,10 @@ note(f"watch config: {len(labels)} watches "
 
 org_csvs = {p.name.removesuffix(".csv"): p
             for p in (ORG / "ingest/data/workday").glob("*_us_fulltime.csv")}
+if not org_csvs:
+    lines.append("P0 — NO CSVs found on the org runtime — corpus wiped, "
+                 "clone missing, or path broken; every check below is "
+                 "meaningless")
 arc_csvs = {p.name.removesuffix(".csv") for p in
             (ARC / "ingest/data/workday").glob("*_us_fulltime.csv")}
 
@@ -213,9 +217,11 @@ for lbl in labels:
         state_fresh.append((999, lbl, 0, "no-state"))
         continue
     mx = max((r.get("last_seen", "") for r in st.values()), default="")
-    state_fresh.append((
-        (TODAY - date.fromisoformat(mx)).days if mx else 999,
-        lbl, len(st), mx))
+    try:
+        age = (TODAY - date.fromisoformat(mx)).days if mx else 999
+    except ValueError:
+        age = 999
+    state_fresh.append((age, lbl, len(st), mx))
 fb = Counter(a for a, *_ in state_fresh)
 note(f"last_seen age buckets (days): {dict(sorted(fb.items()))}")
 not_fresh = sorted([x for x in state_fresh if x[0] > 1], reverse=True)
@@ -226,7 +232,7 @@ if not_fresh:
     for a, lbl, n, mx in not_fresh[:40]:
         lines.append(f"    {a:3d}d  {lbl:32} rows={n:4}  max_last_seen={mx}")
 else:
-    note("all 129 boards' states touched within 1 day — DAILY REFRESH OK")
+    note(f"all {len(labels)} boards' states touched within 1 day — DAILY REFRESH OK")
 
 # ─────────────────────────────────────────────────────────────────────────
 # 4/5/6. per-CSV row integrity vs state
@@ -300,6 +306,14 @@ lca_files = {p.name.removesuffix(".h1b_lca.jsonl"): p for p in
              (ORG / "ingest/data/workday").glob("*.h1b_lca.jsonl")}
 note(f"LCA extract files on org: {len(lca_files)}")
 gaps = []
+sys.path.insert(0, str(ARC / "scripts"))
+sys.path.insert(0, str(ARC / "ingest"))
+try:
+    from board_dump import _annualize_wage, _title_tokens, \
+        _h1b_house_title, _H1B_LEVEL_TOKENS
+    HAVE_BD = True
+except Exception:
+    HAVE_BD = False
 for cid, p in sorted(org_csvs.items()):
     with open(p, newline="", encoding="utf-8-sig") as f:
         rows = list(csv.DictReader(f))
@@ -307,15 +321,35 @@ for cid, p in sorted(org_csvs.items()):
                  not in ("", "0"))
     lca_n = 0
     if cid in lca_files:
-        lca_n = sum(1 for line in lca_files[cid].read_text(
-            encoding="utf-8").splitlines()
-            if line.strip() and not line.startswith("#"))
+        if HAVE_BD:
+            # pool-ELIGIBLE filings only (annualizable + >=2 level-
+            # stripped tokens) — raw line counts over-report (P2-5)
+            for line in lca_files[cid].read_text(
+                    encoding="utf-8").splitlines():
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                try:
+                    rec = json.loads(line)
+                except Exception:
+                    continue
+                if _annualize_wage(rec) is None:
+                    continue
+                toks = _title_tokens(_h1b_house_title(
+                    "", str(rec.get("jobTitle") or "")))
+                if len(frozenset(toks - _H1B_LEVEL_TOKENS)) >= 2:
+                    lca_n += 1
+        else:
+            lca_n = sum(1 for line in lca_files[cid].read_text(
+                encoding="utf-8").splitlines()
+                if line.strip() and not line.startswith("#"))
     if lca_n > 0 and banded == 0:
-        gaps.append(f"    {cid}: {lca_n} LCA filings, 0 banded CSV rows")
+        gaps.append(f"    {cid}: {lca_n} pool-eligible filings, "
+                    f"0 banded rows (title-hop class or <3 pool)")
     elif lca_n == 0 and banded > 0:
         gaps.append(f"    {cid}: {banded} banded rows but NO lca file "
                     f"(band from stale data?)")
-note(f"banding anomalies: {len(gaps)}")
+note(f"banding anomalies (pool-eligible basis): {len(gaps)}")
 lines.extend(gaps[:30])
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -357,7 +391,7 @@ sec("9. REMOTE-OK POLICY (include_remote boards carry remote rows)")
 
 for w in watches:
     if w.get("include_remote"):
-        cid = w["label"].removesuffix("_us_fulltime")
+        cid = w["label"]
         p = org_csvs.get(cid)
         if not p:
             note(f"    {cid}: include_remote=true but NO CSV")

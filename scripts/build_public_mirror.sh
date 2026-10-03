@@ -14,7 +14,7 @@
 # Idempotent: re-run to refresh the mirror and push (commit only if changed).
 set -euo pipefail
 
-SRC="${MIRROR_SRC:-/home/z/my-project/job-sourcing-research}"
+SRC="${MIRROR_SRC:-/home/z/research}"
 DEST=/home/z/pipeline-mirror
 PAT="${GITHUB_PAT:?GITHUB_PAT env var required}"
 REMOTE="https://${PAT}@github.com/job-sourcing/pipeline.git"
@@ -87,6 +87,19 @@ if [ -d "$DEST/ingest/data/ui" ]; then
   (cd "$SRC" && git add ingest/data/ui 2>/dev/null && \
     git diff --cached --quiet || \
     git commit -q -m "UI bundle back-sync from org runtime (csv-export)")
+fi
+
+echo "== back-sync the refresh-watchdog heartbeat ledger (P0-1) =="
+# The watchdog commits logs/refresh_watchdog.jsonl on the ORG repo; the
+# forward rsync --delete below would REMOVE it (the archive has no such
+# file — observed live at e590cc5). Pull it back first, then the
+# forward sync keeps it.
+if [ -f "$DEST/logs/refresh_watchdog.jsonl" ]; then
+  mkdir -p "$SRC/logs"
+  rsync -a "$DEST/logs/refresh_watchdog.jsonl" "$SRC/logs/"
+  (cd "$SRC" && git add logs/refresh_watchdog.jsonl && \
+    git diff --cached --quiet || \
+    git commit -q -m "watchdog ledger back-sync from org runtime")
 fi
 
 echo "== back-sync sector-census probe evidence (GHA sector-probe legs) =="

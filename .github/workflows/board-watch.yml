@@ -160,7 +160,9 @@ jobs:
         # snapshot); its own concurrency group serializes overlap.
         # Backlog legs don't chain (the next leg refreshes more state;
         # the 22:17Z safety slot covers the day regardless).
-        if: env.WATCH_RESULT == 'complete'
+        # always() — a failed checkpoint above must not skip the chain
+        # (audit-B4 lesson: plain if: gets implicit success() &&)
+        if: always() && env.WATCH_RESULT == 'complete'
         run: |
           if curl -sf -X POST \
               -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
