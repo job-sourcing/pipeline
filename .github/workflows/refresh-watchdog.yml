@@ -63,13 +63,11 @@ jobs:
           DISPATCH=0
           REASON=""
           if [ "$MODE" = "morning" ]; then
-            if [ "$LAST_OK" = "none" ] || python3 -c "
-import sys
-from datetime import datetime, timezone
-last = datetime.fromisoformat('$LAST_OK'.replace('Z','+00:00'))
-age_h = (datetime.now(timezone.utc) - last).total_seconds()/3600
-sys.exit(0 if age_h > 30 else 1)"; then
-              DISPATCH=1; REASON="no successful watch in 30h (last=$LAST_OK)"
+            # age of the last successful run, in hours (single line —
+            # YAML block scalars cannot dedent mid-script)
+            AGE_H=$(python3 -c "from datetime import datetime,timezone; last=datetime.fromisoformat('$LAST_OK'.replace('Z','+00:00')); print(int((datetime.now(timezone.utc)-last).total_seconds()/3600))" 2>/dev/null || echo 999)
+            if [ "$LAST_OK" = "none" ] || [ "$AGE_H" -gt 30 ]; then
+              DISPATCH=1; REASON="no successful watch in 30h (last=$LAST_OK, age=${AGE_H}h)"
             fi
           else
             if [ "$RUNS_TODAY" = "0" ]; then
