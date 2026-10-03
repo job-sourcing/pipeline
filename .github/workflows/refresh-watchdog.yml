@@ -39,6 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@v4    # the heartbeat ledger commits to git
       - name: Check board-watch freshness and dispatch if missed
         run: |
           set -e
