@@ -273,14 +273,26 @@ for cid, p in sorted(org_csvs.items()):
                 f"    {lbl}: {len(ghosts)} stale-in-state, "
                 f"{len(never_seen)} not-in-state "
                 f"(state rows={len(st)}, csv rows={len(rows)})")
-    # unexported US rows: state membership ∉ CSV (the one-fetch contract
-    # keeps foreign rows in the newposts FEED as audit — check #6 must
-    # measure the state, not the feed)
+    # unexported US rows: state membership ∉ CSV, MINUS rows the
+    # exporter's country gate intentionally excludes (their last feed
+    # record classifies foreign — the binance include_remote class)
     st = read_state(lbl)
     if st:
+        feed = {}
+        for fr in read_newposts(lbl):
+            feed[fr.get("reqId")] = fr
         csv_ids = set(ids)
-        state_ids = set(st)
-        new_ids = [rid for rid in state_ids if rid not in csv_ids]
+        wcountry = (w_by_label.get(lbl) or {}).get("country", "")
+        new_ids = []
+        for rid in st:
+            if rid in csv_ids:
+                continue
+            fr = feed.get(rid) or {}
+            c = (fr.get("country") or "").strip()
+            if c and wcountry and c.lower() not in (
+                    wcountry or "").lower() and "united states" not in c.lower():
+                continue          # gate-excluded foreign — by design
+            new_ids.append(rid)
         if new_ids:
             unexported_total += len(new_ids)
             unexp_detail.append(f"    {lbl}: {len(new_ids)} US state rows "
