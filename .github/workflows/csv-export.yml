@@ -46,6 +46,11 @@ jobs:
         run: pip install -e ingest
 
       - name: Run the state-merge export + bundle build
+        env:
+          UI_OUT: ingest/data/ui    # GHA has no /home/z/my-project —
+                                    # build straight into the committed
+                                    # ui dir (the builder's mirror then
+                                    # no-ops)
         run: python3 scripts/s26_export_refresh.py --bundle
 
       - name: Checkpoint CSVs + bundle to git (race-proof)
@@ -54,7 +59,9 @@ jobs:
           set -e
           # rescue the runner-owned artifacts (CSVs, bundle) — NEVER
           # config.json or state (those belong to the watch's own
-          # checkpoint; the freshly-reset tree = latest main wins)
+          # checkpoint; the freshly-reset tree = latest main wins).
+          # A missing bundle (build failure) must NEVER delete the
+          # committed one — guard every pathspec.
           mkdir -p /tmp/export_state
           cp ingest/data/workday/*.csv /tmp/export_state/ 2>/dev/null || true
           mkdir -p /tmp/export_ui
@@ -66,9 +73,15 @@ jobs:
             git fetch origin || true
             git reset --hard origin/main
             cp /tmp/export_state/*.csv ingest/data/workday/ 2>/dev/null || true
-            rm -rf ingest/data/ui
-            cp -r /tmp/export_ui/ui ingest/data/ 2>/dev/null || true
-            git add ingest/data/workday ingest/data/ui
+            if [ -d /tmp/export_ui/ui ]; then
+              rm -rf ingest/data/ui
+              cp -r /tmp/export_ui/ui ingest/data/
+            fi
+            if [ -d ingest/data/ui ]; then
+              git add ingest/data/workday ingest/data/ui
+            else
+              git add ingest/data/workday
+            fi
             if git diff --cached --quiet; then
               echo "no export change to commit"
               push_ok=1

@@ -389,7 +389,14 @@ def main() -> int:
           f"pending={tot['pending']}, banded={tot['banded']}", flush=True)
 
     if args.bundle:
+        import os
+        # UI_OUT overrides the builder's sandbox default (on GHA the
+        # runner has no /home/z/my-project — point it at the repo-local
+        # ui dir; the builder's own mirror step then no-ops)
+        out = os.environ.get("UI_OUT") or None
         cmd = [sys.executable, str(HERE / "build_ui_bundle.py")]
+        if out:
+            cmd += ["--out", out]
         r = subprocess.run(cmd, cwd=REPO)
         if r.returncode != 0:
             print("[export] bundle build FAILED", file=sys.stderr)
