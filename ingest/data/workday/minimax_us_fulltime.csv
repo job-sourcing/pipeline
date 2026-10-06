@@ -1,5 +1,5 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-7687134817943472447,"Research Lead, Large Language Models",MiniMax,MiniMax,Full time,Posted 5 Days Ago,2026-09-19,16,San Francisco,1,San Francisco,false,,United States,,0,"About the Role
+7687134817943472447,"Research Lead, Large Language Models",MiniMax,MiniMax,Full time,Posted 5 Days Ago,2026-09-19,17,San Francisco,1,San Francisco,false,,United States,,0,"About the Role
 We are looking for a hands-on Research Lead to own and advance a key technical area within our large language model team.
 You will define the technical roadmap for your area, lead a focused team through complex research and engineering challenges, and work closely with other technical leaders to contribute to the broader evolution of our foundation models.
 This is a specialized technical leadership role—not an organization-wide leadership position. We expect the successful candidate to remain deeply involved in research, experimentation, and implementation.
@@ -27,8 +27,8 @@ Breakthrough thinking grounded in rigorous execution.
 The ability to turn ambiguous problems into clear technical priorities.
 Intellectual independence combined with strong collaboration.
 Ownership from idea to measurable model improvement.
-The ability to inspire and develop a small, high-caliber technical team.",2784,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7687134817943472447/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,16,startDate,false,0,,,,,Algorithm,2026-09-19,,false,,,,,,
-7682322309805902130,海螺AI技术招聘负责人,MiniMax,MiniMax,Full time,Posted 18 Days Ago,2026-09-06,29,Beijing,3,Beijing; Shanghai; San Francisco,false,,United States,,0,"打通虚拟与现实的边界！与顶尖科学家/架构师并肩，用顶级人才重构世界模型（World Models）与 Omni 生成式音视频时代。
+The ability to inspire and develop a small, high-caliber technical team.",2784,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7687134817943472447/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,17,startDate,false,0,,,,,Algorithm,2026-09-19,,false,,,,,,
+7682322309805902130,海螺AI技术招聘负责人,MiniMax,MiniMax,Full time,Posted 18 Days Ago,2026-09-06,30,Beijing,3,Beijing; Shanghai; San Francisco,false,,United States,,0,"打通虚拟与现实的边界！与顶尖科学家/架构师并肩，用顶级人才重构世界模型（World Models）与 Omni 生成式音视频时代。
 
 关于这个角色
 从文本生成到世界模型（World Models），从扩散模型（Diffusion/DiT）到 Omni 全模态与拟真物理世界的重构——AGI 的下一场硬仗，正在音视频与多模态战场全面打响！
@@ -64,8 +64,8 @@ The ability to inspire and develop a small, high-caliber technical team.",2784,h
 
 4. 强大的自驱力与反脆弱性
 热爱招聘，将“帮顶级团队找对人”视为强有力的成就感来源。
-面对极高门槛的前沿技术人才招聘挑战，具备强烈的攻坚欲望与抗压能力。",1287,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7682322309805902130/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,29,startDate,true,0,,,,,Internet / Electronics / Games,2026-09-06,,false,,,,,,
-7671161153523157311,视频生成开源生态负责人,MiniMax,MiniMax,Full time,Posted 48 Days Ago,2026-08-07,59,Beijing,6,Beijing; Shanghai; Hong Kong (China); San Francisco; Singapore; London,false,,United States,,0,"我们正在寻找一位真正热爱开源、熟悉 AI 视频生成技术与开发者生态的 Open Source Ecosystem Lead，负责 MiniMax 视频模型的全球开源生态建设。
+面对极高门槛的前沿技术人才招聘挑战，具备强烈的攻坚欲望与抗压能力。",1287,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7682322309805902130/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,30,startDate,true,0,,,,,Internet / Electronics / Games,2026-09-06,,false,,,,,,
+7671161153523157311,视频生成开源生态负责人,MiniMax,MiniMax,Full time,Posted 48 Days Ago,2026-08-07,60,Beijing,6,Beijing; Shanghai; Hong Kong (China); San Francisco; Singapore; London,false,,United States,,0,"我们正在寻找一位真正热爱开源、熟悉 AI 视频生成技术与开发者生态的 Open Source Ecosystem Lead，负责 MiniMax 视频模型的全球开源生态建设。
 你将深入参与模型从研发、发布到社区增长的完整链路，与模型、推理、产品及市场团队紧密协作，将 MiniMax 视频模型打造为全球开发者社区广泛使用和持续贡献的开源项目。你将负责：
 
 1. 视频模型开源生态整体策略
@@ -105,8 +105,8 @@ The ability to inspire and develop a small, high-caliber technical team.",2784,h
 3. 有 Wan、HunyuanVideo、CogVideo、LTX、Open-Sora 等视频模型深度实践经验；
 4. 有模型量化、推理优化、GPU 部署或训练 / Fine-tuning 经验；
 5. 在 GitHub、Hugging Face、YouTube、X、Reddit、Discord 等开发者社区具有一定影响力；
-6. 有成功推动 AI 模型、工具或开源项目获得大规模开发者 adoption 的经验。",1666,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7671161153523157311/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,59,startDate,true,0,,,,,Internet / Electronics / Games,2026-08-07,,false,,,,,,
-7639359148785731891,AIDC供应链负责人,MiniMax,MiniMax,Full time,Posted 134 Days Ago,2026-05-13,145,Shanghai,2,Shanghai; San Francisco,false,,United States,,0,"核心职责：
+6. 有成功推动 AI 模型、工具或开源项目获得大规模开发者 adoption 的经验。",1666,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7671161153523157311/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,60,startDate,true,0,,,,,Internet / Electronics / Games,2026-08-07,,false,,,,,,
+7639359148785731891,AIDC供应链负责人,MiniMax,MiniMax,Full time,Posted 134 Days Ago,2026-05-13,146,Shanghai,2,Shanghai; San Francisco,false,,United States,,0,"核心职责：
 全栈基础设施架构： 规划并主导超大规模异构算力集群的生命周期管理。负责从高性能计算节点到大规模网络拓扑的全局架构设计与交付。
 战略资源协同： 深度对接全球顶尖芯片厂商与云服务巨头。参与前沿硬件的联合定义，确保在技术迭代周期中占据先机。
 下一代数据中心演进： 定义并推动 AI 专用数据中心（AIDC）的标准化。主导高功率密度部署、先进散热技术（如液冷）及超大规模互连网络的落地。
@@ -116,8 +116,8 @@ The ability to inspire and develop a small, high-caliber technical team.",2784,h
 理想画像：
 10 年以上超大规模（Hyperscale）基础设施管理经验，曾服务于全球顶级云厂商或 AI 实验室。
 技术深度： 对计算存储、互连协议（如 IB/RoCE）、高性能集群管理有深刻理解，能与顶尖科学家直接对齐需求。
-行业影响力： 在全球半导体及数据中心生态圈拥有深厚的人脉沉淀。",464,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7639359148785731891/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,145,startDate,true,0,,,,,Internet / Electronics / Games,2026-05-13,,false,,,,,,
-7638902024088471849,AI Talent Acquisition Lead / Partner,MiniMax,MiniMax,Full time,Posted 135 Days Ago,2026-05-12,146,San Francisco,2,San Francisco; Shanghai,false,,United States,,0,"The most critical competition in the AI era is the competition for human capital.
+行业影响力： 在全球半导体及数据中心生态圈拥有深厚的人脉沉淀。",464,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7639359148785731891/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,146,startDate,true,0,,,,,Internet / Electronics / Games,2026-05-13,,false,,,,,,
+7638902024088471849,AI Talent Acquisition Lead / Partner,MiniMax,MiniMax,Full time,Posted 135 Days Ago,2026-05-12,147,San Francisco,2,San Francisco; Shanghai,false,,United States,,0,"The most critical competition in the AI era is the competition for human capital.
 
 Models will iterate, and compute will become a commodity. However, identifying and attracting the world’s top 0.1% talent remains a task with no shortcuts—and it is the one thing AI cannot replace.
 
@@ -141,8 +141,8 @@ Digital Footprint (Preferred): An active GitHub profile, a product portfolio, or
 Location & Logistics:
 Base: San Francisco, CA (Silicon Valley Core).
 
-Work Style: High-intensity, high-autonomy, and deeply integrated into the local AI community (attending summits, hackathons, and research mixers is part of the job).",2584,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7638902024088471849/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,146,startDate,true,0,,,,,Internet / Electronics / Games,2026-05-12,,false,,,,,,
-7638320102106040627,10x Team 研究员,MiniMax,MiniMax,Full time,Posted 137 Days Ago,2026-05-10,148,Beijing,5,Beijing; Shanghai; Hong Kong (China); San Francisco; London,false,,United States,,0,"关于 10x Team
+Work Style: High-intensity, high-autonomy, and deeply integrated into the local AI community (attending summits, hackathons, and research mixers is part of the job).",2584,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7638902024088471849/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,147,startDate,true,0,,,,,Internet / Electronics / Games,2026-05-12,,false,,,,,,
+7638320102106040627,10x Team 研究员,MiniMax,MiniMax,Full time,Posted 137 Days Ago,2026-05-10,149,Beijing,5,Beijing; Shanghai; Hong Kong (China); San Francisco; London,false,,United States,,0,"关于 10x Team
 我们正在组建 10x Team，一支汇聚各领域顶尖人才的团队。
 过去几年，大模型在通用能力上完成了一次 10 倍跃迁。我们相信，同样的 10 倍变化也正在每一个具体行业中发生：当一个领域真正与世界级 AI 能力相遇，从研究到落地、从想法到结果，都有机会被压缩到原来十分之一的时间。
 MiniMax 的使命是 Intelligence with Everyone。我们相信，随着智能水平持续进化，模型终将深入每一个领域、每一个场景、每一个关键决策。而 10x Team 正是为了推动这一进程而设立：让最强的 AI 能力与真正理解行业的人站在一起，定义最值得解决的问题，并把它们快速构建出来。
@@ -185,13 +185,13 @@ MiniMax 的使命是 Intelligence with Everyone。我们相信，随着智能水
 - CV + 1-2 篇代表作 / 项目说明
 - 一段简短说明（200-400 字）：请说明你选择 10x Team 的原因、最希望推进的领域问题，以及你在工作中使用 AI 的方式。如有意向参与 Fellowship 项目，请同时注明可投入的时间窗口与偏好的工作地点。
 
-申请材料投递至 10x@minimaxi.com 或招聘官网",1758,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7638320102106040627/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,148,startDate,true,0,,,,,Internet / Electronics / Games,2026-05-10,,false,,,,,,
-7623785911113304366,大模型算法负责人,MiniMax,MiniMax,Full time,Posted 176 Days Ago,2026-04-01,187,Beijing,3,Beijing; Shanghai; San Francisco,false,,United States,,0,"-
+申请材料投递至 10x@minimaxi.com 或招聘官网",1758,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7638320102106040627/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,149,startDate,true,0,,,,,Internet / Electronics / Games,2026-05-10,,false,,,,,,
+7623785911113304366,大模型算法负责人,MiniMax,MiniMax,Full time,Posted 176 Days Ago,2026-04-01,188,Beijing,3,Beijing; Shanghai; San Francisco,false,,United States,,0,"-
 
 1. 在大模型领域一个或多个方向有深厚积累与突破性成果，具备带领团队攻坚复杂问题的能力。
 2. 主导过基座模型的完整迭代，对算法原理与工程实现均有极致掌控力。
-3. 对技术驱动现实变革有强烈热情，能在未知的环境中保持清晰的技术判断与执行力。",123,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7623785911113304366/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,187,startDate,true,0,,,,,Algorithm,2026-04-01,,false,,,,,,
-7598036042735110446,Forward Deployed Engineer（前沿部署工程师）,MiniMax,MiniMax,Full time,Posted 245 Days Ago,2026-01-22,256,Shenzhen,5,Shenzhen; Shanghai; Beijing; Hong Kong (China); San Francisco,false,,United States,,0,"MiniMax正在把大模型能力推向各行业最前线。你是那座桥——左手是模型能力，右手是客户真实需求，把AI从demo变成跑在生产环境里的东西。
+3. 对技术驱动现实变革有强烈热情，能在未知的环境中保持清晰的技术判断与执行力。",123,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7623785911113304366/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,188,startDate,true,0,,,,,Algorithm,2026-04-01,,false,,,,,,
+7598036042735110446,Forward Deployed Engineer（前沿部署工程师）,MiniMax,MiniMax,Full time,Posted 245 Days Ago,2026-01-22,257,Shenzhen,5,Shenzhen; Shanghai; Beijing; Hong Kong (China); San Francisco,false,,United States,,0,"MiniMax正在把大模型能力推向各行业最前线。你是那座桥——左手是模型能力，右手是客户真实需求，把AI从demo变成跑在生产环境里的东西。
 
 你做什么
 1. 嵌入战略客户团队，在客户系统内直接构建基于MiniMax大模型的生产级应用交付技术产物：MCP服务器、子Agent、Agent Skills，直接用在客户的业务流程里
@@ -213,8 +213,8 @@ MiniMax 的使命是 Intelligence with Everyone。我们相信，随着智能水
 加分项
 1. 有FDE或专业服务经验
 2. 有企业IT系统或AI部署经验
-3. 有从0到1搭建过AI Agent的经历",588,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7598036042735110446/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,256,startDate,true,0,,,,,Senior technical position,2026-01-22,,false,,,,,,
-7568756534944221450,Global Marketing Manager,MiniMax,MiniMax,Full time,Posted 324 Days Ago,2025-11-04,335,San Francisco,1,San Francisco,false,,United States,,0,"About the Role
+3. 有从0到1搭建过AI Agent的经历",588,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7598036042735110446/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,257,startDate,true,0,,,,,Senior technical position,2026-01-22,,false,,,,,,
+7568756534944221450,Global Marketing Manager,MiniMax,MiniMax,Full time,Posted 324 Days Ago,2025-11-04,336,San Francisco,1,San Francisco,false,,United States,,0,"About the Role
 We’re looking for a Global Marketing Manager to drive international growth for our AI products. This role bridges product, marketing, and community — executing go-to-market strategies that connect innovation with users worldwide.
 
 Job Description
@@ -226,8 +226,8 @@ Requirements
 1. Market Expertise: Strong familiarity with Western (US/EU) and/or East Asian (Japan/Korea) markets, with deep knowledge of overseas social media platforms and communities. Prior experience in international GTM and/or Product Marketing strongly preferred.
 2. Language Proficiency: Exceptional written and verbal communication skills in English, with the ability to craft compelling narratives for diverse audiences.
 3. Strategic Thinking: Outstanding strategic planning capabilities and logical reasoning skills. Experience in 0-to-1 product launches highly preferred.
-4. AI Passion & Entrepreneurial Spirit: Active user of AI products with genuine enthusiasm for the AI industry. Entrepreneurial mindset and self-driven attitude preferred.",1974,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7568756534944221450/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,335,startDate,true,0,,,,,Marketing strategy,2025-11-04,,false,,,,,,
-7545752001586825515,Regional General Manager,MiniMax,MiniMax,Full time,Posted 386 Days Ago,2025-09-03,397,San Francisco,9,San Francisco; Dubai; Berlin; Tokyo; London; Singapore; Hong Kong (China); Seoul; Mexico City,false,,United States,,0,"MiniMax is a global AI foundation model company. Founded in early 2022, we are committed to advancing the frontiers of AI towards AGI via our mission Intelligence with Everyone.
+4. AI Passion & Entrepreneurial Spirit: Active user of AI products with genuine enthusiasm for the AI industry. Entrepreneurial mindset and self-driven attitude preferred.",1974,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7568756534944221450/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,336,startDate,true,0,,,,,Marketing strategy,2025-11-04,,false,,,,,,
+7545752001586825515,Regional General Manager,MiniMax,MiniMax,Full time,Posted 386 Days Ago,2025-09-03,398,San Francisco,9,San Francisco; Dubai; Berlin; Tokyo; London; Singapore; Hong Kong (China); Seoul; Mexico City,false,,United States,,0,"MiniMax is a global AI foundation model company. Founded in early 2022, we are committed to advancing the frontiers of AI towards AGI via our mission Intelligence with Everyone.
 Our proprietary multimodal models, led by MiniMax M1, Hailuo-02, Speech-02 and Music-01, have ultra-long context processing capacity and can understand, generate, and integrate a wide range of modalities, including text, audio, images, video, and music. These models power our major AI-native products — including MiniMax, Hailuo AI, MiniMax Audio and our enterprise and developer-facing Open API Platform — which collectively deliver intelligent, dynamic experiences to enhance productivity and quality of life for users worldwide.
 To date, our proprietary models and AI-native products have cumulatively served over 157 million individual users across over 200 countries and regions, and more than 50,000 enterprises and developers across over 90 countries and regions.
 
@@ -243,8 +243,8 @@ Qualifications:
 1. 5+ years of sales management experience in internet, technology, or investment banking industries.
 2.Strong familiarity with markets such as Europe, Middle East, Africa, or Japan-Korea, with keen business acumen and excellent strategic planning and execution skills.
 3.In-depth knowledge of one or more of the following industries: internet, advertising media, gaming & entertainment, or high-tech; existing relationships with major accounts is a plus.
-4.Passion for artificial intelligence technology, strong sense of ownership, self-driven mindset, and results-oriented.",2991,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7545752001586825515/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,397,startDate,true,0,,,,,Senior sales position,2025-09-03,,false,,,,,,
-7538331296591366463,Global Developer Relations Specialist,MiniMax,MiniMax,Full time,Posted 406 Days Ago,2025-08-14,417,San Francisco,1,San Francisco,false,,United States,,0,"1.Lead community growth and engagement strategies for developers in North America and globally, building and nurturing a strong developer network.
+4.Passion for artificial intelligence technology, strong sense of ownership, self-driven mindset, and results-oriented.",2991,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7545752001586825515/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,398,startDate,true,0,,,,,Senior sales position,2025-09-03,,false,,,,,,
+7538331296591366463,Global Developer Relations Specialist,MiniMax,MiniMax,Full time,Posted 406 Days Ago,2025-08-14,418,San Francisco,1,San Francisco,false,,United States,,0,"1.Lead community growth and engagement strategies for developers in North America and globally, building and nurturing a strong developer network.
 2.Plan and execute online/offline technical events (e.g., workshops, hackathons, industry conferences) to enhance the brand’s technical influence.
 3.Establish and manage feedback channels for developers across North America and other regions, driving product optimization and localization.
 4.Identify key developer pain points and collaborate with technical teams to design tailored solutions that support commercialization.
@@ -253,8 +253,8 @@ Qualifications:
 1.Educational background in Computer Science, AI, or a related field.
 2.Native-level English proficiency with the ability to translate technical documents between English and Chinese.
 3.Prior hands-on experience in North American AI communities (e.g., open-source contributions, community organizing, technical speaking) is preferred.
-4.Passion for generative AI products, strong self-motivation, and ability to thrive in a dynamic startup setting.",1136,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7538331296591366463/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,417,startDate,true,0,,,,,Internet / Electronics / Games,2025-08-14,,false,,,,,,
-7513910355632146698,Global Enterprise Account Executive,MiniMax,MiniMax,Full time,Posted 472 Days Ago,2025-06-09,483,Beijing,13,Beijing; San Francisco; Shanghai; Berlin; London; Dubai; Madrid; Mexico City; lle-de-France; Seoul; Tokyo; Singapore; Hong Kong (China),false,,United States,,0,"About the Role：
+4.Passion for generative AI products, strong self-motivation, and ability to thrive in a dynamic startup setting.",1136,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7538331296591366463/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,418,startDate,true,0,,,,,Internet / Electronics / Games,2025-08-14,,false,,,,,,
+7513910355632146698,Global Enterprise Account Executive,MiniMax,MiniMax,Full time,Posted 472 Days Ago,2025-06-09,484,Beijing,13,Beijing; San Francisco; Shanghai; Berlin; London; Dubai; Madrid; Mexico City; lle-de-France; Seoul; Tokyo; Singapore; Hong Kong (China),false,,United States,,0,"About the Role：
 MiniMax is looking for ambitious and entrepreneurial Global Account Executives to accelerate the adoption of our foundation models and AI products worldwide.
 You will own the development of a region, industry, or strategic customer segment—from identifying new opportunities and building pipeline to leading complex negotiations and closing high-impact deals. Working closely with Product, Solutions Engineering, Research, Legal, and Marketing, you will translate MiniMax’s model capabilities into measurable business value for enterprises, AI-native companies, developers, and strategic partners.
 This is more than a traditional account management role. You will act as a market builder, trusted customer advisor, and the internal voice of our global customers—helping MiniMax achieve breakthrough growth in international markets.
@@ -277,8 +277,8 @@ Strong interest in AI, foundation models, and APIs, with the ability to translat
 3.Global Communication and Market Skills
 Fluent English with excellent communication, negotiation, and stakeholder-management skills. International market experience, additional languages, or relevant customer and partner networks are strong advantages.
 4.Entrepreneurial Mindset
-Highly driven, results-oriented, and comfortable building markets from zero to one. Strong ownership, adaptability, curiosity, and the ability to thrive in a fast-paced global environment.",3038,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7513910355632146698/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,483,startDate,true,0,,,,,Sales support,2025-06-09,,false,,,,,,
-7251566384013625612,AI招聘专家,MiniMax,MiniMax,Full time,Posted 1179 Days Ago,2023-07-03,1190,Beijing,3,Beijing; Shanghai; San Francisco,false,,United States,,0,"1、支持人才招聘全流程，有组织地统筹与实施招聘全流程，制定并执行人才搜索和寻访计划，包括但不限于发布招聘信息、简历筛选、安排面试、Offer沟通、待入职管理等；
+Highly driven, results-oriented, and comfortable building markets from zero to one. Strong ownership, adaptability, curiosity, and the ability to thrive in a fast-paced global environment.",3038,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7513910355632146698/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,484,startDate,true,0,,,,,Sales support,2025-06-09,,false,,,,,,
+7251566384013625612,AI招聘专家,MiniMax,MiniMax,Full time,Posted 1179 Days Ago,2023-07-03,1191,Beijing,3,Beijing; Shanghai; San Francisco,false,,United States,,0,"1、支持人才招聘全流程，有组织地统筹与实施招聘全流程，制定并执行人才搜索和寻访计划，包括但不限于发布招聘信息、简历筛选、安排面试、Offer沟通、待入职管理等；
 2、与业务部门保持紧密而有效的沟通，熟悉业务用人标准与需求，按时按量完成招聘任务；关注行业及人才市场动态，为业务团队输出有效的市场及人才分析报告；
 3、负责招聘渠道运营，如猎头渠道管理、招聘网站资源管理等，进而提升渠道转化；
 4、完成招聘相关项目，如人才mapping、高端人才招聘等；
@@ -287,8 +287,8 @@ Highly driven, results-oriented, and comfortable building markets from zero to o
 1、本科及以上学历 ，3年以上招聘经验，有高招背景优先；
 2、具备优秀的沟通协调能力和解决问题能力，较高的人际敏感度和影响力；
 3、热爱招聘工作，有强大的自我驱动力和一定抗压能力，乐于接受挑战；
-4、接受乙方转甲方招聘。",357,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7251566384013625612/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,1190,startDate,true,0,,,,,Human resources,2023-07-03,,false,,,,,,
-7203339313111058725,AI架构师,MiniMax,MiniMax,Full time,Posted 1309 Days Ago,2023-02-23,1320,Shenzhen,8,Shenzhen; Shanghai; Beijing; San Francisco; London; Hong Kong (China); Singapore; Tokyo,false,,United States,,0,"1. 方案设计： 洞察行业机会点，将公司大模型技术、Agent框架转化为具备竞争力的商业化解决方案。需对方案的商业可行性、ROI及市场竞争力负责；
+4、接受乙方转甲方招聘。",357,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7251566384013625612/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,1191,startDate,true,0,,,,,Human resources,2023-07-03,,false,,,,,,
+7203339313111058725,AI架构师,MiniMax,MiniMax,Full time,Posted 1309 Days Ago,2023-02-23,1321,Shenzhen,8,Shenzhen; Shanghai; Beijing; San Francisco; London; Hong Kong (China); Singapore; Tokyo,false,,United States,,0,"1. 方案设计： 洞察行业机会点，将公司大模型技术、Agent框架转化为具备竞争力的商业化解决方案。需对方案的商业可行性、ROI及市场竞争力负责；
 2. 端到端交付： 负责AI项目从POC到正式交付的全生命周期管理。解决落地过程中的架构瓶颈，确保解决方案在商用场景下的性能达标；
 3. 产品闭环： 收集客户声音，反哺AI平台及大模型产品的规划与迭代，确保产品演进方向紧贴市场实战需求。
 
@@ -300,8 +300,8 @@ Highly driven, results-oriented, and comfortable building markets from zero to o
 4. 商业洞察：
 - 具备业务翻译能力，能将模糊的业务需求转化为清晰的技术架构；
 - 具备敏锐的商业嗅觉，能够评估技术方案的成本、周期与商业收益；
-- 客户沟通与影响力，能够在复杂的商业环境下驱动跨部门协作，具备极强的抗压能力和结果导向精神。",557,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7203339313111058725/detail,,,,,,,no_match,,2026-09-24,,2026-10-05,,1320,startDate,true,0,,,,,Senior technical position,2023-02-23,,false,,,,,,
-7690522726238636329,全球 AI 商业化策略与生态合作,MiniMax,MiniMax,Full time,Posted Today,2026-09-28,7,Shanghai,5,Shanghai; Hong Kong (China); Beijing; Singapore; San Francisco,false,,united states,,0,"我们在做什么
+- 客户沟通与影响力，能够在复杂的商业环境下驱动跨部门协作，具备极强的抗压能力和结果导向精神。",557,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7203339313111058725/detail,,,,,,,no_match,,2026-09-24,,2026-10-06,,1321,startDate,true,0,,,,,Senior technical position,2023-02-23,,false,,,,,,
+7690522726238636329,全球 AI 商业化策略与生态合作,MiniMax,MiniMax,Full time,Posted Today,2026-09-28,8,Shanghai,5,Shanghai; Hong Kong (China); Beijing; Singapore; San Francisco,false,,united states,,0,"我们在做什么
 大模型的商业化规则仍在形成。
 Token 计费、订阅制、Agent、行业解决方案、生态分成……今天的主流模式，一年后可能就会被重新定义。
 这个团队的使命，是站在模型能力、市场需求与产业生态的交汇处，与模型、产品和生态团队一起，从 0 到 1 找到下一种可规模化的商业模式，并真正把它跑通。这不是一个按照既有 Playbook 执行的传统 BD 岗位，你需要发现机会、设计模式、验证假设、推动签约，并将成功实践沉淀为可以全球复制的增长路径。
@@ -333,4 +333,4 @@ Token 计费、订阅制、Agent、行业解决方案、生态分成……今天
 1.深度参与核心决策： 与模型、产品和研发团队直接协作，参与探索大模型行业下一种可规模化的商业模式。；
 2.完整主导从 0 到 1： 不只是执行单点任务，而是完整负责机会判断、商业测算、方案设计、合作谈判和规模化验证；
 3.对接全球核心伙伴： 与云厂商、模型聚合平台、开发者工具及行业头部公司共同设计并落地合作；
-4.积累稀缺复合能力： 同时提升大模型商业化、全球 BD、单位经济分析和复杂项目推动能力。",1326,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7690522726238636329/detail,,,,,,,not_checked,,2026-09-28,,2026-10-05,,7,startDate,false,0,,,,,,2026-09-28,,,,,,,,
+4.积累稀缺复合能力： 同时提升大模型商业化、全球 BD、单位经济分析和复杂项目推动能力。",1326,https://vrfi1sk8a0.jobs.feishu.cn/index/position/7690522726238636329/detail,,,,,,,not_checked,,2026-09-28,,2026-10-06,,8,startDate,false,0,,,,,,2026-09-28,,,,,,,,
