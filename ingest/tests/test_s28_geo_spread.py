@@ -236,3 +236,38 @@ class TestDispatcherRouting:
         finally:
             monkeypatch.undo()
         assert "geo_scope" not in calls
+
+
+class TestFeishuMapGrowth:
+    """S28: run #99's unmapped-cities fix — Xuzhou (petkit) made the
+    board 0-rows + incomplete → the fail-safe LIST FAILED. Map growth
+    → complete=True, 0 trusted rows, GREEN."""
+
+    def test_petkit_xuzhou_completes_green(self, monkeypatch):
+        xz = _feishu_post("991", "原料工程师", ["Xuzhou"])
+        hz = _feishu_post("992", "市场经理", ["Hangzhou"])
+        spec = _feishu_board(monkeypatch, [xz, hz])
+        rows, meta = site_boards.list_board(spec, country="United States")
+        assert set(rows) == set()
+        assert meta["complete"] is True       # the petkit fix
+        assert meta["unresolved_dropped"] == 0
+        assert meta["client_filtered_country"] == 2  # both CN-mapped
+
+    def test_intl_only_row_kept_under_non_cn(self, monkeypatch):
+        st = _feishu_post("993", "EM Vertrieb", ["Stuttgart"])
+        bk = _feishu_post("994", "BD ANZ", ["Brisbane"])
+        spec = _feishu_board(monkeypatch, [st, bk])
+        rows, meta = site_boards.list_board(spec, geo_scope="non_cn")
+        assert set(rows) == {"993", "994"}
+        assert rows["993"]["countries"] == ["Germany"]
+        assert rows["994"]["countries"] == ["Australia"]
+        assert meta["complete"] is True
+
+    def test_ambiguous_names_stay_unmapped(self, monkeypatch):
+        # Carterton/Balveren/Van Reenen: ambiguous → honest unresolved
+        ct = _feishu_post("995", "Mystery", ["Carterton"])
+        spec = _feishu_board(monkeypatch, [ct])
+        rows, meta = site_boards.list_board(spec, geo_scope="non_cn")
+        assert set(rows) == set()
+        assert meta["complete"] is False
+        assert meta["unmapped_cities"] == ["Carterton"]

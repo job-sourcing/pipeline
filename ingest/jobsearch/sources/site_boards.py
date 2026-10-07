@@ -2158,6 +2158,41 @@ _FEISHU_CITY_COUNTRY = {
     "Warsaw": "Poland", "Istanbul": "Turkey", "Riyadh": "Saudi Arabia",
     "Doha": "Qatar", "Tel Aviv": "Israel", "Cairo": "Egypt",
     "Lagos": "Nigeria", "Nairobi": "Kenya",
+    # S28 map growth (run #99's unmapped_cities, live 2026-10-07):
+    # the CN-hardware portals carry REAL overseas roles — petkit's
+    # Xuzhou made its board incomplete (0 rows + unresolved → the
+    # fail-safe LIST FAILED); anker/mammotion/hesai/insta360's foreign
+    # sites gate non_cn collection on these entries. Feishu's own
+    # en_name spellings preserved verbatim (Lasa, Eerduosi, Masqat,
+    # Toshkent, Grad Zagreb). Ambiguous names (Carterton, Balveren,
+    # Van Reenen) stay UNMAPPED — never guess (the S24 convention).
+    "Xuzhou": "China", "Zhuhai": "China", "Huizhou": "China",
+    "Jiujiang": "China", "Anqing": "China", "Bengbu": "China",
+    "Bozhou": "China", "Changde": "China", "Changzhou": "China",
+    "Eerduosi": "China", "Fuyang": "China", "Jingzhou": "China",
+    "Kaifeng": "China", "Kunshan": "China", "Lasa": "China",
+    "Leshan": "China", "Lishui": "China", "Mianyang": "China",
+    "Qingyuan": "China", "Quanzhou": "China", "Suqian": "China",
+    "Yangjiang": "China", "Yangzhou": "China",
+    "Zhangjiagang": "China", "Zhanjiang": "China",
+    "Zhenjiang": "China", "Zhongshan": "China", "Zunyi": "China",
+    "Samut Prakan": "Thailand", "Mueang Chonburi": "Thailand",
+    "Phu Tho": "Vietnam",
+    "Stuttgart": "Germany", "Frankfurt": "Germany",
+    "Düsseldorf": "Germany", "Mönchengladbach": "Germany",
+    "Rhein-Kreis Neuss": "Germany",
+    "Yamato": "Japan", "Esashi": "Japan", "Chuo-ku": "Japan",
+    "Brisbane": "Australia", "Birmingham": "United Kingdom",
+    "Roma": "Italy", "Vienna": "Austria",
+    "Astana": "Kazakhstan", "Almaty": "Kazakhstan",
+    "Toshkent": "Uzbekistan", "Bengaluru": "India",
+    "Bogotá": "Colombia", "Budapest": "Hungary",
+    "Capital province (Kuwait)": "Kuwait", "Dublin": "Ireland",
+    "Grad Zagreb": "Croatia", "Masqat": "Oman", "Mechelen": "Belgium",
+    "Moscow": "Russia", "Rotterdam": "Netherlands",
+    "Sundbyberg": "Sweden", "Taipei City": "Taiwan",
+    "Zürich": "Switzerland", "Abha": "Saudi Arabia",
+    "Basyoun": "Egypt",
 }
 
 # portal subdomain → display company for the row field (the CSV company
