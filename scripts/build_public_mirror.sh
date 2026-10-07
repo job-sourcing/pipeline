@@ -72,6 +72,30 @@ echo "== back-sync GHA-produced board CSVs + the UI bundle (S26 D-S26-2) =="
 # along. The UI bundle (ingest/data/ui/) is GHA-built too — same hole,
 # same fix.
 if ls "$DEST"/ingest/data/workday/*_us_fulltime.csv >/dev/null 2>&1; then
+  # S27 (the resurrection lesson): membership-aware back-sync. CSVs
+  # whose label is NOT in config.json (removed boards — zingage + the
+  # 21 us_only removals) must NOT resurrect into the archive; they are
+  # DELETED org-side so the forward rsync deletes them runtime-side
+  # too, and the next bundle build drops the company.
+  python3 - "$DEST/ingest/data/workday" \
+    "$SRC/ingest/data/board_watch/config.json" <<'PYMEM'
+import json, pathlib, sys
+dest = pathlib.Path(sys.argv[1])
+labels = {w["label"] for w in
+          json.loads(open(sys.argv[2]).read())["watches"]}
+removed = []
+for f in sorted(dest.glob("*_us_fulltime.csv")):
+    if f.stem not in labels:
+        f.unlink()
+        view = f.with_name(f.name.replace("_us_fulltime.csv",
+                                           "_us_fulltime.h1b_lca.csv"))
+        if view.exists():
+            view.unlink()
+        removed.append(f.stem)
+print(f"[back-sync-membership] pruned {len(removed)} removed-board "
+      f"CSVs org-side: {', '.join(removed[:8])}"
+      f"{' …' if len(removed) > 8 else ''}")
+PYMEM
   rsync -a "$DEST"/ingest/data/workday/*_us_fulltime.csv \
     "$DEST"/ingest/data/workday/*.h1b_lca.csv \
     "$SRC/ingest/data/workday/" 2>/dev/null || \
