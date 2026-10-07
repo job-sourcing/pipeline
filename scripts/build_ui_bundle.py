@@ -100,7 +100,7 @@ def main() -> int:
     facets: dict[str, set] = {
         "jobFamilyGroup": set(), "corroborationStatus": set(),
         "timeType": set(), "remoteFlag": set(), "workerSubType": set(),
-        "stateCodes": set(), "matchMethod": set(),
+        "stateCodes": set(), "matchMethod": set(), "country": set(),
     }
     snapshot = ""
 
@@ -133,6 +133,7 @@ def main() -> int:
                 "city": city_of(r.get("primaryLocation") or ""),
                 "nLocations": num(r.get("nLocations")),
                 "remoteFlag": (r.get("remoteFlag") or "").lower() == "true",
+                "country": r.get("country") or "",
                 "states": states,
                 "status": status,
                 "matchMethod": r.get("matchMethod") or "",
@@ -169,6 +170,8 @@ def main() -> int:
                     facets[k].add(job[k if k != "corroborationStatus"
                                        else "status"])
             facets["remoteFlag"].add(job["remoteFlag"])
+            if job.get("country"):
+                facets["country"].add(job["country"])
             for s in states:
                 facets["stateCodes"].add(s)
             dump_date = max(dump_date, r.get("dumpDate") or "")

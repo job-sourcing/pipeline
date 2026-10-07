@@ -177,7 +177,8 @@ def _atomic_write(path: Path, text: str) -> None:
 # copy #3, and the timeType-facet omission shipped from that drift) ──────
 def current_postings(board_spec: str, country: str, time_type: str,
                      cfg: Config,
-                     include_remote: bool = False
+                     include_remote: bool = False,
+                     geo_scope: str = ""
                      ) -> tuple[dict[str, dict], bool, bool]:
     """One full listing pass → {reqId: row} + complete flag +
     country_client flag (B1: the diff only trusts 'gone' when the
@@ -189,14 +190,19 @@ def current_postings(board_spec: str, country: str, time_type: str,
     via the enrichment detail's jobPostingInfo.country instead.
 
     S25: include_remote — the remote-OK policy (D-S25-2); rows whose
-    own data says remote stay even when the country mismatches."""
+    own data says remote stay even when the country mismatches.
+
+    S27: geo_scope="non_cn" (D-S27-2) — the exhaustive-collection
+    scope: keep every not-mainland-China-sited row + every remote
+    row. greenhouse/ashby/lever/workable only (others ignore)."""
     try:
         rows, meta = site_boards.list_board(
             board_spec, country=country or None,
             time_type=time_type or None, cfg=cfg,
             sleep_s=LIST_SLEEP, progress_every=20,
             progress_label="watch", client_filter=False,
-            include_remote=include_remote)
+            include_remote=include_remote,
+            geo_scope=geo_scope or None)
     except ValueError as exc:
         print(f"[watch] facet error on {board_spec}: {exc}", file=sys.stderr)
         return {}, False, False
@@ -1095,7 +1101,8 @@ def run_watch(w: dict, cfg: Config) -> str:
     try:
         current, list_complete, country_client = current_postings(
             w["board"], w.get("country", ""), w.get("time_type", ""), cfg,
-            include_remote=bool(w.get("include_remote")))
+            include_remote=bool(w.get("include_remote")),
+            geo_scope=str(w.get("geo_scope", "") or ""))
     except Exception as exc:
         if _egress_blocked(w, exc):
             streak = _egress_streak_bump(label)

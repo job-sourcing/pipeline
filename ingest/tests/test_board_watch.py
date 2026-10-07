@@ -2000,7 +2000,7 @@ class TestShippedWatchConfig:
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 129  # S25: +9 loosened-bar +33 census wire_now incl weee (SKILL §26 census→wire flow)
+        assert len(cfg["watches"]) == 107  # S27 D-S27-1: 129 - 1 dead zingage - 21 us_only origin removals (founder-descent retired)
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",
@@ -2011,7 +2011,7 @@ class TestShippedWatchConfig:
                   "ats:workable:pony-dot-ai",
                   "ats:feishuhire:vrfi1sk8a0", "ats:feishuhire:shengshu",
                   "ats:lever:horizon", "custom:xiaohongshu",
-                  "ats:ashby:hoyoverse", "ats:lever:plus-2",
+                  "ats:ashby:hoyoverse",  # plusai removed S27 D-S27-1
                   "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2",
                   # S20 wire wave 1
                   "ats:greenhouse:genscript",

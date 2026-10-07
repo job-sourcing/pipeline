@@ -144,6 +144,10 @@ def run_phase(lbl: str, w: dict, phase: str) -> int:
         # S25 remote-OK policy (D-S25-2): remote rows survive the
         # country filter for this watch
         cmd += ["--include-remote"]
+    if w.get("geo_scope"):
+        # D-S27-2: non_cn scope — chain runs must collect the SAME
+        # row membership as the watch (not-mainland-China + remote)
+        cmd += ["--geo-scope", str(w["geo_scope"])]
     if variants:
         cmd += ["--li-variants", variants]
     if slices:

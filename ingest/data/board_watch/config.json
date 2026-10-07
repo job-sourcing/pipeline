@@ -34,7 +34,8 @@
     "Seattle, Washington, United States",
     "New York, New York, United States",
     "Remote, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "baidu_us_fulltime",
@@ -51,7 +52,8 @@
     "Sunnyvale, California, United States",
     "Mountain View, California, United States",
     "Los Angeles, California, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "byd_us_fulltime",
@@ -70,7 +72,8 @@
     "Cupertino, California, United States",
     "Manteca, California, United States",
     "Las Vegas, Nevada, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "bytedance_us_fulltime",
@@ -107,7 +110,8 @@
    "slice_locations": [
     "United States",
     "San Jose, California, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "faradayfuture_us_fulltime",
@@ -122,7 +126,8 @@
     "United States",
     "El Segundo, California, United States",
     "Los Angeles, California, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "gea_us_fulltime",
@@ -152,7 +157,8 @@
     "United States",
     "Fremont, California, United States",
     "Manteno, Illinois, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "horizon_us_fulltime",
@@ -165,7 +171,8 @@
    "slice_locations": [
     "United States",
     "Cupertino, California, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "jd_us_fulltime",
@@ -213,7 +220,8 @@
    "slice_locations": [
     "United States",
     "New York, New York, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "neteasegames_us_fulltime",
@@ -227,7 +235,8 @@
    "slice_locations": [
     "United States",
     "Remote, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "netflix_us_fulltime",
@@ -275,7 +284,8 @@
     "New York, New York, United States",
     "Remote, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "pony_us_fulltime",
@@ -290,7 +300,8 @@
     "United States",
     "Fremont, California, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "shein_us_fulltime",
@@ -306,7 +317,8 @@
     "Los Angeles, California, United States",
     "San Diego, California, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "shengshu_us_fulltime",
@@ -335,7 +347,8 @@
    "slice_locations": [
     "United States",
     "Irvine, California, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "tencent_us_fulltime",
@@ -369,7 +382,8 @@
     "United States",
     "Irvine, California, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "tripcom_us_fulltime",
@@ -404,7 +418,8 @@
     "United States",
     "San Jose, California, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "xiaohongshu_us_fulltime",
@@ -434,7 +449,8 @@
    "slice_locations": [
     "United States",
     "Santa Clara, California, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "hoyoverse_us_fulltime",
@@ -449,7 +465,8 @@
     "Los Angeles, California, United States",
     "Remote, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "unitedimaging_us_fulltime",
@@ -482,7 +499,8 @@
     "Piscataway, New Jersey, United States",
     "San Jose, California, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "legendbiotech_us_fulltime",
@@ -497,7 +515,8 @@
     "United States",
     "Somerset, New Jersey, United States",
     "Raritan, New Jersey, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "nio_us_fulltime",
@@ -513,7 +532,8 @@
     "United States",
     "San Jose, California, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "foxit_us_fulltime",
@@ -530,7 +550,8 @@
     "Fremont, California, United States",
     "Milpitas, California, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "poizon_us_fulltime",
@@ -735,7 +756,8 @@
     "Fremont, California, United States",
     "San Jose, California, United States"
    ],
-   "time_type": "Full time"
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
   },
   {
    "label": "agora_us_fulltime",
@@ -1121,7 +1143,8 @@
     "Santa Clara, California, United States",
     "San Francisco, California, United States"
    ],
-   "country": "United States"
+   "country": "United States",
+   "geo_scope": "non_cn"
   },
   {
    "label": "hesai_us_fulltime",
@@ -1345,7 +1368,8 @@
    "slice_locations": [
     "United States",
     "Redwood City, California, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "qcraft_us_fulltime",
@@ -1359,7 +1383,8 @@
    "slice_locations": [
     "United States",
     "San Francisco, California, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "lightelligence_us_fulltime",
@@ -1373,7 +1398,8 @@
    "slice_locations": [
     "United States",
     "Boston, Massachusetts, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "dify_us_fulltime",
@@ -1401,7 +1427,8 @@
     "United States",
     "San Francisco, California, United States",
     "New York, New York, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "okx_us_fulltime",
@@ -1416,7 +1443,8 @@
     "United States",
     "San Jose, California, United States",
     "New York, New York, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "pingcap_us_fulltime",
@@ -1432,7 +1460,8 @@
     "Remote, United States",
     "San Jose, California, United States"
    ],
-   "include_remote": true
+   "include_remote": true,
+   "geo_scope": "non_cn"
   },
   {
    "label": "riotgames_us_fulltime",
@@ -1446,7 +1475,8 @@
     "United States",
     "Los Angeles, California, United States",
     "Seattle, Washington, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "streamnative_us_fulltime",
@@ -1460,7 +1490,8 @@
     "United States",
     "Remote, United States"
    ],
-   "include_remote": true
+   "include_remote": true,
+   "geo_scope": "non_cn"
   },
   {
    "label": "alluxio_us_fulltime",
@@ -1474,7 +1505,8 @@
     "United States",
     "Foster City, California, United States",
     "San Mateo, California, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "ambergroup_us_fulltime",
@@ -1488,7 +1520,8 @@
    "slice_locations": [
     "United States"
    ],
-   "include_remote": true
+   "include_remote": true,
+   "geo_scope": "non_cn"
   },
   {
    "label": "binance_us_fulltime",
@@ -1501,7 +1534,8 @@
    "slice_locations": [
     "United States"
    ],
-   "include_remote": true
+   "include_remote": true,
+   "geo_scope": "non_cn"
   },
   {
    "label": "funplus_us_fulltime",
@@ -1514,7 +1548,8 @@
    ],
    "slice_locations": [
     "United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "risingwave_us_fulltime",
@@ -1528,7 +1563,8 @@
    "slice_locations": [
     "United States",
     "Remote, United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "autelrobotics_us_fulltime",
@@ -1540,7 +1576,8 @@
    ],
    "slice_locations": [
     "United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "zoomlion_us_fulltime",
@@ -1553,7 +1590,8 @@
    ],
    "slice_locations": [
     "United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   },
   {
    "label": "celerdata_us_fulltime",
@@ -1679,7 +1717,8 @@
    ],
    "slice_locations": [
     "United States"
-   ]
+   ],
+   "geo_scope": "non_cn"
   }
  ]
 }

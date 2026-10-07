@@ -59,6 +59,9 @@ from board_dump import (          # noqa: E402
 )
 from jobsearch import corroborate            # noqa: E402
 from jobsearch.sources import workday         # noqa: E402 — country gate
+from jobsearch.sources.site_boards import (   # noqa: E402 — D-S27-2 gate
+    _text_is_cn_sited,
+)
 
 DATA = REPO / "ingest/data"
 WORKDAY = DATA / "workday"
@@ -80,6 +83,117 @@ FIELDS = [
 ]
 
 _NUM_LOCATIONS_RE = None  # compiled lazily (import re at module use)
+
+# ── D-S27-2: the non_cn export gate + row geo classification ────────────
+# Ordered keyword → label map for the bundle's country facet (the UI
+# geo filter). Best-effort on the row's own location text; "" = unknown.
+_GEO_KEYWORDS: list[tuple[tuple[str, ...], str]] = [
+    (("usa", "united states", "u.s.", "us",), "United States"),
+    (("hong kong", "香港"), "Hong Kong SAR"),
+    (("macau", "macao", "澳门"), "Macau SAR"),
+    (("taiwan", "taipei", "台湾", "台北"), "Taiwan"),
+    (("singapore", "新加坡"), "Singapore"),
+    (("china", "中国", "beijing", "shanghai", "shenzhen"), "China"),
+    (("japan", "tokyo", "东京", "日本"), "Japan"),
+    (("south korea", "korea", "seoul", "韩国", "首尔"), "South Korea"),
+    (("india", "bangalore", "bengaluru", "印度"), "India"),
+    (("united kingdom", " uk", "london", "england", "英国", "伦敦"),
+     "United Kingdom"),
+    (("germany", "berlin", "munich", "德国", "柏林"), "Germany"),
+    (("france", "paris", "法国", "巴黎"), "France"),
+    (("netherlands", "amsterdam", "荷兰"), "Netherlands"),
+    (("spain", "madrid", "barcelona", "西班牙"), "Spain"),
+    (("italy", "milan", "rome", "意大利"), "Italy"),
+    (("canada", "toronto", "vancouver", "加拿大"), "Canada"),
+    (("australia", "sydney", "melbourne", "澳大利亚"), "Australia"),
+    (("ireland", "dublin", "爱尔兰"), "Ireland"),
+    (("poland", "warsaw", "波兰"), "Poland"),
+    (("sweden", "stockholm", "瑞典"), "Sweden"),
+    (("switzerland", "zurich", "瑞士"), "Switzerland"),
+    (("united arab emirates", "dubai", "abu dhabi", "阿联酋", "迪拜"),
+     "United Arab Emirates"),
+    (("malaysia", "kuala lumpur", "马来西亚"), "Malaysia"),
+    (("thailand", "bangkok", "泰国"), "Thailand"),
+    (("vietnam", "ho chi minh", "hanoi", "越南"), "Vietnam"),
+    (("philippines", "manila", "菲律宾"), "Philippines"),
+    (("indonesia", "jakarta", "印尼"), "Indonesia"),
+    (("brazil", "são paulo", "sao paulo", "巴西"), "Brazil"),
+    (("mexico", "墨西哥"), "Mexico"),
+]
+
+
+def _classify_geo(*texts: str) -> str:
+    """Best-effort country label from location texts (the bundle's geo
+    facet). US state-token test first (case-sensitive 2-letter codes /
+    full names, mirroring the greenhouse ladder's rung-3 — 'Sunnyvale,
+    CA' carries no country word); keyword map after (long keywords
+    substring, short ones whole-token — 'us' must NOT match 'Kyushu');
+    CN-city token set maps to China; remote-only → Remote."""
+    import re as _re
+    blob = " | ".join(t for t in texts if t).lower()
+    if not blob.strip():
+        return ""
+    for t in texts:
+        for seg in (t or "").split(","):
+            for tok in seg.split():
+                tok2 = tok.strip(",()")
+                if len(tok2) > 2 and tok2.lower() \
+                        in workday._US_STATE_TOKENS:
+                    return "United States"
+                if len(tok2) == 2 and tok2.isupper() and tok2.lower() \
+                        in workday._US_STATE_TOKENS:
+                    return "United States"
+    toks = set(_re.split(r"[^a-z\u4e00-\u9fff]+", blob))
+    for keys, label in _GEO_KEYWORDS:
+        for k in keys:
+            if len(k) > 4 and k in blob:
+                return label
+            if k in toks:
+                return label
+    if _text_is_cn_sited(blob):
+        return "China"
+    if "remote" in blob:
+        return "Remote"
+    return ""
+
+
+def _row_is_cn_local(rec: dict, csv_row: dict | None = None) -> bool:
+    """D-S27-2 gate for geo_scope=non_cn boards: TRUE = row is
+    mainland-China-sited AND not remote → excluded from the export.
+    Evidence: the feed record's explicit country/countries fields +
+    locationsText, plus (for survivors) the CSV row's own
+    locations/primaryLocation/remoteFlag."""
+    texts: list[str] = []
+    for src in (rec, csv_row or {}):
+        texts.append(str(src.get("locationsText") or ""))
+        texts.append(str(src.get("primaryLocation") or ""))
+        texts.append(str(src.get("locations") or ""))
+    explicit = ""
+    for src in (rec, csv_row or {}):
+        c = str(src.get("country") or "").strip()
+        if c:
+            explicit = c
+            break
+        for cc in (src.get("countries") or []):
+            if str(cc).strip():
+                explicit = str(cc)
+                break
+    is_remote = False
+    for src in (rec, csv_row or {}):
+        if str(src.get("remoteFlag") or "").lower() == "true" \
+                or str(src.get("remoteType") or "").lower() == "remote" \
+                or str(src.get("telecommuting") or "").lower() == "true":
+            is_remote = True
+            break
+    blob = " | ".join(t for t in texts if t)
+    if "remote" in blob.lower():
+        is_remote = True
+    if explicit:
+        cn_sited = (workday.country_str_matches(explicit, "china")
+                    or explicit.strip().upper() in ("CN", "CHN"))
+    else:
+        cn_sited = _text_is_cn_sited(blob)
+    return cn_sited and not is_remote
 
 
 def _jsonl(path: Path) -> list[dict]:
@@ -254,6 +368,11 @@ def _newpost_row(rec: dict, w: dict, snapshot: date,
         "jobFamilyGroup": "",
     }
     row.update(_sig_cols({**sig, "_startDate": start} if sig else None))
+    # D-S27-2: non_cn boards carry the classified geo label (the bundle's
+    # country facet); US-scope boards keep the record's explicit country.
+    if str(w.get("geo_scope") or "") == "non_cn":
+        row["country"] = (rec.get("country")
+                          or _classify_geo(locs_text, *locs))
     _date_derived(row, snapshot, reposts)
     return {k: v for k, v in row.items() if k in FIELDS}
 
@@ -272,6 +391,7 @@ def refresh_one(label: str, w: dict, snapshot: date) -> dict:
     imported them; the export must not ship them in *_us_fulltime).
     Rows with NO country evidence stay (unclassified ≠ foreign)."""
     wcountry = w.get("country", "")
+    geo_scope = str(w.get("geo_scope") or "")
     state = {r["reqId"]: r for r in _jsonl(
         WATCH_DIR / f"{label}.state.jsonl")}
     csv_path = WORKDAY / f"{label}.csv"
@@ -292,6 +412,13 @@ def refresh_one(label: str, w: dict, snapshot: date) -> dict:
         c = (rec.get("country") or "").strip()
         return bool(c) and not workday.country_str_matches(c, wcountry)
 
+    def _excluded(rid: str, csv_row: dict | None = None) -> bool:
+        """D-S27-2: non_cn boards gate on China-local rows (CN-sited AND
+        not remote) instead of the US feed-country gate."""
+        if geo_scope == "non_cn":
+            return _row_is_cn_local(feed.get(rid) or {}, csv_row)
+        return _feed_foreign(rid)
+
     reposts = _repost_resets(label)
     pools = _load_h1b_bands_levelstripped(csv_path, w.get("company", ""))
     csv_ids = {r["reqId"] for r in csv_rows}
@@ -299,15 +426,16 @@ def refresh_one(label: str, w: dict, snapshot: date) -> dict:
     # existing CSV rows: gate on the SAME feed evidence (an Anthropic
     # row or an old binance row classified foreign after landing)
     survivors = [dict(r) for r in csv_rows
-                 if r["reqId"] in state and not _feed_foreign(r["reqId"])]
+                 if r["reqId"] in state
+                 and not _excluded(r["reqId"], r)]
     ghosts = [r for r in csv_rows
-              if r["reqId"] not in state or _feed_foreign(r["reqId"])]
+              if r["reqId"] not in state or _excluded(r["reqId"], r)]
 
     new_rows, pending, terminal_err = [], 0, 0
     for rid in state:
         if rid in csv_ids:
             continue
-        if _feed_foreign(rid):
+        if _excluded(rid):
             continue                 # feed-classified foreign — never ship
         rec = feed.get(rid)
         if not rec:

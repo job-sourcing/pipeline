@@ -456,7 +456,8 @@ def phase_list(args, out: Path) -> int:
             time_type=args.time_type or None, cfg=cfg,
             sleep_s=args.sleep, progress_every=10,
             client_filter=False,
-            include_remote=bool(getattr(args, "include_remote", False)))
+            include_remote=bool(getattr(args, "include_remote", False)),
+            geo_scope=getattr(args, "geo_scope", None) or None)
     except ValueError as exc:
         print(f"[list] {exc}")
         return 2
@@ -2462,6 +2463,11 @@ def main() -> int:
                          "workplaceType / workable telecommuting / "
                          "greenhouse location text) even when country "
                          "does not match (D-S25-2)")
+    ap.add_argument("--geo-scope", default="", choices=["", "non_cn"],
+                    help="D-S27-2 collection scope: non_cn = keep every "
+                         "not-mainland-China-sited row + every remote "
+                         "row (greenhouse/ashby/lever/workable only); "
+                         "overrides --country for those adapters")
     ap.add_argument("--time-type", default="Full time",
                     help="timeType facet value (empty = all)")
     ap.add_argument("--location", default="United States",

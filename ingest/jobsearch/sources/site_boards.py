@@ -158,6 +158,56 @@ def parse_site(spec: str) -> tuple[str, str]:
 _ADAPTER_ACCEPTS_REMOTE = {"greenhouse": True, "ashby": True,
                            "lever": True, "workable": True}
 
+# ── D-S27-2: the non_cn collection scope ─────────────────────────────────
+# Row membership for geo_scope="non_cn" boards: keep iff the row's own
+# location evidence does NOT say mainland China, OR the row says remote
+# (remote-even-China-anchored rows are collected + flagged; the
+# expat-oriented vs China-local filtering decision happens in the UI,
+# per the user's "collect broad, filter later" directive). HK/TW/MO are
+# deliberately NOT matched here — they get their own geo flags.
+_CN_CITY_TOKENS = frozenset("""
+beijing peking shanghai shenzhen guangzhou canton chengdu suzhou
+nanjing nanking wuhan hankou xiamen amen xian xianyang tianjin tientsin
+chongqing chungking hefei feidong changsha zhuzhou qingdao tsingtao
+dalian ningbo ningpo wuxi dongguan foshan zhuhai zhongshan huizhou
+zhengzhou shenyang mukden harbin kunming guiyang fuzhou quanzhou jinan
+taiyuan hohhot lanzhou urumqi nanning guilin haikou sanya lhasa xining
+yinchuan changzhou yangzhou taicang nantong jiaxing shaoxing wenzhou
+zhangjiagang changshu cixi mianyang luzhou huzhou jiujiang xinxiang
+luoyang kaifeng shijiazhuang tangshan baoding langfang datong anshan
+fushun pudong nanshan futian baoan longgang huizhou
+""".split())
+_CN_PROV_TOKENS = frozenset("""
+guangdong zhejiang jiangsu shandong sichuan hubei hunan anhui fujian
+henan hebei shanxi shaanxi liaoning jilin heilongjiang yunnan guizhou
+guangxi hainan gansu qinghai ningxia xinjiang tibet innermongolia
+""".split())
+_CN_CODES = frozenset({"cn", "chn", "prc"})
+_CJK_LOC_RE = re.compile(r"[\u4e00-\u9fff]")
+
+
+def _text_is_cn_sited(text: str) -> bool:
+    """D-S27-2: does this location text say MAINLAND China? Token-level
+    matching (city/province/ISO-code words or any CJK char); 'china' as
+    a substring (covers 'Remote, China' / 'Shanghai, China' dialects).
+    Known limits, accepted: kanji/kana Japanese locations false-positive
+    as CN (rare on these boards); 'china' substrings like 'Chinatown'."""
+    t = (text or "").strip().lower()
+    if not t:
+        return False
+    if "china" in t or "中国" in t:
+        return True
+    if _CJK_LOC_RE.search(t):
+        return True
+    for seg in re.split(r"[,|·/]+", t):
+        seg = seg.strip()
+        if seg in _CN_CODES:
+            return True
+        toks = set(re.split(r"[\s\-()]+", seg))
+        if toks & _CN_CITY_TOKENS or toks & _CN_PROV_TOKENS:
+            return True
+    return False
+
 
 def list_board(spec: str, *, country: Optional[str] = None,
                time_type: Optional[str] = None,
@@ -166,6 +216,7 @@ def list_board(spec: str, *, country: Optional[str] = None,
                progress_label: str = "list",
                client_filter: bool = True,
                include_remote: bool = False,
+               geo_scope: Optional[str] = None,
                ) -> tuple[dict[str, dict], dict]:
     """workday.list_board's contract for ANY board spec. Routes to the
     matching adapter; a workday spec (no 'ats:' prefix) goes to the
@@ -183,7 +234,8 @@ def list_board(spec: str, *, country: Optional[str] = None,
             return adapter.list_board(country=country,
                                       time_type=time_type,
                                       progress_label=progress_label,
-                                      include_remote=include_remote)
+                                      include_remote=include_remote,
+                                      geo_scope=geo_scope)
         return adapter.list_board(country=country, time_type=time_type,
                                   progress_label=progress_label)
     return workday.list_board(spec, country=country, time_type=time_type,
@@ -453,6 +505,7 @@ class GreenhouseAdapter:
                    time_type: Optional[str] = None,
                    progress_label: str = "list",
                    include_remote: bool = False,
+                   geo_scope: Optional[str] = None,
                    ) -> tuple[dict[str, dict], dict]:
         jobs = self._jobs()
         serves_tt = any(self._time_type_from_metadata(j) for j in jobs)
@@ -475,14 +528,34 @@ class GreenhouseAdapter:
                     and tt.lower() != time_type.lower():
                 dropped_tt += 1
                 continue
-            if country and not self._job_in_country(
+            loc_name = str((job.get("location") or {}).get("name")
+                           or "")
+            if geo_scope == "non_cn":
+                # D-S27-2: keep iff not-mainland-China-sited OR remote.
+                # E2 free-text + office texts feed the shared CN test
+                # (offices carry 'name' (fixture/legacy) and/or
+                # 'location.name' (live dialect) — consult both).
+                def _office_texts(o) -> list[str]:
+                    out = [str((o or {}).get("name") or "")]
+                    loc = (o or {}).get("location")
+                    if isinstance(loc, dict):
+                        out.append(str(loc.get("name") or ""))
+                    elif loc:
+                        out.append(str(loc))
+                    return out
+                cn_sited = _text_is_cn_sited(loc_name) or any(
+                    _text_is_cn_sited(t)
+                    for o in (job.get("offices") or [])
+                    for t in _office_texts(o))
+                if cn_sited and "remote" not in loc_name.lower():
+                    dropped_country += 1
+                    continue
+            elif country and not self._job_in_country(
                     job, country, offices_discriminate):
                 # S25 remote-OK policy: greenhouse has no structured
                 # remote field — the location text saying 'Remote' is
                 # the row's own evidence (D-S25-2; the S16 lesson kept:
                 # never guess beyond what the row itself says)
-                loc_name = str((job.get("location") or {}).get("name")
-                               or "")
                 if include_remote and "remote" in loc_name.lower():
                     kept_remote += 1
                 else:
@@ -517,6 +590,7 @@ class GreenhouseAdapter:
             "client_filtered_country": dropped_country,
             "client_filtered_time": dropped_tt,
             "kept_remote": kept_remote,
+            "geo_scope": geo_scope or "",
             "offices_discriminate": offices_discriminate,
             "ats": "greenhouse",
         }
@@ -637,6 +711,7 @@ class AshbyAdapter:
                    time_type: Optional[str] = None,
                    progress_label: str = "list",
                    include_remote: bool = False,
+                   geo_scope: Optional[str] = None,
                    ) -> tuple[dict[str, dict], dict]:
         jobs = self._jobs()
         rows: dict[str, dict] = {}
@@ -652,7 +727,21 @@ class AshbyAdapter:
                 dropped_tt += 1
                 continue
             c = self._country(job)
-            if country:
+            if geo_scope == "non_cn":
+                # D-S27-2: keep iff not-mainland-China-sited OR remote
+                # (workplaceType is ashby's own remote evidence).
+                if c:
+                    cn_sited = (workday.country_str_matches(c, "china")
+                                or c.strip().upper() in ("CN", "CHN"))
+                else:
+                    cn_sited = _text_is_cn_sited(
+                        str(job.get("location") or ""))
+                is_remote = str(
+                    job.get("workplaceType") or "").lower() == "remote"
+                if cn_sited and not is_remote:
+                    dropped_country += 1
+                    continue
+            elif country:
                 if not workday.country_str_matches(c, country):
                     # S25 remote-OK policy: ashby's workplaceType is the
                     # row's own remote evidence (D-S25-2)
@@ -661,7 +750,7 @@ class AshbyAdapter:
                             == "remote":
                         kept_remote += 1
                     else:
-                        # location fallback only when the address is absent
+                        # location fallback only when absent
                         loc = str(job.get("location") or "")
                         last = loc.split(",")[-1].strip() if loc else ""
                         if not workday.country_str_matches(last, country):
@@ -691,6 +780,7 @@ class AshbyAdapter:
             "country_client": False,
             "client_filtered": dropped_country + dropped_tt,
             "kept_remote": kept_remote,
+            "geo_scope": geo_scope or "",
             "ats": "ashby",
         }
         print(f"[{progress_label}] ashby:{self.org}: {len(rows)} rows"
@@ -1618,6 +1708,7 @@ class LeverAdapter:
                    time_type: Optional[str] = None,
                    progress_label: str = "list",
                    include_remote: bool = False,
+                   geo_scope: Optional[str] = None,
                    ) -> tuple[dict[str, dict], dict]:
         jobs = self._jobs()
         rows: dict[str, dict] = {}
@@ -1631,7 +1722,25 @@ class LeverAdapter:
                 dropped_tt += 1
                 continue
             c = self._country(job)
-            if country and not workday.country_str_matches(c, country):
+            if geo_scope == "non_cn":
+                # D-S27-2: keep iff not-mainland-China-sited OR remote
+                # (lever workplaceType + allLocations text evidence).
+                cats0 = job.get("categories") or {}
+                loc_txts = [str(x) for x in
+                            (cats0.get("allLocations") or [])]
+                if not loc_txts:
+                    loc_txts = [str(cats0.get("location") or "")]
+                if c:
+                    cn_sited = (workday.country_str_matches(c, "china")
+                                or c.strip().upper() in ("CN", "CHN"))
+                else:
+                    cn_sited = _text_is_cn_sited(" | ".join(loc_txts))
+                is_remote = str(
+                    job.get("workplaceType") or "").lower() == "remote"
+                if cn_sited and not is_remote:
+                    dropped_country += 1
+                    continue
+            elif country and not workday.country_str_matches(c, country):
                 # S25 remote-OK policy: lever's workplaceType is the
                 # row's own remote evidence — a 'remote' role stays
                 # when the watch opted in (D-S25-2)
@@ -1678,6 +1787,7 @@ class LeverAdapter:
             "country_client": False,
             "client_filtered": dropped_country + dropped_tt,
             "kept_remote": kept_remote,
+            "geo_scope": geo_scope or "",
             "ats": "lever",
         }
         print(f"[{progress_label}] lever:{self.org}: {len(rows)} rows"
@@ -1788,6 +1898,7 @@ class WorkableAdapter:
                    time_type: Optional[str] = None,
                    progress_label: str = "list",
                    include_remote: bool = False,
+                   geo_scope: Optional[str] = None,
                    ) -> tuple[dict[str, dict], dict]:
         jobs = self._jobs()
         rows: dict[str, dict] = {}
@@ -1801,7 +1912,17 @@ class WorkableAdapter:
                 dropped_tt += 1
                 continue
             c = str(job.get("country") or "").strip()
-            if country and not workday.country_str_matches(c, country):
+            if geo_scope == "non_cn":
+                # D-S27-2: workable's structured country code is the
+                # cleanest evidence; locationsText token test only
+                # when the code is absent. Remote = telecommuting.
+                cn_sited = (c.upper() in ("CN", "CHN")
+                            if c else _text_is_cn_sited(
+                                self._loc_text(job)))
+                if cn_sited and not job.get("telecommuting"):
+                    dropped_country += 1
+                    continue
+            elif country and not workday.country_str_matches(c, country):
                 # S25 remote-OK policy: workable's telecommuting flag is
                 # the row's own remote evidence (D-S25-2)
                 if include_remote and job.get("telecommuting"):
@@ -1843,6 +1964,7 @@ class WorkableAdapter:
             "country_client": False,
             "client_filtered": dropped_country + dropped_tt,
             "kept_remote": kept_remote,
+            "geo_scope": geo_scope or "",
             "ats": "workable",
         }
         print(f"[{progress_label}] workable:{self.org}: {len(rows)} rows"
