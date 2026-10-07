@@ -1,0 +1,44 @@
+{"label": "heygen_us_fulltime", "company": "HeyGen", "verdict": "us_only", "action": "removed", "citation": "s27_a: CN entity 诗云科技（深圳） deregistered 2023-12; CN VCs forced out", "ts": "2026-10-07"}
+{"label": "tigergraph_us_fulltime", "company": "TigerGraph", "verdict": "us_only", "action": "removed", "citation": "s27_a: CN WFOE 维加星信息科技（上海） deregistered; Cuadrilla US PE acquisition 2025-07", "ts": "2026-10-07"}
+{"label": "plusai_us_fulltime", "company": "PlusAI", "verdict": "us_only", "action": "removed", "citation": "s27_a: China ops sold to 满帮 Manbang 2025-07; US-only SPAC path", "ts": "2026-10-07"}
+{"label": "wyze_us_fulltime", "company": "Wyze", "verdict": "us_only", "action": "removed", "citation": "s27_b1: US company Kirkland WA, no CN entity; ODM mfg migrating to Vietnam; founder descent only (gray)", "ts": "2026-10-07"}
+{"label": "grubmarket_us_fulltime", "company": "GrubMarket", "verdict": "us_only", "action": "removed", "citation": "s27_b2: all roles SF, no operating CN entity (qcc matches = deregistered shells)", "ts": "2026-10-07"}
+{"label": "uniuni_us_fulltime", "company": "UniUni", "verdict": "us_only", "action": "removed", "citation": "s27_b2: NA-only ops; founder naturalized-Canadian; zero mainland footprint (gray)", "ts": "2026-10-07"}
+{"label": "creatify_us_fulltime", "company": "Creatify", "verdict": "us_only", "action": "removed", "citation": "s27_b2: V2EX RMB rounds 2024-historic (last_touched 2024-06-12); 5/5 roles Mountain View (gray)", "ts": "2026-10-07"}
+{"label": "fireworks_us_fulltime", "company": "Fireworks AI", "verdict": "us_only", "action": "removed", "citation": "S24 b1: no China ops found; LCA filings all CA/NY/WA; founder-origin only", "ts": "2026-10-07"}
+{"label": "togetherai_us_fulltime", "company": "Together AI", "verdict": "us_only", "action": "removed", "citation": "S24 b1: 1 office (SF); no mainland entity/office/R&D", "ts": "2026-10-07"}
+{"label": "cognition_us_fulltime", "company": "Cognition", "verdict": "us_only", "action": "removed", "citation": "S24 b1: American company SF HQ; founders US-based; no mainland entity", "ts": "2026-10-07"}
+{"label": "genspark_us_fulltime", "company": "Genspark", "verdict": "us_only", "action": "removed", "citation": "S24 b1: Palo Alto + Singapore + Tokyo; no mainland entity (mainfunc.cn = Xi'an homonym)", "ts": "2026-10-07"}
+{"label": "hyperbolic_us_fulltime", "company": "Hyperbolic", "verdict": "us_only", "action": "removed", "citation": "S24 b1: SF-inc; CEO/CTO US-based; zero China-team results", "ts": "2026-10-07"}
+{"label": "sundayrobotics_us_fulltime", "company": "Sunday Robotics", "verdict": "us_only", "action": "removed", "citation": "S24 b1: Redwood City CA; Stanford founders; no mainland entity", "ts": "2026-10-07"}
+{"label": "pika_us_fulltime", "company": "Pika", "verdict": "us_only", "action": "removed", "citation": "D-S25 loose bar only: US-inc Palo Alto; no China-ops evidence on file", "ts": "2026-10-07"}
+{"label": "worldlabs_us_fulltime", "company": "World Labs", "verdict": "us_only", "action": "removed", "citation": "D-S25 loose bar only: US-inc SF; no China-ops evidence on file", "ts": "2026-10-07"}
+{"label": "gptzero_us_fulltime", "company": "GPTZero", "verdict": "us_only", "action": "removed", "citation": "D-S25 loose bar only: NYC; no China-ops evidence on file", "ts": "2026-10-07"}
+{"label": "llamaindex_us_fulltime", "company": "LlamaIndex", "verdict": "us_only", "action": "removed", "citation": "D-S25 loose bar only: SF remote-first; no China-ops evidence on file", "ts": "2026-10-07"}
+{"label": "onyx_us_fulltime", "company": "Onyx (Danswer)", "verdict": "us_only", "action": "removed", "citation": "D-S25 loose bar only: SF; no China-ops evidence on file", "ts": "2026-10-07"}
+{"label": "opusclip_us_fulltime", "company": "OpusClip", "verdict": "us_only", "action": "removed", "citation": "D-S25 loose bar only: Mountain View; no China-ops evidence on file", "ts": "2026-10-07"}
+{"label": "retellai_us_fulltime", "company": "Retell AI", "verdict": "us_only", "action": "removed", "citation": "D-S25 loose bar only: SF; no China-ops evidence on file", "ts": "2026-10-07"}
+{"label": "otterai_us_fulltime", "company": "Otter.ai", "verdict": "us_only", "action": "removed", "citation": "D-S25 loose bar only: Mountain View; US operations; founder descent only", "ts": "2026-10-07"}
+{"label": "alluxio_us_fulltime", "company": "Alluxio", "verdict": "china_ops", "action": "kept", "citation": "s27_a: current active China operation (Beijing entity/team)", "ts": "2026-10-07"}
+{"label": "risingwave_us_fulltime", "company": "RisingWave", "verdict": "china_ops", "action": "kept", "citation": "s27_a: China entity/team current; CN hiring rounds", "ts": "2026-10-07"}
+{"label": "streamnative_us_fulltime", "company": "StreamNative", "verdict": "china_ops", "action": "kept", "citation": "s27_a: China entity/team current", "ts": "2026-10-07"}
+{"label": "pingcap_us_fulltime", "company": "PingCAP", "verdict": "china_ops", "action": "kept", "citation": "s27_a: Beijing entity 平凯科技 + CN team current", "ts": "2026-10-07"}
+{"label": "airwallex_us_fulltime", "company": "Airwallex", "verdict": "china_ops", "action": "kept", "citation": "s27_a: current active China operation (Shanghai hub)", "ts": "2026-10-07"}
+{"label": "lightelligence_us_fulltime", "company": "Lightelligence", "verdict": "china_hq", "action": "kept", "citation": "s27_a: 曦智科技 Shanghai parent, HKEX-listed 2026-04", "ts": "2026-10-07"}
+{"label": "okx_us_fulltime", "company": "OKX", "verdict": "cn_owned", "action": "kept", "citation": "s27_b1: PRC-national founder Star Xu controls OKX Group (ICE stake minority)", "ts": "2026-10-07"}
+{"label": "binance_us_fulltime", "company": "Binance", "verdict": "cn_owned", "action": "kept", "citation": "s27_b1: CZ majority owner; PRC-national co-founder Yi He co-CEO; 48/302 roles require Mandarin", "ts": "2026-10-07"}
+{"label": "webull_us_fulltime", "company": "Webull", "verdict": "cn_owned", "action": "kept", "citation": "s27_b1: 20-F — Wang Anquan 79.2% voting power; Hunan Weibu 863 employees = 62% of workforce", "ts": "2026-10-07"}
+{"label": "ambergroup_us_fulltime", "company": "Amber Group", "verdict": "cn_owned", "action": "kept", "citation": "s27_b1: founder Michael Wu 91.9% voting power; HK-founded 2017 (HK = China-based)", "ts": "2026-10-07"}
+{"label": "weee_us_fulltime", "company": "Weee!", "verdict": "china_ops", "action": "kept", "citation": "s27_b2: Shanghai WFOE 赛潍 100% Weee-owned, 251 insured CN employees (2025年报)", "ts": "2026-10-07"}
+{"label": "dify_us_fulltime", "company": "Dify (LangGenius)", "verdict": "china_ops", "action": "kept", "citation": "s27_b2 re-verified: 苏州语灵 在业, 72 参保; 4/4 live roles Suzhou", "ts": "2026-10-07"}
+{"label": "zilliz_us_fulltime", "company": "Zilliz", "verdict": "china_ops", "action": "kept", "citation": "S24 b1/b2 pass verdict (major China ops)", "ts": "2026-10-07"}
+{"label": "qcraft_us_fulltime", "company": "QCraft", "verdict": "china_ops", "action": "kept", "citation": "S24 b2 pass verdict", "ts": "2026-10-07"}
+{"label": "riotgames_us_fulltime", "company": "Riot Games", "verdict": "cn_owned", "action": "kept", "citation": "Tencent 100% subsidiary", "ts": "2026-10-07"}
+{"label": "gea_us_fulltime", "company": "GE Appliances", "verdict": "cn_owned", "action": "kept", "citation": "Haier-owned", "ts": "2026-10-07"}
+{"label": "amersports_us_fulltime", "company": "Amer Sports", "verdict": "cn_owned", "action": "kept", "citation": "ANTA-controlled consortium", "ts": "2026-10-07"}
+{"label": "mandarinoriental_us_fulltime", "company": "Mandarin Oriental", "verdict": "china_hq", "action": "kept", "citation": "HK-based (China territory); Asia-centric ops", "ts": "2026-10-07"}
+{"label": "canadiansolar_us_fulltime", "company": "Canadian Solar", "verdict": "china_ops", "action": "kept", "citation": "阿特斯: massive CN manufacturing base", "ts": "2026-10-07"}
+{"label": "nvidia_us_fulltime", "verdict": "reference_anchor", "action": "kept", "citation": "NVIDIA (S15 pilot / H-1B comp anchor)", "ts": "2026-10-07"}
+{"label": "netflix_us_fulltime", "verdict": "reference_anchor", "action": "kept", "citation": "Netflix (H-1B comp anchor)", "ts": "2026-10-07"}
+{"label": "openai_us_fulltime", "verdict": "reference_anchor", "action": "kept", "citation": "OpenAI (H-1B comp anchor)", "ts": "2026-10-07"}
+{"label": "anthropic_us_fulltime", "verdict": "reference_anchor", "action": "kept", "citation": "Anthropic (H-1B comp anchor)", "ts": "2026-10-07"}

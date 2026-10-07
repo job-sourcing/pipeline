@@ -452,22 +452,6 @@
    "time_type": "Full time"
   },
   {
-   "label": "plusai_us_fulltime",
-   "board": "ats:lever:plus-2",
-   "company": "PlusAI",
-   "country": "United States",
-   "li_variants": [
-    "PlusAI"
-   ],
-   "slice_locations": [
-    "United States",
-    "Santa Clara, California, United States",
-    "Fremont, California, United States",
-    "Dallas, Texas, United States"
-   ],
-   "time_type": "Full time"
-  },
-  {
    "label": "unitedimaging_us_fulltime",
    "board": "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2",
    "company": "United Imaging",
@@ -1406,140 +1390,6 @@
    ]
   },
   {
-   "label": "creatify_us_fulltime",
-   "board": "ats:ashby:creatify",
-   "company": "Creatify",
-   "country": "United States",
-   "li_variants": [
-    "Creatify",
-    "Creatify AI"
-   ],
-   "slice_locations": [
-    "United States",
-    "Mountain View, California, United States"
-   ]
-  },
-  {
-   "label": "pika_us_fulltime",
-   "board": "ats:ashby:pika",
-   "company": "Pika",
-   "country": "United States",
-   "li_variants": [
-    "Pika",
-    "Pika Labs"
-   ],
-   "slice_locations": [
-    "United States",
-    "Palo Alto, California, United States",
-    "Remote, United States"
-   ]
-  },
-  {
-   "label": "worldlabs_us_fulltime",
-   "board": "ats:ashby:worldlabs",
-   "company": "World Labs",
-   "country": "United States",
-   "li_variants": [
-    "World Labs",
-    "World Labs AI"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States"
-   ]
-  },
-  {
-   "label": "fireworks_us_fulltime",
-   "board": "ats:ashby:fireworks",
-   "company": "Fireworks AI",
-   "country": "United States",
-   "li_variants": [
-    "Fireworks AI",
-    "Fireworks"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Mateo, California, United States",
-    "San Francisco, California, United States",
-    "Remote, United States"
-   ]
-  },
-  {
-   "label": "togetherai_us_fulltime",
-   "board": "ats:greenhouse:togetherai",
-   "company": "Together AI",
-   "country": "United States",
-   "li_variants": [
-    "Together AI",
-    "Together"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States"
-   ]
-  },
-  {
-   "label": "cognition_us_fulltime",
-   "board": "ats:ashby:cognition",
-   "company": "Cognition",
-   "country": "United States",
-   "li_variants": [
-    "Cognition",
-    "Cognition Labs",
-    "Cognition AI"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States",
-    "New York, New York, United States",
-    "Washington, District of Columbia, United States"
-   ]
-  },
-  {
-   "label": "genspark_us_fulltime",
-   "board": "ats:ashby:genspark",
-   "company": "Genspark",
-   "country": "United States",
-   "li_variants": [
-    "Genspark",
-    "MainFunc"
-   ],
-   "slice_locations": [
-    "United States",
-    "Palo Alto, California, United States",
-    "New York, New York, United States"
-   ]
-  },
-  {
-   "label": "hyperbolic_us_fulltime",
-   "board": "ats:ashby:hyperbolic",
-   "company": "Hyperbolic",
-   "country": "United States",
-   "li_variants": [
-    "Hyperbolic",
-    "Hyperbolic Labs"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States",
-    "Remote, United States"
-   ]
-  },
-  {
-   "label": "sundayrobotics_us_fulltime",
-   "board": "ats:ashby:sunday",
-   "company": "Sunday Robotics",
-   "country": "United States",
-   "li_variants": [
-    "Sunday Robotics",
-    "Sunday"
-   ],
-   "slice_locations": [
-    "United States",
-    "Redwood City, California, United States"
-   ]
-  },
-  {
    "label": "airwallex_us_fulltime",
    "board": "ats:ashby:airwallex",
    "company": "Airwallex",
@@ -1551,89 +1401,6 @@
     "United States",
     "San Francisco, California, United States",
     "New York, New York, United States"
-   ]
-  },
-  {
-   "label": "gptzero_us_fulltime",
-   "board": "ats:ashby:gptzero",
-   "company": "GPTZero",
-   "country": "United States",
-   "li_variants": [
-    "GPTZero"
-   ],
-   "slice_locations": [
-    "United States",
-    "New York, New York, United States"
-   ]
-  },
-  {
-   "label": "llamaindex_us_fulltime",
-   "board": "ats:ashby:llamaindex",
-   "company": "LlamaIndex",
-   "country": "United States",
-   "li_variants": [
-    "LlamaIndex",
-    "LlamaIndex AI"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States"
-   ]
-  },
-  {
-   "label": "onyx_us_fulltime",
-   "board": "ats:ashby:onyx",
-   "company": "Onyx",
-   "country": "United States",
-   "li_variants": [
-    "Onyx",
-    "Danswer"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States"
-   ]
-  },
-  {
-   "label": "opusclip_us_fulltime",
-   "board": "ats:ashby:opusclip",
-   "company": "OpusClip",
-   "country": "United States",
-   "li_variants": [
-    "OpusClip",
-    "Opus Clip"
-   ],
-   "slice_locations": [
-    "United States",
-    "Mountain View, California, United States"
-   ]
-  },
-  {
-   "label": "retellai_us_fulltime",
-   "board": "ats:ashby:retell-ai",
-   "company": "Retell AI",
-   "country": "United States",
-   "li_variants": [
-    "Retell AI",
-    "Retell"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States"
-   ]
-  },
-  {
-   "label": "heygen_us_fulltime",
-   "board": "ats:greenhouse:heygen",
-   "company": "HeyGen",
-   "country": "United States",
-   "li_variants": [
-    "HeyGen"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Jose, California, United States",
-    "Remote, United States"
    ]
   },
   {
@@ -1649,21 +1416,6 @@
     "United States",
     "San Jose, California, United States",
     "New York, New York, United States"
-   ]
-  },
-  {
-   "label": "otterai_us_fulltime",
-   "board": "ats:greenhouse:otterai",
-   "company": "Otter.ai",
-   "country": "United States",
-   "li_variants": [
-    "Otter.ai",
-    "Otter ai"
-   ],
-   "slice_locations": [
-    "United States",
-    "Mountain View, California, United States",
-    "Remote, United States"
    ]
   },
   {
@@ -1709,20 +1461,6 @@
     "Remote, United States"
    ],
    "include_remote": true
-  },
-  {
-   "label": "tigergraph_us_fulltime",
-   "board": "ats:greenhouse:tigergraph",
-   "company": "TigerGraph",
-   "country": "United States",
-   "li_variants": [
-    "TigerGraph"
-   ],
-   "slice_locations": [
-    "United States",
-    "Milpitas, California, United States",
-    "Redwood City, California, United States"
-   ]
   },
   {
    "label": "alluxio_us_fulltime",
@@ -1779,19 +1517,6 @@
    ]
   },
   {
-   "label": "grubmarket_us_fulltime",
-   "board": "ats:workable:grubmarket",
-   "company": "GrubMarket",
-   "country": "United States",
-   "li_variants": [
-    "GrubMarket"
-   ],
-   "slice_locations": [
-    "United States",
-    "San Francisco, California, United States"
-   ]
-  },
-  {
    "label": "risingwave_us_fulltime",
    "board": "ats:workable:risingwave-labs",
    "company": "RisingWave",
@@ -1831,20 +1556,6 @@
    ]
   },
   {
-   "label": "wyze_us_fulltime",
-   "board": "ats:workable:wyze",
-   "company": "Wyze",
-   "country": "United States",
-   "li_variants": [
-    "Wyze",
-    "Wyze Labs"
-   ],
-   "slice_locations": [
-    "United States",
-    "Kirkland, Washington, United States"
-   ]
-  },
-  {
    "label": "celerdata_us_fulltime",
    "board": "ats:rippling:celerdataopenroles",
    "company": "CelerData",
@@ -1857,18 +1568,6 @@
    "slice_locations": [
     "United States",
     "Remote, United States"
-   ]
-  },
-  {
-   "label": "uniuni_us_fulltime",
-   "board": "ats:rippling:uniuni",
-   "company": "UniUni",
-   "country": "United States",
-   "li_variants": [
-    "UniUni"
-   ],
-   "slice_locations": [
-    "United States"
    ]
   },
   {
