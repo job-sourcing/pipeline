@@ -5,3 +5,6 @@ NEW Regulatory CMC Lead | Flexible; United States | 2021-02-03T17:32:37 | https:
 NEW Project Lead, Regulatory Affairs | Flexible; United States | 2021-02-03T13:48:11 | https://www.ascentage.com/job-opportunities/project-lead-regulatory-affairs/
 (2026-09-30T13:42:01)
 
+board-watch ascentage_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; SSLError: HTTPSConnectionPool(host='www.ascentage.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/jobpost_location?per_page=100 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))) — UNREACHABLE, state untouched; streak 1/14
+(2026-10-07T03:49:49)
+
