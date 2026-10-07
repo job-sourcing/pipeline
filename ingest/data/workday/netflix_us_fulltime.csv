@@ -25728,3 +25728,82 @@ Netflix is a unique culture and environment. Learn more here.
 Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
 
 We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",7233,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Angeles/Senior-Portfolio-Operations-Manager--Games_JR42908-1,,,,,,,not_checked,,2026-10-06,,2026-10-07,,1,startDate,false,1,,,,,,2026-10-06,,,,,,,,
+JR40552,Software Engineer L5/L6 — Model Evaluations & Data Curation (MEDC),Netflix,"Netflix, Inc.",Full time,Posted Today,2026-10-06,1,USA - Remote,1,USA - Remote,true,,United States,,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
+
+About the Team
+
+Model Evaluations and Data Curation (""MEDC"") forms the flywheel of foundation model development at Netflix. We build the benchmarks, evaluators, and baselines that guide progress on our foundation models, and the data infrastructure that delivers high-quality, reproducible training and evaluation datasets to our AI/ML researchers.
+
+Together, these capabilities create a continuous loop of data → train → evaluate → adapt, driving faster and more confident innovation. Our work is upstream of nearly every AI-powered member experience at Netflix, making our impact unusually broad for a team of this size.
+
+The team has two major areas of focus:
+
+• Data Curation: Selecting, cleaning, and organizing raw data to create the best possible training sets for our models. The more abstractions we can make on the data, the faster we can innovate.
+
+• LLM Evaluations: Providing benchmarks for foundational models and datasets, ensuring confidence and trustworthiness when offering these building blocks to application teams.
+
+About the Role
+
+We are looking for a Software Engineer to build the common infrastructure for data curation at MEDC. Today, data curation work across MEDC and our modeling partners (e.g., semantic and content QA datasets, generative retrieval evals) happens largely in ad-hoc notebooks, with no shared capabilities or standardization. This makes every new curation project slow to launch, hard to discover, and labor-intensive to productionize. You will turn that into a coherent, reusable platform.
+
+This is not a pure data engineering role. The core of the work is using LLMs to transform data, for example turning the Netflix catalog and member signals into question-answer pairs, and then deciding what to keep. That means designing sampling strategies and filtering methods, often based on evaluation models, that maximize data quality, and proving that those choices actually improve downstream models. You will work hand in hand with researchers, so modeling intuition matters as much as engineering skill.
+
+Responsibilities
+
+• Design and build shared data curation infrastructure (reusable components, libraries, and workflows) that replaces ad-hoc notebooks and makes new curation projects fast to launch and easy to productionize
+
+• Build scalable LLM-driven data transformation pipelines that turn raw sources such as the Netflix catalog and metadata into training and evaluation data (e.g., question-answer pairs, synthetic scenarios), using large-scale batch inference with attention to quality and token cost
+
+• Develop sampling strategies (coverage, diversity, difficulty, and balance across content and member segments) for constructing training and evaluation sets
+
+• Develop filtering and quality-control methods, including LLM-as-judge and evaluation-model-based scoring, deduplication, and validation, to maximize data quality
+
+• Partner with researchers to measure how curation choices affect model performance, closing the loop between data quality signals and model outcomes
+
+• Make curated datasets first-class, discoverable artifacts with versioning, explicit lineage, and reproducibility, so teams can find, reuse, and build on each other's work
+
+• Drive adoption of shared curation practices across MEDC and partner modeling teams
+
+What We're Looking For
+
+Must-haves:
+
+• Strong software engineering in Python, with experience building reusable infrastructure, libraries, or frameworks used by other engineers and researchers
+
+• Experience building LLM-driven data generation or transformation pipelines (e.g., synthetic data, structured outputs, batch inference at scale)
+
+• Hands-on experience with data quality methods: sampling strategies, filtering, deduplication, and model-based quality scoring such as LLM-as-judge
+
+• Modeling intuition: an understanding of how data choices affect model behavior, and the ability to design experiments that measure it
+
+• Experience with distributed data processing (e.g., Spark, Ray, or similar)
+
+• Excellent collaboration skills, particularly with researchers, data scientists, and platform teams
+
+Nice-to-haves
+
+• Experience with LLM evaluation systems (must-have for L6)
+
+• Technical leadership across data and evaluation infrastructure; experience setting technical direction for a multi-engineer effort (must-have for L6)
+
+• Experience with dataset versioning, lineage, and artifact management (e.g., versioned datasets, experiment tracking, model registries)
+
+• Experience optimizing cost and throughput for large-scale LLM inference
+
+• Experience with human annotation workflows and calibrating LLM judges against human raters
+
+• Experience with pipeline orchestration frameworks (e.g., Metaflow, Airflow, or similar)
+
+• Background in recommendation systems, personalization, search, or working with content catalog and metadata
+
+Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $600,000.00 - $1,066,000.00. This compensation range will vary based on location.
+
+Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
+
+Netflix is a unique culture and environment. Learn more here.
+
+Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
+
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.
+
+Job is open for no less than 7 days and will be removed when the position is filled.",7153,https://netflix.wd108.myworkdayjobs.com/Netflix/job/USA---Remote/Software-Engineer-L5-L6---Model-Evaluations---Data-Curation--MEDC-_JR40552,,,,,,,not_checked,,2026-10-07,,2026-10-07,,1,startDate,false,0,,,,,,2026-10-06,,,361,213512,226158,264514,subset,Software Engineer
