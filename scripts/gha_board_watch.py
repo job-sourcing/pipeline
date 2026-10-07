@@ -264,6 +264,13 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
             "locationsText": r.get("locationsText") or "",
             "postedOn": r.get("postedOn") or "",
             "url": r.get("url") or "",
+            # S27 (review P0-1): the list row's OWN remote evidence must
+            # survive the seam — the exporter's non_cn gate reads it
+            # (remote rows are ALWAYS kept, even China-anchored; the
+            # enricher was dropping it, silently excluding contractually
+            # kept rows at export).
+            "remoteType": r.get("remoteType") or "",
+            "telecommuting": bool(r.get("telecommuting")),
         }
         if is_site:
             # S23: a detail fetch must NEVER escape the best-effort

@@ -344,3 +344,87 @@ class TestExporterNonCnGate:
         stats = exporter.refresh_one(
             "testco_us_fulltime", w, exporter.date(2026, 10, 7))
         assert stats["rows"] == 0            # feed-foreign gate (US scope)
+
+
+class TestReviewRoundPins:
+    """S27-REV2 review fixes: the seam remote propagation (P0-1), the
+    ashby/lever text-remote dialect (P1-5), greenhouse office fallback
+    (P1-4), _row_is_cn_local evidence precedence (P1-2/3), classify
+    label order (P2-9)."""
+
+    def test_ashby_text_remote_cn_kept(self, monkeypatch):
+        # "Remote, China" with workplaceType hybrid (not 'remote') —
+        # the location TEXT is the row's own remote evidence (P1-5)
+        jobs = [_ashby_job("txr", "CN Text Remote", country="China",
+                           loc="Remote, China")]
+        jobs[0]["workplaceType"] = "hybrid"
+        _patch_fetch(monkeypatch, jobs)
+        rows, _ = site_boards.list_board(
+            "ats:ashby:airwallex", country="United States", cfg=Config(),
+            geo_scope="non_cn")
+        assert set(rows) == {"txr"}
+
+    def test_lever_text_remote_cn_kept(self, monkeypatch):
+        _patch_fetch_list(monkeypatch, [{
+            "id": "ltxr", "text": "CN Remote", "createdAt": 1760000000000,
+            "workplaceType": "hybrid",
+            "categories": {"commitment": "Full-time",
+                           "location": "Remote, China"}}])
+        rows, _ = site_boards.list_board(
+            "ats:lever:binance", country="United States", cfg=Config(),
+            geo_scope="non_cn")
+        assert set(rows) == {"ltxr"}
+
+    def test_greenhouse_us_primary_with_cn_office_kept(self, monkeypatch):
+        # P1-4: offices are company-global evidence, NOT per-row — a
+        # US-primary posting must survive a Beijing office sibling.
+        # (The fixture joins offices into location.name — override it
+        # so E2 carries ONLY the primary.)
+        job = _gh_job("GO1", "r-us2", "US Primary",
+                      [{"name": "San Francisco, CA"}])
+        job["offices"] = [{"name": "San Francisco, CA"},
+                          {"name": "Beijing, China"}]
+        _patch_fetch(monkeypatch, [job])
+        rows, _ = site_boards.list_board(
+            "ats:greenhouse:shein", country="United States", cfg=Config(),
+            geo_scope="non_cn")
+        assert set(rows) == {"r-us2"}
+
+    def test_row_is_cn_local_remote_type_evidence(self):
+        # P0-1: the seam now propagates remoteType — a China-located
+        # remote row (workplaceType remote, city text no 'remote' word)
+        # must NOT be CN-local
+        g = exporter._row_is_cn_local
+        assert not g({"locationsText": "Shanghai",
+                      "remoteType": "Remote"})
+        assert g({"locationsText": "Shanghai",
+                  "remoteType": ""})
+        assert not g({"locationsText": "Shanghai",
+                      "telecommuting": True})
+
+    def test_row_is_cn_local_rec_evidence_wins(self):
+        # P1-3: rec's own countries beats a stale CSV 'United States'
+        g = exporter._row_is_cn_local
+        assert g({"countries": ["China"], "locationsText": ""},
+                 {"country": "United States"})
+
+    def test_row_is_cn_local_locations_list_joined(self):
+        # P1-2: list-typed locations join (never the Python repr)
+        g = exporter._row_is_cn_local
+        assert g({"locations": ["Shanghai"], "locationsText": ""})
+
+    def test_classify_order_fixes(self):
+        c = exporter._classify_geo
+        assert c("Toronto, CA") == "Canada"      # not the US 'CA' state
+        assert c("Remote - Global") == "Remote"
+        assert c("Remote, U.S.") == "United States"
+
+    def test_greenhouse_no_fabricated_country_under_geo_scope(
+            self, monkeypatch):
+        job = _gh_job("GG1", "r-gg", "Role",
+                      [{"name": "Singapore"}])
+        _patch_fetch(monkeypatch, [job])
+        rows, _ = site_boards.list_board(
+            "ats:greenhouse:shein", country="United States", cfg=Config(),
+            geo_scope="non_cn")
+        assert rows["r-gg"]["countries"] == []   # P2-11: never stamped

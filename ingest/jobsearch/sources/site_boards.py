@@ -167,7 +167,7 @@ _ADAPTER_ACCEPTS_REMOTE = {"greenhouse": True, "ashby": True,
 # deliberately NOT matched here — they get their own geo flags.
 _CN_CITY_TOKENS = frozenset("""
 beijing peking shanghai shenzhen guangzhou canton chengdu suzhou
-nanjing nanking wuhan hankou xiamen amen xian xianyang tianjin tientsin
+nanjing nanking wuhan hankou xiamen xian xianyang tianjin tientsin
 chongqing chungking hefei feidong changsha zhuzhou qingdao tsingtao
 dalian ningbo ningpo wuxi dongguan foshan zhuhai zhongshan huizhou
 zhengzhou shenyang mukden harbin kunming guiyang fuzhou quanzhou jinan
@@ -532,9 +532,11 @@ class GreenhouseAdapter:
                            or "")
             if geo_scope == "non_cn":
                 # D-S27-2: keep iff not-mainland-China-sited OR remote.
-                # E2 free-text + office texts feed the shared CN test
-                # (offices carry 'name' (fixture/legacy) and/or
-                # 'location.name' (live dialect) — consult both).
+                # E2 free-text is the primary signal; offices are the
+                # fallback ONLY when E2 is empty (review P1-4: a US-
+                # primary posting whose company also has a Beijing
+                # office must NOT drop — offices are company-global, not
+                # per-row evidence; mirrors the ladder's null-E2 rule).
                 def _office_texts(o) -> list[str]:
                     out = [str((o or {}).get("name") or "")]
                     loc = (o or {}).get("location")
@@ -543,10 +545,12 @@ class GreenhouseAdapter:
                     elif loc:
                         out.append(str(loc))
                     return out
-                cn_sited = _text_is_cn_sited(loc_name) or any(
-                    _text_is_cn_sited(t)
-                    for o in (job.get("offices") or [])
-                    for t in _office_texts(o))
+                cn_sited = _text_is_cn_sited(loc_name)
+                if not loc_name.strip():
+                    cn_sited = cn_sited or any(
+                        _text_is_cn_sited(t)
+                        for o in (job.get("offices") or [])
+                        for t in _office_texts(o))
                 if cn_sited and "remote" not in loc_name.lower():
                     dropped_country += 1
                     continue
@@ -578,7 +582,8 @@ class GreenhouseAdapter:
                 "departments": _dedup_keep_order(
                     [str(d.get("name") or "") for d in
                      job.get("departments") or []]),
-                "countries": [country] if country else [],
+                "countries": [country] if (country and not geo_scope)
+                             else [],
                 "applicationDeadline": job.get("application_deadline")
                                         or "",
             }
@@ -737,7 +742,8 @@ class AshbyAdapter:
                     cn_sited = _text_is_cn_sited(
                         str(job.get("location") or ""))
                 is_remote = str(
-                    job.get("workplaceType") or "").lower() == "remote"
+                    job.get("workplaceType") or "").lower() == "remote" \
+                    or "remote" in str(job.get("location") or "").lower()
                 if cn_sited and not is_remote:
                     dropped_country += 1
                     continue
@@ -1736,7 +1742,8 @@ class LeverAdapter:
                 else:
                     cn_sited = _text_is_cn_sited(" | ".join(loc_txts))
                 is_remote = str(
-                    job.get("workplaceType") or "").lower() == "remote"
+                    job.get("workplaceType") or "").lower() == "remote" \
+                    or any("remote" in t.lower() for t in loc_txts)
                 if cn_sited and not is_remote:
                     dropped_country += 1
                     continue

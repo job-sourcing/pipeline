@@ -97,7 +97,7 @@ _GEO_KEYWORDS: list[tuple[tuple[str, ...], str]] = [
     (("japan", "tokyo", "东京", "日本"), "Japan"),
     (("south korea", "korea", "seoul", "韩国", "首尔"), "South Korea"),
     (("india", "bangalore", "bengaluru", "印度"), "India"),
-    (("united kingdom", " uk", "london", "england", "英国", "伦敦"),
+    (("united kingdom", " uk", "uk", "london", "england", "英国", "伦敦"),
      "United Kingdom"),
     (("germany", "berlin", "munich", "德国", "柏林"), "Germany"),
     (("france", "paris", "法国", "巴黎"), "France"),
@@ -124,15 +124,27 @@ _GEO_KEYWORDS: list[tuple[tuple[str, ...], str]] = [
 
 def _classify_geo(*texts: str) -> str:
     """Best-effort country label from location texts (the bundle's geo
-    facet). US state-token test first (case-sensitive 2-letter codes /
-    full names, mirroring the greenhouse ladder's rung-3 — 'Sunnyvale,
-    CA' carries no country word); keyword map after (long keywords
-    substring, short ones whole-token — 'us' must NOT match 'Kyushu');
-    CN-city token set maps to China; remote-only → Remote."""
+    facet). Keyword map FIRST (review P2-9: 'Toronto, CA' = Canada; long
+    keywords substring, short ones whole-token — 'us' must NOT match
+    'Kyushu'); then the CN-city token set; then US state tokens
+    (case-sensitive 2-letter codes / full names, the greenhouse rung-3
+    dialect — 'Sunnyvale, CA'); remote-only → Remote. Accepted label
+    limits: 'Tbilisi, Georgia' → US (state name); multi-region remote
+    rows take the first keyword hit."""
     import re as _re
     blob = " | ".join(t for t in texts if t).lower()
     if not blob.strip():
         return ""
+    # dots stay IN tokens so 'u.s.' matches its keyword whole
+    toks = set(_re.split(r"[^a-z\u4e00-\u9fff.]+", blob))
+    for keys, label in _GEO_KEYWORDS:
+        for k in keys:
+            if len(k) > 4 and k in blob:
+                return label
+            if k in toks:
+                return label
+    if _text_is_cn_sited(blob):
+        return "China"
     for t in texts:
         for seg in (t or "").split(","):
             for tok in seg.split():
@@ -143,15 +155,6 @@ def _classify_geo(*texts: str) -> str:
                 if len(tok2) == 2 and tok2.isupper() and tok2.lower() \
                         in workday._US_STATE_TOKENS:
                     return "United States"
-    toks = set(_re.split(r"[^a-z\u4e00-\u9fff]+", blob))
-    for keys, label in _GEO_KEYWORDS:
-        for k in keys:
-            if len(k) > 4 and k in blob:
-                return label
-            if k in toks:
-                return label
-    if _text_is_cn_sited(blob):
-        return "China"
     if "remote" in blob:
         return "Remote"
     return ""
@@ -161,28 +164,45 @@ def _row_is_cn_local(rec: dict, csv_row: dict | None = None) -> bool:
     """D-S27-2 gate for geo_scope=non_cn boards: TRUE = row is
     mainland-China-sited AND not remote → excluded from the export.
     Evidence: the feed record's explicit country/countries fields +
-    locationsText, plus (for survivors) the CSV row's own
-    locations/primaryLocation/remoteFlag."""
+    locationsText (+ the S27 seam's remoteType/telecommuting), plus
+    (for survivors) the CSV row's own locations/primaryLocation/
+    remoteFlag. Review P1-2/P1-3: list-typed locations JOIN (never
+    str()); rec evidence WINS over a stale chain-era CSV country
+    column."""
     texts: list[str] = []
-    for src in (rec, csv_row or {}):
-        texts.append(str(src.get("locationsText") or ""))
-        texts.append(str(src.get("primaryLocation") or ""))
-        texts.append(str(src.get("locations") or ""))
+
+    def _collect(src: dict) -> None:
+        for key in ("locationsText", "primaryLocation"):
+            v = src.get(key)
+            if v:
+                texts.append(str(v))
+        locs = src.get("locations")
+        if isinstance(locs, list):
+            texts.append(" | ".join(str(x) for x in locs if x))
+        elif locs:
+            texts.append(str(locs))
+
+    _collect(rec)
+    _collect(csv_row or {})
+
+    # explicit country evidence, in precedence order (review P1-3):
+    # the feed's own country/countries (freshest) > the CSV column
+    # (chain-era; stale "United States" on now-broadened boards).
     explicit = ""
-    for src in (rec, csv_row or {}):
-        c = str(src.get("country") or "").strip()
+    for cand in [rec.get("country"),
+                 *(str(x) for x in (rec.get("countries") or [])),
+                 (csv_row or {}).get("country")]:
+        c = str(cand or "").strip()
         if c:
             explicit = c
             break
-        for cc in (src.get("countries") or []):
-            if str(cc).strip():
-                explicit = str(cc)
-                break
     is_remote = False
     for src in (rec, csv_row or {}):
         if str(src.get("remoteFlag") or "").lower() == "true" \
                 or str(src.get("remoteType") or "").lower() == "remote" \
-                or str(src.get("telecommuting") or "").lower() == "true":
+                or str(src.get("remoteType") or "").lower() \
+                in ("remote", "remote - global") \
+                or bool(src.get("telecommuting")):
             is_remote = True
             break
     blob = " | ".join(t for t in texts if t)
