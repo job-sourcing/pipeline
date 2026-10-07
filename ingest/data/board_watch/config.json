@@ -1623,18 +1623,6 @@
    ]
   },
   {
-   "label": "zingage_us_fulltime",
-   "board": "ats:ashby:zingage",
-   "company": "Zingage",
-   "country": "United States",
-   "li_variants": [
-    "Zingage"
-   ],
-   "slice_locations": [
-    "United States"
-   ]
-  },
-  {
    "label": "heygen_us_fulltime",
    "board": "ats:greenhouse:heygen",
    "company": "HeyGen",
