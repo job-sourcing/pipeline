@@ -91,6 +91,25 @@ _GEO_CANON = {
     "thailand": "Thailand", "vietnam": "Vietnam",
     "philippines": "Philippines", "indonesia": "Indonesia",
     "brazil": "Brazil", "mexico": "Mexico", "remote": "Remote",
+    # D-S28-1 backstop: adapter-stamped codes/aliases the exporter now
+    # canonicalizes upstream; kept here so historical CSV values (and
+    # any other producer) normalize at the bundle boundary too. Only
+    # NON-US-state-colliding codes (kz/pk/sg/hk/jp/kr/de/fr…) appear —
+    # ca/in/il/ar/co/ge/la are state codes and stay unmapped.
+    "kz": "Kazakhstan", "kazakhstan": "Kazakhstan",
+    "pk": "Pakistan", "pakistan": "Pakistan",
+    "israel": "Israel", "europe": "Europe",
+    "turkey": "Turkey", "turkiye": "Turkey",
+    "russia": "Russia", "south africa": "South Africa",
+    "new zealand": "New Zealand", "saudi arabia": "Saudi Arabia",
+    "qatar": "Qatar", "nigeria": "Nigeria", "kenya": "Kenya",
+    "egypt": "Egypt", "argentina": "Argentina",
+    "czech republic": "Czech Republic",
+    "sg": "Singapore", "hk": "Hong Kong SAR", "jp": "Japan",
+    "kr": "South Korea", "de": "Germany", "fr": "France",
+    "nl": "Netherlands", "es": "Spain", "ae": "United Arab Emirates",
+    "au": "Australia", "my": "Malaysia", "th": "Thailand",
+    "vn": "Vietnam", "br": "Brazil", "mx": "Mexico", "tr": "Turkey",
 }
 
 

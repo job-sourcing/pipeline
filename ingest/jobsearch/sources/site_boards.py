@@ -158,6 +158,16 @@ def parse_site(spec: str) -> tuple[str, str]:
 _ADAPTER_ACCEPTS_REMOTE = {"greenhouse": True, "ashby": True,
                            "lever": True, "workable": True}
 
+# D-S28-2: the adapter classes that accept geo_scope="non_cn" (the
+# exhaustive-collection scope). S27 shipped greenhouse/ashby/lever/
+# workable; S28 extends to the feishuhire/adp/paylocity site classes
+# + workday tenants (the site_boards dispatcher routes non-ats specs
+# to workday.list_board with the gate). A kind NOT in this set IGNORES
+# the flag (the S24 honesty convention — never guess a scope a class
+# can't evidence).
+_ADAPTER_GEO_SCOPE = {"greenhouse", "ashby", "lever", "workable",
+                      "feishuhire", "adp", "paylocity"}
+
 # ── D-S27-2: the non_cn collection scope ─────────────────────────────────
 # Row membership for geo_scope="non_cn" boards: keep iff the row's own
 # location evidence does NOT say mainland China, OR the row says remote
@@ -226,23 +236,32 @@ def list_board(spec: str, *, country: Optional[str] = None,
     data says the role is remote-friendly even when the country does
     not match ("any remote-ok role is basically US-based" — D-S25-2).
     Opt-in per watch config; adapters without a remote signal ignore
-    the flag (never guessed — the S24 honesty convention)."""
+    the flag (never guessed — the S24 honesty convention).
+
+    S28 D-S28-2: geo_scope="non_cn" routes to every class in
+    _ADAPTER_GEO_SCOPE (feishuhire/adp/paylocity join the S27 four)
+    and to the workday tenant path (no country facet — the full board
+    + a client-side non-CN gate)."""
     if is_site_spec(spec):
         kind, org = parse_site(spec)
         adapter = _ADAPTERS[kind](org, cfg or Config())
+        kw = {}
         if _ADAPTER_ACCEPTS_REMOTE.get(kind):
+            kw["include_remote"] = include_remote
+        if geo_scope and kind in _ADAPTER_GEO_SCOPE:
+            kw["geo_scope"] = geo_scope
+        if kw:
             return adapter.list_board(country=country,
                                       time_type=time_type,
-                                      progress_label=progress_label,
-                                      include_remote=include_remote,
-                                      geo_scope=geo_scope)
+                                      progress_label=progress_label, **kw)
         return adapter.list_board(country=country, time_type=time_type,
                                   progress_label=progress_label)
     return workday.list_board(spec, country=country, time_type=time_type,
                               cfg=cfg, sleep_s=sleep_s,
                               progress_every=progress_every,
                               progress_label=progress_label,
-                              client_filter=client_filter)
+                              client_filter=client_filter,
+                              geo_scope=geo_scope)
 
 
 def detail_payload(spec: str, external_path: str,
@@ -2394,11 +2413,13 @@ class FeishuHireAdapter:
 
     def list_board(self, *, country: Optional[str] = None,
                    time_type: Optional[str] = None,
-                   progress_label: str = "list"
+                   progress_label: str = "list",
+                   geo_scope: Optional[str] = None,
                    ) -> tuple[dict[str, dict], dict]:
         posts = self._fetch_rows()
         rows: dict[str, dict] = {}
         dropped_country = dropped_tt = unresolved = dupes = 0
+        kept_remote = 0
         unmapped: set[str] = set()
         for post in posts:
             rid = str(post.get("id") or "")
@@ -2417,6 +2438,54 @@ class FeishuHireAdapter:
                 # rule — bytedance/alibaba precedent: never guess, never
                 # false-gone)
                 unresolved += 1
+                continue
+            if geo_scope == "non_cn":
+                # D-S28-2: keep iff any city maps non-mainland-CN (the
+                # class's own ANY-city rule — 'Singapore | Beijing' has
+                # a non-CN site), OR the row says remote (remote-even-CN
+                # kept + flagged, D-S27-2). All-Cities-mapped-China →
+                # dropped; unmapped-only → unresolved (honest — the
+                # S24 never-guess convention, mirrors the US flow).
+                remote = any(
+                    "remote" in c.lower() or "远程" in c or "遠程" in c
+                    for c in cities) or "远程" in str(
+                        post.get("title") or "")
+                non_cn = [m for m in mapped
+                          if m and m != "China"]
+                if non_cn:
+                    pass
+                elif remote:
+                    kept_remote += 1
+                elif all(m == "China" for m in mapped):
+                    dropped_country += 1
+                    continue
+                else:
+                    unresolved += 1
+                    unmapped.update(c for c, m in zip(cities, mapped)
+                                    if m is None)
+                    continue
+                c = (non_cn[0] if non_cn else "China")
+                label, iso = _posted_label(_epoch_ms_to_iso(
+                    post.get("publish_time")))
+                jc = ((post.get("job_category") or {}).get("en_name")) or ""
+                jf = ((post.get("job_function") or {}).get("en_name")) or ""
+                rows[rid] = {
+                    "reqId": rid,
+                    "title": str(post.get("title") or ""),
+                    "company": self.company,
+                    "url": (f"https://{self.org}.jobs.feishu.cn"
+                            f"/index/position/{rid}/detail"),
+                    "externalPath": f"/index/position/{rid}",
+                    "locationsText": " | ".join(cities),
+                    "postedOn": label,
+                    "timeType": tt,
+                    "bulletFields": [rid],
+                    "ats": "feishuhire",
+                    "firstPublishedIso": iso,
+                    "departments": _dedup_keep_order([jc, jf]),
+                    "countries": [c] if c else [],
+                    "remoteType": "Remote" if (remote and not non_cn) else "",
+                }
                 continue
             # round-2 F2 (SEV-2): a row with a KNOWN US city + unmapped
             # sibling cities is PROVABLY US — keep it (the ANY-city rule
@@ -2477,14 +2546,16 @@ class FeishuHireAdapter:
             "duplicate_codes": dupes,
             "unresolved_dropped": unresolved,
             "unmapped_cities": sorted(unmapped),
+            "kept_remote": kept_remote,
+            "geo_scope": geo_scope or "",
             "ats": "feishuhire",
         }
         print(f"[{progress_label}] feishuhire:{self.org}: {len(rows)} "
               f"rows of {len(posts)} (count meta)"
-              + (f" ({dropped_country} non-{country} + {dropped_tt} "
+              + (f" ({dropped_country} out-of-scope + {dropped_tt} "
                  f"non-{time_type} + {unresolved} unresolved dropped"
-                 f" client-side)" if country or time_type or unresolved
-                 else "")
+                 f" client-side; {kept_remote} remote-CN kept)"
+                 if geo_scope or time_type or unresolved else "")
               + (f" UNMAPPED: {sorted(unmapped)}" if unmapped else ""),
               file=sys.stderr, flush=True)
         return rows, meta
@@ -2963,7 +3034,8 @@ class PaylocityAdapter:
 
     def list_board(self, *, country: Optional[str] = None,
                    time_type: Optional[str] = None,
-                   progress_label: str = "list"
+                   progress_label: str = "list",
+                   geo_scope: Optional[str] = None,
                    ) -> tuple[dict[str, dict], dict]:
         if time_type:
             raise RuntimeError(
@@ -2972,13 +3044,24 @@ class PaylocityAdapter:
                 "--time-type '' (the s18 dump-chain driver does)")
         jobs = self._jobs()
         rows: dict[str, dict] = {}
-        dropped_country = 0
+        dropped_country = kept_remote = 0
         for job in jobs:
             rid = str(job.get("JobId") or "")
             if not rid or rid in rows:
                 continue
             c = self._country_of(job)
-            if country and not workday.country_str_matches(c, country):
+            remote = bool(job.get("IsRemote"))
+            if geo_scope == "non_cn":
+                # D-S28-2: paylocity is the STRUCTURED class —
+                # JobLocation.Country + IsRemote are both real fields.
+                # Keep unless mainland-China-sited AND not remote.
+                if (workday.country_str_matches(c or "", "China")
+                        and not remote):
+                    dropped_country += 1
+                    continue
+                if remote and workday.country_str_matches(c or "", "China"):
+                    kept_remote += 1
+            elif country and not workday.country_str_matches(c, country):
                 dropped_country += 1
                 continue
             label, iso = _posted_label(str(job.get("PublishedDate") or ""))
@@ -3015,10 +3098,16 @@ class PaylocityAdapter:
             # flag means 'unfiltered global board', which this is NOT)
             "country_client": False,
             "client_filtered": dropped_country,
+            "client_filtered_country": dropped_country,
+            "kept_remote": kept_remote,
+            "geo_scope": geo_scope or "",
             "ats": "paylocity",
         }
         print(f"[{progress_label}] paylocity:{self.org}: {len(rows)} rows"
-              + (f" ({dropped_country} non-{country} dropped client-side)"
+              + (f" ({dropped_country} out-of-scope dropped client-side; "
+                 f"{kept_remote} remote-CN kept)"
+                 if geo_scope else
+                 f" ({dropped_country} non-{country} dropped client-side)"
                  if country else ""),
               file=sys.stderr, flush=True)
         return rows, meta
@@ -3236,10 +3325,11 @@ class ADPWorkforceNowAdapter:
 
     def list_board(self, *, country: Optional[str] = None,
                    time_type: Optional[str] = None,
-                   progress_label: str = "list"
+                   progress_label: str = "list",
+                   geo_scope: Optional[str] = None,
                    ) -> tuple[dict[str, dict], dict]:
         rows: dict[str, dict] = {}
-        dropped_country = dropped_tt = 0
+        dropped_country = dropped_tt = kept_remote = 0
         for job in self._pages():
             rid = str(job.get("itemID") or "")
             tt = self._time_type(job)
@@ -3247,13 +3337,26 @@ class ADPWorkforceNowAdapter:
                 dropped_tt += 1
                 continue
             c = self._country_of(job)
-            if country and not workday.country_str_matches(c, country):
-                dropped_country += 1
-                continue
             locs = [str((L.get("nameCode") or {}).get("shortName") or
                         "").strip()
                     for L in job.get("requisitionLocations") or []]
             locs = [x for x in locs if x]
+            if geo_scope == "non_cn":
+                # D-S28-2: ADP locations are 'Moraine, OH, US'-shaped —
+                # _country_of returns the mapped trailing code. Keep
+                # unless mainland-China-sited AND not remote (blank
+                # country stays — unclassified ≠ foreign, the P0-3
+                # convention).
+                remote = any("remote" in l.lower() for l in locs)
+                if (workday.country_str_matches(c or "", "China")
+                        and not remote):
+                    dropped_country += 1
+                    continue
+                if remote and workday.country_str_matches(c or "", "China"):
+                    kept_remote += 1
+            elif country and not workday.country_str_matches(c, country):
+                dropped_country += 1
+                continue
             label, iso = _posted_label(str(job.get("postDate") or ""))
             rows[rid] = {
                 "reqId": rid,
@@ -3271,7 +3374,9 @@ class ADPWorkforceNowAdapter:
                 "firstPublishedIso": iso,
                 "departments": [],
                 "countries": [c] if c else [],
-                "remoteType": "",
+                "remoteType": "Remote" if (
+                    geo_scope == "non_cn" and remote
+                    and workday.country_str_matches(c or "", "China")) else "",
             }
         meta = {
             "complete": True,
@@ -3279,6 +3384,9 @@ class ADPWorkforceNowAdapter:
             "pages": getattr(self, "_pages_walked", 0) or None,
             "country_client": False,
             "client_filtered": dropped_country + dropped_tt,
+            "client_filtered_country": dropped_country,
+            "kept_remote": kept_remote,
+            "geo_scope": geo_scope or "",
             "ats": "adp",
             "duplicate_itemids": getattr(self, "_dup_count", 0),
         }
@@ -3286,9 +3394,10 @@ class ADPWorkforceNowAdapter:
               + (f" of {meta['total']} listed"
                  + (f" (+{meta['duplicate_itemids']} page-boundary dup)"
                     if meta["duplicate_itemids"] else ""))
-              + (f" ({dropped_country} non-{country} + {dropped_tt} "
-                 f"non-{time_type} dropped client-side)"
-                 if country or time_type else ""),
+              + (f" ({dropped_country} out-of-scope + {dropped_tt} "
+                 f"non-{time_type} dropped client-side; "
+                 f"{kept_remote} remote-CN kept)"
+                 if geo_scope or time_type else ""),
               file=sys.stderr, flush=True)
         return rows, meta
 

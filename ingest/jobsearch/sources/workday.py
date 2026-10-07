@@ -917,6 +917,7 @@ def list_board(spec: str, *, country: Optional[str] = None,
                progress_every: int = 0,
                progress_label: str = "list",
                client_filter: bool = True,
+               geo_scope: Optional[str] = None,
                ) -> tuple[dict[str, dict], dict]:
     """Convenience: parse spec → page-0 → resolve facets → refetch →
     iter. ValueError on unknown facet; (partial, complete=False) on
@@ -935,16 +936,45 @@ def list_board(spec: str, *, country: Optional[str] = None,
     detail's jobPostingInfo.country is authoritative)."""
     cfg = cfg or Config()
     board = parse_board(spec)
+    # D-S28-2: the non_cn exhaustive scope on workday tenants — do NOT
+    # apply the country facet (list the FULL board, the CN-company
+    # tenants run 60–650 postings, all under the 2,000 cap) and gate
+    # rows client-side: keep iff not-mainland-China-sited (the shared
+    # _text_is_cn_sited token set, lazy-imported — site_boards imports
+    # THIS module, so the import must happen at call time) OR remote
+    # (locationsText says Remote — 'Remote - US', 'CHN-Remote'…).
+    # Unclassified location text stays (fail-open, the P0-3 convention).
+    non_cn_gate = None
+    if geo_scope == "non_cn":
+        from jobsearch.sources.site_boards import _text_is_cn_sited
+
+        def non_cn_gate(row: dict) -> bool:
+            text = str(row.get("locationsText") or "")
+            if "remote" in text.lower():
+                return True
+            return not _text_is_cn_sited(text)
+        country = None
     first = _page(board, {}, 0, cfg)
     facets, country_client = resolve_facets(board, first, country,
                                             time_type)
     row_filter = client_country_filter(country, first) \
-        if (country_client and client_filter) else None
+        if (country_client and client_filter and country) else None
+    if non_cn_gate is not None:
+        # the non_cn gate replaces any row filter; country_client stays
+        # whatever resolve_facets found (False for the CN-company
+        # tenants — they expose the country facet — so the watch's
+        # membership = set(current): every gated row enters state;
+        # the country_client detail-classification path (which de-queues
+        # feed-foreign rows) must NOT engage for non_cn boards).
+        row_filter = non_cn_gate
     if country_client:
-        print(f"[{progress_label}] NOTE: board {spec!r} exposes no "
-              f"country facet — country {country!r} is "
-              f"{'token-filtered' if row_filter else 'detail-classified'}"
-              f" client-side (S12/S13)", file=sys.stderr, flush=True)
+        note = (f"non_cn scope — full board + client-side gate"
+                if geo_scope == "non_cn" else
+                f"country {country!r} is "
+                f"{'token-filtered' if row_filter else 'detail-classified'}"
+                f" client-side (S12/S13)")
+        print(f"[{progress_label}] NOTE: board {spec!r}: {note}",
+              file=sys.stderr, flush=True)
     board_facets = facet_census(first)
     iter_first = first
     if facets:
@@ -956,6 +986,7 @@ def list_board(spec: str, *, country: Optional[str] = None,
     if facets:
         meta["facets_filtered"] = facet_census(iter_first)
     meta["country_client"] = bool(country_client)
+    meta["geo_scope"] = geo_scope or ""
     return rows, meta
 
 

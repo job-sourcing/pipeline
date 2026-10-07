@@ -197,26 +197,46 @@ class TestWorkableGeoScope:
 
 class TestShippedConfig:
     def test_geo_scope_only_on_accepting_kinds(self):
+        # S28: the acceptance set grew — feishuhire/adp/paylocity + the
+        # 7 CN-company workday tenants (D-S28-2); the US-COMPANY anchors
+        # (anthropic/openai — reference boards, foreign rows = noise)
+        # were unflagged; riotgames STAYS flagged (Tencent-owned);
+        # nvidia/netflix are workday (unflagged — kind not accepting).
         cfg = json.loads(CFG_PATH.read_text(encoding="utf-8"))
+        _S28_CN_WORKDAY = {
+            "gea_us_fulltime", "jd_us_fulltime", "tencent_us_fulltime",
+            "popmart_us_fulltime", "beone_us_fulltime",
+            "chagee_us_fulltime", "canadiansolar_us_fulltime"}
+        _US_ANCHORS = {"nvidia_us_fulltime", "openai_us_fulltime",
+                       "netflix_us_fulltime", "anthropic_us_fulltime"}
         flagged = 0
         for w in cfg["watches"]:
             kind = (w["board"].split(":")[1]
                     if w["board"].startswith("ats:") else "")
             if w.get("geo_scope"):
                 assert w["geo_scope"] == "non_cn"
-                assert kind in _NON_CN_KINDS, w["label"]
+                assert (kind in _NON_CN_KINDS
+                        or kind in {"feishuhire", "adp", "paylocity"}
+                        or w["label"] in _S28_CN_WORKDAY), w["label"]
+                assert w["label"] not in _US_ANCHORS
                 flagged += 1
-            else:
-                assert kind not in _NON_CN_KINDS or True
-        assert flagged >= 30   # the shipped 39-board rollout
+        assert flagged >= 60   # S27: 39-board → S28: 69-board rollout
 
     def test_all_four_kind_boards_flagged(self):
+        # S28: every board of an accepting SITE kind is flagged, EXCEPT
+        # the two US-company reference anchors (anthropic/openai —
+        # foreign rows are mission noise; riotgames stays: Tencent-
+        # owned). nvidia/netflix are workday (kind not accepting).
         cfg = json.loads(CFG_PATH.read_text(encoding="utf-8"))
+        _S28_KINDS = _NON_CN_KINDS | {"feishuhire", "adp", "paylocity"}
+        _S28_EXCEPT = {"anthropic_us_fulltime", "openai_us_fulltime"}
         for w in cfg["watches"]:
             kind = (w["board"].split(":")[1]
                     if w["board"].startswith("ats:") else "")
-            if kind in _NON_CN_KINDS:
+            if kind in _S28_KINDS and w["label"] not in _S28_EXCEPT:
                 assert w.get("geo_scope") == "non_cn", w["label"]
+            elif w["label"] in _S28_EXCEPT:
+                assert not w.get("geo_scope"), w["label"]
 
 
 class TestClassifyGeo:

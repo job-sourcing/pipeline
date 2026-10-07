@@ -119,7 +119,127 @@ _GEO_KEYWORDS: list[tuple[tuple[str, ...], str]] = [
     (("indonesia", "jakarta", "印尼"), "Indonesia"),
     (("brazil", "são paulo", "sao paulo", "巴西"), "Brazil"),
     (("mexico", "墨西哥"), "Mexico"),
+    # D-S28-1 audit gaps: the live bundle carried blank-country rows
+    # whose locations name countries the keyword map didn't know.
+    (("kazakhstan", "astana", "almaty", "哈萨克斯坦"), "Kazakhstan"),
+    (("pakistan", "islamabad", "karachi", "lahore", "巴基斯坦"),
+     "Pakistan"),
+    (("israel", "tel aviv", "耶路撒冷"), "Israel"),
+    (("europe", "欧洲"), "Europe"),
+    (("russia", "moscow", "俄罗斯"), "Russia"),
+    (("turkey", "istanbul", "ankara", "türkiye", "土耳其"), "Turkey"),
+    (("south africa", "johannesburg", "cape town", "南非"),
+     "South Africa"),
+    (("new zealand", "auckland", "新西兰"), "New Zealand"),
+    (("saudi", "riyadh", "沙特"), "Saudi Arabia"),
+    (("qatar", "doha", "卡塔尔"), "Qatar"),
+    (("nigeria", "lagos", "尼日利亚"), "Nigeria"),
+    (("kenya", "nairobi", "肯尼亚"), "Kenya"),
+    (("egypt", "cairo", "埃及"), "Egypt"),
+    (("argentina", "buenos aires", "阿根廷"), "Argentina"),
+    (("czech", "prague"), "Czech Republic"),
 ]
+
+# D-S28-1: feed-country canonicalization. The record's explicit country
+# field WINS over locations (the P0-3 evidence contract) but producers
+# stamp it inconsistently — lever ships ISO-ish codes ('Kz', 'Pk'),
+# workday descriptors say 'United States of America', feeds say
+# 'united states'/'usa'. Canonicalize BEFORE trusting. Codes that
+# collide with US state abbreviations (ca, in, il, ar, co, ge, la,
+# mt, md, ok, hi, me, al, ne, nv?, …) are deliberately NOT mapped:
+# the location classifier (city keywords + state-token rung) resolves
+# those from context instead.
+_COUNTRY_ALIAS: dict[str, str] = {
+    "usa": "United States", "us": "United States",
+    "u.s.": "United States", "u.s": "United States",
+    "united states": "United States",
+    "united states of america": "United States",
+    "uk": "United Kingdom", "u.k.": "United Kingdom",
+    "united kingdom": "United Kingdom", "great britain": "United Kingdom",
+    "england": "United Kingdom", "scotland": "United Kingdom",
+    "hong kong": "Hong Kong SAR", "hong kong sar": "Hong Kong SAR",
+    "hongkong": "Hong Kong SAR", "hkg": "Hong Kong SAR",
+    "macau": "Macau SAR", "macao": "Macau SAR",
+    "taiwan": "Taiwan", "taiwan, china": "Taiwan",
+    "singapore": "Singapore", "sg": "Singapore",
+    "china": "China", "prc": "China", "cn": "China",
+    "mainland china": "China",
+    "japan": "Japan", "jp": "Japan",
+    "south korea": "South Korea", "korea": "South Korea",
+    "korea, republic of": "South Korea",
+    "republic of korea": "South Korea", "kr": "South Korea",
+    "korea (south)": "South Korea",
+    "india": "India",
+    "germany": "Germany", "de": "Germany",
+    "france": "France", "fr": "France",
+    "netherlands": "Netherlands", "nl": "Netherlands",
+    "spain": "Spain", "es": "Spain",
+    "italy": "Italy",
+    "ireland": "Ireland",
+    "poland": "Poland", "pl": "Poland",
+    "sweden": "Sweden",
+    "switzerland": "Switzerland",
+    "austria": "Austria",
+    "denmark": "Denmark",
+    "norway": "Norway",
+    "finland": "Finland",
+    "portugal": "Portugal",
+    "greece": "Greece",
+    "turkey": "Turkey", "türkiye": "Turkey", "tr": "Turkey",
+    "kazakhstan": "Kazakhstan", "kz": "Kazakhstan",
+    "pakistan": "Pakistan", "pk": "Pakistan",
+    "israel": "Israel",
+    "united arab emirates": "United Arab Emirates", "uae": "United Arab Emirates",
+    "u.a.e.": "United Arab Emirates",
+    "australia": "Australia", "au": "Australia",
+    "new zealand": "New Zealand",
+    "malaysia": "Malaysia", "my": "Malaysia",
+    "thailand": "Thailand", "th": "Thailand",
+    "vietnam": "Vietnam", "viet nam": "Vietnam",
+    "philippines": "Philippines",
+    "indonesia": "Indonesia",
+    "brazil": "Brazil", "br": "Brazil",
+    "mexico": "Mexico", "mx": "Mexico",
+    "canada": "Canada",
+    "remote": "Remote", "global": "Remote", "worldwide": "Remote",
+}
+
+
+def _row_country(rec: dict, locs_text: str, locs: list,
+                 us_scope: bool) -> str:
+    """D-S28-1: the country column, evidence-ordered + canonical.
+
+    1. rec's explicit country field, canonicalized through the alias
+       map (lever's 'Kz' → Kazakhstan; workday's 'United States of
+       America' → United States). A multi-word value we don't know
+       ships as-is (honest); short unknown junk falls through to 2.
+    2. the location classifier (keywords + state tokens).
+    us_scope boards only ever GAIN 'United States'/'Remote'/'blank'
+    from classification — a US-scope board must not sprout foreign
+    labels from location quirks (foreign rows flow via non_cn boards
+    only, D-S27-2).
+    """
+    c = (rec.get("country") or "").strip()
+    cls = ""
+    if c:
+        canon = _COUNTRY_ALIAS.get(c.lower())
+        if canon:
+            return canon
+        if len(c) > 3 and " " in c:
+            return c                      # unknown full name: honest pass
+        if c.lower() in ("remote", "global", "worldwide"):
+            return "Remote"
+        cls = _classify_geo(locs_text, *locs) or ""
+        if cls and not us_scope:
+            return cls
+        if cls in ("United States", "Remote") and us_scope:
+            return cls
+        return c if (len(c) > 3 and not c.isupper()) else ""
+    cls = _classify_geo(locs_text, *locs)
+    if us_scope and cls not in ("United States", "Remote"):
+        return ""
+    return cls
+
 
 
 def _classify_geo(*texts: str) -> str:
@@ -372,7 +492,9 @@ def _newpost_row(rec: dict, w: dict, snapshot: date,
             "remote" in (l or "").lower() for l in locs + [locs_text]
         ) else "false",
         "stateCodes": _state_codes(locs),
-        "country": rec.get("country") or "",
+        "country": _row_country(
+            rec, locs_text, locs,
+            us_scope=str(w.get("geo_scope") or "") != "non_cn"),
         "questionnaireId": "",
         "similarJobsCount": 0,
         "description": desc,
@@ -388,11 +510,13 @@ def _newpost_row(rec: dict, w: dict, snapshot: date,
         "jobFamilyGroup": "",
     }
     row.update(_sig_cols({**sig, "_startDate": start} if sig else None))
-    # D-S27-2: non_cn boards carry the classified geo label (the bundle's
-    # country facet); US-scope boards keep the record's explicit country.
-    if str(w.get("geo_scope") or "") == "non_cn":
-        row["country"] = (rec.get("country")
-                          or _classify_geo(locs_text, *locs))
+    # D-S28-1: the country column is canonical + evidence-ordered in
+    # ONE place now (_row_country) — rec's explicit field through the
+    # alias map (lever 'Kz', workday 'United States of America'), else
+    # the location classifier. The old D-S27-2 branch (non_cn boards
+    # classify, US-scope keep rec verbatim) is subsumed: non_cn rows
+    # classify on missing evidence; US-scope rows only ever gain
+    # United States/Remote from classification.
     _date_derived(row, snapshot, reposts)
     return {k: v for k, v in row.items() if k in FIELDS}
 
