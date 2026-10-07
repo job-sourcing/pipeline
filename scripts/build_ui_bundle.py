@@ -73,6 +73,43 @@ def clean_excerpt(desc: str, limit: int = 240) -> str:
     return txt[:limit] + ("…" if len(txt) > limit else "")
 
 
+_GEO_CANON = {
+    "united states": "United States",
+    "united states of america": "United States",
+    "usa": "United States", "us": "United States", "u.s.": "United States",
+    "singapore": "Singapore", "china": "China", "hong kong": "Hong Kong SAR",
+    "hong kong sar": "Hong Kong SAR", "macau": "Macau SAR",
+    "taiwan": "Taiwan", "japan": "Japan", "south korea": "South Korea",
+    "korea": "South Korea", "india": "India",
+    "united kingdom": "United Kingdom", "uk": "United Kingdom",
+    "england": "United Kingdom", "germany": "Germany", "france": "France",
+    "netherlands": "Netherlands", "spain": "Spain", "italy": "Italy",
+    "canada": "Canada", "australia": "Australia", "ireland": "Ireland",
+    "poland": "Poland", "sweden": "Sweden", "switzerland": "Switzerland",
+    "united arab emirates": "United Arab Emirates",
+    "dubai": "United Arab Emirates", "malaysia": "Malaysia",
+    "thailand": "Thailand", "vietnam": "Vietnam",
+    "philippines": "Philippines", "indonesia": "Indonesia",
+    "brazil": "Brazil", "mexico": "Mexico", "remote": "Remote",
+}
+
+
+def norm_country(c: str) -> str:
+    """Canonical geo label (S27: the facet was fragmenting — CSV
+    country columns carry 'United States of America' (workday detail
+    descriptors), 'united states' (feed fields), 'US' (codes)…)."""
+    if not c:
+        return ""
+    k = c.strip().lower()
+    if k in _GEO_CANON:
+        return _GEO_CANON[k]
+    if "united states" in k:
+        return "United States"
+    if "remote" in k:
+        return "Remote"
+    return c.strip().title() if c.strip().islower() else c.strip()
+
+
 def num(v: str):
     if v is None or v == "":
         return None
@@ -133,7 +170,7 @@ def main() -> int:
                 "city": city_of(r.get("primaryLocation") or ""),
                 "nLocations": num(r.get("nLocations")),
                 "remoteFlag": (r.get("remoteFlag") or "").lower() == "true",
-                "country": r.get("country") or "",
+                "country": norm_country(r.get("country") or ""),
                 "states": states,
                 "status": status,
                 "matchMethod": r.get("matchMethod") or "",
