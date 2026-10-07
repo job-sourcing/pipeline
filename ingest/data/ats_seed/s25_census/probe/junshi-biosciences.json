@@ -150,5 +150,10 @@
   "platform": "custom",
   "title": "Careers - 君实生物"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

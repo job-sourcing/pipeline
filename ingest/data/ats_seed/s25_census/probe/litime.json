@@ -159,5 +159,10 @@
   "snippet": "ABOUT US With over 160 athletic country clubs and offerings for everyone from 90 days to 90 years, Life Time's comprehensive ecosystem goes beyond the idea of \"",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "wire:workday:lifetime",
+  "ts": "2026-10-07"
+ }
 }

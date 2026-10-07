@@ -157,5 +157,10 @@
   "snippet": "Our Product organisation is entering an exciting new chapter at Rapid7. As Product and Engineering come together under new executive leadership, we're investing",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "wire:workday:careers",
+  "ts": "2026-10-07"
+ }
 }

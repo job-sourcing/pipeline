@@ -157,5 +157,10 @@
   "snippet": "Cubic is dedicated to providing a comprehensive employee benefits program. All regular, full-time and part-time employees (working an average of 20 hours per we",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "wire:workday:cubic_USA_careers",
+  "ts": "2026-10-07"
+ }
 }

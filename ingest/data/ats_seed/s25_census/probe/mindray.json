@@ -163,5 +163,10 @@
   "snippet": "Mindray North America - Current Openings",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "wire:workable:mindray-north-america",
+  "ts": "2026-10-07"
+ }
 }

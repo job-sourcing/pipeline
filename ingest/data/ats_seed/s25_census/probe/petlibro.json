@@ -151,5 +151,10 @@
   "platform": "custom",
   "title": "Shorepod: AI Job Board &amp; AI Job Search Agent for Job Seekers"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

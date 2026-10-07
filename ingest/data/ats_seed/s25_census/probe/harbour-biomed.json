@@ -150,5 +150,10 @@
   "platform": "custom",
   "title": "Harbour BioMed | Careers - Join Us to Shape the Future of Next-Generation Biotherapeutics"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

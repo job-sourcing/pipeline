@@ -164,5 +164,10 @@
   "snippet": "入职后，答案只有一句——这里像JIA一样",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

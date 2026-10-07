@@ -165,5 +165,10 @@
   "snippet": "Cobot Jobs Commercial and Strategic Growth • Santa Clara • Full time • On-site",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "wire:ashby:cobot",
+  "ts": "2026-10-07"
+ }
 }

@@ -163,5 +163,10 @@
   "backend": "direct",
   "sr_err": 404
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "gray_review",
+  "surface": "surface_unsupported:smartrecruiters",
+  "ts": "2026-10-07"
+ }
 }

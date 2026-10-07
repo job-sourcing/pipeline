@@ -150,5 +150,10 @@
   "platform": "custom",
   "title": "Careers &#8211; HashKey Digital Asset Group Limited"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "china_ops",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

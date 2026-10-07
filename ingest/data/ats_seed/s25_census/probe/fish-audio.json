@@ -145,5 +145,10 @@
  ],
  "dict_hits": [],
  "search_backend": "kit",
- "verdict": "no_clear_surface"
+ "verdict": "no_clear_surface",
+ "adjudication": {
+  "s27_verdict": "gray_review",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

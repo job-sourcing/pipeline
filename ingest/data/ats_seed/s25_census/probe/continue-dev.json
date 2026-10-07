@@ -150,5 +150,10 @@
   "platform": "custom",
   "title": "Continue.dev Hiring Process Guide 2026 | ClavePrep"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "us_only_out",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

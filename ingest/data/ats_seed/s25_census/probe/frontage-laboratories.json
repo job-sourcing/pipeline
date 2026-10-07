@@ -165,5 +165,10 @@
   "snippet": "Why work for Frontage Laboratories? We know that with your unique skills and experience, you probably have several options for your career path. So, why choose ",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_ops",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

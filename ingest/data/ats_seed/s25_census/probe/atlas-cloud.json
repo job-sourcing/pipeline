@@ -26,5 +26,10 @@
   "ok": null,
   "note": "no self-name — job-content adjudication required"
  },
- "verdict": "dict_unverified"
+ "verdict": "dict_unverified",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "no_surface",
+  "ts": "2026-10-07"
+ }
 }

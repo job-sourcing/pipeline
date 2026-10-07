@@ -25,5 +25,10 @@
   "ok": false,
   "n": 0
  },
- "verdict": "dict_collision"
+ "verdict": "dict_collision",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "no_surface",
+  "ts": "2026-10-07"
+ }
 }

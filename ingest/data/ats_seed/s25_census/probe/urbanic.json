@@ -151,5 +151,10 @@
   "platform": "custom",
   "title": "Urbanic Remote Jobs &amp; Careers | RemoteJobs.org"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

@@ -26,5 +26,10 @@
   "ok": false,
   "n": 0
  },
- "verdict": "dict_collision"
+ "verdict": "dict_collision",
+ "adjudication": {
+  "s27_verdict": "us_only_out",
+  "surface": "no_surface",
+  "ts": "2026-10-07"
+ }
 }

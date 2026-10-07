@@ -25,5 +25,10 @@
   "ok": true,
   "n": 1
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported:feishu",
+  "ts": "2026-10-07"
+ }
 }

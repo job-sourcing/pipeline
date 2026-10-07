@@ -156,5 +156,10 @@
   "platform": "teamtailor",
   "title": "Jobs list - Sharkmob"
  },
- "verdict": "marker_surface"
+ "verdict": "marker_surface",
+ "adjudication": {
+  "s27_verdict": "china_ops",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

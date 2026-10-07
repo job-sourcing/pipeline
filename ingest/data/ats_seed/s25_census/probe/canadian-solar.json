@@ -161,5 +161,10 @@
   "snippet": "Canadian Solar is a leading manufacturer of solar panels, inverters, and energy storage solutions since 2001. Our friendly and dedicated team of sales and opera",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "wire:workday:canadiansolar",
+  "ts": "2026-10-07"
+ }
 }

@@ -157,5 +157,10 @@
   "snippet": "Rokid创立于2014年，是一家专注于人机交互技术的产品平台公司，2018年即被评为国家高新技术企业。Rokid作为行业的探索者、领跑者，目前致力于AR眼镜等软硬件产品的研发及以YodaOS操作系统为载体的生态构建。公司通过语音识别、自然语言处理、计算机视觉、光学显示、芯片平台、硬件设计等多领域 ...",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

@@ -150,5 +150,10 @@
   "platform": "custom",
   "title": "USAJOBS - The Federal Government&#x27;s official employment site"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

@@ -12,5 +12,10 @@
   "title": "Job Listings - Renogy Jobs",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "no_surface",
+  "ts": "2026-10-07"
+ }
 }

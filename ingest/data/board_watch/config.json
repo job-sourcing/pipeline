@@ -1719,6 +1719,96 @@
     "United States"
    ],
    "geo_scope": "non_cn"
+  },
+  {
+   "label": "frontage_us_fulltime",
+   "board": "ats:adp:0fad767f-f389-40ea-b2d1-d8df05098476",
+   "company": "Frontage Laboratories",
+   "country": "United States",
+   "li_variants": [
+    "Frontage Laboratories",
+    "Frontage Labs",
+    "Frontage"
+   ],
+   "slice_locations": [
+    "United States",
+    "Exton, Pennsylvania, United States",
+    "Hayward, California, United States"
+   ]
+  },
+  {
+   "label": "weichai_us_fulltime",
+   "board": "ats:adp:173c7f84-bab8-41af-85ea-7c3b3b163cd1",
+   "company": "Weichai America",
+   "country": "United States",
+   "li_variants": [
+    "Weichai America",
+    "Weichai America Corp",
+    "Weichai Power"
+   ],
+   "slice_locations": [
+    "United States",
+    "Rolling Meadows, Illinois, United States"
+   ]
+  },
+  {
+   "label": "luyepharma_us_fulltime",
+   "board": "ats:greenhouse:luyepharmausaltd",
+   "company": "Luye Pharma",
+   "country": "United States",
+   "li_variants": [
+    "Luye Pharma",
+    "Luye Pharma USA",
+    "Luye Pharmaceutical"
+   ],
+   "slice_locations": [
+    "United States",
+    "Princeton, New Jersey, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "laifen_us_fulltime",
+   "board": "ats:feishuhire:f1l5e2ythy",
+   "company": "Laifen",
+   "country": "United States",
+   "li_variants": [
+    "Laifen",
+    "Laifen Technology",
+    "Laifen US"
+   ],
+   "slice_locations": [
+    "United States"
+   ]
+  },
+  {
+   "label": "rokid_us_fulltime",
+   "board": "ats:feishuhire:rokid-jungle",
+   "company": "Rokid",
+   "country": "United States",
+   "li_variants": [
+    "Rokid",
+    "Rokid Inc",
+    "Rokid US"
+   ],
+   "slice_locations": [
+    "United States",
+    "Palo Alto, California, United States"
+   ]
+  },
+  {
+   "label": "petkit_us_fulltime",
+   "board": "ats:feishuhire:jijiapets",
+   "company": "Petkit",
+   "country": "United States",
+   "li_variants": [
+    "Petkit",
+    "PETKIT",
+    "Petkit US"
+   ],
+   "slice_locations": [
+    "United States"
+   ]
   }
  ]
 }

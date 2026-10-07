@@ -128,5 +128,10 @@
   "platform": "custom",
   "title": "48 BentoML Jobs - Remote & On-site | Alion"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "us_only_out",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

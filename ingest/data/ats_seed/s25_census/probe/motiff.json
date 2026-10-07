@@ -150,5 +150,10 @@
   "platform": "custom",
   "title": "Join Our Team: Careers at Motiff | Elevate Your Career in Design &amp; Development"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

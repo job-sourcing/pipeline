@@ -163,5 +163,10 @@
   "snippet": "Aptura Jobs Strategy Consulting • London; Global • Full time • Hybrid Aptura Jobs",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "wire:ashby:aptura",
+  "ts": "2026-10-07"
+ }
 }

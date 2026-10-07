@@ -159,5 +159,10 @@
   "snippet": "徕芬科技提供的整体薪酬福利在其开展业务的各个市场、与同行相比都具有竞争力。针对业务发展、员工家庭和个人成长情况，徕芬科技制定了完善的薪酬福利制度。在充分保障员工利益的同时，助你尽情发挥无限才能。",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "surface_unsupported",
+  "ts": "2026-10-07"
+ }
 }

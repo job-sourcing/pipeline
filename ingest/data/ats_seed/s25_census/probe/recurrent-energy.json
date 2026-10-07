@@ -12,5 +12,10 @@
   "title": "Careers - Recurrent Energy",
   "via": "guess"
  },
- "verdict": "custom_surface"
+ "verdict": "custom_surface",
+ "adjudication": {
+  "s27_verdict": "china_ops",
+  "surface": "wire:workday:recurrentenergy",
+  "ts": "2026-10-07"
+ }
 }

@@ -161,5 +161,10 @@
   "snippet": "Current openings at Luye Pharma USA Ltd Search Department",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "wire:greenhouse:luyepharmausaltd",
+  "ts": "2026-10-07"
+ }
 }

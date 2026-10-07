@@ -167,5 +167,10 @@
   "snippet": "By joining The Pokémon Company International, you will become part of a diverse team of talented, enthusiastic people who enjoy the benefits of working for the ",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_hq",
+  "surface": "wire:greenhouse:pokemoncareers",
+  "ts": "2026-10-07"
+ }
 }

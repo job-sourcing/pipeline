@@ -163,5 +163,10 @@
   "snippet": "Polestar - the guiding star. We are an electric performance brand, determined to improve the society we live in. Our focus is on uncompromised design and techno",
   "backend": "direct"
  },
- "verdict": "ats_surface"
+ "verdict": "ats_surface",
+ "adjudication": {
+  "s27_verdict": "china_ops",
+  "surface": "wire:workday:Careers",
+  "ts": "2026-10-07"
+ }
 }
