@@ -14,3 +14,6 @@ board-watch ascentage_us_fulltime UNREACHABLE: list fetch network-failed (undecl
 board-watch ascentage_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; SSLError: HTTPSConnectionPool(host='www.ascentage.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/jobpost_location?per_page=100 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))) — UNREACHABLE, state untouched; streak 3/14
 (2026-10-07T05:05:44)
 
+board-watch ascentage_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; SSLError: HTTPSConnectionPool(host='www.ascentage.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/jobpost_location?per_page=100 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))) — UNREACHABLE, state untouched; streak 4/14
+(2026-10-07T14:12:56)
+
