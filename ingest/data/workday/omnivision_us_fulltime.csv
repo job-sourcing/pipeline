@@ -1,5 +1,5 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-owqyzfwN,Analog CAD Engineer,OmniVision,,,,2026-02-04,244,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Position Overview:
+owqyzfwN,Analog CAD Engineer,OmniVision,,,,2026-02-04,245,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Position Overview:
 
 Support and enhance the Analog CAD design flow across the full custom IC design cycle, including schematic, layout, simulation, and physical verification using Cadence Virtuoso and Calibre tools.
 
@@ -33,8 +33,8 @@ Requirements:
 
 Annual base salary for this role in California, US is expected to be between $110,000 - $145,000. Actual pay will be determined by several factors such as relevant skills and experience, and the pay of employees in a similar role.
 
-EOE/Minorities/Females/Vet/Disability",1437,https://jobs.jobvite.com/ovt/job/owqyzfwN,,,,,,,no_match,,2026-09-30,,2026-10-06,,244,startDate,true,0,,,,,,2026-02-04,,false,,,,,,
-oLz6yfwI,Analog Design Engineer,OmniVision,,,,2025-12-18,292,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Design analog and mixed-signal circuits for CMOS image sensors, including:
+EOE/Minorities/Females/Vet/Disability",1437,https://jobs.jobvite.com/ovt/job/owqyzfwN,,,,,,,no_match,,2026-09-30,,2026-10-07,,245,startDate,true,0,,,,,,2026-02-04,,false,,,,,,
+oLz6yfwI,Analog Design Engineer,OmniVision,,,,2025-12-18,293,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Design analog and mixed-signal circuits for CMOS image sensors, including:
 
 • Pixel arrays and architectures.
 
@@ -90,8 +90,8 @@ Must have skills in:
 
 • Schematic design, simulation, layout, post-layout verification of analog, mixed signal integrated circuits.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",1937,https://jobs.jobvite.com/ovt/job/oLz6yfwI,,https://www.linkedin.com/jobs/view/4344934601,2026-09-25,200,Over 200 applicants,281,matched,title,2026-09-30,2026-09-30T05:59:01,2026-10-06,,292,startDate,true,0,,,,,,2025-12-18,,true,13,124197,127234,134597,title,Analog Design Engineer
-oT1yzfwL,Analog Design Engineer,OmniVision,,,,2026-02-03,245,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Conduct end-to-end design and development of advanced CMOS Image Sensor (CIS) technologies with a focus on transistor-level design, simulation, and verification of analog circuits using Cadence Virtuoso.
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",1937,https://jobs.jobvite.com/ovt/job/oLz6yfwI,,https://www.linkedin.com/jobs/view/4344934601,2026-09-25,200,Over 200 applicants,281,matched,title,2026-09-30,2026-09-30T05:59:01,2026-10-07,,293,startDate,true,0,,,,,,2025-12-18,,true,13,124197,127234,134597,title,Analog Design Engineer
+oT1yzfwL,Analog Design Engineer,OmniVision,,,,2026-02-03,246,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Conduct end-to-end design and development of advanced CMOS Image Sensor (CIS) technologies with a focus on transistor-level design, simulation, and verification of analog circuits using Cadence Virtuoso.
 •    Design analog building blocks such as Analog Static RAM (ASRAM), ensuring support for complex readout formats including Dual Conversion Gain (DCG), Correlated Double Sampling (CDS), Correlated Multiple Sampling (CMS), and 4c2p.
 •    Perform complete schematic design flow, closely collaborate with layout engineers on device matching, symmetry, shielding, and routing for optimal noise performance and area efficiency.
 •    Carry out comprehensive post-layout verification, including Parasitic Extraction (PEX), Design Rule Check (DRC), Layout vs. Schematic (LVS), and Physical Electrical Rule Check (PERC) using Calibre.
@@ -124,8 +124,8 @@ Must possess the following skills:
 •    Architecture design space exploration,
 •    Spectrum Analyzer.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3353,https://jobs.jobvite.com/ovt/job/oT1yzfwL,,https://www.linkedin.com/jobs/view/4425531635,2026-09-24,62,62 applicants,233,matched,title,2026-09-30,2026-09-30T05:59:02,2026-10-06,,245,startDate,true,0,,,,,,2026-02-03,,false,13,124197,127234,134597,title,Analog Design Engineer
-om1yzfwe,Analog Design Engineer,OmniVision,,,,2026-02-03,245,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Conduct design and development of image sensor technologies, work on transistor level design of analog and mixed-signal circuits for CMOS Image Sensor such as asic_pixel array, column-amplifier, comparator, ramp generator, ASRAM and XDEC by using Cadence Virtuoso; Work on whole chip floorplan design and pad frame; Work on analog and mixed signal circuits layout design by Cadence Virtuoso, such as column_array; Collaborate with layout engineer on whole chip layout integration and improvement by Cadence Virtuoso; Perform sub-blocks and whole image sensor readout circuit simulation by simulators such as Analog FastSPICE (AFS), Empyrean ALPS and NanoSpice; Perform design verification such as DRC, LVS, PERC check by using Siemens Calibre; Perform whole chip IR drop check by using Ansys Totem; Conduct script modification using Perl programming language; Collaborate with Digital Engineer to define and design the analog to digital interface; Collaborate with verification, process, test, and application engineers to debug, characterize and optimize performance of fabricated image sensors; Analyze project-specific specifications, such as speed, linearity, noise, power consumption, etc, and improve circuit designs or implement innovative solutions to meet performance requirements; Define corners based on chip operating conditions, ensuring the chip meets specifications and operates reliably with sufficient margin for robustness under all conditions; Propose innovative and creative solutions along with new circuit R&D and be ahead of current technology.
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3353,https://jobs.jobvite.com/ovt/job/oT1yzfwL,,https://www.linkedin.com/jobs/view/4425531635,2026-09-24,62,62 applicants,233,matched,title,2026-09-30,2026-09-30T05:59:02,2026-10-07,,246,startDate,true,0,,,,,,2026-02-03,,false,13,124197,127234,134597,title,Analog Design Engineer
+om1yzfwe,Analog Design Engineer,OmniVision,,,,2026-02-03,246,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Conduct design and development of image sensor technologies, work on transistor level design of analog and mixed-signal circuits for CMOS Image Sensor such as asic_pixel array, column-amplifier, comparator, ramp generator, ASRAM and XDEC by using Cadence Virtuoso; Work on whole chip floorplan design and pad frame; Work on analog and mixed signal circuits layout design by Cadence Virtuoso, such as column_array; Collaborate with layout engineer on whole chip layout integration and improvement by Cadence Virtuoso; Perform sub-blocks and whole image sensor readout circuit simulation by simulators such as Analog FastSPICE (AFS), Empyrean ALPS and NanoSpice; Perform design verification such as DRC, LVS, PERC check by using Siemens Calibre; Perform whole chip IR drop check by using Ansys Totem; Conduct script modification using Perl programming language; Collaborate with Digital Engineer to define and design the analog to digital interface; Collaborate with verification, process, test, and application engineers to debug, characterize and optimize performance of fabricated image sensors; Analyze project-specific specifications, such as speed, linearity, noise, power consumption, etc, and improve circuit designs or implement innovative solutions to meet performance requirements; Define corners based on chip operating conditions, ensuring the chip meets specifications and operates reliably with sufficient margin for robustness under all conditions; Propose innovative and creative solutions along with new circuit R&D and be ahead of current technology.
 
 Requirements:
 
@@ -142,8 +142,8 @@ Require knowledge or skills of:
 •    Knowledge of integrated circuit fabrication processes and incorporating process variation considerations into schematic and layout design.
 •    Design and analyze power management circuits, including LDOs and charge pumps.
 
-Annual base salary for this role in California, US is expected to be between $125,000 - $135,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2812,https://jobs.jobvite.com/ovt/job/om1yzfwe,,https://www.linkedin.com/jobs/view/4368558972,2026-09-28,200,Over 200 applicants,237,matched,title,2026-09-30,2026-09-30T05:59:18,2026-10-06,,245,startDate,true,0,,,,,,2026-02-03,,true,13,124197,127234,134597,title,Analog Design Engineer
-oUgjAfwN,Analog Design Engineer,OmniVision,,,,2026-06-08,120,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Analog Design Engineer
+Annual base salary for this role in California, US is expected to be between $125,000 - $135,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2812,https://jobs.jobvite.com/ovt/job/om1yzfwe,,https://www.linkedin.com/jobs/view/4368558972,2026-09-28,200,Over 200 applicants,237,matched,title,2026-09-30,2026-09-30T05:59:18,2026-10-07,,246,startDate,true,0,,,,,,2026-02-03,,true,13,124197,127234,134597,title,Analog Design Engineer
+oUgjAfwN,Analog Design Engineer,OmniVision,,,,2026-06-08,121,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Analog Design Engineer
 
 Job Duties:
 
@@ -171,8 +171,8 @@ Must possess the skills of:
 
 • Analysis and design of modern digital circuits. Design and analyze CMOS digital circuit. Use commercial software Cadence.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2736,https://jobs.jobvite.com/ovt/job/oUgjAfwN,,https://www.linkedin.com/jobs/view/4254150465,2026-09-16,200,Over 200 applicants,100,matched,title,2026-09-30,2026-09-30T05:59:11,2026-10-06,,120,startDate,true,0,,,,,,2026-06-08,,true,13,124197,127234,134597,title,Analog Design Engineer
-ohaIzfws,Analog Design Engineer,OmniVision,,,,2026-02-20,228,"Irvine, California",1,"Irvine, California",false,,United States,,0,"We are looking for Image Sensor Analog Design Engineer for design and development of next generation image sensors and related technologies. The candidate should have strong fundamentals in analog circuit design and ability to work independently to develop analog blocks for given specifications. The candidate should have the capability to lead, design and develop analog circuits, as well as experience in debugging/verifying design issues, plus capability to do analog layout.
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2736,https://jobs.jobvite.com/ovt/job/oUgjAfwN,,https://www.linkedin.com/jobs/view/4254150465,2026-09-16,200,Over 200 applicants,100,matched,title,2026-09-30,2026-09-30T05:59:11,2026-10-07,,121,startDate,true,0,,,,,,2026-06-08,,true,13,124197,127234,134597,title,Analog Design Engineer
+ohaIzfws,Analog Design Engineer,OmniVision,,,,2026-02-20,229,"Irvine, California",1,"Irvine, California",false,,United States,,0,"We are looking for Image Sensor Analog Design Engineer for design and development of next generation image sensors and related technologies. The candidate should have strong fundamentals in analog circuit design and ability to work independently to develop analog blocks for given specifications. The candidate should have the capability to lead, design and develop analog circuits, as well as experience in debugging/verifying design issues, plus capability to do analog layout.
 
 As an Analog Circuit Design Engineer, you will:
 
@@ -204,8 +204,8 @@ Qualifications:
 
 Annual base salary for this role in California, US is expected to be between $110,000 - $150,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",2094,https://jobs.jobvite.com/ovt/job/ohaIzfws,,https://www.linkedin.com/jobs/view/4374649504,2026-09-22,200,Over 200 applicants,214,matched,title,2026-09-30,2026-09-30T05:59:19,2026-10-06,,228,startDate,true,0,,,,,,2026-02-20,,true,13,124197,127234,134597,title,Analog Design Engineer
-ob7owfwW,Analog Design Engineer,OmniVision,,,,2025-06-20,473,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"We are looking for qualified Analog design engineers who have a good understanding of analog circuit and CMOS Image Sensor. Candidates should have the capability to design and develop analog circuit independently, as well as experience in debugging/verifying design issues, plus capability to do analog layout.
+EOE/Minorities/Females/Vet/Disability",2094,https://jobs.jobvite.com/ovt/job/ohaIzfws,,https://www.linkedin.com/jobs/view/4374649504,2026-09-22,200,Over 200 applicants,214,matched,title,2026-09-30,2026-09-30T05:59:19,2026-10-07,,229,startDate,true,0,,,,,,2026-02-20,,true,13,124197,127234,134597,title,Analog Design Engineer
+ob7owfwW,Analog Design Engineer,OmniVision,,,,2025-06-20,474,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"We are looking for qualified Analog design engineers who have a good understanding of analog circuit and CMOS Image Sensor. Candidates should have the capability to design and develop analog circuit independently, as well as experience in debugging/verifying design issues, plus capability to do analog layout.
 
 As an Analog Design Engineer, you will:
 
@@ -227,8 +227,8 @@ Qualifications
 
 Annual base salary for this role in California, US is expected to be between $110,400 - $140,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1462,https://jobs.jobvite.com/ovt/job/ob7owfwW,,https://www.linkedin.com/jobs/view/4368297970,2026-09-27,186,186 applicants,464,matched,title,2026-09-30,2026-09-30T06:00:17,2026-10-06,,473,startDate,true,0,,,,,,2025-06-20,,false,13,124197,127234,134597,title,Analog Design Engineer
-ojejAfwa,Analog Mixed-Signal Design Engineer,OmniVision,,,,2026-06-08,120,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Analog Mixed-Signal Design Engineer
+EOE/Minorities/Females/Vet/Disability",1462,https://jobs.jobvite.com/ovt/job/ob7owfwW,,https://www.linkedin.com/jobs/view/4368297970,2026-09-27,186,186 applicants,464,matched,title,2026-09-30,2026-09-30T06:00:17,2026-10-07,,474,startDate,true,0,,,,,,2025-06-20,,false,13,124197,127234,134597,title,Analog Design Engineer
+ojejAfwa,Analog Mixed-Signal Design Engineer,OmniVision,,,,2026-06-08,121,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Analog Mixed-Signal Design Engineer
 
 Job Duties:
 
@@ -276,8 +276,8 @@ Must possess the following experience:
 
 • Experienced with high-speed circuit layout support.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3559,https://jobs.jobvite.com/ovt/job/ojejAfwa,,https://www.linkedin.com/jobs/view/4425542602,2026-09-23,88,88 applicants,107,matched,title,2026-09-30,2026-09-30T06:00:20,2026-10-06,,120,startDate,true,0,,,,,,2026-06-08,,false,,,,,,
-oA9KzfwM,Analog-Mixed Signal Design Engineer,OmniVision,,,,2026-02-26,222,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3559,https://jobs.jobvite.com/ovt/job/ojejAfwa,,https://www.linkedin.com/jobs/view/4425542602,2026-09-23,88,88 applicants,107,matched,title,2026-09-30,2026-09-30T06:00:20,2026-10-07,,121,startDate,true,0,,,,,,2026-06-08,,false,,,,,,
+oA9KzfwM,Analog-Mixed Signal Design Engineer,OmniVision,,,,2026-02-26,223,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
 
 Responsible for the design development and characterization of embedded analog circuits, such as high speed I/O, SerDes, FIFO, CDR, PLL etc.
 Design and debug experience on RTL level signal synchronization, clock tree and cross domain clock designs is a significant plus.
@@ -301,8 +301,8 @@ Requirements  :
 
 • Masters of Electrical Engineering or PhD
 
-Annual base salary for this role in California, US is expected to be between $105,000 - $135,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1180,https://jobs.jobvite.com/ovt/job/oA9KzfwM,,https://www.linkedin.com/jobs/view/4316677678,2026-09-09,200,Over 200 applicants,195,matched,title,2026-09-30,2026-09-30T05:59:07,2026-10-06,,222,startDate,true,0,,,,,,2026-02-26,,true,,,,,,
-opKJyfwa,Analog-Mixed Signal Design Engineer,OmniVision,,,,2025-10-20,351,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+Annual base salary for this role in California, US is expected to be between $105,000 - $135,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1180,https://jobs.jobvite.com/ovt/job/oA9KzfwM,,https://www.linkedin.com/jobs/view/4316677678,2026-09-09,200,Over 200 applicants,195,matched,title,2026-09-30,2026-09-30T05:59:07,2026-10-07,,223,startDate,true,0,,,,,,2026-02-26,,true,,,,,,
+opKJyfwa,Analog-Mixed Signal Design Engineer,OmniVision,,,,2025-10-20,352,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
 
 Responsible for the design development and characterization of embedded analog circuits, such as high speed I/O, SerDes, FIFO, CDR, PLL etc.
 Design and debug experience on RTL level signal synchronization, clock tree and cross domain clock designs is a significant plus.
@@ -326,8 +326,8 @@ Requirements  :
 
 • Masters of Electrical Engineering or PhD
 
-Annual base salary for this role in California, US is expected to be between $105,000 - $140,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1180,https://jobs.jobvite.com/ovt/job/opKJyfwa,,https://www.linkedin.com/jobs/view/4394226272,2026-09-24,110,110 applicants,339,matched,title,2026-09-30,2026-09-30T05:59:08,2026-10-06,,351,startDate,true,0,,,,,,2025-10-20,,false,,,,,,
-oK5Wzfw4,Analog-Mixed Signal Design Engineer,OmniVision,,,,2026-04-03,186,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+Annual base salary for this role in California, US is expected to be between $105,000 - $140,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1180,https://jobs.jobvite.com/ovt/job/opKJyfwa,,https://www.linkedin.com/jobs/view/4394226272,2026-09-24,110,110 applicants,339,matched,title,2026-09-30,2026-09-30T05:59:08,2026-10-07,,352,startDate,true,0,,,,,,2025-10-20,,false,,,,,,
+oK5Wzfw4,Analog-Mixed Signal Design Engineer,OmniVision,,,,2026-04-03,187,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
 
 Responsible for the design development and characterization of embedded analog circuits, such as high speed I/O, SerDes, FIFO, CDR, PLL etc.
 Design and debug experience on RTL level signal synchronization, clock tree and cross domain clock designs is a significant plus.
@@ -351,8 +351,8 @@ Requirements  :
 
 • Masters of Electrical Engineering or PhD
 
-Annual base salary for this role in California, US is expected to be between $105,000 - $140,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1180,https://jobs.jobvite.com/ovt/job/oK5Wzfw4,,https://www.linkedin.com/jobs/view/4377613480,2026-09-08,147,147 applicants,158,matched,title,2026-09-30,2026-09-30T05:59:05,2026-10-06,,186,startDate,true,0,,,,,,2026-04-03,,false,,,,,,
-oAQQzfwz,Design Characterization Engineer,OmniVision,,,,2026-03-18,202,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"We are seeking a highly skilled Design Characterization Engineer to join our fast‑paced, innovation‑driven R&D team. In this role, you will characterize and optimize CMOS image sensor performance, collaborate closely across engineering disciplines, and help deliver industry‑leading sensor products with exceptional quality.
+Annual base salary for this role in California, US is expected to be between $105,000 - $140,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1180,https://jobs.jobvite.com/ovt/job/oK5Wzfw4,,https://www.linkedin.com/jobs/view/4377613480,2026-09-08,147,147 applicants,158,matched,title,2026-09-30,2026-09-30T05:59:05,2026-10-07,,187,startDate,true,0,,,,,,2026-04-03,,false,,,,,,
+oAQQzfwz,Design Characterization Engineer,OmniVision,,,,2026-03-18,203,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"We are seeking a highly skilled Design Characterization Engineer to join our fast‑paced, innovation‑driven R&D team. In this role, you will characterize and optimize CMOS image sensor performance, collaborate closely across engineering disciplines, and help deliver industry‑leading sensor products with exceptional quality.
 
 Responsibilities:
 
@@ -381,8 +381,8 @@ Requirements
 Annual base salary for this role in California, US is expected to be between $110,600 - $140,000.
 Actual pay will be determined on several factors such as relevant skills and experience, the pay of employees in the similar role etc.
 
-EOE/Minorities/Females/Vet/Disability",1824,https://jobs.jobvite.com/ovt/job/oAQQzfwz,,https://www.linkedin.com/jobs/view/4387180304,2026-09-29,135,135 applicants,195,matched,title,2026-09-30,2026-09-30T05:58:46,2026-10-06,,202,startDate,true,0,,,,,,2026-03-18,,false,,,,,,
-oGoWzfwj,Design Characterization Engineer,OmniVision,,,,2026-04-06,183,"Irvine, California",1,"Irvine, California",false,,United States,,0,"We are seeking a highly skilled Design Characterization Engineer to join our fast‑paced, innovation‑driven R&D team. In this role, you will characterize and optimize CMOS image sensor performance, collaborate closely across engineering disciplines, and help deliver industry‑leading sensor products with exceptional quality.
+EOE/Minorities/Females/Vet/Disability",1824,https://jobs.jobvite.com/ovt/job/oAQQzfwz,,https://www.linkedin.com/jobs/view/4387180304,2026-09-29,135,135 applicants,195,matched,title,2026-09-30,2026-09-30T05:58:46,2026-10-07,,203,startDate,true,0,,,,,,2026-03-18,,false,,,,,,
+oGoWzfwj,Design Characterization Engineer,OmniVision,,,,2026-04-06,184,"Irvine, California",1,"Irvine, California",false,,United States,,0,"We are seeking a highly skilled Design Characterization Engineer to join our fast‑paced, innovation‑driven R&D team. In this role, you will characterize and optimize CMOS image sensor performance, collaborate closely across engineering disciplines, and help deliver industry‑leading sensor products with exceptional quality.
 
 Responsibilities:
 
@@ -411,8 +411,8 @@ Requirements:
 Annual base salary for this role in California, US is expected to be between $110,600 - $140,000.
 Actual pay will be determined on several factors such as relevant skills and experience, the pay of employees in the similar role etc.
 
-EOE/Minorities/Females/Vet/Disability",1825,https://jobs.jobvite.com/ovt/job/oGoWzfwj,,https://www.linkedin.com/jobs/view/4394740169,2026-09-26,104,104 applicants,173,matched,title,2026-09-30,2026-09-30T05:58:48,2026-10-06,,183,startDate,true,0,,,,,,2026-04-06,,false,,,,,,
-owQTzfwy,Digital Design Engineer,OmniVision,,,,2026-03-27,193,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
+EOE/Minorities/Females/Vet/Disability",1825,https://jobs.jobvite.com/ovt/job/oGoWzfwj,,https://www.linkedin.com/jobs/view/4394740169,2026-09-26,104,104 applicants,173,matched,title,2026-09-30,2026-09-30T05:58:48,2026-10-07,,184,startDate,true,0,,,,,,2026-04-06,,false,,,,,,
+owQTzfwy,Digital Design Engineer,OmniVision,,,,2026-03-27,194,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
 
 • Design and implement sensor timing control logic and contribute to ISP system-level integration
 
@@ -454,8 +454,8 @@ Preferred Qualifications
 
 Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on several factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/owQTzfwy,,https://www.linkedin.com/jobs/view/4422065385,2026-09-13,200,Over 200 applicants,170,matched,title,2026-09-30,2026-09-30T05:58:51,2026-10-06,,193,startDate,true,0,,,,,,2026-03-27,,true,9,119662,151091,178006,title,Digital Design Engineer
-oa1zzfw3,Digital Design Engineer,OmniVision,,,,2026-02-05,243,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
+EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/owQTzfwy,,https://www.linkedin.com/jobs/view/4422065385,2026-09-13,200,Over 200 applicants,170,matched,title,2026-09-30,2026-09-30T05:58:51,2026-10-07,,194,startDate,true,0,,,,,,2026-03-27,,true,9,119662,151091,178006,title,Digital Design Engineer
+oa1zzfw3,Digital Design Engineer,OmniVision,,,,2026-02-05,244,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
 
 • Design and implement sensor timing control logic and contribute to ISP system-level integration
 
@@ -497,8 +497,8 @@ Preferred Qualifications
 
 Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on several factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/oa1zzfw3,,https://www.linkedin.com/jobs/view/4391217036,2026-09-16,200,Over 200 applicants,223,matched,title,2026-09-30,2026-09-30T05:58:50,2026-10-06,,243,startDate,true,0,,,,,,2026-02-05,,true,9,119662,151091,178006,title,Digital Design Engineer
-ojHGzfwZ,Document Control Administrator,OmniVision,,,,2026-02-17,231,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Position: Document Control Administrator
+EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/oa1zzfw3,,https://www.linkedin.com/jobs/view/4391217036,2026-09-16,200,Over 200 applicants,223,matched,title,2026-09-30,2026-09-30T05:58:50,2026-10-07,,244,startDate,true,0,,,,,,2026-02-05,,true,9,119662,151091,178006,title,Digital Design Engineer
+ojHGzfwZ,Document Control Administrator,OmniVision,,,,2026-02-17,232,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Position: Document Control Administrator
 Pay Rate: $35–$45 per hour
 Location: Santa Clara, CA
 
@@ -534,8 +534,8 @@ Qualifications & Skills
 
 • Highly organized with strong attention to detail and time management skills
 
-• Mandarin speaking and writing skills preferred",1715,https://jobs.jobvite.com/ovt/job/ojHGzfwZ,,,,,,,no_match,,2026-09-30,,2026-10-06,,231,startDate,true,0,,,,,,2026-02-17,,false,,,,,,
-oFkQzfw8,IT Support Engineer,OmniVision,,,,2026-03-16,204,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+• Mandarin speaking and writing skills preferred",1715,https://jobs.jobvite.com/ovt/job/ojHGzfwZ,,,,,,,no_match,,2026-09-30,,2026-10-07,,232,startDate,true,0,,,,,,2026-02-17,,false,,,,,,
+oFkQzfw8,IT Support Engineer,OmniVision,,,,2026-03-16,205,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
 
 The IT Support Engineer provides support to employees experiencing technical problems and performs troubleshooting, problem diagnosis, resolution, and escalations. In-depth knowledge and hands-on experience with system and server administration and virtualization experiences are required. Area of expertise for this position includes Microsoft technologies, VMware virtualization, Citrix VDI, Linux and storage. Prior experience supporting L1 and L2 requests in IT would be helpful for this position.
 
@@ -595,8 +595,8 @@ Job Requirements :
 
 • BS in Computer Science or equivalent preferred
 
-Annual base salary for this role in California, US is expected to be between  $110,000 - $135,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3661,https://jobs.jobvite.com/ovt/job/oFkQzfw8,,https://www.linkedin.com/jobs/view/4385663500,2026-09-25,200,Over 200 applicants,193,matched,title,2026-09-30,2026-09-30T05:59:04,2026-10-06,,204,startDate,true,0,,,,,,2026-03-16,,true,,,,,,
-oQUOwfwO,Optical Engineer,OmniVision,,,,2025-07-25,438,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview:
+Annual base salary for this role in California, US is expected to be between  $110,000 - $135,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3661,https://jobs.jobvite.com/ovt/job/oFkQzfw8,,https://www.linkedin.com/jobs/view/4385663500,2026-09-25,200,Over 200 applicants,193,matched,title,2026-09-30,2026-09-30T05:59:04,2026-10-07,,205,startDate,true,0,,,,,,2026-03-16,,true,,,,,,
+oQUOwfwO,Optical Engineer,OmniVision,,,,2025-07-25,439,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview:
 
 The Sr/Staff/Principal Optical Engineer works in an aggressive, fast-paced R&D environment to develop and design optical structure to improve image sensor performance.
 
@@ -626,8 +626,8 @@ Annual base salary for this role in California, US is expected to be between $12
 Actual pay will be determined on a number of factors such as relevant skills and experience, and
 the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1008,https://jobs.jobvite.com/ovt/job/oQUOwfwO,,https://www.linkedin.com/jobs/view/4272450798,2026-09-28,200,Over 200 applicants,430,matched,title,2026-09-30,2026-09-30T05:59:12,2026-10-06,,438,startDate,true,0,,,,,,2025-07-25,,true,,,,,,
-oXK2zfw2,Partnership Business Development Manager (Global – Medical Imaging & Embedded Systems),OmniVision,,,,2026-04-27,162,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Role Overview
+EOE/Minorities/Females/Vet/Disability",1008,https://jobs.jobvite.com/ovt/job/oQUOwfwO,,https://www.linkedin.com/jobs/view/4272450798,2026-09-28,200,Over 200 applicants,430,matched,title,2026-09-30,2026-09-30T05:59:12,2026-10-07,,439,startDate,true,0,,,,,,2025-07-25,,true,,,,,,
+oXK2zfw2,Partnership Business Development Manager (Global – Medical Imaging & Embedded Systems),OmniVision,,,,2026-04-27,163,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Role Overview
 
 This role drives global partnership development across the medical (imaging and embedded) systems ecosystem. You will build and manage relationships with semiconductor companies, software vendors, innovation partners and medical device manufacturers.
 
@@ -709,8 +709,8 @@ Success Metrics
 
 Annual base salary for this role in California, US is expected to be between  $150,000 - $190,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",3569,https://jobs.jobvite.com/ovt/job/oXK2zfw2,,https://www.linkedin.com/jobs/view/4406225075,2026-09-26,27,27 applicants,152,matched,title,2026-09-30,2026-09-30T05:58:30,2026-10-06,,162,startDate,true,0,,,,,,2026-04-27,,false,,,,,,
-oEaFzfwM,Pixel Design Engineer – Process R&D,OmniVision,,,,2026-02-12,236,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Role Overview
+EOE/Minorities/Females/Vet/Disability",3569,https://jobs.jobvite.com/ovt/job/oXK2zfw2,,https://www.linkedin.com/jobs/view/4406225075,2026-09-26,27,27 applicants,152,matched,title,2026-09-30,2026-09-30T05:58:30,2026-10-07,,163,startDate,true,0,,,,,,2026-04-27,,false,,,,,,
+oEaFzfwM,Pixel Design Engineer – Process R&D,OmniVision,,,,2026-02-12,237,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Role Overview
 
 As a Pixel Design Engineer within the Process R&D team, you will work on innovation in pixel architecture and process optimization. You will play a key role in advancing simulation methodologies, developing next-generation pixel technologies, and collaborating cross-functionally to enable cutting-edge imaging and display solutions.
 
@@ -740,8 +740,8 @@ Qualifications
 
 Annual base salary for this role in California, US is expected to be between  $140,000 - $170,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1942,https://jobs.jobvite.com/ovt/job/oEaFzfwM,,https://www.linkedin.com/jobs/view/4364474582,2026-09-17,63,63 applicants,217,matched,title,2026-09-30,2026-09-30T05:59:22,2026-10-06,,236,startDate,true,0,,,,,,2026-02-12,,false,,,,,,
-oohGsfwx,Principal Image Sensor Technology Engineer,OmniVision,,,,2024-04-01,918,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"As the Principal Image Sensor Technology Engineer in the Office of the CTO at OMNIVISION (OVT), you will drive the systems development of CMOS Image Sensors. This includes next generation image sensors, modules and or imaging systems.   You will create suitable models and analyze these systems using both hand calculations and simulation.  You will also summarize the pros and cons of the development directions you analyze. You will work with multiple engineering teams to apply the results of your analysis to product development and or to R&D projects at OVT.
+EOE/Minorities/Females/Vet/Disability",1942,https://jobs.jobvite.com/ovt/job/oEaFzfwM,,https://www.linkedin.com/jobs/view/4364474582,2026-09-17,63,63 applicants,217,matched,title,2026-09-30,2026-09-30T05:59:22,2026-10-07,,237,startDate,true,0,,,,,,2026-02-12,,false,,,,,,
+oohGsfwx,Principal Image Sensor Technology Engineer,OmniVision,,,,2024-04-01,919,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"As the Principal Image Sensor Technology Engineer in the Office of the CTO at OMNIVISION (OVT), you will drive the systems development of CMOS Image Sensors. This includes next generation image sensors, modules and or imaging systems.   You will create suitable models and analyze these systems using both hand calculations and simulation.  You will also summarize the pros and cons of the development directions you analyze. You will work with multiple engineering teams to apply the results of your analysis to product development and or to R&D projects at OVT.
 
 Responsibilities
 
@@ -779,8 +779,8 @@ Requirements
 
 Annual base salary for this role in California, US is expected to be between  $180,000 - $230,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",2070,https://jobs.jobvite.com/ovt/job/oohGsfwx,,https://www.linkedin.com/jobs/view/3878501608,2026-09-08,123,123 applicants,890,matched,title,2026-09-30,2026-09-30T05:58:55,2026-10-06,,918,startDate,true,0,,,,,,2024-04-01,,false,,,,,,
-ou1yzfwm,Product Engineer,OmniVision,,,,2026-02-03,245,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Work on new product introduction and ramp-up of CMOS Image Sensors (CIS) and ASIC products from initial tape-out to mass production.
+EOE/Minorities/Females/Vet/Disability",2070,https://jobs.jobvite.com/ovt/job/oohGsfwx,,https://www.linkedin.com/jobs/view/3878501608,2026-09-08,123,123 applicants,890,matched,title,2026-09-30,2026-09-30T05:58:55,2026-10-07,,919,startDate,true,0,,,,,,2024-04-01,,false,,,,,,
+ou1yzfwm,Product Engineer,OmniVision,,,,2026-02-03,246,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Work on new product introduction and ramp-up of CMOS Image Sensors (CIS) and ASIC products from initial tape-out to mass production.
 •    Collaborate with design, test, reliability, and packaging teams to troubleshoot issues and support product development.
 •    Perform design rule checks and product validation to ensure robust product design; defining new product process criteria and GDS checks for tape-out.
 •    Develop comprehensive product characterization and testing plans with R&D and foundry teams to ensure products performance meets requirements.
@@ -809,8 +809,8 @@ Experience shall include:
 •    Monitor the CP and FT testing result to gate and resolve issues in mass production.
 •    Experience in physical failure analysis techniques, such as TEM, EDX, and OBIRCH.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3104,https://jobs.jobvite.com/ovt/job/ou1yzfwm,,,,,,,no_match,,2026-09-30,,2026-10-06,,245,startDate,true,0,,,,,,2026-02-03,,false,8,119496,121846,124197,title,Product Engineer
-on1Jzfwq,Product Engineer,OmniVision,,,,2026-02-23,225,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Description
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3104,https://jobs.jobvite.com/ovt/job/ou1yzfwm,,,,,,,no_match,,2026-09-30,,2026-10-07,,246,startDate,true,0,,,,,,2026-02-03,,false,8,119496,121846,124197,title,Product Engineer
+on1Jzfwq,Product Engineer,OmniVision,,,,2026-02-23,226,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Description
 
 • Owner of assigned products
 
@@ -840,8 +840,8 @@ Preferred-
 
 Annual base salary for this role in California, US is expected to be between $90,600 - $120,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1070,https://jobs.jobvite.com/ovt/job/on1Jzfwq,,https://www.linkedin.com/jobs/view/4368501934,2026-09-28,179,179 applicants,217,matched,title,2026-09-30,2026-09-30T06:00:22,2026-10-06,,225,startDate,true,0,,,,,,2026-02-23,,false,8,119496,121846,124197,title,Product Engineer
-obzyzfwB,Product Marketing Engineer,OmniVision,,,,2026-02-04,244,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Conduct in-depth market research and competitive benchmarking on CMOS image sensors across AR/VR, mobile, automotive, and surveillance segments in global markets.
+EOE/Minorities/Females/Vet/Disability",1070,https://jobs.jobvite.com/ovt/job/on1Jzfwq,,https://www.linkedin.com/jobs/view/4368501934,2026-09-28,179,179 applicants,217,matched,title,2026-09-30,2026-09-30T06:00:22,2026-10-07,,226,startDate,true,0,,,,,,2026-02-23,,false,8,119496,121846,124197,title,Product Engineer
+obzyzfwB,Product Marketing Engineer,OmniVision,,,,2026-02-04,245,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Conduct in-depth market research and competitive benchmarking on CMOS image sensors across AR/VR, mobile, automotive, and surveillance segments in global markets.
 •    Define product positioning, pricing, go-to-market strategy, and manage full product lifecycle from concept to mass production and EOL.
 •    Collaborate with cross-functional teams (engineering, operations, sales) across the U.S. and Asia to translate customer needs into technical requirements and product features.
 •    Provide cross-regional technical support to ensure alignment on sensor specification, performance tuning, and integration.
@@ -864,8 +864,8 @@ The experience shall include:
 •    Preparing technical documentation, setup guides, and internal training materials for the global teams.
 •    Experience in Microsoft Excel and PowerPoint for reporting, Jira and Confluence for issue tracking and documentation, and remote testing equipment for validating surveillance system functionality.
 
-Annual base salary for this role in California, US is expected to be between $139,235 - $145,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2698,https://jobs.jobvite.com/ovt/job/obzyzfwB,,https://www.linkedin.com/jobs/view/4410820640,2026-09-16,48,48 applicants,224,matched,title,2026-09-30,2026-09-30T05:58:57,2026-10-06,,244,startDate,true,0,,,,,,2026-02-04,,false,,,,,,
-oxa6zfw6,Product Marketing Engineer,OmniVision,,,,2026-05-07,152,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OMNIVISION is looking for a Product Marketing Engineer who will define CMOS image sensor products based on security market requirements. This individual will manage and promote OVT products to customers/partners, support Sales and develop new markets for OVT.
+Annual base salary for this role in California, US is expected to be between $139,235 - $145,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2698,https://jobs.jobvite.com/ovt/job/obzyzfwB,,https://www.linkedin.com/jobs/view/4410820640,2026-09-16,48,48 applicants,224,matched,title,2026-09-30,2026-09-30T05:58:57,2026-10-07,,245,startDate,true,0,,,,,,2026-02-04,,false,,,,,,
+oxa6zfw6,Product Marketing Engineer,OmniVision,,,,2026-05-07,153,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OMNIVISION is looking for a Product Marketing Engineer who will define CMOS image sensor products based on security market requirements. This individual will manage and promote OVT products to customers/partners, support Sales and develop new markets for OVT.
 
 Description
 
@@ -895,8 +895,8 @@ Qualifications
 
 Annual base salary for this role in California, US is expected to be between  $110,000 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1269,https://jobs.jobvite.com/ovt/job/oxa6zfw6,,https://www.linkedin.com/jobs/view/4368796242,2026-09-09,118,118 applicants,125,matched,title,2026-09-30,2026-09-30T05:58:36,2026-10-06,,152,startDate,true,0,,,,,,2026-05-07,,false,,,,,,
-oCa6zfwb,Product Marketing Manager,OmniVision,,,,2026-05-07,152,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OMNIVISION is seeking a Product Marketing Manager to drive the definition and positioning of CMOS image sensor products tailored for the security market. This role will be responsible for translating market needs into product requirements, promoting OVT solutions to customers and partners, and supporting Sales in expanding into new markets.
+EOE/Minorities/Females/Vet/Disability",1269,https://jobs.jobvite.com/ovt/job/oxa6zfw6,,https://www.linkedin.com/jobs/view/4368796242,2026-09-09,118,118 applicants,125,matched,title,2026-09-30,2026-09-30T05:58:36,2026-10-07,,153,startDate,true,0,,,,,,2026-05-07,,false,,,,,,
+oCa6zfwb,Product Marketing Manager,OmniVision,,,,2026-05-07,153,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OMNIVISION is seeking a Product Marketing Manager to drive the definition and positioning of CMOS image sensor products tailored for the security market. This role will be responsible for translating market needs into product requirements, promoting OVT solutions to customers and partners, and supporting Sales in expanding into new markets.
 
 Description
 
@@ -936,8 +936,8 @@ Qualifications
 
 Annual base salary for this role in California, US is expected to be between  $130,000 - $170,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1790,https://jobs.jobvite.com/ovt/job/oCa6zfwb,,https://www.linkedin.com/jobs/view/4410834081,2026-09-14,55,55 applicants,130,matched,title,2026-09-30,2026-09-30T05:58:53,2026-10-06,,152,startDate,true,0,,,,,,2026-05-07,,false,,,,,,
-oph1zfw0,Product Validation Engineer,OmniVision,,,,2026-04-21,168,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Product Validation Engineer
+EOE/Minorities/Females/Vet/Disability",1790,https://jobs.jobvite.com/ovt/job/oCa6zfwb,,https://www.linkedin.com/jobs/view/4410834081,2026-09-14,55,55 applicants,130,matched,title,2026-09-30,2026-09-30T05:58:53,2026-10-07,,153,startDate,true,0,,,,,,2026-05-07,,false,,,,,,
+oph1zfw0,Product Validation Engineer,OmniVision,,,,2026-04-21,169,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Product Validation Engineer
 
 Job Duties:
 
@@ -995,8 +995,8 @@ Required skills:
 
 • Ability to apply advanced engineering techniques for system modeling, optimization, and control in complex applications.
 
-Annual base salary for this role in California, US is expected to be between $120,182 - $125,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3418,https://jobs.jobvite.com/ovt/job/oph1zfw0,,https://www.linkedin.com/jobs/view/4404241269,2026-09-21,169,169 applicants,153,matched,title,2026-09-30,2026-09-30T06:00:27,2026-10-06,,168,startDate,true,0,,,,,,2026-04-21,,false,3,94058,95139,107660,title,Product Validation Engineer
-odg1zfwN,Quality Engineer,OmniVision,,,,2026-04-21,168,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Quality Engineer
+Annual base salary for this role in California, US is expected to be between $120,182 - $125,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3418,https://jobs.jobvite.com/ovt/job/oph1zfw0,,https://www.linkedin.com/jobs/view/4404241269,2026-09-21,169,169 applicants,153,matched,title,2026-09-30,2026-09-30T06:00:27,2026-10-07,,169,startDate,true,0,,,,,,2026-04-21,,false,3,94058,95139,107660,title,Product Validation Engineer
+odg1zfwN,Quality Engineer,OmniVision,,,,2026-04-21,169,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Quality Engineer
 
 Job Duties:
 
@@ -1042,8 +1042,8 @@ Must acquire the following knowledge and/or skills from the graduate level cours
 
 • Reliability prediction
 
-Annual base salary for this role in California, US is expected to be between $120,182 - $125,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2967,https://jobs.jobvite.com/ovt/job/odg1zfwN,,,,,,,no_match,,2026-09-30,,2026-10-06,,168,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
-oZz6yfwW,Senior Staff Analog Design Engineer,OmniVision,,,,2025-12-18,292,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"• Work on detailed transistor level design of analog and mixed signal circuits for CMOS image sensors.
+Annual base salary for this role in California, US is expected to be between $120,182 - $125,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2967,https://jobs.jobvite.com/ovt/job/odg1zfwN,,,,,,,no_match,,2026-09-30,,2026-10-07,,169,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
+oZz6yfwW,Senior Staff Analog Design Engineer,OmniVision,,,,2025-12-18,293,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"• Work on detailed transistor level design of analog and mixed signal circuits for CMOS image sensors.
 
 • Oversee the floor plan and layout to make sure design responded as designed.
 
@@ -1081,8 +1081,8 @@ The experience shall include:
 
 • New circuits research and development.
 
-Annual base salary for this role in California, US is expected to be between $186,472 - $220,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2109,https://jobs.jobvite.com/ovt/job/oZz6yfwW,,https://www.linkedin.com/jobs/view/4345017746,2026-09-24,62,62 applicants,280,matched,title,2026-09-30,2026-09-30T06:00:26,2026-10-06,,292,startDate,true,0,,,,,,2025-12-18,,false,13,124197,127234,134597,subset,Analog Design Engineer
-oMz6yfwJ,Sensor Characterization Engineer,OmniVision,,,,2025-12-18,292,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"• Perform bench test and analysis to ensure accurate and reproducible image sensor performance metrics;
+Annual base salary for this role in California, US is expected to be between $186,472 - $220,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2109,https://jobs.jobvite.com/ovt/job/oZz6yfwW,,https://www.linkedin.com/jobs/view/4345017746,2026-09-24,62,62 applicants,280,matched,title,2026-09-30,2026-09-30T06:00:26,2026-10-07,,293,startDate,true,0,,,,,,2025-12-18,,false,13,124197,127234,134597,subset,Analog Design Engineer
+oMz6yfwJ,Sensor Characterization Engineer,OmniVision,,,,2025-12-18,293,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"• Perform bench test and analysis to ensure accurate and reproducible image sensor performance metrics;
 
 • Conduct analytic studies of CMOS image sensor’s fundamental performance issues and provide technical suggestions of improvement;
 
@@ -1114,8 +1114,8 @@ Must have the skills in:
 
 • MATLAB software simulation.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",1863,https://jobs.jobvite.com/ovt/job/oMz6yfwJ,,https://www.linkedin.com/jobs/view/4345004098,2026-09-24,198,198 applicants,280,matched,title,2026-09-30,2026-09-30T05:58:44,2026-10-06,,292,startDate,true,0,,,,,,2025-12-18,,false,8,120182,124197,124197,title,Sensor Characterization Engineer
-oOjWyfwl,SoC Design Engineer,OmniVision,,,,2025-11-19,321,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",1863,https://jobs.jobvite.com/ovt/job/oMz6yfwJ,,https://www.linkedin.com/jobs/view/4345004098,2026-09-24,198,198 applicants,280,matched,title,2026-09-30,2026-09-30T05:58:44,2026-10-07,,293,startDate,true,0,,,,,,2025-12-18,,false,8,120182,124197,124197,title,Sensor Characterization Engineer
+oOjWyfwl,SoC Design Engineer,OmniVision,,,,2025-11-19,322,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
 
 • Image sensor control or processing function design and verification
 
@@ -1147,8 +1147,8 @@ Qualifications :
 
 Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/oOjWyfwl,,https://www.linkedin.com/jobs/view/4323573880,2026-09-27,200,Over 200 applicants,312,matched,title,2026-09-30,2026-09-30T05:58:41,2026-10-06,,321,startDate,true,0,,,,,,2025-11-19,,true,10,124197,124197,124197,title,SoC Design Engineer
-o7gjAfw0,SoC Design Engineer,OmniVision,,,,2026-06-08,120,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: SoC Design Engineer
+EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/oOjWyfwl,,https://www.linkedin.com/jobs/view/4323573880,2026-09-27,200,Over 200 applicants,312,matched,title,2026-09-30,2026-09-30T05:58:41,2026-10-07,,322,startDate,true,0,,,,,,2025-11-19,,true,10,124197,124197,124197,title,SoC Design Engineer
+o7gjAfw0,SoC Design Engineer,OmniVision,,,,2026-06-08,121,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: SoC Design Engineer
 
 Job Duties:
 
@@ -1192,8 +1192,8 @@ Must have the experience/skills:
 
 • Using industry-standard digital design and verification tools.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2882,https://jobs.jobvite.com/ovt/job/o7gjAfw0,,https://www.linkedin.com/jobs/view/4389827428,2026-09-13,200,Over 200 applicants,97,matched,title,2026-09-30,2026-09-30T05:58:37,2026-10-06,,120,startDate,true,0,,,,,,2026-06-08,,true,10,124197,124197,124197,title,SoC Design Engineer
-owBSzfwi,SoC Design Engineer,OmniVision,,,,2026-03-24,196,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2882,https://jobs.jobvite.com/ovt/job/o7gjAfw0,,https://www.linkedin.com/jobs/view/4389827428,2026-09-13,200,Over 200 applicants,97,matched,title,2026-09-30,2026-09-30T05:58:37,2026-10-07,,121,startDate,true,0,,,,,,2026-06-08,,true,10,124197,124197,124197,title,SoC Design Engineer
+owBSzfwi,SoC Design Engineer,OmniVision,,,,2026-03-24,197,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
 
 • Image sensor control or processing function design and verification
 
@@ -1225,8 +1225,8 @@ Qualifications :
 
 Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/owBSzfwi,,https://www.linkedin.com/jobs/view/4425526741,2026-09-24,200,Over 200 applicants,184,matched,title,2026-09-30,2026-09-30T05:58:34,2026-10-06,,196,startDate,true,0,,,,,,2026-03-24,,true,10,124197,124197,124197,title,SoC Design Engineer
-o2g1zfwC,SoC Design Engineer,OmniVision,,,,2026-04-21,168,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: SoC Design Engineer
+EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/owBSzfwi,,https://www.linkedin.com/jobs/view/4425526741,2026-09-24,200,Over 200 applicants,184,matched,title,2026-09-30,2026-09-30T05:58:34,2026-10-07,,197,startDate,true,0,,,,,,2026-03-24,,true,10,124197,124197,124197,title,SoC Design Engineer
+o2g1zfwC,SoC Design Engineer,OmniVision,,,,2026-04-21,169,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: SoC Design Engineer
 
 Job Duties:
 
@@ -1260,8 +1260,8 @@ Required skills and/or academic training in the following:
 
 • Full-chip integration and verification for tapeout.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2702,https://jobs.jobvite.com/ovt/job/o2g1zfwC,,https://www.linkedin.com/jobs/view/4404224587,2026-09-20,200,Over 200 applicants,152,matched,title,2026-09-30,2026-09-30T05:59:23,2026-10-06,,168,startDate,true,0,,,,,,2026-04-21,,true,10,124197,124197,124197,title,SoC Design Engineer
-oJfjAfwB,SoC Design Engineer,OmniVision,,,,2026-06-08,120,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: SoC Design Engineer
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2702,https://jobs.jobvite.com/ovt/job/o2g1zfwC,,https://www.linkedin.com/jobs/view/4404224587,2026-09-20,200,Over 200 applicants,152,matched,title,2026-09-30,2026-09-30T05:59:23,2026-10-07,,169,startDate,true,0,,,,,,2026-04-21,,true,10,124197,124197,124197,title,SoC Design Engineer
+oJfjAfwB,SoC Design Engineer,OmniVision,,,,2026-06-08,121,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: SoC Design Engineer
 
 Job Duties:
 
@@ -1287,8 +1287,8 @@ Experience shall include:
 
 • Reading schematics and data sheets for software driver development on the SoC.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2293,https://jobs.jobvite.com/ovt/job/oJfjAfwB,,https://www.linkedin.com/jobs/view/4414158177,2026-09-18,122,122 applicants,102,matched,title,2026-09-30,2026-09-30T05:58:39,2026-10-06,,120,startDate,true,0,,,,,,2026-06-08,,false,10,124197,124197,124197,title,SoC Design Engineer
-oRMSzfwO,SoC Design Engineer,OmniVision,,,,2026-03-24,196,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2293,https://jobs.jobvite.com/ovt/job/oJfjAfwB,,https://www.linkedin.com/jobs/view/4414158177,2026-09-18,122,122 applicants,102,matched,title,2026-09-30,2026-09-30T05:58:39,2026-10-07,,121,startDate,true,0,,,,,,2026-06-08,,false,10,124197,124197,124197,title,SoC Design Engineer
+oRMSzfwO,SoC Design Engineer,OmniVision,,,,2026-03-24,197,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
 
 • Image sensor control or processing function design and verification
 
@@ -1320,8 +1320,8 @@ Qualifications :
 
 Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/oRMSzfwO,,https://www.linkedin.com/jobs/view/4425538593,2026-09-23,171,171 applicants,183,matched,title,2026-09-30,2026-09-30T05:58:43,2026-10-06,,196,startDate,true,0,,,,,,2026-03-24,,false,10,124197,124197,124197,title,SoC Design Engineer
-oL74zfwf,SoC Design Engineer,OmniVision,,,,2026-04-30,159,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
+EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/oRMSzfwO,,https://www.linkedin.com/jobs/view/4425538593,2026-09-23,171,171 applicants,183,matched,title,2026-09-30,2026-09-30T05:58:43,2026-10-07,,197,startDate,true,0,,,,,,2026-03-24,,false,10,124197,124197,124197,title,SoC Design Engineer
+oL74zfwf,SoC Design Engineer,OmniVision,,,,2026-04-30,160,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities :
 
 • Image sensor control or processing function design and verification
 
@@ -1353,8 +1353,8 @@ Qualifications :
 
 Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/oL74zfwf,,https://www.linkedin.com/jobs/view/4423282781,2026-09-18,156,156 applicants,141,matched,title,2026-09-30,2026-09-30T05:58:40,2026-10-06,,159,startDate,true,0,,,,,,2026-04-30,,false,10,124197,124197,124197,title,SoC Design Engineer
-oy1svfwg,Sr. /Staff/Principal Analog Mixed-Signal Design Engineer,OmniVision,,,,2025-02-14,599,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
+EOE/Minorities/Females/Vet/Disability",1066,https://jobs.jobvite.com/ovt/job/oL74zfwf,,https://www.linkedin.com/jobs/view/4423282781,2026-09-18,156,156 applicants,141,matched,title,2026-09-30,2026-09-30T05:58:40,2026-10-07,,160,startDate,true,0,,,,,,2026-04-30,,false,10,124197,124197,124197,title,SoC Design Engineer
+oy1svfwg,Sr. /Staff/Principal Analog Mixed-Signal Design Engineer,OmniVision,,,,2025-02-14,600,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview :
 Responsible for design, development, and refinement of Multi-Gbps PAM4 SerDes IP. Design and debug experience on RTL level signal synchronization, clock tree and cross domain clock designs is a significant plus.
 
 Need to work closely with system and test engineers to develop high speed interface, package/board, and system clocks in image sensor and bridge chip products.
@@ -1371,8 +1371,8 @@ Requirements  :
 •    Familiar with Cadence analog design/layout flow and spice/spectreMDL simulations.
 •    Masters of Electrical Engineering or PhD with 3+ yrs of expertise.
 
-Annual base salary for this role in California, US is expected to be between $150,000 - $250,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1288,https://jobs.jobvite.com/ovt/job/oy1svfwg,,,,,,,no_match,,2026-09-30,,2026-10-06,,599,startDate,true,0,,,,,,2025-02-14,,false,,,,,,
-oWYXvfw6,Sr. Analog Design Engineer,OmniVision,,,,2025-04-28,526,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"We are looking for qualified Analog circuit design engineers who have a good understanding of analog circuit and CMOS Image Sensor. Candidates should have the capability to design and develop analog circuit independently, as well as experience in debugging/verifying design issues, plus capability to do analog layout.
+Annual base salary for this role in California, US is expected to be between $150,000 - $250,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.",1288,https://jobs.jobvite.com/ovt/job/oy1svfwg,,,,,,,no_match,,2026-09-30,,2026-10-07,,600,startDate,true,0,,,,,,2025-02-14,,false,,,,,,
+oWYXvfw6,Sr. Analog Design Engineer,OmniVision,,,,2025-04-28,527,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"We are looking for qualified Analog circuit design engineers who have a good understanding of analog circuit and CMOS Image Sensor. Candidates should have the capability to design and develop analog circuit independently, as well as experience in debugging/verifying design issues, plus capability to do analog layout.
 
 As an Analog Circuit Design Engineer, you will:
 
@@ -1394,8 +1394,8 @@ Qualifications
 
 Annual base salary for this role in California, US is expected to be between $130,400 - $150,000. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1478,https://jobs.jobvite.com/ovt/job/oWYXvfw6,,https://www.linkedin.com/jobs/view/4216462585,2026-09-28,79,79 applicants,518,matched,title,2026-09-30,2026-09-30T06:00:24,2026-10-06,,526,startDate,true,0,,,,,,2025-04-28,,false,13,124197,127234,134597,subset,Analog Design Engineer
-oAh1zfwb,Sr. Analog Design Engineer,OmniVision,,,,2026-04-21,168,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Sr. Analog Design Engineer
+EOE/Minorities/Females/Vet/Disability",1478,https://jobs.jobvite.com/ovt/job/oWYXvfw6,,https://www.linkedin.com/jobs/view/4216462585,2026-09-28,79,79 applicants,518,matched,title,2026-09-30,2026-09-30T06:00:24,2026-10-07,,527,startDate,true,0,,,,,,2025-04-28,,false,13,124197,127234,134597,subset,Analog Design Engineer
+oAh1zfwb,Sr. Analog Design Engineer,OmniVision,,,,2026-04-21,169,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Sr. Analog Design Engineer
 
 Job Duties:
 
@@ -1441,8 +1441,8 @@ Required experience:
 
 • Chip test, verification, debug and measurements using lab equipment such as oscilloscopes, function generators, and data acquisition (DAQ) systems.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2701,https://jobs.jobvite.com/ovt/job/oAh1zfwb,,https://www.linkedin.com/jobs/view/4404226554,2026-09-19,26,26 applicants,151,matched,title,2026-09-30,2026-09-30T06:00:23,2026-10-06,,168,startDate,true,0,,,,,,2026-04-21,,false,13,124197,127234,134597,subset,Analog Design Engineer
-oZXTzfw8,Sr. Analog Physical Design Engineer,OmniVision,,,,2026-03-25,195,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"This role focuses on the design, optimization, and physical implementation of column-level ADC circuits used in CMOS image sensors.
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2701,https://jobs.jobvite.com/ovt/job/oAh1zfwb,,https://www.linkedin.com/jobs/view/4404226554,2026-09-19,26,26 applicants,151,matched,title,2026-09-30,2026-09-30T06:00:23,2026-10-07,,169,startDate,true,0,,,,,,2026-04-21,,false,13,124197,127234,134597,subset,Analog Design Engineer
+oZXTzfw8,Sr. Analog Physical Design Engineer,OmniVision,,,,2026-03-25,196,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"This role focuses on the design, optimization, and physical implementation of column-level ADC circuits used in CMOS image sensors.
 
 The engineer will work closely with cross-functional teams to enhance performance, silicon efficiency, and image quality while ensuring robust and scalable layout solutions.
 
@@ -1476,8 +1476,8 @@ Requirements
 
 Annual base salary for this role in California, US is expected to be between $130,600 - $170,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1781,https://jobs.jobvite.com/ovt/job/oZXTzfw8,,https://www.linkedin.com/jobs/view/4404231446,2026-09-20,46,46 applicants,179,matched,title,2026-09-30,2026-09-30T05:59:25,2026-10-06,,195,startDate,true,0,,,,,,2026-03-25,,false,,,,,,
-ouh1zfw5,Sr. Analog Physical Design Engineer,OmniVision,,,,2026-04-21,168,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Sr. Analog Physical Design Engineer
+EOE/Minorities/Females/Vet/Disability",1781,https://jobs.jobvite.com/ovt/job/oZXTzfw8,,https://www.linkedin.com/jobs/view/4404231446,2026-09-20,46,46 applicants,179,matched,title,2026-09-30,2026-09-30T05:59:25,2026-10-07,,196,startDate,true,0,,,,,,2026-03-25,,false,,,,,,
+ouh1zfw5,Sr. Analog Physical Design Engineer,OmniVision,,,,2026-04-21,169,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Sr. Analog Physical Design Engineer
 
 Job Duties:
 
@@ -1533,8 +1533,8 @@ Require the following experience or skills:
 
 • Solving crosstalk challenges between adjacent column ADCs in image sensor circuits.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3261,https://jobs.jobvite.com/ovt/job/ouh1zfw5,,https://www.linkedin.com/jobs/view/4390138752,2026-09-14,38,38 applicants,146,matched,title,2026-09-30,2026-09-30T06:00:19,2026-10-06,,168,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
-ooVJzfwl,Sr. Applications Engineer,OmniVision,,,,2026-02-23,225,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The ideal candidate should have an electrical/computer engineering, imaging science, or color science background, or experience on image processing, image quality evaluation/tuning, or image sensor related system debugging. Basic knowledge about CMOS sensor and pixel design is a plus.
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3261,https://jobs.jobvite.com/ovt/job/ouh1zfw5,,https://www.linkedin.com/jobs/view/4390138752,2026-09-14,38,38 applicants,146,matched,title,2026-09-30,2026-09-30T06:00:19,2026-10-07,,169,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
+ooVJzfwl,Sr. Applications Engineer,OmniVision,,,,2026-02-23,226,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The ideal candidate should have an electrical/computer engineering, imaging science, or color science background, or experience on image processing, image quality evaluation/tuning, or image sensor related system debugging. Basic knowledge about CMOS sensor and pixel design is a plus.
 
 Responsibilities
 
@@ -1558,8 +1558,8 @@ Qualifications
 
 Annual base salary for this role in California, US is expected to be between  $120,000 - $145,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1443,https://jobs.jobvite.com/ovt/job/ooVJzfwl,,https://www.linkedin.com/jobs/view/4376769565,2026-09-28,63,63 applicants,217,matched,title,2026-09-30,2026-09-30T05:58:33,2026-10-06,,225,startDate,true,0,,,,,,2026-02-23,,false,,,,,,
-ot2zzfwn,Sr. Digital Circuit Design Engineer,OmniVision,,,,2026-02-05,243,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
+EOE/Minorities/Females/Vet/Disability",1443,https://jobs.jobvite.com/ovt/job/ooVJzfwl,,https://www.linkedin.com/jobs/view/4376769565,2026-09-28,63,63 applicants,217,matched,title,2026-09-30,2026-09-30T05:58:33,2026-10-07,,226,startDate,true,0,,,,,,2026-02-23,,false,,,,,,
+ot2zzfwn,Sr. Digital Circuit Design Engineer,OmniVision,,,,2026-02-05,244,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
 
 • Design and implement sensor timing control logic and contribute to ISP system-level integration
 
@@ -1601,8 +1601,8 @@ Preferred Qualifications
 
 Annual base salary for this role in California, US is expected to be between $130,600 - $160,000. Actual pay will be determined on several factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/ot2zzfwn,,https://www.linkedin.com/jobs/view/4390999955,2026-09-16,50,50 applicants,223,matched,title,2026-09-30,2026-09-30T05:59:16,2026-10-06,,243,startDate,true,0,,,,,,2026-02-05,,false,9,119662,151091,178006,subset,Digital Design Engineer
-oLQTzfwN,Sr. Digital Circuit Design Engineer,OmniVision,,,,2026-03-27,193,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
+EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/ot2zzfwn,,https://www.linkedin.com/jobs/view/4390999955,2026-09-16,50,50 applicants,223,matched,title,2026-09-30,2026-09-30T05:59:16,2026-10-07,,244,startDate,true,0,,,,,,2026-02-05,,false,9,119662,151091,178006,subset,Digital Design Engineer
+oLQTzfwN,Sr. Digital Circuit Design Engineer,OmniVision,,,,2026-03-27,194,"Irvine, California",1,"Irvine, California",false,,United States,,0,"Key Responsibilities:
 
 • Design and implement sensor timing control logic and contribute to ISP system-level integration
 
@@ -1644,8 +1644,8 @@ Preferred Qualifications
 
 Annual base salary for this role in California, US is expected to be between $130,600 - $160,000. Actual pay will be determined on several factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/oLQTzfwN,,https://www.linkedin.com/jobs/view/4369173565,2026-09-09,63,63 applicants,166,matched,title,2026-09-30,2026-09-30T05:59:15,2026-10-06,,193,startDate,true,0,,,,,,2026-03-27,,false,9,119662,151091,178006,subset,Digital Design Engineer
-oawFvfwA,Sr. Digital Design Engineer,OmniVision,,,,2025-03-21,564,"Irvine, California",1,"Irvine, California",false,,United States,,0,"We are looking for Digital Design Engineer for design and development of next generation image sensors and related technologies. The candidate should have strong fundamentals in digital circuit design and ability to  independently design blocks with given specifications. The candidate should have the capability to lead, design and develop circuits, as well as experience in debugging/verifying design issues.
+EOE/Minorities/Females/Vet/Disability",2081,https://jobs.jobvite.com/ovt/job/oLQTzfwN,,https://www.linkedin.com/jobs/view/4369173565,2026-09-09,63,63 applicants,166,matched,title,2026-09-30,2026-09-30T05:59:15,2026-10-07,,194,startDate,true,0,,,,,,2026-03-27,,false,9,119662,151091,178006,subset,Digital Design Engineer
+oawFvfwA,Sr. Digital Design Engineer,OmniVision,,,,2025-03-21,565,"Irvine, California",1,"Irvine, California",false,,United States,,0,"We are looking for Digital Design Engineer for design and development of next generation image sensors and related technologies. The candidate should have strong fundamentals in digital circuit design and ability to  independently design blocks with given specifications. The candidate should have the capability to lead, design and develop circuits, as well as experience in debugging/verifying design issues.
 
 As Digital Circuit Design Engineer, you will:
 
@@ -1683,8 +1683,8 @@ Qualifications:
 
 Annual base salary for this role in California, US is expected to be between $120,600 - $150,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",2179,https://jobs.jobvite.com/ovt/job/oawFvfwA,,https://www.linkedin.com/jobs/view/4188604180,2026-09-29,83,83 applicants,557,matched,title,2026-09-30,2026-09-30T05:58:58,2026-10-06,,564,startDate,true,0,,,,,,2025-03-21,,false,9,119662,151091,178006,subset,Digital Design Engineer
-oFqyzfwW,Sr. EDA Flow Engineer,OmniVision,,,,2026-02-04,244,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Position Overview:
+EOE/Minorities/Females/Vet/Disability",2179,https://jobs.jobvite.com/ovt/job/oawFvfwA,,https://www.linkedin.com/jobs/view/4188604180,2026-09-29,83,83 applicants,557,matched,title,2026-09-30,2026-09-30T05:58:58,2026-10-07,,565,startDate,true,0,,,,,,2025-03-21,,false,9,119662,151091,178006,subset,Digital Design Engineer
+oFqyzfwW,Sr. EDA Flow Engineer,OmniVision,,,,2026-02-04,245,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Position Overview:
 
 Work closely with design teams and CAD/EDA stakeholders to identify workflow bottlenecks across the chip development lifecycle—such as DRC/CDC/STA debug, regression triage, PPA convergence, and ECO iteration. This role focuses on building scalable data pipelines and models, and integrating AI-driven solutions into production CAD and verification flows.
 
@@ -1716,8 +1716,8 @@ Requirements:
 
 Annual base salary for this role in California, US is expected to be between $110,000 - $145,000. Actual pay will be determined by several factors such as relevant skills and experience, and the pay of employees in a similar role.
 
-EOE/Minorities/Females/Vet/Disability",2178,https://jobs.jobvite.com/ovt/job/oFqyzfwW,,https://www.linkedin.com/jobs/view/4415690390,2026-09-24,34,34 applicants,232,matched,title,2026-09-30,2026-09-30T06:00:30,2026-10-06,,244,startDate,true,0,,,,,,2026-02-04,,false,,,,,,
-oggjAfw9,Sr. Information Security Engineer,OmniVision,,,,2026-06-08,120,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Sr. Information Security Engineer
+EOE/Minorities/Females/Vet/Disability",2178,https://jobs.jobvite.com/ovt/job/oFqyzfwW,,https://www.linkedin.com/jobs/view/4415690390,2026-09-24,34,34 applicants,232,matched,title,2026-09-30,2026-09-30T06:00:30,2026-10-07,,245,startDate,true,0,,,,,,2026-02-04,,false,,,,,,
+oggjAfw9,Sr. Information Security Engineer,OmniVision,,,,2026-06-08,121,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Sr. Information Security Engineer
 
 Job Duties:
 
@@ -1753,8 +1753,8 @@ Must possess the knowledge or skills of:
 
 • Cisco routers and switches – OSI model, TCP/IP protocol suite, BGP, OSPF, IPv4, and IPv6.
 
-Annual base salary for this role in California, US is expected to be between $154,960 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role",2162,https://jobs.jobvite.com/ovt/job/oggjAfw9,,https://www.linkedin.com/jobs/view/4369185471,2026-09-09,200,Over 200 applicants,93,matched,title,2026-09-30,2026-09-30T05:59:09,2026-10-06,,120,startDate,true,0,,,,,,2026-06-08,,true,,,,,,
-oEazzfwG,Sr. Information Security Engineer,OmniVision,,,,2026-02-05,243,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OMNIVISION is a leading developer of advanced digital imaging solutions.  They provide a diverse culture that works together on the development of cutting-edge imaging technology, products and solutions.  At OMNIVISION, they know that happy employees are critical to success, so they have created a culture focused on three tenets: Thrive, Engage, Innovate.
+Annual base salary for this role in California, US is expected to be between $154,960 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role",2162,https://jobs.jobvite.com/ovt/job/oggjAfw9,,https://www.linkedin.com/jobs/view/4369185471,2026-09-09,200,Over 200 applicants,93,matched,title,2026-09-30,2026-09-30T05:59:09,2026-10-07,,121,startDate,true,0,,,,,,2026-06-08,,true,,,,,,
+oEazzfwG,Sr. Information Security Engineer,OmniVision,,,,2026-02-05,244,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OMNIVISION is a leading developer of advanced digital imaging solutions.  They provide a diverse culture that works together on the development of cutting-edge imaging technology, products and solutions.  At OMNIVISION, they know that happy employees are critical to success, so they have created a culture focused on three tenets: Thrive, Engage, Innovate.
 
 OMNIVISION’s Information Security organization is looking for a hands-on Sr. Information Security Engineer to join its Security Engineering team.
 
@@ -1796,8 +1796,8 @@ Qualifications
 
 Annual base salary for this role in California, US is expected to be between  $120,000 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",2830,https://jobs.jobvite.com/ovt/job/oEazzfwG,,https://www.linkedin.com/jobs/view/4425547568,2026-09-25,124,124 applicants,232,matched,title,2026-09-30,2026-09-30T05:58:54,2026-10-06,,243,startDate,true,0,,,,,,2026-02-05,,false,,,,,,
-o0ePzfwm,Sr. Infrastructure Engineer,OmniVision,,,,2026-03-12,208,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Note-  This role focuses on IT infrastructure and systems automation, not software or QA test automation.
+EOE/Minorities/Females/Vet/Disability",2830,https://jobs.jobvite.com/ovt/job/oEazzfwG,,https://www.linkedin.com/jobs/view/4425547568,2026-09-25,124,124 applicants,232,matched,title,2026-09-30,2026-09-30T05:58:54,2026-10-07,,244,startDate,true,0,,,,,,2026-02-05,,false,,,,,,
+o0ePzfwm,Sr. Infrastructure Engineer,OmniVision,,,,2026-03-12,209,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Note-  This role focuses on IT infrastructure and systems automation, not software or QA test automation.
 
 Candidates with backgrounds primarily in test automation, CI/CD pipelines, or application QA will not be considered.
 
@@ -1843,8 +1843,8 @@ On-Call & Availability
 
 Annual base salary for this role in California, US is expected to be between  $120,000 - $155,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1824,https://jobs.jobvite.com/ovt/job/o0ePzfwm,,https://www.linkedin.com/jobs/view/4383983279,2026-09-22,182,182 applicants,194,matched,title,2026-09-30,2026-09-30T05:58:47,2026-10-06,,208,startDate,true,0,,,,,,2026-03-12,,false,,,,,,
-ogBLAfwW,Sr. Linux Engineer (Contract),OmniVision,,,,2026-09-08,28,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Pay rate : $60/hr - $75/hr
+EOE/Minorities/Females/Vet/Disability",1824,https://jobs.jobvite.com/ovt/job/o0ePzfwm,,https://www.linkedin.com/jobs/view/4383983279,2026-09-22,182,182 applicants,194,matched,title,2026-09-30,2026-09-30T05:58:47,2026-10-07,,209,startDate,true,0,,,,,,2026-03-12,,false,,,,,,
+ogBLAfwW,Sr. Linux Engineer (Contract),OmniVision,,,,2026-09-08,29,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Pay rate : $60/hr - $75/hr
 
 Duration : 12  months contract
 
@@ -1948,8 +1948,8 @@ This is a contract position and is not eligible for visa sponsorship.
 
 We are accepting applications only from candidates who are able to work directly on a W-2 or 1099 basis.
 
-Please note: We are not accepting submissions from third-party agencies, staffing firms, or other intermediaries for this position. Direct candidate applications only.",7031,https://jobs.jobvite.com/ovt/job/ogBLAfwW,,https://www.linkedin.com/jobs/view/4463568237,2026-09-08,55,55 applicants,0,matched,title,2026-09-30,2026-09-30T06:00:31,2026-10-06,,28,startDate,true,0,,,,,,2026-09-08,,false,,,,,,
-oGWKzfwF,Sr. Process Integration Engineer,OmniVision,,,,2026-02-25,223,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The Process Integration Engineer will use experience with device physics to develop advanced processes to their fullest extent, working in close collaboration with silicon and color foundries, image characterization, modeling and pixel design.
+Please note: We are not accepting submissions from third-party agencies, staffing firms, or other intermediaries for this position. Direct candidate applications only.",7031,https://jobs.jobvite.com/ovt/job/ogBLAfwW,,https://www.linkedin.com/jobs/view/4463568237,2026-09-08,55,55 applicants,0,matched,title,2026-09-30,2026-09-30T06:00:31,2026-10-07,,29,startDate,true,0,,,,,,2026-09-08,,false,,,,,,
+oGWKzfwF,Sr. Process Integration Engineer,OmniVision,,,,2026-02-25,224,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The Process Integration Engineer will use experience with device physics to develop advanced processes to their fullest extent, working in close collaboration with silicon and color foundries, image characterization, modeling and pixel design.
 
 Responsibilities:
 
@@ -1973,8 +1973,8 @@ Qualifications:
 
 Annual base salary for this role in California, US is expected to be between $120,600 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1243,https://jobs.jobvite.com/ovt/job/oGWKzfwF,,,,,,,no_match,,2026-09-30,,2026-10-06,,223,startDate,true,0,,,,,,2026-02-25,,false,4,129829,141398,157820,subset,Staff Process Integration Engineer
-osrKzfwW,Sr. Process Integration Engineer,OmniVision,,,,2026-02-26,222,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The Process Integration Engineer will use experience with device physics to develop advanced processes to their fullest extent, working in close collaboration with silicon and color foundries, image characterization, modeling and pixel design.
+EOE/Minorities/Females/Vet/Disability",1243,https://jobs.jobvite.com/ovt/job/oGWKzfwF,,,,,,,no_match,,2026-09-30,,2026-10-07,,224,startDate,true,0,,,,,,2026-02-25,,false,4,129829,141398,157820,subset,Staff Process Integration Engineer
+osrKzfwW,Sr. Process Integration Engineer,OmniVision,,,,2026-02-26,223,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The Process Integration Engineer will use experience with device physics to develop advanced processes to their fullest extent, working in close collaboration with silicon and color foundries, image characterization, modeling and pixel design.
 
 Responsibilities:
 
@@ -1998,8 +1998,8 @@ Qualifications:
 
 Annual base salary for this role in California, US is expected to be between $120,600 - $155,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1241,https://jobs.jobvite.com/ovt/job/osrKzfwW,,,,,,,no_match,,2026-09-30,,2026-10-06,,222,startDate,true,0,,,,,,2026-02-26,,false,4,129829,141398,157820,subset,Staff Process Integration Engineer
-oWz6yfwT,Sr. Product Engineer,OmniVision,,,,2025-12-18,292,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Design a characterization/testing plan and work with R&D teams and manufacturing engineers to resolve various technical issues to meet performance requirements; participate in product definition and provide DFM inputs; work in close collaboration with silicon foundry, imager characterization and pixel design; interact with foundry fab in improving all silicon process, color, and package issues; improve product yield and performance by process optimization and layout design update; analyze yield and drive corrective actions for yield improvements; drive characterization to finalize the product datasheet; work with pixel design group to design the most sophisticated and optimized pixel layout; work with characterization team to analyze and debug pixel device circuit and various image related issues; ramp up for image sensors and ASIC devices; coordinate with company's fab to drive semiconductor processing tool vendors to optimize processes, including raw material vendor, IMP tool vendor and photo resist vendor etc.; set up new tape out product process flows, inline handbooks, JDV check etc.; work with testing engineers to develop, verify and release testing program at CP or FT.Program coding, such as python, to improve work efficiency in data analysis.
+EOE/Minorities/Females/Vet/Disability",1241,https://jobs.jobvite.com/ovt/job/osrKzfwW,,,,,,,no_match,,2026-09-30,,2026-10-07,,223,startDate,true,0,,,,,,2026-02-26,,false,4,129829,141398,157820,subset,Staff Process Integration Engineer
+oWz6yfwT,Sr. Product Engineer,OmniVision,,,,2025-12-18,293,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Design a characterization/testing plan and work with R&D teams and manufacturing engineers to resolve various technical issues to meet performance requirements; participate in product definition and provide DFM inputs; work in close collaboration with silicon foundry, imager characterization and pixel design; interact with foundry fab in improving all silicon process, color, and package issues; improve product yield and performance by process optimization and layout design update; analyze yield and drive corrective actions for yield improvements; drive characterization to finalize the product datasheet; work with pixel design group to design the most sophisticated and optimized pixel layout; work with characterization team to analyze and debug pixel device circuit and various image related issues; ramp up for image sensors and ASIC devices; coordinate with company's fab to drive semiconductor processing tool vendors to optimize processes, including raw material vendor, IMP tool vendor and photo resist vendor etc.; set up new tape out product process flows, inline handbooks, JDV check etc.; work with testing engineers to develop, verify and release testing program at CP or FT.Program coding, such as python, to improve work efficiency in data analysis.
 
 Requirements:
 
@@ -2027,8 +2027,8 @@ Require experience/skills of:
 
 • Ensure the quality of the wafers by the strict management from wafer-start to fab-out.
 
-Annual base salary for this role in California, US is expected to be between $131,706 - $135,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2473,https://jobs.jobvite.com/ovt/job/oWz6yfwT,,,,,,,no_match,,2026-09-30,,2026-10-06,,292,startDate,true,0,,,,,,2025-12-18,,false,8,119496,121846,124197,subset,Product Engineer
-oX5fAfwB,Sr. Product Engineer,OmniVision,,,,2026-06-04,124,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Primary responsibility is to bring a new product from tapeout to mass production. Candidate designs a characterization/testing plan and works with R&D teams and manufacturing engineers on technical issues, resolving these issues to meet performance requirements on product requirement documents. For existing products, the senior product engineer will maintain and sustain technical support and actively participate in yield improvements.
+Annual base salary for this role in California, US is expected to be between $131,706 - $135,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2473,https://jobs.jobvite.com/ovt/job/oWz6yfwT,,,,,,,no_match,,2026-09-30,,2026-10-07,,293,startDate,true,0,,,,,,2025-12-18,,false,8,119496,121846,124197,subset,Product Engineer
+oX5fAfwB,Sr. Product Engineer,OmniVision,,,,2026-06-04,125,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Primary responsibility is to bring a new product from tapeout to mass production. Candidate designs a characterization/testing plan and works with R&D teams and manufacturing engineers on technical issues, resolving these issues to meet performance requirements on product requirement documents. For existing products, the senior product engineer will maintain and sustain technical support and actively participate in yield improvements.
 
 Description:
 
@@ -2060,8 +2060,8 @@ Preferred:
 
 Annual base salary for this role in California, US is expected to be between $110,600 - $140,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1732,https://jobs.jobvite.com/ovt/job/oX5fAfwB,,,,,,,no_match,,2026-09-30,,2026-10-06,,124,startDate,true,0,,,,,,2026-06-04,,false,8,119496,121846,124197,subset,Product Engineer
-orAJzfw3,Sr. Product Quality Engineer,OmniVision,,,,2026-02-24,224,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"In this role, you will be:
+EOE/Minorities/Females/Vet/Disability",1732,https://jobs.jobvite.com/ovt/job/oX5fAfwB,,,,,,,no_match,,2026-09-30,,2026-10-07,,125,startDate,true,0,,,,,,2026-06-04,,false,8,119496,121846,124197,subset,Product Engineer
+orAJzfw3,Sr. Product Quality Engineer,OmniVision,,,,2026-02-24,225,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"In this role, you will be:
 
 • Responsible for failure analysis of OmniVision Image Sensor products and issue failure analysis reports for customer failures.
 
@@ -2097,8 +2097,8 @@ Qualifications:
 
 Annual base salary for this role in California, US is expected to be between $120,500 - $150,500. Actual pay will be determined on a number of factors such as relevant skills, education, experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1819,https://jobs.jobvite.com/ovt/job/orAJzfw3,,https://www.linkedin.com/jobs/view/4376764997,2026-09-26,124,124 applicants,214,matched,title,2026-09-30,2026-09-30T05:58:59,2026-10-06,,224,startDate,true,0,,,,,,2026-02-24,,false,,,,,,
-ogmlzfwg,Sr. Sales Account Manager,OmniVision,,,,2026-01-21,258,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview
+EOE/Minorities/Females/Vet/Disability",1819,https://jobs.jobvite.com/ovt/job/orAJzfw3,,https://www.linkedin.com/jobs/view/4376764997,2026-09-26,124,124 applicants,214,matched,title,2026-09-30,2026-09-30T05:58:59,2026-10-07,,225,startDate,true,0,,,,,,2026-02-24,,false,,,,,,
+ogmlzfwg,Sr. Sales Account Manager,OmniVision,,,,2026-01-21,259,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Overview
 
 The Sales Account Manager is responsible for driving revenue growth and managing key customer relationships within assigned territory. This role combines technical expertise, strategic account management, and strong interpersonal skills to identify new business opportunities, support existing customers, and collaborate cross-functionally to deliver customer-focused solutions. The ideal candidate is highly organized, customer-driven, and capable of managing multiple engagements in a fast-paced, technology-oriented environment.
 
@@ -2125,8 +2125,8 @@ Qualifications
 • Strong interpersonal, communication, and presentation skills, with the ability to influence, engage, and build trust with diverse technical and business audiences.
 
 Annual base salary for this role in California, US is expected to be between $125,500 - $165,000.
-Actual pay will be determined on several factors such as relevant skills and experience, the pay of employees in the similar role etc.",1921,https://jobs.jobvite.com/ovt/job/ogmlzfwg,,https://www.linkedin.com/jobs/view/4362530926,2026-09-15,59,59 applicants,237,matched,title,2026-09-30,2026-09-30T06:00:29,2026-10-06,,258,startDate,true,0,,,,,,2026-01-21,,false,,,,,,
-oqSBzfwc,Sr. Staff Image Scientist,OmniVision,,,,2026-02-10,238,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities:
+Actual pay will be determined on several factors such as relevant skills and experience, the pay of employees in the similar role etc.",1921,https://jobs.jobvite.com/ovt/job/ogmlzfwg,,https://www.linkedin.com/jobs/view/4362530926,2026-09-15,59,59 applicants,237,matched,title,2026-09-30,2026-09-30T06:00:29,2026-10-07,,259,startDate,true,0,,,,,,2026-01-21,,false,,,,,,
+oqSBzfwc,Sr. Staff Image Scientist,OmniVision,,,,2026-02-10,239,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Responsibilities:
 
 • Research new image and color processing or computer vision techniques and technologies for digital camera systems
 
@@ -2156,8 +2156,8 @@ Qualifications:
 
 Annual base salary for this role in California, US is expected to be between  $170,000 - $200,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1161,https://jobs.jobvite.com/ovt/job/oqSBzfwc,,https://www.linkedin.com/jobs/view/4405393674,2026-09-22,98,98 applicants,224,matched,title,2026-09-30,2026-09-30T05:59:20,2026-10-06,,238,startDate,true,0,,,,,,2026-02-10,,false,6,124197,137644,155412,subset,Image Scientist
-o11yzfwT,Staff Process Integration Engineer,OmniVision,,,,2026-02-03,245,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Develop advanced CMOS image sensor (CIS) process to meet performance targets under a defined schedule and budget.
+EOE/Minorities/Females/Vet/Disability",1161,https://jobs.jobvite.com/ovt/job/oqSBzfwc,,https://www.linkedin.com/jobs/view/4405393674,2026-09-22,98,98 applicants,224,matched,title,2026-09-30,2026-09-30T05:59:20,2026-10-07,,239,startDate,true,0,,,,,,2026-02-10,,false,6,124197,137644,155412,subset,Image Scientist
+o11yzfwT,Staff Process Integration Engineer,OmniVision,,,,2026-02-03,246,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"•    Develop advanced CMOS image sensor (CIS) process to meet performance targets under a defined schedule and budget.
 •    Collaborate with foundry partners to define and improve the CIS silicon, color and package process for each CIS technology.
 •    Provide support to production and design teams to improve yield and overall sensor performance, establishing process flow applicable to mass production.
 •    Design and manage silicon split lots with respect to project goals and schedules to achieve performance targets, meet production requirements, and research and development of future technologies.
@@ -2179,8 +2179,8 @@ Required experience or skills in:
 •    Silicon and semiconductor device testing, including electron microscopy (SEM, TEM), atomic force microscopy (AFM), spectroscopy techniques (photo- and fluoro- luminescence, Fourier transform IR spectroscopy, UV-vis), and optical and electrical device characterization.
 •    Defining project roadmaps, performance targets, and schedules.
 
-Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2661,https://jobs.jobvite.com/ovt/job/o11yzfwT,,https://www.linkedin.com/jobs/view/4368514205,2026-09-28,167,167 applicants,237,matched,title,2026-09-30,2026-09-30T05:59:14,2026-10-06,,245,startDate,true,0,,,,,,2026-02-03,,false,4,129829,141398,157820,subset,Staff Process Integration Engineer
-oQtWufwt,Staff Software Algorithm Engineer,OmniVision,,,,2024-12-05,670,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OmniVision Technologies, Inc. – Santa Clara is currently looking for Staff  Algorithm Engineer to support ISP algorithm development.
+Annual base salary for this role in California, US is expected to be between $156,853 - $160,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",2661,https://jobs.jobvite.com/ovt/job/o11yzfwT,,https://www.linkedin.com/jobs/view/4368514205,2026-09-28,167,167 applicants,237,matched,title,2026-09-30,2026-09-30T05:59:14,2026-10-07,,246,startDate,true,0,,,,,,2026-02-03,,false,4,129829,141398,157820,subset,Staff Process Integration Engineer
+oQtWufwt,Staff Software Algorithm Engineer,OmniVision,,,,2024-12-05,671,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"OmniVision Technologies, Inc. – Santa Clara is currently looking for Staff  Algorithm Engineer to support ISP algorithm development.
 
 Responsibilities:
 
@@ -2212,8 +2212,8 @@ Qualifications:
 
 Annual base salary for this role in California, US is expected to be between  $150,000 - $180,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
-EOE/Minorities/Females/Vet/Disability",1294,https://jobs.jobvite.com/ovt/job/oQtWufwt,,https://www.linkedin.com/jobs/view/4091538873,2026-09-24,122,122 applicants,658,matched,title,2026-09-30,2026-09-30T05:58:32,2026-10-06,,670,startDate,true,0,,,,,,2024-12-05,,false,,,,,,
-oLh1zfwm,Supply Chain Analyst,OmniVision,,,,2026-04-21,168,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Supply Chain Analyst
+EOE/Minorities/Females/Vet/Disability",1294,https://jobs.jobvite.com/ovt/job/oQtWufwt,,https://www.linkedin.com/jobs/view/4091538873,2026-09-24,122,122 applicants,658,matched,title,2026-09-30,2026-09-30T05:58:32,2026-10-07,,671,startDate,true,0,,,,,,2024-12-05,,false,,,,,,
+oLh1zfwm,Supply Chain Analyst,OmniVision,,,,2026-04-21,169,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Job Title: Supply Chain Analyst
 
 Job Duties:
 
@@ -2301,4 +2301,4 @@ Must possess the skills of:
 
 • Lean Six Sigma Methodologies.
 
-Annual base salary for this role in California, US is expected to be between $100,589 - $105,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3293,https://jobs.jobvite.com/ovt/job/oLh1zfwm,,,,,,,no_match,,2026-09-30,,2026-10-06,,168,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
+Annual base salary for this role in California, US is expected to be between $100,589 - $105,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3293,https://jobs.jobvite.com/ovt/job/oLh1zfwm,,,,,,,no_match,,2026-09-30,,2026-10-07,,169,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
