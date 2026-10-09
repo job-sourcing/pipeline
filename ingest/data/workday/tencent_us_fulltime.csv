@@ -12020,3 +12020,190 @@ Who We Look For
 Equal Employment Opportunity at Tencent
 
 As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3457,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Tencent-Cloud--IDC-Procurement-Business-Manager--Singapore-_R108205-1,,,,,,,not_checked,,2026-10-08,,2026-10-09,,1,startDate,false,1,,,,,,2026-10-08,,,,,,,,
+R108212,Coding Agent Research Intern,Tencent,Proxima Beta Pte. Limited,Full time,Posted Today,2026-10-09,0,Singapore-CapitaSky,1,Singapore-CapitaSky,false,,Singapore,,0,"About the Hiring Team
+Level Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.
+
+We are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.
+
+What the Role Entails
+
+Focus on cutting-edge algorithm research and development in AI Coding Agents, fully automated game generation, and game world models, exploring key issues such as code generation, intelligent debugging, gameplay, and level generation. As a Coding Agent Researcher (Intern), you will participate in one or more of the following tasks:
+
+• Develop LLM-based game coding agents to enable automatic code generation, game logic development, error diagnosis, automatic debugging, and iterative optimization.
+
+• Explore the use of AI to fully automate the generation of game demos, core gameplay, levels, and other procedural game content. Track cutting-edge directions such as Coding Agents, code large language models, and world models, and conduct algorithm experiments, paper reproduction, and technological innovation.
+
+• Drive the practical application of research outcomes in game development and interactive entertainment scenarios, and produce high-quality technical reports, papers, or patents.
+
+• Collaborate closely with senior researchers and game development teams to jointly explore AI-driven game development and virtual world construction technologies.
+
+Who We Look For
+
+• Currently enrolled in a Master’s, or PhD program in Computer Science, Artificial Intelligence, Software Engineering, Machine Learning, or a related field.
+
+• Familiar with Python, with solid programming skills and a strong foundation in deep learning; understand the basic principles of large language models and intelligent agents.
+
+• Capable of independently conducting experiments, debugging code, and optimizing models, and able to complete the full workflow from solution design to experimental validation.
+
+• Strong interest in game development, procedural content generation, and the application of generative AI in interactive entertainment. Good communication, collaboration, and technical presentation skills.
+
+Preferred Qualifications
+
+• Familiarity with Unity, Unreal Engine, or other game engines; experience in developing Coding Agents, code large language models, tool use, or multi-agent systems is preferred.
+
+• Experience publishing relevant papers at top-tier conferences or journals such as CVPR, ICCV, ECCV, ICLR, ICML, and NeurIPS is preferred.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3209,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Coding-Agent-Research-Intern_R108212,,,,,,,not_checked,,2026-10-09,,2026-10-09,,0,startDate,false,0,,,,,,2026-10-09,,,,,,,,
+R108222,Sr. AI infra engineer,Tencent,Proxima Beta Pte. Limited,Full time,Posted Today,2026-10-09,0,Singapore-CapitaSky,1,Singapore-CapitaSky,false,,Singapore,,0,"About the Hiring Team
+Tencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.
+
+What the Role Entails
+
+About the Team
+
+The AI Compute Centre sits within Tencent's Overseas IT department, acting as the bridge between internal AI infrastructure demand and the external resources that fulfil it. We play key roles in the full lifecycle of AI infrastructure clusters — from requirement gathering and capacity planning, through architectural design and development, to delivery, operations, and DevOps — across regions worldwide.
+
+About the Role
+
+You will lead the cloud/edge cloud infrastructure projects you are responsible for delivering. Your focus is to turn business and technical requirements into deliverable plans, hold suppliers accountable, coordinate data centre readiness, and ensure that new capacity is accepted and handed over to operations with clear ownership.
+
+This is a cross-functional role. You will work with specialist engineers on compute, networking, storage, facilities, and security decisions; you are not expected to personally configure every system or run every benchmark. You should, however, be able to challenge assumptions, identify gaps between vendor commitments and delivered outcomes, and drive issues to resolution.
+
+What You Will Do
+
+● Translate demand into infrastructure requirements. Work with AI business and platform teams to define compute capacity, network bandwidth and latency, connectivity, data access, scalability, availability, and operational needs. Convert these into supplier requirements, evaluation criteria, delivery milestones, and acceptance criteria.
+
+● Lead network design and delivery reviews. Review data centre fabric, inter-data-centre and WAN connectivity, routing, IP planning, network segmentation, resilience, and expansion plans with internal architects and suppliers. Ensure designs address both AI workload requirements and day-to-day operability.
+
+● Manage network providers and delivery dependencies. Coordinate network equipment vendors, carriers, colocation partners, and system integrators on circuits, cross-connects, cabling, configuration handoffs, implementation windows, and fault escalation. Track responsibilities and resolve gaps between suppliers.
+
+● Drive data centre readiness. Coordinate rack space, power, cooling, physical access, cabling, carrier connectivity, and installation prerequisites. Identify site or network dependencies that could delay cluster deployment.
+
+● Own integration and acceptance governance. Coordinate compute, network, storage, and platform teams through installation, integration, testing, remediation, and sign-off. Require evidence for connectivity, bandwidth, latency, failover, and agreed cluster-level outcomes—not just confirmation that equipment has been installed.
+
+● Manage delivery and service accountability. Maintain integrated plans, risks, decision logs, and supplier action trackers. Define handover documentation, monitoring expectations, incident escalation, change procedures, support boundaries, and service review cadence.
+
+● Communicate technical risks clearly. Explain design trade-offs, unresolved defects, capacity constraints, and schedule impacts to both engineering teams and business stakeholders.
+
+Who We Look For
+
+Must-haves
+
+● Substantial experience in infrastructure architecture, network engineering, technical delivery, or service management, typically 10+ years in relevant roles.
+
+● Strong data centre or enterprise networking experience, with the ability to review network topology, routing, connectivity, redundancy, and capacity plans—not only manage project schedules.
+
+● Working knowledge of TCP/IP, L2/L3 networking, VLANs, routing protocols such as BGP and OSPF, and common data centre network design principles.
+
+● Experience delivering or operating networks across data centres, cloud environments, or multiple sites, including coordination with carriers, colocation providers, and network equipment vendors.
+
+● Ability to review network test plans and evidence, identify gaps in connectivity or failover, and work with engineers and suppliers to resolve issues.
+
+● Experience with a data centre migration, site deployment, colocation delivery, or comparable infrastructure transition involving multiple technical teams and external providers.
+
+● Demonstrated experience managing suppliers through design review, delivery milestones, acceptance, escalation, and production handover.
+
+● Ability to assess infrastructure proposals across compute, network, storage, availability, and operational support, while engaging specialists for detailed validation.
+
+● Strong documentation and stakeholder communication skills.
+
+Nice to Have
+
+● Experience evaluating or sourcing AI server capacity, AI infrastructure services, or large-scale compute platforms.
+
+● Deeper experience with Spine-Leaf/Clos fabrics, EVPN-VXLAN, ECMP, MLAG, or inter-data-centre connectivity.
+
+● Familiarity with InfiniBand, RoCE, RDMA, AI server cluster network design, high-performance storage, or cluster-level performance testing such as NCCL.
+
+● Experience with high-density data centre deployments, including power and cooling constraints.
+
+● Exposure to supplier SLAs, commercial evaluation, cost optimisation, disaster recovery, or service governance.
+
+● Relevant networking, cloud, AI infrastructure, project management, or IT service management certifications.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",5999,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Sr-AI-infra-engineer_R108222,,,,,,,not_checked,,2026-10-09,,2026-10-09,,0,startDate,false,0,,,,,,2026-10-09,,,,,,,,
+R108225,Software Engineer II,Tencent,Proxima Beta Pte. Limited,Full time,Posted Today,2026-10-09,0,Singapore-CapitaSky,1,Singapore-CapitaSky,false,,Singapore,,0,"About the Hiring Team
+Tencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.
+
+What the Role Entails
+
+- Design, develop, and deliver GPU/AI infrastructure platforms and tools
+
+- Build core capabilities for GPU resource management, workload scheduling, distributed training, and inference
+
+- Develop and improve the engineering infrastructure around mainstream AI frameworks and runtimes for LLM workloads
+
+- Optimize GPU cluster performance, stability, and resource utilization
+
+- Work closely with algorithm and business teams to solve AI workload engineering challenges and improve infrastructure efficiency
+
+Who We Look For
+
+- Strong software engineering skills in **Python, Go, or C++
+
+- Solid understanding of Linux, Docker, and Kubernetes
+
+- Familiarity with GPU technologies such as **CUDA, NCCL, and RDMA
+
+- Experience with distributed systems or distributed computing
+
+- Experience with **AI Coding / AI Agents** or AI-assisted software development
+
+- Experience in LLM training, inference, or GPU cluster infrastructure is a plus
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",1643,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Software-Engineer-II_R108225,,,,,,,not_checked,,2026-10-09,,2026-10-09,,0,startDate,false,0,,,,,,2026-10-09,,,,,,,,
+R108226,Senior Strategic Sales Executive,Tencent,IMAGE FRAME INVESTMENT (UK) LIMITED,Full time,Posted Today,2026-10-09,0,United Kingdom-London,1,United Kingdom-London,false,,United Kingdom,,0,"Business Unit
+Corporate Development Group (CDG) as the platform for the company's new business incubation and new business exploration, CDG is responsible for promoting development and innovation for important areas such as financial technology and advertising, as well as marketing services, including payment and financial applications. As a professional support platform, CDG also supports the company and various business groups in strategic planning, investments and mergers, investor relations and corporate global communications, marketing and public relations, and more.
+
+What the Role Entails
+
+Core Objective:
+
+To spearhead the acquisition of new performance advertising clients in the Europe markets. The role involves managing the full sales cycle from lead generation to deal closure, contributing to team revenue, building a robust client pipeline, and assisting in the development of overseas sales systems and industry-specific capabilities.
+
+Key Responsibilities：
+
+•
+Lead Generation & Prospecting: Proactively identify and engage potential advertisers (with a focus on Mobile Games, Apps, etc.) through various channels including external ecosystem partnerships, industry summits, online research, and partner referrals.
+
+•
+Client Engagement & Insight: Conduct high-quality client meetings (online/offline) to gain deep insights into their business objectives and advertising needs. Effectively communicate the value proposition of Tencent AMS overseas solutions.
+
+•
+Sales Pitching & Negotiation: Lead the creation and presentation of sales pitches, manage the negotiation process, and oversee the entire cycle until contract signing and client onboarding.
+
+•
+Cross-functional Collaboration: Work closely with Operations, Product, and Engineering teams to ensure client requirements are accurately understood and implemented, resolving any issues during the initial onboarding phase.
+
+•
+Pipeline Management & Reporting: Maintain disciplined management of leads and opportunities within the CRM system. Provide regular reports on pipeline status, sales forecasts, and key metrics (e.g., Lead-to-Close rate, sales cycle length).
+
+•
+Internal Ecosystem Synergy: Establish collaborative relationships with other internal business units focused on international expansion to share resources and achieve win-win outcomes.
+
+Who We Look For
+
+•
+Experience: 5+ years of experience in overseas performance advertising (Programmatic Advertising preferred) sales or business development. Proven track record of acquiring clients from ""0 to 1."" Familiarity with Games, E-commerce, or Brand Export industries is a plus.
+
+•
+Skills: Exceptional communication, negotiation, and presentation skills. Strong self-drive and goal-oriented mindset, with the ability to work independently in an uncertain environment.
+
+•
+Knowledge: Deep understanding of performance advertising concepts, programmatic buying, and mobile attribution. Familiarity with data privacy regulations such as GDPR/CCPA is preferred.
+
+•
+Languages: Full professional proficiency in English (working language). Proficiency in local languages of the target markets (e.g., German, French, Arabic, etc.) is highly preferred.
+
+•
+Others: Capability to work across different time zones; possesses a strong sense of teamwork and an entrepreneurial spirit.
+
+Equal Employment Opportunity at Tencent
+
+As an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.",3628,https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/United-Kingdom-London/Senior-Strategic-Sales-Executive_R108226,,https://www.linkedin.com/jobs/view/4414654315,2026-05-14,30,30 applicants,-148,matched,,2026-10-09,2026-10-09T13:56:37,2026-10-09,,148,startDate+linkedin,false,0,,,,,,2026-05-14,title,false,,,,,,
