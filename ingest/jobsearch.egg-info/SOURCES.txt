@@ -81,6 +81,13 @@ tests/test_prompts.py
 tests/test_regressions.py
 tests/test_reposts.py
 tests/test_s23_transient_resilience.py
+tests/test_s24_dify_adapter.py
+tests/test_s24_unreachable_classification.py
+tests/test_s25_remote_ok.py
+tests/test_s26_export.py
+tests/test_s27_geo_scope.py
+tests/test_s28_geo_canon.py
+tests/test_s28_geo_spread.py
 tests/test_s9_titlesearch.py
 tests/test_scoring.py
 tests/test_site_boards.py

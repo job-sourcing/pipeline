@@ -73,6 +73,27 @@ def clean_excerpt(desc: str, limit: int = 240) -> str:
     return txt[:limit] + ("…" if len(txt) > limit else "")
 
 
+def jd_is_english(desc: str) -> bool:
+    """D-S27-2 refinement (S29): the expat-oriented signal — the JD's
+    OWN language, per the user's criterion ("the job listing should be
+    clearly geared towards expat or overseas applicant"). A Chinese-
+    language JD targets the domestic market even when the row is
+    remote-CN (collected + flagged, D-S27-2); an English JD is the
+    overseas-applicant signal. STRICT: zero CJK chars + enough ASCII
+    letters in the first 600 chars — mixed CN/EN ships False (never
+    guess). Short/empty descriptions ship False (honest)."""
+    if not desc:
+        return False
+    sample = re.sub(r"<[^>]+>", " ", desc)[:600]
+    if len(sample.strip()) < 120:
+        return False
+    cjk = sum(1 for ch in sample if "\u4e00" <= ch <= "\u9fff")
+    if cjk:
+        return False
+    letters = sum(1 for ch in sample if ch.isascii() and ch.isalpha())
+    return letters >= 60
+
+
 _GEO_CANON = {
     "united states": "United States",
     "united states of america": "United States",
@@ -216,6 +237,7 @@ def main() -> int:
                 "url": r.get("url") or "",
                 "excerpt": clean_excerpt(r.get("description") or ""),
                 "descLen": num(r.get("descriptionLength")) or 0,
+                "englishJD": jd_is_english(r.get("description") or ""),
                 "detailError": r.get("detailError") or "",
             }
             jobs.append(job)

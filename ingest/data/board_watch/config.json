@@ -1,1841 +1,1890 @@
 {
-  "watches": [
-    {
-      "label": "alibaba_us_fulltime",
-      "board": "custom:alibaba",
-      "company": "Alibaba Group",
-      "country": "United States",
-      "li_variants": [
-        "Alibaba Group",
-        "Alibaba",
-        "Alibaba Cloud",
-        "Alibaba.com"
-      ],
-      "slice_locations": [
-        "United States",
-        "Sunnyvale, California, United States",
-        "Bellevue, Washington, United States",
-        "Seattle, Washington, United States",
-        "Santa Clara, California, United States",
-        "Pasadena, California, United States"
-      ]
-    },
-    {
-      "label": "anthropic_us_fulltime",
-      "board": "ats:greenhouse:anthropic",
-      "company": "Anthropic",
-      "country": "United States",
-      "li_variants": [
-        "Anthropic"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Francisco, California, United States",
-        "Seattle, Washington, United States",
-        "New York, New York, United States",
-        "Remote, United States"
-      ]
-    },
-    {
-      "label": "baidu_us_fulltime",
-      "board": "ats:greenhouse:baidu",
-      "company": "Baidu",
-      "country": "United States",
-      "li_variants": [
-        "Baidu",
-        "Baidu USA",
-        "Baidu, Inc."
-      ],
-      "slice_locations": [
-        "United States",
-        "Sunnyvale, California, United States",
-        "Mountain View, California, United States",
-        "Los Angeles, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "byd_us_fulltime",
-      "board": "ats:greenhouse:byd",
-      "company": "BYD",
-      "country": "United States",
-      "li_variants": [
-        "BYD",
-        "BYD North America",
-        "BYD Electronic America Corp."
-      ],
-      "slice_locations": [
-        "United States",
-        "Pasadena, California, United States",
-        "Lancaster, California, United States",
-        "Cupertino, California, United States",
-        "Manteca, California, United States",
-        "Las Vegas, Nevada, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "bytedance_us_fulltime",
-      "board": "custom:bytedance",
-      "company": "ByteDance",
-      "country": "United States",
-      "li_variants": [
-        "ByteDance",
-        "TikTok",
-        "ByteDance Ltd"
-      ],
-      "slice_locations": [
-        "United States",
-        "Seattle, Washington, United States",
-        "San Jose, California, United States",
-        "Los Angeles, California, United States",
-        "New York, New York, United States",
-        "San Diego, California, United States",
-        "Boston, Massachusetts, United States",
-        "Ashburn, Virginia, United States"
-      ],
-      "time_type": "Full time"
-    },
-    {
-      "label": "didi_us_fulltime",
-      "board": "ats:greenhouse:didi",
-      "company": "DiDi",
-      "country": "United States",
-      "li_variants": [
-        "DiDi",
-        "DiDi Labs",
-        "DiDi Global"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Jose, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "faradayfuture_us_fulltime",
-      "board": "ats:greenhouse:faradayfuture",
-      "company": "Faraday Future",
-      "country": "United States",
-      "li_variants": [
-        "Faraday Future",
-        "Faraday Future Inc."
-      ],
-      "slice_locations": [
-        "United States",
-        "El Segundo, California, United States",
-        "Los Angeles, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "gea_us_fulltime",
-      "board": "haier|wd3|GE_Appliances",
-      "company": "GE Appliances",
-      "country": "United States",
-      "time_type": "Full time",
-      "li_variants": [
-        "GE Appliances",
-        "GE Appliances, a Haier company"
-      ],
-      "slice_locations": [
-        "United States",
-        "Louisville, Kentucky, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "gotion_us_fulltime",
-      "board": "ats:greenhouse:gotion",
-      "company": "Gotion",
-      "country": "United States",
-      "li_variants": [
-        "Gotion Inc.",
-        "Gotion"
-      ],
-      "slice_locations": [
-        "United States",
-        "Fremont, California, United States",
-        "Manteno, Illinois, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "horizon_us_fulltime",
-      "board": "ats:lever:horizon",
-      "company": "Horizon Robotics",
-      "country": "United States",
-      "li_variants": [
-        "Horizon Robotics"
-      ],
-      "slice_locations": [
-        "United States",
-        "Cupertino, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "jd_us_fulltime",
-      "board": "jd|wd103|Careers_at_JD",
-      "company": "JD.com",
-      "country": "United States",
-      "time_type": "Full time",
-      "li_variants": [
-        "JD.com",
-        "JD Logistics",
-        "JD Technology"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States",
-        "New York, New York, United States",
-        "San Jose, California, United States",
-        "Remote, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "minimax_us_fulltime",
-      "board": "ats:feishuhire:vrfi1sk8a0",
-      "company": "MiniMax",
-      "country": "United States",
-      "li_variants": [
-        "MiniMax",
-        "MiniMax AI"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Francisco, California, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "moonshot_us_fulltime",
-      "board": "ats:ashby:moonshot",
-      "company": "Moonshot AI",
-      "country": "United States",
-      "li_variants": [
-        "Moonshot AI",
-        "Moonshot AI Inc"
-      ],
-      "slice_locations": [
-        "United States",
-        "New York, New York, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "neteasegames_us_fulltime",
-      "board": "ats:greenhouse:neteasegames",
-      "company": "NetEase Games",
-      "country": "United States",
-      "li_variants": [
-        "NetEase",
-        "NetEase Games"
-      ],
-      "slice_locations": [
-        "United States",
-        "Remote, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "netflix_us_fulltime",
-      "board": "netflix|wd108|Netflix",
-      "company": "Netflix",
-      "country": "United States",
-      "time_type": "Full time",
-      "li_variants": [
-        "Netflix",
-        "Netflix Animation Studios"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Gatos, California, United States",
-        "Los Angeles, California, United States",
-        "New York, New York, United States",
-        "Remote, United States",
-        "Washington, District of Columbia, United States",
-        "Las Vegas, Nevada, United States",
-        "Albuquerque, New Mexico, United States",
-        "Dallas, Texas, United States",
-        "Atlanta, Georgia, United States",
-        "Burbank, California, United States"
-      ]
-    },
-    {
-      "label": "nvidia_us_fulltime",
-      "board": "nvidia|wd5|nvidiaexternalcareersite",
-      "company": "NVIDIA",
-      "country": "United States",
-      "time_type": "Full time"
-    },
-    {
-      "label": "openai_us_fulltime",
-      "board": "ats:ashby:openai",
-      "company": "OpenAI",
-      "country": "United States",
-      "li_variants": [
-        "OpenAI"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Francisco, California, United States",
-        "Seattle, Washington, United States",
-        "New York, New York, United States",
-        "Remote, United States"
-      ],
-      "time_type": "Full time"
-    },
-    {
-      "label": "pony_us_fulltime",
-      "board": "ats:workable:pony-dot-ai",
-      "company": "Pony.ai",
-      "country": "United States",
-      "li_variants": [
-        "Pony.ai",
-        "Pony AI"
-      ],
-      "slice_locations": [
-        "United States",
-        "Fremont, California, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "shein_us_fulltime",
-      "board": "ats:greenhouse:shein",
-      "company": "SHEIN",
-      "country": "United States",
-      "li_variants": [
-        "SHEIN",
-        "SHEIN U.S."
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States",
-        "San Diego, California, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "shengshu_us_fulltime",
-      "board": "ats:feishuhire:shengshu",
-      "company": "Shengshu",
-      "country": "United States",
-      "li_variants": [
-        "Shengshu",
-        "Shengshu Technology",
-        "Vidu"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Francisco, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "tcl_us_fulltime",
-      "board": "ats:greenhouse:tcl",
-      "company": "TCL",
-      "country": "United States",
-      "li_variants": [
-        "TCL North America",
-        "TCL"
-      ],
-      "slice_locations": [
-        "United States",
-        "Irvine, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "tencent_us_fulltime",
-      "board": "tencent|wd1|Tencent_Careers",
-      "company": "Tencent",
-      "country": "United States",
-      "time_type": "Full time",
-      "li_variants": [
-        "Tencent",
-        "Tencent America",
-        "Tencent Games"
-      ],
-      "slice_locations": [
-        "United States",
-        "Palo Alto, California, United States",
-        "Seattle, Washington, United States",
-        "San Jose, California, United States",
-        "Remote, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "tplink_us_fulltime",
-      "board": "ats:workable:tp-link-usa-corp",
-      "company": "TP-Link",
-      "country": "United States",
-      "li_variants": [
-        "TP-Link",
-        "TP-Link Systems Inc."
-      ],
-      "slice_locations": [
-        "United States",
-        "Irvine, California, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "tripcom_us_fulltime",
-      "board": "custom:tripcom",
-      "company": "Trip.com Group",
-      "country": "United States",
-      "li_variants": [
-        "Trip.com Group",
-        "Trip.com",
-        "Trip.com Group Limited"
-      ],
-      "slice_locations": [
-        "United States",
-        "Santa Clara, California, United States",
-        "San Jose, California, United States",
-        "Los Angeles, California, United States",
-        "Miami, Florida, United States",
-        "Chicago, Illinois, United States",
-        "San Francisco, California, United States"
-      ]
-    },
-    {
-      "label": "weride_us_fulltime",
-      "board": "ats:lever:weride",
-      "company": "WeRide",
-      "country": "United States",
-      "li_variants": [
-        "WeRide",
-        "WeRide Inc."
-      ],
-      "slice_locations": [
-        "United States",
-        "San Jose, California, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "xiaohongshu_us_fulltime",
-      "board": "custom:xiaohongshu",
-      "company": "Xiaohongshu",
-      "country": "United States",
-      "li_variants": [
-        "rednote",
-        "Xiaohongshu"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Francisco, California, United States",
-        "New York, New York, United States"
-      ],
-      "egress_restricted": "gha_us"
-    },
-    {
-      "label": "xpeng_us_fulltime",
-      "board": "ats:greenhouse:xpengmotors",
-      "company": "XPENG",
-      "country": "United States",
-      "li_variants": [
-        "XPENG",
-        "XPENG Motors"
-      ],
-      "slice_locations": [
-        "United States",
-        "Santa Clara, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "hoyoverse_us_fulltime",
-      "board": "ats:ashby:hoyoverse",
-      "company": "HoYoverse",
-      "country": "United States",
-      "li_variants": [
-        "HoYoverse"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States",
-        "Remote, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "unitedimaging_us_fulltime",
-      "board": "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2",
-      "company": "United Imaging",
-      "country": "United States",
-      "li_variants": [
-        "United Imaging",
-        "United Imaging Healthcare"
-      ],
-      "slice_locations": [
-        "United States",
-        "Remote, United States",
-        "Houston, Texas, United States",
-        "Seattle, Washington, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "genscript_us_fulltime",
-      "board": "ats:greenhouse:genscript",
-      "company": "GenScript",
-      "country": "United States",
-      "li_variants": [
-        "GenScript",
-        "GenScript Biotech",
-        "GenScript USA"
-      ],
-      "slice_locations": [
-        "United States",
-        "Piscataway, New Jersey, United States",
-        "San Jose, California, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "legendbiotech_us_fulltime",
-      "board": "ats:greenhouse:legendcareers",
-      "company": "Legend Biotech",
-      "country": "United States",
-      "li_variants": [
-        "Legend Biotech",
-        "Legend Biotech US"
-      ],
-      "slice_locations": [
-        "United States",
-        "Somerset, New Jersey, United States",
-        "Raritan, New Jersey, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "nio_us_fulltime",
-      "board": "ats:lever:nio-usa",
-      "company": "NIO",
-      "country": "United States",
-      "li_variants": [
-        "NIO",
-        "NIO USA, Inc.",
-        "NIO USA"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Jose, California, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "foxit_us_fulltime",
-      "board": "ats:lever:foxitsoftware",
-      "company": "Foxit",
-      "country": "United States",
-      "li_variants": [
-        "Foxit",
-        "Foxit Software",
-        "Foxit Inc."
-      ],
-      "slice_locations": [
-        "United States",
-        "Fremont, California, United States",
-        "Milpitas, California, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "poizon_us_fulltime",
-      "board": "ats:feishuhire:poizon",
-      "company": "POIZON",
-      "country": "United States",
-      "li_variants": [
-        "POIZON",
-        "Poizon",
-        "Dewu"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "fuyao_us_fulltime",
-      "board": "ats:adp:25319558-d6a9-48ab-93d2-99e4878a8ffc",
-      "company": "Fuyao Glass America",
-      "country": "United States",
-      "li_variants": [
-        "Fuyao Glass America",
-        "Fuyao Glass America Inc.",
-        "Fuyao"
-      ],
-      "slice_locations": [
-        "United States",
-        "Moraine, Ohio, United States",
-        "Dayton, Ohio, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "sanhua_us_fulltime",
-      "board": "ats:jazzhr:sanhua",
-      "company": "Sanhua",
-      "country": "United States",
-      "li_variants": [
-        "Sanhua",
-        "Sanhua International",
-        "Sanhua Group"
-      ],
-      "slice_locations": [
-        "United States",
-        "Auburn Hills, Michigan, United States"
-      ]
-    },
-    {
-      "label": "foxconnfii_us_fulltime",
-      "board": "ats:jazzhr:foxconnassemblyllc",
-      "company": "Foxconn Industrial Internet",
-      "country": "United States",
-      "li_variants": [
-        "Foxconn Industrial Internet",
-        "FII",
-        "Foxconn Assembly"
-      ],
-      "slice_locations": [
-        "United States",
-        "Houston, Texas, United States",
-        "San Jose, California, United States"
-      ]
-    },
-    {
-      "label": "lenovo_us_fulltime",
-      "board": "ats:radancy:jobs.lenovo.com",
-      "company": "Lenovo",
-      "country": "United States",
-      "li_variants": [
-        "Lenovo",
-        "Lenovo Group",
-        "Lenovo North America"
-      ],
-      "slice_locations": [
-        "United States",
-        "Morrisville, North Carolina, United States",
-        "Whitsett, North Carolina, United States"
-      ]
-    },
-    {
-      "label": "cainiao_us_fulltime",
-      "board": "ats:teamtailor:cainiao",
-      "company": "Cainiao",
-      "country": "United States",
-      "li_variants": [
-        "Cainiao",
-        "Cainiao Network",
-        "Cainiao Global"
-      ],
-      "slice_locations": [
-        "United States",
-        "Port Wentworth, Georgia, United States",
-        "Savannah, Georgia, United States"
-      ]
-    },
-    {
-      "label": "webull_us_fulltime",
-      "board": "ats:rippling:webull",
-      "company": "Webull",
-      "country": "United States",
-      "li_variants": [
-        "Webull",
-        "Webull Financial",
-        "Webull Corporation"
-      ],
-      "slice_locations": [
-        "United States",
-        "New York, New York, United States"
-      ]
-    },
-    {
-      "label": "popmart_us_fulltime",
-      "board": "popmart|wd102|popmart",
-      "company": "Pop Mart",
-      "country": "United States",
-      "time_type": "Full time",
-      "li_variants": [
-        "Pop Mart",
-        "POP MART",
-        "Pop Mart International Group",
-        "Pop Mart Americas"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States",
-        "New York, New York, United States",
-        "Bellevue, Washington, United States",
-        "Remote, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "beone_us_fulltime",
-      "board": "beigene|wd5|BeiGene",
-      "company": "BeOne Medicines",
-      "country": "United States",
-      "li_variants": [
-        "BeOne Medicines",
-        "BeiGene",
-        "BeOne Medicines US",
-        "BeiGene US"
-      ],
-      "slice_locations": [
-        "United States",
-        "Remote, United States",
-        "San Carlos, California, United States",
-        "San Diego, California, United States",
-        "Hopewell, New Jersey, United States",
-        "Foster City, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "chagee_us_fulltime",
-      "board": "chagee|wd102|External",
-      "company": "Chagee",
-      "country": "United States",
-      "time_type": "Full time",
-      "li_variants": [
-        "Chagee",
-        "CHAGEE",
-        "Chagee Holdings",
-        "Bawang Chagee"
-      ],
-      "slice_locations": [
-        "United States",
-        "Irvine, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "sungrow_us_fulltime",
-      "board": "ats:adp:c2e0ba67-e6f9-439e-b8a3-0d734568eac2",
-      "company": "Sungrow",
-      "country": "United States",
-      "li_variants": [
-        "Sungrow",
-        "Sungrow Power Supply",
-        "Sungrow US",
-        "Sungrow Power Supply Co., Ltd"
-      ],
-      "slice_locations": [
-        "United States",
-        "Fresno, California, United States",
-        "Houston, Texas, United States",
-        "Tempe, Arizona, United States",
-        "Remote, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "deeproute_us_fulltime",
-      "board": "ats:workable:deeproute-dot-a-i",
-      "company": "DeepRoute.ai",
-      "country": "United States",
-      "li_variants": [
-        "DeepRoute.ai",
-        "DeepRoute",
-        "DeepRoute AI",
-        "DeepRoute.ai Inc"
-      ],
-      "slice_locations": [
-        "United States",
-        "Fremont, California, United States",
-        "San Jose, California, United States"
-      ],
-      "time_type": "Full time",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "agora_us_fulltime",
-      "board": "ats:rippling:agora",
-      "company": "Agora",
-      "country": "United States",
-      "li_variants": [
-        "Agora",
-        "Agora.io",
-        "Agora Lab",
-        "Agora Communications"
-      ],
-      "slice_locations": [
-        "United States",
-        "Santa Clara, California, United States",
-        "Remote, United States"
-      ]
-    },
-    {
-      "label": "bitdeer_us_fulltime",
-      "board": "ats:breezy:bitdeer",
-      "company": "Bitdeer",
-      "li_variants": [
-        "Bitdeer",
-        "Bitdeer Technologies Group",
-        "Bitdeer Inc"
-      ],
-      "slice_locations": [
-        "United States",
-        "Austin, Texas, United States",
-        "San Jose, California, United States",
-        "Remote, United States"
-      ],
-      "country": "United States",
-      "time_type": "Full time"
-    },
-    {
-      "label": "omnivision_us_fulltime",
-      "board": "ats:jobvite:ovt",
-      "company": "OmniVision",
-      "li_variants": [
-        "OmniVision",
-        "OmniVision Technologies",
-        "Will Semiconductor",
-        "Will Semi"
-      ],
-      "slice_locations": [
-        "United States",
-        "Santa Clara, California, United States",
-        "Irvine, California, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "mattson_us_fulltime",
-      "board": "ats:oraclehcm:eidg.fa.us6.oraclecloud.com|CX_1",
-      "company": "Mattson Technology",
-      "li_variants": [
-        "Mattson Technology",
-        "Mattson",
-        "Etown Capital"
-      ],
-      "slice_locations": [
-        "United States",
-        "Fremont, California, United States",
-        "Hillsboro, Oregon, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "virtuos_us_fulltime",
-      "board": "ats:oraclehcm:fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com|CX_1",
-      "company": "Virtuos",
-      "li_variants": [
-        "Virtuos",
-        "Virtuos Games",
-        "Virtuos North America"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States",
-        "San Francisco, California, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "hisense_us_fulltime",
-      "board": "ats:bamboohr:hisenseusacorporation",
-      "company": "Hisense USA",
-      "li_variants": [
-        "Hisense",
-        "Hisense USA",
-        "Hisense Corporation"
-      ],
-      "slice_locations": [
-        "United States",
-        "Alpharetta, Georgia, United States",
-        "Suwanee, Georgia, United States",
-        "Remote, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "joyson_us_fulltime",
-      "board": "ats:j2w:careers.joysonsafety.com/search",
-      "company": "Joyson Safety Systems",
-      "li_variants": [
-        "Joyson Safety Systems",
-        "Joyson",
-        "Key Safety Systems",
-        "Joyson Safety Systems Acquisition"
-      ],
-      "slice_locations": [
-        "United States",
-        "Auburn Hills, Michigan, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "cofco_us_fulltime",
-      "board": "ats:j2w:careers.cofcointernational.com/search-jobs",
-      "company": "COFCO International",
-      "li_variants": [
-        "COFCO International",
-        "COFCO",
-        "COFCO International North America"
-      ],
-      "slice_locations": [
-        "United States",
-        "Chicago, Illinois, United States",
-        "Stamford, Connecticut, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "meyer_us_fulltime",
-      "board": "ats:ultipro:MEY1000MEYER|7a970c3d-b076-4042-8735-673b5e5508ac",
-      "company": "Meyer",
-      "li_variants": [
-        "Meyer",
-        "Meyer Corporation",
-        "Meyer Manufacturing",
-        "Meyer Cookware"
-      ],
-      "slice_locations": [
-        "United States",
-        "Vallejo, California, United States",
-        "Remote, United States"
-      ],
-      "country": "United States",
-      "time_type": "Full time"
-    },
-    {
-      "label": "amersports_us_fulltime",
-      "board": "ats:talentadore:amersports.careers.talentadore.com",
-      "company": "Amer Sports",
-      "li_variants": [
-        "Amer Sports",
-        "Wilson Sporting Goods",
-        "Salomon",
-        "Arc'teryx",
-        "Atomic"
-      ],
-      "slice_locations": [
-        "United States",
-        "New York, New York, United States",
-        "Chicago, Illinois, United States"
-      ],
-      "country": "United States",
-      "time_type": "Full time"
-    },
-    {
-      "label": "haidilao_us_fulltime",
-      "board": "ats:workstream:fcc54c54",
-      "company": "Haidilao",
-      "li_variants": [
-        "Haidilao",
-        "Haidilao Hot Pot",
-        "HDL Management USA",
-        "Haidilao International"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States",
-        "Seattle, Washington, United States",
-        "Chicago, Illinois, United States",
-        "Irvine, California, United States",
-        "Bellevue, Washington, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "tti_us_fulltime",
-      "board": "ats:ttiproxy:US",
-      "company": "Techtronic Industries",
-      "li_variants": [
-        "Techtronic Industries",
-        "TTI",
-        "Milwaukee Tool",
-        "Ryobi",
-        "Techtronic Industries North America",
-        "TTI Floor Care"
-      ],
-      "slice_locations": [
-        "United States",
-        "Anderson, South Carolina, United States",
-        "Brookfield, Wisconsin, United States",
-        "Memphis, Tennessee, United States",
-        "Remote, United States"
-      ],
-      "country": "United States",
-      "time_type": "Full time"
-    },
-    {
-      "label": "niu_us_fulltime",
-      "board": "ats:sanity:cd9iwvgl/production|Jobs|en-us",
-      "company": "NIU Technologies",
-      "li_variants": [
-        "NIU",
-        "NIU Technologies",
-        "Niu Power"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "ascentage_us_fulltime",
-      "board": "ats:wpjobboard:www.ascentage.com",
-      "company": "Ascentage Pharma",
-      "li_variants": [
-        "Ascentage Pharma",
-        "Ascentage",
-        "Ascentage Pharma Group"
-      ],
-      "slice_locations": [
-        "United States",
-        "Remote, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "wuxibio_us_fulltime",
-      "board": "ats:wuxibio:www.wuxibiologics.com",
-      "company": "WuXi Biologics",
-      "li_variants": [
-        "WuXi Biologics",
-        "WuXi Biologics USA",
-        "WuXi Advanced Therapies"
-      ],
-      "slice_locations": [
-        "United States",
-        "Cranbury, New Jersey, United States",
-        "Philadelphia, Pennsylvania, United States",
-        "San Diego, California, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "antintl_us_fulltime",
-      "board": "ats:antintl:M7892",
-      "company": "Ant International",
-      "li_variants": [
-        "Ant International",
-        "Ant Group",
-        "Ant Tech",
-        "Quadrant Technologies"
-      ],
-      "slice_locations": [
-        "United States",
-        "Sunnyvale, California, United States",
-        "New York, New York, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "greenland_us_fulltime",
-      "board": "custom:greenland",
-      "company": "Greenland USA",
-      "li_variants": [
-        "Greenland USA",
-        "Greenland America",
-        "Shanghai Greenland"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States",
-        "New York, New York, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "jereh_us_fulltime",
-      "board": "custom:jereh",
-      "company": "Jereh Group",
-      "li_variants": [
-        "Jereh",
-        "Jereh Energy Equipment and Technologies",
-        "American Jereh International Corporation"
-      ],
-      "slice_locations": [
-        "United States",
-        "Houston, Texas, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "autel_us_fulltime",
-      "board": "custom:autelenergy",
-      "company": "Autel Energy",
-      "li_variants": [
-        "Autel Energy",
-        "Autel"
-      ],
-      "slice_locations": [
-        "United States",
-        "North Carolina, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "aden_us_fulltime",
-      "board": "custom:aden",
-      "company": "Aden Group",
-      "li_variants": [
-        "Aden Group",
-        "Akila",
-        "Akila Technologies"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "mandarinoriental_us_fulltime",
-      "board": "custom:mandarinoriental",
-      "company": "Mandarin Oriental",
-      "li_variants": [
-        "Mandarin Oriental",
-        "Mandarin Oriental Hotel Group",
-        "Mandarin Oriental Residences"
-      ],
-      "slice_locations": [
-        "United States",
-        "New York, New York, United States",
-        "Boston, Massachusetts, United States",
-        "Miami, Florida, United States",
-        "Beverly Hills, California, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "wuxiapptec_us_fulltime",
-      "board": "custom:wuxiapptec",
-      "company": "WuXi AppTec",
-      "li_variants": [
-        "WuXi AppTec",
-        "WuXi AppTec Inc",
-        "WuXi STA",
-        "WuXi TIDES"
-      ],
-      "slice_locations": [
-        "United States",
-        "Middletown, Delaware, United States",
-        "San Diego, California, United States",
-        "Cranbury, New Jersey, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "bosonai_us_fulltime",
-      "board": "ats:lever:bosonai",
-      "company": "Boson AI",
-      "li_variants": [
-        "Boson AI",
-        "Boson AI USA",
-        "BosonAI"
-      ],
-      "slice_locations": [
-        "United States",
-        "Santa Clara, California, United States",
-        "San Francisco, California, United States"
-      ],
-      "country": "United States",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "hesai_us_fulltime",
-      "board": "ats:feishuhire:kwh0jtf778",
-      "company": "Hesai Technology",
-      "li_variants": [
-        "Hesai",
-        "Hesai Technology",
-        "Hesai LiDAR"
-      ],
-      "slice_locations": [
-        "United States",
-        "Palo Alto, California, United States",
-        "Sunnyvale, California, United States"
-      ],
-      "country": "United States",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "blacksesame_us_fulltime",
-      "board": "custom:blacksesame",
-      "company": "Black Sesame Technologies",
-      "li_variants": [
-        "Black Sesame Technologies",
-        "Black Sesame"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Jose, California, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "ecovacsus_us_fulltime",
-      "board": "custom:ecovacsus",
-      "company": "Ecovacs Robotics",
-      "li_variants": [
-        "Ecovacs Robotics",
-        "ECOVACS",
-        "Ecovacs"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "accutar_us_fulltime",
-      "board": "custom:accutar",
-      "company": "Accutar Biotech",
-      "li_variants": [
-        "Accutar Biotech",
-        "Accutar Biotechnology"
-      ],
-      "slice_locations": [
-        "United States",
-        "Cranbury, New Jersey, United States",
-        "Mountain View, California, United States",
-        "Bellevue, Washington, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "hitgen_us_fulltime",
-      "board": "custom:hitgen",
-      "company": "HitGen",
-      "li_variants": [
-        "HitGen",
-        "HitGen Inc",
-        "Chengdu HitGen"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "insilico_us_fulltime",
-      "board": "custom:insilico",
-      "company": "Insilico Medicine",
-      "li_variants": [
-        "Insilico Medicine",
-        "Insilico"
-      ],
-      "slice_locations": [
-        "United States",
-        "Remote"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "insta360_us_fulltime",
-      "board": "ats:feishuhire:arashivision",
-      "company": "Insta360",
-      "li_variants": [
-        "Insta360",
-        "Arashi Vision",
-        "Insta360 USA"
-      ],
-      "slice_locations": [
-        "United States",
-        "New York, New York, United States",
-        "Los Angeles, California, United States"
-      ],
-      "country": "United States",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "liauto_us_fulltime",
-      "board": "ats:feishuhire:li",
-      "company": "Li Auto",
-      "li_variants": [
-        "Li Auto",
-        "Li Auto Inc",
-        "Lixiang"
-      ],
-      "slice_locations": [
-        "United States",
-        "Irvine, California, United States",
-        "San Jose, California, United States"
-      ],
-      "country": "United States",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "meitu_us_fulltime",
-      "board": "ats:feishuhire:meitu",
-      "company": "Meitu",
-      "li_variants": [
-        "Meitu",
-        "Pixocial",
-        "Meitu Inc"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Francisco, California, United States"
-      ],
-      "country": "United States",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "orionstar_us_fulltime",
-      "board": "ats:feishuhire:orionstar",
-      "company": "OrionStar",
-      "li_variants": [
-        "OrionStar",
-        "OrionStar Robotics",
-        "Cheetah Mobile"
-      ],
-      "slice_locations": [
-        "United States",
-        "Washington, District of Columbia, United States"
-      ],
-      "country": "United States",
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "orbbec_us_fulltime",
-      "board": "custom:orbbec",
-      "company": "Orbbec",
-      "li_variants": [
-        "Orbbec",
-        "Orbbec 3D Technology International"
-      ],
-      "slice_locations": [
-        "United States",
-        "Detroit, Michigan, United States",
-        "Troy, Michigan, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "visionnav_us_fulltime",
-      "board": "custom:visionnav",
-      "company": "VisionNav Robotics",
-      "li_variants": [
-        "VisionNav",
-        "VisionNav Robotics",
-        "VisionNav Robotics USA"
-      ],
-      "slice_locations": [
-        "United States",
-        "Atlanta, Georgia, United States",
-        "Lawrenceville, Georgia, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "verisilicon_us_fulltime",
-      "board": "custom:verisilicon",
-      "company": "VeriSilicon",
-      "li_variants": [
-        "VeriSilicon",
-        "VeriSilicon Inc"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Jose, California, United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "uniview_us_fulltime",
-      "board": "custom:uniview",
-      "company": "Uniview",
-      "li_variants": [
-        "Uniview",
-        "Uniview Technologies",
-        "Zhejiang Uniview"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "country": "United States"
-    },
-    {
-      "label": "zilliz_us_fulltime",
-      "board": "ats:lever:zilliz",
-      "company": "Zilliz",
-      "country": "United States",
-      "li_variants": [
-        "Zilliz",
-        "Zilliz Inc."
-      ],
-      "slice_locations": [
-        "United States",
-        "Redwood City, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "qcraft_us_fulltime",
-      "board": "ats:workable:qcraft",
-      "company": "QCraft",
-      "country": "United States",
-      "li_variants": [
-        "QCraft",
-        "QCraft Inc"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Francisco, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "lightelligence_us_fulltime",
-      "board": "ats:workable:lightelligence",
-      "company": "Lightelligence",
-      "country": "United States",
-      "li_variants": [
-        "Lightelligence",
-        "Lightelligence Inc"
-      ],
-      "slice_locations": [
-        "United States",
-        "Boston, Massachusetts, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "dify_us_fulltime",
-      "board": "custom:dify",
-      "company": "Dify (LangGenius)",
-      "country": "United States",
-      "li_variants": [
-        "Dify",
-        "LangGenius"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Mateo, California, United States"
-      ]
-    },
-    {
-      "label": "airwallex_us_fulltime",
-      "board": "ats:ashby:airwallex",
-      "company": "Airwallex",
-      "country": "United States",
-      "li_variants": [
-        "Airwallex"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Francisco, California, United States",
-        "New York, New York, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "okx_us_fulltime",
-      "board": "ats:greenhouse:okx",
-      "company": "OKX",
-      "country": "United States",
-      "li_variants": [
-        "OKX",
-        "OKCoin"
-      ],
-      "slice_locations": [
-        "United States",
-        "San Jose, California, United States",
-        "New York, New York, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "pingcap_us_fulltime",
-      "board": "ats:greenhouse:pingcap",
-      "company": "PingCAP",
-      "country": "United States",
-      "li_variants": [
-        "PingCAP",
-        "TiDB"
-      ],
-      "slice_locations": [
-        "United States",
-        "Remote, United States",
-        "San Jose, California, United States"
-      ],
-      "include_remote": true,
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "riotgames_us_fulltime",
-      "board": "ats:greenhouse:riotgames",
-      "company": "Riot Games",
-      "country": "United States",
-      "li_variants": [
-        "Riot Games"
-      ],
-      "slice_locations": [
-        "United States",
-        "Los Angeles, California, United States",
-        "Seattle, Washington, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "streamnative_us_fulltime",
-      "board": "ats:greenhouse:streamnative",
-      "company": "StreamNative",
-      "country": "United States",
-      "li_variants": [
-        "StreamNative"
-      ],
-      "slice_locations": [
-        "United States",
-        "Remote, United States"
-      ],
-      "include_remote": true,
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "alluxio_us_fulltime",
-      "board": "ats:lever:alluxio",
-      "company": "Alluxio",
-      "country": "United States",
-      "li_variants": [
-        "Alluxio"
-      ],
-      "slice_locations": [
-        "United States",
-        "Foster City, California, United States",
-        "San Mateo, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "ambergroup_us_fulltime",
-      "board": "ats:lever:ambergroup",
-      "company": "Amber Group",
-      "country": "United States",
-      "li_variants": [
-        "Amber Group",
-        "Amber"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "include_remote": true,
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "binance_us_fulltime",
-      "board": "ats:lever:binance",
-      "company": "Binance",
-      "country": "United States",
-      "li_variants": [
-        "Binance"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "include_remote": true,
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "funplus_us_fulltime",
-      "board": "ats:workable:fun-plus",
-      "company": "FunPlus",
-      "country": "United States",
-      "li_variants": [
-        "FunPlus",
-        "Fun Plus"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "risingwave_us_fulltime",
-      "board": "ats:workable:risingwave-labs",
-      "company": "RisingWave",
-      "country": "United States",
-      "li_variants": [
-        "RisingWave",
-        "RisingWave Labs"
-      ],
-      "slice_locations": [
-        "United States",
-        "Remote, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "autelrobotics_us_fulltime",
-      "board": "ats:workable:autel-robotics",
-      "company": "Autel Robotics",
-      "country": "United States",
-      "li_variants": [
-        "Autel Robotics"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "zoomlion_us_fulltime",
-      "board": "ats:workable:zoomlion",
-      "company": "Zoomlion",
-      "country": "United States",
-      "li_variants": [
-        "Zoomlion",
-        "Zoomlion Heavy Industry"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "celerdata_us_fulltime",
-      "board": "ats:rippling:celerdataopenroles",
-      "company": "CelerData",
-      "country": "United States",
-      "li_variants": [
-        "CelerData",
-        "StarRocks",
-        "PhoenixAI"
-      ],
-      "slice_locations": [
-        "United States",
-        "Remote, United States"
-      ]
-    },
-    {
-      "label": "ankerus_us_fulltime",
-      "board": "ats:feishuhire:anker-in",
-      "company": "Anker (US)",
-      "country": "United States",
-      "li_variants": [
-        "Anker",
-        "Anker Innovations"
-      ],
-      "slice_locations": [
-        "United States",
-        "Seattle, Washington, United States",
-        "Los Angeles, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "bambulab_us_fulltime",
-      "board": "ats:feishuhire:bambulab",
-      "company": "Bambu Lab",
-      "country": "United States",
-      "li_variants": [
-        "Bambu Lab",
-        "BambuLab"
-      ],
-      "slice_locations": [
-        "United States",
-        "Santa Clara, California, United States",
-        "Austin, Texas, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "ecoflowus_us_fulltime",
-      "board": "ats:feishuhire:ecoflow",
-      "company": "EcoFlow (US)",
-      "country": "United States",
-      "li_variants": [
-        "EcoFlow"
-      ],
-      "slice_locations": [
-        "United States",
-        "Irvine, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "makeblockus_us_fulltime",
-      "board": "ats:feishuhire:makeblock",
-      "company": "Makeblock (US)",
-      "country": "United States",
-      "li_variants": [
-        "Makeblock",
-        "xTool"
-      ],
-      "slice_locations": [
-        "United States",
-        "Mountain View, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "mammotion_us_fulltime",
-      "board": "ats:feishuhire:mammotion",
-      "company": "Mammotion",
-      "country": "United States",
-      "li_variants": [
-        "Mammotion"
-      ],
-      "slice_locations": [
-        "United States",
-        "Chino, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "mindrayus_us_fulltime",
-      "board": "ats:paylocity:de4f3c8e-1679-4dad-a21b-a3ebaf254893",
-      "company": "Mindray North America",
-      "country": "United States",
-      "li_variants": [
-        "Mindray",
-        "Mindray North America"
-      ],
-      "slice_locations": [
-        "United States",
-        "Mahwah, New Jersey, United States",
-        "Remote, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "canadiansolar_us_fulltime",
-      "board": "canadiansolar|wd5|CanadianSolar",
-      "company": "Canadian Solar",
-      "country": "United States",
-      "li_variants": [
-        "Canadian Solar",
-        "Recurrent Energy"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "weee_us_fulltime",
-      "board": "ats:greenhouse:weee",
-      "company": "Weee!",
-      "country": "United States",
-      "li_variants": [
-        "Weee!",
-        "Weee"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "frontage_us_fulltime",
-      "board": "ats:adp:0fad767f-f389-40ea-b2d1-d8df05098476",
-      "company": "Frontage Laboratories",
-      "country": "United States",
-      "li_variants": [
-        "Frontage Laboratories",
-        "Frontage Labs",
-        "Frontage"
-      ],
-      "slice_locations": [
-        "United States",
-        "Exton, Pennsylvania, United States",
-        "Hayward, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "weichai_us_fulltime",
-      "board": "ats:adp:173c7f84-bab8-41af-85ea-7c3b3b163cd1",
-      "company": "Weichai America",
-      "country": "United States",
-      "li_variants": [
-        "Weichai America",
-        "Weichai America Corp",
-        "Weichai Power"
-      ],
-      "slice_locations": [
-        "United States",
-        "Rolling Meadows, Illinois, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "luyepharma_us_fulltime",
-      "board": "ats:greenhouse:luyepharmausaltd",
-      "company": "Luye Pharma",
-      "country": "United States",
-      "li_variants": [
-        "Luye Pharma",
-        "Luye Pharma USA",
-        "Luye Pharmaceutical"
-      ],
-      "slice_locations": [
-        "United States",
-        "Princeton, New Jersey, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "laifen_us_fulltime",
-      "board": "ats:feishuhire:f1l5e2ythy",
-      "company": "Laifen",
-      "country": "United States",
-      "li_variants": [
-        "Laifen",
-        "Laifen Technology",
-        "Laifen US"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "rokid_us_fulltime",
-      "board": "ats:feishuhire:rokid-jungle",
-      "company": "Rokid",
-      "country": "United States",
-      "li_variants": [
-        "Rokid",
-        "Rokid Inc",
-        "Rokid US"
-      ],
-      "slice_locations": [
-        "United States",
-        "Palo Alto, California, United States"
-      ],
-      "geo_scope": "non_cn"
-    },
-    {
-      "label": "petkit_us_fulltime",
-      "board": "ats:feishuhire:jijiapets",
-      "company": "Petkit",
-      "country": "United States",
-      "li_variants": [
-        "Petkit",
-        "PETKIT",
-        "Petkit US"
-      ],
-      "slice_locations": [
-        "United States"
-      ],
-      "geo_scope": "non_cn"
-    }
-  ]
+ "watches": [
+  {
+   "label": "alibaba_us_fulltime",
+   "board": "custom:alibaba",
+   "company": "Alibaba Group",
+   "country": "United States",
+   "li_variants": [
+    "Alibaba Group",
+    "Alibaba",
+    "Alibaba Cloud",
+    "Alibaba.com"
+   ],
+   "slice_locations": [
+    "United States",
+    "Sunnyvale, California, United States",
+    "Bellevue, Washington, United States",
+    "Seattle, Washington, United States",
+    "Santa Clara, California, United States",
+    "Pasadena, California, United States"
+   ]
+  },
+  {
+   "label": "anthropic_us_fulltime",
+   "board": "ats:greenhouse:anthropic",
+   "company": "Anthropic",
+   "country": "United States",
+   "li_variants": [
+    "Anthropic"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States",
+    "Seattle, Washington, United States",
+    "New York, New York, United States",
+    "Remote, United States"
+   ]
+  },
+  {
+   "label": "baidu_us_fulltime",
+   "board": "ats:greenhouse:baidu",
+   "company": "Baidu",
+   "country": "United States",
+   "li_variants": [
+    "Baidu",
+    "Baidu USA",
+    "Baidu, Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "Sunnyvale, California, United States",
+    "Mountain View, California, United States",
+    "Los Angeles, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "byd_us_fulltime",
+   "board": "ats:greenhouse:byd",
+   "company": "BYD",
+   "country": "United States",
+   "li_variants": [
+    "BYD",
+    "BYD North America",
+    "BYD Electronic America Corp."
+   ],
+   "slice_locations": [
+    "United States",
+    "Pasadena, California, United States",
+    "Lancaster, California, United States",
+    "Cupertino, California, United States",
+    "Manteca, California, United States",
+    "Las Vegas, Nevada, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "bytedance_us_fulltime",
+   "board": "custom:bytedance",
+   "company": "ByteDance",
+   "country": "United States",
+   "li_variants": [
+    "ByteDance",
+    "TikTok",
+    "ByteDance Ltd"
+   ],
+   "slice_locations": [
+    "United States",
+    "Seattle, Washington, United States",
+    "San Jose, California, United States",
+    "Los Angeles, California, United States",
+    "New York, New York, United States",
+    "San Diego, California, United States",
+    "Boston, Massachusetts, United States",
+    "Ashburn, Virginia, United States"
+   ],
+   "time_type": "Full time"
+  },
+  {
+   "label": "didi_us_fulltime",
+   "board": "ats:greenhouse:didi",
+   "company": "DiDi",
+   "country": "United States",
+   "li_variants": [
+    "DiDi",
+    "DiDi Labs",
+    "DiDi Global"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "faradayfuture_us_fulltime",
+   "board": "ats:greenhouse:faradayfuture",
+   "company": "Faraday Future",
+   "country": "United States",
+   "li_variants": [
+    "Faraday Future",
+    "Faraday Future Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "El Segundo, California, United States",
+    "Los Angeles, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "gea_us_fulltime",
+   "board": "haier|wd3|GE_Appliances",
+   "company": "GE Appliances",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "GE Appliances",
+    "GE Appliances, a Haier company"
+   ],
+   "slice_locations": [
+    "United States",
+    "Louisville, Kentucky, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "gotion_us_fulltime",
+   "board": "ats:greenhouse:gotion",
+   "company": "Gotion",
+   "country": "United States",
+   "li_variants": [
+    "Gotion Inc.",
+    "Gotion"
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States",
+    "Manteno, Illinois, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "horizon_us_fulltime",
+   "board": "ats:lever:horizon",
+   "company": "Horizon Robotics",
+   "country": "United States",
+   "li_variants": [
+    "Horizon Robotics"
+   ],
+   "slice_locations": [
+    "United States",
+    "Cupertino, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "jd_us_fulltime",
+   "board": "jd|wd103|Careers_at_JD",
+   "company": "JD.com",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "JD.com",
+    "JD Logistics",
+    "JD Technology"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "New York, New York, United States",
+    "San Jose, California, United States",
+    "Remote, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "minimax_us_fulltime",
+   "board": "ats:feishuhire:vrfi1sk8a0",
+   "company": "MiniMax",
+   "country": "United States",
+   "li_variants": [
+    "MiniMax",
+    "MiniMax AI"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "moonshot_us_fulltime",
+   "board": "ats:ashby:moonshot",
+   "company": "Moonshot AI",
+   "country": "United States",
+   "li_variants": [
+    "Moonshot AI",
+    "Moonshot AI Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "New York, New York, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "neteasegames_us_fulltime",
+   "board": "ats:greenhouse:neteasegames",
+   "company": "NetEase Games",
+   "country": "United States",
+   "li_variants": [
+    "NetEase",
+    "NetEase Games"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "netflix_us_fulltime",
+   "board": "netflix|wd108|Netflix",
+   "company": "Netflix",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "Netflix",
+    "Netflix Animation Studios"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Gatos, California, United States",
+    "Los Angeles, California, United States",
+    "New York, New York, United States",
+    "Remote, United States",
+    "Washington, District of Columbia, United States",
+    "Las Vegas, Nevada, United States",
+    "Albuquerque, New Mexico, United States",
+    "Dallas, Texas, United States",
+    "Atlanta, Georgia, United States",
+    "Burbank, California, United States"
+   ]
+  },
+  {
+   "label": "nvidia_us_fulltime",
+   "board": "nvidia|wd5|nvidiaexternalcareersite",
+   "company": "NVIDIA",
+   "country": "United States",
+   "time_type": "Full time"
+  },
+  {
+   "label": "openai_us_fulltime",
+   "board": "ats:ashby:openai",
+   "company": "OpenAI",
+   "country": "United States",
+   "li_variants": [
+    "OpenAI"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States",
+    "Seattle, Washington, United States",
+    "New York, New York, United States",
+    "Remote, United States"
+   ],
+   "time_type": "Full time"
+  },
+  {
+   "label": "pony_us_fulltime",
+   "board": "ats:workable:pony-dot-ai",
+   "company": "Pony.ai",
+   "country": "United States",
+   "li_variants": [
+    "Pony.ai",
+    "Pony AI"
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "shein_us_fulltime",
+   "board": "ats:greenhouse:shein",
+   "company": "SHEIN",
+   "country": "United States",
+   "li_variants": [
+    "SHEIN",
+    "SHEIN U.S."
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "San Diego, California, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "shengshu_us_fulltime",
+   "board": "ats:feishuhire:shengshu",
+   "company": "Shengshu",
+   "country": "United States",
+   "li_variants": [
+    "Shengshu",
+    "Shengshu Technology",
+    "Vidu"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "tcl_us_fulltime",
+   "board": "ats:greenhouse:tcl",
+   "company": "TCL",
+   "country": "United States",
+   "li_variants": [
+    "TCL North America",
+    "TCL"
+   ],
+   "slice_locations": [
+    "United States",
+    "Irvine, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "tencent_us_fulltime",
+   "board": "tencent|wd1|Tencent_Careers",
+   "company": "Tencent",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "Tencent",
+    "Tencent America",
+    "Tencent Games"
+   ],
+   "slice_locations": [
+    "United States",
+    "Palo Alto, California, United States",
+    "Seattle, Washington, United States",
+    "San Jose, California, United States",
+    "Remote, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "tplink_us_fulltime",
+   "board": "ats:workable:tp-link-usa-corp",
+   "company": "TP-Link",
+   "country": "United States",
+   "li_variants": [
+    "TP-Link",
+    "TP-Link Systems Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "Irvine, California, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "tripcom_us_fulltime",
+   "board": "custom:tripcom",
+   "company": "Trip.com Group",
+   "country": "United States",
+   "li_variants": [
+    "Trip.com Group",
+    "Trip.com",
+    "Trip.com Group Limited"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States",
+    "San Jose, California, United States",
+    "Los Angeles, California, United States",
+    "Miami, Florida, United States",
+    "Chicago, Illinois, United States",
+    "San Francisco, California, United States"
+   ]
+  },
+  {
+   "label": "weride_us_fulltime",
+   "board": "ats:lever:weride",
+   "company": "WeRide",
+   "country": "United States",
+   "li_variants": [
+    "WeRide",
+    "WeRide Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "xiaohongshu_us_fulltime",
+   "board": "custom:xiaohongshu",
+   "company": "Xiaohongshu",
+   "country": "United States",
+   "li_variants": [
+    "rednote",
+    "Xiaohongshu"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States",
+    "New York, New York, United States"
+   ],
+   "egress_restricted": "gha_us"
+  },
+  {
+   "label": "xpeng_us_fulltime",
+   "board": "ats:greenhouse:xpengmotors",
+   "company": "XPENG",
+   "country": "United States",
+   "li_variants": [
+    "XPENG",
+    "XPENG Motors"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "hoyoverse_us_fulltime",
+   "board": "ats:ashby:hoyoverse",
+   "company": "HoYoverse",
+   "country": "United States",
+   "li_variants": [
+    "HoYoverse"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "Remote, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "unitedimaging_us_fulltime",
+   "board": "ats:paylocity:d527ad39-680d-45fa-9178-38a81898aec2",
+   "company": "United Imaging",
+   "country": "United States",
+   "li_variants": [
+    "United Imaging",
+    "United Imaging Healthcare"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States",
+    "Houston, Texas, United States",
+    "Seattle, Washington, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "genscript_us_fulltime",
+   "board": "ats:greenhouse:genscript",
+   "company": "GenScript",
+   "country": "United States",
+   "li_variants": [
+    "GenScript",
+    "GenScript Biotech",
+    "GenScript USA"
+   ],
+   "slice_locations": [
+    "United States",
+    "Piscataway, New Jersey, United States",
+    "San Jose, California, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "legendbiotech_us_fulltime",
+   "board": "ats:greenhouse:legendcareers",
+   "company": "Legend Biotech",
+   "country": "United States",
+   "li_variants": [
+    "Legend Biotech",
+    "Legend Biotech US"
+   ],
+   "slice_locations": [
+    "United States",
+    "Somerset, New Jersey, United States",
+    "Raritan, New Jersey, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "nio_us_fulltime",
+   "board": "ats:lever:nio-usa",
+   "company": "NIO",
+   "country": "United States",
+   "li_variants": [
+    "NIO",
+    "NIO USA, Inc.",
+    "NIO USA"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "foxit_us_fulltime",
+   "board": "ats:lever:foxitsoftware",
+   "company": "Foxit",
+   "country": "United States",
+   "li_variants": [
+    "Foxit",
+    "Foxit Software",
+    "Foxit Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States",
+    "Milpitas, California, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "poizon_us_fulltime",
+   "board": "ats:feishuhire:poizon",
+   "company": "POIZON",
+   "country": "United States",
+   "li_variants": [
+    "POIZON",
+    "Poizon",
+    "Dewu"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "fuyao_us_fulltime",
+   "board": "ats:adp:25319558-d6a9-48ab-93d2-99e4878a8ffc",
+   "company": "Fuyao Glass America",
+   "country": "United States",
+   "li_variants": [
+    "Fuyao Glass America",
+    "Fuyao Glass America Inc.",
+    "Fuyao"
+   ],
+   "slice_locations": [
+    "United States",
+    "Moraine, Ohio, United States",
+    "Dayton, Ohio, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "sanhua_us_fulltime",
+   "board": "ats:jazzhr:sanhua",
+   "company": "Sanhua",
+   "country": "United States",
+   "li_variants": [
+    "Sanhua",
+    "Sanhua International",
+    "Sanhua Group"
+   ],
+   "slice_locations": [
+    "United States",
+    "Auburn Hills, Michigan, United States"
+   ]
+  },
+  {
+   "label": "foxconnfii_us_fulltime",
+   "board": "ats:jazzhr:foxconnassemblyllc",
+   "company": "Foxconn Industrial Internet",
+   "country": "United States",
+   "li_variants": [
+    "Foxconn Industrial Internet",
+    "FII",
+    "Foxconn Assembly"
+   ],
+   "slice_locations": [
+    "United States",
+    "Houston, Texas, United States",
+    "San Jose, California, United States"
+   ]
+  },
+  {
+   "label": "lenovo_us_fulltime",
+   "board": "ats:radancy:jobs.lenovo.com",
+   "company": "Lenovo",
+   "country": "United States",
+   "li_variants": [
+    "Lenovo",
+    "Lenovo Group",
+    "Lenovo North America"
+   ],
+   "slice_locations": [
+    "United States",
+    "Morrisville, North Carolina, United States",
+    "Whitsett, North Carolina, United States"
+   ]
+  },
+  {
+   "label": "cainiao_us_fulltime",
+   "board": "ats:teamtailor:cainiao",
+   "company": "Cainiao",
+   "country": "United States",
+   "li_variants": [
+    "Cainiao",
+    "Cainiao Network",
+    "Cainiao Global"
+   ],
+   "slice_locations": [
+    "United States",
+    "Port Wentworth, Georgia, United States",
+    "Savannah, Georgia, United States"
+   ]
+  },
+  {
+   "label": "webull_us_fulltime",
+   "board": "ats:rippling:webull",
+   "company": "Webull",
+   "country": "United States",
+   "li_variants": [
+    "Webull",
+    "Webull Financial",
+    "Webull Corporation"
+   ],
+   "slice_locations": [
+    "United States",
+    "New York, New York, United States"
+   ]
+  },
+  {
+   "label": "popmart_us_fulltime",
+   "board": "popmart|wd102|popmart",
+   "company": "Pop Mart",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "Pop Mart",
+    "POP MART",
+    "Pop Mart International Group",
+    "Pop Mart Americas"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "New York, New York, United States",
+    "Bellevue, Washington, United States",
+    "Remote, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "beone_us_fulltime",
+   "board": "beigene|wd5|BeiGene",
+   "company": "BeOne Medicines",
+   "country": "United States",
+   "li_variants": [
+    "BeOne Medicines",
+    "BeiGene",
+    "BeOne Medicines US",
+    "BeiGene US"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States",
+    "San Carlos, California, United States",
+    "San Diego, California, United States",
+    "Hopewell, New Jersey, United States",
+    "Foster City, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "chagee_us_fulltime",
+   "board": "chagee|wd102|External",
+   "company": "Chagee",
+   "country": "United States",
+   "time_type": "Full time",
+   "li_variants": [
+    "Chagee",
+    "CHAGEE",
+    "Chagee Holdings",
+    "Bawang Chagee"
+   ],
+   "slice_locations": [
+    "United States",
+    "Irvine, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "sungrow_us_fulltime",
+   "board": "ats:adp:c2e0ba67-e6f9-439e-b8a3-0d734568eac2",
+   "company": "Sungrow",
+   "country": "United States",
+   "li_variants": [
+    "Sungrow",
+    "Sungrow Power Supply",
+    "Sungrow US",
+    "Sungrow Power Supply Co., Ltd"
+   ],
+   "slice_locations": [
+    "United States",
+    "Fresno, California, United States",
+    "Houston, Texas, United States",
+    "Tempe, Arizona, United States",
+    "Remote, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "deeproute_us_fulltime",
+   "board": "ats:workable:deeproute-dot-a-i",
+   "company": "DeepRoute.ai",
+   "country": "United States",
+   "li_variants": [
+    "DeepRoute.ai",
+    "DeepRoute",
+    "DeepRoute AI",
+    "DeepRoute.ai Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States",
+    "San Jose, California, United States"
+   ],
+   "time_type": "Full time",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "agora_us_fulltime",
+   "board": "ats:rippling:agora",
+   "company": "Agora",
+   "country": "United States",
+   "li_variants": [
+    "Agora",
+    "Agora.io",
+    "Agora Lab",
+    "Agora Communications"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States",
+    "Remote, United States"
+   ]
+  },
+  {
+   "label": "bitdeer_us_fulltime",
+   "board": "ats:breezy:bitdeer",
+   "company": "Bitdeer",
+   "li_variants": [
+    "Bitdeer",
+    "Bitdeer Technologies Group",
+    "Bitdeer Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "Austin, Texas, United States",
+    "San Jose, California, United States",
+    "Remote, United States"
+   ],
+   "country": "United States",
+   "time_type": "Full time"
+  },
+  {
+   "label": "omnivision_us_fulltime",
+   "board": "ats:jobvite:ovt",
+   "company": "OmniVision",
+   "li_variants": [
+    "OmniVision",
+    "OmniVision Technologies",
+    "Will Semiconductor",
+    "Will Semi"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States",
+    "Irvine, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "mattson_us_fulltime",
+   "board": "ats:oraclehcm:eidg.fa.us6.oraclecloud.com|CX_1",
+   "company": "Mattson Technology",
+   "li_variants": [
+    "Mattson Technology",
+    "Mattson",
+    "Etown Capital"
+   ],
+   "slice_locations": [
+    "United States",
+    "Fremont, California, United States",
+    "Hillsboro, Oregon, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "virtuos_us_fulltime",
+   "board": "ats:oraclehcm:fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com|CX_1",
+   "company": "Virtuos",
+   "li_variants": [
+    "Virtuos",
+    "Virtuos Games",
+    "Virtuos North America"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "San Francisco, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "hisense_us_fulltime",
+   "board": "ats:bamboohr:hisenseusacorporation",
+   "company": "Hisense USA",
+   "li_variants": [
+    "Hisense",
+    "Hisense USA",
+    "Hisense Corporation"
+   ],
+   "slice_locations": [
+    "United States",
+    "Alpharetta, Georgia, United States",
+    "Suwanee, Georgia, United States",
+    "Remote, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "joyson_us_fulltime",
+   "board": "ats:j2w:careers.joysonsafety.com/search",
+   "company": "Joyson Safety Systems",
+   "li_variants": [
+    "Joyson Safety Systems",
+    "Joyson",
+    "Key Safety Systems",
+    "Joyson Safety Systems Acquisition"
+   ],
+   "slice_locations": [
+    "United States",
+    "Auburn Hills, Michigan, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "cofco_us_fulltime",
+   "board": "ats:j2w:careers.cofcointernational.com/search-jobs",
+   "company": "COFCO International",
+   "li_variants": [
+    "COFCO International",
+    "COFCO",
+    "COFCO International North America"
+   ],
+   "slice_locations": [
+    "United States",
+    "Chicago, Illinois, United States",
+    "Stamford, Connecticut, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "meyer_us_fulltime",
+   "board": "ats:ultipro:MEY1000MEYER|7a970c3d-b076-4042-8735-673b5e5508ac",
+   "company": "Meyer",
+   "li_variants": [
+    "Meyer",
+    "Meyer Corporation",
+    "Meyer Manufacturing",
+    "Meyer Cookware"
+   ],
+   "slice_locations": [
+    "United States",
+    "Vallejo, California, United States",
+    "Remote, United States"
+   ],
+   "country": "United States",
+   "time_type": "Full time"
+  },
+  {
+   "label": "amersports_us_fulltime",
+   "board": "ats:talentadore:amersports.careers.talentadore.com",
+   "company": "Amer Sports",
+   "li_variants": [
+    "Amer Sports",
+    "Wilson Sporting Goods",
+    "Salomon",
+    "Arc'teryx",
+    "Atomic"
+   ],
+   "slice_locations": [
+    "United States",
+    "New York, New York, United States",
+    "Chicago, Illinois, United States"
+   ],
+   "country": "United States",
+   "time_type": "Full time"
+  },
+  {
+   "label": "haidilao_us_fulltime",
+   "board": "ats:workstream:fcc54c54",
+   "company": "Haidilao",
+   "li_variants": [
+    "Haidilao",
+    "Haidilao Hot Pot",
+    "HDL Management USA",
+    "Haidilao International"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "Seattle, Washington, United States",
+    "Chicago, Illinois, United States",
+    "Irvine, California, United States",
+    "Bellevue, Washington, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "tti_us_fulltime",
+   "board": "ats:ttiproxy:US",
+   "company": "Techtronic Industries",
+   "li_variants": [
+    "Techtronic Industries",
+    "TTI",
+    "Milwaukee Tool",
+    "Ryobi",
+    "Techtronic Industries North America",
+    "TTI Floor Care"
+   ],
+   "slice_locations": [
+    "United States",
+    "Anderson, South Carolina, United States",
+    "Brookfield, Wisconsin, United States",
+    "Memphis, Tennessee, United States",
+    "Remote, United States"
+   ],
+   "country": "United States",
+   "time_type": "Full time"
+  },
+  {
+   "label": "niu_us_fulltime",
+   "board": "ats:sanity:cd9iwvgl/production|Jobs|en-us",
+   "company": "NIU Technologies",
+   "li_variants": [
+    "NIU",
+    "NIU Technologies",
+    "Niu Power"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "ascentage_us_fulltime",
+   "board": "ats:wpjobboard:www.ascentage.com",
+   "company": "Ascentage Pharma",
+   "li_variants": [
+    "Ascentage Pharma",
+    "Ascentage",
+    "Ascentage Pharma Group"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "wuxibio_us_fulltime",
+   "board": "ats:wuxibio:www.wuxibiologics.com",
+   "company": "WuXi Biologics",
+   "li_variants": [
+    "WuXi Biologics",
+    "WuXi Biologics USA",
+    "WuXi Advanced Therapies"
+   ],
+   "slice_locations": [
+    "United States",
+    "Cranbury, New Jersey, United States",
+    "Philadelphia, Pennsylvania, United States",
+    "San Diego, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "antintl_us_fulltime",
+   "board": "ats:antintl:M7892",
+   "company": "Ant International",
+   "li_variants": [
+    "Ant International",
+    "Ant Group",
+    "Ant Tech",
+    "Quadrant Technologies"
+   ],
+   "slice_locations": [
+    "United States",
+    "Sunnyvale, California, United States",
+    "New York, New York, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "greenland_us_fulltime",
+   "board": "custom:greenland",
+   "company": "Greenland USA",
+   "li_variants": [
+    "Greenland USA",
+    "Greenland America",
+    "Shanghai Greenland"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "New York, New York, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "jereh_us_fulltime",
+   "board": "custom:jereh",
+   "company": "Jereh Group",
+   "li_variants": [
+    "Jereh",
+    "Jereh Energy Equipment and Technologies",
+    "American Jereh International Corporation"
+   ],
+   "slice_locations": [
+    "United States",
+    "Houston, Texas, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "autel_us_fulltime",
+   "board": "custom:autelenergy",
+   "company": "Autel Energy",
+   "li_variants": [
+    "Autel Energy",
+    "Autel"
+   ],
+   "slice_locations": [
+    "United States",
+    "North Carolina, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "aden_us_fulltime",
+   "board": "custom:aden",
+   "company": "Aden Group",
+   "li_variants": [
+    "Aden Group",
+    "Akila",
+    "Akila Technologies"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "mandarinoriental_us_fulltime",
+   "board": "custom:mandarinoriental",
+   "company": "Mandarin Oriental",
+   "li_variants": [
+    "Mandarin Oriental",
+    "Mandarin Oriental Hotel Group",
+    "Mandarin Oriental Residences"
+   ],
+   "slice_locations": [
+    "United States",
+    "New York, New York, United States",
+    "Boston, Massachusetts, United States",
+    "Miami, Florida, United States",
+    "Beverly Hills, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "wuxiapptec_us_fulltime",
+   "board": "custom:wuxiapptec",
+   "company": "WuXi AppTec",
+   "li_variants": [
+    "WuXi AppTec",
+    "WuXi AppTec Inc",
+    "WuXi STA",
+    "WuXi TIDES"
+   ],
+   "slice_locations": [
+    "United States",
+    "Middletown, Delaware, United States",
+    "San Diego, California, United States",
+    "Cranbury, New Jersey, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "bosonai_us_fulltime",
+   "board": "ats:lever:bosonai",
+   "company": "Boson AI",
+   "li_variants": [
+    "Boson AI",
+    "Boson AI USA",
+    "BosonAI"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States",
+    "San Francisco, California, United States"
+   ],
+   "country": "United States",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "hesai_us_fulltime",
+   "board": "ats:feishuhire:kwh0jtf778",
+   "company": "Hesai Technology",
+   "li_variants": [
+    "Hesai",
+    "Hesai Technology",
+    "Hesai LiDAR"
+   ],
+   "slice_locations": [
+    "United States",
+    "Palo Alto, California, United States",
+    "Sunnyvale, California, United States"
+   ],
+   "country": "United States",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "blacksesame_us_fulltime",
+   "board": "custom:blacksesame",
+   "company": "Black Sesame Technologies",
+   "li_variants": [
+    "Black Sesame Technologies",
+    "Black Sesame"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "ecovacsus_us_fulltime",
+   "board": "custom:ecovacsus",
+   "company": "Ecovacs Robotics",
+   "li_variants": [
+    "Ecovacs Robotics",
+    "ECOVACS",
+    "Ecovacs"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "accutar_us_fulltime",
+   "board": "custom:accutar",
+   "company": "Accutar Biotech",
+   "li_variants": [
+    "Accutar Biotech",
+    "Accutar Biotechnology"
+   ],
+   "slice_locations": [
+    "United States",
+    "Cranbury, New Jersey, United States",
+    "Mountain View, California, United States",
+    "Bellevue, Washington, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "hitgen_us_fulltime",
+   "board": "custom:hitgen",
+   "company": "HitGen",
+   "li_variants": [
+    "HitGen",
+    "HitGen Inc",
+    "Chengdu HitGen"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "insilico_us_fulltime",
+   "board": "custom:insilico",
+   "company": "Insilico Medicine",
+   "li_variants": [
+    "Insilico Medicine",
+    "Insilico"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "insta360_us_fulltime",
+   "board": "ats:feishuhire:arashivision",
+   "company": "Insta360",
+   "li_variants": [
+    "Insta360",
+    "Arashi Vision",
+    "Insta360 USA"
+   ],
+   "slice_locations": [
+    "United States",
+    "New York, New York, United States",
+    "Los Angeles, California, United States"
+   ],
+   "country": "United States",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "liauto_us_fulltime",
+   "board": "ats:feishuhire:li",
+   "company": "Li Auto",
+   "li_variants": [
+    "Li Auto",
+    "Li Auto Inc",
+    "Lixiang"
+   ],
+   "slice_locations": [
+    "United States",
+    "Irvine, California, United States",
+    "San Jose, California, United States"
+   ],
+   "country": "United States",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "meitu_us_fulltime",
+   "board": "ats:feishuhire:meitu",
+   "company": "Meitu",
+   "li_variants": [
+    "Meitu",
+    "Pixocial",
+    "Meitu Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States"
+   ],
+   "country": "United States",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "orionstar_us_fulltime",
+   "board": "ats:feishuhire:orionstar",
+   "company": "OrionStar",
+   "li_variants": [
+    "OrionStar",
+    "OrionStar Robotics",
+    "Cheetah Mobile"
+   ],
+   "slice_locations": [
+    "United States",
+    "Washington, District of Columbia, United States"
+   ],
+   "country": "United States",
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "orbbec_us_fulltime",
+   "board": "custom:orbbec",
+   "company": "Orbbec",
+   "li_variants": [
+    "Orbbec",
+    "Orbbec 3D Technology International"
+   ],
+   "slice_locations": [
+    "United States",
+    "Detroit, Michigan, United States",
+    "Troy, Michigan, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "visionnav_us_fulltime",
+   "board": "custom:visionnav",
+   "company": "VisionNav Robotics",
+   "li_variants": [
+    "VisionNav",
+    "VisionNav Robotics",
+    "VisionNav Robotics USA"
+   ],
+   "slice_locations": [
+    "United States",
+    "Atlanta, Georgia, United States",
+    "Lawrenceville, Georgia, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "verisilicon_us_fulltime",
+   "board": "custom:verisilicon",
+   "company": "VeriSilicon",
+   "li_variants": [
+    "VeriSilicon",
+    "VeriSilicon Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "uniview_us_fulltime",
+   "board": "custom:uniview",
+   "company": "Uniview",
+   "li_variants": [
+    "Uniview",
+    "Uniview Technologies",
+    "Zhejiang Uniview"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "country": "United States"
+  },
+  {
+   "label": "zilliz_us_fulltime",
+   "board": "ats:lever:zilliz",
+   "company": "Zilliz",
+   "country": "United States",
+   "li_variants": [
+    "Zilliz",
+    "Zilliz Inc."
+   ],
+   "slice_locations": [
+    "United States",
+    "Redwood City, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "qcraft_us_fulltime",
+   "board": "ats:workable:qcraft",
+   "company": "QCraft",
+   "country": "United States",
+   "li_variants": [
+    "QCraft",
+    "QCraft Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "lightelligence_us_fulltime",
+   "board": "ats:workable:lightelligence",
+   "company": "Lightelligence",
+   "country": "United States",
+   "li_variants": [
+    "Lightelligence",
+    "Lightelligence Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "Boston, Massachusetts, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "dify_us_fulltime",
+   "board": "custom:dify",
+   "company": "Dify (LangGenius)",
+   "country": "United States",
+   "li_variants": [
+    "Dify",
+    "LangGenius"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Mateo, California, United States"
+   ]
+  },
+  {
+   "label": "airwallex_us_fulltime",
+   "board": "ats:ashby:airwallex",
+   "company": "Airwallex",
+   "country": "United States",
+   "li_variants": [
+    "Airwallex"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Francisco, California, United States",
+    "New York, New York, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "okx_us_fulltime",
+   "board": "ats:greenhouse:okx",
+   "company": "OKX",
+   "country": "United States",
+   "li_variants": [
+    "OKX",
+    "OKCoin"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Jose, California, United States",
+    "New York, New York, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "pingcap_us_fulltime",
+   "board": "ats:greenhouse:pingcap",
+   "company": "PingCAP",
+   "country": "United States",
+   "li_variants": [
+    "PingCAP",
+    "TiDB"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States",
+    "San Jose, California, United States"
+   ],
+   "include_remote": true,
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "riotgames_us_fulltime",
+   "board": "ats:greenhouse:riotgames",
+   "company": "Riot Games",
+   "country": "United States",
+   "li_variants": [
+    "Riot Games"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "Seattle, Washington, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "streamnative_us_fulltime",
+   "board": "ats:greenhouse:streamnative",
+   "company": "StreamNative",
+   "country": "United States",
+   "li_variants": [
+    "StreamNative"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States"
+   ],
+   "include_remote": true,
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "alluxio_us_fulltime",
+   "board": "ats:lever:alluxio",
+   "company": "Alluxio",
+   "country": "United States",
+   "li_variants": [
+    "Alluxio"
+   ],
+   "slice_locations": [
+    "United States",
+    "Foster City, California, United States",
+    "San Mateo, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "ambergroup_us_fulltime",
+   "board": "ats:lever:ambergroup",
+   "company": "Amber Group",
+   "country": "United States",
+   "li_variants": [
+    "Amber Group",
+    "Amber"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "include_remote": true,
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "binance_us_fulltime",
+   "board": "ats:lever:binance",
+   "company": "Binance",
+   "country": "United States",
+   "li_variants": [
+    "Binance"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "include_remote": true,
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "funplus_us_fulltime",
+   "board": "ats:workable:fun-plus",
+   "company": "FunPlus",
+   "country": "United States",
+   "li_variants": [
+    "FunPlus",
+    "Fun Plus"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "risingwave_us_fulltime",
+   "board": "ats:workable:risingwave-labs",
+   "company": "RisingWave",
+   "country": "United States",
+   "li_variants": [
+    "RisingWave",
+    "RisingWave Labs"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "autelrobotics_us_fulltime",
+   "board": "ats:workable:autel-robotics",
+   "company": "Autel Robotics",
+   "country": "United States",
+   "li_variants": [
+    "Autel Robotics"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "zoomlion_us_fulltime",
+   "board": "ats:workable:zoomlion",
+   "company": "Zoomlion",
+   "country": "United States",
+   "li_variants": [
+    "Zoomlion",
+    "Zoomlion Heavy Industry"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "celerdata_us_fulltime",
+   "board": "ats:rippling:celerdataopenroles",
+   "company": "CelerData",
+   "country": "United States",
+   "li_variants": [
+    "CelerData",
+    "StarRocks",
+    "PhoenixAI"
+   ],
+   "slice_locations": [
+    "United States",
+    "Remote, United States"
+   ]
+  },
+  {
+   "label": "ankerus_us_fulltime",
+   "board": "ats:feishuhire:anker-in",
+   "company": "Anker (US)",
+   "country": "United States",
+   "li_variants": [
+    "Anker",
+    "Anker Innovations"
+   ],
+   "slice_locations": [
+    "United States",
+    "Seattle, Washington, United States",
+    "Los Angeles, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "bambulab_us_fulltime",
+   "board": "ats:feishuhire:bambulab",
+   "company": "Bambu Lab",
+   "country": "United States",
+   "li_variants": [
+    "Bambu Lab",
+    "BambuLab"
+   ],
+   "slice_locations": [
+    "United States",
+    "Santa Clara, California, United States",
+    "Austin, Texas, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "ecoflowus_us_fulltime",
+   "board": "ats:feishuhire:ecoflow",
+   "company": "EcoFlow (US)",
+   "country": "United States",
+   "li_variants": [
+    "EcoFlow"
+   ],
+   "slice_locations": [
+    "United States",
+    "Irvine, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "makeblockus_us_fulltime",
+   "board": "ats:feishuhire:makeblock",
+   "company": "Makeblock (US)",
+   "country": "United States",
+   "li_variants": [
+    "Makeblock",
+    "xTool"
+   ],
+   "slice_locations": [
+    "United States",
+    "Mountain View, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "mammotion_us_fulltime",
+   "board": "ats:feishuhire:mammotion",
+   "company": "Mammotion",
+   "country": "United States",
+   "li_variants": [
+    "Mammotion"
+   ],
+   "slice_locations": [
+    "United States",
+    "Chino, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "mindrayus_us_fulltime",
+   "board": "ats:paylocity:de4f3c8e-1679-4dad-a21b-a3ebaf254893",
+   "company": "Mindray North America",
+   "country": "United States",
+   "li_variants": [
+    "Mindray",
+    "Mindray North America"
+   ],
+   "slice_locations": [
+    "United States",
+    "Mahwah, New Jersey, United States",
+    "Remote, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "canadiansolar_us_fulltime",
+   "board": "canadiansolar|wd5|CanadianSolar",
+   "company": "Canadian Solar",
+   "country": "United States",
+   "li_variants": [
+    "Canadian Solar",
+    "Recurrent Energy"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "weee_us_fulltime",
+   "board": "ats:greenhouse:weee",
+   "company": "Weee!",
+   "country": "United States",
+   "li_variants": [
+    "Weee!",
+    "Weee"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "frontage_us_fulltime",
+   "board": "ats:adp:0fad767f-f389-40ea-b2d1-d8df05098476",
+   "company": "Frontage Laboratories",
+   "country": "United States",
+   "li_variants": [
+    "Frontage Laboratories",
+    "Frontage Labs",
+    "Frontage"
+   ],
+   "slice_locations": [
+    "United States",
+    "Exton, Pennsylvania, United States",
+    "Hayward, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "weichai_us_fulltime",
+   "board": "ats:adp:173c7f84-bab8-41af-85ea-7c3b3b163cd1",
+   "company": "Weichai America",
+   "country": "United States",
+   "li_variants": [
+    "Weichai America",
+    "Weichai America Corp",
+    "Weichai Power"
+   ],
+   "slice_locations": [
+    "United States",
+    "Rolling Meadows, Illinois, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "luyepharma_us_fulltime",
+   "board": "ats:greenhouse:luyepharmausaltd",
+   "company": "Luye Pharma",
+   "country": "United States",
+   "li_variants": [
+    "Luye Pharma",
+    "Luye Pharma USA",
+    "Luye Pharmaceutical"
+   ],
+   "slice_locations": [
+    "United States",
+    "Princeton, New Jersey, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "laifen_us_fulltime",
+   "board": "ats:feishuhire:f1l5e2ythy",
+   "company": "Laifen",
+   "country": "United States",
+   "li_variants": [
+    "Laifen",
+    "Laifen Technology",
+    "Laifen US"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "rokid_us_fulltime",
+   "board": "ats:feishuhire:rokid-jungle",
+   "company": "Rokid",
+   "country": "United States",
+   "li_variants": [
+    "Rokid",
+    "Rokid Inc",
+    "Rokid US"
+   ],
+   "slice_locations": [
+    "United States",
+    "Palo Alto, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "petkit_us_fulltime",
+   "board": "ats:feishuhire:jijiapets",
+   "company": "Petkit",
+   "country": "United States",
+   "li_variants": [
+    "Petkit",
+    "PETKIT",
+    "Petkit US"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "reolink_us_fulltime",
+   "board": "ats:greenhouse:reolink",
+   "company": "Reolink",
+   "country": "United States",
+   "li_variants": [
+    "Reolink",
+    "Reolink US",
+    "Shenzhen Reolink Technology"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States",
+    "Singapore",
+    "Kuala Lumpur, Malaysia"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "sany_us_fulltime",
+   "board": "ats:greenhouse:sany",
+   "company": "SANY America",
+   "country": "United States",
+   "li_variants": [
+    "SANY America",
+    "SANY",
+    "Sany Heavy Industry"
+   ],
+   "slice_locations": [
+    "United States",
+    "Peachtree City, Georgia, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "onemore_us_fulltime",
+   "board": "ats:workable:1more",
+   "company": "1MORE",
+   "country": "United States",
+   "li_variants": [
+    "1MORE",
+    "1More USA",
+    "ONE MORE"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  }
+ ]
 }

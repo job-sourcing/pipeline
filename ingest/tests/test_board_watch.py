@@ -2000,7 +2000,7 @@ class TestShippedWatchConfig:
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
-        assert len(cfg["watches"]) == 113  # S27: 129 - 1 dead zingage - 21 us_only (D-S27-1) + 6 wave-3 wires (frontage/weichai/luye/laifen/rokid/petkit)
+        assert len(cfg["watches"]) == 116  # S29: S27 113 + 3 board-surface-sweep wires (reolink/sany/1more — live-verified with title evidence)
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",
