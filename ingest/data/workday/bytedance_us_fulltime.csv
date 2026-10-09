@@ -11693,3 +11693,53 @@ Preferred Qualification(s)
 - Ability to balance risk, compliance, operational efficiency, and business realities — translating compliance requirements into pragmatic, scalable solutions while proactively identifying risk;
 - Strong communication and influencing skills; comfortable engaging with cross-functional partners including Technology, Product, Security, and Data teams;
 - Experience working in complex, multi-system, and rapidly evolving environments; familiarity with the technology or internet industry preferred.",3856,https://joinbytedance.com/search/7693671227946879237,,https://www.linkedin.com/jobs/view/4475119714,2026-10-06,29,29 applicants,,matched,,2026-10-08,2026-10-08T14:06:53,2026-10-09,,3,startDate+linkedin,true,0,,,,,,2026-10-06,,false,,,,,,
+A207292,Senior AI Legal Counsel - AI Legal,ByteDance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"The Global Legal Business Partner, AI team provides front-line legal support for ByteDance’s AI products and businesses, spanning foundation models, AI platforms and applications, enterprise services, robotics, and hardware. We partner with teams throughout the product lifecycle to help turn emerging technologies into responsible products and services for users and businesses around the world.
+
+AI technology is advancing rapidly while laws, regulatory expectations, and industry standards continue to take shape across markets. We work alongside Product, Trust and Safety, Policy, Communications, and other cross-functional teams to strengthen AI governance, provide guidance on safety, privacy, and intellectual property considerations, and support responsible product development in line with evolving requirements.
+
+You will contribute as significant AI products and capabilities are being built, bringing legal judgment to decisions that shape their design, development, and deployment. This is an opportunity to influence how ByteDance advances AI responsibly at scale while working at the forefront of law and technology.
+
+About the Team:
+ByteDance's AI Product and Frontier Risk Counseling team provides domain expert legal support to the company's AI products and models, in particular supporting our Seed business. The team is growing fast and as we scale, we’re looking for a seasoned lawyer to serve as a global legal expert and strategist who can pair deep policy expertise with a builder’s mindset as they help to guide our teams to turn cutting-edge ideas into trusted, world-class products. The role will be an integral resource for ByteDance's AI product and business teams by helping to craft strategic, market-facing narratives for our AI businesses that unlock new opportunities while also helping to solve some of the most challenging AI issues globally, including implementing policies, standards and best practices relating to frontier AI risk domains.
+This is a highly collaborative, on-site role that requires five days per week in the office located in San Jose, CA.
+
+Responsibilities:
+- You will champion AI, working as a global subject matter expert helping to identify and resolve legal issues relating to emerging and frontier AI risks. You will also help craft strategic, market-leading legal strategies for our AI businesses that unlock new opportunities.
+- Collaborate with the AI product, TnS, Legal, AI Safety, PR and GR teams to establish and implement solutions to emerging compliance issues for frontier AI models.
+- Identify, assess, and communicate the rapidly evolving global AI regulatory requirements and trends; support implementations by the product team.
+
+Minimum Qualifications:
+- Juris Doctor from an ABA-accredited law school and active membership in good standing in at least one U.S. state bar.
+- Have a strong knowledge and interest in the legal challenges in frontier and emerging AI risk areas, including CBRN, cyber and loss of control as well as areas including IP, privacy, bias and AI transparency.
+- Proven experience counseling on AI and ML, IP and cyber security,. Experience in both private practice and in-house experience at a technology platform company would be advantageous.
+- Demonstrated success shaping policy outcomes or market launches for novel technologies.
+- Possess the highest standard of ethics and a positive attitude in learning and willing to pick up new knowledge and skills; comfortable navigating through ambiguous legal issues
+- A builder’s bias for action, you can turn ambiguity into frameworks, experiments, and shipped products and have a strong track record of achieving alignment with internal cross-functional teams and external partners.
+- Credibility with engineers and policymakers alike: you can dive into model architectures one minute and brief a regulator the next.
+
+Preferred Qualifications:
+- Willingness to be flexible to attend meetings outside of office hours, due to the global nature of this team",4005,https://joinbytedance.com/search/7685555902912842037,,https://www.linkedin.com/jobs/view/4476214811,2026-10-08,25,among first 25,,matched,,2026-10-09,2026-10-09T03:58:53,2026-10-09,,1,startDate+linkedin,true,0,,,,,,2026-10-08,,true,,,,,,
+A55027,"Senior Software Engineer, Distributed Storage",ByteDance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"About the Team
+The ByteDance infrastructure storage team provides storage services for all ByteDance products and builds the Volcano Engine public cloud storage product portfolio. In the AI era, the team powers Doubao large models and the Ark large model platform. With the enterprise service experience of stable storage for hundreds of EB of data on tens of thousands of servers, the team serves external customers through a rich storage product matrix, spanning pooled storage, object storage, block storage, file storage, log service, message queue, and big data storage (HDFS). The Infrastructure Storage US team is at the forefront of the team's global expansion, responsible for storage system development, operations, and stability for global businesses and customers.
+
+We are looking for talented engineers to join the Infrastructure Storage US team. In this role, you will design, develop, and optimize the foundational infrastructure of our large-scale distributed storage systems (object storage, block storage, file storage, pooled storage, HDFS, etc.), improve system stability, performance, and cost efficiency, and ensure reliable support for business applications.
+
+Responsibilities
+- Design, develop, and optimize the modules of distributed storage systems (pooled storage, big data file storage, message queue, cache storage, object storage, block storage, file storage, and log service), and research cutting-edge storage technologies;
+- Design and enhance modules of the distributed storage system in terms of stability, functionality, performance, and cost based on business requirements;
+- Drive project execution according to project schedules, write detailed design documents, and own module implementation, performance tuning, and functional testing;
+- Provide timely technical support for online applications, identify potential requirements and optimization opportunities from production issues, and continuously optimize the system;
+- Participate in the deployment, on-call operations, and site reliability engineering for the storage US team; develop deep expertise in system design, identify and resolve bottlenecks to enhance cluster stability, elasticity, and cost competitiveness.
+
+Minimum Qualifications
+- Bachelor's degree or above in Computer Science or a related field;
+- Strong coding skills in C++, with a strong commitment to code quality;
+- Solid understanding of distributed systems principles; Hands-on experience with open-source distributed storage systems such as HDFS, Ceph, and Kafka, or equivalent in-house distributed storage systems;
+- Able to think independently, proactively identify problems, and possess systematic problem analysis and solving capabilities;
+- Strong aptitude for quickly ramping up in unfamiliar technical domains, along with excellent teamwork and communication skills.
+
+Preferred Qualifications
+- Experience with storage tech stacks, including NVMe, SPDK/DPDK, RocksDB, and metadata-related technologies;
+- Hands-on experience designing and building large-scale distributed systems, including high IOPS, high throughput, stability, and degraded-mode handling;
+- Experience with AI storage, such as KV cache storage and optimization, multi-tier caching, and model distribution and loading.
+- Experience with Linux performance tuning is preferred;",3320,https://joinbytedance.com/search/7694052343470655797,,https://www.linkedin.com/jobs/view/4475987589,2026-10-08,25,among first 25,,matched,titleSearchFallback,2026-10-09,2026-10-09T03:58:56,2026-10-09,,1,startDate+linkedin,true,0,,,,,,2026-10-08,,true,447,160000,197680,264514,subset,Software Engineer
