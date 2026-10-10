@@ -216,9 +216,12 @@ class TestWorkdayNonCn:
 
 class TestDispatcherRouting:
     def test_geo_scope_accepting_set(self):
+        # S30 RE wave: +smartrecruiters/trakstar/icims/paycom/teamtailor
         assert site_boards._ADAPTER_GEO_SCOPE == {
             "greenhouse", "ashby", "lever", "workable",
-            "feishuhire", "adp", "paylocity"}
+            "feishuhire", "adp", "paylocity",
+            "smartrecruiters", "trakstar", "icims", "paycom",
+            "teamtailor"}
 
     def test_unknown_kind_ignores_flag(self, monkeypatch):
         # a kind NOT in the set must never receive geo_scope (the

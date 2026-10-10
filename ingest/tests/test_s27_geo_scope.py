@@ -209,6 +209,13 @@ class TestShippedConfig:
             "chagee_us_fulltime", "canadiansolar_us_fulltime"}
         _US_ANCHORS = {"nvidia_us_fulltime", "openai_us_fulltime",
                        "netflix_us_fulltime", "anthropic_us_fulltime"}
+        # S30 RE wave: smartrecruiters/trakstar/icims/paycom/teamtailor
+        # joined the acceptance set (all carry country evidence); the
+        # 6 new wires (zailab/midea/minisous/psi/polestar + custom:a123
+        # — a123 is a CUSTOM kind: geo_scope NOT set on it).
+        _S30_KINDS = {"smartrecruiters", "trakstar", "icims", "paycom",
+                      "teamtailor"}
+        _S30_CUSTOM = {"a123_us_fulltime"}
         flagged = 0
         for w in cfg["watches"]:
             kind = (w["board"].split(":")[1]
@@ -217,10 +224,12 @@ class TestShippedConfig:
                 assert w["geo_scope"] == "non_cn"
                 assert (kind in _NON_CN_KINDS
                         or kind in {"feishuhire", "adp", "paylocity"}
+                        or kind in _S30_KINDS
                         or w["label"] in _S28_CN_WORKDAY), w["label"]
                 assert w["label"] not in _US_ANCHORS
+                assert w["label"] not in _S30_CUSTOM   # customs: honest
                 flagged += 1
-        assert flagged >= 60   # S27: 39-board → S28: 69-board rollout
+        assert flagged >= 75   # S28: 69 → S30: 75-board rollout
 
     def test_all_four_kind_boards_flagged(self):
         # S28: every board of an accepting SITE kind is flagged, EXCEPT

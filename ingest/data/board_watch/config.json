@@ -1885,6 +1885,104 @@
     "United States"
    ],
    "geo_scope": "non_cn"
+  },
+  {
+   "label": "zailab_us_fulltime",
+   "board": "ats:smartrecruiters:ZaiLabUSLLC1",
+   "company": "Zai Lab",
+   "country": "United States",
+   "li_variants": [
+    "Zai Lab",
+    "Zai Lab (US) LLC",
+    "ZAILAB"
+   ],
+   "slice_locations": [
+    "United States",
+    "Cambridge, Massachusetts, United States",
+    "South San Francisco, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "midea_us_fulltime",
+   "board": "ats:trakstar:midea.hire.trakstar.com",
+   "company": "Midea America",
+   "country": "United States",
+   "li_variants": [
+    "Midea America",
+    "Midea America Corporation",
+    "Midea"
+   ],
+   "slice_locations": [
+    "United States",
+    "Louisville, Kentucky, United States",
+    "Parsippany, New Jersey, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "minisous_us_fulltime",
+   "board": "ats:icims:careers-miniso-us.icims.com",
+   "company": "MINISO (US)",
+   "country": "United States",
+   "li_variants": [
+    "MINISO",
+    "MINISO USA",
+    "MINISO Depot"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "psi_us_fulltime",
+   "board": "ats:paycom:us-cent/39DCF574C16448FF09ADD3EF809F9EF2",
+   "company": "Power Solutions International",
+   "country": "United States",
+   "li_variants": [
+    "Power Solutions International",
+    "PSI",
+    "Weichai America"
+   ],
+   "slice_locations": [
+    "United States",
+    "Wood Dale, Illinois, United States",
+    "Itasca, Illinois, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "a123_us_fulltime",
+   "board": "custom:a123",
+   "company": "A123 Systems",
+   "country": "United States",
+   "li_variants": [
+    "A123 Systems",
+    "A123 Systems LLC",
+    "Wanxiang America"
+   ],
+   "slice_locations": [
+    "United States",
+    "Novi, Michigan, United States"
+   ]
+  },
+  {
+   "label": "polestar_us_fulltime",
+   "board": "ats:teamtailor:polestar",
+   "company": "Polestar",
+   "country": "United States",
+   "li_variants": [
+    "Polestar",
+    "Polestar Automotive",
+    "Polestar USA"
+   ],
+   "slice_locations": [
+    "United States",
+    "Gothenburg, Sweden",
+    "Mahwah, New Jersey, United States"
+   ],
+   "geo_scope": "non_cn"
   }
  ]
 }

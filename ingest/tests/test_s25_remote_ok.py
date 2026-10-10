@@ -146,6 +146,9 @@ class TestRemoteOkDispatch:
     def test_flag_threads_through_dispatch(self):
         # the dispatch seam passes include_remote only to adapters
         # that accept it (greenhouse/ashby/lever/workable)
+        # S30: +smartrecruiters (location.remote flag), trakstar/icims/
+        # paycom (remote tokens in location text)
         assert site_boards._ADAPTER_ACCEPTS_REMOTE == {
             "greenhouse": True, "ashby": True, "lever": True,
-            "workable": True}
+            "workable": True, "smartrecruiters": True, "trakstar": True,
+            "icims": True, "paycom": True}
