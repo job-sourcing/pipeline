@@ -11315,7 +11315,15 @@ class IsolvedAdapter:
         hit = _CACHE.get(key)
         if hit and time.monotonic() - hit[0] < _CACHE_TTL:
             return hit[1]
-        d = fetch_json(self._list_url(), cfg=self.cfg)
+        try:
+            d = fetch_json(self._list_url(), cfg=self.cfg)
+        except Exception:
+            # S31 (watch #120): isolvedhire.com 403s the GHA Azure
+            # egress with an HTML challenge (fine from HK) — the
+            # Netlify US inline transport passes (live-verified
+            # 2026-10-11). Free tier, no credits.
+            from ..transport import netlify_fetch_json
+            d = netlify_fetch_json(self._list_url(), cfg=self.cfg)
         jobs = (d.get("data") or d).get("jobs") or []
         rows: list[dict] = []
         for j in jobs:
