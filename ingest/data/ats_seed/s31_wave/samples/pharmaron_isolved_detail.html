@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		
+<!-- Load Vue -->
+<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
+
+	<!-- Production environment - Load bundled components -->
+	<script type="module" crossorigin src="/js/web-components/applicant-pro-components.js?version=1791714502"></script>
+	<script type="module">
+		import { initVue } from '/js/web-components/applicant-pro-components.js?version=1791714502';
+		window.initVue = initVue;
+	</script>
+
+<!-- Load component styles -->
+<link rel="stylesheet" href="/js/web-components/assets/style.css?version=live20260923.1">
+
+<!-- Loader that doesn't require importing or using a 'module' sadly we have to wait until it exists though! -->
+<script type="text/javascript">
+	// Helper sleep method
+	const sleep = (milliseconds) => {
+		return new Promise(resolve => setTimeout(resolve, milliseconds));
+	}
+
+	// Our component loader function which waits until our `module` files have been loaded
+	window.bootstrapVue = async function(mountSelector, componentsToLoad, mountingData) {
+		const csrfToken = "";
+		const isMobile = 0;
+
+		// Default value for the mounting data if none was given
+		mountingData = mountingData || {};
+
+		// Add the csrf token to every component's mountingData
+		mountingData.csrfToken = csrfToken;
+		mountingData.isMobile = isMobile;
+
+		if(typeof mountingData.courierCurrentRouteData === 'undefined') {
+			
+			mountingData.courierCurrentRouteData = {"domain_id":"5164","career_site_name":"Pharmaron","root_domain_title":"isolved Applicant Tracking","root_domain_id":"32","organization_id":"1919","organization_name":"Absorption Systems LLC / Pharmaron/ US Clinical Services Inc","user_id":0,"use_autocomplete":"1","csrfToken":""};
+		}
+
+		// Wait until the initVue exists
+		while (!window.initVue) {
+			await sleep(50);
+		}
+
+		return await initVue(mountSelector, componentsToLoad, mountingData, {"primary":"#007b9d","secondary":"#e6e6e6","accent":"#b1b1b1"});
+	}
+</script>
+
+<script type="text/javascript">
+	window.bootstrapVue('#toaster', [ 'WaveToaster' ]);
+</script>
+		<!--[if lt IE 10]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<![endif]-->
+		<link rel="stylesheet" href="/styles/all.min.css?ver=1.2.49890-2&use_vue_flag=1" />
+		<link rel="stylesheet" href="/styles/font-awesome-4.7.0/css/font-awesome.css?ver=" />
+		<link rel="stylesheet" href="/styles/awesomer.css?ver=1.1.46678" />
+		<link rel="shortcut icon" href="/favicon-isolved.ico" type="image/x-icon" />				<!--[if gte IE 9]>
+			<style type="text/css">
+				.gradient {
+		   			filter: none;
+				}
+			</style>
+		<![endif]-->
+		<title> Associate Scientist, Discovery ADME - Exton, PA - Pharmaron Jobs</title>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="keywords" content=" Associate Scientist, Discovery ADME, Exton, PA, United States, Scientist" />
+		
+				<meta property="og:image" content="http://pharmaron.isolvedhire.com/images/32/5164/20220811074123-Pharmaron_fblogo.jpg" />
+		<meta property="og:image:secure_url"  content="https://pharmaron.isolvedhire.com/images/32/5164/20220811074123-Pharmaron_fblogo.jpg" />
+				<meta property="og:description" content="Position: Associate Scientist, Discovery ADME
+Salary Range: $48,000 - $55,000
+Location: Exton, PA
+About Pharmaron
+Pharmaron is a global contract research and manufacturing organization (CRO/CDMO) helping pharma and biotech companies bring new therapies to life. With over 25,000 employees worldwide across 28 locations in the US, UK, China, and Singapore, we support drug discovery through to manufac..." />
+		<meta property="og:title" content=" Associate Scientist, Discovery ADME - Exton, PA" />
+				<meta property="og:url" content="https://pharmaron.isolvedhire.com/jobs/1874947-246925.html" />
+				
+				<meta name="description" content="Position: Associate Scientist, Discovery ADME
+" /><meta name="keywords" content=" Associate Scientist, Discovery ADME, Exton, PA, United States, Scientist" /><link href="https://pharmaron.isolvedhire.com/jobs/1874947.html" rel="canonical" />		<!--[if lt IE 9]>
+			<script src="/js/html5shiv.min.js"></script>
+      		<script src="/js/respond.min.js"></script>
+      	<![endif]-->
+
+		<!-- Popper for tooltips -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script type="text/javascript" src="/js/all.min.js?ver=2.3.47194&use_vue_flag=1"></script>
+		<!--<script type="text/javascript" src="/js/jQl.min.js"></script>-->
+		<script type="text/javascript">
+			$(function() {
+				$('input,textarea').placeholder();
+				A.supportsPlaceholders = $.support.placeholder = 'placeholder' in document.createElement('input');
+				V.init();
+				A.useN = true;
+				A.newValidation = true;
+				A.isMobile = 0;
+				
+							});
+		</script>
+		
+					<style>
+				html {
+					font-size: 62.5%;
+				}
+				.panel-default {
+					border-color: #ddd;
+				}
+				.panel {
+					margin-bottom: 20px;
+					background-color: #fff;
+					border: 1px solid transparent;
+					border-radius: 4px;
+					-webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+					box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+				}
+				.panel-body {
+					padding: 15px;
+				}
+				.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+					width: 100%;
+					margin-right: auto;
+					margin-left: auto;
+				}
+				#apply_container {
+					padding: 0 15px 0 5px;
+				}
+				#apply_container #apply_button {
+					font-size:1.2em;
+					padding: 1rem 0;
+				}
+				#job_piper_alerts_widget {
+					margin-top: 10px;
+				}
+				#job_piper_alerts_widget h3 {
+					margin-top: .5rem;
+				}
+				#job_piper_alerts_widget .refer-first-pane-btn {
+					font-size: 1.2em;
+				}
+				.fade.show, .show {
+					opacity: 1;
+				}
+			</style>
+				<script type="text/javascript">
+			function breakout() {
+				var request_uri = "/jobs/1874947";
+				if(request_uri.includes('?') && V.checkRequestUri(request_uri) > 0) {
+					// removed xss from url parameter and refresh the page
+					var new_uri = request_uri . split('?')[0];
+					window.top.location="https://pharmaron.isolvedhire.com" + new_uri;
+				} else {
+					if(window.top != window.self) {
+						window.top.location="https://pharmaron.isolvedhire.com//jobs/1874947";
+					}
+				}
+			}
+		</script>
+				
+				
+			</head>
+	<body class="main-body" onload="breakout()">
+		<div id="popover-container" class="bootstrap-area"></div>
+		<div id="toaster" class="bootstrap-area"><wave-toaster :position="{ top: 20, right: 20 }" :width="265"></wave-toaster></div>
+				<div class="container-fixed">
+			<div class="container" id="content_area">
+								<div class="header header-image" id="headerbar"  >
+										
+													<img alt="Pharmaron" src="/images/32/5164/20220811072846-Pharmaron_header1.png" usemap='#headerMap' />
+											
+									</div>
+				<div id="mainArea" class="panel panel-default">
+					<div class="panel-body">
+																	<div class="row d-flex" id="career-site-top-header">
+							<div class="col-sm-8 text-left">
+															</div>
+							<div class="col-sm-4">
+																<ul data-jin="ul1" id="menuLinks" class="nav navbar-nav navbar-right"><li data-jin="li"><a data-jin="1" href="/jobs/" >Pharmaron External Jobs</a></li><li data-jin="li"><a href="/account/login.php?listing_id=1874947&i=0" title="Login to Your Account">Login</a></li></ul>							</div>
+						</div>
+						<style>
+														#mobile_menus .list-group-item {
+								border-color: #e2e2e2;
+							}
+							.navbar-nav {
+								flex-direction: row;
+							}
+							ul#menuLinks li + li {
+								border: none;
+							}
+							.navbar-right {
+								float: right;
+								margin-right: 0;
+							}
+							.list-group {
+								padding-left: 0;
+								margin-bottom: 20px;
+							}
+							@media (min-width: 320px) and (max-width: 768px) {
+								#mainArea {
+									margin-top: 0px;
+								}
+								ul#menuLinks li {
+									padding: 10px 0px;
+								}
+							}
+							@media (min-width: 767px) and (max-width: 991px) {
+								.container {
+									max-width: 90%!important;
+									min-width: auto!important;
+								}
+							}
+						</style>
+					<style>
+.extra-padding-top {
+	margin: 20px;
+}
+.text-left table, .text-left iframe, .text-left img {
+	max-width : 100%!important;
+}
+</style>
+<script type="text/javascript" src="/js/jquery.form-abandonment.js?ver=1"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#email_me_job').on('click', function() {
+			Analytics.addAction('email_me_job_button', { listing_id : 1874947 });
+		});
+
+		$('#download_job_description').on('click', function() {
+			// TODO - Download the full job description file
+		});
+		
+		Analytics.addParams({ listing_id : '1874947' });
+	});
+</script>
+<script type="application/ld+json">
+	{"@context":"http:\/\/schema.org\/","@type":"JobPosting","title":" Associate Scientist, Discovery ADME","url":"https:\/\/pharmaron.isolvedhire.com\/jobs\/1874947.html","description":"<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Position<\/span><\/strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">: Associate Scientist, Discovery ADME<\/span><\/p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Salary Range<\/span><\/strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">: $48,000 - $55,000<\/span><\/p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Location<\/span><\/strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">: Exton, PA<\/span><\/p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">About Pharmaron<\/span><\/strong><\/p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Pharmaron is a global contract research and manufacturing organization (CRO\/CDMO) helping pharma and biotech companies bring new therapies to life. With over 25,000 employees worldwide across 28 locations in the US, UK, China, and Singapore, we support drug discovery through to manufacturing with fully integrated high-quality services.<\/span><\/p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">We're proud of the impact we make and just last year, we supported <strong>887 discovery projects<\/strong>, <strong>1,100+ CMC programs<\/strong>, and <strong>1,397 clinical trials <\/strong>across all phases. Our teams are involved in everything from small molecules, ADC's, biologics, and gene therapies and we work with more than <strong>3,300 global customers<\/strong>. To learn more, visit <\/span><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\"><a href=\"https:\/\/apc01.safelinks.protection.outlook.com\/?url=http%3A%2F%2Fwww.pharmaron.com%2F&amp;data=05%7C02%7CManuel.Chavez%40pharmaron.com%7C5256833f9c694208d1a808ded81d23f1%7Cad43cc9279994116bbb60a2bcc8776b3%7C1%7C0%7C639185816895043159%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=6NmT4JPk3sWKAQUUaBNTPEkMDaRu7F7sC1kAP7R8oBU%3D&amp;reserved=0\"><span style=\"color: blue;\">www.pharmaron.com<\/span><\/a><\/span><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">.<\/span><\/p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">What You'll Do<\/span><\/strong><\/p>\n<p style=\"line-height: 15.0pt;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">As an Associate Scientist, you will play a key role in supporting discovery ADME studies by generating reliable analytical data and helping ensure client expectations are consistently exceeded. In this onsite role, you will support critical sample analysis activities for early-stage drug discovery programs while working with state-of-the-art LC-MS technologies in a collaborative scientific environment.<\/span><\/p>\n<p><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Arial',sans-serif;\">This is an excellent opportunity for an early-career scientist who enjoys hands-on laboratory work, data analysis, and contributing to high-quality scientific research that supports pharmaceutical and biotechnology clients worldwide.<\/span><\/p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Key Responsibilities<\/span><\/strong><\/p>\n<ul>\n<li><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Arial',sans-serif;\">Perform sample preparation and analysis for discovery in vitro ADME studies.<\/span><\/li>\n<li><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Arial',sans-serif;\">Assist with development and optimization of analytical methods for sponsor studies.<\/span><\/li>\n<li><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Arial',sans-serif;\">Execute studies according to approved protocols and project requirements.<\/span><\/li>\n<li><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Arial',sans-serif;\">Process analytical data and prepare scientific reports.<\/span><\/li>\n<li><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Arial',sans-serif;\">Maintain accurate, complete, and compliant study documentation.<\/span><\/li>\n<li><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Arial',sans-serif;\">Support the delivery of high-quality results within established timelines.<\/span><\/li>\n<li><span style=\"font-size: 10.0pt; line-height: 115%; font-family: 'Arial',sans-serif;\">Collaborate with scientists and laboratory staff to ensure successful project execution.<\/span><\/li>\n<li style=\"line-height: 15.0pt;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Perform routine maintenance and troubleshooting of laboratory instrumentation. <\/span><\/li>\n<li style=\"line-height: 15.0pt;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Maintain laboratory organization and operational readiness. <\/span><\/li>\n<li style=\"line-height: 15.0pt;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Follow Standard Operating Procedures (SOPs) and applicable quality standards. <\/span><\/li>\n<li style=\"line-height: 15.0pt;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Stay current with scientific advances and industry developments related to analytical and bioanalytical sciences. <\/span><\/li>\n<li style=\"line-height: 15.0pt;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Support additional laboratory and scientific initiatives as assigned by management.<\/span><\/li>\n<\/ul>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">What We're Looking For<\/span><\/strong><\/p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Required Qualifications<\/span><\/strong><\/p>\n<ul>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Bachelor's degree in Pharmaceutical Sciences, Life Sciences, Chemistry, Biochemistry, or a related analytical science discipline.<\/span><\/li>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Minimum 1 year of bioanalytical testing, analytical development, or related laboratory experience.<\/span><\/li>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Minimum 1 year of hands-on experience with <strong>(U)HPLC-MS systems<\/strong>.<\/span><\/li>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Strong attention to detail and commitment to generating high-quality scientific data.<\/span><\/li>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Excellent written and verbal communication skills.<\/span><\/li>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Ability to work effectively both independently and within a collaborative team environment.<\/span><\/li>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Strong organizational skills and ability to manage multiple priorities.<\/span><\/li>\n<\/ul>\n<p style=\"line-height: 15.0pt;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Preferred Qualifications<\/span><\/strong><\/p>\n<ul>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Experience with <strong>Agilent<\/strong> or <strong>Waters LC-MS platforms<\/strong>.<\/span><\/li>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Experience using <strong>Discovery Quant<\/strong> software.<\/span><\/li>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Knowledge of additional analytical techniques, including HPLC with conventional detection systems.<\/span><\/li>\n<li style=\"line-height: 15.0pt; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Experience supporting pharmaceutical, biotechnology, CRO, or drug discovery environments.<\/span><\/li>\n<\/ul>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Why Pharmaron?<\/span><\/strong><\/p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Pharmaron is a premier service provider for the life sciences industry. Founded in 2004, Pharmaron has invested in its people and facilities and established a broad spectrum of research, development, and manufacturing service capabilities throughout the entire drug discovery, preclinical, and clinical development process across multiple therapeutic modalities, including small molecules, biologics, and CGT products. With over 25,000 employees and operations in the US, UK, China, and Singapore. Pharmaron has an excellent track record in delivering R&amp;D solutions to its partners in North America, Europe, Japan, and China.<\/span><\/p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Collaborative Culture:<\/span><\/strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\"> You will thrive in our inclusive and collaborative environment, where teamwork and innovation go hand in hand. Here, your voice matters, and your contributions make a real impact. \"Employees Number One\" and \"Clients Centered\" are the core cultural values at Pharmaron. Our culture, which sets Pharmaron apart from other organizations, has evolved from our deep commitment to our employees, partners, and collaborators.<\/span><\/p>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Benefits:<\/span><\/strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\"> As part of our commitment to your well-being, we offer a comprehensive benefits package:<\/span><\/p>\n<ul>\n<li style=\"line-height: normal; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Comprehensive Medical, Dental &amp; Vision Insurance with significant employer contributions<\/span><\/li>\n<li style=\"line-height: normal; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">401(k) Retirement Plan with generous employer matching<\/span><\/li>\n<li style=\"line-height: normal; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Generous Paid Time Off (PTO), Paid Sick Leave &amp; Company Holidays to support work-life balance<\/span><\/li>\n<li style=\"line-height: normal; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Employer-funded Health Savings Account (HSA) contributions (for eligible plans), plus Healthcare &amp; Dependent Care Flexible Spending Accounts<\/span><\/li>\n<li style=\"line-height: normal; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">100% Employer-paid Employee Life Insurance, AD&amp;D, Short- and Long-Term Disability Insurance<\/span><\/li>\n<li style=\"line-height: normal; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Employee Assistance Program (EAP), mental health resources, and wellness programs<\/span><\/li>\n<li style=\"line-height: normal; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Family-friendly benefits, including fertility support and maternity resources<\/span><\/li>\n<li style=\"line-height: normal; tab-stops: list .5in;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Professional development and career growth opportunities within a leading global CRO\/CDMO<\/span><\/li>\n<\/ul>\n<p style=\"line-height: normal;\"><strong><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">How to Apply:<\/span><\/strong><\/p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">Ready to seize this incredible opportunity? Join us at Pharmaron and be part of a dynamic team driving innovation and excellence in biopharmaceutical research and development. Apply online today!<\/span><\/p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">As an Equal Employment Opportunity and Affirmative Action employer, Pharmaron values diversity and inclusion in the workplace, fostering an environment where all individuals are empowered to succeed. Join us in our mission to make a difference in the world of life sciences.<\/span><\/p>\n<p style=\"line-height: normal;\"><span style=\"font-size: 10.0pt; font-family: 'Arial',sans-serif;\">#LI-DR1<\/span><\/p>","identifier":{"@type":"PropertyValue","name":"Pharmaron","sameAs":"1874947"},"datePosted":"2026-09-29 00:00:00","validThrough":"2031-09-29 00:00:00T23:59","employmentType":"FULL_TIME","baseSalary":{"@type":"MonetaryAmount","currency":"USD","value":{"@type":"QuantitativeValue","unitText":"YEAR","minValue":"48,000","maxValue":"55,000"}},"hiringOrganization":{"@type":"Organization","name":"Pharmaron","sameAs":"https:\/\/pharmaron.isolvedhire.com"},"jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"Creamery Way","addressLocality":"Exton","addressRegion":"PA","postalCode":"19341","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":"40.03258170000000","longitude":"-75.62745830000000"}}}</script>
+<div class="row text-left">
+	<div class="col-md-8">
+			<div id="job_detail" class="bootstrap-area"><job-detail v-bind="componentData"></div>
+	<script type="text/javascript">
+			$(function() {
+				window.bootstrapVue(
+					"#job_detail",
+					[ 'JobDetail' ],
+					{ componentData: { token : "", organizationId : 1919, domainId : 5164, domainTitle : "Pharmaron", jobListingId : 1874947, jobInfo : {"mdiMapMarker":"Exton, PA 19341, USA","mdiDollar":"48,000-55,000 per year","mdiBulletList":"Salary","mdiInbox":"Full Time"}, showEmailMeSimilarJobs : 1, mailToUrl : "mailto:?subject=%20Associate%20Scientist%2C%20Discovery%20ADME%20at%20Pharmaron&body=Apply%20for%20the%20%20Associate%20Scientist%2C%20Discovery%20ADME%20at%20Pharmaron%20using%20the%20link%20below.%0A%0Ahttps%3A%2F%2Fpharmaron.isolvedhire.com%2Fjobs%2F1874947", siteCss : {"accent":"#201C6F"}, useChatToApplyFlag : false, airaEnabled : false, }}
+				);
+			});
+	</script>	</div>
+	<div class="col-md-4">
+			<div id="inline_auth" class="bootstrap-area"><inline-auth v-bind="componentData"></div>
+	<script type="text/javascript">
+			$(function() {
+				window.bootstrapVue(
+					"#inline_auth",
+					[ 'InlineAuth' ],
+					{ componentData: { listingId : 1874947, domainId : 5164, domainTitle : "Pharmaron", requireAddress : true, linkedinOn : false, linkedinClientId : "", linkedinIntegrationContext : "", }}
+				);
+			});
+	</script><ul class="list-group" id="job_piper_alerts_widget">
+	<li class="list-group-item text-center">
+		<h3>Sign Up For Job Alerts!</h3>
+	</li>
+	<li class="list-group-item background-theme">
+		<script type="text/javascript">
+			$(function() {
+				var sidebar_options = { 
+					api_key: "715608d3_isolvedhire_pharmaron", 
+					style: "sidebar", 
+					title: " Associate Scientist, Discovery ADME", 
+					source: "32_job" 
+				};
+				referWidget("create", sidebar_options, "refer-widget");
+			});
+		</script>
+		<div id="refer-widget"></div>
+	</li>
+</ul>
+	<div id="social_media_widget" class="bootstrap-area"><social-media-widget v-bind="componentData"></div>
+	<script type="text/javascript">
+			$(function() {
+				window.bootstrapVue(
+					"#social_media_widget",
+					[ 'SocialMediaWidget' ],
+					{ componentData: { job : {"id":"1874947","title":" Associate Scientist, Discovery ADME","city":"Exton","name":"Pennsylvania","abbreviation":"PA","description":"Position: Associate Scientist, Discovery ADME\nSalary Range: $48,000 - $55,000\nLocation: Exton, PA\nAbout Pharmaron\nPharmaron is a global contract research and manufacturing organization (CRO\/CDMO) helping pharma and biotech companies bring new therapies to life. With over 25,000 employees worldwide a...","advertisingTitle":" Associate Scientist, Discovery ADME"}, organizationId : 1919, rootDomainId : 32, domainId : 5164, domainName : "isolvedhire.com", domainTitle : "Pharmaron", subdomainName : "pharmaron", sourceId : 0, employeeName : "", useWwwJobPagesUrl : false, }}
+				);
+			});
+	</script>	</div>
+</div>
+<img alt="." src="https://pharmaron.isolvedhire.com/jobs/images/5164-1874947.png" />
+					</div> <!-- panel-body -->
+										<div class="panel-footer">
+												<div>
+														<div class="footer-links">Maintained by isolved People Cloud - &copy; 2026</div>
+														<div class="footer-links">
+									<form method="post" id="clear_cache" style="display: inline-block;">
+										<input type="hidden" name="clear_session_cache_old_style" />
+										<a tabindex="-1" href="javascript:void(0);" onclick="$('#clear_cache').submit();">Refresh</a>
+									</form>
+								</div>
+													</div>
+												<!--[if lt IE 9]>
+						<script type="text/javascript">
+							$(function() {
+								$('.footer-links:last-child').css('border-left', '0');
+								$('.footer-links:last-child a').css('color', $('body .panel-footer').css('background-color'));
+							});
+						</script>
+					<![endif]-->
+					</div> <!-- panel-footer -->
+				</div> <!-- panel -->
+			</div> <!-- container -->
+		</div> <!-- container-fixed -->
+
+		<style>
+	body {
+		margin-bottom: 60px !important;
+	}
+</style>
+<script type="text/javascript">
+	var faqButtons = [{"page":"instructions","link":"https:\/\/applicantsupport.crunch.help"},{"page":"resume","link":"https:\/\/applicantsupport.crunch.help\/example-category#resume-q-a"},{"page":"additional_questions","link":"https:\/\/applicantsupport.crunch.help\/example-category#additional-job-questions-q-a"},{"page":"screening","link":"https:\/\/applicantsupport.crunch.help\/example-category#additional-job-questions-q-a"},{"page":"employment","link":"https:\/\/applicantsupport.crunch.help\/example-category#employment-history-q-a"},{"page":"education","link":"https:\/\/applicantsupport.crunch.help\/example-category#education-q-a"},{"page":"references","link":"https:\/\/applicantsupport.crunch.help\/example-category#references-q-a"},{"page":"eeoc","link":"https:\/\/applicantsupport.crunch.help"},{"page":"disclosure","link":"https:\/\/applicantsupport.crunch.help"},{"page":"source","link":"https:\/\/applicantsupport.crunch.help\/example-category#source-q-a"},{"page":"submit","link":"https:\/\/applicantsupport.crunch.help\/example-category#submit-application-q-a","label":"Common Submit Questions"},{"page":"thank_you","link":"https:\/\/applicantsupport.crunch.help\/general-questions#general-q-a","label":"Common Application Questions"},{"page":"my_account","link":"https:\/\/applicantsupport.crunch.help\/my-account#my-account-q-a","label":"Common Account Questions"},{"page":"login","link":"https:\/\/applicantsupport.crunch.help\/my-account#login-q-a","label":"Common Login Questions"},{"page":"listing_info","link":"https:\/\/applicantsupport.crunch.help\/example-category#job-description-q-a","label":"Common Job Questions"}];
+	$(function() {
+		$('#faq_bar_form').on('submit', function() {
+			var value = $('#faq_bar_searchCriteria').val();
+			if(value) {
+				A.setTempName('support');
+				A.setTempDir('/jobs/');
+				A.set('recordSearch', { from_page_url : window.location.href, keyword : value, csrf_token : $("input[name=csrf_token]").val() });
+				var newWindow = window.open("https://applicantsupport.crunch.help/search?searchQuery=" + encodeURIComponent(value), "_blank");
+			} else
+				N.addError("Please enter a search term to search our FAQs");
+			return false;
+		});
+		
+		$('#common_faq_button').on('click', function() {
+			var newWindow = window.open($(this).data('link'), "_blank");
+		});
+		
+		var path = window.location.pathname, name;
+		switch(true) {
+			case path.indexOf('login.php') != -1 || path.indexOf('forgot_password.php') != -1:
+				name = 'login';
+				break;
+				
+			case path.indexOf('/account/') != -1:
+				name = 'my_account';
+				break;
+				
+			case path.indexOf('/jobs/') != -1:
+			case path.indexOf('/internaljobs/') != -1:
+				name = 'listing_info';
+				break;
+				
+			case path.indexOf('/apply/') != -1:
+				name = '';
+				break;
+		}
+		changeCommonQuestionsText(name);
+	});
+	
+	function changeCommonQuestionsText(name) {
+		var label = "", $button = $('#common_faq_button'), newButtonText = $('[data-file="' + name + '"]').text(), found = false;
+		for(var i in faqButtons) {
+			if(faqButtons[i]['page'] == name) {
+				$button.show();
+				label = faqButtons[i]['label'] ? faqButtons[i]['label'] : 'Common ' + (newButtonText.search(/questions?/ig) != -1 ? newButtonText : newButtonText + ' Questions');
+				$button.text(label);
+				$button.data('link', faqButtons[i]['link']);
+				found = true;
+				break;
+			}
+		}
+		
+		if(!found)
+			$button.hide();
+	}
+</script>
+<div class="faq-bar-container">
+	<form id="faq_bar_form" class="form-inline " style="padding: 8px;" action="javascript:void(0);">
+		<input type="hidden"  name="csrf_token" value="MTc5MTcxNDUwMmZhNTMwZDExMjA4YmUwMzRmYjBiZWU3ZTdjMDhhZTI2MDY1MjMzNjNlZDA0NDU5YjI0YTVkMTc1ZmE0Nzk3ZjhkYzhiNTU3NzBkYmM0N2Y5MzNmNDU5NjQ1MjAyMDIzZDllOTBhYzM0"  />		<div class="inline-block relative" style="width: 25%;">
+			<label for="faq_bar_searchCriteria" class="control-label sr-only">Search the FAQ here</label><input type="text" name="searchCriteria" id="faq_bar_searchCriteria" autocomplete="off" class="full-width form-control" placeholder="Need Help? Search the Help Content" style="height: 34px;" />
+		</div>
+		<button type="submit" class="btn accent">Go</button>
+				<button type="button" class="btn accent" id="common_faq_button">Common Questions</button>
+			</form>
+</div>
+
+		<!-- Refer.io Script that will be used throughout the site -->
+				<script type="text/javascript">
+			!function(e,r,t){e.referWidget=e.referWidget||function(){(e.referWidget.q=e.referWidget.q||[]).push(arguments)},e.referWidget.l=1*new Date;var n=r.createElement("script"),i=r.getElementsByTagName("script")[0];n.async=1,n.src=t,i.parentNode.insertBefore(n,i)}(window,document, "https://widget-dot-refer-io.appspot.com/refer.js");
+		</script>
+
+		
+		
+		<p style="text-align: center;"><span style="font-size: 8pt;">Pharmaron is an Equal Opportunity Employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability status, protected veteran status or any other characteristic corrected by law.</span></p>	
+	
+	<!-- GA4 - Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1QL0HHW9LT"></script>
+	<script>

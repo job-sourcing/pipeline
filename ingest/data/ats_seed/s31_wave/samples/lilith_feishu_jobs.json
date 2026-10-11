@@ -1,0 +1,194 @@
+{
+ "count": 110,
+ "sample_rows": [
+  {
+   "id": "7690515099362248996",
+   "title": "高级文案策划（都市生活模拟）",
+   "publish_time": 1790587689136,
+   "recruit_type": {
+    "id": "101",
+    "name": "全职",
+    "en_name": "Full-time",
+    "i18n_name": "全职",
+    "depth": 2,
+    "parent": {
+     "id": "1",
+     "name": "社招",
+     "en_name": "Experienced",
+     "i18n_name": "社招",
+     "depth": 1,
+     "parent": null,
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "children": null,
+    "active_status": 1,
+    "selectability": 1
+   },
+   "city_list": [
+    {
+     "code": "CT_125",
+     "name": "上海",
+     "en_name": "Shanghai",
+     "location_type": null,
+     "i18n_name": "上海",
+     "py_name": null,
+     "mdm_code": null,
+     "node_status": null
+    }
+   ],
+   "job_function": {
+    "id": "7233699008626133287",
+    "name": "游戏策划",
+    "en_name": null,
+    "i18n_name": "游戏策划",
+    "parent_id": null,
+    "index": null,
+    "active_status": null,
+    "biz_create_time": null,
+    "biz_modify_time": null,
+    "parent": {
+     "id": "7233694510365804811",
+     "name": "产品",
+     "en_name": null,
+     "i18n_name": "产品",
+     "parent_id": null,
+     "index": null,
+     "active_status": null,
+     "biz_create_time": null,
+     "biz_modify_time": null,
+     "parent": null
+    }
+   },
+   "description": "1. 负责撰写美术需求。按照项目组已有风格，输出角色/场景/道具等美术需求文档，并且跟进和验收最终的资源。\n2. 独立跟进功能包装。将系统玩法转化为故事包装，提高玩家的代入感，以及保证游戏调性的统一。\n3. 负责世界观撰写与世界地图构思。能够以类迪士尼风格的奇幻童话风去独立构建一个区域的气质和故事并具备把抽象想法落地的能力。如：能大量搜集视觉参考图，为建筑、地标、区域命名，最终把脑海中的虚拟世界转化为可被美术理解的概念方案等。",
+   "requirement": "1. 具备3年及以上的文案工作经验。对如何塑造性格，为玩家营造仪式感有自己的见解，至少有一款上线游戏及运营经验。\n2. 有女性向游戏工作经历加分，可备注生活模拟类、模拟经营类、角色扮演类游戏经历和时长。\n3. 过往有美术需求、系统包装、世界观设计相关工作经历可加分。"
+  },
+  {
+   "id": "7690478486100543785",
+   "title": "高级角色概念设计师（AFK Journey）",
+   "publish_time": 1790579207454,
+   "recruit_type": {
+    "id": "101",
+    "name": "全职",
+    "en_name": "Full-time",
+    "i18n_name": "全职",
+    "depth": 2,
+    "parent": {
+     "id": "1",
+     "name": "社招",
+     "en_name": "Experienced",
+     "i18n_name": "社招",
+     "depth": 1,
+     "parent": null,
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "children": null,
+    "active_status": 1,
+    "selectability": 1
+   },
+   "city_list": [
+    {
+     "code": "CT_125",
+     "name": "上海",
+     "en_name": "Shanghai",
+     "location_type": null,
+     "i18n_name": "上海",
+     "py_name": null,
+     "mdm_code": null,
+     "node_status": null
+    }
+   ],
+   "job_function": {
+    "id": "7233696638791174438",
+    "name": "概念设计",
+    "en_name": null,
+    "i18n_name": "概念设计",
+    "parent_id": null,
+    "index": null,
+    "active_status": null,
+    "biz_create_time": null,
+    "biz_modify_time": null,
+    "parent": {
+     "id": "7233694862792870177",
+     "name": "艺术",
+     "en_name": null,
+     "i18n_name": "艺术",
+     "parent_id": null,
+     "index": null,
+     "active_status": null,
+     "biz_create_time": null,
+     "biz_modify_time": null,
+     "parent": null
+    }
+   },
+   "description": "1. 主要负责项目内的角色原画设计，包括抽卡英雄、主角Avatar和英雄皮肤，怪物等角色设定。\n2. 在已有的风格体系下，能够设计性格和特质鲜明的角色形象。\n3. 了解3D角色制作流程，有3d实现意识，能很好地衔接2D设计与3d制作，做好模型资产的后期修正工作。",
+   "requirement": "职位要求\n1. 5年以上工作经验，有完整上线项目优先。\n2. 熟悉欧美卡通到半写实的美术风格，能够准确表现半写实比例、鲜明轮廓、趣味造型和角色性格。\n3. 具备较强的审美判断力，绘画功底扎实，色彩感觉契合项目，设计平面构成感良好。\n4. 有较强的3D项目设计思维，设计逻辑和设计思路成熟：能够输出适合3D制作的角色设定图，包括三视图、结构拆分、材质说明等，为3D角色制作提供清晰参考；理解3D角色制作流程，能够从模型落地角度进行设计，避免不可实现或实现成本过高的设计方案。\n5. 需要有设计规范意识和效率意识，能够按时独立产出符合项目的制作规范并执行生产相关的内容。具备良好的沟通能力和团队协作意识，能够根据反馈快速调整设计方案。\n\n作品集要求\n1. 请提供能够体现角色设计能力的作品。\n2. 如有3D落地案例，请附上原画与最终模型对比图。\n3. 有完整的卡牌角色立绘和皮肤类相关设计案例优先。"
+  },
+  {
+   "id": "7688674315667261715",
+   "title": "平台测试开发工程师",
+   "publish_time": 1790159135048,
+   "recruit_type": {
+    "id": "101",
+    "name": "全职",
+    "en_name": "Full-time",
+    "i18n_name": "全职",
+    "depth": 2,
+    "parent": {
+     "id": "1",
+     "name": "社招",
+     "en_name": "Experienced",
+     "i18n_name": "社招",
+     "depth": 1,
+     "parent": null,
+     "children": null,
+     "active_status": 1,
+     "selectability": 1
+    },
+    "children": null,
+    "active_status": 1,
+    "selectability": 1
+   },
+   "city_list": [
+    {
+     "code": "CT_125",
+     "name": "上海",
+     "en_name": "Shanghai",
+     "location_type": null,
+     "i18n_name": "上海",
+     "py_name": null,
+     "mdm_code": null,
+     "node_status": null
+    }
+   ],
+   "job_function": {
+    "id": "7510181081393072422",
+    "name": "测试开发",
+    "en_name": null,
+    "i18n_name": "测试开发",
+    "parent_id": null,
+    "index": null,
+    "active_status": null,
+    "biz_create_time": null,
+    "biz_modify_time": null,
+    "parent": {
+     "id": "7233694221210241292",
+     "name": "质量",
+     "en_name": null,
+     "i18n_name": "质量",
+     "parent_id": null,
+     "index": null,
+     "active_status": null,
+     "biz_create_time": null,
+     "biz_modify_time": null,
+     "parent": null
+    }
+   },
+   "description": "1. 平台质量保障：负责公司内部平台的质量保障，包括 DevOps 平台、舆情系统、客服系统和游戏研发/运营工具。工作覆盖 Web 前端、服务端接口和数据链路，要求能独立完成测试方案设计、测试执行和上线验收。\n2. 测试工具与自动化建设：设计、开发并维护接口自动化、UI 自动化和数据校验等测试框架与工具，接入 CI/CD 流水线，持续提高回归效率和测试覆盖率。\n3. AI Native 研发测试工作流：探索大模型和 Agent 在研发测试中的落地，并把可行的做法推广到团队。方向包括 AI 生成测试用例和测试数据、AI 辅助缺陷分析与定位、智能回归、基于 Agent 的自动化测试执行，以及 MCP/Skill 等工具的建设。\n4. AI 功能质量评估：对舆情、客服等平台里的大模型能力（如智能分类、智能回复、摘要）建立评测集、评估指标和回归机制，保证 AI 功能的效果稳定、可以量化。\n5. 团队管理：带领4名外包测试工程师，负责任务拆解和排期、测试用例评审、执行质量把控和能力培养，保证交付质量和进度。\n6. 质量体系与流程：参与需求评审和技术方案评审，推动可测性改进。建设缺陷度量、质量看板等数据化手段，持续优化研发测试流程。",
+   "requirement": "1. 本科及以上学历，3 年以上测试开发经验，有 Web 平台或后台系统的测试经验，能独立负责一个或多个项目的全流程质量工作。\n2. 熟练掌握至少一门编程语言（Python / Go / Java），有扎实的编码能力，能独立开发测试框架、平台或提效工具。\n3. 熟悉接口测试和自动化测试体系，熟练使用 Pytest、Playwright/Selenium、Postman、JMeter 等工具，熟悉 Jenkins/GitLab CI 等 CI/CD 流程。\n4. 了解 MySQL、Redis、Kafka 等常用数据库和中间件，具备通过日志、链路和数据定位问题的能力。\n5. 对 AI 辅助研发有浓厚兴趣并有实际使用经验，熟练使用 Claude Code、Cursor 等 AI 编程工具，了解 Prompt 工程、Agent 和 MCP 等概念。\n6. 熟悉测试理论和测试设计方法，有良好的风险识别能力和质量意识。\n7. 有带团队或管理外包的经验，具备良好的沟通协调、任务拆解和推动落地能力。\n8. 自驱力强，乐于尝试新技术，并能把个人实践沉淀成团队可复用的方法和工具。"
+  }
+ ]
+}

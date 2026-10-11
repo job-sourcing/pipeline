@@ -1629,6 +1629,26 @@ def main() -> int:
     try:
         watches = json.loads(
             CONFIG_PATH.read_text(encoding="utf-8")).get("watches", [])
+        # S31 cadence tags: WATCH_ONLY_TAGS/WATCH_SKIP_TAGS select a
+        # subset (the CF-walled firecrawl boards run WEEKLY via
+        # cf-board-watch.yml; the daily cron skips them with
+        # WATCH_SKIP_TAGS=weekly — 3 firecrawl credits/week by design).
+        only_tags = {t for t in os.environ.get(
+            "WATCH_ONLY_TAGS", "").split(",") if t.strip()}
+        skip_tags = {t for t in os.environ.get(
+            "WATCH_SKIP_TAGS", "").split(",") if t.strip()}
+        if only_tags or skip_tags:
+            def _sel(w):
+                tags = set(w.get("tags") or [])
+                if skip_tags and (tags & skip_tags):
+                    return False
+                if only_tags and not (tags & only_tags):
+                    return False
+                return True
+            watches = [w for w in watches if _sel(w)]
+            print(f"[watch] tag filter: only={sorted(only_tags)} "
+                  f"skip={sorted(skip_tags)} -> {len(watches)} watches")
+
     except (json.JSONDecodeError, OSError) as exc:
         print(f"[watch] config unreadable: {exc}", file=sys.stderr)
         return 0                       # exit-0 contract; tomorrow retries

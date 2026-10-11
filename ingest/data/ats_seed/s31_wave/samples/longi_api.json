@@ -1,0 +1,132 @@
+[
+ {
+  "id": 2,
+  "projects": null,
+  "title": "Sales Manager",
+  "business_group": {
+   "id": 3,
+   "name": "Utility Business Group",
+   "published_at": "2024-01-29T05:43:22.000Z",
+   "created_at": "2024-01-29T05:43:22.000Z",
+   "updated_at": "2024-01-29T05:43:22.000Z"
+  },
+  "number_of_recruitment": 1,
+  "seniority_level": {
+   "id": 8,
+   "name": "Manager",
+   "published_at": "2024-01-29T05:43:29.000Z",
+   "created_at": "2024-01-29T05:43:29.000Z",
+   "updated_at": "2024-01-29T05:43:29.000Z"
+  },
+  "job_category": {
+   "id": 2,
+   "name": "Marketing",
+   "published_at": "2024-01-29T05:43:34.000Z",
+   "created_at": "2024-01-29T05:43:34.000Z",
+   "updated_at": "2024-01-29T05:43:34.000Z"
+  },
+  "city": {
+   "id": 2,
+   "name": "Dubai",
+   "country": 9,
+   "published_at": "2024-03-29T06:14:49.000Z",
+   "created_at": "2024-03-29T06:14:47.000Z",
+   "updated_at": "2024-03-29T06:19:02.000Z"
+  },
+  "country": {
+   "id": 9,
+   "name": "UAE",
+   "region": 4,
+   "code": "AE",
+   "published_at": "2024-03-29T06:19:04.000Z",
+   "created_at": "2024-03-29T06:19:01.000Z",
+   "updated_at": "2024-03-29T06:19:04.000Z"
+  },
+  "region": {
+   "id": 4,
+   "name": "Middle East",
+   "published_at": "2024-01-29T05:43:37.000Z",
+   "created_at": "2024-01-29T05:43:37.000Z",
+   "updated_at": "2024-01-29T05:43:37.000Z"
+  },
+  "job_id": "10057931",
+  "responsibilities": "<p>1. Identifying new business opportunities and creating clear strategies to convert them</p><p>2. Coordinating the information flow around sales activities and providing forecasts and market intelligence to marketing and sales</p><p>3. Establishing strong customer relationships and maintaining a positive customer experience throughout the sales process, including post sale</p><p>4. Conducting contract risk assessments and working closely with relevant parties to mitigate risks</p><p>5. Complete the relevant reports and jobs designated by the team leader, and attend the relevant regular meetings</p><p>6. Other tasks assigned by the team leader.</p>",
+  "qualifications": "<p>1. Experience in direct sales and sales management, at least 5 years of working experience in the photovoltaic industry is preferred</p><p>2. Experience in business development, account management and cross selling</p><p>3. A clear grasp of contract negotiations, risk management, and commercial and legal terms</p><p>4. Exceptional communication and negotiating skills, a customer focused mindset, and a professional, \u201ccan do\u201d attitude</p><p>5. A Bachelor\u2019s degree or above</p><p>6. Fluency in English both oral and written, and Chinese is a plus</p><p>7. Acceptance for being assigned to work overseas</p>",
+  "recruiter_email": "wuhaoxuan@longi.com",
+  "recruitment_type": {
+   "id": 1,
+   "name": "Experienced Hires",
+   "published_at": "2024-01-29T05:43:20.000Z",
+   "created_at": "2024-01-29T05:43:20.000Z",
+   "updated_at": "2024-01-29T05:43:20.000Z"
+  },
+  "published_at": "2024-04-01T02:53:45.000Z",
+  "created_at": "2024-03-29T06:38:25.000Z",
+  "updated_at": "2024-04-02T02:59:43.000Z"
+ },
+ {
+  "id": 1,
+  "projects": null,
+  "title": "Sales Manager",
+  "business_group": {
+   "id": 3,
+   "name": "Utility Business Group",
+   "published_at": "2024-01-29T05:43:22.000Z",
+   "created_at": "2024-01-29T05:43:22.000Z",
+   "updated_at": "2024-01-29T05:43:22.000Z"
+  },
+  "number_of_recruitment": 1,
+  "seniority_level": {
+   "id": 8,
+   "name": "Manager",
+   "published_at": "2024-01-29T05:43:29.000Z",
+   "created_at": "2024-01-29T05:43:29.000Z",
+   "updated_at": "2024-01-29T05:43:29.000Z"
+  },
+  "job_category": {
+   "id": 2,
+   "name": "Marketing",
+   "published_at": "2024-01-29T05:43:34.000Z",
+   "created_at": "2024-01-29T05:43:34.000Z",
+   "updated_at": "2024-01-29T05:43:34.000Z"
+  },
+  "city": {
+   "id": 3,
+   "name": "Algiers",
+   "country": 10,
+   "published_at": "2024-03-29T06:15:02.000Z",
+   "created_at": "2024-03-29T06:15:00.000Z",
+   "updated_at": "2024-03-29T06:20:22.000Z"
+  },
+  "country": {
+   "id": 10,
+   "name": "Algeria",
+   "region": 5,
+   "code": "DZ",
+   "published_at": "2024-03-29T06:20:24.000Z",
+   "created_at": "2024-03-29T06:20:22.000Z",
+   "updated_at": "2024-03-29T06:20:24.000Z"
+  },
+  "region": {
+   "id": 5,
+   "name": "Africa",
+   "published_at": "2024-01-29T05:43:38.000Z",
+   "created_at": "2024-01-29T05:43:38.000Z",
+   "updated_at": "2024-01-29T05:43:38.000Z"
+  },
+  "job_id": "10057907",
+  "responsibilities": "<p>1. Identifying new business opportunities and creating clear strategies to convert them</p><p>2. Coordinating the information flow around sales activities and providing forecasts and market intelligence to marketing and sales</p><p>3. Establishing strong customer relationships and maintaining a positive customer experience throughout the sales process, including post sale</p><p>4. Conducting contract risk assessments and working closely with relevant parties to mitigate risks</p><p>5. Complete the relevant reports and jobs designated by the team leader, and attend the relevant regular meetings</p><p>6. Other tasks assigned by the team leader.</p>",
+  "qualifications": "<p>1. Experience in direct sales and sales management, at least 5 years of working experience in the photovoltaic industry is preferred</p><p>2. Experience in business development, account management and cross selling</p><p>3. A clear grasp of contract negotiations, risk management, and commercial and legal terms</p><p>4. Exceptional communication and negotiating skills, a customer focused mindset, and a professional, \u201ccan do\u201d attitude</p><p>5. A Bachelor\u2019s degree or above</p><p>6. Fluency in English both oral and written, and Chinese is a plus</p><p>7. Acceptance for being assigned to work overseas</p>",
+  "recruiter_email": "wuhaoxuan@longi.com",
+  "recruitment_type": {
+   "id": 1,
+   "name": "Experienced Hires",
+   "published_at": "2024-01-29T05:43:20.000Z",
+   "created_at": "2024-01-29T05:43:20.000Z",
+   "updated_at": "2024-01-29T05:43:20.000Z"
+  },
+  "published_at": "2024-04-01T02:53:41.000Z",
+  "created_at": "2024-03-29T06:30:15.000Z",
+  "updated_at": "2024-04-02T02:59:34.000Z"
+ }
+]

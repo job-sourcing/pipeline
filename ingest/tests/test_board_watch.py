@@ -1947,8 +1947,14 @@ class TestShippedWatchConfig:
                 kind, org = site_boards.parse_site(w["board"])
                 if w["board"].startswith("ats:"):
                     assert kind and org, w["board"]
-                else:  # custom: own-platform
-                    assert kind and not org, w["board"]
+                else:  # custom: own-platform (S31: or a KEYED
+                    # contract — custom:ssrpage:{key}, one class with
+                    # many per-board contract dicts)
+                    assert kind, w["board"]
+                    if kind == "ssrpage":
+                        assert org in site_boards.SSR_CONTRACTS, w["board"]
+                    else:
+                        assert not org, w["board"]
                     assert w["board"].startswith("custom:"), w["board"]
             else:
                 parts = w["board"].split("|")
@@ -2002,8 +2008,11 @@ class TestShippedWatchConfig:
             .read_text(encoding="utf-8"))
         # S29: 113 + reolink/sany/1more sweep wires; S30: +6 RE-wave
         # wires (zailab/midea/minisous/psi/a123/polestar — all
-        # live-verified with title evidence, S30 test file pins them)
-        assert len(cfg["watches"]) == 122
+        # live-verified with title evidence, S30 test file pins them);
+        # S31: +31 custom-adapter wave (7 existing-class wires + 9 new
+        # classes + the 16-contract ssrpage engine; 3 CF-walled boards
+        # weekly via cf-board-watch.yml)
+        assert len(cfg["watches"]) == 153
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",

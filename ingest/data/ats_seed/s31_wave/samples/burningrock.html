@@ -1,0 +1,828 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burning Rock Dx | Your Reliable Diagnostic Partner</title>
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/wow.min2.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+    <header>
+    <div class="head flex flex-center flex-between">
+        <ul class="nav flex flex-center">
+            <li>
+                <a href="product.php">Products</a>
+                <div class="subnav">
+                    <div class="sub-wrap flex">
+                        <div class="link">
+                                                            <a href="product.php#Solid">Solid Tumor Testing</a>
+                                                            <a href="product.php#Tumor">Minimal Residual Disease Testing</a>
+                                                            <a href="product.php#Hematologic">Hematologic Malignancies Testing</a>
+                                                            <a href="product.php#Early">RUO/IUO: Multi-omics Detection</a>
+                                                            <a href="product.php#Early Detection">Early Cancer Detection</a>
+                                                    </div>
+                        <div class="divider"></div>
+                        <div class="pic">
+                            <img src="upload/2024-08/172447863171039000.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="Biopharma.php">Services</a>
+                <div class="subnav">
+                    <div class="sub-wrap flex">
+                        <div class="link">
+                                                            <a
+                                    href="Biopharma.php">Pharma Biomarker & CDx Services</a>
+                                                            <a
+                                    href="serviceDetails.php?class_id=103102">International Diagnostics Division</a>
+                                                            <a
+                                    href="serviceDetails.php?class_id=103103">Sequencing Services</a>
+                                                            <a
+                                    href="serviceDetails.php?class_id=103104">Early Cancer Detection Services</a>
+                                                    </div>
+                        <div class="divider"></div>
+                        <div class="pic">
+                            <img src="upload/2024-08/172447802269276400.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <h1 class="logo">
+            <a href="/en/">
+                <img src="./images/logo_t.png" alt="">
+                <img src="./images/logo.png" alt="">
+            </a>
+        </h1>
+
+        <ul class="nav flex">
+            <li>
+                <a href="publications.php">Resources</a>
+                <div class="subnav bgi-left">
+                    <div class="sub-wrap flex row-reverse">
+                        <div class="link">
+                                                            <a href="publications.php">Publications</a>
+                                                            <a href="events.php">Events</a>
+                                                            <a href="webinars.php">Webinars</a>
+                                                            <a href="resourceCenter.php">Documents</a>
+                                                            <a href="FAQ.php">FAQs</a>
+                                                    </div>
+                        <div class="divider"></div>
+
+                        <div class="pic">
+                            <img src="upload/2024-10/173034093196604400.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="aboutUs.php">Company</a>
+                <div class="subnav bgi-left">
+                    <div class="sub-wrap flex row-reverse">
+                        <div class="link">
+                                                            <a href="aboutUs.php">About Us</a>
+                                                            <a href="pressRelease.php">Press Release</a>
+                                                            <a href="team.php">Leadership Team</a>
+                                                            <a href="core.php">Core Technologies</a>
+                                                            <a href="careers.php">Careers</a>
+                                                            <a href="https://brbiotech.gcs-web.com">Investor</a>
+                                                            <a href="contactUs.php">Contact Us</a>
+                                                    </div>
+                        <div class="divider"></div>
+                        <div class="pic">
+                            <img src="upload/2024-08/172447809081578100.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!-- <div class="search"></div> -->
+        <div class="lang xs-hidden">
+            <a href="javascript:;">EN</a>
+            <div>
+                <a href="https://www.brbiotech.com/cn/" target="_blank">中文</a>
+                <a href="https://www.brbiotech.com/en/">EN</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="m_nav">
+    <div class="h-m_wrap">
+        <a href="/en/" class="logo">
+            <img src="./images/logo_t.png" alt="">
+            <img src="./images/logo.png" alt="">
+        </a>
+    </div>
+</header>
+
+<div class="bar xs-visible">
+    <div class="Nav__MenuButtonIconContainer">
+        <div class="Nav__MenuButtonIcon">
+            <div class="Nav__MenuButtonIconStroke"></div>
+            <div class="Nav__MenuButtonIconStroke"></div>
+            <div class="Nav__MenuButtonIconStroke"></div>
+        </div>
+    </div>
+    <div class="Nav__MenuClose">
+        <div class="Nav__MenuCloseStroke"></div>
+        <div class="Nav__MenuCloseStroke"></div>
+    </div>
+</div>
+<div class="Nav__Menu xs-visible">
+    <div class="LinesAnim Nav__MenuLines">
+        <div class="LinesAnim__Container LinesAnim__Container--Small"><svg class="LinesAnim__Svg" viewBox="0 0 98 1324" stroke="#EAE7DD" xmlns="http://www.w3.org/2000/svg">
+                <path d="M46.583 0C80.194 88.404 97 153.27 97 194.6c0 41.33-16.806 105.326-50.417 191.991C4.624 478.94 4.624 570.742 46.583 662c41.693-90.822 41.693-182.624 0-275.409C16.194 305.844 1 241.847 1 194.6 1 147.353 16.194 82.486 46.583 0Zm0 662C80.194 750.404 97 815.27 97 856.6c0 41.33-16.806 105.326-50.417 191.991-41.959 92.349-41.959 184.151 0 275.409 41.693-90.822 41.693-182.624 0-275.409C16.194 967.844 1 903.847 1 856.6 1 809.353 16.194 744.486 46.583 662Z" fill="none" fill-rule="evenodd" stroke-opacity=".15"></path>
+            </svg></div>
+        <div class="LinesAnim__Container LinesAnim__Container--Big"><svg class="LinesAnim__Svg" viewBox="0 0 131 1260" stroke="#EAE7DD" xmlns="http://www.w3.org/2000/svg">
+                <path d="M64.472 629.996C22.157 698.53 1 763.308 1 824.33c0 61.053 21.179 124.996 63.536 191.831 43.643 88.232 43.643 169.512 0 243.84-42.357-73.706-42.357-154.986 0-243.84C108.18 949.325 130 885.382 130 824.33c0-61.022-21.8-125.8-65.398-194.334 43.577-74.298 43.555-155.54-.066-243.728C22.18 319.433 1 255.49 1 194.438 1 133.384 22.179 68.572 64.536 0 108.18 68.573 130 133.385 130 194.437c0 61.053-21.821 124.996-65.464 191.831-42.336 88.81-42.357 170.052-.064 243.728Z" fill="none" fill-rule="evenodd" stroke-opacity=".15"></path>
+            </svg></div>
+    </div>
+    <ul>
+                        <li>
+                    <a href="">Home</a>
+                </li>
+                            <li class="dp"><a href="javascript:;">Products</a>
+                    <ul>
+                         <li><a href="product.php#Solid"> Solid Tumor Testing</a></li>  <li><a href="product.php#Tumor"> Minimal Residual Disease Testing</a></li>  <li><a href="product.php#Hematologic"> Hematologic Malignancies Testing</a></li>  <li><a href="product.php#Early"> RUO/IUO: Multi-omics Detection</a></li>  <li><a href="product.php#Early%20Detection"> Early Cancer Detection</a></li> 
+
+                    </ul>
+                </li>
+                        <li class="dp"><a href="javascript:;">Services</a>
+                    <ul>
+                         <li><a href="Biopharma.php"> Pharma Biomarker & CDx Services</a></li>  <li><a href="serviceDetails.php?class_id=103102"> International Diagnostics Division</a></li>  <li><a href="serviceDetails.php?class_id=103103"> Sequencing Services</a></li>  <li><a href="serviceDetails.php?class_id=103104"> Early Cancer Detection Services</a></li> 
+
+                    </ul>
+                </li>
+                        <li class="dp"><a href="javascript:;">Resources</a>
+                    <ul>
+                         <li><a href="publications.php"> Publications</a></li>  <li><a href="events.php"> Events</a></li>  <li><a href="webinars.php"> Webinars</a></li>  <li><a href="resourceCenter.php"> Documents</a></li>  <li><a href="FAQ.php"> FAQs</a></li> 
+
+                    </ul>
+                </li>
+                        <li class="dp"><a href="javascript:;">Company</a>
+                    <ul>
+                         <li><a href="aboutUs.php"> About Us</a></li>  <li><a href="pressRelease.php"> Press Release</a></li>  <li><a href="team.php"> Leadership Team</a></li>  <li><a href="core.php"> Core Technologies</a></li>  <li><a href="careers.php"> Careers</a></li>  <li><a href="https://brbiotech.gcs-web.com"> Investor</a></li>  <li><a href="contactUs.php"> Contact Us</a></li> 
+
+                    </ul>
+                </li>
+                <li class="dp">
+            <a>Language</a>
+            <ul>
+                <li><a href="https://www.brbiotech.com/cn/" target="_blank">中文</a></li>
+                <li><a href="https://www.brbiotech.com/en/">EN</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>    <div class="careers-page company">
+        <div class="banner">
+                        <img src="upload/2024-08/172416012699674300.jpg" alt="">
+            <div class="title">
+                <div class="page-til wow fadeInUp" data-wow-duration="0.6s" data-wow-delay=".2s">Company                </div>
+                <div class="til1 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay=".4s">Careers                </div>
+                <div class="til2 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay=".6s">Guard Life via Science                </div>
+            </div>
+            <div class="arrow">
+                <img src="./images/news_banner_icon.png" alt="">
+            </div>
+        </div>
+        <div class="join">
+                        <div class="title wow fadeInUp" data-wow-duration="0.4s" data-wow-delay=".2s">Join Our Team</div>
+            <div class="content wow fadeInUp" data-wow-duration="0.4s" data-wow-delay=".4s">
+                <div>
+                    <span style="font-size:20px;line-height:2;color:#6EB92B;">Welcome to our Careers section! At Burning Rock Dx, we are dedicated to revolutionizing healthcare
+                    through our cutting-edge NGS (Next Generation Sequencing) testing services. Join our team and be
+                    part of a dynamic environment where innovation thrives, and your contributions make a real impact.
+                    Explore the exciting opportunities we have available and discover how you can contribute to
+                    advancing personalized medicine for patients worldwide</span>                </div>
+            </div>
+        </div>
+        <div class="jobs careers-wrap">
+                            <div class="item  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
+                    <div class="title flex flex-center flex-between">
+                        <div class="left">
+                            <div class="jobs-name">Head of Commercial- Europe</div>
+                            <div class="location">Location: Europe</div>
+                        </div>
+                        <div class="right">
+                            <div class="hamburger">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hideBox">
+                        <div class="jobs-info">
+                            <div class="response">
+                                <div class="til">Responsibilities</div>
+                                <div class="content">
+                                    <div>
+                                        <p>
+	<span style="line-height:2;">Conduct marketing strategy analysis of IVD products, and update market trends &amp; dynamics in</span> 
+</p>
+<p>
+	<span style="line-height:2;">Europe；</span> 
+</p>
+<p>
+	<span style="line-height:2;">In-depth analysis of IVD related policy in Europe;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Deeply understanding of sales model of IVD products in Europe;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Develop strategy &amp; action plans for IVD product distribution in Europe；</span> 
+</p>
+<p>
+	<span style="line-height:2;">Collaborate with internal &amp; external partners to assist IVD products distribution；</span> 
+</p>
+<p>
+	<span style="line-height:2;">Uses global thinking to clearly articulate IVD products’ market positioning and competitiveness across the globe;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Communicate and coordinate with different function to get internal alignment and well allocate resources for active projects in strategy plan.</span> 
+</p>                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="til">Qualifications/Skills</div>
+                                <div class="content">
+                                    <div>
+                                        <p>
+	<span style="line-height:2;">Above Bachelor’s degree of Life Science related majors;</span> 
+</p>
+<p>
+	<span style="line-height:2;">IVD products knowledge will be preferred;</span> 
+</p>
+<p>
+	<span style="line-height:2;">With fluent communication capabilities in English;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Strategic-thinking &amp; Global-perspective.</span> 
+</p>                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="mailto:ying.tang@brbiotech.com" target="_blank" class="deliver flex flex-center">
+                                I'm interested
+
+                                <svg t="1723015701626" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" p-id="1567" width="20" height="20">
+                                    <path
+                                        d="M533.33333333 568.24999998l0-112.49999996L130.18958332 455.75A46.85625001 46.85625001 0 0 0 83.33333334 502.60624999l0 18.78750002A46.85625001 46.85625001 0 0 0 130.18958332 568.25L533.33333333 568.24999998z"
+                                        fill="#fff" p-id="1568"></path>
+                                    <path
+                                        d="M604.77083334 749.15l314.71875-194.0625a46.85625001 46.85625001 0 0 0 0.50624999-79.48125001l-314.71875001-199.29375A46.85625001 46.85625001 0 0 0 533.33333333 315.91249999L533.33333333 709.26875a46.85625001 46.85625001 0 0 0 71.43750001 39.93749999z"
+                                        fill="#fff" p-id="1569"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="item  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">
+                    <div class="title flex flex-center flex-between">
+                        <div class="left">
+                            <div class="jobs-name">Lead of Commercial- Brazil</div>
+                            <div class="location">Location: Brazil</div>
+                        </div>
+                        <div class="right">
+                            <div class="hamburger">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hideBox">
+                        <div class="jobs-info">
+                            <div class="response">
+                                <div class="til">Responsibilities</div>
+                                <div class="content">
+                                    <div>
+                                        <p>
+	<span style="line-height:2;">Conduct marketing strategy analysis of IVD products, and update market trends &amp; dynamics in Brazil；</span> 
+</p>
+<p>
+	<span style="line-height:2;">In-depth analysis of IVD related policy in Brazil;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Deeply understanding of sales model of IVD products in Brazil’s market;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Develop strategy &amp; action plans for IVD product distribution in Brazil；</span> 
+</p>
+<p>
+	<span style="line-height:2;">Collaborate with internal &amp; external partners to assist IVD products distribution；</span> 
+</p>
+<p>
+	<span style="line-height:2;">Maintain good relationship with local distributors;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Communicate and coordinate with different function to get internal alignment and well allocate</span> 
+</p>
+<p>
+	<span style="line-height:2;">resources for active projects in strategy plan；</span> 
+</p>                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="til">Qualifications/Skills</div>
+                                <div class="content">
+                                    <div>
+                                        <p>
+	<span style="line-height:2;">Above Bachelor’s degree of Life Science related majors;</span> 
+</p>
+<p>
+	<span style="line-height:2;">IVD products knowledge will be preferred;</span> 
+</p>
+<p>
+	<span style="line-height:2;">With fluent communication capabilities in English;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Strategic-thinking &amp; Global-perspective.</span> 
+</p>                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="mailto:ying.tang@brbiotech.com" target="_blank" class="deliver flex flex-center">
+                                I'm interested
+
+                                <svg t="1723015701626" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" p-id="1567" width="20" height="20">
+                                    <path
+                                        d="M533.33333333 568.24999998l0-112.49999996L130.18958332 455.75A46.85625001 46.85625001 0 0 0 83.33333334 502.60624999l0 18.78750002A46.85625001 46.85625001 0 0 0 130.18958332 568.25L533.33333333 568.24999998z"
+                                        fill="#fff" p-id="1568"></path>
+                                    <path
+                                        d="M604.77083334 749.15l314.71875-194.0625a46.85625001 46.85625001 0 0 0 0.50624999-79.48125001l-314.71875001-199.29375A46.85625001 46.85625001 0 0 0 533.33333333 315.91249999L533.33333333 709.26875a46.85625001 46.85625001 0 0 0 71.43750001 39.93749999z"
+                                        fill="#fff" p-id="1569"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="item  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                    <div class="title flex flex-center flex-between">
+                        <div class="left">
+                            <div class="jobs-name">Director of Business Development- Biopharma Solutions Services</div>
+                            <div class="location">Location: United States</div>
+                        </div>
+                        <div class="right">
+                            <div class="hamburger">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hideBox">
+                        <div class="jobs-info">
+                            <div class="response">
+                                <div class="til">Responsibilities</div>
+                                <div class="content">
+                                    <div>
+                                        <p>
+	<span style="line-height:2;">Actively prospect and leverage potential new business opportunities within specified potential new and/or existing customers in US market;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Develop business and regulatory plan for US market, and achieve operation plan objectives;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Identify opportunities from marketing leads, communicating with and managing local business partners;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Understanding the market information and reporting to company headquarter in a timely manner;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Collaborate with other departments to set up necessary operational process for US market;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Building up the brand awareness of the company and its product solutions in US.;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Provide excellent customer service by following through with prompt solutions to all customer inquiries.</span> 
+</p>                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="til">Qualifications/Skills</div>
+                                <div class="content">
+                                    <div>
+                                        <p>
+	<span style="line-height:2;">Minimum of 3 years of working experience in BD, or sales function for molecular pathology, or IVD related product market;</span> 
+</p>
+<p>
+	<span style="line-height:2;">BS or MS degree in Life &amp; Science, Molecular Pathology or Clinical Medicine, MBA and/or PhD a plus;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Good knowledge about US molecular pathology market, International and multi- cultural experience is preferred;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Excellent communication and presentation skills;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Ability to think strategically and creatively while executing methodically with high attention to details and operational excellence;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Energetic with strong motivation to find new business opportunity speedy;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Familiar with the business model of selling imported product in US;</span> 
+</p>
+<p>
+	<span style="line-height:2;">Fluent in working English and ideally with good spoken and listening English command.</span> 
+</p>                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="mailto:ying.tang@brbiotech.com" target="_blank" class="deliver flex flex-center">
+                                I'm interested
+
+                                <svg t="1723015701626" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" p-id="1567" width="20" height="20">
+                                    <path
+                                        d="M533.33333333 568.24999998l0-112.49999996L130.18958332 455.75A46.85625001 46.85625001 0 0 0 83.33333334 502.60624999l0 18.78750002A46.85625001 46.85625001 0 0 0 130.18958332 568.25L533.33333333 568.24999998z"
+                                        fill="#fff" p-id="1568"></path>
+                                    <path
+                                        d="M604.77083334 749.15l314.71875-194.0625a46.85625001 46.85625001 0 0 0 0.50624999-79.48125001l-314.71875001-199.29375A46.85625001 46.85625001 0 0 0 533.33333333 315.91249999L533.33333333 709.26875a46.85625001 46.85625001 0 0 0 71.43750001 39.93749999z"
+                                        fill="#fff" p-id="1569"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="item  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                    <div class="title flex flex-center flex-between">
+                        <div class="left">
+                            <div class="jobs-name">Lab Associate Scientist</div>
+                            <div class="location">Location: United States</div>
+                        </div>
+                        <div class="right">
+                            <div class="hamburger">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hideBox">
+                        <div class="jobs-info">
+                            <div class="response">
+                                <div class="til">Responsibilities</div>
+                                <div class="content">
+                                    <div>
+                                        <p>
+	<span style="line-height:2;">Execute and monitor regular maintenance of laboratory equipment.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Draft and review operational documentation.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Ensure laboratory activities are performed in compliance with procedures and safety guidelines when handling, storing and disposing of hazardous or bio-hazardous materials.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Prepare or produce general consumables and reagents for R&amp;D laboratory operation.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Prepare and handle biological specimens including blood, plasma, formalin-fixed paraffin-embedded samples, and extracted nucleic acids.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Execute development, verification, and validation studies for novel diagnostic NGS assays.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Process and manage samples using automated workflows and Laboratory Information Management System (LIMS).</span> 
+</p>
+<p>
+	<span style="line-height:2;">Author detailed, accurate, and accessible records of experimental data, present results at group meetings, to external collaborators, and preparation of reports for submission to regulatory agencies (FDA).</span> 
+</p>
+<p>
+	<span style="line-height:2;">Analyze and compile data for preparation of study reports and generate study reports.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Prepare and document design control documentation, CDx assay requirements, functional specifications, performance and study results, and other data in a QSR-compliant manner.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Partner collaboratively with the Quality Assurance and Regulatory teams to ensure that all procedural and submission documentation meets audit and accreditation standards.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Support the timely processing and reporting of oncology samples to internal and external collaborators.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Conduct investigations and analyses to troubleshoot and improving assay capabilities, enhance technical robustness and existing methods.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Maintain adequate stock and efficient use of supplies necessary for performing all procedures and preparation of reagents.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Maintain proper documentation including proper specimen handling, labeling, and quality control measures.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Be responsible for accurately recording work performed per GLP, including results and methodology.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Communicate with Biopharma partners and internal departments as needed to define specifics of cancer mutations and other related scientific queries.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Utilize cancer genomics expertise to investigate genomic mechanisms of oncogenesis.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Work collaboratively with internal colleagues to refine analysis algorithms and methods.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Contribute scientific expertise to broader projects within the Research and Development team.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Complete projects under guidance of senior lab employees.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Maintain laboratory cleanliness in compliance with the Hygiene Plan.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Perform inventory control aligned with 5S methodology.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Perform other duties as assigned.</span> 
+</p>                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="til">Qualifications/Skills</div>
+                                <div class="content">
+                                    <div>
+                                        <p>
+	<span style="line-height:2;">Bachelor’s degree in related field and 3+ years of research experience preferred in the life sciences industry; OR,</span> 
+</p>
+<p>
+	<span style="line-height:2;">Master’s and 2+ research experience preferred in the life sciences industry; OR,</span> 
+</p>
+<p>
+	<span style="line-height:2;">Familiarity with nucleic acid handling (e.g., SPRI and PCR) and quantification techniques (e.g., Nanodrop, Bioanalyzer, Fragment Analyzer, ddPCR).</span> 
+</p>
+<p>
+	<span style="line-height:2;">Familiarity with NGS protocols (preferred).</span> 
+</p>
+<p>
+	<span style="line-height:2;">Excellent organizational, communication and interpersonal skills.</span> 
+</p>
+<p>
+	<span style="line-height:2;">Willingness to work collaboratively in a fast paced environment with a high level of self-motivation</span> 
+</p>                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="mailto:ying.tang@brbiotech.com" target="_blank" class="deliver flex flex-center">
+                                I'm interested
+
+                                <svg t="1723015701626" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" p-id="1567" width="20" height="20">
+                                    <path
+                                        d="M533.33333333 568.24999998l0-112.49999996L130.18958332 455.75A46.85625001 46.85625001 0 0 0 83.33333334 502.60624999l0 18.78750002A46.85625001 46.85625001 0 0 0 130.18958332 568.25L533.33333333 568.24999998z"
+                                        fill="#fff" p-id="1568"></path>
+                                    <path
+                                        d="M604.77083334 749.15l314.71875-194.0625a46.85625001 46.85625001 0 0 0 0.50624999-79.48125001l-314.71875001-199.29375A46.85625001 46.85625001 0 0 0 533.33333333 315.91249999L533.33333333 709.26875a46.85625001 46.85625001 0 0 0 71.43750001 39.93749999z"
+                                        fill="#fff" p-id="1569"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="values">
+            <div class="title wow fadeInUp" data-wow-duration="0.6s" data-wow-delay=".3s">Our Values</div>
+            <div class="swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                <figure>
+                                    <img src="upload/2024-08/172416060620057700.png" alt="">
+                                </figure>
+                                <article>
+                                    <div class="til">Science-Driven</div>
+                                    <div class="content">
+                                        Applying scientific and technological advancement on unmet medical needs is the
+                                        key driving force of our innovation and growth.                                    </div>
+                                </article>
+                            </div>
+                                                    <div class="swiper-slide">
+                                <figure>
+                                    <img src="upload/2024-08/172468995283658400.png" alt="">
+                                </figure>
+                                <article>
+                                    <div class="til">Strive for Excellence</div>
+                                    <div class="content">
+                                        <p>
+	Our strive for excellence aims to continuously create higher standard, explore new horizons , and lead transformation.
+</p>
+<p>
+	<br />
+</p>                                    </div>
+                                </article>
+                            </div>
+                                                    <div class="swiper-slide">
+                                <figure>
+                                    <img src="upload/2024-08/172469006846611200.png" alt="">
+                                </figure>
+                                <article>
+                                    <div class="til">Embrace Change</div>
+                                    <div class="content">
+                                        <p>
+	We are inspired by the challenge of an ever-changing dynamic in our work, business and organization. We adapt to advance our mission.
+</p>                                    </div>
+                                </article>
+                            </div>
+                                                    <div class="swiper-slide">
+                                <figure>
+                                    <img src="upload/2024-08/172469018816681900.png" alt="">
+                                </figure>
+                                <article>
+                                    <div class="til">People-Oriented</div>
+                                    <div class="content">
+                                        <p>
+	Unique ideas and expertise from individuals are the foundation for exceptional success in both the work we do and our positiveenvironment for people to excel.
+</p>                                    </div>
+                                </article>
+                            </div>
+                                                    <div class="swiper-slide">
+                                <figure>
+                                    <img src="upload/2024-08/172469031353688300.png" alt="">
+                                </figure>
+                                <article>
+                                    <div class="til">Mutual Trust and Collaboration</div>
+                                    <div class="content">
+                                        <p>
+	We&nbsp;collaborate&nbsp;with&nbsp;mutual&nbsp;trust&nbsp;and&nbsp;authenticity,&nbsp;exceeding expectations&nbsp;to&nbsp;help&nbsp;others&nbsp;in&nbsp;achieving&nbsp;our&nbsp;common&nbsp;vision.&nbsp;
+</p>                                    </div>
+                                </article>
+                            </div>
+                                                    <div class="swiper-slide">
+                                <figure>
+                                    <img src="upload/2024-08/172469038187883100.png" alt="">
+                                </figure>
+                                <article>
+                                    <div class="til">Sense of Ownership</div>
+                                    <div class="content">
+                                        <p>
+	Understanding the bigger picture helps us grasp opportunities for breakthroughs. We lead with actions and the determination while inspiring others with perseverance.
+</p>                                    </div>
+                                </article>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <footer>
+    <div class="foot">
+        <div class="f-wrap flex flex-between">
+            <div class="foot-logo">
+                <img src="./images/foot-logo.png" alt="">
+            </div>
+            <div class="foot-nav flex">
+                                    <dl>
+                        <dt>Products</dt>
+                                                    <dd><a href="product.php#Solid">Solid Tumor Testing</a></dd>
+                                                    <dd><a href="product.php#Tumor">Minimal Residual Disease Testing</a></dd>
+                                                    <dd><a href="product.php#Hematologic">Hematologic Malignancies Testing</a></dd>
+                                                    <dd><a href="product.php#Early">RUO/IUO: Multi-omics Detection</a></dd>
+                                                    <dd><a href="product.php#Early%20Detection">Early Cancer Detection</a></dd>
+                                            </dl>
+                                    <dl>
+                        <dt>Services</dt>
+                                                    <dd><a href="Biopharma.php">Pharma Biomarker & CDx Services</a></dd>
+                                                    <dd><a href="serviceDetails.php?class_id=103102">International Diagnostics Division</a></dd>
+                                                    <dd><a href="serviceDetails.php?class_id=103103">Sequencing Services</a></dd>
+                                                    <dd><a href="serviceDetails.php?class_id=103104">Early Cancer Detection Services</a></dd>
+                                            </dl>
+                                    <dl>
+                        <dt>Resources</dt>
+                                                    <dd><a href="publications.php">Publications</a></dd>
+                                                    <dd><a href="events.php">Events</a></dd>
+                                                    <dd><a href="webinars.php">Webinars</a></dd>
+                                                    <dd><a href="resourceCenter.php">Documents</a></dd>
+                                                    <dd><a href="FAQ.php">FAQs</a></dd>
+                                            </dl>
+                                    <dl>
+                        <dt>Company</dt>
+                                                    <dd><a href="aboutUs.php">About Us</a></dd>
+                                                    <dd><a href="pressRelease.php">Press Release</a></dd>
+                                                    <dd><a href="team.php">Leadership Team</a></dd>
+                                                    <dd><a href="core.php">Core Technologies</a></dd>
+                                                    <dd><a href="careers.php">Careers</a></dd>
+                                                    <dd><a href="https://brbiotech.gcs-web.com">Investor</a></dd>
+                                                    <dd><a href="contactUs.php">Contact Us</a></dd>
+                                            </dl>
+                            </div>
+        </div>
+    </div>
+    <div class="share">
+        <div class="f-wrap share-list flex flex-center">
+            <a target="_blank" href="https://www.linkedin.com/company/burningrock/"><img src="./images/share_1.png"
+                    alt=""></a>
+            <a target="_blank" href="https://www.facebook.com/Burning-Rock-Dx-61558686955201"><img
+                    src="./images/share_2.png" alt=""></a>
+            <a target="_blank" href="https://twitter.com/BurningRock2014"><img src="./images/share_3.png" alt=""></a>
+            <a target="_blank" href="https://youtube.com/@BurningRockDx"><img src="./images/share_4.png" alt=""></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="f-wrap flex flex-between">
+            <div class="config">
+                <p>US: 121 Innovation Drive Suite 100, Irvine CA, 92617</p>
+                <p>China: No.5, Xingdao Huanbei Road, International Bio Island, Guangzhou, Guangdong China 510300</p>
+                <p>Phone Number: China: 400-689-7600 US: (949)-732-6488</p>
+                <p>Email: PBD@brbiotech.com; IVDBD@brbiotech.com</p>
+            </div>
+            <div class="cr">
+                <div>
+                    &copy; 2024 Burning Rock Dx | All rights reserved                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="up" id="top">
+    <a href="contactUs.php#contact" class="o-btn">
+        <span>Contact Our Experts</span>
+        <svg t="1730022951237" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            p-id="4245" width="12" height="12">
+            <path d="M412.367 6.389l-63.88 62.071 460.007 446.973-460.007 446.975 63.88 62.071 523.885-509.044z"
+                fill="#ffffff" p-id="4246"></path>
+        </svg>
+    </a>
+</div>
+
+<div class="cookies">
+    <div class="cookies-overlay"></div>
+    <div class="ot-sdk-container flex flex-center">
+        <div class="left">
+            <div class="onetrust-policy">
+                We would like to collect certain personal information about you through cookies and similar technologies
+                in order to personalize the site for you, improve the performance of the site, and support our marketing
+                efforts. By clicking “Accept All”, you confirm that we have your consent to collect and process your
+                personal information in accordance with our <a href="policy.php"> Privacy Policy</a>, which may include
+                online targeted and social media advertising in some instances. You can by clicking “Reject All”, you
+                can reject all cookies except for Strictly Necessary Cookies."
+            </div>
+        </div>
+        <div class="right flex justify-center">
+            <button id="onetrust-reject-all-handler">Reject All</button>
+            <button id="onetrust-accept-btn-handler">Accept All</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        let cookies = localStorage.getItem('cookies');
+        if (!cookies) {
+            $('.cookies').show();
+        }
+        $('#onetrust-reject-all-handler').click(function () {
+            $('.cookies').hide();
+            localStorage.setItem('cookies', true)
+        })
+        $('#onetrust-accept-btn-handler').click(function () {
+            $('.cookies').hide();
+            localStorage.setItem('cookies', true)
+        })
+    })
+</script></body>
+
+</html>
+<script src="./js/jquery-1.11.3.js"></script>
+<script src="./js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    $(".jobs .item .title").click(function() {
+        $(this).find('.hamburger').toggleClass("is-active");
+        if ($(this).find('.hamburger').hasClass('is-active')) {
+            $(this).parent().find('.hideBox').show()
+        } else {
+            $(this).parent().find('.hideBox').hide()
+        }
+    });
+
+    let values = new Swiper('.values .swiper-container', {
+        autoplay : 5000,
+        autoplayDisableOnInteraction : false,
+        effect: 'fade',
+        paginationClickable: true,
+        pagination: '.values .swiper-pagination',
+    })
+</script>

@@ -491,7 +491,7 @@ class TestS30WireRoster:
                   "ats:paycom:us-cent/39DCF574C16448FF09ADD3EF809F9EF2",
                   "custom:a123", "ats:teamtailor:polestar"):
             assert b in boards, b
-        assert len(w) == 122
+        assert len(w) == 153   # S31: 122 + 31 custom-adapter wave
 
     def test_wire_specs_all_parse(self):
         w = self._cfg()["watches"]

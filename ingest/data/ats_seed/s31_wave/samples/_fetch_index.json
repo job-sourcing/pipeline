@@ -1,0 +1,114 @@
+{
+  "oncoc4": {
+    "url": "https://www.oncoc4.com/en/careers/job-opportunities/",
+    "status": 200,
+    "len": 42652,
+    "ct": "text/html; charset=utf-8",
+    "final_url": "https://www.oncoc4.com/en/careers/job-opportunities/"
+  },
+  "burningrock": {
+    "url": "https://www.brbiotech.com/careers.php",
+    "status": 200,
+    "len": 46610,
+    "ct": "text/html;charset=utf-8;",
+    "final_url": "https://www.brbiotech.com/careers.php"
+  },
+  "bioduro": {
+    "url": "https://www.bioduro-sundia.com/careers/",
+    "status": 200,
+    "len": 332146,
+    "ct": "text/html; charset=UTF-8",
+    "final_url": "https://www.bioduro-sundia.com/careers/"
+  },
+  "chempartner": {
+    "url": "https://www.chempartner.com/careers/",
+    "status": 200,
+    "len": 677541,
+    "ct": "text/html; charset=UTF-8",
+    "final_url": "https://www.chempartner.com/careers/"
+  },
+  "medicilon": {
+    "url": "https://www.medicilon.com/careers",
+    "status": 403,
+    "len": 5770,
+    "ct": "text/html; charset=UTF-8",
+    "final_url": "https://www.medicilon.com/careers"
+  },
+  "sirnaomics": {
+    "url": "https://www.sirnaomics.com/en/careers/",
+    "status": 200,
+    "len": 24424,
+    "ct": "text/html; charset=utf-8",
+    "final_url": "https://www.sirnaomics.com/en/careers/"
+  },
+  "porton": {
+    "url": "https://www.portonpharma.com/career",
+    "status": 200,
+    "len": 50353,
+    "ct": "text/html; charset=utf-8",
+    "final_url": "https://www.portonpharma.com/career"
+  },
+  "hutchmed": {
+    "url": "https://www.hutch-med.com/career-opportunities/",
+    "status": 200,
+    "len": 61634,
+    "ct": "text/html; charset=UTF-8",
+    "final_url": "https://www.hutch-med.com/career-opportunities/"
+  },
+  "asymchem_root": {
+    "url": "https://www.asymchem.com/",
+    "status": 200,
+    "len": 99669,
+    "ct": "text/html",
+    "final_url": "https://www.asymchem.com/"
+  },
+  "asymchem_careers": {
+    "url": "https://www.asymchem.com/careers",
+    "status": 200,
+    "len": 99669,
+    "ct": "text/html",
+    "final_url": "https://www.asymchem.com/careers"
+  },
+  "fosunpharma": {
+    "url": "https://fosunpharma.com/en/careers/",
+    "status": 200,
+    "len": 40196,
+    "ct": "text/html",
+    "final_url": "https://fosunpharma.com/en/careers/"
+  },
+  "henlius": {
+    "url": "https://www.henlius.com/job-opportunities.html",
+    "status": 200,
+    "len": 27545,
+    "ct": "text/html; charset=utf-8",
+    "final_url": "https://www.henlius.com/job-opportunities.html"
+  },
+  "innovent_en": {
+    "url": "https://en.innoventbio.com/Careers",
+    "status": 200,
+    "len": 2519,
+    "ct": "text/html; charset=UTF-8",
+    "final_url": "https://en.innoventbio.com/Careers"
+  },
+  "microportortho": {
+    "url": "https://www.microportortho.com/about-us/microport-orthopedics-careers/careers-north-america",
+    "status": 200,
+    "len": 37874,
+    "ct": "text/html; charset=UTF-8",
+    "final_url": "https://www.microportortho.com/about-us/microport-orthopedics-careers/careers-north-america"
+  },
+  "microportsurgical": {
+    "url": "https://www.microportsurgical.com/talent/",
+    "status": 200,
+    "len": 24891,
+    "ct": "text/html; charset=utf-8",
+    "final_url": "https://www.microportsurgical.com/talent/"
+  },
+  "morehealth": {
+    "url": "https://morehealth.com/careers",
+    "status": 200,
+    "len": 198574,
+    "ct": "text/html; charset=utf-8",
+    "final_url": "https://morehealth.com/en"
+  }
+}

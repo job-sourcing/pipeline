@@ -1982,6 +1982,490 @@
     "Mahwah, New Jersey, United States"
    ],
    "geo_scope": "non_cn"
+  },
+  {
+   "label": "catl_us_fulltime",
+   "board": "ats:j2w:www.catl-career.com/search",
+   "company": "CATL",
+   "country": "United States",
+   "li_variants": [
+    "CATL",
+    "Contemporary Amperex Technology",
+    "CATL North America"
+   ],
+   "slice_locations": [
+    "United States",
+    "Erfurt, Germany",
+    "Debrecen, Hungary"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "biomere_us_fulltime",
+   "board": "ats:jazzhr:biomere",
+   "company": "JOINN (Biomere)",
+   "country": "United States",
+   "li_variants": [
+    "Biomere",
+    "Biomedical Research Models",
+    "JOINN Laboratories"
+   ],
+   "slice_locations": [
+    "United States",
+    "Worcester, Massachusetts, United States"
+   ]
+  },
+  {
+   "label": "lilith_us_fulltime",
+   "board": "ats:feishuhire:lilithgames",
+   "company": "Lilith Games",
+   "country": "United States",
+   "li_variants": [
+    "Lilith Games",
+    "Lilith",
+    "Lilith Studio"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "supercell_us_fulltime",
+   "board": "ats:ashby:supercell",
+   "company": "Supercell",
+   "country": "United States",
+   "li_variants": [
+    "Supercell"
+   ],
+   "slice_locations": [
+    "United States",
+    "Helsinki, Finland",
+    "Shanghai, China"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "zeekr_us_fulltime",
+   "board": "ats:teamtailor:zeekreu",
+   "company": "Zeekr",
+   "country": "United States",
+   "li_variants": [
+    "Zeekr",
+    "Zeekr Technology Group",
+    "Zeekr EU"
+   ],
+   "slice_locations": [
+    "United States",
+    "Gothenburg, Sweden"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "microportortho_us_fulltime",
+   "board": "ats:ultipro:MIC1008MICPT|9f087488-7494-c18e-5713-c97b9f3d8219",
+   "company": "MicroPort Orthopedics",
+   "country": "United States",
+   "li_variants": [
+    "MicroPort Orthopedics",
+    "MicroPort Scientific",
+    "MicroPort"
+   ],
+   "slice_locations": [
+    "United States",
+    "Arlington, Tennessee, United States"
+   ]
+  },
+  {
+   "label": "trina_us_fulltime",
+   "board": "ats:personio:trina-solar-1",
+   "company": "Trina Solar",
+   "country": "United States",
+   "li_variants": [
+    "Trina Solar",
+    "TrinaStorage",
+    "Trina Solar US"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "adagene_us_fulltime",
+   "board": "ats:trinethire:33812-adagene-incorporated",
+   "company": "Adagene",
+   "country": "United States",
+   "li_variants": [
+    "Adagene",
+    "Adagene Inc",
+    "Adagene Incorporated"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Diego, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "tineco_us_fulltime",
+   "board": "ats:trinethire:27406-tineco",
+   "company": "Tineco",
+   "country": "United States",
+   "li_variants": [
+    "Tineco",
+    "Tineco Intelligent Technology"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "tigermed_us_fulltime",
+   "board": "ats:mokahr:hire-r1.mokahr.com|tigermed|100004122",
+   "company": "Tigermed",
+   "country": "United States",
+   "li_variants": [
+    "Tigermed",
+    "Tigermed Consulting",
+    "Tigermed Group"
+   ],
+   "slice_locations": [
+    "United States",
+    "Australia"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "longi_us_fulltime",
+   "board": "custom:longi",
+   "company": "LONGi Solar",
+   "country": "United States",
+   "li_variants": [
+    "LONGi Solar",
+    "LONGi Green Energy",
+    "LONGi"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "sfus_us_fulltime",
+   "board": "custom:sfus",
+   "company": "SF Express (US)",
+   "country": "United States",
+   "li_variants": [
+    "SF Express",
+    "SF International",
+    "SF-KEX"
+   ],
+   "slice_locations": [
+    "United States",
+    "Carson, California, United States"
+   ]
+  },
+  {
+   "label": "infold_us_fulltime",
+   "board": "custom:infold",
+   "company": "Infold Games",
+   "country": "United States",
+   "li_variants": [
+    "Infold Games",
+    "Paper Games",
+    "Papergames"
+   ],
+   "slice_locations": [
+    "United States",
+    "Los Angeles, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "pharmaron_us_fulltime",
+   "board": "ats:isolved:pharmaron|5164",
+   "company": "Pharmaron",
+   "country": "United States",
+   "li_variants": [
+    "Pharmaron",
+    "Pharmaron Inc",
+    "Pharmaron US"
+   ],
+   "slice_locations": [
+    "United States",
+    "Exton, Pennsylvania, United States"
+   ]
+  },
+  {
+   "label": "structuretx_us_fulltime",
+   "board": "ats:cwsjobs:7c57ce39-e2c3-4a0f-a3a1-748b255620d7",
+   "company": "Structure Therapeutics",
+   "country": "United States",
+   "li_variants": [
+    "Structure Therapeutics",
+    "Structure Therapeutics Inc",
+    "Shou Ti"
+   ],
+   "slice_locations": [
+    "United States",
+    "South San Francisco, California, United States"
+   ]
+  },
+  {
+   "label": "oncoc4_us_fulltime",
+   "board": "custom:ssrpage:oncoc4",
+   "company": "OncoC4",
+   "country": "United States",
+   "li_variants": [
+    "OncoC4",
+    "OncoC4 Inc"
+   ],
+   "slice_locations": [
+    "United States",
+    "Rockville, Maryland, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "burningrock_us_fulltime",
+   "board": "custom:ssrpage:burningrock",
+   "company": "Burning Rock Biotech",
+   "country": "United States",
+   "li_variants": [
+    "Burning Rock Biotech",
+    "Burning Rock",
+    "Burning Rock DX"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "bioduro_us_fulltime",
+   "board": "custom:ssrpage:bioduro",
+   "company": "BioDuro-Sundia",
+   "country": "United States",
+   "li_variants": [
+    "BioDuro-Sundia",
+    "BioDuro",
+    "Sundia Medtech"
+   ],
+   "slice_locations": [
+    "United States",
+    "San Diego, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "xcmg_us_fulltime",
+   "board": "custom:ssrpage:xcmg",
+   "company": "XCMG",
+   "country": "United States",
+   "li_variants": [
+    "XCMG",
+    "XCMG America",
+    "XCMG Group"
+   ],
+   "slice_locations": [
+    "United States",
+    "Atlanta, Georgia, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "pingpong_us_fulltime",
+   "board": "custom:ssrpage:pingpong",
+   "company": "PingPong",
+   "country": "United States",
+   "li_variants": [
+    "PingPong",
+    "PingPong Global",
+    "PingPong Payments"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "emqx_us_fulltime",
+   "board": "custom:ssrpage:emqx",
+   "company": "EMQ",
+   "country": "United States",
+   "li_variants": [
+    "EMQ",
+    "EMQX",
+    "EMQ Technologies",
+    "Hangzhou EMQ Technologies"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "juicefs_us_fulltime",
+   "board": "custom:ssrpage:juicefs",
+   "company": "JuiceFS",
+   "country": "United States",
+   "li_variants": [
+    "JuiceFS",
+    "Juicedata"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "greptime_us_fulltime",
+   "board": "custom:ssrpage:greptime",
+   "company": "Greptime",
+   "country": "United States",
+   "li_variants": [
+    "Greptime",
+    "Greptime Inc",
+    "GreptimeTeam"
+   ],
+   "slice_locations": [
+    "United States",
+    "Sunnyvale, California, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "timecho_us_fulltime",
+   "board": "custom:ssrpage:timecho",
+   "company": "Timecho",
+   "country": "United States",
+   "li_variants": [
+    "Timecho",
+    "Timecho Limited"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "sphereex_us_fulltime",
+   "board": "custom:ssrpage:sphereex",
+   "company": "SphereEx",
+   "country": "United States",
+   "li_variants": [
+    "SphereEx",
+    "SphereEx Tech"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "ugreen_us_fulltime",
+   "board": "custom:ssrpage:ugreen",
+   "company": "Ugreen",
+   "country": "United States",
+   "li_variants": [
+    "Ugreen",
+    "UGREEN Technology",
+    "Ugreen Group"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "medicilon_us_fulltime",
+   "board": "custom:ssrpage:medicilon",
+   "company": "Medicilon",
+   "country": "United States",
+   "li_variants": [
+    "Medicilon",
+    "Medicilon USA Corp",
+    "Shanghai Medicilon"
+   ],
+   "slice_locations": [
+    "United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "crrc_us_fulltime",
+   "board": "custom:ssrpage:crrc",
+   "company": "CRRC MA",
+   "country": "United States",
+   "li_variants": [
+    "CRRC MA",
+    "CRRC USA",
+    "CRRC MA Corporation"
+   ],
+   "slice_locations": [
+    "United States",
+    "Springfield, Massachusetts, United States"
+   ],
+   "geo_scope": "non_cn"
+  },
+  {
+   "label": "mce_us_fulltime",
+   "board": "custom:ssrpage:mce",
+   "company": "MedChemExpress",
+   "country": "United States",
+   "li_variants": [
+    "MedChemExpress",
+    "MCE",
+    "MedChemExpress LLC"
+   ],
+   "slice_locations": [
+    "United States",
+    "Monmouth Junction, New Jersey, United States"
+   ],
+   "geo_scope": "non_cn",
+   "tags": [
+    "weekly"
+   ]
+  },
+  {
+   "label": "amcrest_us_fulltime",
+   "board": "custom:ssrpage:amcrest",
+   "company": "Amcrest",
+   "country": "United States",
+   "li_variants": [
+    "Amcrest",
+    "Amcrest Industries",
+    "Amcrest Technologies"
+   ],
+   "slice_locations": [
+    "United States",
+    "Houston, Texas, United States"
+   ],
+   "geo_scope": "non_cn",
+   "tags": [
+    "weekly"
+   ]
+  },
+  {
+   "label": "gigacloud_us_fulltime",
+   "board": "custom:ssrpage:gigacloud",
+   "company": "GigaCloud Technology",
+   "country": "United States",
+   "li_variants": [
+    "GigaCloud Technology",
+    "GigaCloud",
+    "GigaCloud Technology (USA)"
+   ],
+   "slice_locations": [
+    "United States",
+    "Savannah, Georgia, United States"
+   ],
+   "geo_scope": "non_cn",
+   "tags": [
+    "weekly"
+   ]
   }
  ]
 }

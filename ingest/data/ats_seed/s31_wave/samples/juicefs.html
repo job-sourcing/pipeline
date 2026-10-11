@@ -1,0 +1,1386 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Careers - JuiceFS</title>
+        
+        <meta name="description" content="If you are interested in the following positions, please send your resume to team@juicedata.io." />
+
+        
+        <link rel="stylesheet" href="https://static1.juicefs.com/dist/main.7ffc8b248f5c.css">
+        <link rel="shortcut icon" href="https://static1.juicefs.com/images/favicon.d6e4afae8198.ico" type="image/x-icon">
+        <link rel="canonical" href="https://juicefs.com/en/careers" />
+        
+        
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "url": "https://www.juicefs.com/en",
+                "logo": "https://static1.juicefs.com/images/juicefs_logo_square.6fc3cef7dc6b.svg"
+            }
+        </script>
+        <style>
+            .jd {
+                padding: 0 0 1.5rem 1.5rem;
+                margin-bottom: 2rem;
+                border-left: 1px dashed #ccc;
+            }
+            .jd h2 {
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin: 1.8rem 0 0.5rem 0;
+            }
+            .jd h3 {
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin: 1.8rem 0 0.5rem 0;
+            }
+            .jd ul {
+                list-style: disc;
+                padding-left: 2rem;
+                line-height: 1.8rem;
+                list-style-position: outside;
+            }
+            .jd a {
+                color: #2bb048;
+            }
+            .jd p {
+                padding-left: 2rem;
+                line-height: 1.8rem;
+                margin: 1rem 0;
+            }
+
+        </style>
+
+    </head>
+
+    <body class="single">
+        
+
+        
+
+
+
+    
+
+<div
+    class="message-shell"
+    x-data="{
+        open: $persist(true).as('msg-box').using(sessionStorage),
+        revealed: false,
+        bannerHeight: 0,
+        resizeObserver: null,
+        revealTimer: null,
+        init() {
+            const revealDelay = 1000
+
+            const reveal = () => {
+                if (!this.open) {
+                    this.bannerHeight = 0
+                    return
+                }
+
+                window.requestAnimationFrame(() => {
+                    this.revealTimer = window.setTimeout(() => {
+                        this.revealed = true
+                        this.$nextTick(() => this.syncHeight())
+                    }, revealDelay)
+                })
+            }
+
+            this.$watch('open', (value) => {
+                if (value) {
+                    if (this.revealed) {
+                        this.$nextTick(() => this.syncHeight())
+                    }
+                    return
+                }
+
+                this.bannerHeight = 0
+            })
+
+            this.$nextTick(() => {
+                if (window.ResizeObserver && this.$refs.banner) {
+                    this.resizeObserver = new ResizeObserver(() => this.syncHeight())
+                    this.resizeObserver.observe(this.$refs.banner)
+                }
+
+                if (document.readyState === 'complete') {
+                    reveal()
+                    return
+                }
+
+                window.addEventListener('load', reveal, { once: true })
+            })
+        },
+        syncHeight() {
+            this.bannerHeight = this.open && this.revealed && this.$refs.banner ? this.$refs.banner.offsetHeight : 0
+        }
+    }"
+    @resize.window.debounce.50="syncHeight()"
+>
+    <div
+        aria-hidden="true"
+        class="message-spacer"
+        :style="{ height: `${open && revealed ? bannerHeight : 0}px` }"
+    ></div>
+    <section
+        id="message"
+        class="message-banner success"
+        x-ref="banner"
+        x-show="open && revealed"
+        x-transition:enter="message-enter"
+        x-transition:enter-start="message-enter-start"
+        x-transition:enter-end="message-enter-end"
+        x-transition:leave="message-leave"
+        x-transition:leave-start="message-leave-start"
+        x-transition:leave-end="message-leave-end"
+        x-cloak
+        role="status"
+        aria-live="polite"
+    >
+        <div class="container m-auto px-6">
+            <div class="message-inner">
+                <div class="message-content">
+                    <div class="message-copy">
+                        <p data-block-key="0wxhu"><a href="https://juicefs.com/en/blog/release-notes/juicefs-enterprise-5-4"><b>JuiceFS Enterprise 5.4 – From 100 Billion Files to 1 Million Clients</b></a></p>
+                        
+                    </div>
+                </div>
+                <button type="button" class="message-close" @click="open = false" aria-label="Dismiss message">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+        
+<section id="hero">
+    
+
+<div class="container m-auto px-6 py-4 lg:py-0" x-data="{ m_menu: false, m_product: false, m_solution: false, m_doc: false, m_resources: false, showSearch: false, searchQuery: '', doSearch() { window.location.href = '/search?q=' + this.searchQuery } }">
+    <nav class="flex items-center">
+        <div>
+            <a href="/en">
+                <img class="max-h-10 lazyload" width="160" src="https://static1.juicefs.com/images/logo.4b6469b425ff.svg" alt="JuiceFS LOGO">
+            </a>
+        </div>
+        <div class="hidden lg:flex items-center ml-auto space-x-6">
+            <div>
+                
+
+<section class="main-menu">
+
+    
+    <div>
+        
+        <div x-data="{ showMenu: false }">
+            <a class="level-1" 
+                @mouseenter="showMenu = true" @mouseleave="showMenu = false"
+                :class="showMenu ? 'menu-hover' : '' ">Products</a>
+            <ul class="sub-menu hidden"
+                :class="showMenu && $el.classList.replace('hidden', 'box')"
+                x-show="showMenu" @mouseenter="showMenu = true" @mouseleave="showMenu = false">
+                <li>
+                    <div class="flex items-center">
+                        <span>
+                            <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/github.ce640feaaa9e.svg" alt="github icon">
+                        </span>
+                        <a href="/en/product/community-edition"> Community Edition</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <span>
+                            <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/cloud.ed3f70df37ed.svg" alt="cloud icon">
+                        </span>
+                        <a href="/en/product/cloud-service"> Cloud Service</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <span>
+                            <img class="w-8" src="https://static1.juicefs.com/images/star.6299100a7a39.svg" alt="">
+                        </span>
+                        <a href="/en/product/enterprise-edition"> Enterprise Edition</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+
+    
+    <div>
+        
+        <div x-data="{ showMenu: false }">
+            <a class="level-1" @mouseenter="showMenu = true" @mouseleave="showMenu = false"
+            :class="showMenu ? 'menu-hover' : '' ">Solutions</a>
+            <section class="sub-menu-solution hidden"
+            x-show="showMenu" @mouseenter="showMenu = true" @mouseleave="showMenu = false">
+                <div class="hidden"
+                    :class="showMenu && $el.classList.replace('hidden', 'box')">
+                    <span class="sub-title">By Use Case</span>
+                    <ul class="mt-2">
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/ai.a29dd6ddab69.svg" alt="ai icon">
+                                </span>
+                                <a href="/en/artificial-intelligence">AI + Machine Learning</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/multi-clouds.f8046c162312.svg" alt="multi cloud icon">
+                                </span>
+                                <a href="/en/multi-cloud">Multi-Cloud</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/big-data.4e94f977ade4.svg" alt="big data icon">
+                                </span>
+                                <a href="/en/big-data">Big Data</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/k8s.3c04c5ef8fe9.svg" alt="Kubernetes Data Persistence">
+                                </span>
+                                <a href="/en/kubernetes">Kubernetes Data Persistence</a>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" src="https://static1.juicefs.com/images/cloud-right.a3b342ba0a58.svg" alt="">
+                                </span>
+                                <a href="/en/migrate-nas-to-cloud">Migrate NAS to Cloud</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="hidden"
+                    :class="open && $el.classList.replace('hidden', 'box')">
+                    <span class="sub-title">By Industry</span>
+                    <ul class="mt-4">
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" src="https://static1.juicefs.com/images/llm.99ed413c122d.svg" alt="">
+                                </span>
+                                <a href="/en/generative-ai">Generative AI</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/car.42e44c9b7736.svg" alt="car icon">
+                                </span>
+                                <a href="/en/self-driving">Autonomous Driving</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/robotics.3c1c370b4c61.svg" alt="robotics icon">
+                                </span>
+                                <a href="/en/robotics">Robotics</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/dollar.66f712f38d00.svg" alt="dollar icon">
+                                </span>
+                                <a href="/en/quantitative-trading">Quant Investment</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" src="https://static1.juicefs.com/images/fingerprint.04279d576c1b.svg" alt="">
+                                </span>
+                                <a href="/en/biotech">Biotechnology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex items-center gap-4">
+                                <span>
+                                    <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/rendering.b6a8bc25c4fb.svg" alt="rendering icon">
+                                </span>
+                                <a href="/en/storage-solution-for-rendering-scenarios">VFX & 3D Rendering</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box bg-[#F3F3F5] rounded-r-lg hidden"
+                    :class="open && $el.classList.replace('hidden', 'box')">
+                    
+                    <span class="sub-title">Why  JuiceFS?</span>
+                    <div class="w-64 mt-5">
+                        <p class="text-gray-500 text-[0.9rem]"></p>
+                        <a class="text-ct-green-500" href="https://juicefs.com/en/blog/company/juicefs-open-source">Read more</a>
+                    </div>
+                    
+
+                </div>
+            </section>
+        </div>
+        
+    </div>
+    
+
+    
+    <div>
+        
+        
+        
+    </div>
+    
+
+    
+    <div>
+        
+        <div x-data="{ showMenu: false }">
+            <a class="level-1"
+                @mouseenter="showMenu = true" @mouseleave="showMenu = false"
+                :class="showMenu ? 'menu-hover' : '' ">Docs</a>
+            <ul class="sub-menu hidden"
+                :class="showMenu && $el.classList.replace('hidden', 'box')"
+                x-show="showMenu" @mouseenter="showMenu = true" @mouseleave="showMenu = false">
+                <li>
+                    <div class="flex items-center">
+                        <span>
+                            <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/open-source.7397c910a222.svg" alt="open source icon">
+                        </span>
+                        
+                        <a href="/docs/community/introduction">Community Edition Docs</a>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <span>
+                            <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/cloud.ed3f70df37ed.svg" alt="cloud icon">
+                        </span>
+                        
+                        <a href="/docs/cloud">Cloud Service Docs</a>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <span>
+                            <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/k8s.3c04c5ef8fe9.svg" alt="kubernetes icon">
+                        </span>
+                        
+                        <a href="/docs/csi/introduction">JuiceFS CSI Driver Docs</a>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+
+    
+    <div>
+        
+        
+        
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div>
+        
+        <div x-data="{ underline: false }">
+            <a class="level-1" href="/en/pricing"
+            @mouseover="underline = !underline"
+            @mouseleave="underline = false"
+            :class="underline ? 'menu-hover' : '' ">Pricing</a>
+        </div>
+        
+    </div>
+    
+
+    
+    <div>
+        <div x-data="{ showMenu: false }">
+            <a class="level-1" 
+                @mouseenter="showMenu = true" @mouseleave="showMenu = false"
+                :class="showMenu ? 'menu-hover' : '' ">Resources</a>
+            <ul class="sub-menu hidden"
+                :class="showMenu && $el.classList.replace('hidden', 'box')"
+                x-show="showMenu" @mouseenter="showMenu = true" @mouseleave="showMenu = false">
+                <li>
+                    <div class="flex items-center">
+                        <span>
+                            <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/blog.c753825fb7e4.svg" alt="blog icon">
+                        </span>
+                        <a href="/en/blog">Blog</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="flex items-center">
+                        <span>
+                            <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/event.a4aa2d012d46.svg" alt="event icon">
+                        </span>
+                        <a href="/en/events">Events</a>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="flex items-center">
+                        <span>
+                            <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/github.ce640feaaa9e.svg" alt="community icon">
+                        </span>
+                        <a href="/en/community">Community</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div x-data="userState">
+        <div x-data="{underline: false}">
+            <div x-show="!state['name']">
+                <a @mouseover="underline = !underline"
+                    @mouseleave="underline = false"
+                    :class="underline ? 'menu-hover' : '' "
+                    href="/console/" target="_blank" class="level-1">Login</a>
+            </div>
+            <div x-show="state['name']" x-cloak>
+                <a @mouseover="underline = !underline"
+                @mouseleave="underline = false"
+                :class="underline ? 'menu-hover' : '' "
+                href="/console/" target="_blank" class="level-1">Console</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </div>
+
+            <div>
+                
+                <a class="btn btn-sm xl:px-6 btn-pill btn-green w-max text-sm" href="/en/contact-us">Contact Us</a>
+                
+            </div>
+            <div>
+                <!-- Search icon -->
+                <a class="align-middle" @click.prevent="showSearch = !showSearch; $nextTick(() => { if(showSearch) { $refs.searchInput.focus() } })" href="#" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </a>
+            </div>
+            <div x-show="showSearch" @click.outside="showSearch = false" class="absolute right-0 top-20  z-50 bg-white shadow-lg rounded-md p-4 max-w-sm" x-cloak>
+                <form @submit.prevent="doSearch">
+                     <input type="text" x-ref="searchInput" x-model="searchQuery" placeholder="Search..." class="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-ct-green-500">
+                </form>
+            </div>
+            <div>
+                <div x-data="{ syncLang(locale, to) {
+                    const data = new FormData()
+                    const targetLang = locale === 'zh-cn' ? 'zh-Hans' : 'en'
+                    data.set('language', targetLang)
+                    fetch('/set_language', { method: 'post', body: data })
+                      .then(res => {
+                        if (!res.ok) {
+                          throw new Error(`Set user language to '${targetLang}' failed: ${res.status} ${res.statusText}`)
+                        }
+                      })
+                      .catch(err => console.error(err))
+                      .finally(() => {
+                        window.location.href = to
+                      })
+                } }">
+                    
+                    
+                    
+                    
+                    
+                        
+                            <a class="flex font-extralight hover:cursor-pointer content-start" @click="syncLang('zh-cn', '/zh-cn/careers')" rel="alternate" hreflang="zh-cn">
+                                <svg class="h-5 w-5 inline-block mb-1 lg:mr-2 lg:mt-[2px]" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" x="0" y="0" viewBox="0 0 100 100" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M87.956 73.232A44.292 44.292 0 0 0 94.5 50.001V50a44.293 44.293 0 0 0-6.544-23.232l-.024-.039a44.502 44.502 0 0 0-75.864 0l-.024.039a44.513 44.513 0 0 0 0 46.464l.025.04a44.502 44.502 0 0 0 75.863-.001ZM55.688 86.873a10.814 10.814 0 0 1-2.89 1.996 6.521 6.521 0 0 1-5.597 0 13.621 13.621 0 0 1-5.048-4.442 39.775 39.775 0 0 1-5.747-12.471q6.79-.418 13.594-.426 6.801 0 13.595.426a50.198 50.198 0 0 1-2.438 6.712 25.803 25.803 0 0 1-5.469 8.205ZM10.587 52.5h17.949a88.305 88.305 0 0 0 1.623 14.914q-7.36.648-14.682 1.78a39.23 39.23 0 0 1-4.89-16.694Zm4.89-21.693q7.319 1.134 14.687 1.78A88.15 88.15 0 0 0 28.538 47.5H10.587a39.23 39.23 0 0 1 4.89-16.693Zm28.835-17.68a10.811 10.811 0 0 1 2.89-1.996 6.521 6.521 0 0 1 5.597 0 13.621 13.621 0 0 1 5.048 4.442 39.775 39.775 0 0 1 5.747 12.471q-6.79.418-13.594.426-6.801 0-13.595-.426a50.19 50.19 0 0 1 2.438-6.712 25.803 25.803 0 0 1 5.469-8.205ZM89.413 47.5H71.464a88.312 88.312 0 0 0-1.623-14.914q7.36-.648 14.682-1.78a39.23 39.23 0 0 1 4.89 16.694ZM35.188 67.025a82.696 82.696 0 0 1-1.65-14.525h32.925a82.678 82.678 0 0 1-1.647 14.526q-7.4-.486-14.816-.496-7.41 0-14.812.495Zm29.624-34.05a82.702 82.702 0 0 1 1.65 14.525H33.538a82.68 82.68 0 0 1 1.647-14.526q7.4.486 14.816.496 7.41 0 14.812-.496Zm6.65 19.525h17.951a39.23 39.23 0 0 1-4.89 16.693q-7.32-1.134-14.687-1.78A88.146 88.146 0 0 0 71.462 52.5Zm10.063-26.295q-6.4.923-12.837 1.462a57.018 57.018 0 0 0-2.975-8.396 35.48 35.48 0 0 0-4.14-7.045 39.492 39.492 0 0 1 19.952 13.979ZM22.07 22.069a39.487 39.487 0 0 1 16.356-9.843c-.094.122-.19.238-.282.361a45.643 45.643 0 0 0-6.822 15.08q-6.438-.545-12.846-1.462a39.825 39.825 0 0 1 3.594-4.136Zm-3.594 51.726q6.399-.923 12.837-1.462a57.018 57.018 0 0 0 2.975 8.396 35.484 35.484 0 0 0 4.14 7.045 39.492 39.492 0 0 1-19.952-13.979Zm59.456 4.136a39.486 39.486 0 0 1-16.356 9.843c.094-.122.19-.238.282-.361a45.643 45.643 0 0 0 6.822-15.08q6.438.545 12.846 1.462a39.825 39.825 0 0 1-3.594 4.136Z" data-name="Layer 2" fill="#000000" data-original="#000000"></path></g></svg>
+                                <span class="hidden xl:inline-block mb-[2px]">中文</span>
+                            </a>
+                        
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="ml-auto lg:hidden flex space-x-2 content-center">
+            <a class="text-gray-500 rounded-lg" href="/search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </a>
+            <button class="text-gray-500 rounded-lg" @click="m_menu = ! m_menu">
+                <span class="sr-only">Open main menu</span>
+                <!-- menu icon -->
+                <svg x-show="!m_menu" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <!-- close menu icon -->
+                <svg x-show="m_menu" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="xl:hidden pb-10 " x-show="m_menu" @click.outside="m_menu = false">
+        
+
+<ul>
+
+
+    
+    <li>
+        <a class="level-1" @click="m_product = ! m_product">
+            <span>Products</span>
+            <!-- arrow right icon -->
+            <svg x-show="!m_product" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-auto text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            <!-- arrow down icon -->
+            <svg x-show="m_product" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-auto text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+        </a>
+        <ul class="sub" x-show="m_product">
+            <li>
+                <div class="flex items-center gap-4">
+                    <span>
+                        <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/github.ce640feaaa9e.svg" alt="github icon">
+                    </span>
+                    <a href="/en/product/community-edition"> Community Edition</a>
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center gap-4">
+                    <span>
+                        <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/cloud.ed3f70df37ed.svg" alt="cloud icon">
+                    </span>
+                    <a href="/en/product/cloud-service"> Cloud Service</a>
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center gap-4">
+                    <span>
+                        <img class="w-8 ml-4" src="https://static1.juicefs.com/images/star.6299100a7a39.svg" alt="">
+                    </span>
+                    <a href="/en/product/enterprise-edition"> Enterprise Edition</a>
+                </div>
+            </li>
+        </ul>
+    </li>
+    
+
+
+
+    
+    <li>
+        <a class="level-1" @click="m_solution = ! m_solution">
+            <span>Solutions</span>
+            <!-- arrow right icon -->
+            <svg x-show="!m_solution" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-auto text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            <!-- arrow down icon -->
+            <svg x-show="m_solution" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-auto text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+        </a>
+        <div x-show="m_solution">
+            <span class="text-base text-gray-400">By Use Case</span>
+            <ul class="sub">
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/ai.a29dd6ddab69.svg" alt="ai icon">
+                        </span>
+                        <a href="/en/artificial-intelligence">AI + Machine Learning</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/multi-clouds.f8046c162312.svg" alt="multi cloud icon">
+                        </span>
+                        <a href="/en/multi-cloud">Multi-Cloud</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/big-data.4e94f977ade4.svg" alt="big data icon">
+                        </span>
+                        <a href="/en/big-data">Big Data</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/k8s.3c04c5ef8fe9.svg" alt="Kubernetes Data Persistence">
+                        </span>
+                        <a href="/en/kubernetes">Kubernetes Data Persistence</a>
+                    </div>
+                </li>
+                <!-- <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" src="https://static1.juicefs.com/images/cloud-right.a3b342ba0a58.svg" alt="">
+                        </span>
+                        <a href="None">Migrate NAS to Cloud</a>
+                    </div>
+                </li> -->
+            </ul>
+            <span class="text-base text-gray-400">By Industry</span>
+            <ul class="sub">
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" src="https://static1.juicefs.com/images/llm.99ed413c122d.svg" alt="">
+                        </span>
+                        <a href="/en/generative-ai">Generative AI</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/car.42e44c9b7736.svg" alt="car icon">
+                        </span>
+                        <a href="/en/self-driving">Autonomous Driving</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/robotics.3c1c370b4c61.svg" alt="robotics icon">
+                        </span>
+                        <a href="/en/robotics">Robotics</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/dollar.66f712f38d00.svg" alt="dollar icon">
+                        </span>
+                        <a href="/en/quantitative-trading">Quant Investment</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" src="https://static1.juicefs.com/images/fingerprint.04279d576c1b.svg" alt="">
+                        </span>
+                        <a href="/en/biotech">Biotechnology</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center gap-4">
+                        <span>
+                            <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/rendering.b6a8bc25c4fb.svg" alt="rendering icon">
+                        </span>
+                        <a href="/en/storage-solution-for-rendering-scenarios">VFX & 3D Rendering</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </li>
+        
+
+
+
+    
+    
+    
+
+
+
+    
+    <li>
+        <a class="level-1" @click="m_doc = ! m_doc">
+            <span>Docs</span>
+            <!-- arrow right icon -->
+            <svg x-show="!m_doc" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-auto text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            <!-- arrow down icon -->
+            <svg x-show="m_doc" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-auto text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+        </a>
+        <ul class="sub" x-show="m_doc">
+            <li>
+                <div class="flex items-center gap-4">
+                    <span>
+                        <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/open-source.7397c910a222.svg" alt="open source icon">
+                    </span>
+                    
+                    <a href="/docs/community/introduction">Community Edition Docs</a>
+                    
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center gap-4">
+                    <span>
+                        <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/cloud.ed3f70df37ed.svg" alt="cloud icon">
+                    </span>
+                    
+                    <a href="/docs/cloud">Cloud Service Docs</a>
+                    
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center gap-4">
+                    <span>
+                        <img class="w-8" width="64" height="64" src="https://static1.juicefs.com/images/k8s.3c04c5ef8fe9.svg" alt="kubernetes icon">
+                    </span>
+                    
+                    <a href="/docs/csi/introduction">JuiceFS CSI Driver Docs</a>
+                    
+                </div>
+            </li>
+        </ul>
+    </li>
+    
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <li>
+        <a class="level-1" href="/en/pricing">
+            <span>Pricing</span>
+            <!-- arrow right icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-auto text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </a>
+    </li>
+    
+
+
+
+<li>
+    <a class="level-1" @click="m_resources = ! m_resources">
+        <span>Resources</span>
+        <!-- arrow right icon -->
+        <svg x-show="!m_resources" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-auto text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+        <!-- arrow down icon -->
+        <svg x-show="m_resources" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block ml-auto text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>
+    </a>
+    <ul class="sub" x-show="m_resources">
+        <li>
+            <div class="flex items-center gap-4">
+                <span>
+                    <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/blog.c753825fb7e4.svg" alt="blog icon">
+                </span>
+                <a href="/en/blog">Blog</a>
+            </div>
+        </li>
+        
+        <li>
+            <div class="flex items-center gap-4">
+                <span>
+                    <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/event.a4aa2d012d46.svg" alt="event icon">
+                </span>
+                <a href="/en/events">Events</a>
+            </div>
+        </li>
+        
+        <li>
+            <div class="flex items-center gap-4">
+                <span>
+                    <img class="w-8 ml-4" width="64" height="64" src="https://static1.juicefs.com/images/github.ce640feaaa9e.svg" alt="community icon">
+                </span>
+                <a href="/en/community">Community</a>
+            </div>
+        </li>
+    </ul>
+</li>
+
+</ul>
+
+        
+        <div x-data="userState" class="text-center my-5">
+            <div x-data="{underline: false}">
+                <a @mouseover="underline = !underline"
+                @mouseleave="underline = false"
+                :class="underline ? 'menu-hover' : '' "
+                href="/console/" target="_blank" x-show="!state['name']" class="btn btn-sm btn-pill btn-green">Login</a>
+                <a @mouseover="underline = !underline"
+                @mouseleave="underline = false"
+                :class="underline ? 'menu-hover' : '' "
+                href="/console/" target="_blank" class="hidden btn btn-sm btn-pill btn-green"
+                    x-show="state['name']"
+                    :class="state['name'] && $el.classList.remove('hidden')">Console</a>
+            </div>
+        </div>
+        <div class="text-center my-5">
+            
+            <a class="btn btn-sm btn-pill btn-confier" href="/en/contact-us">Contact Us</a>
+            
+        </div>
+        <div x-data="{ open: false, syncLang(locale, to) {
+            const data = new FormData()
+            const targetLang = locale === 'zh-cn' ? 'zh-Hans' : 'en'
+            data.set('language', targetLang)
+            fetch('/set_language', {method: 'post', body: data}).then(res => {
+                if (!res.ok) {
+                    throw new Error(`Set user language to '${targetLang}' failed: ${res.status} ${res.statusText}`)
+                }
+            }).catch(err => {
+                console.error(err)
+            }).finally(() => {
+                window.location.href = to
+            })
+        } }">
+            
+                
+            
+                
+                    
+                    
+                    <a class="btn btn-sm btn-pill btn-gray text-center" @click="syncLang('zh-cn', '/zh-cn/careers')" rel="alternate" hreflang="zh-cn">
+                    
+                        <!-- switch language -->
+                        <svg class="w-4 inline-block mt-[-3px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg> 中文</a>
+                    
+                
+            
+        </div>
+    </div>
+</div>
+
+</section>
+<section id="career">
+    <div class="container mx-auto px-6 mt-10 mb-32">
+        <div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
+            <div class="flex flex-col items-center">
+                <h2 class="mt-5 font-title">
+                    Careers
+                </h2>
+                <p class="text-neutral-500 text-xl mt-3 py-5">
+                    If you are interested in the following positions, please send your resume to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9aeefffbf7daf0eff3f9fffefbeefbb4f3f5">[email&#160;protected]</a>.
+                </p>
+            </div>
+            <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+                
+                <div class="py-5" id="solution-architect">
+                    <details class="group">
+                        <summary class="flex justify-between items-center cursor-pointer list-none">
+                            <span class="text-2xl">Solutions Architect, North America</span>
+                            <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                        </summary>
+                        <div class="text-neutral-600 mt-3 group-open:animate-fadeIn jd">
+                            <h2 data-block-key="pv6v2" id="about-the-role">About the Role</h2><p data-block-key="ca614">JuiceFS is looking for a customer-focused Solutions Architect to help organizations design, evaluate, and deploy cloud-native data infrastructure for AI, Kubernetes, analytics, and other data-intensive workloads.</p><p data-block-key="9tlhf">You will serve as a trusted technical advisor throughout the customer lifecycle, from discovery and solution design through proof of concept, production deployment, and expansion. You will work closely with customers, partners, Sales, Product, and Engineering to translate business and workload requirements into reliable, scalable, and cost-effective architectures.</p><p data-block-key="bb0bl">This role regularly collaborates with teams in both North America and China. Professional fluency in Mandarin Chinese and English is required.</p><h2 data-block-key="6jn96" id="what-you-will-do">What You Will Do</h2><ul><li data-block-key="8e6mq">Lead technical discovery with customer infrastructure, platform engineering, DevOps, data, and AI/ML teams.</li><li data-block-key="7i6h5">Design cloud and hybrid-cloud architectures that integrate JuiceFS with compute, networking, object storage, Kubernetes, and customer security and operations systems.</li><li data-block-key="87ctt">Plan and lead technical evaluations and proofs of concept, including success criteria, test plans, workload characterization, performance analysis, and final recommendations.</li><li data-block-key="8iof6">Build and deliver product demonstrations, architecture workshops, technical presentations, and enablement sessions for customers and partners.</li><li data-block-key="fkqit">Guide customers through deployment, migration, performance tuning, troubleshooting, and production-readiness decisions.</li><li data-block-key="d06p9">Create reusable reference architectures, solution briefs, deployment guides, and technical best practices.</li><li data-block-key="1eg4p">Partner with Sales on account strategy, technical qualification, objection handling, and communicating technical value to engineering leaders and executives.</li><li data-block-key="d4afh">Bring structured customer feedback to Product and Engineering and help prioritize product gaps, integrations, and roadmap opportunities.</li><li data-block-key="kn70">Travel within North America for customer meetings, industry events, and partner activities as needed, expected up to 25%.</li></ul><h2 data-block-key="8ojoa" id="what-we-are-looking-for">What We Are Looking For</h2><ul><li data-block-key="c19tg">5+ years of experience in solutions architecture, sales engineering, cloud infrastructure consulting, platform engineering, DevOps/SRE, or a similar customer-facing technical role.</li><li data-block-key="etdk1">Professional fluency in both Mandarin Chinese and English, including the ability to lead technical discussions and produce clear written communication in English.</li><li data-block-key="1e12b">Hands-on knowledge of at least one major public cloud platform, such as AWS, Google Cloud, or Microsoft Azure, and working knowledge across multiple clouds.</li><li data-block-key="68ouq">Strong understanding of cloud infrastructure services, including:<ul><li data-block-key="euq1t">Virtual machines and compute services</li><li data-block-key="8j918">VPC/VNet design, routing, load balancing, DNS, firewalls, and private connectivity</li><li data-block-key="crdqp">Block, file, and object storage</li><li data-block-key="evri8">Containers and Kubernetes, including persistent storage and CSI concepts</li></ul></li><li data-block-key="7c5ak">Experience designing, deploying, or operating production cloud or hybrid-cloud systems.</li><li data-block-key="cdh1g">Ability to translate application and workload requirements into architecture choices involving performance, reliability, security, operability, and cost.</li><li data-block-key="l16u">Experience leading technical discovery, whiteboarding architectures, delivering demonstrations, and running proofs of concept.</li><li data-block-key="dnunu">Strong troubleshooting and communication skills, with the ability to work with both hands-on engineers and executive stakeholders.</li><li data-block-key="6ij2l">Ability to work independently in a distributed, cross-functional organization.</li></ul><h2 data-block-key="5jg0o" id="preferred-qualifications">Preferred Qualifications</h2><ul><li data-block-key="ec79g">Experience with distributed file systems, enterprise storage, cloud storage, data management, caching, backup, disaster recovery, or data migration.</li><li data-block-key="25lmc">Experience with AI/ML training and inference infrastructure, GPU clusters, data pipelines, analytics, or high-performance computing.</li><li data-block-key="co5ts">Familiarity with POSIX file systems, NFS, S3-compatible object storage, storage performance testing, and Linux systems.</li><li data-block-key="b1rc7">Experience with Kubernetes storage, CSI drivers, Helm, and container-platform operations.</li><li data-block-key="67jlq">Familiarity with infrastructure-as-code and automation tools such as Terraform, Ansible, or cloud-native equivalents.</li><li data-block-key="1nj8k">Experience working at a cloud infrastructure, storage, database, data platform, or developer-tools company.</li><li data-block-key="2vdtl">Experience supporting Bay Area technology customers or collaborating with cloud providers, channel partners, and infrastructure communities.</li></ul><h2 data-block-key="dif53" id="location-and-work-authorization">Location and Work Authorization</h2><p data-block-key="dbe33">This is a remote position within the United States. Candidates located in the San Francisco Bay Area are preferred because of customer and partner concentration, but qualified candidates elsewhere in the United States will be considered.</p><p data-block-key="4urgf">Candidates must be legally authorized to work in the United States. JuiceFS is unable to provide employment-based immigration sponsorship for this position now.</p><h2 data-block-key="8t8ea" id="compensation">Compensation</h2><p data-block-key="8gep2">The On-Target Earnings range for this position is USD 130,000–180,000 per year, including base salary and target variable compensation. Actual earnings may vary based on performance, experience, skills, scope, and work location. Eligible employees may also receive equity and benefits.</p>
+                        </div>
+                    </details>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        
+
+
+
+<style>
+    .social-icon {
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    [x-cloak] {
+        display: none;
+    }
+</style>
+
+
+<section id="footer">
+    <div class="container m-auto px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-between mb-20 gap-4">
+            <div class="flat-menu">
+                <div class="title">Products</div>
+                
+
+<ul>
+    
+        
+        <li>
+            <a href="/en/product/community-edition">Community Edition</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/product/cloud-service">Cloud Service</a>
+        </li>
+        
+    
+        
+    
+        
+    
+        
+        <li>
+            <a href="/en/product/enterprise-edition">Enterprise Edition</a>
+        </li>
+        
+    
+        
+    
+</ul>
+            </div>
+            <div class="flat-menu">
+                <div class="title">Solutions</div>
+                
+
+<ul>
+    
+        
+        <li>
+            <a href="/en/artificial-intelligence">AI + Machine Learning</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/big-data">Big Data</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/kubernetes">Kubernetes PV</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/robotics">Generative AI</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/self-driving">Autonomous Driving</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/quantitative-trading">Quant Investment</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="https://juicefs.com/en/biotech">Biotech</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/storage-solution-for-rendering-scenarios">VFX &amp; 3D Rendering</a>
+        </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</ul>
+            </div>
+            <div class="flat-menu">
+                <div class="title">Resources</div>
+                
+
+<ul>
+    
+        
+        <li>
+            <a href="https://juicefs.com/docs/community/introduction/">Community Edition Docs</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="https://juicefs.com/docs/cloud/">Cloud Service Docs</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="https://juicefs.com/docs/csi/introduction">JuiceFS CSI Driver Docs</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/community">Community</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/blog">Blog</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="https://mailchi.mp/cf5433e7c54b/juicefs-community">Monthly Newsletter</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="http://go.juicefs.com/discord">Join Discord</a>
+        </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</ul>
+            </div>
+            <div class="flat-menu">
+                <div class="title">Company</div>
+                
+
+<ul>
+    
+        
+        <li>
+            <a href="/en/about-us">About Juicedata</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/careers">Careers</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/terms-of-service">Terms of Service</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/privacy-policy">Privacy Policy</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/contact-us/">Contact Us</a>
+        </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</ul>
+            </div>
+            <div class="flat-menu col-span-2 lg:col-span-1">
+                <div class="title">Hot Topics</div>
+                
+
+<ul class="grid grid-cols-2 lg:grid-cols-1">
+    
+        
+        <li>
+            <a href="https://juicefs.com/docs/community/how_to_use_on_kubernetes">Kubernetes CSI Driver</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="https://juicefs.com/en/blog/engineering/juicefs-ai-workload-performance-optimization">Performance Optimization for AI</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="https://juicefs.com/docs/community/comparison/juicefs_vs_cephfs">CephFS vs. JuiceFS</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="https://juicefs.com/docs/community/comparison/juicefs_vs_alluxio">Alluxio vs. JuiceFS</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="https://juicefs.com/docs/community/comparison/juicefs_vs_s3fs">S3FS vs. JuiceFS</a>
+        </li>
+        
+    
+        
+        <li>
+            <a href="/en/blog/engineering/distributed-filesystem-comparison">Distributed File System Comparison</a>
+        </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <li>
+            <a href="https://juicefs.com/en/blog/engineering/posix-compatibility-comparison-among-four-file-system-on-the-cloud">POSIX Compatibility Comparison</a>
+        </li>
+        
+    
+</ul>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-3 items-center border-t border-t-[#404040] py-4 gap-y-4">
+            <div class="">
+                <a href="/en">
+                    <img class="max-h-9" width="146" height="auto" src="https://static1.juicefs.com/images/logo.4b6469b425ff.svg" alt="JuiceFS LOGO">
+                </a>
+            </div>
+            <div class="">
+                <div class="text-sm text-[#59585C]">
+                    Copyright 2017-2026 Juicedata, Inc All rights reserved.
+                    
+                </div>
+            </div>
+            <div class="">
+                <div class="flex flex-wrap items-center text-white lg:justify-end">
+
+                    <!-- GitHub icon -->
+                    
+                    <a class="social-icon" title="GitHub" href="https://github.com/juicedata/juicefs" target="_blank">
+                        <svg class="w-4" role="img" fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                    
+
+                    <!-- WeChat official account icon -->
+                    
+
+                    <!-- Slack icon -->
+                    
+
+                    <!-- Twitter icon -->
+                    
+                    <a class="social-icon" title="X" href="https://twitter.com/juicedatainc" target="_blank">
+                        <svg class="w-4" fill="white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                    </a>
+                    
+
+                    <!-- LinkedIn icon -->
+                    
+                    <a class="social-icon" title="LinkedIn" href="https://www.linkedin.com/company/juicedata" target="_blank">
+                        <svg class="w-4" fill="white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    
+
+                    <!-- YouTube icon -->
+                    
+
+                    <!-- Bilibili icon -->
+                    
+
+                    <!-- Discord icon -->
+                    
+                    <a class="social-icon" title="Discord" href="http://go.juicefs.com/discord" target="_blank">
+                        <svg class="w-4" fill="white" role="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M433.7 91a416.5 416.5 0 0 0-105.6-33.2c-4.6 8.2-9.9 19.3-13.5 28.1-39.4-5.9-78.4-5.9-117.1 0-3.7-8.8-9.1-19.9-13.7-28.1-37.1 6.4-72.6 17.7-105.7 33.3-66.8 101-85 199.5-75.9 296.6 44.3 33.1 87.3 53.2 129.6 66.4 10.4-14.4 19.7-29.6 27.7-45.7-15.3-5.8-29.9-13-43.7-21.3 3.7-2.7 7.2-5.6 10.7-8.5 84.2 39.4 175.8 39.4 259 0 3.5 2.9 7.1 5.8 10.7 8.5-13.9 8.3-28.5 15.5-43.8 21.3 8 16 17.3 31.3 27.7 45.7 42.3-13.2 85.3-33.3 129.6-66.4 10.8-112.5-18-210.1-76-296.7M170.9 328c-25.3 0-46-23.6-46-52.4s20.3-52.4 46-52.4 46.5 23.6 46 52.4c.1 28.8-20.2 52.4-46 52.4m170.2 0c-25.3 0-46-23.6-46-52.4s20.3-52.4 46-52.4 46.5 23.6 46 52.4c0 28.8-20.3 52.4-46 52.4"/></svg>
+                    </a>
+                    
+
+                    <!-- SOC 2 icon -->
+                    
+                    <a class="social-icon" title="SOC 2" href="https://juicefs.com/en/blog/company/juicefs-achieves-soc-2-type-1-certification" style="padding: 2px;">
+                        <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white" fill-rule="evenodd" clip-rule="evenodd" d="M10.89 64.265c-3.283 0-5.989-.163-8.119-.489l.526-4.21c3.057.376 5.751.564 8.081.564l.489 0c1.579 0 2.825-.15 3.74-.451.915-.301 1.572-.739 1.973-1.316.401-.576.652-1.316.752-2.218.05-.451.075-.764.075-.94 0-.877-.2-1.541-.601-1.992-.401-.451-.996-.771-1.785-.958-.789-.188-1.973-.382-3.552-.583-1.804-.2-3.233-.514-4.285-.94-1.052-.426-1.836-1.046-2.349-1.861-.514-.814-.771-1.911-.771-3.289 0-.551.038-1.165.113-1.842.326-2.832 1.278-4.849 2.857-6.052 1.579-1.203 3.997-1.804 7.255-1.804l2.631 0c1.904 0 4.009.025 6.315.075l-.489 4.135c-1.328 0-2.343-.013-3.045-.038l-3.27-.038-2.631 0c-1.829 0-3.164.319-4.003.958-.839.639-1.259 1.848-1.259 3.627 0 .777.15 1.359.451 1.748.301.388.714.658 1.24.808.526.15 1.378.313 2.556.489.226.025.677.088 1.353.188 1.854.276 3.333.639 4.435 1.09 1.103.451 1.93 1.096 2.481 1.936.551.839.827 1.973.827 3.402 0 .526-.038 1.09-.113 1.691-.251 2.08-.796 3.721-1.635 4.924-.839 1.203-2.049 2.067-3.627 2.594-1.579.526-3.621.789-6.127.789l-.489 0z"/>
+                        <path fill="white" fill-rule="evenodd" clip-rule="evenodd" d="M42.501 35.735c3.308.025 5.738.745 7.292 2.161 1.554 1.416 2.33 3.64 2.33 6.672 0 .777-.063 1.729-.188 2.857l-.564 5.15c-.551 4.085-1.804 7.048-3.759 8.89-1.955 1.842-4.836 2.775-8.645 2.8l-2.782 0c-3.308-.025-5.738-.739-7.292-2.143-1.554-1.403-2.33-3.608-2.33-6.616 0-.777.063-1.754.188-2.932l.564-5.15c.526-4.085 1.773-7.048 3.74-8.89 1.967-1.842 4.855-2.775 8.664-2.8l2.782 0zm-11.352 17.065c-.1 1.002-.15 1.704-.15 2.105 0 1.829.432 3.151 1.297 3.966.865.814 2.287 1.234 4.266 1.259l3.007 0c2.28-.025 3.978-.608 5.093-1.748 1.115-1.14 1.848-3.001 2.199-5.582l.677-5.601c.1-1.002.15-1.704.15-2.105 0-1.829-.432-3.151-1.297-3.966-.865-.814-2.287-1.234-4.266-1.259l-3.007 0c-2.28.025-3.978.608-5.093 1.748-1.115 1.14-1.848 3.001-2.199 5.582l-.677 5.601z"/>
+                        <path fill="white" fill-rule="evenodd" clip-rule="evenodd" d="M70.279 35.886c1.052 0 2.556.025 4.511.075l2.33.038-.564 4.172-2.18-.075c-2.506-.05-4.072-.075-4.699-.075l-1.654 0c-2.28 0-3.978.576-5.093 1.729-1.115 1.153-1.848 3.02-2.199 5.601l-.677 5.45c-.1 1.002-.15 1.704-.15 2.105 0 1.829.432 3.157 1.297 3.984.865.827 2.287 1.24 4.266 1.24l1.804 0c1.328 0 3.483-.088 6.465-.263l.94-.038-.301 4.135c-2.456.2-4.949.301-7.48.301l-1.804 0c-3.308-.025-5.738-.739-7.292-2.143-1.554-1.403-2.33-3.608-2.33-6.616 0-.777.063-1.754.188-2.932l.564-4.999c.526-4.085 1.773-7.048 3.74-8.89 1.967-1.842 4.855-2.775 8.664-2.8l1.654 0z"/>
+                        <path fill="white" fill-rule="evenodd" clip-rule="evenodd" d="M92.756 44.042c.125-1.278-.194-2.268-.958-2.969-.764-.702-1.986-1.052-3.665-1.052-2.406 0-4.686.188-6.841.564l.526-4.247c2.406-.301 4.673-.451 6.803-.451 2.907 0 5.068.677 6.484 2.03 1.416 1.353 2.124 3.07 2.124 5.15 0 .401-.013.702-.038.902-.2 1.579-.626 2.894-1.278 3.947-.652 1.052-1.516 1.948-2.594 2.688-1.078.739-2.506 1.51-4.285 2.312-1.278.576-2.337 1.14-3.176 1.691-.839.551-1.547 1.265-2.124 2.143-.576.877-.952 1.955-1.128 3.233l12.442 0-.489 4.135-16.839 0 .564-4.135c.401-2.556 1.397-4.667 2.988-6.334 1.591-1.666 3.464-2.963 5.619-3.89 1.453-.652 2.525-1.171 3.214-1.56.689-.388 1.272-.908 1.748-1.56.476-.652.777-1.516.902-2.594z"/>
+                        </svg>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static1.juicefs.com/dist/main.813d2b5335d1.js"></script>
+
+        
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5WE422D3GW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5WE422D3GW');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87282447-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-87282447-1');
+</script>
+
+<script  type="async">
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3092427,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script defer data-domain="juicefs.com" src="https://plausible.io/js/script.js"></script>
+
+        
+<script>
+window.addEventListener('load', function() {
+    const hash = window.location.hash;
+    if (hash) {
+        const target = document.querySelector(hash);
+        if (target) {
+            const details = target.querySelector('details');
+            if (details) {
+                // Expand job details
+                details.open = true;
+                // Scroll to the target position after opening
+                setTimeout(() => {
+                    target.scrollIntoView({behavior: 'smooth'});
+                }, 100);
+            }
+        }
+    }
+
+    // Add click event listener to all job details
+    document.querySelectorAll('details').forEach(details => {
+        details.addEventListener('toggle', function() {
+            if (this.open) {
+                // Get the parent element's ID
+                const parentId = this.closest('[id]').id;
+                // Update URL hash
+                history.replaceState(null, '', `#${parentId}`);
+            }
+        });
+    });
+});
+</script>
+    
+    </body>
+</html>

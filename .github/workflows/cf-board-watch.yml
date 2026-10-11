@@ -1,0 +1,91 @@
+name: CF Board Watch (weekly)
+
+# S31: the Cloudflare-domain-walled boards (gigacloud / medchemexpress /
+# amcrest — 403 from EVERY datacenter egress incl. GHA Azure; only a
+# JS-rendering stealth fetch passes). Their adapters escalate
+# requests→curl_cffi→firecrawl (site_boards._fetch_text_laddered); at
+# 1 credit per board-list this stays cheap ONLY at weekly cadence
+# (~3 credits/week). The daily board-watch.yml skips them via
+# WATCH_SKIP_TAGS=weekly. workflow_dispatch for manual runs.
+on:
+  schedule:
+    - cron: "30 12 * * 2"    # Tuesdays 12:30Z
+  workflow_dispatch:
+    inputs:
+      watch_details_max:
+        description: "max detail enrichments per leg (default 40)"
+        required: false
+        default: '40'
+      watch_budget_seconds:
+        description: "wall-clock budget (default 240)"
+        required: false
+        default: '240'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: board-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ingest/ curl_cffi
+      - name: Materialize runtime env
+        env:
+          INGEST_ENV: ${{ secrets.INGEST_ENV }}
+        run: |
+          if [ -n "$INGEST_ENV" ]; then
+            printf '%s\n' "$INGEST_ENV" > ingest/.env
+          fi
+      - name: Run CF-board watch (weekly tag only)
+        env:
+          WATCH_ONLY_TAGS: weekly
+          WATCH_DETAILS_MAX: ${{ github.event.inputs.watch_details_max || '40' }}
+          WATCH_BUDGET_SECONDS: ${{ github.event.inputs.watch_budget_seconds || '240' }}
+        run: python3 scripts/gha_board_watch.py
+      - name: Result gates (fail-loudly)
+        if: always()
+        run: |
+          if [ "${WATCH_RESULT}" = "failed" ]; then
+            echo "::error::cf-board-watch FAILED"
+            exit 1
+          fi
+      - name: Checkpoint state to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/watch_state
+          for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
+            cp ingest/data/board_watch/$pat /tmp/watch_state/ 2>/dev/null || true
+          done
+          git config user.name "board-watch-bot"
+          git config user.email "actions@github.com"
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
+              cp /tmp/watch_state/$pat ingest/data/board_watch/ 2>/dev/null || true
+            done
+            git add ingest/data/board_watch
+            if git diff --cached --quiet; then
+              echo "no state change to commit"; break
+            fi
+            git commit -m "cf-board-watch checkpoint [skip ci]" || true
+            if git push origin main; then push_ok=1; break; fi
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::push failed after 3 attempts — state rescued in /tmp"
+            exit 1
+          fi

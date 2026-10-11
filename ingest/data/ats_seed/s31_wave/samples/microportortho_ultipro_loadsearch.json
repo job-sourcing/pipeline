@@ -1,0 +1,335 @@
+{
+  "opportunities": [
+    {
+      "Id": "22c5b65c-3e5a-493d-96e0-37ccb654c3eb",
+      "Featured": false,
+      "Title": "Metal Finisher (3rd shift)",
+      "RequisitionNumber": "METAL002817",
+      "FullTime": true,
+      "JobCategoryName": "Manufacturing",
+      "Locations": [
+        {
+          "Id": "0fd3de93-8368-5139-b991-e367071a639c",
+          "LocalizedName": null,
+          "LocalizedLocationId": null,
+          "LocalizedDescription": "MicroPort Orthopedics",
+          "Address": {
+            "Line1": "5677 Airline Rd",
+            "Line2": null,
+            "City": "Arlington",
+            "PostalCode": "38002",
+            "State": {
+              "Code": "TN",
+              "Name": "Tennessee"
+            },
+            "Country": {
+              "Code": "USA",
+              "Name": "United States"
+            }
+          },
+          "DisplayName": false,
+          "DisplayLocationId": false,
+          "DisplayAddress": true,
+          "DisplayStreetAddress": false,
+          "DisplayDescription": false,
+          "SourceOfTruth": 1,
+          "Coordinates": {
+            "Latitude": 35.28022500613513,
+            "Longitude": -89.66843826532411
+          }
+        }
+      ],
+      "PostedDate": "2026-10-02T15:38:23.902Z",
+      "BriefDescription": "As a Metal Finisher, you will metal finish medical devices to meet specifications, perform quality verification of medical devices, including non-destructive testing, laser mark medical devices, and operate machines used to metal finish including belt lathes, sandblast equipment, robots etc.",
+      "MatchScore": 1.0,
+      "MatchedLocations": [],
+      "Distance": null,
+      "JobLocationType": 1,
+      "OpportunityType": 0
+    },
+    {
+      "Id": "5a8c8203-ba8a-4704-8e1b-4ae556b35de1",
+      "Featured": false,
+      "Title": "CNC Programmer",
+      "RequisitionNumber": "CNCPR002816",
+      "FullTime": true,
+      "JobCategoryName": "Engineering",
+      "Locations": [
+        {
+          "Id": "0fd3de93-8368-5139-b991-e367071a639c",
+          "LocalizedName": null,
+          "LocalizedLocationId": null,
+          "LocalizedDescription": "MicroPort Orthopedics",
+          "Address": {
+            "Line1": "5677 Airline Rd",
+            "Line2": null,
+            "City": "Arlington",
+            "PostalCode": "38002",
+            "State": {
+              "Code": "TN",
+              "Name": "Tennessee"
+            },
+            "Country": {
+              "Code": "USA",
+              "Name": "United States"
+            }
+          },
+          "DisplayName": false,
+          "DisplayLocationId": false,
+          "DisplayAddress": true,
+          "DisplayStreetAddress": false,
+          "DisplayDescription": false,
+          "SourceOfTruth": 1,
+          "Coordinates": {
+            "Latitude": 35.28022500613513,
+            "Longitude": -89.66843826532411
+          }
+        }
+      ],
+      "PostedDate": "2026-10-02T15:38:16.086Z",
+      "BriefDescription": "As CNC Programmer, you will create programs for CNC equipment using CAD/CAM software. You will improve and optimize machining processes by reviewing material removal rates for optimum tool life and increased efficiency and ensure successful completion of CNC programming goals set forth by management.",
+      "MatchScore": 1.0,
+      "MatchedLocations": [],
+      "Distance": null,
+      "JobLocationType": 1,
+      "OpportunityType": 0
+    },
+    {
+      "Id": "241c2660-f1c9-4510-96b2-65185e156235",
+      "Featured": false,
+      "Title": "Sr. Machinist (1st Shift)",
+      "RequisitionNumber": "MACHI002812",
+      "FullTime": true,
+      "JobCategoryName": "Manufacturing",
+      "Locations": [
+        {
+          "Id": "0fd3de93-8368-5139-b991-e367071a639c",
+          "LocalizedName": null,
+          "LocalizedLocationId": null,
+          "LocalizedDescription": "MicroPort Orthopedics",
+          "Address": {
+            "Line1": "5677 Airline Rd",
+            "Line2": null,
+            "City": "Arlington",
+            "PostalCode": "38002",
+            "State": {
+              "Code": "TN",
+              "Name": "Tennessee"
+            },
+            "Country": {
+              "Code": "USA",
+              "Name": "United States"
+            }
+          },
+          "DisplayName": false,
+          "DisplayLocationId": false,
+          "DisplayAddress": true,
+          "DisplayStreetAddress": false,
+          "DisplayDescription": false,
+          "SourceOfTruth": 1,
+          "Coordinates": {
+            "Latitude": 35.28022500613513,
+            "Longitude": -89.66843826532411
+          }
+        }
+      ],
+      "PostedDate": "2026-10-02T15:38:07.499Z",
+      "BriefDescription": "As a Sr. Machinist, you will work with tools, fixtures, and machines to manufacture medical devices from setup to operation. A working knowledge of manual machines (i.e. mills, lathes, grinders) and the ability to operate computer numerical controlled (CNC) machines is utilized to produce large volumes of medical devices made from metals, plastics or other materials.",
+      "MatchScore": 1.0,
+      "MatchedLocations": [],
+      "Distance": null,
+      "JobLocationType": 1,
+      "OpportunityType": 0
+    },
+    {
+      "Id": "3872191c-a135-4e1c-a2c7-634bbd9ed33d",
+      "Featured": false,
+      "Title": "Maintenance Service Specialist (2nd Shift)",
+      "RequisitionNumber": "MAINT002813",
+      "FullTime": true,
+      "JobCategoryName": "Facilities/Maintenance",
+      "Locations": [
+        {
+          "Id": "0fd3de93-8368-5139-b991-e367071a639c",
+          "LocalizedName": null,
+          "LocalizedLocationId": null,
+          "LocalizedDescription": "MicroPort Orthopedics",
+          "Address": {
+            "Line1": "5677 Airline Rd",
+            "Line2": null,
+            "City": "Arlington",
+            "PostalCode": "38002",
+            "State": {
+              "Code": "TN",
+              "Name": "Tennessee"
+            },
+            "Country": {
+              "Code": "USA",
+              "Name": "United States"
+            }
+          },
+          "DisplayName": false,
+          "DisplayLocationId": false,
+          "DisplayAddress": true,
+          "DisplayStreetAddress": false,
+          "DisplayDescription": false,
+          "SourceOfTruth": 1,
+          "Coordinates": {
+            "Latitude": 35.28022500613513,
+            "Longitude": -89.66843826532411
+          }
+        }
+      ],
+      "PostedDate": "2026-10-02T15:37:58.8Z",
+      "BriefDescription": "As Maintenance Service Specialist, you will perform maintenance on both CNC and Manual equipment. The Maintenance Specialist will assist outside OEM technicians to gain experience in repairing and set-up of new equipment.",
+      "MatchScore": 1.0,
+      "MatchedLocations": [],
+      "Distance": null,
+      "JobLocationType": 1,
+      "OpportunityType": 0
+    },
+    {
+      "Id": "db25d66d-c527-4514-904b-749ed9ef9c42",
+      "Featured": false,
+      "Title": "Machinist, Screws (2nd Shift)",
+      "RequisitionNumber": "MACHI002814",
+      "FullTime": true,
+      "JobCategoryName": "Manufacturing",
+      "Locations": [
+        {
+          "Id": "0fd3de93-8368-5139-b991-e367071a639c",
+          "LocalizedName": null,
+          "LocalizedLocationId": null,
+          "LocalizedDescription": "MicroPort Orthopedics",
+          "Address": {
+            "Line1": "5677 Airline Rd",
+            "Line2": null,
+            "City": "Arlington",
+            "PostalCode": "38002",
+            "State": {
+              "Code": "TN",
+              "Name": "Tennessee"
+            },
+            "Country": {
+              "Code": "USA",
+              "Name": "United States"
+            }
+          },
+          "DisplayName": false,
+          "DisplayLocationId": false,
+          "DisplayAddress": true,
+          "DisplayStreetAddress": false,
+          "DisplayDescription": false,
+          "SourceOfTruth": 1,
+          "Coordinates": {
+            "Latitude": 35.28022500613513,
+            "Longitude": -89.66843826532411
+          }
+        }
+      ],
+      "PostedDate": "2026-10-02T15:37:48.804Z",
+      "BriefDescription": "As a Machinist, you will work with tools, fixtures, and machines to manufacture medical devices from setup to operation. A working knowledge of manual machines (i.e. mills, lathes, grinders) and the ability to operate computer numerical controlled (CNC) machines is utilized to produce large volumes of medical devices made from metals, plastics or other materials.",
+      "MatchScore": 1.0,
+      "MatchedLocations": [],
+      "Distance": null,
+      "JobLocationType": 1,
+      "OpportunityType": 0
+    },
+    {
+      "Id": "370dd532-4993-4b9c-9d41-8f826edf665c",
+      "Featured": false,
+      "Title": "Sr. Machinist, Screws (1st Shift)",
+      "RequisitionNumber": "MACHI002809",
+      "FullTime": true,
+      "JobCategoryName": "Manufacturing",
+      "Locations": [
+        {
+          "Id": "0fd3de93-8368-5139-b991-e367071a639c",
+          "LocalizedName": null,
+          "LocalizedLocationId": null,
+          "LocalizedDescription": "MicroPort Orthopedics",
+          "Address": {
+            "Line1": "5677 Airline Rd",
+            "Line2": null,
+            "City": "Arlington",
+            "PostalCode": "38002",
+            "State": {
+              "Code": "TN",
+              "Name": "Tennessee"
+            },
+            "Country": {
+              "Code": "USA",
+              "Name": "United States"
+            }
+          },
+          "DisplayName": false,
+          "DisplayLocationId": false,
+          "DisplayAddress": true,
+          "DisplayStreetAddress": false,
+          "DisplayDescription": false,
+          "SourceOfTruth": 1,
+          "Coordinates": {
+            "Latitude": 35.28022500613513,
+            "Longitude": -89.66843826532411
+          }
+        }
+      ],
+      "PostedDate": "2026-10-02T15:37:38.726Z",
+      "BriefDescription": "As a Sr. Machinist, you will work with tools, fixtures, and machines to manufacture medical devices from setup to operation. A working knowledge of manual machines (i.e. mills, lathes, grinders) and the ability to operate computer numerical controlled (CNC) machines is utilized to produce large volumes of medical devices made from metals, plastics or other materials.",
+      "MatchScore": 1.0,
+      "MatchedLocations": [],
+      "Distance": null,
+      "JobLocationType": 1,
+      "OpportunityType": 0
+    },
+    {
+      "Id": "9de3cd64-6180-42f2-80c4-250bcad897c0",
+      "Featured": false,
+      "Title": "Metal Finisher (2nd shift)",
+      "RequisitionNumber": "METAL002808",
+      "FullTime": true,
+      "JobCategoryName": "Manufacturing",
+      "Locations": [
+        {
+          "Id": "0fd3de93-8368-5139-b991-e367071a639c",
+          "LocalizedName": null,
+          "LocalizedLocationId": null,
+          "LocalizedDescription": "MicroPort Orthopedics",
+          "Address": {
+            "Line1": "5677 Airline Rd",
+            "Line2": null,
+            "City": "Arlington",
+            "PostalCode": "38002",
+            "State": {
+              "Code": "TN",
+              "Name": "Tennessee"
+            },
+            "Country": {
+              "Code": "USA",
+              "Name": "United States"
+            }
+          },
+          "DisplayName": false,
+          "DisplayLocationId": false,
+          "DisplayAddress": true,
+          "DisplayStreetAddress": false,
+          "DisplayDescription": false,
+          "SourceOfTruth": 1,
+          "Coordinates": {
+            "Latitude": 35.28022500613513,
+            "Longitude": -89.66843826532411
+          }
+        }
+      ],
+      "PostedDate": "2026-10-02T15:37:20.258Z",
+      "BriefDescription": "As a Metal Finisher, you will metal finish medical devices to meet specifications, perform quality verification of medical devices, including non-destructive testing, laser mark medical devices, and operate machines used to metal finish including belt lathes, sandblast equipment, robots etc.",
+      "MatchScore": 1.0,
+      "MatchedLocations": [],
+      "Distance": null,
+      "JobLocationType": 1,
+      "OpportunityType": 0
+    }
+  ],
+  "totalCount": 7,
+  "locations": []
+}

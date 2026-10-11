@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="keywords" content="莉莉丝招聘, 加入莉莉丝, 莉莉丝 Careers, Careers at 莉莉丝, Join 莉莉丝" />
+<meta name="description" content="到莉莉丝，开启你的新工作 " />
+<title>莉莉丝游戏招聘官网</title>
+<link rel="preload" href="./font/Mohave-SemiBold.ttf" as="font" type="font/ttf">
+<link rel="preload" href="./font/Mohave-Light.ttf" as="font" type="font/ttf">
+<link rel="icon" type="imagend.microsoft.icon" href="./images/lilith.ico" />
+<link rel="stylesheet" type="text/css" href="./css/main.css?version=20240906144763" />
+<script type="text/javascript" src="./js/mobile_jump.js"></script>
+<script type="text/javascript">mobilejump.init('./index_m.html','');</script>
+<script>function remSize() {var w =window.innerWidth;if (w <=1600) {document.documentElement.style.fontSize =(1600 / 19.2) + 'px';} else {document.documentElement.style.fontSize =document.documentElement.clientWidth / 19.2 + 'px';}
+}
+remSize();window.addEventListener('resize',function () {remSize();})
+</script>
+<style>[v-cloak]{display:none;}</style>
+<style>@font-face{font-family:'Mohave-Light';src:url('./font/Mohave-Light.ttf');}@font-face{font-family:'Mohave-SemiBold';src:url('./font/Mohave-SemiBold.ttf');}.wapper-loading{background:#FFFFFF;position:fixed;left:0;top:0;bottom:0;right:0;opacity:1;transition:opacity .4s ease-out;}.wapper-loading-line{position:absolute;width:2.6rem;height:0.12rem;margin-left:-1.3rem;left:50%;top:50%;margin-top:-1rem;font-family:'Mohave-SemiBold';font-weight:600;font-size:0.12rem;color:#D30000;letter-spacing:0;line-height:0.12rem;}.wapper-loading-line::before{position:absolute;width:1.82rem;height:0.02rem;top:50%;margin-top:-0.01rem;margin-left:0.66rem;content:"";background:#D30000;}.wapper-loading-num{position:absolute;left:50%;top:50%;margin-left:-2rem;margin-top:-0.64rem;width:4rem;height:1.48rem;font-family:'Mohave-Light';font-weight:300;font-size:1.48rem;color:#D30000;letter-spacing:0;text-align:center;line-height:1.48rem;}</style>
+</head>
+<body>
+<div id="app">
+<div class="wapper">
+<div class="wapper-loading">
+<div class="wapper-loading-line">loading</div>
+<div class="wapper-loading-num">0%</div>
+</div>
+<div class="wapper-box" v-cloak v-if="now_is_show">
+<div class="wapper-box-topbar" :class="[topbar_isshow == 1? 'top_show': '']">
+<div class="wapper-box-topbar-logo"></div>
+<div class="wapper-box-topbar-href">
+<a href="javascript:;" target="_blank" :href="home_page" class="red">首页</a>
+<a href="javascript:;" target="_blank" :href="social_page">社会招聘</a>
+<a href="javascript:;" target="_blank" :href="campus_page">校园招聘</a>
+<a href="javascript:;" target="_blank" :href="intern_page">实习招聘</a>
+<a href="javascript:;" target="_blank" :href="login_page">登录</a>
+</div>
+</div>
+<div class="wapper-box-video">
+<video src="https://lilithimage.lilithcdn.com/jobs/index/pc/home_video.mp4" objectFit="cover" autoplay="" muted="true" loop="loop" playsinline webkit-playsinlin>
+</video>
+<div class="wapper-box-video-show">
+<div class="wapper-box-video-show-cover"></div>
+<div class="wapper-box-video-show-slogan">
+<div class="wapper-box-video-show-slogan-box">
+<div class="wapper-box-video-show-slogan-box-text">
+<span class="text_need_move">为</span><span class="text_need_move">全</span><span class="text_need_move ">世</span><span class="text_need_move">界</span><span class="text_need_move">玩</span><span class="text_need_move">家</span><span class="text_need_move">提</span><span class="text_need_move">供</span><span class="text_need_move">超</span><span class="text_need_move">越</span><span class="text_need_move">预</span><span class="text_need_move">期</span><span class="text_need_move">的</span><span class="text_need_move">游</span><span class="text_need_move">戏</span><span class="text_need_move">体</span><span class="text_need_move">验</span>
+</div>
+</div>
+</div>
+<a href="javascript:;" class="wapper-box-video-show-btn" target="_blank" :href="social_page">
+立即投递
+</a>
+<div class="wapper-box-video-show-move">
+<div class="wapper-box-video-show-move-box">
+<div class="wapper-box-video-show-move-box-line linemove">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wapper-box-box1">
+<div class="wapper-box-box1-bg"></div>
+<div class="wapper-box-box1-part1"></div>
+<div class="wapper-box-box1-part2"></div>
+<div class="wapper-box-box1-part3"></div>
+<div class="wapper-box-box1-title">
+<div class="wapper-box-box1-title-box">
+<div class="wapper-box-box1-title-box-text text1 ">
+<span class="text_need_move">招</span><span class="text_need_move">聘</span><span class="text_need_move">类</span><span class="text_need_move">型</span>
+</div>
+<div class="wapper-box-box1-title-box-text text2 ">
+<span class="text_need_move">R</span><span class="text_need_move">e</span><span class="text_need_move">c</span><span class="text_need_move">r</span><span class="text_need_move">u</span><span class="text_need_move">i</span><span class="text_need_move">t</span><span class="text_need_move">m</span><span class="text_need_move">e</span><span class="text_need_move">n</span><span class="text_need_move">t</span> <span class="text_need_move"> T</span><span class="text_need_move">y</span><span class="text_need_move">p</span><span class="text_need_move">e</span>
+</div>
+</div>
+</div>
+<div class="wapper-box-box1-line"></div>
+<ul class="wapper-box-box1-ul">
+<li class="wapper-box-box1-ul-li1 show-animate-item">
+<img src="https://forum-cn-cdn.lilithgames.com/p/SDK/200000/0/100000/2022-07-23/job-bg-type@2x.png" alt="招聘流程" crossorigin="anonymous">
+</li>
+<li class="wapper-box-box1-ul-li2 show-animate-item">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/shzp%402x.png" alt="社会招聘" crossorigin="anonymous">
+<div class="wapper-box-box1-ul-li-text">
+<div class="wapper-box-box1-ul-li-text1">社会招聘</div>
+<div class="wapper-box-box1-ul-li-text2">立即投递<em></em></div>
+</div>
+<a href="javascript:;" class="wapper-box-box1-ul-li-a" href="javascript:;" target="_blank" :href="social_page">
+<div class="wapper-box-box1-ul-li-a-line">
+<div class="wapper-box-box1-ul-li-a-line-default"></div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box1-ul-li2 show-animate-item">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/xyzp%402x.png" alt="校园招聘" crossorigin="anonymous">
+<div class="wapper-box-box1-ul-li-text">
+<div class="wapper-box-box1-ul-li-text1">校园招聘</div>
+<div class="wapper-box-box1-ul-li-text2">立即投递<em></em></div>
+</div>
+<a href="javascript:;" class="wapper-box-box1-ul-li-a" href="javascript:;" target="_blank" :href="campus_page">
+<div class="wapper-box-box1-ul-li-a-line">
+<div class="wapper-box-box1-ul-li-a-line-default"></div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box1-ul-li2 show-animate-item">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/sxzp_pc.png" alt="实习招聘" crossorigin="anonymous">
+<div class="wapper-box-box1-ul-li-text">
+<div class="wapper-box-box1-ul-li-text1">实习招聘</div>
+<div class="wapper-box-box1-ul-li-text2">立即投递<em></em></div>
+</div>
+<a href="javascript:;" class="wapper-box-box1-ul-li-a" href="javascript:;" target="_blank" :href="intern_page">
+<div class="wapper-box-box1-ul-li-a-line">
+<div class="wapper-box-box1-ul-li-a-line-default"></div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="wapper-box-box2">
+<div class="wapper-box-box2-bg bg_need_show"></div>
+<div class="wapper-box-box2-title">
+<div class="wapper-box-box2-title-box">
+<div class="wapper-box-box2-title-box-text text1">
+<span class="text_need_move">招</span><span class="text_need_move">聘</span><span class="text_need_move">流</span><span class="text_need_move">程</span>
+</div>
+<div class="wapper-box-box2-title-box-text text2 ">
+<span class="text_need_move">H</span><span class="text_need_move">i</span><span class="text_need_move">r</span><span class="text_need_move">i</span><span class="text_need_move">n</span><span class="text_need_move">g</span> <span class="text_need_move"> P</span><span class="text_need_move">r</span><span class="text_need_move">o</span><span class="text_need_move">c</span><span class="text_need_move">e</span><span class="text_need_move">s</span><span class="text_need_move">s</span>
+</div>
+</div>
+</div>
+<div class="wapper-box-box2-line"></div>
+<div class="wapper-box-box2-show ">
+<div class="wapper-box-box2-show-text text0" id="text0">
+<div class="wapper-box-box2-show-text-num">
+<div class="wapper-box-box2-show-text-num-item">
+<div class="wapper-box-box2-show-text-num-item-pic bottom_to_top" id="num0"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-text-word">
+<div class="wapper-box-box2-show-text-word-item">
+<div class="wapper-box-box2-show-text-word-item-pic right_to_left" id="word0"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-line line-animate-item2 " id="line0"></div>
+<div class="wapper-box-box2-show-role role0 left_to_right" id="role0"></div>
+</div>
+<div class="wapper-box-box2-show-text text1" id="text1">
+<div class="wapper-box-box2-show-text-num">
+<div class="wapper-box-box2-show-text-num-item">
+<div class="wapper-box-box2-show-text-num-item-pic bottom_to_top" id="num1"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-text-word">
+<div class="wapper-box-box2-show-text-word-item">
+<div class="wapper-box-box2-show-text-word-item-pic right_to_left" id="word1"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-line line-animate-item2" id="line1"></div>
+<div class="wapper-box-box2-show-role role1 left_to_right" id="role1"></div>
+</div>
+<div class="wapper-box-box2-show-text text2" id="text2">
+<div class="wapper-box-box2-show-text-num">
+<div class="wapper-box-box2-show-text-num-item">
+<div class="wapper-box-box2-show-text-num-item-pic bottom_to_top" id="num2"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-text-word">
+<div class="wapper-box-box2-show-text-word-item">
+<div class="wapper-box-box2-show-text-word-item-pic right_to_left" id="word2"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-line line-animate-item2" id="line2"></div>
+<div class="wapper-box-box2-show-role role2 left_to_right" id="role2"></div>
+</div>
+<div class="wapper-box-box2-show-text text3" id="text3">
+<div class="wapper-box-box2-show-text-num">
+<div class="wapper-box-box2-show-text-num-item">
+<div class="wapper-box-box2-show-text-num-item-pic bottom_to_top" id="num3"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-text-word">
+<div class="wapper-box-box2-show-text-word-item">
+<div class="wapper-box-box2-show-text-word-item-pic right_to_left" id="word3"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-line line-animate-item2" id="line3"></div>
+<div class="wapper-box-box2-show-role role3 left_to_right" id="role3"></div>
+</div>
+<div class="wapper-box-box2-show-text text4" id="text4">
+<div class="wapper-box-box2-show-text-num">
+<div class="wapper-box-box2-show-text-num-item">
+<div class="wapper-box-box2-show-text-num-item-pic bottom_to_top" id="num4"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-text-word">
+<div class="wapper-box-box2-show-text-word-item">
+<div class="wapper-box-box2-show-text-word-item-pic right_to_left" id="word4"></div>
+</div>
+</div>
+<div class="wapper-box-box2-show-line line-animate-item2" id="line4"></div>
+<div class="wapper-box-box2-show-role role4 left_to_right" id="role4"></div>
+</div>
+<div class="wapper-box-box2-show-intro" v-html="process_text"></div>
+</div>
+<div class="wapper-box-box2-bg2  top_to_bottom"></div>
+<div class="wapper-box-box2-bg3  top_to_bottom"></div>
+<ul class="wapper-box-box2-ul">
+<li class="wapper-box-box2-ul-li show-animate-item" @mouseover="fnProcessHover(0)">
+<a href="javascript:;" class="wapper-box-box2-ul-li-a">
+<div crossorigin="anonymous" class="img img1" :class="[process_hover == 0? 'active1':'']"></div>
+<div class="wapper-box-box2-ul-li-text">
+<div class="wapper-box-box2-ul-li-text1">选择岗位</div>
+<div class="wapper-box-box2-ul-li-text2">STEP1</div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box2-ul-li show-animate-item" @mouseover="fnProcessHover(1)">
+<a href="javascript:;" class="wapper-box-box2-ul-li-a">
+<div crossorigin="anonymous" class="img img2" :class="[process_hover == 1? 'active2':'']"></div>
+<div class="wapper-box-box2-ul-li-text">
+<div class="wapper-box-box2-ul-li-text1">投递简历</div>
+<div class="wapper-box-box2-ul-li-text2">STEP2</div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box2-ul-li show-animate-item" @mouseover="fnProcessHover(2)">
+<a href="javascript:;" class="wapper-box-box2-ul-li-a">
+<div crossorigin="anonymous" class="img img3" :class="[process_hover == 2? 'active3':'']"></div>
+<div class="wapper-box-box2-ul-li-text">
+<div class="wapper-box-box2-ul-li-text1">笔试</div>
+<div class="wapper-box-box2-ul-li-text2">STEP3</div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box2-ul-li show-animate-item" @mouseover="fnProcessHover(3)">
+<a href="javascript:;" class="wapper-box-box2-ul-li-a">
+<div crossorigin="anonymous" class="img img4" :class="[process_hover == 3? 'active4':'']"></div>
+<div class="wapper-box-box2-ul-li-text">
+<div class="wapper-box-box2-ul-li-text1">面试</div>
+<div class="wapper-box-box2-ul-li-text2">STEP4</div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box2-ul-li show-animate-item" @mouseover="fnProcessHover(4)">
+<a href="javascript:;" class="wapper-box-box2-ul-li-a">
+<div crossorigin="anonymous" class="img img5" :class="[process_hover == 4? 'active5':'']"></div>
+<div class="wapper-box-box2-ul-li-text">
+<div class="wapper-box-box2-ul-li-text1">获得Offer</div>
+<div class="wapper-box-box2-ul-li-text2">STEP5</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="wapper-box-box3">
+<div class="wapper-box-box3-bg1 bottom_to_top"></div>
+<div class="wapper-box-box3-title">
+<div class="wapper-box-box3-title-box">
+<div class="wapper-box-box3-title-box-text text1 ">
+<span class="text_need_move">关</span><span class="text_need_move">于</span><span class="text_need_move">莉</span><span class="text_need_move">莉</span><span class="text_need_move">丝</span>
+</div>
+<div class="wapper-box-box3-title-box-text text2 ">
+<span class="text_need_move">A</span><span class="text_need_move">b</span><span class="text_need_move">o</span><span class="text_need_move">u</span><span class="text_need_move">t</span> <span class="text_need_move">L</span><span class="text_need_move">i</span><span class="text_need_move">l</span><span class="text_need_move">i</span><span class="text_need_move">t</span><span class="text_need_move">h</span>
+</div>
+</div>
+</div>
+<div class="wapper-box-box3-line"></div>
+<div class="wapper-box-box3-intro">
+<div class="wapper-box-box3-intro-box">
+<div class="wapper-box-box3-intro-box-text ">
+<span class="text_need_move">简</span><span class="text_need_move">单</span><span class="text_need_move">真</span><span class="text_need_move">诚</span><span class="text_need_move">，</span>
+</div>
+</div>
+<div class="wapper-box-box3-intro-box box2">
+<div class="wapper-box-box3-intro-box-text ">
+<span class="text_need_move">是</span><span class="text_need_move">莉</span><span class="text_need_move">莉</span><span class="text_need_move">丝</span><span class="text_need_move">遵</span><span class="text_need_move">从</span><span class="text_need_move">的</span>
+</div>
+</div>
+<div class="wapper-box-box3-intro-box box2">
+<div class="wapper-box-box3-intro-box-text ">
+<span class="text_need_move">价</span><span class="text_need_move">值</span><span class="text_need_move">观</span><span class="text_need_move">。</span>
+</div>
+</div>
+</div>
+<div class="wapper-box-box3-text need-to-show">
+<p>莉莉丝游戏于2013年创立于上海，是集游戏研发与全球发行于一体的游戏公司。</p>
+<p>陆续推出《小冰冰传奇》《剑与远征》《万国觉醒》《剑与远征：启程》等爆款游戏，在全球市场积累了广泛的用户基础和良好口碑，是中国游戏公司出海代表之一。</p>
+<p>莉莉丝秉持“简单真诚”的价值观，以“深度本地化”为核心战略，凭借深厚的出海经验和服务化经验，重视玩家声音，致力于<b>为全世界玩家提供超越预期的游戏体验</b>。目前在全球拥有超过2300名员工，于新加坡、韩国、美国等地设有分支机构。</p>
+<p>莉莉丝将持续投入研发创新，不断探索多元化的艺术风格，通过优质内容连接全球玩家，努力实现“<b>成为世界一流的游戏公司</b>”的愿景。</p>
+</div>
+<div class="wapper-box-box3-logo need-to-show">
+<div class="wapper-box-box3-logo-img"></div>
+</div>
+<div class="wapper-box-box3-show">
+<div class="wapper-box-box3-show-role left_to_right"></div>
+<div class="wapper-box-box3-show-line line-animate-item"></div>
+<div class="wapper-box-box3-show-text">
+莉莉丝游戏致力为全世界玩家提供超越预期的游戏体验，更多不可能，等你一起创造！
+</div>
+</div>
+</div>
+<div class="wapper-box-box4">
+<div class="wapper-box-box4-bg"></div>
+<div class="wapper-box-box4-title">
+<div class="wapper-box-box4-title-box">
+<div class="wapper-box-box4-title-box-text text1">
+<span class="text_need_move">工</span><span class="text_need_move">作</span><span class="text_need_move">地</span><span class="text_need_move">点</span>
+</div>
+<div class="wapper-box-box4-title-box-text text2">
+<span class="text_need_move">L</span><span class="text_need_move">o</span><span class="text_need_move">c</span><span class="text_need_move">a</span><span class="text_need_move">t</span><span class="text_need_move">i</span><span class="text_need_move">o</span><span class="text_need_move">n</span><span class="text_need_move">s</span>
+</div>
+</div>
+</div>
+<div class="wapper-box-box4-line"></div>
+<div>
+<ul class="wapper-box-box4-ul box5-ul">
+<li class="wapper-box-box4-ul-li box5-ul-li">
+<a class="wapper-box-box4-ul-li-a show-animate-item box5-ul-li-a" href="javascript:;" target="_blank" :href="shanghai">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/location.png" alt="上海" crossorigin="anonymous">
+<div class="wapper-box-box4-ul-li-text box5-ul-li-text">
+<div class="wapper-box-box4-ul-li-text1 box5-ul-li-text1"><span>上海</span><span>查看岗位<em></em></span>
+</div>
+<div class="wapper-box-box4-ul-li-text2 box5-ul-li-text2">SHANGHAI</div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box4-ul-li box5-ul-li">
+<a class="wapper-box-box4-ul-li-a show-animate-item box5-ul-li-a" href="javascript:;" target="_blank" :href="beijing">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/location.png" alt="北京" crossorigin="anonymous">
+<div class="wapper-box-box4-ul-li-text box5-ul-li-text">
+<div class="wapper-box-box4-ul-li-text1 box5-ul-li-text1"><span>北京</span><span>查看岗位<em></em></span>
+</div>
+<div class="wapper-box-box4-ul-li-text2 box5-ul-li-text2">BEIJING</div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box4-ul-li box5-ul-li">
+<a class="wapper-box-box4-ul-li-a show-animate-item box5-ul-li-a" href="javascript:;" target="_blank" :href="chengdu">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/location.png" alt="成都" crossorigin="anonymous">
+<div class="wapper-box-box4-ul-li-text box5-ul-li-text">
+<div class="wapper-box-box4-ul-li-text1 box5-ul-li-text1"><span>成都</span><span>查看岗位<em></em></span>
+</div>
+<div class="wapper-box-box4-ul-li-text2 box5-ul-li-text2">CHENGDU</div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box4-ul-li box5-ul-li">
+<a class="wapper-box-box4-ul-li-a show-animate-item box5-ul-li-a" href="javascript:;" target="_blank" :href="chinese_taibei">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/location.png" alt="中国台北" crossorigin="anonymous">
+<div class="wapper-box-box4-ul-li-text box5-ul-li-text">
+<div class="wapper-box-box4-ul-li-text1 box5-ul-li-text1"><span>中国台北</span><span>查看岗位<em></em></span>
+</div>
+<div class="wapper-box-box4-ul-li-text2 box5-ul-li-text2">TAIPEI，CHINA</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<ul class="wapper-box-box4-ul">
+<li class="wapper-box-box4-ul-li">
+<a class="wapper-box-box4-ul-li-a show-animate-item" href="javascript:;" target="_blank" :href="singapore">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/location.png" alt="新加坡" crossorigin="anonymous">
+<div class="wapper-box-box4-ul-li-text">
+<div class="wapper-box-box4-ul-li-text1"><span>新加坡</span><span>查看岗位<em></em></span>
+</div>
+<div class="wapper-box-box4-ul-li-text2">SINGAPORE</div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box4-ul-li">
+<a class="wapper-box-box4-ul-li-a show-animate-item" href="javascript:;" target="_blank" :href="seoul">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/location.png" alt="韩国首尔" crossorigin="anonymous">
+<div class="wapper-box-box4-ul-li-text">
+<div class="wapper-box-box4-ul-li-text1"><span>韩国首尔</span><span>查看岗位<em></em></span>
+</div>
+<div class="wapper-box-box4-ul-li-text2">SEOUL, SOUTH KOREA</div>
+</div>
+</a>
+</li>
+<li class="wapper-box-box4-ul-li">
+<a class="wapper-box-box4-ul-li-a show-animate-item" href="javascript:;" target="_blank" :href="sanfrancisco">
+<img src="https://lilithimage.lilithcdn.com/jobs/index/pc/location.png" alt="美国旧金山" crossorigin="anonymous">
+<div class="wapper-box-box4-ul-li-text">
+<div class="wapper-box-box4-ul-li-text1">
+<span>美国旧金山</span><span>查看岗位<em></em></span>
+</div>
+<div class="wapper-box-box4-ul-li-text2">SAN FRANCISCO, USA</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="wapper-box-box5">
+<div class="background-top bg_need_show"></div>
+<div class="wapper-box-box5-title">
+<div class="wapper-box-box5-title-box">
+<div class="wapper-box-box5-title-box-text">
+<span class="text_need_move">为</span><span class="text_need_move">全</span><span class="text_need_move">世</span><span class="text_need_move">界</span><span class="text_need_move">玩</span><span class="text_need_move">家</span><span class="text_need_move">提</span><span class="text_need_move">供</span><span class="text_need_move">超</span><span class="text_need_move">越</span><span class="text_need_move">预</span><span class="text_need_move">期</span><span class="text_need_move">的</span><span class="text_need_move">游</span><span class="text_need_move">戏</span><span class="text_need_move">体</span><span class="text_need_move">验</span>
+</div>
+</div>
+</div>
+<div class="wapper-box-box5-game">
+<div class="wapper-box-box5-game-content">
+<div class="wapper-box-box5-game-content-wrap">
+<div class="wapper-box-box5-game-content-wrap-content">
+<ul class="wapper-box-box5-game-content-wrap-content-list">
+<li @mouseover="fnGameHover(index)" v-for="(item,index) in game_list" class="wapper-box-box5-game-content-wrap-content-list-item clickable game_need_move" :class="[game_hover == index? 'active':'',game_hover >= index ? 'active_after':'active_before']">
+<div class="box">
+<div class="wapper-box-box5-game-content-wrap-content-list-item-container">
+<div :class="'wapper-box-box5-game-content-wrap-content-list-item-container-inner inner'+index" :style="{ backgroundImage: 'url(' + item.bg + ')' }">
+<video webkit-playsinline="true" playsinline="true" x-webkit-airplay="true" x5-playsinline="true" autoplay="" x5-video-player-type="h5-page" muted loop="loop" :src="item.video" crossorigin="anonymous"></video>
+<a v-if="item.link" :href="item.link" target="_blank" style="width:100%;height:100%;position:absolute;display:block;"></a>
+</div>
+</div>
+<div class="wapper-box-box5-game-content-wrap-content-list-item-show">
+<em :style="{ backgroundImage: 'url(' + item.logo + ')' }"></em>
+<p class="game-name"><span>{{item.title}}</span></p>
+<p class="game-slogan" v-html="item.intro"></p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wapper-box-box6">
+<div class="wapper-box-box6-part1"></div>
+<div class="wapper-box-box6-part2"></div>
+<div class="wapper-box-box6-part3"></div>
+<div class="wapper-box-box6-bg opacity-show"></div>
+<div class="wapper-box-box6-title texttext">
+<div class="wapper-box-box6-title-box">
+<div class="wapper-box-box6-title-box-text text1">
+<span class="text_need_move">工</span><span class="text_need_move">作</span><span class="text_need_move">在</span><span class="text_need_move">莉</span><span class="text_need_move">莉</span><span class="text_need_move">丝</span>
+</div>
+<div class="wapper-box-box6-title-box-text text2 text_need_move">
+<span class="text_need_move">W</span><span class="text_need_move">o</span><span class="text_need_move">r</span><span class="text_need_move">k</span><span class="text_need_move">i</span><span class="text_need_move">n</span><span class="text_need_move">g</span> <span class="text_need_move">a</span><span class="text_need_move">t</span> <span class="text_need_move">L</span><span class="text_need_move">i</span><span class="text_need_move">l</span><span class="text_need_move">i</span><span class="text_need_move">t</span><span class="text_need_move">h</span>
+</div>
+</div>
+</div>
+<div class="wapper-box-box6-line">
+</div>
+<div class="wapper-box-box6-environment">
+<div class="wapper-box-box6-environment-word">
+<div class="wapper-box-box6-environment-word-box">
+<div class="wapper-box-box6-environment-word-box-text text_need_move1"></div>
+</div>
+</div>
+<div class="wapper-box-box6-environment-icon icon_need_show1"></div>
+<ul class="wapper-box-box6-environment-ul">
+<li class="wapper-box-box6-environment-ul-li show-animate-item" v-for="(item,index) in environment_list" data-iconshow="1">
+<img alt="" :src="item.img" crossorigin="anonymous">
+</li>
+</ul>
+</div>
+<div class="wapper-box-box6-benefit">
+<div class="wapper-box-box6-benefit-word">
+<div class="wapper-box-box6-benefit-word-box">
+<div class="wapper-box-box6-benefit-word-box-text text_need_move1"></div>
+</div>
+</div>
+<div class="wapper-box-box6-benefit-icon icon_need_show2"></div>
+<ul class="wapper-box-box6-benefit-ul">
+<li v-for="(item,index) in benefit_list" :class="'wapper-box-box6-benefit-ul-li h'+ (item.height) +'  show-animate-item'" data-iconshow="2">
+<img :alt="item.title" :src="item.img" crossorigin="anonymous">
+<div class="text">
+<div class="name pic" :class="[item.is_black == true? 'black': '']">{{item.title}}
+</div>
+<div class="name hover">{{item.title}}</div>
+<div class="intro">
+{{item.intro}}
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="wapper-box-box6-show-role bottom_to_top"></div>
+<div class="wapper-box-box6-show-line line1 line-animate-item"></div>
+</div>
+<div class="wapper-box-box7">
+<div class="wapper-box-box7-bg"></div>
+<div class="wapper-box-box7-title">
+<div class="wapper-box-box7-title-box">
+<div class="wapper-box-box7-title-box-text text1">
+<span class="text_need_move">关</span><span class="text_need_move">注</span><span class="text_need_move">我</span><span class="text_need_move">们</span>
+</div>
+<div class="wapper-box-box7-title-box-text text2 ">
+<span class="text_need_move">F</span><span class="text_need_move">o</span><span class="text_need_move">l</span><span class="text_need_move">l</span><span class="text_need_move">o</span><span class="text_need_move">w</span> <span class="text_need_move">U</span><span class="text_need_move">s</span>
+</div>
+</div>
+</div>
+<div class="wapper-box-box7-line"></div>
+<ul class="wapper-box-box7-ul">
+<li class="wapper-box-box7-ul-li">
+<span>微信公众号</span>
+</li>
+<li class="wapper-box-box7-ul-li">
+<span>bilibili</span>
+</li>
+<li class="wapper-box-box7-ul-li">
+<span>领英</span>
+</li>
+<li class="wapper-box-box7-ul-li">
+<span>小红书</span>
+</li>
+</ul>
+</div>
+<div class="wapper-box-box8">
+<div class="wapper-box-box8-foot">
+<img class="wapper-box-box8-foot-logo" src="./images/lilith-logo.png" alt="lilithgames" />
+<div class="wapper-box-box8-foot-link">
+<a href="https://www.lilith.com/privacy">隐私协议   |</a>
+<a href="https://www.lilith.com/termofservice">   服务条款   |</a>
+<a href="https://www.lilith.com/integrity">   廉正合规   |</a>
+<a href="https://www.lilith.com/childsafety">   儿童信息保护指引   |</a>
+<a href="https://www.lilith.com/growth">   成长守护平台</a>
+</div>
+<div class="wapper-box-box8-foot-text cursor">上海莉莉丝网络科技有限公司 上海市嘉定区银翔路655号1幢11层1116室</div>
+<a class="wapper-box-box8-foot-text " href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202005078" target="blank">
+<img class="police" alt="police.png" src="./images/police.png" /><span>沪公网安备
+31011202005078号</span></a>
+<a class="wapper-box-box8-foot-text" href="https://beian.miit.gov.cn/" target="blank">沪ICP备15032795号</a>
+<div class="wapper-box-box8-foot-text">增值电信业务经营许可证：沪B2-20160037</div>
+<div class="wapper-box-box8-foot-text">违规信息举报电话/客服电话：028-65231887</div>
+<div class="wapper-box-box8-foot-text">未成年人保护专项服务邮箱：childsafety@lilith.com</div>
+<div class="wapper-box-box8-foot-text">
+<a href="http://www.shjbzx.cn/" target="blank">
+<img class="jubao" alt="jubao_b.png" src="./images/jubao_b.png" />
+</a>
+<a href="https://www.12377.cn/" target="blank">
+<img class="jubao" src="./images/jubao.png" alt="jubao.png" />
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="./js/scripts/jquery-1.11.3.min.js"></script>
+<script src="./js/preload.js"></script>
+<script src="./js/index.js?version=20240906144763"></script>
+<script src="./js/scripts/require.js" data-main="./js/main_index.js"></script>
+<script type="text/javascript">requirejs.config({urlArgs:'version=20240906144763' 
+ })
+</script>
+</body>
+</html>

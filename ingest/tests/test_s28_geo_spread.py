@@ -217,11 +217,15 @@ class TestWorkdayNonCn:
 class TestDispatcherRouting:
     def test_geo_scope_accepting_set(self):
         # S30 RE wave: +smartrecruiters/trakstar/icims/paycom/teamtailor
+        # S31: +ssrpage/mokahr/personio/tribepad/trinethire/longi/
+        # infold (the wave classes) + j2w (the CATL wire needed the
+        # non_cn gate — a 58-row DE/HU board)
         assert site_boards._ADAPTER_GEO_SCOPE == {
             "greenhouse", "ashby", "lever", "workable",
             "feishuhire", "adp", "paylocity",
             "smartrecruiters", "trakstar", "icims", "paycom",
-            "teamtailor"}
+            "teamtailor", "ssrpage", "mokahr", "personio", "tribepad",
+            "trinethire", "longi", "infold", "j2w"}
 
     def test_unknown_kind_ignores_flag(self, monkeypatch):
         # a kind NOT in the set must never receive geo_scope (the

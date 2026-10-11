@@ -1,0 +1,201 @@
+heckout-messages" class="messages" data-bind="visible: isVisible(), click: removeAll">
+    <!-- ko foreach: messageContainer.getErrorMessages() --><!--/ko-->
+    <!-- ko foreach: messageContainer.getSuccessMessages() --><!--/ko-->
+</div>
+<!-- /ko -->
+        <!--/ko-->
+        <!-- ko foreach: getRegion('before') --><!-- /ko -->
+        <div class="block-content" aria-labelledby="block-customer-login-heading">
+            <form class="form form-login" method="post" data-bind="event: {submit: login }" id="login-form">
+                <div class="fieldset login" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}" data-hasrequired="* Required Fields">
+                    <div class="field email required">
+                        <label class="label" for="customer-email"><span data-bind="i18n: 'Email Address'">Email Address</span></label>
+                        <div class="control">
+                            <input name="username" id="customer-email" type="email" class="input-text" data-mage-init="{&quot;mage/trim-input&quot;:{}}" data-bind="attr: {autocomplete: autocomplete}" data-validate="{required:true, 'validate-email':true}" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="field password required">
+                        <label for="pass" class="label"><span data-bind="i18n: 'Password'">Password</span></label>
+                        <div class="control">
+                            <input name="password" type="password" class="input-text" id="pass" data-bind="attr: {autocomplete: autocomplete}" data-validate="{required:true}" autocomplete="off">
+                        </div>
+                    </div>
+                    <!-- ko foreach: getRegion('additional-login-form-fields') -->
+                    <!-- ko template: getTemplate() -->
+
+<!-- ko if: (isRequired() && getIsVisible())--><!-- /ko -->
+<!-- /ko -->
+                    <!-- /ko -->
+                    <div class="actions-toolbar">
+                        
+                        <div class="primary">
+                            <button type="submit" class="action action-login secondary" name="send" id="send2">
+                                <span data-bind="i18n: 'Sign In'">Sign In</span>
+                            </button>
+                        </div>
+                        <div class="secondary">
+                            <a class="action" data-bind="attr: {href: forgotPasswordUrl}" href="https://amcrest.com/customer/account/forgotpassword/">
+                                <span data-bind="i18n: 'Forgot Your Password?'">Forgot Your Password?</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /ko -->
+    
+</div>
+
+
+
+
+<!-- Yotpo - Add body class -->
+
+<!--/ Yotpo - Add body class -->
+<!-- Yotpo - Widget Script -->
+
+<!--/ Yotpo - Widget Script -->
+    <div class="job-detail jobpost_details">
+        <div class="jobpost_details_left">
+            <h2>NetSuite Developer</h2>
+            <h4><span>Location</span>: Houston,Texas</h4>
+            <h4><span>Job Code</span>: 002</h4>
+            <h4><span># of Openings</span>: 1</h4>
+            <a href="https://amcrest.com/careers/index/detail/id/2#jobpost_details">Apply</a>
+        </div>
+        <div class="jobpost_details_right">
+            <h2>NetSuite Developer</h2>
+            <p><span>The NetSuite Developer will design and implement configurations, customizations, and integrations for supporting the continued growth of our business processes. An ideal candidate will need to be self-motivated, capable of working with limited direction, and adaptable enough to adjust to changing priorities.</span></p>
+<p><span>Essential duties and responsibilities include, but are not limited to:</span></p>
+<ul>
+<li><span>Design, develop, test, deploy, and maintain custom solutions</span></li>
+<li><span>Integrating third party applications as needed</span></li>
+<li><span>Be the primary point of contact and manage all NetSuite support cases</span></li>
+<li><span>Support company analysis by building searches, reports, KPIs, and dashboards</span></li>
+<li><span>Manage roles and permissions</span></li>
+<li><span>Maintain custom forms</span></li>
+<li><span>Collaborate with users to support their optimized use of NetSuite</span></li>
+<li><span>Experience with designing and developing web based solutions</span></li>
+<li><span>Ability to troubleshoot major/minor technical incidents</span></li>
+<li><span>Ability to work on multiple projects simultaneously, keep momentum on each and manage project due dates</span></li>
+</ul>
+<p><span>Preferred skills, education, and experience are:</span></p>
+<ul>
+<li><span>Bachelor’s degree in relevant discipline is preferred</span></li>
+<li><span>Minimum of 1-2 years NetSuite experience</span></li>
+<li><span>Strong analytical, problem-solving, organizational, interpersonal, and communicative skills</span></li>
+<li><span>Proficiency writing object-oriented JavaScript and PL/SQL</span></li>
+<li><span>Ability to automate business / ERP processes</span></li>
+<li><span>Direct experience with NetSuite preferred including practical knowledge of SuiteFlow, SuiteScript, and SuiteAnalytics</span></li>
+<li><span>Prior financial/accounting experience specifically related to auditing GL Impact as well as P&amp;L reports in NetSuite.</span></li>
+<li><span>Prior experience implementing company processes and workflows to NetSuite, or migrating to NetSuite from another ERP.</span></li>
+<li><span>Meticulous attention to detail</span></li>
+</ul>
+<p><span><strong>About Amcrest Industries&nbsp;LLC:</strong></span></p>
+<p><span>Amcrest is one of the most popular brands of IP cameras in the world. These are cameras you connect to your internet router and, with a little bit of configuration, you can see what's going on at that location from anywhere! Set up a Amcrest&nbsp;camera in your home or business, and you can watch it from anywhere in the world on a PC, Mac, iPhone, or Android. Your Amcrest&nbsp;camera can alert you when it detects motion, records video, and can even be panned and tilted remotely from anywhere.</span></p>
+<p><span>People use Amcrest&nbsp;cameras to keep an eye on their homes, kids, pets, elderly parents, restaurants, stores, cattle ranches, and more … we learn about new use cases all the time!</span></p>        </div>
+    </div>
+<div id="jobpost_details" class="jobpost_details application-form">
+            <div class="jobpost_details_left">
+            <h2>NetSuite Developer</h2>
+            <h4><span>Location</span>: Houston,Texas</h4>
+            <h4><span># of Openings</span>: 1</h4>
+        </div>
+        <div class="jobpost_details_right_form">
+            <h2>1. Your Information</h2>
+            
+            
+            <form class="form" action="https://amcrest.com/careers/index/applypost/id/2/" id="job-application-from" method="post" name="jobpostform" enctype="multipart/form-data" novalidate="novalidate">
+                                    
+                <h5>Save Time</h5>
+                <p>Use your resume or Linkdin profile to fill in many of the fields on this application.</p>
+                <div class="field required upload_linkdin">
+                    <label class="label uploadbutton" for="cv">Upload Resume</label>
+                    <div class="control">
+                        <div class="fileUpload ">
+                            <input type="file" name="cv" id="cv" data-validate="{&quot;required&quot;:true}" placeholder="" class="input-text upload inputfile" aria-required="true">
+                        </div>
+                    </div>
+                </div>
+                <h5>Personal Information</h5>
+                <div class="field required">
+                    <div class="control">
+                        <label for="first_name" class="holder">First Name <em>*</em> </label>
+                        <input id="firstname" type="text" name="first_name" value="" data-validate="{&quot;required&quot;:true}" placeholder="" class="input-text" aria-required="true">
+                    </div>
+                </div>
+                <div class="field required">
+                    <div class="control">
+                        <label for="last_name" class="holder">Last Name <em>*</em> </label>
+                        <input id="lastname" type="text" name="last_name" value="" data-validate="{&quot;required&quot;:true}" placeholder="" class="input-text" aria-required="true">
+                    </div>
+                </div>
+                <div class="field required">
+                    <div class="control">
+                        <label for="email" class="holder">Email id <em>*</em> </label>
+                        <input id="applicant-email" type="text" name="email" value="" data-validate="{&quot;required&quot;:true, &quot;email&quot;:true}" placeholder="" class="input-text" aria-required="true">
+                    </div>
+                </div>
+                <div class="field required">
+                    <div class="control">
+                        <label for="phone" class="holder">Contact No <em>*</em> </label>
+                        <input id="phone" type="text" name="phone" value="" data-validate="{&quot;required&quot;:true, &quot;validate-number&quot;:true}" placeholder="" class="input-text" aria-required="true">
+                    </div>
+                </div>
+                <button type="submit" class="button">
+                    <span>Submit</span>
+                </button>
+                <a class="button" href="https://amcrest.com/careers/">Go Back</a>
+            </form>
+        </div>
+    </div></div><div class="home_content">
+    <ul class="list-items">
+        <li class="item">
+            <div class="icons">
+                <a href="https://amcrest.com/products.html/">
+                    <img src="https://amcrest.com/static/frontend/Amcrest/amcrest/en_US/images/icon_cart_big.svg" alt="Icon Cart" width="95" href="84">
+                </a>
+            </div>
+            <h2>Shop our Products</h2>
+            <p>We carry a large variety of security products for all your needs.</p>
+            <a href="https://amcrest.com/products.html/">See more</a>
+        </li>
+        <li class="item">
+            <div class="icons">
+                <a href="https://amcrest.zendesk.com/hc/en-us" target="blank">
+                    <img src="https://amcrest.com/static/frontend/Amcrest/amcrest/en_US/images/icon_chat.svg" alt="Icon Chat" width="81" href="73">
+                </a>
+            </div>
+            <h2>Need Help ?</h2>
+            <p>Check out our online knowledge base for support and assistance.</p>
+            <a href="https://amcrest.zendesk.com/hc/en-us" target="blank">Support Center</a>
+        </li>
+        <li class="item">
+            <div class="icons">
+                <a href="https://amcrest.com/videos/">
+                    <img src="https://amcrest.com/static/frontend/Amcrest/amcrest/en_US/images/icon_play.svg" alt="Icon Play" width="103" href="71">
+                </a>
+            </div>
+            <h2>Support Videos Library</h2>
+            <p>Need further assistance with your product? We're here to help!</p>
+            <!-- <a href="https://amcrest.com/contact/">Contact Us</a> -->
+            <a href="https://amcrest.com/videos/">Watch Now</a>
+        </li>
+    </ul>
+</div></div></main><footer class="page-footer"><div class="footer_top"><div class="newsletter_content">
+<div class="block newsletter">
+    <div class="title">
+        <h3>Join our Community</h3>
+    </div>
+    <div class="content">
+        <form class="form subscribe" novalidate="novalidate" action="https://www.aweber.com/scripts/addlead.pl" method="post" id="newsletter-validate-detail">
+            <div style="display: none;">
+                
+                
+                
+                
+
+                
+         

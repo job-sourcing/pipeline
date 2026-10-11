@@ -3477,11 +3477,16 @@ class TestJ2WAdapter:
         rows, meta = site_boards.list_board(
             "ats:j2w:careers.joysonsafety.com/search",
             country="United States")
-        # paginationLabel says 'Results 1 – 25 of 26' but the page holds
-        # 3 rows < 25 → the startrow walk stops after page 0
+        # S31 evolution: paginationLabel says 'Results 1 – 25 of 26' and
+        # the page holds 3 rows — the walk now VERIFIES by fetching the
+        # next page (a parsed total beats the short-page heuristic; the
+        # empty page is the stop marker. The 20/page CATL dialect made
+        # the old '< 25 = stop' rule false-gone on page 1.)
         assert calls == [
             "https://careers.joysonsafety.com/search?q=&sortColumn="
-            "referencedate&sortDirection=desc&startrow=0"]
+            "referencedate&sortDirection=desc&startrow=0",
+            "https://careers.joysonsafety.com/search?q=&sortColumn="
+            "referencedate&sortDirection=desc&startrow=3"]
         assert meta["rows"] == 2
         assert meta["complete"] is True
 
