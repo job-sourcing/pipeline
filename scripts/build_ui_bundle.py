@@ -131,6 +131,11 @@ _GEO_CANON = {
     "nl": "Netherlands", "es": "Spain", "ae": "United Arab Emirates",
     "au": "Australia", "my": "Malaysia", "th": "Thailand",
     "vn": "Vietnam", "br": "Brazil", "mx": "Mexico", "tr": "Turkey",
+    "SE": "Sweden", "se": "Sweden",
+    "BE": "Belgium", "be": "Belgium",
+    "NO": "Norway", "no": "Norway",
+    "AT": "Austria", "at": "Austria",
+    "DK": "Denmark", "dk": "Denmark",
 }
 
 
