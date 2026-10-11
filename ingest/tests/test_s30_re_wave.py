@@ -518,3 +518,24 @@ class TestS30WireRoster:
                     "minisous_us_fulltime", "psi_us_fulltime",
                     "a123_us_fulltime", "polestar_us_fulltime"):
             assert lbl in src, lbl
+
+
+class TestS30ConfigGuard:
+    def _cfg(self):
+        p = REPO_ROOT / "ingest/data/board_watch/config.json"
+        return json.loads(p.read_text(encoding="utf-8"))
+
+    def test_no_cross_company_li_variants_overlap(self):
+        # watch #111 failed exactly here: psi's 'Weichai America'
+        # collided with the weichai ADP watch — the cross-company join
+        # guard is load-bearing; pin it locally so it fails at test
+        # time, not on the runner.
+        from collections import defaultdict
+        w = self._cfg()["watches"]
+        own = defaultdict(set)
+        for x in w:
+            own[x["company"].lower()].add(x["label"])
+            for v in x.get("li_variants", []):
+                own[v.lower()].add(x["label"])
+        dups = {k: v for k, v in own.items() if len(v) > 1}
+        assert dups == {}, dups

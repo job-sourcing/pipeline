@@ -28,6 +28,13 @@ name: Board Watch
 
 on:
   workflow_dispatch:
+    inputs:
+      watch_details_max:
+        description: "max detail enrichments per watch leg (default 40)"
+        default: "40"
+      watch_budget_seconds:
+        description: "per-watch enrichment wall-clock budget (default 240)"
+        default: "240"
   schedule:
     - cron: "45 6 * * *"   # after the drain + backfill crons
 
@@ -86,6 +93,12 @@ jobs:
         run: pip install -e ingest
 
       - name: Run board watch (list → diff → enrich → alert)
+        # S30: dispatch inputs let a one-shot heavy drain run lift the
+        # per-leg caps (the 665-row MINISO initial injection would take
+        # ~2.5 days at the default 40/leg x 6 legs/day pace).
+        env:
+          WATCH_DETAILS_MAX: ${{ github.event.inputs.watch_details_max || '40' }}
+          WATCH_BUDGET_SECONDS: ${{ github.event.inputs.watch_budget_seconds || '240' }}
         run: python3 scripts/gha_board_watch.py
 
       - name: Checkpoint state to git (race-proof)
