@@ -1,3 +1,4 @@
+{"reqId": "75999", "title": "Sr Process Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-02-03", "startDate_first": "2026-02-03"}
 {"reqId": "79308", "title": "Administrative Assistant", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-06-29", "startDate_first": "2026-06-29"}
 {"reqId": "82074", "title": "Inside Sales Rep - Infrastructure Solutions Group", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-22", "startDate_first": "2026-09-22"}
 {"reqId": "82503", "title": "Forward Deployed Engineer", "first_seen": "2026-10-08", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-08", "startDate_first": "2026-10-08"}
@@ -8,7 +9,6 @@
 {"reqId": "80418", "title": "Head of AI Architecture", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-07-31", "startDate_first": "2026-07-31"}
 {"reqId": "74695", "title": "Sr Process Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-02-03", "startDate_first": "2026-02-03"}
 {"reqId": "75025", "title": "Sr New product introduction (NPI) engineering", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-02-19", "startDate_first": "2026-02-19"}
-{"reqId": "75999", "title": "Sr Process Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-02-03", "startDate_first": "2026-02-03"}
 {"reqId": "81438", "title": "Sr. Sales Engineer (East US)", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-11", "startDate_first": "2026-09-11"}
 {"reqId": "80921", "title": "Manager, Government Relations, NA State and Local", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-24", "startDate_first": "2026-08-24"}
 {"reqId": "82403", "title": "OEM Solution Architect - Florida", "first_seen": "2026-10-07", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-06", "startDate_first": "2026-10-06"}
@@ -67,21 +67,22 @@
 {"reqId": "78114", "title": "Network Solutions Architect, AI Factory Services", "first_seen": "2026-10-03", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-06-03", "startDate_first": "2026-06-03"}
 {"reqId": "79914", "title": "Channel Account Executive - CDWG State and Local/Federal", "first_seen": "2026-09-30", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-07-20", "startDate_first": "2026-07-20"}
 {"reqId": "82337", "title": "Product Manager, Storage Architecture & Ecosystem Strategy", "first_seen": "2026-10-06", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-05", "startDate_first": "2026-10-05"}
-{"reqId": "81419", "title": "Strategy Specialist - Global Future Leaders Program (2027)", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-06", "startDate_first": "2026-09-06"}
+{"reqId": "82475", "title": "Customer Quality Program Manager", "first_seen": "2026-10-10", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-09", "startDate_first": "2026-10-09"}
 {"reqId": "82533", "title": "Warehouse Sr. Coordinator", "first_seen": "2026-10-09", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-09", "startDate_first": "2026-10-09"}
+{"reqId": "82321", "title": "Senior Market Intelligence Analyst", "first_seen": "2026-10-06", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-05", "startDate_first": "2026-10-05"}
+{"reqId": "81853", "title": "Global Finance Talent Program", "first_seen": "2026-10-06", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-05", "startDate_first": "2026-10-05"}
+{"reqId": "79783", "title": "Senior Manager–AI Governance and Strategy", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-07-14", "startDate_first": "2026-07-14"}
+{"reqId": "81419", "title": "Strategy Specialist - Global Future Leaders Program (2027)", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-06", "startDate_first": "2026-09-06"}
 {"reqId": "82152", "title": "Go-to-Market & Strategy Manager", "first_seen": "2026-10-02", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
 {"reqId": "81634", "title": "Backend Engineer - AI Platform and Cloud Native Services", "first_seen": "2026-10-05", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-05", "startDate_first": "2026-10-05"}
 {"reqId": "80609", "title": "AI Enterprise Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-08", "startDate_first": "2026-08-08"}
 {"reqId": "78117", "title": "Web Front-End Developer", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-09", "startDate_first": "2026-09-09"}
-{"reqId": "82475", "title": "Customer Quality Program Manager", "first_seen": "2026-10-10", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-09", "startDate_first": "2026-10-09"}
 {"reqId": "81312", "title": "Sr. IT Auditor", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-01", "startDate_first": "2026-09-01"}
 {"reqId": "82255", "title": "Master Planning Specialist", "first_seen": "2026-10-03", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-02", "startDate_first": "2026-10-02"}
 {"reqId": "73151", "title": "Director, AI Engineering  - REMOTE", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-07-08", "startDate_first": "2026-07-08"}
 {"reqId": "81191", "title": "Advisor, AI Ethics", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-28", "startDate_first": "2026-08-28"}
 {"reqId": "82431", "title": "PC Sales Specialist I", "first_seen": "2026-10-08", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-08", "startDate_first": "2026-10-08"}
 {"reqId": "81433", "title": "Global Supply Chain Intern - Summer 2027", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-08", "startDate_first": "2026-09-08"}
-{"reqId": "81853", "title": "Global Finance Talent Program", "first_seen": "2026-10-06", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-05", "startDate_first": "2026-10-05"}
-{"reqId": "79783", "title": "Senior Manager–AI Governance and Strategy", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-07-14", "startDate_first": "2026-07-14"}
 {"reqId": "77412", "title": "AI Application Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-05-26", "startDate_first": "2026-05-26"}
 {"reqId": "74739", "title": "Procurement Project Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-23", "startDate_first": "2026-09-23"}
 {"reqId": "81474", "title": "AI Platform Engineer (PC Agentic Applications) - Global Future Leaders Program (2027)", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-08", "startDate_first": "2026-09-08"}
@@ -91,7 +92,6 @@
 {"reqId": "81645", "title": "Backend Engineer - AI Platform and Cloud Native Services", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-15", "startDate_first": "2026-09-15"}
 {"reqId": "82511", "title": "Corporate Strategic Accounts Sales Leader", "first_seen": "2026-10-09", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-09", "startDate_first": "2026-10-09"}
 {"reqId": "80820", "title": "Component Global Supply Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-25", "startDate_first": "2026-08-25"}
-{"reqId": "82321", "title": "Senior Market Intelligence Analyst", "first_seen": "2026-10-06", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-05", "startDate_first": "2026-10-05"}
 {"reqId": "80552", "title": "Sr. Logistics Specialist", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-10", "startDate_first": "2026-08-10"}
 {"reqId": "82512", "title": "Healthcare IDG Sales Leader", "first_seen": "2026-10-09", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-09", "startDate_first": "2026-10-09"}
 {"reqId": "80754", "title": "Director- Forward Deployed Engineering (Remote)", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-14", "startDate_first": "2026-08-14"}
@@ -159,14 +159,14 @@
 {"reqId": "80690", "title": "Senior Manager Logistics Operations, Mobile Business Group", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-17", "startDate_first": "2026-08-17"}
 {"reqId": "80280", "title": "AI Enterprise Engineering Lead", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-07-28", "startDate_first": "2026-07-28"}
 {"reqId": "76633", "title": "Global Head of Retail Solutions & AI", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-01", "startDate_first": "2026-09-01"}
-{"reqId": "79863", "title": "Senior Manager, E-commerce  Digital Transformation", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-03", "startDate_first": "2026-08-03"}
+{"reqId": "81082", "title": "Investment Analyst", "first_seen": "2026-10-01", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-27", "startDate_first": "2026-08-27"}
 {"reqId": "80219", "title": "Tools Development Engineer (REMOTE)", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-07-24", "startDate_first": "2026-07-24"}
+{"reqId": "79863", "title": "Senior Manager, E-commerce  Digital Transformation", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-03", "startDate_first": "2026-08-03"}
 {"reqId": "82230", "title": "AI Product Manager", "first_seen": "2026-10-06", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-05", "startDate_first": "2026-10-05"}
 {"reqId": "80304", "title": "Chief of Staff, AI Engineering - REMOTE", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-07-29", "startDate_first": "2026-07-29"}
 {"reqId": "82261", "title": "Junior Cloud Platform Engineer", "first_seen": "2026-10-02", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-02", "startDate_first": "2026-10-02"}
 {"reqId": "80939", "title": "Senior Talent & OD Specialist", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-20", "startDate_first": "2026-08-20"}
 {"reqId": "81926", "title": "Forward Deployed Engineer", "first_seen": "2026-10-01", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-30", "startDate_first": "2026-09-30"}
-{"reqId": "81082", "title": "Investment Analyst", "first_seen": "2026-10-01", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-27", "startDate_first": "2026-08-27"}
 {"reqId": "78816", "title": "Chief of Staff", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-06-11", "startDate_first": "2026-06-11"}
 {"reqId": "82041", "title": "Associate Firmware Engineer", "first_seen": "2026-09-30", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-29", "startDate_first": "2026-09-29"}
 {"reqId": "82418", "title": "Client Relationship Manager (Account Executive) - Michigan", "first_seen": "2026-10-08", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-07", "startDate_first": "2026-10-07"}
@@ -234,10 +234,10 @@
 {"reqId": "81233", "title": "Learning and Development Consultant", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-31", "startDate_first": "2026-08-31"}
 {"reqId": "80855", "title": "System Lead Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-20", "startDate_first": "2026-08-20"}
 {"reqId": "81815", "title": "ISG Field Specialist, Florida, Atlanta, Tennesse", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-15", "startDate_first": "2026-09-15"}
+{"reqId": "82194", "title": "Services Cost Management", "first_seen": "2026-10-06", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-06", "startDate_first": "2026-10-06"}
 {"reqId": "81887", "title": "Knowledge Management Data Analyst Intern", "first_seen": "2026-10-02", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
 {"reqId": "82262", "title": "Junior Data and AI-ML Engineer", "first_seen": "2026-10-02", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-02", "startDate_first": "2026-10-02"}
 {"reqId": "80920", "title": "AI Transformation Specialist - Global Future Leaders Program (2027)", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-06", "startDate_first": "2026-09-06"}
-{"reqId": "82194", "title": "Services Cost Management", "first_seen": "2026-10-06", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-10-06", "startDate_first": "2026-10-06"}
 {"reqId": "76010", "title": "Service Data Analyst -  Morrisville, NC", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-23", "startDate_first": "2026-09-23"}
 {"reqId": "81908", "title": "Client Relationship Manager - NYC, NJ", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-09-23", "startDate_first": "2026-09-23"}
 {"reqId": "80491", "title": "Solution Architect - NYC area", "first_seen": "2026-09-27", "last_seen": "2026-10-11", "last_postedOn": "", "last_startDate": "2026-08-05", "startDate_first": "2026-08-05"}
