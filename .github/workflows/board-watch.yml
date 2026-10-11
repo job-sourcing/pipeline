@@ -156,12 +156,16 @@ jobs:
         # (audit B4: a plain custom if: gets implicit success() &&)
         if: always() && env.WATCH_RESULT == 'backlog'
         run: |
+          # S30: propagate this run's dispatch inputs (a heavy-drain
+          # dispatch converts the WHOLE retrigger chain, not one leg).
+          DET="${{ github.event.inputs.watch_details_max || '40' }}"
+          BUD="${{ github.event.inputs.watch_budget_seconds || '240' }}"
           if curl -sf -X POST \
               -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
               -H "Accept: application/vnd.github+json" \
               "https://api.github.com/repos/${{ github.repository }}/actions/workflows/board-watch.yml/dispatches" \
-              -d '{"ref":"main"}'; then
-            echo "next watch leg dispatched (enrichment backlog remains)"
+              -d "{\"ref\":\"main\",\"inputs\":{\"watch_details_max\":\"$DET\",\"watch_budget_seconds\":\"$BUD\"}}"; then
+            echo "next watch leg dispatched (details_max=$DET budget=$BUD; backlog remains)"
           else
             echo "::warning::failed to dispatch next leg — daily cron resumes"
           fi
