@@ -1,0 +1,17 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+7639286868983384370,3D Character Modeler,Infold Games,Infold Games,Full time,Posted 151 Days Ago,,,"Singapore, Singapore | Los Angeles, United States of America",1,"Singapore, Singapore | Los Angeles, United States of America",false,,United States,,0,"1. Responsible for the high-fidelity facial modeling of main characters (protagonists, key NPCs), covering the entire pipeline including high-poly sculpting, topology optimization, UV unwrapping, and low-poly modeling.
+2. Create cinematic-level facial texture assets, including a full set of PBR textures such as Albedo, Normal, Roughness, and SSS Mask, achieving the highest quality standards for real-time rendering on consoles.
+3. Responsible for creating facial BlendShapes/Morph Targets. Collaborate with the rigging team to complete the FACS-standard expression library, ensuring natural and intersection-free facial deformation driven by motion capture.
+4. Work closely with the rigging and technical art teams to optimize model structures for motion capture and real-time rendering needs. Ensure muscle flow and topology edge loops meet the requirements for high-fidelity animation driving.
+5. Participate in establishing and maintaining project facial modeling specifications, topology standards, and asset delivery pipelines. Mentor character modelers within the team.
+6. Drive the iteration of facial assets to meet the project's quality goals.
+
+Requirements:
+1. 6+ years of 3D character modeling experience in the gaming or film/television industry, with at least 4 years of in-depth experience specifically in facial modeling.
+2. Relevant experience in AAA console/PC games or film/television projects of equivalent quality.
+3. Proficient in high-fidelity facial sculpting using ZBrush, with a deep understanding of human facial anatomy (bones, muscles, fat layers, and skin micro-details).
+4. Proficient in Maya/3ds Max, capable of independently completing facial low-poly topology optimization that meets animation driving requirements.
+5. Proficient in texture painting tools such as Substance Painter/Mari, with the ability to create complete PBR textures for realistic skin.
+6. Familiar with MetaHuman or equivalent level facial asset production standards, with experience in creating BlendShape/FACS expression libraries.
+7. Familiar with mainstream real-time rendering engines (UE5 preferred), and understand the technical requirements of next-generation rendering pipelines for facial assets.
+8. Excellent aesthetic sensibility, with the ability to accurately control the temperament and expressiveness of character faces between highly realistic and stylized art directions.",2396,https://career.infoldgames.com/EN/job/7639286868983384370,,https://www.linkedin.com/jobs/view/4413879564,2026-10-09,200,Over 200 applicants,,matched,titleSearchFallback,2026-10-11,2026-10-11T11:45:04,2026-10-11,,2,startDate+linkedin,true,0,,,,,,2026-10-09,,true,,,,,,

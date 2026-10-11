@@ -1,0 +1,163 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+infrastructure-engineer,Infrastructure Engineer,SphereEx,SphereEx,,,,,See posting,1,See posting,false,,,,0,"component=""View"">Infrastructure Engineer
+
+Job
+Description
+
+Participate in the design, development and
+maintenance of Apache ShardingSphere.
+
+Continually improve the architecture, extensibility,
+availability and performance of ShardingSphere.
+
+Proactively solve key issues and technological
+problems in the system.
+
+Engage in the building of a product quality
+assurance system, improving automated test coverage
+such as unit test and integration test.
+
+Follow the Apache Way, and proactively engage in
+promoting open source and contributing to building
+the open source community.
+
+Job
+Requirements
+
+Bachelor's degree or above in computer science,
+software engineering or similar relevant field.
+
+In-depth knowledge of Java, previous working
+experience in IO and concurrent programming, and
+hands-on experience in MySQL/ PostgreSQL database,
+and Linux.
+
+Prefer clean code and can perform ShardingSphere
+development standards.
+
+An active self-starter, self-motivated and
+responsible, with excellent teamwork skills and
+ability to work in a fast paced environment.
+
+Knowledgeable about ShardingSphere, having an active
+GitHub account or personal blog, having experience
+with community or open source projects are
+considered a plus.
+
+Basic written skills in English.",1261,https://www.sphere-ex.com/about/,,,,,,,not_checked,,2026-10-11,,2026-10-11,,,,true,0,,,,,,,,,,,,,,
+overseas-technical-operations,Overseas Technical Operations,SphereEx,SphereEx,,,,,See posting,1,See posting,false,,,,0,"component=""View"">Overseas Technical Operations
+.sphere-ex-1kkr94r {
+color: #fff;
+padding: 2px;
+-webkit-transition: all .3s cubic-bezier(.4, 0, .2, 1);
+transition: all .3s cubic-bezier(.4, 0, .2, 1);
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+@media (min-width: 992px) {
+.sphere-ex-1kkr94r {
+color: #6B6D7A;
+}
+}
+
+.sphere-ex-5hllqb {
+height: 0;
+-webkit-transition: all .3s cubic-bezier(.4, 0, .2, 1);
+transition: all .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.sphere-ex-d7pauo {
+padding-bottom: 40px;
+}
+
+.sphere-ex-1y2nmfn {
+display: grid;
+grid-template-columns:repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 992px) {
+.sphere-ex-1y2nmfn {
+grid-template-columns:repeat(2, minmax(0, 1fr));
+grid-gap: 64px;
+}
+}
+.sphere-ex-yzp189 {
+display: grid;
+grid-template-columns:repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 992px) {
+.sphere-ex-yzp189 {
+grid-template-columns:repeat(2, minmax(0, 1fr));
+grid-gap: 64px;
+}
+}
+
+.sphere-ex-u5e12e {
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: #fff;
+margin: 24px 0;
+}
+@media (min-width: 992px) {
+.sphere-ex-u5e12e {
+margin: 0 0 24px;
+}
+}
+Job
+Description
+
+.sphere-ex-hzxale {
+margin-bottom: 24px;
+color: #fff;
+line-height: 24px;
+}
+
+Responsible for building the company's overseas
+technical influence, and continuously improving the
+company's image and positioning in open source
+communities.
+
+Engage in discussions of overseas open source
+communities, organizations and forums, laying the
+foundation for cooperation. Able to assist users in
+solving technical issues and answering their
+technical questions.
+
+Cooperate with the engineering and business teams,
+to understand product technical advantages and
+characteristics, and assist overseas promotion and
+open source community building.
+
+.sphere-ex-131qz11 {
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: #fff;
+margin: 0 0 24px;
+}
+Job
+Requirements
+
+3+ years of experience in software
+development,software architecture, or consulting,
+etc., with proven knowledge of databases,
+distributed databases, cloud, cloud native and big
+data.
+
+Strong understanding of the current technical
+trends,and be able to understand the future industry
+direction and evolution.
+
+Logical, strong writing skills.
+Self-starter, good team player and excellent
+communication skills.
+
+English native speaker or native speaker level.
+Passionate about open source, preferably an active
+contributor to an open source project &
+experienced in the development or operation of open
+source projects or communities.
+
+Previous overseas working experience is preferred.",2616,https://www.sphere-ex.com/about/,,,,,,,not_checked,,2026-10-11,,2026-10-11,,,,true,0,,,,,,,,,,,,,,
