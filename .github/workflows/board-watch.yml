@@ -111,14 +111,19 @@ jobs:
         if: always()
         run: |
           set -e
-          # 1) rescue ONLY the runner-owned state files — NEVER config.json
-          #    (audit B2, P1: the wholesale `cp -r` of the whole dir used to
-          #    restore a stale config.json over a human edit that landed on
-          #    main mid-leg — the checkpoint commit then clobbered it. Config
-          #    is data: it comes from the freshly-reset tree = latest main.)
+          # 1) rescue ONLY the state files THIS RUN TOUCHED — never
+          #    config.json (audit B2, P1), and never the files of boards
+          #    this run SKIPPED (S32 race: a tag-filtered lane's stale
+          #    checkout must not clobber a concurrent lane's newer state
+          #    for those boards — watch #123 overwrote li-watch #2's
+          #    wyze state this way).
           mkdir -p /tmp/watch_state
-          for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
-            cp ingest/data/board_watch/$pat /tmp/watch_state/ 2>/dev/null || true
+          FILES=$(git status --porcelain ingest/data/board_watch/ \
+            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl)$' || true)
+          echo "checkpointing: ${FILES:-<none>}"
+          for f in $FILES; do
+            mkdir -p "/tmp/watch_state/$(dirname $f)"
+            cp "$f" "/tmp/watch_state/$f" 2>/dev/null || true
           done
           # 2) race-proof re-commit on latest main (SKILL §A3 recipe)
           git config user.name "board-watch-bot"
@@ -127,9 +132,10 @@ jobs:
           for i in 1 2 3; do
             git fetch origin || true
             git reset --hard origin/main
-            # restore ONLY the state files — config.json stays at latest main
-            for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
-              cp /tmp/watch_state/$pat ingest/data/board_watch/ 2>/dev/null || true
+            # restore ONLY the touched state files — config.json stays
+            # at latest main
+            for f in $FILES; do
+              cp "/tmp/watch_state/$f" "$f" 2>/dev/null || true
             done
             git add ingest/data/board_watch
             if git diff --cached --quiet; then

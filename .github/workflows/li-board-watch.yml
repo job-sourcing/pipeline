@@ -67,17 +67,26 @@ jobs:
         if: always()
         run: |
           set -e
+          # S32 race fix: checkpoint ONLY the files THIS run touched
+          # (git diff of the worktree) — a lane that SKIPPED boards
+          # (tag filter) must not overwrite a concurrent lane's newer
+          # state for those boards with its stale checkout version
+          # (watch #123 clobbered li-watch #2's wyze state this way).
           mkdir -p /tmp/watch_state
-          for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
-            cp ingest/data/board_watch/$pat /tmp/watch_state/ 2>/dev/null || true
+          FILES=$(git status --porcelain ingest/data/board_watch/ \
+            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl)$' || true)
+          echo "checkpointing: ${FILES:-<none>}"
+          for f in $FILES; do
+            mkdir -p "/tmp/watch_state/$(dirname $f)"
+            cp "$f" "/tmp/watch_state/$f" 2>/dev/null || true
           done
           git config user.name "board-watch-bot"
           git config user.email "actions@github.com"
           for i in 1 2 3; do
             git fetch origin || true
             git reset --hard origin/main
-            for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
-              cp /tmp/watch_state/$pat ingest/data/board_watch/ 2>/dev/null || true
+            for f in $FILES; do
+              cp "/tmp/watch_state/$f" "$f" 2>/dev/null || true
             done
             git add ingest/data/board_watch
             if git diff --cached --quiet; then
