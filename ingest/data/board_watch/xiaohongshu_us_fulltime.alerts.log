@@ -34,3 +34,6 @@ board-watch xiaohongshu_us_fulltime EGRESS-BLOCKED: list fetch unreachable from 
 board-watch xiaohongshu_us_fulltime EGRESS-BLOCKED: list fetch unreachable from THIS egress (declared egress_restricted='gha_us'; URLError: <urlopen error _ssl.c:993: The handshake operation timed out>) — EGRESS-BLOCKED, state untouched; streak 1/14
 (2026-10-08T14:46:58)
 
+board-watch xiaohongshu_us_fulltime EGRESS-BLOCKED: list fetch unreachable from THIS egress (declared egress_restricted='gha_us'; URLError: <urlopen error _ssl.c:993: The handshake operation timed out>) — EGRESS-BLOCKED, state untouched; streak 1/14
+(2026-10-12T02:28:55)
+
