@@ -275,3 +275,32 @@ class TestVariantGuardIntegration:
         claim("ecoflow", "ecoflowus_us_fulltime")   # the real config
         with pytest.raises(SystemExit):
             claim("ecoflow", "licompany:ecoflow")   # a future contract
+
+
+class TestRateLimitBackoff:
+    """S32 (li-watch #1 on GHA): day-one burst 429s on the last boards
+    — the adapter backs off once (45s, monkeypatched) and retries the
+    page-0 request; mid-walk 429s (later pages) still fail loudly."""
+
+    def test_page0_429_retries_once_then_succeeds(self, monkeypatch):
+        sleeps = []
+        monkeypatch.setattr(
+            __import__("time"), "sleep", sleeps.append)
+        a = LinkedInCompanyAdapter("vesync", Config())
+        seq = [(429, "x", ""), (200, _page([_card("1")]), "")]
+
+        def fake_get(url, params):
+            return seq.pop(0) if seq else seq.append((999, "", "")) or \
+                (999, "", "")
+        a._get = fake_get
+        rows, status = a._walk_entity("3374179")
+        assert status == "tail" and len(rows) == 1
+        assert sleeps and sleeps[0] == 45
+
+    def test_persistent_429_still_raises(self, monkeypatch):
+        monkeypatch.setattr(__import__("time"), "sleep",
+                            lambda *_: None)
+        a = LinkedInCompanyAdapter("vesync", Config())
+        a._get = lambda url, params: (429, "x", "")
+        with pytest.raises(RuntimeError, match="HTTP 429"):
+            a._walk_entity("3374179")

@@ -11927,10 +11927,23 @@ class LinkedInCompanyAdapter:
         rows: list[dict] = []
         offset = 0
         for _page in range(10):            # 10 pages x ~10 cards cap
+            # S32 (li-watch #1): the GHA Azure day-one burst (~300
+            # req/run-IP) tripped 429s on the LAST boards — a short
+            # backoff + retry converts the transient burst-limit into
+            # a delay instead of a failed board (state untouched was
+            # the correct fail-safe, but retrying is cheaper than a
+            # red run + manual re-dispatch).
             code, body, loc_hdr = self._get(_LI_GUEST_SEARCH, {
                 "f_C": str(urn), "location": self.c.get(
                     "location", "United States"),
                 "f_TPR": "r2592000", "sortBy": "DD", "start": str(offset)})
+            if code == 429 and _page < 9 and offset == 0:
+                time.sleep(45)
+                code, body, loc_hdr = self._get(_LI_GUEST_SEARCH, {
+                    "f_C": str(urn), "location": self.c.get(
+                        "location", "United States"),
+                    "f_TPR": "r2592000", "sortBy": "DD",
+                    "start": str(offset)})
             if code != 200:
                 hint = f" (302 -> {loc_hdr[:60]})" if code in (301, 302) \
                     else ""
