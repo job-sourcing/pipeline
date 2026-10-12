@@ -4721,132 +4721,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6962,https://jobs.ashbyhq.com/airwallex/b9b4bd2b-9d0a-4e73-a92e-5fbf7f77f353,,,,,,,no_match,,2026-10-02,,2026-10-12,,,,true,0,,,,,Product,,,false,,,,,,
-7f8e4376-146e-49a5-8673-cc298552f6cc,"Senior Network Engineer, San Francisco",airwallex,airwallex,Full time,Posted 129 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-Corporate IT drives our IT support, IT engineering and business engineering functions at Airwallex. IT Engineering is the core team that drives our technology experiences from communications and video conferencing to managing our computers, applications, identity and access management. Network Operations builds our corporate network, supports our international access for our Airwallex staff all over the globe, and ensures a reliable and stable experience for our remote and in-office needs. We design, build and run the systems and services our Airwallex team uses to build our product, serve our customers and run our business. We partner with every team in the business, from Finance to Engineering, People Operations and Support and solve problems and create solutions for the many challenges our teams face.
-
-What you’ll do
-
-As a Senior / Staff Network Engineer, you will define the global technical strategy, architecture, and roadmap for Airwallex’s enterprise and cloud network infrastructure. You will design and deploy highly secure, multi-region hybrid network patterns that bridge physical offices, data centers, and multi-cloud environments (AWS/Alibaba Cloud) at massive scale. Acting as a principal technical leader, you will champion infrastructure-as-code automation (Terraform, Ansible), optimize routing protocols for low-latency financial systems, and mentor engineers across our global infrastructure team.
-
-This role is based in Singapore, Sydney, Melbourne or San Francisco.
-
-Responsibilities:
-
-•
-Build the foundations of our new corporate network, and help design the team structure and size for the future
-
-•
-Design and build corporate network infrastructure for new Airwallex offices as we expand globally, and upgrade our existing portfolio
-
-•
-Design, implement, and maintain highly available and secure corporate network infrastructure (LAN, WAN, Wireless, VPN) across multiple global offices and regions.
-
-•
-Configure on-prem gateway/router/networking hardware globally, including mixed vendors in some locations
-
-•
-Manage global connectivity over international leased lines and domestic internet connections
-
-•
-Lead the configuration and troubleshooting of complex network devices, including routers, switches, firewalls, load balancers, and wireless access points.
-
-•
-Own CorpNet, and act as a first-responder or escalation point for complex network issues, running an incident through to completion and after-action reports.
-
-•
-Collaborate with cross-functional teams (e.g., CorpSec, ProdSec, Engineering, Product, IT Engineering, Workplace, etc.) to integrate network solutions and support business initiatives.
-
-•
-Work with IT Engineering, IT Support on troubleshooting network issues on endpoints, including basic IT operations support, building a core networking understanding among the team
-
-•
-Develop and maintain comprehensive network documentation, including diagrams, configurations, and operational procedures.
-
-•
-Evaluate and recommend new networking technologies and solutions to stay ahead of our business growth
-
-•
-Mentor, develop and coach other network engineers and staff, sharing knowledge and fostering skill development within the team – manage underperformers and attract talent
-
-•
-Participate in a global on-call rotation, providing primary response for corp networking issues in a follow-the-sun model.
-
-•
-Flexible scheduling (as needed) to support the business and team initiatives -- i.e. participate in network upgrades after-hours or weekend implementation work to minimise business disruption.
-
-Who you are
-
-We’re looking for people who meet the minimum qualifications for this role. The preferred qualifications are great to have, but are not mandatory.
-
-Minimum qualifications:
-
-•
-Senior-level experience with designing, implementing and maintaining Juniper and Palo Alto Networks vendor solutions
-
-•
-Demonstrated experience in a multi/mixed networking vendor environment (Juniper, Palo Alto, Cisco, Aruba, etc.) in a global company
-
-•
-Experience with networking solutions for mainland China and international connectivity
-
-•
-Strong fundamental understanding of wifi technology and endpoint engineering – hardware knowledge a plus (Juniper Mist, Cisco Meraki, Aruba, etc.)
-
-•
-Expert understanding of command-line configuration of networking hardware and vendors (JunOS, IOS, etc.)
-
-Preferred qualifications:
-
-•
-Strong knowledge of Palo Alto Networks GlobalProtect, Prisma/Prisma Cloud and core networking fundamentals
-
-•
-Managed or lead a team of network engineers – ideally at a startup, from early days to a large corporate footprint, you’ve seen the growth happen and know the problems that come with it
-
-•
-Bachelor’s degree in Information Technology, Computer Science, or a related field, 5+ years of relevant experience in a similar role.
-
-•
-Strong, demonstrated written and verbal English communication skills,
-
-•
-Understanding of common identity standards, including SAML, OAuth, SSO, etc.
-
-•
-Experience using and understanding of cloud infrastructure (AWS, GCP, etc.)
-
-•
-Understanding of RBAC, ABAC, PBAC, ACLs and common access management principles in security and corporate IT environments
-
-•
-Experience working in all SaaS-based systems and applications
-
-•
-Strong understanding of MDM systems (macOS, windows; kandji, JAMF, intune, etc.)
-
-•
-Ability to move fast and urgently, making correct decisions and assumptions – sometimes without all the information
-
-#Singapore #Sydney #Melbourne #SanFrancisco #SF
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7863,https://jobs.ashbyhq.com/airwallex/7f8e4376-146e-49a5-8673-cc298552f6cc,,,,,,,no_match,,2026-10-02,,2026-10-12,,,,true,0,,,,,Engineering,,,false,,,,,,
 d47d524c-9cf7-4a8f-9e67-704a38bff006,"Senior Product Manager, Identity & Authentication",airwallex,airwallex,Full time,Posted 60 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -11848,72 +11722,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5212,https://jobs.ashbyhq.com/airwallex/46586b3a-ab75-4f41-b51a-5cf34a7d598b,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
-5ac353b4-e2bb-4db4-b66b-edb0c2188abb,"Senior Software Engineer, Edge Team",Airwallex,airwallex,Full time,Posted 464 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the Team
-
-Tech Platform exists to provide reusable platform services so product and domain teams can move faster without rebuilding common infrastructure themselves. The clearest documented mission statement comes from Substrate: to provide modular traffic-management solutions for multi- data-center infrastructure, secure service communication, and adaptive request management so domain engineers can stay focused on business value. Taken together, this positions Tech Platform as a leverage team that improves engineering efficiency, standardisation, reliability, and developer experience across the organisation.
-
-About the Role
-
-We are looking for skilled Senior Software Engineers to help shape and evolve Airwallex’s edge infrastructure—you’ll architect and build the software foundations that power Airwallex’s global edge. You’ll write high‑quality code, design scalable services, and own end‑to‑end features that make our API gateway, CDN layer, DNS routing, and perimeter security smarter, faster, and more resilient.
-
-You’ll partner closely with product, platform, and security experts to translate real‑world requirements into clean, maintainable code—and see your work go live for millions of requests every day.
-
-Responsibilities
-
-•
-Next‑Gen Edge Services: Architect and ship new gateway and CDN features (think plugin‑driven routing, smart cache policies, dynamic purge APIs).
-
-•
-Security as Code: Build libraries and pipelines for rate‑limits, WAF/filter rules and bot‑detection, all embedded directly into our edge stack.
-
-•
-Self‑Service Tooling: Create CLI/plugins and lightweight frameworks so other teams register APIs, enforce policies, and preview traffic insights in seconds.
-
-•
-Rock‑Solid Reliability: Dive into metrics, pinpoint latency or fail‑over gaps, and deliver code‑level optimizations to keep every request fast and flawless.
-
-Minimum Qualifications
-
-•
-Bachelor’s degree or above in Computer Science, Engineering, or a related field.
-
-•
-5+ years of back‑end development experience, building large‑scale, high‑throughput services.
-
-•
-Proficient in one or more languages such as Java, Go, Python, or similar, with strong software‑design and system‑thinking skills.
-
-•
-Comfortable partnering across product, platform, and security teams; able to explain complex ideas clearly.
-
-Preferred Qualifications
-
-•
-3+ years designing and operating distributed, low‑latency systems (API gateway, cache, etc) or security‑focused development
-
-•
-Use data to identify performance or reliability bottlenecks and deliver targeted, code‑level improvements.
-
-•
-Thrive in a fast‑paced environment, take full ownership of your work, and continuously iterate based on feedback.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5058,https://jobs.ashbyhq.com/airwallex/5ac353b4-e2bb-4db4-b66b-edb0c2188abb,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
 5aed702c-10e5-4dac-bf8d-d9ee3f8b351e,"Sales Development Representative, EMEA",Airwallex,airwallex,Full time,Posted 86 Days Ago,,,UK - London,1,UK - London,false,,united kingdom,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -13982,90 +13790,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7636,https://jobs.ashbyhq.com/airwallex/da172780-d69c-4685-8112-239fe1a04616,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
-e0dc766a-3bb4-438f-b618-1e4d06de50df,"Staff Software Engineer, Tech Platform",Airwallex,airwallex,Full time,Posted 469 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the Team
-
-Airwallex is a pioneering fintech company breaking down financial barriers and enabling seamless global business. At its core, the Tech Platform Team drives the foundation of our technological excellence, building scalable, high-performance systems that power innovation worldwide.
-
-•
-Optimizing Global Traffic – Managing north-south and east-west API Gateways for seamless external and internal interactions.
-
-•
-Ensuring Fast, Reliable Connectivity – Building a robust global routing infrastructure that seamlessly balances regulatory compliance with a unified, high-performance user experience across regions.
-
-•
-Enhancing Search – Powering an intelligent search platform for fast, accurate information retrieval.
-
-•
-Orchestrating Notifications – Enabling efficient delivery of SMS, Email, Webhooks, and Push notifications.
-
-•
-Automating Workflows – Driving seamless workflow creation, scheduling, and execution.
-
-About the Role
-
-Be part of an elite team shaping cutting-edge infrastructure and redefining global fintech. If you thrive on solving complex challenges and building the future of technology, this is where you belong.
-
-As a member of our team, you'll have the opportunity to:
-
-•
-Build Impactful Infrastructure – Develop and refine a cutting-edge application infrastructure that eliminates common technical bottlenecks, reduces maintenance overhead for developers, and accelerates business innovation.
-
-•
-Solve Complex, High - Scale Challenges – Tackle intricate, organization-wide problems by leveraging the latest technologies, including reactive programming, Temporal, vector databases, distributed systems, and advanced gateway solutions.
-
-•
-Drive Strategic Technological Excellence – Conduct comprehensive evaluations of emerging solutions and guide the company’s long-term architectural decisions to ensure scalability, efficiency, and global resilience.
-
-At Tech Platform, you'll work on mission-critical systems, collaborate with top engineering talent, and leave a lasting impact on Airwallex’s global growth. If you're passionate about building transformative technology at scale, this is the team for you!
-
-Minimum Qualifications
-
-•
-Strong proficiency in backend programming languages such as Java, Go, Rust, Lua, or Python and their corresponding frameworks;
-
-•
-Infrastructure & Cloud Expertise: Familiarity with cloud services (AWS, GCP, Aliyun) and infrastructure management tools (Kubernetes, Docker, Istio)
-
-•
-Database & Storage Systems Expertise: Proven hands-on experience with PostgreSQL, Redis, Elasticsearch, and logical replication, with a deep understanding of performance optimization, scalability, and data consistency in distributed systems.
-
-•
-Traffic Management Expertise: Strong familiarity with NGINX, OpenResty, Envoy, APISIX, Kong, and Istio, with a solid understanding of traffic routing, load balancing, and API gateway management in high-scale distributed systems.
-
-•
-API Lifecycle & Security Expertise: Strong experience and deep understanding of API lifecycle management, from design to deprecation, along with expertise in API security best practices, including authentication, authorization, and threat mitigation.
-
-Preferred Qualifications
-
-•
-Performance Tuning Expertise: Hands-on experience optimizing API Gateway performance, including advanced profiling techniques such as CPU flame graphs to diagnose and enhance system efficiency.
-
-•
-Service Mesh Expertise: Hands-on experience managing traffic between Kubernetes pods using Istio, including traffic routing, load balancing, and resilience strategies within a service mesh architecture.
-
-•
-API Security Expertise: Hands-on experience in securing APIs, including mitigating threats such as DDoS attacks, SQL injection, and implementing mTLS (mutual TLS) and Data Loss Prevention (DLP) to ensure robust protection and compliance.
-
-•
-Open Source & Innovation Expertise: Stay up to date with the latest advancements in the open-source community, with the ability to evaluate, adopt, and introduce cutting-edge technologies to enhance Airwallex’s technology stack.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6450,https://jobs.ashbyhq.com/airwallex/e0dc766a-3bb4-438f-b618-1e4d06de50df,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
 e84e3221-4685-4247-b684-b08703dd9021,"Manager, Revenue Strategy, SG",Airwallex,airwallex,Full time,Posted 177 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,singapore,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -14730,132 +14454,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6574,https://jobs.ashbyhq.com/airwallex/13e7b414-e2f1-4d9d-b162-80eb7d5c18aa,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
-24be39f7-8a94-42c6-98c8-0a7a2a057242,"Senior Network Engineer, Singapore",Airwallex,airwallex,Full time,Posted 239 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-Corporate IT drives our IT support, IT engineering and business engineering functions at Airwallex. IT Engineering is the core team that drives our technology experiences from communications and video conferencing to managing our computers, applications, identity and access management. Network Operations builds our corporate network, supports our international access for our Airwallex staff all over the globe, and ensures a reliable and stable experience for our remote and in-office needs. We design, build and run the systems and services our Airwallex team uses to build our product, serve our customers and run our business. We partner with every team in the business, from Finance to Engineering, People Operations and Support and solve problems and create solutions for the many challenges our teams face.
-
-What you’ll do
-
-As a Senior / Staff Network Engineer, you will define the global technical strategy, architecture, and roadmap for Airwallex’s enterprise and cloud network infrastructure. You will design and deploy highly secure, multi-region hybrid network patterns that bridge physical offices, data centers, and multi-cloud environments (AWS/Alibaba Cloud) at massive scale. Acting as a principal technical leader, you will champion infrastructure-as-code automation (Terraform, Ansible), optimize routing protocols for low-latency financial systems, and mentor engineers across our global infrastructure team.
-
-This role is based in Singapore, Sydney, Melbourne or San Francisco.
-
-Responsibilities:
-
-•
-Build the foundations of our new corporate network, and help design the team structure and size for the future
-
-•
-Design and build corporate network infrastructure for new Airwallex offices as we expand globally, and upgrade our existing portfolio
-
-•
-Design, implement, and maintain highly available and secure corporate network infrastructure (LAN, WAN, Wireless, VPN) across multiple global offices and regions.
-
-•
-Configure on-prem gateway/router/networking hardware globally, including mixed vendors in some locations
-
-•
-Manage global connectivity over international leased lines and domestic internet connections
-
-•
-Lead the configuration and troubleshooting of complex network devices, including routers, switches, firewalls, load balancers, and wireless access points.
-
-•
-Own CorpNet, and act as a first-responder or escalation point for complex network issues, running an incident through to completion and after-action reports.
-
-•
-Collaborate with cross-functional teams (e.g., CorpSec, ProdSec, Engineering, Product, IT Engineering, Workplace, etc.) to integrate network solutions and support business initiatives.
-
-•
-Work with IT Engineering, IT Support on troubleshooting network issues on endpoints, including basic IT operations support, building a core networking understanding among the team
-
-•
-Develop and maintain comprehensive network documentation, including diagrams, configurations, and operational procedures.
-
-•
-Evaluate and recommend new networking technologies and solutions to stay ahead of our business growth
-
-•
-Mentor, develop and coach other network engineers and staff, sharing knowledge and fostering skill development within the team – manage underperformers and attract talent
-
-•
-Participate in a global on-call rotation, providing primary response for corp networking issues in a follow-the-sun model.
-
-•
-Flexible scheduling (as needed) to support the business and team initiatives -- i.e. participate in network upgrades after-hours or weekend implementation work to minimise business disruption.
-
-Who you are
-
-We’re looking for people who meet the minimum qualifications for this role. The preferred qualifications are great to have, but are not mandatory.
-
-Minimum qualifications:
-
-•
-Senior-level experience with designing, implementing and maintaining Juniper and Palo Alto Networks vendor solutions
-
-•
-Demonstrated experience in a multi/mixed networking vendor environment (Juniper, Palo Alto, Cisco, Aruba, etc.) in a global company
-
-•
-Experience with networking solutions for mainland China and international connectivity
-
-•
-Strong fundamental understanding of wifi technology and endpoint engineering – hardware knowledge a plus (Juniper Mist, Cisco Meraki, Aruba, etc.)
-
-•
-Expert understanding of command-line configuration of networking hardware and vendors (JunOS, IOS, etc.)
-
-Preferred qualifications:
-
-•
-Strong knowledge of Palo Alto Networks GlobalProtect, Prisma/Prisma Cloud and core networking fundamentals
-
-•
-Managed or lead a team of network engineers – ideally at a startup, from early days to a large corporate footprint, you’ve seen the growth happen and know the problems that come with it
-
-•
-Bachelor’s degree in Information Technology, Computer Science, or a related field, 5+ years of relevant experience in a similar role.
-
-•
-Strong, demonstrated written and verbal English communication skills,
-
-•
-Understanding of common identity standards, including SAML, OAuth, SSO, etc.
-
-•
-Experience using and understanding of cloud infrastructure (AWS, GCP, etc.)
-
-•
-Understanding of RBAC, ABAC, PBAC, ACLs and common access management principles in security and corporate IT environments
-
-•
-Experience working in all SaaS-based systems and applications
-
-•
-Strong understanding of MDM systems (macOS, windows; kandji, JAMF, intune, etc.)
-
-•
-Ability to move fast and urgently, making correct decisions and assumptions – sometimes without all the information
-
-#Singapore #Sydney #Melbourne #SanFrancisco #SF
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7863,https://jobs.ashbyhq.com/airwallex/24be39f7-8a94-42c6-98c8-0a7a2a057242,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
 24c8ee2d-0c18-43ff-ba00-47f772709dab,"Inbound Sales Representative, SME & Growth",Airwallex,airwallex,Full time,Posted 16 Days Ago,,,NZ - Auckland,1,NZ - Auckland,false,,new zealand,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -16825,132 +16423,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4295,https://jobs.ashbyhq.com/airwallex/c1f4b704-80db-42d3-bd8f-5d8ad972ab5d,,https://www.linkedin.com/jobs/view/4374537455,2026-09-26,200,Over 200 applicants,,matched,,2026-10-07,2026-10-07T02:48:26,2026-10-12,,16,startDate+linkedin,true,0,,,,,,2026-09-26,,true,,,,,,
-ca3eac30-f2d5-485d-8ad6-9574f1ab3b63,"Senior Network Engineer, Australia",Airwallex,airwallex,Full time,Posted 239 Days Ago,,,AU - Sydney,2,"AU - Sydney; {'location': 'AU - Melbourne', 'address': {'postalAddress': {'addressRegion': 'Victoria', 'addressCountry': 'Australia', 'addressLocality': 'Melbourne'}}}",false,,australia,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-Corporate IT drives our IT support, IT engineering and business engineering functions at Airwallex. IT Engineering is the core team that drives our technology experiences from communications and video conferencing to managing our computers, applications, identity and access management. Network Operations builds our corporate network, supports our international access for our Airwallex staff all over the globe, and ensures a reliable and stable experience for our remote and in-office needs. We design, build and run the systems and services our Airwallex team uses to build our product, serve our customers and run our business. We partner with every team in the business, from Finance to Engineering, People Operations and Support and solve problems and create solutions for the many challenges our teams face.
-
-What you’ll do
-
-As a Senior / Staff Network Engineer, you will define the global technical strategy, architecture, and roadmap for Airwallex’s enterprise and cloud network infrastructure. You will design and deploy highly secure, multi-region hybrid network patterns that bridge physical offices, data centers, and multi-cloud environments (AWS/Alibaba Cloud) at massive scale. Acting as a principal technical leader, you will champion infrastructure-as-code automation (Terraform, Ansible), optimize routing protocols for low-latency financial systems, and mentor engineers across our global infrastructure team.
-
-This role is based in Singapore, Sydney, Melbourne or San Francisco.
-
-Responsibilities:
-
-•
-Build the foundations of our new corporate network, and help design the team structure and size for the future
-
-•
-Design and build corporate network infrastructure for new Airwallex offices as we expand globally, and upgrade our existing portfolio
-
-•
-Design, implement, and maintain highly available and secure corporate network infrastructure (LAN, WAN, Wireless, VPN) across multiple global offices and regions.
-
-•
-Configure on-prem gateway/router/networking hardware globally, including mixed vendors in some locations
-
-•
-Manage global connectivity over international leased lines and domestic internet connections
-
-•
-Lead the configuration and troubleshooting of complex network devices, including routers, switches, firewalls, load balancers, and wireless access points.
-
-•
-Own CorpNet, and act as a first-responder or escalation point for complex network issues, running an incident through to completion and after-action reports.
-
-•
-Collaborate with cross-functional teams (e.g., CorpSec, ProdSec, Engineering, Product, IT Engineering, Workplace, etc.) to integrate network solutions and support business initiatives.
-
-•
-Work with IT Engineering, IT Support on troubleshooting network issues on endpoints, including basic IT operations support, building a core networking understanding among the team
-
-•
-Develop and maintain comprehensive network documentation, including diagrams, configurations, and operational procedures.
-
-•
-Evaluate and recommend new networking technologies and solutions to stay ahead of our business growth
-
-•
-Mentor, develop and coach other network engineers and staff, sharing knowledge and fostering skill development within the team – manage underperformers and attract talent
-
-•
-Participate in a global on-call rotation, providing primary response for corp networking issues in a follow-the-sun model.
-
-•
-Flexible scheduling (as needed) to support the business and team initiatives -- i.e. participate in network upgrades after-hours or weekend implementation work to minimise business disruption.
-
-Who you are
-
-We’re looking for people who meet the minimum qualifications for this role. The preferred qualifications are great to have, but are not mandatory.
-
-Minimum qualifications:
-
-•
-Senior-level experience with designing, implementing and maintaining Juniper and Palo Alto Networks vendor solutions
-
-•
-Demonstrated experience in a multi/mixed networking vendor environment (Juniper, Palo Alto, Cisco, Aruba, etc.) in a global company
-
-•
-Experience with networking solutions for mainland China and international connectivity
-
-•
-Strong fundamental understanding of wifi technology and endpoint engineering – hardware knowledge a plus (Juniper Mist, Cisco Meraki, Aruba, etc.)
-
-•
-Expert understanding of command-line configuration of networking hardware and vendors (JunOS, IOS, etc.)
-
-Preferred qualifications:
-
-•
-Strong knowledge of Palo Alto Networks GlobalProtect, Prisma/Prisma Cloud and core networking fundamentals
-
-•
-Managed or lead a team of network engineers – ideally at a startup, from early days to a large corporate footprint, you’ve seen the growth happen and know the problems that come with it
-
-•
-Bachelor’s degree in Information Technology, Computer Science, or a related field, 5+ years of relevant experience in a similar role.
-
-•
-Strong, demonstrated written and verbal English communication skills,
-
-•
-Understanding of common identity standards, including SAML, OAuth, SSO, etc.
-
-•
-Experience using and understanding of cloud infrastructure (AWS, GCP, etc.)
-
-•
-Understanding of RBAC, ABAC, PBAC, ACLs and common access management principles in security and corporate IT environments
-
-•
-Experience working in all SaaS-based systems and applications
-
-•
-Strong understanding of MDM systems (macOS, windows; kandji, JAMF, intune, etc.)
-
-•
-Ability to move fast and urgently, making correct decisions and assumptions – sometimes without all the information
-
-#Singapore #Sydney #Melbourne #SanFrancisco #SF
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7863,https://jobs.ashbyhq.com/airwallex/ca3eac30-f2d5-485d-8ad6-9574f1ab3b63,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
 d1d0116d-7edb-4b15-87bc-4dbd74bc83e0,Business Development Manager,Airwallex,airwallex,Full time,Posted 166 Days Ago,,,VN - Ho Chi Minh City,2,"VN - Ho Chi Minh City; {'location': 'VN - Hanoi', 'address': {'postalAddress': {'addressCountry': 'Vietnam', 'addressLocality': 'Hanoi'}}}",false,,vietnam,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -18727,122 +18199,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7502,https://jobs.ashbyhq.com/airwallex/1276800f-a4ad-4c75-af30-d4a14933aa38,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
-15026f7e-7cf8-4710-968b-d7bbd44c6c5e,"Senior IT Support Engineer, India",Airwallex,airwallex,Full time,Posted 82 Days Ago,,,IN - Bangalore,1,IN - Bangalore,false,,India,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-Airwallex IT Operations is the first port of call for employees when they need help or have an issue with technology. We’re a friendly and helpful team, happy to greet our new hires on their first day, help employees with technical support, and manage our hardware and fleet of laptops across all of our global offices. We provide services across our service desk, over chat, and face to face and zoom in our core offices.
-
-What you’ll do
-
-You’ll provide outstanding customer service and support to our Airwallex team in our offices and remotely. We’re obsessed with delivering a fantastic support experience and world-class customer service. From new hire IT onboarding to service desk tickets and walk-up support, meeting room and all-hands AV, you’ll be the “face” of IT to our Airwallex team. You’ll be the first point of contact when things go wrong for our team, and you’ll work closely with your peers internationally to provide a consistently great support experience for our team. You’ll get to work on a lot of different technology and projects, and grow your skills in engineering.
-
-This role requires regular fixed on-site days in our office.
-
-This role is based in Bangalore.
-
-Responsibilities:
-
-•
-Provide on-site and remote IT support for Airwallex employees and contractors, on macOS and windows, and hardware support for PC and Apple hardware
-
-•
-Provide software support and troubleshooting on macOS and Windows OS and SaaS applications
-
-•
-Hardware troubleshooting – quickly able to debug common problems with Windows and Apple hardware
-
-•
-Strong SaaS troubleshooting skills – i.e. Zoom, Slack, Google Chrome, Google Workspace, etc.
-
-•
-Provide AV support for meeting rooms, all-hands event spaces and office technology
-
-•
-Run new hire IT onboarding events every week - help our new starters set up their computers, accounts, and onboard to Airwallex
-
-•
-Basic administration of one or more applications - Google Workspace, Slack, Okta and assist with common issues and projects
-
-•
-Write exceptional documentation and knowledge guides - clear, concise and easy for all audiences to understand and act on
-
-•
-Contribute to constant team improvement, providing feedback on what works - and what doesn’t, improving our processes and helping peers
-
-•
-Handle complex requests and triage and prioritise - escalating where necessary, but knowing when to move forward, mindful of others’ time and schedules
-
-•
-Thrive in a startup environment – managing ambiguity and working with various teammates and teams to get things done regardless of hierarchy
-
-Who you are
-
-We're looking for people who meet the minimum qualifications for this role. The preferred qualifications are great to have, but are not mandatory.
-
-Minimum qualifications:
-
-•
-A patient and empathetic approach to supporting users on-site and often in time sensitive situations.
-
-•
-Great documentation skills – you can document your work, and write a great article to a high standard
-
-•
-Experience with supporting and troubleshooting common MDM applications – mac and windows
-
-•
-Experience with basic administration of Google Workspace, Okta, Confluence, JIRA, Zoom
-
-•
-You’re consistent, reliable and dependable – but you’re hungry to learn more and work on more than just support
-
-•
-Strong knowledge of Google Workspace and Slack basics
-
-•
-Strong foundational technical troubleshooting skills - hardware and software
-
-•
-Intermediate troubleshooting skills on office hardware – you know the basics of an office network or infrastructure, and can diagnose basic problems, like why the printer doesn’t work, what an VPN error is, etc.
-
-•
-Intermediate networking troubleshooting - you know the basics of networking and common issues with wifi, DNS and office networks. You don’t need to know DNS ports, but you know the difference between a gateway and a switch.
-
-•
-Experience in high growth multinational tech companies – understanding of different cultures, empathetic to challenges communicating across languages, but patiently able to work through technical problems
-
-•
-Experience in a matrix environment, with projects across multiple teams
-
-•
-Strong ability to multitask and work on multiple competing priorities – you can quickly figure out what needs to happen first, and what can wait a little longer
-
-•
-Willing to work on a shifting schedule to support a hybrid work environment, and reasonably able to support some out-of-hours events or projects (but we’ll make sure you get rest to recover too!)
-
-Preferred qualifications:
-
-•
-Experience in financial services. fintech or payments
-
-#Bangalore
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6950,https://jobs.ashbyhq.com/airwallex/15026f7e-7cf8-4710-968b-d7bbd44c6c5e,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
 15a5d8b4-a5fd-4b4d-a933-387702221b75,"Senior Director EU & ME, MLRO",Airwallex,airwallex,Full time,Posted 197 Days Ago,,,NL - Amsterdam,1,NL - Amsterdam,false,,Netherlands,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -33007,98 +32363,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5420,https://jobs.ashbyhq.com/airwallex/07621c2c-6b3e-42f3-9617-f8426007897e,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
-08e98beb-cdc5-40ca-b1ab-78c765ae8cf8,"Account Executive, SME & Growth (Spend)",Airwallex,airwallex,Full time,Posted 77 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-The Singapore Outbound team plays a pivotal role in driving Airwallex’s growth by building pipeline and winning new customers across our strategic segments, enhancing Airwallex’s brand visibility, accelerating customer acquisition, and helping shape how our products are positioned across target industries. Working closely across Marketing, Product, and Revenue Strategy & Operations, the team ensures Airwallex remains at the forefront of innovation and delivers impactful solutions to our customers.
-
-About the role
-
-We are looking for a motivated, strategic, and detail-oriented Strategic Account Executive to join our Outbound Sales, SME & Growth team in Singapore.
-
-In this role, you will be responsible for owning and closing high-value opportunities for Airwallex’s Spend Management solution. You will work with businesses facing growing operational complexity, distributed teams, increasing software and advertising spend, and a need for stronger visibility, control, and efficiency across company spending.
-
-You will lead consultative sales cycles end-to-end, from identifying and qualifying strategic accounts to running discovery, building business cases, engaging Finance and Leadership stakeholders, and closing revenue. This role requires strong commercial acumen, deep discovery skills, and the ability to position Airwallex’s Spend Management platform as a strategic solution that improves financial control, operational efficiency, and spend visibility.
-
-This is a high-impact role for someone who can combine outbound discipline, value selling, stakeholder management, and strong closing ability to accelerate the growth of Airwallex’s Spend Management business in Singapore.
-
-Responsibilities
-
-•
-Own the full sales cycle for Airwallex’s Spend Management opportunities across the SME & Growth segment, from prospecting and qualification through to discovery, proposal, negotiation, and close.
-
-•
-Identify and prioritise organisations that would benefit from stronger spend visibility, controls, approval workflows, corporate cards, and expense management.
-
-•
-Run deep discovery with Finance and Leadership stakeholders to uncover pain points across employee spend, software subscriptions, advertising spend, reporting gaps, and operational inefficiencies.
-
-•
-Build value-led business cases that clearly articulate how Airwallex improves financial control, reduces manual work, and drives operational efficiency.
-
-•
-Map and multi-thread accounts across key decision-makers and influencers, including CFOs, Finance Directors, Financial Controllers, Founders, Operations leaders, and Department Heads.
-
-•
-Partner with SDR, Product Sales, Marketing, Revenue Strategy & Operations to execute strategic account plans and scalable Spend Management GTM plays.
-
-•
-Manage a healthy pipeline, maintain Salesforce hygiene, and provide accurate forecasting on deal progression, risks, blockers, and expected close timelines.
-
-•
-Navigate product conversations, commercial negotiations, stakeholder objections, and competitive evaluations to drive opportunities to close.
-
-•
-Contribute to repeatable playbooks, messaging, and best practices that help scale Airwallex’s Spend Management motion across Singapore.
-
-Who you are
-
-•
-Bachelor’s degree or equivalent.
-
-•
-3–6 years of experience in a closing role, preferably within B2B SaaS, Expense Management, or the ERP space.
-
-•
-Ability to conduct high-level discovery conversations that move past simple feature lists and price comparisons, focusing instead on deep discovery, value selling, workflow improvements and financial metrics.
-
-•
-Strong analytical skills with experience using CRM systems (e.g. Salesforce) and analytics tools (e.g. Google Sheets, Looker).
-
-•
-Ability to map out complex organisational hierarchies within large companies to identify the correct financial decision-makers (CFOs, Finance Directors, Financial Controllers), and write highly tailored, articulate emails to prospects.
-
-•
-A strong conceptual understanding of business finance workflows (e.g., corporate cards, expense management, accounts payable, and financial app stack).
-
-•
-Strong verbal and written communication skills in English; additional regional languages (e.g. Mandarin, Bahasa) are a plus.
-
-•
-Proven ability to identify and execute on process improvements.
-
-•
-Experience in fast-paced environments, preferably in a startup or scale-up.
-
-•
-Attention to detail and the ability to multitask, prioritise, and meet deadlines.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6851,https://jobs.ashbyhq.com/airwallex/08e98beb-cdc5-40ca-b1ab-78c765ae8cf8,,https://www.linkedin.com/jobs/view/4459982998,2026-09-24,48,48 applicants,,matched,,2026-10-07,2026-10-08T14:30:51,2026-10-12,,18,startDate+linkedin,true,0,,,,,,2026-09-24,,false,,,,,,
 0a7e949f-563e-4c0f-be57-904575ec1024,"Senior Manager, GTM Partnerships, SME & growth",Airwallex,airwallex,Full time,Posted 23 Days Ago,,,FR - Paris,1,FR - Paris,false,,France,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -36748,105 +36012,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7874,https://jobs.ashbyhq.com/airwallex/4a995552-e961-48c0-92b0-08bfa7e4c5e9,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
-4b90e95d-7550-4d15-8c6b-99958285b434,Senior Associate Regulatory Compliance,Airwallex,airwallex,Full time,Posted 62 Days Ago,,,UK - London,1,UK - London,false,,United Kingdom,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-The Regulatory & Compliance Division (RCD) at Airwallex is a collaborative group of legal, compliance and risk management experts. We're passionate about safeguarding Airwallex's operations, fostering a culture of compliance and ethical conduct, and ensuring we navigate the global financial landscape with integrity. We provide expert guidance and support to all areas of the business, proactively identifying, mitigating, and managing legal, compliance and financial risks.
-
-The EMEA Regulatory Compliance Team forms part of the second line of defence (2LOD) at Airwallex whilst operating within the larger RCD function. We are a proactive and trusted business partner committed to enabling Airwallex’s growth and strategic goals by providing an advisory and oversight role. Our team culture is collaborative, impact-driven with a focus on continuous improvement. You’ll be part of a team that values transparency, empowerment, and high performance.
-
-This role is a newly created role with a specific focus on our UK business. This role will be a key member of the EMEA Regulatory Compliance Team, based in our London office with a direct line to the Senior Manager, Regulatory Compliance, UK.
-
-What you’ll do
-
-As Senior Associate / Manager, Regulatory Compliance, UK, you will deliver on the regulatory engagement strategy for Airwallex in the UK. You will maintain our licensing responsibilities and coordinate with all internal and external parties as necessary to ensure compliance through the communication of regulatory requirements, cross-functional collaboration to productize solutions and offerings, implementation and execution of processes, accurate execution and filing of regulatory reports, renewal of registrations and licenses, end-to-end management of regulatory examinations, and interfacing with UK regulators (including the FCA) on ad-hoc inquiries. You will analyse new and existing products and provide guidance to ensure that our 2LOD controls are fit for purpose and comply with regulatory obligations, guide the first line business to enable the maturity of both customer-facing and internal back-office processes and product features.
-
-Responsibilities:
-
-•
-Support the Airwallex Group’s expansion by managing the regulatory compliance components of licence authorisation processes
-
-•
-Act as a key stakeholder in relation to licence applications, business plan updates and information requests between Airwallex and our regulators
-
-•
-Ensure that our regulatory compliance and regulatory reporting obligations are maintained for all Airwallex Group entities in the UK
-
-•
-Support and / or manage on-site exams, inspections and audits (in collaboration with our RCD colleagues)
-
-•
-Advise the business with respect to regulatory change initiatives with a particular focus on how to effectively manage compliance risk attached to new and evolving UK laws and FCA rules
-
-•
-Develop policies, processes and provide advice in relation to regulatory risk obligations that exist within the 1st line business
-
-•
-Manage regulatory compliance risk within the Airwallex Risk Management Framework and associated escalation process (inc. governance forums and board reporting)
-
-•
-Advise the business in relation to conduct risk, Consumer Duty, complaints governance (including Financial Ombudsman Service escalations), and ethics matters relating to our financial services licences
-
-•
-Deliver the Compliance Monitoring Program through assisting with targeted and thematic reviews on a wide range of topics to ensure appropriate organisational maturity
-
-•
-Deliver the Airwallex Group’s Compliance Training for employees and conduct ad-hoc training to specific business areas as required
-
-•
-Conduct ‘Proactive Special Ops’ projects to unlock business or operational issues to enable Airwallex to achieve its strategic goals more rapidly
-
-Who you are
-
-We're looking for people who meet the minimum qualifications for this role. The preferred qualifications are great to have, but are not mandatory.
-
-Minimum Qualifications:
-
-•
-Bachelor’s degree with regulatory compliance experience in a financial institution, FinTech, legal / consulting firm, or combination of the above (minimum 4 years for Senior Associate; minimum 6 years for Manager)
-
-•
-Familiarity with financial regulatory laws, rules, regulations and industry best practices in the UK (specifically FCA-regulated environments)
-
-•
-Data proficiency - ability to work with data and leverage it for strategic decision-making
-
-•
-Ability to operate strategically and think creatively to solve complex regulatory compliance challenges
-
-•
-Superior communication skills, with the ability to clearly explain complex topics to a wide range of stakeholders including regulators, executive leadership, and front-line staff
-
-•
-Experience with developing and/or maintaining a compliance program within a financial institution, preferably in respect of payments and e-money activity
-
-•
-Exposure to licensing processes, regulatory reporting, regulatory expansion, and RegTech or technology-driven compliance solutions
-
-•
-Understanding of financial products and related conduct risk, ethics, and controls
-
-Preferred Qualifications:
-
-•
-Experience dealing with the Financial Conduct Authority (FCA) and handling escalations to the Financial Ombudsman Service (FOS).
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7694,https://jobs.ashbyhq.com/airwallex/4b90e95d-7550-4d15-8c6b-99958285b434,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
 4e664854-06c6-41ef-a66b-7cbd7c67c534,"Senior Manager, Performance Marketing",Airwallex,airwallex,Full time,Posted 65 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -41386,80 +40551,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7647,https://jobs.ashbyhq.com/airwallex/947c82d4-e8e4-4701-b45c-8bbf84532f95,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
-95e2dd11-a47d-4651-a221-d650bce9694a,"Inbound Sales Representative, EMEA",Airwallex,airwallex,Full time,Posted 41 Days Ago,,,IN - Bangalore,1,IN - Bangalore,false,,India,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the Team
-
-As part of our global expansion, we are launching a Global Sales Hub in Bangalore to drive revenue growth across multiple regions. This hub will play a crucial role in accelerating our SME sales efforts worldwide. We are seeking dynamic sales leaders to build and scale a world-class sales team that delivers impactful results.
-
-About the Role
-
-As an Inbound Sales Representative for EMEA , you will be responsible for driving new business by selling Airwallex’s suite of products to SME prospects in your assigned region. You will be part of our inbound sales team, owning everything from qualification to discovery, solutioning, negotiation, closing, onboarding, and activation.
-
-You will operate within your assigned region’s time zone and collaborate closely with regional sales leadership to deliver consistent revenue growth.
-
-Please note: This is not a support role for in-region sales teams. You will independently own and drive sales within assigned territories, taking full accountability for deal execution, and revenue delivery.
-
-Responsibilities
-
-•
-Own the full sales cycle from lead to closure - consistently delivering against revenue targets and key performance metrics.
-
-•
-Drive revenue growth by building and maintaining a healthy, high-converting pipeline of SME prospects.
-
-•
-Collaborate cross-functionally with regional sales, marketing, operations, and product teams to scale Airwallex’s go-to-market strategy.
-
-•
-Define and refine sales processes including outreach cadences, qualification workflows, CRM hygiene, and reporting to maximize productivity.
-
-•
-Negotiate commercial contracts and partnership agreements, working closely with legal, finance, and strategy teams to drive deal execution.
-
-•
-Establish and share best practices across the global sales organization, contributing to a high-performance sales culture and scalable playbook.
-
-Minimum Qualifications
-
-•
-5 years of experience in sales roles, with at least 3 years of proven success in B2B closing roles.
-
-•
-Proven track record of performing in high-velocity B2B sales environments.
-
-•
-Relevant global selling experience.
-
-•
-Experience in B2B sales closure, deal negotiation, and revenue generation.
-
-•
-Strong familiarity with AI-powered sales engagement tools, CRM workflows, and automation strategies.
-
-•
-Self-starter, detail oriented, metrics driven, collaborative, with excellent communication and stakeholder management skills.
-
-Preferred Qualifications
-
-•
-Experience in or understanding of the fintech/payments industry.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4897,https://jobs.ashbyhq.com/airwallex/95e2dd11-a47d-4651-a221-d650bce9694a,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
 99c4eea2-a2b4-41cd-af4f-3b87230bdae9,Senior GRC Specialist,Airwallex,airwallex,Full time,Posted 77 Days Ago,,,MX - Mexico City,1,MX - Mexico City,false,,Mexico,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -43259,80 +42350,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5554,https://jobs.ashbyhq.com/airwallex/c69718a6-9019-49b6-9fcc-ef7bfa24a6e9,,,,,,,not_checked,,2026-10-08,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
-c6a250f2-919e-42c3-bc2a-889790f7205d,"Inbound Sales Representative, AMER",Airwallex,airwallex,Full time,Posted 41 Days Ago,,,IN - Bangalore,1,IN - Bangalore,false,,India,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the Team
-
-As part of our global expansion, we are launching a Global Sales Hub in Bangalore to drive revenue growth across multiple regions. This hub will play a crucial role in accelerating our SME sales efforts worldwide. We are seeking dynamic sales leaders to build and scale a world-class sales team that delivers impactful results.
-
-About the Role
-
-As an Inbound Sales Representative for AMER , you will be responsible for driving new business by selling Airwallex’s suite of products to SME prospects in your assigned region. You will be part of our inbound sales team, owning everything from qualification to discovery, solutioning, negotiation, closing, onboarding, and activation.
-
-You will operate within your assigned region’s time zone and collaborate closely with regional sales leadership to deliver consistent revenue growth.
-
-Please note: This is not a support role for in-region sales teams. You will independently own and drive sales within assigned territories, taking full accountability for deal execution, and revenue delivery.
-
-Responsibilities
-
-•
-Own the full sales cycle from lead to closure - consistently delivering against revenue targets and key performance metrics.
-
-•
-Drive revenue growth by building and maintaining a healthy, high-converting pipeline of SME prospects.
-
-•
-Collaborate cross-functionally with regional sales, marketing, operations, and product teams to scale Airwallex’s go-to-market strategy.
-
-•
-Define and refine sales processes including outreach cadences, qualification workflows, CRM hygiene, and reporting to maximize productivity.
-
-•
-Negotiate commercial contracts and partnership agreements, working closely with legal, finance, and strategy teams to drive deal execution.
-
-•
-Establish and share best practices across the global sales organization, contributing to a high-performance sales culture and scalable playbook.
-
-Minimum Qualifications
-
-•
-5 years of experience in sales roles, with at least 3 years of proven success in B2B closing roles.
-
-•
-Proven track record of performing in high-velocity B2B sales environments.
-
-•
-Relevant global selling experience.
-
-•
-Experience in B2B sales closure, deal negotiation, and revenue generation.
-
-•
-Strong familiarity with AI-powered sales engagement tools, CRM workflows, and automation strategies.
-
-•
-Self-starter, detail oriented, metrics driven, collaborative, with excellent communication and stakeholder management skills.
-
-Preferred Qualifications
-
-•
-Experience in or understanding of the fintech/payments industry.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4897,https://jobs.ashbyhq.com/airwallex/c6a250f2-919e-42c3-bc2a-889790f7205d,,,,,,,not_checked,,2026-10-07,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
 c7070452-6ec6-443c-8015-db339403634a,Senior AI Engineer (Risk & Payments),Airwallex,airwallex,Full time,Posted 44 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -46306,3 +45323,224 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5486,https://jobs.ashbyhq.com/airwallex/73c4d180-bf75-48f3-819a-8fe832768512,,,,,,,not_checked,,2026-10-12,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
+1c1e3ac3-56c9-41bf-837d-2700120f4e1a,"Staff Data Scientist, Algorithm, Growth",Airwallex,airwallex,Full time,Posted Today,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
+
+Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
+
+We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
+
+We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
+
+Growth Data Science Team
+
+The Growth Data Science team sits at the center of Airwallex’s growth engine, turning data and AI into a durable competitive advantage. We build and scale advanced solutions—from predictive modeling and personalization to LLM-powered systems, incentive optimization, and causal inference—to unlock step-change growth across the customer lifecycle.
+
+Learn more about the data science team in this blog.
+
+The Role
+
+We’re seeking a Staff Data Scientist to partner closely with the Growth and Marketing teams to design, deploy, and iterate on high-impact data science solutions that drive measurable business outcomes. In this role, you will apply machine learning models to influence how we acquire, engage, and retain customers globally.
+
+Your work will directly shape Airwallex’s growth strategy, influencing how we acquire, engage, and retain customers. You are naturally curious, business-oriented, and have a proven track record of translating data insights into actionable recommendations that strengthen brand presence and accelerate growth.
+
+Why Join Now
+
+You’ll join the Airwallex team during a critical period, where we are building a team that enables both global consistency in process, tooling and methodology and local flexibility and speed in execution. This is a great opportunity to shape the next phase of Airwallex’s growth.
+
+Responsibilities
+
+•
+Uplevel the data science team by providing technical mentorship, assuming hands-on leadership to resolve complex problems, and setting the vision for longer term direction
+
+•
+Serve as a strategic thought leader with Marketing, Growth Product, Engineering, and cross-functional teams to inform, influence, support, and execute GTM strategy and investment decisions
+
+•
+Design and deploy a range of data science solutions—including predictive models, personalization and recommendation systems, LLM-powered applications, incentive optimization frameworks, and causal inference models—to drive measurable business outcomes
+
+•
+Apply machine learning and/or statistical models to measure causal impact of Marketing initiatives
+
+Qualifications
+
+•
+7+ years industry experience and an advanced degree (PhD or MS) in a quantitative field (e.g. Statistics, Engineering, Sciences, Computer Science, Economics)
+
+•
+Experience with communicating the results of analyses to leadership teams and cross-functional teams to influence the strategy
+
+•
+Technical mentorship experience with machine learning and experimentation in an industry setting
+
+•
+Expert in machine learning and statistical modeling to drive data driven growth strategy
+
+•
+Hands on experience building, deploying, and maintaining machine learning models in production-grade systems (e.g., cloud-based services, real-time and batch pipelines).
+
+•
+Expert in data querying languages (e.g. SQL), scripting languages (e.g. Python); experience in schema design and dimensional data modeling a plus
+
+•
+Experience in technology, financial services and/or a high growth environment is advantageous
+
+Applicant Safety Policy: Fraud and Third-Party Recruiters
+
+To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
+
+Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
+
+Equal opportunity
+
+Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5391,https://jobs.ashbyhq.com/airwallex/1c1e3ac3-56c9-41bf-837d-2700120f4e1a,,https://www.linkedin.com/jobs/view/4475687766,2026-10-12,25,among first 25,,matched,,2026-10-12,2026-10-12T16:11:08,2026-10-12,,0,startDate+linkedin,true,0,,,,,,2026-10-12,,true,,,,,,
+2e7b5948-f752-440f-a672-3db2d4cbe22c,"Associate Director, Payments/Scheme Economics",Airwallex,airwallex,Full time,Posted Today,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
+
+Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
+
+We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
+
+We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
+
+Who you are
+
+We are looking for an Associate Director, Payments/Scheme Economics to own the integrity, visibility and management of Airwallex’s payment costs, starting with card scheme fees and interchange fees across Visa and Mastercard.
+
+Reporting to the Head of Strategic Finance, you will be the subject matter expert on scheme economics, translating complex and rapidly changing network rules into accurate system configurations, financial outcomes and business decisions. You will ensure we understand what every payment should cost, that those costs are accurately reflected across our systems and financials, and that we systematically identify opportunities to improve payment economics as we scale.
+
+Over time, the remit will expand across other card schemes, local payment methods and the broader payments cost base.
+
+What you’ll do
+
+•
+Own scheme economics and rule interpretation: Maintain deep expertise across scheme fees, interchange and network rules. Interpret scheme bulletins, operating regulations and fee schedules, translating changes into clear financial, product and operational requirements.
+
+•
+Ensure accurate payment cost configuration: Translate complex scheme rules into fee tables, eligibility criteria and transaction-level logic. Partner with Product and Engineering to ensure cost calculation, allocation and customer billing accurately reflect current network rules across markets and payment flows.
+
+•
+Protect payment cost integrity: Establish robust governance, testing and controls across scheme configurations. Reconcile expected costs against actual network charges, identify anomalies and leakage, and drive root-cause resolution.
+
+•
+Build granular visibility into payment economics: Develop robust models and analytics across markets, products, payment methods and transaction types, creating a clear view of unit economics, margin drivers and cost movements.
+
+•
+Drive structural cost and margin optimization: Identify, quantify and execute opportunities to improve economics through transaction qualification, BIN routing, cost configuration, and other levers. Partner with Product, Finance and Commercial teams to prioritize the highest-value opportunities.
+
+•
+Shape pricing and commercial decisions: Translate underlying payment economics into recommendations for customer pricing, product design, new market launches and commercial strategy, ensuring growth is supported by sustainable unit economics.
+
+•
+Build scalable infrastructure and automation: Partner with Product, Engineering, and Data teams to strengthen cost engines, fee allocation logic, dashboards and automated controls. Apply AI and advanced analytics to accelerate rule interpretation, detect anomalies and surface optimization opportunities.
+
+•
+Own complex scheme economics issues: Serve as the escalation point for scheme pricing, interchange and rule-related questions, working directly with Visa, Mastercard and other payment partners where required.
+
+What you’ll bring
+
+•
+7+ years of relevant experience in payments, acquiring, issuing, card networks, payment infrastructure or related roles, ideally within a global PSP, acquirer, scheme, issuer or fintech.
+
+•
+Deep knowledge of card payment economics, particularly Visa and Mastercard interchange, scheme fees, transaction qualification and network rules.
+
+•
+Strong ability to operationalize complex payment rules, translating fee schedules and network requirements into system logic, configurations and controls.
+
+•
+Experience with payment cost systems and controls, including interchange tables, scheme fee logic, BIN-based rules, transaction attributes or similar payment configurations.
+
+•
+Strong analytical and quantitative capabilities, including experience working with transaction-level data, economic modeling and reconciliation of expected versus actual payment costs.
+
+•
+Strong commercial judgment, with the ability to connect detailed payment mechanics to pricing, product decisions and margin optimization.
+
+•
+Exceptional attention to detail and ownership, with the discipline required to manage complex rules where small errors can create meaningful financial impact at scale.
+
+•
+Strong cross-functional execution, with the ability to work effectively across Product, Engineering, Finance, Data, Operations and external payment partners.
+
+Applicant Safety Policy: Fraud and Third-Party Recruiters
+
+To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
+
+Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
+
+Equal opportunity
+
+Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6685,https://jobs.ashbyhq.com/airwallex/2e7b5948-f752-440f-a672-3db2d4cbe22c,,,,,,,not_checked,,2026-10-12,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
+9d00b932-722c-4b50-b780-f95b969a37b0,"Inbound Sales Representative, SME & Growth, AMER",Airwallex,airwallex,Full time,Posted Today,,,IN - Bangalore,1,IN - Bangalore,false,,India,,0,"About Airwallex
+
+Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
+
+We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
+
+We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
+
+About the Team
+
+As part of our global expansion, we are launching a Global Sales Hub in Bangalore to drive revenue growth across multiple regions. This hub will play a crucial role in accelerating our SME sales efforts worldwide. We are seeking dynamic sales individuals to build and scale a world-class sales team that delivers impactful results.
+
+About the Role
+
+As an Inbound Sales Representative for AMER , you will be responsible for driving new business by selling Airwallex’s suite of products to SME prospects in your assigned region. You will be part of our inbound sales team, owning everything from qualification to discovery, solutioning, negotiation, closing, onboarding, and activation.
+
+You will operate within your assigned region’s time zone and collaborate closely with regional sales leadership to deliver consistent revenue growth.
+
+Please note: This is not a support role for in-region sales teams. You will independently own and drive sales within assigned territories, taking full accountability for deal execution, and revenue delivery.
+
+Responsibilities
+
+•
+Own the full sales cycle from lead to closure - consistently delivering against revenue targets and key performance metrics.
+
+•
+Drive revenue growth by building and maintaining a healthy, high-converting pipeline of SME prospects.
+
+•
+Collaborate cross-functionally with regional sales, marketing, operations, and product teams to scale Airwallex’s go-to-market strategy.
+
+•
+Define and refine sales processes including outreach cadences, qualification workflows, CRM hygiene, and reporting to maximize productivity.
+
+•
+Negotiate commercial contracts and partnership agreements, working closely with legal, finance, and strategy teams to drive deal execution.
+
+•
+Establish and share best practices across the global sales organization, contributing to a high-performance sales culture and scalable playbook.
+
+Minimum Qualifications
+
+•
+3 years of experience in sales roles, with at least 1 years of proven success in B2B closing roles.
+
+•
+Proven track record of performing in high-velocity B2B sales environments.
+
+•
+Relevant global selling experience.
+
+•
+Experience in B2B sales closure, deal negotiation, and revenue generation.
+
+•
+Strong familiarity with AI-powered sales engagement tools, CRM workflows, and automation strategies.
+
+•
+Self-starter, detail oriented, metrics driven, collaborative, with excellent communication and stakeholder management skills.
+
+Preferred Qualifications
+
+•
+Experience in or understanding of the fintech/payments industry.
+
+Applicant Safety Policy: Fraud and Third-Party Recruiters
+
+To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
+
+Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
+
+Equal opportunity
+
+Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4901,https://jobs.ashbyhq.com/airwallex/9d00b932-722c-4b50-b780-f95b969a37b0,,,,,,,not_checked,,2026-10-12,,2026-10-12,,,,true,0,,,,,,,,,,,,,,
