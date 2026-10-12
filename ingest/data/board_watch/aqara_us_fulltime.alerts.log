@@ -1,0 +1,3 @@
+board-watch aqara_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:aqara: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
+(2026-10-12T18:59:59)
+
