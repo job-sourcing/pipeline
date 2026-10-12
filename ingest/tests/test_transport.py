@@ -265,3 +265,136 @@ class TestSupabaseFetchJson:
         cfg.supabase_proxy_token = "tok"
         with pytest.raises(RuntimeError, match="non-JSON"):
             transport.supabase_fetch_json("https://api.example.com/x", cfg=cfg)
+
+
+class TestNetlifyFetchJsonRetry:
+    """S32 (watch #122 root cause): transient 5xx/429 from the target /
+    edge function / blob store must be retried with backoff; permanent
+    4xx / engine errors fail fast. The watch failed a whole 153-board
+    run on ONE Netlify 503 — these pins keep the retry honest."""
+
+    def test_target_503_retries_then_succeeds(self, monkeypatch):
+        """The watch #122 failure shape: first attempt 503, retry 200."""
+        calls = {"n": 0}
+        sleeps: list[float] = []
+        monkeypatch.setattr(transport.time, "sleep", sleeps.append)
+
+        def fake_post(url, *, json=None, headers=None, timeout=None):
+            calls["n"] += 1
+            if calls["n"] == 1:
+                return _FakeResp({
+                    "results": [{"index": 0, "ok": False, "status": 503,
+                                 "url": json["jobs"][0]["url"],
+                                 "blob_key": None, "inline_body": None}]})
+            return _FakeResp({
+                "results": [{"index": 0, "ok": True, "status": 200,
+                             "url": json["jobs"][0]["url"],
+                             "blob_key": None,
+                             "inline_body": '{"jobs": [1]}'}]})
+
+        monkeypatch.setattr(transport.requests, "post", fake_post)
+        cfg = Config()
+        cfg.netlify_scraper_token = "nfl-token"
+        out = transport.netlify_fetch_json("https://api.example.com/x",
+                                           cfg=cfg)
+        assert out == {"jobs": [1]}
+        assert calls["n"] == 2, "503 must trigger exactly one retry"
+        assert sleeps == [6], "linear backoff 6s on the first retry"
+
+    def test_target_503_exhausts_retries_and_raises(self, monkeypatch):
+        calls = {"n": 0}
+        monkeypatch.setattr(transport.time, "sleep", lambda *_: None)
+
+        def fake_post(url, *, json=None, headers=None, timeout=None):
+            calls["n"] += 1
+            return _FakeResp({
+                "results": [{"index": 0, "ok": False, "status": 503,
+                             "url": "x", "blob_key": None,
+                             "inline_body": None}]})
+
+        monkeypatch.setattr(transport.requests, "post", fake_post)
+        cfg = Config()
+        cfg.netlify_scraper_token = "nfl-token"
+        with pytest.raises(requests.HTTPError) as ei:
+            transport.netlify_fetch_json("https://api.example.com/x",
+                                         cfg=cfg)
+        assert ei.value.response.status_code == 503
+        assert calls["n"] == 3, "default = 2 retries (3 total attempts)"
+        # retries=0 → single attempt, no sleep
+        calls["n"] = 0
+        with pytest.raises(requests.HTTPError):
+            transport.netlify_fetch_json("https://api.example.com/x",
+                                         cfg=cfg, retries=0)
+        assert calls["n"] == 1
+
+    def test_function_502_retries(self, monkeypatch):
+        """Edge-function gateway 5xx (cold start / deploy) is transient."""
+        calls = {"n": 0}
+        monkeypatch.setattr(transport.time, "sleep", lambda *_: None)
+
+        def fake_post(url, *, json=None, headers=None, timeout=None):
+            calls["n"] += 1
+            if calls["n"] == 1:
+                return _FakeResp(None, status=502, text="bad gateway")
+            return _FakeResp({
+                "results": [{"index": 0, "ok": True, "status": 200,
+                             "url": "x", "blob_key": None,
+                             "inline_body": '{"ok": 1}'}]})
+
+        monkeypatch.setattr(transport.requests, "post", fake_post)
+        cfg = Config()
+        cfg.netlify_scraper_token = "nfl-token"
+        out = transport.netlify_fetch_json("https://api.example.com/x",
+                                           cfg=cfg)
+        assert out == {"ok": 1} and calls["n"] == 2
+
+    def test_4xx_and_engine_error_fail_fast(self, monkeypatch):
+        """4xx (auth/config) and engine misuse retry identically forever
+        — they must fail on the FIRST attempt."""
+        calls = {"n": 0}
+        monkeypatch.setattr(transport.time, "sleep", lambda *_: None)
+
+        def fake_403(url, *, json=None, headers=None, timeout=None):
+            calls["n"] += 1
+            return _FakeResp({
+                "results": [{"index": 0, "ok": False, "status": 403,
+                             "url": "x", "blob_key": None,
+                             "inline_body": None}]})
+
+        monkeypatch.setattr(transport.requests, "post", fake_403)
+        cfg = Config()
+        cfg.netlify_scraper_token = "nfl-token"
+        with pytest.raises(requests.HTTPError):
+            transport.netlify_fetch_json("https://api.example.com/x",
+                                         cfg=cfg)
+        assert calls["n"] == 1, "403 is permanent — no retry"
+
+        calls["n"] = 0
+
+        def fake_engine(url, *, json=None, headers=None, timeout=None):
+            calls["n"] += 1
+            return _FakeResp({"error": "puppeteer engine is only "
+                                       "available in build mode"})
+
+        monkeypatch.setattr(transport.requests, "post", fake_engine)
+        with pytest.raises(RuntimeError, match="puppeteer engine"):
+            transport.netlify_fetch_json("https://api.example.com/x",
+                                         cfg=cfg)
+        assert calls["n"] == 1, "engine error is permanent — no retry"
+
+    def test_red_check_retry_pin_fails_without_retry(self, monkeypatch):
+        """RED-CHECK (SKILL A8-5): mutate the scenario — if the retry
+        were removed (all attempts raise), the first pin must FAIL."""
+        def fake_post(url, *, json=None, headers=None, timeout=None):
+            return _FakeResp({
+                "results": [{"index": 0, "ok": False, "status": 503,
+                             "url": "x", "blob_key": None,
+                             "inline_body": None}]})
+
+        monkeypatch.setattr(transport.requests, "post", fake_post)
+        monkeypatch.setattr(transport.time, "sleep", lambda *_: None)
+        cfg = Config()
+        cfg.netlify_scraper_token = "nfl-token"
+        with pytest.raises(requests.HTTPError):
+            transport.netlify_fetch_json(
+                "https://api.example.com/x", cfg=cfg)

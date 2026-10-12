@@ -32,6 +32,7 @@ adapter prefers it when both are configured.
 from __future__ import annotations
 
 import json as _json
+import time
 import urllib.parse
 from typing import Optional
 
@@ -232,6 +233,7 @@ def netlify_fetch_json(
     cfg: Optional[Config] = None,
     method: str = "GET",
     timeout: Optional[int] = None,
+    retries: Optional[int] = None,
 ) -> dict | list:
     """Fetch a JSON API through the Netlify edge scraper (US egress).
 
@@ -246,6 +248,11 @@ def netlify_fetch_json(
     transports with a one-line change. Raises RuntimeError when the
     transport isn't configured or the target returns non-JSON, and
     requests.HTTPError when the target API errors.
+
+    S32: transient failures (5xx/429 from the target, the edge function,
+    or the blob store) are retried up to `retries` extra attempts
+    (default 2) with linear backoff; the LAST error is re-raised so
+    the caller's except-clauses keep their status-code contract.
     """
     cfg = cfg or Config()
     if not cfg.netlify_scraper_token:
@@ -264,6 +271,32 @@ def netlify_fetch_json(
                  "result_mode": "inline", "method": method}
     if headers:
         job["headers"] = headers
+
+    # S32 (watch #122, 2026-10-11): the isolved board failed a whole
+    # run on a single transient Netlify 503 — the transport now retries
+    # transient failures (target 5xx/429, function-level 5xx/429,
+    # blob-store 5xx) with linear backoff before surfacing the last
+    # error. Non-transient failures (4xx auth/config, engine errors,
+    # non-JSON) fail immediately — unchanged semantics.
+    attempts = (2 if retries is None else max(0, retries)) + 1
+    last_exc: Exception | None = None
+    for attempt in range(attempts):
+        if attempt:
+            time.sleep(min(60, 6 * attempt))
+        try:
+            return _netlify_scrape_once(job, base, cfg, timeout=timeout)
+        except (requests.HTTPError, RuntimeError) as exc:
+            if not _netlify_transient(exc) or attempt == attempts - 1:
+                raise
+            last_exc = exc
+    raise last_exc  # pragma: no cover — loop always raises/returns
+
+
+def _netlify_scrape_once(
+    job: dict, base: str, cfg: Config, *, timeout: Optional[int] = None,
+) -> dict | list:
+    """One scrape attempt through the Netlify edge function (S32 split
+    out of netlify_fetch_json so the retry wrapper can re-drive it)."""
     r = requests.post(
         f"{base}/api/scrape",
         json={"jobs": [job]},
@@ -320,3 +353,21 @@ def netlify_fetch_json(
             f"Netlify US-proxy transport returned non-JSON content (status "
             f"{status}, first 120 chars: {(text or '')[:120]!r})"
         ) from exc
+
+
+def _netlify_transient(exc: Exception) -> bool:
+    """Classify a Netlify-transport failure as retryable-transient.
+
+    Transient: target 5xx/429 (HTTPError), function/gateway 5xx or 429,
+    blob-store 5xx. Permanent: 4xx auth/config, engine misuse,
+    non-JSON payloads — those retry identically forever (fail fast).
+    """
+    if isinstance(exc, requests.HTTPError):
+        code = exc.response.status_code if exc.response is not None else 0
+        return code >= 500 or code == 429
+    msg = str(exc)
+    for tag in ("transport error HTTP 5", "transport error HTTP 429",
+                "blob fetch error HTTP 5", "blob fetch error HTTP 429"):
+        if tag in msg:
+            return True
+    return False
