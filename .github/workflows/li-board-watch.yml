@@ -1,0 +1,92 @@
+name: LI Board Watch (daily)
+
+# S32 (D-S32-1): the LinkedIn-guest company boards (custom:licompany:*,
+# tags=["li"]) — 18 boards, ~4 requests each on a DEDICATED lane
+# (review P1-5: LinkedIn rate limits are CORRELATED across boards —
+# one 429 day must not fail the 06:45Z main watch and block the
+# chained csv-export for all 150 companies, the #98 lesson). Own
+# runner = own Azure IP per run. Azure egress serves 200 on all three
+# guest endpoints (url-egress-probe verified 2026-10-12; re-probe on
+# degrade). The main daily watch skips these via WATCH_SKIP_TAGS.
+on:
+  schedule:
+    - cron: "45 7 * * *"    # 07:45Z daily — off-peak odd minute
+  workflow_dispatch:
+    inputs:
+      watch_details_max:
+        description: "max detail enrichments per leg (default 60)"
+        required: false
+        default: '60'
+      watch_budget_seconds:
+        description: "wall-clock budget (default 480)"
+        required: false
+        default: '480'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: li-board-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ingest/ curl_cffi
+      - name: Materialize runtime env
+        env:
+          INGEST_ENV: ${{ secrets.INGEST_ENV }}
+        run: |
+          if [ -n "$INGEST_ENV" ]; then
+            printf '%s\n' "$INGEST_ENV" > ingest/.env
+          fi
+      - name: Run LI-board watch (li tag only)
+        env:
+          WATCH_ONLY_TAGS: li
+          WATCH_DETAILS_MAX: ${{ github.event.inputs.watch_details_max || '60' }}
+          WATCH_BUDGET_SECONDS: ${{ github.event.inputs.watch_budget_seconds || '480' }}
+        run: python3 scripts/gha_board_watch.py
+      - name: Result gates (fail-loudly)
+        if: always()
+        run: |
+          if [ "${WATCH_RESULT}" = "failed" ]; then
+            echo "::error::li-board-watch FAILED"
+            exit 1
+          fi
+      - name: Checkpoint state to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/watch_state
+          for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
+            cp ingest/data/board_watch/$pat /tmp/watch_state/ 2>/dev/null || true
+          done
+          git config user.name "board-watch-bot"
+          git config user.email "actions@github.com"
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
+              cp /tmp/watch_state/$pat ingest/data/board_watch/ 2>/dev/null || true
+            done
+            git add ingest/data/board_watch
+            if git diff --cached --quiet; then
+              echo "no state change to commit"; break
+            fi
+            git commit -m "li-board-watch checkpoint [skip ci]" || true
+            if git push origin main; then push_ok=1; break; fi
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::push failed after 3 attempts — state rescued in /tmp"
+            exit 1
+          fi

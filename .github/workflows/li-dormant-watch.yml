@@ -1,0 +1,84 @@
+name: LI Dormant Watch (weekly)
+
+# S32 (D-S32-1 layer 1): the dormant-liveness re-probe — 41 companies
+# (tags=["li_dormant"]) with exact-name LinkedIn entities measured at
+# ZERO US postings (audit/s32_li/probe9). One f_C request per company
+# per week: a page-0 stub = still dormant (complete, silent); a 0->k
+# flip feeds rows into the normal diff/enrich/digest machinery — the
+# watch machinery IS the wire-ready signal (review P1-6/Q7). Promotion
+# to the daily lane = tag removal (label/state continuity preserved).
+# Cadence: weekly is enough — these companies' hiring signal is
+# trailing (LCA filings), not leading.
+on:
+  schedule:
+    - cron: "15 9 * * 1"    # Mondays 09:15Z
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: li-board-watch     # serialize with the daily LI lane
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ingest/ curl_cffi
+      - name: Materialize runtime env
+        env:
+          INGEST_ENV: ${{ secrets.INGEST_ENV }}
+        run: |
+          if [ -n "$INGEST_ENV" ]; then
+            printf '%s\n' "$INGEST_ENV" > ingest/.env
+          fi
+      - name: Run dormant-liveness probe (li_dormant tag only)
+        env:
+          WATCH_ONLY_TAGS: li_dormant
+          WATCH_DETAILS_MAX: '40'
+          WATCH_BUDGET_SECONDS: '300'
+        run: python3 scripts/gha_board_watch.py
+      - name: Result gates (fail-loudly)
+        if: always()
+        run: |
+          if [ "${WATCH_RESULT}" = "failed" ]; then
+            echo "::error::li-dormant-watch FAILED"
+            exit 1
+          fi
+      - name: Checkpoint state to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/watch_state
+          for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
+            cp ingest/data/board_watch/$pat /tmp/watch_state/ 2>/dev/null || true
+          done
+          git config user.name "board-watch-bot"
+          git config user.email "actions@github.com"
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            for pat in '*.state.jsonl' '*.newposts.jsonl' '*.alerts.log' '*.legs.json' '*.reposts.jsonl'; do
+              cp /tmp/watch_state/$pat ingest/data/board_watch/ 2>/dev/null || true
+            done
+            git add ingest/data/board_watch
+            if git diff --cached --quiet; then
+              echo "no state change to commit"; break
+            fi
+            git commit -m "li-dormant-watch checkpoint [skip ci]" || true
+            if git push origin main; then push_ok=1; break; fi
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::push failed after 3 attempts — state rescued in /tmp"
+            exit 1
+          fi

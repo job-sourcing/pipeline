@@ -1953,6 +1953,14 @@ class TestShippedWatchConfig:
                     assert kind, w["board"]
                     if kind == "ssrpage":
                         assert org in site_boards.SSR_CONTRACTS, w["board"]
+                    elif kind == "licompany":
+                        # S32: the LinkedIn-guest company contracts
+                        assert org in site_boards.LICOMPANY_CONTRACTS, (
+                            w["board"])
+                        assert w.get("skip_li_corroboration") is True, (
+                            w["label"])
+                        assert w.get("tags") in (["li"], ["li_dormant"]), (
+                            w["label"])
                     else:
                         assert not org, w["board"]
                     assert w["board"].startswith("custom:"), w["board"]
@@ -2012,7 +2020,10 @@ class TestShippedWatchConfig:
         # S31: +31 custom-adapter wave (7 existing-class wires + 9 new
         # classes + the 16-contract ssrpage engine; 3 CF-walled boards
         # weekly via cf-board-watch.yml)
-        assert len(cfg["watches"]) == 153
+        # S32: +59 LinkedIn-guest company boards (18 daily-lane
+        # custom:licompany + 41 dormant-liveness weekly lane — the
+        # S32 wave; evidence audit/s32_li/probe9_cohort_results.json)
+        assert len(cfg["watches"]) == 212
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",

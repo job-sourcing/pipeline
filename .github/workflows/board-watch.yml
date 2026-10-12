@@ -100,8 +100,11 @@ jobs:
           WATCH_DETAILS_MAX: ${{ github.event.inputs.watch_details_max || '40' }}
           WATCH_BUDGET_SECONDS: ${{ github.event.inputs.watch_budget_seconds || '240' }}
           # S31: the CF-walled firecrawl boards run on the weekly
-          # cf-board-watch.yml instead (WATCH_ONLY_TAGS=weekly)
-          WATCH_SKIP_TAGS: weekly
+          # cf-board-watch.yml instead (WATCH_ONLY_TAGS=weekly).
+          # S32: the LinkedIn lanes run on li-board-watch.yml (daily,
+          # own runner/IP — correlated rate limits isolated) and
+          # li-dormant-watch.yml (weekly liveness re-probe).
+          WATCH_SKIP_TAGS: weekly,li,li_dormant
         run: python3 scripts/gha_board_watch.py
 
       - name: Checkpoint state to git (race-proof)

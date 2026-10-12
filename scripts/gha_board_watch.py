@@ -1032,6 +1032,34 @@ def _validate_variant_uniqueness(watches: list[dict]) -> None:
             if v:
                 _claim(v, w["label"])
 
+    # S32 (review P0-1): licompany contracts live in code, not config —
+    # claim their display names + li_variants HERE so a future contract
+    # colliding with a watch's company/variants fails at config load in
+    # BOTH directions (the EcoFlow/MINISO/CelerData class of overlap).
+    # A contract referenced by a watch claims under THAT watch's label
+    # (the same company's own watch + contract must self-agree, not
+    # self-collide); an unreferenced contract claims as "licompany:"
+    # and still fails loudly against any OTHER owner.
+    try:
+        from jobsearch.sources.site_boards import LICOMPANY_CONTRACTS
+        owner_by_key = {}
+        for w in watches:
+            b = str(w.get("board") or "")
+            if b.startswith("custom:licompany:"):
+                owner_by_key[b.split("custom:licompany:", 1)[1]] = \
+                    w["label"]
+        for key, c in LICOMPANY_CONTRACTS.items():
+            owner = owner_by_key.get(key, f"licompany:{key}")
+            nm = str(c.get("company") or "").strip().lower()
+            if nm:
+                _claim(nm, owner)
+            for v in (c.get("li_variants") or []):
+                v = str(v).strip().lower()
+                if v:
+                    _claim(v, owner)
+    except ImportError:
+        pass  # library-only contexts (tests without the package)
+
 
 def _egress_blocked(w: dict, exc: Exception) -> bool:
     """S18 (watch runs #59/#60 + board-probe #2): job.xiaohongshu.com
@@ -1378,9 +1406,16 @@ def run_watch(w: dict, cfg: Config) -> str:
               f"({n_token} via token fallback)", flush=True)
     # S9 C5: run-level title-search budget cell — shared by THIS main
     # corroborate call only (the lag pass below never title-searches)
-    signals = corroborate_new((new_rows + backlog_rows) if country_client
-                              else enrich_input, w["company"], cfg,
-                              deadline, title_search_budget=[TITLE_SEARCH_MAX])
+    # S32 (review P1-1): licompany boards ARE LinkedIn — the
+    # corroboration lane would index LinkedIn against itself (pure
+    # request waste; the adapter's own detail fetch already carries the
+    # signals). Opt-out per watch entry.
+    signals = ({} if w.get("skip_li_corroboration")
+               else corroborate_new(
+                   (new_rows + backlog_rows) if country_client
+                   else enrich_input, w["company"], cfg,
+                   deadline,
+                   title_search_budget=[TITLE_SEARCH_MAX]))
     for e in enriched:
         s = signals.get(e["reqId"])
         if s:
@@ -1450,8 +1485,9 @@ def run_watch(w: dict, cfg: Config) -> str:
             for rid in signals:                    # just-corroborated skip
                 recent.pop(rid, None)
             if recent:
-                sigs2 = corroborate_new(list(recent.values()),
-                                        w["company"], cfg, deadline)
+                sigs2 = ({} if w.get("skip_li_corroboration")
+                         else corroborate_new(list(recent.values()),
+                                              w["company"], cfg, deadline))
                 updates = []
                 for rid, s in sigs2.items():
                     r = recent.get(rid)
