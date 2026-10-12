@@ -9,3 +9,6 @@ GrubMarket board-watch 2026-10-12: +1 new, -0 gone (1 active [grubmarket_us_full
 NEW Senior Director, SEC Financial Reporting | San Francisco Bay Area | Posted 14 Days Ago | https://www.linkedin.com/jobs/view/4471388904
 (2026-10-12T02:37:44)
 
+board-watch grubmarket_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:grubmarket: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
+(2026-10-12T17:03:18)
+

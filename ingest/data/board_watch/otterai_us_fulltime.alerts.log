@@ -105,3 +105,6 @@ GONE Staff Software Engineer, Backend (Infrastructure) (first seen 2026-10-02)
 GONE Staff Software Engineer, Backend (Product) (first seen 2026-10-02)
 (2026-10-12T02:38:52)
 
+board-watch otterai_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:otterai: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
+(2026-10-12T17:04:52)
+
