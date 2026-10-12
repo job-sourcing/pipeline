@@ -56,3 +56,6 @@ REPOSTED (1)
 REPOSTED Senior Software Engineer, Backend (Infrastructure) (label reset 539d→62d)
 (2026-10-07T01:20:03)
 
+board-watch otterai_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:otterai: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
+(2026-10-12T02:07:20)
+
