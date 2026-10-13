@@ -122,7 +122,12 @@ class TestStopConditions:
         rows, complete = a._rows()
         assert rows == [] and complete is False
 
-    def test_http_error_raises(self):
+    def test_http_error_raises(self, monkeypatch):
+        # S33: hermetic — the 429 rung sleeps are patched away (the
+        # S32 version really slept 45s here; the ladder would sleep
+        # 195s — the suite's wall-clock must not depend on backoffs).
+        monkeypatch.setattr(__import__("time"), "sleep",
+                            lambda *_: None)
         for code in (429, 403, 302, 500):
             a = _adapter(responses=[(code, "x", "/authwall")])
             with pytest.raises(RuntimeError, match="HTTP"):
@@ -304,3 +309,43 @@ class TestRateLimitBackoff:
         a._get = lambda url, params: (429, "x", "")
         with pytest.raises(RuntimeError, match="HTTP 429"):
             a._walk_entity("3374179")
+
+    def test_page0_429_ladder_three_rungs_then_success(self, monkeypatch):
+        # S33 (li #4 + dormant #1, 10-12): one 45s retry was too
+        # shallow — intermittent Azure 429s left boards red while
+        # NEIGHBORS succeeded seconds later. The ladder now retries
+        # 45/60/90s on page-0 before giving up.
+        sleeps = []
+        monkeypatch.setattr(__import__("time"), "sleep", sleeps.append)
+        a = LinkedInCompanyAdapter("vesync", Config())
+        seq = [(429, "x", ""), (429, "x", ""), (429, "x", ""),
+               (200, _page([_card("1")]), "")]
+        it = iter(seq)
+        a._get = lambda url, params: next(it)
+        rows, status = a._walk_entity("3374179")
+        assert status == "tail" and len(rows) == 1
+        assert sleeps == [45, 60, 90]
+
+    def test_page0_429_ladder_exhausts_then_raises(self, monkeypatch):
+        monkeypatch.setattr(__import__("time"), "sleep",
+                            lambda *_: None)
+        a = LinkedInCompanyAdapter("vesync", Config())
+        a._get = lambda url, params: (429, "x", "")
+        with pytest.raises(RuntimeError, match="HTTP 429"):
+            a._walk_entity("3374179")
+
+    def test_deep_page_429_gets_single_rung(self, monkeypatch):
+        # deep pages (offset>0) retry ONCE (45s) — tail rows matter
+        # less than a page-0 red board, and the full ladder on every
+        # page would risk the run budget.
+        sleeps = []
+        monkeypatch.setattr(__import__("time"), "sleep", sleeps.append)
+        a = LinkedInCompanyAdapter("vesync", Config())
+        full = _page([_card(str(i)) for i in range(10)])
+        seq = [(200, full, ""), (429, "x", ""), (429, "x", "")]
+        it = iter(seq)
+        a._get = lambda url, params: next(it)
+        with pytest.raises(RuntimeError, match="HTTP 429"):
+            a._walk_entity("3374179")
+        # page-pause politeness (1.0) + ONE 45s rung on the deep page
+        assert sleeps == [1.0, 45]

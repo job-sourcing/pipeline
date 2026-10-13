@@ -3056,6 +3056,66 @@
     "United States"
    ],
    "geo_scope": "non_cn"
+  },
+  {
+   "label": "renogy_gj_us",
+   "board": "custom:gjobs:renogy",
+   "company": "Renogy",
+   "country": "United States",
+   "tags": [
+    "gj"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "jinkosolar_gj_us",
+   "board": "custom:gjobs:jinkosolar",
+   "company": "JinkoSolar",
+   "country": "United States",
+   "tags": [
+    "gj"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "eveenergy_gj_us",
+   "board": "custom:gjobs:eveenergy",
+   "company": "EVE Energy",
+   "country": "United States",
+   "tags": [
+    "gj"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "jackery_gj_us",
+   "board": "custom:gjobs:jackery",
+   "company": "Jackery",
+   "country": "United States",
+   "tags": [
+    "gj"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "govee_gj_us",
+   "board": "custom:gjobs:govee",
+   "company": "Govee",
+   "country": "United States",
+   "tags": [
+    "gj_dormant"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "vava_gj_us",
+   "board": "custom:gjobs:vava",
+   "company": "VAVA",
+   "country": "United States",
+   "tags": [
+    "gj_dormant"
+   ],
+   "skip_li_corroboration": true
   }
  ]
 }

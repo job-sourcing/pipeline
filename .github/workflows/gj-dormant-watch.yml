@@ -1,0 +1,86 @@
+name: GJ Dormant Watch (monthly)
+
+# S33 (D-S33-1): the Google-Jobs dormant probes (custom:gjobs:*,
+# tags=["gj_dormant"]) — companies measured with ZERO aggregator
+# postings (Govee: 23 homonym noise cards; VAVA: 86 — the honest-zero
+# evidence, audit/s33_gj/probe2_*.md). 1 credit/company/month detects
+# the 0->k flip the day they start posting on aggregators (the
+# LinkedIn dormant lane's aggregator-side sibling).
+on:
+  schedule:
+    - cron: "55 10 1 * *"    # 1st of month 10:55Z — off-peak odd minute
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: gj-dormant-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ingest/ curl_cffi
+      - name: Materialize runtime env
+        env:
+          INGEST_ENV: ${{ secrets.INGEST_ENV }}
+        run: |
+          if [ -n "$INGEST_ENV" ]; then
+            printf '%s\n' "$INGEST_ENV" > ingest/.env
+          fi
+      - name: Run GJ-dormant watch (gj_dormant tag only)
+        env:
+          WATCH_ONLY_TAGS: gj_dormant
+          WATCH_DETAILS_MAX: '30'
+          WATCH_BUDGET_SECONDS: '300'
+        run: python3 scripts/gha_board_watch.py
+      - name: Result gates (fail-loudly)
+        if: always()
+        run: |
+          if [ "${WATCH_RESULT}" = "failed" ]; then
+            echo "::error::gj-dormant-watch FAILED"
+            exit 1
+          fi
+      - name: Checkpoint state to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          # S32 race fix: checkpoint ONLY the files THIS run touched.
+          mkdir -p /tmp/watch_state
+          FILES=$(git status --porcelain ingest/data/board_watch/ \
+            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl)$' || true)
+          echo "checkpointing: ${FILES:-<none>}"
+          for f in $FILES; do
+            mkdir -p "/tmp/watch_state/$(dirname $f)"
+            cp "$f" "/tmp/watch_state/$f" 2>/dev/null || true
+          done
+          git config user.name "board-watch-bot"
+          git config user.email "actions@github.com"
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            for f in $FILES; do
+              cp "/tmp/watch_state/$f" "$f" 2>/dev/null || true
+            done
+            git add ingest/data/board_watch
+            if git diff --cached --quiet; then
+              echo "no state change to commit"; break
+            fi
+            git commit -m "gj-dormant-watch checkpoint [skip ci]" || true
+            if git push origin main; then push_ok=1; break; fi
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::push failed after 3 attempts — state rescued in /tmp"
+            exit 1
+          fi

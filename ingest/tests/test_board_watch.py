@@ -1961,6 +1961,14 @@ class TestShippedWatchConfig:
                             w["label"])
                         assert w.get("tags") in (["li"], ["li_dormant"]), (
                             w["label"])
+                    elif kind == "gjobs":
+                        # S33: the Google-Jobs gap-filler contracts
+                        assert org in site_boards.GJOBS_CONTRACTS, (
+                            w["board"])
+                        assert w.get("skip_li_corroboration") is True, (
+                            w["label"])
+                        assert w.get("tags") in (["gj"], ["gj_dormant"]), (
+                            w["label"])
                     else:
                         assert not org, w["board"]
                     assert w["board"].startswith("custom:"), w["board"]
@@ -2023,7 +2031,9 @@ class TestShippedWatchConfig:
         # S32: +59 LinkedIn-guest company boards (18 daily-lane
         # custom:licompany + 41 dormant-liveness weekly lane — the
         # S32 wave; evidence audit/s32_li/probe9_cohort_results.json)
-        assert len(cfg["watches"]) == 212
+        # S33: +6 Google-Jobs gap-filler boards (4 weekly custom:gjobs
+        # + 2 monthly dormant probes; evidence audit/s33_gj/probe2_*)
+        assert len(cfg["watches"]) == 218
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",
@@ -2486,3 +2496,123 @@ class TestS18ReviewAmendments:
         m = json.loads(
             (tmp_path / "x_us_fulltime.legs.json").read_text())
         assert m["egress_streak"] == 0
+
+
+class TestDeferredRetryPass:
+    """S33 (li #4 + dormant #1, 10-12): intermittent 429 walls left
+    boards red while their NEIGHBORS succeeded seconds later. main()
+    now runs ONE deferred-retry pass: a cool-down, then re-runs only
+    the failed watches once (heals transient rate-limit failures
+    in-run; WATCH_RETRY_COOLDOWN_S=0 disables; hard failures stay
+    loud — the retry never masks a second failure)."""
+
+    def _run_main(self, tmp_path, monkeypatch, outcomes):
+        monkeypatch.setattr(watch, "WATCH_DIR", tmp_path)
+        monkeypatch.setattr(watch, "CONFIG_PATH", tmp_path / "config.json")
+        (tmp_path / "config.json").write_text(json.dumps(
+            {"watches": [dict(CFG)]}), encoding="utf-8")
+        monkeypatch.setattr(sys, "argv", ["gha_board_watch.py"])
+        monkeypatch.setattr(watch, "load_config", lambda: Config())
+        monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
+        calls = {"n": 0}
+
+        def fake_run_watch(w, cfg):
+            i = min(calls["n"], len(outcomes) - 1)
+            calls["n"] += 1
+            out = outcomes[i]
+            if isinstance(out, Exception):
+                raise out
+            return out
+        monkeypatch.setattr(watch, "run_watch", fake_run_watch)
+        sleeps: list[float] = []
+        monkeypatch.setattr(time, "sleep", sleeps.append)
+        rc = watch.main()
+        return rc, calls["n"], sleeps
+
+    def test_transient_failure_heals_on_retry(
+            self, wdir, monkeypatch, capsys):
+        rc, calls, sleeps = self._run_main(
+            wdir, monkeypatch,
+            [RuntimeError("licompany:x: LinkedIn guest feed HTTP 429"),
+             "complete"])
+        assert rc == 0 and calls == 2
+        assert sleeps == [120.0]        # the one cool-down, nothing else
+        out = capsys.readouterr()
+        text = out.out + out.err
+        assert "deferred-retry pass: 1 failed" in text
+        assert "RETRY HEALED -> complete" in text
+        assert "'test_watch': 'complete'" in text
+
+    def test_persistent_failure_stays_loud(
+            self, wdir, monkeypatch, capsys):
+        boom = RuntimeError("licompany:x: LinkedIn guest feed HTTP 429")
+        rc, calls, sleeps = self._run_main(
+            wdir, monkeypatch, [boom, boom])
+        assert rc == 0 and calls == 2
+        out = capsys.readouterr()
+        text = out.out + out.err
+        assert "retry still failing" in text
+        assert "'test_watch': 'failed'" in text
+
+    def test_all_green_no_retry_pass(self, wdir, monkeypatch, capsys):
+        rc, calls, sleeps = self._run_main(wdir, monkeypatch, ["complete"])
+        assert rc == 0 and calls == 1 and sleeps == []
+        out = capsys.readouterr()
+        assert "deferred-retry pass" not in (out.out + out.err)
+
+    def test_cooldown_zero_disables(
+            self, wdir, monkeypatch, capsys):
+        monkeypatch.setenv("WATCH_RETRY_COOLDOWN_S", "0")
+        boom = RuntimeError("HTTP 429")
+        rc, calls, sleeps = self._run_main(wdir, monkeypatch, [boom])
+        assert rc == 0 and calls == 1 and sleeps == []
+        out = capsys.readouterr()
+        assert "deferred-retry pass" not in (out.out + out.err)
+        assert "'test_watch': 'failed'" in (out.out + out.err)
+
+
+class TestS33ContractOwnerRule:
+    """S33: the same company's licompany board + gjobs board share ONE
+    variant-namespace owner ('contract:{key}') — two sources of the
+    same entity must self-agree, not false-collide. A DIFFERENT company
+    claiming the same string still fails loudly."""
+
+    def test_same_company_li_plus_gj_no_false_collision(self):
+        import gha_board_watch as gw
+        watches = [
+            {"label": "renogy_us_fulltime",
+             "board": "custom:licompany:renogy",
+             "company": "Renogy", "tags": ["li_dormant"]},
+            {"label": "renogy_gj_us",
+             "board": "custom:gjobs:renogy",
+             "company": "Renogy", "tags": ["gj"]},
+        ]
+        gw._validate_variant_uniqueness(watches)   # same owner: fine
+
+    def test_gjobs_variant_still_collides_across_companies(self):
+        import gha_board_watch as gw
+        watches = [
+            {"label": "renogy_gj_us",
+             "board": "custom:gjobs:renogy",
+             "company": "Renogy"},
+            {"label": "rival_gj_us",
+             "board": "custom:gjobs:rival",
+             "company": "Rival Co"},
+        ]
+        # inject a variant collision via config li_variants
+        watches[1]["li_variants"] = ["Renogy"]
+        with pytest.raises(SystemExit, match="cross-company join risk"):
+            gw._validate_variant_uniqueness(watches)
+
+    def test_watch_owner_rule(self):
+        import gha_board_watch as gw
+        assert gw._watch_owner({"label": "x", "board":
+                                "custom:gjobs:renogy"}) == \
+            "contract:renogy"
+        assert gw._watch_owner({"label": "x", "board":
+                                "custom:licompany:renogy"}) == \
+            "contract:renogy"
+        assert gw._watch_owner({"label": "x", "board":
+                                "custom:ssrpage:foo"}) == "x"
+        assert gw._watch_owner({"label": "x", "board":
+                                "nvidia|wd5|site"}) == "x"

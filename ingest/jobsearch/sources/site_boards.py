@@ -46,14 +46,16 @@ raw ISO on the row (firstPublishedIso) for future absolute-basis work.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
 import sys
 import time
 import http.cookiejar
+import urllib.parse
 import urllib.request
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from html import unescape
 from typing import Optional
 
@@ -11825,6 +11827,8 @@ class CWSJobsAdapter:
 _LI_GUEST_SEARCH = ("https://www.linkedin.com/jobs-guest/jobs/api/"
                     "seeMoreJobPostings/search")
 _LI_STUB_MAX_B = 100          # chromeless end-of-serving stub bound
+_LI_429_LADDER = (45, 60, 90)  # S33: page-0 429 backoff ladder (deep
+                               # pages use only the first rung)
 
 
 class LinkedInCompanyAdapter:
@@ -11933,17 +11937,25 @@ class LinkedInCompanyAdapter:
             # a delay instead of a failed board (state untouched was
             # the correct fail-safe, but retrying is cheaper than a
             # red run + manual re-dispatch).
-            code, body, loc_hdr = self._get(_LI_GUEST_SEARCH, {
-                "f_C": str(urn), "location": self.c.get(
-                    "location", "United States"),
-                "f_TPR": "r2592000", "sortBy": "DD", "start": str(offset)})
-            if code == 429 and _page < 9 and offset == 0:
-                time.sleep(45)
-                code, body, loc_hdr = self._get(_LI_GUEST_SEARCH, {
-                    "f_C": str(urn), "location": self.c.get(
-                        "location", "United States"),
-                    "f_TPR": "r2592000", "sortBy": "DD",
-                    "start": str(offset)})
+            # S33 (li #4 + dormant #1, 10-12): the Azure 429 wall is
+            # INTERMITTENT PER-REQUEST — boards SUCCEEDED between
+            # 429-failed ones seconds apart, and one 45s retry was
+            # too shallow (3+5 boards still red). Escalated ladder:
+            # page-0 = 3 sleeps (45/60/90s, 4 attempts), deeper
+            # pages = 1 (45s) — bounded, still fails loudly after
+            # the ladder so state stays untouched on hard walls.
+            params = {"f_C": str(urn), "location": self.c.get(
+                "location", "United States"),
+                "f_TPR": "r2592000", "sortBy": "DD", "start": str(offset)}
+            ladder = list(_LI_429_LADDER) if offset == 0 else \
+                list(_LI_429_LADDER[:1])
+            code, body, loc_hdr = self._get(_LI_GUEST_SEARCH, params)
+            for sleep_s in ladder:
+                if code != 429:
+                    break
+                time.sleep(sleep_s)
+                code, body, loc_hdr = self._get(
+                    _LI_GUEST_SEARCH, params)
             if code != 200:
                 hint = f" (302 -> {loc_hdr[:60]})" if code in (301, 302) \
                     else ""
@@ -12218,6 +12230,362 @@ LICOMPANY_CONTRACTS: dict[str, dict] = {
 }
 
 
+# ── S33: Google Jobs gap-filler boards (custom:gjobs:{key}) ────────────
+# D-S32-1 layer 2, productized per the S33 directive: not "one Renogy"
+# but a REUSABLE lane for ANY company whose postings live only on niche
+# aggregators (zero LinkedIn-guest cards + no own board — the S32 RCA).
+
+_GJ_SEARCH_URL = ("https://www.google.com/search?q={query}"
+                  "&ibp=htl;jobs&hl=en&gl=us")
+_GJ_STUB_MAX_B = 3000    # cardless consent/shell pages (measured 908B)
+_GJ_WINDOW_MAX_B = 30000
+_GJ_JD_MAX = 12000
+_GJ_TTL = 21600.0        # scrape cache: 1 firecrawl credit per RUN
+_GJ_SCRAPE_CACHE: dict[str, tuple[float, str]] = {}
+
+# locale-independent card anchors — TWO shapes, both live-measured
+# (2026-10-13, audit/s33_gj/):
+#   expanded:  title / company / "loc • via X" / share-junk / age / tt
+#   compact:   title / "company · loc · via X" (\xa0-tolerant)
+_GJ_ANCHOR_RE = re.compile(
+    r"^(?P<title>[^\n•·]{3,140})\n+"
+    r"(?P<company>[^\n•·]{2,80})\n+"
+    r"(?P<loc>[^\n•]{2,80}) • via (?P<via>[^\n]{2,60})\n",
+    re.MULTILINE)
+_GJ_ANCHOR_COMPACT_RE = re.compile(
+    r"^(?P<title>[^\n•·]{3,140})\n+"
+    r"(?P<company>[^\n•·]{2,80})[ \xa0]*·[ \xa0]*"
+    r"(?P<loc>[^\n•·]{2,80})[ \xa0]*·[ \xa0]*via (?P<via>[^\n]{2,60})\n",
+    re.MULTILINE)
+_GJ_AGE_RE = re.compile(
+    r"^\s*(?P<age>\d+\+? (?:hour|day|week|month)s? ago|"
+    r"\d+ minutes? ago|hours? ago|just now)\s*$", re.MULTILINE)
+_GJ_TT_RE = re.compile(
+    r"^\s*(?P<tt>Full[- ]time|Part[- ]time|Contract|Temporary|"
+    r"Internship|Apprenticeship)\s*$", re.MULTILINE)
+_GJ_TT_CANON = {
+    "full-time": "Full time", "full time": "Full time",
+    "part-time": "Part time", "part time": "Part time",
+    "contract": "Contract", "temporary": "Temporary",
+    "internship": "Internship", "apprenticeship": "Apprenticeship"}
+
+
+def _gj_age_iso(age: str) -> str:
+    """Relative card age → ISO date (the standard label machinery
+    consumes ISO; 'just now'/'hours ago' → today). Unparseable → ''."""
+    a = (age or "").strip().lower()
+    if not a:
+        return ""
+    if "minute" in a or "hour" in a or a == "just now":
+        return date.today().isoformat()
+    m = re.match(r"(\d+)\+? (day|week|month)s? ago", a)
+    if not m:
+        return ""
+    n = int(m.group(1))
+    days = n * {"day": 1, "week": 7, "month": 30}[m.group(2)]
+    return (date.today() - timedelta(days=days)).isoformat()
+
+
+class GoogleJobsAdapter:
+    """custom:gjobs:{key} — a Google-Jobs vertical scrape as a board.
+
+    S33 (D-S33-1): the aggregator-of-aggregators as the LAST-MILE
+    source for companies whose postings live ONLY on niche aggregators
+    (Trabajo.org / Terra.do / BeBee / Talents By Vaia class) — zero
+    LinkedIn-guest cards + no own board (the S32 RCA verdict). ONE
+    firecrawl credit per company-run buys the WHOLE board: the jobs
+    vertical markdown carries cards + full JD inline (detail enrichment
+    is a cache hit — zero extra credits; _GJ_TTL outlives the run).
+
+    Transport (measured 2026-10-13, audit/s33_gj/): direct
+    requests/curl_cffi serve a cardless JS shell — firecrawl v2
+    markdown (waitFor 4s) is the ONLY tier that renders the widget.
+    hl=en&gl=us pins the locale: firecrawl egress locale varies PER
+    REQUEST (one run served Govee EN and Renogy FR — "À plein temps",
+    "États-Unis"; the S33 probe evidence). The parser is ALSO
+    locale-tolerant (anchors carry no localizable strings; age/tt are
+    best-effort scans, never structural).
+
+    Honesty doctrine (the licompany grammar, ONE asymmetry):
+      - firecrawl API/scrape failure raises (state untouched,
+        fail-loudly; the driver's S33 deferred-retry pass covers
+        transient 500s);
+      - cardless body < _GJ_STUB_MAX_B = consent/shell → complete=False
+        (retryable, never terminal — S9/A8);
+      - anchors present + ZERO g_variant matches = a COMPLETE 0-row
+        board: Google ALWAYS serves noise cards for thin companies
+        (86 virtual-assistant homonyms for VAVA, 23 US-Government for
+        Govee — measured) and the guard drops them all = the honest
+        dormant verdict. (licompany RAISES in the equivalent case
+        because a scoped LinkedIn feed has no noise class.);
+      - variant match is EXACT lowercase equality, never substring
+        ("US Government Jobs" must not match "govee");
+      - postedOn from the card's relative age → ISO → standard label;
+        missing age ships '' (the honest-blank class).
+    """
+
+    KIND = "gjobs"
+
+    def __init__(self, org: str, cfg: Config):
+        if org not in GJOBS_CONTRACTS:
+            raise ValueError(
+                f"gjobs: unknown contract {org!r} (known: "
+                f"{sorted(GJOBS_CONTRACTS)})")
+        self.key = org
+        self.c = GJOBS_CONTRACTS[org]
+        self.company = self.c["company"]
+        self.ats = "gjobs"
+        self.cfg = cfg
+
+    def _scrape(self) -> str:
+        key = _firecrawl_key()
+        if not key:
+            raise RuntimeError(
+                f"gjobs:{self.key}: FIRECRAWL_API_KEY missing — this "
+                f"tier is firecrawl-only (direct fetches serve a "
+                f"cardless JS shell, measured S33)")
+        url = _GJ_SEARCH_URL.format(
+            query=urllib.parse.quote_plus(self.c["query"]))
+        req = urllib.request.Request(
+            "https://api.firecrawl.dev/v2/scrape",
+            data=json.dumps({
+                "url": url, "formats": ["markdown"],
+                "onlyMainContent": False,
+                "waitFor": int(self.c.get("wait_ms", 4000))}).encode(),
+            headers={"Content-Type": "application/json",
+                     "Authorization": f"Bearer {key}"},
+            method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                d = json.loads(r.read().decode("utf-8", "replace"))
+        except Exception as exc:
+            raise RuntimeError(
+                f"gjobs:{self.key}: firecrawl scrape failed "
+                f"({type(exc).__name__}: {exc}) — failing loudly, "
+                f"state untouched") from None
+        if not d.get("success"):
+            raise RuntimeError(
+                f"gjobs:{self.key}: firecrawl success=false "
+                f"({json.dumps(d)[:160]})")
+        md = str((d.get("data") or {}).get("markdown") or "")
+        if not md:
+            raise RuntimeError(
+                f"gjobs:{self.key}: firecrawl returned EMPTY markdown")
+        return md
+
+    def _md(self) -> str:
+        ck = f"gjobs:{self.key}"
+        hit = _GJ_SCRAPE_CACHE.get(ck)
+        if hit and time.monotonic() - hit[0] < _GJ_TTL:
+            return hit[1]
+        md = self._scrape()               # exactly ONE credit per run
+        _GJ_SCRAPE_CACHE[ck] = (time.monotonic(), md)
+        return md
+
+    def _walk(self) -> tuple[list[dict], bool, int]:
+        """(variant-matched cards, complete, noise_card_count)."""
+        md = self._md()
+        anchors = sorted(
+            [(m.start(), m.end(), m.groupdict())
+             for rx in (_GJ_ANCHOR_RE, _GJ_ANCHOR_COMPACT_RE)
+             for m in rx.finditer(md)],
+            key=lambda t: t[0])
+        if not anchors:
+            # cardless: consent/shell (small) or render failure —
+            # retryable, NEVER terminal (the S9/A8 blocked doctrine)
+            return [], False, 0
+
+        def _k(g: dict) -> tuple:
+            return (g["title"].strip(), g["loc"].strip(),
+                    g["via"].strip())
+
+        variants = {v.lower() for v in self.c["g_variants"]}
+        cards: list[dict] = []
+        seen_keys: set = set()
+        n = len(anchors)
+        noise = 0
+        for i, (s, e, g) in enumerate(anchors):
+            k = _k(g)
+            if k in seen_keys:
+                continue                    # same-card double print
+            seen_keys.add(k)
+            # window: this anchor → the NEXT DIFFERENT-card anchor
+            # (skips the same card's compact double print; the JD
+            # section sits AFTER it — S33 probe-position evidence)
+            j = i + 1
+            while j < n and _k(anchors[j][2]) == k:
+                j += 1
+            w_end = (anchors[j][0] if j < n
+                     else min(e + _GJ_WINDOW_MAX_B, len(md)))
+            window = md[e:min(w_end, e + _GJ_WINDOW_MAX_B)]
+            comp = g["company"].strip().lower()
+            if comp not in variants:
+                noise += 1
+                continue
+            age_m = _GJ_AGE_RE.search(window)
+            tt_m = _GJ_TT_RE.search(window)
+            age = age_m.group("age") if age_m else ""
+            iso = _gj_age_iso(age)
+            label, iso_n = _posted_label(iso or None)
+            tt = tt_m.group("tt") if tt_m else ""
+            title = g["title"].strip()
+            cards.append({
+                "rid": hashlib.sha1(
+                    f"{title}|{g['company'].strip()}|{g['loc'].strip()}"
+                    f"|{g['via'].strip()}".encode(
+                        "utf-8")).hexdigest()[:16],
+                "title": title,
+                "company": g["company"].strip(),
+                "loc": g["loc"].strip(),
+                "via": g["via"].strip(),
+                "posted_label": label,
+                "iso": iso_n,
+                "tt_canon": _GJ_TT_CANON.get(
+                    tt.strip().lower(), ""),
+                "url": _GJ_SEARCH_URL.format(query=urllib.parse.quote_plus(
+                    f"{title} {self.company}")),
+                "_window": window,
+            })
+        return cards, True, noise
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list",
+                   include_remote: bool = False,
+                   geo_scope: Optional[str] = None,
+                   ) -> tuple[dict[str, dict], dict]:
+        cards, complete, noise = self._walk()
+        rows: dict[str, dict] = {}
+        for c in cards:
+            rows[c["rid"]] = {
+                "reqId": c["rid"],
+                "title": c["title"],
+                "company": self.company,
+                "url": c["url"],
+                "externalPath": f"/{c['rid']}",
+                "locationsText": c["loc"],
+                "postedOn": c["posted_label"],
+                "timeType": c["tt_canon"],
+                "bulletFields": [c["rid"]],
+                "ats": self.ats,
+                "departments": [],
+                "countries": [],
+                "remoteType": "",
+            }
+        meta = {
+            "complete": complete, "total": len(cards), "pages": 1,
+            "country_client": False,   # query-scoped ("X jobs USA" + gl=us)
+            "client_filtered": 0, "kept_remote": 0,
+            "geo_scope": "", "ats": self.ats,
+        }
+        if not complete:
+            print(f"[{progress_label}] gjobs:{self.key}: BLOCKED "
+                  f"(cardless page; prior rows retained)",
+                  file=sys.stderr, flush=True)
+        print(f"[{progress_label}] gjobs:{self.key}: {len(rows)} rows "
+              f"(variant-matched; {noise} noise cards dropped)",
+              file=sys.stderr, flush=True)
+        return rows, meta
+
+    @staticmethod
+    def _jd_text(card: dict) -> str:
+        """The card window's JD body (heading line dropped, links
+        flattened, markdown escapes cleaned, capped). Highlights-only
+        cards fall back to the highlights section (still the posting's
+        own text)."""
+        w = card.get("_window", "")
+        i = w.find("## Job description")
+        if i < 0:
+            i = w.find("### Job highlights")
+        if i < 0:
+            return ""
+        seg = w[i:]
+        m = re.search(r"\n## ", seg[1:])       # next h2 section
+        if m:
+            seg = seg[:m.start() + 1]
+        lines = [re.sub(r"^#{1,6}\s*", "", ln).strip()
+                 for ln in seg.split("\n")]
+        lines = lines[1:] if lines and lines[0].lower() in (
+            "job description", "job highlights") else lines
+        txt = "\n".join(ln for ln in lines if ln)
+        txt = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", txt)
+        txt = re.sub(r"\\([.\-+_!()])", r"\1", txt)   # md escapes
+        txt = re.sub(r"\n{2,}", "\n", txt).strip()
+        return txt[:_GJ_JD_MAX]
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("?")[0]
+        cards, _, _ = self._walk()            # cache hit — no credit
+        j = next((x for x in cards if x["rid"] == rid), None)
+        if j is None:
+            return None
+        jd = self._jd_text(j)
+        text = " ".join(jd.split())
+        mode_m = re.search(r"\b(Remote|Hybrid|On-site)\b", text, re.I)
+        return {
+            "jobPostingInfo": {
+                "title": j["title"],
+                "location": j["loc"] or "See posting",
+                "additionalLocations": [],
+                "jobDescription": jd[:12000],
+                "timeType": j["tt_canon"],
+                "startDate": "",
+                "externalUrl": j["url"],
+                "jobReqId": rid,
+                "postedOn": j["posted_label"],
+                "country": None,
+            },
+            "hiringOrganization": {"name": self.company},
+            "similarJobs": [],
+            "firstPublishedIso": j["iso"],
+            "workMode": mode_m.group(1) if mode_m else "",
+            "numApplicants": "",
+            "closed": False,
+        }
+
+
+GJOBS_CONTRACTS: dict[str, dict] = {
+    # ── weekly lane (live aggregator-only postings measured
+    #    2026-10-13, audit/s32_li/probe2_*.md) ─────────────────────────
+    "renogy": {
+        "company": "Renogy",
+        "query": "Renogy jobs USA",
+        # observed card strings: "Renogy", "RENOGY"
+        "g_variants": ["renogy"]},
+    "jinkosolar": {
+        "company": "JinkoSolar",
+        "query": "JinkoSolar jobs USA",
+        # observed: "JinkoSolar", "JINKO SOLAR U.S. INDUSTRIES, Inc.",
+        # "JINKO SOLAR U.S. INDUSTRIES", "Jinko Solar Co." (multiple US
+        # entities — ALL are Jinko; pinned exactly)
+        "g_variants": ["jinkosolar", "jinko solar u.s. industries, inc.",
+                       "jinko solar u.s. industries", "jinko solar co."]},
+    "eveenergy": {
+        "company": "EVE Energy",
+        "query": "EVE Energy jobs USA",
+        # observed: "EVE Energy Co.,Ltd." (Lake Forest / Orange CA)
+        "g_variants": ["eve energy co.,ltd."]},
+    "jackery": {
+        "company": "Jackery",
+        "query": "Jackery jobs USA",
+        "g_variants": ["jackery"]},
+    # ── monthly dormant probes (zero aggregator postings measured
+    #    2026-10-13; 23/86 homonym noise cards = the honest-zero
+    #    evidence — 0->k flip detection at 1 credit/month) ────────────
+    "govee": {
+        "company": "Govee",
+        "query": "Govee jobs USA",
+        "g_variants": ["govee"]},
+    "vava": {
+        "company": "VAVA",
+        "query": "VAVA jobs USA",
+        "g_variants": ["vava"]},
+}
+
+
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "lever": LeverAdapter, "workable": WorkableAdapter,
              "feishuhire": FeishuHireAdapter,
@@ -12264,4 +12632,6 @@ _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "longi": LongiAdapter, "sfus": SFUSAdapter,
              "infold": InfoldAdapter, "isolved": IsolvedAdapter,
              "tribepad": TribepadAdapter, "cwsjobs": CWSJobsAdapter,
-             "licompany": LinkedInCompanyAdapter}
+             "licompany": LinkedInCompanyAdapter,
+             # S33 wave (contracts + probe evidence: audit/s33_gj/)
+             "gjobs": GoogleJobsAdapter}

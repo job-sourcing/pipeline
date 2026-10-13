@@ -89,6 +89,7 @@ tests/test_s27_geo_scope.py
 tests/test_s28_geo_canon.py
 tests/test_s28_geo_spread.py
 tests/test_s30_re_wave.py
+tests/test_s32_licompany.py
 tests/test_s9_titlesearch.py
 tests/test_scoring.py
 tests/test_site_boards.py

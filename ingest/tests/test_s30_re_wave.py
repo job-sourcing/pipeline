@@ -491,8 +491,9 @@ class TestS30WireRoster:
                   "ats:paycom:us-cent/39DCF574C16448FF09ADD3EF809F9EF2",
                   "custom:a123", "ats:teamtailor:polestar"):
             assert b in boards, b
-        assert len(w) == 212   # S31: 122 + 31 custom-adapter wave;
+        assert len(w) == 218   # S31: 122 + 31 custom-adapter wave;
         # S32: +59 LinkedIn-guest company boards (18 daily + 41 dormant)
+        # S33: +6 Google-Jobs gap-filler boards (4 weekly + 2 dormant)
 
     def test_wire_specs_all_parse(self):
         w = self._cfg()["watches"]
@@ -531,12 +532,23 @@ class TestS30ConfigGuard:
         # collided with the weichai ADP watch — the cross-company join
         # guard is load-bearing; pin it locally so it fails at test
         # time, not on the runner.
+        # S33: same-ENTITY claims share one owner — a company's
+        # licompany board and gjobs board are two SOURCES of one
+        # company (owner 'contract:{key}'), not a collision. This
+        # mirrors the driver's _watch_owner rule exactly.
         from collections import defaultdict
+        import re as _re
         w = self._cfg()["watches"]
+
+        def _owner(x):
+            m = _re.match(r"^custom:(licompany|gjobs):([a-z0-9_]+)$",
+                          x["board"])
+            return f"contract:{m.group(2)}" if m else x["label"]
+
         own = defaultdict(set)
         for x in w:
-            own[x["company"].lower()].add(x["label"])
+            own[x["company"].lower()].add(_owner(x))
             for v in x.get("li_variants", []):
-                own[v.lower()].add(x["label"])
+                own[v.lower()].add(_owner(x))
         dups = {k: v for k, v in own.items() if len(v) > 1}
         assert dups == {}, dups

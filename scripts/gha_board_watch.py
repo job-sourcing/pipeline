@@ -1006,6 +1006,24 @@ def _egress_streak_reset(label: str) -> None:
         _atomic_write(meta, json.dumps(m))
 
 
+_CONTRACT_KINDS = ("licompany", "gjobs")
+_CONTRACT_BOARD_RE = re.compile(
+    r"^custom:(licompany|gjobs):([a-z0-9_]+)$")
+
+
+def _watch_owner(w: dict) -> str:
+    """S33: the variant-namespace owner for a watch. A watch on a
+    CONTRACT board (custom:licompany:{k} / custom:gjobs:{k}) owns its
+    claims as 'contract:{k}' — the same company's LinkedIn board and
+    Google-Jobs board share one owner instead of false-colliding (the
+    Renogy class: li-contract + gj-contract, same entity, two sources).
+    Non-contract watches own under their label as before."""
+    m = _CONTRACT_BOARD_RE.match(str(w.get("board") or ""))
+    if m:
+        return f"contract:{m.group(2)}"
+    return w["label"]
+
+
 def _validate_variant_uniqueness(watches: list[dict]) -> None:
     """S18 review SEV-3 2: a variant that names ANOTHER roster company
     (or a company that IS another watch's variant) would let that
@@ -1024,39 +1042,43 @@ def _validate_variant_uniqueness(watches: list[dict]) -> None:
         owners.setdefault(name, label)
 
     for w in watches:
+        owner = _watch_owner(w)
         base = str(w.get("company") or "").strip().lower()
         if base:
-            _claim(base, w["label"])
+            _claim(base, owner)
         for v in (w.get("li_variants") or []):
             v = str(v).strip().lower()
             if v:
-                _claim(v, w["label"])
+                _claim(v, owner)
 
     # S32 (review P0-1): licompany contracts live in code, not config —
     # claim their display names + li_variants HERE so a future contract
     # colliding with a watch's company/variants fails at config load in
     # BOTH directions (the EcoFlow/MINISO/CelerData class of overlap).
-    # A contract referenced by a watch claims under THAT watch's label
-    # (the same company's own watch + contract must self-agree, not
-    # self-collide); an unreferenced contract claims as "licompany:"
-    # and still fails loudly against any OTHER owner.
+    # A contract referenced by a watch claims under THAT watch's owner
+    # (S33: 'contract:{key}' — same-key boards of different kinds are
+    # the SAME entity, not a collision); an unreferenced contract still
+    # claims and fails loudly against any OTHER owner.
+    # S33: gjobs contracts join the same namespace (g_variants).
     try:
-        from jobsearch.sources.site_boards import LICOMPANY_CONTRACTS
-        owner_by_key = {}
+        from jobsearch.sources.site_boards import (
+            GJOBS_CONTRACTS, LICOMPANY_CONTRACTS)
+        owner_by_key: dict[str, str] = {}
         for w in watches:
-            b = str(w.get("board") or "")
-            if b.startswith("custom:licompany:"):
-                owner_by_key[b.split("custom:licompany:", 1)[1]] = \
-                    w["label"]
-        for key, c in LICOMPANY_CONTRACTS.items():
-            owner = owner_by_key.get(key, f"licompany:{key}")
-            nm = str(c.get("company") or "").strip().lower()
-            if nm:
-                _claim(nm, owner)
-            for v in (c.get("li_variants") or []):
-                v = str(v).strip().lower()
-                if v:
-                    _claim(v, owner)
+            m = _CONTRACT_BOARD_RE.match(str(w.get("board") or ""))
+            if m:
+                owner_by_key[m.group(2)] = _watch_owner(w)
+        for contracts, vfield in ((LICOMPANY_CONTRACTS, "li_variants"),
+                                  (GJOBS_CONTRACTS, "g_variants")):
+            for key, c in contracts.items():
+                owner = owner_by_key.get(key, f"contract:{key}")
+                nm = str(c.get("company") or "").strip().lower()
+                if nm:
+                    _claim(nm, owner)
+                for v in (c.get(vfield) or []):
+                    v = str(v).strip().lower()
+                    if v:
+                        _claim(v, owner)
     except ImportError:
         pass  # library-only contexts (tests without the package)
 
@@ -1717,6 +1739,33 @@ def main() -> int:
                     f.write(f"\n**board-watch {w['label']} CRASHED: "
                             f"{type(exc).__name__}: {exc}**\n")
             results[w["label"]] = "failed"
+
+    # S33 deferred-retry pass (li #4 + dormant #1, 10-12): intermittent
+    # 429 walls left boards red while their NEIGHBORS succeeded seconds
+    # later — one cool-down then re-run ONLY the failed watches once,
+    # healing transient rate-limit failures in-run instead of a red run
+    # + stale boards. WATCH_RETRY_COOLDOWN_S=0 disables. Contract-class
+    # failures re-fail cheaply (one page-0 request) — kept unfiltered
+    # by design (simple > clever; the loud failure still wins).
+    if not args.seed_from:
+        retry_cd = _float_env("WATCH_RETRY_COOLDOWN_S", 120.0)
+        failed = [w for w in watches
+                  if results.get(w.get("label")) == "failed"]
+        if failed and retry_cd > 0:
+            print(f"[watch] deferred-retry pass: {len(failed)} failed "
+                  f"watch(es) — {retry_cd:.0f}s cool-down, one retry "
+                  f"each", flush=True)
+            time.sleep(retry_cd)
+            for w in failed:
+                try:
+                    results[w["label"]] = run_watch(w, cfg)
+                    if results[w["label"]] != "failed":
+                        print(f"[watch:{w['label']}] RETRY HEALED -> "
+                              f"{results[w['label']]}", flush=True)
+                except Exception as exc:
+                    print(f"[watch:{w['label']}] retry still failing: "
+                          f"{type(exc).__name__}: {exc}", file=sys.stderr)
+                    results[w["label"]] = "failed"
 
     gha_env = os.environ.get("GITHUB_ENV")
     if gha_env:
