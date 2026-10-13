@@ -2616,3 +2616,167 @@ class TestS33ContractOwnerRule:
                                 "custom:ssrpage:foo"}) == "x"
         assert gw._watch_owner({"label": "x", "board":
                                 "nvidia|wd5|site"}) == "x"
+
+
+class TestS33PostedOnPlumbing:
+    """S33: the 19%-blank-postedOn class was a SEAM, not missing data —
+    enrich_new kept the LIST row's blank label even when the detail
+    payload served the exact date (iCIMS ld+json datePosted), and the
+    state rewrite WIPED prior dates on blank list labels. Both fixed:
+    detail upgrades the feed record; the state chain is
+    list -> enriched -> prior."""
+
+    def test_detail_postedon_upgrades_feed_record(
+            self, wdir, monkeypatch):
+        monkeypatch.setattr(watch, "DETAIL_SLEEP", 0.0)
+        rows = [{"reqId": "JR1", "title": "T", "company": "X",
+                 "locationsText": "US, CA, Santa Clara",
+                 "postedOn": "", "url": "https://x/1",
+                 "externalPath": "/JR1", "remoteType": "",
+                 "bulletFields": ["JR1"]}]
+        from jobsearch.sources import site_boards as sb
+        monkeypatch.setattr(
+            sb, "detail_payload",
+            lambda spec, path, cfg, country=None, time_type=None: {
+                "jobPostingInfo": {
+                    "title": "T", "location": "US, CA, Santa Clara",
+                    "additionalLocations": [], "jobDescription": "d",
+                    "timeType": "Full time", "startDate": "",
+                    "externalUrl": "https://x/1", "jobReqId": "JR1",
+                    "postedOn": "Posted 5 Days Ago", "country": None},
+                "hiringOrganization": {"name": "X"}, "similarJobs": []})
+        out = watch.enrich_new(rows, "custom:ssrpage:zzz", "X",
+                               watch.Config() if hasattr(
+                                   watch, "Config") else cfg_config(),
+                               time.monotonic() + 10)
+        assert out[0]["postedOn"] == "Posted 5 Days Ago"
+
+    def test_state_keeps_date_when_list_blank(
+            self, wdir, monkeypatch):
+        # two rows, both serving NO list label: JR2 exists in prior
+        # state WITH an old date (must NOT be wiped); JR3 is NEW and
+        # its enriched feed record carries the detail date (must land).
+        prior = [{"reqId": "JR2", "title": "Old",
+                  "first_seen": "2026-09-01", "last_seen": "2026-09-09",
+                  "last_postedOn": "Posted 30 Days Ago",
+                  "last_startDate": ""}]
+        state = wdir / "test_watch.state.jsonl"
+        state.write_text("\n".join(json.dumps(r) for r in prior) + "\n",
+                         encoding="utf-8")
+
+        def _row(rid):
+            d = _post(rid)
+            d["postedOn"] = ""            # the list serves no date
+            return d
+        monkeypatch.setattr(
+            watch, "current_postings",
+            lambda *a, **k: (
+                {"JR2": _row("JR2"), "JR3": _row("JR3")}, True, False))
+        monkeypatch.setattr(
+            watch, "enrich_new",
+            lambda rows, *a, **k: [
+                {"reqId": r["reqId"], "title": r["title"],
+                 "first_seen": "2026-09-10",
+                 "postedOn": "Posted 7 Days Ago",
+                 "locations": ["US, CA, Santa Clara"],
+                 "startDate": "2026-09-03", "description": "d",
+                 "url": r.get("url", "")} for r in rows])
+        monkeypatch.setattr(
+            watch, "corroborate_new", lambda *a, **k: {})
+        monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
+        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
+        monkeypatch.setattr(watch, "detect_reposts",
+                            lambda *a, **k: ([], []))
+        watch.run_watch(dict(CFG), cfg_config())
+        lines = {json.loads(x)["reqId"]: json.loads(x) for x in
+                 state.read_text(encoding="utf-8").splitlines()}
+        # existing row: prior date KEPT (no wipe on blank list label)
+        assert lines["JR2"]["last_postedOn"] == "Posted 30 Days Ago"
+        # new row: the detail-served date landed via the feed record
+        assert lines["JR3"]["last_postedOn"] == "Posted 7 Days Ago"
+
+
+class TestS33BackfillDates:
+    """--backfill-dates: the state-repair pass (blank rows ->
+    detail-served labels; departed rows skipped; idempotent)."""
+
+    def _setup(self, wdir, monkeypatch, blank_rows):
+        state = wdir / "test_watch.state.jsonl"
+        state.write_text("\n".join(json.dumps(r) for r in blank_rows)
+                         + "\n", encoding="utf-8")
+        current = {}
+        for r in blank_rows:
+            if r["reqId"] != "GONE":
+                current[r["reqId"]] = _post(r["reqId"])
+        monkeypatch.setattr(
+            watch, "current_postings",
+            lambda *a, **k: (current, True, False))
+        return state
+
+    def test_stamps_blanks_and_skips_departed(
+            self, wdir, monkeypatch):
+        rows = [
+            {"reqId": "A1", "title": "A", "first_seen": "2026-10-01",
+             "last_seen": "2026-10-12", "last_postedOn": "",
+             "last_startDate": ""},
+            {"reqId": "B2", "title": "B", "first_seen": "2026-10-01",
+             "last_seen": "2026-10-12", "last_postedOn":
+                 "Posted 3 Days Ago", "last_startDate": ""},
+            {"reqId": "GONE", "title": "G", "first_seen": "2026-10-01",
+             "last_seen": "2026-10-12", "last_postedOn": "",
+             "last_startDate": ""}]
+        state = self._setup(wdir, monkeypatch, rows)
+        monkeypatch.setattr(watch, "DETAIL_SLEEP", 0.0)
+        monkeypatch.setattr(watch, "BUDGET_SECONDS", 30)
+
+        def fake_detail(spec, path, cfg, country=None, time_type=None):
+            return {"jobPostingInfo": {
+                "postedOn": "Posted 21 Days Ago"}}
+        monkeypatch.setattr(
+            watch.site_boards, "detail_payload", fake_detail)
+        results = watch.backfill_dates(
+            [dict(CFG, board="custom:ssrpage:zzz")], cfg_config())
+        lines = [json.loads(x) for x in
+                 state.read_text(encoding="utf-8").splitlines()]
+        by = {r["reqId"]: r for r in lines}
+        assert by["A1"]["last_postedOn"] == "Posted 21 Days Ago"
+        assert by["B2"]["last_postedOn"] == "Posted 3 Days Ago"
+        assert by["GONE"]["last_postedOn"] == ""   # departed: skipped
+        assert by["A1"]["last_seen"] == "2026-10-12"  # untouched
+        assert results["test_watch"] == "backlog"     # GONE remains
+
+    def test_idempotent_second_run_reports_zero(
+            self, wdir, monkeypatch):
+        rows = [{"reqId": "A1", "title": "A",
+                 "first_seen": "2026-10-01", "last_seen": "2026-10-12",
+                 "last_postedOn": "Posted 2 Days Ago",
+                 "last_startDate": ""}]
+        state = self._setup(wdir, monkeypatch, rows)
+        results = watch.backfill_dates(
+            [dict(CFG, board="custom:ssrpage:zzz")], cfg_config())
+        assert results == {"test_watch": "complete"}
+        # state untouched
+        assert json.loads(state.read_text(encoding="utf-8"))[
+            "last_postedOn"] == "Posted 2 Days Ago"
+
+    def test_list_failure_fails_loudly_state_untouched(
+            self, wdir, monkeypatch):
+        rows = [{"reqId": "A1", "title": "A",
+                 "first_seen": "2026-10-01", "last_seen": "2026-10-12",
+                 "last_postedOn": "", "last_startDate": ""}]
+        state = wdir / "test_watch.state.jsonl"
+        state.write_text(json.dumps(rows[0]) + "\n", encoding="utf-8")
+
+        def boom(*a, **k):
+            raise RuntimeError("HTTP 429")
+        monkeypatch.setattr(watch, "current_postings", boom)
+        results = watch.backfill_dates(
+            [dict(CFG, board="custom:ssrpage:zzz")], cfg_config())
+        assert results == {"test_watch": "failed"}
+        assert json.loads(state.read_text(encoding="utf-8"))[
+            "last_postedOn"] == ""    # untouched
+
+
+def cfg_config():
+    from jobsearch.config import Config
+    return Config()

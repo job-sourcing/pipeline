@@ -296,6 +296,12 @@ def enrich_new(new_rows: list[dict], board_spec: str, company: str,
             rec["startDate"] = info.get("startDate") or ""
             rec["description"] = html_to_text(info.get("jobDescription") or "")
             rec["timeType"] = info.get("timeType") or ""
+            # S33: the DETAIL's postedOn is strictly richer than the list
+            # row's (iCIMS ld+json datePosted / gjobs card age / LinkedIn
+            # iso — boards that serve no list dates). The list value wins
+            # only when the detail has none.
+            rec["postedOn"] = (info.get("postedOn")
+                                or rec["postedOn"])
             rec["hiringOrg"] = (payload.get("hiringOrganization") or {}).get("name")
             rec["externalUrl"] = info.get("externalUrl") or rec["url"]
             # S13: the authoritative country from the detail payload —
@@ -1559,7 +1565,14 @@ def run_watch(w: dict, cfg: Config) -> str:
             or (feed_by_rid.get(rid) or {}).get("first_seen")
             or today,
             "last_seen": today,
-            "last_postedOn": r.get("postedOn") or "",
+            # S33: postedOn chain = list row → THIS run's enriched feed
+            # record (the detail-served date) → the prior state's date.
+            # A blank list label must never WIPE a known date (the
+            # 2,019-row blank-postedOn class was exactly this seam).
+            "last_postedOn": (r.get("postedOn")
+                              or (enr_by_rid.get(rid) or {}).get(
+                                  "postedOn")
+                              or p.get("last_postedOn") or ""),
             # S8-E2: a re-fetched (R2) startDate is the newest observation
             # for this reqId; enrichment otherwise; prior otherwise.
             # S14: a rescued row's evidence is its prior FEED record.
@@ -1671,11 +1684,95 @@ def seed_state(w: dict, list_path: Path, first_seen: str) -> None:
           f"(first_seen={first_seen or today})")
 
 
+def backfill_dates(watches: list[dict], cfg: Config) -> dict[str, str]:
+    """S33 --backfill-dates: state-repair pass for blank last_postedOn.
+
+    The 19%-blank class (2,019 rows at S33 open) is the LIST-serves-
+    no-dates seam (iCIMS/bytedance/workday sprawl) — the DETAIL
+    payloads often carry the exact date (ld+json datePosted, postedOn
+    labels). For each watch: resolve the current list (reqId ->
+    externalPath; departed rows are skipped honestly — their date is
+    gone with the posting), re-fetch details for blank rows bounded
+    by DETAILS_MAX + BUDGET_SECONDS, stamp last_postedOn, rewrite the
+    state atomically. NEVER touches new/gone/first_seen/last_seen.
+
+    Idempotent: re-run until every board reports 0 remain. The gjobs
+    boards self-skip (cards stamp dates at list time -> todo empty ->
+    zero scrapes)."""
+    results: dict[str, str] = {}
+    for w in watches:
+        label = w["label"]
+        state_path = WATCH_DIR / f"{label}.state.jsonl"
+        rows = _load_jsonl(state_path) if state_path.exists() else []
+        todo = [r for r in rows
+                if not (r.get("last_postedOn") or "").strip()]
+        if not todo:
+            results[label] = "complete"
+            print(f"[backfill:{label}] 0 blank rows — nothing to do",
+                  flush=True)
+            continue
+        spec = w["board"]
+        try:
+            current, _, _ = current_postings(
+                spec, w.get("country") or "", w.get("time_type") or "",
+                cfg, include_remote=bool(w.get("include_remote")),
+                geo_scope=w.get("geo_scope") or "")
+        except Exception as exc:
+            print(f"[backfill:{label}] list failed "
+                  f"({type(exc).__name__}: {exc}) — state untouched",
+                  file=sys.stderr, flush=True)
+            results[label] = "failed"
+            continue
+        is_site = site_boards.is_site_spec(spec)
+        board = None if is_site else workday.parse_board(spec)
+        deadline = time.monotonic() + BUDGET_SECONDS
+        stamped = gone = 0
+        for r in todo[:DETAILS_MAX]:
+            src = current.get(r["reqId"])
+            if src is None:
+                gone += 1                # departed — date gone with it
+                continue
+            try:
+                if is_site:
+                    payload = site_boards.detail_payload(
+                        spec, src.get("externalPath") or f"/{r['reqId']}",
+                        cfg, country=w.get("country"),
+                        time_type=w.get("time_type"))
+                else:
+                    payload = workday.detail_payload(
+                        board, src.get("externalPath") or "", cfg)
+            except Exception as exc:
+                print(f"[backfill:{label}] detail {r['reqId']} "
+                      f"err ({exc!r})", file=sys.stderr)
+                payload = None
+            info = (payload or {}).get("jobPostingInfo") or {}
+            lab = (info.get("postedOn") or "").strip()
+            if lab:
+                r["last_postedOn"] = lab
+                stamped += 1
+            if time.monotonic() > deadline:
+                print(f"[backfill:{label}] budget stop", flush=True)
+                break
+        remaining = sum(1 for r in rows
+                        if not (r.get("last_postedOn") or "").strip())
+        _atomic_write(state_path, "\n".join(
+            json.dumps(r, ensure_ascii=False) for r in rows) + "\n")
+        results[label] = "backlog" if remaining else "complete"
+        print(f"[backfill:{label}] stamped {stamped}/{len(todo)} blank "
+              f"rows ({gone} departed, {remaining} remain)", flush=True)
+    return results
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--label", help="run a single watch by label")
     ap.add_argument("--seed-from", help="list.jsonl to seed the state from")
     ap.add_argument("--first-seen", help="date for --seed-from (default today)")
+    ap.add_argument("--backfill-dates", action="store_true",
+                    help="S33 state-repair pass: re-fetch details for "
+                         "blank-last_postedOn rows and stamp the "
+                         "detail-served postedOn (idempotent; bounded "
+                         "per leg)")
     args = ap.parse_args()
 
     WATCH_DIR.mkdir(parents=True, exist_ok=True)
@@ -1711,6 +1808,7 @@ def main() -> int:
         print(f"[watch] config unreadable: {exc}", file=sys.stderr)
         return 0                       # exit-0 contract; tomorrow retries
     _validate_variant_uniqueness(watches)
+    cfg = load_config()
     if args.label:
         watches = [w for w in watches if w["label"] == args.label]
         if not watches:
@@ -1722,7 +1820,21 @@ def main() -> int:
               file=sys.stderr)
         return 2
 
-    cfg = load_config()
+    if args.backfill_dates:
+        results = backfill_dates(watches, cfg)
+        gha_env = os.environ.get("GITHUB_ENV")
+        if gha_env:
+            vals = set(results.values())
+            overall = ("failed" if "failed" in vals
+                       else "backlog" if "backlog" in vals
+                       else "complete")
+            with open(gha_env, "a", encoding="utf-8") as f:
+                f.write(f"WATCH_RESULT={overall}\n")
+                f.write(
+                    f"WATCH_RESULTS_JSON={json.dumps(results)}\n")
+        print(f"[backfill] results: {results}")
+        return 0
+
     results: dict[str, str] = {}
     for w in watches:
         if args.seed_from:
