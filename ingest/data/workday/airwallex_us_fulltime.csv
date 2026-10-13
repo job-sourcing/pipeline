@@ -5502,190 +5502,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5514,https://jobs.ashbyhq.com/airwallex/16b7b0fd-a514-4c3a-802a-15dcf3b6fb64,,,,,,,no_match,,2026-10-02,,2026-10-13,,,,true,0,,,,,Product,,,false,,,,,,
-281e3717-87dc-4036-ab1c-5d35bb83b319,"Staff Mobile Engineer, Spend Foundation",airwallex,airwallex,Full time,Posted 101 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-The Mobile Foundations team sits at the core of Airwallex’s mobile stack. We build and evolve the shared architecture, libraries, and tooling that power our fully native iOS and Android apps.
-
-Our apps help businesses manage global B2B payments, submit and approve expenses, and control both virtual and physical Airwallex cards—complete with seamless Apple Pay and Google Pay integration. On iOS, we work with Swift, SwiftUI, Combine, and async/await. On Android, we use Kotlin, AndroidX, Coroutines, Hilt, and the Jetpack ecosystem.
-
-Mobile Foundations is a platform / horizontal team: we don’t just build features, we create the building blocks that enable product squads to ship faster, more reliably, and with a consistent, high-quality user experience.
-
-This role can be based in Singapore, Melbourne, or San Francisco.
-
-What you’ll do
-
-As a Staff Mobile Engineer on the Mobile Foundations team, you will lead the technical direction of our mobile platform across iOS and Android. You will design and evolve the core architecture, own critical shared components, and act as a multiplier for mobile engineers across product teams.
-
-You will:
-
-•
-Define and evolve mobile architecture
-
-•
-Lead the design and evolution of the shared architecture for our native mobile apps, including navigation, state management, networking, offline strategies, and error handling.
-
-•
-Drive modularisation and clear boundaries between foundation modules and product features.
-
-•
-Own core mobile platform capabilities
-
-•
-Own and maintain shared libraries and frameworks (e.g. design system components, analytics, feature flags, experimentation, authentication, payments, observability).
-
-•
-Be responsible for the application's authentication and authorization mechanisms.
-
-•
-Ensure these components are stable, well-documented, and easy to adopt and extend by product teams.
-
-•
-Improve security, reliability, performance, and observability
-
-•
-Drive mobile application security, including anti-tampering measures, certificate pinning, and security best practices.
-
-•
-Define and track platform-level metrics such as crash-free sessions, ANRs, app start-up time, bundle size, and network performance.
-
-•
-Partner with product teams to drive initiatives that improve reliability, performance, and overall mobile quality.
-
-•
-Strengthen end-to-end observability across mobile (logging, metrics, tracing, crash reporting) and use data to guide priorities.
-
-•
-Elevate developer experience, CI/CD
-
-•
-Own and continuously improve our mobile CI/CD pipelines (e.g. GitHub Actions, Bitrise), reducing build times, flakiness, and friction in releasing features.
-
-•
-Improve developer experience for mobile engineers through tooling, templates, documentation, and automation.
-
-•
-Manage Mobile Release, Operational Health, and Best Practices
-
-•
-Own the end-to-end mobile release process across iOS and Android, ensuring timely and reliable delivery of new versions.
-
-•
-Establish clear guidelines and lead the on-call rotation for critical platform-level incidents, ensuring rapid response and resolution.
-
-•
-Define, document, and enforce mobile engineering best practices across the organization to maintain a high bar for code quality and platform consistency.
-
-•
-Lead cross-team technical initiatives
-
-•
-Drive cross-squad projects (e.g. rollout of a new design system, major architectural changes, cross-platform feature foundations) from problem definition through to rollout and adoption.
-
-•
-Align stakeholders (EMs, PMs, designers, backend/platform teams) around technical direction and trade-offs.
-
-•
-Be a hands-on technical leader and mentor
-
-•
-Lead by example with clean, testable, well-structured code on either iOS or Android, while setting standards across both platforms.
-
-•
-Provide technical mentorship and guidance to senior and mid-level engineers through design reviews, pairing, and coaching.
-
-•
-Contribute to and influence hiring, onboarding, and the growth of the mobile engineering community at Airwallex.
-
-Who you are
-
-We’re looking for people who meet the minimum qualifications below. The preferred qualifications are a strong plus, but not strictly required.
-
-Minimum qualifications
-
-•
-8–10+ years of experience building native mobile applications on iOS or Android, including at least 3+ years operating at a Senior or Staff level.
-
-•
-Deep expertise in
-
-•
-iOS: Swift, SwiftUI, Combine, async/await, or
-
-•
-Android: Kotlin, AndroidX, Jetpack, Coroutines, Hilt with commercial knowledge of both platforms.
-
-•
-Proven track record leading cross-team technical initiatives and evolving mobile architectures (e.g. modularisation, design systems, networking, offline support, or similar).
-
-•
-Strong focus on code quality and reliability:
-
-•
-Designs for testability and maintainability.
-
-•
-Writes high-quality automated tests and uses coverage meaningfully (not just as a number).
-
-•
-Experience owning and improving mobile CI/CD pipelines (e.g. GitHub Actions, Bitrise), including build optimisation, test stability, and release workflows.
-
-•
-Demonstrated ability to influence without authority:
-
-•
-Aligns engineers, PMs, and designers around technical direction and makes pragmatic trade-offs.
-
-•
-Bachelor’s degree in Computer Science, Engineering, or a related field, or equivalent practical experience.
-
-Preferred qualifications
-
-•
-Experience defining and driving a mobile platform roadmap, balancing foundational work with product delivery needs.
-
-•
-Prior ownership of shared mobile libraries or frameworks used by multiple product teams at scale.
-
-•
-Hands-on experience with:
-
-•
-Design systems and component libraries on mobile.
-
-•
-Analytics, experimentation, and feature flagging on mobile.
-
-•
-Observability tooling (e.g. Crashlytics, Sentry, logging/metrics platforms).
-
-•
-Experience in domains such as payments, fintech, or B2B SaaS, especially where reliability, security, and regulatory requirements are critical.
-
-•
-Experience mentoring other senior engineers and playing a key role in hiring and growing mobile teams.
-
-•
-Contributions to the mobile community (open source, talks, blog posts) or evidence of thought leadership in mobile architecture and foundations.
-
-If you’re excited about shaping the foundations of high-quality native mobile apps used by businesses around the world—and multiplying the impact of every mobile engineer at Airwallex—we’d love to hear from you.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",8754,https://jobs.ashbyhq.com/airwallex/281e3717-87dc-4036-ab1c-5d35bb83b319,,https://www.linkedin.com/jobs/view/4432281160,2026-09-18,109,109 applicants,,matched,title,2026-10-02,2026-10-02T11:10:26,2026-10-13,,25,startDate+linkedin,true,0,,,,,Engineering,2026-09-18,,false,,,,,,
 7bef59e5-5498-4483-9e46-37c750c6a694,"Global Lead, Commercial Risk Strategy",airwallex,airwallex,Full time,Posted 9 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -5944,86 +5760,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5540,https://jobs.ashbyhq.com/airwallex/2c7d5655-3bef-40ec-9455-fe129b7c09e8,,,,,,,no_match,,2026-10-02,,2026-10-13,,,,true,0,,,,,Product,,,false,,,,,,
-caa87fcf-668a-4990-86fd-c05acad45a1e,Engineering Director,airwallex,airwallex,Full time,Posted 71 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-The Engineering team at Airwallex is a diverse group of innovators, builders, and problem solvers, driven by a mission to empower businesses to operate anywhere, anytime. We thrive in a collaborative and fast-paced environment, where we're constantly pushing the boundaries of what's possible in the financial technology space. As a team, we value technical craftsmanship, continuous learning, and a strong sense of ownership, working together to build scalable, reliable, and secure products that empower businesses of all sizes to grow without borders.
-
-What you'll do
-
-You'll lead the engineering organization for Airwallex's Spend domain in the US, owning the technical strategy and architectural roadmap for products spanning corporate cards, expense management, and spend workflows. This is a domain-level leadership role where you will be accountable for delivery quality, engineering excellence, and team growth across multiple squads. You will partner closely with Product, Design, and Commercial stakeholders to translate business strategy into technical execution, while building and scaling a high-performing engineering team in San Francisco. Your leadership skills, product thinking, and business acumen are what will set you apart, even as you maintain deep technical fluency to guide architectural decisions through your team rather than hands-on.
-
-One of the most exciting aspects of this role is the opportunity to shape the future of agentic finance, removing human tasks from financial workflows and replacing them with intelligent agents across expense submission, approval, and reconciliation.
-
-This role is based in San Francisco, US.
-
-Responsibilities:
-
-•
-Lead the Expenses sub-domain (product / family of products), owning the vision, delivery, and roadmap in close collaboration with the local product teams.
-
-•
-Work alongside other Engineering Managers to evolve the technical architecture across the entire Spend domain, contributing to engineering leadership decisions that mature the technical platform for the future, particularly in areas of data engineering, AI, and analytics.
-
-•
-Scale the US engineering team and whilst providing technical mentorship as new squads are established.
-
-•
-Drive operational excellence across your domain by setting challenging OKRs, optimizing delivery processes, and ensuring high-quality results across multiple concurrent projects.
-
-•
-Collaborate cross-functionally with Product, Design, Commercial, and other US Engineering Leads to align technical execution with business strategy and help build Airwallex's US site culture and employer brand.
-
-•
-Own the talent acquisition strategy for your domain, working closely with Talent Acquisition to source, attract, and retain top engineering talent in the San Francisco market.
-
-Minimum qualifications:
-
-•
-10+ years of experience in software engineering, with 5+ years in engineering leadership roles (Engineering Manager, Director, or equivalent).
-
-•
-Demonstrated experience in people management, including managing managers or Engineering Leads, with a track record of building and scaling high-performing teams.
-
-•
-Strong product thinking and the ability to partner closely with Product Management to define roadmaps, prioritize delivery, and drive business outcomes.
-
-•
-Deep technical fluency in software architecture and system design, with experience guiding architectural decisions for large-scale, complex distributed systems.
-
-•
-Proven ability to operate in fast-paced, high-growth environments where incremental improvement, ownership, and speed of execution are valued.
-
-Preferred qualifications:
-
-•
-Experience in fintech, financial services, payments, or a similarly regulated industry where correctness and data integrity are critical.
-
-•
-Familiarity with AI/ML-driven product development or experience evolving technical platforms to incorporate data engineering, analytics, or agentic automation capabilities.
-
-•
-Comfort operating across global time zones and collaborating with distributed engineering teams in multiple regions.
-
-•
-Entrepreneurial mindset with a bias toward action and continuous improvement, and curiosity to learn quickly, adapt fast, and grow through stretch opportunities.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6604,https://jobs.ashbyhq.com/airwallex/caa87fcf-668a-4990-86fd-c05acad45a1e,,https://www.linkedin.com/jobs/view/4441094542,2026-09-24,200,Over 200 applicants,,matched,title,2026-10-02,2026-10-02T11:05:34,2026-10-13,,19,startDate+linkedin,true,0,,,,,Engineering,2026-09-24,,true,,,,,,
 085add61-a2ff-488e-8d36-c8757d4df38a,"Senior IT Engineer, Corporate Platforms",airwallex,airwallex,Full time,Posted 84 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -6434,114 +6170,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6547,https://jobs.ashbyhq.com/airwallex/6e884138-9e2b-441d-864f-a57945fdea4e,,https://www.linkedin.com/jobs/view/4443216107,2026-09-29,200,Over 200 applicants,,matched,title,2026-10-02,2026-10-02T11:10:46,2026-10-13,,14,startDate+linkedin,true,0,,,,,Engineering,2026-09-29,,true,,,,,,
-6e011829-ee74-4f7a-82f6-f2f1ef5a6dd1,"Staff Product Manager, Lending",airwallex,airwallex,Full time,Posted 72 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-The Product team at Airwallex is a group of passionate builders and problem-solvers who are obsessed with crafting customer-centric solutions that empower businesses to operate anywhere, anytime. We combine technical expertise with a deep understanding of our customers' needs to design and build unified, intuitive, and scalable products. As a team, we thrive in a collaborative and fast-paced environment, constantly iterating and pushing boundaries to deliver exceptional product experiences.
-
-The Lending team is responsible for building and scaling Airwallex’s credit and lending capabilities across both embedded lending and first-party lending models. This is a highly strategic space that sits at the centre of customer value creation, commercial growth, and platform differentiation. The team operates with a startup mindset inside Airwallex, tackling complex challenges across product, credit risk, capital, compliance, and go-to-market.
-
-What you'll do
-
-As Staff Product Manager, Lending, you will lead some of the company’s most important and complex lending opportunities. You will define strategy across large problem spaces, drive alignment across senior stakeholders, and shape how Airwallex builds differentiated lending products globally.
-
-You will operate with broad scope and high autonomy, balancing long-term vision with near-term execution. You will be expected to bring strong commercial judgment, deep customer empathy, and the ability to navigate ambiguity across multiple teams and workstreams. In addition to building products, you will help raise the bar for product thinking, execution quality, and strategic clarity across the wider organisation.
-
-Responsibilities
-
-•
-Define and drive the product strategy for significant parts of Airwallex’s lending platform, including embedded lending and first-party lending capabilities
-
-•
-Lead highly ambiguous, high-impact initiatives across origination, underwriting, servicing, repayment, partner enablement, and portfolio optimisation
-
-•
-Identify and evaluate major market opportunities, customer segments, and product bets, and translate them into multi-quarter roadmaps and clear execution plans
-
-•
-Partner closely with engineering, design, data, commercial, credit risk, legal, compliance, finance, and operations leaders to align on strategy and deliver outcomes
-
-•
-Shape product and business trade-offs across growth, unit economics, customer experience, operational scalability, and risk performance
-
-•
-Build scalable product frameworks, decision principles, and operating models that enable Airwallex to expand lending across markets and use cases
-
-•
-Work with external stakeholders such as financial institutions, capital providers, data partners, and regulatory stakeholders where needed to unlock product capability and scale
-
-•
-Use data, customer insight, and market intelligence to continuously refine strategy and improve business performance
-
-•
-Mentor other product managers and raise the standard of product craft, strategic thinking, and cross-functional leadership within the team
-
-Who you are
-
-We’re looking for people who meet the minimum qualifications for this role. The preferred qualifications are great to have, but are not mandatory.
-
-Minimum qualifications
-
-•
-8+ years of overall professional experience, including substantial product management experience in fintech, financial services, lending, or other complex regulated domains
-
-•
-Strong track record of leading large, ambiguous product areas from strategy through execution and measurable business impact
-
-•
-Deep experience building, scaling, or significantly evolving lending, credit, or embedded finance products
-
-•
-Strong commercial and analytical judgment, with experience balancing customer needs, business performance, and risk considerations
-
-•
-Proven ability to influence senior cross-functional stakeholders and drive alignment without relying on formal authority
-
-•
-Exceptional communication skills, with the ability to articulate strategy, priorities, and trade-offs to both executive and working teams
-
-•
-Ability to thrive in cross-cultural and cross-functional teams
-
-•
-Bachelor’s degree or higher with strong academic achievement
-
-Preferred qualifications
-
-•
-Experience across both embedded lending and first-party lending products
-
-•
-Experience working with credit risk, underwriting models, capital structures, or funding partnerships
-
-•
-Strong understanding of SME banking, lending regulations, and market structure in one or more global markets
-
-•
-Experience launching zero-to-one products and then scaling them in high-growth environments
-
-•
-Background in software engineering, quantitative disciplines, finance, or strategy/consulting
-
-•
-Experience mentoring PMs or acting as a functional leader across a broader product area
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7182,https://jobs.ashbyhq.com/airwallex/6e011829-ee74-4f7a-82f6-f2f1ef5a6dd1,,,,,,,no_match,,2026-10-02,,2026-10-13,,,,true,0,,,,,Product,,,false,,,,,,
 7b677f95-7b8c-46c5-afbc-2997d8018b72,"Manager, Credit Risk Operations",airwallex,airwallex,Full time,Posted 72 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -7148,83 +6776,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7796,https://jobs.ashbyhq.com/airwallex/071a1daa-4dba-48dd-891c-f7f7848add3b,,https://www.linkedin.com/jobs/view/4452505130,2026-09-30,48,48 applicants,,matched,title,2026-10-02,2026-10-02T11:06:00,2026-10-13,,13,startDate+linkedin,true,0,,,,,Regulatory & Compliance,2026-09-30,,false,,,,,,
-04f3a2ed-76e2-406e-a58f-aa0e7480cfb7,Developer Content Manager,airwallex,airwallex,Full time,Posted 51 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-What you’ll do
-
-You’ll lead the creation of high-quality, developer-facing content that helps founders and startups understand and adopt Airwallex. This role combines technical depth with strong storytelling — you’ll turn product capabilities and real usage into compelling narratives that keep Airwallex top-of-mind with technical decision-makers and builders.
-
-You’ll have broad ownership over both the direction and output of developer content. You’ll proactively surface strong stories from customers and partners, work closely with Product and Engineering to develop them, and produce narrative case studies, integration teardowns, and technical explainers that drive awareness and adoption. Your work will directly influence how founders and technical teams perceive and engage with Airwallex.
-
-Responsibilities
-
-•
-Own developer-facing editorial content: narrative case studies, integration stories, technical deep dives, and reference architectures/builds. Work with Product and Engineering to turn new capabilities into content that gets developers from evaluation to a first integration. Partner with the DevX technical writing team, which owns API reference and product documentation..
-
-•
-Proactively identify high-potential stories from customers, partners, and internal teams, and turn them into content that showcases real usage of Airwallex.
-
-•
-Produce integration teardowns and technical explainers that help developers and technical founders evaluate and adopt Airwallex.
-
-•
-Own the publishing and distribution of developer content across relevant channels, including YouTube, X/social media, the Airwallex website, and developer hub.
-
-•
-Collaborate with internal teams to ensure content supports key priorities that need to reach founders, startups, and technical decision-makers.
-
-•
-Identify opportunities to improve how stories are sourced and developed, and introduce lightweight approaches that increase quality and speed.
-
-Who you are
-
-•
-7+ years of experience creating technical or developer-facing content (e.g. Developer Relations, Technical Content, Developer Marketing, or similar roles).
-
-•
-Strong ability to understand complex technical concepts and communicate them clearly and compellingly to developers and technical founders.
-
-•
-Proven track record of owning content initiatives from opportunity identification through to published output.
-
-•
-Comfortable working with ambiguity and driving outcomes with limited structure or resources.
-
-•
-Excellent writing and storytelling skills, with experience producing narrative-driven content that resonates with developer audiences.
-
-•
-Experience working cross-functionally with Product and Engineering teams.
-
-•
-Experience in fintech, payments, or developer platforms is a plus.
-
-Preferred qualifications
-
-•
-Experience producing content that has driven measurable developer awareness, inbound interest, or adoption.
-
-•
-Track record of improving how content is created or distributed through lightweight processes or frameworks.
-
-•
-Strong cross-functional influence skills and the ability to surface stories and priorities proactively.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5474,https://jobs.ashbyhq.com/airwallex/04f3a2ed-76e2-406e-a58f-aa0e7480cfb7,,,,,,,no_match,,2026-10-02,,2026-10-13,,,,true,0,,,,,Product,,,false,,,,,,
 f66897bd-2b57-4dbb-9d9f-5594861e3ebf,"Partner Integrations Manager, Agentic",airwallex,airwallex,Full time,Posted 51 Days Ago,,,US - San Francisco,1,US - San Francisco,false,,United States,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 676,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -16605,60 +16156,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5696,https://jobs.ashbyhq.com/airwallex/d3b1bd21-f5a0-4280-a0c2-02a7e4c42a79,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-d74bd42b-9692-461d-9dcf-f546a3752c58,"Senior DevOps Engineer, Infrastructure (Citizen Dev)",Airwallex,airwallex,Full time,Posted 191 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About The Team
-
-The DevOps team has a vision of building a reliable and effective cloud infrastructure for AWX services. They manage K8s clusters for domain services and maintaining its reliability. Additionally, they create and enhance tooling and platforms to empower the engineering team with improved self-service capabilities.
-
-This role is based in Singapore.
-
-What You’ll Do
-
-•
-As a DevOps engineer in the team, you will be responsible for leading the design of our DevOps strategy, and working closely with cross-functional teams to develop and evolve the cloud infrastructure optimized for performance, scalability and security in order to support our next 10x growth.
-
-•
-You will bring to the team a level of expertise in operational platform management, developing observability and detection capabilities that will decrease time to discover problems and allow our teams to increase stability and not sacrifice agility or security.
-
-•
-A key aspect of this position will be building consensus amongst DevOps Engineers across geographies in different feature teams about the tools and practices we use, and evolving that consensus into agreed standards.
-
-Who we want to hire?
-
-If you have the following skills, apply to join the Airwallex DevOps team!
-
-•
-You are a DevOps engineer and hands-on experience with at least one programming language (Python/Ansible/shell).
-
-•
-You have a software engineering background(Infra/Platform Engineer), and have experience in cost management, access management, and self-service platform development
-
-•
-You have an operations background(Service Mesh Istio & K8s), and experience in traffic management and architecture of service mesh
-
-•
-You are an expert in public cloud, large-scale K8s clusters and services, Istio service mesh, service registry, service discovery, Infra, and Service Reliability
-
-For Staff level, we expect you to have around 10 years or at least 8 years experience. You should be able to demonstrate more in - depth understanding in the complexity of projects and the design of code systems.
-
-For Senior level, we expect you to have around 6 years or at least 5 years experience. You should be able to solve problems related to coding and system design independently.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4599,https://jobs.ashbyhq.com/airwallex/d74bd42b-9692-461d-9dcf-f546a3752c58,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
 da5a2244-efc3-43f5-adcc-da10add69353,"Senior Manager / Manager, Global Sales, Americas",Airwallex,airwallex,Full time,Posted 313 Days Ago,,,IN - Bangalore,1,IN - Bangalore,false,,india,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -16881,114 +16378,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4944,https://jobs.ashbyhq.com/airwallex/e1310dfb-e598-4a2e-8122-12dd40dd12a6,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-ea158520-e1f6-4a6a-b112-f46933922bc8,"Software Engineer II, Infrastructure (Datastreaming)",Airwallex,airwallex,Full time,Posted 42 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About The Team
-
-The Data/AI Infra team is tasked with providing our data engineering and analytics teams with the right tools. You will be responsible for developing and maintaining the data infrastructure, incorporating technologies such as Kafka, Flink, or Spark. Additionally, you will create and enhance tooling and platforms to empower the engineering team with improved self-service capabilities.
-
-This role is based in Singapore.
-
-What You’ll Do
-
-•
-As a Software Engineer in the team, you will be responsible for leading the design of our DevOps strategy, and working closely with cross-functional teams to develop and evolve the cloud infrastructure optimized for performance, scalability and security in order to support our next 10x growth.
-
-•
-You will be working across multiple countries, owning our Data and AI infrastructure across the world.
-
-•
-You will bring to the team a level of expertise in operational platform management, developing observability and detection capabilities that will decrease time to discover problems and allow our teams to increase stability and not sacrifice agility or security.
-
-•
-A key aspect of this position will be building consensus amongst DevOps Engineers across geographies in different feature teams about the tools and practices we use, and evolving that consensus into agreed standards.
-
-Who You Are
-
-•
-3+ years of Infra/Platform engineering experience.
-
-•
-Demonstrated expertise in Kubernetes, Terraform, and GitOps
-
-•
-Data streaming engineering experience. Prior experience working with data streaming platforms such as Kafka,Flink or Spark.
-
-•
-Hands-on experience with at least one programming language.
-
-•
-Bachelor degree or above in computer science or engineering related majors.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4105,https://jobs.ashbyhq.com/airwallex/ea158520-e1f6-4a6a-b112-f46933922bc8,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-f0956197-cab5-4884-9b52-5947c94b51c0,"Senior DevOps Engineer, Infrastructure(Data+AI Infra)",Airwallex,airwallex,Full time,Posted 72 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About The Team
-
-The Data Devops team is tasked with providing our data engineering and analytics teams with the right tools. You will be responsible for developing and maintaining the data infrastructure, incorporating technologies such as Kafka, Flink, or Spark. Additionally, you will create and enhance tooling and platforms to empower the engineering team with improved self-service capabilities.
-
-This role is based in Singapore.
-
-What You’ll Do
-
-•
-As a DevOps engineer in the team, you will be responsible for leading the design of our DevOps strategy, and working closely with cross-functional teams to develop and evolve the cloud infrastructure optimized for performance, scalability and security in order to support our next 10x growth.
-
-•
-You will be working across multiple countries, owning our Data and AI infrastructure across the world.
-
-•
-You will bring to the team a level of expertise in operational platform management, developing observability and detection capabilities that will decrease time to discover problems and allow our teams to increase stability and not sacrifice agility or security.
-
-•
-A key aspect of this position will be building consensus amongst DevOps Engineers across geographies in different feature teams about the tools and practices we use, and evolving that consensus into agreed standards.
-
-Who You Are
-
-•
-5+ years of DevOps engineering experience.
-
-•
-Demonstrated expertise in Kubernetes, Terraform, and GitOps
-
-•
-Data streaming engineering experience. Prior experience working with data streaming platforms such as Kafka, Flink, etc., or databricks.
-
-•
-Hands-on experience with at least one programming language.
-
-•
-Bachelor degree or above in computer science or engineering related majors.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4106,https://jobs.ashbyhq.com/airwallex/f0956197-cab5-4884-9b52-5947c94b51c0,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
 f4366514-1eba-420f-82f5-04d12cf1b99e,"Manager, Operations Strategy (Market Insights/User Research)",Airwallex,airwallex,Full time,Posted 350 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,singapore,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -20716,94 +20105,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6238,https://jobs.ashbyhq.com/airwallex/5fa97d90-9c8c-452a-9ec0-d0949ec10ae0,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-61d892d0-c95d-4442-902d-b1a5b39a20e6,"Director, People Operations & Enablement",Airwallex,airwallex,Full time,Posted 264 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-What you'll do
-
-As Director, People Operations & Enablement, you will play a pivotal role in building and scaling a world-class People Operations function that supports Airwallex’s rapid global growth. You will design and optimize people processes across the entire employee lifecycle—from pre-onboarding to exit—ensuring efficiency, compliance, and a best-in-class employee experience. You will lead change management, drive process innovation, and enable our teams to deliver at scale across multiple geographies. This role is based in Singapore.
-
-Responsibilities:
-
-•
-Build and lead a scalable People Operations function to support headcount growth in existing and new global locations.
-
-•
-Design, implement, and continuously improve efficient people operations processes, covering onboarding, mobility, performance, exits, and everything in between.
-
-•
-Identify process and tool inefficiencies, introduce new solutions, and drive change management initiatives to enhance employee experience and operational excellence.
-
-•
-Oversee the operations of a shared service center, ensuring high-quality, compliant, and consistent HR service delivery globally.
-
-•
-Develop and track key metrics and dashboards to measure the effectiveness and impact of People Operations programs; provide regular reporting to senior management.
-
-•
-Partner with senior leaders, HR Business Partners, Talent Acquisition, Finance, Legal, and other stakeholders to align People strategies with business goals and ensure seamless cross-functional collaboration.
-
-•
-Leverage data and analytics to inform decisions, drive improvements, and communicate impact at the executive level.
-
-•
-Champion the adoption of new technologies and HR systems to automate, simplify, and scale People Operations.
-
-•
-Foster a culture of innovation, accountability, and continuous improvement within the People Operations team.
-
-•
-Ensure compliance with all relevant labor laws and HR best practices across jurisdictions.
-
-•
-Influence and build a world-class People Ops team with informed best practices and first principles thinking.
-
-Who you are
-
-We're looking for people who meet the minimum requirements for this role. The preferred qualifications are great to have, but are not mandatory.
-
-Minimum qualifications:
-
-•
-Experience in a scale-up environment across multiple geographies.
-
-•
-Prior experience leading and transforming a shared service center team.
-
-•
-Adept at change management, metrics reporting, and identifying ways to measure success and outcomes.
-
-•
-Willingness to take ownership, lean into the details, yet still pull-up to see the bigger picture.
-
-Preferred qualifications:
-
-•
-Experience in a global fintech or high-growth technology company.
-
-•
-Prior experience with HR systems (e.g., Workday) and process automation.
-
-•
-Track record of successful process optimization, onboarding program design, and exit management at scale.
-
-•
-Experience navigating complex regulatory environments and supporting organizational transformation.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5368,https://jobs.ashbyhq.com/airwallex/61d892d0-c95d-4442-902d-b1a5b39a20e6,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
 62807cda-3cd0-4501-ab89-5560723c7eca,Senior Technical Account Manager,Airwallex,airwallex,Full time,Posted 22 Days Ago,,,UK - London,1,UK - London,false,,United Kingdom,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -21259,319 +20560,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5019,https://jobs.ashbyhq.com/airwallex/67da6aee-e9ba-4459-913a-3fc89409bc9b,,https://www.linkedin.com/jobs/view/4417065392,2026-09-25,200,Over 200 applicants,,matched,,2026-10-07,2026-10-07T04:36:39,2026-10-13,,18,startDate+linkedin,true,0,,,,,,2026-09-25,,true,,,,,,
-69ac05df-8d2a-4140-b080-fa88ef58ac3f,"Senior Software Engineer, Frontend, Growth",Airwallex,airwallex,Full time,Posted 7 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-Locations:
-
-Singapore
-
-The Opportunity: Be Part of Our Growth Team
-
-Our Growth Team sits at the heart of Airwallex’s mission, focusing on user acquisition and strategic market expansion. We leverage data and cutting-edge technologies to craft seamless, intuitive experiences that help millions of users discover, engage with, and benefit from our products.
-
-From new-user funnels to onboarding optimizations, our Growth team is all about experimentation, rapid iteration, and driving sustainable business impact. Whether it’s designing scalable architectures for high-traffic pages, building robust A/B testing frameworks, or integrating global marketing platforms, the Growth team’s contributions directly shape how we attract and retain customers worldwide.
-
-Joining the Growth team means you’ll have a front-row seat to the most crucial stage of our product lifecycle and play a pivotal role in fueling the next wave of our global expansion.
-
-What You’ll Do
-
-•
-Architect and Build
-
-•
-Design, develop, and enhance highly scalable, performance-driven frontend solutions that power our growth funnels, landing pages, and marketing campaigns.
-
-•
-Write well-tested, maintainable, and efficient code using React and TypeScript, ensuring robust performance and smooth user interactions.
-
-•
-Enable Data-Driven Decisions
-
-•
-Partner closely with data scientists and product managers to track and interpret critical user behavior metrics.
-
-•
-Build and integrate A/B testing frameworks, feature flags, and analytics solutions that optimize our user acquisition strategies and inform future product investments.
-
-•
-Collaborate and Refine
-
-•
-Work with cross-functional teams—including Design, Product, and Marketing—to deliver delightful user experiences.
-
-•
-Participate in design discussions, code reviews, and strategic planning sessions to elevate the quality and impact of our user-facing products.
-
-•
-Experiment and Iterate
-
-•
-Develop rapid prototypes to validate hypotheses about user acquisition and engagement.
-
-•
-Continuously refine and optimize user journey flows, aiming to reduce friction and increase conversions.
-
-•
-Drive Technical Excellence
-
-•
-Champion frontend best practices, ensuring high standards of code quality, security, and performance.
-
-•
-Provide technical leadership, and shape the architectural roadmap for our growth-focused products.
-
-•
-Ensure Security & Compliance
-
-•
-Integrate secure coding practices and frameworks to protect user data, maintain high standards of privacy, and comply with global regulations.
-
-•
-Proactively identify and address potential vulnerabilities, preventing unauthorized access and safeguarding critical data.
-
-Who You Are
-
-•
-Seasoned Engineer: You have a solid foundation in TypeScript and front-end frameworks like React, with an ability to craft clean, modular code.
-
-•
-Data-Driven Mindset: You thrive on metrics and experiments. A/B testing, funnel optimization, and hypothesis-driven development are second nature to you.
-
-•
-User-Focused Innovator: You understand that product success hinges on a seamless user experience. You embrace user research and leverage empathy in design thinking.
-
-•
-Collaborative Leader: You excel in a team environment, providing mentorship and supporting peers. You enjoy working with cross-functional partners to achieve common goals.
-
-•
-Adaptable & Curious: You stay ahead of the curve, learning new technologies and industry best practices. When the fintech landscape shifts, you shift with it—strategically and swiftly.
-
-•
-Security-Conscious: You recognize the importance of safeguarding user data and proactively embed security principles in your development process.
-
-•
-Ownership Mentality: You’re self-motivated, eager to take on new challenges, and consistently push boundaries to deliver impactful solutions.
-
-Why Join Us
-
-•
-Impact: Contribute directly to the core engine of user growth in a company that is reshaping global financial services.
-
-•
-Growth: Advance your career with opportunities to spearhead projects, explore emerging technologies, and mentor rising talent.
-
-•
-Innovation: Join a team that boldly experiments, challenges the status quo, and continuously evolves to lead in an ever-changing fintech landscape.
-
-•
-Culture: Work in an inclusive, open environment that values diverse ideas and collaboration.
-
-•
-Benefits: Enjoy competitive compensation, comprehensive health coverage, and a flexible work environment designed to support work-life balance.
-
-Ready to Shape the Future of Global Finance?
-
-Join us in our journey to remove barriers to entry for businesses around the world, one innovative product at a time. Apply now and help us build the future of fintech together!
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7048,https://jobs.ashbyhq.com/airwallex/69ac05df-8d2a-4140-b080-fa88ef58ac3f,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-6bc6683e-8b02-4348-8816-5a52aa465adb,"Staff Mobile Engineer, Spend Foundation",Airwallex,airwallex,Full time,Posted 152 Days Ago,,,AU - Melbourne,1,AU - Melbourne,false,,Australia,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-The Mobile Foundations team sits at the core of Airwallex’s mobile stack. We build and evolve the shared architecture, libraries, and tooling that power our fully native iOS and Android apps.
-
-Our apps help businesses manage global B2B payments, submit and approve expenses, and control both virtual and physical Airwallex cards—complete with seamless Apple Pay and Google Pay integration. On iOS, we work with Swift, SwiftUI, Combine, and async/await. On Android, we use Kotlin, AndroidX, Coroutines, Hilt, and the Jetpack ecosystem.
-
-Mobile Foundations is a platform / horizontal team: we don’t just build features, we create the building blocks that enable product squads to ship faster, more reliably, and with a consistent, high-quality user experience.
-
-This role can be based in Singapore, Melbourne, or San Francisco.
-
-What you’ll do
-
-As a Staff Mobile Engineer on the Mobile Foundations team, you will lead the technical direction of our mobile platform across iOS and Android. You will design and evolve the core architecture, own critical shared components, and act as a multiplier for mobile engineers across product teams.
-
-You will:
-
-•
-Define and evolve mobile architecture
-
-•
-Lead the design and evolution of the shared architecture for our native mobile apps, including navigation, state management, networking, offline strategies, and error handling.
-
-•
-Drive modularisation and clear boundaries between foundation modules and product features.
-
-•
-Own core mobile platform capabilities
-
-•
-Own and maintain shared libraries and frameworks (e.g. design system components, analytics, feature flags, experimentation, authentication, payments, observability).
-
-•
-Be responsible for the application's authentication and authorization mechanisms.
-
-•
-Ensure these components are stable, well-documented, and easy to adopt and extend by product teams.
-
-•
-Improve security, reliability, performance, and observability
-
-•
-Drive mobile application security, including anti-tampering measures, certificate pinning, and security best practices.
-
-•
-Define and track platform-level metrics such as crash-free sessions, ANRs, app start-up time, bundle size, and network performance.
-
-•
-Partner with product teams to drive initiatives that improve reliability, performance, and overall mobile quality.
-
-•
-Strengthen end-to-end observability across mobile (logging, metrics, tracing, crash reporting) and use data to guide priorities.
-
-•
-Elevate developer experience, CI/CD
-
-•
-Own and continuously improve our mobile CI/CD pipelines (e.g. GitHub Actions, Bitrise), reducing build times, flakiness, and friction in releasing features.
-
-•
-Improve developer experience for mobile engineers through tooling, templates, documentation, and automation.
-
-•
-Manage Mobile Release, Operational Health, and Best Practices
-
-•
-Own the end-to-end mobile release process across iOS and Android, ensuring timely and reliable delivery of new versions.
-
-•
-Establish clear guidelines and lead the on-call rotation for critical platform-level incidents, ensuring rapid response and resolution.
-
-•
-Define, document, and enforce mobile engineering best practices across the organization to maintain a high bar for code quality and platform consistency.
-
-•
-Lead cross-team technical initiatives
-
-•
-Drive cross-squad projects (e.g. rollout of a new design system, major architectural changes, cross-platform feature foundations) from problem definition through to rollout and adoption.
-
-•
-Align stakeholders (EMs, PMs, designers, backend/platform teams) around technical direction and trade-offs.
-
-•
-Be a hands-on technical leader and mentor
-
-•
-Lead by example with clean, testable, well-structured code on either iOS or Android, while setting standards across both platforms.
-
-•
-Provide technical mentorship and guidance to senior and mid-level engineers through design reviews, pairing, and coaching.
-
-•
-Contribute to and influence hiring, onboarding, and the growth of the mobile engineering community at Airwallex.
-
-Who you are
-
-We’re looking for people who meet the minimum qualifications below. The preferred qualifications are a strong plus, but not strictly required.
-
-Minimum qualifications
-
-•
-8–10+ years of experience building native mobile applications on iOS or Android, including at least 3+ years operating at a Senior or Staff level.
-
-•
-Deep expertise in
-
-•
-iOS: Swift, SwiftUI, Combine, async/await, or
-
-•
-Android: Kotlin, AndroidX, Jetpack, Coroutines, Hilt with commercial knowledge of both platforms.
-
-•
-Proven track record leading cross-team technical initiatives and evolving mobile architectures (e.g. modularisation, design systems, networking, offline support, or similar).
-
-•
-Strong focus on code quality and reliability:
-
-•
-Designs for testability and maintainability.
-
-•
-Writes high-quality automated tests and uses coverage meaningfully (not just as a number).
-
-•
-Experience owning and improving mobile CI/CD pipelines (e.g. GitHub Actions, Bitrise), including build optimisation, test stability, and release workflows.
-
-•
-Demonstrated ability to influence without authority:
-
-•
-Aligns engineers, PMs, and designers around technical direction and makes pragmatic trade-offs.
-
-•
-Bachelor’s degree in Computer Science, Engineering, or a related field, or equivalent practical experience.
-
-Preferred qualifications
-
-•
-Experience defining and driving a mobile platform roadmap, balancing foundational work with product delivery needs.
-
-•
-Prior ownership of shared mobile libraries or frameworks used by multiple product teams at scale.
-
-•
-Hands-on experience with:
-
-•
-Design systems and component libraries on mobile.
-
-•
-Analytics, experimentation, and feature flagging on mobile.
-
-•
-Observability tooling (e.g. Crashlytics, Sentry, logging/metrics platforms).
-
-•
-Experience in domains such as payments, fintech, or B2B SaaS, especially where reliability, security, and regulatory requirements are critical.
-
-•
-Experience mentoring other senior engineers and playing a key role in hiring and growing mobile teams.
-
-•
-Contributions to the mobile community (open source, talks, blog posts) or evidence of thought leadership in mobile architecture and foundations.
-
-If you’re excited about shaping the foundations of high-quality native mobile apps used by businesses around the world—and multiplying the impact of every mobile engineer at Airwallex—we’d love to hear from you.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",8754,https://jobs.ashbyhq.com/airwallex/6bc6683e-8b02-4348-8816-5a52aa465adb,,https://www.linkedin.com/jobs/view/4432281160,2026-09-18,113,113 applicants,,matched,,2026-10-07,2026-10-07T05:10:09,2026-10-13,,25,startDate+linkedin,true,0,,,,,,2026-09-18,,false,,,,,,
 6bcc9f8e-8dd6-4c78-b0b9-43e93b164c09,"Associate Director, Strategy & Operations - CEO Office",Airwallex,airwallex,Full time,Posted 152 Days Ago,,,UK - London,1,UK - London,false,,United Kingdom,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -23237,190 +22225,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5623,https://jobs.ashbyhq.com/airwallex/8f5b5c0d-28c9-4181-82e0-92d06597072b,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-8fcbf399-427e-4ebb-a350-6e849a5c25e0,"Staff Mobile Engineer, Spend Foundation",Airwallex,airwallex,Full time,Posted 152 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-The Mobile Foundations team sits at the core of Airwallex’s mobile stack. We build and evolve the shared architecture, libraries, and tooling that power our fully native iOS and Android apps.
-
-Our apps help businesses manage global B2B payments, submit and approve expenses, and control both virtual and physical Airwallex cards—complete with seamless Apple Pay and Google Pay integration. On iOS, we work with Swift, SwiftUI, Combine, and async/await. On Android, we use Kotlin, AndroidX, Coroutines, Hilt, and the Jetpack ecosystem.
-
-Mobile Foundations is a platform / horizontal team: we don’t just build features, we create the building blocks that enable product squads to ship faster, more reliably, and with a consistent, high-quality user experience.
-
-This role can be based in Singapore, Melbourne, or San Francisco.
-
-What you’ll do
-
-As a Staff Mobile Engineer on the Mobile Foundations team, you will lead the technical direction of our mobile platform across iOS and Android. You will design and evolve the core architecture, own critical shared components, and act as a multiplier for mobile engineers across product teams.
-
-You will:
-
-•
-Define and evolve mobile architecture
-
-•
-Lead the design and evolution of the shared architecture for our native mobile apps, including navigation, state management, networking, offline strategies, and error handling.
-
-•
-Drive modularisation and clear boundaries between foundation modules and product features.
-
-•
-Own core mobile platform capabilities
-
-•
-Own and maintain shared libraries and frameworks (e.g. design system components, analytics, feature flags, experimentation, authentication, payments, observability).
-
-•
-Be responsible for the application's authentication and authorization mechanisms.
-
-•
-Ensure these components are stable, well-documented, and easy to adopt and extend by product teams.
-
-•
-Improve security, reliability, performance, and observability
-
-•
-Drive mobile application security, including anti-tampering measures, certificate pinning, and security best practices.
-
-•
-Define and track platform-level metrics such as crash-free sessions, ANRs, app start-up time, bundle size, and network performance.
-
-•
-Partner with product teams to drive initiatives that improve reliability, performance, and overall mobile quality.
-
-•
-Strengthen end-to-end observability across mobile (logging, metrics, tracing, crash reporting) and use data to guide priorities.
-
-•
-Elevate developer experience, CI/CD
-
-•
-Own and continuously improve our mobile CI/CD pipelines (e.g. GitHub Actions, Bitrise), reducing build times, flakiness, and friction in releasing features.
-
-•
-Improve developer experience for mobile engineers through tooling, templates, documentation, and automation.
-
-•
-Manage Mobile Release, Operational Health, and Best Practices
-
-•
-Own the end-to-end mobile release process across iOS and Android, ensuring timely and reliable delivery of new versions.
-
-•
-Establish clear guidelines and lead the on-call rotation for critical platform-level incidents, ensuring rapid response and resolution.
-
-•
-Define, document, and enforce mobile engineering best practices across the organization to maintain a high bar for code quality and platform consistency.
-
-•
-Lead cross-team technical initiatives
-
-•
-Drive cross-squad projects (e.g. rollout of a new design system, major architectural changes, cross-platform feature foundations) from problem definition through to rollout and adoption.
-
-•
-Align stakeholders (EMs, PMs, designers, backend/platform teams) around technical direction and trade-offs.
-
-•
-Be a hands-on technical leader and mentor
-
-•
-Lead by example with clean, testable, well-structured code on either iOS or Android, while setting standards across both platforms.
-
-•
-Provide technical mentorship and guidance to senior and mid-level engineers through design reviews, pairing, and coaching.
-
-•
-Contribute to and influence hiring, onboarding, and the growth of the mobile engineering community at Airwallex.
-
-Who you are
-
-We’re looking for people who meet the minimum qualifications below. The preferred qualifications are a strong plus, but not strictly required.
-
-Minimum qualifications
-
-•
-8–10+ years of experience building native mobile applications on iOS or Android, including at least 3+ years operating at a Senior or Staff level.
-
-•
-Deep expertise in
-
-•
-iOS: Swift, SwiftUI, Combine, async/await, or
-
-•
-Android: Kotlin, AndroidX, Jetpack, Coroutines, Hilt with commercial knowledge of both platforms.
-
-•
-Proven track record leading cross-team technical initiatives and evolving mobile architectures (e.g. modularisation, design systems, networking, offline support, or similar).
-
-•
-Strong focus on code quality and reliability:
-
-•
-Designs for testability and maintainability.
-
-•
-Writes high-quality automated tests and uses coverage meaningfully (not just as a number).
-
-•
-Experience owning and improving mobile CI/CD pipelines (e.g. GitHub Actions, Bitrise), including build optimisation, test stability, and release workflows.
-
-•
-Demonstrated ability to influence without authority:
-
-•
-Aligns engineers, PMs, and designers around technical direction and makes pragmatic trade-offs.
-
-•
-Bachelor’s degree in Computer Science, Engineering, or a related field, or equivalent practical experience.
-
-Preferred qualifications
-
-•
-Experience defining and driving a mobile platform roadmap, balancing foundational work with product delivery needs.
-
-•
-Prior ownership of shared mobile libraries or frameworks used by multiple product teams at scale.
-
-•
-Hands-on experience with:
-
-•
-Design systems and component libraries on mobile.
-
-•
-Analytics, experimentation, and feature flagging on mobile.
-
-•
-Observability tooling (e.g. Crashlytics, Sentry, logging/metrics platforms).
-
-•
-Experience in domains such as payments, fintech, or B2B SaaS, especially where reliability, security, and regulatory requirements are critical.
-
-•
-Experience mentoring other senior engineers and playing a key role in hiring and growing mobile teams.
-
-•
-Contributions to the mobile community (open source, talks, blog posts) or evidence of thought leadership in mobile architecture and foundations.
-
-If you’re excited about shaping the foundations of high-quality native mobile apps used by businesses around the world—and multiplying the impact of every mobile engineer at Airwallex—we’d love to hear from you.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",8754,https://jobs.ashbyhq.com/airwallex/8fcbf399-427e-4ebb-a350-6e849a5c25e0,,https://www.linkedin.com/jobs/view/4432281160,2026-09-18,113,113 applicants,,matched,,2026-10-07,2026-10-07T05:08:24,2026-10-13,,25,startDate+linkedin,true,0,,,,,,2026-09-18,,false,,,,,,
 93dd70e9-9aa7-4fd6-b8c0-623e0d80b41f,Staff Data Engineer ,Airwallex,airwallex,Full time,Posted 202 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -23707,68 +22511,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5357,https://jobs.ashbyhq.com/airwallex/9dbc96e0-64dc-468e-bc70-f3d11bf195c7,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-9e064013-6286-4984-9541-7bd702286d64,"Senior Software Engineer Backend, Billing",Airwallex,airwallex,Full time,Posted 247 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-The Billing Team at Airwallex is at the forefront of transforming how businesses handle pricing, billing, and invoicing. Our mission is to create a seamless, scalable, and transparent billing platform that not only supports Airwallex's growth but also empowers our customers to easily manage their billing needs.
-
-Our team is dedicated to developing a next-generation billing platform designed to offer flexible pricing strategies and intuitive invoicing solutions. This platform aims to be a cornerstone for businesses, enabling them to bill and get paid effortlessly. By integrating cutting-edge technology, we ensure that our solutions are easy to adopt and integrate, providing a robust billing experience for all users.
-
-The engineering team spans across Shanghai and Singapore, offering the chance to collaborate with cross-functional teams around the world. Engage with various domains such as GTPN, PA, Scale, Issuing, and Spend to automate end-to-end pricing and billing processes. The work here is impactful, contributing to building a platform that empowers businesses globally, making a tangible difference in their operations.
-
-What you’ll do
-
-We envision a future where our billing platform not only supports Airwallex internally but also serves as an easy-to-integrate product for our customers. By joining our team, you play a crucial role in realizing this vision, working alongside talented professionals to deliver business-critical features and solutions. Together, we will build the next-gen billing solution that empowers businesses worldwide.
-
-This role is based in Singapore
-
-Responsibilities:
-
-1. Lead the planning, design, and implementation of the Airwallex engineering system;
-2. Work with the business/product team to deeply understand the business needs, scenarios, and subsequent development directions, complete system analysis, architecture design, and core function development, and be able to grasp the design of complex systems to ensure the quality of complex architecture;
-3. Design and develop components based on the company's microservice framework;
-4. Introduce innovative technologies and innovative solutions for the team;
-5. Responsible for the construction and management of the technical team, and establish good internal coding standards.
-
-Who you are
-
-We're looking for people who meet the minimum qualifications for this role. The preferred qualifications are great to have, but are not mandatory.
-
-Minimum qualifications:
-
-1. More than 6 years of Core Java development, more than 5 years of experience in Internet application / large financial system / e-commerce platform development;
-2. More than one year experience in payment platform development;
-3. Bachelor degree in computer science and related majors;
-4. Proficient in Java 8, familiar with Java multi-threading, high concurrency, IO / NIO, network communication, etc .;
-5. Familiar with commonly used design patterns, with experience in design and development of large-scale distributed, high concurrency, high load, high availability systems;
-6. Master various common server technologies, which can optimize service response and data query, ensure various service quality, and solve the problems of high concurrency and high availability.
-
-Preferred qualifications:
-
-1. International clearing and settlement / foreign exchange transactions;
-2. Fluent in English;
-3. Cassandra / Redis / NoSQL / Hadoop;
-4. Kotlin / Scala / Python / Golang / R;
-5. Docker Swarm / Kubernetes;
-6. JavaScript / Angular / React / CSS3;
-7. Aliyun Cloud / AWS.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5928,https://jobs.ashbyhq.com/airwallex/9e064013-6286-4984-9541-7bd702286d64,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
 9e72e2d2-e0de-4882-90c4-9c370f434a1c,"Talent Acquisition Partner, Product & Design",Airwallex,airwallex,Full time,Posted 97 Days Ago,,,UK - London,1,UK - London,false,,United Kingdom,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -24208,92 +22950,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",8029,https://jobs.ashbyhq.com/airwallex/ad877e85-6c71-4e6b-afc7-3d87b9488adb,,https://www.linkedin.com/jobs/view/4473152494,2026-10-02,29,29 applicants,,matched,,2026-10-07,2026-10-07T05:08:21,2026-10-13,,11,startDate+linkedin,true,0,,,,,,2026-10-02,,false,,,,,,
-ae03bd35-b559-4d77-ab77-75d3fe376770,"Staff Software Engineer, Infrastructure (Citizen Dev)",Airwallex,airwallex,Full time,Posted 191 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About The Team
-
-The Citizen Developers Infrastructure team sits within the Infrastructure & Productivity organization and is responsible for the internal platform that powers critical business processes at Airwallex.
-
-We build and operate a citizen‑developer platform that lets non‑product engineering groups safely build and run workflows and automations. Our goal is to make it easy and safe for these “citizen developers” to ship value quickly while embedding security, compliance, and software engineering best practices by default.
-
-This role is based in Singapore.
-
-What You’ll Do
-
-As a Senior/Staff Software Engineer on the Citizen Developers Infrastructure team, you will design, build, and operate the platform services that underpin Airwallex’s citizen‑developer ecosystem and internal workflow automation.
-
-You will partner closely with application teams and citizen developers to define tooling, patterns, and development processes, while continuously improving the platform abstractions and paved paths they build on. You’ll be responsible both for the developer experience and guardrails of the platform, and for the underlying workflow infrastructure that makes it reliable and scalable.
-
-Responsibilities
-
-•
-Design, build, and evolve the citizen‑developer platform and tools that make it easy to create and operate automation / applications without deep infrastructure knowledge.
-
-•
-Establish secure SDLC and guardrails for citizen‑developer‑built applications so compliance and security are baked in by default.
-
-•
-Build self‑serve development and operations tooling that reduce dependence on central platform engineers.
-
-•
-Design, build, and maintain the Temporal‑based workflow infrastructure, addressing challenges such as multi‑tenancy, high availability, and cost effectiveness.
-
-•
-Contribute to the Kubernetes and GitOps foundation (ArgoCD, Helm, Terraform) that powers the platform, ensuring deployments are safe, repeatable, and auditable.
-
-•
-Participate in code reviews, technical design discussions, and on‑call rotation for workflow‑related services, leading incident response and driving long‑term fixes where needed.
-
-•
-Document standards, best practices, and reference architectures so teams building on top of the platform have clear, self‑serve guidance.
-
-Who You Are
-
-You are a backend/platform engineer who enjoys building shared platforms, cares deeply about developer experience, correctness, and operability, and is comfortable working at the intersection of application code and infrastructure.
-
-You get energy from enabling other teams to move faster safely, through well‑designed abstractions, tooling, and guardrails.
-
-Qualifications
-
-•
-6+ years of experience in Software / Platform Engineering roles, building and operating backend or platform services in production.
-
-•
-Strong hands‑on experience with at least one strongly typed backend language (e.g., Golang, Java) and familiarity with Python or Bash for tooling/automation.
-
-•
-Experience designing and building internal platforms or developer tooling used by multiple teams, with a strong focus on developer experience.
-
-•
-Experience with Kubernetes and GitOps practices/tooling (ideally ArgoCD and Terraform).
-
-•
-Experience building platforms or tooling for non‑product engineering users (e.g., operations, finance, analysts) or low‑code/no‑code / citizen‑developer environments is a strong plus.
-
-•
-Proven experience with Temporal or similar workflow/orchestration systems (e.g., Cadence, Step Functions, Airflow) or large‑scale stateful workloads (e.g., Redis clusters, Cassandra, HBase) in production is a huge plus.
-
-•
-Comfortable working in highly collaborative, multi‑team environments, able to translate platform constraints into clear APIs, contracts, and paved paths for application teams and citizen developers.
-
-•
-Practical, proactive problem solver who can navigate ambiguity, break down complex technical problems, and drive them to closure.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",6318,https://jobs.ashbyhq.com/airwallex/ae03bd35-b559-4d77-ab77-75d3fe376770,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
 b0628876-8e67-4e58-974e-a17558798daa,"Engineering Lead / Manager, KYC (Relocation to Singapore)",Airwallex,airwallex,Full time,Posted 191 Days Ago,,,AU - Sydney,2,"AU - Sydney; {'location': 'AU - Melbourne', 'address': {'postalAddress': {'addressRegion': 'Victoria', 'addressCountry': 'Australia', 'addressLocality': 'Melbourne'}}}",false,,Australia,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -28006,75 +26662,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7007,https://jobs.ashbyhq.com/airwallex/0a27c30a-bedc-42bd-b42b-ad8037d5072d,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-0d05eec4-1115-4bae-933e-5eae7939ba99,"Senior Software Engineer, Infrastructure (Infra Platform)",Airwallex,airwallex,Full time,Posted 86 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About The Team
-
-The Airwallex Infra Platform team is a group of highly skilled, innovative, and collaborative professionals. The team brings together experts in Kubernetes, service mesh, cloud platforms, and core services, all working seamlessly to ensure the highest levels of performance, reliability, and security. We are looking for Software Engineers to join the team to create and maintain a cutting-edge, secure, and scalable infrastructure that supports our cross-border payment solutions.
-
-We build and run the cloud systems that keep Airwallex fast, safe, and always available. Our mission? Make sure everything just works—no matter how big we grow.
-
-•
-Work on cloud platforms (like AWS, GCP, Azure)
-
-•
-Make our systems secure, reliable, and easy for our engineers to use
-
-•
-Help us scale—globally!
-
-•
-Automate everything (because manual work is boring)
-
-•
-Work with awesome teammates in engineering, product, and security
-
-•
-Love solving problems and making things run smoothly? Join us!
-
-This role is based in Singapore.
-
-Qualifications
-
-•
-6+ years working with large, distributed systems. Solid understanding of RESTful API design principles and patterns.
-
-•
-Deep experience with public cloud (GCP, AWS, or Azure), Infrastructure as Code, and Kubernetes. Experience with Istio service mesh
-
-•
-Ability to write services in Golang(preferred) or Python.
-
-•
-Bachelor’s degree (or higher) in Computer Science or similar field.
-
-•
-Strong security skills and hands-on experience with security best practices.
-
-•
-Strong communication and collaboration skills.
-
-For senior software engineers, we expect you to have around 7 years or at least 6 years engineering experience. You should be able to demonstrate more in - depth understanding in the complexity of projects and the design of code systems.
-
-For SDE2 engineers, we expect you to have over 4 years or at least 3 years engineering experience. You should be able to solve problems related to coding and system design independently.
-
-Ready to help us build and scale? Apply to join the Airwallex Infra Platform team!
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4440,https://jobs.ashbyhq.com/airwallex/0d05eec4-1115-4bae-933e-5eae7939ba99,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
 1139d8f0-093c-4537-91c8-6796158e53ab,"Account Manager, Enterprise",Airwallex,airwallex,Full time,Posted 92 Days Ago,,,HK - Hong Kong SAR,1,HK - Hong Kong SAR,false,,Hong Kong SAR,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -30272,100 +28859,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7921,https://jobs.ashbyhq.com/airwallex/8e7e3a2c-c593-49a7-959b-323b7aa57662,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-908fde44-9678-4f84-9d40-2266cebcbdf5,"Senior AI Engineer, Data Analytics",Airwallex,airwallex,Full time,Posted 96 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the team
-
-The AI team is at the heart of our company’s data and AI strategy. We're building a world-class, customer-facing analytics product that turns data into business impact through AI. As a Senior AI Engineer, you'll build the agent systems at the heart of it — turning natural-language questions into trustworthy, accurate answers over business data that our customers can rely on.
-
-This is a role for someone who pairs deep AI engineering with solid data engineering foundations — comfortable not just building agents, but understanding the data and metrics they reason over and what makes those answers reliable. You'll own meaningful problems end to end and set a high bar for technical quality.
-
-We're committed to building a diverse and inclusive team, and we welcome applicants of all backgrounds. You don't need to meet every qualification to apply — if you're excited about this work and meet the essentials, we'd love to hear from you.
-
-This role is based in Singapore.
-
-What you'll do
-
-•
-Design, build, and ship AI agent applications and agent harnesses that answer business questions accurately over governed data.
-
-•
-Build core agent capabilities, including retrieval-augmented generation, natural-language-to-query, and tool or function calling.
-
-•
-Improve AI output quality through prompt and context engineering, evaluation benchmarks, guardrails, and ongoing quality measurement.
-
-•
-Partner on governed metrics, data models, and data pipelines so agents can reason over consistent, reliable, and secure business data.
-
-•
-Apply strong data governance and security practices, including the safe handling of sensitive data, to meet financial-services standards.
-
-•
-Contribute strong engineering judgment to technical design and review, and help raise the technical bar across the team.
-
-Who you are
-
-We're looking for people who meet the minimum qualifications for this role. The preferred qualifications are great to have, but are not mandatory.
-
-Minimum qualifications
-
-•
-Bachelor’s degree in Computer Science, Mathematics, Finance, or a related field.
-
-•
-5+ years of experience building production software, including AI applications, data pipelines, and data models.
-
-•
-Hands-on experience building and deploying agentic AI applications in production.
-
-•
-Experience improving AI system accuracy and reliability through evaluation, guardrails, or quality measurement.
-
-•
-Strong Python, SQL, software engineering, and data modeling fundamentals.
-
-•
-Track record of shipping reliable AI or data products and turning ambiguous business or product needs into clear technical solutions.
-
-Preferred qualifications
-
-•
-Experience defining and maintaining semantic layers or metrics layers.
-
-•
-Experience with data governance, metadata management, and data security.
-
-•
-Experience with modern cloud data platforms and transformation frameworks such as Databricks, Spark, and dbt.
-
-•
-Experience building batch or streaming data pipelines using Kafka, Flink, or change-data-capture tooling.
-
-•
-Experience building secure customer-facing or multi-tenant products, including access control and data isolation.
-
-•
-Experience with low-latency analytics technologies such as ClickHouse.
-
-•
-Experience in fintech, payments, or other financial platforms.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",5629,https://jobs.ashbyhq.com/airwallex/908fde44-9678-4f84-9d40-2266cebcbdf5,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
 9261f89e-0703-45c0-a80e-d5f6a1cc03e1,"Senior Manager, FCC Program Management",Airwallex,airwallex,Full time,Posted 8 Days Ago,,,UK - London,1,UK - London,false,,United Kingdom,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -36399,66 +34892,6 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4769,https://jobs.ashbyhq.com/airwallex/51493378-715f-4cfa-a80c-d0a7ba799ff5,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
-515dfe61-86b3-4482-a41d-6d72e0558cdc,Senior AI Engineer (Risk & Payments),Airwallex,airwallex,Full time,Posted 44 Days Ago,,,AU - Sydney,1,AU - Sydney,false,,Australia,,0,"About Airwallex
-
-Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
-
-We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
-
-We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
-
-About the Role
-You’ll be a core builder in our Risk and Payment team, designing and deploying intelligent systems that automate complex, multi-step workflows. You’ll leverage agentic frameworks, advanced orchestration, and pragmatic model selection to take ideas from whiteboard to production. This position will be embedded in the payment and risk team to build AI solutions improving risk management and payment processing.
-
-What You’ll Do
-
-•
-Translate business problems into AI agent solutions end to end.
-
-•
-Architect and deploy AI agents using frameworks like LangChain, LlamaIndex, AutoGen, CrewAI, Semantic Kernel, and emerging OSS stacks.
-
-•
-Apply the right techniques across the AI spectrum including prompting, RAG, fine-tuning.
-
-•
-Design and optimize agent architectures for reasoning, tool use, and workflow automation.
-
-•
-Build systems that improve with usage, creating compounding AI flywheels.
-
-•
-Work with backend and frontend engineers to integrate AI reasoning into secure, production systems.
-
-•
-Develop advanced evaluation framework and monitoring systems for AI agents to ensure good governance of AI
-
-What You Need to Have
-
-•
-2+ years in applied AI/ML engineering with production deployments.
-
-•
-Strong Python skills and experience with ML frameworks (PyTorch, JAX…).
-
-•
-Track record of building and deploying AI agents, orchestration frameworks, or multi-step reasoning systems for concrete business problems.
-
-•
-Understanding of monitoring, evaluation, and iteration in production AI systems.
-
-•
-Ability to balance innovation with reliability, scalability, and compliance.
-
-Applicant Safety Policy: Fraud and Third-Party Recruiters
-
-To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
-
-Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
-
-Equal opportunity
-
-Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",3961,https://jobs.ashbyhq.com/airwallex/515dfe61-86b3-4482-a41d-6d72e0558cdc,,,,,,,not_checked,,2026-10-07,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
 54413125-c244-4f26-ae1b-85b86bded8a8,"Staff Site Reliability Engineer, Spend",Airwallex,airwallex,Full time,Posted 34 Days Ago,,,SG - Singapore,1,SG - Singapore,false,,Singapore,,0,"About Airwallex
 
 Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
@@ -45544,3 +43977,267 @@ Airwallex does not accept unsolicited resumes from search firms/recruiters. Airw
 Equal opportunity
 
 Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",4901,https://jobs.ashbyhq.com/airwallex/9d00b932-722c-4b50-b780-f95b969a37b0,,,,,,,not_checked,,2026-10-12,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
+ad805889-55be-4ee2-9e82-afc55440bd2b,"Senior Software Engineer, Observability",Airwallex,airwallex,Full time,Posted Today,,,SG - Singapore,2,"SG - Singapore; {'location': 'KR - Seoul', 'address': {'postalAddress': {'addressRegion': 'Korea', 'addressCountry': 'South Korea', 'addressLocality': 'Seoul'}}}",false,,Singapore,,0,"About Airwallex
+
+Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
+
+We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
+
+We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
+
+How you'll make impact
+
+The Infrastructure & Productivity team builds the technical foundation that enables Airwallex’s global engineering organisation to scale. Our customers are fellow engineers, and we make their work faster, safer, and more effective through reliable platforms, automation, and observability systems.
+
+As a Senior Software Engineer on the Observability team, you’ll build and operate the platforms that give engineering teams clear, timely, and actionable insight into the health and performance of Airwallex’s distributed systems. You’ll help reduce time to detect and resolve incidents, improve system reliability, and establish scalable observability practices across the company.
+
+•
+Build and operate highly scalable observability platforms covering metrics, logs, traces, events, alerting, dashboards, and service health.
+
+•
+Develop reliable software and platform capabilities that enable engineering teams to instrument, monitor, and troubleshoot their services with minimal friction.
+
+•
+Establish and evolve observability standards, including telemetry collection, instrumentation, alert quality, SLOs, SLIs, service ownership, and operational readiness.
+
+•
+Improve incident detection, diagnosis, and response through actionable alerts, intelligent correlation, service dependency visibility, and effective runbooks.
+
+•
+Build self-service tools and paved paths that make best practices the easiest way for engineers to adopt observability.
+
+•
+Partner closely with application, infrastructure, SRE, security, and product teams to understand operational challenges and deliver durable solutions.
+
+•
+Improve the scalability, reliability, performance, and cost efficiency of observability systems across multiple regions and environments.
+
+•
+Participate in design reviews, technical planning, code reviews, incident response, and post-incident learning.
+
+•
+Mentor engineers and contribute to a culture of ownership, operational excellence, and continuous improvement.
+
+This role is based in SG or South Korea
+
+What we're looking for
+
+Essentials
+
+•
+5+ years of professional software engineering experience, with a track record of building and operating production systems.
+
+•
+Strong proficiency in at least one backend programming language, such as Go, Java, Python, or Kotlin.
+
+•
+Hands-on experience designing and operating distributed systems at scale.
+
+•
+Practical experience with observability platforms and technologies such as Prometheus, Grafana, Datadog, OpenTelemetry, ELK, or equivalent solutions.
+
+•
+Strong understanding of metrics, logs, traces, alerting, service-level indicators, service-level objectives, and incident management.
+
+•
+Experience with cloud-native environments, Kubernetes, containers, and public cloud platforms such as AWS, GCP, or Azure.
+
+•
+Experience with infrastructure as code and automated software delivery, using tools such as Terraform and CI/CD pipelines.
+
+•
+Strong system design and problem-solving skills, with the ability to make sound technical decisions in complex and ambiguous environments.
+
+•
+Excellent communication and collaboration skills, including the ability to work effectively with globally distributed engineering teams.
+
+•
+An ownership mindset and a commitment to improving systems rather than simply treating symptoms.
+
+Preferred
+
+•
+Experience building observability platforms or internal developer platforms used by multiple engineering teams.
+
+•
+Experience with OpenTelemetry, Prometheus, Grafana, Jaeger, Loki, Tempo, ClickHouse, Elasticsearch, Kafka, or similar technologies.
+
+•
+Experience designing high-volume telemetry ingestion, storage, querying, aggregation, and retention systems.
+
+•
+Familiarity with SRE practices, including on-call operations, incident response, postmortems, runbooks, and error budgets.
+
+•
+Experience with service meshes, Kubernetes operators, or large-scale microservice platforms.
+
+•
+Contributions to observability, cloud infrastructure, reliability, or open-source projects.
+
+•
+Bachelor’s or master’s degree in Computer Science, Engineering, or a related discipline.
+
+You'll thrive here if
+
+•
+You're comfortable owning the roadmap yourself.
+
+•
+You're comfortable making decisions with incomplete information and moving quickly anyway.
+
+•
+You’re comfortable operating across time zones with a globally distributed team, including colleagues based in APAC and EMEA.
+
+•
+You say what you mean. You're direct, but you lead with respect.
+
+•
+You connect dots across functions and hold the big picture without losing grip on the details.
+
+Learn more about your team
+
+The Infrastructure & Productivity team at Airwallex builds the technical foundation that allows our global engineering organisation to scale. Our customers are our fellow engineers, and our mission is to make their daily work faster, safer, and more effective by managing the core platforms everyone relies on, from Kubernetes and Kafka to CI/CD pipelines and observability systems. The real challenge lies in keeping these global systems highly reliable and secure while simultaneously optimising cloud costs, automating manual support, and driving standardisation without slowing down product delivery. We operate under the philosophy that best practices should be the path of least resistance, not a forced mandate. If you're a systems thinker who wants to work close to the core of the company and directly shape how we build, deploy, and scale software worldwide, this is where that work happens.
+
+Applicant Safety Policy: Fraud and Third-Party Recruiters
+
+To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
+
+Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
+
+Equal opportunity
+
+Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",7841,https://jobs.ashbyhq.com/airwallex/ad805889-55be-4ee2-9e82-afc55440bd2b,,,,,,,not_checked,,2026-10-13,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
+f3622f3b-7c2c-4120-8a15-0fe3e9abbefc,People Operations Manager,Airwallex,airwallex,Full time,Posted Today,,,NL - Amsterdam,2,"NL - Amsterdam; {'location': 'UK - London', 'address': {'postalAddress': {'addressRegion': 'London', 'addressCountry': 'United Kingdom', 'addressLocality': 'London'}}}",false,,Netherlands,,0,"About Airwallex
+
+Airwallex is the AI-native financial operating system for a real-time, intelligent economy. More than 675,000 businesses, including McLaren Racing, Qantas, SHEIN, and TikTok, use us, directly or through our platform partners, to run their financial operations or build and monetize financial products of their own.
+
+We started in Melbourne in 2015 to build the infrastructure global commerce runs on. We're the regulated backbone behind global payments: not by accident, but by design. A decade plus, 85+ licenses, and a financial infrastructure spanning North America, Europe, the Middle East, and Asia-Pacific.
+
+We're co-headquartered in San Francisco and Singapore, with more than 2,300 people across 27 offices. We hire builders with founder-level energy, people who move fast with good judgment, dig in with real curiosity, and make calls from first principles rather than waiting to be told what to do. Read our operating principles to see it in full.
+
+About Airwallex
+
+Airwallex is a global payments and financial infrastructure platform that helps businesses move money globally. Our products span payments, accounts, treasury, cards, spend management and more, giving businesses a simpler way to manage their financial operations across borders.
+
+We’re building the future of global finance, and our People & Talent team plays an important role in helping Airwallex scale responsibly. We’re looking for thoughtful, hands-on operators who care deeply about employee experience and enjoy turning complex people processes into simple, effective solutions.
+
+What you’ll do
+
+As Manager, People Operations, EMEA, you’ll help deliver a high-quality employee experience across a growing and diverse region. You’ll combine hands-on operational ownership with process improvement, partnering closely with People Partners, Talent Acquisition, Payroll, Total Rewards, Workplace Experience, Legal and business leaders.
+
+You’ll own core employee lifecycle processes across EMEA, support local compliance and benefits administration, maintain accurate people data, and help employees and managers navigate People-related questions. You’ll also contribute to the evolution of our regional operating model, identifying opportunities to improve, automate and scale the way we work.
+
+This is a role for someone who is comfortable operating at both the detail level and the regional level: ensuring every onboarding, payroll input and employee query is handled well while also building better systems for the future.
+
+Responsibilities
+
+•
+Lead and develop the regional People Operations function; own end-to-end employee lifecycle operations (onboarding/orientation, background checks, HRIS data integrity, payroll inputs/changes, benefits and leaves, offboarding) for an EMEA footprint with ~400 employees, with a strong focus on delivery quality and compliance.
+
+•
+Drive operational excellence by codifying and maintaining regional SOPs, managing the P&T JIRA helpdesk queue, and setting clear workflows and standards that are consistent with global guidance.
+
+•
+Partner cross-functionally with Payroll, IT, and Compliance on accurate and timely transactions, audits, vendor coordination, invoicing/POs, and change control.
+
+•
+Run regular data audits and quality checks, identify discrepancies and improve data integrity, reporting and governance.
+
+•
+Support the administration and rollout of benefits across relevant EMEA markets, working with internal stakeholders and external providers.
+
+•
+Provide operational support for employment changes, leave, probation, right-to-work processes, visas and other country-specific employee matters.
+
+•
+Work closely with People Partners and Legal to ensure processes are delivered consistently and in line with relevant local requirements.
+
+•
+Identify inefficiencies in manual workflows and drive process improvements, automation and appropriate use of AI.
+
+•
+Support regional and global People projects, including implementation of new systems, policies and employee programs.
+
+•
+Manage, prioritise and allocate work across People Operations support resources where applicable. Lead and drive a team-based, collaborative environment.
+
+What we’re looking for
+
+Minimum qualifications
+
+•
+6+ years of experience in People Operations, HR Operations or a closely related HR generalist role, ideally in a fast-growing software, internet or fintech company.
+
+•
+Strong knowledge of employee lifecycle processes, including onboarding, offboarding, payroll inputs, benefits, HRIS administration and employee data management.
+
+•
+Experience supporting employees across multiple EMEA countries (Netherlands, UK, Germany, France, Spain, Italy, Poland, etc.) and working with local employment requirements.
+
+•
+Familiarity with payroll processes, including variable compensation such as commissions, bonuses or allowances.
+
+•
+A hands-on, detail-oriented approach and the ability to manage high-volume operational work without losing sight of quality.
+
+•
+Strong organisational skills, sound judgement and the ability to prioritise competing requests in a fast-moving environment.
+
+•
+Excellent written and verbal communication skills, with the confidence to work with employees, managers, senior stakeholders and external providers.
+
+•
+A track record of improving processes, documenting ways of working and reducing manual effort. Experience using AI to drive improvements is highly preferred.
+
+•
+High standards of confidentiality, discretion and data accuracy.
+
+•
+The ability to operate independently, solve problems pragmatically and make progress despite ambiguity.
+
+Preferred qualifications
+
+•
+Familiarity with BambooHR, Deel, Jira, Confluence, Lattice, Slack and Google Workspace.
+
+•
+Experience supporting EOR populations or employees across multiple legal entities.
+
+•
+Experience with HR systems implementation, workflow automation, reporting or AI-enabled process improvement.
+
+•
+Experience partnering with Workplace Experience or supporting office-based employee programs.
+
+•
+Professional HR qualification or equivalent practical experience.
+
+You’ll thrive here if
+
+•
+You enjoy working across countries, cultures and time zones and can adapt your approach to different local contexts.
+
+•
+You’re comfortable moving between detailed execution and broader process improvement.
+
+•
+You default to action, learn quickly and course-correct when priorities change.
+
+•
+You communicate clearly, flag issues early and take ownership through to resolution.
+
+•
+You care about making complex processes easier for employees and managers.
+
+•
+You’re low-ego, collaborative and focused on achieving the right outcome for the business and our people.
+
+Applicant Safety Policy: Fraud and Third-Party Recruiters
+
+To protect you from recruitment scams, please be aware that Airwallex will not ask for bank details, sensitive ID numbers (i.e. passport), or any form of payment during the application or interview process. All official communication will come from an @airwallex.com email address. Please apply only through careers.airwallex.com or our official LinkedIn page.
+
+Airwallex does not accept unsolicited resumes from search firms/recruiters. Airwallex will not pay any fees to search firms/recruiters if a candidate is submitted by a search firm/recruiter unless an agreement has been entered into with respect to specific open position(s). Search firms/recruiters submitting resumes to Airwallex on an unsolicited basis shall be deemed to accept this condition, regardless of any other provision to the contrary.
+
+Equal opportunity
+
+Airwallex is proud to be an equal opportunity employer. We value diversity and anyone seeking employment at Airwallex is considered based on merit, qualifications, competence and talent. We don’t regard color, religion, race, national origin, sexual orientation, ancestry, citizenship, sex, marital or family status, disability, gender, or any other legally protected status when making our hiring decisions. If you have a disability or special need that requires accommodation, please let us know.",8057,https://jobs.ashbyhq.com/airwallex/f3622f3b-7c2c-4120-8a15-0fe3e9abbefc,,,,,,,not_checked,,2026-10-13,,2026-10-13,,,,true,0,,,,,,,,,,,,,,

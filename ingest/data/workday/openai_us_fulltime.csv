@@ -1980,83 +1980,6 @@ We are committed to providing reasonable accommodations to applicants with disab
 OpenAI Global Applicant Privacy Policy
 
 At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",6181,https://jobs.ashbyhq.com/openai/941bad28-7abe-43c7-b20a-2bc7e5b3c6e8,,,,,,,no_match,,2026-09-19,,2026-10-13,,,,true,0,,,,,Research,,,false,,,,,,
-e25e56a3-88f0-4994-9ae7-3d6d85c1501b,"Technical Program Manager, Partnerships",openai,openai,Full time,Posted 25 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Team
-
-OpenAI's Research Team is at the forefront of AI research, pushing the limits of what AI can achieve. Our team is dedicated to developing advanced AI systems that are powerful, safe, and beneficial for everyone.
-
-About the Role
-
-The Research IP Partnerships team is in need of Technical Program Managers (TPMs) to streamline the integration of our applied research with external strategic partners. This role is critical for synthesizing research from cross functional teams, enabling model deployment, and ensuring new technologies are effectively adopted.
-
-You will act as the connection that enables our partners to deploy the most advanced AI models. Your primary focus will be to increase our research velocity and ensure that our deployments are successful and collaborative with our partners.
-
-This role is based in San Francisco, CA. We use a hybrid work model of 3 days in the office per week and offer relocation assistance to new employees.
-
-In this role, you will:
-
-•
-Build and share a deep understanding of frontier AI model development
-
-•
-Partner with internal and external teams to drive deployment of the latest OpenAI technologies
-
-•
-Manage critical inquiries from both technical and non-technical partners
-
-•
-Design and implement simple, scalable processes that solve complex problems
-
-•
-Deliver high-profile pipeline and tooling projects on tight deadlines
-
-•
-Work across research and engineering to align goals, streamline communication, and support business priorities
-
-You might thrive in this role if you:
-
-•
-Have experience in a strategic partnerships and technical program management role
-
-•
-Can right-size process to align stakeholders while ensuring speed of delivery (action-oriented)
-
-•
-Are fantastic at building cross-functional relationships and having empathy for the many roles involved in deploying research
-
-•
-Can design and build tools (via code / no-code / AI) to facilitate internal processes
-
-•
-Are a great communicator across written, presentation, and visual forms.
-
-•
-Are engaged and curious about the rapidly evolving AI landscape.
-
-Specific technologies / skills that will be helpful in this role
-
-•
-Experience with agentic models or OpenAI LLM APIs
-
-•
-No-Code/Low-Code Platforms: e.g. Airtable, Zapier, Retool
-
-About OpenAI
-
-OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
-
-We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
-
-For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
-
-Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
-
-To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
-
-We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
-
-OpenAI Global Applicant Privacy Policy
-
-At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",4812,https://jobs.ashbyhq.com/openai/e25e56a3-88f0-4994-9ae7-3d6d85c1501b,,,,,,,no_match,,2026-09-19,,2026-10-13,,,,true,0,,,,,Technical Program Management,,,false,,,,,,
 a886ff48-b8a1-4e28-b468-296713a5ad78,"Full-Stack SWE, Data Acquisition (Foundations)",openai,openai,Full time,Posted 591 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"Overview:
 The Data Acquisition team within the Foundations organization at OpenAI is responsible for all aspects of data collection to support our model training operations. Our team manages web crawling and GPTBot services and works closely with Data Processing, Architecture, and Scaling teams. We are looking for a skilled Full-Stack Engineer to join our Data Acquisition team to build and optimize the interfaces and tools that power our data infrastructure.
 
@@ -15040,92 +14963,6 @@ We are committed to providing reasonable accommodations to applicants with disab
 OpenAI Global Applicant Privacy Policy
 
 At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",6931,https://jobs.ashbyhq.com/openai/efcc3430-14c8-4022-8350-8146ffb867ab,,,,,,,no_match,,2026-09-19,,2026-10-13,,,,true,0,,,,,Data Science,,,false,,,,,,
-467cbfac-3e7d-4cc6-a131-2b26617afa02,Hardware Tools Engineer,openai,openai,Full time,Posted 208 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Team
-
-OpenAI’s Hardware organization develops AI-native silicon and system-level solutions for the unique demands of advanced AI workloads. Building on efforts like Jalapeño, the team is developing future generations of AI-native silicon and tightly integrated systems to power the next generation of frontier models. By co-designing chips, systems, tools, and methodologies, the team helps deliver faster, more efficient, and production-ready hardware for OpenAI’s supercomputing platform.
-
-About the Role
-
-You will develop and evolve the tooling ecosystem that hardware engineers rely on every day — from hardware compilers and IR transformations to simulation, debugging, and automation infrastructure. The work spans software engineering, compiler concepts, and practical hardware workflows, with direct impact on how quickly and effectively we design next-generation AI systems.
-
-You’ll collaborate closely with architects, RTL designers, and verification engineers to translate real engineering friction into durable, scalable tooling solutions.
-
-In this role you will:
-
-•
-Build and improve the software tooling that makes hardware teams faster: compilation, IR transforms, RTL generation, simulation, debug, and automation.
-
-•
-Extend and integrate hardware compiler stacks (frontends, IR passes, lowering, scheduling, codegen to Verilog/SystemVerilog) and connect them to real design workflows.
-
-•
-Improve developer experience and reliability: reproducible builds, better error messages, faster iteration loops, and dependable CI and regression infrastructure.
-
-•
-Work closely with designers and verification engineers to turn real pain points into durable tools.
-
-•
-Dive into RTL when needed: read and reason about Verilog/SystemVerilog to debug issues, validate tool output, and improve debuggability.
-
-•
-Be willing to go all the way down the stack when necessary, including gate-level views, synthesis results, and implementation artifacts.
-
-•
-Help enable PPA optimization loops by building analysis and automation around area, timing, and power tradeoffs, and by improving tooling that impacts those outcomes.
-
-You might thrive in this role if:
-
-•
-Demonstrated ability to build and maintain software (projects, internships, research, open source, or equivalent experience).
-
-•
-Strong CS fundamentals: data structures, algorithms, debugging, and software design.
-
-•
-Proficiency in at least one of Rust, C++, or Python (and willingness to learn the rest).
-
-•
-Familiarity with digital design concepts and the ability to read RTL (Verilog/SystemVerilog) or equivalent hardware descriptions.
-
-•
-Familiarity with compiler or IR-based ideas (representations, passes, transformations, lowering), through coursework or projects.
-
-•
-Comfort operating in ambiguity and iterating quickly with users of your tools.
-
-Nice to have skills:
-
-•
-Exposure to compiler and hardware toolchains such as XLS/DSLX, LLVM, Chisel/FIRRTL, CIRCT/MLIR, other novel hardware languages (e.g. HardCaml, SpinalHDL, Spade, PyMTL, Clash, BlueSpec, PyRope)
-
-•
-Experience with Verilog tooling ecosystems (Yosys/RTLIL, Verilator, Slang) or writing tooling around them.
-
-•
-Experience with build and test infrastructure (Bazel, CI systems, fuzzing, performance testing).
-
-•
-Prior work touching synthesis, place and route, static timing analysis, or other PPA-related workflows.
-
-To comply with U.S. export control laws and regulations, candidates for this role may need to meet certain legal status requirements as provided in those laws and regulations.
-
-About OpenAI
-
-OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
-
-We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
-
-For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
-
-Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
-
-To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
-
-We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
-
-OpenAI Global Applicant Privacy Policy
-
-At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",6076,https://jobs.ashbyhq.com/openai/467cbfac-3e7d-4cc6-a131-2b26617afa02,,,,,,,no_match,,2026-09-19,,2026-10-13,,,,true,0,,,,,Scaling,,,false,7,380000,380000,460000,subset,Member of Technical Staff (Hardware Engineer)
 bdbb2292-ecb3-42dc-ba89-65edf397d8f8,Hardware / Software CoDesign Engineer  - 3P,openai,openai,Full time,Posted 189 Days Ago,,,San Francisco,2,"San Francisco; {'location': 'Seattle', 'address': {'postalAddress': {'addressRegion': 'Washington', 'addressCountry': 'United States', 'addressLocality': 'Seattle'}}}",false,,United States,,0,"About the Team
 
 OpenAI’s Hardware organization develops silicon and system-level solutions designed for the unique demands of advanced AI workloads. The team is responsible for building the next generation of AI-native silicon while working closely with software and research partners to co-design hardware tightly integrated with AI models. In addition to delivering production-grade silicon for OpenAI’s supercomputing infrastructure, the team also creates custom design tools and methodologies that accelerate innovation and enable hardware optimized specifically for AI.
@@ -18746,120 +18583,6 @@ We are committed to providing reasonable accommodations to applicants with disab
 OpenAI Global Applicant Privacy Policy
 
 At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",7282,https://jobs.ashbyhq.com/openai/5acf4854-1d42-40ca-bff8-4f6f04cdce68,,https://www.linkedin.com/jobs/view/4452905145,2026-09-03,200,Over 200 applicants,,matched,title,2026-09-19,2026-09-19T03:57:29,2026-10-13,,40,startDate+linkedin,true,0,,,,,Core Product & Platform,2026-09-03,,true,,,,,,
-7536171d-0f98-4964-8f22-7968db062105,"Director, Compute & Infrastructure FP&A",openai,openai,Full time,Posted 158 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Role
-
-As a Director, Compute & Infrastructure FP&A, you will own and drive the monthly forecasting process for the Compute & Infrastructure org by partnering with various stakeholders across Finance, Accounting, Tax and Engineering. You will play a critical role in planning and forecasting the company’s largest and most complex cost center ( Compute & Infrastructure ).
-
-You will collaborate cross-functionally to develop long-range infrastructure investment plans, evaluate build vs. buy decisions, and ensure capital is deployed efficiently to support rapid growth. You will also provide strategic financial guidance through scenario modeling, ROI analysis, and performance tracking, enabling leadership to make high-stakes decisions under uncertainty.
-
-What You’ll Do
-
-•
-Own compute financial planning & Forecasting.
-
-•
-Build and manage consolidation models for GPU/CPU capacity, storage, networking, and data center investments.
-
-•
-Translate infrastructure roadmaps into short- and long-term financial forecasts (LRP, annual planning)
-
-•
-Coordinate closely with Corporate FP&A on timelines and process
-
-•
-Present insights on a monthly basis to senior management.
-
-•
-Drive infrastructure investment decisions.
-
-•
-Evaluate build vs. buy, vendor vs. owned infrastructure, and capacity allocation tradeoffs.
-
-•
-Develop frameworks for investment trade-offs to guide executive decision making.
-
-•
-Build scalable tooling & reporting.
-
-•
-Implement stakeholder-facing dashboards to track compute spend, utilization, and efficiency metrics.
-
-•
-Improve visibility into unit economics (e.g., cost per training run, cost per inference, cost per customer).
-
-•
-Drive forecasting accuracy & accountability.
-
-•
-Lead budget vs. actual analysis for compute and infrastructure spend.
-
-•
-Identify key cost drivers (utilization, pricing, efficiency gains) and reduce forecast variance.
-
-•
-Support close & financial reporting.
-
-•
-Partner with Accounting to ensure accurate classification of infrastructure spend (OpEx vs CapEx).
-
-•
-Translate complex infrastructure costs into clear insights for leadership.
-
-•
-Enable strategic decision-making.
-
-•
-Build scenario models to support leadership decisions on capacity scaling, new model launches, and infrastructure investments.
-
-•
-Lead ad hoc analyses on emerging topics.
-
-You Might Thrive in This Role If You Have
-
-•
-10+ years in strategic finance, with experience in infrastructure, cloud, hardware, or compute-intensive environments
-
-•
-2+ years in investment banking
-
-•
-Must have experience running an FP&A team at the corporate level or business unit level with significant scale.
-
-•
-Strong financial modeling skills, particularly in capacity planning, unit economics, and scenario analysis under uncertainty.
-
-•
-Experience supporting large-scale infrastructure or cloud spend (e.g., AWS/GCP/Azure, GPUs, data centers).
-
-•
-Ability to translate technical concepts (compute usage, model training/inference, system architecture) into financial insights.
-
-•
-Proficiency in Excel/Sheets, SQL, and BI tools (e.g., Tableau); experience with planning systems like Anaplan is a plus.
-
-•
-Strong cross-functional partnership skills, especially with Engineering, Product, and Supply Chain.
-
-•
-Familiarity with AI/ML infrastructure cost drivers and the economics of training and serving models.
-
-About OpenAI
-
-OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
-
-We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
-
-For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
-
-Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
-
-To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
-
-We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
-
-OpenAI Global Applicant Privacy Policy
-
-At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",5866,https://jobs.ashbyhq.com/openai/7536171d-0f98-4964-8f22-7968db062105,,https://www.linkedin.com/jobs/view/4417168174,2026-09-08,200,Over 200 applicants,,matched,title,2026-09-19,2026-09-19T04:18:46,2026-10-13,,35,startDate+linkedin,true,0,,,,,Strategic Finance,2026-09-08,,true,,,,,,
 c44a22a3-6d6f-41f3-bd54-3379034f3e59,"AWS Specialist Seller, Strategic Pursuits",openai,openai,Full time,Posted 57 Days Ago,,,San Francisco,2,"San Francisco; {'location': 'Seattle', 'address': {'postalAddress': {'addressRegion': 'Washington', 'addressCountry': 'United States', 'addressLocality': 'Seattle'}}}",false,,United States,,0,"About the team
 OpenAI’s mission is to build safe artificial general intelligence (AGI) that benefits all of humanity. Achieving this requires bringing together world-class scientists, engineers, and business leaders to translate frontier research into real-world impact.
 
@@ -34429,84 +34152,6 @@ We are committed to providing reasonable accommodations to applicants with disab
 OpenAI Global Applicant Privacy Policy
 
 At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",7150,https://jobs.ashbyhq.com/openai/d8b894e3-c399-4303-a708-3cef8ff5c1a2,,,,,,,no_match,,2026-09-19,,2026-10-13,,,,true,0,,,,,Forward Deployed Engineering,,,false,4,220000,220000,220000,subset,Member of Go To Market Staff (Forward Deployed Engineer)
-e961c9df-caa0-4b29-b37c-a3e02c564615,"Software Engineer, Silicon Design Methodology",openai,openai,Full time,Posted 51 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Team
-
-OpenAI’s Hardware organization develops AI-native silicon and system-level solutions for the unique demands of advanced AI workloads. Building on efforts like Jalapeño, the team is developing future generations of AI-native silicon and tightly integrated systems to power the next generation of frontier models. By co-designing chips, systems, tools, and methodologies, the team helps deliver faster, more efficient, and production-ready hardware for OpenAI’s supercomputing platform.
-
-About the Role
-
-We’re looking for a software engineer to help build the design methodology, software abstractions, and infrastructure that enable a small silicon team to develop complex chips rapidly and with high confidence. You will turn evolving architecture and design needs into reusable tools and workflows that improve iteration speed, quality, and then apply those tools to help construct world-class silicon.
-
-You’ll work closely across architecture, design, verification, performance modeling, and systems software. This role is well suited for an engineer who enjoys building high quality software and is motivated by the challenge of improving velocity and quality of the silicon development process.
-
-In this role, you will:
-
-•
-Develop and scale design methodologies for rapid first-party chip development and apply them to construct complex custom chips
-
-•
-Create abstractions that allow hardware structures, configurations, experiments, and results to be represented consistently across tools.
-
-•
-Automate high-value engineering workflows and improve their reproducibility, observability, testability, and ease of use.
-
-•
-Partner with architects, RTL designers, verification engineers, compiler engineers, and systems software engineers to gather requirements and then implement solutions.
-
-•
-Use methodology and tooling to identify design risks early, accelerate iteration, and improve confidence in performance and implementation tradeoffs.
-
-•
-Contribute across multiple aspects of software and hardware development as the first-party silicon program and its development methodology evolve.
-
-You might thrive in this role if:
-
-•
-You have strong software engineering skills in C++, Python, Rust, or similar systems-oriented languages.
-
-•
-You have experience building engineering infrastructure, developer tools, simulation frameworks, EDA/CAD tooling, compilers, or verification systems.
-
-•
-You understand digital design and computer architecture well enough to translate silicon-development needs into useful software abstractions.
-
-•
-Have experience integrating RTL and IP components into an SoC.
-
-•
-You have designed APIs, object models, or data models for complex systems and care about extensibility, correctness, and usability.
-
-•
-You are comfortable automating multi-stage workflows, building regression systems, and improving reproducibility across teams.
-
-•
-You can reason across architecture, design, verification, performance modeling, and software boundaries.
-
-•
-You enjoy partnering closely with domain experts and turning loosely defined engineering needs into durable tools and methodologies.
-
-•
-You thrive in rapidly evolving environments and can balance immediate program needs with longer-term platform quality.
-
-To comply with U.S. export control laws and regulations, candidates for this role may need to meet certain legal status requirements as provided in those laws and regulations.
-
-About OpenAI
-
-OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
-
-We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
-
-For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
-
-Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
-
-To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
-
-We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
-
-OpenAI Global Applicant Privacy Policy
-
-At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",5966,https://jobs.ashbyhq.com/openai/e961c9df-caa0-4b29-b37c-a3e02c564615,,,,,,,no_match,,2026-09-19,,2026-10-13,,,,true,0,,,,,Scaling,,,false,59,210000,255000,310000,subset,Member of Technical Staff (Software Engineer)
 bb759305-03a3-442c-a694-ae9ef478b1fd,"Asset Compliance Program Lead, Hardware",openai,openai,Full time,Posted 51 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Team
 
 OpenAI’s Central Procurement – Hardware Operations team is building scalable, AI-enabled operating foundations for a rapidly growing hardware footprint. We help the business move quickly while maintaining the data quality and controls needed to manage financial and operational risk responsibly.
@@ -37203,85 +36848,6 @@ We are committed to providing reasonable accommodations to applicants with disab
 OpenAI Global Applicant Privacy Policy
 
 At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",11014,https://jobs.ashbyhq.com/openai/d49e3abe-0d02-4b73-a5b2-cc7f1414c1e8,,https://www.linkedin.com/jobs/view/4455450902,2026-09-11,68,68 applicants,,matched,title,2026-09-19,2026-09-19T04:20:06,2026-10-13,,32,startDate+linkedin,true,0,,,,,Finance,2026-09-11,,false,,,,,,
-5b85c0cc-3f19-4b96-9bd3-3b7521e54f44,"Strategic Finance, International & Marketing",openai,openai,Full time,Posted 29 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Role
-
-OpenAI’s Applications organization spans rapidly growing Consumer, Enterprise, Developer, and Hardware businesses. As we scale across EMEA, APAC, and LATAM, we’re building the financial and operating model that will help our regional teams make faster, better decisions.
-
-We are hiring a senior Strategic Finance partner to help shape that work. You’ll serve as a trusted advisor to regional GMs, connecting market strategy with business performance and guiding where and how we invest. By bringing together insights across growth, revenue, OpEx, headcount, and marketing effectiveness, you’ll help leaders understand market health, set priorities, and drive measurable outcomes.
-
-You’ll create the frameworks, operating rhythms, and decision processes needed to scale our international business, while contributing to broader Strategic Finance priorities across Marketing.
-
-This role is based in our San Francisco HQ. We use a hybrid work model of 3 days in the office per week and offer relocation assistance to new employees. Periodic international travel is expected.
-
-In this role, you will:
-
-•
-Own an integrated view of OpenAI’s international performance—spanning countries, regions, and Consumer, Enterprise/API, and Developer businesses—to guide growth, resource allocation, and investment decisions.
-
-•
-Partner with regional GMs and functional leaders to shape country strategies spanning Product, Sales, Growth and Brand Marketing, Partnerships, Communications, and Policy.
-
-•
-Lead regional financial planning and forecasting, tracking budgets, headcount, capacity, investments, and risks against the company plan.
-
-•
-Build and operationalize investment frameworks across markets, channels, and programs, evaluating expected returns, opportunity costs, and tradeoffs to recommend what to fund and when.
-
-•
-Create regional and country scorecards and lead regular business reviews that track key metrics, surface risks, drive decisions, and ensure follow-through.
-
-•
-Design decision rights and escalation paths across a cross-functional, matrixed organization so regional leaders can move quickly and major cross-market decisions receive appropriate review.
-
-•
-Partner with Marketing, Growth, and Data Science to strengthen acquisition and retention measurement and translate results into executive-ready recommendations.
-
-•
-Build scalable, AI-enabled workflows that improve reporting, forecasting, and investment evaluation across regions.
-
-You might thrive in this role if you have:
-
-•
-10+ years of progressive experience across Strategic Finance, investment banking, consulting, private equity, or related operating roles.
-
-•
-2+ years of Strategic Finance experience at a high-growth technology company, including meaningful partnership with international, Marketing, Growth, or GTM teams.
-
-•
-Exceptional financial modeling and analytical skills, with experience managing complex budgets and translating market economics, investment tradeoffs, and performance data into decisions.
-
-•
-A track record of serving as a trusted thought partner to executives and cross-functional leaders.
-
-•
-Fluency across Consumer and B2B business models, international market dynamics, and Growth, Brand, or go-to-market investment.
-
-•
-Experience designing planning processes, operating cadences, scorecards, or investment frameworks that create clear ownership and produce measurable business outcomes.
-
-•
-High agency, sound judgment, and comfort building structure in ambiguous, fast-moving environments.
-
-•
-Enthusiasm for AI and experience partnering with Data Science; SQL familiarity is a plus.
-
-About OpenAI
-
-OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
-
-We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
-
-For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
-
-Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
-
-To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
-
-We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
-
-OpenAI Global Applicant Privacy Policy
-
-At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",6148,https://jobs.ashbyhq.com/openai/5b85c0cc-3f19-4b96-9bd3-3b7521e54f44,,https://www.linkedin.com/jobs/view/4458994538,2026-08-28,161,161 applicants,,matched,title,2026-09-19,2026-09-19T04:20:08,2026-10-13,,46,startDate+linkedin,true,0,,,,,Strategic Finance,2026-08-28,,false,,,,,,
 1b268692-70d8-46c2-a347-2f7705b5c174,"Machine Learning Engineer, Multimodal Perception and Authentication",openai,openai,Full time,Posted 36 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Team
 
 The Future of Computing Research team is an applied research team within OpenAI’s Consumer Devices group. We study how AI systems perceive people and their surroundings, and we turn that research into capabilities for future products.
@@ -55930,3 +55496,96 @@ We are committed to providing reasonable accommodations to applicants with disab
 OpenAI Global Applicant Privacy Policy
 
 At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",6641,https://jobs.ashbyhq.com/openai/e8ab15cc-f1f9-43cd-8658-e51d925af98c,,https://www.linkedin.com/jobs/view/4476872001,2026-10-09,25,among first 25,,matched,titleSearchFallback,2026-10-10,2026-10-10T13:12:30,2026-10-13,,4,startDate+linkedin,true,0,,,,,,2026-10-09,,true,,,,,,
+be7abbba-bca2-4baa-b7d8-98d5ab514520,"Client Partner, Ads Solutions - Financial Services",OpenAI,openai,Full time,Posted 1 Days Ago,,,New York City,1,New York City,false,,United States,,0,"About the Team
+OpenAI’s Sales team partners with advertisers to understand their businesses, develop meaningful advertising solutions, and drive long-term growth on the platform while maintaining strong standards for user trust and platform integrity.
+
+About the Role
+This role will focus on growing advertising revenue across the Financial Services vertical, including banks, credit card issuers, insurance providers, investment and wealth management firms, lending platforms, fintech companies, and adjacent financial services brands.
+You will own the full sales cycle—from prospecting through deal closure—and build strategic relationships with senior financial services decision-makers. You’ll help advertisers reach high-intent audiences, improve campaign performance, and develop long-term commercial partnerships that support their business goals.
+
+You will work closely with Account Managers and cross-functional partners to ensure successful advertiser outcomes after the sale, while maintaining primary ownership of revenue growth, commercial strategy, and Financial Services vertical expertise.
+
+In this role, you will:
+
+•
+Prospect, qualify, and close new advertising opportunities across the Financial Services vertical.
+
+•
+Own and achieve a defined revenue target across an assigned portfolio of financial services advertisers.
+
+•
+Build relationships with senior advertising, marketing, digital acquisition, product, and business leaders.
+
+•
+Develop account plans that connect advertiser goals—such as account openings, credit card applications, insurance quotes, qualified leads, app adoption, and customer retention—to measurable campaign outcomes.
+
+•
+Identify opportunities across major financial services moments, including product launches, tax season, annual enrollment periods, and shifts in consumer financial needs.
+
+•
+Structure and negotiate complex commercial agreements.
+
+•
+Build clear, data-driven business cases that demonstrate advertiser ROI and long-term platform value.
+
+•
+Partner with Account Managers to support seamless post-sale transitions, campaign success, renewals, and expansion.
+
+•
+Collaborate with Product, Engineering, Marketing, Policy, and Operations to support complex deals and inform future advertising solutions.
+
+•
+Partner with advertisers and internal teams to navigate industry-specific advertising, privacy, and compliance requirements.
+
+•
+Maintain strong pipeline management, accurate forecasting, and a deep understanding of Financial Services industry trends.
+
+You might thrive in this role if you:
+
+•
+Have 10+ years of experience in digital advertising, performance marketing, client strategy, consulting, or enterprise sales.
+
+•
+Have experience working with Financial Services advertisers, such as banks, credit card issuers, insurance providers, investment and wealth management firms, lending platforms, or fintech companies.
+
+•
+Have 3+ years of experience advising and influencing senior executives and client stakeholders.
+
+•
+Have a proven track record of owning revenue targets and closing complex advertising or commercial deals.
+
+•
+Understand financial services customer journeys, acquisition funnels, customer lifetime value, and performance metrics.
+
+•
+Have experience navigating the advertising, privacy, and compliance considerations of a regulated industry.
+
+•
+Can create compelling business cases and translate advertiser objectives into measurable partnership strategies.
+
+•
+Have strong verbal and written communication skills.
+
+•
+Can operate effectively in ambiguous, fast-changing environments.
+
+•
+Are excited to help shape a new advertising platform while maintaining high standards for user experience, trust, and responsible growth.
+
+About OpenAI
+
+OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
+
+We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
+
+For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
+
+Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
+
+To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
+
+We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
+
+OpenAI Global Applicant Privacy Policy
+
+At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",6251,https://jobs.ashbyhq.com/openai/be7abbba-bca2-4baa-b7d8-98d5ab514520,,,,,,,not_checked,,2026-10-13,,2026-10-13,,,,true,0,,,,,,,,,,,,,,

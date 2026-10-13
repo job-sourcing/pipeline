@@ -3157,3 +3157,118 @@ Many candidates with great skills and experience second-guess themselves. The ba
 
 Wishing you all the best,
 The Supercell Recruitment team",5231,https://jobs.ashbyhq.com/supercell/2ed2158f-fca8-4be3-9f8e-06b8030a9058,,,,,,,not_checked,,2026-10-12,,2026-10-13,,,,true,0,,,,,,,,,,,,,,
+12cea05e-dcd6-40ac-b218-98e4edc0b9c9,Default Job Posting (external),Supercell,supercell,Full time,Posted Today,,,Helsinki,1,Helsinki,false,,Finland,,0,"Our AI team is looking for an individual who is exceptional at the applied end of the craft: taking modern models and turning them into features and tools that hold up in production, at Supercell scale, under real deadlines.
+
+The challenge at the centre of this role is the distance between a demo and a product. A model that works in a notebook is not a feature that works for hundreds of millions of players, or a tool a game team trusts with their daily work. Help us Close that gap: the evaluation that tells you it's actually good, the latency and cost envelope that makes it viable, the failure modes you find before players do, and the plumbing that makes it boring to operate. We're not looking for someone who wants to train a frontier model. We're looking for someone who gets unreasonable results out of the ones that exist.
+
+We are looking for someone to build and ship: AI features in live games, and the internal tools that give superpowers to Supercellians. Some of that work will take you inside a game or central team for a while, close enough to their craft to build the right thing with them.
+
+In our team, you'll work closely with our AI Platform Engineers, AI/ML engineers, Clients Programmers, Cloud Engineers. You’ll also collaborate with other teams including Data, QA, Engine and game teams.
+
+What You'll Be Doing
+
+•
+Build and ship AI features and systems end to end into live games and internal tools, at production quality and under real deadlines.
+
+•
+Do the applied engineering that makes AI work in practice.
+
+•
+Own evaluation as a first-class deliverable. Write and maintain the benchmarks, evals, and regression suites that tell you whether something is genuinely good, across the modalities you're working in.
+
+•
+Fine-tune, adapt, and distill models where it pays off, and have the judgment to know when a better prompt, better retrieval, or a smaller model beats training anything.
+
+•
+Make sound trade-offs on inference, including on-device where it matters, against real parameter, latency, and battery targets, without losing the feel players expect.
+
+•
+Take on the harder applied problems, such as making autonomous agents reliable and accurate enough to trust with real work.
+
+•
+Work close to game and central teams, sometimes embedded with them for a stretch, and build things that stay in use after you move on.
+
+•
+Mentor our more junior AI/ML engineers through code review, pairing, and design discussion, and raise the technical bar around you.
+
+•
+Stay at the frontier by reading the literature and following the major conferences, and bring back what is genuinely useful.
+
+What You Have
+
+•
+Strong, current command of modern generative methods at the applied level: you know what today's models are actually good at, where they break, and how to build reliably on top of them.
+
+•
+A track record of shipping LLM or generative AI applications that real users used, in production, not prototypes. We value this far above a publication record.
+
+•
+Real software engineering depth. You write code others can maintain, and you own things in production rather than handing them off.
+
+•
+Hands-on experience writing and maintaining benchmarks and evaluation frameworks, ideally across more than one modality.
+
+•
+Practical fine-tuning and model adaptation experience, and the judgment to know when not to reach for it.
+
+•
+Sound judgment on inference trade-offs under tight compute, latency, and cost constraints, including local or on-device deployment.
+
+•
+The ability to work from broadly defined goals, set your own objectives, and drive work forward without waiting to be handed a spec.
+
+•
+High EQ and credibility with makers. You can sit inside a protective, high-craft team and earn their trust fast.
+
+•
+A generous mentor to less experienced engineers, with high ownership, comfort taking risks and learning from failure, and the humility to do excellent work with kindness.
+
+Would Be Nice if You Also Have
+
+•
+Experience with agent frameworks, orchestration, or evaluation tooling at production scale.
+
+•
+Game industry experience, or a real appreciation for mobile.
+
+•
+Experience working alongside a platform or infrastructure team as an internal customer.
+
+Where You'll Be
+
+The role requires close collaboration with the other central teams and game teams, so ideally, you'd be based in Helsinki.
+
+That's it about the role! Below, we've gathered some things we feel are important for you to know. Totally optional, but a highly recommended read.
+
+Once you're ready to apply, just send us your application through the form on the bottom of the page.
+
+–––
+
+About Supercell
+
+Supercell is a games company from Helsinki, Finland, with offices also in San Francisco, Seoul, Shanghai, and London. You might know us as the makers of Hay Day, Clash of Clans, Boom Beach, Clash Royale, and Brawl Stars. Our mission is to create great games that as many people as possible play for years and that are remembered forever.
+
+So, how do we make great games? By putting together the best teams and giving them the freedom and independence to succeed. And by taking risks, failing, sharing learnings, and killing lots of projects.
+
+Hey, You Might Love It Here!
+
+Independent cells and trust are at the core of our culture. But it takes more than that to make great games. We take good care of our people, providing them with the compensation, work environment, and resources they need to succeed while having fun along the way.
+
+You Are Not Your Job Title ™
+
+Here, you won’t need to focus on chasing titles or climbing ladders. Internally, our job titles don’t include prefixes like Senior, Junior, Principal, or Director. Recognition isn’t tied to your title, as it doesn't define the impact you can have around here.
+
+Benefits and Compensation
+
+Luring you in with glitter, glamour, and gems isn't what we're about. We want you to enjoy your time here fully, so we structure our compensation and benefits with that in mind. It starts with perceiving you as a human being, not a resource.
+
+Relocation? Yes!
+
+No matter where you’re moving from, our dedicated mobility team and partners will support you throughout your move. We’ll ensure the process is as smooth as possible for you and anyone joining you – whether they’re family members of the human or animal kind!
+
+Not Sure if You Should Apply?
+
+Many candidates with great skills and experience second-guess themselves. The bar is high, but if this role excites you, apply! We’re here to help you succeed. Also, we're happy to learn about any specific accommodations you may need to fully engage in our recruitment process.
+
+Wishing you all the best,
+The Supercell Recruitment team",6652,https://jobs.ashbyhq.com/supercell/12cea05e-dcd6-40ac-b218-98e4edc0b9c9,,,,,,,not_checked,,2026-10-13,,2026-10-13,,,,true,0,,,,,,,,,,,,,,

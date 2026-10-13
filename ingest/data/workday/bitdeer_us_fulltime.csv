@@ -494,121 +494,6 @@ Job Requirement:
 --------------------------------------------------------------------
 
 Bitdeer is committed to providing equal employment opportunities in accordance with country, state, and local laws. Bitdeer does not discriminate against employees or applicants based on conditions such as race, color, gender identity and/or expression, sexual orientation, marital and/or parental status, religion, political opinion, nationality, ethnic background or social origin, social status, disability, age, indigenous status, and union.",2740,https://bitdeer.breezy.hr/p/b5310240ef04-control-plane-portal-api-engineer,,,,,,,no_match,,2026-09-30,,2026-10-13,,47,startDate,true,0,,,,,,2026-08-27T22:17:51.988Z,,false,,,,,,
-30b7087d2b87,Data Center Operations Engineer,Bitdeer Technologies Group,Bitdeer Technologies Group,Full time,Posted 15 Days Ago,2026-09-15T18:45:24.258Z,28,"Needham, MA",1,"Needham, MA",false,,United States,,0,"Bitdeer is a world-leading technology company for AI and Bitcoin mining infrastructure. Bitdeer is committed to providing comprehensive Bitcoin mining solutions for its customers and building AI computational infrastructure to support the AI revolution. Bitdeer handles complex processes involved in computing such as equipment procurement, transport logistics, data center design and construction, equipment management, and daily operations. Bitdeer also offers advanced cloud capabilities to customers with high demand for artificial intelligence.
-
-Headquartered in Singapore, Bitdeer has deployed data centers across multiple countries, including the United States, Norway, Bhutan, and Ethiopia.
-
-To learn more, visit https://ir.bitdeer.com/
-
-Key Responsibilities
-
-• Responsible for the daily operation and maintenance of the Data Center infrastructure to ensure high availability and stable service operation.
-
-• Perform installation, rack and stack, cabling, commissioning, maintenance, and troubleshooting of AI/HPC cluster infrastructure, including:
-
-• NVIDIA B300 Cluster
-
-• GPU Servers
-
-• x86 Servers
-
-• Storage Servers
-
-• Ethernet and InfiniBand Switches
-
-• DAC, AOC, Optical Fiber, and related cabling infrastructure
-
-• Monitor and maintain the health status of cluster systems, including servers, GPUs, storage, networking devices, and associated infrastructure.
-
-• Conduct hardware replacement and maintenance activities, including FRU replacement, BIOS/BMC/Firmware upgrades, and hardware diagnostics.
-
-• Support server provisioning, operating system installation, cluster expansion, network validation, and burn-in testing.
-
-• Troubleshoot hardware and infrastructure issues, including server failures, GPU errors, storage issues, network connectivity problems, switch failures, and cabling faults.
-
-• Perform routine inspections, preventive maintenance, and maintain accurate operational records and maintenance logs.
-
-• Execute incident response procedures and provide timely escalation and resolution according to operational standards.
-
-• Prepare shift handover reports and maintain operation documents, SOPs, and incident reports.
-
-• Work closely with engineering, network, and infrastructure teams to support new deployments and ongoing operation improvements.
-
-• Participate in a three-shift rotation schedule, including night shifts, weekends, and holidays as required.
-
-Qualifications
-
-Education
-
-• Bachelor's degree or above in Computer Science, Computer Engineering, Electrical Engineering, Electronics Engineering, Information Technology, or related disciplines.
-
-Technical Skills
-
-• Basic understanding of Data Center infrastructure and server hardware architecture.
-
-• Familiarity with one or more of the following systems:
-
-• NVIDIA B300 Cluster
-
-• GPU Servers
-
-• x86 Servers
-
-• Storage Servers
-
-• Ethernet and InfiniBand Networks
-
-• Knowledge of server hardware components, including CPU, memory, storage, GPU, BMC/IPMI, and firmware management.
-
-• Familiarity with network concepts, including TCP/IP, Ethernet, VLAN, Link Aggregation (LACP), and high-speed interconnect technologies such as InfiniBand or RoCE.
-
-• Understanding of structured cabling systems, including DAC, AOC, optical fiber, MPO, and LC connectors.
-
-Linux Skills
-
-• Basic Linux administration skills, including:
-
-• System monitoring and troubleshooting
-
-• Service management using systemctl
-
-• Log analysis using journalctl and dmesg
-
-• Network troubleshooting tools such as ip and ethtool
-
-• Basic shell scripting
-
-Preferred Qualifications
-
-• Experience in Data Center operations or hardware maintenance is preferred.
-
-• Experience supporting AI/HPC infrastructure or GPU clusters is a plus.
-
-• Familiarity with NVIDIA AI infrastructure, including GB200 and GB300 systems, is highly desirable.
-
-• Experience with large-scale cluster environments and high-speed networking technologies is a plus.
-
-• Familiarity with monitoring and orchestration tools such as Slurm, Kubernetes, Prometheus, or Grafana is an advantage.
-
-Personal Attributes
-
-• Willingness to work in a 24x7 shift rotation schedule, including night shifts.
-
-• Strong sense of responsibility and ownership.
-
-• Good teamwork and communication skills.
-
-• Ability to work under pressure and respond effectively to operational incidents.
-
-• Detail-oriented with strong adherence to operational procedures and safety standards.
-
-• Self-motivated with a proactive attitude toward learning and problem-solving.
-
-This position is ideal for candidates who are interested in building and operating next-generation AI Data Center infrastructure supporting large-scale NVIDIA B300 clusters.
-
-Equal Opportunity Employer
-
-Bitdeer is committed to providing equal employment opportunities in accordance with country, state, and local laws. Bitdeer does not discriminate against employees or applicants based on conditions such as race, color, gender identity and/or expression, sexual orientation, marital and/or parental status, religion, political opinion, nationality, ethnic background or social origin, social status, disability, age, indigenous status, and union.",5118,https://bitdeer.breezy.hr/p/30b7087d2b87-data-center-operations-engineer,,,,,,,no_match,,2026-09-30,,2026-10-13,,28,startDate,false,0,,,,,,2026-09-15T18:45:24.258Z,,false,,,,,,
 d9f8331fe9d7,Data Center Operations Engineer,Bitdeer Technologies Group,Bitdeer Technologies Group,Full time,Posted 15 Days Ago,2026-09-15T18:45:14.495Z,28,"Aurora, CO",1,"Aurora, CO",false,,United States,,0,"Bitdeer is a world-leading technology company for AI and Bitcoin mining infrastructure. Bitdeer is committed to providing comprehensive Bitcoin mining solutions for its customers and building AI computational infrastructure to support the AI revolution. Bitdeer handles complex processes involved in computing such as equipment procurement, transport logistics, data center design and construction, equipment management, and daily operations. Bitdeer also offers advanced cloud capabilities to customers with high demand for artificial intelligence.
 
 Headquartered in Singapore, Bitdeer has deployed data centers across multiple countries, including the United States, Norway, Bhutan, and Ethiopia.
@@ -723,133 +608,6 @@ This position is ideal for candidates who are interested in building and operati
 
 Equal Opportunity Employer
 Bitdeer is committed to providing equal employment opportunities in accordance with country, state, and local laws. Bitdeer does not discriminate against employees or applicants based on conditions such as race, color, gender identity and/or expression, sexual orientation, marital and/or parental status, religion, political opinion, nationality, ethnic background or social origin, social status, disability, age, indigenous status, and union.",5115,https://bitdeer.breezy.hr/p/d9f8331fe9d7-data-center-operations-engineer,,,,,,,no_match,,2026-09-30,,2026-10-13,,28,startDate,false,0,,,,,,2026-09-15T18:45:14.495Z,,false,,,,,,
-4632884de326,Data Center Site Manager / Supervisor,Bitdeer Technologies Group,Bitdeer Technologies Group,Full time,Posted 15 Days Ago,2026-09-15T18:45:42.247Z,28,"Needham, MA",1,"Needham, MA",false,,United States,,0,"Bitdeer is a world-leading technology company for AI and Bitcoin mining infrastructure. Bitdeer is committed to providing comprehensive Bitcoin mining solutions for its customers and building AI computational infrastructure to support the AI revolution. Bitdeer handles complex processes involved in computing such as equipment procurement, transport logistics, data center design and construction, equipment management, and daily operations. Bitdeer also offers advanced cloud capabilities to customers with high demand for artificial intelligence.
-
-Headquartered in Singapore, Bitdeer has deployed data centers across multiple countries, including the United States, Norway, Bhutan, and Ethiopia.
-
-To learn more, visit https://ir.bitdeer.com/
-
-Key Responsibilities
-
-• Lead and manage the daily operations of the Data Center site, ensuring the availability, reliability, and operational excellence of all infrastructure and systems.
-
-• Supervise and manage a team of Operations Engineers, including manpower planning, shift scheduling, task assignment, performance management, coaching, and professional development.
-
-• Ensure 24x7 operational coverage and maintain adequate staffing to support business and customer requirements.
-
-• Act as the primary escalation point for operational incidents and coordinate cross-functional teams to drive timely issue resolution and root cause analysis.
-
-• Oversee the operation, maintenance, and troubleshooting of AI/HPC infrastructure, including:
-
-• NVIDIA B300 Clusters
-
-• GPU Servers
-
-• x86 Servers
-
-• Storage Servers
-
-• Ethernet and InfiniBand Switches
-
-• Optical fiber, DAC, AOC, and associated cabling systems
-
-• Establish, maintain, and continuously improve operational procedures, Standard Operating Procedures (SOPs), Emergency Operating Procedures (EOPs), and preventive maintenance programs.
-
-• Monitor site health, operational KPIs, incident trends, and infrastructure performance to ensure service quality and operational efficiency.
-
-• Coordinate hardware installation, rack and stack activities, system commissioning, infrastructure expansion, and lifecycle management.
-
-• Review and approve maintenance activities, change requests, incident reports, and shift handover records.
-
-• Ensure compliance with company policies, operational standards, safety requirements, and security procedures within the Data Center.
-
-• Collaborate with engineering, network, facilities, and vendor teams to support new deployments and operational improvement initiatives.
-
-• Participate in on-call rotation and provide hands-on operational support when necessary, including covering shift duties during manpower shortages, emergencies, or critical incidents.
-
-• Drive a culture of operational excellence, teamwork, accountability, and continuous improvement within the site operation team.
-
-Qualifications
-
-• Bachelor's degree or above in Computer Science, Computer Engineering, Electrical Engineering, Electronics Engineering, Information Technology, or related disciplines.
-
-• Minimum 5 years of experience in Data Center operations, IT infrastructure, or HPC/AI infrastructure management.
-
-• Minimum 2 years of experience in team leadership or people management.
-
-• Proven experience managing 24x7 shift operations in a mission-critical environment is preferred.
-
-• Experience with large-scale AI or HPC clusters is highly desirable.
-
-• Strong knowledge of Data Center operations and infrastructure management, including:
-
-• NVIDIA B300 Clusters
-
-• GPU Servers
-
-• x86 Servers
-
-• Storage Systems
-
-• Ethernet Networking
-
-• InfiniBand Networking
-
-• Familiarity with NVIDIA GPU architecture, NVLink, NVSwitch, and AI cluster deployment concepts.
-
-• Experience with server hardware troubleshooting, firmware management, and hardware lifecycle management.
-
-• Good understanding of structured cabling systems, including optical fiber, MPO/LC connectors, DAC, and AOC cabling.
-
-• Familiarity with infrastructure monitoring and management tools.
-
-Linux and System Administration
-
-• Strong Linux administration and troubleshooting skills, including:
-
-• System and service management
-
-• Hardware and performance diagnostics
-
-• Log analysis and incident investigation
-
-• Network troubleshooting
-
-• Basic scripting and automation
-
-Leadership and Management Skills
-
-• Demonstrated ability to lead, motivate, and develop a team of Operations Engineers.
-
-• Experience in:
-
-• Shift scheduling and workforce planning
-
-• Incident and escalation management
-
-• Performance management and coaching
-
-• SOP/EOP development and operational governance
-
-• Vendor and stakeholder coordination
-
-• Strong decision-making skills with the ability to manage priorities in a fast-paced and mission-critical environment.
-
-Personal Attributes
-
-• Willingness to provide hands-on operational support and participate in on-call duties when required.
-
-• Strong ownership mindset and accountability for site operations.
-
-• Excellent communication and interpersonal skills.
-
-• Ability to remain calm and make sound decisions during critical incidents.
-
-• Highly organized, detail-oriented, and committed to operational excellence and continuous improvement.
-
-Equal Opportunity Employer
-
-Bitdeer is committed to providing equal employment opportunities in accordance with country, state, and local laws. Bitdeer does not discriminate against employees or applicants based on conditions such as race, color, gender identity and/or expression, sexual orientation, marital and/or parental status, religion, political opinion, nationality, ethnic background or social origin, social status, disability, age, indigenous status, and union.",5631,https://bitdeer.breezy.hr/p/4632884de326-data-center-site-manager-supervisor,,,,,,,no_match,,2026-09-30,,2026-10-13,,28,startDate,false,0,,,,,,2026-09-15T18:45:42.247Z,,false,,,,,,
 87af2fa42456,Data Center Site Manager / Supervisor,Bitdeer Technologies Group,Bitdeer Technologies Group,Full time,Posted 15 Days Ago,2026-09-15T18:45:33.483Z,28,"Aurora, CO",1,"Aurora, CO",false,,United States,,0,"Bitdeer is a world-leading technology company for AI and Bitcoin mining infrastructure. Bitdeer is committed to providing comprehensive Bitcoin mining solutions for its customers and building AI computational infrastructure to support the AI revolution. Bitdeer handles complex processes involved in computing such as equipment procurement, transport logistics, data center design and construction, equipment management, and daily operations. Bitdeer also offers advanced cloud capabilities to customers with high demand for artificial intelligence.
 
 Headquartered in Singapore, Bitdeer has deployed data centers across multiple countries, including the United States, Norway, Bhutan, and Ethiopia.
@@ -1540,7 +1298,7 @@ What you will experience working with us:
 
 • Personal accountability, autonomy, fast growth, and learning opportunities;
 
-• Attractive welfare benefits and developmental opportunities such as training and mentoring.",4066,https://bitdeer.breezy.hr/p/a1dbb5eec050-research-scientist-model-efficiency,,,,,,,no_match,,2026-09-30,,2026-10-13,,56,startDate,true,0,,,,,,2026-08-18T07:48:45.107Z,,false,,,,,,
+• Attractive welfare benefits and developmental opportunities such as training and mentoring.",4066,https://bitdeer.breezy.hr/p/a1dbb5eec050-research-scientist-model-efficiency,,,,,,,no_match,,2026-09-30,,2026-10-13,,56,startDate,true,0,2026-10-13,,,,,2026-08-18T07:48:45.107Z,,false,,,,,,
 c45e44fa50c6,Research Scientist-Model Efficiency (Intern),Bitdeer Technologies Group,Bitdeer Technologies Group,,Posted 51 Days Ago,2026-08-10T01:24:31.427Z,64,"Singapore, SG",2,"Singapore, SG; Austin, US",false,,United States,,0,"About Bitdeer:
 
 Bitdeer is a world-leading technology company for Bitcoin mining and AI cloud.
@@ -1593,7 +1351,7 @@ What you will experience working with us:
 
 • Personal accountability, autonomy, fast growth, and learning opportunities;
 
-• Attractive welfare benefits and developmental opportunities such as training and mentoring.",4104,https://bitdeer.breezy.hr/p/c45e44fa50c6-research-scientist-model-efficiency-intern,,,,,,,no_match,,2026-09-30,,2026-10-13,,64,startDate,true,0,,,,,,2026-08-10T01:24:31.427Z,,false,,,,,,
+• Attractive welfare benefits and developmental opportunities such as training and mentoring.",4104,https://bitdeer.breezy.hr/p/c45e44fa50c6-research-scientist-model-efficiency-intern,,,,,,,no_match,,2026-09-30,,2026-10-13,,64,startDate,true,0,2026-10-13,,,,,2026-08-10T01:24:31.427Z,,false,,,,,,
 f415d8b9bac1,SRE L1 Support/Cloud Platform Ops Engineer,Bitdeer Technologies Group,Bitdeer Technologies Group,Full time,Posted 36 Days Ago,2026-08-25T16:27:33.939Z,49,"San Jose, CA",2,"San Jose, CA; Austin, TX",false,,United States,,0,"About Bitdeer Technologies Group
 
 Bitdeer is a world-leading technology company for AI and Bitcoin mining infrastructure.
@@ -1875,53 +1633,6 @@ Requirements
 Equal Opportunity Employer
 
 Bitdeer is committed to providing equal employment opportunities in accordance with country, state, and local laws. Bitdeer does not discriminate against employees or applicants based on conditions such as race, color, gender identity and/or expression, sexual orientation, marital and/or parental status, religion, political opinion, nationality, ethnic background or social origin, social status, disability, age, indigenous status, and union.",4410,https://bitdeer.breezy.hr/p/f03c45a256aa-senior-ai-data-center-network-engineer,,,,,,,no_match,,2026-09-30,,2026-10-13,,28,startDate,false,0,,,,,,2026-09-15T18:46:03.869Z,,false,,,,,,
-79e0bc71cb0c,Senior AI Data Center Network Engineer,Bitdeer Technologies Group,Bitdeer Technologies Group,Full time,Posted 15 Days Ago,2026-09-15T18:45:52.516Z,28,"Needham, MA",1,"Needham, MA",false,,United States,,0,"Bitdeer is a world-leading technology company for AI and Bitcoin mining infrastructure. Bitdeer is committed to providing comprehensive Bitcoin mining solutions for its customers and building AI computational infrastructure to support the AI revolution. Bitdeer handles complex processes involved in computing such as equipment procurement, transport logistics, data center design and construction, equipment management, and daily operations. Bitdeer also offers advanced cloud capabilities to customers with high demand for artificial intelligence.
-
-Headquartered in Singapore, Bitdeer has deployed data centers across multiple countries, including the United States, Norway, Bhutan, and Ethiopia.
-
-To learn more, visit https://ir.bitdeer.com/
-
-Position Overview
-
-We are seeking an experienced and highly skilled Senior AI Data Center Network Engineer to join the Bitdeer AI Cloud team in the US. In this role, you will architect, deploy, and operate high-performance, high-availability network solutions for our large-scale GPU clusters. You will be instrumental in ensuring the stability, low latency, and optimal performance of our AI infrastructure, focusing heavily on advanced networking technologies such as InfiniBand, RoCEv2, and SDN architectures. You will collaborate with cross-functional teams to build the backbone of our AI Cloud, enabling cutting-edge AI training and inference workloads for our global customers.
-
-Key Responsibilities
-
-• Network Architecture & Design: Architect scalable, high-availability network solutions for AI Cloud Data Centers, including Spine-Leaf topology, DCN, DCI, and backbone networks using VXLAN EVPN and SDN technologies.
-
-• High-Performance AI Networking: Design, deploy, and optimize large-scale GPU clusters utilizing InfiniBand and RoCEv2 (Lossless Ethernet) fabrics. Configure and manage NVIDIA Spectrum/Quantum series switches.
-
-• Cluster Operations & Troubleshooting: Lead deep-dive investigations into complex network issues affecting AI workloads, such as RDMA packet loss, congestion control (PFC/ECN), latency, and NCCL communication timeouts.
-
-• Network Automation & DevOps: Develop and maintain network automation tools and platforms using Python, Ansible, and Terraform to implement Infrastructure as Code (IaC) and streamline configuration management.
-
-• Fabric Management & Monitoring: Utilize tools like NVIDIA UFM (Unified Fabric Manager), NetQ, Zabbix, and Prometheus to ensure real-time monitoring, network telemetry, and overall fabric health.
-
-• Cloud & Container Networking: Support network integration for Kubernetes/Docker container environments and hybrid cloud deployments, ensuring seamless connectivity and security.
-
-• Incident Response & Change Management: Lead critical network changes, capacity expansions, and firmware upgrades. Provide rapid response to incidents, implement mitigations, and conduct Root Cause Analysis (RCA).
-
-Requirements
-
-• Bachelor's degree or above in Computer Science, Network Engineering, Telecommunications, or a related field.
-
-• Minimum 8-10 years of experience in large-scale data center network operations, architecture, and engineering.
-
-• Deep expertise in the TCP/IP protocol stack and core routing protocols (BGP, OSPF, ISIS), as well as Data Center technologies (VXLAN EVPN, Spine-Leaf).
-
-• Extensive hands-on experience with HPC/AI networking: InfiniBand architecture, Subnet Manager, or Ethernet-based RoCEv2, including PFC, ECN, and congestion control mechanisms.
-
-• Proficiency in configuring and managing data center switches and routers from major vendors (e.g., Cisco Nexus, NVIDIA/Mellanox, Juniper).
-
-• Strong skills in network automation and scripting (Python, Ansible, Terraform) and Linux system administration.
-
-• Experience with Kubernetes container networking (CNI) and cloud-native architectures.
-
-• Professional fluency in English and Chinese is required to effectively collaborate with global teams.
-
-Equal Opportunity Employer
-
-Bitdeer is committed to providing equal employment opportunities in accordance with country, state, and local laws. Bitdeer does not discriminate against employees or applicants based on conditions such as race, color, gender identity and/or expression, sexual orientation, marital and/or parental status, religion, political opinion, nationality, ethnic background or social origin, social status, disability, age, indigenous status, and union.",4411,https://bitdeer.breezy.hr/p/79e0bc71cb0c-senior-ai-data-center-network-engineer,,,,,,,no_match,,2026-09-30,,2026-10-13,,28,startDate,false,0,,,,,,2026-09-15T18:45:52.516Z,,false,,,,,,
 0914b0fe21e7,Senior AI Storage Infrastructure Engineer,Bitdeer Technologies Group,Bitdeer Technologies Group,Full time,Posted 36 Days Ago,2026-08-25T16:24:18.579Z,49,"San Jose, CA",2,"San Jose, CA; Austin, TX",false,,United States,,0,"Bitdeer is a world-leading technology company for AI and Bitcoin mining infrastructure.
 
 Bitdeer is committed to providing comprehensive Bitcoin mining solutions for its customers and building AI computational infrastructure to support the AI revolution. Bitdeer handles complex processes involved in computing such as equipment procurement, transport logistics, data center design and construction, equipment management, and daily operations. Bitdeer also offers advanced cloud capabilities to customers with high demand for artificial intelligence.
@@ -3119,4 +2830,4 @@ What you will experience working with us
 
 • Attractive benefits and development such as training and mentoring.
 
-Bitdeer is committed to providing equal employment opportunities in accordance with country, state, and local laws. Bitdeer does not discriminate against employees or applicants based on conditions such as race, color, gender identity and/or expression, sexual orientation, marital and/or parental status, religion, political opinion, nationality, ethnic background or social origin, social status, disability, age, indigenous status, and union.",6476,https://bitdeer.breezy.hr/p/826249d5dbdc-ai-engineering-new-college-graduate-2027,,,,,,,not_checked,,2026-10-10,,2026-10-13,,3,startDate,false,0,,,,,,2026-10-10T11:07:34.031Z,,,,,,,,
+Bitdeer is committed to providing equal employment opportunities in accordance with country, state, and local laws. Bitdeer does not discriminate against employees or applicants based on conditions such as race, color, gender identity and/or expression, sexual orientation, marital and/or parental status, religion, political opinion, nationality, ethnic background or social origin, social status, disability, age, indigenous status, and union.",6476,https://bitdeer.breezy.hr/p/826249d5dbdc-ai-engineering-new-college-graduate-2027,,,,,,,not_checked,,2026-10-10,,2026-10-13,,3,startDate,false,0,2026-10-13,,,,,2026-10-10T11:07:34.031Z,,,,,,,,
