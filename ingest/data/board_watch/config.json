@@ -3058,7 +3058,7 @@
    "geo_scope": "non_cn"
   },
   {
-   "label": "renogy_gj_us",
+   "label": "renogy_gj_us_fulltime",
    "board": "custom:gjobs:renogy",
    "company": "Renogy",
    "country": "United States",
@@ -3068,7 +3068,7 @@
    "skip_li_corroboration": true
   },
   {
-   "label": "jinkosolar_gj_us",
+   "label": "jinkosolar_gj_us_fulltime",
    "board": "custom:gjobs:jinkosolar",
    "company": "JinkoSolar",
    "country": "United States",
@@ -3078,7 +3078,7 @@
    "skip_li_corroboration": true
   },
   {
-   "label": "eveenergy_gj_us",
+   "label": "eveenergy_gj_us_fulltime",
    "board": "custom:gjobs:eveenergy",
    "company": "EVE Energy",
    "country": "United States",
@@ -3088,7 +3088,7 @@
    "skip_li_corroboration": true
   },
   {
-   "label": "jackery_gj_us",
+   "label": "jackery_gj_us_fulltime",
    "board": "custom:gjobs:jackery",
    "company": "Jackery",
    "country": "United States",
@@ -3098,7 +3098,7 @@
    "skip_li_corroboration": true
   },
   {
-   "label": "govee_gj_us",
+   "label": "govee_gj_us_fulltime",
    "board": "custom:gjobs:govee",
    "company": "Govee",
    "country": "United States",
@@ -3108,7 +3108,7 @@
    "skip_li_corroboration": true
   },
   {
-   "label": "vava_gj_us",
+   "label": "vava_gj_us_fulltime",
    "board": "custom:gjobs:vava",
    "company": "VAVA",
    "country": "United States",

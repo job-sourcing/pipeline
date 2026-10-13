@@ -2583,7 +2583,7 @@ class TestS33ContractOwnerRule:
             {"label": "renogy_us_fulltime",
              "board": "custom:licompany:renogy",
              "company": "Renogy", "tags": ["li_dormant"]},
-            {"label": "renogy_gj_us",
+            {"label": "renogy_gj_us_fulltime",
              "board": "custom:gjobs:renogy",
              "company": "Renogy", "tags": ["gj"]},
         ]
@@ -2592,10 +2592,10 @@ class TestS33ContractOwnerRule:
     def test_gjobs_variant_still_collides_across_companies(self):
         import gha_board_watch as gw
         watches = [
-            {"label": "renogy_gj_us",
+            {"label": "renogy_gj_us_fulltime",
              "board": "custom:gjobs:renogy",
              "company": "Renogy"},
-            {"label": "rival_gj_us",
+            {"label": "rival_gj_us_fulltime",
              "board": "custom:gjobs:rival",
              "company": "Rival Co"},
         ]
