@@ -1,5 +1,5 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-sales,Sales,VeriSilicon,VeriSilicon,,,,,"San Jose, CA",1,"San Jose, CA",false,,US,,0,"Descriptions
+sales,Sales,VeriSilicon,VeriSilicon,,,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"Descriptions
 
 Relevant Experience: Proven sales or business development experience in Silicon IP and SoC Design Services and/or in OEM systems industry.
 This is a senior-level, position within the North America Sales Team that will focus on developing new businesses and manage existing business at OEM system and semiconductor companies in the North America market.
@@ -29,7 +29,7 @@ Experience with consumer, industrial, or automotive programs a strong plus.
 Please submit your resume to
 US.HR@verisilicon.com
 for consideration.",1380,https://www.verisilicon.com/en/Careers,,,,,,,no_match,,2026-10-01,,2026-10-14,,,,true,0,,,,,,,,false,,,,,,
-technical-customer-interface-success-manager-ae,Technical Customer Interface & Success Manager/AE,VeriSilicon,VeriSilicon,,,,,"San Jose, CA",1,"San Jose, CA",false,,US,,0,"Descriptions
+technical-customer-interface-success-manager-ae,Technical Customer Interface & Success Manager/AE,VeriSilicon,VeriSilicon,,,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"Descriptions
 
 Serve as the primary technical interface between customers and VeriSilicon internal teams for ASIC, SoC, IP licensing, and turnkey design service engagements
 

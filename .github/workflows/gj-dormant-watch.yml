@@ -59,7 +59,7 @@ jobs:
           # S32 race fix: checkpoint ONLY the files THIS run touched.
           mkdir -p /tmp/watch_state
           FILES=$(git status --porcelain ingest/data/board_watch/ \
-            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl)$' || true)
+            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl|runs\.jsonl)$' || true)
           echo "checkpointing: ${FILES:-<none>}"
           for f in $FILES; do
             mkdir -p "/tmp/watch_state/$(dirname $f)"

@@ -337,6 +337,44 @@ def _row_is_cn_local(rec: dict, csv_row: dict | None = None) -> bool:
     return cn_sited and not is_remote
 
 
+def _row_is_foreign_noise(row: dict, wcountry: str) -> bool:
+    """D-S35-1 (A-prime country gate): the user's product rule —
+    "global but non-remote is noise, otherwise quite useful".
+
+    The CSV country COLUMN (locations-derived, D-S28-1) is exclusion
+    evidence when the row is NOT remote-friendly — it closes the
+    S34-measured gap (2,089 foreign+non-remote rows shipping in
+    *_us_fulltime because non_cn boards' feeds are country-silent).
+    Remote evidence mirrors the _row_is_cn_local seam (remoteFlag /
+    remoteType / telecommuting / any location text) so both gates
+    agree on "remote". Blank country and country='Remote' stay
+    (unclassified ≠ foreign; Remote-label rows are remote by
+    definition — all 22 measured remoteFlag=true)."""
+    c = str(row.get("country") or "").strip()
+    if not c or c.lower() == "remote":
+        return False
+    if workday.country_str_matches(c, wcountry):
+        return False
+    is_remote = (str(row.get("remoteFlag") or "").lower() == "true"
+                 or str(row.get("remoteType") or "").lower() == "remote"
+                 or bool(row.get("telecommuting")))
+    if not is_remote:
+        blob = (f"{row.get('primaryLocation') or ''} | "
+                f"{row.get('locations') or ''}")
+        is_remote = "remote" in blob.lower()
+    return not is_remote
+
+
+def _canonical_country(row: dict, wcountry: str) -> None:
+    """Round-1 P1-2: normalize country-variant spellings on EVERY
+    emitted row (survivors carry chain-era columns — 3,229 variant
+    strings measured: 'United States of America', 'US', lowercase).
+    In-place, generic (canonical form = the watch's country)."""
+    c = str(row.get("country") or "").strip()
+    if c and c != wcountry and workday.country_str_matches(c, wcountry):
+        row["country"] = wcountry
+
+
 def _jsonl(path: Path) -> list[dict]:
     if not path.exists():
         return []
@@ -577,11 +615,13 @@ def refresh_one(label: str, w: dict, snapshot: date) -> dict:
               if r["reqId"] not in state or _excluded(r["reqId"], r)]
 
     new_rows, pending, terminal_err = [], 0, 0
+    feed_excluded = 0
     for rid in state:
         if rid in csv_ids:
             continue
         if _excluded(rid):
-            continue                 # feed-classified foreign — never ship
+            feed_excluded += 1  # state rid skipped by the feed gates —
+            continue            # counted for the manifest identity
         rec = feed.get(rid)
         if not rec:
             pending += 1             # never enriched — next leg
@@ -602,7 +642,21 @@ def refresh_one(label: str, w: dict, snapshot: date) -> dict:
         new_rows.append(_newpost_row(rec, w, snapshot, reposts,
                                      rec.get("signals")))
 
-    rows = survivors + sorted(new_rows, key=lambda r: str(r["reqId"]))
+    # D-S35-1 (A-prime): foreign-labeled + non-remote = noise. Row-
+    # level, AFTER assembly, BEFORE re-derive/banding (round-1 P1-1:
+    # own stat, ghosts semantics untouched; the state loop above
+    # still assembles gate-dropped state rids so their evidence is
+    # fresh each run — the manifest attributes them, 'new' never
+    # inflates). State untouched: the gate is a VIEW decision.
+    gate_surv = [r for r in survivors
+                 if not _row_is_foreign_noise(r, wcountry)]
+    gate_new = [r for r in new_rows
+                if not _row_is_foreign_noise(r, wcountry)]
+    gate_dropped = ((len(survivors) - len(gate_surv))
+                    + (len(new_rows) - len(gate_new)))
+    rows = gate_surv + sorted(gate_new, key=lambda r: str(r["reqId"]))
+    for row in rows:
+        _canonical_country(row, wcountry)
 
     # re-derive dates + re-band EVERY row (existing rows: fields update
     # in place; dateDelta recomputed via the sig's own startDate seam)
@@ -618,12 +672,20 @@ def refresh_one(label: str, w: dict, snapshot: date) -> dict:
         if h.get("h1bFilings"):
             banded += 1
 
+    ghosts_in_state = sum(1 for r in ghosts if r["reqId"] in state)
     stats = {
         "label": label, "rows": len(rows),
-        "kept": len(survivors), "new": len(new_rows),
-        "ghosts_dropped": len(ghosts), "pending": pending,
+        "kept": len(gate_surv), "new": len(gate_new),
+        "ghosts_dropped": len(ghosts), "ghosts_in_state": ghosts_in_state,
+        "pending": pending,
         "terminal_err": terminal_err,
+        "gate_dropped": gate_dropped,
+        "gate_dropped_survivors": len(survivors) - len(gate_surv),
+        "gate_dropped_new": len(new_rows) - len(gate_new),
+        "feed_excluded_state": feed_excluded,
+        "state_rows": len(state),
         "banded": banded, "lca_pools": len(pools),
+        "snapshot": str(snapshot),
     }
     if rows or csv_path.exists():
         # atomic: a killed run must never leave a truncated CSV for the
@@ -637,6 +699,18 @@ def refresh_one(label: str, w: dict, snapshot: date) -> dict:
                 wr.writerow({k: row.get(k, "") for k in FIELDS})
         import os
         os.replace(tmp_path, csv_path)
+    # D-S35-1: the export manifest — ONE durable source of truth for
+    # the e2e audit + drift auditor (stdout-only stats were the S34
+    # blind-spot class). Per-label identity (audit-verifiable):
+    #   state_rows = kept + gate_dropped_survivors + ghosts_in_state
+    #                + new + gate_dropped_new + pending
+    #                + feed_excluded_state
+    #   (new includes terminal_err; csv side:
+    #    csv_rows_in = kept + gate_dropped_survivors + ghosts_dropped)
+    if rows or csv_path.exists():
+        import json as _json
+        (WORKDAY / f"{label}.export.json").write_text(
+            _json.dumps(stats, indent=1) + "\n", encoding="utf-8")
     return stats
 
 

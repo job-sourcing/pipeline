@@ -1763,6 +1763,24 @@ def backfill_dates(watches: list[dict], cfg: Config) -> dict[str, str]:
     return results
 
 
+def _ledger_append(watches: list[dict], results: dict[str, str]) -> None:
+    """D-S35-2: the per-run verdict ledger — durable cross-run evidence
+    for the drift auditor's fail-streak class (WATCH_RESULTS_JSON is
+    GITHUB_ENV-only; it dies with the run). One line per watch per run;
+    checkpointed by the lane state-commit globs (.runs.jsonl is in the
+    rescue set). Best-effort: a ledger failure never blocks the run."""
+    for w in watches:
+        lbl = w.get("label")
+        if lbl and lbl in results:
+            try:
+                with open(WATCH_DIR / f"{lbl}.runs.jsonl", "a",
+                          encoding="utf-8") as rf:
+                    rf.write(json.dumps(
+                        {"ts": _now_iso(), "verdict": results[lbl]}) + "\n")
+            except OSError:
+                pass
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--label", help="run a single watch by label")
@@ -1878,6 +1896,10 @@ def main() -> int:
                     print(f"[watch:{w['label']}] retry still failing: "
                           f"{type(exc).__name__}: {exc}", file=sys.stderr)
                     results[w["label"]] = "failed"
+
+    # D-S35-2: the per-run verdict ledger (durable fail-streak
+    # evidence for the drift auditor)
+    _ledger_append(watches, results)
 
     gha_env = os.environ.get("GITHUB_ENV")
     if gha_env:

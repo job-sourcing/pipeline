@@ -437,24 +437,6 @@ Base：US｜语言：中 / 英皆可
 - 智能体验方向经验（匹配任一即可）：多模态理解驱动 UI、对话式交互、创作辅助、推荐解释/可控性、内容结构化与可编辑体验
 - 3D / 空间交互相关经验：做过 3D UI、空间布局、手势/空间操作、3D 动效与渲染；熟悉 WebGL/Three.js、Unity/Unreal、SceneKit/RealityKit 等任一技术栈；或有 3D 资产管线/性能优化经验
 - 在 HCI/交互/AI 体验相关方向有公开影响力：论文、专利、开源项目或行业分享",735,https://job.xiaohongshu.com/social/position/19223,,,,,,,no_match,,2026-09-24,,2026-10-14,,67,startDate,true,0,,,,,客户端开发,2026-08-08,,false,,,,,,
-19590,OS 工程师（XR 系统应用方向）,Xiaohongshu,Xiaohongshu,,Posted 47 Days Ago,2026-08-08,67,北京市,5,北京市; 上海市; 深圳市; 杭州市; 美国,false,,United States,,0,"1、负责 XR 设备系统核心应用的设计、开发与交付，包括但不限于系统相机、相册、文件管理、设置、互联及系统工具类应用，保障产品高效迭代与稳定发布；
-2、负责系统应用的架构设计、模块拆分与工程质量建设，持续优化复杂场景下的性能、稳定性和用户体验；
-3、参与 XR OS 应用层能力建设，结合业务需求抽象高频场景能力，沉淀可复用的 SDK、公共组件和开发范式；
-4、与系统平台、图形、音视频、AI、交互、产品等团队协作，推动系统能力在应用层的工程化落地与体验打磨；
-5、建设系统应用的可观测体系，包括启动时延、卡顿、崩溃、ANR、内存、功耗等关键指标，持续提升品质与可维护性；
-6、跟踪移动 OS、XR 系统和端侧 AI 相关技术演进，探索 AI 在系统应用中的落地场景，如智能搜索、内容理解、创作辅助、多模态交互等。
-
-1、本科及以上学历，计算机、软件工程或相关专业优先；
-2、3 年以上 Android 应用开发经验，有大型客户端或系统应用研发经验；
-3、熟练掌握 Java / Kotlin，具备 C / C++ 开发能力者优先；
-4、具备扎实的架构设计能力，能够独立完成复杂系统应用的模块设计、架构演进与工程治理；
-5、深入理解 Android 系统框架，熟悉组件通信、进程管理、权限机制、生命周期、任务栈、数据存储等核心机制；
-6、具备较强的性能优化与问题定位能力，能够分析并解决启动慢、卡顿、崩溃、内存泄漏、耗电等问题；
-7、具备良好的自驱力、学习能力与跨团队协作能力，能够结合业务场景推动技术方案落地；
-8、有系统应用开发经验者优先，如相机、相册、文件管理器、设置、跨端互联、系统工具类应用等。
-加分项
-1、有 XR 设备、移动操作系统或系统级客户端开发经验；
-2、熟悉 AndroidX SDK，具备复杂业务架构设计和落地经验；",770,https://job.xiaohongshu.com/social/position/19590,,,,,,,no_match,,2026-09-24,,2026-10-14,,67,startDate,true,0,,,,,客户端开发,2026-08-08,,false,,,,,,
 21500,Data Privacy Expert,Xiaohongshu,Xiaohongshu,,Posted 57 Days Ago,2026-07-29,77,美国,1,美国,false,,United States,,0,"1. Develop a comprehensive and iterative data privacy governance framework by gaining in-depth understanding of the Company's business operations and data lifecycle, and by incorporating external signals including applicable laws and regulations, regulatory requirements, and industry best practices.
 2. Collaborate closely with cross-functional teams across the organization to translate data privacy requirements into necessary policies, processes, solutions, technical infrastructure, and employee awareness initiatives, while proactively identifying compliance risks from a business perspective.
 3. Drive the implementation of the data privacy governance framework through dedicated initiatives and mechanisms, continuously elevating and sustaining the Company's overall data privacy posture.

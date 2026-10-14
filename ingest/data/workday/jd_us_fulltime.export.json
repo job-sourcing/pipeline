@@ -1,0 +1,18 @@
+{
+ "label": "jd_us_fulltime",
+ "rows": 69,
+ "kept": 69,
+ "new": 0,
+ "ghosts_dropped": 5,
+ "ghosts_in_state": 0,
+ "pending": 0,
+ "terminal_err": 0,
+ "gate_dropped": 571,
+ "gate_dropped_survivors": 570,
+ "gate_dropped_new": 1,
+ "feed_excluded_state": 4,
+ "state_rows": 644,
+ "banded": 0,
+ "lca_pools": 3,
+ "snapshot": "2026-10-14"
+}

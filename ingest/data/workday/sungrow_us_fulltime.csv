@@ -519,7 +519,7 @@ Compensation:
 Sungrow is an equal opportunity employer. Due to strong interests in this position, Sungrow will only reach out to those candidates who best meet the requirements. Thank you for your interest in Sungrow.
 
 #LI-YL1",4299,https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=c2e0ba67-e6f9-439e-b8a3-0d734568eac2&ccId=19000101_000001&jobId=9201244924708_1&lang=en_US,,,,,,,not_checked,,2026-09-30,,2026-10-14,,191,startDate,true,0,,,,,,2026-04-06,,,,,,,,
-9201297209917_1,Service Contract Manager,Sungrow,,Full time,Posted 1 Days Ago,2026-10-02,12,"Remote, US",1,"Remote, US",true,,united states,,0,"The Company:
+9201297209917_1,Service Contract Manager,Sungrow,,Full time,Posted 1 Days Ago,2026-10-02,12,"Remote, US",1,"Remote, US",true,,United States,,0,"The Company:
 
 Sungrow North America is a leading provider of renewable energy solutions, specializing in the development and manufacturing of photovoltaic inverters and energy storage systems. The company offers a comprehensive range of products and services designed to optimize the performance and efficiency of solar power installations. Sungrow North America aims to provide sustainable and reliable energy solutions to meet the growing demand for clean power and is known for its commitment to innovation, high-quality standards, and exceptional customer service.
 
@@ -802,3 +802,182 @@ Compensation:
 • Strong personal and company growth opportunities
 
 Sungrow is an equal opportunity employer. Due to strong interests in this position, Sungrow will only reach out to those candidates who best meet the requirements. Thank you for your interest in Sungrow.",4163,https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=c2e0ba67-e6f9-439e-b8a3-0d734568eac2&ccId=19000101_000001&jobId=9201299738857_1&lang=en_US,,,,,,,not_checked,,2026-10-13,,2026-10-14,,2,startDate,false,0,,,,,,2026-10-12,,,,,,,,
+9201300083183_1,Product & Application Security Engineer,Sungrow,,Full time,Posted 1 Days Ago,2026-10-13,1,US,1,US,false,,United States,,0,"About Sungrow:
+Sungrow Power Supply Co., Ltd. (“Sungrow”) is a global leading PV inverter and ESS provider with 515 GW of power electronic converters installed worldwide as of December 2023. Founded in 1997 by University Professor Cao Renxian, Sungrow leads in the research and development of solar inverters with the largest dedicated R&D team in the industry and a broad product portfolio offering PV inverter solutions and ESS for utility-scale, commercial & industrial, and residential applications, as well as internationally recognized floating PV plant solutions, NEV driving solutions, EV charging solutions, and renewable hydrogen production systems. With a strong 27-year track record in the PV space, Sungrow products power in 170 countries and regions worldwide. For more information, visit: www.sungrowpower.com.
+
+The Position:
+Sungrow Americas is seeking a Product and Application Security Engineer to execute security across the full product ecosystem - - spanning firmware, embedded systems, hardware-integrated applications, cloud services, and connected platforms.
+
+This role is responsible for deep technical security execution across the entire product lifecycle, ensuring that security is embedded from device to cloud to application layer.
+
+You will serve as the hands-on technical authority, working directly with engineering teams to identify, validate, and remediate vulnerabilities across software, firmware, hardware interfaces, and system integrations.
+
+This is a high-depth, cross-domain role, ideal for an engineer who can move fluidly between code, devices, protocols, and cloud architectures.
+
+Key Responsibilities
+
+Full-Stack Product Security
+
+• Perform security assessments across:
+
+• Applications (web, APIs, backend services)
+
+• Firmware and embedded systems
+
+• Hardware interfaces and device communications
+
+• Cloud-connected platforms and IoT ecosystems
+
+• Conduct code review, firmware analysis, and system-level security testing
+
+• Identify and validate vulnerabilities across the entire product attack surface
+
+Secure Development & System Hardening
+
+• Embed security into SDLC across software, firmware, and device-integrated systems
+
+• Define and implement secure design patterns across:
+
+• Application layers
+
+• Device firmware
+
+• Communication protocols
+
+• Partner with engineering to ensure secure-by-design architecture decisions
+
+Offensive Security & Validation
+
+• Perform and support penetration testing, firmware analysis, and device-level assessments
+
+• Validate findings from internal testing, third-party assessments, and teardowns
+
+• Simulate real-world attack paths across device → network → cloud → application
+
+Vulnerability Management
+
+• Triage and validate vulnerabilities across software, firmware, and hardware layers
+
+• Provide clear, actionable remediation guidance tailored to engineering teams
+
+• Track and drive remediation aligned to risk and customer impact
+
+Software & Hardware Supply Chain Security
+
+• Support SBOM/HBOM analysis and validation
+
+• Identify risks in third-party libraries, firmware components, and hardware dependencies
+
+• Assist in mitigation strategies across supplier-integrated components
+
+Emerging Technology & Advanced Systems Security
+
+• Evaluate security risks in:
+
+• IoT architectures and edge devices
+
+• Cloud-native and distributed systems
+
+• Agentic / autonomous system behaviors (where applicable)
+
+• Help define guardrails for secure adoption of new technologies
+
+Engineering Integration & Enablement
+
+• Act as a trusted technical partner to software, firmware, and hardware teams
+
+• Translate security findings into practical engineering fixes
+
+• Provide real-time guidance during development, not just post-testing
+
+• Contribute to a culture of security ownership within engineering
+
+AI & Automation
+
+• Experience leveraging AI/ML-assisted tools to improve security engineering outcomes, including:
+
+• Code analysis and vulnerability detection
+
+• Secure code generation and review validation
+
+• Automation of repetitive security testing and triage tasks
+
+• Ability to integrate AI capabilities into engineering workflows, including:
+
+• API-based integrations with development and security tooling
+
+• Automation of security processes within CI/CD pipelines
+
+• Working understanding of security risks associated with AI-enabled systems, including:
+
+• Prompt injection and model misuse
+
+• Data exposure and model leakage risks
+
+• Secure handling of sensitive data in AI workflows
+
+• Practical ability to build lightweight automation and tooling (scripts, integrations, or pipelines) to scale security operations
+
+Requirements
+
+• 6–10+ years of experience in product security, embedded security, application security, or IoT security
+
+• Hands-on experience across multiple layers of the stack, including:
+
+• Application security (OWASP, API security)
+
+• Firmware or embedded systems
+
+• Network protocols and device communications
+
+• Strong ability to perform:
+
+• Manual code review
+
+• Firmware analysis (static/dynamic)
+
+• System-level threat analysis
+
+• Experience with security tooling across SAST, DAST, SCA, firmware analysis, and network testing
+
+• Working knowledge of modern architectures (cloud, microservices, device-cloud integration)
+
+• Ability to leverage Ai..
+
+Preferred
+
+• Experience with industrial systems, energy, or OT environments
+
+• Familiarity with hardware security concepts (secure boot, TPM, hardware roots of trust)
+
+• Experience with reverse engineering or low-level debugging
+
+• Exposure to SBOM/HBOM frameworks and supply chain security models (SLSA, etc.)
+
+• Certifications such as OSCP, OSCE, OSWE, GXPN, or similar
+
+Competencies
+
+• Cross-Domain Depth: Comfortable moving between firmware, hardware interfaces, applications, and cloud
+
+• Hands-On Operator: Executes, tests, breaks, and fixes—not just advises
+
+• Systems Thinker: Understands how components interact across the full product lifecycle
+
+• Engineering Credibility: Earns trust through technical accuracy and practical solutions
+
+• Adaptable Problem Solver: Effective in complex, evolving product environments
+
+Travel
+
+Up to 10%
+
+Work Location and Status:
+
+• Full-time position
+
+• Remote
+
+• No visa sponsorship
+
+Sungrow is an equal opportunity employer. Due to strong interest in this position, Sungrow will only contact candidates who best meet the requirements. Thank you for your interest in Sungrow.",6390,https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=c2e0ba67-e6f9-439e-b8a3-0d734568eac2&ccId=19000101_000001&jobId=9201300083183_1&lang=en_US,,,,,,,not_checked,,2026-10-14,,2026-10-14,,1,startDate,false,0,,,,,,2026-10-13,,,3,124175,128750,128750,subset,Applications Engineer
