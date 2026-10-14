@@ -14,3 +14,9 @@ board-watch niu_us_fulltime FAILED: list fetch crashed (RuntimeError: sanity:cd9
 board-watch niu_us_fulltime FAILED: list fetch crashed (RuntimeError: sanity:cd9iwvgl: query returned no result doc — dataset/slug/language wrong or engine changed; refusing)
 (2026-10-14T13:10:29)
 
+board-watch niu_us_fulltime FAILED: list fetch crashed (RuntimeError: sanity:cd9iwvgl: query returned no result doc — dataset/slug/language wrong or engine changed; refusing)
+(2026-10-14T15:38:01)
+
+board-watch niu_us_fulltime FAILED: list fetch crashed (RuntimeError: sanity:cd9iwvgl: query returned no result doc — dataset/slug/language wrong or engine changed; refusing)
+(2026-10-14T15:50:09)
+
