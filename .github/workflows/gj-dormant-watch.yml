@@ -41,7 +41,7 @@ jobs:
           fi
       - name: Run GJ-dormant watch (gj_dormant tag only)
         env:
-          WATCH_ONLY_TAGS: gj_dormant,gj_monthly,gj_monthly,gj_monthly
+          WATCH_ONLY_TAGS: gj_dormant
           WATCH_DETAILS_MAX: '30'
           WATCH_BUDGET_SECONDS: '300'
         run: python3 scripts/gha_board_watch.py
@@ -59,7 +59,7 @@ jobs:
           # S32 race fix: checkpoint ONLY the files THIS run touched.
           mkdir -p /tmp/watch_state
           FILES=$(git status --porcelain ingest/data/board_watch/ \
-            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl|runs\.jsonl)$' || true)
+            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl)$' || true)
           echo "checkpointing: ${FILES:-<none>}"
           for f in $FILES; do
             mkdir -p "/tmp/watch_state/$(dirname $f)"

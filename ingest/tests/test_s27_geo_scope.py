@@ -359,14 +359,18 @@ class TestExporterNonCnGate:
             ])
         stats = exporter.refresh_one(
             "testco_us_fulltime", w, exporter.date(2026, 10, 7))
-        assert stats["rows"] == 3            # cn-1 excluded
+        # D-S35-1 (A-prime): cn-1 excluded by the CN-local gate;
+        # sg-1 (Singapore, NOT remote) excluded by the foreign-noise
+        # gate — the old non_cn-exhaustive doctrine is superseded by
+        # the user's product rule (global + non-remote = noise)
+        assert stats["rows"] == 2            # us-1 + cnr-1 only
+        assert stats["gate_dropped_new"] == 1  # sg-1
         import csv as _csv
         with open(tmp_path / "workday/testco_us_fulltime.csv",
                   newline="", encoding="utf-8-sig") as f:
             out = {r["reqId"]: r for r in _csv.DictReader(f)}
-        assert set(out) == {"us-1", "sg-1", "cnr-1"}
+        assert set(out) == {"us-1", "cnr-1"}
         assert out["us-1"]["country"] == "United States"
-        assert out["sg-1"]["country"] == "Singapore"
         assert out["cnr-1"]["remoteFlag"] == "true"
 
     def test_us_scope_untouched_when_no_flag(self, tmp_path):

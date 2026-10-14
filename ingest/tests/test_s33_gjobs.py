@@ -75,11 +75,17 @@ def _adapter(key: str = "renogy", md: str | None = None,
 
 
 class TestContracts:
-    def test_6_contracts_two_lanes(self):
-        assert len(GJOBS_CONTRACTS) == 6
+    def test_13_contracts_four_tiers(self):
+        # S33 lanes: 4 weekly + 2 monthly dormant
+        # S35 tiering (audit/s35_aggregator/gj_gap_probe.md):
+        #   +2 monthly REAL (entity-verified; torras excluded — wrong
+        #   entity) +5 quarterly NOISE-WALL (0->k flip re-probe class)
+        assert len(GJOBS_CONTRACTS) == 13
         assert set(GJOBS_CONTRACTS) == {
             "renogy", "jinkosolar", "eveenergy", "jackery",
-            "govee", "vava"}
+            "govee", "vava",
+            "centurygames", "skyworth",
+            "baseus", "lianlian", "notta", "timekettle", "xgimi"}
 
     def test_every_contract_shape(self):
         for key, c in GJOBS_CONTRACTS.items():

@@ -42,10 +42,9 @@ from collections import Counter
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-import os
-ORG = Path(os.environ.get("E2E_ORG", "/home/z/pipeline-mirror"))
-ARC = Path(os.environ.get("E2E_ARC", "/home/z/research"))
-BUNDLE = Path(os.environ.get("E2E_BUNDLE", "/home/z/my-project/public/data"))
+ORG = Path("/home/z/pipeline-mirror")
+ARC = Path("/home/z/research")
+BUNDLE = Path("/home/z/my-project/public/data")
 OUT = ARC / "audit" / "findings-s26-e2e.txt"
 
 TODAY = date.today()
@@ -274,45 +273,30 @@ for cid, p in sorted(org_csvs.items()):
                 f"    {lbl}: {len(ghosts)} stale-in-state, "
                 f"{len(never_seen)} not-in-state "
                 f"(state rows={len(st)}, csv rows={len(rows)})")
-    # unexported rows (D-S35-1, manifest-driven): state membership ∉ CSV
-    # must equal the exporter manifest's by-design classes — pending
-    # (awaiting enrichment), gate_dropped_new + feed_excluded_state
-    # (the A-prime/feed country gates), ghosts_in_state. The audit NEVER
-    # re-implements gate logic (the S34 blind-spot class).
+    # unexported US rows: state membership ∉ CSV, MINUS rows the
+    # exporter's country gate intentionally excludes (their last feed
+    # record classifies foreign — the binance include_remote class)
     st = read_state(lbl)
     if st:
+        feed = {}
+        for fr in read_newposts(lbl):
+            feed[fr.get("reqId")] = fr
         csv_ids = set(ids)
-        unexp_actual = sum(1 for rid in st if rid not in csv_ids)
-        mpath = p.parent / f"{lbl}.export.json"
-        if mpath.exists():
-            m = json.loads(mpath.read_text())
-            unexp_expected = (m.get("pending", 0)
-                              + m.get("gate_dropped_new", 0)
-                              + m.get("gate_dropped_survivors", 0)
-                              + m.get("feed_excluded_state", 0)
-                              + m.get("ghosts_in_state", 0))
-            ident = (m.get("kept", 0) + m.get("gate_dropped_survivors", 0)
-                     + m.get("ghosts_in_state", 0) + m.get("new", 0)
-                     + m.get("gate_dropped_new", 0) + m.get("pending", 0)
-                     + m.get("feed_excluded_state", 0))
-            if ident != m.get("state_rows"):
-                unexp_detail.append(
-                    f"    {lbl}: MANIFEST IDENTITY BROKEN "
-                    f"{ident} != {m.get('state_rows')}")
-                unexported_total += 1   # counts as a violation
-            elif unexp_actual != unexp_expected:
-                unexp_detail.append(
-                    f"    {lbl}: {unexp_actual} unexported vs manifest "
-                    f"{unexp_expected} (pending {m.get('pending')}, "
-                    f"gate_new {m.get('gate_dropped_new')}, "
-                    f"feed_excl {m.get('feed_excluded_state')}, "
-                    f"ghosts {m.get('ghosts_in_state')})")
-                unexported_total += abs(unexp_actual - unexp_expected)
-        else:
-            if unexp_actual:
-                unexp_detail.append(f"    {lbl}: {unexp_actual} state rows "
-                                    f"not in CSV and NO export manifest")
-                unexported_total += unexp_actual
+        wcountry = (w_by_label.get(lbl) or {}).get("country", "")
+        new_ids = []
+        for rid in st:
+            if rid in csv_ids:
+                continue
+            fr = feed.get(rid) or {}
+            c = (fr.get("country") or "").strip()
+            if c and wcountry and c.lower() not in (
+                    wcountry or "").lower() and "united states" not in c.lower():
+                continue          # gate-excluded foreign — by design
+            new_ids.append(rid)
+        if new_ids:
+            unexported_total += len(new_ids)
+            unexp_detail.append(f"    {lbl}: {len(new_ids)} US state rows "
+                                f"not in the CSV")
 
 note(f"ghost rows total:  {ghost_total}")
 lines.extend(ghost_detail[:30])

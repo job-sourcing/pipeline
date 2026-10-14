@@ -1967,8 +1967,19 @@ class TestShippedWatchConfig:
                             w["board"])
                         assert w.get("skip_li_corroboration") is True, (
                             w["label"])
-                        assert w.get("tags") in (["gj"], ["gj_dormant"]), (
+                        assert w.get("tags") in (
+                            ["gj"], ["gj_dormant"], ["gj_monthly"],
+                            ["gj_quarterly"]), (
                             w["label"])
+                    elif kind == "rasweep":
+                        # S35: the remote-API aggregator sweep —
+                        # contracts DERIVED from LICOMPANY_CONTRACTS
+                        # (same keys = the same-entity owner rule)
+                        assert org in site_boards.LICOMPANY_CONTRACTS, (
+                            w["board"])
+                        assert w.get("skip_li_corroboration") is True, (
+                            w["label"])
+                        assert w.get("tags") == ["ra"], w["label"]
                     else:
                         assert not org, w["board"]
                     assert w["board"].startswith("custom:"), w["board"]
@@ -2033,7 +2044,11 @@ class TestShippedWatchConfig:
         # S32 wave; evidence audit/s32_li/probe9_cohort_results.json)
         # S33: +6 Google-Jobs gap-filler boards (4 weekly custom:gjobs
         # + 2 monthly dormant probes; evidence audit/s33_gj/probe2_*)
-        assert len(cfg["watches"]) == 218
+        # S35: +59 free-API rasweep boards (remote-aggregator closure
+        # layer, evidence audit/s35_aggregator/probe_results.json)
+        #      +7 gj tiering (2 monthly REAL + 5 quarterly NOISE-WALL,
+        #      evidence audit/s35_aggregator/gj_gap_probe.md)
+        assert len(cfg["watches"]) == 284
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",

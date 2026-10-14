@@ -26,7 +26,7 @@ permissions:
   actions: write
 
 concurrency:
-  group: cf-board-watch
+  group: board-watch
   cancel-in-progress: false
 
 jobs:
@@ -73,7 +73,7 @@ jobs:
           # (watch #123 clobbered li-watch #2's wyze state this way).
           mkdir -p /tmp/watch_state
           FILES=$(git status --porcelain ingest/data/board_watch/ \
-            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl|runs\.jsonl)$' || true)
+            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl)$' || true)
           echo "checkpointing: ${FILES:-<none>}"
           for f in $FILES; do
             mkdir -p "/tmp/watch_state/$(dirname $f)"

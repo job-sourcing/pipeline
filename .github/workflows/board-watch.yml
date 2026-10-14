@@ -104,7 +104,7 @@ jobs:
           # S32: the LinkedIn lanes run on li-board-watch.yml (daily,
           # own runner/IP — correlated rate limits isolated) and
           # li-dormant-watch.yml (weekly liveness re-probe).
-          WATCH_SKIP_TAGS: weekly,li,li_dormant,gj,gj_dormant,ra,gj_monthly,gj_quarterly,ra,gj_monthly,gj_quarterly,ra,gj_monthly,gj_quarterly
+          WATCH_SKIP_TAGS: weekly,li,li_dormant,gj,gj_dormant
         run: python3 scripts/gha_board_watch.py
 
       - name: Checkpoint state to git (race-proof)
@@ -119,7 +119,7 @@ jobs:
           #    wyze state this way).
           mkdir -p /tmp/watch_state
           FILES=$(git status --porcelain ingest/data/board_watch/ \
-            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl|runs\.jsonl)$' || true)
+            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl)$' || true)
           echo "checkpointing: ${FILES:-<none>}"
           for f in $FILES; do
             mkdir -p "/tmp/watch_state/$(dirname $f)"

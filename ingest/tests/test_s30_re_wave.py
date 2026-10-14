@@ -491,7 +491,7 @@ class TestS30WireRoster:
                   "ats:paycom:us-cent/39DCF574C16448FF09ADD3EF809F9EF2",
                   "custom:a123", "ats:teamtailor:polestar"):
             assert b in boards, b
-        assert len(w) == 218   # S31: 122 + 31 custom-adapter wave;
+        assert len(w) == 284   # S35: 218 + 59 rasweep + 7 gj tiering;
         # S32: +59 LinkedIn-guest company boards (18 daily + 41 dormant)
         # S33: +6 Google-Jobs gap-filler boards (4 weekly + 2 dormant)
 
@@ -541,8 +541,9 @@ class TestS30ConfigGuard:
         w = self._cfg()["watches"]
 
         def _owner(x):
-            m = _re.match(r"^custom:(licompany|gjobs):([a-z0-9_]+)$",
-                          x["board"])
+            m = _re.match(
+                r"^custom:(licompany|gjobs|rasweep):([a-z0-9_]+)$",
+                x["board"])
             return f"contract:{m.group(2)}" if m else x["label"]
 
         own = defaultdict(set)

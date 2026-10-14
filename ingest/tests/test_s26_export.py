@@ -119,6 +119,12 @@ def _lca(title: str, wage: float, st: str = "CA", case: str = "C1") -> dict:
 
 W = {"label": "testco_us_fulltime", "board": "ats:greenhouse:testco",
      "company": "TestCo", "country": "United States"}
+# D-S35-1: the A-prime noise class lives on non_cn boards (us_scope
+# boards never form foreign labels — _row_country's design). The
+# foreign-column rows flow via geo_scope=non_cn + country-silent feeds.
+W_NONCN = {"label": "testco_us_fulltime", "board": "ats:greenhouse:testco",
+           "company": "TestCo", "country": "United States",
+           "geo_scope": "non_cn"}
 
 
 class TestMembership:
@@ -424,3 +430,135 @@ class TestTerminalErrorRows:
                feed_rows=[rec], csv_rows=None)
         st = exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
         assert st["pending"] == 1 and st["new"] == 0
+
+
+class TestCountryGateAPrime:
+    """D-S35-1 — the A-prime country gate: foreign-labeled + non-remote
+    = noise (the user's product rule); foreign + remote = useful (kept).
+    The CSV country COLUMN is exclusion evidence where feeds are
+    country-silent (the non_cn board class). State untouched."""
+
+    def test_foreign_nonremote_new_row_dropped(self, tmp_path):
+        # feed country-silent, locations derive a foreign country,
+        # not remote -> dropped, manifest counts gate_dropped_new
+        # (the real class: non_cn board, country-silent feed)
+        _setup(tmp_path, state_rows=[_state_row("R1")],
+               feed_rows=[_feed_row("R1", country="",
+                                    locationsText="Singapore",
+                                    locations=["Singapore"])],
+               csv_rows=None)
+        st = exporter.refresh_one("testco_us_fulltime", W_NONCN, SNAPSHOT)
+        assert st["new"] == 0
+        assert st["gate_dropped"] == 1
+        assert st["gate_dropped_new"] == 1
+        # 0 rows + no prior CSV -> NO file (honest-zero label class)
+        assert not (tmp_path / "workday/testco_us_fulltime.csv").exists()
+        assert not (tmp_path / "workday/testco_us_fulltime.export.json"
+                    ).exists()
+
+    def test_foreign_remote_row_kept(self, tmp_path):
+        # the "quite useful" class: foreign country + remoteFlag=true
+        _setup(tmp_path, state_rows=[_state_row("R1")],
+               feed_rows=[_feed_row("R1", country="",
+                                    locationsText="Germany (Remote)",
+                                    locations=["Germany (Remote)"])],
+               csv_rows=None)
+        st = exporter.refresh_one("testco_us_fulltime", W_NONCN, SNAPSHOT)
+        assert st["new"] == 1 and st["gate_dropped"] == 0
+        with open(tmp_path / "workday/testco_us_fulltime.csv",
+                  newline="", encoding="utf-8-sig") as f:
+            r = list(csv.DictReader(f))[0]
+        assert r["remoteFlag"] == "true"
+
+    def test_foreign_nonremote_survivor_dropped(self, tmp_path):
+        # existing CSV row, country-silent feed, foreign column
+        _setup(tmp_path, state_rows=[_state_row("R1"), _state_row("R2")],
+               feed_rows=[_feed_row("R1", locationsText="Singapore",
+                                    locations=["Singapore"]),
+                          _feed_row("R2")],
+               csv_rows=[_csv_row("R1", country="Singapore",
+                                  primaryLocation="Singapore",
+                                  locations="Singapore"),
+                         _csv_row("R2")])
+        st = exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+        assert st["kept"] == 1
+        assert st["gate_dropped_survivors"] == 1
+        with open(tmp_path / "workday/testco_us_fulltime.csv",
+                  newline="", encoding="utf-8-sig") as f:
+            ids = [r["reqId"] for r in csv.DictReader(f)]
+        assert ids == ["R2"]
+
+    def test_blank_and_remote_label_country_kept(self, tmp_path):
+        # unclassified != foreign; country='Remote' is remote by def
+        _setup(tmp_path, state_rows=[_state_row("R1"), _state_row("R2")],
+               feed_rows=[_feed_row("R1"), _feed_row("R2")],
+               csv_rows=None)
+        st = exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+        assert st["new"] == 2 and st["gate_dropped"] == 0
+
+    def test_locations_remote_rescues_foreign_row(self, tmp_path):
+        # foreign country + remoteFlag false but 'Remote' in the
+        # locations text -> kept (the _row_is_cn_local seam agreement)
+        _setup(tmp_path, state_rows=[_state_row("R1")],
+               feed_rows=[_feed_row("R1", country="",
+                                    locationsText="Remote, OR",
+                                    locations=["Remote, OR"])],
+               csv_rows=None)
+        st = exporter.refresh_one("testco_us_fulltime", W_NONCN, SNAPSHOT)
+        assert st["gate_dropped"] == 0
+
+    def test_us_variant_normalized_at_write(self, tmp_path):
+        # survivors carry chain-era variant spellings -> canonical
+        _setup(tmp_path, state_rows=[_state_row("R1"), _state_row("R2")],
+               feed_rows=[_feed_row("R1"), _feed_row("R2")],
+               csv_rows=[_csv_row("R1", country="US"),
+                         _csv_row("R2", country="united states of america")])
+        st = exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+        assert st["kept"] == 2
+        with open(tmp_path / "workday/testco_us_fulltime.csv",
+                  newline="", encoding="utf-8-sig") as f:
+            rows = list(csv.DictReader(f))
+        assert all(r["country"] == "United States" for r in rows)
+
+    def test_manifest_identity_holds(self, tmp_path):
+        # state_rows = kept + gate_dropped_survivors + ghosts_in_state
+        #               + new + gate_dropped_new + pending
+        #               + feed_excluded_state
+        rec_sg = _feed_row("R1", locationsText="Singapore",
+                           locations=["Singapore"])   # gate_dropped_new
+        _setup(tmp_path,
+               state_rows=[_state_row("R1"), _state_row("R2"),
+                           _state_row("R3"), _state_row("R4"),
+                           _state_row("R5")],
+               feed_rows=[rec_sg, _feed_row("R2"),   # R2 kept-new
+                          _feed_row("R3", country="Germany")],  # feed-excl
+               csv_rows=[_csv_row("R4", country="Singapore",
+                                  primaryLocation="Singapore",
+                                  locations="Singapore"),  # g_d_surv
+                         _csv_row("R5", country="Singapore",
+                                  primaryLocation="Singapore",
+                                  locations="Singapore")])  # pending
+        st = exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+        m = json.loads((tmp_path / "workday/testco_us_fulltime.export.json"
+                        ).read_text())
+        assert m["state_rows"] == 5
+        ident = (m["kept"] + m["gate_dropped_survivors"]
+                 + m["ghosts_in_state"] + m["new"] + m["gate_dropped_new"]
+                 + m["pending"] + m["feed_excluded_state"])
+        assert ident == m["state_rows"], (ident, m)
+        # R5: in csv + state + foreign-csv-column but feed-silent ->
+        # survivor gate-dropped, not ghost; R3: feed-excluded state rid
+        assert m["gate_dropped_survivors"] == 2
+        assert m["feed_excluded_state"] == 1
+
+    def test_ghost_semantics_untouched_by_gate(self, tmp_path):
+        # a csv row NOT in state is a ghost regardless of country
+        _setup(tmp_path, state_rows=[_state_row("R1")],
+               feed_rows=[_feed_row("R1")],
+               csv_rows=[_csv_row("R1"),
+                         _csv_row("GONE", country="Singapore",
+                                  primaryLocation="Singapore",
+                                  locations="Singapore")])
+        st = exporter.refresh_one("testco_us_fulltime", W, SNAPSHOT)
+        assert st["ghosts_dropped"] == 1
+        assert st["ghosts_in_state"] == 0

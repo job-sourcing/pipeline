@@ -24,7 +24,6 @@ on:
 permissions:
   contents: write
   actions: write
-  issues: write        # D-S35-2: the drift-alert issue sink
 
 concurrency:
   group: csv-export
@@ -54,16 +53,6 @@ jobs:
                                     # no-ops)
         run: python3 scripts/s26_export_refresh.py --bundle
 
-      - name: Drift audit + issue sink (D-S35-2)
-        # AFTER the export (reads manifests), BEFORE the checkpoint
-        # (so the baseline + any lane-committed runs.jsonl appends ride
-        # the same commit). Fail-loudly: a broken alerting path must
-        # never be green. GITHUB_ACTIONS env activates the issue sink.
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DRIFT_REPO: ${{ github.repository }}
-        run: python3 scripts/drift_alert.py
-
       - name: Checkpoint CSVs + bundle to git (race-proof)
         if: always()
         run: |
@@ -75,13 +64,6 @@ jobs:
           # committed one — guard every pathspec.
           mkdir -p /tmp/export_state
           cp ingest/data/workday/*.csv /tmp/export_state/ 2>/dev/null || true
-          cp ingest/data/workday/*.export.json /tmp/export_state/ 2>/dev/null || true
-          # D-S35-2 (B2): the drift baseline + run verdict ledgers live
-          # in board_watch (org-side appends) — rescue them or the
-          # reset --hard wipes the append-only history
-          mkdir -p /tmp/export_bw
-          cp ingest/data/board_watch/drift_baseline.json /tmp/export_bw/ 2>/dev/null || true
-          cp ingest/data/board_watch/*.runs.jsonl /tmp/export_bw/ 2>/dev/null || true
           mkdir -p /tmp/export_ui
           cp -r ingest/data/ui /tmp/export_ui/ 2>/dev/null || true
           git config user.name "csv-export-bot"
@@ -91,10 +73,6 @@ jobs:
             git fetch origin || true
             git reset --hard origin/main
             cp /tmp/export_state/*.csv ingest/data/workday/ 2>/dev/null || true
-            cp /tmp/export_state/*.export.json ingest/data/workday/ 2>/dev/null || true
-            mkdir -p ingest/data/board_watch
-            cp /tmp/export_bw/drift_baseline.json ingest/data/board_watch/ 2>/dev/null || true
-            cp /tmp/export_bw/*.runs.jsonl ingest/data/board_watch/ 2>/dev/null || true
             if [ -d /tmp/export_ui/ui ]; then
               rm -rf ingest/data/ui
               cp -r /tmp/export_ui/ui ingest/data/
@@ -104,8 +82,6 @@ jobs:
             else
               git add ingest/data/workday
             fi
-            git add ingest/data/board_watch/drift_baseline.json 2>/dev/null || true
-            git add 'ingest/data/board_watch/*.runs.jsonl' 2>/dev/null || true
             if git diff --cached --quiet; then
               echo "no export change to commit"
               push_ok=1

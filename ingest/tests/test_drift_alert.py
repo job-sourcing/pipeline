@@ -1,0 +1,296 @@
+"""Tests for scripts/drift_alert.py — D-S35-2 drift alerting.
+
+Pins the detection contract (DESIGN-S35 §3.2, round-2 amendments):
+- board-fail-streak: >=2 consecutive 'failed' verdicts in runs.jsonl
+- row-collapse: <40% of 7d-max AND >=3 rows lost (churn-aware edge:
+  the 4->1 board escapes; 10->3 fires)
+- row-zero: baseline>0 and current 0
+- window-decline: <50% of the 28d-ago head
+- stale-board: last_seen beyond cadence x 2 (never-yielded exempt)
+- unexported-drift: manifest identity break
+- baseline: append-only series, same-day upsert, capped
+- issue sink: create/comment/auto-close decisions (mocked API)
+"""
+from __future__ import annotations
+
+import importlib.util
+import json
+import sys
+from datetime import date, timedelta
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+SCRIPT = REPO_ROOT / "scripts" / "drift_alert.py"
+
+_spec = importlib.util.spec_from_file_location("drift_alert", SCRIPT)
+da = importlib.util.module_from_spec(_spec)
+sys.modules.setdefault("drift_alert", da)
+_spec.loader.exec_module(da)
+
+TODAY = date.today()
+
+
+def _setup(tmp_path: Path, watches: list[dict]):
+    watch = tmp_path / "board_watch"
+    workday = tmp_path / "workday"
+    watch.mkdir(parents=True)
+    workday.mkdir(parents=True)
+    (watch / "config.json").write_text(json.dumps({"watches": watches}))
+    da.WATCH_DIR = watch
+    da.WORKDAY = workday
+    da.BASELINE = watch / "drift_baseline.json"
+    return watch, workday
+
+
+def _w(label: str, tags: list[str] | None = None) -> dict:
+    return {"label": label, "board": "ats:greenhouse:x",
+            "company": label, "country": "United States",
+            "tags": tags or []}
+
+
+def _state(watch: Path, label: str, last_seen: str, n: int = 1) -> None:
+    (watch / f"{label}.state.jsonl").write_text("\n".join(
+        json.dumps({"reqId": f"R{i}", "last_seen": last_seen})
+        for i in range(n)) + "\n")
+
+
+def _runs(watch: Path, label: str, verdicts: list[str]) -> None:
+    (watch / f"{label}.runs.jsonl").write_text("\n".join(
+        json.dumps({"ts": "2026-10-14T00:00:00Z", "verdict": v})
+        for v in verdicts) + "\n")
+
+
+def _manifest(workday: Path, label: str, **kv) -> None:
+    base = {"label": label, "rows": 5, "kept": 5, "new": 0, "pending": 0,
+            "terminal_err": 0, "gate_dropped": 0,
+            "gate_dropped_survivors": 0, "gate_dropped_new": 0,
+            "feed_excluded_state": 0, "ghosts_in_state": 0,
+            "ghosts_dropped": 0, "state_rows": 5, "banded": 0,
+            "lca_pools": 0, "snapshot": "2026-10-14"}
+    base.update(kv)
+    (workday / f"{label}.export.json").write_text(json.dumps(base))
+
+
+def _csv(workday: Path, label: str, n: int) -> None:
+    (workday / f"{label}.csv").write_text(
+        "reqId,title\n" + "".join(f"R{i},T\n" for i in range(n)))
+
+
+def _series(baseline: dict, label: str, entries: list[tuple[str, int]]):
+    baseline[label] = [{"d": d, "rows": n} for d, n in entries]
+
+
+class TestFailStreak:
+    def test_two_consecutive_failures_alert(self, tmp_path):
+        watch, _ = _setup(tmp_path, [_w("a_us_fulltime")])
+        _runs(watch, "a_us_fulltime", ["complete", "failed", "failed"])
+        f = da.detect([_w("a_us_fulltime")], {})
+        assert any(x["class"] == "board-fail-streak" for x in f)
+
+    def test_single_failure_does_not_alert(self, tmp_path):
+        watch, _ = _setup(tmp_path, [_w("a_us_fulltime")])
+        _runs(watch, "a_us_fulltime", ["complete", "failed", "complete"])
+        f = da.detect([_w("a_us_fulltime")], {})
+        assert not any(x["class"] == "board-fail-streak" for x in f)
+
+
+class TestRowClasses:
+    def test_row_collapse_fires(self, tmp_path):
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        baseline = {}
+        _series(baseline, "a_us_fulltime",
+                [(TODAY.isoformat(), 10)])
+        da.BASELINE and None
+        # patch _rows_now via manifest rows=3
+        # (10 -> 3: -70%, 7 rows lost)
+        # need workday manifest: use the module's _rows_now through env
+        watch, workday = tmp_path / "board_watch", tmp_path / "workday"
+        _manifest(workday, "a_us_fulltime", rows=3)
+        f = da.detect([_w("a_us_fulltime")], baseline)
+        assert any(x["class"] == "row-collapse" for x in f)
+
+    def test_small_board_4to2_escapes(self, tmp_path):
+        # the >=3-rows floor: 2 rows lost under the threshold — churn,
+        # not drift (round-2 P2 amendment: 4->1 with 3 lost DOES fire)
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        baseline = {}
+        _series(baseline, "a_us_fulltime", [(TODAY.isoformat(), 4)])
+        watch, workday = tmp_path / "board_watch", tmp_path / "workday"
+        _manifest(workday, "a_us_fulltime", rows=2)
+        f = da.detect([_w("a_us_fulltime")], baseline)
+        assert not any(x["class"] in ("row-collapse", "row-zero")
+                       for x in f)
+
+    def test_small_board_4to1_fires(self, tmp_path):
+        # 3 rows lost = at the floor — fires
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        baseline = {}
+        _series(baseline, "a_us_fulltime", [(TODAY.isoformat(), 4)])
+        watch, workday = tmp_path / "board_watch", tmp_path / "workday"
+        _manifest(workday, "a_us_fulltime", rows=1)
+        f = da.detect([_w("a_us_fulltime")], baseline)
+        assert any(x["class"] == "row-collapse" for x in f)
+
+    def test_row_zero_fires(self, tmp_path):
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        baseline = {}
+        _series(baseline, "a_us_fulltime", [(TODAY.isoformat(), 6)])
+        workday = tmp_path / "workday"
+        _manifest(workday, "a_us_fulltime", rows=0)
+        f = da.detect([_w("a_us_fulltime")], baseline)
+        assert any(x["class"] == "row-zero" for x in f)
+
+    def test_window_decline_fires(self, tmp_path):
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        baseline = {}
+        _series(baseline, "a_us_fulltime", [
+            ((TODAY - timedelta(days=30)).isoformat(), 20),
+            (TODAY.isoformat(), 8)])
+        workday = tmp_path / "workday"
+        _manifest(workday, "a_us_fulltime", rows=8)
+        f = da.detect([_w("a_us_fulltime")], baseline)
+        assert any(x["class"] == "window-decline" for x in f)
+
+    def test_never_seeded_labels_exempt_from_row_classes(self, tmp_path):
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        workday = tmp_path / "workday"
+        _manifest(workday, "a_us_fulltime", rows=0)
+        f = da.detect([_w("a_us_fulltime")], {})
+        assert not any(x["class"].startswith("row-") for x in f)
+
+
+class TestStale:
+    def test_daily_board_stale_at_4d(self, tmp_path):
+        watch, workday = _setup(tmp_path, [_w("a_us_fulltime")])
+        _state(watch, "a_us_fulltime", (TODAY - timedelta(days=4)
+                                        ).isoformat())
+        _csv(workday, "a_us_fulltime", 3)
+        f = da.detect([_w("a_us_fulltime")], {})
+        assert any(x["class"] == "stale-board" for x in f)
+
+    def test_weekly_tag_scales(self, tmp_path):
+        watch, workday = _setup(tmp_path, [_w("a_us_fulltime", ["li_dormant"])])
+        _state(watch, "a_us_fulltime", (TODAY - timedelta(days=10)
+                                        ).isoformat())
+        _csv(workday, "a_us_fulltime", 3)
+        f = da.detect([_w("a_us_fulltime")], {})
+        assert any(x["class"] == "stale-board" for x in f)
+
+    def test_fresh_board_clean(self, tmp_path):
+        watch, workday = _setup(tmp_path, [_w("a_us_fulltime")])
+        _state(watch, "a_us_fulltime", TODAY.isoformat())
+        _csv(workday, "a_us_fulltime", 3)
+        f = da.detect([_w("a_us_fulltime")], {})
+        assert not any(x["class"] == "stale-board" for x in f)
+
+
+class TestManifestIdentity:
+    def test_broken_identity_fires(self, tmp_path):
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        workday = tmp_path / "workday"
+        _manifest(workday, "a_us_fulltime", state_rows=99)  # broken
+        f = da.detect([_w("a_us_fulltime")], {})
+        assert any(x["class"] == "unexported-drift" for x in f)
+
+    def test_clean_identity_silent(self, tmp_path):
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        workday = tmp_path / "workday"
+        _manifest(workday, "a_us_fulltime")
+        f = da.detect([_w("a_us_fulltime")], {})
+        assert not any(x["class"] == "unexported-drift" for x in f)
+
+
+class TestBaseline:
+    def test_series_append_is_append_only(self, tmp_path):
+        # round-1 P1-6: a same-day downsert would ERASE the baseline
+        # max mid-collapse — the series must keep both entries
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        b = {}
+        da._series_append(b, "a_us_fulltime", 10)
+        da._series_append(b, "a_us_fulltime", 3)
+        assert [e["rows"] for e in b["a_us_fulltime"]] == [10, 3]
+
+    def test_series_capped(self, tmp_path):
+        _setup(tmp_path, [_w("a_us_fulltime")])
+        b = {}
+        for i in range(150):
+            da._series_append(b, "a_us_fulltime", i)
+        assert len(b["a_us_fulltime"]) == da.SERIES_KEEP
+
+
+class TestIssueSink:
+    def _patch_api(self, monkeypatch, calls):
+        def fake_api(method, url, token, body=None):
+            calls.append((method, url, body))
+            if method == "GET" and url.endswith("/issues?state=open"
+                                                "&labels=drift-alert"
+                                                "&per_page=100"):
+                return []
+            return {"number": 42}
+        monkeypatch.setattr(da, "_api", fake_api)
+
+    def test_create_on_new_finding(self, tmp_path, monkeypatch):
+        calls = []
+        self._patch_api(monkeypatch, calls)
+        da.sink_issues([{"class": "row-zero", "label": "a_us_fulltime",
+                         "evidence": "0 rows"}], "tok", "org/repo")
+        creates = [c for c in calls if c[0] == "POST" and c[1].endswith(
+            "/issues")]
+        assert len(creates) == 1
+        assert "[drift:row-zero] a_us_fulltime" in creates[0][2]["title"]
+
+    def test_auto_close_on_heal(self, tmp_path, monkeypatch):
+        calls = []
+        monkeypatch.setattr(da, "_api", lambda m, u, t, b=None: (
+            [{"title": "[drift:row-zero] a_us_fulltime", "number": 7,
+              "labels": [{"name": "drift-alert"}]}]
+            if (m == "GET") else {"number": 7}))
+        da.sink_issues([], "tok", "org/repo")   # no live findings
+        patches = [c for c in calls if c[0] == "PATCH"]
+        assert len(patches) == 0                # lambda records nothing;
+        # verify via real fake:
+        calls2 = []
+
+        def fake_api(method, url, token, body=None):
+            calls2.append((method, url, body))
+            if method == "GET":
+                return [{"title": "[drift:row-zero] a_us_fulltime",
+                         "number": 7,
+                         "labels": [{"name": "drift-alert"}]}]
+            return {"number": 7}
+        monkeypatch.setattr(da, "_api", fake_api)
+        da.sink_issues([], "tok", "org/repo")
+        assert any(c[0] == "PATCH" and c[2].get("state") == "closed"
+                   for c in calls2)
+
+
+class TestRunsLedger:
+    """D-S35-2: the driver appends one verdict line per watch per run
+    (scripts/gha_board_watch.py::_ledger_append — the fail-streak
+    evidence source)."""
+
+    def test_ledger_append_per_watch(self, tmp_path, monkeypatch):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location(
+            "gha_board_watch",
+            REPO_ROOT / "scripts" / "gha_board_watch.py")
+        bw = importlib.util.module_from_spec(spec)
+        sys.modules.setdefault("gha_board_watch", bw)
+        spec.loader.exec_module(bw)
+        monkeypatch.setattr(bw, "WATCH_DIR", tmp_path)
+        ws = [{"label": "a_us_fulltime"}, {"label": "b_us_fulltime"},
+              {"label": "no-verdict_us_fulltime"}]
+        results = {"a_us_fulltime": "complete",
+                   "b_us_fulltime": "failed"}
+        bw._ledger_append(ws, results)
+        la = (tmp_path / "a_us_fulltime.runs.jsonl").read_text().splitlines()
+        lb = (tmp_path / "b_us_fulltime.runs.jsonl").read_text().splitlines()
+        assert json.loads(la[0])["verdict"] == "complete"
+        assert json.loads(lb[0])["verdict"] == "failed"
+        assert not (tmp_path / "no-verdict_us_fulltime.runs.jsonl").exists()
+        # append semantics: a second run appends, never overwrites
+        bw._ledger_append(ws, {"a_us_fulltime": "failed",
+                               "b_us_fulltime": "failed"})
+        la2 = (tmp_path / "a_us_fulltime.runs.jsonl").read_text(
+            ).splitlines()
+        assert len(la2) == 2 and json.loads(la2[1])["verdict"] == "failed"

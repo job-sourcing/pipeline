@@ -143,13 +143,16 @@ class TestRefreshOneCountry:
         return w
 
     def test_lever_kz_e2e(self, tmp_path):
-        # the binance case: feed carries lever's 'Kz' ISO code
+        # the binance case: feed carries lever's 'Kz' ISO code. D-S35-1:
+        # the foreign row must be REMOTE to ship under the A-prime gate
+        # (the canon test's purpose — Kz -> Kazakhstan — preserved via
+        # the remote class)
         w = self._setup(
             tmp_path, {"geo_scope": "non_cn"},
             [{"reqId": "kz-1"}],
             [{"reqId": "kz-1", "title": "Compliance", "company": "TestCo",
-              "country": "Kz", "locationsText": "Kazakhstan, Astana",
-              "locations": ["Kazakhstan, Astana"],
+              "country": "Kz", "locationsText": "Kazakhstan, Astana (Remote)",
+              "locations": ["Kazakhstan, Astana (Remote)"],
               "postedOn": "Posted 3 Days Ago", "url": "https://x/kz-1",
               "startDate": "2026-09-28", "description": "Do. " * 20,
               "timeType": "Full time", "first_seen": "2026-09-20"}])
@@ -160,6 +163,24 @@ class TestRefreshOneCountry:
                   newline="", encoding="utf-8-sig") as f:
             out = {r["reqId"]: r for r in _csv.DictReader(f)}
         assert out["kz-1"]["country"] == "Kazakhstan"
+        assert out["kz-1"]["remoteFlag"] == "true"
+
+    def test_lever_kz_nonremote_dropped_e2e(self, tmp_path):
+        # D-S35-1 pin: the same Kazakhstan row WITHOUT remote evidence
+        # is foreign noise -> gate-dropped (state keeps the evidence)
+        w = self._setup(
+            tmp_path, {"geo_scope": "non_cn"},
+            [{"reqId": "kz-2"}],
+            [{"reqId": "kz-2", "title": "Compliance", "company": "TestCo",
+              "country": "Kz", "locationsText": "Kazakhstan, Astana",
+              "locations": ["Kazakhstan, Astana"],
+              "postedOn": "Posted 3 Days Ago", "url": "https://x/kz-2",
+              "startDate": "2026-09-28", "description": "Do. " * 20,
+              "timeType": "Full time", "first_seen": "2026-09-20"}])
+        stats = exporter.refresh_one("testco_us_fulltime", w,
+                                     exporter.date(2026, 10, 7))
+        assert stats["rows"] == 0
+        assert stats["gate_dropped_new"] == 1
 
     def test_us_scope_blank_location_fill_e2e(self, tmp_path):
         # the Hisense case: no rec country, 'Suwanee, GA' location

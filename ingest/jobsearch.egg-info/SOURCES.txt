@@ -66,6 +66,7 @@ tests/test_categorize.py
 tests/test_cli.py
 tests/test_corroborate.py
 tests/test_dedup.py
+tests/test_drift_alert.py
 tests/test_envelope_node.py
 tests/test_export_contract.py
 tests/test_gha_drain.py
@@ -78,6 +79,7 @@ tests/test_models.py
 tests/test_ops_primitives.py
 tests/test_pipeline_lock.py
 tests/test_prompts.py
+tests/test_rasweep_adapter.py
 tests/test_regressions.py
 tests/test_reposts.py
 tests/test_s23_transient_resilience.py
@@ -90,6 +92,7 @@ tests/test_s28_geo_canon.py
 tests/test_s28_geo_spread.py
 tests/test_s30_re_wave.py
 tests/test_s32_licompany.py
+tests/test_s33_gjobs.py
 tests/test_s9_titlesearch.py
 tests/test_scoring.py
 tests/test_site_boards.py
