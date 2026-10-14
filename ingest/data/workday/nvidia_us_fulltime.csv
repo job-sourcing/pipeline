@@ -75047,7 +75047,7 @@ This posting is for an existing vacancy.
 
 NVIDIA uses AI tools in its recruiting processes.
 
-NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",6046,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Systems-Software-Engineer---Deep-Learning-Solutions_JR2014515,,https://www.linkedin.com/jobs/view/4395491118,2026-09-05,25,among first 25,178,matched,title,2026-09-09,2026-09-10T01:51:44.680577,2026-10-14,,217,startDate,true,0,,2026-03-15,,Regular Employee,Engineering,2026-03-11,,true,401,173239,184974,207095,subset+state,Engineer Senior Systems Software
+NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",6046,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Systems-Software-Engineer---Deep-Learning-Solutions_JR2014515,,https://www.linkedin.com/jobs/view/4395491118,2026-09-05,25,among first 25,178,matched,title,2026-09-09,2026-09-10T01:51:44.680577,2026-10-14,,217,startDate,true,0,2026-10-14,2026-03-15,,Regular Employee,Engineering,2026-03-11,,true,401,173239,184974,207095,subset+state,Engineer Senior Systems Software
 JR2013625,Principal Datacenter HSIO Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted 30+ Days Ago,2026-03-11,217,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,028095df097b1001ac9358c586600000,5,"NVIDIA is a learning machine that constantly evolves by seeking exciting opportunities that matter to the world, and that only we can solve. We attract the world’s best people, so we can achieve our highest aim: building a company that lets us do our life’s work, at the highest level of our craft. Join our new team building the next generation of datacenter infrastructure that powers the future of AI. We are seeking highly motivated technical experts to join our new organization leading datacenter product design.
 
 What you'll be doing:
@@ -96236,3 +96236,64 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",5139,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Infrastructure-Solutions-Architect---OEM-Deployment_JR2027964,,,,,,,not_checked,,2026-10-14,,2026-10-14,,1,startDate,false,0,,2026-10-17,3,,,2026-10-13,,,77,153103,169770,198702,subset+state,Solutions Architect
+JR2016206,Senior HPC Performance Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted Today,2026-10-14,0,"US, OR, Remote",4,"US, OR, Remote; US, TX, Remote; US, CA, Remote; US, MA, Remote",true,OR;TX;CA;MA,United States,,0,"As a member of our team in NVIDIA's NVHPC compilers & tools group, you will analyze and run High Performance Computing (HPC) applications on HPC servers and systems to gain insight into the performance characteristics of these applications. The applications you'll work with range from small synthetic benchmarks that use a single core to full applications that utilize all of the resources on distributed-memory systems with heterogeneous compute nodes including CPUs, GPUs and many-core processors. In this role you will analyze these applications and identify optimization opportunities for compiler development teams and application engineering teams.
+
+What you’ll be doing:
+
+•
+Assist customers GPU accelerate HPC applications.
+
+•
+Analyze High Performance Computing (HPC) applications to better understand their performance characteristics.
+
+•
+Provide advise and drive compiler and applications engineering development teams based on the analysis of these HPC applications.
+
+What we need to see:
+
+•
+BS/MS or equivalent experience in Computer Science or related engineering field.
+
+•
+8+ Years of programming experience.
+
+•
+Solid understanding of Fortran/C/C++, as well as programming techniques, especially for parallel architectures; preferably for compilers
+
+•
+Experience with OpenACC, OpenMP, MPI, and CUDA.
+
+•
+Strong skills in performance analysis and tuning, as well as a broad understanding of parallel applications development tools and runtime environments.
+
+•
+Strong mathematical fundamentals, including linear algebra and numerical methods.
+
+•
+Understand performance considerations, tradeoffs and impact.
+
+•
+Expert interpersonal skills, logical approach to problem solving, good time management and task prioritization skills. Excellent written and verbal communication skills, along with the ability to work in a dynamic product oriented team.
+
+Ways to stand out from the crowd:
+
+•
+You have a deep understanding of machine architectures and micro-architectures.
+
+•
+Experience with debugging and porting as well as assembly language programming is a significant advantage.
+
+•
+Experience is leading and/or managing projects is a plus.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 18, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",2994,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-OR-Remote/Senior-HPC-Performance-Engineer_JR2016206,,,,,,,not_checked,,2026-10-14,,2026-10-14,,0,startDate,false,0,,2026-10-18,4,,,2026-10-14,,,8,159234,175870,205038,subset,Engineer Performance
