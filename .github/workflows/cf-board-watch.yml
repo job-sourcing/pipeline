@@ -26,7 +26,7 @@ permissions:
   actions: write
 
 concurrency:
-  group: board-watch
+  group: cf-board-watch
   cancel-in-progress: false
 
 jobs:
