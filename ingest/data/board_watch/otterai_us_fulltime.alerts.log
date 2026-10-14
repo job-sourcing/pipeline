@@ -118,3 +118,9 @@ REPOSTED (1)
 REPOSTED Staff Machine Learning Engineer (label reset 21d→0d)
 (2026-10-13T15:21:06)
 
+board-watch otterai_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:otterai: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
+(2026-10-14T11:55:46)
+
+board-watch otterai_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:otterai: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
+(2026-10-14T12:04:10)
+
