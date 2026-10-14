@@ -1724,6 +1724,16 @@ def _derive_h1b_columns(title: str, primary_location: str,
     - candidates = token-sets S (|S|>=2) with S ⊆ posting-tokens P;
       SUPPRESSED when (P − S) contains a role-block word (QA/test/
       intern/marketing/… — an occupation change, not a specialization).
+    - passable gate (S34 shadowing fix): a candidate must be able to
+      actually BAND — >=3 filings all-state, or >=3 in the primary
+      state — BEFORE ranking. The pre-S34 order ranked first and
+      gated later, so a hyper-specific 1-filing pool (e.g.
+      {research,scientist,tech} x1) shadowed a well-populated pool
+      ({research,scientist} x84) and then died at the gate →
+      honest-empty despite a banded population existing (285 rows /
+      11 companies measured, audit/s34_banding/). Strictly additive:
+      a banded row's best is already passable and remains the max of
+      the passable subset; only shadowed-empty rows change.
     - best = max by (|S − level-tokens|, |S|, all-state filings,
       lexicographic) — DOMAIN conditioning outranks LEVEL conditioning
       (level words are the dialect-unstable tokens); state-INdependent
@@ -1748,12 +1758,29 @@ def _derive_h1b_columns(title: str, primary_location: str,
              and not ((p_toks - s) & _H1B_ROLE_BLOCK)]
     if not cands:
         return dict(_H1B_EMPTY)
+    m = _STATE_RE.match((primary_location or "").strip())
+    primary_state = m.group(1) if m else ""
+
+    def _passable(s: frozenset) -> bool:
+        # NOTE (S34-a review): for loader-built pools the state branch
+        # is defensive-only — _load_h1b_bands appends every wage to
+        # pool["all"] and only a subset to states[st], so
+        # len(all) >= len(states[st]) always, and "all >= 3" subsumes
+        # the state test. Kept because pools dicts are also handed to
+        # _derive_h1b_columns directly by callers/tests with any shape.
+        if len(pools[s]["all"]) >= 3:
+            return True
+        sp = pools[s]["states"].get(primary_state) \
+            if primary_state else None
+        return bool(sp and len(sp) >= 3)
+
+    cands = [s for s in cands if _passable(s)]
+    if not cands:
+        return dict(_H1B_EMPTY)
     best = max(cands, key=lambda s: (
         len(s - _H1B_LEVEL_TOKENS), len(s),
         len(pools[s]["all"]), " ".join(sorted(s))))
     tier = "title" if best == p_toks else "subset"
-    m = _STATE_RE.match((primary_location or "").strip())
-    primary_state = m.group(1) if m else ""
     wages: Optional[list[float]] = None
     basis = ""
     if primary_state:
@@ -1765,6 +1792,8 @@ def _derive_h1b_columns(title: str, primary_location: str,
         if len(ap) >= 3:
             wages, basis = ap, tier
     if not wages:
+        # unreachable for passable best in theory (all or state >=3);
+        # kept as belt-and-braces for INV-10's all-or-none contract.
         return dict(_H1B_EMPTY)
     vals = sorted(wages)
     return {

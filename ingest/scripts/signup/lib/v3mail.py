@@ -6,7 +6,7 @@ runs a custom worker that stores every email (subject + body + attachments)
 in Cloudflare D1.
 
 This module logs into the admin panel and exposes the read APIs:
-  GET /emails/all?limit=N&include_body=true&address=redacted@priv.email
+  GET /emails/all?limit=N&include_body=true&address=X@priv.email
   GET /emails/{id}
   GET /emails/{id}/attachments
   GET /recipients

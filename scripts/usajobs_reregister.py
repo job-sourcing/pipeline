@@ -31,7 +31,7 @@ INGEST = REPO / "ingest"
 FORM_FIELDS = {
     "givenName": "Job",
     "lastName": "Searcher",
-    "emailAddress": "redacted@priv.email",
+    "emailAddress": "noreply@priv.email",
     "phoneNumber": "555-555-5555",
     "companyAgency": "Personal Research",
     "requestReason": ("Personal job search aggregation and analysis for "
@@ -65,9 +65,9 @@ def _env(name: str) -> str:
 # swapped for a fresh one. The admin/shop addresses are credential values
 # (USAJOBS_USER_AGENT / CAREERJET_PARTNER_EMAIL) — env-only, never
 # hardcoded (S8-A scrub).
-ALIASES = [a for a in ("redacted@priv.email", _env("USAJOBS_USER_AGENT"),
-                       "redacted@priv.email", "redacted@priv.email",
-                       "redacted@priv.email", _env("CAREERJET_PARTNER_EMAIL"))
+ALIASES = [a for a in ("noreply@priv.email", _env("USAJOBS_USER_AGENT"),
+                       "billing@priv.email", "security@priv.email",
+                       "support@priv.email", _env("CAREERJET_PARTNER_EMAIL"))
            if a]
 
 

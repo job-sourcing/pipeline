@@ -539,6 +539,110 @@ class TestH1bWageBands:
         assert out2["h1bMatchBasis"] == "title"    # no +state, n=3 ok
         assert out2["h1bFilings"] == 3
 
+    def test_shadowed_pool_no_longer_kills_the_band(self, tmp_path):
+        """S34 shadowing fix: a hyper-specific 1-filing pool used to
+        outrank a well-populated pool by domain conditioning and then
+        die at the >=3 gate → honest-empty despite a banded population
+        (live: 'Research Scientist - Compute AI Infra … Tech …' vs
+        {research,scientist} x84 shadowed by {research,scientist,tech}
+        x1 — 285 rows / 11 companies, audit/s34_banding/)."""
+        pools = self._pools(tmp_path, [
+            # well-populated general pool
+            self._rec("Research Scientist", "CA", 210000, case="C-1"),
+            self._rec("Research Scientist", "CA", 220000, case="C-2"),
+            self._rec("Research Scientist", "CA", 230000, case="C-3"),
+            self._rec("Research Scientist", "WA", 240000, case="C-4"),
+            # hyper-specific 1-filing pool (subset of the posting)
+            self._rec("Research Scientist - Tech Lead", "CA", 300000,
+                      case="C-5"),
+        ])
+        # posting is a superset of BOTH pools; the 3-token pool wins
+        # the domain rank but has 1 filing — pre-fix this row shipped
+        # EMPTY; post-fix it bands from the 4-filing general pool
+        out = board_dump._derive_h1b_columns(
+            "Research Scientist - Compute AI Infra - Frontier Tech",
+            "US, CA, Santa Clara", pools)
+        assert out["h1bMatchBasis"] == "subset+state"
+        assert out["h1bFilings"] == 3        # CA state pool of the GENERAL pool
+        assert out["h1bMatchTitle"] == "Research Scientist"
+        assert 200000 <= out["h1bWageP50"] <= 240000
+
+    def test_shadowing_fix_is_strictly_additive_for_banded_rows(
+            self, tmp_path):
+        """A row whose domain-best pool PASSES the gate keeps the exact
+        same band as pre-fix (the passable filter cannot displace a max
+        that is already in the passable set)."""
+        pools = self._pools(tmp_path, [
+            self._rec("Software Engineer", "CA", 200000, case="C-1"),
+            self._rec("Software Engineer", "CA", 210000, case="C-2"),
+            self._rec("Software Engineer", "CA", 220000, case="C-3"),
+            self._rec("Software Engineer, Systems Software", "CA", 230000,
+                      case="C-4"),
+            self._rec("Software Engineer, Systems Software", "CA", 240000,
+                      case="C-5"),
+            self._rec("Software Engineer, Systems Software", "CA", 250000,
+                      case="C-6"),
+        ])
+        # the 3-token pool is BOTH domain-best AND passable (3 filings)
+        # → same winner as pre-fix
+        out = board_dump._derive_h1b_columns(
+            "Senior System Software Engineer", "US, CA, Santa Clara",
+            pools)
+        assert out["h1bFilings"] == 3
+        assert out["h1bMatchTitle"] == "Software Engineer, Systems Software"
+
+    def test_no_passable_candidate_stays_honestly_empty(self, tmp_path):
+        """The passable gate never INVENTS a band: when every subset
+        candidate is below the >=3 gate (all-state and primary-state),
+        the row stays honest-empty (the D-S26-3 doctrine)."""
+        pools = self._pools(tmp_path, [
+            self._rec("Research Scientist", "CA", 210000, case="C-1"),
+            self._rec("Research Scientist - Speech", "CA", 220000,
+                      case="C-2"),
+        ])
+        out = board_dump._derive_h1b_columns(
+            "Research Scientist (Seed Model - Speech)", "US, CA, San Jose",
+            pools)
+        assert out["h1bMatchBasis"] == "" and out["h1bFilings"] == ""
+
+    def test_state_passable_pool_survives_all_state_below_gate(
+            self):
+        """A pools dict with all-state n<3 but primary-state n>=3 (only
+        constructible by hand — the loader always has states ⊆ all,
+        S34-a review finding 4) is still a legit band source via the
+        state hop; the passable filter must admit it."""
+        pools = {frozenset({"site", "reliability", "engineer"}): {
+            "states": {"WA": [240000.0, 250000.0, 260000.0]},
+            "all": [240000.0, 250000.0],   # <3: all-state below gate
+            "title": "Site Reliability Engineer",
+        }}
+        out = board_dump._derive_h1b_columns(
+            "Site Reliability Engineer", "US, WA, Seattle", pools)
+        assert out["h1bMatchBasis"] == "title+state"
+        assert out["h1bFilings"] == 3
+        # and a state that is NOT the pool's state → no band at all
+        out2 = board_dump._derive_h1b_columns(
+            "Site Reliability Engineer", "US, CA, Seattle", pools)
+        assert out2["h1bMatchBasis"] == "" and out2["h1bFilings"] == ""
+
+    def test_role_block_never_reenters_via_passable_filter(
+            self, tmp_path):
+        """S34-a review finding 6: a PASSABLE pool must not sneak back
+        in for a role-blocked posting — the role-block suppression
+        runs before and independently of the passable filter."""
+        pools = self._pools(tmp_path, [
+            self._rec("Software Engineer", "CA", 200000, case="C-1"),
+            self._rec("Software Engineer", "CA", 210000, case="C-2"),
+            self._rec("Software Engineer", "CA", 220000, case="C-3"),
+            self._rec("QA Engineer", "CA", 150000, case="C-4"),
+        ])
+        # posting contains SWE tokens but IS a QA occupation → the
+        # passable {engineer, software} pool is role-blocked, the
+        # unblocked {engineer, qa} pool is 1-filing → honest empty
+        out = board_dump._derive_h1b_columns(
+            "Software QA Engineer", "US, CA, Santa Clara", pools)
+        assert out["h1bMatchBasis"] == "" and out["h1bFilings"] == ""
+
     def test_percentiles_interpolate(self):
         vals = sorted([100000.0, 120000.0, 140000.0, 200000.0])
         p = board_dump._wage_pct
