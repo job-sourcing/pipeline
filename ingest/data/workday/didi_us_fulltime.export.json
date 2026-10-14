@@ -1,0 +1,18 @@
+{
+ "label": "didi_us_fulltime",
+ "rows": 9,
+ "kept": 9,
+ "new": 0,
+ "ghosts_dropped": 0,
+ "ghosts_in_state": 0,
+ "pending": 0,
+ "terminal_err": 0,
+ "gate_dropped": 0,
+ "gate_dropped_survivors": 0,
+ "gate_dropped_new": 0,
+ "feed_excluded_state": 0,
+ "state_rows": 9,
+ "banded": 5,
+ "lca_pools": 8,
+ "snapshot": "2026-10-14"
+}

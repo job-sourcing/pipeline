@@ -105,6 +105,34 @@ PYMEM
     git diff --cached --quiet || \
     git commit -q -m "board CSV back-sync from org runtime (chains + csv-export)")
 fi
+# S36 (the P0 recovery): the export manifests ({label}.export.json —
+# the A-prime gate identity, read by the e2e audit + drift auditor)
+# are lane-written on the ORG side. Without a back-sync they were
+# org-only; the forward rsync --delete WIPED 178 of them (the
+# S35-new-artifact-rule (b) was declared but never implemented). Same
+# membership guard as the CSVs: removed labels must not resurrect.
+if ls "$DEST"/ingest/data/workday/*.export.json >/dev/null 2>&1; then
+  python3 - "$DEST/ingest/data/workday" \
+    "$SRC/ingest/data/board_watch/config.json" <<'PYEXP'
+import json, pathlib, sys
+dest = pathlib.Path(sys.argv[1])
+labels = {w["label"] for w in
+          json.loads(open(sys.argv[2]).read())["watches"]}
+pruned = []
+for f in sorted(dest.glob("*.export.json")):
+    if f.stem.replace(".export", "") not in labels:
+        f.unlink()
+        pruned.append(f.stem)
+if pruned:
+    print(f"[back-sync-manifests] pruned {len(pruned)} orphan manifest(s)"
+          f" org-side: {', '.join(pruned[:8])}")
+PYEXP
+  rsync -a "$DEST"/ingest/data/workday/*.export.json \
+    "$SRC/ingest/data/workday/"
+  (cd "$SRC" && git add ingest/data/workday/*.export.json && \
+    git diff --cached --quiet || \
+    git commit -q -m "export manifests back-sync from org runtime (S36 P0 fix)")
+fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
   rsync -a --delete "$DEST"/ingest/data/ui/ "$SRC/ingest/data/ui/"

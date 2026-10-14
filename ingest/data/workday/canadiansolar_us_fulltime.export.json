@@ -1,0 +1,18 @@
+{
+ "label": "canadiansolar_us_fulltime",
+ "rows": 135,
+ "kept": 135,
+ "new": 0,
+ "ghosts_dropped": 0,
+ "ghosts_in_state": 0,
+ "pending": 0,
+ "terminal_err": 0,
+ "gate_dropped": 39,
+ "gate_dropped_survivors": 0,
+ "gate_dropped_new": 39,
+ "feed_excluded_state": 0,
+ "state_rows": 174,
+ "banded": 0,
+ "lca_pools": 10,
+ "snapshot": "2026-10-14"
+}
