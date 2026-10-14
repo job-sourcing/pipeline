@@ -349,3 +349,106 @@ class TestRateLimitBackoff:
             a._walk_entity("3374179")
         # page-pause politeness (1.0) + ONE 45s rung on the deep page
         assert sleeps == [1.0, 45]
+
+
+class TestS37RateWalledError:
+    """S37-W1 (D-S37-1 R3b / review P1-1): the EGRESS-WALL family
+    {429, 302-authwall} raises the TYPED RateWalledError so the driver
+    can classify the leg 'source_blocked' (loud-but-not-red, streak-
+    capped, state untouched). 403/5xx — and a redirect with NO
+    Location header — stay PLAIN RuntimeError: server-side verdicts,
+    not egress walls. RateWalledError subclasses RuntimeError so every
+    existing pytest.raises(RuntimeError) pin keeps passing."""
+
+    def test_typed_error_is_module_level_and_a_runtimeerror(self):
+        assert hasattr(site_boards, "RateWalledError")
+        assert issubclass(site_boards.RateWalledError, RuntimeError)
+
+    def test_429_raises_rate_walled(self, monkeypatch):
+        monkeypatch.setattr(__import__("time"), "sleep",
+                            lambda *_: None)
+        a = _adapter(responses=[(429, "x", "")])
+        with pytest.raises(site_boards.RateWalledError, match="HTTP 429"):
+            a._walk_entity("3374179")
+
+    def test_302_with_location_raises_rate_walled(self, monkeypatch):
+        # the authwall class: the redirect VERDICT carries a Location
+        # header (LinkedIn moves the walled guest session to authwall)
+        monkeypatch.setattr(__import__("time"), "sleep",
+                            lambda *_: None)
+        a = _adapter(responses=[(302, "", "https://www.linkedin.com/"
+                                     "authwall?trk=x")])
+        with pytest.raises(site_boards.RateWalledError,
+                           match=r"302 -> https://www.linkedin.com/"):
+            a._walk_entity("3374179")
+
+    def test_403_is_a_verdict_not_a_wall(self, monkeypatch):
+        monkeypatch.setattr(__import__("time"), "sleep",
+                            lambda *_: None)
+        a = _adapter(responses=[(403, "x", "")])
+        with pytest.raises(RuntimeError, match="HTTP 403") as ei:
+            a._walk_entity("3374179")
+        assert not isinstance(ei.value, site_boards.RateWalledError)
+
+    def test_5xx_is_a_verdict_not_a_wall(self, monkeypatch):
+        monkeypatch.setattr(__import__("time"), "sleep",
+                            lambda *_: None)
+        a = _adapter(responses=[(503, "x", "")])
+        with pytest.raises(RuntimeError, match="HTTP 503") as ei:
+            a._walk_entity("3374179")
+        assert not isinstance(ei.value, site_boards.RateWalledError)
+
+    def test_302_without_location_is_not_the_authwall_class(
+            self, monkeypatch):
+        # garden-variety redirect oddity: no Location header = no
+        # authwall verdict to distinguish — stays a loud RuntimeError
+        monkeypatch.setattr(__import__("time"), "sleep",
+                            lambda *_: None)
+        a = _adapter(responses=[(302, "", "")])
+        with pytest.raises(RuntimeError, match="HTTP 302") as ei:
+            a._walk_entity("3374179")
+        assert not isinstance(ei.value, site_boards.RateWalledError)
+
+
+class TestS37LadderCut:
+    """S37-W1 (D-S37-1 A4 / review P1-2): a board with an ACTIVE
+    source_blocked_streak probes with the SINGLE 45s rung — 1/4 the
+    full-wall cost (a fully-walled 20-board day at the full ladder
+    ≈ 67 min > the lane timeout; a timeout-kill writes NO verdicts).
+    The seam is the explicit LI_LADDER_CUT env var the DRIVER arms
+    per-watch (gha_board_watch.run_watch) — the adapter only reads."""
+
+    def test_cut_env_means_single_rung_then_rate_walled(
+            self, monkeypatch):
+        sleeps = []
+        monkeypatch.setattr(__import__("time"), "sleep", sleeps.append)
+        monkeypatch.setenv("LI_LADDER_CUT", "1")
+        a = LinkedInCompanyAdapter("vesync", Config())
+        a._get = lambda url, params: (429, "x", "")
+        with pytest.raises(site_boards.RateWalledError, match="HTTP 429"):
+            a._walk_entity("3374179")
+        assert sleeps == [45]           # ONE rung, not 45/60/90
+
+    def test_no_cut_env_full_ladder(self, monkeypatch):
+        # the un-streaked (healthy yesterday) board keeps the full
+        # 45/60/90 ladder — auto-recovery needs the deep probe
+        sleeps = []
+        monkeypatch.setattr(__import__("time"), "sleep", sleeps.append)
+        monkeypatch.delenv("LI_LADDER_CUT", raising=False)
+        a = LinkedInCompanyAdapter("vesync", Config())
+        a._get = lambda url, params: (429, "x", "")
+        with pytest.raises(site_boards.RateWalledError, match="HTTP 429"):
+            a._walk_entity("3374179")
+        assert sleeps == [45, 60, 90]
+
+    def test_cut_env_heals_on_first_200(self, monkeypatch):
+        # auto-recovery detection preserved: one healthy probe serves
+        # the page — the driver's healthy pass then resets the streak
+        sleeps = []
+        monkeypatch.setattr(__import__("time"), "sleep", sleeps.append)
+        monkeypatch.setenv("LI_LADDER_CUT", "1")
+        a = LinkedInCompanyAdapter("vesync", Config())
+        a._get = lambda url, params: (200, _page([_card("1")]), "")
+        rows, status = a._walk_entity("3374179")
+        assert status == "tail" and len(rows) == 1
+        assert sleeps == []             # no backoff burned at all

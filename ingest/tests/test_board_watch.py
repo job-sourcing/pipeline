@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import os
 import sys
 import time
 from datetime import date, datetime, timedelta, timezone
@@ -2569,6 +2570,40 @@ class TestDeferredRetryPass:
         assert "retry still failing" in text
         assert "'test_watch': 'failed'" in text
 
+    def test_source_blocked_board_is_retried_then_heals(
+            self, wdir, monkeypatch, capsys):
+        """S37-W1 (D-S37-1 A2 — the load-bearing retry preservation):
+        a source_blocked board (LinkedIn 429 wall) rides the SAME
+        deferred-retry pass as a failed one — the wall is intermittent
+        per-board (Oct-14 li ledger: 18/20 complete), so classifying
+        BEFORE the retry would regress the S33 in-run healing. The
+        final verdict is the RETRY's verdict."""
+        rc, calls, sleeps = self._run_main(
+            wdir, monkeypatch,
+            [site_boards.RateWalledError(
+                "licompany:x: LinkedIn guest feed HTTP 429"),
+             "complete"])
+        assert rc == 0 and calls == 2
+        assert sleeps == [120.0]
+        out = capsys.readouterr()
+        text = out.out + out.err
+        assert "deferred-retry pass: 1 failed" in text
+        assert "RETRY HEALED -> complete" in text
+        assert "'test_watch': 'complete'" in text
+
+    def test_source_blocked_board_retry_still_blocked(
+            self, wdir, monkeypatch, capsys):
+        # the wall holds through the retry: the final verdict is
+        # source_blocked (green-but-degraded at the run gate), NOT
+        # failed — the degrade survives its retry honestly. (Verdicts
+        # are RETURNED by run_watch — the exception never escapes it.)
+        rc, calls, sleeps = self._run_main(
+            wdir, monkeypatch, ["source_blocked", "source_blocked"])
+        assert rc == 0 and calls == 2
+        assert sleeps == [120.0]
+        out = capsys.readouterr()
+        assert "'test_watch': 'source_blocked'" in (out.out + out.err)
+
     def test_all_green_no_retry_pass(self, wdir, monkeypatch, capsys):
         rc, calls, sleeps = self._run_main(wdir, monkeypatch, ["complete"])
         assert rc == 0 and calls == 1 and sleeps == []
@@ -2795,3 +2830,149 @@ class TestS33BackfillDates:
 def cfg_config():
     from jobsearch.config import Config
     return Config()
+
+
+# ── S37-W1: the source_blocked degrade (D-S37-1 R3b/A2/A3/A4) ────────────
+class TestS37SourceBlocked:
+    """The LinkedIn 429/302-authwall wall family reaches the driver as
+    site_boards.RateWalledError and classifies the leg 'source_blocked':
+    loud-but-not-red (alerts.log + summary), state untouched (the
+    fail-safe), leg-keyed streak with cap escalation (the retirement-
+    review path), healthy-pass reset, and the run-level gate maps it to
+    complete — green-but-degraded (A3: NO WATCH_RESULT=degraded third
+    state)."""
+
+    LI_CFG = {"label": "test_watch", "board": "custom:licompany:vesync",
+              "company": "VeSync", "country": "United States",
+              "tags": ["li"], "skip_li_corroboration": True}
+
+    def _walled(self, wdir, monkeypatch, exc=None):
+        def boom(*a, **k):
+            raise exc or site_boards.RateWalledError(
+                "licompany:vesync: LinkedIn guest feed HTTP 429 — "
+                "wall/rate-limit, failing loudly")
+        monkeypatch.setattr(watch, "current_postings", boom)
+        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
+        return watch.run_watch(dict(self.LI_CFG), Config())
+
+    def test_rate_walled_classifies_source_blocked(self, wdir, monkeypatch):
+        result = self._walled(wdir, monkeypatch)
+        assert result == "source_blocked"
+        alerts = (wdir / "test_watch.alerts.log").read_text(
+            encoding="utf-8")
+        assert "SOURCE-BLOCKED" in alerts
+        assert "state untouched" in alerts
+        m = json.loads((wdir / "test_watch.legs.json").read_text())
+        assert m["source_blocked_streak"] == 1
+
+    def test_source_blocked_writes_no_state(self, wdir, monkeypatch):
+        # the fail-safe: a walled source must never gone-mark or
+        # re-stamp anything — state/newposts stay exactly as they were
+        state = wdir / "test_watch.state.jsonl"
+        state.write_text(json.dumps(
+            {"reqId": "JR1", "title": "T", "first_seen": "2026-09-01",
+             "last_seen": "2026-10-13", "last_postedOn": "",
+             "last_startDate": ""}) + "\n", encoding="utf-8")
+        result = self._walled(wdir, monkeypatch)
+        assert result == "source_blocked"
+        lines = (wdir / "test_watch.state.jsonl").read_text(
+            encoding="utf-8").strip().splitlines()
+        assert len(lines) == 1            # byte-for-byte membership kept
+        assert json.loads(lines[0])["reqId"] == "JR1"
+        assert not (wdir / "test_watch.newposts.jsonl").exists()
+
+    def test_source_blocked_streak_cap_escalates_to_failed(
+            self, wdir, monkeypatch):
+        (wdir / "test_watch.legs.json").write_text(json.dumps(
+            {"date": "2000-01-01", "legs": 99,
+             "source_blocked_streak":
+                 watch._SOURCE_BLOCKED_STREAK_CAP - 1}))
+        result = self._walled(wdir, monkeypatch)
+        assert result == "failed"         # the retirement-review path
+        alerts = (wdir / "test_watch.alerts.log").read_text(
+            encoding="utf-8")
+        assert "SOURCE-BLOCKED STREAK CAP HIT" in alerts
+
+    def test_healthy_pass_resets_source_blocked_streak(
+            self, wdir, monkeypatch):
+        (wdir / "test_watch.legs.json").write_text(json.dumps(
+            {"date": "2000-01-01", "legs": 1,
+             "source_blocked_streak": 5}))
+        current = [_post("JR1")]
+        monkeypatch.setattr(
+            watch, "current_postings",
+            lambda *a, **k: ({p["reqId"]: p for p in current},
+                             True, False))
+        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
+        monkeypatch.setattr(watch, "enrich_new",
+                            lambda rows, *a, **k: rows)
+        monkeypatch.setattr(watch, "corroborate_new",
+                            lambda *a, **k: {})
+        monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
+        assert watch.run_watch(dict(self.LI_CFG), Config()) == "complete"
+        m = json.loads((wdir / "test_watch.legs.json").read_text())
+        assert m["source_blocked_streak"] == 0
+
+    def test_source_blocked_never_fails_run_overall(self):
+        # A3 (accepted): the run-level gate maps only failed->backlog->
+        # complete — source_blocked falls through to complete = green-
+        # but-degraded; NO third gate state (replicated from main() for
+        # the pin, same as the S18/S24 precedents)
+        vals = {"a": "complete", "b": "source_blocked",
+                "c": "egress_blocked", "d": "unreachable"}
+        overall = ("failed" if "failed" in vals
+                   else "backlog" if "backlog" in vals else "complete")
+        assert overall == "complete"
+
+    def test_ladder_cut_armed_for_streaked_board(self, wdir, monkeypatch):
+        # A4: an ACTIVE source_blocked_streak arms LI_LADDER_CUT=1 for
+        # THIS watch's list fetch — and the seam is closed again right
+        # after (never leaks into a neighbor board's full ladder)
+        (wdir / "test_watch.legs.json").write_text(json.dumps(
+            {"date": "2000-01-01", "legs": 1,
+             "source_blocked_streak": 1}))
+        seen: dict = {}
+
+        def boom(*a, **k):
+            seen["cut"] = os.environ.get("LI_LADDER_CUT")
+            raise site_boards.RateWalledError("HTTP 429")
+        monkeypatch.setattr(watch, "current_postings", boom)
+        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
+        os.environ.pop("LI_LADDER_CUT", None)
+        try:
+            result = watch.run_watch(dict(self.LI_CFG), Config())
+        finally:
+            os.environ.pop("LI_LADDER_CUT", None)
+        assert result == "source_blocked"
+        assert seen["cut"] == "1"         # live during the list fetch
+        assert "LI_LADDER_CUT" not in os.environ   # closed after
+
+    def test_ladder_cut_not_armed_without_streak(self, wdir, monkeypatch):
+        seen: dict = {}
+
+        def boom(*a, **k):
+            seen["cut"] = os.environ.get("LI_LADDER_CUT")
+            raise site_boards.RateWalledError("HTTP 429")
+        monkeypatch.setattr(watch, "current_postings", boom)
+        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
+        os.environ.pop("LI_LADDER_CUT", None)
+        try:
+            watch.run_watch(dict(self.LI_CFG), Config())
+        finally:
+            os.environ.pop("LI_LADDER_CUT", None)
+        assert seen["cut"] is None        # healthy board: full ladder
+
+    def test_legs_rollover_preserves_cross_date_streaks(self, wdir):
+        # S37-W1: the date-keyed rollover used to drop every streak key
+        # except egress_streak — unreach/source_blocked streaks silently
+        # reset at midnight, making their 14-leg caps unreachable at
+        # 1 leg/day. All three keys now survive the rollover.
+        (wdir / "test_watch.legs.json").write_text(json.dumps(
+            {"date": "2000-01-01", "legs": 6, "egress_streak": 3,
+             "unreach_streak": 4, "source_blocked_streak": 5}))
+        assert watch._legs_bump("test_watch") == 1   # new date -> reset
+        m = json.loads((wdir / "test_watch.legs.json").read_text())
+        assert m["egress_streak"] == 3
+        assert m["unreach_streak"] == 4
+        assert m["source_blocked_streak"] == 5
+        assert m["legs"] == 1

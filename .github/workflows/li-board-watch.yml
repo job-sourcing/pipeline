@@ -33,7 +33,11 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60  # S37-W1 (D-S37-1 A4): 45 -> 60 — a full-wall
+                         # day burns ladder time (20 boards x the
+                         # 45/60/90s ladder + the deferred retry);
+                         # a timeout-kill writes NO verdicts/ledger,
+                         # which is the bare-timeout blind spot.
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
