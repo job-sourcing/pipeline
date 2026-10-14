@@ -46,7 +46,10 @@ Budget guards (the 2026-09-09 GHA-burn lesson — SKILL §A3):
 
 Machine-readable result (for the workflow):
   - appends WATCH_RESULT=complete|backlog|failed to $GITHUB_ENV
-    (egress_blocked watches do NOT fail the run — declared in config)
+    (degrade-family verdicts — egress_blocked / unreachable /
+    source_blocked — do NOT fail the run: streak-capped, loud in
+    alerts.log + the runs.jsonl ledger; S37-W1: source_blocked is the
+    LinkedIn 429/302-authwall class, green-but-degraded by design)
   - always exits 0 (the workflow branches on WATCH_RESULT, not rc)
 
 Seeding (B3, review addendum): --seed-from <list.jsonl> [--first-seen DATE]
@@ -948,7 +951,14 @@ def _legs_bump(label: str) -> int:
     """Date-keyed leg counter — the retrigger cap (GHA-burn lesson).
     S18 review SEV-3 1: also tracks `egress_streak` (consecutive
     egress_blocked legs, cross-DATE persistent) for the escalation
-    contract in run_watch."""
+    contract in run_watch.
+    S37-W1: the date-keyed rollover now preserves EVERY cross-date
+    streak key (egress_streak AND unreach_streak AND
+    source_blocked_streak) — it used to carry only egress_streak, so
+    the S24 unreach streak silently reset at every midnight (the
+    _UNREACH_STREAK_CAP was unreachable at 1 leg/day) and the new
+    source_blocked cap would have been too (D-S37-1 A2: the streak
+    must be leg-keyed and legs≈days on the daily lanes)."""
     meta = WATCH_DIR / f"{label}.legs.json"
     today = date.today().isoformat()
     try:
@@ -956,7 +966,10 @@ def _legs_bump(label: str) -> int:
     except (json.JSONDecodeError, OSError):
         m = {}
     if m.get("date") != today:
-        m = {"date": today, "legs": 0, "egress_streak": m.get("egress_streak", 0)}
+        m = {"date": today, "legs": 0,
+             "egress_streak": m.get("egress_streak", 0),
+             "unreach_streak": m.get("unreach_streak", 0),
+             "source_blocked_streak": m.get("source_blocked_streak", 0)}
     m["legs"] = int(m.get("legs", 0)) + 1
     _atomic_write(meta, json.dumps(m))
     return m["legs"]
@@ -964,6 +977,7 @@ def _legs_bump(label: str) -> int:
 
 _EGRESS_STREAK_CAP = 14      # ~2 weeks of daily blocked legs -> failed
 _UNREACH_STREAK_CAP = 14     # S24: undeclared network-death -> failed
+_SOURCE_BLOCKED_STREAK_CAP = _EGRESS_STREAK_CAP  # S37-W1 (A3): reuse 14
 
 
 def _streak_bump(label: str, key: str) -> int:
@@ -988,6 +1002,35 @@ def _streak_reset(label: str, key: str) -> None:
     if m.get(key):
         m[key] = 0
         _atomic_write(meta, json.dumps(m))
+
+
+def _streak_value(label: str, key: str) -> int:
+    """S37-W1 (A4): read-only streak peek — run_watch consults an
+    ACTIVE source_blocked_streak BEFORE the list fetch to arm the
+    ladder-cut (no bump, no file write; a missing/corrupt meta is 0)."""
+    meta = WATCH_DIR / f"{label}.legs.json"
+    try:
+        m = json.loads(meta.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return 0
+    try:
+        return int(m.get(key, 0) or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def _arm_li_ladder_cut(label: str) -> None:
+    """S37-W1 (D-S37-1 A4): arm the LI ladder-cut for THIS watch's list
+    fetch — a board with an ACTIVE source_blocked_streak (>=1) is
+    already known walled, so LinkedInCompanyAdapter probes with the
+    single 45s rung instead of the full 45/60/90 ladder (1/4 the
+    full-wall cost; auto-recovery detection preserved). Explicit
+    env-var seam: the adapter has no streak knowledge — the driver
+    owns the legs meta. The caller MUST clear the seam after the list
+    fetch (try/finally) so it is live ONLY for this watch's list
+    phase (never leaks into a neighbor board's full ladder)."""
+    if _streak_value(label, "source_blocked_streak") >= 1:
+        os.environ["LI_LADDER_CUT"] = "1"
 
 
 def _egress_streak_bump(label: str) -> int:
@@ -1132,7 +1175,15 @@ def run_watch(w: dict, cfg: Config) -> str:
     network-class failure on this egress is loud-but-not-failed —
     state untouched, auto-recovers) | 'unreachable' (S24: an UNDECLARED
     board whose LIST fetch hit a network-class transient — same
-    loud-but-not-failed contract, streak-based escalation)."""
+    loud-but-not-failed contract, streak-based escalation) |
+    'source_blocked' (S37-W1 / D-S37-1 R3b: the SOURCE is rate-walled
+    — LinkedInCompanyAdapter raised RateWalledError (429 / 302-
+    authwall) after its ladder. Same degrade contract: alerts.log +
+    streak-capped escalation (a persistently walled source escalates
+    to failed = the retirement-review path), state untouched,
+    auto-recovers when the egress re-serves; the run-level gate maps
+    it to complete — green-but-degraded, the loudness lives in the
+    alerts.log + summary + ledger, NOT a third gate state (A3))."""
     label = w["label"]
     # S12 multi-company: per-company LI matching knowledge from the watch
     # config (card company variants + partitioned-index slice geography).
@@ -1162,10 +1213,18 @@ def run_watch(w: dict, cfg: Config) -> str:
             lf.write(f"{line}\n({_now_iso()})\n\n")
 
     try:
-        current, list_complete, country_client = current_postings(
-            w["board"], w.get("country", ""), w.get("time_type", ""), cfg,
-            include_remote=bool(w.get("include_remote")),
-            geo_scope=str(w.get("geo_scope", "") or ""))
+        # S37-W1 (A4): arm the ladder-cut seam for THIS watch's list
+        # fetch (a known-walled board probes with the single 45s rung)
+        # and close it in the finally — live ONLY during the fetch.
+        _arm_li_ladder_cut(label)
+        try:
+            current, list_complete, country_client = current_postings(
+                w["board"], w.get("country", ""), w.get("time_type", ""),
+                cfg,
+                include_remote=bool(w.get("include_remote")),
+                geo_scope=str(w.get("geo_scope", "") or ""))
+        finally:
+            os.environ.pop("LI_LADDER_CUT", None)
     except Exception as exc:
         if _egress_blocked(w, exc):
             streak = _egress_streak_bump(label)
@@ -1214,10 +1273,40 @@ def run_watch(w: dict, cfg: Config) -> str:
                     f"and the adapter transport")
                 return "failed"
             return "unreachable"
+        if isinstance(exc, site_boards.RateWalledError):
+            # S37-W1 (D-S37-1 R3b / review P1-1, A3): the SOURCE is
+            # rate-walled (LinkedIn guest 429 / 302-authwall after the
+            # ladder) — a structurally-blocked source, not a broken
+            # watch. Loud-but-not-red: alerts.log + job summary, state
+            # untouched (the fail-safe), streak-capped escalation (the
+            # cap reuses the egress cap: 14 consecutive blocked legs ≈
+            # two weeks of daily legs — the retirement-review path).
+            # Intermittent walls self-heal: the deferred-retry pass
+            # re-runs source_blocked boards (A2), and a healthy pass
+            # resets the streak below.
+            streak = _streak_bump(label, "source_blocked_streak")
+            note = (f"LinkedIn guest feed walled ({exc}) — "
+                    f"SOURCE-BLOCKED, state untouched; streak "
+                    f"{streak}/{_SOURCE_BLOCKED_STREAK_CAP}")
+            print(f"[watch:{label}] {note}", file=sys.stderr, flush=True)
+            with open(WATCH_DIR / f"{label}.alerts.log", "a",
+                      encoding="utf-8") as lf:
+                lf.write(f"board-watch {label} SOURCE-BLOCKED: {note}"
+                         f"\n({_now_iso()})\n\n")
+            if streak >= _SOURCE_BLOCKED_STREAK_CAP:
+                _fail_summary(
+                    f"SOURCE-BLOCKED STREAK CAP HIT ({streak} legs) — "
+                    f"escalating to failed: the source has been walled "
+                    f"for {streak} consecutive legs; re-probe the egress "
+                    f"(url-egress-probe) and retire or re-declare the "
+                    f"watch if the wall is permanent")
+                return "failed"
+            return "source_blocked"
         _fail_summary(f"list fetch crashed ({type(exc).__name__}: {exc})")
         return "failed"
     _egress_streak_reset(label)   # the block lifted — streak cleared
     _streak_reset(label, "unreach_streak")  # S24: net healthy again
+    _streak_reset(label, "source_blocked_streak")  # S37-W1: wall lifted
     if not current and not list_complete:
         _fail_summary("LIST FAILED — nothing to diff; state untouched "
                       "(fail-safe)")
@@ -1877,10 +1966,18 @@ def main() -> int:
     # + stale boards. WATCH_RETRY_COOLDOWN_S=0 disables. Contract-class
     # failures re-fail cheaply (one page-0 request) — kept unfiltered
     # by design (simple > clever; the loud failure still wins).
+    # S37-W1 (D-S37-1 A2 — load-bearing): source_blocked boards are
+    # retried TOO — the wall is INTERMITTENT-PER-BOARD (the Oct-14 li
+    # ledger: 18/20 complete, 2 failed), so the in-run retry is the
+    # S33 healing that must survive the new classification. Classify
+    # AFTER the retry, never before: the final verdict below is the
+    # RETRY's verdict (a healed board lands complete + its healthy
+    # pass resets the source_blocked streak).
     if not args.seed_from:
         retry_cd = _float_env("WATCH_RETRY_COOLDOWN_S", 120.0)
         failed = [w for w in watches
-                  if results.get(w.get("label")) == "failed"]
+                  if results.get(w.get("label")) in ("failed",
+                                                     "source_blocked")]
         if failed and retry_cd > 0:
             print(f"[watch] deferred-retry pass: {len(failed)} failed "
                   f"watch(es) — {retry_cd:.0f}s cool-down, one retry "

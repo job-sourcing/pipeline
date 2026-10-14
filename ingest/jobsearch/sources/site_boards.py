@@ -11824,6 +11824,20 @@ class CWSJobsAdapter:
 
 # ── S32: LinkedIn guest company feeds (custom:licompany:{key}) ──────────
 
+class RateWalledError(RuntimeError):
+    """S37-W1 (D-S37-1 R3b / review P1-1): the EGRESS-WALL family —
+    LinkedIn guest feed HTTP 429 (rate-limit) or a 301/302 redirect
+    verdict that carries a Location header (the authwall class — the
+    guest session is redirected away from the feed). Raised by
+    LinkedInCompanyAdapter._walk_entity after the 429 ladder;
+    scripts/gha_board_watch.py catches it (AFTER _net_transient,
+    BEFORE the terminal fail) and classifies the watch leg as
+    'source_blocked' — loud-but-not-red: alerts.log + streak, state
+    untouched, streak-capped escalation, auto-recovers when the
+    egress re-serves. 403/5xx stay PLAIN RuntimeError: those are
+    server-side VERDICTS, not egress walls."""
+
+
 _LI_GUEST_SEARCH = ("https://www.linkedin.com/jobs-guest/jobs/api/"
                     "seeMoreJobPostings/search")
 _LI_STUB_MAX_B = 100          # chromeless end-of-serving stub bound
@@ -11857,7 +11871,10 @@ class LinkedInCompanyAdapter:
         (retryable, never terminal — the S9/A8 doctrine);
       - >0 cards + zero li_variant matches = ValueError (wrong or
         renamed entity — the Onyx-RIP/LeSportsac card shape);
-      - HTTP != 200 raises (429/403/302-authwall/5xx fail loudly);
+      - HTTP != 200 raises (S37-W1: the wall family {429,
+        302-with-Location authwall} raises the TYPED RateWalledError →
+        the driver's source_blocked degrade; 403/5xx stay plain loud
+        RuntimeError — server verdicts);
       - meta.complete False when ANY entity walk was blocked.
     """
 
@@ -11949,6 +11966,19 @@ class LinkedInCompanyAdapter:
                 "f_TPR": "r2592000", "sortBy": "DD", "start": str(offset)}
             ladder = list(_LI_429_LADDER) if offset == 0 else \
                 list(_LI_429_LADDER[:1])
+            # S37-W1 (D-S37-1 A4): the ladder-cut — the driver arms
+            # LI_LADDER_CUT=1 for boards with an ACTIVE
+            # source_blocked_streak (already known walled): probe with
+            # the SINGLE 45s rung instead of the full 45/60/90 ladder —
+            # 1/4 the full-wall cost while preserving auto-recovery
+            # detection (a healthy 200 ends the walk; the driver's
+            # healthy pass then resets the streak and the NEXT leg
+            # re-arms the full ladder). Explicit env-var seam: this
+            # adapter has no streak knowledge; the driver owns the
+            # legs meta and sets/clears it per-watch around the list
+            # fetch (gha_board_watch.run_watch).
+            if os.environ.get("LI_LADDER_CUT") == "1":
+                ladder = ladder[:1]
             code, body, loc_hdr = self._get(_LI_GUEST_SEARCH, params)
             for sleep_s in ladder:
                 if code != 429:
@@ -11959,7 +11989,17 @@ class LinkedInCompanyAdapter:
             if code != 200:
                 hint = f" (302 -> {loc_hdr[:60]})" if code in (301, 302) \
                     else ""
-                raise RuntimeError(
+                # S37-W1 (D-S37-1 R3b / A3): the WALL family {429,
+                # 302-authwall} raises the TYPED RateWalledError (the
+                # driver's source_blocked class); 403/5xx — and a
+                # redirect with NO Location header (garden-variety
+                # server oddity, not the authwall verdict) — stay
+                # plain loud RuntimeError: server-side verdicts, not
+                # egress walls.
+                exc_type = RateWalledError if (
+                    code == 429 or (code in (301, 302) and loc_hdr)) \
+                    else RuntimeError
+                raise exc_type(
                     f"licompany:{self.key}: LinkedIn guest feed HTTP "
                     f"{code}{hint} — wall/rate-limit, failing loudly")
             cards = self._parse_cards(body)
