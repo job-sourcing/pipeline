@@ -41,7 +41,7 @@ jobs:
           fi
       - name: Run GJ-dormant watch (gj_dormant tag only)
         env:
-          WATCH_ONLY_TAGS: gj_dormant
+          WATCH_ONLY_TAGS: gj_dormant,gj_monthly,gj_monthly,gj_monthly
           WATCH_DETAILS_MAX: '30'
           WATCH_BUDGET_SECONDS: '300'
         run: python3 scripts/gha_board_watch.py

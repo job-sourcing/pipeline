@@ -3116,6 +3116,666 @@
     "gj_dormant"
    ],
    "skip_li_corroboration": true
+  },
+  {
+   "label": "affine_ra_us_fulltime",
+   "board": "custom:rasweep:affine",
+   "company": "AFFiNE",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "anycubic_ra_us_fulltime",
+   "board": "custom:rasweep:anycubic",
+   "company": "Anycubic",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "aputure_ra_us_fulltime",
+   "board": "custom:rasweep:aputure",
+   "company": "Aputure",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "aqara_ra_us_fulltime",
+   "board": "custom:rasweep:aqara",
+   "company": "Aqara",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "baseus_ra_us_fulltime",
+   "board": "custom:rasweep:baseus",
+   "company": "Baseus",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "bentoml_ra_us_fulltime",
+   "board": "custom:rasweep:bentoml",
+   "company": "BentoML",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "bluetti_ra_us_fulltime",
+   "board": "custom:rasweep:bluetti",
+   "company": "Bluetti",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "bougerv_ra_us_fulltime",
+   "board": "custom:rasweep:bougerv",
+   "company": "BougeRV",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "centurygames_ra_us_fulltime",
+   "board": "custom:rasweep:centurygames",
+   "company": "Century Games",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "creality_ra_us_fulltime",
+   "board": "custom:rasweep:creality",
+   "company": "Creality",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "databend_ra_us_fulltime",
+   "board": "custom:rasweep:databend",
+   "company": "Databend",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "dreo_ra_us_fulltime",
+   "board": "custom:rasweep:dreo",
+   "company": "Dreo",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "elegoo_ra_us_fulltime",
+   "board": "custom:rasweep:elegoo",
+   "company": "Elegoo",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "eveenergy_ra_us_fulltime",
+   "board": "custom:rasweep:eveenergy",
+   "company": "EVE Energy",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "firework_ra_us_fulltime",
+   "board": "custom:rasweep:firework",
+   "company": "Firework",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "fotor_ra_us_fulltime",
+   "board": "custom:rasweep:fotor",
+   "company": "Fotor",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "govee_ra_us_fulltime",
+   "board": "custom:rasweep:govee",
+   "company": "Govee",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "gptzero_ra_us_fulltime",
+   "board": "custom:rasweep:gptzero",
+   "company": "GPTZero",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "grubmarket_ra_us_fulltime",
+   "board": "custom:rasweep:grubmarket",
+   "company": "GrubMarket",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "heygen_ra_us_fulltime",
+   "board": "custom:rasweep:heygen",
+   "company": "HeyGen",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "heytea_ra_us_fulltime",
+   "board": "custom:rasweep:heytea",
+   "company": "HeyTea",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "hollyland_ra_us_fulltime",
+   "board": "custom:rasweep:hollyland",
+   "company": "Hollyland",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "jackery_ra_us_fulltime",
+   "board": "custom:rasweep:jackery",
+   "company": "Jackery",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "jinkosolar_ra_us_fulltime",
+   "board": "custom:rasweep:jinkosolar",
+   "company": "JinkoSolar",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "lianlian_ra_us_fulltime",
+   "board": "custom:rasweep:lianlian",
+   "company": "LianLian Global",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "llamaindex_ra_us_fulltime",
+   "board": "custom:rasweep:llamaindex",
+   "company": "LlamaIndex",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "merach_ra_us_fulltime",
+   "board": "custom:rasweep:merach",
+   "company": "Merach",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "mixue_ra_us_fulltime",
+   "board": "custom:rasweep:mixue",
+   "company": "Mixue Group",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "moondrop_ra_us_fulltime",
+   "board": "custom:rasweep:moondrop",
+   "company": "Moondrop",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "notta_ra_us_fulltime",
+   "board": "custom:rasweep:notta",
+   "company": "Notta",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "olight_ra_us_fulltime",
+   "board": "custom:rasweep:olight",
+   "company": "Olight",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "opusclip_ra_us_fulltime",
+   "board": "custom:rasweep:opusclip",
+   "company": "OpusClip",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "otterai_ra_us_fulltime",
+   "board": "custom:rasweep:otterai",
+   "company": "Otter.ai",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "petlibro_ra_us_fulltime",
+   "board": "custom:rasweep:petlibro",
+   "company": "Petlibro",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "pixverse_ra_us_fulltime",
+   "board": "custom:rasweep:pixverse",
+   "company": "PixVerse",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "polloai_ra_us_fulltime",
+   "board": "custom:rasweep:polloai",
+   "company": "Pollo AI",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "renogy_ra_us_fulltime",
+   "board": "custom:rasweep:renogy",
+   "company": "Renogy",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "renpho_ra_us_fulltime",
+   "board": "custom:rasweep:renpho",
+   "company": "Renpho",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "sengled_ra_us_fulltime",
+   "board": "custom:rasweep:sengled",
+   "company": "Sengled",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "sharge_ra_us_fulltime",
+   "board": "custom:rasweep:sharge",
+   "company": "Sharge",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "shokz_ra_us_fulltime",
+   "board": "custom:rasweep:shokz",
+   "company": "Shokz",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "skyworth_ra_us_fulltime",
+   "board": "custom:rasweep:skyworth",
+   "company": "Skyworth",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "switchbot_ra_us_fulltime",
+   "board": "custom:rasweep:switchbot",
+   "company": "SwitchBot",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "tdengine_ra_us_fulltime",
+   "board": "custom:rasweep:tdengine",
+   "company": "TDengine",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "temu_ra_us_fulltime",
+   "board": "custom:rasweep:temu",
+   "company": "Temu",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "tigergraph_ra_us_fulltime",
+   "board": "custom:rasweep:tigergraph",
+   "company": "TigerGraph",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "timekettle_ra_us_fulltime",
+   "board": "custom:rasweep:timekettle",
+   "company": "Timekettle",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "torras_ra_us_fulltime",
+   "board": "custom:rasweep:torras",
+   "company": "Torras",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "uniuni_ra_us_fulltime",
+   "board": "custom:rasweep:uniuni",
+   "company": "UniUni",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "vava_ra_us_fulltime",
+   "board": "custom:rasweep:vava",
+   "company": "VAVA (Sunvalley Group)",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "vesync_ra_us_fulltime",
+   "board": "custom:rasweep:vesync",
+   "company": "VeSync",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "vidnoz_ra_us_fulltime",
+   "board": "custom:rasweep:vidnoz",
+   "company": "Vidnoz",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "wyze_ra_us_fulltime",
+   "board": "custom:rasweep:wyze",
+   "company": "Wyze",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "xgimi_ra_us_fulltime",
+   "board": "custom:rasweep:xgimi",
+   "company": "XGIMI",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "xreal_ra_us_fulltime",
+   "board": "custom:rasweep:xreal",
+   "company": "XREAL",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "xtransfer_ra_us_fulltime",
+   "board": "custom:rasweep:xtransfer",
+   "company": "XTransfer",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "zendure_ra_us_fulltime",
+   "board": "custom:rasweep:zendure",
+   "company": "Zendure",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "zepp_ra_us_fulltime",
+   "board": "custom:rasweep:zepp",
+   "company": "Zepp Health",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "zhiyun_ra_us_fulltime",
+   "board": "custom:rasweep:zhiyun",
+   "company": "Zhiyun",
+   "country": "United States",
+   "tags": [
+    "ra"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "centurygames_gj_us_fulltime",
+   "board": "custom:gjobs:centurygames",
+   "company": "Century Games",
+   "country": "United States",
+   "tags": [
+    "gj_monthly"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "skyworth_gj_us_fulltime",
+   "board": "custom:gjobs:skyworth",
+   "company": "Skyworth",
+   "country": "United States",
+   "tags": [
+    "gj_monthly"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "baseus_gj_us_fulltime",
+   "board": "custom:gjobs:baseus",
+   "company": "Baseus",
+   "country": "United States",
+   "tags": [
+    "gj_quarterly"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "lianlian_gj_us_fulltime",
+   "board": "custom:gjobs:lianlian",
+   "company": "LianLian Global",
+   "country": "United States",
+   "tags": [
+    "gj_quarterly"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "notta_gj_us_fulltime",
+   "board": "custom:gjobs:notta",
+   "company": "Notta",
+   "country": "United States",
+   "tags": [
+    "gj_quarterly"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "timekettle_gj_us_fulltime",
+   "board": "custom:gjobs:timekettle",
+   "company": "Timekettle",
+   "country": "United States",
+   "tags": [
+    "gj_quarterly"
+   ],
+   "skip_li_corroboration": true
+  },
+  {
+   "label": "xgimi_gj_us_fulltime",
+   "board": "custom:gjobs:xgimi",
+   "company": "XGIMI",
+   "country": "United States",
+   "tags": [
+    "gj_quarterly"
+   ],
+   "skip_li_corroboration": true
   }
  ]
 }

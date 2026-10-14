@@ -1012,9 +1012,9 @@ def _egress_streak_reset(label: str) -> None:
         _atomic_write(meta, json.dumps(m))
 
 
-_CONTRACT_KINDS = ("licompany", "gjobs")
+_CONTRACT_KINDS = ("licompany", "gjobs", "rasweep")
 _CONTRACT_BOARD_RE = re.compile(
-    r"^custom:(licompany|gjobs):([a-z0-9_]+)$")
+    r"^custom:(licompany|gjobs|rasweep):([a-z0-9_]+)$")
 
 
 def _watch_owner(w: dict) -> str:

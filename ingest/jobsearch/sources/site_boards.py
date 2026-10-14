@@ -12402,6 +12402,9 @@ class GoogleJobsAdapter:
         variants = {v.lower() for v in self.c["g_variants"]}
         cards: list[dict] = []
         seen_keys: set = set()
+        seen_posting: set = set()   # (title, company, via) — S35: the
+                                    # mirror-dupe collapse (one posting
+                                    # served at 2 loc variants)
         n = len(anchors)
         noise = 0
         for i, (s, e, g) in enumerate(anchors):
@@ -12409,6 +12412,11 @@ class GoogleJobsAdapter:
             if k in seen_keys:
                 continue                    # same-card double print
             seen_keys.add(k)
+            pk = (g["title"].strip().lower(),
+                  g["company"].strip().lower(), g["via"].strip().lower())
+            if pk in seen_posting:
+                continue                    # mirrored posting (S35)
+            seen_posting.add(pk)
             # window: this anchor → the NEXT DIFFERENT-card anchor
             # (skips the same card's compact double print; the JD
             # section sits AFTER it — S33 probe-position evidence)
@@ -12583,7 +12591,288 @@ GJOBS_CONTRACTS: dict[str, dict] = {
         "company": "VAVA",
         "query": "VAVA jobs USA",
         "g_variants": ["vava"]},
+    # ── S35 expansion (2026-10-14 gap probe, 33 li-dormant companies,
+    #    audit/s35_aggregator/gj_gap_probe.md) ──────────────────────────
+    # monthly REAL tier (variant-matched cards live-probed; entities
+    # verified — torras EXCLUDED: "Oliva Torras USA" is a different
+    # entity, the railway-components firm, not the TORRAS brand):
+    "centurygames": {
+        "company": "Century Games",
+        "query": "Century Games jobs USA",
+        # probe: "Century Games" x2 (one posting mirrored Anywhere +
+        # Remote,OR — the (title,company,via) collapse dedups it);
+        # "Century Gaming"/"Century Gaming, Inc." = DIFFERENT company
+        "g_variants": ["century games"]},
+    "skyworth": {
+        "company": "Skyworth",
+        "query": "Skyworth jobs USA",
+        # probe: 5 cards, Skyworth USA (Cypress CA = US HQ)
+        "g_variants": ["skyworth", "skyworth usa",
+                       "skyworth usa corporation"]},
+    # quarterly NOISE-WALL tier (cards exist, none match — the honest
+    # 0->k flip re-probe class, 1 credit/company/quarter):
+    "baseus": {
+        "company": "Baseus",
+        "query": "Baseus jobs USA",
+        "g_variants": ["baseus"]},
+    "lianlian": {
+        "company": "LianLian Global",
+        "query": "LianLian Global jobs USA",
+        "g_variants": ["lianlian global", "lianlian"]},
+    "notta": {
+        "company": "Notta",
+        "query": "Notta jobs USA",
+        "g_variants": ["notta"]},
+    "timekettle": {
+        "company": "Timekettle",
+        "query": "Timekettle jobs USA",
+        "g_variants": ["timekettle"]},
+    "xgimi": {
+        "company": "XGIMI",
+        "query": "XGIMI jobs USA",
+        "g_variants": ["xgimi"]},
 }
+
+
+# ── S35: remote-API aggregator sweep (custom:rasweep:{key}) ───────────
+# D-S35-3 layer L2 (the sibling's remote-aggregator strategy applied):
+# remoteok / jobicy / remotive / arbeitnow — free public APIs, ZERO
+# firecrawl credits, remote-focused (the mission's own class). 4 HTTP
+# requests TOTAL per run (the shared _RA_CACHE — every company filters
+# the SAME fetches; the _GJ_SCRAPE_CACHE pattern). Measured yield
+# 2026-10-14 (audit/s35_aggregator/probe_results.json, exact-variant
+# matcher): ZERO US-geo rows for roster companies — the layer is free
+# CLOSURE coverage + future-posting catch (the honest-zero doctrine,
+# re-probed weekly for 4 requests). Contracts DERIVED from
+# LICOMPANY_CONTRACTS (same keys = the same-entity owner rule; the
+# li_variants ARE the company's aggregator name-strings).
+
+_RA_SOURCES = {
+    "remoteok": "https://remoteok.com/api",
+    "jobicy": "https://jobicy.com/api/v2/remote-jobs?count=200",
+    "remotive": "https://remotive.com/api/remote-jobs?limit=1000",
+    "arbeitnow": "https://www.arbeitnow.com/api/job-board-api",
+}
+_RA_TTL = 21600.0                  # shared-run cache (like _GJ_TTL)
+_RA_CACHE: dict[str, tuple[float, list[dict]]] = {}
+_RA_DESC_MAX = 12000
+
+
+def _ra_norm(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def _ra_us_remote(loc: str) -> bool:
+    """The mission filter: US-geo or remote. Non-US-geo rows are noise
+    for the US-remote view (the A-prime rule at ingest time)."""
+    l = (loc or "").lower()
+    if not l.strip():
+        return True                 # no signal — keep (honest)
+    if "remote" in l:
+        return True
+    toks = set(re.split(r"[^a-z.]+", l))
+    if {"us", "usa", "u.s.", "united", "states", "america"} & toks:
+        return True
+    from .workday import _US_STATE_TOKENS
+    for t in re.split(r"[^A-Za-z]+", l):
+        if (len(t) == 2 and t.upper() != t and t in _US_STATE_TOKENS) \
+                or (len(t) == 2 and t.isupper()
+                    and t.lower() in _US_STATE_TOKENS) \
+                or t.lower() in _US_STATE_TOKENS:
+            return True
+    return False
+
+
+class RemoteAggSweepAdapter:
+    """custom:rasweep:{key} — the free remote-API aggregator sweep.
+
+    Honesty doctrine: per-SOURCE fail-soft (the sibling's F-contract:
+    rows are NEVER discarded on partial failure — a dead API is
+    skipped, reported; ALL sources dead raises fail-loudly, state
+    untouched). Matching is EXACT normalized equality (the gjobs
+    doctrine — "Engine" must never match "TDengine", the round-1
+    review's P0-5). US/remote rows only (client-side country filter);
+    rid = sha1(title|company|loc|source).
+    """
+
+    KIND = "rasweep"
+
+    def __init__(self, org: str, cfg: Config):
+        base = LICOMPANY_CONTRACTS.get(org)
+        if base is None:
+            raise ValueError(
+                f"rasweep: unknown contract {org!r} (derived from "
+                f"LICOMPANY_CONTRACTS; known: "
+                f"{sorted(LICOMPANY_CONTRACTS)})")
+        self.key = org
+        self.company = base["company"]
+        self.variants = {v.lower() for v in
+                         [base["company"], *base.get("li_variants", [])]}
+        self.ats = "rasweep"
+        self.cfg = cfg
+
+    def _fetch_all(self) -> list[dict]:
+        ck = "rasweep:sources"
+        hit = _RA_CACHE.get(ck)
+        if hit and time.monotonic() - hit[0] < _RA_TTL:
+            return hit[1]
+        rows: list[dict] = []
+        dead: list[str] = []
+        for name, url in _RA_SOURCES.items():
+            try:
+                req = urllib.request.Request(url, headers={
+                    "User-Agent": USER_AGENT,
+                    "Accept": "application/json"})
+                with urllib.request.urlopen(
+                        req, timeout=45) as r:
+                    d = json.loads(r.read().decode("utf-8", "replace"))
+            except Exception as exc:
+                print(f"[rasweep] source {name} FAILED "
+                      f"({type(exc).__name__}: {exc}) — skipped",
+                      file=sys.stderr, flush=True)
+                dead.append(name)
+                continue
+            if name == "remoteok":
+                src = [x for x in (d if isinstance(d, list) else [])
+                       if isinstance(x, dict) and x.get("company")]
+                for x in src:
+                    rows.append({"source": name,
+                                 "company": str(x.get("company") or ""),
+                                 "title": str(x.get("position") or ""),
+                                 "loc": str(x.get("location") or ""),
+                                 "url": str(x.get("url") or ""),
+                                 "type": str(x.get("job_type") or ""),
+                                 "posted": str(x.get("date") or "")[:10],
+                                 "desc": str(x.get("description") or "")})
+            elif name == "jobicy":
+                if not isinstance(d, dict):
+                    continue
+                for x in (d.get("jobs") or []):
+                    rows.append({"source": name,
+                                 "company": str(x.get("companyName") or ""),
+                                 "title": str(x.get("jobTitle") or ""),
+                                 "loc": str(x.get("jobGeo") or ""),
+                                 "url": str(x.get("url") or ""),
+                                 "type": str(x.get("jobType") or ""),
+                                 "posted": str(x.get("pubDate") or "")[:10],
+                                 "desc": str(x.get("jobDescription") or "")})
+            elif name == "remotive":
+                if not isinstance(d, dict):
+                    continue
+                for x in (d.get("jobs") or []):
+                    rows.append({"source": name,
+                                 "company": str(x.get("company") or ""),
+                                 "title": str(x.get("title") or ""),
+                                 "loc": str(
+                                     x.get("candidate_required_location")
+                                     or ""),
+                                 "url": str(x.get("url") or ""),
+                                 "type": str(x.get("job_type") or ""),
+                                 "posted": str(
+                                     x.get("publication_date") or "")[:10],
+                                 "desc": str(x.get("description") or "")})
+            elif name == "arbeitnow":
+                if not isinstance(d, dict):
+                    continue
+                for x in (d.get("data") or []):
+                    rows.append({"source": name,
+                                 "company": str(x.get("company") or ""),
+                                 "title": str(x.get("title") or ""),
+                                 "loc": str(x.get("location") or ""),
+                                 "url": str(x.get("url") or ""),
+                                 "type": str(x.get("job_type") or ""),
+                                 "posted": str(
+                                     x.get("created_at") or "")[:10],
+                                 "desc": str(x.get("description") or "")})
+        if dead and not rows:
+            raise RuntimeError(
+                f"rasweep:{self.key}: ALL aggregator sources dead "
+                f"({dead}) — failing loudly, state untouched")
+        _RA_CACHE[ck] = (time.monotonic(), rows)
+        return rows
+
+    def list_board(self, *, country: Optional[str] = None,
+                   time_type: Optional[str] = None,
+                   progress_label: str = "list",
+                   include_remote: bool = False,
+                   geo_scope: Optional[str] = None,
+                   ) -> tuple[dict[str, dict], dict]:
+        all_rows = self._fetch_all()
+        rows: dict[str, dict] = {}
+        noise = 0
+        for x in all_rows:
+            if _ra_norm(x["company"]) not in \
+                    {_ra_norm(v) for v in self.variants}:
+                continue
+            if not _ra_us_remote(x["loc"]):
+                noise += 1
+                continue
+            rid = hashlib.sha1(
+                f"{x['title']}|{x['company']}|{x['loc']}|"
+                f"{x['source']}".encode("utf-8")).hexdigest()[:16]
+            label, iso = _posted_label(x["posted"] or None)
+            rows[rid] = {
+                "reqId": rid,
+                "title": x["title"],
+                "company": self.company,
+                "url": x["url"],
+                "externalPath": f"/{rid}",
+                "locationsText": x["loc"],
+                "postedOn": label,
+                "timeType": "Full time" if "full" in x["type"].lower()
+                else (x["type"] or ""),
+                "bulletFields": [rid],
+                "ats": self.ats,
+                "departments": [],
+                "countries": [],
+                "remoteType": "remote" if "remote" in x["loc"].lower()
+                else "",
+                "_ra_row": x,
+            }
+        print(f"[{progress_label}] rasweep:{self.key}: {len(rows)} rows "
+              f"(exact-variant; {noise} non-US-geo dropped; sources "
+              f"{len(_RA_SOURCES)})", file=sys.stderr, flush=True)
+        meta = {
+            "complete": True, "total": len(rows), "pages": 1,
+            "country_client": True,     # US/remote filter applied here
+            "client_filtered": noise, "kept_remote": 0,
+            "geo_scope": "", "ats": self.ats,
+        }
+        return rows, meta
+
+    def detail_payload(self, external_path: str,
+                       country: Optional[str] = None,
+                       time_type: Optional[str] = None
+                       ) -> Optional[dict]:
+        rid = str(external_path or "").strip("/").split("?")[0]
+        rows, _ = self.list_board()
+        j = next((r for k, r in rows.items() if k == rid), None)
+        if j is None:
+            return None
+        x = j.get("_ra_row") or {}
+        desc = re.sub(r"<[^>]+>", " ", x.get("desc") or "")
+        desc = re.sub(r"\s+", " ", desc).strip()
+        return {
+            "jobPostingInfo": {
+                "title": j["title"],
+                "location": j["locationsText"] or "See posting",
+                "additionalLocations": [],
+                "jobDescription": desc[:_RA_DESC_MAX],
+                "timeType": j["timeType"],
+                "startDate": "",
+                "externalUrl": j["url"],
+                "jobReqId": rid,
+                "postedOn": j["postedOn"],
+                "country": None,
+            },
+            "hiringOrganization": {"name": self.company},
+            "similarJobs": [],
+            "firstPublishedIso": x.get("posted") or "",
+            "workMode": "Remote" if "remote" in (
+                x.get("loc") or "").lower() else "",
+            "numApplicants": "",
+            "closed": False,
+        }
 
 
 _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
@@ -12634,4 +12923,5 @@ _ADAPTERS = {"greenhouse": GreenhouseAdapter, "ashby": AshbyAdapter,
              "tribepad": TribepadAdapter, "cwsjobs": CWSJobsAdapter,
              "licompany": LinkedInCompanyAdapter,
              # S33 wave (contracts + probe evidence: audit/s33_gj/)
-             "gjobs": GoogleJobsAdapter}
+             "gjobs": GoogleJobsAdapter,
+             "rasweep": RemoteAggSweepAdapter}

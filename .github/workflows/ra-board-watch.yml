@@ -1,0 +1,85 @@
+name: RA Board Watch (weekly)
+
+# S35 (D-S35-3) — the remote-API aggregator sweep lane
+# (custom:rasweep:*, tags=["ra"]): remoteok / jobicy / remotive /
+# arbeitnow — FREE public APIs, zero firecrawl credits. 4 HTTP
+# requests per RUN total (shared fetch cache; every company filters
+# the same responses). Measured yield for the roster: zero US-geo
+# rows today (audit/s35_aggregator/probe_results.json) — the layer
+# is free closure coverage + future-posting catch, re-probed weekly
+# (the honest-zero doctrine). Runtime ~2 min on the public runner.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 11 * * 3"   # Wed 11:23Z (off-hour; after the gj lane)
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: ra-board-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pipeline (no dev extras)
+        run: pip install -e ingest
+
+      - name: Run RA watch (ra tag only)
+        env:
+          WATCH_ONLY_TAGS: ra
+          WATCH_LEGS_MAX_PER_DAY: "6"
+        run: |
+          set -e
+          python3 scripts/gha_board_watch.py
+          if [ "${WATCH_RESULT}" = "failed" ]; then
+            echo "::error::ra-board-watch FAILED"
+            exit 1
+          fi
+
+      - name: Checkpoint state to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/watch_state
+          FILES=$(git status --porcelain ingest/data/board_watch/ \
+            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl|runs\.jsonl)$' || true)
+          echo "checkpointing: ${FILES:-<none>}"
+          for f in $FILES; do
+            mkdir -p "/tmp/watch_state/$(dirname $f)"
+            cp "$f" "/tmp/watch_state/$f" 2>/dev/null || true
+          done
+          git config user.name "ra-watch-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            if ls /tmp/watch_state/ingest/data/board_watch/ >/dev/null 2>&1; then
+              cp -r /tmp/watch_state/ingest/data/board_watch/. ingest/data/board_watch/
+            fi
+            git add ingest/data/board_watch
+            if git diff --cached --quiet; then
+              push_ok=1; break
+            fi
+            git commit -m "ra-board-watch checkpoint [skip ci]"
+            if git push; then push_ok=1; break; fi
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::ra checkpoint push failed after 3 attempts"
+            exit 1
+          fi

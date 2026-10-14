@@ -139,6 +139,17 @@ _GEO_CANON = {
 }
 
 
+def company_key(name: str) -> str:
+    """D-S35-3: the company grouping key — stable ids stay untouched
+    (persisted marks/filters key by id); companyKey lets the UI group
+    multi-source companies (li + gj + ra lanes of one entity). Slug:
+    lowercase, parentheticals stripped, non-alnum -> '-'."""
+    import re as _re
+    s = _re.sub(r"\s*\(.*?\)\s*$", "", (name or "").strip())
+    s = _re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+    return s
+
+
 def norm_country(c: str) -> str:
     """Canonical geo label (S27: the facet was fragmenting — CSV
     country columns carry 'United States of America' (workday detail
@@ -204,6 +215,8 @@ def main() -> int:
                 "id": uid,
                 "reqId": rid,
                 "companyId": cid,
+                "companyKey": company_key(
+                    r.get("company") or w.get("company") or cid),
                 "company": r.get("company") or w.get("company") or cid,
                 "hiringOrg": r.get("hiringOrg") or "",
                 "title": r.get("title") or "",
@@ -263,6 +276,9 @@ def main() -> int:
         board = w.get("board", "")
         companies.append({
             "id": cid,
+            "companyKey": company_key(
+                w.get("company") or (rows and rows[0].get("company"))
+                or cid),
             "name": w.get("company") or (rows and rows[0].get("company")) or cid,
             "board": board,
             "adapter": adapter_class(board),
