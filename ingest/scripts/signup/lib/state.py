@@ -2,7 +2,7 @@
 
 Each signup target gets a JSON file under data/signup_artifacts/{service}/state.json
 that records:
-- email_alias used (e.g. "adzuna@priv.email")
+- email_alias used (e.g. "redacted@priv.email")
 - password (generated, persisted so retries work)
 - form_fields captured
 - email_verify_received_at, code_used

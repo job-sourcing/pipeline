@@ -36,3 +36,12 @@ audit/
 .agents/
 *.har
 tool-results/
+
+# --- public-mirror guards (never commit these here) ---
+ingest/.env
+research_data/
+validation_results/
+audit/
+.agents/
+*.har
+tool-results/
