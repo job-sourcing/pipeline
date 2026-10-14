@@ -1,9 +1,9 @@
 {
  "label": "nvidia_us_fulltime",
  "rows": 1395,
- "kept": 1366,
- "new": 29,
- "ghosts_dropped": 67,
+ "kept": 1395,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
