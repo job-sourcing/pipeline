@@ -23,3 +23,9 @@ GONE Enterprise Account Executive - Digital Native (first seen 2026-10-02)
 board-watch llamaindex_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:llamaindex: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
 (2026-10-12T17:04:05)
 
+board-watch llamaindex_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:llamaindex: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
+(2026-10-14T13:14:45)
+
+board-watch llamaindex_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:llamaindex: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
+(2026-10-14T13:32:29)
+

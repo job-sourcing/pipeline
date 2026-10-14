@@ -124,3 +124,7 @@ board-watch otterai_us_fulltime FAILED: list fetch crashed (RuntimeError: licomp
 board-watch otterai_us_fulltime FAILED: list fetch crashed (RuntimeError: licompany:otterai: LinkedIn guest feed HTTP 429 — wall/rate-limit, failing loudly)
 (2026-10-14T12:04:10)
 
+Otter.ai board-watch 2026-10-14: +0 new, -1 gone (25 active [otterai_us_fulltime])
+GONE Software Engineer, Front-End (New Grad) (first seen 2026-10-12)
+(2026-10-14T13:16:35)
+
