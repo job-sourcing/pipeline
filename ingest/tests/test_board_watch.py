@@ -2018,6 +2018,48 @@ class TestShippedWatchConfig:
         assert "ats:greenhouse:neteasegames" in boards
         assert "ats:greenhouse:shein" in boards
 
+    def test_retired_watches_record(self):
+        """S37-W1 (D-S37-1 R3a / review P2-2): a retirement is durable
+        DATA, not a silent deletion — the record carries the label, the
+        dead board spec, the date, the reason, the live evidence, and
+        the state disposition (what happened to the corpus rows). The
+        retired label must be ABSENT from watches (the whole point) and
+        the roster's Sanity slot must be exactly the retired board."""
+        cfg = json.loads(
+            (REPO_ROOT / "ingest/data/board_watch/config.json")
+            .read_text(encoding="utf-8"))
+        retired = cfg.get("retired_watches")
+        assert isinstance(retired, list) and retired
+        labels = [w["label"] for w in cfg["watches"]]
+        for r in retired:
+            for key in ("label", "board", "retired", "reason",
+                        "evidence", "state_disposition"):
+                assert isinstance(r.get(key), str) and r[key].strip(), \
+                    (r.get("label"), key)
+            # retired means RETIRED: not silently re-wired
+            assert r["label"] not in labels, r["label"]
+            assert r["board"] not in {w["board"] for w in cfg["watches"]}
+        # the niu entry (the S37-W1 retirement that started the record)
+        niu = next((r for r in retired
+                    if r["label"] == "niu_us_fulltime"), None)
+        assert niu, "the niu_us_fulltime retirement record is missing"
+        assert niu["board"] == \
+            "ats:sanity:cd9iwvgl/production|Jobs|en-us"
+        assert niu["retired"] >= "2026-10-15"
+        assert "German" in niu["reason"]
+        assert "5013" in niu["evidence"]        # the live GROQ probe
+        assert "state.jsonl" in niu["state_disposition"]
+        # the gone-mark surgery landed: the state file carries 0 rows
+        state = (REPO_ROOT / "ingest/data/board_watch"
+                 / "niu_us_fulltime.state.jsonl")
+        assert state.exists()
+        assert state.read_text(encoding="utf-8").strip() == ""
+        # the zombie corpus carrier is gone: no CSV, no manifest —
+        # the next build_ui_bundle glob drops niu (7 rows + desc prune)
+        wd = REPO_ROOT / "ingest/data/workday"
+        assert not (wd / "niu_us_fulltime.csv").exists()
+        assert not (wd / "niu_us_fulltime.export.json").exists()
+
     def test_roster_count_matches_spec(self):
         """S15 (review #7f) → S16 → S17 → S18 → S19 → S20: the EXACT
         roster count — a watch added or lost by a hand-edit fails HERE,
@@ -2030,7 +2072,12 @@ class TestShippedWatchConfig:
         refuses a time filter, board boards without an employment-type
         field must not claim one). S20 wire wave 1 (the at-scale census
         round): genscript/legendbiotech (greenhouse) + nio/foxit (lever)
-        + poizon (feishuhire — the Dewu US beachhead, 3 rows)."""
+        + poizon (feishuhire — the Dewu US beachhead, 3 rows).
+        S37-W1 (D-S37-1 R3a): niu_us_fulltime RETIRED — the count moves
+        with the retirement (the Sanity Jobs/en-us page is deleted; the
+        record lives in config.json's retired_watches). The S32→S35
+        drift-#44 growth (the 59 ra aggregator boards + the gjobs tiers)
+        is absorbed in the 283."""
         cfg = json.loads(
             (REPO_ROOT / "ingest/data/board_watch/config.json")
             .read_text(encoding="utf-8"))
@@ -2049,7 +2096,8 @@ class TestShippedWatchConfig:
         # layer, evidence audit/s35_aggregator/probe_results.json)
         #      +7 gj tiering (2 monthly REAL + 5 quarterly NOISE-WALL,
         #      evidence audit/s35_aggregator/gj_gap_probe.md)
-        assert len(cfg["watches"]) == 284
+        # S37-W1: 284 - 1 (niu retired — the dead US board, D-S37-1 R3a)
+        assert len(cfg["watches"]) == 283
         boards = {w["board"] for w in cfg["watches"]}
         for b in ("haier|wd3|GE_Appliances",
                   "ats:greenhouse:xpengmotors",
@@ -2080,7 +2128,8 @@ class TestShippedWatchConfig:
                   "ats:ultipro:MEY1000MEYER|7a970c3d-b076-4042-8735-673b5e5508ac",
                   "ats:talentadore:amersports.careers.talentadore.com",
                   "ats:workstream:fcc54c54", "ats:ttiproxy:US",
-                  "ats:sanity:cd9iwvgl/production|Jobs|en-us",
+                  # S37-W1: ats:sanity:cd9iwvgl (niu) RETIRED — see
+                  # test_retired_watches_record below
                   "ats:wpjobboard:www.ascentage.com",
                   "ats:wuxibio:www.wuxibiologics.com",
                   "ats:antintl:M7892",
