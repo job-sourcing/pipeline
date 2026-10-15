@@ -1791,20 +1791,6 @@
    "geo_scope": "non_cn"
   },
   {
-   "label": "niu_us_fulltime",
-   "board": "ats:sanity:cd9iwvgl/production|Jobs|en-us",
-   "company": "NIU Technologies",
-   "li_variants": [
-    "NIU",
-    "NIU Technologies",
-    "Niu Power"
-   ],
-   "slice_locations": [
-    "United States"
-   ],
-   "country": "United States"
-  },
-  {
    "label": "notta_us_fulltime",
    "board": "custom:licompany:notta",
    "company": "Notta",
@@ -3776,6 +3762,16 @@
     "gj_quarterly"
    ],
    "skip_li_corroboration": true
+  }
+ ],
+ "retired_watches": [
+  {
+   "label": "niu_us_fulltime",
+   "board": "ats:sanity:cd9iwvgl/production|Jobs|en-us",
+   "retired": "2026-10-15",
+   "reason": "NIU exited US hiring — the Sanity Jobs/en-us page is deleted; the surviving Jobs/en page carries only 2 German-locality field roles (Fluent German required, Germany/Austria). The dead spec raised RuntimeError on every daily pass, failing the whole 150-watch lane + the watchdog amplification (2-3 re-dispatches/day).",
+   "evidence": "Sanity GROQ live-probe 2026-10-15: count(*)=5013 alive; Jobs/en-us=null; Jobs/en sections=2 (locale-popup + careers rawHTML with German-only roles)",
+   "state_disposition": "Gone-marked in one evidence-led write: niu_us_fulltime.state.jsonl truncated 7 -> 0 rows (the state schema carries no gone-marker — gone = absence from state, the compact-rewrite semantics; the 7 reqIds were all German-locality roles, last_seen 2026-10-13) + the derived corpus artifacts deleted (ingest/data/workday/niu_us_fulltime.csv + niu_us_fulltime.export.json — the exporter is config-driven so a retired label is never re-exported; deleting the CSV removes the 7 zombie rows from the next build_ui_bundle.py glob and the P2-6 desc prune drops ui/desc/niu.json). Durable history kept as artifacts: newposts.jsonl (the 7 enriched records), alerts.log, runs.jsonl, legs.json, the drift_baseline series entry, and the original board_dump workday artifacts (list/details/signals — not export-consumed). A re-wire reopens only via sector-probe discovery if NIU re-enters US hiring (D-S37-1 R3a)."
   }
  ]
 }
