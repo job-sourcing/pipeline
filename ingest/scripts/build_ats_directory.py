@@ -28,7 +28,6 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import datetime
 import json
 import os
 import sqlite3
@@ -252,25 +251,13 @@ def _daemon_is_draining() -> bool:
 
 
 def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
-              sleep_s: float, retry_errors: bool = False,
-              refresh_days: int = 0,
-              dead_refresh_days: int = 95) -> None:
+              sleep_s: float, retry_errors: bool = False) -> None:
     """Probe up to `batch` pending slugs (optionally one ATS only).
 
     Transient 'error' rows (timeouts, 429s, connection resets) are NOT
     re-queued by default — pass retry_errors=True to re-claim error rows
     aged ≥1h (only after pending rows drain), capped at _MAX_ATTEMPTS
     probes per slug so permanently failing endpoints don't retry forever.
-
-    [S37-W3 / D-S37-1 R4+A5 — the refresh mode] refresh_days > 0 enables
-    the UNIVERSE REFRESH: live boards whose last probe is older than
-    refresh_days (default 30 when enabled) are re-probed, plus dead
-    boards older than dead_refresh_days (the quarterly resurrection
-    check). Pending rows keep PRIORITY (a fresh drain never starves);
-    refresh rows get a FRESH attempts budget (attempts reset to 0 at
-    claim — a re-probe failure marches toward the cap within THIS
-    cycle only, never across cycles). Selection is staleness-first
-    (oldest probed first — the campaign front is honest).
     Refuses to run while the prober daemon is draining (fresh heartbeat)
     unless invoked by the daemon itself.
     """
@@ -289,54 +276,6 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
     query += " ORDER BY RANDOM() LIMIT ?"      # random → resumable batches
     args.append(batch)                          # spread across ATSes
     rows = conn.execute(query, args).fetchall()
-    if not rows and refresh_days > 0:
-        # [S37-W3] the universe refresh: pending is drained — re-probe
-        # the stalest live boards (and the quarterly dead). attempts
-        # resets at claim (the per-cycle budget); ORDER BY last_probed_at
-        # keeps the campaign front honest (the stalest boards first).
-        # [S38/W6c P3-1] the OR-chain is PARENTHESIZED: SQL's AND binds
-        # tighter than OR, so the old flat `... OR (status='error' AND
-        # attempts < ?) AND ats = ?` scoped ONLY the error branch — an
-        # --ats-scoped refresh silently selected stale live/dead rows
-        # from EVERY ATS (the audit's P3-1 assumed the SELECT's ats
-        # scope was real; it was half-broken, and the keyed attempts
-        # reset below is only as scoped as this selection).
-        rq = ("SELECT ats, slug FROM directory WHERE ("
-              "(status = 'live' AND (last_probed_at IS NULL OR "
-              " last_probed_at < datetime('now', ?))) OR "
-              "(status = 'dead' AND (last_probed_at IS NULL OR "
-              " last_probed_at < datetime('now', ?))) OR "
-              # [S37/W5a P2-3] the refresh cycle's own error retry —
-              # attempts-capped; a final-batch error used to strand a
-              # board for the week (the retry-errors sweep's 1h age
-              # gate left it unclaimed when the leg ended)
-              "(status = 'error' AND attempts < ?))")
-        rargs: list = [f"-{refresh_days} days", f"-{dead_refresh_days} days",
-                       _MAX_ATTEMPTS]
-        if ats:
-            rq += " AND ats = ?"
-            rargs.append(ats)
-        rq += " ORDER BY last_probed_at ASC, RANDOM() LIMIT ?"
-        rargs.append(batch)
-        rows = conn.execute(rq, rargs).fetchall()
-        if rows:
-            print(f"[batch] refresh: re-probing {len(rows)} stale boards "
-                  f"(live >{refresh_days}d, dead >{dead_refresh_days}d)")
-            # [S38/W6c P3-1] reset attempts on EXACTLY the claimed
-            # (ats, slug) keys. The old predicate-shaped UPDATE dropped
-            # the SELECT's --ats and LIMIT scope: every matching row —
-            # not just the batch actually being probed — had its retry
-            # budget zeroed ("reset but not selected"). Inert for
-            # live/dead rows alone, but the W5a P2-3 error clause made
-            # it live: an UNSELECTED error row's attempts silently went
-            # to 0, restarting its retry budget without a probe. Keyed
-            # reset = the claim scope by construction (ats, LIMIT, and
-            # any time-drift between the SELECT and the UPDATE).
-            conn.executemany(
-                "UPDATE directory SET attempts = 0 "
-                "WHERE ats = ? AND slug = ?",
-                [(ats_name, slug) for ats_name, slug in rows])
-            conn.commit()
     if not rows and retry_errors:
         # nothing pending — sweep up transient errors aged ≥1h that still
         # have attempts left (CodeRabbit: honor the --batch limit here too;
@@ -401,28 +340,13 @@ def stats(conn: sqlite3.Connection) -> None:
 
 
 def _now() -> str:
-    """[S38/W6c P3-2] `datetime('now')`-shaped UTC (space separator).
-    This used to write ISO-T LOCAL timestamps while every staleness
-    cutoff compares against SQLite's space-format UTC strings — at a
-    shared date 'T'(0x54) > ' '(0x20) in SQLite's string compare, so a
-    row probed hours PAST the cutoff day still read FRESH (a
-    one-directional false-fresh window of up to 24 h, shared by all
-    THREE predicate copies), and the 1 h error cutoff ran on a
-    different clock AND format than the drain/gate ones. One format,
-    one clock. Pre-fix rows self-heal as they are re-probed (the skew
-    only mis-verdicts when row-date == cutoff-date, in the fresh
-    direction, for under a day)."""
-    return datetime.datetime.now(
-        datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+    return time.strftime("%Y-%m-%dT%H:%M:%S")
 
 
 def _now_minus_hours(hours: float) -> str:
-    """Same shape/clock as _now() — see the P3-2 note above (the
-    retry-errors sweep's cutoff must be comparable by SQLite's
-    datetime('now', '-1 hour') semantics used everywhere else)."""
-    t = datetime.datetime.now(datetime.timezone.utc) \
-        - datetime.timedelta(hours=hours)
-    return t.strftime("%Y-%m-%d %H:%M:%S")
+    import datetime
+    t = datetime.datetime.now() - datetime.timedelta(hours=hours)
+    return t.strftime("%Y-%m-%dT%H:%M:%S")
 
 
 def main() -> int:
@@ -439,15 +363,6 @@ def main() -> int:
     ap.add_argument("--retry-errors", action="store_true",
                     help="also re-claim transient error rows (aged 1h+, "
                          f"max {_MAX_ATTEMPTS} attempts per slug)")
-    ap.add_argument("--refresh-days", type=int, default=0,
-                    help="[S37-W3] enable the universe refresh: re-probe "
-                         "live boards whose last probe is older than N "
-                         "days (runs only when no pending rows remain; "
-                         "attempts reset per cycle)")
-    ap.add_argument("--dead-refresh-days", type=int, default=95,
-                    help="[S37-W3] the dead-board resurrection cadence "
-                         "(days; default 95 ≈ quarterly — only used when "
-                         "--refresh-days is set)")
     ap.add_argument("--stats", action="store_true")
     args = ap.parse_args()
 
@@ -459,9 +374,7 @@ def main() -> int:
             stats(conn)
         if not args.stats and not args.seed:
             run_batch(conn, args.ats, args.batch, args.sleep,
-                      retry_errors=args.retry_errors,
-                      refresh_days=args.refresh_days,
-                      dead_refresh_days=args.dead_refresh_days)
+                      retry_errors=args.retry_errors)
     finally:
         conn.close()
     return 0

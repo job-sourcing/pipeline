@@ -2942,11 +2942,8 @@ class TestS37SourceBlocked:
             encoding="utf-8")
         assert "SOURCE-BLOCKED STREAK CAP HIT" in alerts
 
-    def test_healthy_pass_DECAYS_source_blocked_streak(
+    def test_healthy_pass_resets_source_blocked_streak(
             self, wdir, monkeypatch):
-        # [S37/W5a P2-1] decay (-1, floor 0), not zeroing: the W1 test
-        # pinned the zeroing semantics; the W5a audit showed a daily
-        # wall-then-heal flapper never armed the ladder-cut under it.
         (wdir / "test_watch.legs.json").write_text(json.dumps(
             {"date": "2000-01-01", "legs": 1,
              "source_blocked_streak": 5}))
@@ -2961,13 +2958,6 @@ class TestS37SourceBlocked:
         monkeypatch.setattr(watch, "corroborate_new",
                             lambda *a, **k: {})
         monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
-        assert watch.run_watch(dict(self.LI_CFG), Config()) == "complete"
-        m = json.loads((wdir / "test_watch.legs.json").read_text())
-        assert m["source_blocked_streak"] == 4   # decayed, not zeroed
-        # and a fully-recovered source fades to the floor
-        (wdir / "test_watch.legs.json").write_text(json.dumps(
-            {"date": "2000-01-01", "legs": 1,
-             "source_blocked_streak": 1}))
         assert watch.run_watch(dict(self.LI_CFG), Config()) == "complete"
         m = json.loads((wdir / "test_watch.legs.json").read_text())
         assert m["source_blocked_streak"] == 0
@@ -3020,48 +3010,6 @@ class TestS37SourceBlocked:
         finally:
             os.environ.pop("LI_LADDER_CUT", None)
         assert seen["cut"] is None        # healthy board: full ladder
-
-    def test_operator_global_ladder_cut_survives_an_unarmed_watch(
-            self, wdir, monkeypatch):
-        # [S38/W6c P3-5] the finally used to pop LI_LADDER_CUT
-        # UNCONDITIONALLY — even when this watch never armed it — so an
-        # operator-exported global LI_LADDER_CUT=1 (a known-outage
-        # force-cut across the fleet) was silently eaten by the run's
-        # first healthy watch. Save/restore: honored during the fetch,
-        # still set afterwards for the neighbor boards.
-        seen: dict = {}
-
-        def boom(*a, **k):
-            seen["cut"] = os.environ.get("LI_LADDER_CUT")
-            raise site_boards.RateWalledError("HTTP 429")
-        monkeypatch.setattr(watch, "current_postings", boom)
-        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
-        monkeypatch.setenv("LI_LADDER_CUT", "1")   # the operator's global
-        watch.run_watch(dict(self.LI_CFG), Config())
-        assert seen["cut"] == "1"                  # honored mid-fetch
-        assert os.environ["LI_LADDER_CUT"] == "1"  # SURVIVED the watch
-
-    def test_operator_global_ladder_cut_survives_an_armed_watch(
-            self, wdir, monkeypatch):
-        # even when THIS board arms the cut itself (active streak), the
-        # restore returns the seam to its PRE-ARM state — the operator's
-        # global outlives the armed watch too (the pre-fix pop erased it
-        # the moment the fetch ended)
-        (wdir / "test_watch.legs.json").write_text(json.dumps(
-            {"date": "2000-01-01", "legs": 1,
-             "source_blocked_streak": 1}))
-        seen: dict = {}
-
-        def boom(*a, **k):
-            seen["cut"] = os.environ.get("LI_LADDER_CUT")
-            raise site_boards.RateWalledError("HTTP 429")
-        monkeypatch.setattr(watch, "current_postings", boom)
-        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
-        monkeypatch.setenv("LI_LADDER_CUT", "1")
-        result = watch.run_watch(dict(self.LI_CFG), Config())
-        assert result == "source_blocked"
-        assert seen["cut"] == "1"                  # live during the fetch
-        assert os.environ["LI_LADDER_CUT"] == "1"  # restored, not popped
 
     def test_legs_rollover_preserves_cross_date_streaks(self, wdir):
         # S37-W1: the date-keyed rollover used to drop every streak key

@@ -1,16 +1,23 @@
 name: Role Sweep PM (weekly)
 
-# S36 (D-S36-1, DESIGN-S36 v2.1) — the role-keyed PM sweep lane: the
-# campaign inverts the company keying (role queries, every company
-# that surfaces). Layers: L0 bundle projection + L1.5 keyed volume
-# (Adzuna/Jooble/jobspy-Indeed — secrets) + L1 LinkedIn-guest keyword
-# (Azure egress, 429 ladder) + L2 keyless closure (WWR/trio; remotive
-# DEAD-retired) + L3 Google-Jobs role queries (firecrawl credits,
-# preflight < 200 = fail-loudly). Outputs the roles/ envelope +
-# roles:pm drift ledger + ui/roles-pm.json (the S35 new-artifact
-# triple rule: rescue globs here + mirror back-sync + these git-add
-# pathspecs). --full on the 1st (core + tail variants).
-# Runtime ~8-12 min on the public runner.
+# S36 (D-S36-1, DESIGN-S36 v2.1) → S38 (DESIGN-S38 v2 — the
+# exhaustive-completion round): the role-keyed PM sweep lane. Layers:
+# L0 bundle + L1.5 keyed volume (findwork full-JD / Adzuna
+# relevance+45d 10pg / Jooble 5pg / Dice flight-JSON / Careerjet v4
+# quoted-phrase / jobspy-Indeed 7q×100) + L1 LinkedIn-guest keyword
+# (Azure egress, 429 ladder) + L2 keyless closure (WWR/trio/talent)
+# + the STARTUP layer (yc workatastartup + ycombinator + city pages /
+# wellfound feed / hn who-is-hiring — the S38 directive: NO aggregator
+# covers the startup dirs, scrape the source) + The Muse + USAJOBS
+# (US-geo: keyless/keyed, HK-403 Azure-live) + L3 Google-Jobs role
+# queries (firecrawl credits, preflight < 200, transport-retry ×3).
+# Outputs the roles/ envelope + roles:pm drift ledger +
+# ui/roles-pm.json (the S35 new-artifact triple rule: rescue globs
+# here + mirror back-sync + these git-add pathspecs). --full on the
+# 1st (core + tail, tail queries capped 3 pages — F16).
+# Runtime ~15-25 min typical weekly, worst ~50 (S38 F5 arithmetic:
+# adzuna 70 req, dice 56, careerjet 35, li ladder worst 23min, gj
+# retries worst 10min). timeout-minutes: 90.
 
 on:
   workflow_dispatch:
@@ -29,7 +36,7 @@ concurrency:
 jobs:
   sweep:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:
@@ -48,6 +55,11 @@ jobs:
           ADZUNA_API_KEY: ${{ secrets.ADZUNA_API_KEY }}
           JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          CAREERJET_API_KEY: ${{ secrets.CAREERJET_API_KEY }}
+          CAREERJET_REFERER: ${{ secrets.CAREERJET_REFERER }}
+          FINDWORK_API_KEY: ${{ secrets.FINDWORK_API_KEY }}
+          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
+          USAJOBS_USER_AGENT: ${{ secrets.USAJOBS_USER_AGENT }}
           FULL_SWEEP: ${{ github.event.schedule == '0 12 1 * *' }}
         run: |
           set -e

@@ -32,13 +32,6 @@ Drift classes (thresholds = DESIGN-S35 §3.2, review round-2):
   blocked-streak      corroboration_blocked=true (S37-W1 / D-S37-1
                        A1: the enrich-phase LinkedIn outage — the lane
                        runs green while the signals layer freezes)
-  source-blocked-     >=3 source_blocked verdicts in the trailing
-  streak              degraded run (S38/W6c P3-6: 'failed' lines are
-                       transparent — a board alternating failed↔
-                       source_blocked reached NEITHER the fail-streak
-                       (broken by any non-'failed') NOR any blocked
-                       class before; its only escalation was the
-                       watch's own 14-leg cap converting it to failed)
 
 Usage:
   python3 scripts/drift_alert.py [--dry-run]
@@ -71,21 +64,8 @@ CADENCE_DAYS = {           # config tag -> expected refresh interval
     # class's has_csv gate exempts them); any future CSV emission for
     # those lanes would storm false-positive stale-board issues.
     "ra": 7, "gj_quarterly": 95, "gj_monthly": 35,
-    # S37-W3 (D-S37-1 R2/A8): the churn-demoted tier — 28 healthy
-    # zero-churn boards moved daily -> weekly (the cadence doctrine).
-    "weekly_std": 7,
 }
 DEFAULT_CADENCE = 1
-
-# [S38/W6c P3-6] alert thresholds — ONE definition per class, consumed
-# by BOTH the streak counter (as its scan bound: a trailing streak can
-# never usefully exceed the threshold, so the helper stops there) and
-# detect()'s comparison. The n= params on the helpers used to be dead
-# (the thresholds were hardcoded at the call sites — the W5a audit's
-# trivia finding); now the constant flows to both places.
-_FAIL_STREAK_N = 2               # DESIGN-S35 §3.2 (review round-2)
-_CORROBORATION_BLOCKED_N = 3     # S37-W1 / D-S37-1 A1
-_SOURCE_BLOCKED_N = 3            # S38/W6c P3-6 (see class docstring)
 
 # DOCUMENTED BLIND SPOT (A12): the 98 no-CSV boards (ra 59 +
 # li_dormant 39) have NO row monitoring at all — no workday CSV means
@@ -124,12 +104,10 @@ def _rows_now(label: str) -> int:
             return int(json.loads(m.read_text()).get("rows", 0))
         except (json.JSONDecodeError, ValueError):
             pass
-    # [S38/W6c P3-6] the old `.jsonl` arm here was dead by construction
-    # (the path is always {label}.csv, so suffix == ".csv" forever) —
-    # dropped; the CSV count is the only fallback.
     c = WORKDAY / f"{label}.csv"
     if c.exists():
-        return _csv_rows(c)
+        return sum(1 for r in _read_jsonl(c) if r) if c.suffix == ".jsonl" \
+            else _csv_rows(c)
     return 0
 
 
@@ -152,16 +130,10 @@ def _last_seen(label: str) -> date | None:
     return best
 
 
-def _fail_streak(label: str, n: int = _FAIL_STREAK_N) -> int:
-    """Trailing 'failed' verdict count, newest-first over the
-    append-only ledger. `n` (the alert threshold) bounds the scan: a
-    streak longer than the threshold decides identically, so the
-    helper stops at n — a bloated ledger costs at most n reads."""
+def _fail_streak(label: str, n: int = 2) -> int:
     runs = _read_jsonl(WATCH_DIR / f"{label}.runs.jsonl")
     streak = 0
     for r in reversed(runs):
-        if streak >= n:
-            break
         if r.get("verdict") == "failed":
             streak += 1
         else:
@@ -169,8 +141,7 @@ def _fail_streak(label: str, n: int = _FAIL_STREAK_N) -> int:
     return streak
 
 
-def _corroboration_blocked_streak(label: str,
-                                  n: int = _CORROBORATION_BLOCKED_N) -> int:
+def _corroboration_blocked_streak(label: str, n: int = 3) -> int:
     """S37-W1 (D-S37-1 A1 / review P0-1): consecutive runs.jsonl lines
     carrying corroboration_blocked=true for this label — the durable
     marker gha_board_watch writes when corroborate_new's LinkedIn
@@ -181,46 +152,12 @@ def _corroboration_blocked_streak(label: str,
     with a frozen signals layer (numApplicants / linkedinUrl /
     matchMethod) is a real outage worth a GitHub issue. Mirrors the
     _fail_streak shape (trailing run of a boolean field; any clean
-    line breaks it; `n` bounds the scan at the threshold)."""
+    line breaks it)."""
     runs = _read_jsonl(WATCH_DIR / f"{label}.runs.jsonl")
     streak = 0
     for r in reversed(runs):
-        if streak >= n:
-            break
         if r.get("corroboration_blocked"):
             streak += 1
-        else:
-            break
-    return streak
-
-
-def _source_blocked_streak(label: str,
-                           n: int = _SOURCE_BLOCKED_N) -> int:
-    """[S38/W6c P3-6] source_blocked verdicts in the trailing degraded
-    run — with 'failed' lines TRANSPARENT (skipped, not breaking).
-
-    The W5a audit: a board alternating failed↔source_blocked reached
-    NEITHER streak — the fail-streak breaks on any non-'failed'
-    verdict, and no class read source_blocked at all — so its only
-    escalation was the watch's own 14-leg cap converting it to
-    'failed' (weeks at 1 leg/day). A 'failed' line inside a wall
-    episode is the SAME wall misclassifying once (transport vs
-    authwall), not a recovery: treat it as continuation, not break.
-    Any healthy verdict (complete/backlog/egress_blocked/unreachable)
-    breaks the streak. N=3 mirrors corroboration-blocked: one blocked
-    run can be a transient wall the deferred-retry heals; three daily
-    runs of pure wall is a durable-outage issue even though the lane
-    itself runs green (A3's green-but-degraded). `n` bounds the scan."""
-    runs = _read_jsonl(WATCH_DIR / f"{label}.runs.jsonl")
-    streak = 0
-    for r in reversed(runs):
-        if streak >= n:
-            break
-        v = r.get("verdict")
-        if v == "source_blocked":
-            streak += 1
-        elif v == "failed":
-            continue               # same wall, harsher symptom — skip
         else:
             break
     return streak
@@ -265,31 +202,17 @@ def detect(watches: list[dict], baseline: dict) -> list[dict]:
         _series_append(baseline, label, rows)
 
         # 1. board-fail-streak (unhealable within-run failures)
-        streak = _fail_streak(label, _FAIL_STREAK_N)
-        if streak >= _FAIL_STREAK_N:
+        streak = _fail_streak(label)
+        if streak >= 2:
             findings.append({"class": "board-fail-streak", "label": label,
                              "evidence": f"{streak} consecutive failed "
                                           "runs (deferred-retry exhausted)"})
-        # 1a. source-blocked-streak (S38/W6c P3-6: the green-but-
-        # degraded wall — 'failed' lines transparent inside the run;
-        # >=3 source_blocked verdicts -> the issue sink; the watch's
-        # own 14-leg cap stays the LAST resort, this is the durable
-        # middle escalation the alternating board never had)
-        sb = _source_blocked_streak(label, _SOURCE_BLOCKED_N)
-        if sb >= _SOURCE_BLOCKED_N:
-            findings.append({
-                "class": "source-blocked-streak", "label": label,
-                "evidence": f"{sb} source_blocked verdicts in the "
-                             "trailing degraded run (LinkedIn guest "
-                             "feed walled — postings NOT collected; the "
-                             "lane runs green while the source is "
-                             "blocked)"})
         # 1b. corroboration-blocked-streak (S37-W1 / D-S37-1 A1: the
         # enrich-phase outage — verdict-independent, the lane can run
         # green while the signals layer freezes; >=3 consecutive
         # flagged ledger lines -> the issue sink)
-        cb = _corroboration_blocked_streak(label, _CORROBORATION_BLOCKED_N)
-        if cb >= _CORROBORATION_BLOCKED_N:
+        cb = _corroboration_blocked_streak(label)
+        if cb >= 3:
             findings.append({
                 "class": "corroboration-blocked-streak", "label": label,
                 "evidence": f"{cb} consecutive run(s) with the LinkedIn "

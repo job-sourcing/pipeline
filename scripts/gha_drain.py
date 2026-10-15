@@ -68,14 +68,6 @@ BATCH = os.environ.get("DRAIN_BATCH", "60")
 SLEEP = os.environ.get("DRAIN_SLEEP", "0.3")
 MAX_CONSECUTIVE_FAILURES = 5
 LEGS_MAX_PER_DAY = _int_env("DRAIN_LEGS_MAX_PER_DAY", 8)
-# [S37-W3 / D-S37-1 R4+A5] the universe-refresh knobs: live boards go
-# stale after DRAIN_REFRESH_DAYS (default 30 — the weekly cadence's
-# steady state ≈ 9,705×7/30 ≈ 2,265 re-probes/week ≈ 45-115 min on the
-# free public runner); dead boards re-probe after DRAIN_DEAD_REFRESH_DAYS
-# (default 95 ≈ quarterly — the resurrection check). 0 disables the
-# refresh lane entirely (the pre-S37 behavior).
-REFRESH_DAYS = _int_env("DRAIN_REFRESH_DAYS", 30)
-DEAD_REFRESH_DAYS = _int_env("DRAIN_DEAD_REFRESH_DAYS", 95)
 # Per-request worst case in build_ats_directory: 15 s HTTP timeout + sleep.
 # Scale the subprocess timeout to the batch size (audit F6: a fixed 300 s
 # still times out the shrunk 25-batch when every probe hangs: 25×15.3≈383 s).
@@ -83,26 +75,7 @@ _REQUEST_S = 15.3
 
 
 def _subproc_timeout(size: int) -> int:
-    # [S37/W5a P2-2] the sleep was HARDCODED at 0.3s while DRAIN_SLEEP
-    # is env-configurable — a DRAIN_SLEEP > ~0.8 silently voided the
-    # F6 hung-batch bound (the timeout no longer covered the worst
-    # case). Scale with the ACTUAL sleep; the +30 covers startup.
-    return int(size * (_REQUEST_S + float(SLEEP))) + 30
-
-
-# [S38/W6c P3-3] the builder's rc=0 "did nothing" tails. The drain used
-# to read these as ok=True / failures=0 — a ~1 s/iteration subprocess
-# spin for the whole 80-min budget ending 'pending' (up to 8 legs/day of
-# churn). The refusal is local-only (GHA sets ATS_PROBER_DAEMON=1, so
-# _daemon_is_draining() never fires there); "nothing pending" fires
-# when the drain's count and the builder's selection disagree (e.g. a
-# pending row already over the attempts cap). Treat both as a FAILURE
-# so the existing 5-consecutive-failure cutoff bounds the spin in
-# seconds — and says why.
-_NO_PROGRESS_TAILS = (
-    "[batch] refusing to start",   # fresh prober-daemon heartbeat
-    "[batch] nothing pending",     # count/select divergence
-)
+    return int(size * _REQUEST_S) + 30
 
 
 def _legs_bump() -> int:
@@ -169,33 +142,6 @@ def pending_count() -> int:
         db.close()
 
 
-def refresh_eligible_count() -> int:
-    """[S37-W3] live boards stale beyond REFRESH_DAYS + dead boards
-    stale beyond DEAD_REFRESH_DAYS (the resurrection check) + [S37/W5a
-    P2-3] error rows with attempts remaining (the refresh cycle's own
-    retry: a board erroring in the campaign's final batch used to
-    strand for the WEEK — the <1h-age gate on the reclaimable class
-    left it uncounted and the chain exited complete). The attempts cap
-    bounds the retries naturally. The gate's refresh half — a stale
-    universe is WORK, not a no-op (the pre-S37 gate exited at
-    pending==0 which was PERMANENT since Sep 8). Disabled → 0."""
-    if not DB.exists() or REFRESH_DAYS <= 0:
-        return 0
-    db = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
-    try:
-        return db.execute(
-            "SELECT COUNT(*) FROM directory WHERE "
-            "(status='live' AND (last_probed_at IS NULL OR "
-            " last_probed_at < datetime('now', ?))) OR "
-            "(status='dead' AND (last_probed_at IS NULL OR "
-            " last_probed_at < datetime('now', ?))) OR "
-            "(status='error' AND attempts < 2)",
-            (f"-{REFRESH_DAYS} days", f"-{DEAD_REFRESH_DAYS} days"),
-        ).fetchone()[0]
-    finally:
-        db.close()
-
-
 def stats_line() -> str:
     db = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
     try:
@@ -229,55 +175,8 @@ def emit_result(result: str) -> None:
             f.write(f"DRAIN_RESULT={result}\n")
 
 
-def _print_counts() -> int:
-    """[S38/W6c P3-4] the workflow gate's single source of truth.
-
-    The ats-drain.yml gate used to inline its own copy of the
-    needs-work SQL (the THIRD hand-copy: 30/95/attempts/-1h hardcoded
-    against the driver's env knobs — semantically identical today, a
-    4-place 2-file edit on any cadence change). The count now comes
-    from THIS module — the same env knobs and the same SQL the driver
-    itself gates on, so the gate cannot drift from the drain.
-
-    Union semantics: pending + refresh-eligible (+ reclaimable errors
-    only when the refresh lane is off — with it on,
-    refresh_eligible_count() already counts every attempts<2 error row
-    regardless of age, so adding _reclaimable_errors() would
-    double-count). Exit 1 (RED, no DRAIN_PENDING written) when the DB
-    is missing or unreadable — the old inline gate's SystemExit
-    behavior, kept: a bad DB must never limp into the drain/export/
-    checkpoint steps.
-    """
-    if not DB.exists():
-        print("::error::ats_directory.db is missing from the repo — "
-              "re-seed (ingest/scripts/build_ats_directory.py --seed) "
-              "and commit it before running the drain")
-        return 1
-    try:
-        pending = pending_count()
-        refresh = refresh_eligible_count()
-        reclaim = _reclaimable_errors() if REFRESH_DAYS <= 0 else 0
-    except Exception as exc:  # noqa: BLE001 — the gate must stay RED, not crash
-        print(f"::error::gate could not read {DB}: {exc}")
-        return 1
-    n = pending + refresh + reclaim
-    print(f"pending={pending} refresh_eligible={refresh} "
-          f"reclaimable_errors={reclaim} — rows needing work: {n}")
-    genv = os.environ.get("GITHUB_ENV")
-    if genv:
-        with open(genv, "a") as f:
-            f.write(f"DRAIN_PENDING={n}\n")
-    return 0
-
-
-def run_batch(size: str, refresh: bool = False) -> tuple[bool, str]:
-    """Run one drain batch. Returns (ok, last_output_line).
-
-    ok=False on a nonzero rc, a timeout, OR [S38/W6c P3-3] an rc=0
-    no-progress tail (the builder refused / found nothing pending) —
-    the failures counter treats all three alike, so a can't-progress
-    builder is bounded by the consecutive-failure cutoff instead of
-    spinning the budget away."""
+def run_batch(size: str) -> tuple[bool, str]:
+    """Run one drain batch. Returns (ok, last_output_line)."""
     env = dict(os.environ)
     # Authorized-child marker: we ARE the daemon-equivalent HERE (GHA), and
     # this makes us immune to any stale heartbeat file committed by accident.
@@ -287,33 +186,19 @@ def run_batch(size: str, refresh: bool = False) -> tuple[bool, str]:
     if os.environ.get("GITHUB_ACTIONS") == "true":
         env["ATS_PROBER_DAEMON"] = "1"
     timeout = _subproc_timeout(int(size))
-    cmd = [sys.executable, str(BUILD),
-           "--batch", size, "--sleep", SLEEP, "--retry-errors"]
-    if refresh:
-        # [S37-W3] the universe refresh: pending keeps priority in the
-        # builder; when pending is drained, the stalest live/dead boards
-        # are re-probed (attempts reset per cycle — the cap can't march
-        # across refresh cycles).
-        cmd += ["--refresh-days", str(REFRESH_DAYS),
-                "--dead-refresh-days", str(DEAD_REFRESH_DAYS)]
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True,
-                           timeout=timeout, cwd=str(INGEST), env=env)
+        r = subprocess.run(
+            [sys.executable, str(BUILD),
+             "--batch", size, "--sleep", SLEEP, "--retry-errors"],
+            capture_output=True, text=True, timeout=timeout,
+            cwd=str(INGEST), env=env)
     except subprocess.TimeoutExpired:
         return False, f"batch of {size} timed out after {timeout}s"
     out = (r.stdout or "").strip().splitlines()
-    if out:
-        tail = out[-1]
-    else:
-        err = (r.stderr or "").strip().splitlines()
-        tail = err[-1] if err else ""
+    tail = out[-1] if out else (r.stderr or "").strip().splitlines()[-1:] or ""
     if r.returncode != 0:
         return False, f"rc={r.returncode}: {tail}"
-    if tail.startswith(_NO_PROGRESS_TAILS):
-        # [S38/W6c P3-3] rc=0 but the builder did NOTHING — see
-        # _NO_PROGRESS_TAILS. Count it as a failure (bounded spin).
-        return False, f"no progress — {tail}"
-    return True, tail
+    return True, str(tail)
 
 
 def _reclaimable_errors() -> int:
@@ -335,10 +220,6 @@ def _reclaimable_errors() -> int:
 
 
 def main() -> int:
-    if "--counts" in sys.argv[1:]:
-        # [S38/W6c P3-4] the workflow's cheap no-op gate (see
-        # _print_counts) — no drain, no leg burned, no DRAIN_RESULT.
-        return _print_counts()
     if not DB.exists():
         print(f"no DB at {DB} — seed first (build_ats_directory.py --seed)",
               flush=True)
@@ -351,45 +232,21 @@ def main() -> int:
         # land here with work left). One sweep batch retries them; rows that
         # fail again hit the attempts cap → terminal → the gate returns to 0
         # and the chain self-terminates.
-        # [S37-W3] the refresh lane: a STALE UNIVERSE is also work — run
-        # refresh batches while budget remains (the workflow's gate counts
-        # refresh-eligible rows too, so the chain re-triggers until the
-        # universe is fresh; the leg cap bounds the day).
-        refresh_left = refresh_eligible_count()
-        if _reclaimable_errors() > 0 or refresh_left > 0:
+        if _reclaimable_errors() > 0:
             capped, leg = _leg_guard()
             if capped:
                 checkpoint_wal()
                 emit_result("complete")
                 return 0
-            start = time.monotonic()
-            batches = 0
-            failures = 0
-            result = "pending"
-            while time.monotonic() - start < BUDGET:
-                work_left = (_reclaimable_errors() > 0
-                             or refresh_eligible_count() > 0)
-                if not work_left:
-                    result = "complete"
-                    break
-                ok, tail = run_batch(BATCH, refresh=True)
-                if not ok and "timed out" in tail:
-                    ok, tail = run_batch("25", refresh=True)
-                batches += 1
-                print(f"[refresh] batch {batches}: "
-                      f"{'ok' if ok else 'FAIL'} — {tail}", flush=True)
-                if not ok:
-                    failures += 1
-                    if failures >= MAX_CONSECUTIVE_FAILURES:
-                        print(f"{MAX_CONSECUTIVE_FAILURES} consecutive "
-                              f"failures — stopping (DRAIN_RESULT=failed)",
-                              flush=True)
-                        result = "failed"
-                        break
-                else:
-                    failures = 0
+            print(f"pending exhausted — sweeping "
+                  f"{_reclaimable_errors()} aged error rows (--retry-errors)",
+                  flush=True)
+            ok, tail = run_batch(BATCH)
+            print(f"[sweep] {'ok' if ok else 'FAIL'} — {tail}", flush=True)
             checkpoint_wal()
-            result = _cap_aware(result, leg)
+            result = _cap_aware(
+                "pending" if pending_count() > 0
+                or _reclaimable_errors() > 0 else "complete", leg)
             print(f"drain end ({result}): {stats_line()}", flush=True)
             emit_result(result)
             return 0
@@ -418,34 +275,15 @@ def main() -> int:
             # finds nothing pending) was dead code in the drain — 'complete'
             # shipped reclaimable error rows. Run one final sweep batch
             # while budget remains.
-            # [S37-W3] the refresh lane: pending exhausted mid-run — flow
-            # straight into the universe refresh within the SAME leg's
-            # budget (the stalest boards first; the chain continues via
-            # DRAIN_RESULT=pending until the universe is fresh).
-            while (time.monotonic() - start < BUDGET
-                   and (_reclaimable_errors() > 0
-                        or refresh_eligible_count() > 0)):
-                ok, tail = run_batch(BATCH, refresh=True)
-                if not ok and "timed out" in tail:
-                    ok, tail = run_batch("25", refresh=True)
+            if _reclaimable_errors() > 0 and batches > 0:
+                print("pending exhausted — sweeping aged error rows "
+                      "(--retry-errors)", flush=True)
+                ok, tail = run_batch(BATCH)
                 batches += 1
-                print(f"[refresh] batch {batches}: "
+                print(f"[sweep] batch {batches}: "
                       f"{'ok' if ok else 'FAIL'} — {tail}", flush=True)
-                if not ok:
-                    failures += 1
-                    if failures >= MAX_CONSECUTIVE_FAILURES:
-                        print(f"{MAX_CONSECUTIVE_FAILURES} consecutive "
-                              f"failures — stopping (DRAIN_RESULT=failed)",
-                              flush=True)
-                        result = "failed"
-                        break
-                else:
-                    failures = 0
-            if result != "failed":
-                result = ("pending" if pending_count() > 0
-                          or _reclaimable_errors() > 0
-                          or refresh_eligible_count() > 0
-                          else "complete")
+            result = ("pending" if pending_count() > 0 or _reclaimable_errors() > 0
+                      else "complete")
             break
         ok, tail = run_batch(BATCH)
         # Slow-batch shrink: mirror the daemon's fallback so one pathological

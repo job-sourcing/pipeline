@@ -482,16 +482,6 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
         if consecutive_blocked >= corroborate.TITLE_SEARCH_BREAKER:
             print(f"[watch] title-search circuit breaker after "
                   f"{consecutive_blocked} consecutive blocks", flush=True)
-            # [S37/W5a P1-1] the fallback's blocks are the SAME outage
-            # class as the index block — an intermittent wall lets the
-            # index succeed while every title search 429s. The A1
-            # durable marker must fire here too, else the signals layer
-            # freezes with zero ledger trace (the drift class can never
-            # see exactly the failure mode A2 documented as real).
-            if blocked is not None:
-                blocked.append(
-                    f"title-search breaker: {consecutive_blocked} "
-                    f"consecutive blocks")
             break
         title = (r.get("title") or "").strip()
         if not title:
@@ -1015,22 +1005,6 @@ def _streak_bump(label: str, key: str) -> int:
     return m[key]
 
 
-def _streak_decay(label: str, key: str, floor: int = 0) -> None:
-    """[S37/W5a P2-1] a healthy leg decrements the streak instead of
-    zeroing it — flapping boards stay 'known-walled' (the ladder-cut),
-    recovered ones fade out. See the reset-site comment. Same legs.json
-    persistence as _streak_reset; a missing/corrupt meta is a no-op."""
-    meta = WATCH_DIR / f"{label}.legs.json"
-    try:
-        m = json.loads(meta.read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError):
-        return
-    v = int(m.get(key, 0) or 0)
-    if v > floor:
-        m[key] = max(floor, v - 1)
-        _atomic_write(meta, json.dumps(m))
-
-
 def _streak_reset(label: str, key: str) -> None:
     meta = WATCH_DIR / f"{label}.legs.json"
     try:
@@ -1057,7 +1031,7 @@ def _streak_value(label: str, key: str) -> int:
         return 0
 
 
-def _arm_li_ladder_cut(label: str) -> str | None:
+def _arm_li_ladder_cut(label: str) -> None:
     """S37-W1 (D-S37-1 A4): arm the LI ladder-cut for THIS watch's list
     fetch — a board with an ACTIVE source_blocked_streak (>=1) is
     already known walled, so LinkedInCompanyAdapter probes with the
@@ -1066,21 +1040,9 @@ def _arm_li_ladder_cut(label: str) -> str | None:
     env-var seam: the adapter has no streak knowledge — the driver
     owns the legs meta. The caller MUST clear the seam after the list
     fetch (try/finally) so it is live ONLY for this watch's list
-    phase (never leaks into a neighbor board's full ladder).
-
-    [S38/W6c P3-5] Returns the PRE-EXISTING seam value (None = unset)
-    for the caller's finally to RESTORE — the old unconditional
-    `os.environ.pop` ran even when this call never armed the cut, so
-    an operator-exported global LI_LADDER_CUT=1 (a known-outage
-    force-cut across the fleet) was silently eaten by the first
-    watch of the run — and even an ARMED watch's pop erased the
-    operator's setting for every later board. Restore-to-pre-arm:
-    our own arm is still list-fetch-scoped, the operator's global
-    survives both armed and unarmed watches."""
-    prev = os.environ.get("LI_LADDER_CUT")
+    phase (never leaks into a neighbor board's full ladder)."""
     if _streak_value(label, "source_blocked_streak") >= 1:
         os.environ["LI_LADDER_CUT"] = "1"
-    return prev
 
 
 def _egress_streak_bump(label: str) -> int:
@@ -1266,11 +1228,7 @@ def run_watch(w: dict, cfg: Config) -> str:
         # S37-W1 (A4): arm the ladder-cut seam for THIS watch's list
         # fetch (a known-walled board probes with the single 45s rung)
         # and close it in the finally — live ONLY during the fetch.
-        # [S38/W6c P3-5] save/restore instead of pop: the finally
-        # returns the seam to its PRE-ARM state, so an operator-
-        # exported global LI_LADDER_CUT survives the run (see
-        # _arm_li_ladder_cut) while OUR arm never outlives the fetch.
-        cut_prev = _arm_li_ladder_cut(label)
+        _arm_li_ladder_cut(label)
         try:
             current, list_complete, country_client = current_postings(
                 w["board"], w.get("country", ""), w.get("time_type", ""),
@@ -1278,10 +1236,7 @@ def run_watch(w: dict, cfg: Config) -> str:
                 include_remote=bool(w.get("include_remote")),
                 geo_scope=str(w.get("geo_scope", "") or ""))
         finally:
-            if cut_prev is None:
-                os.environ.pop("LI_LADDER_CUT", None)
-            else:
-                os.environ["LI_LADDER_CUT"] = cut_prev
+            os.environ.pop("LI_LADDER_CUT", None)
     except Exception as exc:
         if _egress_blocked(w, exc):
             streak = _egress_streak_bump(label)
@@ -1363,16 +1318,7 @@ def run_watch(w: dict, cfg: Config) -> str:
         return "failed"
     _egress_streak_reset(label)   # the block lifted — streak cleared
     _streak_reset(label, "unreach_streak")  # S24: net healthy again
-    # [S37/W5a P2-1] source_blocked_streak DECAYS (-1 per fully-healthy
-    # leg, floor 0) instead of zeroing: the deferred-retry's in-run heal
-    # (A2's correct semantics for the intermittent class) used to erase
-    # the streak entirely, so a board that walls-then-heals EVERY day
-    # never armed the A4 ladder-cut nor approached the A3 cap — the
-    # 195s full-ladder re-burn daily, forever, invisible. With decay:
-    # a daily flapper hovers at 1-2 (the ladder-cut arms, single-rung
-    # probes), a genuinely-recovered source decays to 0 within a few
-    # days (auto-recovery preserved).
-    _streak_decay(label, "source_blocked_streak")
+    _streak_reset(label, "source_blocked_streak")  # S37-W1: wall lifted
     if not current and not list_complete:
         _fail_summary("LIST FAILED — nothing to diff; state untouched "
                       "(fail-safe)")

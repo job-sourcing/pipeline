@@ -53,6 +53,9 @@ from jobsearch.rolefamilies import (  # noqa: E402
     PM_QUERY_TAIL,
     classify_family,
     g1_fires,
+    g1b_fires,
+    is_anonymized_employer,
+    is_staffing_company,
     pm_seniority,
     sector_verdict,
     title_core,
@@ -130,16 +133,23 @@ def fetch_adzuna(queries: list[str]) -> tuple[list[dict], str]:
     if not (app_id and key):
         return [], "no-key"
     rows: list[dict] = []
+    # S38 §2a: relevance sort (measured 100% PM-family density p1-50)
+    # + max_days_old=45 (the li/indeed freshness doctrine) + 10 pages
+    # (weekly cap; density verified far beyond — the cap is politeness).
+    max_page = 10
     for q in queries:
-        for page in (1, 2):
+        for page in range(1, max_page + 1):
             url = (f"https://api.adzuna.com/v1/api/jobs/us/search/{page}"
                    f"?app_id={app_id}&app_key={key}"
                    f"&what={urllib.parse.quote_plus(q)}"
-                   f"&results_per_page=50&content-type=application/json")
+                   f"&results_per_page=50&max_days_old=45"
+                   f"&content-type=application/json")
             try:
                 d = _http_json(url)
             except Exception as exc:
-                return rows, f"error:page{page}:{q[:12]}:{type(exc).__name__}"
+                if page == 1:
+                    return rows, f"error:page{page}:{q[:12]}:{type(exc).__name__}"
+                break                      # partial page-run: keep what we have
             for j in d.get("results", []):
                 created = (j.get("created") or "")[:10]
                 rows.append({
@@ -150,7 +160,7 @@ def fetch_adzuna(queries: list[str]) -> tuple[list[dict], str]:
                     "posted": created,
                     "desc": (j.get("description") or "")[:12000],
                     "source": "adzuna", "layer": "l1.5", "query": q,
-                    "rid": j.get("id") or "",
+                    "rid": f"adz:{j.get('id') or ''}",
                 })
             if len(d.get("results", [])) < 50:
                 break
@@ -163,8 +173,9 @@ def fetch_jooble(queries: list[str]) -> tuple[list[dict], str]:
     if not key:
         return [], "no-key"
     rows: list[dict] = []
+    max_page = 5                        # S38 §2a: depth 2→5
     for q in queries:
-        for page in (1, 2):
+        for page in range(1, max_page + 1):
             try:
                 d = _http_json(
                     f"https://jooble.org/api/{key}",
@@ -172,7 +183,9 @@ def fetch_jooble(queries: list[str]) -> tuple[list[dict], str]:
                                      "United States", "page": page}).encode(),
                     headers={"Content-Type": "application/json"})
             except Exception as exc:
-                return rows, f"error:page{page}:{q[:12]}:{type(exc).__name__}"
+                if page == 1:
+                    return rows, f"error:page{page}:{q[:12]}:{type(exc).__name__}"
+                break
             for j in d.get("jobs", []):
                 rows.append({
                     "title": j.get("title") or "",
@@ -196,11 +209,11 @@ def fetch_jobspy_indeed(queries: list[str]) -> tuple[list[dict], str]:
     except ImportError:
         return [], "not-installed"
     rows: list[dict] = []
-    for q in queries[:5]:                    # politeness: top-5 variants
+    for q in queries:                    # S38 §2a: all queries (was [:5])
         try:
             jobs = scrape_jobs(site_name=["indeed"], search_term=q,
                                location="United States",
-                               results_wanted=50, hours_old=24 * 30)
+                               results_wanted=100, hours_old=24 * 30)
             if not hasattr(jobs, "iterrows"):
                 continue
             for _, j in jobs.iterrows():
@@ -368,7 +381,10 @@ def fetch_free_trio() -> tuple[list[dict], str]:
 
 def fetch_gj_role(queries: list[str]) -> tuple[list[dict], str]:
     """L3: Google-Jobs vertical per query — 1 firecrawl credit each
-    (behind the credit preflight; outage-tolerant per-source)."""
+    (behind the credit preflight; outage-tolerant per-source).
+    S38 §2a/F17: transport errors retry ×3 (30/45s backoff — proven:
+    6/6 queries recovered under backoff this round); cardless shells
+    do NOT retry (a shell pages shells again)."""
     key = _env("FIRECRAWL_API_KEY")
     if not key:
         return [], "no-key"
@@ -385,23 +401,38 @@ def fetch_gj_role(queries: list[str]) -> tuple[list[dict], str]:
     for q in queries:
         url = ("https://www.google.com/search?q="
                + urllib.parse.quote_plus(q) + "&ibp=htl;jobs&hl=en&gl=us")
-        try:
-            d = _http_json(
-                "https://api.firecrawl.dev/v2/scrape",
-                data=json.dumps({"url": url, "formats": ["markdown"],
-                                 "onlyMainContent": False,
-                                 "waitFor": 4000}).encode(),
-                headers={"Content-Type": "application/json",
-                         "Authorization": f"Bearer {key}"}, timeout=120)
-        except Exception as exc:
-            status = f"error:{q[:12]}:{type(exc).__name__}"
-            continue
-        if not d.get("success"):
-            status = f"api-fail:{q[:12]}"
-            continue
-        md = str((d.get("data") or {}).get("markdown") or "")
+        md = ""
+        for attempt in range(3):
+            try:
+                d = _http_json(
+                    "https://api.firecrawl.dev/v2/scrape",
+                    data=json.dumps({"url": url, "formats": ["markdown"],
+                                     "onlyMainContent": False,
+                                     "waitFor": 5000}).encode(),
+                    headers={"Content-Type": "application/json",
+                             "Authorization": f"Bearer {key}"}, timeout=120)
+            except Exception as exc:
+                status = f"error:{q[:12]}:{type(exc).__name__}"
+                if attempt < 2:
+                    time.sleep(30 + 15 * attempt)
+                    continue
+                break                        # transport-error ladder exhausted
+            if not d.get("success"):
+                status = f"api-fail:{q[:12]}"
+                if attempt < 2:
+                    time.sleep(30 + 15 * attempt)
+                    continue
+                break
+            md = str((d.get("data") or {}).get("markdown") or "")
+            if len(md) >= 3000:
+                break                        # a real cards page — no retry
+            # cardless shell (S33 stub class) — one gentle retry only
+            if attempt < 1:
+                time.sleep(20)
+                continue
+            break
         if len(md) < 3000:
-            continue                       # cardless shell (S33 stub class)
+            continue                       # shell after retries: skip query
         for m in re.finditer(
                 r"^(?P<title>[^\n•·]{3,140})\n+"
                 r"(?P<company>[^\n•·]{2,80})\n+"
@@ -411,15 +442,601 @@ def fetch_gj_role(queries: list[str]) -> tuple[list[dict], str]:
             rows.append({
                 "title": g["title"], "company": g["company"],
                 "loc": g["loc"], "url": "", "posted": "",
-                "desc": "", "source": "gj", "layer": "l3",
+                "desc": md[:12000], "source": "gj", "layer": "l3",
                 "query": q, "rid": f"gj:{q}:{g['title'][:40]}",
             })
         time.sleep(2.0)
     return rows, status
 
 
+# ── S38 fetchers (DESIGN-S38 §1a — posted-contract table honored) ──────────
+
+def _rfc2822_to_iso(s: str) -> str:
+    if not s:
+        return ""
+    try:
+        from email.utils import parsedate_to_datetime
+        return parsedate_to_datetime(s.strip()).strftime("%Y-%m-%d")
+    except (TypeError, ValueError, ImportError):
+        pass
+    for fmt in ("%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S %Z",
+                "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ"):
+        try:
+            return datetime.strptime(s.strip()[:32], fmt).strftime(
+                "%Y-%m-%d")
+        except ValueError:
+            continue
+    return ""
+
+
+def _epoch_to_iso(v) -> str:
+    try:
+        n = int(float(v))
+        if n > 10 ** 12:                    # epoch millis
+            n //= 1000
+        return datetime.fromtimestamp(n, tz=timezone.utc).strftime("%Y-%m-%d")
+    except (TypeError, ValueError, OSError):
+        return ""
+
+
+def fetch_dice(queries: list[str]) -> tuple[list[dict], str]:
+    """S38 L1.5: Dice SERP RSC flight JSON (keyless; the old Dice API is
+    dead — engine-census-r2 §1.1). 30 rows/page; extraction walks the
+    ESCAPED jobList.data array out of the script payload."""
+    import urllib.error
+    ua = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                        "(KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+          "Accept-Language": "en-US,en;q=0.9"}
+    rows: list[dict] = []
+    max_page = 8
+    for q in queries:
+        for page in range(1, max_page + 1):
+            url = ("https://www.dice.com/jobs?q="
+                   + urllib.parse.quote_plus(q)
+                   + "&location=United%20States"
+                   + (f"&page={page}" if page > 1 else ""))
+            try:
+                req = urllib.request.Request(url, headers=ua)
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    html = r.read().decode("utf-8", "replace")
+            except Exception as exc:
+                if page == 1:
+                    return rows, f"error:{q[:12]}:{type(exc).__name__}"
+                break
+            jobs = _dice_extract_jobs(html)
+            if jobs is None:
+                if page == 1:
+                    return rows, f"no-joblist:{q[:12]}"
+                break
+            for j in jobs:
+                loc = j.get("jobLocation")
+                if isinstance(loc, dict):
+                    loc = loc.get("displayName") or ", ".join(
+                        filter(None, [loc.get("city"),
+                                      loc.get("state")])[:2])
+                elif not isinstance(loc, str):
+                    loc = ""
+                rows.append({
+                    "title": j.get("title") or "",
+                    "company": j.get("companyName") or "",
+                    "loc": loc[:80],
+                    "url": j.get("detailsPageUrl") or "",
+                    "posted": _rfc2822_to_iso(j.get("postedDate") or "")
+                    or (j.get("postedDate") or "")[:10],
+                    "desc": (j.get("summary") or "")[:12000],
+                    "source": "dice", "layer": "l1.5", "query": q,
+                    "rid": f"dice:{j.get('id') or j.get('guid') or ''}",
+                })
+            if len(jobs) < 30:
+                break
+            time.sleep(1.2)
+    return rows, "ok"
+
+
+def _dice_extract_jobs(html: str):
+    """The jobList.data array out of the RSC payload (JSON is escaped
+    inside script strings — locate 'jobList', then walk to the matching
+    bracket in the ESCAPED text; census probe s38a_probe_dice4)."""
+    m = re.search(r'jobList.*?\\"data\\":\[(?=[^\]]*\\"companyName\\")', html)
+    if not m:
+        return None
+    start = m.end() - 1
+    depth, i = 0, start
+    while i < len(html):
+        c = html[i]
+        if c == "\\":
+            i += 2
+            continue
+        if c == "[":
+            depth += 1
+        elif c == "]":
+            depth -= 1
+            if depth == 0:
+                break
+        i += 1
+    raw = html[start:i + 1]
+    try:
+        return json.loads(raw.encode().decode("unicode_escape"))
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        return None
+
+
+def fetch_careerjet(queries: list[str]) -> tuple[list[dict], str]:
+    """S38 L1.5: Careerjet v4 query API — Basic auth (key:), Referer,
+    QUOTED-phrase keywords (unquoted = noise: Floor Manager/Optician),
+    location=United States (census s38a_probe_careerjet3)."""
+    import base64
+    key, ref = _env("CAREERJET_API_KEY"), _env("CAREERJET_REFERER")
+    if not (key and ref):
+        return [], "no-key"
+    ua = "jobsearch/1.0 (job aggregator; server-side)"
+    rows: list[dict] = []
+    max_page = 5
+    for q in queries:
+        for page in range(1, max_page + 1):
+            params = {"keywords": f'"{q}"', "location": "United States",
+                      "sort": "relevance", "pagesize": 99, "page": page,
+                      "locale_code": "en_US", "user_ip": "127.0.0.1",
+                      "user_agent": ua}
+            qs = "&".join(f"{k}={urllib.parse.quote(str(v))}"
+                          for k, v in params.items())
+            try:
+                req = urllib.request.Request(
+                    f"https://search.api.careerjet.net/v4/query?{qs}",
+                    headers={"User-Agent": ua, "Referer": ref,
+                             "Authorization": "Basic " + base64.b64encode(
+                                 f"{key}:".encode()).decode()})
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    d = json.loads(r.read().decode())
+            except Exception as exc:
+                if page == 1:
+                    return rows, f"error:{q[:12]}:{type(exc).__name__}"
+                break
+            jobs = d.get("jobs", [])
+            for j in jobs:
+                loc = j.get("locations")
+                if isinstance(loc, list):           # list-of-dicts or strings
+                    loc = (loc[0].get("name", "") if isinstance(
+                        loc[0], dict) else str(loc[0] or "")) \
+                        if loc else ""
+                elif not isinstance(loc, str):
+                    loc = ""
+                rows.append({
+                    "title": j.get("title") or "",
+                    "company": j.get("company") or "",
+                    "loc": loc[:80],
+                    "url": j.get("url") or "",
+                    "posted": _rfc2822_to_iso(j.get("date") or ""),
+                    "desc": (j.get("description") or "")[:12000],
+                    "source": "careerjet", "layer": "l1.5", "query": q,
+                    "rid": "",
+                })
+            if not jobs:
+                break
+            time.sleep(1.2)
+    return rows, "ok"
+
+
+def fetch_findwork(queries: list[str]) -> tuple[list[dict], str]:
+    """S38 L1.5: findwork.dev — search= full-text (count 1,667), title
+    field = `role`, JD = `text` (FULL — the highest merge-value tier);
+    location param is exact-match-only → usgate runs client-side."""
+    key = _env("FINDWORK_API_KEY")
+    if not key:
+        return [], "no-key"
+    rows: list[dict] = []
+    max_page = 17                       # count=1,667 / 100 per page
+    seen = 0
+    for page in range(1, max_page + 1):
+        try:
+            req = urllib.request.Request(
+                "https://findwork.dev/api/jobs/?search="
+                + urllib.parse.quote_plus(queries[0] if queries
+                                          else "product manager")
+                + f"&page={page}",
+                headers={"Authorization": f"Token {key}",
+                         "User-Agent": "jobsearch-sweep"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                d = json.loads(r.read().decode())
+        except Exception as exc:
+            if page == 1:
+                return rows, f"error:{type(exc).__name__}"
+            break
+        res = d.get("results", [])
+        if not res:
+            break
+        for j in res:
+            rows.append({
+                "title": j.get("role") or "",
+                "company": j.get("company_name") or "",
+                "loc": j.get("location") or "",
+                "url": j.get("url") or j.get("id") or "",
+                "posted": (j.get("date_posted") or "")[:10],
+                "desc": (j.get("text") or "")[:12000],
+                "source": "findwork", "layer": "l1.5",
+                "query": "findwork:search", "rid": f"fw:{j.get('id') or ''}",
+            })
+        seen += len(res)
+        if seen >= (d.get("count") or 0):
+            break
+        time.sleep(1.2)
+    return rows, "ok"
+
+
+def fetch_muse() -> tuple[list[dict], str]:
+    """S38 L2 (GHA-only): The Muse public API — category=Product
+    Management, keyless, full JD. 403 from HK (CloudFront geo) —
+    fail-soft locally, live from the Azure lane. First successful page
+    is captured to audit/s38_rolecampaign/ as the field-map evidence
+    (F8 — the row contract was endpoint-verified, not row-verified)."""
+    rows: list[dict] = []
+    for page in range(1, 25):
+        try:
+            d = _http_json(
+                "https://www.themuse.com/api/public/jobs?category="
+                "Product%20Management&location=United%20States"
+                f"&page={page}", timeout=30)
+        except Exception as exc:
+            return rows, f"error:{type(exc).__name__}"
+        if page == 1 and rows == [] and d:
+            _evidence_dump("muse_page1.json", d)
+        jobs = d.get("results", [])
+        for j in jobs:
+            comp = ((j.get("company") or {}) or {})
+            rows.append({
+                "title": j.get("name") or "",
+                "company": comp.get("name") or "",
+                "loc": ", ".join(
+                    l.get("name", "") for l in (j.get("locations") or [])
+                    if isinstance(l, dict))[:80],
+                "url": ((j.get("refs") or {}).get("landing_page")
+                        or (comp.get("refs") or {}).get("landing_page") or ""),
+                "posted": _rfc2822_to_iso(
+                    (j.get("publication_datetime") or ""))[:10]
+                if j.get("publication_datetime") else "",
+                "desc": (j.get("contents") or "")[:12000],
+                "source": "muse", "layer": "l2",
+                "query": "muse:product-management",
+                "rid": f"muse:{j.get('id') or ''}",
+            })
+        if not jobs:
+            break
+        time.sleep(1.2)
+    return rows, "ok"
+
+
+def fetch_usajobs(queries: list[str]) -> tuple[list[dict], str]:
+    """S38 L2 (GHA-only): USAJOBS search API — owned key + UA; 403 from
+    HK, key VERIFIED valid from US egress. Full JD (JobSummary)."""
+    key, ua = _env("USAJOBS_API_KEY"), _env("USAJOBS_USER_AGENT")
+    if not key:
+        return [], "no-key"
+    rows: list[dict] = []
+    for q in queries[:4]:
+        for page in range(0, 3):
+            try:
+                d = _http_json(
+                    "https://api.usajobs.gov/api/search?Keyword="
+                    + urllib.parse.quote_plus(q)
+                    + "&LocationName=United%20States"
+                    + f"&Page={page + 1}&ResultsPerPage=50",
+                    headers={"User-Agent": ua,
+                             "Authorization-Key": key}, timeout=30)
+            except Exception as exc:
+                return rows, f"error:{type(exc).__name__}"
+            if page == 0 and q == queries[0] and d:
+                _evidence_dump("usajobs_page1.json", d)
+            items = (d.get("SearchResult") or {}).get("SearchResultItems",
+                                                      [])
+            for it in items:
+                mo = it.get("MatchedObjectDescriptor") or {}
+                det = (mo.get("UserArea") or {}).get("Details") or {}
+                locs = mo.get("PositionLocation") or [{}]
+                rows.append({
+                    "title": mo.get("PositionTitle") or "",
+                    "company": mo.get("OrganizationName") or "",
+                    "loc": ((locs[0] or {}).get("DisplayLocation")
+                            or "")[:80],
+                    "url": mo.get("PositionURI") or "",
+                    "posted": (mo.get("PublicationStartDate")
+                               or "")[:10],
+                    "desc": (det.get("JobSummary") or "")[:12000],
+                    "source": "usajobs", "layer": "l2", "query": q,
+                    "rid": f"usaj:{mo.get('PositionID') or ''}",
+                })
+            if not items:
+                break
+            time.sleep(1.2)
+    return rows, "ok"
+
+
+_EVIDENCE_DIR = REPO / "audit/s38_rolecampaign"
+
+
+def _evidence_dump(name: str, payload) -> None:
+    try:
+        _EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
+        p = _EVIDENCE_DIR / name
+        if not p.exists():
+            p.write_text(json.dumps(payload, indent=1,
+                                    default=str)[:400000])
+    except OSError:
+        pass
+
+
+YC_CITY_PAGES = ["new-york", "san-francisco", "los-angeles", "seattle",
+                 "boston", "austin"]
+
+
+def fetch_yc() -> tuple[list[dict], str]:
+    """S38 L2 'yc' — THE startup layer (the directive's scrape-the-source
+    branch): Work at a Startup Inertia JSON (/jobs/l/product-manager) +
+    ycombinator.com/jobs SSR (/role/product-manager + /remote) + the 6
+    US city pages (F18). Rows carry companySlug/companyBatch (rich);
+    posted only from yc.com rows (WaaS list rows carry no date — the
+    dateless-donor merge rule). YC-backed = board-grade sector evidence
+    (yc_startup), applied post-merge (F2)."""
+    import html as html_mod
+    try:
+        from curl_cffi import requests as cr  # noqa: PLC0415
+    except ImportError:
+        return [], "not-installed"
+    headers = {"Accept": "text/html,*/*;q=0.8",
+               "Accept-Language": "en-US,en;q=0.9"}
+
+    def _get_json(url: str):
+        try:
+            r = cr.get(url, impersonate="chrome131", timeout=30,
+                       headers=headers)
+            if r.status_code != 200:
+                return None
+            m = re.search(r'<div data-page="([^"]+)"', r.text)
+            if not m:
+                return {}
+            return (json.loads(html_mod.unescape(m.group(1))
+                               ).get("props") or {})
+        except Exception:
+            return None
+
+    rows: list[dict] = []
+    verdicts: list[str] = []
+
+    def _waas_rows(props: dict, query_tag: str) -> list[dict]:
+        out = []
+        for j in (props.get("jobs") or []):
+            out.append({
+                "title": j.get("title") or "",
+                "company": j.get("companyName") or "",
+                "loc": (j.get("location") or "")[:80],
+                "url": f"https://www.workatastartup.com/jobs/{j.get('id')}",
+                "posted": "",
+                "desc": ((j.get("companyOneLiner") or "") +
+                         (f" | {j.get('salary')}" if j.get("salary")
+                          else ""))[:2000],
+                "source": "yc", "layer": "l2", "query": query_tag,
+                "rid": f"yc:{j.get('id') or ''}",
+                "yc_slug": j.get("companySlug") or "",
+            })
+        return out
+
+    props = _get_json("https://www.workatastartup.com/jobs/l/product-manager")
+    if props is None:
+        verdicts.append("waas:dead")
+    else:
+        rows += _waas_rows(props, "waas:product-manager")
+
+    # ycombinator.com/jobs — Next.js SSR with embedded job JSON
+    for slug, tag in [("product-manager", "yc:role"),
+                      ("product-manager/remote", "yc:remote")]:
+        try:
+            r = cr.get(f"https://www.ycombinator.com/jobs/role/{slug}",
+                       impersonate="chrome131", timeout=30, headers=headers)
+            if r.status_code == 200:
+                found = _yc_com_extract(r.text)
+                for j in found:
+                    rows.append({
+                        "title": j.get("title") or j.get("jobTitle") or "",
+                        "company": j.get("companyName") or
+                        (j.get("company") or {}).get("name", ""),
+                        "loc": (j.get("location") or
+                                j.get("primaryLocation") or "")[:80],
+                        "url": (j.get("url") or
+                                j.get("applyUrl") or
+                                f"https://www.ycombinator.com/jobs/"
+                                f"{j.get('id')}"),
+                        "posted": _epoch_to_iso(j.get("createdAt")),
+                        "desc": (j.get("description") or "")[:2000],
+                        "source": "yc", "layer": "l2", "query": tag,
+                        "rid": f"yc:{j.get('id') or ''}",
+                        "yc_slug": (j.get("companySlug") or
+                                    (j.get("company") or {}).get("slug", "")),
+                    })
+            else:
+                verdicts.append(f"ycc:{r.status_code}")
+        except Exception as exc:
+            verdicts.append(f"ycc:{type(exc).__name__}")
+
+    # F18: the 6 US city pages (fixed windows, not pagination)
+    for city in YC_CITY_PAGES:
+        props = _get_json(
+            f"https://www.workatastartup.com/jobs/location/{city}")
+        if props:
+            rows += _waas_rows(props, f"waas:city:{city}")
+        time.sleep(1.0)
+
+    verdict = "ok" if not verdicts else ("partial:" + ",".join(verdicts))
+    return rows, verdict
+
+
+def _yc_com_extract(html_text: str) -> list[dict]:
+    """yc.com job pages embed job JSON (script/JSON islands); grab the
+    largest {...} blobs carrying jobTitle/title + company keys."""
+    found: list[dict] = []
+    for m in re.finditer(r'<script[^>]*>\s*(\{.*?\})\s*</script>',
+                         html_text, re.DOTALL):
+        blob = m.group(1)
+        if '"jobTitle"' not in blob and '"title"' not in blob:
+            continue
+        try:
+            d = json.loads(blob)
+        except json.JSONDecodeError:
+            continue
+        stack = [d]
+        while stack:
+            obj = stack.pop()
+            if isinstance(obj, dict):
+                if ("jobTitle" in obj or "title" in obj) and (
+                        "companyName" in obj or "company" in obj):
+                    found.append(obj)
+                stack.extend(v for v in obj.values()
+                             if isinstance(v, (dict, list)))
+            elif isinstance(obj, list):
+                stack.extend(x for x in obj if isinstance(x, dict))
+    return found
+
+
+def fetch_wellfound() -> tuple[list[dict], str]:
+    """S38 L2: Wellfound /jobs feed (keyless via curl_cffi; the GraphQL
+    search host is CF-walled; the OLD registry adapter's role URLs are
+    dead-404 — this is a NEW fetcher per F21). __NEXT_DATA__ apolloState
+    JobListing entries; liveStartAt epoch → ISO (F1)."""
+    try:
+        from curl_cffi import requests as cr  # noqa: PLC0415
+    except ImportError:
+        return [], "not-installed"
+    try:
+        r = cr.get("https://wellfound.com/jobs", impersonate="chrome131",
+                   timeout=30,
+                   headers={"Accept": "text/html,application/xhtml+xml",
+                            "Accept-Language": "en-US,en;q=0.9"})
+        if r.status_code != 200:
+            return [], f"error:status{r.status_code}"
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>',
+                      r.text, re.DOTALL)
+        if not m:
+            return [], "no-next-data"
+        data = json.loads(m.group(1))
+    except Exception as exc:
+        return [], f"error:{type(exc).__name__}"
+    rows: list[dict] = []
+    state = ((data.get("props") or {}).get("pageProps") or {}).get(
+        "apolloState") or {}
+    if "data" in state and isinstance(state.get("data"), dict):
+        state = state["data"]                 # the nested apollo cache
+    for key, obj in state.items():
+        if not isinstance(obj, dict) or "JobListing" not in str(
+                obj.get("__typename", "")):
+            continue
+        comp_ref = (obj.get("startup") or {}).get("__ref", "")
+        comp = state.get(comp_ref, {}) if comp_ref else {}
+        loc = ", ".join(obj.get("locationNames") or [])[:80]
+        rows.append({
+            "title": obj.get("title") or "",
+            "company": (comp.get("name") or "")[:80] if isinstance(
+                comp, dict) else "",
+            "loc": loc,
+            "url": ("https://wellfound.com/l/"
+                    + str(obj.get("slug") or "")),
+            "posted": _epoch_to_iso(obj.get("liveStartAt")),
+            "desc": ((comp.get("highConcept") or "") + " " +
+                     (comp.get("productDescription") or ""))[:12000],
+            "source": "wellfound", "layer": "l2",
+            "query": "wellfound:feed",
+            "rid": f"wf:{obj.get('id') or obj.get('slug') or ''}",
+        })
+    return rows, "ok"
+
+
+def fetch_talent() -> tuple[list[dict], str]:
+    """S38 L2: talent.com SERP — server-rendered JobCard articles
+    (closure-tier, 20 rows keyless, no pagination — the census verdict).
+    CSS-module class prefixes (JobCard_title/…) with hashed suffixes;
+    the JSON-LD ItemList is URL-only (no job fields)."""
+    try:
+        from curl_cffi import requests as cr  # noqa: PLC0415
+    except ImportError:
+        return [], "not-installed"
+    try:
+        r = cr.get("https://www.talent.com/jobs?k=product+manager"
+                   "&l=United+States", impersonate="chrome131", timeout=30)
+        if r.status_code != 200:
+            return [], f"error:status{r.status_code}"
+    except Exception as exc:
+        return [], f"error:{type(exc).__name__}"
+    rows: list[dict] = []
+    for m in re.finditer(
+            r'<article class="JobCard_card[^"]*"[^>]*>(.*?)</article>',
+            r.text, re.DOTALL):
+        card = m.group(1)
+
+        def _cls(prefix: str) -> str:
+            mm = re.search(
+                rf'class="{prefix}[^"]*"[^>]*>(.*?)</',
+                card, re.DOTALL)
+            return re.sub(r"<[^>]+>", "", mm.group(1)).strip() if mm else ""
+
+        title = _cls("JobCard_title")
+        company = _cls("JobCard_company")
+        loc = _cls("JobCard_location")
+        snippet = _cls("JobCard_snippet")
+        dm = re.search(r'datetime="([^"]+)"', card, re.IGNORECASE)
+        href = re.search(r'href="/view\?id=(\d+)"', card)
+        if not title:
+            continue
+        rows.append({
+            "title": title, "company": company,
+            "loc": loc[:80],
+            "url": (f"https://www.talent.com/view?id={href.group(1)}"
+                    if href else ""),
+            "posted": (dm.group(1) or "")[:10] if dm else "",
+            "desc": snippet[:12000],
+            "source": "talent", "layer": "l2",
+            "query": "talent:pm", "rid": "",
+        })
+    return rows, "ok"
+
+
+def fetch_hn() -> tuple[list[dict], str]:
+    """S38 L2: HN Who's Hiring via the in-repo adapter (the deferred
+    v1.5) — the adapter returns list[Job] dataclasses (title/company/
+    description/link/location/date_posted); tech-community by norm →
+    board-grade evidence hn_whihiring, applied post-merge (F2)."""
+    try:
+        from jobsearch.sources import hn_whos_hiring as hn  # noqa: PLC0415
+    except ImportError:
+        return [], "not-installed"
+    rows: list[dict] = []
+    verdicts: list[str] = []
+    for kw in ("Product Manager", "PM"):
+        try:
+            got = hn.fetch(kw, num_results=400)
+        except Exception:
+            verdicts.append(f"{kw[:2]}:{type(hn) and 'exc'}")
+            continue
+        for j in (got or []):
+            if not getattr(j, "title", ""):
+                continue
+            rows.append({
+                "title": j.title or "",
+                "company": j.company or "",
+                "loc": (j.location or "")[:80],
+                "url": j.link or "",
+                "posted": (j.date_posted or "")[:10],
+                "desc": (j.description or "")[:12000],
+                "source": "hn", "layer": "l2",
+                "query": f"hn:{kw.lower()}",
+                "rid": f"hn:{j.id or j.link or j.title[:40]}",
+            })
+    verdict = ("ok" if rows or not verdicts
+               else "partial:" + ",".join(verdicts))
+    return rows, verdict
+
+
 def project_l0() -> tuple[list[dict], str]:
-    """L0: the bundle PM projection (manifest-derived canonical)."""
+    """L0: the bundle PM projection (manifest-derived canonical).
+    S38/F15: the board_family demotion is REMOVED — the R2-hardened
+    grammar (88 adversarial pins) is the family authority; the
+    jobFamilyGroup stays as a note field only."""
     if not BUNDLE.exists():
         return [], "no-bundle"
     d = json.load(open(BUNDLE))
@@ -431,9 +1048,6 @@ def project_l0() -> tuple[list[dict], str]:
         fam, ev = classify_family(title)
         if fam == "other":
             continue
-        if fam == "pm" and j.get("jobFamilyGroup") and \
-                "product" not in (j.get("jobFamilyGroup") or "").lower():
-            fam, ev = "adjacent", "board_family"
         remote = bool(j.get("remoteFlag"))
         us = _classify_loc(j.get("country") or
                            j.get("primaryLocation") or "")
@@ -478,7 +1092,9 @@ def _norm_day(posted: str):
 
 
 def sweep(queries: list[str], skip_gj: bool = False,
-          skip_li: bool = False) -> int:
+          skip_li: bool = False, skip: str = "") -> int:
+    skip_set = {s.strip() for s in skip.split(",") if s.strip()}
+    skip_set.discard("")
     started = datetime.now(timezone.utc)
     env = {"sources": {}, "layers": {}}
     all_rows: list[dict] = []
@@ -488,19 +1104,35 @@ def sweep(queries: list[str], skip_gj: bool = False,
     env["layers"]["l0"] = len(l0)
     all_rows += l0
 
+    # S38 §4a/F9: registration order matters for intra-tier ties —
+    # findwork (full JD, cleanest) first in l1.5; the snippet tier
+    # follows; muse/usajobs = l2 closure-tier (deliberate, documented).
     fetchers: list[tuple[str, object, list]] = [
+        ("findwork", fetch_findwork, [queries]),
         ("adzuna", fetch_adzuna, [queries]),
+        ("dice", fetch_dice, [queries]),
+        ("careerjet", fetch_careerjet, [queries]),
         ("jooble", fetch_jooble, [queries]),
         ("indeed", fetch_jobspy_indeed, [queries]),
     ]
-    if not skip_li:
+    if not skip_li and "li" not in skip_set:
         fetchers.append(("li_keyword", fetch_li_keyword, [queries]))
     fetchers += [
+        ("yc", fetch_yc, []),
+        ("wellfound", fetch_wellfound, []),
+        ("hn", fetch_hn, []),
         ("wwr_rss", fetch_wwr, []),
         ("free_trio", fetch_free_trio, []),
+        ("talent", fetch_talent, []),
     ]
-    if not skip_gj:
+    if "muse" not in skip_set:
+        fetchers.append(("muse", fetch_muse, []))
+    if "usajobs" not in skip_set:
+        fetchers.append(("usajobs", fetch_usajobs, [queries]))
+    if not skip_gj and "gj" not in skip_set:
         fetchers.append(("gj_role", fetch_gj_role, [queries]))
+    fetchers = [(n, f, a) for n, f, a in fetchers
+                if n not in skip_set]
 
     for name, fn, args in fetchers:
         try:
@@ -515,13 +1147,21 @@ def sweep(queries: list[str], skip_gj: bool = False,
             env["layers"].get(rows[0]["layer"] if rows else "?", 0) + len(rows)
         print(f"[sweep:{name:<12}] {len(rows):>4} rows | {v}")
 
-    # per-source usgate priors (design §4)
+    # per-source usgate priors (design §4 + S38 §4a/F21 — the new
+    # sources default client-side: dice/careerjet leak 1-2/30 non-US
+    # rows (measured, caught); yc is US-scoped by board filter)
     SRC_US = {"adzuna": "us", "jooble": None, "indeed": "us",
               "li": "us", "wwr": "remote", "remoteok": None,
               "jobicy": None, "arbeitnow": None, "gj": None,
-              "board": "skip"}
+              "board": "skip", "dice": None, "careerjet": None,
+              "findwork": None, "muse": None, "usajobs": "us",
+              "yc": None, "wellfound": None, "hn": None,
+              "talent": None}
     counters = {"family_other": 0, "nontech_gate": 0, "dedup_merge": 0,
-                "usgate_non_us": 0, "pending_sector": 0}
+                "usgate_non_us": 0, "pending_sector": 0,
+                "staffing_repost": 0, "employer_anonymized": 0,
+                "dedup_dateless": 0, "residual_dup_est": 0,
+                "g1b_title": 0}
     dropped: list[dict] = []
     kept: list[dict] = []
     seniority_conflicts = 0
@@ -554,12 +1194,25 @@ def sweep(queries: list[str], skip_gj: bool = False,
         if r.get("us_status") == "non_us":
             counters["usgate_non_us"] += 1
             continue
-        # gates (G1 + sector verdict) — apply to pm AND adjacent rows
+        # gates (G1 + G1B + sector verdict) — apply to pm AND adjacent rows
         if g1_fires(title) or g1_fires(r.get("loc", "")):
             counters["nontech_gate"] += 1
             dropped.append({**r, "reason": "g1_title",
                             "recoverable": False})
             continue
+        if g1b_fires(title):                 # S38: title-only, recoverable
+            counters["g1b_title"] += 1
+            dropped.append({**r, "reason": "g1b_title",
+                            "recoverable": True})
+            continue
+        # S38 flags (never drops): staffing repost + anonymized employer
+        r["staffing_evidence"] = ("agency" if is_staffing_company(company)
+                                   else "")
+        if r["staffing_evidence"]:
+            counters["staffing_repost"] += 1
+        r["employer_anonymized"] = bool(is_anonymized_employer(company))
+        if r["employer_anonymized"]:
+            counters["employer_anonymized"] += 1
         act, sev, reason = sector_verdict(
             title, company, r.get("desc", ""),
             r.get("company_key"))
@@ -568,22 +1221,39 @@ def sweep(queries: list[str], skip_gj: bool = False,
             dropped.append({**r, "reason": reason, "recoverable": True})
             continue
         r["sector_evidence"] = sev
+        r["sector_reason"] = reason
         if act == "pending":
             counters["pending_sector"] += 1
         kept.append(r)
 
-    # dedup: intra-layer exact, cross-layer title_core ±1 day
+    # dedup: rid-dedup (S38 F1) → intra-layer exact → cross-layer
+    # title_core ±1 day → dateless-donor (S38 F1: exact raw-title +
+    # company_key, day=None donors)
+    _ANON_KEYS = {"confidential", "company-confidential", "stealth",
+                  "stealth-startup", "unknown", "hidden", "undisclosed",
+                  "anonymous", "private-company",
+                  "a-vinyl-bar-in-shibuya"}
     by_key: dict[tuple, dict] = {}
+    by_rid: dict[str, dict] = {}
     for r in kept:
         day = _norm_day(r.get("posted", ""))
+        # F14: anonymized employer keys never merge (shared key across
+        # unrelated employers — false-merge guard)
+        ck = r["company_key"]
+        if ck in _ANON_KEYS:
+            ck = f"{ck}#{r.get('rid') or id(r)}"      # salted
         exact = (re.sub(r"\W", "", (r["title"] or "").lower()),
-                 r["company_key"], r.get("layer"), day)
-        core = (title_core(r["title"] or ""), r["company_key"])
+                 ck, r.get("layer"), day)
+        core = (title_core(r["title"] or ""), ck)
+        rid = r.get("rid") or ""
         merge_into = None
-        for k, cand in by_key.items():
-            if cand.get("_exact") == exact:
-                merge_into = k
-                break
+        if rid and rid in by_rid:                    # F1: rid-dedup first
+            merge_into = id(by_rid[rid])
+        if merge_into is None:
+            for k, cand in by_key.items():
+                if cand.get("_exact") == exact:
+                    merge_into = k
+                    break
         if merge_into is None:
             for k, cand in by_key.items():
                 if cand.get("_core") == core and \
@@ -595,10 +1265,23 @@ def sweep(queries: list[str], skip_gj: bool = False,
                     day_delta_hist[str(d)] = \
                         day_delta_hist.get(str(d), 0) + 1
                     break
+        if merge_into is None and day is None:
+            # F1 dateless-donor: exact raw title + same company key
+            for k, cand in by_key.items():
+                if cand.get("_title_norm") == re.sub(
+                        r"\W", "", (r["title"] or "").lower()) and \
+                        cand.get("_ck") == ck:
+                    merge_into = k
+                    counters["dedup_dateless"] += 1
+                    break
         if merge_into is None:
             r["_exact"], r["_core"], r["_day"], r["_layer"] = \
                 exact, core, day, r.get("layer")
+            r["_ck"], r["_title_norm"] = ck, re.sub(
+                r"\W", "", (r["title"] or "").lower())
             by_key[id(r)] = r
+            if rid:
+                by_rid[rid] = r
             continue
         # MERGE, never drop (the 8-rule table; priority = LAYER_RANK:
         # L0 board > L3 gj > L1.5 keyed > L1 li > L2 closure)
@@ -628,6 +1311,18 @@ def sweep(queries: list[str], skip_gj: bool = False,
         # L4-detail > gj-card > li-card ladder = the rank order)
         if not survivor.get("loc") and donor.get("loc"):
             survivor["loc"] = donor["loc"]
+        # S38 F2: the survivor INHERITS the donor's keep-side sector
+        # evidence when its own is blank (yc/hn/jd evidence must
+        # survive the merge that precedes it)
+        if not survivor.get("sector_evidence") and \
+                donor.get("sector_evidence"):
+            survivor["sector_evidence"] = donor["sector_evidence"]
+            survivor["sector_reason"] = donor.get("sector_reason", "")
+        if not survivor.get("url") and donor.get("url"):
+            survivor["url"] = donor["url"]
+        if donor.get("staffing_evidence") and \
+                not survivor.get("staffing_evidence"):
+            survivor["staffing_evidence"] = donor["staffing_evidence"]
         survivor.setdefault("provenance", []).append({
             "layer": donor.get("layer"), "source": donor.get("source"),
             "title": donor.get("title"), "posted": donor.get("posted")})
@@ -635,13 +1330,49 @@ def sweep(queries: list[str], skip_gj: bool = False,
             # the NEW row outranks the stored one — swap membership
             r["_exact"], r["_core"], r["_day"], r["_layer"] = \
                 exact, core, day, r.get("layer")
+            r["_ck"], r["_title_norm"] = ck, re.sub(
+                r"\W", "", (r["title"] or "").lower())
             del by_key[merge_into]
             by_key[id(r)] = r
+            if rid:
+                by_rid[rid] = r
 
     merged = list(by_key.values())
+
+    # S38 F2: post-merge board-grade evidence — every YC-backed company
+    # (the yc layer's companySlug set, slug-equal to company_key) and
+    # every hn-source row get keep-side board evidence
+    yc_slugs = {r.get("yc_slug") for r in all_rows
+                if r.get("source") == "yc" and r.get("yc_slug")}
+    for r in merged:
+        ck = re.sub(r"[^a-z0-9]+", "-", (r.get("company") or "")
+                    .lower()).strip("-")
+        if r.get("sector_evidence") in ("", None):
+            if ck and ck in yc_slugs:
+                r["sector_evidence"], r["sector_reason"] = \
+                    "board", "yc_startup"
+            elif any(p.get("source") == "hn"
+                     for p in r.get("provenance", [])) or \
+                    r.get("source") == "hn":
+                r["sector_evidence"], r["sector_reason"] = \
+                    "board", "hn_whihiring"
+
+    # S38 F10: the cross-source residual-dup estimate (title_core +
+    # loc-prefix collisions across sources — the measured gap bucket
+    # that feeds the companyKey variant map's next growth)
+    seen_pairs: set[tuple] = set()
+    for r in merged:
+        pair = (title_core(r["title"] or ""),
+                (r.get("loc") or "").split(",")[0].strip().lower())
+        if pair in seen_pairs:
+            counters["residual_dup_est"] += 1
+        else:
+            seen_pairs.add(pair)
+
     for r in merged:
         r.pop("_exact", None), r.pop("_core", None)
         r.pop("_day", None), r.pop("_layer", None)
+        r.pop("_ck", None), r.pop("_title_norm", None)
 
     # outputs (write-atomic)
     ROLES_DIR.mkdir(parents=True, exist_ok=True)
@@ -710,8 +1441,27 @@ def sweep(queries: list[str], skip_gj: bool = False,
 
     # drift ledger + baseline fold (design §5)
     verdict = "complete" if len(env["sources"]) else "failed"
-    dead = [k for k, v in env["sources"].items()
-            if v.startswith(("error", "crash", "preflight-fail"))]
+    # S38: dead = error verdict AND zero rows delivered (an engine that
+    # hit its quota wall mid-run but delivered 1,800 rows is PARTIAL,
+    # not dead — the drift source-death alert must not false-fire)
+    rows_by_source: dict[str, int] = {}
+    for r in all_rows:
+        rows_by_source[r.get("source", "?")] = \
+            rows_by_source.get(r.get("source", "?"), 0) + 1
+    ledger_name = {"board": "l0_bundle", "li": "li_keyword",
+                   "gj": "gj_role", "remoteok": "free_trio",
+                   "jobicy": "free_trio", "arbeitnow": "free_trio"}
+    dead = []
+    for k, v in env["sources"].items():
+        if not v.startswith(("error", "crash", "preflight-fail")):
+            continue
+        delivered = 0
+        for src_key, ledger_key in ledger_name.items():
+            if ledger_key == k:
+                delivered += rows_by_source.get(src_key, 0)
+        delivered += rows_by_source.get(k, 0)
+        if delivered == 0:
+            dead.append(k)
     if len(merged) == 0:
         verdict = "failed"
     LEDGER.parent.mkdir(parents=True, exist_ok=True)
@@ -743,6 +1493,9 @@ def sweep(queries: list[str], skip_gj: bool = False,
         "family": r["family"], "familyEvidence": r.get("family_evidence"),
         "seniority": r["seniority"], "usStatus": r.get("us_status"),
         "sectorEvidence": r.get("sector_evidence", ""),
+        "sectorReason": r.get("sector_reason", ""),
+        "staffingEvidence": r.get("staffing_evidence", ""),
+        "employerAnonymized": bool(r.get("employer_anonymized")),
         "source": r.get("source"), "layer": r.get("layer"),
         "descLen": len(r.get("desc", "")),
         "desc": (r.get("desc", "") or "")[:4000],
@@ -770,7 +1523,9 @@ def _csv_bytes(rows: list[dict]) -> bytes:
         return b""
     cols = ["title", "company", "company_key", "loc", "url", "posted",
             "family", "family_evidence", "seniority", "us_status",
-            "us_evidence", "sector_evidence", "source", "layer",
+            "us_evidence", "sector_evidence", "sector_reason",
+            "staffing_evidence", "employer_anonymized",
+            "source", "layer",
             "query", "rid", "description_source", "desc_len", "reason",
             "recoverable"]
     import io
@@ -797,13 +1552,16 @@ def main() -> int:
                     help="core + tail variants (the monthly rotation)")
     ap.add_argument("--gj-only", action="store_true",
                     help="the firecrawl recovery probe (L3 only)")
+    ap.add_argument("--skip", default="",
+                    help="comma-separated source names to skip "
+                         "(li,gj,muse,usajobs... — local-run routing)")
     args = ap.parse_args()
     queries = PM_QUERY_CORE + (PM_QUERY_TAIL if args.full else [])
     if args.gj_only:
         rows, v = fetch_gj_role(PM_QUERY_CORE[:2])
         print(f"[gj-probe] {len(rows)} rows | {v}")
         return 0
-    return sweep(queries)
+    return sweep(queries, skip=args.skip)
 
 
 if __name__ == "__main__":
