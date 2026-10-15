@@ -175,6 +175,10 @@ class TestMainLegCap:
         assert _result(genv) == "complete"
 
     def test_sweep_pending_while_legs_remain(self, db, genv, monkeypatch):
+        # [S37-W3 amended] the sweep+refresh path now LOOPS while work
+        # remains within the budget (the pre-S37 one-batch-then-settle
+        # shape is superseded). The fake CLEARS the work per batch —
+        # the loop runs, the work empties, the result settles complete.
         conn = sqlite3.connect(db)
         conn.execute("UPDATE directory SET status='error', attempts=0, "
                      "last_probed_at='2020-01-01 00:00:00' "
@@ -182,19 +186,29 @@ class TestMainLegCap:
         conn.commit()
         conn.close()
         monkeypatch.setattr(dr, "LEGS_MAX_PER_DAY", 5)
-        calls: list[str] = []
+        monkeypatch.setattr(dr, "BUDGET", 5)
+        calls: list[tuple] = []
 
-        def fake_run_batch(size):
-            calls.append(size)
+        def fake_run_batch(size, refresh=False):
+            calls.append((size, refresh))
+            # the batch genuinely clears the reclaimable work (the
+            # aged error row heals) — the loop's work_left then empties
+            c = sqlite3.connect(db)
+            c.execute("UPDATE directory SET status='live', attempts=1, "
+                      "last_probed_at=datetime('now') WHERE slug='acme'")
+            c.commit()
+            c.close()
             return True, "swept 1 error row"
         monkeypatch.setattr(dr, "run_batch", fake_run_batch)
         assert dr.main() == 0
-        assert calls == [dr.BATCH]           # the sweep batch actually ran
-        assert _result(genv) == "pending"    # reclaimable work remains
+        assert calls and calls[0][0] == dr.BATCH   # the sweep batch ran
+        assert all(c[1] for c in calls)            # refresh-armed batches
+        assert _result(genv) == "complete"         # work emptied honestly
 
     def test_no_work_day_burns_no_leg(self, db, genv, monkeypatch):
         conn = sqlite3.connect(db)
-        conn.execute("UPDATE directory SET status='live' "
+        conn.execute("UPDATE directory SET status='live', "
+                     "last_probed_at=datetime('now') "
                      "WHERE slug='acme'")
         conn.commit()
         conn.close()

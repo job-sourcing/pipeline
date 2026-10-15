@@ -211,3 +211,88 @@ class TestDaemonRaceGuard:
         monkeypatch.setitem(batd.PROBES, "lever", lambda slug: ("live", 1, ""))
         batd.run_batch(db, None, batch=5, sleep_s=0)
         assert _row(db, "lever", "x") == ("live", 1)
+
+
+# ── S37-W3: the universe-refresh mode (D-S37-1 R4/A5) ─────────────────
+
+class TestRefreshMode:
+    """The refresh selection: live boards stale > refresh_days re-probe;
+    dead boards re-probe at the (longer) dead cadence; pending keeps
+    PRIORITY; refresh claims reset attempts (the per-cycle budget)."""
+
+    @staticmethod
+    def _stale(conn, ats, slug, status, days, attempts=0):
+        conn.execute(
+            "INSERT INTO directory (ats, slug, status, attempts, "
+            "last_probed_at) VALUES (?, ?, ?, ?, "
+            "datetime('now', ?))",
+            (ats, slug, status, attempts, f"-{days} days"))
+        conn.commit()
+
+    def _claim(self, db, refresh_days=30, dead_refresh_days=95, batch=50):
+        # capture what run_batch SELECTED via the probe stub: every
+        # claimed slug gets probed (status overwritten) — the claimed
+        # set is observable through the probe's side effect
+        probed = []
+
+        def fake_probe(slug):
+            probed.append(slug)
+            return "live", 3, "Probed Co"
+
+        batd.PROBES["lever"] = fake_probe
+        batd.run_batch(db, "lever", batch, 0.0,
+                       refresh_days=refresh_days,
+                       dead_refresh_days=dead_refresh_days)
+        return probed
+
+    def test_stale_live_board_is_reprobed(self, db):
+        self._stale(db, "lever", "old-acme", "live", 45)
+        probed = self._claim(db)
+        assert "old-acme" in probed
+
+    def test_fresh_live_board_is_not_reprobed(self, db):
+        self._stale(db, "lever", "fresh-acme", "live", 3)
+        probed = self._claim(db)
+        assert "fresh-acme" not in probed
+
+    def test_dead_board_reprobes_only_past_dead_cutoff(self, db):
+        self._stale(db, "lever", "old-dead", "dead", 100)
+        self._stale(db, "lever", "newer-dead", "dead", 40)
+        probed = self._claim(db)
+        assert "old-dead" in probed          # 100d > 95d cutoff
+        assert "newer-dead" not in probed    # 40d < 95d cutoff
+
+    def test_pending_keeps_priority_over_refresh(self, db):
+        self._stale(db, "lever", "stale-live", "live", 60)
+        db.execute(
+            "INSERT INTO directory (ats, slug, status) "
+            "VALUES ('lever', 'brand-new', 'pending')")
+        db.commit()
+        probed = self._claim(db)
+        # the pending row is claimed (priority); the stale live row is
+        # NOT in this batch (pending drains first)
+        assert "brand-new" in probed
+        assert "stale-live" not in probed
+
+    def test_refresh_claim_resets_attempts(self, db):
+        self._stale(db, "lever", "capped-acme", "live", 45, attempts=3)
+        probed = self._claim(db)
+        assert "capped-acme" in probed        # claims despite attempts=3
+        row = _row(db, "lever", "capped-acme")
+        # probed once this cycle: attempts went 0 (reset) + 1 = 1 — NOT 4
+        assert row[1] == 1, (
+            f"refresh claim must reset the attempts budget per cycle, "
+             f"got {row[1]}")
+
+    def test_refresh_disabled_by_default(self, db):
+        self._stale(db, "lever", "old-acme", "live", 400)
+        probed = []
+        batd.PROBES["lever"] = lambda slug: (probed.append(slug), "live", 1, "x")[1:]
+        batd.run_batch(db, "lever", 50, 0.0)   # no refresh_days
+        assert "old-acme" not in probed
+
+    def test_stalest_first_ordering(self, db):
+        self._stale(db, "lever", "ancient", "live", 90)
+        self._stale(db, "lever", "merely-old", "live", 40)
+        probed = self._claim(db, batch=1)
+        assert probed == ["ancient"]           # ORDER BY last_probed_at ASC

@@ -251,13 +251,25 @@ def _daemon_is_draining() -> bool:
 
 
 def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
-              sleep_s: float, retry_errors: bool = False) -> None:
+              sleep_s: float, retry_errors: bool = False,
+              refresh_days: int = 0,
+              dead_refresh_days: int = 95) -> None:
     """Probe up to `batch` pending slugs (optionally one ATS only).
 
     Transient 'error' rows (timeouts, 429s, connection resets) are NOT
     re-queued by default — pass retry_errors=True to re-claim error rows
     aged ≥1h (only after pending rows drain), capped at _MAX_ATTEMPTS
     probes per slug so permanently failing endpoints don't retry forever.
+
+    [S37-W3 / D-S37-1 R4+A5 — the refresh mode] refresh_days > 0 enables
+    the UNIVERSE REFRESH: live boards whose last probe is older than
+    refresh_days (default 30 when enabled) are re-probed, plus dead
+    boards older than dead_refresh_days (the quarterly resurrection
+    check). Pending rows keep PRIORITY (a fresh drain never starves);
+    refresh rows get a FRESH attempts budget (attempts reset to 0 at
+    claim — a re-probe failure marches toward the cap within THIS
+    cycle only, never across cycles). Selection is staleness-first
+    (oldest probed first — the campaign front is honest).
     Refuses to run while the prober daemon is draining (fresh heartbeat)
     unless invoked by the daemon itself.
     """
@@ -276,6 +288,34 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
     query += " ORDER BY RANDOM() LIMIT ?"      # random → resumable batches
     args.append(batch)                          # spread across ATSes
     rows = conn.execute(query, args).fetchall()
+    if not rows and refresh_days > 0:
+        # [S37-W3] the universe refresh: pending is drained — re-probe
+        # the stalest live boards (and the quarterly dead). attempts
+        # resets at claim (the per-cycle budget); ORDER BY last_probed_at
+        # keeps the campaign front honest (the stalest boards first).
+        rq = ("SELECT ats, slug FROM directory WHERE "
+              "(status = 'live' AND (last_probed_at IS NULL OR "
+              " last_probed_at < datetime('now', ?))) OR "
+              "(status = 'dead' AND (last_probed_at IS NULL OR "
+              " last_probed_at < datetime('now', ?)))")
+        rargs: list = [f"-{refresh_days} days", f"-{dead_refresh_days} days"]
+        if ats:
+            rq += " AND ats = ?"
+            rargs.append(ats)
+        rq += " ORDER BY last_probed_at ASC, RANDOM() LIMIT ?"
+        rargs.append(batch)
+        rows = conn.execute(rq, rargs).fetchall()
+        if rows:
+            print(f"[batch] refresh: re-probing {len(rows)} stale boards "
+                  f"(live >{refresh_days}d, dead >{dead_refresh_days}d)")
+            conn.execute(
+                "UPDATE directory SET attempts = 0 WHERE "
+                "(status = 'live' AND (last_probed_at IS NULL OR "
+                " last_probed_at < datetime('now', ?))) OR "
+                "(status = 'dead' AND (last_probed_at IS NULL OR "
+                " last_probed_at < datetime('now', ?)))",
+                (f"-{refresh_days} days", f"-{dead_refresh_days} days"))
+            conn.commit()
     if not rows and retry_errors:
         # nothing pending — sweep up transient errors aged ≥1h that still
         # have attempts left (CodeRabbit: honor the --batch limit here too;
@@ -363,6 +403,15 @@ def main() -> int:
     ap.add_argument("--retry-errors", action="store_true",
                     help="also re-claim transient error rows (aged 1h+, "
                          f"max {_MAX_ATTEMPTS} attempts per slug)")
+    ap.add_argument("--refresh-days", type=int, default=0,
+                    help="[S37-W3] enable the universe refresh: re-probe "
+                         "live boards whose last probe is older than N "
+                         "days (runs only when no pending rows remain; "
+                         "attempts reset per cycle)")
+    ap.add_argument("--dead-refresh-days", type=int, default=95,
+                    help="[S37-W3] the dead-board resurrection cadence "
+                         "(days; default 95 ≈ quarterly — only used when "
+                         "--refresh-days is set)")
     ap.add_argument("--stats", action="store_true")
     args = ap.parse_args()
 
@@ -374,7 +423,9 @@ def main() -> int:
             stats(conn)
         if not args.stats and not args.seed:
             run_batch(conn, args.ats, args.batch, args.sleep,
-                      retry_errors=args.retry_errors)
+                      retry_errors=args.retry_errors,
+                      refresh_days=args.refresh_days,
+                      dead_refresh_days=args.dead_refresh_days)
     finally:
         conn.close()
     return 0

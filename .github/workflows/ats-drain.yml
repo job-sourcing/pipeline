@@ -1,0 +1,178 @@
+name: ATS Directory Drain
+
+# [S37-W3 / D-S37-1 R4+A5] the census-drain MIGRATION + the universe
+# refresh. History: this lane ran jsr-side (private repo, the 2,000
+# min/mo free-tier pressure) and DIED Sep 8 2026 — never migrated when
+# the watch lanes moved to this public runtime (the 2026-09-13 org
+# migration); the ats_directory_snapshot aged to 2026-09-10 while
+# canon's discovery lane 5 + projects_bundle consumed it. The S37
+# audit (D-S37-1 F5) ordered the resurrection HERE — public repo =
+# free minutes (the billing concern that shaped the jsr lane's guards
+# dissolves).
+#
+# THE REFRESH MODE (the S37-W3 port, three coordinated sites):
+#   build_ats_directory.py --refresh-days N --dead-refresh-days M
+#     live boards stale > N (default 30) re-probe; dead boards stale
+#     > M (default 95 ≈ quarterly — the resurrection check); pending
+#     rows keep priority; refresh claims reset attempts (per-cycle
+#     budget — the cap never marches across cycles); selection is
+#     staleness-first (the campaign front is honest).
+#   gha_drain.py — the no-op gate now counts refresh-eligible rows
+#     (the pre-S37 gate exited at pending==0, PERMANENT since Sep 8:
+#     9,705 live boards all aged past 30d with nothing re-probing
+#     them); DRAIN_RESULT=pending while the universe is stale → the
+#     chain re-triggers (the leg cap bounds the day as always).
+#   THIS workflow's gate — the third copy of the predicate (the gate
+#     SQL counts pending + reclaimable errors + refresh-eligible, so
+#     the install/drain/export steps fire when the universe is stale).
+#
+# THE FIRST CAMPAIGN (measured 2026-10-15): 9,705 stale-live + 6,167
+# stale-dead re-probes ≈ 2-31 legs at the 80-min/8-legs-day cap — a
+# multi-day self-retriggering chain, then steady state ≈ 9,705×7/30 +
+# 6,167/13 ≈ 2,740 re-probes/week ≈ 45-115 min/week on free minutes.
+#
+# THE CADENCE (D-S37-1 R4): weekly, Wednesday 05:07 UTC — off-peak
+# odd minute, clear of the drain-era slots (06:00/06:30 backfills are
+# jsr-history), the 06:45 board-watch, and the 07:45 li lane. The
+# chain self-triggers within the day; the weekly cron re-kicks.
+#
+# Budget guards inherited from the jsr lane (audit B1/F4/F6/F8/F9):
+#   - ~80-min work budget per leg (DRAIN_BUDGET_SECONDS=4800)
+#   - 8 legs/day cap (date-keyed, in the committed DB)
+#   - 5-consecutive-failure cutoff → DRAIN_RESULT=failed (RED below)
+#   - the sanity-check-before-commit guard (a bad DB is never clobbered)
+#   - the race-proof checkpoint (state rescued to /tmp, re-committed
+#     on the LATEST main up to 3 attempts, RED on persistent failure)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 5 * * 3"    # Wednesdays 05:07 UTC — off-peak odd minute
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: ats-drain
+  cancel-in-progress: false
+
+jobs:
+  drain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history: the checkpoint step rebases onto a moved main
+
+      - name: Check work (cheap no-op gate — pending + reclaimable errors + STALE UNIVERSE)
+        run: |
+          python3 - <<'EOF'
+          import pathlib, os, sqlite3
+          db = pathlib.Path("ingest/data/ats_directory.db")
+          if not db.exists():
+              raise SystemExit(
+                  "ats_directory.db is missing from the repo — "
+                  "re-seed (ingest/scripts/build_ats_directory.py --seed) "
+                  "and commit it before running the drain")
+          # Needs-work = pending rows + aged reclaimable errors (audit F4)
+          # + refresh-eligible rows (S37-W3: live stale > 30d, dead stale
+          # > 95d — a stale universe is WORK; the pre-S37 gate's pending-
+          # only predicate was permanently 0 since Sep 8).
+          n = sqlite3.connect(f"file:{db}?mode=ro", uri=True).execute(
+              "SELECT COUNT(*) FROM directory WHERE status='pending' "
+              " OR (status='error' AND attempts < 2 "
+              "     AND (last_probed_at IS NULL "
+              "          OR last_probed_at < datetime('now', '-1 hour'))) "
+              " OR (status='live' AND (last_probed_at IS NULL "
+              "     OR last_probed_at < datetime('now', '-30 days'))) "
+              " OR (status='dead' AND (last_probed_at IS NULL "
+              "     OR last_probed_at < datetime('now', '-95 days')))"
+          ).fetchone()[0]
+          print(f"rows needing work (pending + reclaimable errors + "
+                f"stale universe): {n}")
+          with open(os.environ["GITHUB_ENV"], "a") as f:
+              f.write(f"DRAIN_PENDING={n}\n")
+          EOF
+
+      - uses: actions/setup-python@v5
+        if: env.DRAIN_PENDING && env.DRAIN_PENDING != '0'
+        with:
+          python-version: "3.12"
+
+      - name: Install package (base deps only — no credentials needed)
+        if: env.DRAIN_PENDING && env.DRAIN_PENDING != '0'
+        run: pip install -e ingest
+
+      - name: Drain (time-budgeted, resumable — refresh mode armed)
+        if: env.DRAIN_PENDING && env.DRAIN_PENDING != '0'
+        env:
+          DRAIN_REFRESH_DAYS: "30"
+          DRAIN_DEAD_REFRESH_DAYS: "95"
+        run: python3 scripts/gha_drain.py
+
+      - name: Export snapshot
+        if: always() && env.DRAIN_PENDING && env.DRAIN_PENDING != '0'
+        run: python3 scripts/export_ats_directory.py
+
+      - name: Checkpoint state to git
+        if: always() && env.DRAIN_PENDING && env.DRAIN_PENDING != '0'
+        run: |
+          set -e
+          # 1) Sanity-check the DB BEFORE anything touches it (audit F8: a
+          # gate failure leaves DRAIN_PENDING unset, which passes '!= 0'; a
+          # bad DB must never be clobbered into a 0-byte commit).
+          python3 -c "import sqlite3; c=sqlite3.connect('file:ingest/data/ats_directory.db?mode=ro', uri=True); assert c.execute('SELECT COUNT(*) FROM directory').fetchone()[0] > 0, 'directory table empty/missing'"
+          # 2) Preserve this leg's state OUTSIDE the worktree FIRST (audit F7:
+          # rescue the state even if the WAL one-liner below fails).
+          cp ingest/data/ats_directory.db /tmp/state.db
+          cp ingest/data/ats_directory_snapshot.json /tmp/state_snapshot.json
+          # 3) Never commit a hot WAL — belt-and-braces only (the runner
+          # checkpoints too), so a failure here must not abort the rescue.
+          python3 -c "import sqlite3; sqlite3.connect('ingest/data/ats_directory.db').execute('PRAGMA wal_checkpoint(TRUNCATE)')" || true
+          # 4) Re-commit on top of the LATEST main (race-proof: works even if
+          # main moved mid-leg — the naive pull --rebase died on "unstaged
+          # changes" in run #1 and lost a full leg).
+          git config user.name "ats-drain-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main          # clean tree, latest main
+            cp /tmp/state.db ingest/data/ats_directory.db
+            cp /tmp/state_snapshot.json ingest/data/ats_directory_snapshot.json
+            git add ingest/data/ats_directory.db ingest/data/ats_directory_snapshot.json
+            if git diff --cached --quiet; then
+              echo "no state change to commit (already at latest checkpoint)"
+              push_ok=1
+              break
+            fi
+            STATS=$(python3 -c "import sqlite3; print(dict(sqlite3.connect('file:ingest/data/ats_directory.db?mode=ro', uri=True).execute('SELECT status, COUNT(*) FROM directory GROUP BY status').fetchall()))")
+            git commit -m "ats-drain checkpoint: $STATS [skip ci]"
+            if git push; then push_ok=1; break; fi
+            echo "push attempt $i failed (main moved again?) — refetching and retrying"
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::push failed after 3 attempts — this leg's progress is lost; next leg resumes from the last committed checkpoint"
+            exit 1
+          fi
+
+      - name: Fail loudly on persistent drain failure
+        if: always() && env.DRAIN_RESULT == 'failed'
+        run: |
+          echo "::error::drain reported DRAIN_RESULT=failed — see the logs above (persistent drain failure must be RED, not a green silent no-op)"
+          exit 1
+
+      - name: Re-trigger next drain leg
+        if: always() && env.DRAIN_RESULT == 'pending'
+        run: |
+          if curl -sf -X POST \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/workflows/ats-drain.yml/dispatches" \
+              -d '{"ref":"main"}'; then
+            echo "next drain leg dispatched"
+          else
+            echo "::warning::failed to dispatch the next leg — the weekly 05:07 UTC cron will resume the drain"
+          fi
