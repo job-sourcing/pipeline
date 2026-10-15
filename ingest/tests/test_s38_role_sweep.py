@@ -287,6 +287,7 @@ class TestMergeRules:
             "wwr_rss": "fetch_wwr", "free_trio": "fetch_free_trio",
             "talent": "fetch_talent", "muse": "fetch_muse",
             "usajobs": "fetch_usajobs", "gj_role": "fetch_gj_role",
+            "builtin": "fetch_builtin", "himalayas": "fetch_himalayas",
         }
         for name, attr in attr_by_name.items():
             monkeypatch.setattr(rs, attr, mk(rows_by_source.get(name, [])))

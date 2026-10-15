@@ -204,14 +204,13 @@ def test_title_core_specialization_tail_stripped():
 
 # ── corpus distribution (post-closure; see module docstring) ───────────────
 def test_corpus_distribution_post_closure():
-    """pm 166 / adjacent 47 / other 307 on the 520 product-word corpus
+    """pm 168 / adjacent 47 / other 307 on the 522 product-word corpus
     titles = R2's 171/51/304 with their P2-5 + P1-4 closures applied
     (the delta IS the closure: 4 noun-first FPs + 4 non-role-noun
-    forms moved to other). Re-pinned 2026-10-15 after the niu
-    retirement + export #48 churn (526/47/312 → 520/46/307; pm class
-    held at 167) and AGAIN after the S38 grammar fix (the noun-first
-    program-mgmt redirect: Anthropic's "Manager, Product Program
-    Management" pm→adjacent, 167→166 / 46→47)."""
+    forms moved to other). Pins walked with the bundle: 526/47/312
+    (S36) → 520/46/307 (niu retirement + #48) → 520/166/47 (the S38
+    grammar fix: program-mgmt noun-first redirect) → 522/168/47 (the
+    #49 export + the W6-a companyKey re-key: +2 pm titles)."""
     import json
     import os
     bundle = "/home/z/my-project/public/data/jobs.json"
@@ -222,8 +221,8 @@ def test_corpus_distribution_post_closure():
     titles = {j.get("title", "") for j in b.get("jobs", [])
               if "product" in (j.get("title") or "").lower()}
     fams = Counter(classify_family(t)[0] for t in titles)
-    assert len(titles) == 520
-    assert fams == {"other": 307, "pm": 166, "adjacent": 47}
+    assert len(titles) == 522
+    assert fams == {"other": 307, "pm": 168, "adjacent": 47}
 
 
 # ── module invariants ──────────────────────────────────────────────────────

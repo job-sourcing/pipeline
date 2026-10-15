@@ -65,7 +65,14 @@ jobs:
           set -e
           ARGS=""
           if [ "$FULL_SWEEP" = "true" ]; then ARGS="--full"; fi
-          python3 scripts/role_sweep.py $ARGS
+          # S39 §A5/F13: the seed-envelope union — careerjet is HK-only
+          # (403 on Azure; firecrawl relay measured BROKEN), so the lane
+          # unions the archive's latest envelope to carry its rows.
+          # Runtime +8-12min (seed re-gate ~3k rows) — inside the 90min
+          # budget. USAJOBS falls back to the firecrawl relay (~12
+          # credits); builtin ~12; gj 7-21 (retry ladder).
+          python3 scripts/role_sweep.py $ARGS \
+            --seed-envelope ingest/data/ui/roles-pm.json
 
       - name: Drift audit (sweep-mode rides the same lane)
         env:

@@ -56,6 +56,7 @@ from jobsearch.rolefamilies import (  # noqa: E402
     g1b_fires,
     is_anonymized_employer,
     is_board_employer,
+    is_screening_post,
     is_staffing_company,
     pm_seniority,
     sector_verdict,
@@ -94,25 +95,134 @@ _US_STATE_TOKENS = set(
     "AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS "
     "MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV "
     "WI WY DC".split())
+_US_STATE_LC = {t.lower() for t in _US_STATE_TOKENS}   # S39 F0: the case fix
 _US_WORDS = {"us", "usa", "u.s.", "united", "states", "america", "u.s",
              "american"}
 _REMOTE_WORDS = ("remote", "work from home", "wfh", "anywhere",
                  "distributed", "telecommut")
 
+# S39 §A1/F4: the US-city allowlist (bare city names — "San Francisco" has
+# no state token; careerjet US rows carry bare state names, WaaS carries
+# bare cities). Multi-word cities match as 2-grams; single-token cities
+# require len>2 (la/sf excluded — collision guard). Deliberately absent:
+# vienna/newark/sterling (foreign collisions, F4).
+_US_CITIES = {
+    "new york", "new york city", "nyc", "los angeles", "chicago",
+    "houston", "phoenix", "philadelphia", "san antonio", "san diego",
+    "dallas", "san jose", "austin", "jacksonville", "san francisco",
+    "columbus", "fort worth", "charlotte", "indianapolis", "seattle",
+    "denver", "washington dc", "boston", "el paso", "nashville",
+    "detroit", "oklahoma city", "las vegas", "portland", "louisville",
+    "memphis", "baltimore", "milwaukee", "albuquerque", "tucson",
+    "fresno", "sacramento", "kansas city", "mesa", "atlanta", "omaha",
+    "raleigh", "long beach", "colorado springs", "virginia beach",
+    "miami", "oakland", "minneapolis", "tulsa", "bakersfield", "wichita",
+    "arlington", "aurora", "tampa", "new orleans", "cleveland",
+    "honolulu", "anaheim", "lexington", "orlando", "pittsburgh",
+    "cincinnati", "st louis", "saint louis", "st paul", "corpus christi",
+    "salt lake city", "slc", "provo", "boise", "santa monica",
+    "mountain view", "palo alto", "san mateo", "redwood city", "berkeley",
+    "cupertino", "sunnyvale", "santa clara", "san bruno", "burlingame",
+    "menlo park", "belmont", "foster city", "campbell", "milpitas",
+    "bay area", "sf bay area", "silicon valley", "cambridge ma",
+    "somerville ma", "brookline ma", "durham nc", "cary nc",
+    "bellevue wa", "kirkland wa", "redmond wa", "round rock tx",
+    "plano tx", "frisco tx", "irving tx", "allen tx", "framingham ma",
+    "waltham ma", "burlington ma", "needham ma", "woburn ma",
+    "billerica ma", "westford ma", "newton ma", "shrewsbury ma",
+    "marlborough ma", "hudson ma", "westborough ma", "sterling va",
+    "herndon va", "reston va", "arlington va",
+}
+# foreign-city guard (F4): these as the loc's LEADING comma-segment →
+# non_us even when a US state token follows ('Chennai, TN' / 'Perth, WA'
+# / 'Delhi, IN' — foreign states sharing US state codes)
+_FOREIGN_CITY_HEADS = {
+    "chennai", "perth", "delhi", "new delhi", "mumbai", "bangalore",
+    "bengaluru", "hyderabad", "kolkata", "calcutta", "coimbatore",
+    "madurai", "toronto", "vancouver", "montreal", "calgary", "ottawa",
+    "edmonton", "quebec", "sydney", "melbourne", "brisbane", "adelaide",
+    "auckland", "wellington", "dublin", "manchester uk", "london",
+    "berlin", "munich", "amsterdam", "paris", "singapore", "tokyo",
+    "hong kong", "shanghai", "beijing", "shenzhen",
+}
+# country markers (F4): single-word markers are WORD-BOUNDARY token
+# matches (substring 'india' would eat 'Indianapolis'); multi-word
+# markers match as substrings
+_FOREIGN_MARKERS_1W = {
+    "england", "scotland", "wales", "india", "australia", "canada",
+    "germany", "netherlands", "france", "spain", "italy", "portugal",
+    "brazil", "japan", "singapore", "philippines", "vietnam", "thailand",
+    "malaysia", "indonesia", "london", "berlin", "munich", "amsterdam",
+    "paris", "tokyo", "shanghai", "beijing", "shenzhen", "toronto",
+    "vancouver", "montreal", "calgary", "sydney", "melbourne", "dublin",
+}
+_FOREIGN_MARKERS_MW = (
+    "united kingdom", "new zealand", "hong kong", "republic of ireland",
+)
+# S39: bare US state FULL NAMES (careerjet's US rows carry bare state
+# names — the 1,884-row measurement depends on this)
+_US_STATE_NAMES = {
+    "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+    "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho",
+    "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana",
+    "maine", "maryland", "massachusetts", "michigan", "minnesota",
+    "mississippi", "missouri", "montana", "nebraska", "nevada",
+    "new hampshire", "new jersey", "new mexico", "new york",
+    "north carolina", "north dakota", "ohio", "oklahoma", "oregon",
+    "pennsylvania", "rhode island", "south carolina", "south dakota",
+    "tennessee", "texas", "utah", "vermont", "virginia", "washington",
+    "west virginia", "wisconsin", "wyoming", "district of columbia",
+}
+
 
 def _classify_loc(loc: str) -> str:
     """'us' | 'remote' | 'non_us' | 'ambiguous' — the client-side
-    classify for sources without a US-scoped endpoint."""
+    classify for sources without a US-scoped endpoint.
+
+    S39 §A1: the state-token CASE FIX (the set holds uppercase, the
+    compare lowercased — never matched, shipped S36, silently dropped
+    ~2,555 pm-family rows/sweep; audit/s39/usgate-bug-measurement.txt)
+    + the bare-city allowlist + the F4 foreign-collision guards.
+    'N Locations' (BuiltIn multi-loc cards) → ambiguous, never non_us.
+    """
     l = (loc or "").lower().strip()
     if not l:
         return "ambiguous"
+    if re.match(r"^\d+\s+locations?$", l):
+        return "ambiguous"                  # F11: BuiltIn multi-loc cards
     if any(w in l for w in _REMOTE_WORDS):
         return "remote"
     toks = set(re.split(r"[^a-z.]+", l))
+    # foreign markers first (F4): word-boundary single-word + substring
+    # multi-word
+    if (toks & _FOREIGN_MARKERS_1W or
+            any(m in l for m in _FOREIGN_MARKERS_MW)):
+        return "non_us"
+    head = re.split(r",", l)[0].strip()     # the leading city segment
+    if head in _FOREIGN_CITY_HEADS:
+        return "non_us"
     if _US_WORDS & toks:
         return "us"
-    for t in re.split(r"[^A-Za-z]+", l):
-        if len(t) == 2 and t.lower() in _US_STATE_TOKENS:
+    for t in re.split(r"[^a-z]+", l):
+        if t in _US_STATE_LC:
+            return "us"
+    if toks & _US_STATE_NAMES:
+        return "us"
+    for name in _US_STATE_NAMES:            # multi-word state names
+        if " " in name and name in l:
+            return "us"
+    # bare/leading US city names
+    for city in ("washington dc", "new york", "san francisco",
+                 "salt lake", "kansas city", "st louis", "saint louis",
+                 "st paul", "bay area", "silicon valley"):
+        if city in l:
+            return "us"
+    for t in toks:
+        if t in _US_CITIES and len(t) > 2:
+            return "us"
+    words = re.sub(r"[^a-z ]", " ", l).split()
+    for i in range(len(words) - 1):
+        if f"{words[i]} {words[i+1]}" in _US_CITIES:
             return "us"
     return "non_us"
 
@@ -483,7 +593,13 @@ def _epoch_to_iso(v) -> str:
 def fetch_dice(queries: list[str]) -> tuple[list[dict], str]:
     """S38 L1.5: Dice SERP RSC flight JSON (keyless; the old Dice API is
     dead — engine-census-r2 §1.1). 30 rows/page; extraction walks the
-    ESCAPED jobList.data array out of the script payload."""
+    ESCAPED jobList.data array out of the script payload.
+
+    S39 §A6: html-unescape title/company/loc — the flight JSON carries
+    HTML entities ('Procter &amp; Gamble'), which previously leaked
+    into company strings and DEFEATED the company_seed_key exact-key
+    seeds (T2a's guard finding; now normalized both sides anyway)."""
+    import html as _html
     import urllib.error
     ua = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
                         "(KHTML, like Gecko) Chrome/124.0 Safari/537.36",
@@ -518,9 +634,9 @@ def fetch_dice(queries: list[str]) -> tuple[list[dict], str]:
                 elif not isinstance(loc, str):
                     loc = ""
                 rows.append({
-                    "title": j.get("title") or "",
-                    "company": j.get("companyName") or "",
-                    "loc": loc[:80],
+                    "title": _html.unescape(j.get("title") or ""),
+                    "company": _html.unescape(j.get("companyName") or ""),
+                    "loc": _html.unescape(loc)[:80],
                     "url": j.get("detailsPageUrl") or "",
                     "posted": _rfc2822_to_iso(j.get("postedDate") or "")
                     or (j.get("postedDate") or "")[:10],
@@ -706,25 +822,80 @@ def fetch_muse() -> tuple[list[dict], str]:
     return rows, "ok"
 
 
+def _fc_relay_json(url: str, headers: dict) -> tuple[object, str]:
+    """S39 §A2 (probe-relay.md): relay a JSON API GET through firecrawl's
+    US egress. data.usajobs.gov works through firecrawl (api.usajobs.gov
+    returns IIS 'Invalid Hostname' 400 via relay); the JSON arrives in
+    data.markdown markdown-escaped — unescape then parse. Returns
+    (parsed | None, status)."""
+    key = _env("FIRECRAWL_API_KEY")
+    if not key:
+        return None, "no-fc-key"
+    try:
+        d = _http_json(
+            "https://api.firecrawl.dev/v2/scrape",
+            data=json.dumps({"url": url, "formats": ["markdown"],
+                             "headers": headers}).encode(),
+            headers={"Content-Type": "application/json",
+                     "Authorization": f"Bearer {key}"}, timeout=120)
+    except Exception as exc:
+        return None, f"relay-error:{type(exc).__name__}"
+    if not d.get("success"):
+        return None, f"relay-api-fail"
+    md = str((d.get("data") or {}).get("markdown") or "")
+    try:
+        payload = json.loads(re.sub(r"\\(.)", r"\1", md))
+    except json.JSONDecodeError:
+        return None, "relay-parse-fail"
+    return payload, "relay-ok"
+
+
 def fetch_usajobs(queries: list[str]) -> tuple[list[dict], str]:
-    """S38 L2 (GHA-only): USAJOBS search API — owned key + UA; 403 from
-    HK, key VERIFIED valid from US egress. Full JD (JobSummary)."""
+    """S38 L2: USAJOBS search API — owned key + UA; 403 from HK direct,
+    key VERIFIED valid from US egress. Full JD (JobSummary).
+
+    S39 §A2/F9: direct leg stays on api.usajobs.gov (Azure tries it
+    first); on HTTPError the firecrawl relay leg runs against
+    data.usajobs.gov with header forwarding (probe-relay.md — the
+    relay-verified host; ResultsPerPage pinned at 25 on the data host
+    per F9 until verified)."""
     key, ua = _env("USAJOBS_API_KEY"), _env("USAJOBS_USER_AGENT")
     if not key:
         return [], "no-key"
     rows: list[dict] = []
+    transport = "direct"
     for q in queries[:4]:
         for page in range(0, 3):
-            try:
-                d = _http_json(
-                    "https://api.usajobs.gov/api/search?Keyword="
+            d = None
+            if transport == "direct":
+                try:
+                    d = _http_json(
+                        "https://api.usajobs.gov/api/search?Keyword="
+                        + urllib.parse.quote_plus(q)
+                        + "&LocationName=United%20States"
+                        + f"&Page={page + 1}&ResultsPerPage=50",
+                        headers={"User-Agent": ua,
+                                 "Authorization-Key": key}, timeout=30)
+                except Exception:
+                    d, v = _fc_relay_json(
+                        "https://data.usajobs.gov/api/search?Keyword="
+                        + urllib.parse.quote_plus(q)
+                        + "&LocationName=United%20States"
+                        + f"&Page={page + 1}&ResultsPerPage=25",
+                        {"User-Agent": ua, "Authorization-Key": key})
+                    if d is None:
+                        return rows, f"error:{v}"
+                    transport = "relay"
+                    _evidence_dump("usajobs_relay_page1.json", d)
+            else:
+                d, v = _fc_relay_json(
+                    "https://data.usajobs.gov/api/search?Keyword="
                     + urllib.parse.quote_plus(q)
                     + "&LocationName=United%20States"
-                    + f"&Page={page + 1}&ResultsPerPage=50",
-                    headers={"User-Agent": ua,
-                             "Authorization-Key": key}, timeout=30)
-            except Exception as exc:
-                return rows, f"error:{type(exc).__name__}"
+                    + f"&Page={page + 1}&ResultsPerPage=25",
+                    {"User-Agent": ua, "Authorization-Key": key})
+                if d is None:
+                    break                        # relay leg fail-soft
             if page == 0 and q == queries[0] and d:
                 _evidence_dump("usajobs_page1.json", d)
             items = (d.get("SearchResult") or {}).get("SearchResultItems",
@@ -748,7 +919,7 @@ def fetch_usajobs(queries: list[str]) -> tuple[list[dict], str]:
             if not items:
                 break
             time.sleep(1.2)
-    return rows, "ok"
+    return rows, "ok" if transport == "direct" else "ok:relay"
 
 
 _EVIDENCE_DIR = REPO / "audit/s38_rolecampaign"
@@ -928,6 +1099,11 @@ def fetch_wellfound() -> tuple[list[dict], str]:
         if not isinstance(obj, dict) or "JobListing" not in str(
                 obj.get("__typename", "")):
             continue
+        # S39 §A6/F15: skip title-less entries (the /jobs feed carries
+        # non-job cache objects — they inflate raw counts and die at
+        # the family gate anyway; measured 60+ empty-title rows)
+        if not (obj.get("title") or "").strip():
+            continue
         comp_ref = (obj.get("startup") or {}).get("__ref", "")
         comp = state.get(comp_ref, {}) if comp_ref else {}
         loc = ", ".join(obj.get("locationNames") or [])[:80]
@@ -1030,6 +1206,151 @@ def fetch_hn() -> tuple[list[dict], str]:
             })
     verdict = ("ok" if rows or not verdicts
                else "partial:" + ",".join(verdicts))
+    return rows, verdict
+
+
+def fetch_builtin(queries: list[str]) -> tuple[list[dict], str]:
+    """S39 §A3 (probe-relay.md): BuiltIn via firecrawl relay — CF-walled
+    from HK direct (403 'Just a moment'); firecrawl passes CF. ONLY the
+    `?search=` SSR form filters server-side (path URLs SSR a generic
+    feed); 25 cards/page. Card markdown: '## [Title](url)' +
+    '[Company](company-url)' + posted/location lines. 3 queries × 4
+    pages ≈ 12 firecrawl credits (F13 fleet budget)."""
+    key = _env("FIRECRAWL_API_KEY")
+    if not key:
+        return [], "no-key"
+    rows: list[dict] = []
+    status = "ok"
+    for q in queries[:3]:
+        for page in range(1, 5):
+            url = ("https://www.builtin.com/jobs?search="
+                   + urllib.parse.quote_plus(q) + f"&page={page}")
+            try:
+                d = _http_json(
+                    "https://api.firecrawl.dev/v2/scrape",
+                    data=json.dumps({"url": url, "formats": ["markdown"],
+                                     "waitFor": 3000}).encode(),
+                    headers={"Content-Type": "application/json",
+                             "Authorization": f"Bearer {key}"}, timeout=120)
+            except Exception as exc:
+                status = f"error:{q[:12]}:{type(exc).__name__}"
+                break
+            if not d.get("success"):
+                status = f"api-fail:{q[:12]}"
+                break
+            md = str((d.get("data") or {}).get("markdown") or "")
+            if page == 1 and q == queries[0]:
+                _evidence_dump("builtin_page1.md", {"markdown": md[:8000]})
+            # cards: ## [Title](https://builtin.com/job/slug/id)
+            n_new = 0
+            # builtin card layout: [Company](company-url) BEFORE the
+            # title '## [Title](job-url)' — pair BACKWARD (title-first
+            # pairing steals the NEXT card's company; probe evidence)
+            for m in re.finditer(
+                    r"\[(?P<company>[^\]!][^\]]{1,80})\]"
+                    r"\(https://builtin\.com/company/[^)\s]+\)\s*\n+"
+                    r"##\s+\[(?P<title>[^\]]{3,140})\]\("
+                    r"(?P<url>https://builtin\.com/job/[^)\s]+)\)",
+                    md):
+                g = m.groupdict()
+                # card meta after the company link: 'time-ago Saved' →
+                # [Easy Apply] → work-type → LOCATION → salary/level.
+                # Take the first loc-looking line (probe-relay.md form:
+                # 'Chicago, IL, USA' | '2 Locations' | 'Remote').
+                block = md[m.end():m.end() + 500]
+                loc = ""
+                for line in block.split("\n"):
+                    s = line.strip()
+                    if not s or "Ago" in s or s in (
+                            "Easy Apply", "Hybrid", "On Site",
+                            "Fully Remote"):
+                        continue
+                    if s == "Remote":
+                        loc = "Remote"
+                        break
+                    if re.match(r"^\d+\s+Locations?$", s):
+                        loc = s
+                        break
+                    if re.match(r"^[A-Z][a-zA-Z .,'-]{2,40},\s*[A-Z]{2}"
+                                r"(?:,\s*USA)?$", s) or s.endswith(", USA"):
+                        loc = s
+                        break
+                rows.append({
+                    "title": g["title"].strip(),
+                    "company": g["company"].strip(),
+                    "loc": loc[:80],
+                    "url": g["url"],
+                    "posted": "", "desc": block[:12000],
+                    "source": "builtin", "layer": "l2", "query": q,
+                    "rid": "",          # slug-derived ids vary per card
+                })
+                n_new += 1
+            if n_new == 0:
+                break                        # no more cards for this query
+            time.sleep(2.0)
+    return rows, status
+
+
+def fetch_himalayas() -> tuple[list[dict], str]:
+    """S39 §A4 (probe-relay.md): Himalayas open JSON firehose —
+    `himalayas.app/jobs/api?limit=20&cursor=<nextCursor>` keyless with
+    full-JD rows; no server-side search → client-side filter over the
+    recent window (30 pages × 20, politeness sleep 1s; the full-JD
+    evidence value inverts the trio's thin-density precedent — F11).
+    rid = him:{guid}; loc = locationRestrictions joined."""
+    rows: list[dict] = []
+    cursor = ""
+    verdicts: list[str] = []
+    seen = set()
+    for page_i in range(30):
+        url = ("https://himalayas.app/jobs/api?limit=20"
+               + (f"&cursor={cursor}" if cursor else ""))
+        try:
+            d = _http_json(url, timeout=30)
+        except Exception as exc:
+            verdicts.append(f"p{page_i}:{type(exc).__name__}")
+            break
+        jobs = d.get("jobs", [])
+        if page_i == 0:
+            _evidence_dump("himalayas_page1.json", d)
+        for j in jobs:
+            title = j.get("title") or ""
+            if not title:
+                continue
+            # client-side PM-family filter (the board is all-roles)
+            tl = title.lower()
+            if not any(k in tl for k in (
+                    "product manager", "product owner", "product lead",
+                    "head of product", "product marketing",
+                    "director of product", "principal product",
+                    "group product", "technical product")):
+                continue
+            guid = j.get("guid") or j.get("id") or ""
+            if guid in seen:
+                continue
+            seen.add(guid)
+            locs = " / ".join(
+                l for l in (j.get("locationRestrictions") or [])
+                if isinstance(l, str))[:80]
+            pub = j.get("pubDate") or ""
+            if isinstance(pub, (int, float)):
+                pub = _epoch_to_iso(pub)
+            rows.append({
+                "title": title,
+                "company": j.get("companyName") or "",
+                "loc": locs,
+                "url": j.get("guid") and
+                f"https://himalayas.app/jobs/{guid}" or "",
+                "posted": str(pub)[:10],
+                "desc": (j.get("description") or "")[:12000],
+                "source": "himalayas", "layer": "l2",
+                "query": "himalayas:recent", "rid": f"him:{guid}",
+            })
+        cursor = d.get("nextCursor") or ""
+        if not jobs or not cursor:
+            break
+        time.sleep(1.0)
+    verdict = "ok" if not verdicts else "partial:" + ",".join(verdicts)
     return rows, verdict
 
 
@@ -1137,7 +1458,8 @@ def _norm_day(posted: str):
 
 
 def sweep(queries: list[str], skip_gj: bool = False,
-          skip_li: bool = False, skip: str = "") -> int:
+          skip_li: bool = False, skip: str = "",
+          seed_envelope: str = "") -> int:
     skip_set = {s.strip() for s in skip.split(",") if s.strip()}
     skip_set.discard("")
     started = datetime.now(timezone.utc)
@@ -1174,6 +1496,10 @@ def sweep(queries: list[str], skip_gj: bool = False,
         fetchers.append(("muse", fetch_muse, []))
     if "usajobs" not in skip_set:
         fetchers.append(("usajobs", fetch_usajobs, [queries]))
+    if "builtin" not in skip_set:
+        fetchers.append(("builtin", fetch_builtin, [queries]))
+    if "himalayas" not in skip_set:
+        fetchers.append(("himalayas", fetch_himalayas, []))
     if not skip_gj and "gj" not in skip_set:
         fetchers.append(("gj_role", fetch_gj_role, [queries]))
     fetchers = [(n, f, a) for n, f, a in fetchers
@@ -1192,26 +1518,92 @@ def sweep(queries: list[str], skip_gj: bool = False,
             env["layers"].get(rows[0]["layer"] if rows else "?", 0) + len(rows)
         print(f"[sweep:{name:<12}] {len(rows):>4} rows | {v}")
 
-    # per-source usgate priors (design §4 + S38 §4a/F21 — the new
-    # sources default client-side: dice/careerjet leak 1-2/30 non-US
-    # rows (measured, caught); yc is US-scoped by board filter)
+    # per-source usgate priors (design §4 + S38 §4a/F21 + S39 F11 — the
+    # new sources default client-side: dice/careerjet leak 1-2/30
+    # non-US rows (measured, caught); yc is US-scoped by board filter;
+    # builtin 'N Locations' cards → ambiguous; himalayas
+    # locationRestrictions are client-side)
     SRC_US = {"adzuna": "us", "jooble": None, "indeed": "us",
               "li": "us", "wwr": "remote", "remoteok": None,
               "jobicy": None, "arbeitnow": None, "gj": None,
               "board": "skip", "dice": None, "careerjet": None,
               "findwork": None, "muse": None, "usajobs": "us",
               "yc": None, "wellfound": None, "hn": None,
-              "talent": None}
+              "talent": None, "builtin": None, "himalayas": None}
     counters = {"family_other": 0, "nontech_gate": 0, "dedup_merge": 0,
                 "usgate_non_us": 0, "pending_sector": 0,
                 "staffing_repost": 0, "employer_anonymized": 0,
                 "dedup_dateless": 0, "residual_dup_est": 0,
-                "g1b_title": 0}
+                "g1b_title": 0, "screening_post": 0,
+                "seed_rows_in": 0, "seed_dup_absorbed": 0,
+                "seed_dup_residual": 0, "roster_kept": 0,
+                "agency_pending": 0, "res7_merge": 0, "cross_src_merge": 0}
     dropped: list[dict] = []
     kept: list[dict] = []
     seniority_conflicts = 0
     title_conflicts = 0
     day_delta_hist: dict[str, int] = {}
+
+    # S39 §A5 (F1/F2): the seed-envelope union — rows from a prior
+    # envelope re-enter as inputs AFTER all fresh rows (dateless-donor
+    # ordering), staleness-bounded (posted ≥ now-60d; dateless rows are
+    # NOT seed-eligible). Field map: postedOn→posted, description→desc
+    # (4,000-char cap accepted), layer reconstructed from source,
+    # rid parsed from src:-prefixed ids, everything else passes the
+    # SAME gates + merge rules as fresh rows. Careerjet is HK-only and
+    # 403s on the Azure lane — the seed is how its rows reach production.
+    if seed_envelope:
+        seed_path = REPO / seed_envelope
+        n_seed = 0
+        try:
+            sd = json.load(open(seed_path))
+            cutoff = (datetime.now(timezone.utc).date()
+                      - timedelta(days=60))
+            _SRC_LAYER = {"adzuna": "l1.5", "dice": "l1.5",
+                          "careerjet": "l1.5", "jooble": "l1.5",
+                          "indeed": "l1.5", "findwork": "l1.5",
+                          "li": "l1", "gj": "l3", "yc": "l2",
+                          "wellfound": "l2", "hn": "l2", "wwr": "l2",
+                          "remoteok": "l2", "jobicy": "l2",
+                          "arbeitnow": "l2", "muse": "l2",
+                          "usajobs": "l2", "talent": "l2",
+                          "builtin": "l2", "himalayas": "l2",
+                          "board": "l0"}
+            for row in (sd.get("jobs") or
+                        sd.get("rows") or []):
+                posted = (row.get("postedOn") or "")[:10]
+                day = _norm_day(posted)
+                if day is None or day < cutoff:
+                    continue           # F2: staleness bound (45-60d)
+                src = row.get("source") or ""
+                rid = row.get("id") or ""
+                m = re.match(r"^([a-z]{2,10}):", rid)
+                if not (m and m.group(1) in
+                        ("adz", "cj", "dice", "fw", "jbl", "ex",
+                         "usaj", "muse", "yc", "wf", "hn", "him",
+                         "tal", "gj")):
+                    rid = ""          # row-hash ids are NOT rids (F1)
+                all_rows.append({
+                    "title": row.get("title") or "",
+                    "company": row.get("company") or "",
+                    "loc": row.get("loc") or "",
+                    "url": row.get("url") or "",
+                    "posted": posted,
+                    "desc": (row.get("description") or "")[:4000],
+                    "source": src, "layer": _SRC_LAYER.get(src, "l2"),
+                    "query": "seed", "rid": rid,
+                    "company_key": _company_key(
+                        row.get("company") or "", {}),
+                    "_seed": True,
+                })
+                n_seed += 1
+            env["sources"]["seed_envelope"] = (
+                f"ok:{n_seed}/{len(sd.get('jobs') or [])}")
+        except Exception as exc:
+            env["sources"]["seed_envelope"] = (
+                f"error:{type(exc).__name__}")
+        counters["seed_rows_in"] = n_seed
+        print(f"[sweep:seed_envelope] {n_seed:>4} rows (staleness-bounded)")
 
     for r in all_rows:
         title, company = r.get("title", ""), r.get("company", "")
@@ -1239,7 +1631,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
         if r.get("us_status") == "non_us":
             counters["usgate_non_us"] += 1
             continue
-        # gates (G1 + G1B + sector verdict) — apply to pm AND adjacent rows
+        # gates (G1 + G1B + screening-post + sector verdict) — apply to
+        # pm AND adjacent rows
         if g1_fires(title) or g1_fires(r.get("loc", "")):
             counters["nontech_gate"] += 1
             dropped.append({**r, "reason": "g1_title",
@@ -1248,6 +1641,11 @@ def sweep(queries: list[str], skip_gj: bool = False,
         if g1b_fires(title):                 # S38: title-only, recoverable
             counters["g1b_title"] += 1
             dropped.append({**r, "reason": "g1b_title",
+                            "recoverable": True})
+            continue
+        if is_screening_post(title):         # S39 N7: recoverable bucket
+            counters["screening_post"] += 1
+            dropped.append({**r, "reason": "screening_post",
                             "recoverable": True})
             continue
         # S38 flags (never drops): staffing repost + anonymized/board
@@ -1271,7 +1669,17 @@ def sweep(queries: list[str], skip_gj: bool = False,
         r["sector_evidence"] = sev
         r["sector_reason"] = reason
         if act == "pending":
-            counters["pending_sector"] += 1
+            # S39 §B1: the agency evidence-grade — staffing-flagged
+            # pending rows resolve as 'agency' (repost attribution),
+            # ranking division > jd > roster > agency > pending
+            if r["staffing_evidence"]:
+                r["sector_evidence"] = "agency"
+                r["sector_reason"] = "agency:repost"
+                counters["agency_pending"] += 1
+            else:
+                counters["pending_sector"] += 1
+        if sev == "roster":
+            counters["roster_kept"] += 1
         kept.append(r)
 
     # dedup: rid-dedup (S38 F1) → intra-layer exact → cross-layer
@@ -1320,7 +1728,55 @@ def sweep(queries: list[str], skip_gj: bool = False,
                     merge_into = k
                     day_delta_hist["re7"] = \
                         day_delta_hist.get("re7", 0) + 1
+                    counters["res7_merge"] = counters.get("res7_merge", 0) + 1
                     break
+        if merge_into is None:
+            # S39 F1(d): intra-L1.5 CROSS-SOURCE exact title_norm +
+            # same company_key + day Δ≤3 — the cross-engine date-skew
+            # class (careerjet/adzuna re-host the same ATS feed with
+            # 0-3d posting-date skew; the seed union's main dedup
+            # path). title_core is deliberately NOT used (the bjak
+            # 12-variant multi-req class stays un-merged).
+            if r.get("layer") == "l1.5":
+                for k, cand in by_key.items():
+                    if cand.get("_layer") == "l1.5" and \
+                            cand.get("_src") != r.get("source") and \
+                            cand.get("_title_norm") == re.sub(
+                                r"\W", "", (r["title"] or "").lower()) and \
+                            cand.get("_ck") == ck and \
+                            day is not None and \
+                            cand.get("_day") is not None and \
+                            abs((day - cand["_day"]).days) <= 3:
+                        merge_into = k
+                        counters["cross_src_merge"] += 1
+                        day_delta_hist[f"xs{abs((day - cand['_day']).days)}"] = \
+                            day_delta_hist.get(
+                                f"xs{abs((day - cand['_day']).days)}", 0) + 1
+                        break
+        if merge_into is None:
+            # S39 B6/F15 (N8): the multi-agency same-req pair class —
+            # adzuna staffing rows whose trailing '(City)' suffix
+            # duplicates an unsuffixed sibling at the same loc. The
+            # city-suffix strip applies to the MERGE KEY ONLY (the
+            # shipped title is never mutated). Staffing-flagged,
+            # adzuna-only, loc-prefix-matched — conservative by design.
+            if r.get("source") == "adzuna" and r.get("staffing_evidence"):
+                bare = re.sub(
+                    r"\s*\((?:[A-Z][a-z]+(?:\s[A-Z][a-z]+)?)\)\s*$", "",
+                    (r["title"] or "")).strip()
+                bare_norm = re.sub(r"\W", "", bare.lower())
+                if bare_norm and bare_norm != re.sub(
+                        r"\W", "", (r["title"] or "").lower()):
+                    for k, cand in by_key.items():
+                        if cand.get("_src") == "adzuna" and \
+                                cand.get("_ck") == ck and \
+                                cand.get("_title_norm") == bare_norm and \
+                                (cand.get("_loc_prefix") or "") == \
+                                (r.get("loc") or "")[:12]:
+                            merge_into = k
+                            counters["res7_merge"] = counters.get(
+                                "res7_merge", 0) + 1
+                            break
         if merge_into is None:
             for k, cand in by_key.items():
                 if cand.get("_core") == core and \
@@ -1341,14 +1797,21 @@ def sweep(queries: list[str], skip_gj: bool = False,
                     merge_into = k
                     counters["dedup_dateless"] += 1
                     break
+        if merge_into is not None and merge_into not in by_key:
+            # S39: stale by_rid pointer (the donor was swapped out of
+            # by_key by a later higher-rank survivor) — treat as fresh
+            merge_into = None
         if merge_into is None:
             r["_exact"], r["_core"], r["_day"], r["_layer"] = \
                 exact, core, day, r.get("layer")
             r["_ck"], r["_title_norm"], r["_src"] = ck, re.sub(
                 r"\W", "", (r["title"] or "").lower()), r.get("source")
+            r["_loc_prefix"] = (r.get("loc") or "")[:12]
             by_key[id(r)] = r
             if rid:
                 by_rid[rid] = r
+            if r.get("_seed"):
+                counters["seed_dup_residual"] += 1
             continue
         # MERGE, never drop (the 8-rule table; priority = LAYER_RANK:
         # L0 board > L3 gj > L1.5 keyed > L1 li > L2 closure)
@@ -1359,6 +1822,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
         else:
             survivor, donor = tgt, r
         counters["dedup_merge"] += 1
+        if r.get("_seed") or tgt.get("_seed"):
+            counters["seed_dup_absorbed"] += 1
         if survivor.get("seniority") != donor.get("seniority"):
             seniority_conflicts += 1
         if title_core(survivor.get("title") or "") != \
@@ -1399,7 +1864,13 @@ def sweep(queries: list[str], skip_gj: bool = False,
                 exact, core, day, r.get("layer")
             r["_ck"], r["_title_norm"], r["_src"] = ck, re.sub(
                 r"\W", "", (r["title"] or "").lower()), r.get("source")
+            r["_loc_prefix"] = (r.get("loc") or "")[:12]
             del by_key[merge_into]
+            # S39: purge stale by_rid pointers to the swapped-out donor
+            # (a later same-rid row would resolve to a dead key)
+            for rid_k, rid_v in list(by_rid.items()):
+                if rid_v is tgt:
+                    del by_rid[rid_k]
             by_key[id(r)] = r
             if rid:
                 by_rid[rid] = r
@@ -1637,13 +2108,19 @@ def main() -> int:
     ap.add_argument("--skip", default="",
                     help="comma-separated source names to skip "
                          "(li,gj,muse,usajobs... — local-run routing)")
+    ap.add_argument("--seed-envelope", default="",
+                    help="S39 §A5: union a prior sweep envelope (repo-relative "
+                         "path, e.g. ingest/data/ui/roles-pm.json) — rows "
+                         "≥60d fresh re-enter as inputs (the careerjet "
+                         "HK-only lane transport doctrine)")
     args = ap.parse_args()
     queries = PM_QUERY_CORE + (PM_QUERY_TAIL if args.full else [])
     if args.gj_only:
         rows, v = fetch_gj_role(PM_QUERY_CORE[:2])
         print(f"[gj-probe] {len(rows)} rows | {v}")
         return 0
-    return sweep(queries, skip=args.skip)
+    return sweep(queries, skip=args.skip,
+                 seed_envelope=args.seed_envelope)
 
 
 if __name__ == "__main__":

@@ -24,11 +24,15 @@ newline between alternatives must be whitespace).
 """
 from __future__ import annotations
 
+import html as _html
 import re
 from typing import Optional
 
 from .categorize import classify_tier
 from .dedup import normalize_job_title
+from . import company_seeds as _seeds   # S39: no import-time cycle
+                                         # (seed_hit imports rolefamilies
+                                         # lazily)
 
 # ── §2.1 position-aware family grammar ─────────────────────────────────────
 # REDIRECT runs FIRST: "product <function>" adjacency routes to that
@@ -269,12 +273,38 @@ G1B = re.compile(
     | \bproduct\s+(?:line|segment)\s+(?:manager|management|cost)\b
           (?!.{0,60}\b(?:platform|cloud|software|saas|api)\b)
     | \bdirector\s+of\s+product\s+line\s+management\b
-      # T7 bank product-control function (not a PM role)
-    | \bproduct\s+control\b
+      # T7 bank product-control function (not a PM role) — S39 T7'
+      # amendment: control\w* deliberately catches 'Product Controller'
+    | \bproduct\s+control\w*\b
       # T8 talent-community pool postings (not open roles)
     | \b(?:talent\s+community|talent\s+pool)\b
       # T9 pharma commercial marketing
     | \bpatient\s+marketing\b
+      # ── S39 G1B' extensions (DESIGN-S39 v2 §B4, F10 guards) ──
+      # T1' industrial/chemical/aerospace/packaging (software-context
+      # guard incl. 'systems' — the Sandalwood guard; packaging guarded
+      # against co-packaged optics — the NVIDIA CPO FP)
+    | \b(?:furnitur\w*|textil\w*|packag(?:ing|e)|chemical\w*|automotive|
+          aerospace|composites?|engineered\s+hardware)\b
+          (?!.{0,60}\b(?:platform|software|saas|marketplace|cloud|api|
+          data|systems)\b)
+          (?!.{0,30}\boptics?\b)
+      # T2' medical specialties (bare 'device' NEVER added — TP-Link/
+      # Okta/Netflix guards; x-ray gated on imaging context)
+    | \b(?:cardiolog\w*|oncolog\w*|radiolog\w*|orthoped\w*|implant\w*|
+          ultrasound)\b
+    | \bdiagnostic\s+(?:x-?ray|imaging)\b
+    | \bx-?ray\b(?=.{0,30}\b(?:radiolog\w*|imaging|medical)\b)
+      # T4' insurance product-line (business product, not software);
+      # plural head — Majesco/Zip 'P&C Insurance Technology' guards
+    | \binsurance\s+products?\b(?!.{0,40}\b(?:technolog\w*|software|
+          platform|underwriting\s+platform)\b)
+      # T6' product-group engineering (J&J device PLM class)
+    | \bproduct\s+group\s+engineering\b
+      # T9' patient support/engagement programs (Neumeric HUB class)
+    | \bpatient\s+(?:support|engagement)\s+programs?\b
+      # T5n Copeland grammar (Lead Product ENGINEER, not manager)
+    | \blead\s+product\s+engineer\b
     """,
     re.I | re.VERBOSE)
 
@@ -326,16 +356,61 @@ STAFF_BRANDS = re.compile(
         petadata|mroads|xaxis\s+solutions|theboss\.us|virtual\s+vocations|
         certitude|kimaru|talently|success\s+matcher|motion\s+recruitment|
         motion\s+partners|ispace|randstad\s+digital|sga|
-        software\s+guidance\s+&\s+assistance)\b""",
+        software\s+guidance\s+&\s+assistance|
+        # S39 §B2/F5: T2b's 17 unflagged consultancies + T2a referrals
+        aditi\s+consulting|agile\s+resources|bc\s+forward|
+        blue\s+signal\s+search|chg\s+healthcare|
+        clearbridge\s+technology|compri\s+consulting|elite\s+technical|
+        govcio|incedo|inspyr\s+solutions|j\s+vers|jsr\s+tech|
+        lumen\s+solutions\s+group|ltimindtree|ltm|
+        manpowergroup|next\s+step\s+systems|photon\s+interactive|
+        pinnacle\s+technical\s+resources|raft|sincera|
+        coforge|perficient|hexaware|
+        prominent\s+technology|fstone\s+technologies|
+        informatic\s+technologies|netserv\s+applications|
+        iris\s+software|reuben\s+cooley|cosmic-i)\b""",
     re.I | re.VERBOSE)
 
 
 def is_staffing_company(company: str) -> bool:
     """S38: the staffing/repost detector — a FLAG (staffing_evidence
     = 'agency'), never a drop: real employer unknown ≠ not a real PM
-    opening (DESIGN-S38 v2 §3a/F11)."""
+    opening (DESIGN-S38 v2 §3a/F11).
+
+    S39 §B2/F5: STAFF_BRANDS extended with T2b's 17 unflagged
+    consultancies — the agency evidence-grade coverage pin depends on
+    them (triage-midtail.md §2)."""
     c = (company or "").lower().strip()
     return bool(c and (STAFF_TOKENS.search(c) or STAFF_BRANDS.search(c)))
+
+
+# ── S39 §B5/F8: the screening-post (N7) title-shape detector —
+# company-independent; routed to a RECOVERABLE bucket (reason
+# 'screening_post'), never a silent drop. COMPILE CONTRACT: re.I only,
+# NO re.VERBOSE (the wave-2 regex is whitespace-sensitive — under VERBOSE
+# it compiles to a 3× undercount; pinned in the test battery).
+SCREENING_POST = re.compile(
+    r"\b(?:product\s+(?:owner|manager)|po|pm)\s*[/&-]\s*(?:business\s+analyst|project\s+manager|scrum\s+master|ba)\b"
+    r"|\b(?:business\s+analyst|scrum\s+master)\s*(?:and\s*|/)\s*(?:senior\s+)?product\s+(?:owner|manager)\b"
+    r"|\bbusiness\s+analyst\s+and\s+project\s+manager,\s*product\s+(?:owner|manager)\b"
+    r"|\b(?:ba|po)\s*[/&-]\s*(?:ba|po)\b"
+    r"|\bwith\s+[^,|]{3,50}\b(?:experience|skills?|background)\b"
+    r"|\b(?:experience|background)\s+required\b"
+    r"|\(\s*\d+\+?\s*(?:years|yrs|yoe)\s+only\s*\)"
+    r"|\(3-5\+\s*yoe\)"
+    r"|\bproduct\s+manager\s*-\s*product\s+manager\b"
+    r"|\bproduct\s+owner,\s*3\s+senior\b"
+    r"|\bw2\s+only\b",
+    re.I)
+
+
+def is_screening_post(title: str) -> bool:
+    """S39 N7: skill-screen / multi-role combo titles (agency bench
+    postings, resume-fishing) — the 13 flagged + 12 unflagged wave-2
+    rows. Guards (pinned): Motion 'Senior PM / Payments & Agentic
+    Commerce / NYC' and 'Principal/Senior PM' style level/domain slashes
+    do NOT fire (the combo arms need role-noun pairs)."""
+    return bool(isinstance(title, str) and SCREENING_POST.search(title))
 
 
 # ── S38: the anonymized-employer detector (fp-wave1 — the
@@ -411,8 +486,21 @@ def company_seed_key(company: str) -> str:
     """The seed-matching key: lowercase, legal/corporate suffix tail
     stripped (iteratively — 'Waters Corporation Inc' → 'waters'),
     punctuation → single spaces (periods glued: 'A. O.' ≡ 'A.O.'),
-    trimmed."""
-    s = re.sub(r"[^a-z0-9&.]+", " ", (company or "").lower()).strip()
+    trimmed.
+
+    S39 §B7 hardening (T2a's guard finding): html-unescape FIRST
+    ('Procter &amp; Gamble' ≡ 'procter & gamble' — the entity form
+    escaped its own deny seed), '&'-spacing collapsed
+    ('Procter&Gamble' ≡ 'procter & gamble'), leading 'the ' stripped
+    ('The Cigna Group' ≡ 'cigna'; 'The Vanguard Group' ≡ 'vanguard'
+    — load-bearing for the BANK_SEED vanguard entry), and ' and ' ≡
+    ' & ' in the seed-key space ('Stanley Black and Decker' ≡
+    'Stanley Black & Decker')."""
+    s = _html.unescape(company or "").lower()
+    s = re.sub(r"\s*&\s*", " & ", s)          # 'Procter&Gamble' ≡ spaced
+    s = re.sub(r"\s+and\s+", " & ", s)        # 'Black and Decker' ≡ '&'
+    s = re.sub(r"^the\s+", "", s)             # 'The Cigna Group' ≡ 'cigna'
+    s = re.sub(r"[^a-z0-9&.]+", " ", s).strip()
     s = re.sub(r"\.\s+", ".", s)             # 'A. O. Smith' ≡ 'A.O. Smith'
     for _ in range(3):                     # strip chained suffixes
         s2 = _LEGAL_SUFFIX.sub("", s).strip()
@@ -468,47 +556,134 @@ def sector_verdict(
     jd_text: str = "",
     company_key: Optional[str] = None,
 ) -> tuple[str, str, str]:
-    """G2 (tech-evidence-required) + G3 (recoverable bucket).
+    """G2 (tech-evidence-required) + G3 (recoverable bucket) + the S39
+    sector-grade machinery (DESIGN-S39 v2 §B1-B3).
 
     Returns (action, sector_evidence, reason):
-      action 'keep'    — evidence found (division > jd) or no deny match
-      action 'pending' — no sector evidence AND not G3-deniable: the row
-                         ships flagged, never silently dropped
-      action 'bucket'  — G3-denied with no division/JD rescue → the
-                         recoverable review bucket (dropped-by-nontech.csv)
-    sector_evidence: 'division' | 'jd' | '' (blank = pending review)
+      action 'keep'    — evidence found (ranking: division > jd > roster)
+      action 'pending' — no sector evidence AND not deniable: the row
+                         ships flagged (▲), never silently dropped
+      action 'bucket'  — denied with no rescue → the recoverable review
+                         bucket (dropped-by-nontech.csv)
+    sector_evidence: 'division' | 'jd' | 'roster' | '' (blank = pending)
+
+    S39 order (F6 precedence, rescue-first):
+      0. TECH_SEED membership overrides ALL deny seeds → roster keep
+      1. N3B bank rule (BANK_SEED ∧ ¬FINTECH_GUARD): tech-division token
+         → keep; bank-product token → bucket; else pending 'bank_review'
+      2. N6B payer rule (PAYER_SEED): division kw → keep; business token
+         → bucket; tech token → keep; else pending 'payer_review'
+      3. G3 deny path (grocery substring / physical-goods seeds /
+         NONTECH seeds / new division-allowlist keys) → division rescue
+         on company+title haystack > jd override > bucket
+      4. jd evidence → keep; else pending
     """
     org = _norm_company(company_str)
-    # G3 deny match? (grocery seed substring OR the S38 physical-goods
-    # exact-key seeds OR the division-allowlist keys)
+    hay = f"{org} { _norm_company(title)}"      # F6/T3: company+title
+    ck = company_key or ""
+
+    # 0. TECH_SEED precedence (the D-S36-1 curated exception) — but the
+    #    evidence GRADE ranking still applies (division > jd > roster):
+    #    a tech-seed row with JD markers earns 'jd', not 'roster'
+    if _seeds.tech_seed_hit(ck, company_str or ""):
+        if jd_text and _JD_STRONG.search(jd_text) and not g1_fires(jd_text):
+            return "keep", "jd", "tech_seed_jd_strong"
+        weak = len(_JD_WEAK.findall(jd_text or "")) if jd_text else 0
+        if weak >= 2 and not g1_fires(jd_text or ""):
+            return "keep", "jd", "tech_seed_jd_weak"
+        return "keep", "roster", "tech_seed"
+
+    # 1. N3B bank rule (T1 §2 ordering: guard → tech token → product
+    #    token → review; the tech tokens rescue FIRST — the Western
+    #    Alliance 'Product Technology, Small Business Banking' case)
+    if _seeds.bank_seed_hit(ck, company_str or "") and \
+            not _seeds.fintech_guard_hit(ck, company_str or ""):
+        if _phrase_hit(_seeds.BANK_TECH_TOKENS, hay):
+            return "keep", "division", "bank_tech_division"
+        if _phrase_hit(_seeds.BANK_PRODUCT_TOKENS, _norm_company(title)):
+            return "bucket", "", "bank_business_product"
+        return "pending", "", "bank_review"
+
+    # 2. N6B payer rule (T2a §1 ordering: division kw → business token
+    #    → tech token → review; business fires BEFORE generic tech — the
+    #    Humana 'Senior Technical PM – Insurance Products' case)
+    if _seeds.payer_seed_hit(ck, company_str or ""):
+        if _phrase_hit(_seeds.PAYER_DIVISION_KWS, hay):
+            return "keep", "division", "payer_division"
+        if _phrase_hit(_seeds.PAYER_BUSINESS_TOKENS, _norm_company(title)):
+            return "bucket", "", "payer_business_product"
+        if _phrase_hit(_seeds.PAYER_TECH_TOKENS, _norm_company(title)):
+            return "keep", "division", "payer_tech_lean"
+        return "pending", "", "payer_review"
+
+    # 3. G3 deny match? (grocery seed substring OR the S38 physical-goods
+    #    exact-key seeds OR the S39 NONTECH seeds OR the division keys)
     deny_key = None
     for seed in G3_GROCERY_SEED:
         if seed in org:
             deny_key = seed
             break
-    if deny_key is None and physical_goods_seed_hit(company_str or ""):
-        deny_key = company_seed_key(company_str or "")
+    if deny_key is None and (
+            physical_goods_seed_hit(company_str or "")
+            or _seeds.nontech_seed_hit(ck, company_str or "")):
+        deny_key = company_seed_key(company_str or "") or \
+            _seeds._slugify(company_str or "")
     if deny_key is None:
         for comp in DIVISION_ALLOWLIST:
             if comp in org:
                 deny_key = comp
                 break
     if deny_key is None:
+        for slug in _seeds.DIVISION_ALLOWLIST_ADD:
+            if slug and (slug == ck or slug == _seeds._slugify(org)):
+                deny_key = slug
+                break
+    if deny_key is None:
         # not deniable: G2 evidence optional (roster/neutral policy —
-        # company membership is NOT tech evidence, D-S36-1)
+        # company membership is NOT tech evidence, D-S36-1 — except the
+        # curated TECH_SEED above)
         if jd_text and _JD_STRONG.search(jd_text) and not g1_fires(jd_text):
             return "keep", "jd", "jd_strong_marker"
         weak = len(_JD_WEAK.findall(jd_text or "")) if jd_text else 0
         if weak >= 2 and not g1_fires(jd_text or ""):
             return "keep", "jd", "jd_weak_x2"
         return "pending", "", "no_sector_evidence"
-    # deniable company: division rescue > JD override > bucket
-    for div in DIVISION_ALLOWLIST.get(deny_key, []):
-        if div in org:
+    # deniable company: division rescue (company+title haystack) >
+    # JD override > bucket. The division entry is looked up under BOTH
+    # the deny_key and its slug (NONTECH hits carry seed-key forms,
+    # DIVISION_ADD carries slug forms).
+    div_entries = list(DIVISION_ALLOWLIST.get(deny_key, []))
+    div_entries += _seeds.DIVISION_ALLOWLIST_ADD.get(deny_key, []) + \
+        _seeds.DIVISION_ALLOWLIST_ADD.get(_seeds._slugify(deny_key), []) + \
+        _seeds.DIVISION_ALLOWLIST_ADD.get(ck, [])
+    for div in div_entries:
+        if div and div in hay:
             return "keep", "division", f"division:{div}"
     if jd_text and _JD_STRONG.search(jd_text) and not g1_fires(jd_text):
         return "keep", "jd", "g3_jd_override"
     return "bucket", "", f"g3_deny:{deny_key}"
+
+
+def _phrase_hit(phrases, text: str) -> bool:
+    r"""Token-phrase match for the S39 rule token sets: single tokens
+    match as PREFIXES (\btoken\w* — 'treasur' catches treasury/
+    treasuries, 'technolog' catches technologies), multi-word phrases
+    match with \s+ separators and a prefix on the final token ('card
+    acquisition' catches 'card acquisitions'). Case-insensitive."""
+    t = text or ""
+    if not t:
+        return False
+    for p in phrases:
+        p = p.strip().lower()
+        if not p:
+            continue
+        words = p.split()
+        pat = r"\b" + r"\s+".join(
+            re.escape(w) + (r"\w*" if i == len(words) - 1 else "")
+            for i, w in enumerate(words)) + r"\b"
+        if re.search(pat, t, re.I):
+            return True
+    return False
 
 
 # ── §2.4 identity — title_core for the cross-layer merge ───────────────────
