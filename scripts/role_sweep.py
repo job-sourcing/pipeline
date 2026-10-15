@@ -55,6 +55,7 @@ from jobsearch.rolefamilies import (  # noqa: E402
     g1_fires,
     g1b_fires,
     is_anonymized_employer,
+    is_board_employer,
     is_staffing_company,
     pm_seniority,
     sector_verdict,
@@ -1073,11 +1074,55 @@ def project_l0() -> tuple[list[dict], str]:
 
 # ── the pipeline: gates → usgate → dedup/merge → outputs ───────────────────
 
-def _company_key(company: str, existing: dict) -> str:
+# S38-C4: the measured variant map (49 TRUE same-employer key variants
+# from the 2,616-row corpus — dup-variant-map.md; evidence: collision
+# groups + measured non-colliding mates; AWS≠Amazon and the Amazon
+# entities stay DISTINCT per the sector doctrine).
+COMPANY_KEY_VARIANTS = {
+    "allstate-insurance-company": "allstate-insurance",
+    "amazon-com": "amazon",
+    "amazon-web-services-inc": "amazon-web-services-aws",
+    "apn-consulting-inc": "apn-consulting",
+    "bny-mellon": "bny", "bold-limited": "bold",
+    "bosch-group": "bosch", "calm-com": "calm",
+    "caterpillar-inc": "caterpillar", "circle-k-stores-inc": "circle-k-stores",
+    "clindcast-llc": "clindcast", "compsych-corporation": "compsych",
+    "construction-specialties-inc": "construction-specialties",
+    "cummins-inc": "cummins", "eagleview-technologies": "eagleview",
+    "fiserv-inc": "fiserv", "ford-motor": "ford-motor-company",
+    "general-motors-gm": "general-motors",
+    "guardian-life-insurance-company": "guardian-life",
+    "harbourvest-partners-llc": "harbourvest-partners", "hiscox-ltd": "hiscox",
+    "icf-international-inc": "icf-international",
+    "johnson-and-johnson": "johnson-johnson",
+    "jpmorgan-chase-co": "jpmorgan-chase", "meta-platforms": "meta",
+    "metasense-inc": "metasense", "microsoft-corporation": "microsoft",
+    "mmd-services-inc": "mmd-services", "motive-technologies": "motive",
+    "mutual-of-enumclaw-insurance-company": "mutual-of-enumclaw",
+    "noblesoft-technologies-inc": "noblesoft-technologies",
+    "omg-technology": "omg-technologies",
+    "procter-amp-gamble": "procter-gamble",
+    "prysmian-group": "prysmian", "servicenow-inc": "servicenow",
+    "simpro-software": "simpro",
+    "software-guidance-assistance-inc": "software-guidance-assistance",
+    "steps-talent-llc": "steps-talent",
+    "t-mobile-usa": "t-mobile", "t-mobile-usa-inc": "t-mobile",
+    "talent-software-services-inc": "talent-software-services",
+    "the-boeing-company": "boeing", "the-cigna-group": "cigna",
+    "the-standard-insurance": "standard-insurance-company",
+    "the-vanguard-group": "vanguard", "tp-link-usa-corp": "tp-link",
+    "true-anomaly-inc": "true-anomaly", "truist-bank": "truist",
+    "uline-inc": "uline",
+}
+
+
+def _company_key(company: str, existing: dict | None = None) -> str:
     """build_ui_bundle.company_key-compatible slug + the variant map
-    (design §6 — Anker-class unification via triage-grown variants)."""
+    (design §6 — Anker-class unification via triage-grown variants;
+    S38-C4: the 49-entry measured map is the seed)."""
     s = re.sub(r"[^a-z0-9]+", "-", (company or "").lower()).strip("-")
-    if s in existing:
+    s = COMPANY_KEY_VARIANTS.get(s, s)
+    if existing and s in existing:
         return existing[s]
     return s or "unknown"
 
@@ -1205,12 +1250,15 @@ def sweep(queries: list[str], skip_gj: bool = False,
             dropped.append({**r, "reason": "g1b_title",
                             "recoverable": True})
             continue
-        # S38 flags (never drops): staffing repost + anonymized employer
+        # S38 flags (never drops): staffing repost + anonymized/board
+        # employer (N9: Jobgether-class — company field is not the
+        # real employer; flagged + merge-excluded, kept)
         r["staffing_evidence"] = ("agency" if is_staffing_company(company)
                                    else "")
         if r["staffing_evidence"]:
             counters["staffing_repost"] += 1
-        r["employer_anonymized"] = bool(is_anonymized_employer(company))
+        r["employer_anonymized"] = bool(
+            is_anonymized_employer(company) or is_board_employer(company))
         if r["employer_anonymized"]:
             counters["employer_anonymized"] += 1
         act, sev, reason = sector_verdict(
@@ -1232,7 +1280,10 @@ def sweep(queries: list[str], skip_gj: bool = False,
     _ANON_KEYS = {"confidential", "company-confidential", "stealth",
                   "stealth-startup", "unknown", "hidden", "undisclosed",
                   "anonymous", "private-company",
-                  "a-vinyl-bar-in-shibuya"}
+                  "a-vinyl-bar-in-shibuya",
+                  # N9 board-employers (shared key across unrelated jobs)
+                  "jobgether", "us-government-jobs", "ziprecruiter",
+                  "adzuna", "jooble", "careerjet", "indeed", "linkedin"}
     by_key: dict[tuple, dict] = {}
     by_rid: dict[str, dict] = {}
     for r in kept:
@@ -1253,6 +1304,22 @@ def sweep(queries: list[str], skip_gj: bool = False,
             for k, cand in by_key.items():
                 if cand.get("_exact") == exact:
                     merge_into = k
+                    break
+        if merge_into is None:
+            # S38-C4: the intra-source re-crawl class (Seismic ×3 on
+            # consecutive careerjet crawl days) — same source, same
+            # title, same company, ≤7 days apart = the same posting
+            # re-crawled, merge (earliest evidence wins)
+            for k, cand in by_key.items():
+                if cand.get("_title_norm") == re.sub(
+                        r"\W", "", (r["title"] or "").lower()) and \
+                        cand.get("_ck") == ck and \
+                        cand.get("_src") == r.get("source") and \
+                        day is not None and cand.get("_day") is not None and \
+                        abs((day - cand["_day"]).days) <= 7:
+                    merge_into = k
+                    day_delta_hist["re7"] = \
+                        day_delta_hist.get("re7", 0) + 1
                     break
         if merge_into is None:
             for k, cand in by_key.items():
@@ -1277,8 +1344,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
         if merge_into is None:
             r["_exact"], r["_core"], r["_day"], r["_layer"] = \
                 exact, core, day, r.get("layer")
-            r["_ck"], r["_title_norm"] = ck, re.sub(
-                r"\W", "", (r["title"] or "").lower())
+            r["_ck"], r["_title_norm"], r["_src"] = ck, re.sub(
+                r"\W", "", (r["title"] or "").lower()), r.get("source")
             by_key[id(r)] = r
             if rid:
                 by_rid[rid] = r
@@ -1330,8 +1397,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
             # the NEW row outranks the stored one — swap membership
             r["_exact"], r["_core"], r["_day"], r["_layer"] = \
                 exact, core, day, r.get("layer")
-            r["_ck"], r["_title_norm"] = ck, re.sub(
-                r"\W", "", (r["title"] or "").lower())
+            r["_ck"], r["_title_norm"], r["_src"] = ck, re.sub(
+                r"\W", "", (r["title"] or "").lower()), r.get("source")
             del by_key[merge_into]
             by_key[id(r)] = r
             if rid:
@@ -1373,6 +1440,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
         r.pop("_exact", None), r.pop("_core", None)
         r.pop("_day", None), r.pop("_layer", None)
         r.pop("_ck", None), r.pop("_title_norm", None)
+        r.pop("_src", None)
 
     # outputs (write-atomic)
     ROLES_DIR.mkdir(parents=True, exist_ok=True)
@@ -1483,10 +1551,24 @@ def sweep(queries: list[str], skip_gj: bool = False,
     baselines["roles:pm"] = series[-120:]
     _write_atomic(BASELINE, json.dumps(baselines, indent=1).encode())
 
-    # UI bundle (roles-pm.json — design §5, rides the ui/ mirror sync)
+    # UI bundle (roles-pm.json — design §5, rides the ui/ mirror sync).
+    # S38-C4: ids are row-hashes (company_key + title + loc + source)
+    # — the companyId:title_core fallback produced 62 duplicate ids on
+    # the 2,616-row corpus (rows without reqIds share title cores).
+    import hashlib
+
+    def _row_id(r) -> str:
+        if r.get("rid"):
+            return r["rid"]
+        basis = "|".join((r.get("company_key") or "",
+                          r.get("title") or "",
+                          (r.get("loc") or "")[:40],
+                          r.get("source") or ""))
+        return (r.get("company_key") or "unknown") + ":" + \
+            hashlib.sha1(basis.encode()).hexdigest()[:12]
+
     ui_rows = [{
-        "id": (r.get("rid") or
-               f"{r['company_key']}:{title_core(r['title'])}"),
+        "id": _row_id(r),
         "title": r["title"], "company": r["company"],
         "companyKey": r["company_key"], "loc": r.get("loc", ""),
         "url": r.get("url", ""), "postedOn": r.get("posted", ""),

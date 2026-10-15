@@ -82,6 +82,7 @@ PM_CORE = re.compile(
     r"""
       \b(?:product)\s*,?\s*(?:mgr\b|managers?|management|mgmt\b|owners?|
          leads?|directors?|gm\b|general\s+managers?)
+         (?!\s+(?:analyst|specialist|trainer|trainee|coordinator|assistant)\b)
     | \bproduct\s+(?:line|segment|platform|portfolio)\s+manager\b
     | \b(?:managers?|directors?|heads?|presidents?|vp|vice\s+president|leads?)\s*,?\s*
         (?:of\s+)?\s*product(?:\s+management)?\b
@@ -105,10 +106,18 @@ _NOUN_FIRST_CHAIN = re.compile(
     re.I | re.VERBOSE)
 
 # Bare-PM (R2 P0-2): only via query provenance (L1-L3 cards).
+# S38-C3 N1 guard: the PM token must sit in the title's HEAD segment
+# (before the first comma) — HN/findwork role-enumeration comments
+# ("Sr/Staff Engineers, Data Scientist, FDE, PM") are not PM rows.
 _BARE_PM = re.compile(
     r"""\b(?:[A-Z][a-z]*\s)?(?:Sr\.?|Jr\.?|Staff|Principal|Distinguished|
         Group|Associate|Senior)?\s*PM\b(?:\s+(?:I{1,3}|IV|V))?\b""",
     re.I | re.VERBOSE)
+
+
+def _bare_pm_head_only(title: str) -> bool:
+    head = title.split(",")[0]
+    return bool(_BARE_PM.search(head))
 
 # Adjacent-set closure (R2 P1-4): role nouns required — the loose
 # "product marketing" form leaks Specialist/Engineer/GRC rows.
@@ -156,8 +165,9 @@ def classify_family(title: str,
     # 6. PM core
     if PM_CORE.search(title):
         return "pm", "grammar"
-    # 7. bare-PM via query provenance (L1-L3 only)
-    if query_is_pm and _BARE_PM.search(title):
+    # 7. bare-PM via query provenance (L1-L3 only; S38-C3 N1: head
+    #    segment only — enumeration comments don't qualify)
+    if query_is_pm and _bare_pm_head_only(title):
         return "pm", "qp"
     return "other", "grammar"
 
@@ -340,6 +350,21 @@ ANON_COMPANY = re.compile(
 
 def is_anonymized_employer(company: str) -> bool:
     return bool(ANON_COMPANY.search((company or "").lower().strip()))
+
+
+# ── S38-C3 N9: the job-board-as-employer class (Jobgether rows carry
+# the BOARD as the company — the real employer lives in the title/loc;
+# flagged as employer_anonymized + merge-excluded, kept, never dropped)
+BOARD_EMPLOYER_SEED = {
+    "jobgether", "us government jobs", "ziprecruiter", "adzuna",
+    "jooble", "careerjet", "indeed", "linkedin",
+}
+
+
+def is_board_employer(company: str) -> bool:
+    c = (company or "").lower().strip()
+    return bool(c) and (c in BOARD_EMPLOYER_SEED or
+                        c.startswith("jobgether"))
 
 
 # ── S38: G3 exact-key physical-goods seeds (F12) — normalized

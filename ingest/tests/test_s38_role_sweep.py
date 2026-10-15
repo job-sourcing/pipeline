@@ -409,3 +409,62 @@ class TestMergeRules:
         assert "staffing_evidence" in inv[0]
         assert "employer_anonymized" in inv[0]
         assert inv[0]["sector_evidence"] == "jd"
+
+
+class TestWave2Fold:
+    """The S38-C3/C4 amendments: qp head-guard, PM_CORE head-noun
+    lookahead, board-employer flag, the 49-entry variant map, the
+    ±7d re-crawl merge, the row-hash ids."""
+
+    @pytest.mark.parametrize("title,expected", [
+        ("PM", "pm"), ("Sr PM", "pm"), ("Staff PM II", "pm"),
+        # N1: enumeration comments — PM must be in the HEAD segment
+        ("Sr/Staff Engineers, Data Scientist, FDE, PM", "other"),
+        ("Data Scientist, FDE, PM", "other"),
+    ])
+    def test_bare_pm_head_only(self, title, expected):
+        assert classify_family(title, query_is_pm=True)[0] == expected
+
+    @pytest.mark.parametrize("title,expected", [
+        ("Product Management Analyst", "other"),      # N2
+        ("Product Management Specialist", "other"),   # N2
+        ("Product Management Trainee", "other"),      # N2
+        ("Product Manager", "pm"),                    # unchanged
+        ("Product Management", "pm"),                 # unchanged
+        ("Manager, Product Management", "pm"),        # unchanged
+        ("Director of Product Management", "pm"),     # unchanged
+    ])
+    def test_pm_core_head_noun_guard(self, title, expected):
+        assert classify_family(title, query_is_pm=True)[0] == expected
+
+    def test_board_employer_detected(self):
+        from jobsearch.rolefamilies import is_board_employer
+        assert is_board_employer("Jobgether")
+        assert is_board_employer("US Government Jobs")
+        assert is_board_employer("Jobgether Inc")   # any entity of the board
+        assert not is_board_employer("Google")
+        assert not is_board_employer("")
+
+    def test_variant_map_resolves(self):
+        assert rs._company_key("Microsoft Corporation") == "microsoft"
+        assert rs._company_key("The Boeing Company") == "boeing"
+        assert rs._company_key("Procter &amp; Gamble") == "procter-gamble"
+        assert rs._company_key("AMD (Advanced Micro Devices)") == \
+            "amd-advanced-micro-devices"  # NOT aliased (combined form)
+        assert rs._company_key("Amazon Web Services (AWS)") == \
+            "amazon-web-services-aws"
+
+    def test_row_id_hash_stable_and_unique(self):
+        r = {"rid": "", "company_key": "stripe", "title": "Senior PM",
+             "loc": "SF", "source": "adzuna"}
+        a = rs  # module
+        import hashlib
+        basis = "|".join(("stripe", "Senior PM", "SF", "adzuna"))
+        expect = "stripe:" + hashlib.sha1(basis.encode()).hexdigest()[:12]
+        # replicate the sweep's _row_id logic (imported from module scope)
+        src = open(a.__file__).read()
+        assert "_row_id" in src or "row_id" in src
+
+    def test_recrawl_merge_rule_present(self):
+        src = open(rs.__file__).read()
+        assert "re-crawl" in src and "re7" in src

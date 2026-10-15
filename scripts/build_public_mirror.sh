@@ -146,10 +146,37 @@ if [ -d "$DEST/ingest/data/roles" ]; then
 fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
-  rsync -a --delete "$DEST"/ingest/data/ui/ "$SRC/ingest/data/ui/"
+  # S38 fix: roles-pm.json is written on BOTH sides (the GHA lane AND
+  # local full runs) — the blind org-wins back-sync just clobbered the
+  # S38 local sweep's 2,616-row file with the org's stale 1,043 copy
+  # (observed 2026-10-15). Newest-wins by envelope.ran_at instead.
+  python3 - "$DEST" "$SRC" <<'PYEOF'
+import json, sys, shutil, os
+dest, src = sys.argv[1], sys.argv[2]
+df = os.path.join(dest, "ingest/data/ui/roles-pm.json")
+sf = os.path.join(src, "ingest/data/ui/roles-pm.json")
+if os.path.exists(df):
+    d_ran = s_ran = ""
+    try:
+        d_ran = (json.load(open(df)).get("envelope") or {}).get("ran_at", "")
+    except Exception:
+        pass
+    try:
+        s_ran = (json.load(open(sf)).get("envelope") or {}).get("ran_at", "")
+    except Exception:
+        pass
+    if d_ran > s_ran:                    # org copy is newer — back-sync it
+        shutil.copy2(df, sf)
+        print(f"[ui-roles-sync] back-synced org copy (ran {d_ran} > {s_ran})")
+    elif s_ran > d_ran:
+        print(f"[ui-roles-sync] kept archive copy (ran {s_ran} > {d_ran}) "
+              "- it flows forward in the rsync")
+PYEOF
+  rsync -a --delete --exclude=roles-pm.json \
+      "$DEST"/ingest/data/ui/ "$SRC"/ingest/data/ui/
   (cd "$SRC" && git add ingest/data/ui 2>/dev/null && \
     git diff --cached --quiet || \
-    git commit -q -m "UI bundle back-sync from org runtime (csv-export)")
+    git commit -q -m "UI bundle back-sync from org runtime (csv-export; roles-pm.json newest-wins)")
 fi
 # S38: the WORKFLOW back-sync — the THIRD recurrence of the org-only
 # runtime-file class (S35 f5e1660a: 2 lanes; S37 f3c28cb3:
