@@ -398,7 +398,8 @@ def _fallback_serve(out: dict, served_cards: set, rid: str,
 
 def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
                     deadline: float,
-                    title_search_budget: Optional[list] = None
+                    title_search_budget: Optional[list] = None,
+                    blocked: Optional[list] = None
                     ) -> dict[str, dict]:
     """LinkedIn signals for the new postings (bounded index + bounded
     signals; circuit-breakered inside the provider). Returns
@@ -416,7 +417,16 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
     (window parity, S9-audit D1 P2) while reqIds outside the batch serve
     nobody. Every executed search sleeps TITLE_SEARCH_PAUSE_S (B3/D1
     P2); fallback-assigned signals carry match_method="titleSearchFallback"
-    so the feed is self-describing (window matches carry no stamp)."""
+    so the feed is self-describing (window matches carry no stamp).
+
+    S37-W1 (D-S37-1 A1 / review P0-1): `blocked` = the run-level marker
+    cell (the SAME mutable-cell pattern as title_search_budget) — a
+    CorroborationBlocked index APPENDS the reason so the CALLER (which
+    knows the label; this function is company-keyed) can make the
+    outage DURABLE: alerts.log entry + the runs.jsonl
+    corroboration_blocked field. The no-op return contract is
+    unchanged — the policy is loud-but-not-red: postings still
+    collect, signals degrade visibly."""
     if not new_rows:
         return {}
     if time.monotonic() > deadline:
@@ -431,6 +441,8 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
             start_offset=0)
     except corroborate.CorroborationBlocked as exc:
         print(f"[watch] LinkedIn index blocked: {exc}", file=sys.stderr)
+        if blocked is not None:
+            blocked.append(str(exc))    # S37-W1 (A1): durable marker
         return {}
     out: dict[str, dict] = {}
     served_cards: set[str] = set()
@@ -1527,12 +1539,17 @@ def run_watch(w: dict, cfg: Config) -> str:
     # corroboration lane would index LinkedIn against itself (pure
     # request waste; the adapter's own detail fetch already carries the
     # signals). Opt-out per watch entry.
+    # S37-W1 (A1): corrob_blocked = the run-level marker cell — BOTH
+    # corroborate_new call sites (main + the lag pass below) feed it;
+    # the durable write happens after the lag pass.
+    corrob_blocked: list[str] = []
     signals = ({} if w.get("skip_li_corroboration")
                else corroborate_new(
                    (new_rows + backlog_rows) if country_client
                    else enrich_input, w["company"], cfg,
                    deadline,
-                   title_search_budget=[TITLE_SEARCH_MAX]))
+                   title_search_budget=[TITLE_SEARCH_MAX],
+                   blocked=corrob_blocked))
     for e in enriched:
         s = signals.get(e["reqId"])
         if s:
@@ -1604,7 +1621,8 @@ def run_watch(w: dict, cfg: Config) -> str:
             if recent:
                 sigs2 = ({} if w.get("skip_li_corroboration")
                          else corroborate_new(list(recent.values()),
-                                              w["company"], cfg, deadline))
+                                              w["company"], cfg, deadline,
+                                              blocked=corrob_blocked))
                 updates = []
                 for rid, s in sigs2.items():
                     r = recent.get(rid)
@@ -1622,6 +1640,31 @@ def run_watch(w: dict, cfg: Config) -> str:
         except Exception as exc:   # additive feature — never fatal
             print(f"[watch:{label}] re-corroborate pass skipped: "
                   f"{type(exc).__name__}: {exc}", file=sys.stderr)
+
+    # S37-W1 (D-S37-1 A1 / review P0-1): the corroboration freeze made
+    # DURABLE. A blocked LinkedIn index used to be an ephemeral stderr
+    # line while the lane ran GREEN — the signals layer
+    # (numApplicants/linkedinUrl/matchMethod) froze fleet-wide with zero
+    # durable trace (no alerts.log, no ledger field, no drift class).
+    # Policy (explicit, A1): loud-but-not-red — postings still collect;
+    # the marker degrades visibly in alerts.log + the runs.jsonl ledger
+    # field + drift_alert's corroboration-blocked-streak class. Sticky
+    # per RUN: any block in any pass (main, lag, or a deferred retry)
+    # flags the run's ledger line — the outage happened; a healthy
+    # next run writes a clean line and breaks the streak.
+    if corrob_blocked:
+        _CORROBORATION_BLOCKED.add(label)
+        note = (f"LinkedIn corroboration index blocked "
+                f"({corrob_blocked[0]}) — signals degraded this pass (no "
+                f"numApplicants/linkedinUrl/matchMethod for unmatched "
+                f"rows), postings still collected; loud-but-not-red "
+                f"policy; next run retries")
+        print(f"[watch:{label}] CORROBORATION-BLOCKED: {note}",
+              file=sys.stderr, flush=True)
+        with open(WATCH_DIR / f"{label}.alerts.log", "a",
+                  encoding="utf-8") as lf:
+            lf.write(f"board-watch {label} CORROBORATION-BLOCKED: {note}"
+                     f"\n({_now_iso()})\n\n")
 
     # state: compact rewrite (first_seen preserved; last_seen=today for
     # everything still current; gone rows dropped from state — their
@@ -1852,22 +1895,42 @@ def backfill_dates(watches: list[dict], cfg: Config) -> dict[str, str]:
     return results
 
 
+# S37-W1 (D-S37-1 A1 / review P0-1): per-RUN corroboration-blocked
+# labels — THE SEAM between run_watch (where corroborate_new's
+# CorroborationBlocked catch fires; that function is company-keyed and
+# label-blind) and _ledger_append (main()'s scope). run_watch appends
+# the label when its run-level marker cell is non-empty (the same
+# mutable-cell pattern as S9 C5's title_search_budget);
+# _ledger_append consumes it into the runs.jsonl line
+# ("corroboration_blocked": true) and clears it. Sticky per run: the
+# deferred-retry pass may re-run a watch — a block in ANY pass flags
+# the run's single ledger line.
+_CORROBORATION_BLOCKED: set[str] = set()
+
+
 def _ledger_append(watches: list[dict], results: dict[str, str]) -> None:
     """D-S35-2: the per-run verdict ledger — durable cross-run evidence
     for the drift auditor's fail-streak class (WATCH_RESULTS_JSON is
     GITHUB_ENV-only; it dies with the run). One line per watch per run;
     checkpointed by the lane state-commit globs (.runs.jsonl is in the
-    rescue set). Best-effort: a ledger failure never blocks the run."""
+    rescue set). Best-effort: a ledger failure never blocks the run.
+    S37-W1 (A1): a run whose corroboration was blocked carries
+    corroboration_blocked=true on its line (absent = false — the old
+    lines stay schema-compatible) — drift_alert's
+    corroboration-blocked-streak class reads it."""
     for w in watches:
         lbl = w.get("label")
         if lbl and lbl in results:
+            rec = {"ts": _now_iso(), "verdict": results[lbl]}
+            if lbl in _CORROBORATION_BLOCKED:
+                rec["corroboration_blocked"] = True
             try:
                 with open(WATCH_DIR / f"{lbl}.runs.jsonl", "a",
                           encoding="utf-8") as rf:
-                    rf.write(json.dumps(
-                        {"ts": _now_iso(), "verdict": results[lbl]}) + "\n")
+                    rf.write(json.dumps(rec) + "\n")
             except OSError:
                 pass
+    _CORROBORATION_BLOCKED.clear()   # consumed — one run, one line
 
 
 def main() -> int:
