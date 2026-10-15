@@ -104,7 +104,7 @@ jobs:
           # S32: the LinkedIn lanes run on li-board-watch.yml (daily,
           # own runner/IP — correlated rate limits isolated) and
           # li-dormant-watch.yml (weekly liveness re-probe).
-          WATCH_SKIP_TAGS: weekly,li,li_dormant,gj,gj_dormant,ra,gj_monthly,gj_quarterly
+          WATCH_SKIP_TAGS: weekly,li,li_dormant,gj,gj_dormant,ra,gj_monthly,gj_quarterly,weekly_std
         run: python3 scripts/gha_board_watch.py
 
       - name: Checkpoint state to git (race-proof)

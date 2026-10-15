@@ -64,6 +64,9 @@ CADENCE_DAYS = {           # config tag -> expected refresh interval
     # class's has_csv gate exempts them); any future CSV emission for
     # those lanes would storm false-positive stale-board issues.
     "ra": 7, "gj_quarterly": 95, "gj_monthly": 35,
+    # S37-W3 (D-S37-1 R2/A8): the churn-demoted tier — 28 healthy
+    # zero-churn boards moved daily -> weekly (the cadence doctrine).
+    "weekly_std": 7,
 }
 DEFAULT_CADENCE = 1
 
