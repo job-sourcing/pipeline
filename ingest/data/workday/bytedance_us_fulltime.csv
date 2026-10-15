@@ -10050,50 +10050,6 @@ Preferred Qualifications
 - Strong knowledge of full-text search and (multi)-vector indexing, including HNSW, IVF, DiskANN, or related ANN algorithms.
 - 5 years experience optimizing billion-scale or larger vector retrieval for latency, throughput, recall, and cost.
 - 5 years experience with cloud-native storage, compute-storage separation, object storage, or lakehouse/lakebase architectures.",3605,https://joinbytedance.com/search/7680424310557673781,,https://www.linkedin.com/jobs/view/4461366105,2026-09-02,25,among first 25,,matched,title,2026-09-19,2026-09-19T06:47:05,2026-10-15,,43,startDate+linkedin,true,0,,,,,R&D,2026-09-02,,true,447,160000,197680,264514,subset,Software Engineer
-A105162A,Research Engineer - [Seed Model - Infra - Training Performance & ML Compilation (Torch Compile)],bytedance,ByteDance,Full time,,,,Seattle,1,Seattle,false,,United States,,0,"The Seed Infrastructures team oversees the distributed training, reinforcement learning framework, high-performance inference, and heterogeneous hardware compilation technologies for AI foundation models.
-
-Responsibilities
-- Optimize training performance for large-scale foundation models through compiler-level techniques, including graph optimization, operator fusion, and kernel generation.
-- Develop and extend ML compilation capabilities based on the PyTorch compilation stack (e.g. FX, Dynamo, Inductor) to improve training efficiency across heterogeneous GPU platforms.
-- Design and optimize high-performance GPU kernels for training workloads.
-- Conduct performance profiling and analysis of large-scale training jobs; identify and resolve bottlenecks in collaboration with research and infrastructure teams.
-
-Minimum Qualification(s)
-- Bachelor's degree or above in Computer Science, Electrical Engineering, or a related field.
-- Strong proficiency in C/C++ and Python; solid foundations in algorithms, data structures, and systems programming.
-- Hands-on experience in training-side performance optimization for deep learning workloads.
-- Hands-on experience writing and optimizing GPU kernels (e.g., CUDA, Triton).
-- Experience with the PyTorch compilation stack, meeting at least one of the following: Direct experience using, debugging, or extending Inductor or FX.
-- Proficiency in Triton kernel development.
-- Solid experience with PyTorch computation graph work (graph optimization, graph capture, operator fusion).
-
-Preferred Qualification(s)
-- Experience with TorchDynamo or bytecode-level program transformation.
-- Experience with Triton compiler internals or other ML compiler backends (e.g., MLIR, LLVM).
-- Contributions to related open-source projects (e.g., PyTorch, Triton, FlashAttention).
-- Publications in relevant venues (e.g., MLSys, OSDI, ASPLOS).",1877,https://joinbytedance.com/search/7679143613305555205,,,,,,,not_checked,,2026-09-19,,2026-10-15,,,,true,0,,,,,R&D,,,,7,236000,272000,346000,subset,Research Engineer
-A132521,Research Engineer - [Seed Model - Infra - Training Performance & ML Compilation (Torch Compile)],bytedance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"The Seed Infrastructures team oversees the distributed training, reinforcement learning framework, high-performance inference, and heterogeneous hardware compilation technologies for AI foundation models.
-
-Responsibilities
-- Optimize training performance for large-scale foundation models through compiler-level techniques, including graph optimization, operator fusion, and kernel generation.
-- Develop and extend ML compilation capabilities based on the PyTorch compilation stack (e.g. FX, Dynamo, Inductor) to improve training efficiency across heterogeneous GPU platforms.
-- Design and optimize high-performance GPU kernels for training workloads.
-- Conduct performance profiling and analysis of large-scale training jobs; identify and resolve bottlenecks in collaboration with research and infrastructure teams.
-
-Minimum Qualification(s)
-- Bachelor's degree or above in Computer Science, Electrical Engineering, or a related field.
-- Strong proficiency in C/C++ and Python; solid foundations in algorithms, data structures, and systems programming.
-- Hands-on experience in training-side performance optimization for deep learning workloads.
-- Hands-on experience writing and optimizing GPU kernels (e.g., CUDA, Triton).
-- Experience with the PyTorch compilation stack, meeting at least one of the following: Direct experience using, debugging, or extending Inductor or FX.
-- Proficiency in Triton kernel development.
-- Solid experience with PyTorch computation graph work (graph optimization, graph capture, operator fusion).
-
-Preferred Qualification(s)
-- Experience with TorchDynamo or bytecode-level program transformation.
-- Experience with Triton compiler internals or other ML compiler backends (e.g., MLIR, LLVM).
-- Contributions to related open-source projects (e.g., PyTorch, Triton, FlashAttention).
-- Publications in relevant venues (e.g., MLSys, OSDI, ASPLOS).",1877,https://joinbytedance.com/search/7679138796101847349,,,,,,,not_checked,,2026-09-19,,2026-10-15,,,,true,0,,,,,R&D,,,,7,236000,272000,346000,subset,Research Engineer
 A09719A,Employee Relations Partner - AMS (San Jose),bytedance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"About the Team:
 The Employee Relations (ER) team is a global team dedicated to supporting a wide range of employee relations matters, including organization redesign/restructures, performance management, workplace conduct issues, employee injury and death cases, and other complex employee situations.
 
@@ -11839,3 +11795,18 @@ Minimum Qualifications
 Preferred Qualifications
 - Deep passion for VR/AR and the ""Metaverse"" ecosystem.
 - Experience working for a global company with headquarters in Asia (understanding the cross-cultural workflow).",2209,https://joinbytedance.com/search/7615290168053975301,,,,,,,not_checked,,2026-10-14,,2026-10-15,,,,true,0,,,,,,,,,,,,,,
+A238764,Account Executive - Innovative Technical Sales (AI),ByteDance,ByteDance,Full time,,,,Los Angeles,1,Los Angeles,false,,United States,,0,"This is a once-in-a-lifetime opportunity to join the world's fastest-growing startup as well as the biggest unicorn by valuation. With ByteDance's vision to build global platforms of creation and interaction, this team is devoted to developing innovative technologies and products for businesses to fuel their next wave of growth. It is the best time to join us and pave the way into the new era together!
+
+Responsibilities:
+- Establish a strong pipeline for ByteDance's innovation technology solution suite.
+- Execute Go to Market strategy and drive revenue growth through effective sales closure activities.
+- Build and manage a strong relationship with prospective clients.
+- Familiar with industry pain points and able to leverage innovation technology use cases to maximize the client's ROI.
+- Partner closely with the marketing team to drive up market awareness of our innovative technology portfolio via public conferences, seminars and/or workshops.
+- Be proactive in problem-solving and willing to stretch beyond core responsibilities to take on additional initiatives and responsibilities as they emerge.
+
+Minimum Qualification(s):
+- Bachelor's degree or equivalent practical experience.
+- Minimum 5 years of experience in sales or product role with a background in B2B technology and/or GenAI/LLM, preferably in cloud computing, SaaS, or AI industries.
+- You are a self-starter & have a passion for making an impact for our clients.
+- Strong results-oriented mindset, and cross-functional collaboration skills.",1521,https://joinbytedance.com/search/7696574766983317813,,,,,,,not_checked,,2026-10-15,,2026-10-15,,,,true,0,,,,,,,,,,,,,,

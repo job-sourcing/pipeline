@@ -1,154 +1,4 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-F943A617EC,2026 Early Career Embedded Software Engineer,tp-link-usa-corp,tp-link-usa-corp,Full time,Posted 135 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"Headquartered in the United States, TP-Link Systems Inc. is a global provider of reliable networking devices and smart home products, consistently ranked as the world’s top provider of Wi-Fi devices. The company is committed to delivering innovative products that enhance people’s lives through faster, more reliable connectivity. With a commitment to excellence, TP-Link serves customers in over 170 countries and continues to grow its global footprint.
-
-We believe technology changes the world for the better! At TP-Link Systems Inc, we are committed to crafting dependable, high-performance products to connect users worldwide with the wonders of technology.
-
-Embracing professionalism, innovation, excellence, and simplicity, we aim to assist our clients in achieving remarkable global performance and enable consumers to enjoy a seamless, effortless lifestyle.
-
-This is a great opportunity for a recent graduate who wants to grow their career in embedded systems, IoT, and consumer or enterprise electronics.
-
-In this role, you’ll help design, develop, and improve the core software that powers our devices. You’ll work alongside experienced engineers, learning how to create reliable, high-performance features that connect with hardware, cloud services, and peripherals.
-
-What You’ll Do
-
-• Contribute to the design, development, and deployment of scalable software systems and products across a range of engineering domains.
-
-• Build, test, and maintain high-quality code for applications, services, or system-level software.
-
-• Collaborate on the development of core components, which may include user-facing applications, backend services, or system-level modules (e.g., networking, connectivity, storage, or device integration).
-
-• Work with modern development tools, frameworks, and environments.
-
-• Contribute to testing efforts, including unit, integration, and system-level validation to ensure reliability and performance.
-
-• Partner with cross-functional teams to understand requirements and deliver effective technical solutions.
-
-• Learn and apply best practices for performance, scalability, and efficiency across different system layers.
-
-• Stay curious - explore new technologies and contribute ideas that shape future products.
-
-What You’ll Gain
-
-• Hands-on experience building real-world systems across multiple engineering domains.
-
-• Mentorship from experienced engineers and exposure to industry best practices in software development.
-
-• Opportunity to contribute to products used by millions of customers.
-
-Requirements
-
-Required Qualifications:
-
-• Bachelor’s or Master's degree in Computer Science, Electrical Engineering, Computer Engineering, or a related field.
-
-• Internship, co-op, research, or project experience in software development or a related technical field
-
-• Proficiency in C/C++
-
-• Understanding of fundamental computer science concepts
-
-• Familiarity with the software development lifecycle
-
-• Strong problem-solving skills, curiosity, and attention to detail
-
-• Ability to work collaboratively in a team environment and communicate effectively
-
-• Willingness to learn quickly and adapt to new technologies, tools, and frameworks
-
-• Must have continuous work authorization in the US without the need for visa sponsorships
-
-Benefits
-
-Salary range: $100,000 - $120,000
-
-• Free snacks and drinks
-
-• Fully paid medical, dental, and vision insurance (partial coverage for dependents)
-
-• Contributions to 401k funds
-
-• Bi-annual reviews, and annual pay increases
-
-• Health and wellness benefits, including free gym membership
-
-• Quarterly team-building events
-
-At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.",4616,https://apply.workable.com/j/F943A617EC,,https://www.linkedin.com/jobs/view/4413763362,2026-09-24,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:22:02,2026-10-15,,21,startDate+linkedin,true,0,,,,,R&D - Product Engineering,2026-09-24,,true,,,,,,
-428D85D8DC,2026 Early Career System Hardware Design Engineer,tp-link-usa-corp,tp-link-usa-corp,Full time,Posted 134 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"Overview
-
-TP-Link Systems Inc. is seeking a creative Hardware Engineer to join our systems engineering team. You will support consumer network products development and will be involved in all stages of product development, from concept to mass production. This includes initial discussions on product concepts, evaluating feasible hardware solutions, and designing the overall hardware system framework. In the mid-stage, you will focus on creating detailed circuit schematics, designing PCBs, developing and debugging prototypes, and analyzing and resolving testing issues until you produce a comprehensive and reviewed testing report. Finally, you will follow up on small-batch pilot production to ensure manufacturability and participate in addressing production issues after mass production, as well as analyzing and resolving market feedback issues to further improve our product quality.
-
-Key Responsibilities:
-
-• Participate in early-stage product and technology assessments, including competitive product analysis, performance testing, and evaluation of chipsets, modules, and other key components.
-
-• Support board-level and system-level hardware design activities, including schematic design, component selection, BOM preparation, PCB layout review, and design documentation.
-
-• Assist with prototype bring-up, hardware debugging, functional verification, and issue tracking under the guidance of senior engineers.
-
-• Perform hardware validation tests, including functional testing, power measurements, signal measurements, thermal checks, environmental test support, and basic reliability testing.
-
-• Use lab equipment such as oscilloscopes, multimeters, power supplies, spectrum analyzers, and vector network analyzers to support testing and debugging.
-
-• Support troubleshooting and optimization of hardware designs by analyzing test data, summarizing issues, and following up on corrective actions.
-
-• Assist with compliance and certification testing, including FCC, CE, RoHS, ESD, EMC, safety, and other applicable regulatory requirements.
-
-• Work closely with firmware, software, mechanical, QA, manufacturing, project management, and supply chain teams to support product development, prototype builds, pilot runs, and production readiness.
-
-• Help analyze hardware-related issues from validation, production, or customer feedback, and support issue reproduction, root-cause analysis, and solution verification.
-
-• Create and maintain clear hardware documentation, including test reports, design notes, BOMs, schematic review records, issue lists, and design history files.
-
-Requirements
-
-Required Qualifications:
-
-• Bachelor’s or Master's degree in Electrical Engineering, Computer Engineering, or a related field
-
-• 0-2 years of relevant hardware engineering experience, including internships, co-op, research, lab, or project experience
-
-• Strong foundation in basic circuit theory and electronic component applications, including analog and digital circuits, such as transistor-based circuits, power supplies, op-amps, filters, and common passive components
-
-• Basic experience using lab equipment such as oscilloscopes, multimeters, power supplies, signal generators, logic analyzers, spectrum analyzers, or vector network analyzers
-
-• Hands-on experience with schematic design, PCB layout review, circuit bring-up, debugging, or validation through coursework, projects, internships, or work experience. Familiarity with one hardware design tool such as Altium Designer, Cadence Allegro, OrCAD, or similar schematic/PCB design tools
-
-• Strong problem-solving skills, curiosity, attention to detail, and willingness to learn new technologies and engineering practices
-
-• Good communication skills and ability to work effectively with cross-functional teams, including firmware, mechanical, manufacturing, QA, and product teams
-
-• Ability to document test results, summarize technical issues clearly, and follow up on engineering action items
-
-• Must have continuous work authorization in the US without the need for visa sponsorships
-
-Preferred Qualifications:
-
-• Internship, academic project, or work experience involving system-level, module-level, or board-level hardware design and debugging, especially networking hardware products
-
-• Familiarity with RF/wireless hardware design, including antenna-related circuits, impedance matching, RF front-end circuits, or wireless module integration. Or academic background in RF engineering, microwave engineering, antenna design, wireless communication systems, or electromagnetics is also preferred
-
-• Basic understanding of compliance and regulatory requirements such as FCC, CE, RoHS, ESD, safety, or other relevant standards
-
-• Basic understanding of Wi-Fi concepts, wireless communication principles, networking protocols, or hardware-related RF performance considerations
-
-Benefits
-
-Salary range: $100,000 - $120,000
-
-• Free snacks and drinks
-
-• Fully paid medical, dental, and vision insurance (partial coverage for dependents)
-
-• Contributions to 401k funds
-
-• Bi-annual reviews, and annual pay increases
-
-• Health and wellness benefits, including free gym membership
-
-• Quarterly team-building events
-
-At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.",6194,https://apply.workable.com/j/428D85D8DC,,https://www.linkedin.com/jobs/view/4414244513,2026-05-13,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:22:37,2026-10-15,,155,startDate+linkedin,true,0,,,,,R&D - Product Engineering,2026-05-13,,true,,,,,,
 99D83E61CC,"Account Manager, E-Commerce",tp-link-usa-corp,tp-link-usa-corp,Full time,Posted 15 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"Headquartered in the United States, TP-Link Systems Inc. is a global provider of reliable networking devices and smart home products, consistently ranked as the world’s top provider of Wi-Fi devices. The company is committed to delivering innovative products that enhance people’s lives through faster, more reliable connectivity. With a commitment to excellence, TP-Link serves customers in over 170 countries and continues to grow its global footprint.
 
 We believe technology changes the world for the better! At TP-Link Systems Inc, we are committed to crafting dependable, high-performance products to connect users worldwide with the wonders of technology.
@@ -305,107 +155,6 @@ Salary range: $140,000-$170,000
 At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.
 
 Please, no third-party agency inquiries, and we are unable to offer visa sponsorships at this time.",6305,https://apply.workable.com/j/88F4C0D424,,https://www.linkedin.com/jobs/view/4446518955,2026-07-29,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:22:30,2026-10-15,,78,startDate+linkedin,true,0,,,,,R&D - Product Engineering,2026-07-29,,true,,,,,,
-17804A2989,Associate Distribution Sales Manager - Early Careers 2026,tp-link-usa-corp,tp-link-usa-corp,Full time,Posted 20 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"Headquartered in the United States, TP-Link Systems Inc. is a global provider of reliable networking devices and smart home devices consistently ranked as the world’s top provider of Wi-Fi devices. The company is committed to delivering innovative products that enhance people’s lives through faster, more reliable connectivity. With a commitment to excellence, TP-Link serves customers in over 170 countries and continues to grow its global footprint.
-
-We believe technology changes the world for the better! At TP-Link Systems Inc, we are committed to crafting dependable, high-performance products to connect users worldwide with the wonders of technology.
-
-Embracing professionalism, innovation, excellence, and simplicity, we aim to assist our clients in achieving remarkable global performance and enable consumers to enjoy a seamless, effortless lifestyle.
-
-Overview
-
-As an Associate Distribution Sales Manager for Omada by TP-Link, you will support the growth and development of our distribution partner network. Working closely with experienced sales leaders, distribution partners, resellers, and internal teams, you will help drive partner engagement, identify growth opportunities, and contribute to revenue goals across assigned territories.
-
-This role is ideal for an early-career sales professional looking to build a career in channel sales and partner management within the networking and technology industry. You will gain hands-on experience working with distribution partners, supporting reseller recruitment efforts, conducting partner trainings, and helping execute sales and marketing initiatives that expand Omada's market presence.
-
-You will collaborate across sales, marketing, operations, and support teams to ensure partner success while developing the skills needed to manage strategic channel relationships and drive long-term business growth.
-
-What Your Future Looks Like
-
-• Support the management and growth of assigned distribution partner accounts.
-
-• Build and maintain strong relationships with distribution sales teams and reseller partners.
-
-• Assist with identifying, recruiting, and onboarding new reseller partners through outbound outreach, industry events, and partner referrals.
-
-• Help maintain and manage a pipeline of opportunities, ensuring accurate tracking and follow-up within CRM systems.
-
-• Collaborate with distribution partners to identify opportunities to increase product adoption and sales performance.
-
-• Participate in customer-facing meetings, partner events, trade shows, and training sessions to promote Omada solutions.
-
-• Deliver product, program, and promotional updates to distribution and reseller partners.
-
-• Develop an understanding of partner business objectives and help align Omada solutions to support their growth strategies.
-
-• Assist in executing channel marketing programs and promotions designed to drive reseller engagement and revenue growth.
-
-• Coordinate product training and enablement activities for distribution sales teams and reseller partners.
-
-• Respond to partner inquiries and collaborate with internal teams to ensure timely issue resolution and a positive partner experience.
-
-• Work cross-functionally with sales, marketing, operations, and customer support teams to support partner initiatives and business goals.
-
-• Analyze sales performance, market trends, and partner feedback to identify opportunities for improvement.
-
-• Support forecasting, reporting, and territory planning activities.
-
-• Travel regularly within the assigned territory to visit partners, attend events, and strengthen business relationships.
-
-Requirements
-
-• Bachelor's degree in Business, Marketing, Communications, or a related field preferred.
-
-• 0-2 years of experience in sales, account management, channel sales, business development, customer success, or a related customer-facing role.
-
-• Strong interest in building a career in channel sales, distribution management, and partner development.
-
-• Excellent verbal, written, and presentation communication skills.
-
-• Ability to build relationships and collaborate effectively with internal and external stakeholders.
-
-• Strong organizational skills with the ability to manage multiple priorities and projects.
-
-• Analytical mindset with the ability to interpret sales data and identify business opportunities.
-
-• Comfort learning and discussing technology products and business solutions.
-
-• Experience using CRM or contact management software is a plus.
-
-• Self-motivated, coachable, and eager to learn in a fast-paced environment.
-
-• Willingness and ability to travel frequently within the assigned territory.
-
-• Preferred Qualifications
-
-• Internship or professional experience in technology, distribution, channel sales, or business development.
-
-• Exposure to networking, IT, telecommunications, or related technology industries.
-
-• Familiarity with channel partner or distribution business models.
-
-• Experience supporting sales initiatives, customer relationships, or marketing programs.
-
-• This role offers a strong development path into Channel Account Management, Distribution Sales Management, and other strategic sales leadership opportunities within TP-Link.
-
-Benefits
-
-Base Salary: $75000 - $85000 + Performance-Based Monthly Incentive Plan
-
-• Fully paid medical, dental, and vision insurance (partial coverage for dependents)
-
-• Contributions to 401k funds (Quarterly Employer Contributions)
-
-• 15 days accrued vacation
-
-• 11 paid holidays
-
-• Free gym membership
-
-• Quarterly team-building events
-
-At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.
-
-Please, no third-party agency inquiries, and we are unable to offer visa sponsorships at this time.",6656,https://apply.workable.com/j/17804A2989,,https://www.linkedin.com/jobs/view/4463681619,2026-09-05,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:23:41,2026-10-15,,40,startDate+linkedin,true,0,,,,,B2B Channel,2026-09-05,,true,,,,,,
 E229A22BE6,Big Data Engineer,tp-link-usa-corp,tp-link-usa-corp,Full time,Posted 15 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"ABOUT US:
 
 Headquartered in the United States, TP-Link Systems Inc. is a global provider of reliable networking devices and smart home products, consistently ranked as the world’s top provider of Wi-Fi devices. The company is committed to delivering innovative products that enhance people’s lives through faster, more reliable connectivity. With a commitment to excellence, TP-Link serves customers in over 170 countries and continues to grow its global footprint.
@@ -5810,77 +5559,6 @@ Benefits:
 At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.
 
 Please, no third-party agency inquiries, and we are unable to offer visa sponsorships at this time.",4348,https://apply.workable.com/j/6066C850F1,,https://www.linkedin.com/jobs/view/4405601827,2026-04-23,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:24:20,2026-10-15,,175,startDate+linkedin,true,0,,,,,Consumer Marketing,2026-04-23,,true,,,,,,
-217B6DD8BE,Sr. Creative Producer,tp-link-usa-corp,tp-link-usa-corp,Full time,Posted 84 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"Headquartered in the United States, TP-Link Systems Inc. is a leading global provider of networking devices and smart home products. Consistently ranked as the world's top provider of Wi-Fi devices, TP-Link is dedicated to delivering innovative solutions that improve people's lives by offering faster, more reliable connectivity. Serving customers in over 170 countries, we are committed to expanding our global footprint.
-
-At TP-Link Systems Inc., we believe that technology has the power to transform the world for the better. Our mission is to design reliable, high-performance products that connect users worldwide to the limitless possibilities of technology.
-
-We are driven by our core values of professionalism, innovation, excellence, and simplicity. Our goal is to help clients achieve outstanding global performance and to provide consumers with a seamless, effortless technology experience.
-
-About the Role
-
-The Senior Creative Producer keeps creative projects moving from brief to final delivery without anything falling through the cracks. Reporting to the Design PMO, you're the operational backbone of the studio: scoping work, allocating resources, tracking timelines, and making sure premium creative actually ships on schedule. You'll coordinate a mix of in-house designers, 3D/motion artists, and photo/video production, alongside external agencies and vendors, so you need to be just as comfortable managing internal teams as you are managing outside partners. Above all, you protect the integrity of the creative work and the timeline it needs to ship, while being a true partner to the stakeholders depending on you.
-
-Key Responsibilities
-
-• Own the end-to-end lifecycle of multi-channel creative projects, from brief through final delivery
-
-• Build and maintain project roadmaps, timelines, and resource allocation across in-house and external teams
-
-• Produce in-house photo and video shoots, coordinating crew, schedules, and logistics
-
-• Run stand-ups and creative reviews to keep design, CGI, motion, and outside vendors aligned
-
-• Protect creative integrity and timelines, balancing both even when they pull in different directions
-
-• Manage external agency relationships, including scoping, timelines, and deliverable quality
-
-• Act as a trusted partner to stakeholders, with clear, structured updates on project health and risk
-
-• Partner closely with the Design PMO to keep studio-wide processes and reporting aligned
-
-Requirements
-
-Qualifications
-
-• 10+ years of experience as a creative producer or project manager, in an agency or in-house studio
-
-• Strong command of workflow tools like Smartsheet, Notion, Jira, or Asana
-
-• Deep understanding of the creative process across brand identity, 3D/CGI, photo/video production, and motion
-
-• Experience producing in-house shoots, including logistics, crew, and scheduling
-
-• A seasoned track record managing both internal teams and external agencies at the same time
-
-• The judgment and presence to be a true partner to stakeholders, not just a tracker of tasks
-
-Preferred Skills
-
-• Working familiarity with Figma, enough to navigate files and leave clear feedback
-
-• Experience negotiating scope or timeline with external agencies.
-
-*All candidates must have a portfolio to be considered*
-
-Benefits
-
-Salary Range: $130,000 - $150,000
-
-•  Free snacks and drinks.
-
-• Fully paid medical, dental, and vision insurance (partial coverage for dependents)
-
-• Contributions to 401k funds
-
-• Bi-annual reviews, and annual pay increases
-
-• Health and wellness benefits, including free gym membership
-
-• Quarterly team-building events
-
-At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.
-
-Please, no third-party agency inquiries, and we are unable to offer visa sponsorships at this time.",4721,https://apply.workable.com/j/217B6DD8BE,,https://www.linkedin.com/jobs/view/4436390836,2026-07-02,145,145 applicants,,matched,title,2026-09-24,2026-09-24T13:19:21,2026-10-15,,105,startDate+linkedin,true,0,,,,,Consumer Marketing,2026-07-02,,false,,,,,,
 B682D5F2F1,Sr. Graphic Designer,tp-link-usa-corp,tp-link-usa-corp,Full time,Posted 148 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"About Us:
 
 Headquartered in the United States, TP-Link Systems Inc. is a global provider of reliable networking devices and smart home products, consistently ranked as the world’s top provider of Wi-Fi devices. The company is committed to delivering innovative products that enhance people’s lives through faster, more reliable connectivity. With a commitment to excellence, TP-Link serves customers in over 170 countries and continues to grow its global footprint.
@@ -6574,67 +6252,6 @@ Salary: $250K - $310K+ based on experience
 At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.
 
 Please, no third-party agency inquiries, and we are unable to offer visa sponsorships at this time.",7154,https://apply.workable.com/j/96AE298102,,https://www.linkedin.com/jobs/view/4468263741,2026-09-16,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:24:25,2026-10-15,,29,startDate+linkedin,true,0,,,,,Retail & ISP Sales,2026-09-16,,true,,,,,,
-38157EFBF1,Website & SEO Specialist - Early Careers,tp-link-usa-corp,tp-link-usa-corp,Full time,Posted 1 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"Headquartered in the United States, TP-Link Systems Inc. is a global provider of reliable networking devices and smart home products, consistently ranked as the world’s top provider of Wi-Fi devices. The company is committed to delivering innovative products that enhance people’s lives through faster, more reliable connectivity. With a commitment to excellence, TP-Link serves customers in over 170 countries and continues to grow its global footprint.
-
-We believe technology changes the world for the better! At TP-Link Systems Inc, we are committed to crafting dependable, high-performance products to connect users worldwide with the wonders of technology.
-
-We are looking for a Website & SEO Specialist to join our team and help drive the ongoing growth, optimization, and performance of our corporate website. Reporting directly to the Website Manager, you will play a key role in improving the website’s user experience, content quality, and organic search visibility — including emerging AI-powered search channels.
-
-Key Responsibilities
-
-• Assist in improving website architecture, navigation, page layouts, and user journeys to enhance usability and engagement.
-
-• Perform regular website audits to ensure content quality, functionality, and consistency across all pages.
-
-• Monitor website performance, including traffic, engagement, conversion, and user behavior metrics, to identify optimization opportunities.
-
-• Develop actionable recommendations based on data insights and help measure the impact of optimization initiatives.
-
-• Support efforts to improve the website’s organic visibility across both traditional search engines and emerging AI-powered search experiences (e.g., ChatGPT, Perplexity).
-
-• Conduct keyword research, competitor analysis, and content opportunity assessments using tools such as SEMrush or Ahrefs.
-
-• Optimize website content and on-page elements following SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization (GEO) best practices.
-
-• Support Reddit-focused SEO and AEO initiatives in collaboration with the external agency, helping ensure brand visibility and accurate representation across Reddit search and AI-driven answer results.
-
-• Monitor Reddit conversations and community trends relevant to the brand, and provide input to inform content and search optimization strategies.
-
-• Support the operation, maintenance, and optimization of the corporate website, including publishing and updating content through the Content Management System (CMS).
-
-Requirements
-
-• Bachelor’s degree in Marketing, Communications, Business, Information Technology, or a related field.
-
-• Strong understanding of SEO fundamentals, including keyword research, on-page optimization, and content optimization.
-
-• Hands-on experience with Google Analytics 4 (GA4), Google Search Console (GSC), and SEO platforms such as SEMrush or Ahrefs.
-
-• Strong analytical, organizational, project management, and problem-solving skills with excellent attention to detail.
-
-• Self-motivated, proactive, and comfortable managing multiple priorities in a fast-paced environment.
-
-• Understanding of AI-powered search trends and emerging search optimization practices (AEO/GEO) is a plus.
-
-• Familiarity with Reddit’s platform dynamics and community culture, with a good sense of how content performs and surfaces in Reddit search and AI-powered answer engines is a plus.
-
-Benefits
-
-Salary range: $80,000 - $90,000
-
-• Free snacks and drinks
-
-• Fully paid medical, dental, and vision insurance (partial coverage for dependents)
-
-• Contributions to 401k funds
-
-• Bi-annual reviews, and annual pay increases
-
-• Health and wellness benefits, including free gym membership
-
-• Quarterly team-building events
-
-At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.",4748,https://apply.workable.com/j/38157EFBF1,,https://www.linkedin.com/jobs/view/4444922223,2026-07-24,101,101 applicants,,matched,title,2026-09-24,2026-09-24T13:19:16,2026-10-15,,83,startDate+linkedin,true,0,,,,,Consumer Marketing,2026-07-24,,false,,,,,,
 C2093438E8,Customer Service Representative for D2B Omada Store,TP-Link,tp-link-usa-corp,Full time,Posted 1 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"About Us:
 
 Headquartered in the United States, TP-Link Systems Inc. is a global provider of reliable networking devices and smart home products, consistently ranked as the world’s top provider of Wi-Fi devices. The company is committed to delivering innovative products that enhance people’s lives through faster, more reliable connectivity. With a commitment to excellence, TP-Link serves customers in over 170 countries and continues to grow its global footprint.
@@ -6941,3 +6558,104 @@ Salary Range: $100,000 - $130,000
 At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.
 
 Please, no third-party agency inquiries, and we are unable to offer visa sponsorship at this time.",7791,https://apply.workable.com/j/9A2D7565BB,,https://www.linkedin.com/jobs/view/4479256020,2026-10-14,25,among first 25,,matched,,2026-10-14,2026-10-14T12:21:22,2026-10-15,,1,startDate+linkedin,true,0,,,,,,2026-10-14,,true,,,,,,
+494C649A95,"Senior Product Manager, Device API Integration",TP-Link,tp-link-usa-corp,Full time,Posted 1 Days Ago,,,"Irvine, California",2,"Irvine, California; Irvine",false,,United States,,0,"About Us:
+
+Headquartered in the United States, TP-Link Systems Inc. is a global provider of reliable networking devices and smart home products, consistently ranked as the world’s top provider of Wi-Fi devices. The company is committed to delivering innovative products that enhance people’s lives through faster, more reliable connectivity. With a commitment to excellence, TP-Link serves customers in over 170 countries and continues to grow its global footprint.
+
+We believe technology changes the world for the better! At TP-Link Systems Inc, we are committed to crafting dependable, high-performance products to connect users worldwide with the wonders of technology.
+
+Embracing professionalism, innovation, excellence, and simplicity, we aim to assist our clients in achieving remarkable global performance and enable consumers to enjoy a seamless, effortless lifestyle.
+
+Overview:
+
+We are seeking an experienced Senior Product Manager, API Integration to lead the integration of Tapo APIs into enterprise partner platforms. This role will own the full integration lifecycle, ensuring seamless connectivity between Tapo smart home devices and customer ecosystems. The ideal candidate combines strong technical understanding of smart home technologies with a customer-focused mindset, working closely with enterprise clients to gather requirements, translate business needs into scalable solutions, and partner with internal R&D teams to drive execution. This individual will play a critical role in delivering whole-home smart solutions into real customer environments. We are looking for someone who thrives in fast-paced, startup-like environments, demonstrates creativity and strong problem-solving skills, and can effectively drive alignment across cross-functional teams and stakeholders. Candidates who may not yet hold a Senior title but demonstrate strong alignment with this profile are encouraged to apply.
+
+Key Responsibilities
+
+• Own the end-to-end lifecycle of enterprise API integrations for Tapo smart home products and platforms
+
+• Partner directly with enterprise and B2B customers to understand integration requirements, technical needs, and business objectives
+
+• Translate customer requirements into actionable product and technical solutions for internal R&D and engineering teams
+
+• Collaborate cross-functionally with engineering, product, and business stakeholders to deliver scalable integration solutions
+
+• Present technical solutions, integration strategies, and product capabilities to enterprise customers and partners
+
+• Drive successful deployment of smart home integrations into real-world customer environments and whole-home ecosystems
+
+• Act as a bridge between customers and internal teams to ensure alignment, execution, and delivery timelines are met
+
+• Identify opportunities to improve integration processes, API functionality, and customer experience
+
+• Operate effectively in a fast-moving environment with the ability to prioritize, adapt quickly, and execute with urgency
+
+• Demonstrate strong analytical thinking, creativity, and problem-solving skills to address complex integration challenges
+
+• Stay informed on industry trends, smart home technologies, and enterprise integration best practices
+
+• Mentor or influence cross-functional teams through strong communication, leadership, and stakeholder management skills
+
+Requirements
+
+Required Qualifications:
+
+• Bachelor’s degree or higher in Computer Science, Software Engineering, Electronics, Communications, or a related technical field required
+
+• Minimum of 3 years of product management experience required
+
+• Experience managing software products, APIs, or platform integrations, preferably within consumer electronics, IoT, smart home, or connected device environments
+
+• Strong understanding of the API integration lifecycle, including gathering requirements, defining workflows, and driving successful implementation
+
+• Proven experience writing detailed Product Requirement Documents (PRDs) and translating business needs into technical requirements and actionable deliverables
+
+• Ability to work closely with engineering and R&D teams to drive execution, prioritize deliverables, and resolve integration challenges
+
+• Strong customer-facing communication skills with the ability to present technical concepts and solutions to enterprise and B2B partners
+
+• Demonstrated ability to drive cross-functional collaboration and influence stakeholders across multiple departments and remote teams
+
+• Strong analytical thinking, creativity, and problem-solving skills, with the ability to adapt quickly in fast-paced environments
+
+• Deep understanding of user experience principles and the ability to anticipate customer and end-user needs
+
+• Self-motivated, highly organized, and capable of managing multiple priorities simultaneously
+
+• Strong sense of ownership, accountability, and urgency in delivering results
+
+• Passion for continuous learning, innovation, and emerging smart home technologies
+
+Preferred Qualifications
+
+• Prior experience in consumer electronics, smart home, IoT, or connected device industries
+
+• Hands-on experience using smart home ecosystems and products, with a strong understanding of how smart home technology enhances everyday life
+
+• Experience working in startup or high-growth environments with rapidly evolving priorities
+
+• Familiarity with enterprise/B2B product delivery and partner integration models
+
+• Technical background or experience collaborating closely with software engineering teams on API-driven platforms and integrations
+
+Benefits
+
+Salary Range: $160,000-$200,000
+
+• Fully paid medical, dental, and vision insurance (partial premium coverage for dependents)
+
+• Employer quarterly contributions to 401k funds
+
+• 15 days accrued vacation
+
+• 11 paid holidays
+
+• Bi-annual reviews, and annual pay increases
+
+• Health and wellness benefits, including free gym membership
+
+• Quarterly team-building event
+
+At TP-Link Systems Inc., we are continually searching for ambitious individuals who are passionate about their work. We believe that diversity fuels innovation, collaboration, and drives our entrepreneurial spirit. As a global company, we highly value diverse perspectives and are committed to cultivating an environment where all voices are heard, respected, and valued. We are dedicated to providing equal employment opportunities to all employees and applicants, and we prohibit discrimination and harassment of any kind based on race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. Beyond compliance, we strive to create a supportive and growth-oriented workplace for everyone. If you share our passion and connection to this mission, we welcome you to apply and join us in building a vibrant and inclusive team at TP-Link Systems Inc.
+
+Please, no third-party agency inquiries, and we are unable to offer visa sponsorships at this time.",7078,https://apply.workable.com/j/494C649A95,,https://www.linkedin.com/jobs/view/4479720178,2026-10-14,25,among first 25,,matched,titleSearchFallback,2026-10-15,2026-10-15T00:34:05,2026-10-15,,1,startDate+linkedin,true,0,,,,,,2026-10-14,,true,,,,,,

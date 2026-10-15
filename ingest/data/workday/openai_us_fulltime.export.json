@@ -1,9 +1,9 @@
 {
  "label": "openai_us_fulltime",
- "rows": 635,
- "kept": 635,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 634,
+ "kept": 622,
+ "new": 12,
+ "ghosts_dropped": 13,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 635,
- "banded": 193,
+ "state_rows": 634,
+ "banded": 192,
  "lca_pools": 83,
  "snapshot": "2026-10-15"
 }
