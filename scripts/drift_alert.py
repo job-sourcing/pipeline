@@ -28,6 +28,10 @@ Drift classes (thresholds = DESIGN-S35 §3.2, review round-2):
                        config tags; never-yielded labels exempt)
   unexported-drift    manifest identity broken OR unexported count
                        deviates from the by-design manifest classes
+  corroboration-      >=3 consecutive ledger lines with
+  blocked-streak      corroboration_blocked=true (S37-W1 / D-S37-1
+                       A1: the enrich-phase LinkedIn outage — the lane
+                       runs green while the signals layer freezes)
 
 Usage:
   python3 scripts/drift_alert.py [--dry-run]
@@ -121,6 +125,28 @@ def _fail_streak(label: str, n: int = 2) -> int:
     return streak
 
 
+def _corroboration_blocked_streak(label: str, n: int = 3) -> int:
+    """S37-W1 (D-S37-1 A1 / review P0-1): consecutive runs.jsonl lines
+    carrying corroboration_blocked=true for this label — the durable
+    marker gha_board_watch writes when corroborate_new's LinkedIn
+    index is blocked (the enrich-phase outage the lane used to run
+    GREEN straight through). Threshold N=3 consecutive runs: one
+    blocked run can be a transient wall (the in-run deferred retry +
+    next-day retry both heal), two is suspicious, three daily runs
+    with a frozen signals layer (numApplicants / linkedinUrl /
+    matchMethod) is a real outage worth a GitHub issue. Mirrors the
+    _fail_streak shape (trailing run of a boolean field; any clean
+    line breaks it)."""
+    runs = _read_jsonl(WATCH_DIR / f"{label}.runs.jsonl")
+    streak = 0
+    for r in reversed(runs):
+        if r.get("corroboration_blocked"):
+            streak += 1
+        else:
+            break
+    return streak
+
+
 def _series_append(baseline: dict, label: str, rows: int) -> None:
     """APPEND-ONLY (the round-1 P1-6 lesson): never upsert — a same-day
     downsert would erase the baseline max and hide a collapse in
@@ -165,6 +191,18 @@ def detect(watches: list[dict], baseline: dict) -> list[dict]:
             findings.append({"class": "board-fail-streak", "label": label,
                              "evidence": f"{streak} consecutive failed "
                                           "runs (deferred-retry exhausted)"})
+        # 1b. corroboration-blocked-streak (S37-W1 / D-S37-1 A1: the
+        # enrich-phase outage — verdict-independent, the lane can run
+        # green while the signals layer freezes; >=3 consecutive
+        # flagged ledger lines -> the issue sink)
+        cb = _corroboration_blocked_streak(label)
+        if cb >= 3:
+            findings.append({
+                "class": "corroboration-blocked-streak", "label": label,
+                "evidence": f"{cb} consecutive run(s) with the LinkedIn "
+                             "corroboration index blocked (signals "
+                             "frozen — no numApplicants/linkedinUrl/"
+                             "matchMethod; postings still collected)"})
         # 2-4. row classes (only for labels with baseline history)
         if seeded:
             mx7, head28 = _series_stats(baseline[label])

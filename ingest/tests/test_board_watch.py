@@ -2976,3 +2976,154 @@ class TestS37SourceBlocked:
         assert m["unreach_streak"] == 4
         assert m["source_blocked_streak"] == 5
         assert m["legs"] == 1
+
+
+# ── S37-W1: the corroboration-blocked durable marker (D-S37-1 A1) ─────────
+class TestS37CorroborationBlocked:
+    """Review P0-1 — the 429 wall's largest blast radius was the ENRICH
+    phase: corroborate_new caught CorroborationBlocked -> return {} with
+    an ephemeral stderr line ONLY. The signals layer froze fleet-wide
+    while the lane ran GREEN. The marker is now DURABLE: the blocked
+    cell -> alerts.log entry + the runs.jsonl corroboration_blocked
+    field -> drift_alert's corroboration-blocked-streak class."""
+
+    def _li_card(jid, title="Senior Engineer - DGX Cloud"):
+        return {"id": str(jid), "title": title, "company": "NVIDIA",
+                "loc": "US, CA, Santa Clara", "iso": "2026-10-01"}
+
+    def test_blocked_index_fills_the_marker_cell(self, monkeypatch):
+        provider = _FakeProvider(
+            [], {},
+            index_exc=watch.corroborate.CorroborationBlocked("429 wall"))
+        cell: list[str] = []
+        monkeypatch.setattr(watch.corroborate, "get_provider",
+                            lambda name, cfg=None: provider)
+        out = watch.corroborate_new(
+            [_post("JR1")], "NVIDIA", Config(), time.monotonic() + 60,
+            blocked=cell)
+        assert out == {}                 # the no-op contract unchanged
+        assert cell and "429 wall" in cell[0]   # the durable marker
+
+    def test_no_block_leaves_cell_empty(self, monkeypatch):
+        provider = _FakeProvider([], {})
+        cell: list[str] = []
+        monkeypatch.setattr(watch.corroborate, "get_provider",
+                            lambda name, cfg=None: provider)
+        watch.corroborate_new(
+            [_post("JR1")], "NVIDIA", Config(), time.monotonic() + 60,
+            blocked=cell)
+        assert cell == []
+
+    def test_no_cell_kwarg_still_no_op(self, monkeypatch):
+        # backwards-compatible: the default None keeps the old callers
+        # (and the old tests) working untouched
+        provider = _FakeProvider(
+            [], {},
+            index_exc=watch.corroborate.CorroborationBlocked("429"))
+        monkeypatch.setattr(watch.corroborate, "get_provider",
+                            lambda name, cfg=None: provider)
+        out = watch.corroborate_new(
+            [_post("JR1")], "NVIDIA", Config(), time.monotonic() + 60)
+        assert out == {}
+
+    def _blocked_run(self, wdir, monkeypatch, index_exc=True):
+        """A full healthy run_watch EXCEPT the provider index is
+        blocked — REAL corroborate_new runs (only the provider seam is
+        faked), so the marker cell flows exactly as in production."""
+        current = [_post("JR1")]
+        monkeypatch.setattr(
+            watch, "current_postings",
+            lambda *a, **k: ({p["reqId"]: p for p in current},
+                             True, False))
+        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
+        monkeypatch.setattr(watch, "enrich_new",
+                            lambda rows, *a, **k: rows)
+        monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
+        provider = _FakeProvider(
+            [], {},
+            index_exc=(watch.corroborate.CorroborationBlocked(
+                "blocked_empty") if index_exc else None))
+        monkeypatch.setattr(watch.corroborate, "get_provider",
+                            lambda name, cfg=None: provider)
+        cfg = dict(CFG)
+        cfg.pop("time_type", None)      # site-spec board: no facet claim
+        cfg["board"] = "ats:greenhouse:acme"
+        watch._CORROBORATION_BLOCKED.clear()
+        return watch.run_watch(cfg, Config())
+
+    def test_run_watch_marks_and_ledger_carries_the_flag(
+            self, wdir, monkeypatch):
+        try:
+            result = self._blocked_run(wdir, monkeypatch, True)
+            assert result == "complete"         # loud-but-not-red
+            alerts = (wdir / "test_watch.alerts.log").read_text(
+                encoding="utf-8")
+            assert "CORROBORATION-BLOCKED" in alerts
+            assert "postings still collected" in alerts
+            # the ledger seam: the label is marked for _ledger_append
+            assert "test_watch" in watch._CORROBORATION_BLOCKED
+            w = {"label": "test_watch"}
+            watch._ledger_append([w], {"test_watch": "complete"})
+            line = json.loads(
+                (wdir / "test_watch.runs.jsonl").read_text()
+                .strip().splitlines()[-1])
+            assert line["verdict"] == "complete"
+            assert line["corroboration_blocked"] is True
+        finally:
+            watch._CORROBORATION_BLOCKED.clear()
+
+    def test_clean_run_ledger_line_has_no_flag(
+            self, wdir, monkeypatch):
+        try:
+            result = self._blocked_run(wdir, monkeypatch, False)
+            assert result == "complete"
+            assert "test_watch" not in watch._CORROBORATION_BLOCKED
+            w = {"label": "test_watch"}
+            watch._ledger_append([w], {"test_watch": "complete"})
+            line = json.loads(
+                (wdir / "test_watch.runs.jsonl").read_text()
+                .strip().splitlines()[-1])
+            assert "corroboration_blocked" not in line
+        finally:
+            watch._CORROBORATION_BLOCKED.clear()
+
+    def test_ledger_append_consumes_the_marks(self, wdir, monkeypatch):
+        # consume semantics: one run, one line — the set clears so a
+        # LATER ledger append (a second process/run) never re-flags
+        try:
+            watch._CORROBORATION_BLOCKED.add("test_watch")
+            watch._ledger_append(
+                [{"label": "test_watch"}], {"test_watch": "complete"})
+            assert "test_watch" not in watch._CORROBORATION_BLOCKED
+            watch._ledger_append(
+                [{"label": "test_watch"}], {"test_watch": "complete"})
+            lines = (wdir / "test_watch.runs.jsonl").read_text(
+                encoding="utf-8").strip().splitlines()
+            assert len(lines) == 2
+            assert "corroboration_blocked" not in lines[1]
+        finally:
+            watch._CORROBORATION_BLOCKED.clear()
+
+    def test_skip_li_corroboration_boards_never_marked(
+            self, wdir, monkeypatch):
+        # licompany boards opt out of the corroboration lane entirely
+        # (S32: indexing LinkedIn against itself is pure waste) — an
+        # outage there is invisible BY DESIGN, not a marker gap
+        current = [_post("JR1")]
+        monkeypatch.setattr(
+            watch, "current_postings",
+            lambda *a, **k: ({p["reqId"]: p for p in current},
+                             True, False))
+        monkeypatch.setattr(watch, "_legs_bump", lambda label: 1)
+        monkeypatch.setattr(watch, "enrich_new",
+                            lambda rows, *a, **k: rows)
+        monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
+        w = {"label": "test_watch", "board": "custom:licompany:vesync",
+             "company": "VeSync", "country": "United States",
+             "skip_li_corroboration": True}
+        watch._CORROBORATION_BLOCKED.clear()
+        try:
+            assert watch.run_watch(w, Config()) == "complete"
+            assert "test_watch" not in watch._CORROBORATION_BLOCKED
+        finally:
+            watch._CORROBORATION_BLOCKED.clear()
