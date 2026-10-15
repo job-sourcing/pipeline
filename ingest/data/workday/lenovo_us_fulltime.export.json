@@ -1,9 +1,9 @@
 {
  "label": "lenovo_us_fulltime",
  "rows": 234,
- "kept": 233,
- "new": 1,
- "ghosts_dropped": 17,
+ "kept": 234,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,

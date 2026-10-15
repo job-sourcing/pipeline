@@ -96974,3 +96974,315 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4646,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-IL-Remote/AI-Factory-Territory-Sales---NALA_JR2027848,,https://www.linkedin.com/jobs/view/4478823281,2026-10-15,25,among first 25,1,matched,titleSearchFallback,2026-10-15,2026-10-15T00:24:36,2026-10-15,,1,startDate,false,0,,2026-10-18,3,,,2026-10-14,,true,,,,,,
+JR2023268,Insider Threat Detection Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted Today,2026-10-14,1,"US, CA, Remote",6,"US, CA, Remote; US, TX, Austin; US, DC, Remote; US, NC, Remote; US, VA, Remote; US, WA, Redmond",true,CA;TX;DC;NC;VA;WA,United States,,0,"NVIDIA is hiring an Insider Threat Engineer to join the team responsible for protecting our people, intellectual property, engineering systems, and data. We protect source code, hardware and software designs, AI models and artifacts, research, build systems, and computing environments. Our work combines security engineering with insider-threat investigations across identity, endpoint, cloud, collaboration, source-code, and data-protection systems. We build detections, automation, integrations, and investigation tools, and we use those capabilities to examine activity that may put NVIDIA at risk. In this role, you will turn technical and business information into timelines and findings that others can understand and act on. We work closely with Security, Legal, HR, Privacy, IT, and engineering teams throughout an investigation. We are looking for someone who can write code, analyze complex activity, handle sensitive information carefully, and distinguish facts from assumptions.
+
+What You’ll Be Doing:
+
+We develop and operate the capabilities NVIDIA uses to identify and investigate insider threats. In this role, you will:
+
+•
+Build, test, deploy, and tune detections across identity, endpoint, cloud, SaaS, collaboration platforms, source-code repositories, build systems, removable media, data movement, and employee-lifecycle signals.
+
+•
+Lead and support investigations involving unusual data movement, unapproved application use, external sharing, access anomalies, compromised accounts, employee transitions, and other defined insider-risk scenarios.
+
+•
+Collect and correlate information from endpoint, identity, cloud, source-code, collaboration, data-protection, and approved business sources to reconstruct activity and establish timelines.
+
+•
+Develop automation, data pipelines, integrations, dashboards, and investigation tools that reduce manual work and help us investigate cases more consistently and efficiently.
+
+•
+Operate and improve our insider-risk and data loss prevention capabilities by assessing policy performance, detection coverage, alert quality, false positives, and connections to case-management workflows.
+
+•
+Use documented hypotheses, threat models, test cases, version control, peer review, and performance measures to improve detections; work with system owners when we identify gaps in telemetry or controls.
+
+•
+Present findings that distinguish facts from inferences and explain confidence levels, data limitations, alternative explanations, and unanswered questions to Security, Incident Response, Legal, HR, Privacy, and business partners.
+
+•
+Work with authorized partners on evidence preservation, containment, escalation, and remediation while following requirements for investigative scope, access, confidentiality, auditing, and retention.
+
+What We Need to See:
+
+We are looking for candidates who bring both engineering experience and the ability to investigate sensitive security matters.
+
+•
+Bachelor’s degree in Computer Science, Cybersecurity, Information Security, Data Engineering, or a related field, or equivalent experience.
+
+•
+7+ years of experience in insider threat, detection engineering, security operations, incident response, digital forensics, data protection, threat hunting, or a related security field.
+
+•
+Experience conducting security investigations, including defining scope, collecting evidence, developing timelines, analyzing activity, documenting findings, escalating concerns, and applying lessons learned.
+
+•
+Experience with security technologies such as SIEM, DLP, UEBA, EDR, insider-risk management, identity security, case management, or security orchestration.
+
+•
+Proficiency in at least one programming or scripting language, such as Python, Go, Java, JavaScript, or TypeScript, and experience building automation with APIs, structured data, source control, and testing.
+
+•
+SQL, security-query, and data-analysis skills, including experience correlating incomplete or inconsistent data from multiple sources.
+
+•
+Knowledge of identity and access management, endpoints, cloud services, collaboration platforms, SaaS integrations, data classification, source-code environments, and data-exfiltration methods.
+
+•
+Experience translating insider-risk scenarios into telemetry requirements, detection logic, investigation workflows, controls, test cases, and performance measures.
+
+•
+Ability to assess activity objectively, distinguish indicators from substantiated findings, avoid assumptions about intent, and explain the limits of available evidence.
+
+•
+Clear written and verbal communication and experience working with technical, legal, privacy, HR, and business partners on sensitive matters.
+
+Ways to Stand Out From the Crowd:
+
+We value candidates who have used engineering to make insider-threat investigations more accurate, consistent, and efficient.
+
+•
+Experience engineering insider-risk, data loss prevention, or endpoint data-protection capabilities and connecting their signals to SIEM, orchestration, enrichment, or case-management systems.
+
+•
+Experience investigating data movement across email, cloud storage, collaboration tools, source-code repositories, build systems, artifact stores, removable media, browsers, AI tools, and unmanaged or partially managed environments.
+
+•
+Experience building security data pipelines, entity timelines, relationship models, behavioral baselines, or applications used by investigators.
+
+•
+Knowledge of digital forensics, evidence preservation, chain of custody, incident-response coordination, and the legal, privacy, and employee-relations requirements associated with workforce investigations.
+
+•
+Experience turning investigation needs into technical capabilities; senior candidates may also bring experience leading projects, reviewing designs, and mentoring engineers or investigators.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 168,000 USD - 270,250 USD for Level 4, and 196,000 USD - 310,500 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 18, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",6727,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Insider-Threat-Detection-Engineer_JR2023268,,https://www.linkedin.com/jobs/view/4478819617,2026-10-15,25,among first 25,1,matched,titleSearchFallback,2026-10-15,2026-10-15T03:03:14,2026-10-15,,1,startDate,false,0,,2026-10-18,3,,,2026-10-14,,true,,,,,,
+JR2024625,"Senior Offensive Security Engineer, Vulnerability Operations",NVIDIA,2100 NVIDIA USA,Full time,Posted Today,2026-10-14,1,"US, CA, Remote",6,"US, CA, Remote; US, TX, Austin; US, VA, Remote; US, CO, Remote; US, NC, Durham; US, CA, Santa Clara",true,CA;TX;VA;CO;NC,United States,,0,"NVIDIA's Product Security organization is looking for a Senior Offensive Security Engineer to push the frontier of AI-driven offensive security. We already run language model agents that audit source code and attack live web applications at fleet scale. These include multi-agent orchestration, adversarial verification, exploit-confirmation harnesses, and sandboxed execution. Your job is to make these agents meaningfully better attackers: new attack capabilities, new target classes, higher true-positive rates, and safer autonomy. This is a hands-on role for someone who is both a strong offensive security practitioner and a builder of agentic systems. Join us!
+
+What you'll be doing:
+
+•
+Crafting and building new red team agents: autonomous and semi-autonomous LLM agents that perform reconnaissance, hypothesis-driven exploitation, and evidence capture against NVIDIA-owned targets
+
+•
+Extending our existing agent harnesses (multi-phase orchestration, parallel specialist subagents, judge/verifier stages, out-of-band callback infrastructure) across multiple agent runtimes and model providers
+
+•
+Encoding real operator tradecraft into prompts, tools, and playbooks — web app exploitation, auth bypass, SSRF/deserialization chains, cloud and Kubernetes attack paths — so agents find what a skilled human would
+
+•
+Building the verification layer: exploit-confirmation harnesses that prove findings are real before a human ever sees them, driving false-positive rates down
+
+•
+Engineering the safety side of autonomy: sandboxing, scope enforcement, tool allowlists/blocklists, credential isolation, and prompt-injection defenses for agents operating with offensive capability
+
+•
+Evaluating and benchmarking frontier models for offensive tasks; partnering with our human red team to turn their engagements into repeatable agent capabilities
+
+•
+Mentoring engineers on the team and setting the technical bar for agentic offensive tooling
+
+What we need to see:
+
+•
+Bachelor's degree or equivalent experience
+
+•
+12+ years in security engineering, with at least 4 years in offensive security: penetration testing, red teaming, exploit development, or vulnerability research
+
+•
+Deep, hands-on exploitation skill in at least one domain (web application, cloud/Kubernetes, or systems/binary) — you can build and prove an exploit chain, not just run a scanner
+
+•
+Strong software engineering ability in Python; you ship production code, not just PoCs
+
+•
+Practical experience building with LLMs: agent frameworks, tool use/function calling, multi-agent orchestration, or coding agents (Claude Code, Codex CLI, or similar)
+
+•
+Sound judgment about autonomous offensive tooling — scoping, authorization, and blast-radius thinking are second nature
+
+•
+Respectful, responsible approach to offensive testing — we break things carefully and fix them fast
+
+Ways to stand out from the crowd:
+
+•
+Published security research, CVEs, conference talks, or notable CTF results
+
+•
+Certifications like OSWE, OSEP, OSCP, or GXPN
+
+•
+Experience with SAST/DAST internals, fuzzing, or program analysis
+
+•
+Experience red-teaming AI systems themselves (prompt injection, jailbreaks, model evaluation) or contributing to AI-security research
+
+•
+Familiarity with Kubernetes/OpenShift, GitOps, and operating worker fleets at scale
+
+With competitive salaries and a generous benefits package, NVIDIA is widely considered to be one of the technology world's most desirable employers. We have some of the most forward-thinking and talented people in the world working for us and, due to unprecedented growth, our elite engineering teams are rapidly growing. If you're a creative and autonomous engineer with a real passion for technology, we want to hear from you!
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 224,000 USD - 356,500 USD for Level 5, and 272,000 USD - 431,250 USD for Level 6.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 18, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4627,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Offensive-Security-Engineer--Vulnerability-Operations_JR2024625,,,,,,,not_checked,,2026-10-15,,2026-10-15,,1,startDate,false,0,,2026-10-18,3,,,2026-10-14,,,,,,,,
+JR2027584,Principal System Software Engineer - CUDA Driver,NVIDIA,2100 NVIDIA USA,Full time,Posted Today,2026-10-14,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"We are hiring senior engineers to work on the CUDA driver, a core component of our platform for accelerating general purpose computation on the GPU. Our team delivers features and improvements to better realize the potential of NVIDIA hardware for a growing range of computational workloads, ranging from deep learning, scientific computation, and self-driving cars to video games and virtual reality!
+
+CUDA defines a unified programming model across a range of system configurations and hardware capabilities. To accomplish this, the CUDA driver interacts with GPU hardware, kernel mode drivers, switches and the operating system.
+
+What you'll be doing:
+
+As a member of our team, you will use your design abilities, coding expertise, and creativity to deliver the best Compute platform in the world. You will craft elegant solutions to exciting problems and craft the future direction of CUDA as you collaborate with your peers across NVIDIA.
+
+•
+You will evangelize, architect, and implement new CUDA features
+
+•
+You'll oversee and drive development efforts across multiple teams
+
+•
+Collaborate with members of hardware architecture teams
+
+•
+Help define forward-looking improvements to the CUDA APIs and programming model
+
+•
+Design and maintain performance and precision modeling
+
+•
+Write effective, maintainable, and well-tested code
+
+•
+Develop code for multiple operating systems
+
+What we need to see:
+
+•
+Bachelor of Science or Master of Science degree in Computer Science, Electrical Engineering, or related field (or equivalent experience)
+
+•
+15+ years of relevant systems software development experience
+
+•
+Strong C programming skills
+
+•
+Experience designing, debugging, and maintaining complex software stacks
+
+•
+Background with operating system interfaces for threads, process control, and virtual memory
+
+•
+Experience with HW/SW co-design, perf. modeling using emulation/simulation, creating SW programming model exposures for HW features
+
+•
+Expert interpersonal, verbal, and written communications skills with a capability to achieve objectives under tight deadlines
+
+•
+Strong collaborative and interpersonal skills, specifically a proven ability to effectively guide and influence within a dynamic matrix environment
+
+Ways to stand out from the crowd:
+
+•
+You have an understanding of system level architecture, such as interconnects, memory hierarchy, interrupts, and memory-mapped IO
+
+•
+Designing and implementing drivers programming rich HW acceleration engines and software verification testplans.
+
+•
+Knowledge of CPU, GPU architectures, memory coherence and consistency models
+
+•
+Some background with kernel mode development
+
+•
+Some familiarity with C++
+
+NVIDIA is leading the way in groundbreaking developments in Artificial Intelligence, High-Performance Computing and Visualization. The GPU, our invention, serves as the visual cortex of modern computers and is at the heart of our products and services. Our work opens up new universes to explore, enables amazing creativity and discovery, and powers what were once science fiction inventions from artificial intelligence to autonomous cars. NVIDIA is looking for phenomenal people like you to help us accelerate the next wave of artificial intelligence. NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative and autonomous, we want to hear from you!
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 272,000 USD - 431,250 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 18, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4316,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-System-Software-Engineer---CUDA-Driver_JR2027584,,https://www.linkedin.com/jobs/view/4478823279,2026-10-15,25,among first 25,1,matched,titleSearchFallback,2026-10-15,2026-10-15T03:03:09,2026-10-15,,1,startDate,false,0,,2026-10-18,3,,,2026-10-14,,true,401,173239,184974,207095,subset+state,Engineer Senior Systems Software
+JR2027838,"Product Manager, Data Center GPU",NVIDIA,2100 NVIDIA USA,Full time,Posted Today,2026-10-14,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA has become the platform upon which every new AI-powered application is built. From big challenging Generative AI applications to autonomous vehicles, or voice-recognition systems, the need for advanced perception and cognitive capabilities is exploding... and NVIDIA is right in the center of this revolution! We are now looking for a Product Manager – Data Center GPU. NVIDIA is the engine behind modern accelerated computing, powering AI, visualization, simulation, and enterprise workloads across the data center and workstation. We seek a technical, hands-on Product Manager to define and build compelling assets. These assets should show the value of NVIDIA Server and Workstation GPUs across a broad spectrum of scenarios, customers, and industries.
+
+In this role, you will work closely with leading customers and partners from product launch through mass production, collaborating with engineering, architecture, and software teams to showcase NVIDIA technologies at their best. You will develop performance guides, white papers, blogs, tools, and reusable technical collateral, while fulfilling the role of a knowledgeable professional in competitive analysis and industry-standard benchmarks. Does this sound like a great next challenge? If so, come show us what you've got!
+
+What you'll be doing:
+
+• Develop and produce deliverables to showcase the value proposition of NVIDIA Server and Workstation GPU solutions spanning a wide variety of use cases
+
+• Work hand-in-hand with our lead clients and collaborators from new product launches through mass production phases
+
+• Create performance guide, white papers, write blogs, build tools and other reusable collaterals
+
+• Working with our technical, build, and development groups, you will define and develop assets. These assets will showcase our technologies and solutions to a broad range of customers and vertical segments.
+
+• Be an expert in competitive analysis and industry standard benchmarks
+
+What we need to see:
+
+• 8+ years of product management experience preferably in a high growth technology company
+
+• BS/MS in Electrical Engineering, Computer Engineering, Computer Science or equivalent experience
+
+• Real passion for hardware and system architectures
+
+• Ideal candidates will have experience working in product management, with meaningful time on compute products, AI/ML, developer tools, or infrastructure products
+
+• Great knowledge in CPU and GPU benchmarks and performance analysis
+
+• Some development experience on NVIDIA GPUs and SDKs
+
+• Good knowledge of computer architecture and GPU architecture
+
+• Excellent communication skills and the ability to work cross-functionally across engineering, operations, and customer teams
+
+• Passion for and working knowledge of building innovative products/technologies
+
+Ways to stand out from the crowd:
+
+• Advanced knowledge of GPU architecture and computer architecture
+
+• Hands-on experience with local AI workloads and agents.
+
+• High energy and a positive attitude
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 168,000 USD - 258,750 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 18, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3847,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Manager--Data-Center-GPU_JR2027838,,https://www.linkedin.com/jobs/view/4478825064,2026-10-15,25,among first 25,1,matched,,2026-10-15,2026-10-15T03:03:06,2026-10-15,,1,startDate,false,0,,2026-10-18,3,,,2026-10-14,,true,79,179421,200304,223142,subset+state,Product Manager
