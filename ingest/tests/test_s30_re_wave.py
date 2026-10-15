@@ -491,7 +491,8 @@ class TestS30WireRoster:
                   "ats:paycom:us-cent/39DCF574C16448FF09ADD3EF809F9EF2",
                   "custom:a123", "ats:teamtailor:polestar"):
             assert b in boards, b
-        assert len(w) == 284   # S35: 218 + 59 rasweep + 7 gj tiering;
+        assert len(w) == 283   # S35: 218 + 59 rasweep + 7 gj tiering;
+        #  (S37-W1: -1 niu retired — the dead US board, D-S37-1 R3a);
         # S32: +59 LinkedIn-guest company boards (18 daily + 41 dormant)
         # S33: +6 Google-Jobs gap-filler boards (4 weekly + 2 dormant)
 
