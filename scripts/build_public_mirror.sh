@@ -151,6 +151,25 @@ if [ -d "$DEST/ingest/data/ui" ]; then
     git diff --cached --quiet || \
     git commit -q -m "UI bundle back-sync from org runtime (csv-export)")
 fi
+# S38: the WORKFLOW back-sync — the THIRD recurrence of the org-only
+# runtime-file class (S35 f5e1660a: 2 lanes; S37 f3c28cb3:
+# weekly-board-watch.yml; S38: this fix after it wiped again). Any
+# workflow that exists org-side but not in the archive is pulled back
+# BEFORE the forward rsync --delete can kill it (the residence rule:
+# org-side commits are cache; the archive is the residence).
+if [ -d "$DEST/.github/workflows" ]; then
+  mkdir -p "$SRC/.github/workflows"
+  for wf in "$DEST"/.github/workflows/*.yml; do
+    base=$(basename "$wf")
+    if [ ! -f "$SRC/.github/workflows/$base" ]; then
+      cp "$wf" "$SRC/.github/workflows/$base"
+      echo "[back-sync-workflows] rescued $base (org-only lane)"
+    fi
+  done
+  (cd "$SRC" && git add .github/workflows 2>/dev/null && \
+    git diff --cached --quiet || \
+    git commit -q -m "lane workflow back-sync from org runtime (S38 — the 3rd-recurrence fix)")
+fi
 
 echo "== back-sync the refresh-watchdog heartbeat ledger (P0-1) =="
 # The watchdog commits logs/refresh_watchdog.jsonl on the ORG repo; the

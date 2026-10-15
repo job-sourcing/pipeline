@@ -1,0 +1,122 @@
+name: Weekly Board Watch (standard)
+
+# [S37 / D-S37-1 R2+A8 — the cadence doctrine's low-churn tier] The
+# churn-measured tag-audit (2026-10-15, the one-shot script over the
+# 284-watch roster: new-postings/28d from state first_seen + the ats
+# job_count) demoted 28 HEALTHY-but-zero-churn watches from the daily
+# lane (verdicts all 'complete' — genuinely-empty US boards, the niu
+# class's honest cousin: autelrobotics/dify/funplus/lilith/... post
+# 0-1 US roles per 28d). The owner's cadence doctrine — "daily for
+# bigger companies, weekly for smaller" — formalized: daily = the
+# strategic high-churn set (149 → 121 watches); weekly_std = the
+# zero-churn tail (a board that posts nothing loses at most 7 days of
+# detection latency, and postings stay open ~30+ days).
+#
+# WHY A SEPARATE LANE (not the cf lane): the 'weekly' tag routes to
+# cf-board-watch — the Cloudflare-walled boards whose laddered
+# transport escalates to FIRECRAWL (1 credit/board-list). These 28 are
+# NORMAL boards: the standard driver, the standard transport, zero
+# credits. Why not the ra lane: that's the rasweep aggregator class
+# (a different adapter kind entirely).
+#
+# THE CADENCE TABLE (the churn census, 2026-10-15):
+#   daily      n=121  mean ~70/28d  median ~13   (the strategic set)
+#   li         n=20   mean 6.4/28d  median 2     (daily 07:45, rate-walled)
+#   weekly_std n=28   mean ~0.9/28d median 1     (THIS lane)
+#   gj         n=4    mean 4.2/28d  median 4     (Wed 10:25)
+#   weekly/cf  n=3    mean 3.0/28d  median 1     (Tue 12:30, firecrawl)
+#   ra         n=59   mean 0.0/28d               (Wed 11:23, free APIs)
+#   li_dormant n=39   mean 0.0/28d               (weekly)
+#   gj_monthly n=2    gj_quarterly n=5  gj_dormant n=2 (the deep tail)
+#
+# The re-audit duty: re-run the churn script at the next drift
+# absorption — promote weekly_std labels that churn above the daily
+# median (the promote path), demote daily labels that flatline 28d.
+on:
+  workflow_dispatch:
+    inputs:
+      watch_details_max:
+        description: "max detail enrichments per watch leg (default 40)"
+        default: "40"
+      watch_budget_seconds:
+        description: "per-watch enrichment wall-clock budget (default 240)"
+        default: "240"
+  schedule:
+    - cron: "35 10 * * 3"    # Wednesdays 10:35 UTC — after gj (10:25), before ra (11:23)
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: board-watch    # SAME group as the daily lane: never overlap a nightly pass
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: deps + job clock + git identity
+        run: |
+          pip install -e ingest
+          echo "JOB_STARTED_AT=$(date -u +%s)" >> "$GITHUB_ENV"
+          git config user.name "board-watch-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: "weekly_std watch (the standard driver, tag-filtered)"
+        env:
+          WATCH_ONLY_TAGS: weekly_std
+          WATCH_DETAILS_MAX: ${{ github.event.inputs.watch_details_max || '40' }}
+          WATCH_BUDGET_SECONDS: ${{ github.event.inputs.watch_budget_seconds || '240' }}
+        run: python3 scripts/gha_board_watch.py
+
+      - name: Checkpoint state to git (race-proof, the gj-lane shape)
+        if: always()
+        run: |
+          set -e
+          # checkpoint ONLY the files THIS run touched (git diff of the
+          # worktree) — a tag-filtered lane must not overwrite a concurrent
+          # lane's newer state for boards it skipped (the S32 race fix).
+          mkdir -p /tmp/watch_state
+          FILES=$(git status --porcelain ingest/data/board_watch/ \
+            | awk '{print $2}' | grep -E '\.(state\.jsonl|newposts\.jsonl|alerts\.log|legs\.json|reposts\.jsonl|runs\.jsonl)$' || true)
+          echo "checkpointing: ${FILES:-<none>}"
+          for f in $FILES; do
+            mkdir -p "/tmp/watch_state/$(dirname $f)"
+            cp "$f" "/tmp/watch_state/$f" 2>/dev/null || true
+          done
+          git config user.name "board-watch-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            for f in $FILES; do
+              cp "/tmp/watch_state/$f" "$f" 2>/dev/null || true
+            done
+            git add ingest/data/board_watch
+            if git diff --cached --quiet; then
+              echo "no state change to commit"; push_ok=1; break
+            fi
+            git commit -m "weekly-board-watch checkpoint [skip ci]" || true
+            if git push origin main; then push_ok=1; break; fi
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::push failed after 3 attempts — state rescued in /tmp"
+            exit 1
+          fi
+
+      - name: "conclusion gate (a failed watch never runs green)"
+        if: env.WATCH_RESULT == 'failed'
+        run: |
+          echo "::error::weekly-board-watch: WATCH_RESULT=failed — see the job summary and ingest/data/board_watch/*.alerts.log"
+          exit 1
