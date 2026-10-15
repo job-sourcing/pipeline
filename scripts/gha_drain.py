@@ -90,6 +90,21 @@ def _subproc_timeout(size: int) -> int:
     return int(size * (_REQUEST_S + float(SLEEP))) + 30
 
 
+# [S38/W6c P3-3] the builder's rc=0 "did nothing" tails. The drain used
+# to read these as ok=True / failures=0 — a ~1 s/iteration subprocess
+# spin for the whole 80-min budget ending 'pending' (up to 8 legs/day of
+# churn). The refusal is local-only (GHA sets ATS_PROBER_DAEMON=1, so
+# _daemon_is_draining() never fires there); "nothing pending" fires
+# when the drain's count and the builder's selection disagree (e.g. a
+# pending row already over the attempts cap). Treat both as a FAILURE
+# so the existing 5-consecutive-failure cutoff bounds the spin in
+# seconds — and says why.
+_NO_PROGRESS_TAILS = (
+    "[batch] refusing to start",   # fresh prober-daemon heartbeat
+    "[batch] nothing pending",     # count/select divergence
+)
+
+
 def _legs_bump() -> int:
     """Date-keyed leg counter in the committed DB — the daily re-trigger
     cap (2026-09-09 GHA-burn lesson; mirrors the watch's *.legs.json and
@@ -214,8 +229,55 @@ def emit_result(result: str) -> None:
             f.write(f"DRAIN_RESULT={result}\n")
 
 
+def _print_counts() -> int:
+    """[S38/W6c P3-4] the workflow gate's single source of truth.
+
+    The ats-drain.yml gate used to inline its own copy of the
+    needs-work SQL (the THIRD hand-copy: 30/95/attempts/-1h hardcoded
+    against the driver's env knobs — semantically identical today, a
+    4-place 2-file edit on any cadence change). The count now comes
+    from THIS module — the same env knobs and the same SQL the driver
+    itself gates on, so the gate cannot drift from the drain.
+
+    Union semantics: pending + refresh-eligible (+ reclaimable errors
+    only when the refresh lane is off — with it on,
+    refresh_eligible_count() already counts every attempts<2 error row
+    regardless of age, so adding _reclaimable_errors() would
+    double-count). Exit 1 (RED, no DRAIN_PENDING written) when the DB
+    is missing or unreadable — the old inline gate's SystemExit
+    behavior, kept: a bad DB must never limp into the drain/export/
+    checkpoint steps.
+    """
+    if not DB.exists():
+        print("::error::ats_directory.db is missing from the repo — "
+              "re-seed (ingest/scripts/build_ats_directory.py --seed) "
+              "and commit it before running the drain")
+        return 1
+    try:
+        pending = pending_count()
+        refresh = refresh_eligible_count()
+        reclaim = _reclaimable_errors() if REFRESH_DAYS <= 0 else 0
+    except Exception as exc:  # noqa: BLE001 — the gate must stay RED, not crash
+        print(f"::error::gate could not read {DB}: {exc}")
+        return 1
+    n = pending + refresh + reclaim
+    print(f"pending={pending} refresh_eligible={refresh} "
+          f"reclaimable_errors={reclaim} — rows needing work: {n}")
+    genv = os.environ.get("GITHUB_ENV")
+    if genv:
+        with open(genv, "a") as f:
+            f.write(f"DRAIN_PENDING={n}\n")
+    return 0
+
+
 def run_batch(size: str, refresh: bool = False) -> tuple[bool, str]:
-    """Run one drain batch. Returns (ok, last_output_line)."""
+    """Run one drain batch. Returns (ok, last_output_line).
+
+    ok=False on a nonzero rc, a timeout, OR [S38/W6c P3-3] an rc=0
+    no-progress tail (the builder refused / found nothing pending) —
+    the failures counter treats all three alike, so a can't-progress
+    builder is bounded by the consecutive-failure cutoff instead of
+    spinning the budget away."""
     env = dict(os.environ)
     # Authorized-child marker: we ARE the daemon-equivalent HERE (GHA), and
     # this makes us immune to any stale heartbeat file committed by accident.
@@ -240,10 +302,18 @@ def run_batch(size: str, refresh: bool = False) -> tuple[bool, str]:
     except subprocess.TimeoutExpired:
         return False, f"batch of {size} timed out after {timeout}s"
     out = (r.stdout or "").strip().splitlines()
-    tail = out[-1] if out else (r.stderr or "").strip().splitlines()[-1:] or ""
+    if out:
+        tail = out[-1]
+    else:
+        err = (r.stderr or "").strip().splitlines()
+        tail = err[-1] if err else ""
     if r.returncode != 0:
         return False, f"rc={r.returncode}: {tail}"
-    return True, str(tail)
+    if tail.startswith(_NO_PROGRESS_TAILS):
+        # [S38/W6c P3-3] rc=0 but the builder did NOTHING — see
+        # _NO_PROGRESS_TAILS. Count it as a failure (bounded spin).
+        return False, f"no progress — {tail}"
+    return True, tail
 
 
 def _reclaimable_errors() -> int:
@@ -265,6 +335,10 @@ def _reclaimable_errors() -> int:
 
 
 def main() -> int:
+    if "--counts" in sys.argv[1:]:
+        # [S38/W6c P3-4] the workflow's cheap no-op gate (see
+        # _print_counts) — no drain, no leg burned, no DRAIN_RESULT.
+        return _print_counts()
     if not DB.exists():
         print(f"no DB at {DB} — seed first (build_ats_directory.py --seed)",
               flush=True)

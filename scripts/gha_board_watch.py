@@ -1057,7 +1057,7 @@ def _streak_value(label: str, key: str) -> int:
         return 0
 
 
-def _arm_li_ladder_cut(label: str) -> None:
+def _arm_li_ladder_cut(label: str) -> str | None:
     """S37-W1 (D-S37-1 A4): arm the LI ladder-cut for THIS watch's list
     fetch — a board with an ACTIVE source_blocked_streak (>=1) is
     already known walled, so LinkedInCompanyAdapter probes with the
@@ -1066,9 +1066,21 @@ def _arm_li_ladder_cut(label: str) -> None:
     env-var seam: the adapter has no streak knowledge — the driver
     owns the legs meta. The caller MUST clear the seam after the list
     fetch (try/finally) so it is live ONLY for this watch's list
-    phase (never leaks into a neighbor board's full ladder)."""
+    phase (never leaks into a neighbor board's full ladder).
+
+    [S38/W6c P3-5] Returns the PRE-EXISTING seam value (None = unset)
+    for the caller's finally to RESTORE — the old unconditional
+    `os.environ.pop` ran even when this call never armed the cut, so
+    an operator-exported global LI_LADDER_CUT=1 (a known-outage
+    force-cut across the fleet) was silently eaten by the first
+    watch of the run — and even an ARMED watch's pop erased the
+    operator's setting for every later board. Restore-to-pre-arm:
+    our own arm is still list-fetch-scoped, the operator's global
+    survives both armed and unarmed watches."""
+    prev = os.environ.get("LI_LADDER_CUT")
     if _streak_value(label, "source_blocked_streak") >= 1:
         os.environ["LI_LADDER_CUT"] = "1"
+    return prev
 
 
 def _egress_streak_bump(label: str) -> int:
@@ -1254,7 +1266,11 @@ def run_watch(w: dict, cfg: Config) -> str:
         # S37-W1 (A4): arm the ladder-cut seam for THIS watch's list
         # fetch (a known-walled board probes with the single 45s rung)
         # and close it in the finally — live ONLY during the fetch.
-        _arm_li_ladder_cut(label)
+        # [S38/W6c P3-5] save/restore instead of pop: the finally
+        # returns the seam to its PRE-ARM state, so an operator-
+        # exported global LI_LADDER_CUT survives the run (see
+        # _arm_li_ladder_cut) while OUR arm never outlives the fetch.
+        cut_prev = _arm_li_ladder_cut(label)
         try:
             current, list_complete, country_client = current_postings(
                 w["board"], w.get("country", ""), w.get("time_type", ""),
@@ -1262,7 +1278,10 @@ def run_watch(w: dict, cfg: Config) -> str:
                 include_remote=bool(w.get("include_remote")),
                 geo_scope=str(w.get("geo_scope", "") or ""))
         finally:
-            os.environ.pop("LI_LADDER_CUT", None)
+            if cut_prev is None:
+                os.environ.pop("LI_LADDER_CUT", None)
+            else:
+                os.environ["LI_LADDER_CUT"] = cut_prev
     except Exception as exc:
         if _egress_blocked(w, exc):
             streak = _egress_streak_bump(label)
