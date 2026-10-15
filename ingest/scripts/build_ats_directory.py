@@ -297,8 +297,14 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
               "(status = 'live' AND (last_probed_at IS NULL OR "
               " last_probed_at < datetime('now', ?))) OR "
               "(status = 'dead' AND (last_probed_at IS NULL OR "
-              " last_probed_at < datetime('now', ?)))")
-        rargs: list = [f"-{refresh_days} days", f"-{dead_refresh_days} days"]
+              " last_probed_at < datetime('now', ?))) OR "
+              # [S37/W5a P2-3] the refresh cycle's own error retry —
+              # attempts-capped; a final-batch error used to strand a
+              # board for the week (the retry-errors sweep's 1h age
+              # gate left it unclaimed when the leg ended)
+              "(status = 'error' AND attempts < ?)")
+        rargs: list = [f"-{refresh_days} days", f"-{dead_refresh_days} days",
+                       _MAX_ATTEMPTS]
         if ats:
             rq += " AND ats = ?"
             rargs.append(ats)
@@ -313,8 +319,10 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
                 "(status = 'live' AND (last_probed_at IS NULL OR "
                 " last_probed_at < datetime('now', ?))) OR "
                 "(status = 'dead' AND (last_probed_at IS NULL OR "
-                " last_probed_at < datetime('now', ?)))",
-                (f"-{refresh_days} days", f"-{dead_refresh_days} days"))
+                " last_probed_at < datetime('now', ?))) OR "
+                "(status = 'error' AND attempts < ?)",
+                (f"-{refresh_days} days", f"-{dead_refresh_days} days",
+                 _MAX_ATTEMPTS))
             conn.commit()
     if not rows and retry_errors:
         # nothing pending — sweep up transient errors aged ≥1h that still

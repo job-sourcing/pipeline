@@ -2942,8 +2942,11 @@ class TestS37SourceBlocked:
             encoding="utf-8")
         assert "SOURCE-BLOCKED STREAK CAP HIT" in alerts
 
-    def test_healthy_pass_resets_source_blocked_streak(
+    def test_healthy_pass_DECAYS_source_blocked_streak(
             self, wdir, monkeypatch):
+        # [S37/W5a P2-1] decay (-1, floor 0), not zeroing: the W1 test
+        # pinned the zeroing semantics; the W5a audit showed a daily
+        # wall-then-heal flapper never armed the ladder-cut under it.
         (wdir / "test_watch.legs.json").write_text(json.dumps(
             {"date": "2000-01-01", "legs": 1,
              "source_blocked_streak": 5}))
@@ -2958,6 +2961,13 @@ class TestS37SourceBlocked:
         monkeypatch.setattr(watch, "corroborate_new",
                             lambda *a, **k: {})
         monkeypatch.setattr(watch, "_send_alerts", lambda *a, **k: None)
+        assert watch.run_watch(dict(self.LI_CFG), Config()) == "complete"
+        m = json.loads((wdir / "test_watch.legs.json").read_text())
+        assert m["source_blocked_streak"] == 4   # decayed, not zeroed
+        # and a fully-recovered source fades to the floor
+        (wdir / "test_watch.legs.json").write_text(json.dumps(
+            {"date": "2000-01-01", "legs": 1,
+             "source_blocked_streak": 1}))
         assert watch.run_watch(dict(self.LI_CFG), Config()) == "complete"
         m = json.loads((wdir / "test_watch.legs.json").read_text())
         assert m["source_blocked_streak"] == 0

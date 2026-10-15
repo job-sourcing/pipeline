@@ -482,6 +482,16 @@ def corroborate_new(new_rows: list[dict], company: str, cfg: Config,
         if consecutive_blocked >= corroborate.TITLE_SEARCH_BREAKER:
             print(f"[watch] title-search circuit breaker after "
                   f"{consecutive_blocked} consecutive blocks", flush=True)
+            # [S37/W5a P1-1] the fallback's blocks are the SAME outage
+            # class as the index block — an intermittent wall lets the
+            # index succeed while every title search 429s. The A1
+            # durable marker must fire here too, else the signals layer
+            # freezes with zero ledger trace (the drift class can never
+            # see exactly the failure mode A2 documented as real).
+            if blocked is not None:
+                blocked.append(
+                    f"title-search breaker: {consecutive_blocked} "
+                    f"consecutive blocks")
             break
         title = (r.get("title") or "").strip()
         if not title:
@@ -1005,6 +1015,22 @@ def _streak_bump(label: str, key: str) -> int:
     return m[key]
 
 
+def _streak_decay(label: str, key: str, floor: int = 0) -> None:
+    """[S37/W5a P2-1] a healthy leg decrements the streak instead of
+    zeroing it — flapping boards stay 'known-walled' (the ladder-cut),
+    recovered ones fade out. See the reset-site comment. Same legs.json
+    persistence as _streak_reset; a missing/corrupt meta is a no-op."""
+    meta = WATCH_DIR / f"{label}.legs.json"
+    try:
+        m = json.loads(meta.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return
+    v = int(m.get(key, 0) or 0)
+    if v > floor:
+        m[key] = max(floor, v - 1)
+        _atomic_write(meta, json.dumps(m))
+
+
 def _streak_reset(label: str, key: str) -> None:
     meta = WATCH_DIR / f"{label}.legs.json"
     try:
@@ -1318,7 +1344,16 @@ def run_watch(w: dict, cfg: Config) -> str:
         return "failed"
     _egress_streak_reset(label)   # the block lifted — streak cleared
     _streak_reset(label, "unreach_streak")  # S24: net healthy again
-    _streak_reset(label, "source_blocked_streak")  # S37-W1: wall lifted
+    # [S37/W5a P2-1] source_blocked_streak DECAYS (-1 per fully-healthy
+    # leg, floor 0) instead of zeroing: the deferred-retry's in-run heal
+    # (A2's correct semantics for the intermittent class) used to erase
+    # the streak entirely, so a board that walls-then-heals EVERY day
+    # never armed the A4 ladder-cut nor approached the A3 cap — the
+    # 195s full-ladder re-burn daily, forever, invisible. With decay:
+    # a daily flapper hovers at 1-2 (the ladder-cut arms, single-rung
+    # probes), a genuinely-recovered source decays to 0 within a few
+    # days (auto-recovery preserved).
+    _streak_decay(label, "source_blocked_streak")
     if not current and not list_complete:
         _fail_summary("LIST FAILED — nothing to diff; state untouched "
                       "(fail-safe)")

@@ -83,7 +83,11 @@ _REQUEST_S = 15.3
 
 
 def _subproc_timeout(size: int) -> int:
-    return int(size * _REQUEST_S) + 30
+    # [S37/W5a P2-2] the sleep was HARDCODED at 0.3s while DRAIN_SLEEP
+    # is env-configurable — a DRAIN_SLEEP > ~0.8 silently voided the
+    # F6 hung-batch bound (the timeout no longer covered the worst
+    # case). Scale with the ACTUAL sleep; the +30 covers startup.
+    return int(size * (_REQUEST_S + float(SLEEP))) + 30
 
 
 def _legs_bump() -> int:
@@ -152,11 +156,14 @@ def pending_count() -> int:
 
 def refresh_eligible_count() -> int:
     """[S37-W3] live boards stale beyond REFRESH_DAYS + dead boards
-    stale beyond DEAD_REFRESH_DAYS (the resurrection check). The gate's
-    refresh half — a stale universe is WORK, not a no-op (the pre-S37
-    gate exited at pending==0 which was PERMANENT since Sep 8: the
-    9,705 live boards all aged past 30d with nothing to re-probe them).
-    Refresh lane disabled (REFRESH_DAYS=0) → 0."""
+    stale beyond DEAD_REFRESH_DAYS (the resurrection check) + [S37/W5a
+    P2-3] error rows with attempts remaining (the refresh cycle's own
+    retry: a board erroring in the campaign's final batch used to
+    strand for the WEEK — the <1h-age gate on the reclaimable class
+    left it uncounted and the chain exited complete). The attempts cap
+    bounds the retries naturally. The gate's refresh half — a stale
+    universe is WORK, not a no-op (the pre-S37 gate exited at
+    pending==0 which was PERMANENT since Sep 8). Disabled → 0."""
     if not DB.exists() or REFRESH_DAYS <= 0:
         return 0
     db = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
@@ -166,7 +173,8 @@ def refresh_eligible_count() -> int:
             "(status='live' AND (last_probed_at IS NULL OR "
             " last_probed_at < datetime('now', ?))) OR "
             "(status='dead' AND (last_probed_at IS NULL OR "
-            " last_probed_at < datetime('now', ?)))",
+            " last_probed_at < datetime('now', ?))) OR "
+            "(status='error' AND attempts < 2)",
             (f"-{REFRESH_DAYS} days", f"-{DEAD_REFRESH_DAYS} days"),
         ).fetchone()[0]
     finally:

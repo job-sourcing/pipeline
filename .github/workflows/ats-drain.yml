@@ -87,7 +87,8 @@ jobs:
               " OR (status='live' AND (last_probed_at IS NULL "
               "     OR last_probed_at < datetime('now', '-30 days'))) "
               " OR (status='dead' AND (last_probed_at IS NULL "
-              "     OR last_probed_at < datetime('now', '-95 days')))"
+              "     OR last_probed_at < datetime('now', '-95 days'))) "
+              " OR (status='error' AND attempts < 2)"
           ).fetchone()[0]
           print(f"rows needing work (pending + reclaimable errors + "
                 f"stale universe): {n}")
