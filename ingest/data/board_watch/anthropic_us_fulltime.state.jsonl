@@ -80,6 +80,7 @@
 {"reqId": "267712", "title": "Digital Campaigns, Policy Advocacy", "first_seen": "2026-09-25", "last_seen": "2026-10-15", "last_postedOn": "Posted 21 Days Ago", "last_startDate": "", "implied_post_date": "2026-09-23"}
 {"reqId": "267174", "title": "Director, Finance Systems - Revenue Systems Engineering", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 47 Days Ago", "last_startDate": "", "implied_post_date": "2026-08-28"}
 {"reqId": "REQ-26-0457-01", "title": "Director, Financial Reporting - Special Projects", "first_seen": "2026-10-06", "last_seen": "2026-10-15", "last_postedOn": "Posted 10 Days Ago", "last_startDate": "", "implied_post_date": "2026-10-04"}
+{"reqId": "REQ-26-0453-01", "title": "Director, Infrastructure Lease Accounting", "first_seen": "2026-10-15", "last_seen": "2026-10-15", "last_postedOn": "Posted Today", "last_startDate": "", "implied_post_date": "2026-10-14"}
 {"reqId": "267659", "title": "Director, IT SOX", "first_seen": "2026-09-22", "last_seen": "2026-10-15", "last_postedOn": "Posted 24 Days Ago", "last_startDate": "", "implied_post_date": "2026-09-20"}
 {"reqId": "10123", "title": "Director, Revenue Accounting", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 269 Days Ago", "last_startDate": "", "implied_post_date": "2026-01-18"}
 {"reqId": "REQ-26-0480-01", "title": "Director, SOX Infrastructure", "first_seen": "2026-10-07", "last_seen": "2026-10-15", "last_postedOn": "Posted 9 Days Ago", "last_startDate": "", "implied_post_date": "2026-10-05"}
@@ -138,7 +139,6 @@
 {"reqId": "4534", "title": "Hardware Systems Architect", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 71 Days Ago", "last_startDate": "", "implied_post_date": "2026-08-04"}
 {"reqId": "P-5143", "title": "Head of Accounting Policy", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 36 Days Ago", "last_startDate": "", "implied_post_date": "2026-09-08"}
 {"reqId": "266587", "title": "Head of Community, Enterprise Marketing", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 62 Days Ago", "last_startDate": "", "implied_post_date": "2026-08-13"}
-{"reqId": "267301", "title": "Head of Compute Supply Chain", "first_seen": "2026-09-24", "last_seen": "2026-10-15", "last_postedOn": "Posted 42 Days Ago", "last_startDate": "", "implied_post_date": "2026-09-02"}
 {"reqId": "266789", "title": "Head of National Security Sales (DoW/IC)", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 52 Days Ago", "last_startDate": "", "implied_post_date": "2026-08-23"}
 {"reqId": "4567", "title": "Head of Payroll & Equity", "first_seen": "2026-10-02", "last_seen": "2026-10-15", "last_postedOn": "Posted 13 Days Ago", "last_startDate": "", "implied_post_date": "2026-10-01"}
 {"reqId": "267136", "title": "Head of Policy Design, Societal Harms", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 48 Days Ago", "last_startDate": "", "implied_post_date": "2026-08-27"}
@@ -380,7 +380,6 @@
 {"reqId": "266163", "title": "Staff+ Software Engineer, Capacity Engineering", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 93 Days Ago", "last_startDate": "", "implied_post_date": "2026-07-13"}
 {"reqId": "PIP-11983", "title": "Staff+ Software Engineer, Claude App Infrastructure", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 275 Days Ago", "last_startDate": "", "implied_post_date": "2026-01-12"}
 {"reqId": "PIP-266502", "title": "Staff Software Engineer, Claude Code", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 69 Days Ago", "last_startDate": "", "implied_post_date": "2026-08-06"}
-{"reqId": "262538", "title": "Staff Software Engineer, Claude Design", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 140 Days Ago", "last_startDate": "", "implied_post_date": "2026-05-27"}
 {"reqId": "PIP-267245", "title": "Staff+ Software Engineer, Claude Science", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 41 Days Ago", "last_startDate": "", "implied_post_date": "2026-09-03"}
 {"reqId": "PIP-266314", "title": "Staff Software Engineer, Code RL", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 82 Days Ago", "last_startDate": "", "implied_post_date": "2026-07-24"}
 {"reqId": "PIP-11969", "title": "Staff+ Software Engineer, Cybersecurity Products", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 279 Days Ago", "last_startDate": "", "implied_post_date": "2026-01-08"}
@@ -443,6 +442,7 @@
 {"reqId": "267252", "title": "Technical Program Manager, Enterprise Readiness", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 44 Days Ago", "last_startDate": "", "implied_post_date": "2026-08-31"}
 {"reqId": "266332", "title": "Technical Program Manager, GTM Systems", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 85 Days Ago", "last_startDate": "", "implied_post_date": "2026-07-21"}
 {"reqId": "266448", "title": "Technical Program Manager, Hardware Systems", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 71 Days Ago", "last_startDate": "", "implied_post_date": "2026-08-04"}
+{"reqId": "PIP-267920", "title": "Technical Program Manager, Inference", "first_seen": "2026-10-15", "last_seen": "2026-10-15", "last_postedOn": "Posted Today", "last_startDate": "", "implied_post_date": "2026-10-14"}
 {"reqId": "260585", "title": "Technical Program Manager, Infrastructure", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 252 Days Ago", "last_startDate": "", "implied_post_date": "2026-02-04"}
 {"reqId": "262243", "title": "Technical Program Manager, Launches  ", "first_seen": "2026-09-19", "last_seen": "2026-10-15", "last_postedOn": "Posted 167 Days Ago", "last_startDate": "", "implied_post_date": "2026-04-30"}
 {"reqId": "REQ-26-0289-01", "title": "Technical Program Manager, Life Sciences", "first_seen": "2026-10-02", "last_seen": "2026-10-15", "last_postedOn": "Posted 13 Days Ago", "last_startDate": "", "implied_post_date": "2026-10-01"}
