@@ -15,18 +15,21 @@
   "free_trio": "ok",
   "talent": "ok",
   "muse": "ok",
-  "usajobs": "error:HTTPError",
-  "gj_role": "ok"
+  "usajobs": "ok:relay",
+  "builtin": "error:technical pr:HTTPError",
+  "himalayas": "ok",
+  "gj_role": "error:product mana:HTTPError",
+  "seed_envelope": "ok:3692/4845"
  },
  "layers": {
   "l0": 225,
-  "l1.5": 7414,
+  "l1.5": 7416,
   "?": 0,
   "l1": 70,
-  "l2": 1136,
+  "l2": 1228,
   "l3": 562
  },
- "ran_at": "2026-10-15T14:26:31Z",
+ "ran_at": "2026-10-15T19:22:20Z",
  "queries": [
   "product manager",
   "senior product manager",
@@ -36,36 +39,47 @@
   "head of product",
   "product owner"
  ],
- "rows_kept": 2937,
- "rows_dropped": 119,
+ "rows_kept": 5026,
+ "rows_dropped": 486,
  "counters": {
-  "family_other": 2834,
-  "nontech_gate": 89,
-  "dedup_merge": 2140,
-  "usgate_non_us": 1377,
-  "pending_sector": 3577,
-  "staffing_repost": 738,
-  "employer_anonymized": 64,
-  "dedup_dateless": 45,
-  "residual_dup_est": 1158,
-  "g1b_title": 30
+  "family_other": 2998,
+  "nontech_gate": 336,
+  "dedup_merge": 4631,
+  "usgate_non_us": 52,
+  "pending_sector": 4600,
+  "staffing_repost": 1530,
+  "employer_anonymized": 128,
+  "dedup_dateless": 259,
+  "residual_dup_est": 2172,
+  "g1b_title": 100,
+  "screening_post": 50,
+  "seed_rows_in": 3692,
+  "seed_dup_absorbed": 2150,
+  "seed_dup_residual": 1535,
+  "roster_kept": 1723,
+  "agency_pending": 1195,
+  "res7_merge": 413,
+  "cross_src_merge": 99
  },
  "seniority_conflicts": 0,
  "title_conflicts": 1,
  "day_delta_histogram": {
-  "re7": 406,
-  "1": 4,
-  "0": 19
+  "re7": 398,
+  "xs1": 68,
+  "xs2": 23,
+  "xs3": 8,
+  "0": 22,
+  "1": 3
  },
- "dedup_merges": 2140,
+ "dedup_merges": 4631,
  "family_histogram": {
-  "pm": 2755,
-  "adjacent": 182
+  "pm": 4783,
+  "adjacent": 243
  },
  "seniority_histogram": {
-  "senior": 970,
-  "director+": 593,
-  "mid": 1325,
-  "junior": 49
+  "senior": 1937,
+  "director+": 1021,
+  "mid": 1981,
+  "junior": 87
  }
 }
