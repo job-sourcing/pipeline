@@ -28,6 +28,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import datetime
 import json
 import os
 import sqlite3
@@ -293,7 +294,14 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
         # the stalest live boards (and the quarterly dead). attempts
         # resets at claim (the per-cycle budget); ORDER BY last_probed_at
         # keeps the campaign front honest (the stalest boards first).
-        rq = ("SELECT ats, slug FROM directory WHERE "
+        # [S38/W6c P3-1] the OR-chain is PARENTHESIZED: SQL's AND binds
+        # tighter than OR, so the old flat `... OR (status='error' AND
+        # attempts < ?) AND ats = ?` scoped ONLY the error branch — an
+        # --ats-scoped refresh silently selected stale live/dead rows
+        # from EVERY ATS (the audit's P3-1 assumed the SELECT's ats
+        # scope was real; it was half-broken, and the keyed attempts
+        # reset below is only as scoped as this selection).
+        rq = ("SELECT ats, slug FROM directory WHERE ("
               "(status = 'live' AND (last_probed_at IS NULL OR "
               " last_probed_at < datetime('now', ?))) OR "
               "(status = 'dead' AND (last_probed_at IS NULL OR "
@@ -302,7 +310,7 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
               # attempts-capped; a final-batch error used to strand a
               # board for the week (the retry-errors sweep's 1h age
               # gate left it unclaimed when the leg ended)
-              "(status = 'error' AND attempts < ?)")
+              "(status = 'error' AND attempts < ?))")
         rargs: list = [f"-{refresh_days} days", f"-{dead_refresh_days} days",
                        _MAX_ATTEMPTS]
         if ats:
@@ -314,15 +322,20 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
         if rows:
             print(f"[batch] refresh: re-probing {len(rows)} stale boards "
                   f"(live >{refresh_days}d, dead >{dead_refresh_days}d)")
-            conn.execute(
-                "UPDATE directory SET attempts = 0 WHERE "
-                "(status = 'live' AND (last_probed_at IS NULL OR "
-                " last_probed_at < datetime('now', ?))) OR "
-                "(status = 'dead' AND (last_probed_at IS NULL OR "
-                " last_probed_at < datetime('now', ?))) OR "
-                "(status = 'error' AND attempts < ?)",
-                (f"-{refresh_days} days", f"-{dead_refresh_days} days",
-                 _MAX_ATTEMPTS))
+            # [S38/W6c P3-1] reset attempts on EXACTLY the claimed
+            # (ats, slug) keys. The old predicate-shaped UPDATE dropped
+            # the SELECT's --ats and LIMIT scope: every matching row —
+            # not just the batch actually being probed — had its retry
+            # budget zeroed ("reset but not selected"). Inert for
+            # live/dead rows alone, but the W5a P2-3 error clause made
+            # it live: an UNSELECTED error row's attempts silently went
+            # to 0, restarting its retry budget without a probe. Keyed
+            # reset = the claim scope by construction (ats, LIMIT, and
+            # any time-drift between the SELECT and the UPDATE).
+            conn.executemany(
+                "UPDATE directory SET attempts = 0 "
+                "WHERE ats = ? AND slug = ?",
+                [(ats_name, slug) for ats_name, slug in rows])
             conn.commit()
     if not rows and retry_errors:
         # nothing pending — sweep up transient errors aged ≥1h that still
@@ -388,13 +401,28 @@ def stats(conn: sqlite3.Connection) -> None:
 
 
 def _now() -> str:
-    return time.strftime("%Y-%m-%dT%H:%M:%S")
+    """[S38/W6c P3-2] `datetime('now')`-shaped UTC (space separator).
+    This used to write ISO-T LOCAL timestamps while every staleness
+    cutoff compares against SQLite's space-format UTC strings — at a
+    shared date 'T'(0x54) > ' '(0x20) in SQLite's string compare, so a
+    row probed hours PAST the cutoff day still read FRESH (a
+    one-directional false-fresh window of up to 24 h, shared by all
+    THREE predicate copies), and the 1 h error cutoff ran on a
+    different clock AND format than the drain/gate ones. One format,
+    one clock. Pre-fix rows self-heal as they are re-probed (the skew
+    only mis-verdicts when row-date == cutoff-date, in the fresh
+    direction, for under a day)."""
+    return datetime.datetime.now(
+        datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
 
 def _now_minus_hours(hours: float) -> str:
-    import datetime
-    t = datetime.datetime.now() - datetime.timedelta(hours=hours)
-    return t.strftime("%Y-%m-%dT%H:%M:%S")
+    """Same shape/clock as _now() — see the P3-2 note above (the
+    retry-errors sweep's cutoff must be comparable by SQLite's
+    datetime('now', '-1 hour') semantics used everywhere else)."""
+    t = datetime.datetime.now(datetime.timezone.utc) \
+        - datetime.timedelta(hours=hours)
+    return t.strftime("%Y-%m-%d %H:%M:%S")
 
 
 def main() -> int:

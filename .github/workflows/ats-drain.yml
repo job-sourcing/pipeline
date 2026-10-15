@@ -22,9 +22,12 @@ name: ATS Directory Drain
 #     9,705 live boards all aged past 30d with nothing re-probing
 #     them); DRAIN_RESULT=pending while the universe is stale → the
 #     chain re-triggers (the leg cap bounds the day as always).
-#   THIS workflow's gate — the third copy of the predicate (the gate
-#     SQL counts pending + reclaimable errors + refresh-eligible, so
-#     the install/drain/export steps fire when the universe is stale).
+#   THIS workflow's gate — [S38/W6c P3-4] it is NO LONGER a third
+#     hand-copy of the predicate SQL: the gate step runs
+#     `gha_drain.py --counts`, which computes needs-work from the
+#     SAME env knobs and SQL the driver uses (DRAIN_REFRESH_DAYS /
+#     DRAIN_DEAD_REFRESH_DAYS defaults live in gha_drain.py — the
+#     single source; the old inline 30/95/attempts/-1h SQL is gone).
 #
 # THE FIRST CAMPAIGN (measured 2026-10-15): 9,705 stale-live + 6,167
 # stale-dead re-probes ≈ 2-31 legs at the 80-min/8-legs-day cap — a
@@ -65,36 +68,16 @@ jobs:
         with:
           fetch-depth: 0   # full history: the checkpoint step rebases onto a moved main
 
-      - name: Check work (cheap no-op gate — pending + reclaimable errors + STALE UNIVERSE)
-        run: |
-          python3 - <<'EOF'
-          import pathlib, os, sqlite3
-          db = pathlib.Path("ingest/data/ats_directory.db")
-          if not db.exists():
-              raise SystemExit(
-                  "ats_directory.db is missing from the repo — "
-                  "re-seed (ingest/scripts/build_ats_directory.py --seed) "
-                  "and commit it before running the drain")
-          # Needs-work = pending rows + aged reclaimable errors (audit F4)
-          # + refresh-eligible rows (S37-W3: live stale > 30d, dead stale
-          # > 95d — a stale universe is WORK; the pre-S37 gate's pending-
-          # only predicate was permanently 0 since Sep 8).
-          n = sqlite3.connect(f"file:{db}?mode=ro", uri=True).execute(
-              "SELECT COUNT(*) FROM directory WHERE status='pending' "
-              " OR (status='error' AND attempts < 2 "
-              "     AND (last_probed_at IS NULL "
-              "          OR last_probed_at < datetime('now', '-1 hour'))) "
-              " OR (status='live' AND (last_probed_at IS NULL "
-              "     OR last_probed_at < datetime('now', '-30 days'))) "
-              " OR (status='dead' AND (last_probed_at IS NULL "
-              "     OR last_probed_at < datetime('now', '-95 days'))) "
-              " OR (status='error' AND attempts < 2)"
-          ).fetchone()[0]
-          print(f"rows needing work (pending + reclaimable errors + "
-                f"stale universe): {n}")
-          with open(os.environ["GITHUB_ENV"], "a") as f:
-              f.write(f"DRAIN_PENDING={n}\n")
-          EOF
+      - name: Check work (cheap no-op gate — the driver's own predicate)
+        # [S38/W6c P3-4] the gate SQL used to be the THIRD hand-copy of
+        # the needs-work predicate (30/95/attempts/-1h hardcoded against
+        # gha_drain.py's env knobs — a cadence change was a 4-place
+        # 2-file edit, and future drift was only detectable by char-
+        # diffing SQL strings). The count now comes from the driver
+        # itself: same env knobs, same SQL, zero copies. Stdlib-only —
+        # runs before setup-python. RED + no DRAIN_PENDING when the DB
+        # is missing/unreadable (the old gate's SystemExit behavior).
+        run: python3 scripts/gha_drain.py --counts
 
       - uses: actions/setup-python@v5
         if: env.DRAIN_PENDING && env.DRAIN_PENDING != '0'
@@ -106,10 +89,13 @@ jobs:
         run: pip install -e ingest
 
       - name: Drain (time-budgeted, resumable — refresh mode armed)
+        # [S38/W6c P3-4] the cadence knobs (DRAIN_REFRESH_DAYS=30 /
+        # DRAIN_DEAD_REFRESH_DAYS=95) are NO LONGER pinned here: the
+        # defaults live in gha_drain.py — the one place the gate
+        # (--counts) and the drain itself both read. Override at job /
+        # workflow env level only for experiments, never per-step (a
+        # per-step pin would re-split the gate's and the drain's view).
         if: env.DRAIN_PENDING && env.DRAIN_PENDING != '0'
-        env:
-          DRAIN_REFRESH_DAYS: "30"
-          DRAIN_DEAD_REFRESH_DAYS: "95"
         run: python3 scripts/gha_drain.py
 
       - name: Export snapshot
