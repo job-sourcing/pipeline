@@ -10,6 +10,20 @@ Pins the detection contract (DESIGN-S35 §3.2, round-2 amendments):
 - unexported-drift: manifest identity break
 - baseline: append-only series, same-day upsert, capped
 - issue sink: create/comment/auto-close decisions (mocked API)
+Covers:
+  - CADENCE_DAYS (A12): the ra / gj_quarterly / gj_monthly entries —
+    66 boards were wrong-by-accident at DEFAULT_CADENCE=1 (masked only
+    by the no-CSV exemption; a future CSV emission would storm issues)
+  - the corroboration-blocked-streak class (A1 / review P0-1): >=3
+    consecutive runs.jsonl lines with corroboration_blocked=true fire
+    the finding; 2 do not; a clean line breaks the streak; the class
+    is verdict-independent (a green 'complete' line still counts when
+    flagged — the lane runs green while the signals layer freezes)
+  - the board-fail-streak mirror: a source_blocked verdict BREAKS a
+    fail-streak (it is not a failure) and never fires the class itself
+
+Hermetic: WATCH_DIR / WORKDAY / BASELINE monkeypatched to tmp_path —
+no network, no issue writes (sink_issues is never exercised here).
 """
 from __future__ import annotations
 
@@ -376,6 +390,27 @@ def _line(verdict: str = "complete", blocked: bool = False) -> dict:
     if blocked:
         r["corroboration_blocked"] = True
     return r
+
+
+# ── A12: the cadence map ─────────────────────────────────────────────────
+class TestCadenceMap:
+    def test_the_three_missing_lanes_are_mapped(self):
+        # A12 (review P2-5): ra (59 boards), gj_quarterly (5),
+        # gj_monthly (2) fell to DEFAULT_CADENCE=1 — wrong-by-accident
+        assert drift.CADENCE_DAYS["ra"] == 7
+        assert drift.CADENCE_DAYS["gj_quarterly"] == 95
+        assert drift.CADENCE_DAYS["gj_monthly"] == 35
+
+    def test_untagged_daily_default_unchanged(self):
+        assert drift.DEFAULT_CADENCE == 1
+
+    def test_no_lane_tag_falls_back_to_daily(self):
+        # the pre-existing lanes keep their pins (a regression on the
+        # map would silently re-classify whole lanes)
+        for tag, days in (("li", 1), ("weekly", 7), ("li_dormant", 7),
+                          ("gj", 7), ("gj_dormant", 30), ("cf", 7),
+                          ("monthly", 30)):
+            assert drift.CADENCE_DAYS[tag] == days
 
 
 # ── A1: the corroboration-blocked-streak class ───────────────────────────

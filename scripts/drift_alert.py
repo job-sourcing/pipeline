@@ -57,8 +57,24 @@ SERIES_KEEP = 120          # entries per label (append-only, capped)
 CADENCE_DAYS = {           # config tag -> expected refresh interval
     "li": 1, "weekly": 7, "li_dormant": 7, "gj": 7,
     "gj_dormant": 30, "cf": 7, "monthly": 30,
+    # S37-W1 (D-S37-1 A12 / review P2-5): the three lanes that fell to
+    # DEFAULT_CADENCE=1 wrong-by-accident — 66 boards (ra 59 +
+    # gj_quarterly 5 + gj_monthly 2) treated as DAILY. Harmless today
+    # ONLY because those lanes emit no workday CSVs (the stale-board
+    # class's has_csv gate exempts them); any future CSV emission for
+    # those lanes would storm false-positive stale-board issues.
+    "ra": 7, "gj_quarterly": 95, "gj_monthly": 35,
 }
 DEFAULT_CADENCE = 1
+
+# DOCUMENTED BLIND SPOT (A12): the 98 no-CSV boards (ra 59 +
+# li_dormant 39) have NO row monitoring at all — no workday CSV means
+# _rows_now()=0 and the has_csv gate exempts them from stale-board, so
+# row-collapse/row-zero/window-decline never see them either. Their
+# coverage is VERDICT-based only (board-fail-streak +
+# corroboration-blocked-streak over runs.jsonl). The compensating read
+# is lane-recency (the refresher-health script, D-S37-1 R6/A11) — a
+# lane that never ran leaves no per-label evidence at all.
 
 
 def _now() -> str:
