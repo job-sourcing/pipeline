@@ -139,15 +139,63 @@ _GEO_CANON = {
 }
 
 
+# W6-a (P3-1, research-review-s37-d1.md): row-level companyKey
+# duplicate-identity aliases. Census of the 2026-10-15 live bundle
+# (8,083 rows / 392 row-level keys / 177 index companies): 12 boards
+# carry rows whose per-row company NAME column splits ONE company
+# across two companyKeys — every variant key rides exactly ONE
+# companyId (verified: no cross-board collision; the only multi-cid
+# row key is `jackery`, the intended D-S35-3 li+gj merge). The
+# canonical side is company_key(watch company name) — the index
+# card's key — so rows group under the card the index advertises.
+# Measured pairs (variant rows + canonical rows, mass on BOTH sides):
+#   riotgames 65 + riot-games 18                 cid riotgames (greenhouse)
+#   alibaba 42 + alibaba-group 7                 cid alibaba (alibaba)
+#   beigene 111 + beone-medicines 72             cid beone (rebrand)
+#   haier 117 + ge-appliances 40                 cid gea (parent brand)
+#   legendcareers 47 + legend-biotech 20         cid legendbiotech
+#   bitdeer-technologies-group 39 + bitdeer 5    cid bitdeer
+#   canadiansolar 88 + canadian-solar 49         cid canadiansolar
+#   faradayfuture 70 + faraday-future 9          cid faradayfuture
+#   popmart 58 + pop-mart 17                     cid popmart (workday)
+#   power-solutions-international-inc 42 +
+#     power-solutions-international 3            cid psi (paycom)
+#   bosonai 4 + boson-ai 1                       cid bosonai (lever)
+#   moonshot 3 + moonshot-ai 2                   cid moonshot
+# Row ids are companyId-prefixed and UNTOUCHED (id == f"{companyId}:
+# {reqId}" verified on all 8,083 rows). Known out-of-scope residue:
+# tti's company column carries DEPARTMENT names (222 junk keys over
+# ~501 rows) — an upstream CSV emission bug, not slug residue; fix at
+# the adapter, never here.
+_COMPANY_KEY_ALIAS = {
+    "riotgames": "riot-games",
+    "alibaba": "alibaba-group",
+    "beigene": "beone-medicines",
+    "haier": "ge-appliances",
+    "legendcareers": "legend-biotech",
+    "bitdeer-technologies-group": "bitdeer",
+    "canadiansolar": "canadian-solar",
+    "faradayfuture": "faraday-future",
+    "popmart": "pop-mart",
+    "power-solutions-international-inc":
+        "power-solutions-international",
+    "bosonai": "boson-ai",
+    "moonshot": "moonshot-ai",
+}
+
+
 def company_key(name: str) -> str:
     """D-S35-3: the company grouping key — stable ids stay untouched
     (persisted marks/filters key by id); companyKey lets the UI group
     multi-source companies (li + gj + ra lanes of one entity). Slug:
-    lowercase, parentheticals stripped, non-alnum -> '-'."""
+    lowercase, parentheticals stripped, non-alnum -> '-'. W6-a: the
+    slug then resolves through _COMPANY_KEY_ALIAS — deterministic
+    order, exact-match alias FIRST, then the raw slug (no fuzzy/prefix
+    matching; unlisted slugs ship as themselves)."""
     import re as _re
     s = _re.sub(r"\s*\(.*?\)\s*$", "", (name or "").strip())
     s = _re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
-    return s
+    return _COMPANY_KEY_ALIAS.get(s, s)
 
 
 def norm_country(c: str) -> str:
