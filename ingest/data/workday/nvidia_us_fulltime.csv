@@ -4498,62 +4498,6 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4304,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Software-Triage-Engineer---Autonomous-Vehicles_JR2016045,,https://www.linkedin.com/jobs/view/4469629174,2026-09-24,25,among first 25,1,matched,reqId,2026-09-24,2026-09-26T05:32:26,2026-10-15,,22,startDate,false,0,,2026-09-27,,Regular Employee,Engineering,2026-09-23,,true,553,173229,201467,226158,subset+state,Software Engineer
-JR2015047,Senior ASIC Verification Engineer - GPU,NVIDIA,2100 NVIDIA USA,Full time,Posted 2 Days Ago,2026-04-07,191,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,028095df097b1001ac9358c586600000,5,"At NVIDIA, we push the boundaries of computing innovation. Our ASIC Verification Engineers focus on developing the world’s top SoCs and GPUs. Joining us as a Senior ASIC Verification Engineer - GPU means working on modern technology powering consumer graphics and AI applications. This position is ideal for those passionate about technology and eager to impact computing’s future.
-
-What you'll be doing:
-
-•
-As a key member of our ASIC Verification team, you will verify the design and implementation of the industry's leading GPUs.
-
-•
-You will be responsible for verifying the ASIC build, architecture, golden models, and micro-architecture using advanced verification methodologies such as UVM or equivalent.
-
-•
-Understand the design and implementation of your unit/cluster/chip, define the verification scope, develop the verification infrastructure, and verify the correctness of the design.
-
-•
-Collaborate with architects, designers, and pre- and post-silicon verification teams to accomplish your task.
-
-What we need to see:
-
-•
-Bachelor's Degree in EE, CS, or CE or equivalent experience.
-
-•
-5+ years of relevant experience.
-
-•
-Experience in verification using random stimulus along with functional coverage and assertion-based verification methodologies.
-
-•
-Experience with design and verification tools (VCS or equivalent simulation tools, debug tools like Verdi, Indago, GDB).
-
-•
-Expertise in System Verilog or similar HVL.
-
-•
-Strong debugging and analytical skills.
-
-•
-Perl and C/C++ programming language experience desirable.
-
-•
-Strong communication skills and the ability & desire to work as a great teammate are huge pluses.
-
-•
-Experience in crafting test bench environments for unit and system level verification.
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 136,000 USD - 218,500 USD for Level 3, and 168,000 USD - 264,500 USD for Level 4.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until April 11, 2026.
-
-This posting is for an existing vacancy.
-
-NVIDIA uses AI tools in its recruiting processes.
-
-NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",2625,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-ASIC-Verification-Engineer---GPU_JR2015047,,,,,,,no_match,,2026-09-09,,2026-10-15,,191,startDate,true,0,2026-09-23,2026-04-11,,Regular Employee,Engineering,2026-04-07,,false,3,168833,169666,178069,subset,Senior ASIC Verification Engineer
 JR2012844,Senior Formal Verification Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted 2 Days Ago,2026-06-12,125,"US, CA, Santa Clara",2,"US, CA, Santa Clara; US, TX, Austin",false,CA;TX,United States,3403860341171001f57d5c603f290000,5,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
 
 As a Formal Verification Engineer at NVIDIA, you will verify the build and implementation of the industry's leading GPUs. In this position, your responsibilities will be to verify the micro-architecture using formal verification tools, define the verification scope, and ensure correctness. You will employ sophisticated formal techniques to acquire sufficiently bounded proofs while working with architects, designers, and pre- & post-silicon verification teams to accomplish your tasks. You will efficiently complete the formal verification effort for the entire project cycle, delivering high-quality results on schedule, and clearly conveying those results to the team.
@@ -97286,3 +97230,87 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3847,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Manager--Data-Center-GPU_JR2027838,,https://www.linkedin.com/jobs/view/4478825064,2026-10-15,25,among first 25,1,matched,,2026-10-15,2026-10-15T03:03:06,2026-10-15,,1,startDate,false,0,,2026-10-18,3,,,2026-10-14,,true,79,179421,200304,223142,subset+state,Product Manager
+JR2027684,SRAM Design Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted Today,2026-10-15,0,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.The Digital IP (DIP) group at NVIDIA develops IP for every chip designed at NVIDIA. This group works closely with internal SOC design, silicon testing, and productization teams that turn our IP into products that change the world. One of the roles fulfilled by the DIP group is to develop sophisticated SRAM compilers that are used extensively by our SOC design partners. We are looking to hire a skilled and creative SRAM circuit designer to help achieve these goals in a high-visibility position.
+
+What you'll be doing:
+
+• Embedded SRAM design: Transistor-level circuit design, supervising layout implementation, physical and logical verification, and debug of SRAM macros.
+
+• SRAM compiler development: Envisioning, defining, and coding more efficient ways to automate the simultaneous assembly and validation of multiple unique SRAM macros using NVIDIA's extensive compute resources.
+
+• Advanced development: Exploring the potential of future process nodes and developing techniques to realize optimal power, performance, and area characteristics.
+
+• Guiding SOC design, silicon test, and productization efforts: Collaborate with SOC design partners to help them achieve their overall performance and cost goals, guide the silicon test and characterization efforts, and working with productization teams to prepare new silicon for the demanding requirements of real-world applications.
+
+What we need to see:
+
+• BSEE minimum (or equivalent experience), MSEE or PhD
+
+• 2+ years of professional experience in SRAM design
+
+• Familiarity with Cadence Virtuoso schematic and layout capture tools
+
+• Willingness and ability to use AI effectively in day-to-day tasks
+
+Ways to stand out from the crowd
+
+• Self-motivation, attention to detail, and good written, verbal, and presentation skills are essential to success in this role
+
+• We rely heavily on AI coding and analysis tools such as Codex and Claude Code. The more developed your skills in this area, the better
+
+• Silicon testing and debugging experience
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 116,000 USD - 189,750 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 19, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3550,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/SRAM-Design-Engineer_JR2027684,,,,,,,not_checked,,2026-10-15,,2026-10-15,,0,startDate,false,0,,2026-10-19,4,,,2026-10-15,,,,,,,,
+JR2027699,Engineering Product Manager,NVIDIA,2100 NVIDIA USA,Full time,Posted Today,2026-10-15,0,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world. NVIDIA is looking for an Engineering Product Manager to develop products for AI, high performance computing, and other datacenter markets.
+
+What you'll be doing:
+
+• Collaborate with senior leaders to develop product strategies and development plans for datacenter products and power solutions. Own programs from concept and design through bring-up, validation, and mass production.
+
+• Engage with JDM partners as an extension of the engineering team to achieve the highest levels of product performance and quality. Align all parties with clear requirements and timelines.
+
+• Develop, supervise and refine product execution plans included staffing, schedules, contingencies. Test all plans against precision.
+
+• Continually identify and communicate the most critical priorities on the project. Align and lead a multi-functional team to complete those priorities.
+
+• Champion excellence, continuous process improvement, including automation and corrective actions.
+
+What we need to see:
+
+• 10+ years of overall experience with 5 years of leadership experience within the industry
+
+• Bachelors degree or equivalent experience
+
+• Clear understanding of technical and logistic challenges that need to be met to deliver industry leading power solutions or server platforms
+
+• Ability to empower and lead a multi-functional team to tackle sophisticated System/HW/SW integration challenges
+
+• Excellent verbal, written and presentation communications skills, organizational capabilities, and collaborative and interpersonal skills
+
+• Collaboration experience with suppliers, development partners, and customers from product definition through mass production
+
+• Ability to multi-task and drive complex programs
+
+With highly competitive salaries and a comprehensive benefits package, NVIDIA is widely considered to be one of the technology industry's most desirable employers! We have some of the most forward-thinking and hardworking people in the world working with us and our product lines are growing fast in some of the hottest state of the art fields such as Artificial Intelligence, Deep Learning, Autonomous Vehicles, and Robotics. We have a real passion for perfection and for building products that excite the imagination. If you share these values and have the experience and skills to participate, we would love to have you join our team.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 168,000 USD - 258,750 USD for Level 4, and 200,000 USD - 322,000 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 19, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3941,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Engineering-Product-Manager_JR2027699,,,,,,,not_checked,,2026-10-15,,2026-10-15,,0,startDate,false,0,,2026-10-19,4,,,2026-10-15,,,79,179421,200304,223142,subset+state,Product Manager
