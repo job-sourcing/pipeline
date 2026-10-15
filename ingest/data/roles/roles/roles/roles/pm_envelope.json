@@ -1,0 +1,55 @@
+{
+ "sources": {
+  "l0_bundle": "ok",
+  "adzuna": "ok",
+  "jooble": "ok",
+  "indeed": "ok",
+  "li_keyword": "ok",
+  "wwr_rss": "ok",
+  "free_trio": "ok",
+  "gj_role": "error:head of prod:HTTPError"
+ },
+ "layers": {
+  "l0": 223,
+  "l1.5": 1370,
+  "l1": 70,
+  "l2": 619,
+  "l3": 168
+ },
+ "ran_at": "2026-10-15T00:48:55Z",
+ "queries": [
+  "product manager",
+  "senior product manager",
+  "technical product manager",
+  "group product manager",
+  "director of product",
+  "head of product",
+  "product owner"
+ ],
+ "rows_kept": 1043,
+ "rows_dropped": 7,
+ "counters": {
+  "family_other": 666,
+  "nontech_gate": 7,
+  "dedup_merge": 339,
+  "usgate_non_us": 395,
+  "pending_sector": 1048
+ },
+ "seniority_conflicts": 0,
+ "title_conflicts": 0,
+ "day_delta_histogram": {
+  "0": 1,
+  "1": 1
+ },
+ "dedup_merges": 339,
+ "family_histogram": {
+  "pm": 932,
+  "adjacent": 111
+ },
+ "seniority_histogram": {
+  "senior": 400,
+  "director+": 218,
+  "mid": 418,
+  "junior": 7
+ }
+}

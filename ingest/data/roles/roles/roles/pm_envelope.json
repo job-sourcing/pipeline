@@ -1,22 +1,32 @@
 {
  "sources": {
   "l0_bundle": "ok",
-  "adzuna": "ok",
+  "findwork": "ok",
+  "adzuna": "error:page1:director of :HTTPError",
+  "dice": "ok",
+  "careerjet": "error:product mana:HTTPError",
   "jooble": "ok",
   "indeed": "ok",
   "li_keyword": "ok",
+  "yc": "ok",
+  "wellfound": "ok",
+  "hn": "ok",
   "wwr_rss": "ok",
   "free_trio": "ok",
-  "gj_role": "error:head of prod:HTTPError"
+  "talent": "ok",
+  "muse": "ok",
+  "usajobs": "error:HTTPError",
+  "gj_role": "ok"
  },
  "layers": {
-  "l0": 223,
-  "l1.5": 1370,
+  "l0": 225,
+  "l1.5": 5914,
+  "?": 0,
   "l1": 70,
-  "l2": 619,
-  "l3": 168
+  "l2": 1136,
+  "l3": 562
  },
- "ran_at": "2026-10-15T00:48:55Z",
+ "ran_at": "2026-10-15T13:58:08Z",
  "queries": [
   "product manager",
   "senior product manager",
@@ -26,30 +36,35 @@
   "head of product",
   "product owner"
  ],
- "rows_kept": 1043,
- "rows_dropped": 7,
+ "rows_kept": 2559,
+ "rows_dropped": 118,
  "counters": {
-  "family_other": 666,
-  "nontech_gate": 7,
-  "dedup_merge": 339,
-  "usgate_non_us": 395,
-  "pending_sector": 1048
+  "family_other": 2508,
+  "nontech_gate": 88,
+  "dedup_merge": 1491,
+  "usgate_non_us": 1231,
+  "pending_sector": 2866,
+  "staffing_repost": 556,
+  "employer_anonymized": 7,
+  "dedup_dateless": 37,
+  "residual_dup_est": 1084,
+  "g1b_title": 30
  },
  "seniority_conflicts": 0,
  "title_conflicts": 0,
  "day_delta_histogram": {
-  "0": 1,
-  "1": 1
+  "1": 3,
+  "0": 19
  },
- "dedup_merges": 339,
+ "dedup_merges": 1491,
  "family_histogram": {
-  "pm": 932,
-  "adjacent": 111
+  "pm": 2425,
+  "adjacent": 134
  },
  "seniority_histogram": {
-  "senior": 400,
-  "director+": 218,
-  "mid": 418,
-  "junior": 7
+  "senior": 1001,
+  "director+": 348,
+  "mid": 1170,
+  "junior": 40
  }
 }
