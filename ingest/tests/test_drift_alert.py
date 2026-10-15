@@ -294,3 +294,58 @@ class TestRunsLedger:
         la2 = (tmp_path / "a_us_fulltime.runs.jsonl").read_text(
             ).splitlines()
         assert len(la2) == 2 and json.loads(la2[1])["verdict"] == "failed"
+
+
+# ── S36 sweep-mode (roles:pm — DESIGN-S36 §5) ───────────────────────────────
+
+class TestSweepMode:
+    """detect_sweep: the roles:pm ledger + baseline series."""
+
+    def _ledger(self, tmp_path, entries):
+        p = tmp_path / "roles:pm.runs.jsonl"
+        p.write_text("\n".join(json.dumps(e) for e in entries) + "\n")
+        return p
+
+    def test_sweep_fail_streak(self, tmp_path, monkeypatch):
+        entries = [
+            {"ts": "2026-10-13T00:00:00Z", "verdict": "complete",
+             "rows": 900, "sources_dead": []},
+            {"ts": "2026-10-14T00:00:00Z", "verdict": "failed",
+             "rows": 0, "sources_dead": ["adzuna"]},
+            {"ts": "2026-10-15T00:00:00Z", "verdict": "failed",
+             "rows": 0, "sources_dead": ["adzuna"]},
+        ]
+        self._ledger(tmp_path, entries)
+        monkeypatch.setattr(da, "WATCH_DIR", tmp_path)
+        f = da.detect_sweep({})
+        classes = [x["class"] for x in f]
+        assert "sweep-fail-streak" in classes
+        assert "sweep-source-death" in classes      # adzuna dead x2
+
+    def test_sweep_source_death_healed(self, tmp_path, monkeypatch):
+        entries = [
+            {"ts": "1", "verdict": "complete", "rows": 900,
+             "sources_dead": ["jooble"]},
+            {"ts": "2", "verdict": "complete", "rows": 900,
+             "sources_dead": []},                   # healed before 2
+        ]
+        self._ledger(tmp_path, entries)
+        monkeypatch.setattr(da, "WATCH_DIR", tmp_path)
+        assert da.detect_sweep({}) == []
+
+    def test_sweep_row_collapse(self, tmp_path, monkeypatch):
+        entries = [{"ts": "1", "verdict": "complete", "rows": 900,
+                    "sources_dead": []}]
+        self._ledger(tmp_path, entries)
+        monkeypatch.setattr(da, "WATCH_DIR", tmp_path)
+        baseline = {"roles:pm": [
+            {"d": "2026-10-08", "rows": 900},
+            {"d": "2026-10-14", "rows": 900},
+            {"d": "2026-10-15", "rows": 100},       # -89% > collapse
+        ]}
+        f = da.detect_sweep(baseline)
+        assert any(x["class"] == "row-collapse" for x in f)
+
+    def test_sweep_never_ran(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(da, "WATCH_DIR", tmp_path)
+        assert da.detect_sweep({}) == []

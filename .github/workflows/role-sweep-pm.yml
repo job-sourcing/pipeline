@@ -1,0 +1,96 @@
+name: Role Sweep PM (weekly)
+
+# S36 (D-S36-1, DESIGN-S36 v2.1) — the role-keyed PM sweep lane: the
+# campaign inverts the company keying (role queries, every company
+# that surfaces). Layers: L0 bundle projection + L1.5 keyed volume
+# (Adzuna/Jooble/jobspy-Indeed — secrets) + L1 LinkedIn-guest keyword
+# (Azure egress, 429 ladder) + L2 keyless closure (WWR/trio; remotive
+# DEAD-retired) + L3 Google-Jobs role queries (firecrawl credits,
+# preflight < 200 = fail-loudly). Outputs the roles/ envelope +
+# roles:pm drift ledger + ui/roles-pm.json (the S35 new-artifact
+# triple rule: rescue globs here + mirror back-sync + these git-add
+# pathspecs). --full on the 1st (core + tail variants).
+# Runtime ~8-12 min on the public runner.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * 3"    # Wed 12:00Z (after the main lanes)
+    - cron: "0 12 1 * *"    # 1st of month: --full (core + tail)
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: role-sweep-pm
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pipeline + jobspy extra
+        run: pip install -e "ingest[jobspy]" curl_cffi
+
+      - name: Run role sweep
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_API_KEY: ${{ secrets.ADZUNA_API_KEY }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          FULL_SWEEP: ${{ github.event.schedule == '0 12 1 * *' }}
+        run: |
+          set -e
+          ARGS=""
+          if [ "$FULL_SWEEP" = "true" ]; then ARGS="--full"; fi
+          python3 scripts/role_sweep.py $ARGS
+
+      - name: Drift audit (sweep-mode rides the same lane)
+        run: python3 scripts/drift_alert.py || true
+
+      - name: Checkpoint artifacts to git (race-proof, triple-rule globs)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/sweep_state
+          PATHS="ingest/data/roles ingest/data/ui/roles-pm.json ingest/data/board_watch/roles:pm.runs.jsonl ingest/data/board_watch/drift_baseline.json"
+          for p in $PATHS; do
+            if [ -e "$p" ]; then
+              mkdir -p "/tmp/sweep_state/$(dirname $p)"
+              cp -r "$p" "/tmp/sweep_state/$p" 2>/dev/null || true
+            fi
+          done
+          git config user.name "role-sweep-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            for p in $PATHS; do
+              if [ -e "/tmp/sweep_state/$p" ]; then
+                mkdir -p "$(dirname $p)"
+                cp -r "/tmp/sweep_state/$p" "$p"
+              fi
+            done
+            git add ingest/data/roles ingest/data/ui/roles-pm.json "ingest/data/board_watch/roles:pm.runs.jsonl" ingest/data/board_watch/drift_baseline.json
+            if git diff --cached --quiet; then
+              push_ok=1; break
+            fi
+            git commit -m "role-sweep-pm checkpoint [skip ci]"
+            if git push; then push_ok=1; break; fi
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::role-sweep checkpoint push failed after 3 attempts"
+            exit 1
+          fi

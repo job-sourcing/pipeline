@@ -272,6 +272,63 @@ def sink_issues(findings: list[dict], token: str, repo: str) -> None:
                       "state_reason": "completed"})
 
 
+def detect_sweep(baseline: dict) -> list[dict]:
+    """S36 sweep-mode: the roles:pm series (ledger + baseline fold —
+    DESIGN-S36 §5). Label discovery is self-registered: the sweep run
+    writes the ledger + the baseline entry; this auditor consumes.
+    Classes: sweep-fail-streak (verdict), sweep-source-death (the same
+    engine dead >=2 consecutive runs), row-collapse/zero/decline (the
+    shared row classes, label roles:pm)."""
+    label = "roles:pm"
+    ledger = _read_jsonl(WATCH_DIR / f"{label}.runs.jsonl")
+    if not ledger and label not in baseline:
+        return []                    # sweep never ran — nothing to audit
+    findings = []
+    streak = 0
+    for e in reversed(ledger):
+        if e.get("verdict") == "failed":
+            streak += 1
+        else:
+            break
+    if streak >= 2:
+        findings.append({"class": "sweep-fail-streak", "label": label,
+                         "evidence": f"{streak} consecutive failed sweeps"})
+    # source-death streaks (per engine)
+    dead_streak: dict[str, int] = {}
+    for e in ledger:
+        dead = e.get("sources_dead") or []
+        for s in dead:
+            dead_streak[s] = dead_streak.get(s, 0) + 1
+        for s in list(dead_streak):
+            if s not in dead and dead_streak[s] < 2:
+                dead_streak.pop(s)      # healed before confirming
+            elif s not in dead:
+                dead_streak[s] = 0      # healed — reset (no finding)
+    last_dead = set(ledger[-1].get("sources_dead") or []) if ledger else set()
+    for s, n in dead_streak.items():
+        if n >= 2 and s in last_dead:
+            findings.append({"class": "sweep-source-death", "label": label,
+                             "evidence": f"engine {s} dead in {n} "
+                                          "consecutive sweeps"})
+    # row classes on the baseline series (the sweep run appends it)
+    series = baseline.get(label) or []
+    if series:
+        rows = series[-1].get("rows", 0)
+        mx7, head28 = _series_stats(series)
+        if mx7 > 0 and rows == 0:
+            findings.append({"class": "row-zero", "label": label,
+                             "evidence": f"0 rows (7d-max {mx7})"})
+        elif mx7 and (mx7 - rows) >= 3 and rows < 0.4 * mx7:
+            findings.append({"class": "row-collapse", "label": label,
+                             "evidence": f"{rows} rows vs 7d-max {mx7} (-"
+                                          f"{100 * (mx7 - rows) // mx7}%)"})
+        if head28 and rows < 0.5 * head28 and (head28 - rows) >= 3:
+            findings.append({"class": "window-decline", "label": label,
+                             "evidence": f"{rows} rows vs 28d-ago {head28}"
+                                          f" (-{100 * (head28 - rows) // head28}%)"})
+    return findings
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true",
@@ -283,6 +340,7 @@ def main() -> int:
     watches = cfg["watches"]
     baseline = json.loads(BASELINE.read_text()) if BASELINE.exists() else {}
     findings = detect(watches, baseline)
+    findings += detect_sweep(baseline)
 
     print(f"[drift] {len(watches)} watches, {len(findings)} finding(s)")
     for f in findings:

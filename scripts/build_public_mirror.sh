@@ -133,6 +133,17 @@ PYEXP
     git diff --cached --quiet || \
     git commit -q -m "export manifests back-sync from org runtime (S36 P0 fix)")
 fi
+# S36: the role-sweep envelope (ingest/data/roles/* — written by the
+# role-sweep-pm lane org-side; roles-pm.json rides the ui/ sync, the
+# ledger + baseline ride board_watch/). Same back-sync-or-wipe class
+# as the manifests (the S36-open P0).
+if [ -d "$DEST/ingest/data/roles" ]; then
+  mkdir -p "$SRC/ingest/data/roles"
+  rsync -a "$DEST"/ingest/data/roles/ "$SRC/ingest/data/roles/"
+  (cd "$SRC" && git add ingest/data/roles && \
+    git diff --cached --quiet || \
+    git commit -q -m "role envelope back-sync from org runtime (S36)")
+fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
   rsync -a --delete "$DEST"/ingest/data/ui/ "$SRC/ingest/data/ui/"
