@@ -1,0 +1,48 @@
+{
+ "sources": {
+  "l0_bundle": "ok",
+  "adzuna": "ok",
+  "jooble": "ok",
+  "indeed": "ok",
+  "wwr_rss": "ok",
+  "free_trio": "ok"
+ },
+ "layers": {
+  "l0": 224,
+  "l1.5": 1370,
+  "l2": 619
+ },
+ "ran_at": "2026-10-15T00:30:46Z",
+ "queries": [
+  "product manager",
+  "senior product manager",
+  "technical product manager",
+  "group product manager",
+  "director of product",
+  "head of product",
+  "product owner"
+ ],
+ "rows_kept": 964,
+ "rows_dropped": 6,
+ "counters": {
+  "family_other": 682,
+  "nontech_gate": 6,
+  "dedup_merge": 317,
+  "usgate_non_us": 244,
+  "pending_sector": 949
+ },
+ "seniority_conflicts": 0,
+ "title_conflicts": 0,
+ "day_delta_histogram": {},
+ "dedup_merges": 317,
+ "family_histogram": {
+  "pm": 842,
+  "adjacent": 122
+ },
+ "seniority_histogram": {
+  "senior": 349,
+  "director+": 181,
+  "mid": 423,
+  "junior": 11
+ }
+}

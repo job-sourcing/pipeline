@@ -10,6 +10,7 @@ ingest/data/*
 !ingest/data/board_watch/
 !ingest/data/corpus/
 !ingest/data/ui/
+!ingest/data/roles/
 ingest/.venv/
 *.tmp
 *.pyc

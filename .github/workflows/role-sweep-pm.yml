@@ -56,6 +56,9 @@ jobs:
           python3 scripts/role_sweep.py $ARGS
 
       - name: Drift audit (sweep-mode rides the same lane)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRIFT_REPO: job-sourcing/pipeline
         run: python3 scripts/drift_alert.py || true
 
       - name: Checkpoint artifacts to git (race-proof, triple-rule globs)
