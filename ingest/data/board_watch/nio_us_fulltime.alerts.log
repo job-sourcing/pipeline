@@ -13,3 +13,10 @@ NEW Staff System Engineer | Researcher | San Jose, CA | Posted 101 Days Ago | ht
 board-watch nio_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
 (2026-10-07T14:07:15)
 
+NIO board-watch 2026-10-16: +0 new, -4 gone (5 active [nio_us_fulltime])
+GONE AI Infrastructure Engineer (first seen 2026-09-27)
+GONE AI Research Engineer - Enterprise Automation (first seen 2026-09-27)
+GONE LLM Algorithmic Optimization Engineer (first seen 2026-09-27)
+GONE Sr. Hypervisor/Linux Kernel Developer - Software Platform (first seen 2026-09-27)
+(2026-10-16T12:22:38)
+

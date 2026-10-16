@@ -81,3 +81,11 @@ GONE Full Stack Web Developer (first seen 2026-09-27)
 GONE Software Engineer (Java) (first seen 2026-09-27)
 (2026-10-15T00:11:10)
 
+board-watch foxconnfii_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Foxconn+Industrial+Internet&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-10-16T12:07:32)
+
+Foxconn Industrial Internet board-watch 2026-10-16: +1 new, -1 gone (172 active [foxconnfii_us_fulltime])
+NEW HR Specialist - HRIS &amp; HR Data | Houston, TX | 2026-10-15 | https://foxconnassemblyllc.applytojob.com/apply/ORguysc65F/HR-Specialist-HRIS-HR-Data
+GONE IT Support Supervisor (first seen 2026-09-27)
+(2026-10-16T12:07:32)
+
