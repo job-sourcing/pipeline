@@ -100,6 +100,12 @@ jobs:
             git reset --hard origin/main
             for p in $PATHS; do
               if [ -e "/tmp/sweep_state/$p" ]; then
+                # S40 fix: rm-then-cp. A plain `cp -r src dst` when dst is an
+                # existing DIRECTORY copies src INTO dst (dst/src) — this is
+                # what grew ingest/data/roles/roles/roles/... +1 level per
+                # lane run (observed 4 levels after lane #5). Files are
+                # unaffected (cp overwrites); only the dir path trips it.
+                rm -rf "$p"
                 mkdir -p "$(dirname $p)"
                 cp -r "/tmp/sweep_state/$p" "$p"
               fi
