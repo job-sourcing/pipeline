@@ -1,137 +1,4 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-00e36e70-3e10-4dc5-a5ea-600f6724a7c9,Data Engineer-Marketing Technology,foxitsoftware,foxitsoftware,Full time,Posted 108 Days Ago,,,"Alpharetta, GA",1,"Alpharetta, GA",false,,United States,,0,"Data Engineer, Marketing Technology
-
-About Us:
-
-Foxit is remaking the way the world interacts with documents through advanced PDF technology and tools. We are a leading global software provider of fast, affordable, and secure PDF solutions that are used by millions of people worldwide. Winner of numerous awards, Foxit has customers in more than 200 countries and global operations. We have a complete product line and an exciting and aggressive development schedule. Our proven PDF technology is disrupting the status quo establishment and has accelerated our company growth. We are proud to list as customers Google and Amazon, and with your skills and help, we plan to add many more. Foxit has offices all over the world, including locations in the US, Asia, Europe, and Australia.
-
-For more information, visit us @ www.foxit.com
-
-About the Role
-
-We are looking for an experienced Data Engineer to own the data pipelines that power our go-to-market systems. While this role is aligned to the marketing department's priorities, you will work day-to-day within our Business Applications & Data Analytics team, following the team's established development standards, architecture patterns, and code review processes. This ensures the pipelines you build are consistent with our broader data platform and maintainable by the wider engineering team.
-
-Your primary focus will be marketing-related data needs - working closely with demand gen, product marketing, sales operations, and digital teams to understand their requirements, then building and maintaining the pipelines and integrations that deliver on them.
-
-This is a hands-on execution role. You will build and operate the data infrastructure that connects our marketing automation platform (HubSpot), CRM (Salesforce), data warehouse (Databricks), licensing system, payment platform, and other source systems. Your work will directly support marketing's ability to segment audiences, measure attribution, and run data-driven campaigns at scale.
-
-What You'll Do
-
-Data Pipeline Development & Operations
-
-• Design, build, and maintain ETL/ELT pipelines, building upon and further optimizing our existing medallion architecture (Bronze → Silver → Gold) to move data between source systems (Salesforce CRM, HubSpot, NetSuite, Stripe, DealHub, LMS) and our Databricks data warehouse.
-
-• Build pipelines using PySpark and SQL in Databricks notebooks, following established development standards for naming, project structure, and layer-appropriate transformations.
-
-• Own the data sync layer between Databricks and HubSpot — enrichment flows inbound to HubSpot (license status, renewal dates, subscription state, firmographic data) and marketing engagement data flowing back to Databricks (email events, workflow enrollment, lifecycle changes).
-
-• Build and maintain Exchange layer pipelines that curate data for external system consumption, formatting and validating data to meet target system requirements.
-
-• Build and maintain scheduled batch jobs and event-driven integrations using APIs (REST, webhooks, OAuth).
-
-• Monitor pipeline health, set up alerting for failures and data quality degradation, and own incident response when syncs break.
-
-• Maintain documentation of data flows, integration architecture, and troubleshooting runbooks.
-
-Data Modeling & Quality
-
-• Build and maintain dimensional models in Databricks (fact tables, dimension tables, bridge tables) following our data warehouse object type definitions and naming standards.
-
-• Work in collaboration with stakeholders and data analysts to build curated, business-ready tables and datamarts that apply business logic, KPI calculations, and aggregations optimized for analytics and campaign activation.
-
-• Implement identity resolution and deduplication logic to produce unified customer profiles from multiple source systems.
-
-• Establish data validation rules, quality checks, and monitoring to ensure accuracy and freshness of data flowing into marketing systems.
-
-• Normalize disparate data sources into clean centralized schemas with proper type enforcement, deduplication, and null handling.
-
-Marketing Data & Segmentation Support
-
-• Ensure the data infrastructure supports audience segmentation, including firmographic, behavioral, and engagement signals.
-
-• Build the data layer that powers lifecycle marketing - triggered campaigns, dynamic journey branching, and personalization based on enriched customer profiles.
-
-• Support marketing and demand gen teams with reliable, accessible data for building audience targets in HubSpot.
-
-• Maintain data flows for email deliverability, subscription management, and suppression list synchronization.
-
-Integration Development
-
-• Build and maintain API integrations between marketing, sales, and operational systems using Python and SQL.
-
-• Implement field-level transformation logic, sync orchestration, and error handling for system-to-system data flows.
-
-• Support website form and lead capture data flows - ensuring clean handoff from web properties into HubSpot and Databricks.
-
-• Work with third-party enrichment providers (firmographic, intent, technographic) to integrate enrichment data into automated workflows.
-
-Reporting & Attribution
-
-• Build and maintain the data infrastructure that supports campaign attribution, channel performance analysis, and funnel reporting.
-
-• Ensure accurate data for conversion analytics, lead source tracking, and marketing ROI measurement.
-
-• Support centralized reporting by routing marketing engagement data back into Databricks for cross-functional analysis.
-
-What You Bring
-
-Required:
-
-• 5+ years of experience in data engineering, with hands-on pipeline development and production operations.
-
-• Strong proficiency in SQL and Python/PySpark for data pipeline development.
-
-• Experience building and maintaining ETL/ELT pipelines using Databricks, dbt, Airflow, Azure Data Factory, or equivalent.
-
-• Hands-on experience with cloud data platforms - Databricks, Snowflake, BigQuery, or Redshift.
-
-• Solid understanding of dimensional data modeling - fact tables, dimension tables, schema design, and data warehouse concepts.
-
-• Experience with medallion or layered data architectures (raw → cleansed → business-ready), Kimball-style star schemas, and one-big-table approaches to data modeling.
-
-• Working knowledge of API integration patterns - REST, webhooks, OAuth, batch sync architectures.
-
-• Experience with CRM platforms (Salesforce, HubSpot, or similar), marketing automation systems, and CPQ/quoting tools (DealHub or similar).
-
-• Bachelor's degree in Computer Science, Information Systems, or equivalent industry experience.
-
-Preferred:
-
-• Experience with Databricks (Delta Lake, PySpark, Unity Catalog).
-
-• Familiarity with HubSpot APIs and data model.
-
-• Experience with identity resolution and customer data deduplication across multiple source systems.
-
-• Exposure to marketing data concepts — lead scoring, audience segmentation, campaign attribution, lifecycle stages.
-
-• Experience with Azure cloud services (Azure Functions, Azure DevOps, Azure Data Factory).
-
-• Knowledge of data security and privacy practices, particularly regarding PII handling.
-
-• Experience with code review processes and development standards compliance in a collaborative data engineering team.
-
-What Sets You Apart
-
-• You've built and operated production data pipelines that marketing teams depend on daily - you understand the impact of data freshness and accuracy on campaign execution.
-
-• You're comfortable working within a marketing department and can translate data requests from non-technical stakeholders into pipeline requirements.
-
-• You take ownership of pipeline reliability - building monitoring and alerting proactively rather than waiting for someone to report a problem.
-
-• You've worked with multiple data sources and know how to handle the messiness of real-world identity resolution and deduplication.
-
-Why Join Us
-
-• High-impact work. Your pipelines will directly power how our marketing engine operates and scales.
-
-• Modern stack. Databricks, Delta Lake, PySpark, HubSpot, Python, SQL - you'll work with current tools, not legacy systems.
-
-• Room to build. We're investing in our data infrastructure as part of a major platform migration, and you'll shape how it's built.
-
-• Collaborative environment. You'll work closely with marketing, sales, and IT teams - visible, cross-functional work without being siloed.
-
-Foxit is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",8584,https://jobs.lever.co/foxitsoftware/00e36e70-3e10-4dc5-a5ea-600f6724a7c9,,https://www.linkedin.com/jobs/view/4427162819,2026-09-06,25,among first 25,,matched,title,2026-09-27,2026-09-27T02:46:53,2026-10-16,,40,startDate+linkedin,true,0,,,,,GBITS,2026-09-06,,true,,,,,,
 fe7f7153-7ba9-42d6-a806-d7f9cd115bdd,FP&A Manager,foxitsoftware,foxitsoftware,Full time,Posted 96 Days Ago,,,"Fremont, CA",1,"Fremont, CA",false,,United States,,0,"About the Role
 
 Foxit is seeking an experienced FP&A Manager to lead financial planning and analysis for our U.S. business. This is a highly visible, hands-on role responsible for translating financial data into clear insights that guide strategic and operational decisions.
@@ -486,3 +353,136 @@ Join Foxit
 Help shape how millions of software buyers discover, evaluate, and understand Foxit in an AI-first search environment.
 
 If you are excited by the future of AI search, customer advocacy, digital PR, and brand visibility—and want to build programs that influence how a global technology company is represented across the digital ecosystem—we encourage you to apply.",8870,https://jobs.lever.co/foxitsoftware/69e2d634-ae9c-4fd1-a7f0-0f50a912efb1,,https://www.linkedin.com/jobs/view/4438283663,2026-09-17,25,among first 25,,matched,title,2026-09-27,2026-09-27T02:46:54,2026-10-16,,29,startDate+linkedin,true,0,,,,,FoxitOne Marketing,2026-09-17,,true,,,,,,
+74afce9b-9887-4010-a963-8fd0971d54d0,Data Engineer-Marketing Technology,Foxit,foxitsoftware,Full time,Posted 1 Days Ago,,,"Alpharetta, GA",1,"Alpharetta, GA",false,,United States,,0,"Data Engineer, Marketing Technology
+
+About Us:
+
+Foxit is remaking the way the world interacts with documents through advanced PDF technology and tools. We are a leading global software provider of fast, affordable, and secure PDF solutions that are used by millions of people worldwide. Winner of numerous awards, Foxit has customers in more than 200 countries and global operations. We have a complete product line and an exciting and aggressive development schedule. Our proven PDF technology is disrupting the status quo establishment and has accelerated our company growth. We are proud to list as customers Google and Amazon, and with your skills and help, we plan to add many more. Foxit has offices all over the world, including locations in the US, Asia, Europe, and Australia.
+
+For more information, visit us @ www.foxit.com
+
+About the Role
+
+We are looking for an experienced Data Engineer to own the data pipelines that power our go-to-market systems. While this role is aligned to the marketing department's priorities, you will work day-to-day within our Business Applications & Data Analytics team, following the team's established development standards, architecture patterns, and code review processes. This ensures the pipelines you build are consistent with our broader data platform and maintainable by the wider engineering team.
+
+Your primary focus will be marketing-related data needs - working closely with demand gen, product marketing, sales operations, and digital teams to understand their requirements, then building and maintaining the pipelines and integrations that deliver on them.
+
+This is a hands-on execution role. You will build and operate the data infrastructure that connects our marketing automation platform (HubSpot), CRM (Salesforce), data warehouse (Databricks), licensing system, payment platform, and other source systems. Your work will directly support marketing's ability to segment audiences, measure attribution, and run data-driven campaigns at scale.
+
+What You'll Do
+
+Data Pipeline Development & Operations
+
+• Design, build, and maintain ETL/ELT pipelines, building upon and further optimizing our existing medallion architecture (Bronze → Silver → Gold) to move data between source systems (Salesforce CRM, HubSpot, NetSuite, Stripe, DealHub, LMS) and our Databricks data warehouse.
+
+• Build pipelines using PySpark and SQL in Databricks notebooks, following established development standards for naming, project structure, and layer-appropriate transformations.
+
+• Own the data sync layer between Databricks and HubSpot — enrichment flows inbound to HubSpot (license status, renewal dates, subscription state, firmographic data) and marketing engagement data flowing back to Databricks (email events, workflow enrollment, lifecycle changes).
+
+• Build and maintain Exchange layer pipelines that curate data for external system consumption, formatting and validating data to meet target system requirements.
+
+• Build and maintain scheduled batch jobs and event-driven integrations using APIs (REST, webhooks, OAuth).
+
+• Monitor pipeline health, set up alerting for failures and data quality degradation, and own incident response when syncs break.
+
+• Maintain documentation of data flows, integration architecture, and troubleshooting runbooks.
+
+Data Modeling & Quality
+
+• Build and maintain dimensional models in Databricks (fact tables, dimension tables, bridge tables) following our data warehouse object type definitions and naming standards.
+
+• Work in collaboration with stakeholders and data analysts to build curated, business-ready tables and datamarts that apply business logic, KPI calculations, and aggregations optimized for analytics and campaign activation.
+
+• Implement identity resolution and deduplication logic to produce unified customer profiles from multiple source systems.
+
+• Establish data validation rules, quality checks, and monitoring to ensure accuracy and freshness of data flowing into marketing systems.
+
+• Normalize disparate data sources into clean centralized schemas with proper type enforcement, deduplication, and null handling.
+
+Marketing Data & Segmentation Support
+
+• Ensure the data infrastructure supports audience segmentation, including firmographic, behavioral, and engagement signals.
+
+• Build the data layer that powers lifecycle marketing - triggered campaigns, dynamic journey branching, and personalization based on enriched customer profiles.
+
+• Support marketing and demand gen teams with reliable, accessible data for building audience targets in HubSpot.
+
+• Maintain data flows for email deliverability, subscription management, and suppression list synchronization.
+
+Integration Development
+
+• Build and maintain API integrations between marketing, sales, and operational systems using Python and SQL.
+
+• Implement field-level transformation logic, sync orchestration, and error handling for system-to-system data flows.
+
+• Support website form and lead capture data flows - ensuring clean handoff from web properties into HubSpot and Databricks.
+
+• Work with third-party enrichment providers (firmographic, intent, technographic) to integrate enrichment data into automated workflows.
+
+Reporting & Attribution
+
+• Build and maintain the data infrastructure that supports campaign attribution, channel performance analysis, and funnel reporting.
+
+• Ensure accurate data for conversion analytics, lead source tracking, and marketing ROI measurement.
+
+• Support centralized reporting by routing marketing engagement data back into Databricks for cross-functional analysis.
+
+What You Bring
+
+Required:
+
+• 5+ years of experience in data engineering, with hands-on pipeline development and production operations.
+
+• Strong proficiency in SQL and Python/PySpark for data pipeline development.
+
+• Experience building and maintaining ETL/ELT pipelines using Databricks, dbt, Airflow, Azure Data Factory, or equivalent.
+
+• Hands-on experience with cloud data platforms - Databricks, Snowflake, BigQuery, or Redshift.
+
+• Solid understanding of dimensional data modeling - fact tables, dimension tables, schema design, and data warehouse concepts.
+
+• Experience with medallion or layered data architectures (raw → cleansed → business-ready), Kimball-style star schemas, and one-big-table approaches to data modeling.
+
+• Working knowledge of API integration patterns - REST, webhooks, OAuth, batch sync architectures.
+
+• Experience with CRM platforms (Salesforce, HubSpot, or similar), marketing automation systems, and CPQ/quoting tools (DealHub or similar).
+
+• Bachelor's degree in Computer Science, Information Systems, or equivalent industry experience.
+
+Preferred:
+
+• Experience with Databricks (Delta Lake, PySpark, Unity Catalog).
+
+• Familiarity with HubSpot APIs and data model.
+
+• Experience with identity resolution and customer data deduplication across multiple source systems.
+
+• Exposure to marketing data concepts — lead scoring, audience segmentation, campaign attribution, lifecycle stages.
+
+• Experience with Azure cloud services (Azure Functions, Azure DevOps, Azure Data Factory).
+
+• Knowledge of data security and privacy practices, particularly regarding PII handling.
+
+• Experience with code review processes and development standards compliance in a collaborative data engineering team.
+
+What Sets You Apart
+
+• You've built and operated production data pipelines that marketing teams depend on daily - you understand the impact of data freshness and accuracy on campaign execution.
+
+• You're comfortable working within a marketing department and can translate data requests from non-technical stakeholders into pipeline requirements.
+
+• You take ownership of pipeline reliability - building monitoring and alerting proactively rather than waiting for someone to report a problem.
+
+• You've worked with multiple data sources and know how to handle the messiness of real-world identity resolution and deduplication.
+
+Why Join Us
+
+• High-impact work. Your pipelines will directly power how our marketing engine operates and scales.
+
+• Modern stack. Databricks, Delta Lake, PySpark, HubSpot, Python, SQL - you'll work with current tools, not legacy systems.
+
+• Room to build. We're investing in our data infrastructure as part of a major platform migration, and you'll shape how it's built.
+
+• Collaborative environment. You'll work closely with marketing, sales, and IT teams - visible, cross-functional work without being siloed.
+
+Foxit is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",8584,https://jobs.lever.co/foxitsoftware/74afce9b-9887-4010-a963-8fd0971d54d0,,https://www.linkedin.com/jobs/view/4479894184,2026-10-15,145,145 applicants,,matched,,2026-10-16,2026-10-16T12:07:48,2026-10-16,,1,startDate+linkedin,true,0,,,,,,2026-10-15,,false,,,,,,
