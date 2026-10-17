@@ -1,9 +1,9 @@
 {
  "label": "webull_us_fulltime",
- "rows": 20,
- "kept": 20,
+ "rows": 19,
+ "kept": 19,
  "new": 0,
- "ghosts_dropped": 0,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,7 +11,7 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 20,
+ "state_rows": 19,
  "banded": 0,
  "lca_pools": 18,
  "snapshot": "2026-10-17"

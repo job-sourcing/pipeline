@@ -5795,34 +5795,6 @@ Preferred Qualifications
 - Familiarity with video generation or diffusion-based generative models.
 - Experience with large-scale model training.
 - Solid programming and engineering skills, with experience building training or evaluation pipelines for ML models.",2697,https://joinbytedance.com/search/7533299082606332168,,,,,,,not_checked,,2026-09-19,,2026-10-17,,,,true,0,,,,,R&D,,,,84,200640,263800,340000,subset,Research Scientist
-A250850,Backend Software Engineer Graduate (Platform) - 2027 Start,bytedance,ByteDance,Full time,,,,New York,1,New York,false,,United States,,0,"The DCS platform team's goal is to build all the necessary and advanced tooling to support full-lifecycle operation and management of domestic and overseas data centers, covering data center infrastructure operation and maintenance, server delivery, server operation, asset and resource management, platform tooling, as well as cloud services and server system services.
-
-Our vision is to provide highly available, stable, high-performance, and cost-effective computing resources for all business lines of the company.
-
-We are looking for talented individuals to join our team. As a graduate, you will get opportunities to pursue bold ideas, tackle complex challenges, and unlock limitless growth.
-
-Successful candidates must be able to commit to an onboarding date by the end of the year. Please state your availability and graduation date clearly in your resume.
-
-Candidates can apply to a maximum of two positions and will be considered for jobs in the order you apply. The application limit is applicable to our Company and its affiliates' jobs globally. Applications will be reviewed on a rolling basis - we encourage you to apply early.
-
-Role Descriptions
-We are looking for a self-motivated software engineer. Your responsibilities will include:
-- Build platforms, systems and services for internal and external teams to interact with the large scale production systems.
-- Build tools to improve engineering productivity.
-- Design, develop, test, deploy, maintain and improve software.
-- Bring new ideas and technologies into our platform, innovate and iterate.
-
-Minimum Qualifications
-- Individuals who are completing or have recently completed a Bachelor's or Master's degree in Computer Science, a similar technical field of study, or equivalent practical experience
-- Coursework, academic projects, or internship experience in two or more of the following: web application development, Unix/Linux environments, distributed and parallel systems, networking systems, or building software systems
-- Strong foundational programming and problem-solving skills, with the ability to learn new systems and tools quickly
-- Genuine interest in IT Operations concepts such as Discovery, Insights, and Configuration Management (DICM), IT Operations Management (ITOM), or IT Service Management (ITSM); prior coursework or exposure is a plus but not required
-
-Preferred Qualifications
-- Exposure to GPU computing, big data technologies (Hadoop/Kafka/Apache), or streaming/computing concepts through coursework, internships, or personal projects
-- Software development experience with Golang or Python, through coursework, internships, or personal projects
-- Familiarity with the web stack, including protocols and basic web server concepts
-- Experience troubleshooting technical issues in an academic, internship, or personal project setting",2838,https://joinbytedance.com/search/7667267464923171077,,,,,,,not_checked,,2026-09-19,,2026-10-17,,,,true,0,,,,,R&D,,,,74,153500,184345,237750,subset,Backend Software Engineer
 A226706B,Senior Software Engineer -  AI Compute Infrastructure,bytedance,ByteDance,Full time,,,,Seattle,1,Seattle,false,,United States,,0,"About the Team
 The Inference Infrastructure team is the creator and open-source maintainer of AIBrix, a Kubernetes-native control plane for large-scale LLM inference. We are part of ByteDance’s Core Compute Infrastructure organization, responsible for designing and operating the platforms that power microservices, big data, distributed storage, machine learning training and inference, and edge computing across multi-cloud and global datacenters.
 
@@ -5975,34 +5947,6 @@ Minimum Qualifications
 Preferred Qualifications
 - Good understanding of IPv6 and IPv4-IPv6 co-existence technologies.
 - Programming/scripting in Python or other languages.",2457,https://joinbytedance.com/search/7670285027366291717,,https://www.linkedin.com/jobs/view/4450205280,2026-09-09,116,116 applicants,,matched,title,2026-09-19,2026-09-19T07:04:27,2026-10-17,,38,startDate+linkedin,true,0,,,,,R&D,2026-09-09,,false,4,220122,266500,305500,subset,Network Engineer
-A103573B,Backend Software Engineer Graduate (Platform) - 2027 Start,bytedance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"The DCS platform team's goal is to build all the necessary and advanced tooling to support full-lifecycle operation and management of domestic and overseas data centers, covering data center infrastructure operation and maintenance, server delivery, server operation, asset and resource management, platform tooling, as well as cloud services and server system services.
-
-Our vision is to provide highly available, stable, high-performance, and cost-effective computing resources for all business lines of the company.
-
-We are looking for talented individuals to join our team. As a graduate, you will get opportunities to pursue bold ideas, tackle complex challenges, and unlock limitless growth.
-
-Successful candidates must be able to commit to an onboarding date by the end of the year. Please state your availability and graduation date clearly in your resume.
-
-Candidates can apply to a maximum of two positions and will be considered for jobs in the order you apply. The application limit is applicable to our Company and its affiliates' jobs globally. Applications will be reviewed on a rolling basis - we encourage you to apply early.
-
-Role Descriptions
-We are looking for a self-motivated software engineer. Your responsibilities will include:
-- Build platforms, systems and services for internal and external teams to interact with the large scale production systems.
-- Build tools to improve engineering productivity.
-- Design, develop, test, deploy, maintain and improve software.
-- Bring new ideas and technologies into our platform, innovate and iterate.
-
-Minimum Qualifications
-- Individuals who are completing or have recently completed a Bachelor's or Master's degree in Computer Science, a similar technical field of study, or equivalent practical experience
-- Coursework, academic projects, or internship experience in two or more of the following: web application development, Unix/Linux environments, distributed and parallel systems, networking systems, or building software systems
-- Strong foundational programming and problem-solving skills, with the ability to learn new systems and tools quickly
-- Genuine interest in IT Operations concepts such as Discovery, Insights, and Configuration Management (DICM), IT Operations Management (ITOM), or IT Service Management (ITSM); prior coursework or exposure is a plus but not required
-
-Preferred Qualifications
-- Exposure to GPU computing, big data technologies (Hadoop/Kafka/Apache), or streaming/computing concepts through coursework, internships, or personal projects
-- Software development experience with Golang or Python, through coursework, internships, or personal projects
-- Familiarity with the web stack, including protocols and basic web server concepts
-- Experience troubleshooting technical issues in an academic, internship, or personal project setting",2838,https://joinbytedance.com/search/7667269919588321541,,,,,,,not_checked,,2026-09-19,,2026-10-17,,,,true,0,,,,,R&D,,,,74,153500,184345,237750,subset,Backend Software Engineer
 A59236,Senior Research Scientist/Engineer - AI Infrastructure ,bytedance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"We are seeking an experienced Research Scientist or Engineer to help define and build the next generation of AI infrastructure. In this role, you will work at the intersection of large-scale systems, AI, and emerging hardware to design infrastructure that enables reliable, efficient, and scalable AI workloads at ByteDance.
 
 You will work closely with tech leaders, architects, and product teams to translate evolving AI requirements into robust infrastructure architectures. The role involves identifying emerging trends in AI algorithms and systems, designing scalable system architectures, and driving innovations that improve performance, reliability, and cost efficiency across the AI stack.

@@ -3956,3 +3956,69 @@
 <li>Culturally diverse, progressive atmosphere</li>
 </ul>
 <p>Faraday Future is an equal opportunity employer and does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status.</p>",4748,https://job-boards.greenhouse.io/faradayfuture/jobs/8035023003,,,,,,,not_checked,,2026-10-16,,2026-10-17,,,,true,0,,,,,,,,,,,,,,
+1651,Part time Regional Sales Representative,Faraday Future,Faraday Future,,Posted 1 Days Ago,,,"Bay Area, California, United States; El Segundo, California, United States; New York, New York, United States; San Jose, California, United States",4,"Bay Area, California, United States; El Segundo, California, United States; New York, New York, United States; San Jose, California, United States; New York ; Remote; San Jose, CA",true,,United States,,0,"<p><strong><u>The Company:</u></strong></p>
+<p>FF Robotics Ecosystem Inc. (Nasdaq: FFR) is a U.S.-based embodied AI robotics ecosystem company. Through EAI Devices, the EAI Brain and Developer Platform, EAI Data, and Industry Productivity Solutions, FFR is building its ""Four-Core Full-Stack AI"" Ecosystem. With its ""One-Brain Multi-Form Multi-Capability"" approach, FFR is leading the rapid growth of the U.S. robotics industry. FFR is also the first company in the U.S. to deliver both humanoid and bionic robots.</p>
+<p><strong><u>Your Role: </u></strong></p>
+<p>FF Robotics is seeking motivated <strong>part-time Regional Sales Representatives</strong> to introduce robotics and Physical AI products to education and training organizations. Through the M-Cube Mentor–Mentee Program, representatives receive product training and collaborate with experienced sales mentors to build trusted customer relationships and support qualified sales conversion.</p>
+<p><strong>Education-sector sales are the primary focus, including K–12 schools, school districts, private schools, STEM learning centers, and other education providers. Other qualified B2B opportunities are also welcome.</strong></p>
+<p><strong>Program: </strong>FF M-Cube | Starry Sky Initiative</p>
+<p><strong>Employment Type: </strong>Part-Time</p>
+<p><strong>Locations: </strong>Los Angeles / El Segundo, San Jose / Bay Area, Dallas–Fort Worth, Orlando, Pittsburgh, New York City<br><br><strong>Key Responsibilities:</strong></p>
+<ul>
+<li>Identify prospective customers at private schools, school districts, tutoring and training centers, STEM learning programs, and after-school organizations.</li>
+<li>Build trusted relationships with education decision-makers and purchasing contacts.</li>
+<li>Introduce FF Robotics solutions, assess customer needs, and arrange product demonstrations.</li>
+<li>Work with regional managers and mentors to develop proposals, follow up with customers, and support qualified sales conversion.</li>
+<li>Generate legitimate leads through professional networks, referrals, LinkedIn, and local education communities.</li>
+<li>Maintain accurate customer and opportunity records, and complete required sales and product training.</li>
+</ul>
+<p><strong><u>Preferred Qualifications:<br></u></strong></p>
+<ul>
+<li>Experience in education, tutoring, training services, enrollment, account management, or customer-facing sales</li>
+<li>Connections with school and educational organization decision-makers are a plus</li>
+<li>Strong communication, follow-through, and relationship-building skills</li>
+<li>Self-directed and comfortable with flexible part-time work; robotics sales experience is not required</li>
+</ul>
+<p><span style=""text-decoration: underline;""><strong>Salary Range: </strong></span></p>
+<p>$16 - $20/hour depends on location, plus sales commission</p>
+<p>Faraday Future is an equal opportunity employer and does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status.</p>
+<p> </p>",3107,https://job-boards.greenhouse.io/faradayfuture/jobs/8035890003,,,,,,,not_checked,,2026-10-17,,2026-10-17,,,,true,0,,,,,,,,,,,,,,
+1652,SDK Platform Engineer,Faraday Future,Faraday Future,,Posted Today,,,"El Segundo, California, United States",1,"El Segundo, California, United States",false,,United States,,0,"<p><strong><u>Your Role: </u></strong></p>
+<p>This is a hardware-software integration role on our embodied-AI robotics platform. You will develop and validate our robot SDK across humanoid and quadruped robots from multiple vendors, own edge-side integration and hardware bring-up (compute boards, sensors and buses, on-device inference), and build the developer platform and developer tools (Skill Store, Console, and content creation tools) end to end, from the web frontend and backend services through to verification on real robots. As the roadmap advances, you will also build simulation environments and train, evaluate, and deploy motion policies on real robots. Every interface you write ends up running on real hardware and being called by third-party developers, so a success return code is never our definition of done.</p>
+<p><strong><u>Basic Qualifications:</u></strong></p>
+<ul>
+<li>Bachelor's degree or above in Computer Science, Electrical Engineering, Automation, Robotics, Mathematics, or a related field, or equivalent professional experience</li>
+<li>Experience building software that other people depend on (SDKs, libraries, APIs) or embedded / hardware-software systems. No minimum years required; new graduates with strong hands-on embedded or robotics project work are welcome to apply</li>
+<li>Proven knowledge + expertise, and passion for robotics software, hardware-software integration, and developer platforms</li>
+<li>Top-notch Python or C / C++ skills, at the level of production code with tests</li>
+<li>Strong familiarity with Linux development and deployment (systemd, networking, log forensics) and at least one robotics middleware or communication stack (ROS 2 / DDS / MQTT / zenoh / gRPC)</li>
+<li>Hands-on with real devices: able to bring up hardware, integrate vendor protocols, and diagnose failures on site</li>
+</ul>
+<p><strong><u>Preferred Qualifications:</u></strong></p>
+<ul>
+<li>Proven expertise with unified abstraction layers over multi-vendor hardware, and with conformance or certification test suites that outside parties have to pass</li>
+<li>A diverse skillset including embedded debugging (I2C / SPI / UART / CAN / USB, logic analyzer, oscilloscope), edge-AI deployment (quantization, ONNX / TensorRT / NPU), and service operations (containers, CI/CD, reverse proxy, monitoring)</li>
+<li>A wide range of experience with robot simulation (MuJoCo / Isaac / Gazebo), reinforcement or imitation learning carried through to a physical robot, motion retargeting, or humanoid whole-body control</li>
+<li>Experience with developer platforms, SDK releases, documentation sites, or app and plugin marketplaces</li>
+<li>Full-stack web development experience for the developer platform and tools: frontend (React / TypeScript or similar) and backend services and APIs (Python / FastAPI, Node.js, or similar) backed by a relational database such as PostgreSQL</li>
+<li>Experience shipping production web products: accounts and sign-in (OAuth / OIDC), file and package upload / download, usage quotas, cloud deployment (AWS, object storage), and frontend testing</li>
+<li>Rust or C++ experience (some runtime components are written in Rust / C++)</li>
+<li>Comfortable working from schematics and datasheets; power, battery management, or thermal experience is a plus</li>
+<li>Open-source contributions, technical writing, or developer-community experience</li>
+<li>A habit of verifying before concluding, and a conservative approach to anything that moves real hardware</li>
+<li>A creative curiosity, collaborative ethic, hardworking enthusiasm, and driving personal vision</li>
+<li>Excellent communication skills and team-working tendencies</li>
+<li>A penchant for multi-tasking and self-starting</li>
+<li>A genuine fascination for the robotics and embodied-AI field and a commitment to global change</li>
+<li>A true sense of determination… and hopefully a sense of humor</li>
+</ul>
+<p><span style=""text-decoration: underline;""><strong>Salary Range:</strong></span></p>
+<p>$80,000 - $120,000</p>
+<p><strong> <u>Perks + Benefits</u></strong></p>
+<ul>
+<li>Healthcare + dental + vision benefits (Free for you/discounted for family)</li>
+<li>401(k) options</li>
+<li>Casual dress code + relaxed work environment</li>
+<li>Culturally diverse, progressive atmosphere</li>
+</ul>
+<p>Faraday Future is an equal opportunity employer and does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status.</p>",4554,https://job-boards.greenhouse.io/faradayfuture/jobs/8036218003,,https://www.linkedin.com/jobs/view/4480806546,2026-10-17,25,among first 25,,matched,,2026-10-17,2026-10-17T11:20:11,2026-10-17,,0,startDate+linkedin,true,0,,,,,,2026-10-17,,true,,,,,,

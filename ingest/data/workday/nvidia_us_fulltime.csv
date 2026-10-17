@@ -1778,85 +1778,6 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",6263,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Software-Program-Manager---CSP-Engagements_JR2013691,,https://www.linkedin.com/jobs/view/4395475643,2026-09-06,53,53 applicants,-4,matched,reqId,2026-09-09,2026-09-15T04:56:51,2026-10-17,,41,startDate+linkedin,true,0,2026-10-08,2026-09-14,,Regular Employee,Program Manager,2026-09-06,reqId,false,68,182374,192754,219523,subset+state,Program Manager
-JR1978573,Principal Firmware Engineer - Data Center Server Management,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-09-14,33,"US, CA, Santa Clara",2,"US, CA, Santa Clara; US, Remote",true,CA,United States,ab40a98049581037a3680ec60ea54842,5,"NVIDIA’s invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern deep learning — the next era of computing — with the GPU acting as the brain of computers, robots, and self-driving cars that can perceive and understand the world. Today, we are increasingly known as “the AI computing company.” We're looking to grow our company and establish teams with the most thoughtful people in the world. NVIDIA GH200 superchip provides performance and productivity required for strong scaling for HPC and generative AI workload. Scale out is inherent to design of this massive superchip. We are looking for expert engineers to come and help design rack level solutions for next generation scaling AI supercomputing platforms.
-
-We are looking for a strong technical architect to own end to end manageability architecture for these products in data centers. You will work with various component leads internally and externally, drive customer use cases, align architecture with customer requirements and release best products to market.
-
-Join us at the forefront of technological advancement.
-
-What you’ll be doing:
-
-•
-Drive server management for large clusters and data centers deploying GPUs and Grace solution from Nvidia.
-
-•
-Work with data center architects and cloud customers to narrow down on requirements for implementation to ensure speed of light product development.
-
-•
-Work with internal teams to make sure requirements are designed and implemented in right way with each firmware and software module
-
-•
-Collaborate with other leads to design & build data center health management workflow.
-
-•
-Drive reliability and optimization in firmware architecture from a data center view point.
-
-•
-Work closely with cluster bring up team and resolve issues at Speed of Light
-
-•
-Own firmware delivered to data centers in terms of quality, reliability and telemetry performance.
-
-What we need to see:
-
-•
-15+ years of relevant experience working on server firmware (BMC) and platform software development
-
-•
-BS, MS, or PhD in EE/CS or related field of education or equivalent experience
-
-•
-Hands on experience with data center health management workflow. Proven record of delivering server firmware for large data centers..
-
-•
-Strong knowledge of data center management, server architecture and server manageability in data centers and strong and demonstrable skill in C/C++ and Python
-
-•
-Experience programming and debugging skills for server platforms.
-
-•
-Experience in SCM (e.g. Git, Perforce) and project management tools like Jira.
-
-•
-You should possess excellent written and oral communication skills, good work ethics, high sense of team-work, love to produce quality work and commitment to finish your tasks every single day.
-
-•
-You are a self-starter who loves to find creative solutions to complicated problems and hands on with coding.
-
-Ways to stand out from the crowd:
-
-•
-Hands on experience with data center health management
-
-•
-Hands on with x86 or ARM system architecture.
-
-•
-Proven technical leaders to drive large complex problem with 50+ engineers working
-
-NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people on the planet working for us. If you're creative and autonomous, we want to hear from you!
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 272,000 USD - 431,250 USD for Level 6, and 320,000 USD - 488,750 USD for Level 7.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until September 18, 2026.
-
-This posting is for an existing vacancy.
-
-NVIDIA uses AI tools in its recruiting processes.
-
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4353,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Principal-Platform-Software-Engineer---Data-Center-Server-Management_JR1978573,,https://www.linkedin.com/jobs/view/4395476369,2026-09-06,26,26 applicants,-8,matched,reqId,2026-09-09,2026-09-15T05:07:06,2026-10-17,,41,startDate+linkedin,true,0,2026-10-06,2026-09-18,,Regular Employee,Engineering,2026-09-06,reqId,false,,,,,,
 JR2018113,Senior Network Reliability Engineer - DGX Cloud,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-09-10,37,"US, CA, Santa Clara",2,"US, CA, Santa Clara; US, Remote",true,CA,United States,2f2764b3a82910064296831695150000,5,"NVIDIA is looking for a Senior Network Reliability Engineer to support and maintain our cloud and datacenter network infrastructures. This network serves the needs across the whole software stack for NVIDIA, from Graphics Drivers to Autonomous Vehicles and Artificial Intelligence.
 
 In this role, the Senior Network Operations Engineer will remediate critical alerts within defined SLAs, triage production impacting network incidents, and interact with internal customers on network related issues. They will also be responsible for engaging with external vendors to remediate hardware and software issues, and participate in project related work such as network device upgrades and capacity augmentations. An ideal candidate will possess a wide range of skills, including alert monitoring & resolution in large-scale networks and CSP environments, outstanding troubleshooting skills, understanding of L3 underlay networks, and network protocol knowledge in large multi-vendor infrastructures.
@@ -6601,7 +6522,7 @@ This posting is for an existing vacancy.
 
 NVIDIA uses AI tools in its recruiting processes.
 
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4212,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Distributed-Software-Engineer--Golang---DGX-Cloud_JR2024570-1,,https://www.linkedin.com/jobs/view/4458907228,2026-08-28,25,among first 25,-16,matched,reqId,2026-09-09,2026-09-15T05:04:18,2026-10-17,,50,startDate+linkedin,true,1,2026-10-06,2026-09-17,,Regular Employee,Engineering,2026-08-28,reqId,true,553,173229,201467,226158,subset+state,Software Engineer
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4212,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Distributed-Software-Engineer--Golang---DGX-Cloud_JR2024570-1,,https://www.linkedin.com/jobs/view/4458907228,2026-08-28,25,among first 25,-16,matched,reqId,2026-09-09,2026-09-15T05:04:18,2026-10-17,,50,startDate+linkedin,true,1,2026-10-16,2026-09-17,,Regular Employee,Engineering,2026-08-28,reqId,true,553,173229,201467,226158,subset+state,Software Engineer
 JR2021102,Senior System Software Engineer - AV Platform,NVIDIA,2100 NVIDIA USA,Full time,Posted 3 Days Ago,2026-08-29,49,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,2f2764b3a82910064296831695150000,5,"The Autonomous Vehicles System Software Team is looking for a hands-on System Software Engineer. As part of our team, you will work on our Autonomous Driving Platform software, implementing performant and scalable solutions for data collections and autonomous vehicle fleets. Our team is responsible for developing platform and middleware features for self-driving cars. This includes software that interacts with various sensors including Cameras, LIDAR, RADAR, GPS, IMU, Vehicle CAN etc. We are seeking candidates with interests in inventing, developing, and maintaining application framework and tools on multi-computer and heterogeneous architectures. The role encompasses working with various teams across the stack, from platform and embedded software to cloud infrastructure, underpinned by safety and performance. It extends an opportunity to contribute to the technology that will drive the cars of the future!
 
 What you will be doing:
@@ -7043,7 +6964,7 @@ This posting is for an existing vacancy.
 
 NVIDIA uses AI tools in its recruiting processes.
 
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4266,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-WA-Redmond/Engineering-Manager--Reliability-Engineering-Flywheel---EDA-Infrastructure_JR2026305,,https://www.linkedin.com/jobs/view/4469070524,2026-09-23,25,among first 25,1,matched,reqId,2026-09-23,2026-09-26T05:32:45,2026-10-17,,25,startDate,false,0,2026-09-29,2026-09-26,,Management,Engineering,2026-09-22,,true,12,208125,233628,244442,subset,"Manager, Engineering"
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4266,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-WA-Redmond/Engineering-Manager--Reliability-Engineering-Flywheel---EDA-Infrastructure_JR2026305,,https://www.linkedin.com/jobs/view/4469070524,2026-09-23,25,among first 25,1,matched,reqId,2026-09-23,2026-09-26T05:32:45,2026-10-17,,25,startDate,false,0,2026-10-16,2026-09-26,,Management,Engineering,2026-09-22,,true,12,208125,233628,244442,subset,"Manager, Engineering"
 JR2026246,"Senior Account Manager, Cloud Service Provider – Networking",NVIDIA,2100 NVIDIA USA,Full time,Posted 3 Days Ago,2026-09-22,25,"US, WA, Seattle",2,"US, WA, Seattle; US, CA, Santa Clara",false,WA;CA,United States,2f2764b3a82910064296831695150000,5,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
 
 At NVIDIA, we are seeking a Senior Account Manager who will bring technical and business insight to help grow the Networking business with Cloud Service Providers, leveraging NVIDIA’s fast-growing Datacenter Networking Business.
@@ -11120,7 +11041,7 @@ This posting is for an existing vacancy.
 
 NVIDIA uses AI tools in its recruiting processes.
 
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",6599,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Storage-Software-Engineer---DGX-Cloud_JR2026042,,,,,,,not_checked,,2026-09-21,,2026-10-17,,27,startDate,false,0,2026-10-06,2026-09-24,,Regular Employee,Engineering,2026-09-20,,false,553,173229,201467,226158,subset+state,Software Engineer
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",6599,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Storage-Software-Engineer---DGX-Cloud_JR2026042,,,,,,,not_checked,,2026-09-21,,2026-10-17,,27,startDate,false,0,2026-10-16,2026-09-24,,Regular Employee,Engineering,2026-09-20,,false,553,173229,201467,226158,subset+state,Software Engineer
 JR2025102,Head of Infrastructure Security Engineering - EDA Clusters,NVIDIA,2100 NVIDIA USA,Full time,Posted 6 Days Ago,2026-09-15,32,"US, CA, Remote",5,"US, CA, Remote; US, MA, Westford; US, TX, Austin; US, WA, Remote; US, NC, Durham",true,CA;MA;TX;WA;NC,United States,2f2764b3a82910064296831695150000,5,"Securing NVIDIA’s EDA clusters is not a matter of deploying the standard security stack. These workloads are too large, too long-running, and too performance-sensitive for the off-the-shelf playbook to simply apply. That constraint is the job. We’re hiring an engineering leader to build and run Infrastructure Security Engineering for EDA Clusters: the team responsible for implementing security controls across the compute, storage, and networking that NVIDIA’s hardware engineers design silicon on, spanning on-prem data centers and multi-cloud environments. You’ll operate as the peer counterpart to NVIDIA’s company-wide security organization and to hardware infrastructure engineering, translating enterprise security intent into controls that hold up at EDA scale without slowing chip design down.
 
 Much of this is a build, not a maintain. You’ll have the authority to decide where standard tooling applies, where it actively cannot, and what NVIDIA engineers instead then lead a team to do it. If your depth is in large-scale networking and compute infrastructure at a hyperscaler, a security product company, or anywhere fleets and fabrics are the day job and you’ve carried real accountability for the security properties of those systems, you are exactly who we want to talk to. We don’t expect you to arrive fluent in every security product category; we do expect you to own security outcomes from day one and to acquire the remaining domain breadth fast. Strong infrastructure mastery plus sharp security instincts beats a broad product résumé here. This is a role for someone who believes security engineering is engineering: automation, instrumentation, and secure-by-default infrastructure not tickets, exceptions, and spreadsheets.
@@ -11277,7 +11198,7 @@ This posting is for an existing vacancy.
 
 NVIDIA uses AI tools in its recruiting processes.
 
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4571,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Principal-Block-File-Storage-Software-Engineer--Linux---DGX-Cloud_JR2024421,,https://www.linkedin.com/jobs/view/4458321009,2026-08-27,25,among first 25,-18,matched,reqId,2026-09-09,2026-09-15T05:01:20,2026-10-17,,51,startDate+linkedin,true,0,2026-10-02,2026-09-18,,Regular Employee,Engineering,2026-08-27,reqId,true,553,173229,201467,226158,subset+state,Software Engineer
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4571,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Principal-Block-File-Storage-Software-Engineer--Linux---DGX-Cloud_JR2024421,,https://www.linkedin.com/jobs/view/4458321009,2026-08-27,25,among first 25,-18,matched,reqId,2026-09-09,2026-09-15T05:01:20,2026-10-17,,51,startDate+linkedin,true,0,2026-10-16,2026-09-18,,Regular Employee,Engineering,2026-08-27,reqId,true,553,173229,201467,226158,subset+state,Software Engineer
 JR1996987,Senior Systems Software Engineer - GPU Performance at Scale,NVIDIA,2100 NVIDIA USA,Full time,Posted 6 Days Ago,2026-09-13,34,"US, CA, Santa Clara",5,"US, CA, Santa Clara; US, NC, Remote; US, TX, Remote; US, Remote; US, CA, Remote",true,CA;NC;TX,United States,3403860341171001f57d5c603f290000,5,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
 
 We are looking for a dedicated engineer for the Senior Systems Software Engineer role, focusing on GPU Performance at Scale. At NVIDIA, this role is uniquely positioned to drive innovation in AI and GPU computing. You will contribute to world-class computing hardware and software, fueling groundbreaking advancements in artificial intelligence. You will provide insights on large-scale system composition and tuning mechanisms for high-performance compute runs. Collaborate with researchers, developers, and customers to craft improved workflows and develop new, leading solutions. Engage with HPC, OS, CPU, GPU compute, and systems specialists to architect, build, and optimize large-scale performance platforms.
@@ -27461,80 +27382,6 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3809,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-MA-Westford/Senior-Physical-Design-Engineer_JR2012396,,https://www.linkedin.com/jobs/view/4437525685,2026-09-11,41,41 applicants,7,matched,reqId,2026-09-09,2026-09-13T12:24:07,2026-10-17,,43,startDate,true,0,2026-10-02,2026-09-08,,Regular Employee,Engineering,2026-09-04,,false,7,116171,148054,171787,subset+state,Engineer Senior Physical Design
-JR2013348,Senior VLSI CAD Software Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted 21 Days Ago,2026-09-04,43,"US, CA, Santa Clara",6,"US, CA, Santa Clara; US, MA, Westford; US, TX, Austin; US, OR, Hillsboro; US, NC, Durham; US, NY, New York",false,CA;MA;TX;OR;NC;NY,United States,028095df097b1001ac9358c586600000,5,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. aToday, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
-
-NVIDIA is seeking a talented Software Engineer to join our small team building custom, high-impact VLSI CAD software in a technically challenging and highly visible domain. This is a full-cycle role with meaningful opportunities to contribute to architecture and design, working in a streamlined Agile environment using modern development tooling, including best-in-class AI-assistants. The successful candidate will play a key role in advancing next-generation design tools and workflows to help shape how our core product lines are designed.
-
-What you'll be doing:
-
-•
-Design, development, review, test, and support of high-capacity and high-performance chip design and visualization tools, with possible tasks ranging from modeling to algorithms
-
-•
-Writing challenging, innovative, well-designed, high-quality new code for desktop engineering applications
-
-•
-Participate in a variety of agile practices with fellow developers
-
-•
-Collaborate with internal engineering customers worldwide to envision new tools and define their requirementsbe doing, *who* they'll be working with, and *how* their work will fit into NVIDIA's work
-
-What we need to see:
-
-•
-MS CS/CPE or BS CS/CPE (or equivalent experience)
-
-•
-Minimum 10 years of experience in CAD/EDA tool development
-
-•
-Skill in CAD data structures and algorithms, especially for physical VLSI design automation
-
-•
-Expert skills in C++, Java , or C#
-
-•
-Proficiency with modern software platforms and tools (e.g. C++20, Java 21, git, IDEA/Visual Studio/CLion, unit test frameworks, CI/CD)
-
-•
-Skilled in software system architecture and Object-Oriented design
-
-•
-Desire to use sound software design principles in a modern and evolving AI environment
-
-•
-Able to adapt to the needs of our team’s growing scope and vision
-
-•
-Experience with AI-based code assistant tools
-
-Ways to stand out from the crowd:
-
-•
-Experience designing and writing code for large-scale design automation tools
-
-•
-Performance analysis and tuning experience
-
-•
-Knowledge of at least one physical CAD data model
-
-•
-Interested in VLSI chip design concepts and EDA tools
-
-NVIDIA is widely considered to be one of the technology world’s most desirable employers. And due to outstanding growth, our teams are rapidly growing. Are you passionate about becoming a part of a best-in-class team supporting the latest in GPU and AI technology? If so, we want to hear from you!
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 168,000 USD - 264,500 USD for Level 4, and 196,000 USD - 310,500 USD for Level 5.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until September 8, 2026.
-
-This posting is for an existing vacancy.
-
-NVIDIA uses AI tools in its recruiting processes.
-
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3988,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-VLSI-CAD-Software-Engineer_JR2013348,,https://www.linkedin.com/jobs/view/4395481241,2026-09-04,29,29 applicants,0,matched,reqId,2026-09-09,2026-09-13T12:20:36,2026-10-17,,43,startDate,true,0,,2026-09-08,,Regular Employee,Engineering,2026-09-04,,false,553,173229,201467,226158,subset+state,Software Engineer
 JR2025017,"Director, Global Workplace Design",NVIDIA,2100 NVIDIA USA,Full time,Posted 22 Days Ago,2026-09-03,44,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,2f2764b3a82910064296831695150000,1,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
 
 We're seeking a Global Workplace Design Director to serve as a senior leader within NVIDIA's Real Estate & Site Services (RESS) team, directing architectural, interior, furniture, and finish selections across all workplace and campus developments worldwide. This role is uniquely placed to lead creation and partner with multi-functional teams and senior RESS leadership to deliver workplaces that reflect NVIDIA's culture and operational demands globally—ensuring design consistency from concept through delivery.
@@ -31214,93 +31061,6 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",5276,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Deep-Learning-Frameworks-CUDA-Software-Engineer_JR2017369,,https://www.linkedin.com/jobs/view/4415138366,2026-09-02,32,32 applicants,2,matched,reqId,2026-09-09,2026-09-13T12:21:50,2026-10-17,2026-11-01,47,startDate,true,0,,2026-09-04,,Regular Employee,Engineering,2026-08-31,,false,553,173229,201467,226158,subset+state,Software Engineer
-JR2022830,"Senior Software Engineer, CUDA Deep Learning Systems",NVIDIA,2100 NVIDIA USA,Full time,Posted 25 Days Ago,2026-08-31,47,"US, CA, Santa Clara",3,"US, CA, Santa Clara; US, TX, Austin; US, TX, Remote",true,CA;TX,United States,2f2764b3a82910064296831695150000,5,"We are looking for an experienced and highly motivated software professional to work on pioneering initiatives and projects at the intersection of CUDA and Deep Learning Systems. As the complexity and scale of artificial intelligence continue to grow, the intersection of advanced deep learning architectures, massive-scale distributed computing, and low-level hardware optimization has never been more critical. Our team is dedicated to exploring and prototyping next-generation ideas that bridge the gap between deep learning algorithms and CUDA, pushing the boundaries of what is possible on modern accelerator architectures.
-
-Join our dynamic, research-oriented team to help unlock maximum hardware performance for emerging AI workloads. You will be a crucial member of a highly technical group exploring uncharted territories in model optimization, custom kernel development, and cluster-scale AI systems design. If you are passionate about the fundamentals of deep learning and thrive on squeezing every ounce of performance out of advanced computing systems from a single GPU to supercomputer clusters, we want you on our team!
-
-What you will be doing:
-
-•
-Explore, research, and prototype novel systems optimizations for advanced deep learning models at the intersection of high-level DL frameworks and low-level CUDA through modeling, simulation, and silicon prototyping.
-
-•
-Architect and optimize distributed computing systems that scale seamlessly from a single node to massive, cluster-scale supercomputing environments.
-
-•
-Design, implement, and optimize custom high-performance CUDA kernels tailored to emerging neural network architectures and workloads.
-
-•
-Analyze complex hardware-software interactions to identify and resolve performance bottlenecks in both training and inference pipelines.
-
-•
-Collaborate closely with AI researchers, HW and SW architects, kernel and compiler authors and CUDA driver experts to co-design systems and algorithms that improve accelerator compute utilization, memory bandwidth, cross-node network communication efficiency and programmability.
-
-•
-Develop exploratory tools and runtime systems to profile and accelerate new paradigms in deep learning.
-
-•
-Write clean, effective, and maintainable code, ensuring exploratory prototypes can smoothly transition into open-source releases, upstream framework integrations, internal tools, or closed-source commercial products.
-
-What we need to see:
-
-•
-BS, MS, or PhD degree in Computer Science, Computer Engineering, Electrical Engineering, or related field (or equivalent experience).
-
-•
-8+ years of relevant industry experience or equivalent academic experience after degree achievement.
-
-•
-Strong proficiency in C++ and Python programming.
-
-•
-Solid background in the fundamentals of Deep Learning with a focus on transformers.
-
-•
-Strong understanding of distributed computing principles, multi-node scaling, and the unique performance challenges of cluster-scale execution.
-
-•
-Proven experience in systems programming, computer architecture, and low-level systems performance optimization.
-
-•
-Familiarity with deep learning accelerator architectures such as the GPU and hands-on experience with CUDA programming, kernel optimization, and workload profiling
-
-•
-Experience profiling and optimizing generative AI models, including but not limited to, pioneering large language models.
-
-•
-Research background in machine learning systems or adjacent fields and experience profiling and optimizing innovative vision models, generative AI architectures, or diffusion models.
-
-•
-A track-record of initiative and willingness to deep-dive on problems across the stack.
-
-Ways to stand out from the crowd:
-
-•
-Deep expertise in performance internals and execution graphs of major deep learning training and inference frameworks (e.g., PyTorch, JAX, TensorRT, vLLM, sgLang, Nemo, Megatron).
-
-•
-Hands-on experience with communication libraries (e.g., NCCL, MPI, UCX) and distributed machine learning techniques (e.g., pipeline, tensor, expert parallelism).
-
-•
-Knowledge of numerical methods and low-precision arithmetic (e.g., NVFP4, MXFP4, FP8, INT8) and their impact on deep learning accuracy and performance.
-
-•
-Background in deep learning compilers and ML systems, including graph-level and codegen tools (e.g., Triton, XLA, torch.compile) and highly parallel/RL-style simulation environments.
-
-•
-Experience designing and implementing agentic AI systems applied to complex systems and infrastructure problems.
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD for Level 4, and 224,000 USD - 356,500 USD for Level 5.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until September 4, 2026.
-
-This posting is for an existing vacancy.
-
-NVIDIA uses AI tools in its recruiting processes.
-
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",5397,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Software-Engineer--CUDA-Deep-Learning-Systems_JR2022830,,https://www.linkedin.com/jobs/view/4449322527,2026-08-27,25,among first 25,-4,matched,reqId,2026-09-09,2026-09-13T12:21:31,2026-10-17,2026-11-01,51,startDate+linkedin,true,0,,2026-09-04,,Regular Employee,Engineering,2026-08-27,reqId,true,401,173239,184974,207095,subset+state,Engineer Senior Systems Software
 JR2021172,"Senior Software Engineer, CUDA Python Core Libraries",NVIDIA,2100 NVIDIA USA,Full time,Posted 25 Days Ago,2026-08-31,47,"US, CA, Santa Clara",2,"US, CA, Santa Clara; US, Remote",true,CA,United States,2f2764b3a82910064296831695150000,5,"NVIDIA’s accelerated computing platform is foundational to modern HPC and AI. At the center of this platform are CUDA Core Libraries that enable developers to build fast, reliable, and scalable GPU-accelerated software.
 
 We are hiring a Senior Software Engineer to advance the Python experience for CUDA Core Libraries. You will build Pythonic APIs, language bindings, algorithms, and runtime infrastructure on top of native C/C++ foundations. You will join the team building the foundational libraries, algorithms, and language/runtime infrastructure that make CUDA a speed-of-light experience for developers and AI coding agents alike.
@@ -31967,88 +31727,6 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4332,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Software-Engineer--CUDA-C---Core-Libraries_JR2021114,,https://www.linkedin.com/jobs/view/4437936153,2026-09-11,76,76 applicants,11,matched,reqId,2026-09-09,2026-09-13T12:20:49,2026-10-17,2026-11-01,47,startDate,true,0,,2026-09-04,,Regular Employee,Engineering,2026-08-31,,false,553,173229,201467,226158,subset+state,Software Engineer
-JR2021169,Senior Software Technical Program Driver - OEM and NCP Escalations,NVIDIA,2100 NVIDIA USA,Full time,Posted 25 Days Ago,2026-08-31,47,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,2f2764b3a82910064296831695150000,5,"We are seeking a skilled, motivated Senior Software Technical Program Driver to lead our efforts in crafting innovative compute software solutions for key sectors. Our work has made major impact in various fields, and is used across leading enterprise customers, academic institutions, start-ups, and industry. We need passionate, hard-working, and creative people to help us reach our engineering goals!
-
-What you will be doing:
-
-•
-Collaborate closely with Software Development Managers, Engineers, Product Marketing, Customer Program Management, Quality Assurance, and other logistics personnel to establish and implement streamlined processes for the development of advanced Compute software solutions for cloud service providers, automotive and OEM customers.
-
-•
-Work closely with Customers and Customer Program Managers on software issues, including technical feedback from OEMs, CSPs, and partners. Additionally, you will be responsible for the continuous improvement and maintenance of all processes related to enterprise support.
-
-•
-Lead status meetings, proactively addressing challenges, addressing customer concerns, and serving as the central point of contact for building and upholding release schedules and the prioritized release plan of record.
-
-•
-Partner with multi-functional teams throughout the company to strategically plan and drive software objectives for the team. In this role, you will collect requirements, help define priorities, drive planning and scheduling for all phases of the software development lifecycle.
-
-•
-Develop and maintain schedules, proactively identifying risks and formulating risk management strategies for multiple parallel work streams.
-
-•
-Take lead in enhancing existing product development and software release processes, while collaborating with engineering management to optimize the development workflow for maximum engineering efficiency. You will have the opportunity to partner with diverse technical groups, spanning all organizational levels.
-
-•
-Internally translate customer requirements into actionable achievements and tasks, ensuring customers are continually informed about issue statuses.
-
-•
-Collaborate with various internal teams and third-party partners across different time zones, as necessary, to resolve customer issues and oversee customer releases.
-
-What we need to see:
-
-•
-Bachelor of Science in Electrical Engineering or Computer Science or equivalent experience.
-
-•
-10+ years proven experience in a similar or related role with 5+ years of experience in driving down Software / Hardware customer escalations.
-
-•
-Hands on experience with software development for hardware platforms. Proficiency in Agile software development methodologies
-
-•
-Demonstrated success in delivering complex products to customers
-
-•
-Ability to work independently and actively with minimal guidance.
-
-•
-Proven experience to creatively resolve technical and resource issues.
-
-•
-Ability to think strategically and tactically and to build consensus to ensure program success
-
-•
-Comprehensive understanding of software engineering principles, including experience with widely-adopted configuration management tools and productivity-enhancing tools and automation processes.
-
-•
-Exceptional attention to detail and a demonstrated capacity for multitasking, in a dynamic environment with shifting priorities and changing requirements.
-
-•
-Strong communication and technical presentation skills.
-
-Ways to stand out from the crowd:
-
-•
-Expertise with Agile SW Development tools. Solid understanding of operating systems, datacenter servers, automotive principles and standards.
-
-•
-Experience developing/managing software application, system software/ firmware stack programs is a plus
-
-•
-Previous experience coordinating activities across HW, Firmware and Software applications is a plus. MBA/PMP Certification/training is a plus.
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 168,000 USD - 258,750 USD.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until September 4, 2026.
-
-This posting is for an existing vacancy.
-
-NVIDIA uses AI tools in its recruiting processes.
-
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4720,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Software-Technical-Program-Driver---OEM-and-NCP-Escalations_JR2021169,,https://www.linkedin.com/jobs/view/4447198917,2026-09-13,26,26 applicants,13,matched,reqId,2026-09-09,2026-09-15T04:55:32,2026-10-17,2026-11-01,47,startDate,true,0,,2026-09-04,,Regular Employee,Program Manager,2026-08-31,,false,,,,,,
 JR2018424,Senior Software Development Engineer in Test,NVIDIA,2100 NVIDIA USA,Full time,Posted 25 Days Ago,2026-08-31,47,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,2f2764b3a82910064296831695150000,5,"Are you passionate about automation, AI-assisted development, gaming technology, and improving software quality through thoughtful testing? If so, we have a phenomenal opportunity for you! NVIDIA is seeking a creative, hands-on automation engineer with strong Python development skills, a quality-focused attitude, and the ability to understand complex software, hardware, and PC gaming interactions. The successful candidate will help build and maintain Python-based automation frameworks, use AI development tools to accelerate test creation and implementation, and contribute to manual test planning and execution for NVIDIA App, the successor to GeForce Experience and NVIDIA Control Panel.
 
 As a Software Development Engineer in Test, you will develop automation, tools, and test coverage for NVIDIA software products, with a focus on improving quality, accelerating validation, and identifying defects early in the development lifecycle.
@@ -60832,84 +60510,6 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4505,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Solutions-Architect---Cluster-Design-and-Architecture_JR2011885,,https://www.linkedin.com/jobs/view/4435281561,2026-09-05,89,89 applicants,62,matched,title,2026-09-09,2026-09-10T01:51:44.680577,2026-10-17,,104,startDate,true,0,,2026-07-09,,Regular Employee,Sales,2026-07-05,,false,77,153103,169770,198702,subset+state,Solutions Architect
-JR2018496,"Senior Network Engineer, System Verification",NVIDIA,2100 NVIDIA USA,Full time,Posted 30+ Days Ago,2026-07-02,107,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,2f2764b3a82910064296831695150000,5,"We are looking for a Network/Storage Test Engineer to join our End-to-End Cloud solution team. You are going to be part of the E2E Verification team with the main goal of testing and be part of defining the most sophisticated Ethernet/InfiniBand NIC and Switch features and topologies, which build fast enablement for the NVIDIA products to meet growing market demands. The ideal candidate will engage in testing and defining of Networking industry-leading systems and will bring with him an ability of the fast learning of new features, technologies, and protocol.
-
-What you'll be doing:
-
-•
-Contributing to design review and product features requirements under the whole Ethernet/InfiniBand NIC and Switch portfolio.
-
-•
-Designing and building setup topologies for appropriate product coverage with an emphasis on an emulation of customer large scale / complex environments.
-
-•
-Designing, mentoring testing automation team, and implementing tests for the new features, as part of NVIDIA growing network switch and adaptors division.
-
-•
-Leading with an innovation approach by preparing and deploying different POC activities, based on the growing field demands.
-
-•
-Generating comprehensive test reports during release execution procedure, assisting with reproduction and debugs on complex customer use cases, determining the issue root cause.
-
-•
-Acting as engineering PIC for the full verification cycles of the customer use cases, with fixes provided by R&D team.
-
-•
-Executing end-to-end test scenarios in different scopes: Regression, Performance, Functional and Scale.
-
-•
-Reporting the progress of testing and provide summary reports of testing activity.
-
-What we need to see:
-
-•
-B.A./B.Sc. in Computer Science or Electrical Engineering or equivalent experience as IT/Network Engineer.
-
-•
-8+ years of practical experience in this domain.
-
-•
-Significant hands-on experience in Linux based platform.
-
-•
-Experience with L2 & L3 network protocols.
-
-•
-Fast and self-learner
-
-•
-Outstanding technical skills.
-
-•
-Independent, responsible worker, able to plan and complete.
-
-•
-Effective trouble shooting and problem-solving skills.
-
-Ways to stand out from the crowd:
-
-•
-Experience with virtualization technologies (KVM, HyperV, VMWARE, OpenStack, Kubernetes).
-
-•
-Background with NAS and/or SAN storage systems.
-
-•
-Scripting skills and experience: Bash / Python.
-
-With competitive salaries and a generous benefits package, we are widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us and, due to unprecedented growth, our exclusive engineering teams are rapidly growing. If you're a creative and autonomous engineer with a real passion for technology, we want to hear from you.
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD for Level 4, and 224,000 USD - 356,500 USD for Level 5.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until July 6, 2026.
-
-This posting is for an existing vacancy.
-
-NVIDIA uses AI tools in its recruiting processes.
-
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3687,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Senior-Network-Engineer--System-Verification_JR2018496,,https://www.linkedin.com/jobs/view/4435283494,2026-09-05,113,113 applicants,65,matched,reqId,2026-09-09,2026-09-15T05:04:32,2026-10-17,,107,startDate,true,0,,2026-07-06,,Regular Employee,Engineering,2026-07-02,,false,125,167636,196679,216091,subset+state,Engineer Senior Verification
 JR2010937,Senior Solutions Architect - AI Infrastructure,NVIDIA,2100 NVIDIA USA,Full time,Posted 30+ Days Ago,2026-07-02,107,"US, CA, Santa Clara",3,"US, CA, Santa Clara; US, CA, Remote; US, NY, Remote",true,CA;NY,United States,3403860341171001f57d5c603f290000,5,"NVIDIA is building the world’s most groundbreaking and innovative accelerated computing platforms for AI and HPC.  Because of our work, scientists, researchers, and engineers can push the boundaries of what’s possible.  We pioneered a supercharged form of computing that powers everything from breakthrough AI research to the world’s fastest supercomputers.
 
 We are seeking a highly motivated Senior Solutions Architect to join the NVIDIA Cloud Partners team with a focus on GPU, NVLink, and infrastructure design. In this role, you will be at the forefront of assisting with designs and architectures for some for the largest next-generation GPU-based clusters enabling the world’s most advanced AI supercomputers and enterprise AI infrastructure in the field. As a Solutions Architect, you will serve as a key technical expert bridging NVIDIA’s ground breaking GPU and NVLink technology designs as well as all of our software solutions directly between engineering and field teams supporting customers with the most demanding requirements.  You will work on end-to-end cluster design and architecture, performance modeling, validation, and NPI cluster deployments.  Your expertise will directly influence how the world’s leading AI companies, cloud providers, hyperscalers, research institutions, and enterprises build their infrastructure.
@@ -74646,88 +74246,6 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",2763,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Neural-Graphics-Engineer_JR2013428,,https://www.linkedin.com/jobs/view/4395477296,2026-09-05,200,Over 200 applicants,194,matched,reqId,2026-09-09,2026-09-15T05:01:45,2026-10-17,,236,startDate,true,0,,2026-02-27,,Regular Employee,Engineering,2026-02-23,,true,,,,,,
-JR2013818,"Distinguished Resiliency and Safety Architect, GPU Diagnostics",NVIDIA,2100 NVIDIA USA,Full time,Posted 30+ Days Ago,2026-02-23,236,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,028095df097b1001ac9358c586600000,5,"We are now looking for a Distinguished Resiliency and Safety Architect, GPU Diagnostics! Today, NVIDIA is tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, encouraging environment where everyone is inspired to do their best work. Come join the team and see how we can make a lasting impact on the world.
-
-We are now seeking a Resiliency and Safety Architect to support the development of GPU (graphical processing unit) diagnostics for Resiliency in the Datacenter and Functional Safety in Autonomous Vehicles and Robots. In this role, you will be a key member of a team of innovators, challenging the status quo and pushing beyond boundaries. You will have the opportunity to impact the industry's leading GPUs and SoCs powering product lines ranging from the rapidly growing field of artificial intelligence to self-driving cars and robots.
-
-What you'll be doing:
-
-•
-Design, develop, and maintain diagnostics software suite to efficiently stress test NVIDIA GPUs and SOCs to identify hardware defects, including defects that cause silent data corruption. These tests will run in large-scale deployments of Datacenter GPUs and Safety SOCs in package/board/rack configurations spanning GPUs, CPUs, and Networking SOCs.
-
-•
-Address coverage gaps in NVIDIA diagnostic suite flagged by silicon failures on customer workloads or test suites. Enhance diagnostics to improve repeatability of failures detected and optimize test time.
-
-•
-Tests for GPUs in automotive functional safety contexts should include low-level routines to exercise instruction sets, memory subsystems and interrupt mechanisms, in compliance with ISO 26262 and related safety standards. Collaborate with architecture, RTL, and verification teams to ensure safety coverage, correctness, and robustness across GPU generations.
-
-•
-Study silent data corruption, intermittent faults, and hard-to-reproduce failures in the field, including customer returns (RMAs), to establish root causes, and improve detection by diagnostics
-
-•
-Support deployment of diagnostics in pre-production qualification environments as well as large-scale production usages.
-
-What we need to see:
-
-•
-Master’s or PhD degree in Computer Science, Computer Engineering, Electrical Engineering or closely related degree or equivalent experience.
-
-•
-At least 15+ years of relevant experience.
-
-•
-Ability to reason across hardware/software boundaries to debug complex system-level issues
-
-•
-In-depth understanding of the architecture and micro-architecture of high-performance computing systems. Strong knowledge of hardware failure mechanisms that can result in incorrect computation.
-
-•
-Proficiency in C/C++, CUDA programming.
-
-•
-Scripting and automation with Python or similar.
-
-•
-Understanding of the software development life cycle, from requirements to testing closure and maintenance, including creating customer releases and documentation.
-
-•
-Excellent interpersonal skills and ability to collaborate with on-site and remote teams.
-
-•
-Strong debugging and analytical skills.
-
-•
-Be self-driven and results oriented.
-
-Ways to stand out from the crowd:
-
-•
-Familiarity with GPU and SOC Architectures, Machine Learning/Deep Learning concepts
-
-•
-Understanding factors causing silent data corruption in hardware
-
-•
-Ability to use high performance libraries and write hand-crafted kernels where necessary to create stress conditions to induce hardware failures.
-
-•
-Experience in embedded software development.
-
-NVIDIA’s invention of the GPU 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI - the next era of computing - with the GPU acting as the brain of computers, robots, and self-driving cars that can perceive and understand the world. Today, we are increasingly known as “the AI computing company”.
-
-Do you love the challenge of crafting compact diagnostics to ensure resiliency in the datacenter and functional safety in autonomous vehicles and industrial robotics? If so, we want to hear from you! Come, join our Resiliency and Safety Architecture team and help build the real-time, cost-effective computing platforms driving our success in these exciting and rapidly growing fields.
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 320,000 USD - 488,750 USD.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until February 27, 2026.
-
-This posting is for an existing vacancy.
-
-NVIDIA uses AI tools in its recruiting processes.
-
-NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",5380,https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Distinguished-Resiliency-and-Safety-Architect--GPU-Diagnostics_JR2013818,,https://www.linkedin.com/jobs/view/4395480287,2026-09-05,25,among first 25,194,matched,reqId,2026-09-09,2026-09-15T05:01:17,2026-10-17,,236,startDate,true,0,,2026-02-27,,Regular Employee,Engineering,2026-02-23,,true,,,,,,
 JR2012710,"Senior Director, Global Commodity Management - Optics",NVIDIA,2100 NVIDIA USA,Full time,Posted 30+ Days Ago,2026-02-22,237,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,028095df097b1001ac9358c586600000,5,"NVIDIA has continuously reinvented itself over two decades. Our invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionised parallel computing — with the GPU acting as the brains of computers, robots, and self-driving cars that can perceive and understand the world. Today, we are increasingly known as “the AI computing company.” We're looking to grow our company and build our teams with the smartest people in the world. Join us at the forefront of technological advancement.
 
 NVIDIA is seeking a Senior Director of Strategic Sourcing to lead the optics category globally. This role owns the end-to-end sourcing strategy for a highly critical and fast-growing Optics category, including supplier relationships, cost management, capacity planning, and risk mitigation. You are a recognized industry leader with strong executive relationships in the Optics ecosystem, bringing deep technical and business expertise, analytical rigor, and a collaborative leadership style. You have a proven track record of transforming commodity teams and driving high-impact supplier engagements.
@@ -90672,7 +90190,7 @@ This posting is for an existing vacancy.
 
 NVIDIA uses AI tools in its recruiting processes.
 
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",6305,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Manager--Software-Engineering---Rack-Scale-Systems-Infrastructure_JR2027577,,,,,,,not_checked,,2026-10-12,,2026-10-17,,5,startDate,false,0,,2026-10-16,,,,2026-10-12,,,49,224000,226682,272000,subset+state,Manager Systems Software
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",6305,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Manager--Software-Engineering---Rack-Scale-Systems-Infrastructure_JR2027577,,,,,,,not_checked,,2026-10-12,,2026-10-17,,5,startDate,false,0,2026-10-16,2026-10-16,,,,2026-10-12,,,49,224000,226682,272000,subset+state,Manager Systems Software
 JR2027781,Senior Software Engineer - GPU,NVIDIA,2100 NVIDIA USA,Full time,Posted Today,2026-10-12,5,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA is seeking an exceptional Senior System Software Engineer to join our GPU System Software team. This team is responsible for developing comprehensive system software solutions from concept to production. In this role, you will be integral in overseeing the entire lifecycle of GPU feature development, including proof of concept, design, architecture, algorithm implementation, and both pre/post-SI optimization. Your primary focus will be on display features utilizing both hardware and software architectures to deliver industry-leading, energy-efficient consumer products.
 
 What you will be doing:
@@ -91599,67 +91117,6 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4584,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Agentic-Engineering_JR2027200,,,,,,,not_checked,,2026-10-13,,2026-10-17,,5,startDate,false,0,,2026-10-16,,,,2026-10-12,,,553,173229,201467,226158,subset+state,Software Engineer
-JR2027203,"Senior Software Engineer, Agentic Engineering",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-12,5,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"Join the new Agentic Engineering team, within the Deep Learning Framework Group, at NVIDIA. We build the agentic workflows that automate code generation, testing, and tuning across NVIDIA's frameworks, compilers, and developer tooling. The team is a force multiplier for the engineers behind that stack. This greenfield opportunity offers foundational technical influence within a high-autonomy team inside Deep Learning Frameworks. We partner directly with early-adopter teams to translate complex requirements into durable, scalable infrastructure that other teams can adopt. The work sits at a genuinely rare intersection: modern AI applied to the craft of engineering itself, inside a company whose hardware powers the AI revolution.
-
-What you'll be doing:
-
-Our initial customers are NVIDIA's early-adopter engineering teams. You will develop a deep, shared understanding with them, identifying the friction points where agentic workflows would have the highest impact. Requirements will evolve as these teams integrate agents into production, so you will iterate with them on proof points to validate or revise your plans together. As an applied ML expert, you will use technical judgment to distinguish durable architectural opportunities from ""tech du jour"" hype.
-
-The work spans several areas. You might agent-ify compiler infrastructure to enable autonomous agents to make high-dimensional optimizations, with closed-loop validation on real hardware. Multi-agent orchestration is core, anything from LLM-native tooling to custom work with frameworks like LangChain/LangGraph, driving autonomous loops that apply changes, measure results, ratchet forward and repeat. We integrate these systems into git-native workflows and CI pipelines so agents can build, test, and iterate against real GPUs. Familiarity with NVIDIA's latest GPUs comes with the territory, since the work targets the teams that support them. We contribute to cross-org collaborative group sharing reusable agentic methodology, helping the broader organization adopt what works.
-
-What We Need To See:
-
-• MS in Computer Science, Engineering, or equivalent experience
-
-• 5+ years of experience.
-
-• Strong Python development skills
-
-• Working knowledge of GPUs or other highly data-parallel systems
-
-• Demonstrated projects or work experience using and supporting AI systems
-
-• Track record of shipping complex projects with minimal direction, including raising challenges or syncing at the right moments
-
-• Experience building tools or systems shaped by direct partnership with internal customer or user teams
-
-• Examples of leading technical work through changing requirements and revising direction when evidence demands it
-
-Experience in one or more of the following areas:
-
-• Multi-agent orchestration frameworks (e.g., LangChain, LangGraph) or LLM-based workflow automation
-
-• Compiler infrastructure, intermediate representations, or program transformation
-
-• Autonomous search or optimization over high-dimensional parameter spaces
-
-• Hardware-aware performance optimization for deep learning workloads
-
-• Code generation systems or domain-specific languages (DSLs)
-
-Ways to stand out from the crowd:
-
-• Passion for following the evolution of ML hardware and staying up to date on emerging kernel programming techniques
-
-• Experience building evaluation or testing harnesses, especially for ML systems or multi-agent workflows
-
-• Track record of building internal tools or frameworks that force-multiply engineering teams
-
-• Demonstrated ability to thrive in ambiguous, self-directed environments while remaining humble: communicating with clarity, actively listening, and finding ground truth
-
-• An allergic reaction to ""solutions in search of problems""
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 152,000 USD - 241,500 USD for Level 3, and 184,000 USD - 287,500 USD for Level 4.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until October 16, 2026.
-
-This posting is for an existing vacancy.
-
-NVIDIA uses AI tools in its recruiting processes.
-
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4638,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Agentic-Engineering_JR2027203-1,,,,,,,not_checked,,2026-10-13,,2026-10-17,,5,startDate,false,1,,2026-10-16,,,,2026-10-12,,,553,173229,201467,226158,subset+state,Software Engineer
 JR2027364,"Product Manager, Developer Experience",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-12,5,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA is redefining accelerated computing, and our Data Center CPU Product Management team is building the products and developer experiences that power the next generation of AI and data center infrastructure. We are looking for a Product Manager, Developer Experience to develop how customers and partners evaluate, adopt, and successfully use NVIDIA data center CPUs. This role combines hands-on customer evaluation with product ownership, using real-world developer experiences to identify friction and turn it into improved products, software, tools, documentation, and enablement. Working across customers, partners, engineering, performance, and go-to-market teams, you’ll help make complex workloads easier to onboard, evaluate, benchmark, and optimize. This is a hands-on product management role for someone who enjoys getting close to the technology and turning individual customer findings into scalable developer experiences.
 
 What you'll be doing:
@@ -94628,59 +94085,6 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4579,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Architect--Model-Performance-and-Post-Training_JR2027887,,,,,,,not_checked,,2026-10-14,,2026-10-17,,4,startDate,false,0,,2026-10-17,0,,,2026-10-13,,,,,,,,
-JR2027964,Senior Infrastructure Solutions Architect - OEM Deployment,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-13,4,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
-
-We are now looking for an Infrastructure Solutions Architect! NVIDIA’s AI platforms have already made a major impact across leading academic institutions, start-ups, and the world’s largest enterprise companies. We need passionate, creative, and driven individuals to help us continue delivering groundbreaking enterprise solutions. This role is ideal for a specialist in system design and networking who can lead customers through the AI computing revolution. You will be leading technical deployments of NVIDIA AI systems, collaborate cross-functionally, support NCP (NVIDIA Cloud Partner) and Enterprise integration.
-
-What you’ll be doing:
-
-• Provide onsite technical leadership for large-scale NVIDIA AI datacenter deployments, ensuring seamless integration and customer happiness.
-
-• Troubleshoot and resolve complex hardware and deployment issues across GPU, networking, and storage technologies.
-
-• Act as a technical expert supporting sales teams, driving adoption of NVIDIA solutions through close collaboration with customers and internal collaborators.
-
-• Lead technical engagement with customer engineers, architects, and decision-makers to identify system architectures and key product requirements in the enterprise AI space.
-
-• Support technical engagement with NCPs (NVIDIA Cloud Partners) and Enterprise customers to accelerate the deployment and adoption of NVIDIA AI technologies in cloud environments, ensuring time-to-value and successful integration.
-
-What we need to see:
-
-• Bachelor’s or Master’s degree in Engineering, Electrical Engineering, Physics, Computer Science, or equivalent experience.
-
-• 8+ years of experience in system design or technical customer support within the technology industry, including hands-on involvement in cloud partner architecture/solution validation, deployment, and scaling activities. This is a field facing role and requires up to 50% travel to customers, partners and datacenters.
-
-• Deep knowledge of datacenter hardware such as servers, storage systems, and network devices.
-
-• Strong analytical, problem-solving, time-management, and organizational skills, with the ability to manage multiple complex initiatives in dynamic environments.
-
-• Excellent written and verbal communication skills, with a proven ability to collaborate effectively across engineering and leadership teams.
-
-Ways to stand out from the crowd:
-
-• Proven experience with large-scale datacenter rollouts and integration of solutions with NCP (NVIDIA Cloud Partner) and Enterprise platforms, including support for large-scale cloud deployment and the ability to scale production efficiently.
-
-• Strong networking expertise across TCP/IP, RDMA, RoCE, NICs, and switches, with a solid understanding of CPU architecture and embedded Linux systems, APIs, and OS environments.
-
-• Proficiency in Bash scripting, Ansible and Python programming, enabling automation, diagnostics, and performance tuning across complex system environments.
-
-• Deep knowledge of GPU and DPU technologies, including NCCL for high-performance communication in multi-GPU systems.
-
-• Familiarity with signal integrity principles, thermal management (HVAC and cooling), power distribution, cabling, and rack layout—especially in industrial, military, and ruggedized computing environments.
-
-NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative, results-oriented and enjoy learning while having fun, then what are you waiting for? Apply today!
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until October 17, 2026.
-
-This posting is for an existing vacancy.
-
-NVIDIA uses AI tools in its recruiting processes.
-
-NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",5139,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Infrastructure-Solutions-Architect---OEM-Deployment_JR2027964,,,,,,,not_checked,,2026-10-14,,2026-10-17,,4,startDate,false,0,,2026-10-17,0,,,2026-10-13,,,77,153103,169770,198702,subset+state,Solutions Architect
 JR2016206,Senior HPC Performance Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted Today,2026-10-14,3,"US, OR, Remote",4,"US, OR, Remote; US, TX, Remote; US, CA, Remote; US, MA, Remote",true,OR;TX;CA;MA,United States,,0,"As a member of our team in NVIDIA's NVHPC compilers & tools group, you will analyze and run High Performance Computing (HPC) applications on HPC servers and systems to gain insight into the performance characteristics of these applications. The applications you'll work with range from small synthetic benchmarks that use a single core to full applications that utilize all of the resources on distributed-memory systems with heterogeneous compute nodes including CPUs, GPUs and many-core processors. In this role you will analyze these applications and identify optimization opportunities for compiler development teams and application engineering teams.
 
 What you’ll be doing:
@@ -98002,3 +97406,1372 @@ This posting is for an existing vacancy.
 NVIDIA uses AI tools in its recruiting processes.
 
 NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3898,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Systems-Design-Engineer_JR2028130,,,,,,,not_checked,,2026-10-16,,2026-10-17,,2,startDate,false,0,,2026-10-19,2,,,2026-10-15,,,41,157857,178006,216091,subset+state,System Design Engineer
+JR2013607,Senior High Performance AI Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",6,"US, CA, Santa Clara; US, GA, Remote; US, TX, Austin; US, TX, Remote; US, CA, Remote; US, WA, Redmond",true,CA;GA;TX;WA,United States,,0,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
+
+We are looking for outstanding Senior High Performance AI Engineer to build groundbreaking multi-agent systems for the CUDA ecosystem. We build innovative agentic runtimes and compiler-integrated orchestration that work together with NVIDIA's software stack to provide comprehensive acceleration for modern agent workloads powered by foundational models. As a member of the team, you will develop new agent abstractions, GPU-centric runtimes, and compiler- or runtime-driven system solutions to accelerate agent planning, tool-use, code generation, and other high-impact AI workloads. You will collaborate closely with internal NVIDIA software and hardware teams to push the latest developments into NVIDIA products.
+
+What you'll be doing:
+
+• Design, build and optimize agentic AI systems for the CUDA ecosystem.
+
+• Co-design agentic system solutions with software, hardware and algorithm teams; influence and adopt new capabilities as they become available.
+
+• Develop reproducible, high-fidelity evaluation frameworks covering performance, quality and developer productivity.
+
+• Collaborate across the AI stack—from hardware through compilers/toolchains, kernels/libraries, frameworks, distributed training, and inference/serving—and with model/agent teams.
+
+What we need to see:
+
+• Bachelor’s degree in Computer Science, Electrical Engineering, or related field (or equivalent experience); MS or PhD preferred.
+
+• 8+ years of industry or academia experience with AI systems development; exposure to building foundational models, agents or orchestration frameworks; hands-on experience with deep learning frameworks and modern inference stacks.
+
+• Strong C/C++ and Python programming skills; solid software engineering fundamentals.
+
+• Experience with GPU programming and performance optimization (CUDA or equivalent).
+
+Ways To Stand Out From The Crowd:
+
+• Track record building/evaluating deep learning models, coding agents and developer tooling.
+
+• Demonstrated ability to optimize and deploy high-performance models, including on resource-constrained platforms.
+
+• Deep expertise in GPU performance optimizations, evidenced by benchmark wins or published results.
+
+• Publications or open-source leadership in deep learning, multi-agent systems, reinforcement learning, or AI systems; contributions to widely used repos or standards.
+
+With competitive salaries and a generous benefits package, we are widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us and, due to unprecedented growth, our exclusive engineering teams are rapidly growing. If you're a creative and autonomous engineer with a real passion for technology, we want to hear from you.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD for Level 4, and 224,000 USD - 356,500 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4372,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-High-Performance-AI-Engineer_JR2013607,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,6,155637,196321,205312,subset+state,Engineer Performance
+JR2015198,AI Hardware Architect,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",2,"US, CA, Santa Clara; US, TX, Austin",false,CA;TX,United States,,0,"NVIDIA is hiring an AI Hardware Architect to analyze and architect the next generation of Artificial Intelligence hardware. We are looking for special individuals with a passion for delivering innovative products. Together, we will build life-changing AI chips and chiplets for the rapidly growing AI infrastructure market. If you have knowledge of computer architecture, microarchitecture, and chip design, and are looking to learn and grow, this is the opportunity you are looking for.
+
+What you'll be doing:
+
+•
+Work on groundbreaking GPU and CPU systems. Understand them across a range of disciplines and identify areas for improvement.
+
+•
+Study the applications and models running on Nvidia hardware and their architectural implications
+
+•
+Come up with microarchitectural solutions for connectivity, coherency, power management, security, memory management and other SOC level issues.
+
+•
+Understand and help drive implementation of bus protocols, networking protocols, memory access and security solutions across a range of products.
+
+•
+Work with software, firmware, platform and multi-functional teams on system architecture.
+
+•
+Model, analyze, and explain the performance and power advantages of Nvidia solutions.
+
+•
+Guide customers and firmware engineers to extract the most performance from microarchitectural structures.
+
+What we need to see:
+
+•
+Master's Degree in Computer Engineering or Electrical Engineering (or equivalent experience)
+
+•
+8+ years of relevant industry experience.
+
+•
+Experience building high performance microarchitectural structures. Experience with industry standard bus protocols.
+
+•
+Clear understanding of the performance, power and security implications of microarchitectural features.
+
+•
+Strong interpersonal, communication and teamwork skills.
+
+•
+A drive to continuously learn and expand architectural breadth and depth.
+
+•
+Excellent coding and algorithmic thinking skills. Good understanding of LLMs.
+
+•
+Publications or other evidence of original chip/system architecture work is a plus.
+
+Join the future of chip building, you will contribute to innovative products with a dedicated team!
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD for Level 4, and 224,000 USD - 356,500 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3028,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/AI-Hardware-Architect_JR2015198,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,8,177091,190057,191048,subset+state,"Architect, Hardware"
+JR2019035,"Senior Solutions Architect, Gen AI",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Remote",1,"US, CA, Remote",true,CA,United States,,0,"NVIDIA is building the world’s leading AI company, and we are looking for a Solutions Architect skilled in full cycle Gen AI development and deployment to assist customers with adoption of NVIDIA's full-stack technologies as well as building and deploying solutions around Generative AI and other related GPU-accelerated technologies in which intelligent agents can learn, reason, and interact with the world. As part of the Hospitality and Travel Solutions Architecture team, we work with some of key hotel and transportation chains to integrate accelerated computing and AI into their stacks. A Solutions Architect is the first line of technical expertise between NVIDIA and our Auto customers so you will engage directly with developers, researchers, and data scientists with some the most strategic customers as well as work directly with business and engineering teams on product strategy as it pertains to these customers. Join us in this exciting endeavor!
+
+What You Will Be Doing:
+
+•
+Provide hands-on technical mentorship to partners and customers on Nvidia GenAI stack. Guide customers to develope and deploy Agentic AI workflows on our platforms, quantifying the benefits of our accelerated computing software and hardware.
+
+•
+Build demonstrations and POCs for solutions that address critical business needs of our customers. Help in draft requirements for missing features to unblock progress at customers/partners.
+
+•
+Educate customers on new NVIDIA GenAI technologies and platforms. Prepare and deliver technical training presentations and workshops.
+
+•
+Build collateral (notebook/ blog) applied to the industry use-cases.
+
+•
+Partner with NVIDIA engineering, product, sales teams to secure design wins at customers. Enable development and growth of NVIDIA product features through customer feedback and POC evaluations.
+
+What We Need To See:
+
+•
+Master's or Ph.D. in Computer Science, Artificial Intelligence, or equivalent experience.
+
+•
+8+ years of hands-on experience in a technical AI role, with a strong emphasis on Gen AI.
+
+•
+Proficient in the latest and greatest model architectures and be able to articulate the computational complexities of each.
+
+•
+Proven track record of deploying and optimizing LLM models for inference in production environments using well known inferencing engines e.g., vLLM, TRT-LLM, SGLang, etc.
+
+•
+Expertise in training and fine-tuning LLMs using popular frameworks such as TensorFlow, PyTorch, or Hugging Face Transformers.
+
+•
+Solid understanding of GPU cluster architecture and the ability to bring to bear parallel processing for accelerated model training and inference.
+
+•
+Experience with basic DevOps tools e.g., Docker, Kubernetes, GitLab, Linux Command Line, Shell, etc.
+
+•
+Excellent communication and teamwork skills with the ability to explain complex technical concepts to both technical and non-technical collaborators.
+
+•
+Experience leading workshops, training sessions, and presenting technical solutions to diverse audiences.
+
+Ways To Stand Out From The Crowd:
+
+•
+Experience with Agentic AI frameworks, tools, and protocols e.g., LangChain, LangGraph, MCP.
+
+•
+Understand Multimodal LLMs, VLMs, etc.
+
+•
+Experience in deploying LLM models at scale on mainstream cloud providers (e.g., AWS, Azure, GCP).
+
+•
+Proven track record to profile and optimize inference latency and throughput, memory and I/O utilization.
+
+•
+Mathematical understanding of different parallelisation techniques in Gen AI
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4299,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Solutions-Architect--Gen-AI_JR2019035,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,77,153103,169770,198702,subset+state,Solutions Architect
+JR2024030,"Director of Events, Flagship Events",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"We are seeking a Director of Events to lead the planning and delivery of NVIDIA's most significant and high-profile events. You will act as a strategic collaborator throughout the company — partnering with business units, product teams, marketing, communications, and executive leadership. NVIDIA is widely considered to be one of the technology world’s most desirable employers! We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative and autonomous, we want to hear from you!
+
+What you'll be doing:
+
+•
+Own and drive the overall strategy for assigned flagship events — defining goals, structure, and success metrics in partnership with senior leadership.
+
+•
+Work across NVIDIA's business units, product teams, marketing, and communications organizations to align events with company priorities and ensure cross-functional agreement and implementation.
+
+•
+Function as the chief strategic and operational authority — guiding and managing teams through every workstream stage, from idea development to on-site delivery and subsequent event evaluation.
+
+•
+Drive the creative and experiential vision in close partnership with creative, content, and brand teams.
+
+•
+Manage large, complex budgets — tracking costs, forecasting, and driving financial accountability across a multi-million dollar event portfolio.
+
+•
+Serve as the primary executive point of contact, providing leadership with regular updates, critical issues, and strategic recommendations.
+
+•
+Lead all vendor, agency, and venue relationships — holding external partners accountable to the highest standards of quality and delivery.
+
+•
+Develop and manage master event timelines, ensuring all workstreams stay on track and interdependencies are clearly mapped.
+
+What we need to see:
+
+•
+12+ overall years of event management experience with 5+ years of management experience, with significant time in large-scale, owned event production at a major technology company.
+
+•
+Bachelor's degree in Business, Marketing, Communications, or related field, or equivalent experience. MBA or relevant advanced degree preferred.
+
+•
+Proven experience owning events of 10,000+ attendees, including complex multi-day formats with keynotes, breakouts, exhibitions, and networking.
+
+•
+Demonstrated ability to handle extensive event budgets while maintaining full financial oversight.
+
+•
+This role requires approximately 60% domestic and international travel for event planning and execution.
+
+•
+Deep understanding of how large-scale events drive business impact — from brand and pipeline to partner engagement and executive relationships.
+
+•
+Outstanding cross-functional collaboration skills — a natural dot-connector who can work across business units, build alignment quickly, and influence without authority.
+
+•
+Executive presence and communication skills; comfortable working directly with C-suite collaborators and representing the events organization at the highest levels.
+
+•
+Deep expertise in event production: staging, A/V, venue negotiations, vendor management, and on-site logistics.
+
+•
+Comfortable owning complex, high-stakes work end-to-end.
+
+Ways to stand out from the crowd:
+
+•
+Experience producing a flagship technology conference at scale — think Salesforce Dreamforce, AWS re:Invent, Google I/O, or a comparable event.
+
+•
+Demonstrated success in advancing a large-scale event program — improving quality, ambition, and measurable business impact year after year.
+
+•
+Experience building the case for events and communicating event value to senior leadership in a way that resonates.
+
+•
+A deep passion for NVIDIA's mission and an understanding of what it means to produce events that move an industry.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 216,000 USD - 345,000 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4560,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Director-of-Events--Flagship-Events_JR2024030,,https://www.linkedin.com/jobs/view/4479641583,2026-10-17,25,among first 25,1,matched,titleSearchFallback,2026-09-22,2026-10-17T11:38:39,2026-10-17,,1,startDate,true,0,,2026-10-20,3,,,2026-10-16,,true,,,,,,
+JR2024052,"Senior Security Engineer, AI Architecture Patterns",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",5,"US, CA, Santa Clara; US, TX, Remote; US, WA, Remote; US, FL, Remote; US, SC, Remote",true,CA;TX;WA;FL;SC,United States,,0,"Join NVIDIA, a company with over 25 years of experience advancing visual technology, personal gaming platforms, and high-performance computing! We have pushed innovation through our innovative technology and talented team. As we expand into AI's vast possibilities, we need a Senior Security Engineer, Architecture Patterns to build the future of computing. In this role, you will be involved in the latest AI developments, uphold security standards, and contribute to powerful projects alongside top talent in Santa Clara, CA. Join us!
+
+What you'll be doing:
+
+• Develop shift-left solutions that embed security standards directly into AI-generated code, ensuring constraints, scaffolds, rules, and guardrails are applied during the coding process rather than post-shipment.
+
+• Convert written security standards into machine-enforceable formats, enabling programming assistants and pipelines to apply them seamlessly without manual interpretation.
+
+• Engineer verification workflows that confirm generated code meets claimed standards, providing evidence for downstream release gating and policy enforcement.
+
+• Maintain and evolve evaluation harnesses, reference repositories, known-bad cases, and encouraged findings to ensure constraint-steered agents produce conformant code amid changing models, patterns, and tooling.
+
+• Convert approved architecture patterns into secure, runnable reference implementations, such as templates, Helm charts, container images, and worked examples, ensuring their reliability as platforms evolve.
+
+• Elevate AI solutions from prototypes to enterprise-grade products, focusing on versioning, observability, latency and cost budgets, access control, audit, graceful failure, and a detailed support and deprecation model.
+
+• Set the enterprise-grade architecture standards for AI tooling in a security context, determining qualification criteria and monitoring adoption and outcomes to ensure efficiency.
+
+• Collaborate with teams developing their own AI and automation solutions, reviewing builds, sharing platforms, raising engineering standards, and staying engaged through adoption, validation, and residual-risk closure.
+
+What we need to see:
+
+• 8+ years in security engineering, platform engineering, product security, infrastructure security, DevSecOps, developer experience engineering, or software engineering for large distributed systems.
+
+• Expertise with AI coding agents and the tooling that builds their output, including context and constraint injection, rules and scaffolds, plan-mode and tool integrations, and development guided by detailed specifications.
+
+• Proven skill in building evaluation harnesses and regression suites for non-deterministic systems, including reference cases, result verification, conformance measurement, and regression detection.
+
+• Proficiency in cloud-native and containerized environments, including Kubernetes, Helm, container image hardening, and the composition of identity, networking, and infrastructure primitives into secure systems.
+
+• Strong software engineering fundamentals in a language such as Python or Go, with experience in CI/CD pipelines, static analysis, code generation tooling, policy-as-code, schema validation, Git workflows, and automated publishing.
+
+• Proven track record of taking systems from prototype to production at enterprise standards, including reliability, versioning, observability, access control, documentation, and support models.
+
+• Practical grounding in security architecture, including threat modeling, control selection, isolation boundaries, workload identity, secrets handling, logging, and audit, with the ability to render specifications machine-checkable.
+
+• Ability to operate as both an architect and engineer, reviewing builds, explaining technical trade-offs, influencing without direct authority, and improving team capabilities.
+
+• BS/MS in Computer Science, Engineering, or equivalent experience.
+
+Ways to stand out from the crowd:
+
+• Experience in shipping tooling that steers or constrains code-generating agents at generation time.
+
+• Providing attestation, provenance, or supply chain evidence for downstream use, including signing, verifiable claims, or build-time evidence.
+
+• Productizing internally built AI tooling, taking demos to enterprise-grade solutions with evaluation, guardrails, cost controls, and operational support.
+
+• Establishing a golden-path, paved-road, or internal developer platform program at scale, including content models, tooling, and adoption strategies.
+
+• Engagement in ongoing technical development or knowledge sharing to broaden risk reduction strategies, through open-source work, technical writing, standards work, conference talks, mentoring, or community participation.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 168,000 USD - 270,250 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",5602,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Security-Engineer--AI-Architecture-Patterns_JR2024052,,https://www.linkedin.com/jobs/view/4479647317,2026-10-17,25,among first 25,1,matched,titleSearchFallback,2026-10-17,2026-10-17T11:39:00,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,true,,,,,,
+JR2024381,"Senior Technical Program Manager, GPU Software",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, WA, Redmond",3,"US, WA, Redmond; US, CA, Santa Clara; US, WA, Seattle",false,WA;CA,United States,,0,"NVIDIA's GPU Software team seeks a skilled and experienced technical program manager to help deliver on NVIDIA's inspiring product roadmap! The software produced by this team include foundational kernel components, drivers, and firmware that support the entire family of NVIDIA chipsets. Join an excellent team and help guide NVIDIA's future!
+
+What you'll be doing:
+
+You will collaborate with the team and peers across the company to build, represent and carry out detailed plans representing the team's work. In particular, you will have the opportunity to:
+
+•
+Work on aligning NVIDIA's chipset and product roadmap with the software team capacity roadmap and help balance global priorities
+
+•
+Keep the team on track by coordinating dependencies across functional areas and identifying planning gaps
+
+•
+Be empowered to make prioritization decisions and represent the team to other groups
+
+•
+Partner closely with hardware, release planning, and customers, giving you a complete picture of software at NVIDIA
+
+•
+Propose and develop new methods to handle projects and unify planning systems
+
+•
+Define and track metrics to improve execution efficiency
+
+What we need to see:
+
+•
+12+ overall years of program management experience in delivering software products
+
+•
+Bachelor’s degree in engineering, Computer Science, or similar field or equivalent experience
+
+•
+Proven track record of balancing short-term delivery towards critical timelines alongside thoughtful long-term steps towards improving planning, processes, and team capabilities.
+
+Ways to stand out from the crowd:
+
+•
+Past experience as a software developer
+
+•
+Knowledge of SOC, GPU or CPU project management
+
+•
+Background in graphics, machine learning, or accelerated computing
+
+•
+Experience with software productivity tools and process automation
+
+NVIDIA is widely recognized as one of the world’s most desirable employers. As a result, we have some of the most forward-thinking and hardworking people in the world working for us. With competitive salaries, and generous benefits, our engineering teams are rapidly growing. If you're a creative, driven, and independent program manager with a real passion for technology, we'd love to have you join the team.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 200,000 USD - 322,000 USD for Level 5, and 240,000 USD - 379,500 USD for Level 6.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3118,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-WA-Redmond/Senior-Technical-Program-Manager--GPU-Software_JR2024381-1,,https://www.linkedin.com/jobs/view/4479651123,2026-10-17,25,among first 25,1,matched,titleSearchFallback,2026-10-17,2026-10-17T11:39:36,2026-10-17,,1,startDate,false,1,,2026-10-20,3,,,2026-10-16,,true,6,192043,203268,221591,subset+state,Technical Program Manager
+JR2025315,Senior Systems Engineer -- Agentic AI,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, TX, Austin",3,"US, TX, Austin; US, CA, Remote; US, CA, Santa Clara",true,TX;CA,United States,,0,"Today, NVIDIA is tapping into the unlimited potential of AI to define the next era of computing. An era in which GPUs serve as the brains of computers, robots, and self-driving cars that can understand and interact with the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent.
+
+NVIDIA is hiring a Senior Software Architect in the Agent Harness & Runtime Engineering team to build foundational systems for the next generation of agentic AI. Our team works at the intersection of AI and systems engineering, tackling challenges across agent runtimes, inference, evaluation, and large-scale execution. We are looking for someone with the AI breadth to quickly understand emerging problems, the systems depth to architect solutions at scale, and the engineering strength to build them. This is an opportunity to work across the agentic AI stack and translate rapidly evolving AI capabilities into scalable, production-quality systems.
+
+What You'll Be Doing:
+
+•
+Architect and build scalable, reliable systems for agentic AI, spanning agent runtimes, harnesses, inference, evaluation, and orchestration.
+
+•
+Solve large-scale systems challenges across distributed execution, data/ETL pipelines, HPC, cloud, Kubernetes, and GPU compute environments.
+
+•
+Optimize systems for reliability, scalability, performance, resource utilization, and developer experience.
+
+•
+Prototype emerging ideas, write high-quality production code, and provide technical leadership across research, engineering, product, and infrastructure teams.
+
+What We Need to See:
+
+•
+BS, MS, or equivalent experience in Computer Science, Computer Engineering, AI, or a related field, with 12+ years of relevant industry experience.
+
+•
+Strong foundation in modern AI, including LLMs, multimodal models, inference, agentic AI, and evaluation.
+
+•
+Deep expertise in software architecture, distributed systems, and large-scale systems design.
+
+•
+Strong hands-on programming skills in Python, C++, Go, Rust, or similar languages, with a track record of building high-quality production software.
+
+•
+Background building large-scale systems involving distributed execution, data processing/ETL, workflow orchestration, HPC, cloud, or GPU infrastructure.
+
+•
+Ability to reason across the stack—from AI model behavior and application logic to runtime, compute, and infrastructure.
+
+•
+Proven ability to take ambiguous, complex technical problems from architecture through implementation and production.
+
+Ways to Stand Out from the Crowd:
+
+•
+Knowledge of LLM/VLM inference, model serving, model routing, or inference optimization.
+
+•
+Background in AI evaluation, benchmarking, experimentation, or large-scale AI infrastructure.
+
+•
+Track record of building reusable platforms supporting heterogeneous AI workloads and compute environments.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 224,000 USD - 356,500 USD for Level 5, and 272,000 USD - 431,250 USD for Level 6.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3730,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-TX-Austin/Senior-Systems-Engineer----Agentic-AI_JR2025315,,,,,,,not_checked,,2026-09-10,,2026-10-17,,1,startDate,true,0,,2026-10-20,3,,,2026-10-16,,,,,,,,
+JR2025370,"Senior System Software Engineer, NPI Data Center Diagnostics",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"We are seeking software engineers to work on next-generation graphics and computing products. Our charter is to build the most stressful set of applications a GPU or high performance computing server would see in its life cycle. The best candidates will have strong C++ programming skills, detailed knowledge of graphics concepts and algorithms, a proven foundation of systems software with emphasis on OS fundamentals, and a deep understanding of current generation hardware architecture at systems level.
+
+Excellent interpersonal skills and a dedication to meticulous engineering practices are a requirement. As a system software engineer, you will extensively use your knowledge of operating systems, algorithms, and computer architecture to provide robust and efficient solutions to validate and test next generation processors. Join us!
+
+What you'll be doing:
+
+• Working closely with architecture, hardware and driver teams through the product development lifecycle of computing and graphics processors, as well as compute products.
+
+• Responsible for crafting software tools and infrastructure required for new chip development, validation, and productization.
+
+• You will assess new hardware features and architect manufacturing diagnostic tests using pre-beta CUDA and OpenGL extensions.
+
+• This job will require an understanding of our hardware and software architectures.
+
+What we need to see:
+
+• BS or MS degree in one of the areas of Electrical Engineering, Computer Engineering, Computer Science or equivalent experience
+
+• Strong C/C++ or Python programming skills
+
+• Familiarity with computer architecture, and ability to work close to the hardware
+
+• 5+ years of relevant experience
+
+• Background with PCIe, NVLink or server product technologies like InfiniBand, Ethernet is a plus
+
+• Previous experience of working on a large system software code base is preferable
+
+• Very strong problem solving and debugging skills
+
+• Ability to self-manage, show leadership, and have good interpersonal skills
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 152,000 USD - 241,500 USD for Level 3, and 184,000 USD - 287,500 USD for Level 4.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",2916,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/System-Software-Engineer--NPI-Data-Center-Diagnostics_JR2025370,,,,,,,not_checked,,2026-09-16,,2026-10-17,,1,startDate,true,0,,2026-10-20,3,,,2026-10-16,,,401,173239,184974,207095,subset+state,Engineer Senior Systems Software
+JR2025672,Product Marketing Management MBA Intern - Summer 2027,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
+
+As a product marketing manager intern with the NVIDIA Enterprise Desktop Products group, you will have the opportunity to gain hands-on experience in the field of product marketing! You will work closely with the product marketing team to support the development and execution of go-to-market strategies for new and existing products.
+
+What you'll be doing:
+
+•
+Create content such as product collateral, data sheets, web pages, solution briefs, messaging briefs, customer, and sales training materials.
+
+•
+Work with the product team to position products against other products in the product portfolio as well as competing products.
+
+•
+Collaborate with sales enablement teams to provide materials necessary to enable OEM and channel partners to successfully position and sell our products.
+
+•
+Work with cross functional teams, including product management, engineering, sales, campaigns, partner management teams.
+
+What we need to see:
+
+•
+Pursuing an MBA in product marketing or a related field (graduating in winter or summer 2028)
+
+•
+Demonstrated proficiency in clear and concise written communication and articulate verbal expression
+
+•
+Proficient in transforming complex data into engaging and informative customer-facing materials.
+
+•
+Consistently deliver outstanding results by demonstrating exceptional organizational skills, as evidenced by consistently meeting or exceeding project deadlines and targets while successfully handling multiple tasks concurrently, showcasing proficient multitasking abilities.
+
+•
+Hands-on experience with AI assistants and agentic workflows to accelerate day-to-day work
+
+NVIDIA is widely considered to be one of the technology world’s most desirable employers; we have some of the most forward-thinking and hardworking people in the world working for us and, due to unparalleled growth, best-in-class teams are rapidly growing. If you’re creative and autonomous with a real passion for your work, we want to hear from you!
+
+Our internship hourly rates are a standard pay based on the position, your location, year in school, degree, and experience. The hourly rate for our interns is 38 USD - 94 USD.
+
+You will also be eligible for Intern benefits. ​
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3511,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Marketing-Management-MBA-Intern---Summer-2027_JR2025672,,https://www.linkedin.com/jobs/view/4479647314,2026-10-17,25,among first 25,1,matched,titleSearchFallback,2026-10-17,2026-10-17T11:38:36,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,true,,,,,,
+JR2027235,Senior Online Mapping Algorithms Engineer- - Autonomous Vehicles,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",2,"US, CA, Santa Clara; US, WA, Seattle",false,CA;WA,United States,,0,"We are looking for a Senior algorithm engineer/architect for Autonomous Vehicles to do online mapping. In this role, you will help craft and guide the future of our autonomous driving solution that helps the car perceive the world around it and build the 3D model of the driving environment. We seek extraordinary engineers who are passionate about building self-driving cars and who have a background in sensor fusion, multi-view geometry, and embedded real-time software. Are you interested in inventing human level AI for navigation in the unconstrained world under any conditions? If so, join us!
+
+What You'll Be Doing:
+
+• Generate real-time 3D world model utilized by planning, incorporating a variety of inputs from sensors and external sources.
+
+• Enable HD mapless driving in complex urban scenarios by creating enriched BEV models of the world.
+
+• Design and integrate algorithmic solutions into the core of NVIDIA AV.
+
+• Write safe embedded software code to run in real-time systems.
+
+• Develop highly efficient product code in C++ and make use of algorithmic parallelism offered by GPGPU programming (CUDA).
+
+• Produce code and designs following automotive quality and safety standards.
+
+What We Need To See:
+
+• Bachelor’s / Master’s / PhD in Computer Science or a related field (or equivalent experience) with 6+ years of experience.
+
+• Software industry experience.
+
+• Strong C++ development skills.
+
+• Passion for robotics and autonomous vehicles.
+
+• Drive to learn new things and tackle meaningful problems.
+
+• Outstanding communication and cross-team collaboration.
+
+• Independent and analytical software engineering skills.
+
+• Software development on embedded or automotive platforms.
+
+Ways To Stand Out From The Crowd:
+
+• Background in 3D geometry, computer vision, or state estimation algorithms like Kalman filters, particle filters.
+
+• Understanding of ADASISv2 as well as crowdsourced maps and geographic information systems (GIS).
+
+• Runtime optimization of code using profilers.
+
+• Experience with CUDA parallel programming.
+
+#AutonomousVehicles
+
+We believe that building self-driving vehicles will be a defining contribution of our generation (e.g. traffic accidents are responsible for ~1.25 million deaths per year world-wide). We have the funding and scale, but we need your help on our team. NVIDIA is widely considered to be one of the technology world’s most desirable employers with some of the most forward-thinking people in the world working here. If you're entrepreneurial and autonomous, we want to hear from you!
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD for Level 4, and 224,000 USD - 356,500 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3453,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Online-Mapping-Algorithms-Engineer----Autonomous-Vehicles_JR2027235,,https://www.linkedin.com/jobs/view/4479631972,2026-10-17,25,among first 25,1,matched,titleSearchFallback,2026-10-17,2026-10-17T11:39:17,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,true,,,,,,
+JR2027317,Sales Operations Analyst,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"We are looking for a Sales Operations Analyst to join our organization. As a key member of the Americas Sales Operations organization, you will play a crucial role in supporting NVIDIA’s major OEM customers and strategic customers. This position offers an outstanding chance to create a significant impact in many areas, including customer interface, sales forecasting, supply and demand optimization, customer relationship management, and aligning customer expectations with company goals. Join us and be part of a highly dedicated team crafting the future of computing!
+
+What you’ll be doing:
+
+• Develop and implement sales operations strategies for OEM and strategic customers, including forecasting, sales account management, customer training, and education.
+
+• Partner with regional sales executives to define and operationalize key processes for sales forecasting, reporting, analytics, and operations.
+
+• Support account management teams throughout the sales cycle, including quotes, special pricing, deal tracking, rebates, end-of-life (EOL) terms, and revenue management.
+
+• Collaborate with NVIDIA’s Operations, Finance, Credit, Sales Management, and Product teams to maintain continuity of supply and drive process improvements.
+
+• Develop and standardize business reporting to support strategic analysis and internal business reviews.
+
+• Establish and maintain customer forecast and fulfillment metrics using historical data analysis, forecast waterfall analysis, and trend analysis.
+
+• Contribute to the development of regional Sales Operations processes to streamline workflows and improve efficiency.
+
+• Lead daily sales administration and account operations, including forecast management, customer demand fulfillment, customer-level supply commitments, and coordination of new product introductions (NPI), EOL transitions, and vendor-managed inventory (VMI) hub supply.
+
+What we need to see:
+
+• 5+ years Sales Operations experience with Tier One OEMs
+
+• Bachelor’s degree or equivalent experience.
+
+• Proven consultative and project management skills. Highly detailed oriented.
+
+• Ability to maintain confidentiality of sensitive information.
+
+• Capability to work efficiently in a dynamic high-tech environment.
+
+• Knowledge of the semiconductor industry and experience in supply chain management.
+
+• High energy and positive problem-solving attitude.
+
+• Ability to multi-task and strong organizational skills.
+
+• Self-motivated, creative, flexible, and able to use good judgment to accomplish tasks on schedule with minimal direction and supervision.
+
+• Strong revenue reporting and sales/financial analytical skills.
+
+NVIDIA is widely considered to be one of the technology world’s most desirable employers! We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative and autonomous, we want to hear from you!
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 92,000 USD - 143,750 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3730,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Sales-Operations-Analyst_JR2027317,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,13,142844,144914,160000,subset+state,Analyst Sales
+JR2027553,"Senior Content Engineer, KnowledgeOps",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, Remote",6,"US, Remote; US, TX, Remote; US, NY, Remote; US, OR, Remote; US, MA, Remote; US, WA, Seattle",true,TX;NY;OR;MA;WA,United States,,0,"Build the systems that deliver Simulation Technology knowledge to developers, partners, internal teams, and the AI agents that increasingly sit between them and our documentation. Our KnowledgeOps team sets the information architecture and quality standards for Omniverse, Isaac Sim, and OpenUSD documentation. You'll build the automation, pipelines, and AI-ready infrastructure that apply those standards at scale, and work with documentation leads to refine the architecture based on what you learn.
+
+You're a writer who builds: as comfortable in Git, CI, or Python as in a style guide, and fluent with LLMs in daily work. We build systems where the right way is easier than the wrong way. For you, that means turning documentation, standards, and tribal knowledge into tooling, templates, and self-service paths, so fewer people have to ask ""how do I…?""
+
+What you'll be doing:
+
+• Collaborate with documentation leads on knowledge architecture, sharing implementation feedback (what works, breaks, and scales) to refine content models, information architecture, and AI-readiness patterns
+
+• Build and run docs-as-code pipelines: Git authoring, CI/CD builds, linting, link and code-sample validation, and publishing
+
+• Make knowledge AI-ready: structure and package content for RAG, internal assistants, and agentic workflows, including llms.txt, MCP-accessible sources, agent skills and context kits, and evaluation sets for answer accuracy
+
+• Automate the content lifecycle with LLMs and scripting, from drafting and updating to auditing, with checks for freshness, code accuracy, and terminology drift, and human review where judgment matters
+
+• Encode standards (user stories, release readiness, onboarding, security guidance) into templates, validators, and guided workflows rather than static documents
+
+• Capture tribal knowledge from engineering, product, and operations, and turn it into playbooks, decision guides, and self-service paths
+
+• Measure outcomes such as time-to-first-success, support deflection, repeat questions, and AI answer quality, and use the data to decide what to build, fix, or retire
+
+• Partner with Engineering, Product, Security, Developer Relations, and Partner Programs so every release ships documented, discoverable, and supportable
+
+What we need to see:
+
+• Bachelor's degree or equivalent experience, plus 8+ years in technical writing, developer documentation, or developer experience for complex software platforms
+
+• Hands-on docs-as-code experience: Git, pull request review, Markdown/RST, static site generators (Sphinx, MkDocs, Docusaurus, or similar), and CI/CD
+
+• Working proficiency in Python or similar to automate content tasks, transform data, and integrate with APIs
+
+• Practical experience applying LLMs to content workflows (prompting, retrieval and grounding, output evaluation) and sound judgment about where AI can be trusted
+
+• Information architecture skills: content modeling, taxonomy, and metadata for both navigation and machine retrieval
+
+• Enough technical depth to read code and APIs, verify accuracy, and write working examples
+
+• A systems mindset: you fix the class of problem, not just the instance
+
+• A collaborative style: you turn design intent into working systems and give leads clear, constructive feedback grounded in implementation
+
+Ways to stand out from the crowd:
+
+• Experience building RAG pipelines, AI assistants, MCP servers, or agent skill and context libraries backed by documentation
+
+• Documentation experience in graphics, simulation, robotics, or real-time systems; familiarity with USD, Omniverse, Isaac Sim, or ROS
+
+• Content quality automation you've built, such as Vale or custom linters, doc test harnesses, or freshness monitoring
+
+• Measurable reductions in support load or onboarding time through self-service knowledge systems
+
+• Open source contributions or published work on docs-as-code, AI-assisted documentation, or knowledge engineering
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 144,000 USD - 230,000 USD for Level 4, and 176,000 USD - 276,000 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4847,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-Remote/Senior-Content-Engineer--KnowledgeOps_JR2027553,,https://www.linkedin.com/jobs/view/4479647316,2026-10-17,25,among first 25,1,matched,titleSearchFallback,2026-10-17,2026-10-17T11:38:54,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,true,,,,,,
+JR2027565,Senior Staff Software Engineer - AI Agent Platform,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"We are looking for a Sr. Engineer to design, build, and scale the infrastructure powering NVIDIA’s AI agent ecosystem. You will work at the intersection of distributed systems, developer platforms, and agentic AI — building the foundational services that enable teams across the company to develop, deploy, orchestrate, and operate autonomous AI agents at production scale.
+
+What you will be doing:
+
+• Build and develop platform services that manage the full agent lifecycle from registration through deployment, execution, and teardown
+
+• Architect multi-tenant Kubernetes execution environments with pod lifecycle management, per-tenant namespace isolation, persistent storage, admission policy enforcement, and identity propagation
+
+• Develop and maintain automated CI/CD pipelines using GitLab CI and ArgoCD, including reusable pipeline templates and deployment blueprints that standardize how agents are built across teams
+
+• Build framework-agnostic infrastructure supporting multiple agent SDKs and harnesses — lifecycle hooks, skills configuration, memory services, and OTEL instrumentation — so teams can onboard new agent frameworks without platform changes
+
+• Build and operate Kafka-based message pipelines and real-time event streaming using Redis PubSub and SSE
+
+• Develop data ingestion pipelines, access interfaces, and storage layers that power AI agent knowledge and context
+
+• Implement session management for state persistence, conversation history, and agent recovery across sessions
+
+• Develop multi-layer auth using OAuth 2.0, JWT validation, token exchange, and gateway integration, and manage secrets lifecycle with Vault (provisioning, rotation, container injection)
+
+• Partner with security teams on compliance, access controls, and approval workflows for agent operations
+
+What we need to see:
+
+• Bachelor's or Master's degree in Computer Science, Engineering, or related field (or equivalent experience), with 12+ years in software engineering — ideally in platform engineering, infrastructure, or developer tools
+
+• Experience building and scaling AI agents in production using frameworks like Claude Code, Codex, or LangGraph
+
+• Deep Kubernetes expertise including pod orchestration, persistent storage, RBAC, and multi-cluster management
+
+• Strong Python skills with production API experience using FastAPI, Flask, or similar async frameworks
+
+• Proven track record designing distributed systems with Kafka, Redis, and MongoDB or PostgreSQL
+
+• Expertise building and managing robust CI/CD pipelines using GitLab CI and ArgoCD for continuous delivery to Kubernetes
+
+• Experience designing AI data platform components (ingestion pipelines, vector stores, retrieval APIs, data preprocessing workflows) and building developer-facing platform APIs consumed by multiple engineering teams
+
+• Solid grasp of auth and identity: OAuth 2.0, JWT, token exchange, and secrets management with Vault
+
+• History of leading sophisticated technical projects such as migrations or greenfield platform builds, with strong interpersonal skills to drive alignment across teams and write clear design documents
+
+Ways to stand out from the crowd:
+
+• Experience building or operating AI agent platforms or agentic workflow systems, with hands-on expertise in agent protocols and frameworks like MCP, A2A, LangChain, or LangGraph
+
+• Hands-on experience with RAG architectures, embedding pipelines, and vector databases (Milvus, Pinecone, or Weaviate)
+
+• Full-stack skills with React or Vue for building developer portals and dashboards
+
+• Contributions to open-source infrastructure or platform tooling
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 200,000 USD - 322,000 USD for Level 5, and 248,000 USD - 391,000 USD for Level 6.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4511,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Staff-Software-Engineer---AI-Agent-Platform_JR2027565,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,553,173229,201467,226158,subset+state,Software Engineer
+JR2027676,"Machine Learning Engineer, GeForce G-Assist",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"At NVIDIA, we’re building GeForce G-Assist — an on-device AI assistant that combines Small Language Models (SLMs), retrieval systems, and hybrid cloud capabilities to deliver responsive, context-aware assistance inside the GeForce ecosystem. We work closely across engineering and product teams to ensure G-Assist performs reliably in real-world scenarios.
+
+What you'll be doing:
+
+• Together, we focus on how models behave in production, not just on benchmarks. Evaluate and improve Small Language Models used in GeForce G-Assist, with an emphasis on accuracy, robustness, and conversational reliability. Identify and mitigate conversation and context contamination, including state drift, prompt leakage, and retrieval cross-talk.
+
+• Work with SLM and VLM architectures to support text and multimodal interactions. Collaborate on hybrid architectures that combine local SLMs with cloud-based models. We value engineers who enjoy thinking across the full system—from model behavior to runtime performance.
+
+• Optimize local inference using llama.cpp, including quantization, memory usage, and performance tuning. Read, write, and optimize C/C++ code in performance-critical paths.
+
+• Design and integrate retrieval-augmented generation (RAG) systems that ground responses in system and user context. Support agentic AI workflows, enabling planning, tool use, and multi-step execution.
+
+What we need to see:
+
+• 5+ years of validated experience in system software or a related field, with an M.S. or higher degree in Computer Science, Data Science, Engineering, or a related field (or equivalent experience). We’re looking for teammates who enjoy solving real problems, learning as they go, and collaborating in a tight-knit environment.
+
+• Strong ability to read and write C/C++ code in systems-level or performance-sensitive environments, along with proficiency in Python. Hands-on experience with llama.cpp or similar local inference frameworks.
+
+• Hands-on experience evaluating Small Language Models, including task-based and conversational testing, with an understanding of conversation dynamics, long-context behavior, and contamination challenges.
+
+• Knowledge of SLM and VLM architectures and their trade-offs, experience with retrieval technologies and language-model integration, and familiarity with agentic AI patterns such as tool use and planning.
+
+Ways to stand out from the crowd:
+
+• Experience contributing to language or multimodal models that power user-facing products, features, or workflows.
+
+• A track record of collaborating with product, platform, or systems teams to balance model capability, performance, and user experience.
+
+• Demonstrated ability to translate user needs or feedback into measurable improvements in model behavior or system reliability.
+
+We are widely considered to be one of the technology world's most desirable employers, and as a result, we have some of the most forward-thinking and hardworking people in the world working for us. If you're passionate, creative, and driven, we'd love to have you join the team. With competitive salaries and a generous benefits package, we are considered to be one of the technology world's most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us, and due to unprecedented growth, our exclusive engineering teams are rapidly growing. We want to hear from you if you're a creative and autonomous engineer with a real passion for technology.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 152,000 USD - 241,500 USD for Level 3, and 184,000 USD - 287,500 USD for Level 4.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4389,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Machine-Learning-Engineer--GeForce-G-Assist_JR2027676-1,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,1,,2026-10-20,3,,,2026-10-16,,,,,,,,
+JR2027783,"Senior Machine Learning Engineer, Prediction - Autonomous Driving",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",2,"US, CA, Santa Clara; US, CA, Remote",true,CA,United States,,0,"Intelligent machines powered by Artificial Intelligence computers that can learn, reason and interact with people are no longer science fiction. GPU Deep Learning has provided the foundation for machines to learn, perceive, reason and solve problems. Now, NVIDIA’s GPU runs Deep Learning algorithms, simulating human intelligence, and acts as the brain of computers, robots and self-driving cars that can perceive and understand the world.
+
+We are now looking for an extraordinary Senior Engineer to develop and productize NVIDIA’s autonomous driving solutions. As a member of our prediction team, you will be driving solutions for prediction modules that are responsible for producing multi-modal scene consistent prediction for other road participants. You will be challenged to improve robustness and accuracy as well as efficiency of the solutions to fully enable autonomous driving anywhere and anytime.
+
+What You’ll Be Doing:
+
+• Designing end-to-end solutions for Prediction and AV stack using state of the art ML techniques to enable agents prediction across various driving environments from complex intersections to rural curvy roads to multi-level highways.
+
+• Applied research and development of innovative deep learning models, including end-to-end models
+
+• Develop generalizable approaches to support diverse ODDs and Country/region expansion
+
+• Drive and prioritize data-driven development by working with large data collection and labeling teams to bring in high value data to improve prediction system accuracy. Efforts will include data collection prioritization and planning, labeling prioritization, labeling efficiency optimization, so that value of data is maximized
+
+• Leverage data simulation and augmentation for solving extreme scenarios
+
+• Productize the developed solutions by meeting product requirements for safety, latency, and SW robustness.
+
+What We Need to See:
+
+• Minimum Requirement: PhD with 6+ years, MS with 10+ years, or BS (or equivalent experience) with 12+ years of meaningful experience in Computer Science, Computer Engineering, or a related technical field.
+
+• Hands-on work experience in developing deep learning and algorithms to solve sophisticated real world problems, and proficiency in using deep learning frameworks (e.g., PyTorch).
+
+• Experience in data-driven development and collaboration with data and ground truth teams.
+
+• Strong programming skills in python and/or C++.
+
+• Outstanding communication and teamwork skills as we work as a tightly-knit team, always discussing and learning from each other.
+
+Ways to Stand Out from the Crowd:
+
+• Proven expertise in developing generalizable ML solutions for autonomous driving or robotics.
+
+• Hands-on experience in developing and deploying DNN-based solutions to embedded platforms for real time applications.
+
+• Proven expertise in deep learning backed up by technical publications in leading conferences/journals.
+
+• Expertise with Transformers, BEV architectures, E2E ML systems.
+
+• Having over 2 years of experience in technical leadership involving significant technical and organizational challenges is highly advantageous.
+
+Join us and help define the future of reliable, data-driven autonomous driving.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 224,000 USD - 356,500 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4063,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer--Prediction---Autonomous-Driving_JR2027783,,https://www.linkedin.com/jobs/view/4479646339,2026-10-17,25,among first 25,1,matched,titleSearchFallback,2026-10-17,2026-10-17T11:39:31,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,true,,,,,,
+JR2027852,Senior Technical Program Manager - Autonomous Vehicles Platform,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA is defining the next era of computing, tapping into the unlimited potential of AI to power computers, robots, and self-driving cars that can understand the world. Our DRIVE platform gives automakers, Tier 1 suppliers, and start-ups the power and flexibility to develop and deploy breakthrough AI systems for autonomous vehicles — today powering over 270 partners in the development of autonomous cars, trucks, shuttles, and taxis!
+
+We are looking for a creative and experienced Senior Technical Program Manager to join the NVIDIA DRIVE AV Platform team and help bring NVIDIA's autonomous vehicle platform to the world! You will lead a focused effort to productize groundbreaking solutions that will redefine transportation and the growing field of self-driving cars. You will work with dedicated multi-functional engineering teams across vehicle subsystems — software, hardware, validation, and systems — to integrate their work into our autonomous DRIVE SW platform, while achieving or exceeding all relevant NVIDIA and automotive standards & guidelines. The work is exciting, impactful, and fast-paced. We have customers and competition.
+
+What you'll be doing:
+
+• Lead multiple, concurrent complex programs & projects across the autonomous driving platform.
+
+• Drive new platform technologies from bringup to production across software, hardware, vehicle, and validation teams.
+
+• Manage automotive software development and releases in a highly dynamic environment.
+
+• Define scope and manage project roadmaps, schedules, and milestones with cross-functional engineering teams.
+
+• Handle risks and resolve issues that affect release scope, schedule, and quality.
+
+• Identify and manage cross-functional dependencies proactively.
+
+• Improve processes and procedures within the team. Streamline day-to-day operations.
+
+• Communicate regularly to manage expectations and provide timely updates on progress, risks, and decisions.
+
+What we need to see:
+
+• BS/MS in Computer Science or related field (or equivalent experience)
+
+• 12+ years of industry and Technical Program Management experience in software engineering and releasing commercial products.
+
+• Track record of delivering scalable programs and process improvements in fast-paced, multi-functional environments.
+
+• Experience driving adoption of new and improved process workflows.
+
+• Strong technical acumen across software and hardware platforms.
+
+• Strong communication, organizational, and leadership skills.
+
+• Self-starter with a “can-do” attitude.
+
+Ways To Stand Out From The Crowd:
+
+• Previous experience & lived a life as a software developer or software QA engineer. Understand the pressures they are under, allowing you to more optimally lead them in projects as well as process.
+
+• Background in embedded systems (OS, platform drivers, sensors, middleware) or other software close to the hardware stack.
+
+• Experience in Automotive system integration.
+
+• Experience with Jira and/or JAMA, to the point that you can be comfortable mentoring an engineering team how to use these tools with agility.
+
+• Expertise in Agile and Scrum methodology.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 200,000 USD - 322,000 USD for Level 5, and 240,000 USD - 379,500 USD for Level 6.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4021,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Program-Manager---Autonomous-Vehicles-Platform_JR2027852,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,23,192428,201323,223142,subset+state,Technical Program Manager
+JR2027873,Senior Perception Software Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Remote",4,"US, CA, Remote; US, NE, Remote; US, NY, Remote; US, WA, Remote",true,CA;NE;NY;WA,United States,,0,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
+
+Intelligent machines powered by Artificial Intelligence computers that can learn, reason and interact with people are no longer science fiction. GPU Deep Learning has provided the foundation for machines to learn, perceive, reason and solve problems. Now, NVIDIA’s GPU runs Deep Learning algorithms, simulating human intelligence, and acts as the brain of computers, robots and self-driving cars that can perceive and understand the world.
+
+We are now looking for a passionate Software Engineer to design, develop, and productize NVIDIA's autonomous driving solutions. As a member of our perception team, you will build world-class perception solutions. You will design and implement perception SW component and be challenged to improve robustness, efficiency, reusability of the software component working closely with the world class perception engineers and researchers.
+
+What you'll be doing:
+
+• Execute full software development life cycle (SDLC).
+
+• Write well-designed, testable code.
+
+• Integrate perception (but not limited) software components into a fully functional software system.
+
+• Develop software verification plans and quality assurance procedures.
+
+• Document and maintain software functionality.
+
+• Solve, debug and upgrade existing systems.
+
+• Stay in sync with project plans and industry standards
+
+• Deploy state-of-the art perception DNN models to embedded platforms.
+
+• Analyze and improve the system using both real and synthetic benchmark data.
+
+What we need to see:
+
+• BS, MS or PhD in Computer Science or related fields (or equivalent experience).
+
+• Proven work experience (12+ years) on embedded platforms for real-time applications as a Software Engineer or Software Developer
+
+• Strong programming skills in C++ and Python.
+
+• Experience with test-driven development.
+
+• Experience with disciplined, design based approach to software development.
+
+• Proficiency in software engineering tools.
+
+• Ability to document requirements and specifications.
+
+• Outstanding communication and collaboration skills as we work as a tightly-knit team, always discussing and learning from each other.
+
+Ways to stand out from the crowd:
+
+• Experience with CUDA / SIMD
+
+• Hands on background in deploying DNN models to embedded platforms for real-time applications.
+
+• Hands-on experience in using simulated / synthetic data to improve accuracy of machine learning models.
+
+• Background with deep learning framework (e.g., TensorFlow, PyTorch, etc).
+
+• Experience with integration and testing on real hardware / robotic platforms
+
+NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative and autonomous, we want to hear from you!
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 224,000 USD - 356,500 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4337,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Perception-Software-Engineer_JR2027873,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,553,173229,201467,226158,subset+state,Software Engineer
+JR2028021,Sales Operations Analyst,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",2,"US, CA, Santa Clara; US, CA, Remote",true,CA,United States,,0,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
+
+We are hiring a talented Sales Operations Analyst based in Santa Clara, CA to support NVIDIA’s North America and Latin America (NALA) Enterprise Sales division. This role partners with Regional Industry Sales Leaders (RISLs), Regional Industry Sales Managers (RISMs), Account Managers (AMs), and senior sales leadership. Responsibilities include improving business visibility, facilitating effective resource use, and developing scalable operational procedures throughout the organization.
+
+What you'll be doing:
+
+• Manage the NALA resource and headcount-planning process by collecting requests and business reasons from sales leaders. Facilitate prioritization, monitor approved and open roles, and prepare executive materials for leadership reviews.
+
+• Support Zoom onboarding and enablement for the sales organization, including coordinating user access, training, office hours, adoption activities, communications, usage reporting, and issue resolution.
+
+• Own the operating process for industry and territory reviews, including developing standardized templates, coordinating inputs, preparing performance analyses, scheduling leadership discussions, documenting decisions, and tracking follow-up actions.
+
+• Analyze territory and account performance to identify coverage gaps, productivity concerns, business risks, and areas requiring additional leadership attention.
+
+• Coordinate the sales-out target-setting process across NALA industries, teams, and Account Managers, working closely with Finance and sales leadership to ensure accurate and timely allocations.
+
+• Develop and maintain dashboards, trackers, reporting tools, and centralized resources that give the organization a reliable, one-stop view of account, organizational, headcount, and business information.
+
+• Produce recurring and ad hoc data analyses for RISLs, RISMs, and AMs, translating complex information into clear insights that support business decisions and field execution.
+
+• Support Salesforce account governance and data quality, including account ownership, reassignment, visibility, and opportunity-management issues.
+
+What we need to see:
+
+• Bachelor’s degree or equivalent experience and 5+ years of experience in sales operations, business operations, revenue operations, analytics, or a related field.
+
+• Demonstrated ability to manage complex operational processes involving multiple collaborators, competing priorities, and firm deadlines.
+
+• Strong analytical abilities and the capacity to convert business data into clear insights, suggestions, and communications suited for executives.
+
+• Advanced Microsoft Excel and PowerPoint skills, with experience developing analytical models, dashboards, trackers, and leadership-ready presentations.
+
+• Experience with Salesforce and business-intelligence tools such as Power BI.
+
+• Strong written and oral communication skills, with the capability to engage successfully with senior leaders and teams spread across different locations.
+
+• Exceptional attention to detail and a high standard for accuracy, completeness, and presentation quality.
+
+• Excellent organizational, project-management, and time-management skills, with a logical approach to problem-solving and prioritization.
+
+Ways to stand out from the crowd:
+
+• Experience owning resource planning, target allocation, territory reviews, business reviews, or sales-performance management processes.
+
+• Ability to move beyond reporting by identifying meaningful business insights, recommending actions, and tracking outcomes.
+
+• Experience developing scalable operating rhythms and replacing fragmented workflows with standardized, repeatable processes.
+
+• Experience onboarding and driving adoption of sales-productivity, collaboration, or AI-enabled tools.
+
+• An upbeat, collaborative approach with exacting standards and a strong sense of ownership.
+
+.
+
+Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package. As you plan your future, see what we can offer to you and your family www.nvidiabenefits.com/
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 92,000 USD - 143,750 USD for Level 3, and 128,000 USD - 195,500 USD for Level 4.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",5707,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Sales-Operations-Analyst_JR2028021,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,13,142844,144914,160000,subset+state,Analyst Sales
+JR2028060,Agent Evaluation and Self-Improvement Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"Autonomous agents now do real work across NVIDIA, and every piece underneath them keeps changing: models, harnesses, tools, skills, and plugins. Evaluation is how a team knows whether a change made an agent better or quietly made it worse. We're looking for a principal engineer to set evaluation strategy at every layer, from individual skills and MCP servers to whole agents and products, and to design how agents use those results to improve themselves.
+
+Agents can already rewrite the skills and plugins they run on, then test whether the change helped. Making that loop trustworthy is the hard part. What does it take for an agent to get better on its own, and prove the improvement is real? We're building a system that answers that question for every agent at NVIDIA. Come build it with us!
+
+What you'll be doing:
+
+• Build evaluation that works the same across harnesses, with automated checks on every change that catch regressions before users do.
+
+• Mine production traces for failures, new usage patterns, missing skills and tools, cost and latency hot spots, and successful runs. Turn them into eval cases and improvement signals.
+
+• Evaluate the eval datasets themselves: coverage of real usage, duplicate cases, and how closely they match production.
+
+• Build the self-improvement loop for evolving harnesses: agents propose changes to their own skills, plugins, and harness configuration, and sandboxed evals test each one. Only measurable gains ship, with human sign-off and limits agents can't change.
+
+• Create realistic enterprise environments: sandboxed replicas of issue trackers, code repositories, chat, and internal APIs, filled with synthetic or anonymized data, where agents safely run long, end-to-end tasks.
+
+• Measure multi-agent swarms as a team: how agents split work, whether handoffs succeed, and whether permissions hold at every hop. Record how long each task takes and how many tokens it uses.
+
+• Keep evals honest: calibrate model and agent judges against human labels. Catch agents that cheat, such as working backward from expected answers or reaching data and tools they shouldn't access. We work closely with product, platform, and hardware teams throughout NVIDIA, and we help shape open evaluation standards and benchmarks across the industry.
+
+What we need to see:
+
+• BS or MS in Computer Science, Engineering, or related field (or equivalent experience)
+
+• 12+ years building large-scale systems, including evaluation systems for ML or agents and the data pipelines that feed them
+
+• Hands-on experience building and evaluating agents on an open or closed agent harness
+
+• Solid grounding in experiment design: statistical significance, variance across repeated runs, and A/B testing
+
+• Experience setting technical direction across teams as a senior individual contributor
+
+• Proficiency in Python, Go, Rust, or similar
+
+Ways to stand out from the crowd:
+
+• Built self-improving or self-evolving agent systems that get better from their own eval results
+
+• Shipped an agent benchmark, eval framework, or simulated test environment adopted by other teams
+
+• Detected reward hacking or eval gaming, or built oversight for systems that modify themselves
+
+• Built domain evaluations, such as for chip design or hardware verification
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 224,000 USD - 356,500 USD for Level 5, and 272,000 USD - 431,250 USD for Level 6.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4177,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Agent-Evaluation-and-Self-Improvement-Engineer_JR2028060-1,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,1,,2026-10-20,3,,,2026-10-16,,,,,,,,
+JR2028088,"Senior Architect - Data Processing Systems, Analytics and Data Intelligence",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",3,"US, CA, Santa Clara; US, NY, New York; US, Remote",true,CA;NY,United States,,0,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
+
+Are you ready to build the future of data processing with NVIDIA? As a Senior Architect in Data Processing Systems for Analytics and Data Intelligence (ADI), you'll define and improve hardware and software architectures for diverse set of data processing workloads. Join us in our mission to deliver outstanding performance at scale, using our accelerated data processing platform that combines CPUs, GPUs, high-bandwidth networking, and more!
+
+What you'll be doing:
+
+• Co-design future architectures for NVIDIA's data processing platforms, targeting performance, efficiency, and cost.
+
+• Engage deeply with end users, open-source communities, ISVs, storage partners, and CSPs to improve their experience by incorporating customer insights into roadmaps and reference architectures.
+
+• Drive full-stack performance optimization, from CUDA kernels and accelerated libraries to system-level IO, shuffle, compression, and data movement.
+
+• Collaborate with CPU, GPU, and platform architects to shape hardware features using workload analysis for hardware-software co-design.
+
+• Partner with internal teams to build and apply constraint-based frameworks and optimization solvers to navigate complex design trade-offs across competing metrics.
+
+• Develop benchmarking frameworks to evaluate performance sensitivities and guide hardware-software co-optimization
+
+• Analyze production workloads throughout the data processing landscape to identify compute motifs, IO patterns, and optimization opportunities across the full platform stack.
+
+What we need to see:
+
+• MS or PhD in Computer Science, Computer Engineering, Electrical Engineering, or a related field, or equivalent experience.
+
+• 8+ years of experience in distributed data platforms, databases, systems engineering, performance architecture, accelerated computing, or HW/SW co-design.
+
+• Extensive knowledge in one or more of these areas: data processing systems (databases, query engines, or vector search), accelerated computing, high-performance IO, CPU/GPU architecture, or large-scale performance analysis.
+
+• Experience evaluating system-level trade-offs: compute, IO provisioning, memory subsystem development, network topology, and storage tiering across diverse workloads a strong plus.
+
+• Ability to translate sophisticated system analysis into clear, actionable recommendations for silicon architects, software engineers, and executive leadership.
+
+• Ability to work across matrixed organizations to drive alignment and deliver results.
+
+Ways to stand out from the crowd:
+
+• Hands-on experience with GPU-accelerated data processing (cuDF, RAPIDS, cuVS, CUDA).
+
+• Deep familiarity with structured data engines and/or vector database systems.
+
+• Experience with mathematical optimization solvers and understanding of optimization fundamentals.
+
+• Background in network/storage architecture.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD for Level 4, and 224,000 USD - 356,500 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4453,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Architect---Data-Processing-Systems--Analytics-and-Data-Intelligence_JR2028088-1,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,1,,2026-10-20,3,,,2026-10-16,,,,,,,,
+JR2028160,Senior Silicon Product Engineer – Manufacturing,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA’s Silicon Co-Design Group sits at the crossroads of architecture, silicon, systems, and manufacturing, where first-principles thinking and engineering judgment at the highest level translate directly into product outcomes at scale. Our team gets every GPU, SoC, and CPU silicon program from first power-on to high-volume production!
+
+We are hiring a Senior Silicon Product Engineer – Manufacturing to join our Testability, Manufacturability, Reliability & Quality (TMRQ) team. In this role, you will co-design and implement SLT Production diagnostics for silicon features in a high-volume manufacturing environment, verify POR specifications, and support post-silicon validation for some of the industry’s most complex semiconductor chips. You should have experience defining and validating SLT production coverage specifications on silicon and translating product requirements into effective test coverage that delivers quality, yield, and efficiency at scale. Hands-on lab experience with system-level post-silicon bring-up and silicon debugging is required. This role sits at the intersection of multi-functional HW/SW teams and Production Operations to make manufacturing an outstanding part of the overall Silicon co-design cycle, production release, and HVM testing! The exceptional hire continuously improves high-volume manufacturing workflows and products multi-functionally and uses AI deliberately to drive impact while managing risk.
+
+What you will be doing:
+
+• Partner multi-functionally with HW engineering teams such as Silicon PVT design and characterization teams, IO design and validation teams, system feature owners, SLT and BLT Production Operations, etc., to determine test coverage and constraints to resolve appropriate SLT test conditions, test content, and flows for high-volume manufacturing screens.
+
+• Partner with SW and platform teams to support and improve SLT testing infrastructure, debug knobs, and data collection features needed to support manufacturing screens effectively.
+
+• Co-design SLT testability scope and coverage enhancements for Nvidia's manufacturing testing with a focus on high-volume system-level manufacturing screens.
+
+• Prototype and fine-tune speed, power, circuits, yield, and quality for effective silicon coverage in the SLT socketed environment.
+
+• Co-design, develop, and maintain SLT testing flows and incorporate takeaways from silicon and correlate to design.
+
+• Define procedures to facilitate Silicon correlation activities between production testing infrastructure and internal Si characterization and diagnostics programs.
+
+• Support customer-facing and quality teams during customer escalations to understand the issues and fix gaps identified in SLT production coverage.
+
+• Drive alignment for manufacturability, test time optimization and reduction, cost vs. coverage tradeoffs, etc., to evaluate the effectiveness of new tests.
+
+• Initiate and drive process improvements and preventative actions through root cause analysis and data analytics.
+
+What we need to see:
+
+• Bachelor’s or Master’s Degree or equivalent in Microelectronics/Electrical/Electronic/Computer Engineering or equivalent experience.
+
+• 8+ years of relevant proven experience in silicon Post-silicon PVT validation and/or High-volume manufacturing testing for sophisticated SoCs, GPUs, CPUs, or similar.
+
+• Hands-on lab experience with silicon bring-up, lab debug, test content bring-up, and correlation to Si characterization, yield, and coverage optimization.
+
+• Strong EE fundamentals, device physics, knowledgeable in Silicon design, statistics, STA concepts, signal integrity, fault analysis, sampling, and computer architecture.
+
+• Excellent interpersonal skills and demonstrated ability to drive multi-functional alignment around plans, dependencies, and sign-off criteria.
+
+• Prior ownership of manufacturing test strategy for a major silicon product (e.g., GPU/SoC/CPU) from early planning through ramp to QS/production.
+
+• Strong data analysis skills. Prior experience working with volume data is a plus.
+
+• Good understanding of firmware/driver structures and their interaction with HW.
+
+• Problem-solving, debugging, analysis, and logical reasoning skills with examples to prove it.
+
+• Experience with Python, BASH, Linux, and scripting.
+
+Ways to stand out above the crowd:
+
+• Outstanding work ethic and up-leveling discussions to solve the real problems
+
+• Native use of AI tools to accelerate production testing and debug workflows
+
+• Battle-tested on GPUs, CPUs, AI accelerators, or other large-scale SoCs — you’ve seen firsthand how complexity at scale reshapes the failure landscape and demands a different level of engineering intuition.
+
+• Co-designed or led multi-functional alignment on production methodologies adopted by other teams in a High Volume Manufacturing(HVM) environment.
+
+#LI-Hybrid
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 168,000 USD - 264,500 USD for Level 4, and 196,000 USD - 310,500 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",5766,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Silicon-Product-Engineer---Manufacturing_JR2028160,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,3,186450,204901,204901,subset,Product Engineer
+JR2028164,Senior Robotics Software Engineer,NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"As a Robotics Software Engineer on the Isaac Applications Team, you will bring together the software and hardware that enable Physical AI robots to operate in the real world. You will build working robotic systems and end-to-end workflows for engineers and AI agents. These workflows connect data, simulation, and real-world deployment to continuously expand and improve robot capabilities.
+
+We’re looking for strong software engineering skills, broad robotics knowledge, and enthusiasm for working hands-on with physical robots when taking ideas into practice. You enjoy understanding how components interact, solving problems across their boundaries, and seeing them come together to deliver new robot capabilities.
+
+What you will be doing:
+
+• Lead the forefront of Physical AI progress in both simulated and real humanoid robots by building the humanoid reference platform that features NVIDIA's robotics technologies.
+
+• Build end-to-end workflows to develop, evaluate, and deploy increasingly autonomous and interactive robot capabilities.
+
+• Extend our platform to new robot embodiments and demonstrate its adaptability through hands-on integration and validation. Address real-world compute, latency, and bandwidth constraints on physical hardware.
+
+• Collaborate across teams in Shanghai, America, and Europe to connect capabilities and deliver reliable robotic systems.
+
+What we need to see:
+
+• Master’s degree in Computer Science, Robotics, Engineering, or a related field (or equivalent experience).
+
+• 8+ years of relevant industry experience working on robotics software.
+
+• Hands-on experience integrating, deploying, and testing software on physical robots, and confidence working directly with hardware when needed.
+
+• Experience deploying and evaluating learned policies to control physical robots.
+
+• Broad working knowledge of robotics software, hardware, AI, and agentic systems. We value an understanding of how these components interact within a complete system.
+
+• Strong problem-solving skills, including tracing issues across software and hardware boundaries. Ability to work independently through ambiguous technical challenges.
+
+• Interest in designing robotics interfaces for agent-driven operation, with the ability to learn and evaluate new approaches.
+
+Ways To Stand Out From The Crowd:
+
+• Experience integrating humanoid robots or mobile manipulators, from initial bring-up through reliable demonstrations of robot capabilities.
+
+• Experience diagnosing and resolving system-level challenges across robotics software and hardware.
+
+• Experience building end-to-end robotics workflows where AI agents perform substantial portions of the work and guide engineers through data collection, training, evaluation, and deployment.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD for Level 4, and 224,000 USD - 356,500 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",3658,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Robotics-Software-Engineer_JR2028164,,https://www.linkedin.com/jobs/view/4479635888,2026-10-17,25,among first 25,1,matched,titleSearchFallback,2026-10-17,2026-10-17T11:38:57,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,true,553,173229,201467,226158,subset+state,Software Engineer
+JR2028224,"Senior System Software Engineer, Display Security",NVIDIA,2100 NVIDIA USA,Full time,Posted Yesterday,2026-10-16,1,"US, CA, Santa Clara",1,"US, CA, Santa Clara",false,CA,United States,,0,"NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in an inclusive, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
+
+NVIDIA is searching for a creative, highly motivated and independent engineer with expertise in system software with security background to join the SOC System Software organization. This position offers the opportunity to have real impact in a dynamic, technology-focused company impacting SOC based product lines ranging from autonomous vehicles, robotics, consumer graphics, and edge AI.
+
+What You’ll Be Doing:
+
+• Lead all HDCP (High-bandwidth Digital Content Protection) activities across SoC-based projects, leading the feature roadmap, protocol implementation, compliance certification, and delivery across chips, platforms, and products.
+
+• Develop and maintain secure-engine firmware on a RISC-V based secure processor.
+
+• Deliver end to end HDCP solution across multiple software stacks spanning Linux, Android for automotive, and consumer platforms.
+
+• Drive firmware production signing readiness, rollback-prevention strategies, and key-provisioning workflows.
+
+• Serve as the security primary contact for the team, leading all aspects of threat modeling, static analysis, vulnerability tracking and remediation, and security compliance across all projects.
+
+• Collaborate with multi-functional teams spanning HW design, boot firmware, power management, validation, and GPU display to align on architecture and delivery.
+
+What we need to see:
+
+• BS or MS in Computer Science, Electrical Engineering, or equivalent experience.
+
+• 8+ years of experience in embedded systems, firmware, or system software development.
+
+• Strong RISC-V or embedded processor firmware development experience with privilege-level isolation and secure boot.
+
+• Deep understanding of cryptography and security protocols, specifically HDCP 1.x/2.x authentication, key management, and repeater topology.
+
+• Strong familiarity of how HDCP integrates with display protocols, e.g. HDMI, DisplayPort.
+
+• Consistent record leading cross-team technical initiatives from architecture through certification and delivery.
+
+Ways to stand out from the crowd:
+
+• Hands-on experience with HDCP compliance certification.
+
+• Experience with SoC-level system integration: firewalls, fuse controllers, privilege isolation, and secure carveouts.
+
+• Experience productizing DRM protocols (Widevine, PlayReady).
+
+• Familiarity with automotive security standards (ISO 21434, UN R155).
+
+Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package. As you plan your future, see what we can offer to you and your family www.nvidiabenefits.com/
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD for Level 4, and 224,000 USD - 356,500 USD for Level 5.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until October 20, 2026.
+
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering an inclusive work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.",4205,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Software-Engineer--Display-Security_JR2028224,,,,,,,not_checked,,2026-10-17,,2026-10-17,,1,startDate,false,0,,2026-10-20,3,,,2026-10-16,,,401,173239,184974,207095,subset+state,Engineer Senior Systems Software
