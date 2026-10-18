@@ -1,9 +1,9 @@
 {
  "label": "haidilao_us_fulltime",
  "rows": 60,
- "kept": 56,
- "new": 4,
- "ghosts_dropped": 1,
+ "kept": 60,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -14,5 +14,5 @@
  "state_rows": 60,
  "banded": 0,
  "lca_pools": 4,
- "snapshot": "2026-10-17"
+ "snapshot": "2026-10-18"
 }

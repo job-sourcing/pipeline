@@ -1,9 +1,9 @@
 {
  "label": "tencent_us_fulltime",
  "rows": 42,
- "kept": 41,
- "new": 1,
- "ghosts_dropped": 2,
+ "kept": 42,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -14,5 +14,5 @@
  "state_rows": 236,
  "banded": 3,
  "lca_pools": 42,
- "snapshot": "2026-10-17"
+ "snapshot": "2026-10-18"
 }
