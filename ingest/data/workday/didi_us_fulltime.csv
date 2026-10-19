@@ -96,32 +96,6 @@
 </div>
 <p class=""ql-direction-ltr ql-long-10000202573""> </p>
 <p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">The base salary range for this full-time position is $169,783 - $351,000 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.<br><br><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on </em><em><a class=""DBdARXcCrTyZgKqxyZRgbwwFPsuTbimRw "" href=""https://v.didi.cn/AQnxlBa"" target=""_blank"" data-test-app-aware-link="""">https://v.didi.cn/AQnxlBa</a></em></span></p>",6510,https://job-boards.greenhouse.io/didi/jobs/8198302,,https://www.linkedin.com/jobs/view/4466437679,2026-09-12,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:03:15,2026-10-19,,37,startDate+linkedin,true,0,,,,,Artificial Intelligence,2026-09-12,,true,,,,,,
-8168501,"Software Engineer, Motion Planning ",didi,DiDi Labs,,Posted 23 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p><strong>About The Company<br><br></strong>DiDi's autonomous driving unit was established in 2016 with the mission of developing Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&D, product application, and business expansion. We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi's specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.<br><br><strong>About The Role<br><br></strong>We are seeking a <strong>Software Engineer /Sr. Software Engineer</strong> to join our team and develop the core decision-making and motion planning systems for our autonomous vehicles. In this role, you will be responsible for creating the algorithms that enable smooth, safe, and intelligent navigation in complex environments. You will tackle challenges across the full motion planning stack, from high-level behavioral reasoning to low-level trajectory optimization.<br><br><strong>Responsibilities<br></strong></p>
-<ul>
-<li>Design and implement the core motion planning logic that determines the vehicle's high-level actions (e.g., lane changes, merges, yields, and interactions with other agents).</li>
-<li>Develop and optimize the motion planning algorithms that execute behavioral decisions, integrating Geometry Reasoning (path) and Speed Reasoning (velocity) into a cohesive trajectory.</li>
-<li>Architect and enhance the geometry system for generating geometrically feasible and compliant paths.</li>
-<li>Architect and refine the velocity system for generating context-aware, comfortable, and safe velocity profiles.</li>
-<li>Model complex driving scenarios and agent interactions to create a robust world model for the behavioral planner.</li>
-<li>Design different costs for trajectory ranking to trade off ETAs, comfort and safety of the vehicle behaviors.</li>
-<li>Conduct in-depth analysis, testing, and debugging of the system's performance in various scenarios, leading root cause investigations.</li>
-<li>Collaborate with Prediction, Perception, and Control teams to ensure a seamless flow from environmental understanding to physical vehicle motion.<br><br></li>
-</ul>
-<p><strong>Qualifications<br></strong></p>
-<ul>
-<li>B.S./M.S. in Computer Science, Robotics, or a related field.</li>
-<li>Experience in autonomous systems, robotics, or automotive software development.</li>
-<li><strong>Strong proficiency in C++</strong> for implementing complex, real-time algorithms.</li>
-<li>Solid understanding of robotics fundamentals, including decision-making, motion planning, control theory, trajectory ranking, search and optimization algorithms etc.</li>
-<li>Related experience in one or more of the following: motion planning, trajectory optimization and world environment reasoning, trajectory ranking and cost design.<br><br></li>
-</ul>
-<p><strong>Preferred Qualifications<br></strong></p>
-<ul>
-<li>PhD or internship experience related to robotics planning system designs.</li>
-<li>Knowledge of vehicle dynamics and longitudinal/lateral control systems.</li>
-<li>Solid understanding of machine learning principles, reinforcement learning and related algorithms.<br><br></li>
-</ul>
-<p class=""isSelectedEnd"">The base salary range for the Software Engineer position is $141,463–$235,182 annually, and for the Senior Software Engineer position is $169,783–$282,264 annually, in addition to bonus, equity, and benefits. Our salary ranges are determined by the role, level, and location. Within the applicable range, individual compensation is based on the work location as well as other factors, including job-related skills, experience, and relevant education and training.<br><br><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on <a class=""riUkhhEIAtDiibzrlddIVaKubAlAoKyg "" href=""https://v.didi.cn/AQnxlBa"" target=""_blank"" data-test-app-aware-link="""">https://v.didi.cn/AQnxlBa</a></em></p>",4219,https://job-boards.greenhouse.io/didi/jobs/8168501,,https://www.linkedin.com/jobs/view/4461560338,2026-09-01,55,55 applicants,,matched,title,2026-09-24,2026-09-24T13:03:19,2026-10-19,,48,startDate+linkedin,true,0,,,,,Planning US,2026-09-01,,false,27,142297,159000,186816,subset,Senior Software Engineer
 8198298,"Software Engineer / Sr. Software Engineer, Planning Selection Autonomy",didi,DiDi Labs,,Posted 12 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">About the Company</strong></p>
 <p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">DiDi's autonomous driving unit was established in 2016 with the mission of developing </span><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&D, product application, and business expansion. </span><span class=""ql-size-12 ql-font-microsoftyahei ql-author-10000202573"">We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi's specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.</span></p>
 <p> </p>
@@ -156,7 +130,33 @@
 <p>The base salary range for this full-time position is $129,189-$214,776 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.</p>
 <p><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on <a href=""https://v.didi.cn/AQnxlBa"" target=""_blank"">https://v.didi.cn/AQnxlBa</a></em></p>
 <p> </p>",7511,https://job-boards.greenhouse.io/didi/jobs/8198298,,https://www.linkedin.com/jobs/view/4466442728,2026-09-12,50,50 applicants,,matched,title,2026-09-24,2026-09-24T13:03:21,2026-10-19,,37,startDate+linkedin,true,0,,,,,Planning US,2026-09-12,,false,27,142297,159000,186816,subset,Senior Software Engineer
-8198299,"Sr. / Staff Software Engineer, Infrastructure (Autonomy)",didi,DiDi Labs,,Posted 12 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">About the Company</strong></p>
+8299704,"Software Engineer, Motion Planning ",DiDi,DiDi Labs,,Posted 1 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p><strong>About The Company<br><br></strong>DiDi's autonomous driving unit was established in 2016 with the mission of developing Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&D, product application, and business expansion. We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi's specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.<br><br><strong>About The Role<br><br></strong>We are seeking a <strong>Software Engineer /Sr. Software Engineer</strong> to join our team and develop the core decision-making and motion planning systems for our autonomous vehicles. In this role, you will be responsible for creating the algorithms that enable smooth, safe, and intelligent navigation in complex environments. You will tackle challenges across the full motion planning stack, from high-level behavioral reasoning to low-level trajectory optimization.<br><br><strong>Responsibilities<br></strong></p>
+<ul>
+<li>Design and implement the core motion planning logic that determines the vehicle's high-level actions (e.g., lane changes, merges, yields, and interactions with other agents).</li>
+<li>Develop and optimize the motion planning algorithms that execute behavioral decisions, integrating Geometry Reasoning (path) and Speed Reasoning (velocity) into a cohesive trajectory.</li>
+<li>Architect and enhance the geometry system for generating geometrically feasible and compliant paths.</li>
+<li>Architect and refine the velocity system for generating context-aware, comfortable, and safe velocity profiles.</li>
+<li>Model complex driving scenarios and agent interactions to create a robust world model for the behavioral planner.</li>
+<li>Design different costs for trajectory ranking to trade off ETAs, comfort and safety of the vehicle behaviors.</li>
+<li>Conduct in-depth analysis, testing, and debugging of the system's performance in various scenarios, leading root cause investigations.</li>
+<li>Collaborate with Prediction, Perception, and Control teams to ensure a seamless flow from environmental understanding to physical vehicle motion.<br><br></li>
+</ul>
+<p><strong>Qualifications<br></strong></p>
+<ul>
+<li>B.S./M.S. in Computer Science, Robotics, or a related field.</li>
+<li>Experience in autonomous systems, robotics, or automotive software development.</li>
+<li><strong>Strong proficiency in C++</strong> for implementing complex, real-time algorithms.</li>
+<li>Solid understanding of robotics fundamentals, including decision-making, motion planning, control theory, trajectory ranking, search and optimization algorithms etc.</li>
+<li>Related experience in one or more of the following: motion planning, trajectory optimization and world environment reasoning, trajectory ranking and cost design.<br><br></li>
+</ul>
+<p><strong>Preferred Qualifications<br></strong></p>
+<ul>
+<li>PhD or internship experience related to robotics planning system designs.</li>
+<li>Knowledge of vehicle dynamics and longitudinal/lateral control systems.</li>
+<li>Solid understanding of machine learning principles, reinforcement learning and related algorithms.<br><br></li>
+</ul>
+<p class=""isSelectedEnd"">The base salary range for the Software Engineer position is $141,463–$235,182 annually, and for the Senior Software Engineer position is $169,783–$282,264 annually, in addition to bonus, equity, and benefits. Our salary ranges are determined by the role, level, and location. Within the applicable range, individual compensation is based on the work location as well as other factors, including job-related skills, experience, and relevant education and training.<br><br><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on <a class=""riUkhhEIAtDiibzrlddIVaKubAlAoKyg "" href=""https://v.didi.cn/AQnxlBa"" target=""_blank"" data-test-app-aware-link="""">https://v.didi.cn/AQnxlBa</a></em></p>",4219,https://job-boards.greenhouse.io/didi/jobs/8299704,,,,,,,not_checked,,2026-10-19,,2026-10-19,,,,true,0,,,,,,,,,27,142297,159000,186816,subset,Senior Software Engineer
+8299709,"Sr. / Staff Software Engineer, Infrastructure (Autonomy)",DiDi,DiDi Labs,,Posted 1 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">About the Company</strong></p>
 <p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">DiDi's autonomous driving unit was established in 2016 with the mission of developing </span><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&D, product application, and business expansion. </span><span class=""ql-size-12 ql-font-microsoftyahei ql-author-10000202573"">We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi's specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.</span></p>
 <div class=""ql-direction-ltr ql-long-10000202573"" data-header=""4"" data-foldable=""true"" data-default-linespacing=""100"">
 <p data-path-to-node=""1""> </p>
@@ -227,8 +227,8 @@
 </ul>
 <p data-path-to-node=""9""> </p>
 </div>
-<p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">The base salary range for this full-time position is $169,783 - $338,694 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.<br><br><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on </em><em><a class=""DBdARXcCrTyZgKqxyZRgbwwFPsuTbimRw "" href=""https://v.didi.cn/AQnxlBa"" target=""_blank"" data-test-app-aware-link="""">https://v.didi.cn/AQnxlBa</a></em></span></p>",6989,https://job-boards.greenhouse.io/didi/jobs/8198299,,https://www.linkedin.com/jobs/view/4466439632,2026-09-12,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:03:22,2026-10-19,,37,startDate+linkedin,true,0,,,,,Planning US,2026-09-12,,true,27,142297,159000,186816,subset,Senior Software Engineer
-8198301,"Sr. /Staff System Safety Engineer, Autonomy",didi,DiDi Labs,,Posted 12 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573"">About The Company</strong></p>
+<p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">The base salary range for this full-time position is $169,783 - $338,694 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.<br><br><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on </em><em><a class=""DBdARXcCrTyZgKqxyZRgbwwFPsuTbimRw "" href=""https://v.didi.cn/AQnxlBa"" target=""_blank"" data-test-app-aware-link="""">https://v.didi.cn/AQnxlBa</a></em></span></p>",6989,https://job-boards.greenhouse.io/didi/jobs/8299709,,,,,,,not_checked,,2026-10-19,,2026-10-19,,,,true,0,,,,,,,,,27,142297,159000,186816,subset,Senior Software Engineer
+8299710,"Sr. /Staff System Safety Engineer, Autonomy",DiDi,DiDi Labs,,Posted 1 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573"">About The Company</strong></p>
 <p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573"">DiDi's autonomous driving unit was established in 2016 with the mission of developing Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&D, product application, and business expansion. We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi's specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.</span></p>
 <p class=""ql-direction-ltr ql-long-10000202573""> </p>
 <p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573"">About The Role</strong></p>
@@ -262,82 +262,14 @@
 </ul>
 <p class=""ql-direction-ltr ql-long-10000202573""> </p>
 <p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573"">The base salary range for this full-time position is $148,594-247,038 (Sr. Engineer) and $178,286-296,400 (Staff Engineer) annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.</span></p>
-<p class=""ql-direction-ltr ql-long-10000202573""><em class=""ql-author-10000202573"">I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on </em><a class=""ql-link ql-author-10000202573"" href=""https://v.didi.cn/AQnxlBa"" target=""_blank""><em>https://v.didi.cn/AQnxlBa</em></a></p>",6031,https://job-boards.greenhouse.io/didi/jobs/8198301,,https://www.linkedin.com/jobs/view/4466454585,2026-09-12,25,among first 25,,matched,title,2026-09-24,2026-09-24T13:03:35,2026-10-19,,37,startDate+linkedin,true,0,,,,,System Engineering,2026-09-12,,true,3,119594,129189,142636,subset,Autonomy Systems Engineer II
-8198295,"Technical Program Manager, Autonomy",didi,DiDi Labs,,Posted 12 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">About the Company</strong></p>
+<p class=""ql-direction-ltr ql-long-10000202573""><em class=""ql-author-10000202573"">I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on </em><a class=""ql-link ql-author-10000202573"" href=""https://v.didi.cn/AQnxlBa"" target=""_blank""><em>https://v.didi.cn/AQnxlBa</em></a></p>",6031,https://job-boards.greenhouse.io/didi/jobs/8299710,,https://www.linkedin.com/jobs/view/4480907975,2026-10-18,25,among first 25,,matched,titleSearchFallback,2026-10-19,2026-10-19T14:07:06,2026-10-19,,1,startDate+linkedin,true,0,,,,,,2026-10-18,,true,3,119594,129189,142636,subset,Autonomy Systems Engineer II
+8299711,Staff/Principal AI Transformation Engineer,DiDi,DiDi Labs,,Posted 1 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">About the Company</strong></p>
 <p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">DiDi's autonomous driving unit was established in 2016 with the mission of developing </span><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&D, product application, and business expansion. </span><span class=""ql-size-12 ql-font-microsoftyahei ql-author-10000202573"">We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi's specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.</span></p>
-<p> </p>
-<div class=""container"">
-<div id=""model-response-message-contentr_315c6aded6c7d8f3"" class=""markdown markdown-main-panel md-content enable-luminous-fast-follows enable-updated-hr-color tutor-markdown-rendering"">
-<p data-path-to-node=""3""><strong data-path-to-node=""3"" data-index-in-node=""0"">About The Role</strong></p>
-<p data-path-to-node=""4"">We are seeking a dedicated <strong>Technical Program Manager (TPM)</strong> to help us accelerate and optimize our software development processes and manage project schedules, resources, and deliverables. In this role, you will work closely with cross-functional teams to drill down our roadmap and facilitate effective execution at each stage of our growth curve. You will partner with engineering and operations teams to track project deliverables, identify milestones, flag risks early, and clearly communicate on-going progress to ensure our autonomous vehicles navigate the path to production smoothly.</p>
-<p data-path-to-node=""5""> </p>
-<p data-path-to-node=""5""><strong data-path-to-node=""5"" data-index-in-node=""0"">Responsibilities</strong></p>
-<ul data-path-to-node=""6"">
-<li>
-<p data-path-to-node=""6,0,0"">Milestone Planning: Work with team leaders to break down high-level strategies and project goals into detailed deliverables, clear owners, and realistic timelines.</p>
-</li>
-<li>
-<p data-path-to-node=""6,1,0"">Progress Tracking: Maintain project objectives and schedules by diligently tracking work progress, ensuring every project working team understands what they need to deliver at all times.</p>
-</li>
-<li>
-<p data-path-to-node=""6,2,0"">Release Logistics: Help manage daily software releases, logistics, workflow documentation, and cross-team communication.</p>
-</li>
-<li>
-<p data-path-to-node=""6,3,0"">Process & Meetings: Define and manage development processes and regular syncs; set the agenda for key decisions to be made at each meeting to eliminate bottlenecks and retire risks early.</p>
-</li>
-<li>
-<p data-path-to-node=""6,4,0"">Reporting & Action: Track and report on overall project progress, proactively driving corrective actions and escalating issues as needed when schedules or scopes drift.</p>
-</li>
-</ul>
-<p data-path-to-node=""7""> </p>
-<p data-path-to-node=""7""><strong data-path-to-node=""7"" data-index-in-node=""0"">Qualifications</strong></p>
-<ul data-path-to-node=""8"">
-<li>
-<p data-path-to-node=""8,0,0"">B.S. or M.S. degree in Computer Science, Electrical Engineering, Systems Engineering, Automotive Engineering, or a related technical discipline.</p>
-</li>
-<li>
-<p data-path-to-node=""8,1,0"">1–3 years of hands-on experience in engineering, project management, or technical program management.</p>
-</li>
-<li>
-<p data-path-to-node=""8,2,0"">Deep familiarity with modern software development lifecycles or automotive development processes.</p>
-</li>
-<li>
-<p data-path-to-node=""8,3,0"">Strong track record or demonstrated ability in coordinating and supporting complex cross-functional projects.</p>
-</li>
-<li>
-<p data-path-to-node=""8,4,0"">Excellent communication skills with the ability to build strong working relationships with technical leaders and engineers across different functional teams.</p>
-</li>
-<li>
-<p data-path-to-node=""8,5,0"">Strong analytical capability to identify and act on opportunities to improve processes, resolve inefficiencies, and increase overall team productivity.</p>
-</li>
-<li>
-<p data-path-to-node=""8,6,0"">Practical experience working within or supporting Agile software development teams.</p>
-</li>
-</ul>
-<p data-path-to-node=""9""> </p>
-<p data-path-to-node=""9""><strong data-path-to-node=""9"" data-index-in-node=""0"">Preferred Qualifications</strong></p>
-<ul data-path-to-node=""10"">
-<li>
-<p data-path-to-node=""10,0,0"">Familiarity with or strong interest in autonomous driving, robotics, or advanced driver-assistance systems.</p>
-</li>
-<li>
-<p data-path-to-node=""10,1,0"">Experience using modern project management and tracking tools (e.g., Jira, Confluence).</p>
-</li>
-<li>
-<p data-path-to-node=""10,2,0"">Prior internship or work experience in a technical role (e.g., software engineering, testing, or systems engineering) before transitioning to project management.</p>
-</li>
-</ul>
-<p data-path-to-node=""11""> </p>
-<p data-path-to-node=""11"">The base salary range for the Technical Program Manager position is $115,000–$165,000 annually, in addition to bonus, equity, and benefits. Our salary ranges are determined by the role, level, and location. Within the range, individual compensation is based on the work location as well as other factors, including job-related skills, experience, and relevant education and training.</p>
-<p data-path-to-node=""12""><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on <a class=""ng-star-inserted"" href=""https://v.didi.cn/AQnxlBa"" target=""_blank"">https://v.didi.cn/AQnxlBa</a></em></p>
-</div>
-</div>",5965,https://job-boards.greenhouse.io/didi/jobs/8198295,,,,,,,no_match,,2026-09-24,,2026-10-19,,,,true,0,,,,,Voyager,,,false,,,,,,
-8234302,Staff/Principal AI Transformation Engineer,DiDi,DiDi Labs,,Posted 1 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">About the Company</strong></p>
-<p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">DiDi's autonomous driving unit was established in 2016 with the mission of developing </span><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&D, product application, and business expansion. </span><span class=""ql-size-12 ql-font-microsoftyahei ql-author-10000202573"">We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi's specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.</span></p>
+<div class=""ql-direction-ltr ql-long-10000202573"" data-header=""4"" data-foldable=""true"" data-default-linespacing=""100""> </div>
 <div class=""ql-direction-ltr ql-long-10000202573"" data-header=""4"" data-foldable=""true"" data-default-linespacing=""100""><strong>About The Role<br></strong>
 <p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-9"">At DiDi Autonomous Driving, we firmly believe that the future of mobility goes beyond simply ""utilizing AI""—it will be fundamentally reimagined and entirely driven by an </span><strong class=""ql-author-10000202573 ql-size-9"">AI-Native architecture</strong><span class=""ql-author-10000202573 ql-size-9"">.</span></p>
 <p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-9"">We are seeking a visionary, highly technical, and mission-driven <strong>Staff or </strong></span><strong class=""ql-author-10000202573 ql-size-9"">Principal AI Transformation Engineer </strong><span class=""ql-author-10000202573 ql-size-9"">to act as the ultimate catalyst for our company-wide AI transformation. In this strategic, high-impact leadership role, you will combine cutting-edge Large Language Model (LLM) expertise, robust systems architecture design, and a proven track record of enterprise-level AI scaling. You will embed deeply with our core engineering teams to evolve our traditional R&D organization into a truly AI-Native powerhouse.</span></p>
-<p class=""ql-direction-ltr ql-long-10000002980""><span class=""ql-author-10000002980 ql-size-12 ql-font-arial""><br><br><strong>Key Responsibilities</strong><br></span></p>
+<p class=""ql-direction-ltr ql-long-10000002980""><span class=""ql-author-10000002980 ql-size-12 ql-font-arial""><br><strong>Key Responsibilities</strong><br></span></p>
 </div>
 <ul>
 <li class=""""><span class=""ql-author-10000202573 ql-size-9"">AI Infrastructure & Platform Architecture:</span><span class=""ql-author-10000202573 ql-size-9""> Spearhead the evaluation, selection, and deep integration of frontier LLM ecosystems (e.g., Llama, Hugging Face) and commercial AI platforms. Own the architectural design of our unified, distributed AI platform spanning complex data processing, model training, inference pipelines, and evaluation frameworks.</span></li>
@@ -345,8 +277,8 @@
 <li class=""""><span class=""ql-author-10000202573 ql-size-9"">LLMOps / MLOps Orchestration & Optimization:</span><span class=""ql-author-10000202573 ql-size-9""> Design and implement highly resilient, scalable automation pipelines for LLM deployment, monitoring, and continuous feedback loops. Optimize GPU cluster utilization, minimize inference latency, and maximize throughput across large-scale production environments.</span></li>
 <li class=""""><span class=""ql-author-10000202573 ql-size-9"">Technical Roadmap & Vision:</span><span class=""ql-author-10000202573 ql-size-9""> Keep a strong pulse on breakthrough trends in AGI and systems engineering. Act as a ""super-connector"" between external technological innovations and internal systems, ensuring our AI infrastructure maintains a 1-3 year competitive edge.</span></li>
 </ul>
-<p> </p>
 <div class=""ql-direction-ltr ql-long-10000202573"" data-header=""4"" data-foldable=""true"" data-default-linespacing=""100"">
+<div class=""ql-direction-ltr ql-long-10000202573"" data-header=""3"" data-foldable=""true"" data-default-linespacing=""100""> </div>
 <div class=""ql-direction-ltr ql-long-10000202573"" data-header=""3"" data-foldable=""true"" data-default-linespacing=""100""><strong><span class=""ql-author-10000202573 ql-size-9"">Qualifications & Experience</span></strong></div>
 </div>
 <ul>
@@ -366,42 +298,253 @@
 <li class=""""><span class=""ql-author-10000202573 ql-size-9"">Technical Influence:</span><span class=""ql-author-10000202573 ql-size-9""> An active contributor to the broader tech community (e.g., open-source maintainer/owner, author of high-quality technical blogs/papers, or speaker at premier industry AI/ML conferences).</span></li>
 </ul>
 <p class=""ql-direction-ltr ql-long-10000202573""> </p>
-<p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">The base salary range for this full-time position is $255,000 -$351,000 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.<br><br><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on </em><em><a class=""DBdARXcCrTyZgKqxyZRgbwwFPsuTbimRw "" href=""https://v.didi.cn/AQnxlBa"" target=""_blank"" data-test-app-aware-link="""">https://v.didi.cn/AQnxlBa</a></em></span></p>",9199,https://job-boards.greenhouse.io/didi/jobs/8234302,,,,,,,not_checked,,2026-09-26,,2026-10-19,,,,true,0,,,,,,,,,,,,,,
-7991538,Software Engineer – Map Fusion & Planning,DiDi,DiDi Labs,,Posted 127 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">About the Company</strong></p>
-<p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">DiDi's autonomous driving unit was established in 2016 with the mission of developing </span><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">Level 4 autonomous driving (AD) technology to make transportation safer and more efficient. In August 2019, the unit became an independent company, DiDi Autonomous Driving, dedicated to advanced AD R&D, product application, and business expansion. </span><span class=""ql-size-12 ql-font-microsoftyahei ql-author-10000202573"">We believe integrating AD technology into a shared-mobility fleet will generate immense social value. By leveraging DiDi's specialized technology, operational expertise, and integrated ecosystem, we are positioned to build and operate a highly efficient, user-oriented autonomous fleet.</span></p>
+<p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">The base salary range for this full-time position is $255,000 -$351,000 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.<br><br><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on </em><em><a class=""DBdARXcCrTyZgKqxyZRgbwwFPsuTbimRw "" href=""https://v.didi.cn/AQnxlBa"" target=""_blank"" data-test-app-aware-link="""">https://v.didi.cn/AQnxlBa</a></em></span></p>",9438,https://job-boards.greenhouse.io/didi/jobs/8299711,,,,,,,not_checked,,2026-10-19,,2026-10-19,,,,true,0,,,,,,,,,,,,,,
+8299718,"ML Engineer, Motion Planning",DiDi,DiDi Labs,,Posted 1 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<h3 data-anchor=""6cc4c0b6-0d6e-4481-8ad8-d8f86b1375b9"" data-collapse=""false"" data-pm-slice=""1 3 []""><span data-author=""shiyingzhou"">About Didi Autonomous Driving</span></h3>
+<p data-anchor=""e9a36b25-cf0d-4bb1-918b-c632d766576d""><span data-author=""shiyingzhou"">Founded in 2016, DiDi's autonomous driving unit is dedicated to developing Level 4 autonomous driving technology to make transportation safer, more efficient, and accessible. In 2019, the unit became an independent company, Voyager, to accelerate technology development, commercialization, and large-scale deployment. By combining DiDi's unique data advantage, operational expertise, and mobility ecosystem, we aim to build a reliable, scalable autonomous fleet that integrates seamlessly with human-driven services. <strong>Driven by real-world customer needs and a strong commitment to safety and user experience</strong>, our mission is to deliver autonomous mobility solutions that create meaningful value for riders and communities. </span></p>
+<h2 data-anchor=""e3544e72-d443-4a1a-a7d2-b8d1da544420"" data-collapse=""false""> </h2>
+<h3 data-anchor=""e3544e72-d443-4a1a-a7d2-b8d1da544420"" data-collapse=""false""><span data-author=""jingzou""><strong>About The Role</strong></span></h3>
+<p data-anchor=""beb8b297-7c73-48e6-b831-d2a1d7640a19""><span data-author=""shiyingzhou"">We are looking for an experienced and driven <strong>Machine Learning Engineer</strong> to join our autonomous vehicle team and develop the next-generation <strong>ML-powered planning system</strong> for Voyager's autonomous driving platform. You will leverage frontier ML techniques, including learned planners and end-to-end models, to build intelligent systems that understand complex driving environments, make data-driven decisions, and navigate safely and efficiently. Working alongside leading industry experts, you will leverage <strong>DiDi's unique data advantage</strong>, including petabytes of real-world driving data, to advance model performance, build robust evaluation frameworks that correlate with on-road safety, and accelerate the deployment and scaling of our driverless technology. </span></p>
+<p data-anchor=""2a544bff-c8f3-4500-b8f3-9ffddf650f41""> </p>
+<h3 data-anchor=""4404944f-fc5c-4133-b08b-2830f7dff25a"" data-collapse=""false""><span data-author=""jingzou""><strong>Responsibilities</strong></span></h3>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""30891ef8-05b3-413d-91ef-5adb96807745"">
+<li data-anchor=""10963d66-a669-464f-b741-adb664cc2707"">
+<p data-anchor=""302d97f0-b34f-43f5-90ea-61c843c8c010""><span data-author=""shiyingzhou"">Develop next-generation ML-powered systems that generate driving behavior decisions, scene understanding, and trajectories to support our L4 autonomous driving deployment roadmap.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""c9dc9a7d-6e16-461b-8657-587dd8480131"">
+<li data-anchor=""96999c82-2df7-4eb6-857f-de86c2714f67"">
+<p data-anchor=""e652d435-2486-4093-85d4-1d7020860836""><span data-author=""shiyingzhou"">Frame open-ended, real-world driving challenges as well-defined ML problems; research and apply cutting-edge techniques, including imitation learning, reinforcement learning, learned planners, and end-to-end models.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""687e45f8-528c-430a-bfe2-ee3e07650f86"">
+<li data-anchor=""13f2d47b-5dd2-43f4-bfb6-ecb1c3511e33"">
+<p data-anchor=""34a8291e-a6b7-4a26-b4aa-8b0a9ee2a5de""><span data-author=""shiyingzhou"">Design data-driven algorithms that improve the safety, generalization, and reliability of autonomous driving, including robust scene understanding and planning in complex or changing road environments.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""29d3d61c-d517-4629-9eb5-e2403a111bb3"">
+<li data-anchor=""efe68aa9-fe25-4428-8cb4-30ccbcfc776a"">
+<p data-anchor=""f0844acf-33d3-4dfb-81e4-a8dc3be9f28f""><span data-author=""shiyingzhou"">Develop hybrid planning solutions that <strong>integrate ML-driven approaches with traditional rule-based and optimization-based planning</strong>, leveraging their complementary strengths to achieve superior safety, efficiency, and robustness in complex driving scenarios.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""01713020-1cc5-4a2f-9a4c-020934fd8cc4"">
+<li data-anchor=""d2aa00ab-2763-4eef-83a6-1f9a408c0625"">
+<p data-anchor=""bfedfbc3-62c4-4042-be27-8be1d7a5d70a""><span data-author=""shiyingzhou"">Develop and evaluate large-scale ML models using real-world driving data and simulation, translating learned representations into actionable planning guidance and integrating models into production systems under onboard compute, latency, and safety constraints.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""64793c35-583c-4dd1-8a4d-03118aec6904"">
+<li data-anchor=""9404383e-55dd-4293-85ac-9f3dba789f92"">
+<p data-anchor=""c17193c4-14c9-48d2-9d6f-f19b09e2eba4""><span data-author=""shiyingzhou"">Build infrastructure for rapid iteration, including challenging scenario mining, training and evaluation pipelines, closed-loop simulation, and metrics that correlate with real-world driving performance.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""06f3290c-e547-4b51-b4c1-d5c1e2216e41"">
+<li data-anchor=""c18d8242-54ad-4074-9229-899774b5ab7f"">
+<p data-anchor=""d5b67bbd-a316-474a-b462-2e2052705130""><span data-author=""shiyingzhou"">Collaborate closely with ML Infrastructure, Perception, Prediction, Planning, Mapping, and Systems Engineering teams to investigate failures, drive end-to-end improvements, and deploy solutions into real-world autonomous driving.</span></p>
+</li>
+</ul>
+<p data-anchor=""08337f0d-0abe-40f5-b7f4-1ae5e8c2f574""> </p>
+<h3 data-anchor=""1a12df18-b02c-4e38-8824-5b4f654164eb"" data-collapse=""false""><span data-author=""jingzou""><strong>Qualifications</strong></span></h3>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""372e9808-5195-4915-998f-9b1cbae12816"">
+<li data-anchor=""aaf078c7-9da7-4367-a0d0-e22bbf773934"">
+<p data-anchor=""62c49e65-b3dd-4d16-9187-7cc4cd7bc04b""><span data-author=""shiyingzhou"">B.S., M.S., or Ph.D. in Computer Science, Machine Learning, Robotics, Electrical Engineering, Mechanical Engineering, or a related technical field, or equivalent practical experience.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""13a38c47-e075-4718-81ec-6ece617d3b15"">
+<li data-anchor=""dc263fea-eef7-4513-bc17-6eba052c0518"">
+<p data-anchor=""2f1f5d76-95c0-4774-a636-7d67edd67332""><span data-author=""shiyingzhou"">3+ years of industry experience for Senior, or 5+ years for Staff, in machine learning, autonomous driving, robotics, or related fields.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""fbb17a3c-923b-4f85-a8a9-f5bf6dfdabac"">
+<li data-anchor=""ffcde5d1-c4b6-49a8-a1bb-3f5059701f37"">
+<p data-anchor=""75dc0d3a-cdac-4fd7-9ff8-c41ea7f79110""><span data-author=""shiyingzhou"">Proven track record of developing and deploying ML models in production, ideally for real-time, embedded, or autonomous driving systems.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""fcc4fc33-d956-4cf5-9d5c-c8665e8e9061"">
+<li data-anchor=""27ab6af9-89d4-4ee7-9424-112fa4d386c0"">
+<p data-anchor=""f7e96b51-d826-4a50-ad7a-3e68202c3494""><span data-author=""shiyingzhou"">Strong proficiency in Python and C++, with experience developing robust, efficient production software and hands-on experience with modern deep learning frameworks (e.g., PyTorch, JAX, TensorFlow).</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""61f5ba2f-57e4-4057-b122-36e4f3e9a5d8"">
+<li data-anchor=""0c5bf542-6333-4296-939c-23a3bac11b1e"">
+<p data-anchor=""572c61e2-3d49-4164-a16a-b6ed80b6d06e""><span data-author=""shiyingzhou"">Deep understanding of modern deep learning techniques, including transformers, BEV and 3D representations, and trajectory prediction or generation models, with hands-on experience in model training, evaluation, and debugging.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""d35fa3bc-887b-4db6-aa09-17fcf2ee2ca8"">
+<li data-anchor=""a4b0d892-470b-4051-a932-ca0756d3692e"">
+<p data-anchor=""dca06090-4555-46fb-8494-b4b4f3a2c962""><span data-author=""shiyingzhou"">Foundations in linear algebra, control theory, or motion planning, including path and trajectory generation, trajectory evaluation, cost function design, and lane and road geometry.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""e69967b2-427d-4e8c-917a-0142246c421c"">
+<li data-anchor=""f61b6a5a-e902-4751-8b2b-1f9b0a384574"">
+<p data-anchor=""582cd602-2d52-4106-9d8c-6cc444a37651""><span data-author=""shiyingzhou"">Experience applying machine learning to motion planning, robotics, or related decision-making problems, with the ability to integrate learning-based approaches with traditional planning methods.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""6b8b7e2e-cbe3-465a-8baa-d7b1eb19bae5"">
+<li data-anchor=""6a65d4ab-f0f6-46bd-a55d-d06fc6a7b8eb"">
+<p data-anchor=""1b84782b-c711-4338-b0ca-b10404be3c80""><span data-author=""shiyingzhou"">Demonstrated ability to own ambiguous technical challenges end to end, balancing research innovation with production constraints, safety, reliability, and engineering trade-offs.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""0af4366d-5bb4-4acb-8b78-d4736973717e"">
+<li data-anchor=""852308b5-583f-48f4-89b0-cfdf67d77b60"">
+<p data-anchor=""fef73ab2-5f7f-4706-a92f-a34151da02be""><span data-author=""shiyingzhou"">Demonstrated technical impact through research publications, open-source contributions, or significant achievements in industry.</span></p>
+</li>
+</ul>
+<p data-anchor=""b43afa4f-bb11-4293-b125-fd7e83b20d17""> </p>
+<h3 data-anchor=""fdb04d92-388d-434e-9632-405c3529fe46"" data-collapse=""false""><span data-author=""jingzou"">Preferred Qualifications</span></h3>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""2ae708eb-6d45-49c3-b7fa-a9fa8c5e74d8"">
+<li data-anchor=""ac1c1e00-80d8-4b0e-906f-684cf4d5e3d5"">
+<p data-anchor=""a5a2f0b6-2610-4867-aced-87ed795a0e4d""><span data-author=""shiyingzhou""><strong>Strong engineering experience applying ML-driven approaches to solve complex real-world problems</strong>, with a proven track record of translating research ideas into robust, production-quality systems and successfully deploying them.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""03c52d3d-8f72-4411-8b6b-e5334b956214"">
+<li data-anchor=""b0047fe0-7df2-4e51-a109-3bce286ff53d"">
+<p data-anchor=""e30d7da6-38df-47ca-b639-66b0d9771769""><span data-author=""shiyingzhou"">Experience integrating learning-based approaches with traditional rule-based or optimization-based planning systems to improve safety, efficiency, and robustness.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""33c0f26a-1195-496f-9618-4324def0594b"">
+<li data-anchor=""34bd8c90-6dbe-4f17-80bf-3d7fdc288b24"">
+<p data-anchor=""14c97759-44ba-4234-a8bd-c0f42b211eed""><span data-author=""shiyingzhou"">Experience with closed-loop simulation, large-scale evaluation, and data-driven model iteration for autonomous driving.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""f05dc00d-8e83-4659-ac74-07847e333ff0"">
+<li data-anchor=""5509b233-6ccf-4e9a-9f7c-ed0451aad2a4"">
+<p data-anchor=""d6a45ffd-c337-413f-b0b7-962473540689""><span data-author=""shiyingzhou"">Experience mentoring junior engineers, supervising research interns, or leading small technical teams.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""05ed1782-8a66-408e-b7ea-3c4d735d2526"">
+<li data-anchor=""f48d26af-e53e-4344-b064-5d71e47d9183"">
+<p data-anchor=""35d68f37-a108-4c33-ad7c-a3054d851dc4""><span data-author=""shiyingzhou"">Experience with road-structure representations, including lane graphs, topology reasoning, scene understanding, or uncertainty estimation in complex driving environments.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""77d8edc3-7e2e-4ff8-a3d7-cff8af75d1c3"">
+<li data-anchor=""e6ab5ec2-83a5-409a-91c2-72832576934e"">
+<p data-anchor=""174f76cd-f71c-43eb-98e9-7c4ebae7e85a""><span data-author=""shiyingzhou"">Experience with end-to-end autonomous driving models, learned planners, vision-language models, or foundation models applied to driving and robotics.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""30f450de-2cd7-46fa-a877-7461294d883f"">
+<li data-anchor=""9a713b99-5fc7-4da8-90b2-b5adae1903b6"">
+<p data-anchor=""85ca9edf-1cd6-41bb-a6ae-5601f7c87642""><span data-author=""shiyingzhou"">Experience deploying and optimizing ML models for real-time onboard inference, including TensorRT, CUDA, quantization, and compute or latency optimization.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""fa534c65-126d-4cec-b8ea-da70c5d356b5"">
+<li data-anchor=""29b79420-85db-434c-9cf6-cf85685d714e"">
+<p data-anchor=""8a5bc535-05ee-4680-a910-9b936beac7be""><span data-author=""shiyingzhou"">Publications at leading conferences such as CVPR, ICCV, ECCV, NeurIPS, CoRL, ICRA, IROS, or IV, or equivalent demonstrated technical impact in industry.</span></p>
+</li>
+</ul>
 <p> </p>
-<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">About the Role</strong></p>
-<p class=""ql-direction-ltr ql-long-10000452787""><span class=""ql-author-10000452787"">We are seeking a </span><strong class=""ql-author-10000452787"">Software Engineer / Senior Software Engineer<em> </em></strong><span class=""ql-author-10000452787"">to develop the next-generation map fusion and motion planning systems for our autonomous vehicles. In this role, you will bridge the gap between semantic HD maps, real-time sensor perception, and vehicle trajectory generation. You will design scalable software infrastructure, implement advanced geometric and deep learning frameworks, and develop the planning algorithms that enable our vehicles to navigate complex, dynamic environments safely and predictably.</span></p>
-<p class=""ql-direction-ltr ql-long-10000202573""> </p>
-<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">Responsibilities</strong></p>
-<ul>
-<li class=""""><strong class=""ql-author-10000452787"">System Architecture</strong><span class=""ql-author-10000452787"">: Architect the data flow pipelines and APIs for map fusion, real-time map vectorization, and behavior/motion planning modules.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Algorithm Deployment</strong><span class=""ql-author-10000452787"">: Design and deploy robust software frameworks that integrate offline High-Definition (HD) maps with online perception data to create a unified local environment model.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Advanced Mapping Networks</strong><span class=""ql-author-10000452787"">: Implement and optimize state-of-the-art networks utilizing DETR-style, query-based vector decoding in bird's-eye-view (BEV) for online map element generation.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Motion Planning & Optimization</strong><span class=""ql-author-10000452787"">: Design, implement, and validate core motion planning algorithms, establishing a tight feedback loop between vectorized map features, path generation, and trajectory optimization.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Model Deployment Pipelines</strong><span class=""ql-author-10000452787"">: Own the end-to-end deployment pipeline for deep learning mapping models—from Python-based training and ONNX optimization to highly efficient runtime execution in C++.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Safety & Anomaly Detection</strong><span class=""ql-author-10000452787"">: Develop real-time map anomaly and scene-change detection algorithms to ensure planning system reliability under varying or outdated map conditions.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Performance Optimization</strong><span class=""ql-author-10000452787"">: Optimize system latency, CPU/GPU memory footprint, and multi-threaded execution of safety-critical C++ modules.</span></li>
+<p data-pm-slice=""1 1 []"">The annual base salary range for the Senior ML Engineer position is $169,783–$282,264, and for the Staff ML Engineer position is $203,726–$338,694. In addition to base salary, compensation includes bonus, equity, and benefits. The salary ranges are determined by role, level, and location. Individual compensation within the range depends on several factors, including work location, job-related skills, relevant experience, and education or training.</p>
+<p> </p>
+<p><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on <a href=""https://v.didi.cn/AQnxlBa"" target=""_blank"">https://v.didi.cn/AQnxlBa</a></em></p>",14317,https://job-boards.greenhouse.io/didi/jobs/8299718,,,,,,,not_checked,,2026-10-19,,2026-10-19,,,,true,0,,,,,,,,,,,,,,
+8299748,"Research Intern, Scene Understanding and Planning",DiDi,DiDi Labs,,Posted 1 Days Ago,,,"San Jose, CA",1,"San Jose, CA",false,,United States,,0,"<h3 data-anchor=""6cc4c0b6-0d6e-4481-8ad8-d8f86b1375b9"" data-collapse=""false"" data-pm-slice=""1 3 []""><span data-author=""shiyingzhou"">About Didi Autonomous Driving</span></h3>
+<p data-anchor=""e9a36b25-cf0d-4bb1-918b-c632d766576d""><span data-author=""shiyingzhou"">Founded in 2016, DiDi's autonomous driving unit is dedicated to developing Level 4 autonomous driving technology to make transportation safer, more efficient, and accessible. In 2019, the unit became an independent company, Voyager, to accelerate technology development, commercialization, and large-scale deployment. By combining DiDi's unique data advantage, operational expertise, and mobility ecosystem, we aim to build a reliable, scalable autonomous fleet that integrates seamlessly with human-driven services. <strong>Driven by real-world customer needs and a strong commitment to safety and user experience</strong>, our mission is to deliver autonomous mobility solutions that create meaningful value for riders and communities.</span></p>
+<h3 class=""ql-direction-ltr ql-long-10000202573""> </h3>
+<h3 class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">About the Role</strong></h3>
+<p data-anchor=""1a72f168-1c3d-45d5-aca5-33d189d89cf9""><span data-author=""yiyang1"">We want our vehicles to understand the physical world as it is right now, instead of relying on a map drawn long ago. Roads change, and the world a car actually drives in is always more complex than any static record of it. We are seeking a Research Intern to help give our planner a m</span><span data-author=""runyugao"">ore accurate and</span><span data-author=""yiyang1""> up-to-date picture of the world, so the vehicle handles complex real-world scenes more robustly. In this role, you will take on hard, open problems from real-world driving and solve them with frontier research methods. You will report directly to the team lead and work on the problem from definition to validated solution. Strong results will often be worth publishing, and we will support you in writing them up, but the goal is to solve problems that matter to the product.</span></p>
+<h3 data-anchor=""a334eacb-e50e-40cf-8cc1-c17d38dd6b94"" data-collapse=""false""> </h3>
+<h3 data-anchor=""a334eacb-e50e-40cf-8cc1-c17d38dd6b94"" data-collapse=""false""><span data-author=""yiyang1"">Responsibilities</span></h3>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""190f47ec-1d77-43cc-865d-32fbc89224f5"">
+<li data-anchor=""2cbeea4d-ffed-42e3-849c-de863b672e3b"">
+<p data-anchor=""6bc0f23b-cb62-4c96-85da-bea799c90456""><span data-author=""yiyang1""> Survey the latest research in scene understanding, prediction, and planning, and turn it into practical approaches that fit our system and constraints.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""244e9f2c-52c0-4755-a78d-cb1667948a68"">
+<li data-anchor=""e99c2e12-ef10-4988-b2a7-6f4790c37526"">
+<p data-anchor=""fa7b21f2-4c9b-42dd-9dec-7ff0d81d4501""><span data-author=""yiyang1""> Design and implement deep learning models that build a richer, real-time understanding of the driving environment from onboard sensors and other available sources.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""a7edea2e-6aaa-4967-a874-75df4eb9cb5e"">
+<li data-anchor=""0febfc17-2690-4999-9a76-6bbf2efef250"">
+<p data-anchor=""1097550a-fdf4-40aa-8291-e320f53251ab""><span data-author=""yiyang1""> Train and evaluate models on large-scale data from our driving logs and on public benchmarks, and lead failure analysis to find out where and why models fall short.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""98d82dbe-0990-4168-a279-218f54cca193"">
+<li data-anchor=""135e0cea-6bb2-4125-9cc9-b1cf014e6f57"">
+<p data-anchor=""a48b5e43-5e53-4e9b-9f95-139833fddba4""><span data-author=""yiyang1""> Define metrics and evaluation methods that connect perception quality to how the vehicle actually drives.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""e6f91098-0ca3-4b7d-b26a-ed9c756f1763"">
+<li data-anchor=""fa9ae119-9980-41df-b72c-afcf078e9ee9"">
+<p data-anchor=""65a6c833-43e0-41d8-b0f9-32187c055ee8""><span data-author=""yiyang1""> Turn successful prototypes into solutions that work with our planning stack, with help from production engineers.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""d3bd1420-ab54-419d-b902-eb88f334367a"">
+<li data-anchor=""8756884e-9bcc-4d3d-9883-b4f9720f32de"">
+<p data-anchor=""d5f4374f-876c-40ec-833f-cf9b62e28201""><span data-author=""yiyang1""> Collaborate with Perception, Prediction, Planning, and Mapping teams so results move from experiment to product.</span></p>
+</li>
+</ul>
+<h2 data-anchor=""22b8e6cc-c83a-4989-8a5e-2161c70fa5af"" data-collapse=""false""><span data-author=""yiyang1"">  </span></h2>
+<h3 data-anchor=""22b8e6cc-c83a-4989-8a5e-2161c70fa5af"" data-collapse=""false""><span data-author=""yiyang1"">Qualifications</span></h3>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""e55b95f8-ac03-401a-b26a-dd716e6e560e"">
+<li data-anchor=""b64ceb43-42bf-4eec-b9d3-0f90c0c6084b"">
+<p data-anchor=""3dab7fb3-f1f2-4aa4-8a59-29818b0f98b8""><span data-author=""yiyang1""> Currently enrolled in an M.S. or Ph.D. program in Computer Science, Robotics, Electrical Engineering, Machine Learning, or a related field, for the full duration of the internship.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""44492d3e-f03c-49b6-9304-6d1c4d085926"">
+<li data-anchor=""65090bd5-efb5-488d-9a99-0759577aa1e1"">
+<p data-anchor=""df31f0e3-41a9-4f3a-8287-36ab9c4dddf8""><span data-author=""yiyang1""> Available for a full-time onsite internship of 3–6 months; start dates are flexible.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""4d88c079-0099-4401-82e7-4ba8873b7bfd"">
+<li data-anchor=""756a9f7a-2169-4d60-baa2-23772f63aa57"">
+<p data-anchor=""65db1356-c8e9-410b-8824-ec4a98ad5e24""><span data-author=""yiyang1""> Strong programming skills in Python, and experience with modern deep learning frameworks such as PyTorch or JAX.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""44f3508a-1b2c-4e8b-9441-c4db31a6cf95"">
+<li data-anchor=""8040d6ca-8793-4e5a-9100-34487c74257f"">
+<p data-anchor=""209d2ab4-3f71-4dde-9541-a51fee90012b""><span data-author=""yiyang1""> Hands-on experience designing, training, and debugging deep learning models for computer vision, 3D perception, or sequential decision-making.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""5ffbe83c-d7c8-4741-a190-8fed2d3319d9"">
+<li data-anchor=""91c281e2-1418-4a36-aef8-947488f1bd91"">
+<p data-anchor=""36405377-4b84-4c85-971d-8a870393eee3""><span data-author=""yiyang1""> Solid understanding of autonomous driving fundamentals, including perception, prediction, and motion planning.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""7d0594ac-46ea-4888-9a31-5578328c01c7"">
+<li data-anchor=""929e96fe-dbd8-42be-8774-c0171975f3cb"">
+<p data-anchor=""2978933d-8a76-4b6f-86af-3ca9a7a1fa0f""><span data-author=""yiyang1""> Ability to read research critically, form hypotheses, and turn them into well-controlled experiments.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""04c9c89c-d812-4a05-ac40-fb1f53d354e0"">
+<li data-anchor=""ec86b04d-f748-40e9-91f7-14af81972307"">
+<p data-anchor=""9232a68d-090c-4253-8ddb-3be2a9afa900""><span data-author=""yiyang1""> Excellent communication and collaboration skills.</span></p>
+</li>
+</ul>
+<h2 data-anchor=""bf6ea757-6c66-47f9-aa9d-7f2170cfe58e"" data-collapse=""false""><span data-author=""yiyang1"">  </span></h2>
+<h3 data-anchor=""bf6ea757-6c66-47f9-aa9d-7f2170cfe58e"" data-collapse=""false""><span data-author=""yiyang1"">Preferred Qualifications</span></h3>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""fa5778c5-b2a2-4e18-8359-cd5f58ec0309"">
+<li data-anchor=""04b23951-b818-4a35-88cf-1161d3d06086"">
+<p data-anchor=""3482c247-c810-4e74-af6d-a7cdbbe92a05""><span data-author=""yiyang1"">Publications at top venues such as CVPR, ICCV, ECCV, NeurIPS, ICLR,</span><span data-author=""runyugao""> ICML,</span><span data-author=""yiyang1""> ICRA, IROS,</span><span data-author=""runyugao""> CoRL</span><span data-author=""yiyang1""> or IV.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""1eecb008-f899-484d-95c5-6c814a61a575"">
+<li data-anchor=""f0661f41-0703-4240-94f7-9fec3080ba7c"">
+<p data-anchor=""f5236bbf-989e-4149-b73c-1ae11849d9ad""><span data-author=""yiyang1"">Experience with multi-modal sensor fusion (camera, lidar, radar) or BEV representations.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""a1a58d3c-4611-4777-b7aa-e208a42a07ab"">
+<li data-anchor=""fb3ab783-2e9e-4a39-9996-f2bbacbe80ff"">
+<p data-anchor=""efce1603-6f29-4176-9e0a-aeef2a8446ff""><span data-author=""yiyang1"">Experience with transformers, graph neural networks, or other structured scene representations.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""eb18812f-b329-4a1d-91e9-b127e00b2ca7"">
+<li data-anchor=""5014c102-6b34-414a-88b1-d572f136ff71"">
+<p data-anchor=""3e3d20b2-dd4b-4856-8298-6f94f59cecd8""><span data-author=""yiyang1"">Experience with uncertainty estimation, or with learning-based prediction or planning.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""82e4699c-b093-45f5-ab76-2021d1624543"">
+<li data-anchor=""070fea63-3ae6-4d2e-89ff-17cd49ab2b0c"">
+<p data-anchor=""c359e09b-d48b-4240-acf0-224e830d9cde""><span data-author=""yiyang1"">Experience with large-scale model training and data pipelines.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""2796720b-5aee-402b-9086-7fa777894dd5"">
+<li data-anchor=""52122d38-bb85-40f9-9db5-66798e7d266d"">
+<p data-anchor=""28ee36e7-abd2-4b39-8fad-69ada49fdfbc""><span data-author=""yiyang1"">Experience with public autonomous driving datasets such as nuScenes, Argoverse 2, or the Waymo Open Dataset.</span></p>
+</li>
+</ul>
+<ul class=""didoc2-editor-bullet-list"" type=""disc"" data-anchor=""1fbb4f81-457a-43bd-a7e0-e386b5434c24"">
+<li data-anchor=""339b7e84-3ea9-4b27-a198-63a16c8482c2"">
+<p data-anchor=""2a766215-f7d9-49c0-83ac-5c8cd65aba3b""><span data-author=""yiyang1"">Proficiency in C++ (CUDA is a plus) and experience with robotics systems.</span></p>
+</li>
 </ul>
 <p class=""ql-direction-ltr ql-long-10000202573""> </p>
-<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">Qualifications</strong></p>
-<ul>
-<li class=""""><strong class=""ql-author-10000452787"">Education:</strong><span class=""ql-author-10000452787""> B.S./M.S. or Ph.D. in Computer Science, Robotics, Electrical Engineering, or a related field.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Experience: </strong><span class=""ql-author-10000452787"">3+ years (Software Engineer) / 5+ years (Senior Software Engineer) of experience in autonomous driving, robotics architecture, or spatial computing.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Software Mastery:</strong><span class=""ql-author-10000452787""> Expert proficiency in production-grade C++ (Modern C++14/17/20, multi-threading, memory management) and strong prototyping proficiency in Python.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Motion Planning Fundamentals:</strong><span class=""ql-author-10000452787""> Robust foundational knowledge in path planning (e.g., A*, Dijkstra, Hybrid A*, sampling-based planners like RRT*) and kinematic/dynamic vehicle models.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Robotics Core:</strong><span class=""ql-author-10000452787""> Deep understanding of robotics fundamentals, including coordinate transformations, spatial geometry, and state estimation.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">System Design:</strong><span class=""ql-author-10000452787""> Strong system design skills with a solid understanding of middleware (e.g., ROS2, DDS) and distributed software architectures.</span></li>
-</ul>
-<p class=""ql-direction-ltr ql-long-10000202573""> </p>
-<p class=""ql-direction-ltr ql-long-10000202573""><strong class=""ql-author-10000202573 ql-size-12 ql-font-arial"">Preferred Qualifications</strong></p>
-<ul>
-<li class=""""><strong class=""ql-author-10000452787"">Trajectory Optimization:</strong><span class=""ql-author-10000452787""> Hands-on experience with numerical trajectory optimization methods (e.g., MPC, QP/Nonlinear optimization, interior-point methods) and optimization solvers (e.g., OSQP, Ipopt, Ceres Solver).</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Advanced Mapping Experience:</strong><span class=""ql-author-10000452787""> Hands-on experience working with HD map formats (Lanelet2, OpenDRIVE) and modern end-to-end learning frameworks (e.g., MapTR, VectorNet) that leverage query-based BEV perception.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Deep Learning Runtime & Deployment:</strong><span class=""ql-author-10000452787""> Proven track record of exporting complex deep learning architectures via ONNX and deploying them into real-time C++ production environments using TensorRT.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Anomaly Detection:</strong><span class=""ql-author-10000452787""> Proven track record of developing algorithms for map anomaly detection, sensor-to-map misalignments, or online scene-change identification.</span></li>
-<li class=""""><strong class=""ql-author-10000452787"">Safety-Critical Systems:</strong><span class=""ql-author-10000452787""> Knowledge of real-time operating systems (RTOS), deterministic software execution, and safety-critical software design principles.</span></li>
-</ul>
-<p>The base salary range for this full-time position is $129,189-$214,776 annually in addition to bonus, equity and benefits. Our salary ranges are determined by role, level, and location. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training.</p>
-<p><em>I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on <a href=""https://v.didi.cn/AQnxlBa"">https://v.didi.cn/AQnxlBa</a></em></p>
-<p> </p>",8124,https://job-boards.greenhouse.io/didi/jobs/7991538,,,,,,,not_checked,,2026-10-13,,2026-10-19,,,,true,0,,,,,,,,,27,142297,159000,186816,subset,Senior Software Engineer
+<p class=""ql-direction-ltr ql-long-10000202573""><span class=""ql-author-10000202573 ql-size-12 ql-font-arial"">The hourly rate for the Intern position in the selected city is $46.</span></p>
+<p class=""ql-direction-ltr ql-long-10000202573""><em class=""ql-author-10000202573 ql-font-arial"">I acknowledge that prior to submitting this application, I have read and accepted the Privacy Notice for California Residents which is available on </em><a class=""ql-link ql-author-10000202573 ql-font-arial"" href=""https://v.didi.cn/AQnxlBa"" target=""_blank""><em>https://v.didi.cn/AQnxlBa</em></a></p>",11149,https://job-boards.greenhouse.io/didi/jobs/8299748,,,,,,,not_checked,,2026-10-19,,2026-10-19,,,,true,0,,,,,,,,,,,,,,

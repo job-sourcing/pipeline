@@ -1,9 +1,9 @@
 {
  "label": "fuyao_us_fulltime",
- "rows": 170,
- "kept": 170,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 168,
+ "kept": 166,
+ "new": 2,
+ "ghosts_dropped": 4,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 1,
  "feed_excluded_state": 0,
- "state_rows": 171,
- "banded": 62,
+ "state_rows": 169,
+ "banded": 60,
  "lca_pools": 109,
  "snapshot": "2026-10-19"
 }
