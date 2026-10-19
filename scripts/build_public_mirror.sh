@@ -139,10 +139,36 @@ fi
 # as the manifests (the S36-open P0).
 if [ -d "$DEST/ingest/data/roles" ]; then
   mkdir -p "$SRC/ingest/data/roles"
-  rsync -a "$DEST"/ingest/data/roles/ "$SRC/ingest/data/roles/"
+  # S40: newest-wins by pm_envelope.json ran_at - the quartet is
+  # TWO-SIDED (the GHA lane writes it org-side; local full runs write
+  # it archive-side). The blind rsync clobbered the archive's fresh
+  # local-run quartet with the org's stale copy twice (S39/S40 - same
+  # class as the S38 roles-pm.json incident).
+  python3 - "$DEST" "$SRC" <<'PYROLE'
+import json, os, shutil, sys
+dest, src = sys.argv[1], sys.argv[2]
+def ran_at(base):
+    try:
+        e = json.load(open(os.path.join(
+            base, "ingest/data/roles/pm_envelope.json")))
+        return e.get("regenerated_at") or e.get("ran_at") or ""
+    except Exception:
+        return ""
+d_ran, s_ran = ran_at(dest), ran_at(src)
+if d_ran >= s_ran:      # org newer (or archive missing) - back-sync
+    for f in ("pm_inventory.csv", "pm_dropped.csv",
+              "pm_envelope.json", "pm_coverage.json"):
+        df = os.path.join(dest, "ingest/data/roles", f)
+        if os.path.exists(df):
+            shutil.copy2(df, os.path.join(src, "ingest/data/roles", f))
+    print(f"[roles-sync] back-synced org quartet (ran {d_ran} >= {s_ran})")
+else:
+    print(f"[roles-sync] kept archive quartet (ran {s_ran} > {d_ran})"
+          " - it flows forward in the rsync")
+PYROLE
   (cd "$SRC" && git add ingest/data/roles && \
     git diff --cached --quiet || \
-    git commit -q -m "role envelope back-sync from org runtime (S36)")
+    git commit -q -m "role envelope back-sync from org runtime (newest-wins by pm_envelope ran_at - S40)")
 fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
@@ -158,11 +184,13 @@ sf = os.path.join(src, "ingest/data/ui/roles-pm.json")
 if os.path.exists(df):
     d_ran = s_ran = ""
     try:
-        d_ran = (json.load(open(df)).get("envelope") or {}).get("ran_at", "")
+        _e = (json.load(open(df)).get("envelope") or {})
+        d_ran = _e.get("regenerated_at") or _e.get("ran_at", "")
     except Exception:
         pass
     try:
-        s_ran = (json.load(open(sf)).get("envelope") or {}).get("ran_at", "")
+        _se = (json.load(open(sf)).get("envelope") or {})
+        s_ran = _se.get("regenerated_at") or _se.get("ran_at", "")
     except Exception:
         pass
     if d_ran > s_ran:                    # org copy is newer — back-sync it

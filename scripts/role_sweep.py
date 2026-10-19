@@ -62,6 +62,7 @@ from jobsearch.rolefamilies import (  # noqa: E402
     sector_verdict,
     title_core,
 )
+from jobsearch import company_seeds as _seeds  # noqa: E402  # S40 A3
 
 ROLES_DIR = REPO / "ingest/data/roles"
 WATCH_DIR = REPO / "ingest/data/board_watch"
@@ -1589,7 +1590,13 @@ def sweep(queries: list[str], skip_gj: bool = False,
                     "loc": row.get("loc") or "",
                     "url": row.get("url") or "",
                     "posted": posted,
-                    "desc": (row.get("description") or "")[:4000],
+                    # S40 fix: the bundle field is 'desc' — reading
+                    # 'description' returned None and STRIPPED the JD
+                    # from every seed row (1,282 careerjet rows hit
+                    # descLen=0 on lane #5; the jd_* sector graders
+                    # could never fire on them)
+                    "desc": (row.get("desc")
+                             or row.get("description") or "")[:4000],
                     "source": src, "layer": _SRC_LAYER.get(src, "l2"),
                     "query": "seed", "rid": rid,
                     "company_key": _company_key(
@@ -1651,8 +1658,12 @@ def sweep(queries: list[str], skip_gj: bool = False,
         # S38 flags (never drops): staffing repost + anonymized/board
         # employer (N9: Jobgether-class — company field is not the
         # real employer; flagged + merge-excluded, kept)
-        r["staffing_evidence"] = ("agency" if is_staffing_company(company)
-                                   else "")
+        # S40 A3/F3: the agency resolution also consults the slug-keyed
+        # STAFF_SEED fold (the display-name regex cannot see companyKeys)
+        r["staffing_evidence"] = (
+            "agency" if (is_staffing_company(company)
+                        or _seeds.staff_seed_hit(r.get("company_key"),
+                                                 company)) else "")
         if r["staffing_evidence"]:
             counters["staffing_repost"] += 1
         r["employer_anonymized"] = bool(
@@ -1708,6 +1719,26 @@ def sweep(queries: list[str], skip_gj: bool = False,
         merge_into = None
         if rid and rid in by_rid:                    # F1: rid-dedup first
             merge_into = id(by_rid[rid])
+        if merge_into is None and (r.get("url") or "").strip():
+            # S40 (url-identity): same source + same non-empty url +
+            # same title_norm = the SAME posting, regardless of the
+            # anonymized/board-employer ck salt. Kills the compounding
+            # dup class: board-employer rows (company=Indeed/LinkedIn/
+            # adzuna/...) are F14-salted per-row so the company-key
+            # merge rules can NEVER fire on them — every seed-union
+            # run re-inserted the prior envelope copy (the
+            # indeed:4e33... triple, +1 per run). url equality is the
+            # identity signal the salt cannot defeat (same url = same
+            # posting page; different titles never match).
+            ukey = (re.sub(r"\W", "", (r["title"] or "").lower()),
+                    (r.get("url") or "").strip(),
+                    r.get("source") or "")
+            for k, cand in by_key.items():
+                if cand.get("_ukey") == ukey:
+                    merge_into = k
+                    counters["url_identity_merge"] = counters.get(
+                        "url_identity_merge", 0) + 1
+                    break
         if merge_into is None:
             for k, cand in by_key.items():
                 if cand.get("_exact") == exact:
@@ -1807,6 +1838,9 @@ def sweep(queries: list[str], skip_gj: bool = False,
             r["_ck"], r["_title_norm"], r["_src"] = ck, re.sub(
                 r"\W", "", (r["title"] or "").lower()), r.get("source")
             r["_loc_prefix"] = (r.get("loc") or "")[:12]
+            r["_ukey"] = ((re.sub(r"\W", "", (r["title"] or "").lower())),
+                          (r.get("url") or "").strip(),
+                          r.get("source") or "")
             by_key[id(r)] = r
             if rid:
                 by_rid[rid] = r
@@ -1865,6 +1899,9 @@ def sweep(queries: list[str], skip_gj: bool = False,
             r["_ck"], r["_title_norm"], r["_src"] = ck, re.sub(
                 r"\W", "", (r["title"] or "").lower()), r.get("source")
             r["_loc_prefix"] = (r.get("loc") or "")[:12]
+            r["_ukey"] = ((re.sub(r"\W", "", (r["title"] or "").lower())),
+                          (r.get("url") or "").strip(),
+                          r.get("source") or "")
             del by_key[merge_into]
             # S39: purge stale by_rid pointers to the swapped-out donor
             # (a later same-rid row would resolve to a dead key)
@@ -1911,7 +1948,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
         r.pop("_exact", None), r.pop("_core", None)
         r.pop("_day", None), r.pop("_layer", None)
         r.pop("_ck", None), r.pop("_title_norm", None)
-        r.pop("_src", None)
+        r.pop("_src", None), r.pop("_ukey", None)
 
     # outputs (write-atomic)
     ROLES_DIR.mkdir(parents=True, exist_ok=True)
@@ -2031,10 +2068,18 @@ def sweep(queries: list[str], skip_gj: bool = False,
     def _row_id(r) -> str:
         if r.get("rid"):
             return r["rid"]
+        # S40: posted + url joined the basis — (ck,title,loc,source)
+        # alone collided on 16 production rows (careerjet >7d
+        # repost pairs kept by design + same-day different-url
+        # pairs). posted distinguishes the repost windows; url-hash
+        # distinguishes url-variants. Rid rows are unaffected.
         basis = "|".join((r.get("company_key") or "",
                           r.get("title") or "",
                           (r.get("loc") or "")[:40],
-                          r.get("source") or ""))
+                          r.get("source") or "",
+                          (r.get("posted") or "")[:10],
+                          hashlib.sha1((r.get("url") or "")
+                                       .encode()).hexdigest()[:8]))
         return (r.get("company_key") or "unknown") + ":" + \
             hashlib.sha1(basis.encode()).hexdigest()[:12]
 

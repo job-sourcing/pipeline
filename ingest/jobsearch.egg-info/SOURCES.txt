@@ -5,7 +5,6 @@ jobsearch/alerts.py
 jobsearch/ats_resolve.py
 jobsearch/categorize.py
 jobsearch/cli.py
-jobsearch/company_seeds.py
 jobsearch/config.py
 jobsearch/corroborate.py
 jobsearch/dedup.py
@@ -17,7 +16,6 @@ jobsearch/net.py
 jobsearch/pipeline_lock.py
 jobsearch/prompts.py
 jobsearch/reposts.py
-jobsearch/rolefamilies.py
 jobsearch/scoring.py
 jobsearch/storage.py
 jobsearch/transport.py
@@ -84,7 +82,6 @@ tests/test_prompts.py
 tests/test_rasweep_adapter.py
 tests/test_regressions.py
 tests/test_reposts.py
-tests/test_rolefamilies.py
 tests/test_s23_transient_resilience.py
 tests/test_s24_dify_adapter.py
 tests/test_s24_unreachable_classification.py
@@ -96,9 +93,6 @@ tests/test_s28_geo_spread.py
 tests/test_s30_re_wave.py
 tests/test_s32_licompany.py
 tests/test_s33_gjobs.py
-tests/test_s38_companykey_dedup.py
-tests/test_s38_role_sweep.py
-tests/test_s39_role_sweep.py
 tests/test_s9_titlesearch.py
 tests/test_scoring.py
 tests/test_site_boards.py

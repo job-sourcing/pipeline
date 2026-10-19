@@ -39,8 +39,8 @@
   "head of product",
   "product owner"
  ],
- "rows_kept": 5026,
- "rows_dropped": 486,
+ "rows_kept": 4256,
+ "rows_dropped": 1256,
  "counters": {
   "family_other": 2998,
   "nontech_gate": 336,
@@ -59,7 +59,16 @@
   "roster_kept": 1723,
   "agency_pending": 1195,
   "res7_merge": 413,
-  "cross_src_merge": 99
+  "cross_src_merge": 99,
+  "s40_regrade": {
+   "at": "2026-10-19T22:51:29Z",
+   "regraded_pending": 2556,
+   "kept": 803,
+   "still_pending": 983,
+   "bucketed_nontech": 770,
+   "agency_flips": 234,
+   "jdblind": 406
+  }
  },
  "seniority_conflicts": 0,
  "title_conflicts": 1,
@@ -81,5 +90,7 @@
   "director+": 1021,
   "mid": 1981,
   "junior": 87
- }
+ },
+ "regenerated_at": "2026-10-19T22:51:29Z",
+ "regenerated_by": "s40-fold-regrade (DESIGN-S40 v2 \u00a74; offline \u2014 lane #6 is the live authority)"
 }

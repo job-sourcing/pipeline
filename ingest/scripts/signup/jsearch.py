@@ -4,7 +4,7 @@
 Flow:
 1. Navigate to rapidapi.com/auth/join, click "Sign Up" link to switch to
    signup mode (same SPA)
-2. Fill username + email (security@priv.email) + password + confirm + agree
+2. Fill username + email (redacted@priv.email) + password + confirm + agree
 3. Submit — verification email sent
 4. Poll v3-mail for verification email → click verify link in body
 5. Login → search for "JSearch" → navigate to API page
@@ -37,7 +37,7 @@ APPS_URL = "https://rapidapi.com/developer/apps"  # apps dashboard
 def step_signup(state: dict) -> dict:
     """Switch to signup mode and submit the form."""
     if "email" not in state:
-        state["email"] = eu.alias_for_service(SERVICE)  # security@priv.email
+        state["email"] = eu.alias_for_service(SERVICE)  # redacted@priv.email
         state["password"] = gen_password()
         state["username"] = f"jobsearch{int(time.time())%100000:05d}"
         save_state(SERVICE, state)

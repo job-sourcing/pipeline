@@ -233,11 +233,11 @@ class TestBankRule:
             assert a == "keep", (comp, a)
 
     def test_mercury_unresolved_rides_pending(self):
-        """F14: mercury is deliberately in NEITHER the guard NOR the
-        bank seed (identity conflict) → its rows stay pending."""
+        """F14 → RESOLVED in S40 (D-S40-3): mercury is TECH_SEED now
+        (BaaS fintech-software rule, MIDB1 wave evidence) — roster."""
         a, e, r = sector_verdict(
             "Senior PM – Consumer Credit Card", "Mercury", "", "mercury")
-        assert a == "pending"
+        assert a == "keep" and e == "roster"
 
     def test_vanguard_leading_the(self):
         """F14/F15: 'The Vanguard Group' → vanguard (BANK_SEED)."""

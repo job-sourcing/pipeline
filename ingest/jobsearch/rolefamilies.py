@@ -550,6 +550,27 @@ def _norm_company(s: Optional[str]) -> str:
     return re.sub(r"\s+", " ", (s or "").lower()).strip()
 
 
+_SERP_HEAD = re.compile(r"google\.com/websearch|go to google home",
+                       re.I)
+
+
+def _clean_digest(jd: str) -> str:
+    """B-S40-5 (S40 review F1-note-1): a digest whose head carries
+    Google-SERP chrome ('Skip to main content [Accessibility help]…'
+    + google.com/websearch links) captured the SEARCH PAGE, not the
+    JD — treat as empty. Measured: ~6 bank-review rows + wider
+    pending queue; title/company tokens then carry the row."""
+    t = (jd or "").strip()
+    if not t:
+        return ""
+    head = t[:600]
+    if _SERP_HEAD.search(head) and (
+            "skip to main content" in head.lower()
+            or "accessibility help" in head.lower()):
+        return ""
+    return t
+
+
 def sector_verdict(
     title: str,
     company_str: str,
@@ -581,6 +602,12 @@ def sector_verdict(
     org = _norm_company(company_str)
     hay = f"{org} { _norm_company(title)}"      # F6/T3: company+title
     ck = company_key or ""
+    jd_text = _clean_digest(jd_text)   # B-S40-5: SERP-chrome = empty
+    jd_c = "" if g1_fires(jd_text) else (jd_text or "")
+    hay_f = hay + " " + jd_c.lower()    # company+title+desc haystack
+    hay_t = _norm_company(title) + " " + jd_c.lower()  # title+desc
+    pair_primary_bank = _phrase_hit(_seeds.BANK_PAIR_PRIMARIES, hay_f)
+    pair_primary_payer = _phrase_hit(_seeds.PAYER_PAIR_PRIMARIES, hay_f)
 
     # 0. TECH_SEED precedence (the D-S36-1 curated exception) — but the
     #    evidence GRADE ranking still applies (division > jd > roster):
@@ -593,26 +620,63 @@ def sector_verdict(
             return "keep", "jd", "tech_seed_jd_weak"
         return "keep", "roster", "tech_seed"
 
-    # 1. N3B bank rule (T1 §2 ordering: guard → tech token → product
-    #    token → review; the tech tokens rescue FIRST — the Western
-    #    Alliance 'Product Technology, Small Business Banking' case)
+    # 1. N3B bank rule — S40 v2 A1: the phases consult the CLEANED desc
+    #    too (the bank wave's 122 decided rows were JD-digest-decided),
+    #    with the g1 guard; the DESC tier matches SPECIFIC tool/craft
+    #    phrases only (boilerplate-proof: the BNY 'cutting-edge AI'
+    #    culture-blurb trap, review F1 note-3). A2: platform/agentic/
+    #    aml/fraud primaries are pair-ruled — solo 'platform' no longer
+    #    auto-techs ('Global Clearing Platform' measured BUSINESS).
+    #    B-S40-2: per-company orderings (citi/citigroup/michigan-farm-
+    #    bureau business_first — the ≥80%-decided override rule).
     if _seeds.bank_seed_hit(ck, company_str or "") and \
             not _seeds.fintech_guard_hit(ck, company_str or ""):
-        if _phrase_hit(_seeds.BANK_TECH_TOKENS, hay):
-            return "keep", "division", "bank_tech_division"
-        if _phrase_hit(_seeds.BANK_PRODUCT_TOKENS, _norm_company(title)):
-            return "bucket", "", "bank_business_product"
+        biz_first = (
+            _seeds.BANK_OVERRIDES.get(ck) == "business_first"
+            or _seeds.BANK_OVERRIDES.get(_seeds._slugify(org))
+            == "business_first")
+
+        def _bank_tech() -> bool:
+            if pair_primary_bank and _phrase_hit(
+                    _seeds.BANK_PAIR_TECH_CO, hay_f):
+                return True
+            if _phrase_hit(_seeds.BANK_TECH_TOKENS, hay):
+                return True
+            return _phrase_hit(_seeds.BANK_TECH_DESC_TOKENS, jd_c.lower())
+
+        def _bank_biz() -> bool:
+            if pair_primary_bank and _phrase_hit(
+                    _seeds.BANK_PAIR_BIZ_CO, hay_f):
+                return True
+            return _phrase_hit(_seeds.BANK_PRODUCT_TOKENS, hay_t)
+
+        checks = (("biz", _bank_biz), ("tech", _bank_tech)) if biz_first \
+            else (("tech", _bank_tech), ("biz", _bank_biz))
+        for kind, fn in checks:
+            if fn():
+                if kind == "tech":
+                    return "keep", "division", "bank_tech_division"
+                return "bucket", "", "bank_business_product"
         return "pending", "", "bank_review"
 
-    # 2. N6B payer rule (T2a §1 ordering: division kw → business token
-    #    → tech token → review; business fires BEFORE generic tech — the
-    #    Humana 'Senior Technical PM – Insurance Products' case)
+    # 2. N6B payer rule — S40 v2 A1 (desc-informed, specific-tier desc
+    #    tokens, pair-ruled primaries); default order stays business-
+    #    first (the S39 Humana G1B-upstream case never reaches here —
+    #    review F10; the humana PAYER_OVERRIDE is DROPPED as inert).
     if _seeds.payer_seed_hit(ck, company_str or ""):
-        if _phrase_hit(_seeds.PAYER_DIVISION_KWS, hay):
+        if _phrase_hit(_seeds.PAYER_DIVISION_KWS, hay_f):
             return "keep", "division", "payer_division"
-        if _phrase_hit(_seeds.PAYER_BUSINESS_TOKENS, _norm_company(title)):
+        if pair_primary_payer and _phrase_hit(
+                _seeds.PAYER_PAIR_BIZ_CO, hay_f):
             return "bucket", "", "payer_business_product"
-        if _phrase_hit(_seeds.PAYER_TECH_TOKENS, _norm_company(title)):
+        if _phrase_hit(_seeds.PAYER_BUSINESS_TOKENS, hay_t):
+            return "bucket", "", "payer_business_product"
+        if pair_primary_payer and _phrase_hit(
+                _seeds.PAYER_PAIR_TECH_CO, hay_f):
+            return "keep", "division", "payer_tech_lean"
+        if _phrase_hit(_seeds.PAYER_TECH_TOKENS, hay):
+            return "keep", "division", "payer_tech_lean"
+        if _phrase_hit(_seeds.PAYER_TECH_DESC_TOKENS, jd_c.lower()):
             return "keep", "division", "payer_tech_lean"
         return "pending", "", "payer_review"
 
@@ -661,7 +725,10 @@ def sector_verdict(
             return "keep", "division", f"division:{div}"
     if jd_text and _JD_STRONG.search(jd_text) and not g1_fires(jd_text):
         return "keep", "jd", "g3_jd_override"
-    return "bucket", "", f"g3_deny:{deny_key}"
+    # A7/F9: the jdblind marker — nontech-denied with no usable JD:
+    # re-fetch priority for the next lane run (Fix A restores seed JDs)
+    return "bucket", "", f"g3_deny:{deny_key}" + (
+        "|jdblind" if not (jd_text or "").strip() else "")
 
 
 def _phrase_hit(phrases, text: str) -> bool:
