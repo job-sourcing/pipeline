@@ -1953,6 +1953,24 @@ class TestSlugHelpers:
         assert board_dump._slug_repost_count("/job/Engineer") == 0
         assert board_dump._slug_repost_count("") == 0
 
+    def test_repost_count_reqid_leak_class(self):
+        # [S39 repost-leak] the haier wd3 / GE_Appliances board puts
+        # the BARE reqId token in the slug's last '_' segment — the
+        # trailing digits ARE the reqId (REQ-26784 -> reqId 26784 was
+        # rendered 'reposted 26,784x' in the UI; 121 live rows). The
+        # discriminator: one req-id-shaped token = no counter.
+        assert board_dump._slug_repost_count(
+            "/GE_Appliances/job/USA-Camden-SC/Process-Tech-s_REQ-26784"
+        ) == 0
+        assert board_dump._slug_repost_count(
+            "/GE_Appliances/job/USA-Louisville-KY/"
+            "Senior-Advanced-Manufacturing-Engineer---Plastics_REQ-26881"
+        ) == 0
+        # counter-after-reqId (the real signal) must keep working
+        assert board_dump._slug_repost_count("/job/X_R34730-1") == 1
+        assert board_dump._slug_repost_count(
+            "/job/Engineer_JR2024930-1") == 1
+
 
 class TestApplicationDeadline:
     def test_primary_phrasing(self):

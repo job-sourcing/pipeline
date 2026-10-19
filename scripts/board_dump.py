@@ -310,12 +310,28 @@ def _slug_req_id(path: str) -> str:
 
 def _slug_repost_count(path: str) -> int:
     """The trailing '-N' on a CXS slug = Workday's own repost counter
-    (151/1,360 rows carry one; S8-C §4b). 0 when absent."""
+    (151/1,360 rows carry one; S8-C §4b). 0 when absent.
+
+    [S39 repost-leak fix] The reqId-ITSELF class: some boards (the
+    haier wd3 / GE_Appliances instance) put the BARE reqId token in
+    the slug's last '_' segment — 'Process-Tech-s_REQ-26784' — where
+    the trailing digits ARE the reqId, not a counter. A true counter
+    rides AFTER a reqId that itself ends in digits ('R34730-1' =
+    reqId R34730, counter 1). Discriminator: if the whole last
+    segment is one req-id-shaped token ([letters]-[digits], e.g.
+    'REQ-26784'), there is no counter — 0.
+    """
     seg = (path or "").rstrip("/").rsplit("/", 1)[-1]
     if "_" not in seg:
         return 0
-    m = re.search(r"-(\d+)$", seg.rsplit("_", 1)[-1])
-    return int(m.group(1)) if m else 0
+    part = seg.rsplit("_", 1)[-1]
+    m = re.search(r"-(\d+)$", part)
+    if not m:
+        return 0
+    if re.fullmatch(r"[A-Za-z]+-?\d+", part):
+        # one req-id token, no trailing counter (the reqId-leak class)
+        return 0
+    return int(m.group(1))
 
 
 def _parse_application_deadline(desc_text: str) -> str:
