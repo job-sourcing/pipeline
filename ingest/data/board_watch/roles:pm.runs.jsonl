@@ -4,3 +4,4 @@
 {"ts": "2026-10-15T13:58:08Z", "verdict": "complete", "rows": 2559, "sources_dead": ["careerjet", "usajobs"]}
 {"ts": "2026-10-15T14:26:31Z", "verdict": "complete", "rows": 2937, "sources_dead": ["careerjet", "usajobs"]}
 {"ts": "2026-10-15T19:22:20Z", "verdict": "complete", "rows": 5026, "sources_dead": []}
+{"ts": "2026-10-19T22:55:53Z", "verdict": "complete", "rows": 4513, "sources_dead": ["usajobs", "builtin"]}
