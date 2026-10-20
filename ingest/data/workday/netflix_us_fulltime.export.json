@@ -1,9 +1,9 @@
 {
  "label": "netflix_us_fulltime",
- "rows": 316,
- "kept": 316,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 308,
+ "kept": 304,
+ "new": 4,
+ "ghosts_dropped": 12,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,7 +11,7 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 316,
+ "state_rows": 308,
  "banded": 149,
  "lca_pools": 152,
  "snapshot": "2026-10-20"

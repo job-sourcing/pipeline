@@ -1,9 +1,9 @@
 {
  "label": "airwallex_us_fulltime",
  "rows": 132,
- "kept": 132,
- "new": 0,
- "ghosts_dropped": 0,
+ "kept": 128,
+ "new": 4,
+ "ghosts_dropped": 4,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,

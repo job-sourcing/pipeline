@@ -3810,61 +3810,6 @@ Preferred Qualifications
 This role offers the flexibility to be home-based anywhere in the U.S. with preference for the Eastern or Central time zones. If you're near our Chicago or Raleigh offices, we follow a friendly hybrid model with three days a week in the office—great for collaboration and connection!
 
 We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",8142,https://jobs.lenovo.com/en_US/careers/JobDetail/Global-Head-of-Retail-Solutions-AI/76633,,,,,,,not_checked,,2026-09-27,,2026-10-20,,49,startDate,true,0,,,,,Sales,2026-09-01,,false,,,,,,
-78284,Principal Private Cloud Architect,Lenovo,,Full time,Posted 110 Days Ago,2026-06-09,133,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"We are seeking a technically deep and architecture-minded Private Cloud Architect to lead the design of our next-generation OpenStack-based IaaS platform. This role will focus on enabling enterprise-grade scalability, elasticity, and AI computing support across secure, multi-tenant private cloud environments. You will work with global teams to build highly automated, interoperable, and resilient infrastructure platforms serving both general-purpose and AI-native workloads.
-
-This role offers the flexibility to be home-based anywhere in the U.S. If you're near our Chicago or Raleigh offices, we follow a friendly hybrid model with three days a week in the office - great for collaboration and connection!
-
-Key Responsibilities
-
-• Own the end-to-end architecture of the OpenStack-based private cloud, including:
-
-• Core Service Design – scalable deployment of Nova, Neutron, Cinder, Glance, Keystone, and Horizon across HA zones and availability domains.
-
-• AI Infrastructure Enablement – GPU passthrough/virtualization, quota isolation, and elastic AI workload scheduling on OpenStack compute nodes.
-
-• Multi-Tenant & Self-Service Architecture – RBAC, project-based quota control, automated provisioning pipelines, and extensible service catalog.
-
-• Security & Compliance Controls – integration with identity federation (e.g., LDAP, SSO), key management (Barbican), Neutron firewall policies, and audit trail systems.
-
-• Storage & Networking Architecture – software-defined storage (Ceph, external backends), and L2/L3 overlay networking, BGP/GRE tunneling.
-
-• Hybrid/Edge Integration – support for hybrid Kubernetes stack (e.g., Magnum, OpenShift), S3-compatible storage federation, and cloud bursting scenarios.
-
-• Monitoring & Operational Visibility – design telemetry, metering (Ceilometer/Gnocchi), centralized logging, alerting, and visual dashboards.
-
-• Automation & CI/CD – integration of Infrastructure-as-Code (Terraform, Heat templates), and GitOps-style workflows for platform rollout/updates.
-
-• Define architectural patterns, system blueprints, and technical guardrails to ensure maintainability, resilience, and cost efficiency.
-
-• Lead design reviews, troubleshoot performance/scalability bottlenecks, and provide high-level guidance to engineering teams.
-
-• Collaborate with security, DevOps, product, and data center operation teams across multiple geographies.
-
-• Stay current with OpenStack upstream innovations, OpenInfra ecosystem projects, and hybrid cloud best practices.
-
-Requirements:
-
-• Bachelor’s or Master’s degree in Computer Science, Engineering, or related field.
-
-• 15+ years of experience in cloud infrastructure architecture, with 5+ years specifically on OpenStack-based private cloud platforms.
-
-Preferred Requirements:
-
-• Deep expertise in designing and implementing large-scale distributed backend systems, with experience building public cloud or hyperscale cloud platforms preferred.
-
-• Deep understanding of virtualization (KVM, SR-IOV), storage backends (e.g., Ceph, iSCSI, NFS), SDN concepts, and overlay networking.
-
-• Familiarity with GPU virtualization (vGPU, passthrough), AI infrastructure needs, and integration with model serving or data platforms.
-
-• Hands-on experience with automation tools (Ansible, Terraform), CI/CD for infrastructure delivery, and configuration management.
-
-• Knowledge of security and compliance frameworks relevant to private cloud operations (e.g., PCI-DSS, ISO 27001, internal control systems).
-
-• Proficient in system troubleshooting, capacity planning, and architecture documentation.
-
-• Strongly preferred: experience delivering or operating OpenStack-based platforms in mission-critical enterprise or government scenarios.
-
-We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",4013,https://jobs.lenovo.com/en_US/careers/JobDetail/Principal-Private-Cloud-Architect/78284,,https://www.linkedin.com/jobs/view/4426144309,2026-09-11,59,59 applicants,94,matched,title,2026-09-27,2026-09-27T08:36:33,2026-10-20,,133,startDate,true,0,,,,,Cloud Computing,2026-06-09,,false,,,,,,
 80819,Manufacturing Vertical Leader,Lenovo,,Full time,Posted 9 Days Ago,2026-09-18,32,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",301,https://jobs.lenovo.com/en_US/careers/JobDetail/Manufacturing-Vertical-Leader/80819,,,,,,,not_checked,,2026-09-27,,2026-10-20,,32,startDate,false,0,,,,,Sales,2026-09-18,,false,,,,,,
 80504,"Research Manager, AI Infrastructure",Lenovo,,Full time,Posted 53 Days Ago,2026-08-05,76,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"*Please Note* This is a hybrid role in Morrisville, NC. This candidate will be required to work onsite three days a week.
 
@@ -11341,3 +11286,537 @@ The successful candidate will be responsible for planning, executing, and optimi
 This position requires a highly organized and structured project manager who can effectively translate business requirements into actionable plans while maintaining cost, schedule, and quality objectives. The role is both strategic and operational, with opportunities to work directly on the warehouse floor alongside teams to implement and validate process improvements.
 
 We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",1855,https://jobs.lenovo.com/en_US/careers/JobDetail/Project-Manager/79446,,,,,,,not_checked,,2026-09-27,,2026-10-20,,92,startDate,true,0,,,,,,2026-07-20,,,,,,,,
+79676,ThinkPad Offering Team Project Manager,Lenovo,,Full time,Posted 98 Days Ago,2026-07-14,98,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"Position Overview:
+
+• The ThinkPad Offering Team Project Manager is responsible for leading the cross-functional development and delivery of ThinkPad products throughout the entire product lifecycle. This role combines the technical aspects of product development with the business responsibilities of managing a product program, requiring strong leadership, project management, and decision-making skills. The role is accountable for delivering products on schedule, within project expense and product cost targets, while meeting customer expectations and business objectives. The successful candidate will support multiple product generations simultaneously, including products currently in market, next-generation products in development, and future products in early planning. Due to collaboration with global teams, occasional early morning and evening meetings may be required.
+
+Key Responsibilities:
+
+• Lead cross-functional Offering Core Teams through product planning, definition, development, qualification, launch, and post-launch support.
+
+• Translate customer needs, market requirements, technology capabilities, and business objectives into optimized product definitions.
+
+• Develop and maintain integrated project plans, master schedules, resource plans, budgets, and project commitments.
+
+• Coordinate activities across hardware engineering, software engineering, marketing, manufacturing, quality, supply chain, services, and external partners.
+
+• Manage project scope, schedule, cost, project expense, product quality, and overall execution.
+
+• Identify project risks, develop mitigation strategies, and manage issues, changes, and dependencies throughout the product lifecycle.
+
+• Lead product scope discussions, investment reviews, development checkpoints, and executive status updates.
+
+• Make informed trade-off decisions involving product features, schedule, cost, quality, and resource allocation.
+
+• Monitor project performance using key metrics and communicate progress to executive leadership.
+
+• Drive product launch readiness, including manufacturing transition, supply readiness, quality execution, and production ramp.
+
+• Support continuous improvement efforts by monitoring product performance after launch and responding to changing business and market conditions.
+
+Basic Qualifications:
+
+• Bachelor's degree in Engineering, Computer Science, Business, or a related field.
+
+• Two or more years of project management or product development experience.
+
+• Experience supporting hardware and/or software product development.
+
+Preferred Qualifications:
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",2884,https://jobs.lenovo.com/en_US/careers/JobDetail/ThinkPad-Offering-Team-Project-Manager/79676,,,,,,,not_checked,,2026-09-27,,2026-10-20,,98,startDate,true,0,,,,,,2026-07-14,,,,,,,,
+82598,Procurement Program Manager,Lenovo,,Full time,Posted Today,2026-10-20,0,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"WD00107008
+Supply Chain
+United States of America
+North Carolina
+Morrisville
+Tuesday, October 20, 2026
+Full-time
+Additional Locations:
+
+* United States of America - North Carolina - Morrisville",192,https://jobs.lenovo.com/en_US/careers/JobDetail/Procurement-Program-Manager/82598,,,,,,,not_checked,,2026-10-20,,2026-10-20,,0,startDate,false,0,,,,,,2026-10-20,,,,,,,,
+82714,Client Relationship Manager - New Jersey and Philadelphia,Lenovo,,Full time,Posted 5 Days Ago,2026-10-15,5,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"About the Position
+
+The Corporate Client Manager is responsible for managing and growing strategic customer relationships, driving revenue across portfolio offerings and identifying, developing, and advancing sales opportunities within assigned accounts. This role acts as the primary customer interface, orchestrating internal resources and specialists to deliver end-to-end solutions.
+
+This position involves 50% travel across New Jersey and Philadelphia and is otherwise remote on EST.
+
+Key Responsibilities
+
+1) Customer Relationship Management
+
+• Serve as the trusted advisor and primary point of contact for assigned clients
+
+• Build executive-level relationships (e.g., CIO, IT leadership)
+
+• Maintain long-term customer trust and ensure delivery against commitments
+
+2) Opportunity Identification & Pipeline Growth
+
+• Identify and qualify new business opportunities across the portfolio
+
+• Drive opportunity creation and pipeline development aligned to business targets
+
+• Engage customers with consultative conversations to uncover needs and triggers
+
+3) Sales Orchestration & Deal Progression
+
+• Own early-stage deal progression:
+
+• Identify the right stakeholders within the customer
+
+• Initiate discovery conversations
+
+• Move opportunities to the appropriate stage
+
+• Hand off and collaborate with specialists (ISG, services, etc.) for technical depth
+
+• Ensure smooth coordination across sales, technical teams, and partners.
+
+4) Cross-Functional Collaboration
+
+• Work closely with:
+
+• ISG, IDG, SSG specialists
+
+• Solution architects and sales engineers
+
+• Bring in the right expertise at the right time to maximize win probability
+
+• Operate in a “team-sell” model rather than owning the deal solo
+
+5) Account Strategy & Planning
+
+• Develop and execute account plans aligned to revenue and growth targets
+
+• Track performance metrics (e.g., CPS, pipeline sufficiency, opportunity conversion)
+
+• Prioritize high-value opportunities and strategic initiatives
+
+6) Business Outcomes & Revenue Ownership
+
+• Own revenue targets for assigned accounts
+
+• Drive growth across:
+
+• New logos and acquisition
+
+• Cross-sell and upsell within existing clients
+
+Required Qualifications
+
+• Bachelor’s degree or equivalent professional experience
+
+• 8+ years of Experience with Enterprise technology sales
+
+• 5+ years of Experience selling infrastructure solutions to Enterprise and Public Sector organizations
+
+Preferred Qualifications
+
+• 10+ years of Experience with Enterprise technology sales
+
+• 10+ years of Experience selling enterprise infrastructure, services, and solutions
+
+• Ability to thrive in a highly matrixed, global organization
+
+• Strong executive presence with consultative selling approach
+
+• Self-starter mindset with the ability to operate independently and drive outcomes
+
+• Proven track record of consistently achieving or exceeding multi-million-dollar quotas
+
+• Strong technical and business acumen, with the ability to position cross-selling opportunities as partnerships
+
+• Experience selling complex solutions across large, matrixed organizations
+
+• Demonstrated success building and maintaining C-level relationships
+
+• Ability to influence across internal stakeholders and customer organizations
+
+• Strong financial acumen, including forecasting, pipeline management, and deal structuring
+
+• Excellent communication, presentation, and negotiation skills
+
+• Highly organized with strong problem-solving capabilities and ability to operate in a fast-paced environment
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",3797,https://jobs.lenovo.com/en_US/careers/JobDetail/Client-Relationship-Manager/82714,,https://www.linkedin.com/jobs/view/4479621235,2026-10-16,42,42 applicants,1,matched,,2026-10-17,2026-10-20T12:30:50,2026-10-20,,5,startDate,false,0,,,,,,2026-10-15,,false,,,,,,
+82722,Market Intelligence Analyst,Lenovo,,Full time,Posted 5 Days Ago,2026-10-15,5,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"Lenovo is hiring for a position within the strategy organization.  The market and competitive intelligence team is responsible for producing assets that facilitate higher-quality decision making throughout the organization.  The analyst will perform research, benchmarking, and analysis to support transformation and continued improvement activities spanning multiple parts of Lenovo.
+
+What you will do:
+
+In this role, the analyst will work with other intelligence professionals and stakeholders to perform the following activities :
+
+• Forming market and segment opportunity estimates
+
+• Completing competitor or industry benchmarks
+
+• Conducting process analysis and gathering business requirements
+
+• Developing business cases and financial models to support transformation initiatives
+
+• Facilitating stakeholder discussions and alignment across functions
+
+• Preparing executive-level communications and recommendations
+
+• Defining and tracking KPIs to measure progress and outcomes
+
+• Supporting benefits realization and ensuring value is captured from transformation efforts.
+
+The individual will use third-party sources as well as their own research to develop perspective supporting a specific business question or hypothesis. The analyst will present findings to executive and non-executive stakeholders and integrate activities into business management systems where appropriate.
+
+Responsibilities
+
+Problem framing & opportunity discovery
+
+• Structure ambiguous business challenges into clear decision questions, hypotheses, analytical workplans, and decision criteria.
+
+• Build internal and external fact bases using business data, stakeholder input, market intelligence, competitor benchmarks, and best-in-class practices.
+
+Market, Industry & Competitive Intelligence to facilitate project scoping
+
+• Identify emerging technologies, disruptive trends, investment patterns, and potential market inflection points.
+
+• Assess customer investment priorities, infrastructure requirements, and purchasing behavior.
+
+• Translate customer signals into actionable business recommendations.
+
+• Help produce competitive assessments.
+
+Analysis and decision support
+
+• Map current-state processes, operating models, capabilities, and pain points to define evidence-based future-state requirements and design principles.
+
+• Analyze operational, financial, customer, workforce, process, market, and portfolio data to identify trends, risks, and improvement opportunities.
+
+• Evaluate solution options against strategic fit, user needs, feasibility, value, and implementation risk, and validate solution integrity during delivery.
+
+• Develop business cases, scenarios, sensitivities, value bridges, KPIs, baselines, and quantified options to support prioritization and investment decisions.
+
+• Translate complex analysis into concise executive storylines, dashboards, decision papers, options, recommendations, and clear requests internally.
+
+Stakeholder engagement
+
+• Translate approved recommendations into priorities, owners, milestones, governance inputs, and analytical requirements for execution teams.
+
+• Facilitate interviews, workshops, and working sessions to test hypotheses, align stakeholders, clarify requirements, and build ownership.
+
+• Track KPIs, benefits, risks, adoption, and performance; identify variance, value leakage, or emerging issues and recommend corrective action.
+
+• Support post-implementation reviews, business-as-usual handoff, and capture of reusable methods, models, insights, and lessons learned.
+
+Candidate requirements
+
+Basic Requirements:
+
+• Bachelor’s degree in business, finance, economics, engineering, information systems, operations, or equivalent professional experience
+
+• 3+ years of experience in business analysis, strategy, consulting, finance, operations, transformation, analytics, or process improvement
+
+• Experience with process mapping, requirements analysis, external benchmarking, financial modelling, scenario analysis, or benefits realization
+
+• Demonstrated ability to structure complex problems, analyze quantitative and qualitative evidence, and develop clear recommendations.
+
+• Demonstrated projects involving research, analytics, and storytelling.
+
+• Strong facilitation skills to work across a diverse set of stakeholders and problem types.
+
+Preferred Requirements:
+
+• Advanced capability in Excel and PowerPoint, with experience using Power BI, Tableau, SQL, or comparable analytics and visualization tools.
+
+• Familiarity with Lean, Six Sigma, Agile, change management, or continuous-improvement methods; relevant certification such as CBAP or Lean Six Sigma is beneficial.
+
+• Practical digital and AI literacy, including responsible use of AI to accelerate research, analysis, modelling, synthesis, and insight generation while validating outputs.
+
+The ideal candidate is motivated by hypothesis-led problem solving, including performing research, developing models, creating and evaluating scenarios, authoring perspectives and presenting recommendations.  Further, the ideal candidate is comfortable working on problems where there is always a level of uncertainty, regardless of information available.  The candidate should have innate curiosity about topics within the IT industry, applying learnings to the projects and other activities.  Candidates with high learning agility will be comfortable working on business problems with uncertain outcomes.  Lastly, the candidate should be able to apply advancements in AI to responsibilities, adding efficiency and capability.
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",5846,https://jobs.lenovo.com/en_US/careers/JobDetail/Intelligence-Analyst/82722,,https://www.linkedin.com/jobs/view/4480256658,2026-10-19,71,71 applicants,4,matched,,2026-10-20,2026-10-20T12:30:55,2026-10-20,,5,startDate,false,0,,,,,,2026-10-15,,false,,,,,,
+82805,Change Management Associate,Lenovo,,Full time,Posted 1 Days Ago,2026-10-19,1,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"The Change Management Analyst supports the delivery of change management activities for business, technology, and organizational initiatives. This role partners with program managers, project teams, and stakeholders to help ensure employees are informed, prepared, and supported through change. It is an ideal role for someone building foundational experience in change management and organizational effectiveness.
+
+Key Responsibilities
+
+Change Support & Execution
+
+• Support the development and execution of change management plans under the guidance of a program manager
+
+• Assist with change impact assessments, stakeholder mapping, and readiness activities
+
+• Help identify potential risks and resistance to change and escalate insights as needed
+
+Stakeholder & Team Collaboration
+
+• Work closely with project managers, HR, communications, and business teams
+
+• Support leaders and managers with change-related materials and messaging
+
+• Participate in meetings and workshops to understand stakeholder needs
+
+Communications & Engagement
+
+• Assist in creating change communications such as emails, presentations, FAQs, and intranet content
+
+• Track communication delivery and support feedback collection
+
+• Ensure messaging is clear, consistent, and audience-appropriate
+
+Training & Enablement
+
+• Coordinate training logistics, schedules, and materials
+
+• Support training sessions and learning reinforcement activities
+
+• Help maintain training documentation and user support resources
+
+Measurement & Reporting
+
+• Track basic change metrics (e.g., training completion, communication reach, feedback results)
+
+• Assist with surveys, feedback analysis, and reporting
+
+• Support post-implementation reviews and documentation of lessons learned
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",2047,https://jobs.lenovo.com/en_US/careers/JobDetail/Change-Management-Associate/82805,,,,,,,not_checked,,2026-10-20,,2026-10-20,,1,startDate,false,0,,,,,,2026-10-19,,,,,,,,
+82852,OPEX Operations Lead,Lenovo,,Full time,Posted 1 Days Ago,2026-10-19,1,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"Summary
+
+At Lenovo, we believe in smarter technology for all, and that same mindset applies to how we run the business. This role offers the opportunity to help shape a more disciplined, data-driven, and scalable operating model by strengthening OPEX governance, improving expense visibility, and simplifying how work gets done. The OPEX Operations Lead translates complexity into clarity, enables better resource allocation decisions, and applies AI-enabled ways of working to improve the speed, accuracy, and consistency of OPEX processes.
+
+For a leader who enjoys building structure, influencing across functions, and driving meaningful operational change, this is a high-impact opportunity to help modernize how the business operates.
+
+Lenovo is seeking an experienced OPEX Operations Lead to drive operational expense governance, spend visibility, and process excellence across CSW. This role will lead the operating rhythms, reporting, and execution discipline required to manage OPEX activities effectively across vendor spend, labor allocations, purchase orders, invoicing, accrual readiness, and recurring alignment with Finance partners.
+
+The ideal candidate brings strong business, analytical, and operational acumen, a systems mindset, and the ability to turn complex data into clear business insights. This individual will also help advance AI-enabled ways of working by identifying practical opportunities to use AI tools and task-specific AI agents to reduce manual effort, improve accuracy, and automate repeatable OPEX administration, reporting, and governance activities within appropriate control and governance boundaries.
+
+Key Responsibilities:
+
+• Lead end-to-end OPEX governance across vendor spend, non-recurring engineering (NRE), and labor allocations to support accuracy, compliance, transparency, and alignment with business priorities.
+
+• Own and continuously improve OPEX governance and business operating cadences, including Budget Board preparation, approval workflows, weekly OPEX reviews, and recurring reviews with Finance partners.
+
+• Partner closely with Finance, business leaders, and operational stakeholders to support budget outlooks, spend projections, variance explanations, accrual readiness, and leadership decision support.
+
+• Drive operational discipline across purchase-order intake, validation, approval routing, invoice coordination, and audit-ready documentation.
+
+• Develop and standardize reporting, dashboards, executive updates, and business narratives that improve expense transparency, identify risks and opportunities, and support leadership decision-making.
+
+• Establish clear ownership, decision rights, documentation standards, and service expectations across recurring OPEX processes.
+
+• Identify and implement opportunities to simplify workflows, automate manual tasks, improve cycle time, strengthen operational controls, and reduce process errors and rework.
+
+• Partner with Finance, Procurement, and other control functions to ensure OPEX processes operate within applicable policies, approval requirements, and governance standards.
+
+• Lead, coach, and develop team members responsible for core OPEX execution activities, establishing clear priorities, accountability, development expectations, and service standards.
+
+• Build trusted cross-functional relationships and influence decisions in a matrixed environment through clear communication, structured problem-solving, business insight, and a customer-focused mindset.
+
+• Identify practical opportunities to apply AI tools and task-specific AI agents to OPEX administration, reporting, documentation, data validation, and other repeatable business processes.
+
+• Ensure AI-enabled process improvements are implemented within appropriate business, data, security, and governance boundaries.
+
+Basic Qualifications:
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",4134,https://jobs.lenovo.com/en_US/careers/JobDetail/OPEX-Operations-Lead/82852,,https://www.linkedin.com/jobs/view/4480263393,2026-10-19,25,among first 25,0,matched,,2026-10-20,2026-10-20T12:30:51,2026-10-20,,1,startDate,false,0,,,,,,2026-10-19,,true,,,,,,
+82877,Sr Healthcare Acquisition PC Specialist,Lenovo,,Full time,Posted 1 Days Ago,2026-10-19,1,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"We are Lenovo. We do what we say. We own what we do. We WOW our customers.
+
+Lenovo is a US$57 billion revenue global technology powerhouse, ranked #248 in the Fortune Global 500, and serving millions of customers every day in 180 markets. Focused on a bold vision to deliver Smarter Technology for All, Lenovo has built on its success as the world’s largest PC company with a full-stack portfolio of AI-enabled, AI-ready, and AI-optimized devices (PCs, workstations, smartphones, tablets), infrastructure (server, storage, edge, high performance computing and software defined infrastructure), software, solutions, and services. Lenovo’s continued investment in world-changing innovation is building a more equitable, trustworthy, and smarter future for everyone, everywhere. Lenovo is listed on the Hong Kong stock exchange under Lenovo Group Limited (HKSE: 992) (ADR: LNVGY).
+
+This transformation together with Lenovo’s world-changing innovation is building a more inclusive, trustworthy, and smarter future for everyone, everywhere. To find out more visit www.lenovo.com, and read about the latest news via our StoryHub.
+
+Description and Requirements
+
+The Sr Health Care PC Sales Specialist for the Intelligent Devices Group (IDG) is responsible for achieving revenue and profit targets, providing exceptional partner experiences, and ensuring overall customer satisfaction. This position is critical to our overall coverage and our One Lenovo go-to-market strategy.
+
+Based in Morrisville, NC, the PC Sales Specialist will be responsible for developing and executing on the aggressive customer R&D and Acquisition strategy for Lenovo’s US Corporate regional accounts. The preferred candidate demonstrates agility and possesses direct industry experience, showcasing a proven track record of successfully fostering trusted relationships at all organizational levels, both internally and externally.
+
+Critical focus will be placed on managing existing accounts and growing new lines of business while delivering on aggressive sales objectives selling Lenovo's IDG portfolio. This position requires strong sales acumen, business technical expertise, operational proficiency, and entrepreneurial spirit to drive IDG technology sales with a focus on achieving positive business outcomes.
+
+Responsibilities include:
+
+• Achieve profit and revenue objectives
+
+• Develop and cultivate client & partner relationships
+
+• Lead and assist in implementing the sales strategy within your account, driving revenue growth across the Lenovo’s IDG portfolio.
+
+• Ensure that products, services and solutions recommended to clients will fulfill their needs
+
+• Manage all aspects of complex IDG sales and drive to closure
+
+• Utilize MS Dynamics to effectively manage sales activity & sales pipeline across multiple quarters.
+
+• Stay informed and adaptable to Lenovo’s ongoing product and service developments
+
+• Serves as a trusted advisor within IDG for customers, partners, and internal teams.
+
+• Drive to achieve company growth projections in a dynamic and competitive environment
+
+• Excellent interpersonal, communication, organizational, and problem-solving skills
+
+• Has the ability to operate efficiently and achieve outcomes within typical business pressures and accelerated customer timelines.
+
+• Acquisition-minded and driven for prospecting through digital and traditional outreach methods such as cold calling, email campaigns, Vidyard, ZoomInfo, and LinkedIn Sales Navigator.
+
+Basic Qualifications:
+
+• BS or BA degree or equivalent professional work experience
+
+• 5+ years of inside sales or field (outside) sales experience
+
+• PC Industry/IT Hardware/Software sales experience
+
+• Open to occasional business travel
+
+Preferred Qualifications:
+
+• Prior experience in a quota-driven environment.
+
+• Excellent communication & collaboration skills
+
+• Proven success in building relationships at all levels of business and IT contacts within assigned accounts
+
+Additional Locations:
+
+* United States of America - North Carolina - Morrisville
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",4333,https://jobs.lenovo.com/en_US/careers/JobDetail/Sr-Healthcare-Acquisition-PC-Specialist/82877,,,,,,,not_checked,,2026-10-20,,2026-10-20,,1,startDate,false,0,,,,,,2026-10-19,,,,,,,,
+82898,Supporting Project Manager,Lenovo,,Full time,Posted 1 Days Ago,2026-10-19,1,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"The Supporting Project Manager plays a critical role in enabling the successful delivery of enterprise organization and go-to-market transformation initiatives. This role provides hands-on project coordination, planning, tracking, and execution support across cross-functional workstreams, ensuring initiatives are delivered on time, aligned to strategic objectives, and effectively adopted by the business. Working closely with program leaders, functional stakeholders, and execution teams, the Supporting Project Manager helps translate strategy into actionable plans, drives disciplined execution, and maintains visibility into progress, risks, and dependencies across the transformation portfolio.
+
+Key Responsibilities
+
+Project Execution & Coordination
+
+• Support planning, execution, and monitoring of organization and GTM transformation initiatives
+
+• Develop and maintain detailed project plans, milestones, timelines, and deliverables
+
+• Coordinate cross-functional activities across sales, marketing, operations, product, finance, and enabling functions
+
+Governance & Reporting
+
+• Maintain action logs, decision trackers, and risk registers
+
+• Support cadence management for program meetings, steering committees, and working sessions
+
+Stakeholder Engagement
+
+• Support coordination across business and functional teams
+
+• Support stakeholder alignment on priorities, timelines, and outcomes
+
+• Help ensure accountability for commitments and follow-through
+
+Financial Tracking & Value Capture
+
+• Track progress against target and financial commitments.
+
+• Maintain dashboards and reporting tools to monitor initiative performance.
+
+Operational & Analytical Support
+
+• Collect and analyze data to inform decision-making and progress tracking
+
+• Identify opportunities to streamline processes and improve execution effectiveness
+
+Basic Qualifications
+
+• Bachelor’s degree in Business, Management, Marketing, Engineering, or related field required
+
+• 2+ years of experience in project management, program coordination, consulting, business operations, or related roles
+
+• Demonstrated experience supporting complex, cross-functional initiatives
+
+• Experience working in fast-paced environments with shifting priorities
+
+• Familiarity with organization transformation, operating model changes, or GTM initiatives is highly desirable
+
+Preferred Qualifications
+
+• Experience supporting initiatives involving sales, marketing, customer success, or commercial operations
+
+• Exposure to organizational redesign, process improvement, or change management efforts
+
+• Project Management certification (PMP, CAPM, Agile certifications) preferred but not required
+
+• Experience in matrixed organizations or large enterprises
+
+• Consulting or transformation program experience is a plus
+
+Skills & Competencies
+
+Execution & Organization
+
+• Strong planning, prioritization, and time-management skills
+
+• Ability to manage multiple workstreams simultaneously
+
+• Detail-oriented with strong follow-through
+
+Communication & Collaboration
+
+• Excellent written and verbal communication skills
+
+• Ability to translate complex information into clear updates
+
+Problem Solving & Adaptability
+
+• Proactive mindset with the ability to identify issues early
+
+• Comfortable navigating ambiguity and evolving requirements
+
+• Strong analytical and critical thinking skills
+
+Tools & Methods
+
+• Skills in Microsoft Office, Microsoft Teams, particularly PowerPoint and Excel
+
+• Familiarity with standard project management methodologies (Waterfall, Agile, hybrid approaches) preferred
+
+What Success Looks Like
+
+• Initiatives delivered on schedule with clear visibility into progress and risks
+
+• Strong coordination across cross-functional teams
+
+• High-quality reporting and executive readiness
+
+• Smooth execution of GTM and organizational changes
+
+• Positive stakeholder feedback on organization and follow-through
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",4195,https://jobs.lenovo.com/en_US/careers/JobDetail/Supporting-Project-Manager/82898,,,,,,,not_checked,,2026-10-20,,2026-10-20,,1,startDate,false,0,,,,,,2026-10-19,,,,,,,,
+82920,ISG ISO GTM Finance Lead,Lenovo,,Full time,Posted 1 Days Ago,2026-10-19,1,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"Key Responsibilities
+
+• Serve as the trusted Finance partner to ISG ISO GTM leadership.
+
+• Drive business performance through insights on revenue, profitability, pipeline, investments, and resource allocation.
+
+• Lead planning, forecasting, and strategic decision support processes.
+
+• Identify risks and opportunities, providing actionable recommendations to leadership.
+
+• Develop executive-ready narratives that translate complex data into business decisions.
+
+• Partner across Sales, Operations, Strategy, Product, and Finance teams to influence outcomes and drive accountability.
+
+• Champion finance modernization through analytics, automation, and AI-enabled capabilities.
+
+Basic Qualifications:
+
+• Bachelor’s degree in Accounting, Finance, Economics, Business Management, or a related field.
+
+• 8+ years of relevant, hands-on experience in finance, business planning, or related commercial roles.
+
+• Located near, or willing to relocate to the Morrisville NC North American HQ with expectation of Hybrid 3 days in the office.
+
+Preferred Qualifications:
+
+• Strong analytical, problem-solving, and strategic thinking capabilities
+
+• Excellent verbal and written communication style with ability to influence executive leadership through financial acumen, data insights and storytelling.
+
+• Proven experience in Business Finance, FP&A, GTM Finance, or Commercial Finance.
+
+• Demonstrated success operating in a global, matrixed environment. Ability to work flexibly across time zones, including early morning or evening calls as needed to support global stakeholders
+
+• Technology and data savvy, with a passion for leveraging AI and digital tools to elevate finance impact.
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",1981,https://jobs.lenovo.com/en_US/careers/JobDetail/ISG-ISO-GTM-Finance-Lead/82920,,https://www.linkedin.com/jobs/view/4480292700,2026-10-20,25,among first 25,1,matched,,2026-10-20,2026-10-20T12:30:48,2026-10-20,,1,startDate,false,0,,,,,,2026-10-19,,true,,,,,,
