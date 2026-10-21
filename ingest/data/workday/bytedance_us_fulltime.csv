@@ -3546,29 +3546,6 @@ Preferred Qualifications
 - Vendor & Financial Management: Demonstrated experience managing large-scale vendors/colocation providers and controlling OpEx/CapEx budgets.
 - Soft Skills: Outstanding communication, cross-functional collaboration, and conflict-resolution skills. Ability to communicate complex technical incidents clearly to executive leadership. At least 2+myears experience in a people management, supervisory, or site-lead role within a hyperscale or large-scale colocation environment.
 - Agility: Ability to thrive in a fast-paced, ambiguous environment and participate in an on-call rotation for emergency escalation.",4845,https://joinbytedance.com/search/7652397260552276229,,https://www.linkedin.com/jobs/view/4467643074,2026-09-21,25,among first 25,,matched,title,2026-09-19,2026-09-26T04:40:31,2026-10-21,,30,startDate+linkedin,true,0,,,,,R&D,2026-09-21,,true,,,,,,
-A231689,Site Reliability Engineer - System Service Global,bytedance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"The Global System Service team owns the infrastructure services and management solutions that power ByteDance's data centers outside of China — from day-to-day operations to long-term architecture design and maintenance. The team specializes in composing end-to-end solutions by drawing on both open-source community tools and in-house developed products, tailored to both the business requirements and the operational complexities of large-scale infrastructure across ByteDance's non-China regions. Our mission is to deliver efficient infrastructure solutions and a stable, secure system environment for ByteDance's global business.
-
-We are looking for a self-motivated system engineer that is equipped with SRE mindset and DevOps skills. Your responsibilities will include:
-- Manage and maintain large-scale host infrastructure across ByteDance's non-China data centers, covering OS lifecycle management, configuration standardization, and fleet-wide health monitoring.
-- Own the reliability and availability of core data center foundational services, including DNS, NTP, DHCP, NAT, APT repository, and Kerberos authentication.
-- Design and implement deployment architectures for foundational services, ensuring high availability, fault tolerance, and disaster recovery across regions.
-- Develop and enforce SLOs for managed services; lead incident response, root cause analysis, and post-mortem reviews to drive continuous reliability improvements.
-- Collaborate with network, security, and application teams to ensure foundational services meet the evolving demands of global business growth.
-- Identify automation opportunities across host management and service operations; drive tooling and process improvements to reduce toil and increase operational efficiency.
-
-Minimum Qualifications:
-- Bachelor’s degree or higher in Electrical Engineering, Computer Engineering, Computer Science or related majors.
-- Solid experience in large-scale Linux host management, including OS deployment, configuration management, patching, and fleet operations.
-- Strong hands-on knowledge of core data center foundational services: DNS (BIND/PowerDNS), NTP, DHCP, NAT, APT repository management, and Kerberos.
-- Proficiency with DevOps tooling, including configuration management tools (e.g., Ansible, Salt, Puppet) and CI/CD pipelines.
-- Familiarity with SRE principles and practices, including SLO/SLI definition, error budget management, and blameless post-mortems.
-- Solid understanding of high availability design patterns, active-active/active-passive architectures, and disaster recovery strategies.
-- Strong troubleshooting skills across the Linux system stack and network layer.
-
-Preferred Qualifications:
-- Experience managing host fleets at scale (thousands of nodes or above) in a production environment.
-- Scripting or development experience in Python, Go, or Bash for automation and tooling.
-- Exposure to hybrid or multi-region data center environments.",2958,https://joinbytedance.com/search/7639133243979827509,,,,,,,not_checked,,2026-09-19,,2026-10-21,,,,true,0,,,,,R&D,,,,23,146307,168000,197716,subset,Site Reliability Engineer
 A22843,Data Center Mechanical Engineer,bytedance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"The Global Data Center Engineering team serves the company global regions with focus on enabling business growth with new data center capacities, doing so with assurance of the data center engineering systems operating continuous stability. Our team is geographically based, with the focus of having local staff to service the local regions. We collaborate with other project teams to select sites, contract sites, designs and build out the new sites.
 
 We are looking for a self-motivated data center mechanical engineering expert to serve our Americas regional projects. As a data center mechanical engineer, your responsibilities will include the following:
@@ -11875,3 +11852,134 @@ ByteDance is committed to creating an inclusive space where employees are valued
 ByteDance is committed to providing reasonable accommodations in our recruitment processes for candidates with disabilities, pregnancy, sincerely held religious beliefs or other reasons protected by applicable laws. If you need assistance or a reasonable accommodation, please reach out to us at https://tinyurl.com/RA-request
 
 #IND-DNI",4636,https://joinbytedance.com/search/7696389215143790901,,https://www.linkedin.com/jobs/view/4477230185,2026-10-10,25,among first 25,,matched,,2026-10-20,2026-10-20T12:21:36,2026-10-21,,11,startDate+linkedin,true,0,,,,,,2026-10-10,,true,447,160000,197680,264514,subset,Software Engineer
+A154484,Senior Site Reliability Engineer (Seed Model - Infrastructures - SRE),ByteDance,ByteDance,Full time,,,,Seattle,1,Seattle,false,,United States,,0,"About the Team
+The Seed Infrastructures team oversees the distributed training, reinforcement learning framework, high-performance inference, and heterogeneous hardware compilation technologies for AI foundation models.
+The Seed Infra SRE team is responsible for the delivery and stability of the compute infrastructure behind Seed's foundation models. We own the reliability of large-scale heterogeneous GPU clusters, the training and inference platforms that run on them, and the capacity, network and storage systems that keep them running. Our work directly determines how fast and how reliably we can train and serve the models.
+
+Responsibilities
+- Own the stability of training systems and heterogeneous inference systems for large-scale generative AI workloads (LLM, text-to-image, text-to-video, multimodal understanding); drive deep performance optimization and resolve core issues such as training interruptions, inference latency and throughput bottlenecks.
+- Design and iterate a flexible, efficient resource scheduling system; improve scheduling efficiency, resource utilization and scheduling explainability; support fine-grained scheduling and priority management across workload types (training, offline inference, online serving).
+- Lead the planning, deployment, operation and optimization of large-scale high-speed networks (RDMA) and heterogeneous compute clusters (GPU / NPU / XPU); ensure sound cluster topology, stable network bandwidth and efficient delivery of compute resources.
+- Own the architecture, selection and operation of high-performance storage systems; ensure storage I/O performance, data reliability and stability to meet the data access needs of large-scale training and inference.
+- Own end-to-end quality of capacity delivery; build capacity planning methodology, and combine business growth forecasts to complete resource expansion and configuration optimization so that capacity is delivered on time, reliably and cost-effectively.
+- Drive the build-out of a unified compute pool with co-located training and inference workloads; improve compute utilization for offline inference and similar scenarios; establish an operating framework for compute efficiency and cost control, and codify reusable methodology.
+- Safeguard the stability of complex online services and engineering architecture; build monitoring, alerting and automated remediation that cover the full training and inference path; respond to and resolve complex production issues quickly.
+- Partner with algorithm, product and operations teams to deliver MLOps technical solutions; establish engineering best practices for large-scale generative AI, and raise the technical bar of the team.
+
+Minimum Qualifications
+- Bachelor's degree or above in Computer Science, Software Engineering or a related field, with 3+ years of experience in large-scale machine learning / generative AI MLOps or closely related infrastructure work.
+- Proficient in Python and/or Go; solid Linux development and operations skills; expert in shell scripting and able to independently build automation tooling.
+- Expert in containerization (Docker / Kata) and orchestration (Kubernetes), with hands-on experience deploying, operating and optimizing large-scale heterogeneous compute clusters (GPU / NPU).
+- Familiar with the principles and operation of large-scale high-speed networking (RDMA) and high-performance storage (distributed / object storage), with practical experience optimizing these systems.
+- Expert in the design and optimization of resource scheduling systems, with hands-on experience iterating scheduling policies and improving utilization; understands the key design considerations for scheduling explainability.
+- Experience ensuring stability and optimizing performance of large-scale generative AI (LLM / image / video generation) training or inference systems; able to quickly localize and resolve complex issues across the full training and inference path.
+- Project experience with co-located training / inference compute pools or offline inference efficiency; understands the core metrics and levers of compute operations.
+- Strong communication, cross-team collaboration and self-drive; a strong sense of ownership; able to operate under the pressure of large-scale production environments.
+
+Preferred Qualifications
+- End-to-end experience productionizing large-scale generative AI models (LLM, text-to-image, text-to-video).
+- Experience managing heterogeneous compute clusters and capacity planning in multi-cloud or hybrid-cloud environments.
+- Familiarity with distributed training frameworks and inference optimization tooling, with hands-on performance tuning experience.
+- Experience with large-scale network performance tuning (RDMA bandwidth / latency) or breaking through storage I/O bottlenecks.
+- Experience delivering large and complex compute capacity and building the associated operating framework, with quantified results in cost control or utilization improvement.
+- Experience designing large-scale distributed system architectures and running fault-injection / chaos exercises.",5111,https://joinbytedance.com/search/7696611525213178165,,,,,,,not_checked,,2026-10-21,,2026-10-21,,,,true,0,,,,,,,,,3,175000,175000,175000,subset,"Site Reliability Engineer, Infrastructure"
+A204666,Site Reliability Engineer (Seed Model - Infrastructures - SRE),ByteDance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"About the Team
+The Seed Infrastructures team oversees the distributed training, reinforcement learning framework, high-performance inference, and heterogeneous hardware compilation technologies for AI foundation models.
+The Seed Infra SRE team is responsible for the delivery and stability of the compute infrastructure behind Seed's foundation models. We own the reliability of large-scale heterogeneous GPU clusters, the training and inference platforms that run on them, and the capacity, network and storage systems that keep them running. Our work directly determines how fast and how reliably we can train and serve the models.
+
+Responsibilities
+- Maintain the stable operation of machine learning systems and support the stages of large-model development, training and deployment.
+- Manage and plan the company's GPU resources, including cost and budget, across GPU / CPU machines, storage and related resources; provide resource data to support management decisions.
+- Drive stability governance for clusters and production services; improve resource utilization and operational efficiency through platform-based, systematic approaches.
+- Operate disaster recovery, service deployment and machine lifecycle management across multiple regions and data centers; provide a stable and efficient GPU operating environment.
+- Provide operational support for systems and services; participate in troubleshooting of production and system issues.
+
+Minimum Qualifications
+- 1+ years of experience in DevOps, SRE or infrastructure engineering projects.
+- Proficient in at least one or two of Go / Python / Shell in a Linux environment.
+- Experience operating resource management and job scheduling systems for distributed systems; familiar with the Kubernetes ecosystem and architecture.
+- Familiar with containerization technologies such as Docker / Kata.
+- Strong sense of ownership and responsibility, with excellent learning agility, communication, self-motivation, and teamwork skills, as well as strong analytical and logical thinking abilities to effectively abstract and break down complex business logic.
+
+Preferred Qualifications
+- Hands-on experience operating GPU clusters or ML training / inference platforms.
+- Familiarity with observability tooling (metrics, logging, alerting) and on-call practices.
+- Contributions to automation or platform tooling that measurably improved resource utilization or operational efficiency.",2435,https://joinbytedance.com/search/7696613114863290677,,,,,,,not_checked,,2026-10-21,,2026-10-21,,,,true,0,,,,,,,,,3,175000,175000,175000,subset,"Site Reliability Engineer, Infrastructure"
+A40565A,Senior Site Reliability Engineer (Seed Model - Infrastructures - SRE),ByteDance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"About the Team
+The Seed Infrastructures team oversees the distributed training, reinforcement learning framework, high-performance inference, and heterogeneous hardware compilation technologies for AI foundation models.
+The Seed Infra SRE team is responsible for the delivery and stability of the compute infrastructure behind Seed's foundation models. We own the reliability of large-scale heterogeneous GPU clusters, the training and inference platforms that run on them, and the capacity, network and storage systems that keep them running. Our work directly determines how fast and how reliably we can train and serve the models.
+
+Responsibilities
+- Own the stability of training systems and heterogeneous inference systems for large-scale generative AI workloads (LLM, text-to-image, text-to-video, multimodal understanding); drive deep performance optimization and resolve core issues such as training interruptions, inference latency and throughput bottlenecks.
+- Design and iterate a flexible, efficient resource scheduling system; improve scheduling efficiency, resource utilization and scheduling explainability; support fine-grained scheduling and priority management across workload types (training, offline inference, online serving).
+- Lead the planning, deployment, operation and optimization of large-scale high-speed networks (RDMA) and heterogeneous compute clusters (GPU / NPU / XPU); ensure sound cluster topology, stable network bandwidth and efficient delivery of compute resources.
+- Own the architecture, selection and operation of high-performance storage systems; ensure storage I/O performance, data reliability and stability to meet the data access needs of large-scale training and inference.
+- Own end-to-end quality of capacity delivery; build capacity planning methodology, and combine business growth forecasts to complete resource expansion and configuration optimization so that capacity is delivered on time, reliably and cost-effectively.
+- Drive the build-out of a unified compute pool with co-located training and inference workloads; improve compute utilization for offline inference and similar scenarios; establish an operating framework for compute efficiency and cost control, and codify reusable methodology.
+- Safeguard the stability of complex online services and engineering architecture; build monitoring, alerting and automated remediation that cover the full training and inference path; respond to and resolve complex production issues quickly.
+- Partner with algorithm, product and operations teams to deliver MLOps technical solutions; establish engineering best practices for large-scale generative AI, and raise the technical bar of the team.
+
+Minimum Qualifications
+- Bachelor's degree or above in Computer Science, Software Engineering or a related field, with 3+ years of experience in large-scale machine learning / generative AI MLOps or closely related infrastructure work.
+- Proficient in Python and/or Go; solid Linux development and operations skills; expert in shell scripting and able to independently build automation tooling.
+- Expert in containerization (Docker / Kata) and orchestration (Kubernetes), with hands-on experience deploying, operating and optimizing large-scale heterogeneous compute clusters (GPU / NPU).
+- Familiar with the principles and operation of large-scale high-speed networking (RDMA) and high-performance storage (distributed / object storage), with practical experience optimizing these systems.
+- Expert in the design and optimization of resource scheduling systems, with hands-on experience iterating scheduling policies and improving utilization; understands the key design considerations for scheduling explainability.
+- Experience ensuring stability and optimizing performance of large-scale generative AI (LLM / image / video generation) training or inference systems; able to quickly localize and resolve complex issues across the full training and inference path.
+- Project experience with co-located training / inference compute pools or offline inference efficiency; understands the core metrics and levers of compute operations. Strong communication, cross-team collaboration and self-drive; a strong sense of ownership; able to operate under the pressure of large-scale production environments.
+
+Preferred Qualifications
+- End-to-end experience productionizing large-scale generative AI models (LLM, text-to-image, text-to-video).
+- Experience managing heterogeneous compute clusters and capacity planning in multi-cloud or hybrid-cloud environments.
+- Familiarity with distributed training frameworks and inference optimization tooling, with hands-on performance tuning experience.
+- Experience with large-scale network performance tuning (RDMA bandwidth / latency) or breaking through storage I/O bottlenecks.
+- Experience delivering large and complex compute capacity and building the associated operating framework, with quantified results in cost control or utilization improvement.
+- Experience designing large-scale distributed system architectures and running fault-injection / chaos exercises.",5109,https://joinbytedance.com/search/7696614591629412613,,,,,,,not_checked,,2026-10-21,,2026-10-21,,,,true,0,,,,,,,,,3,175000,175000,175000,subset,"Site Reliability Engineer, Infrastructure"
+A86846A,Site Reliability Engineer (Seed Model - Infrastructures - SRE),ByteDance,ByteDance,Full time,,,,Seattle,1,Seattle,false,,United States,,0,"About the Team
+The Seed Infrastructures team oversees the distributed training, reinforcement learning framework, high-performance inference, and heterogeneous hardware compilation technologies for AI foundation models.
+The Seed Infra SRE team is responsible for the delivery and stability of the compute infrastructure behind Seed's foundation models. We own the reliability of large-scale heterogeneous GPU clusters, the training and inference platforms that run on them, and the capacity, network and storage systems that keep them running. Our work directly determines how fast and how reliably we can train and serve the models.
+
+Responsibilities
+- Maintain the stable operation of machine learning systems and support the stages of large-model development, training and deployment.
+- Manage and plan the company's GPU resources, including cost and budget, across GPU / CPU machines, storage and related resources; provide resource data to support management decisions.
+- Drive stability governance for clusters and production services; improve resource utilization and operational efficiency through platform-based, systematic approaches.
+- Operate disaster recovery, service deployment and machine lifecycle management across multiple regions and data centers; provide a stable and efficient GPU operating environment.
+- Provide operational support for systems and services; participate in troubleshooting of production and system issues.
+
+Minimum Qualifications
+- 1+ years of experience in DevOps, SRE or infrastructure engineering projects.
+- Proficient in at least one or two of Go / Python / Shell in a Linux environment.
+- Experience operating resource management and job scheduling systems for distributed systems; familiar with the Kubernetes ecosystem and architecture.
+- Familiar with containerization technologies such as Docker / Kata.
+- Strong sense of ownership and responsibility, with excellent learning agility, communication, self-motivation, and teamwork skills, as well as strong analytical and logical thinking abilities to effectively abstract and break down complex business logic.
+
+Preferred Qualifications
+- Hands-on experience operating GPU clusters or ML training / inference platforms.
+- Familiarity with observability tooling (metrics, logging, alerting) and on-call practices.
+- Contributions to automation or platform tooling that measurably improved resource utilization or operational efficiency.",2435,https://joinbytedance.com/search/7696614592324290821,,,,,,,not_checked,,2026-10-21,,2026-10-21,,,,true,0,,,,,,,,,3,175000,175000,175000,subset,"Site Reliability Engineer, Infrastructure"
+A97662,Demand Supply Planning Manager - Edge/POP/CDN,ByteDance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"The Service Supply Chain team is seeking a Demand Supply Planning (DSP) Manager to support our Global CDN (Content Delivery Network), Edge/PoP (Point of Presence), and Global Network deployment. The DSP Manager is responsible for a wide scope of supply chain planning, logistics and shipment, hardware deployment activities for CDN and PoP sites.
+
+Responsibilities
+- Streamline communications for downstream supply planning. Feedback to upstream business with commitments and execution status.
+- Partner with the planning manager on project plan and supply plan sync, and ensure all demands can be monitored with supply plans and follow up operations.
+- Partner with all supply teams along with suppliers/manufacturers to secure commits and ETAs (Estimated Time of Arrival). Advise regional inventory replenishment plan.
+- Publish and maintain the DSP sheet with all ODMs and suppliers on material readiness, and run weekly DSP meetings with all hardware suppliers to track production schedules, and resolve supply chain related issues
+- Chair cross-functional meetings to drive alignment and actions to meet the CDN construction schedule
+- Develop and monitor key performance indicators (KPIs) to improve results and enhance efficiency, such KPIs including but not limited to on time delivery rate (OTD), service level agreement (SLA), etc.
+- Collaborate with project and system development teams, provide tooling requirements and invent solutions to scale
+- Provide data analysis and supply chain optimization solutions when necessary
+- Build AI analytical tools to improve material allocation decisions, safety stock, market intelligence, and planning accuracy. Take ownership of supply chain digitalization across day-to-day operations and details.
+
+Minimum Qualifications
+- Bachelor degree in a technical, supply chain, or business field
+- 2+ years of experience in supply chain planning, with a strong understanding of MRP and ERP systems, and comprehensive knowledge in fulfillment operations, including forecasting, order management, inventory control, and logistics.
+- Relevant experience in data center operations with a clear understanding of Edge/PoP/CDN infrastructure.
+- Proven ability to collaborate effectively with teams both within the organization and with external partners, across various regions, employing a hands-on approach to fulfill all required tasks.
+- Highly self-motivated with the ability to work autonomously and excel in a fast-paced environment.
+
+Preferred Qualifications
+- Practical experience in the infrastructure aspects of Edge/PoP/CDN.
+- 3 years of supply chain management experience, with a preference for candidates with an industrial background in Internet Data Centers (IDC).
+- Direct experience in Vendor Management, including establishing and monitoring KPIs and SLAs.
+- Knowledge of regional customs regulations, with experience in export and import processes.
+- Regular interaction with legal, finance, and tax departments, demonstrating experience in cross-functional collaboration.",3032,https://joinbytedance.com/search/7698446265616861493,,,,,,,not_checked,,2026-10-21,,2026-10-21,,,,true,0,,,,,,,,,,,,,,
