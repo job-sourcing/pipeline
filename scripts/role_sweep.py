@@ -45,6 +45,66 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
+
+# ── S41: the jd_cache consult (DESIGN-S41 §1.2/§1.5) ──────────────────────
+# Keyed (source, url) — NOT rid: 89% of refetch targets carry row-hash
+# ids whose basis embeds the mutable 'posted' (S41-R1 F2); every
+# addressable pending row has a url. The cache is written by the
+# jd-refetch lane (or any local leg — transport-agnostic, committed).
+_JD_CACHE_PATH = REPO / "ingest/data/roles/jd_cache.jsonl"
+_JD_CACHE: dict[str, dict] = {}
+_STOP = frozenset(
+    ("the and for with your you our that this from are have will "
+     "about their they what when where who all can into not but job "
+     "jobs work working company team role").split()
+    + ["about", "please", "apply", "now", "more", "join", "us", "we",
+       "to"])
+
+
+def _jd_cache_key(source: str, url: str) -> str:
+    return f"{source}|{url}"
+
+
+def _load_jd_cache() -> dict[str, dict]:
+    """Idempotent load (the sweep calls once; tests reset via reload)."""
+    global _JD_CACHE
+    if _JD_CACHE:
+        return _JD_CACHE
+    if _JD_CACHE_PATH.exists():
+        try:
+            for line in _JD_CACHE_PATH.read_text().splitlines():
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    d = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                k = _jd_cache_key(d.get("source", ""), d.get("url", ""))
+                prev = _JD_CACHE.get(k)
+                # union-merge: newest fetched_at wins per key
+                if not prev or (d.get("fetched_at", "")
+                                >= prev.get("fetched_at", "")):
+                    _JD_CACHE[k] = d
+        except OSError:
+            pass
+    return _JD_CACHE
+
+
+def _jd_overlap_ok(old_desc: str, new_desc: str, title: str) -> bool:
+    """Consult-time sanity (S41-R1 F3): a garbage-longer capture must
+    never replace a clean snippet. The API snippet is normally a
+    substring/paraphrase of the full JD — require meaningful token
+    overlap; when the row has no snippet, fall back to title/company
+    tokens (≥2 of them in the fetched text)."""
+    toks = lambda s: {w for w in re.findall(r"[a-z]{4,}", s.lower())
+                      if w not in _STOP}
+    new_t = toks(new_desc)
+    if old_desc and len(old_desc) >= 30:
+        old_t = toks(old_desc)
+        return len(old_t) > 0 and len(old_t & new_t) / len(old_t) >= 0.25
+    t_t = toks(title)
+    return len(t_t) >= 2 and len(t_t & new_t) >= 2
 sys.path.insert(0, str(REPO / "ingest"))
 
 from jobsearch.rolefamilies import (  # noqa: E402
@@ -1327,6 +1387,11 @@ def fetch_himalayas() -> tuple[list[dict], str]:
                     "group product", "technical product")):
                 continue
             guid = j.get("guid") or j.get("id") or ""
+            # S41-R1 F8: some guids ARE full URLs (the RSS guid field)
+            # — the blind prefix built double-prefixed URLs
+            # (himalayas.app/jobs/https://himalayas.app/...) that 404
+            # the detail fetch. URL-guids are used verbatim.
+            guid_is_url = guid.startswith("http")
             if guid in seen:
                 continue
             seen.add(guid)
@@ -1340,12 +1405,14 @@ def fetch_himalayas() -> tuple[list[dict], str]:
                 "title": title,
                 "company": j.get("companyName") or "",
                 "loc": locs,
-                "url": j.get("guid") and
-                f"https://himalayas.app/jobs/{guid}" or "",
+                "url": (guid if guid_is_url else
+                        (guid and f"https://himalayas.app/jobs/{guid}")) or "",
                 "posted": str(pub)[:10],
                 "desc": (j.get("description") or "")[:12000],
                 "source": "himalayas", "layer": "l2",
-                "query": "himalayas:recent", "rid": f"him:{guid}",
+                "query": "himalayas:recent",
+                "rid": f"him:{(guid.rsplit('/', 1)[-1]
+                          if guid_is_url else guid)}",
             })
         cursor = d.get("nextCursor") or ""
         if not jobs or not cursor:
@@ -1538,7 +1605,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
                 "g1b_title": 0, "screening_post": 0,
                 "seed_rows_in": 0, "seed_dup_absorbed": 0,
                 "seed_dup_residual": 0, "roster_kept": 0,
-                "agency_pending": 0, "res7_merge": 0, "cross_src_merge": 0}
+                "agency_pending": 0, "res7_merge": 0, "cross_src_merge": 0,
+                "jd_cache_hits": 0, "jd_seed_admitted": 0}
     dropped: list[dict] = []
     kept: list[dict] = []
     seniority_conflicts = 0
@@ -1574,7 +1642,20 @@ def sweep(queries: list[str], skip_gj: bool = False,
                         sd.get("rows") or []):
                 posted = (row.get("postedOn") or "")[:10]
                 day = _norm_day(posted)
-                if day is None or day < cutoff:
+                # S41-R1 F1: dateless rows are seed-INeligible EXCEPT
+                # when a cached full JD exists for (source, url) — the
+                # refetch evidence rides them back through grading via
+                # the cache consult below. Bounded to exactly the rows
+                # with new evidence (214 dateless jooble pending rows
+                # otherwise ride only fresh re-crawl and vanish from
+                # the bundle by attrition, never by verdict).
+                if day is None:
+                    if not _load_jd_cache().get(_jd_cache_key(
+                            row.get("source") or "",
+                            row.get("url") or "")):
+                        continue
+                    counters["jd_seed_admitted"] += 1
+                elif day < cutoff:
                     continue           # F2: staleness bound (45-60d)
                 src = row.get("source") or ""
                 rid = row.get("id") or ""
@@ -1634,6 +1715,24 @@ def sweep(queries: list[str], skip_gj: bool = False,
                                        else "none")
             if r.get("desc"):
                 r["description_source"] = r["source"]
+        # S41 jd_cache consult (DESIGN-S41 §1.5): a cached FULL JD
+        # (jd-refetch lane / local leg, keyed source+url) upgrades a
+        # thin API snippet BEFORE sector_verdict — the desc-informed
+        # tiers fire on real text and pending rows flip out of the
+        # queue at the natural bundle regeneration. Strictly-longer +
+        # overlap-gated: a garbage-longer capture never replaces a
+        # clean snippet. Seed rows reach the same hook (they flow
+        # through this loop with url carried).
+        _cinfo = _load_jd_cache().get(
+            _jd_cache_key(r.get("source", ""), r.get("url", "")))
+        if (_cinfo
+                and _cinfo.get("status") == "ok"
+                and _cinfo.get("desc_len", 0) > len(r.get("desc") or "")):
+            if _jd_overlap_ok(r.get("desc") or "", _cinfo["desc"],
+                              title):
+                r["desc"] = _cinfo["desc"][:4000]
+                r["description_source"] = "jd_cache"
+                counters["jd_cache_hits"] += 1
         # usgate drop: non-US non-remote (the A-prime rule at sweep time)
         if r.get("us_status") == "non_us":
             counters["usgate_non_us"] += 1
@@ -2097,6 +2196,10 @@ def sweep(queries: list[str], skip_gj: bool = False,
         "source": r.get("source"), "layer": r.get("layer"),
         "descLen": len(r.get("desc", "")),
         "desc": (r.get("desc", "") or "")[:4000],
+        # S41: audit tag — which transport supplied the graded desc
+        # (jd_cache = the refetch lane / local leg; source = the API
+        # snippet; none = graded on title/company only)
+        "descriptionSource": r.get("description_source", "none"),
     } for r in merged]
     _sen_order = {"senior": 0, "director+": 1, "mid": 2, "junior": 3}
     ui_rows.sort(key=lambda x: (_sen_order.get(x["seniority"], 4),

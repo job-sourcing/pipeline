@@ -186,6 +186,52 @@ if [ -d "$DEST/ingest/data/adhoc" ]; then
     git diff --cached --quiet || \
     git commit -q -m "adhoc company-test results back-sync from org runtime (S41 S35-rule fix)")
 fi
+# S41-R1 F6: jd_cache.jsonl is written on BOTH sides (the GHA jd-refetch
+# lane AND HK local legs) — a gated or naive copy loses one side's
+# appends every cycle, and the quartet handler's pm_envelope gate does
+# NOT cover it. UNCONDITIONAL union-merge by (source,url) key, newest
+# fetched_at wins (the ats_seed verdict-merge precedent). Must run
+# BEFORE the forward rsync so the rsync carries the merged superset.
+if [ -e "$DEST/ingest/data/roles/jd_cache.jsonl" ]; then
+  mkdir -p "$SRC/ingest/data/roles"
+  python3 - "$DEST" "$SRC" <<'PYJD'
+import json, os, sys
+dest, src = sys.argv[1], os.path.join(sys.argv[2], "ingest/data/roles/jd_cache.jsonl")
+dp = os.path.join(dest, "ingest/data/roles/jd_cache.jsonl")
+def load(p):
+    m = {}
+    if os.path.exists(p):
+        for line in open(p):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                d = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            k = f"{d.get('source','')}|{d.get('url','')}"
+            prev = m.get(k)
+            if not prev or d.get("fetched_at","") >= prev.get("fetched_at",""):
+                m[k] = d
+    return m
+merged = load(dp)
+arch = load(src)
+added = 0
+for k, d in arch.items():
+    prev = merged.get(k)
+    if not prev or d.get("fetched_at","") >= prev.get("fetched_at",""):
+        merged[k] = d
+        added += 1
+with open(src, "w") as f:
+    for d in sorted(merged.values(), key=lambda x: (x.get("source",""), x.get("url",""))):
+        f.write(json.dumps(d, ensure_ascii=False) + "\n")
+print(f"[jd-cache-sync] union-merge: org={len(load(dp))} archive={len(arch)} "
+      f"→ merged={len(merged)} (archive-side contributions kept: {added})")
+PYJD
+  (cd "$SRC" && git add ingest/data/roles/jd_cache.jsonl && \
+    git diff --cached --quiet || \
+    git commit -q -m "jd_cache union-merge from org runtime (S41-R1 F6 — unconditional, both-sided writer)")
+fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
   # S38 fix: roles-pm.json is written on BOTH sides (the GHA lane AND

@@ -1,0 +1,116 @@
+name: JD Refetch
+
+# S41 #1 (DESIGN-S41 v2 §1): the JD re-fetch lane — closes the pending
+# queue's EVIDENCE gap. 917 pending rows; ~870 addressable (568 direct
+# transports + 302 careerjet that 403/418 everywhere — post-Oct-24
+# firecrawl or bust). Fetches full JDs by row URL, quality-gated at
+# store time, into ingest/data/roles/jd_cache.jsonl keyed (source,url).
+# The daily role sweep's grading consults the cache (strictly-longer +
+# overlap-gated) and the seed-envelope union re-runs pending rows —
+# the queue closes by VERDICT at the natural bundle regeneration.
+#
+# Budget guards (the board-watch doctrine): 8min/150-row leg, one knob
+# binds first; retrigger while JD_REFETCH=pending via GITHUB_TOKEN,
+# capped 6 legs/day (date-keyed counter in the runner, no state file
+# needed — the cache's cached-ok rows make legs idempotent and the
+# todo set shrinks monotonically); whole-job timeout 15 min.
+#
+# S41-R1 F7: FILE-LEVEL checkpoint paths ONLY (a dir-level snapshot of
+# ingest/data/roles would restore over origin/main and delete any
+# concurrent-writer artifact — the pm sweep checkpoint now also is
+# file-level). This lane owns EXACTLY: jd_cache.jsonl, jd_refetch_state
+# .json, jd_refetch_report.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_rows:
+        description: "max rows to fetch this leg (default 150)"
+        default: "150"
+  schedule:
+    - cron: "15 14 * * *"   # daily, after the 12:00Z sweep envelope lands
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: jd-refetch
+  cancel-in-progress: false
+
+jobs:
+  refetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pipeline
+        run: pip install -e "ingest[jobspy]" curl_cffi
+
+      - name: Run JD refetch leg
+        run: |
+          python3 scripts/jd_refetch.py \
+            --transport direct \
+            --budget-seconds 480 \
+            --max-rows "${{ github.event.inputs.max_rows || '150' }}"
+
+      - name: Retrigger while backlog remains (cap 6 legs/day)
+        if: env.JD_REFETCH == 'pending'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # per-runner /tmp does NOT persist across runners — count
+          # today's runs via the API (the date-keyed cap, stateless)
+          TODAY=$(date -u +%Y-%m-%d)
+          COUNT=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/jd-refetch.yml/runs?per_page=20" \
+            | grep -c "\"created_at\": \"$TODAY") || true
+          COUNT=${COUNT:-0}
+          if [ "$COUNT" -ge 6 ]; then
+            echo "::warning::daily leg cap hit ($COUNT legs today) — tomorrow's 14:15Z cron resumes"
+            exit 0
+          fi
+          echo "leg $((COUNT+1))/6 today — retriggering"
+          curl -s -X POST \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/jd-refetch.yml/dispatches" \
+            -d '{"ref":"main"}'
+
+      - name: Checkpoint cache to git (race-proof, file-level — F7)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/jd_state/ingest/data/roles
+          FILES="ingest/data/roles/jd_cache.jsonl ingest/data/roles/jd_refetch_state.json ingest/data/roles/jd_refetch_report.md"
+          for f in $FILES; do
+            if [ -e "$f" ]; then cp "$f" "/tmp/jd_state/$f"; fi
+          done
+          git config user.name "jd-refetch-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            for f in $FILES; do
+              if [ -e "/tmp/jd_state/$f" ]; then
+                cp "/tmp/jd_state/$f" "$f"
+              fi
+            done
+            git add $FILES
+            if git diff --cached --quiet; then push_ok=1; break; fi
+            git commit -m "jd-refetch checkpoint [skip ci]"
+            if git push; then push_ok=1; break; fi
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::jd-refetch checkpoint push failed after 3 attempts — cache rescued in /tmp"
+            exit 1
+          fi

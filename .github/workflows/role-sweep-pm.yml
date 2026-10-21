@@ -99,7 +99,13 @@ jobs:
         run: |
           set -e
           mkdir -p /tmp/sweep_state
-          PATHS="ingest/data/roles ingest/data/ui/roles-pm.json ingest/data/board_watch/roles:pm.runs.jsonl ingest/data/board_watch/drift_baseline.json"
+          # S41-R1 F7: FILE-LEVEL paths. The dir-level snapshot of
+          # ingest/data/roles (pre-fix) restored the WHOLE directory over
+          # origin/main at checkpoint time — deleting any jd_cache.jsonl
+          # (or other concurrent-writer artifact) the refetch/other lanes
+          # pushed while this sweep ran. File-level = the sweep owns exactly
+          # its own outputs; single-writer-per-file doctrine.
+          PATHS="ingest/data/roles/pm_inventory.csv ingest/data/roles/pm_dropped.csv ingest/data/roles/pm_envelope.json ingest/data/roles/pm_coverage.json ingest/data/ui/roles-pm.json ingest/data/board_watch/roles:pm.runs.jsonl ingest/data/board_watch/drift_baseline.json"
           for p in $PATHS; do
             if [ -e "$p" ]; then
               mkdir -p "/tmp/sweep_state/$(dirname $p)"
@@ -124,7 +130,7 @@ jobs:
                 cp -r "/tmp/sweep_state/$p" "$p"
               fi
             done
-            git add ingest/data/roles ingest/data/ui/roles-pm.json "ingest/data/board_watch/roles:pm.runs.jsonl" ingest/data/board_watch/drift_baseline.json
+            git add ingest/data/roles/pm_inventory.csv ingest/data/roles/pm_dropped.csv ingest/data/roles/pm_envelope.json ingest/data/roles/pm_coverage.json ingest/data/ui/roles-pm.json "ingest/data/board_watch/roles:pm.runs.jsonl" ingest/data/board_watch/drift_baseline.json
             if git diff --cached --quiet; then
               push_ok=1; break
             fi

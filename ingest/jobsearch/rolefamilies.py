@@ -433,6 +433,10 @@ def is_anonymized_employer(company: str) -> bool:
 BOARD_EMPLOYER_SEED = {
     "jobgether", "us government jobs", "ziprecruiter", "adzuna",
     "jooble", "careerjet", "indeed", "linkedin",
+    # S41-R1 F5: 43 pending rows surfaced as "JobLeads US" via jooble —
+    # a job-board-as-employer shell whose redirect URLs can never yield
+    # employer JD evidence. The N9 flag class, extended.
+    "jobleads us", "jobleads",
 }
 
 
