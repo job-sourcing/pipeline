@@ -1,9 +1,9 @@
 {
  "label": "riotgames_us_fulltime",
  "rows": 81,
- "kept": 79,
- "new": 2,
- "ghosts_dropped": 3,
+ "kept": 81,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -14,5 +14,5 @@
  "state_rows": 131,
  "banded": 28,
  "lca_pools": 29,
- "snapshot": "2026-10-20"
+ "snapshot": "2026-10-21"
 }
