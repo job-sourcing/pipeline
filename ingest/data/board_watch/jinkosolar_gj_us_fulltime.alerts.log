@@ -15,3 +15,9 @@ REPOSTED (1)
 REPOSTED UF Technical Day 2026 (label reset 28d→28d)
 (2026-10-14T11:42:56)
 
+board-watch jinkosolar_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jinkosolar: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-21T15:26:50)
+
+board-watch jinkosolar_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jinkosolar: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-21T15:28:52)
+

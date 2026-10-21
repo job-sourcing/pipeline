@@ -7,3 +7,9 @@ REPOSTED (1)
 REPOSTED Senior Website Sales Representative (label reset 1d→1d)
 (2026-10-14T11:42:57)
 
+board-watch jackery_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jackery: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-21T15:26:50)
+
+board-watch jackery_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jackery: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-21T15:28:52)
+

@@ -9,3 +9,9 @@ REPOSTED Finance Accounting Intern at EVE Energy Co.,Ltd. Lake Forest, CA (label
 REPOSTED After Sales Service Manager at EVE Energy Co.,Ltd. Orange County, CA (label reset 22d→22d)
 (2026-10-14T11:42:56)
 
+board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-21T15:26:50)
+
+board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-21T15:28:52)
+
