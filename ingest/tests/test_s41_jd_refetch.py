@@ -387,3 +387,28 @@ def test_mirror_jd_cache_union_merge_semantics(tmp_path):
             merged[k] = d
     assert merged["adzuna|u1"]["desc"] == "org-side"     # newest wins
     assert merged["dice|u2"]["desc"] == "archive-side"  # union keeps
+
+
+def test_4xx_terminal_not_refetched(tmp_path, monkeypatch):
+    """The lane-1 lesson: http-error:403 rows must NOT re-enter the todo
+    (130 jooble 403s re-burned every leg). 403/404/410/418 = an answer;
+    only 5xx/network errors retry."""
+    import jd_refetch as jr
+    p = tmp_path / "jd_cache.jsonl"
+    p.write_text(
+        json.dumps({"source": "jooble", "url": "j1", "status":
+                    "http-error:403", "fetched_at": "t1"}) + "\n"
+        + json.dumps({"source": "adzuna", "url": "a1", "status": "ok",
+                      "fetched_at": "t1"}) + "\n"
+        + json.dumps({"source": "dice", "url": "d1", "status":
+                    "error:TimeoutError", "fetched_at": "t1"}) + "\n")
+    monkeypatch.setattr(jr, "CACHE", p)
+    m = jr._load_cache_map()
+    def resolved(k):
+        st = m.get(k, {}).get("status", "")
+        return (st == "ok" or st.startswith("q:")
+                or st.startswith("http-error:4"))
+    assert resolved("jooble|j1")          # 403 terminal
+    assert resolved("adzuna|a1")          # ok
+    assert not resolved("dice|d1")         # transient network error retries
+    assert not resolved("new|never")      # never fetched

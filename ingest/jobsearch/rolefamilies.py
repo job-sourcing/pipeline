@@ -791,3 +791,200 @@ PM_QUERY_TAIL = [
     "technical program manager", "product management",
 ]
 PM_QUERY_VARIANTS = PM_QUERY_CORE + PM_QUERY_TAIL
+
+
+# ── §2.6 the DMM family (S41 stress test #1 — the ads demand side) ──────────
+# The user cut: "digital / online marketing, for running online ads
+# campaigns, digital marketing, ads performance, etc. on the ads
+# demand side. any roles junior or senior, any sector."
+#
+# Family = the people who BUY/RUN/MEASURE online ads and digital
+# marketing programs (agencies, in-house, any sector). NOT supply-side
+# adtech engineering, NOT publisher ad-sales, NOT organic-only roles
+# (those are 'adjacent' — kept in the envelope like PM's adjacent
+# rows, measured, never head-lined).
+#
+# Precedence (the classify_family doctrine — denies BEFORE core):
+#   1. supply-side engineering deny    → other
+#   2. ad-sales/admin deny (F10-4/5)   → other
+#   3. demand-core + role-head         → dmm
+#   4. token heads (ppc/sem/ad[- ]ops) → dmm
+#   5. adjacent closed set             → adjacent
+#   6. else                            → other
+
+DMM_SUPPLY_DENY = re.compile(
+    r"""[^\n]{0,60}\b(?:adtech|ad-tech|advertising\s+technology)\b
+        [^\n]{0,60}\b(?:engineer|developer|software|sre|platform|
+           infrastructure|architect|scientist|analyst)\b""",
+    re.I | re.VERBOSE)
+DMM_SALES_ADMIN_DENY = re.compile(
+    r"""\b(?:advertising|digital|media|ads?)\s+sales\b
+      | \bsales\s+(?:associate|representative|rep|executive|manager|
+           director|development|enablement)\b
+      | \b(?:executive|administrative|office|personal)\s+assistant\b
+      | \breceptionist\b
+      | \boffice\s+(?:coordinator|manager)\b
+      | \baccount\s+coordinator\b""",
+    re.I | re.VERBOSE)
+
+DMM_DEMAND_CORE = re.compile(
+    r"""\b(?:performance|paid|digital|online|growth|lifecycle)\s+
+        (?:marketing|media|search|social|advertising|shopping|
+           acquisition)\b
+      | \b(?:paid\s+search|paid\s+social|paid\s+media|
+            search\s+engine\s+marketing)\b
+      | \bgrowth\s+(?:hacker|manager|specialist|lead|analyst|director|
+            strategist|marketer)\b
+      | \bdigital\s+advertising\b
+      | \bdemand\s+gen(?:eration)?\b""",
+    re.I | re.VERBOSE)
+DMM_TOKEN_HEADS = re.compile(
+    r"""\b(?:ppc|sem|ad[\s-]?ops?|advertising\s+operations|
+            search\s+marketing|programmatic|media\s+buying)\b""",
+    re.I | re.VERBOSE)
+DMM_ROLE_HEAD = re.compile(
+    r"""\b(?:manager|mgr|director|head|vp|vice\s+president|chief|
+            officer|lead|specialist|analyst|coordinator|strategist|
+            consultant|buyer|trader|planner|optimizer|marketer|
+            associate\s+director|junior|senior|entry[\s-]?level)\b""",
+    re.I | re.VERBOSE)
+DMM_ADJACENT = re.compile(
+    r"""\b(?:content|seo|social\s+media|email|brand|product|partner|
+            affiliate|influencer|event|relationship)\s+marketing\b
+      | \b(?:content|brand)\s+(?:strategist|specialist|marketer)\b
+      | \bcopywriter\b
+      | \bbrand\s+(?:manager|director|strategist|specialist)\b
+      | \bmarketing\s+(?:specialist|coordinator|manager|director|
+            analyst|executive|intern(?:ship)?|assistant)\b
+      | \b(?:social\s+media|community)\s+(?:manager|specialist|
+            coordinator|strategist)\b
+      | \b(?:seo|search\s+engine\s+optimization)\s+(?:specialist|
+            manager|analyst|strategist|consultant|director)\b
+      | \bmarketing\s+communications\b
+      | \b(?:public|media)\s+relations\b
+      | \bmedia\s+(?:buyer|planner|researcher)\b
+      | \bmarketing\s+generalist\b
+      | \bgo[\s-]to[\s-]market\b
+      | \bmarketing\s+operations\b""",
+    re.I | re.VERBOSE)
+
+
+def classify_dmm(title: str, query_is_dmm: bool = False) -> tuple[str, str]:
+    """family ∈ {dmm, adjacent, other} — the ads demand-side gate.
+    Signature mirrors classify_family (query-provenance reserved;
+    no bare-form class exists for DMM titles in v1)."""
+    if not isinstance(title, str) or not title.strip():
+        return "other", "grammar"
+    # 1. supply-side engineering → other (adtech builders ≠ buyers)
+    if DMM_SUPPLY_DENY.search(title):
+        return "other", "grammar"
+    # 2. ad-sales (publisher revenue side) + admin class → other
+    if DMM_SALES_ADMIN_DENY.search(title):
+        return "other", "grammar"
+    # 3. demand-core (needs a role head — the department-name trap:
+    #    "Sales Director — Digital Marketing Department" dies at the
+    #    sales deny; "Receptionist, Digital Marketing" at admin)
+    if DMM_DEMAND_CORE.search(title) and DMM_ROLE_HEAD.search(title):
+        return "dmm", "grammar"
+    # 4. token heads: ppc/sem/ad-ops/programmatic/search marketing
+    if (DMM_TOKEN_HEADS.search(title)
+            and DMM_ROLE_HEAD.search(title.split(",")[0])):
+        return "dmm", "grammar"
+    # 5. organic/general marketing — kept, never head-lined
+    if DMM_ADJACENT.search(title):
+        return "adjacent", "grammar"
+    return "other", "grammar"
+
+
+DMM_QUERY_CORE = [
+    "performance marketing manager",
+    "digital marketing manager",
+    "digital marketing specialist",
+    "digital marketing director",
+    "paid media manager",
+    "paid search manager",
+    "paid social manager",
+    "growth marketing manager",
+    "search engine marketing specialist",
+    "digital marketing analyst",
+]
+DMM_QUERY_TAIL = [
+    "ppc specialist", "ppc manager", "ad operations specialist",
+    "programmatic trader", "media buyer digital",
+    "growth marketing specialist", "performance marketing analyst",
+    "head of digital marketing", "vp digital marketing",
+    "digital marketing coordinator",
+]
+DMM_QUERY_VARIANTS = DMM_QUERY_CORE + DMM_QUERY_TAIL
+
+
+# ── §2.7 the FAMILY registry (S41 — the standardized sweep engine) ─────────
+# A family = a reusable sweep config: queries, grammar gate,
+# seniority, artifact slugs. role_sweep --family <slug> routes every
+# path through this registry; 'pm' is the default and MUST stay
+# bit-identical with the pre-S41 behavior (pinned by identity tests).
+
+FAMILIES: dict[str, dict] = {
+    "pm": {
+        "slug": "pm",
+        "display": "Product Management",
+        "gate": classify_family,
+        "seniority": None,          # pm_seniority wired in role_sweep
+        "queries_core": PM_QUERY_CORE,
+        "queries_tail": PM_QUERY_TAIL,
+        "quartet_prefix": "pm",
+        "ui_file": "roles-pm.json",
+        "drift_label": "roles:pm",
+        "l0_bundle": True,
+        # endpoints hardcoded to PM-shaped URLs (S41-R1 F9): declared
+        # so a 0-row measurement is honest ('locked_endpoint' in the
+        # envelope) instead of a silent misconfiguration
+        "locked_endpoints": ("talent", "muse", "wwr", "yc", "hn",
+                             "himalayas"),
+    },
+    "dmm": {
+        "slug": "dmm",
+        "display": "Digital Marketing (ads demand side)",
+        # uniform gate signature: the sweep calls spec["gate"](title,
+        # query_is_pm=True) family-invariantly — the adapter renames the
+        # kwarg per family (no signature churn on the pinned PM gate)
+        "gate": (lambda t, query_is_pm=False:
+                 classify_dmm(t, query_is_dmm=query_is_pm)),
+        "seniority": None,          # pm_seniority reused (tier logic
+                                    # is role-agnostic; the product
+                                    # pins are inert on dmm titles)
+        "queries_core": DMM_QUERY_CORE,
+        "queries_tail": DMM_QUERY_TAIL,
+        "quartet_prefix": "dmm",
+        "ui_file": "roles-dmm.json",
+        "drift_label": "roles:dmm",
+        "l0_bundle": False,        # the l0 corpus is PM-only
+        "locked_endpoints": ("talent", "muse", "wwr", "yc", "hn",
+                             "himalayas", "l0_bundle"),
+    },
+}
+
+
+def family_spec(slug: str = "pm") -> dict:
+    spec = FAMILIES.get(slug)
+    if not spec:
+        raise ValueError(f"unknown family slug: {slug!r} "
+                         f"(known: {sorted(FAMILIES)})")
+    return spec
+
+
+def title_core_family(title: str, family: str = "pm") -> str:
+    """title_core with the family-scoped sound expansion: \bpm\b →
+    product manager is PM-ONLY (S41-R1 F9-10 — on a dmm title the
+    expansion would rewrite 'Digital PM' ≡ 'Digital Product Manager'
+    and contaminate cross-family merge keys)."""
+    if family == "pm":
+        return title_core(title)
+    # the SAME pipeline minus the pm expansion (tail-split runs on the
+    # RAW title, then the normalizer — see title_core's own note)
+    t = re.split(r"\s+[-–—]\s+|,\s+|\(\s*|\s+—\s*|:\s+", title)[0]
+    t = normalize_job_title(t)
+    t = re.sub(r"\bsr\.?\b", "senior", t, flags=re.I)
+    t = re.sub(r"\bjr\.?\b", "junior", t, flags=re.I)
+    t = re.sub(r"\bmgr\b\.?", "manager", t, flags=re.I)
+    return re.sub(r"\s+", " ", t)

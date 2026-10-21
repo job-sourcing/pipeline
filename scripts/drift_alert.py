@@ -327,16 +327,29 @@ def sink_issues(findings: list[dict], token: str, repo: str) -> None:
 
 
 def detect_sweep(baseline: dict) -> list[dict]:
-    """S36 sweep-mode: the roles:pm series (ledger + baseline fold —
+    """S36 sweep-mode: the roles:* series (ledger + baseline fold —
     DESIGN-S36 §5). Label discovery is self-registered: the sweep run
     writes the ledger + the baseline entry; this auditor consumes.
+    S41 family generalization: glob roles:*.runs.jsonl — every family
+    lane (pm, dmm, ...) gets its own drift audit (the F9-9 fix).
     Classes: sweep-fail-streak (verdict), sweep-source-death (the same
     engine dead >=2 consecutive runs), row-collapse/zero/decline (the
-    shared row classes, label roles:pm)."""
-    label = "roles:pm"
+    shared row classes, label roles:<family>)."""
+    findings = []
+    ledgers = sorted(WATCH_DIR.glob("roles:*.runs.jsonl"))
+    if not ledgers and not any(k.startswith("roles:")
+                               for k in baseline):
+        return []                    # no sweep ever ran — nothing to audit
+    for ledger_path in ledgers:
+        label = ledger_path.name[:-len(".runs.jsonl")]
+        findings += _sweep_label_findings(label, baseline)
+    return findings
+
+
+def _sweep_label_findings(label: str, baseline: dict) -> list[dict]:
     ledger = _read_jsonl(WATCH_DIR / f"{label}.runs.jsonl")
     if not ledger and label not in baseline:
-        return []                    # sweep never ran — nothing to audit
+        return []                    # this family never ran
     findings = []
     streak = 0
     for e in reversed(ledger):

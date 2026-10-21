@@ -121,6 +121,8 @@ from jobsearch.rolefamilies import (  # noqa: E402
     pm_seniority,
     sector_verdict,
     title_core,
+    title_core_family,
+    family_spec,
 )
 from jobsearch import company_seeds as _seeds  # noqa: E402  # S40 A3
 
@@ -1527,14 +1529,33 @@ def _norm_day(posted: str):
 
 def sweep(queries: list[str], skip_gj: bool = False,
           skip_li: bool = False, skip: str = "",
-          seed_envelope: str = "") -> int:
+          seed_envelope: str = "", family: str = "pm") -> int:
+    # S41: the family registry routes every artifact path (DESIGN-S41
+    # v2 §2.3). 'pm' = bit-identical with the pre-S41 behavior (pinned
+    # by identity tests); 'dmm' = the ads demand-side stress family.
+    spec = family_spec(family)
+    prefix = spec["quartet_prefix"]
     skip_set = {s.strip() for s in skip.split(",") if s.strip()}
     skip_set.discard("")
     started = datetime.now(timezone.utc)
     env = {"sources": {}, "layers": {}}
+    # F9: endpoints hardcoded to PM-shaped URLs are SKIPPED for other
+    # families and recorded as locked (honest 0-row measurement)
+    if family != "pm":
+        for locked in spec["locked_endpoints"]:
+            if locked == "l0_bundle":
+                skip_set.add("l0")
+            else:
+                skip_set.add(locked)
+        env["sources"]["locked_endpoints"] = (
+            f"skipped:{','.join(spec['locked_endpoints'])}")
     all_rows: list[dict] = []
 
-    l0, v = project_l0()
+    # S41 family generalization: the l0 Workday-corpus bundle is
+    # PM-only (F9-1). Other families skip it via the locked-endpoint
+    # record; a 0-row l0 would be a silent misconfiguration.
+    l0, v = (([], "locked_endpoint")
+             if "l0" in skip_set else project_l0())
     env["sources"]["l0_bundle"] = v
     env["layers"]["l0"] = len(l0)
     all_rows += l0
@@ -1687,6 +1708,15 @@ def sweep(queries: list[str], skip_gj: bool = False,
                 n_seed += 1
             env["sources"]["seed_envelope"] = (
                 f"ok:{n_seed}/{len(sd.get('jobs') or [])}")
+        except FileNotFoundError:
+            # S41-R1 F17: a family's FIRST sweep has no prior envelope
+            # yet (roles-dmm.json run 1) — an absent seed is a skip,
+            # not a dead source. The PM lane stays FAIL-LOUD (the
+            # careerjet doctrine rides its committed seed — a typo'd
+            # path must surface as an error, never a silent skip).
+            env["sources"]["seed_envelope"] = (
+                "ok:skipped" if family != "pm"
+                else "error:FileNotFoundError")
         except Exception as exc:
             env["sources"]["seed_envelope"] = (
                 f"error:{type(exc).__name__}")
@@ -1696,7 +1726,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
     for r in all_rows:
         title, company = r.get("title", ""), r.get("company", "")
         if r.get("layer") != "l0":
-            fam, ev = classify_family(title, query_is_pm=True)
+            fam, ev = spec["gate"](title, query_is_pm=True)
             if fam == "other":
                 counters["family_other"] += 1
                 continue
@@ -1813,7 +1843,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
             ck = f"{ck}#{r.get('rid') or id(r)}"      # salted
         exact = (re.sub(r"\W", "", (r["title"] or "").lower()),
                  ck, r.get("layer"), day)
-        core = (title_core(r["title"] or ""), ck)
+        core = (title_core_family(r["title"] or "", family), ck)
         rid = r.get("rid") or ""
         merge_into = None
         if rid and rid in by_rid:                    # F1: rid-dedup first
@@ -1959,8 +1989,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
             counters["seed_dup_absorbed"] += 1
         if survivor.get("seniority") != donor.get("seniority"):
             seniority_conflicts += 1
-        if title_core(survivor.get("title") or "") != \
-                title_core(donor.get("title") or ""):
+        if title_core_family(survivor.get("title") or "", family) != \
+                title_core_family(donor.get("title") or "", family):
             title_conflicts += 1
         # postedOn: earliest evidence across members
         sday = _norm_day(survivor.get("posted", ""))
@@ -2051,8 +2081,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
 
     # outputs (write-atomic)
     ROLES_DIR.mkdir(parents=True, exist_ok=True)
-    _write_atomic(ROLES_DIR / "pm_inventory.csv", _csv_bytes(merged))
-    _write_atomic(ROLES_DIR / "pm_dropped.csv", _csv_bytes(dropped))
+    _write_atomic(ROLES_DIR / f"{prefix}_inventory.csv", _csv_bytes(merged))
+    _write_atomic(ROLES_DIR / f"{prefix}_dropped.csv", _csv_bytes(dropped))
 
     env.update({
         "ran_at": started.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -2072,12 +2102,12 @@ def sweep(queries: list[str], skip_gj: bool = False,
         sen_hist[r["seniority"]] = sen_hist.get(r["seniority"], 0) + 1
     env["family_histogram"] = fam_hist
     env["seniority_histogram"] = sen_hist
-    _write_atomic(ROLES_DIR / "pm_envelope.json",
+    _write_atomic(ROLES_DIR / f"{prefix}_envelope.json",
                   json.dumps(env, indent=1, default=str).encode())
 
     # cumulative closure ledger (design §6)
     cov = {}
-    cov_path = ROLES_DIR / "pm_coverage.json"
+    cov_path = ROLES_DIR / f"{prefix}_coverage.json"
     if cov_path.exists():
         try:
             cov = json.load(open(cov_path))
@@ -2152,10 +2182,10 @@ def sweep(queries: list[str], skip_gj: bool = False,
             baselines = json.load(open(BASELINE))
         except json.JSONDecodeError:
             baselines = {}
-    series = baselines.get("roles:pm", [])
+    series = baselines.get(spec["drift_label"], [])
     if not series or series[-1]["d"] != today:
         series.append({"d": today, "rows": len(merged)})
-    baselines["roles:pm"] = series[-120:]
+    baselines[spec["drift_label"]] = series[-120:]
     _write_atomic(BASELINE, json.dumps(baselines, indent=1).encode())
 
     # UI bundle (roles-pm.json — design §5, rides the ui/ mirror sync).
@@ -2204,7 +2234,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
     _sen_order = {"senior": 0, "director+": 1, "mid": 2, "junior": 3}
     ui_rows.sort(key=lambda x: (_sen_order.get(x["seniority"], 4),
                                 x["postedOn"] or ""))
-    _write_atomic(UI_DIR / "roles-pm.json", json.dumps({
+    _write_atomic(UI_DIR / spec["ui_file"], json.dumps({
         "snapshotDate": today, "rows": len(ui_rows),
         "envelope": {k: v for k, v in env.items()
                      if k not in ("queries",)},
@@ -2251,6 +2281,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--full", action="store_true",
                     help="core + tail variants (the monthly rotation)")
+    ap.add_argument("--family", default="pm",
+                    help="role family slug (pm, dmm — the S41 registry)")
     ap.add_argument("--gj-only", action="store_true",
                     help="the firecrawl recovery probe (L3 only)")
     ap.add_argument("--skip", default="",
@@ -2262,12 +2294,14 @@ def main() -> int:
                          "≥60d fresh re-enter as inputs (the careerjet "
                          "HK-only lane transport doctrine)")
     args = ap.parse_args()
-    queries = PM_QUERY_CORE + (PM_QUERY_TAIL if args.full else [])
+    spec = family_spec(args.family)
+    queries = spec["queries_core"] + (
+        spec["queries_tail"] if args.full else [])
     if args.gj_only:
         rows, v = fetch_gj_role(PM_QUERY_CORE[:2])
         print(f"[gj-probe] {len(rows)} rows | {v}")
         return 0
-    return sweep(queries, skip=args.skip,
+    return sweep(queries, skip=args.skip, family=args.family,
                  seed_envelope=args.seed_envelope)
 
 

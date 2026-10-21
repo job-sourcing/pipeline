@@ -147,24 +147,30 @@ if [ -d "$DEST/ingest/data/roles" ]; then
   python3 - "$DEST" "$SRC" <<'PYROLE'
 import json, os, shutil, sys
 dest, src = sys.argv[1], sys.argv[2]
-def ran_at(base):
-    try:
-        e = json.load(open(os.path.join(
-            base, "ingest/data/roles/pm_envelope.json")))
-        return e.get("regenerated_at") or e.get("ran_at") or ""
-    except Exception:
-        return ""
-d_ran, s_ran = ran_at(dest), ran_at(src)
-if d_ran >= s_ran:      # org newer (or archive missing) - back-sync
-    for f in ("pm_inventory.csv", "pm_dropped.csv",
-              "pm_envelope.json", "pm_coverage.json"):
-        df = os.path.join(dest, "ingest/data/roles", f)
-        if os.path.exists(df):
-            shutil.copy2(df, os.path.join(src, "ingest/data/roles", f))
-    print(f"[roles-sync] back-synced org quartet (ran {d_ran} >= {s_ran})")
-else:
-    print(f"[roles-sync] kept archive quartet (ran {s_ran} > {d_ran})"
-          " - it flows forward in the rsync")
+# S41-R1 F15: PER-FAMILY gates — the single pm_envelope gate dropped a
+# newer dmm quartet whenever the archive's pm envelope was newer (then
+# the forward rsync --delete wiped the org's dmm files). Each family's
+# tuple gates on ITS OWN envelope ran_at.
+for prefix in ("pm", "dmm"):
+    def ran_at(base, p=prefix):
+        try:
+            e = json.load(open(os.path.join(
+                base, f"ingest/data/roles/{p}_envelope.json")))
+            return e.get("regenerated_at") or e.get("ran_at") or ""
+        except Exception:
+            return ""
+    d_ran, s_ran = ran_at(dest), ran_at(src)
+    if d_ran >= s_ran:      # org newer (or archive missing) - back-sync
+        for f in (f"{prefix}_inventory.csv", f"{prefix}_dropped.csv",
+                  f"{prefix}_envelope.json", f"{prefix}_coverage.json"):
+            df = os.path.join(dest, "ingest/data/roles", f)
+            if os.path.exists(df):
+                shutil.copy2(df, os.path.join(src, "ingest/data/roles", f))
+        print(f"[roles-sync] back-synced org {prefix} quartet "
+              f"(ran {d_ran} >= {s_ran})")
+    elif s_ran:
+        print(f"[roles-sync] kept archive {prefix} quartet "
+              f"(ran {s_ran} > {d_ran}) - it flows forward in the rsync")
 PYROLE
   (cd "$SRC" && git add ingest/data/roles && \
     git diff --cached --quiet || \
@@ -241,28 +247,30 @@ if [ -d "$DEST/ingest/data/ui" ]; then
   python3 - "$DEST" "$SRC" <<'PYEOF'
 import json, sys, shutil, os
 dest, src = sys.argv[1], sys.argv[2]
-df = os.path.join(dest, "ingest/data/ui/roles-pm.json")
-sf = os.path.join(src, "ingest/data/ui/roles-pm.json")
-if os.path.exists(df):
-    d_ran = s_ran = ""
-    try:
-        _e = (json.load(open(df)).get("envelope") or {})
-        d_ran = _e.get("regenerated_at") or _e.get("ran_at", "")
-    except Exception:
-        pass
-    try:
-        _se = (json.load(open(sf)).get("envelope") or {})
-        s_ran = _se.get("regenerated_at") or _se.get("ran_at", "")
-    except Exception:
-        pass
+# S41-R1 F15: per-family newest-wins — roles-pm.json AND roles-dmm.json
+# each gate on their own family envelope ran_at
+for fam_file in ("roles-pm.json", "roles-dmm.json"):
+    env_file = fam_file.replace("roles-", "").replace(".json", "_envelope.json")
+    df = os.path.join(dest, f"ingest/data/ui/{fam_file}")
+    sf = os.path.join(src, f"ingest/data/ui/{fam_file}")
+    if not os.path.exists(df):
+        continue
+    def _ran(path):
+        try:
+            _e = (json.load(open(path)).get("envelope") or {})
+            return _e.get("regenerated_at") or _e.get("ran_at", "")
+        except Exception:
+            return ""
+    d_ran, s_ran = _ran(df), _ran(sf)
     if d_ran > s_ran:                    # org copy is newer — back-sync it
         shutil.copy2(df, sf)
-        print(f"[ui-roles-sync] back-synced org copy (ran {d_ran} > {s_ran})")
+        print(f"[ui-roles-sync] back-synced org {fam_file} "
+              f"(ran {d_ran} > {s_ran})")
     elif s_ran > d_ran:
-        print(f"[ui-roles-sync] kept archive copy (ran {s_ran} > {d_ran}) "
-              "- it flows forward in the rsync")
+        print(f"[ui-roles-sync] kept archive {fam_file} "
+              f"(ran {s_ran} > {d_ran}) - it flows forward in the rsync")
 PYEOF
-  rsync -a --delete --exclude=roles-pm.json \
+  rsync -a --delete --exclude=roles-pm.json --exclude=roles-dmm.json \
       "$DEST"/ingest/data/ui/ "$SRC"/ingest/data/ui/
   (cd "$SRC" && git add ingest/data/ui 2>/dev/null && \
     git diff --cached --quiet || \

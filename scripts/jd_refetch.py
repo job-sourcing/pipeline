@@ -258,10 +258,18 @@ def main() -> int:
     jobs = _load_bundle()
     targets = _select_targets(jobs, args.transport)
     cache = _load_cache_map()
-    # skip rows already cached-OK at/above quality (idempotent legs)
+    # skip rows already resolved — 'ok' (have the JD) AND terminal
+    # failures (http-error:403/404/410/418 = an ANSWER, not a retry
+    # signal; re-burning every leg on a 403 wall wastes the daily
+    # budget — the lane-1 measurement: 130 jooble 403s re-fetched per
+    # leg). Only 5xx/network errors (transient class) re-try, and the
+    # firecrawl relay (post-Oct-24) overrides via newer fetched_at.
+    def _resolved(key: str) -> bool:
+        st = cache.get(key, {}).get("status", "")
+        return (st == "ok" or st.startswith("q:")
+                or st.startswith("http-error:4"))
     todo = [t for t in targets
-            if not (cache.get(f"{t['source']}|{t['url']}", {})
-                    .get("status") == "ok")]
+            if not _resolved(f"{t['source']}|{t['url']}")]
     print(f"[jd_refetch] bundle={len(jobs)} pending-targets={len(targets)} "
           f"cached-ok={len(targets) - len(todo)} todo={len(todo)} "
           f"transport={args.transport}")
