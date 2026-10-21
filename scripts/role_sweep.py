@@ -2181,10 +2181,17 @@ def sweep(queries: list[str], skip_gj: bool = False,
             dead.append(k)
     if len(merged) == 0:
         verdict = "failed"
-    LEDGER.parent.mkdir(parents=True, exist_ok=True)
-    with open(LEDGER, "a", encoding="utf-8") as f:
+    # S41 family: the drift ledger is PER-FAMILY (roles:pm / roles:dmm
+    # — drift_alert globs roles:*.runs.jsonl). The lane-1 DMM run
+    # appended into the PM ledger before this fix (the family spec's
+    # drift_label was written but the append still hit the module-level
+    # PM constant — found via the checkpoint's pathspec-128).
+    ledger_path = WATCH_DIR / f"{spec['drift_label']}.runs.jsonl"
+    ledger_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(ledger_path, "a", encoding="utf-8") as f:
         f.write(json.dumps({
             "ts": started.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "family": family,             # S41: self-identifying entries
             "verdict": verdict, "rows": len(merged),
             "sources_dead": dead,
         }) + "\n")

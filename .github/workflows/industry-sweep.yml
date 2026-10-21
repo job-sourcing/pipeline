@@ -84,7 +84,12 @@ jobs:
             for f in "ingest/data/industry/${SLUG}.json" "ingest/data/industry/${SLUG}.report.md"; do
               if [ -e "/tmp/ind_state/$f" ]; then cp "/tmp/ind_state/$f" "$f"; fi
             done
-            git add "ingest/data/industry/${SLUG}.json" "ingest/data/industry/${SLUG}.report.md"
+            # F7 lesson: existence-guarded add — a pathspec for a
+            # file that legitimately does not exist on run 1 exits 128
+            # under set -e and kills the checkpoint
+            for f in "ingest/data/industry/${SLUG}.json" "ingest/data/industry/${SLUG}.report.md"; do
+              if [ -e "$f" ]; then git add "$f"; fi
+            done
             if git diff --cached --quiet; then push_ok=1; break; fi
             git commit -m "industry-sweep checkpoint (${SLUG}) [skip ci]"
             if git push; then push_ok=1; break; fi
