@@ -14,7 +14,7 @@
 # Idempotent: re-run to refresh the mirror and push (commit only if changed).
 set -euo pipefail
 
-SRC="${MIRROR_SRC:-/home/z/research}"
+SRC="${MIRROR_SRC:-/home/z/jsr}"
 DEST=/home/z/pipeline-mirror
 PAT="${GITHUB_PAT:?GITHUB_PAT env var required}"
 REMOTE="https://${PAT}@github.com/job-sourcing/pipeline.git"
