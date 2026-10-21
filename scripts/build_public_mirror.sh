@@ -170,6 +170,22 @@ PYROLE
     git diff --cached --quiet || \
     git commit -q -m "role envelope back-sync from org runtime (newest-wins by pm_envelope ran_at - S40)")
 fi
+# S41 (the THIRD S35-new-artifact-rule recurrence, 2026-10-21): the adhoc
+# company-test results (ingest/data/adhoc/<company>.json + .report.md)
+# are lane-written on the ORG side. The lane's first successful run
+# landed 0f59b213; the very next mirror's forward rsync --delete WIPED
+# it (6634 lines) because this handler did not exist — caught within
+# minutes via the contents-API probe, restored by lane re-dispatch.
+# Same org→archive flow as the quartet: copy back BEFORE the forward
+# rsync, then commit. Append-per-company (multiple adhoc tests can
+# coexist; each lane run rewrites only its own company's files).
+if [ -d "$DEST/ingest/data/adhoc" ]; then
+  mkdir -p "$SRC/ingest/data/adhoc"
+  rsync -a "$DEST"/ingest/data/adhoc/ "$SRC/ingest/data/adhoc/"
+  (cd "$SRC" && git add ingest/data/adhoc && \
+    git diff --cached --quiet || \
+    git commit -q -m "adhoc company-test results back-sync from org runtime (S41 S35-rule fix)")
+fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
   # S38 fix: roles-pm.json is written on BOTH sides (the GHA lane AND
