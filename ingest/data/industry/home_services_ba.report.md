@@ -1,42 +1,49 @@
 # Home services / construction × SF Bay Area — industry sweep report
 
-- ran: 2026-10-21T13:08:12Z | raw rows: 4232 | kept: 516 | **head-lined (corp_office ∧ (bay_area ∨ remote) ∧ company∨title affirm): 153**
+- ran: 2026-10-21T13:15:45Z | raw rows: 6837 | kept: 771 | **head-lined (corp_office ∧ (bay_area ∨ remote) ∧ company∨title affirm): 258**
 - region: San Francisco Bay Area, CA (adzuna geo: San Francisco, CA)
 
 ## Sources (the exhaustion measurement)
 
 - adzuna: ok
 - jooble: ok
-- indeed: skipped
-- careerjet: ok
+- indeed: ok
+- careerjet: error:construction:HTTPError
 - findwork: ok
-- muse: error:HTTPError
-- talent: not-installed
+- muse: ok
+- talent: ok
 - himalayas: ok
 - wwr: ok
 - trio: ok
-- yc: not-installed
-- wellfound: not-installed
+- yc: ok
+- wellfound: ok
 - hn: ok
-- gj: skipped
-- builtin: skipped
+- gj: preflight-fail:credits=-1
+- builtin: error:construction:HTTPError
 
 ## Gate counters
 
-- drop:dup_url: 1149
-- drop:industry_no_affirm: 498
-- drop:level_licensed_professional: 7
-- drop:level_pure_labor: 28
-- drop:level_retail_service: 2
-- drop:region_other: 2032
-- kept:corp_office: 243
-- kept:field_mgmt: 64
-- kept:unclassified: 209
+- drop:dup_url: 1781
+- drop:industry_no_affirm: 1076
+- drop:level_licensed_professional: 27
+- drop:level_pure_labor: 39
+- drop:level_retail_service: 3
+- drop:region_other: 3140
+- kept:corp_office: 397
+- kept:field_mgmt: 73
+- kept:unclassified: 301
 
 ## Head-lined roles
 
+- **Hate Losing? So Do We! - Experienced Roofing Sales Representative** — A BETTER ROOFING COMPANY | Walnut Creek, CA, USA | bay_area | indeed | posted 2026-10-09
+- **Window & Door Sales Representative** — AMG Doors & Windows | San Francisco Bay Area, CA, USA | bay_area | indeed | posted 2026-10-19
 - **In Home Sales Rep (HVAC) - San Jose, CA** — ARS | Campbell, Santa Clara County | bay_area | adzuna | posted 2026-09-15
+- **In Home Plumbing Sales Representative** — ARS/Rescue Rooter | San Jose, CA, USA | bay_area | indeed | posted 2026-10-02
+- **Receptionist/Administrative Assistant** — Able General Engineering Inc. dba Able Plumbing Sewer & Drain | San Jose, CA, USA | bay_area | indeed | posted 2026-10-21
+- **Building Materials Sales Associate** — Ace Hardware | Pleasanton, CA, USA | bay_area | indeed | posted 2026-10-17
+- **Branch Manager** — Allied Landscape | San Jose, CA, USA | bay_area | indeed | posted 2026-10-16
 - **Plumbing Estimator - Commercial & Industrial Plumbing** — AlphaX | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-10-20
+- **Plumbing Estimator - Commercial & Industrial Plumbing** — AlphaX | San Jose, CA, USA | bay_area | indeed | posted 2026-10-20
 - **HVAC Inside Sales Lead Generator** — Atlas Trillo Heating&Air Conditioning | Sunnyvale, Santa Clara County | bay_area | adzuna | posted 2026-10-08
 - **HVAC Inside Sales Lead Generator** — Atlas Trillo Heating&Air Conditioning | Santa Clara, Santa Clara County | bay_area | adzuna | posted 2026-10-08
 - **HVAC Inside Sales Lead Generator** — Atlas Trillo Heating&Air Conditioning | Menlo Park, San Mateo County | bay_area | adzuna | posted 2026-10-08
@@ -69,29 +76,22 @@
 - **Lead HVAC Counter Sales Specialist** — Atlas Trillo Heating&Air Conditioning | Cupertino, Santa Clara County | bay_area | adzuna | posted 2026-10-14
 - **Lead HVAC Counter Sales Specialist** — Atlas Trillo Heating&Air Conditioning | Cupertino, Santa Clara County | bay_area | adzuna | posted 2026-10-14
 - **Outside Residential Plumbing Sales Representative** — Atlas Trillo Heating&Air Conditioning | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-10-14
+- **In-Home Sales Representative – HVAC & Insulation | Hot Leads Provided** — Attic Crew | San Francisco Bay Area, CA, USA | bay_area | indeed | posted 2026-09-23
 - **Account Manager in Landscape Maintenance** — BAY PRO | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-10-04
+- **Payroll Manager** — BEI Construction | Alameda, CA, USA | bay_area | indeed | posted 2026-10-12
+- **Accounting Assistant** — BEI Construction | Alameda, CA, USA | bay_area | indeed | posted 2026-10-01
+- **Project Coordinator** — Bay Home & Window | Pleasanton, CA, USA | bay_area | indeed | posted 2026-10-16
+- **Call Center Manager** — Benjamin Franklin Plumbing | Novato, CA, USA | bay_area | indeed | posted 2026-10-19
 - **Construction Project Manager** — Bisnow | San Mateo, San Mateo County | bay_area | adzuna | posted 2026-10-02
 - **Construction Project Manager** — Bisnow | San Mateo, San Mateo County | bay_area | adzuna | posted 2026-10-01
+- **Construction Project Manager** — Bisnow | San Mateo, CA, USA | bay_area | indeed | posted 2026-10-01
+- **Estimator/Inside Sales - Lighting & Electrical** — Blue Streak Lighting Services | Santa Clara, CA, USA | bay_area | indeed | posted 2026-10-13
 - **Assistant Project Manager (Design and Construction)** — Brailsford and Dunlavey | San Francisco, California | bay_area | adzuna | posted 2026-10-11
 - **Assistant Project Manager (Design and Construction)** — Brailsford and Dunlavey | San Francisco, California | bay_area | adzuna | posted 2026-09-18
 - **Manager, Electrical Engineering – Power Generation** — Brunel | Redwood City, San Mateo County | bay_area | adzuna | posted 2026-10-14
+- **Construction Project Engineer / Project Coordinator** — Buildcorp | San Francisco, CA, USA | bay_area | indeed | posted 2026-09-30
 - **Facilities Program & Construction Support Manager with Security Clearance** — Building People LLC/The | Alviso, San Jose | bay_area | adzuna | posted 2026-10-15
+- **Construction Coordinator - (Walnut Creek)** — Burns & McDonnell | Walnut Creek, CA, USA | bay_area | indeed | posted 2026-10-19
 - **Residential Construction Project Manager** — Burton Design and Construction, LLC | Los Gatos, Santa Clara County | bay_area | adzuna | posted 2026-10-05
-- **Construction & Design Manager** — Cb Management Group Inc | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-10-13
-- **Project Controls Manager** — Clark Construction Group | San Francisco, California | bay_area | adzuna | posted 2026-09-16
-- **Assistant Project Manager Pre-Construction, Solar-BESS** — Clearway Energy | San Francisco, California | bay_area | adzuna | posted 2026-09-10
-- **Project Scheduler** — Clune Construction Company | San Francisco, California | bay_area | adzuna | posted 2026-10-11
-- **Director of Construction and Real Estate** — Coherent | Holy, Santa Clara County | bay_area | adzuna | posted 2026-10-03
-- **Senior Construction Scheduler, Data Center** — Crusoe | San Francisco, California | bay_area | adzuna | posted 2026-09-30
-- **Director of Construction** — Crusoe | San Francisco, California | bay_area | adzuna | posted 2026-10-15
-- **Construction Project Coordinator - Residential Construction** — D&D HOME REMODELING | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-09-08
-- **Assistant Project Manager - Residential Construction** — D&D HOME REMODELING | San Jose, Santa Clara County | bay_area | adzuna | posted 2026-09-08
-- **Sr Electrical Estimator** — DPR | San Francisco, California | bay_area | adzuna | posted 2026-09-11
-- **Estimator** — Dome Construction | San Francisco, California | bay_area | adzuna | posted 2026-10-04
-- **Senior Construction Project Manager** — Dowbuilt | San Francisco, California | bay_area | adzuna | posted 2026-10-19
-- **Senior Construction Project Manager** — Dowbuilt | Presidio, San Francisco | bay_area | adzuna | posted 2026-10-01
-- **Construction Project Coordinator/Project Engineer** — EMCOR Group | Campbell, Santa Clara County | bay_area | adzuna | posted 2026-10-14
-- **Construction Project Coordinator/Project Engineer** — EMCOR Group | Campbell, Santa Clara County | bay_area | adzuna | posted 2026-10-14
-- **Construction Project Coordinator/Project Engineer** — EMCOR Group | Campbell, Santa Clara County | bay_area | adzuna | posted 2026-10-14
-- **Construction Coordinator** — FST Technical Services | Santa Clara, Santa Clara County | bay_area | adzuna | posted 2026-10-20
-- **Technical Program Manager, Data Center Development Planning and Pre-Construction** — Google | Sunnyvale, Santa Clara County | bay_area | adzuna | posted 2026-10-18
+- **Experienced Roofing Estimator / Sales Representative** — C F Y Construction Inc. | Daly City, CA, USA | bay_area | indeed | posted 2026-10-13
+- **Senior Construction Scheduler, Data Center** — CRUSOE | San Francisco, CA, USA | bay_area | indeed | posted 2026-09-28
