@@ -35,6 +35,9 @@ on:
       watch_budget_seconds:
         description: "per-watch enrichment wall-clock budget (default 240)"
         default: "240"
+      shard_index:
+        description: "S41 fleet split: run ONE shard (0-5), empty = all 6"
+        default: ""
   schedule:
     - cron: "45 6 * * *"   # after the drain + backfill crons
 
@@ -42,15 +45,39 @@ permissions:
   contents: write
   actions: write
 
-concurrency:
-  group: board-watch   # OWN group (S7-A3 P1-3): the shared ats-drain group
-                       # evicts pending sibling runs; the watch's 3x-retry
-                       # checkpoint already handles cross-chain push races
-  cancel-in-progress: false
-
 jobs:
-  watch:
+  # S41 fleet split: a tiny setup job emits the shard matrix — cron and
+  # empty-input dispatch fan out to ALL 6 shards; a dispatch WITH
+  # shard_index re-runs (or re-triggers) exactly ONE shard (the backlog
+  # retrigger below re-dispatches this way).
+  shards:
     runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      matrix: ${{ steps.mk.outputs.matrix }}
+    steps:
+      - id: mk
+        run: |
+          SI="${{ github.event.inputs.shard_index || '' }}"
+          if [ -n "$SI" ]; then
+            echo "matrix=[\"$SI\"]" >> "$GITHUB_OUTPUT"
+          else
+            echo 'matrix=["0","1","2","3","4","5"]' >> "$GITHUB_OUTPUT"
+          fi
+
+  watch:
+    needs: shards
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.shards.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    # S41 fleet split: per-shard group (same-shard runs serialize — the
+    # backlog retrigger legs; cross-shard siblings run CONCURRENTLY by
+    # design, each on its own runner = its own Azure egress IP).
+    concurrency:
+      group: board-watch-${{ matrix.shard }}
+      cancel-in-progress: false
     # S12 multi-company: ONE run processes ALL configured watches
     # sequentially (config.json is data — the loop lives in the script;
     # never one workflow per company). S14: 9 watches (4 workday + 2
@@ -105,7 +132,13 @@ jobs:
           # own runner/IP — correlated rate limits isolated) and
           # li-dormant-watch.yml (weekly liveness re-probe).
           WATCH_SKIP_TAGS: weekly,li,li_dormant,gj,gj_dormant,ra,gj_monthly,gj_quarterly
-        run: python3 scripts/gha_board_watch.py
+          S41_SHARD: ${{ matrix.shard }}
+        run: |
+          if [ -n "$S41_SHARD" ]; then
+            python3 scripts/gha_board_watch.py --shard "$S41_SHARD/6"
+          else
+            python3 scripts/gha_board_watch.py
+          fi
 
       - name: Checkpoint state to git (race-proof)
         if: always()
@@ -172,12 +205,13 @@ jobs:
           # dispatch converts the WHOLE retrigger chain, not one leg).
           DET="${{ github.event.inputs.watch_details_max || '40' }}"
           BUD="${{ github.event.inputs.watch_budget_seconds || '240' }}"
+          SHARD="${{ matrix.shard }}"
           if curl -sf -X POST \
               -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
               -H "Accept: application/vnd.github+json" \
               "https://api.github.com/repos/${{ github.repository }}/actions/workflows/board-watch.yml/dispatches" \
-              -d "{\"ref\":\"main\",\"inputs\":{\"watch_details_max\":\"$DET\",\"watch_budget_seconds\":\"$BUD\"}}"; then
-            echo "next watch leg dispatched (details_max=$DET budget=$BUD; backlog remains)"
+              -d "{\"ref\":\"main\",\"inputs\":{\"watch_details_max\":\"$DET\",\"watch_budget_seconds\":\"$BUD\",\"shard_index\":\"$SHARD\"}}"; then
+            echo "next watch leg dispatched (shard $SHARD, details_max=$DET budget=$BUD; backlog remains)"
           else
             echo "::warning::failed to dispatch next leg — daily cron resumes"
           fi
@@ -191,7 +225,7 @@ jobs:
         # the 22:17Z safety slot covers the day regardless).
         # always() — a failed checkpoint above must not skip the chain
         # (audit-B4 lesson: plain if: gets implicit success() &&)
-        if: always() && env.WATCH_RESULT == 'complete'
+        if: always() && matrix.shard == '0' && env.WATCH_RESULT == 'complete'
         run: |
           if curl -sf -X POST \
               -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \

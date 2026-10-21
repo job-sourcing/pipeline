@@ -1933,9 +1933,32 @@ def _ledger_append(watches: list[dict], results: dict[str, str]) -> None:
     _CORROBORATION_BLOCKED.clear()   # consumed — one run, one line
 
 
+def _parse_shard(spec: str) -> tuple[int, int]:
+    """S41 fleet split: parse 'I/N' — the mod-N shard index selection.
+
+    Raises ValueError on malformed specs (not I/N, N < 2, or I >= N) so
+    main() can fail-loudly (exit 2) instead of silently running a
+    wrong subset — a typo'd dispatch input must never look like a
+    green run.
+    """
+    m = re.fullmatch(r"(\d+)/(\d+)", (spec or "").strip())
+    if not m:
+        raise ValueError("want I/N")
+    i, n = int(m.group(1)), int(m.group(2))
+    if n < 2 or i >= n:
+        raise ValueError("need 0<=I<N, N>=2")
+    return i, n
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--label", help="run a single watch by label")
+    ap.add_argument("--shard", metavar="I/N",
+                    help="S41 fleet split: run only watches with "
+                         "index %% N == I (applied AFTER tag filters, "
+                         "BEFORE --label; stable across runs because the "
+                         "config order is the basis — insertions shift "
+                         "membership, deletions do not)")
     ap.add_argument("--seed-from", help="list.jsonl to seed the state from")
     ap.add_argument("--first-seen", help="date for --seed-from (default today)")
     ap.add_argument("--backfill-dates", action="store_true",
@@ -1978,6 +2001,24 @@ def main() -> int:
         print(f"[watch] config unreadable: {exc}", file=sys.stderr)
         return 0                       # exit-0 contract; tomorrow retries
     _validate_variant_uniqueness(watches)
+    # S41 fleet split: the shard cut. 283 watches on ONE runner took
+    # 19-37min serially (the S12 'ONE run processes ALL watches' design
+    # was made at 9 watches — 30x scale since). The yml now fans the
+    # daily cron into 6 matrix shards = 6 concurrent runners = 6
+    # distinct Azure IPs (the IP-diversify directive) + ~6x wall-clock.
+    # Membership = index mod N on the POST-TAG-FILTER list (stable with
+    # the committed config; shards are disjoint so state files never
+    # collide — the checkpoint's touch-only rule still holds).
+    if args.shard:
+        try:
+            i, n = _parse_shard(args.shard)
+        except ValueError as exc:
+            print(f"[watch] bad --shard {args.shard!r} ({exc})",
+                  file=sys.stderr)
+            return 2
+        total = len(watches)
+        watches = [w for k, w in enumerate(watches) if k % n == i]
+        print(f"[watch] shard {i}/{n}: {len(watches)}/{total} watches")
     cfg = load_config()
     if args.label:
         watches = [w for w in watches if w["label"] == args.label]

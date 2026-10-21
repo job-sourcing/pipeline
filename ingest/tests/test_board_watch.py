@@ -3176,3 +3176,37 @@ class TestS37CorroborationBlocked:
             assert "test_watch" not in watch._CORROBORATION_BLOCKED
         finally:
             watch._CORROBORATION_BLOCKED.clear()
+
+
+class TestS41FleetShard:
+    """S41 fleet split — the board-watch 283-watch serial lane fans out
+    to 6 matrix shards (6 runners, 6 Azure IPs). Pins: the spec parser
+    fails loudly on malformed dispatch inputs, and the mod-N cut is
+    disjoint + exhaustive (a watch missed by every shard = silent data
+    loss; a watch run by two shards = duplicate push races)."""
+
+    def test_parse_shard_valid(self):
+        assert watch._parse_shard("0/6") == (0, 6)
+        assert watch._parse_shard("5/6") == (5, 6)
+        assert watch._parse_shard(" 3/8 ") == (3, 8)   # tolerant of ws
+
+    def test_parse_shard_rejects_malformed(self):
+        # a typo'd dispatch input must NEVER parse into a plausible
+        # subset — all of these raise (main() exits 2, fail-loudly)
+        for bad in ("", "abc", "0", "6/6", "1/1", "7/6", "-1/6",
+                    "0/0", "1/0", "0x2/4", "2/3/4"):
+            with pytest.raises(ValueError):
+                watch._parse_shard(bad)
+
+    def test_mod_n_cut_is_disjoint_and_exhaustive(self):
+        labels = [f"w{i}_us_fulltime" for i in range(149)]  # daily set
+        n = 6
+        shards = [[w for k, w in enumerate(labels) if k % n == i]
+                   for i in range(n)]
+        flat = [w for shard in shards for w in shard]
+        # every watch appears exactly once across the shard set
+        assert sorted(flat) == sorted(labels)
+        assert sum(map(len, shards)) == len(labels)
+        # and the shards are size-balanced (max-min spread <= 1)
+        sizes = {len(s) for s in shards}
+        assert max(sizes) - min(sizes) <= 1

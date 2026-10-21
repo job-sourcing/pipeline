@@ -22,8 +22,15 @@ name: Role Sweep PM (weekly)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * 3"    # Wed 12:00Z (after the main lanes)
-    - cron: "0 12 1 * *"    # 1st of month: --full (core + tail)
+    # S41 fleet cadence: DAILY lite sweeps (fresh postings enter the
+    # envelope within 1 day instead of up to 7 — the "queue moves slow /
+    # cross-day unacceptable" directive). Lite = --skip gj,builtin: the
+    # two firecrawl credit-burners (gj 7-21/run, builtin ~12/run) stay
+    # WEEKLY-only so the ~1,000-credit budget holds; everything else
+    # burns zero credits on the US Azure runner.
+    - cron: "0 12 * * 0-2,4-6"   # daily lite (NOT Wed)
+    - cron: "0 12 * * 3"    # Wed 12:00Z: full incl. gj + builtin (weekly L3)
+    - cron: "0 12 1 * *"    # 1st of month: --full (core + tail queries)
 
 permissions:
   contents: write
@@ -61,10 +68,12 @@ jobs:
           USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
           USAJOBS_USER_AGENT: ${{ secrets.USAJOBS_USER_AGENT }}
           FULL_SWEEP: ${{ github.event.schedule == '0 12 1 * *' }}
+          DAILY_LITE: ${{ github.event.schedule == '0 12 * * 0-2,4-6' }}
         run: |
           set -e
           ARGS=""
           if [ "$FULL_SWEEP" = "true" ]; then ARGS="--full"; fi
+          if [ "$DAILY_LITE" = "true" ]; then ARGS="$ARGS --skip gj,builtin"; fi
           # S39 §A5/F13: the seed-envelope union — careerjet is HK-only
           # (403 on Azure; firecrawl relay measured BROKEN), so the lane
           # unions the archive's latest envelope to carry its rows.

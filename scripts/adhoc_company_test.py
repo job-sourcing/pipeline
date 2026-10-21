@@ -76,12 +76,32 @@ REMOTE_PAT = re.compile(
     re.I,
 )
 
+# The lane-1 false-positive class (observed 2026-10-21): Antioch TN,
+# Dublin OH, Richmond KY, Newark NJ, Brentwood TN, Lafayette MS — city
+# names shared with Bay Area cities in OTHER states. A city match alone
+# is NOT Bay Area evidence: require CA context (state abbr or
+# 'California') in the same loc string, or one of the unambiguous
+# whole-region markers.
+UNAMBIG_BAY = (
+    "san francisco", "south san francisco", "silicon valley",
+    "bay area", "san jose", "palo alto", "mountain view", "sunnyvale",
+    "cupertino", "menlo park", "redwood city", "san mateo",
+    "foster city", "milpitas", "santa clara", "south bay",
+)
+CA_PAT = re.compile(r"\bca\b|\bcalif\b|california", re.I)
+
 # Starbucks hourly-retail ladder (the excluded tier). Store manager is
 # salaried at Starbucks but still retail-side — bucketed retail_mgmt,
-# never head-lined as corp.
+# never head-lined as corp. Lane-1 addition: the LICENSED-STORE class —
+# 'Starbucks Supervisor'/'Food Service Supervisor'/'Team Leader' rows
+# are kiosks inside Target/Safeway/universities (the title carries the
+# Starbucks brand but the employer is the host retailer) — hourly-tier
+# food service, never corp.
 HOURLY_RETAIL_PAT = re.compile(
     r"\bbarista\b|shift\s*supervisor|team\s*supervisor|"
-    r"retail\s*associat|hourly\b|part\s*-?\s*time\b",
+    r"retail\s*associat|hourly\b|part\s*-?\s*time\b|"
+    r"\bsupervisor\b|team\s*leader|team\s*member|food\s*service|"
+    r"cashier|crew\s*member|store\s*partner",
     re.I,
 )
 RETAIL_MGMT_PAT = re.compile(
@@ -92,12 +112,25 @@ RETAIL_MGMT_PAT = re.compile(
 
 
 def region_tag(loc: str, title: str = "") -> str:
-    blob = f"{loc} {title}".lower()
+    """Region cut with the CA-context gate (lane-1 lesson).
+
+    Remote first (title can carry it: 'work from home'), then the
+    unambiguous whole-region markers, then city-in-list ∧ CA-context.
+    A city match WITHOUT CA context is 'other' — Brentwood TN and
+    Brentwood CA must never conflate.
+    """
+    blob = f"{loc} {title}"
     if REMOTE_PAT.search(blob):
         return "remote"
-    for city in BAY_AREA:
-        if city in blob:
+    loc_l = loc.lower()
+    for marker in UNAMBIG_BAY:
+        if marker in loc_l:
             return "bay_area"
+    ca = bool(CA_PAT.search(loc))
+    if ca:
+        for city in BAY_AREA:
+            if city in loc_l:
+                return "bay_area"
     return "other"
 
 
@@ -125,23 +158,24 @@ def aggregator_pass(company: str) -> tuple[list[dict], list[dict]]:
     region filter is applied client-side afterwards.
     """
     fetchers = [
-        ("adzuna", role_sweep.fetch_adzuna),
-        ("careerjet", role_sweep.fetch_careerjet),
-        ("jooble", role_sweep.fetch_jooble),
-        ("findwork", role_sweep.fetch_findwork),
-        ("dice", role_sweep.fetch_dice),
-        ("himalayas", role_sweep.fetch_himalayas),
-        ("talent", role_sweep.fetch_talent),
-        ("muse", role_sweep.fetch_muse),
-        ("indeed", role_sweep.fetch_jobspy_indeed),
+        ("adzuna", role_sweep.fetch_adzuna, True),
+        ("careerjet", role_sweep.fetch_careerjet, True),
+        ("jooble", role_sweep.fetch_jooble, True),
+        ("findwork", role_sweep.fetch_findwork, True),
+        ("dice", role_sweep.fetch_dice, True),
+        # lane-1: these three take NO queries arg (whole-index fetchers)
+        ("himalayas", role_sweep.fetch_himalayas, False),
+        ("talent", role_sweep.fetch_talent, False),
+        ("muse", role_sweep.fetch_muse, False),
+        ("indeed", role_sweep.fetch_jobspy_indeed, True),
     ]
     rows: list[dict] = []
     notes: list[dict] = []
     queries = [company]                # company-as-keyword, US-wide
-    for name, fn in fetchers:
+    for name, fn, keyed in fetchers:
         t0 = time.time()
         try:
-            src_rows, status = fn(queries)
+            src_rows, status = (fn(queries) if keyed else fn())
             hit = [r for r in src_rows
                    if company in (r.get("company") or "").lower()
                    or company in (r.get("title") or "").lower()]
@@ -389,13 +423,18 @@ def write_report(company: str, rows: list[dict], src_notes: list[dict],
         f"- {agg_hit}/9 aggregators surfaced {company} rows; the direct "
         f"probe `{'answered' if phenom_ev.get('method') else 'did not answer'}`."
     )
+    if phenom_ev.get("tried"):
+        lines.append("- Phenom endpoints are widget-auth-gated (lane-1: "
+                     "A→403, B→401, C→404) — a direct ATS read needs the "
+                     "site's own refNum/session; aggregators are the "
+                     "evidence base today.")
     lines.append(
-        f"- Corp∧(BA∨remote) = {len(corp_user)}: "
-        + (", ".join(sorted({r['region'] for r in corp_user})) or "n/a")
-        + ". The rest of the corpus is hourly-retail ladder + out-of-region "
-        "corp roles (Seattle Support Center dominates, as expected for "
-        "a Seattle-HQ company)."
-        if company == "starbucks" else "")
+        f"- Corp∧(BA∨remote) = {len(corp_user)}. Region tags are "
+        "CA-context-gated (lane-1 false-positive class: Antioch TN / "
+        "Dublin OH / Newark NJ are NOT Bay Area despite the name "
+        "collision)." if corp_user else
+        "- Corp∧(BA∨remote) = 0 — no corp-level Bay Area or remote "
+        "postings surfaced this run.")
     (out_dir / f"{company}.report.md").write_text("\n".join(lines))
 
 
