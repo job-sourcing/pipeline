@@ -52,99 +52,20 @@ import role_sweep  # noqa: E402
 # Region + level classification (the user's cut)
 # ---------------------------------------------------------------------------
 
-# Core SF Bay Area place names (9 counties: SF, San Mateo, Santa Clara,
-# Alameda, Contra Costa, Marin, Sonoma, Napa, Solano — city-level list,
-# deliberately broad on the commuter belt, kept to names that actually
-# appear in job loc strings).
-BAY_AREA = (
-    "san francisco", "south san francisco", "daly city", "burlingame",
-    "san mateo", "foster city", "redwood city", "menlo park", "palo alto",
-    "mountain view", "sunnyvale", "santa clara", "san jose", "milpitas",
-    "cupertino", "campbell", "los gatos", "saratoga", "los altos",
-    "oakland", "berkeley", "emeryville", "alameda", "richmond",
-    "san ramon", "danville", "dublin", "pleasanton", "livermore",
-    "fremont", "newark", "union city", "hayward", "castro valley",
-    "walnut creek", "concord", "pleasant hill", "lafayette", "orinda",
-    "moraga", "martinez", "pittsburg", "antioch", "brentwood",
-    "san rafael", "novato", "petaluma", "santa rosa", "sonoma",
-    "vallejo", "fairfield", "napa", "suisun", "vacaville",
-    "bay area", "silicon valley",
+# S41: the region/level classifiers now live in the SHARED module
+# ingest/jobsearch/geo_levels.py (the industry sweep reuses them —
+# one module, no copies). Kept names re-exported for the lane's report
+# code + the S41 pins.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "ingest"))
+from jobsearch.geo_levels import (  # noqa: E402
+    region_tag,                     # noqa: E402
+    retail_level_tag as level_tag,  # noqa: E402  (same cut, new name)
+    BAY_AREA,
 )
-
-REMOTE_PAT = re.compile(
-    r"\bremote\b|\bvirtual\b|work\s*-?\s*from\s*-?\s*home|wfh|anywhere\s+in",
-    re.I,
-)
-
-# The lane-1 false-positive class (observed 2026-10-21): Antioch TN,
-# Dublin OH, Richmond KY, Newark NJ, Brentwood TN, Lafayette MS — city
-# names shared with Bay Area cities in OTHER states. A city match alone
-# is NOT Bay Area evidence: require CA context (state abbr or
-# 'California') in the same loc string, or one of the unambiguous
-# whole-region markers.
-UNAMBIG_BAY = (
-    "san francisco", "south san francisco", "silicon valley",
-    "bay area", "san jose", "palo alto", "mountain view", "sunnyvale",
-    "cupertino", "menlo park", "redwood city", "san mateo",
-    "foster city", "milpitas", "santa clara", "south bay",
-)
-CA_PAT = re.compile(r"\bca\b|\bcalif\b|california", re.I)
-
-# Starbucks hourly-retail ladder (the excluded tier). Store manager is
-# salaried at Starbucks but still retail-side — bucketed retail_mgmt,
-# never head-lined as corp. Lane-1 addition: the LICENSED-STORE class —
-# 'Starbucks Supervisor'/'Food Service Supervisor'/'Team Leader' rows
-# are kiosks inside Target/Safeway/universities (the title carries the
-# Starbucks brand but the employer is the host retailer) — hourly-tier
-# food service, never corp.
-HOURLY_RETAIL_PAT = re.compile(
-    r"\bbarista\b|shift\s*supervisor|team\s*supervisor|"
-    r"retail\s*associat|hourly\b|part\s*-?\s*time\b|"
-    r"\bsupervisor\b|team\s*leader|team\s*member|food\s*service|"
-    r"cashier|crew\s*member|store\s*partner",
-    re.I,
-)
-RETAIL_MGMT_PAT = re.compile(
-    r"\bstore\s*manager\b|assistant\s*store\s*manager|district\s*manager|"
-    r"\bdistrict\s*manager\b|retail\s*manager|store\s*leader",
-    re.I,
-)
-
-
-def region_tag(loc: str, title: str = "") -> str:
-    """Region cut with the CA-context gate (lane-1 lesson).
-
-    Remote first (title can carry it: 'work from home'), then the
-    unambiguous whole-region markers, then city-in-list ∧ CA-context.
-    A city match WITHOUT CA context is 'other' — Brentwood TN and
-    Brentwood CA must never conflate.
-    """
-    blob = f"{loc} {title}"
-    if REMOTE_PAT.search(blob):
-        return "remote"
-    loc_l = loc.lower()
-    for marker in UNAMBIG_BAY:
-        if marker in loc_l:
-            return "bay_area"
-    ca = bool(CA_PAT.search(loc))
-    if ca:
-        for city in BAY_AREA:
-            if city in loc_l:
-                return "bay_area"
-    return "other"
-
-
-def level_tag(title: str, microsite: str = "", desc: str = "") -> str:
-    blob = f"{title} {microsite}"
-    if HOURLY_RETAIL_PAT.search(blob):
-        return "retail_hourly"
-    if RETAIL_MGMT_PAT.search(blob):
-        return "retail_mgmt"
-    # Phenom microsite is authoritative when present (Retail vs Corp)
-    if microsite and "retail" in microsite.lower():
-        return "retail_hourly"
-    return "corp"
-
+from jobsearch.geo_levels import (  # noqa: E402
+    UNAMBIG_BAY, CA_PAT, REMOTE_PAT, VDC_DENY,
+    HOURLY_RETAIL_PAT, RETAIL_MGMT_PAT,
+)  # noqa: F401  (re-exported for the pins/lane evidence)
 
 # ---------------------------------------------------------------------------
 # 1. Aggregator pass — reuse the role_sweep fetchers (queries=["<company>"])

@@ -238,6 +238,18 @@ PYJD
     git diff --cached --quiet || \
     git commit -q -m "jd_cache union-merge from org runtime (S41-R1 F6 — unconditional, both-sided writer)")
 fi
+# S41 Strategy-2 (S35 rule 4th check — the lesson APPLIED proactively):
+# the industry sweep's artifacts (ingest/data/industry/<slug>.json +
+# .report.md) are lane-written on the ORG side; this handler exists in
+# the SAME change as the path itself. Copy-back-before-rsync (the
+# adhoc pattern); per-slug files (each run rewrites only its slug).
+if [ -d "$DEST/ingest/data/industry" ]; then
+  mkdir -p "$SRC/ingest/data/industry"
+  rsync -a "$DEST"/ingest/data/industry/ "$SRC/ingest/data/industry/"
+  (cd "$SRC" && git add ingest/data/industry && \
+    git diff --cached --quiet || \
+    git commit -q -m "industry sweep results back-sync from org runtime (S41 Strategy-2, S35 rule)")
+fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
   # S38 fix: roles-pm.json is written on BOTH sides (the GHA lane AND

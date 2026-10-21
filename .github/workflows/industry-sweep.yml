@@ -1,0 +1,96 @@
+name: Industry Sweep
+
+# S41 stress test #2 (DESIGN-S41 v2 §3): the industry×region sweep —
+# home services / construction × SF Bay Area, non-licensed corp/office
+# roles. The second standardized engine: role_sweep fetchers via
+# import (location-aware for adzuna/jooble/careerjet/indeed — the S41
+# geo params), the shared geo_levels region+level gates, the
+# INDUSTRIES registry (new industries = data entries). Every drop
+# labeled; the report head-lines corp_office ∧ (bay_area ∨ remote).
+#
+# Sources: ALL of them (the user's "be exhaustive" directive) — the
+# 4 geo fetchers + the 10 keyless/wide sources + the 2 firecrawl
+# sources (expected-zero until the Oct-24 credit renewal — declared,
+# never misread as "not on this source"). Careerjet 403s on Azure
+# (documented) — the HK local leg is its transport.
+#
+# Artifacts: ingest/data/industry/<slug>.json + .report.md — the S35
+# rule honored IN THIS CHANGE: the mirror back-sync handler
+# (copy-back-before-rsync, the adhoc pattern) + the !gitignore
+# exception ship here too. Cadence: weekly Friday 14:15Z + dispatch
+# ?industry= for other registry entries.
+
+on:
+  workflow_dispatch:
+    inputs:
+      industry:
+        description: "INDUSTRIES registry slug (default home_services_ba)"
+        default: "home_services_ba"
+  schedule:
+    - cron: "15 14 * * 5"    # Fridays 14:15Z
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: industry-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pipeline + jobspy extra
+        run: pip install -e "ingest[jobspy]" curl_cffi
+
+      - name: Run industry sweep
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_API_KEY: ${{ secrets.ADZUNA_API_KEY }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          CAREERJET_API_KEY: ${{ secrets.CAREERJET_API_KEY }}
+          CAREERJET_REFERER: ${{ secrets.CAREERJET_REFERER }}
+          FINDWORK_API_KEY: ${{ secrets.FINDWORK_API_KEY }}
+        run: |
+          python3 scripts/industry_sweep.py \
+            --industry "${{ github.event.inputs.industry || 'home_services_ba' }}"
+
+      - name: Checkpoint artifacts to git (race-proof, S35 rule)
+        if: always()
+        run: |
+          set -e
+          SLUG="${{ github.event.inputs.industry || 'home_services_ba' }}"
+          mkdir -p /tmp/ind_state/ingest/data/industry
+          for f in "ingest/data/industry/${SLUG}.json" "ingest/data/industry/${SLUG}.report.md"; do
+            if [ -e "$f" ]; then cp "$f" "/tmp/ind_state/$f"; fi
+          done
+          git config user.name "industry-sweep-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            for f in "ingest/data/industry/${SLUG}.json" "ingest/data/industry/${SLUG}.report.md"; do
+              if [ -e "/tmp/ind_state/$f" ]; then cp "/tmp/ind_state/$f" "$f"; fi
+            done
+            git add "ingest/data/industry/${SLUG}.json" "ingest/data/industry/${SLUG}.report.md"
+            if git diff --cached --quiet; then push_ok=1; break; fi
+            git commit -m "industry-sweep checkpoint (${SLUG}) [skip ci]"
+            if git push; then push_ok=1; break; fi
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::industry-sweep checkpoint push failed after 3 attempts — artifacts rescued in /tmp"
+            exit 1
+          fi

@@ -302,7 +302,8 @@ def _http_json(url: str, data=None, headers=None, timeout=30):
         return json.loads(r.read().decode("utf-8", "replace"))
 
 
-def fetch_adzuna(queries: list[str]) -> tuple[list[dict], str]:
+def fetch_adzuna(queries: list[str],
+                   location: str | None = None) -> tuple[list[dict], str]:
     app_id, key = _env("ADZUNA_APP_ID"), _env("ADZUNA_API_KEY")
     if not (app_id and key):
         return [], "no-key"
@@ -310,6 +311,9 @@ def fetch_adzuna(queries: list[str]) -> tuple[list[dict], str]:
     # S38 §2a: relevance sort (measured 100% PM-family density p1-50)
     # + max_days_old=45 (the li/indeed freshness doctrine) + 10 pages
     # (weekly cap; density verified far beyond — the cap is politeness).
+    # S41 (DESIGN-S41 §3.2): optional geo filter — None = US-wide
+    # (every PM-lane call is bit-identical); the industry sweeps pass a
+    # region string (adzuna's where= geocoder: city/state shaped).
     max_page = 10
     for q in queries:
         for page in range(1, max_page + 1):
@@ -318,6 +322,9 @@ def fetch_adzuna(queries: list[str]) -> tuple[list[dict], str]:
                    f"&what={urllib.parse.quote_plus(q)}"
                    f"&results_per_page=50&max_days_old=45"
                    f"&content-type=application/json")
+            if location:
+                url += (f"&where={urllib.parse.quote_plus(location)}"
+                        f"&distance=50")
             try:
                 d = _http_json(url)
             except Exception as exc:
@@ -342,7 +349,8 @@ def fetch_adzuna(queries: list[str]) -> tuple[list[dict], str]:
     return rows, "ok"
 
 
-def fetch_jooble(queries: list[str]) -> tuple[list[dict], str]:
+def fetch_jooble(queries: list[str],
+                   location: str | None = None) -> tuple[list[dict], str]:
     key = _env("JOOBLE_API_KEY")
     if not key:
         return [], "no-key"
@@ -354,7 +362,8 @@ def fetch_jooble(queries: list[str]) -> tuple[list[dict], str]:
                 d = _http_json(
                     f"https://jooble.org/api/{key}",
                     data=json.dumps({"keywords": q, "location":
-                                     "United States", "page": page}).encode(),
+                                     location or "United States",
+                                     "page": page}).encode(),
                     headers={"Content-Type": "application/json"})
             except Exception as exc:
                 if page == 1:
@@ -377,7 +386,8 @@ def fetch_jooble(queries: list[str]) -> tuple[list[dict], str]:
     return rows, "ok"
 
 
-def fetch_jobspy_indeed(queries: list[str]) -> tuple[list[dict], str]:
+def fetch_jobspy_indeed(queries: list[str],
+                           location: str | None = None) -> tuple[list[dict], str]:
     try:
         from jobspy import scrape_jobs  # noqa: PLC0415
     except ImportError:
@@ -386,7 +396,7 @@ def fetch_jobspy_indeed(queries: list[str]) -> tuple[list[dict], str]:
     for q in queries:                    # S38 §2a: all queries (was [:5])
         try:
             jobs = scrape_jobs(site_name=["indeed"], search_term=q,
-                               location="United States",
+                               location=location or "United States",
                                results_wanted=100, hours_old=24 * 30)
             if not hasattr(jobs, "iterrows"):
                 continue
@@ -741,7 +751,8 @@ def _dice_extract_jobs(html: str):
         return None
 
 
-def fetch_careerjet(queries: list[str]) -> tuple[list[dict], str]:
+def fetch_careerjet(queries: list[str],
+                       location: str | None = None) -> tuple[list[dict], str]:
     """S38 L1.5: Careerjet v4 query API — Basic auth (key:), Referer,
     QUOTED-phrase keywords (unquoted = noise: Floor Manager/Optician),
     location=United States (census s38a_probe_careerjet3)."""
@@ -754,7 +765,8 @@ def fetch_careerjet(queries: list[str]) -> tuple[list[dict], str]:
     max_page = 5
     for q in queries:
         for page in range(1, max_page + 1):
-            params = {"keywords": f'"{q}"', "location": "United States",
+            params = {"keywords": f'"{q}"',
+                      "location": location or "United States",
                       "sort": "relevance", "pagesize": 99, "page": page,
                       "locale_code": "en_US", "user_ip": "127.0.0.1",
                       "user_agent": ua}

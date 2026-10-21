@@ -12,6 +12,7 @@ ingest/data/*
 !ingest/data/ui/
 !ingest/data/roles/
 !ingest/data/adhoc/
+!ingest/data/industry/
 ingest/.venv/
 *.tmp
 *.pyc
