@@ -2,29 +2,17 @@
  "sources": {
   "locked_endpoints": "skipped:talent,muse,wwr,yc,hn,himalayas,l0_bundle",
   "l0_bundle": "locked_endpoint",
-  "findwork": "ok",
   "adzuna": "ok",
   "dice": "ok",
-  "careerjet": "error:performance :HTTPError",
   "jooble": "ok",
   "indeed": "ok",
-  "li_keyword": "ok",
-  "wellfound": "ok",
-  "wwr_rss": "ok",
-  "free_trio": "ok",
-  "usajobs": "error:relay-error:HTTPError",
-  "builtin": "error:digital mark:HTTPError",
-  "gj_role": "preflight-fail:credits=-1",
-  "seed_envelope": "ok:2688/4222"
+  "seed_envelope": "ok:3015/3068"
  },
  "layers": {
   "l0": 0,
-  "l1.5": 8432,
-  "?": 0,
-  "l1": 100,
-  "l2": 674
+  "l1.5": 7894
  },
- "ran_at": "2026-10-21T17:54:58Z",
+ "ran_at": "2026-10-21T23:47:00Z",
  "queries": [
   "performance marketing manager",
   "digital marketing manager",
@@ -37,49 +25,49 @@
   "search engine marketing specialist",
   "digital marketing analyst"
  ],
- "rows_kept": 3823,
- "rows_dropped": 372,
+ "rows_kept": 3416,
+ "rows_dropped": 389,
  "counters": {
-  "family_other": 3851,
-  "nontech_gate": 348,
-  "dedup_merge": 3827,
-  "usgate_non_us": 21,
-  "pending_sector": 5808,
-  "staffing_repost": 667,
+  "family_other": 3319,
+  "nontech_gate": 364,
+  "dedup_merge": 3774,
+  "usgate_non_us": 11,
+  "pending_sector": 5411,
+  "staffing_repost": 615,
   "employer_anonymized": 12,
-  "dedup_dateless": 235,
-  "residual_dup_est": 956,
-  "g1b_title": 24,
+  "dedup_dateless": 138,
+  "residual_dup_est": 683,
+  "g1b_title": 25,
   "screening_post": 0,
-  "seed_rows_in": 2688,
-  "seed_dup_absorbed": 1961,
-  "seed_dup_residual": 727,
-  "roster_kept": 499,
-  "agency_pending": 620,
-  "res7_merge": 123,
-  "cross_src_merge": 83,
-  "jd_cache_hits": 0,
+  "seed_rows_in": 3015,
+  "seed_dup_absorbed": 1920,
+  "seed_dup_residual": 1095,
+  "roster_kept": 491,
+  "agency_pending": 566,
+  "res7_merge": 127,
+  "cross_src_merge": 138,
+  "jd_cache_hits": 3,
   "jd_seed_admitted": 0,
-  "url_identity_merge": 498
+  "url_identity_merge": 585
  },
  "seniority_conflicts": 0,
- "title_conflicts": 1,
+ "title_conflicts": 2,
  "day_delta_histogram": {
-  "re7": 122,
-  "xs1": 62,
-  "xs2": 21,
-  "1": 7,
-  "0": 4
+  "re7": 126,
+  "xs1": 99,
+  "xs2": 37,
+  "xs3": 2,
+  "0": 1
  },
- "dedup_merges": 3827,
+ "dedup_merges": 3774,
  "family_histogram": {
-  "dmm": 2578,
-  "adjacent": 1245
+  "dmm": 2119,
+  "adjacent": 1297
  },
  "seniority_histogram": {
-  "director+": 376,
-  "senior": 611,
-  "mid": 2767,
-  "junior": 69
+  "mid": 2423,
+  "senior": 544,
+  "director+": 375,
+  "junior": 74
  }
 }
