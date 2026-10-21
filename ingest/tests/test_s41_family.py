@@ -190,8 +190,12 @@ class TestFamilyIsolation:
         drift computation would count as a dead source)."""
         roles, watch, ui = sweep_env
         _patch_all(monkeypatch, {})
+        # hermetic: point at the TMP ui dir (absent by construction).
+        # The repo-relative form silently broke once the DMM lane
+        # landed a real roles-dmm.json — the pin's absent-precondition
+        # must never depend on live repo data.
         rc = rs.sweep(family_spec("dmm")["queries_core"],
-                      seed_envelope="ingest/data/ui/roles-dmm.json",
+                      seed_envelope=str(ui / "roles-dmm.json"),
                       family="dmm")
         env = json.load(open(roles / "dmm_envelope.json"))
         assert env["sources"]["seed_envelope"] == "ok:skipped"

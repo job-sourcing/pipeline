@@ -247,6 +247,29 @@ class TestSelection:
         sel = jr._select_targets(jobs, "direct")
         assert len(sel) == 3
 
+    def test_thick_desc_floor_skips_already_fetched_rows(self):
+        # S42-1 (owner doctrine): a pending row whose desc is already
+        # ≥1,000ch HAS the JD (merge/cache/full-feed) — never re-fetched.
+        jobs = [self._bundle_row("adzuna", 1200),   # merged thick
+                self._bundle_row("himalayas", 2000),  # full RSS JD
+                self._bundle_row("adzuna", 500),     # at-cap: targets
+                self._bundle_row("dice", 500)]       # at-cap: targets
+        sel = jr._select_targets(jobs, "direct")
+        got = {(r["source"], len(r["desc"])) for r in sel}
+        assert ("adzuna", 1200) not in got
+        assert ("himalayas", 2000) not in got
+        assert ("adzuna", 500) in got
+        assert ("dice", 500) in got
+
+    def test_thick_desc_floor_applies_to_hk_only_transport(self):
+        # careerjet: a 4,000ch merged row is NOT an hk-leg target even
+        # though the source's transport is hk_only (already-fetched JDs
+        # are not re-fetched on ANY transport).
+        assert len(jr._select_targets(
+            [self._bundle_row("careerjet", 4000)], "hk_only")) == 0
+        assert len(jr._select_targets(
+            [self._bundle_row("careerjet", 0)], "hk_only")) == 1
+
     def test_indeed_fullness_bar_200(self):
         assert len(jr._select_targets(
             [self._bundle_row("indeed", 150)], "direct")) == 1

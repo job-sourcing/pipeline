@@ -76,8 +76,21 @@ from jobsearch.rolefamilies import is_board_employer  # noqa: E402
 # ── selection (S41-R1 F4/F5) ────────────────────────────────────────────────
 # source → (max_fullness_ch, transport)  transport ∈ {direct, hk_only, skip}
 # max_fullness: a pending row is selected when its descLen is BELOW the
-# bar (the snippet is thinner than the source can actually provide);
-# None = the API cap is the gap — ALL pending rows target.
+# bar (the snippet is thinner than the source can actually provide).
+# None = the list-API truncation class: every pending row BELOW the
+# THICK_DESC_FLOOR targets (the at-cap rows — adzuna/dice 500ch snippets
+# — DO benefit: the detail page carries the full 4,000ch JD).
+#
+# THICK_DESC_FLOOR (S42-1): a pending row whose desc is already ≥1,000ch
+# "has the JD" — the text came from a cross-source merge, the cache
+# consult, or a full-JD feed (himalayas RSS / indeed / gj 4,000ch rows).
+# Re-fetching it cannot strictly improve the row (the consult's
+# strictly-longer gate rejects the cached text anyway), so it is NEVER
+# selected. Owner doctrine: "for existing roles that we already have JD
+# fetched, refetching is not necessary — unless it is a new role we just
+# discovered" (a new role with a full JD is also skipped: the row grades
+# on the JD it has; a re-fetch of the same text adds no evidence).
+THICK_DESC_FLOOR = 1000
 SELECT_RULES: dict[str, tuple[int | None, str]] = {
     "adzuna": (None, "direct"),
     "dice": (None, "direct"),
@@ -166,8 +179,12 @@ def _select_targets(jobs: list[dict], transport_filter: str) -> list[dict]:
         if transport_filter == "direct" and is_board_employer(
                 r.get("company") or ""):
             continue
-        if min_len is not None and len(r.get("desc") or "") >= min_len:
-            continue   # already at/above the source's fullness bar
+        # S42-1: the effective selection bar. Explicit per-source bars
+        # stay; the truncation class (bar=None) selects below the thick
+        # floor — at-cap rows target, already-full rows never do.
+        bar = THICK_DESC_FLOOR if min_len is None else min_len
+        if len(r.get("desc") or "") >= bar:
+            continue   # already at/above the bar — the JD is fetched
         if not r.get("url"):
             continue
         out.append(r)
