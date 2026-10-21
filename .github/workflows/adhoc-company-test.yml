@@ -1,0 +1,96 @@
+name: Adhoc Company Test
+
+# S41 (2026-10-21 user directive): "one more adhoc company test — check
+# starbucks (regional / corp / remote) jobs include any that are in my
+# region (SF Bay area, or are remote, not the barista hourly job corp
+# job level). run this alongside any existing still in flight as a
+# separate lane."
+#
+# A separate, parameterized lane (workflow_dispatch ?company=…) so
+# future adhoc company tests reuse the same machinery: 9 aggregator
+# adapters (company-as-keyword, US-wide) + the Phenom People direct
+# probe matrix (apply.<company>.com — HK egress is BLOCKED; the US GHA
+# runner is the only egress that reaches the site, so this MUST be a
+# lane, never a local run). Outputs ingest/data/adhoc/<company>.json
+# + .report.md, checkpointed to git (mirror back-syncs to the archive
+# ride the ui/ sync tree). Runtime ~5-12 min. Failures degrade (D3):
+# the lane exits 0 with the JSON even when individual sources fail.
+
+on:
+  workflow_dispatch:
+    inputs:
+      company:
+        description: "company slug (lowercase)"
+        default: starbucks
+      phenom_site:
+        description: "Phenom careers host"
+        default: apply.starbucks.com
+      phenom_domain:
+        description: "Phenom tenant domain"
+        default: starbucks.com
+
+permissions:
+  contents: write
+
+concurrency:
+  group: adhoc-company-test
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pipeline + jobspy extra
+        run: pip install -e "ingest[jobspy]" curl_cffi
+
+      - name: Run adhoc company test
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_API_KEY: ${{ secrets.ADZUNA_API_KEY }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+          CAREERJET_API_KEY: ${{ secrets.CAREERJET_API_KEY }}
+          CAREERJET_REFERER: ${{ secrets.CAREERJET_REFERER }}
+          FINDWORK_API_KEY: ${{ secrets.FINDWORK_API_KEY }}
+        run: |
+          set -e
+          python3 scripts/adhoc_company_test.py \
+            --company "${{ github.event.inputs.company || 'starbucks' }}" \
+            --phenom-site "${{ github.event.inputs.phenom_site || 'apply.starbucks.com' }}" \
+            --phenom-domain "${{ github.event.inputs.phenom_domain || 'starbucks.com' }}"
+
+      - name: Show the report in the lane log
+        run: cat ingest/data/adhoc/*.report.md
+
+      - name: Checkpoint results to git (race-proof)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/adhoc_state/ingest/data/adhoc
+          cp -r ingest/data/adhoc/* /tmp/adhoc_state/ingest/data/adhoc/ 2>/dev/null || true
+          git config user.name "adhoc-test-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            mkdir -p ingest/data/adhoc
+            cp -r /tmp/adhoc_state/ingest/data/adhoc/* ingest/data/adhoc/
+            git add ingest/data/adhoc
+            if git diff --cached --quiet; then
+              echo "no adhoc changes to commit"; push_ok=1; break
+            fi
+            git commit -m "adhoc-company-test: ${{ github.event.inputs.company || 'starbucks' }} results [skip ci]"
+            if git push origin main; then push_ok=1; break; fi
+            sleep 20
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::push failed after 3 attempts — results rescued in /tmp"
+            exit 1
+          fi
