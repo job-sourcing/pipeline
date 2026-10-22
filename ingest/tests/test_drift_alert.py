@@ -355,11 +355,15 @@ class TestSweepMode:
                     "sources_dead": []}]
         self._ledger(tmp_path, entries)
         monkeypatch.setattr(da, "WATCH_DIR", tmp_path)
+        # dates RELATIVE to today — a hardcoded fixture ages out of
+        # the 7d window overnight and the pin rots (seen 2026-10-22)
+        from datetime import date as _date, timedelta as _td
+        today = _date.today()
         baseline = {"roles:pm": [
-            {"d": "2026-10-08", "rows": 900},
-            {"d": "2026-10-14", "rows": 900},
-            {"d": "2026-10-15", "rows": 100},       # -89% > collapse
-        ]}
+            {"d": (today - _td(days=14)).isoformat(), "rows": 900},
+            {"d": (today - _td(days=7)).isoformat(), "rows": 900},
+            {"d": (today - _td(days=1)).isoformat(), "rows": 100},
+        ]}   # -89% vs the 7d-max > collapse
         f = da.detect_sweep(baseline)
         assert any(x["class"] == "row-collapse" for x in f)
 

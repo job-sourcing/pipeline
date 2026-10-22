@@ -350,7 +350,7 @@ STAFF_BRANDS = re.compile(
         hire\s+level|software\s+guidance|the\s+sage\s+group|
         the\s+ceres\s+group|the\s+brixton\s+group|widescope|
         strategic\s+resources|summit\s+group\s+solutions|tammina|
-        vits\s+consulting|zaddy|peterson\s+technology\s+partners|
+        vits\s+consulting|zaddy|gpac|peterson\s+technology\s+partners|
         ptr\s+global|pts\s+advance|venture\s+up|dolphin\s+solutions|
         methodhub|peoplentech|logicplanet|newt\s+global|sofratech|
         petadata|mroads|xaxis\s+solutions|theboss\.us|virtual\s+vocations|

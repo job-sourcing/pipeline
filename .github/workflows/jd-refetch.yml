@@ -1,31 +1,37 @@
 name: JD Refetch
 
-# S41 #1 (DESIGN-S41 v2 §1): the JD re-fetch lane — closes the pending
-# queue's EVIDENCE gap. 917 pending rows; ~870 addressable (568 direct
-# transports + 302 careerjet that 403/418 everywhere — post-Oct-24
-# firecrawl or bust). Fetches full JDs by row URL, quality-gated at
-# store time, into ingest/data/roles/jd_cache.jsonl keyed (source,url).
-# The daily role sweep's grading consults the cache (strictly-longer +
-# overlap-gated) and the seed-envelope union re-runs pending rows —
-# the queue closes by VERDICT at the natural bundle regeneration.
+# S41 #1 (DESIGN-S41 v2 §1) + S42 v2 §1.2: the JD re-fetch lane —
+# closes the pending queue's EVIDENCE gap. Fetches full JDs by row
+# URL, quality-gated at store time, into ingest/data/roles/
+# jd_cache.jsonl keyed (source,url). The daily role sweep's grading
+# consults the cache (strictly-longer + overlap-gated) and the
+# seed-envelope union re-runs pending rows — the queue closes by
+# VERDICT at the natural bundle regeneration.
 #
-# Budget guards (the board-watch doctrine): 8min/150-row leg, one knob
-# binds first; retrigger while JD_REFETCH=pending via GITHUB_TOKEN,
-# capped 6 legs/day (date-keyed counter in the runner, no state file
-# needed — the cache's cached-ok rows make legs idempotent and the
-# todo set shrinks monotonically); whole-job timeout 15 min.
+# S42 family parameterization (--family pm|dmm): SEQUENTIAL STEPS in
+# ONE job, never a matrix — a matrix would run two runners writing
+# the SAME jd_cache.jsonl concurrently (the F6 clobber class: the
+# second pusher's reset+copy-back wipes the first's new lines).
+# Per-family env keys (JD_REFETCH_PM/DMM — S42-R1 F1) so each family's
+# backlog drives its own retrigger verdict; the pm step is the sole
+# dispatcher (checks BOTH keys — one dispatcher, no double-dispatch).
 #
-# S41-R1 F7: FILE-LEVEL checkpoint paths ONLY (a dir-level snapshot of
-# ingest/data/roles would restore over origin/main and delete any
-# concurrent-writer artifact — the pm sweep checkpoint now also is
-# file-level). This lane owns EXACTLY: jd_cache.jsonl, jd_refetch_state
-# .json, jd_refetch_report.md.
+# Budget guards (the board-watch doctrine): 8min/150-row leg per
+# family; whole-job timeout 30 min (2 legs + install + checkpoint);
+# retrigger while either family is pending, capped 6 runs/day (each
+# run covers both families; date-keyed API count, stateless).
+#
+# S41-R1 F7: FILE-LEVEL checkpoint paths ONLY. This lane owns EXACTLY:
+# jd_cache.jsonl, jd_refetch_state.json, jd_refetch_report.md (pm),
+# jd_refetch_dmm_state.json, jd_refetch_dmm_report.md (dmm — S42-R1
+# F2: the dmm attrition ledger must be checkpointed too, else it is
+# runner-ephemeral).
 
 on:
   workflow_dispatch:
     inputs:
       max_rows:
-        description: "max rows to fetch this leg (default 150)"
+        description: "max rows to fetch per family leg (default 150)"
         default: "150"
   schedule:
     - cron: "15 14 * * *"   # daily, after the 12:00Z sweep envelope lands
@@ -41,7 +47,7 @@ concurrency:
 jobs:
   refetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -54,30 +60,41 @@ jobs:
       - name: Install pipeline
         run: pip install -e "ingest[jobspy]" curl_cffi
 
-      - name: Run JD refetch leg
+      - name: Run JD refetch leg (family=pm)
         run: |
           python3 scripts/jd_refetch.py \
+            --family pm \
             --transport direct \
             --budget-seconds 480 \
             --max-rows "${{ github.event.inputs.max_rows || '150' }}"
 
-      - name: Retrigger while backlog remains (cap 6 legs/day)
-        if: env.JD_REFETCH == 'pending'
+      - name: Run JD refetch leg (family=dmm)
+        # sequential, same worktree: the shared cache accumulates both
+        # legs before ONE file-level checkpoint (single writer)
+        run: |
+          python3 scripts/jd_refetch.py \
+            --family dmm \
+            --transport direct \
+            --budget-seconds 480 \
+            --max-rows "${{ github.event.inputs.max_rows || '150' }}"
+
+      - name: Retrigger while backlog remains (cap 6 runs/day)
+        # the pm step is the sole dispatcher: EITHER family pending →
+        # one dispatch (the next run re-covers both families)
+        if: env.JD_REFETCH_PM == 'pending' || env.JD_REFETCH_DMM == 'pending'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # per-runner /tmp does NOT persist across runners — count
-          # today's runs via the API (the date-keyed cap, stateless)
           TODAY=$(date -u +%Y-%m-%d)
           COUNT=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
-            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/jd-refetch.yml/runs?per_page=20" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/jd-refetch.yml/runs?per_page=30" \
             | grep -c "\"created_at\": \"$TODAY") || true
           COUNT=${COUNT:-0}
           if [ "$COUNT" -ge 6 ]; then
-            echo "::warning::daily leg cap hit ($COUNT legs today) — tomorrow's 14:15Z cron resumes"
+            echo "::warning::daily run cap hit ($COUNT runs today) — tomorrow's 14:15Z cron resumes"
             exit 0
           fi
-          echo "leg $((COUNT+1))/6 today — retriggering"
+          echo "run $((COUNT+1))/6 today — retriggering (pm=$JD_REFETCH_PM dmm=$JD_REFETCH_DMM)"
           curl -s -X POST \
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
@@ -89,7 +106,7 @@ jobs:
         run: |
           set -e
           mkdir -p /tmp/jd_state/ingest/data/roles
-          FILES="ingest/data/roles/jd_cache.jsonl ingest/data/roles/jd_refetch_state.json ingest/data/roles/jd_refetch_report.md"
+          FILES="ingest/data/roles/jd_cache.jsonl ingest/data/roles/jd_refetch_state.json ingest/data/roles/jd_refetch_report.md ingest/data/roles/jd_refetch_dmm_state.json ingest/data/roles/jd_refetch_dmm_report.md"
           for f in $FILES; do
             if [ -e "$f" ]; then cp "$f" "/tmp/jd_state/$f"; fi
           done
@@ -104,7 +121,7 @@ jobs:
                 cp "/tmp/jd_state/$f" "$f"
               fi
             done
-            for f in $FILES; do [ -e "$f" ] && git add "$f"; done
+            for f in $FILES; do [ -e "$f" ] && git add "$f"; fi
             if git diff --cached --quiet; then push_ok=1; break; fi
             git commit -m "jd-refetch checkpoint [skip ci]"
             if git push; then push_ok=1; break; fi

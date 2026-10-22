@@ -70,6 +70,36 @@ BUNDLE = REPO / "ingest/data/ui/roles-pm.json"
 CACHE = REPO / "ingest/data/roles/jd_cache.jsonl"
 STATE = REPO / "ingest/data/roles/jd_refetch_state.json"
 REPORT = REPO / "ingest/data/roles/jd_refetch_report.md"
+_FAMILY = "pm"
+
+
+def _set_family(family: str) -> None:
+    """S42-R1 A1/A2 (DESIGN-S42 v2 §1.2): the refetch is family-
+    parameterized. pm keeps its existing files verbatim (backward-
+    compat with the org's live state); dmm gets twins. The CACHE stays
+    SHARED — keyed (source,url), a dmm row and a pm row with the same
+    url are the same JD, no family contamination.
+    Usage: _set_family('dmm') must be called BEFORE any bundle/state
+    access (main does it first thing; library callers that never call
+    main keep the pm defaults)."""
+    global BUNDLE, STATE, REPORT, _FAMILY
+    _FAMILY = family
+    if family == "dmm":
+        BUNDLE = REPO / "ingest/data/ui/roles-dmm.json"
+        STATE = (REPO / "ingest/data/roles/"
+                 "jd_refetch_dmm_state.json")
+        REPORT = (REPO / "ingest/data/roles/"
+                  "jd_refetch_dmm_report.md")
+    elif family == "pm":
+        # rebind EXPLICITLY (idempotent + reversible): the dmm call
+        # above mutated the globals — 'pm' must restore them, not
+        # merely no-op (a library caller flipping families in one
+        # process would silently keep the dmm paths).
+        BUNDLE = REPO / "ingest/data/ui/roles-pm.json"
+        STATE = REPO / "ingest/data/roles/jd_refetch_state.json"
+        REPORT = REPO / "ingest/data/roles/jd_refetch_report.md"
+    else:
+        raise SystemExit(f"unknown family: {family!r} (pm, dmm)")
 
 from jobsearch.rolefamilies import is_board_employer  # noqa: E402
 
@@ -249,11 +279,16 @@ def _load_cache_map() -> dict[str, dict]:
 
 
 def _write_cache(m: dict[str, dict]) -> None:
+    """S42-R1 A3 (F15): ATOMIC full rewrite — a torn read during the
+    mirror's union-merge silently dropped the newest entry. temp +
+    os.replace is the same length-repair contract role_sweep uses."""
     CACHE.parent.mkdir(parents=True, exist_ok=True)
-    with open(CACHE, "w") as f:
+    tmp = CACHE.with_suffix(".jsonl.tmp")
+    with open(tmp, "w") as f:
         for d in sorted(m.values(), key=lambda x: (x.get("source", ""),
                                                    x.get("url", ""))):
             f.write(json.dumps(d, ensure_ascii=False) + "\n")
+    os.replace(tmp, CACHE)
 
 
 def _snapshot_pending(jobs: list[dict]) -> set[str]:
@@ -267,10 +302,15 @@ def main() -> int:
                     default="direct",
                     help="direct = the GHA lane (Azure); hk_only = the "
                          "careerjet class, run from the HK sandbox")
+    ap.add_argument("--family", choices=["pm", "dmm"], default="pm",
+                    help="which family bundle to refill (the cache is "
+                         "shared, keyed (source,url))")
     ap.add_argument("--budget-seconds", type=int, default=480)
     ap.add_argument("--max-rows", type=int, default=150)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
+    _set_family(args.family)
+    fam = args.family.upper()
 
     jobs = _load_bundle()
     targets = _select_targets(jobs, args.transport)
@@ -335,7 +375,10 @@ def main() -> int:
         # single-threaded serial fetch = the strictest cap there is)
 
     remaining = max(0, len(todo) - fetched)
-    done = fetched and remaining == 0
+    # S42 fix (found wiring the two-family lane): an EMPTY todo must
+    # report complete — `fetched and remaining == 0` made a drained
+    # backlog report pending, re-dispatching to the daily cap forever.
+    done = remaining == 0
     if not args.dry_run:
         _write_cache(cache)
         # attrition ledger (S41-R1 F1): pending ids that vanished from
@@ -351,10 +394,14 @@ def main() -> int:
     result = "complete" if done else "pending"
     genv = os.environ.get("GITHUB_ENV")
     if genv:
+        # S42-R1 A1 (F1): PER-FAMILY env keys — a shared JD_REFETCH key
+        # would make the retrigger predicate reflect only the LAST
+        # step (dmm), stalling the pm backlog at 1 leg/day.
         with open(genv, "a") as f:
-            f.write(f"JD_REFETCH={result}\n"
-                    f"JD_REFETCH_REMAINING={remaining}\n")
-    print(f"[jd_refetch] fetched={fetched} remaining={remaining} → {result}")
+            f.write(f"JD_REFETCH_{fam}={result}\n"
+                    f"JD_REFETCH_{fam}_REMAINING={remaining}\n")
+    print(f"[jd_refetch family={args.family}] "
+          f"fetched={fetched} remaining={remaining} → {result}")
     for k in sorted(stats):
         print(f"  {stats[k]:4}  {k}")
     return 0
@@ -370,7 +417,7 @@ def _write_state_and_report(cur_set: set[str], stats: dict[str, int],
         "pending_snapshot": sorted(cur_set),
     }, ensure_ascii=False, indent=1))
     lines = [
-        "# JD-refetch ledger",
+        f"# JD-refetch ledger (family: {_FAMILY})",
         "",
         f"- last leg: **{_now()}** (transport: {transport})",
         f"- fetched this leg: {fetched} | remaining: {remaining} | "

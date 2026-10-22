@@ -238,3 +238,69 @@ def industrial_level_tag(title: str, desc: str = "") -> str:
     if CORP_OFFICE_PAT.search(t):
         return "corp_office"
     return "unclassified"             # F11: counted default, never silent
+
+
+# ── the US-wide region gate (S42 industry v2, DESIGN-S42 v2 B3/B4) ─────────
+# The user directive: "local + remote (all US wide) home services &
+# construction" — the us geo mode keeps any US-anchored row and any
+# US-remote row. The tagger is deny-first (the F13 name-collision
+# standard applied at country scale): a two-letter suffix alone is
+# NOT US evidence — "Munich, DE" would read as Delaware, "Chennai, IN"
+# as Indiana. The deny list fires first, then the USPS state set.
+US_STATES = (
+    "al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl", "ga",
+    "hi", "id", "il", "in", "ia", "ks", "ky", "la", "me", "md",
+    "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nh", "nj",
+    "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sc",
+    "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy",
+    "dc", "pr",            # DC + PR (US territory; usajobs covers it)
+)
+NON_US_DENY = re.compile(
+    r",\s*(?:on|bc|ab|qb|qc|sk|mb|ns|nb|nl|pe|nt|yt)\b"   # CA provinces
+    r"|\b(?:united\s+kingdom|england|\bscotland\b|\bwales\b)"
+    r"|\bcanad(?:a|ian)\b"
+    r"|\b(?:australia|new\s+zealand|germany|france|spain|italy|"
+    r"netherlands|sweden|norway|denmark|finland|poland|portugal|"
+    r"india|singapore|japan|china|brazil|mexico|argentina|"
+    r"philippines|vietnam|thailand|indonesia|ireland|austria|"
+    r"switzerland|belgium|czech|romania|israel|emirates|dubai)\b"
+    r"|\b(?:london|manchester|birmingham|leeds|glasgow|edinburgh|"
+    r"dublin|paris|berlin|munich|hamburg|amsterdam|rotterdam|"
+    r"madrid|barcelona|lisbon|milan|rome|vienna|zurich|geneva|"
+    r"stockholm|oslo|copenhagen|helsinki|warsaw|prague|budapest|"
+    r"toronto|vancouver|montreal|ottawa|calgary|sydney|melbourne|"
+    r"auckland|wellington|mumbai|bangalore|chennai|delhi|singapore|"
+    r"tokyo|osaka|shanghai|beijing|hong\s*kong|taipei|seoul)\b",
+    re.I,
+)
+_US_STATE_PAT = re.compile(r",\s*([a-z]{2})\s*$", re.I)
+US_MARKER_PAT = re.compile(
+    r"\bunited\s+states\b|\busa\b|\bu\.s\.?\b|(?<![a-z])us(?![a-z])",
+    re.I)
+
+
+def us_region_tag(loc: str, title: str = "",
+                 origin: str = "") -> str:
+    """region ∈ {us, remote, other} — the all-US gate (DESIGN-S42 v2
+    B3/B4).
+
+    origin: the fetcher class — "geo" fetchers (adzuna/jooble/careerjet/
+    indeed) are US-locale APIs, so their remote rows are US-remote by
+    construction; "wide" fetchers (global firehoses) must carry a US
+    marker for a remote tag (F8: "Remote, Berlin" is not US-remote).
+    """
+    blob = f"{loc} {title}"
+    if NON_US_DENY.search(blob):
+        return "other"
+    if not VDC_DENY.search(blob) and REMOTE_PAT.search(blob):
+        if origin == "wide":
+            return "remote" if US_MARKER_PAT.search(blob) else "other"
+        return "remote"               # geo-fetcher: US by construction
+    loc_s = (loc or "").strip()
+    if loc_s:
+        m = _US_STATE_PAT.search(loc_s)
+        if m and m.group(1).lower() in US_STATES:
+            return "us"
+        if US_MARKER_PAT.search(loc_s):
+            return "us"
+    return "other"

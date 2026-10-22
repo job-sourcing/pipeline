@@ -1,0 +1,349 @@
+# Home services / construction × US-wide (local + remote) — industry sweep report
+
+- ran: 2026-10-22T00:14:46Z | raw rows: 7805 | kept: 5880 | **head-lined raw: 2400 | unique roles (company×title rollup): 662 | staffing-brand: 542**
+- region: US-wide (gate: us | adzuna geo: US-wide)
+
+## Sources (the exhaustion measurement)
+
+- muse: skipped:pm-hardcoded
+- talent: skipped:pm-hardcoded
+- himalayas: skipped:pm-hardcoded
+- wwr: skipped:pm-hardcoded
+- adzuna: skipped
+- jooble: skipped
+- indeed: skipped
+- careerjet: ok (raw 2781, kept 5814)
+- ziprecruiter: skipped
+- glassdoor: skipped
+- li_keyword: skipped
+- dice: no-joblist:construction (raw 243, kept 62)
+- usajobs: error:relay-error:HTTPError (raw 0, kept None)
+- findwork: ok (raw 68, kept 1)
+- trio: ok (raw 599, kept None)
+- yc: ok (raw 193, kept 2)
+- wellfound: ok (raw 48, kept None)
+- hn: ok (raw 165, kept 1)
+- gj: preflight-fail:credits=-1 (raw 0, kept None)
+- builtin: error:construction:HTTPError (raw 0, kept None)
+- seed_envelope: ok:3708
+
+## Gate counters
+
+- drop:dup_url: 195
+- drop:industry_no_affirm: 601
+- drop:level_licensed_professional: 21
+- drop:level_pure_labor: 34
+- drop:level_retail_service: 152
+- drop:region_other: 922
+- kept:corp_office: 3566
+- kept:field_mgmt: 53
+- kept:region_remote: 23
+- kept:region_us: 5857
+- kept:unclassified: 2261
+
+## WHERE histogram (head-lined, per state)
+
+- {"CA": 234, "TX": 227, "FL": 176, "NY": 154, "OH": 123, "PA": 118, "GA": 118, "us": 109, "NJ": 77, "VA": 76, "IL": 76, "MD": 69, "MN": 65, "IN": 61, "TN": 54, "WI": 51, "NC": 49, "CO": 48, "KY": 47, "MA": 44, "MI": 42, "AZ": 41, "SC": 29, "OK": 28, "LA": 26, "MO": 25, "NE": 24, "IA": 23, "NV": 21, "WA": 20, "HI": 19, "SD": 15, "ME": 15, "KS": 15, "OR": 13, "DE": 12, "UT": 9, "CT": 9, "AL": 7, "NM": 6, "WV": 6, "NH": 6, "AR": 3, "RI": 3, "WY": 3, "ID": 3, "VT": 1}
+
+## Head-lined roles (662 unique of 2400 raw — ×N locations)
+
+- **Roofing Sales Representative – High Earning Potential** — The Staff Pad | Denver, CO ×72 locations | us | careerjet | posted 2026-10-16
+- **Construction Assistant Project Manager** — Michael Page [staffing] | Atlanta, GA ×39 locations | us | careerjet | posted 2026-10-16
+- **Home Services Sales Representative** — Everlight Solar | Minneapolis, MN ×36 locations | us | careerjet | posted 2026-09-16
+- **Construction Sales Consultant** — Morton Buildings | Mayflower, AR ×28 locations | us | careerjet | posted 2026-10-16
+- **Outside Sales Representative/Comfort Consultant** — F.H. Furr Plumbing | Rockville, MD ×24 locations | us | careerjet | posted 2026-10-08
+- **HVAC Sales Rep/Comfort Consultant** — Harris Heating, Plumbing, Air & Electric | West Chester, PA ×24 locations | us | careerjet | posted 2026-09-30
+- **Senior Construction Scheduler** — AECOM | Portland, OR ×21 locations | us | careerjet | posted 2026-10-03
+- **Construction Estimator** — Michael Page [staffing] | Atlanta, GA ×21 locations | us | careerjet | posted 2026-10-15
+- **Sales Representative - B2B Construction** — Tudelu | Houston, TX ×21 locations | us | careerjet | posted 2026-10-14
+- **Construction Scheduler** — Brasfield & Gorrie | Atlanta, GA ×18 locations | us | careerjet | posted 2026-09-22
+- **Sales Account Manager- Construction** — Control Systems, Inc | Mobile, AL ×15 locations | us | careerjet | posted 2026-09-27
+- **Senior Scheduler- Commercial Construction** — GPAC [staffing] | Dallas, TX ×15 locations | us | careerjet | posted 2026-10-16
+- **Construction Estimator** — Kalkreuth Roofing & Sheet Metal | Lexington, KY ×15 locations | us | careerjet | posted 2026-09-10
+- **Project Controls Manager-Electrical Construction** — Kimmel & Associates | Detroit, MI ×15 locations | us | careerjet | posted 2026-09-24
+- **Project Coordinator - Construction | Becker, MN** — Michael Page [staffing] | USA ×15 locations | us | careerjet | posted 2026-09-29
+- **Commercial Construction Estimator** — Michael Page [staffing] | Houston, TX ×15 locations | us | careerjet | posted 2026-10-15
+- **Commercial Construction Estimator** — GPAC [staffing] | Pittsburgh, PA ×12 locations | us | careerjet | posted 2026-10-16
+- **Inside Sales Window Specialist** — Lansing Building Products | King of Prussia, PA ×12 locations | us | careerjet | posted 2026-10-19
+- **Construction Estimator/Project Manager** — McAninch Corporation | Des Moines, IA ×12 locations | us | careerjet | posted 2026-10-07
+- **HVAC Mechanical Account Manager - Commercial Service/Projects** — Michael Page [staffing] | Braintree, MA ×12 locations | us | careerjet | posted 2026-09-23
+- **Senior Estimator - Life Sciences Construction** — Turner & Townsend | Westerly, RI ×12 locations | us | careerjet | posted 2026-10-15
+- **Tax Manager - Construction** — Wipfli Advisory | Lincolnshire, IL ×12 locations | us | careerjet | posted 2026-09-11
+- **Project Scheduler** — Garney Construction | Cape Coral, FL ×10 locations | us | careerjet | posted 2026-10-13
+- **In-Home HVAC Sales Consultant** — American Residential Services | Mechanicsville, VA ×9 locations | us | careerjet | posted 2026-09-18
+- **Plumbing Project Manager** — Atlantic Constructors | Henderson, NC ×9 locations | us | careerjet | posted 2026-09-25
+- **Senior Construction Scheduler** — GPAC [staffing] | Rapid City, SD ×9 locations | us | careerjet | posted 2026-10-09
+- **Outside Sales Representative** — Green Home Improvements | Boynton Beach, FL ×9 locations | us | careerjet | posted 2026-10-17
+- **Commercial Construction Estimator** — K2 Staffing [staffing] | Miami, FL ×9 locations | us | careerjet | posted 2026-09-25
+- **Project Coordinator - Construction | Big Lake, MN** — Michael Page [staffing] | Big Lake, MN ×9 locations | us | careerjet | posted 2026-09-10
+- **Construction Estimator - Chicago, IL** — Michael Page [staffing] | Chicago, IL ×9 locations | us | careerjet | posted 2026-10-15
+- **Commercial Construction Assistant Project Manager** — Michael Page [staffing] | Atlanta, GA ×9 locations | us | careerjet | posted 2026-10-20
+- **Construction Estimator** — RimePro | San Jose, CA ×9 locations | us | careerjet | posted 2026-10-14
+- **Senior Scheduler** — Flatiron Construction | Honolulu, HI ×7 locations | us | careerjet | posted 2026-09-26
+- **Construction Estimator (Commercial TI) - Manhattan, NY** — Michael Page [staffing] | Manhattan, NY ×7 locations | us | careerjet | posted 2026-09-28
+- **Construction Project Coordinator** — Actalent [staffing] | Livonia, MI ×6 locations | us | careerjet | posted 2026-10-20
+- **Construction Project Coordinator - Construction - Base Salary to 90k/year - King of Prussia, PA** — AllSearch Recruiting [staffing] | King of Prussia, PA ×6 locations | us | careerjet | posted 2026-10-02
+- **Construction Estimator - Banking Industry Construction - Base Salary to 100k/year - Arlington Heights, IL** — AllSearch Recruiting [staffing] | Arlington Heights, IL ×6 locations | us | careerjet | posted 2026-08-25
+- **Construction Estimator - Banking Industry Construction - Base Salary to 100k/year - Warren, MI** — AllSearch Recruiting [staffing] | Warren, MI ×6 locations | us | careerjet | posted 2026-08-25
+- **Construction Estimator - Banking Industry Construction - Base Salary to 100k/year - Milford, OH** — AllSearch Recruiting [staffing] | Milford, OH ×6 locations | us | careerjet | posted 2026-08-25
+- **HVAC Sales Manager** — American Residential Services | Irving, TX ×6 locations | us | careerjet | posted 2026-10-01
+- **In-home hvac sales representative** — American Residential Services | Memphis, TN ×6 locations | us | careerjet | posted 2026-09-26
+- **In-Home HVAC Sales Rep** — American Residential Services | Brighton, MI ×6 locations | us | careerjet | posted 2026-09-02
+- **Construction Estimator - 90386207 - Philadelphia** — Amtrak | Philadelphia, PA ×6 locations | us | careerjet | posted 2026-10-20
+- **Home Service & Sales Manager, HVAC** — Apex Service Partners | Elkhart, IN ×6 locations | us | careerjet | posted 2026-09-11
+- **Construction Project Coordinator** — Appalachian Regional Healthcare | Lexington, KY ×6 locations | us | careerjet | posted 2026-10-03
+- **Construction Administrative Assistant** — Bechtel | New Albany, OH ×6 locations | us | careerjet | posted 2026-10-15
+- **Construction Estimator for Barrier-Free Home Modification Co** — CAPS Consulting [staffing] | Madison Heights, MI ×6 locations | us | careerjet | posted 2026-09-28
+- **Project Operations Coordinator** — Chimney Cricket & Hometown Hearth | Media, PA ×6 locations | us | careerjet | posted 2026-10-11
+- **Junior Construction Estimator** — Construction Company | Philadelphia, PA ×6 locations | us | careerjet | posted 2026-09-04
+- **Construction Scheduler** — Cumming Group | Los Angeles, CA ×6 locations | us | careerjet | posted 2026-10-17
+- **Full Charge Bookkeeper** — DICOR CONSTRUCTION INC | Bay Shore, NY ×6 locations | us | careerjet | posted 2026-10-16
+- **HVAC Sales Associate** — Daikin | Long Island City, Queens, NY ×6 locations | us | careerjet | posted 2026-09-22
+- **Contractor – Construction Scheduler** — Darwin Recruitment [staffing] | Dallas, TX ×6 locations | us | careerjet | posted 2026-10-19
+- **Construction Project Coordinator** — Dashiell | Port Arthur, TX ×6 locations | us | careerjet | posted 2026-10-01
+- **Account Manager** — Deer Park Roofing | Louisville, KY ×6 locations | us | careerjet | posted 2026-10-12
+- **In-Home Solar Sales Consultant (Closer)** — Emerald Energy Solutions | Philadelphia, PA ×6 locations | us | careerjet | posted 2026-10-19
+- **Construction Bookkeeper** — Fit and Finish AZ | Goodyear, AZ ×6 locations | us | careerjet | posted 2026-09-10
+- **Construction Administrative Assistant** — Flad Architects | Madison, WI ×6 locations | us | careerjet | posted 2026-09-30
+- **Landscape Construction Estimator** — Granite Hills Group | Spartanburg, SC ×6 locations | us | careerjet | posted 2026-09-25
+- **Construction Scheduler - QDC** — HBK Engineering | Houston, TX ×6 locations | us | careerjet | posted 2026-09-12
+- **Construction Sales Account Manager** — HCI Systems | Sacramento, CA ×6 locations | us | careerjet | posted 2026-09-27
+- **Remodeling Sales/Estimator – Sell What You Know, Earn What You Deserve** — Handyman on Call | Baltimore, MD ×6 locations | us | careerjet | posted 2026-09-17
+- **Commercial Roofing Sales Rep** — Hi-Peak Staffing [staffing] | Memphis, TN ×6 locations | us | careerjet | posted 2026-09-21
+- **Construction Accounting Manager** — Howland Company, Inc. | Boston, MA ×6 locations | us | careerjet | posted 2026-09-29
+- **Construction Scheduler** — IES Communications | Monroe, LA ×6 locations | us | careerjet | posted 2026-10-15
+- **Construction Administrative Assistant II** — Integrated Project Services | Blue Bell, PA ×6 locations | us | careerjet | posted 2026-09-20
+- **HVAC Sales Representative SCHEDULE: TUESDAY THROUGH SATURDAY** — Integrity Heating & Air, Inc. | Elkton, MD ×6 locations | us | careerjet | posted 2026-10-16
+- **Building & Construction Project Coordinator** — Intertek | York, PA ×6 locations | us | careerjet | posted 2026-09-25
+- **Construction Project Coordinator** — Jones Lang LaSalle | Tampa, FL ×6 locations | us | careerjet | posted 2026-10-16
+- **Field Administrative Assistant** — Kokosing Construction Company | Carnegie, PA ×6 locations | us | careerjet | posted 2026-10-14
+- **Home Service & Sales Manager, HVAC** — Legacy Heating and Air Inc. | Elkhart, IN ×6 locations | us | careerjet | posted 2026-09-11
+- **Sales Representative - In-Home HVAC Sales - 100% commission after paid training** — Maitz Home Services 175 | Allentown, PA ×6 locations | us | careerjet | posted 2026-10-15
+- **HVAC Sales Manager - Commercial/Mechanical Projects - DMV** — Michael Page [staffing] | USA ×6 locations | us | careerjet | posted 2026-10-08
+- **Project Coordinator | Construction | Becker** — Michael Page [staffing] | USA ×6 locations | us | careerjet | posted 2026-09-09
+- **Ground Up Commercial Construction Estimator** — Michael Page [staffing] | Austin, TX ×6 locations | us | careerjet | posted 2026-10-07
+- **Construction Estimator- Design Build** — Michael Page [staffing] | Indianapolis, IN ×6 locations | us | careerjet | posted 2026-09-27
+- **Construction Bookkeeper** — Natale Building Corp | Clarence, NY ×6 locations | us | careerjet | posted 2026-10-10
+- **Senior Construction Estimator** — PAR Western Line Contractors | Vacaville, CA ×6 locations | us | careerjet | posted 2026-09-19
+- **Electrical Construction Estimator** — PAR Western Line Contractors | Vacaville, CA ×6 locations | us | careerjet | posted 2026-09-19
+- **Accounting Student** — PCL Construction | Phoenix, AZ ×6 locations | us | careerjet | posted 2026-09-12
+- **Accounting Student 1** — PCL Construction | Long Beach, CA ×6 locations | us | careerjet | posted 2026-09-12
+- **Construction Estimator** — Panhandle Cleaning & Restoration | Charleston, WV ×6 locations | us | careerjet | posted 2026-10-11
+- **HVAC Sales Consultant** — Plumbline Services | Denver, CO ×6 locations | us | careerjet | posted 2026-10-02
+- **Remodel Sales Rep** — RAPID BATH REMODEL | Vista, CA ×6 locations | us | careerjet | posted 2026-10-18
+- **Roofing Sales Representative – $1,000 - $3,000/Week** — Residential Home Services | Kearney, NE ×6 locations | us | careerjet | posted 2026-10-14
+- **Power / HVAC Sales Representative** — Resilient Energy Solutions | San Antonio, TX ×6 locations | us | careerjet | posted 2026-10-16
+- **Construction Estimator** — Schneider Electric | Carrollton, TX ×6 locations | us | careerjet | posted 2026-10-17
+- **Operations Coordinator** — Schneider Electric | Columbus, OH ×6 locations | us | careerjet | posted 2026-10-16
+- **Small Construction Project Coordinator** — Sierra Lobo | Hampton, VA ×6 locations | us | careerjet | posted 2026-08-30
+- **HVAC Sales Representative** — Solution Staffing, Inc [staffing] | Fairfield, NJ ×6 locations | us | careerjet | posted 2026-09-13
+- **Construction Estimator (Experience Required)** — The HR Dept | Madison, WI ×6 locations | us | careerjet | posted 2026-10-07
+- **Senior Construction Estimator** — The Perillo Group | Baltimore, MD ×6 locations | us | careerjet | posted 2026-10-17
+- **Roofing Sales Representative – High Earning Potential | Roofing Experience Prioritized** — The Staff Pad | Orlando, FL ×6 locations | us | careerjet | posted 2026-09-21
+- **Construction Assistant Project Manager-Cincinnati, OH** — Tippmann Group | Cincinnati, OH ×6 locations | us | careerjet | posted 2026-09-10
+- **Construction Assistant Project Manager-Dallas, TX** — Tippmann Group | Dallas, TX ×6 locations | us | careerjet | posted 2026-09-10
+- **Construction Assistant Project Manager - Fort Wayne, IN** — Tippmann Group | Fort Wayne, IN ×6 locations | us | careerjet | posted 2026-09-09
+- **Construction Assistant Project Manager-Memphis, TN** — Tippmann Group | Memphis, TN ×6 locations | us | careerjet | posted 2026-09-09
+- **Construction Assistant Project Manager-Indianapolis, IN** — Tippmann Group | Indianapolis, IN ×6 locations | us | careerjet | posted 2026-09-09
+- **Construction Assistant Project Manager-Charlotte, NC** — Tippmann Group | Charlotte, NC ×6 locations | us | careerjet | posted 2026-09-08
+- **Mechanical Construction Estimator - Data Center Construction** — Turner & Townsend | USA ×6 locations | us | careerjet | posted 2026-09-11
+- **Luxury Construction Estimator & Sales Specialist** — Villa's Construction & Remodeling Inc. | Boynton Beach, FL ×6 locations | us | careerjet | posted 2026-10-02
+- **Industrial Construction Estimator** — XE Corporation | Wichita Falls, TX ×6 locations | us | careerjet | posted 2026-09-01
+- **Project Controls Manager** — Flatiron Construction | Augusta, GA ×5 locations | us | careerjet | posted 2026-09-23
+- **Project Controls Manager - Underground Construction** — Traylor Bros | Secaucus, NJ ×5 locations | us | careerjet | posted 2026-10-13
+- **Construction Scheduler** — Zero Impact Solutions | Irvine, CA ×5 locations | us | careerjet | posted 2026-08-12
+- **Residential HVAC Sales Specialist** — American Residential Services | Fredericksburg, VA ×4 locations | us | careerjet | posted 2026-09-18
+- **Construction Estimator** — Belfor | North White Plains, NY ×4 locations | us | careerjet | posted 2026-09-11
+- **Construction Project Coordinator | Monticello, MN** — Michael Page [staffing] | Monticello, MN ×4 locations | us | careerjet | posted 2026-09-02
+- **Construction Project Coordinator | Becker, MN** — Michael Page [staffing] | USA ×4 locations | us | careerjet | posted 2026-08-25
+- **Construction Estimator - Dallas, TX** — Michael Page [staffing] | Dallas, TX ×4 locations | us | careerjet | posted 2026-09-10
+- **Account Executive - Construction** — Rand Worldwide | Portland, OR ×4 locations | us | careerjet | posted 2026-09-29
+- **Construction Project Manager** — Servpro | Corpus Christi, TX ×4 locations | us | careerjet | posted 2026-10-15
+- **Construction Estimator** — Servpro | Harrisonburg, VA ×4 locations | us | careerjet | posted 2026-08-30
+- **Construction Estimator** — The Perillo Group | Austin, TX ×4 locations | us | careerjet | posted 2026-10-16
+- **HVAC Sales Representative** —  | Southampton, PA ×3 locations | us | careerjet | posted 2026-09-25
+- **Construction Estimator** —  | Villa Rica, GA ×3 locations | us | careerjet | posted 2026-10-09
+- **Mitigation and Reconstruction Estimator** —  | Kingston, PA ×3 locations | us | careerjet | posted 2026-09-12
+- **HVAC - Sales Representative (Comfort Advisor)** — 1-800-Plumber + Air of Bergen County | Fair Lawn, NJ ×3 locations | us | careerjet | posted 2026-10-04
+- **HVAC Outside Sales Representative/Comfort Advisor** — AA Service Co. | King of Prussia, PA ×3 locations | us | careerjet | posted 2026-10-16
+- **Landscape Construction Project Coordinator** — AAA Landscape | Phoenix, AZ ×3 locations | us | careerjet | posted 2026-09-08
+- **Landscape Construction Estimator** — AAA Landscape | Phoenix, AZ ×3 locations | us | careerjet | posted 2026-09-10
+- **Construction Estimator** — ACI Const. Co., Inc. | Findlay, OH ×3 locations | us | careerjet | posted 2026-08-25
+- **Construction Project Coordinator** — AECOM | Pittsburgh, PA ×3 locations | us | careerjet | posted 2026-10-07
+- **Construction Estimator** — AGI General Contracting | Santa Ana, CA ×3 locations | us | careerjet | posted 2026-10-07
+- **Senior Heavy Civil Construction Estimator with AIS Infrastructure** — ASRC Industrial | Chattanooga, TN ×3 locations | us | careerjet | posted 2026-09-12
+- **Senior Highway Construction Estimator with AIS Infrastructure** — ASRC Industrial | Chattanooga, TN ×3 locations | us | careerjet | posted 2026-09-10
+- **Project Scheduler** — Adolfson & Peterson Construction | Tempe, AZ ×3 locations | us | careerjet | posted 2026-09-26
+- **Lead Estimator – Commercial Construction** — Advatix | Pittsburgh, PA ×3 locations | us | careerjet | posted 2026-08-27
+- **Construction Project Coordinator/Project Engineer** — Air Systems, Inc. | San Jose, CA ×3 locations | us | careerjet | posted 2026-10-14
+- **HVAC Sales Specialist** — Aire Serv | Sioux Falls, SD ×3 locations | us | careerjet | posted 2026-08-26
+- **Mid Construction Scheduler** — Akima | Honolulu, HI ×3 locations | us | careerjet | posted 2026-10-06
+- **Assistant Construction Estimator** — Al Pancheri Contracting Llc | Parkesburg, PA ×3 locations | us | careerjet | posted 2026-10-04
+- **Construction Estimator/Project Manager** — American Building Group LLC | Portland, ME ×3 locations | us | careerjet | posted 2026-09-28
+- **HVAC Sales Manager - Lexington, KY** — American Residential Services | Lexington, KY ×3 locations | us | careerjet | posted 2026-10-16
+- **HVAC Sales Manager - Pittsburgh** — American Residential Services | Pittsburgh, PA ×3 locations | us | careerjet | posted 2026-10-14
+- **Outside Sales Rep / HVAC Sales** — American Residential Services | Lakeland, FL ×3 locations | us | careerjet | posted 2026-10-13
+- **Assistant HVAC Sales Manager – Residential Sales** — American Residential Services | Orlando, FL ×3 locations | us | careerjet | posted 2026-09-25
+- **HVAC Sales Representative** — American Residential Services | Manassas, VA ×3 locations | us | careerjet | posted 2026-09-22
+- **HVAC Sales Consultant** — American Residential Services | San Antonio, TX ×3 locations | us | careerjet | posted 2026-09-17
+- **In Home Sales Rep / HVAC Sales** — American Residential Services | Durham, NC ×3 locations | us | careerjet | posted 2026-09-15
+- **In Home HVAC Sales Rep Bilingual/Spanish** — American Residential Services | Henderson, NV ×3 locations | us | careerjet | posted 2026-10-18
+- **Residential HVAC Sales Consultant** — American Residential Services | Plainfield, IN ×3 locations | us | careerjet | posted 2026-09-05
+- **HVAC Sales Rep Bilingual/Spanish** — American Residential Services | Las Vegas, NV ×3 locations | us | careerjet | posted 2026-08-26
+- **In Home HVAC Sales Representative** — American Residential Services | Vacaville, CA ×3 locations | us | careerjet | posted 2026-08-25
+- **Residential Sales Consultant Home Improvement** — American Residential Services | Naperville, IL ×3 locations | us | careerjet | posted 2026-09-20
+- **Commercial Construction Estimator** — Apex Multifamily Builders LLC | Austin, TX ×3 locations | us | careerjet | posted 2026-10-05
+- **Home Services Manager, Electrical & Generator** — Apex Service Partners | Oak Brook, IL ×3 locations | us | careerjet | posted 2026-10-02
+- **Senior Estimator (Heavy Construction) - Gateway** — Arcadis | New York City, NY ×3 locations | us | careerjet | posted 2026-09-03
+- **CONSTRUCTION ASSISTANT** — Archadeck | Burlington, MA ×3 locations | us | careerjet | posted 2026-10-09
+- **On-site Construction Administrative Assistant** — Archinect | Los Angeles, CA ×3 locations | us | careerjet | posted 2026-10-14
+- **Construction Remodeling Assistant** — Armada Staffing Group [staffing] | Columbus, OH ×3 locations | us | careerjet | posted 2026-09-21
+- **Construction Estimator - National GC|CM - Mountainside, NJ - $110k - $140k** — ArtemusPoint | Mountainside, NJ ×3 locations | us | careerjet | posted 2026-10-16
+- **Sales Director - Construction Services** — Atkore | Addison, IL ×3 locations | us | careerjet | posted 2026-10-15
+- **Estimator - Data Center Construction (Authorized to work in the US unconditionally required)** — Atkore | Addison, IL ×3 locations | us | careerjet | posted 2026-08-27
+- **Regional Business Manager (Construction Sales)** — Autocar | USA ×3 locations | us | careerjet | posted 2026-10-05
+- **Construction Estimator** — Availability Professional Staffing [staffing] | Patterson, CA ×3 locations | us | careerjet | posted 2026-10-02
+- **HVAC Sales Manager** — Axsom Air of LA | Shreveport, LA ×3 locations | us | careerjet | posted 2026-10-18
+- **Construction Project Coordinator (Project Engineer)** — BHI | North Salt Lake, UT ×3 locations | us | careerjet | posted 2026-10-08
+- **Aggregates and Paving Estimator** — BHI | North Salt Lake, UT ×3 locations | us | careerjet | posted 2026-10-13
+- **Construction Assistant Project Manager** — BLVD ELECTRIC INC | Woodland Hills, CA ×3 locations | us | careerjet | posted 2026-09-05
+- **Construction Accountant Assistant** — BLVD ELECTRIC INC | Woodland Hills, CA ×3 locations | us | careerjet | posted 2026-09-15
+- **Region Finance Director - SS** — Baker Concrete Construction | Fort Lauderdale, FL ×3 locations | us | careerjet | posted 2026-09-23
+- **Region Finance Director - SS** — Baker Construction Enterprises Inc | Fort Lauderdale, FL ×3 locations | us | careerjet | posted 2026-09-22
+- **Dispatcher – Home Services (7AM Start)** — Bellows Plumbing, Heating, Cooling & Electrical | Novato, CA ×3 locations | us | careerjet | posted 2026-08-26
+- **Construction Project Coordinator** — Bisnow | Houston, TX ×3 locations | us | careerjet | posted 2026-10-18
+- **Construction Estimator- MEP** — Blue Ridge Executive Search [staffing] | New York City, NY ×3 locations | us | careerjet | posted 2026-10-18
+- **Design & Construction Project Coordinator** — Boyd Gaming | Las Vegas, NV ×3 locations | us | careerjet | posted 2026-09-29
+- **Design & Construction Assistant Project Manager** — Boyd Gaming | Las Vegas, NV ×3 locations | us | careerjet | posted 2026-10-16
+- **Chief Estimator and Project Management, Landscape and Hardscape Construction** — BraveView | Putnam Valley, NY ×3 locations | us | careerjet | posted 2026-09-14
+- **Sales Associate - Basement Finishing** — Brothers That Just Do Gutters | Fridley, MN ×3 locations | us | careerjet | posted 2026-08-25
+- **Sales Representative - Home Services** — Brothers That Just Do Gutters | Plano, TX ×3 locations | us | careerjet | posted 2026-10-16
+- **Experienced Gutters Sales Representative** — Brothers That Just Do Gutters - Central DFW, TX | Dallas, TX ×3 locations | us | careerjet | posted 2026-09-30
+- **Sales Representative** — Brothers That Just Do Gutters - St Petersburg | Saint Petersburg, FL ×3 locations | us | careerjet | posted 2026-10-07
+- **Construction Accountant - US GAAP & QuickBooks** — BruntWork | New York City, NY ×3 locations | us | careerjet | posted 2026-10-13
+- **Senior Project Accountant | Construction** — Butterfly Staffing [staffing] | Chicago, IL ×3 locations | us | careerjet | posted 2026-10-08
+- **Sales Representative** — C&D General Contractors | Saint Louis, MO ×3 locations | us | careerjet | posted 2026-10-11
+- **Construction Scheduler - Columbus, OH** — CMTS | Columbus, OH ×3 locations | us | careerjet | posted 2026-10-01
+- **New Construction Sales Representative** — CPI Security Systems | Columbia, SC ×3 locations | us | careerjet | posted 2026-10-03
+- **New Home Construction Security Sales Manager** — CPI Security Systems | Charleston, SC ×3 locations | us | careerjet | posted 2026-10-09
+- **Residential Security Field Sales Manager** — CPI Security Systems | Charleston, SC ×3 locations | us | careerjet | posted 2026-10-01
+- **Residential Sales Manager** — CPI Security Systems | Wilmington, NC ×3 locations | us | careerjet | posted 2026-10-01
+- **Estimator** — Calhoun Construction Services | Louisville, KY ×3 locations | us | careerjet | posted 2026-09-23
+- **Sr. Construction Estimator** — Cannonball Recruiting [staffing] | Allenwood, NJ ×3 locations | us | careerjet | posted 2026-10-08
+- **Construction Estimator** — Cannonball Recruiting [staffing] | Wall Township, NJ ×3 locations | us | careerjet | posted 2026-10-08
+- **Senior Residential Construction Estimator** — Cardone Ventures | Gretna, LA ×3 locations | us | careerjet | posted 2026-10-14
+- **Residential Home Improvement Outside Sales Representative** — Carp's Complete Exteriors | Omaha, NE ×3 locations | us | careerjet | posted 2026-09-16
+- **Commercial HVAC Solutions Sales Representative - Chicago IL** — Carrier | Chicago, IL - Willowbrook, IL ×3 locations | us | careerjet | posted 2026-10-19
+- **Commercial HVAC Service Account Manager - Chicago IL** — Carrier | Chicago, IL - Willowbrook, IL ×3 locations | us | careerjet | posted 2026-10-18
+- **Commercial HVAC Service Account Manager - Novi Southwest MI** — Carrier | Novi, MI - Farmington Hills, MI ×3 locations | us | careerjet | posted 2026-10-18
+- **Commercial HVAC Service Agreement Sales Representative - Ohio** — Carrier | Westerville, OH ×3 locations | us | careerjet | posted 2026-10-12
+- **Commercial HVAC Service Account Manager - Richmond/Roanoke** — Carrier | Richmond, VA ×3 locations | us | careerjet | posted 2026-10-05
+- **Commercial HVAC Service Account Manager – Charlotte** — Carrier | Charlotte, NC ×3 locations | us | careerjet | posted 2026-10-05
+- **Commercial HVAC Service Agreement Sales Representative – Madison, WI** — Carrier | Madison, WI ×3 locations | us | careerjet | posted 2026-10-04
+- **Commercial HVAC Service Account Manager - Columbus OH** — Carrier | Westerville, OH ×3 locations | us | careerjet | posted 2026-09-17
+- **Commercial HVAC Service Account Manager - Albuquerque, NM** — Carrier | Albuquerque, NM ×3 locations | us | careerjet | posted 2026-09-16
+- **Commercial HVAC Service Agreement Sales Representative - Kansas City** — Carrier | Lenexa, KS ×3 locations | us | careerjet | posted 2026-09-15
+- **Commercial HVAC Service Account Manager - Delaware** — Carrier | New Castle, DE ×3 locations | us | careerjet | posted 2026-09-15
+- **Commercial HVAC Service Agreement Sales Representative** — Carrier | Missouri City, TX ×3 locations | us | careerjet | posted 2026-09-15
+- **Commercial HVAC Solutions Sales Specialist- Louisville/Cincinnati** — Carrier | Louisville, OH - Cincinnati, OH ×3 locations | us | careerjet | posted 2026-09-15
+- **Commercial HVAC Service Account Manager - Jacksonville, FL** — Carrier | Jacksonville, FL ×3 locations | us | careerjet | posted 2026-09-15
+- **Commercial HVAC Solutions Sales Specialist** — Carrier | Missouri City, TX ×3 locations | us | careerjet | posted 2026-09-15
+- **Commercial HVAC Service Account Manager - New York** — Carrier | New York City, NY ×3 locations | us | careerjet | posted 2026-09-15
+- **HVAC Sales and Service Manager All American** — Century Mechanical Holdings | Wolcott, CT ×3 locations | us | careerjet | posted 2026-08-27
+- **Residential Painting Sales Associate** — CertaPro Painters of College Park, MD | College Park, MD ×3 locations | us | careerjet | posted 2026-09-29
+- **Construction Accounting & Bookkeeping Assistant - Temporary** — Certified Employment Group | Santa Rosa, CA ×3 locations | us | careerjet | posted 2026-10-10
+- **Accounting Construction Bookkeeping** — Certified Employment Group | Santa Rosa, CA ×3 locations | us | careerjet | posted 2026-10-14
+- **Construction Assistant Project Manager** — Cherry Bekaert | Owings Mills, MD ×3 locations | us | careerjet | posted 2026-10-03
+- **HVAC Sales Representative** — Christian Heating, Cooling & Plumbing | Southampton, PA ×3 locations | us | careerjet | posted 2026-09-30
+- **Construction Estimator (NASA Ames)** — Chugach Government Solutions | Moffett Field, CA ×3 locations | us | careerjet | posted 2026-09-16
+- **Construction Sales Executive** — City Wide Facility Solutions | Towson, MD ×3 locations | us | careerjet | posted 2026-09-10
+- **Commercial Accounts Sales Executive--Louisville, Kentucky** — Clark Pest Control | Louisville, KY ×3 locations | us | careerjet | posted 2026-10-16
+- **Commercial Accounts Sales Executive** — Clark Pest Control | Chicago, IL ×3 locations | us | careerjet | posted 2026-10-07
+- **Commercial Accounts Sales Executive--Hopkinsville, Kentucky** — Clark Pest Control | Hopkinsville, KY ×3 locations | us | careerjet | posted 2026-10-07
+- **In Home Sales Consultant (Bath and Shower Remodels)** — Clearwater Shower Bath | Port Saint Lucie, FL ×3 locations | us | careerjet | posted 2026-10-14
+- **Home Improvement Appointment Coordinator** — Clearwater Shower Bath | Clearwater, FL ×3 locations | us | careerjet | posted 2026-10-02
+- **Inside Sales Manager — Call Center (Home Remodeling)** — Clearwater Shower Bath | Clearwater, FL ×3 locations | us | careerjet | posted 2026-09-08
+- **Operations & Purchasing Coordinator (Bath/ Shower Remodeling)** — Clearwater Shower Bath | Clearwater, FL ×3 locations | us | careerjet | posted 2026-09-08
+- **HVAC Service Sales Representative** — Client Staffing Solutions [staffing] | Fairfield, NJ ×3 locations | us | careerjet | posted 2026-09-14
+- **Entry Level Sales Representative** — Cloverfield Roofing & Construction | Kansas City, MO ×3 locations | us | careerjet | posted 2026-10-12
+- **Construction office manager** — Coastal builders | Orange, CA ×3 locations | us | careerjet | posted 2026-09-16
+- **Construction Estimator, Retail, Restaurant & Commercial Buildouts** — Cobalt Recruitment [staffing] | Garden City, NY ×3 locations | us | careerjet | posted 2026-10-14
+- **Senior Construction Cost Manager** — Cobalt Recruitment [staffing] | New York City, NY ×3 locations | us | careerjet | posted 2026-10-08
+- **Staff Accountant - Construction** — Collins and Wright, Inc. | Columbia, SC ×3 locations | us | careerjet | posted 2026-10-07
+- **Construction Estimator** — Concraft | Auburn Hills, MI ×3 locations | us | careerjet | posted 2026-10-19
+- **Social Media Manager** — Cooper's Plumbing & Air | Bainbridge, GA ×3 locations | us | careerjet | posted 2026-10-16
+- **Senior Accounting Manager** — Crown Painting Inc. | Modesto, CA ×3 locations | us | careerjet | posted 2026-08-28
+- **Construction Project Coordinator** — Cruitin | Fountain Valley, CA ×3 locations | us | careerjet | posted 2026-09-25
+- **Senior Regional Construction Scheduler** — DESTINATION ENTERPRISES INC | Los Angeles, CA ×3 locations | us | careerjet | posted 2026-09-25
+- **Office manager for Plumbing office** — DISPATCHER / RECEPTIONIST NEEDED | Chatsworth, CA ×3 locations | us | careerjet | posted 2026-09-03
+- **HVAC Sales Manager** — Daikin | Pittsburgh, PA ×3 locations | us | careerjet | posted 2026-10-17
+- **Sr Service Sales Account Manager - HVAC Products and Services - Seattle** — Daikin | Seattle, WA ×3 locations | us | careerjet | posted 2026-10-09
+- **Service and Solutions Account Manager - Commercial HVAC - Austin** — Daikin | Austin, TX ×3 locations | us | careerjet | posted 2026-10-07
+- **Counter/Inside Sales Associate - Plumbing & HVAC** — Dakota Supply Group | Pierre, SD ×3 locations | us | careerjet | posted 2026-10-17
+- **Construction Scheduler** — Daksta | Lakeway, TX ×3 locations | us | careerjet | posted 2026-10-01
+- **Outside Sales Representative** — Diamond Fence | Sandy, UT ×3 locations | us | careerjet | posted 2026-10-18
+- **Preconstruction Manager** — Dynalectric Company | El Cajon, CA ×3 locations | us | careerjet | posted 2026-08-30
+- **Construction Project Coordinator/Project Engineer** — EMCOR | San Jose, CA ×3 locations | us | careerjet | posted 2026-10-13
+- **Assistant Electrical Project Manager - Data Center Construction** — EMCOR | Richmond, VA ×3 locations | us | careerjet | posted 2026-10-17
+- **Preconstruction Manager** — EMCOR | El Cajon, CA ×3 locations | us | careerjet | posted 2026-08-29
+- **Senior Regional Construction Scheduler** — ENGICON CM | Los Angeles, CA ×3 locations | us | careerjet | posted 2026-10-09
+- **Goyette Mechanical - Assistant Construction Project Manager** — EctoHR | Columbus, OH ×3 locations | us | careerjet | posted 2026-09-11
+- **Door to Door Sales Representative (Top Bonus Structure)** — Elevation Exteriors | Fort Wayne, IN ×3 locations | us | careerjet | posted 2026-09-25
+- **Construction Estimator - Industrial / Commercian / GC Lump Sum bids** — EnTech Resources, LLC | Phoenix, AZ ×3 locations | us | careerjet | posted 2026-10-15
+- **Construction Office Manager** — Express Employment Professionals - Olathe, KS | Olathe, KS ×3 locations | us | careerjet | posted 2026-10-09
+- **Construction Project Coordinator** — Express Employment Professionals - Shreveport | Shreveport, LA ×3 locations | us | careerjet | posted 2026-10-12
+- **Construction Estimator** — Express Saint Louis | Saint Louis, MO ×3 locations | us | careerjet | posted 2026-10-19
+- **Lead Generator/Sales Representative** — FL HVAC Services | Ocala, FL ×3 locations | us | careerjet | posted 2026-09-30
+- **Retail HVAC Sales Associate/Lead Generator** — Fayette | Owensboro, KY ×3 locations | us | careerjet | posted 2026-10-15
+- **Civil Construction Estimator 1** — Fiore & Sons, Inc | Denver, CO ×3 locations | us | careerjet | posted 2026-10-09
+- **Senior Project Director - Restoration/Construction Estimator** — First Onsite | Indianapolis, IN ×3 locations | us | careerjet | posted 2026-08-26
+- **Scheduler** — Flatiron Construction | Concord, CA ×3 locations | us | careerjet | posted 2026-10-10
+- **Subcontract Manager** — Flatiron Construction | Alpharetta, GA ×3 locations | us | careerjet | posted 2026-10-01
+- **Business Compliance Manager** — Flatiron Construction | Morgan Hill, CA ×3 locations | us | careerjet | posted 2026-09-13
+- **Account Executive- Multifamily- Florida** — Flooring Careers | East Bernard, TX ×3 locations | us | careerjet | posted 2026-09-23
+- **Construction Estimator** — Florida Construction Connection | Broward County, FL ×3 locations | us | careerjet | posted 2026-10-14
+- **Construction Assistant Project Manager (On-Site)** — Florida Construction Connection | Fort Lauderdale, FL ×3 locations | us | careerjet | posted 2026-10-07
+- **Construction Assistant Project Manager** — Florida Construction Connection | Fort Lauderdale, FL ×3 locations | us | careerjet | posted 2026-10-07
+- **HVAC Service Manager** — Folkes Home Services | Fishkill, NY ×3 locations | us | careerjet | posted 2026-10-08
+- **HVAC Sales Representative / Comfort Advisor** — Fusion Heating Air and Insulation & Fusion Pools | Virginia Beach, VA ×3 locations | us | careerjet | posted 2026-10-18
+- **Estimator - Commercial Construction** — GPAC [staffing] | Albuquerque, NM ×3 locations | us | careerjet | posted 2026-10-18
+- **Senior Construction Scheduler (Traveling)** — GPAC [staffing] | Indianapolis, IN ×3 locations | us | careerjet | posted 2026-09-26
+- **Construction Senior Accountant - Colleyville, TX** — GPAC [staffing] | Colleyville, TX ×3 locations | us | careerjet | posted 2026-10-19
+- **Regional Business Manager (Construction Sales)** — GVW Group | USA ×3 locations | us | careerjet | posted 2026-10-06
+- **Commercial HVAC Sales Specialist** — Gables Search Group | Madison, WI ×3 locations | us | careerjet | posted 2026-09-09
+- **Construction Project Coordinator** — Gables Search Group | Fort Wayne, IN ×3 locations | us | careerjet | posted 2026-09-23
+- **Multifamily Construction Estimator Nashville TN** — Gables Search Group | Brentwood, TN ×3 locations | us | careerjet | posted 2026-09-02
+- **HVAC Construction Project Manager** — Getzschman | Fremont, NE ×3 locations | us | careerjet | posted 2026-10-17
+- **SCA Construction Estimator** — Gilbane | New York City, NY ×3 locations | us | careerjet | posted 2026-10-13
+- **SCA Construction Scheduler** — Gilbane | New York City, NY ×3 locations | us | careerjet | posted 2026-10-14
+- **CMG002 - Materials Inside Sales Rep** — Granite Construction | Memphis, TN ×3 locations | us | careerjet | posted 2026-09-15
+- **Custom Paving Estimator** — Granite Construction | Everett, WA ×3 locations | us | careerjet | posted 2026-10-18
+- **Administrative Assistant- Field** — Gray Construction | Reno, NV ×3 locations | us | careerjet | posted 2026-10-16
+- **Construction Estimator** — Graziano's Property Solutions, LLC | Annapolis, MD ×3 locations | us | careerjet | posted 2026-10-04
+- **Construction Estimator** — Gulf Coast Utility Contractors | Panama City, FL ×3 locations | us | careerjet | posted 2026-10-16
+- **HVAC Sales Representative** — HAMPTON S AIR HEATING AND AIR COND | East Quogue, NY ×3 locations | us | careerjet | posted 2026-10-08
+- **Senior Construction Estimator** — HBK Engineering | Vacaville, CA ×3 locations | us | careerjet | posted 2026-09-18
+- **Electrical Construction Estimator** — HBK Engineering | Vacaville, CA ×3 locations | us | careerjet | posted 2026-09-18
+- **Entry Level Construction Sales Representative** — HCI Systems | Ontario, CA ×3 locations | us | careerjet | posted 2026-09-27
+- **Construction Scheduler II** — HNTB | Miami, FL ×3 locations | us | careerjet | posted 2026-09-13
+- **Sales Associate - Handyman** — Handyman Connection of Parker, CO | Parker, CO ×3 locations | us | careerjet | posted 2026-09-07
+- **Construction Project Coordinator-Chicago** — Harmon | Bolingbrook, IL ×3 locations | us | careerjet | posted 2026-09-02
+- **Sr. Construction Purchasing Agent** — Hill International | Austin, TX ×3 locations | us | careerjet | posted 2026-09-02
+- **Construction Purchasing Agent** — Hill International | Austin, TX ×3 locations | us | careerjet | posted 2026-09-02
+- **Construction Scheduler / Coordinator – Shared Services** — Hittle Landscaping | Westfield, IN ×3 locations | us | careerjet | posted 2026-10-13
+- **Commercial Construction Assistant Project Manager - Atlanta** — Hogan Construction Group | Norcross, GA ×3 locations | us | careerjet | posted 2026-08-27
+- **Regional Window and Door Director** — Home Genius Exteriors | Nashville, TN ×3 locations | us | careerjet | posted 2026-10-07
+- **Electrical Estimator - Mission Critical** — IES Communications | Lithia Springs, GA ×3 locations | us | careerjet | posted 2026-10-06
+- **Electrical Estimator - Mission Critical** — IES Electrical | Lithia Springs, GA ×3 locations | us | careerjet | posted 2026-10-08
+- **GL Accountant - Construction** — Industrial Pro Recruiting [staffing] | Ardmore, OK ×3 locations | us | careerjet | posted 2026-09-25
+- **Construction Estimator** — Innovative Construction Services | Greenwood, IN ×3 locations | us | careerjet | posted 2026-09-02
+- **HVAC Sales Representative** — Integrity Heating & Air, Inc. | Laurel, DE ×3 locations | us | careerjet | posted 2026-09-17
+- **Construction Estimator** — Integrity Jobs | Akron, OH ×3 locations | us | careerjet | posted 2026-08-25
+- **Business Development Manager – Commercial Construction** — Integro Recruiting Consultants [staffing] | Hialeah, FL ×3 locations | us | careerjet | posted 2026-09-01
+- **Construction Project Coordinator** — Integro Recruiting Consultants [staffing] | Hialeah, FL ×3 locations | us | careerjet | posted 2026-10-17
+- **Junior Construction Estimator** — Integro Recruiting Consultants [staffing] | Hialeah, FL ×3 locations | us | careerjet | posted 2026-09-03
+- **Construction Estimator** — Integro Recruiting Consultants [staffing] | Hialeah, FL ×3 locations | us | careerjet | posted 2026-09-01
+- **HVAC Installation Coordinator** — J & J Air | North Myrtle Beach, SC ×3 locations | us | careerjet | posted 2026-10-18
+- **Mechanical Construction Sales/Estimator** — J.F. Ahern Co. | Madison, WI ×3 locations | us | careerjet | posted 2026-09-25
+- **Commercial Plumbing Sales/ Estimator** — J.F. Ahern Co. | Milwaukee, WI ×3 locations | us | careerjet | posted 2026-08-28
+- **Construction Project Coordinator** — JARBO Employment Group | Kansas City, MO ×3 locations | us | careerjet | posted 2026-09-01

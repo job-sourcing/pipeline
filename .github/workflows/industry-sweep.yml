@@ -1,31 +1,27 @@
 name: Industry Sweep
 
-# S41 stress test #2 (DESIGN-S41 v2 §3): the industry×region sweep —
-# home services / construction × SF Bay Area, non-licensed corp/office
-# roles. The second standardized engine: role_sweep fetchers via
-# import (location-aware for adzuna/jooble/careerjet/indeed — the S41
-# geo params), the shared geo_levels region+level gates, the
-# INDUSTRIES registry (new industries = data entries). Every drop
-# labeled; the report head-lines corp_office ∧ (bay_area ∨ remote).
+# S41 stress test #2 (DESIGN-S41 v2 §3) + S42 v2: the industry×region
+# sweep — home services / construction, non-licensed corp/office roles.
+# v2 (S42-R1): the us geo mode (local + remote, ALL-US-WIDE — the
+# user's "coverage is low, find more robust ways" push), honest-channel
+# roster (PM-hardcoded feeds declared skipped:pm-hardcoded; the
+# measured-block channels attempt-and-record), --budget-seconds guard
+# (outputs ALWAYS written — the F4 green-zero kill), staffing-brand
+# split + multi-branch rollup (×N locations), per-source raw/kept
+# counters + the WHERE histogram.
 #
-# Sources: ALL of them (the user's "be exhaustive" directive) — the
-# 4 geo fetchers + the 10 keyless/wide sources + the 2 firecrawl
-# sources (expected-zero until the Oct-24 credit renewal — declared,
-# never misread as "not on this source"). Careerjet 403s on Azure
-# (documented) — the HK local leg is its transport.
-#
-# Artifacts: ingest/data/industry/<slug>.json + .report.md — the S35
-# rule honored IN THIS CHANGE: the mirror back-sync handler
-# (copy-back-before-rsync, the adhoc pattern) + the !gitignore
-# exception ship here too. Cadence: weekly Friday 14:15Z + dispatch
-# ?industry= for other registry entries.
+# Artifacts: ingest/data/industry/<slug>.json + .report.md per matrix
+# slug — the S35 rule honored: the mirror back-sync handler is
+# dir-wide (new slugs flow automatically) + the !gitignore exception.
+# Cadence: weekly Friday 14:15Z runs BOTH slugs (matrix); dispatch
+# ?industry=<slug> runs one.
 
 on:
   workflow_dispatch:
     inputs:
       industry:
-        description: "INDUSTRIES registry slug (default home_services_ba)"
-        default: "home_services_ba"
+        description: "INDUSTRIES registry slug (empty = matrix ba+us)"
+        default: ""
   schedule:
     - cron: "15 14 * * 5"    # Fridays 14:15Z
 
@@ -39,8 +35,17 @@ concurrency:
 
 jobs:
   sweep:
+    strategy:
+      matrix:
+        include:
+          - slug: home_services_ba
+            budget: 2400
+            timeout: 45
+          - slug: home_services_us
+            budget: 3000
+            timeout: 90
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: ${{ matrix.timeout }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -54,6 +59,11 @@ jobs:
         run: pip install -e "ingest[jobspy]" curl_cffi
 
       - name: Run industry sweep
+        # schedule runs both slugs; a dispatch input runs only it
+        if: >-
+          github.event_name == 'schedule' ||
+          (github.event.inputs.industry != '' &&
+           github.event.inputs.industry == matrix.slug)
         env:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_API_KEY: ${{ secrets.ADZUNA_API_KEY }}
@@ -62,15 +72,18 @@ jobs:
           CAREERJET_API_KEY: ${{ secrets.CAREERJET_API_KEY }}
           CAREERJET_REFERER: ${{ secrets.CAREERJET_REFERER }}
           FINDWORK_API_KEY: ${{ secrets.FINDWORK_API_KEY }}
+          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
+          USAJOBS_USER_AGENT: ${{ secrets.USAJOBS_USER_AGENT }}
         run: |
           python3 scripts/industry_sweep.py \
-            --industry "${{ github.event.inputs.industry || 'home_services_ba' }}"
+            --industry "${{ matrix.slug }}" \
+            --budget-seconds "${{ matrix.budget }}"
 
       - name: Checkpoint artifacts to git (race-proof, S35 rule)
         if: always()
         run: |
           set -e
-          SLUG="${{ github.event.inputs.industry || 'home_services_ba' }}"
+          SLUG="${{ matrix.slug }}"
           mkdir -p /tmp/ind_state/ingest/data/industry
           for f in "ingest/data/industry/${SLUG}.json" "ingest/data/industry/${SLUG}.report.md"; do
             if [ -e "$f" ]; then cp "$f" "/tmp/ind_state/$f"; fi

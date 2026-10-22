@@ -2326,3 +2326,88 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+def fetch_ziprecruiter(queries: list[str],
+                       location: str | None = None) -> tuple[list[dict], str]:
+    """S42 industry v2 (DESIGN-S42 v2 B6): ZipRecruiter via jobspy —
+    the home-services-heavy board the user's "be exhaustive" directive
+    names. Measured 2026-10-22: 403 'blocked: use a proxy' from the HK
+    egress; the ZenRows chain is 402 (credits exhausted). The channel
+    is wired attempt-and-record — the honest verdict IS the
+    measurement, and it auto-reopens the day a transport clears
+    (firecrawl re-arm post-Oct-24 or ZenRows credits). NOT in the
+    family roster until it yields (a permanent error line in every
+    sweep envelope is noise; an industry-lane verdict is a record)."""
+    try:
+        from jobspy import scrape_jobs  # noqa: PLC0415
+    except ImportError:
+        return [], "not-installed"
+    rows: list[dict] = []
+    errors = 0
+    for q in queries:
+        try:
+            jobs = scrape_jobs(site_name=["zip_recruiter"],
+                               search_term=q,
+                               location=location or "United States",
+                               results_wanted=100, hours_old=24 * 30)
+            if not hasattr(jobs, "iterrows"):
+                continue
+            for _, j in jobs.iterrows():
+                loc = j.get("location")
+                rows.append({
+                    "title": str(j.get("title") or ""),
+                    "company": str(j.get("company") or ""),
+                    "loc": "" if not isinstance(loc, str) else loc,
+                    "url": str(j.get("job_url") or ""),
+                    "posted": str(j.get("date_posted") or "")[:10],
+                    "desc": str(j.get("description") or "")[:12000],
+                    "source": "ziprecruiter", "layer": "l1.5",
+                    "query": q, "rid": "",
+                })
+        except Exception as exc:                # one bad query ≠ a dead
+            errors += 1                          # source; keep fetching
+            if errors >= 3:
+                return rows, f"error:{q[:12]}:{type(exc).__name__}"
+        time.sleep(2.0)
+    if rows:
+        return rows, "ok"
+    # jobspy swallows the 403 and returns an EMPTY frame — a zero-yield
+    # on ziprecruiter is the measured block (403 'use a proxy'), never
+    # "no jobs exist". The verdict must say so (F12: honest channels).
+    return [], "blocked:no-yield(403)" if errors == 0 else \
+        f"blocked:x{errors}"
+
+
+def fetch_glassdoor_zenrows(queries: list[str],
+                            location: str | None = None) -> tuple[
+        list[dict], str]:
+    """S42 industry v2: Glassdoor via the job_sourcer ZenRows adapter —
+    the only repo transport (no glassdoor creds for jobspy). Measured
+    2026-10-22: 402 payment-required (ZenRows credits exhausted). Same
+    attempt-and-record doctrine as fetch_ziprecruiter; one query
+    probes the transport, the rest only run when it yields."""
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import job_sourcer as _js  # noqa: PLC0415
+    except Exception as exc:               # noqa: BLE001
+        return [], f"error:{type(exc).__name__}"
+    key = _env("ZENROWS_API_KEY")
+    if not key:
+        return [], "no-key"
+    rows: list[dict] = []
+    for q in queries:
+        try:
+            got = _js.scrape_glassdoor_zenrows(
+                q, location or "United States", key)
+        except Exception as exc:            # noqa: BLE001
+            return rows, f"error:{type(exc).__name__}"
+        if not got:                        # 402/transport-dead: stop
+            return rows, "blocked:zenrows" if not rows else "ok"
+        for g in got:
+            g.setdefault("source", "glassdoor")
+            g.setdefault("layer", "l1.5")
+            g["query"] = q
+            rows.append(g)
+        time.sleep(2.0)
+    return rows, "ok"
