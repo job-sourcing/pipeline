@@ -1,9 +1,9 @@
 {
  "label": "genscript_us_fulltime",
  "rows": 35,
- "kept": 35,
- "new": 0,
- "ghosts_dropped": 0,
+ "kept": 34,
+ "new": 1,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -12,7 +12,7 @@
  "gate_dropped_new": 33,
  "feed_excluded_state": 0,
  "state_rows": 68,
- "banded": 10,
+ "banded": 11,
  "lca_pools": 48,
  "snapshot": "2026-10-22"
 }

@@ -11983,3 +11983,61 @@ Preferred Qualifications
 - Direct experience in Vendor Management, including establishing and monitoring KPIs and SLAs.
 - Knowledge of regional customs regulations, with experience in export and import processes.
 - Regular interaction with legal, finance, and tax departments, demonstrating experience in cross-functional collaboration.",3032,https://joinbytedance.com/search/7698446265616861493,,,,,,,not_checked,,2026-10-21,,2026-10-22,,,,true,0,,,,,,,,,,,,,,
+A36668,Research Scientist (Seed Model-Alignment&Preparedness) - 2026 Start (PhD),ByteDance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"About the Team & Role
+Seed Model–Alignment & Preparedness is dedicated to advancing AI safety alongside frontier model capabilities. Backed by sustained investment and substantial compute resources, we tackle fundamental challenges in alignment, safety evaluation, and preparedness for emerging risks—translating research into safe, reliable AI systems that benefit people.
+
+We’re looking for researchers to make frontier models and agents safer, with a strong focus on agent RL: training agents that stay safe and controllable in tool use, code execution, and long-horizon tasks.
+
+We are looking for talented individuals to join our team. As a graduate, you will get opportunities to pursue bold ideas, tackle complex challenges, and unlock limitless growth.
+Successful candidates must be able to commit to an onboarding date by the end of the year. Please state your availability and graduation date clearly in your resume.
+
+Responsibilities
+- Agent RL & safety training: Use RL, SFT, and preference optimization to train agents safely. Design environments, rewards, and training data that reduce deception, reward hacking, and unauthorized actions, and teach agents to check authorization, recognize risks, and stop when needed, without sacrificing useful autonomy. Ensure safety generalizes to new tasks and holds up through further training.
+- Frontier risk assessment: Partner with domain experts to evaluate dangerous capabilities (e.g., CBRN, cybersecurity), model threats, and build safeguards. Provide empirical evidence to guide development and deployment decisions.
+- Automated red teaming: Build automated attack generation and adversarial training methods to harden models against jailbreaks, prompt injection, and other adversarial inputs.
+- Monitoring & oversight: Detect risks from inputs and outputs, execution traces, chains of thought, and internal representations. Build oversight models, action review, and permission controls, and measure their effectiveness, evasion resistance, and cost.
+- Failure analysis & deployment: Turn real-world failures into reproducible experiments and pinpoint root causes through controlled studies and ablations. Work with pre-training, post-training, infra, and product teams to ship what works at scale.
+
+Minimum Qualifications:
+- Individuals who are completing or have recently completed a PhD degree in Computer Science, Electrical Engineering, Electrical and Computer Engineering, Physics, Mathematics, or a related discipline.
+- Strong foundations in ML, deep learning, and statistics, with research or engineering experience in LLMs, RL, or related fields.
+- Proficiency in Python and PyTorch (or similar), with the ability to independently implement algorithms, build experiment pipelines, and debug data, training, and evaluation issues.
+- Deep hands-on experience in at least one of the following: agent RL, model training, dataset development, agent systems, evaluation, or ML infrastructure.
+- Ability to turn open-ended questions about model behavior into testable hypotheses, run experiments, and clearly communicate results and limitations to research, engineering, and domain partners.
+- A genuine commitment to advancing safety alongside capabilities, and comfort with ambiguous, unsolved problems.
+
+Preferred Qualifications
+- Experience with agent RL, including environment design, reward design for multi-step tasks, and long-horizon or multi-agent training.
+- Experience with SFT, RLHF/RLAIF/RLVR, distributed training, or automated red teaming.
+- Research experience in AI control, scalable oversight, CoT monitoring, mechanistic interpretability, or prompt injection defense.
+- Experience evaluating or mitigating risks in high-stakes domains such as CBRN or cybersecurity.
+- Strong publications, open-source contributions, or a track record of applying research to real-world systems.",3862,https://joinbytedance.com/search/7698902624003229957,,https://www.linkedin.com/jobs/view/4482446080,2026-10-22,25,among first 25,,matched,,2026-10-22,2026-10-22T12:30:12,2026-10-22,,0,startDate+linkedin,true,0,,,,,,2026-10-22,,true,84,200640,263800,340000,subset,Research Scientist
+A59867,Research Scientist (Seed Model-Alignment&Preparedness)- 2027 Start (PhD),ByteDance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"About the Team&Role
+Seed Model–Alignment & Preparedness is dedicated to advancing AI safety alongside frontier model capabilities. Backed by sustained investment and substantial compute resources, we tackle fundamental challenges in alignment, safety evaluation, and preparedness for emerging risks—translating research into safe, reliable AI systems that benefit people.
+
+We’re looking for researchers to make frontier models and agents safer, with a strong focus on agent RL: training agents that stay safe and controllable in tool use, code execution, and long-horizon tasks.
+
+We are looking for talented individuals to join our team. As a graduate, you will get opportunities to pursue bold ideas, tackle complex challenges, and unlock limitless growth.
+Successful candidates must be able to commit to an onboarding date by the end of the year. Please state your availability and graduation date clearly in your resume.
+
+Responsibilities
+- Agent RL & safety training: Use RL, SFT, and preference optimization to train agents safely. Design environments, rewards, and training data that reduce deception, reward hacking, and unauthorized actions, and teach agents to check authorization, recognize risks, and stop when needed, without sacrificing useful autonomy. Ensure safety generalizes to new tasks and holds up through further training.
+- Frontier risk assessment: Partner with domain experts to evaluate dangerous capabilities (e.g., CBRN, cybersecurity), model threats, and build safeguards. Provide empirical evidence to guide development and deployment decisions.
+- Automated red teaming: Build automated attack generation and adversarial training methods to harden models against jailbreaks, prompt injection, and other adversarial inputs.
+- Monitoring & oversight: Detect risks from inputs and outputs, execution traces, chains of thought, and internal representations. Build oversight models, action review, and permission controls, and measure their effectiveness, evasion resistance, and cost.
+- Failure analysis & deployment: Turn real-world failures into reproducible experiments and pinpoint root causes through controlled studies and ablations. Work with pre-training, post-training, infra, and product teams to ship what works at scale.
+
+Minimum Qualifications:
+- Individuals who are completing or have recently completed a PhD degree in Computer Science, Electrical Engineering, Electrical and Computer Engineering, Physics, Mathematics, or a related discipline.
+- Strong foundations in ML, deep learning, and statistics, with research or engineering experience in LLMs, RL, or related fields.
+- Proficiency in Python and PyTorch (or similar), with the ability to independently implement algorithms, build experiment pipelines, and debug data, training, and evaluation issues.
+- Deep hands-on experience in at least one of the following: agent RL, model training, dataset development, agent systems, evaluation, or ML infrastructure.
+- Ability to turn open-ended questions about model behavior into testable hypotheses, run experiments, and clearly communicate results and limitations to research, engineering, and domain partners.
+- A genuine commitment to advancing safety alongside capabilities, and comfort with ambiguous, unsolved problems.
+
+Preferred Qualifications
+- Experience with agent RL, including environment design, reward design for multi-step tasks, and long-horizon or multi-agent training.
+- Experience with SFT, RLHF/RLAIF/RLVR, distributed training, or automated red teaming.
+- Research experience in AI control, scalable oversight, CoT monitoring, mechanistic interpretability, or prompt injection defense.
+- Experience evaluating or mitigating risks in high-stakes domains such as CBRN or cybersecurity.
+- Strong publications, open-source contributions, or a track record of applying research to real-world systems.",3860,https://joinbytedance.com/search/7698902624389482757,,https://www.linkedin.com/jobs/view/4482446080,2026-10-22,25,among first 25,,matched,,2026-10-22,2026-10-22T12:29:56,2026-10-22,,0,startDate+linkedin,true,0,,,,,,2026-10-22,,true,84,200640,263800,340000,subset,Research Scientist

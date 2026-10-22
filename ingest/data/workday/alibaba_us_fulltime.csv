@@ -448,38 +448,6 @@ Preferred qualification:
 The pay range for this position at commencement of employment is expected to be between $104,400 and $171,000/year. However, base pay offered may vary depending on multiple individualized factors, including market location, job-related knowledge, skills, and experience.
 
 If hired, employee will be in an “at-will position” and the Company reserves the right to modify base salary (as well as any other discretionary payment or compensation program) at any time, including for reasons related to individual performance, Company or individual department/team performance, and market factors.",2858,https://careers.alibabacloud.com/en/off-campus/position-detail?positionId=2000073201&track_id=SSP1790393753802aEzShNiwhf6192,,,,,,,no_match,,2026-09-24,,2026-10-22,,36,startDate,false,0,2026-09-29,,,,,2026-09-16,,false,,,,,,
-GP100009683006,Alibaba Cloud-RDMA Ops Engineer - Computing Infrastructure Networking-Sunnyvale,alibaba,Alibaba Group,,Posted 10 Days Ago,2026-09-16,36,Sunnyvale,1,Sunnyvale,false,,United States,,0,"We're seeking a skilled RDMA Ops Engineer to optimize and maintain high-performance networking infrastructure for our computing clusters. This role focuses on building and operatiing ultra-low latency, high-throughput networks using RDMA technologies to power next-generation computing workloads.
-
-Key Responsibilities:
-• Deploy, operate and maintain RDMA-based network architectures (RoCE/InfiniBand) for cluster with thousands of nodes
-• Optimize network performance for distributed collective communication workloads (NCCL, MPI, etc.)
-• Solve complex network issues in distributed collective communication (e.g., NCCL/MPI communication bottlenecks)
-• Use automation tools for network provisioning, monitoring, diagnostics，and network performance profiling (latency/throughput analysis)
-• Implement CI/CD pipelines for network infrastructure-as-code
-• Manage end-to-end network lifecycle: deployment, configuration, monitoring, upgrades
-• Collaborate with computing algorithm engineers to troubleshoot network-related bottlenecks in training/inference pipelines
-• Bridge Computing framework requirements with underlying network infrastructure capabilities
-• Ensure compliance with security and scalability requirements
-
-Minimum qualification:
-- Strong scripting skills (Python/Go/Bash) for operational automation
-- Expert-level RDMA operational experience (RoCEv2/InfiniBand)
-- Understanding of Linux internals (kernel bypass, syscall optimization, etc)，and proficient in Linux network stack tuning (irqbalance, NUMA, hugepages)
-- Hands-on experience with RDMA/DPDK performance tuning
-- Strong knowledge of network protocols (TCP/IP, RoCEv2) and NIC architecture principles
-- Ability to abstract complex technical concepts into architectural diagrams
-- Proven track record of translating R&D innovations into production solutions
-- Strong communication skills for cross-functional collaboration with Computing researchers and SRE teams
-
-Preferred qualification:
-- Have experience on managing production Computing networks
-- Familiar with Kubernetes networking (CNI, Multus, SR-IOV) and GPU-aware scheduling
-- Background in Computing system optimization (NVIDIA collective libraries, MPI tuning)
-- Deep understanding of Computing workload patterns and their network implications
-
-The pay range for this position at commencement of employment is expected to be between $104,400 and $171,000/year. However, base pay offered may vary depending on multiple individualized factors, including market location, job-related knowledge, skills, and experience.
-
-If hired, employee will be in an “at-will position” and the Company reserves the right to modify base salary (as well as any other discretionary payment or compensation program) at any time, including for reasons related to individual performance, Company or individual department/team performance, and market factors.",2871,https://careers.alibabacloud.com/en/off-campus/position-detail?positionId=100009683006&track_id=SSP1790393753802SYhpAFOspA2772,,,,,,,no_match,,2026-09-24,,2026-10-22,,36,startDate,false,0,,,,,,2026-09-16,,false,,,,,,
 GP100009663007,Alibaba Cloud-Cloud Infrastructure – Site Reliability Engineer (SRE)-Sunnyvale,alibaba,Alibaba Group,,Posted 10 Days Ago,2026-09-16,36,Sunnyvale,1,Sunnyvale,false,,United States,,0,"Alibaba Cloud Native Message Middleware Team is responsible for message products, including RocketMQ and other messaging products. We are committed to creating a more stable, user-friendly, streaming, and large-scale messaging platform for the future.
 
 Cloud Product Operations & Reliability
