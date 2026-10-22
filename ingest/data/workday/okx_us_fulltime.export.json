@@ -1,8 +1,8 @@
 {
  "label": "okx_us_fulltime",
  "rows": 98,
- "kept": 96,
- "new": 2,
+ "kept": 98,
+ "new": 0,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -14,5 +14,5 @@
  "state_rows": 253,
  "banded": 0,
  "lca_pools": 4,
- "snapshot": "2026-10-21"
+ "snapshot": "2026-10-22"
 }
