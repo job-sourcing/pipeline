@@ -6,3 +6,6 @@ NEW Battery Simulation Engineer - Life Model/Simulation | Novi, MI |  | https://
 NEW Sr. Program Manager | Novi, MI |  | https://www.a123systems.com/join_us.html#sr-program-manager
 (2026-10-11T00:33:30)
 
+board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='www.a123systems.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
+(2026-10-22T12:38:42)
+
