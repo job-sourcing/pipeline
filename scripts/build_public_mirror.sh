@@ -250,6 +250,26 @@ if [ -d "$DEST/ingest/data/industry" ]; then
     git diff --cached --quiet || \
     git commit -q -m "industry sweep results back-sync from org runtime (S41 Strategy-2, S35 rule)")
 fi
+# S42-1 (S35 rule 5th check — the violation CAUGHT LIVE): the jd_refetch
+# state/report files are lane-written on the ORG side (jd_refetch_state
+# .json/_report.md for pm; jd_refetch_dmm_state.json/_report.md for the
+# S42 family twins). Run 10 committed them; the NEXT mirror's forward
+# rsync --delete WIPED them (the archive never carried the dmm twins —
+# the handler must exist in the SAME change as the path, not one
+# session later). Glob covers any future family twins.
+if ls "$DEST"/ingest/data/roles/jd_refetch*_state.json \
+     "$DEST"/ingest/data/roles/jd_refetch*_report.md \
+     >/dev/null 2>&1; then
+  mkdir -p "$SRC/ingest/data/roles"
+  for f in "$DEST"/ingest/data/roles/jd_refetch*_state.json \
+           "$DEST"/ingest/data/roles/jd_refetch*_report.md; do
+    cp "$f" "$SRC/ingest/data/roles/"
+  done
+  (cd "$SRC" && git add ingest/data/roles/jd_refetch*_state.json \
+    ingest/data/roles/jd_refetch*_report.md 2>/dev/null; \
+    git diff --cached --quiet || \
+    git commit -q -m "jd_refetch state/report back-sync from org runtime (S42 family twins, S35 rule 5th check)")
+fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
   # S38 fix: roles-pm.json is written on BOTH sides (the GHA lane AND

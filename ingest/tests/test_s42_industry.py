@@ -379,3 +379,18 @@ class TestRefetchFamily:
         # state + report landed in the fake repo, not the real one
         assert (fake / "ingest/data/roles/"
                 "jd_refetch_state.json").exists()
+
+
+# ── the S35 rule 5th check (the live violation) ─────────────────────
+
+class TestMirrorS35Handlers:
+    def test_jd_refetch_state_files_have_backsync_handler(self):
+        # the mirror's forward rsync --delete WIPED the org's dmm state
+        # twins (run 10 committed them; the next mirror deleted them —
+        # the archive never carried the paths). The handler must exist
+        # for EVERY lane-written path pattern.
+        sh = (_REPO / "scripts/build_public_mirror.sh").read_text()
+        assert "jd_refetch*_state.json" in sh
+        assert "jd_refetch*_report.md" in sh
+        assert "jd_refetch_dmm_state" in (
+            _REPO / ".github/workflows/jd-refetch.yml").read_text()
