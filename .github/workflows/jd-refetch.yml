@@ -121,7 +121,7 @@ jobs:
                 cp "/tmp/jd_state/$f" "$f"
               fi
             done
-            for f in $FILES; do [ -e "$f" ] && git add "$f"; fi
+            for f in $FILES; do [ -e "$f" ] && git add "$f"; done
             if git diff --cached --quiet; then push_ok=1; break; fi
             git commit -m "jd-refetch checkpoint [skip ci]"
             if git push; then push_ok=1; break; fi

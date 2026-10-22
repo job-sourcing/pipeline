@@ -276,6 +276,34 @@ class TestLanePlumbing:
         # new slugs flow through the existing dir-wide handler
         assert 'rsync -a "$DEST"/ingest/data/industry/' in sh
 
+    def test_all_lane_yml_run_blocks_are_valid_bash(self):
+        # the run-8 lesson: `done` mistyped `fi` in a checkpoint loop
+        # shipped GREEN through yaml validation + the whole pin battery
+        # — bash -n catches it in one parse. EVERY workflow's run
+        # block, forever: a lane that dies mid-script loses its leg's
+        # work (rescued only in runner-ephemeral /tmp).
+        import subprocess
+        import yaml
+        wfs = sorted((_REPO / ".github/workflows").glob("*.yml"))
+        assert len(wfs) >= 12
+        checked = 0
+        for wf in wfs:
+            doc = yaml.safe_load(wf.read_text())
+            for job in (doc.get("jobs") or {}).values():
+                for step in job.get("steps") or []:
+                    run = step.get("run")
+                    if not run:
+                        continue
+                    r = subprocess.run(
+                        ["bash", "-n"], input=run.encode(),
+                        capture_output=True)
+                    assert r.returncode == 0, (
+                        f"{wf.name}: bash syntax error in step "
+                        f"'{step.get('name')}': "
+                        f"{r.stderr.decode()[:200]}")
+                    checked += 1
+        assert checked >= 25      # the lint actually covered blocks
+
 
 # ── §1.2: the refetch --family plumbing ─────────────────────────────
 
