@@ -1,8 +1,8 @@
 {
- "last_leg": "2026-10-23T18:33:42Z",
+ "last_leg": "2026-10-23T18:43:01Z",
  "transport": "direct",
  "fetched": 150,
- "remaining": 260,
+ "remaining": 110,
  "targets_seen": 1146,
  "pending_snapshot": [
   "adzuna|https://www.adzuna.com/details/5868532232?utm_medium=api&utm_source=46fd1e82",
