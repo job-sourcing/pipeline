@@ -1,9 +1,9 @@
 {
  "label": "legendbiotech_us_fulltime",
  "rows": 77,
- "kept": 77,
- "new": 0,
- "ghosts_dropped": 0,
+ "kept": 74,
+ "new": 3,
+ "ghosts_dropped": 3,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
