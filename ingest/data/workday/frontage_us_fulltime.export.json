@@ -1,8 +1,8 @@
 {
  "label": "frontage_us_fulltime",
  "rows": 87,
- "kept": 85,
- "new": 2,
+ "kept": 87,
+ "new": 0,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -14,5 +14,5 @@
  "state_rows": 92,
  "banded": 0,
  "lca_pools": 0,
- "snapshot": "2026-10-23"
+ "snapshot": "2026-10-24"
 }

@@ -1,73 +1,4 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-4470663935,IT Engineer,HeyGen,HeyGen,,Posted 19 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"About HeyGen
-At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
-Learn more at www.heygen.com. Visit our Mission and Culture doc here.
-Position Summary
-HeyGen is looking for a proactive, high-ownership IT Systems & Operations Owner to join our team in the Palo Alto, San Francisco or LA office.
-In this role, you won't just close support tickets—you will own our IT infrastructure, security footprint, and physical workspace operations. You will act as the primary point of contact for all things IT, balancing immediate tactical unblocking with long-term strategic automation. As we scale, you will eventually manage external contractors to support day-to-day tasks, keeping your focus on architecture, cost optimization, and operational excellence.
-Core Responsibilities
-Security & Endpoint Management
-Data Protection: Implement and oversee Data Loss Prevention (DLP) frameworks to safeguard company and customer data.
-Endpoint Security: Manage Endpoint Detection and Response (EDR) tooling to monitor, detect, and mitigate workforce security threats.
-Access Control: Strictly execute technology onboarding and offboarding, ensuring zero-lag access revocation during departures.
-Tooling, Licensing & Next-Gen IT
-SaaS Management: Provision, manage, and audit user access across our entire corporate software stack.
-AI Workforce Administration: Manage the deployment and compliance of ""AI employees"" and automated workflows integrated into our business.
-Cost Ownership: Act as a financial steward by auditing license utilization and identifying opportunities to optimize software spend.
-Office Operations & Engineering Collaboration
-Workplace Infrastructure: Maintain physical office IT hardware, equipment, and conference room media setups in our Bay Area hubs.
-High-Leverage Support: Act as the strategic layer for employee onboarding infrastructure; guide teammates on setting up environments rather than troubleshooting basic helpdesk queries.
-Solution Implementation: Partner closely with our core engineering teams to test and deploy custom, internal IT automation tools.
-Experience & Requirements
-Professional Experience: 5+ years of experience in IT operations, systems administration, or a similar high-ownership IT role, preferably within a fast-scaling tech startup.
-Security Foundation: Proven experience configuring and managing EDR systems and implementing DLP policies.
-Vendor & Project Management: Experience acting as a primary point of contact for vendors, with the demonstrated ability to eventually manage external contractors or support teams.
-Qualifications & Traits
-Location: Based in the San Francisco Bay Area or LA with the ability to work regularly from the office to manage hardware and conference room infrastructure.
-Bias for Action: You are obsessive about unblocking users quickly, prioritizing a seamless internal user experience.
-Automation Mindset: You look at every manual process and ask, ""How can we make this self-serve?""
-Resourcefulness: You know how to leverage internal software engineers to build solutions, while independently managing vendors and contractors.
-What HeyGen Offers
-Competitive salary and benefits package.
-Dynamic and inclusive work environment.
-Opportunities for professional growth and advancement.
-Collaborative culture that values innovation and creativity.
-Access to the latest technologies and tools.
-Salary Range
-$120,000 – 180,000 annually
-Please note that the salary information is a general guideline only. HeyGen considers factors such as scope and responsibilities of the position, candidate's work experience, education/training, key skills, and internal equity, as well as location, market and business considerations when extending an offer. As part of our total rewards package, HeyGen offers comprehensive benefits including a 401k plan, health benefits, generous PTO, a parental leave program and emotional health resources.
-HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",4412,https://www.linkedin.com/jobs/view/4470663935,,,,,,,not_checked,,2026-10-12,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
-4470672349,Full-Cycle Technical Recruiter,HeyGen,HeyGen,,Posted 19 Days Ago,,,"Palo Alto, CA",1,"Palo Alto, CA",false,,United States,,0,"About HeyGen
-At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
-Learn more at www.heygen.com. Visit our Mission and Culture doc here.
-Position Summary
-We are looking for a Full-Cycle Technical Recruiter to join our Talent team at HeyGen. You will be a critical thought partner in building out our strategy around Engineering hiring at HeyGen, including sourcing strategy, interview process, and where to integrate AI into the Talent function. You will partner closely with the Executive team, hiring managers, and the Talent team to identify and attract the best talent with an emphasis on Full Stack, Mobile, Infrastructure, and AI Research Engineering roles.
-This is an on-site position in our San Francisco or Palo Alto office.
-Core Responsibilities
-The HeyGen Recruiting team manages all aspects of talent acquisition and pipeline strategy. In this role, your responsibilities include, but are not limited to:
-Drive end-to-end recruitment strategy to attract, source, and engage top-tier engineering talent.
-Leverage advanced sourcing methods to proactively build a robust, diverse candidate pipeline for hard-to-fill technical roles.
-Partner deeply with Engineering leaders from initial kickoff meetings to successful onboarding, acting as a trusted talent advisor.
-Collaborate with hiring teams to define headcount needs, craft compelling job descriptions, design efficient interview loops, and provide real-time market data.
-Execute talent mapping and market research to stay ahead of industry trends and competitive intelligence, particularly within the fast-evolving AI and infrastructure space.
-Deliver an exceptional candidate experience at every touchpoint, ensuring a seamless, high-touch process from initial contact to offer closure.
-Requirements
-Bachelor's degree in Human Resources, Business Administration, or a related field
-2+ years of Engineering recruiting experience in B2B SaaS, with a proven track record of hiring across Full Stack, DevOps, Infrastructure, and AI Research Engineering
-Strong understanding of recruitment processes and candidate selection methods
-Ability to handle multiple job openings simultaneously
-Strong decision-making skills
-What HeyGen Offers
-Competitive salary and benefits package
-Dynamic and inclusive work environment
-Opportunities for professional growth and advancement
-Collaborative culture that values innovation and creativity
-Access to the latest technologies and tools
-Salary Range
-$ 100,000- $150,000
-Please note that the salary information is a general guideline only. HeyGen considers factors such as scope and responsibilities of the position, candidate's work experience, education/training, key skills, and internal equity, as well as location, market and business considerations when extending an offer. As part of our total rewards package, HeyGen offers comprehensive benefits including a 401k plan, health benefits, generous PTO, a parental leave program and emotional health resources.
-HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
-Join us at HeyGen and be part of a team that's making visual storytelling accessible to all!",3562,https://www.linkedin.com/jobs/view/4470672349,,,,,,,not_checked,,2026-10-12,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
 4471115567,Product Designer - Web,HeyGen,HeyGen,,Posted 19 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -102,7 +33,7 @@ Open-minded, self-driven, strong learner, constantly on the front edge of the in
 Salary Range:
 $180,000 – $235,000 annually depending on experience and fit. Not representative of total compensation which includes equity and benefits.
 Please note that the salary information is a general guideline only. HeyGen considers factors such as scope and responsibilities of the position, candidate's work experience, education/training, key skills, and internal equity, as well as location, market and business considerations when extending an offer. As part of our total rewards package, HeyGen offers comprehensive benefits including internal equity, a matching 401k plan, health benefits, generous PTO, a parental leave program and emotional health resources.
-HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",5428,https://www.linkedin.com/jobs/view/4471115567,,,,,,,not_checked,,2026-10-12,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",5428,https://www.linkedin.com/jobs/view/4471115567,,,,,,,not_checked,,2026-10-12,,2026-10-24,,,,true,0,,,,,,,,,,,,,,
 4473070378,"Software Engineer, GPU Performance",HeyGen,HeyGen,,Posted 13 Days Ago,,,"Palo Alto, CA",1,"Palo Alto, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -137,7 +68,7 @@ Collaborative culture that values innovation and creativity.
 Access to the latest technologies and tools.
 HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
 Join us at HeyGen
-Help us make AI video faster and more accessible. We'd love to hear from you.",3264,https://www.linkedin.com/jobs/view/4473070378,,,,,,,not_checked,,2026-10-12,,2026-10-23,,,,true,0,,,,,,,,,7,184558,187574,213512,subset,Software Engineer
+Help us make AI video faster and more accessible. We'd love to hear from you.",3264,https://www.linkedin.com/jobs/view/4473070378,,,,,,,not_checked,,2026-10-12,,2026-10-24,,,,true,0,,,,,,,,,7,184558,187574,213512,subset,Software Engineer
 4474549390,Enterprise Account Executive,HeyGen,HeyGen,,Posted 11 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -187,7 +118,7 @@ Flexible PTO.
 Opportunity to help define a new category in AI video.
 High ownership, high velocity, and direct impact on revenue growth.
 Equal Opportunity
-HeyGen is an Equal Opportunity Employer. We value diversity and are committed to building an inclusive environment for all employees.",6886,https://www.linkedin.com/jobs/view/4474549390,,,,,,,not_checked,,2026-10-12,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+HeyGen is an Equal Opportunity Employer. We value diversity and are committed to building an inclusive environment for all employees.",6886,https://www.linkedin.com/jobs/view/4474549390,,,,,,,not_checked,,2026-10-12,,2026-10-24,,,,true,0,,,,,,,,,,,,,,
 4474550379,Enterprise Account Executive,HeyGen,HeyGen,,Posted 11 Days Ago,,,"Los Angeles, CA",1,"Los Angeles, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -237,7 +168,7 @@ Flexible PTO.
 Opportunity to help define a new category in AI video.
 High ownership, high velocity, and direct impact on revenue growth.
 Equal Opportunity
-HeyGen is an Equal Opportunity Employer. We value diversity and are committed to building an inclusive environment for all employees.",6886,https://www.linkedin.com/jobs/view/4474550379,,,,,,,not_checked,,2026-10-12,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+HeyGen is an Equal Opportunity Employer. We value diversity and are committed to building an inclusive environment for all employees.",6886,https://www.linkedin.com/jobs/view/4474550379,,,,,,,not_checked,,2026-10-12,,2026-10-24,,,,true,0,,,,,,,,,,,,,,
 4474787029,Mid-Market Account Executive,HeyGen,HeyGen,,Posted 10 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -286,7 +217,7 @@ Flexible PTO.
 Opportunity to help define a new category in AI video.
 High ownership, high velocity, and direct impact on revenue growth.
 Equal Opportunity
-HeyGen is an Equal Opportunity Employer. We value diversity and are committed to building an inclusive environment for all employees.",6359,https://www.linkedin.com/jobs/view/4474787029,,,,,,,not_checked,,2026-10-12,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+HeyGen is an Equal Opportunity Employer. We value diversity and are committed to building an inclusive environment for all employees.",6359,https://www.linkedin.com/jobs/view/4474787029,,,,,,,not_checked,,2026-10-12,,2026-10-24,,,,true,0,,,,,,,,,,,,,,
 4475031355,"Applied AI Engineer, Video Agent",HeyGen,HeyGen,,Posted 10 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -323,7 +254,7 @@ Flexible PTO.
 Opportunity to help define a new category in AI video.
 High ownership, high velocity, and direct impact on revenue growth.
 Equal Opportunity
-HeyGen is an Equal Opportunity Employer. We value diversity and are committed to building an inclusive environment for all employees.",4529,https://www.linkedin.com/jobs/view/4475031355,,,,,,,not_checked,,2026-10-12,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+HeyGen is an Equal Opportunity Employer. We value diversity and are committed to building an inclusive environment for all employees.",4529,https://www.linkedin.com/jobs/view/4475031355,,,,,,,not_checked,,2026-10-12,,2026-10-24,,,,true,0,,,,,,,,,,,,,,
 4475069929,Head of Strategic Partnerships,HeyGen,HeyGen,,Posted 9 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -388,7 +319,7 @@ Salary Range
 $250,000 – $300,000 + equity + rewards + benefits
 Please note that the salary information is a general guideline only. HeyGen considers factors such as scope and responsibilities of the position, candidate's work experience, education/training, key skills, and internal equity, as well as location, market and business considerations when extending an offer. As part of our total rewards package, HeyGen offers comprehensive benefits including a 401k plan, health benefits, generous PTO, a parental leave program and emotional health resources.
 HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
-Join us at HeyGen and be part of a team that's making visual storytelling accessible to all!",7890,https://www.linkedin.com/jobs/view/4475069929,,,,,,,not_checked,,2026-10-12,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+Join us at HeyGen and be part of a team that's making visual storytelling accessible to all!",7890,https://www.linkedin.com/jobs/view/4475069929,,,,,,,not_checked,,2026-10-12,,2026-10-24,,,,true,0,,,,,,,,,,,,,,
 4479277938,AI Video Creator,HeyGen,HeyGen,,Posted Today,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -417,7 +348,7 @@ Experience with traditional video editing Premiere, After Effects, CapCut)
 Contractor Salary Range: $5,000-10,000/month
 Please note that the salary information is a general guideline only. HeyGen considers factors such as scope and responsibilities of the position, candidate's work experience, education/training, key skills, as well as location, market and business considerations when extending an offer.
 HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
-Join us at HeyGen and be part of a team that's making visual storytelling accessible to all!",4048,https://www.linkedin.com/jobs/view/4479277938,,,,,,,not_checked,,2026-10-14,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+Join us at HeyGen and be part of a team that's making visual storytelling accessible to all!",4048,https://www.linkedin.com/jobs/view/4479277938,,,,,,,not_checked,,2026-10-14,,2026-10-24,,,,true,0,,,,,,,,,,,,,,
 4480912782,Software Engineer Intern (Winter 2027),HeyGen,HeyGen,,Posted 26 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -435,7 +366,7 @@ Experienced with React, Javascript, Python, etc
 Familiarity with RESTful API development.
 Familiarity with cloud platforms such as AWS, Azure, or GCP.
 Familiarity with database systems such as MySQL.
-HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",2378,https://www.linkedin.com/jobs/view/4480912782,,,,,,,not_checked,,2026-10-19,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",2378,https://www.linkedin.com/jobs/view/4480912782,,,,,,,not_checked,,2026-10-19,,2026-10-24,,,,true,0,,,,,,,,,,,,,,
 4480921466,Software Engineer Intern (Winter 2027),HeyGen,HeyGen,,Posted 26 Days Ago,,,"Palo Alto, CA",1,"Palo Alto, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -453,7 +384,7 @@ Experienced with React, Javascript, Python, etc
 Familiarity with RESTful API development.
 Familiarity with cloud platforms such as AWS, Azure, or GCP.
 Familiarity with database systems such as MySQL.
-HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",2378,https://www.linkedin.com/jobs/view/4480921466,,,,,,,not_checked,,2026-10-19,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",2378,https://www.linkedin.com/jobs/view/4480921466,,,,,,,not_checked,,2026-10-19,,2026-10-24,,,,true,0,,,,,,,,,,,,,,
 4480927288,Software Engineer Intern (Winter 2027),HeyGen,HeyGen,,Posted 26 Days Ago,,,"Los Angeles, CA",1,"Los Angeles, CA",false,,United States,,0,"About HeyGen
 At HeyGen, our mission is to make visual storytelling accessible to all. Over the last decade, visual content has become the preferred method of information creation, consumption, and retention. But the ability to create such content, in particular videos, continues to be costly and challenging to scale. Our ambition is to build technology that equips more people with the power to reach, captivate, and inspire audiences.
 Learn more at www.heygen.com. Visit our Mission and Culture doc here.
@@ -471,4 +402,4 @@ Experienced with React, Javascript, Python, etc
 Familiarity with RESTful API development.
 Familiarity with cloud platforms such as AWS, Azure, or GCP.
 Familiarity with database systems such as MySQL.
-HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",2378,https://www.linkedin.com/jobs/view/4480927288,,,,,,,not_checked,,2026-10-19,,2026-10-23,,,,true,0,,,,,,,,,,,,,,
+HeyGen is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",2378,https://www.linkedin.com/jobs/view/4480927288,,,,,,,not_checked,,2026-10-19,,2026-10-24,,,,true,0,,,,,,,,,,,,,,

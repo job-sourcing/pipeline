@@ -1,9 +1,9 @@
 {
  "label": "otterai_us_fulltime",
  "rows": 20,
- "kept": 20,
- "new": 0,
- "ghosts_dropped": 0,
+ "kept": 18,
+ "new": 2,
+ "ghosts_dropped": 2,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -14,5 +14,5 @@
  "state_rows": 20,
  "banded": 11,
  "lca_pools": 9,
- "snapshot": "2026-10-23"
+ "snapshot": "2026-10-24"
 }
