@@ -268,3 +268,13 @@ GONE LLM & Agent Research Intern (first seen 2026-10-21)
 GONE Producer (Onsolo) (first seen 2026-09-26)
 (2026-10-23T12:14:02)
 
+board-watch tencent_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Tencent&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-10-24T11:43:13)
+
+Tencent board-watch 2026-10-24: +1 new, -1 gone (244 active [tencent_us_fulltime])
+NEW Junior Product Manager | United Kingdom-London | 2026-10-23 | https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/United-Kingdom-London/Junior-Product-Manager_R108286
+GONE Global Talent Sourcing Intern (first seen 2026-09-19)
+REPOSTED (1)
+REPOSTED Senior Producer (label reset 23d→1d, startDate +23d)
+(2026-10-24T11:43:13)
+

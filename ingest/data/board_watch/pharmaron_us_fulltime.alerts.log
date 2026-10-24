@@ -59,3 +59,10 @@ GONE Clinical Project Manager (first seen 2026-10-11)
 GONE Talent Acquisition Partner – Scientific Operations (first seen 2026-10-14)
 (2026-10-23T12:11:12)
 
+board-watch pharmaron_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Pharmaron&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-10-24T11:41:38)
+
+Pharmaron board-watch 2026-10-24: +1 new, -0 gone (36 active [pharmaron_us_fulltime])
+NEW Associate Director, Pharmacovigilance | United States |  — 25 applicants | https://pharmaron.isolvedhire.com/jobs/1890727
+(2026-10-24T11:41:38)
+
