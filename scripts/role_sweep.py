@@ -41,6 +41,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import urllib.error
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -150,6 +151,99 @@ def _env(name: str) -> str:
             if line.startswith(f"{name}="):
                 v = line.split("=", 1)[1].strip().strip('"')
     return v
+
+
+def _firecrawl_keys() -> list[str]:
+    """[S47 fleet] ALL firecrawl keys in rotation order — mirrors
+    site_boards._firecrawl_keys (S46): env FIRECRAWL_KEYS (comma/space
+    separated) → env FIRECRAWL_API_KEY → ingest/.env lines
+    (FIRECRAWL_KEYS= then FIRECRAWL_API_KEY=, in file order; multiple
+    lines accumulate). Deduped, order-preserving. The org lanes get the
+    fleet via the INGEST_ENV-materialized ingest/.env (the vault blob
+    carries FIRECRAWL_KEYS since 2026-10-24)."""
+    keys: list[str] = []
+
+    def _add(val: str) -> None:
+        for k in re.split(r"[,\s]+", val or ""):
+            k = k.strip()
+            if k and k not in keys:
+                keys.append(k)
+
+    _add(os.environ.get("FIRECRAWL_KEYS", ""))
+    _add(os.environ.get("FIRECRAWL_API_KEY", ""))
+    if (REPO / "ingest/.env").exists():
+        for line in (REPO / "ingest/.env").read_text().splitlines():
+            line = line.strip()
+            if line.startswith("FIRECRAWL_KEYS="):
+                _add(line.partition("=")[2].strip())
+            elif line.startswith("FIRECRAWL_API_KEY="):
+                _add(line.partition("=")[2].strip())
+    return keys
+
+
+def _fleet_credits() -> tuple[int, str]:
+    """[S47 fleet] Sum remaining credits across the WHOLE fleet (the
+    single-key preflight dies at key[0] exhaustion while 3 funded keys
+    idle — the S47-A1/A2-1 audit finding). Returns (total, status);
+    per-key failures are tolerated (one dead key ≠ fleet-dead)."""
+    keys = _firecrawl_keys()
+    if not keys:
+        return 0, "no-key"
+    total = 0
+    dead = 0
+    for k in keys:
+        try:
+            d = _http_json("https://api.firecrawl.dev/v1/team/credit-usage",
+                           headers={"Authorization": f"Bearer {k}"})
+            total += int((d.get("data") or {}).get("remaining_credits", 0)
+                         or 0)
+        except Exception:                       # noqa: BLE001
+            dead += 1                           # best-effort per key
+    status = "ok" if total > 0 else f"fleet-exhausted"
+    if dead and total:
+        status += f" ({dead}/{len(keys)} key(s) unreachable)"
+    return total, status
+
+
+def _fc_scrape(payload: dict, timeout: int = 120) -> tuple[dict | None, str]:
+    """[S47 fleet] firecrawl /scrape with KEY ROTATION — tries each
+    fleet key in order; on per-key auth/quota failure (401/402/403 or
+    the API's payment_required error) moves to the next key. Returns
+    (parsed_response | None, status). A fleet-wide failure returns
+    (None, 'fleet:<reason>') so callers record the honest verdict."""
+    keys = _firecrawl_keys()
+    if not keys:
+        return None, "no-key"
+    last = ""
+    for k in keys:
+        try:
+            d = _http_json(
+                "https://api.firecrawl.dev/v2/scrape",
+                data=json.dumps(payload).encode(),
+                headers={"Content-Type": "application/json",
+                         "Authorization": f"Bearer {k}"}, timeout=timeout)
+        except urllib.error.HTTPError as h:
+            last = f"http{h.code}"
+            if h.code in (401, 402, 403):       # key-level: rotate
+                continue
+            return None, f"http{h.code}"        # e.g. 500: caller retries
+        except Exception as exc:                # noqa: BLE001
+            last = f"error:{type(exc).__name__}"
+            continue                             # network-ish: next key
+        if not d.get("success"):
+            err = str(d.get("error") or "")
+            if ("payment" in err.lower()
+                    or "credit" in err.lower()
+                    or "quota" in err.lower()):
+                last = "key-exhausted"
+                continue                         # key-level: rotate
+            return None, f"api-fail:{err[:40]}"
+        return d, "ok"
+    return None, f"fleet:{last or 'exhausted'}"
+
+
+# short aliases (cross-module use — jd_refetch imports these)
+_fc_keys = _firecrawl_keys
 
 
 # ── usgate (design §4 — per-source priors, no silent defaults) ──────────────
@@ -569,15 +663,16 @@ def fetch_gj_role(queries: list[str]) -> tuple[list[dict], str]:
     S38 §2a/F17: transport errors retry ×3 (30/45s backoff — proven:
     6/6 queries recovered under backoff this round); cardless shells
     do NOT retry (a shell pages shells again)."""
-    key = _env("FIRECRAWL_API_KEY")
-    if not key:
+    if not _firecrawl_keys():
         return [], "no-key"
+    # S47 fleet: the preflight sums the WHOLE fleet (a dead key[0]
+    # no longer darkens gj while 3 funded keys idle — the S47-A1/A2-1
+    # audit finding). CREDIT_PREFLIGHT_MIN gates the fleet total.
+    fleet_total, fleet_status = _fleet_credits()
     try:
-        d = _http_json("https://api.firecrawl.dev/v2/team/credit-usage",
-                       headers={"Authorization": f"Bearer {key}"})
-        remaining = (d.get("data") or {}).get("remainingCredits", 0)
-        if remaining < CREDIT_PREFLIGHT_MIN:
-            return [], (f"preflight-fail:credits={remaining}")
+        if fleet_total < CREDIT_PREFLIGHT_MIN:
+            return [], (f"preflight-fail:credits={fleet_total}"
+                        f"[{fleet_status}]")
     except Exception:
         pass                       # preflight is best-effort; scrape decides
     rows: list[dict] = []
@@ -587,16 +682,11 @@ def fetch_gj_role(queries: list[str]) -> tuple[list[dict], str]:
                + urllib.parse.quote_plus(q) + "&ibp=htl;jobs&hl=en&gl=us")
         md = ""
         for attempt in range(3):
-            try:
-                d = _http_json(
-                    "https://api.firecrawl.dev/v2/scrape",
-                    data=json.dumps({"url": url, "formats": ["markdown"],
-                                     "onlyMainContent": False,
-                                     "waitFor": 5000}).encode(),
-                    headers={"Content-Type": "application/json",
-                             "Authorization": f"Bearer {key}"}, timeout=120)
-            except Exception as exc:
-                status = f"error:{q[:12]}:{type(exc).__name__}"
+            d, fc_status = _fc_scrape({"url": url, "formats": ["markdown"],
+                                       "onlyMainContent": False,
+                                       "waitFor": 5000})
+            if d is None:
+                status = f"error:{q[:12]}:{fc_status}"
                 if attempt < 2:
                     time.sleep(30 + 15 * attempt)
                     continue
@@ -902,19 +992,13 @@ def _fc_relay_json(url: str, headers: dict) -> tuple[object, str]:
     US egress. data.usajobs.gov works through firecrawl (api.usajobs.gov
     returns IIS 'Invalid Hostname' 400 via relay); the JSON arrives in
     data.markdown markdown-escaped — unescape then parse. Returns
-    (parsed | None, status)."""
-    key = _env("FIRECRAWL_API_KEY")
-    if not key:
+    (parsed | None, status). [S47 fleet] rotates keys via _fc_scrape."""
+    if not _firecrawl_keys():
         return None, "no-fc-key"
-    try:
-        d = _http_json(
-            "https://api.firecrawl.dev/v2/scrape",
-            data=json.dumps({"url": url, "formats": ["markdown"],
-                             "headers": headers}).encode(),
-            headers={"Content-Type": "application/json",
-                     "Authorization": f"Bearer {key}"}, timeout=120)
-    except Exception as exc:
-        return None, f"relay-error:{type(exc).__name__}"
+    d, fc_status = _fc_scrape({"url": url, "formats": ["markdown"],
+                               "headers": headers})
+    if d is None:
+        return None, f"relay-error:{fc_status}"
     if not d.get("success"):
         return None, f"relay-api-fail"
     md = str((d.get("data") or {}).get("markdown") or "")
@@ -1290,9 +1374,9 @@ def fetch_builtin(queries: list[str]) -> tuple[list[dict], str]:
     `?search=` SSR form filters server-side (path URLs SSR a generic
     feed); 25 cards/page. Card markdown: '## [Title](url)' +
     '[Company](company-url)' + posted/location lines. 3 queries × 4
-    pages ≈ 12 firecrawl credits (F13 fleet budget)."""
-    key = _env("FIRECRAWL_API_KEY")
-    if not key:
+    pages ≈ 12 firecrawl credits (F13 fleet budget). [S47 fleet]
+    rotates keys via _fc_scrape."""
+    if not _firecrawl_keys():
         return [], "no-key"
     rows: list[dict] = []
     status = "ok"
@@ -1300,15 +1384,10 @@ def fetch_builtin(queries: list[str]) -> tuple[list[dict], str]:
         for page in range(1, 5):
             url = ("https://www.builtin.com/jobs?search="
                    + urllib.parse.quote_plus(q) + f"&page={page}")
-            try:
-                d = _http_json(
-                    "https://api.firecrawl.dev/v2/scrape",
-                    data=json.dumps({"url": url, "formats": ["markdown"],
-                                     "waitFor": 3000}).encode(),
-                    headers={"Content-Type": "application/json",
-                             "Authorization": f"Bearer {key}"}, timeout=120)
-            except Exception as exc:
-                status = f"error:{q[:12]}:{type(exc).__name__}"
+            d, fc_status = _fc_scrape({"url": url, "formats": ["markdown"],
+                                        "waitFor": 3000})
+            if d is None:
+                status = f"error:{q[:12]}:{fc_status}"
                 break
             if not d.get("success"):
                 status = f"api-fail:{q[:12]}"
@@ -2328,37 +2407,130 @@ if __name__ == "__main__":
     sys.exit(main())
 
 
+_ZP_CARD = re.compile(
+    r"\[(?P<company>[^\]!][^\]]{1,90})\]"
+    r"\(https://www\.ziprecruiter\.com/co/(?P<coslug>[^)\s]+)"
+    r"[^)]*\)\s*\n+(?:\s*\n)*"
+    r"##\s+(?P<title>[^\n]{3,140})\s*\n+"
+    r"(?:\s*\n)*"
+    r"\[(?P<loc>[^\]]{2,80})\]\("
+    r"https://www\.ziprecruiter\.com/jobs-search[^)]*\)"
+    r"(?P<rest>(?:(?!https://www\.ziprecruiter\.com/co/).)*?)(?="
+    r"\[https?://|\[|\Z|https://www\.ziprecruiter\.com/co/)",
+    re.DOTALL)
+
+
+def _zp_posted(text: str) -> str:
+    """Best-effort freshness from a ziprecruiter card block: 'Posted
+    today' → today; 'Nd ago'/'N days ago' → the relative date."""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    if re.search(r"Posted today", text):
+        return today
+    m = re.search(r"(?P<n>\d+)\s*(d|day|days)\s*ago", text)
+    if m:
+        try:
+            d = (datetime.now(timezone.utc)
+                 - timedelta(days=int(m.group("n")))).strftime("%Y-%m-%d")
+            return d
+        except Exception:                        # noqa: BLE001
+            pass
+    if re.search(r"\bNew\b", text):
+        # ziprecruiter's 'New' badge = <~3 days old; stamp 2d as the
+        # honest midpoint (never inflate to today on the badge alone)
+        return ((datetime.now(timezone.utc) - timedelta(days=2))
+                .strftime("%Y-%m-%d"))
+    return ""
+
+
 def fetch_ziprecruiter(queries: list[str],
                        location: str | None = None) -> tuple[list[dict], str]:
-    """S42 industry v2 (DESIGN-S42 v2 B6): ZipRecruiter via jobspy —
-    the home-services-heavy board the user's "be exhaustive" directive
-    names. Measured 2026-10-22: 403 'blocked: use a proxy' from the HK
-    egress; the ZenRows chain is 402 (credits exhausted). The channel
-    is wired attempt-and-record — the honest verdict IS the
-    measurement, and it auto-reopens the day a transport clears
-    (firecrawl re-arm post-Oct-24 or ZenRows credits). NOT in the
-    family roster until it yields (a permanent error line in every
-    sweep envelope is noise; an industry-lane verdict is a record)."""
+    """S42 industry v2 (DESIGN-S42 v2 B6) → **S47 firecrawl transport**:
+    ZipRecruiter was 403-jobspy/402-ZenRows for a year of probes; the
+    S47 fleet probe (2026-10-24) measured the firecrawl scrape OPEN —
+    '591 hvac office coordinator jobs in United States', cards carry
+    company/title/loc/salary/freshness (SERP cards expose NO per-job
+    hrefs — client-side handlers only, verified at waitFor=9s; url =
+    the company co/ link, the stable per-company board page).
+
+    Ladder: (1) firecrawl markdown scrape, 1 credit/query, fleet-rotated
+    via _fc_scrape; (2) jobspy attempt-and-record fallback (the S42
+    verdict semantics preserved: blocked:no-yield(403) when walled).
+    Politeness: 1 page/query, 1.5s pacing, fail-soft per query."""
+    rows: list[dict] = []
+    errors = 0
+    loc = location or "United States"
+    if _firecrawl_keys():
+        base = ("https://www.ziprecruiter.com/jobs-search?search="
+                + urllib.parse.quote_plus(queries[0] if queries else "")
+                + "&location=" + urllib.parse.quote_plus(loc))
+        d, fc_status = _fc_scrape({"url": base, "formats": ["markdown"],
+                                    "waitFor": 4000})
+        if d is not None:
+            md = str((d.get("data") or {}).get("markdown") or "")
+            if len(md) >= 1000:
+                for qi, q in enumerate(queries):
+                    url = ("https://www.ziprecruiter.com/jobs-search?search="
+                           + urllib.parse.quote_plus(q)
+                           + "&location=" + urllib.parse.quote_plus(loc))
+                    if qi == 0:
+                        d2, st2 = d, "ok"          # the probe IS q[0]
+                    else:
+                        d2, st2 = _fc_scrape(
+                            {"url": url, "formats": ["markdown"],
+                             "waitFor": 4000})
+                    if d2 is None:
+                        errors += 1
+                        continue
+                    md2 = str((d2.get("data") or {}).get("markdown") or "")
+                    for m in _ZP_CARD.finditer(md2):
+                        g = m.groupdict()
+                        coslug = (g["coslug"] or "").split("/Jobs")[0]
+                        co_url = ("https://www.ziprecruiter.com/co/"
+                                  + coslug)
+                        rows.append({
+                            "title": g["title"].strip(),
+                            "company": g["company"].strip(),
+                            "loc": re.sub(r"\s*·.*", "", g["loc"]).strip(),
+                            "url": co_url,
+                            "posted": _zp_posted(g["rest"] or ""),
+                            "desc": (g["title"] + "\n" + g["loc"]
+                                     + "\n" + (g["rest"] or ""))[:600],
+                            "source": "ziprecruiter", "layer": "l1.5",
+                            "query": q,
+                            "rid": (f"ziprecruiter:{coslug}:"
+                                    + re.sub(r"[^a-z0-9]", "",
+                                             g["title"].lower())[:60]),
+                        })
+                    time.sleep(1.5)
+                if rows:
+                    return rows, "ok:firecrawl"
+                if errors == 0 and md:
+                    return [], "blocked:firecrawl-empty"  # shell/no cards
+            else:
+                errors += 1                        # shell page — fall through
+        else:
+            errors += 1                            # fleet failure — fall
+    # (2) jobspy fallback — attempt-and-record (the S42 doctrine)
     try:
         from jobspy import scrape_jobs  # noqa: PLC0415
     except ImportError:
-        return [], "not-installed"
-    rows: list[dict] = []
-    errors = 0
+        if rows:
+            return rows, "ok:firecrawl"
+        return [], "not-installed" if errors else "no-key"
     for q in queries:
         try:
             jobs = scrape_jobs(site_name=["zip_recruiter"],
                                search_term=q,
-                               location=location or "United States",
+                               location=loc,
                                results_wanted=100, hours_old=24 * 30)
             if not hasattr(jobs, "iterrows"):
                 continue
             for _, j in jobs.iterrows():
-                loc = j.get("location")
+                jl = j.get("location")
                 rows.append({
                     "title": str(j.get("title") or ""),
                     "company": str(j.get("company") or ""),
-                    "loc": "" if not isinstance(loc, str) else loc,
+                    "loc": "" if not isinstance(jl, str) else jl,
                     "url": str(j.get("job_url") or ""),
                     "posted": str(j.get("date_posted") or "")[:10],
                     "desc": str(j.get("description") or "")[:12000],
@@ -2379,35 +2551,128 @@ def fetch_ziprecruiter(queries: list[str],
         f"blocked:x{errors}"
 
 
+_GD_CARD = re.compile(
+    r"\[(?P<title>[^\]]{3,140})\]"
+    r"\(https://www\.glassdoor\.com/job-listing/(?P<slug>[^)\s]+)"
+    r"\?jl=(?P<jid>\d+)\)")
+
+
+def _gd_company(md: str, start: int, slug: str, title: str) -> str:
+    """Company for a glassdoor card: the nearest preceding `- Company`
+    list item (within ~400 chars), else decoded from the URL slug
+    (`title-slug-company-slug-JV_IC...` — logo cards carry no text)."""
+    look = md[max(0, start - 400):start]
+    for line in reversed(look.splitlines()):
+        line = line.strip()
+        m = re.match(r"^-(?P<co>(?!\[)[^\\n]{2,90})$", line)
+        if m:
+            return m.group("co").strip()
+    # slug fallback: strip the title slug + the JV/IC tail
+    tslug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+    co = slug
+    if tslug and tslug in co:
+        co = co.split(tslug, 1)[-1]
+    co = re.sub(r"-jv.*|-[ij]c_?\d.*", "", co, flags=re.I)
+    co = re.sub(r"-ko\d.*|_ko\d.*", "", co, flags=re.I)
+    return co.strip("- ").replace("-", " ").strip()[:90]
+
+
+def _gd_loc_salary(md: str, start: int) -> tuple[str, str]:
+    """The first short loc line + the first $-line after the card title."""
+    rest = md[start:start + 600]
+    loc = ""
+    sal = ""
+    for line in rest.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        if not loc and 2 <= len(line) <= 80 and "$" not in line \
+                and "Easy Apply" not in line and not line.startswith(
+                    ("!", "[", "-")):
+            loc = line
+        if not sal and "$" in line:
+            sal = line.replace("(Employer provided)", "").strip()
+        if loc and sal:
+            break
+    return loc, sal
+
+
 def fetch_glassdoor_zenrows(queries: list[str],
                             location: str | None = None) -> tuple[
         list[dict], str]:
-    """S42 industry v2: Glassdoor via the job_sourcer ZenRows adapter —
-    the only repo transport (no glassdoor creds for jobspy). Measured
-    2026-10-22: 402 payment-required (ZenRows credits exhausted). Same
-    attempt-and-record doctrine as fetch_ziprecruiter; one query
-    probes the transport, the rest only run when it yields."""
+    """S42 industry v2 → **S47 firecrawl transport**: Glassdoor via the
+    job_sourcer ZenRows adapter was 402 (credits exhausted) since
+    2026-10-22; the S47 fleet probe (2026-10-24) measured the firecrawl
+    scrape OPEN — '4,557 Construction coordinator jobs in United
+    States', cards carry title/job-listing-URL(jl=ID)/company/loc/
+    salary; NO dates in the cards (dateless rows — the merge ladder's
+    dateless-donor + the seed's 2-generation bound handle them).
+
+    Ladder: (1) firecrawl markdown scrape, 1 credit/query, fleet-rotated
+    via _fc_scrape; (2) ZenRows attempt-and-record fallback. Politeness:
+    1 page/query, 2s pacing, fail-soft per query. The name keeps the
+    S42 roster contract (industry_sweep + pins reference it)."""
+    rows: list[dict] = []
+    errors = 0
+    if _firecrawl_keys():
+        probed = False
+        for q in queries:
+            url = ("https://www.glassdoor.com/Job/jobs.htm?sc.keyword="
+                   + urllib.parse.quote_plus(q))
+            d, st = (_fc_scrape({"url": url, "formats": ["markdown"],
+                                 "waitFor": 4000})
+                     if queries and not probed else (None, "skip"))
+            probed = True
+            if d is None:
+                errors += 1
+                if errors >= 2 and not rows:
+                    break                # transport dead — ZenRows leg
+                continue
+            md = str((d.get("data") or {}).get("markdown") or "")
+            for m in _GD_CARD.finditer(md):
+                g = m.groupdict()
+                co = _gd_company(md, m.start(), g["slug"], g["title"])
+                loc, sal = _gd_loc_salary(md, m.end())
+                rows.append({
+                    "title": g["title"].strip(),
+                    "company": co,
+                    "loc": loc,
+                    "url": ("https://www.glassdoor.com/job-listing/"
+                            + g["slug"] + "?jl=" + g["jid"]),
+                    "posted": "",          # glassdoor cards carry no dates
+                    "desc": (g["title"] + "\n" + co + "\n"
+                             + loc + "\n" + sal)[:600],
+                    "source": "glassdoor", "layer": "l1.5",
+                    "query": q,
+                    "rid": f"glassdoor:jl{g['jid']}",
+                })
+            time.sleep(2.0)
+        if rows:
+            return rows, "ok:firecrawl"
+        if errors and errors < len(queries):
+            pass                            # mixed — fall to zenrows leg
+    # (2) ZenRows fallback — attempt-and-record (the S42 doctrine)
     try:
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         import job_sourcer as _js  # noqa: PLC0415
     except Exception as exc:               # noqa: BLE001
-        return [], f"error:{type(exc).__name__}"
+        return rows or [], f"error:{type(exc).__name__}"
     key = _env("ZENROWS_API_KEY")
     if not key:
-        return [], "no-key"
-    rows: list[dict] = []
+        return rows or [], ("blocked:fc-only" if errors
+                            else "no-key")
     for q in queries:
         try:
             got = _js.scrape_glassdoor_zenrows(
                 q, location or "United States", key)
         except Exception as exc:            # noqa: BLE001
-            return rows, f"error:{type(exc).__name__}"
+            return rows or [], f"error:{type(exc).__name__}"
         if not got:                        # 402/transport-dead: stop
-            return rows, "blocked:zenrows" if not rows else "ok"
+            return rows or [], "blocked:zenrows" if not rows else "ok"
         for g in got:
             g.setdefault("source", "glassdoor")
             g.setdefault("layer", "l1.5")
             g["query"] = q
             rows.append(g)
         time.sleep(2.0)
-    return rows, "ok"
+    return rows or [], "ok"

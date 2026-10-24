@@ -104,6 +104,7 @@ tests/test_s40_role_sweep.py
 tests/test_s41_family.py
 tests/test_s41_industry.py
 tests/test_s41_jd_refetch.py
+tests/test_s42_industry.py
 tests/test_s9_titlesearch.py
 tests/test_scoring.py
 tests/test_site_boards.py

@@ -64,6 +64,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "ingest"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+# [S47] the firecrawl fleet (rotation-aware scrape) is shared with the
+# sweep engine — one loader, one key list, org lanes get it via the
+# INGEST_ENV-materialized ingest/.env
+from role_sweep import _fc_keys, _fc_scrape  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
 BUNDLE = REPO / "ingest/data/ui/roles-pm.json"
@@ -131,9 +137,13 @@ SELECT_RULES: dict[str, tuple[int | None, str]] = {
     "findwork": (300, "direct"),
     "gj": (300, "direct"),
     "careerjet": (None, "hk_only"),   # Azure 403 — the HK local leg fills it
+    "glassdoor": (None, "fc_relay"),  # S47: jl= detail URLs, CF-walled
+    # direct — the firecrawl relay (fc_relay transport) fetches them
     "wellfound": (None, "skip"),      # JS-walled
     "li": (None, "skip"),             # guest cards have no desc to fetch
     "board": (None, "skip"),          # Lever/Workday endpoints — v2 transport
+    "ziprecruiter": (None, "skip"),   # S47: SERP rows carry co/ URLs —
+    # not job details; there is nothing to refetch
 }
 PENDING_REASONS = ("no_sector_evidence", "bank_review", "payer_review")
 MIN_FETCH_LEN = 200
@@ -193,7 +203,12 @@ def _load_bundle() -> list[dict]:
 
 def _select_targets(jobs: list[dict], transport_filter: str) -> list[dict]:
     """Pending rows ∧ per-source fullness bar ∧ transport allowlist.
-    Board-employer rows are out (the JobLeads class — redirect shells)."""
+    Board-employer rows are out (the JobLeads class — redirect shells).
+    [S47] fc_relay is a SUPERSET transport: it fetches direct + hk_only
+    rows (firecrawl = US egress + stealth; 1 credit/detail page) — the
+    post-Oct-24 override the cache comments always promised."""
+    _ok = ({"direct", "hk_only"} if transport_filter == "fc_relay"
+           else {transport_filter})
     out = []
     for r in jobs:
         reason = r.get("sectorReason") or ""
@@ -204,9 +219,9 @@ def _select_targets(jobs: list[dict], transport_filter: str) -> list[dict]:
         if not rule:
             continue                    # unknown source — not our lane
         min_len, transport = rule
-        if transport != transport_filter:
+        if transport not in _ok:
             continue
-        if transport_filter == "direct" and is_board_employer(
+        if transport_filter in ("direct", "fc_relay") and is_board_employer(
                 r.get("company") or ""):
             continue
         # S42-1: the effective selection bar. Explicit per-source bars
@@ -243,6 +258,35 @@ def _fetch_one(url: str) -> tuple[str, int]:
                 return f"error:{type(e).__name__}", 0
             time.sleep(1.2)
     return "error:unreachable", 0
+
+
+def _fetch_one_fc(url: str) -> tuple[str, int]:
+    """[S47] firecrawl-transport detail fetch — US egress + JS render
+    (waitFor) + stealth: the override for rows the direct leg measured
+    terminal-4xx (jooble 403s, careerjet CF) and thin-shell q:too_short
+    captures. 1 credit/row, fleet-rotated. Returns (text, http_status)
+    shaped exactly like _fetch_one so the same store-time gates run."""
+    # himalayas double-prefix unwrap (shared with _fetch_one)
+    m = re.match(r"^(https?://himalayas\.app/jobs/)(https?://.+)$", url)
+    if m:
+        url = m.group(2)
+    keys = _fc_keys()
+    if not keys:
+        return "error:no-fc-key", 0
+    d, st = _fc_scrape({"url": url, "formats": ["markdown"],
+                        "onlyMainContent": True, "waitFor": 2500})
+    if d is None:
+        # fleet-level failure string: http### / fleet:* / no-key
+        if st.startswith("http"):
+            try:
+                code = int(st.split("http")[1])
+                return f"http-error:{code}", code
+            except ValueError:
+                pass
+        return f"error:{st[:40]}", 0
+    md = str((d.get("data") or {}).get("markdown") or "")
+    text = re.sub(r"[ \t]+", " ", md).strip()[:MAX_FETCH_LEN]
+    return text, 200
 
 
 def _quality_reject(text: str) -> str:
@@ -298,10 +342,14 @@ def _snapshot_pending(jobs: list[dict]) -> set[str]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--transport", choices=["direct", "hk_only"],
+    ap.add_argument("--transport",
+                    choices=["direct", "hk_only", "fc_relay"],
                     default="direct",
                     help="direct = the GHA lane (Azure); hk_only = the "
-                         "careerjet class, run from the HK sandbox")
+                         "careerjet class, run from the HK sandbox; "
+                         "fc_relay = the S47 firecrawl transport "
+                         "(superset: direct+hk_only rows, US egress, "
+                         "1 credit/row)")
     ap.add_argument("--family", choices=["pm", "dmm"], default="pm",
                     help="which family bundle to refill (the cache is "
                          "shared, keyed (source,url))")
@@ -319,12 +367,24 @@ def main() -> int:
     # failures (http-error:403/404/410/418 = an ANSWER, not a retry
     # signal; re-burning every leg on a 403 wall wastes the daily
     # budget — the lane-1 measurement: 130 jooble 403s re-fetched per
-    # leg). Only 5xx/network errors (transient class) re-try, and the
-    # firecrawl relay (post-Oct-24) overrides via newer fetched_at.
+    # leg). Only 5xx/network errors (transient class) re-try.
+    # [S47] TRANSPORT-AWARE override: a terminal verdict is terminal
+    # ONLY for the transport that measured it — an fc_relay leg re-
+    # attempts the direct legs' 403/q: verdicts (US egress + JS render
+    # is a genuinely new chance), and direct legs never re-burn the
+    # fc_relay verdicts. 'ok' from ANY transport stays resolved.
     def _resolved(key: str) -> bool:
-        st = cache.get(key, {}).get("status", "")
-        return (st == "ok" or st.startswith("q:")
-                or st.startswith("http-error:4"))
+        ent = cache.get(key, {})
+        st = ent.get("status", "")
+        if st == "ok":
+            return True
+        same_transport = (ent.get("transport", "direct")
+                          == args.transport)
+        if st.startswith("q:"):
+            return same_transport or ent.get("transport", "") == ""
+        if st.startswith("http-error:4"):
+            return same_transport
+        return False
     todo = [t for t in targets
             if not _resolved(f"{t['source']}|{t['url']}")]
     print(f"[jd_refetch] bundle={len(jobs)} pending-targets={len(targets)} "
@@ -339,7 +399,10 @@ def main() -> int:
                 or time.time() - t0 > args.budget_seconds):
             break
         url, src = r["url"], r["source"]
-        text, status = _fetch_one(url)
+        if args.transport == "fc_relay":
+            text, status = _fetch_one_fc(url)
+        else:
+            text, status = _fetch_one(url)
         rej = _quality_reject(text)
         key = f"{src}|{url}"
         if rej and not text.startswith(("http-error:", "error:")):

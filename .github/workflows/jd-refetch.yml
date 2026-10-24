@@ -57,6 +57,22 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Materialize ingest/.env from secret (S47 fleet wiring)
+        # The firecrawl KEY FLEET lives in INGEST_ENV (vault blob
+        # carries FIRECRAWL_KEYS since 2026-10-24); single-secret lanes
+        # were fleet-blind — gj/builtin/usajobs/zip/glassdoor dark at a
+        # dead key[0] while 3 funded keys idle (S47-A1/A2-1 audit).
+        env:
+          INGEST_ENV: ${{ secrets.INGEST_ENV }}
+        run: |
+          if [ -n "$INGEST_ENV" ]; then
+            printf '%s\n' "$INGEST_ENV" > ingest/.env
+            echo "ingest/.env materialized ($(wc -l < ingest/.env) lines)"
+          else
+            echo "::warning::INGEST_ENV secret not set — running with the per-secret env fallback"
+          fi
+
+
       - name: Install pipeline
         run: pip install -e "ingest[jobspy]" curl_cffi
 

@@ -270,6 +270,26 @@ if ls "$DEST"/ingest/data/roles/jd_refetch*_state.json \
     git diff --cached --quiet || \
     git commit -q -m "jd_refetch state/report back-sync from org runtime (S42 family twins, S35 rule 5th check)")
 fi
+# S47-A3 (S35 rule 6th check — caught BEFORE it churned): the ats-drain
+# lane rewrites ingest/data/ats_directory.db + ats_directory_snapshot.json
+# on the ORG side every drain (Wed); the archive carries STALE copies
+# (seeded once) — without this copy-back the forward rsync --delete would
+# clobber the org's newer DB with the archive's stale one on EVERY mirror
+# run (a scheduled Wed-drain → any-mirror collision = data loss). The
+# drain's checkpoint is the only writer between mirrors, so org-wins
+# copy-back is the correct merge for the binary DB + snapshot.
+if [ -e "$DEST/ingest/data/ats_directory.db" ]; then
+  mkdir -p "$SRC/ingest/data"
+  cp "$DEST/ingest/data/ats_directory.db" "$SRC/ingest/data/ats_directory.db"
+  if [ -e "$DEST/ingest/data/ats_directory_snapshot.json" ]; then
+    cp "$DEST/ingest/data/ats_directory_snapshot.json" \
+       "$SRC/ingest/data/ats_directory_snapshot.json"
+  fi
+  (cd "$SRC" && git add ingest/data/ats_directory.db \
+    ingest/data/ats_directory_snapshot.json 2>/dev/null; \
+    git diff --cached --quiet || \
+    git commit -q -m "ats_directory back-sync from org runtime (S47-A3, S35 rule 6th check — pre-Wed-10-28)")
+fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
   # S38 fix: roles-pm.json is written on BOTH sides (the GHA lane AND

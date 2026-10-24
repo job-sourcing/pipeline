@@ -9697,13 +9697,22 @@ class A123Adapter:
 # ═══════════════════════════════════════════════════════════════════════
 
 
-def _firecrawl_key() -> str:
-    """FIRECRAWL_API_KEY from the process env, else ingest/.env (the
-    GHA runtime materializes INGEST_ENV to that file; the key is not
-    in Config's env_map because only the S31 CF boards use it)."""
-    key = os.environ.get("FIRECRAWL_API_KEY", "")
-    if key:
-        return key
+def _firecrawl_keys() -> list[str]:
+    """[S46 fleet] ALL firecrawl keys in rotation order — the owner
+    issued a key FLEET (2026-10-23) to expand scrape capacity: env
+    FIRECRAWL_KEYS (comma/space separated) → env FIRECRAWL_API_KEY →
+    ingest/.env lines (FIRECRAWL_KEYS= then FIRECRAWL_API_KEY=, in
+    file order; multiple lines accumulate). Deduped, order-preserving."""
+    keys: list[str] = []
+
+    def _add(val: str) -> None:
+        for k in re.split(r"[,\s]+", val or ""):
+            k = k.strip()
+            if k and k not in keys:
+                keys.append(k)
+
+    _add(os.environ.get("FIRECRAWL_KEYS", ""))
+    _add(os.environ.get("FIRECRAWL_API_KEY", ""))
     try:
         envp = (Config._REPO_ROOT if hasattr(Config, "_REPO_ROOT")
                 else None)
@@ -9713,11 +9722,22 @@ def _firecrawl_key() -> str:
         if p.exists():
             for line in p.read_text().split("\n"):
                 line = line.strip()
-                if line.startswith("FIRECRAWL_API_KEY="):
-                    return line.partition("=")[2].strip()
+                if line.startswith("FIRECRAWL_KEYS="):
+                    _add(line.partition("=")[2].strip())
+                elif line.startswith("FIRECRAWL_API_KEY="):
+                    _add(line.partition("=")[2].strip())
     except Exception:
         pass
-    return ""
+    return keys
+
+
+def _firecrawl_key() -> str:
+    """FIRECRAWL_API_KEY from the process env, else ingest/.env (the
+    GHA runtime materializes INGEST_ENV to that file; the key is not
+    in Config's env_map because only the S31 CF boards use it).
+    [S46 fleet] kept for back-compat: the FIRST key of the fleet."""
+    keys = _firecrawl_keys()
+    return keys[0] if keys else ""
 
 
 def _fetch_text_laddered(url: str, spec: str, cfg: "Config",
@@ -9744,8 +9764,10 @@ def _fetch_text_laddered(url: str, spec: str, cfg: "Config",
             r.raise_for_status()
             text = r.text
         except Exception:
-            key = _firecrawl_key()
-            if key:
+            # [S46 fleet] every key gets a chance — a 401/402/429 on one
+            # key falls through to the next (the fleet order is env-keys
+            # first, then the ingest/.env lines in file order)
+            for key in _firecrawl_keys():
                 try:
                     req = urllib.request.Request(
                         "https://api.firecrawl.dev/v2/scrape",
@@ -9762,6 +9784,8 @@ def _fetch_text_laddered(url: str, spec: str, cfg: "Config",
                     text = str(d.get("html") or "")
                 except Exception:
                     text = ""
+                if text:
+                    break
             if not text:
                 raise exc0 from None
         _TEXT_CACHE[url] = (time.monotonic(), text)

@@ -27,6 +27,11 @@ on:
         default: false
   schedule:
     - cron: "0 13 * * 3"    # Wednesdays 13:00Z
+    # S47-A4: the dmm TAIL queries (10) NEVER ran — no monthly --full
+    # cron (pm has one; dmm was wired without). The 20-title v1 set
+    # covers B4 clusters 1-5 only; the tail + the S47 widened titles
+    # rotate monthly on the 1st.
+    - cron: "0 13 1 * *"    # 1st of month: --full (core + tail queries)
 
 permissions:
   contents: write
@@ -49,6 +54,22 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Materialize ingest/.env from secret (S47 fleet wiring)
+        # The firecrawl KEY FLEET lives in INGEST_ENV (vault blob
+        # carries FIRECRAWL_KEYS since 2026-10-24); single-secret lanes
+        # were fleet-blind — gj/builtin/usajobs/zip/glassdoor dark at a
+        # dead key[0] while 3 funded keys idle (S47-A1/A2-1 audit).
+        env:
+          INGEST_ENV: ${{ secrets.INGEST_ENV }}
+        run: |
+          if [ -n "$INGEST_ENV" ]; then
+            printf '%s\n' "$INGEST_ENV" > ingest/.env
+            echo "ingest/.env materialized ($(wc -l < ingest/.env) lines)"
+          else
+            echo "::warning::INGEST_ENV secret not set — running with the per-secret env fallback"
+          fi
+
+
       - name: Install pipeline + jobspy extra
         run: pip install -e "ingest[jobspy]" curl_cffi
 
@@ -63,7 +84,7 @@ jobs:
           FINDWORK_API_KEY: ${{ secrets.FINDWORK_API_KEY }}
           USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
           USAJOBS_USER_AGENT: ${{ secrets.USAJOBS_USER_AGENT }}
-          FULL_SWEEP: ${{ github.event_name == 'workflow_dispatch' && inputs.full }}
+          FULL_SWEEP: ${{ github.event.schedule == '0 13 1 * *' || (github.event_name == 'workflow_dispatch' && inputs.full) }}
         run: |
           set -e
           ARGS="--family dmm"

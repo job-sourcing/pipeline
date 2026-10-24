@@ -49,8 +49,25 @@ except ImportError:
 
 import requests
 
-OUT_DIR = Path('/home/z/my-project/download')
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+# S47-A2-3 fix: the module-level mkdir crashed at IMPORT time on
+# GHA runners (PermissionError — /home/z is not creatable by the
+# 'runner' user), which masked the glassdoor ZenRows 402 verdict
+# behind an import crash in the industry engine. Lazy + env-overridable.
+OUT_DIR = Path(os.environ.get('JOBSOURCER_OUT_DIR',
+                              '/home/z/my-project/download'))
+
+
+def _ensure_out_dir() -> Path:
+    """Create OUT_DIR on first WRITE, never at import; an unwritable
+    default falls back to the system temp dir (honest, no crash)."""
+    global OUT_DIR
+    try:
+        OUT_DIR.mkdir(parents=True, exist_ok=True)
+    except Exception:
+        import tempfile
+        OUT_DIR = Path(tempfile.gettempdir()) / 'jobsourcer'
+        OUT_DIR.mkdir(parents=True, exist_ok=True)
+    return OUT_DIR
 
 # === Tier 1: Free APIs ===
 
@@ -669,6 +686,7 @@ def main():
         print(f"  {s:20s}: {c} jobs")
     
     # Save
+    _ensure_out_dir()
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     out_file = OUT_DIR / f'jobs_{timestamp}.json'
     out_file.write_text(json.dumps({
