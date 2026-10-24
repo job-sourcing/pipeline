@@ -587,3 +587,24 @@ GONE Sr. Electronics Calibration Technician (2nd Shift) (first seen 2026-09-30)
 GONE Design Engineer II (first seen 2026-09-30)
 (2026-10-23T12:13:48)
 
+board-watch tti_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Techtronic+Industries&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-10-24T11:43:44)
+
+Techtronic Industries board-watch 2026-10-24: +6 new, -9 gone (669 active [tti_us_fulltime])
+NEW Field Sales and Marketing Representative - NE Bradenton, FL | Bradenton, FL | 2026-10-23 | https://tti.wd1.myworkdayjobs.com/TeamTTI-Jobs/job/Bradenton-FL/Field-Sales-and-Marketing-Representative---NE-Bradenton--FL_R79016
+NEW Field Sales and Marketing Representative - San Bernardino, CA | S. San Bernardino, CA | 2026-10-23 | https://tti.wd1.myworkdayjobs.com/TeamTTI-Jobs/job/S-San-Bernardino-CA/Field-Sales-and-Marketing-Representative---San-Bernardino--CA_R79029
+NEW Field Sales and Marketing Representative- Lynchburg, VA | Lynchburg, VA | 2026-10-23 | https://tti.wd1.myworkdayjobs.com/TeamTTI-Jobs/job/Lynchburg-VA/Field-Sales-and-Marketing-Representative--Lynchburg--VA_R79017
+NEW Field Sales and Marketing Representative- Pompano Beach, FL | Pompano Beach, FL | 2026-10-23 | https://tti.wd1.myworkdayjobs.com/TeamTTI-Jobs/job/Pompano-Beach-FL/Field-Sales-and-Marketing-Representative--Pompano-Beach--FL_R79022
+NEW Quality Lead - Medical | Anderson, SC | 2026-10-23 | https://tti.wd1.myworkdayjobs.com/TTI_PE/job/Anderson-SC/Quality-Lead---Medical_R79018
+NEW Tool & Die Maker | Mukwonago, WI | 2026-10-23 | https://tti.wd1.myworkdayjobs.com/Milwaukee/job/Mukwonago-WI/Tool---Die-Maker_R79024
+GONE Field Sales and Marketing Representative- Cookeville, TN (first seen 2026-09-30)
+GONE Field Sales & Marketing Representative - Rosenberg, TX (Houston) (first seen 2026-09-30)
+GONE Field Sales and Marketing Representative - OKC, TX (MSR) (first seen 2026-09-30)
+GONE Shipping & Receiving Clerk (first seen 2026-09-30)
+GONE Material Handler - A Shift (first seen 2026-09-30)
+GONE Field Sales and Marketing Representative - Flushing, NY (first seen 2026-09-30)
+GONE Field Sales & Marketing Representative - Katy, TX (first seen 2026-09-30)
+GONE Field Sales and Marketing Representative- Durham, NC (first seen 2026-09-30)
+GONE Team Lead 1 - Indirect (first seen 2026-09-30)
+(2026-10-24T11:43:44)
+
