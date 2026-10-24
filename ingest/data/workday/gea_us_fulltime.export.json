@@ -1,9 +1,9 @@
 {
  "label": "gea_us_fulltime",
- "rows": 138,
- "kept": 138,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 142,
+ "kept": 136,
+ "new": 6,
+ "ghosts_dropped": 2,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,7 +11,7 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 7,
  "feed_excluded_state": 0,
- "state_rows": 145,
+ "state_rows": 149,
  "banded": 0,
  "lca_pools": 0,
  "snapshot": "2026-10-24"

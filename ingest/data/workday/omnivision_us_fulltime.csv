@@ -1844,111 +1844,6 @@ On-Call & Availability
 Annual base salary for this role in California, US is expected to be between  $120,000 - $155,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.
 
 EOE/Minorities/Females/Vet/Disability",1824,https://jobs.jobvite.com/ovt/job/o0ePzfwm,,https://www.linkedin.com/jobs/view/4383983279,2026-09-22,182,182 applicants,194,matched,title,2026-09-30,2026-09-30T05:58:47,2026-10-24,,226,startDate,true,0,,,,,,2026-03-12,,false,,,,,,
-ogBLAfwW,Sr. Linux Engineer (Contract),OmniVision,,,,2026-09-08,46,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"Pay rate : $60/hr - $75/hr
-
-Duration : 12  months contract
-
-As a Sr. Linux Engineer, you will play a pivotal role in ensuring the stability, security, and efficiency of our Linux server infrastructure and Virtual Desktop Infrastructure (VDI). Your responsibilities will encompass a broad spectrum of technical tasks, requiring both deep expertise in Linux systems administration and the ability to innovate and automate solutions to enhance operational efficiency and manage a wide range of activities, including the architecture, planning, implementation, design, capacity management, and operational support for the Linux Virtual and Physical infrastructure for an on-premises environment. This role also supports Electronic Design Automation (EDA) compute environments, including EDA tools administration and IBM LSF job scheduler management.
-
-Job Responsibilities
-
-• Oversee and execute system-based projects, write scripts to automate manual processes, and create system documentation and diagrams. Provide system administration and configuration of specialized mission applications and software.
-
-• Strategic Infrastructure Management: Lead the administration, maintenance, and support of our Linux server environment and VDI infrastructure, ensuring optimal performance and scalability to meet the evolving needs of the organization.
-
-• Automation & Configuration Management: Lead the design, implementation, and optimization of automation solutions leveraging Ansible and Ansible AWX for configuration management, provisioning, and orchestration of Linux servers and infrastructure components. Develop and maintain Ansible playbooks and AWX workflows to automate routine tasks, streamline system deployments, and enhance operational efficiency across the Linux environment.
-
-• EDA & IBM LSF Support: Administer and support Electronic Design Automation (EDA) software applications and compute environments. Configure, maintain, and troubleshoot the IBM LSF job scheduler, including queue configuration, resource allocation, license integration, and job throughput optimization to support engineering compute workloads.
-
-• Incident Resolution and Technical Escalations: Act as a point of escalation for complex technical issues, leveraging advanced troubleshooting skills to swiftly diagnose and resolve incidents, minimizing impact on business operations.
-
-• Advanced Problem Analysis and Resolution: Conduct in-depth analysis of system problems, particularly those related to hardware, EDA software applications, job scheduling systems, and operating system servers, employing sophisticated diagnostic techniques to implement effective solutions.
-
-• Comprehensive Documentation and Knowledge Management: Develop and maintain comprehensive documentation, including automation scripts and procedures, to streamline troubleshooting processes, enhance team collaboration, and ensure continuity of operations.
-
-• Root Cause Analysis and Problem Management: Lead root cause analysis efforts for critical problems and major incidents, identifying underlying issues and implementing preventive measures to mitigate future occurrences, thereby safeguarding business continuity.
-
-• Proactive Performance Monitoring and Security Compliance: Utilize advanced monitoring tools and command-line interface utilities to continuously assess server performance, identify potential vulnerabilities, and ensure adherence to stringent security standards.
-
-• Change Management and Risk Mitigation: Spearhead the planning, coordinating, and executing of system software upgrades, patches, and firmware updates, meticulously evaluating risks and impacts to minimize disruptions and maintain system integrity.
-
-• On-call Support and Vendor Coordination: Provide responsive support during both regular business hours and after-hours as part of on-call rotations, collaborating closely with external vendors, internal stakeholders, and cross-functional teams to swiftly resolve issues and optimize service delivery.
-
-• Continuous Improvement Initiatives: Proactively identify opportunities for process enhancements and technical innovations, advocating for adopting best practices and driving efficiency gains across the IT infrastructure landscape.
-
-• Effective Communication and Stakeholder Engagement: Interface with IT management, end-users, and departmental teams to communicate feedback, share insights, and champion initiatives aimed at enhancing operational excellence and delivering exceptional service quality.
-
-• By embracing these responsibilities, you will not only elevate the performance and reliability of our Linux infrastructure but also play a pivotal role in driving strategic initiatives that propel our organization toward greater technological innovation and business success.
-
-Job Requirements
-
-• BS degree or equivalent experience.
-
-• 5+ years of experience as a Linux Engineer, with expert-level Linux systems administration; senior candidates should have 10+ years demonstrating advanced, expert-level Linux administration.
-
-• In-depth knowledge and expertise in Linux systems, preferably RedHat / Ubuntu, RedHat Satellite
-
-• Patching and vulnerability management on a monthly basis.
-
-Version Control
-
-SVN, GitLab
-
-Scripting and Automation
-
-Bash, Python, Ansible, Ansible AWX
-
-Applications & Tools
-
-SOS, Jira, Confluence, Nagios, GitHub, Jenkins, Linux Kickstart, Cobbler, Puppet, Chef
-
-EDA Applications & Job Scheduling
-
-Working knowledge of how Electronic Design Automation (EDA) applications function and support their compute environments.
-
-Hands-on experience with the IBM LSF job scheduler, LSF RTM including installation, configuration, queue and resource management, license scheduler integration, and troubleshooting job scheduling issues.
-
-Hardware
-
-Hands-on experience with Dell PowerEdge GPU servers, Dell MX7000 Chassis and MX700 series blade configuration; Cisco UCS blades and rack servers.
-
-Security Tools
-
-Automox, Qualys, Axonius, Splunk SEIM agent deployment
-
-Storage
-
-NFS and iSCSI storage concepts; cron jobs and rsync functionality.
-
-Networking
-
-TCP/IP, VLAN, DNS, load balancing, and security concepts.
-
-Database Maintenance
-
-MySQL, PostgreSQL
-
-Virtualization
-
-Experience with VMware (version 8 and above) and Citrix StoreFront for Linux workloads.
-
-Transferable Skills
-
-• Strong communication and collaboration skills, with the ability to work with a diversity of people.
-
-• Ability to plan, organize, and manage time effectively; analytical problem-solving and project management skills.
-
-• Strong customer service orientation.
-
-• Ability to work independently and as part of a team.
-
-• Willingness to learn and adapt to new technologies and processes.
-
-This is a contract position and is not eligible for visa sponsorship.
-
-We are accepting applications only from candidates who are able to work directly on a W-2 or 1099 basis.
-
-Please note: We are not accepting submissions from third-party agencies, staffing firms, or other intermediaries for this position. Direct candidate applications only.",7031,https://jobs.jobvite.com/ovt/job/ogBLAfwW,,https://www.linkedin.com/jobs/view/4463568237,2026-09-08,55,55 applicants,0,matched,title,2026-09-30,2026-09-30T06:00:31,2026-10-24,,46,startDate,true,0,,,,,,2026-09-08,,false,,,,,,
 oGWKzfwF,Sr. Process Integration Engineer,OmniVision,,,,2026-02-25,241,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"The Process Integration Engineer will use experience with device physics to develop advanced processes to their fullest extent, working in close collaboration with silicon and color foundries, image characterization, modeling and pixel design.
 
 Responsibilities:
@@ -2302,3 +2197,100 @@ Must possess the skills of:
 • Lean Six Sigma Methodologies.
 
 Annual base salary for this role in California, US is expected to be between $100,589 - $105,000. Actual pay will be determined on a number of factors such as relevant skills and experience, and the pay of employees in the similar role.",3293,https://jobs.jobvite.com/ovt/job/oLh1zfwm,,,,,,,no_match,,2026-09-30,,2026-10-24,,186,startDate,true,0,,,,,,2026-04-21,,false,,,,,,
+o1p0AfwK,Sr. Linux Engineer,OmniVision,,,,2026-10-23,1,"Santa Clara, California",1,"Santa Clara, California",false,,United States,,0,"As a Sr. Linux Engineer, you will play a pivotal role in ensuring the stability, security, and efficiency of our Linux server infrastructure and Virtual Desktop Infrastructure (VDI). Your responsibilities will encompass a broad spectrum of technical tasks, requiring both deep expertise in Linux systems administration and the ability to innovate and automate solutions to enhance operational efficiency and manage a wide range of activities, including the architecture, planning, implementation, design, capacity management, and operational support for the Linux Virtual and Physical infrastructure for an on-premises environment. This role also supports Electronic Design Automation (EDA) compute environments, including EDA tools administration and IBM LSF job scheduler management.
+
+Job Responsibilities
+
+• Oversee and execute system-based projects, write scripts to automate manual processes, and create system documentation and diagrams. Provide system administration and configuration of specialized mission applications and software.
+
+• Strategic Infrastructure Management: Lead the administration, maintenance, and support of our Linux server environment and VDI infrastructure, ensuring optimal performance and scalability to meet the evolving needs of the organization.
+
+• Automation & Configuration Management: Lead the design, implementation, and optimization of automation solutions leveraging Ansible and Ansible AWX for configuration management, provisioning, and orchestration of Linux servers and infrastructure components. Develop and maintain Ansible playbooks and AWX workflows to automate routine tasks, streamline system deployments, and enhance operational efficiency across the Linux environment.
+
+• EDA & IBM LSF Support: Administer and support Electronic Design Automation (EDA) software applications and compute environments. Configure, maintain, and troubleshoot the IBM LSF job scheduler, including queue configuration, resource allocation, license integration, and job throughput optimization to support engineering compute workloads.
+
+• Incident Resolution and Technical Escalations: Act as a point of escalation for complex technical issues, leveraging advanced troubleshooting skills to swiftly diagnose and resolve incidents, minimizing impact on business operations.
+
+• Advanced Problem Analysis and Resolution: Conduct in-depth analysis of system problems, particularly those related to hardware, EDA software applications, job scheduling systems, and operating system servers, employing sophisticated diagnostic techniques to implement effective solutions.
+
+• Comprehensive Documentation and Knowledge Management: Develop and maintain comprehensive documentation, including automation scripts and procedures, to streamline troubleshooting processes, enhance team collaboration, and ensure continuity of operations.
+
+• Root Cause Analysis and Problem Management: Lead root cause analysis efforts for critical problems and major incidents, identifying underlying issues and implementing preventive measures to mitigate future occurrences, thereby safeguarding business continuity.
+
+• Proactive Performance Monitoring and Security Compliance: Utilize advanced monitoring tools and command-line interface utilities to continuously assess server performance, identify potential vulnerabilities, and ensure adherence to stringent security standards.
+
+• Change Management and Risk Mitigation: Spearhead the planning, coordinating, and executing of system software upgrades, patches, and firmware updates, meticulously evaluating risks and impacts to minimize disruptions and maintain system integrity.
+
+• On-call Support and Vendor Coordination: Provide responsive support during both regular business hours and after-hours as part of on-call rotations, collaborating closely with external vendors, internal stakeholders, and cross-functional teams to swiftly resolve issues and optimize service delivery.
+
+• Continuous Improvement Initiatives: Proactively identify opportunities for process enhancements and technical innovations, advocating for adopting best practices and driving efficiency gains across the IT infrastructure landscape.
+
+• Effective Communication and Stakeholder Engagement: Interface with IT management, end-users, and departmental teams to communicate feedback, share insights, and champion initiatives aimed at enhancing operational excellence and delivering exceptional service quality.
+
+• By embracing these responsibilities, you will not only elevate the performance and reliability of our Linux infrastructure but also play a pivotal role in driving strategic initiatives that propel our organization toward greater technological innovation and business success.
+
+Job Requirements
+
+• BS degree or equivalent experience.
+
+• 5+ years of experience as a Linux Engineer, with expert-level Linux systems administration; senior candidates should have 10+ years demonstrating advanced, expert-level Linux administration.
+
+• In-depth knowledge and expertise in Linux systems, preferably RedHat / Ubuntu, RedHat Satellite
+
+• Patching and vulnerability management on a monthly basis.
+
+Version Control
+
+SVN, GitLab
+
+Scripting and Automation
+
+Bash, Python, Ansible, Ansible AWX
+
+Applications & Tools
+
+SOS, Jira, Confluence, Nagios, GitHub, Jenkins, Linux Kickstart, Cobbler, Puppet, Chef
+
+EDA Applications & Job Scheduling
+
+Working knowledge of how Electronic Design Automation (EDA) applications function and support their compute environments.
+
+Hands-on experience with the IBM LSF job scheduler, LSF RTM including installation, configuration, queue and resource management, license scheduler integration, and troubleshooting job scheduling issues.
+
+Hardware
+
+Hands-on experience with Dell PowerEdge GPU servers, Dell MX7000 Chassis and MX700 series blade configuration; Cisco UCS blades and rack servers.
+
+Security Tools
+
+Automox, Qualys, Axonius, Splunk SEIM agent deployment
+
+Storage
+
+NFS and iSCSI storage concepts; cron jobs and rsync functionality.
+
+Networking
+
+TCP/IP, VLAN, DNS, load balancing, and security concepts.
+
+Database Maintenance
+
+MySQL, PostgreSQL
+
+Virtualization
+
+Experience with VMware (version 8 and above) and Citrix StoreFront for Linux workloads.
+
+Transferable Skills
+
+• Strong communication and collaboration skills, with the ability to work with a diversity of people.
+
+• Ability to plan, organize, and manage time effectively; analytical problem-solving and project management skills.
+
+• Strong customer service orientation.
+
+• Ability to work independently and as part of a team.
+
+• Willingness to learn and adapt to new technologies and processes.
+
+Please note: We are not accepting submissions from third-party agencies, staffing firms, or other intermediaries for this position. Direct candidate applications only.",6794,https://jobs.jobvite.com/ovt/job/o1p0AfwK,,https://www.linkedin.com/jobs/view/4482300059,2026-10-23,25,among first 25,0,matched,,2026-10-24,2026-10-24T11:44:21,2026-10-24,,1,startDate,false,0,,,,,,2026-10-23,,true,,,,,,

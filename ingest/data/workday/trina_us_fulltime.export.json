@@ -1,9 +1,9 @@
 {
  "label": "trina_us_fulltime",
- "rows": 4,
- "kept": 4,
+ "rows": 3,
+ "kept": 3,
  "new": 0,
- "ghosts_dropped": 0,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,7 +11,7 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 23,
  "feed_excluded_state": 0,
- "state_rows": 27,
+ "state_rows": 26,
  "banded": 0,
  "lca_pools": 7,
  "snapshot": "2026-10-24"

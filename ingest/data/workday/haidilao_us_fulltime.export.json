@@ -1,9 +1,9 @@
 {
  "label": "haidilao_us_fulltime",
- "rows": 59,
- "kept": 59,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 63,
+ "kept": 58,
+ "new": 5,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,7 +11,7 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 59,
+ "state_rows": 63,
  "banded": 0,
  "lca_pools": 4,
  "snapshot": "2026-10-24"
