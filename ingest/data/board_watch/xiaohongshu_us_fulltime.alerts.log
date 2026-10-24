@@ -67,3 +67,6 @@ Xiaohongshu board-watch 2026-10-21: +0 new, -1 gone (17 active [xiaohongshu_us_f
 GONE 风控研发工程师 Risk Engineer, US (first seen 2026-09-24)
 (2026-10-21T12:36:34)
 
+board-watch xiaohongshu_us_fulltime EGRESS-BLOCKED: list fetch unreachable from THIS egress (declared egress_restricted='gha_us'; URLError: <urlopen error _ssl.c:993: The handshake operation timed out>) — EGRESS-BLOCKED, state untouched; streak 1/14
+(2026-10-24T11:49:48)
+
