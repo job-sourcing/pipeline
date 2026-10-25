@@ -1,9 +1,9 @@
 {
  "label": "temu_us_fulltime",
- "rows": 24,
- "kept": 24,
+ "rows": 22,
+ "kept": 22,
  "new": 0,
- "ghosts_dropped": 0,
+ "ghosts_dropped": 2,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 24,
+ "state_rows": 22,
  "banded": 0,
  "lca_pools": 0,
- "snapshot": "2026-10-24"
+ "snapshot": "2026-10-25"
 }
