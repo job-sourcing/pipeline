@@ -45,6 +45,27 @@ v2 engine guarantees (the S42-R1 findings):
     on (company_norm, title_norm) — the dba part wins the company key;
     "×N locations" printed per role.
 
+v2.2 (S47-B — DESIGN-S47 §6, findings-a2-industry §1, the P2 round):
+  1. rollup n_locations = DISTINCT loc strings + n_rows (A2-4/F19 —
+     740/3,964 groups were inflated by row counts).
+  2. rollup KEYS strip trailing city/state + salary suffixes
+     (A2-5/F19 — key-only re-derivation, raw titles unchanged; the
+     report says so).
+  3. per-source kept prints via the roster↔row-source alias map + the
+     FULL head list (A2-6 — 'kept None' for 5 wide sources; the
+     [:300] cap hid every wide-source group, li kept 227 invisible).
+  4. per_query {source: {query: {raw, kept}}} persisted in the
+     artifact + the query string per kept row (A2-10/F20 — only the
+     titleMatchedQuery boolean survived before).
+  5. the jd_cache consult wired before the industry-affirm gate
+     (A2-11 — the role_sweep hook: strictly-longer + overlap-gated;
+     908 ok JDs sat idle for industry rows). Fail-soft.
+  6. dice freshness cap: >60d posted rows drop with a labeled
+     counter (A2-9 — the only >60d kept rows, max 177d).
+  7. adzuna category STAMP (sectorEvidence=adzuna_category:<tag>),
+     never a filter (§6.7/A2-B7 — the 1.8× cut amputates the
+     admin/sales-classified office slice).
+
 Outputs:
   ingest/data/industry/<slug>.json         rows + envelope (all gates
                                            labeled — a measuring
@@ -68,6 +89,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "ingest"))
 
 import role_sweep  # noqa: E402
 from jobsearch.geo_levels import (  # noqa: E402
+    BAY_AREA,
+    US_STATES,
     region_tag,
     us_region_tag,
     industrial_level_tag,
@@ -224,7 +247,77 @@ _DBA_PAT = re.compile(r"\bdba\b|\bd\.b\.a\.\b", re.I)
 _CORP_SUFFIX = re.compile(
     r"\b(?:inc|llc|l\.l\.c\.?|co\b|corp|corporation|ltd|company|"
     r"plc|gp|lp)\b\.?$", re.I)
-_LOC_PAREN = re.compile(r"\s*[-–—(]\s*[^)]*[A-Z]{2}[^)]*\)?\s*$")
+
+# S47-B §6.2 (A2-5, F19): title-embedded city/salary suffixes split
+# rollup keys — "Project Coordinator - Construction | Becker, MN",
+# "… - Base Salary to 100k/year - Warren, MI" (Michael Page style)
+# and "Estimator in Los Angeles" are ONE role posted from many
+# branches (the audit measured 41 keys carrying embedded
+# city/state fragments). KEY-only: the row's raw title stays
+# untouched (a labeled metric re-derivation per F19 — the report
+# carries the note). Cities match an ENUMERABLE set (top US metros ∪
+# the geo_levels BAY_AREA belt — the conservative choice: a bare
+# trailing "- Senior" never strips); "City, ST" tails use the
+# us_region_tag state set (the audit's mirror); salary tails need a
+# $ amount, a k/rate unit or a salary word (a bare trailing digit
+# NEVER strips — "Estimator 2" is a level, not a wage).
+_METRO_CITIES = (
+    "new york", "new york city", "nyc", "los angeles", "chicago",
+    "houston", "phoenix", "philadelphia", "san antonio", "san diego",
+    "dallas", "austin", "jacksonville", "fort worth", "columbus",
+    "charlotte", "indianapolis", "seattle", "denver", "washington dc",
+    "washington", "boston", "las vegas", "portland", "louisville",
+    "memphis", "detroit", "baltimore", "milwaukee", "albuquerque",
+    "fresno", "tucson", "mesa", "kansas city", "atlanta", "omaha",
+    "colorado springs", "raleigh", "virginia beach", "long beach",
+    "miami", "minneapolis", "tulsa", "bakersfield", "wichita",
+    "arlington", "anaheim", "honolulu", "tampa", "st louis",
+    "st. louis", "saint louis", "pittsburgh", "cincinnati",
+    "cleveland", "orlando", "new orleans", "salt lake city",
+    "providence", "richmond", "hartford", "buffalo", "rochester",
+)
+_CITY_ALT = "|".join(sorted(set(_METRO_CITIES) | set(BAY_AREA),
+                            key=len, reverse=True))
+_ST_ALT = "|".join(US_STATES)
+_AREA_WORDS = (r"(?:\s+(?:area|metro(?:politan)?|county|region"
+               r"|and\s+(?:surrounding\s+)?areas?))?")
+# a salary amount: $-prefixed, a k/m unit, or a per-rate form —
+# never a bare trailing number
+_AMT = (r"\$\s?\d[\d,\.]*(?:\s?[km])?"
+        r"|\d[\d,\.]*\s?[km](?![a-z])"
+        r"|\d[\d,\.]*(?:\s?(?:/\s*|per\s+)(?:hr|hour|yr|year|annum"
+        r"|week|wk|month))")
+_SAL_WORDS = (r"(?:(?:base\s+)?salary(?:\s+up)?\s+to\s+"
+              r"|(?:base\s+)?salary\s+|pay:?\s+(?:up\s+to\s+)?|"
+              r"wages?\s+|earn(?:ings)?\s+(?:up\s+to\s+)?|making\s+"
+              r"|up\s+to\s+)?")
+_SALARY_TAIL = re.compile(
+    rf"\s*[-–—|,;:]?\s*{_SAL_WORDS}"
+    rf"(?:{_AMT})"
+    rf"(?:\s*(?:[-–—]|\bto\b)\s*(?:{_AMT}))?"
+    rf"\s*\+?"
+    rf"(?:\s*(?:/\s*|per\s+)(?:hr|hour|hrs|yr|year|years|annum"
+    rf"|week|wk|weeks|month|months)|\s+annually|\s+per\s+hour)?"
+    rf"\s*$")
+# trailing "City, ST" (after -, –, —, | or a comma)
+_CITY_ST_TAIL = re.compile(
+    rf"\s*[-–—|,]\s*[a-z][a-z .']*\s*,\s*(?:{_ST_ALT})\s*$")
+# trailing "- <known city>" (+ optional area words / state code)
+_CITY_SEP_TAIL = re.compile(
+    rf"\s*[-–—|]\s*(?:{_CITY_ALT}){_AREA_WORDS}\s*"
+    rf"(?:,\s*(?:{_ST_ALT}))?\s*$")
+# trailing "in <known city>" — the enumerable set is the guard: "Manager
+# in Training" (the MIT program) is a DIFFERENT role from "Manager"
+_IN_CITY_TAIL = re.compile(
+    rf"(?:\s*[-–—|]\s*)?\s*\bin\s+(?:{_CITY_ALT}){_AREA_WORDS}"
+    rf"[a-z .',]*\s*$")
+# paren-location endings on the LOWERCASED key ('… (san jose)', '…
+# (walnut creek, ca)') — supersedes the S42 _LOC_PAREN, which
+# required [A-Z]{2} post-lower and could never fire (dead code the
+# A2-5 audit caught in passing). Known residual, documented: a
+# non-city parenthetical ('(Experience Required)') never strips.
+_LOC_PAREN = re.compile(
+    rf"\s*\(\s*(?:{_CITY_ALT}){_AREA_WORDS}[a-z .',]*\s*\)\s*$")
 
 
 def _company_norm(company: str) -> str:
@@ -240,29 +333,56 @@ def _company_norm(company: str) -> str:
 
 
 def _title_norm(title: str) -> str:
-    """lower + strip trailing location parentheticals ('… (San Jose)'
-    and '… - Walnut Creek') — the same role posted from 15 branches
-    is ONE role in the rollup."""
+    """The ROLLUP-KEY derivation (never shown as a title): lower +
+    strip trailing city/state + salary suffixes innermost-out — the
+    same role posted from 15 branches is ONE role in the rollup.
+    S47-B §6.2 (A2-5/F19): key-only — the row's raw title stays
+    untouched (the report carries the note)."""
     s = (title or "").lower().strip()
-    s = _LOC_PAREN.sub("", s).strip()
+    prev = None
+    while prev != s:
+        prev = s
+        for pat in (_SALARY_TAIL, _CITY_ST_TAIL, _CITY_SEP_TAIL,
+                    _IN_CITY_TAIL, _LOC_PAREN):
+            s = pat.sub("", s).strip()
+        s = s.rstrip("-–—|,;: ").strip()
     return re.sub(r"\s+", " ", s)
 
 
 def _rollup(head: list[dict]) -> list[dict]:
     """Collapse multi-branch head-lined rows: one entry per
-    (company_norm, title_norm), locations collected + counted."""
+    (company_norm, title_norm), locations collected + counted.
+    S47-B §6.1 (A2-4/F19): n_locations = DISTINCT loc strings per
+    key (was rows — 740/3,964 groups were inflated by multi-source
+    duplicates of one posting); n_rows carries the posting count
+    (the branch-count sort stays bit-identical to the old
+    row-count order)."""
     groups: dict[tuple[str, str], dict] = {}
     for r in head:
         k = (_company_norm(r["company"]), _title_norm(r["title"]))
         g = groups.get(k)
         if not g:
-            g = {**r, "locations": [], "n_locations": 0}
+            g = {**r, "locations": [], "n_locations": 0, "n_rows": 0}
             groups[k] = g
         if r["loc"] and r["loc"] not in g["locations"]:
             g["locations"].append(r["loc"])
-        g["n_locations"] += 1
+            g["n_locations"] += 1
+        g["n_rows"] += 1
     return sorted(groups.values(),
-                  key=lambda g: (-g["n_locations"], g["company"]))
+                  key=lambda g: (-g["n_rows"], g["company"]))
+
+
+# S47-B §6.3 (A2-6): roster-name ↔ row-source alias map — rows tag
+# their fetcher's source ('li'), the report/envelope lookups key on
+# the roster name ('li_keyword'); five wide sources printed 'kept
+# None' while li actually kept 227 (invisible — the undercount hid a
+# live source). by_source_kept stays keyed by ROW source (the
+# granular truth: jobicy vs remoteok); the report aggregates.
+_SRC_ALIAS: dict[str, tuple[str, ...]] = {
+    "li_keyword": ("li",),
+    "trio": ("arbeitnow", "jobicy", "remoteok"),
+}
+_SRC_TO_ROSTER = {s: r for r, ss in _SRC_ALIAS.items() for s in ss}
 
 
 # ── the sweep ───────────────────────────────────────────────────────────────
@@ -307,6 +427,18 @@ def _seed_prior(slug: str, ran_at: str) -> list[dict]:
         if 0 <= age <= 60:
             out.append(r)
     return out
+
+
+def _posted_age_days(posted: str, ran_at: str) -> int | None:
+    """Row age in days vs the run date — None = dateless/unparseable
+    (NEVER a staleness drop: the S42-R1 F1 dateless doctrine). The
+    S47-B §6.6 dice gate and the seed union share this 60d bound."""
+    try:
+        return ((datetime.strptime(ran_at[:10], "%Y-%m-%d").date()
+                 - datetime.strptime((posted or "")[:10],
+                                     "%Y-%m-%d").date()).days)
+    except ValueError:
+        return None
 
 
 def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
@@ -374,6 +506,13 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
         env["sources"][name] = "skipped:pm-hardcoded"
     rows: list[dict] = []
     per_source_raw: dict[str, int] = {}
+    # S47-B §6.4 (A2-10/F20): per-query raw/kept yield — {source:
+    # {query: {"raw": N, "kept": M}}} in the artifact (only the
+    # titleMatchedQuery boolean survived before; raw rows were
+    # discarded and the §4 vertical-yield analysis had to run by
+    # token proxy)
+    per_q_raw: dict[str, dict[str, int]] = {}
+    per_q_kept: dict[str, dict[str, int]] = {}
     t0 = time.time()
     for name, fn, args, mode in sources:
         if name in skip_set:
@@ -390,8 +529,17 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
             out, v = [], f"error:{type(exc).__name__}"
         env["sources"][name] = v
         per_source_raw[name] = len(out)
+        qd = per_q_raw.setdefault(name, {})
         for r in out:
             r["_src_mode"] = mode
+            # S47-B §6.3: the roster identity rides the row (rows tag
+            # their fetcher's source — 'li' — while the report keys on
+            # the roster name — 'li_keyword'; seeds lack _roster and
+            # fall back to the alias map at count time)
+            r["_roster"] = name
+            q = r.get("query") or ""
+            if q:
+                qd[q] = qd.get(q, 0) + 1
         rows += out
         print(f"[{industry_slug}:{name}] {len(out)} rows | {v} "
               f"({int(time.time() - t0)}s elapsed)")
@@ -418,6 +566,22 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
     kept: list[dict] = []
     gate_counts: dict[str, int] = {}
     by_source_kept: dict[str, int] = {}
+    # S47-B §6.5 (A2-11): the jd_cache consult setup — the SAME
+    # hook the role_sweep family run() uses (strictly-longer desc +
+    # overlap-gated): a cached FULL JD (jd-refetch lane / local leg,
+    # keyed (source, url)) upgrades a thin API snippet BEFORE the
+    # industry-affirm gate, so the desc tier fires on real text. The
+    # audit measured 908 ok JDs idle for industry rows (the consult
+    # lived only inside the families' run()). Fail-soft: an
+    # absent/unreadable cache is a no-op, recorded in the envelope.
+    try:
+        jd_cache = role_sweep._load_jd_cache()
+        env["jd_cache"] = (f"ok:{len(jd_cache)}entries"
+                           if jd_cache else "absent")
+    except Exception as exc:
+        jd_cache, env["jd_cache"] = {}, f"error:{type(exc).__name__}"
+    jd_cache_hits = 0
+    adzuna_stamped = 0
     seen_urls: set[str] = set()
     for r in rows:
         # light url-identity dedupe (same posting twice via one source)
@@ -433,6 +597,18 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
         loc_s = r.get("loc") or ""
         desc = r.get("desc") or ""
         src = r.get("source") or r.get("_src") or "?"
+        # S47-B §6.6 (A2-9): the dice freshness cap — fetch_dice takes
+        # no date param (adzuna 45d / indeed 30d / li 30d all cap;
+        # dice rode 177d rows into a fresh weekly artifact — the only
+        # >60d kept rows the audit found, 13 of them). The SAME 60d
+        # bound the seed union uses (_seed_prior); the drop is
+        # labeled like every gate.
+        if src == "dice":
+            _age = _posted_age_days(r.get("posted") or "", env["ran_at"])
+            if _age is not None and _age > 60:
+                gate_counts["drop:stale_dice"] = gate_counts.get(
+                    "drop:stale_dice", 0) + 1
+                continue
         if gate == "us":
             reg = us_region_tag(loc_s, title,
                                 origin=r.get("_src_mode") or "wide")
@@ -442,6 +618,21 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
             gate_counts["drop:region_other"] = gate_counts.get(
                 "drop:region_other", 0) + 1
             continue
+        # S47-B §6.5 (A2-11): the consult itself — strictly-longer +
+        # overlap-gated (a garbage-longer capture never replaces a
+        # clean snippet; role_sweep's S41-R1 F3 hook, applied to the
+        # industry keep/grade path). Seeds flow the same loop, so a
+        # cache hit rides a careerjet carry too.
+        jd_cached = False
+        if jd_cache:
+            _cinfo = jd_cache.get(role_sweep._jd_cache_key(src, u))
+            if (_cinfo and _cinfo.get("status") == "ok"
+                    and _cinfo.get("desc_len", 0) > len(desc)
+                    and role_sweep._jd_overlap_ok(desc, _cinfo["desc"],
+                                                    title)):
+                desc = _cinfo["desc"][:2000]
+                jd_cached = True
+                jd_cache_hits += 1
         aff = industry_affirm(ind, company, title, desc)
         if not aff:
             gate_counts["drop:industry_no_affirm"] = gate_counts.get(
@@ -454,6 +645,7 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
                 f"drop:level_{lvl}", 0) + 1
             continue
         staffing = is_staffing_company(company)
+        q = r.get("query") or ""
         kept.append({
             "title": title, "company": company, "loc": loc_s,
             "url": r.get("url") or "", "posted": (r.get("posted")
@@ -465,12 +657,61 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
             "seed": bool(r.get("_seed")),
             "seedGen": int(r.get("seedGen", 0)) + (
                 1 if r.get("_seed") else 0),
+            # S47-B §6.4 (A2-10/F20): the query string persists per
+            # row — only the boolean survived before, so per-query
+            # yield was untraceable from the artifact.
+            "query": q,
             "titleMatchedQuery": bool(r.get("query")),
         })
+        # S47-B §6.7 (A2-B7): STAMP, never filter — the live probe
+        # measured a 1.8× category cut that would amputate the
+        # admin/sales-classified office slice (75 admin-jobs rows on
+        # ONE query); the tag rides the fetcher's adzuna_category
+        # field (stamped on every adzuna row, filtered or not) and
+        # lands as its own row field + sectorEvidence.
+        _cat = (r.get("adzuna_category") or "").strip()
+        if _cat:
+            kept[-1]["adzuna_category"] = _cat
+            kept[-1]["sectorEvidence"] = f"adzuna_category:{_cat}"
+            adzuna_stamped += 1
+        if jd_cached:
+            kept[-1]["jd_cached"] = True
+        if q:
+            _roster = r.get("_roster") or _SRC_TO_ROSTER.get(src, src)
+            qd = per_q_kept.setdefault(_roster, {})
+            qd[q] = qd.get(q, 0) + 1
         gate_counts[f"kept:{lvl}"] = gate_counts.get(f"kept:{lvl}", 0) + 1
         gate_counts[f"kept:region_{reg}"] = gate_counts.get(
             f"kept:region_{reg}", 0) + 1
         by_source_kept[src] = by_source_kept.get(src, 0) + 1
+
+    # S47-B §6.5/§6.7: the non-gate counters ride the ENVELOPE (the
+    # gates dict must stay a pure drop:/kept: ledger — its counters
+    # are the verified sums-to-raw invariant; stamps and consult
+    # hits would double-count there).
+    env["jd_cache_hits"] = jd_cache_hits
+    env["adzuna_category_stamped"] = adzuna_stamped
+    env["source_aliases"] = dict(_SRC_ALIAS)
+
+    # S47-B §6.4 (A2-10/F20): the per-query yield table, bounded at
+    # the registry size per source (the query list is enumerable;
+    # feed pseudo-queries like 'remoteok:feed' count inside the same
+    # bound — largest yields survive a cap). Lands BEFORE §7.5's
+    # completeness gate (F20).
+    per_query: dict[str, dict[str, dict[str, int]]] = {}
+    _cap = max(len(queries), 8)
+    for _roster in set(per_q_raw) | set(per_q_kept):
+        _t: dict[str, dict[str, int]] = {}
+        for _q in (set(per_q_raw.get(_roster, {}))
+                   | set(per_q_kept.get(_roster, {}))):
+            _t[_q] = {"raw": per_q_raw.get(_roster, {}).get(_q, 0),
+                      "kept": per_q_kept.get(_roster, {}).get(_q, 0)}
+        if len(_t) > _cap:
+            _t = dict(sorted(_t.items(),
+                            key=lambda kv: (-(kv[1]["raw"]
+                                             + kv[1]["kept"]),
+                                            kv[0]))[:_cap])
+        per_query[_roster] = _t
 
     # head-lining is TIER-GATED (the lane-1 FP lesson): desc-tier
     # affirms are KEPT as review evidence but never head-lined.
@@ -508,6 +749,8 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
         "headlined_unique": len(rolled),
         "headlined_staffing": staffing_head,
         "where_histogram": where_hist,
+        # S47-B §6.4 (A2-10/F20): the per-query yield table
+        "per_query": per_query,
         "jobs": kept, "headlined_rolled": rolled,
     }, default=str, indent=1))
 
@@ -526,10 +769,25 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
     ]
     for name, v in env["sources"].items():
         raw = per_source_raw.get(name)
-        kept_n = by_source_kept.get(name)
-        extra = (f" (raw {raw}, kept {kept_n})"
-                 if raw is not None else "")
-        lines.append(f"- {name}: {v}{extra}")
+        if raw is None:
+            lines.append(f"- {name}: {v}")
+            continue
+        # S47-B §6.3 (A2-6): the kept lookup aggregates the roster's
+        # ROW-source names (rows tag 'li', the roster is
+        # 'li_keyword' — five wide sources printed 'kept None' while
+        # li actually kept 227, invisible). A source that RAN always
+        # prints a number: 'None' reads as unmeasured.
+        kept_n = sum(by_source_kept.get(s, 0)
+                     for s in (name,) + _SRC_ALIAS.get(name, ()))
+        lines.append(f"- {name}: {v} (raw {raw}, kept {kept_n})")
+    # S47-B §6.5/§6.7/§6.4: the consult + stamp + yield lines
+    lines.append(f"- jd_cache consult: {env['jd_cache']} "
+                 f"({jd_cache_hits} desc upgrades — S47-B §6.5)")
+    lines.append(f"- adzuna category: {adzuna_stamped} stamped, "
+                 f"0 filtered (stamp-don't-filter — DESIGN-S47 §6.7)")
+    lines.append(f"- per-query yield: "
+                 f"{sum(len(v) for v in per_query.values())} "
+                 f"source×query cells persisted (artifact per_query)")
     lines += ["", "## Gate counters", ""]
     for k in sorted(gate_counts):
         lines.append(f"- {k}: {gate_counts[k]}")
@@ -538,10 +796,19 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
                   ""]
         lines.append(f"- {json.dumps(where_hist)}")
     lines += ["", f"## Head-lined roles ({len(rolled)} unique of "
-              f"{len(head)} raw — ×N locations)", ""]
-    for g in rolled[:300]:
-        locs = (f" ×{g['n_locations']} locations"
-                if g["n_locations"] > 1 else "")
+              f"{len(head)} raw — n_rows × n_locations per role) — "
+              f"rollup keys suffix-stripped (trailing city/state + "
+              f"salary tails — DESIGN-S47 §6.2/F19; the rows' raw "
+              f"titles are unchanged)", ""]
+    # S47-B §6.3 (A2-6): the FULL list — the [:300] cap (branch-count
+    # order) hid every wide-source group: li's 140 groups all ranked
+    # ≥335, so a 227-kept source was invisible in the report.
+    for g in rolled:
+        locs = ""
+        if g["n_rows"] > 1:
+            locs = f" · {g['n_rows']} rows"
+            if g["n_locations"] > 1:
+                locs += f" ×{g['n_locations']} locations"
         st = " [staffing]" if g.get("staffingBrand") else ""
         lines.append(
             f"- **{g['title']}** — {g['company']}{st} | "

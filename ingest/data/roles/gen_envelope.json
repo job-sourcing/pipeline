@@ -1,13 +1,16 @@
 {
  "sources": {
-  "locked_endpoints": "skipped:talent,muse,wwr,yc,hn,himalayas,l0_bundle",
+  "locked_endpoints": "skipped:talent,muse,wwr_rss,yc,hn,himalayas,l0_bundle",
   "l0_bundle": "locked_endpoint",
-  "seed_envelope": "ok:7381/8540"
+  "ziprecruiter": "ok:firecrawl",
+  "glassdoor": "ok",
+  "seed_envelope": "ok:8852/9880"
  },
  "layers": {
-  "l0": 0
+  "l0": 0,
+  "l1.5": 385
  },
- "ran_at": "2026-10-24T13:10:52Z",
+ "ran_at": "2026-10-26T04:27:04Z",
  "queries": [
   "office manager",
   "business office manager",
@@ -18,69 +21,48 @@
   "administrative coordinator",
   "receptionist",
   "executive assistant",
-  "front desk coordinator",
-  "bookkeeper",
-  "full charge bookkeeper",
-  "accounting assistant",
-  "accounts payable specialist",
-  "accounts receivable specialist",
-  "billing specialist",
-  "payroll specialist",
-  "project coordinator",
-  "operations coordinator",
-  "service coordinator",
-  "scheduling coordinator",
-  "dispatcher",
-  "appointment coordinator",
-  "estimates coordinator",
-  "field service coordinator",
-  "customer service coordinator",
-  "customer service manager",
-  "hr coordinator",
-  "marketing coordinator",
-  "sales support coordinator"
+  "front desk coordinator"
  ],
- "rows_kept": 5501,
- "rows_dropped": 0,
+ "rows_kept": 8992,
+ "rows_dropped": 62,
  "counters": {
-  "family_other": 0,
-  "nontech_gate": 0,
-  "dedup_merge": 1880,
+  "family_other": 91,
+  "nontech_gate": 4,
+  "dedup_merge": 92,
   "usgate_non_us": 0,
-  "pending_sector": 6612,
-  "staffing_repost": 541,
+  "pending_sector": 8260,
+  "staffing_repost": 572,
   "employer_anonymized": 0,
   "dedup_dateless": 0,
-  "residual_dup_est": 1322,
-  "g1b_title": 0,
-  "screening_post": 0,
-  "seed_rows_in": 7381,
-  "seed_dup_absorbed": 1880,
-  "seed_dup_residual": 5501,
-  "roster_kept": 98,
-  "agency_pending": 540,
-  "res7_merge": 34,
-  "cross_src_merge": 152,
-  "jd_cache_hits": 1,
+  "residual_dup_est": 1877,
+  "g1b_title": 57,
+  "screening_post": 1,
+  "seed_rows_in": 8852,
+  "seed_dup_absorbed": 22,
+  "seed_dup_residual": 8830,
+  "roster_kept": 90,
+  "agency_pending": 571,
+  "res7_merge": 16,
+  "cross_src_merge": 5,
+  "jd_cache_hits": 10,
   "jd_seed_admitted": 3,
-  "url_identity_merge": 566
+  "url_identity_merge": 48
  },
  "seniority_conflicts": 0,
- "title_conflicts": 2,
+ "title_conflicts": 0,
  "day_delta_histogram": {
-  "re7": 34,
-  "xs1": 98,
-  "xs2": 45,
-  "xs3": 9
+  "re7": 16,
+  "xs1": 3,
+  "xs2": 2
  },
- "dedup_merges": 1880,
+ "dedup_merges": 92,
  "family_histogram": {
-  "gen": 5501
+  "gen": 8992
  },
  "seniority_histogram": {
-  "senior": 276,
-  "director+": 31,
-  "mid": 5048,
-  "junior": 146
+  "mid": 8303,
+  "junior": 226,
+  "senior": 417,
+  "director+": 46
  }
 }

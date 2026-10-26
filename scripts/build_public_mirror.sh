@@ -298,10 +298,23 @@ if [ -d "$DEST/ingest/data/ui" ]; then
   # (observed 2026-10-15). Newest-wins by envelope.ran_at instead.
   python3 - "$DEST" "$SRC" <<'PYEOF'
 import json, sys, shutil, os
+sys.path.insert(0, os.path.join(
+    os.environ.get("MIRROR_SRC", "."), "ingest"))
 dest, src = sys.argv[1], sys.argv[2]
 # S41-R1 F15: per-family newest-wins — roles-pm.json AND roles-dmm.json
 # each gate on their own family envelope ran_at
-for fam_file in ("roles-pm.json", "roles-dmm.json"):
+# S47-R2 (the 7th S35-class incident): the hardcoded two-file tuple
+# predated the gen family — roles-gen.json was DELETED from the archive
+# by the rsync --delete below (the org never had the file; the round
+# trip preserves only what the ARCHIVE carries). REGISTRY-DRIVEN now:
+# the list derives from FAMILIES so a new family can never be missed.
+try:
+    from jobsearch.rolefamilies import FAMILIES
+    fam_files = tuple(f["ui_file"] for f in FAMILIES.values()
+                      if f.get("ui_file"))
+except Exception:
+    fam_files = ("roles-pm.json", "roles-dmm.json")  # fallback
+for fam_file in fam_files:
     env_file = fam_file.replace("roles-", "").replace(".json", "_envelope.json")
     df = os.path.join(dest, f"ingest/data/ui/{fam_file}")
     sf = os.path.join(src, f"ingest/data/ui/{fam_file}")
@@ -322,7 +335,11 @@ for fam_file in ("roles-pm.json", "roles-dmm.json"):
         print(f"[ui-roles-sync] kept archive {fam_file} "
               f"(ran {s_ran} > {d_ran}) - it flows forward in the rsync")
 PYEOF
-  rsync -a --delete --exclude=roles-pm.json --exclude=roles-dmm.json \
+  # every family's ui_file is newest-wins-gated above — the rsync
+  # excludes derive from the SAME registry (never rsync-deleted again)
+  _uiexcl=$(python3 -c 'import sys,os; sys.path.insert(0, os.path.join(os.environ.get("MIRROR_SRC","."),"ingest")); from jobsearch.rolefamilies import FAMILIES; print(" ".join("--exclude="+v["ui_file"] for v in FAMILIES.values() if v.get("ui_file")))' 2>/dev/null || true)
+  [ -n "$_uiexcl" ] || _uiexcl="--exclude=roles-pm.json --exclude=roles-dmm.json"
+  rsync -a --delete $_uiexcl \
       "$DEST"/ingest/data/ui/ "$SRC"/ingest/data/ui/
   (cd "$SRC" && git add ingest/data/ui 2>/dev/null && \
     git diff --cached --quiet || \

@@ -1,0 +1,148 @@
+name: Role Sweep GEN (weekly, tiered)
+
+# [S47] the B4 catch-all's steady-state cadence (s46-b4 §3.9, as
+# amended by the adzuna spread note): the gen family's tier ladder
+# runs weekly across TWO slots (the 250/day adzuna arithmetic —
+# Tue t3+t2 ≈ 183 req, Thu t1a ≈ 180 req, both with headroom):
+#   Tue 13:00Z — t3 US-wide (core-30 + tail-window auto/2) then
+#               t2 California (core-30), each chaining the seed union
+#   Thu 13:00Z — t1a 4-CA-metros (core-30, category=admin-jobs)
+#
+# The tier-union law (canon §-28): a tier run OVERWRITES the family
+# bundle — every run after the first carries --seed-envelope (the
+# prior bundle re-enters ≥60d-fresh rows as inputs; the merge ladder
+# + the geoTier preference dedupe the cross-tier overlap).
+#
+# Runtime ≈ 35-50 min/slot; timeout 90 (the li ladder cap + the
+# window bound keep the worst case inside). Artifacts: the gen
+# quartet + ui/roles-gen.json + roles:gen drift entry (same
+# checkpoint SOP as dmm — file-level, race-proof, existence-guarded).
+# The gen lane was NOT scheduled GHA-only on purpose for its first
+# runs (S47 local-first doctrine); this lane IS the steady state.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: "which tier leg to run (t3+t2 | t1a | t1b | t4)"
+        type: choice
+        options: ["t3+t2", "t1a", "t1b", "t4"]
+        default: "t3+t2"
+  schedule:
+    - cron: "0 13 * * 2"    # Tuesdays 13:00Z — t3 + t2
+    - cron: "0 13 * * 4"    # Thursdays 13:00Z — t1a
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: role-sweep-gen
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Materialize ingest/.env from secret (S47 fleet wiring)
+        env:
+          INGEST_ENV: ${{ secrets.INGEST_ENV }}
+        run: |
+          if [ -n "$INGEST_ENV" ]; then
+            printf '%s\n' "$INGEST_ENV" > ingest/.env
+            echo "ingest/.env materialized ($(wc -l < ingest/.env) lines)"
+          else
+            echo "::warning::INGEST_ENV secret not set — running with the per-secret env fallback"
+          fi
+
+      - name: Install pipeline + jobspy extra
+        run: pip install -e "ingest[jobspy]" curl_cffi
+
+      - name: Run role sweep (family gen, tiered)
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_API_KEY: ${{ secrets.ADZUNA_API_KEY }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          CAREERJET_API_KEY: ${{ secrets.CAREERJET_API_KEY }}
+          CAREERJET_REFERER: ${{ secrets.CAREERJET_REFERER }}
+          FINDWORK_API_KEY: ${{ secrets.FINDWORK_API_KEY }}
+        run: |
+          set -e
+          SLOT="${{ github.event.schedule }}"
+          DISPATCH_TIER="${{ github.event_name == 'workflow_dispatch' && inputs.tier || '' }}"
+          # the seed union: every tier run after the first re-enters the
+          # prior bundle (the tier-union law — no clobber, the geoTier
+          # preference holds the more-specific tier on dupes)
+          SEED="--seed-envelope ingest/data/ui/roles-gen.json"
+          run_leg () {
+            echo "=== gen $1 ==="
+            python3 scripts/role_sweep.py --family gen --geo-ladder "$1" \
+              $2 $SEED
+          }
+          if [ -n "$DISPATCH_TIER" ]; then
+            case "$DISPATCH_TIER" in
+              t3+t2) run_leg t3 "--full --query-window auto/2"; run_leg t2 "" ;;
+              *) run_leg "$DISPATCH_TIER" "" ;;
+            esac
+          elif [ "$SLOT" = "0 13 * * 2" ]; then
+            run_leg t3 "--full --query-window auto/2"
+            run_leg t2 ""
+          elif [ "$SLOT" = "0 13 * * 4" ]; then
+            run_leg t1a ""
+          else
+            echo "::error::unknown slot $SLOT"; exit 1
+          fi
+
+      - name: Drift audit (rides the same lane — roles:* glob)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRIFT_REPO: job-sourcing/pipeline
+        run: python3 scripts/drift_alert.py || true
+
+      - name: Checkpoint artifacts to git (race-proof, file-level — F7)
+        if: always()
+        run: |
+          set -e
+          mkdir -p /tmp/sweep_state
+          PATHS="ingest/data/roles/gen_inventory.csv ingest/data/roles/gen_dropped.csv ingest/data/roles/gen_envelope.json ingest/data/roles/gen_coverage.json ingest/data/ui/roles-gen.json ingest/data/board_watch/roles:gen.runs.jsonl ingest/data/board_watch/drift_baseline.json"
+          for p in $PATHS; do
+            if [ -e "$p" ]; then
+              mkdir -p "/tmp/sweep_state/$(dirname $p)"
+              cp -r "$p" "/tmp/sweep_state/$p" 2>/dev/null || true
+            fi
+          done
+          git config user.name "role-sweep-bot"
+          git config user.email "actions@github.com"
+          push_ok=0
+          for i in 1 2 3; do
+            git fetch origin || true
+            git reset --hard origin/main
+            for p in $PATHS; do
+              if [ -e "/tmp/sweep_state/$p" ]; then
+                cp "/tmp/sweep_state/$p" "$p"
+              fi
+            done
+            for f in ingest/data/roles/gen_inventory.csv ingest/data/roles/gen_dropped.csv ingest/data/roles/gen_envelope.json ingest/data/roles/gen_coverage.json ingest/data/ui/roles-gen.json "ingest/data/board_watch/roles:gen.runs.jsonl" ingest/data/board_watch/drift_baseline.json; do
+              if [ -e "$f" ]; then git add "$f"; fi
+            done
+            if git diff --cached --quiet; then
+              push_ok=1; break
+            fi
+            git commit -m "role-sweep-gen checkpoint [skip ci]"
+            if git push; then push_ok=1; break; fi
+            sleep 5
+          done
+          if [ "$push_ok" != "1" ]; then
+            echo "::error::role-sweep-gen checkpoint push failed after 3 attempts — state rescued in /tmp"
+            exit 1
+          fi

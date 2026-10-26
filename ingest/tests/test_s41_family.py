@@ -44,6 +44,10 @@ def _patch_all(monkeypatch, rows_by_source):
         "talent": "fetch_talent", "muse": "fetch_muse",
         "usajobs": "fetch_usajobs", "gj_role": "fetch_gj_role",
         "builtin": "fetch_builtin", "himalayas": "fetch_himalayas",
+        # [S47 F17] the firecrawl transports join the dmm/gen t3 roster
+        # — mocked here or the sweep test fires LIVE fleet calls
+        "ziprecruiter": "fetch_ziprecruiter",
+        "glassdoor": "fetch_glassdoor_zenrows",
     }
     for name, attr in attr_by_name.items():
         monkeypatch.setattr(rs, attr, mk(rows_by_source.get(name, [])))
@@ -123,7 +127,9 @@ def test_registry_has_both_families_and_distinct_paths():
     assert pm["ui_file"] != dmm["ui_file"]
     assert pm["drift_label"] != dmm["drift_label"]
     assert "l0_bundle" in dmm["locked_endpoints"]   # F9-1
-    for ep in ("talent", "muse", "wwr", "yc", "hn", "himalayas"):
+    # [S47 F4b/A5] 'wwr_rss' (the ROSTER name — the lock must actually
+    # fire; 'wwr' never matched the registered 'wwr_rss' entry)
+    for ep in ("talent", "muse", "wwr_rss", "yc", "hn", "himalayas"):
         assert ep in dmm["locked_endpoints"]        # F9 hardcode set
 
 

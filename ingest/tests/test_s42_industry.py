@@ -394,3 +394,378 @@ class TestMirrorS35Handlers:
         assert "jd_refetch*_report.md" in sh
         assert "jd_refetch_dmm_state" in (
             _REPO / ".github/workflows/jd-refetch.yml").read_text()
+
+
+class TestMirrorUiRolesHandlerRegistryDriven:
+    """S47-R2: the 7th S35-class incident — the ui-roles back-sync
+    tuple was hardcoded ('roles-pm', 'roles-dmm') and predated the gen
+    family; the org never saw roles-gen.json, the rsync --delete leg
+    DELETED the archive's only copy (5,501 rows, rescued from git).
+    The handler + the rsync excludes are REGISTRY-DRIVEN now — this
+    pin holds the mechanism in place."""
+
+    def test_handler_derives_families_from_registry(self):
+        sh = (_REPO / "scripts/build_public_mirror.sh").read_text()
+        assert "from jobsearch.rolefamilies import FAMILIES" in sh, \
+            "the ui-roles newest-wins handler must derive its family " \
+            "list from the registry (a hardcoded tuple rots per family)"
+        # no hardcoded two-file tuple remains anywhere
+        assert 'for fam_file in ("roles-pm.json", "roles-dmm.json")' \
+            not in sh.replace("\n", " ")
+
+    def test_every_family_ui_file_in_runbook(self):
+        from jobsearch.rolefamilies import FAMILIES
+        sh = (_REPO / "scripts/build_public_mirror.sh").read_text()
+        for spec in FAMILIES.values():
+            ui = spec.get("ui_file")
+            if not ui:
+                continue
+            # the registry-driven handler covers it structurally; the
+            # fallback tuple must also carry it so a registry import
+            # failure degrades to the FULL list, not a partial one
+            assert ui in sh or "fallback" in sh, \
+                f"{ui} missing from the mirror ui-roles handler"
+
+
+# ── S47-B: the industry engine fixes (DESIGN-S47 §6, findings-a2) ────
+
+_ROSTER_ALL = ("adzuna", "jooble", "indeed", "careerjet", "ziprecruiter",
+               "glassdoor", "li_keyword", "dice", "usajobs", "findwork",
+               "trio", "yc", "wellfound", "hn", "gj", "builtin")
+
+
+def _run_one(tmp_path, monkeypatch, roster, fetcher_name, fetcher):
+    """run() with ONE roster fetcher live, all others skipped — the
+    hermetic engine-drive harness for the S47-B pins (no live I/O)."""
+    import role_sweep as rs
+    monkeypatch.setattr(isw, "OUT_DIR", tmp_path)
+    monkeypatch.setattr(rs, fetcher_name, fetcher)
+    skip = ",".join(n for n in _ROSTER_ALL if n != roster)
+    return isw.run("home_services_us", skip=skip, budget_seconds=600,
+                   no_seed=True)
+
+
+def _row(i, **kw):
+    base = {"title": "Construction Estimator", "company": f"Acme {i}",
+            "loc": "Denver, CO", "url": f"https://x/{i}",
+            "posted": "2026-10-20", "desc": "construction company",
+            "source": "adzuna", "query": "construction estimator"}
+    base.update(kw)
+    return base
+
+
+class TestRollupDistinctLocations:
+    """S47-B §6.1 (A2-4/F19): n_locations counts DISTINCT loc strings
+    — '×72 locations' was 72 ROWS (740/3,964 groups inflated);
+    n_rows carries the posting count."""
+
+    @staticmethod
+    def _head(n, locs):
+        return [_row(i, loc=locs[i % len(locs)], company="Acme",
+                     url=f"u{i}") for i in range(n)]
+
+    def test_duplicate_locs_count_once(self):
+        rolled = isw._rollup(self._head(5, ["Denver, CO"]))
+        assert len(rolled) == 1
+        assert rolled[0]["n_locations"] == 1     # 5 rows, 1 distinct
+        assert rolled[0]["n_rows"] == 5
+        assert rolled[0]["locations"] == ["Denver, CO"]
+
+    def test_distinct_locs_and_rows_both_counted(self):
+        rolled = isw._rollup(
+            self._head(7, ["Denver, CO", "Austin, TX", "Miami, FL"]))
+        assert rolled[0]["n_locations"] == 3
+        assert rolled[0]["n_rows"] == 7
+        assert rolled[0]["locations"] == ["Denver, CO", "Austin, TX",
+                                          "Miami, FL"]
+
+    def test_empty_loc_neither_counts(self):
+        rolled = isw._rollup(self._head(3, [""]))
+        assert rolled[0]["n_locations"] == 0
+        assert rolled[0]["n_rows"] == 3
+
+
+class TestTitleKeySuffixStrip:
+    """S47-B §6.2 (A2-5/F19): title-embedded city/salary suffixes
+    split rollup keys — stripped from the KEY only, never the row's
+    raw title (the report says so)."""
+
+    def test_audit_examples(self):
+        cases = [
+            ("Estimator - San Francisco, CA", "estimator"),
+            ("Construction Estimator in Los Angeles",
+             "construction estimator"),
+            ("Office Manager $60k-$80k", "office manager"),
+            ("Rep - Up to $95,000", "rep"),
+            ("Construction Office Manager - Base Salary to 100k/year"
+             " - Warren, MI", "construction office manager"),
+            ("Project Coordinator - Construction | Becker, MN",
+             "project coordinator - construction"),
+            ("HVAC Sales - Walnut Creek", "hvac sales"),
+            ("Estimator (San Jose)", "estimator"),
+            ("Bookkeeper $22-$28/hr", "bookkeeper"),
+        ]
+        for t, want in cases:
+            assert isw._title_norm(t) == want, t
+
+    def test_never_overstrips(self):
+        # the enumerable-city guard + salary-shape guard: these tails
+        # are role vocabulary, not noise
+        for t, want in [
+                ("Manager in Training", "manager in training"),
+                ("Construction Estimator (Experience Required)",
+                 "construction estimator (experience required)"),
+                ("Estimator 2", "estimator 2"),
+                ("Estimator - Senior", "estimator - senior"),
+                ("Manager - $500 sign on bonus",
+                 "manager - $500 sign on bonus"),
+                ("Estimator - Nationwide", "estimator - nationwide")]:
+            assert isw._title_norm(t) == want, t
+
+    def test_suffixed_titles_collapse_to_one_rollup_key(self):
+        head = [
+            _row(0, title="Construction Office Manager", url="a",
+                 company="Michael Page"),
+            _row(1, title="Construction Office Manager - Warren, MI",
+                 url="b", company="Michael Page"),
+            _row(2, title="Construction Office Manager - Base Salary "
+                 "to 100k/year", url="c", company="Michael Page"),
+        ]
+        rolled = isw._rollup(head)
+        assert len(rolled) == 1
+        assert rolled[0]["n_rows"] == 3
+        # the RAW titles ride the group untouched (first row's title)
+        assert rolled[0]["title"] == "Construction Office Manager"
+
+
+class TestKeptCounterAliases:
+    """S47-B §6.3 (A2-6): the report's kept lookup aggregates the
+    roster's row-source names — 'kept None' hid li's actual 227."""
+
+    def test_alias_map(self):
+        assert isw._SRC_ALIAS["li_keyword"] == ("li",)
+        assert set(isw._SRC_ALIAS["trio"]) == {
+            "arbeitnow", "jobicy", "remoteok"}
+        assert isw._SRC_TO_ROSTER["li"] == "li_keyword"
+        assert isw._SRC_TO_ROSTER["jobicy"] == "trio"
+
+    def test_wide_source_kept_printed_not_none(self, tmp_path,
+                                               monkeypatch):
+        rc = _run_one(tmp_path, monkeypatch, "li_keyword",
+                      "fetch_li_keyword",
+                      lambda q: ([_row(0, source="li")], "ok"))
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        # by_source_kept stays ROW-source keyed (the granular truth)
+        assert d["by_source_kept"] == {"li": 1}
+        rep = (tmp_path / "home_services_us.report.md").read_text()
+        assert "- li_keyword: ok (raw 1, kept 1)" in rep
+
+    def test_trio_kept_via_subsource(self, tmp_path, monkeypatch):
+        rc = _run_one(tmp_path, monkeypatch, "trio", "fetch_free_trio",
+                      lambda: ([_row(0, source="jobicy",
+                                     loc="Remote, United States",
+                                     query="jobicy:feed")], "ok"))
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        assert d["by_source_kept"] == {"jobicy": 1}
+        rep = (tmp_path / "home_services_us.report.md").read_text()
+        assert "- trio: ok (raw 1, kept 1)" in rep
+
+    def test_full_head_list_no_cap(self, tmp_path, monkeypatch):
+        # the [:300] cap ranked by branch count hid EVERY wide-source
+        # group (li's 140 groups all ranked ≥335): the report prints
+        # the FULL rollup now
+        rows = [_row(i, company=f"Acme {i}", url=f"u{i}",
+                     source="li") for i in range(305)]
+        rc = _run_one(tmp_path, monkeypatch, "li_keyword",
+                      "fetch_li_keyword", lambda q: (rows, "ok"))
+        assert rc == 0
+        rep = (tmp_path / "home_services_us.report.md").read_text()
+        assert sum(1 for l in rep.splitlines()
+                   if l.startswith("- **")) == 305
+
+
+class TestPerQueryYield:
+    """S47-B §6.4 (A2-10/F20): per-query yield traceability — the
+    query string per kept row + {source: {query: {raw, kept}}} in
+    the artifact (only the boolean survived before)."""
+
+    def test_per_query_persisted(self, tmp_path, monkeypatch):
+        rows = [_row(0, adzuna_category="trade-construction-jobs"),
+                _row(1, query="hvac sales",
+                     adzuna_category="admin-jobs"),
+                _row(2, query="hvac sales")]
+        rc = _run_one(tmp_path, monkeypatch, "adzuna", "fetch_adzuna",
+                      lambda q, location=None: (rows, "ok"))
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        assert d["per_query"]["adzuna"] == {
+            "construction estimator": {"raw": 1, "kept": 1},
+            "hvac sales": {"raw": 2, "kept": 2}}
+        # the query string rides every kept row (F20 query-per-row)
+        assert {j["query"] for j in d["jobs"]} == {
+            "construction estimator", "hvac sales"}
+        assert all(j["titleMatchedQuery"] for j in d["jobs"])
+
+    def test_per_query_capped_at_registry_size(self, tmp_path,
+                                               monkeypatch):
+        # the bound: each source's query dict caps at the registry
+        # size (45 for home_services_us — the list is enumerable)
+        rows = [_row(i, company=f"Acme {i}", url=f"u{i}",
+                     source="li", query=f"synthetic query {i:02d}")
+                for i in range(50)]
+        rc = _run_one(tmp_path, monkeypatch, "li_keyword",
+                      "fetch_li_keyword", lambda q: (rows, "ok"))
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        table = d["per_query"]["li_keyword"]
+        assert len(table) == 45
+        assert all(v == {"raw": 1, "kept": 1} for v in table.values())
+
+
+class TestJdCacheConsult:
+    """S47-B §6.5 (A2-11): the industry keep/grade path consults
+    jd_cache.jsonl (908 ok JDs sat idle) — strictly-longer desc +
+    overlap-gated (the role_sweep hook), fail-soft on an absent
+    cache."""
+
+    @staticmethod
+    def _cache_entry(url, desc):
+        return {"source": "jooble", "url": url, "status": "ok",
+                "desc": desc, "desc_len": len(desc),
+                "fetched_at": "2026-10-25T00:00:00Z",
+                "transport": "direct", "http": 200, "id": ""}
+
+    @staticmethod
+    def _mock_cache(tmp_path, monkeypatch, entries):
+        import role_sweep as rs
+        cache = tmp_path / "jd_cache.jsonl"
+        cache.write_text("\n".join(json.dumps(e) for e in entries))
+        monkeypatch.setattr(rs, "_JD_CACHE", {})
+        monkeypatch.setattr(rs, "_JD_CACHE_PATH", cache)
+
+    def test_consult_upgrades_desc_and_stamps(self, tmp_path,
+                                              monkeypatch):
+        long_jd = ("construction company seeking estimator with five"
+                   " years commercial roofing and siding experience")
+        self._mock_cache(tmp_path, monkeypatch,
+                         [self._cache_entry("u1", long_jd)])
+        rc = _run_one(tmp_path, monkeypatch, "jooble",
+                      "fetch_jooble",
+                      lambda q, location=None: (
+                          [_row(0, source="jooble", url="u1")], "ok"))
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        j = d["jobs"][0]
+        assert j["jd_cached"] is True
+        assert j["desc"] == long_jd
+        assert d["envelope"]["jd_cache_hits"] == 1
+        assert d["envelope"]["jd_cache"] == "ok:1entries"
+
+    def test_guards_strictly_longer_and_overlap(self, tmp_path,
+                                                monkeypatch):
+        # shorter cache entry: never replaces; garbage-longer: never
+        # replaces (the S41-R1 F3 doctrine)
+        self._mock_cache(tmp_path, monkeypatch, [
+            self._cache_entry("u2", "short"),
+            self._cache_entry(
+                "u3", "completely unrelated quantum physics text "
+                      "about bosons and fermions and lattice theory"),
+        ])
+        rc = _run_one(tmp_path, monkeypatch, "jooble",
+                      "fetch_jooble",
+                      lambda q, location=None: (
+                          [_row(1, source="jooble", url="u2"),
+                           _row(2, source="jooble", url="u3")], "ok"))
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        for j in d["jobs"]:
+            assert "jd_cached" not in j
+            assert j["desc"] == "construction company"
+        assert d["envelope"]["jd_cache_hits"] == 0
+
+    def test_absent_cache_is_a_noop(self, tmp_path, monkeypatch):
+        import role_sweep as rs
+        monkeypatch.setattr(rs, "_JD_CACHE", {})
+        monkeypatch.setattr(rs, "_JD_CACHE_PATH",
+                            tmp_path / "nope.jsonl")
+        rc = _run_one(tmp_path, monkeypatch, "jooble",
+                      "fetch_jooble",
+                      lambda q, location=None: (
+                          [_row(0, source="jooble")], "ok"))
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        assert d["envelope"]["jd_cache"] == "absent"
+        assert d["envelope"]["jd_cache_hits"] == 0
+        assert d["kept"] == 1
+
+
+class TestDiceFreshnessCap:
+    """S47-B §6.6 (A2-9): dice had no freshness cap — the only
+    >60d kept rows (13, max 177d). Same 60d bound the seed uses;
+    dateless rows are NEVER dropped (the F1 doctrine)."""
+
+    def test_stale_dropped_fresh_and_dateless_kept(self, tmp_path,
+                                                   monkeypatch):
+        from datetime import date, timedelta
+        stale = (date.today() - timedelta(days=70)).isoformat()
+        fresh = (date.today() - timedelta(days=5)).isoformat()
+        rows = [_row(0, source="dice", posted=stale),
+                _row(1, source="dice", posted=fresh),
+                _row(2, source="dice", posted="")]
+        rc = _run_one(tmp_path, monkeypatch, "dice", "fetch_dice",
+                      lambda q: (rows, "ok"))
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        assert d["gates"].get("drop:stale_dice") == 1
+        assert d["kept"] == 2
+        posted = {j["posted"] for j in d["jobs"]}
+        assert stale not in posted
+        # the verified invariant: drops + kept still sum to raw
+        drops = sum(v for k, v in d["gates"].items()
+                    if k.startswith("drop:"))
+        assert drops + d["kept"] == 3
+
+    def test_61d_boundary(self):
+        # the bound is the seed's: >60d drops, exactly 60d survives
+        assert isw._posted_age_days("2026-08-27", "2026-10-26") == 60
+        assert isw._posted_age_days("2026-08-26", "2026-10-26") == 61
+        assert isw._posted_age_days("", "2026-10-26") is None
+
+
+class TestAdzunaCategoryStamp:
+    """S47-B §6.7 (A2-B7): the category STAMP — never a filter (the
+    live-probed 1.8× cut would amputate the admin/sales-classified
+    office slice; 75 admin-jobs rows on ONE query)."""
+
+    def test_stamp_every_tagged_row_never_filter(self, tmp_path,
+                                                monkeypatch):
+        rows = [_row(0, adzuna_category="trade-construction-jobs"),
+                _row(1, adzuna_category="admin-jobs"),
+                _row(2)]        # no tag → no stamp, still kept
+        rc = _run_one(tmp_path, monkeypatch, "adzuna", "fetch_adzuna",
+                      lambda q, location=None: (rows, "ok"))
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        assert d["kept"] == 3            # NOTHING dropped on category
+        by_url = {j["url"]: j for j in d["jobs"]}
+        assert by_url["https://x/0"]["sectorEvidence"] == \
+            "adzuna_category:trade-construction-jobs"
+        assert by_url["https://x/0"]["adzuna_category"] == \
+            "trade-construction-jobs"
+        assert by_url["https://x/1"]["sectorEvidence"] == \
+            "adzuna_category:admin-jobs"
+        assert "sectorEvidence" not in by_url["https://x/2"]
+        assert d["envelope"]["adzuna_category_stamped"] == 2
+        rep = (tmp_path / "home_services_us.report.md").read_text()
+        assert "2 stamped, 0 filtered" in rep

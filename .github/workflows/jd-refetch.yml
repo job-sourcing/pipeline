@@ -33,8 +33,20 @@ on:
       max_rows:
         description: "max rows to fetch per family leg (default 150)"
         default: "150"
+      transport:
+        description: "[S47 F16] transport class (direct | fc_relay)"
+        type: choice
+        options: [direct, fc_relay]
+        default: direct
   schedule:
     - cron: "15 14 * * *"   # daily, after the 12:00Z sweep envelope lands
+    # [S47 F16] the weekly fc_relay slot: the transport-stuck backlog
+    # (jooble-403 detail pages, careerjet-hk) only drains through the
+    # firecrawl relay — the daily direct legs skip them by design
+    # (transport-aware target selection). 1 leg/family/wk ≈ 130
+    # credits ≈ 3% of the fleet; the local wave drains the priority
+    # classes first (DESIGN-S47 §7.4).
+    - cron: "20 12 * * 6"   # Saturdays 12:20Z — fc_relay legs
 
 permissions:
   contents: write
@@ -77,20 +89,28 @@ jobs:
         run: pip install -e "ingest[jobspy]" curl_cffi
 
       - name: Run JD refetch leg (family=pm)
+        env:
+          SLOT: ${{ github.event.schedule }}
         run: |
+          T="${{ github.event.inputs.transport || 'direct' }}"
+          if [ "$SLOT" = "20 12 * * 6" ]; then T="fc_relay"; fi
           python3 scripts/jd_refetch.py \
             --family pm \
-            --transport direct \
+            --transport "$T" \
             --budget-seconds 480 \
             --max-rows "${{ github.event.inputs.max_rows || '150' }}"
 
       - name: Run JD refetch leg (family=dmm)
         # sequential, same worktree: the shared cache accumulates both
         # legs before ONE file-level checkpoint (single writer)
+        env:
+          SLOT: ${{ github.event.schedule }}
         run: |
+          T="${{ github.event.inputs.transport || 'direct' }}"
+          if [ "$SLOT" = "20 12 * * 6" ]; then T="fc_relay"; fi
           python3 scripts/jd_refetch.py \
             --family dmm \
-            --transport direct \
+            --transport "$T" \
             --budget-seconds 480 \
             --max-rows "${{ github.event.inputs.max_rows || '150' }}"
 

@@ -277,3 +277,35 @@ class TestSeedTierPreservation:
         src = Path(rs.__file__).read_text()
         assert "GEO_TIER_RANK.get(r.get(\"geoTier\"), 9) <" in src
         assert "SPECIFIC geo tier survives" in src
+
+
+class TestT3RosterReopenings:
+    """[S49, the S48 queue item 4] the firecrawl re-openings join the
+    t3 roster for the B4 families ONLY: ziprecruiter + glassdoor ride
+    --skip-gated, fail-soft, fleet-rotated; pm's t3 stays bit-identical
+    (the identity doctrine — the additions are family-gated)."""
+
+    def test_the_reopenings_are_wired_into_the_t3_roster(self):
+        src = Path(rs.__file__).read_text()
+        assert 'fetchers.append(("ziprecruiter", fetch_ziprecruiter,' in src
+        assert 'fetchers.append(("glassdoor", fetch_glassdoor_zenrows,' in src
+        # family-gated: pm's t3 roster is UNTOUCHED by the additions
+        assert "if family in _B4_FAMILIES:\n            fetchers.append((\"ziprecruiter\"" in src
+
+    def test_the_reopenings_are_firecrawl_transport(self):
+        # both fetchers ride _fc_scrape (the fleet rotation) — the
+        # transport that measured OPEN on 2026-10-24
+        src = Path(rs.__file__).read_text()
+        for fn in ("def fetch_ziprecruiter", "def fetch_glassdoor_zenrows"):
+            start = src.index(fn)
+            body = src[start:start + 3000]
+            assert "_fc_scrape" in body, f"{fn} must ride the firecrawl fleet"
+
+    def test_skip_gate_covers_the_reopenings(self):
+        # the additions land BEFORE the skip_set filter — --skip
+        # ziprecruiter/glassdoor disables them like any roster member
+        src = Path(rs.__file__).read_text()
+        anchor = 'fetchers.append(("glassdoor", fetch_glassdoor_zenrows,'
+        filt = ("fetchers = [(n, f, a, s) for n, f, a, s in fetchers\n"
+                "                    if n not in skip_set]")
+        assert src.index(filt, src.index(anchor)) > src.index(anchor)

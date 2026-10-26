@@ -204,33 +204,31 @@ def test_title_core_specialization_tail_stripped():
 
 # ── corpus distribution (post-closure; see module docstring) ───────────────
 def test_corpus_distribution_post_closure():
-    """pm 172 / adjacent 50 / other 294 on the 516 product-word corpus
-    titles = R2's 171/51/304 with their P2-5 + P1-4 closures applied
-    (the delta IS the closure: 4 noun-first FPs + 4 non-role-noun
-    forms moved to other). Pins walked with the bundle: 526/47/312
-    (S36) → 520/46/307 (niu retirement + #48) → 520/166/47 (the S38
-    grammar fix: program-mgmt noun-first redirect) → 522/168/47 (the
-    #49 export + the W6-a companyKey re-key: +2 pm titles) →
-    524/174/50 (#51) → 516/172/50/294 (the #52 export, 2026-10-24,
-    8,110 jobs: corpus churn, not grammar). S47 stale-snapshot law:
-    the pin now reads the JSR-COMMITTED bundle (ingest/data/ui/
-    jobs.json, back-synced from the org at every mirror run) — the
-    platform's /home/z/my-project snapshot can lag many exports and
-    MUST NOT gate the suite (the 2026-10-26 resume found it at #51-
-    era 522 while jsr carried #52)."""
+    """pm 171 / adjacent 49 / other 295 on the 515 product-word FROZEN
+    corpus titles (export #53, 2026-10-26). The distribution pins the
+    GRAMMAR against corpus drift — R2's 171/51/304 with their P2-5 +
+    P1-4 closures applied (the delta IS the closure: 4 noun-first FPs
+    + 4 non-role-noun forms moved to other). History of the live pin:
+    526/47/312 (S36) → 520/46/307 (#48) → 520/166/47 (S38 grammar)
+    → 522/168/47 (#49) → 524/174/50 (#51) → 516/172/50 (#52) →
+    515/171/49 (#53). **S47 pin-freeze law**: the live ui bundle
+    rotates daily via the mirror back-sync — a live-bundle pin rots
+    every export (it broke twice in one session: #52 then #53). The
+    pin now runs on the FROZEN fixture (tests/fixtures/
+    corpus_product_titles.json); regenerate the fixture ONLY on an
+    INTENTIONAL grammar change, walking the distribution with it."""
     import json
     import os
-    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    bundle = os.path.join(repo_root, "data", "ui", "jobs.json")
-    if not os.path.exists(bundle):
-        pytest.skip("bundle absent in this environment")
+    fx = os.path.join(os.path.dirname(__file__), "fixtures",
+                      "corpus_product_titles.json")
+    if not os.path.exists(fx):
+        pytest.skip("corpus fixture absent in this environment")
     from collections import Counter
-    b = json.load(open(bundle))
-    titles = {j.get("title", "") for j in b.get("jobs", [])
-              if "product" in (j.get("title") or "").lower()}
+    d = json.load(open(fx))
+    titles = set(d["titles"])
     fams = Counter(classify_family(t)[0] for t in titles)
-    assert len(titles) == 516
-    assert fams == {"other": 294, "pm": 172, "adjacent": 50}
+    assert len(titles) == 515
+    assert fams == {"other": 295, "pm": 171, "adjacent": 49}
 
 
 # ── module invariants ──────────────────────────────────────────────────────

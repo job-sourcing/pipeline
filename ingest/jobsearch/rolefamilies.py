@@ -1247,7 +1247,7 @@ FAMILIES: dict[str, dict] = {
         # endpoints hardcoded to PM-shaped URLs (S41-R1 F9): declared
         # so a 0-row measurement is honest ('locked_endpoint' in the
         # envelope) instead of a silent misconfiguration
-        "locked_endpoints": ("talent", "muse", "wwr", "yc", "hn",
+        "locked_endpoints": ("talent", "muse", "wwr_rss", "yc", "hn",
                              "himalayas"),
     },
     "dmm": {
@@ -1267,7 +1267,7 @@ FAMILIES: dict[str, dict] = {
         "ui_file": "roles-dmm.json",
         "drift_label": "roles:dmm",
         "l0_bundle": False,        # the l0 corpus is PM-only
-        "locked_endpoints": ("talent", "muse", "wwr", "yc", "hn",
+        "locked_endpoints": ("talent", "muse", "wwr_rss", "yc", "hn",
                              "himalayas", "l0_bundle"),
     },
     "gen": {
@@ -1287,7 +1287,7 @@ FAMILIES: dict[str, dict] = {
         "ui_file": "roles-gen.json",
         "drift_label": "roles:gen",
         "l0_bundle": False,        # the l0 corpus is PM-only
-        "locked_endpoints": ("talent", "muse", "wwr", "yc", "hn",
+        "locked_endpoints": ("talent", "muse", "wwr_rss", "yc", "hn",
                              "himalayas", "l0_bundle"),
     },
 }

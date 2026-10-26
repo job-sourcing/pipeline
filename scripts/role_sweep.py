@@ -998,50 +998,59 @@ def fetch_careerjet(queries: list[str],
     return rows, "ok"
 
 
-def fetch_findwork(queries: list[str]) -> tuple[list[dict], str]:
+def fetch_findwork(queries: list[str],
+                   all_queries: bool = False) -> tuple[list[dict], str]:
     """S38 L1.5: findwork.dev — search= full-text (count 1,667), title
     field = `role`, JD = `text` (FULL — the highest merge-value tier);
-    location param is exact-match-only → usgate runs client-side."""
+    location param is exact-match-only → usgate runs client-side.
+    [S47 F4b/A6] all_queries=True (the B4 families): iterate EVERY
+    query (3-page cap each — 19/20 widened core queries previously
+    never hit the full-JD source); the pinned single-query mode keeps
+    the 17-page behavior bit-identical for pm."""
     key = _env("FINDWORK_API_KEY")
     if not key:
         return [], "no-key"
     rows: list[dict] = []
-    max_page = 17                       # count=1,667 / 100 per page
-    seen = 0
-    for page in range(1, max_page + 1):
-        try:
-            req = urllib.request.Request(
-                "https://findwork.dev/api/jobs/?search="
-                + urllib.parse.quote_plus(queries[0] if queries
-                                          else "product manager")
-                + f"&page={page}",
-                headers={"Authorization": f"Token {key}",
-                         "User-Agent": "jobsearch-sweep"})
-            with urllib.request.urlopen(req, timeout=30) as r:
-                d = json.loads(r.read().decode())
-        except Exception as exc:
-            if page == 1:
-                return rows, f"error:{type(exc).__name__}"
-            break
-        res = d.get("results", [])
-        if not res:
-            break
-        for j in res:
-            rows.append({
-                "title": j.get("role") or "",
-                "company": j.get("company_name") or "",
-                "loc": j.get("location") or "",
-                "url": j.get("url") or j.get("id") or "",
-                "posted": (j.get("date_posted") or "")[:10],
-                "desc": (j.get("text") or "")[:12000],
-                "source": "findwork", "layer": "l1.5",
-                "query": "findwork:search", "rid": f"fw:{j.get('id') or ''}",
-            })
-        seen += len(res)
-        if seen >= (d.get("count") or 0):
-            break
-        time.sleep(1.2)
-    return rows, "ok"
+    q_list = queries if (all_queries and queries) else queries[:1]
+    max_page = 3 if all_queries else 17
+    for q in q_list:
+        seen = 0
+        for page in range(1, max_page + 1):
+            try:
+                req = urllib.request.Request(
+                    "https://findwork.dev/api/jobs/?search="
+                    + urllib.parse.quote_plus(q if queries
+                                              else "product manager")
+                    + f"&page={page}",
+                    headers={"Authorization": f"Token {key}",
+                             "User-Agent": "jobsearch-sweep"})
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    d = json.loads(r.read().decode())
+            except Exception as exc:
+                if page == 1:
+                    break                        # this query's loss —
+                break                            # next query continues
+            res = d.get("results", [])
+            if not res:
+                break
+            for j in res:
+                rows.append({
+                    "title": j.get("role") or "",
+                    "company": j.get("company_name") or "",
+                    "loc": j.get("location") or "",
+                    "url": j.get("url") or j.get("id") or "",
+                    "posted": (j.get("date_posted") or "")[:10],
+                    "desc": (j.get("text") or "")[:12000],
+                    "source": "findwork", "layer": "l1.5",
+                    "query": f"findwork:{q[:40]}", "rid": f"fw:{j.get('id') or ''}",
+                })
+            seen += len(res)
+            if seen >= (d.get("count") or 0):
+                break
+            time.sleep(1.2)
+        if all_queries:
+            time.sleep(1.2)
+    return rows, "ok" if rows else "no-yield"
 
 
 def fetch_muse() -> tuple[list[dict], str]:
@@ -1769,14 +1778,23 @@ def sweep(queries: list[str], skip_gj: bool = False,
     geo_cfg = _geo_tier_config(geo_ladder, family)
     fetchers: list[tuple[str, object, list, str | None]] = []
     if geo_ladder == "t3":
+        # [S47 F17] findwork goes multi-query for the B4 catch-all
+        # families (A6: queries[0]-only meant 19/20 new core queries
+        # never hit the full-JD source); pm keeps the pinned single-
+        # search behavior bit-identical
         fetchers = [
-            ("findwork", fetch_findwork, [queries], None),
+            ("findwork", fetch_findwork,
+             [queries, family in _B4_FAMILIES], None),
             ("adzuna", fetch_adzuna, [queries], None),
             ("dice", fetch_dice, [queries], None),
             ("careerjet", fetch_careerjet, [queries], None),
             ("jooble", fetch_jooble, [queries], None),
             ("indeed", fetch_jobspy_indeed, [queries], None),
         ]
+        # [S47 F17 → S49 seam] zip/gd registration lives ONCE, in the
+        # shared t3 block after gj_role (the parallel session's landing
+        # of the same fix — the rebase would have doubled the calls:
+        # 2x firecrawl credits per query; deduped here)
     else:
         remote = geo_cfg["remote"]
         for scope_loc, scope_dist in geo_cfg["scopes"]:
@@ -1802,7 +1820,13 @@ def sweep(queries: list[str], skip_gj: bool = False,
                     if n not in skip_set]
     if geo_ladder == "t3":
         if not skip_li and "li" not in skip_set:
-            fetchers.append(("li_keyword", fetch_li_keyword, [queries], None))
+            # [S47 F6] the li 429 ladder (45/60/90s) kills full-mode
+            # runs: 100 queries × 195s worst = 5.4h vs the 90m lane
+            # timeout. Cap li at 25 queries when the list is full-ish
+            # (>30 — pm's 7/14 stay bit-identical).
+            fetchers.append(("li_keyword", fetch_li_keyword,
+                             [queries if len(queries) <= 30
+                              else queries[:25]], None))
         fetchers += [
             ("yc", fetch_yc, [], None),
             ("wellfound", fetch_wellfound, [], None),
@@ -1821,6 +1845,18 @@ def sweep(queries: list[str], skip_gj: bool = False,
             fetchers.append(("himalayas", fetch_himalayas, [], None))
         if not skip_gj and "gj" not in skip_set:
             fetchers.append(("gj_role", fetch_gj_role, [queries], None))
+        # [S49, the S48 queue item 4] the firecrawl re-openings join
+        # the t3 roster for the B4 families ONLY (pm keeps the
+        # identity doctrine — its t3 stays bit-identical, pinned by
+        # the identity tests): ziprecruiter (591 rows/query measured,
+        # the S47-R1 fleet probe 2026-10-24) + glassdoor (4,557
+        # rows/query) — 1 credit/query each, fleet-rotated via
+        # _fc_scrape, fail-soft per query, --skip-gated like the rest.
+        if family in _B4_FAMILIES:
+            fetchers.append(("ziprecruiter", fetch_ziprecruiter,
+                             [queries], None))
+            fetchers.append(("glassdoor", fetch_glassdoor_zenrows,
+                             [queries], None))
         fetchers = [(n, f, a, s) for n, f, a, s in fetchers
                     if n not in skip_set]
 
@@ -1859,6 +1895,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
               "li": "us", "wwr": "remote", "remoteok": None,
               "jobicy": None, "arbeitnow": None, "gj": None,
               "board": "skip", "dice": None, "careerjet": None,
+              "ziprecruiter": None, "glassdoor": None,
               "findwork": None, "muse": None, "usajobs": "us",
               "yc": None, "wellfound": None, "hn": None,
               "talent": None, "builtin": None, "himalayas": None}
@@ -2546,6 +2583,18 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--full", action="store_true",
                     help="core + tail variants (the monthly rotation)")
+    ap.add_argument("--tail-only", action="store_true",
+                    help="[S47 §7] with --full --query-window: run ONLY "
+                         "the windowed tail (the local completion leg)")
+    ap.add_argument("--query-window", default="",
+                    help="[S47 F6] N/M — run window N of M over the "
+                         "tail queries (needs --full); N='auto' rotates "
+                         "from the ISO week calendar ((week-1) % M)+1 — "
+                         "the weekly tail-bucket rotation that replaced "
+                         "the blind monthly 100-query run. [S47 §7] "
+                         "WITHOUT --full it slices the CORE (the local "
+                         "9-min-chunk rule: t3 US-wide at 30 queries = "
+                         "10+ min fetch alone)")
     ap.add_argument("--family", default="pm",
                     help="role family slug (pm, dmm — the S41 registry)")
     ap.add_argument("--gj-only", action="store_true",
@@ -2572,17 +2621,55 @@ def main() -> int:
     spec = family_spec(args.family)
     queries = spec["queries_core"] + (
         spec["queries_tail"] if args.full else [])
+    # [S47 F6] the weekly tail-bucket rotation: slice the tail into M
+    # windows, run window N (auto = the calendar's). The monthly single
+    # 100-query run is DEAD (timeout + adzuna arithmetic + blind
+    # scheduling — R1-F6); every weekly run carries core + one bucket.
+    # [S47 §7 local-chunk rule] WITHOUT --full the window slices the
+    # CORE (t3 US-wide adzuna at 30 queries = 10+ min fetch alone —
+    # the box's 9-min foreground rule needs 10-query windows); with
+    # --full + --tail-only it slices the tail ALONE (the local tail
+    # completion leg — the core already ran).
+    if args.query_window:
+        n_s, _, m_s = args.query_window.partition("/")
+        m = max(2, int(m_s or 4))
+        if n_s == "auto":
+            n = (datetime.now(timezone.utc).isocalendar().week - 1) \
+                % m + 1
+        else:
+            n = int(n_s)
+        if args.full and args.tail_only:
+            tail = spec["queries_tail"]
+            w = -(-len(tail) // m)
+            lo, hi = (n - 1) * w, n * w
+            queries = tail[lo:hi]
+            print(f"[query-window {n}/{m}] tail-only[{lo}:{hi}] "
+                  f"→ {min(hi, len(tail)) - lo} of {len(tail)} tail")
+        elif args.full:
+            tail = spec["queries_tail"]
+            w = -(-len(tail) // m)              # ceil(len/m)
+            lo, hi = (n - 1) * w, n * w
+            queries = spec["queries_core"] + tail[lo:hi]
+            print(f"[query-window {n}/{m}] tail[{lo}:{hi}] "
+                  f"→ {min(hi, len(tail)) - lo} of {len(tail)} tail queries "
+                  f"(+{len(spec['queries_core'])} core)")
+        else:
+            core = spec["queries_core"]
+            w = -(-len(core) // m)
+            lo, hi = (n - 1) * w, n * w
+            queries = core[lo:hi]
+            print(f"[query-window {n}/{m}] core[{lo}:{hi}] "
+                  f"→ {min(hi, len(core)) - lo} of {len(core)} core queries")
     if args.gj_only:
-        rows, v = fetch_gj_role(PM_QUERY_CORE[:2])
-        print(f"[gj-probe] {len(rows)} rows | {v}")
+        # [S47 F4b/A7] the probe family-aware: under --family dmm/gen
+        # the probe must exercise THAT family's core (a gen probe on
+        # PM core validates nothing about the catch-all lane)
+        rows, v = fetch_gj_role(spec["queries_core"][:2])
+        print(f"[gj-probe:{args.family}] {len(rows)} rows | {v}")
         return 0
     return sweep(queries, skip=args.skip, family=args.family,
                  seed_envelope=args.seed_envelope,
                  geo_ladder=args.geo_ladder)
-
-
-if __name__ == "__main__":
-    sys.exit(main())
 
 
 _ZP_CARD = re.compile(
@@ -2729,6 +2816,105 @@ def fetch_ziprecruiter(queries: list[str],
         f"blocked:x{errors}"
 
 
+
+
+
+
+# ── craigslist T0 (S47 §3, DESIGN-S47; live-probed 2026-10-26) ──────────
+CRAIGSLIST_CITIES = (
+    "sfbay", "losangeles", "newyork", "chicago", "houston", "phoenix",
+    "philadelphia", "sanantonio", "sandiego", "dallas", "austin",
+    "atlanta", "seattle", "denver", "boston", "washingtondc", "miami",
+    "orlando", "tampa", "minneapolis", "sacramento", "portland",
+    "raleigh", "charlotte", "nashville", "lasvegas", "detroit",
+    "columbus", "kansascity", "stlouis")
+
+# the T0 census queries: the F9 verticals that yield <=2 head rows on
+# the aggregators (pool/appliance/junk/moving live HERE) + the trade
+# heads + the SMB office side. 12 queries x 30 metros, 1 page each.
+CRAIGSLIST_QUERIES = (
+    "hvac", "plumbing", "roofing", "electrician", "landscaping",
+    "appliance repair", "pool cleaning", "handyman", "junk removal",
+    "moving", "office manager", "dispatcher")
+
+_CL_ROW = re.compile(
+    r'<li class="cl-static-search-result"[^>]*title="(?P<rowtitle>[^"]*)"'
+    r'.*?<a href="(?P<url>https://www\.craigslist\.org/view/[^"]+)">'
+    r'.*?<div class="title">(?P<title>[^<]*)</div>'
+    r'.*?<div class="location">\s*(?P<loc>[^<]*?)\s*</div>',
+    re.DOTALL)
+
+_CL_UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+          "AppleWebKit/537.36 (KHTML, like Gecko) "
+          "Chrome/130.0.0.0 Safari/537.36"}
+
+
+def fetch_craigslist(city: str, queries: list[str]) -> tuple[list[dict], str]:
+    """S47 T0 (DESIGN-S47 §3): craigslist is the smallest-employer tier
+    (sole props, 1-5 staff, word-of-mouth) — the F9 verticals with ZERO
+    aggregator yield live here. Canonical URL www.craigslist.org/search/
+    area/{city}?cat=jjj (the city-subdomain form 301s — live-verified
+    2026-10-26; 49 server-rendered rows on the sfbay/hvac probe). Rows
+    are DATELESS (no datetime attr in the static HTML — R1/F15: no
+    per-post detail fetches to recover dates, the derived-data doctrine:
+    title/loc/url/counts, never republished bodies). Company: the
+    title text IS the signal (craigslist titles carry the employer
+    descriptor when they carry anything). Pacing 3s/fetch (B1's
+    measured safe rate); captcha on a city = that city pauses (no
+    bypass — ever). Box-side only (IP reputation; NEVER a GHA lane)."""
+    rows: list[dict] = []
+    verdicts: list[str] = []
+    for q in queries:
+        url = ("https://www.craigslist.org/search/area/"
+               + urllib.parse.quote(city)
+               + "?cat=jjj&query=" + urllib.parse.quote_plus(q))
+        try:
+            req = urllib.request.Request(url, headers=_CL_UA)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                html = r.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as exc:
+            verdicts.append(f"{q}:http{exc.code}")
+            time.sleep(3.0)
+            continue
+        except Exception as exc:                    # noqa: BLE001
+            verdicts.append(f"{q}:error:{type(exc).__name__}")
+            time.sleep(3.0)
+            continue
+        if "recaptcha" in html.lower() or "unavailable" in html.lower()[:2000]:
+            verdicts.append(f"{q}:blocked:captcha")
+            return rows, "blocked:captcha"          # the city pauses
+        n = 0
+        for m in _CL_ROW.finditer(html):
+            g = m.groupdict()
+            title = (g["title"] or g["rowtitle"] or "").strip()
+            if not title:
+                continue
+            rid_tail = (g["url"].rstrip("/").rsplit("/", 1)[-1]
+                        if g["url"] else "")
+            rows.append({
+                "title": title,
+                "company": "",          # title-text IS the T0 signal
+                "loc": (f"{g['loc'].strip()} ({city})"
+                        if g["loc"].strip() else city),
+                "url": g["url"],
+                "posted": "",            # dateless (F15)
+                "dateless": True,
+                "desc": "",
+                "source": "craigslist", "layer": "l2",
+                "query": f"cl:{city}:{q}",
+                "rid": f"cl:{rid_tail}",
+            })
+            n += 1
+        verdicts.append(f"{q}:{n}")
+        time.sleep(3.0)
+    # honest verdict: a clean page with 0 hits is ok:0 (the query
+    # genuinely has no posts); "blocked" only when every query errored
+    n_err = sum(1 for x in verdicts if ":http" in x or ":error:" in x)
+    v = ("ok" if rows or not n_err else "blocked") if verdicts \
+        else "no-yield"
+    return rows, v + ("|" + ",".join(verdicts) if verdicts else "")
+
+
 _GD_CARD = re.compile(
     r"\[(?P<title>[^\]]{3,140})\]"
     r"\(https://www\.glassdoor\.com/job-listing/(?P<slug>[^)\s]+)"
@@ -2847,7 +3033,17 @@ def fetch_glassdoor_zenrows(queries: list[str],
         for g in got:
             g.setdefault("source", "glassdoor")
             g.setdefault("layer", "l1.5")
+            g.setdefault("company", "")   # JSON-LD rows carry no company
+            g.setdefault("loc", g.pop("location", "") or "")
+            g.setdefault("url", "")
+            g.setdefault("posted", "")
+            g.setdefault("desc", "")
+            g.setdefault("rid", g.get("id", ""))
             g["query"] = q
             rows.append(g)
         time.sleep(2.0)
     return rows or [], "ok"
+
+
+if __name__ == "__main__":
+    sys.exit(main())
