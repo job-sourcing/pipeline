@@ -2,15 +2,12 @@
  "sources": {
   "locked_endpoints": "skipped:talent,muse,wwr_rss,yc,hn,himalayas,l0_bundle",
   "l0_bundle": "locked_endpoint",
-  "ziprecruiter": "ok:firecrawl",
-  "glassdoor": "ok",
-  "seed_envelope": "ok:8852/9880"
+  "seed_envelope": "ok:9742/10569"
  },
  "layers": {
-  "l0": 0,
-  "l1.5": 385
+  "l0": 0
  },
- "ran_at": "2026-10-26T04:27:04Z",
+ "ran_at": "2026-10-26T06:37:26Z",
  "queries": [
   "office manager",
   "business office manager",
@@ -21,48 +18,67 @@
   "administrative coordinator",
   "receptionist",
   "executive assistant",
-  "front desk coordinator"
+  "front desk coordinator",
+  "bookkeeper",
+  "full charge bookkeeper",
+  "accounting assistant",
+  "accounts payable specialist",
+  "accounts receivable specialist",
+  "billing specialist",
+  "payroll specialist",
+  "project coordinator",
+  "operations coordinator",
+  "service coordinator",
+  "scheduling coordinator",
+  "dispatcher",
+  "appointment coordinator",
+  "estimates coordinator",
+  "field service coordinator",
+  "customer service coordinator",
+  "customer service manager",
+  "hr coordinator",
+  "marketing coordinator",
+  "sales support coordinator"
  ],
- "rows_kept": 8992,
- "rows_dropped": 62,
+ "rows_kept": 9735,
+ "rows_dropped": 0,
  "counters": {
-  "family_other": 91,
-  "nontech_gate": 4,
-  "dedup_merge": 92,
+  "family_other": 0,
+  "nontech_gate": 0,
+  "dedup_merge": 7,
   "usgate_non_us": 0,
-  "pending_sector": 8260,
-  "staffing_repost": 572,
+  "pending_sector": 8859,
+  "staffing_repost": 586,
   "employer_anonymized": 0,
   "dedup_dateless": 0,
-  "residual_dup_est": 1877,
-  "g1b_title": 57,
-  "screening_post": 1,
-  "seed_rows_in": 8852,
-  "seed_dup_absorbed": 22,
-  "seed_dup_residual": 8830,
+  "residual_dup_est": 1879,
+  "g1b_title": 0,
+  "screening_post": 0,
+  "seed_rows_in": 9742,
+  "seed_dup_absorbed": 7,
+  "seed_dup_residual": 9735,
   "roster_kept": 90,
-  "agency_pending": 571,
-  "res7_merge": 16,
-  "cross_src_merge": 5,
+  "agency_pending": 583,
+  "res7_merge": 1,
+  "cross_src_merge": 3,
   "jd_cache_hits": 10,
-  "jd_seed_admitted": 3,
-  "url_identity_merge": 48
+  "jd_seed_admitted": 5
  },
  "seniority_conflicts": 0,
  "title_conflicts": 0,
  "day_delta_histogram": {
-  "re7": 16,
-  "xs1": 3,
-  "xs2": 2
+  "xs1": 2,
+  "xs2": 1,
+  "re7": 1
  },
- "dedup_merges": 92,
+ "dedup_merges": 7,
  "family_histogram": {
-  "gen": 8992
+  "gen": 9735
  },
  "seniority_histogram": {
-  "mid": 8303,
-  "junior": 226,
-  "senior": 417,
-  "director+": 46
+  "senior": 448,
+  "director+": 46,
+  "mid": 8996,
+  "junior": 245
  }
 }
