@@ -1,13 +1,11 @@
 # JD-refetch ledger (family: dmm)
 
-- last leg: **2026-10-26T20:47:53Z** (transport: direct)
-- fetched this leg: 150 | remaining: 326 | targets seen: 1675
+- last leg: **2026-10-26T20:58:05Z** (transport: direct)
+- fetched this leg: 150 | remaining: 176 | targets seen: 1675
 - pending attrition since last leg: 0 (vanished without a verdict — F1 ledger)
 
 ## per-source status counters
 
-- adzuna:http-error:403: 122
-- adzuna:http-error:404: 3
-- adzuna:ok: 22
-- dice:ok: 2
-- indeed:http-error:401: 1
+- adzuna:http-error:403: 142
+- adzuna:http-error:404: 1
+- adzuna:ok: 7
