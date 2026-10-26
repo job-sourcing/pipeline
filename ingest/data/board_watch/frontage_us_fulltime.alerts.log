@@ -94,3 +94,9 @@ NEW Security Guard- Off Hours  | Concord, OH, US | 2026-10-23 | https://workforc
 NEW Scientist/Senior Scientist/Principal Scientist-Biomarker | Hayward, CA, US | 2026-10-22 | https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=0fad767f-f389-40ea-b2d1-d8df05098476&ccId=19000101_000001&jobId=9203170355312_1&lang=en_US
 (2026-10-23T12:10:22)
 
+board-watch frontage_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions?cid=0fad767f-f389-40ea-b2d1-d8df05098476&lang=en_US&locale=en_US&$skip=59&$top=20&userQuery=)
+(2026-10-26T13:37:15)
+
+board-watch frontage_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))) — UNREACHABLE, state untouched; streak 1/14
+(2026-10-26T13:42:18)
+
