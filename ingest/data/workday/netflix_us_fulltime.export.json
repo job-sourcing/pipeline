@@ -1,8 +1,8 @@
 {
  "label": "netflix_us_fulltime",
  "rows": 302,
- "kept": 301,
- "new": 1,
+ "kept": 302,
+ "new": 0,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -14,5 +14,5 @@
  "state_rows": 302,
  "banded": 143,
  "lca_pools": 152,
- "snapshot": "2026-10-25"
+ "snapshot": "2026-10-26"
 }
