@@ -146,12 +146,23 @@ if [ -d "$DEST/ingest/data/roles" ]; then
   # class as the S38 roles-pm.json incident).
   python3 - "$DEST" "$SRC" <<'PYROLE'
 import json, os, shutil, sys
+sys.path.insert(0, os.path.join(
+    os.environ.get("MIRROR_SRC", "."), "ingest"))
 dest, src = sys.argv[1], sys.argv[2]
 # S41-R1 F15: PER-FAMILY gates — the single pm_envelope gate dropped a
 # newer dmm quartet whenever the archive's pm envelope was newer (then
 # the forward rsync --delete wiped the org's dmm files). Each family's
 # tuple gates on ITS OWN envelope ran_at.
-for prefix in ("pm", "dmm"):
+# [W2a-5/W2c-2 — the 8th S35-class recurrence] REGISTRY-DRIVEN list:
+# the hardcoded (pm, dmm) tuple predated the gen family — its quartet
+# had no newest-wins gate (one lane-run away from the clobber).
+try:
+    from jobsearch.rolefamilies import FAMILIES
+    prefixes = tuple(f["quartet_prefix"] for f in FAMILIES.values()
+                     if f.get("quartet_prefix"))
+except Exception:
+    prefixes = ("pm", "dmm", "gen")             # full-list fallback
+for prefix in prefixes:
     def ran_at(base, p=prefix):
         try:
             e = json.load(open(os.path.join(

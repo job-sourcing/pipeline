@@ -40,12 +40,13 @@ on:
         default: direct
   schedule:
     - cron: "15 14 * * *"   # daily, after the 12:00Z sweep envelope lands
-    # [S47 F16] the weekly fc_relay slot: the transport-stuck backlog
-    # (jooble-403 detail pages, careerjet-hk) only drains through the
-    # firecrawl relay — the daily direct legs skip them by design
-    # (transport-aware target selection). 1 leg/family/wk ≈ 130
-    # credits ≈ 3% of the fleet; the local wave drains the priority
-    # classes first (DESIGN-S47 §7.4).
+    # [S47 F16 → W2c-4] the weekly fc_relay slot: the transport-stuck
+    # backlog (jooble-403 detail pages, careerjet-hk) only drains through
+    # the firecrawl relay — the daily direct legs skip them by design
+    # (transport-aware target selection). RAISED to max 400 rows x 2
+    # family legs ≈ 800/wk (the live backlog was ~2,555 — at the old
+    # 130/wk it drained in 20 weeks; at 800/wk it is 3-4 weeks; the
+    # 30m timeout now fully used, firecrawl ≈ 3-5% of the fleet/week).
     - cron: "20 12 * * 6"   # Saturdays 12:20Z — fc_relay legs
 
 permissions:
@@ -108,16 +109,34 @@ jobs:
         run: |
           T="${{ github.event.inputs.transport || 'direct' }}"
           if [ "$SLOT" = "20 12 * * 6" ]; then T="fc_relay"; fi
+          MR="${{ github.event.inputs.max_rows || '150' }}"
+          BS="480"
+          if [ "$SLOT" = "20 12 * * 6" ]; then MR="400"; BS="800"; fi
           python3 scripts/jd_refetch.py \
             --family dmm \
+            --transport "$T" \
+            --budget-seconds "$BS" \
+            --max-rows "$MR"
+
+      - name: Run JD refetch leg (family=gen)
+        # [W2a-3] the gen twins: gen is 92% pending (8,260/8,992) — the
+        # third family joins the daily legs (per-family state/report
+        # twins, per-family retrigger key JD_REFETCH_GEN)
+        env:
+          SLOT: ${{ github.event.schedule }}
+        run: |
+          T="${{ github.event.inputs.transport || 'direct' }}"
+          if [ "$SLOT" = "20 12 * * 6" ]; then T="fc_relay"; fi
+          python3 scripts/jd_refetch.py \
+            --family gen \
             --transport "$T" \
             --budget-seconds 480 \
             --max-rows "${{ github.event.inputs.max_rows || '150' }}"
 
       - name: Retrigger while backlog remains (cap 6 runs/day)
-        # the pm step is the sole dispatcher: EITHER family pending →
-        # one dispatch (the next run re-covers both families)
-        if: env.JD_REFETCH_PM == 'pending' || env.JD_REFETCH_DMM == 'pending'
+        # the pm step is the sole dispatcher: ANY family pending →
+        # one dispatch (the next run re-covers all families)
+        if: env.JD_REFETCH_PM == 'pending' || env.JD_REFETCH_DMM == 'pending' || env.JD_REFETCH_GEN == 'pending'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

@@ -8,8 +8,9 @@ chunks (the sandbox reaping rule): --city-window N/M runs ~10 cities
 
 Artifact: ingest/data/industry/craigslist_home_services.json —
 ACCUMULATES across windows (cities_run maps city → per-query counts +
-verdicts; a re-run of a city REPLACES its rows — the fresh sweep of
-that city wins). Rows are dateless metadata (title/loc/url/rid/counts
+verdicts; a re-run of a city REPLACES its rows on an OK verdict only —
+[W2B-1] a blocked/captcha re-run keeps the prior window's rows, the
+city pauses). Rows are dateless metadata (title/loc/url/rid/counts
 — the derived-data doctrine; no post bodies, no per-post fetches).
 The .report.md twin carries the per-city × query table + the honest
 verdict ledger (any 403/captcha city is recorded, never retried
@@ -40,8 +41,16 @@ def _load() -> dict:
     if OUT.exists():
         try:
             return json.load(open(OUT))
-        except Exception:                       # noqa: BLE001
-            pass
+        except Exception:
+            # [W2B-5] corrupt-artifact guard: back the file up, then
+            # FAIL LOUD. The old catch-all silently reset to the
+            # empty skeleton — run_window would then _save over it,
+            # silently losing every other city's rows (the artifact
+            # is the only store; the rows are dateless and not
+            # re-derivable without a re-fetch).
+            bak = OUT.with_name(OUT.name + ".corrupt")
+            bak.write_bytes(OUT.read_bytes())
+            raise
     return {"ran_at": "", "industry": "home_services_craigslist",
             "cities_run": {}, "rows": [], "gates": {}}
 
@@ -84,18 +93,33 @@ def run_window(cities: list[str]) -> int:
     d["ran_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     for city in cities:
         rows, v = rs.fetch_craigslist(city, list(rs.CRAIGSLIST_QUERIES))
-        # replace this city's rows (fresh-sweep-wins): drop old rows of
-        # THIS city, keep every other city's
-        d["rows"] = [r for r in d.get("rows", [])
-                     if not (r.get("query") or
-                             f"cl:{city}:").startswith(f"cl:{city}:")]
-        d["rows"] += rows
+        # [W2B-1] replace this city's rows ONLY on an ok verdict — a
+        # blocked (captcha mid-city / all-http-error) sweep keeps the
+        # prior window's rows: the city PAUSES, it must not lose the
+        # only store of its data. The old unconditional replace fired
+        # on blocked/partial verdicts too (silent cross-window data
+        # regression). The verdict is recorded honestly either way.
+        if v.startswith("ok"):
+            # drop old rows of THIS city, keep every other city's;
+            # the defensive default KEEPS query-less rows (the old
+            # `or f"cl:{city}:"` fallback dropped them)
+            d["rows"] = [r for r in d.get("rows", [])
+                         if not (r.get("query") or
+                                 "").startswith(f"cl:{city}:")]
+            d["rows"] += rows
+        # the ledger row-count = rows PRESENT for this city (fresh on
+        # ok, prior-kept on blocked — stays exact vs the artifact)
+        n_city = sum(1 for r in d.get("rows", [])
+                     if (r.get("query") or "").startswith(f"cl:{city}:"))
         d["cities_run"][city] = {
-            "queries": len(rs.CRAIGSLIST_QUERIES), "rows": len(rows),
+            "queries": len(rs.CRAIGSLIST_QUERIES), "rows": n_city,
             "verdict": v,
             "ran_at": datetime.now(timezone.utc)
                               .strftime("%Y-%m-%dT%H:%M:%SZ")}
-        print(f"[cl:{city:<14}] {len(rows):>4} rows | {v[:70]}")
+        print(f"[cl:{city:<14}] {len(rows):>4} rows"
+              + ("" if v.startswith("ok")
+                 else f" (kept {n_city} prior)")
+              + f" | {v[:70]}")
         _save(d)                      # incremental per-city checkpoint
     uniq = len({r.get("rid") for r in d["rows"]})
     d["gates"] = {"rows_total": len(d["rows"]),

@@ -95,7 +95,14 @@ jobs:
               *) run_leg "$DISPATCH_TIER" "" ;;
             esac
           elif [ "$SLOT" = "0 13 * * 2" ]; then
-            run_leg t3 "--full --query-window auto/2"
+            # [W2a-2/W2c-3] the measured adzuna arithmetic: t3 US-wide
+            # CORE-30 cap-binds at 10pg/query = 300 req ALONE (3x the
+            # shared 250/day key) — the Tuesday leg windows the t3 core
+            # (auto/3 = 10 queries ≈ 100 req) + t2 (≈75) ≈ 175 ✓ with
+            # pm headroom; the t3 windows rotate to full coverage over
+            # 3 weeks, and Thursday's t1a carries the metro depth
+            run_leg t3 "--full --query-window auto/2 --tail-only"
+            run_leg t3 "--query-window auto/3"
             run_leg t2 ""
           elif [ "$SLOT" = "0 13 * * 4" ]; then
             run_leg t1a ""

@@ -811,6 +811,18 @@ PM_QUERY_VARIANTS = PM_QUERY_CORE + PM_QUERY_TAIL
 #   4. token heads (ppc/sem/ad[- ]ops) → dmm
 #   5. adjacent closed set             → adjacent
 #   6. else                            → other
+#
+# [W2a-1 / DESIGN-S47 v2 F4] the F4 grammar pass (2026-10-26): 25 of
+# the 100 B4 titles routed `other` — `ad operations specialist` sat in
+# the weekly CORE-20 while its eponymous rows died at the gate (the
+# 10-24 refresh dropped 7,264 family_other). The v2 amendments:
+# TOKEN_HEADS += spelled-out `ad operations` (+ `ad trafficking`, the
+# same ad-ops cluster); DEMAND_CORE += head/vp-of-growth,
+# user-acquisition; ROLE_HEAD += `associate` (digital marketing
+# associate); ADJACENT += the organic/content/creative/email/CRM/
+# retention/martech/analytics/affiliate/organic-search additions.
+# The census bar (test_s41_family.py): every CORE+TAIL title routes
+# dmm or adjacent — 0 `other`.
 
 DMM_SUPPLY_DENY = re.compile(
     r"""[^\n]{0,60}\b(?:adtech|ad-tech|advertising\s+technology)\b
@@ -835,37 +847,52 @@ DMM_DEMAND_CORE = re.compile(
             search\s+engine\s+marketing)\b
       | \bgrowth\s+(?:hacker|manager|specialist|lead|analyst|director|
             strategist|marketer)\b
+      | \b(?:head|vp)\s+of\s+growth\b
+      | \buser\s+acquisition\b
       | \bdigital\s+advertising\b
       | \bdemand\s+gen(?:eration)?\b""",
     re.I | re.VERBOSE)
 DMM_TOKEN_HEADS = re.compile(
-    r"""\b(?:ppc|sem|ad[\s-]?ops?|advertising\s+operations|
-            search\s+marketing|programmatic|media\s+buying)\b""",
+    r"""\b(?:ppc|sem|ad[\s-]?ops?|ad\s+operations|ad\s+trafficking|
+            advertising\s+operations|search\s+marketing|programmatic|
+            media\s+buying)\b""",
     re.I | re.VERBOSE)
 DMM_ROLE_HEAD = re.compile(
     r"""\b(?:manager|mgr|director|head|vp|vice\s+president|chief|
             officer|lead|specialist|analyst|coordinator|strategist|
             consultant|buyer|trader|planner|optimizer|marketer|
-            associate\s+director|junior|senior|entry[\s-]?level)\b""",
+            associate|associate\s+director|junior|senior|
+            entry[\s-]?level)\b""",
     re.I | re.VERBOSE)
 DMM_ADJACENT = re.compile(
     r"""\b(?:content|seo|social\s+media|email|brand|product|partner|
             affiliate|influencer|event|relationship)\s+marketing\b
-      | \b(?:content|brand)\s+(?:strategist|specialist|marketer)\b
+      | \b(?:content|brand)\s+(?:strategist|specialist|marketer|
+            manager|writer)\b
       | \bcopywriter\b
       | \bbrand\s+(?:manager|director|strategist|specialist)\b
       | \bmarketing\s+(?:specialist|coordinator|manager|director|
             analyst|executive|intern(?:ship)?|assistant)\b
       | \b(?:social\s+media|community)\s+(?:manager|specialist|
-            coordinator|strategist)\b
-      | \b(?:seo|search\s+engine\s+optimization)\s+(?:specialist|
-            manager|analyst|strategist|consultant|director)\b
+            coordinator|strategist|analyst)\b
+      | \b(?:seo|search\s+engine\s+optimization|organic\s+search)\s+
+            (?:specialist|manager|analyst|strategist|consultant|
+               director)\b
       | \bmarketing\s+communications\b
       | \b(?:public|media)\s+relations\b
       | \bmedia\s+(?:buyer|planner|researcher)\b
       | \bmarketing\s+generalist\b
       | \bgo[\s-]to[\s-]market\b
-      | \bmarketing\s+operations\b""",
+      | \bmarketing\s+operations\b
+      | \bcreative\s+strategist\b
+      | \bad\s+creative\b
+      | \bemail\s+campaign\b
+      | \bcrm\s+manager\b
+      | \bretention\s+specialist\b
+      | \bmarketing\s+(?:automation|analytics)\b
+      | \bmarketing\s+data\s+analyst\b
+      | \b(?:martech|marketing\s+technolog(?:y|ies))\b
+      | \baffiliate\s+manager\b""",
     re.I | re.VERBOSE)
 
 

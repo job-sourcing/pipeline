@@ -20,6 +20,8 @@ import pytest
 import role_sweep as rs
 from jobsearch.rolefamilies import (
     classify_dmm,
+    DMM_QUERY_CORE,
+    DMM_QUERY_TAIL,
     family_spec,
     title_core_family,
     title_core,
@@ -109,6 +111,37 @@ DMM_CASES = [
     ("Product Manager", "other"),                   # PM family, not dmm
     ("Senior Java Engineer", "other"),
     ("Digital Design Manager", "other"),            # design ≠ marketing
+    # [W2a-1 / DESIGN-S47 v2 F4] the grammar-pass additions — the 25
+    # B4 titles that routed `other` (the 10-24 refresh dropped 7,264
+    # family_other rows; `ad operations specialist` sat in the weekly
+    # CORE-20 while its eponymous rows died at the gate):
+    ("Ad Operations Specialist", "dmm"),           # weekly CORE-20 slot
+    ("Ad Operations Analyst", "dmm"),
+    ("Ad Trafficking Specialist", "dmm"),          # the ad-ops cluster
+    ("Head of Growth", "dmm"),                     # head/vp-of-growth
+    ("VP of Growth", "dmm"),
+    ("User Acquisition Manager", "dmm"),           # user-acquisition core
+    ("Digital Marketing Associate", "dmm"),        # ROLE_HEAD += associate
+    ("Organic Search Manager", "adjacent"),         # the ADJACENT additions
+    ("Social Media Analyst", "adjacent"),
+    ("Content Manager", "adjacent"),
+    ("Content Writer", "adjacent"),
+    ("Creative Strategist", "adjacent"),
+    ("Ad Creative Specialist", "adjacent"),
+    ("Email Campaign Manager", "adjacent"),
+    ("CRM Manager", "adjacent"),
+    ("Retention Specialist", "adjacent"),
+    ("Marketing Automation Specialist", "adjacent"),
+    ("Marketing Technology Specialist", "adjacent"),  # spelled-out martech
+    ("Martech Specialist", "adjacent"),
+    ("Marketing Analytics Manager", "adjacent"),
+    ("Marketing Data Analyst", "adjacent"),
+    ("Affiliate Manager", "adjacent"),
+    # the deny-side guards of the same pass: the widened grammar must
+    # NOT leak quota-sales or supply-side rows through the new phrases
+    ("Talent Acquisition Manager", "other"),        # user ≠ talent
+    ("Warehouse Associate", "other"),               # associate w/o core
+    ("Account Coordinator", "other"),               # sales-side (deny)
 ]
 
 
@@ -116,6 +149,23 @@ DMM_CASES = [
 def test_dmm_grammar(title, want):
     fam, ev = classify_dmm(title)
     assert fam == want, f"{title!r}: got {fam}, want {want} ({ev})"
+
+
+def test_dmm_query_census_zero_other():
+    """[W2a-1] THE BAR: every DMM_QUERY_CORE+TAIL title (the 100-title
+    B4 census) classifies dmm or adjacent — 0 `other`. A query whose
+    eponymous rows die at the family gate burns fetch budget on rows
+    that can never ship (`ad operations specialist` sat in the weekly
+    CORE-20 for exactly this reason). If this pin fails after a query
+    list change, widen the GRAMMAR (DEMAND_CORE/TOKEN_HEADS/ADJACENT)
+    with the new titles, not just the list."""
+    routes = {q: classify_dmm(q)[0]
+              for q in DMM_QUERY_CORE + DMM_QUERY_TAIL}
+    other = sorted(q for q, fam in routes.items() if fam == "other")
+    assert not other, f"dmm census titles routing 'other': {other}"
+    # and the census is meaningfully split (the grammar actually fires)
+    assert sum(1 for f in routes.values() if f == "dmm") >= 40
+    assert sum(1 for f in routes.values() if f == "adjacent") >= 40
 
 
 # ── the registry ─────────────────────────────────────────────────────
@@ -230,3 +280,63 @@ class TestFamilyIsolation:
         assert not (roles / "dmm_envelope.json").exists()
         env = json.load(open(roles / "pm_envelope.json"))
         assert "locked_endpoints" not in env["sources"]
+
+
+class TestSeedLayerForNewSources:
+    """[W2a-8] ziprecruiter/glassdoor seed rows re-enter with their
+    TRUE layer (l1.5, not the l2 default) and their rids INTACT — the
+    rid-prefix whitelist + _SRC_LAYER both missed the two sources F17
+    registered, so one union round-trip mislabeled the layer and
+    stripped the strongest identity rule (rid-dedup)."""
+
+    def test_zip_gd_seed_rows_keep_layer_and_rid(self, sweep_env,
+                                                 monkeypatch):
+        roles, watch, ui = sweep_env
+        prior = {
+            "envelope": {"ran_at": "2026-10-20T00:00:00Z"},
+            "jobs": [{
+                # the fetcher's own rid shape: ziprecruiter:{coslug}:…
+                "title": "Office Manager", "company": "Acme SNF",
+                "companyKey": "acme-snf", "loc": "US",
+                "url": "https://www.ziprecruiter.com/co/Acme-SNF",
+                "postedOn": "2026-10-20", "desc": "run the office",
+                "source": "ziprecruiter",
+                "id": "ziprecruiter:Acme-SNF:officemanager",
+                "geoTier": "t3",
+            }, {
+                # …and glassdoor:jl{jid}
+                "title": "Business Office Manager", "company":
+                    "Palmetto", "companyKey": "palmetto", "loc": "US",
+                "url": "https://www.glassdoor.com/job-listing/x?jl=123",
+                "postedOn": "2026-10-20", "desc": "run the office",
+                "source": "glassdoor", "id": "glassdoor:jl123",
+                "geoTier": "t3",
+            }, {
+                # the zenrows-fallback id shape — a per-process salted
+                # hash, must STAY stripped (row-hash ids are not rids)
+                "title": "Office Coordinator", "company": "Zen Co",
+                "companyKey": "zen-co", "loc": "US",
+                "url": "https://www.glassdoor.com/job-listing/y?jl=9",
+                "postedOn": "2026-10-20", "desc": "coordinate",
+                "source": "glassdoor", "id": "gd_3_17427389",
+                "geoTier": "t3",
+            }],
+        }
+        (roles / "prior.json").write_text(json.dumps(prior))
+        _patch_all(monkeypatch, {})
+        rc = rs.sweep(family_spec("gen")["queries_core"],
+                      seed_envelope=str(roles / "prior.json"),
+                      family="gen")
+        jobs = json.load(open(ui / "roles-gen.json"))["jobs"]
+        assert len(jobs) == 3
+        zp = next(j for j in jobs if j["source"] == "ziprecruiter"
+                  and j["title"] == "Office Manager")
+        gd = next(j for j in jobs if j["id"] == "glassdoor:jl123")
+        assert zp["layer"] == "l1.5"          # not the l2 default
+        assert gd["layer"] == "l1.5"
+        # the rids survived the whitelist (rid-dedup stays armed)
+        assert zp["id"] == "ziprecruiter:Acme-SNF:officemanager"
+        # the gd_{n}_{hash} row-hash id stays stripped
+        zen = next(j for j in jobs if j["title"] == "Office Coordinator")
+        assert not zen["id"].startswith("gd_")   # row-hash, not a rid
+

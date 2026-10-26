@@ -1932,6 +1932,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
             _SRC_LAYER = {"adzuna": "l1.5", "dice": "l1.5",
                           "careerjet": "l1.5", "jooble": "l1.5",
                           "indeed": "l1.5", "findwork": "l1.5",
+                          "ziprecruiter": "l1.5", "glassdoor": "l1.5",
                           "li": "l1", "gj": "l3", "yc": "l2",
                           "wellfound": "l2", "hn": "l2", "wwr": "l2",
                           "remoteok": "l2", "jobicy": "l2",
@@ -1960,11 +1961,22 @@ def sweep(queries: list[str], skip_gj: bool = False,
                     continue           # F2: staleness bound (45-60d)
                 src = row.get("source") or ""
                 rid = row.get("id") or ""
-                m = re.match(r"^([a-z]{2,10}):", rid)
+                # [W2a-8] the rid whitelist follows the prefixes the
+                # fetchers themselves mint: ziprecruiter rows carry
+                # `ziprecruiter:{coslug}:{titleslug}`, glassdoor rows
+                # `glassdoor:jl{jid}` — both were missing, so their
+                # seed rids were stripped (rid-dedup disabled; the
+                # finding's zp/gd shorthand does NOT match either
+                # shape). The bound widens 10→16 so the 12-char
+                # `ziprecruiter` prefix parses. The zenrows-fallback
+                # `gd_{n}_{hash}` ids stay STRIPPED by design — a
+                # per-process salted hash is a row-hash, not a rid
+                # (the F1 doctrine).
+                m = re.match(r"^([a-z]{2,16}):", rid)
                 if not (m and m.group(1) in
                         ("adz", "cj", "dice", "fw", "jbl", "ex",
                          "usaj", "muse", "yc", "wf", "hn", "him",
-                         "tal", "gj")):
+                         "tal", "gj", "ziprecruiter", "glassdoor")):
                     rid = ""          # row-hash ids are NOT rids (F1)
                 all_rows.append({
                     "title": row.get("title") or "",
@@ -2091,7 +2103,12 @@ def sweep(queries: list[str], skip_gj: bool = False,
             counters["nontech_gate"] += 1
             dropped.append({**r, "reason": reason, "recoverable": True})
             continue
-        r["sector_evidence"] = sev
+        # [W2a-4] preserve the fetch-time adzuna_category stamp when
+        # the verdict has no evidence of its own (sev empty) — the
+        # unconditional write wiped EVERY adzuna_category stamp (0
+        # across 4,590 adzuna rows in both bundles)
+        if sev:
+            r["sector_evidence"] = sev
         r["sector_reason"] = reason
         if act == "pending":
             # S39 §B1: the agency evidence-grade — staffing-flagged
@@ -2844,6 +2861,21 @@ _CL_ROW = re.compile(
     r'.*?<div class="location">\s*(?P<loc>[^<]*?)\s*</div>',
     re.DOTALL)
 
+# [W2B-3] phone redaction at T0 ingest: poster-published personal
+# numbers are the PII class riding the wholesale industry mirror
+# (build_public_mirror.sh rsyncs ingest/data/industry/ verbatim).
+# Digit-runs >=7 in the PHONE shapes: contiguous runs (10-digit and
+# partial) + the separated US groupings 3-3-4 / (3)-3-4 / +1-3-3-4
+# with [-. ] joins ("Tina 713-493-2288" -> "Tina [redacted]").
+# Two-group ranges (2500-3000 miles, 900-1000 pay, 2021-2026 trucks)
+# are NOT phone-shaped and stay — they are title-token signal, not
+# PII (the W2B-2/W2B-8 relevance analysis depends on them).
+_CL_PHONE = re.compile(
+    r"(?<!\d)(?:"
+    r"\d{7,}"
+    r"|(?:\+?1[\s.\-])?\(?\d{3}\)?[\s.\-]\d{3}[\s.\-]\d{4}"
+    r")(?!\d)")
+
 _CL_UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
           "AppleWebKit/537.36 (KHTML, like Gecko) "
           "Chrome/130.0.0.0 Safari/537.36"}
@@ -2862,6 +2894,9 @@ def fetch_craigslist(city: str, queries: list[str]) -> tuple[list[dict], str]:
     descriptor when they carry anything). Pacing 3s/fetch (B1's
     measured safe rate); captcha on a city = that city pauses (no
     bypass — ever). Box-side only (IP reputation; NEVER a GHA lane)."""
+    # [W2B-8] aliased: the loop body's `html` is the fetched PAGE —
+    # a bare `import html` would be shadowed by it
+    import html as _html_mod                     # noqa: PLC0415
     rows: list[dict] = []
     verdicts: list[str] = []
     for q in queries:
@@ -2889,6 +2924,14 @@ def fetch_craigslist(city: str, queries: list[str]) -> tuple[list[dict], str]:
             title = (g["title"] or g["rowtitle"] or "").strip()
             if not title:
                 continue
+            # [W2B-8] entity decode at ingest — 945 titles (9.5%) in
+            # the 10-26 census carried raw &amp;/&#39;/&nbsp; entities,
+            # degrading the title-token signal (the only T0 signal).
+            # Unescape BEFORE redaction (a &nbsp;-joined number must
+            # still match the phone shape; \s covers \xa0).
+            title = _html_mod.unescape(title)
+            # [W2B-3] phone redaction at ingest (see _CL_PHONE)
+            title = _CL_PHONE.sub("[redacted]", title)
             rid_tail = (g["url"].rstrip("/").rsplit("/", 1)[-1]
                         if g["url"] else "")
             rows.append({

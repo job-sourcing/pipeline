@@ -322,6 +322,55 @@ class TestRefetchFamily:
         finally:
             jr._set_family("pm")
 
+    def test_gen_twins_paths(self):
+        # [S47-W2a-3] gen joins the family parameterization — the gen
+        # bundle was 92% pending (8,260/8,992) with NO lane able to
+        # write a cached JD for it. The twins mirror the S42-R1 A1/A2
+        # dmm pattern exactly (bundle per family_spec("gen")
+        # ["ui_file"], state/report under jd_refetch_gen_*).
+        try:
+            jr._set_family("gen")
+            assert "roles-gen.json" in str(jr.BUNDLE)
+            assert "jd_refetch_gen_state.json" in str(jr.STATE)
+            assert "jd_refetch_gen_report.md" in str(jr.REPORT)
+            assert jr._FAMILY == "gen"
+            jr._set_family("pm")            # reversible, not sticky
+            assert "roles-pm.json" in str(jr.BUNDLE)
+            assert "jd_refetch_state.json" in str(jr.STATE)
+        finally:
+            jr._set_family("pm")
+
+    def test_gen_choice_emits_gen_env_key(self, tmp_path, monkeypatch):
+        # [S47-W2a-3] the choice list admits gen and main() emits the
+        # per-family retrigger key JD_REFETCH_GEN (the yml predicate
+        # keys it alongside PM/DMM — a shared key would stall the pm
+        # backlog, the S42-R1 F1 class). Drive the REAL main() with a
+        # stub repo (the _set_family rebind reads jr.REPO at call
+        # time, so the stub must sit at REPO level).
+        fake = tmp_path / "repo"
+        (fake / "ingest/data/ui").mkdir(parents=True)
+        (fake / "ingest/data/roles").mkdir(parents=True)
+        (fake / "ingest/data/ui/roles-gen.json").write_text(
+            json.dumps({"jobs": []}))
+        monkeypatch.setattr(jr, "REPO", fake)
+        genv = tmp_path / "genv"
+        genv.write_text("")
+        monkeypatch.setenv("GITHUB_ENV", str(genv))
+        monkeypatch.setattr(
+            sys, "argv", ["jd_refetch.py", "--family", "gen",
+                          "--transport", "direct"])
+        assert jr.main() == 0
+        out = genv.read_text()
+        assert "JD_REFETCH_GEN=complete" in out, out
+        assert "JD_REFETCH_GEN_REMAINING=0" in out, out
+        # the gen twins landed in the fake repo, not the real one
+        assert (fake / "ingest/data/roles/"
+                "jd_refetch_gen_state.json").exists()
+        assert (fake / "ingest/data/roles/"
+                "jd_refetch_gen_report.md").exists()
+        assert not (fake / "ingest/data/roles/"
+                    "jd_refetch_state.json").exists()
+
     def test_family_env_keys_per_family(self, tmp_path, monkeypatch):
         # F1: a SHARED key would stall the pm backlog — per-family
         genv = tmp_path / "genv"

@@ -132,6 +132,82 @@ class TestParser:
         assert "http403" in v                 # honest verdict, recorded
 
 
+class TestIngestHygiene:
+    """[W2B-3 + W2B-8] the title transforms at T0 ingest: personal
+    phone numbers redacted (poster-published contact digits are the
+    PII class riding the wholesale industry mirror — 22 rows in the
+    10-26 census) and HTML entities decoded (945 titles carried raw
+    &amp;/&#39;/&nbsp; — the title token IS the only T0 signal)."""
+
+    def test_phone_redaction_regex(self):
+        # [W2B-3] the pinned shapes: the example transform verbatim +
+        # the contiguous/paren/+1/dotted phone forms; the two-group
+        # ranges (miles/pay/truck-years) are title signal, NOT PII
+        sub = lambda t: rs._CL_PHONE.sub("[redacted]", t)
+        assert sub("Tina 713-493-2288") == "Tina [redacted]"
+        assert sub("Luna roofing hiring 4254265760") == \
+            "Luna roofing hiring [redacted]"
+        assert sub("Call (561) 718-7316 today") == "Call [redacted] today"
+        assert sub("Tina +1 713-493-2288") == "Tina [redacted]"
+        assert sub("713.493.2288") == "[redacted]"
+        # the exemptions — 4-4 / 3-4 two-group ranges stay
+        assert sub("CDL 2500-3000 MILES/WEEK") == "CDL 2500-3000 MILES/WEEK"
+        assert sub("Delivery Driver 900-1000") == "Delivery Driver 900-1000"
+        assert sub("2021-2026 Trucks") == "2021-2026 Trucks"
+        assert sub("75- 80 CPM") == "75- 80 CPM"
+        assert sub("HVAC LEAD INSTALLER 5+ YEARS") == \
+            "HVAC LEAD INSTALLER 5+ YEARS"
+
+    def test_phone_redaction_and_entities_at_ingest(self, monkeypatch):
+        page = """
+<li class="cl-static-search-result" title="Houston O/O | Home Weekends | Tina 713-493-2288">
+  <a href="https://www.craigslist.org/view/d/houston-oo/e6YNaYGx">
+    <div class="title">Houston O/O | Home Weekends | Tina 713-493-2288</div>
+    <div class="details">
+      <div class="price">$0</div>
+      <div class="location">houston</div>
+    </div>
+  </a>
+</li>
+<li class="cl-static-search-result" title="Plumbing &amp; HVAC Installer">
+  <a href="https://www.craigslist.org/view/d/plumb/aB3x">
+    <div class="title">Plumbing &amp; HVAC Installer</div>
+    <div class="details">
+      <div class="price">$0</div>
+      <div class="location">kansas city</div>
+    </div>
+  </a>
+</li>
+"""
+        _fetch_stub(monkeypatch, {"query=hvac": page})
+        rows, v = rs.fetch_craigslist("houston", ["hvac"])
+        assert v.startswith("ok")
+        by_rid = {r["rid"]: r for r in rows}
+        assert by_rid["cl:e6YNaYGx"]["title"] == \
+            "Houston O/O | Home Weekends | Tina [redacted]"   # W2B-3
+        assert by_rid["cl:aB3x"]["title"] == "Plumbing & HVAC Installer"  # W2B-8
+
+    def test_retro_pass_is_idempotent_on_the_artifact(self):
+        # [W2B-3/W2B-8] the one-off (scripts/cl_retro_redact.py) ran
+        # 2026-10-26: 22 phones redacted, 945 entities decoded. The
+        # shipped artifact must now be free of BOTH classes (the pass
+        # is idempotent — [redacted] carries no digits).
+        import re
+        art = (Path(__file__).resolve().parents[2]
+               / "ingest/data/industry/craigslist_home_services.json")
+        if not art.exists():
+            pytest.skip("artifact absent in this environment")
+        d = json.loads(art.read_text())
+        ent = re.compile(r"&[a-zA-Z]+;|&#\d+;")
+        n_ph = sum(1 for r in d["rows"]
+                   if rs._CL_PHONE.search(r["title"]))
+        n_ent = sum(1 for r in d["rows"] if ent.search(r["title"]))
+        assert n_ph == 0, "phone-shaped digits survived the retro pass"
+        assert n_ent == 0, "HTML entities survived the retro pass"
+        # gates/ledger preserved by the in-place pass
+        assert d["gates"]["rows_total"] == len(d["rows"])
+
+
 class TestDriver:
     def test_window_accumulates_and_replaces(self, tmp_path, monkeypatch):
         out = tmp_path / "craigslist_home_services.json"
@@ -177,3 +253,102 @@ class TestDriver:
         assert cs.main_with(["--status"]) == 0
         outp = capsys.readouterr().out
         assert "sfbay" in outp and "1" in outp
+
+    def test_blocked_rerun_preserves_prior_rows(self, tmp_path, monkeypatch):
+        """[W2B-1] the fresh-sweep-wins replace fires ONLY on an ok
+        verdict — a captcha'd/http-error city keeps its prior window's
+        rows (the city pauses; the artifact is the only store and rows
+        are dateless). The old unconditional replace silently regressed
+        cross-window data; the verdict is still recorded honestly."""
+        out = tmp_path / "craigslist_home_services.json"
+        monkeypatch.setattr(cs, "OUT", out)
+        monkeypatch.setattr(cs, "REPORT",
+                            tmp_path / "craigslist.report.md")
+        good = ([{"title": "HVAC Lead Installer", "company": "",
+                  "loc": "x (sfbay)", "url": "u/1", "posted": "",
+                  "dateless": True, "desc": "", "source": "craigslist",
+                  "layer": "l2", "query": "cl:sfbay:hvac",
+                  "rid": "cl:s1"}], "ok|hvac:1")
+        monkeypatch.setattr(cs.rs, "fetch_craigslist", lambda *a: good)
+        cs.run_window(["sfbay"])
+        assert len(json.load(open(out))["rows"]) == 1
+
+        # blocked re-run (captcha mid-city): prior rows KEPT, the
+        # partial fetch discarded, the verdict recorded
+        blocked = ([{"title": "partial junk", "company": "",
+                     "loc": "x (sfbay)", "url": "u/2", "posted": "",
+                     "dateless": True, "desc": "", "source": "craigslist",
+                     "layer": "l2", "query": "cl:sfbay:plumbing",
+                     "rid": "cl:s2"}], "blocked:captcha|plumbing:1")
+        monkeypatch.setattr(cs.rs, "fetch_craigslist",
+                            lambda *a: blocked)
+        cs.run_window(["sfbay"])
+        d = json.load(open(out))
+        titles = [r["title"] for r in d["rows"]]
+        assert titles == ["HVAC Lead Installer"]   # prior row survived
+        assert "partial junk" not in titles        # partial discarded
+        assert d["cities_run"]["sfbay"]["verdict"].startswith(
+            "blocked:captcha")                      # honest verdict
+        assert d["cities_run"]["sfbay"]["rows"] == 1   # ledger exact
+
+        # a full-http-error city ('blocked', 0 rows) also preserves
+        dead = ([], "blocked|hvac:http403|plumbing:http403")
+        monkeypatch.setattr(cs.rs, "fetch_craigslist", lambda *a: dead)
+        cs.run_window(["sfbay"])
+        d = json.load(open(out))
+        assert [r["title"] for r in d["rows"]] == ["HVAC Lead Installer"]
+        assert d["cities_run"]["sfbay"]["rows"] == 1
+
+        # and the ok path still replaces (the fresh sweep wins)
+        fresh = ([{"title": "new sweep", "company": "",
+                   "loc": "x (sfbay)", "url": "u/3", "posted": "",
+                   "dateless": True, "desc": "", "source": "craigslist",
+                   "layer": "l2", "query": "cl:sfbay:hvac",
+                   "rid": "cl:s3"}], "ok|hvac:1")
+        monkeypatch.setattr(cs.rs, "fetch_craigslist", lambda *a: fresh)
+        cs.run_window(["sfbay"])
+        d = json.load(open(out))
+        assert [r["title"] for r in d["rows"]] == ["new sweep"]
+
+    def test_ok_replace_keeps_queryless_rows(self, tmp_path, monkeypatch):
+        """[W2B-1 sub-note] the defensive fallback KEEPS query-less
+        rows (the old `or f"cl:{city}:"` default dropped them from
+        the OTHER cities' keep-set)."""
+        out = tmp_path / "craigslist_home_services.json"
+        monkeypatch.setattr(cs, "OUT", out)
+        monkeypatch.setattr(cs, "REPORT",
+                            tmp_path / "craigslist.report.md")
+        out.write_text(json.dumps({
+            "ran_at": "t", "cities_run": {},
+            "rows": [{"title": "orphan", "query": ""}],
+            "gates": {}}))
+        good = ([{"title": "fresh", "company": "", "loc": "x",
+                  "url": "u/1", "posted": "", "dateless": True,
+                  "desc": "", "source": "craigslist", "layer": "l2",
+                  "query": "cl:sfbay:hvac", "rid": "cl:s1"}],
+                "ok|hvac:1")
+        monkeypatch.setattr(cs.rs, "fetch_craigslist", lambda *a: good)
+        cs.run_window(["sfbay"])
+        titles = [r["title"] for r in json.load(open(out))["rows"]]
+        assert "orphan" in titles             # kept, not dropped
+
+    def test_corrupt_artifact_backed_up_and_fail_loud(self, tmp_path,
+                                                      monkeypatch):
+        """[W2B-5] a corrupt read must NEVER silently reset to the
+        empty skeleton — run_window would then _save over it, losing
+        every other city's rows. Back up + raise."""
+        out = tmp_path / "craigslist_home_services.json"
+        monkeypatch.setattr(cs, "OUT", out)
+        monkeypatch.setattr(cs, "REPORT",
+                            tmp_path / "craigslist.report.md")
+        out.write_text('{"rows": [truncated')   # corrupt JSON
+        with pytest.raises(json.JSONDecodeError):
+            cs._load()
+        bak = tmp_path / "craigslist_home_services.json.corrupt"
+        assert bak.exists()
+        assert bak.read_text() == '{"rows": [truncated'  # data rescued
+        # the corrupt original is left for the operator — refuse to
+        # clobber, fail loud on EVERY access
+        with pytest.raises(json.JSONDecodeError):
+            cs.run_window(["sfbay"])          # never reaches _save
+

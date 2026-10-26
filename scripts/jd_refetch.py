@@ -82,9 +82,11 @@ _FAMILY = "pm"
 def _set_family(family: str) -> None:
     """S42-R1 A1/A2 (DESIGN-S42 v2 §1.2): the refetch is family-
     parameterized. pm keeps its existing files verbatim (backward-
-    compat with the org's live state); dmm gets twins. The CACHE stays
-    SHARED — keyed (source,url), a dmm row and a pm row with the same
-    url are the same JD, no family contamination.
+    compat with the org's live state); dmm and gen get twins
+    ([W2a-3] gen joined 2026-10-26 — its bundle was 92% pending
+    with no lane able to write a cached JD for it). The CACHE stays
+    SHARED — keyed (source,url), a dmm/gen row and a pm row with the
+    same url are the same JD, no family contamination.
     Usage: _set_family('dmm') must be called BEFORE any bundle/state
     access (main does it first thing; library callers that never call
     main keep the pm defaults)."""
@@ -96,16 +98,24 @@ def _set_family(family: str) -> None:
                  "jd_refetch_dmm_state.json")
         REPORT = (REPO / "ingest/data/roles/"
                   "jd_refetch_dmm_report.md")
+    elif family == "gen":
+        # the bundle path per family_spec("gen")["ui_file"] — the
+        # twin naming mirrors the dmm pattern exactly
+        BUNDLE = REPO / "ingest/data/ui/roles-gen.json"
+        STATE = (REPO / "ingest/data/roles/"
+                 "jd_refetch_gen_state.json")
+        REPORT = (REPO / "ingest/data/roles/"
+                  "jd_refetch_gen_report.md")
     elif family == "pm":
-        # rebind EXPLICITLY (idempotent + reversible): the dmm call
-        # above mutated the globals — 'pm' must restore them, not
-        # merely no-op (a library caller flipping families in one
-        # process would silently keep the dmm paths).
+        # rebind EXPLICITLY (idempotent + reversible): the dmm/gen
+        # calls above mutated the globals — 'pm' must restore them,
+        # not merely no-op (a library caller flipping families in one
+        # process would silently keep the other family's paths).
         BUNDLE = REPO / "ingest/data/ui/roles-pm.json"
         STATE = REPO / "ingest/data/roles/jd_refetch_state.json"
         REPORT = REPO / "ingest/data/roles/jd_refetch_report.md"
     else:
-        raise SystemExit(f"unknown family: {family!r} (pm, dmm)")
+        raise SystemExit(f"unknown family: {family!r} (pm, dmm, gen)")
 
 from jobsearch.rolefamilies import is_board_employer  # noqa: E402
 
@@ -353,7 +363,8 @@ def main() -> int:
                          "fc_relay = the S47 firecrawl transport "
                          "(superset: direct+hk_only rows, US egress, "
                          "1 credit/row)")
-    ap.add_argument("--family", choices=["pm", "dmm"], default="pm",
+    ap.add_argument("--family", choices=["pm", "dmm", "gen"],
+                    default="pm",
                     help="which family bundle to refill (the cache is "
                          "shared, keyed (source,url))")
     ap.add_argument("--budget-seconds", type=int, default=480)
