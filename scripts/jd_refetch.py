@@ -207,8 +207,11 @@ def _select_targets(jobs: list[dict], transport_filter: str) -> list[dict]:
     [S47] fc_relay is a SUPERSET transport: it fetches direct + hk_only
     rows (firecrawl = US egress + stealth; 1 credit/detail page) — the
     post-Oct-24 override the cache comments always promised."""
-    _ok = ({"direct", "hk_only"} if transport_filter == "fc_relay"
-           else {transport_filter})
+    # S47-R1 F2 fix: the fc_relay leg's _ok must ALSO include rows whose
+    # own rule transport IS fc_relay (glassdoor jl= URLs) — the superset
+    # set {direct, hk_only} silently made the glassdoor class unselectable.
+    _ok = ({"direct", "hk_only", "fc_relay"}
+           if transport_filter == "fc_relay" else {transport_filter})
     out = []
     for r in jobs:
         reason = r.get("sectorReason") or ""

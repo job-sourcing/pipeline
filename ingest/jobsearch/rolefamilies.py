@@ -897,25 +897,333 @@ def classify_dmm(title: str, query_is_dmm: bool = False) -> tuple[str, str]:
 
 
 DMM_QUERY_CORE = [
-    "performance marketing manager",
+    # S46-B4 §3.2b: CORE-20 = the 20 v1 carry-overs (the ● marks in the
+    # decision-grade table) in table order — the weekly rotation.
     "digital marketing manager",
     "digital marketing specialist",
     "digital marketing director",
+    "digital marketing analyst",
+    "digital marketing coordinator",
+    "head of digital marketing",
+    "vp digital marketing",
+    "performance marketing manager",
+    "performance marketing analyst",
     "paid media manager",
     "paid search manager",
     "paid social manager",
-    "growth marketing manager",
+    "ppc specialist",
+    "ppc manager",
     "search engine marketing specialist",
-    "digital marketing analyst",
+    "ad operations specialist",
+    "programmatic trader",
+    "media buyer",                   # v1's 'media buyer digital', respelled
+    "growth marketing manager",
+    "growth marketing specialist",
 ]
 DMM_QUERY_TAIL = [
-    "ppc specialist", "ppc manager", "ad operations specialist",
-    "programmatic trader", "media buyer digital",
-    "growth marketing specialist", "performance marketing analyst",
-    "head of digital marketing", "vp digital marketing",
-    "digital marketing coordinator",
+    # §3.2b TAIL-80: the monthly --full rotation — the 100-title breadth
+    # the owner asked for (ads creative → campaign performance → growth
+    # → performance → lifecycle → SEO/SEM → content → social → email/
+    # CRM → martech → analytics → brand), clusters 1-12 in table order.
+    "digital marketing generalist",
+    "digital marketing consultant",
+    "digital marketing associate",
+    "performance marketing specialist",
+    "performance marketing director",
+    "paid media specialist",
+    "paid media buyer",
+    "paid search specialist",
+    "paid social specialist",
+    "sem specialist",
+    "sem manager",
+    "search engine marketing manager",
+    "search marketing manager",
+    "ad operations manager",
+    "ad operations analyst",
+    "ad trafficking specialist",
+    "programmatic specialist",
+    "media planner",
+    "growth marketing director",
+    "growth analyst",
+    "growth manager",
+    "head of growth",
+    "vp of growth",
+    "acquisition marketing manager",
+    "user acquisition manager",
+    "demand generation manager",
+    "demand generation specialist",
+    "seo specialist",
+    "seo manager",
+    "seo analyst",
+    "seo strategist",
+    "seo director",
+    "organic search manager",
+    "social media manager",
+    "social media specialist",
+    "social media coordinator",
+    "social media strategist",
+    "social media analyst",
+    "social media buyer",
+    "community manager",
+    "influencer marketing manager",
+    "content marketing manager",
+    "content marketing specialist",
+    "content strategist",
+    "content manager",
+    "content writer",
+    "copywriter",
+    "marketing copywriter",
+    "conversion copywriter",
+    "creative strategist",
+    "ad creative specialist",       # the owner's "ads creative"
+    "email marketing manager",
+    "email marketing specialist",
+    "email campaign manager",
+    "crm marketing manager",
+    "crm manager",
+    "lifecycle marketing manager",
+    "lifecycle marketing specialist",
+    "retention marketing manager",
+    "retention specialist",
+    "marketing automation specialist",
+    "marketing automation manager",
+    "marketing operations manager",
+    "marketing operations specialist",
+    "marketing technology specialist",
+    "martech specialist",
+    "marketing analyst",
+    "marketing analytics manager",
+    "marketing analytics specialist",
+    "marketing data analyst",
+    "affiliate marketing manager",
+    "affiliate manager",
+    "partner marketing manager",
+    "ecommerce marketing manager",
+    "amazon ppc specialist",
+    "brand manager",
+    "brand strategist",
+    "brand marketing manager",
+    "marketing communications manager",
+    "product marketing manager",    # grammar routes it adjacent — kept,
+                                    # never head-lined, per DMM_ADJACENT
 ]
 DMM_QUERY_VARIANTS = DMM_QUERY_CORE + DMM_QUERY_TAIL
+
+
+# ── §2.8 the GEN family (S46-B4 §3.2a/§3.5 — the SMB office catch-all) ──────
+# The owner cut: GENERAL/white-collar office roles for SMBs — admin,
+# office manager, estimates coordinator, field-visit coordinator,
+# marketing, operations, misc business/office work. NOT labor/trades
+# (§3.5), NOT clinical, NOT retail floor, NOT quota sales.
+#
+# Precedence (the classify_family doctrine — denies BEFORE core;
+# poison is POSITIONAL, never anywhere-in-title):
+#   1. head-position deny (trades/labor | clinical/licensed |
+#      retail floor | quota/field sales) → other
+#   2. office-side core (role-noun patterns)                → gen
+#   3. else                                                  → other
+#
+# The KEY RULE (§3.5): the OFFICE-side forms of the same trades
+# industries — estimator, dispatch coordinator, project coordinator —
+# are exactly what gen KEEPS (the harvest's measured precedent:
+# drop:level_pure_labor 197 vs kept:corp_office 7,762). The deny
+# phrase must therefore occupy the title's ROLE-NOUN slot — the head
+# segment's final phrase (before the first comma/dash/paren/colon,
+# trailing seniority numeral stripped): "HVAC Technician" denied (head
+# noun = technician), "HVAC company office manager" KEPT (head noun =
+# office manager — gen's whole SMB thesis), "hiring immediately HVAC
+# technician" denied, "office manager for plumbing company" KEPT.
+
+_GEN_HEAD_SPLIT = re.compile(r"\s+[-–—]\s+|,\s+|\(\s*|\s+—\s*|:\s+")
+_GEN_TAIL_NUMERAL = re.compile(r"\s+(?:[ivx]+|\d+)\s*$", re.I)
+
+
+def _gen_head_noun(title: str) -> str:
+    """The role-noun slot the §3.5 denies occupy: the head segment
+    (the title_core split — before the first comma/dash-separator/
+    paren/colon) with a trailing seniority numeral stripped
+    ("Warehouse Associate II" → "warehouse associate")."""
+    head = _GEN_HEAD_SPLIT.split(title, 1)[0]
+    head = _GEN_TAIL_NUMERAL.sub("", head)
+    return head.strip().lower()
+
+
+def _deny_tail_re(phrases: tuple[str, ...]) -> re.Pattern:
+    """End-anchored deny matcher for a §3.5 phrase list: the head noun
+    must END with the phrase (leading word boundary; '-'/' ' are
+    interchangeable inside phrases — 'door-to-door' ≡ 'door to door')."""
+    alts = []
+    for p in sorted(set(phrases), key=len, reverse=True):
+        words = [w for w in re.split(r"[-\s]+", p.strip().lower()) if w]
+        if words:
+            alts.append(r"[\s-]+".join(re.escape(w) for w in words))
+    return re.compile(r"\b(?:" + "|".join(alts) + r")\s*$", re.I)
+
+
+# §3.5 deny lists — verbatim (the labor/tradesman boundary).
+GEN_DENY_TRADES = (
+    "electrician", "plumber", "hvac technician", "hvac installer",
+    "installer", "mechanic", "technician", "welder", "carpenter",
+    "laborer", "apprentice", "journeyman", "construction worker",
+    "painter", "roofer", "glazier", "mason", "bricklayer",
+    "drywall finisher", "concrete finisher", "framer",
+    "flooring installer", "gutter installer", "solar installer",
+    "fence installer", "landscaper", "landscaping crew",
+    "groundskeeper", "tree trimmer", "arborist",
+    "pest control technician", "pool technician", "septic technician",
+    "chimney sweep", "insulation installer", "countertop installer",
+    "equipment operator", "forklift operator", "warehouse associate",
+    "warehouse worker", "stocker", "delivery driver", "truck driver",
+    "cdl driver", "courier", "mover", "house cleaner", "housekeeper",
+    "janitor", "custodian",
+)
+GEN_DENY_CLINICAL = (
+    "registered nurse", "rn", "lpn", "cna", "nursing assistant",
+    "medical assistant", "dental assistant", "dental hygienist",
+    "pharmacist", "pharmacy technician", "physical therapist",
+    "home health aide", "caregiver", "radiology tech", "teacher",
+    "professor", "attorney",
+)
+GEN_DENY_RETAIL = (
+    "store manager", "assistant store manager", "retail sales associate",
+    "cashier", "shift supervisor", "key holder", "barista", "server",
+    "line cook", "food prep", "host", "merchandiser",
+)
+GEN_DENY_QUOTA = (
+    "outside sales representative", "in-home sales consultant",
+    "canvasser", "door-to-door", "solar sales rep",
+)
+_GEN_DENY_HEAD = _deny_tail_re(
+    GEN_DENY_TRADES + GEN_DENY_CLINICAL + GEN_DENY_RETAIL + GEN_DENY_QUOTA)
+
+# the office-side keep grammar — contiguous role-noun phrases covering
+# the §3.2a query space (groups A-F) + their natural variants. The
+# sweep-level shared gates (g1/g1b/screening/sector — §3.5's "already
+# exist in the engine" class) apply AFTER this gate, family-invariantly.
+GEN_CORE = re.compile(
+    r"""
+      # A — office core (queries 1-10, 31-34)
+      \b(?:business\s+)?office\s+(?:manager|administrator|coordinator|
+          assistant|clerk|support\s+specialist|services\s+assistant)\b
+    | \b(?:administrative|admin)\s+(?:assistant|coordinator|specialist)\b
+    | \breceptionist\b
+    | \bexecutive\s+assistant\b
+    | \bfront[\s-]desk\s+coordinator\b
+    # B — finance office (11-17, 35-37)
+    | \b(?:full[\s-]charge\s+)?bookkeeper\b
+    | \baccounting\s+(?:assistant|clerk|coordinator)\b
+    | \b(?:accounts[\s-]+payable|accounts[\s-]+receivable)\s+
+        (?:specialist|coordinator|clerk)\b
+    | \b(?:billing|payroll)\s+(?:specialist|coordinator|administrator|
+        clerk)\b
+    # C — coordination / ops (18-25, 38-43) — the OFFICE-side forms of
+    #     the trades industries (the §3.5 KEY RULE)
+    | \b(?:project|operations|service|scheduling|appointment|estimates|
+        estimating|dispatch(?:ing)?|field[\s-]service|field[\s-]visit)\s+
+        coordinator\b
+    | \bdispatcher\b
+    | \bscheduler\b
+    | \boperations\s+(?:manager|assistant)\b
+    # E — customer / account (26-27, 48-51)
+    | \b(?:customer[\s-]+service|customer[\s-]+care)\s+
+        (?:coordinator|manager)\b
+    | \b(?:client|member)\s+services\s+coordinator\b
+    | \baccount\s+coordinator\b
+    # D — HR / people (28, 44-47)
+    | \b(?:hr|human[\s-]+resources)\s+(?:coordinator|assistant)\b
+    | \brecruiting\s+coordinator\b
+    | \bonboarding\s+specialist\b
+    # F — SMB marketing (29, 52-55) — sales SUPPORT stays (title 30)
+    | \bmarketing\s+(?:coordinator|assistant|specialist|generalist|
+        manager)\b
+    | \bsales\s+support\s+coordinator\b
+    """,
+    re.I | re.VERBOSE)
+
+
+def classify_gen(title: str,
+                 query_is_gen: bool = False) -> tuple[str, str]:
+    """family ∈ {gen, other} — the SMB office catch-all gate (§3.5).
+
+    Signature mirrors classify_family/classify_dmm (query-provenance
+    reserved; no bare-form class in v1). Denies BEFORE core; the deny
+    poison is POSITIONAL — the phrase must occupy the title's role-noun
+    slot (the head segment's END), never anywhere-in-title: "HVAC
+    Technician" denied, "HVAC company office manager" kept, "Estimator"
+    itself routes other (stays head-lined in the home-services family
+    per §3.2a — the gen form is the coordinator variant).
+    """
+    if not isinstance(title, str) or not title.strip():
+        return "other", "grammar"
+    if _GEN_DENY_HEAD.search(_gen_head_noun(title)):
+        return "other", "grammar"
+    if GEN_CORE.search(title):
+        return "gen", "grammar"
+    return "other", "grammar"
+
+
+GEN_QUERY_CORE = [
+    # §3.2a CORE-30 (the weekly rotation — highest-volume office titles)
+    "office manager",                      # A office core
+    "business office manager",
+    "office administrator",
+    "office coordinator",
+    "office assistant",
+    "administrative assistant",
+    "administrative coordinator",
+    "receptionist",
+    "executive assistant",
+    "front desk coordinator",
+    "bookkeeper",                          # B finance office
+    "full charge bookkeeper",
+    "accounting assistant",
+    "accounts payable specialist",
+    "accounts receivable specialist",
+    "billing specialist",
+    "payroll specialist",
+    "project coordinator",                 # C coordination/ops
+    "operations coordinator",
+    "service coordinator",
+    "scheduling coordinator",
+    "dispatcher",
+    "appointment coordinator",
+    "estimates coordinator",
+    "field service coordinator",
+    "customer service coordinator",        # E customer/account
+    "customer service manager",
+    "hr coordinator",                      # D HR/people
+    "marketing coordinator",               # F SMB marketing
+    "sales support coordinator",
+]
+GEN_QUERY_TAIL = [
+    # §3.2a TAIL-25 (the monthly --full rotation — breadth closure)
+    "administrative specialist",           # A
+    "office clerk",
+    "office support specialist",
+    "office services assistant",
+    "accounting clerk",                    # B
+    "billing coordinator",
+    "payroll administrator",
+    "operations assistant",                # C
+    "operations manager",
+    "scheduler",
+    "dispatch coordinator",
+    "field visit coordinator",             # the owner's phrase
+    "estimating coordinator",
+    "human resources assistant",           # D
+    "human resources coordinator",
+    "recruiting coordinator",
+    "onboarding specialist",
+    "customer care coordinator",           # E
+    "client services coordinator",
+    "account coordinator",
+    "member services coordinator",
+    "marketing assistant",                 # F
+    "marketing specialist",
+    "marketing generalist",
+    "marketing manager",
+]
+GEN_QUERY_VARIANTS = GEN_QUERY_CORE + GEN_QUERY_TAIL
 
 
 # ── §2.7 the FAMILY registry (S41 — the standardized sweep engine) ─────────
@@ -958,6 +1266,26 @@ FAMILIES: dict[str, dict] = {
         "quartet_prefix": "dmm",
         "ui_file": "roles-dmm.json",
         "drift_label": "roles:dmm",
+        "l0_bundle": False,        # the l0 corpus is PM-only
+        "locked_endpoints": ("talent", "muse", "wwr", "yc", "hn",
+                             "himalayas", "l0_bundle"),
+    },
+    "gen": {
+        # S46-B4 §3.7: family #3 — the SMB office catch-all (roles-gen
+        # on the SAME /roles surface; the drift-#50 absorption pattern).
+        "slug": "gen",
+        "display": "General Office & Admin (SMB)",
+        # the dmm kwarg-renaming pattern (the pinned PM gate signature
+        # is never churned)
+        "gate": (lambda t, query_is_pm=False:
+                 classify_gen(t, query_is_gen=query_is_pm)),
+        "seniority": None,          # pm_seniority reused (role-agnostic
+                                    # tier logic)
+        "queries_core": GEN_QUERY_CORE,
+        "queries_tail": GEN_QUERY_TAIL,
+        "quartet_prefix": "gen",
+        "ui_file": "roles-gen.json",
+        "drift_label": "roles:gen",
         "l0_bundle": False,        # the l0 corpus is PM-only
         "locked_endpoints": ("talent", "muse", "wwr", "yc", "hn",
                              "himalayas", "l0_bundle"),

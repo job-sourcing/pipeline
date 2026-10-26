@@ -141,6 +141,62 @@ UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
 LAYER_RANK = {"l0": 0, "l3": 1, "l1.5": 2, "l1": 3, "l2": 4}
 CREDIT_PREFLIGHT_MIN = 200
 
+# ── S46-B4 §3.3: the geo ladder (the catch-all lane's query-time scopes) ────
+# Tiers are QUERY-time scopes, not post-filters (§3.0 law 3): t1a/t1b =
+# the CA metro runs (adzuna where={City}, CA + distance=30; the other
+# location-aware fetchers location={City}, CA), t2 = California
+# statewide (adzuna where=California with NO distance — state-level
+# geocode, 5,103 measured; region strings return 0), t3 = US-wide (the
+# pre-B4 default, bit-identical when --geo-ladder is not passed), t4 =
+# remote (adzuna what_and=remote — where=Remote 400s, the adzuna.py
+# 76-81 doctrine; careerjet location=remote; jooble/indeed client-side
+# remote flag). Every row carries its tier stamp at fetch time; tiers
+# union through the existing merge ladder.
+GEO_TIER_RANK = {"t1a": 0, "t1b": 1, "t2": 2, "t3": 3, "t4": 4}
+_GEO_WIRED = ("adzuna", "careerjet", "jooble", "indeed")
+_T1A_METROS = ("Sacramento", "San Francisco", "Los Angeles",
+               "San Diego")            # §3.3: the 4 weekly CA metros
+_T1B_METROS = ("Irvine", "Riverside", "Fresno",
+               "Bakersfield")          # §3.3: the 4 monthly CA metros
+# the B4 lane (§3.4/§3.7): the adzuna category param + the per-row tag
+# stamp apply to gen/dmm ONLY — pm keeps the S41 identity doctrine
+# (bit-identical default behavior, no param, no stamp)
+_B4_FAMILIES = ("gen", "dmm")
+
+
+def _geo_tier_config(tier: str, family: str) -> dict:
+    """[S46-B4 §3.3/§3.4] the tier → fetcher-argument mapping.
+
+    Query-time scopes, not post-filters (§3.0 law 3). Returns:
+      scopes  — [(location, distance)] pairs the location-aware
+                fetchers iterate; None location = US-wide (t3/t4 — the
+                t3 default is bit-identical with the pre-B4 behavior)
+      remote  — the t4 flag (adzuna what_and=remote; careerjet
+                location="remote" via the scope string; jooble/indeed
+                the client-side filter the fetchers grew)
+      category — the adzuna sector filter (§3.4): gen admin-jobs on
+                 the METRO tiers only (the §5-gate-4 recommendation:
+                 filtered where noise is worst, unfiltered at t2/t3);
+                 dmm pr-advertising-marketing-jobs at every tier (the
+                 5.1x measured cut)
+    """
+    if tier == "t3":
+        return {"scopes": [(None, None)], "remote": False,
+                "category": "pr-advertising-marketing-jobs"
+                            if family == "dmm" else None}
+    if tier == "t4":
+        return {"scopes": [("remote", None)], "remote": True,
+                "category": "pr-advertising-marketing-jobs"
+                            if family == "dmm" else None}
+    if tier == "t2":
+        return {"scopes": [("California", 0)], "remote": False,
+                "category": "pr-advertising-marketing-jobs"
+                            if family == "dmm" else None}
+    metros = _T1A_METROS if tier == "t1a" else _T1B_METROS
+    return {"scopes": [(f"{m}, CA", 30) for m in metros], "remote": False,
+            "category": "admin-jobs" if family == "gen"
+                        else "pr-advertising-marketing-jobs"}
+
 # ── env ─────────────────────────────────────────────────────────────────────
 
 
@@ -397,7 +453,10 @@ def _http_json(url: str, data=None, headers=None, timeout=30):
 
 
 def fetch_adzuna(queries: list[str],
-                   location: str | None = None) -> tuple[list[dict], str]:
+                   location: str | None = None,
+                   distance: int | None = None,
+                   category: str | None = None,
+                   what_and: str | None = None) -> tuple[list[dict], str]:
     app_id, key = _env("ADZUNA_APP_ID"), _env("ADZUNA_API_KEY")
     if not (app_id and key):
         return [], "no-key"
@@ -408,6 +467,14 @@ def fetch_adzuna(queries: list[str],
     # S41 (DESIGN-S41 §3.2): optional geo filter — None = US-wide
     # (every PM-lane call is bit-identical); the industry sweeps pass a
     # region string (adzuna's where= geocoder: city/state shaped).
+    # S46-B4 §3.3/§3.4 additions: `distance` (None = the S41/S42
+    # industry default 50 — bit-identity for industry_sweep; 0 = the
+    # t2 state-level geocode, NO distance param; >0 = the ladder's
+    # metro radius), `category` (the only real sector filter, 5.1× cut
+    # measured), `what_and` (the t4 remote filter — where=Remote 400s,
+    # the adzuna.py:76-81 doctrine). The per-row category tag returns
+    # even UNFILTERED (probe §A.1) — captured on every row for the
+    # sectorEvidence stamp.
     max_page = 10
     for q in queries:
         for page in range(1, max_page + 1):
@@ -417,8 +484,14 @@ def fetch_adzuna(queries: list[str],
                    f"&results_per_page=50&max_days_old=45"
                    f"&content-type=application/json")
             if location:
-                url += (f"&where={urllib.parse.quote_plus(location)}"
-                        f"&distance=50")
+                url += f"&where={urllib.parse.quote_plus(location)}"
+                dist = 50 if distance is None else distance
+                if dist:
+                    url += f"&distance={dist}"
+            if category:
+                url += f"&category={urllib.parse.quote_plus(category)}"
+            if what_and:
+                url += f"&what_and={urllib.parse.quote_plus(what_and)}"
             try:
                 d = _http_json(url)
             except Exception as exc:
@@ -427,6 +500,11 @@ def fetch_adzuna(queries: list[str],
                 break                      # partial page-run: keep what we have
             for j in d.get("results", []):
                 created = (j.get("created") or "")[:10]
+                cat = j.get("category")
+                if isinstance(cat, dict):        # {"tag": ..., "label": ...}
+                    cat = cat.get("tag") or ""
+                elif not isinstance(cat, str):
+                    cat = ""
                 rows.append({
                     "title": j.get("title") or "",
                     "company": (j.get("company") or {}).get("display_name") or "",
@@ -436,6 +514,7 @@ def fetch_adzuna(queries: list[str],
                     "desc": (j.get("description") or "")[:12000],
                     "source": "adzuna", "layer": "l1.5", "query": q,
                     "rid": f"adz:{j.get('id') or ''}",
+                    "adzuna_category": cat,
                 })
             if len(d.get("results", [])) < 50:
                 break
@@ -444,7 +523,8 @@ def fetch_adzuna(queries: list[str],
 
 
 def fetch_jooble(queries: list[str],
-                   location: str | None = None) -> tuple[list[dict], str]:
+                   location: str | None = None,
+                   remote: bool = False) -> tuple[list[dict], str]:
     key = _env("JOOBLE_API_KEY")
     if not key:
         return [], "no-key"
@@ -464,6 +544,13 @@ def fetch_jooble(queries: list[str],
                     return rows, f"error:page{page}:{q[:12]}:{type(exc).__name__}"
                 break
             for j in d.get("jobs", []):
+                # S46-B4 §3.3 t4: jooble has no remote param — the
+                # client-side doctrine (jooble.py:139): "remote" in
+                # loc+snippet. US-wide query + the client filter.
+                if remote and "remote" not in (
+                        (j.get("location") or "") + " "
+                        + (j.get("snippet") or "")).lower():
+                    continue
                 rows.append({
                     "title": j.get("title") or "",
                     "company": j.get("company") or "",
@@ -481,7 +568,8 @@ def fetch_jooble(queries: list[str],
 
 
 def fetch_jobspy_indeed(queries: list[str],
-                           location: str | None = None) -> tuple[list[dict], str]:
+                           location: str | None = None,
+                           remote: bool = False) -> tuple[list[dict], str]:
     try:
         from jobspy import scrape_jobs  # noqa: PLC0415
     except ImportError:
@@ -495,7 +583,18 @@ def fetch_jobspy_indeed(queries: list[str],
             if not hasattr(jobs, "iterrows"):
                 continue
             for _, j in jobs.iterrows():
+                # S46-B4 §3.3 t4: indeed has no remote query param —
+                # the structured is_remote flag comes back per row
+                # (jobspy_source.py:197-201: bool, with the loc-text
+                # fallback); the t4 tier filters client-side on it.
                 loc = j.get("location")
+                if remote:
+                    flag = j.get("is_remote")
+                    if not (flag is True or str(flag).strip().lower()
+                            in ("true", "1", "1.0")) and not (
+                            isinstance(loc, str)
+                            and "remote" in loc.lower()):
+                        continue
                 rows.append({
                     "title": str(j.get("title") or ""),
                     "company": str(j.get("company") or ""),
@@ -1620,10 +1719,15 @@ def _norm_day(posted: str):
 
 def sweep(queries: list[str], skip_gj: bool = False,
           skip_li: bool = False, skip: str = "",
-          seed_envelope: str = "", family: str = "pm") -> int:
+          seed_envelope: str = "", family: str = "pm",
+          geo_ladder: str = "t3") -> int:
     # S41: the family registry routes every artifact path (DESIGN-S41
     # v2 §2.3). 'pm' = bit-identical with the pre-S41 behavior (pinned
     # by identity tests); 'dmm' = the ads demand-side stress family.
+    # [S46-B4 §3.3] geo_ladder: the catch-all lane's query-time geo
+    # scope (t1a/t1b/t2/t3/t4). pm ALWAYS runs t3 (the identity
+    # doctrine — the CLI rejects the combination); gen/dmm stamp
+    # geoTier on every row and union tiers through the merge ladder.
     spec = family_spec(family)
     prefix = spec["quartet_prefix"]
     skip_set = {s.strip() for s in skip.split(",") if s.strip()}
@@ -1654,49 +1758,97 @@ def sweep(queries: list[str], skip_gj: bool = False,
     # S38 §4a/F9: registration order matters for intra-tier ties —
     # findwork (full JD, cleanest) first in l1.5; the snippet tier
     # follows; muse/usajobs = l2 closure-tier (deliberate, documented).
-    fetchers: list[tuple[str, object, list]] = [
-        ("findwork", fetch_findwork, [queries]),
-        ("adzuna", fetch_adzuna, [queries]),
-        ("dice", fetch_dice, [queries]),
-        ("careerjet", fetch_careerjet, [queries]),
-        ("jooble", fetch_jooble, [queries]),
-        ("indeed", fetch_jobspy_indeed, [queries]),
-    ]
-    if not skip_li and "li" not in skip_set:
-        fetchers.append(("li_keyword", fetch_li_keyword, [queries]))
-    fetchers += [
-        ("yc", fetch_yc, []),
-        ("wellfound", fetch_wellfound, []),
-        ("hn", fetch_hn, []),
-        ("wwr_rss", fetch_wwr, []),
-        ("free_trio", fetch_free_trio, []),
-        ("talent", fetch_talent, []),
-    ]
-    if "muse" not in skip_set:
-        fetchers.append(("muse", fetch_muse, []))
-    if "usajobs" not in skip_set:
-        fetchers.append(("usajobs", fetch_usajobs, [queries]))
-    if "builtin" not in skip_set:
-        fetchers.append(("builtin", fetch_builtin, [queries]))
-    if "himalayas" not in skip_set:
-        fetchers.append(("himalayas", fetch_himalayas, []))
-    if not skip_gj and "gj" not in skip_set:
-        fetchers.append(("gj_role", fetch_gj_role, [queries]))
-    fetchers = [(n, f, a) for n, f, a in fetchers
-                if n not in skip_set]
+    # [S46-B4 §3.3] the geo-ladder dispatch. At t3 the fetcher list is
+    # UNCHANGED (the pre-B4 behavior — pm's bit-identity + the US-wide
+    # lane). At the scoped tiers (t1a/t1b/t2/t4) ONLY the four
+    # location-aware fetchers run per scope — the location-blind boards
+    # return the same rows at every tier (the lane's t3 run carries
+    # them; re-fetching per tier burns politeness budget for duplicate
+    # rows). Each entry carries its scope label for the geoTier stamp
+    # and the per-scope source status (the honest 4x adzuna verdict).
+    geo_cfg = _geo_tier_config(geo_ladder, family)
+    fetchers: list[tuple[str, object, list, str | None]] = []
+    if geo_ladder == "t3":
+        fetchers = [
+            ("findwork", fetch_findwork, [queries], None),
+            ("adzuna", fetch_adzuna, [queries], None),
+            ("dice", fetch_dice, [queries], None),
+            ("careerjet", fetch_careerjet, [queries], None),
+            ("jooble", fetch_jooble, [queries], None),
+            ("indeed", fetch_jobspy_indeed, [queries], None),
+        ]
+    else:
+        remote = geo_cfg["remote"]
+        for scope_loc, scope_dist in geo_cfg["scopes"]:
+            # adzuna: t4 carries NO where (where=Remote → HTTP 400) —
+            # the what_and=remote filter instead (adzuna.py:76-81)
+            fetchers.append(("adzuna", fetch_adzuna, [
+                queries,
+                None if remote else scope_loc,
+                None if remote else scope_dist,
+                geo_cfg["category"],
+                "remote" if remote else None], scope_loc))
+            # careerjet: location="remote" maps to the remote search
+            fetchers.append(("careerjet", fetch_careerjet,
+                             [queries, scope_loc], scope_loc))
+            # jooble/indeed: no remote param — the client-side filter
+            fetchers.append(("jooble", fetch_jooble,
+                             [queries, None if remote else scope_loc,
+                              remote], scope_loc))
+            fetchers.append(("indeed", fetch_jobspy_indeed,
+                             [queries, None if remote else scope_loc,
+                              remote], scope_loc))
+        fetchers = [(n, f, a, s) for n, f, a, s in fetchers
+                    if n not in skip_set]
+    if geo_ladder == "t3":
+        if not skip_li and "li" not in skip_set:
+            fetchers.append(("li_keyword", fetch_li_keyword, [queries], None))
+        fetchers += [
+            ("yc", fetch_yc, [], None),
+            ("wellfound", fetch_wellfound, [], None),
+            ("hn", fetch_hn, [], None),
+            ("wwr_rss", fetch_wwr, [], None),
+            ("free_trio", fetch_free_trio, [], None),
+            ("talent", fetch_talent, [], None),
+        ]
+        if "muse" not in skip_set:
+            fetchers.append(("muse", fetch_muse, [], None))
+        if "usajobs" not in skip_set:
+            fetchers.append(("usajobs", fetch_usajobs, [queries], None))
+        if "builtin" not in skip_set:
+            fetchers.append(("builtin", fetch_builtin, [queries], None))
+        if "himalayas" not in skip_set:
+            fetchers.append(("himalayas", fetch_himalayas, [], None))
+        if not skip_gj and "gj" not in skip_set:
+            fetchers.append(("gj_role", fetch_gj_role, [queries], None))
+        fetchers = [(n, f, a, s) for n, f, a, s in fetchers
+                    if n not in skip_set]
 
-    for name, fn, args in fetchers:
+    for name, fn, args, fscope in fetchers:
         try:
             rows, v = fn(*args)
         except Exception as exc:               # fail-soft per source
             rows, v = [], f"crash:{type(exc).__name__}"
-        env["sources"][name] = v
+        env["sources"][f"{name}:{fscope}" if fscope else name] = v
         for r in rows:
             r.setdefault("company_key", _company_key(r["company"], {}))
+            if family in _B4_FAMILIES:
+                # [S46-B4 §3.3/§3.4] the tier stamp rides every
+                # gen/dmm row (pm keeps the identity doctrine); the
+                # adzuna category tag becomes the sector evidence.
+                # SETDEFAULT: fresh fetcher rows carry no tier (stamped
+                # with THIS run's); seed rows keep their OWN tier (the
+                # cross-tier union correctness — a t1a seed unioned
+                # into a t2 run stays t1a)
+                r.setdefault("geoTier", geo_ladder)
+                if r.get("adzuna_category"):
+                    r.setdefault("sector_evidence",
+                                 f"adzuna_category:{r['adzuna_category']}")
         all_rows += rows
         env["layers"][r["layer"] if rows else "?"] = \
             env["layers"].get(rows[0]["layer"] if rows else "?", 0) + len(rows)
-        print(f"[sweep:{name:<12}] {len(rows):>4} rows | {v}")
+        tag = f"{name}:{fscope}" if fscope else name
+        print(f"[sweep:{tag:<20}] {len(rows):>4} rows | {v}")
 
     # per-source usgate priors (design §4 + S38 §4a/F21 + S39 F11 — the
     # new sources default client-side: dice/careerjet leak 1-2/30
@@ -1796,6 +1948,11 @@ def sweep(queries: list[str], skip_gj: bool = False,
                         row.get("company") or "", {}),
                     "_seed": True,
                 })
+                # [S46-B4 §3.6 join-i] the seed row keeps its OWN
+                # geoTier (the cross-tier union: the bundle job carries
+                # it; the dispatch stamp is a setdefault so it survives)
+                if row.get("geoTier"):
+                    all_rows[-1]["geoTier"] = row["geoTier"]
                 n_seed += 1
             env["sources"]["seed_envelope"] = (
                 f"ok:{n_seed}/{len(sd.get('jobs') or [])}")
@@ -2073,6 +2230,14 @@ def sweep(queries: list[str], skip_gj: bool = False,
         if LAYER_RANK.get(r.get("layer"), 9) < \
                 LAYER_RANK.get(tgt.get("layer"), 9):
             survivor, donor = r, tgt
+        elif (LAYER_RANK.get(r.get("layer"), 9) ==
+              LAYER_RANK.get(tgt.get("layer"), 9)
+              and GEO_TIER_RANK.get(r.get("geoTier"), 9) <
+              GEO_TIER_RANK.get(tgt.get("geoTier"), 9)):
+            # [S46-B4 join-i] equal transport layer -> the MORE
+            # SPECIFIC geo tier survives (t1a > t1b > t2 > t3 > t4) --
+            # a metro row beats its own US-wide double
+            survivor, donor = r, tgt
         else:
             survivor, donor = tgt, r
         counters["dedup_merge"] += 1
@@ -2314,6 +2479,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
         "id": _row_id(r),
         "title": r["title"], "company": r["company"],
         "companyKey": r["company_key"], "loc": r.get("loc", ""),
+        "geoTier": r.get("geoTier", ""),
         "url": r.get("url", ""), "postedOn": r.get("posted", ""),
         "family": r["family"], "familyEvidence": r.get("family_evidence"),
         "seniority": r["seniority"], "usStatus": r.get("us_status"),
@@ -2350,7 +2516,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
 def _csv_bytes(rows: list[dict]) -> bytes:
     if not rows:
         return b""
-    cols = ["title", "company", "company_key", "loc", "url", "posted",
+    cols = ["title", "company", "company_key", "loc", "geoTier",
+            "url", "posted",
             "family", "family_evidence", "seniority", "us_status",
             "us_evidence", "sector_evidence", "sector_reason",
             "staffing_evidence", "employer_anonymized",
@@ -2391,7 +2558,17 @@ def main() -> int:
                          "path, e.g. ingest/data/ui/roles-pm.json) — rows "
                          "≥60d fresh re-enter as inputs (the careerjet "
                          "HK-only lane transport doctrine)")
+    ap.add_argument("--geo-ladder", default="t3",
+                    choices=["t1a", "t1b", "t2", "t3", "t4"],
+                    help="[S46-B4 sec3.3] the geo scope: t1a/t1b = the CA "
+                         "metro tiers, t2 = California, t3 = US-wide "
+                         "(default), t4 = remote -- gen/dmm only")
     args = ap.parse_args()
+    if args.geo_ladder != "t3" and args.family == "pm":
+        print("role_sweep: --geo-ladder is a catch-all-lane feature "
+              "(gen/dmm) -- pm keeps the bit-identity doctrine",
+              file=sys.stderr)
+        return 2
     spec = family_spec(args.family)
     queries = spec["queries_core"] + (
         spec["queries_tail"] if args.full else [])
@@ -2400,7 +2577,8 @@ def main() -> int:
         print(f"[gj-probe] {len(rows)} rows | {v}")
         return 0
     return sweep(queries, skip=args.skip, family=args.family,
-                 seed_envelope=args.seed_envelope)
+                 seed_envelope=args.seed_envelope,
+                 geo_ladder=args.geo_ladder)
 
 
 if __name__ == "__main__":
@@ -2615,14 +2793,11 @@ def fetch_glassdoor_zenrows(queries: list[str],
     rows: list[dict] = []
     errors = 0
     if _firecrawl_keys():
-        probed = False
         for q in queries:
             url = ("https://www.glassdoor.com/Job/jobs.htm?sc.keyword="
                    + urllib.parse.quote_plus(q))
-            d, st = (_fc_scrape({"url": url, "formats": ["markdown"],
-                                 "waitFor": 4000})
-                     if queries and not probed else (None, "skip"))
-            probed = True
+            d, st = _fc_scrape({"url": url, "formats": ["markdown"],
+                                "waitFor": 4000})
             if d is None:
                 errors += 1
                 if errors >= 2 and not rows:
