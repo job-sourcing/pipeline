@@ -69,3 +69,6 @@ NEW Server（Mandarin Speaking） | 23220 Grand Cir Blvd, Katy, TX | 2026-10-23 
 GONE Dishwasher (first seen 2026-10-01)
 (2026-10-24T11:41:38)
 
+board-watch haidilao_us_fulltime FAILED: list fetch crashed (HTTPError: 410 Client Error: Gone for url: https://www.workstream.us/j/fcc54c54/positions?page=2)
+(2026-10-26T13:37:20)
+

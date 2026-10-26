@@ -269,3 +269,6 @@ Fuyao Glass America board-watch 2026-10-23: +1 new, -0 gone (163 active [fuyao_u
 NEW Assistant IMS Manager | Moraine, OH, US | 2026-10-23 | https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=25319558-d6a9-48ab-93d2-99e4878a8ffc&ccId=19000101_000001&jobId=9201313255814_1&lang=en_US
 (2026-10-23T12:11:02)
 
+board-watch fuyao_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))) — UNREACHABLE, state untouched; streak 1/14
+(2026-10-26T13:37:19)
+
