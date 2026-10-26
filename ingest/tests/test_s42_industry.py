@@ -274,7 +274,9 @@ class TestLanePlumbing:
     def test_mirror_industry_handler_is_dir_wide(self):
         sh = (_REPO / "scripts/build_public_mirror.sh").read_text()
         # new slugs flow through the existing dir-wide handler
-        assert 'rsync -a "$DEST"/ingest/data/industry/' in sh
+        # [9th-incident] --update required: the plain -a was org-wins-
+        # ALWAYS (the craigslist redaction resurrection class)
+        assert 'rsync -a --update "$DEST"/ingest/data/industry/' in sh
 
     def test_all_lane_yml_run_blocks_are_valid_bash(self):
         # the run-8 lesson: `done` mistyped `fi` in a checkpoint loop

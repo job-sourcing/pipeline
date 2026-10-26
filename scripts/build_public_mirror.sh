@@ -256,7 +256,12 @@ fi
 # adhoc pattern); per-slug files (each run rewrites only its slug).
 if [ -d "$DEST/ingest/data/industry" ]; then
   mkdir -p "$SRC/ingest/data/industry"
-  rsync -a "$DEST"/ingest/data/industry/ "$SRC/ingest/data/industry/"
+  # [9th-incident fix] --update: skip files the RECEIVER has newer —
+  # the plain -a was org-wins-ALWAYS (mtime/size differ = copy, never
+  # a newer-check): every mirror round-trip resurrected the org's
+  # stale copy over archive-side redactions (the craigslist phone-
+  # redaction lost twice before this flag landed)
+  rsync -a --update "$DEST"/ingest/data/industry/ "$SRC/ingest/data/industry/"
   (cd "$SRC" && git add ingest/data/industry && \
     git diff --cached --quiet || \
     git commit -q -m "industry sweep results back-sync from org runtime (S41 Strategy-2, S35 rule)")
