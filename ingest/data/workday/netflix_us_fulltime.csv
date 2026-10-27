@@ -951,7 +951,7 @@ Inclusion is a Netflix value and we strive to host a meaningful interview experi
 
 We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.
 
-Job is open for no less than 7 days and will be removed when the position is filled.",7369,https://netflix.wd108.myworkdayjobs.com/Netflix/job/USA---Remote/Business-Security-Partner--L5-_JR42767-1,,https://www.linkedin.com/jobs/view/4469368290,2026-09-23,176,176 applicants,0,matched,title,2026-09-24,2026-09-26T05:11:49,2026-10-27,,34,startDate,false,1,,,,Regular,Engineering Operations,2026-09-23,,false,,,,,,
+Job is open for no less than 7 days and will be removed when the position is filled.",7369,https://netflix.wd108.myworkdayjobs.com/Netflix/job/USA---Remote/Business-Security-Partner--L5-_JR42767-1,,https://www.linkedin.com/jobs/view/4469368290,2026-09-23,176,176 applicants,0,matched,title,2026-09-24,2026-09-26T05:11:49,2026-10-27,,34,startDate,false,1,2026-10-26,,,Regular,Engineering Operations,2026-09-23,,false,,,,,,
 JR41365,"Senior Creative Designer, Creative Publishing",Netflix,"Netflix Global, LLC",Full time,Posted 2 Days Ago,2026-06-29,120,USA - Remote,1,USA - Remote,true,,United States,4b15c3bdb7e910020025cb25a5d60000,4,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
 
 As the world’s foremost entertainment company, Netflix is looking for thoughtful, collaborative, courageous, and skillful creatives to join our gaming division in order to revolutionize entertainment.
@@ -3089,87 +3089,6 @@ We are an equal-opportunity employer and celebrate diversity, recognizing that d
 Netflix House is a unique culture and environment. Learn more here.
 
 Job is open for no less than 7 days and will be removed when the position is filled.",6868,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Las-Vegas/Community-Marketing-Manager_JR42633,,,,,,,not_checked,,2026-09-19,,2026-10-27,,41,startDate,false,0,,,,Regular,Promotional Content,2026-09-16,,,,,,,,
-JR42630,Software Engineer L5 - AI Observability & Agent Evaluation,Netflix,"Netflix, Inc.",Full time,Posted 9 Days Ago,2026-09-16,41,Los Gatos,1,Los Gatos,false,,United States,4b15c3bdb7e910020025cb25a5d60000,5,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
-
-AI and ML power innovation in all areas of the business, including helping members choose the right title for them through personalization, better understanding our audience and our content slate, creating high-quality subtitles, dubbings, images, trailers, and other assets, optimizing our payment processing, and much more. AI Platform (AIP) organization builds highly scalable, differentiated AI infrastructure to maximize the business impact of all AI/ML practitioners at Netflix, which is key to accelerating this innovation.
-
-The Opportunity
-
-The AI Observability team makes AI, ML, and Agentic systems transparent, reliable, and production-ready at scale. We build end-to-end observability for ML and GenAI workloads, capturing model inputs, features, predictions, outcomes, and behavior across online and batch systems. Our platform enables teams to monitor model performance, data quality, drift, latency, and failures, turning the ML system from a black box into an explainable, debuggable system. We provide developer-friendly libraries, dashboards, and alerts so teams can debug issues, respond to incidents, and ship AI-powered products with confidence.
-
-We're looking for a hands-on senior engineer to build the frameworks behind Netflix's AI Observability platform, model performance, evaluation, and vendor integration surfaces. You will design reusable infrastructure that enables ML/AI practitioners across domains to monitor model quality in production, evaluate LLM and agentic systems, and adopt vendor tooling through a consistent, self-serve platform. AIP owns the generic, reusable infrastructure; domain teams own their domain-specific evals and remediation. You will partner closely with engineering, product, machine learning, and data teams to turn their needs into reusable platform capabilities. To succeed, you will bring a strong background in AI or ML infrastructure and a passion for building scalable, robust systems.
-
-In this role, you will:
-
-•
-Build the observability framework and platform capabilities that give ML and GenAI systems metrics, logs, and distributed traces across online inference, batch scoring, feature pipelines, and agent orchestration, so teams can instrument their systems consistently.
-
-•
-Build the primitives that let teams monitor model performance (accuracy, calibration, error rates), data quality, drift, and degradation on their own systems, rather than monitoring individual models yourself.
-
-•
-Build and extend evaluation frameworks for LLM and agentic systems that support response quality, grounding and hallucination, task success, tool-use and trajectory correctness, and LLM-as-a-judge and human-in-the-loop scoring, giving teams reusable building blocks to define and run their own evals.
-
-•
-Lead build-vs-buy evaluations for observability and eval tooling, and own the SDKs, connectors, and APIs that integrate vendor platforms into a consistent, well-supported interface, so ML and product teams can onboard models and agents with minimal friction.
-
-•
-Build reusable libraries, SDKs, and templates that make observability and evaluation the default for new systems (""observability-by-default""), lowering the barrier for teams to instrument and evaluate their work.
-
-•
-Provide the dashboarding, alerting, and SLO/SLI building blocks (plus sensible out-of-the-box templates) that teams use to track model performance, latency, cost, and reliability.
-
-To succeed in this role, you will need:
-
-•
-Experience in software, AI/ML, or platform engineering, with hands-on time in production observability, monitoring, or ML/LLM evaluation
-
-•
-Proven track record of designing standards, libraries, SDKs, or frameworks that other teams build on and adopt, reflecting a platform and enablement mindset rather than shipping features for a single use case.
-
-•
-Strong coding skills in Python and at least one of Java, Go, or Scala, with experience building production services
-
-•
-Practical experience operating ML models in production (online serving and/or batch), including drift, model performance, and data quality.
-
-•
-Hands-on experience with modern observability stacks (e.g., Prometheus/Grafana, Datadog, OpenTelemetry, ELK/OpenSearch, Jaeger/Tempo, or similar).
-
-•
-Solid understanding of distributed systems, microservices, and at least one major cloud platform (AWS, GCP, or Azure).
-
-•
-Ability to work cross-functionally with ML, data, infra, and product teams, and to communicate clearly about system behavior, quality, and risk.
-
-•
-Experience with vendor integration and VPC deployment.
-
-•
-AI-Native Engineering Mindset who uses AI tools as a core part of their own workflow to accelerate design, development, testing, and code review.
-
-Nice to have:
-
-•
-Hands-on experience with ML/LLM observability and evaluation tools (e.g., Arize, Braintrust, LangFuse, Weights & Biases, Galileo, Vertex AI Model Monitoring, SageMaker Model Monitor).
-
-•
-Experience building or shipping LLM/GenAI applications and evaluating them: prompt/result logging, evaluation metrics, LLM-as-a-judge, and human-in-the-loop review.
-
-•
-Experience evaluating agentic systems: tool use, multi-step reasoning, and trajectory/task-success measurement.
-
-To learn more about our AI Platform, you can review the relevant talks/blog posts on the Netflix AI Platform Research website.
-
-Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $388,000.00 - $619,000.00.
-
-Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
-
-Netflix is a unique culture and environment. Learn more here.
-
-Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
-
-We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",7491,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Gatos/Software-Engineer-L5---AI-Observability---Agent-Evaluation_JR42630,,https://www.linkedin.com/jobs/view/4466211709,2026-09-16,74,74 applicants,0,matched,title,2026-09-19,2026-09-17T12:52:33,2026-10-27,,41,startDate,false,0,2026-10-21,,,Regular,Engineering,2026-09-16,,false,361,213512,226158,264514,subset,Software Engineer
 JR39786,Software Engineer 5 - Ads Identity Graph,Netflix,"Netflix, Inc.",Full time,Posted 9 Days Ago,2026-09-16,41,New York,4,New York; Los Angeles; Los Gatos; Seattle,false,,United States,9a7a8705901e1001f30e535431110000,5,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
 
 We launched a new ad-supported tier in November 2022 to offer our members more choice in how they consume their content. Our new tier allows us to attract new members at a lower price point while also creating a compelling path for advertisers to reach deeply engaged audiences.
@@ -3359,7 +3278,7 @@ Netflix is a unique culture and environment. Learn more here.
 
 Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
 
-We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5038,https://netflix.wd108.myworkdayjobs.com/Netflix/job/New-York/Software-Engineer-5---Ads-Signals-Conversion-API_JR39788,,https://www.linkedin.com/jobs/view/4406707501,2026-09-07,200,Over 200 applicants,-9,matched,title,2026-09-19,2026-09-17T12:52:39,2026-10-27,,50,startDate+linkedin,false,0,,,,Regular,Engineering,2026-09-07,title,true,361,213512,226158,264514,subset,Software Engineer
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5038,https://netflix.wd108.myworkdayjobs.com/Netflix/job/New-York/Software-Engineer-5---Ads-Signals-Conversion-API_JR39788,,https://www.linkedin.com/jobs/view/4406707501,2026-09-07,200,Over 200 applicants,-9,matched,title,2026-09-19,2026-09-17T12:52:39,2026-10-27,,50,startDate+linkedin,false,0,2026-10-26,,,Regular,Engineering,2026-09-07,title,true,361,213512,226158,264514,subset,Software Engineer
 JR39787,Software Engineer 6 - Ads Conversions API,Netflix,"Netflix, Inc.",Full time,Posted 9 Days Ago,2026-09-16,41,USA - Remote,1,USA - Remote,true,,United States,9a7a8705901e1001f30e535431110000,5,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
 
 We launched a new ad-supported tier in November 2022 to offer our members more choice in how they consume their content. Our new tier allows us to attract new members at a lower price point while also creating a compelling path for advertisers to reach deeply engaged audiences.
@@ -8600,99 +8519,6 @@ Netflix is a unique culture and environment. Learn more here.
 Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
 
 We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5784,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Gatos/Video-Algorithms-Intern--Video-Coding--Gaussian-Splatting---Fall-2026_JR40251,,https://www.linkedin.com/jobs/view/4405171919,2026-09-03,200,Over 200 applicants,16,matched,title,2026-09-24,2026-09-19T02:34:30,2026-10-27,,70,startDate,true,0,,,,Intern,Administration,2026-08-18,,true,,,,,,
-JR42111,"Manager, Production Management - LIVE Sports",Netflix,"Netflix, Inc.",Full time,Posted 30+ Days Ago,2026-08-18,70,Los Angeles,1,Los Angeles,false,,United States,4b15c3bdb7e910020025cb25a5d60000,3,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
-
-We are looking for a seasoned LIVE Sports Production expert to help oversee end-to-end operations of our expanding Sports slate. This role will help oversee partner-managed and potentially self-managed opportunities while ensuring smooth execution of high-profile live sports events. The ideal candidate should have experience in production management across major streaming platforms and/or broadcast networks at World Cup or Olympic level. This role will serve from a network touch point ensuring our external producing partners are effectively supported and managed. A focus of this role is to bring top-tier live sports production experience and expertise into the position, while supporting the overall live team production operations and technical strategy.
-
-This position will report to the Director of Live Sports Production in Los Angeles, CA. Role based in the Los Angeles office. No remote options. This person must have Live Sports experience.
-
-The Role
-
-The ideal candidate will be a highly skilled and passionate expert in live sports production management, with a deep understanding of logistics, operations, and budgeting oversight. Ability to manage complex and intricate layers of production, help to pioneer the execution of new sports content to create workflows, help build to a steady state and maintain stability.
-
-This role requires strong multitasking abilities, balancing complex production elements while driving innovation in sports content execution. The candidate should be self-motivated, adaptable, and detail-oriented, with the ability to support show management while navigating key producers, venues, locations, sports organizations, and industry operations.
-
-Given the fast-paced, high-volume nature of this position, exceptional organizational skills, problem-solving abilities, and communication are essential. The ideal candidate must be nimble, proactive, solution-driven, and capable of handling multiple productions simultaneously while maintaining a keen focus on detail.
-
-Key Responsibilities:
-
-•
-Oversee End-to-End Production – Support the execution of high-profile live sporting events from inception to final delivery
-
-•
-Streamline Workflows – Collaborate with internal operations and technical teams to optimize live content production processes
-
-•
-Core Team - Working closely with key internal stakeholders across Content, Post, Finance, Business Affairs, Tech, Engineering, Events and several other teams.
-
-•
-Curate Top Talent & Vendors – Assist in identifying and sourcing high-quality external production companies, producers, vendors, facilities, locations, sporting leagues, and BTL crew in the sports industry.
-
-•
-External Partnerships - Work closely with EICs and line producers to prepare and vet show budgets, schedules, providing feedback internally and externally on viability and risks.
-
-•
-Production Planning & Strategy – Full oversight of schedules, key crew, and production budget along with providing guidance and best practices across all facets of the production.
-
-•
-Location Scouting – Research and evaluate domestic and international filming locations that best align with creative vision, budget, and logistics along with tax incentive opportunities.
-
-•
-Additional Cross-Team Coordination – Support internal and external meetings to maintain alignment with Marketing, Publicity, Photo/AV Studio, Safety, Security, Events, Ads, Sponsorships, Integrated Marketing, etc.
-
-•
-Adaptability & Continuous Improvement – Stay flexible and proactive in adjusting to changing circumstances, embracing new challenges, and driving innovation
-
-•
-Engagement in Team Activities – Participate in offsites, training sessions, and team-building events for internal and external groups.
-
-•
-Live Analysis - create and design studio deck, spreadsheets, and tech assessments alongside production, finance and tech team.
-
-•
-Workflow Optimization - work closely with internal operations & technical teams as well as other production executives to streamline workflows across all apps within Netflix.
-
-Qualifications:
-
-•
-10+ years experience working in production management at a network, or production company and must have Live Sports production experience. Candidates will need to be a Director or VP  level equivalent outside of Netflix.
-
-•
-Ability to handle a fast-paced environment and a high volume of responsibilities and projects (from evaluation to production through delivery) and courage to take educated risks while thinking outside the box and always responding in a timely manner.
-
-•
-Strong written and verbal communication skills and the ability to multitask effectively.
-
-•
-Highly organized, with strong proficiency in Google Workspace (Google Docs, Sheets, Slides, Mail and Drive) and Slack.
-
-•
-Ability to develop presentation decks, and confidently speak on Live production workflows within various internal and external forums.
-
-•
-Well-informed and curious about all aspects of production, technology and post-production
-
-•
-Team player who performs well under pressure.
-
-•
-Ability to handle confidential information with discretion.
-
-•
-Understanding how to prioritize and respond accordingly.
-
-•
-Passionate about live technology advancements and innovation.
-
-Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $201,000.00 - $343,000.00.
-
-Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
-
-Netflix is a unique culture and environment. Learn more here.
-
-Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
-
-We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",7392,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Angeles/Manager--Production-Management---LIVE-Sports_JR42111,,https://www.linkedin.com/jobs/view/4450831915,2026-09-04,200,Over 200 applicants,17,matched,title,2026-09-24,2026-09-17T12:49:14,2026-10-27,,70,startDate,true,0,2026-10-23,,,Regular,Content Production,2026-08-18,,true,,,,,,
 JR42162,"Manager, Experiences Retail Store Operations",Netflix,"Netflix, Inc.",Full time,Posted 30+ Days Ago,2026-08-17,71,Los Angeles,1,Los Angeles,false,,United States,4b15c3bdb7e910020025cb25a5d60000,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
 
 Our Experiences team puts fans at the center of their favorite stories, in real life, through permanent entertainment venues, Netflix House, and touring attractions around the world. Netflix Houses are our permanent, always-on, constantly refreshable entertainment venues, where guests can step into their favorite stories. We want these experiences, along with merchandise offerings, to help promote love for our titles so they become part of the zeitgeist for longer periods of time and drive long-term value for Netflix.
@@ -9788,66 +9614,6 @@ Netflix is a unique culture and environment. Learn more here.
 Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
 
 We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",4253,https://netflix.wd108.myworkdayjobs.com/Netflix/job/New-York/Market-Planning---Operations-Manager--UCAN----Commercial-Planning_JR41936,,https://www.linkedin.com/jobs/view/4446273143,2026-09-15,68,68 applicants,43,matched,title,2026-09-24,2026-09-17T12:50:48,2026-10-27,,85,startDate,true,0,2026-10-12,,,Regular,Sales and Business Development,2026-08-03,,false,,,,,,
-JR41678,Solutions Engineer - Finance Technology,Netflix,"Netflix, Inc.",Full time,Posted 30+ Days Ago,2026-08-01,87,Los Angeles,1,Los Angeles,false,,United States,4b15c3bdb7e910020025cb25a5d60000,5,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
-
-The Team and Role:
-
-The Netflix Finance Technology Team manages and delivers applications for the constantly evolving needs of our Finance organization. Our team is seeking an innovative functional lead to help us solutionize and navigate a rapid development environment with multiple internal business stakeholders in the Procure to Pay and Accounting areas. The ideal candidate has experience with enterprise applications like Workday, and can develop strong cross functional relationships with business partners across the finance teams.
-
-The position will be based in Los Angeles and report to the Manager of Finance Technology.
-
-What You Will Do:
-
-•
-Manage relationships with finance leaders, product managers, engineering managers, and partners to understand and translate business requirements and influence cross team priorities
-
-•
-Proactively identify process gaps, inefficiencies, automation opportunities, and risk in the current processes
-
-•
-Own the end-to-end delivery as the functional lead for any new builds, system configurations, implementations of a new module, its feature set, identifying gaps, and proposing scalable solutions in the financial systems across multiple or single modules
-
-•
-Fully manage medium-to-large projects independently by having deep experience in domain knowledge, both functionally or technically, and make independent design decisions
-
-Desired Qualifications:
-
-•
-In-depth enterprise software experience in big ERP/accounting systems like Workday/Oracle/SAP/NetSuite as a systems analyst. Having Workday experience will be a plus
-
-•
-Understand business flows well and show clarity in thought when working with P2P (Procure to Pay) and other financial data
-
-•
-Experience in working with engineers, product managers, and product owners
-
-•
-Experience in understanding integrations with various systems
-
-•
-A strong, independent contributor who is comfortable navigating ambiguity, works in uncharted territory, and also has curiosity to learn a complex business area.
-
-•
-Clear and concise communication skills to disseminate information about your work, design, and tradeoff decisions, both in writing and verbally
-
-•
-Bachelor’s or Master’s degree in Finance, Accounting (or a related field) or equivalent experience required
-
-•
-Functional knowledge in one or more of the following areas: P2P, accounting, month-end close, and financial reporting
-
-•
-Experience with XML and document transformations would be an advantage.
-
-Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $270,000.00 - $410,000.00.
-
-Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
-
-Netflix is a unique culture and environment. Learn more here.
-
-Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
-
-We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",4635,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Angeles/Solutions-Engineer---Finance-Technology_JR41678,,,,,,,not_checked,,2026-09-24,,2026-10-27,,87,startDate,true,0,2026-10-12,,,Regular,Engineering,2026-08-01,,,,,,,,
 JR41909,"Staff Software Engineer (L6) - Developer Productivity — Platform Systems, AIMS Engineering",Netflix,"Netflix, Inc.",Full time,Posted 30+ Days Ago,2026-07-31,88,USA - Remote,1,USA - Remote,true,,United States,4b15c3bdb7e910020025cb25a5d60000,5,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
 
 AI for Member Systems (AIMS) runs the AI systems behind every recommendation, search result, and personalized experience for 300M+ members. Hundreds of researchers and engineers across AIMS depend on a shared inner loop — build and test infrastructure, CI/CD, local and remote dev environments, and the tooling that takes an idea from a notebook to a production experiment — to get their work done every day. As the AIMS AI/ML stack scales and modernizes, that inner loop has to scale with it, or it becomes the bottleneck on everything else.
@@ -18604,63 +18370,6 @@ Inclusion is a Netflix value and we strive to host a meaningful interview experi
 We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.
 
 Job is open for no less than 7 days and will be removed when the position is filled.",2316,https://netflix.wd108.myworkdayjobs.com/Netflix/job/USA---Remote/Product-Manager--L7---Compute_JR41917,,https://www.linkedin.com/jobs/view/4474425081,2026-10-06,28,28 applicants,0,matched,,2026-10-07,2026-10-07T01:05:36,2026-10-27,,21,startDate,false,0,,,,,,2026-10-06,,false,11,223142,294299,294299,subset,Product Manager
-JR42434,Software Engineer (L5) - Traffic Engineering,Netflix,"Netflix, Inc.",Full time,Posted Today,2026-10-06,21,Los Gatos,1,Los Gatos,false,,United States,,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
-
-Team Overview
-
-The Traffic Engineering team designs, builds, and operates the core infrastructure that manages how traffic flows across Netflix’s cloud and edge environments. Our systems ensure that every member receives a fast, reliable, and high-quality streaming experience, even during massive live events and unexpected spikes in demand. The TMF team is instrumental in driving Netflix’s cloud scalability and resiliency by building robust capabilities for end-to-end traffic management, including region failover, traffic shaping, and predictive scaling. We work closely with Data Science to develop and operationalize predictive models, translating them into actionable strategies for scaling our infrastructure in real time. By automating and optimizing traffic management, we enable Netflix to deliver uninterrupted entertainment to hundreds of millions of members worldwide—making our work critical to Netflix’s reputation, member satisfaction, and continued growth.
-
-Why our work is important
-
-The work of the Traffic Engineering team is critical to Netflix’s ability to deliver a seamless, high-quality streaming experience to hundreds of millions of members worldwide. As Netflix expands into live events and continues to grow its global audience, the demands on our infrastructure for speed, reliability, and scalability have never been higher. Our team ensures that Netflix can handle massive spikes in traffic—such as during live sporting events or global premieres—without interruption or degradation in quality. By building resilient systems for traffic management, automated scaling, and rapid failover, we protect the member experience and uphold Netflix’s reputation for reliability. The innovations and solutions developed by the TMF team directly enable Netflix to push the boundaries of what’s possible in streaming, supporting new business opportunities and ensuring that our members can enjoy their favorite stories anytime, anywhere, without compromise.
-
-This would be your dream job if you enjoy:
-
-• Solving real business needs at a large scale by applying your software engineering and analytical problem-solving skills.
-
-• Architecting and building a robust, scalable, and highly available distributed infrastructure. You enjoy the pursuit of engineering excellence by evangelizing, establishing and iterating on best practices.
-
-• collaborating with multiple teams on creating solutions and supporting solutions with a myriad of sometimes conflicting requirements.
-
-• You are curious and enjoy working on ambiguous problems where the solutions are not (yet) well defined.
-
-Qualifications:
-
-• 7+ years experience in crafting complex, scalable distributed data infrastructure. Experience in traffic is preferred
-
-• Proficiency in Java, Golang, or Python with a solid understanding of multi-threading and memory management
-
-• Able to break down complexity, iterate, and communicate progress to a wide variety of partners and stakeholders.
-
-• Proven track record of developing and maintaining high-impact systems
-
-• Experience building and operating scalable, fault-tolerant, distributed systems
-
-• Automation and orchestration frameworks for scaling and reliability
-
-• Experience in predictive modeling and data pipelines for traffic shaping and scaling
-
-• You have a BS in Computer Science or a related field
-
-What to expect from us:
-
-• High Impact - your work will touch every engineer at the company and be crucial for the ongoing success of Netflix.
-
-• Stunning Colleagues - you will be working with other excellent people with diverse perspectives, who value collaboration, working to excel as the “dream team”.
-
-• Energizing Challenges - there is a wealth of opportunity when working on complex technical projects and our culture both enables and encourages you to rise to the challenges.
-
-• Feedback – you will constantly have opportunities for growth because meaningful positive and constructive feedback is part of everyday life at Netflix.
-
-Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $388,000.00 - $619,000.00.
-
-Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
-
-Netflix is a unique culture and environment. Learn more here.
-
-Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
-
-We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",6149,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Gatos/Software-Engineer--L5----Traffic-Engineering_JR42434,,https://www.linkedin.com/jobs/view/4452898884,2026-09-30,200,Over 200 applicants,-6,matched,,2026-10-06,2026-10-06T16:58:11,2026-10-27,,27,startDate+linkedin,false,0,,,,,,2026-09-30,title,true,361,213512,226158,264514,subset,Software Engineer
 JR42764,"Production Manager, Creative Innovation",Netflix,"Netflix, Inc.",Full time,Posted Today,2026-09-23,34,Los Angeles,1,Los Angeles,false,,United States,,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
 
 About the Role
@@ -21069,7 +20778,7 @@ Netflix is a unique culture and environment. Learn more here.
 
 Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
 
-We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5081,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Angeles/Administrative-Assistant--Nonfiction-Business-Affairs_JR43166,,https://www.linkedin.com/jobs/view/4480090575,2026-10-22,92,92 applicants,0,matched,,2026-10-23,2026-10-23T12:11:46,2026-10-27,,5,startDate,false,0,,,,,,2026-10-22,,false,,,,,,
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5081,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Angeles/Administrative-Assistant--Nonfiction-Business-Affairs_JR43166,,https://www.linkedin.com/jobs/view/4480090575,2026-10-22,92,92 applicants,0,matched,,2026-10-23,2026-10-23T12:11:46,2026-10-27,,5,startDate,false,0,2026-10-26,,,,,2026-10-22,,false,,,,,,
 JR38137,Software Engineer 6 - Ads Signals & Targeting,Netflix,"Netflix, Inc.",Full time,Posted Yesterday,2026-10-23,4,New York,2,New York; Los Gatos,false,,United States,,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
 
 We launched a new ad-supported tier in November 2022 to offer our members more choice in how they consume their content. Our new tier allows us to attract new members at a lower price point while also creating a compelling path for advertisers to reach deeply engaged audiences.
@@ -21122,7 +20831,7 @@ Netflix is a unique culture and environment. Learn more here.
 
 Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
 
-We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5468,https://netflix.wd108.myworkdayjobs.com/Netflix/job/New-York/Software-Engineer-6---Ads-Signals---Targeting_JR38137,,https://www.linkedin.com/jobs/view/4411510207,2026-10-11,200,Over 200 applicants,-12,matched,,2026-10-24,2026-10-24T11:41:58,2026-10-27,,16,startDate+linkedin,false,0,,,,,,2026-10-11,title,true,361,213512,226158,264514,subset,Software Engineer
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5468,https://netflix.wd108.myworkdayjobs.com/Netflix/job/New-York/Software-Engineer-6---Ads-Signals---Targeting_JR38137,,https://www.linkedin.com/jobs/view/4411510207,2026-10-11,200,Over 200 applicants,-12,matched,,2026-10-24,2026-10-24T11:41:58,2026-10-27,,16,startDate+linkedin,false,0,2026-10-26,,,,,2026-10-11,title,true,361,213512,226158,264514,subset,Software Engineer
 JR42614,Software Engineer 5 - Ads Authorization (AuthZ) Platform,Netflix,"Netflix, Inc.",Full time,Posted 2 Days Ago,2026-09-16,41,New York,2,New York; Los Gatos,false,,United States,,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
 
 Since launching our ad-supported tier in 2022, the momentum has been unstoppable—we reach over 94 million global monthly active users! As we enter our fourth year, our ambition is massive, and we are just getting started.
@@ -21362,7 +21071,7 @@ Netflix is a unique culture and environment. Learn more here.
 
 Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
 
-We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5164,https://netflix.wd108.myworkdayjobs.com/Netflix/job/New-York/Administrative-Assistant---Business---Legal-Affairs--Stand-Up-Comedy-_JR43182,,,,,,,not_checked,,2026-10-24,,2026-10-27,,4,startDate,false,0,,,,,,2026-10-23,,,,,,,,
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5164,https://netflix.wd108.myworkdayjobs.com/Netflix/job/New-York/Administrative-Assistant---Business---Legal-Affairs--Stand-Up-Comedy-_JR43182,,,,,,,not_checked,,2026-10-24,,2026-10-27,,4,startDate,false,0,2026-10-26,,,,,2026-10-23,,,,,,,,
 JR43188,"Director, FP&A, Content",Netflix,"Netflix, Inc.",Full time,Posted Yesterday,2026-10-23,4,Los Angeles,1,Los Angeles,false,,United States,,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
 
 We are currently looking for a Director to lead Financial Planning & Analysis (FP&A) for our Film business. In this role, you will partner closely with the Netflix Film leadership team to oversee short- and long-term financial planning for our live-action and animated film slates.
@@ -21479,3 +21188,233 @@ We are an equal-opportunity employer and celebrate diversity, recognizing that d
 Netflix House is a unique culture and environment. Learn more here.
 
 Job is open for no less than 7 days and will be removed when the position is filled.",5402,https://netflix.wd108.myworkdayjobs.com/Netflix/job/King-of-Prussia/Assistant-General-Manager---KOP_JR43193,,,,,,,not_checked,,2026-10-25,,2026-10-27,,3,startDate,false,0,,,,,,2026-10-24,,,,,,,,
+JR43190,"Administrative Assistant, Series Business & Legal Affairs",Netflix,"Netflix, Inc.",Full time,Posted Yesterday,2026-10-26,1,Los Angeles,1,Los Angeles,false,,United States,,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
+
+We are seeking a sharp, curious Administrative Assistant based in Los Angeles to support the Adult Animation and Kids & Family TV Business & Legal Affairs teams. You’ll provide primary support to two senior leaders and secondary support to their teams, and you’ll work closely with cross-functional partners across the business, staying semi-embedded in their workflow and in the day-to-day of the deals and projects moving through the group.
+
+The ideal candidate is proactive, highly responsive, and an exceptional communicator who anticipates team needs and drives initiatives forward. We are looking for a detail-oriented problem-solver eager to thrive in a fast-paced environment and leverage modern workplace tools, including AI to optimize team workflows.
+
+What you’ll do
+
+• Provide administrative support to two senior leaders and their reports.
+
+• Build relationships with cross-functional partners and stay close to their workflows so you can support the team in context.
+
+• Maintain and update trackers as new deals come in, keeping status, owners, and next steps accurate.
+
+• Support deal logistics, including routing documents in Docusign and completing and reviewing certificate agreements.
+
+• Coordinate travel,  and process expense reports accurately and on time.
+
+• Prepare agendas and materials for team meetings, and circulate memos and action items.
+
+• Use AI tools to find efficiencies, own routine automation, and help improve how the team works.
+
+• Help with team events, onboarding of new team members, and special projects as they arise.
+
+• Handle confidential and sensitive information with complete discretion.
+
+What you bring
+
+• Administrative, executive assistant, or legal secretary experience in a law firm, legal department, entertainment company or business affairs setting.
+
+• Detail orientation and a high standard of accuracy, including in fast-paced, high-volume environments.
+
+• Strong written and verbal communication, and the ability to build rapport quickly with colleagues at all levels.
+
+• Responsiveness and agility. You adapt quickly, prioritize well, and are comfortable with shifting priorities.
+
+• Independence and sound judgment. You know what to handle yourself, when to escalate, and how to find another way when the first plan falls through.
+
+• Strong follow-through. You own your work, track open items, and close the loop without prompting.
+
+• Proven discretion and professionalism.
+
+• Curiosity and a growth mindset, with genuine interest in the entertainment industry, animation, or the legal field.
+
+• Comfort using AI tools to work more efficiently, with good judgment about what information is appropriate to share and a habit of reviewing outputs before relying on them.
+
+• Proficiency with Google Suite, Microsoft Office, Docusign, Airtable or similar tools in a business environment.
+
+Generally, our compensation structure consists solely of hourly pay; we do not have bonuses. You choose each year how much of your compensation you want in hourly pay versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The hourly range for this role is $38.46 - $71.39.
+
+Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
+
+Netflix is a unique culture and environment. Learn more here.
+
+Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
+
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5011,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Angeles/Administrative-Assistant---Adult-Animation-Business---Legal-Affairs_JR43190-1,,,,,,,not_checked,,2026-10-27,,2026-10-27,,1,startDate,false,1,,,,,,2026-10-26,,,,,,,,
+JR43206,"Manager, Casting - Netflix Animation Studios",Netflix,"Netflix Animation, LLC",Full time,Posted Yesterday,2026-10-26,1,Burbank,1,Burbank,false,,United States,,0,"Netflix Animation Studios is on a mission to entertain the world with bold, immersive animated films that are timeless and impactful. We are paving the way for the future of animation by building a community of amazing artists and talent across three vibrant locations globally. Come join us!
+
+The Netflix Animation Studios Casting team is looking for a seasoned and creatively driven Manager, Casting for our original animated feature films. In this role, you will support the Casting Director on an assigned set of titles, working closely with filmmakers and production teams to discover, track, and coordinate the voice talent that brings our characters to life.
+
+As the Manager, Casting you will also be responsible for fielding auditions and submissions, building relationships with agents, managers, and actors, and mentoring members of the Casting team. In collaboration with the VP, Casting you will also help shape casting ideas across the slate.
+
+About The Team:
+
+The Animated Film Casting team partners closely with filmmakers and production to identify the voices that bring our characters to life. Across the slate, the team sources and auditions talent, curates reels and shortlists, and manages relationships with agents, managers, and actors. They help guide each project’s casting process from early exploration through final selections, ensuring timelines stay on track while honoring the creative vision of the filmmakers.
+
+What You'll Do:
+
+• Casting Support & Coordination
+
+• Title Support: Support the Casting Director on an assigned set of feature animation  titles, working alongside filmmakers, producers, and production management to keep casting moving from character breakdown through final booking.
+
+• Creative Input: Bring thoughtful, character-driven casting ideas across multiple titles, and present options with clear rationale to Directors and Producers.
+
+• Shortlists & Reels: Review self-tape submissions and put forth selects for Casting Director input. Source audio clips from existing performances, interviews, and reels that best show an actor's range and character fit, edit them into polished casting reels tailored to specific roles and titles, and compile shortlists in a clear, professional format.
+
+• Production Partnership: Communicate casting updates clearly to production, production management, and other internal teams, and keep casting timelines and deal statuses current.
+
+Talent & Industry Relationships
+
+• Agent & Talent Relations: Serve as the primary point of contact for agencies, managers, and independent actors on auditions, callbacks, availability, and session bookings. Manage talent relations with professionalism, discretion, and sensitivity.
+
+• Deals & Clearances: Track start paperwork, credits, and deal statuses, and flag SAG-AFTRA considerations and clearances so they are handled accurately and on time.
+
+• Talent Discovery: Track emerging and established performers across animation, live action, stage, and international markets, and share knowledge of diverse talent pools to broaden casting options.
+
+Team Captain
+
+• Auditions & Recording Sessions: Oversee audition materials (breakdowns, sides, reference clips) and coordinate session logistics with production and internal partners, including script distribution, NDAs, studio bookings, remote recording, travel, and hospitality.
+
+• Records & Mentorship: Oversee casting grids, talent databases, casting notes, and session reports, and mentor associates and coordinators in their casting and creative judgment.
+
+What You'll Need:
+
+• Experience: 7+ years of experience in casting, talent representation, or production in film, television, animation, or games, including experience leading projects or people. Voice casting and animation production pipeline experience preferred.
+
+• Industry Acumen: An established network among talent agencies, management companies, and casting offices, with a track record of sourcing talent and a high comfort level working with filmmakers and senior executives.
+
+• Business & Deal Acumen: Working knowledge of SAG-AFTRA considerations, start paperwork, and talent representation, with strong organizational discipline. Familiarity with casting software or databases preferred.
+
+• Creative Judgment & Passion: A strong ear for performance, tone, and character authenticity, and a demonstrated passion for storytelling, character, and performance, especially in animation.
+
+• Communication: Excellent communication and interpersonal skills, with a professional and diplomatic approach with agents, talent, and internal teams, and the ability to present casting options clearly to directors and producers.
+
+• Judgment & Autonomy: Sound independent judgment and calm, solutions-oriented problem-solving. Sets priorities, manages multiple projects, deadlines, and stakeholders at once, pivots quickly as schedules shift, and handles confidential information with discretion.
+
+• Inclusivity: A commitment to inclusive, representative casting and respectful engagement with talent from diverse backgrounds.
+
+• Tools: Core: Adobe Audition or Pro Tools (or similar), Adobe Premiere (or similar), Adobe Acrobat, Final Draft, Google Workspace, Microsoft Word, Slack, and SAG clearance. Frequent: Audio Hijack, Photoshop and Illustrator, Zoom. Bonus: Dropbox, Lala.AI.
+
+This role is based in the US.
+
+At NAS, we carefully consider a wide range of compensation factors to determine your compensation. We rely on market indicators and consider your specific job family, background, location, skills, and experience.  The overall market range for this role is typically $168,000.00 - $239,000 USD.  This reflects total compensation; we do not have bonuses.
+
+NAS benefits can include medical/dental/vision plans, mental health support, retirement programs, Stock Option Program and family-forming benefits, paid leave of absence programs, and paid time away programs to be used for vacation and sick paid time off. See more detail about our benefits here.
+
+Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
+
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",6698,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Burbank/Manager--Casting_JR43206,,https://www.linkedin.com/jobs/view/4481821505,2026-10-27,25,among first 25,1,matched,titleSearchFallback,2026-10-27,2026-10-27T12:44:32,2026-10-27,,1,startDate,false,0,,,,,,2026-10-26,,true,,,,,,
+JR43214,Software Engineer 5 - Device Certification Infrastructure,Netflix,"Netflix, Inc.",Full time,Posted Yesterday,2026-10-26,1,Los Gatos,1,Los Gatos,false,,United States,,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
+
+The Partner Test Tech team ensures a high-quality Netflix experience on smart TVs and set-top devices. Every major release adds features and raises the complexity of what device manufacturers must certify against. The volume of certification content keeps growing as features such as Variable Speed Playback and Multiple Players interact in more complex ways. We build and run the infrastructure, delivery pipelines, and services that keep certification consistent and manageable for partners and give Netflix teams a clear signal of release readiness. Our work centers on TV Media, and we collaborate with peer teams across Client and Partner Technologies, including Audio Video Tests and Tools and TV Test Reliability.
+
+Who you are
+
+• You are a quality-focused engineer driving cross-team projects while mentoring peers
+
+• You are proficient in JavaScript / TypeScript, and Java
+
+• You have created and effectively operate applications in production at scale.
+
+• You are experienced with CI/CD systems, test automation, and device scheduling infrastructure.
+
+• You have a working knowledge of audio and video streaming technologies
+
+• You have an AI-native mindset, leveraging AI tools to optimize workflows and efficiency.
+
+What you will do
+
+• Architect and scale CI/CD pipelines for real-time change feedback
+
+• Optimize device lab usage to provide high quality signal from on-device testing
+
+• Enhance reliability and signal quality of distributed testing infrastructure
+
+• Modernize backend services for device metric collection and test execution
+
+• Track operational metrics to quantify engineering impact
+
+• Streamline developer experience to boost velocity
+
+• Collaborate with cross-functional partner teams to standardize test workflows
+
+What sets you apart?
+
+• Hands-on experience with video streaming, graphics, encoding, or playback engines
+
+• Deep domain knowledge of consumer electronics and device partner ecosystems
+
+• Proven track record leading complex system migrations
+
+• Full-stack expertise spanning networking protocols, web technologies, and AWS cloud services
+
+• A history of creating novel solutions for intricate problems across organizational boundaries
+
+• Active contributor to open-source or industry standards for device automation
+
+Why Netflix?
+
+• Our culture is something we strive to constantly improve and practice daily
+
+• You’ll work with other stunning engineers and continue your career growth while pushing the boundaries of what is possible with home entertainment today
+
+• You can use and influence standards for automating streaming devices using world-class infrastructure and labs
+
+Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $388,000.00 - $558,000.00.
+
+Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
+
+Netflix is a unique culture and environment. Learn more here.
+
+Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
+
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",4799,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Gatos/Software-Engineer-5---Device-Certification-Infrastructure_JR43214,,https://www.linkedin.com/jobs/view/4219576591,2026-10-25,200,Over 200 applicants,-1,matched,,2026-10-27,2026-10-27T12:44:19,2026-10-27,,2,startDate+linkedin,false,0,,,,,,2026-10-25,title,true,361,213512,226158,264514,subset,Software Engineer
+JR43217,"Counsel/Manager, Business & Legal Affairs - Original Stand-Up, Sketch &  Comedy Formats",Netflix,"Netflix, Inc.",Full time,Posted Yesterday,2026-10-26,1,Los Angeles,1,Los Angeles,false,,United States,,0,"At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
+
+THE OPPORTUNITY
+
+Netflix seeks an attorney to join the Original Stand-Up, Sketch & Comedy Formats business & legal affairs team to handle a wide array of responsibilities related to the licensing, development, production, and distribution of Netflix's original stand-up, sketch and comedy formats content initiative.
+
+The successful candidate will work closely with the entire Original Stand-Up, Sketch & Comedy Formats cross functional team (e.g. Content, Production, Finance, IP, Labor), and in conjunction with the broader Comedy business & legal affairs team, and take on wide-ranging responsibilities including, drafting, structuring and negotiating agreements necessary in connection with licensing, developing, and producing (both live and live to tape) the company's stand-up comedy specials (with such talent as Pete Davidson, Wanda Sykes, John Mulaney, Bert Kreischer & Shane Gillis), variety shows (on-going series and specials), sketch comedies, Netflix Is A Joke Comedy Festival, video podcasts and the Netflix is a Joke Radio SiriusXM initiative and should be comfortable counseling business partners and making decisions that have both legal and business impacts.
+
+This role will be based in Los Angeles, CA.
+
+REQUIREMENTS
+
+The successful candidate will have at least seven (7) years of development and production business and/or legal experience in the film or television industry, with experience in helping to negotiate and draft all forms of development, licensing, production and/or distribution agreements. Familiarity with the development, production, and multi-platform distribution of stand-up comedy, variety shows, late night programming and/or non-fiction programming and general entertainment industry knowledge is a plus. Fluency with related documents and related issues (e.g., production services agreements, talent agreements, license agreements, EP/writer agreements, standard terms, related IP issues) is appreciated.
+
+• The successful candidate will also possess the following:
+
+• Excellent interpersonal and communication skills.
+
+• Strong analytical capabilities and judgment.
+
+• Ability to work proactively, independently and reliably under tight timeframes in a fast-paced environment, interacting with internal and external parties across time zones.
+
+• Ability to work with the broader BLA Comedy team, specifically in the kids non-fiction, animation, and/or original scripted series space, as needed.
+
+• Ability to work effectively and collaboratively cross-functionally, think practically and be solution-oriented.
+
+• A commitment to embrace and advocate for inclusion is essential.
+
+• Working cross functionally to maintain alignment between departments and teams.
+
+• Willingness to tackle matters outside area of expertise
+
+• High level of organizational skills, attention to detail, and ability to prioritize and time-manage across multiple deadlines and time zones.
+
+• J.D. and membership in good standing in at least one state bar is required.
+
+Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $225,000.00 - $390,000.00.
+
+Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
+
+Netflix is a unique culture and environment. Learn more here.
+
+Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
+
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.",5163,https://netflix.wd108.myworkdayjobs.com/Netflix/job/Los-Angeles/Counsel-Manager--Original-Stand-Up--Sketch----Comedy-Formats_JR43217,,https://www.linkedin.com/jobs/view/4481831067,2026-10-27,25,among first 25,1,matched,,2026-10-27,2026-10-27T12:44:23,2026-10-27,,1,startDate,false,0,,,,,,2026-10-26,,true,,,,,,
