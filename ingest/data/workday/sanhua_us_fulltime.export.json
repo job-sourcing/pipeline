@@ -1,9 +1,9 @@
 {
  "label": "sanhua_us_fulltime",
  "rows": 13,
- "kept": 11,
- "new": 2,
- "ghosts_dropped": 1,
+ "kept": 13,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -14,5 +14,5 @@
  "state_rows": 13,
  "banded": 2,
  "lca_pools": 14,
- "snapshot": "2026-10-26"
+ "snapshot": "2026-10-27"
 }

@@ -1,8 +1,8 @@
 {
  "label": "reolink_us_fulltime",
- "rows": 15,
+ "rows": 16,
  "kept": 15,
- "new": 0,
+ "new": 1,
  "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 49,
  "feed_excluded_state": 0,
- "state_rows": 64,
+ "state_rows": 65,
  "banded": 0,
  "lca_pools": 0,
- "snapshot": "2026-10-26"
+ "snapshot": "2026-10-27"
 }
