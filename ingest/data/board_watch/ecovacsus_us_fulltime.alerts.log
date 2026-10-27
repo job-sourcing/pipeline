@@ -2,3 +2,9 @@ Ecovacs Robotics board-watch 2026-10-01: +1 new, -0 gone (1 active [ecovacsus_us
 NEW Warehouse Supervisor - 3PL Operations | Los Angeles, CA |  | https://www.ecovacs.com/us/careers/job-detail?id=13
 (2026-10-01T14:39:09)
 
+board-watch ecovacsus_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://www.ecovacs.com/_next/data/9.9.19/us/careers/job-list.json)
+(2026-10-27T12:42:54)
+
+board-watch ecovacsus_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Client Error: Not Found for url: https://www.ecovacs.com/_next/data/9.9.19/us/careers/job-list.json)
+(2026-10-27T12:49:39)
+
