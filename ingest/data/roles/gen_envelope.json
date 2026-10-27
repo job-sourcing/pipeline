@@ -2,12 +2,18 @@
  "sources": {
   "locked_endpoints": "skipped:talent,muse,wwr_rss,yc,hn,himalayas,l0_bundle",
   "l0_bundle": "locked_endpoint",
-  "seed_envelope": "ok:9742/10569"
+  "adzuna:California": "ok",
+  "careerjet:California": "error:office manag:HTTPError",
+  "jooble:California": "ok",
+  "indeed:California": "ok",
+  "seed_envelope": "ok:14889/15734"
  },
  "layers": {
-  "l0": 0
+  "l0": 0,
+  "l1.5": 19235,
+  "?": 0
  },
- "ran_at": "2026-10-26T06:37:26Z",
+ "ran_at": "2026-10-27T19:18:18Z",
  "queries": [
   "office manager",
   "business office manager",
@@ -40,45 +46,47 @@
   "marketing coordinator",
   "sales support coordinator"
  ],
- "rows_kept": 9735,
- "rows_dropped": 0,
+ "rows_kept": 17688,
+ "rows_dropped": 650,
  "counters": {
-  "family_other": 0,
-  "nontech_gate": 0,
-  "dedup_merge": 7,
-  "usgate_non_us": 0,
-  "pending_sector": 8859,
-  "staffing_repost": 586,
-  "employer_anonymized": 0,
-  "dedup_dateless": 0,
-  "residual_dup_est": 1879,
-  "g1b_title": 0,
-  "screening_post": 0,
-  "seed_rows_in": 9742,
-  "seed_dup_absorbed": 7,
-  "seed_dup_residual": 9735,
-  "roster_kept": 90,
-  "agency_pending": 583,
-  "res7_merge": 1,
-  "cross_src_merge": 3,
-  "jd_cache_hits": 10,
-  "jd_seed_admitted": 5
+  "family_other": 9854,
+  "nontech_gate": 256,
+  "dedup_merge": 5925,
+  "usgate_non_us": 7,
+  "pending_sector": 20452,
+  "staffing_repost": 2394,
+  "employer_anonymized": 9,
+  "dedup_dateless": 417,
+  "residual_dup_est": 3897,
+  "g1b_title": 391,
+  "screening_post": 3,
+  "seed_rows_in": 14889,
+  "seed_dup_absorbed": 2963,
+  "seed_dup_residual": 11926,
+  "roster_kept": 242,
+  "agency_pending": 2378,
+  "res7_merge": 432,
+  "cross_src_merge": 437,
+  "jd_cache_hits": 687,
+  "jd_seed_admitted": 5,
+  "url_identity_merge": 1244
  },
  "seniority_conflicts": 0,
- "title_conflicts": 0,
+ "title_conflicts": 9,
  "day_delta_histogram": {
-  "xs1": 2,
-  "xs2": 1,
-  "re7": 1
+  "re7": 430,
+  "xs3": 21,
+  "xs1": 241,
+  "xs2": 175
  },
- "dedup_merges": 7,
+ "dedup_merges": 5925,
  "family_histogram": {
-  "gen": 9735
+  "gen": 17688
  },
  "seniority_histogram": {
-  "senior": 448,
-  "director+": 46,
-  "mid": 8996,
-  "junior": 245
+  "mid": 16386,
+  "junior": 447,
+  "senior": 801,
+  "director+": 54
  }
 }

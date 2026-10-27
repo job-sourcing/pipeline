@@ -1,3 +1,6 @@
 {"ts": "2026-10-24T11:45:41Z", "family": "gen", "verdict": "complete", "rows": 5256, "sources_dead": []}
 {"ts": "2026-10-24T12:05:59Z", "family": "gen", "verdict": "complete", "rows": 3284, "sources_dead": ["adzuna:Sacramento, CA"]}
 {"ts": "2026-10-24T13:10:52Z", "family": "gen", "verdict": "complete", "rows": 5501, "sources_dead": []}
+{"ts": "2026-10-27T18:39:55Z", "family": "gen", "verdict": "complete", "rows": 13631, "sources_dead": ["builtin", "gj_role"]}
+{"ts": "2026-10-27T18:58:25Z", "family": "gen", "verdict": "complete", "rows": 15734, "sources_dead": ["builtin", "gj_role"]}
+{"ts": "2026-10-27T19:18:18Z", "family": "gen", "verdict": "complete", "rows": 17688, "sources_dead": ["careerjet:California"]}
