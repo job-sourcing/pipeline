@@ -106,6 +106,7 @@ tests/test_s41_industry.py
 tests/test_s41_jd_refetch.py
 tests/test_s42_industry.py
 tests/test_s47_b4_catchall.py
+tests/test_s47_craigslist.py
 tests/test_s9_titlesearch.py
 tests/test_scoring.py
 tests/test_site_boards.py
