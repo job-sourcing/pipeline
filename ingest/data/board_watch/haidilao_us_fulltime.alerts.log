@@ -72,3 +72,8 @@ GONE Dishwasher (first seen 2026-10-01)
 board-watch haidilao_us_fulltime FAILED: list fetch crashed (HTTPError: 410 Client Error: Gone for url: https://www.workstream.us/j/fcc54c54/positions?page=2)
 (2026-10-26T13:37:20)
 
+Haidilao board-watch 2026-10-27: +1 new, -1 gone (63 active [haidilao_us_fulltime])
+NEW Dishwasher | 400 S Baldwin Ave, Arcadia, CA | 2026-10-26 | https://www.workstream.us/j/fcc54c54/haidilao-hot-pot/arcadia-13994/dishwasher-3672eea3?locale=en
+GONE Host (first seen 2026-10-01)
+(2026-10-27T12:44:05)
+
