@@ -1,9 +1,9 @@
 {
  "label": "foxconnfii_us_fulltime",
- "rows": 154,
- "kept": 154,
+ "rows": 153,
+ "kept": 153,
  "new": 0,
- "ghosts_dropped": 0,
+ "ghosts_dropped": 1,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,7 +11,7 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 154,
+ "state_rows": 153,
  "banded": 4,
  "lca_pools": 25,
  "snapshot": "2026-10-28"

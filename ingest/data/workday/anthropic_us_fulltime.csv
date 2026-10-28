@@ -170,47 +170,6 @@
 <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
 <h2><strong>Come work with us!</strong></h2>
 <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",9924,https://job-boards.greenhouse.io/anthropic/jobs/5382750008,,https://www.linkedin.com/jobs/view/4451691293,2026-09-01,88,88 applicants,,matched,title,2026-09-19,2026-09-19T03:43:08,2026-10-28,,57,startDate+linkedin,true,0,,,,,Software Engineering - Infrastructure,2026-09-01,,false,,,,,,
-266710,"AI Operations Engineer, Partnerships",anthropic,Anthropic,,Posted 43 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
-<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2 class=""mt-3 -mb-1 text-[1.125rem] font-bold"" data-sourcepos=""4:1-4:18;143-160"">About the role</h2>
-<p class=""font-claude-response-body break-words whitespace-normal"" data-sourcepos=""6:1-6:384;162-545"">Our Partner Experience team is building an AI-native operating model. We already run a growing set of partner-facing systems: a partner portal, CRM workflows, enablement and certification platforms, and the trackers that connect them. The systems lead on our team owns that foundation — the portal, the data model, and the integrations that keep partner records accurate and flowing.</p>
-<p class=""font-claude-response-body break-words whitespace-normal"" data-sourcepos=""8:1-8:459;547-1005"">This role is the other half of that build. As our AI Operations Engineer, you'll design, build, and run the agentic workflows that sit on top of those systems: Claude-powered agents and automations that triage partner applications, draft and send partner communications, sync data across tools, surface deal and enablement signals, and take routine operational work off the team entirely. Where the systems lead builds the rails, you build what runs on them.</p>
-<p class=""font-claude-response-body break-words whitespace-normal"" data-sourcepos=""10:1-10:180;1007-1186"">This is a builder role, not an analyst role. You'll ship working automations weekly, own them in production, and continuously expand what the team can do without adding headcount.</p>
-<h2 class=""mt-3 -mb-1 text-[1.125rem] font-bold"" data-sourcepos=""12:1-12:24;1188-1211"">Key responsibilities:</h2>
-<ul class=""[li_&]:mb-0 [li_&]:mt-1 [li_&]:gap-1 [&:not(:last-child)_ul]:pb-1 [&:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3 print:block print:space-y-1"" data-sourcepos=""14:1-19:186;1213-2419"">
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""14:1-14:253;1213-1465"">Design and build agentic workflows (using Claude, MCP connectors, and API integrations) that automate core partner experience operations: application triage, onboarding, deal registration, certification tracking, partner communications, and reporting</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""15:1-15:247;1466-1712"">Partner closely with our systems lead to integrate these workflows with the partner portal, CRM, enablement stack, finance systems, and database systems — consuming and writing back to the systems of record rather than creating shadow processes</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""16:1-16:228;1713-1940"">Turn recurring manual work into reliable, monitored automations: define the workflow, build it, test it against real cases, add guardrails and human-in-the-loop checkpoints where decisions carry risk, and document how it runs</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""17:1-17:137;1941-2077"">Own the operational health of what you ship: error handling, edge cases, escalation paths, and iteration when partner processes change</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""18:1-18:156;2078-2233"">Prototype fast with the team: sit with partner managers, find the highest-friction workflows, and get a working v1 in front of them in days, not quarters</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""19:1-19:186;2234-2419"">Establish reusable patterns (skills, prompts, connectors, playbooks) so each new workflow is faster to build than the last, and teach the broader team to self-serve on the simple ones</li>
-</ul>
-<h2 class=""mt-3 -mb-1 text-[1.125rem] font-bold"" data-sourcepos=""21:1-21:26;2421-2446"">Minimum qualifications:</h2>
-<ul class=""[li_&]:mb-0 [li_&]:mt-1 [li_&]:gap-1 [&:not(:last-child)_ul]:pb-1 [&:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3 print:block print:space-y-1"" data-sourcepos=""23:1-27:75;2448-3252"">
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""23:1-23:191;2448-2638"">Hands-on experience building with LLMs and agentic tooling: prompt and workflow design, tool/function calling, MCP or comparable integration frameworks, and evaluating agent output quality</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""24:1-24:235;2639-2873"">Experience working across APIs and business systems — CRMs (e.g., Salesforce), PRM/partner portals, LMS/certification platforms, spreadsheet-based tools, Slack, and email — and scripting the glue between them in Python or JavaScript</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""25:1-25:158;2874-3031"">Strong judgment about automation risk: knowing which steps an agent can own outright, which need a human checkpoint, and how to design for graceful failure</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""26:1-26:146;3032-3177"">Process instincts: ability to look at a messy manual workflow, find the actual bottleneck, and redesign it rather than just automating it as-is</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""27:1-27:75;3178-3252"">Clear written communication; documents what you build so it outlives you</li>
-</ul>
-<h2 class=""mt-3 -mb-1 text-[1.125rem] font-bold"" data-sourcepos=""29:1-29:28;3254-3281"">Preferred qualifications:</h2>
-<ul class=""[li_&]:mb-0 [li_&]:mt-1 [li_&]:gap-1 [&:not(:last-child)_ul]:pb-1 [&:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3 print:block print:space-y-1"" data-sourcepos=""31:1-34:107;3283-3815"">
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""31:1-31:188;3283-3470"">5+ years in operations engineering, solutions engineering, business systems, RevOps, or a similar build-heavy role, ideally supporting a partner, sales, or customer success organization</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""32:1-32:140;3471-3610"">Experience in partner/channel operations specifically (deal registration, MDF/co-sell programs, partner tiering, certification pipelines)</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""33:1-33:98;3611-3708"">Experience shipping internal AI tools or automations that are still running in production today</li>
-<li class=""font-claude-response-body whitespace-normal break-words pl-2"" data-sourcepos=""34:1-34:107;3709-3815"">Familiarity with the Claude API, Claude Code, or agent frameworks; building custom MCP servers is a plus</li>
-</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
-<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$215,000</span><span class=""divider"">—</span><span>$300,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
-<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
-<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
-<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
-<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
-<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
-<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
-<h2><strong>How we're different</strong></h2>
-<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
-<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
-<h2><strong>Come work with us!</strong></h2>
-<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",11955,https://job-boards.greenhouse.io/anthropic/jobs/5391151008,,https://www.linkedin.com/jobs/view/4453761481,2026-09-05,145,145 applicants,,matched,title,2026-09-19,2026-09-19T03:43:11,2026-10-28,,53,startDate+linkedin,true,0,,,,,Sales,2026-09-05,,false,,,,,,
 PIP-261918,"Applied AI Architect, Commercial",anthropic,Anthropic,,Posted 162 Days Ago,,,"San Francisco, CA | New York City, NY",2,"San Francisco, CA | New York City, NY; San Francisco, CA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
 <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2 class=""heading""><strong>About the role:</strong></h2>
 <p>As an Applied AI team member at Anthropic, you will be a Pre-Sales architect focused on becoming a trusted technical advisor helping customers understand the value of Claude and paint the vision on how they can successfully integrate and deploy Claude into their technology stack. You'll combine your technical depth with customer-facing skills to architect innovative LLM solutions that address complex business challenges while maintaining our high standards for safety and reliability.</p>
@@ -3862,94 +3821,6 @@ P-5171,"Director, US International Tax",anthropic,Anthropic,,Posted 50 Days Ago,
 <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
 <h2><strong>Come work with us!</strong></h2>
 <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",9583,https://job-boards.greenhouse.io/anthropic/jobs/5417758008,,https://www.linkedin.com/jobs/view/4465460079,2026-09-13,31,31 applicants,,matched,title,2026-09-19,2026-09-19T03:26:57,2026-10-28,,45,startDate+linkedin,true,0,,,,,Safeguards (Trust & Safety),2026-09-13,,false,,,,,,
-267549,"Engineering Manager, Data Infrastructure",anthropic,Anthropic,,Posted 4 Days Ago,,,"San Francisco, CA | New York City, NY",1,"San Francisco, CA | New York City, NY",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
-<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2>About the role</h2>
-<p>Anthropic is looking for an Engineering Manager to lead and scale our Data Warehouse & Streaming Infra team. You'll own the data platform that Anthropic runs on: the foundation every team relies on to understand the business, make decisions, and keep our systems safe. Every org is your customer. As data volumes grow rapidly, and more of it arrives as real-time streams across multiple clouds, you'll help your team make that stack faster, more robust, and ready for what's next, and you'll shape the long-term vision for how data flows through one of the fastest-growing companies ever.</p>
-<p>This is a high-visibility, high-impact role that calls for both deep technical judgment and strong people skills. You'll partner with leaders across finance, data science, product, engineering, and research to uncover and meet their needs, and you'll grow a small, strong core into a large team. We're looking for someone who is comfortable with ambiguity, energized by both business and technical impact, and cares deeply about people.</p>
-<h2>Responsibilities</h2>
-<ul>
-<li>
-<p>Lead, grow, and mentor the Data Warehouse & Streaming Infra team, fostering a culture of ownership, collaboration, engineering excellence, and execution at speed</p>
-</li>
-<li>
-<p>Own Anthropic's data warehousing, streaming, and processing capabilities end-to-end: ""wow"" user experience, ops, reliability/security/governance/cost, long-term strategic vision</p>
-</li>
-<li>
-<p>Support the team to scale and evolve our data ingestion, event streaming, change data capture, storage, orchestration, compute, query, and reporting systems at pace with business growth</p>
-</li>
-<li>
-<p>Collaborate to define and execute the roadmap for Anthropic's batch and streaming data infrastructure, balancing immediate business needs with durable, scalable design</p>
-</li>
-<li>
-<p>Lead key platform decisions for the streaming backbone, such as managed versus self-operated Kafka, grounded in clear models of throughput, cost, and operational burden</p>
-</li>
-<li>
-<p>Partner closely across Finance, Product, Research, and Engineering to ensure data systems directly support business-critical decisions and company growth</p>
-</li>
-<li>
-<p>Drive hiring for the team — sourcing, evaluating, and closing senior data infrastructure engineers who thrive in high-growth, high-trust environments</p>
-</li>
-<li>
-<p>Establish data quality standards, freshness and delivery SLAs, and operational processes that guide engineers and users through our high-change environment</p>
-</li>
-<li>
-<p>Ensure sound infrastructure investment decisions with clear awareness of cost, capacity, reliability, and long-term maintainability tradeoffs</p>
-</li>
-<li>
-<p>Align the broader Infrastructure org on a common direction for shared platforms, tooling, and best practices across Anthropic's data stack</p>
-</li>
-</ul>
-<h2>You may be a good fit if you</h2>
-<ul>
-<li>
-<p>Have 3+ years of engineering management experience, with a track record of building and leading high-performing data infrastructure teams</p>
-</li>
-<li>
-<p>Are a people-first leader who gives direct feedback, grows engineers' careers, and builds trust with technical and non-technical partners alike, while staying steady and principled as priorities shift, knowing when to move fast and when to do it right</p>
-</li>
-<li>
-<p>Bring deep, hands-on expertise in both batch and streaming data infrastructure, from warehousing, pipelines, and orchestration to event streaming and change data capture, including the fundamentals of distributed log systems such as partitioning, delivery guarantees, and backpressure</p>
-</li>
-<li>
-<p>Have owned systems with significant business or financial impact, and shipped at speed while improving reliability, scalability, security, and cost</p>
-</li>
-<li>
-<p>Excel at hiring — you've built teams from small to large, and have sharp instincts for identifying exceptional talent</p>
-</li>
-</ul>
-<h2>Strong candidates may also have experience with</h2>
-<ul>
-<li>
-<p>Warehouse and batch technologies such as BigQuery, Snowflake, Iceberg, Spark, dbt, or Airflow</p>
-</li>
-<li>
-<p>Streaming and change data capture technologies such as Kafka, Pub/Sub, Flink, or Debezium, ideally including running them at high scale</p>
-</li>
-<li>
-<p>Multi-cloud (GCP, AWS, Azure) or multi-region data platforms, including data-residency requirements</p>
-</li>
-<li>
-<p>Data infrastructure at AI or ML-intensive companies: you've served customer teams that build pipelines for financial/billing data, model training, evaluation, or safety workflows</p>
-</li>
-<li>
-<p>Building and operating observability or monitoring for data systems at scale</p>
-</li>
-<li>
-<p>Working in high-growth environments where data infrastructure had to evolve rapidly to keep pace with the business</p>
-</li>
-</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
-<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$405,000</span><span class=""divider"">—</span><span>$485,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
-<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
-<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
-<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
-<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
-<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
-<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
-<h2><strong>How we're different</strong></h2>
-<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
-<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
-<h2><strong>Come work with us!</strong></h2>
-<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",10070,https://job-boards.greenhouse.io/anthropic/jobs/5426135008,,https://www.linkedin.com/jobs/view/4469061154,2026-09-22,35,35 applicants,,matched,title,2026-09-23,2026-09-24T02:13:45,2026-10-28,,36,startDate+linkedin,true,0,,,,,Software Engineering - Infrastructure,2026-09-22,,false,,,,,,
 262945,"Engineering Manager, Enterprise",anthropic,Anthropic,,Posted 105 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
 <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2 class=""heading""><strong>About the role</strong></h2>
 <p>Enterprise is central to Anthropic's mission. The organizations that could benefit most from Claude are often the most demanding buyers, with rigorous requirements around security, compliance, and control. We believe earning their trust is essential to ensuring AI benefits the world broadly.</p>
@@ -6174,49 +6045,6 @@ P-5144,"Finance Systems Engineer, Tax",anthropic,Anthropic,,Posted 50 Days Ago,,
 <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
 <h2><strong>Come work with us!</strong></h2>
 <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",10904,https://job-boards.greenhouse.io/anthropic/jobs/5407418008,,https://www.linkedin.com/jobs/view/4459460167,2026-08-29,115,115 applicants,,matched,title,2026-09-19,2026-09-19T03:44:27,2026-10-28,,60,startDate+linkedin,true,0,,,,,Safeguards (Trust & Safety),2026-08-29,,false,,,,,,
-266786,Head of State and Local Government Sales,anthropic,Anthropic,,Posted 33 Days Ago,,,"Austin, TX | Remote-Friendly, United States; Boston, MA; New York City, NY; San Francisco, CA; Washington, DC",3,"Austin, TX | Remote-Friendly, United States; Boston, MA; New York City, NY; San Francisco, CA; Washington, DC; San Francisco, CA; Washington, D.C.",true,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
-<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2>
-<p>As the Head of State and Local Government Sales at Anthropic, you'll lead and scale our state and local government sales organization to drive the adoption of safe, frontier AI across state agencies, counties, cities, and other local government entities throughout the United States. You'll leverage your deep understanding of state and local government operations and proven sales leadership expertise to build a high-performing team while establishing strategic relationships with key states, municipalities, and public sector partners. Working closely with GTM, product, and marketing teams, you'll define and execute our go-to-market strategy for the state and local government sector while maintaining the highest standards of security and compliance.</p>
-<h2>Key responsibilities</h2>
-<ul>
-<li>Build, lead, and scale a state and local government sales team, including hiring top talent, setting clear performance expectations, and providing ongoing coaching and development</li>
-<li>Develop and execute comprehensive go-to-market strategies for state and local government, including territory design, market segmentation, competitive positioning, and revenue forecasting across a large and geographically distributed customer base</li>
-<li>Own overall state and local government revenue targets and ensure team performance against quotas, while providing visibility into pipeline health and deal progression</li>
-<li>Establish and cultivate relationships with governors' offices, state CIOs, agency executives, and city and county leadership, serving as Anthropic's senior point of contact for strategic engagement while empowering your team to own day-to-day customer relationships</li>
-<li>Win new business across state and local government by helping state agencies, counties, and cities integrate AI into their technology stacks and constituent-facing and back-office workflows to accelerate delivery and improve service outcomes</li>
-<li>Establish and refine sales processes, methodologies, and playbooks specific to state and local procurement, including cooperative purchasing agreements, statewide contracts, RFP/RFI processes, and state-specific compliance requirements</li>
-<li>Build and manage strategic relationships with cloud service providers, system integrators, and resellers to create scalable go-to-market motions across the state and local market</li>
-<li>Synthesize market feedback and customer insights to inform product roadmap and competitive strategy, working closely with product and marketing teams</li>
-<li>Partner with legal, compliance, and delivery teams to ensure successful contract execution and customer satisfaction</li>
-<li>Implement metrics, reporting, and performance management systems to drive team accountability and continuous improvement</li>
-<li>Represent Anthropic at industry events and with key stakeholders, establishing our brand as the trusted AI partner for state and local government</li>
-</ul>
-<h2><strong>Minimum qualifications</strong></h2>
-<ul>
-<li>15+ years of enterprise sales experience with 5+ years managing state and local government sales teams, with a proven track record of scaling revenue and building high-performing organizations</li>
-<li>Deep understanding of state and local government missions, budget and legislative cycles, modernization initiatives, and technology adoption patterns across multiple states and municipalities</li>
-<li>Demonstrated ability to hire, develop, and retain top sales talent while creating a culture of performance and accountability</li>
-<li>Experience developing and executing go-to-market strategies for emerging technologies in the state and local government space</li>
-<li>Extensive experience with state and local contracting vehicles, cooperative purchasing agreements, procurement mechanisms, and compliance requirements such as StateRAMP, CJIS, and state-specific data privacy standards</li>
-<li>Strong track record of consistently exceeding team revenue targets and building predictable, scalable sales motions across a high-volume, distributed territory</li>
-<li>Proven ability to build and manage strategic channel partnerships and ecosystem relationships, including cloud providers, system integrators, and resellers</li>
-<li>Excellent communication and relationship-building skills across all levels, from technical teams to state CIOs, agency executives, and elected and appointed officials</li>
-<li>Experience implementing sales methodologies, CRM systems, and performance management processes</li>
-<li>A passion for safe and ethical AI development, with the ability to articulate its importance in government contexts and build trust with state and local stakeholders</li>
-</ul>
-<p><strong>Deadline to apply: </strong>None. Applications will be reviewed on a rolling basis. </p><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
-<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$550,000</span><span class=""divider"">—</span><span>$700,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
-<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
-<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
-<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
-<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
-<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
-<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
-<h2><strong>How we're different</strong></h2>
-<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
-<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
-<h2><strong>Come work with us!</strong></h2>
-<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",10075,https://job-boards.greenhouse.io/anthropic/jobs/5391488008,,https://www.linkedin.com/jobs/view/4457965921,2026-09-17,163,163 applicants,,matched,title,2026-09-19,2026-09-19T03:34:25,2026-10-28,,41,startDate+linkedin,true,0,,,,,Sales,2026-09-17,,false,,,,,,
 267355,Head of Strategic Startups,anthropic,Anthropic,,Posted 15 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
 <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2>
 <p>As Head of Strategic Startups at Anthropic, you will own the strategy, organization, and commercial outcomes for Anthropic's relationships with the world's most important AI-native startups. This is the segment where the next generation of category-defining companies is being built on Claude, and where Anthropic's commercial, product, and partnership decisions compound fastest.</p>
@@ -21645,54 +21473,6 @@ P-5168,"Treasury Director, Investments & Liquidity",anthropic,Anthropic,,Posted 
 <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
 <h2><strong>Come work with us!</strong></h2>
 <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",10512,https://job-boards.greenhouse.io/anthropic/jobs/5427938008,,,,,,,not_checked,,2026-10-01,,2026-10-28,,,,true,0,,,,,,,,,,,,,,
-267675,"Treasury, Liquidity & Capital Planning",Anthropic,Anthropic,,Posted 1 Days Ago,,,"San Francisco, CA | New York City, NY | Seattle, WA",1,"San Francisco, CA | New York City, NY | Seattle, WA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
-<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2>
-<p>Anthropic is seeking an experienced leader for our Treasury, Liquidity & Capital Planning team. In this foundational role, you will own the forward view of the company's cash and balance sheet as Anthropic manages one of the fastest-growing balance sheets in technology alongside some of the largest infrastructure commitments any company is making. You will report to the Head of Investments & Market Risk and work closely with FP&A, Accounts Payable, Collections, Controllership, Legal and Infrastructure Finance.</p>
-<p>This is a rare opportunity to build a liquidity and capital planning function from the ground up at a high-growth AI company. You bring a strong background across multiple pillars of Treasury and a track record of driving complex, cross-functional initiatives through to completion with limited direction and full accountability. You are proficient in using AI tools to drive automation and process optimization, and you will use Claude to build much of the tooling that makes Treasury faster and more precise.</p>
-<h2><strong>Key responsibilities</strong></h2>
-<ul>
-<li>Build, own and continuously improve a direct cash flow model and forecast by legal entity and currency, tied to bank data at the front end and to FP&A's operating plan, so the company sees liquidity needs well before decisions have to be made</li>
-<li>Establish a disciplined forecasting cadence across monthly, quarterly and annual cycles, with forecast-to-actual variance analysis built on bank transaction data </li>
-<li>Partner with FP&A and Strategic Finance to support capital allocation decisions with scenario and sensitivity analysis and clear liquidity trade-offs</li>
-<li>Monitor and manage working capital drivers, including receivables, payables and DSO/DPO, to anticipate cash flow impacts and improve liquidity</li>
-<li>Prepare cash flow analyses and executive-level materials for the Treasurer, CFO and senior leadership, highlighting key drivers, risks and opportunities</li>
-<li>Partner with FP&A, Accounting, Tax and business teams to understand forecast movements, challenge assumptions and improve accuracy, while strengthening processes, reporting and controls so the framework scales</li>
-<li>Serve as back-up for the investments desk (in-house portfolio, money market funds, deposits and separately managed account instructions) and for the FX, commodities, rates and credit desk</li>
-</ul>
-<h2><strong>Minimum qualifications</strong></h2>
-<ul>
-<li>Have built and owned a direct cash flow model and forecast across multiple legal entities and currencies</li>
-<li>Can project a balance sheet, leverage and covenant metrics as comfortably as cash, and explain the trade-offs clearly to a CFO and other non-Treasury stakeholders</li>
-<li>Understand how a forecast turns into an investment ladder, a hedge program and a compliance test, not just a report</li>
-<li>Have stood up models, reporting and controls where none existed, and are comfortable being the whole team</li>
-<li>Work directly with data, including bank feeds, ERP cash flows and portfolio reports</li>
-<li>Understand money market funds, deposits, short-duration securities and basic hedging mechanics well enough to cover a trading desk</li>
-<li>Exercise strong judgment in ambiguous situations and build effective relationships across Finance, Legal and the business</li>
-</ul>
-<h2><strong>Preferred qualifications</strong></h2>
-<ul>
-<li>10+ years of relevant experience in treasury or corporate finance</li>
-<li>Have led a cash flow forecasting or liquidity planning function inside a large corporate Treasury</li>
-<li>Have supported a revolving credit facility, debt issuance or rating agency process with forecasts and covenant models</li>
-<li>Have worked in Treasury through hypergrowth, large financings or an IPO</li>
-<li>Have used Claude or similar AI tools to automate Treasury workflows and reporting</li>
-<li>Are familiar with a treasury management system, Clearwater, planning tools or a data warehouse such as BigQuery</li>
-<li>Have executed trades under a Treasury policy, including direct securities, money market funds, deposits, and FX spot and forwards</li>
-<li>Hold a CFA, CTP or CPA</li>
-<li>Are excited by Anthropic's mission to build safe, transformative AI systems, and by Treasury work that directly supports it</li>
-</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
-<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$230,000</span><span class=""divider"">—</span><span>$300,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
-<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
-<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
-<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
-<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
-<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
-<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
-<h2><strong>How we're different</strong></h2>
-<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
-<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
-<h2><strong>Come work with us!</strong></h2>
-<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",9599,https://job-boards.greenhouse.io/anthropic/jobs/5430939008,,,,,,,not_checked,,2026-09-29,,2026-10-28,,,,true,0,,,,,,,,,,,,,,
 267712,"Digital Campaigns, Policy Advocacy",Anthropic,Anthropic,,Posted 6 Days Ago,,,"San Francisco, CA | Washington, DC",1,"San Francisco, CA | Washington, DC",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
 <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2>About the role</h2>
 <p>We're hiring a strategist to join the Policy Campaigns team within Anthropic's Public Policy team. The Policy Campaigns team turns the company's policy priorities into active campaigns: research and polling, messaging, coalitions, paid media, and external execution. We're hiring a strategist to develop and execute paid media campaign strategy, manage agencies, and measure the success of our advocacy campaigns in the US and in priority markets abroad.</p>
@@ -29765,56 +29545,6 @@ REQ-26-1185-01,"Technical Program Manager, Agent Safety & Security ",Anthropic,A
 <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
 <h2><strong>Come work with us!</strong></h2>
 <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",9884,https://job-boards.greenhouse.io/anthropic/jobs/5460216008,,https://www.linkedin.com/jobs/view/4481169950,2026-10-22,25,among first 25,,matched,titleSearchFallback,2026-10-22,2026-10-22T12:31:04,2026-10-28,,6,startDate+linkedin,true,0,,,,,,2026-10-22,,true,,,,,,
-260520,"Finance & Strategy, Datacenter Strategic Initiatives",Anthropic,Anthropic,,Posted 260 Days Ago,,,"San Francisco, CA | New York City, NY",1,"San Francisco, CA | New York City, NY",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
-<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><p><strong>About the role</strong></p>
-<p>We are seeking a Finance Lead to own and support various data center strategic initiatives.</p>
-<p>In this role, you will be a key partner to our technical teams, providing financial expertise and guidance as we build out our data center footprint. You will manage large, complex, and cross-functional transactions, working with internal stakeholders and external partners to responsibly drive data center expansion and de-risk our capacity plans. You will also work closely with our Capital Markets & Corporate Development teams on a wide range of strategic projects and financing-related initiatives.</p>
-<p> </p>
-<p><strong>Responsibilities</strong></p>
-<p><strong>Strategic Projects</strong></p>
-<ul>
-<li>Lead strategic initiatives to support datacenter expansion and identify new potential areas of focus</li>
-<li>Negotiate complex transactions with external counterparties and drive internal cross-functional alignment</li>
-<li>Manage data center pipeline, partnering closely with FP&A leads to track and benchmark economics across the portfolio</li>
-<li>Partner with Capital Markets & Corporate Development on datacenter project financing across the capital structure</li>
-</ul>
-<p><strong>Datacenter Financial Planning & Analysis</strong></p>
-<ul>
-<li>Own FP&A related to these initiatives, largely tied to tracking and forecasting capex and cash flow driven by your projects</li>
-<li>Build detailed financial models to support strategic decision-making</li>
-<li>Run budget-vs-actual on datacenter developer spend and site build budgets, tracking expected eventual spend against approved commitments</li>
-<li>Partner with Accounting on contract operationalization, lease accounting, and close</li>
-</ul>
-<p><strong>You may be a good fit if you have:</strong></p>
-<ul>
-<li>7+ years of experience in strategic finance, infrastructure investing, private equity, or investment banking, preferably with datacenter, energy, real estate, or other infrastructure experience</li>
-<li>Executed investments or M&A transactions, preferably with a focus on technology or digital infrastructure</li>
-<li>Exceptional analytical skills with an ability to synthesize data into compelling insights and develop complex financial models</li>
-<li>Comfort managing both internal and external stakeholders, including deeply technical business partners</li>
-<li>A bias towards action, strong work ethic, and experience driving operational outcomes under tight timelines</li>
-<li>Strong relationship building, business judgment, process management, and communication skills</li>
-<li>Passion for Anthropic's mission to build safe, transformative AI systems</li>
-</ul>
-<p><strong>Strong candidates may also have:</strong></p>
-<ul>
-<li>Direct experience executing large-scale data center or compute-related transactions</li>
-<li>Background in AI, ML, or high-performance, large-scale computing infrastructure</li>
-<li>Experience in both investing and operating, within digital infrastructure or technology more broadly</li>
-<li>Proficiency with financial modeling tools and languages (SQL, Python, Excel)</li>
-<li>MBA or other advanced degree in finance, economics, or business</li>
-</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
-<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$240,000</span><span class=""divider"">—</span><span>$325,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
-<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
-<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
-<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
-<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
-<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
-<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
-<h2><strong>How we're different</strong></h2>
-<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
-<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
-<h2><strong>Come work with us!</strong></h2>
-<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",8439,https://job-boards.greenhouse.io/anthropic/jobs/5107489008,,,,,,,not_checked,,2026-09-19,,2026-10-28,,,,true,0,,,,,,,,,12,152069,153000,182978,subset,Finance & Strategy
 266075,"Research Associate, Biology",Anthropic,Anthropic,,Posted 107 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
 <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2 class=""text-text-100 mt-3 -mb-1 text-[1.125rem] font-bold"">About the team</h2>
 <p class=""font-claude-response-body break-words whitespace-normal"">Anthropic's Life Sciences team is building a world-class research group focused on making fundamental biological discoveries. The team combines cutting-edge AI with hands-on biological research, positioning Anthropic at the forefront of demonstrating how AI tools can accelerate scientific workflows and enable discovery.</p>
@@ -31246,3 +30976,358 @@ PIP-267931,Security Data Engineer,Anthropic,Anthropic,,Posted 1 Days Ago,,,"Remo
 <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
 <h2><strong>Come work with us!</strong></h2>
 <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",10965,https://job-boards.greenhouse.io/anthropic/jobs/5462966008,,,,,,,not_checked,,2026-10-27,,2026-10-28,,,,true,0,,,,,,,,,,,,,,
+10123,"Director, Revenue Accounting",Anthropic,Anthropic,,Posted 282 Days Ago,,,"San Francisco, CA | Seattle, WA",1,"San Francisco, CA | Seattle, WA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2>
+<p>Anthropic is seeking a seasoned Revenue Accounting professional to join our growing Accounting Team. In this position, you will drive revenue accounting operations, accounts receivable accounting, and financial reporting processes. You will play a critical role in ensuring accurate revenue recognition, managing complex AR processes including CECL compliance, and enhancing our month-end close operations. The ideal candidate brings deep technical accounting expertise, leadership capabilities, and thrives in our fast-paced, innovative environment.</p>
+<h2><strong>Responsibilities</strong></h2>
+<ul>
+<li>Manage daily revenue accounting operations, including high-volume transaction processing, and ensure accurate revenue recognition in compliance with ASC 606</li>
+<li>Own the month-end revenue close process by reviewing and approving revenue-related account reconciliations and journal entries for revenue, deferred revenue, and unbilled receivables</li>
+<li>Manage comprehensive accounts receivable accounting functions, including AR reconciliations, aging analysis, and accurate recording of customer receivables</li>
+<li>Lead quarterly CECL aging analysis to ensure consistent application of ASC 326 and work with AR & Collections Lead to develop key AR metrics for management reporting</li>
+<li>Perform regular month-end close flux analysis, identifying and explaining significant variances in revenue and accounts receivable balances to ensure financial integrity and provide insights for management decision-making</li>
+<li>Collaborate cross-functionally with Finance Operations, Finance Strategy, Billing Support, and business partners on strategic processes and programs</li>
+<li>Support revenue accounting system initiatives, including design, implementation, testing, and optimization</li>
+<li>Serve as subject matter expert for revenue and AR accounting questions across the organization</li>
+<li>Lead audit coordination and serve as primary contact for external auditors during year-end audit</li>
+<li>Maintain comprehensive documentation for all revenue and AR processes</li>
+</ul>
+<h2><strong>You may be a good fit if you have</strong></h2>
+<ul>
+<li>Bachelor's degree in accounting or finance (or equivalent experience) </li>
+<li>10+ years of accounting experience, with at least 3 years in public accounting</li>
+<li>Strong knowledge of ASC 606 Revenue from Contracts with Customers & ASC 326 Credit Impairment</li>
+<li>Experience with accounts receivable accounting and financial reporting</li>
+<li>Experience in collaborating across departments to influence change</li>
+<li>Attention to detail, excellent communication skills, and strong sense of teamwork</li>
+<li>Ability to work independently and prioritize in a fast-paced environment</li>
+<li>Strong sense of ownership and independence, with proven ability to identify issues, propose solutions, and drive initiatives to completion with minimal supervision</li>
+<li>Proven experience in managing and mentoring accounting professionals, with the potential to lead team members (both contractors and FTEs) as our team continues to grow</li>
+</ul>
+<h2><strong>Strong candidates may also have</strong></h2>
+<ul>
+<li>Experience in a growing SaaS technology business, preferably in startup or high-growth environments</li>
+<li>Experience with third-party platform revenue models and related accounting complexities</li>
+<li>Passion for data integrity, comfort with large datasets, and enjoyment of solving complex problems</li>
+<li>Proficiency with mainstream ERP systems and revenue engines such as NetSuite ARM, Oracle, SAP, Workday Financials and comparable systems. NetSuite ARM experience strongly preferred</li>
+<li>Experience with Metronome, Stripe, Anrok, or similar software is a plus</li>
+<li>Database & SQL experience is a plus</li>
+<li>Exceptional business acumen with ability to translate complex financial concepts into actionable insights for non-finance stakeholders</li>
+</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$230,000</span><span class=""divider"">—</span><span>$300,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",9237,https://job-boards.greenhouse.io/anthropic/jobs/5076754008,,,,,,,not_checked,,2026-09-19,,2026-10-28,,,,true,0,,,,,,,,,,,,,,
+PIP-261998,"Data Science Tech Lead Manager, Model Experience ",Anthropic,Anthropic,,Posted Today,,,"New York City, NY; San Francisco, CA; Seattle, WA",1,"New York City, NY; San Francisco, CA; Seattle, WA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><p><strong>About the role</strong><strong><br></strong>As part of our growing Data Science and Analytics team, you will play an instrumental role in our company's mission of building safe and beneficial artificial intelligence by driving data-informed decision making across our organization. You bring experience from high-bar teams and are eager to help shape the norms and best practices of a growing data science team as Anthropic continues to scale. In this unique company, technology, and moment in history, your work will be critical to informing our strategy as we deploy safe, frontier AI at scale to the world.</p>
+<p>You'll be the senior data science leader for Model Experience and a strategic thought partner to product, engineering, and research leaders. Working where frontier AI research reaches the public, you'll help shape model roadmap and launch decisions, bringing a point of view on how users experience our models and what good looks like beyond benchmark scores. As a tech lead manager, you'll also hire and manage a team of data scientists, setting their agenda, personally leading the highest-stakes analyses, and raising the bar for how data shapes model and product decisions.</p>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Act as a strategic thought partner to product, engineering, and research leaders, helping shape model roadmap priorities, launch decisions, and the major bets the team makes</li>
+<li>Set the data science agenda for Model Experience, deciding where the team can have the most impact on model development and launch decisions and what it should deprioritize</li>
+<li>Hire, manage, and develop a team of data scientists, coaching them to move from answering questions to shaping decisions</li>
+<li>Frame the most important and ambiguous questions about model quality and user experience, size the opportunities, and make clear recommendations, including when they challenge the current direction</li>
+<li>Define how Model Experience measures success, establishing the core metrics and measurement frameworks across external products and internal testing that align teams and leadership on what matters</li>
+<li>Set the standard for experimentation and causal inference across Model Experience, including where launches lack a clean A/B test, and personally lead the highest-stakes analyses</li>
+</ul>
+<ul>
+<li>Turn complex analyses of model and user behavior into clear narratives and recommendations that drive decisions with senior leadership and cross-functional partners</li>
+<li>Establish foundational data practices and shape the analytics infrastructure Model Experience needs to support rapid iteration and decision-making as our models and products evolve</li>
+</ul>
+<p><strong>You may be a good fit if you:</strong></p>
+<ul>
+<li>Have extensive experience in data science, including leading analytics for a product or research area at significant scale</li>
+<li>Have 3+ years managing data science teams, including setting team direction, hiring, and developing senior data scientists</li>
+<li>Have been a trusted partner to senior product, research, and business leaders, with clear examples of changing a roadmap or high-stakes decision</li>
+<li>Bring strong product sense and business judgment, including the ability to frame the right question and take a position with incomplete information</li>
+<li>Have deep expertise in experimental design, causal inference, and statistical modeling at high scale, with enough fluency in Python and SQL to stay hands-on and guide others' technical work</li>
+<li>Communicate clearly in writing and in presentations, including to executive audiences</li>
+<li>Have a bias for action and thrive in ambiguous, fast-moving environments where you must create clarity and drive progress</li>
+<li>Care about the company's mission of building helpful, honest, and harmless AI</li>
+<li>Strong candidates may also have:</li>
+<li>Experience with AI/ML products, large language models, or developer tools in the AI/ML ecosystem</li>
+<li>Experience as a tech lead manager or player-coach, balancing hands-on technical work with people management</li>
+<li>Experience building or scaling a data science team in a fast-growing organization</li>
+<li>Experience working closely with Product or Research teams, especially on LLM or AI products</li>
+<li>Comfort working with unstructured data</li>
+</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$380,000</span><span class=""divider"">—</span><span>$460,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",9619,https://job-boards.greenhouse.io/anthropic/jobs/5197211008,,,,,,,not_checked,,2026-10-28,,2026-10-28,,,,true,0,,,,,,,,,9,163322,165000,165000,subset,Data Science
+PIP-267934,"Tech Lead Manager, Core Apps Data Scientist",Anthropic,Anthropic,,Posted 1 Days Ago,,,"New York City, NY; San Francisco, CA | New York City, NY; Seattle, WA",1,"New York City, NY; San Francisco, CA | New York City, NY; Seattle, WA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><p><strong>About the role</strong><br>As part of our growing Data Science and Analytics team, you will play an instrumental role in our company’s mission of building safe and beneficial artificial intelligence by driving data-informed decision making across our organization. You bring experience from high-bar teams and are eager to help shape the norms and best practices of a growing data science team as Anthropic continues to scale. In this unique company, technology, and moment in history, your work will be critical to informing our strategy as we deploy safe, frontier AI at scale to the world.</p>
+<p>You’ll be the senior data science leader embedded in our Core Apps product team and a strategic thought partner to its product leads. You’ll help set product direction for Claude Code and other new bets across Core Apps: bringing a point of view on where to invest, how to grow our Apps business, and how to deliver more value for our users. As a tech lead manager, you’ll also manage a small team of Product Data Scientists, setting their agenda and raising the bar for how data shapes product decisions.</p>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Act as a strategic thought partner to Core Apps product leads, helping shape product strategy, roadmap priorities, and the major bets the team makes</li>
+<li>Set the data science agenda for Core Apps, deciding where the Product Data Science team can have the most impact and what it should deprioritize</li>
+<li>Manage and develop a small team of Product Data Scientists, coaching them to move from answering questions to shaping decisions</li>
+<li>Frame the most important and ambiguous questions facing the business, size the opportunities, and make clear recommendations, including when they challenge the current direction</li>
+<li>Define how Core Apps measures success, establishing the core metrics and measurement frameworks that align teams and leadership on what matters</li>
+<li>Set the standard for experimentation and causal inference across Core Apps, and personally lead the highest-stakes analyses</li>
+<li>Turn complex analyses into clear narratives and recommendations that drive decisions with senior leadership and cross-functional partners</li>
+<li>Establish foundational data practices and shape the analytics infrastructure Core Apps needs to support rapid iteration and decision-making as our products grow</li>
+</ul>
+<p><strong>You may be a good fit if you have:</strong></p>
+<ul>
+<li>Have extensive experience in data science, including leading analytics for a product area at significant scale<br>Have 3+ years managing data science teams, including setting team direction and developing senior data scientists<br>Have been a trusted partner to senior product and business leaders, with clear examples of changing a roadmap or high-stakes decision<br>Bring strong product sense and business judgment, including the ability to frame the right question and take a position with incomplete information<br>Have deep expertise in experimental design, causal inference, and statistical modeling at high scale, with enough fluency in Python and SQL to stay hands-on and guide others’ technical work<br>Communicate clearly in writing and in presentations, including to executive audiences<br>Have a bias for action and thrive in ambiguous, fast-moving environments where you must create clarity and drive progress<br>Care about the company’s mission of building helpful, honest, and harmless AI</li>
+<li>Strong candidates may also have:<br>Experience with AI/ML products, large language models, or developer tools in the AI/ML ecosystem</li>
+</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$460,000</span><span class=""divider"">—</span><span>$460,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",8866,https://job-boards.greenhouse.io/anthropic/jobs/5464493008,,,,,,,not_checked,,2026-10-28,,2026-10-28,,,,true,0,,,,,,,,,,,,,,
+REQ-26-1012-01,"IP Counsel, Life Sciences Patents",Anthropic,Anthropic,,Posted 1 Days Ago,,,"San Francisco, CA | New York City, NY",2,"San Francisco, CA | New York City, NY; San Francisco, CA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2>About the role</h2>
+<p>AI has the power to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. Alongside the models and tools we build for scientists, Anthropic’s life science research teams now run their own wet lab experiments. We’re hiring a life sciences patent counsel to work side-by-side with our researchers as they work to advance biomedical progress.</p>
+<p>You will manage patent strategy and filings for our life sciences research, from the first conversation with a scientist through global prosecution. You will also be our in-house expert on the patent questions, many of them new, that arise when scientists use AI as a research tool. You will partner closely with our patents lead (direct manager), the Head of IP, Research Legal, our Life Sciences Counsel, and outside counsel to design and implement a patent program that supports our researchers and partners and is aligned with the company’s mission.</p>
+<h2>Responsibilities</h2>
+<ul>
+<li>Manage patent strategy and filings for Anthropic’s life sciences research in the U.S. and internationally, including invention harvesting, filing decisions, drafting oversight, prosecution, and management of outside counsel</li>
+<li>Serve as the trusted patent advisor to our life science research teams, and design and implement scalable guidance and processes to support our fast-growing life science efforts</li>
+<li>Make inventorship determinations for AI-assisted research, and advise on inventor declarations and the duty of candor</li>
+<li>Develop claim and filing strategies across biological and chemical inventions, platform technologies, and computational methods, accounting for written description, enablement, eligibility, and obviousness</li>
+<li>Partner with Research Legal and Communications on the timing of publications, preprints, presentations, and open-source releases</li>
+<li>Advise on the patent aspects of agreements with life science and biopharma counterparties, including ownership of inventions and improvements, and support patent diligence and freedom-to-operate analyses for our research</li>
+<li>Anticipate emerging legal developments affecting AI technologies in the life science and biopharma space and provide strategic guidance to leadership</li>
+</ul>
+<h2>Minimum qualifications</h2>
+<ul>
+<li>Hold a law degree (JD, LLB, or equivalent) and meet the local licensing requirements to work as in-house counsel where you'll be based</li>
+<li>A degree or equivalent training in a life sciences or chemistry field (for example, molecular biology, biochemistry, genetics, bioengineering, or organic chemistry)</li>
+<li>Substantial hands-on experience drafting and prosecuting U.S. life sciences patent applications, and directing foreign prosecution through local counsel</li>
+<li>Lead responsibility for a patent portfolio, including managing budget and outside or foreign counsel</li>
+<li>Experience making inventorship determinations and resolving ownership questions in multi-party research arrangements (for example, with universities and other partners)</li>
+<li>Excellent communication skills, with the ability to translate legal risk into practical guidance for scientists, researchers, and business partners</li>
+<li>A low-ego, high-empathy orientation and a “doer” attitude: willing to roll up your sleeves and pitch in where needed</li>
+<li>Intense curiosity about AI and science, and a commitment to responsible AI development</li>
+</ul>
+<h2>Preferred qualifications</h2>
+<ul>
+<li>10+ years of patent experience (including time as a patent agent, technical specialist, or examiner) at a law firm, a biotech or pharmaceutical company, or both, with the ability to operate independently and hit the ground running</li>
+<li>Advanced degree in a life sciences or chemistry field</li>
+<li>Experience with AI/ML companies, or with inventions at the boundary of biology and machine learning</li>
+<li>Working knowledge of how patents interact with regulatory exclusivity, trade secrets, and open science</li>
+<li>Familiarity with biosecurity, dual-use research, or export control considerations in the life sciences</li>
+<li>Experience leveraging AI to optimize their work, with a desire to work in a fast-paced, innovative environment</li>
+</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$335,000</span><span class=""divider"">—</span><span>$385,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",9529,https://job-boards.greenhouse.io/anthropic/jobs/5453569008,,https://www.linkedin.com/jobs/view/4483692709,2026-10-27,25,among first 25,,matched,titleSearchFallback,2026-10-28,2026-10-28T13:35:16,2026-10-28,,1,startDate+linkedin,true,0,,,,,,2026-10-27,,true,,,,,,
+REQ-26-1188-01,"Solutions Marketing Manager, Emerging Industries",Anthropic,Anthropic,,Posted 1 Days Ago,,,"San Francisco, CA | New York City, NY",1,"San Francisco, CA | New York City, NY",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2>
+<p>We’re looking for a Solutions Marketing Manager to bring Claude to market across emerging industries and newer customer segments and personas, where enterprise AI demand is moving fastest. You’ll drive the strategic positioning and go-to-market approach for Claude for organizations ranging from small businesses to ecommerce to retailers, manufacturers, and energy companies, and more. You’ll develop messaging and positioning for nuanced sub-sectors that we have yet to build for and that need their own story, and also develop narratives for the professionals who do the work inside them. </p>
+<p>Working at the intersection of sales, product, and marketing, you'll develop segment-specific solutions that showcase Claude's transformative potential for industry-specific applications across our product portfolio. You bring deep customer empathy, technical acumen, and the ability to translate complex AI capabilities into clear, value-driven solutions that resonate with decision-makers across organizations. </p>
+<p>This role is built for a versatile product marketer who can go deep and pivot quickly from one industry to the next for a major launch, program, or industry moment. If you’re energized by range, learn new markets fast, and want to shape how entire industries adopt AI, this role is for you.</p>
+<h2><strong>Key responsibilities</strong></h2>
+<ul>
+<li>
+<p>Develop and execute solutions marketing strategy across a number of different priority industries and customer segments</p>
+</li>
+<li>
+<p>Craft differentiated positioning and messaging for industries and their sub-sectors across solutions pages, campaign materials, and content</p>
+</li>
+<li>
+<p>Lead go-to-market for industry product and solution launches, including sector-specific product offerings and relevant MCP integrations and skills</p>
+</li>
+<li>
+<p>Partner with field marketing and sales leaders to build industry points of view, use cases, and programs around major launches and flagship industry events</p>
+</li>
+<li>
+<p>Build persona-based solutions that speak to specific types of users across industries, such as finance, legal, customer support, and operations teams</p>
+</li>
+<li>
+<p>Adapt industry and persona narratives for different customer segments, including Enterprise, Commercial, SMB, and Startups</p>
+</li>
+<li>
+<p>Partner with the alliances team on joint go-to-market with industry partners, including shared positioning, launch coordination, and integrated campaign moments</p>
+</li>
+<li>
+<p>Work with communications, social, and content teams on executive thought leadership, customer stories, and speaking opportunities relevant to each industry</p>
+</li>
+<li>
+<p>Enable sales teams with compelling materials, outbound campaigns, and pipeline-driving initiatives for priority industry accounts</p>
+</li>
+<li>
+<p>Report on which channels and campaigns are driving results and identify opportunities for iteration</p>
+</li>
+</ul>
+<h2><strong>Minimum qualifications</strong></h2>
+<ul>
+<li>
+<p>Direct experience marketing software products across multiple industries or customer segments in tandem, and know how to find what’s distinct in each and what can scale across them</p>
+</li>
+<li>
+<p>Familiar with developing solutions that span both technical and business buyers, working closely with enterprise architecture teams or transformation offices</p>
+</li>
+<li>
+<p>Track record of building solutions that significantly expand deal sizes and accelerate sales cycles</p>
+</li>
+<li>
+<p>Quick learner who can absorb context on new industries, buyer dynamics, and regulatory considerations rapidly, and speak credibly with the customers and partners in them</p>
+</li>
+<li>
+<p>Strategic and tactical operator, comfortable setting an industry strategy with senior leaders and rolling up your sleeves to ship</p>
+</li>
+<li>
+<p>Strong written and verbal communication skills, with an ability to translate complex AI capabilities into clear, compelling narratives for technical and business audiences</p>
+</li>
+<li>
+<p>Thrive in a 0-to-1 environment, can shift priorities quickly, and can build processes where none exist</p>
+</li>
+<li>
+<p>Excel at cross-functional collaboration and are comfortable being the connective tissue between product, sales, partnerships, communications, and marketing teams</p>
+</li>
+<li>
+<p>Passionate about AI’s potential to transform how industries work while maintaining focus on responsible, safe deployment</p>
+</li>
+</ul>
+<h2><strong>Preferred qualifications</strong></h2>
+<ul>
+<li>
+<p>8+ years of B2B product marketing or solutions marketing experience working inside of software companies</p>
+</li>
+<li>
+<p>Demonstrated success in creating vertical-specific solutions for operationally intensive or regulated industries</p>
+</li>
+<li>
+<p>Possess certifications or deep knowledge in cloud platforms, enterprise architecture - experience with usage-based or consumption pricing models strongly preferred</p>
+</li>
+<li>
+<p>Experience marketing AI/ML products or emerging technology to enterprise buyers</p>
+</li>
+<li>
+<p>Track record of building marketing programs from scratch at a growth-stage company</p>
+</li>
+</ul>
+<p><strong>Role-specific policy:</strong> For this role, we expect all staff to be able to work from our San Francisco or New York office at least 2 days a week, though we encourage you to apply even if you might need some flexibility for an interim period of time for relocation. </p>
+<p><strong>Deadline to apply:</strong> None. Applications will be reviewed on a rolling basis.</p><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$320,000</span><span class=""divider"">—</span><span>$320,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",10810,https://job-boards.greenhouse.io/anthropic/jobs/5463888008,,,,,,,not_checked,,2026-10-28,,2026-10-28,,,,true,0,,,,,,,,,,,,,,
+REQ-26-1276-01,Autonomous Systems Security Engineer,Anthropic,Anthropic,,Posted 1 Days Ago,,,"Remote-Friendly (Travel Required) | San Francisco, CA",1,"Remote-Friendly (Travel Required) | San Francisco, CA",true,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2><strong>About the role</strong></h2>
+<p>Claude is trained and served on hardware in data centers Anthropic operates and in sites partners build and run for us. DCSE secures that footprint: the sites, the hardware moving through them, and the people and vendors who touch it. You'll be the engineer who owns autonomous systems across that footprint as one security domain, from both sides: drones, ground robots and automated vehicles for patrol, inspection and moving hardware, including the security of that automation inside secure areas, and the detection systems that tell us what is flying over or operating near a site uninvited.</p>
+<p>You set the approach, select and integrate the platforms and sensors, write the requirements vendors build to, and run what you ship, from the operating model where operators assign missions and machines carry them out to the playbook that turns a detection into an identified track and a well-evidenced handoff to whoever holds authority over the airspace. Interdiction is not part of this role. The goal is security that runs itself: coverage, fleet health and evidence verified continuously, with tools and AI agents doing the routine triage. We favor simple, standard controls and tools that can be verified over elaborate ones. We use Claude throughout our engineering workflow and expect you to as well.</p>
+<p>You'll work with the rest of DCSE, including its physical security systems engineers and the engineers on its security monitoring platform, with Anthropic's data center operations and legal teams, and directly with site operators, equipment vendors and aviation and public safety authorities. The role is based in San Francisco, with remote applicants in the US considered, and involves regular travel to data center sites, which are critical infrastructure.</p>
+<h2><strong>Key responsibilities</strong></h2>
+<ul>
+<li>
+<p><strong>Autonomous security and inspection systems:</strong> own the drones, ground robots and other autonomous platforms for perimeter patrol, incident response and infrastructure inspection: platform selection, operating model, operator qualification, maintenance, and the data path from machine to analyst</p>
+</li>
+<li>
+<p><strong>Tools, automation and AI agents:</strong> build the integrations that carry detections, tracks, telemetry and fleet health into the team's security monitoring platform, and the tools and agents that triage detections, check fleet health and assemble evidence. When a review keeps costing people time, you build the tool or agent that retires it</p>
+</li>
+<li>
+<p><strong>Detection of uncrewed systems:</strong> engineer the sensing that tells us what is flying over or operating near a site, what it is and who needs to know: sensor selection and evaluation against live targets, per-site coverage, classification and false-alarm handling, and the playbook from first detection to handoff, with evidence retained</p>
+</li>
+<li>
+<p><strong>Security of site automation:</strong> engineer the controls on automated vehicles, robots and similar machines that move hardware or work inside secure areas: identity and access, network isolation, what they may record and where it goes, fail-secure behavior, their place in chain of custody, and acceptance before they enter a site</p>
+</li>
+<li>
+<p><strong>Regulatory and site constraints:</strong> establish what we may sense, fly, drive, record and retain at each site, partner-operated sites included, under the aviation, spectrum, privacy and safety rules that apply there, with the waivers and approvals that extend it and coordination with local authorities set up before it is needed</p>
+</li>
+<li>
+<p><strong>Health monitoring:</strong> define and test heartbeats, loss-of-coverage and lost-link alarms and fail-secure behavior, so a silent sensor or machine shows as a fault, not a quiet day</p>
+</li>
+<li>
+<p><strong>Vendor requirements and acceptance:</strong> write the requirements, evaluate against live flights and runs, and hold vendors to what they ship</p>
+</li>
+</ul>
+<h2><strong>Minimum qualifications</strong></h2>
+<ul>
+<li>
+<p>Have engineered autonomous or sensing systems in the field (drones, ground robots, automated vehicles, or RF, radar or optical detection sensors): selected, integrated or secured them for an operation other people relied on, and verified what they actually do against real targets or runs rather than a datasheet</p>
+</li>
+<li>
+<p>Have integrated systems you did not build (vendor APIs, SDKs, appliances, machine and sensor telemetry) into a platform that outlives any one of them</p>
+</li>
+<li>
+<p>Read and review code, design the data systems behind security tooling, and build automation (often with AI coding agents) using Git and code review</p>
+</li>
+<li>
+<p>Have done this work hands-on for data centers, critical infrastructure or a large hardware fleet</p>
+</li>
+<li>
+<p>Have designed inside a regulatory or safety constraint (aviation, spectrum, privacy, machine safety or similar) and can show the decision it drove</p>
+</li>
+<li>
+<p>Own a domain end to end: set the approach, carry it through with vendors, site operators, partners and authorities, and run it as something people depend on every day</p>
+</li>
+</ul>
+<h2><strong>Preferred qualifications</strong></h2>
+<ul>
+<li>
+<p>Remote pilot certification (for example FAA Part 107) and experience flying beyond visual line of sight under a waiver or exemption</p>
+</li>
+<li>
+<p>Experience with counter-drone (counter-UAS) detection, airspace surveillance or air traffic data systems</p>
+</li>
+<li>
+<p>Experience running a robot, drone or automated-vehicle fleet in an industrial, logistics or data center setting: fleet management, mission planning, safety cases</p>
+</li>
+<li>
+<p>Experience securing embedded, operational technology or robotic systems: device identity, network segmentation, update control, logging</p>
+</li>
+<li>
+<p>Experience with physical security operations at large sites, with law enforcement or aviation authorities, or at sites you did not fully control: cloud, colocation or GPU cloud operators</p>
+</li>
+<li>
+<p>Have built AI agents or automation that replaced recurring manual work</p>
+</li>
+</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$320,000</span><span class=""divider"">—</span><span>$405,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",11432,https://job-boards.greenhouse.io/anthropic/jobs/5462972008,,https://www.linkedin.com/jobs/view/4483695562,2026-10-27,25,among first 25,,matched,titleSearchFallback,2026-10-28,2026-10-28T13:35:07,2026-10-28,,1,startDate+linkedin,true,0,,,,,,2026-10-27,,true,,,,,,

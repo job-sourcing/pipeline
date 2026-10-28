@@ -1,9 +1,9 @@
 {
  "label": "otterai_us_fulltime",
  "rows": 19,
- "kept": 18,
- "new": 1,
- "ghosts_dropped": 2,
+ "kept": 19,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,

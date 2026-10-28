@@ -1,9 +1,9 @@
 {
  "label": "bytedance_us_fulltime",
  "rows": 459,
- "kept": 459,
- "new": 0,
- "ghosts_dropped": 0,
+ "kept": 457,
+ "new": 2,
+ "ghosts_dropped": 2,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -12,7 +12,7 @@
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
  "state_rows": 459,
- "banded": 321,
+ "banded": 322,
  "lca_pools": 1493,
  "snapshot": "2026-10-28"
 }

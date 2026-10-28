@@ -3504,48 +3504,6 @@ Preferred Qualifications
 - Familiarity with core security concepts such as authentication, authorization, threat detection, vulnerability mitigation, and secure system design.
 - Research experience, or strong technical understanding, in the security of LLM-based systems and AI agent architectures, including areas such as prompt injection, tool misuse, model abuse, and agent workflow security.
 - Demonstrated interest in security and emerging technologies through coursework, competitions, open-source contributions, personal projects, or publications.",3730,https://joinbytedance.com/search/7668614787018393909,,https://www.linkedin.com/jobs/view/4448126998,2026-09-08,153,153 applicants,,matched,title,2026-09-19,2026-09-19T07:03:49,2026-10-28,,50,startDate+linkedin,true,0,,,,,R&D,2026-09-08,,false,4,249300,252144,274741,subset,Security Software Engineer
-A154128,Data Center Facilities Manager,bytedance,ByteDance,Full time,,,,Ashburn,1,Ashburn,false,,United States,,0,"The Datacenter Facility Operation team supports the company's hyper-scale growth by operating, maintaining, and optimizing our critical infrastructure. We ensure 100% uptime, maximum energy efficiency, and operational excellence across our global data center footprint. The team focuses on scaling critical infrastructure (Power and Cooling) through rigorous standard operational procedures, innovation, and culture of safety.
-
-As a Data Center Facility Manager, you will be responsible for the overall operational excellence, reliability, and financial management of critical infrastructure within your assigned data center site(s). You will transition from tactical hands-on troubleshooting to strategic leadership—working with cross-functional teams, driving colocation partner governance, and maintaining ultimate accountability for site uptime, safety, and efficiency. You will bridge the gap between high-level business strategy and ground-level execution, ensuring that our infrastructure scales seamlessly to meet the demands of our server fleet.
-
-Responsibilities
-People Leadership & Talent Development:
-- Lead, mentor, and develop a high-performing team of data center facility operation engineers and technicians; build a culture of accountability, safety, and continuous improvement.
-- Manage shift planning, resource allocation, and succession planning to ensure 24/7 technical coverage.
-
-Operational Excellence & SLA Governance:
-- Accountable for site uptime and strict adherence to strict Service Level Agreements (SLAs). Serve as the escalation point for major site incidents.
-- Establish, audit, and govern the maintenance programs of colocation partners to ensure high-quality execution of preventative and corrective maintenance.
-- Oversee Root Cause Analysis (RCA) and Corrective Actions/Preventive Actions (CAPA) for critical infrastructure failures, ensuring lessons learned are institutionalized globally.
-
-Vendor Strategy & Contract Management:
-- Manage critical colocation and vendor partnership, driving Key Performance Indicators (KPIs) and operational governance.
-- Lead regular Quarterly Business Reviews (QBRs) and operational audits with partners and critical equipment vendors (Generators, UPS, Chillers).
-
-Financial & Asset Management (CapEx/OpEx):
-- Own the site operational budget (OpEx) and forecast lifecycle capital improvement projects (CapEx).
-- Identify opportunities for infrastructure optimization, energy efficiency (PUE reduction), and cost-saving initiatives without compromising reliability.
-
-Risk & Change Management:
-- Serve as the assigned site authority for Critical Environment Work Authorizations (CEWA) and high-risk Method of Procedures (MOPs).
-- Enforce a zero-injury safety culture, ensuring compliance with global and local environmental, health, and safety (EHS) regulations.
-
-Deployment, Commissioning & Lifecycle Support:
-- Partner with Design, Construction, and Global Commissioning teams to oversee data hall fit-outs, capacity expansion, commissioning tests and facility audits.
-- Ensure seamless handovers from construction to operations (Operational Readiness), including updated single-line diagrams, SOPs, and EOPs.
-
-Minimum Qualifications
-- Education: Bachelor’s Degree in Electrical Engineering, Mechanical Engineering, or a related technical discipline.
-- Experience: 5+ years of experience in critical infrastructure operations (Data Centers, Semiconductor Fabs, or Power Plants).
-- Technical Acumen: Deep understanding of data center tiering standards (TIA-942 Rated 3/4, Uptime Tier III/IV), Power Redundancy (2N, N+1 distributed), and Cooling Redundancy (Concurrent Maintainability).
-- Operations Knowledge: Proven track record of managing high-risk change management (MOPs/SOPs/EOPs) and conducting Root Cause Analysis (RCA) for complex electrical/mechanical failures.
-- Systems Familiarity: Strong practical knowledge of Megawatt-class Diesel Generators, Static/Rotary UPS, Medium/Low Voltage Switchgears, Chillers, Cooling Towers, CRAH/AHU units, and BMS/EPMS systems.
-
-Preferred Qualifications
-- Certifications: CDCP (Certified Data Center Professional), CDFM (Certified Data Center Facilities Manager), PMP, or equivalent professional engineering licenses.
-- Vendor & Financial Management: Demonstrated experience managing large-scale vendors/colocation providers and controlling OpEx/CapEx budgets.
-- Soft Skills: Outstanding communication, cross-functional collaboration, and conflict-resolution skills. Ability to communicate complex technical incidents clearly to executive leadership. At least 2+myears experience in a people management, supervisory, or site-lead role within a hyperscale or large-scale colocation environment.
-- Agility: Ability to thrive in a fast-paced, ambiguous environment and participate in an on-call rotation for emergency escalation.",4845,https://joinbytedance.com/search/7652397260552276229,,https://www.linkedin.com/jobs/view/4467643074,2026-09-21,25,among first 25,,matched,title,2026-09-19,2026-09-26T04:40:31,2026-10-28,,37,startDate+linkedin,true,0,,,,,R&D,2026-09-21,,true,,,,,,
 A22843,Data Center Mechanical Engineer,bytedance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"The Global Data Center Engineering team serves the company global regions with focus on enabling business growth with new data center capacities, doing so with assurance of the data center engineering systems operating continuous stability. Our team is geographically based, with the focus of having local staff to service the local regions. We collaborate with other project teams to select sites, contract sites, designs and build out the new sites.
 
 We are looking for a self-motivated data center mechanical engineering expert to serve our Americas regional projects. As a data center mechanical engineer, your responsibilities will include the following:
@@ -9928,47 +9886,6 @@ Preferred Qualifications
 - Experience with data analysis, metrics systems, monitoring platforms, optimization projects, or automation tools is a plus.
 - Familiarity with SQL, Python-based analysis, visualization tools, or time-series metrics is a plus.
 - Good communication skills, ownership, and collaborative mindset.",3437,https://joinbytedance.com/search/7673626147481291061,,https://www.linkedin.com/jobs/view/4454524289,2026-09-09,25,among first 25,,matched,title,2026-09-19,2026-09-26T04:41:12,2026-10-28,,49,startDate+linkedin,true,0,,,,,R&D,2026-09-09,,true,,,,,,
-A22474A,"Machine Learning Engineer, AML - Engine (Multiple Positions)",bytedance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"About ByteDance
-Founded in 2012, ByteDance's mission is to inspire creativity and enrich life. With a suite of more than a dozen products, including TikTok, Lemon8, CapCut and Pico as well as platforms specific to the China market, including Toutiao, Douyin, and Xigua, ByteDance has made it easier and more fun for people to connect with, consume, and create content.
-
-Why Join Us
-Inspiring creativity is at the core of ByteDance's mission. Our innovative products are built to help people authentically express themselves, discover and connect – and our global, diverse teams make that possible. Together, we create value for our communities, inspire creativity and enrich life - a mission we work towards every day.
-As ByteDancers, we strive to do great things with great people. We lead with curiosity, humility, and a desire to make impact in a rapidly growing tech company. By constantly iterating and fostering an ""Always Day 1"" mindset, we achieve meaningful breakthroughs for ourselves, our Company, and our users. When we create and grow together, the possibilities are limitless.
-Join us.
-
-About the Team
-Our team plays a crucial role in ensuring the company’s success. We seek people who are willing to learn and put in the effort to solve problems. Our challenges are not your regular day-to-day problems - you’ll be part of a team that’s developing new solutions to new challenges. It’s working fast, at scale, and we’re making a difference. We are looking for talents to join us on this exciting journey!
-
-Responsibilities
-Apply machine learning and robotics research knowledge including LLM and reinforcement learning to analyze and optimize deep learning model architectures.
-Design and implement high-performance CUDA kernels to accelerate model inference and computation-heavy operators.
-Analyze computation graphs to identify optimization opportunities across different model structures.
-Leverage parallel computing techniques such as CUDA and OpenMP to improve throughput, latency, and resource utilization in ML workloads.
-Migrate between TensorFlow and PyTorch model serving frameworks, ensuring correctness and performance consistency.
-Develop algorithm-level optimizations for both in-graph and out-of-graph computations, balancing AUC and execution efficiency.
-
-Qualifications
-Must have a Master's degree or foreign equivalent degree in Computer Science, Engineering (any), Information Technology, Data Science, Robotics, Mathematics, or a related quantitative field, and 1 year of related work experience; OR a Bachelor's degree or foreign equivalent degree in Computer Science, Engineering (any), Information Technology, Data Science, Robotics, Mathematics, or a related quantitative field, and 3 years of related work experience.
-
-Of the required experience, must have 1 year of experience in each of the following:
-Coding using Python or C++;
-Optimize deep learning training and inference pipelines on GPU and CPU architectures;
-Implement CUDA-based performance optimizations for machine learning workloads;
-Improve systems-level performance across machine learning frameworks;
-Developing and deploying large-scale machine learning systems; and
-Utilizing Big data framework using MySQL, Spark, Hadoop, or Flink.
-
-Type: Full time, 40 hours/week
-Location: San Jose, CA
-Salary Range: $187741 - $316800 per year
-
-To Apply, click the apply button below. Contact lpresumes@bytedance.com if you have difficulty submitting resume through the website.
-
-ByteDance is committed to creating an inclusive space where employees are valued for their skills, experiences, and unique perspectives. Our platform connects people from across the globe and so does our workplace. At ByteDance, our mission is to inspire creativity and enrich life. To achieve that goal, we are committed to celebrating our diverse voices and to creating an environment that reflects the many communities we reach. We are passionate about this and hope you are too.
-
-ByteDance is committed to providing reasonable accommodations in our recruitment processes for candidates with disabilities, pregnancy, sincerely held religious beliefs or other reasons protected by applicable laws. If you need assistance or a reasonable accommodation, please reach out to us at https://tinyurl.com/RA-request
-
-#IND-DNI",4294,https://joinbytedance.com/search/7673188136345356549,,,,,,,not_checked,,2026-09-19,,2026-10-28,,,,true,0,,,,,R&D,,,,237,150000,213000,277556,subset,Machine Learning Engineer
 A195063A,"Research Engineer, Data Lake Infrastructure & Data Analytics Graduate (AML-Ark-US) - 2027 Start (PhD)",bytedance,ByteDance,Full time,,,,Seattle,1,Seattle,false,,United States,,0,"The Applied Machine Learning Ark team combines system engineering and machine learning to develop and operate Large Language Model (LLM) service platforms that offer businesses Model-as-a-Service (MaaS) solutions, serving both large model providers and downstream users. The US team drives the design, development, and operation of MaaS solutions across the US and international markets outside mainland China. We are building full-stack, end-to-end solutions spanning text and multimodal LLM algorithms, LLM training/fine-tuning/inference frameworks, prompt engineering, model alignment, and intelligent agent systems. Beyond model serving, we operate large-scale log analytics pipelines that process massive volumes of invocation logs from text models, multimodal models, and agent systems — extracting usage patterns, quality signals, and actionable insights to inform model improvement, system optimization, and product decisions through continuous, data-driven feedback loops. We are actively seeking talented engineers and researchers specializing in Large Language Models and AI Agent systems to join our dynamic team.
 
 We are looking for talented individuals to join our team. As a graduate, you will get opportunities to pursue bold ideas, tackle complex challenges, and unlock limitless growth.
@@ -12135,3 +12052,54 @@ Preferred Qualifications:
 - Familiar with mainstream commercial switch/router chipsets, such as Broadcom, Barefoot, etc.
 - Good understanding of IPv6 and IPv4-IPv6 co-existence technologies.
 - Programming/scripting in Python or other languages.",2328,https://joinbytedance.com/search/7699283214945175813,,https://www.linkedin.com/jobs/view/4483237139,2026-10-26,25,among first 25,,matched,,2026-10-27,2026-10-27T12:42:41,2026-10-28,,2,startDate+linkedin,true,0,,,,,,2026-10-26,,true,10,211250,266000,322429,subset,Technical Program Manager
+A229949,"Software Engineer, Payment Risk - Global Payment - Global Payment",ByteDance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"The Global Payment Tech team is the core engine powering ByteDance's global payment and financial services, spanning payment acquiring, wallets, financial products, insurance, and foreign exchange for users and merchants worldwide.
+
+We span engineering, data, and AI, building high-concurrency, highly available systems across multi-currency, multi-market complexity, and embedding AI into risk control, credit decisioning, and operations automation.
+
+You will grow cross-disciplinary expertise at the intersection of payments, finance, and AI.
+
+The Global Payment team builds platforms and solutions that support payments across ByteDance's products and services, helping businesses deliver secure and reliable payment experiences globally.
+
+The Payment Risk Team provides end-to-end payment risk control solutions, focusing on identifying, assessing, and mitigating risks in global payment transactions. We build capabilities, tools, and platforms for risk analysis, proactive risk detection, and risk intelligence, helping teams discover emerging threats, investigate suspicious activity, and turn insights into risk management decisions.
+We are looking for an experienced software engineer to build and evolve tools, LLM-powered applications, and platforms for risk analysis, proactive risk detection, and risk intelligence. You will own projects from problem definition and technical design through production delivery and ongoing improvement, working closely with risk analysts, risk strategy teams, product managers, and fellow engineers.
+
+- Design and build tools for risk signal monitoring, anomaly discovery, transaction and account investigation, and entity relationship analysis; integrate internal risk signals and external intelligence to identify suspicious behavior, uncover emerging patterns, and support timely investigation.
+- Develop and productionize LLM-powered applications and AI agents for risk analysis and intelligence, including intelligence collection and extraction, information retrieval, tool-assisted investigation, evidence synthesis, and report generation; establish evaluation and feedback mechanisms to improve output quality, traceability, and usefulness.
+- Build and evolve end-to-end platforms and workflows connecting risk signal collection, proactive detection, intelligence enrichment, investigation, and feedback to risk strategies; make risk insights reusable and workflows repeatable, measurable, and easier to scale.
+- Own the technical design and delivery of services, data pipelines, and APIs supporting risk analysis, monitoring, and intelligence; improve reliability, performance, observability, and data access controls as usage and business needs grow.
+- Work across engineering, product, data, and risk teams to define priorities and deliver solutions; contribute to design and code reviews, share technical knowledge, and drive improvements based on user feedback and production results.
+
+Minimum Qualifications
+- Bachelor's degree in Computer Science, Software Engineering, or a related technical field, or equivalent practical experience.
+- Around 5 years of professional software engineering experience, with a track record of independently designing, delivering, and operating production systems or substantial components.
+- Strong proficiency in at least one programming language such as Python, Go, or Java, with solid fundamentals in data structures, algorithms, software design, testing, and debugging.
+- Experience building backend services, data-intensive applications, or analytical platforms; proficiency in SQL and the ability to work with complex datasets to investigate problems and validate findings.
+- Ability to turn ambiguous business requirements into clear technical designs, make sound engineering trade-offs, and own delivery through deployment, monitoring, and iteration.
+- Strong analytical and problem-solving skills, with an interest in applying LLMs and AI agents to practical risk analysis, detection, and intelligence problems and evaluating their effectiveness.
+- Clear communication, a strong sense of ownership, and experience collaborating across functions in a globally distributed team.
+
+Preferred Qualifications
+- Experience in payments, fraud detection, risk management, trust and safety, or related domains, with an understanding of risk monitoring, intelligence analysis, investigation, or strategy workflows.
+- Hands-on experience delivering LLM applications or AI agents, including retrieval-augmented generation, tool calling, workflow orchestration, and evaluation of model outputs.
+- Experience building risk monitoring systems, intelligence platforms, investigation tools, analytical workbenches, knowledge retrieval systems, or entity and graph analysis capabilities.
+- Experience with large-scale data processing, batch or streaming pipelines, and distributed systems supporting analytical workloads.
+- Demonstrated impact in improving risk discovery, analyst productivity, intelligence quality, or the adoption of internal tools; experience supporting other engineers through technical reviews and knowledge sharing.",5120,https://joinbytedance.com/search/7694175737054923061,,https://www.linkedin.com/jobs/view/4483847820,2026-10-28,25,among first 25,,matched,titleSearchFallback,2026-10-28,2026-10-28T13:34:53,2026-10-28,,0,startDate+linkedin,true,0,,,,,,2026-10-28,,true,10,189500,207500,221250,subset,"Software Engineer, Global Payment"
+A85821,Research Engineer - (Seed Model - Infra - Pretraining Infrastructure),ByteDance,ByteDance,Full time,,,,San Jose,1,San Jose,false,,United States,,0,"About the Team
+The Seed Infrastructures team oversees the distributed training, reinforcement learning framework, high-performance inference, and heterogeneous hardware compilation technologies for AI foundation models.
+
+Responsibilities
+- Conduct research and engineering development on large-scale infrastructure to enable efficient pretraining of foundation models, multimodal LLMs, and video generation models
+- Design and optimize distributed training strategies for model training, including parallelism schemes, computation and communication optimization, and throughput scaling on large GPU clusters
+- Analyze performance bottlenecks in exascale training systems and propose principled, data-driven optimization methods
+- Bridge cutting-edge research and large-scale production deployment by translating research ideas into scalable, real-world infrastructure solutions
+
+Minimum Qualifications
+- Bachelor's degree or above in Computer Science, Software Engineering or a related field, with 2+ years of experience in large-scale model training, distributed training systems, or GPU kernel optimization
+- Solid understanding of large-scale training of LLMs and multimodal models
+- Proven experience with parallelism strategies (e.g., data, pipeline, expert parallelism) on large GPU clusters, or GPU kernel performance optimization
+- Strong grasp of algorithm–system co-design and cross-layer optimization for training efficiency, scalability, and reliability
+- Strong programming skills and hands-on experience implementing production-grade ML systems or infrastructure
+
+Preferred Qualifications
+- Hands-on experience pretraining LLMs, multimodal, or video generation models at scale, or with mainstream distributed training frameworks (e.g., Megatron-LM, DeepSpeed, PyTorch FSDP, NCCL), or with custom kernel development using CUDA or Triton
+- Publications at top-tier machine learning or systems conferences (e.g., NeurIPS, ICML, MLSys, OSDI, SOSP), or notable open-source contributions to widely used training frameworks",2030,https://joinbytedance.com/search/7699908150601992453,,,,,,,not_checked,,2026-10-28,,2026-10-28,,,,true,0,,,,,,,,,7,236000,272000,346000,subset,Research Engineer

@@ -1,9 +1,9 @@
 {
  "label": "minisous_us_fulltime",
- "rows": 833,
- "kept": 833,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 866,
+ "kept": 822,
+ "new": 44,
+ "ghosts_dropped": 11,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,7 +11,7 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 833,
+ "state_rows": 866,
  "banded": 0,
  "lca_pools": 0,
  "snapshot": "2026-10-28"
