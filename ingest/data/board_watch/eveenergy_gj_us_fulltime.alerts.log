@@ -15,3 +15,9 @@ board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: g
 board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
 (2026-10-21T15:28:52)
 
+board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-28T16:44:30)
+
+board-watch eveenergy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:eveenergy: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-28T16:46:31)
+

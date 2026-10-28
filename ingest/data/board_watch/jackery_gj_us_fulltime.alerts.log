@@ -13,3 +13,9 @@ board-watch jackery_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjo
 board-watch jackery_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jackery: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
 (2026-10-21T15:28:52)
 
+board-watch jackery_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jackery: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-28T16:44:30)
+
+board-watch jackery_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jackery: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
+(2026-10-28T16:46:31)
+
