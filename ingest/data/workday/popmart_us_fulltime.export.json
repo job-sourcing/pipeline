@@ -1,9 +1,9 @@
 {
  "label": "popmart_us_fulltime",
  "rows": 76,
- "kept": 75,
- "new": 1,
- "ghosts_dropped": 1,
+ "kept": 76,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -14,5 +14,5 @@
  "state_rows": 184,
  "banded": 0,
  "lca_pools": 6,
- "snapshot": "2026-10-27"
+ "snapshot": "2026-10-28"
 }
