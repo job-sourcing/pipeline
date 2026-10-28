@@ -1,2 +1,3 @@
 {"ts": "2026-10-21T13:20:10Z", "family": "dmm", "verdict": "complete", "rows": 4222, "sources_dead": ["careerjet", "usajobs", "builtin", "gj_role"]}
 {"ts": "2026-10-21T17:54:58Z", "family": "dmm", "verdict": "complete", "rows": 3823, "sources_dead": ["careerjet", "usajobs", "builtin", "gj_role"]}
+{"ts": "2026-10-28T18:40:19Z", "family": "dmm", "verdict": "complete", "rows": 7898, "sources_dead": ["builtin"]}
