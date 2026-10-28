@@ -74,9 +74,13 @@ def _write_report(d: dict) -> None:
              "| city | queries | rows | verdict |",
              "|---|---|---|---|"]
     for city, info in sorted(d.get("cities_run", {}).items()):
+        # [W2b-7] no truncation: the old [:80] cut lost the tail of the
+        # per-query verdict ledger — always the moving/office-manager/
+        # dispatcher counts (the three biggest queries). Markdown has no
+        # column-width limit; honesty beats a tidy table.
         lines.append(f"| {city} | {info.get('queries', 0)} "
                      f"| {info.get('rows', 0)} "
-                     f"| {(info.get('verdict') or '')[:80]} |")
+                     f"| {(info.get('verdict') or '')} |")
     lines += ["", "## per-query totals", "",
              "| query | rows |", "|---|---|"]
     q_totals: dict[str, int] = {}

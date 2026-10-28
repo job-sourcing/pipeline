@@ -239,9 +239,14 @@ for k, d in arch.items():
     if not prev or d.get("fetched_at","") >= prev.get("fetched_at",""):
         merged[k] = d
         added += 1
-with open(src, "w") as f:
+# [W2c-9/A3-F9] atomic rewrite: a concurrently-consulting sweep must
+# never read a torn cache — write the merged superset to a temp file
+# in the same dir, then os.replace (the lanes' own tmp+replace doctrine).
+_tmp = src + ".tmp"
+with open(_tmp, "w") as f:
     for d in sorted(merged.values(), key=lambda x: (x.get("source",""), x.get("url",""))):
         f.write(json.dumps(d, ensure_ascii=False) + "\n")
+os.replace(_tmp, src)
 print(f"[jd-cache-sync] union-merge: org={len(load(dp))} archive={len(arch)} "
       f"→ merged={len(merged)} (archive-side contributions kept: {added})")
 PYJD
@@ -329,7 +334,11 @@ try:
     fam_files = tuple(f["ui_file"] for f in FAMILIES.values()
                       if f.get("ui_file"))
 except Exception:
-    fam_files = ("roles-pm.json", "roles-dmm.json")  # fallback
+    # [W2a-19] the import-failure fallback must degrade to the FULL
+    # family set, never the pre-gen partial tuple — a partial tuple
+    # here re-arms the 7th S35 incident (roles-gen.json rsync-deleted)
+    fam_files = ("roles-pm.json", "roles-dmm.json",
+                 "roles-gen.json")   # full-list fallback
 for fam_file in fam_files:
     env_file = fam_file.replace("roles-", "").replace(".json", "_envelope.json")
     df = os.path.join(dest, f"ingest/data/ui/{fam_file}")
@@ -354,7 +363,7 @@ PYEOF
   # every family's ui_file is newest-wins-gated above — the rsync
   # excludes derive from the SAME registry (never rsync-deleted again)
   _uiexcl=$(python3 -c 'import sys,os; sys.path.insert(0, os.path.join(os.environ.get("MIRROR_SRC","."),"ingest")); from jobsearch.rolefamilies import FAMILIES; print(" ".join("--exclude="+v["ui_file"] for v in FAMILIES.values() if v.get("ui_file")))' 2>/dev/null || true)
-  [ -n "$_uiexcl" ] || _uiexcl="--exclude=roles-pm.json --exclude=roles-dmm.json"
+  [ -n "$_uiexcl" ] || _uiexcl="--exclude=roles-pm.json --exclude=roles-dmm.json --exclude=roles-gen.json"  # [W2a-19] full-list fallback
   rsync -a --delete $_uiexcl \
       "$DEST"/ingest/data/ui/ "$SRC"/ingest/data/ui/
   (cd "$SRC" && git add ingest/data/ui 2>/dev/null && \

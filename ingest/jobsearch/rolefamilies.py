@@ -1271,11 +1271,13 @@ FAMILIES: dict[str, dict] = {
         "ui_file": "roles-pm.json",
         "drift_label": "roles:pm",
         "l0_bundle": True,
-        # endpoints hardcoded to PM-shaped URLs (S41-R1 F9): declared
-        # so a 0-row measurement is honest ('locked_endpoint' in the
-        # envelope) instead of a silent misconfiguration
-        "locked_endpoints": ("talent", "muse", "wwr_rss", "yc", "hn",
-                             "himalayas"),
+        # [W2a-15] DELIBERATELY EMPTY for pm: the lock applies only to
+        # the catch-all families (role_sweep gates the skip loop on
+        # `family != "pm"`); for pm these six endpoints are its LIVE
+        # PM-shaped sources, so nothing is locked and the old
+        # (talent/muse/wwr_rss/yc/hn/himalayas) declaration was dead
+        # and misleading — dmm/gen below carry the real lock set.
+        "locked_endpoints": (),
     },
     "dmm": {
         "slug": "dmm",

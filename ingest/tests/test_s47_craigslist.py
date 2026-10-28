@@ -10,6 +10,7 @@ yml exists on purpose (IP reputation — the S44/R1 doctrine); this pin
 holds THAT too.
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -122,6 +123,23 @@ class TestParser:
         assert v.startswith("blocked:captcha")
         assert rows == []                     # the city pauses — no bypass
 
+    def test_rows_carry_fetch_stamp_and_geo_tag(self, monkeypatch):
+        """[W2b-9] per-row fetched_at (UTC ISO — the PAGE fetch time,
+        one stamp per (city,query)) + the geo source tag. The metro
+        slug keeps riding BOTH loc ("(city)" suffix) and query — no
+        30-metro city->state map (poster-authored loc text is not
+        state-parseable; see the role_sweep [W2b-9] comment)."""
+        _fetch_stub(monkeypatch, {"query=plumbing": _PROBE_HTML})
+        rows, v = rs.fetch_craigslist("sfbay", ["plumbing"])
+        assert v.startswith("ok")
+        stamps = {r["fetched_at"] for r in rows}
+        assert len(stamps) == 1                # one page, one stamp
+        assert all(re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", s)
+            for s in stamps), stamps
+        assert all(r["geo"] == "craigslist" for r in rows)
+        assert all("(sfbay)" in r["loc"] for r in rows)
+
     def test_http_error_is_fail_soft_per_query(self, monkeypatch):
         def _err(url, timeout=30):
             import urllib.error
@@ -130,6 +148,41 @@ class TestParser:
         rows, v = rs.fetch_craigslist("sfbay", ["hvac"])
         assert rows == []
         assert "http403" in v                 # honest verdict, recorded
+
+
+class TestAnchoredCaptchaHeuristic:
+    """[W2b-10] the block heuristic is ANCHORED — 'unavailable' alone
+    in early body text (legit JS/ARIA phrasing) must NOT pause the
+    city; a REAL block page (recaptcha / <title> status line /
+    'unavailable' paired with a second block marker) must. The
+    honest-blocked doctrine is unchanged: blocked = the city pauses,
+    prior rows kept (pinned by test_blocked_rerun_preserves_prior_rows)."""
+
+    def test_legit_page_with_early_unavailable_text_is_not_blocked(
+            self, monkeypatch):
+        page = ('<html><head><script>var svc = "this service is '
+                'unavailable in some areas";</script>'
+                '<title>sfbay jobs</title></head><body>'
+                + _PROBE_HTML + '</body></html>')
+        _fetch_stub(monkeypatch, {"query=hvac": page})
+        rows, v = rs.fetch_craigslist("sfbay", ["hvac"])
+        assert v.startswith("ok")              # parsed, not blocked
+        assert len(rows) == 2
+
+    def test_title_unavailable_status_line_blocks(self, monkeypatch):
+        page = ('<html><head><title>this page is unavailable'
+                '</title></head><body></body></html>')
+        _fetch_stub(monkeypatch, {"query=hvac": page})
+        rows, v = rs.fetch_craigslist("sfbay", ["hvac"])
+        assert v.startswith("blocked:captcha")
+
+    def test_unavailable_paired_with_second_marker_blocks(
+            self, monkeypatch):
+        page = ('<html><body><p>The page is temporarily unavailable. '
+                'Please try again later.</p></body></html>')
+        _fetch_stub(monkeypatch, {"query=hvac": page})
+        rows, v = rs.fetch_craigslist("sfbay", ["hvac"])
+        assert v.startswith("blocked:captcha")
 
 
 class TestIngestHygiene:
@@ -241,6 +294,30 @@ class TestDriver:
         # the report twin exists with the per-city table
         rep = (tmp_path / "craigslist.report.md").read_text()
         assert "| sfbay |" in rep and "| losangeles |" in rep
+
+    def test_report_carries_the_full_verdict_ledger(self, tmp_path,
+                                                    monkeypatch):
+        """[W2b-7] the city-verdict column is NOT truncated — the old
+        [:80] cut lost the tail of every 12-query verdict, ALWAYS the
+        moving/office-manager/dispatcher counts (the three biggest
+        queries). Markdown has no width limit; the ledger must be
+        complete."""
+        out = tmp_path / "craigslist_home_services.json"
+        monkeypatch.setattr(cs, "OUT", out)
+        monkeypatch.setattr(cs, "REPORT",
+                            tmp_path / "craigslist.report.md")
+        long_v = ("ok|hvac:49,plumbing:38,roofing:41,electrician:44,"
+                  "landscaping:39,appliance repair:36,pool cleaning:12,"
+                  "handyman:42,junk removal:18,moving:110,"
+                  "office manager:64,dispatcher:29")
+        monkeypatch.setattr(cs.rs, "fetch_craigslist",
+                            lambda *a: ([], long_v))
+        cs.run_window(["sfbay"])
+        rep = (tmp_path / "craigslist.report.md").read_text()
+        # the tail entries the [:80] cut always lost are present
+        assert "moving:110" in rep
+        assert "office manager:64" in rep
+        assert "dispatcher:29" in rep
 
     def test_status_reads_only(self, tmp_path, monkeypatch, capsys):
         out = tmp_path / "craigslist_home_services.json"

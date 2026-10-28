@@ -1,0 +1,47 @@
+{
+ "generated_at": "2026-10-28T00:20:07Z",
+ "normalizer": "industry_sweep._company_norm",
+ "pools": {
+  "cslb": {
+   "source_file": "canon facets/02_job_sourcing/data/local_entities/cslb/cslb-license-master-full.csv.gz",
+   "out_file": "smb_cslb_names.sha256.gz",
+   "rows_read": 245545,
+   "cut_rows": 233427,
+   "names_hashed": 233427,
+   "unique_digests": 217668,
+   "canon_expected": 233427,
+   "canon_match": true
+  },
+  "dca": {
+   "source_file": "canon facets/02_job_sourcing/data/local_entities/dca/<33 verified boards>_Data00.tsv.gz",
+   "out_file": "smb_dca_names.sha256.gz",
+   "rows_read": 3925255,
+   "cut_rows": 203228,
+   "names_hashed": 203211,
+   "unique_digests": 164231,
+   "boards": 33,
+   "canon_expected": 203228,
+   "canon_match": true
+  },
+  "dre": {
+   "source_file": "canon facets/02_job_sourcing/data/local_entities/dre/CurrList-master.csv.gz",
+   "out_file": "smb_dre_names.sha256.gz",
+   "rows_read": 427230,
+   "cut_rows": 24172,
+   "names_hashed": 24172,
+   "unique_digests": 24132,
+   "canon_expected": 24172,
+   "canon_match": true
+  },
+  "fbn": {
+   "source_file": "canon facets/02_job_sourcing/data/local_entities/la_rolls/fbn-la-org-master.tsv.gz",
+   "out_file": "smb_fbn_names.sha256.gz",
+   "rows_read": 93551,
+   "cut_rows": 93551,
+   "names_hashed": 93539,
+   "unique_digests": 80700,
+   "canon_expected": 93551,
+   "canon_match": true
+  }
+ }
+}

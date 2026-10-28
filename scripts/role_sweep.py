@@ -34,6 +34,8 @@ from __future__ import annotations
 
 import argparse
 import csv
+import gzip
+import hashlib
 import json
 import os
 import re
@@ -1717,6 +1719,179 @@ def _company_key(company: str, existing: dict | None = None) -> str:
     return s or "unknown"
 
 
+# ── [S48-B] the smbSignal join (B4 §4 — the catch-all's remaining half) ────
+# Classify every gen/dmm bundle row's company against the LOCAL-LICENSED
+# census pools (the vendored sha256 lookup sets built by
+# audit/s48/census/build_smb_lookup_sets.py) + the repo's own
+# dictionaries, one emit-time pass. The enum follows the canon B4 §4 +
+# B3-synthesis §4.3 exactly: cslb_match / dca_match / dre_match /
+# fbn_new (the four pools, first-hit precedence) → harvest_dict (the
+# industry harvest's known local companies) → national_known (the
+# curated national/brand seeds) → unknown_local (a CA/metro-coded row
+# hitting NO known pool — the freshest SMB leads). The spec is SILENT
+# on the last two classes; they are this repo's honest fills (a
+# non-CA/non-pool row is `unknown`; the sets themselves being absent
+# — a fresh clone, the builder not run — degrades the whole pass to
+# `no_lookup`, fail-soft: the lane runs BEFORE the builder ever does
+# and must NEVER crash on it).
+_SMB_SETS_DIR = REPO / "ingest/data/census"
+_SMB_POOLS = (          # pool classes in precedence order (first hit wins)
+    ("cslb_match", "smb_cslb_names.sha256.gz"),
+    ("dca_match", "smb_dca_names.sha256.gz"),
+    ("dre_match", "smb_dre_names.sha256.gz"),
+    ("fbn_new", "smb_fbn_names.sha256.gz"),
+)
+_SMB_CA_TIERS = ("t1a", "t1b", "t2")   # the CA-scoped geo-ladder tiers
+_SMB_CA_LOC = re.compile(r"(?:^|,\s*|\s+)ca(?:lifornia)?\s*$", re.I)
+_SMB_LOOKUP: dict | None = None       # None=unloaded, {}=missing (cached)
+_SMB_HARVEST: frozenset | None = None
+_SMB_NATIONAL_KEYS: frozenset | None = None
+_SMB_NORM = None                      # lazy industry_sweep._company_norm
+
+
+def _smb_norm(company: str) -> str:
+    """[S48-B] THE shared normalizer — ONE function on both sides of
+    the join (the builder hashes pools with it; this lookup digests
+    row companies with it — a mismatch would silently match nothing).
+    Decision: industry_sweep._company_norm — the dba-splitting,
+    punctuation+corporate-suffix-stripping NAME normalizer the census
+    cross-match already measured (S47-E: 4 of the 200 vendored CSLB
+    companies appear in the harvest by exact match — the big mechanical
+    GCs only; the S44-R2 ceiling rides the README, not the code).
+    NOT this module's _company_key: that is the bundle identity SLUG
+    space (COMPANY_KEY_VARIANTS has no registry-side equivalent).
+    Imported LAZILY — industry_sweep imports THIS module at module
+    level, so a module-level import here would be circular."""
+    global _SMB_NORM
+    if _SMB_NORM is None:
+        _sp = str(REPO / "scripts")
+        if _sp not in sys.path:
+            sys.path.insert(0, _sp)
+        import industry_sweep as _isw            # noqa: PLC0415
+        _SMB_NORM = _isw._company_norm
+    return _SMB_NORM(company)
+
+
+def _smb_digest(company: str) -> str:
+    """sha256(_company_norm(company)) hex — the pool-membership key."""
+    return hashlib.sha256(
+        _smb_norm(company).encode("utf-8")).hexdigest()
+
+
+def _smb_load_lookup() -> dict:
+    """Lazy, cached digest-set loader → {class: frozenset}. Missing
+    files are SKIPPED per-pool (partial lookup still classifies the
+    pools it has); ALL absent → {} (fail-soft: `no_lookup` + the
+    one-line warning at the call site, never a crash)."""
+    global _SMB_LOOKUP
+    if _SMB_LOOKUP is not None:
+        return _SMB_LOOKUP
+    sets: dict = {}
+    for cls, fname in _SMB_POOLS:
+        p = _SMB_SETS_DIR / fname
+        if not p.exists():
+            continue
+        try:
+            with gzip.open(p, "rt", encoding="utf-8") as f:
+                sets[cls] = frozenset(
+                    ln.strip() for ln in f if ln.strip())
+        except OSError:
+            continue                    # unreadable pool = absent pool
+    _SMB_LOOKUP = sets
+    return sets
+
+
+def _smb_harvest_keys() -> frozenset:
+    """The existing harvest company dictionary (the `harvest_dict`
+    class): the industry artifacts' companies — home_services_us/ba +
+    craigslist_home_services — normalized by the SAME shared
+    normalizer, loaded lazily once per sweep. Missing artifacts = the
+    empty set (fail-soft: the class just can't fire)."""
+    global _SMB_HARVEST
+    if _SMB_HARVEST is not None:
+        return _SMB_HARVEST
+    names: set = set()
+    for slug in ("home_services_us", "home_services_ba",
+                 "craigslist_home_services"):
+        p = REPO / f"ingest/data/industry/{slug}.json"
+        try:
+            d = json.load(open(p))
+        except (FileNotFoundError, json.JSONDecodeError, OSError):
+            continue
+        for r in (d.get("jobs") or []):
+            nm = _smb_norm(r.get("company") or "")
+            if nm:
+                names.add(nm)
+    _SMB_HARVEST = frozenset(names)
+    return _SMB_HARVEST
+
+
+def _smb_national_keys() -> frozenset:
+    """The `national_known` class: the EXISTING curated brand-name
+    seeds (company_seeds) — TECH ∪ NONTECH ∪ BANK ∪ FINTECH_GUARD ∪
+    PAYER (the B4 §4 corpus-177/national-chain successors; matched
+    via the existing seed_hit both-forms machinery — reused, not
+    invented). STAFF_SEED is deliberately NOT here: a staffing brand
+    is an agency, not the employer — staffing rows fall through to the
+    loc classes (staffingEvidence already rides every row)."""
+    global _SMB_NATIONAL_KEYS
+    if _SMB_NATIONAL_KEYS is None:
+        _SMB_NATIONAL_KEYS = frozenset(
+            _seeds.TECH_KEYS | _seeds.NONTECH_KEYS | _seeds.BANK_KEYS
+            | _seeds.FINTECH_KEYS | _seeds.PAYER_KEYS)
+    return _SMB_NATIONAL_KEYS
+
+
+def _smb_classify(r: dict) -> str:
+    """One emit-time pass per row. Precedence: cslb_match → dca_match
+    → dre_match → fbn_new (pools, first hit) → harvest_dict →
+    national_known → unknown_local (CA/metro-coded row) → unknown.
+    NO lookup sets at all → `no_lookup` for EVERY row (the fail-soft
+    degrade — the class describes the lookup state; a PARTIAL lookup
+    still classifies the pools it has). An anonymized/board-employer
+    company has NO real employer name to classify — honest `unknown`,
+    never a pool guess."""
+    lookup = _smb_load_lookup()         # lazy + cached (idempotent)
+    if not lookup:
+        return "no_lookup"               # the sets are absent entirely
+    comp = (r.get("company") or "").strip()
+    nm = _smb_norm(comp)
+    if not nm or is_anonymized_employer(comp):
+        return "unknown"
+    d = _smb_digest(comp)
+    for cls, _fname in _SMB_POOLS:
+        if d in lookup.get(cls, ()):          # the pool precedence ladder
+            return cls
+    if nm in _smb_harvest_keys():
+        return "harvest_dict"
+    if _seeds.seed_hit(r.get("company_key") or r.get("companyKey")
+                       or "", comp, _smb_national_keys()):
+        return "national_known"
+    if (r.get("geoTier") in _SMB_CA_TIERS
+            or _SMB_CA_LOC.search((r.get("loc") or ""))):
+        return "unknown_local"
+    return "unknown"
+
+
+def _smb_classify_rows(rows: list[dict], counters: dict) -> dict:
+    """The sweep-emit wrapper: classify, stamp `smb_signal` per row,
+    ride the envelope's counters (smb_<class>), return the histogram.
+    Missing sets → every row still gets stamped — with `no_lookup`
+    (the honest degrade; the sweep NEVER crashes on it)."""
+    if not _smb_load_lookup():
+        print(f"[sweep] WARNING: smb lookup sets missing under "
+              f"{_SMB_SETS_DIR} — run "
+              f"audit/s48/census/build_smb_lookup_sets.py; "
+              f"smb_signal=no_lookup")
+    hist: dict[str, int] = {}
+    for r in rows:
+        sig = _smb_classify(r)
+        r["smb_signal"] = sig
+        counters["smb_" + sig] = counters.get("smb_" + sig, 0) + 1
+        hist[sig] = hist.get(sig, 0) + 1
+    return hist
+
+
 def _norm_day(posted: str):
     if not posted:
         return None
@@ -2002,6 +2177,22 @@ def sweep(queries: list[str], skip_gj: bool = False,
                 # it; the dispatch stamp is a setdefault so it survives)
                 if row.get("geoTier"):
                     all_rows[-1]["geoTier"] = row["geoTier"]
+                elif family in _B4_FAMILIES:
+                    # [W2a-17] the one-time legacy stamp: pre-B4 seed
+                    # rows (914 in the shipped dmm bundle) re-entered
+                    # with geoTier blank — ~24% of the bundle's tier
+                    # field stayed "" forever. They were all t3 US-wide
+                    # harvests (pre-B4 there was no ladder), so the
+                    # honest provenance tier is t3_legacy — NOT the
+                    # current run's ladder. Naturally one-time: on the
+                    # next round-trip the row carries a tier and rides
+                    # the branch above. Fresh rows never see this
+                    # (they take the setdefault at the fetch loop).
+                    # Merge-unsafe? NO — unknown tiers rank 9
+                    # (least-specific) in GEO_TIER_RANK, exactly like
+                    # the old "" — a fresh t3/t2/t1a double of the
+                    # same key still wins the survivor role.
+                    all_rows[-1]["geoTier"] = "t3_legacy"
                 n_seed += 1
             env["sources"]["seed_envelope"] = (
                 f"ok:{n_seed}/{len(sd.get('jobs') or [])}")
@@ -2389,6 +2580,16 @@ def sweep(queries: list[str], skip_gj: bool = False,
         r.pop("_ck", None), r.pop("_title_norm", None)
         r.pop("_src", None), r.pop("_ukey", None)
 
+    # [S48-B] the smbSignal join at emit time (B4 §4): classify every
+    # merged row's company against the census pools + the repo
+    # dictionaries — gen/dmm ONLY (pm stays bit-identical: no field,
+    # no counters, no print). The CSV writer ignores the extra key
+    # (extrasaction="ignore" — the inventory schema stays pre-S48).
+    smb_hist: dict[str, int] = {}
+    if family in _B4_FAMILIES:
+        smb_hist = _smb_classify_rows(merged, counters)
+        env["smb_signal_histogram"] = smb_hist
+
     # outputs (write-atomic)
     ROLES_DIR.mkdir(parents=True, exist_ok=True)
     _write_atomic(ROLES_DIR / f"{prefix}_inventory.csv", _csv_bytes(merged))
@@ -2415,7 +2616,14 @@ def sweep(queries: list[str], skip_gj: bool = False,
     _write_atomic(ROLES_DIR / f"{prefix}_envelope.json",
                   json.dumps(env, indent=1, default=str).encode())
 
-    # cumulative closure ledger (design §6)
+    # cumulative closure ledger (design S36 §6, family-generalized)
+    # [W2a-16] the fields are family-neutral and MAINTAINED now: the
+    # old `cumulative_pm_rows` name lied for gen/dmm (it counted THAT
+    # family's rows), and `max_consecutive` never updated (always 0
+    # in the shipped gen_coverage.json). Semantics: consecutive SWEEP
+    # RUN-DAYS — a company keeps its streak iff it appeared in the
+    # immediately-previous run too (tracked via the _meta.last_run_day
+    # sentinel this update stamps); any run-day it misses breaks it.
     cov = {}
     cov_path = ROLES_DIR / f"{prefix}_coverage.json"
     if cov_path.exists():
@@ -2423,6 +2631,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
             cov = json.load(open(cov_path))
         except json.JSONDecodeError:
             cov = {}
+    prev_run_day = (cov.get("_meta") or {}).get("last_run_day", "")
     today = started.strftime("%Y-%m-%d")
     comp_counts: dict[str, int] = {}
     for r in merged:
@@ -2442,16 +2651,38 @@ def sweep(queries: list[str], skip_gj: bool = False,
         e = cov.setdefault(ck, {"first_seen": today, "last_seen": today,
                                 "weeks_present": 0,
                                 "max_consecutive": 0,
-                                "cumulative_pm_rows": 0, "class":
+                                "cumulative_rows": 0, "class":
                                 "aggregator_only"})
+        # [W2a-16] one-time rename: legacy files carry the pm-named
+        # key — carry its value forward, then drop it
+        if "cumulative_pm_rows" in e:
+            e["cumulative_rows"] = e.get(
+                "cumulative_rows", e.pop("cumulative_pm_rows"))
         if e["last_seen"] != today:
             e["weeks_present"] += 1
+            # [W2a-16] the streak: unbroken iff the company ALSO
+            # appeared in the immediately-previous run (its last_seen
+            # IS the previous run-day); else it starts fresh at 1
+            e["current_streak"] = (
+                e.get("current_streak", 0) + 1
+                if prev_run_day and e["last_seen"] == prev_run_day
+                else 1)
+            e["max_consecutive"] = max(e["max_consecutive"],
+                                       e["current_streak"])
+        elif not e.get("current_streak"):
+            # first appearance (a new entry, or the first touch after
+            # the rename on a same-day re-run) — the streak starts at 1
+            e["current_streak"] = 1
+            e["max_consecutive"] = max(e["max_consecutive"], 1)
         e["last_seen"] = today
-        e["cumulative_pm_rows"] += n
+        e["cumulative_rows"] += n
         if ck in board_keys or ck in roster_keys:
             e["class"] = "onboarded_board"
         elif e.get("class") not in ("onboarded_board", "deferred_queue"):
             e["class"] = "aggregator_only"
+    # [W2a-16] the streak sentinel the NEXT update compares against;
+    # _meta is OUR key — consumers iterate companies, never _meta
+    cov["_meta"] = {"last_run_day": today}
     _write_atomic(cov_path, json.dumps(cov, indent=1, default=str).encode())
 
     # drift ledger + baseline fold (design §5)
@@ -2549,6 +2780,13 @@ def sweep(queries: list[str], skip_gj: bool = False,
         # snippet; none = graded on title/company only)
         "descriptionSource": r.get("description_source", "none"),
     } for r in merged]
+    # [S48-B] the smbSignal join rides the bundle rows as a plain
+    # string field — gen/dmm ONLY: pm rows carry NO smb_signal key
+    # (the identity doctrine; the emitted pm bundle stays
+    # bit-identical — pinned).
+    if family in _B4_FAMILIES:
+        for row, r in zip(ui_rows, merged):
+            row["smb_signal"] = r.get("smb_signal", "")
     _sen_order = {"senior": 0, "director+": 1, "mid": 2, "junior": 3}
     ui_rows.sort(key=lambda x: (_sen_order.get(x["seniority"], 4),
                                 x["postedOn"] or ""))
@@ -2563,6 +2801,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
           f"merges {counters['dedup_merge']}, family_other "
           f"{counters['family_other']}, non_us {counters['usgate_non_us']})")
     print(f"[sweep] families {fam_hist} | seniority {sen_hist}")
+    if family in _B4_FAMILIES and smb_hist:
+        print(f"[sweep] smb_signal {smb_hist}")
     print(f"[sweep] verdict {verdict}; dead: {dead or 'none'}")
     return 0 if verdict == "complete" else 1
 
@@ -2613,7 +2853,8 @@ def main() -> int:
                          "9-min-chunk rule: t3 US-wide at 30 queries = "
                          "10+ min fetch alone)")
     ap.add_argument("--family", default="pm",
-                    help="role family slug (pm, dmm — the S41 registry)")
+                    help="role family slug (pm, dmm, gen — the S41 "
+                         "registry; gen/dmm are the B4 catch-all lanes)")
     ap.add_argument("--gj-only", action="store_true",
                     help="the firecrawl recovery probe (L3 only)")
     ap.add_argument("--skip", default="",
@@ -2880,6 +3121,14 @@ _CL_UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
           "AppleWebKit/537.36 (KHTML, like Gecko) "
           "Chrome/130.0.0.0 Safari/537.36"}
 
+# [W2b-10] the anchored block-page markers: <title> content (the block
+# page's status line) + the second-marker pair for the body case
+_CL_TITLE_PAT = re.compile(r"<title[^>]*>(.*?)</title>",
+                           re.DOTALL | re.IGNORECASE)
+_CL_BLOCK2 = re.compile(
+    r"\b(?:blocked|access\s+denied|temporarily|maintenance|"
+    r"too\s+many\s+requests|try\s+again)\b")
+
 
 def fetch_craigslist(city: str, queries: list[str]) -> tuple[list[dict], str]:
     """S47 T0 (DESIGN-S47 §3): craigslist is the smallest-employer tier
@@ -2915,10 +3164,31 @@ def fetch_craigslist(city: str, queries: list[str]) -> tuple[list[dict], str]:
             verdicts.append(f"{q}:error:{type(exc).__name__}")
             time.sleep(3.0)
             continue
-        if "recaptcha" in html.lower() or "unavailable" in html.lower()[:2000]:
+        # [W2b-10] ANCHORED captcha heuristic: the old bare substring
+        # check ("unavailable" anywhere in the first 2000 chars)
+        # false-positived on legit pages whose early JS/ARIA text
+        # carries the word (the city would pause needlessly). A block
+        # is now declared only on a STRONG marker: 'recaptcha'
+        # anywhere, 'unavailable' inside <title> (the block page's
+        # status line), or 'unavailable' early PAIRED with a second
+        # block-page marker. The honest-blocked doctrine holds either
+        # way: a blocked city pauses — run_window's W2B-1 gate keeps
+        # its prior rows (pinned: test_blocked_rerun_preserves_prior_rows).
+        low = html.lower()
+        _mt = _CL_TITLE_PAT.search(low)
+        if ("recaptcha" in low
+                or bool(_mt and "unavailable" in _mt.group(1))
+                or ("unavailable" in low[:2000]
+                    and _CL_BLOCK2.search(low))):
             verdicts.append(f"{q}:blocked:captcha")
             return rows, "blocked:captcha"          # the city pauses
         n = 0
+        # [W2b-9] per-row fetch stamp: the PAGE fetch time — one stamp
+        # per (city,query) page. Dateless rows otherwise carry no
+        # generation timestamp; the city ledger (cities_run[city]
+        # ["ran_at"]) stays the window-level authority.
+        fetched_at = datetime.now(timezone.utc).strftime(
+            "%Y-%m-%dT%H:%M:%SZ")
         for m in _CL_ROW.finditer(html):
             g = m.groupdict()
             title = (g["title"] or g["rowtitle"] or "").strip()
@@ -2946,6 +3216,17 @@ def fetch_craigslist(city: str, queries: list[str]) -> tuple[list[dict], str]:
                 "source": "craigslist", "layer": "l2",
                 "query": f"cl:{city}:{q}",
                 "rid": f"cl:{rid_tail}",
+                "fetched_at": fetched_at,
+                # [W2b-9] geo tag, doctrine-minimal: the deterministic
+                # metro slug already rides BOTH loc ("({city})" suffix)
+                # and query ("cl:{city}:") — the census aggregates by
+                # those. The geo field carries the geo-SOURCE class;
+                # NO 30-metro city->state map (poster-authored loc
+                # text is not state-parseable — a region tagger over it
+                # would be noise, and geo_levels.region_tag/
+                # us_region_tag gate Bay Area/US membership, not
+                # metro identity).
+                "geo": "craigslist",
             })
             n += 1
         verdicts.append(f"{q}:{n}")

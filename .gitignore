@@ -13,6 +13,9 @@ ingest/data/*
 !ingest/data/roles/
 !ingest/data/adhoc/
 !ingest/data/industry/
+# [S48-B] the smbSignal lookup sets (sha256 hex digests of public-record
+# company names — not reversible PII; the F16 industry-exception pattern)
+!ingest/data/census/
 ingest/.venv/
 *.tmp
 *.pyc
@@ -30,6 +33,10 @@ scripts/probe_tmp/*.pdf
 
 # netlify fleet keys (git-is-disk, same policy as ingest/.env)
 !ingest/.netlify_fleet_keys
+
+# [W2c-11/A3-F12] board-probe runner scratch (board-probe.yml:47-49
+# `tee`s into the repo root on the GHA runner — untracked+unignored)
+probe_result.json
 
 # --- public-mirror guards (never commit these here) ---
 ingest/.env

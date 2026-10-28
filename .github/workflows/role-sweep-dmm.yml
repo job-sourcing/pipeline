@@ -91,10 +91,21 @@ jobs:
           ARGS="--family dmm"
           if [ "$FULL_SWEEP" = "true" ]; then
             ARGS="$ARGS --full"
-            # the weekly schedule adds the rotating window; a manual
-            # dispatch --full runs the WHOLE tail (deliberate, watched)
             if [ "${{ github.event.schedule }}" = "0 13 * * 3" ]; then
+              # the weekly schedule: the rotating 4-week tail window
+              # (the F6 tail-bucket rotation — every run bounded)
               ARGS="$ARGS --query-window auto/4"
+            else
+              # [W2a-18] a manual dispatch --full is windowed TOO —
+              # the tail in 2 windows of 40 (auto/2 semantics). The
+              # F6 amendment says NO single 100-query run ever fires:
+              # unbounded adzuna arithmetic (100q x up to 10pg cap-
+              # bind) would silently starve the tail mid-run. The
+              # whole-tail escape hatch remains available via a direct
+              # runner command (box-side, watched):
+              #   role_sweep.py --family dmm --full --tail-only \
+              #     --query-window 1/2 && (window 2/2 the next day)
+              ARGS="$ARGS --query-window auto/2"
             fi
           fi
           # the family seed: unions the PRIOR dmm envelope (run 1 has

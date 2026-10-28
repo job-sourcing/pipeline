@@ -2,11 +2,19 @@ name: Role Sweep GEN (weekly, tiered)
 
 # [S47] the B4 catch-all's steady-state cadence (s46-b4 §3.9, as
 # amended by the adzuna spread note): the gen family's tier ladder
-# runs weekly across TWO slots (the 250/day adzuna arithmetic —
+# runs weekly across THREE slots (the 250/day adzuna arithmetic —
 # Tue t3+t2 ≈ 183 req, Thu t1a ≈ 180 req, both with headroom):
 #   Tue 13:00Z — t3 US-wide (core-30 + tail-window auto/2) then
 #               t2 California (core-30), each chaining the seed union
 #   Thu 13:00Z — t1a 4-CA-metros (core-30, category=admin-jobs)
+#   Sat 13:00Z — t1b 4-secondary-CA-metros (core-30) + t4 remote
+#               (core-30 WINDOWED auto/3) — [S48] the tier ladder's
+#               completion slot: adzuna arithmetic t1b ≈120 + t4-window
+#               ≈100 = ~220 of the day's 250 budget (no other adzuna
+#               lane fires Saturday; t4 remote queries cap-bind at
+#               10pg/query ≈300 full — NEVER run t4 unwindowed on a
+#               single-key day; the auto/3 rotation covers t4's core
+#               over 3 Saturdays)
 #
 # The tier-union law (canon §-28): a tier run OVERWRITES the family
 # bundle — every run after the first carries --seed-envelope (the
@@ -31,6 +39,7 @@ on:
   schedule:
     - cron: "0 13 * * 2"    # Tuesdays 13:00Z — t3 + t2
     - cron: "0 13 * * 4"    # Thursdays 13:00Z — t1a
+    - cron: "0 13 * * 6"    # Saturdays 13:00Z — t1b + t4 (windowed)
 
 permissions:
   contents: write
@@ -106,6 +115,12 @@ jobs:
             run_leg t2 ""
           elif [ "$SLOT" = "0 13 * * 4" ]; then
             run_leg t1a ""
+          elif [ "$SLOT" = "0 13 * * 6" ]; then
+            # [S48] the tier-ladder completion slot — t1b full (metro
+            # adzuna ≈120) + t4 remote WINDOWED (auto/3 ≈100; full t4
+            # would cap-bind at ~300 = the whole day's key)
+            run_leg t1b ""
+            run_leg t4 "--query-window auto/3"
           else
             echo "::error::unknown slot $SLOT"; exit 1
           fi

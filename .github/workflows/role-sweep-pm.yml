@@ -146,7 +146,13 @@ jobs:
                 cp -r "/tmp/sweep_state/$p" "$p"
               fi
             done
-            git add ingest/data/roles/pm_inventory.csv ingest/data/roles/pm_dropped.csv ingest/data/roles/pm_envelope.json ingest/data/roles/pm_coverage.json ingest/data/ui/roles-pm.json "ingest/data/board_watch/roles:pm.runs.jsonl" ingest/data/board_watch/drift_baseline.json
+            # [W2c-12] F7 lesson (the dmm/gen lane pattern):
+            # existence-guarded add — a pathspec for a file that
+            # legitimately does not exist (e.g. the ledger on run 1)
+            # exits 128 under set -e and kills the checkpoint.
+            for f in ingest/data/roles/pm_inventory.csv ingest/data/roles/pm_dropped.csv ingest/data/roles/pm_envelope.json ingest/data/roles/pm_coverage.json ingest/data/ui/roles-pm.json "ingest/data/board_watch/roles:pm.runs.jsonl" ingest/data/board_watch/drift_baseline.json; do
+              if [ -e "$f" ]; then git add "$f"; fi
+            done
             if git diff --cached --quiet; then
               push_ok=1; break
             fi

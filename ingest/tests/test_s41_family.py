@@ -340,3 +340,169 @@ class TestSeedLayerForNewSources:
         zen = next(j for j in jobs if j["title"] == "Office Coordinator")
         assert not zen["id"].startswith("gd_")   # row-hash, not a rid
 
+
+class TestSeedLegacyGeoTierStamp:
+    """[W2a-17] pre-B4 seed rows (914 in the shipped dmm bundle) carry
+    geoTier "" — the reader re-entered them blank forever. The one-time
+    stamp: a dmm/gen seed row with NO tier re-enters as t3_legacy (the
+    honest pre-ladder provenance — they were all t3 US-wide harvests);
+    a seed row WITH a tier keeps it; fresh rows never see the stamp;
+    pm seed rows stay blank (the bit-identity doctrine — pm never got
+    a ladder)."""
+
+    def test_legacy_blank_seed_rows_stamp_t3_legacy(self, sweep_env,
+                                                     monkeypatch):
+        roles, watch, ui = sweep_env
+        prior = {"envelope": {"ran_at": "2026-10-20T00:00:00Z"},
+                 "jobs": [
+                     # the legacy shapes: "" tier + NO tier key
+                     {"title": "Office Manager", "company": "Legacy Co",
+                      "companyKey": "legacy-co", "loc": "US",
+                      "url": "https://x/1", "postedOn": "2026-10-20",
+                      "desc": "run the office", "source": "adzuna",
+                      "id": "adz:L1", "geoTier": ""},
+                     {"title": "Office Coordinator", "company":
+                      "Old LLC", "companyKey": "old-llc", "loc": "US",
+                      "url": "https://x/2", "postedOn": "2026-10-20",
+                      "desc": "coordinate", "source": "indeed",
+                      "id": "ex:L2"},
+                     # a tiered seed row keeps its OWN tier
+                     {"title": "Office Administrator", "company":
+                      "Metro Co", "companyKey": "metro-co", "loc": "US",
+                      "url": "https://x/3", "postedOn": "2026-10-20",
+                      "desc": "administer", "source": "adzuna",
+                      "id": "adz:T3", "geoTier": "t1a"},
+                 ]}
+        (roles / "prior.json").write_text(json.dumps(prior))
+        _patch_all(monkeypatch, {})
+        rs.sweep(family_spec("gen")["queries_core"],
+                 seed_envelope=str(roles / "prior.json"),
+                 family="gen")
+        by_id = {j["id"]: j for j in
+                 json.load(open(ui / "roles-gen.json"))["jobs"]}
+        assert by_id["adz:L1"]["geoTier"] == "t3_legacy"
+        assert by_id["ex:L2"]["geoTier"] == "t3_legacy"
+        assert by_id["adz:T3"]["geoTier"] == "t1a"    # kept its own
+
+    def test_pm_seed_rows_stay_blank_no_legacy_stamp(self, sweep_env,
+                                                      monkeypatch):
+        roles, watch, ui = sweep_env
+        prior = {"envelope": {"ran_at": "2026-10-20T00:00:00Z"},
+                 "jobs": [{
+                     "title": "Senior Product Manager", "company":
+                     "TechCo", "companyKey": "techco", "loc": "US",
+                     "url": "https://x/9", "postedOn": "2026-10-20",
+                     "desc": "roadmap", "source": "adzuna",
+                     "id": "adz:P9", "geoTier": "",
+                 }]}
+        (roles / "prior.json").write_text(json.dumps(prior))
+        _patch_all(monkeypatch, {})
+        rs.sweep(["senior product manager"],
+                 seed_envelope=str(roles / "prior.json"),
+                 family="pm")
+        jobs = json.load(open(ui / "roles-pm.json"))["jobs"]
+        assert jobs and jobs[0]["geoTier"] == ""   # pm: no ladder, no stamp
+
+
+class TestCoverageLedgerMaintained:
+    """[W2a-16] the closure ledger is family-neutral and MAINTAINED:
+    `cumulative_rows` (renamed from the pm-named cumulative_pm_rows —
+    the legacy value carries forward on the first post-rename run) and
+    `max_consecutive` (structurally dead before: never updated, always
+    0 in the shipped gen_coverage.json). Streak semantics: consecutive
+    SWEEP RUN-DAYS — a company keeps its streak iff it appeared in the
+    immediately-previous run too (last_seen == _meta.last_run_day);
+    any run-day it misses breaks it back to 1."""
+
+    def test_rename_carry_streak_growth_and_break(self, sweep_env,
+                                                   monkeypatch):
+        import datetime as _dt
+        roles, watch, ui = sweep_env
+        row = _row(title="Digital Marketing Manager",
+                   company="Acme Growth", loc="US",
+                   posted="2026-10-14", source="adzuna",
+                   layer="l1.5", rid="adz:D1",
+                   url="https://adzuna.com/details/D1")
+
+        class _Fixed(_dt.datetime):
+            clock = None
+
+            @classmethod
+            def now(cls, tz=None):
+                if cls.clock is None:
+                    return super().now(tz=tz)
+                return cls.clock if tz is None \
+                    else cls.clock.replace(tzinfo=tz)
+
+        def _day(n):
+            _Fixed.clock = _dt.datetime(
+                2026, 10, 20 + n, 12, 0, tzinfo=_dt.timezone.utc)
+
+        monkeypatch.setattr(rs, "datetime", _Fixed)
+
+        def _cov():
+            c = json.load(open(roles / "dmm_coverage.json"))
+            assert "_meta" in c            # the streak sentinel
+            return c
+
+        def _entry(c):
+            ks = [k for k in c if k != "_meta"]
+            assert len(ks) == 1, "one company in this fixture"
+            return c[ks[0]]
+
+        # run-day 1: the company debuts — streak starts at 1
+        _day(6)
+        _patch_all(monkeypatch, {"adzuna": [row]})
+        rs.sweep(family_spec("dmm")["queries_core"], family="dmm")
+        e = _entry(_cov())
+        assert e["cumulative_rows"] == 1
+        assert e["current_streak"] == 1 and e["max_consecutive"] == 1
+
+        # simulate a LEGACY pre-rename file: the pm-named key, no
+        # streak field, max_consecutive dead at 0 (the shipped state)
+        c = _cov()
+        e = _entry(c)
+        e["cumulative_pm_rows"] = e.pop("cumulative_rows")
+        del e["current_streak"]
+        e["max_consecutive"] = 0
+        json.dump(c, open(roles / "dmm_coverage.json", "w"))
+
+        # run-day 2: the rename CARRIES the legacy value forward and
+        # drops the pm-named key; the untracked legacy history
+        # honestly restarts the streak at 1
+        _day(7)
+        rs.sweep(family_spec("dmm")["queries_core"], family="dmm")
+        e = _entry(_cov())
+        assert "cumulative_pm_rows" not in e
+        assert e["cumulative_rows"] == 2          # 1 carried + 1 new
+        assert e["current_streak"] == 1 and e["max_consecutive"] == 1
+        assert e["weeks_present"] == 1
+
+        # run-day 3: appeared in the immediately-previous run — the
+        # streak GROWS (the field that was always 0)
+        _day(8)
+        rs.sweep(family_spec("dmm")["queries_core"], family="dmm")
+        e = _entry(_cov())
+        assert e["current_streak"] == 2
+        assert e["max_consecutive"] == 2
+        assert e["cumulative_rows"] == 3
+
+        # run-day 4: the company MISSES a run — the sentinel advances
+        # past its last_seen; the entry itself is untouched
+        _day(9)
+        _patch_all(monkeypatch, {})
+        rs.sweep(family_spec("dmm")["queries_core"], family="dmm")
+        c = _cov()
+        assert c["_meta"]["last_run_day"] == "2026-10-29"
+        assert _entry(c)["last_seen"] == "2026-10-28"
+
+        # run-day 5: it reappears — the missed run-day BROKE the
+        # streak (back to 1); max keeps the remembered peak of 2
+        _day(10)
+        _patch_all(monkeypatch, {"adzuna": [row]})
+        rs.sweep(family_spec("dmm")["queries_core"], family="dmm")
+        e = _entry(_cov())
+        assert e["current_streak"] == 1
+        assert e["max_consecutive"] == 2
+        assert e["cumulative_rows"] == 4
+

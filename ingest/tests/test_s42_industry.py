@@ -477,6 +477,33 @@ class TestMirrorUiRolesHandlerRegistryDriven:
             assert ui in sh or "fallback" in sh, \
                 f"{ui} missing from the mirror ui-roles handler"
 
+    def test_import_failure_fallbacks_carry_full_family_set(self):
+        """[W2a-19] the registry-driven handlers degrade to FALLBACK
+        tuples when the rolefamilies import fails — those fallbacks
+        must carry the FULL family set (the pre-gen (pm,dmm) tuples
+        would rsync-delete roles-gen.json again: the 7th-incident
+        class recurring under import failure)."""
+        from jobsearch.rolefamilies import FAMILIES
+        sh = (_REPO / "scripts/build_public_mirror.sh").read_text()
+        # PYEOF ui-file fallback tuple (multi-line)
+        pyeof_fallback = sh.split("PYEOF", 2)[1]
+        for spec in FAMILIES.values():
+            ui = spec.get("ui_file")
+            if not ui:
+                continue
+            assert f'"{ui}"' in pyeof_fallback, \
+                f"{ui} missing from the PYEOF full-list fallback"
+            assert f"--exclude={ui}" in sh, \
+                f"{ui} missing from the _uiexcl full-list fallback"
+        # PYROLE quartet-prefix fallback (the [W2a-5/W2c-2] fix)
+        pyrole = sh.split("PYROLE", 2)[1]
+        for spec in FAMILIES.values():
+            qp = spec.get("quartet_prefix")
+            if not qp:
+                continue
+            assert f'"{qp}"' in pyrole, \
+                f"{qp} missing from the PYROLE full-list fallback"
+
 
 # ── S47-B: the industry engine fixes (DESIGN-S47 §6, findings-a2) ────
 
@@ -641,8 +668,9 @@ class TestKeptCounterAliases:
 
 class TestPerQueryYield:
     """S47-B §6.4 (A2-10/F20): per-query yield traceability — the
-    query string per kept row + {source: {query: {raw, kept}}} in
-    the artifact (only the boolean survived before)."""
+    query string per kept row + {source: {query: {raw, kept, seed}}} in
+    the artifact (only the boolean survived before). [W2b-6] the seed
+    column labels the kept>raw asymmetry seed carries create."""
 
     def test_per_query_persisted(self, tmp_path, monkeypatch):
         rows = [_row(0, adzuna_category="trade-construction-jobs"),
@@ -655,8 +683,8 @@ class TestPerQueryYield:
         d = json.loads(
             (tmp_path / "home_services_us.json").read_text())
         assert d["per_query"]["adzuna"] == {
-            "construction estimator": {"raw": 1, "kept": 1},
-            "hvac sales": {"raw": 2, "kept": 2}}
+            "construction estimator": {"raw": 1, "kept": 1, "seed": 0},
+            "hvac sales": {"raw": 2, "kept": 2, "seed": 0}}
         # the query string rides every kept row (F20 query-per-row)
         assert {j["query"] for j in d["jobs"]} == {
             "construction estimator", "hvac sales"}
@@ -676,7 +704,38 @@ class TestPerQueryYield:
             (tmp_path / "home_services_us.json").read_text())
         table = d["per_query"]["li_keyword"]
         assert len(table) == 45
-        assert all(v == {"raw": 1, "kept": 1} for v in table.values())
+        assert all(v == {"raw": 1, "kept": 1, "seed": 0}
+                   for v in table.values())
+
+    def test_seed_carry_cells_label_the_asymmetry(self, tmp_path,
+                                                  monkeypatch):
+        """[W2b-6] the raw column counts ONLY the fresh fetch loop;
+        seed rows re-enter after it — a seed-only source honestly
+        shows raw 0 / kept N (the careerjet raw-0/kept-2,160 class
+        from run 2 on). The seed cell makes kept > raw the documented
+        CARRY, never a fetch anomaly."""
+        monkeypatch.setattr(isw, "OUT_DIR", tmp_path)
+        # budget 0: every roster fetcher skips at the budget guard —
+        # the ONLY rows are the seed carries (hermetic, no fetches)
+        row = {"title": "Remote Estimator", "company": "Acme",
+               "loc": "Remote", "posted": "2026-10-20",
+               "desc": "construction", "source": "careerjet",
+               "url": "u1", "srcMode": "geo", "seedGen": 1,
+               "region": "remote", "affirmTier": "title",
+               "level": "corp_office", "staffingBrand": False,
+               "query": "construction estimator"}
+        (tmp_path / "home_services_us.json").write_text(json.dumps(
+            {"ran_at": "2026-10-21T13:00:00Z", "jobs": [row]}))
+        rc = isw.run("home_services_us", budget_seconds=0)
+        assert rc == 0
+        d = json.loads(
+            (tmp_path / "home_services_us.json").read_text())
+        assert d["per_query"]["careerjet"] == {
+            "construction estimator": {"raw": 0, "kept": 1,
+                                        "seed": 1}}
+        rep = (tmp_path / "home_services_us.report.md").read_text()
+        assert "kept > raw is the carry" in rep
+        assert "desc upgrades (pre-gate)" in rep      # [W2b-12] relabel
 
 
 class TestJdCacheConsult:

@@ -507,12 +507,17 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
     rows: list[dict] = []
     per_source_raw: dict[str, int] = {}
     # S47-B §6.4 (A2-10/F20): per-query raw/kept yield — {source:
-    # {query: {"raw": N, "kept": M}}} in the artifact (only the
-    # titleMatchedQuery boolean survived before; raw rows were
-    # discarded and the §4 vertical-yield analysis had to run by
-    # token proxy)
+    # {query: {"raw": N, "kept": M, "seed": K}}} in the artifact
+    # (only the titleMatchedQuery boolean survived before; raw rows
+    # were discarded and the §4 vertical-yield analysis had to run by
+    # token proxy). [W2b-6] the seed column: raw counts ONLY the fresh
+    # fetch loop; seed rows re-enter after it (the prior-artifact
+    # union) and count in kept — from artifact-v2.2 onward careerjet
+    # can honestly show raw 0 / kept thousands; the seed cell makes
+    # the kept>raw asymmetry self-explaining instead of anomalous.
     per_q_raw: dict[str, dict[str, int]] = {}
     per_q_kept: dict[str, dict[str, int]] = {}
+    per_q_seed: dict[str, dict[str, int]] = {}
     t0 = time.time()
     for name, fn, args, mode in sources:
         if name in skip_set:
@@ -680,6 +685,11 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
             _roster = r.get("_roster") or _SRC_TO_ROSTER.get(src, src)
             qd = per_q_kept.setdefault(_roster, {})
             qd[q] = qd.get(q, 0) + 1
+            # [W2b-6] the kept portion that re-entered from the prior
+            # artifact — kept - raw on a seed-only cell is the carry
+            if r.get("_seed"):
+                qsd = per_q_seed.setdefault(_roster, {})
+                qsd[q] = qsd.get(q, 0) + 1
         gate_counts[f"kept:{lvl}"] = gate_counts.get(f"kept:{lvl}", 0) + 1
         gate_counts[f"kept:region_{reg}"] = gate_counts.get(
             f"kept:region_{reg}", 0) + 1
@@ -705,7 +715,8 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
         for _q in (set(per_q_raw.get(_roster, {}))
                    | set(per_q_kept.get(_roster, {}))):
             _t[_q] = {"raw": per_q_raw.get(_roster, {}).get(_q, 0),
-                      "kept": per_q_kept.get(_roster, {}).get(_q, 0)}
+                      "kept": per_q_kept.get(_roster, {}).get(_q, 0),
+                      "seed": per_q_seed.get(_roster, {}).get(_q, 0)}
         if len(_t) > _cap:
             _t = dict(sorted(_t.items(),
                             key=lambda kv: (-(kv[1]["raw"]
@@ -781,13 +792,24 @@ def run(industry_slug: str, skip: str = "", budget_seconds: int = 2400,
                      for s in (name,) + _SRC_ALIAS.get(name, ()))
         lines.append(f"- {name}: {v} (raw {raw}, kept {kept_n})")
     # S47-B §6.5/§6.7/§6.4: the consult + stamp + yield lines
+    # [W2b-12] PRE-GATE label, deliberate: jd_cache_hits counts at
+    # UPGRADE time, before the affirm/level gates — some upgrades land
+    # on rows the gates then drop, so "N desc upgrades" must never be
+    # read as "N kept rows enriched" (the increment stays where it is:
+    # the pre-gate position is the diagnostic that says the cache is
+    # being used at all).
     lines.append(f"- jd_cache consult: {env['jd_cache']} "
-                 f"({jd_cache_hits} desc upgrades — S47-B §6.5)")
+                 f"({jd_cache_hits} desc upgrades (pre-gate) — "
+                 f"S47-B §6.5, W2b-12)")
     lines.append(f"- adzuna category: {adzuna_stamped} stamped, "
                  f"0 filtered (stamp-don't-filter — DESIGN-S47 §6.7)")
     lines.append(f"- per-query yield: "
                  f"{sum(len(v) for v in per_query.values())} "
-                 f"source×query cells persisted (artifact per_query)")
+                 f"source×query cells persisted (artifact per_query; "
+                 f"columns — raw: fresh fetch yield only, kept: all "
+                 f"kept rows incl. seed carries, seed: the kept "
+                 f"portion re-entering from the prior artifact — "
+                 f"[W2b-6] kept > raw is the carry, not an anomaly)")
     lines += ["", "## Gate counters", ""]
     for k in sorted(gate_counts):
         lines.append(f"- {k}: {gate_counts[k]}")
