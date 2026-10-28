@@ -100,3 +100,8 @@ board-watch frontage_us_fulltime FAILED: list fetch crashed (HTTPError: 404 Clie
 board-watch frontage_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))) — UNREACHABLE, state untouched; streak 1/14
 (2026-10-26T13:42:18)
 
+Frontage Laboratories board-watch 2026-10-28: +0 new, -0 gone (92 active [frontage_us_fulltime])
+REPOSTED (1)
+REPOSTED Associate Scientist, Pharmaceutical Analysis-Microbiology  (label reset 117d→1d, startDate +118d)
+(2026-10-28T13:34:39)
+
