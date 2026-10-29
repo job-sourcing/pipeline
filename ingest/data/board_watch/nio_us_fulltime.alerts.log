@@ -20,3 +20,6 @@ GONE LLM Algorithmic Optimization Engineer (first seen 2026-09-27)
 GONE Sr. Hypervisor/Linux Kernel Developer - Software Platform (first seen 2026-09-27)
 (2026-10-16T12:22:38)
 
+board-watch nio_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
+(2026-10-29T13:48:00)
+
