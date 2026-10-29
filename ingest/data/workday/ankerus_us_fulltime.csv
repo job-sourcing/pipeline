@@ -1168,3 +1168,60 @@ Anker Innovations is committed to a diverse and inclusive workplace. We are an e
 If you require reasonable accommodation to participate in our recruitment process, please contact us at hr-recruit@anker-in.com.
 
 FRAUD ALERT: Anker Innovations is aware of fraudulent job offers being made by individuals impersonating our recruiters. Please be advised that Anker will NEVER ask for payment or banking details during the hiring process.",4377,https://anker-in.jobs.feishu.cn/index/position/7700917437920168246/detail,,,,,,,not_checked,,2026-10-26,,2026-10-29,,3,startDate,false,0,,,,,,2026-10-26,,,,,,,,
+7700423301667752246,【US】Product Security Engineer — Connected Devices,Anker (US),Anker,Full time,Posted 4 Days Ago,2026-10-25,4,Seattle,1,Seattle,false,,United States,,0,"Why Join us:
+Anker Innovations is a global leader in smart charging technologies and a developer of consumer products for the home, car, and mobile life. Founded in 2011, we've brought our products to 100+ countries and regions with more than 140 million users and a revenue of 2000+ million USD in 2022.
+
+Anker Innovations has successfully built Anker, a world-renowned high-end innovative charging brand, and launched intelligent hardware brands such as Eufy, Nebula, and Soundcore to further explore smart charging, smart voice, smart home and other fields.
+
+Today, we have a total of 4000+ employees in 15 offices across North America, Europe, Australia, Asia, LATAM and the Middle East. We are always looking for top talents like you.
+
+For more information, please visit: https://us.anker.com/
+
+Location: Onsite at Bellevue, Washington or San Jose, California
+
+About the Role：
+We build connected home and personal devices used in households across the US. Our product security team's scope spans the full attack surface of those products — the devices themselves, the companion mobile apps, and the cloud services behind them.
+
+Responsibilities:
+This posting covers multiple openings across the areas below.
+- Own cryptographic and identity standards used across our product lines, and the trust model connecting device, app, and cloud
+- Build and operate PKI, HSM integration, and manufacturing-line key provisioning
+- Own the OTA client and backend: image signing, rollback protection, A/B update recovery, staged rollout, and fleet update adoption
+- Develop and operate CI security gates, SBOM pipelines, and evidence infrastructure across firmware, mobile, and cloud
+- Implement hardware root of trust, secure boot, encrypted storage, and OS hardening on embedded Linux and RTOS
+- Own wireless and provisioning security: BLE pairing, Wi-Fi onboarding, Matter device attestation (DAC/PAI)
+- Own mobile app security: third-party SDK governance, secure storage, certificate pinning, session and token lifecycle
+- Design and implement cloud authorization models, device authentication, and least-privilege access controls for systems handling customer data
+- Implement technical controls for telemetry data minimization
+职位要求
+Basic Qualifications:
+- 5+ years in security engineering, or 7+ in software/embedded/cloud engineering with 3+ focused on security
+- Have owned a security capability end to end — design through maintenance
+- Production coding ability in at least one of C/C++/Rust, Go, Python, Kotlin, or Swift
+- Working knowledge of applied cryptography and its common failure modes
+- Able to explain a security requirement in terms a product team can build against, and hold it under schedule pressure
+
+Preferred Qualifications:
+- Embedded security (TrustZone/TEE/SE, secure boot implementation)
+- PKI and HSM operations (PKCS#11/KMIP)
+- OTA and release infrastructure (TUF/Uptane)
+- DevSecOps and SBOM tooling
+- BLE/Wi-Fi/Matter protocol security
+- iOS and Android app hardening
+- IAM and multi-tenant authorization
+- Privacy engineering.
+
+Perks of Benefits:
+Our company benefits are designed to convey company culture and values, to create an efficient and inspiring work environment, and to support our employees to give their best in both work and life. We offer the following benefits to eligible employees:
+10 Days Company Recognized Holidays
+Paid time Off - up to 15 Days
+401(k) and company match
+Medical & Dental & Vision Insurance Coverage
+Donation Match
+Employee Assistant Program
+
+【For Pay Transparency】Compensation Description (annually)
+The base salary range for this position in the selected city is $250,000 - $400,000 annually. Compensation may vary outside of this range depending on a number of factors, including a candidate’s qualifications, skills, competencies and experience, and location.
+Base pay is one part of the Total Package that is provided to compensate and recognize employees for their work, and this role is eligible for additional discretionary bonuses/ incentives/ restricted stock units.
+
+Anker Innovations is committed to a diverse and inclusive workplace. Anker Innovations is an equal opportunity employer and does not discriminate based on race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status. Please contact hr-recruit@anker-in.com if you have any questions.",4408,https://anker-in.jobs.feishu.cn/index/position/7700423301667752246/detail,,,,,,,not_checked,,2026-10-29,,2026-10-29,,4,startDate,false,0,,,,,,2026-10-25,,,,,,,,
