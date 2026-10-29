@@ -1,153 +1,157 @@
-{"reqId": "nnq1MvOwBf", "title": "Accounts Payable (AP) Assistant", "first_seen": "2026-10-20", "last_seen": "2026-10-28", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-19", "startDate_first": "2026-10-19"}
-{"reqId": "1R8guqLQJm", "title": "Automation Technician (IB4)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "av4td6NY24", "title": "BGA Rework Technician -Swing (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-16", "startDate_first": "2026-09-16"}
-{"reqId": "Q3OUed6hgB", "title": "BGA Technician", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-17", "startDate_first": "2026-09-17"}
-{"reqId": "moYkYI8wDk", "title": "BMC Firmware Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-18", "startDate_first": "2026-08-18"}
-{"reqId": "OcIyho7TuL", "title": "Business Analyst II – Electronics Services (HPE Product)", "first_seen": "2026-10-08", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-08", "startDate_first": "2026-10-08"}
-{"reqId": "seADYBM7fJ", "title": "Business Program Manager (Austin Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
-{"reqId": "JF44qZANuy", "title": "Business Program Manager (Hou Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "Oyf8KmI9OT", "title": "Business Project Manager or Analyst (Hou)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "CKJVT7Syyo", "title": "Business Systems Analyst", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
-{"reqId": "BzhdFHi3KD", "title": "Buyer - Day Shift", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "8wHafLdrgs", "title": "Buyer (NVD - SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "5J5zoK3BeA", "title": "Cost Accounting Assistant / Junior Cost Accountant", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-07", "startDate_first": "2026-07-07"}
-{"reqId": "QP5P5AfCQX", "title": "Cost Analyst", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "SyL74KTrVW", "title": "Data Analyst", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
-{"reqId": "iENUp15Elo", "title": "Data Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
-{"reqId": "aAdBpU3tgi", "title": "Database Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "wzGSZzwCgO", "title": "Debug Technician", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "QH7o29WfWM", "title": "Debug Technician -  IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-21", "startDate_first": "2026-08-21"}
-{"reqId": "4CUkyH5KuV", "title": "Diagnostic Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "TVkwp1G8Lm", "title": "Document Control Specialist (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "qKhFiuaI4r", "title": "Document/Process Control Engineer (HPE – SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "MMXudAySvN", "title": "Document/Process Control Engineer (SW)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "AxiPt2IfCb", "title": "EHS Engineer/Specialist - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-14", "startDate_first": "2026-07-14"}
-{"reqId": "2xxaVBwO9b", "title": "Electrical Engineer (HH)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "7pitCecJM3", "title": "Electrical Product Engineer - IB4 (2nd Shift)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-27", "startDate_first": "2026-08-27"}
-{"reqId": "DtIxfseL5v", "title": "Engineering and Quality Manager (HPE-SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "Le6Eg32I4y", "title": "Engineering Program Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "BGiM5DdDYv", "title": "Engineering Program Manager + Technical Account Manager (HH)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "jE9fvCDEDW", "title": "Expense Analyst (C Project)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "9Ge2YsBiTr", "title": "Facilities Electrical Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "uq51mCuDYh", "title": "Facilities Engineer (FE) (EPDII)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "ljBOmSGi2f", "title": "Facilities Technician (EPDII)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-08", "startDate_first": "2026-07-08"}
-{"reqId": "pVYzUkgd9w", "title": "Facility Maintenance Technician", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "mgDnFhA53S", "title": "Facility Technician (G-Project)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "roa6KJT0mI", "title": "Failure Analysis Engineer - Day/Swing Shift - NVD", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "abX3bZFbmT", "title": "Failure Analysis Engineer (Austin Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-10", "startDate_first": "2026-08-10"}
-{"reqId": "WVJUuPAzTB", "title": "Failure Analysis Engineer (FAE) (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "dWlvR1dMqG", "title": "Failure Analysis Engineer (NVD SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "BlG2OR9NIS", "title": "Failure Analysis Engineer(EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "bgafnoiiQC", "title": "Finance Specialist", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-06-29", "startDate_first": "2026-06-29"}
-{"reqId": "ZNTL2DzCpx", "title": "Full Stack Web Developer", "first_seen": "2026-10-15", "last_seen": "2026-10-28", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-14", "startDate_first": "2026-10-14"}
-{"reqId": "1jbDJkV893", "title": "Full Stack Web Developer (WI)", "first_seen": "2026-10-15", "last_seen": "2026-10-28", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-14", "startDate_first": "2026-10-14"}
-{"reqId": "8DubgaW12o", "title": "Global Service Project Coordinator", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-14", "startDate_first": "2026-07-14"}
-{"reqId": "1XfkxmL3IC", "title": "Global Supply Chain Manager (Austin Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
-{"reqId": "Mf3kEtgDyd", "title": "Hardware Test Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "ORguysc65F", "title": "HR Specialist - HRIS &amp; HR Data", "first_seen": "2026-10-16", "last_seen": "2026-10-28", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-15", "startDate_first": "2026-10-15"}
-{"reqId": "w92pZZyS4E", "title": "HR Specialist (Employee Training)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-09", "startDate_first": "2026-09-09"}
-{"reqId": "05kouAGWDx", "title": "Human Resources Generalist (IB3)", "first_seen": "2026-09-29", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-28", "startDate_first": "2026-09-28"}
-{"reqId": "yimsVXTMlU", "title": "HVAC Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "PcGAxJh4ZB", "title": "IE Manufacturing Technician — IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "EJmSsTG09Q", "title": "Inventory Analyst (EPDII) - Swing/Graveyard", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "KPkGxyw4Aj", "title": "Inventory Control Analyst", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "gVNNz4qi7C", "title": "Inventory Controller", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "LOEVS84zZf", "title": "IT Cybersecurity Analyst", "first_seen": "2026-10-22", "last_seen": "2026-10-28", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-21", "startDate_first": "2026-10-21"}
-{"reqId": "geLtZYnj22", "title": "IT Help Desk Technician - Day Shift", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-18", "startDate_first": "2026-08-18"}
-{"reqId": "jzyuQu1Lbr", "title": "IT Help Desk Technician - Swing Shift", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-21", "startDate_first": "2026-08-21"}
-{"reqId": "1SoqUBNQXz", "title": "IT Helpdesk Technician", "first_seen": "2026-10-08", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-07", "startDate_first": "2026-10-07"}
-{"reqId": "YSsL5cdmow", "title": "IT Infrastructure Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-02", "startDate_first": "2026-09-02"}
-{"reqId": "M461bIQRha", "title": "IT Operations &amp; Collaboration Coordinator", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "21n9jllyMi", "title": "IT Project Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "jz1TFcnfwf", "title": "IT System Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "z1wdjG6qrC", "title": "IT System Administrator -  IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "pnhzReHdiC", "title": "Junior Business Program Manager (Austine Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
-{"reqId": "hPgPqNWvdM", "title": "Logistics Coordinator – Supply Chain", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "6M0CRRkygi", "title": "Manufacturing Engineer - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-24", "startDate_first": "2026-08-24"}
-{"reqId": "gxUsyI2N8c", "title": "Manufacturing Engineer (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "I3bdGgsdkx", "title": "Manufacturing Engineer (Swing Shift)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "mPeB4QKdOS", "title": "Material Control Specialist – Supply Chain", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "i8I1l5bEtl", "title": "Material Program Manager (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "J18Zq4SGcc", "title": "Materials Manager (G-Project)", "first_seen": "2026-10-17", "last_seen": "2026-10-28", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-16", "startDate_first": "2026-10-16"}
-{"reqId": "phi5b26Wf1", "title": "Mechanical - Thermal Engineer (HH)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "YZpZ4CA92U", "title": "Mechanical Design Engineer – Server Chassis (Creo Required)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-06-29", "startDate_first": "2026-06-29"}
-{"reqId": "sLopHFlJQh", "title": "Mechanical Technician (EPDII)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "33G7rKH3ud", "title": "NPI Engineer - IB4", "first_seen": "2026-10-23", "last_seen": "2026-10-28", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-22", "startDate_first": "2026-10-22"}
-{"reqId": "q1fQAMIY3v", "title": "Operations Production Lead - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "5p4WcwZe3O", "title": "Operations Program Manager (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-21", "startDate_first": "2026-09-21"}
-{"reqId": "fMNbWJxMDU", "title": "Operations Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "Xbnwmw02uo", "title": "Payroll Specialist", "first_seen": "2026-10-01", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-30", "startDate_first": "2026-09-30"}
-{"reqId": "vjAc8GA8kM", "title": "PCB Final Quality Control (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-14", "startDate_first": "2026-07-14"}
-{"reqId": "5vAtuByWXh", "title": "PCBA Mechanical Assembler - Day/ Swing (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "pD9uBM0c41", "title": "PCBA Senior Program Manager (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "38Z4pMcqKc", "title": "POD Test Engineer - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "twjTkbcias", "title": "POWER DESIGN ENGINEER", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "ReYDXkRgzt", "title": "Process Engineer (NVD SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "oUUANviyEx", "title": "Product Engineer - Manufacturing Hardware", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "y85rnEzrMe", "title": "Product Engineer (HPE – SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "aNLHAFmKQa", "title": "Product Engineer (NC Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "KBfI1cNbIo", "title": "Product Engineer (NPI / Manufacturing Operations)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-27", "startDate_first": "2026-07-27"}
-{"reqId": "j2fi0dN2Mf", "title": "Product Engineer (SW)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "E3EZAVFRVo", "title": "Product Engineer Assistant", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-21", "startDate_first": "2026-08-21"}
-{"reqId": "iskdL5uwSc", "title": "Production Manager – NPI Manufacturing", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-06", "startDate_first": "2026-08-06"}
-{"reqId": "NfCYknJQca", "title": "Production Manager (NC Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "DSKujLtgMB", "title": "Production Planner", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "C5MZW7yTt9", "title": "Production Planning And fulfillment (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "DntWqIGfCa", "title": "Production Planning and Fulfillment (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "jdDMa8uWGi", "title": "Production Program Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
-{"reqId": "MDX8ueYtH3", "title": "Production Supervisor (EPD II)", "first_seen": "2026-10-24", "last_seen": "2026-10-28", "last_postedOn": "Posted Today", "last_startDate": "2026-10-24", "startDate_first": "2026-10-24"}
-{"reqId": "UjPzMx6rUv", "title": "Production Supervisor/Manager - RMA (Manufacturing)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "VRBfVspePj", "title": "Production Support Coordinator", "first_seen": "2026-10-03", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-02", "startDate_first": "2026-10-02"}
-{"reqId": "ff0L9obarO", "title": "Program Manager (PM) Assistant (EPD II)", "first_seen": "2026-10-24", "last_seen": "2026-10-28", "last_postedOn": "Posted Today", "last_startDate": "2026-10-24", "startDate_first": "2026-10-24"}
-{"reqId": "zPJed0oLTv", "title": "Project Coordinator - Supply Chain (HPE-SVC-A)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "mx4IAoRHbh", "title": "Project Coordinator - Supply Chain (SW)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "3hz3kZLzGg", "title": "Project Coordinator – Supply Chain (HPE – SVC-J)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "jbyCJ80wzj", "title": "Project Coordinator (NVD - SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "7SyWxXSPBr", "title": "Project Manager (SJ)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "bwyAuPRAmi", "title": "Quality Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "ej3aRNjCsP", "title": "Quality Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "kVWi7StPNs", "title": "Quality Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-17", "startDate_first": "2026-08-17"}
-{"reqId": "eKVchLhmzH", "title": "Quality Engineer (EPDII)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "c7KsW6gTch", "title": "Quality Engineer (HPE-SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "MGUNZlXFGi", "title": "Quality Engineer (NVD SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "mL7ZTZJq5r", "title": "Quotation Specialist", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "nn45oyB5dE", "title": "Regional Quality Engineer (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "nGXZEYk8b2", "title": "Rework Technician - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-21", "startDate_first": "2026-08-21"}
-{"reqId": "4hOXtKCUpr", "title": "SAP Consultant", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "CvbY4Nc783", "title": "Senior HR Generalist / HR Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-07", "startDate_first": "2026-08-07"}
-{"reqId": "bej1TK0Ju9", "title": "Senior Network Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "tWO3ajqriK", "title": "Senior Program Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-09", "startDate_first": "2026-07-09"}
-{"reqId": "zqS40mlOLF", "title": "Senior System Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-14", "startDate_first": "2026-09-14"}
-{"reqId": "5G6MbzcF3f", "title": "Senior System Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "Di2uG7mgqD", "title": "Service Operator (Houston/Austin)", "first_seen": "2026-10-02", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
-{"reqId": "OrghLw5Uvv", "title": "Service Operator (Mt. Pleasant)", "first_seen": "2026-10-02", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
-{"reqId": "3ALnUoziWk", "title": "Service Project Manager (Austin Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
-{"reqId": "MLB1Oev8BA", "title": "Shipping Planner", "first_seen": "2026-10-10", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-09", "startDate_first": "2026-10-09"}
-{"reqId": "E0O1xyL5jx", "title": "Site Reliability Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "8cZbwz4GdB", "title": "Site Reliability Engineer (Sunnyvale)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "IWymepiwsw", "title": "SMT Manufacturing Engineer - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
-{"reqId": "Ps98jAmoZW", "title": "SMT Process Engineer (AOI/SPI/XRAY) IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-11", "startDate_first": "2026-09-11"}
-{"reqId": "JuqeuqMHHX", "title": "SMT Process Technician - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-18", "startDate_first": "2026-08-18"}
-{"reqId": "RkNrvEoHo5", "title": "SMT Production Supervisor - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
-{"reqId": "laV3K6XBi0", "title": "Software Engineer Leader", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "AaSjVicmSM", "title": "Supplier Quality Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "583NrTfeJM", "title": "Supply Chain Management  (NVD -SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "kc4H0qWLW9", "title": "Supply Chain Program Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "rCRu9Ii77k", "title": "System Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "FKoqC9AQfh", "title": "System Engineer (Houston/Austin)", "first_seen": "2026-10-02", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
-{"reqId": "eUC1enzKsX", "title": "System Engineer (Mt. Pleasant)", "first_seen": "2026-10-02", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
-{"reqId": "vYxVajsVrh", "title": "System/Network Engineer (Houston/Austin)", "first_seen": "2026-10-02", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
-{"reqId": "r2HyS5S8oS", "title": "System/Network Engineer (Mt. Pleasant)", "first_seen": "2026-10-02", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
-{"reqId": "W24hPPHLCy", "title": "Systems Administrator (G-Project)", "first_seen": "2026-10-21", "last_seen": "2026-10-28", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-20", "startDate_first": "2026-10-20"}
-{"reqId": "siGdhKEf34", "title": "Test Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "XfIBipwilI", "title": "Test Engineer - Day Shift - (NVD)", "first_seen": "2026-10-01", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-09-30", "startDate_first": "2026-09-30"}
-{"reqId": "jNAV1JzYsH", "title": "Test Engineer - Swing Shift - (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-17", "startDate_first": "2026-08-17"}
-{"reqId": "upLa68qJmf", "title": "Test Engineer (Hardware)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "bbdEVewLY4", "title": "Test Engineer (NVD SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "Ggq8AjvTUN", "title": "Test Technician - Day/Swing shift (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "qVvZ4aQex3", "title": "Thermal Engineer - Server &amp; Liquid Cooling Systems", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "Tepnn39eXo", "title": "Thermal Engineer (HH)", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "GW0r9mHgk0", "title": "Warehouse Assistant -Accountant", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "sNaIL03Sd8", "title": "Warehouse Manager - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": "2026-08-16", "startDate_first": "2026-08-16"}
-{"reqId": "SK5Snfr6GY", "title": "Warehouse Receiving Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
-{"reqId": "qlIJoDAMUl", "title": "Warehouse Shipping Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-10-28", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "nnq1MvOwBf", "title": "Accounts Payable (AP) Assistant", "first_seen": "2026-10-20", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-19", "startDate_first": "2026-10-19"}
+{"reqId": "1R8guqLQJm", "title": "Automation Technician (IB4)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "av4td6NY24", "title": "BGA Rework Technician -Swing (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-16", "startDate_first": "2026-09-16"}
+{"reqId": "Q3OUed6hgB", "title": "BGA Technician", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-17", "startDate_first": "2026-09-17"}
+{"reqId": "moYkYI8wDk", "title": "BMC Firmware Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-18", "startDate_first": "2026-08-18"}
+{"reqId": "OcIyho7TuL", "title": "Business Analyst II – Electronics Services (HPE Product)", "first_seen": "2026-10-08", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-08", "startDate_first": "2026-10-08"}
+{"reqId": "seADYBM7fJ", "title": "Business Program Manager (Austin Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
+{"reqId": "6MAggYr7ea", "title": "Business Program Manager (BPM) - IB4", "first_seen": "2026-10-29", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-28", "startDate_first": "2026-10-28"}
+{"reqId": "JF44qZANuy", "title": "Business Program Manager (Hou Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "Oyf8KmI9OT", "title": "Business Project Manager or Analyst (Hou)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "CKJVT7Syyo", "title": "Business Systems Analyst", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
+{"reqId": "BzhdFHi3KD", "title": "Buyer - Day Shift", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "8wHafLdrgs", "title": "Buyer (NVD - SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "5J5zoK3BeA", "title": "Cost Accounting Assistant / Junior Cost Accountant", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-07", "startDate_first": "2026-07-07"}
+{"reqId": "QP5P5AfCQX", "title": "Cost Analyst", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "SyL74KTrVW", "title": "Data Analyst", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
+{"reqId": "iENUp15Elo", "title": "Data Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
+{"reqId": "aAdBpU3tgi", "title": "Database Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "wzGSZzwCgO", "title": "Debug Technician", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "QH7o29WfWM", "title": "Debug Technician -  IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-21", "startDate_first": "2026-08-21"}
+{"reqId": "4CUkyH5KuV", "title": "Diagnostic Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "TVkwp1G8Lm", "title": "Document Control Specialist (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "qKhFiuaI4r", "title": "Document/Process Control Engineer (HPE – SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "MMXudAySvN", "title": "Document/Process Control Engineer (SW)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "AxiPt2IfCb", "title": "EHS Engineer/Specialist - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-14", "startDate_first": "2026-07-14"}
+{"reqId": "2xxaVBwO9b", "title": "Electrical Engineer (HH)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "7pitCecJM3", "title": "Electrical Product Engineer - IB4 (2nd Shift)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-27", "startDate_first": "2026-08-27"}
+{"reqId": "DtIxfseL5v", "title": "Engineering and Quality Manager (HPE-SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "5nte0RCue7", "title": "Engineering Manager - AI Server RMA (Field Repair) Operation", "first_seen": "2026-10-29", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-28", "startDate_first": "2026-10-28"}
+{"reqId": "Le6Eg32I4y", "title": "Engineering Program Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "BGiM5DdDYv", "title": "Engineering Program Manager + Technical Account Manager (HH)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "jE9fvCDEDW", "title": "Expense Analyst (C Project)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "9Ge2YsBiTr", "title": "Facilities Electrical Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "uq51mCuDYh", "title": "Facilities Engineer (FE) (EPDII)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "ljBOmSGi2f", "title": "Facilities Technician (EPDII)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-08", "startDate_first": "2026-07-08"}
+{"reqId": "pVYzUkgd9w", "title": "Facility Maintenance Technician", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "mgDnFhA53S", "title": "Facility Technician (G-Project)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "roa6KJT0mI", "title": "Failure Analysis Engineer - Day/Swing Shift - NVD", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "abX3bZFbmT", "title": "Failure Analysis Engineer (Austin Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-10", "startDate_first": "2026-08-10"}
+{"reqId": "WVJUuPAzTB", "title": "Failure Analysis Engineer (FAE) (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "dWlvR1dMqG", "title": "Failure Analysis Engineer (NVD SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "BlG2OR9NIS", "title": "Failure Analysis Engineer(EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "bgafnoiiQC", "title": "Finance Specialist", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-06-29", "startDate_first": "2026-06-29"}
+{"reqId": "ZNTL2DzCpx", "title": "Full Stack Web Developer", "first_seen": "2026-10-15", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-14", "startDate_first": "2026-10-14"}
+{"reqId": "1jbDJkV893", "title": "Full Stack Web Developer (WI)", "first_seen": "2026-10-15", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-14", "startDate_first": "2026-10-14"}
+{"reqId": "8DubgaW12o", "title": "Global Service Project Coordinator", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-14", "startDate_first": "2026-07-14"}
+{"reqId": "1XfkxmL3IC", "title": "Global Supply Chain Manager (Austin Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
+{"reqId": "Mf3kEtgDyd", "title": "Hardware Test Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "ORguysc65F", "title": "HR Specialist - HRIS &amp; HR Data", "first_seen": "2026-10-16", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-15", "startDate_first": "2026-10-15"}
+{"reqId": "w92pZZyS4E", "title": "HR Specialist (Employee Training)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-09", "startDate_first": "2026-09-09"}
+{"reqId": "05kouAGWDx", "title": "Human Resources Generalist (IB3)", "first_seen": "2026-09-29", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-28", "startDate_first": "2026-09-28"}
+{"reqId": "yimsVXTMlU", "title": "HVAC Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "PcGAxJh4ZB", "title": "IE Manufacturing Technician — IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "EJmSsTG09Q", "title": "Inventory Analyst (EPDII) - Swing/Graveyard", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "KPkGxyw4Aj", "title": "Inventory Control Analyst", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "gVNNz4qi7C", "title": "Inventory Controller", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "LOEVS84zZf", "title": "IT Cybersecurity Analyst", "first_seen": "2026-10-22", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-21", "startDate_first": "2026-10-21"}
+{"reqId": "geLtZYnj22", "title": "IT Help Desk Technician - Day Shift", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-18", "startDate_first": "2026-08-18"}
+{"reqId": "jzyuQu1Lbr", "title": "IT Help Desk Technician - Swing Shift", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-21", "startDate_first": "2026-08-21"}
+{"reqId": "1SoqUBNQXz", "title": "IT Helpdesk Technician", "first_seen": "2026-10-08", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-07", "startDate_first": "2026-10-07"}
+{"reqId": "YSsL5cdmow", "title": "IT Infrastructure Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-02", "startDate_first": "2026-09-02"}
+{"reqId": "M461bIQRha", "title": "IT Operations &amp; Collaboration Coordinator", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "21n9jllyMi", "title": "IT Project Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "jz1TFcnfwf", "title": "IT System Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "z1wdjG6qrC", "title": "IT System Administrator -  IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "pnhzReHdiC", "title": "Junior Business Program Manager (Austine Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
+{"reqId": "hPgPqNWvdM", "title": "Logistics Coordinator – Supply Chain", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "6M0CRRkygi", "title": "Manufacturing Engineer - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-24", "startDate_first": "2026-08-24"}
+{"reqId": "gxUsyI2N8c", "title": "Manufacturing Engineer (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "I3bdGgsdkx", "title": "Manufacturing Engineer (Swing Shift)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "mPeB4QKdOS", "title": "Material Control Specialist – Supply Chain", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "i8I1l5bEtl", "title": "Material Program Manager (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "J18Zq4SGcc", "title": "Materials Manager (G-Project)", "first_seen": "2026-10-17", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-16", "startDate_first": "2026-10-16"}
+{"reqId": "phi5b26Wf1", "title": "Mechanical - Thermal Engineer (HH)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "YZpZ4CA92U", "title": "Mechanical Design Engineer – Server Chassis (Creo Required)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-06-29", "startDate_first": "2026-06-29"}
+{"reqId": "sLopHFlJQh", "title": "Mechanical Technician (EPDII)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "33G7rKH3ud", "title": "NPI Engineer - IB4", "first_seen": "2026-10-23", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-22", "startDate_first": "2026-10-22"}
+{"reqId": "mHwcq6Plj9", "title": "NPI Program Manager - IB4", "first_seen": "2026-10-29", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-28", "startDate_first": "2026-10-28"}
+{"reqId": "q1fQAMIY3v", "title": "Operations Production Lead - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "5p4WcwZe3O", "title": "Operations Program Manager (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-21", "startDate_first": "2026-09-21"}
+{"reqId": "fMNbWJxMDU", "title": "Operations Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "Xbnwmw02uo", "title": "Payroll Specialist", "first_seen": "2026-10-01", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-30", "startDate_first": "2026-09-30"}
+{"reqId": "vjAc8GA8kM", "title": "PCB Final Quality Control (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-14", "startDate_first": "2026-07-14"}
+{"reqId": "5vAtuByWXh", "title": "PCBA Mechanical Assembler - Day/ Swing (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "pD9uBM0c41", "title": "PCBA Senior Program Manager (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "38Z4pMcqKc", "title": "POD Test Engineer - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "twjTkbcias", "title": "POWER DESIGN ENGINEER", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "ReYDXkRgzt", "title": "Process Engineer (NVD SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "oUUANviyEx", "title": "Product Engineer - Manufacturing Hardware", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "y85rnEzrMe", "title": "Product Engineer (HPE – SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "aNLHAFmKQa", "title": "Product Engineer (NC Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "KBfI1cNbIo", "title": "Product Engineer (NPI / Manufacturing Operations)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-27", "startDate_first": "2026-07-27"}
+{"reqId": "j2fi0dN2Mf", "title": "Product Engineer (SW)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "E3EZAVFRVo", "title": "Product Engineer Assistant", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-21", "startDate_first": "2026-08-21"}
+{"reqId": "iskdL5uwSc", "title": "Production Manager – NPI Manufacturing", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-06", "startDate_first": "2026-08-06"}
+{"reqId": "NfCYknJQca", "title": "Production Manager (NC Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "DSKujLtgMB", "title": "Production Planner", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "DntWqIGfCa", "title": "Production Planning and Fulfillment (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "C5MZW7yTt9", "title": "Production Planning And fulfillment (EPD II)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "jdDMa8uWGi", "title": "Production Program Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
+{"reqId": "MDX8ueYtH3", "title": "Production Supervisor (EPD II)", "first_seen": "2026-10-24", "last_seen": "2026-10-29", "last_postedOn": "Posted Today", "last_startDate": "2026-10-24", "startDate_first": "2026-10-24"}
+{"reqId": "UjPzMx6rUv", "title": "Production Supervisor/Manager - RMA (Manufacturing)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "VRBfVspePj", "title": "Production Support Coordinator", "first_seen": "2026-10-03", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-02", "startDate_first": "2026-10-02"}
+{"reqId": "ff0L9obarO", "title": "Program Manager (PM) Assistant (EPD II)", "first_seen": "2026-10-24", "last_seen": "2026-10-29", "last_postedOn": "Posted Today", "last_startDate": "2026-10-24", "startDate_first": "2026-10-24"}
+{"reqId": "zPJed0oLTv", "title": "Project Coordinator - Supply Chain (HPE-SVC-A)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "mx4IAoRHbh", "title": "Project Coordinator - Supply Chain (SW)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "3hz3kZLzGg", "title": "Project Coordinator – Supply Chain (HPE – SVC-J)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "jbyCJ80wzj", "title": "Project Coordinator (NVD - SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "7SyWxXSPBr", "title": "Project Manager (SJ)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "ej3aRNjCsP", "title": "Quality Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "bwyAuPRAmi", "title": "Quality Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "kVWi7StPNs", "title": "Quality Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-17", "startDate_first": "2026-08-17"}
+{"reqId": "eKVchLhmzH", "title": "Quality Engineer (EPDII)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "c7KsW6gTch", "title": "Quality Engineer (HPE-SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "MGUNZlXFGi", "title": "Quality Engineer (NVD SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "MjX4BXt0PV", "title": "Quality Manager –  AI Server RMA (Field Repair) Operation", "first_seen": "2026-10-29", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-28", "startDate_first": "2026-10-28"}
+{"reqId": "mL7ZTZJq5r", "title": "Quotation Specialist", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "nn45oyB5dE", "title": "Regional Quality Engineer (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "nGXZEYk8b2", "title": "Rework Technician - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-21", "startDate_first": "2026-08-21"}
+{"reqId": "4hOXtKCUpr", "title": "SAP Consultant", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "CvbY4Nc783", "title": "Senior HR Generalist / HR Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-07", "startDate_first": "2026-08-07"}
+{"reqId": "JdMHbWRVxu", "title": "Senior Industrial Engineer–AI Server RMA (Field Repair) Operation", "first_seen": "2026-10-29", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-28", "startDate_first": "2026-10-28"}
+{"reqId": "bej1TK0Ju9", "title": "Senior Network Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "tWO3ajqriK", "title": "Senior Program Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-09", "startDate_first": "2026-07-09"}
+{"reqId": "5G6MbzcF3f", "title": "Senior System Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "zqS40mlOLF", "title": "Senior System Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-14", "startDate_first": "2026-09-14"}
+{"reqId": "Di2uG7mgqD", "title": "Service Operator (Houston/Austin)", "first_seen": "2026-10-02", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
+{"reqId": "OrghLw5Uvv", "title": "Service Operator (Mt. Pleasant)", "first_seen": "2026-10-02", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
+{"reqId": "3ALnUoziWk", "title": "Service Project Manager (Austin Site)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-07-22", "startDate_first": "2026-07-22"}
+{"reqId": "MLB1Oev8BA", "title": "Shipping Planner", "first_seen": "2026-10-10", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-09", "startDate_first": "2026-10-09"}
+{"reqId": "E0O1xyL5jx", "title": "Site Reliability Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "IWymepiwsw", "title": "SMT Manufacturing Engineer - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
+{"reqId": "Ps98jAmoZW", "title": "SMT Process Engineer (AOI/SPI/XRAY) IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-11", "startDate_first": "2026-09-11"}
+{"reqId": "JuqeuqMHHX", "title": "SMT Process Technician - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-18", "startDate_first": "2026-08-18"}
+{"reqId": "RkNrvEoHo5", "title": "SMT Production Supervisor - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-11", "startDate_first": "2026-08-11"}
+{"reqId": "laV3K6XBi0", "title": "Software Engineer Leader", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "AaSjVicmSM", "title": "Supplier Quality Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "583NrTfeJM", "title": "Supply Chain Management  (NVD -SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "kc4H0qWLW9", "title": "Supply Chain Program Manager", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "rCRu9Ii77k", "title": "System Administrator", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "FKoqC9AQfh", "title": "System Engineer (Houston/Austin)", "first_seen": "2026-10-02", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
+{"reqId": "eUC1enzKsX", "title": "System Engineer (Mt. Pleasant)", "first_seen": "2026-10-02", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
+{"reqId": "vYxVajsVrh", "title": "System/Network Engineer (Houston/Austin)", "first_seen": "2026-10-02", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
+{"reqId": "r2HyS5S8oS", "title": "System/Network Engineer (Mt. Pleasant)", "first_seen": "2026-10-02", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-10-01", "startDate_first": "2026-10-01"}
+{"reqId": "W24hPPHLCy", "title": "Systems Administrator (G-Project)", "first_seen": "2026-10-21", "last_seen": "2026-10-29", "last_postedOn": "Posted 1 Days Ago", "last_startDate": "2026-10-20", "startDate_first": "2026-10-20"}
+{"reqId": "siGdhKEf34", "title": "Test Engineer", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "XfIBipwilI", "title": "Test Engineer - Day Shift - (NVD)", "first_seen": "2026-10-01", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-09-30", "startDate_first": "2026-09-30"}
+{"reqId": "jNAV1JzYsH", "title": "Test Engineer - Swing Shift - (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-17", "startDate_first": "2026-08-17"}
+{"reqId": "upLa68qJmf", "title": "Test Engineer (Hardware)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "bbdEVewLY4", "title": "Test Engineer (NVD SVC)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "Ggq8AjvTUN", "title": "Test Technician - Day/Swing shift (NVD)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "qVvZ4aQex3", "title": "Thermal Engineer - Server &amp; Liquid Cooling Systems", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "Tepnn39eXo", "title": "Thermal Engineer (HH)", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "GW0r9mHgk0", "title": "Warehouse Assistant -Accountant", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "sNaIL03Sd8", "title": "Warehouse Manager - IB4", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": "2026-08-16", "startDate_first": "2026-08-16"}
+{"reqId": "SK5Snfr6GY", "title": "Warehouse Receiving Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
+{"reqId": "qlIJoDAMUl", "title": "Warehouse Shipping Supervisor", "first_seen": "2026-09-27", "last_seen": "2026-10-29", "last_postedOn": "", "last_startDate": ""}
