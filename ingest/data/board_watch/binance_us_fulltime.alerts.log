@@ -226,3 +226,6 @@ Binance board-watch 2026-10-29: +0 new, -1 gone (5 active [binance_us_fulltime])
 GONE Binance Accelerator Program - Sanction Program Analyst (first seen 2026-10-02)
 (2026-10-29T13:45:29)
 
+board-watch binance_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
+(2026-10-29T17:03:47)
+
