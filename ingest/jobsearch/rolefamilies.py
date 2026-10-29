@@ -1302,6 +1302,14 @@ FAMILIES: dict[str, dict] = {
     "gen": {
         # S46-B4 §3.7: family #3 — the SMB office catch-all (roles-gen
         # on the SAME /roles surface; the drift-#50 absorption pattern).
+        # [S49-B / DESIGN-S49 D2] the ALL-ROLES expansion: gen is the
+        # family that ships the owner's "every role" ask — the l0
+        # board corpus (project_l0_gen — every China/AI-company board
+        # row with full JDs) + the STARTUP sources (yc/hn/wwr_rss/muse/
+        # talent/himalayas — all family-parameterized now, audit F12).
+        # locked_endpoints is EMPTIED (the S47 PM-locker record shrinks
+        # to nothing) and l0_bundle flips True (the projection runs).
+        # dmm keeps its lock EXACTLY as-is (its demand-side doctrine).
         "slug": "gen",
         "display": "General Office & Admin (SMB)",
         # the dmm kwarg-renaming pattern (the pinned PM gate signature
@@ -1315,9 +1323,12 @@ FAMILIES: dict[str, dict] = {
         "quartet_prefix": "gen",
         "ui_file": "roles-gen.json",
         "drift_label": "roles:gen",
-        "l0_bundle": False,        # the l0 corpus is PM-only
-        "locked_endpoints": ("talent", "muse", "wwr_rss", "yc", "hn",
-                             "himalayas", "l0_bundle"),
+        "l0_bundle": True,          # [S49-B] the all-roles projection
+                                    # (project_l0_gen — every corpus row,
+                                    # full JDs; sweep dispatches on it)
+        "locked_endpoints": (),     # [S49-B] the startup unlock — all
+                                    # six startup sources + l0 are
+                                    # family-parameterized now
     },
 }
 

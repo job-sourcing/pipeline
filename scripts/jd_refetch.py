@@ -211,12 +211,33 @@ def _load_bundle() -> list[dict]:
     return d.get("jobs") or []
 
 
-def _select_targets(jobs: list[dict], transport_filter: str) -> list[dict]:
+def _select_targets(jobs: list[dict], transport_filter: str,
+                    empty_fill: bool = False,
+                    only_source: str = "") -> list[dict]:
     """Pending rows ∧ per-source fullness bar ∧ transport allowlist.
     Board-employer rows are out (the JobLeads class — redirect shells).
     [S47] fc_relay is a SUPERSET transport: it fetches direct + hk_only
     rows (firecrawl = US egress + stealth; 1 credit/detail page) — the
-    post-Oct-24 override the cache comments always promised."""
+    post-Oct-24 override the cache comments always promised.
+
+    [S49-C] empty_fill=True — the JD-fill completion pass: select rows
+    with EMPTY desc REGARDLESS of sectorReason (the complaint-#3 gap:
+    rows that graded on title alone — roster/division/desc-informed —
+    with descLen 0 were NEVER pending, so the daily lane never
+    selected them). The per-source transport table still rules: li
+    stays skip (guest cards carry no desc to fetch — the measured
+    unavailable class), board stays skip (the corpus→cache join
+    serves it — s49_corpus_to_cache.py; the v2 detail transport is
+    still not built), wellfound stays skip for urllib legs (JS-
+    walled). The daily PENDING lane is untouched — empty_fill never
+    fires without the flag.
+
+    only_source (S49-C, empty-fill legs): restrict to ONE source —
+    the wellfound fc spot-check (`--empty-fill --transport fc_relay
+    --only-source wellfound`) overrides wellfound's urllib-skip for
+    THAT leg only (firecrawl renders the JS wall — 1 credit/row,
+    budget-capped); SELECT_RULES itself stays verbatim so the daily
+    lanes never burn fleet credits on the class."""
     # S47-R1 F2 fix: the fc_relay leg's _ok must ALSO include rows whose
     # own rule transport IS fc_relay (glassdoor jl= URLs) — the superset
     # set {direct, hk_only} silently made the glassdoor class unselectable.
@@ -224,14 +245,29 @@ def _select_targets(jobs: list[dict], transport_filter: str) -> list[dict]:
            if transport_filter == "fc_relay" else {transport_filter})
     out = []
     for r in jobs:
-        reason = r.get("sectorReason") or ""
-        if not any(reason.startswith(p) for p in PENDING_REASONS):
-            continue
+        if empty_fill:
+            # the S49-C class: no .strip() content at all — the row
+            # graded on title/company alone (or is a fresh careerjet
+            # SERP card). Reason-agnostic BY DESIGN; the transport
+            # table below is the guard.
+            if (r.get("desc") or "").strip():
+                continue
+        else:
+            reason = r.get("sectorReason") or ""
+            if not any(reason.startswith(p) for p in PENDING_REASONS):
+                continue
         src = r.get("source") or ""
+        if only_source and src != only_source:
+            continue
         rule = SELECT_RULES.get(src)
         if not rule:
             continue                    # unknown source — not our lane
         min_len, transport = rule
+        # [S49-C] the leg-scoped wellfound fc override — see docstring
+        if (empty_fill and only_source == "wellfound"
+                and src == "wellfound"
+                and transport_filter == "fc_relay"):
+            transport = "fc_relay"
         if transport not in _ok:
             continue
         if transport_filter in ("direct", "fc_relay") and is_board_employer(
@@ -369,13 +405,43 @@ def main() -> int:
                          "shared, keyed (source,url))")
     ap.add_argument("--budget-seconds", type=int, default=480)
     ap.add_argument("--max-rows", type=int, default=150)
+    ap.add_argument("--empty-fill", action="store_true",
+                    help="[S49-C] the JD-fill completion pass: select "
+                         "EMPTY-desc rows regardless of sectorReason "
+                         "(the title-only-graded class the pending "
+                         "lane never sees). Honors the transport "
+                         "table (li/board/wellfound stay skip). Writes "
+                         "to *_emptyfill state/report twins — the "
+                         "daily pending lane's files are untouched.")
+    ap.add_argument("--only-source", default="",
+                    help="[S49-C] empty-fill legs only: restrict the "
+                         "selection to ONE source (the wellfound fc "
+                         "spot-check: --empty-fill --transport "
+                         "fc_relay --only-source wellfound).")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     _set_family(args.family)
     fam = args.family.upper()
+    # [S49-C] the empty-fill lane's state/report twins: the pending
+    # lane's attrition ledger (pending_snapshot vs prev) and GITHUB_ENV
+    # retrigger keys are ITS contract — an empty-fill leg must never
+    # clobber them. The cache stays shared (the whole point).
+    if args.empty_fill:
+        global STATE, REPORT
+        STATE = STATE.with_name(
+            STATE.name.replace("jd_refetch", "jd_refetch_emptyfill"))
+        REPORT = REPORT.with_name(
+            REPORT.name.replace("jd_refetch", "jd_refetch_emptyfill"))
 
     jobs = _load_bundle()
-    targets = _select_targets(jobs, args.transport)
+    if args.only_source and not args.empty_fill:
+        print("jd_refetch: --only-source is an empty-fill leg flag "
+              "(the pending lanes' source scope is SELECT_RULES)",
+              file=sys.stderr)
+        return 2
+    targets = _select_targets(jobs, args.transport,
+                              empty_fill=args.empty_fill,
+                              only_source=args.only_source)
     cache = _load_cache_map()
     # skip rows already resolved — 'ok' (have the JD) AND terminal
     # failures (http-error:403/404/410/418 = an ANSWER, not a retry
@@ -401,8 +467,9 @@ def main() -> int:
         return False
     todo = [t for t in targets
             if not _resolved(f"{t['source']}|{t['url']}")]
-    print(f"[jd_refetch] bundle={len(jobs)} pending-targets={len(targets)} "
-          f"cached-ok={len(targets) - len(todo)} todo={len(todo)} "
+    print(f"[jd_refetch{' empty-fill' if args.empty_fill else ''}] "
+          f"bundle={len(jobs)} targets={len(targets)} "
+          f"cached-resolved={len(targets) - len(todo)} todo={len(todo)} "
           f"transport={args.transport}")
 
     stats: dict[str, int] = {}
@@ -458,26 +525,46 @@ def main() -> int:
     done = remaining == 0
     if not args.dry_run:
         _write_cache(cache)
-        # attrition ledger (S41-R1 F1): pending ids that vanished from
-        # the bundle without a verdict — closes-by-disappearance must
-        # be distinguishable from closes-by-evidence.
-        prev_state = json.loads(STATE.read_text()) if STATE.exists() else {}
-        prev_set = set(prev_state.get("pending_snapshot") or [])
-        cur_set = _snapshot_pending(jobs)
-        attrited = prev_set - cur_set if prev_set else []
-        _write_state_and_report(cur_set, stats, fetched, remaining,
-                                len(attrited) if prev_set else None,
-                                len(targets), args.transport)
+        if args.empty_fill:
+            # [S49-C] the empty-fill state twin snapshots the EMPTY
+            # class (source|url keys), not the pending set — its attri-
+            # tion concept is "rows that left the empty class" (filled
+            # or vanished), which the next leg re-derives from the
+            # bundle anyway. No pending attrition line.
+            cur_set = {f"{r.get('source', '')}|{r.get('url', '')}"
+                       for r in jobs
+                       if not (r.get("desc") or "").strip()}
+            _write_state_and_report(cur_set, stats, fetched, remaining,
+                                    None, len(targets), args.transport,
+                                    empty_fill=True)
+        else:
+            # attrition ledger (S41-R1 F1): pending ids that vanished
+            # from the bundle without a verdict — closes-by-
+            # disappearance must be distinguishable from closes-by-
+            # evidence.
+            prev_state = json.loads(STATE.read_text()) \
+                if STATE.exists() else {}
+            prev_set = set(prev_state.get("pending_snapshot") or [])
+            cur_set = _snapshot_pending(jobs)
+            attrited = prev_set - cur_set if prev_set else []
+            _write_state_and_report(cur_set, stats, fetched, remaining,
+                                    len(attrited) if prev_set else None,
+                                    len(targets), args.transport)
     result = "complete" if done else "pending"
     genv = os.environ.get("GITHUB_ENV")
     if genv:
         # S42-R1 A1 (F1): PER-FAMILY env keys — a shared JD_REFETCH key
         # would make the retrigger predicate reflect only the LAST
         # step (dmm), stalling the pm backlog at 1 leg/day.
+        # [S49-C] empty-fill legs carry their OWN keys — the daily
+        # lane's retrigger predicate must never see a completion-pass
+        # leg's verdict.
+        suffix = "_EMPTYFILL" if args.empty_fill else ""
         with open(genv, "a") as f:
-            f.write(f"JD_REFETCH_{fam}={result}\n"
-                    f"JD_REFETCH_{fam}_REMAINING={remaining}\n")
-    print(f"[jd_refetch family={args.family}] "
+            f.write(f"JD_REFETCH_{fam}{suffix}={result}\n"
+                    f"JD_REFETCH_{fam}{suffix}_REMAINING={remaining}\n")
+    print(f"[jd_refetch family={args.family}"
+          f"{' empty-fill' if args.empty_fill else ''}] "
           f"fetched={fetched} remaining={remaining} → {result}")
     for k in sorted(stats):
         print(f"  {stats[k]:4}  {k}")
@@ -486,15 +573,21 @@ def main() -> int:
 
 def _write_state_and_report(cur_set: set[str], stats: dict[str, int],
                             fetched: int, remaining: int, attrited,
-                            n_targets: int, transport: str) -> None:
+                            n_targets: int, transport: str,
+                            empty_fill: bool = False) -> None:
     STATE.write_text(json.dumps({
         "last_leg": _now(), "transport": transport,
+        "mode": "empty_fill" if empty_fill else "pending",
         "fetched": fetched, "remaining": remaining,
         "targets_seen": n_targets,
-        "pending_snapshot": sorted(cur_set),
+        # [S49-C] empty-fill legs snapshot the EMPTY class, not the
+        # pending set — the key name follows the content
+        ("empty_snapshot" if empty_fill else "pending_snapshot"):
+            sorted(cur_set),
     }, ensure_ascii=False, indent=1))
     lines = [
-        f"# JD-refetch ledger (family: {_FAMILY})",
+        f"# JD-refetch ledger (family: {_FAMILY}"
+        f"{' — EMPTY-FILL completion pass' if empty_fill else ''})",
         "",
         f"- last leg: **{_now()}** (transport: {transport})",
         f"- fetched this leg: {fetched} | remaining: {remaining} | "

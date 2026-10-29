@@ -454,14 +454,67 @@ def _http_json(url: str, data=None, headers=None, timeout=30):
         return json.loads(r.read().decode("utf-8", "replace"))
 
 
+_ADZUNA_FLEET: dict = {"keys": None, "idx": 0, "dead": set()}
+
+
+def _adzuna_keys() -> list[tuple[str, str]]:
+    """[S49-D4] the adzuna key FLEET — ADZUNA_KEYS="id:key,id:key,..."
+    (rotation-ready; each key = +250 req/day). Falls back to the
+    legacy single pair (bit-identical when only it exists). Keys hit
+    with 410/429 (cap-exceeded / revoked — adzuna's documented quota
+    contract) are quarantined dead-for-run so the sweep degrades to
+    the remaining keys instead of dying mid-query."""
+    if _ADZUNA_FLEET["keys"] is None:
+        fleet: list[tuple[str, str]] = []
+        raw = _env("ADZUNA_KEYS")
+        if raw:
+            for chunk in raw.split(","):
+                chunk = chunk.strip()
+                if ":" in chunk:
+                    app_id, key = chunk.split(":", 1)
+                    if app_id.strip() and key.strip():
+                        pair = (app_id.strip(), key.strip())
+                        if pair not in fleet:
+                            fleet.append(pair)
+        legacy = (_env("ADZUNA_APP_ID"), _env("ADZUNA_API_KEY"))
+        if legacy[0] and legacy[1] and legacy not in fleet:
+            fleet.append(legacy)
+        _ADZUNA_FLEET["keys"] = fleet
+    return [k for k in _ADZUNA_FLEET["keys"]
+            if k not in _ADZUNA_FLEET["dead"]]
+
+
+def _adzuna_next_key() -> tuple[tuple[str, str] | None, str]:
+    """round-robin pick over the live keys (None + reason when the
+    whole fleet is quarantined)."""
+    live = _adzuna_keys()
+    if not live:
+        if _ADZUNA_FLEET["keys"]:
+            # the fleet EXISTED but every key is quarantined for this
+            # run — the honest cap verdict (the caller degrades to the
+            # rows it already holds).
+            return None, "quota:all-keys"
+        return None, "no-key"
+    pair = live[_ADZUNA_FLEET["idx"] % len(live)]
+    _ADZUNA_FLEET["idx"] += 1
+    return pair, "ok"
+
+
 def fetch_adzuna(queries: list[str],
                    location: str | None = None,
                    distance: int | None = None,
                    category: str | None = None,
                    what_and: str | None = None) -> tuple[list[dict], str]:
     app_id, key = _env("ADZUNA_APP_ID"), _env("ADZUNA_API_KEY")
-    if not (app_id and key):
+    if not (app_id and key) and not _env("ADZUNA_KEYS"):
         return [], "no-key"
+    if not (app_id and key):
+        # the fleet-only configuration (ADZUNA_KEYS without the legacy
+        # pair): seed the fleet and take the first key
+        pair, st = _adzuna_next_key()
+        if pair is None:
+            return [], st
+        app_id, key = pair
     rows: list[dict] = []
     # S38 §2a: relevance sort (measured 100% PM-family density p1-50)
     # + max_days_old=45 (the li/indeed freshness doctrine) + 10 pages
@@ -478,8 +531,18 @@ def fetch_adzuna(queries: list[str],
     # even UNFILTERED (probe §A.1) — captured on every row for the
     # sectorEvidence stamp.
     max_page = 10
+    quota_hard = False
     for q in queries:
         for page in range(1, max_page + 1):
+            # [S49-D4] per-page key rotation: the round-robin spreads
+            # the 250/day cap across the fleet; a 410/429 quarantines
+            # THAT key (dead-for-run) and this page retries on the next
+            # live key — the sweep degrades gracefully instead of dying.
+            pair, pick_st = _adzuna_next_key()
+            if pair is None:
+                quota_hard = True
+                break
+            app_id, key = pair
             url = (f"https://api.adzuna.com/v1/api/jobs/us/search/{page}"
                    f"?app_id={app_id}&app_key={key}"
                    f"&what={urllib.parse.quote_plus(q)}"
@@ -496,6 +559,14 @@ def fetch_adzuna(queries: list[str],
                 url += f"&what_and={urllib.parse.quote_plus(what_and)}"
             try:
                 d = _http_json(url)
+            except urllib.error.HTTPError as http_exc:
+                if http_exc.code in (410, 429):
+                    _ADZUNA_FLEET["dead"].add(pair)
+                    continue           # same page, next live key
+                if page == 1:
+                    return rows, (f"error:page{page}:{q[:12]}:"
+                                  f"HTTP{http_exc.code}")
+                break                # partial page-run: keep what we have
             except Exception as exc:
                 if page == 1:
                     return rows, f"error:page{page}:{q[:12]}:{type(exc).__name__}"
@@ -507,7 +578,7 @@ def fetch_adzuna(queries: list[str],
                     cat = cat.get("tag") or ""
                 elif not isinstance(cat, str):
                     cat = ""
-                rows.append({
+                row = {
                     "title": j.get("title") or "",
                     "company": (j.get("company") or {}).get("display_name") or "",
                     "loc": ((j.get("location") or {}).get("display_name") or ""),
@@ -517,10 +588,26 @@ def fetch_adzuna(queries: list[str],
                     "source": "adzuna", "layer": "l1.5", "query": q,
                     "rid": f"adz:{j.get('id') or ''}",
                     "adzuna_category": cat,
-                })
+                }
+                # [S49-D4] salary preservation — adzuna's unique data
+                # (annualized salary_min/salary_max on the row) was
+                # DISCARDED at construction before S49; now it rides
+                # the row (emitted gen/dmm-side; the pm artifact stays
+                # byte-identical via the writer-level family gate).
+                sal_min = j.get("salary_min")
+                sal_max = j.get("salary_max")
+                if sal_min is not None:
+                    row["salary_min"] = sal_min
+                if sal_max is not None:
+                    row["salary_max"] = sal_max
+                rows.append(row)
             if len(d.get("results", [])) < 50:
                 break
             time.sleep(1.0)
+        if quota_hard:
+            break
+    if quota_hard:
+        return rows, f"quota:all-keys:{len(_ADZUNA_FLEET['dead'])}"
     return rows, "ok"
 
 
@@ -667,11 +754,18 @@ def fetch_li_keyword(queries: list[str]) -> tuple[list[dict], str]:
     return rows, status
 
 
-def fetch_wwr() -> tuple[list[dict], str]:
+def fetch_wwr(family: str = "pm") -> tuple[list[dict], str]:
+    """S38 L2 'wwr_rss'. [S49-B / audit F12] the feed IS family-shaped:
+    pm = the pinned /categories/remote-product-jobs.rss category feed;
+    gen = the all-roles main feed https://weworkremotely.com/remote-jobs.rss
+    (live-probed 2026-10-29: 200, 95 items; /categories/remote-jobs.rss
+    301s) — the WWR shape carries no client-side filter to drop. Gen
+    rows pre-stamp family (the gate-loop bypass)."""
+    feed = ("https://weworkremotely.com/categories/"
+            "remote-product-jobs.rss" if family == "pm"
+            else "https://weworkremotely.com/remote-jobs.rss")
     try:
-        req = urllib.request.Request(
-            "https://weworkremotely.com/categories/remote-product-jobs.rss",
-            headers=UA)
+        req = urllib.request.Request(feed, headers=UA)
         with urllib.request.urlopen(req, timeout=30) as r:
             xml = r.read().decode("utf-8", "replace")
     except Exception as exc:
@@ -687,14 +781,20 @@ def fetch_wwr() -> tuple[list[dict], str]:
         # WWR shape: "Company: Role (Extra)"
         m = re.match(r"^(.*?):\s*(.*?)(?:\s*\((.*)\))?$", title)
         company, role = (m.group(1), m.group(2)) if m else ("", title)
-        rows.append({
+        row = {
             "title": role, "company": company,
             "loc": "Remote", "url": _tag("link"),
             "posted": (re.search(r"<pubDate>(.*?)</pubDate>", item)
                        and _parse_rss_date(_tag("pubDate"))) or "",
             "desc": _tag("description")[:12000],
-            "source": "wwr", "layer": "l2", "query": "wwr:product", "rid": "",
-        })
+            "source": "wwr", "layer": "l2",
+            "query": "wwr:product" if family == "pm" else "wwr:all",
+            "rid": "",
+        }
+        if family == "gen":
+            row["family"] = "gen"
+            row["family_evidence"] = "wwr_remote_jobs"
+        rows.append(row)
     return rows, "ok"
 
 
@@ -1055,42 +1155,57 @@ def fetch_findwork(queries: list[str],
     return rows, "ok" if rows else "no-yield"
 
 
-def fetch_muse() -> tuple[list[dict], str]:
-    """S38 L2 (GHA-only): The Muse public API — category=Product
-    Management, keyless, full JD. 403 from HK (CloudFront geo) —
-    fail-soft locally, live from the Azure lane. First successful page
-    is captured to audit/s38_rolecampaign/ as the field-map evidence
-    (F8 — the row contract was endpoint-verified, not row-verified)."""
+def fetch_muse(family: str = "pm") -> tuple[list[dict], str]:
+    """S38 L2 (GHA-only): The Muse public API — keyless, full JD.
+    403 from HK (CloudFront geo) — fail-soft locally, live from the
+    Azure lane. First successful page is captured to audit/s38_
+    rolecampaign/ as the field-map evidence (F8 — the row contract was
+    endpoint-verified, not row-verified).
+    [S49-B / audit F12] the PM shape is the category QUERY PARAM:
+    pm = category=Product Management (pinned); gen drops the category
+    entirely — the all-jobs firehose with location=United States kept
+    (the US lens; the API documents category as optional). Same 24-page
+    cap (the S47 hard page bound). Gen rows pre-stamp family (the
+    gate-loop bypass — classify_gen would kill the firehose's non-office
+    titles)."""
     rows: list[dict] = []
     for page in range(1, 25):
+        url = ("https://www.themuse.com/api/public/jobs?"
+               + ("" if family == "gen"
+                  else "category=Product%20Management&")
+               + f"location=United%20States&page={page}")
         try:
-            d = _http_json(
-                "https://www.themuse.com/api/public/jobs?category="
-                "Product%20Management&location=United%20States"
-                f"&page={page}", timeout=30)
+            d = _http_json(url, timeout=30)
         except Exception as exc:
             return rows, f"error:{type(exc).__name__}"
         if page == 1 and rows == [] and d:
-            _evidence_dump("muse_page1.json", d)
+            _evidence_dump("muse_gen_page1.json" if family == "gen"
+                           else "muse_page1.json", d)
         jobs = d.get("results", [])
         for j in jobs:
             comp = ((j.get("company") or {}) or {})
-            rows.append({
+            row = {
                 "title": j.get("name") or "",
                 "company": comp.get("name") or "",
                 "loc": ", ".join(
                     l.get("name", "") for l in (j.get("locations") or [])
                     if isinstance(l, dict))[:80],
                 "url": ((j.get("refs") or {}).get("landing_page")
-                        or (comp.get("refs") or {}).get("landing_page") or ""),
+                        or (comp.get("refs") or {}).get("landing_page")
+                        or ""),
                 "posted": _rfc2822_to_iso(
                     (j.get("publication_datetime") or ""))[:10]
                 if j.get("publication_datetime") else "",
                 "desc": (j.get("contents") or "")[:12000],
                 "source": "muse", "layer": "l2",
-                "query": "muse:product-management",
+                "query": ("muse:all" if family == "gen"
+                          else "muse:product-management"),
                 "rid": f"muse:{j.get('id') or ''}",
-            })
+            }
+            if family == "gen":
+                row["family"] = "gen"
+                row["family_evidence"] = "muse_api"
+            rows.append(row)
         if not jobs:
             break
         time.sleep(1.2)
@@ -1208,15 +1323,42 @@ def _evidence_dump(name: str, payload) -> None:
 YC_CITY_PAGES = ["new-york", "san-francisco", "los-angeles", "seattle",
                  "boston", "austin"]
 
+# [S49-B / audit F12] the gen-mode yc.com role-slug set — ALL-ROLES
+# (the owner's ask). Live-probed 2026-10-29: all 19 return 200 with
+# 5-40 postings each via the WaasJobListingsPage data-page island (the
+# S38 JSON-island extractor is DEAD on yc.com — the pages moved to
+# <div id="…" data-page="…">; pm keeps the dead extractor bit-identical,
+# gen extracts through the new shape).
+GEN_YC_ROLE_SLUGS = (
+    "software-engineer", "designer", "data-scientist", "data-engineer",
+    "product-designer", "frontend-engineer", "backend-engineer",
+    "mobile-engineer", "devops", "sales", "account-executive",
+    "marketing", "operations", "customer-support", "finance", "hr",
+    "recruiter", "business-operations", "growth",
+)
 
-def fetch_yc() -> tuple[list[dict], str]:
+
+def fetch_yc(family: str = "pm") -> tuple[list[dict], str]:
     """S38 L2 'yc' — THE startup layer (the directive's scrape-the-source
     branch): Work at a Startup Inertia JSON (/jobs/l/product-manager) +
     ycombinator.com/jobs SSR (/role/product-manager + /remote) + the 6
     US city pages (F18). Rows carry companySlug/companyBatch (rich);
     posted only from yc.com rows (WaaS list rows carry no date — the
     dateless-donor merge rule). YC-backed = board-grade sector evidence
-    (yc_startup), applied post-merge (F2)."""
+    (yc_startup), applied post-merge (F2).
+
+    [S49-B / audit F12] family-parameterized: pm keeps the pinned legs
+    bit-identical (the WaaS PM list leg + the two PM yc.com slugs + the
+    6 city pages); gen = the ALL-ROLES startup sweep — the 19-role
+    yc.com slug set (GEN_YC_ROLE_SLUGS, live-probed) + the SAME 6
+    city pages (all-roles already); the WaaS /jobs/l/product-manager
+    list leg is PM-ONLY (gen skips it). The yc.com pages moved to the
+    WaasJobListingsPage data-page shape (escaped JSON on a <div> with
+    a leading id= attribute) — gen extracts through it; posted stays
+    "" (the island's createdAt is a relative '6 months' string, not
+    ISO — the dateless-donor rule covers it, same as the WaaS rows).
+    Gen rows PRE-STAMP family="gen"/family_evidence="yc_waas" (the
+    gate-loop pre-stamp bypass — classify_gen would kill them)."""
     import html as html_mod
     try:
         from curl_cffi import requests as cr  # noqa: PLC0415
@@ -1258,40 +1400,100 @@ def fetch_yc() -> tuple[list[dict], str]:
                 "rid": f"yc:{j.get('id') or ''}",
                 "yc_slug": j.get("companySlug") or "",
             })
+            if family == "gen":
+                # [S49-B] the city pages are all-roles — pre-stamp so
+                # the gate-loop bypass keeps them (classify_gen would
+                # kill most); pm rows stay unstamped (bit-identical)
+                out[-1]["family"] = "gen"
+                out[-1]["family_evidence"] = "yc_waas"
         return out
 
-    props = _get_json("https://www.workatastartup.com/jobs/l/product-manager")
-    if props is None:
-        verdicts.append("waas:dead")
-    else:
-        rows += _waas_rows(props, "waas:product-manager")
+    if family == "pm":
+        # the pinned PM leg — WaaS /jobs/l/product-manager (F9: the
+        # /jobs/l/ list leg is PM-shaped; gen skips it per the task)
+        props = _get_json(
+            "https://www.workatastartup.com/jobs/l/product-manager")
+        if props is None:
+            verdicts.append("waas:dead")
+        else:
+            rows += _waas_rows(props, "waas:product-manager")
 
-    # ycombinator.com/jobs — Next.js SSR with embedded job JSON
-    for slug, tag in [("product-manager", "yc:role"),
-                      ("product-manager/remote", "yc:remote")]:
+    # ycombinator.com/jobs — [S49-B] per-family slug sets. pm keeps the
+    # pinned S38 pair (Next.js-SSR JSON-island extraction — the island
+    # is dead on today's yc.com shape, kept bit-identical anyway); gen
+    # walks the 19-role all-roles slug set through the live
+    # WaasJobListingsPage data-page shape.
+    _pm_legs = [("product-manager", "yc:role"),
+                ("product-manager/remote", "yc:remote")]
+    _gen_legs = [(s, f"yc:gen:{s}") for s in GEN_YC_ROLE_SLUGS]
+    for i, (slug, tag) in enumerate(_pm_legs if family == "pm"
+                                     else _gen_legs):
+        if family == "gen" and i:
+            time.sleep(1.0)            # 19 live slug pages — politeness
         try:
             r = cr.get(f"https://www.ycombinator.com/jobs/role/{slug}",
                        impersonate="chrome131", timeout=30, headers=headers)
             if r.status_code == 200:
-                found = _yc_com_extract(r.text)
-                for j in found:
-                    rows.append({
-                        "title": j.get("title") or j.get("jobTitle") or "",
-                        "company": j.get("companyName") or
-                        (j.get("company") or {}).get("name", ""),
-                        "loc": (j.get("location") or
-                                j.get("primaryLocation") or "")[:80],
-                        "url": (j.get("url") or
-                                j.get("applyUrl") or
-                                f"https://www.ycombinator.com/jobs/"
-                                f"{j.get('id')}"),
-                        "posted": _epoch_to_iso(j.get("createdAt")),
-                        "desc": (j.get("description") or "")[:2000],
-                        "source": "yc", "layer": "l2", "query": tag,
-                        "rid": f"yc:{j.get('id') or ''}",
-                        "yc_slug": (j.get("companySlug") or
-                                    (j.get("company") or {}).get("slug", "")),
-                    })
+                if family == "pm":
+                    found = _yc_com_extract(r.text)
+                    for j in found:
+                        rows.append({
+                            "title": j.get("title") or
+                            j.get("jobTitle") or "",
+                            "company": j.get("companyName") or
+                            (j.get("company") or {}).get("name", ""),
+                            "loc": (j.get("location") or
+                                    j.get("primaryLocation") or "")[:80],
+                            "url": (j.get("url") or
+                                    j.get("applyUrl") or
+                                    f"https://www.ycombinator.com/jobs/"
+                                    f"{j.get('id')}"),
+                            "posted": _epoch_to_iso(j.get("createdAt")),
+                            "desc": (j.get("description") or "")[:2000],
+                            "source": "yc", "layer": "l2",
+                            "query": tag,
+                            "rid": f"yc:{j.get('id') or ''}",
+                            "yc_slug": (j.get("companySlug") or
+                                        (j.get("company") or {})
+                                        .get("slug", "")),
+                        })
+                else:
+                    # gen: the live WaasJobListingsPage shape — props.
+                    # jobPostings[], fields id/title/url/companyName/
+                    # companyOneLiner/companyUrl/location/salaryRange
+                    m = re.search(r'<div[^>]*\bdata-page="([^"]+)"',
+                                  r.text)
+                    found = []
+                    if m:
+                        try:
+                            props_ = (json.loads(html_mod.unescape(
+                                m.group(1))).get("props") or {})
+                            found = props_.get("jobPostings") or []
+                        except (json.JSONDecodeError, ValueError):
+                            found = []
+                    for j in found:
+                        rows.append({
+                            "title": j.get("title") or "",
+                            "company": j.get("companyName") or "",
+                            "loc": (j.get("location") or "")[:80],
+                            "url": ("https://www.ycombinator.com"
+                                    + (j.get("url") or "")),
+                            "posted": "",   # island createdAt is
+                            # relative ('6 months') — not ISO; the
+                            # dateless-donor rule covers it
+                            "desc": ((j.get("companyOneLiner") or "")
+                                     + (f" | {j.get('salaryRange')}"
+                                        if j.get("salaryRange") else "")
+                                     + (f" | {j.get('type')}"
+                                        if j.get("type") else ""))[:2000],
+                            "source": "yc", "layer": "l2",
+                            "query": tag,
+                            "rid": f"yc:{j.get('id') or ''}",
+                            "yc_slug": (j.get("companyUrl") or "").rsplit(
+                                "/companies/", 1)[-1],
+                            "family": "gen",
+                            "family_evidence": "yc_waas",
+                        })
             else:
                 verdicts.append(f"ycc:{r.status_code}")
         except Exception as exc:
@@ -1393,76 +1595,108 @@ def fetch_wellfound() -> tuple[list[dict], str]:
     return rows, "ok"
 
 
-def fetch_talent() -> tuple[list[dict], str]:
+def fetch_talent(family: str = "pm") -> tuple[list[dict], str]:
     """S38 L2: talent.com SERP — server-rendered JobCard articles
     (closure-tier, 20 rows keyless, no pagination — the census verdict).
     CSS-module class prefixes (JobCard_title/…) with hashed suffixes;
-    the JSON-LD ItemList is URL-only (no job fields)."""
+    the JSON-LD ItemList is URL-only (no job fields).
+    [S49-B / audit F12] the PM shape is the k= QUERY: pm = the pinned
+    k=product+manager single fetch; gen sweeps the 6-query all-roles
+    set (live-probed 2026-10-29: k=engineer/designer/data/sales/
+    marketing/operations all 200 with 19-20 cards each). Gen rows mint
+    rid=tal:{view-id} (the 'tal' prefix rides the seed rid whitelist)
+    and pre-stamp family (the gate-loop bypass)."""
+    kws = ["product manager"] if family == "pm" else [
+        "engineer", "designer", "data", "sales", "marketing",
+        "operations"]
     try:
         from curl_cffi import requests as cr  # noqa: PLC0415
     except ImportError:
         return [], "not-installed"
-    try:
-        r = cr.get("https://www.talent.com/jobs?k=product+manager"
-                   "&l=United+States", impersonate="chrome131", timeout=30)
-        if r.status_code != 200:
-            return [], f"error:status{r.status_code}"
-    except Exception as exc:
-        return [], f"error:{type(exc).__name__}"
     rows: list[dict] = []
-    for m in re.finditer(
-            r'<article class="JobCard_card[^"]*"[^>]*>(.*?)</article>',
-            r.text, re.DOTALL):
-        card = m.group(1)
+    status = "ok"
+    for qi, kw in enumerate(kws):
+        if qi:
+            time.sleep(1.0)               # the gen sweep's politeness
+        try:
+            r = cr.get("https://www.talent.com/jobs"
+                       f"?k={urllib.parse.quote_plus(kw)}"
+                       "&l=United+States", impersonate="chrome131",
+                       timeout=30)
+            if r.status_code != 200:
+                status = f"error:status{r.status_code}"
+                continue
+        except Exception as exc:
+            return rows, f"error:{type(exc).__name__}"
+        for m in re.finditer(
+                r'<article class="JobCard_card[^"]*"[^>]*>(.*?)</article>',
+                r.text, re.DOTALL):
+            card = m.group(1)
 
-        def _cls(prefix: str) -> str:
-            mm = re.search(
-                rf'class="{prefix}[^"]*"[^>]*>(.*?)</',
-                card, re.DOTALL)
-            return re.sub(r"<[^>]+>", "", mm.group(1)).strip() if mm else ""
+            def _cls(prefix: str) -> str:
+                mm = re.search(
+                    rf'class="{prefix}[^"]*"[^>]*>(.*?)</',
+                    card, re.DOTALL)
+                return (re.sub(r"<[^>]+>", "", mm.group(1)).strip()
+                        if mm else "")
 
-        title = _cls("JobCard_title")
-        company = _cls("JobCard_company")
-        loc = _cls("JobCard_location")
-        snippet = _cls("JobCard_snippet")
-        dm = re.search(r'datetime="([^"]+)"', card, re.IGNORECASE)
-        href = re.search(r'href="/view\?id=(\d+)"', card)
-        if not title:
-            continue
-        rows.append({
-            "title": title, "company": company,
-            "loc": loc[:80],
-            "url": (f"https://www.talent.com/view?id={href.group(1)}"
-                    if href else ""),
-            "posted": (dm.group(1) or "")[:10] if dm else "",
-            "desc": snippet[:12000],
-            "source": "talent", "layer": "l2",
-            "query": "talent:pm", "rid": "",
-        })
-    return rows, "ok"
+            title = _cls("JobCard_title")
+            company = _cls("JobCard_company")
+            loc = _cls("JobCard_location")
+            snippet = _cls("JobCard_snippet")
+            dm = re.search(r'datetime="([^"]+)"', card, re.IGNORECASE)
+            href = re.search(r'href="/view\?id=(\d+)"', card)
+            if not title:
+                continue
+            row = {
+                "title": title, "company": company,
+                "loc": loc[:80],
+                "url": (f"https://www.talent.com/view?id={href.group(1)}"
+                        if href else ""),
+                "posted": (dm.group(1) or "")[:10] if dm else "",
+                "desc": snippet[:12000],
+                "source": "talent", "layer": "l2",
+                "query": ("talent:pm" if family == "pm"
+                          else f"talent:{kw.split()[0]}"),
+                "rid": ("" if family == "pm"
+                        else (f"tal:{href.group(1)}" if href else "")),
+            }
+            if family == "gen":
+                row["family"] = "gen"
+                row["family_evidence"] = "talent_serp"
+            rows.append(row)
+    return rows, status
 
 
-def fetch_hn() -> tuple[list[dict], str]:
+def fetch_hn(family: str = "pm") -> tuple[list[dict], str]:
     """S38 L2: HN Who's Hiring via the in-repo adapter (the deferred
     v1.5) — the adapter returns list[Job] dataclasses (title/company/
     description/link/location/date_posted); tech-community by norm →
-    board-grade evidence hn_whihiring, applied post-merge (F2)."""
+    board-grade evidence hn_whihiring, applied post-merge (F2).
+    [S49-B] family-parameterized: pm keeps the keyword legs
+    ("Product Manager", "PM") bit-identical; gen = the UNFILTERED
+    thread-walk (keywords="" — the adapter skips the keyword_match
+    filter, live-probed 261 top-level postings) — the owner's ALL
+    startup roles ask. Gen rows pre-stamp family="gen"/
+    family_evidence="hn_whihiring" so the gate-loop pre-stamp bypass
+    keeps them (classify_gen would kill the engineering titles)."""
     try:
         from jobsearch.sources import hn_whos_hiring as hn  # noqa: PLC0415
     except ImportError:
         return [], "not-installed"
     rows: list[dict] = []
     verdicts: list[str] = []
-    for kw in ("Product Manager", "PM"):
+    legs = (("Product Manager", "PM") if family == "pm" else ("",))
+    for kw in legs:
         try:
-            got = hn.fetch(kw, num_results=400)
+            got = hn.fetch(kw, num_results=400 if family == "pm" else 1000)
         except Exception:
             verdicts.append(f"{kw[:2]}:{type(hn) and 'exc'}")
             continue
         for j in (got or []):
             if not getattr(j, "title", ""):
                 continue
-            rows.append({
+            row = {
                 "title": j.title or "",
                 "company": j.company or "",
                 "loc": (j.location or "")[:80],
@@ -1470,9 +1704,13 @@ def fetch_hn() -> tuple[list[dict], str]:
                 "posted": (j.date_posted or "")[:10],
                 "desc": (j.description or "")[:12000],
                 "source": "hn", "layer": "l2",
-                "query": f"hn:{kw.lower()}",
+                "query": f"hn:{kw.lower()}" if kw else "hn:all",
                 "rid": f"hn:{j.id or j.link or j.title[:40]}",
-            })
+            }
+            if family == "gen":
+                row["family"] = "gen"
+                row["family_evidence"] = "hn_whihiring"
+            rows.append(row)
     verdict = ("ok" if rows or not verdicts
                else "partial:" + ",".join(verdicts))
     return rows, verdict
@@ -1555,13 +1793,17 @@ def fetch_builtin(queries: list[str]) -> tuple[list[dict], str]:
     return rows, status
 
 
-def fetch_himalayas() -> tuple[list[dict], str]:
+def fetch_himalayas(family: str = "pm") -> tuple[list[dict], str]:
     """S39 §A4 (probe-relay.md): Himalayas open JSON firehose —
     `himalayas.app/jobs/api?limit=20&cursor=<nextCursor>` keyless with
     full-JD rows; no server-side search → client-side filter over the
     recent window (30 pages × 20, politeness sleep 1s; the full-JD
     evidence value inverts the trio's thin-density precedent — F11).
-    rid = him:{guid}; loc = locationRestrictions joined."""
+    rid = him:{guid}; loc = locationRestrictions joined.
+    [S49-B / audit F12] the ONLY filter is the client-side PM list —
+    pm keeps it bit-identical; gen keeps ALL rows (the feed is the
+    all-roles remote-jobs firehose) and pre-stamps family (the
+    gate-loop bypass)."""
     rows: list[dict] = []
     cursor = ""
     verdicts: list[str] = []
@@ -1581,14 +1823,16 @@ def fetch_himalayas() -> tuple[list[dict], str]:
             title = j.get("title") or ""
             if not title:
                 continue
-            # client-side PM-family filter (the board is all-roles)
-            tl = title.lower()
-            if not any(k in tl for k in (
-                    "product manager", "product owner", "product lead",
-                    "head of product", "product marketing",
-                    "director of product", "principal product",
-                    "group product", "technical product")):
-                continue
+            # client-side PM-family filter (the board is all-roles) —
+            # [S49-B] pm-only; gen keeps every titled row
+            if family == "pm":
+                tl = title.lower()
+                if not any(k in tl for k in (
+                        "product manager", "product owner", "product lead",
+                        "head of product", "product marketing",
+                        "director of product", "principal product",
+                        "group product", "technical product")):
+                    continue
             guid = j.get("guid") or j.get("id") or ""
             # S41-R1 F8: some guids ARE full URLs (the RSS guid field)
             # — the blind prefix built double-prefixed URLs
@@ -1604,7 +1848,7 @@ def fetch_himalayas() -> tuple[list[dict], str]:
             pub = j.get("pubDate") or ""
             if isinstance(pub, (int, float)):
                 pub = _epoch_to_iso(pub)
-            rows.append({
+            row = {
                 "title": title,
                 "company": j.get("companyName") or "",
                 "loc": locs,
@@ -1616,7 +1860,11 @@ def fetch_himalayas() -> tuple[list[dict], str]:
                 "query": "himalayas:recent",
                 "rid": f"him:{(guid.rsplit('/', 1)[-1]
                           if guid_is_url else guid)}",
-            })
+            }
+            if family == "gen":
+                row["family"] = "gen"
+                row["family_evidence"] = "himalayas_firehose"
+            rows.append(row)
         cursor = d.get("nextCursor") or ""
         if not jobs or not cursor:
             break
@@ -1662,6 +1910,96 @@ def project_l0() -> tuple[list[dict], str]:
             "job_family_group": j.get("jobFamilyGroup") or "",
         })
     return rows, "ok"
+
+
+def project_l0_gen() -> tuple[list[dict], str]:
+    """[S49-B / DESIGN-S49 D2] L0: the ALL-ROLES board-corpus projection
+    for the gen family — the owner's ask: every row of the China-based +
+    AI-company watch corpus (the 30 curated ATS boards — openai,
+    anthropic, nvidia, bytedance, xiaohongshu, miniso, fuyao…) in the
+    all-roles bundle, WITH full JDs. Doctrine vs project_l0 (the pm
+    twin stays bit-identical):
+
+    - NO 'product' prefilter, NO classify_gen gate — the gate keeps
+      1.9% of this corpus (audit F6: GEN_CORE is the SMB office
+      grammar; nvidia/openai/anthropic are engineering/research
+      corpora it rejects wholesale). l0 rows bypass the family gate
+      in the sweep loop exactly like pm's l0 rows do.
+    - posted from earliestEvidenceDate (audit F8: firstPublishedIso
+      exists on 0/8,161 rows; postedOn is a '+ Days Ago' garbage
+      string — the live pm-bundle bug). 2,398 rows carry no date and
+      stay honestly dateless. NO 60d staleness bound (F10: the board
+      still listing a posting is the board's own liveness claim).
+    - desc = the FULL JD from the corpus desc store
+      (ui/desc/{companyId}.json → {rows: {full-row-id: jd_text}},
+      99.7% coverage), truncated at 12,000 like every other fetcher;
+      rows without one ship descLen=0/description_source="none".
+    - CJK titles (38 rows — 销售经理 etc.) KEPT: they are China-company
+      rows, the whole point of the strategy; pm_seniority is title-
+      based and degrades to "mid" on them. Rows whose title AND desc
+      are BOTH empty are skipped (nothing to show, nothing to grade).
+
+    The shared machinery (staffing/anonymized flags, sector_verdict,
+    the merge ladder) still runs on every projected row — the sweep
+    loop applies it to l0 rows too; the gen-l0 doctrine amendments
+    (g1/g1b/screening + bucket→pending) live there, family-gated.
+    """
+    if not BUNDLE.exists():
+        return [], "no-bundle"
+    d = json.load(open(BUNDLE))
+    rows = []
+    desc_cache: dict[str, object] = {}
+    n_joined = 0
+    for j in d.get("jobs", []):
+        title = j.get("title") or ""
+        rid = j.get("id") or ""
+        # the desc store: one file per companyId, rows keyed by the
+        # FULL row id (companyId:reqId-slug) — same id as jobs.json's
+        # 'id' field (verified: 8,134/8,161 joined, 27 blank)
+        desc = ""
+        cid = j.get("companyId") or ""
+        if cid and rid:
+            if cid not in desc_cache:
+                p = UI_DIR / "desc" / f"{cid}.json"
+                try:
+                    desc_cache[cid] = ((json.load(open(p)).get("rows")
+                                        if p.exists() else None))
+                except (json.JSONDecodeError, OSError):
+                    desc_cache[cid] = None
+            drows = desc_cache[cid]
+            if isinstance(drows, dict):
+                desc = str(drows.get(rid) or "")[:12000]
+        if not title.strip() and not desc.strip():
+            continue
+        remote = bool(j.get("remoteFlag"))
+        us = _classify_loc(j.get("country") or
+                           j.get("primaryLocation") or "")
+        us_status = "remote" if remote else us
+        if desc.strip():
+            n_joined += 1
+        rows.append({
+            "title": title,
+            "company": j.get("company") or "",
+            "loc": j.get("primaryLocation") or "",
+            "url": j.get("url") or "",
+            # F8: earliestEvidenceDate is the only ISO date field the
+            # corpus carries (5,763 rows); the pm projection's
+            # firstPublishedIso/postedOn reads are dead/garbage fields
+            "posted": (j.get("earliestEvidenceDate") or "")[:10],
+            "desc": desc, "source": "board", "layer": "l0",
+            "query": "l0:bundle", "rid": rid,
+            "company_key": j.get("companyKey") or "",
+            "family": "gen", "family_evidence": "l0_corpus",
+            "seniority": pm_seniority(title),
+            "us_status": us_status, "us_evidence": "board_country",
+            # "corpus": the FULL JD joined from the board-watch desc
+            # store (a NEW description_source value — the writers are
+            # passthrough, verified; "none" for the 27 JD-less rows)
+            "description_source": "corpus" if desc.strip() else "none",
+            "job_family_group": j.get("jobFamilyGroup") or "",
+        })
+    v = (f"ok:jd={n_joined}/{len(rows)}" if rows else "ok")
+    return rows, v
 
 
 # ── the pipeline: gates → usgate → dedup/merge → outputs ───────────────────
@@ -1919,7 +2257,10 @@ def sweep(queries: list[str], skip_gj: bool = False,
     started = datetime.now(timezone.utc)
     env = {"sources": {}, "layers": {}}
     # F9: endpoints hardcoded to PM-shaped URLs are SKIPPED for other
-    # families and recorded as locked (honest 0-row measurement)
+    # families and recorded as locked (honest 0-row measurement).
+    # [S49-B] gen's lock set is now EMPTY (the startup unlock — every
+    # one of the six sources is family-parameterized); the record says
+    # so honestly instead of trailing "skipped:" with no list.
     if family != "pm":
         for locked in spec["locked_endpoints"]:
             if locked == "l0_bundle":
@@ -1927,14 +2268,22 @@ def sweep(queries: list[str], skip_gj: bool = False,
             else:
                 skip_set.add(locked)
         env["sources"]["locked_endpoints"] = (
-            f"skipped:{','.join(spec['locked_endpoints'])}")
+            f"skipped:{','.join(spec['locked_endpoints'])}"
+            if spec["locked_endpoints"] else "none")
     all_rows: list[dict] = []
 
-    # S41 family generalization: the l0 Workday-corpus bundle is
-    # PM-only (F9-1). Other families skip it via the locked-endpoint
-    # record; a 0-row l0 would be a silent misconfiguration.
-    l0, v = (([], "locked_endpoint")
-             if "l0" in skip_set else project_l0())
+    # S41 family generalization → [S49-B / audit F13] the l0 dispatch is
+    # family-aware: pm keeps the PM projection (bit-identical, pinned);
+    # gen runs the ALL-ROLES projection (every corpus row + full JDs —
+    # D2); dmm stays locked (its locked_endpoints keeps l0_bundle, so
+    # skip_set carries "l0" and the lock fires here). --skip l0 still
+    # wins for any family (the local-run routing).
+    if "l0" in skip_set:
+        l0, v = [], "locked_endpoint"
+    elif family == "gen":
+        l0, v = project_l0_gen()
+    else:
+        l0, v = project_l0()
     env["sources"]["l0_bundle"] = v
     env["layers"]["l0"] = len(l0)
     all_rows += l0
@@ -2003,21 +2352,25 @@ def sweep(queries: list[str], skip_gj: bool = False,
                              [queries if len(queries) <= 30
                               else queries[:25]], None))
         fetchers += [
-            ("yc", fetch_yc, [], None),
+            # [S49-B] the startup parameterization: family rides the
+            # call args (pm defaults keep the pinned behavior
+            # bit-identical — fetch_x(family="pm") ≡ fetch_x())
+            ("yc", fetch_yc, [family], None),
             ("wellfound", fetch_wellfound, [], None),
-            ("hn", fetch_hn, [], None),
-            ("wwr_rss", fetch_wwr, [], None),
+            ("hn", fetch_hn, [family], None),
+            ("wwr_rss", fetch_wwr, [family], None),
             ("free_trio", fetch_free_trio, [], None),
-            ("talent", fetch_talent, [], None),
+            ("talent", fetch_talent, [family], None),
         ]
         if "muse" not in skip_set:
-            fetchers.append(("muse", fetch_muse, [], None))
+            fetchers.append(("muse", fetch_muse, [family], None))
         if "usajobs" not in skip_set:
             fetchers.append(("usajobs", fetch_usajobs, [queries], None))
         if "builtin" not in skip_set:
             fetchers.append(("builtin", fetch_builtin, [queries], None))
         if "himalayas" not in skip_set:
-            fetchers.append(("himalayas", fetch_himalayas, [], None))
+            fetchers.append(("himalayas", fetch_himalayas,
+                             [family], None))
         if not skip_gj and "gj" not in skip_set:
             fetchers.append(("gj_role", fetch_gj_role, [queries], None))
         # [S49, the S48 queue item 4] the firecrawl re-openings join
@@ -2153,6 +2506,20 @@ def sweep(queries: list[str], skip_gj: bool = False,
                          "usaj", "muse", "yc", "wf", "hn", "him",
                          "tal", "gj", "ziprecruiter", "glassdoor")):
                     rid = ""          # row-hash ids are NOT rids (F1)
+                # [S49-B] gen seed-union semantics: (a) l0/board rows
+                # NEVER re-enter via the seed — they are re-projected
+                # fresh every run (the corpus is local; rid-stripped
+                # seed copies would double the merge input for zero
+                # information — and F8's real dates would otherwise
+                # make them seed-eligible); (b) the STARTUP rows re-
+                # enter WITH their family stamp (the pre-stamp bypass)
+                # — without it the geo-tier runs (t1a/t1b/t2/t4 don't
+                # fetch the startup sources) would attrit every non-
+                # office startup row at classify_gen. Both clauses are
+                # gen-only: pm keeps the pinned map bit-identical, dmm
+                # has no l0 rows and no pre-stamped startup rows.
+                if family == "gen" and src == "board":
+                    continue
                 all_rows.append({
                     "title": row.get("title") or "",
                     "company": row.get("company") or "",
@@ -2172,6 +2539,19 @@ def sweep(queries: list[str], skip_gj: bool = False,
                         row.get("company") or "", {}),
                     "_seed": True,
                 })
+                if family == "gen" and (row.get("family") or "") == "gen":
+                    all_rows[-1]["family"] = "gen"
+                    all_rows[-1]["family_evidence"] = (
+                        row.get("familyEvidence") or "")
+                # [S49-D4] salary round-trip: adzuna rows re-entering
+                # via the seed keep their bands (the ui bundle carries
+                # salaryMin/salaryMax gen/dmm-side; without this map the
+                # weekly seed round-trip strips salary from every
+                # 60d-fresh adzuna row — audit F18's seed-map seam).
+                if row.get("salaryMin") is not None:
+                    all_rows[-1]["salary_min"] = row["salaryMin"]
+                if row.get("salaryMax") is not None:
+                    all_rows[-1]["salary_max"] = row["salaryMax"]
                 # [S46-B4 §3.6 join-i] the seed row keeps its OWN
                 # geoTier (the cross-tier union: the bundle job carries
                 # it; the dispatch stamp is a setdefault so it survives)
@@ -2213,12 +2593,22 @@ def sweep(queries: list[str], skip_gj: bool = False,
 
     for r in all_rows:
         title, company = r.get("title", ""), r.get("company", "")
+        # [S49-B] the family pre-stamp bypass: the gen-mode startup
+        # fetchers emit rows with family/family_evidence already stamped
+        # (the all-roles doctrine — hn walks ALL hiring comments, wwr
+        # sweeps the all-jobs feed; classify_gen would kill 93%+ of
+        # them, audit F6). Pre-stamped rows skip ONLY the family gate;
+        # seniority/us_status/description_source still stamp below. pm
+        # fetchers never pre-stamp family → the added `not r.get
+        # ("family")` clause is pm-inert (pinned: test_gen_family_
+        # prestamp_bypasses_gate).
         if r.get("layer") != "l0":
-            fam, ev = spec["gate"](title, query_is_pm=True)
-            if fam == "other":
-                counters["family_other"] += 1
-                continue
-            r["family"], r["family_evidence"] = fam, ev
+            if not r.get("family"):
+                fam, ev = spec["gate"](title, query_is_pm=True)
+                if fam == "other":
+                    counters["family_other"] += 1
+                    continue
+                r["family"], r["family_evidence"] = fam, ev
             r["seniority"] = pm_seniority(title)
             prior = SRC_US.get(r.get("source", ""), None)
             if prior == "us":
@@ -2256,18 +2646,30 @@ def sweep(queries: list[str], skip_gj: bool = False,
             counters["usgate_non_us"] += 1
             continue
         # gates (G1 + G1B + screening-post + sector verdict) — apply to
-        # pm AND adjacent rows
-        if g1_fires(title) or g1_fires(r.get("loc", "")):
+        # pm AND adjacent rows. [S49-B / audit F7] the gen-l0 all-roles
+        # doctrine: for gen l0 rows the three title gates and the
+        # sector 'bucket' drop are OFF — they encode the pm office/tech
+        # scope, not corpus quality, and would amputate real postings
+        # from the curated watch boards (miniso store-ops, fuyao
+        # production, faraday-future…); 'bucket' demotes to pending
+        # (ships flagged ▲ — the corpus membership is itself the
+        # sector evidence). Family-gated so pm/dmm (and gen non-l0
+        # rows) keep the pinned behavior.
+        _l0_allroles = (family == "gen" and r.get("layer") == "l0")
+        if not _l0_allroles and (g1_fires(title)
+                                 or g1_fires(r.get("loc", ""))):
             counters["nontech_gate"] += 1
             dropped.append({**r, "reason": "g1_title",
                             "recoverable": False})
             continue
-        if g1b_fires(title):                 # S38: title-only, recoverable
+        if not _l0_allroles and g1b_fires(title):
+            # S38: title-only, recoverable
             counters["g1b_title"] += 1
             dropped.append({**r, "reason": "g1b_title",
                             "recoverable": True})
             continue
-        if is_screening_post(title):         # S39 N7: recoverable bucket
+        if not _l0_allroles and is_screening_post(title):
+            # S39 N7: recoverable bucket
             counters["screening_post"] += 1
             dropped.append({**r, "reason": "screening_post",
                             "recoverable": True})
@@ -2290,6 +2692,12 @@ def sweep(queries: list[str], skip_gj: bool = False,
         act, sev, reason = sector_verdict(
             title, company, r.get("desc", ""),
             r.get("company_key"))
+        if act == "bucket" and _l0_allroles:
+            # [S49-B / audit F7] gen-l0: the watch-board membership is
+            # itself the sector evidence — bucket demotes to pending
+            # (265 measured corpus rows: faraday-future, omnivision,
+            # united-imaging…), sectorReason preserved, ships flagged ▲
+            act = "pending"
         if act == "bucket":
             counters["nontech_gate"] += 1
             dropped.append({**r, "reason": reason, "recoverable": True})
@@ -2327,6 +2735,50 @@ def sweep(queries: list[str], skip_gj: bool = False,
                   "adzuna", "jooble", "careerjet", "indeed", "linkedin"}
     by_key: dict[tuple, dict] = {}
     by_rid: dict[str, dict] = {}
+    # [S49-B / audit F9] the by_key dict-indexing: the seven per-row
+    # linear scans over by_key made the ladder O(7n²) — the gen
+    # expansion's 23.9k-row input (seed 15,717 + l0 8,161) blew the
+    # 120s budget (>300s measured, merge_ladder_timing.py). Every
+    # equality-keyed rule now hits a bucket dict keyed by its own
+    # match fields; each bucket list preserves the by_key INSERTION
+    # ORDER (append on insert, remove on the survivor swap), so the
+    # first bucket member is bit-identically the first by_key member
+    # the linear scan returned. Day-range rules (re7 / xs3 / core±1)
+    # scan only their small (title,ck,…) bucket with the SAME
+    # predicate. pm-inert by construction: same rules, same order,
+    # same merges — only the candidate enumeration changed (pinned
+    # by tests/test_s40_role_sweep.py).
+    ix_ukey: dict[tuple, list] = {}   # S40 url-identity
+    ix_exact: dict[tuple, list] = {}   # exact (t_norm, ck, layer, day)
+    ix_tcs: dict[tuple, list] = {}    # (t_norm, ck, src) — re7 ±7d
+    ix_tck: dict[tuple, list] = {}    # (t_norm, ck) — xs3/dateless
+    ix_adz: dict[tuple, list] = {}    # (t_norm, ck, loc12) — B6 suffix
+    ix_core: dict[tuple, list] = {}   # title_core cross-layer ±1d
+
+    def _ix_add(row: dict, kid) -> None:
+        ix_ukey.setdefault(row["_ukey"], []).append(kid)
+        ix_exact.setdefault(row["_exact"], []).append(kid)
+        ix_tcs.setdefault((row["_title_norm"], row["_ck"],
+                           row["_src"]), []).append(kid)
+        ix_tck.setdefault((row["_title_norm"], row["_ck"]),
+                          []).append(kid)
+        ix_adz.setdefault((row["_title_norm"], row["_ck"],
+                           row["_loc_prefix"]), []).append(kid)
+        ix_core.setdefault(row["_core"], []).append(kid)
+
+    def _ix_del(row: dict, kid) -> None:
+        # the donor's OWN _-fields name every bucket it lives in
+        for ix, bkey in (
+                (ix_ukey, row["_ukey"]), (ix_exact, row["_exact"]),
+                (ix_tcs, (row["_title_norm"], row["_ck"], row["_src"])),
+                (ix_tck, (row["_title_norm"], row["_ck"])),
+                (ix_adz, (row["_title_norm"], row["_ck"],
+                          row["_loc_prefix"])),
+                (ix_core, row["_core"])):
+            bucket = ix.get(bkey)
+            if bucket and kid in bucket:
+                bucket.remove(kid)
+
     for r in kept:
         day = _norm_day(r.get("posted", ""))
         # F14: anonymized employer keys never merge (shared key across
@@ -2334,8 +2786,8 @@ def sweep(queries: list[str], skip_gj: bool = False,
         ck = r["company_key"]
         if ck in _ANON_KEYS:
             ck = f"{ck}#{r.get('rid') or id(r)}"      # salted
-        exact = (re.sub(r"\W", "", (r["title"] or "").lower()),
-                 ck, r.get("layer"), day)
+        t_norm = re.sub(r"\W", "", (r["title"] or "").lower())
+        exact = (t_norm, ck, r.get("layer"), day)
         core = (title_core_family(r["title"] or "", family), ck)
         rid = r.get("rid") or ""
         merge_into = None
@@ -2352,60 +2804,52 @@ def sweep(queries: list[str], skip_gj: bool = False,
             # indeed:4e33... triple, +1 per run). url equality is the
             # identity signal the salt cannot defeat (same url = same
             # posting page; different titles never match).
-            ukey = (re.sub(r"\W", "", (r["title"] or "").lower()),
+            ukey = (t_norm,
                     (r.get("url") or "").strip(),
                     r.get("source") or "")
-            for k, cand in by_key.items():
-                if cand.get("_ukey") == ukey:
-                    merge_into = k
-                    counters["url_identity_merge"] = counters.get(
-                        "url_identity_merge", 0) + 1
-                    break
+            bucket = ix_ukey.get(ukey)
+            if bucket:
+                merge_into = bucket[0]
+                counters["url_identity_merge"] = counters.get(
+                    "url_identity_merge", 0) + 1
         if merge_into is None:
-            for k, cand in by_key.items():
-                if cand.get("_exact") == exact:
-                    merge_into = k
-                    break
-        if merge_into is None:
+            bucket = ix_exact.get(exact)
+            if bucket:
+                merge_into = bucket[0]
+        if merge_into is None and day is not None:
             # S38-C4: the intra-source re-crawl class (Seismic ×3 on
             # consecutive careerjet crawl days) — same source, same
             # title, same company, ≤7 days apart = the same posting
             # re-crawled, merge (earliest evidence wins)
-            for k, cand in by_key.items():
-                if cand.get("_title_norm") == re.sub(
-                        r"\W", "", (r["title"] or "").lower()) and \
-                        cand.get("_ck") == ck and \
-                        cand.get("_src") == r.get("source") and \
-                        day is not None and cand.get("_day") is not None and \
+            for k in ix_tcs.get((t_norm, ck, r.get("source")), ()):
+                cand = by_key[k]
+                if cand.get("_day") is not None and \
                         abs((day - cand["_day"]).days) <= 7:
                     merge_into = k
                     day_delta_hist["re7"] = \
                         day_delta_hist.get("re7", 0) + 1
                     counters["res7_merge"] = counters.get("res7_merge", 0) + 1
                     break
-        if merge_into is None:
+        if merge_into is None and day is not None and \
+                r.get("layer") == "l1.5":
             # S39 F1(d): intra-L1.5 CROSS-SOURCE exact title_norm +
             # same company_key + day Δ≤3 — the cross-engine date-skew
             # class (careerjet/adzuna re-host the same ATS feed with
             # 0-3d posting-date skew; the seed union's main dedup
             # path). title_core is deliberately NOT used (the bjak
             # 12-variant multi-req class stays un-merged).
-            if r.get("layer") == "l1.5":
-                for k, cand in by_key.items():
-                    if cand.get("_layer") == "l1.5" and \
-                            cand.get("_src") != r.get("source") and \
-                            cand.get("_title_norm") == re.sub(
-                                r"\W", "", (r["title"] or "").lower()) and \
-                            cand.get("_ck") == ck and \
-                            day is not None and \
-                            cand.get("_day") is not None and \
-                            abs((day - cand["_day"]).days) <= 3:
-                        merge_into = k
-                        counters["cross_src_merge"] += 1
-                        day_delta_hist[f"xs{abs((day - cand['_day']).days)}"] = \
-                            day_delta_hist.get(
-                                f"xs{abs((day - cand['_day']).days)}", 0) + 1
-                        break
+            for k in ix_tck.get((t_norm, ck), ()):
+                cand = by_key[k]
+                if cand.get("_layer") == "l1.5" and \
+                        cand.get("_src") != r.get("source") and \
+                        cand.get("_day") is not None and \
+                        abs((day - cand["_day"]).days) <= 3:
+                    merge_into = k
+                    counters["cross_src_merge"] += 1
+                    day_delta_hist[f"xs{abs((day - cand['_day']).days)}"] = \
+                        day_delta_hist.get(
+                            f"xs{abs((day - cand['_day']).days)}", 0) + 1
+                    break
         if merge_into is None:
             # S39 B6/F15 (N8): the multi-agency same-req pair class —
             # adzuna staffing rows whose trailing '(City)' suffix
@@ -2418,23 +2862,20 @@ def sweep(queries: list[str], skip_gj: bool = False,
                     r"\s*\((?:[A-Z][a-z]+(?:\s[A-Z][a-z]+)?)\)\s*$", "",
                     (r["title"] or "")).strip()
                 bare_norm = re.sub(r"\W", "", bare.lower())
-                if bare_norm and bare_norm != re.sub(
-                        r"\W", "", (r["title"] or "").lower()):
-                    for k, cand in by_key.items():
-                        if cand.get("_src") == "adzuna" and \
-                                cand.get("_ck") == ck and \
-                                cand.get("_title_norm") == bare_norm and \
-                                (cand.get("_loc_prefix") or "") == \
-                                (r.get("loc") or "")[:12]:
+                if bare_norm and bare_norm != t_norm:
+                    for k in ix_adz.get((bare_norm, ck,
+                                         (r.get("loc") or "")[:12]), ()):
+                        cand = by_key[k]
+                        if cand.get("_src") == "adzuna":
                             merge_into = k
                             counters["res7_merge"] = counters.get(
                                 "res7_merge", 0) + 1
                             break
-        if merge_into is None:
-            for k, cand in by_key.items():
-                if cand.get("_core") == core and \
-                        cand.get("_layer") != r.get("layer") and \
-                        day is not None and cand.get("_day") is not None and \
+        if merge_into is None and day is not None:
+            for k in ix_core.get(core, ()):
+                cand = by_key[k]
+                if cand.get("_layer") != r.get("layer") and \
+                        cand.get("_day") is not None and \
                         abs((day - cand["_day"]).days) <= 1:
                     merge_into = k
                     d = abs((day - cand["_day"]).days)
@@ -2443,13 +2884,10 @@ def sweep(queries: list[str], skip_gj: bool = False,
                     break
         if merge_into is None and day is None:
             # F1 dateless-donor: exact raw title + same company key
-            for k, cand in by_key.items():
-                if cand.get("_title_norm") == re.sub(
-                        r"\W", "", (r["title"] or "").lower()) and \
-                        cand.get("_ck") == ck:
-                    merge_into = k
-                    counters["dedup_dateless"] += 1
-                    break
+            bucket = ix_tck.get((t_norm, ck))
+            if bucket:
+                merge_into = bucket[0]
+                counters["dedup_dateless"] += 1
         if merge_into is not None and merge_into not in by_key:
             # S39: stale by_rid pointer (the donor was swapped out of
             # by_key by a later higher-rank survivor) — treat as fresh
@@ -2457,13 +2895,14 @@ def sweep(queries: list[str], skip_gj: bool = False,
         if merge_into is None:
             r["_exact"], r["_core"], r["_day"], r["_layer"] = \
                 exact, core, day, r.get("layer")
-            r["_ck"], r["_title_norm"], r["_src"] = ck, re.sub(
-                r"\W", "", (r["title"] or "").lower()), r.get("source")
+            r["_ck"], r["_title_norm"], r["_src"] = ck, t_norm, \
+                r.get("source")
             r["_loc_prefix"] = (r.get("loc") or "")[:12]
-            r["_ukey"] = ((re.sub(r"\W", "", (r["title"] or "").lower())),
+            r["_ukey"] = (t_norm,
                           (r.get("url") or "").strip(),
                           r.get("source") or "")
             by_key[id(r)] = r
+            _ix_add(r, id(r))
             if rid:
                 by_rid[rid] = r
             if r.get("_seed"):
@@ -2503,6 +2942,15 @@ def sweep(queries: list[str], skip_gj: bool = False,
         if len(donor.get("desc", "")) > len(survivor.get("desc", "")):
             survivor["desc"], survivor["description_source"] = \
                 donor["desc"], donor.get("description_source")
+        # [S49-D4] salary: the survivor inherits the donor's bands
+        # when its own are blank — an adzuna donor's UNIQUE data (the
+        # only salary-bearing source) must survive the merge that
+        # precedes it (audit F18's survivor-inheritance seam). Row-
+        # internal only: the emit-level family gate keeps the pm
+        # bundle/CSV byte-identical.
+        for _sal in ("salary_min", "salary_max"):
+            if survivor.get(_sal) is None and donor.get(_sal) is not None:
+                survivor[_sal] = donor[_sal]
         # location: priority-layer first; donor fills blanks (R2's
         # L4-detail > gj-card > li-card ladder = the rank order)
         if not survivor.get("loc") and donor.get("loc"):
@@ -2526,19 +2974,21 @@ def sweep(queries: list[str], skip_gj: bool = False,
             # the NEW row outranks the stored one — swap membership
             r["_exact"], r["_core"], r["_day"], r["_layer"] = \
                 exact, core, day, r.get("layer")
-            r["_ck"], r["_title_norm"], r["_src"] = ck, re.sub(
-                r"\W", "", (r["title"] or "").lower()), r.get("source")
+            r["_ck"], r["_title_norm"], r["_src"] = ck, t_norm, \
+                r.get("source")
             r["_loc_prefix"] = (r.get("loc") or "")[:12]
-            r["_ukey"] = ((re.sub(r"\W", "", (r["title"] or "").lower())),
+            r["_ukey"] = (t_norm,
                           (r.get("url") or "").strip(),
                           r.get("source") or "")
             del by_key[merge_into]
+            _ix_del(tgt, merge_into)   # the donor leaves every bucket
             # S39: purge stale by_rid pointers to the swapped-out donor
             # (a later same-rid row would resolve to a dead key)
             for rid_k, rid_v in list(by_rid.items()):
                 if rid_v is tgt:
                     del by_rid[rid_k]
             by_key[id(r)] = r
+            _ix_add(r, id(r))          # the survivor re-enters at the end
             if rid:
                 by_rid[rid] = r
 
@@ -2592,8 +3042,10 @@ def sweep(queries: list[str], skip_gj: bool = False,
 
     # outputs (write-atomic)
     ROLES_DIR.mkdir(parents=True, exist_ok=True)
-    _write_atomic(ROLES_DIR / f"{prefix}_inventory.csv", _csv_bytes(merged))
-    _write_atomic(ROLES_DIR / f"{prefix}_dropped.csv", _csv_bytes(dropped))
+    _write_atomic(ROLES_DIR / f"{prefix}_inventory.csv",
+                  _csv_bytes(merged, family))
+    _write_atomic(ROLES_DIR / f"{prefix}_dropped.csv",
+                  _csv_bytes(dropped, family))
 
     env.update({
         "ran_at": started.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -2787,6 +3239,13 @@ def sweep(queries: list[str], skip_gj: bool = False,
     if family in _B4_FAMILIES:
         for row, r in zip(ui_rows, merged):
             row["smb_signal"] = r.get("smb_signal", "")
+            # [S49-D4] the adzuna salary bands ride the gen/dmm bundle
+            # rows (pm's emitted bundle stays byte-identical — the
+            # writer-level family gate; audit F18).
+            if r.get("salary_min") is not None:
+                row["salaryMin"] = r["salary_min"]
+            if r.get("salary_max") is not None:
+                row["salaryMax"] = r["salary_max"]
     _sen_order = {"senior": 0, "director+": 1, "mid": 2, "junior": 3}
     ui_rows.sort(key=lambda x: (_sen_order.get(x["seniority"], 4),
                                 x["postedOn"] or ""))
@@ -2807,7 +3266,7 @@ def sweep(queries: list[str], skip_gj: bool = False,
     return 0 if verdict == "complete" else 1
 
 
-def _csv_bytes(rows: list[dict]) -> bytes:
+def _csv_bytes(rows: list[dict], family: str = "pm") -> bytes:
     if not rows:
         return b""
     cols = ["title", "company", "company_key", "loc", "geoTier",
@@ -2818,6 +3277,11 @@ def _csv_bytes(rows: list[dict]) -> bytes:
             "source", "layer",
             "query", "rid", "description_source", "desc_len", "reason",
             "recoverable"]
+    # [S49-D4] the salary columns exist ONLY on the gen/dmm exports —
+    # the pm CSV byte-identity is pinned and salary never reaches a
+    # pm row's emit anyway (writer-level family gate).
+    if family in _B4_FAMILIES:
+        cols += ["salary_min", "salary_max"]
     import io
     buf = io.StringIO()
     w = csv.DictWriter(buf, fieldnames=cols, extrasaction="ignore")

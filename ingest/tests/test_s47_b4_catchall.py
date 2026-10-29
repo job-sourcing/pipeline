@@ -157,7 +157,13 @@ def test_gen_family_registry_entry():
     assert spec["ui_file"] == "roles-gen.json"
     assert spec["drift_label"] == "roles:gen"
     assert spec["quartet_prefix"] == "gen"
-    assert spec["l0_bundle"] is False
+    # [S49-B / audit F13] the all-roles expansion landed: the l0
+    # projection is WIRED for gen (sweep dispatches project_l0_gen)
+    # and the startup lock is EMPTIED (the six sources are
+    # family-parameterized now). dmm keeps the S47 lock unchanged —
+    # that pin lives in test_s41_family.py.
+    assert spec["l0_bundle"] is True
+    assert spec["locked_endpoints"] == ()
     assert spec["slug"] == "gen"
 
 

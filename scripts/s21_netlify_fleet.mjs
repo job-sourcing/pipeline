@@ -88,7 +88,10 @@ const WORKER_SRC = `export default async (req) => {
         redirect: 'follow'
       })
       clearTimeout(t)
-      const ab = new ArrayBuffer(await r.arrayBuffer())
+      const ab = await r.arrayBuffer()   // S49 fix: wrapping the buffer
+      // in new ArrayBuffer(buf) coerces the buffer OBJECT to a length
+      // (NaN to 0) — the fleet-wide bytes=0 body="" shape every worker
+      // served since S21; the body logic shipped but never returned a byte.
       const bytes = ab.byteLength
       let text = ''
       try { text = new TextDecoder().decode(ab).slice(0, (job.max_bytes || 120000)) } catch { }
