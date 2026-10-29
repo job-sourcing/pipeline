@@ -1,6 +1,7 @@
 {
- "last_leg": "2026-10-28T20:34:41Z",
+ "last_leg": "2026-10-29T19:41:05Z",
  "transport": "direct",
+ "mode": "pending",
  "fetched": 0,
  "remaining": 0,
  "targets_seen": 1369,
