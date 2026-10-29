@@ -1,9 +1,9 @@
 {
  "label": "jd_us_fulltime",
  "rows": 74,
- "kept": 73,
- "new": 1,
- "ghosts_dropped": 2,
+ "kept": 74,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -14,5 +14,5 @@
  "state_rows": 694,
  "banded": 0,
  "lca_pools": 3,
- "snapshot": "2026-10-28"
+ "snapshot": "2026-10-29"
 }
