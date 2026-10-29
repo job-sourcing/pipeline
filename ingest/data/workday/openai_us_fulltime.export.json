@@ -1,9 +1,9 @@
 {
  "label": "openai_us_fulltime",
  "rows": 635,
- "kept": 623,
- "new": 12,
- "ghosts_dropped": 7,
+ "kept": 633,
+ "new": 2,
+ "ghosts_dropped": 2,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,

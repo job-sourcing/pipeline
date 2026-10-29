@@ -37979,96 +37979,6 @@ We are committed to providing reasonable accommodations to applicants with disab
 OpenAI Global Applicant Privacy Policy
 
 At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",6139,https://jobs.ashbyhq.com/openai/e42305bf-2266-4dff-82ad-42be7ddac495,,,,,,,no_match,,2026-09-22,,2026-10-29,,,,true,0,,,,,Applied AI,,,false,59,210000,255000,310000,subset,Member of Technical Staff (Software Engineer)
-6de1fad0-a69d-4d81-9d3a-2a3c5512b940,"Model Policy Manager, Multimodal Safety",openai,openai,Full time,Posted 7 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Team
-
-Safety Systems manages the complete lifecycle of safety efforts for OpenAI’s frontier models, ensuring our models are deployed responsibly and have a positive impact on society. Our work spans diverse research and engineering initiatives—from system-level safeguards and model training to evaluation and red-teaming—all aimed at mitigating misuse, misalignment, and maintaining our high bar for safety. We lead OpenAI's commitment to developing and deploying safe Artificial General Intelligence (AGI), fostering a culture of trust, responsibility, and transparency. Our goal is to continuously learn from deployments, distribute AI’s benefits widely, and ensure that powerful tools remain aligned with human values and safety considerations.
-
-Within Safety Systems, the Model Policy team works to ensure that frontier models behave safely and reliably in real-world environments by designing policies that define safe model behavior. Our relevant publications include:
-
-•
-Safety at every step
-
-•
-OpenAI GPT6 System Card
-
-•
-OpenAI Model Spec
-
-•
-GPT-Live
-
-•
-ChatGPT Images 2.5
-
-About the Role
-
-We are hiring a Model Policy Manager to focus on the safety of multimodal models. In this role, you will shape how OpenAI identifies, evaluates, and addresses risks in multimodal AI models - such as GPT-Live and ChatGPT Images - as well as multimodal capabilities in frontier AI models.
-
-This role is based in San Francisco, CA. We use a hybrid work model of 3 days in the office per week and offer relocation assistance to new employees.
-
-In this role, you will:
-
-•
-Design and maintain model policies for audio, image, video, and omni-modal behavior.
-
-•
-Translate theories of harm and threat models into behavioral safety policies, evaluation criteria, grading guidance, and safeguards.
-
-•
-Identify and analyze safety regressions and failure patterns to identify gaps in existing policies and inform policy iteration.
-
-•
-Develop policy artifacts that support model training, evaluation, and deployment, including behavior instructions, human-data campaigns, golden sets, and evaluations.
-
-•
-Partner with AI researchers, domain experts, and product teams to operationalize policy into measurable model behavior.
-
-You might thrive in this role if you:
-
-•
-Have strong judgment about the real-world risks of advanced multimodal AI systems.
-
-•
-Possess experience turning ambiguous safety questions into clear data-driven policies, behavioral boundaries, and measurable evaluation criteria.
-
-•
-Treat policy as an end-to-end, measurable system by testing whether it produces the intended model behavior and diagnosing gaps across policy, data, graders, and safeguards.
-
-•
-Leverage strong technical judgement to design policies around model behavior that can realistically be trained, measured, and supervised at scale.
-
-•
-Demonstrate strong technical fluency and uses AI tools to accelerate policy development, evaluate model behavior, analyze failure patterns, and turn findings into actionable improvements.
-
-•
-Are comfortable working hands-on with model data and evaluation results, including inspecting examples, analyzing failure patterns, assessing data quality, and distinguishing policy failures from grader, model, or system failures.
-
-•
-Enjoy fast-paced, collaborative research environments where priorities shift as models, evidence, and risks change.
-
-•
-Take a pragmatic, evidence-driven approach to reducing risk while preserving beneficial uses of AI.
-
-•
-Have hands-on experience driving consensus and action in ambiguous spaces.
-
-About OpenAI
-
-OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
-
-We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
-
-For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
-
-Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
-
-To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
-
-We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
-
-OpenAI Global Applicant Privacy Policy
-
-At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",6088,https://jobs.ashbyhq.com/openai/6de1fad0-a69d-4d81-9d3a-2a3c5512b940,,,,,,,no_match,,2026-09-19,,2026-10-29,,,,true,0,,,,,Safety Systems,,,false,,,,,,
 bc059a72-8ff3-4a80-a499-5b82ccca1f05,"Regulatory Operations Analyst, User Safety & Risk Operations",openai,openai,Full time,Posted 4 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Team
 
 At OpenAI, our User Operations team safeguards our products and users from legal risk, regulatory non-compliance, fraud, and abuse. The team operates at the intersection of operations, compliance, and user trust, embedded within the broader User Operations organization and collaborating cross-functionally with Legal, Governance Risk & Compliance, Policy and Engineering.
@@ -47695,130 +47605,6 @@ We are committed to providing reasonable accommodations to applicants with disab
 OpenAI Global Applicant Privacy Policy
 
 At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",6890,https://jobs.ashbyhq.com/openai/bbe1e108-b8cf-4c57-a646-f89eb1007f1c,,,,,,,not_checked,,2026-10-17,,2026-10-29,,,,true,0,,,,,,,,,,,,,,
-d16ac2b8-a742-4965-8545-75df7981191b,Events Design Producer,OpenAI,openai,Full time,Posted 1 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Role
-
-We’re seeking an experienced Events Design Producer to lead the design production of high-profile events and experiences across the company.
-
-This is a high-impact role embedded within a fast-moving, cross-functional organization. You will oversee multiple event design workstreams, providing operational structure and hands-on production leadership from early concept development through fabrication, installation, and live execution.
-
-You’ll partner closely with creative, events, production, brand, marketing, and cross-functional stakeholders to ensure every physical and visual touchpoint is cohesive, on brand, and delivered to an exceptionally high standard. You will coordinate internal teams, agencies, fabricators, and vendors while balancing resources and priorities across concurrent projects.
-
-In this role, you will:
-
-•
-Lead design production across company events, from intimate gatherings to large-scale global experiences
-
-•
-Oversee the design development and execution of event environments, stages, signage, wayfinding, scenic elements, activations, and branded guest experiences
-
-•
-Establish clear roles, workflows, workback schedules, budgets, and quality standards across event design workstreams
-
-•
-Assess incoming event design needs and coordinate creative resources, agencies, fabricators, and vendors based on scope, timing, and complexity
-
-•
-Provide hands-on production leadership to keep complex or high-priority event design projects moving from concept through onsite delivery
-
-•
-Partner closely with event leads and creative teams to translate event goals, audience journeys, and program narratives into clear design briefs and deliverables
-
-•
-Guide designers and external partners in developing cohesive spatial, environmental, scenic, digital, and print design systems that align with brand standards
-
-•
-Synthesize and prioritize input from multiple stakeholders, turning feedback into clear, actionable direction for designers, agencies, fabricators, and vendors
-
-•
-Maintain visibility across design milestones, budgets, approvals, dependencies, fabrication schedules, installation plans, risks, and onsite production documentation
-
-•
-Ensure tight alignment across event identity, environment, stage, signage, digital surfaces, printed materials, and the end-to-end audience experience
-
-•
-Lead design reviews, technical handoffs, site walks, production check-ins, and onsite quality control through installation and live execution
-
-•
-Drive design-production decisions in a fast-paced environment with shifting directives, compressed timelines, and competing priorities
-
-•
-Identify opportunities to improve event design production processes, briefs, templates, vendor workflows, and ways of working
-
-•
-Maintain calm, clarity, and executional rigor during high-pressure moments leading up to and during event installation and live execution
-
-•
-Partner with creative and events leads to continually reprioritize projects and creative resourcing as urgent needs arise
-
-•
-Develop integrated workback schedules for multiple cross-functional teams across several concurrent global events; communicate deadlines proactively and consistently, and anticipate and address blockers as they arise
-
-You might thrive in this role if you have:
-
-•
-8+ years of experience producing event design, experiential design, environmental design, or branded experiences, ideally within technology or a fast-moving global organization
-
-•
-Experience leading multidisciplinary teams of designers, creative producers, agencies, fabricators, technical partners, and vendors
-
-•
-Demonstrated ability to oversee multiple complex event design and production workstreams simultaneously
-
-•
-Strong creative-production leadership skills, with the ability to provide clear direction, thoughtful feedback, and support to teams working under tight timelines
-
-•
-Experience managing creative workstreams from early concept and design development through fabrication, installation, live execution, and strike
-
-•
-Strong visual judgment and experiential storytelling instincts, with exceptional attention to detail across spatial design, brand expression, materials, and guest experience
-
-•
-Proven ability to navigate ambiguity, synthesize diverse opinions, and establish clear priorities and decision paths
-
-•
-Confidence working directly with senior leaders and guiding stakeholders through rapid creative review and approval cycles
-
-•
-Strong budget, resource-planning, vendor-management, and project-management skills, including the ability to anticipate risks and resolve competing demands
-
-•
-Composure, decisiveness, and reliability under tight deadlines, onsite installation demands, and live-event pressure
-
-Additional Details
-
-•
-Must be in San Francisco 3 days a week to work closely with internal teams
-
-•
-Travel will be required for major company events, site visits, installations, and production weeks
-
-•
-Extended hours should be expected as key event milestones, installations, and live dates approach
-
-Why This Role Matters
-
-Events are among the company’s most visible and important brand moments. This role will ensure that event design projects across the company are scoped thoughtfully, managed effectively, and delivered with consistency, precision, and craft.
-
-By connecting creative ambition with production reality, the Events Design Producer will help build a scalable, high-performing function that turns ideas into cohesive, memorable experiences for audiences around the world.
-
-About OpenAI
-
-OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
-
-We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
-
-For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
-
-Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
-
-To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
-
-We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
-
-OpenAI Global Applicant Privacy Policy
-
-At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",8047,https://jobs.ashbyhq.com/openai/d16ac2b8-a742-4965-8545-75df7981191b,,,,,,,not_checked,,2026-10-17,,2026-10-29,,,,true,0,,,,,,,,,,,,,,
 d96ba2bd-5804-4043-b43c-0c5ed3b7d305,"Strategic Finance, Emerging B2B Products",OpenAI,openai,Full time,Posted 1 Days Ago,,,San Francisco,1,San Francisco,false,,United States,,0,"About the Team
 
 The Strategic Finance team partners across OpenAI to turn company strategy into financial decisions, help allocate resources, and steer the business toward its highest-impact long-term outcomes.
@@ -55311,3 +55097,200 @@ We are committed to providing reasonable accommodations to applicants with disab
 OpenAI Global Applicant Privacy Policy
 
 At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",5986,https://jobs.ashbyhq.com/openai/e57629e3-8f87-4abe-aa08-1ff51f54d209,,,,,,,not_checked,,2026-10-29,,2026-10-29,,,,true,0,,,,,,,,,,,,,,
+0fca3b36-8aaa-491a-be87-09efacfeca5e,Senior Procurement Manager – Infrastructure Complex Deals,OpenAI,openai,Full time,Posted Today,,,San Francisco,1,San Francisco,false,,United States,,0,"About the team
+
+Hardware Procurement Operations enables OpenAI’s hardware and infrastructure businesses to execute supplier engagements and purchases at speed while maintaining financial discipline, clear ownership, and effective controls.
+
+Our work spans procurement execution, process and systems enablement, and lifecycle governance—from initial requests and agreements through purchasing, payment, and closeout, with related asset and inventory governance. We build practical operating models, resolve cross-functional barriers, and improve the tools and processes that help teams scale.
+
+About the role
+
+You will own procurement execution for complex infrastructure deals, including land transactions, lease agreements, power purchase agreements, and fast-moving colocation and fiber engagements. Scope may expand to cloud service provider (CSP) engagements and sourcing activities as business needs evolve.
+
+This senior individual contributor role combines hands-on lifecycle management with commercial judgment and building scalable operations. You will recognize gaps in proposed supplier engagements, work with business owners, sourcing, Legal, and Finance to improve them, and translate agreements into executable purchasing and payment plans. You will also build standard processes and automation that help teams move faster while reducing deal risk.
+
+In this role, you will:
+
+•
+Drive assigned engagements from intake and agreement execution through purchasing, ongoing obligations, amendments, renewals, final payments, and closeout.
+
+•
+Assess commercial and operational readiness, identify gaps in scope, deliverables, acceptance criteria, and payment terms, and drive resolution with the appropriate partners.
+
+•
+Resolve commercial, financial, and operational dependencies, aligning owners on required reviews and approvals. Represent procurement operations in deal planning and senior stakeholder escalations, presenting clear recommendations on commercial readiness, risks, and execution tradeoffs while respecting each function’s decision authority.
+
+•
+Maintain accurate obligation and purchasing records; coordinate payment readiness, acceptance evidence, invoice exceptions, and reconciliation with business owners, Treasury, Accounting, and Accounts Payable.
+
+•
+Establish procurement operating standards and influence business, sourcing, Legal, and Finance partners to adopt practices that improve supplier engagement quality, accelerate execution, and reduce risk. Build the processes, templates, playbooks, and upstream review cycles that make those standards actionable.
+
+•
+Design, implement, and manage workflow automation and AI agents, partnering with technical teams where needed; own testing, adoption, monitoring, exception handling, and appropriate human review and approval controls.
+
+You might thrive in this role if you:
+
+•
+Have independently managed complex procurement engagements through post-signature execution and closeout, with experience in at least one infrastructure category such as land, leases, power, colocation, or fiber.
+
+•
+Can distinguish well-structured supplier engagements from those that create avoidable ambiguity or exposure, recommend practical improvements, and recognize when Legal or Accounting judgment is required.
+
+•
+Understand contractual obligations, payment structures, and procurement controls, and can translate them into clear execution plans.
+
+•
+Can independently prioritize time-sensitive engagements, navigate ambiguity, and resolve cross-functional dependencies, seeking guidance on complex or consequential decisions. Communicate risks and tradeoffs clearly and influence senior stakeholders without formal authority.
+
+•
+Have built repeatable processes in an ambiguous environment and use procurement, contract management, and ERP systems and operational data to improve execution.
+
+•
+Have delivered workflow automation or AI agent solutions with measurable results and can manage their reliability, exceptions, and controls.
+
+Additional experience that would be useful:
+
+•
+Experience across multiple infrastructure categories, CSP commercial models, multi-entity purchasing, milestone payments, or escrow arrangements.
+
+•
+Zip, Oracle, Ironclad, or comparable platforms; workflow configuration, low-code tools, APIs, or scripting.
+
+What success looks like:
+
+•
+Business, sourcing, Legal, and Finance partners adopt shared operating standards, templates, and early review cycles, improving engagement quality and contracting readiness.
+
+•
+Request-to-agreement execution and request-to-PO cycle times improve measurably, alongside fewer preventable delays, missed obligations, invoice exceptions, and financial or contractual exposures.
+
+•
+Engagements remain actively managed through final payment and closeout, with dependable visibility into obligations, risks, ownership, and payment readiness.
+
+•
+Automation and AI agents reduce manual effort and improve speed and accuracy while maintaining effective controls.
+
+About OpenAI
+
+OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
+
+We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
+
+For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
+
+Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
+
+To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
+
+We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
+
+OpenAI Global Applicant Privacy Policy
+
+At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",7528,https://jobs.ashbyhq.com/openai/0fca3b36-8aaa-491a-be87-09efacfeca5e,,,,,,,not_checked,,2026-10-29,,2026-10-29,,,,true,0,,,,,,,,,,,,,,
+d1f21456-f0bf-48ad-bb8d-ae0020a10600,"Sales Manager, Startups",OpenAI,openai,Full time,Posted Today,,,San Francisco,1,San Francisco,false,,United States,,0,"About the team
+
+OpenAI’s mission is to build safe artificial general intelligence (AGI) which benefits all of humanity. This long-term undertaking brings the world’s best scientists, engineers, and business professionals into one lab together to accomplish this.
+
+In pursuit of this mission, our Go To Market (GTM) team is responsible for helping customers learn how to leverage and deploy our highly capable AI products across their business. The team is made of Sales, Solutions, Support, Marketing, and Partnership professionals that work together to create valuable solutions that will help bring AI to as many users as possible.
+
+About the role
+
+Startups are creating many of the most disruptive and category-defining AI applications. The Startup Go To Market team’s mission is to help startups harness the power of AI models to drive these advances. You will lead a team that supports startups building effectively with OpenAI’s APIs, providing access to OpenAI teams and expertise to support their growth.
+
+This role is a mixture of technical understanding, vision, partnership, and strategy.
+
+This leadership role will be responsible for driving and implementing the sales strategy within our startups segment, recruiting and leading a team of technical sales professionals, and achieving successful deployments with startup customers.
+
+The ideal candidate will possess significant sales leadership experience and a comprehensive understanding of AI technologies. This leader will have the capability to adapt to a complex and fast-changing technology environment. Responsibilities will include customer acquisition, account management, owning executive relationships, and more.
+
+This individual will need to be a proven leader who can effectively collaborate cross-functionally with product, marketing, developer relations, operations, and core GTM teams, while guiding and mentoring a sales team towards achieving business objectives.
+
+This role is based in San Francisco, CA. We use a hybrid work model of 3 days in the office per week and offer relocation assistance to new employees.
+
+In this role, you'll:
+
+•
+Lead a team of sellers
+
+•
+Partner with solutions to build and execute complex customer programs and projects
+
+•
+Manage consumption revenue forecasts
+
+•
+Contribute to the development of programs and strategic initiatives focused on startup customers
+
+•
+Serve as an advocate for improving the startup experience building with OpenAI, synthesizing product feedback from insights captured from our work with startups
+
+•
+Closely monitor the industry landscape (people, competitors, partners, etc.) to contribute to product roadmap and other corporate strategies
+
+•
+Support the recruitment and onboarding of other teammates
+
+•
+Support the development of company culture
+
+We're seeking someone with experience including:
+
+•
+8+ years leading Sales teams
+
+•
+Deep experience working in the startup ecosystem either as a founder, early startup employee, or by working with startup customers
+
+•
+Selling platform-as-a-service and/or software-as-a-service at a product-led growth company
+
+•
+Designing and executing complex deal strategies
+
+•
+Supporting the growth of fast-growing, high-performance startups
+
+•
+Leading high-visibility customer events (CAB, conferences, product launches, etc.)
+
+•
+Gathering, distilling, and processing complex market (industry, competitor, customer, prospect) intelligence
+
+•
+Reporting on customer success activities
+
+You might thrive in this role if you:
+
+•
+Are customer-centric. You are motivated to deeply understand your customer’s priorities and help them achieve their vision for using our models to improve their internal productivity and AI strategy. You build strong relationships with executives and professionals across functions and serve as a trusted advisor.
+
+•
+Have a passion for or deep curiosity in artificial intelligence. You embrace the opportunity to help deploy our technology in a way that benefits humanity. You’re excited to educate our customers on AI and how to plan for the future.
+
+•
+Are a builder. You are excited to impact how our company operates and scales. Your passion is building strong systems and processes from the ground up and executing them with precision.
+
+•
+Are excited by new challenges. You don’t have the answers to every question up front, but the process of solving them invigorates you. Bespoke issues requiring multidimensional knowledge excite you. You’re willing to experiment with new solutions.
+
+•
+Are a strategist. You deeply understand go to market best practices and raise the bar for our organization. You think and plan forward on the order of years and bring internal and external stakeholders along with your strategy.
+
+About OpenAI
+
+OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. We push the boundaries of the capabilities of AI systems and seek to safely deploy them to the world through our products. AI is an extremely powerful tool that must be created with safety and human needs at its core, and to achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity.
+
+We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic.
+
+For additional information, please see OpenAI’s Affirmative Action and Equal Employment Opportunity Policy Statement.
+
+Background checks for applicants will be administered in accordance with applicable law, and qualified applicants with arrest or conviction records will be considered for employment consistent with those laws, including the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance for Employers, and the California Fair Chance Act, for US-based candidates. For unincorporated Los Angeles County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: protect computer hardware entrusted to you from theft, loss or damage; return all computer hardware in your possession (including the data contained therein) upon termination of employment or end of assignment; and maintain the confidentiality of proprietary, confidential, and non-public information. In addition, job duties require access to secure and protected information technology systems and related data security obligations.
+
+To notify OpenAI that you believe this job posting is non-compliant, please submit a report through this form. No response will be provided to inquiries unrelated to job posting compliance.
+
+We are committed to providing reasonable accommodations to applicants with disabilities, and requests can be made via this link.
+
+OpenAI Global Applicant Privacy Policy
+
+At OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",7263,https://jobs.ashbyhq.com/openai/d1f21456-f0bf-48ad-bb8d-ae0020a10600,,,,,,,not_checked,,2026-10-29,,2026-10-29,,,,true,0,,,,,,,,,,,,,,

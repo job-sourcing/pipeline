@@ -3051,85 +3051,6 @@ We are an Equal Opportunity Employer and do not discriminate against any employe
 Key Responsibilities:
 
 We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",876,https://jobs.lenovo.com/en_US/careers/JobDetail/Technical-Project-Manager/81125,,,,,,,not_checked,,2026-09-27,,2026-10-29,,57,startDate,true,0,,,,,Hardware Engineering,2026-09-02,,false,,,,,,
-81349,"Systems Administrator, GPU/AI Infrastructure",Lenovo,,Full time,Posted 25 Days Ago,2026-09-02,57,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"Position Overview
-
-Lenovo seeks a Systems Administrator to own end-to-end deployment, support, and administration of the consolidated Morrisville AI lab, across the network, compute, storage, operating system, and container orchestration (Docker and Kubernetes) layers, plus the NVIDIA technology stack across 50-plus servers. This is a hands-on infrastructure role: the same person who designs and administers these layers also does the day-to-day admin, support, and engineering work in the lab, including rack-and-stack and smart hands.
-
-You are the only dedicated support resource for the Lab Operations Manager, and you keep the lab’s FY26/27 Net CapEx investment operational at the scale the AI Lab Consolidation requires. You will work alongside the lab’s Network Engineer and Junior Systems Administrator roles, who own adjacent, more specialized slices of network engineering and routine rack-and-stack work respectively; you provide the full-stack administration that connects their work end to end. You will also provide secondary technical support for capital equipment hosted in Bangalore and validate lab configurations against NVIDIA reference architecture certification standards. The role sits within Lenovo’s Hybrid Cloud and AI Infrastructure Services (HCAIS) Lab Operations organization.
-
-Key Responsibilities
-
-Infrastructure Deployment and Administration
-
-Network: deploy, support, and administer lab networking, in coordination with the dedicated Network Engineer role for switch and fabric configuration.
-
-Compute: deploy, support, and administer physical and virtual compute infrastructure across the lab.
-
-Storage: deploy, support, and administer lab storage systems across block and file tiers.
-
-Operating Systems: install, patch, and administer operating systems across lab infrastructure.
-
-Container Orchestration
-
-Docker: deploy and administer Docker container runtime environments.
-
-Kubernetes: own full production Kubernetes administration, including cluster operations, role-based access control (RBAC), cluster networking, and version upgrades.
-
-NVIDIA Platform Administration
-
-NVIDIA Technology Stack: administer NVIDIA drivers, the CUDA toolkit, InfiniBand fabric, Run:AI orchestration, and ClearML across the lab’s GPU infrastructure.
-
-Configuration Validation: validate lab configurations against NVIDIA reference architecture (Lenovo Validated Design) certification requirements.
-
-Lab Operations and Smart Hands
-
-Day-to-Day Support: provide day-to-day administration, support, and engineering functions for the network, compute, and storage layers in the physical lab.
-
-Rack and Stack: perform rack-and-stack, structured cabling, and smart-hands support for lab hardware alongside higher-level administration duties.
-
-Cross-Site Support and Coordination
-
-Bangalore Secondary Support: provide secondary technical support for NVIDIA technology stack capital equipment hosted in Bangalore.
-
-Lab Coordination: coordinate with the adjacent ISG AI COE lab (Tech Marketing, customer proof-of-concepts) and the Morrisville Executive Briefing Center given shared physical proximity.
-
-NVIDIA Relationship: maintain a direct working relationship with NVIDIA field contacts based in Morrisville.
-
-Required Qualifications
-
-Required Experience
-
-• 2+ years of systems administration experience with hands-on breadth across network, compute, storage, and operating system layers, plus a GPU/AI infrastructure specialization.
-
-• Production Kubernetes Administration: demonstrated experience with cluster operations, RBAC, cluster networking, and version upgrades in a production environment.
-
-• Docker: hands-on experience administering Docker container runtime environments.
-
-• Hands-on NVIDIA administration: demonstrated experience administering NVIDIA drivers and the CUDA toolkit.
-
-• InfiniBand Fabric: working familiarity with InfiniBand fabric in a multi-node GPU environment.
-
-• GPU Orchestration: experience with Run:AI, ClearML, or a comparable GPU orchestration and MLOps toolset.
-
-• Physical Infrastructure: comfortable with hands-on hardware work, including rack-and-stack, structured cabling, and smart hands, in addition to higher-level administration.
-
-Core Professional Skills
-
-• Incident Response: able to own after-hours incident response for a shared, multi-team infrastructure environment.
-
-• Cross-Team Coordination: comfortable supporting multiple HC/AI teams across a shared lab environment with competing priorities, and coordinating day to day with the Network Engineer and Junior Systems Administrator roles on adjacent, overlapping infrastructure.
-
-Preferred Qualifications
-
-• Kubernetes Certification: Certified Kubernetes Administrator (CKA) or equivalent.
-
-• Multi-Tenant Lab Experience: experience supporting a multi-tenant shared lab environment serving distributed teams.
-
-• Familiarity with NVIDIA certification and reference architecture (Lenovo Validated Design) processes.
-
-• Experience with DCIM, IPAM, or monitoring tooling comparable to the lab’s stack (Hyperview-class DCIM, BlueCat / Infoblox-class IPAM, NVIDIA DCGM monitoring).
-
-We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",5396,https://jobs.lenovo.com/en_US/careers/JobDetail/Systems-Administrator-GPU-AI-Infrastructure/81349,,,,,,,not_checked,,2026-09-27,,2026-10-29,,57,startDate,true,0,,,,,Hardware Engineering,2026-09-02,,false,,,,,,
 81875,Human Resources Business Partner,Lenovo,,Full time,Posted 10 Days Ago,2026-09-17,42,"Whitsett, North Carolina, United States of America",1,"Whitsett, North Carolina, United States of America",false,,United States,,0,"The HR Business Partner will provide progressive Human Resources support to Lenovo's US Manufacturing plant This role provides thought leadership in guiding, developing and implementing strategic and tactical HR initiatives focused on achieving business objectives.
 
 The selected candidate must be a strategic thought leader, have a track record of building partnerships with all levels of employees and have a history of implementing successful programs across heavily matrixed organizations. Thought leadership, organizational agility, business acumen, relationship building, and solid execution are the keys to being successful in this position.
@@ -7674,97 +7595,6 @@ Basic Qualifications
 Preferred Qualifications
 
 We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",4236,https://jobs.lenovo.com/en_US/careers/JobDetail/AIDCS-PNC-Support-Manager/82652,,,,,,,not_checked,,2026-10-13,,2026-10-29,,16,startDate,false,0,,,,,,2026-10-13,,,,,,,,
-82674,"Director, NA PCSD SMB Leader",Lenovo,,Full time,Posted Today,2026-10-13,16,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"As the Director of the North America PCSD SMB Business, you will own the strategy, execution, and performance of Lenovo's SMB PC business across North America. You will be responsible for driving revenue growth, market share expansion, profitability, and customer acquisition across all routes to market.
-
-Partnering closely with Sales Leadership, Product Management, Finance, Marketing, Operations, Alliances, and Worldwide Business Units, you will translate market opportunities and customer needs into actionable business strategies that accelerate growth and strengthen Lenovo's position in the SMB market.
-
-This role combines strategic leadership, business ownership, and people leadership. You will establish the long-term direction for the business while leading the operational cadence required to deliver quarterly and annual commitments. Success requires strong business acumen, cross-functional influence, and the ability to lead through a highly matrixed global organization.
-
-We are looking for someone who can:
-
-• Demonstrate outstanding business, financial, and analytical acumen.
-
-• Has a proven ability to deliver growth, market share gains, and profitability improvements.
-
-• Excels at leading through influence in highly matrixed organizations.
-
-• Possess strong executive presence and communication skills, with the ability to simplify complex business challenges and build compelling business cases.
-
-• Thrives in fast-paced environments and adapt quickly to changing market conditions.
-
-• Has a track record of building, developing, and inspiring high-performing teams.
-
-• Bring strong customer and partner orientation with a passion for understanding and serving the SMB market.
-
-Key to this success in this role is the ability to work collaboratively in a matrixed and complex environment and influence key decision makers at market, NA and Global levels. You will lead a team of business management and planning along with the teams that report to them.
-
-Key Responsibilities:
-
-Business Ownership & Growth
-
-• Own the strategy, performance, and growth of Lenovo's North America SMB PC business, with accountability for revenue, market share, profitability, and business outcomes.
-
-• Identify market opportunities, customer needs, and competitive insights to drive sustainable growth and market leadership.
-
-Category Leadership
-
-• Lead SMB category strategy across Product, Price, Place, and Promotion.
-
-• Partner closely with Sales, Product Management, and Worldwide Business Units to shape portfolio direction, go-to-market plans, pricing strategies, and lifecycle management.
-
-Financial & Operational Performance
-
-• Deliver quarterly and annual business commitments through effective forecasting, business planning, and performance management.
-
-• Drive profitable growth through portfolio optimization, pricing strategy, promotional investments, and operational discipline.
-
-Route-to-Market Execution
-
-• Develop and execute growth strategies across direct, channel, distribution, retail, and digital routes to market.
-
-• Partner with Sales and Marketing teams to improve execution, expand market reach, and accelerate business performance.
-
-Cross-Functional Leadership
-
-• Influence and align senior stakeholders across Sales, Product Management, Finance, Marketing, Operations, Alliances, and Worldwide Business Units.
-
-• Serve as the primary business advisor and focal point for SMB category strategy and performance.
-
-People Leadership
-
-• Lead and develop a high-performing organization spanning business management, planning, pricing, profit management, bid support, and sales operations.
-
-• Foster a culture of accountability, collaboration, innovation, and continuous improvement.
-
-Basic Requirements:
-
-• 10+ years of experience in the IT industry, with significant experience in SMB, commercial, category management, product management, business management, or related leadership roles.
-
-• 5+ years of experience leading teams of business managers, product managers, planners, pricing professionals, or other business leaders.
-
-• Demonstrated success driving business growth, operational performance, and financial results within a large, matrixed organization.
-
-• Strong experience in forecasting, business planning, financial management, and performance analysis.
-
-• Willingness to travel approximately 15-20% of the time to engage with customers, partners, and global stakeholders.
-
-Preferred Requirements:
-
-• Proven experience managing a technology category, segment, or business with accountability for revenue, profitability, and market share.
-
-• Demonstrated track record of outperforming market growth in revenue, market share, and profit.
-
-• Experience developing and executing go-to-market strategies across multiple routes to market, including direct, channel, retail, and digital.
-
-• Strong P&L and financial management experience.
-
-• Deep understanding of SMB customers, partners, and market dynamics.
-
-• Demonstrated success influencing executive stakeholders within a global organization.
-
-• Excellent written, verbal, and executive presentation skills.
-
-We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",5403,https://jobs.lenovo.com/en_US/careers/JobDetail/Director-NA-PCSD-SMB-Leader/82674,,,,,,,not_checked,,2026-10-13,,2026-10-29,,16,startDate,false,0,,,,,,2026-10-13,,,,,,,,
 80776,System Architect,Lenovo,,Full time,Posted 56 Days Ago,2026-08-19,71,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"About the Team
 
 Lenovo's Cloud Service Provider (CSP) team partners with the world's largest hyperscale and cloud providers to design the next generation of data center infrastructure. We develop industry-leading compute, AI, storage, and networking platforms that power large-scale cloud services and AI workloads worldwide.
@@ -9007,41 +8837,6 @@ Qualifications:
 Basic Requirements:
 
 We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",2403,https://jobs.lenovo.com/en_US/careers/JobDetail/Financial-Analyst-ISG-Offerings/82663,,https://www.linkedin.com/jobs/view/4479611650,2026-10-16,25,among first 25,0,matched,,2026-10-17,2026-10-17T11:30:13,2026-10-29,,13,startDate,false,0,,,,,,2026-10-16,,true,,,,,,
-82677,AI Application Development,Lenovo,,Full time,Posted 1 Days Ago,2026-10-16,13,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"We are seeking a highly motivated AI Developer – New Graduate to join our US engineering team. This role is based in Morrisville, NC and operates under a hybrid policy. The target start date will be January 2027.
-
-This is an entry-level role designed for recent graduates with a strong software engineering foundation and hands-on exposure to AI/ML or Generative AI through internships, research, academic projects, or personal projects.
-
-You will participate in the design and development of enterprise AI applications using technologies such as LLMs, RAG, AI Agents, tool/function calling, embedding/vector search, and AI workflow orchestration.
-
-This is not a purely research-focused AI position. You will work on real enterprise products and collaborate with product managers, architects, developers, and business stakeholders throughout the solution lifecycle.
-
-We are particularly interested in candidates with the potential to grow into an FDE-style engineer — someone who can combine strong technical execution with business understanding, customer communication, rapid problem solving, and end-to-end ownership.
-
-Job Responsibilities
-
-• Design, develop, test, and enhance enterprise AI applications and AI-enabled product capabilities.
-
-• Build solutions involving LLMs, RAG, AI Agents, prompt engineering, tool/function calling, vector/embedding search, and AI workflow orchestration.
-
-• Develop backend services, APIs, data integrations, and other components required to connect AI capabilities with enterprise systems.
-
-• Participate in AI evaluation, testing, debugging, and performance improvement to continuously improve solution quality, reliability, latency, and user experience.
-
-• Work with product managers, architects, business stakeholders, and engineering teams to understand business problems and translate requirements into practical technical solutions.
-
-• Participate in requirement discussions, solution design, technical reviews, demos, UAT support, and production deployment.
-
-• Prototype and evaluate new AI technologies and quickly determine their feasibility for real business scenarios.
-
-• Troubleshoot technical and production issues and continuously improve application stability and engineering quality.
-
-• Develop a strong understanding of business processes and user journeys rather than focusing only on individual technical tasks.
-
-• Gradually take greater ownership of solutions from problem definition and prototyping through implementation and delivery.
-
-• For candidates demonstrating strong technical and communication capabilities, gradually develop toward an FDE role, directly partnering with stakeholders to explore problems, prototype solutions, and drive AI use cases from concept to production.
-
-We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",3050,https://jobs.lenovo.com/en_US/careers/JobDetail/AI-Application-Development/82677,,https://www.linkedin.com/jobs/view/4479399986,2026-10-16,133,133 applicants,0,matched,titleSearchFallback,2026-10-17,2026-10-17T11:30:46,2026-10-29,,13,startDate,false,0,,,,,,2026-10-16,,false,,,,,,
 79446,Project Manager,Lenovo,,Full time,Posted 91 Days Ago,2026-07-20,101,"Whitsett, North Carolina, United States of America",1,"Whitsett, North Carolina, United States of America",false,,United States,,0,"Project Manager – Reverse Logistics & Operations
 
 Job Type: Full-Time
@@ -9795,45 +9590,6 @@ An MBA or equivalent is preferred.
 Experience in working with carriers, regional, regulatory requirements
 
 We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",3542,https://jobs.lenovo.com/en_US/careers/JobDetail/Software-Product-Manager-North-America-channels/82888,,https://www.linkedin.com/jobs/view/4458671086,2026-10-09,29,29 applicants,-11,matched,,2026-10-21,2026-10-21T12:30:40,2026-10-29,,20,startDate+linkedin,false,0,,,,,,2026-10-09,title,false,,,,,,
-82924,SMB Inside Sales Representative,Lenovo,,Full time,Posted 2 Days Ago,2026-10-19,10,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"About the Position
-
-As an SMB Sales Representative for Lenovo, you will sell Lenovo products, services, and solutions to clients through outbound phone calls and engaging correspondence. This includes Lenovo's extensive portfolio such as servers, storage, laptops, gaming computers, accessories, and professional services.
-
-The ideal SMB Sales Representative will be professional, goal-oriented, articulate and possess sound phone and writing skills. An infectious personality with the desire to overachieve on all goals is necessary. The SMB Sales Representative will work with acquisition, development, and retention accounts in the small to medium business space. The SMB Sales Representative will have sole ownership of their book of accounts; and will have sole responsibility to exceed revenue, profit, and services targets.
-
-Day to day responsibilities include the following: uncovering opportunities, providing the benefits of Lenovo products, and selling against the competition. The right candidate will champion the innovative power of our products by driving sales with key customers to achieve revenue and profitability objectives. They will configure, price, negotiate and quote sales solutions as well as provide, initiative-taking follow-up, product information and overall account support via effective communication skills. As the SMB Sales Representative, you will sell Lenovo’s portfolio of award-winning products and help to develop strategies that help new and existing customers find and implement the best solutions for their business needs.
-
-Key Responsibilities
-
-• Build complex sales strategy to ensure both long and short-term goals, objectives, and quotas are met.
-
-• Develop and cultivate client relationships with both new and existing customers while achieving profit and revenue objectives.
-
-• Ensure that our customers receive the highest level of sales and operational customer service.
-
-• Ensure that products, services, and solutions recommended to clients will fulfill their needs.
-
-• Work within corporate initiatives including weekly forecast and opportunity management to reach high-performance goals.
-
-Basic Qualifications
-
-• 2+ years of professional inside or outside sales experience with Bachelor’s Degree OR 4+ years of professional experience with GED/ Highschool Diploma
-
-Preferred Qualifications
-
-• Sales experience in a technology field or IT Industry preferred.
-
-• Self-confident, initiative-taking, assertive, and positive attitude.
-
-• Acquisition selling skills and relationship building mindset.
-
-• Ability to plan strategically, grow SOW, and improve profitability.
-
-• Excellent verbal and written communication skills are imperative.
-
-• Executive presentation skills on hardware and services portfolios
-
-We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",3061,https://jobs.lenovo.com/en_US/careers/JobDetail/SMB-Inside-Sales-Representative/82924,,,,,,,not_checked,,2026-10-21,,2026-10-29,,10,startDate,false,0,,,,,,2026-10-19,,,,,,,,
 82925,SMB Inside Sales Representative,Lenovo,,Full time,Posted 2 Days Ago,2026-10-19,10,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"About the Position
 
 As an SMB Sales Representative for Lenovo, you will sell Lenovo products, services, and solutions to clients through outbound phone calls and engaging correspondence. This includes Lenovo's extensive portfolio such as servers, storage, laptops, gaming computers, accessories, and professional services.
@@ -10042,16 +9798,6 @@ At Motorola Mobility, we are committed to innovation and excellence in the mobil
 Motorola Mobility is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
 
 We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",2659,https://jobs.lenovo.com/en_US/careers/JobDetail/Sales-Lead-Motorola-Business-Group-NA/79786,,https://www.linkedin.com/jobs/view/4481303334,2026-10-22,25,among first 25,99,matched,titleSearchFallback,2026-10-22,2026-10-22T12:32:22,2026-10-29,,106,startDate,true,0,,,,,,2026-07-15,,true,,,,,,
-81835,"HR Business Partner, ISG",Lenovo,,Full time,Posted 36 Days Ago,2026-09-16,43,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"WD00105503
-Human Resources
-United States of America
-North Carolina
-Morrisville
-Wednesday, September 16, 2026
-Full-time
-Additional Locations:
-
-* United States of America - North Carolina - Morrisville",199,https://jobs.lenovo.com/en_US/careers/JobDetail/ISG-HR-Business-Partner/81835,,https://www.linkedin.com/jobs/view/4481148264,2026-10-21,25,among first 25,35,matched,,2026-10-22,2026-10-22T12:32:12,2026-10-29,,43,startDate,false,0,,,,,,2026-09-16,,true,,,,,,
 82901,"Director, Service Solution & AI Integration",Lenovo,,Full time,Posted 1 Days Ago,2026-10-21,8,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"The Director of Service Solution & Integration leads the design, development, and integration of end-to-end service solutions that address complex customer business and operational needs. This role partners with Product, Engineering, Sales, Delivery, and customer stakeholders to transform requirements into scalable, repeatable, and commercially viable solutions.
 
 The Director will drive solution strategy across ServiceNow, AI, automation, enterprise applications, cloud, data, infrastructure, and partner technologies, creating integrated offerings that improve customer outcomes and generate new market opportunities. This role also leads the development of AI-enabled solutions leveraging ServiceNow AI capabilities, generative AI, agentic AI, and intelligent automation technologies
@@ -13231,3 +12977,131 @@ We are an Equal Opportunity Employer and do not discriminate against any employe
 The EHS Analyst supports workplace safety, environmental compliance, and risk management programs through data analysis, inspections, incident investigations, training, and regulatory compliance activities. This role partners closely with operations to drive safety performance, ensure compliance, and support continuous improvement initiatives across the facility.
 
 We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",686,https://jobs.lenovo.com/en_US/careers/JobDetail/ISG-NCSC-EHS-Analyst/83360,,,,,,,not_checked,,2026-10-29,,2026-10-29,,1,startDate,false,0,,,,,,2026-10-28,,,,,,,,
+79226,OEM Engineering Lab Manager US,Lenovo,,Full time,Posted 114 Days Ago,2026-07-07,114,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"Job Summary:
+
+As the OEM Lab Manager, you will engage with OEM customers, partners, sales, and Lenovo product teams to evaluate, understand, and drive technical requirements for complex OEM solution offerings. Your role will involve leveraging Lenovo’s existing product portfolio and customizing new offerings for unique OEM solutions. You will develop technical relationships with key alliance partners, suppliers, and integrators to ensure Lenovo meets market needs. Additionally, you will identify gaps in our portfolio, provide input to product development teams, and engage in specific testing and certifications for the OEM business. Building strong relationships with manufacturing teams will be crucial to ensure timely project progression through various manufacturing processes. You will act as Lenovo's technical arbiter with customers, external partners, and internal teams.
+
+Responsibilities:
+
+• Lead and empower a lab engineering team to conduct customer-driven Proof of Concepts, customer test scenarios, and provide pre-sales customer support.
+
+• Collaborate with manufacturing teams to create processes supporting customization efforts for OEM customers.
+
+• Work with process control systems (e.g., Windchill, Factsheets, PCRs, Jira).
+
+• Manage process execution and release methodologies within the manufacturing environment.
+
+• Collaborate with local test engineers (TE), quality engineers (QE), manufacturing engineers (ME), ITC, and special bids teams.
+
+• Define test automation processes and solutions for the lab engineering team.
+
+• Define process flow for team duties and assign tasks.
+
+• Customize and support of various Linux distributions.
+
+• Architect new ideas for revenue generation through innovative engineering services & solutions.
+
+• Leverage technologies including Windows OS, Windows IoT, Linux distros, shell scripting, Java, Python, device drivers, BIOS customizations, and Linux kernel.
+
+• Summarizing and conveying ideas and issues to upper management.
+
+• Collaborate effectively on a WW team with members located in different parts of the world – across various time zones.
+
+Basic Qualifications:
+
+• Bachelor's degree or higher in Computer Science, Electronic Engineering, or a related engineering discipline.
+
+• 5+ years of experience in the PC or related industry.
+
+• Past experience managing a technical lab team.
+
+• Experience working with third-party suppliers.
+
+• Ability to work in person at the OEM Engineering Lab in Morrisville, NC.
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",2788,https://jobs.lenovo.com/en_US/careers/JobDetail/OEM-Engineering-Lab-Manager-US/79226,,,,,,,not_checked,,2026-09-27,,2026-10-29,,114,startDate,true,0,,,,,,2026-07-07,,,,,,,,
+83084,"Advisory Engineer, AI Cybersecurity",Lenovo,,Full time,Posted Today,2026-10-29,0,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"Lenovo’s global cybersecurity team is seeking a highly skilled and motivated security professional who is passionate about protecting companies from today’s ever-increasing cyber threats. We are a diverse, global, and cross-functional team that embraces technology and enjoys complex challenges. Our growing team is involved in all aspects of modern cybersecurity. We solve complex problems and are Lenovo’s front line of defense against cyberattacks. We are looking for a forward-thinking, technically capable professional to develop, implement, and maintain advanced cybersecurity technical solutions, design effective security policies and procedures, conduct technical security assessments, investigate cyber incidents, lead security initiatives, and participate in incident response actions.
+
+You will also play an active role in Lenovo’s vast Artificial Intelligence (AI) endeavors. Lenovo is a world leader in Artificial Intelligence that invents, leverages, and delivers AI devices, solutions, and services across the globe. Our cyber security team plays a proactive role in Lenovo’s responsible AI processes to ensure we protect our customers and Lenovo from the various security challenges of modern generative AI.
+
+You will have the unique opportunity to work with recognized security industry leaders, improve your technical skills, gain valuable experience, and have fun while being exposed to innovative AI solutions.
+
+Our team is passionate about cybersecurity. We work hard, love to learn, care about people, and will help you succeed.
+
+Please note this is not an entry-level position. A successful candidate must have significant cybersecurity experience and strong technical competence. Working level experience with generative artificial intelligence solutions is necessary.
+
+Responsibilities:
+
+• Assist Lenovo with the cybersecurity aspects of its responsible AI objectives
+
+• Assist in the design, implementation, and deployment of technical controls to protect Lenovo
+
+• Conduct project technical security assessments and provide guidance
+
+• Conduct third-party security assessments
+
+• Create and maintain technical security standards
+
+• Assist in incident response processes
+
+• Security operations assistance as needed
+
+• Domestic and international travel may be required (~5%) for technical meetings, workshops, and onsite collaboration activities
+
+• Bring a passion to learn and stay on top of cybersecurity threats and trends
+
+• Bring discipline and dedication to ensure programs are secure and meet goals
+
+Qualifications:
+
+• Bachelor's degree in Computer Science, Information technology, Information Security, or related software engineering field, or equivalent experience
+
+• 8+ years of technical experience in at least one of the following:
+
+• Web application development, deployment, and support
+
+• Cloud administration – (e.g. AWS, Google, Azure, Tencent, Alibaba)
+
+• Network design, deployment, and administration
+
+• System administration (Linux or Windows)
+
+• Security engineering
+
+• 4+ years of cybersecurity and/or information security experience
+
+• Current Certification in relevant field of Information Security and/or Cybersecurity (e.g.  CISSP; CISA; CISM; GIAC; CEH; Security) preferred
+
+• Reasonable working knowledge of AI, cybersecurity, and solution design as it pertains to Artificial intelligence
+
+• Reasonable working knowledge of cloud-based AI service providers (ex. Azure, AWS, AliCloud)
+
+• General knowledge of cybersecurity controls frameworks (e.g. IS027001, NIST)
+
+• Technical experience in modern Generative AI solutions and platforms
+
+• Technical experience leading global security initiatives
+
+• Cybersecurity operations and incident response experience
+
+• Vulnerability management experience
+
+• Hands-on experience with a wide range of security tools
+
+• Excellent oral and written communication skills
+
+Basic Requirements:
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",4184,https://jobs.lenovo.com/en_US/careers/JobDetail/Advisory-Engineer-AI-Cybersecurity/83084,,,,,,,not_checked,,2026-10-29,,2026-10-29,,0,startDate,false,0,,,,,,2026-10-29,,,,,,,,
+83337,SHPE 2026 Intern Sourcing Requisition (SHPE Convention Attendees ONLY),Lenovo,,,Posted 1 Days Ago,2026-10-28,1,"Morrisville, North Carolina, United States of America",1,"Morrisville, North Carolina, United States of America",false,,United States,,0,"This requisition/job is posted to act as a sourcing chanel for candidates we meet at the SHPE NATIONAL CONVENTION 2026.
+
+We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, religion, sexual orientation, gender identity, national origin, status as a veteran, and basis of disability or any federal, state, or local protected class.",422,https://jobs.lenovo.com/en_US/careers/JobDetail/SHPE-2026-Intern-Sourcing-Requisition-SHPE-Convention-Attendees-ONLY/83337,,,,,,,not_checked,,2026-10-29,,2026-10-29,,1,startDate,false,0,,,,,,2026-10-28,,,,,,,,
+83418,Test Technician,Lenovo,,,Posted Today,2026-10-29,0,"Whitsett, North Carolina, United States of America",1,"Whitsett, North Carolina, United States of America",false,,United States,,0,"100017806
+Manufacturing
+United States of America
+North Carolina
+Whitsett
+Thursday, October 29, 2026
+Additional Locations:
+
+* United States of America",149,https://jobs.lenovo.com/en_US/careers/JobDetail/Test-Technician/83418,,,,,,,not_checked,,2026-10-29,,2026-10-29,,0,startDate,false,0,,,,,,2026-10-29,,,,,,,,
