@@ -9,3 +9,6 @@ NEW Sr. Program Manager | Novi, MI |  | https://www.a123systems.com/join_us.html
 board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='www.a123systems.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
 (2026-10-22T12:38:42)
 
+board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='www.a123systems.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
+(2026-10-30T13:37:29)
+
