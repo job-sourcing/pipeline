@@ -1,9 +1,9 @@
 {
  "label": "tti_us_fulltime",
  "rows": 677,
- "kept": 664,
- "new": 13,
- "ghosts_dropped": 10,
+ "kept": 677,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,

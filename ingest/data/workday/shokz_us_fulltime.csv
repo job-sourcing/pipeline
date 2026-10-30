@@ -82,3 +82,51 @@ Shokz INC is a leading global bone conduction technology company with offices in
 OpenHear Hearing Aids are our new flagship product line built on the latest bone conduction technology. Featuring unique bone conduction technology and breakthrough comfort, they address the drawbacks of existing hearing aids in terms of appearance and ease of use. They are expected to capture greater market opportunities among those with conductive, mixed, and mild to moderate sensorineural hearing loss.
 
 Shokz INC",2658,https://www.linkedin.com/jobs/view/4475748078,,,,,,,not_checked,,2026-10-12,,2026-10-30,,,,true,0,,,,,,,,,,,,,,
+4484815025,Information Security & Cloud Operations Specialist,Shokz,Shokz,,Posted Today,,,"Bellevue, WA",1,"Bellevue, WA",false,,United States,,0,"Position Overview
+We are seeking a hands-on technical professional with a strong security mindset, practical experience in AWS cloud environments, and a high level of ownership. This role will be responsible for day-to-day security operations across North American systems, maintaining the U.S. data environment, and managing access controls to support the company’s data compliance obligations and business growth in the United States.
+Initially, the role will focus on cloud infrastructure and IT operations, implementation of security controls, and audit support. As the business grows, the position will gradually evolve into a local information security leadership role, driving the development of security policies and serving as a key security point of contact for management, business teams, and external auditors.
+Key Responsibilities
+Security Operations for North American Systems
+Maintain an inventory of systems, cloud resources, endpoint devices, and software assets.
+Conduct security configuration reviews, vulnerability scans, patch management, and remediation tracking.
+Monitor unusual access patterns and security alerts; participate in security incident investigation, response, and post-incident reviews.
+AWS Data Environment & Infrastructure Operations
+Maintain the U.S. AWS environment, including data ingestion, storage, compute resources, and related services, ensuring system stability and availability.
+Handle routine configuration, troubleshooting, backup and recovery, monitoring and alerting, and optimization of capacity and cloud costs as needed.
+Data Access Approval & Access Control Management
+Within the scope of delegated authority, take substantive responsibility for security reviews of system and data access requests, including approving or denying requests, configuring permissions, and conducting periodic access reviews.
+Enforce the principle of least privilege, multi-factor authentication (MFA), segregation of duties, and access management throughout employee onboarding, internal transfers, and offboarding.
+Perform additional reviews for privileged access, sensitive data access, and exceptions to standard access policies, ensuring that approval decisions and related actions are fully traceable.
+Data Compliance & Audit Support
+Work with Legal, Compliance, and external auditors to implement applicable U.S. state-level data security requirements.
+Prepare and maintain audit evidence, including asset inventories, data flows, access records, system activity logs, and remediation documentation.
+Support the implementation and verification of corrective actions arising from audits or compliance reviews.
+Cloud-Based AI Agent Operations Support
+Support the deployment, operational monitoring, and troubleshooting of AI agents within the U.S. cloud environment for data tagging, report generation, and operational assistance.
+Manage service accounts, credentials, and tool invocation permissions.
+Implement security controls and logging for data access, model service calls, and output generation.
+Corporate IT & Hardware/Software Support
+Provide essential IT support for the U.S. team, including user accounts, business software, endpoint devices, and basic network operations.
+Coordinate with vendors on device configuration, hardware repairs, and service issues to ensure business continuity.
+Security Policy Development & Cross-Functional Collaboration
+Establish and maintain operational standards for access control, change management, log retention, incident response, and routine IT operations.
+Report key security risks and remediation progress to management.
+Provide security guidance to business teams and support security questionnaires and assessments from customers and business partners.
+Qualifications
+Relevant Experience: 1-3 years of experience in enterprise IT, cloud operations, information security, or a related field, with hands-on experience independently maintaining production environments. Candidates with experience in security management, audit coordination, or security policy development may be considered for a higher-level position.
+AWS Hands-on Experience: Practical knowledge of AWS data storage, identity and access management, logging, monitoring, and basic cloud operations. Experience using services such as IAM, S3, CloudTrail, and CloudWatch to perform operational tasks is required, along with a foundational understanding of networking, encryption, backup, and recovery.
+Security Controls Implementation: Understanding of least privilege, role-based access control (RBAC), sensitive data protection, vulnerability management, and incident response. Ability to translate security requirements into practical configurations, operational processes, and auditable records.
+Systems & Data Fundamentals: Familiarity with Linux or Windows system administration, basic SQL, and scripting. Ability to support data ingestion, job scheduling, and routine troubleshooting.
+Compliance Awareness: Familiarity with U.S. data security and privacy requirements, with the ability to work with Legal and audit professionals to translate applicable requirements into operational procedures.
+Communication & Professional Integrity: Strong professional English communication and documentation skills, with the ability to work independently with U.S. business teams and external stakeholders. A strong commitment to confidentiality, sound judgment, and the consistent enforcement of access policies, with timely escalation of identified risks.
+Preferred Qualifications
+An active CISSP certification. CISM, CCSP, or relevant AWS security certifications are also advantageous.
+Experience integrating, operating, or managing access controls for Salesforce, Klaviyo, business intelligence (BI) tools, or customer data platforms (CDPs).
+Experience with data compliance, security audits, data governance, or cross-border data access controls.
+Familiarity with containers, operations automation, infrastructure as code (IaC), or experience deploying and supporting AI agents.
+Previous experience as an information security lead or independently driving the development of an enterprise security program.
+Initial Priorities
+During the initial onboarding period, the successful candidate will be expected to:
+Assess the current state of the U.S. cloud environment, IT assets, and access permissions, and develop a documented risk register and remediation plan.
+Establish reliable processes for access request reviews and approvals, log inspections, and vulnerability remediation.
+Gradually improve operational documentation and audit evidence to establish a solid foundation for ongoing security governance.",6663,https://www.linkedin.com/jobs/view/4484815025,,,,,,,not_checked,,2026-10-30,,2026-10-30,,,,true,0,,,,,,,,,,,,,,

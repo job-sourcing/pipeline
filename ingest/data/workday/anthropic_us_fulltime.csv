@@ -12520,49 +12520,6 @@ PIP-10513,"Research Scientist, Interpretability",anthropic,Anthropic,,Posted 323
 <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
 <h2><strong>Come work with us!</strong></h2>
 <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",9966,https://job-boards.greenhouse.io/anthropic/jobs/5410006008,,,,,,,no_match,,2026-09-19,,2026-10-30,,,,true,0,,,,,Safeguards (Trust & Safety),,,false,,,,,,
-266166,"Safeguards Enforcement Analyst, Cyber Harm ",anthropic,Anthropic,,Posted 78 Days Ago,,,"San Francisco, CA | New York City, NY | Washington, DC",1,"San Francisco, CA | New York City, NY | Washington, DC",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
-<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2>About the role</h2>
-<p>As an Enforcement Analyst, you will be responsible for reviewing content and executing enforcement actions across our products and services, with a focus on detecting and mitigating attempts to misuse Anthropic's AI systems for malicious cyber operations. Your initial focus will center on reviewing flagged activity related to cyberattacks, malware development, and offensive exploitation; however, this position may later expand to include broader areas of enforcement.</p>
-<p>Safety is core to our mission, and you'll help uphold policy enforcement so that our users can safely interact with and build on top of our products in a harmless, helpful, and honest way.</p>
-<p>Important context for this role: In this position you may be exposed to and engage with explicit content spanning a range of topics, including those of a violent, technical, or psychologically disturbing nature. This role may require responding to escalations during weekends and holidays.</p>
-<h2>Key responsibilities</h2>
-<ul>
-<li>Review flagged content and accounts to make accurate, well-documented enforcement decisions in line with our usage policies</li>
-<li>Detect and mitigate potential misuse of AI systems to facilitate cyberattacks, malware creation, exploitation tooling, and related harmful cyber operations</li>
-<li>Triage and escalate novel, ambiguous, or high-severity cases to appropriate stakeholders</li>
-<li>Provide detailed feedback to the Safeguards policy design team on policy gaps surfaced through real enforcement scenarios</li>
-<li>Partner with Engineering and Data Science teams by surfacing detection model errors and quality signals from review to improve precision and recall</li>
-<li>Maintain high accuracy and consistency standards across review queues</li>
-<li>Keep up to date with emerging AI policy enforcement best practices, threat actor tactics, and the evolving cyber threat landscape, using these to inform enforcement decisions</li>
-</ul>
-<h2>Minimum Qualifications</h2>
-<ul>
-<li>Experience in cybersecurity, including knowledge of offensive techniques, exploit development, malware analysis, or vulnerability research</li>
-<li>Experience performing content review, abuse investigations, or policy enforcement at volume</li>
-<li>Proficiency in SQL and/or Python for data analysis and threat detection</li>
-<li>Experience identifying emerging risks and communicating findings to a diverse set of stakeholders, such as Product, Policy, Engineering, and Legal teams</li>
-<li>Experience working with generative AI products, including writing effective prompts for content review and enforcement</li>
-</ul>
-<h2>Preferred qualifications</h2>
-<ul>
-<li>Experience in trust & safety, abuse investigations, cybersecurity investigations, or threat intelligence in a technology or AI company</li>
-<li>Experience with large language models and an understanding of how AI technology could be misused for cyber operations</li>
-<li>Experience operating within abuse monitoring programs or enforcement review systems</li>
-<li>Understanding of the challenges involved in implementing product policies at scale, including in the content moderation space</li>
-<li>Experience working with government agencies, regulated environments, or information sharing communities</li>
-</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
-<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$285,000</span><span class=""divider"">—</span><span>$330,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
-<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
-<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
-<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
-<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
-<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
-<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
-<h2><strong>How we're different</strong></h2>
-<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
-<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
-<h2><strong>Come work with us!</strong></h2>
-<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",8532,https://job-boards.greenhouse.io/anthropic/jobs/5311159008,,,,,,,no_match,,2026-09-19,,2026-10-30,,,,true,0,,,,,Safeguards (Trust & Safety),,,false,,,,,,
 266165,"Safeguards Enforcement Analyst, Integrity & Authenticity ",anthropic,Anthropic,,Posted 78 Days Ago,,,"San Francisco, CA | New York City, NY | Washington, DC",1,"San Francisco, CA | New York City, NY | Washington, DC",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
 <p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2>About the role</h2>
 <p>As a Safeguards Analyst focusing on Integrity & Authenticity, you will be responsible for building and executing enforcement workflows for our products and services, with a focus on detecting and mitigating attempts to misuse Anthropic's AI systems for coordinated inauthentic behavior, election manipulation, and targeting, tracking, and surveillance of individuals.</p>
@@ -30635,3 +30592,524 @@ REQ-26-1350-01,"Senior Engineer, Bioinformatics",Anthropic,Anthropic,,Posted 1 D
 <p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
 <h2><strong>Come work with us!</strong></h2>
 <p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",11525,https://job-boards.greenhouse.io/anthropic/jobs/5467083008,,https://www.linkedin.com/jobs/view/4484587041,2026-10-29,25,among first 25,,matched,titleSearchFallback,2026-10-30,2026-10-30T01:20:52,2026-10-30,,1,startDate+linkedin,true,0,,,,,,2026-10-29,,true,,,,,,
+REQ-26-1346-01,"Research Operations Lead, Biology",Anthropic,Anthropic,,Posted Today,,,"Boston, MA",1,"Boston, MA",false,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2>About the team</h2>
+<p>Anthropic's Life Sciences team is building a world-class research group focused on making fundamental biological discoveries. The team combines cutting-edge AI with hands-on biological research, positioning Anthropic at the forefront of AI-accelerated scientific discovery.</p>
+<h2>About the role</h2>
+<p>We are hiring a Research Operations Lead to be the operational backbone of our team: the person who makes sure scientists can walk in every morning and get straight to science. You'll take on the operational systems we've started — procurement, inventory, safety, equipment, space — make them better, and scale them as the lab and its needs grow. We're hiring for trajectory as much as for what you've already done: the scope of this role will grow with the size of the team, and we want someone who's excited by that. This role is a rare opportunity to build the operational foundation of Anthropic's biology team and to grow with it. The systems you put in place will shape how a frontier AI company does experimental biology for years to come. If you're energized by high-ownership operational work in the service of ambitious science, we'd love to hear from you.</p>
+<h2>Key responsibilities</h2>
+<ul>
+<li>
+<p>Own day-to-day operations end to end: ordering and inventory, equipment scheduling and upkeep, consumables, shipping and receiving, and general space organization</p>
+</li>
+<li>
+<p>Build on and extend the operational systems a growing group needs: procurement workflows, inventory and sample tracking, equipment maintenance and calibration schedules, onboarding and training, SOPs</p>
+</li>
+<li>
+<p>Manage facilities and space: coordinate buildouts, moves, and equipment installs; act as the primary interface to building management, contractors, and Anthropic's central Workplace and IT teams</p>
+</li>
+<li>
+<p>Own the operating budget: track spend against plan, run the capital equipment purchasing process, and partner with Finance on forecasting and reporting</p>
+</li>
+<li>
+<p>Manage vendor and supplier relationships: including contract research organizations: source and qualify vendors, negotiate quotes and service contracts, schedule preventive maintenance and field-service visits, and hold suppliers to their commitments</p>
+</li>
+</ul>
+<h2>Minimum qualifications</h2>
+<ul>
+<li>
+<p>Have managed the day-to-day operations of a life sciences lab — equipment, inventory, ordering, safety, space, and scheduling</p>
+</li>
+<li>
+<p>Have hands-on procurement and vendor management experience: sourcing suppliers, negotiating quotes and service contracts, and coordinating field-service and maintenance technicians</p>
+</li>
+<li>
+<p>Have tracked and managed an operating budget: purchase orders, invoices, spend-vs-plan, and capital requests</p>
+</li>
+</ul>
+<h2>Preferred qualifications</h2>
+<ul>
+<li>
+<p>Are the person everyone in your group already comes to when something is broken, missing, late, or unclear — and you like being that person</p>
+</li>
+<li>
+<p>Enjoy engaging with scientists on the science itself — you want to understand what's happening at the bench well enough to anticipate needs</p>
+</li>
+<li>
+<p>Are results-oriented and practical and pick up slack even when it goes outside your job description</p>
+</li>
+<li>
+<p>Enjoy a role that stretches from the hands-on to the strategic, and are comfortable when priorities shift quickly and feedback is direct</p>
+</li>
+<li>
+<p>Lab operations or lab management experience in a biotech, pharma, diagnostics, or life-sciences startup environment, including exposure to how those organizations build new functions and processes end to end</p>
+</li>
+<li>
+<p>A degree in the life sciences and prior research experience at the bench</p>
+</li>
+<li>
+<p>People-management experience: hiring, onboarding, and supervising operations or facilities staff</p>
+</li>
+<li>
+<p>Experience supporting a team through significant growth in headcount, footprint, or capability, including utilities, permitting, and equipment</p>
+</li>
+<li>
+<p>Familiarity with liquid-handling platforms, including their service, calibration, and consumable needs</p>
+</li>
+<li>
+<p>Experience selecting and administering inventory management, sample tracking, equipment scheduling, or ELN systems</p>
+</li>
+<li>
+<p>Capital equipment lifecycle management experience — evaluation, purchase, qualification (IQ/OQ/PQ), service contracts, and decommissioning</p>
+</li>
+<li>
+<p>Experience with regulated shipping and receiving of biological materials, including import/export, permits, and material transfer agreements</p>
+</li>
+<li>
+<p>Experience using AI tools for efficient team and process management (e.g., Claude Cowork)</p>
+</li>
+</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$210,000</span><span class=""divider"">—</span><span>$260,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",9941,https://job-boards.greenhouse.io/anthropic/jobs/5467690008,,,,,,,not_checked,,2026-10-30,,2026-10-30,,,,true,0,,,,,,,,,7,125000,125000,149350,subset,Research Operations
+REQ-26-1454-01,Data Center Power Generation and Microgrids Engineer,Anthropic,Anthropic,,Posted Today,,,"Remote-Friendly, United States",1,"Remote-Friendly, United States",true,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2>About the role</h2>
+<p>Training and serving frontier AI models requires compute infrastructure at a scale and density that pushes past what conventional data center designs were built to handle. The loads involved are large enough — and arrive fast enough — that utility supply alone often can't meet the need on the timeline required, and the step-load behavior of large accelerator clusters creates power-quality and ride-through demands that conventional backup-generation designs weren't built for. Anthropic's Data Center Infrastructure team is responsible for solving that problem: delivering facilities that can be energized early, ride through grid disturbances, and present a well-behaved load at the point of interconnection (POI).</p>
+<p> </p>
+<p>As a Data Center Power Generation & Microgrids Engineer, you'll own the behind-the-meter generation and storage architecture for Anthropic's data center portfolio. That means the on-site generation fleet — reciprocating engine gensets, gas turbines, fuel cells — and the battery energy storage systems that buffer load steps and provide ride-through. It means the microgrid layer that ties them together: islanding and resynchronization, black-start, load-shedding, and generation dispatch. And it means the grid side: interconnection studies and agreements, IEEE 1547/2800 compliance, and power quality at the point of interconnection. You'll also own our temporary- and bridging-generation strategies — the plans that let a site energize and start serving load before permanent utility service is available, and transition cleanly once it is.</p>
+<p>This is a deeply cross-functional role. You'll work closely with colleagues across the infrastructure team on where and how generation and storage tie into the site electrical distribution, controls, and SCADA, and with our hardware and compute teams to understand the load characteristics you're designing against. You'll be Anthropic's technical counterpart to on-site generation providers, BESS integrators, utilities, and ISOs/RTOs. Expect roughly 20–35% travel for design reviews, factory witness testing, and site startup.</p>
+<h2>Responsibilities</h2>
+<h3>On-site generation engineering</h3>
+<ul>
+<li>
+<p>Own Anthropic's behind-the-meter generation architecture across the portfolio — prime-mover selection and sizing (reciprocating engines, gas turbines, fuel cells), paralleling topology, redundancy, fuel systems, and emissions controls — and maintain the generation basis of design and technical specifications that build partners and generation providers design against</p>
+</li>
+<li>
+<p>Set the day-one vs. day-N plant sizing and expansion strategy — what the plant needs on day one so it can be expanded or augmented later, and how to add units, storage, or a grid tie to a system already running</p>
+</li>
+<li>
+<p>Characterize the data center load for external generation partners — step changes, ramps, oscillation, fault behavior, and non-IT load — so providers can size and tune their plant against the real duty</p>
+</li>
+<li>
+<p>Model generation response against the load profile of large-scale ML training — step-load acceptance, block loading, transient frequency and voltage response, load rejection — and set the acceptance criteria (e.g., per ISO 8528-5) that generation packages are tested against</p>
+</li>
+<li>
+<p>Develop temporary- and bridging-generation strategies that deliver early site energization ahead of permanent utility service, including the sequencing, protection, and controls changes needed to transition from temporary to permanent power without stranding equipment or capacity</p>
+</li>
+<li>
+<p>Ensure generation designs meet NFPA 37, NFPA 110 where the plant provides emergency or legally required standby power, fuel-gas and fuel-storage codes (e.g., NFPA 54, NFPA 30), and applicable emissions requirements, and coordinate with environmental and permitting counterparts on the technical inputs to air permits</p>
+</li>
+</ul>
+<h3>Energy storage & microgrid architecture</h3>
+<ul>
+<li>
+<p>Size and specify battery energy storage systems for ride-through, step-load buffering, and power-quality support — including cell chemistry and enclosure selection, inverter selection (grid-forming vs. grid-following), UL 9540 listing, UL 9540A large-scale fire test data, and NFPA 855 installation requirements — and own the thermal and fire-protection interfaces</p>
+</li>
+<li>
+<p>Define the site microgrid topology and operating modes — grid-parallel, islanded, and black-start — and the transition logic between them, including load-shedding schemes, resynchronization criteria, and the conditions under which the site separates from and reconnects to the utility</p>
+</li>
+<li>
+<p>Specify the functional requirements for the microgrid controller — generation dispatch, set-point coordination across rotating and inverter-based sources, mode management — and drive its implementation, testing, and integration into site SCADA and the electrical power monitoring system (EPMS)</p>
+</li>
+<li>
+<p>Help define the protection and control requirements for generation and storage sources so that interconnection protection, anti-islanding, and source-transfer schemes are consistent from the generator terminals through the point of interconnection</p>
+</li>
+</ul>
+<h3>Grid interconnection & power quality</h3>
+<ul>
+<li>
+<p>Lead the technical side of utility interconnection for sites with on-site generation or storage — interconnection applications, studies, and agreements, ISO/RTO processes, IEEE 1547/2800 compliance, and interconnection protection</p>
+</li>
+<li>
+<p>Own power quality at the point of interconnection — flicker per IEEE 1453, harmonics per IEEE 519, voltage regulation, reactive-power and power-factor requirements — and design the generation, storage, and filtering mitigations needed to keep the site within its interconnection limits under real training-load behavior</p>
+</li>
+<li>
+<p>Run or critically review the power-system studies that support interconnection and microgrid design — load flow, short-circuit contribution from rotating and inverter-based sources, transient stability, motor-starting and step-load studies, and electromagnetic-transient studies where inverter controls matter</p>
+</li>
+</ul>
+<h3>Vendor diligence & delivery</h3>
+<ul>
+<li>
+<p>Lead technical due diligence on on-site generation providers, BESS integrators, and microgrid-controller vendors — evaluating equipment and controls on engineering merit, stress-testing performance and availability guarantees, and reviewing proposed architectures against Anthropic's basis of design</p>
+</li>
+<li>
+<p>Define the technical performance terms in energy-services agreements with on-site generation providers — availability, power quality, ramp, and ride-through, each with a definition, meter, test protocol, and acceptance criteria — working with energy commercial and legal counterparts</p>
+</li>
+<li>
+<p>Review and disposition design packages, submittals, shop drawings, and deviation requests from generation providers and their EPCs, and hold partners to Anthropic's reliability and maintainability requirements</p>
+</li>
+<li>
+<p>Support commissioning of generation, storage, and microgrid systems — witnessing factory and site acceptance tests, defining and observing integrated systems tests (islanding, resynchronization, black-start, load-step), and resolving field issues against design intent</p>
+</li>
+<li>
+<p>Manage concurrent generation and microgrid scopes across multiple sites, and contribute to the continuous improvement of Anthropic's generation and interconnection design standards as the portfolio and the technology both evolve</p>
+</li>
+</ul>
+<h2>You may be a good fit if you</h2>
+<ul>
+<li>
+<p>Have 10+ years of engineering experience in power generation, microgrids, battery energy storage, or utility interconnection, with substantial time spent on on-site or distributed generation for mission-critical, data center, or large industrial loads, and deep hands-on delivery experience in at least one of these areas (generation, storage, microgrids, or interconnection)</p>
+</li>
+<li>
+<p>Have deep hands-on experience with one or more generation technologies — reciprocating engine gensets (diesel and natural gas), gas turbines, or fuel cells — including sizing, paralleling, fuel systems, and emissions controls</p>
+</li>
+<li>
+<p>Understand the thermal generation asset classes — reciprocating engines across the size range (sub-MW through 10–20 MW units), small- and medium-frame combustion turbines, and combined cycles — and how each responds to fast load changes and holds stable islanded operation</p>
+</li>
+<li>
+<p>Understand battery energy storage sizing for a defined duty (ride-through, load-step buffering, peak shaving), inverter selection (grid-forming vs. grid-following), UL 9540 listing, UL 9540A test data, and NFPA 855 installation requirements</p>
+</li>
+<li>
+<p>Understand microgrid architecture end to end — islanding detection and transition, resynchronization, black-start, load-shedding, and generation dispatch</p>
+</li>
+<li>
+<p>Are fluent in interconnection standards and processes — IEEE 1547, IEEE 2800, utility interconnection requirements, and ISO/RTO study and queue processes</p>
+</li>
+<li>
+<p>Are comfortable running or critically reviewing power-system studies — load flow, short-circuit, transient stability, and power quality — in tools such as ETAP, SKM, PSS®E, PSCAD, or EasyPower</p>
+</li>
+<li>
+<p>Hold a bachelor's degree in Electrical Engineering, Power Engineering, or a closely related field, or have equivalent practical experience; Professional Engineer (PE) licensure is valued but not required</p>
+</li>
+<li>
+<p>Have worked directly with generation OEMs, BESS integrators, generation-as-a-service providers, or utilities, and can evaluate equipment and proposals on technical merit rather than datasheet claims</p>
+</li>
+<li>
+<p>Communicate clearly with technical peers, utilities, regulators, and non-specialist stakeholders, and are results-oriented with a bias toward practical solutions and a willingness to pick up work outside your core remit when the team needs it</p>
+</li>
+</ul>
+<h2>Strong candidates may also have</h2>
+<ul>
+<li>
+<p>Designed or delivered battery energy storage systems at MW scale</p>
+</li>
+<li>
+<p>Specified or commissioned a microgrid controller for a site that can island and resynchronize</p>
+</li>
+<li>
+<p>Taken at least one large load or generation interconnection from application through agreement</p>
+</li>
+<li>
+<p>HV/MV substation design experience — main one-line development, equipment specification, grounding, and layout — since on-site generation and storage tie in at the substation and the two scopes are tightly coupled</p>
+</li>
+<li>
+<p>A protection-engineering background covering generation and interconnection protection — relay selection and settings, anti-islanding schemes, and coordination between on-site sources and utility protection</p>
+</li>
+<li>
+<p>Experience integrating renewable generation (solar PV, wind) with storage into hybrid behind-the-meter plants</p>
+</li>
+<li>
+<p>Experience on the technical side of air permitting for stationary generation (e.g., Title V, NSR/PSD, or state equivalents) and emissions-control equipment selection</p>
+</li>
+<li>
+<p>Electromagnetic-transient (EMT) modeling experience in PSCAD or EMTP for inverter-based resource and microgrid-transition studies</p>
+</li>
+<li>
+<p>Direct experience with data center, hyperscaler, or other large-campus microgrids, or at a generation provider, BESS integrator, or developer serving those customers</p>
+</li>
+<li>
+<p>A track record of authoring generation or interconnection reference designs or standards that were adopted across multiple sites or by external partners</p>
+</li>
+</ul>
+<p> </p><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$320,000</span><span class=""divider"">—</span><span>$405,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",17074,https://job-boards.greenhouse.io/anthropic/jobs/5468374008,,,,,,,not_checked,,2026-10-30,,2026-10-30,,,,true,0,,,,,,,,,,,,,,
+REQ-26-1455-01,"Data Center Substation, Protection & Automation Engineer",Anthropic,Anthropic,,Posted Today,,,"Remote-Friendly, United States",1,"Remote-Friendly, United States",true,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2>About the role</h2>
+<p>Training and serving frontier AI models requires compute infrastructure at a scale and density that pushes past what conventional data center designs were built to handle. Anthropic's Data Center Infrastructure team is responsible for delivering that physical infrastructure — partnering with build partners, equipment manufacturers, and utilities to stand up facilities that can reliably power some of the largest accelerator clusters in the industry. At the scale we build, our campuses are typically served by dedicated high-voltage substations and a medium-voltage distribution network that may also integrate on-site generation and battery energy storage — and the protection, control, and automation layer is what keeps all of it selective, coordinated, and observable.</p>
+<p> </p>
+<p>As a Data Center Substation, Protection & Automation Engineer, you'll own the protection and automation architecture across Anthropic's US portfolio — from the utility point of interconnection (POI) through the HV/MV substation, the MV distribution loop, and down into LV switchgear. You'll develop and maintain our protection philosophy and reference relay settings, run and review the short-circuit, coordination, and arc-flash studies that underpin them, design the substation automation and SCADA architecture, and define how relays and meters integrate into the electrical power monitoring system (EPMS) — giving operators real-time visibility and sequence-of-events data when something trips. You'll also be our technical lead on the protection side of utility interconnection — working relay settings, transfer-trip, and ride-through requirements with transmission owners and ISOs/RTOs.</p>
+<p> </p>
+<p>Protection engineering and substation automation are the core of this role; substation physical design is a strong plus but not a prerequisite — we'd like to hear from protection and P&C engineers who have spent their careers on relays, schemes, and studies even if they haven't owned a substation general arrangement. You'll work closely with colleagues across the infrastructure team, our build partners' A/E firms, relay and switchgear vendors, and utility protection groups. Expect roughly 20–35% travel for witnessing factory acceptance and relay testing, and supporting site energization and commissioning.</p>
+<h2>Responsibilities</h2>
+<h3>Protection engineering</h3>
+<ul>
+<li>
+<p>Own Anthropic's protection philosophy and basis of design across the electrical system — HV substation, MV distribution, generator and energy-storage interties, and LV switchgear — and maintain the reference relay settings and protection one-line templates our build partners design against</p>
+</li>
+<li>
+<p>Specify protective relays and develop relay settings for transformer, feeder, bus, generator, motor, and arc-flash protection applications, working across major platforms (e.g., SEL, GE Multilin, ABB, Siemens, Schneider)</p>
+</li>
+<li>
+<p>Perform and critically review short-circuit, protective-device coordination, and arc-flash studies; use findings to steer equipment selection, settings, and incident-energy mitigation</p>
+</li>
+<li>
+<p>Implement automatic transfer, load-shed, and restoration schemes in protection and automation logic, and make sure they stay secure and coordinated under every credible contingency</p>
+</li>
+<li>
+<p>Review protection and control design packages, relay settings calculations, and coordination studies from build partners and A/E firms against our basis of design, and drive closure on deviations and exceptions</p>
+</li>
+</ul>
+<h3>Substation automation & SCADA</h3>
+<ul>
+<li>
+<p>Design the substation automation architecture for each site — IEC 61850 station and process bus, GOOSE messaging, RTUs/gateways, local HMI, sequence-of-events recording, and time synchronization — and drive standardization of that architecture across the portfolio</p>
+</li>
+<li>
+<p>Integrate protective relays, meters, and switchgear controls into the electrical power monitoring system (EPMS) and substation SCADA; define electrical points lists and event/waveform capture, applying the site alarm and HMI standards</p>
+</li>
+<li>
+<p>Help define the network topology, redundancy, and cybersecurity boundaries between substation automation, EPMS, and the facility BMS/DCIM layer, and how protection events surface to operations</p>
+</li>
+<li>
+<p>Evaluate and qualify relay, RTU, gateway, and EPMS platforms on technical merit, and work with supply chain to build a diversified vendor base that mitigates lead-time and single-source risk</p>
+</li>
+</ul>
+<h3>Substation design & utility interface</h3>
+<ul>
+<li>
+<p>Review HV/MV substation design packages from build partners — single-line and three-line diagrams, bus configuration, general arrangement, equipment specifications, grounding-grid design, and control-building layout — and confirm the protection and control design is buildable and maintainable</p>
+</li>
+<li>
+<p>Work with local utilities, transmission owners, and ISOs/RTOs on interconnection protection requirements — relay settings submittals, transfer-trip and communications-assisted schemes, POI study review, and protection settings that satisfy ride-through and grid-code requirements</p>
+</li>
+<li>
+<p>Review the protection and control interface for on-site generation and battery energy storage interconnections, including anti-islanding, synchronizing, and intertie protection</p>
+</li>
+<li>
+<p>Support NERC PRC compliance for applicable facilities — settings documentation, misoperation analysis, and periodic maintenance and testing basis</p>
+</li>
+</ul>
+<h3>Testing, commissioning & standards</h3>
+<ul>
+<li>
+<p>Develop relay test plans and factory and site acceptance test procedures for protection and automation systems, and witness FAT, relay secondary-injection testing, GOOSE messaging and end-to-end scheme testing, and integrated systems testing</p>
+</li>
+<li>
+<p>Review the protection and control steps of energization and switching methods of procedure (MOPs), support first-energization of substations and MV distribution, and resolve protection and control issues found in the field</p>
+</li>
+<li>
+<p>Lead root-cause analysis of protection operations and misoperations using relay event records, sequence-of-events data, and disturbance records, and feed findings back into settings and standards</p>
+</li>
+<li>
+<p>Build and continuously improve Anthropic's internal protection and automation standards — settings templates, scheme logic libraries, test procedures, and commissioning checklists — so each new site starts from a proven baseline</p>
+</li>
+</ul>
+<h2>You may be a good fit if you</h2>
+<ul>
+<li>
+<p>Have 10+ years of experience in power system protection engineering, substation automation, or substation design for utility, heavy-industrial, or mission-critical facilities</p>
+</li>
+<li>
+<p>Hold a bachelor's degree in Electrical Engineering or a closely related field, or have equivalent practical experience; Professional Engineer (PE) licensure is valued but not required</p>
+</li>
+<li>
+<p>Have deep, hands-on expertise applying and setting protective relays for transformers, feeders, buses, generators, and switchgear, and are fluent in at least one major relay platform (e.g., SEL, GE Multilin, ABB, Siemens)</p>
+</li>
+<li>
+<p>Are fluent in short-circuit, protective-device coordination, and arc-flash analysis and comfortable running or critically reviewing studies in tools such as SKM, ETAP, EasyPower, ASPEN, or CAPE</p>
+</li>
+<li>
+<p>Have hands-on experience integrating protective relays into substation automation or SCADA systems using protocols such as DNP3, Modbus, or IEC 61850, and understand RTU/gateway and sequence-of-events architecture</p>
+</li>
+<li>
+<p>Have worked on utility interconnection protection — relay settings submittals, transfer-trip or communications-assisted schemes, or point-of-interconnection protection requirements — from either the utility or the customer side</p>
+</li>
+<li>
+<p>Can read, interpret, and mark up single-line and three-line diagrams, AC and DC schematics, relay panel drawings, and wiring diagrams with confidence</p>
+</li>
+<li>
+<p>Have developed relay test plans and witnessed factory acceptance testing, secondary-injection testing, or field commissioning of protection and control systems</p>
+</li>
+<li>
+<p>Are familiar with the codes and standards that govern protection and substation work — such as the IEEE C37 series, IEEE 1584, NFPA 70/70E, and (for utility-connected or bulk-electric-system facilities) NERC PRC reliability standards</p>
+</li>
+<li>
+<p>Communicate clearly with both technical peers and non-specialist stakeholders, and are results-oriented, with a bias toward practical solutions and a willingness to pick up work outside your core remit when the team needs it</p>
+</li>
+</ul>
+<h2>Strong candidates may also have</h2>
+<ul>
+<li>
+<p>HV/MV substation physical design experience — general arrangement, bus configuration, power transformer and HV breaker specification, grounding-grid design per IEEE 80, insulation coordination, and control-building layout</p>
+</li>
+<li>
+<p>Experience with protection and control for on-site generation (gas turbines, reciprocating engines, fuel cells) and battery energy storage systems, including anti-islanding, synchronizing, and microgrid transfer schemes</p>
+</li>
+<li>
+<p>Background in data center, hyperscaler, or other high-availability electrical distribution, and familiarity with critical-power topologies (2N, N+1, distributed redundant)</p>
+</li>
+<li>
+<p>Experience owning NERC PRC compliance evidence for a generation or transmission asset — settings basis documentation, misoperation reporting, and PRC-005 maintenance programs</p>
+</li>
+<li>
+<p>Proficiency with vendor relay engineering tools such as SEL AcSELerator, GE EnerVista, ABB PCM600, or Siemens DIGSI, and with IEC 61850 system configuration tools</p>
+</li>
+<li>
+<p>Designed IEC 61850 station- or process-bus systems with GOOSE-based protection or interlocking schemes</p>
+</li>
+<li>
+<p>Prior work at a utility, relay or switchgear manufacturer, protection-engineering consultancy, or hyperscaler serving large-load interconnections</p>
+</li>
+</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$320,000</span><span class=""divider"">—</span><span>$405,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",15465,https://job-boards.greenhouse.io/anthropic/jobs/5468380008,,,,,,,not_checked,,2026-10-30,,2026-10-30,,,,true,0,,,,,,,,,,,,,,
+REQ-26-1457-01,Data Center Electrical Engineer – Design,Anthropic,Anthropic,,Posted Today,,,"Remote-Friendly, United States",1,"Remote-Friendly, United States",true,,United States,,0,"<div class=""content-intro""><h2><strong>About Anthropic</strong></h2>
+<p>Anthropic’s mission is to create reliable, interpretable, and steerable AI systems. We want AI to be safe and beneficial for our users and for society as a whole. Our team is a quickly growing group of committed researchers, engineers, policy experts, and business leaders working together to build beneficial AI systems.</p></div><h2>About the role</h2>
+<p>Training and serving frontier AI models requires compute infrastructure at a scale and density that pushes past what conventional data center designs were built to handle. Anthropic's Data Center Infrastructure team is responsible for delivering that physical infrastructure — partnering with build partners, equipment manufacturers, and utilities to stand up facilities that can reliably power some of the largest accelerator clusters in the industry.</p>
+<p> </p>
+<p>As a Data Center Electrical Engineer – Design, you'll own the electrical architecture of our facilities from the utility service entrance through to the rack — substation interface, medium- and high-voltage distribution, on-site generation and storage integration, UPS, switchgear, busway, and rack power. You'll develop and maintain the basis of design, reference architectures, and technical specifications that our build partners and A/E firms design against, and you'll be the point of technical authority when their drawings and calculations come back for review. You'll run the engineering studies — short-circuit, protection coordination, arc flash, load flow, and power quality — and you'll keep the architecture ahead of rapidly increasing rack densities and the unique load characteristics of large-scale ML training.</p>
+<p> </p>
+<p>A central part of this role is speed-to-capacity through prefabrication: you'll shape Anthropic's offsite-manufactured electrical strategy — modular skids, e-houses, and prefabricated power assemblies — and drive its standardization across sites. You'll work closely with colleagues across the infrastructure team, with our hardware and compute teams to translate accelerator requirements into electrical design criteria, and with supply chain to qualify and diversify regional equipment vendors. Expect roughly 10–25% travel for design reviews, partner and vendor meetings, factory witness testing, and site visits to support commissioning and startup.</p>
+<h2>Responsibilities</h2>
+<h3>Electrical design & engineering</h3>
+<ul>
+<li>
+<p>Lead the electrical design of critical data center infrastructure across the US portfolio, including the utility interface and substation, site medium- and high-voltage distribution, generators, UPS, switchgear, transformers, busway, and grounding</p>
+</li>
+<li>
+<p>Develop and maintain Anthropic's electrical basis of design, reference architectures, and technical specifications for critical power distribution — covering switchgear, UPS systems, PDUs, busway, and rack power delivery — producing designs that meet our reliability and maintainability requirements while staying within budgetary targets</p>
+</li>
+<li>
+<p>Perform and validate engineering studies — including short-circuit, protection coordination, arc flash, load flow, and power quality analysis — and use the findings to steer topology, redundancy, equipment-selection, and protection-setting decisions</p>
+</li>
+<li>
+<p>Design and plan data center hall power distribution layouts for newly allocated spaces in coordination with the telecom, mechanical and cooling design</p>
+</li>
+</ul>
+<h3>Prefabrication & modular delivery</h3>
+<ul>
+<li>
+<p>Drive Anthropic's prefabricated and modular electrical strategy — developing modular skids, e-houses, and prefabricated power assemblies, and partnering with external engineering and manufacturing teams on a productization roadmap that accelerates deployment and reduces onsite labor</p>
+</li>
+<li>
+<p>Design for offsite manufacture and onsite assembly: define the interfaces between prefabricated components and site-built work, and the electrical interfaces and switchover points for temporary-to-permanent power sequencing</p>
+</li>
+<li>
+<p>Drive standardization of modular electrical designs across sites to compress deployment timelines while preserving flexibility for site-specific constraints and evolving hardware generations</p>
+</li>
+</ul>
+<h3>Partner, vendor & utility coordination</h3>
+<ul>
+<li>
+<p>Work with regional vendors and manufacturers to specify and qualify major electrical equipment, and partner with supply chain to build a diversified vendor base that mitigates lead-time and single-source risk</p>
+</li>
+<li>
+<p>Work with utilities and interconnection/transmission operators (e.g., ISOs/RTOs) to define site utility service and interconnection requirements, and with local authorities having jurisdiction to ensure designs comply with the National Electrical Code (NFPA 70/NEC), NFPA, IEEE, UL/ANSI, and local requirements</p>
+</li>
+<li>
+<p>Work with Anthropic's hardware and compute teams to translate accelerator power, density, and power-quality requirements into electrical design criteria, and keep the reference architecture aligned with upcoming hardware generations</p>
+</li>
+<li>
+<p>Present findings and design positions to internal stakeholders, build partners, and operations teams through clear reports and presentations, and defend them under challenge</p>
+</li>
+</ul>
+<h3>Design review & quality</h3>
+<ul>
+<li>
+<p>Review and approve electrical design packages, calculations, submittals, and shop drawings from build partners and MEP consultants; track clarifications, deviations, and exceptions against the basis of design, and hold the line on capacity, reliability, maintainability, and safety requirements</p>
+</li>
+<li>
+<p>Perform technical due diligence and design reviews on data center developer and partner projects — evaluating their electrical single-lines, equipment selections, studies, and specifications against Anthropic's reliability, maintainability, and capacity requirements</p>
+</li>
+<li>
+<p>Define project electrical scope and serve as the design authority on RFIs and field changes that affect design intent during procurement and construction</p>
+</li>
+<li>
+<p>Support factory acceptance testing, commissioning, and startup — reviewing test procedures and results against design intent, participating on site for key milestones, and closing as-built changes back into the reference design</p>
+</li>
+<li>
+<p>Manage concurrent projects across multiple geographies</p>
+</li>
+<li>
+<p>Continuously improve Anthropic's internal electrical design standards, tooling, and delivery practices, and act as a technical leader within the engineering group and across the internal and external teams that support our data centers</p>
+</li>
+</ul>
+<h2>You may be a good fit if you</h2>
+<ul>
+<li>
+<p>Have 10+ years of electrical engineering experience in mission-critical facilities, with substantial time spent on data center or other high-availability electrical distribution design — from concept through construction documents and into commissioning support</p>
+</li>
+<li>
+<p>Have deep familiarity with US electrical codes and standards — including the National Electrical Code (NFPA 70/NEC), NFPA 70E, IEEE standards (e.g., 1584 for arc flash), and UL/ANSI equipment standards (e.g., UL 891, UL 1558) — and with utility interconnection processes</p>
+</li>
+<li>
+<p>Have hands-on experience producing and reviewing electrical construction documents, single-line diagrams, and equipment specifications, and can interpret data center floor plans and technical layouts with confidence</p>
+</li>
+<li>
+<p>Have strong knowledge of power distribution and cooling infrastructure in high-availability data center environments</p>
+</li>
+<li>
+<p>Are fluent in power systems analysis and comfortable running or critically reviewing studies in tools such as SKM, ETAP, or EasyPower</p>
+</li>
+<li>
+<p>Understand critical power topologies (2N, N+1, distributed redundant, block redundant) and can articulate the trade-offs between them for different reliability and cost targets</p>
+</li>
+<li>
+<p>Have working knowledge of HV/MV substations, on-site generation, and energy storage integration, and how each shapes the overall electrical architecture</p>
+</li>
+<li>
+<p>Have hands-on experience with prefabricated and modular data center electrical infrastructure — design for offsite manufacture, modular skids/e-houses, and the interfaces between prefabricated components and onsite assembly</p>
+</li>
+<li>
+<p>Have worked directly with electrical equipment manufacturers, A/E consultants, and contractors, and can evaluate products and designs on technical merit, not just datasheet claims</p>
+</li>
+<li>
+<p>Hold a bachelor's degree in Electrical Engineering or a closely related field, or have equivalent practical experience; Professional Engineer (PE) licensure is valued but not required</p>
+</li>
+<li>
+<p>Communicate clearly with both technical peers and non-specialist stakeholders, and are comfortable defending a design position under scrutiny from partners and internal reviewers</p>
+</li>
+</ul>
+<h2>Strong candidates may also have</h2>
+<ul>
+<li>
+<p>Experience owning the electrical basis of design or reference architecture for a hyperscale or large colocation program, and driving its adoption across multiple sites or by external build partners</p>
+</li>
+<li>
+<p>A track record building modular prefabricated products in the electrical or mechanical scope of a data center, and driving designs toward offsite manufacturing</p>
+</li>
+<li>
+<p>Background in medium-/high-voltage distribution, on-site generation, or battery energy storage system (BESS) integration, and how those shape the building-side electrical design</p>
+</li>
+<li>
+<p>Exposure to liquid-cooled infrastructure and its implications for electrical room layout and load distribution</p>
+</li>
+<li>
+<p>Prior work at a hyperscaler, colocation provider, or MEP consultancy serving large data center clients</p>
+</li>
+<li>
+<p>Direct project experience delivering data centers in multiple US markets (e.g., Virginia, Texas, Arizona, Ohio, Oregon)</p>
+</li>
+</ul><div class=""content-pay-transparency""><div class=""pay-input""><div class=""description""><p>The annual compensation range for this role is listed below. </p>
+<p>For sales roles, the range provided is the role’s On Target Earnings (""OTE"") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role.</p></div><div class=""title"">Annual Salary:</div><div class=""pay-range""><span>$320,000</span><span class=""divider"">—</span><span>$405,000 USD</span></div></div></div><div class=""content-conclusion""><h2><strong>Logistics</strong></h2>
+<p><strong>Minimum education: </strong>Bachelor’s degree or an equivalent combination of education, training, and/or experience</p>
+<p><strong>Required field of study: </strong>A field relevant to the role as demonstrated through coursework, training, or professional experience</p>
+<p><strong>Minimum years of experience: </strong>Years of experience required will correlate with the internal job level requirements for the position</p>
+<p><strong>Location-based hybrid policy:</strong> Currently, we expect all staff to be in one of our offices at least 25% of the time. However, some roles may require more time in our offices.</p>
+<p><strong data-stringify-type=""bold"">Visa sponsorship:</strong> We do sponsor visas! However, we aren't able to successfully sponsor visas for every role and every candidate. But if we make you an offer, we will make every reasonable effort to get you a visa, and we retain an immigration lawyer to help with this.</p>
+<p><strong>We encourage you to apply even if you do not believe you meet every single qualification.</strong> Not all strong candidates will meet every single qualification as listed.  Research shows that people who identify as being from underrepresented groups are more prone to experiencing imposter syndrome and doubting the strength of their candidacy, so we urge you not to exclude yourself prematurely and to submit an application if you're interested in this work. We think AI systems like the ones we're building have enormous social and ethical implications. We think this makes representation even more important, and we strive to include a range of diverse perspectives on our team.<br><br><strong data-stringify-type=""bold"">Your safety matters to us.</strong> To protect yourself from potential scams, remember that Anthropic recruiters only contact you from @anthropic.com email addresses. In some cases, we may partner with vetted recruiting agencies who will identify themselves as working on behalf of Anthropic. Be cautious of emails from other domains. Legitimate Anthropic recruiters will never ask for money, fees, or banking information before your first day. If you're ever unsure about a communication, don't click any links—visit <u data-stringify-type=""underline""><a class=""c-link c-link--underline"" href=""http://anthropic.com/careers"" target=""_blank"" data-stringify-link=""http://anthropic.com/careers"" data-sk=""tooltip_parent"" data-remove-tab-index=""true"">anthropic.com/careers</a></u> directly for confirmed position openings.</p>
+<h2><strong>How we're different</strong></h2>
+<p>We believe that the highest-impact AI research will be big science. At Anthropic we work as a single cohesive team on just a few large-scale research efforts. And we value impact — advancing our long-term goals of steerable, trustworthy AI — rather than work on smaller and more specific puzzles. We view AI research as an empirical science, which has as much in common with physics and biology as with traditional efforts in computer science. We're an extremely collaborative group, and we host frequent research discussions to ensure that we are pursuing the highest-impact work at any given time. As such, we greatly value communication skills.</p>
+<p>The easiest way to understand our research directions is to read our recent research. This research continues many of the directions our team worked on prior to Anthropic, including: GPT-3, Circuit-Based Interpretability, Multimodal Neurons, Scaling Laws, AI & Compute, Concrete Problems in AI Safety, and Learning from Human Preferences.</p>
+<h2><strong>Come work with us!</strong></h2>
+<p>Anthropic is a public benefit corporation headquartered in San Francisco. We offer competitive compensation and benefits, optional equity donation matching, generous vacation and parental leave, flexible working hours, and a lovely office space in which to collaborate with colleagues. <strong data-stringify-type=""bold"">Guidance on Candidates' AI Usage:</strong> Learn about <a class=""c-link"" href=""https://www.anthropic.com/candidate-ai-guidance"" target=""_blank"" data-stringify-link=""https://www.anthropic.com/candidate-ai-guidance"" data-sk=""tooltip_parent"">our policy</a> for using AI in our application process.</p></div>",14990,https://job-boards.greenhouse.io/anthropic/jobs/5468392008,,,,,,,not_checked,,2026-10-30,,2026-10-30,,,,true,0,,,,,,,,,,,,,,
