@@ -1,9 +1,9 @@
 {
  "label": "anthropic_us_fulltime",
  "rows": 480,
- "kept": 475,
- "new": 5,
- "ghosts_dropped": 14,
+ "kept": 480,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,

@@ -1,9 +1,9 @@
 {
  "label": "tti_us_fulltime",
- "rows": 674,
- "kept": 674,
- "new": 0,
- "ghosts_dropped": 0,
+ "rows": 677,
+ "kept": 664,
+ "new": 13,
+ "ghosts_dropped": 10,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -11,8 +11,8 @@
  "gate_dropped_survivors": 0,
  "gate_dropped_new": 0,
  "feed_excluded_state": 0,
- "state_rows": 674,
- "banded": 19,
+ "state_rows": 677,
+ "banded": 18,
  "lca_pools": 14,
  "snapshot": "2026-10-30"
 }
