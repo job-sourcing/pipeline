@@ -243,20 +243,22 @@ def _fleet_credits() -> tuple[int, str]:
     """[S47 fleet] Sum remaining credits across the WHOLE fleet (the
     single-key preflight dies at key[0] exhaustion while 3 funded keys
     idle — the S47-A1/A2-1 audit finding). Returns (total, status);
-    per-key failures are tolerated (one dead key ≠ fleet-dead)."""
+    per-key failures are tolerated (one dead key ≠ fleet-dead).
+    [S51] the usage endpoint rides the vendor RELAY when configured
+    (balance checks are vendor traffic too — the agent-fetch-kit rule
+    #3; never one direct IP across the pooled accounts)."""
     keys = _firecrawl_keys()
     if not keys:
         return 0, "no-key"
+    from jobsearch.vendor_relay import fc_credit_usage  # noqa: PLC0415
     total = 0
     dead = 0
     for k in keys:
-        try:
-            d = _http_json("https://api.firecrawl.dev/v1/team/credit-usage",
-                           headers={"Authorization": f"Bearer {k}"})
-            total += int((d.get("data") or {}).get("remaining_credits", 0)
-                         or 0)
-        except Exception:                       # noqa: BLE001
-            dead += 1                           # best-effort per key
+        rem = fc_credit_usage(k)
+        if rem is None:
+            dead += 1                          # best-effort per key
+        else:
+            total += rem
     status = "ok" if total > 0 else f"fleet-exhausted"
     if dead and total:
         status += f" ({dead}/{len(keys)} key(s) unreachable)"
@@ -268,26 +270,28 @@ def _fc_scrape(payload: dict, timeout: int = 120) -> tuple[dict | None, str]:
     fleet key in order; on per-key auth/quota failure (401/402/403 or
     the API's payment_required error) moves to the next key. Returns
     (parsed_response | None, status). A fleet-wide failure returns
-    (None, 'fleet:<reason>') so callers record the honest verdict."""
+    (None, 'fleet:<reason>') so callers record the honest verdict.
+    [S51] the call rides the vendor RELAY (agent-fetch-kit fleet,
+    per-call base rotation) when NETLIFY_RELAY_URLS is configured —
+    FC_RELAY_MODE=direct is the emergency escape hatch; the relay
+    adds per-key base rotation for free (network-class failures get a
+    fresh egress on the next key attempt)."""
     keys = _firecrawl_keys()
     if not keys:
         return None, "no-key"
+    from jobsearch.vendor_relay import fc_api  # noqa: PLC0415
     last = ""
     for k in keys:
-        try:
-            d = _http_json(
-                "https://api.firecrawl.dev/v2/scrape",
-                data=json.dumps(payload).encode(),
-                headers={"Content-Type": "application/json",
-                         "Authorization": f"Bearer {k}"}, timeout=timeout)
-        except urllib.error.HTTPError as h:
-            last = f"http{h.code}"
-            if h.code in (401, 402, 403):       # key-level: rotate
-                continue
-            return None, f"http{h.code}"        # e.g. 500: caller retries
-        except Exception as exc:                # noqa: BLE001
-            last = f"error:{type(exc).__name__}"
-            continue                             # network-ish: next key
+        d, st = fc_api("/v2/scrape", payload, k, timeout=timeout)
+        if d is None:
+            if st.startswith("relay:"):
+                return None, st               # relay transport dead —
+                # honest verdict (never silently fall back to direct)
+            last = st
+            if st.startswith(("http401", "http402", "http403",
+                              "error:")):
+                continue                     # key-level / network: rotate
+            return None, st                  # e.g. http500: caller retries
         if not d.get("success"):
             err = str(d.get("error") or "")
             if ("payment" in err.lower()

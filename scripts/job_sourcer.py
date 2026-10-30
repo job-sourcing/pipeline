@@ -49,6 +49,34 @@ except ImportError:
 
 import requests
 
+# [S51] the vendor-relay transport: zenrows calls ride the free
+# netlify edge-proxy fleet (per-call base rotation) and rotate the
+# ZENROWS_KEYS pool — the pooled accounts never share one direct IP.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "ingest"))
+from jobsearch.vendor_relay import zenrows_fetch_html  # noqa: E402
+
+
+def _zenrows_get(params: dict, api_key: str = "") -> tuple[str, str]:
+    """One zenrows GET: pool + relay when configured, else the legacy
+    direct single-key call (backward-compat for --zenrows-key users).
+    Returns (body_text, status)."""
+    from jobsearch.vendor_relay import zenrows_keys  # noqa: PLC0415
+    if zenrows_keys():
+        return zenrows_fetch_html(params)
+    if not api_key:
+        api_key = os.environ.get("ZENROWS_API_KEY", "")
+    if not api_key:
+        return "", "no-key"
+    p = dict(params)
+    p["apikey"] = api_key
+    try:
+        r = requests.get('https://api.zenrows.com/v1/', params=p,
+                         timeout=120)
+        return (r.text, "ok") if r.status_code == 200 else (
+            "", f"http{r.status_code}")
+    except Exception as exc:                    # noqa: BLE001
+        return "", f"error:{type(exc).__name__}"
+
 # S47-A2-3 fix: the module-level mkdir crashed at IMPORT time on
 # GHA runners (PermissionError — /home/z is not creatable by the
 # 'runner' user), which masked the glassdoor ZenRows 402 verdict
@@ -423,11 +451,13 @@ def scrape_remoteok():
 # ====== ZipRecruiter via ZenRows ======
 
 def scrape_ziprecruiter_zenrows(keywords, location, api_key):
-    """ZipRecruiter via ZenRows — bypasses Cloudflare."""
+    """ZipRecruiter via ZenRows — bypasses Cloudflare.
+    [S51] the zenrows call rides the vendor RELAY when configured and
+    rotates the ZENROWS_KEYS pool (api_key arg kept for the legacy
+    single-key contract; ignored when the pool is live)."""
     print(f"\n[ZipRecruiter via ZenRows] '{keywords}' in '{location}'")
     url = f'https://www.ziprecruiter.com/jobs-search?search={quote_plus(keywords)}&location={quote_plus(location)}'
     params = {
-        'apikey': api_key,
         'url': url,
         'js_render': 'true',
         'premium_proxy': 'true',
@@ -437,13 +467,14 @@ def scrape_ziprecruiter_zenrows(keywords, location, api_key):
     }
     start = time.time()
     try:
-        r = requests.get('https://api.zenrows.com/v1/', params=params, timeout=120)
+        text, st = _zenrows_get(params, api_key)
         duration = round(time.time() - start, 2)
-        print(f"  HTTP {r.status_code}, {len(r.text):,} bytes, {duration}s")
-        if r.status_code != 200:
+        if st != 'ok':
+            print(f'  zenrows {st}, {duration}s')
             return []
+        print(f"  HTTP 200, {len(text):,} bytes, {duration}s")
         # Parse articles
-        articles = re.findall(r'<article[^>]*>(.*?)</article>', r.text, re.DOTALL)
+        articles = re.findall(r'<article[^>]*>(.*?)</article>', text, re.DOTALL)
         print(f"  Found {len(articles)} articles")
         jobs = []
         for art in articles:
@@ -502,7 +533,6 @@ def scrape_glassdoor_zenrows(keywords, location, api_key):
     # Simpler URL works better
     url = f'https://www.glassdoor.com/Job/jobs.htm?sc.keyword={quote_plus(keywords)}'
     params = {
-        'apikey': api_key,
         'url': url,
         'js_render': 'true',
         'premium_proxy': 'true',
@@ -512,21 +542,22 @@ def scrape_glassdoor_zenrows(keywords, location, api_key):
     }
     start = time.time()
     try:
-        r = requests.get('https://api.zenrows.com/v1/', params=params, timeout=120)
+        r_text, st = _zenrows_get(params, api_key)
         duration = round(time.time() - start, 2)
-        print(f"  HTTP {r.status_code}, {len(r.text):,} bytes, {duration}s")
-        if r.status_code != 200:
+        if st != 'ok':
+            print(f'  zenrows {st}, {duration}s')
             return []
+        print(f"  HTTP 200, {len(r_text):,} bytes, {duration}s")
         # Parse JSON-LD ItemList
         jsonld_match = re.search(
             r'<script[^>]*type="application/ld\+json"[^>]*>(\{.*?"ItemList".*?\})</script>',
-            r.text, re.DOTALL
+            r_text, re.DOTALL
         )
         if not jsonld_match:
             # Try simpler pattern
             jsonld_match = re.search(
                 r'<script[^>]*type="application/ld\+json"[^>]*>(\{[^<]+\})</script>',
-                r.text
+                r_text
             )
         if not jsonld_match:
             print("  No JSON-LD found in HTML")

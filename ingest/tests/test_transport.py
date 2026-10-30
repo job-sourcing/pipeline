@@ -28,6 +28,17 @@ class _FakeResp:
 
 
 class TestZenrowsFetchJson:
+    @pytest.fixture(autouse=True)
+    def _no_relay_pool(self, monkeypatch):
+        """[S51] hermetic: the tracked ingest/.env carries the live
+        ZENROWS_KEYS pool + NETLIFY_RELAY config — these pins test the
+        DIRECT request shape, so neutralize both (the relay path has
+        its own pins in test_s51_vendor_relay.py)."""
+        from jobsearch import vendor_relay as _vr
+        monkeypatch.setattr(_vr, "relay_configured", lambda: False)
+        monkeypatch.setattr(_vr, "zenrows_keys", lambda: [])
+        monkeypatch.setattr(_vr, "_envfile_vals", lambda: {})
+
     def test_not_configured_raises(self):
         cfg = Config()
         with pytest.raises(RuntimeError, match="ZENROWS_API_KEY"):

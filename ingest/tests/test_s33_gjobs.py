@@ -233,37 +233,33 @@ class TestHonestyDoctrine:
                 a._scrape()
 
     def test_firecrawl_success_false_raises(self):
+        # [S51] the seam moved: _scrape calls vendor_relay.fc_api (the
+        # relay transport) — pin the NEW seam, not urllib.urlopen
         a = GoogleJobsAdapter("renogy", Config())
-        import urllib.request as _u
-
-        class _Resp:
-            def __enter__(self):
-                return self
-
-            def __exit__(self, *a):
-                return False
-
-            def read(self):
-                return b'{"success": false, "error": "boom"}'
-        with patch.object(_u, "urlopen", return_value=_Resp()):
+        from jobsearch import vendor_relay as _vr
+        with patch.object(_vr, "fc_api",
+                          return_value=({"success": False,
+                                         "error": "boom"}, "ok")):
             with pytest.raises(RuntimeError, match="success=false"):
                 a._scrape()
 
-    def test_empty_markdown_raises(self):
+    def test_relay_transport_death_raises_loudly(self):
+        # [S51] a dead relay must surface as a scrape failure (never a
+        # silent direct fallback — the owner IP-hygiene directive)
         a = GoogleJobsAdapter("renogy", Config())
-        import urllib.request as _u
+        from jobsearch import vendor_relay as _vr
+        with patch.object(_vr, "fc_api", return_value=(None,
+                                                       "relay:wrapper-http401")):
+            with pytest.raises(RuntimeError, match="relay"):
+                a._scrape()
 
-        class _Resp:
-            def __enter__(self):
-                return self
-
-            def __exit__(self, *a):
-                return False
-
-            def read(self):
-                return (b'{"success": true, "data": '
-                        b'{"markdown": ""}}')
-        with patch.object(_u, "urlopen", return_value=_Resp()):
+    def test_empty_markdown_raises(self):
+        # [S51] seam-moved twin of the success=false pin
+        a = GoogleJobsAdapter("renogy", Config())
+        from jobsearch import vendor_relay as _vr
+        with patch.object(_vr, "fc_api",
+                          return_value=({"success": True,
+                                         "data": {"markdown": ""}}, "ok")):
             with pytest.raises(RuntimeError, match="EMPTY"):
                 a._scrape()
 

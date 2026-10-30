@@ -32,6 +32,7 @@ adapter prefers it when both are configured.
 from __future__ import annotations
 
 import json as _json
+import json
 import time
 import urllib.parse
 from typing import Optional
@@ -46,6 +47,52 @@ ZENROWS_API = "https://api.zenrows.com/v1/"
 _NETLIFY_BLOB_API = ("https://api.netlify.com/api/v1/blobs/"
                      "01c2e47f-3ff6-4e09-b45f-604c49ef90fe/"
                      "site:scraper-results")
+
+
+def _zenrows_request(method: str, zenrows_params: dict,
+                     headers: Optional[dict],
+                     json_body: Optional[dict],
+                     timeout: int) -> "requests.Response":
+    """[S51] one zenrows API call: vendor-RELAY + key-pool rotation
+    when configured (ZENROWS_KEYS / NETLIFY_RELAY_URLS), else the
+    legacy direct single-key request. Key-level auth/quota failures
+    (401/402/403, AUTH004) rotate to the next pool key; the last error
+    raises with the same contract the direct path had."""
+    from jobsearch import vendor_relay  # noqa: PLC0415
+    pool = vendor_relay.zenrows_keys()
+    if pool and vendor_relay.relay_configured() \
+            and vendor_relay._fc_mode() != "direct":
+        last = ""
+        for key in pool[:3]:
+            p = dict(zenrows_params)
+            p["apikey"] = key
+            qs = urllib.parse.urlencode(p)
+            body = json.dumps(json_body) if json_body is not None else None
+            r = vendor_relay.relay_fetch(
+                f"{ZENROWS_API}?{qs}", method=method,
+                headers=headers or {"User-Agent": "jobsearch/1.0"},
+                body=body, timeout=timeout)
+            if r["status"] is None:
+                raise RuntimeError(
+                    f"ZenRows relay transport error: {r['err']}")
+            # materialize a requests.Response-shaped object for the
+            # callers' .status_code/.text/.json contract
+            resp = requests.Response()
+            resp.status_code = r["status"]
+            resp._content = r["text"].encode("utf-8", "replace")
+            if r["status"] in (401, 402, 403) \
+                    or "AUTH004" in r["text"][:400]:
+                vendor_relay._ZR_STATE["dead"].add(key)
+                last = f"HTTP {r['status']} (key rotated)"
+                continue
+            return resp
+        raise RuntimeError(f"ZenRows error {last} — pool exhausted")
+    # legacy direct single-key path
+    r = requests.request(
+        method, ZENROWS_API, params=zenrows_params,
+        headers=headers or {"User-Agent": "jobsearch/1.0"},
+        json=json_body, timeout=timeout)
+    return r
 
 
 def zenrows_fetch_json(
@@ -67,10 +114,6 @@ def zenrows_fetch_json(
     RuntimeError when ZenRows isn't configured.
     """
     cfg = cfg or Config()
-    if not cfg.zenrows_api_key:
-        raise RuntimeError(
-            "ZenRows transport requested but ZENROWS_API_KEY is not set."
-        )
 
     full_url = url
     if params:
@@ -78,7 +121,6 @@ def zenrows_fetch_json(
         full_url = f"{url}{sep}{urllib.parse.urlencode(params)}"
 
     zenrows_params: dict = {
-        "apikey": cfg.zenrows_api_key,
         "url": full_url,
         "premium_proxy": "true",
         "proxy_country": proxy_country,
@@ -86,15 +128,19 @@ def zenrows_fetch_json(
     }
     if js_render:
         zenrows_params["js_render"] = "true"
+    if not cfg.zenrows_api_key:
+        from jobsearch import vendor_relay  # noqa: PLC0415
+        if not vendor_relay.zenrows_keys():
+            raise RuntimeError(
+                "ZenRows transport requested but ZENROWS_API_KEY is not "
+                "set.")
+        zenrows_params["apikey"] = vendor_relay.zenrows_keys()[0]
+    else:
+        zenrows_params["apikey"] = cfg.zenrows_api_key
 
-    r = requests.request(
-        method,
-        ZENROWS_API,
-        params=zenrows_params,
-        headers=headers or {"User-Agent": "jobsearch/1.0"},
-        json=json_body,
-        timeout=timeout or max(cfg.http_timeout_s, 60),
-    )
+    r = _zenrows_request(
+        method, zenrows_params, headers, json_body,
+        timeout=timeout or max(cfg.http_timeout_s, 60))
     if r.status_code >= 400:
         # Surface the ZenRows error body (RESP001-style JSON) so callers can
         # distinguish upstream-failure (422) from auth/credit errors (401/402).
@@ -133,15 +179,21 @@ def zenrows_fetch_text(
     challenge page).
     """
     cfg = cfg or Config()
-    if not cfg.zenrows_api_key:
-        raise RuntimeError(
-            "ZenRows transport requested but ZENROWS_API_KEY is not set."
-        )
 
-    r = requests.get(
-        ZENROWS_API,
-        params={
-            "apikey": cfg.zenrows_api_key,
+    if not cfg.zenrows_api_key:
+        from jobsearch import vendor_relay  # noqa: PLC0415
+        if not vendor_relay.zenrows_keys():
+            raise RuntimeError(
+                "ZenRows transport requested but ZENROWS_API_KEY is not "
+                "set.")
+        apikey = vendor_relay.zenrows_keys()[0]
+    else:
+        apikey = cfg.zenrows_api_key
+
+    r = _zenrows_request(
+        "GET",
+        {
+            "apikey": apikey,
             "url": url,
             "js_render": "true",
             "premium_proxy": "true",
@@ -150,9 +202,8 @@ def zenrows_fetch_text(
             "wait": str(wait_ms),
             "custom_headers": "true" if headers else "false",
         },
-        headers=headers or {"User-Agent": "jobsearch/1.0"},
-        timeout=timeout or max(cfg.http_timeout_s, 120),
-    )
+        headers, None,
+        timeout=timeout or max(cfg.http_timeout_s, 120))
     if r.status_code >= 400:
         try:
             detail = r.json().get("title", "")

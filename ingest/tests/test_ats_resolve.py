@@ -248,3 +248,63 @@ def test_snapshot_dead_rows_not_exported(snapshot_file, tmp_path):
     d = AtsDirectory(tmp_path / "nope.db", snapshot_path=snapshot_file)
     assert d.resolve("Deadco") == []       # dead/pending never in the snapshot
     d.close()
+
+
+class TestS50PlatformPatterns:
+    """[S50/RB4] the directory's new platforms + the custom-domain
+    enterprise class — the shapes measured present in the corpus (866
+    iCIMS URLs unclassified, 61 jobvite, 270 adp, 63 workstream)."""
+
+    def test_icims_host_shape(self):
+        assert detect_platform(
+            "https://careers-miniso-us.icims.com/jobs/search") == \
+            ("icims", "careers-miniso-us")
+
+    def test_jobvite_path_shape(self):
+        assert detect_platform(
+            "https://jobs.jobvite.com/acme/jobs") == ("jobvite", "acme")
+
+    def test_paylocity_guid_shape(self):
+        assert detect_platform(
+            "https://recruiting.paylocity.com/Recruiting/Jobs/All/"
+            "73b6525a-3273-48b3-b9d8-d6479233c61c") == \
+            ("paylocity", "73b6525a-3273-48b3-b9d8-d6479233c61c")
+
+    def test_oracle_hcm_shape(self):
+        assert detect_platform(
+            "https://acme-fa.fa.emea.oraclecloud.com/hcmUI/"
+            "CandidateExperience") == ("oracle-hcm", "acme-fa")
+
+    def test_successfactors_company_param(self):
+        assert detect_platform(
+            "https://career.successfactors.com/careers?company=acme123"
+            "&career_ns=recruitment") == ("successfactors", "acme123")
+
+    def test_adp_and_paycom_and_workstream(self):
+        assert detect_platform(
+            "https://workforcenow.adp.com/careers") == ("adp", "workforcenow")
+        assert detect_platform(
+            "https://acme.paycom.com/Recruiting") == ("paycom", "acme")
+        assert detect_platform(
+            "https://acme.workstream.com/jobs") == ("workstream", "acme")
+
+    def test_non_ats_stays_none(self):
+        # the narrow-patterns law: aggregator shells never classify
+        assert detect_platform(
+            "https://www.adzuna.com/details/123") == (None, None)
+        assert detect_platform(
+            "https://www.indeed.com/viewjob?jk=abc") == (None, None)
+
+    def test_board_url_new_platforms(self):
+        # [RA7] the snapshot's board_url templates
+        assert board_url("icims", "careers-gbrx") == \
+            "https://careers-gbrx.icims.com/jobs"
+        assert board_url("paylocity", "guid-1") == \
+            "https://recruiting.paylocity.com/recruiting/jobs/All/guid-1"
+        # the triple-aware workday URL (the old template shipped
+        # 'https://nvidia|wd5|ext.wd1.myworkdayjobs.com' garbage)
+        assert board_url("workday", "nvidia|wd5|nvidiaexternalcareersite") == \
+            "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite"
+        # bare tenant keeps the legacy template
+        assert board_url("workday", "nvidia") == \
+            "https://nvidia.wd1.myworkdayjobs.com"

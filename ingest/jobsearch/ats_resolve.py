@@ -80,6 +80,30 @@ _PLATFORM_PATTERNS: list[tuple[str, re.Pattern]] = [
         r"^https?://([a-z0-9][a-z0-9-]*)\.recruitcrm\.io", re.I)),
     ("jazzhr", re.compile(
         r"^https?://([a-z0-9][a-z0-9-]*)\.applytojob\.com", re.I)),
+    # [S50 / RB4] the directory's new platforms + the custom-domain
+    # enterprise class, measured present in the corpus: iCIMS (866
+    # unclassified URLs), jobvite (61), adp (270), workstream (63),
+    # paycom, paylocity, oracle-hcm. Narrow patterns — a false platform
+    # tag poisons downstream ATS-sourcing decisions (the file's law).
+    ("icims", re.compile(
+        r"^https?://([a-z0-9][a-z0-9-]*)\.icims\.com/jobs", re.I)),
+    ("jobvite", re.compile(
+        r"^https?://jobs\.jobvite\.com/([a-z0-9][a-z0-9-]*)", re.I)),
+    ("adp", re.compile(
+        r"^https?://([a-z0-9][a-z0-9-]*)\.adp\.com/careers", re.I)),
+    ("workstream", re.compile(
+        r"^https?://([a-z0-9][a-z0-9-]*)\.workstream\.com/jobs", re.I)),
+    ("paycom", re.compile(
+        r"^https?://([a-z0-9][a-z0-9-]*)\.paycom\.com/(?:Recruiting|jobs)", re.I)),
+    ("paylocity", re.compile(
+        r"^https?://recruiting\.paylocity\.com/Recruiting/Jobs/All/"
+        r"([0-9a-fA-F-]{36})", re.I)),
+    ("oracle-hcm", re.compile(
+        r"^https?://([a-z0-9][a-z0-9-]*)\.fa\.[a-z0-9-]+\.oraclecloud\.com"
+        r"/hcmUI/CandidateExperience", re.I)),
+    ("successfactors", re.compile(
+        r"^https?://career\d*\.successfactors\.(?:com|eu)/careers"
+        r"[?/]?\S*company=([A-Za-z0-9][A-Za-z0-9_-]*)", re.I)),
 ]
 
 # Canonical public board URL per platform (the URL a human opens; the

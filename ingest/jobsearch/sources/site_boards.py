@@ -9766,22 +9766,19 @@ def _fetch_text_laddered(url: str, spec: str, cfg: "Config",
         except Exception:
             # [S46 fleet] every key gets a chance — a 401/402/429 on one
             # key falls through to the next (the fleet order is env-keys
-            # first, then the ingest/.env lines in file order)
+            # first, then the ingest/.env lines in file order).
+            # [S51] the calls ride the vendor RELAY when configured.
+            from jobsearch.vendor_relay import fc_api  # noqa: PLC0415
             for key in _firecrawl_keys():
                 try:
-                    req = urllib.request.Request(
-                        "https://api.firecrawl.dev/v2/scrape",
-                        data=json.dumps({
-                            "url": url, "formats": ["html"],
-                            "onlyMainContent": False,
-                            "waitFor": wait_ms}).encode(),
-                        headers={"Content-Type": "application/json",
-                                 "Authorization": f"Bearer {key}"},
-                        method="POST")
-                    with urllib.request.urlopen(req, timeout=90) as r:
-                        d = (json.loads(r.read().decode(
-                            "utf-8", "replace")) or {}).get("data") or {}
-                    text = str(d.get("html") or "")
+                    d, _st = fc_api("/v2/scrape", {
+                        "url": url, "formats": ["html"],
+                        "onlyMainContent": False,
+                        "waitFor": wait_ms}, key, timeout=90)
+                    text = ""
+                    if d is not None:
+                        text = str((d.get("data") or {}).get("html")
+                                   or "")
                 except Exception:
                     text = ""
                 if text:
@@ -12410,23 +12407,18 @@ class GoogleJobsAdapter:
                 f"cardless JS shell, measured S33)")
         url = _GJ_SEARCH_URL.format(
             query=urllib.parse.quote_plus(self.c["query"]))
-        req = urllib.request.Request(
-            "https://api.firecrawl.dev/v2/scrape",
-            data=json.dumps({
-                "url": url, "formats": ["markdown"],
-                "onlyMainContent": False,
-                "waitFor": int(self.c.get("wait_ms", 4000))}).encode(),
-            headers={"Content-Type": "application/json",
-                     "Authorization": f"Bearer {key}"},
-            method="POST")
-        try:
-            with urllib.request.urlopen(req, timeout=120) as r:
-                d = json.loads(r.read().decode("utf-8", "replace"))
-        except Exception as exc:
+        # [S51] vendor traffic rides the RELAY when configured (the
+        # pooled accounts must never share one direct IP)
+        from jobsearch.vendor_relay import fc_api  # noqa: PLC0415
+        d, st = fc_api("/v2/scrape", {
+            "url": url, "formats": ["markdown"],
+            "onlyMainContent": False,
+            "waitFor": int(self.c.get("wait_ms", 4000))}, key,
+            timeout=120)
+        if d is None:
             raise RuntimeError(
                 f"gjobs:{self.key}: firecrawl scrape failed "
-                f"({type(exc).__name__}: {exc}) — failing loudly, "
-                f"state untouched") from None
+                f"({st}) — failing loudly, state untouched")
         if not d.get("success"):
             raise RuntimeError(
                 f"gjobs:{self.key}: firecrawl success=false "

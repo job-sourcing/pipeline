@@ -157,6 +157,16 @@ class TestGlassdoor:
 
 
 class TestZenrowsFetchText:
+    @pytest.fixture(autouse=True)
+    def _no_relay_pool(self, monkeypatch):
+        """[S51] hermetic: neutralize the live ZENROWS_KEYS pool +
+        relay config (these pins test the DIRECT request shape; the
+        relay path has its own pins in test_s51_vendor_relay.py)."""
+        from jobsearch import vendor_relay as _vr
+        monkeypatch.setattr(_vr, "relay_configured", lambda: False)
+        monkeypatch.setattr(_vr, "zenrows_keys", lambda: [])
+        monkeypatch.setattr(_vr, "_envfile_vals", lambda: {})
+
     def test_request_shape(self, monkeypatch):
         seen: dict = {}
 
@@ -167,11 +177,15 @@ class TestZenrowsFetchText:
             def raise_for_status(self):
                 pass
 
-        def fake_get(url, *, params=None, headers=None, timeout=None):
-            seen.update(url=url, params=params, timeout=timeout)
+        # [S51] the seam moved: zenrows_fetch_text calls
+        # _zenrows_request → requests.request (method arg), not get
+        def fake_request(method, url, *, params=None, headers=None,
+                         json=None, timeout=None):
+            seen.update(method=method, url=url, params=params,
+                        timeout=timeout)
             return FakeR()
 
-        monkeypatch.setattr(transport.requests, "get", fake_get)
+        monkeypatch.setattr(transport.requests, "request", fake_request)
         cfg = Config()
         cfg.zenrows_api_key = "zr-key"
         cfg.http_timeout_s = 30

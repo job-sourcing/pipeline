@@ -23,6 +23,10 @@ name: JD Refetch
 #
 # S41-R1 F7: FILE-LEVEL checkpoint paths ONLY. This lane owns EXACTLY:
 # jd_cache.jsonl, jd_refetch_state.json, jd_refetch_report.md (pm),
+# jd_refetch_gen_state.json, jd_refetch_gen_report.md (gen — [S51]
+# the W2a-3 gap: the gen twins were runner-ephemeral since the family
+# joined the lane; the cache is shared+durable, the state/report were
+# not).
 # jd_refetch_dmm_state.json, jd_refetch_dmm_report.md (dmm — S42-R1
 # F2: the dmm attrition ledger must be checkpointed too, else it is
 # runner-ephemeral).
@@ -161,7 +165,10 @@ jobs:
         run: |
           set -e
           mkdir -p /tmp/jd_state/ingest/data/roles
-          FILES="ingest/data/roles/jd_cache.jsonl ingest/data/roles/jd_refetch_state.json ingest/data/roles/jd_refetch_report.md ingest/data/roles/jd_refetch_dmm_state.json ingest/data/roles/jd_refetch_dmm_report.md"
+          # [S51] the gen twins join the checkpoint set — the gen leg's
+          # attrition ledger was runner-ephemeral since W2a-3 (the cache
+          # is shared+durable; the state/report were lost every run)
+          FILES="ingest/data/roles/jd_cache.jsonl ingest/data/roles/jd_refetch_state.json ingest/data/roles/jd_refetch_report.md ingest/data/roles/jd_refetch_dmm_state.json ingest/data/roles/jd_refetch_dmm_report.md ingest/data/roles/jd_refetch_gen_state.json ingest/data/roles/jd_refetch_gen_report.md"
           for f in $FILES; do
             if [ -e "$f" ]; then cp "$f" "/tmp/jd_state/$f"; fi
           done
