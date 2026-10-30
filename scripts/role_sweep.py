@@ -2506,19 +2506,30 @@ def sweep(queries: list[str], skip_gj: bool = False,
                          "usaj", "muse", "yc", "wf", "hn", "him",
                          "tal", "gj", "ziprecruiter", "glassdoor")):
                     rid = ""          # row-hash ids are NOT rids (F1)
-                # [S49-B] gen seed-union semantics: (a) l0/board rows
-                # NEVER re-enter via the seed — they are re-projected
-                # fresh every run (the corpus is local; rid-stripped
-                # seed copies would double the merge input for zero
-                # information — and F8's real dates would otherwise
-                # make them seed-eligible); (b) the STARTUP rows re-
-                # enter WITH their family stamp (the pre-stamp bypass)
-                # — without it the geo-tier runs (t1a/t1b/t2/t4 don't
-                # fetch the startup sources) would attrit every non-
-                # office startup row at classify_gen. Both clauses are
-                # gen-only: pm keeps the pinned map bit-identical, dmm
+                # [S49-B → S50-A] seed-union semantics: (a) l0/board
+                # rows NEVER re-enter via the seed for ANY family —
+                # they are re-projected fresh every run (the corpus
+                # is local; rid-stripped seed copies would double the
+                # merge input for zero information). S49-B scoped the
+                # skip gen-only; the pm lane then lived one corpus
+                # churn away from a tail crash (PM run 16, 2026-10-29:
+                # the S49-C corpus→cache join made the 11 DATELESS
+                # board seed copies admissible for the first time;
+                # they enter at layer l0 where the classify loop
+                # never stamps family, and one donor-miss put a
+                # family-less row in merged → KeyError: 'family' at
+                # the histogram — 20 min of fetch work lost at the
+                # tail). All 68 fresh + 11 dateless pm board seeds
+                # measured WITH fresh corpus twins: the skip is a
+                # pure no-op for green runs, doctrine-aligned (l0
+                # attrition is by corpus verdict, not seed attrition)
+                # and kills the class at the source. (b) the STARTUP
+                # rows re-enter WITH their family stamp (the pre-stamp
+                # bypass) — without it the geo-tier runs (t1a/t1b/
+                # t2/t4 don't fetch the startup sources) would attrit
+                # every non-office startup row at classify_gen. dmm
                 # has no l0 rows and no pre-stamped startup rows.
-                if family == "gen" and src == "board":
+                if src == "board":
                     continue
                 all_rows.append({
                     "title": row.get("title") or "",
@@ -3058,11 +3069,17 @@ def sweep(queries: list[str], skip_gj: bool = False,
         "day_delta_histogram": day_delta_hist,
         "dedup_merges": counters["dedup_merge"],
     })
+    # [S50-A] the .get hardening: the histogram is post-merge METADATA
+    # — a missing stamp must surface as an honest "?" bucket, never a
+    # KeyError that kills the run AFTER the fetch work is done (the
+    # PM-16 crash shape; defense-in-depth behind the seed-union fix).
     fam_hist: dict[str, int] = {}
     sen_hist: dict[str, int] = {}
     for r in merged:
-        fam_hist[r["family"]] = fam_hist.get(r["family"], 0) + 1
-        sen_hist[r["seniority"]] = sen_hist.get(r["seniority"], 0) + 1
+        _f = r.get("family") or "?"
+        _s = r.get("seniority") or "?"
+        fam_hist[_f] = fam_hist.get(_f, 0) + 1
+        sen_hist[_s] = sen_hist.get(_s, 0) + 1
     env["family_histogram"] = fam_hist
     env["seniority_histogram"] = sen_hist
     _write_atomic(ROLES_DIR / f"{prefix}_envelope.json",
@@ -3218,8 +3235,11 @@ def sweep(queries: list[str], skip_gj: bool = False,
         "companyKey": r["company_key"], "loc": r.get("loc", ""),
         "geoTier": r.get("geoTier", ""),
         "url": r.get("url", ""), "postedOn": r.get("posted", ""),
-        "family": r["family"], "familyEvidence": r.get("family_evidence"),
-        "seniority": r["seniority"], "usStatus": r.get("us_status"),
+        # [S50-A] .get hardening — same doctrine as the histogram: a
+        # missing stamp ships as null (the UI renders uncategorized),
+        # never a tail crash. Green runs are byte-identical.
+        "family": r.get("family"), "familyEvidence": r.get("family_evidence"),
+        "seniority": r.get("seniority"), "usStatus": r.get("us_status"),
         "sectorEvidence": r.get("sector_evidence", ""),
         "sectorReason": r.get("sector_reason", ""),
         "staffingEvidence": r.get("staffing_evidence", ""),

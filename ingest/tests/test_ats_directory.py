@@ -211,3 +211,267 @@ class TestDaemonRaceGuard:
         monkeypatch.setitem(batd.PROBES, "lever", lambda slug: ("live", 1, ""))
         batd.run_batch(db, None, batch=5, sleep_s=0)
         assert _row(db, "lever", "x") == ("live", 1)
+
+
+# ── S50-T2: the four new probes + the refresh mode ─────────────────────
+class _FakeResp:
+    def __init__(self, status_code=200, text="", json_data=None,
+                 exc=None):
+        self.status_code = status_code
+        self.text = text
+        self._json = json_data
+        self._exc = exc
+
+    def json(self):
+        if self._exc:
+            raise self._exc
+        return self._json
+
+
+def _patch_requests(monkeypatch, resp_by_call):
+    """Feed probe_x's requests.get/post a scripted response sequence."""
+    import types
+    calls = []
+
+    class _FakeReq:
+        RequestException = batd.requests.RequestException
+
+        def get(self, url, **k):
+            calls.append(("get", url, k))
+            r = resp_by_call[len(calls) - 1] if len(calls) <= \
+                len(resp_by_call) else resp_by_call[-1]
+            if isinstance(r, Exception):
+                raise r
+            return r
+
+        def post(self, url, **k):
+            calls.append(("post", url, k))
+            r = resp_by_call[len(calls) - 1] if len(calls) <= \
+                len(resp_by_call) else resp_by_call[-1]
+            if isinstance(r, Exception):
+                raise r
+            return r
+
+    fake = _FakeReq()
+    monkeypatch.setattr(batd, "requests", fake)
+    return calls
+
+
+class TestNewProbes:
+    """[S50-T2] each probe's live/dead/error contract, pinned to the
+    live-measured shapes (DESIGN-S50 §0, measured 2026-10-30)."""
+
+    def test_workday_live_and_company_is_tenant(self, monkeypatch):
+        _patch_requests(monkeypatch, [_FakeResp(
+            json_data={"total": 1135})])
+        assert batd.probe_workday("santander|wd3|santandercareers") == \
+            ("live", 1135, "santander")
+
+    def test_workday_404_and_422_are_dead(self, monkeypatch):
+        _patch_requests(monkeypatch, [_FakeResp(status_code=422)])
+        assert batd.probe_workday("zz|wd1|zz")[0] == "dead"
+        _patch_requests(monkeypatch, [_FakeResp(status_code=404)])
+        assert batd.probe_workday("zz|wd1|zz")[0] == "dead"
+
+    def test_workday_connection_error_is_error_never_dead(self,
+                                                          monkeypatch):
+        # [RA5] a DNS blip must not freeze a live board terminal-dead
+        _patch_requests(monkeypatch, [
+            batd.requests.RequestException("dns blip")])
+        assert batd.probe_workday("nvidia|wd5|ext")[0] == "error"
+
+    def test_bamboohr_live_counts_positions(self, monkeypatch):
+        _patch_requests(monkeypatch, [_FakeResp(json_data={
+            "departments": [
+                {"positions": [{"id": 1}, {"id": 2}]},
+                {"positions": [{"id": 3}]},
+                {"no": "positions key"},
+            ]})])
+        assert batd.probe_bamboohr("100percentgroup") == \
+            ("live", 3, "")
+
+    def test_bamboohr_blankstate_is_live_zero(self, monkeypatch):
+        # the live-with-0-jobs semantics (risk #1): never dead
+        _patch_requests(monkeypatch, [_FakeResp(json_data={
+            "departments": []})])
+        assert batd.probe_bamboohr("somelive") == ("live", 0, "")
+
+    def test_bamboohr_200_empty_is_dead(self, monkeypatch):
+        # the wildcard-DNS unknown-tenant answer (live-measured)
+        _patch_requests(monkeypatch, [_FakeResp(
+            json_data=None,
+            exc=ValueError("no body") if None else None)])
+        # ValueError from r.json() = the 200-empty shape
+        _patch_requests(monkeypatch, [_FakeResp(
+            text="", json_data=None)])
+        class _JErr(_FakeResp):
+            def json(self):
+                raise ValueError("Expecting value")
+        _patch_requests(monkeypatch, [_JErr()])
+        assert batd.probe_bamboohr("zznosuchtenant") == ("dead", 0, "")
+
+    def test_icims_live_with_markers_and_pager(self, monkeypatch):
+        html = ('<li class="iCIMS_JobCardItem">x</li>' * 33
+                + "<span>Page 1 of 3</span>")
+        _patch_requests(monkeypatch, [_FakeResp(text=html)])
+        st, count, company = batd.probe_icims("careers-gbrx")
+        assert st == "live"
+        assert count == 33 + 2 * 50          # the cap-bounded estimate
+        assert company == "gbrx"              # careers- prefix stripped
+
+    def test_icims_200_without_markers_is_error(self, monkeypatch):
+        # the parking-page guard (a redirect to a marketing page)
+        _patch_requests(monkeypatch, [_FakeResp(
+            text="<html><body>we moved!</body></html>")])
+        assert batd.probe_icims("zz") == ("error", 0, "")
+
+    def test_icims_dead_on_404(self, monkeypatch):
+        _patch_requests(monkeypatch, [_FakeResp(status_code=404)])
+        assert batd.probe_icims("zz")[0] == "dead"
+
+    def test_paylocity_live_via_pagedata(self, monkeypatch):
+        html = ('<script>window.pageData = {"ModuleTitle": "x", '
+                '"Jobs": [{"JobId": 1}, {"JobId": 2}]}</script>')
+        _patch_requests(monkeypatch, [_FakeResp(text=html)])
+        assert batd.probe_paylocity("some-guid") == ("live", 2, "")
+
+    def test_paylocity_200_without_pagedata_is_error(self, monkeypatch):
+        # [RA9] the adapter's refuse-case — never live, never dead
+        _patch_requests(monkeypatch, [_FakeResp(
+            text="<html><body>careers portal moved</body></html>")])
+        assert batd.probe_paylocity("wrong-guid") == ("error", 0, "")
+
+    def test_paylocity_pagedata_without_jobs_is_error(self, monkeypatch):
+        html = '<script>window.pageData = {"ModuleTitle": "x"}</script>'
+        _patch_requests(monkeypatch, [_FakeResp(text=html)])
+        assert batd.probe_paylocity("g") == ("error", 0, "")
+
+    def test_paylocity_dead_on_404(self, monkeypatch):
+        _patch_requests(monkeypatch, [_FakeResp(status_code=404)])
+        assert batd.probe_paylocity("g")[0] == "dead"
+
+    def test_pagedata_extractor_handles_nested_braces(self):
+        html = ('window.pageData = {"a": {"b": "}"}, '
+                '"Jobs": [1, 2, 3]}')
+        assert batd._page_data_jobs(html) == 3
+
+
+class TestRefreshMode:
+    """[S50-T2/RA3] the claim order + the attempts reset + the
+    resurrection + the company-preserving UPDATE."""
+
+    def _stamp(self, conn, days_ago=None):
+        import datetime as _dt
+        if days_ago is None:
+            return None
+        return (_dt.datetime.now()
+                - _dt.timedelta(days=days_ago)).strftime(
+                    "%Y-%m-%dT%H:%M:%S")
+
+    def test_pending_outranks_refresh(self, db, monkeypatch):
+        db.execute("INSERT INTO directory (ats, slug) "
+                   "VALUES ('lever', 'fresh_pending')")
+        db.execute(
+            "INSERT INTO directory (ats, slug, status, last_probed_at) "
+            "VALUES ('greenhouse', 'stale_live', 'live', ?)",
+            (self._stamp(db, 50),))
+        db.commit()
+        got: list = []
+        monkeypatch.setattr(batd, "PROBES", {
+            "lever": lambda s: (got.append(s), ("live", 1, ""))[1],
+            "greenhouse": lambda s: (
+                got.append(s), ("live", 1, ""))[1]})
+        batd.run_batch(db, None, 10, 0, refresh_days=30,
+                       dead_refresh_days=95)
+        assert got == ["fresh_pending"]      # pending first, batch=10
+
+    def test_stale_live_claimed_when_no_pending(self, db, monkeypatch):
+        db.execute(
+            "INSERT INTO directory (ats, slug, status, last_probed_at) "
+            "VALUES ('greenhouse', 'stale_live', 'live', ?)",
+            (self._stamp(db, 50),))
+        db.execute(
+            "INSERT INTO directory (ats, slug, status, last_probed_at) "
+            "VALUES ('greenhouse', 'fresh_live', 'live', ?)",
+            (self._stamp(db, 1),))
+        db.commit()
+        got: list = []
+        monkeypatch.setattr(batd, "PROBES", {"greenhouse": lambda s: (
+            got.append(s), ("live", 5, ""))[1]})
+        batd.run_batch(db, None, 10, 0, refresh_days=30,
+                       dead_refresh_days=95)
+        assert got == ["stale_live"]          # only the stale row claims
+
+    def test_dead_resurrection_flips_live(self, db, monkeypatch):
+        db.execute(
+            "INSERT INTO directory (ats, slug, status, last_probed_at, "
+            "attempts) VALUES ('lever', 'backfromdead', 'dead', ?, 3)",
+            (self._stamp(db, 100),))
+        db.commit()
+        monkeypatch.setattr(batd, "PROBES", {"lever": lambda s: ("live", 7, "")})
+        batd.run_batch(db, None, 10, 0, refresh_days=30,
+                       dead_refresh_days=95)
+        row = db.execute(
+            "SELECT status, job_count, attempts FROM directory "
+            "WHERE slug='backfromdead'").fetchone()
+        assert row[0] == "live" and row[1] == 7
+        assert row[2] == 1                    # reset at claim, +1 probe
+
+    def test_error_rollover_reclaims_capped_errors(self, db,
+                                                   monkeypatch):
+        # [RA6] the iCIMS parking-page class: attempts=2 error rows
+        # aged past the window re-enter via the rollover
+        db.execute(
+            "INSERT INTO directory (ats, slug, status, last_probed_at, "
+            "attempts) VALUES ('icims', 'parked', 'error', ?, 2)",
+            (self._stamp(db, 100),))
+        db.commit()
+        got: list = []
+        monkeypatch.setattr(batd, "PROBES", {"icims": lambda s: (
+            got.append(s), ("dead", 0, ""))[1]})
+        batd.run_batch(db, None, 10, 0, refresh_days=30,
+                       dead_refresh_days=95)
+        assert got == ["parked"]
+
+    def test_company_never_clobbered_by_empty_probe(self, db,
+                                                     monkeypatch):
+        # [RA4] the probe returns '' — the learned name survives
+        db.execute(
+            "INSERT INTO directory (ats, slug, company, status, "
+            "last_probed_at) VALUES ('paylocity', 'guid1', "
+            "'Mesa County Public Library District', 'live', ?)",
+            (self._stamp(db, 50),))
+        db.commit()
+        monkeypatch.setattr(batd, "PROBES", {"paylocity": lambda s: ("live", 4, "")})
+        batd.run_batch(db, None, 10, 0, refresh_days=30,
+                       dead_refresh_days=95)
+        row = db.execute(
+            "SELECT company FROM directory WHERE slug='guid1'").fetchone()
+        assert row[0] == "Mesa County Public Library District"
+
+    def test_company_updated_when_probe_returns_a_name(self, db,
+                                                       monkeypatch):
+        db.execute(
+            "INSERT INTO directory (ats, slug, company, status, "
+            "last_probed_at) VALUES ('greenhouse', 'gh1', '', "
+            "'live', ?)", (self._stamp(db, 50),))
+        db.commit()
+        monkeypatch.setattr(batd, "PROBES", {"greenhouse": lambda s: ("live", 4, "Acme Inc")})
+        batd.run_batch(db, None, 10, 0, refresh_days=30,
+                       dead_refresh_days=95)
+        row = db.execute(
+            "SELECT company FROM directory WHERE slug='gh1'").fetchone()
+        assert row[0] == "Acme Inc"
+
+    def test_seeded_ats_subset_of_probes_pin(self):
+        # [RA16] a deploy skew would mass-kill a platform's rows
+        for ats, fname, _ in [
+                ("ashby", "ashby_companies.json", None),
+                ("greenhouse", "greenhouse_companies.json", None),
+                ("lever", "lever_companies.json", None),
+                ("bamboohr", "bamboohr_companies.json", None),
+                ("icims", "icims_companies.json", None),
+                ("paylocity", "paylocity_companies_clean.json", "name"),
+                ("workday", "workday_companies.json", None)]:
+            assert ats in batd.PROBES, \
+                f"{ats} is seeded but has no probe (mass-kill risk)"

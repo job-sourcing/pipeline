@@ -107,6 +107,10 @@ tests/test_s41_jd_refetch.py
 tests/test_s42_industry.py
 tests/test_s47_b4_catchall.py
 tests/test_s47_craigslist.py
+tests/test_s48_smb_signal.py
+tests/test_s49_adzuna_fleet.py
+tests/test_s49_fleet_tier.py
+tests/test_s49_jd_fill.py
 tests/test_s9_titlesearch.py
 tests/test_scoring.py
 tests/test_site_boards.py

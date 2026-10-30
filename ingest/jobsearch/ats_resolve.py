@@ -97,8 +97,30 @@ _BOARD_URL: dict[str, str] = {
     "bamboohr": "https://{slug}.bamboohr.com/careers",
     "recruitcrm": "https://{slug}.recruitcrm.io",
     "jazzhr": "https://{slug}.applytojob.com",
-    "workday": "https://{slug}.wd1.myworkdayjobs.com",  # tenant only; instance unknown
+    # [S50-T2/RA7] the directory's new platforms — the seed slugs are
+    # FULL host shapes (icims: the {slug}.icims.com host incl. the
+    # 'careers-' prefix; paylocity: the raw GUID keys the entity-scoped
+    # All path). Workday is TRIPLE-AWARE: the directory row's slug is
+    # 'tenant|instance|site' — the old tenant-only template produced
+    # literal garbage URLs in the committed snapshot.
+    "icims": "https://{slug}.icims.com/jobs",
+    "paylocity": "https://recruiting.paylocity.com/recruiting/jobs/All/{slug}",
+    "workday": "https://{slug}.wd1.myworkdayjobs.com",  # legacy tenant-only
 }
+
+
+def board_url(platform: str, slug: str) -> Optional[str]:
+    """The canonical public board URL, or None when the platform is
+    unknown (the pinned pre-S50 contract). [S50-T2/RA7] workday is
+    triple-aware: a 'tenant|instance|site' slug (the directory row's
+    format) builds the real CXS UI URL; a bare tenant keeps the legacy
+    template — the old template produced literal garbage URLs like
+    'https://nvidia|wd5|ext.wd1.myworkdayjobs.com' in the snapshot."""
+    if platform == "workday" and slug.count("|") >= 2:
+        tenant, inst, site = slug.split("|", 2)
+        return f"https://{tenant}.{inst}.myworkdayjobs.com/{site}"
+    template = _BOARD_URL.get(platform)
+    return template.format(slug=slug) if template else None
 
 
 def detect_platform(link: Optional[str]) -> tuple[Optional[str], Optional[str]]:
@@ -116,11 +138,6 @@ def detect_platform(link: Optional[str]) -> tuple[Optional[str], Optional[str]]:
         if m:
             return (platform, m.group(1).lower())
     return (None, None)
-
-
-def board_url(platform: str, slug: str) -> Optional[str]:
-    template = _BOARD_URL.get(platform)
-    return template.format(slug=slug) if template else None
 
 
 # ── Company name → slug candidates ───────────────────────────────────────────

@@ -92,14 +92,23 @@ def _connect() -> sqlite3.Connection:
 # ── seed loading ─────────────────────────────────────────────────────────────
 
 def seed(conn: sqlite3.Connection) -> None:
-    """Load slug seeds into pending rows (idempotent)."""
+    """Load slug seeds into pending rows (idempotent).
+    [S50-T2] the 7-list import (DESIGN-S50 §2-T2.6): the 3 originals +
+    bamboohr + icims + paylocity (dict shape: guid keys, company names
+    from the seed's `name` — RA4's CASE keeps them through probes) +
+    the workday triples. Provenance ledger: ats_seed/README-S50.md."""
+    # (ats, filename, company-from) — company extractor per list shape
     seeds = [
-        ("ashby", "ashby_companies.json"),
-        ("greenhouse", "greenhouse_companies.json"),
-        ("lever", "lever_companies.json"),
+        ("ashby", "ashby_companies.json", None),
+        ("greenhouse", "greenhouse_companies.json", None),
+        ("lever", "lever_companies.json", None),
+        ("bamboohr", "bamboohr_companies.json", None),
+        ("icims", "icims_companies.json", None),
+        ("paylocity", "paylocity_companies_clean.json", "name"),
+        ("workday", "workday_companies.json", None),
     ]
     total = 0
-    for ats, fname in seeds:
+    for ats, fname, company_key in seeds:
         path = SEED_DIR / fname
         if not path.exists():
             print(f"[seed] missing {path} — download from "
@@ -115,27 +124,46 @@ def seed(conn: sqlite3.Connection) -> None:
         if not isinstance(raw, list):
             print(f"[seed] {ats}: unexpected JSON shape in {path}")
             continue
-        # keep string entries only (external datasets can drift shape)
-        skipped = sum(1 for s in raw if not isinstance(s, str))
-        slugs = [s.strip() for s in raw
-                 if isinstance(s, str) and s.strip()]
+        rows: list[tuple[str, str]] = []
+        skipped = 0
+        for ent in raw:
+            # [RA17] the paylocity class: a list of DICTS (guid/name/jobs)
+            # — the old string filter would silently seed ZERO rows (the
+            # silent-no-op zombie class; a crash would have been caught).
+            if isinstance(ent, dict):
+                guid = ent.get("guid")
+                if not isinstance(guid, str) or not guid.strip():
+                    skipped += 1
+                    continue
+                slug = guid.strip()
+                company = (ent.get(company_key) or "").strip() \
+                    if company_key else ""
+            elif isinstance(ent, str) and ent.strip():
+                slug = ent.strip()
+                company = ""
+            else:
+                skipped += 1
+                continue
+            rows.append((slug, company))
         if skipped:
-            print(f"[seed] {ats}: skipped {skipped} non-string entries")
+            print(f"[seed] {ats}: skipped {skipped} unusable entries")
         # de-dupe + skip already-present rows
         existing = {r[0] for r in conn.execute(
             "SELECT slug FROM directory WHERE ats = ?", (ats,))}
-        fresh = [(ats, s) for s in dict.fromkeys(slugs)
+        fresh = [(ats, s, c) for s, c in dict.fromkeys(rows)
                  if s and s not in existing]
         if fresh:
             conn.executemany(
-                "INSERT OR IGNORE INTO directory (ats, slug) VALUES (?, ?)",
+                "INSERT OR IGNORE INTO directory (ats, slug, company) "
+                "VALUES (?, ?, ?)",
                 fresh)
             conn.commit()          # per-ATS commit; never leave an open
                                     # snapshot while the daemon holds writes
         total += len(fresh)
         print(f"[seed] {ats}: +{len(fresh)} new slugs "
               f"({len(existing)} already present)")
-    # curated SmartRecruiters slugs (verified in this repo's config)
+    # curated SmartRecruiters slugs (verified in this repo's config; no
+    # upstream list exists — RB7 measured SR has no cross-tenant search)
     conn.executemany(
         "INSERT OR IGNORE INTO directory (ats, slug) VALUES (?, ?)",
         [("smartrecruiters", s) for s in (
@@ -227,11 +255,205 @@ def probe_smartrecruiters(slug: str) -> tuple[str, int, str]:
     return ("live", data.get("totalFound") or 0, slug)
 
 
+# [S50-T2] ── the four NEW probes (all live-verified 2026-10-30 per
+# DESIGN-S50 §0; every contract mirrors its production adapter) ───────
+
+def probe_workday(triple: str) -> tuple[str, int, str]:
+    """slug = 'tenant|instance|site' (the seed's format; the adapter's
+    parse_board contract). CXS POST limit=1 → page-0 `total` (the
+    established trust anchor — the total=0-after-page-1 quirk never
+    applies at offset 0). [RB6] total is CAPPED at exactly 2,000 — the
+    count is an honest FLOOR. [RA5] 404 → dead; connection/timeout/
+    non-200 → error (a DNS blip must never freeze a live board
+    terminal-dead for 95 days). Company = tenant (the resolve() seam
+    joins canonical names later)."""
+    try:
+        tenant, inst, site = (triple.split("|") + [""] * 3)[:3]
+        if not tenant or not inst or not site:
+            return ("dead", 0, "")
+        r = requests.post(
+            f"https://{tenant}.{inst}.myworkdayjobs.com/wday/cxs/"
+            f"{tenant}/{site}/jobs",
+            json={"appliedFacets": {}, "limit": 1, "offset": 0,
+                  "searchText": ""},
+            headers={"Content-Type": "application/json", **UA},
+            timeout=_TIMEOUT)
+    except requests.RequestException:
+        return ("error", 0, "")
+    # [RB6 live-measured] the wildcard-DNS host answers UNKNOWN tenants
+    # with 422 {"errorCode":"HTTP_422",...} — a DEFINITIVE no-such-board
+    # answer, not a transient error (a DNS blip never reaches here).
+    # 404 (the classic dead) and 422 both → dead; anything else → error.
+    if r.status_code in (404, 422):
+        return ("dead", 0, "")
+    if r.status_code != 200:
+        return ("error", 0, "")
+    try:
+        total = int(r.json().get("total") or 0)
+    except ValueError:
+        return ("error", 0, "")
+    return ("live", total, tenant)
+
+def probe_bamboohr(slug: str) -> tuple[str, int, str]:
+    """embed2.php widget feed (BambooHRAdapter._feed's endpoint). The
+    blankState JSON (departments []) is a LIVE tenant with 0 open
+    roles — live:0, never dead (DESIGN-S50 risk #1; the deliberate
+    divergence from the adapter's refuse-on-empty is documented for
+    the S51 harvest). [RA19] company = '' (the feed carries no name)."""
+    try:
+        r = requests.get(
+            f"https://{quote(slug)}.bamboohr.com/jobs/embed2.php",
+            params={"version": "1.0.0", "format": "json"},
+            headers=UA, timeout=_TIMEOUT)
+    except requests.RequestException:
+        return ("error", 0, "")
+    # [RB6 live-measured] the wildcard-DNS host answers unknown tenants
+    # with 200 + an EMPTY body (the feed endpoint only exists for real
+    # tenants; a real 0-job tenant serves the blankState JSON with
+    # "departments":[] — live:0, never dead). So: 200 + parseable JSON
+    # carrying the departments key = live; 200 + empty/unparseable =
+    # dead; 404 = dead; anything else = error.
+    if r.status_code == 404:
+        return ("dead", 0, "")
+    if r.status_code != 200:
+        return ("error", 0, "")
+    try:
+        data = r.json()
+    except ValueError:
+        return ("dead", 0, "")    # 200-empty = the no-tenant answer
+    if not isinstance(data, dict) or "departments" not in data:
+        return ("error", 0, "")     # 200-but-not-a-feed = parking page
+    count = sum(len(d.get("positions") or [])
+                for d in data.get("departments") or []
+                if isinstance(d, dict))
+    return ("live", count, "")
+
+
+def probe_icims(slug: str) -> tuple[str, int, str]:
+    """{slug}.icims.com/jobs/search — slug INCLUDES the 'careers-'
+    prefix where present (the seed's convention; adapter org = full
+    host). Redirect-follow ON (the 301/302 class is common); the
+    marker gate (iCIMS_JobCardItem / the pager) is the live proof
+    (RA: never misclassify a redirect-to-marketing parking page).
+    [RA13] count is a CAP-BOUNDED ESTIMATE: cards + (N-1)*50 when the
+    'Page 1 of N' pager is present, else the card count. [RA19]
+    company = slug minus the careers- prefix."""
+    import re
+    try:
+        # [RB6 live-measured] the BARE /jobs/search redirects to a portal
+        # home with NO job markers — the SSR job table only renders with
+        # the adapter's pinned query form (ICIMSAdapter._page's shape)
+        r = requests.get(
+            f"https://{quote(slug)}.icims.com/jobs/search"
+            f"?pr=0&in_iframe=1&searchRelation=keyword_all",
+            allow_redirects=True, headers=UA, timeout=_TIMEOUT)
+    except requests.RequestException:
+        return ("error", 0, "")
+    if r.status_code == 404:
+        return ("dead", 0, "")
+    if r.status_code != 200:
+        return ("error", 0, "")
+    text = r.text or ""
+    cards = text.count("iCIMS_JobCardItem")
+    if cards == 0:
+        # the adapter's other live shape: SSR job links without the
+        # card wrapper — /jobs/{id}/ hrefs
+        if not re.search(r"/jobs/\d+/", text):
+            return ("error", 0, "")  # 200-without-markers = parking page
+        cards = 1
+    total = cards
+    m = re.search(r"Page\s*1\s*of\s*(\d+)", text)
+    if m:
+        n = int(m.group(1))
+        if n > 1:
+            total = cards + (n - 1) * 50   # cap-bounded estimate [RA13]
+    company = slug[8:] if slug.startswith("careers-") else slug
+    return ("live", total, company)
+
+
+def _page_data_jobs(html: str) -> int | None:
+    """[RA9] the brace-matched window.pageData extractor (the adapter's
+    tolerant fallback shape, site_boards.py _extract_page_data) — these
+    literals are not always clean JSON, and braces INSIDE quoted strings
+    (HTML fragments in teaser descriptions) must not close the match.
+    Returns None when no pageData / no Jobs key (the adapter's two
+    refuse-cases)."""
+    marker = "window.pageData = "
+    i = html.find(marker)
+    if i < 0:
+        return None
+    s = html.find("{", i)
+    if s < 0:
+        return None
+    depth = 0
+    in_str = False
+    esc = False
+    quote = ""
+    end = -1
+    for j in range(s, len(html)):
+        c = html[j]
+        if in_str:
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == quote:
+                in_str = False
+            continue
+        if c in "\"'":
+            in_str = True
+            quote = c
+        elif c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                end = j + 1
+                break
+    if end < 0:
+        return None
+    blob = html[s:end]
+    try:
+        d = json.loads(blob)
+    except ValueError:
+        return None
+    jobs = d.get("Jobs")
+    return len(jobs) if isinstance(jobs, list) else None
+
+
+def probe_paylocity(guid: str) -> tuple[str, int, str]:
+    """recruiting.paylocity.com/recruiting/jobs/All/{guid} (the adapter's
+    _BASE + the entity-scoped All path). [RA9] the two refuse-cases
+    (200-without-pageData / pageData-without-Jobs) map to error — a
+    wrong GUID or a parking page is neither live nor dead. Company
+    stays '' (the probe cannot know the name; the SEED carries it and
+    RA4's CASE-update preserves it across probes)."""
+    try:
+        r = requests.get(
+            f"https://recruiting.paylocity.com/recruiting/jobs/All/"
+            f"{quote(guid)}",
+            allow_redirects=True, headers=UA, timeout=_TIMEOUT)
+    except requests.RequestException:
+        return ("error", 0, "")
+    if r.status_code == 404:
+        return ("dead", 0, "")
+    if r.status_code != 200:
+        return ("error", 0, "")
+    n = _page_data_jobs(r.text or "")
+    if n is None:
+        return ("error", 0, "")
+    return ("live", n, "")
+
+
 PROBES = {
     "greenhouse": probe_greenhouse,
     "lever": probe_lever,
     "ashby": probe_ashby,
     "smartrecruiters": probe_smartrecruiters,
+    "workday": probe_workday,
+    "bamboohr": probe_bamboohr,
+    "icims": probe_icims,
+    "paylocity": probe_paylocity,
 }
 
 
@@ -250,14 +472,42 @@ def _daemon_is_draining() -> bool:
     return age < _HEARTBEAT_FRESH_S
 
 
-def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
-              sleep_s: float, retry_errors: bool = False) -> None:
-    """Probe up to `batch` pending slugs (optionally one ATS only).
+def _iso_now_minus_days(days: float) -> str:
+    import datetime as _dt
+    t = _dt.datetime.now() - _dt.timedelta(days=days)
+    return t.strftime("%Y-%m-%dT%H:%M:%S")
 
-    Transient 'error' rows (timeouts, 429s, connection resets) are NOT
-    re-queued by default — pass retry_errors=True to re-claim error rows
-    aged ≥1h (only after pending rows drain), capped at _MAX_ATTEMPTS
-    probes per slug so permanently failing endpoints don't retry forever.
+
+def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
+              sleep_s: float, retry_errors: bool = False,
+              refresh_days: int = 0, dead_refresh_days: int = 0) -> None:
+    """Probe up to `batch` rows (optionally one ATS only).
+
+    [S50-T2] THE REFRESH MODE (DESIGN-S50 §2-T2.1): with refresh_days/
+    dead_refresh_days armed, the claim order is (a) true pending, then
+    (b) refresh-eligible live (staleness-FIRST — the campaign front is
+    honest), then (c) refresh-eligible dead (the resurrection check),
+    then (d) the aged error sweep + (e) the attempts-capped error
+    ROLLOVER (aged past dead_refresh_days — the iCIMS parking-page
+    class must not accrete terminal; disjoint from (d) by the ≥2
+    attempts bound, mirroring gha_drain.needs_work_parts EXACTLY —
+    the golden cross-file pin).
+
+    Claim semantics (RA-B reviewed): status is NEVER flipped — a
+    refresh-eligible row is claimed by a pure SELECT and its attempts
+    RESET to 0 at claim time (per-cycle budget — the cap never marches
+    across cycles); a mid-batch crash loses ≤ batch rows to re-claim
+    (crash-resumable: eligibility is a pure function of status + age,
+    and only completed probes mutate them). A dead board that probed
+    live flips to live (the resurrection class); a re-probed live board
+    updates job_count + last_probed_at. [RA4] company is written via
+    CASE — an empty probe-returned company NEVER clobbers a learned
+    name (paylocity seed names + the greenhouse name-backfill lane).
+
+    Transient 'error' rows are NOT re-queued by default — pass
+    retry_errors=True to re-claim error rows aged ≥1h (only after
+    pending rows drain), capped at _MAX_ATTEMPTS probes per slug so
+    permanently failing endpoints don't retry forever.
     Refuses to run while the prober daemon is draining (fresh heartbeat)
     unless invoked by the daemon itself.
     """
@@ -267,19 +517,58 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
               "or wait — a racing batch would double-probe rows.")
         return
     install_dns_cache()
+    live_cutoff = _iso_now_minus_days(refresh_days) if refresh_days else ""
+    dead_cutoff = _iso_now_minus_days(dead_refresh_days) \
+        if dead_refresh_days else ""
+    rows: list = []
+    claimed_refresh: list[tuple[str, str]] = []
+
+    def _claim(sql: str, args: list, limit: int) -> list:
+        return conn.execute(sql + " LIMIT ?", [*args, limit]).fetchall()
+
+    # (a) true pending — RANDOM keeps resumable batches spread across
+    # ATSes (the per-host politeness spread)
     query = ("SELECT ats, slug FROM directory WHERE status = 'pending' "
              "AND attempts < ?")
     args: list = [_MAX_ATTEMPTS]
     if ats:
         query += " AND ats = ?"
         args.append(ats)
-    query += " ORDER BY RANDOM() LIMIT ?"      # random → resumable batches
-    args.append(batch)                          # spread across ATSes
+    query += " ORDER BY RANDOM() LIMIT ?"
+    args.append(batch)
     rows = conn.execute(query, args).fetchall()
+
+    # (b)/(c)/(e) the refresh classes (S50-T2) — staleness-first, the
+    # honest campaign front; NOT attempts-gated (the claim-time reset
+    # handles the cap — RA3)
+    if not rows and refresh_days and dead_refresh_days:
+        for cls, sql, cargs in (
+            ("refresh:live",
+             "SELECT ats, slug FROM directory WHERE status = 'live'"
+             " AND (last_probed_at IS NULL OR last_probed_at < ?)",
+             [live_cutoff]),
+            ("refresh:dead",
+             "SELECT ats, slug FROM directory WHERE status = 'dead'"
+             " AND (last_probed_at IS NULL OR last_probed_at < ?)",
+             [dead_cutoff]),
+            ("refresh:error-rollover",
+             "SELECT ats, slug FROM directory WHERE status = 'error'"
+             " AND attempts >= 2"
+             " AND (last_probed_at IS NULL OR last_probed_at < ?)",
+             [dead_cutoff]),
+        ):
+            if ats:
+                sql += " AND ats = ?"
+                cargs = [*cargs, ats]
+            sql += " ORDER BY last_probed_at ASC LIMIT ?"
+            got = conn.execute(sql, [*cargs, batch]).fetchall()
+            if got:
+                print(f"[batch] claiming {len(got)} rows ({cls})")
+                rows = got
+                claimed_refresh = [(r[0], r[1]) for r in got]
+                break            # one class per batch — the claim order holds
+    # (d) the aged error sweep (retry_errors only, as today)
     if not rows and retry_errors:
-        # nothing pending — sweep up transient errors aged ≥1h that still
-        # have attempts left (CodeRabbit: honor the --batch limit here too;
-        # --batch 1 must not claim 10 error rows).
         rq = ("SELECT ats, slug FROM directory WHERE status = 'error' "
               "AND attempts < ? "
               "AND (last_probed_at IS NULL OR last_probed_at < ?)")
@@ -296,6 +585,15 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
         print("[batch] nothing pending")
         return
 
+    # [S50-T2] the claim-time attempts reset — per-cycle budget; committed
+    # with the first probe checkpoint so a crash between reset and probe
+    # leaves harmless attempts=0 on still-eligible rows
+    if claimed_refresh:
+        conn.executemany(
+            "UPDATE directory SET attempts = 0 "
+            "WHERE ats = ? AND slug = ?", claimed_refresh)
+        conn.commit()
+
     print(f"[batch] probing {len(rows)} slugs "
           f"({'all' if not ats else ats}; {sleep_s}s spacing)")
     t0 = time.time()
@@ -310,11 +608,15 @@ def run_batch(conn: sqlite3.Connection, ats: str | None, batch: int,
                 (_now(), ats_name, slug))
             continue
         status, count, company = probe(slug)
+        # [RA4] the company-preserving UPDATE: an empty probe-returned
+        # company NEVER clobbers a learned name (paylocity seed names,
+        # the greenhouse name-backfill lane's work)
         conn.execute(
-            "UPDATE directory SET status = ?, job_count = ?, company = ?, "
+            "UPDATE directory SET status = ?, job_count = ?, "
+            "company = CASE WHEN ? <> '' THEN ? ELSE company END, "
             "attempts = attempts + 1, last_probed_at = ? "
             "WHERE ats = ? AND slug = ?",
-            (status, count, company, _now(), ats_name, slug))
+            (status, count, company, company, _now(), ats_name, slug))
         done += 1
         if done % 10 == 0:
             conn.commit()                       # checkpoint every 10
@@ -363,6 +665,12 @@ def main() -> int:
     ap.add_argument("--retry-errors", action="store_true",
                     help="also re-claim transient error rows (aged 1h+, "
                          f"max {_MAX_ATTEMPTS} attempts per slug)")
+    ap.add_argument("--refresh-days", type=int, default=0,
+                    help="[S50-T2] live-board re-probe staleness window "
+                         "(0 = off). The drain passes 30 (DRAIN_REFRESH_DAYS).")
+    ap.add_argument("--dead-refresh-days", type=int, default=0,
+                    help="[S50-T2] dead/error-board resurrection window "
+                         "(0 = off). The drain passes 95.")
     ap.add_argument("--stats", action="store_true")
     args = ap.parse_args()
 
@@ -374,7 +682,9 @@ def main() -> int:
             stats(conn)
         if not args.stats and not args.seed:
             run_batch(conn, args.ats, args.batch, args.sleep,
-                      retry_errors=args.retry_errors)
+                      retry_errors=args.retry_errors,
+                      refresh_days=args.refresh_days,
+                      dead_refresh_days=args.dead_refresh_days)
     finally:
         conn.close()
     return 0

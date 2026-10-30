@@ -13,10 +13,24 @@ until nothing is pending, or after too many consecutive failures. The
 runner itself checkpoints the WAL at the end so the committed .db file
 is self-contained (never commit a hot -wal).
 
+[S50-T1] THE GATE: `--counts` is the workflow's read-only no-op gate
+(ats-drain.yml runs `gha_drain.py --counts` BEFORE setup-python).
+It computes needs-work and emits `DRAIN_PENDING=<n>` (always — 0
+included) so the workflow's `if: env.DRAIN_PENDING &&
+env.DRAIN_PENDING != '0'` conditions skip deterministically on a
+fresh universe. Missing OR unreadable DB → DRAIN_PENDING=0 + exit 1
+(RED — the promised SystemExit behavior [RA1]); it NEVER bumps legs,
+NEVER probes, and NEVER emits DRAIN_RESULT. The refresh cadence knobs
+(DRAIN_REFRESH_DAYS / DRAIN_DEAD_REFRESH_DAYS, defaults 30/95) live
+HERE as the single source [the S38/W6c P3-4 doctrine done right] and
+ride both the gate's count and the driver's builder pass-through.
+
 Env knobs (all optional):
   DRAIN_BUDGET_SECONDS   wall-clock probing budget   (default 4800 = 80 min)
   DRAIN_BATCH            slugs per batch             (default 60)
   DRAIN_SLEEP            per-request courtesy sleep  (default 0.3)
+  DRAIN_REFRESH_DAYS     live-board re-probe staleness (default 30)
+  DRAIN_DEAD_REFRESH_DAYS dead-board resurrection check  (default 95)
   DRAIN_LEGS_MAX_PER_DAY daily leg/re-trigger cap    (default 8; date-keyed
                          counter in the committed DB — cheap insurance
                          from the 2026-09-09 GHA-burn lesson: a
@@ -26,22 +40,29 @@ Env knobs (all optional):
                          matters when it self-retriggers)
 
 Machine-readable result (for the workflow):
-  - appends DRAIN_RESULT=pending|complete|failed to $GITHUB_ENV when set
+  - `--counts`: DRAIN_PENDING=<needs-work> (always; RED rc 1 when the
+    DB is missing/unreadable, and DRAIN_PENDING=0 in that case)
+  - the driver: appends DRAIN_RESULT=pending|complete|failed to
+    $GITHUB_ENV when set
   - 'pending' ONLY while (work remains AND legs remain today) — a capped
     day reports complete-not-pending so the workflow does not re-trigger;
     tomorrow's cron resets the date-keyed counter
-  - always exits 0 (the workflow branches on DRAIN_RESULT, not on rc)
+  - always exits 0 in the non-gate modes (the workflow branches on
+    DRAIN_RESULT, not on rc)
 
-Exit code 0 in all cases; "failed" still checkpoints whatever probed.
+Exit code 0 in all non-gate modes; "failed" still checkpoints whatever
+probed. [RA1] --counts is exempt: it runs OUTSIDE the rc-0 catch-all
+and exits 1 on DB-unavailable.
 """
 from __future__ import annotations
 
+import argparse
 import os
 import sqlite3
 import subprocess
 import sys
 import time
-from datetime import date
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -66,12 +87,16 @@ def _int_env(name: str, default: int) -> int:
 BUDGET = _int_env("DRAIN_BUDGET_SECONDS", 4800)
 BATCH = os.environ.get("DRAIN_BATCH", "60")
 SLEEP = os.environ.get("DRAIN_SLEEP", "0.3")
+# [S50-T1 / RA11] the hung-batch bound scales with the ACTUAL sleep
+# (the fixed 15.3 voided the bound at DRAIN_SLEEP > 0.3)
+_REQUEST_S = 15.0 + float(SLEEP)
+# [S50-T1] the refresh cadence knobs — THE single source (the workflow
+# comment's S37-W3 promise, finally real). Gate + driver + builder
+# pass-through all read these.
+REFRESH_DAYS = _int_env("DRAIN_REFRESH_DAYS", 30)
+DEAD_REFRESH_DAYS = _int_env("DRAIN_DEAD_REFRESH_DAYS", 95)
 MAX_CONSECUTIVE_FAILURES = 5
 LEGS_MAX_PER_DAY = _int_env("DRAIN_LEGS_MAX_PER_DAY", 8)
-# Per-request worst case in build_ats_directory: 15 s HTTP timeout + sleep.
-# Scale the subprocess timeout to the batch size (audit F6: a fixed 300 s
-# still times out the shrunk 25-batch when every probe hangs: 25×15.3≈383 s).
-_REQUEST_S = 15.3
 
 
 def _subproc_timeout(size: int) -> int:
@@ -130,16 +155,135 @@ def _cap_aware(result: str, leg: int) -> str:
     return result
 
 
-def pending_count() -> int:
+class GateUnavailable(RuntimeError):
+    """[RA1] the DB is missing OR unreadable — the gate's RED sentinel.
+    Raised (not swallowed) so --counts can exit 1 OUTSIDE the rc-0
+    catch-all; the driver catches it and reports 'failed' honestly."""
+
+
+def _iso_cutoff(days: int) -> str:
+    """[RA10] Python-computed ISO-'T' cutoff, matching _now()'s format —
+    the SQL datetime('now','-N day') SPACE-separated form never compares
+    correctly against last_probed_at's 'T' format (the latent -1h lie)."""
+    return (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%S")
+
+
+def needs_work_parts() -> dict[str, int]:
+    """[S50-T1 / RA6] the FIVE-term needs-work predicate — the single
+    source for the --counts gate AND the driver's every predicate site
+    AND (as a golden cross-check pin) the builder's claim classes:
+      pending        true pending rows (attempts < cap, as claimed)
+      err_reclaim    error rows reclaimable THIS cycle (aged 1h, attempts < 2)
+      err_rollover   error rows aged past DEAD_REFRESH_DAYS — cycle
+                     rollover, claimed with attempts reset (the iCIMS
+                     parking-page round-1 pool must not accrete terminal)
+      live_stale     live boards whose last probe is older than
+                     REFRESH_DAYS (the universe refresh)
+      dead_stale     dead boards older than DEAD_REFRESH_DAYS (the
+                     quarterly resurrection check)
+    Raises GateUnavailable when the DB is missing or unreadable."""
     if not DB.exists():
-        return 0
-    db = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
+        raise GateUnavailable(f"no DB at {DB}")
     try:
-        return db.execute(
-            "SELECT COUNT(*) FROM directory WHERE status='pending'"
-        ).fetchone()[0]
-    finally:
-        db.close()
+        db = sqlite3.connect(f"file:{DB}?mode=ro", uri=True, timeout=10)
+        try:
+            row = db.execute("SELECT COUNT(*) FROM directory").fetchone()
+            if not row:
+                raise sqlite3.DatabaseError("directory table empty/missing")
+            parts = {
+                "pending": db.execute(
+                    "SELECT COUNT(*) FROM directory"
+                    " WHERE status='pending' AND attempts < 2"
+                ).fetchone()[0],
+                # reclaimable THIS cycle: attempts left + aged ≥1h (the
+                # NULL case = never actually probed → claimable)
+                "err_reclaim": db.execute(
+                    "SELECT COUNT(*) FROM directory"
+                    " WHERE status='error' AND attempts < 2"
+                    " AND (last_probed_at IS NULL"
+                    "      OR last_probed_at < ?)",
+                    (_iso_cutoff_hours(1),)
+                ).fetchone()[0],
+                # cycle-rollover: attempts-CAPPED error rows aged past the
+                # dead-refresh window — disjoint from err_reclaim (the
+                # ≥2 attempts class ONLY the rollover can rescue)
+                "err_rollover": db.execute(
+                    "SELECT COUNT(*) FROM directory"
+                    " WHERE status='error' AND attempts >= 2"
+                    " AND (last_probed_at IS NULL"
+                    "      OR last_probed_at < ?)",
+                    (_iso_cutoff(DEAD_REFRESH_DAYS),)
+                ).fetchone()[0],
+                "live_stale": db.execute(
+                    "SELECT COUNT(*) FROM directory"
+                    " WHERE status='live'"
+                    " AND (last_probed_at IS NULL"
+                    "      OR last_probed_at < ?)",
+                    (_iso_cutoff(REFRESH_DAYS),)
+                ).fetchone()[0],
+                "dead_stale": db.execute(
+                    "SELECT COUNT(*) FROM directory"
+                    " WHERE status='dead'"
+                    " AND (last_probed_at IS NULL"
+                    "      OR last_probed_at < ?)",
+                    (_iso_cutoff(DEAD_REFRESH_DAYS),)
+                ).fetchone()[0],
+            }
+        finally:
+            db.close()
+    except sqlite3.Error as exc:
+        raise GateUnavailable(f"unreadable DB at {DB}: {exc}") from exc
+    return parts
+
+
+def _iso_cutoff_hours(hours: float) -> str:
+    return (datetime.now() - timedelta(hours=hours)).strftime(
+        "%Y-%m-%dT%H:%M:%S")
+
+
+def needs_work() -> int:
+    """[RA2] the single driver predicate — every completion/exit check
+    reads THIS, never a bare pending_count."""
+    p = needs_work_parts()
+    return sum(p.values())
+
+
+def needs_work_line() -> str:
+    p = needs_work_parts()
+    return (f"pending={p['pending']} err_reclaim={p['err_reclaim']} "
+            f"err_rollover={p['err_rollover']} "
+            f"live_stale={p['live_stale']} dead_stale={p['dead_stale']}")
+
+
+def emit_env(name: str, value: str) -> None:
+    genv = os.environ.get("GITHUB_ENV")
+    if genv:
+        with open(genv, "a") as f:
+            f.write(f"{name}={value}\n")
+
+
+def run_counts_gate() -> int:
+    """[S50-T1 / RA1] the --counts gate. RED (rc 1) on missing/unreadable
+    DB; never bumps legs; never probes; never emits DRAIN_RESULT."""
+    try:
+        n = needs_work()
+        print(f"needs-work {n} ({needs_work_line()})", flush=True)
+        print(f"DRAIN_PENDING={n}", flush=True)
+        emit_env("DRAIN_PENDING", str(n))
+        return 0
+    except GateUnavailable as exc:
+        print(f"::error::{exc} — gate RED, DRAIN_PENDING=0", flush=True)
+        emit_env("DRAIN_PENDING", "0")
+        return 1
+
+
+def pending_count() -> int:
+    """kept for the batch-time inside-loop cheap check (the drain's
+    own progress display); the COMPLETION predicate is needs_work()."""
+    try:
+        return needs_work_parts()["pending"]
+    except GateUnavailable:
+        return 0
 
 
 def stats_line() -> str:
@@ -176,7 +320,10 @@ def emit_result(result: str) -> None:
 
 
 def run_batch(size: str) -> tuple[bool, str]:
-    """Run one drain batch. Returns (ok, last_output_line)."""
+    """Run one drain batch. Returns (ok, last_output_line).
+    [S50-T1] the refresh knobs ride every builder invocation — the
+    gate's count and the builder's claim classes share the same env
+    knobs (REFRESH_DAYS/DEAD_REFRESH_DAYS defaults live in THIS file)."""
     env = dict(os.environ)
     # Authorized-child marker: we ARE the daemon-equivalent HERE (GHA), and
     # this makes us immune to any stale heartbeat file committed by accident.
@@ -189,7 +336,9 @@ def run_batch(size: str) -> tuple[bool, str]:
     try:
         r = subprocess.run(
             [sys.executable, str(BUILD),
-             "--batch", size, "--sleep", SLEEP, "--retry-errors"],
+             "--batch", size, "--sleep", SLEEP, "--retry-errors",
+             "--refresh-days", str(REFRESH_DAYS),
+             "--dead-refresh-days", str(DEAD_REFRESH_DAYS)],
             capture_output=True, text=True, timeout=timeout,
             cwd=str(INGEST), env=env)
     except subprocess.TimeoutExpired:
@@ -202,56 +351,60 @@ def run_batch(size: str) -> tuple[bool, str]:
 
 
 def _reclaimable_errors() -> int:
-    """Error rows that a --retry-errors sweep could still reclaim: below
-    the attempts cap and not probed in the last hour (build_ats_directory's
-    sweep criteria)."""
-    if not DB.exists():
-        return 0
-    db = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
+    """Error rows a --retry-errors sweep could still reclaim THIS cycle
+    (attempts left + aged 1h) — kept for the display only; the driver's
+    completion predicate is needs_work()."""
     try:
-        return db.execute(
-            "SELECT COUNT(*) FROM directory WHERE status='error'"
-            " AND attempts < 2"
-            " AND (last_probed_at IS NULL OR last_probed_at <"
-            "      datetime('now', '-1 hour'))"
-        ).fetchone()[0]
-    finally:
-        db.close()
+        return needs_work_parts()["err_reclaim"]
+    except GateUnavailable:
+        return 0
 
 
-def main() -> int:
+def _counts_cli(argv: list[str]):
+    """[S50-T1] argparse shared by both modes."""
+    ap = argparse.ArgumentParser(
+        description="Time-budgeted ATS-directory drain runner")
+    ap.add_argument("--counts", action="store_true",
+                    help="read-only gate: emit DRAIN_PENDING=<needs-work> "
+                         "(RED rc 1 when the DB is missing/unreadable); "
+                         "never probes, never bumps legs")
+    ap.add_argument("--refresh-days", type=int, default=REFRESH_DAYS,
+                    help=f"live-board re-probe staleness (default {REFRESH_DAYS})")
+    ap.add_argument("--dead-refresh-days", type=int,
+                    default=DEAD_REFRESH_DAYS,
+                    help=f"dead-board resurrection window "
+                         f"(default {DEAD_REFRESH_DAYS})")
+    return ap, ap.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
+    # argv=None (a test/lib call) parses NO flags — the driver mode;
+    # the __main__ block passes sys.argv[1:] explicitly
+    ap, args = _counts_cli(argv or [])
+    if args.counts:
+        # [RA1] the gate runs OUTSIDE the rc-0 catch-all: DB-unavailable
+        # must be RED (rc 1), and never touches legs or DRAIN_RESULT.
+        return run_counts_gate()
     if not DB.exists():
         print(f"no DB at {DB} — seed first (build_ats_directory.py --seed)",
               flush=True)
         emit_result("failed")
         checkpoint_wal()
         return 0
-    if pending_count() == 0:
-        # Audit F4: the daily-cron early-exit path must also sweep aged,
-        # reclaimable error rows (the workflow gate counts them, so we can
-        # land here with work left). One sweep batch retries them; rows that
-        # fail again hit the attempts cap → terminal → the gate returns to 0
-        # and the chain self-terminates.
-        if _reclaimable_errors() > 0:
-            capped, leg = _leg_guard()
-            if capped:
-                checkpoint_wal()
-                emit_result("complete")
-                return 0
-            print(f"pending exhausted — sweeping "
-                  f"{_reclaimable_errors()} aged error rows (--retry-errors)",
-                  flush=True)
-            ok, tail = run_batch(BATCH)
-            print(f"[sweep] {'ok' if ok else 'FAIL'} — {tail}", flush=True)
-            checkpoint_wal()
-            result = _cap_aware(
-                "pending" if pending_count() > 0
-                or _reclaimable_errors() > 0 else "complete", leg)
-            print(f"drain end ({result}): {stats_line()}", flush=True)
-            emit_result(result)
-            return 0
-        print(f"nothing pending — drain already complete. {stats_line()}",
+    try:
+        work = needs_work()
+    except GateUnavailable as exc:
+        print(f"::error::{exc} — reporting failed (state not drainable)",
               flush=True)
+        emit_result("failed")
+        checkpoint_wal()
+        return 0
+    if work == 0:
+        # [RA2] the entry predicate is needs_work() — a day where pending==0
+        # but live boards are stale must NOT exit here (the S37 no-op class:
+        # this exact branch green-wink'd 9,705 aging boards for 7 weeks).
+        print(f"nothing needs work — drain already complete. "
+              f"{needs_work_line()}", flush=True)
         emit_result("complete")
         return 0
 
@@ -262,28 +415,18 @@ def main() -> int:
         return 0
 
     print(f"drain start: {stats_line()}", flush=True)
-    print(f"budget={BUDGET}s batch={BATCH} sleep={SLEEP}", flush=True)
+    print(f"needs-work {work} ({needs_work_line()})", flush=True)
+    print(f"budget={BUDGET}s batch={BATCH} sleep={SLEEP} "
+          f"refresh={REFRESH_DAYS}d dead-refresh={DEAD_REFRESH_DAYS}d",
+          flush=True)
     start = time.monotonic()
     failures = 0
     batches = 0
     result = "pending"
 
     while time.monotonic() - start < BUDGET:
-        if pending_count() == 0:
-            # Audit F4: with pending==0 the loop used to break BEFORE any
-            # run_batch, so --retry-errors (which only sweeps when a batch
-            # finds nothing pending) was dead code in the drain — 'complete'
-            # shipped reclaimable error rows. Run one final sweep batch
-            # while budget remains.
-            if _reclaimable_errors() > 0 and batches > 0:
-                print("pending exhausted — sweeping aged error rows "
-                      "(--retry-errors)", flush=True)
-                ok, tail = run_batch(BATCH)
-                batches += 1
-                print(f"[sweep] batch {batches}: "
-                      f"{'ok' if ok else 'FAIL'} — {tail}", flush=True)
-            result = ("pending" if pending_count() > 0 or _reclaimable_errors() > 0
-                      else "complete")
+        if needs_work() == 0:
+            result = "complete"
             break
         ok, tail = run_batch(BATCH)
         # Slow-batch shrink: mirror the daemon's fallback so one pathological
@@ -308,10 +451,20 @@ def main() -> int:
     # Budget exhausted → 'pending' (workflow re-triggers); 'complete' and
     # 'failed' both fall through to the snapshot+commit steps. The leg cap
     # demotes 'pending' at/past the daily cap (never re-trigger past it).
+    # [RA2] the loop-exit verdict re-reads needs_work() — a batch that
+    # drained true-pending but left stale-live rows stays 'pending'.
+    try:
+        if result == "pending" and needs_work() > 0:
+            result = "pending"
+        elif result == "pending":
+            result = "complete"
+    except GateUnavailable:
+        pass                       # keep the loop's verdict
     result = _cap_aware(result, leg)
     checkpoint_wal()
     print(f"drain end ({result}): {stats_line()} after {batches} batches",
           flush=True)
+    print(f"needs-work at exit: {needs_work_line()}", flush=True)
     emit_result(result)
     return 0
 
@@ -320,9 +473,12 @@ if __name__ == "__main__":
     # Audit F5: the docstring promises exit 0 with a DRAIN_RESULT marker, but
     # malformed env knobs or a corrupt DB could raise BEFORE emission — the
     # re-trigger step would then never fire and the chain stalls ≤24 h. Keep
-    # the promise: any surprise becomes 'failed' + rc 0.
+    # the promise: any surprise becomes 'failed' + rc 0. [S50-T1/RA1] EXCEPT
+    # --counts: the gate's RED contract (rc 1 on DB-unavailable) must survive
+    # the catch-all, so SystemExit passes through untouched (the gate's own
+    # run_counts_gate returns the rc; argparse errors exit 2 as GHA expects).
     try:
-        sys.exit(main())
+        sys.exit(main(sys.argv[1:]))
     except SystemExit:
         raise
     except BaseException as exc:  # noqa: BLE001
