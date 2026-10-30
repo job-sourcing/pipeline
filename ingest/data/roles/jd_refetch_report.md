@@ -1,11 +1,12 @@
 # JD-refetch ledger (family: pm)
 
-- last leg: **2026-10-30T20:04:36Z** (transport: direct)
-- fetched this leg: 150 | remaining: 212 | targets seen: 1668
+- last leg: **2026-10-30T20:17:29Z** (transport: direct)
+- fetched this leg: 150 | remaining: 62 | targets seen: 1668
 - pending attrition since last leg: 0 (vanished without a verdict — F1 ledger)
 
 ## per-source status counters
 
-- adzuna:http-error:403: 58
-- adzuna:ok: 6
-- jooble:http-error:403: 86
+- adzuna:http-error:403: 65
+- adzuna:ok: 2
+- jooble:http-error:403: 79
+- talent:ok: 4
