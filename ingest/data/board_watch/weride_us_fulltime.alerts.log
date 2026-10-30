@@ -33,3 +33,6 @@ WeRide board-watch 2026-10-30: +0 new, -1 gone (10 active [weride_us_fulltime])
 GONE Office Administrator (Singapore) (first seen 2026-10-07)
 (2026-10-30T01:23:24)
 
+board-watch weride_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
+(2026-10-30T13:40:53)
+
