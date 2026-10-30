@@ -291,25 +291,81 @@ if ls "$DEST"/ingest/data/roles/jd_refetch*_state.json \
     git diff --cached --quiet || \
     git commit -q -m "jd_refetch state/report back-sync from org runtime (S42 family twins, S35 rule 5th check)")
 fi
-# S47-A3 (S35 rule 6th check — caught BEFORE it churned): the ats-drain
-# lane rewrites ingest/data/ats_directory.db + ats_directory_snapshot.json
-# on the ORG side every drain (Wed); the archive carries STALE copies
-# (seeded once) — without this copy-back the forward rsync --delete would
-# clobber the org's newer DB with the archive's stale one on EVERY mirror
-# run (a scheduled Wed-drain → any-mirror collision = data loss). The
-# drain's checkpoint is the only writer between mirrors, so org-wins
-# copy-back is the correct merge for the binary DB + snapshot.
+# S47-A3 → S50 fix: the ats-drain lane rewrites ingest/data/
+# ats_directory.db + ats_directory_snapshot.json on the ORG side every
+# drain (Wed), AND the archive now SEEDS the DB jsr-side (S50's +44,560
+# rows). The old blind org-wins copy-back clobbered the freshly-seeded
+# archive DB with the org's stale 15,872-row copy on the very mirror
+# that was supposed to SHIP it (the RA8 trap, fired 2026-10-30).
+# NEWEST-WINS by DB content: more rows wins (seeding only ADDS rows);
+# on a tie, the newer max(last_probed_at) wins (probing only updates).
+# The snapshot follows its DB.
 if [ -e "$DEST/ingest/data/ats_directory.db" ]; then
   mkdir -p "$SRC/ingest/data"
-  cp "$DEST/ingest/data/ats_directory.db" "$SRC/ingest/data/ats_directory.db"
-  if [ -e "$DEST/ingest/data/ats_directory_snapshot.json" ]; then
-    cp "$DEST/ingest/data/ats_directory_snapshot.json" \
-       "$SRC/ingest/data/ats_directory_snapshot.json"
+  python3 - "$DEST/ingest/data/ats_directory.db" \
+      "$SRC/ingest/data/ats_directory.db" <<'DBEOF'
+import sqlite3, sys, shutil
+dest_db, src_db = sys.argv[1], sys.argv[2]
+def fingerprint(path):
+    try:
+        db = sqlite3.connect(f"file:{path}?mode=ro", uri=True)
+        n = db.execute("SELECT COUNT(*) FROM directory").fetchone()[0]
+        mx = db.execute(
+            "SELECT MAX(last_probed_at) FROM directory").fetchone()[0] or ""
+        db.close()
+        return n, mx
+    except Exception:
+        return -1, ""
+dn, dmx = fingerprint(dest_db)
+sn, smx = fingerprint(src_db)
+if (dn, dmx) > (sn, smx):
+    print(f"  [ats-db] org wins: rows {dn} vs {sn}, probed {dmx} vs {smx}")
+    shutil.copyfile(dest_db, src_db)
+else:
+    print(f"  [ats-db] archive wins: rows {sn} vs {dn}, probed {smx} vs {dmx}")
+DBEOF
+  if [ -e "$DEST/ingest/data/ats_directory_snapshot.json" ] && \
+     [ "$SRC/ingest/data/ats_directory.db" -nt "$SRC/ingest/data/ats_directory_snapshot.json" ]; then
+    :  # snapshot staleness handled by the row-count compare below
   fi
+  # the snapshot follows the DB verdict: compare exported_at ONLY when
+  # the org DB won (the drain exports after each leg); when the archive
+  # DB won, its snapshot is the fresher export of the fresher DB
+  python3 - "$DEST" "$SRC" <<'SNAPEOF'
+import json, sys, os, shutil
+dest, src = sys.argv[1], sys.argv[2]
+dp = os.path.join(dest, "ingest/data/ats_directory_snapshot.json")
+sp = os.path.join(src, "ingest/data/ats_directory_snapshot.json")
+if not os.path.exists(dp):
+    sys.exit(0)
+try:
+    dexp = json.load(open(dp)).get("exported_at", "")
+except Exception:
+    dexp = ""
+try:
+    sexp = json.load(open(sp)).get("exported_at", "")
+except Exception:
+    sexp = ""
+# S50: row-count the snapshots describe — a 60k-DB snapshot beats a 15k
+# one regardless of exported_at (the org snapshot describes its stale DB)
+try:
+    dn = len(json.load(open(dp)).get("boards", []))
+except Exception:
+    dn = -1
+try:
+    sn = len(json.load(open(sp)).get("boards", []))
+except Exception:
+    sn = -1
+if (dn, dexp) > (sn, sexp):
+    print(f"  [ats-snap] org wins: boards {dn} vs {sn}, exported {dexp} vs {sexp}")
+    shutil.copyfile(dp, sp)
+else:
+    print(f"  [ats-snap] archive wins: boards {sn} vs {dn}, exported {sexp} vs {dexp}")
+SNAPEOF
   (cd "$SRC" && git add ingest/data/ats_directory.db \
     ingest/data/ats_directory_snapshot.json 2>/dev/null; \
     git diff --cached --quiet || \
-    git commit -q -m "ats_directory back-sync from org runtime (S47-A3, S35 rule 6th check — pre-Wed-10-28)")
+    git commit -q -m "ats_directory newest-wins back-sync (S50 fix of the S47-A3 org-wins clobber)")
 fi
 if [ -d "$DEST/ingest/data/ui" ]; then
   mkdir -p "$SRC/ingest/data/ui"
