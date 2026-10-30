@@ -1,9 +1,9 @@
 {
- "last_leg": "2026-10-30T19:38:16Z",
+ "last_leg": "2026-10-30T19:51:48Z",
  "transport": "direct",
  "mode": "pending",
  "fetched": 150,
- "remaining": 362,
+ "remaining": 212,
  "targets_seen": 1668,
  "pending_snapshot": [
   "adzuna|https://www.adzuna.com/details/5871962978?utm_medium=api&utm_source=46fd1e82",
