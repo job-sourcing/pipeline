@@ -28,3 +28,6 @@ NEW Project Manager - Higgs Audio | Santa Clara HQ | Posted 1 Days Ago — 32 ap
 NEW Project Manager - Higgs Audio (Toronto) | Toronto | Posted 1 Days Ago — 32 applicants | https://jobs.lever.co/bosonai/a718c5a7-5d43-42d7-b559-b31134ec81c1
 (2026-10-29T13:48:47)
 
+board-watch bosonai_us_fulltime FAILED: list fetch crashed (HTTPError: 502 Server Error: Bad Gateway for url: https://api.lever.co/v0/postings/bosonai?mode=json)
+(2026-10-31T01:02:39)
+
