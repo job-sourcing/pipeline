@@ -5,3 +5,5 @@
 {"ts": "2026-10-27T18:58:25Z", "family": "gen", "verdict": "complete", "rows": 15734, "sources_dead": ["builtin", "gj_role"]}
 {"ts": "2026-10-27T19:18:18Z", "family": "gen", "verdict": "complete", "rows": 17688, "sources_dead": ["careerjet:California"]}
 {"ts": "2026-10-29T18:44:58Z", "family": "gen", "verdict": "complete", "rows": 26687, "sources_dead": ["careerjet:Sacramento, CA", "careerjet:San Francisco, CA", "careerjet:Los Angeles, CA", "careerjet:San Diego, CA"]}
+{"ts": "2026-10-31T17:32:16Z", "family": "gen", "verdict": "complete", "rows": 27765, "sources_dead": ["careerjet:Irvine, CA", "careerjet:Riverside, CA", "careerjet:Fresno, CA", "careerjet:Bakersfield, CA"]}
+{"ts": "2026-10-31T17:51:08Z", "family": "gen", "verdict": "complete", "rows": 27280, "sources_dead": ["careerjet:remote", "jooble:remote"]}
