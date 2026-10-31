@@ -1,6 +1,6 @@
 # JD-refetch ledger (family: gen)
 
-- last leg: **2026-10-31T18:46:59Z** (transport: direct)
+- last leg: **2026-10-31T19:00:39Z** (transport: direct)
 - fetched this leg: 150 | remaining: 2093 | targets seen: 2533
 
 ## per-source status counters
