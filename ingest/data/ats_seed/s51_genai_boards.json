@@ -1,0 +1,956 @@
+{
+ "generated": "2026-10-31T00:44:47Z",
+ "n": 95,
+ "boards": [
+  {
+   "company": "Black Forest Labs",
+   "hq": "Freiburg, DE",
+   "site": "bfl.ai",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Midjourney",
+   "hq": "SF, US",
+   "site": "midjourney.com",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Ideogram",
+   "hq": "Toronto, CA",
+   "site": "ideogram.ai",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Recraft",
+   "hq": "Wilmington/US",
+   "site": "recraft.ai",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "https://recraft.ai/careers",
+   "platform": "ashby",
+   "mode": "direct",
+   "body_len": 15041
+  },
+  {
+   "company": "Stability AI",
+   "hq": "London, UK",
+   "site": "stability.ai",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Playground AI",
+   "hq": "SF, US",
+   "site": "playground.com",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Krea",
+   "hq": "Barcelona, ES",
+   "site": "krea.ai",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "https://krea.ai/careers",
+   "platform": "ashby",
+   "mode": "direct",
+   "body_len": 18277
+  },
+  {
+   "company": "BRIA",
+   "hq": "Tel Aviv, IL",
+   "site": "bria.ai",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "https://bria.ai/careers",
+   "platform": "custom-html",
+   "mode": "direct",
+   "body_len": 192414
+  },
+  {
+   "company": "Photoroom",
+   "hq": "Paris, FR",
+   "site": "photoroom.com",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "https://photoroom.com/careers",
+   "platform": "ashby",
+   "mode": "direct",
+   "body_len": 18481
+  },
+  {
+   "company": "Runware",
+   "hq": "US",
+   "site": "runware.ai",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "https://runware.ai/careers",
+   "platform": "workable",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Reve",
+   "hq": "SF, US",
+   "site": "reve.com",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Leonardo.ai",
+   "hq": "Sydney, AU",
+   "site": "leonardo.ai",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Freepik",
+   "hq": "Malaga, ES",
+   "site": "freepik.com",
+   "cat": "Image generation (model labs + apps)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Runway",
+   "hq": "NY, US",
+   "site": "runwayml.com",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Luma AI",
+   "hq": "Palo Alto, US",
+   "site": "lumalabs.ai",
+   "cat": "Video generation",
+   "careers_url": "https://lumalabs.ai/careers",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Pika Labs",
+   "hq": "Palo Alto, US",
+   "site": "pika.art",
+   "cat": "Video generation",
+   "careers_url": "https://pika.art/jobs",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Lightricks (LTX)",
+   "hq": "Jerusalem, IL",
+   "site": "lightricks.co",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Decart",
+   "hq": "Tel Aviv, IL",
+   "site": "decart.ai",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Moonvalley",
+   "hq": "Toronto, CA",
+   "site": "moonvalley.ai",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Higgsfield",
+   "hq": "SF, US",
+   "site": "higgsfield.ai",
+   "cat": "Video generation",
+   "careers_url": "https://higgsfield.ai/careers",
+   "platform": "ashby",
+   "mode": "direct",
+   "body_len": 50800
+  },
+  {
+   "company": "HeyGen",
+   "hq": "LA/SF, US",
+   "site": "heygen.com",
+   "cat": "Video generation",
+   "careers_url": "https://heygen.com/careers",
+   "platform": "custom-html",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Synthesia",
+   "hq": "London, UK",
+   "site": "synthesia.io",
+   "cat": "Video generation",
+   "careers_url": "https://synthesia.io/careers",
+   "platform": "custom-html",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Twelve Labs",
+   "hq": "SF, US",
+   "site": "twelvelabs.ai",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Animaj",
+   "hq": "Paris, FR",
+   "site": "animaj.com",
+   "cat": "Video generation",
+   "careers_url": "https://animaj.com/careers",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 93971
+  },
+  {
+   "company": "Arcads.ai",
+   "hq": "Paris, FR",
+   "site": "arcads.ai",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Creatify",
+   "hq": "SF, US",
+   "site": "creatify.ai",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "TopView.ai",
+   "hq": "—",
+   "site": "topview.ai",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "DomoAI",
+   "hq": "—",
+   "site": "domoai.app",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "RecCloud",
+   "hq": "—",
+   "site": "reccloud.com",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "DeeVid AI",
+   "hq": "—",
+   "site": "deevid.ai",
+   "cat": "Video generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "ElevenLabs",
+   "hq": "NY, US",
+   "site": "elevenlabs.io",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "https://elevenlabs.io/careers.html",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Suno",
+   "hq": "Cambridge, US",
+   "site": "suno.com",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "https://suno.com/careers",
+   "platform": "custom-html",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Udio",
+   "hq": "NY, US",
+   "site": "udio.com",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "SUMO Music",
+   "hq": "—",
+   "site": "sumomusic.net",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "MusicGPT",
+   "hq": "—",
+   "site": "musicgpt.com",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Fish Audio",
+   "hq": "CN/US",
+   "site": "fish.audio",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Cartesia",
+   "hq": "SF, US",
+   "site": "cartesia.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Rime AI",
+   "hq": "SF, US",
+   "site": "rime.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Resemble AI",
+   "hq": "Toronto/Montreal, CA",
+   "site": "resemble.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Murf AI",
+   "hq": "—",
+   "site": "murf.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Fliki",
+   "hq": "—",
+   "site": "fliki.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "LOVO",
+   "hq": "—",
+   "site": "lovo.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Speechify",
+   "hq": "—",
+   "site": "speechify.com",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "https://speechify.com/careers",
+   "platform": "greenhouse",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Respeecher",
+   "hq": "Kyiv, UA",
+   "site": "respeecher.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Papercup (RWS)",
+   "hq": "London, UK",
+   "site": "papercup.com",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Deepdub",
+   "hq": "Tel Aviv, IL",
+   "site": "deepdub.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Rask AI",
+   "hq": "—",
+   "site": "rask.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Dubverse",
+   "hq": "—",
+   "site": "dubverse.co",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "camb.ai",
+   "hq": "—",
+   "site": "camb.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "https://camb.ai/careers",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 79175
+  },
+  {
+   "company": "Dubformer",
+   "hq": "—",
+   "site": "dubformer.com",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "KugelAudio",
+   "hq": "Berlin, DE",
+   "site": "kugel.audio",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Samtal",
+   "hq": "SE",
+   "site": "samtal.se",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "LMNT",
+   "hq": "SF, US",
+   "site": "lmnt.ai",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "VoxCPM (OpenBMB)",
+   "hq": "CN",
+   "site": "openbmb.cn",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "PlayHT",
+   "hq": "US",
+   "site": "play.ht",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "MiniMax (audio)",
+   "hq": "Shanghai, CN",
+   "site": "minimax.io",
+   "cat": "Audio (music / voice / dubbing)",
+   "careers_url": "https://minimax.io/careers",
+   "platform": "custom-html",
+   "mode": "direct",
+   "body_len": 70446
+  },
+  {
+   "company": "World Labs",
+   "hq": "SF, US",
+   "site": "worldlabs.ai",
+   "cat": "3D / world generation",
+   "careers_url": "https://worldlabs.ai/careers",
+   "platform": "custom-html",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Meshy",
+   "hq": "Sunnyvale, US / Beijing",
+   "site": "meshy.ai",
+   "cat": "3D / world generation",
+   "careers_url": "https://meshy.ai/careers",
+   "platform": "custom-html",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "VAST (Tripo AI)",
+   "hq": "Beijing, CN",
+   "site": "tripo3d.ai",
+   "cat": "3D / world generation",
+   "careers_url": "https://tripo3d.ai/careers",
+   "platform": "custom-html",
+   "mode": "direct",
+   "body_len": 115369
+  },
+  {
+   "company": "影眸科技 Hyper3D (Rodin)",
+   "hq": "Shanghai, CN",
+   "site": "hyper3d.ai",
+   "cat": "3D / world generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Luma AI (3D side)",
+   "hq": "Palo Alto, US",
+   "site": "lumalabs.ai",
+   "cat": "3D / world generation",
+   "careers_url": "https://lumalabs.ai/careers",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 200000
+  },
+  {
+   "company": "Spline",
+   "hq": "—",
+   "site": "spline.design",
+   "cat": "3D / world generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Polycam",
+   "hq": "SF, US",
+   "site": "polycam.ai",
+   "cat": "3D / world generation",
+   "careers_url": "https://polycam.ai/careers",
+   "platform": "custom-html",
+   "mode": "direct",
+   "body_len": 170083
+  },
+  {
+   "company": "Wonder Dynamics (Autodesk Flow Studio)",
+   "hq": "LA, US",
+   "site": "autodesk.com/products/flow-studio",
+   "cat": "3D / world generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Kaedim",
+   "hq": "London/US",
+   "site": "kaedim.dev",
+   "cat": "3D / world generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Sloyd",
+   "hq": "Oslo, NO",
+   "site": "sloyd.ai",
+   "cat": "3D / world generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "WaveSpeedAI",
+   "hq": "—",
+   "site": "wavespeed.ai",
+   "cat": "3D / world generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "XGRIDS",
+   "hq": "CN/US",
+   "site": "xgrids.tech",
+   "cat": "3D / world generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "PostShot (Jawset)",
+   "hq": "DE",
+   "site": "jawset.com",
+   "cat": "3D / world generation",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Animaj (3D motion)",
+   "hq": "Paris, FR",
+   "site": "animaj.com",
+   "cat": "3D / world generation",
+   "careers_url": "https://animaj.com/careers",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 93971
+  },
+  {
+   "company": "fal.ai",
+   "hq": "SF, US",
+   "site": "fal.ai",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "https://fal.ai/careers",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 175701
+  },
+  {
+   "company": "Replicate",
+   "hq": "SF, US",
+   "site": "replicate.com",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Krea",
+   "hq": "Barcelona, ES",
+   "site": "krea.ai",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "https://krea.ai/careers",
+   "platform": "ashby",
+   "mode": "direct",
+   "body_len": 18277
+  },
+  {
+   "company": "Higgsfield",
+   "hq": "SF, US",
+   "site": "higgsfield.ai",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "https://higgsfield.ai/careers",
+   "platform": "ashby",
+   "mode": "direct",
+   "body_len": 50800
+  },
+  {
+   "company": "Freepik",
+   "hq": "Malaga, ES",
+   "site": "freepik.com",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Civitai",
+   "hq": "—",
+   "site": "civitai.com",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "OpenArt",
+   "hq": "SF, US",
+   "site": "openart.ai",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "SeaArt",
+   "hq": "—",
+   "site": "seaart.ai",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "getimg.ai",
+   "hq": "—",
+   "site": "getimg.ai",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "NightCafe",
+   "hq": "Melbourne, AU",
+   "site": "creator.nightcafe.studio",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Pollo AI",
+   "hq": "—",
+   "site": "pollo.ai",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Vidnoz",
+   "hq": "—",
+   "site": "vidnoz.com",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Akool",
+   "hq": "—",
+   "site": "akool.com",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "WaveSpeedAI",
+   "hq": "—",
+   "site": "wavespeed.ai",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Comfy Org",
+   "hq": "—",
+   "site": "comfy.org",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "https://comfy.org/careers",
+   "platform": "ashby",
+   "mode": "direct",
+   "body_len": 79368
+  },
+  {
+   "company": "Hugging Face",
+   "hq": "NY/Paris",
+   "site": "huggingface.co",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "https://huggingface.co/careers",
+   "platform": "workable",
+   "mode": "direct",
+   "body_len": 6223
+  },
+  {
+   "company": "Icon",
+   "hq": "—",
+   "site": "icon.com",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Motion Creative Cloud",
+   "hq": "Toronto, CA",
+   "site": "motionapp.com",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "https://motionapp.com/careers",
+   "platform": "gem",
+   "mode": "direct",
+   "body_len": 56658
+  },
+  {
+   "company": "Cuttable",
+   "hq": "AU",
+   "site": "cuttable.com",
+   "cat": "Aggregators / platforms / infra",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Promise",
+   "hq": "LA, US",
+   "site": "promise.studio",
+   "cat": "Media production / AI-film studios / agencies (the production-roles class)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "EDGLRD",
+   "hq": "London, UK",
+   "site": "edglrd.com",
+   "cat": "Media production / AI-film studios / agencies (the production-roles class)",
+   "careers_url": "https://edglrd.com/jobs",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 41516
+  },
+  {
+   "company": "OneDay Studios",
+   "hq": "—",
+   "site": "oneday.studio?",
+   "cat": "Media production / AI-film studios / agencies (the production-roles class)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Curious Refuge",
+   "hq": "LA, US",
+   "site": "curiousrefuge.com",
+   "cat": "Media production / AI-film studios / agencies (the production-roles class)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "Vitrina",
+   "hq": "—",
+   "site": "vitrina.ai",
+   "cat": "Media production / AI-film studios / agencies (the production-roles class)",
+   "careers_url": "",
+   "platform": "none",
+   "mode": "",
+   "body_len": 0
+  },
+  {
+   "company": "UK Screen Alliance members",
+   "hq": "UK",
+   "site": "ukscreenalliance.co.uk",
+   "cat": "Media production / AI-film studios / agencies (the production-roles class)",
+   "careers_url": "https://ukscreenalliance.co.uk/careers",
+   "platform": "custom?",
+   "mode": "direct",
+   "body_len": 59384
+  }
+ ]
+}

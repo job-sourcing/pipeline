@@ -3,3 +3,34 @@
 [spike dmm/3] 75/710 (737s) adzuna:http-error=1 adzuna:ok=1 adzuna:q:too_short=1 jooble:ok=72
 [spike dmm/3] 100/710 (1036s) adzuna:http-error=6 adzuna:ok=6 adzuna:q:too_short=3 jooble:http-error=1 jooble:ok=84
 [spike dmm/3] 125/710 (1320s) adzuna:http-error=7 adzuna:ok=8 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=2 jooble:ok=104
+[spike dmm/3] 150/710 (1589s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=3 jooble:ok=116
+[spike dmm/3] 175/710 (1899s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=6 jooble:ok=138
+[spike dmm/3] 200/710 (2195s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=10 jooble:ok=159
+[spike dmm/3] 225/710 (2506s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=15 jooble:ok=179
+[spike dmm/3] 250/710 (2769s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=19 jooble:ok=200
+[spike dmm/3] 275/710 (3024s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=22 jooble:ok=222
+[spike dmm/3] 300/710 (3250s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=24 jooble:ok=245
+[spike dmm/3] 325/710 (3491s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=24 jooble:ok=270
+[spike dmm/3] 350/710 (3724s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=24 jooble:ok=295
+[spike dmm/3] 375/710 (4011s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=27 jooble:ok=317
+[spike dmm/3] 400/710 (4270s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=32 jooble:ok=337
+[spike dmm/3] 425/710 (4520s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=32 jooble:ok=362
+[spike dmm/3] 450/710 (4776s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=36 jooble:ok=383
+[spike dmm/3] 475/710 (4999s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=48 jooble:ok=396
+[spike dmm/3] 500/710 (5268s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=58 jooble:ok=411
+[spike dmm/3] 525/710 (5478s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:ok=1 jooble:http-error=69 jooble:ok=425
+[spike dmm/3] 550/710 (5721s) adzuna:http-error=10 adzuna:ok=17 adzuna:q:too_short=3 glassdoor:http-error=4 glassdoor:ok=6 jooble:http-error=75
+[spike dmm/3] 575/710 (5951s) adzuna:http-error=13 adzuna:ok=25 adzuna:q:too_short=3 glassdoor:http-error=4 glassdoor:ok=6 jooble:http-error=80
+[spike dmm/3] 600/710 (6163s) adzuna:http-error=22 adzuna:ok=39 adzuna:q:too_short=5 glassdoor:http-error=4 glassdoor:ok=6 jooble:http-error=80
+[spike dmm/3] 625/710 (6408s) adzuna:http-error=36 adzuna:ok=49 adzuna:q:too_short=6 glassdoor:http-error=4 glassdoor:ok=6 jooble:http-error=80
+[spike dmm/3] 650/710 (6580s) adzuna:http-error=39 adzuna:ok=71 adzuna:q:too_short=6 glassdoor:http-error=4 glassdoor:ok=6 jooble:http-error=80
+[spike dmm/3] 675/710 (6854s) adzuna:http-error=48 adzuna:ok=83 adzuna:q:too_short=10 glassdoor:http-error=4 glassdoor:ok=6 jooble:http-error=80
+[spike dmm/3] 700/710 (7078s) adzuna:http-error=50 adzuna:ok=100 adzuna:q:too_short=10 glassdoor:http-error=4 glassdoor:ok=6 jooble:http-error=81
+FINAL fetched=710/710 done=True
+     50 adzuna:http-error
+    108 adzuna:ok
+     10 adzuna:q:too_short
+      4 glassdoor:http-error
+      6 glassdoor:ok
+     81 jooble:http-error
+    451 jooble:ok

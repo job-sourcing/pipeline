@@ -3,3 +3,38 @@
 [spike gen/5] 75/785 (795s) adzuna:http-error=4 adzuna:ok=8 adzuna:q:too_short=2 dice:ok=1 jooble:http-error=1 jooble:ok=59
 [spike gen/5] 100/785 (1032s) adzuna:http-error=4 adzuna:ok=8 adzuna:q:too_short=2 dice:ok=1 jooble:http-error=1 jooble:ok=84
 [spike gen/5] 125/785 (1314s) adzuna:http-error=4 adzuna:ok=8 adzuna:q:too_short=2 dice:ok=1 jooble:http-error=5 jooble:ok=105
+[spike gen/5] 150/785 (1596s) adzuna:http-error=4 adzuna:ok=8 adzuna:q:too_short=2 dice:ok=1 jooble:http-error=7 jooble:ok=128
+[spike gen/5] 175/785 (1903s) adzuna:http-error=4 adzuna:ok=8 adzuna:q:too_short=2 dice:ok=1 jooble:http-error=12 jooble:ok=148
+[spike gen/5] 200/785 (2142s) adzuna:http-error=4 adzuna:ok=8 adzuna:q:too_short=2 dice:ok=1 jooble:http-error=14 jooble:ok=171
+[spike gen/5] 225/785 (2415s) adzuna:http-error=4 adzuna:ok=8 adzuna:q:too_short=2 dice:ok=1 jooble:http-error=17 jooble:ok=193
+[spike gen/5] 250/785 (2666s) adzuna:http-error=4 adzuna:ok=8 adzuna:q:too_short=2 dice:ok=1 jooble:http-error=18 jooble:ok=217
+[spike gen/5] 275/785 (2942s) adzuna:http-error=4 adzuna:ok=12 adzuna:q:too_short=2 dice:ok=1 jooble:http-error=22 jooble:ok=234
+[spike gen/5] 300/785 (3093s) adzuna:http-error=6 adzuna:ok=34 adzuna:q:too_short=2 dice:ok=2 jooble:http-error=22 jooble:ok=234
+[spike gen/5] 325/785 (3234s) adzuna:http-error=6 adzuna:ok=59 adzuna:q:too_short=2 dice:ok=2 jooble:http-error=22 jooble:ok=234
+[spike gen/5] 350/785 (3382s) adzuna:http-error=8 adzuna:ok=81 adzuna:q:too_short=2 dice:ok=2 jooble:http-error=22 jooble:ok=234
+[spike gen/5] 375/785 (3562s) adzuna:http-error=10 adzuna:ok=104 adzuna:q:too_short=2 dice:ok=2 jooble:http-error=22 jooble:ok=234
+[spike gen/5] 400/785 (3920s) adzuna:http-error=20 adzuna:ok=116 adzuna:q:too_short=5 dice:ok=2 jooble:http-error=22 jooble:ok=234
+[spike gen/5] 425/785 (4141s) adzuna:http-error=26 adzuna:ok=134 adzuna:q:too_short=5 dice:ok=2 jooble:http-error=22 jooble:ok=234
+[spike gen/5] 450/785 (4302s) adzuna:http-error=30 adzuna:ok=155 adzuna:q:too_short=5 dice:ok=2 jooble:http-error=22 jooble:ok=234
+[spike gen/5] 475/785 (4485s) adzuna:http-error=38 adzuna:ok=171 adzuna:q:too_short=5 dice:http-error=1 dice:ok=2 jooble:http-error=22
+[spike gen/5] 500/785 (4743s) adzuna:http-error=41 adzuna:ok=193 adzuna:q:too_short=5 dice:http-error=1 dice:ok=2 jooble:http-error=22
+[spike gen/5] 525/785 (4970s) adzuna:http-error=48 adzuna:ok=210 adzuna:q:too_short=5 dice:http-error=1 dice:ok=3 jooble:http-error=22
+[spike gen/5] 550/785 (5158s) adzuna:http-error=55 adzuna:ok=226 adzuna:q:too_short=6 dice:http-error=1 dice:ok=3 jooble:http-error=22
+[spike gen/5] 575/785 (5406s) adzuna:http-error=65 adzuna:ok=240 adzuna:q:too_short=6 dice:http-error=2 dice:ok=3 jooble:http-error=22
+[spike gen/5] 600/785 (5602s) adzuna:http-error=71 adzuna:ok=257 adzuna:q:too_short=8 dice:http-error=2 dice:ok=3 jooble:http-error=22
+[spike gen/5] 625/785 (5868s) adzuna:http-error=83 adzuna:ok=270 adzuna:q:too_short=8 dice:http-error=2 dice:ok=3 jooble:http-error=22
+[spike gen/5] 650/785 (6037s) adzuna:http-error=84 adzuna:ok=294 adzuna:q:too_short=8 dice:http-error=2 dice:ok=3 jooble:http-error=22
+[spike gen/5] 675/785 (6263s) adzuna:http-error=91 adzuna:ok=311 adzuna:q:too_short=9 dice:http-error=2 dice:ok=3 jooble:http-error=22
+[spike gen/5] 700/785 (6416s) adzuna:http-error=94 adzuna:ok=333 adzuna:q:too_short=9 dice:http-error=2 dice:ok=3 jooble:http-error=22
+[spike gen/5] 725/785 (6665s) adzuna:http-error=101 adzuna:ok=348 adzuna:q:too_short=12 dice:http-error=2 dice:ok=3 jooble:http-error=22
+[spike gen/5] 750/785 (6806s) adzuna:http-error=102 adzuna:ok=371 adzuna:q:too_short=12 dice:http-error=2 dice:ok=3 jooble:http-error=22
+[spike gen/5] 775/785 (6974s) adzuna:http-error=103 adzuna:ok=385 adzuna:q:too_short=12 dice:http-error=2 dice:ok=4 jooble:http-error=22
+FINAL fetched=785/785 done=True
+    105 adzuna:http-error
+    392 adzuna:ok
+     12 adzuna:q:too_short
+      2 dice:http-error
+      5 dice:ok
+     22 jooble:http-error
+    243 jooble:ok
+      4 talent:ok

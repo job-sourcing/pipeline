@@ -132,14 +132,26 @@ def merge_once() -> int:
     sys.path.insert(0, str(REPO / "scripts"))
     sys.path.insert(0, str(REPO / "ingest"))
     import jd_refetch as jr  # noqa: PLC0415
+    # [S51 size law] the STORED desc caps at 4,200 chars — every
+    # consumer reads <=4,000 (the consult's [:4000] cap, the selection
+    # bars <=1,000); the 12,000-char fetch cap is a FETCH limit, never
+    # a store limit (uncapped, 13k rows x 12KB blew the file past
+    # GitHub's 100MB per-file hard limit mid-spike)
+    CAP = 4200
     base = jr._load_cache_map()
+    for k, d in base.items():
+        if len(d.get("desc") or "") > CAP:
+            d["desc"] = d["desc"][:CAP]
+            d["desc_len"] = min(d.get("desc_len", 0), CAP)
     added = 0
+    merged_files = []
     for f in sorted(SHARD_DIR.glob("*.jsonl")):
         # ONLY the result shards — never the todo_* inputs (they carry
         # {source,url,id} without status/fetched_at and would clobber
         # real cache entries in the union-merge)
         if f.name.startswith("todo_"):
             continue
+        merged_files.append(f)
         for line in f.read_text().splitlines():
             line = line.strip()
             if not line:
@@ -153,9 +165,26 @@ def merge_once() -> int:
             if (not prev
                     or d.get("fetched_at", "")
                     >= prev.get("fetched_at", "")):
+                if len(d.get("desc") or "") > CAP:
+                    d["desc"] = d["desc"][:CAP]
+                    d["desc_len"] = min(d.get("desc_len", 0), CAP)
                 base[k] = d
                 added += 1
+    # the 100MB guard: a compacted cache >97MB must NEVER be committed
+    # (GitHub's per-file hard limit bricks main — the fail-loudly law)
+    est = sum(len(json.dumps(d, ensure_ascii=False))
+              for d in base.values()) + len(base) * 2
+    if est > 97_000_000:
+        raise RuntimeError(
+            f"jd_cache compacted estimate {est/1e6:.1f}MB > 97MB — "
+            f"the cache v2 split (PLAN S52) must land before more "
+            f"merges; shards NOT truncated, merge ABORTED")
     jr._write_cache(base)
+    # the merged content is now durable in the cache: truncate the
+    # shard files (they are append-material, not a second copy —
+    # keeping them would double-commit every byte)
+    for f in merged_files:
+        f.write_text("")
     return added
 
 

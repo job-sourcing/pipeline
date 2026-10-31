@@ -3762,6 +3762,78 @@
     "gj_quarterly"
    ],
    "skip_li_corroboration": true
+  },
+  {
+   "label": "genai_recraft",
+   "board": "ats:ashby:recraft",
+   "company": "Recraft",
+   "country": "United States",
+   "li_variants": [
+    "Recraft"
+   ]
+  },
+  {
+   "label": "genai_krea",
+   "board": "ats:ashby:krea",
+   "company": "Krea",
+   "country": "United States",
+   "li_variants": [
+    "Krea"
+   ]
+  },
+  {
+   "label": "genai_higgsfield",
+   "board": "ats:ashby:higgsfieldai",
+   "company": "Higgsfield",
+   "country": "United States",
+   "li_variants": [
+    "Higgsfield"
+   ]
+  },
+  {
+   "label": "genai_comfyorg",
+   "board": "ats:ashby:comfy-org",
+   "company": "Comfy Org",
+   "country": "United States",
+   "li_variants": [
+    "Comfy Org"
+   ]
+  },
+  {
+   "label": "genai_photoroom",
+   "board": "ats:ashby:photoroom",
+   "company": "Photoroom",
+   "country": "France",
+   "li_variants": [
+    "Photoroom"
+   ]
+  },
+  {
+   "label": "genai_runware",
+   "board": "ats:workable:runware",
+   "company": "Runware",
+   "country": "United States",
+   "li_variants": [
+    "Runware"
+   ]
+  },
+  {
+   "label": "genai_speechify",
+   "board": "ats:greenhouse:speechify",
+   "company": "Speechify",
+   "country": "United States",
+   "li_variants": [
+    "Speechify"
+   ]
+  },
+  {
+   "label": "genai_huggingface",
+   "board": "ats:workable:huggingface",
+   "company": "Hugging Face",
+   "country": "United States",
+   "li_variants": [
+    "Hugging Face"
+   ]
   }
  ],
  "retired_watches": [

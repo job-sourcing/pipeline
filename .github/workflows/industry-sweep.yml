@@ -46,7 +46,11 @@ jobs:
             timeout: 90
           - slug: genai_media
             budget: 3000
-            timeout: 90
+            # [S51] the first fire hit the 90-min wall (cancelled): the
+            # 14 broad queries pull heavier jobspy/indeed result sets —
+            # 150 min matches the observed shape (the budget guard
+            # still bounds the sweep itself per-source)
+            timeout: 150
     runs-on: ubuntu-latest
     timeout-minutes: ${{ matrix.timeout }}
     steps:
