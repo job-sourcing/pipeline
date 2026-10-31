@@ -28,3 +28,19 @@
 [spike pm/1] 700/827 (6613s) adzuna:http-error=58 adzuna:ok=135 adzuna:q:too_short=10 dice:ok=8 himalayas:http-error=1 himalayas:ok=2
 [spike pm/1] 725/827 (6869s) adzuna:http-error=67 adzuna:ok=146 adzuna:q:too_short=11 dice:http-error=1 dice:ok=10 himalayas:http-error=1
 [spike pm/1] 750/827 (7098s) adzuna:http-error=71 adzuna:ok=167 adzuna:q:too_short=11 dice:http-error=1 dice:ok=10 himalayas:http-error=1
+[spike pm/1] 775/827 (7325s) adzuna:http-error=79 adzuna:ok=184 adzuna:q:too_short=11 dice:http-error=1 dice:ok=10 himalayas:http-error=1
+[spike pm/1] 800/827 (7586s) adzuna:http-error=87 adzuna:ok=198 adzuna:q:too_short=13 dice:http-error=1 dice:ok=11 himalayas:http-error=1
+[spike pm/1] 825/827 (7830s) adzuna:http-error=91 adzuna:ok=216 adzuna:q:too_short=14 dice:http-error=1 dice:ok=12 himalayas:http-error=1
+FINAL fetched=825/827 done=False
+     91 adzuna:http-error
+    216 adzuna:ok
+     14 adzuna:q:too_short
+      1 dice:http-error
+     12 dice:ok
+      1 himalayas:http-error
+      2 himalayas:ok
+      1 indeed:http-error
+      4 indeed:ok
+     69 jooble:http-error
+    413 jooble:ok
+      1 talent:ok

@@ -27,3 +27,4 @@
 [spike dmm/1] 650/710 (6901s) adzuna:http-error=38 adzuna:ok=68 adzuna:q:too_short=7 dice:http-error=1 glassdoor:http-error=3 glassdoor:ok=7
 [spike dmm/1] 675/710 (7092s) adzuna:http-error=41 adzuna:ok=89 adzuna:q:too_short=8 dice:http-error=1 glassdoor:http-error=3 glassdoor:ok=7
 [spike dmm/1] 700/710 (7284s) adzuna:http-error=44 adzuna:ok=104 adzuna:q:too_short=9 dice:http-error=1 dice:ok=1 glassdoor:http-error=3
+[spike dmm/1] DONE fetched=710 of 710 in 7367s

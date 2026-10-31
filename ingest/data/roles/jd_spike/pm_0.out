@@ -29,3 +29,7 @@
 [spike pm/0] 700/828 (6609s) adzuna:http-error=52 adzuna:ok=135 adzuna:q:low_text_density=1 adzuna:q:too_short=6 dice:http-error=1 dice:ok=3
 [spike pm/0] 725/828 (6857s) adzuna:http-error=61 adzuna:ok=149 adzuna:q:low_text_density=1 adzuna:q:too_short=7 dice:http-error=1 dice:ok=4
 [spike pm/0] 750/828 (7073s) adzuna:http-error=66 adzuna:ok=166 adzuna:q:low_text_density=1 adzuna:q:too_short=7 dice:http-error=2 dice:ok=6
+[spike pm/0] 775/828 (7292s) adzuna:http-error=71 adzuna:ok=185 adzuna:q:low_text_density=1 adzuna:q:too_short=7 dice:http-error=2 dice:ok=6
+[spike pm/0] 800/828 (7491s) adzuna:http-error=78 adzuna:ok=199 adzuna:q:low_text_density=1 adzuna:q:too_short=9 dice:http-error=2 dice:ok=7
+[spike pm/0] 825/828 (7668s) adzuna:http-error=80 adzuna:ok=216 adzuna:q:low_text_density=1 adzuna:q:too_short=10 dice:http-error=2 dice:ok=7
+[spike pm/0] DONE fetched=828 of 828 in 7716s

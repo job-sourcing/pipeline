@@ -30,3 +30,4 @@
 [spike gen/1] 725/785 (6838s) adzuna:http-error=106 adzuna:ok=345 adzuna:q:too_short=9 dice:http-error=2 dice:ok=3 jooble:http-error=33
 [spike gen/1] 750/785 (7012s) adzuna:http-error=108 adzuna:ok=366 adzuna:q:too_short=10 dice:http-error=2 dice:ok=4 jooble:http-error=33
 [spike gen/1] 775/785 (7235s) adzuna:http-error=110 adzuna:ok=379 adzuna:q:too_short=10 dice:http-error=2 dice:ok=4 indeed:ok=1
+[spike gen/1] DONE fetched=785 of 785 in 7302s
