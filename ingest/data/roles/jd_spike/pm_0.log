@@ -1,0 +1,7 @@
+FINAL fetched=3/1655 done=False
+      3 jooble:ok
+[spike pm/0] 25/828 (363s) jooble:http-error=3 jooble:ok=22
+[spike pm/0] 50/828 (623s) jooble:http-error=3 jooble:ok=47
+[spike pm/0] 75/828 (909s) jooble:http-error=4 jooble:ok=71
+[spike pm/0] 100/828 (1128s) jooble:http-error=6 jooble:ok=94
+[spike pm/0] 125/828 (1330s) jooble:http-error=6 jooble:ok=119

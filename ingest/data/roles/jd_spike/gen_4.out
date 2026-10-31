@@ -1,0 +1,6 @@
+[spike gen/4] todo-total=-1 mine=785 keys=18
+[spike gen/4] 25/785 (370s) adzuna:http-error=1 adzuna:ok=3 adzuna:q:too_short=1 jooble:ok=20
+[spike gen/4] 50/785 (582s) adzuna:http-error=3 adzuna:ok=9 adzuna:q:too_short=3 jooble:ok=35
+[spike gen/4] 75/785 (816s) adzuna:http-error=3 adzuna:ok=9 adzuna:q:too_short=3 jooble:ok=60
+[spike gen/4] 100/785 (1044s) adzuna:http-error=3 adzuna:ok=9 adzuna:q:too_short=3 jooble:ok=85
+[spike gen/4] 125/785 (1274s) adzuna:http-error=3 adzuna:ok=9 adzuna:q:too_short=3 jooble:ok=110

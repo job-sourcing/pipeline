@@ -1,0 +1,6 @@
+[spike pm/1] todo-total=-1 mine=827 keys=18
+[spike pm/1] 25/827 (340s) jooble:http-error=1 jooble:ok=24
+[spike pm/1] 50/827 (612s) jooble:http-error=3 jooble:ok=47
+[spike pm/1] 75/827 (881s) jooble:http-error=3 jooble:ok=72
+[spike pm/1] 100/827 (1159s) jooble:http-error=5 jooble:ok=95
+[spike pm/1] 125/827 (1390s) jooble:http-error=6 jooble:ok=119

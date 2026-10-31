@@ -44,6 +44,9 @@ jobs:
           - slug: home_services_us
             budget: 3000
             timeout: 90
+          - slug: genai_media
+            budget: 3000
+            timeout: 90
     runs-on: ubuntu-latest
     timeout-minutes: ${{ matrix.timeout }}
     steps:

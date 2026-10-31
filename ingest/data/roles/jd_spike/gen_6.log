@@ -1,0 +1,5 @@
+[spike gen/6] 25/785 (240s) adzuna:http-error=1 adzuna:ok=4 jooble:ok=20
+[spike gen/6] 50/785 (511s) adzuna:http-error=5 adzuna:ok=9 jooble:http-error=1 jooble:ok=35
+[spike gen/6] 75/785 (772s) adzuna:http-error=5 adzuna:ok=9 jooble:http-error=1 jooble:ok=60
+[spike gen/6] 100/785 (1003s) adzuna:http-error=5 adzuna:ok=9 jooble:http-error=1 jooble:ok=85
+[spike gen/6] 125/785 (1229s) adzuna:http-error=5 adzuna:ok=9 jooble:http-error=1 jooble:ok=110

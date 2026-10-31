@@ -210,6 +210,52 @@ INDUSTRIES: dict[str, dict] = {
         "queries": _BA_QUERIES + _US_EXTRA_QUERIES,
         "affirm_tokens": _BA_AFFIRM + _US_EXTRA_AFFIRM,
     },
+    # [S51] the GenAI-media sector (the S51-B charter): the catch-all
+    # keyword sweep over the aggregators — the top-of-funnel complement
+    # to the per-company boards (board-detection pass). US-wide + remote:
+    # the production-roles class is LA/NY/remote-heavy but the sector's
+    # employers are everywhere.
+    "genai_media": {
+        "display": "GenAI media production (image/video/audio/3D) × US-wide",
+        "location": None,
+        "adzuna_location": None,
+        "region_gate": "us",
+        "queries": (
+            # the tool-practitioner class (the curious-refuge audience)
+            "generative AI artist",
+            "AI video editor",
+            "AI filmmaker",
+            "AI motion designer",
+            "prompt engineer",
+            "generative AI designer",
+            "AI content creator",
+            # the engineering class at the GenAI companies themselves
+            "generative AI engineer",
+            "AI video engineer",
+            "text to video machine learning",
+            "generative media research",
+            "AI production coordinator",
+            "creative technologist AI",
+            "AIGC designer",
+        ),
+        "affirm_tokens": (
+            # tool + company + craft names — the GenAI-media lexicon
+            "generative ai", r"\bgen.?ai\b", "midjourney", "runway",
+            "sora", r"\bflux\b", "stable diffusion", "comfyui",
+            "comfy ui", "text-to-video", "text to video", "ai video",
+            "ai film", "ai filmmaking", "ai image", "ai art",
+            "ai artist", "ai motion", "generative video",
+            "generative image", "generative media", "aigc",
+            "prompt engineer", "kling", "seedance", "pixverse",
+            "hailuo", "luma ai", "higgsfield", "krea ai",
+            "ai generation pipeline", "diffusion model",
+            "video generation model", "ai dubbing", "ai voice",
+            "ai music", "text-to-3d", "ai 3d generation",
+            "world model", "ai content studio", "creative ai",
+            "generative content", "ai content", "ai production",
+            "creative technologist",
+        ),
+    },
 }
 
 # ── the affirm gate (F12) ───────────────────────────────────────────────────

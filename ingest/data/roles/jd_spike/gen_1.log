@@ -1,0 +1,5 @@
+[spike gen/1] 25/785 (318s) adzuna:http-error=3 adzuna:ok=2 jooble:http-error=2 jooble:ok=18
+[spike gen/1] 50/785 (526s) adzuna:http-error=3 adzuna:ok=11 adzuna:q:too_short=1 jooble:http-error=2 jooble:ok=32 talent:ok=1
+[spike gen/1] 75/785 (772s) adzuna:http-error=3 adzuna:ok=11 adzuna:q:too_short=1 jooble:http-error=2 jooble:ok=57 talent:ok=1
+[spike gen/1] 100/785 (1064s) adzuna:http-error=3 adzuna:ok=11 adzuna:q:too_short=1 jooble:http-error=8 jooble:ok=76 talent:ok=1
+[spike gen/1] 125/785 (1416s) adzuna:http-error=3 adzuna:ok=11 adzuna:q:too_short=1 jooble:http-error=14 jooble:ok=95 talent:ok=1

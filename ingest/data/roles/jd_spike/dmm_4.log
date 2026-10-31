@@ -1,0 +1,5 @@
+[spike dmm/4] 25/710 (262s) jooble:ok=25
+[spike dmm/4] 50/710 (515s) jooble:ok=50
+[spike dmm/4] 75/710 (764s) adzuna:http-error=2 adzuna:q:too_short=1 jooble:ok=72
+[spike dmm/4] 100/710 (1027s) adzuna:http-error=6 adzuna:ok=8 adzuna:q:too_short=1 jooble:http-error=1 jooble:ok=84
+[spike dmm/4] 125/710 (1299s) adzuna:http-error=7 adzuna:ok=10 adzuna:q:too_short=1 jooble:http-error=3 jooble:ok=104

@@ -879,3 +879,37 @@ class TestAdzunaCategoryStamp:
         assert d["envelope"]["adzuna_category_stamped"] == 2
         rep = (tmp_path / "home_services_us.report.md").read_text()
         assert "2 stamped, 0 filtered" in rep
+
+class TestGenaiMediaIndustry:
+    """[S51] the GenAI-media catch-all sweep registry entry."""
+
+    def test_entry_shape(self):
+        g = isw.INDUSTRIES["genai_media"]
+        assert g["region_gate"] == "us"
+        assert g["location"] is None and g["adzuna_location"] is None
+        assert len(g["queries"]) >= 12
+        assert len(g["affirm_tokens"]) >= 30
+
+    def test_every_query_is_self_affirmable(self):
+        # the S42-R1 F9 law: a query its own token set cannot affirm
+        # is a dead query (its rows all die at industry_no_affirm)
+        g = isw.INDUSTRIES["genai_media"]
+        pat = isw._compile_affirms(g["affirm_tokens"])
+        for q in g["queries"]:
+            assert pat.search(q), f"unaffirmable query: {q}"
+
+    def test_affirms_genai_rows(self):
+        g = isw.INDUSTRIES["genai_media"]
+        pat = isw._compile_affirms(g["affirm_tokens"])
+        assert pat.search("Runway ML artist residency")
+        assert pat.search("Midjourney prompt engineer")
+        assert pat.search("Generative AI Video Producer")
+        assert pat.search("AI Filmmaking instructor")
+
+    def test_no_false_positive_on_home_services(self):
+        # the sister industry's rows must NOT affirm genai (boundary
+        # check: kitchen remodel / plumbing never match the genai set)
+        g = isw.INDUSTRIES["genai_media"]
+        pat = isw._compile_affirms(g["affirm_tokens"])
+        assert not pat.search("Kitchen Remodel Project Manager")
+        assert not pat.search("Licensed Plumbing Technician")

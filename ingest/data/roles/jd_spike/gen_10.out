@@ -1,0 +1,7 @@
+[spike gen/10] todo-total=-1 mine=784 keys=18
+[spike gen/10] 25/784 (241s) adzuna:ok=3 adzuna:q:too_short=1 dice:ok=1 jooble:ok=20
+[spike gen/10] 50/784 (464s) adzuna:ok=13 adzuna:q:too_short=1 dice:ok=1 jooble:ok=35
+[spike gen/10] 75/784 (715s) adzuna:ok=13 adzuna:q:too_short=1 dice:ok=1 jooble:ok=60
+[spike gen/10] 100/784 (949s) adzuna:ok=13 adzuna:q:too_short=1 dice:ok=1 jooble:ok=85
+[spike gen/10] 125/784 (1178s) adzuna:ok=13 adzuna:q:too_short=1 dice:ok=1 jooble:ok=110
+[spike gen/10] 150/784 (1412s) adzuna:ok=13 adzuna:q:too_short=1 dice:ok=1 jooble:ok=135

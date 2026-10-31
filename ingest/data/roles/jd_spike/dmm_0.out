@@ -1,0 +1,6 @@
+[spike dmm/0] todo-total=-1 mine=710 keys=18
+[spike dmm/0] 25/710 (341s) jooble:http-error=2 jooble:ok=23
+[spike dmm/0] 50/710 (566s) jooble:http-error=2 jooble:ok=48
+[spike dmm/0] 75/710 (819s) adzuna:http-error=2 glassdoor:ok=1 jooble:http-error=2 jooble:ok=70
+[spike dmm/0] 100/710 (1071s) adzuna:http-error=8 adzuna:ok=7 glassdoor:ok=1 jooble:http-error=2 jooble:ok=82
+[spike dmm/0] 125/710 (1328s) adzuna:http-error=8 adzuna:ok=8 adzuna:q:too_short=1 glassdoor:ok=1 jooble:http-error=2 jooble:ok=105
