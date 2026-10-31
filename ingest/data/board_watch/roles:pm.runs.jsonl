@@ -15,3 +15,4 @@
 {"ts": "2026-10-27T16:59:47Z", "family": "pm", "verdict": "complete", "rows": 7220, "sources_dead": ["usajobs"]}
 {"ts": "2026-10-28T18:19:12Z", "family": "pm", "verdict": "complete", "rows": 7400, "sources_dead": ["usajobs", "builtin"]}
 {"ts": "2026-10-30T17:23:34Z", "family": "pm", "verdict": "complete", "rows": 7745, "sources_dead": []}
+{"ts": "2026-10-31T16:27:34Z", "family": "pm", "verdict": "complete", "rows": 8103, "sources_dead": []}
