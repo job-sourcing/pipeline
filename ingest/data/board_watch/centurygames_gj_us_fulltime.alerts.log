@@ -2,3 +2,9 @@ Century Games board-watch 2026-10-14: +1 new, -0 gone (1 active [centurygames_gj
 NEW Bilingual Game Operations Support | Anywhere | Posted 13 Days Ago | https://www.google.com/search?q=Bilingual+Game+Operations+Support+Century+Games&ibp=htl;jobs&hl=en&gl=us
 (2026-10-14T13:11:31)
 
+board-watch centurygames_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:centurygames: firecrawl scrape failed (http402) — failing loudly, state untouched)
+(2026-11-01T16:56:37)
+
+board-watch centurygames_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:centurygames: firecrawl scrape failed (http402) — failing loudly, state untouched)
+(2026-11-01T16:58:45)
+
