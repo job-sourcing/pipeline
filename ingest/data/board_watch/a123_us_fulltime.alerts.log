@@ -12,3 +12,6 @@ board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared 
 board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='www.a123systems.com', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
 (2026-10-30T13:37:29)
 
+board-watch a123_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ConnectionError: HTTPSConnectionPool(host='www.a123systems.com', port=443): Max retries exceeded with url: /join_us/p-6-6.html (Caused by NewConnectionError("HTTPSConnection(host='www.a123systems.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))) — UNREACHABLE, state untouched; streak 1/14
+(2026-11-01T16:55:39)
+
