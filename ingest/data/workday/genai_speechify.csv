@@ -1,0 +1,68 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+E-8-2025-2,"Tech Lead, Android Core Product - Albuquerque, NM, USA",Speechify,Speechify,,Posted 417 Days Ago,,,"Albuquerque, NM, USA",1,"Albuquerque, NM, USA",false,,United States,,0,"<p>The mission of Speechify is to make sure that reading is never a barrier to learning.</p>
+<p>Over 50 million people use Speechify’s text-to-speech products to turn whatever they’re reading – PDFs, books, Google Docs, news articles, websites – into audio, so they can read faster, read more, and remember more. Speechify’s text-to-speech reading products include its iOS app, Android App, Mac App, Chrome Extension, and Web App. Google recently named Speechify the Chrome Extension of the Year and Apple named Speechify its Design award winner for inclusivity for 2025.</p>
+<p>Today, nearly 200 people around the globe work on Speechify in a 100% distributed setting – Speechify has no office. These include frontend and backend engineers, AI research scientists, and others from Amazon, Microsoft, and Google, leading PhD programs like Stanford, high growth startups like Stripe, Vercel, Bolt, and many founders of their own companies.</p>
+<p><strong>Overview</strong></p>
+<p data-speechify-sentence="""">With the growth of our Android app, being the most used text-to-speech app in the Play Store, we find the need for a Senior Android Engineer to help us support the new user base as well as work on new and exciting projects to push us forward.   </p>
+<p data-speechify-sentence="""">This is a key role and ideal for someone who thinks strategically, enjoys fast-paced environments, passionate about making product decisions, and has experience building great user experiences that delight users.</p>
+<p data-speechify-sentence="""">We are a flat organization that allows anyone to become a leader by showing excellent technical skills and delivering results consistently and fast. Work ethic, solid communication skills, and obsession with winning are paramount. </p>
+<p data-speechify-sentence="""">Our interview process involves several technical interviews and we aim to complete them within 1 week. </p>
+<p><strong>What Yo</strong><strong>u’</strong><strong>ll Do</strong></p>
+<ul>
+<li data-speechify-sentence="""">Owning major features and working closely with our design team - take ownership of features inside the app and become responsible of delivering high quality features</li>
+<li data-speechify-sentence="""">Shape the future of our Android team</li>
+<li data-speechify-sentence="""">Own, maintain and improve reliability metrics for key features</li>
+<li data-speechify-sentence="""">Participate in discussions across different teams - Product, Design, Engineering</li>
+<li data-speechify-sentence="""">Review pull requests, and support other teammates</li>
+<li data-speechify-sentence="""">Handle critical issues or cope with unexpected challenges </li>
+<li data-speechify-sentence="""">Take ownership of feature releases and provide nightly builds for the QA team</li>
+</ul>
+<p><strong>An Ideal Candidate Should Have</strong></p>
+<ul>
+<li data-speechify-sentence="""">5+ years of software engineering experience</li>
+<li data-speechify-sentence="""">Familiarity with Android components</li>
+<li data-speechify-sentence="""">Experience building or contributing to at least one Android app</li>
+<li data-speechify-sentence="""">Product design intuition and user empathy</li>
+<li data-speechify-sentence="""">Drive to push the boundaries of Android UI/UX</li>
+<li data-speechify-sentence="""">Understanding of the importance of tests and how to approach writing tests</li>
+<li data-speechify-sentence="""">Self-drive to improve the app and codebase above and beyond what's outlined in the spec</li>
+<li data-speechify-sentence="""">Rock solid experience with Kotlin, Kotlin Coroutines, Kotlin Flow, Dagger 2, MVVM, Clean Architecture, Background Services, Music Player Service, Android Animations, Jetpack Navigation, JUnit tests</li>
+<li data-speechify-sentence="""">Excellent communication skills</li>
+<li data-speechify-sentence="""">User oriented problem solving approach</li>
+<li data-speechify-sentence="""">Driven with continuous feedback from leaders</li>
+</ul>
+<p data-speechify-sentence=""""><strong>Bonus:</strong></p>
+<ul>
+<li data-speechify-sentence="""">Experience building, maintaining, or otherwise contributing to open source projects in Android</li>
+<li data-speechify-sentence="""">Experience with iOS, Web or NodeJS</li>
+</ul>
+<p data-speechify-sentence=""""><strong>Technologies we use:</strong></p>
+<ul>
+<li data-speechify-sentence="""">Kotlin</li>
+<li data-speechify-sentence="""">Kotlin Coroutines</li>
+<li data-speechify-sentence="""">Kotlin Flow</li>
+<li data-speechify-sentence="""">Jetpack Navigation</li>
+<li data-speechify-sentence="""">Dagger 2</li>
+<li data-speechify-sentence="""">Room</li>
+<li data-speechify-sentence="""">Custom Views, Canvas & Paint</li>
+<li data-speechify-sentence="""">Jetpack Compose</li>
+<li data-speechify-sentence="""">JUnit</li>
+</ul>
+<p data-speechify-sentence=""""><strong>What We offer</strong>:</p>
+<ul>
+<li>A fast-growing environment where you can help shape the company and product.</li>
+<li>An entrepreneurial-minded team that supports risk, intuition, and hustle.</li>
+<li>A hands-off management approach so you can focus and do your best work.</li>
+<li>An opportunity to make a big impact in a transformative industry.</li>
+<li>Competitive salaries, a friendly and laid-back atmosphere, and a commitment to building a great asynchronous culture.</li>
+<li>Opportunity to work on a life-changing product that millions of people use.</li>
+<li>Build products that directly impact and support people with learning differences like dyslexia, ADD, low vision, concussions, autism, and more.</li>
+<li>Work in one of the fastest growing sectors of tech, the intersection of artificial intelligence and audio.</li>
+</ul>
+<p><strong>The United States Based </strong>Salary range for this role is: 140,000-200,000 USD/Year + Bonus + Stock depending on experience</p>
+<p><strong>Think you’re a good fit for this job? </strong></p>
+<p>Tell us more about yourself and why you're interested in the role when you apply. <br>And don’t forget to include links to your portfolio and LinkedIn.</p>
+<p><strong>Not looking but know someone who would make a great fit? </strong></p>
+<p>Refer them! </p>
+<p><strong>Speechify is committed to a diverse and inclusive workplace. </strong></p>
+<p>Speechify does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status.</p>",6383,https://job-boards.greenhouse.io/speechify/jobs/5975623004,,https://www.linkedin.com/jobs/view/4475809897,2026-09-10,25,among first 25,,matched,,2026-10-31,2026-10-31T13:11:44,2026-11-01,,52,startDate+linkedin,true,0,,,,,,2026-09-10,,true,,,,,,

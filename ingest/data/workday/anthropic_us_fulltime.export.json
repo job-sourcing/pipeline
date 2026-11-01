@@ -1,9 +1,9 @@
 {
  "label": "anthropic_us_fulltime",
  "rows": 484,
- "kept": 479,
- "new": 5,
- "ghosts_dropped": 4,
+ "kept": 484,
+ "new": 0,
+ "ghosts_dropped": 0,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -14,5 +14,5 @@
  "state_rows": 485,
  "banded": 62,
  "lca_pools": 98,
- "snapshot": "2026-10-31"
+ "snapshot": "2026-11-01"
 }

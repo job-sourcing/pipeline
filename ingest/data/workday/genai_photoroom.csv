@@ -1,0 +1,1057 @@
+﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
+085eaa32-44fe-4928-8826-b48873823bfd,Head of GenAI Platform,Photoroom,photoroom,Full time,Posted 111 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
+
+Head of GenAI Platform
+
+Role Summary
+
+We're looking for a Head of GenAI Platform to lead the strategy and technical direction behind Photoroom's generative AI platform, spanning model orchestration, evaluation, agentic workflows, and foundation model training, enabling our teams to ship breakthrough AI products faster than anyone else. You'll partner closely with our Infrastructure team on inference infrastructure and model serving, rather than owning that layer outright.
+
+This is a highly strategic leadership role combining strong technical grounding, organisational leadership, and product thinking. Deep technical expertise already exists across our ML and Research teams, so we're not looking for the single deepest expert in the room, we're looking for someone who has been hands-on in ML or research themselves, understands the space well enough to lead a credible technical conversation and make sound calls, and can create the conditions for that expertise to thrive. You'll work closely with our CTO and senior leaders across Product and Engineering to shape how AI is built, deployed, and scaled across the company.
+
+Compensation: Competitive salary + meaningful equity
+
+Location: Paris, France (Hybrid)
+
+Relocation: Visa sponsorship and relocation support up to €10,000 available
+
+About the Role
+
+You'll be responsible for building both the technical foundations and the organisation that enable Photoroom's next generation of AI products.
+
+Your responsibilities will include:
+
+•
+Defining the long-term vision and technical strategy for our GenAI Platform around model orchestration, evaluation, agentic workflows and foundation model training
+
+•
+Partnering with our Infrastructure team on inference infrastructure, model serving and reliability, so the platform stays scalable and cost-efficient across billions of inference requests
+
+•
+Partnering with Research to rapidly bring new models into production
+
+•
+Leading and growing a multidisciplinary team of ML Engineers, Software Engineers and Researchers, setting direction for the team as a whole, while day-to-day management of individual contributors continues through the team's existing engineering leads
+
+•
+Creating an environment where ambitious technical ideas can move from research to production in days rather than months
+
+•
+Building evaluation frameworks that measure model quality, cost and latency consistently across the platform
+
+•
+Working closely with Product, Engineering and Executive leadership to ensure platform investments directly accelerate product innovation
+
+What You'll Bring
+
+We're looking for someone with strong technical grounding and proven leadership experience. You don't need to be the foremost technical authority in every area, as that depth already exists in the team, but you should have been a hands-on ML/research practitioner at some point in your career, ideally with some research experience, so you can lead the function credibly.
+
+You'll likely have:
+
+•
+Significant experience leading Machine Learning or AI organisations within product-focused companies, having started your career as a hands-on ML engineer or researcher before moving into leadership
+
+•
+Experience building and operating AI platforms: model orchestration, evaluation pipelines or agent frameworks, with enough grounding in inference infrastructure and model serving to partner effectively with an Infrastructure team, without needing to own that layer directly
+
+•
+Strong technical expertise across Generative AI, Computer Vision or Foundation Models
+
+•
+A track record of taking emerging technologies from research into production systems used by millions of users. We don't expect deep, specific agentic-workflow experience, the field is relatively new and nobody has a long track record there, but we do want evidence you can effectively leverage new technologies to productise what's next
+
+•
+Experience growing high-performing engineering and research teams through hiring, coaching and organisational design
+
+•
+Enough technical depth to follow and meaningfully contribute to an architecture conversation outside your core area, you don't need all the answers, but you must understand the building blocks well enough to ask the right questions and make a call when needed
+
+•
+Strong product instincts and the ability to balance long-term technical investments against immediate customer impact
+
+•
+Excellent communication skills and experience partnering with Product, Engineering, Marketing and Executive stakeholders
+
+What Success Looks Like
+
+Within your first 12-18 months, you'll have:
+
+•
+Established a clear long-term strategy for Photoroom's AI platform
+
+•
+Built infrastructure that significantly reduces the time required to ship new AI capabilities
+
+•
+Enabled research teams to move new models into production rapidly and reliably
+
+•
+Improved platform performance, reliability and infrastructure efficiency at scale, in close partnership with the Infrastructure team
+
+•
+Built and retained a world-class team of ML Engineers, Researchers and Platform Engineers
+
+•
+Created evaluation frameworks that allow model quality, cost and latency to be measured consistently across the platform
+
+•
+Helped define the technical direction that underpins the next generation of AI-powered products at Photoroom
+
+Why This Role Matters
+
+Every AI capability at Photoroom depends on the platform your team builds.
+
+From foundation model training to model orchestration, evaluation pipelines and production inference, you'll shape the technical backbone that enables our teams to innovate quickly while operating at massive scale.
+
+This is an opportunity to influence both the long-term direction of our AI strategy and the systems that process billions of images every year.
+
+About Photoroom
+
+Photoroom was launched in 2020 after being accepted into Y Combinator and has grown into one of the world's leading AI photo editing platforms.
+
+Today we have:
+
+•
+Over 300 million downloads
+
+•
+More than 5 billion images processed annually
+
+•
+Millions of active users across mobile, web and API
+
+•
+Customers ranging from individual creators to global brands including Amazon, Shopify, eBay, DoorDash, Decathlon and Depop
+
+We're profitable, growing rapidly and continuing to invest heavily in AI research and product innovation. Our teams train our own foundation models, operate large-scale GPU infrastructure, and build AI products used every day by millions of people worldwide.
+
+Working at Photoroom
+
+We believe great people do their best work when given ownership, autonomy and ambitious problems to solve.
+
+We offer:
+
+•
+Competitive salary and meaningful equity
+
+•
+Hybrid working from our Paris headquarters
+
+•
+Visa sponsorship and relocation support
+
+•
+MacBook Pro and full home office setup
+
+•
+30 days annual leave
+
+•
+Private healthcare
+
+•
+Regular company off-sites and team retreats
+
+•
+A collaborative, high-performance engineering culture focused on shipping impactful AI products
+
+Hiring Process
+
+•
+Recruiter conversation
+
+•
+Leadership & values conversation with our CTO
+
+•
+Technical screening
+
+•
+Technical case study (working session)
+
+•
+Leadership and cross-functional interviews
+
+•
+References
+
+•
+Offer
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",8483,https://jobs.ashbyhq.com/photoroom/085eaa32-44fe-4928-8826-b48873823bfd,,,,,,,not_checked,,2026-10-31,,2026-11-01,,,,true,0,,,,,,,,,,,,,,
+12001ea8-3725-4ac7-a5dc-cb2165678223,Senior People Ops Manager (International),Photoroom,photoroom,Full time,Posted 24 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
+
+The role
+
+We are looking for a Senior People Operations Manager to own and improve the systems, processes and operational foundations behind our People function, across all of our markets.
+
+You will own the core People Operations scope: payroll, HRIS, contracts, compliance, benefits, employee lifecycle operations, immigration, people data and our HR tooling. But this is not simply a role about running existing processes - your job is to make them better. You will build the people workflows, automation, documentation and self-service mechanisms that allow Photoroom to keep moving quickly as we grow, without creating unnecessary complexity.
+
+This scope has so far sat within a small generalist People team. You will be the first person to own it as a dedicated senior scope, giving you the opportunity to shape this operating model.
+
+We are also an AI-native company, and we want our People function to operate the same way. We expect you to actively use automation and AI to improve speed, reliability and employee experience, while maintaining a high bar for privacy, compliance and trust.
+
+You will report to our VP People. This is a senior individual contributor role with no direct reports today.
+
+Why this role exists
+
+We have built a lot quickly. Today, our People Operations environment includes:
+
+•
+French and USA payroll and entity obligations
+
+•
+European employees through an EOR setup
+
+•
+Growing Paris and New York offices
+
+•
+Multiple benefits providers and external partners
+
+•
+An HR technology stack that has grown alongside the company
+
+The foundations work. Now they need a clear owner and regular improvements.
+
+We want to move from processes that depend on individual knowledge and manual intervention to an operating model that is documented, automated, measurable and more self-service for our employees.
+
+Your goal is to strengthen our foundations with proven best practices and build a model that scales comfortably with the company.
+
+What you will own
+
+Payroll
+
+•
+Own and Run monthly payroll for France and our European population, and twice-monthly US payroll, working closely with our external providers
+
+•
+Manage relationships with payroll, EOR and employment providers
+
+Compliance
+
+•
+Maintain our French statutory obligations and HR compliance calendar, including employee records, social declarations, DUERP and employee data requirements
+
+•
+Own the operational administration of our CSE, including convocations, agendas, meeting preparation, PV review, annual budget administration and mandatory timelines
+
+•
+Monitor relevant employment law developments and translate changes into concrete actions
+
+•
+Coordinate compliance across our European and US setups, with deep expertise expected in France primarly
+
+Contracts and People documentation
+
+•
+Employment contracts, amendments, offer letters, attestations and standard HR letters, maintaining and improving templates as our organisation and legal environment evolve
+
+•
+Setting clear service levels for recurring People Ops requests
+
+•
+Building practical People playbooks and documentation that employees and managers can actually find, understand and use
+
+Employee lifecycle
+
+•
+Onboarding administration from signed offer through day one, coordinating payroll, benefits, declarations, IT access, equipment, manager actions ect..
+
+•
+Offboarding and exit administration, including documentation, payroll, benefits, access removal and final employment documents
+
+•
+Promotions, compensation changes, employment changes, contract amendments, leaves, parental leave and other employee changes
+
+•
+Immigration and visa administration, including external providers, applications, renewals and deadline tracking
+
+Benefits & Compensation
+
+•
+Administer benefits and manage providers across France, Europe and the US
+
+•
+Run annual renewals with Finance and the VP People, using cost, usage and employee value to inform decisions
+
+•
+Support compensation benchmarking and salary band maintenance
+
+HRIS, data and automation
+
+Our HRIS is Hibob today, which may or may not change. You will own the reliability and evolution of our People systems.
+
+This includes:
+
+•
+HRIS configuration, permissions, workflows, integrations and data quality
+
+•
+Making the HRIS the reliable source of truth for employee data
+
+•
+Assessing opportunities to consolidate or improve our HR technology stack
+
+•
+Automating repetitive workflows wherever doing so improves speed and reliability
+
+Employee support
+
+You will help us move from a People team that repeatedly answers standard questions to one that builds systems people can use themselves.
+
+You will build the documentation, workflows, processes and self-service infrastructure that make the majority of standard People requests easy to solve without intervention, while personally handling the exceptions and escalations that genuinely require expertise.
+
+What we are looking for
+
+You have already owned a meaningful People Operations scope in a fast-moving company of +100 employees.
+
+In particular, we are looking for:
+
+•
+Hands-on experience with French payroll and employment compliance
+
+•
+Experience owning People Operations processes, workflows, and controls
+
+•
+HRIS experience. Hibob is a plus, but experience configuring and improving a comparable system matters more
+
+•
+A systems mindset and a strong instinct for automation
+
+•
+Excellent operational judgement. You know which issues you can solve yourself and which require specialist advice
+
+•
+High standards of accuracy, discretion and follow-through
+
+•
+Comfort operating independently in a small team where you will both design the process and run it
+
+•
+Fluent French and English. English is our working language, while much of our payroll and employment law environment is French
+
+•
+Based in Paris and able to work from our office at least three days per week.
+
+The person who will thrive here likes that combination: build it, simplify it, automate it and own it.
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",7233,https://jobs.ashbyhq.com/photoroom/12001ea8-3725-4ac7-a5dc-cb2165678223,,,,,,,not_checked,,2026-10-31,,2026-11-01,,,,true,0,,,,,,,,,,,,,,
+41ba8841-a50e-49a2-947a-15dff61bbd55,Product ML Engineer,Photoroom,photoroom,Full time,Posted 5 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
+
+Role Summary
+
+We're looking for a Product ML Engineer to join one of our product experience teams — SMB, Scaler or Enterprise — and own the ML side of short, high-impact projects.
+
+You'll work on focused ML problems with a clear product outcome, sometimes fine-tuning one of our models, sometimes integrating the best externally available model, but always choosing the fastest and most effective path to customer value.
+
+You'll bring the technical depth of an Applied Scientist while operating with the pace and pragmatism of a product engineer. You'll own the journey from framing the problem through to shipping, measuring and iterating on the feature in production.
+
+This is not a research role. Your time horizon is weeks rather than quarters, and success is measured by what reaches users and the impact it creates.
+
+About the role
+
+•
+Embed directly within a product team. Work closely with the SMB, Scaler or Enterprise team on focused ML problems tied to clear customer and business outcomes.
+
+•
+Own ML projects end to end. Frame the problem, choose the approach, execute the plan, ship the feature and monitor its performance in production.
+
+•
+Make the build vs. buy decision. Determine when to fine-tune or build a model yourself versus integrating an external model, API or existing library.
+
+•
+Move from idea to production quickly. Work on projects scoped in weeks rather than quarters, prioritising rapid iteration and customer impact.
+
+•
+Work closely with the ML team. Leverage shared infrastructure, evaluation tooling and expertise while remaining embedded in the product team's priorities and cadence.
+
+•
+Stay close to users. Get rapid feedback from customers, monitor how people use what you've shipped and use those insights to drive the next iteration.
+
+•
+Balance technical depth with pragmatism. Know when deeper modelling work is necessary and when an existing solution is already good enough to ship.
+
+•
+Write production code. Work directly in the product team's codebase rather than operating primarily through research notebooks and experiments.
+
+•
+Own quality in production. Build sound evaluations, monitor performance and investigate failures once the feature is live.
+
+About You
+
+•
+You've shipped ML into production. You have 2+ years of hands-on experience building and shipping ML-powered products, with strong experience in PyTorch or equivalent frameworks such as TensorFlow or JAX.
+
+•
+You have applied-science depth. You can fine-tune vision or diffusion models, design meaningful evaluations and debug training runs when necessary.
+
+•
+You're a pragmatic builder. You care about solving the customer's problem rather than proving that your own model is the best approach. You'll happily use an external model, API or existing library when that's the fastest route to value.
+
+•
+You're product-minded. You measure success through shipped features, user behaviour and business outcomes rather than papers or benchmarks alone.
+
+•
+You're comfortable in production codebases. You can move between experimentation and production engineering, writing maintainable code that lives inside a real product.
+
+•
+You have strong ownership. You're comfortable taking an ambiguous ML problem, deciding what matters, choosing an approach and driving it through to production.
+
+•
+You iterate quickly. You enjoy short feedback loops and would rather ship something useful, learn from users and improve it than spend months optimising something that hasn't reached production.
+
+•
+You're curious and collaborative. You can both explain your expertise and learn from the deep technical expertise around you. You value knowledge sharing and humility.
+
+•
+You're fluent in English. French isn't required.
+
+Nice to have: experience shipping generative image models or diffusion models into production; experience evaluating third-party AI APIs against internal alternatives; experience working in a fast-growing startup or directly within a product team.
+
+Benefits
+
+•
+Competitive salary + meaningful equity
+
+•
+Hybrid working from our Paris headquarters
+
+•
+Visa sponsorship and relocation support up to €10,000
+
+•
+MacBook Pro and full home office setup
+
+•
+30 days annual leave
+
+•
+Private healthcare
+
+•
+Regular company off-sites and team retreats
+
+•
+International English-speaking team
+
+•
+Language lessons in English and French
+
+Hiring Process
+
+•
+Screening with an ML Researcher / Engineer
+
+•
+Home technical assignment and review with the team
+
+•
+Culture fit interview and meet the team
+
+•
+Reference check and offer
+
+Support: We value diversity and aim to create an inclusive experience for all applicants. Please let us know if there's anything we can do to make the process more accessible for you.
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",6009,https://jobs.ashbyhq.com/photoroom/41ba8841-a50e-49a2-947a-15dff61bbd55,,,,,,,not_checked,,2026-10-31,,2026-11-01,,,,true,0,,,,,,,,,,,,,,
+4886fd85-2b2c-4dca-bf48-1dbc370629bc,"Product Manager, Editing Foundations",Photoroom,photoroom,Full time,Posted 77 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
+
+Role Summary
+
+We're looking for a Product Manager to own the editor: the surface every Photoroom user touches, on iOS, Android and the web. You'll sit in our Product Foundations team, whose mission is to build the core experiences that power Photoroom. You will work on the last-mile editing problem, giving users control with fine-grained edits for photos and videos. Working closely with engineers, designers, and the PMs who depend on you, you'll decide what gets built, why, and how it ships.
+
+Location: Paris, Ile de France (Hybrid)
+
+About the role
+
+•
+Own the single- and multi-image editing experiences end to end. Build one unified visual editing experience across three platforms, iOS, Android, Web and API.
+
+•
+Integrate visual editing experiences within chat editing. Photoroom gives users the ability to start with AI generation and then graduate into fine-grained editing tasks. You’ll work hand-in-hand with our researchers and engineers to make sure our users can traverse the full editing journey in Photoroom.
+
+•
+Define the problem before the solution. Sharpen the user problem, then partner with design and engineering to ship work that feels effortless. On a surface this heavily used, the difference between ""works"" and ""feels right"" is the whole job.
+
+•
+Stay close to the user. Talk to e-commerce sellers every week, watch them edit, and feed what you hear directly into roadmap decisions.
+
+•
+Use data to decide, not to justify. Pull and interpret data yourself, including crash rates, latency and cross-platform parity, to form hypotheses, measure what shipped, and call what's next. You won't need to wait around for someone else to run the query.
+
+About You
+
+•
+You've shipped products people love. Five+ years as a PM, with multiple launches where you’ve convincingly solved the user problem and delivered business value.
+
+•
+You've owned a creative product surface. An editor, a canvas or another tool where you are giving a user creative control.
+
+•
+AI has reshaped how you work. You use Claude or equivalent every day, for prototyping, testing with users, or automating the parts of the job that used to fill your calendar. The value you bring sits in strategy and direction, not in writing tickets.
+
+•
+You have demonstrable product taste. You can show specific work where the details matter and explain the calls you made, including the ones you'd make differently now. Craft in an editor is measured in milliseconds and pixels.
+
+•
+You create clarity from ambiguity. Given a fuzzy problem, you take action rather than waiting for direction: you structure it, decide what matters, and move.
+
+•
+You're data-fluent. You pull, interpret, and challenge data yourself, and use it to form a point of view rather than confirm one.
+
+•
+You thrive in small teams with high autonomy. You can ship without being managed, and can operate in a fully remote, async-first environment that offers no scaffolding around you.
+
+Nice to have: experience building creative tools or any product where craft and visual quality matter; an understanding of photography or videography; experience shipping native mobile alongside web; entrepreneurial experience (you've started, built, or run something).
+
+Benefits
+
+•
+30 days annual leave plus local public holidays
+
+•
+Competitive equity package with stock options/BSPCE, giving you ownership in our growing company
+
+•
+€1000 one-time home office grant OR €400 per month co-working space stipend
+
+•
+€1,000 annual learning and development budget for training, courses, books, and skill development
+
+•
+Private health insurance
+
+•
+Access to personalised mental health support, including 1:1 sessions with therapists or coaches, self-care tools, and well-being resources via MokaCare
+
+•
+Sports and cultural activities reimbursement
+
+•
+Relocation support (up to 10k) available for those choosing to move to France, including apartment finding and visa assistance
+
+Note: Visa sponsorship and relocation support are only available for positions based in France. We cannot sponsor visas for remote positions outside of France.
+
+Hiring Process
+
+•
+Screening call with Talent Manager (30min)
+
+•
+Technical interview with Hiring Manager (60min)
+
+•
+Take-home assignment (duration varies by role) and live review with the team (90min)
+
+•
+Culture fit interviews and meet the team (~3h in total)
+
+•
+Reference check and offer
+
+Support: We value diversity and aim to create an inclusive experience for all applicants. Please let us know if there's anything we can do to make the process more accessible for you.
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",5842,https://jobs.ashbyhq.com/photoroom/4886fd85-2b2c-4dca-bf48-1dbc370629bc,,,,,,,not_checked,,2026-10-31,,2026-11-01,,,,true,0,,,,,,,,,,,,,,
+5dc9a4e6-f56d-40f7-a659-b57e1ea5d97d,Senior Backend Engineer - (Django),Photoroom,photoroom,Full time,Posted 5 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
+
+Role Summary
+
+We're looking for a Senior backend engineer to own the pricing system for all apps at Photoroom. You'll help deliver Product Growth initiatives and pricing architecture while collaborating closely with other engineers (both frontend and backend) and product owners.
+
+Compensation: 95k to 105k + Stock-Options/BSPCE
+
+Location: Paris (hybrid)
+
+About the Role
+
+•
+You will own your work from A to Z: it goes from working on the architecture & coding features to monitoring releases' performance (we use Datadog for monitoring).
+
+•
+You will own the delivery and the architecture of the pricing system used by all our products (iOS, Android, Web, API) and millions of users.
+
+•
+You will get fast feedback from our users and will iterate quickly (we update the backend multiple times a week). You will follow the usage of the product and make decisions based on that.
+
+•
+Collaborate with cross-functional teams (e.g., product, front-end) to actively help design and deliver seamless user experiences.
+
+•
+You will optimise existing endpoints, driving down latency and ensuring we can continue to scale to ever greater usages
+
+About You
+
+•
+You have 5+ years of experience in backend development with Django and Django Rest Framework
+
+•
+You have experience working with a relational database at scale, designing schemas, optimising Django queries, and running migrations with minimal downtime
+
+•
+You have experience with scaling SaaS and subscription management (Stripe, RevenueCat)
+
+•
+You have a hands-on experience with a PostgreSQL/MySQL database larger than 100 GB
+
+•
+You have experience designing endpoints in direct collaboration with frontend engineers, delivering both Open API and developer manuals/supporting documentation
+
+•
+You are always the most pragmatic person in the room. You favour speed of iteration over perfect, always leverage frameworks and libraries to avoid reinventing the wheel
+
+•
+You have a strong sense of ownership. You take initiative and you are at ease to make product & technical decisions.
+
+•
+You are fluent in English (French is not required!).
+
+If you think you have what it takes but don't meet every single point above, please still apply. We'd love to chat and see if you could be a great fit.
+
+Benefits
+
+•
+Office in Paris (Hybrid, from the 9th)
+
+•
+Regular team gatherings including in-person onboarding, yearly company offsite, and team retreats
+
+•
+Competitive equity package with stock options/BSPCE
+
+•
+€1,000 annual L&D budget
+
+•
+Private health insurance
+
+•
+Access to personalised mental health support via MokaCare
+
+•
+Sports and cultural activities reimbursement
+
+•
+Relocation support (up to €10k) for roles based in France
+
+Hiring Process
+
+•
+Screening call with Talent Manager (30min)
+
+•
+Technical interview with Hiring Manager (45min)
+
+•
+Take-home assignment (duration varies by role) and live review with the team (45min)
+
+•
+Culture fit interviews and meet the team (~3h in total)
+
+•
+Reference check and offer
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4265,https://jobs.ashbyhq.com/photoroom/5dc9a4e6-f56d-40f7-a659-b57e1ea5d97d,,,,,,,not_checked,,2026-10-31,,2026-11-01,,,,true,0,,,,,,,,,,,,,,
+9bf0b49f-b54c-40fb-90d4-b568b7482c64,"Staff Product Manager, Agentic & AI Platform",Photoroom,photoroom,Full time,Posted 5 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
+
+Role Summary
+
+We're looking for a Staff Product Manager to own the AI platform every Photoroom product is built on. Our mission is that any team ships best-in-class GenAI visuals without needing a backend engineer: the primitives, the gateway and the no-code tooling turn adding an AI capability into a configuration step rather than an engineering project. On top of that sits the agentic layer — multi-step visual workflows that generate, check, reason, route and publish on their own. Working closely with engineers, ML researchers, and the product teams who ship on your platform, you'll decide what gets built, why, and how it ships.
+
+Location: Paris, (Hybrid)
+
+About the role
+
+•
+Own the platform every AI feature runs through. Expand and improve our AI gateway, including safeguards, evals, cost and observability, giving teams the ability to ship with little to no code and build skills that we can ship directly to users.
+
+•
+Build the agentic layer and Photoroom’s MCP. Visual agents that run multi-step flows: generate, QA, route, retry, publish, all unattended and at catalog scale.
+
+•
+Define the problem before the solution. Sharpen the problem, then partner with engineering and research to ship work that feels effortless — for the developers and PMs using the platform as much as for end users.
+
+•
+Treat other teams as your customers. Every team's roadmap contains AI features gated on platform work. You'll prioritise across them, hold a strategy rather than a request queue, and say no with reasons.
+
+•
+Turn AI capabilities into products people want. Work hand-in-hand with our researchers and engineers to convert new model capabilities into shipped features that move usage and revenue, and turn them into primitives other teams can reuse.
+
+•
+Use data to decide, not to justify. Pull and interpret data yourself, such as adoption, latency, inference cost per successful generation, eval results. Form hypotheses, measure what shipped, and call what's next. You won't need to wait around for someone else to run the query.
+
+About You
+
+•
+You've shipped products users love. 10+ years as a PM, with multiple launches where you have solved a user’s problem and delivered business outcomes.
+
+•
+You've built platform, infrastructure or developer-facing products. APIs, SDKs, internal platforms, ML infrastructure — products whose users are engineers.
+
+•
+You've shipped something agentic or model-backed into production. You understand evals, guardrails, non-deterministic output, cost per call, and what breaks when a multi-step flow runs unattended a million times.
+
+•
+AI has reshaped how you work. You use Claude or equivalent every day, for prototyping, testing with users, or automating the parts of the job that used to fill your calendar. The value you bring sits in strategy and direction, not in writing tickets.
+
+•
+You have demonstrable product taste. You can show specific work where the details matter and explain the calls you made, including the ones you'd make differently now. On a platform, taste shows up in the interface you make other people build against.
+
+•
+You create clarity from ambiguity. Given a fuzzy problem, you take action rather than waiting for direction: you structure it, decide what matters, and move.
+
+•
+You're data-fluent. You pull, interpret, and challenge data yourself, and use it to form a point of view rather than confirm one.
+
+•
+You thrive in small teams with high autonomy. You can ship without being managed, and can operate in a remote, async-first environment that offers no scaffolding around you.
+
+Benefits
+
+•
+25 days + 8–10 RTT
+
+•
+Competitive equity package with stock options/BSPCE, giving you ownership in our growing company
+
+•
+€1000 one-time home office grant OR €400 per month co-working space stipend
+
+•
+€1,000 annual learning and development budget for training, courses, books, and skill development
+
+•
+Private health insurance
+
+•
+Access to personalised mental health support, including 1:1 sessions with therapists or coaches, self-care tools, and well-being resources via MokaCare
+
+•
+Sports and cultural activities reimbursement
+
+•
+Relocation support (up to 10k) available for those choosing to move to France, including apartment finding and visa assistance
+
+Note: Visa sponsorship and relocation support are only available for positions based in France.
+
+Hiring Process
+
+•
+Screening call with Talent Manager (30min)
+
+•
+Technical interview with Hiring Manager (60min)
+
+•
+Take-home assignment (duration varies by role) and live review with the team (90min)
+
+•
+Culture fit interviews and meet the team (~3h in total)
+
+•
+Reference check and offer
+
+Support: We value diversity and aim to create an inclusive experience for all applicants. Please let us know if there's anything we can do to make the process more accessible for you.
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",6106,https://jobs.ashbyhq.com/photoroom/9bf0b49f-b54c-40fb-90d4-b568b7482c64,,,,,,,not_checked,,2026-10-31,,2026-11-01,,,,true,0,,,,,,,,,,,,,,
+9c814622-9cd2-4e2e-a060-b9491ef058eb,Senior Product Analyst,Photoroom,photoroom,Full time,Posted 94 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
+
+Role Summary
+
+We're looking for a Senior Product Analyst to establish our product analytics function and bring deep analytical rigor to product decision-making. You'll work closely with Product, Engineering, and Design on product planning, designing A/B tests, and creating analytics frameworks that enable data-driven product development.
+
+Compensation: 90-110k
+
+Location: Paris (Hybrid)
+
+About the Role
+
+•
+Conduct deep-dive analysis of feature success, retention drivers, and long-term engagement patterns to generate actionable product insights and inform roadmap decisions
+
+•
+Work closely with Product Management, Engineering, and Design on product planning, bringing a data lens to ideation and concept evaluation throughout the product development lifecycle
+
+•
+Design and structure A/B tests to ensure statistical rigor, including experiment design, sample size calculations, and analysis of results using cohort analysis and causal inference methods
+
+•
+Create analytics frameworks and event taxonomy to maintain data quality, partnering with the data platform team to keep data sources clean and well-defined
+
+•
+Enable Product Manager self-service through tooling, documentation, and light-touch support, using AI tools and MCP integrations to turbocharge analyses and scale impact
+
+About You
+
+•
+5-10 years experience in product analytics or data science with deep familiarity with A/B testing, experiment design, and cohort analysis within platforms such as Mixpanel or Amplitude (mobile app experience is a plus)
+
+•
+Proven ability to apply behavioral and statistical analysis methods such as behavioral clustering, propensity score matching, and regression modeling to deliver actionable product insights
+
+•
+Fluent in SQL and Python with strong technical skills for data manipulation, analysis, and visualization
+
+•
+Strong product sense with ability to generate product and behavioral hypotheses from data insights and experiment results, translating business questions into structured analytical approaches
+
+•
+Excellent communication skills, able to communicate clearly around data insights, limitations, and approaches to technical and non-technical audiences, comfortable using AI tools to enhance analytical output
+
+If you think you have what it takes but don't meet every single point above, please still apply. We'd love to chat and see if you could be a great fit.
+
+Benefits
+
+•
+30 days annual leave plus local public holidays
+
+•
+Competitive equity package with stock options/BSPCE, giving you ownership in our growing company
+
+•
+€1000 one-time home office grant OR €400 per month co-working space stipend
+
+•
+€1,000 annual learning and development budget for training, courses, books, and skill development
+
+•
+Private health insurance
+
+•
+Access to personalised mental health support, including 1:1 sessions with therapists or coaches, self-care tools, and well-being resources via MokaCare
+
+•
+Sports and cultural activities reimbursement
+
+•
+Relocation support (up to 10k) available for those choosing to move to France, including apartment finding and visa assistance
+
+Note: Visa sponsorship and relocation support are only available for positions based in France. We cannot sponsor visas for remote positions outside of France.
+
+Hiring Process
+
+•
+Screening call with Talent Manager (30min)
+
+•
+Technical interview with Hiring Manager (1 hr)
+
+•
+Take-home assignment (duration varies by role) and live review with the team (1 hr)
+
+•
+Culture fit interviews and meet the team (~3h in total)
+
+•
+Reference check and offer
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4834,https://jobs.ashbyhq.com/photoroom/9c814622-9cd2-4e2e-a060-b9491ef058eb,,,,,,,not_checked,,2026-10-31,,2026-11-01,,,,true,0,,,,,,,,,,,,,,
+a7dbe175-07fc-43c7-8061-4e7e9bfc1d2a,"Senior Product Manager, Core Product",Photoroom,photoroom,Full time,Posted 5 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
+
+We're looking for a Senior Product Manager to own the self-serve product experience for our SMB customers: small to medium brands selling on Shopify and beyond. The proposition for this segment is unbuilt, the squad is yours to shape, and you'll own the slice of ARR that comes with it. Working closely with engineers, designers, and AI researchers, you'll decide what gets built, why, and how it ships
+
+Location: Paris, hybrid 3 days in the office. We offer relocation support
+
+About the role
+
+•
+Own a real slice of the self-serve product. From idea to shipped feature, you will build and execute the roadmap that solves problems for our users.
+
+•
+Define the problem before the solution. Sharpen the user problem, then partner with design and engineering to ship work that feels effortless.
+
+•
+Turn AI capabilities into products people want. Work hand-in-hand with our researchers and engineers to convert new model capabilities into shipped features that move usage and revenue.
+
+•
+Stay close to the user. Talk to e-commerce sellers every week, and feed what you hear directly into roadmap decisions.
+
+•
+Use data to decide, not to justify. Pull and interpret data yourself, form hypotheses, measure what shipped, and call what's next. You won’t need to wait around for someone else to run the query.
+
+About You
+
+•
+You've shipped products you can defend in detail. Five+ years as a PM, with multiple launches where you can name the user problem, what you owned personally vs. the team, and the measured outcome.
+
+•
+You've built B2B SaaS for self-serve customers. You know the mechanics of self-serve growth, retention, and pricing, not just enterprise sales cycles.
+
+•
+AI has reshaped how you work. You use Claude or equivalent every day, for prototyping, testing with users, or automating the parts of the job that used to fill your calendar. The value you bring sits in strategy and direction, not in writing tickets.
+
+•
+You have demonstrable product taste. You can show specific work where the details matter and explain the calls you made, including the ones you'd make differently now.
+
+•
+You create clarity from ambiguity. Given a fuzzy problem, you take action rather than waiting for direction: you structure it, decide what matters, and move.
+
+•
+You're data-fluent. You pull, interpret, and challenge data yourself, and use it to form a point of view rather than confirm one.
+
+•
+You thrive in small teams with high autonomy. You can ship without being managed, and can operate in a fully remote, async-first environment that offers no scaffolding around you.
+
+Nice to have: experience building creative tools or any product where craft and visual quality matter; an understanding of photography or videography; entrepreneurial experience (you've started, built, or run something).
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4094,https://jobs.ashbyhq.com/photoroom/a7dbe175-07fc-43c7-8061-4e7e9bfc1d2a,,,,,,,not_checked,,2026-10-31,,2026-11-01,,,,true,0,,,,,,,,,,,,,,
+f3934b79-3cde-450d-b8bb-548aa7bfd43f,"Senior Product Manager, SMB e-commerce Growth",Photoroom,photoroom,Full time,Posted 5 Days Ago,,,Paris,1,Paris,false,,France,,0,"About us
+
+Founded in 2019 and part of Y Combinator's 2020 cohort, Photoroom is the leading visual solution for e-commerce.
+
+We've raised Series B funding and reached 300+ million users worldwide, processing over 5 billion images annually and serving both small businesses and major enterprises like Amazon, DoorDash, and Decathlon through our mobile app, web platform, and API.
+
+We're a team of 100+ passionate builders giving e-commerce businesses superpowers to create visuals that help them grow, making the hardest parts of selling online disappear. We focus on craft, innovation, and collaboration to create exceptional impact for e-commerce businesses worldwide.
+
+We're looking for a Senior Product Manager, SMB E-commerce Growth to own activation, monetization, and retention for our SMB e-commerce segment across the Photoroom mobile and web apps. This is a growth role: you'll own the levers that turn sign-ups into retained subscribers, and the growth-led features that move them. From paywalls to pricing experiments and onboarding and discovery flows, you'll partner closely with User Acquisition on the handoff from paid to product, and with the core SMB product team on what gets built next.
+
+Location: Paris, we offer relocation support (Hybrid
+
+About the role
+
+•
+Own a real slice of the growth funnel. Activation, paywall, pricing, or retention: you'll lead a squad and own a specific number end-to-end, deciding what gets tested, what gets built, and what gets killed.
+
+•
+Move the metric, not just the backlog. Run a high-velocity experimentation program across web and mobile funnels. Ship A/B tests weekly, and bigger feature bets when the data calls for them.
+
+•
+Find the insight, then build the feature. The best growth work is spotting why users drop off and shipping the change that fixes it. You'll do both.
+
+•
+Work across web and mobile. Mobile and web funnels behave differently (App Store vs. card-on-file, push vs. email). You'll own both, and partner closely with the User Acquisition team on the handoff from paid to product.
+
+•
+Use data to decide, not to justify. Pull and interpret data yourself, form hypotheses, measure what shipped, and call what's next. You won't need to wait around for someone else to run the query.
+
+About You
+
+•
+You've moved real numbers on a subscription product. Five to eight years as a PM, with concrete activation, monetization, or retention wins you can name with the KPI, the change, and the percentage impact, owned by you, not by a team you sat on.
+
+•
+You've worked on something with recurring revenue. Whether B2B SaaS, B2C subscription, or B2B2C, as long as your work was tied directly to revenue your experience will give you a leg up. Pure marketplace or pure free-product backgrounds will struggle here.
+
+•
+You know how SMB sellers buy. You understand how SMB e-commerce sellers discover, evaluate, and adopt utility SaaS, the kind of motion behind Shopify, Canva, Klaviyo, Stripe, Klarna, Gorgias, Recharge, Loop, Wix, or Squarespace.
+
+•
+You think in funnels. You understand activation curves, paywall psychology, trial design, and the difference between credit-based, feature-gated, and seat-based pricing, and you have opinions on which works where.
+
+•
+You build with AI. You use Claude or equivalent to automate recurring tasks, and can explain how you set it up to help you ship faster.
+
+•
+You're data-fluent. Comfortable with SQL and an analytics platform like Amplitude or Mixpanel; you build and interpret your own funnel without waiting for a data scientist, and you've shipped a high volume of A/B tests personally in the last 12 months.
+
+•
+You thrive in small teams with high autonomy. You can ship without being managed, and can operate in a fully remote, async-first environment that offers no scaffolding around you.
+
+Nice to have: experience on both web and mobile funnels; familiarity with the Shopify ecosystem (app store, connect flows, merchant personas) or a comparable e-commerce platform; entrepreneurial experience (you've started, built, or run something).
+
+If you think you have what it takes but don't meet every single point above, please still apply. We'd love to chat and see if you could be a great fit.
+
+Diversity, Equity, Inclusion, and Belonging
+
+We're committed to enabling everyone to feel included and valued at work. We believe our company and culture are strongest when composed of diverse experiences and backgrounds.
+
+That's also why we have flexible working hours, trust people to work in a hybrid environment, and extended parental leave.
+
+All qualified applicants receive consideration for employment without regard to age, color, family, gender identity, marital status, national origin, physical or mental disability, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws.",4838,https://jobs.ashbyhq.com/photoroom/f3934b79-3cde-450d-b8bb-548aa7bfd43f,,,,,,,not_checked,,2026-10-31,,2026-11-01,,,,true,0,,,,,,,,,,,,,,
