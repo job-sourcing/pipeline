@@ -113,3 +113,6 @@ NEW Part-time Spa Therapist | Boston, Massachusetts | 2026-10-30T20:23:18Z | htt
 NEW Director of Revenue and Reservations | Boston |  — 25 applicants | https://careers.mandarinoriental.com/jobs/director-of-revenue-and-reservations-boston-massachusetts-united-states
 (2026-10-31T01:02:06)
 
+board-watch mandarinoriental_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Mandarin+Oriental&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
+(2026-11-02T01:01:26)
+
