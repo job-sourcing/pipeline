@@ -74,3 +74,8 @@ board-watch mattson_us_fulltime UNREACHABLE: list fetch network-failed (undeclar
 board-watch mattson_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Mattson+Technology&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-02T01:01:30)
 
+Mattson Technology board-watch 2026-11-03: +2 new, -0 gone (29 active [mattson_us_fulltime])
+NEW Final Test Technician 5 | Fremont, CA, United States | 2026-11-03T01:02:54+00:00 | https://eidg.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3183
+NEW Configuration Analyst 2 | Fremont, CA, United States | 2026-11-03T01:04:00+00:00 | https://eidg.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3189
+(2026-11-03T03:06:08)
+
