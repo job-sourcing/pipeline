@@ -1,9 +1,9 @@
 {
  "label": "lenovo_us_fulltime",
  "rows": 272,
- "kept": 272,
- "new": 0,
- "ghosts_dropped": 0,
+ "kept": 265,
+ "new": 7,
+ "ghosts_dropped": 7,
  "ghosts_in_state": 0,
  "pending": 0,
  "terminal_err": 0,
@@ -14,5 +14,5 @@
  "state_rows": 272,
  "banded": 5,
  "lca_pools": 156,
- "snapshot": "2026-11-02"
+ "snapshot": "2026-11-03"
 }
