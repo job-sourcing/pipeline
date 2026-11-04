@@ -20,3 +20,4 @@
 {"ts": "2026-11-01T17:32:16Z", "family": "pm", "verdict": "complete", "rows": 9181, "sources_dead": []}
 {"ts": "2026-11-02T20:59:23Z", "family": "pm", "verdict": "complete", "rows": 8910, "sources_dead": []}
 {"ts": "2026-11-03T18:48:02Z", "family": "pm", "verdict": "complete", "rows": 9248, "sources_dead": []}
+{"ts": "2026-11-04T19:40:10Z", "family": "pm", "verdict": "complete", "rows": 9485, "sources_dead": ["builtin"]}
