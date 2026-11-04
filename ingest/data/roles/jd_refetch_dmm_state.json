@@ -1,9 +1,9 @@
 {
- "last_leg": "2026-11-04T21:12:19Z",
+ "last_leg": "2026-11-04T21:26:47Z",
  "transport": "direct",
  "mode": "pending",
  "fetched": 150,
- "remaining": 2415,
+ "remaining": 2265,
  "targets_seen": 3127,
  "pending_snapshot": [
   "adzuna|https://www.adzuna.com/details/5872784240?utm_medium=api&utm_source=46fd1e82",
