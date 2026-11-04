@@ -39,3 +39,7 @@ board-watch weride_us_fulltime UNREACHABLE: list fetch network-failed (undeclare
 board-watch weride_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
 (2026-11-02T16:39:32)
 
+WeRide board-watch 2026-11-04: +0 new, -1 gone (9 active [weride_us_fulltime])
+GONE Application Engineer (first seen 2026-09-24)
+(2026-11-04T14:57:45)
+
