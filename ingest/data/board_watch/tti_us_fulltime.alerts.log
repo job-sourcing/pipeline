@@ -806,3 +806,9 @@ GONE Sr Electrical Engineering Technician - Quality (first seen 2026-09-30)
 GONE Molding Technician (2nd or 3rd Shifts) (first seen 2026-09-30)
 (2026-11-03T14:43:14)
 
+board-watch tti_us_fulltime FAILED: list fetch crashed (HTTPError: 406 Client Error: Not Acceptable for url: https://www.ttigroup.com/ttigroup/api/v1/workday/jobPostings?region=US&page=1&take=1000&ajax_wrapper=html)
+(2026-11-04T14:57:34)
+
+board-watch tti_us_fulltime FAILED: list fetch crashed (HTTPError: 406 Client Error: Not Acceptable for url: https://www.ttigroup.com/ttigroup/api/v1/workday/jobPostings?region=US&page=1&take=1000&ajax_wrapper=html)
+(2026-11-04T14:59:55)
+

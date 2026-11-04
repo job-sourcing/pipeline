@@ -116,3 +116,9 @@ NEW Director of Revenue and Reservations | Boston |  — 25 applicants | https:/
 board-watch mandarinoriental_us_fulltime CORROBORATION-BLOCKED: LinkedIn corroboration index blocked (linkedin index blocked at offset 0: HTTPError: 429 Client Error: Too Many Requests for url: https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Mandarin+Oriental&location=United+States&start=0&sortBy=DD) — signals degraded this pass (no numApplicants/linkedinUrl/matchMethod for unmatched rows), postings still collected; loud-but-not-red policy; next run retries
 (2026-11-02T01:01:26)
 
+Mandarin Oriental board-watch 2026-11-04: +1 new, -2 gone (28 active [mandarinoriental_us_fulltime])
+NEW Director, Global Sales - MICE, Midwest | New York, New York | 2026-11-04T13:24:13Z | https://careers.mandarinoriental.com/jobs/director-global-sales-mice-midwest-new-york-united-states
+GONE Manager, Global Sales, Southeast & LATAM (first seen 2026-10-01)
+GONE Manager, Global Sales, Central Region (first seen 2026-10-01)
+(2026-11-04T14:56:32)
+
