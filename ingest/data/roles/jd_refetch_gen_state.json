@@ -1,9 +1,9 @@
 {
- "last_leg": "2026-11-03T21:36:45Z",
+ "last_leg": "2026-11-04T21:02:54Z",
  "transport": "direct",
  "mode": "pending",
  "fetched": 150,
- "remaining": 442,
+ "remaining": 292,
  "targets_seen": 2533,
  "pending_snapshot": [
   "adzuna|https://www.adzuna.com/details/5876651096?utm_medium=api&utm_source=46fd1e82",

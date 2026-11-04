@@ -1,8 +1,9 @@
 # JD-refetch ledger (family: dmm)
 
-- last leg: **2026-11-03T21:32:10Z** (transport: direct)
-- fetched this leg: 0 | remaining: 0 | targets seen: 806
-- pending attrition since last leg: 0 (vanished without a verdict — F1 ledger)
+- last leg: **2026-11-04T20:58:36Z** (transport: direct)
+- fetched this leg: 150 | remaining: 2415 | targets seen: 3127
+- pending attrition since last leg: 1068 (vanished without a verdict — F1 ledger)
 
 ## per-source status counters
 
+- jooble:http-error:403: 150
