@@ -1,55 +1,4 @@
 ﻿reqId,title,company,hiringOrg,timeType,postedOn,startDate,postingAgeDays,primaryLocation,nLocations,locations,remoteFlag,stateCodes,country,questionnaireId,similarJobsCount,description,descriptionLength,url,detailError,linkedinUrl,linkedinPostedDate,numApplicants,applicantLabel,dateDeltaDays,corroborationStatus,matchMethod,firstSeenDate,corroboratedOn,dumpDate,endDate,daysOnMarket,daysOnMarketBasis,censored,repostCount,lastResetDate,applicationDeadline,daysLeftToApply,workerSubType,jobFamilyGroup,earliestEvidenceDate,crossSourceRepostEvidence,applicantCensored,h1bFilings,h1bWageP25,h1bWageP50,h1bWageP75,h1bMatchBasis,h1bMatchTitle
-4467422263,Creative Technologist,OpusClip,OpusClip,,Posted 6 Days Ago,,,"Mountain View, CA",1,"Mountain View, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
-We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
-We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
-Check out our latest coverage by Business Insider featuring our product and funding milestones, and our recognition as one of The Information's 50 Most Promising Startups in 2024.
-Headquartered In Mountain View, We Are a Team Of 100 Passionate And Experienced AI Enthusiasts And Video Experts, Driven By Our Core Values
-Be a Champion Team
-Prioritize Ruthlessly
-Ship fast, Quality Follows
-Obsess over customers
-Be a part of this exciting journey with us!
-Who We Are Looking For
-We are looking for a Creative Technologist to help define the next generation of AI-powered video creation at OpusClip. You'll work at the intersection of visual design, generative AI, storytelling, and workflow innovation—elevating AI-generated content from impressive to exceptional.
-You have exceptional creative taste and a deep understanding of generative AI. You don't just generate assets—you refine, direct, and elevate them until every frame meets your standards.
-You are naturally curious, constantly exploring new tools and techniques, and you enjoy building systems that turn creative intuition into scalable workflows.
-Responsibilities
-Partner closely with the AI team to improve the quality, consistency, and creative direction of AI-generated video content.
-Develop prompting frameworks and generation workflows that consistently produce high-quality outputs at scale.
-Create repeatable creative systems that capture and operationalize visual taste, design principles, and storytelling best practices.
-Evaluate and refine AI-generated assets, identifying and correcting issues related to composition, motion, continuity, realism, and visual quality.
-Experiment with emerging AI creative tools and technologies, translating new capabilities into compelling product and content experiences.
-Collaborate across product, design, marketing, and AI teams to help shape the future of AI video creation.
-Qualifications
-Strong hands-on experience with generative AI tools for image, video, or creative content generation.
-Excellent visual design, motion design, or creative direction instincts with a high standard for quality and detail.
-Deep understanding of prompt engineering, creative workflows, and AI generation techniques.
-Strong storytelling instincts with an understanding of pacing, narrative structure, and visual communication.
-Ability to create scalable frameworks and processes rather than relying solely on one-off creative execution.
-Comfortable working in a fast-paced startup environment with rapidly evolving tools and workflows.
-What Makes You Successful
-You can quickly spot visual inconsistencies, quality issues, and creative opportunities that others miss.
-You understand both the capabilities and limitations of today's AI models and know how to consistently push them further.
-You naturally think in systems, workflows, and reusable frameworks that help teams scale creative output.
-You combine artistic judgment with technical curiosity, constantly testing new tools and approaches.
-You care deeply about the final product and are willing to iterate until the work reaches a high creative standard.
-Nice to Have
-Background in product design, visual design, motion graphics, creative technology, or related fields.
-Experience building node-based workflows in ComfyUI, Fal, or similar AI infrastructure tools.
-Previous experience in video production, film, advertising, gaming, or other creative industries.
-The Details
-Location: On-site in Mountain View, CA
-Competitive salary, equity, and performance-based bonuses
-Comprehensive medical, dental, and vision coverage
-Opportunity to help shape one of the fastest-moving categories in AI
-You Should Not Apply If
-You rarely review or critique your own AI-generated work for quality and consistency.
-You view prompting as the entire job rather than one part of a larger creative process.
-You prefer receiving fully defined briefs instead of building new systems and workflows from scratch.
-You are not genuinely excited about the future of AI-generated video and creative tooling.
-EEO
-OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $140,000 - $220,000",5420,https://www.linkedin.com/jobs/view/4467422263,,,,,,,not_checked,,2026-10-12,,2026-11-03,,,,true,0,,,,,,,,,,,,,,
 4476106842,Data Science Lead,OpusClip,OpusClip,,Posted 7 Days Ago,,,"Mountain View, CA",1,"Mountain View, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -105,7 +54,7 @@ Stay close to the work. Combine senior technical leadership with difficult analy
 Build on a modern stack. Work with BigQuery, Mixpanel, Superset, Python, Prefect, and Statsig.
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $230K - $300K",7021,https://www.linkedin.com/jobs/view/4476106842,,,,,,,not_checked,,2026-10-12,,2026-11-03,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $230K - $300K",7021,https://www.linkedin.com/jobs/view/4476106842,,,,,,,not_checked,,2026-10-12,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
 4483734735,Talent Acquisition Specialist,OpusClip,OpusClip,,Posted 1 Days Ago,,,"Mountain View, CA",1,"Mountain View, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -142,7 +91,7 @@ Experience recruiting for AI, SaaS, or consumer technology companies.
 Experience using Ashby ATS.
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $140,000 - $160,000",3876,https://www.linkedin.com/jobs/view/4483734735,,,,,,,not_checked,,2026-10-27,,2026-11-03,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $140,000 - $160,000",3876,https://www.linkedin.com/jobs/view/4483734735,,,,,,,not_checked,,2026-10-27,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
 4484411327,Senior/Staff Product Manager,OpusClip,OpusClip,,Posted Today,,,"Mountain View, CA",1,"Mountain View, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -190,7 +139,7 @@ You're uncomfortable operating with ambiguity and rapid iteration
 You want remote or hybrid
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $220,000 - $280,000",6430,https://www.linkedin.com/jobs/view/4484411327,,,,,,,not_checked,,2026-10-28,,2026-11-03,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $220,000 - $280,000",6430,https://www.linkedin.com/jobs/view/4484411327,,,,,,,not_checked,,2026-10-28,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
 4484738735,Influencer Partnership Manager,OpusClip,OpusClip,,Posted 1 Days Ago,,,"Los Angeles, CA",1,"Los Angeles, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -244,7 +193,7 @@ Medical, dental, and vision coverage
 A chance to shape one of the fastest-moving categories in AI
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $110K - $150K",5974,https://www.linkedin.com/jobs/view/4484738735,,,,,,,not_checked,,2026-10-29,,2026-11-03,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $110K - $150K",5974,https://www.linkedin.com/jobs/view/4484738735,,,,,,,not_checked,,2026-10-29,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
 4484739758,Influencer Partnership Manager,OpusClip,OpusClip,,Posted 1 Days Ago,,,"California, United States",1,"California, United States",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -298,7 +247,7 @@ Medical, dental, and vision coverage
 A chance to shape one of the fastest-moving categories in AI
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $110K - $150K",5974,https://www.linkedin.com/jobs/view/4484739758,,,,,,,not_checked,,2026-10-29,,2026-11-03,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $110K - $150K",5974,https://www.linkedin.com/jobs/view/4484739758,,,,,,,not_checked,,2026-10-29,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
 4485230944,"Senior Product Marketing Manager, Core Product",OpusClip,OpusClip,,Posted 1 Days Ago,,,"Mountain View, CA",1,"Mountain View, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -328,7 +277,7 @@ A great storyteller with sharp content instincts, who can bring user value to li
 Comfortable with 0→1 ambiguity, and never hesitant to step outside defined scope to drive real impact.
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $125K - $165K",3938,https://www.linkedin.com/jobs/view/4485230944,,,,,,,not_checked,,2026-10-30,,2026-11-03,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $125K - $165K",3938,https://www.linkedin.com/jobs/view/4485230944,,,,,,,not_checked,,2026-10-30,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
 4485239461,"Senior Product Marketing Manager, Core Product",OpusClip,OpusClip,,Posted 1 Days Ago,,,"San Francisco, CA",1,"San Francisco, CA",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -358,7 +307,7 @@ A great storyteller with sharp content instincts, who can bring user value to li
 Comfortable with 0→1 ambiguity, and never hesitant to step outside defined scope to drive real impact.
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $125K - $165K",3938,https://www.linkedin.com/jobs/view/4485239461,,,,,,,not_checked,,2026-10-30,,2026-11-03,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $125K - $165K",3938,https://www.linkedin.com/jobs/view/4485239461,,,,,,,not_checked,,2026-10-30,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
 4485290263,Account Executive,OpusClip,OpusClip,,Posted Today,,,"California, United States",1,"California, United States",false,,United States,,0,"🎨 OpusClip is the world's No.1 AI video agent, built for authenticity on social media.
 We envision a world where everyone can authentically share their story through video, with no expertise needed. Within just 18 months of our launch, over 20 million creators and businesses have used OpusClip to enhance their social presence.
 We have raised $50 million in total funding and are fortunate to have some of the most supportive investors, including SoftBank Vision Fund, DCM Ventures, Millennium New Horizons, Fellows Fund, AI Grant, Jason Lemkin (SaaStr), Samsung Next, GTMfund, Alumni Ventures, and many more.
@@ -425,4 +374,4 @@ Location
 US Remote OR NYC | East Coast Preferred
 EEO
 OpusClip is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristics. OpusClip considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Opus Clip is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures.
-Compensation Range: $110K - $140K",6885,https://www.linkedin.com/jobs/view/4485290263,,,,,,,not_checked,,2026-10-30,,2026-11-03,,,,true,0,,,,,,,,,,,,,,
+Compensation Range: $110K - $140K",6885,https://www.linkedin.com/jobs/view/4485290263,,,,,,,not_checked,,2026-10-30,,2026-11-04,,,,true,0,,,,,,,,,,,,,,
