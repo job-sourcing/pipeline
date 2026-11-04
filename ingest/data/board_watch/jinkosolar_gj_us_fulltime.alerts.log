@@ -27,3 +27,9 @@ board-watch jinkosolar_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: 
 board-watch jinkosolar_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jinkosolar: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
 (2026-10-28T16:46:31)
 
+board-watch jinkosolar_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jinkosolar: firecrawl scrape failed (http402) — failing loudly, state untouched)
+(2026-11-04T18:07:34)
+
+board-watch jinkosolar_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:jinkosolar: firecrawl scrape failed (http402) — failing loudly, state untouched)
+(2026-11-04T18:09:41)
+

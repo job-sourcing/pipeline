@@ -25,3 +25,9 @@ board-watch renogy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjob
 board-watch renogy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:renogy: firecrawl scrape failed (HTTPError: HTTP Error 402: Payment Required) — failing loudly, state untouched)
 (2026-10-28T16:46:31)
 
+board-watch renogy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:renogy: firecrawl scrape failed (http402) — failing loudly, state untouched)
+(2026-11-04T18:07:32)
+
+board-watch renogy_gj_us_fulltime FAILED: list fetch crashed (RuntimeError: gjobs:renogy: firecrawl scrape failed (http402) — failing loudly, state untouched)
+(2026-11-04T18:09:39)
+
