@@ -1,9 +1,11 @@
 # JD-refetch ledger (family: gen)
 
-- last leg: **2026-11-05T21:31:41Z** (transport: direct)
-- fetched this leg: 150 | remaining: 2437 | targets seen: 4207
-- pending attrition since last leg: 1004 (vanished without a verdict — F1 ledger)
+- last leg: **2026-11-05T21:44:50Z** (transport: direct)
+- fetched this leg: 150 | remaining: 2287 | targets seen: 4207
+- pending attrition since last leg: 0 (vanished without a verdict — F1 ledger)
 
 ## per-source status counters
 
-- jooble:http-error:403: 150
+- adzuna:http-error:403: 4
+- adzuna:ok: 10
+- jooble:http-error:403: 136
