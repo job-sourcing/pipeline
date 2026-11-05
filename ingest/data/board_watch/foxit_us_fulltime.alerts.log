@@ -42,3 +42,7 @@ board-watch foxit_us_fulltime UNREACHABLE: list fetch network-failed (undeclared
 board-watch foxit_us_fulltime UNREACHABLE: list fetch network-failed (undeclared board; ReadTimeout: HTTPSConnectionPool(host='api.lever.co', port=443): Read timed out. (read timeout=15)) — UNREACHABLE, state untouched; streak 1/14
 (2026-11-04T18:13:59)
 
+Foxit board-watch 2026-11-05: +0 new, -1 gone (7 active [foxit_us_fulltime])
+GONE FP&A Manager (first seen 2026-09-27)
+(2026-11-05T18:14:33)
+
