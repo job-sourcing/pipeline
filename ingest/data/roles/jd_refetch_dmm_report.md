@@ -1,6 +1,6 @@
 # JD-refetch ledger (family: dmm)
 
-- last leg: **2026-11-05T21:40:54Z** (transport: direct)
+- last leg: **2026-11-05T21:53:59Z** (transport: direct)
 - fetched this leg: 150 | remaining: 1815 | targets seen: 3127
 - pending attrition since last leg: 0 (vanished without a verdict — F1 ledger)
 
